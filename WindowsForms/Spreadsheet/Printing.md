@@ -9,11 +9,11 @@ documentation: ug
 
 # Printing
 
-Spreadsheet control allows you to print the data in the workbook with the help of Pdf Conversion. To provide the printing support in Spreadsheet, you need to convert the workbook into Pdf document using ExcelToPdfConverter.
+Spreadsheet control allows you to print the data in the workbook with the help of PDF Conversion. To provide the printing support in Spreadsheet, you need to convert the workbook into PDF document using ExcelToPdfConverter.
 
-For Conversion of Excel Workbook in Spreadsheet to Pdf document, use `Convert` method of `ExcelToPdfConverter`.
+For Conversion of Excel Workbook in Spreadsheet to PDF document, use `Convert` method of `ExcelToPdfConverter`.
 
-For viewing the Pdf document, you can use `PdfViewerControl` to load the saved pdf stream.
+For viewing the PDF document, you can use `PdfViewerControl` to load the saved PDF stream.
 
 {% highlight c# %}
 
@@ -35,7 +35,7 @@ For viewing the Pdf document, you can use `PdfViewerControl` to load the saved p
 
 {% endhighlight %}
 
-For print preview you can load the pdfstream into viewer and for direct printing use `Print` method in PdfViewerControl  which is available under the namespace “Syncfusion.PdfViewer.Windows”
+For print preview you can load the PDF stream into viewer and for direct printing use `Print` method in PdfViewerControl  which is available under the namespace “Syncfusion.PdfViewer.Windows”
 
 {% highlight c# %}
 

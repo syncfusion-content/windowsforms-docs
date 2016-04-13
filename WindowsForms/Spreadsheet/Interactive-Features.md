@@ -128,7 +128,7 @@ N> When the content is copied from external source, Spreadsheet does not support
 
 ## Undo/Redo
 
-Spreadsheet provides support for Undo/Redo functionality like MS Excel.
+Spreadsheet provides support for Undo/Redo functionality like Microsoft Excel.
 
 The shortcut keys used for Undo/Redo Operations
 

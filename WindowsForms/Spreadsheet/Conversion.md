@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 # Conversion
-This section explains about the conversion of workbook in Spreadsheet into image, pdf and html
+This section explains about the conversion of workbook in Spreadsheet into image, PDF and HTML
 
 ## Image
 
-Spreadsheet provides support to convert a worksheet in to an image of type bitmap or metafile based on the input range of rows and columns with all basic formats preserved, By using the [ConvertToImage](http://help.syncfusion.com/file-formats/xlsio/conversions#convert-worksheet-to-image) method,worksheet can be converted into an image.
+Spreadsheet provides support to convert a worksheet in to an image of type Bitmap or Metafile based on the input range of rows and columns with all basic formats preserved, By using the [ConvertToImage](http://help.syncfusion.com/file-formats/xlsio/conversions#convert-worksheet-to-image) method,worksheet can be converted into an image.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,13 +35,13 @@ System.Diagnostics.Process.Start("Sample.png");
 {% endtabs %}
 
 
-## Pdf
+## PDF
 
 Spreadsheet provides support to export the Excel workbook to PDF using ExcelToPdfConverter. 
 
 For converting the Excel sheet to PDF, “Syncfusion.ExcelToPDFConverter.Base.dll” and “Syncfusion.Pdf.Base.dll” references should be added.
 
-Export the Excel workbook as Pdf document using `Convert` method of `ExcelToPdfConverter` class which is available under the name space “Syncfusion.ExcelToPdfConverter”
+Export the Excel workbook as PDF document using `Convert` method of `ExcelToPdfConverter` class which is available under the name space “Syncfusion.ExcelToPdfConverter”
 
 {% tabs %}
 {% highlight c# %}
@@ -77,7 +77,7 @@ System.Diagnostics.Process.Start("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-## Html
+## HTML
 
 Spreadsheet provides support to convert the excel workbook into HTML page.
 

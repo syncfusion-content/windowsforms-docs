@@ -63,7 +63,7 @@ Contains the classes which is responsible for creating charts that holds axes, s
 <tr>
 <td>
 Syncfusion.ExcelToPDFConverter.Base.dll</td><td>
-Contains the base and fundamental classes which is responsible for converting excel to pdf.</td></tr>
+Contains the base and fundamental classes which is responsible for converting excel to PDF.</td></tr>
 <tr>
 <td>
 Syncfusion.Pdf.Base.dll</td><td>
