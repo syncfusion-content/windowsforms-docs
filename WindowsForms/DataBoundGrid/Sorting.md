@@ -9,9 +9,9 @@ documentation: ug
 
 # Sorting
 
-Sorting feature available in DataBound Grid control allows the user to arrange items in a sequence and/or in different sets. SortBehaviour property under the control allows you to sort a column in a data bound grid when the column header cell is clicked. Implementation of this property will rearrange the cell data in the clicked column. This property can be set using either a code or designer. By default, it is set to perform sorting on double-click. GridSortBehavior is an enumeration that defines the sorting behavior options/values.
+Sorting feature available in DataBound Grid control allows the user to arrange items in a sequence and/or in different sets. SortBehavior property under the control allows you to sort a column in a data bound grid when the column header cell is clicked. Implementation of this property will rearrange the cell data in the clicked column. This property can be set using either a code or designer. By default, it is set to perform sorting on double-click. GridSortBehavior is an enumeration that defines the sorting behavior options/values.
 
-Following is the list of options/values that can be assigned to SortBehaviour property:
+Following is the list of options/values that can be assigned to SortBehavior property:
 
 * SingleClick: Sort column when user clicks once.
 * DoubleClick: Sort column when user double-clicks.
