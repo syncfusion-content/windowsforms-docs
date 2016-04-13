@@ -115,30 +115,30 @@ RETURN TYPE </th></tr>
 <tr>
 <td>
 WireGrid</td><td>
-Gets tde GridDataBoundGrid and changes it to Card View Style.</td><td>
-GridDataBoundGridboundGrid </td><td>
-Metdod </td><td>
+Gets the GridDataBoundGrid and changes it to Card View Style.</td><td>
+GridDataBoundGrid boundGrid </td><td>
+Method </td><td>
 void</td></tr>
 <tr>
 <td>
 UnWireGrid</td><td>
-Unhooks all tde events hooked in tde WireGrid() metdod.</td><td>
+Unhooks all the events hooked in the WireGrid() method.</td><td>
 N/A</td><td>
-Metdod</td><td>
+Method</td><td>
 Void</td></tr>
 <tr>
 <td>
 IsActiveCard</td><td>
-Indicates tde state of tde card if active.</td><td>
+Indicates the state of tde card if active.</td><td>
 rowIndex, ColIndex</td><td>
-Metdod</td><td>
+Method</td><td>
 bool</td></tr>
 <tr>
 <td>
 IsHeaderCell</td><td>
-Indicates if tde cell is a header column cell.</td><td>
+Indicates if the cell is a header column cell.</td><td>
 rowIndex, ColIndex</td><td>
-Metdod</td><td>
+Method</td><td>
 bool</td></tr>
 <tr>
 <td>
@@ -150,23 +150,23 @@ bool</td></tr>
 <tr>
 <td>
 IsValueCell</td><td>
-Indicates if tde cell is a value cell.</td><td>
+Indicates if the cell is a value cell.</td><td>
 rowIndex,colIndex.</td><td>
-Metdod</td><td>
+Method</td><td>
 bool</td></tr>
 <tr>
 <td>
 IsCardCaption</td><td>
-Indicates if tde cell is a caption cell.</td><td>
+Indicates if the cell is a caption cell.</td><td>
 rowIndex,colIndex.</td><td>
-Metdod</td><td>
+Method</td><td>
 bool</td></tr>
 <tr>
 <td>
 GetCardCellTypeGetCardCellType</td><td>
-Specifies tde type of tde card cell.</td><td>
+Specifies the type of the card cell.</td><td>
 rowIndex,colIndex.</td><td>
-Metdod</td><td>
+Method</td><td>
 CardCellType</td></tr>
 </table>
 
@@ -183,25 +183,25 @@ TYPE </th></tr>
 <tr>
 <td>
 QueryCardCellInfo</td><td>
-Occurs when tde card model queries for style information about a specific cell.</td><td>
+Occurs when the card model queries for style information about a specific cell.</td><td>
 public QueryCardCellInfoEventArgs(GridQueryCellInfoEventArgs e, GridCardView cardView)</td><td>
 Event</td></tr>
 <tr>
 <td>
 CellClick</td><td>
-Occurs when tde user clicks inside a cell.</td><td>
+Occurs when the user clicks inside a cell.</td><td>
 public CardCellClickEventArgs(GridCellClickEventArgs e, GridCardView cardView)</td><td>
 Event</td></tr>
 <tr>
 <td>
 SaveCardCellInfo</td><td>
-Occurs when tde card model is about to save style information about a specific cell.</td><td>
+Occurs when the card model is about to save style information about a specific cell.</td><td>
 public SaveCardCellInfoEventArgs(GridSaveCellInfoEventArgs e, GridCardView cardView)</td><td>
 Event</td></tr>
 <tr>
 <td>
 PushButtonClick</td><td>
-Occurs when tde user clicks a push button.</td><td>
+Occurs when the user clicks a push button.</td><td>
 public CardCellPushButtonClickEventArgs(GridCellPushButtonClickEventArgs e, GridCardView cardView)</td><td>
 Event</td></tr>
 </table>
