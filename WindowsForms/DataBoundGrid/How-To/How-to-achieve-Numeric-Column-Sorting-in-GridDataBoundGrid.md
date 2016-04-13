@@ -9,7 +9,7 @@ documentation: ug
 
 # How to achieve Numeric Column Sorting in GridDataBoundGrid
 
-To perform a custom sort through DataView, the object in the column should implement Icomparable interface. Once this is done, DataView will use IComparable interface implementation to sort the column instead of using default sort of control.
+To perform a custom sort through DataView, the object in the column should implement IComparer interface. Once this is done, DataView will use IComparable interface implementation to sort the column instead of using default sort of control.
 
 {% highlight c# %}
 
