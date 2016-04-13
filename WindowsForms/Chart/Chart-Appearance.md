@@ -784,7 +784,7 @@ VerticalAlign</td><td>
 Sets watermark vertically in the chart area.</td></tr>
 <tr>
 <td>
-Zorder</td><td>
+ZOrder</td><td>
 Used to specify whether watermark should be shown on top of the chart.</td></tr>
 </table>
 
