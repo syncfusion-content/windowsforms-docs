@@ -7,11 +7,11 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Change the Backcolor of a Single Cell
+# How to Change the BackColor of a Single Cell
 
 ### Introduction
 
-In GridDataBoundGrid, you cannot set cell specific properties like backcolor (other than CellValue or text) using an indexer. The reason is that in GridDataBoundGrid, the only data storage is the bound datasource, which only holds a single value per cell. It does not hold textcolor, backcolor, or any of the other many cell specific properties that are found in GridStyleInfo object. 
+In GridDataBoundGrid, you cannot set cell specific properties like BackColor (other than CellValue or text) using an indexer. The reason is that in GridDataBoundGrid, the only data storage is the bound datasource, which only holds a single value per cell. It does not hold TextColor, BackColor, or any of the other many cell specific properties that are found in GridStyleInfo object. 
 
 This code does not work.
 
