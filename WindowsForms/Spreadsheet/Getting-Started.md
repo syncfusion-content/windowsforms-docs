@@ -27,11 +27,11 @@ Contains the classes  that handles all the UI Operations of Spreadsheet such as 
 <tr>
 <td>
 Syncfusion.Shared.Base.dll</td><td>
-Contains the classes which holds the controls like Color pickers,Chromeless window, ComboBoxAdv, DateTimeEdit etc.</td></tr>
+Contains the classes which holds the controls like TabBarPage, TabBarSplitterControl etc.</td></tr>
 <tr>
 <td>
 Syncfusion.Tools.Windows.dll</td><td>
-Contains the classes which holds the controls like TabcontrolExt, TabItemExt, Gallery, GroupBar, TabSplitter etc which are used in Spreadsheet.</td></tr>
+Contains the classes which holds the controls like ToolStripPanelItem,MaskedEditBox,ToolStripGallery,BackStageButton  etc which are used in Spreadsheet.</td></tr>
 <tr>
 <td>
 Syncfusion.XlsIO.Base.dll</td><td>
