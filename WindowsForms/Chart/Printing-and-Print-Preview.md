@@ -84,7 +84,7 @@ Me.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale
 {% endhighlight %}
 
 
-## Automatic Grayscale Handling
+## Automatic GrayScale Handling
 
 Setting GrayScale print mode for the chart lets you print the chart in a gray scale and when multiple series are printed in this case, chart data points are automatically rendered with a patterned brush to differentiate the different series as shown in the image below.
 

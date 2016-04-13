@@ -643,7 +643,7 @@ The below steps lets you bind a database table with the ChartControl.
 
    
 
-5. In the Choose Data Source dialog box, select the data source as MS SQL server database or MS Access database, and then click Continue button.
+5. In the Choose Data Source dialog box, select the data source as MS SQL server database or Microsoft Access database, and then click Continue button.
    
    ![](Chart-Data_images/Chart-Data_img10.jpeg)
 

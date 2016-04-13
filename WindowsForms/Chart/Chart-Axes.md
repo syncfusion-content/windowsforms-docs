@@ -1551,7 +1551,7 @@ Specifies the angle of rotation relative to the x-axis. Default value is 30f.</t
 <tr>
 <td>
 ColumnDrawMode</td><td>
-Specifies the mode of column drawing when in 3-D.<ul><li> PlaneMode—Columns from different series are drawn with the same depth.,/li><li> InDepthMode—Columns from different series are drawn with different depths.</li></ul></td></tr>
+Specifies the mode of column drawing when in 3-D.<ul><li> PlaneMode—Columns from different series are drawn with the same depth.</li><li> InDepthMode—Columns from different series are drawn with different depths.</li></ul></td></tr>
 <tr>
 <td>
 <br>EnableMouseRotation</td><td>
@@ -1989,7 +1989,7 @@ There are three possible modes. They are,
 * Breaks don't work with zooming.
 * Breaks don't work with stacking.
 
-All breaks work only with cartesian axes.
+All breaks work only with Cartesian axes.
 
 
 
