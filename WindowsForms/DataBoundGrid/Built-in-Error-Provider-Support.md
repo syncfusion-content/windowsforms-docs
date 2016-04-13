@@ -26,7 +26,7 @@ TYPE </th><th>
 DATA TYPE </th></tr>
 <tr>
 <td>
-ShowerrorIcon</td><td>
+ShowErrorIcon</td><td>
 Specifies whether to show error icon. </td><td>
 NA</td><td>
 Boolean </td></tr>
@@ -89,9 +89,9 @@ You can show an error icon or error message box as an alert for incorrect data.
 
 ### Displaying Error Icon
 
-You can show the error icon in the cell and row header using the ShowerrorIcon and the ShowRowHeaderErrorIcon properties respectively. 
+You can show the error icon in the cell and row header using the ShowErrorIcon and the ShowRowHeaderErrorIcon properties respectively. 
 
-To show the error icon in the cell, set ShowerrorIcon property to True. By default this will be set to True. To show the error icon in the row header, set ShowRowHeaderErrorIcon property to True. By default this will be set to False. You can display the error icon in the cell as well as a row header if needed. 
+To show the error icon in the cell, set ShowErrorIcon property to True. By default this will be set to True. To show the error icon in the row header, set ShowRowHeaderErrorIcon property to True. By default this will be set to False. You can display the error icon in the cell as well as a row header if needed. 
 
 The following code illustrates how to display the error icon on both the cell as well as the row header:
 
