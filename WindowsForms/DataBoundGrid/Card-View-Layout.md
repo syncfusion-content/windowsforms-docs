@@ -129,7 +129,7 @@ Void</td></tr>
 <tr>
 <td>
 IsActiveCard</td><td>
-Indicates the state of tde card if active.</td><td>
+Indicates the state of the card if active.</td><td>
 rowIndex, ColIndex</td><td>
 Method</td><td>
 bool</td></tr>
