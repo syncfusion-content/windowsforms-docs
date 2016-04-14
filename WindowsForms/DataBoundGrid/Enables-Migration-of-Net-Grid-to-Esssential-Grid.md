@@ -7,11 +7,11 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Enables Migration of .Net Grid to Esssential Grid
+# Enables Migration of .NET Grid to Esssential Grid
 
-Look-up table that Enables Migration of .Net Grid to Esssential Grid
+Look-up table that Enables Migration of .NET Grid to Esssential Grid
 
-The following section contains document that enables users to migrate .Net Grid to Esssential Grid. Most of the properties, events, methods have common names in both grids. So it is not included in the following table. Since the API of both the grids is different, following document contains only common features that can be implemented with single line of code.
+The following section contains document that enables users to migrate .NET Grid to Esssential Grid. Most of the properties, events, methods have common names in both grids. So it is not included in the following table. Since the API of both the grids is different, following document contains only common features that can be implemented with single line of code.
 
 ## Equivalent Properties available
 
