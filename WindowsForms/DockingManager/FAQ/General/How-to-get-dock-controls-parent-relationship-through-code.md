@@ -12,7 +12,7 @@ documentation: ug
 
 This can be done using the below code snippet.
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -202,7 +202,7 @@ private void getControlsRelationToolStripMenuItem_Click(object sender, EventArgs
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Private Sub InitializeDockControlState()
@@ -350,6 +350,8 @@ Private Sub getControlsRelationToolStripMenuItem_Click(ByVal sender As Object, B
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

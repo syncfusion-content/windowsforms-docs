@@ -11,7 +11,7 @@ documentation: ug
 
 The Essential Tools DockingManager provides the functionality for creating and working with enhanced docking windows that support attaching to a host form's border, dragging around and docking to different edges within the form and also be dragged off the host form and floated as an individual top-level window. 
 
-The Essential Tools docking framework allows just about any child control on a form to be made into a fully qualified docking window. The Docking manager provides programmatic access to the interaction between these dockable windows and other complex features like multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events. 
+The Essential Tools docking framework allows just about any child control on a form to be made into a fully qualified docking window. The DockingManager provides programmatic access to the interaction between these dockable windows and other complex features like multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events. 
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -163,10 +163,9 @@ Control</td><td>
 The control which has been activated now.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 //The DockControlActivated event occurs when a dockable control gets activated.
@@ -194,8 +193,7 @@ Console.WriteLine("Activated Control Name : "+arg.Control.Name);
 
 
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 'The DockControlActivated event occurs when a dockable control gets activated.
@@ -217,7 +215,10 @@ Console.WriteLine("Dock Control Activated Event is Fired")
 Console.WriteLine("Activated Control Name : " + arg.Control.Name)
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### DockControlDeactivated Event
 
@@ -239,10 +240,9 @@ Control</td><td>
 The control which has been activated now.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
 
 
 //The DockControlDeactivated event occurs when a dockable control gets deactivated.
@@ -264,12 +264,7 @@ Console.WriteLine("Deactivated Control Name : "+arg.Control.Name);
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'The DockControlDeactivated event occurs when a dockable control gets deactivated.
 
@@ -284,7 +279,10 @@ Console.WriteLine("Dock Control Deactivated Event is Fired")
 Console.WriteLine("Deactivated Control Name : " + arg.Control.Name)
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## AutoHide Animation
 
@@ -314,10 +312,9 @@ The HostForm border along which the AutoHide tab is aligned.</td></tr>
 </table>
 
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 private void dockingManager1_AutoHideAnimationStart(object sender, Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs arg)
@@ -351,7 +348,7 @@ Console.WriteLine("Control Dock Border Value : "+arg.DockBorder.ToString()
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -380,7 +377,10 @@ Console.WriteLine("Control Dock Border Value : "+arg.DockBorder.ToString()
 + "Type of the Dock Border is : " +arg.DockBorder.GetType())
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### AutoHideAnimationStop Event
 
@@ -408,7 +408,7 @@ The HostForm border along which the AutoHide tab is aligned.</td></tr>
 
 
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -443,8 +443,7 @@ Console.WriteLine("Control Dock Border Value : "+arg.DockBorder.ToString()
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 'The AutoHideAnimationStop event occurs immediately after the end of an autohide animation
@@ -472,7 +471,10 @@ Console.WriteLine("Control Dock Border Value : "+arg.DockBorder.ToString()
 + "Type of the Dock Border is : " +arg.DockBorder.GetType())
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Context Menu
 
@@ -508,10 +510,9 @@ DockBorder</td><td>
 This returns the side to where the AutoHideTab is aligned.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
 
 
 private void dockingManager1_AutoHideTabContextMenu(object sender, Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs arg)
@@ -527,10 +528,7 @@ Console.WriteLine("AutoHideTabContextMenu event is raised");
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 Private Sub dockingManager1_AutoHideTabContextMenu(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs)
@@ -540,7 +538,10 @@ Private Sub dockingManager1_AutoHideTabContextMenu(ByVal sender As Object, ByVal
 Console.WriteLine("AutoHideTabContextMenu event is raised")
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### DockContextMenu Event
 
@@ -549,7 +550,6 @@ The DockContextMenu event is fired when the mouse is right-clicked over a dockin
 #### Event Data
 
 The event handler receives an argument of type DockContextMenuEventArgs containing data related to this event. The following DockContextMenuEventArgs properties provide information specific to this event. 
-
 
 <table>
 <tr>
@@ -574,10 +574,9 @@ The DockContextMenuEventArgs allows us to,
 
 Create a simple docking window. Add the required name spaces. Declare and initialize the bar items to be placed in the context menu as shown in the code below.
 
-
+{% tabs %}
 
 {% highlight C# %}
-
 
 //Adding namespaces
 
@@ -615,7 +614,7 @@ private void dockingManager1_DockContextMenu(object sender, Syncfusion.Windows.F
 
 {
 
-    arg.ContextMenu.ParentBarItem.Items.Add(this.pbiFile);
+   arg.ContextMenu.ParentBarItem.Items.Add(this.pbiFile);
 
 }
 
@@ -623,14 +622,11 @@ private void dockingManager1_DockContextMenu(object sender, Syncfusion.Windows.F
 
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 ' Adding Namespace
 
 Imports Syncfusion.Windows.Forms.Tools.XPMenus
-
 
 
 'Declaration
@@ -663,6 +659,8 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
  ![](Docking-Events_images/Docking-Events_img1.jpeg) 
 
 
@@ -694,10 +692,9 @@ Returns the docking of the window.</td></tr>
 </table>
 
 
-
+{% tabs %}
 
 {% highlight C# %}
-
 
 
 private void dockingManager1_DocMenuClick(object sender, Syncfusion.Windows.Forms.Tools.DockMenuClickEventArgs arg)
@@ -717,9 +714,7 @@ Console.WriteLine("DockingStyle : " + arg.DockingStyle.ToString());
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Private Sub dockingManager1_DocMenuClick(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.DockMenuClickEventArgs)
@@ -733,7 +728,10 @@ Console.WriteLine("Dock Menu click event is raised")
 Console.WriteLine("DockingStyle : " + arg.DockingStyle.ToString());
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Docked Control
 
@@ -759,11 +757,9 @@ Cancel</td><td>
 Gets / sets value that indicates whether to cancel the operation or not.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 private void dockingManager1_ControlMaximized(object sender, Syncfusion.Windows.Forms.Tools.ControlMaximizedEventArgs arg)
@@ -786,9 +782,7 @@ arg.Cancel=true;
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub dockingManager1_ControlMaximized(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.ControlMaximizedEventArgs)
 
@@ -805,7 +799,10 @@ Console.WriteLine("Control Name : "+arg.Control.Name)
 arg.Cancel=True
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### ControlMaximizing Event
 
@@ -826,12 +823,10 @@ Description</th></tr>
 Cancel</td><td>
 Gets / sets value that indicates whether to cancel the operation or not.</td></tr>
 </table>
+ 
 
-
-
+{% tabs %}
 {% highlight C# %}
-
-
 
 private void dockingManager1_ControlMaximizing(object sender, Syncfusion.Windows.Forms.Tools.ControlMaximizeEventArgs arg)
 
@@ -853,9 +848,7 @@ arg.Cancel=True
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Private Sub dockingManager1_ControlMaximizing(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.ControlMaximizeEventArgs)
@@ -873,7 +866,11 @@ Console.WriteLine("Control Name : "+arg.Control.Name)
 arg.Cancel=True
 
 End Sub
+
 {% endhighlight %}
+
+{% tabs %}
+
 ### ControlMinimized Event
 
 This event is fired after the control is minimized using the minimize option available for the docked control. This event can display the control name using the Control parameter available for the ControlMinimizedEventHandler.
@@ -889,12 +886,9 @@ Control</td><td>
 Specifies the docked control which is minimized.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
-
 
 private void dockingManager1_ControlMinimized(object sender, ControlMinimizedEventArgs arg)
 
@@ -913,9 +907,7 @@ Console.WriteLine("Control Name : "+arg.Control.Name);
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Private Sub dockingManager1_ControlMinimized(ByVal sender As Object, ByVal arg As ControlMinimizedEventArgs)
 
@@ -928,7 +920,10 @@ Displays the docked control name
 Console.WriteLine("Control Name : "+arg.Control.Name);
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### ControlRestored Event
 
@@ -950,7 +945,7 @@ Returns previous size state of changing control.</td></tr>
 </table>
 
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -972,8 +967,7 @@ Console.WriteLine("Control Name : "+arg.PreviousSizeState.ToString());
 {% endhighlight %}
 
 
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Private Sub dockingManager1_ControlRestored(ByVal sender As Object, ByVal arg As ControlRestoredEventArgs)
@@ -987,7 +981,10 @@ Console.WriteLine("Control Restored event is raised")
 Console.WriteLine("Control Name : "+arg.PreviousSizeState.ToString());
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Dock State
 
@@ -1020,11 +1017,9 @@ Gets the collection of controls undergoing the dock state transfer.</td></tr>
 </table>
 
 
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 //The DockStateChanged event occurs immediately after a dock operation.
 
@@ -1061,10 +1056,7 @@ i++;
 {% endhighlight %}
 
 
-
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 'The DockStateChanged event occurs immediately after a dock operation.
 
@@ -1091,7 +1083,12 @@ System.Math.Min(System.Threading.Interlocked.Increment(i), i - 1)
 Next
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
+
+
 
 ### DockStateChanging Event
 
@@ -1113,10 +1110,9 @@ Control</td><td>
 Gets the collection of controls undergoing the dock state transfer.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
 
 
 //The DockStateChanging event occurs just before a dock operation takes place.
@@ -1152,9 +1148,7 @@ i++;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'The DockStateChanging event occurs just before a dock operation takes place.
 
@@ -1181,7 +1175,10 @@ System.Math.Min(System.Threading.Interlocked.Increment(i), i - 1)
 Next
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### DockStateUnavailable Event
 
@@ -1204,7 +1201,7 @@ The name property of the control.</td></tr>
 </table>
 
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -1228,8 +1225,7 @@ Console.WriteLine("Dock state unavailable for the Control is :
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 'The DockStateUnavailable event occurs if serialized information is not available
@@ -1243,7 +1239,10 @@ Console.WriteLine("DockStateUnavailable Event has been fired")
 Console.WriteLine("Dock state unavailable for the Control is : " + arg.Control.Name)
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### NewDockStateBeginLoad Event
 
@@ -1261,11 +1260,9 @@ Control</td><td>
 Gets the docked control for which a new dock state is going to be loaded.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 //The NewDockStateBeginLoad event occurs just before a new dock state is loaded.
@@ -1287,9 +1284,7 @@ MessageBox.Show("This is NewDockStateBeginLoad Event Message Box");
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub dockingManager1_NewDockStateBeginLoad(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -1302,7 +1297,10 @@ Console.WriteLine("NewDockStateBeginLoad Event occurred")
 MessageBox.Show("This is NewDockStateBeginLoad Event Message Box")
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### NewDockStateEndLoad Event
 
@@ -1321,10 +1319,9 @@ Gets the docked control for which a new dock state has been loaded.</td></tr>
 </table>
 
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 //The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded.
 
@@ -1344,11 +1341,7 @@ MessageBox.Show("This is NewDockStateEndLoad Event Message Box");
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded.
 
@@ -1363,7 +1356,10 @@ Console.WriteLine("NewDockstateEndLoad Event occurred")
 MessageBox.Show("This is NewDockStateEndLoad Event Message Box")
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Dock Visibility State 
 
@@ -1395,6 +1391,7 @@ Gets the control undergoing the visibility change.</td></tr>
 
 
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -1405,56 +1402,50 @@ private void dockingManager1_DockVisibilityChanged(object sender, Syncfusion.Win
 
 {
 
-    //GetDockVisibility method gives the detail of the docked control visibility 
+   //GetDockVisibility method gives the detail of the docked control visibility 
 
-    if (this.dockingManager1.GetDockVisibility(arg.Control) == false)
+   if (this.dockingManager1.GetDockVisibility(arg.Control) == false)
 
-    {
+   {
 
         //DockVisibilityChangedEventArgs instance arg holds the control being changed the visibility  
 
         MessageBox.Show(this.dockingManager1.GetDockLabel(arg.Control) + " " + " window is closed.");
-
-    }
-
-
+   }
 
 } 
 {% endhighlight %}
 
 
-
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 'this event triggers when the control's visibility has changed. 
 
-Private Sub dockingManager1_DockVisibilityChanged(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.DockVisibilityChangedEventArgs) Handles  
+ Private Sub dockingManager1_DockVisibilityChanged(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.DockVisibilityChangedEventArgs) Handles  
 
-    dockingManager1.DockVisibilityChanged()
-
-
-
-    'GetDockVisibility method gives the detail of the docked control visibility 
-
-    If Me.dockingManager1.GetDockVisibility(arg.Control) = False Then
+ dockingManager1.DockVisibilityChanged()
 
 
 
-        'DockVisibilityChangedEventArgs instance arg holds the control being changed the visibility  
+ 'GetDockVisibility method gives the detail of the docked control visibility 
 
-        MessageBox.Show(Me.dockingManager1.GetDockLabel(arg.Control) + " " + " window is closed.")
-
-
-
-    End If
+  If Me.dockingManager1.GetDockVisibility(arg.Control) = False Then
 
 
 
-End Sub
+      'DockVisibilityChangedEventArgs instance arg holds the control being changed the visibility  
+
+      MessageBox.Show(Me.dockingManager1.GetDockLabel(arg.Control) + " " + " window is closed.")
+
+
+
+  End If
+
+ End Sub
 {% endhighlight %}
+
+{% endtabs %}
 
 ### DockVisibilityChanging Event
 
@@ -1493,10 +1484,9 @@ Control</td><td>
 The control that is about to be dragged.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 //The DragAllow event occurs when a docking window is about to be dragged.
@@ -1524,9 +1514,7 @@ arg.Cancel=true;
 {% endhighlight %}
 
 
-
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 'The DragAllow event occurs when a docking window is about to be dragged.
@@ -1546,7 +1534,11 @@ arg.Cancel = True
 End If
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
+
 ### DragFeedbackStart Event
 
 The DragFeedbackStart event is fired just before the start of the feedback of a drag operation. When the docked control is dragged from its position to locate some position, this event will be raised.
@@ -1562,11 +1554,9 @@ Control</td><td>
 Gets the docked control which is about to be dragged.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 //The DragFeedbackStart event occurs just before the start of feedback of a drag operation.
@@ -1579,7 +1569,7 @@ private void dockingManager1_DragFeedbackStart(object sender, System.EventArgs e
 
 Console.WriteLine("DragFeedbackStart Event has been ");
 
-//The following code is used to display all control names which are in the Docking Manager.
+//The following code is used to display all control names which are in the DockingManager.
 
 Syncfusion.Windows.Forms.Tools.DockingManager ctrl=sender as
 
@@ -1606,9 +1596,7 @@ Console.WriteLine("Control Name :" + c.Name);
 {% endhighlight %}
 
 
-
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 Private Sub dockingManager1_DragFeedbackStart(ByVal sender As Object, ByVal e As System.EventArgs)
@@ -1634,7 +1622,10 @@ Console.WriteLine("Control Name :" + c.Name)
 Next
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### DragFeedbackStop Event
 
@@ -1653,8 +1644,9 @@ Gets the docked control which is dragged.</td></tr>
 </table>
 
 
-{% highlight C# %}
+{% tabs %}
 
+{% highlight C# %}
 
 
 //The DragFeedbackStop event occurs immediately after the end of feedback of a drag operation.
@@ -1668,11 +1660,7 @@ Console.WriteLine("DragFeedbackStop Event is raised");
 }
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 'The DragFeedbackStop event occurs immediately after the end of feedback of a drag operation.
@@ -1682,7 +1670,10 @@ Private Sub dockingManager1_DragFeedbackStop(ByVal sender As Object, ByVal e As 
 Console.WriteLine("DragFeedbackStop Event is raised")
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Linked Managers
 
@@ -1716,10 +1707,9 @@ Control</td><td>
 Gets the control which is undergoing the transfer.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 // A docking window is being transferred from one docking layout to another.
@@ -1743,8 +1733,7 @@ Console.WriteLine("HostControl Name (Target Page Name) : "+dockablecontrol.Curre
 {% endhighlight %}
 
 
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -1759,7 +1748,10 @@ dockablecontrol.CurrentDockingManager = CType(ConversionHelpers.AsWorkaround(sen
 Console.WriteLine("HostControl Name (Target Page Name) : " + dockablecontrol.CurrentDockingManager.HostControl.Name)
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### TransferringFromManager Event
 
@@ -1781,10 +1773,9 @@ Control</td><td>
 Gets the control which is undergoing the transfer.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 //The TransferringFromManager event occurs when a dockable control hosted by this DockingManager is
@@ -1807,11 +1798,7 @@ Console.WriteLine("HostControl name : "+dockablecontrol.CurrentDockingManager.Ho
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'The TransferringFromManager event occurs when a dockable control hosted by this DockingManager is
 
@@ -1828,7 +1815,10 @@ dockablecontrol.CurrentDockingManager = CType(ConversionHelpers.AsWorkaround(sen
 Console.WriteLine("HostControl name : " + dockablecontrol.CurrentDockingManager.HostControl.Name)
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## ImageListChanged Event
 
@@ -1846,10 +1836,9 @@ Control</td><td>
 Gets the docked control for which the image list property is changed.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 //Occurs when the ImageList property changes
 
@@ -1869,12 +1858,7 @@ dockingManager1.SetDockIcon(this.panel2,1);
 {% endhighlight %}
 
 
-
-
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 
 'Occurs when the ImageList property changes
@@ -1890,7 +1874,11 @@ dockingManager1.SetDockIcon(Me.panel1, 0)
 dockingManager1.SetDockIcon(Me.panel2, 1)
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
+
 
 ## InitializeControlOnLoad Event
 
@@ -1912,12 +1900,9 @@ ControlName</td><td>
 The Name property of the control.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
-
 
 protected void DockingManager_InitializeControlOnLoad(object sender,
 
@@ -1977,10 +1962,7 @@ break;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 
 Protected Sub DockingManager_InitializeControlOnLoad(ByVal sender As Object, ByVal args As InitializeControlOnLoadEventArgs)
@@ -2030,7 +2012,10 @@ Me.ActivateGridInfoControl(dockingmgr, False)
 End Select
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## ProvideGraphicsItems Event
 
@@ -2077,9 +2062,9 @@ Gets the active / inactive state of the docking window.</td></tr>
 N> If the control is in floating state, DockingManager.ProvideGraphicsItems event will not get triggered.
 
 
+{% tabs %}
+
 {% highlight C# %}
-
-
 
 
 private void dockingManager1_ProvideGraphicsItems(object sender, Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs arg)
@@ -2117,11 +2102,7 @@ Console.WriteLine("Control Name="+ arg.Control.Name);
 }
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 
 Private Sub dockingManager1_ProvideGraphicsItems(ByVal sender As Object, ByVal arg AsSyncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs)
@@ -2153,7 +2134,10 @@ Console.WriteLine("Control Name=" + arg.Control.Name)
 End If
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## ProvidePersistenceID Event
 
@@ -2162,7 +2146,6 @@ This event lets you specify a unique ID to distinguish the persistence informati
 ### Event Data
 
 The event handler receives an argument of type ProvidePersistenceIDEventArgs containing data related to this event. The following ProvidePersistenceIDEventArgs property provides information specific to this event.
-
 
 
 <table>
@@ -2176,12 +2159,9 @@ PersistenceID</td><td>
 Lets you specify a unique ID.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
-
 
 //Lets you specify a unique ID used to distinguish the persistence information of different
 
@@ -2206,8 +2186,7 @@ e.PersistenceID=dm.HostControl.Name.ToString();
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight VB %}
 
 
 'Lets you specify a unique ID used to distinguish the persistence information of different
@@ -2227,11 +2206,14 @@ Console.WriteLine("Host control name = " + dm.HostControl.Name.ToString)
 e.PersistenceID = dm.HostControl.Name.ToString
 
 End Sub
+
 {% endhighlight %}
 
-## Docking behavior in Docking Manager
+{% endtabs %}
 
-The current behavior of Docking Manager is based on Visual Studio 2008. This behavior can be changed to the dock behavior of  Visual Studio 2010 by using DockBehavior property.
+## Docking behavior in DockingManager
+
+The current behavior of DockingManager is based on Visual Studio 2008. This behavior can be changed to the dock behavior of  Visual Studio 2010 by using DockBehavior property.
 
 ### Caption Button Collection:
 
@@ -2243,7 +2225,7 @@ In Visual studio 2010, if you double-click on the docked window, the _caption co
 
 ### Interactive features
 
-When you double-click on Docking Manager caption bar, the control state changes to _Maximized_ state. 
+When you double-click on DockingManager caption bar, the control state changes to _Maximized_ state. 
 
 #### Maximize and Restore Options: 
 
@@ -2286,44 +2268,101 @@ Description</td></tr>
 <td>
 DockBehavior</td><td>
 Enum</td><td>
-Specifies the docking behavior of Docking Manager.</td></tr>
+Specifies the docking behavior of DockingManager.</td></tr>
 </table>
 
 
-The following code example illustrates how to switch DockBehavior property from VS 2008 to VS 2010 
-
-and vice versa.
+{% tabs %}
 
 {% highlight C# %}
-
 
 this.dockingManager1.DockBehavior = Syncfusion.Windows.Forms.Tools.DockBehavior.VS2010;
 
 {% endhighlight %}
 
 
-{% highlight C# %}
-
-
-this.dockingManager1.DockBehavior = Syncfusion.Windows.Forms.Tools.DockBehavior.VS2008;
-
-{% endhighlight %}
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.dockingManager1.DockBehavior = Syncfusion.Windows.Forms.Tools.DockBehavior.VS2010
 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## OnCaptionDoubleClick Event:
+
+The OnCaptionDoubleClick event occurs when you double-click on a dockable control or a docked control caption. This event is triggered when DockingManager EnableDoubleClickOnCaption property is set to _“false”_. It displays the control name which is currently active.
+
+### Event Data
+
+The event handler receives an argument of type DockMouseSelectionEventHandler that contains data related to this event. The following DockMouseSelectionEventHandler properties provide information specific to this event.
+
+
+<table>
+<tr>
+<th>
+Member</th><th>
+Description</th></tr>
+<tr>
+<td>
+Control</td><td>
+Gets the control that is activated.</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+
+private void dockingManager1_OnCaptionDoubleClick(object sender, Syncfusion.Windows.Forms.Tools.DockControlMouseSelection arg)
+
+{
+
+//When you  double-click on a Docked control or click on the Docked control caption,,
+
+// OnCaptionDoubleClick event is triggered
+
+//DockControlMouseSelection has a property called “Control” which has the details of 
+
+// activated control.
+
+Console.WriteLine("Dock Control Activated Event is Fired");
+
+//Displays the name of the control that is currently active.
+
+Console.WriteLine("Activated Control Name : "+arg.Control.Name);
+
+}
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
- Me.dockingManager1.DockBehavior = Syncfusion.Windows.Forms.Tools.DockBehavior.VS2008
+ 'The DockControlActivated event occurs when a dockable control gets activated.
+
+Private Sub dockingManager1_OnCaptionDoubleClick(ByVal sender As Object, ByVal arg AsSyncfusion.Windows.Forms.Tools.DockActivationChangedEventArgs)
+
+‘When you  double-click on a Docked control or click on the Docked control caption,,
+
+‘OnCaptionDoubleClick event is triggered
+
+‘DockControlMouseSelection has a property called “Control” which has the details of 
+
+‘activated control.
+
+Console.WriteLine("Dock Control Activated Event is Fired");
+
+‘Displays the name of the control that is currently active.
+
+Console.WriteLine("Activated Control Name : "+arg.Control.Name);
+
+End Sub
+
 {% endhighlight %}
 
-
-
+{% endtabs %}
 

@@ -11,9 +11,7 @@ documentation: ug
 
 # How to get the docking group details?
 
- To get the docking group
-
-There is no concept of 'group' in Docking Manager and a tabbed group is just an intermediate state. However, if necessary, this can be determined by first ascertaining that the control is in a tabbed docking group, getting hold of the DockTabController, it’s DockTab and then iterating the DockTabPages. The dhcClient member of each DockTabPage will reference the DockHostController that is associated with it. Once the controller is available, you can get to the control through the DockHostController.HostControl property and use the control’s Controls[0] indexer to get the actual dockable control.
+There is no concept of 'group' in Docking Manager and a tabbed group is just an intermediate state. However, if necessary, this can be determined by first ascertaining that the control is in a tabbed docking group, getting hold of the DockTabController, it’s DockTab and then iterating the DockTabPages. The dhcClient member of each DockTabPage will reference the DockHostController that is associated with it. Once the controller is available, we can get the control through the HostControl property of DockHostController and use the control’s Controls[0] indexer to get the actual dockable control.
 
 Follow the given steps to get the docking group.
 
@@ -21,40 +19,35 @@ Follow the given steps to get the docking group.
 2. Set the EnableDocking on Docking Manager property to true.
 3. Add the namespace Syncfusion.Windows.Forms.Tools in your application.
    
-   ~~~ cs
+ {% tabs %}
 
-		
-
-
-
-		using Syncfusion.Windows.Forms.Tools;
-	
-
-   ~~~
-   {:.prettyprint}
-
-   ~~~ vbnet
+{% highlight C# %}
 
 
-
-		Imports Syncfusion.Windows.Forms.Tools
-
-   ~~~
-   {:.prettyprint}
+using Syncfusion.Windows.Forms.Tools;
 
 
-4. Tab the controls as shown below.
+{% endhighlight %}
 
-   ![](Docked-Group_images/Docked-Group_img3.jpeg)
+{% highlight VB %}
+
+
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+
+{% endtabs %}	
+
+
+4. Tab the controls as shown below. 
 
 
 
 Add the code given below in the button click event.
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 Syncfusion.Windows.Forms.Tools.DockHost dhost = this.listBox1.Parent as Syncfusion.Windows.Forms.Tools.DockHost; 
@@ -89,9 +82,7 @@ Syncfusion.Windows.Forms.Tools.DockTabControl docktab = (dhc.ParentController as
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 
 Dim dhost As Syncfusion.Windows.Forms.Tools.DockHost = CType(IIf(TypeOf Me.listBox1.Parent Is Syncfusion.Windows.Forms.Tools.DockHost, Me.listBox1.Parent, Nothing), Syncfusion.Windows.Forms.Tools.DockHost)
@@ -123,6 +114,9 @@ Dim docktab As Syncfusion.Windows.Forms.Tools.DockTabControl = (CType(IIf(TypeOf
     Next tabpage
 
 End If
+
 {% endhighlight %}
+
+{% endtabs %}
 
 

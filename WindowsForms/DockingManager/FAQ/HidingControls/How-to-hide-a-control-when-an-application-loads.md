@@ -7,11 +7,9 @@ control: DockingManager
 documentation: ug
 ---
 
-
-
 # How to hide a control when an application loads?
 
-This is done programmatically, by calling SetHiddenOnLoad method or through Designer, by setting HiddenOnLoad property to true. 
+This is done programmatically, by calling `SetHiddenOnLoad` method or through Designer, by setting `HiddenOnLoad` property to true. 
 
 
 <table>
@@ -26,24 +24,23 @@ Hides the docked control when the application loads. The parameters are,{{ 'Ctrl
 </table>
 
 
+{% tabs %}
 
 {% highlight C# %}
 
-
-
 this.dockingManager1.SetHiddenOnLoad(this.listBox1, true);
+
 {% endhighlight %}
 
 
-
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 
 Me.dockingManager1.SetHiddenOnLoad(Me.listBox1, True)
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # How to detect the docking style assigned to a control?
 
- You can detect the Docking style that is assigned to the control, at run time, using GetDockingStyle method.
+Docking style which is assigned to the control can be detect at run time, using `GetDockingStyle` method.
 
 
 <table>
@@ -24,11 +24,9 @@ GetDockingStyle</td><td>
 Returns the current docking style of the control. The return value for this method would be docking style value, that specifies the dock type / position. The docked control for which the dock style is to be identified should be passed as a parameter to this method. The parameter is,{{ 'Ctrl' | markdownify }} - Indicates the docked control for which the DockStyle needs to be retrieved.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
 
 
 //Getting the docking style
@@ -45,10 +43,7 @@ Console.Write("Dock style :" + this.dockingManager1.GetDockStyle(this.panel1));
 {% endhighlight %}
 
 
-
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 'Getting the docking style
@@ -60,5 +55,8 @@ Me.dockingManager1.GetDockStyle(this.panel1)
 Console.Write("Dock style :" + this.dockingManager1.GetDockStyle(this.panel1))
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 

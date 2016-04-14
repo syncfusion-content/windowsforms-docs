@@ -22,10 +22,9 @@ ShowMenu</td><td>
 Show's the docking caption context menu at the specified point (Pt). The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the control for which dock / floating state is been queried.{{ 'Pt' | markdownify }} - Indicates the location of the menu to be displayed.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 private void button1_Click(object sender, EventArgs e)
@@ -37,10 +36,7 @@ this.dockingManager1.ShowMenu(this.listBox1, new Point(100,100));
 }
 {% endhighlight %}
 
-{% highlight xaml %}
-
-
-
+{% highlight VB %}
 
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
@@ -48,6 +44,9 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 Me.dockingManager1.ShowMenu(Me.listBox1, New Point(100,100))
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 

@@ -12,20 +12,18 @@ documentation: ug
 
 The DockingManager.Controls property returns an enumerator that may be used for accessing the controls that are currently associated with the DockingManager. To access and modify the DockingManager’s control, the contents of the enumerator should first be copied to a temporary collection. 
 
-Step 1: Create the respective controls and dock the control through design by setting EnableDocking on dockingManager property to true and follow the below given steps to enable, access and modify the docked controls.
+Step 1: Create the respective controls and dock the control through design by setting `EnableDocking on dockingManager` property to true and follow the below given steps to enable, access and modify the docked controls.
 
- ![](Docked-Group_images/Docked-Group_img1.jpeg)
+ ![](Docked-Group_images/Docked-Group_img4.jpeg)
 
 
 Step 2:Access and modify the dockable controls.
 
 The below given code snippet accesses the docked controls, disable docking and then disposes the dockable controls.
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
-
 
 
 //Getting the Controls into an ArrayList.
@@ -53,10 +51,7 @@ ctrl.Dispose();
 }
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 
 'Getting the Controls into an ArrayList.
@@ -82,10 +77,12 @@ Me.dockingManager.SetEnableDocking(ctrl, False)
 ctrl.Dispose()
 
 Next ctrl
+
 {% endhighlight %}
 
+{% endtabs %}
 
- ![](Docked-Group_images/Docked-Group_img2.jpeg) 
+ ![](Docked-Group_images/Docked-Group_img5.jpeg) 
 
 
 

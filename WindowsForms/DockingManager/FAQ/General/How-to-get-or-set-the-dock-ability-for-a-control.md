@@ -27,9 +27,9 @@ Sets the dock ability of the control.{{ 'Ctrl' | markdownify }} - Indicates the 
 </table>
 
 
+{% tabs %}
+
 {% highlight C# %}
-
-
 
 
 //Getting the Dock Ability
@@ -37,17 +37,14 @@ Sets the dock ability of the control.{{ 'Ctrl' | markdownify }} - Indicates the 
 this.dockingManager1.GetDockAbility(this.panel2);
 
 
-
 //Setting the Dock Ability
 
 this.dockingManager1.SetDockAbility(this.panel2, "Bottom, Horizontal");
+
 {% endhighlight %}
 
 
-
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 'Getting the Dock Ability
@@ -55,11 +52,14 @@ this.dockingManager1.SetDockAbility(this.panel2, "Bottom, Horizontal");
 Me.dockingManager1.GetDockAbility(Me.panel2)
 
 
-
 'Setting the Dock Ability
 
 Me.dockingManager1.SetDockAbility(Me.panel2, "Bottom, Horizontal")
+
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
 
