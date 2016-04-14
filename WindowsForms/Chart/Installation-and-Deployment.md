@@ -79,7 +79,7 @@ To view the samples, follow the steps below
    * ChartControl
    * Sparkline 
 
-   ### Dll List
+   ### Assembly List
 
    While deploying an application that references SyncfusionEssentialChart assembly, the following dependencies must be included in the distribution.
 

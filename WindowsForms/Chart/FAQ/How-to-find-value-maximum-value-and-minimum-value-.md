@@ -122,7 +122,7 @@ Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMinValue(str, ref
 
 {% endhighlight %}
 
-#### FindMinimumvalue
+#### FindMinimumValue
 
 
 

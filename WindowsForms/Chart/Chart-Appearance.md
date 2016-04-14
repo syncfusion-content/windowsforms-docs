@@ -569,7 +569,7 @@ When docked to a side, this property specifies how the title panel should be ali
 <tr>
 <td>
 <br>Behavior</td><td>
-Specifies the docking behavior of the title.* Docking - It is dockable on all four sides.<ul><li> Movable - It is movable.</li><li> All - It is movable and dockable.</li><li>None - It is neither movable nor dockable.</ul></li></td></tr>
+Specifies the docking behavior of the title.* Docking - It is dockable on all four sides.<ul><li> Movable - It is movable.</li><li> All - It is movable and dockable.</li><li>None - It is neither movable nor dockable.</li></ul></td></tr>
 </table>
 
 ### Title Look and Feel
@@ -784,7 +784,7 @@ VerticalAlign</td><td>
 Sets watermark vertically in the chart area.</td></tr>
 <tr>
 <td>
-Zorder</td><td>
+ZOrder</td><td>
 Used to specify whether watermark should be shown on top of the chart.</td></tr>
 </table>
 

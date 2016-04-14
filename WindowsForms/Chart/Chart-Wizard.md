@@ -113,7 +113,7 @@ Below are the three tabs in the Wizard for Series.
    ![](Chart-Wizard_images/Chart-Wizard_img4.jpeg)
   
 
-6. Click Add to add points to the series. Give X and Y values. Click Ok.
+6. Click Add to add points to the series. Give X and Y values. Click OK.
 
    ![](Chart-Wizard_images/Chart-Wizard_img5.png)
 
