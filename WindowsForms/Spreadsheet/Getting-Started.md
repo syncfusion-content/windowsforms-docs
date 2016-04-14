@@ -1,4 +1,4 @@
-----
+---
 layout: post
 title: Getting Started with Spreadsheet
 description: How to create, open and save the workbook in Spreadsheet
