@@ -3,7 +3,7 @@ layout: post
 title: Conditional Formatting 
 description: How to apply conditional formatting rules at run time in Spreadsheet.
 platform: windowsforms
-control:Spreadsheet
+control: Spreadsheet
 documentation: ug
 ---
 
