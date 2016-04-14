@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Floating-Window | WindowsForms | Syncfusion
-description: Floating Window
+description: floating window
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

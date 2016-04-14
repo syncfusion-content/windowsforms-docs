@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | WindowsForms | Syncfusion
-description: Overview
+description: overview
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

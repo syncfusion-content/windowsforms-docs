@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docking-Window | WindowsForms | Syncfusion
-description: Docking Window
+description: docking window
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State-Persistence | WindowsForms | Syncfusion
-description: State Persistence
+description: state persistence
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

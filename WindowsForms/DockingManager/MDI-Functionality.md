@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MDIFunctionality | WindowsForms | Syncfusion
-description: MDIFunctionality
+description: mdifunctionality
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
