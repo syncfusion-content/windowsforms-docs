@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling | WindowsForms | Syncfusion
-description: Styling
+description: styling
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

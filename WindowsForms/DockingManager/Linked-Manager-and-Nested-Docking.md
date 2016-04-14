@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linked-Manager-and-Nested-Docking | WindowsForms | Syncfusion
-description: Linked Manager and Nested Docking
+description: linked manager and nested docking
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: Getting Started
+description: getting started
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tabbed-Window | WindowsForms | Syncfusion
-description: Tabbed Window
+description: tabbed window
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
