@@ -88,7 +88,7 @@ Use the following steps to view the samples:
 
 * TreeMap
 
-#### Dll List
+#### Assembly List
 
 While deploying an application that references SyncfusionEssentialTreeMap assembly, the following dependencies must be included in the distribution.
 
