@@ -165,7 +165,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/dockingmanager/advanced-features">DockingClientPanel</a><br/><br/>
+			<a href="/windowsforms/dockingmanager/dockingclientpanel">DockingClientPanel</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
