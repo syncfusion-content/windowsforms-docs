@@ -23,7 +23,7 @@ SUPPORTING FEATURES<br/><br/></th></tr>
 Refer to Subpart B.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
-1194.22 Web-based intranet and internet Information and applications.<br/><br/><br/><br/></td><td>
+1194.22 Web-based intranet and Internet Information and applications.<br/><br/><br/><br/></td><td>
 Not Applicable.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>

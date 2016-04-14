@@ -576,7 +576,7 @@ _..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows
 
 ## Regular Expressions
 
-Non-Deterministic Finite Automation (NFA) regular expressions are a powerful way of parsing text and are used in a wide range of products like the Microsoft .NET platform, Perl, Python, Grep (Global Regular Expression Print), VI Editor, Tcl, Awk, and various shells. Regular expressions figure into all kinds of text-manipulation tasks like searching, search-replace and can also be used to test for certain conditions in a text file or data stream. 
+Non-Deterministic Finite Automation (NFA) regular expressions are a powerful way of parsing text and are used in a wide range of products like the Microsoft .NET platform, Perl, Python, Global Regular Expression Print, VI Editor, Tcl, Awk, and various shells. Regular expressions figure into all kinds of text-manipulation tasks like searching, search-replace and can also be used to test for certain conditions in a text file or data stream. 
 
 Edit Control implements a customized regular expression engine which is capable of parsing extremely complicated languages including embedded scripts. The search and search-replace functionalities also use the regular expressions internally. 
 
@@ -632,7 +632,7 @@ The Edit Control regular expression engine accepts an extensive set of regular e
 
 #### Character Escapes
 
-Most of the important regular expression language operators are unescaped single characters. The escape character \ (a single backslash) signals to the regular expression parser that the character following the backslash is not an operator. For example, the parser treats an asterisk (*) as a repeating quantifier, and a backslash followed by an asterisk (\*) as the Unicode character \u002A.
+Most of the important regular expression language operators are captured single characters. The escape character \ (a single backslash) signals to the regular expression parser that the character following the backslash is not an operator. For example, the parser treats an asterisk (*) as a repeating quantifier, and a backslash followed by an asterisk (\*) as the Unicode character \u002A.
 
 
 

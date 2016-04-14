@@ -9,7 +9,7 @@ documentation: ug
 
 ## Version Compatibility
 
-The table represents the .NET framework versions for Syncfusion Essential Studio version.
+The table represents the .NET Framework versions for Syncfusion Essential Studio version.
 
 <table>
 <tr>
@@ -56,7 +56,7 @@ Yes<br/><br/></td></tr>
 
 ## Control Compatibility
 
-The table represents the .NET framework versions for Syncfusion controls.
+The table represents the .NET Framework versions for Syncfusion controls.
 
 <table>
 <tr>

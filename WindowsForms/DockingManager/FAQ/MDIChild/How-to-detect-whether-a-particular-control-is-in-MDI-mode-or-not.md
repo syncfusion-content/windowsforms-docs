@@ -31,3 +31,9 @@ Me.dockingManager1.IsMDIMode(Me.listBox2)
 {% endhighlight %}
 
 {% endtabs %}
+
+{% seealso %}
+
+[MDI Child Transition](/windowsforms/dockingmanager/MDIFunctionality)
+
+{% endseealso %}

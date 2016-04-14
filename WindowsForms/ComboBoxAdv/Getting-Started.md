@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 
-This section briefly describes how to design a ComboBoxAdv Control in a WindowsForms Application.
+This section briefly describes how to design a ComboBoxAdv Control in a Windows Forms Application.
 
 * Adding a ComboBoxAdv Control 
 * Configuring the ComboBoxAdv Control

@@ -28,7 +28,7 @@ To create a control using Visual Studio:
 
 ### Ribbon Form
 
-EssentialStudio now gives a similar look and feel of MS Office, to its Office controls, using RibbonControlAdv. This section will guide you in creating a Ribbon form using RibbonControlAdv. 
+EssentialStudio now gives a similar look and feel of Microsoft Office, to its Office controls, using RibbonControlAdv. This section will guide you in creating a Ribbon form using RibbonControlAdv. 
 
 **Creating** **Ribbon** **Form**
 
@@ -299,7 +299,7 @@ Me.ribbonControlAdv1.QuickPanelVisible = True
 
 ####  Add Items to the Quick Access ToolBar
 
-Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items Button link in the smart tag of the RibbonControlAdv control. This opens Customize Quick Access Tool bar Dialog which displays the existing toolstrip items. You can add the required items to the Quick Access Toolbar. 
+Items / controls can be added to the QuickAccessToolbar by clicking on the Edit quick items Button link in the smart tag of the RibbonControlAdv control. This opens Customize Quick Access Tool bar Dialog which displays the existing tool strip items. You can add the required items to the Quick Access Toolbar. 
 
 The dialog comes with Office2007 look and feel.
 

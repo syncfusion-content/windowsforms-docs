@@ -1331,7 +1331,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of number of detentes the mouse wheel has rotated. A detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of number of detentes the mouse wheel has rotated. A detentes is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -1628,7 +1628,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the number of detentes the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the number of detentes the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detentes is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -1878,7 +1878,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the detents the mouse had rotated, whereas a detent is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the detentes the mouse had rotated, whereas a detentes is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -2012,7 +2012,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the detentes the mouse had rotated, whereas a detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the detentes the mouse had rotated, whereas a detentes is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>
@@ -2146,7 +2146,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the detentes the mouse had rotated, whereas a detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the detentes the mouse had rotated, whereas a detentes is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>

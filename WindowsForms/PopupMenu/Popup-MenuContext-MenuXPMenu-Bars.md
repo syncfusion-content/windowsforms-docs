@@ -354,7 +354,7 @@ It indicates whether to show underlines with mnemonic always.</td></tr>
 
 #### Merging
 
-XPMenus FrameWork lets you merge menu items of different ParentBarItems using MergeItems method.
+XPMenus Framework lets you merge menu items of different ParentBarItems using MergeItems method.
 
 Property Table
 

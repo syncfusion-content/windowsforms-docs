@@ -176,7 +176,7 @@ The culture name can be displayed in the different format according to the speci
 <tr>
 <td>
 DisplayName</td><td>
-Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in the language of the localized version of the .NET framework.</td></tr>
+Gets the culture name in the format "&lt;language full&gt;(&lt;country/region full&gt;)" in the language of the localized version of the .NET Framework.</td></tr>
 <tr>
 <td>
 EnglishName</td><td>

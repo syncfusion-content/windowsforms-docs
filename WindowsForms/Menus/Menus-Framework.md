@@ -12,7 +12,7 @@ This section will demonstrate the addition and customization of detached Command
 
 ## Detached CommandBar
 
-The XP Menus framework provides the flexibility to add detached toolbars through CommandBar that can host any .NET control. These toolbars are detached from the framework in the sense that they cannot participate in user customization. Otherwise, they are seamless in look-and-feel. 
+The XP Menus Framework provides the flexibility to add detached toolbars through CommandBar that can host any .NET control. These toolbars are detached from the Framework in the sense that they cannot participate in user customization. Otherwise, they are seamless in look-and-feel. 
 
 ### Through Designer
 
@@ -229,7 +229,7 @@ Indicates the Popup menu on clicking the dropdown button.</td></tr>
 
 ## Detached ControlBars
 
-ControlBars inEssential Tools XP Menus framework enables application developers to add dockable / floatable controls to their form's toolbar layout. A common example of a ControlBar is the task pane window found in the Microsoft Office 2003 product suite. 
+ControlBars inEssential Tools XP Menus Framework enables application developers to add dockable / floatable controls to their form's toolbar layout. A common example of a ControlBar is the task pane window found in the Microsoft Office 2003 product suite. 
 
 A ControlBar is a full-featured docking container that can host any control and be docked along the border of the host form or floated as a top-level window. ControlBars, however, differ from traditional docking windows by adopting the characteristic layout behavior of a toolbar rather than that of a classic dockable control.
 

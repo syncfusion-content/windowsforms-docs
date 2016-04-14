@@ -57,7 +57,7 @@ To create TabPrimitives through designer, follow the steps given below.
 
 
 
-3. Set the TabPrimitiveType as required and click Ok.
+3. Set the TabPrimitiveType as required and click OK.
 
    ![](TabPrimitives_images/TabPrimitives_img7.jpeg)
 

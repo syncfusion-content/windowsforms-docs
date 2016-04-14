@@ -9,7 +9,7 @@ documentation: ug
 
 # Element Events
 
-Each HTML element in an HTML document is made to support events, such asClick, DoubleClick, MouseMove, KeyPress, and so on just like the Windows forms controls. 
+Each HTML element in an HTML document is made to support events, such asClick, DoubleClick, MouseMove, KeyPress, and so on just like the Windows Forms controls. 
 
 
 

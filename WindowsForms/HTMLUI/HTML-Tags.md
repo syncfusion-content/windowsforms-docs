@@ -18,7 +18,7 @@ The Anchor tag is used for creating links to other files or in creating bookmark
 
 
 * href:Specifies the URL of the page to which the link is to be made
-* rel: Specifies the relation between the current document and the target url
+* rel: Specifies the relation between the current document and the target URL
 
 
 
@@ -433,7 +433,7 @@ The Head element contains the information required for processing the document. 
 
 
 * Link reference to the style sheets by using the Link tag of the head section
-* Styles to the html elements by using the Style tag of the head section
+* Styles to the HTML elements by using the Style tag of the head section
 * Title for the document in the Title tag of the head section
 
 
@@ -1108,7 +1108,7 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\paragraph\p.html")
 
 The Script tag is used to include executable user defined code snippets inside the HTML document. This is to make the HTML document self-contained and not to depend on external means for executing an action.
 
-HTMLUI supports C#, Visual Basic and Javascript. The language attribute is used to choose the script language from the supported types.
+HTMLUI supports C#, Visual Basic and JavaScript. The language attribute is used to choose the script language from the supported types.
 
 
 
@@ -1526,11 +1526,11 @@ Me.htmluiControl.LoadHTML(@"C:\MyProjects\sup\sup.html")
 
 ## TABLE - Table Tag
 
-A Table tag defines a table in an HTML document. The table tag uses the <tr> tag to define a row and a <td> tag to define a cell element. The HTMLUI control supports the table with the following attributes that helps the rendering and display of complex html pages in the control easily.
+A Table tag defines a table in an HTML document. The table tag uses the <tr> tag to define a row and a <td> tag to define a cell element. The HTMLUI control supports the table with the following attributes that helps the rendering and display of complex HTML pages in the control easily.
 
 
 
-* backgroundcolor: Specifies the background color of the table
+* background color: Specifies the background color of the table
 * border: Specifies the thickness of the table border
 
 
@@ -1586,12 +1586,12 @@ The Table Cell tag defines a cell inside a table. The <td> tag has a parent <tr>
 
 
 * align: Specifies the alignment of the text inside the table cell
-* backgroundcolor: Specifies a background color for the specified cell
-* columnspan: Spans the cell to the specified number of columns. This is used in merging the columns in the table.
+* background color: Specifies a background color for the specified cell
+* column span: Spans the cell to the specified number of columns. This is used in merging the columns in the table.
 * height:Specifies custom height for the cells
 * no wrap: Extends the text inside a particular cell into a single line. This display extends the width of the cell according to the contents inside it.
 * row span: Extends the height of the cell to the specified number of rows. This is helpful in custom merging the rows of the given cell
-* verticalalign: Determines the vertical alignment of the text inside the table cell
+* vertical align: Determines the vertical alignment of the text inside the table cell
 * width: Specifies user-defined width for the specified cells
 
 
@@ -1740,9 +1740,9 @@ The Table Header tag is used to define header cells for the cells in a table. Th
 
 
 * align: Specifies the alignment of the text inside the table cell
-* backgroundcolor: Specifies a background color for the specified cell
+* background color: Specifies a background color for the specified cell
 * column span: Spans the cell to the specified number of columns. This is used in merging the columns in the table.
-* height:Specifiescustom height for the cells
+* height:Specifies custom height for the cells
 * no wrap: Extends the text inside a particular cell into a single line. This display extends the width of the cell according to the contents inside it.
 * row span: Extends the height of the cell to the specified number of rows. This is helpful in custom merging the rows of the given cell.
 * vertical align: Determines the vertical alignment of the text inside the table cell

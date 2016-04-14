@@ -31,11 +31,11 @@ BorderSides</td><td>
 Specifies the BorderSides of the control.The options are, <ul><li>Left</li><li> Top</li><li>Right</li><li> Bottom</li><li> Middle and</li><li> All(Default)</li> </ul></td></tr>
 <tr>
 <td>
-&lt;br&gt;FlatStyle</td><td>
+FlatStyle</td><td>
 Specifies the Flat Style. The options are* {{ 'Flat,' | markdownify }}* {{ 'Standard (Default) and'| markdownify }}* {{ 'System.' | markdownify }}</td></tr>
 <tr>
 <td>
-&lt;br&gt;FlatBorderColor</td><td>
+FlatBorderColor</td><td>
 Specifies the color with which flat border should be drawn. FlatStyle must be set to 'Flat' to get the color effect.</td></tr>
 </table>
 

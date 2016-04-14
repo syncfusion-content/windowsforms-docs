@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Creating GroupView
 
-This section provides a step-by-step procedure to create a GroupView control through designer and through programmatical approach
+This section provides a step-by-step procedure to create a GroupView control through designer and through programmatic approach
 in a .NET application. 
 
 ## Through Designer

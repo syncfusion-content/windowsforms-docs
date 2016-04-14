@@ -9,7 +9,7 @@ documentation: ug
 
 ## Layout Manager
 
-The Layout Manager is the base type of all components, providing a basic layout management framework over which the individual managers build on. It provides fundamental information on the five layout managers included in this package which are listed below.
+The Layout Manager is the base type of all components, providing a basic layout management Framework over which the individual managers build on. It provides fundamental information on the five layout managers included in this package which are listed below.
 
 ## BorderLayout
 

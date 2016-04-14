@@ -79,7 +79,7 @@ Gets the number of times the mouse button was pressed and released.</td></tr>
 <tr>
 <td>
 Delta</td><td>
-Gets a signed count of the number of detentes the mouse wheel has rotated. A detente is one notch of the mouse wheel.</td></tr>
+Gets a signed count of the number of detentes the mouse wheel has rotated. A detentes is one notch of the mouse wheel.</td></tr>
 <tr>
 <td>
 Location</td><td>

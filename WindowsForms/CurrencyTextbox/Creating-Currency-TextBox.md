@@ -10,7 +10,7 @@ documentation: ug
 # Creating Currency TextBox
 
 
-CurrencyTextBox provides full support for the windows forms designer. Just drag and drop CurrencyTextBox from the toolbox, onto the form.
+CurrencyTextBox provides full support for the Windows Forms designer. Just drag and drop CurrencyTextBox from the toolbox, onto the form.
 
 ![](Overview_images/Overview_img489.png) 
 

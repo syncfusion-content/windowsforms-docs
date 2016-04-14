@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding Clock to an Application
 
-## Adding Through visual studio
+## Adding Through Visual Studio
 
 Follow the steps given below to add the Clock control to an application through Visual Studio:
 

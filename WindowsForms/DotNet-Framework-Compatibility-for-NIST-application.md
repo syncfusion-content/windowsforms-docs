@@ -9,9 +9,9 @@ documentation: ug
 
 
 
-## FrameWork Compatibility for NIST application
+## Framework Compatibility for NIST application
 
-The table represents the .NET framework versions for Syncfusion controls.
+The table represents the .NET Framework versions for Syncfusion controls.
 
 <table>
 <tr>

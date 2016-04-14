@@ -159,7 +159,7 @@ NA</td></tr>
 <tr>
 <td>
 ExcludeInternetAddresses</td><td>
-Gets or sets a value specifying whether to ignore internet address during spell check.</td><td>
+Gets or sets a value specifying whether to ignore Internet address during spell check.</td><td>
 </td><td>
 Boolean (true / false)</td><td>
 NA</td></tr>
@@ -187,7 +187,7 @@ NA</td></tr>
 <tr>
 <td>
 ExcludeHtmlTags</td><td>
-Gets or sets a value specifying whether to ignore html tags during spell check.</td><td>
+Gets or sets a value specifying whether to ignore HTML tags during spell check.</td><td>
 </td><td>
 Boolean (true / false)</td><td>
 NA</td></tr>

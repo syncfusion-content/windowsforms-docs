@@ -84,11 +84,11 @@ Now, you have created a Windows / WPF application refer [Creating Platform Appli
 
 The following steps will guide you to deploy Essential Grouping:
 
-1. In order to deploy an application that uses the Syncfusion assemblies, the referenced Syncfusion assemblies should reside in the application folder where the exe exists, in the target machine.
+1. In order to deploy an application that uses the Syncfusion assemblies, the referenced Syncfusion assemblies should reside in the application folder where the EXE exists, in the target machine.
 2. In order to do that, go to the References folder in the Solution Explorer. Select all the Syncfusion assemblies, right-click and go to Properties. Change the Copy Local property of the Syncfusion assemblies to true and compile the project.
 3. Check whether the licenses.licx file listed in the project has its Build Action property to be Embedded Resource.
 4. Now you may see that the Syncfusion assemblies referenced in the project are copied to the output directory along with the application executable (bin/debug/).
-5. Deploy the exe along with the Syncfusion assemblies in that location to the target machine. Be sure that these Syncfusion assemblies reside in the same location as the application exe in the target machine.
+5. Deploy the EXE along with the Syncfusion assemblies in that location to the target machine. Be sure that these Syncfusion assemblies reside in the same location as the application EXE in the target machine.
  
 N> For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work._
 
@@ -142,7 +142,7 @@ N> They can also be in the GAC, in which case, they should be referenced in Web.
 
 N> The version numbers in the above references will vary depending on the version you are linking to.
 
-Data Files-If you have .xml, .mdb, or other data files, ensure that they have sufficient security permission. Authenticated Users should have full control over the files and the directories in order to give ASP.NET code, enough permissions to open the file during runtime.
+Data Files-If you have .xml, .MDB, or other data files, ensure that they have sufficient security permission. Authenticated Users should have full control over the files and the directories in order to give ASP.NET code, enough permissions to open the file during runtime.
 
 Refer to the document in the following path, for step by step process of Syncfusion assemblies’ deployment in ASP.NET.
 
