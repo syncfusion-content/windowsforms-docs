@@ -246,7 +246,7 @@ this.dockingManager1.DockControl(this.panel5, this, Syncfusion.Windows.Forms.Too
 
 {% highlight VB %}
 
-// To set the DockingStyle for the docked controls
+'To set the DockingStyle for the docked controls
 
 Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
 

@@ -485,7 +485,6 @@ This section covers the following events:
 * [DocMenuClick Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#docmenuclick-event)
 
 
-
 ### AutoHideTabContextMenu Event
 
 This event occurs when the right mouse button is clicked over a auto hidden tab control.
@@ -513,7 +512,6 @@ This returns the side to where the AutoHideTab is aligned.</td></tr>
 {% tabs %}
 
 {% highlight C# %}
-
 
 private void dockingManager1_AutoHideTabContextMenu(object sender, Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs arg)
 
@@ -621,7 +619,6 @@ private void dockingManager1_DockContextMenu(object sender, Syncfusion.Windows.F
 {% endhighlight %}
 
 
-
 {% highlight VB %}
 
 ' Adding Namespace
@@ -661,13 +658,14 @@ End Sub
 
 {% endtabs %}
 
+
  ![](Docking-Events_images/Docking-Events_img1.jpeg) 
 
 
 
 {% seealso %}
  
-[Context Menu](/windowsforms/dockingmanager/runtime-features#context-menu)
+[Context Menu](/windowsforms/dockingmanager/dealing-with-windows#applying-context-menu )
 
 {% endseealso %}
 
@@ -826,6 +824,7 @@ Gets / sets value that indicates whether to cancel the operation or not.</td></t
  
 
 {% tabs %}
+
 {% highlight C# %}
 
 private void dockingManager1_ControlMaximizing(object sender, Syncfusion.Windows.Forms.Tools.ControlMaximizeEventArgs arg)
@@ -869,7 +868,7 @@ End Sub
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 ### ControlMinimized Event
 

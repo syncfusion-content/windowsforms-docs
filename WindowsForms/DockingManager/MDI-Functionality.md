@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MDIFunctionality | WindowsForms | Syncfusion
 description: MDIFunctionality
@@ -144,7 +144,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 ### Office 2007 Style for MDI Child Form
 
-The MDI child forms can have Office2007 look and feel. It can be enabled through Office2007MdiChildForm property. Color schemes are also supported that can be specified by using Office2007MdiColorScheme property.
+The MDI child forms can have Office2007 look and feel. It can be enabled through `Office2007MdiChildForm` property. Color schemes are also supported that can be specified by using `Office2007MdiColorScheme` property.
 
 {% tabs %}
 

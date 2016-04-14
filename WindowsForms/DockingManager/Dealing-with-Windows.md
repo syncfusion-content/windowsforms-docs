@@ -331,40 +331,26 @@ Gets or sets the color value of a metro button in metro style DockingManager.</t
 
 this.dockingMgr.MetroCaptionColor = Color.Red;
 
-{% endhighlight %}
-
-{% highlight VB %}
-
-//Gets or sets the color value of caption in metro style DockingManager.
-
-Me.dockingMgr.MetroCaptionColor = Color.Red
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight C# %}
-
-
 //Gets or sets the color value of button in metro style DockingManager.
 
 this.dockingMgr.MetroButtonColor = Color.Red;
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
+'Gets or sets the color value of caption in metro style DockingManager.
 
-//Gets or sets the color value of button in metro style DockingManager.
+Me.dockingMgr.MetroCaptionColor = Color.Red
+
+'Gets or sets the color value of button in metro style DockingManager.
 
 Me.dockingMgr.MetroButtonColor = Color.Red
 
 {% endhighlight %}
 
 {% endtabs %}
+
 
 ![](Dealing-with-Windows_images/Appearance5.png) 
 
@@ -537,8 +523,6 @@ Me.DockingManager1.HostFormClientBorder = False
 {% endtabs %}
 
 ![](Dealing-with-Windows_images/Appearance7.png) 
-
-
 
 
 
@@ -1182,8 +1166,7 @@ By default, ToolTip will be displayed for the caption buttons in a docked contro
 
 
 
-
-N> EnableSuperTooltip property which is discussed below, should be set to false to effect the above default ToolTip.
+N> `EnableSuperTooltip` property which is discussed below, should be set to false to effect the above default ToolTip.
 
 # Setting SuperToolTip
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: DockingClientPanel | WindowsForms | Syncfusion
 description: dockingclientpanel
@@ -35,23 +35,23 @@ The following sequence lists the steps involved in setting up a docking layout o
 6. The DockingClientPanel will now function as a proxy for the form's client surface and all controls originally intended to be placed on the form should henceforth be located on the DockingClientPanel; any anchoring / layout features for the child controls should be set relative to the DockingClientPanel. 
 7. To add controls directly to the form, the `SizeToFit` property can temporarily be turned off within the designer and the form resized to expose its surface. At run-time, the `SizeToFit` property is always enabled. 
 
-	<table>
-	<tr>
-	<th>
-	DockingClientPanel Property</th><th>
-	Description</th></tr>
-	<tr>
-	<td>
-	SizeToFit</td><td>
-	Gets or sets a value indicating whether the control is sized to fill the form's area.</td></tr>
-	<tr>
-	<td>
-	BorderStyle</td><td>
-	Indicates the border Style of the Control.</td></tr>
-	</table>
+<table>
+<tr>
+<th>
+DockingClientPanel Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+SizeToFit</td><td>
+Gets or sets a value indicating whether the control is sized to fill the form's area.</td></tr>
+<tr>
+<td>
+BorderStyle</td><td>
+Indicates the border Style of the Control.</td></tr>
+</table>
 
 
-8. DockingClientPanel control can be added to the Non-MDI forms using the below code snippet for example.
+8.DockingClientPanel control can be added to the Non-MDI forms using the below code snippet for example.
 
    
 
