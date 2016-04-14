@@ -20,7 +20,7 @@ In the second case, use GridStyleInfo.DataSource, DisplayMember, and ValueMember
 
 #### Example
 
-Here is the code that sets column 2 to be a combo box with droplist being set through the styles ChoiceList property. To access a column's style, you must use either GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumn depending upon whether you have explicitly added GridBoundColumns or not.
+Here is the code that sets column 2 to be a combo box with drop down list being set through the styles ChoiceList property. To access a column's style, you must use either GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumn depending upon whether you have explicitly added GridBoundColumns or not.
 
 {% highlight c# %}
 
@@ -54,7 +54,7 @@ style.CellValue = "Five";
 
 
 
-//True droplist - no editing.
+//True drop down list - no editing.
 
 style.DropDownStyle = GridDropDownStyle.Exclusive;
 
