@@ -3462,11 +3462,11 @@ Sample diagrams are as follows:
 
 #### Z-Order Events
 
-When the node order is changed from front-to-back or back-to-front, the Z-Order value gets changed and triggers the ZOrder events listed in the below table.
+When the node order is changed from front-to-back or back-to-front, the Z-order value gets changed and triggers the Z-order events listed in the below table.
 
 
 
-ZOrder events
+Z-order events
 
 <table>
 <tr>
@@ -3476,11 +3476,11 @@ Description</th></tr>
 <tr>
 <td>
 ZOrderChanged</td><td>
-Gets fired after the ZOrder value is changed.</td></tr>
+Gets fired after the Z-order value is changed.</td></tr>
 <tr>
 <td>
 ZOrderChanging</td><td>
-Gets fired when the ZOrder of the node is changed.</td></tr>
+Gets fired when the Z-order of the node is changed.</td></tr>
 </table>
 
 
@@ -3493,7 +3493,7 @@ Members
 <table>
 <tr>
 <th>
-ZOrder EventArgs Members</th><th>
+Z-order EventArgs Members</th><th>
 Description</th></tr>
 <tr>
 <td>

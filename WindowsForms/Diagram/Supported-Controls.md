@@ -969,7 +969,7 @@ private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e)
 
 ## Property Editor
 
-The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a windows forms control that can be added to the Visual Studio .NET toolbox. It also allows the users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface, to set and view various property settings. 
+The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows forms control that can be added to the Visual Studio .NET toolbox. It also allows the users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface, to set and view various property settings. 
 
 The following table lists the properties of the Property Editor. The important property of the Property Editor is the Diagram property.
 
