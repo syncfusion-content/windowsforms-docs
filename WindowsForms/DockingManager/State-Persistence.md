@@ -42,8 +42,8 @@ To load the AutoPersist state of the DockingManager, call the LoadDockState() 
 <table>
 <tr>
 <td>
-**Methods******<br/><br/></td><td>
-**Description******<br/><br/></td></tr>
+Methods<br/><br/></td><td>
+Description<br/><br/></td></tr>
 <tr>
 <td>
 LoadDockState<br/><br/></td><td>
@@ -92,8 +92,8 @@ To save the AutoPersist state of the DockingManager, call the SaveDockState() 
 <table>
 <tr>
 <td>
-**Methods******<br/><br/></td><td>
-**Description******<br/><br/></td></tr>
+Methods<br/><br/></td><td>
+Description<br/><br/></td></tr>
 <tr>
 <td>
 SaveDockState<br/><br/></td><td>
@@ -220,7 +220,6 @@ aser.PersistNow();
 {% endhighlight %}
 
 
-
 {% highlight VB %}
 
 
@@ -259,7 +258,6 @@ AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmtStream, 
 this.dockingManager1.LoadDockState(aser);
 
 {% endhighlight %}
-
 
 {% highlight VB %}
 
@@ -350,7 +348,6 @@ AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedSto
 this.dockingManager1.LoadDockState(serializer);
 
 {% endhighlight %}
-
 
 
 {% highlight VB %}

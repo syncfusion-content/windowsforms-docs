@@ -10,9 +10,9 @@ documentation: ug
 
 # Overview
 
-The DockingManager control implements an architecture that allows child controls to be docked at any part of a window as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the window. These windows can also be floated, tabbed, and auto hidden at run time.  The Framework supports nested level docking, state transitions, MDIChild transitions, non-dockable/non-floatable options, a unique fill mode and full state persistence.
+The DockingManager control implements an architecture that allows child controls to be docked at any part of a window as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the window. These windows can also be floated, tabbed, and auto hidden at run time. 
 
-![](Images/Overview_img1.jpeg)
+![](Images/GettingStarted.png)
 
 
 ## Features 
@@ -23,7 +23,7 @@ The DockingManager control implements an architecture that allows child contro
 * DockingManager support all possible ways for dock the elements.
 * Support for resizing Splitters.
 * Support for several built-in themes.
-* Complete blendability support for customizing appearance.
+* Complete support for customizing appearance.
 * Design time drag, drop and floating support.
 * Complete support for nested docking layouts
 * Complete support for customizing behavior of docking windows.

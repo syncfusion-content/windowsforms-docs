@@ -697,7 +697,7 @@ The buttons available for the docked control and the properties which controls t
 
 ### Menu Button
 
-The menu button in a docked control can be made visible or hidden by setting the `MenuButtonEnabled` property to true. Clicking this button will display the [context menu](/windowsforms/dockingmanager/RunTime-Features.html#context-menu) items.
+The menu button in a docked control can be made visible or hidden by setting the `MenuButtonEnabled` property to true. Clicking this button will display the context menu items.
 
 ### Maximize Button
 
@@ -711,10 +711,10 @@ The visibility of the Close button can be controlled using the `CloseEnabled` pr
 
 ### AutoHide Button
 
-Setting `AutoHideEnabled` property shows or hides the auto hide button in the docked control. Clicking this button will [auto hide the docked controls](/windowsforms/dockingmanager/Docking-Styles.html#oncaptiondoubleclick-event).
+Setting `AutoHideEnabled` property shows or hides the auto hide button in the docked control. Clicking this button will auto hide the docked controls.
 
 
-N> DockingManager let you customize the above default buttons and also add custom caption buttons. See [Custom Caption Buttons](/windowsforms/dockingmanager/caption-bar.html#custom-caption-buttons) for more details.
+N> DockingManager let you customize the above default buttons and also add custom caption buttons. 
 
 
 ## Custom Caption Buttons
