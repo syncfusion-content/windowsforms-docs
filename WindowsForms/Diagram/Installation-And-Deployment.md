@@ -96,7 +96,7 @@ Essential Diagram places the following controls into your Visual Studio .NET too
 
 * Diagram
 
-#### DLLs
+#### Assemblies
 
 
 The following assemblies need to be referenced in your application for using Diagram control:
