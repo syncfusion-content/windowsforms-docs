@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# MDIFunctionality
+# MDI Functionality
 
 Docked control can be converted to an MDI child form and vice versa by referring the following steps and code example.
 
