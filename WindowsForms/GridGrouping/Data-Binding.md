@@ -1745,7 +1745,7 @@ this.gridGroupingControl1.DataSource = new DynamicList(true);
 Me.gridGroupingControl1.DataSource = New DynamicList(True)
 {% endhighlight %}
 {% endtabs %}
-The dashboard sample given below has the Dynamic data source for having the dynamic databinding in GridGroupingControl.
+The dashboard sample given below has the Dynamic data source for having the dynamic DataBinding in GridGroupingControl.
 
 **Sample Location**
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\[Version_No]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Dynamic Object Binding Demo\CS
@@ -1947,7 +1947,7 @@ This section will explain about the MDB file can be bounded to the GridGroupingC
 #### Binding MDB File by using Visual Studio 2005
 The following steps are to be used with Visual Studio 2005 and .NET 2.0. Smart Tags that are available in the .NET 2.0 Designer to hook into your MDB file. This process of binding is fully designer based, user do not need to write even a single line of code.
 
-1.From the Syncfusion tab in the toolbox, drag a GridGroupingcontrol onto the form.
+1.From the Syncfusion tab in the toolbox, drag a GridGroupingControl onto the form.
 2.In the GridGroupingControl smart tag, click the Choose Data Source drop down. Then click the Add Project Data Source link in the drop down.
 
 ![](Data-Binding_images/Data-Binding_img6.jpeg)
@@ -1987,7 +1987,7 @@ Run the application to see the GridGroupingControl display the data from the MDB
 ![](Data-Binding_images/Data-Binding_img15.jpeg)
 
 **Sample Location:**
-&lt;Installled_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\GettingStarted\
+&lt;Insta	lled_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\GettingStarted\
 Data Binding
 
 #### Binding MDB File by using Visual Studio 2008
@@ -2226,7 +2226,7 @@ The following steps used to binding the data source to the Grid grouping control
     ![](Data-Binding_images/Data-Binding_img68.jpeg)
 
 #### Binding MDB File by using Visual Studio 2015
-The following steps arev used to binding the data source to the GridgroupingControl using the designer. User can make use of the Smart Tags that are available in the Designer to hook into the MDB file. 
+The following steps are used to binding the data source to the GridGroupingControl using the designer. User can make use of the Smart Tags that are available in the Designer to hook into the MDB file. 
 
 1. From the Syncfusion tab in the toolbox and drag and drop GridGroupingControl onto the form. In the GridGroupingControl smart tag, click `Choose DataSource` list, and then click `Add Project Data Source`. Data Source Configuration Wizard dialog box appears.
    
