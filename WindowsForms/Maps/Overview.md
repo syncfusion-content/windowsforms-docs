@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Essential Maps is a Graphical Representation of the Geographical Data. It is used to represent the statistical data of a particular geographical area on the Earth. Using Pan and Zoom, the Maps can be navigated. Inbuilt Navigation control makes it easy to navigate through the map.
+Essential Maps is a Graphical Representation of the Geographical Data. It is used to represent the statistical data of a particular geographical area on the Earth. Using Pan and Zoom, the Maps can be navigated. Built-in Navigation control makes it easy to navigate through the map.
 
 Essential Maps controls are useful for those users who want to build a Windows application which can be used any .NET environment including C#, VB.NET and C++. It is beneficial to those users who want to develop geographical projects.  
 

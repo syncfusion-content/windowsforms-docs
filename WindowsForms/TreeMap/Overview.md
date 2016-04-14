@@ -16,6 +16,6 @@ Tree maps are ideal for visualizing large amounts of data. The space in the visu
 Tree maps are used to represent large or complex data sets in various applications, such as:
 
 1. Stock market analysis in which the weight of each stock in the index is represented by the size of the rectangle and its range of loss or gain is represented by the color of the rectangle.
-2. Visualizing internet usage in certain categories, such as retail, social networks, and search.
+2. Visualizing Internet usage in certain categories, such as retail, social networks, and search.
 3. Categorizing the news aggregated by Google News in which the colors represent different sections, such as business or politics, and the size of the boxes represent how many similar stories also appear in Google News.
 4. Indicating weather report analysis around the world. The opacity of each rectangle can differ based on its humidity.
