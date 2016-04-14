@@ -92,7 +92,7 @@ Parent item stays visible; child item will be hidden.</td></tr>
 
 You can choose anyone of the following for MDI merging.
 
-* To let the framework automatically merge as new instances of the child types that are created.
+* To let the Framework automatically merge as new instances of the child types that are created.
 * Explicitly merge child types as soon as the application is started.
 * Explicit merging is recommended for better performance, usability and for VS.NET like behavior.
 * Explicit merging is performed by calling the RegisterMDIChildTypes method with appropriate parameters (see the above section reference for example). 

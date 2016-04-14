@@ -698,7 +698,7 @@ We used a simplest overload in the previous section for sorting the data. The Ta
 
 * Add(string propertyName) 
 * Add(string propertyName, ListSortDirection Dir) 
-* Add(SortColumnDescriptor Sdc)
+* Add(SortColumnDescriptor sortcolumndescriptor)
 
 The following code snippets illustrate the syntax for these overloads:
 

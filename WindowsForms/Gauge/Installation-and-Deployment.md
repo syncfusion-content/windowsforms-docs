@@ -95,7 +95,7 @@ C:\Program Files\Syncfusion\Essential Studio\[VersionNumber]\Windows\Gauge.Windo
 
 ## Deployment Requirements
 
-### DLL List
+### Assembly List
 
 While deploying an application that references a Syncfusion Windows Forms Gauge control assembly, the following dependencies must be included in the distribution:
 

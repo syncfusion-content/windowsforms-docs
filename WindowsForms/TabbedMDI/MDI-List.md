@@ -9,7 +9,7 @@ documentation: ug
 
 # MDI List
 
-By using the TabbedMDIManager framework, you can make your MDI container form's MDIChildren property obsolete. The value returned by this property will not be an accurate reflection of the MDIChildren. You should instead use the TabbedMDIManager's MDIChildren property, to get a list of the MDIChild forms.
+By using the TabbedMDIManager Framework, you can make your MDI container form's MDIChildren property obsolete. The value returned by this property will not be an accurate reflection of the MDIChildren. You should instead use the TabbedMDIManager's MDIChildren property, to get a list of the MDIChild forms.
 
 Property Table
 
@@ -155,7 +155,7 @@ End Sub
 
 When using XP Menus in Essential Tools as the MDIContainer's Main Menu, this property need not be set. Instead use the MDIListBarItem in XP Menus to represent the MDIChild windows list. 
 
-The XP Menus framework automatically handles the case when the MDIChild windows layout is managed by the TabbedMDIManager.
+The XP Menus Framework automatically handles the case when the MDIChild windows layout is managed by the TabbedMDIManager.
 
 ![](MDI-List_images/MDI-List_img3.jpeg)
 

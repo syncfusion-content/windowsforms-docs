@@ -94,7 +94,7 @@ End Sub
 
 ## GroupViewItemRenamed Event
 
-It occurs when a GroupView Item has been renamed by an inplace edit operation. 
+It occurs when a GroupView Item has been renamed by an Inplace edit operation. 
 
 The event handler receives an argument of type GroupItemRenamedEventArgs. The event properties associated with the GroupItemRenamedEventArgs are as follows.
 

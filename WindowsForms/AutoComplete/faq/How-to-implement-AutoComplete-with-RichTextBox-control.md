@@ -140,7 +140,7 @@ Follow the given steps to implement AutoComplete feature with RichTextBox contro
    {:.prettyprint }
 
 5. Set the AutoCompleteonautoComplete1 property in the properties page to either AutoSuggest, AutoAppend or both. 
-6. SetAutoComplete is the extended property for the AutoComplete property, that is called by the framework when the AutoComplete property is set on any control. When using the AutoComplete control programmatically, you can use this method to add and remove auto completion for the RichTextBox control.
+6. SetAutoComplete is the extended property for the AutoComplete property, that is called by the Framework when the AutoComplete property is set on any control. When using the AutoComplete control programmatically, you can use this method to add and remove auto completion for the RichTextBox control.
 
    ~~~ cs
 

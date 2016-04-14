@@ -11,7 +11,7 @@ documentation: ug
 
 ## Selection Events
 
-The events present in the Comboxbox can be applied for ComboxBoxAdv control. 
+The events present in the Combobox can be applied for ComboBoxAdv control. 
 
 
 <table>

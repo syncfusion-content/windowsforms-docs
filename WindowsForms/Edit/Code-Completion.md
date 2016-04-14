@@ -32,13 +32,13 @@ When the following text is typed - "this.editControl1.", it displays a Context C
 
 ### Case 1
 
-If you type "w" after "this.editControl1.", such that it looks like - "this.editControl1.w", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, it will be autocompleted as "this.editControl1.Word".
+If you type "w" after "this.editControl1.", such that it looks like - "this.editControl1.w", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, it will be auto completed as "this.editControl1.Word".
 
 
 
 ### Case 2
 
-If you type "wordr" after "this.editControl1.", such that it looks like - "this.editControl1.wordr", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, it will be autocompleted as "this.editControl1.WordRight".
+If you type "word" after "this.editControl1.", such that it looks like - "this.editControl1.word", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, it will be auto completed as "this.editControl1.WordRight".
 
 
 
@@ -50,9 +50,9 @@ If you type "move" after "this.editControl1.", such that it looks like - "this.e
 
 ### Case 4
 
-If you type nothing after "this.editControl1.", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first member name in the Context Choice list. In this case, it should be autocompleted as "this.editControl1.New".
+If you type nothing after "this.editControl1.", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first member name in the Context Choice list. In this case, it should be auto completed as "this.editControl1.New".
 
-Note that the searching process for the first matching member is not case sensitive. For example, "wordr" and "WordR" will be treated in the same way.
+Note that the searching process for the first matching member is not case sensitive. For example, "word" and "Word" will be treated in the same way.
 
 
 

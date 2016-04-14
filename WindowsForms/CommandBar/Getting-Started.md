@@ -11,11 +11,11 @@ documentation: ug
 
 ## Creating CommandBar
 
-This section will give a step by step procedure to design a CommandBar control through designer, through programmatically approach and also through the XP Menus framework.
+This section will give a step by step procedure to design a CommandBar control through designer, through programmatically approach and also through the XP Menus Framework.
 
 ### Through Designer
 
-The CommandBar framework makes it an effortless process to add, remove and design the CommandBars in an application. With the WYSIWYG designer that it provides, all that is involved in setting up the CommandBar layout is to drag and drop the various CommandBars to the target location. The layout state is then serialized by the designer along with the form's resources and is used when the form is loaded at run time.
+The CommandBar Framework makes it an effortless process to add, remove and design the CommandBars in an application. With the WYSIWYG designer that it provides, all that is involved in setting up the CommandBar layout is to drag and drop the various CommandBars to the target location. The layout state is then serialized by the designer along with the form's resources and is used when the form is loaded at run time.
 
 The following steps are involved in creating and setting up a simple CommandBar layout.
 
@@ -31,7 +31,7 @@ To add a CommandBar using the properties window, follow the procedure given belo
 
 The CommandBars can also be added or removed using the Add CommandBar design time verb or smart tag that is found in the property grid.
 
-New CommandBars will be initially docked to the top border of the form. The command bars can then be dragged, redocked or floated to the desired location.
+New CommandBars will be initially docked to the top border of the form. The command bars can then be dragged, redone or floated to the desired location.
 
  ![](Getting-Started_images/Getting-Started_img2.jpeg) 
 
@@ -222,7 +222,7 @@ The following section covers the steps involved in creating, initializing and se
 
 ### Through XP Menus Framework
 
-The XP Menus framework provides the flexibility to add detached toolbars that can host any .NET control. These toolbars are detached from the framework, i.e., they cannot participate in user customization. Otherwise, they are seamless in look and feel.
+The XP Menus Framework provides the flexibility to add detached toolbars that can host any .NET control. These toolbars are detached from the Framework, i.e., they cannot participate in user customization. Otherwise, they are seamless in look and feel.
 
 1. Right click on the MainFrameBarManager component and choose the Add Detached CommandBar option to add a detached toolbar.
 2. Add that control by dragging and dropping to any .NET control. If you need to host multiple controls, you will need to first add a panel to the CommandBar and then add the controls to this panel.

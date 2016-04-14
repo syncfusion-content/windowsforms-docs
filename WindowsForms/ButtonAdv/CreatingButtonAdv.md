@@ -19,7 +19,7 @@ The ButtonAdv control can be made available through designer by just dragging an
 
 It can be created programmatically by following the below steps.
 
-1. Include the Tools Windows namespace to cs / vb file.
+1. Include the Tools Windows namespace to cs / VB file.
    
    ~~~ cs
    

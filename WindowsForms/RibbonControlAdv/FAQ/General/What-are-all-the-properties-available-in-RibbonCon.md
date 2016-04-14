@@ -40,7 +40,7 @@ BackStageCloseButtonBackground</td><td>
 Gets or sets the color of the CloseButton in BackStageVisible mode.</td></tr>
 <tr>
 <td>
-BackStageSytemButtonBackground</td><td>
+BackStageSystemButtonBackground</td><td>
 Gets or sets the color of the SystemButton in BackstageVisible mode.</td></tr>
 <tr>
 <td>

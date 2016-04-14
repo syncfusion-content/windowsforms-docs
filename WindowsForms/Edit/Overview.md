@@ -15,7 +15,7 @@ This section covers information on Essential Edit control, its key features, pre
 
 ## Introduction To Essential Edit
 
-Essential Edit is a 100% Native .NET UI library that provides a powerful syntax coloring UI for building modern Windows applications using the Microsoft .NET framework. Our control and framework packages can be used in any .NET environment including C#, VB.NET and managed C++. 
+Essential Edit is a 100% Native .NET UI library that provides a powerful syntax coloring UI for building modern Windows applications using the Microsoft .NET Framework. Our control and Framework packages can be used in any .NET environment including C#, VB.NET and managed C++. 
 
 
 

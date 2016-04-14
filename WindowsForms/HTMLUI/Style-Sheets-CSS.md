@@ -190,7 +190,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\internal.html")
 
 ### External StyleSheet
 
-The External style sheets contain style definitions in a separate .css file, for various HTML tags that are in the document. These styles are applied by linking the css file to the HTML document inside the Link tag. The Link tag should be placed in the head section of the HTML document as it contains the information about the cascading style sheet that is to be referred by this document.
+The External style sheets contain style definitions in a separate .css file, for various HTML tags that are in the document. These styles are applied by linking the CSS file to the HTML document inside the Link tag. The Link tag should be placed in the head section of the HTML document as it contains the information about the cascading style sheet that is to be referred by this document.
 
 
 
@@ -324,7 +324,7 @@ HTMLUI supports two types of styles definitions for the HTML documents with the 
 
 #### Name Class Selectors
 
-The Name Class Selectors contain a common name that is given to the style class, which is defined in the internal or external css file. The following snippet shows how the name class selectors are defined for html elements in the document.
+The Name Class Selectors contain a common name that is given to the style class, which is defined in the internal or external CSS file. The following snippet shows how the name class selectors are defined for HTML elements in the document.
 
 
 

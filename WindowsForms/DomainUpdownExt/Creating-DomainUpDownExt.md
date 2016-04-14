@@ -15,7 +15,7 @@ To use a DomainUpDownExt control in your application, all you need to do is drag
 
 
 
-You can add items in the String Collection Editor of DomainUpDownExt control and Click Ok.
+You can add items in the String Collection Editor of DomainUpDownExt control and Click OK.
 
 ![](DomainUpdownExt_images/Overview_img421.png) 
 

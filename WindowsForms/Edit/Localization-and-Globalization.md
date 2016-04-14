@@ -75,7 +75,7 @@ Edit Control supports complete localization of all the dialog boxes associated w
 
 
 
-10. The version (1.0.0.0) that you specify for these DLLs in the above all command, should be based on the SatelliteContractVersionAttribute setting in the product AssemblyInfo.cs file in Edit source. Note that the incorrect version won't localize the assembly properly.
+10. The version (1.0.0.0) that you specify for these assemblies in the above all command, should be based on the SatelliteContractVersionAttribute setting in the product AssemblyInfo.cs file in Edit source. Note that the incorrect version won't localize the assembly properly.
 
 
 
@@ -83,7 +83,7 @@ Edit Control supports complete localization of all the dialog boxes associated w
 
 
 
-12. Finally, mark this satellite DLL for verification skipping (since it is has not been signed with the same strong-name as the product assembly), as follows.
+12. Finally, mark this satellite assembly for verification skipping (since it is has not been signed with the same strong-name as the product assembly), as follows.
 
 
 
@@ -91,7 +91,7 @@ Edit Control supports complete localization of all the dialog boxes associated w
 
 
 
-13. Now, drop this DLL into an appropriate subdirectory under your EXE's directory (bin\Debug\), based on the naming conventions that are enforced in .NET. You should create a folder named “de-DE” under bin/Debug if this DLL contains resources from the German (Germany) culture.
+13. Now, drop this assembly into an appropriate subdirectory under your EXE's directory (bin\Debug\), based on the naming conventions that are enforced in .NET. You should create a folder named “de-DE” under bin/Debug if this assembly contains resources from the German (Germany) culture.
 
 
 

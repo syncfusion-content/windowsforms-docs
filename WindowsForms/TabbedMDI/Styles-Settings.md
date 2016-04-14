@@ -15,7 +15,7 @@ The topics discussed in this section are given below.
 
 ## Tab styles
 
-TabbedMDI framework provides the ability to support a number of tab styles. The tabbedMDIManager's TabStyle property lets users specify the required style for the Tabs.
+TabbedMDI Framework provides the ability to support a number of tab styles. The tabbedMDIManager's TabStyle property lets users specify the required style for the Tabs.
 
 Property Table
 
@@ -51,7 +51,7 @@ The various tab styles are listed in the below image.
 
 ## Window Styles
 
-The windows in the TabbedMDI framework can be arranged in four different styles. To set the styles of the windows, the MDIParent form should be detached from the TabbedMDIManager.
+The windows in the TabbedMDI Framework can be arranged in four different styles. To set the styles of the windows, the MDIParent form should be detached from the TabbedMDIManager.
 
 N> The DetachFromMdIContainer method is used to detach an MDIParent from the TabbedMDIManager.
 

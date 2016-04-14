@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to design the SplitterControl in the WindowsForms application.
+This section briefly describes how to design the SplitterControl in the Windows Forms application.
 
 * Add the SplitterControl control. 
 * Configure the SplitterControl control.

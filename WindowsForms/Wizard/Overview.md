@@ -21,7 +21,7 @@ It consists of two controls.
 ## WizardControl
 
 
-The WizardControl can display a set of wizard pages in the given order. It also provides the user, the ability to browse between these pages using the 'browsing' buttons. The WizardControl implements the classic Wizard interface used in many windows applications. It also contains inbuilt child controls like labels, picture box and gradient panel to let the user customize it effectively.
+The WizardControl can display a set of wizard pages in the given order. It also provides the user, the ability to browse between these pages using the 'browsing' buttons. The WizardControl implements the classic Wizard interface used in many windows applications. It also contains built-in child controls like labels, picture box and gradient panel to let the user customize it effectively.
 
 ![](Wizard-Package_images/Wizard-Package_img1.jpeg)
 

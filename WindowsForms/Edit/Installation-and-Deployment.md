@@ -120,7 +120,7 @@ Essential Edit places the following control into your VisualStudio .NET toolbox 
 
 
 
-### DLLs
+### Assemblies
 
 While deploying an application that references a Syncfusion Essential Edit assembly, the following dependencies must be included in the distribution.
 

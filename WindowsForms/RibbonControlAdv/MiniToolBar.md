@@ -9,7 +9,7 @@ documentation: ug
 
 # MiniToolBar
 
-Essential Tools comes with MiniToolBar control with similar look and feel of MS Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focused on it, it will be prominent to the users. 
+Essential Tools comes with MiniToolBar control with similar look and feel of Microsoft Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focused on it, it will be prominent to the users. 
 
 ![](MiniToolbar_images/MiniToolbar_img4.jpg)
 
@@ -28,7 +28,7 @@ To add a MiniToolBar to the form, follow the below given steps.
 ![](MiniToolbar_images/MiniToolbar_img1.jpeg)
 
 
-* Open the Items Collection Editor of the MiniToolBar and add the required items into the MiniToolBar from the Items collection Editor and click Ok. 
+* Open the Items Collection Editor of the MiniToolBar and add the required items into the MiniToolBar from the Items collection Editor and click OK. 
 
 ![](MiniToolbar_images/MiniToolbar_img2.jpeg)
 

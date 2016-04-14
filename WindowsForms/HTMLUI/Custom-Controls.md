@@ -47,11 +47,11 @@ NumericUpDown:<CUSTOM class="NumericUpDown" assembly="System.Windows.Forms"></CU
 
 {% endhighlight %}
 
-The custom controls defined in the HTML document are interfaced with their equivalent windows forms control with the help of the PreRenderDocument event. The PreRenderDocument event occurs at a time when the HTML document is being loaded into the HTMLUI control, but the elements are not yet positioned.
+The custom controls defined in the HTML document are interfaced with their equivalent Windows Forms control with the help of the PreRenderDocument event. The PreRenderDocument event occurs at a time when the HTML document is being loaded into the HTMLUI control, but the elements are not yet positioned.
 
 The HTML elements are loaded into an hash table with an equivalent id as their key. An equivalent Base class object, here BaseElement class, is defined to link the HTML elements stored in the hash table with the help of the key associated with the element. The BaseElement is the Base class for all HTML elements. All HTML tag elements inherit this class. 
 
-The CustomControlBase implements the base functionality of the Windows forms control on the HTML tag element.
+The CustomControlBase implements the base functionality of the Windows Forms control on the HTML tag element.
 
 
 

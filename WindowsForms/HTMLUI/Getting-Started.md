@@ -42,7 +42,7 @@ In this lesson, you will learn about the following:
    * From a URI (Uniform resource Identifier)
    * From a Stream
 
-3. Add a MainMenu component from the toolbox onto the form. Also add a OpenFileDialog component to the form and name it as "openDlg".
+3. Add a MainMenu component from the toolbox onto the form. Also add a OpenFileDialog component to the form and name it as "openDialog".
 
    ![](Getting-Started_images/Getting-Started_img1.jpeg)
 

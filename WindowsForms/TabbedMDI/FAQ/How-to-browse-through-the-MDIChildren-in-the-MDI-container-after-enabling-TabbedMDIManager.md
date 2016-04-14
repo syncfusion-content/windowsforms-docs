@@ -9,7 +9,7 @@ documentation: ug
 
 # How to browse through the MDIChildren in the MDIContainer after enabling TabbedMDIManager
 
-You should not use the MDIContainer form’s MDIChildren property to browse through the MDIChildren. This is because the TabbedMDI framework introduces some additional MDIChildren into your MDIContainer that are not part of your application logic.
+You should not use the MDIContainer form’s MDIChildren property to browse through the MDIChildren. This is because the TabbedMDI Framework introduces some additional MDIChildren into your MDIContainer that are not part of your application logic.
 
 You should instead use the TabbedMDIManager's MDIChildren property to get a list of the MDIChildren, as follows:
 

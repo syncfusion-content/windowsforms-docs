@@ -11,7 +11,7 @@ documentation: ug
 
 The Essential Tools DockingManager provides the functionality for creating and working with enhanced docking windows that support attaching to a host form's border, dragging around and docking to different edges within the form and also be dragged off the host form and floated as an individual top-level window. 
 
-The Essential Tools docking framework allows just about any child control on a form to be made into a fully qualified docking window. The DockingManager provides programmatic access to the interaction between these dockable windows and other complex features like multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events. 
+The Essential Tools docking Framework allows just about any child control on a form to be made into a fully qualified docking window. The DockingManager provides programmatic access to the interaction between these dockable windows and other complex features like multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events. 
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -36,7 +36,7 @@ This event occurs when the right mouse button is clicked over a AutoHideTabContr
 <tr>
 <td>
 DockMenuClick</td><td>
-This event occurs when the redock context menu item has been clicked.</td></tr>
+This event occurs when the redone context menu item has been clicked.</td></tr>
 <tr>
 <td>
 ControlMaximized</td><td>
@@ -76,31 +76,31 @@ The DockStateChanged event occurs immediately after a dock operation.</td></tr>
 <tr>
 <td>
 DockStateChanging</td><td>
-The DockStateChanging event occurs just beforea dock operation takes place.</td></tr>
+The DockStateChanging event occurs just before a dock operation takes place.</td></tr>
 <tr>
 <td>
 DockStateUnavailable</td><td>
-The DockStateUnavailable event occurs ifserialized information is not available for adockable control when loading a persisted dockstate.</td></tr>
+The DockStateUnavailable event occurs if serialized information is not available for a dockable control when loading a persisted dock state.</td></tr>
 <tr>
 <td>
 DockVisibilityChanged</td><td>
-The DockVisibilityChanged event occurs after acontrol's DockVisibility state has changed.</td></tr>
+The DockVisibilityChanged event occurs after a control's DockVisibility state has changed.</td></tr>
 <tr>
 <td>
 DockVisibilityChanging</td><td>
-The DockVisibilityChanging event occurs duringa control's DockVisibility state is changing.</td></tr>
+The DockVisibilityChanging event occurs during a control's DockVisibility state is changing.</td></tr>
 <tr>
 <td>
 DragAllow</td><td>
-The DragAllow event occurs when a dockingwindow is about to be dragged.</td></tr>
+The DragAllow event occurs when a docking window is about to be dragged.</td></tr>
 <tr>
 <td>
 DragFeedbackStart</td><td>
-The DragFeedbackStart event occurs just beforethe start of feedback of a drag operation.</td></tr>
+The DragFeedbackStart event occurs just before the start of feedback of a drag operation.</td></tr>
 <tr>
 <td>
 DragFeedbackStop</td><td>
-The DragFeedbackStop event occurs immediatelyafter the end of feedback of a drag operation.</td></tr>
+The DragFeedbackStop event occurs immediately after the end of feedback of a drag operation.</td></tr>
 <tr>
 <td>
 ImageListChanged</td><td>
@@ -671,7 +671,7 @@ End Sub
 
 ### DocMenuClick Event
 
-DockMenuClick event is fired, when the redock context menu item has been clicked. The menu button available for the docked controls, provides options for changing the docking position. Whenever the user tries to redock the control to some other position, DockMenuClick event will be triggered. The options provided are left, top, right and bottom. The redocked style can be displayed using the below code.
+DockMenuClick event is fired, when the redo context menu item has been clicked. The menu button available for the docked controls, provides options for changing the docking position. Whenever the user tries to redo the control to some other position, DockMenuClick event will be triggered. The options provided are left, top, right and bottom. The redo style can be displayed using the below code.
 
 #### Event Data
 
@@ -2216,7 +2216,7 @@ The current behavior of DockingManager is based on Visual Studio 2008. This beha
 
 ### Caption Button Collection:
 
-In Visual studio 2010, if you double-click on the docked window, the _caption control_ moves to _floating_ state and displays the _Caption Button_ collections as shown in the following screen shot. 
+In Visual Studio 2010, if you double-click on the docked window, the _caption control_ moves to _floating_ state and displays the _Caption Button_ collections as shown in the following screen shot. 
 
  ![](Docking-Events_images/Docking-Events_img3.png)
 

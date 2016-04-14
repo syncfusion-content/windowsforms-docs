@@ -326,11 +326,11 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 
 {% endtabs %}
 
-11)  The version can be specified for these DLLs in the all command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version that needs to be recreated by adding new and necessary resources. Recompile the resource DLLs with a new version, when the `SatelliteContractVersionAttribute` has changed.<br/><br/>
+11)  The version can be specified for these assemblies in the all command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version that needs to be recreated by adding new and necessary resources. Recompile the resource assemblies  with a new version, when the `SatelliteContractVersionAttribute` has changed.<br/><br/>
 
 12)  On successful execution, an assembly file, Syncfusion.Tools.Windows.resources.dll is created.<br/><br/>
 
-13)  Finally, mark this satellite DLL for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
+13)  Finally, mark this satellite assembly for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
 
 {% tabs %}
 
@@ -342,7 +342,7 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll
 
 {% endtabs %}
 
-14)  Drop this DLL into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this DLL contains resources from the German (Germany) culture.<br/><br/>
+14)  Drop this assembly into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this assembly contains resources from the German (Germany) culture.<br/><br/>
 
 15)  Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the `InitializeComponent()`.<br/><br/>
 

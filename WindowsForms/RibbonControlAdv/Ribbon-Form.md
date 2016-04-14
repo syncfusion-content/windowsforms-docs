@@ -11,7 +11,7 @@ documentation: ug
 
 ## Appearance Settings
 
-EssentialStudio now gives a similar look and feel of MS Office, to its Office controls, using RibbonControlAdv. This section discusses various appearance and behavior settings of the Ribbon form.
+EssentialStudio now gives a similar look and feel of Microsoft Office, to its Office controls, using RibbonControlAdv. This section discusses various appearance and behavior settings of the Ribbon form.
 
 <table>
 <tr>

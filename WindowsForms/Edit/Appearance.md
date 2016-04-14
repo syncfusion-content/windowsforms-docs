@@ -334,7 +334,7 @@ Specifies the interpolation mode. The options provided are as follows:
 <li> Low</li>
 <li> High</li>
 <li> Bilinear</li>
-<li> Bicubic</li>
+<li> Bi cubic</li>
 <li> NearestNeighbor</li>
 <li> HighQualityBilinear</li>
 <li> HighQualityBicubic</li></ul></td></tr>
@@ -982,7 +982,7 @@ The Edit Control supports customization of fonts through the configuration file,
 
 
 
-The Edit Control supports font customization at run time through the use of the frmFormatsConfig dialog box which consists of three smaller controls like the ControlFormatSettings, ControlFormatsList, and the ControlLanguageSelector. The ControlFormatSettings dialog box contains the actual controls to customize all the rendering settings of the selected Format, including font settings. The ControlFormatsList dialog consists of the list of currently existing formats in the configuration file. Also, it provides support to create new formats or delete existing ones. The ControlLanguageSelector dialog has a Combo Box containing the list of configuration languages supported by the Edit Control. The list gets updated when a new configuration language is added or an existing one is removed. The following code illustrates how you can hook up these dialogs to the Edit Control.
+The Edit Control supports font customization at run time through the use of the fromFormatsConfig dialog box which consists of three smaller controls like the ControlFormatSettings, ControlFormatsList, and the ControlLanguageSelector. The ControlFormatSettings dialog box contains the actual controls to customize all the rendering settings of the selected Format, including font settings. The ControlFormatsList dialog consists of the list of currently existing formats in the configuration file. Also, it provides support to create new formats or delete existing ones. The ControlLanguageSelector dialog has a Combo Box containing the list of configuration languages supported by the Edit Control. The list gets updated when a new configuration language is added or an existing one is removed. The following code illustrates how you can hook up these dialogs to the Edit Control.
 
 
 

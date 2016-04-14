@@ -204,7 +204,7 @@ Specifies the color for the tab panel over which the tab items are laid.</td></t
 </table>
 BackColor Settings for the TabItems
 
-The BackColor of the individual tab items can be customized by setting the `TabBackColor` property of the corresponding tabpages.
+The BackColor of the individual tab items can be customized by setting the `TabBackColor` property of the corresponding tab pages.
 
 <table>
 <tr>

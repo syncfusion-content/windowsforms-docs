@@ -13,7 +13,7 @@ The look and feel of the TabControlAdv can be customized through various propert
 
 ## Renaming TabItems
 
-TabControlAdv comes with the renaming functionality similar to MS Excel. Users can edit TabControlAdv's text at run-time using the `LabelEdit` property which has to be set to True. 
+TabControlAdv comes with the renaming functionality similar to Microsoft Excel. Users can edit TabControlAdv's text at run-time using the `LabelEdit` property which has to be set to True. 
 
 <table>
 <tr>
