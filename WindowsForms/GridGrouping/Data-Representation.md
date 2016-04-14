@@ -25,7 +25,7 @@ GroupedColumns collection defines the fields to group by and the sort order. The
 
 
 
-The data can be grouped by adding the column name to TableDesriptor.GroupedColumns property.
+The data can be grouped by adding the column name to TableDescriptor.GroupedColumns property.
 
 
 
@@ -898,13 +898,13 @@ Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Righ
 {% endhighlight %}
 
 
-The following screen shot shows GroupDropArea postioned at the top of Grid Grouping control.
+The following screen shot shows GroupDropArea positioned at the top of Grid Grouping control.
 
 ![](Data-Representation_images/Data-Representation_img16.png) 
 
 
 
-The following screen shot shows GroupDropArea postioned at the left of Grid Grouping control.
+The following screen shot shows GroupDropArea positioned at the left of Grid Grouping control.
 
  ![](Data-Representation_images/Data-Representation_img17.png) 
 
@@ -912,13 +912,13 @@ _Figure_ _376__: GroupDropArea aligned at the Left_
 
 
 
-The following screen shot shows GroupDropArea postioned at the bottom of Grid Grouping control.
+The following screen shot shows GroupDropArea positioned at the bottom of Grid Grouping control.
 
 ![](Data-Representation_images/Data-Representation_img18.png) 
 
 
 
-The following screen shot shows GroupDropArea postioned at the right of Grid Grouping control.
+The following screen shot shows GroupDropArea positioned at the right of Grid Grouping control.
 
  ![](Data-Representation_images/Data-Representation_img19.png) 
 
@@ -1943,7 +1943,7 @@ N>: For more details, refer to the following browser sample:
 
 #### Sorting By Display Member
 
-Grid Grouping control sorts the grid based on Value member of the grid data, by default. The user can also sort grid data by Display members of foreign-key combo boxes by setting up a foriegn-key reference relation between related tables. 
+Grid Grouping control sorts the grid based on Value member of the grid data, by default. The user can also sort grid data by Display members of foreign-key combo boxes by setting up a foreign-key reference relation between related tables. 
 
 N>: A foreign-key reference relation allows the user to look up values in a related table using an id column in the main table.
 
@@ -2736,7 +2736,7 @@ N>: For more details, refer to the following browser sample:
 
 ### Sort By Summary In Caption
 
-This section illustrates how to sort groups by values of the summary. By default, when grouping is applied, it sorts records by the values of grouped column. When you want to change this default group and make grouping sort records by the values of group summaries, thre are a couple of ways to achieve this. You can use your own custom comparer to define the sort order. An alternate solution is to make use of built-in method, that is specially designed to use in this scenario, named SetGroupSummaryOrder. 
+This section illustrates how to sort groups by values of the summary. By default, when grouping is applied, it sorts records by the values of grouped column. When you want to change this default group and make grouping sort records by the values of group summaries, there are a couple of ways to achieve this. You can use your own custom comparer to define the sort order. An alternate solution is to make use of built-in method, that is specially designed to use in this scenario, named SetGroupSummaryOrder. 
 
 #### SetGroupSummaryOrder Method
 
@@ -3072,7 +3072,7 @@ EXAMPLE USAGE</th></tr>
 <td>
 Multiplication, Division</td><td>
 *,/</td><td>
-Multiplies/Divides first argument by second arguMultiplies/Divides first argument by second argument.</td><td>
+Multiplies/Divides first argument by second argument Multiplies/Divides first argument by second argument.</td><td>
 [Wins] * [Losses] / 100</td></tr>
 <tr>
 <td>
@@ -4268,7 +4268,7 @@ Filters grid displaying records whose date lies between two dates irrespective o
 <td>
 BETWEENTIME</td><td>
 [columnname] BETWEENTIME  {datetime1,datetime2}</td><td>
-Filters grid displaying records whose datetimevalue lies between two dates and respective times.</td></tr>
+Filters grid displaying records whose datetime value lies between two dates and respective times.</td></tr>
 <tr>
 <td>
 IN</td><td>
@@ -4389,7 +4389,7 @@ This section demonstrates how to manually specify master-detail relations betwee
 
 #### Steps to setup RelatedMasterDetails relation
 
-1.Setup three datatables that have primary and foreign key columns in common.
+1.Setup three data tables that have primary and foreign key columns in common.
 
 {% highlight C# %}  
 
@@ -4727,7 +4727,7 @@ parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandC
 
  {% endhighlight %}
 
-3.Register the datatables with Engine.SourceListSet so that RelationDescriptor can resolve the name.
+3.Register the data tables with Engine.SourceListSet so that RelationDescriptor can resolve the name.
 
 
 
@@ -4767,9 +4767,9 @@ ForeignKeyReference is a foreign-key relation for looking up values where an id 
 
 #### Steps to setup ForeignKeyReference relation
 
-This section sets up a foreignkeyreference relation between data table and the collection USStates. Data table represents Parent Table of the relation and USStates collection serves as the related child list wherein the values can be looked up using a key. The collection derives from ArrayList in which every item is an USState object having two properties named Key and Name. It also defines a method named CreateDefaultCollection() that returns an instance of itself populated with a set of values.
+This section sets up a foreign key reference relation between data table and the collection USStates. Data table represents Parent Table of the relation and USStates collection serves as the related child list wherein the values can be looked up using a key. The collection derives from ArrayList in which every item is an USState object having two properties named Key and Name. It also defines a method named CreateDefaultCollection() that returns an instance of itself populated with a set of values.
 
-A foreignkeyreference relation can be set up between the lists by defining a relation descriptor with its attributes carrying the relation details and adding this descriptor to the Relations collection of the main table.
+A foreign key reference relation can be set up between the lists by defining a relation descriptor with its attributes carrying the relation details and adding this descriptor to the Relations collection of the main table.
 
 The following steps demonstrate this process.
 
@@ -5185,7 +5185,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates)
 
 {% endhighlight %}
 
-3.Creates a datatable with the Key from USState as one of the columns.
+3.Creates a DataTable with the Key from USState as one of the columns.
 
 
 
@@ -6152,7 +6152,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries)
 
 {% endhighlight %}
 
-3.Create a datatable with one of the columns type as Country.
+3.Create a DataTable with one of the columns type as Country.
 
 
 
@@ -6346,7 +6346,7 @@ N>: For more details, refer the following browser sample:
 
 ### Uniform Child List Relation
 
-UniformChildList relation can be used to map nested strong typed collection inside a parent collection. If a public property is an object, then it will be displayed in a Nested Table. The collection in the below example consists of two kinds of objects, ParentObj and ChildObj, where every ParentObj is associated with a collection of ChildObjs and is represented by the public property named 'Child'. Hence, a nested table is always created to display associated children for a given parent.
+UniformChildList relation can be used to map nested strong typed collection inside a parent collection. If a public property is an object, then it will be displayed in a Nested Table. The collection in the below example consists of two kinds of objects, ParentObj and ChildObj, where every ParentObj is associated with a collection of ChildObj and is represented by the public property named 'Child'. Hence, a nested table is always created to display associated children for a given parent.
 
 #### Example
 
