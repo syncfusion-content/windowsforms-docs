@@ -10,7 +10,7 @@ documentation: ug
 
 # How to activate a particular docked control?
 
-You can call the ActivateControl method inside NewDockStateEndLoad event to achieve this.
+To activate particular docked control call the `ActivateControl` method inside NewDockStateEndLoad event.
 
 <table>
 <tr>
@@ -23,10 +23,9 @@ ActivateControl</td><td>
 Activates the docked control which is passed as a parameter to this method. This method will be effective only when the control is tabbed to other control or controls. This method can be called from a handler for DockingManager.NewDockStateEndLoad Event. The parameter is,{{ 'Ctrl' | markdownify }} - Indicates the docking window.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 //The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded.
@@ -44,7 +43,7 @@ Console.WriteLine("Listbox is activated");
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 'The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded.
@@ -59,5 +58,6 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
 

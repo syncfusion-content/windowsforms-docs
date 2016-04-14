@@ -10,7 +10,7 @@ documentation: ug
 
 # How to auto hide a control when an application loads
 
-A control can be auto hidden on loading, by enabling the AutoHideOnLoad property through designer or by calling SetAutoHideOnLoad method programmatically.
+A control can be auto hidden on loading, by enabling the `AutoHideOnLoad` property through designer or by calling `SetAutoHideOnLoad` method programmatically.
 
 <table>
 <tr>
@@ -23,11 +23,9 @@ SetAutoHideOnLoad</td><td>
 AutoHides the docked control when the application loads. The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the docked control.{{ 'bautohide' | markdownify }} - Value indicating true or false.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 this.dockingManager1.SetAutoHideOnLoad(this.listBox1, true);
 
@@ -35,9 +33,10 @@ this.dockingManager1.SetAutoHideOnLoad(this.listBox1, true);
 
 {% highlight vbnet %}
 
-
-
 Me.DockingManager1.SetAutoHideOnLoad(Me.ListBox1, True)
+
 {% endhighlight %}
+
+{% endtabs %}
 
 

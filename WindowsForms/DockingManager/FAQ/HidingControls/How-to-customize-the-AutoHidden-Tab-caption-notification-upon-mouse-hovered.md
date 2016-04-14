@@ -12,8 +12,7 @@ documentation: ug
 
 In DockingManager, by default the width of the AutoHidden Tab can be adjusted for notification purpose upon mouse hovered on it. 
 
-This can be achieved by using the EnableAutoAdjustCaption property.
-
+This can be achieved by using the `EnableAutoAdjustCaption` property.
 
 
 <table>
@@ -28,29 +27,24 @@ Gets or sets whether to Auto adjust the AutoHiddenTab width upon Mouse
 </table>
 
 
+{% tabs %}
 
 {% highlight C# %}
 
-
-
 // Gets or sets whether to Auto adjust the AutoHiddenTab width upon mouse hover and selection
-
 
 this.dockingManager1.EnableAutoAdjustCaption = false;
 
 {% endhighlight %}
 
 
-
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 'Gets or sets whether to Auto adjust the AutoHiddenTab width upon mouse hover and selection
-
 
 Me.dockingManager1.EnableAutoAdjustCaption = false
 
 {% endhighlight %}
+
+{% endtabs %}
 
