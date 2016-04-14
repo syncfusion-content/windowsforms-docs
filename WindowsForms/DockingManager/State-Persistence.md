@@ -275,6 +275,8 @@ Me.dockingManager1.LoadDockState(aser)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Serialization in Binary Format
 
 
@@ -426,3 +428,5 @@ Me.dockingManager1.GetSerializedControls(serializer)
 Console.Write("Serialized controls :" + Me.dockingManager1.GetSerializedControls(serializer))
 
 {% endhighlight %}
+
+{% endtabs %}
