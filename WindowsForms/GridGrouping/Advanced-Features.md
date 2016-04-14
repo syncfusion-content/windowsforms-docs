@@ -885,7 +885,7 @@ End Sub
 
 This section deals with implementation of Custom Summaries. You can go for custom summaries when the standard summaries do not meet your needs.
 
-Custom Summaries can be created by subclassing SummaryBase class and by specifying SummaryType as Custom. In the derived class, you can customize CreateSummaryMethod in the way you want. It is the right place to define the way summaries need to be calculated. You can call this method each time the summary is queried, by assigning Custom CreateSummaryDelegate to CreateSummaryMethod property of SummaryDescriptor inside the QueryCustomSummary event handler. Optionally, you can also specify CreateSummaryFromElementMethod if summaries need to be calculated for elements other than records.
+Custom Summaries can be created by deriving SummaryBase class and by specifying SummaryType as Custom. In the derived class, you can customize CreateSummaryMethod in the way you want. It is the right place to define the way summaries need to be calculated. You can call this method each time the summary is queried, by assigning Custom CreateSummaryDelegate to CreateSummaryMethod property of SummaryDescriptor inside the QueryCustomSummary event handler. Optionally, you can also specify CreateSummaryFromElementMethod if summaries need to be calculated for elements other than records.
 
 ### Example
 
@@ -1183,7 +1183,7 @@ Implementation
 
 To adopt our own filter dialog with respect to the 'Custom' filtering option, we must define Custom Filter CellType, which should then replace the filter bar cell that is shown by default. 
 
-In general, a celltype requires a model class and a renderer class. The model class handles serialization requirements for the control and creates the renderer class. The renderer class handles UI requirements of the cell, such as drawing it, handling mouse actions, and so on.
+In general, a CellType requires a model class and a renderer class. The model class handles serialization requirements for the control and creates the renderer class. The renderer class handles UI requirements of the cell, such as drawing it, handling mouse actions, and so on.
 
 For our FilterBarCell, we have to create the model and renderer classes by inheriting GridTableFilterBarCellModel and GridTableFilterBarCellRenderer classes. In the renderer, you should override ListBoxClick or ListBoxMouseUp event handlers (the event that gets fired upon clicking a filter option) in order to show up our own filter dialog. Once the dialog is closed, retrieve the filter string that has been setup using the dialog and add this filter string into the RecordFilters collection of the TableDescriptor. This would set up a filter using custom option.
 
@@ -1873,7 +1873,7 @@ The following code illustrates how to optimize the filter.
 
 You can filter StackedColumnHeader by choosing any one of the columns from the collection (by default, the first column in the collection is taken for filtering).
 
-The following screenshot displays the Filter Dialogue.
+The following screenshot displays the Filter Dialog.
 
  ![](Advanced-Features_images/Advanced-Features_img8.png) 
 
