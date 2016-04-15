@@ -551,7 +551,7 @@ pdfConvertor.ExportToPdf("Sample.pdf", Me.gridGroupingControl1.TableControl)
 ![](Exporting_images/Exporting_img12.png)
 
 ### Adding Header/Footer
-The grid can be exported with the header/footer to the pdf document by enabling the `ShowHeader` and `ShowFooter` properties of the `GridPDFConverter`. The DrawPDFHeader and DrawPDFFooter events are used to customize the header and footer section of the pdf document. 
+The grid can be exported with the header/footer to the PDF document by enabling the `ShowHeader` and `ShowFooter` properties of the `GridPDFConverter`. The DrawPDFHeader and DrawPDFFooter events are used to customize the header and footer section of the PDF document. 
 
 {% tabs %}
 {% highlight c# %}
@@ -632,7 +632,7 @@ End Sub
 
 ![](Exporting_images/Exporting_img13.png)
 
-N> The header/footer height of the exported pdf document can be set by using the `HeaderHeight` and `FooterHeight` properties of the pdf converter.
+N> The header/footer height of the exported PDF document can be set by using the `HeaderHeight` and `FooterHeight` properties of the PDF converter.
 
 ### Merging with PDF document 
 The GridGroupingControl can be exported to the PDF document using [ExportToPdfWithMerge](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ExportToPdfWithMerge.html) method. The[GridPDFConverter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter.html) does not have support to export the grid which has more than 60000 records. It will throw the `OutOfMemoryException` when exporting.  To resolve this exception, the grid can be exported as two or more documents and merging them to single document using this technique. The number of records to be exported can be determined by using [ExportRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ExportRange.html) property.
@@ -657,7 +657,7 @@ pdfConverter.ExportToPdfWithMerge("Sample1.pdf", Me.gridGroupingControl1.TableCo
 {% endtabs %}
 
 ### Events
-The `GridPDFConverter` provides support to customize the exporting actions through events. The [Exporting](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exporting_EV.html) and [Exported](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exported_EV.html) events of the convertor is used to notify the pdf exporting of the grid.
+The `GridPDFConverter` provides support to customize the exporting actions through events. The [Exporting](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exporting_EV.html) and [Exported](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exported_EV.html) events of the convertor is used to notify the PDF exporting of the grid.
 
 {% tabs %}
 {% highlight c# %}
