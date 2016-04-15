@@ -690,11 +690,6 @@ Sets the text to be displayed in the docking window caption.Ctrl - Indicates the
 
 The buttons available for the docked control and the properties which controls the visibility of the button are discussed in this section.
 
-
-![](Dealing-with-Windows_images/CaptionLabel6.png) 
-
-
-
 ### Menu Button
 
 The menu button in a docked control can be made visible or hidden by setting the `MenuButtonEnabled` property to true. Clicking this button will display the context menu items.
@@ -713,6 +708,7 @@ The visibility of the Close button can be controlled using the `CloseEnabled` pr
 
 Setting `AutoHideEnabled` property shows or hides the auto hide button in the docked control. Clicking this button will auto hide the docked controls.
 
+![](Dealing-with-Windows_images/CaptionLabel6.png) 
 
 N> DockingManager let you customize the above default buttons and also add custom caption buttons. 
 
@@ -1026,7 +1022,7 @@ The Splitter of the dock window can be customized using the `SplitterWidth` and 
 
  this.dockingManager1.SplitterWidth = 10;
  
- this.dockingManager1.MetroSplitterBackColor = Color.Maroon;
+ this.dockingManager1.MetroSplitterBackColor = Color.Gray;
 
 {% endhighlight %}
 
@@ -1034,7 +1030,7 @@ The Splitter of the dock window can be customized using the `SplitterWidth` and 
 
  Me.dockingManager1.SplitterWidth = 10
  
- Me.dockingManager1.MetroSplitterBackColor = Color.Maroon
+ Me.dockingManager1.MetroSplitterBackColor = Color.Gray
 
 {% endhighlight %}
 
