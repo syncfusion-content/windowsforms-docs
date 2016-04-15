@@ -2236,11 +2236,11 @@ The following steps arev used to binding the data source to the GridgroupingCont
    
    ![](Data-Binding_images/Data-Binding_img70.jpeg)
 
-3. Choose Data Source dialog will be open, Select the MicroSoft Access Database file from the Data source list. Click on Continue.
+3. Choose Data Source dialog will be open, Select the Microsoft Access Database file from the Data source list. Click on Continue.
    
    ![](Data-Binding_images/Data-Binding_img71.jpeg)
 
-4.  Choose the Database file name by clicking the Browse button, and then click the Ok Button.
+4.  Choose the Database file name by clicking the Browse button, and then click the OK Button.
     
     ![](Data-Binding_images/Data-Binding_img72.jpeg)
 
