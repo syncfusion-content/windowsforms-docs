@@ -629,7 +629,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/tilelayout/getting-started">ImageStreamer</a><br/><br/>
+			<a href="/windowsforms/tilelayout/hosting-imagestreamer-as-tile-items">ImageStreamer</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
