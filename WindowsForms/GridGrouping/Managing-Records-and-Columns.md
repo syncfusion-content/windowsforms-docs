@@ -153,7 +153,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Colum Headers for Child Groups 
+## Adding Column Headers for Child Groups 
 By default the grid will not shows the column headers for the child groups. It be displayed for the child groups by setting the `ChildGroupOptions.ShowColumnHeaders` property to `true`.
 
 {% tabs %}
