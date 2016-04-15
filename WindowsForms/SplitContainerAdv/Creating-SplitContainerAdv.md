@@ -15,7 +15,7 @@ This section will give a step-by-step procedure to design a SplitContainerAdv co
 
 To create and customize the SplitContainerAdv through designer,
 
-* Open a new Visual C# or VB.NET application in Visual studio.
+* Open a new Visual C# or VB.NET application in Visual Studio.
 * Drag-and-drop a SplitContainerAdv control object from the toolbox onto the form and resize it to the desired dimension.
 
   ![](SplitContainerAdv-Images/Overview_img392.jpeg) 
