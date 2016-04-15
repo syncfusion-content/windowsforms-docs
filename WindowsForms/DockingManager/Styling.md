@@ -152,28 +152,6 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red);
 
 
 
-## Windows Color Schemes
-
-Windows color schemes like Blue, Silver and OliveGreen can be applied to the controls when Default or Office2003 styles are selected. XP themes can be enabled for the docked controls using `ThemesEnabled` property.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.dockingManager1.ThemesEnabled = true;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.dockingManager1.ThemesEnabled = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
- ![](Styling_images/Styling_img11.png)
 
 
 
