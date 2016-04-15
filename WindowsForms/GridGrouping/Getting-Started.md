@@ -108,7 +108,7 @@ Syncfudion.Shared.Base contains style related properties and various editor cont
 </table>
 
 ## Configuring a simple GridGroupingControl
-This section will explain how to create a simple GridGroupingControl in WindowsForms application and some of the basic functionalities of it.
+This section will explain how to create a simple GridGroupingControl in Windows Forms application and some of the basic functionalities of it.
 
 ### Adding GridGroupingControl through Designer
 GridGroupingControl can be added through designer by following the below steps.
