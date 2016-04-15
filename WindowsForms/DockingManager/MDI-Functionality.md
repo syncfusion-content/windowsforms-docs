@@ -135,12 +135,11 @@ End Sub
   ![](Images/MDITransitions.png)
 
 
-
 N> You can set the docked control as an MDI Child in an easy method, by using the "MDI Child" option in the context menu.
 
-A sample that demonstrates MDI child transition is available in the following sample installation path.
-
+N> A sample that demonstrates MDI child transition is available in the following sample installation path.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\MDI\CS
+
 
 ### Office 2007 Style for MDI Child Form
 
