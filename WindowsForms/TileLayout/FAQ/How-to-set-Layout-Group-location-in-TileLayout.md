@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to set Layout Group location in TileLayout | WindowsForms | Syncfusion
 description: How to set Layout Group location in TileLayout
