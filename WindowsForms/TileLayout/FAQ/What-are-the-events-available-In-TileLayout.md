@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: What are the events available In TileLayout | WindowsForms | Syncfusion
 description: What are the events available In TileLayout

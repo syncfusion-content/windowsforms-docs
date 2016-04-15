@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to set the ImageStreamDirection in TileLayout | WindowsForms | Syncfusion
 description: How to set the ImageStreamDirection in TileLayout
