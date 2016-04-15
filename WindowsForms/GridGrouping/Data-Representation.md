@@ -107,7 +107,7 @@ N>: For more details, refer to the following browser sample:
 
 ##### Multi Column Grouping
 
-Grid Grouping control provides inbuilt support to group the data by more than one column. It is as simple as adding the column names to the GroupedColumns collection. With multicolumn grouping, grouping grid organizes data in a hierarchical structure showing groups in different levels. In the image below, you see Employees data grouped by Title and Country columns.
+Grid Grouping control provides built-in support to group the data by more than one column. It is as simple as adding the column names to the GroupedColumns collection. With multicolumn grouping, grouping grid organizes data in a hierarchical structure showing groups in different levels. In the image below, you see Employees data grouped by Title and Country columns.
 
  ![](Data-Representation_images/Data-Representation_img4.jpeg)
 
