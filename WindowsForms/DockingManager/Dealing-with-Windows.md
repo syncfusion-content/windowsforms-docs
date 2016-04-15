@@ -780,9 +780,7 @@ Me.dockingManager1.CaptionButtons.Add(captionButton)
 
 {% endtabs %}
 
-
-Refer to the following sample link that demonstrates how to add the Custom Caption Buttons.
-
+N> Refer to the following sample link that demonstrates how to add the Custom Caption Buttons.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\Custom Captions\CS
 
 ### Custom Button for Caption Bar in Floating State
