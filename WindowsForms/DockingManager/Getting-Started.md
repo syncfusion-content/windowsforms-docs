@@ -15,15 +15,15 @@ This section explains how to implement a similar UI as Visual Studio by using th
 
 There are several ways to add Syncfusion control in to the Visual Studio WindowsForms project. The following steps help to add a DockingManager control through C# Code.
 
-1 Create a WindowsForms project in Visual Studio and refer to the following assemblies.
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+1) Create a WindowsForms project in Visual Studio and refer to the following assemblies.
+  * Syncfusion.Grid.Windows.dll
+  * Syncfusion.Grid.Base.dll
+  * Syncfusion.Shared.Base.dll
+  * Syncfusion.Shared.Windows.dll
+  * Syncfusion.Tools.Base.dll
+  * Syncfusion.Tools.Windows.dll
 
-2 Now add the DockingManager control with a required optimal name by using the included namespace.
+2) Now add the DockingManager control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
@@ -35,6 +35,8 @@ private Syncfusion.Windows.Forms.Tools.DockingManager dockingManager;
 
 this.dockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components); 
 
+this.Controls.Add(this.dockingManager);
+
 {% endhighlight %}
 
 
@@ -45,6 +47,8 @@ this.dockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.com
 Private dockingManager As Syncfusion.Windows.Forms.Tools.DockingManager
 
 Me.dockingManager = New Syncfusion.Windows.Forms.Tools.DockingManager(Me.components) 
+
+Me.Controls.Add(Me.dockingManager)
 
 {% endhighlight %}
 
@@ -155,7 +159,7 @@ Me.dockingManager1.SetDockLabel(panel5, "Start Page");
 
 {% endtabs %}
 
-
+![](GettingStarted_images/DockLabel.png)
 
 ## Set States for Each Child Window
 
@@ -234,7 +238,7 @@ this.dockingManager1.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Too
 
 this.dockingManager1.DockControl(this.panel2, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
 
-this.dockingManager1.DockControl(this.panel3, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
+this.dockingManager.FloatControl(this.panel3, new Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200));
 
 this.dockingManager1.DockControl(this.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 100);
 
