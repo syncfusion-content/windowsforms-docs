@@ -91,7 +91,7 @@ Loads the user customized information that was saved previously.</td></tr>
 
 The Bar State can be saved/loaded using AppStateSerializer class and it can be used across multiple applications.
 
-The default serialization option is Isolated storage and the System.IO.IsolatedStorage routines normally store application specific encrypted entries under the 'C:\Documents and Settings\[USER name]\Local Settings\Application Data\IsolatedStorage\’ folder. All of the Essential Tools framework components use the 'Syncfusion.Runtime.Serialization. AppStateSerializer' class in the Shared library for Read/Write. The AppStateSerializer is fully documented and can be initialized for different persistence mediums such as XML / Binary files, XML / Binary streams, and the Win32 Registry using its API.
+The default serialization option is Isolated storage and the System.IO.IsolatedStorage routines normally store application specific encrypted entries under the 'C:\Documents and Settings\[USER name]\Local Settings\Application Data\IsolatedStorage\’ folder. All of the Essential Tools Framework components use the 'Syncfusion.Runtime.Serialization. AppStateSerializer' class in the Shared library for Read/Write. The AppStateSerializer is fully documented and can be initialized for different persistence mediums such as XML / Binary files, XML / Binary streams, and the Win32 Registry using its API.
 
 The Bar States can be serialized in the following formats.
 
@@ -401,9 +401,9 @@ These are the limitations of Visual Inheritance mode.
 
 The UI Command Update mechanism can be defined as the way in which, an application updates the state of the UI elements (BarItems in this case), as the state of the application changes.
 
-Different frameworks support different ways of UI state update mechanism. Each has its own merits and demerits and each one is appropriate in some scenarios and not so in the other.
+Different Frameworks support different ways of UI state update mechanism. Each has its own merits and demerits and each one is appropriate in some scenarios and not so in the other.
 
-The XP Menus framework supports multiple patterns of UI Command Update mechanism, which are discussed below.
+The XP Menus Framework supports multiple patterns of UI Command Update mechanism, which are discussed below.
 
 * Supply-Push Approach
 
@@ -413,7 +413,7 @@ In this approach, the state of the BarItem is changed as and when the correspond
 
 This approach can be difficult, as it is sometimes cumbersome to keep track of state changes in the application and update the UI state appropriately. 
 
-So, the framework provides two other alternative ways to update the BarItem states.
+So, the Framework provides two other alternative ways to update the BarItem states.
 
 Fast Updates 
 
@@ -434,7 +434,7 @@ Me.mainFrameBarManager1.UpdateUIMFCStyle  = True
 
 ### Slow Updates 
 
-If updating the BarItem states is not a trivial operation, then use this approach. In this approach, turn on the UpdateUIOnAppIdle property of the BarItem whose state has changed one or more times and the framework will then initiate its UpdateUI event the next time the application goes into an idle state.
+If updating the BarItem states is not a trivial operation, then use this approach. In this approach, turn on the UpdateUIOnAppIdle property of the BarItem whose state has changed one or more times and the Framework will then initiate its UpdateUI event the next time the application goes into an idle state.
 
 {% highlight c# %}
 
