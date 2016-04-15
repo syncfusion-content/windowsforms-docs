@@ -73,13 +73,13 @@ this.imageStreamer1.SliderSpeed = 100;
 
 ## ShowNavigator
 
-Navigator to navigate the slide show direction is enabled when the ShowNavigator property is True. To enable this property SlideShow must be true. 
+Navigator which is used to navigate the slide show direction is shown when the `ShowNavigator` property is True. To enable this property SlideShow must be true. 
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Show the Navigator
+// Shows the Navigator
 
 this.imageStreamer1.ShowNavigator = true;
 
@@ -89,7 +89,7 @@ this.imageStreamer1.SlideShow = true;
 
 {% highlight VB %}
 
-'Show the Navigator
+'Shows the Navigator
 
  Me.imageStreamer1.ShowNavigator = True
  
@@ -103,7 +103,7 @@ this.imageStreamer1.SlideShow = true;
 
 ## SlideShow
 
-This property shows all the slides in the ImageStreamer.
+This property shows all the Images which is loaded in the ImageStreamer.
 
 {% tabs %}
 
@@ -162,6 +162,8 @@ ImageStreamer has two types.
 
 * Normal
 * DoubleHorizontal
+
+In Normal ImageStreamer, one image is displayed at a time.In DoubleHorizontal mode, either we can load two images or single image at a time. If single image is loaded in DoubleHorizontal mode the Image will be resized to this DoubleHorizontal size.
 
 {% tabs %}
 
