@@ -7,7 +7,7 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to get rowindex given the record index
+# How to get row index given the record index
 
 This can be done using the following code snippet.
 
