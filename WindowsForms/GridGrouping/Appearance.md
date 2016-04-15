@@ -1515,7 +1515,7 @@ Default width for columns.</td></tr>
 <tr>
 <td>
 DrawTextWithGdiInterop</td><td>
-Specifies whether the text should be drawn using GDI interop routines.</td></tr>
+Specifies whether the text should be drawn using GDI Interop routines.</td></tr>
 <tr>
 <td>
 GridLineBorder</td><td>
