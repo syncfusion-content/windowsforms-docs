@@ -182,7 +182,7 @@ Me.gridGroupingControl1.UseOldListChangedHandler = True
 {% endtabs %}
 
 ### Blinking Time
-GridGroupingontrol has in-built support for highlighting cells for a short period of time after a change is detected to a cell. The [BlinkTime](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~BlinkTime.html) property lets the user to specify the amount of time in milliseconds for the values should be highlighted. User can also enable or disable this feature for individual columns by toggling [GridColumnDescriptor.AllowBlink](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~AllowBlink.html) property.
+GridGroupingControl has in-built support for highlighting cells for a short period of time after a change is detected to a cell. The [BlinkTime](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~BlinkTime.html) property lets the user to specify the amount of time in milliseconds for the values should be highlighted. User can also enable or disable this feature for individual columns by toggling [GridColumnDescriptor.AllowBlink](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~AllowBlink.html) property.
 
 {% tabs %}
 {% highlight c# %}
