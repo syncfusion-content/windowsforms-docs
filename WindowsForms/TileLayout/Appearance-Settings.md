@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance Settings
 
-## SetParentFormFlat:
+## SetParentFormFlat
 
 This property gives flat look for the the parent Form while.
 
@@ -37,7 +37,7 @@ Me.tileLayout1.SetParentFormFlat = True
 
 
 
-## ShowGroupTitle:
+## ShowGroupTitle
 
 Shows the Group Title while enabling this property.
 
