@@ -11,7 +11,7 @@ documentation: ug
 
 ## SetParentFormFlat
 
-This property gives flat look for the the parent Form while.
+This property gives flat look for the the parent Form.
 
 {% tabs %}
 
