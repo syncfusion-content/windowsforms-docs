@@ -102,7 +102,7 @@ Syncfusion.Grouping.Base allows you to easily access, manipulate, and display yo
 {{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html)'| markdownify }}
 </td>
 <td>
-Syncfudion.Shared.Base contains style related properties and various editor controls which are used in GridControl.
+Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.
 </td>
 </tr>
 </table>
