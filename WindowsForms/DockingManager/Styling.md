@@ -51,7 +51,6 @@ Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003;
 
 * Metro 
 
-Code snippet
 
 ![](Styling_images/Styling_img1.jpeg)
 
