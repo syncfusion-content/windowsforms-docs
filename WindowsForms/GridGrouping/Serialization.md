@@ -11,7 +11,7 @@ documentation: ug
 Serialization is the process of saving the state of an object into a stream of bytes for further use. The reverse of this process called Deserialization. This section will explain about the different types of serialization techniques available for the GridGroupingControl. 
 
 ## XML Serialization 
-The grid schema information can be saved into the XML file by using the xml serialization. This can be achieved by using the following methods provided by the GridGroupingControl,
+The grid schema information can be saved into the XML file by using the XML serialization. This can be achieved by using the following methods provided by the GridGroupingControl,
 
 * [WriteXmlSchema](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~WriteXmlSchema.html) - It writes the engine settings into an XML stream (Serialization).
 * [ApplyXmlSchema](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ApplyXmlSchema.html) - It loads the engine settings from an XML stream (Deserialization).
