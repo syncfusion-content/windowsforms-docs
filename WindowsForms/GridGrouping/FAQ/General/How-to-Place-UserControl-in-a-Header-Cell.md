@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Place UserControl in a Header Cell
 
-To have User Control in GridGroupingControl, GridGenericCellModel and GridGenericCellRenderer classes must be derived and User Control designed must be made as a CellModel in the GridGroupingControl using these derived classes.
+To have User Control in GridGroupingControl, GridGenericCellModel and GridGenericCellRenderer classes must be derived and User Control designed must be made as a cell model in the GridGroupingControl using these derived classes.
 
 The following are the steps that need to be followed to do this.
 
@@ -109,7 +109,7 @@ End Class
 
 {% endhighlight %}
 
-Step 3: A new CellType is created by adding the instance of derived generic cell model class into the GridGroupingControl's CellModel.
+Step 3: A new CellType is created by adding the instance of derived generic cell model class into the GridGroupingControl's CellModels.
 
 
 
