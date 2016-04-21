@@ -31,7 +31,7 @@ The following [GridRelationDescriptor](http://help.syncfusion.com/cr/cref_files/
 **ChildTableName**       - Specifies the name of the ChildTable.<br/>
 **RelationKeys**         - Defines the mapping between the parent and child columns in a master-detail relation.<br/>
 **MappingName**          - Specifies the name of the PropertyDescriptor in the parent table that contains the details about the relation.<br/>
-**RelationKind**         - Specifies the type of the relation. This options includes the follows.RelatedMasterDetailsl, ForeignKeyReference, ForeignKey KeyWords, UniformChildList, ListItemReference.<br/>
+**RelationKind**         - Specifies the type of the relation. This options includes the follows.RelatedMasterDetails, ForeignKeyReference, ForeignKey KeyWords, UniformChildList, ListItemReference.<br/>
 **AllowCacheChildList**  - Indicates whether the ChildList associated with a view can be cached. Used with UniformChildList relation.<br/>
 **ChildTableDescriptor** - Specifies the table schema of Child Table.<br/>
 
@@ -482,7 +482,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates)
 {% endhighlight %}
 {% endtabs %}
 
-3.Creates a datatable with the Key from USState as one of the columns.
+3.Creates a DataTable with the Key from USState as one of the columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -512,7 +512,7 @@ Next i
 {% endhighlight %}
 {% endtabs %}
 
-4.Establish Foreignkey Reference relationship.
+4.Establish Foreign key Reference relationship.
 
 {% tabs %}
 {% highlight c# %}
@@ -1047,7 +1047,7 @@ mainTd.Name = "ListItemReference"
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\List Item Reference Demo
 
 ### Uniform Child List Relation
-This relation can be used to map nested strong typed collection inside a parent collection. If a public property is an object, then it will be displayed in a Nested Table. The collection in the below example consists of two kinds of objects, `ParentObj` and `ChildObj`, where every ParentObj is associated with a collection of ChildObjs and is represented by the public property named ‘Child’. Hence, a nested table is always created to display associated children for a given parent.
+This relation can be used to map nested strong typed collection inside a parent collection. If a public property is an object, then it will be displayed in a Nested Table. The collection in the below example consists of two kinds of objects, `ParentObj` and `ChildObj`, where every ParentObj is associated with a collection of ChildObj and is represented by the public property named ‘Child’. Hence, a nested table is always created to display associated children for a given parent.
 
 The following steps are used to create the `UniformChildList` Relation,
 
