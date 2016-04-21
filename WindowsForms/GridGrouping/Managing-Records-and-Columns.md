@@ -126,7 +126,7 @@ The hidden row by resizing is showing in the following screen shot
 The hidden columns by resizing can be unhide by performing the double click between the column headers![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img5.jpeg)
 
 ### Prevent Column from Hiding 
-The columns can be prevent from hiding on resizing by cancelling the [ColsHiding](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColsHiding_EV.html) event.
+The columns can be prevent from hiding on resizing by canceling the [ColsHiding](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColsHiding_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
