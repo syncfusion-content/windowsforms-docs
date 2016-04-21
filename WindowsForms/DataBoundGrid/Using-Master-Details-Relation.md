@@ -11,7 +11,7 @@ documentation: ug
 
 To define simple Master-Details relation, you must have two tables. The first is a Master table that has a column whose values are also included in a second table, referred to as the Details table. You must display these two tables in two grids, which are called Master grid and Details grid. As you click a row in the Master grid, the rows displayed in the Details Grid will be restricted to only those rows whose common value matches the value in the selected Master grid row. 
 
-Here is a screen shot showing you Master-Detail grid pair using NorthWind Customers table as the Master table, and the NorthWind Orders table as the details table. As you click on a customer in the customers grid, the orders for that customer will appear in the second grid.
+Here is a screen shot showing you Master-Detail grid pair using Northwind Customers table as the Master table, and the Northwind Orders table as the details table. As you click on a customer in the customers grid, the orders for that customer will appear in the second grid.
 
 ![](Using-Master-Details-Relation_images/Using-Master-Details-Relation_img1.jpeg) 
 
