@@ -11,7 +11,7 @@ documentation: ug
 
 ### Introduction
 
-GridDataBoundGrid does not increment row and column count as GridControl. The reason for this is that GridDataBoundGrid does not have its own datastore, and it has to store these in the relevant datatable. To add rows and columns in the datatable, Model.ClipboardPaste handler must be used.
+GridDataBoundGrid does not increment row and column count as GridControl. The reason for this is that GridDataBoundGrid does not have its own DataSource, and it has to store these in the relevant DataTable. To add rows and columns in the DataTable, Model.ClipboardPaste handler must be used.
 
 In this handler, the clipboard contents that are stored in text format of DataObject will be single string. This has to be split with '\n' and '\t' to refer the rows and columns fashion and this count is compared with the existing row and column count. The necessary extra rows are added then and makes pasting possible.
 
