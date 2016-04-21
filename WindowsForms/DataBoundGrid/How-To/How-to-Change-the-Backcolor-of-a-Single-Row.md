@@ -7,11 +7,11 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Change the Backcolor of a Single Row
+# How to Change the BackColor of a Single Row
 
 ### Introduction
 
-In GridDataBoundGrid, you cannot set row specific properties like backcolor using Model.RowStyles member. The reason is that in GridDataBoundGrid, the only data storage is the bound datasource. There is no row specific storage allocated. 
+In GridDataBoundGrid, you cannot set row specific properties like BackColor using Model.RowStyles member. The reason is that in GridDataBoundGrid, the only data storage is the bound datasource. There is no row specific storage allocated. 
 
 This code does not work.
 
