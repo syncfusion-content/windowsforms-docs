@@ -127,7 +127,7 @@ Style information for any filter bar cell.</td></tr>
 <tr>
 <td>
 FilterBarRowHeaderCell</td><td>
-Style information for any filter bar rowheader cell.</td></tr>
+Style information for any filter bar row header cell.</td></tr>
 <tr>
 <td>
 GroupCaptionCell</td><td>
