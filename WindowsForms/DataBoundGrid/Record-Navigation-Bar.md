@@ -23,7 +23,7 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridData
 
 The following sample displays DataBound Grid within Grid Record Navigation control. This sample was created using the designer. 
 
-1. Step 1: Create an SqlDataAdapter and connect to the Customers table of NorthWind database. 
+1. Step 1: Create an SqlDataAdapter and connect to the Customers table of Northwind database. 
 
    
 
