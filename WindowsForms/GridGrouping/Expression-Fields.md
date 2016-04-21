@@ -26,7 +26,7 @@ The [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/cref_files/windows
 
 * [Name](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~Name.html) – Specifies the name of the Expression field.
 * [Expression](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor~Expression.html) – Specifies the formula expression.
-* [ResultType](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor~ResultType.html)  - Speicifies the result type to which the expression should be converted.
+* [ResultType](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor~ResultType.html)  - Specifies the result type to which the expression should be converted.
 * [ForceImmediateSaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~ForceImmediateSaveValue.html) - Indicates whether the changes to the field in a record should trigger [SaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~SaveValue_EV.html) event; Set it to False to avoid triggering [ListChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ListChanged_EV.html) events when the expression field is modified.
 * [ReferencedFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~ReferencedFields.html) - Saves a list of referenced field names used in the expression. Use semicolon as a delimiter to specify multiple fields. This list will be used by the engine to determine the cells to be updated when `ListChanged` event is triggered.
 
@@ -70,7 +70,7 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Syncfusi
 {% endtabs %}
 
 ## Expression column Appearance
-The Appearance for the Expression column can be applied as like column styling by using the [Column.Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~Appearance.html) property. The style attributes like backcolor, textcolor, alignment etc., can be customized for Expression columns.
+The Appearance for the Expression column can be applied as like column styling by using the [Column.Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~Appearance.html) property. The style attributes like BackColor, TextColor, Alignment etc., can be customized for Expression columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -141,7 +141,7 @@ Multiplication, Division
 *,/
 </td>
 <td>
-Multiplies/Divides first argument by second arguMultiplies/Divides first argument by second argument.
+Multiplies/Divides first argument by second argument Multiplies/Divides first argument by second argument.
 </td>
 <td>
 [Wins] * [Losses] / 100
@@ -337,7 +337,7 @@ Between time
 betweentime
 </td>
 <td>
-Checks if a time in the date field value between the two values is listed in the right-hand operand. For example, [time] between {04:00:00 PM, 05:00:00 PM} returns 1 for any record whose date field is greater than or equal to 04:00 and less than 05:00. The time will be calculated along with date for betweentime.
+Checks if a time in the date field value between the two values is listed in the right-hand operand. For example, [time] between {04:00:00 PM, 05:00:00 PM} returns 1 for any record whose date field is greater than or equal to 04:00 and less than 05:00. The time will be calculated along with date for between time.
 </td>
 <td>
 [OrderDate] between {“04/17/2008 9:00:00 PM”, “04/21/2008 07:00:00 AM”}
