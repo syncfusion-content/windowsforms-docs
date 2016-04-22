@@ -59,7 +59,7 @@ NA</td></tr>
 <tr>
 <td>
 ColumnStyle</td><td>
-Customizes the styles of Column and Winloss sparklines</td><td>
+Customizes the styles of Column and WinLoss sparklines</td><td>
 NA</td><td>
 NA</td><td>
 NA</td></tr>
@@ -231,7 +231,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. Column
 
 ### Drawing WinLoss Sparkline in an Application
 
-The Winloss type of spark line is similar to column type but all columns have equal length for data points.   The vertical column direction represents the negative or positive value.
+The WinLoss type of spark line is similar to column type but all columns have equal length for data points.   The vertical column direction represents the negative or positive value.
 Refer to the following code samples to draw the WinLoss sparkline:
 
 
