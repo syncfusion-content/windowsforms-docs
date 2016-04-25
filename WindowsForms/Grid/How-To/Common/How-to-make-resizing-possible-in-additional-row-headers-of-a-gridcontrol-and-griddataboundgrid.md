@@ -11,7 +11,7 @@ documentation: ug
 
 
 
-The resizing of additional row headers on the grid can be made possible by setting ResizeColsBehaviour flag to Grid.GridResizeCellsBehavior.InsideGrid.
+The resizing of additional row headers on the grid can be made possible by setting ResizeColsBehavior flag to Grid.GridResizeCellsBehavior.InsideGrid.
 
 {% highlight c# %}
 
