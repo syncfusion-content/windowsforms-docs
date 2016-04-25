@@ -52,7 +52,6 @@ Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 ![](Images/DockingWindow_img2.jpeg)
 
-
 ## Enabling or Disabling the Dock Functionality
 
 Docking functionality can be enabled or disabled by setting the Boolean value as true or false in the **SetEnableDocking** method.
