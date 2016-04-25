@@ -155,6 +155,11 @@ Me.imageStreamer1.ImageStreamDirection = Syncfusion.Windows.Forms.Tools.ImageStr
 
 {% endtabs %}
 
+![](HostingImageStreamerasItems_images/StreamDirection1.png)
+![](HostingImageStreamerasItems_images/StreamDirection2.png)
+![](HostingImageStreamerasItems_images/StreamDirection3.png)
+![](HostingImageStreamerasItems_images/StreamDirection4.png)
+![](HostingImageStreamerasItems_images/StreamDirection5.png)
 
 ## ImageStreamerType
 

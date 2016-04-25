@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-The TileLayout can be created through designer or C#. The following sections describe this.
+The TileLayout can be created through designer or code. The following sections describe this.
 
 ## Through Designer
 
@@ -50,7 +50,6 @@ To create TileLayout through designer.
 
 
 ## Through Code
-
 
 1) To create the TileLayout through C#, include the following namespace to the directives list.
 
@@ -255,3 +254,5 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Getting-Started_images/Getting-Started_img7.jpeg)

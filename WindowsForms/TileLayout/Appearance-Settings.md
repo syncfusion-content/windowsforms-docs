@@ -35,6 +35,7 @@ Me.tileLayout1.SetParentFormFlat = True
 
 {% endtabs %}
 
+![](Appearance_images/ParentFormFlat.png)
 
 
 ## ShowGroupTitle
