@@ -407,7 +407,7 @@ The XP Menus Framework supports multiple patterns of UI Command Update mechanism
 
 * Supply-Push Approach
 
-In this approach, the state of the BarItem is changed as and when the corresponding application state changes. This is what the XP Menus framework expects you to do by default; it will not commence the UpdateUI event under any circumstances. 
+In this approach, the state of the BarItem is changed as and when the corresponding application state changes. This is what the XP Menus Framework expects you to do by default; it will not commence the UpdateUI event under any circumstances. 
 
 * Demand-Pull Approach
 

@@ -36,6 +36,13 @@ Me.tileLayout1.MainLayout.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignme
 
 {% endtabs %}
 
+
+![](Layout-Customization_images/NearAlignment.png)
+
+![](Layout-Customization_images/FarAlignment.png)
+
+![](Layout-Customization_images/CenterAlignment.png)
+
 ### HorzNearMargin
 
 It indicates the left margin between the client rectangle and layout rectangle
@@ -60,6 +67,8 @@ Me.tileLayout1.MainLayout.HorzNearMargin = 100
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Layout-Customization_images/HorNearMargin.png)
 
 ### HorzFarMargin
 
@@ -86,6 +95,8 @@ Me.tileLayout1.MainLayout.HorzFarMargin = 100
 
 {% endtabs %}
 
+![](Layout-Customization_images/HorFarMargin.png)
+
 ### TopMargin
 
 Indicates the Top margin between the client rectangle and layout rectangle
@@ -96,7 +107,7 @@ Indicates the Top margin between the client rectangle and layout rectangle
 
 //Gets or sets the Top margin between client rectangle and layout rectangle 
 
-this.tileLayout1.MainLayout.TopMargin = 30;
+this.tileLayout1.MainLayout.TopMargin = 20;
 
 {% endhighlight %}
 
@@ -105,12 +116,13 @@ this.tileLayout1.MainLayout.TopMargin = 30;
 
 ‘Gets or sets the Top margin between client rectangle and layout rectangle
 
-Me.tileLayout1.MainLayout.TopMargin = 30
+Me.tileLayout1.MainLayout.TopMargin = 20
  
 {% endhighlight %}
 
 {% endtabs %}
 
+![](Layout-Customization_images/TopMargin.png)
 
 ### BottomMargin
 
@@ -122,7 +134,7 @@ Indicates the Bottom margin between the client rectangle and layout rectangle
 
 //Gets or sets the Bottom margin between client rectangle and layout rectangle
 
-this.tileLayout1.MainLayout.BottomMargin = 10;
+this.tileLayout1.MainLayout.BottomMargin = 100;
 
 
 {% endhighlight %}
@@ -132,13 +144,14 @@ this.tileLayout1.MainLayout.BottomMargin = 10;
 
 ‘Gets or sets the Bottom margin between client rectangle and layout rectangle
 
-Me.tileLayout1.MainLayout.BottomMargin = 10
+Me.tileLayout1.MainLayout.BottomMargin = 100
 
  
 {% endhighlight %}
 
 {% endtabs %}
 
+![](Layout-Customization_images/BottomMargin.png)
 
 ### ReverseRows
 
@@ -165,5 +178,5 @@ Me.tileLayout1.MainLayout.ReverseRows = true
 
 {% endtabs %}
 
-
+![](Layout-Customization_images/ReverseRows.png)
 
