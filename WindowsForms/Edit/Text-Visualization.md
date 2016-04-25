@@ -2626,15 +2626,10 @@ The Auto Indentation characters can be specified by setting the Indent field to 
 
 {% endhighlight %}
 
-A sample which demonstrates Auto Indentation is available in the below sample installation path.
-
-
-
-_..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 #### Lexem Support for AutoIndent Block Mode
 
-In the Edit control, the EnableSmartInBlockIndent property ensures the AutoIndent Block mode with respect to the lexem’s config.ident. With this property, the Block mode will work like Smart mode for conditional statements.
+In the Edit control, the EnableSmartInBlockIndent property ensures the AutoIndent Block mode with respect to the lexem’s config.indent. With this property, the Block mode will work like Smart mode for conditional statements.
 
 When this property is enabled, the lines will be aligned to the position of the previous indented line. The lines will begin at the original start position if disabled.
 
