@@ -17,7 +17,7 @@ An XML file in QTP called Swfconfig is the configuration file located at (Ins
 
 
 
-1) Open the Syncfusion Essential QTP Configuration located at (Installed location of Essential QuickTest Professional)\Utilities\SwfConfigUtility\SwfConfigUtility.exe. Enter the QTP assemblies’ location in the QTP Assemblies Location textbox and the Essential Studio version with framework in the Product Version textbox. After entering the details, click Check & Configure. It creates the Swfconfig.xml file for that particular version. Refer to the following image.
+1) Open the Syncfusion Essential QTP Configuration located at (Installed location of Essential QuickTest Professional)\Utilities\SwfConfigUtility\SwfConfigUtility.exe. Enter the QTP assemblies’ location in the QTP Assemblies Location textbox and the Essential Studio version with Framework in the Product Version textbox. After entering the details, click Check & Configure. It creates the Swfconfig.xml file for that particular version. Refer to the following image.
    
    ![](Utilities_images/Utilities_img1.png)
    
@@ -33,7 +33,7 @@ An XML file in QTP called Swfconfig is the configuration file located at (Ins
 
 
 
-3) When your system already has a Swfconfig.xml file, then another dialog box appears asking to replace the existing Swfconfig.xml. Click Yes to replace the old Swfconfig.xml file with the current framework Swfconfig.xml file on your machine. When you want to keep both files in the same folder, click No.
+3) When your system already has a Swfconfig.xml file, then another dialog box appears asking to replace the existing Swfconfig.xml. Click Yes to replace the old Swfconfig.xml file with the current Framework Swfconfig.xml file on your machine. When you want to keep both files in the same folder, click No.
    
    ![](Utilities_images/Utilities_img3.png)
    
