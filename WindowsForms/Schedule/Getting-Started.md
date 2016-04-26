@@ -131,7 +131,7 @@ The following section explains in detail:
 
     ![](Getting-Started_images/Getting-Started_img11.jpeg)
 
-5.  Now add an existing file to this project, SimpleScheduleDataProvider.cs (or impleScheduleDataProvider.vb if you are using VB.NET). 
+5.  Now add an existing file to this project, SimpleScheduleDataProvider.cs (or SimpleScheduleDataProvider.vb if you are using VB.NET). 
 
     This file defines several classes that implement the interfaces that the ScheduleControl needs to manage the data associated with the appointments that will appear in the calendar. 
 
@@ -344,7 +344,7 @@ The Schedule Control does all its data access through interfaces. To support cus
 
 ### Base Classes
 
-ScheduleDataProvider Class: provides an empty implementation of the IscheduleDataProvider. The implementation is done through virtual methods. You can then derive this class and through its overrides, set up an IScheduleDataProvider. See the SimpleScheduleDataProvider class in the ScheduleSample sample.
+ScheduleDataProvider Class: provides an empty implementation of the IScheduleDataProvider. The implementation is done through virtual methods. You can then derive this class and through its overrides, set up an IScheduleDataProvider. See the SimpleScheduleDataProvider class in the ScheduleSample sample.
 
 ScheduleAppointmentList Class: provides an implementation of IScheduleAppointmentList and is essentially a wrapper class for an ArrayList that holds ScheduleAppointments
 
@@ -364,7 +364,7 @@ IScheduleAppointmentList Interface: serves as a collection of ISchedule objects.
 
 IScheduleAppointment Interface: defines individual schedule items.
 
-ILookUpObjectList Interface: serves as a collection of IlookUpObjects.
+ILookUpObjectList Interface: serves as a collection of ILookUpObjects.
 
 ILookUpObject Interface: enables Choice lists within the ScheduleControl, that are used to provide possible schedule item information (like location or a reminder), to have a ValueMember / DisplayMember associated with them, as well as a color that will be used in drop-downs showing these lists.
 
@@ -372,7 +372,7 @@ Value members are normally the values serialized to data stores.
 
 ### ScheduleData Base Classes
 
-The ScheduleControl gets its data through its DataSource property, an IScheduleDataProvider object. So, it is this IScheduleDataProvider interface (and several other associated interfaces) that gives you the ability and facility to provide data to the ScheduleControl. To simplify this process of providing data, Essential Schedule also exposes these interfaces as base classes that include some pre-determine droplist settings that allow you to use the ScheduleControl with less coding work. But, you do have the option of working directly through the interfaces to construct your own data provider for the ScheduleControl.
+The ScheduleControl gets its data through its DataSource property, an IScheduleDataProvider object. So, it is this IScheduleDataProvider interface (and several other associated interfaces) that gives you the ability and facility to provide data to the ScheduleControl. To simplify this process of providing data, Essential Schedule also exposes these interfaces as base classes that include some pre-determine drop list settings that allow you to use the ScheduleControl with less coding work. But, you do have the option of working directly through the interfaces to construct your own data provider for the ScheduleControl.
 
 The Essential Schedule library contains several base classes that implement the various data interfaces required by the ScheduleControl. These base classes use virtual methods which, you can override to provide a concrete data implementation. The classes in the SimpleScheduleDataProvider file that is shipped with the samples and used in the Tutorial section of this User Guide are derived from the ScheduleData base classes. Check out the shipped sample that uses the SimpleScheduleDataProvider as a data source for ScheduleControl.
 
@@ -498,7 +498,7 @@ ScheduleDataProvider has two functional roles.
 
 One is to implement IScheduleDataProvider in a virtual manner so that derived classes can provide concrete implementations through virtual overrides. The IScheduleDataProvider virtual methods exposed in ScheduleDataProvider have empty implementations, so you are required to derive this class to use it. 
 
-The second role is to provide the DropList data. For this second role, the ScheduleDataProvider does provide concrete implementations for the virtual methods it exposes. So, in your derived class, you would have populated droplists without doing further work, though you can choose to customize these droplists through virtual overrides. Here is a list of the stub methods exposed by ScheduleDataProvider in its first role.
+The second role is to provide the DropList data. For this second role, the ScheduleDataProvider does provide concrete implementations for the virtual methods it exposes. So, in your derived class, you would have populated drop lists without doing further work, though you can choose to customize these drop lists through virtual overrides. Here is a list of the stub methods exposed by ScheduleDataProvider in its first role.
 
 {% highlight c# %}
 
@@ -812,7 +812,7 @@ public virtual Color ColorMember
 
 {% endhighlight %}
 
-ListObjectList - The ListObjectList is a strongly-typed ArrayList that holds a collection of ListObjects. The class is derived from ArrayList and implements both ITypedList and IlistListObjectList. Here are the properties and methods exposed in this class.
+ListObjectList - The ListObjectList is a strongly-typed ArrayList that holds a collection of ListObjects. The class is derived from ArrayList and implements both ITypedList and IListObjectList. Here are the properties and methods exposed in this class.
 
 {% highlight c# %}
 
@@ -838,15 +838,15 @@ The ScheduleControl gets its data through its DataSource property, an IScheduleD
 
 So, it is this IScheduleDataProvider interface (and several other associated interfaces) that gives you the ability and facility to provide data to the ScheduleControl. 
 
-This section discusses the actual interfaces required to provide data to the ScheduleControl. If you need the access your own custom datastore, then you can create objects that implement these interfaces on which the ScheduleControl relies to provide data from your custom datastore.
+This section discusses the actual interfaces required to provide data to the ScheduleControl. If you need the access your own custom data store, then you can create objects that implement these interfaces on which the ScheduleControl relies to provide data from your custom data store.
 
- If you just need a local disk file datastore, then using the implementation provided by the classes in the SimpleScheduleDataProvider file that is shipped with the samples, may serve your purpose.
+ If you just need a local disk file data store, then using the implementation provided by the classes in the SimpleScheduleDataProvider file that is shipped with the samples, may serve your purpose.
 
  You also have the option of deriving the ScheduleData base classes to provide custom data to the ScheduleControl. But, implementing the required interfaces directly will give you the most flexibility.
 
 There are five interfaces that you can use to provide data for a ScheduleControl. There are two 'object' interfaces, IScheduleAppointment and ILookUpObject. These interfaces are primarily wrappers for a collection of properties.
 
-IScheduleAppointment wraps individual appointment data. ILookUpObject wraps the items you can see in droplists. 
+IScheduleAppointment wraps individual appointment data. ILookUpObject wraps the items you can see in drop lists. 
 
 There are two 'list' interfaces, IScheduleAppointmentList and ILookUpObjectList. As their names suggest, these two interfaces are essentially lists of IScheduleAppointments and ILookUpItems respectively. 
 
@@ -1168,7 +1168,7 @@ ILookUpObjectList GetOwners();
 
 Two of the five data interfaces work directly with the DropList data. Here are the two interfaces.
 
-ILookUpObject Interface - ILookUpObject is part of the data support to provide the DropList data. This interface defines the object that may appear in a droplist.
+ILookUpObject Interface - ILookUpObject is part of the data support to provide the DropList data. This interface defines the object that may appear in a drop list.
 
 {% highlight c# %}
 
@@ -1212,7 +1212,7 @@ Color ColorMember {get; set;}
 
 
 
-ILookUpObjectListInterface - ILookUpObjectList is the wrapper for this list of objects that may appear in a droplist.
+ILookUpObjectListInterface - ILookUpObjectList is the wrapper for this list of objects that may appear in a drop list.
 
 {% highlight c# %}
 
