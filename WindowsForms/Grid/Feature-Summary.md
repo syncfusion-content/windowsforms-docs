@@ -320,9 +320,9 @@ Drop-Down Lists</td><td>
 Displays a foreign key table in a drop-down.</td></tr>
 </table>
 
-## MS Office Simulation
+## Microsoft Office Simulation
 
-Essential Grid supports MS Office features like dynamic splitters and undo/redo. Following table lists the available features.
+Essential Grid supports Microsoft Office features like dynamic splitters and undo/redo. Following table lists the available features.
 
 
 
