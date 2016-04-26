@@ -62,7 +62,7 @@ Adds the specified control to the navigation panel underneath the navigation cal
 <tr>
 <td>
 AddSpanAppointment</td><td>
-Adds a multiday span appointment to a data provider.</td></tr>
+Adds a multi day span appointment to a data provider.</td></tr>
 <tr>
 <td>
 PerformNewItemClick</td><td>
