@@ -30,7 +30,7 @@ Some of the key features of the Schedule control are listed below:
 * Navigation Calendar is a GridControl-derived object that displays multiple calendars allowing you to select the dates displayed in the Schedule control. This calendar is docked at the top of the NavigationPanel. The number of calendars displayed in the Navigation Calendar is determined by its client height. Enlarging the height of the Navigation Calendar will display more calendars. There is a Splitter docked under the Navigation Calendar to facilitate such sizing. 
 * Schedule Grid is a Grid control-derived object that displays the actual schedule content, i.e., the appointments for the various dates. The actual look of this Grid control is determined by the ScheduleViewType which is set by using the ScheduleControl.ScheduleType property. 
 
-You can have both timed and untimed (all-day) appointments using this Schedule control. The ScheduleControl is easily localized and can display customizable alerts.
+You can have both timed and without timed (all-day) appointments using this Schedule control. The ScheduleControl is easily localized and can display customizable alerts.
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the Schedule control. It is organized into the following sections:
 
