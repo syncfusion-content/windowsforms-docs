@@ -157,7 +157,7 @@ The following section explains in detail:
 
     Then set some properties to provide a filename, the ScheduleViewType for the initial display and the DataSource property for your ScheduleControl. 
 
-    Copy this code to your Form1.cs file. (If you are not using the 2.0 FrameWork, remove the partial keyword.)
+    Copy this code to your Form1.cs file. (If you are not using the 2.0 Framework, remove the partial keyword.)
 
     ~~~ cs
 
@@ -246,7 +246,7 @@ The following section explains in detail:
 
     ![](Getting-Started_images/Getting-Started_img19.jpeg)
 	
-14. Next modify our Form_Load code to conditionally reload the saved data if the file is present on the disk. Here is the new code. Copy this code to your Form1.cs file. Notice that you have added a "using" statement to reference the System.IO namespace in addition to the new code in the Form1_Load. (If you are not using the 2.0 FrameWork, remove the partial keyword)
+14. Next modify our Form_Load code to conditionally reload the saved data if the file is present on the disk. Here is the new code. Copy this code to your Form1.cs file. Notice that you have added a "using" statement to reference the System.IO namespace in addition to the new code in the Form1_Load. (If you are not using the 2.0 Framework, remove the partial keyword)
 
     ~~~ cs
 
@@ -358,7 +358,7 @@ The lists for the ShowTime and Label options on the Appointment forms use these 
 
 ### Interfaces
 
-IScheduleDataProvider Interface: provides the framework for providing schedule item data to the ScheduleControl.
+IScheduleDataProvider Interface: provides the Framework for providing schedule item data to the ScheduleControl.
 
 IScheduleAppointmentList Interface: serves as a collection of ISchedule objects.
 
