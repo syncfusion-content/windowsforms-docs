@@ -125,17 +125,17 @@ Resgen Text_file.txt Resource_File.resources
 al /t:lib /culture:de-DE /out:Syncfusion.Grid.Windows.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed:Syncfusion.Grid.Windows.Localization.SR.de-DE.resources
 {% endhighlight %}
 
-6.The version specified for these DLLs in the `al` command should be based on the `SatelliteContractVersionAttribute` setting in the product AssemblyInfo. This also means that when a new version of the product is released (with a newer assembly version), then it is necessary to recreate (adding new resources, when available or necessary), and recompile the resource DLLs with a new version (in case the SatelliteContractVersionAttribute has changed).
+6.The version specified for these assemblies in the `al` command should be based on the `SatelliteContractVersionAttribute` setting in the product AssemblyInfo. This also means that when a new version of the product is released (with a newer assembly version), then it is necessary to recreate (adding new resources, when available or necessary), and recompile the resource assemblies with a new version (in case the SatelliteContractVersionAttribute has changed).
 
 7.On successful execution, an assembly file named Syncfusion.Grid.Windows.resources.dll is created.
 
-8.Finally, mark this satellite DLL for verification skipping (since it is not signed with the same strong-name as the product assembly). To do this, enter the following code in the Visual Studio command prompt
+8.Finally, mark this satellite assembly for verification skipping (since it is not signed with the same strong-name as the product assembly). To do this, enter the following code in the Visual Studio command prompt
 
 {% highlight text %}
 sn –Vr Syncfusion.Grid.Windows.resources.dll.
 {% endhighlight %}
 
-9.Drop this DLL into an appropriate sub-directory under the required .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. It has to be replaced in the de-DE sub-directory in case this DLL contains resources from the German (Germany) culture.
+9.Drop this assembly into an appropriate sub-directory under the required .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. It has to be replaced in the de-DE sub-directory in case this assembly contains resources from the German (Germany) culture.
 
 10.Finally, make sure the application fetches the German resources during run time. To change the UI culture of the current thread, add this code in the Forms constructor before the InitializeComponent().
 
