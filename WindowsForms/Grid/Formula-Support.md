@@ -1804,7 +1804,7 @@ FILTERXML(xml, xpath)
 * **xpath** is a string in standard XPath format.
 
 #### Remarks
-`#VALUE!` - occurs if xml is not valid or if xml contains a namespace with a prefix that is not valid.
+`#VALUE!` - occurs if XML is not valid or if XML contains a namespace with a prefix that is not valid.
 
 ### FDIST
 Returns the F probability distribution.
@@ -4621,10 +4621,10 @@ VLOOKUP(lookup_value, table_array, col_index_num, range_lookup)
 WEBSERVICE(url)
 
 #### Where:
-* url is the url of the web service.
+* URL is the URL of the web service.
 
 #### Remarks:
-`#VALUE!` - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
+`#VALUE!` - occurs if URL is unable to return the data, if URL result in a string that is not valid and if URL is a string that contains more than the 2048 characters.
 
 ### WEEKDAY
 Returns the day of the week corresponding to a date. The day is given as an integer, ranging from 1 (Sunday) to 7 (Saturday) by default.
