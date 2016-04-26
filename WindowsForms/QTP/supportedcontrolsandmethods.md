@@ -744,7 +744,7 @@ Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-Set(string chmState)</td><td>
+Set(string chkState)</td><td>
 The CheckState of the CheckBoxAdv.</td></tr>
 <tr>
 <td colspan = "2">
@@ -1244,7 +1244,7 @@ Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-Set(string chmState)</td><td>
+Set(string chkState)</td><td>
 Sets the CheckState of the CheckBox in the DateTimeAdv.</td></tr>
 <tr>
 <td>
