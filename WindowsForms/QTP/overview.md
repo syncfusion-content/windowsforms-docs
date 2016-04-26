@@ -98,7 +98,7 @@ Testing Environments</th><td>
 <tr>
 <th>
 .NET Framework </th><td>
-.Net Framework version 2.0, 3.5, 4.0, 4.5 or 4.5.1</td></tr>
+.NET Framework version 2.0, 3.5, 4.0, 4.5 or 4.5.1</td></tr>
 <tr>
 <th>
 Other Requirements</th><td>
