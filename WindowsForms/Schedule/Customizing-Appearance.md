@@ -56,7 +56,7 @@ DisplayItemFormat</th></tr>
 <tr>
 <td>
 AllDayItemFormat</td><td>
-Gets or sets the display format of an allday item.</td></tr>
+Gets or sets the display format of an all day item.</td></tr>
 <tr>
 <td>
 DateFormat</td><td>
@@ -80,23 +80,23 @@ Specifies the display format of the header in a day view.</td></tr>
 <tr>
 <td>
 SpanItemFormatLeftText</td><td>
-Specifies the display format of text displayed on the interior left side of a multiday span.</td></tr>
+Specifies the display format of text displayed on the interior left side of a multi day span.</td></tr>
 <tr>
 <td>
 SpanItemFormatMiddleText</td><td>
-Specifies the display format of text displayed in the middle of a multiday span.</td></tr>
+Specifies the display format of text displayed in the middle of a multi day span.</td></tr>
 <tr>
 <td>
 SpanItemFormatRightText</td><td>
-Specifies the display format of text displayed on the interior right side of a multiday span.</td></tr>
+Specifies the display format of text displayed on the interior right side of a multi day span.</td></tr>
 <tr>
 <td>
 SpanItemFormatTerminalLeftText</td><td>
-Specifies the display format of text displayed on the open left side of a multiday span.</td></tr>
+Specifies the display format of text displayed on the open left side of a multi day span.</td></tr>
 <tr>
 <td>
 SpanItemFormatTerminalRightText</td><td>
-Specifies the display format of text displayed on the open right side of a multiday span.</td></tr>
+Specifies the display format of text displayed on the open right side of a multi day span.</td></tr>
 <tr>
 <td>
 TimeFormat</td><td>
@@ -119,7 +119,7 @@ Header</th></tr>
 <tr>
 <td>
 AllDayBackColor</td><td>
-Gets or sets the back color of the allday row in the calendar.</td></tr>
+Gets or sets the back color of the all day row in the calendar.</td></tr>
 <tr>
 <td>
 MonthWeekHeaderBackColor</td><td>
@@ -251,7 +251,7 @@ Gets or sets the DayOfWeek that is shown in the left-most column of the month ca
 <tr>
 <td>
 MonthShowFullWeek</td><td>
-Specifies whether the month view shows 7 columns or 6 columns with saturday or sunday stacked.</td></tr>
+Specifies whether the month view shows 7 columns or 6 columns with Saturday or Sunday stacked.</td></tr>
 <tr>
 <td>
 ScheduleAppointmentTipFormat </td><td>

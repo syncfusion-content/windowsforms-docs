@@ -561,7 +561,7 @@ Sorts the column.</td></tr>
 <tr>
 <td>
 SelectRecords(object row, object count)</td><td>
-Selects mutiple records for the GridGroupingControl.</td></tr>
+Selects multiple records for the GridGroupingControl.</td></tr>
 <tr>
 <td>
 ScrollToColumn(string tablename, object col)</td><td>
@@ -572,7 +572,7 @@ ScrollToRow(int row)</td><td>
 The grid will scroll to the given row.</td></tr>
 <tr>
 <td>
- AddNewRow(string objn)</td><td>
+ AddNewRow(string obj)</td><td>
 A new row will be added.</td></tr>
 <tr>
 <td>
@@ -664,7 +664,7 @@ The following controls are supported by Essential Tools.
 * GroupBar
 * GroupView
 * MultiColumnComboBox
-* Popupmenu
+* Popup menu
 * ProgressBarAdv
 * RadioButtonAdv
 * RibbonControlAdv
@@ -1083,7 +1083,7 @@ Restore()</td><td>
 Restores the parent form of RibbonControlAdv.</td></tr>
 <tr>
 <td>
-SelecTab(object tabItem)</td><td>
+SelectTab(object tabItem)</td><td>
 Selects the Ribbon Tab item.</td></tr>
 <tr>
 <td>
@@ -1150,7 +1150,7 @@ Selects the tab page in the TabPageAdv control.</td></tr>
 <tr>
 <td>
 RightClick(object tab)</td><td>
-Performs a rightclick on the tab page in the TabPageAdv control.</td></tr>
+Performs a right click on the tab page in the TabPageAdv control.</td></tr>
 <tr>
 <td>
 ClosePage(object tab)</td><td>
@@ -1293,7 +1293,7 @@ Perform the drag and drop operation for the nodes in the SelectedNodes list, tha
 <tr>
 <td>
 AddToSelectedNodeList(string fullPath)</td><td>
-Adds the specifed node into selected node list during Drag over event.</td></tr>
+Adds the specified node into selected node list during Drag over event.</td></tr>
 <tr>
 <td>
 DoubleClick(string fullPath)</td><td>

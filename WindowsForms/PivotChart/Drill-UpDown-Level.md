@@ -9,7 +9,7 @@ documentation: ug
 
 # Drill Up/Down Level
 
-Through expanders, you can drill down to the next level of hierarchy and drill up to the previous level. The PivotChart has inbuilt support to drill up and down the PivotSeries population. This behavior can be achieved by enabling the AllowDrillDown property.
+Through expanders, you can drill down to the next level of hierarchy and drill up to the previous level. The PivotChart has built-in support to drill up and down the PivotSeries population. This behavior can be achieved by enabling the AllowDrillDown property.
 
 {% highlight c# %}
 

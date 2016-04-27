@@ -122,7 +122,7 @@ Essential Schedule Windows places the following control into your Visual Studio 
 
 * ScheduleControl
 
-### Dll List
+### Assembly List
 
 While deploying an application that references a Syncfusion Essential Schedule Windows assembly, the following dependencies must be included in the distribution.
 

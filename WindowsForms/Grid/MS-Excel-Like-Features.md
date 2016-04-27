@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Excel-Like Features
-The GridControl provides some of the functionalities of MS Excel as the features. This section will walk through the implementation of these features. 
+The GridControl provides some of the functionalities of Microsoft Excel as the features. This section will walk through the implementation of these features. 
 
 ## Excel Like Selection Frame
 To enable excel like selection frame in the grid, the [ExcelLikeSelectionFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridDataBoundGrid~ExcelLikeSelectionFrame.html) property can be used. This enables the selected cells in a frame to be highlighted. 
@@ -137,7 +137,7 @@ For more details about the Excel-Like comment tip, refer the following dashboard
 **&lt;Install Location&gt; \Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\ToolTip\Cell Comment Tip Demo**
 
 ## Splitter
-Splitter is used to display the multiple view of the grid. This MS Excel-like feature enables the user to view more than one copy of a worksheet and scroll through each pane of worksheet independently. The panes are working simultaneously, i.e., the changes made in one pane are reflected in the other. 
+Splitter is used to display the multiple view of the grid. This Microsoft Excel-like feature enables the user to view more than one copy of a worksheet and scroll through each pane of worksheet independently. The panes are working simultaneously, i.e., the changes made in one pane are reflected in the other. 
 
 The splitter can be scrolled by placing the mouse pointer over it, holding down the left mouse button and dragging it to the required position. It can be split horizontally and vertically.
 
@@ -182,7 +182,7 @@ End Sub
 ![](Excel-Like-Features_images/Excel-Like-Features_img6.jpeg)
 
 ## Freeze pane
-The GridControl supports MS Excel-like Freeze Pane feature. In a large worksheet, it is often required that column or row labels remain in view. This feature enables to freeze either columns or rows in the grid, so that they may remain visible while scrolling. The number of rows to be frozen can be specified by using [Model.Rows.FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property and the number of columns to be frozen can be specified by using [Model.Cols.FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property.
+The GridControl supports Microsoft Excel-like Freeze Pane feature. In a large worksheet, it is often required that column or row labels remain in view. This feature enables to freeze either columns or rows in the grid, so that they may remain visible while scrolling. The number of rows to be frozen can be specified by using [Model.Rows.FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property and the number of columns to be frozen can be specified by using [Model.Cols.FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property.
 
 {% tabs %}
 {% highlight c# %}
