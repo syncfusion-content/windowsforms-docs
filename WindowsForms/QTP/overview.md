@@ -57,7 +57,7 @@ This section covers information on licensing and patches. It also covers the uni
 
 ### Assembly information
 
-This section provides details about the assembly name, type name, and control type in table format. This table is used to write the Swfconfig file.
+This section provides details about the assembly name, type name, and control type in table format. This table is used to write the swfconfig file.
 
 
 
