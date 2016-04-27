@@ -29,7 +29,7 @@ REFERENCE LINKS</th></tr>
 <tr>
 <td>
 MoveFirst()</td><td>
-dist Method is used to navigate to td first record.</td><td>
+this Method is used to navigate to the first record.</td><td>
 N/A </td><td>
 method</td><td>
 void </td><td>
@@ -37,7 +37,7 @@ N/A. </td></tr>
 <tr>
 <td>
 MoveLast()</td><td>
-dist method is used to navigate to td last record.</td><td>
+this method is used to navigate to the last record.</td><td>
 N/A</td><td>
 method</td><td>
 void</td><td>
@@ -45,7 +45,7 @@ N/A</td></tr>
 <tr>
 <td>
 MoveNext()</td><td>
-dist method is used to navigate to td next record.</td><td>
+this method is used to navigate to the next record.</td><td>
 N/A</td><td>
 method</td><td>
 void</td><td>
@@ -53,7 +53,7 @@ N/A</td></tr>
 <tr>
 <td>
 MovePrevious()</td><td>
-dist method is used to navigate to td previous record.</td><td>
+this method is used to navigate to the previous record.</td><td>
 N/A </td><td>
 method</td><td>
 void</td><td>
