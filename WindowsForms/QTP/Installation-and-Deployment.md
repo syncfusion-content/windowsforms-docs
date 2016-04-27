@@ -15,7 +15,7 @@ This section provides information on install location, samples, licensing, and u
 
 ## Installation and Configuration
 
-This topic explains the installation process for Syncfusion Essential QuickTest Professional and the configuration details about the Swfconfig file.
+This topic explains the installation process for Syncfusion Essential QuickTest Professional and the configuration details about the swfconfig file.
 
 ### Installation
 
@@ -114,7 +114,7 @@ The following screen is displayed once the installation is completed.
 
 #### Configuration
 
-An XML file in QTP called Swfconfig is the configuration file located at _(Installed location of Essential QuickTest Professional)Config\<version-2.0, 3.5, or 4.0>\Swfconfig_, that contains all the mapping information for QTP to recognize Syncfusion controls. In Swfconfig, the controls are mapped to their corresponding custom server libraries (Essential QuickTest Professional assemblies) by giving the fully qualified name of the assembly.
+An XML file in QTP called swfconfig is the configuration file located at _(Installed location of Essential QuickTest Professional)Config\<version-2.0, 3.5, or 4.0>\swfconfig_, that contains all the mapping information for QTP to recognize Syncfusion controls. In swfconfig, the controls are mapped to their corresponding custom server libraries (Essential QuickTest Professional assemblies) by giving the fully qualified name of the assembly.
 
 
 
@@ -128,11 +128,11 @@ An XML file can be configured in any one of two ways, automatically or manually.
 
 #### Automatic Configuration
 
-This section provides the details about the configuration of the Swfconfig file by using the SwfConfig Utility. Refer to the Utility section of this document.
+This section provides the details about the configuration of the swfconfig file by using the swfConfig Utility. Refer to the Utility section of this document.
 
 #### Manual Configuration
 
-This section provides details about the manual configuration of the Swfconfig file.
+This section provides details about the manual configuration of the swfconfig file.
 
 
 
@@ -146,9 +146,9 @@ _(Installed location of Essential QuickTest Professional)\Config_
 
 
 
-	N> You can find three folders, 2.0, 3.5 and 4.0 here. The folders, 2.0, 3.5 and 4.0 consist of Swfconfig files for .NET 2.0, .NET 3.5, and NET 4.0 frameworks respectively.
+	N> You can find three folders, 2.0, 3.5 and 4.0 here. The folders, 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5, and NET 4.0 frameworks respectively.
 
-2) Open the Swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The following code example maps the grid control to its corresponding assembly.
+2) Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The following code example maps the grid control to its corresponding assembly.
 
 
 
@@ -246,17 +246,17 @@ _(Installed location of Essential QuickTest Professional)\Config_
       <CC <?xml version="1.0" encoding="UTF-8" ?>
    
 
-5) Open the Swfconfig.xml file located under the following location:
+5) Open the swfconfig.xml file located under the following location:
 
    <QuickTest Professional Installation Path>\dat\SwfConfig.xml
 
 
 
-6) Paste the copied segment under the <?xml> tag in Swfconfig.xml. 
+6) Paste the copied segment under the <?xml> tag in swfconfig.xml. 
 
 
 
-   N> The Swfconfig.xml file appears as follows:
+   N> The swfconfig.xml file appears as follows:
 
    XML
 
@@ -305,11 +305,11 @@ _(Installed location of Essential QuickTest Professional)\Config_
   
    N> Ensure that the element <DllName> contains the correct path to the corresponding assembly.
 
-7) Save the Swfconfig.xml file. 
+7) Save the swfconfig.xml file. 
 
 
 
-8) Restart QTP once the Swfconfig.xml file is saved to refresh the mappings to the required controls, before starting the test.
+8) Restart QTP once the swfconfig.xml file is saved to refresh the mappings to the required controls, before starting the test.
 
 
 
