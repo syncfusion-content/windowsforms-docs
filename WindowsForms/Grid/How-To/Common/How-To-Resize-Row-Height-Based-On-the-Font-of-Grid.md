@@ -16,100 +16,60 @@ You can resize the rows individually using AllowResizingIndividualRows() method 
 The following code illustrates resizing rows based on the grid cell content: 
 
 {% highlight c# %}
-
 public Form1()
-
-     {
-
-//Customizes the row height for individual row 
-
- GridEngineFactory.Factory = new Syncfusion.GridHelperClasses.AllowResizingIndividualRows();
-
-      InitializeComponent();     
-
-     }
+{
+    //Used to Customizes the row height for individual row 
+    GridEngineFactory.Factory = new Syncfusion.GridHelperClasses.AllowResizingIndividualRows();
+    InitializeComponent();
+}
 
 Size stringSize;
 
-        void grid_ResizingRows(object sender, Syncfusion.Windows.Forms.Grid.GridResizingRowsEventArgs e)
+void TableControl_ResizingRows(object sender, GridResizingRowsEventArgs e)
+{
+    //Resize the row on double click on the row header resizing cursor
+    if (e.Reason == GridResizeCellsReason.DoubleClick)
+    {
+        Graphics grapics = CreateGraphics();
+        long maxHeight = 0;
 
+        // Get the style info of the particular cell value
+        GridStyleInfo style = this.gridGroupingControl1.TableControl.GetViewStyleInfo(e.Rows.Bottom, 2);
+        stringSize = grapics.MeasureString(style.Text, style.GdipFont, this.gridGroupingControl1.TableModel.ColWidths[2]).ToSize();
+        if (maxHeight < stringSize.Height)
         {
-
-
-
-            if (e.Reason == GridResizeCellsReason.DoubleClick)
-
-            {
-
-                Graphics grapics = CreateGraphics();
-
-                long maxHeight = 0;
-
-                GridStyleInfo style = this.grid.GetViewStyleInfo(e.Rows.Bottom, 1);
-
-                stringSize = grapics.MeasureString(style.Text, style.GdipFont,this.grid.Model.ColWidths[1]).ToSize();  
-
-                if (maxHeight < stringSize.Height)
-
-                {
-
-                    maxHeight = (long)stringSize.Height;
-
-                }
-
-                this.grid.Model.RowHeights[e.Rows.Bottom] = (int)maxHeight;
-
-                e.Cancel = true;           
-
-          }            
-
+            maxHeight = (long)stringSize.Height;
         }
-
-
+        this.gridGroupingControl1.TableModel.RowHeights[e.Rows.Bottom] = (int)maxHeight;
+        e.Cancel = true;
+    }            
+}
 {% endhighlight %}
 
 {% highlight vbnet %}
-
 Public Sub New()
-
-            GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndividualRows()
-
-            InitializeComponent()           
-
+  'Used to Customizes the row height for individual row 
+  GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndividualRows()
+  InitializeComponent()
 End Sub
 
+Private stringSize As Size
 
-
-
-
-Private Sub grid_ResizingRows(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridResizingRowsEventArgs)
-
-            If e.Reason = GridResizeCellsReason.DoubleClick Then
-
-                Dim grapics As Graphics = CreateGraphics()
-
-                Dim maxHeight As Long = 0
-
-                Dim style As GridStyleInfo = Me.grid.GetViewStyleInfo(e.Rows.Bottom, 1)
-
-                stringSize = grapics.MeasureString(style.Text, style.GdipFont, Me.grid.Model.ColWidths(1)).ToSize()
-
-                If maxHeight < stringSize.Height Then
-
-                    maxHeight = CLng(stringSize.Height)
-
-                End If
-
-                Me.grid.Model.RowHeights(e.Rows.Bottom) = CInt(maxHeight)
-
-                e.Cancel = True
-
-            End If
-
-        End Sub
-
-
-
-
+Private Sub TableControl_ResizingRows(ByVal sender As Object, ByVal e As GridResizingRowsEventArgs)
+  'Resize the row on double click on the row header resizing cursor
+  If e.Reason = GridResizeCellsReason.DoubleClick Then
+	Dim grapics As Graphics = CreateGraphics()
+	Dim maxHeight As Long = 0
+    
+	' Get the style info of the particular cell value
+	Dim style As GridStyleInfo = Me.gridGroupingControl1.TableControl.GetViewStyleInfo(e.Rows.Bottom, 2)
+	stringSize = grapics.MeasureString(style.Text, style.GdipFont, Me.gridGroupingControl1.TableModel.ColWidths(2)).ToSize()
+	If maxHeight < stringSize.Height Then
+		maxHeight = CLng(Fix(stringSize.Height))
+	End If
+	Me.gridGroupingControl1.TableModel.RowHeights(e.Rows.Bottom) = CInt(Fix(maxHeight))
+	e.Cancel = True
+  End If
+End Sub
 {% endhighlight %}
 
