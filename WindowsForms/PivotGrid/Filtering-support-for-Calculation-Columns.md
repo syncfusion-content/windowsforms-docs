@@ -62,7 +62,7 @@ Description</th></tr>
 <td>
 ClearFilters</td><td>
 void ClearFilters()</td><td>
-This method clears thecurrent filtered state andredraws the pivot display.</td></tr>
+This method clears the current filtered state and redraws the pivot display.</td></tr>
 <tr>
 <td>
 </td><td>
@@ -87,7 +87,7 @@ Specifies whether the PivotGridControl allows you to set filter on Calculatio
 <tr>
 <td>
 RowPivotOnly</td><td>
-Specifies whether the PivotGridControl is used to pivot only rows or both rows and columns. The default value is set to allow pivoting both rows and columns.Set this property to ‘true’  to make the following changes:1. ShowGroupBar property is automatically set to ‘false’.2. The TopLeft covered cell that normally appears in a PivotGrid is replaced with individual header cells that have the same appearance as that of Calculationheader cells.</td></tr>
+Specifies whether the PivotGridControl is used to pivot only rows or both rows and columns. The default value is set to allow pivoting both rows and columns.Set this property to ‘true’  to make the following changes:1. ShowGroupBar property is automatically set to ‘false’.2. The TopLeft covered cell that normally appears in a PivotGrid is replaced with individual header cells that have the same appearance as that of Calculation header cells.</td></tr>
 </table>
 
 

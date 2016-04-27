@@ -15,11 +15,11 @@ This section provides information on install location, samples, licensing, and u
 
 ## Installation and Configuration
 
-This topic explains the installation process for Syncfusion Essential QuickTest professional and the configuration details about the swfconfig file.
+This topic explains the installation process for Syncfusion Essential QuickTest Professional and the configuration details about the swfconfig file.
 
 ### Installation
 
-This section provides specifics on installation of Syncfusion Essential QuickTest professional.
+This section provides specifics on installation of Syncfusion Essential QuickTest Professional.
 
 To install Essential Test Studio:
 
@@ -114,7 +114,7 @@ The following screen is displayed once the installation is completed.
 
 #### Configuration
 
-An XML file in QTP called swfconfig is the configuration file located at _(Installed location of Essential QuickTest Professional)Config\<version-2.0, 3.5, or 4.0>\swfconfig_, that contains all the mapping information for QTP to recognize Syncfusion controls. In swfconfig, the controls are mapped to their corresponding custom server libraries (Essential QuickTest Professional DLLs) by giving the fully qualified name of the DLL.
+An XML file in QTP called swfconfig is the configuration file located at _(Installed location of Essential QuickTest Professional)Config\<version-2.0, 3.5, or 4.0>\swfconfig_, that contains all the mapping information for QTP to recognize Syncfusion controls. In swfconfig, the controls are mapped to their corresponding custom server libraries (Essential QuickTest Professional assemblies) by giving the fully qualified name of the assembly.
 
 
 
@@ -128,7 +128,7 @@ An XML file can be configured in any one of two ways, automatically or manually.
 
 #### Automatic Configuration
 
-This section provides the details about the configuration of the swfconfig file by using the SwfConfigUtility. Refer to the Utility section of this document.
+This section provides the details about the configuration of the swfconfig file by using the swfConfig Utility. Refer to the Utility section of this document.
 
 #### Manual Configuration
 
@@ -148,11 +148,11 @@ _(Installed location of Essential QuickTest Professional)\Config_
 
 	N> You can find three folders, 2.0, 3.5 and 4.0 here. The folders, 2.0, 3.5 and 4.0 consist of swfconfig files for .NET 2.0, .NET 3.5, and NET 4.0 frameworks respectively.
 
-2) Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The following code example maps the grid control to its corresponding DLL.
+2) Open the swfconfig file by double-clicking it. You can view the mapping for all the supported controls here. The following code example maps the grid control to its corresponding assembly.
 
 
 
-   xml
+   XML
 
 
 
@@ -190,15 +190,15 @@ _(Installed location of Essential QuickTest Professional)\Config_
 
    
 
-   N> In the preceding code, the fully qualified name of the DLL given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:_
+   N> In the preceding code, the fully qualified name of the assembly given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:_
    
    > C:\Program Files\Syncfusion\Essential QuickTest Professional\<Version number>\
 
- When you have installed the Essential QuickTest Professional in any other path, you need to give the correct path of the DLL in all the <DllName> tag. For example, when Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
+ When you have installed the Essential QuickTest Professional in any other path, you need to give the correct path of the assembly in all the <DllName> tag. For example, when Essential QuickTest Professional is located in D:\Essential QuickTest Professional\<version number>, then the code should be as follows:
 
 
 
-   xml
+   XML
 
 
 
@@ -241,24 +241,24 @@ _(Installed location of Essential QuickTest Professional)\Config_
 
    N> While selecting the code for copying, exclude the following lines of code.
 
-   xml
+   XML
  
       <CC <?xml version="1.0" encoding="UTF-8" ?>
    
 
-5) Open the SwfConfig.xml file located under the following location:
+5) Open the swfconfig.xml file located under the following location:
 
    <QuickTest Professional Installation Path>\dat\SwfConfig.xml
 
 
 
-6) Paste the copied segment under the <?xml> tag in SwfConfig.xml. 
+6) Paste the copied segment under the <?xml> tag in swfconfig.xml. 
 
 
 
-   N> The SwfConfig.xml file appears as follows:
+   N> The swfconfig.xml file appears as follows:
 
-   xml
+   XML
 
 
 
@@ -303,13 +303,13 @@ _(Installed location of Essential QuickTest Professional)\Config_
 		</Controls>
 
   
-   N> Ensure that the element <DllName> contains the correct path to the corresponding DLL.
+   N> Ensure that the element <DllName> contains the correct path to the corresponding assembly.
 
-7) Save the SwfConfig.xml file. 
+7) Save the swfconfig.xml file. 
 
 
 
-8) Restart QTP once the SwfConfig.xml file is saved to refresh the mappings to the required controls, before starting the test.
+8) Restart QTP once the swfconfig.xml file is saved to refresh the mappings to the required controls, before starting the test.
 
 
 

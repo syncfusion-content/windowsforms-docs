@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Exporting
-The columns and rows of the grid can be exported to the Excel, Pdf and word documents. This section will explain about the properties, methods and events available for exporting the GridControl.
+The columns and rows of the grid can be exported to the Excel, pdf and word documents. This section will explain about the properties, methods and events available for exporting the GridControl.
 
 ## Excel Export
 The GridControl has in-built support to export the contents of the GridControl to Excel. The class [GridExcelConverterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support for exporting the GridControl to Excel. 

@@ -29,33 +29,33 @@ REFERENCE LINKS</th></tr>
 <tr>
 <td>
 MoveFirst()</td><td>
-tdis Metdod is used to navigate to tde first record.</td><td>
+this Method is used to navigate to the first record.</td><td>
 N/A </td><td>
-metdod</td><td>
+method</td><td>
 void </td><td>
 N/A. </td></tr>
 <tr>
 <td>
 MoveLast()</td><td>
-tdis metdod is used to navigate to tde last record.</td><td>
+this method is used to navigate to the last record.</td><td>
 N/A</td><td>
-metdod</td><td>
+method</td><td>
 void</td><td>
 N/A</td></tr>
 <tr>
 <td>
 MoveNext()</td><td>
-tdis metdod is used to navigate to tde next record.</td><td>
+this method is used to navigate to the next record.</td><td>
 N/A</td><td>
-metdod</td><td>
+method</td><td>
 void</td><td>
 N/A</td></tr>
 <tr>
 <td>
 MovePrevious()</td><td>
-tdis metdod is used to navigate to tde previous record.</td><td>
+this method is used to navigate to the previous record.</td><td>
 N/A </td><td>
-metdod</td><td>
+method</td><td>
 void</td><td>
 N/A</td></tr>
 </table>

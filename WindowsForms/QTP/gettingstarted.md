@@ -111,9 +111,9 @@ This creates a new test. Alternatively, you can click the Test tab in the main p
 12) Perform required valid user-action in the application. 
 
 
-    N> Whenever you perform any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding DLL.
+    N> Whenever you perform any action involving the Syncfusion control used in the application, the SwfConfig file maps the control to the corresponding assembly.
 
-    The DLL renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed.
+    The assembly renders the correct method names of the Syncfusion namespace that is called respective to the user-actions performed.
     These method names are then recorded and displayed in the screen behind the running application as shown here.
 
 

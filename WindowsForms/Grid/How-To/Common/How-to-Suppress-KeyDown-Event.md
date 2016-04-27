@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Suppress KeyDown Event
 
-To suppress the TablecontrolCurrentCellKeyDown event, enable the SuppressKeyPress property in this event.  To get the Keys data, override the ProcessCmdKey() method. 
+To suppress the TableControlCurrentCellKeyDown event, enable the SuppressKeyPress property in this event.  To get the Keys data, override the ProcessCmdKey() method. 
 
 1. Suppress the KeyDown event as given in the following code:
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Creating Grid Record Navigation Control
 
-This section will provide step-by-step procedure to create Grid Record Navigation control through designer and through programmatical approach in.NET application.
+This section will provide step-by-step procedure to create Grid Record Navigation control through designer and through programmatically approach in.NET application.
 
 ## Through Designer
 

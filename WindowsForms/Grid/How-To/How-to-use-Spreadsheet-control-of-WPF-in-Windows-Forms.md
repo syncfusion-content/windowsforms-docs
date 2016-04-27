@@ -9,7 +9,7 @@ documentation: ug
 
 # How to use Spreadsheet control of WPF in Windows Forms?
 
-You can host that WPF component in windows forms through ElementHost container. This support is provided by Microsoft for hosting WPF controls in windows forms application. Refer to the following code and sample for more information
+You can host that WPF component in Windows Forms through ElementHost container. This support is provided by Microsoft for hosting WPF controls in Windows Forms application. Refer to the following code and sample for more information
 
 {% highlight c# %}
 
