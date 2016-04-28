@@ -265,7 +265,7 @@ End Sub
 
 ### Drag and Drop for merged cells
 
-Drag Drop can also be done for merged cells but while dropping the contents to another location, the merging of cells operation will be cancelled. To overcome this problem make use of the [QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#)  event and add the merged range in the selection property.
+Drag Drop can also be done for merged cells but while dropping the contents to another location, the merging of cells operation will be canceled. To overcome this problem make use of the [QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#)  event and add the merged range in the selection property.
 
 {% tabs %}
 {% highlight c# %}
