@@ -173,7 +173,7 @@ Me.gridControl.Properties.BackgroundColor = Color.PaleGreen
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img8.jpeg)
 
-To recover the background color to its default value, use the [ResetBackgroundcolor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~ResetBackgroundColor.html) method.
+To recover the background color to its default value, use the [ResetBackgroundColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~ResetBackgroundColor.html) method.
 
 {% tabs %}
 {% highlight c# %}
