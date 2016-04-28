@@ -345,7 +345,7 @@ The executable files for the samples are available under the following location:
 
 
 
-N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above mentioned location.
+N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the EXE from the above mentioned location.
 
 
 
