@@ -417,11 +417,11 @@ Retrieves the absolute RowIndex.</td></tr>
 <tr>
 <td>
 GetBackColor(int row)</td><td>
-Gets the backcolor of the record.</td></tr>
+Gets the BackColor of the record.</td></tr>
 <tr>
 <td>
 GetCellBackColor(object row, object col)</td><td>
-Gets the backcolor of the Cell.</td></tr>
+Gets the BackColor of the Cell.</td></tr>
 <tr>
 <td>
 GetCellData(object row, object col)</td><td>
@@ -444,7 +444,7 @@ GetColSortOrder(int col)</td><td>
 Returns the sort order of the sorted column (Ascending or Descending).</td></tr>
 <tr>
 <td>
-GetColumnName(string tablename, int colindex)</td><td>
+GetColumnName(string table name, int ColIndex)</td><td>
 For a given table name and column index, the column name in which an element resides can be obtained.</td></tr>
 <tr>
 <td>
@@ -484,7 +484,7 @@ GetTableNameByLevel(int level)</td><td>
 Gets the level of the table for the given table name.</td></tr>
 <tr>
 <td>
- GroupBy(string tablename,string column, string status)</td><td>
+ GroupBy(string table name,string column, string status)</td><td>
 Defines grouping and ungrouping of specified columns.</td></tr>
 <tr>
 <td>
@@ -496,7 +496,7 @@ Raises the MouseDown.</td></tr>
 Raises the MouseDown on the RowHeader.</td></tr>
 <tr>
 <td>
- MoveColumn(string tablename, object fromColumn, object count, object target)</td><td>
+ MoveColumn(string table name, object fromColumn, object count, object target)</td><td>
 Moves a range of columns.</td></tr>
 <tr>
 <td>
@@ -520,11 +520,11 @@ IsRecordExpanded(object record)</td><td>
 Determines whether the specified record is expanded.</td></tr>
 <tr>
 <td>
- ResizeColumn(string tablename, int fromColumn, int to, int width)</td><td>
+ ResizeColumn(string table name, int fromColumn, int to, int width)</td><td>
 Resizes the specified column.</td></tr>
 <tr>
 <td>
- ResizeRow(string tablename, int fromRow, int to, int height)</td><td>
+ ResizeRow(string table name, int fromRow, int to, int height)</td><td>
 Resizes the specified rows.</td></tr>
 <tr>
 <td>
@@ -556,7 +556,7 @@ Sets the location of current cell.</td></tr>
 Sets the scroll position.</td></tr>
 <tr>
 <td>
- SortColumn(string tablename,object col, string sortBehavior, bool cntrl)</td><td>
+ SortColumn(string table name,object col, string sortBehavior, bool cntrl)</td><td>
 Sorts the column.</td></tr>
 <tr>
 <td>
@@ -564,7 +564,7 @@ SelectRecords(object row, object count)</td><td>
 Selects multiple records for the GridGroupingControl.</td></tr>
 <tr>
 <td>
-ScrollToColumn(string tablename, object col)</td><td>
+ScrollToColumn(string table name, object col)</td><td>
 The grid will scroll to the given column.</td></tr>
 <tr>
 <td>
@@ -1591,7 +1591,7 @@ LegendClick(int x, int y)</td><td>
 The region on the legend to be clicked.</td></tr>
 <tr>
 <td>
-SetItemCheckState(string itemtext, string checkstate)</td><td>
+SetItemCheckState(string item text, string check state)</td><td>
 Setting the legend item check box.</td></tr>
 <tr>
 <td>
