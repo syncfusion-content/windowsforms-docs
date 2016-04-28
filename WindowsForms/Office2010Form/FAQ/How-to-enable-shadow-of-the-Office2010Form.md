@@ -7,7 +7,7 @@ control: Office2010 Form
 documentation: ug
 ---
 
-# Shadow of the Office2010Form
+# How to enable shadow of the Office2010Form?
 
 Shadow of the Office2010Form can be enabled or disabled using the `DropShadow` property.
 
