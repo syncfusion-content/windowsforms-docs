@@ -104,7 +104,7 @@ Help Button property is used to show the `HelpButton` in the caption box of the 
 
 ![](Caption-Settings_images/HelpButton.png)
 
-# Disabling Office2010Style
+## Disabling Office2010Style
 
 Office2010 look and feel can be disabled using `DisableOffice2010Style` property.
 
