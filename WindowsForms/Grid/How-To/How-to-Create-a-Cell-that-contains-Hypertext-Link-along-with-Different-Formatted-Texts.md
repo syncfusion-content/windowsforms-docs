@@ -41,7 +41,7 @@ To create a cell that contains a hypertext link along with different formatted t
    {:.prettyprint}
 
 
-2. Set the CellType property to "InplaceRTB".
+2. Set the CellType property to "InPlaceRTB".
 
    ### Example
 
