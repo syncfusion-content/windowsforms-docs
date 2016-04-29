@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Overview of Syncfusion Essential Studio Windows Forms products
 description: Overview
@@ -117,7 +117,7 @@ In case you are unable to find the information that you are looking for in the s
 			LAYOUT<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/office2007form/creating-office2007form">Office2007Form</a><br/><br/>
+			<a href="/windowsforms/office2007form/overview">Office2010Form</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -125,7 +125,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/office2010form/creating-office2010-form">Office2010Form</a><br/><br/>
+			<a href="/windowsforms/office2010form/overview">Office2010Form</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
