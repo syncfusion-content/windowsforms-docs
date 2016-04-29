@@ -129,7 +129,7 @@ In the Quick Access Toolbar, the labels present in a customized Quick Access Too
 
 N> The following changes must be done within a localizer class used for the application which is inherited from the ILocalizationProvider.
 
-Labels for cCstomized Quick Access Toolbar dialog box:
+Labels for Customized Quick Access Toolbar dialog box:
 
 {% tabs %}
 
@@ -173,37 +173,85 @@ Labels for Customize the Ribbon dialog box:
 
 {% highlight c# %}
 
-case ToolsResourceIdentifiers.CustomizeQuickAccessLabel:
+ class localization : ILocalizationProvider
+    {
+        public string GetLocalizedString(System.Globalization.CultureInfo culture, string stringname, object obj)
+        {
+            switch (stringname)
+            {  
 
-return "Customize QuickAccess Label text";
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonAdd:
+                    return "Customize Ribbon Dialog Add Button Text";
 
-case ToolsResourceIdentifiers.QuickAccessToolBarLabel:
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonRemove:
+                    return "Customize Ribbon Dialog Remove Button Text ";
 
-return "QuickAccess ToolBar Label text";
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonCancel:
+                    return "Customize Ribbon Dialog Cancel Button Text";
 
-case ToolsResourceIdentifiers.CustomizationLabel:
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonOk:
+                    return "Customize Ribbon Dialog Ok Button Text";
 
-return "Customization Label text";
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonReset:
+                    return "Customize Ribbon Dialog Reset Button Text";               
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogLable:
+                    return "Customize Ribbon Dialog Lable Text";
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogChooseCommands:
+                    return "Customize Ribbon Dialog Choose Commands Text ";
+               
+
+                default:
+                    return string.Empty;
+
+            }
+        }
+    }
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-case ToolsResourceIdentifiers.CustomizeQuickAccessLabel:
+Class localization Implements ILocalizationProvider
 
-return "Customize QuickAccess Label text"
+	Public Function GetLocalizedString(culture As System.Globalization.CultureInfo, stringname As String, obj As Object) As String
 
-case ToolsResourceIdentifiers.QuickAccessToolBarLabel:
+		Select Case stringname
 
-return "QuickAccess ToolBar Label text"
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonAdd
+				Return "Customize Ribbon Dialog Add Button Text"
 
-case ToolsResourceIdentifiers.CustomizationLabel:
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonRemove
+				Return "Customize Ribbon Dialog Remove Button Text "
 
-return "Customization Label text"
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonCancel
+				Return "Customize Ribbon Dialog Cancel Button Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonOk
+				Return "Customize Ribbon Dialog Ok Button Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonReset
+				Return "Customize Ribbon Dialog Reset Button Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogLable
+				Return "Customize Ribbon Dialog Lable Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogChooseCommands
+				Return "Customize Ribbon Dialog Choose Commands Text "
+				
+			Case Else
+				Return String.Empty
+
+		End Select
+	End Function
+End Class
 
 {% endhighlight %}
 
 {% endtabs %}
+
+
 
 ## Events
 
