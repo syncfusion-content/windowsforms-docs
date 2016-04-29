@@ -125,9 +125,49 @@ We can also align the QAT, above or below the ribbon using the context menu of t
 
 ## Localization
 
-In the Quick Access Toolbar, the labels present in a customized Quick Access Toolbar dialog box can be localized to a user-defined language. These labels can be localized by using the appropriate localizer keywords. In the below code snippets the return value of the switch case is the localized text for the labels.
+In the Quick Access Toolbar, the labels present in a customized Quick Access Toolbar and Customize the Ribbon dialog boxes can be localized to a user-defined language. These labels can be localized by using the appropriate localizer keywords. In the below code snippets the return value of the switch case is the localized text for the labels.
 
 N> The following changes must be done within a localizer class used for the application which is inherited from the ILocalizationProvider.
+
+Labels for cCstomized Quick Access Toolbar dialog box:
+
+{% tabs %}
+
+{% highlight c# %}
+
+case ToolsResourceIdentifiers.CustomizeQuickAccessLabel:
+
+return "Customize QuickAccess Label text";
+
+case ToolsResourceIdentifiers.QuickAccessToolBarLabel:
+
+return "QuickAccess ToolBar Label text";
+
+case ToolsResourceIdentifiers.CustomizationLabel:
+
+return "Customization Label text";
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+case ToolsResourceIdentifiers.CustomizeQuickAccessLabel:
+
+return "Customize QuickAccess Label text"
+
+case ToolsResourceIdentifiers.QuickAccessToolBarLabel:
+
+return "QuickAccess ToolBar Label text"
+
+case ToolsResourceIdentifiers.CustomizationLabel:
+
+return "Customization Label text"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Labels for Customize the Ribbon dialog box: 
 
 {% tabs %}
 
