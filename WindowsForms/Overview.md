@@ -237,7 +237,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/metroform/metro-form">MetroForm</a><br/><br/>
+			<a href="/windowsforms/metroform/overview">MetroForm</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
