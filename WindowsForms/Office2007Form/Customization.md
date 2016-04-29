@@ -41,7 +41,7 @@ this.CaptionFont = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.CaptionFont = New System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte((0))) 
 
@@ -66,7 +66,7 @@ this.CaptionForeColor = Color.Pink;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ‘Applies the color to caption text.
 
@@ -92,7 +92,7 @@ Help Button property is used to show the `HelpButton` in the caption box of the 
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ‘Displays the HelpButton in the caption box of the Form.
 
