@@ -34,7 +34,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
    
-3)	Change the class to inherit the Office2007Form instead of the default Form as follows.
+3)	Change the class to inherit the MetroForm instead of the default Form as follows.
 
 
 {% tabs %}
