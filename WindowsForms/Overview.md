@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Overview of Syncfusion Essential Studio Windows Forms products
 description: Overview
