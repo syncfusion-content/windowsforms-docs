@@ -15,7 +15,7 @@ Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/window
 
 ### Example
 
-To set the [backcolor](/windowsforms/grid/cell-style-architecture#backcolor) and TextColor for a range of cells, use the below given code snippet.
+To set the [BackColor](/windowsforms/grid/cell-style-architecture#backcolor) and TextColor for a range of cells, use the below given code snippet.
 
 {% highlight c# %}
 

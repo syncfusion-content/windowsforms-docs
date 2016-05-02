@@ -818,11 +818,11 @@ CHITEST(actual_range, expected_range)
 ### CHOOSE
 The `CHOOSE` function returns the value from a range of values on a specific index.
 ##### Syntax:
-CHOOSE(index, valuearray)
+CHOOSE(index, value array)
 
 #### Where:
 * **index** is to specify the index from where you want to retrieve the value.
-* **valuearray** is the array of value from where you want to take the value.
+* **value array** is the array of value from where you want to take the value.
 
 ### CLEAN
 `CLEAN` function is used to remove the non-printable characters from the given text, represented by numbers 0 to 31 of the 7-bit ASCII code.
@@ -1788,10 +1788,10 @@ FACT(number),
 `FALSE` function returns logical value when the given sting value is false.
 
 #### Syntax
-False(stringvalue)
+False(string value)
 
 #### Where:
-**stringvalue** is to provide any text value or empty string.
+**string value** is to provide any text value or empty string.
 
 ### FILTERXML
 The `FILTERXML` function retrieves specific data from the XML content by using the specified XPath.
@@ -1821,11 +1821,11 @@ FDIST(x, degrees_freedom1, degrees_freedom2),
 The `Find` function finds a portion of a string from a particular text and returns the location of the string.
 
 #### Syntax
-Find(lookfor, lookin, start)
+Find(look for, look in, start)
 
 #### Where:
-* **lookfor** is the text you want to search.
-* **lookin** is the the text in which you want to search.
+* **look for** is the text you want to search.
+* **look in** is the the text in which you want to search.
 * **start** specifies the starting position of the text from where you want to start searching in the text. This is optional.
 
 ### FINDB
@@ -4492,10 +4492,10 @@ TRUNC(number, num_digits),
 `TRUE` function returns the logical value when the given sting value is true.
 
 #### Syntax
-True(stringvalue)
+True(string value)
 
 #### Where:
-* **stringvalue** is to provide any text value or empty string.
+* **string value** is to provide any text value or empty string.
 
 ### TYPE
 The `TYPE` function receives a value and returns an integer that represents the supplied value’s data type.
@@ -4712,10 +4712,10 @@ WORKDAY.INTL( startDate, days, [weekend], [holidays] )
 `Xirr` function computes the internal rate-of-return for a schedule of possibly non-periodic cash flows.
 
 #### Syntax
-Xirr(cashflow, datelist, value)
+Xirr(cash flow, date list, value)
 
 #### Where:
-cashflow is the range of cash flow. datelist is the list of serial number of the corresponding date values. value is an initial guess integer value which reflects in the result of the function.
+cash flow is the range of cash flow. date list is the list of serial number of the corresponding date values. value is an initial guess integer value which reflects in the result of the function.
 
 ### XOR
 `XOR` function returns the exclusive `OR` for the given arguments.

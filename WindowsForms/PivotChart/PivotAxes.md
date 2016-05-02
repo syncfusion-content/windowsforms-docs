@@ -77,7 +77,7 @@ Description</th></tr>
 <tr>
 <td>
 GridLineType.ForeColor</td><td>
-The forecolor of the line.</td></tr>
+The ForeColor of the line.</td></tr>
 <tr>
 <td>
 GridLineType.BackColor</td><td>
