@@ -179,7 +179,7 @@ gridControl1(2, 2).Font.Orientation = 180
 
 ### Format
 
-The formats of a cell value can be changed by using [Format](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Format.html) property. For more details on the different types of formatting types, please check the msdn link over [here.](https://msdn.microsoft.com/en-us/library/26etazsy.aspx)
+The formats of a cell value can be changed by using [Format](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Format.html) property. For more details on the different types of formatting types, please check the MSDN link over [here.](https://msdn.microsoft.com/en-us/library/26etazsy.aspx)
 {% tabs %}{% highlight c# %}
 gridControl1[2, 2].CellValue = 31456;
 this.gridControl1[2, 2].Format = "C";

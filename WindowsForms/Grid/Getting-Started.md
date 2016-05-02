@@ -97,7 +97,7 @@ Syncfusion.Grid.Converter.Windows contains static extension classes for exportin
 <tr>
 <td>
 {{'[Syncfusion.Pdf.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pdf/webtoc.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.Pdf.Base contains fundamental and base classes for creating Pdf.<br/><br/></td></tr>
+Syncfusion.Pdf.Base contains fundamental and base classes for creating PDF.<br/><br/></td></tr>
 <tr>
 <td>
 {{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base.html#"")'| markdownify }}<br/><br/></td><td>

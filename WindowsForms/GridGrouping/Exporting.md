@@ -448,7 +448,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-N> The naming of the `CopyStyles` and `CopyAlignment` methods of the `GridConverterBase` is changed to `ExportBordersToExcel` and `ExportAlingmentToExcel`. 
+N> The naming of the `CopyStyles` and `CopyAlignment` methods of the `GridConverterBase` is changed to `ExportBordersToExcel` and `ExportAlignmentToExcel`. 
 
 ## Advanced Excel Exporting
 The `GridGroupingExcelConverterControl` is created for better performance of exporting the grid contents to Excel. It can be enabled by adding [Converter.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/webtoc.html) in to assembly reference. 
@@ -657,7 +657,7 @@ pdfConverter.ExportToPdfWithMerge("Sample1.pdf", Me.gridGroupingControl1.TableCo
 {% endtabs %}
 
 ### Events
-The `GridPDFConverter` provides support to customize the exporting actions through events. The [Exporting](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exporting_EV.html) and [Exported](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exported_EV.html) events of the convertor is used to notify the PDF exporting of the grid.
+The `GridPDFConverter` provides support to customize the exporting actions through events. The [Exporting](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exporting_EV.html) and [Exported](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exported_EV.html) events of the converter is used to notify the PDF exporting of the grid.
 
 {% tabs %}
 {% highlight c# %}

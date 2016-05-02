@@ -345,7 +345,7 @@ The executable files for the samples are available under the following location:
 
 
 
-N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above mentioned location.
+N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the EXE from the above mentioned location.
 
 
 
@@ -632,7 +632,7 @@ Type Name</th><th>
 Control Name</th></tr>
 <tr>
 <td>
-Diagram{{ '_._' | markdownify }}dll</td><td>
+Diagram{{ '_._' | markdownify }} assembly</td><td>
 Syncfusion.TestStudio.Diagram.Diagram</td><td>
 Syncfusion.Windows.Forms.Diagram.Controls.Diagram</td></tr>
 </table>

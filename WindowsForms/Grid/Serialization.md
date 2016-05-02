@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization
 
-GridControl provide the support for [serialization](https://msdn.microsoft.com/en-us/library/ms233843.aspx#) and de-serialization of grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [deserialization](https://msdn.microsoft.com/en-us/library/fa420a9y.aspx#).
+GridControl provide the support for [serialization](https://msdn.microsoft.com/en-us/library/ms233843.aspx#) and de-serialization of grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://msdn.microsoft.com/en-us/library/fa420a9y.aspx#).
 
 GridControl has the different types of serialization techniques as follows,
 
