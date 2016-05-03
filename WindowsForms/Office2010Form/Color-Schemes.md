@@ -68,7 +68,7 @@ Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
 ## Background Color for Office2010 Form
 
-The background of the Office2010 form can be same, as the color scheme applied to the form. `UseOffice2007SchemeBackColor` property has to true, to make this effective.
+The background of the Office2010 Form can be same, as the color scheme applied to the form. `UseOffice2007SchemeBackColor` property has to true, to make this effective.
 
 {% tabs %}
 
