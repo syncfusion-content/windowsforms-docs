@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-MetroForm which does not have any dependency in RibbonControlAdv is now available in WindowsForms. It provides all basic functionality of normal Form along with plenty of appearance customization.
+MetroForm is an advanced standard Form that helps to create fully customizable Form. With this MetroForm, user can present an appealing User Interface to the end users. It also supports various built in customizations and let the user to control its behavior and appearance. 
 
 ![](Overview_images/Overview.png)
 
