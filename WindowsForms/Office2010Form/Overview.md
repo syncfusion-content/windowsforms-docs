@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Office2010Form which does not have any dependency in RibbonControlAdv is now available in WindowsForms.It provides all basic functionality of normal Form with the Office2010 look and feel along with appearance customization.
+Office2010Form is an advanced standard Form that offers Microsoft Office2010 like UI and appearance. With this Office2010Form, user can create Microsoft Office2010 like appealing User Interface in their application. It also supports various built in Color Schemes and customization options that helps user to control its behavior and appearance.
 
 ![](Overview_images/Office2010.png)
 
