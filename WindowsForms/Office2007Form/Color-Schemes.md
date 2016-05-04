@@ -9,7 +9,7 @@ documentation: ug
 
 # Color Schemes
 
-Office2007 Form supports following office color schemes which can be edited through `ColorScheme` property.
+Office2007Form supports following office color schemes which can be edited through `ColorScheme` property.
 
 * Blue
 * Silver

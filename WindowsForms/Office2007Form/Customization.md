@@ -80,7 +80,7 @@ Me.CaptionForeColor = Color.Pink
 
 ## Help Button Support
 
-Help Button property is used to show the `HelpButton` in the caption box of the form. 
+Help Button property is used to show the `HelpButton` in the caption box of the Form. 
 
 {% tabs %}
 
@@ -107,7 +107,7 @@ Help Button property is used to show the `HelpButton` in the caption box of the 
 
 ## Disabling Office2007Style
 
-Office2007 look and feel can be disabled using `DisableOffice2007Style` property in Office2007Form.
+Office2007 look and feel can be disabled using `DisableOffice2007Style` property.
 
 {% tabs %}
 
