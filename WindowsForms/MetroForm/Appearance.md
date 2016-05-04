@@ -31,7 +31,7 @@ Me.BorderThickness = 10
 
 ## Border Color
 
-`BorderColor` property is used to change the color of the border in MetroForm
+`BorderColor` property is used to change the color of the border.
 
 {% tabs %}
 
