@@ -28,7 +28,7 @@ Caption label can be added to the MetroForm through designer or code.
 
 ### Through Code
 
-The following code sample shows how to add an Label to the caption bar of the Metro form.
+The following code sample shows how to add an Label to the MetroForm.
 
 {% tabs %}
 
@@ -236,25 +236,25 @@ Me.CaptionButtonHoverColor = System.Drawing.Color.Lime
 
 ## Mouse Events for Caption Image
 
-### MouseDown Event
+### ImageMouseDown Event
 
-The MouseDown event is raised when the mouse pointer is over the caption image and a mouse button is pressed. 
+The ImageMouseDown event is raised when the mouse pointer is over the caption image and a mouse button is pressed. 
 
-### MouseUp Event
+### ImageMouseUp Event
 
-The MouseUp event is raised when the mouse pointer is over the caption image and a mouse button is released. 
+The ImageMouseUp event is raised when the mouse pointer is over the caption image and a mouse button is released. 
 
-### MouseEnter Event
+### ImageMouseEnter Event
 
-The MouseEnter event is raised when the mouse pointer enters the caption image.  
+The ImageMouseEnter event is raised when the mouse pointer enters the caption image.  
 
-### MouseLeave Event
+### ImageMouseLeave Event
 
-The MouseLeave event is raised when the mouse pointer leaves the caption image. 
+The ImageMouseLeave event is raised when the mouse pointer leaves the caption image. 
 
-### MouseMove Event
+### ImageMouseMove Event
 
-The MouseMove event is raised when the mouse pointer moves within the caption image.
+The ImageMouseMove event is raised when the mouse pointer moves within the caption image.
 
 #### Event Data
 
@@ -309,7 +309,7 @@ Gets or sets the image for the caption image.</td></tr>
 foreach (CaptionImage image in this.CaptionImages)
 {
 
-   image.ImageMouseUp += new CaptionImage.MouseUp(image_ImageMouseUp);
+     image.ImageMouseUp += new CaptionImage.MouseUp(image_ImageMouseUp);
 
 	 image.ImageMouseDown += new CaptionImage.MouseDown(image_ImageMouseDown);
 
@@ -325,27 +325,27 @@ foreach (CaptionImage image in this.CaptionImages)
 
 void image_ImageMouseUp(object sender, ImageMouseUpEventArgs e)
 {
-   Console.WriteLine(“Mouse up event has been raised”);
+   Console.WriteLine("Mouse up event has been raised");
 }
 
 void image_ImageMouseDown(object sender, ImageMouseDownEventArgs e)
 {
-   Console.WriteLine(“Mouse down event has been raised”);
+   Console.WriteLine("Mouse down event has been raised");
 }
 
 void image_ImageMouseMove(object sender, ImageMouseMoveEventArgs e)
 {
-   Console.WriteLine(“Mouse move event has been raised”);
+   Console.WriteLine("Mouse move event has been raised");
 }
 
 void image_ImageMouseEnter(object sender, ImageMouseEnterEventArgs e)
 {
-   Console.WriteLine(“Mouse enter event has been raised”);
+   Console.WriteLine("Mouse enter event has been raised");
 }
 
 void image_ImageMouseLeave(object sender, ImageMouseLeaveEventArgs e)
 {
-   Console.WriteLine(“Mouse leave event has been raised”);
+   Console.WriteLine("Mouse leave event has been raised");
 }
 
 {% endhighlight %}
@@ -367,23 +367,23 @@ For Each image As CaptionImage In Me.CaptionImages
 Next
 
 Private Sub image_ImageMouseUp(ByVal sender As Object, ByVal e As ImageMouseUpEventArgs)
-    Console.WriteLine(Mouse, up, event, has, been, raised)
+    Console.WriteLine("Mouse up event has been raised")
 End Sub
 
 Private Sub image_ImageMouseDown(ByVal sender As Object, ByVal e As ImageMouseDownEventArgs)
-    Console.WriteLine(Mouse, down, event, has, been, raised)
+    Console.WriteLine("Mouse down event has been raised")
 End Sub
 
 Private Sub image_ImageMouseMove(ByVal sender As Object, ByVal e As ImageMouseMoveEventArgs)
-    Console.WriteLine(Mouse, move, event, has, been, raised)
+    Console.WriteLine("Mouse move event has been raised")
 End Sub
 
 Private Sub image_ImageMouseEnter(ByVal sender As Object, ByVal e As ImageMouseEnterEventArgs)
-    Console.WriteLine(Mouse, enter, event, has, been, raised)
+    Console.WriteLine("Mouse enter event has been raised")
 End Sub
 
 Private Sub image_ImageMouseLeave(ByVal sender As Object, ByVal e As ImageMouseLeaveEventArgs)
-    Console.WriteLine(Mouse, leave, event, has, been, raised)
+    Console.WriteLine("Mouse leave event has been raised")
 End Sub
 
 {% endhighlight %}
