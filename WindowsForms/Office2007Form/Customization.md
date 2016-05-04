@@ -9,7 +9,7 @@ documentation: ug
 
 ## Caption Alignment 
 
-The Office2010Form's caption can be aligned to the left, right, or center by using the `CaptionAlign` property. 
+The Form caption can be aligned to the left, right, or center by using the `CaptionAlign` property. 
 
 {% tabs %}
 
@@ -103,6 +103,32 @@ Help Button property is used to show the `HelpButton` in the caption box of the 
 {% endtabs %}
 
 ![](Caption-Settings_images/HelpButton.png)
+
+## Right to Left 
+
+Right to left support can be enabled using below properties in Office2007Form.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.RightToLeftLayout = true;
+ 
+this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;          
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.RightToLeftLayout = true
+ 
+Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Caption-Settings_images/rtlsupport.png)
 
 
 ## Disabling Office2007Style

@@ -7,7 +7,7 @@ control: MetroForm
 documentation: ug
 ---
 
-How to display full screen MetroForm like the Windows App?
+# How to display full screen MetroForm like the Windows App?
 
 MetroForm bounds have been handled in the NativeMethods class by excluding the system taskbar bounds. So, it is possible to override the NativeMethods class functionality and the MetroForm bounds can be set to full screen by overriding this class. 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Color Schemes
 
-Office2010 Form supports following office color schemes which can be edited through `ColorScheme` property.
+Office2010Form supports following office color schemes which can be edited through `ColorScheme` property.
 
 * Blue
 * Silver
@@ -91,9 +91,9 @@ Me.UseOffice2010SchemeBackColor = True
   
 ## Applying Color Schemes
 
-Office2010 Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the `ApplyAeroTheme` property.
+Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the `ApplyAeroTheme` property.
 
-Aero theme support is available for Office2010 Forms when used on Windows Vista machines. Previously, ColorSchemes could not be applied to the Office2010 Form when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme on Office2010 Forms. 
+Aero theme support is available for Office2010Form when used on Windows Vista machines. Previously, ColorSchemes could not be applied to the Office2010Form when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme on Office2010Form. 
 
 {% tabs %}
 
