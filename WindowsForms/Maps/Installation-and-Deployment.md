@@ -43,8 +43,9 @@ Use the following steps to view the samples:
 
       ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)       
 	  
-	  _Figure 1: Syncfusion Essential Studio Dashboard_
-
+	  Syncfusion Essential Studio Dashboard
+      {:.caption}
+	  
 2. 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
 
       N> You can view the samples in any of the following three ways:
@@ -62,8 +63,9 @@ Use the following steps to view the samples:
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
-   _Figure 3: Essential Maps WF Samples_
-	    
+   Essential Maps WF Samples
+   {:.caption}
+   
 4. Select any sample and browse through the features. 
 
 

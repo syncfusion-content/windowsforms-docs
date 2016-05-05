@@ -141,7 +141,7 @@ OwnerDrawnNodesBackground</td><td>
 Indicates if the NodeBackgroundPaint event will be fired before drawing a node's background.</td></tr>
 </table>
 
-_Table_ _903_: Event Table
+Event Table
 
 <table>
 <tr>

@@ -11,7 +11,7 @@ documentation: ug
 
 ListBarItem includes Events of BarItem and also contains events discussed in this section. 
 
-_Table_ _524_:  _Events Table_
+Events Table
 
 <table>
 <tr>

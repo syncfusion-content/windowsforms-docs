@@ -22,5 +22,5 @@ Consider the following expression:
 
 Depending upon the value of cost, this expression returns 1, 3, 5 or 7. This is an example of using a linear combination of logical expressions that times other values. 
 
-N> The logical conditions are mutually exclusive, but, when taken as a whole, cover all possible values of cost. It has the effect of assigning a unique value depending upon the input value._
+N> The logical conditions are mutually exclusive, but, when taken as a whole, cover all possible values of cost. It has the effect of assigning a unique value depending upon the input value.
 

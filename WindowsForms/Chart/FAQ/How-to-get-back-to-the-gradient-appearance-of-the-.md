@@ -44,5 +44,5 @@ Me.chartControl1.Model.ColorModel.AllowGradient = True
 
 
 
-N> We can also use ChartControl.AllowGradientPalette property to enable or disable gradient effect for chart series. By default it set to false._
+N> We can also use ChartControl.AllowGradientPalette property to enable or disable gradient effect for chart series. By default it set to false.
 

@@ -18,7 +18,7 @@ This section discusses the following topics.
    * [Image Overlaying](/windowsforms/treeview/treenode-features#image-overlaying) - This feature can be only applicable for the first column or the tree structure. 
    * [Plus Sign On ExpandMode ](/windowsforms/treeview/treenode-features#plus-sign-on-expandmode)
 
-N> The below properties can be applied only to the first column among the multiple columns._ 
+N> The below properties can be applied only to the first column among the multiple columns.
 
   * [Checkbox and Option buttons](/windowsforms/treeview/treenode-features#checkbox-and-option-buttons) - This section illustrates how to set the checkbox and option buttons for the tree nodes. 
   * Multiline Support - This section discusses about the multiline support to the nodes. 

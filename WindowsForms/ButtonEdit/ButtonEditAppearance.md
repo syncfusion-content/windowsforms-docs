@@ -29,7 +29,7 @@ This section discusses the different styles available for the ButtonEdit control
 
 Styles for the ButtonEdit control is specified using ButtonStyle property.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -121,7 +121,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.LightGreen)
 
 The border styles for the ButtonEdit can be controlled using the below properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -191,7 +191,7 @@ N> The Border styles of the child buttons can be controlled using ButtonEditChil
 
 We can specify the maximum and minimum size for the ButtonEdit control using MaximumSize and MinimumSize properties.
 
- _Property Table_
+Property Table
 
 <table>
 <tr>

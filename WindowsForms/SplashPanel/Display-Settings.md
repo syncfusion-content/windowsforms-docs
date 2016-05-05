@@ -38,7 +38,7 @@ IsShowing</td><td>
 Indicates whether the splash is currently displayed.</td></tr>
 </table>
 
-N>: The time interval for which the SplashPanel is displayed can be customized using the Time Interval settings provided in the SplashPanel control._
+N> The time interval for which the SplashPanel is displayed can be customized using the Time Interval settings provided in the SplashPanel control.
 
 The above methods are explained below in detail.
 
@@ -385,7 +385,7 @@ When the AllowMove property is set to 'True', the user will be allowed to click 
 
 When the AllowResize property is set to 'True', resize handles will be displayed when the user moves the mouse near the border of the SplashPanel.
 
-N> : In the above cases, the splash panel will not be closed, until the host form is closed._
+N> In the above cases, the splash panel will not be closed, until the host form is closed.
 
 The user can also close the SplashPanel by a single mouse click. This feature can be enabled by setting the CloseOnClick property to 'True'.
 

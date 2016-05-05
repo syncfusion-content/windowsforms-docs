@@ -128,7 +128,7 @@ GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", co
 
 {% endhighlight %}
 
-N>* The first argument in this method is an instance of Grid Grouping control.* The second argument is the column name of the Parent table's Value Member.* The third argument is the name of the Foreign table.* The fourth argument is the column name of Child table's Value Member.* The fifth argument is the column name of Child tables's Display Member.
+N> * The first argument in this method is an instance of Grid Grouping control.* The second argument is the column name of the Parent table's Value Member.* The third argument is the name of the Foreign table.* The fourth argument is the column name of Child table's Value Member.* The fifth argument is the column name of Child tables's Display Member.
 
 The following screen shot illustrates Foreign Key Relations in the Grid Grouping control.
 
@@ -316,7 +316,7 @@ The following code illustrates how to add Excel Like Filter to the Grid filter b
 
 	 {% endhighlight %} 
 	
-N>: GridOffice2007Filter can be unwired from the grid to disable Excel like filter.
+N> GridOffice2007Filter can be unwired from the grid to disable Excel like filter.
 
 #### Specifying Value To Filter 
 

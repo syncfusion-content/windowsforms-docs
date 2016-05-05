@@ -25,7 +25,7 @@ Use ButtonEditChildButton1.ButtonType property for setting the button types of t
 
 The border styles for the child buttons can be set through BorderStyleAdv property.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -211,7 +211,7 @@ Me.buttonEditChildButton2.PreferredWidth = 64
 
 ### Flat Style for the Buttons
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -257,7 +257,7 @@ Me.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Col
  
 ### Style Settings
 
-_Property Table_
+Property Table
 
 <table>
 <tr>

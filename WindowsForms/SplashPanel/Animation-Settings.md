@@ -119,7 +119,7 @@ Indicates whether the SplashPanel should not be closed when the mouse is over it
 
 This property which is available in SplashPanel, when enabled, will close the SplashPanel at run time before the specified time interval ends, when the mouse is moved over it. By default this will be set to 'False'.
 
-N> The CloseOnClick property can also be used to close the SplashPanel by a single mouse click._
+N> The CloseOnClick property can also be used to close the SplashPanel by a single mouse click.
 
 {% highlight c# %}
 
@@ -297,7 +297,7 @@ Me.splashPanel1.TransparentColor = System.Drawing.Color.White
 
 
 
-N> The RefreshRegionFromImage() method can be used to refresh the region from the background image._
+N> The RefreshRegionFromImage() method can be used to refresh the region from the background image.
 
 
 ## Behavior Settings
@@ -330,7 +330,7 @@ When the AllowMove property is set to 'True', the user will be allowed to click 
 
 When the AllowResize property is set to 'True', resize handles will be displayed when the user moves the mouse near the border of the SplashPanel.
 
-N>: In the above cases, the splash panel will not be closed, until the host form is closed._
+N> In the above cases, the splash panel will not be closed, until the host form is closed.
 
 The user can also close the SplashPanel by a single mouse click. This feature can be enabled by setting the CloseOnClick property to 'True'.
 

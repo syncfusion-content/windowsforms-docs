@@ -90,7 +90,7 @@ The following steps will guide you to deploy Essential Grouping:
 4. Now you may see that the Syncfusion assemblies referenced in the project are copied to the output directory along with the application executable (bin/debug/).
 5. Deploy the EXE along with the Syncfusion assemblies in that location to the target machine. Be sure that these Syncfusion assemblies reside in the same location as the application EXE in the target machine.
  
-N> For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work._
+N> For Windows Forms applications, placing these referenced Syncfusion assemblies in the GAC alone, in the target machine, will also work.
 
 Dll's needed for deployment
 

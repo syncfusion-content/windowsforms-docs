@@ -179,7 +179,7 @@ Essential Calculate provides support to compute the date values similar to Excel
 
 You can compute and get the correct values of DateTime in arithmetic signs and formulas using this property.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>

@@ -131,7 +131,7 @@ Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Table Options Demo_
 
@@ -405,7 +405,7 @@ Used only with SelectionMode.MultiExtended. Moves current cell when user extends
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping Grid Options\Table Options Demo_
 
@@ -985,7 +985,7 @@ t.SelectedRecords.Add(r3)
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
 
@@ -1178,7 +1178,7 @@ Me.gridGroupingControl1.Table.SelectedRecords.Clear()
 
 {% endhighlight %}
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo_
 

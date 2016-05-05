@@ -40,7 +40,7 @@ When the code runs, selecting all record is bound to Select All button.
 
 The following code illustrates how to select specified records.
 
-N>: Method Name:  AddRange   Parameter: Specify the Record collection to be selected
+N> Method Name:  AddRange   Parameter: Specify the Record collection to be selected
 {% highlight C# %} 
 
 //Selects the specified records in the grid table.

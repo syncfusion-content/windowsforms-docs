@@ -31,19 +31,16 @@ The FilterDialog is designed to have a look and feel like Excel Filter. The Filt
 ![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img2.png)
 
 
-
-_Figure_ _29_: _Filtered Image showing PivotSummaries are being updated._
+Filtered Image showing PivotSummaries are being updated.
+{:.caption}
 
 
 
 ![](Filtering-support-for-Calculation-Columns_images/Filtering-support-for-Calculation-Columns_img3.png)
 
 
-
-
-
-_Figure_ _30_: _SmartSearch using searchTextBox._
-
+SmartSearch using searchTextBox.
+{:.caption}
 
 
 ### Methods

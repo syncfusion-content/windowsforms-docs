@@ -13,7 +13,7 @@ The Calculator control has a display text area on its top corner, which displays
 
 The below properties controls the behavior of the display area.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>

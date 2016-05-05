@@ -130,7 +130,7 @@ Retrives the formatted cell format.</td></tr>
 <tr>
 <td>
 bool IsFormulaCell(int row, int col, out string formula, out string computedValue)</td><td>
-For a given row and column index, IsFormulaCell points to the formula used in that cell and the result of the formula. This also returns “false” when this cell is not a formula cell.</td></tr>
+For a given row and column index, IsFormulaCell points to the formula used in that cell and the result of the formula. This also returns 'false' when this cell is not a formula cell.</td></tr>
 <tr>
 <td>
 object GetCellData(int row, int col)</td><td>
@@ -309,7 +309,7 @@ Checks if the column is visible.</td></tr>
 <tr>
 <td>
 bool IsFormulaCell(int row, int col, out string formula, out string computedValue) </td><td>
-For a given row and column index, IsFormulaCell points to the formula used in that cell and the result of the formula. This also returns “false” when this cell is not a formula cell.</td></tr>
+For a given row and column index, IsFormulaCell points to the formula used in that cell and the result of the formula. This also returns 'false' when this cell is not a formula cell.</td></tr>
 <tr>
 <td>
 object GetCellData(int row, object col)</td><td>

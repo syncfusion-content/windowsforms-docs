@@ -48,7 +48,7 @@ N> You can also set multiple columns. Refer [Multiple Columns](http://help.syncf
 
 Visibility of close button and the gripper in the popup can be determined by ShowCloseButton and ShowGripper properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -181,7 +181,7 @@ Me.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable
 
 DropDown item can have a header that is enabled by using the AutoComplete.ShowColumnHeader property. AutoAddItem property should be set to “True”.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -238,7 +238,7 @@ N> You can also set multiple columns. Refer [Multiple Columns](http://help.syncf
 
 Visibility of close button and the gripper in the popup can be determined by using the ShowCloseButton and ShowGripper properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>

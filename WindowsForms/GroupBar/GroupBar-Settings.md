@@ -117,7 +117,7 @@ Stacked GroupBar Item automatically shows the Chevron, which can be made invisib
 ![](Overview_images/Overview_img13.jpeg)
 
 
-N> You should set LargeImageMode of GroupBarItem to 'True' to display the item images in the GroupBar's navigation pane._
+N> You should set LargeImageMode of GroupBarItem to 'True' to display the item images in the GroupBar's navigation pane.
 
 ### Navigation Pane
 
@@ -173,7 +173,7 @@ The Navigation Pane is displayed when the GroupBar is in the Stacked Mode. It's 
 
 This section discusses settings of a groupbar in its collapsed state. 
 
-N> AllowCollapse property should be set to true to effect the below settings._
+N> AllowCollapse property should be set to true to effect the below settings.
  
 
 <table>

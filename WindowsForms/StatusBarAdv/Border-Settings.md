@@ -42,7 +42,7 @@ BorderStyle</td><td>
 Indicates whether the panel should have a border. The options included are given below.FixedSingle,Fixed3D andNone.</td></tr>
 </table>
 
-N> : The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'._
+N> The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'.
 
 {% highlight c# %}
 

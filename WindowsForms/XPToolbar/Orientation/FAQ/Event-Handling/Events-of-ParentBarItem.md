@@ -11,7 +11,7 @@ documentation: ug
 
 ParentBarItem includes events of BarItem and also contains events discussed in this section. 
 
-_Table_ _520_: _Events Table_
+Events Table
 
 <table>
 <tr>

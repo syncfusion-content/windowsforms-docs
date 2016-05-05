@@ -155,4 +155,5 @@ Screenshot:
 
 ![](Multilayer-Support_images/Multilayer-Support_img1.png)
 
-_Figure 20: MultiLayer_
+MultiLayer
+{:.caption}

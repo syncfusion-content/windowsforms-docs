@@ -95,7 +95,6 @@ RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();
 
 ![](Features_images/Features_img12.png)
 
-
-
-_Figure_ _9_: _TreeMap with Legend_
+TreeMap with Legend
+{:.caption}
 

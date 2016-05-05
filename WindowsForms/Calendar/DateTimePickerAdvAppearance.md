@@ -170,7 +170,7 @@ Me.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenIn
 
 
 
-N>: MonthCalendarAdv.ThemedBorder property should be set to false to make the 3D border setting effective. Refer_ Visual Settings
+N> MonthCalendarAdv.ThemedBorder property should be set to false to make the 3D border setting effective. Refer_ Visual Settings
  
 {% highlight c# %}
 //Setting border to "All" sides

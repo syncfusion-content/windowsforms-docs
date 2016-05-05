@@ -358,7 +358,8 @@ N> The Alignment property should be set to 'True' for the above properties to ta
 
 ![](FlowLayout_images/FlowLayout_img1.png) 
 
-Figure 706: Children with different HAlign Settings
+Children with different HAlign Settings
+{:.caption}
 
 N> In the figure above, the textboxes have auto labels associated with them.
 
@@ -424,7 +425,8 @@ Specifies if proportional row heights should be used in the horizontal layout. T
 	
 ![](FlowLayout_images/FlowLayout_img2.png)
  
-Figure 707: Two Proportionally Aligned Rows Split the Extra Horizontal Space Between Them
+Two Proportionally Aligned Rows Split the Extra Horizontal Space Between Them
+{:.caption}
 
 The methods associated with the above properties are given below.
 
@@ -478,7 +480,7 @@ This topic illustrates how to center the Child controls both vertically and hori
 
 
 
-N> Constraints need to be used because the Child controls will otherwise be centered either vertically or horizontally based on whether the layout mode is 'Vertical' or 'Horizontal'._
+N> Constraints need to be used because the Child controls will otherwise be centered either vertically or horizontally based on whether the layout mode is 'Vertical' or 'Horizontal'.
 
 When the layout mode is 'Horizontal', set the HAlign property to 'Center' and ProportionalRowHeight property to 'True' in the constraints for all the Child controls. This will center the Child controls vertically and horizontally as shown.
 

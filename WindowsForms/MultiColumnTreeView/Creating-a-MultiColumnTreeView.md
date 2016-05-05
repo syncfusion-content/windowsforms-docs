@@ -16,8 +16,9 @@ To create a MultiColumnTreeView control, follow the steps that are given below.
 
    ![](Getting-Started_images/Getting-Started_img1.jpeg) 
  
-   Figure : MultiColumnTreeView in the Toolbox
-
+   MultiColumnTreeView in the Toolbox
+   {:.caption}
+   
 2. Drag and drop the MultiColumnTreeView control on to the form.
 
 3. Open the Nodes Collection Editor, add required nodes using Add nodes and Add Child buttons. 
@@ -32,8 +33,9 @@ To create a MultiColumnTreeView control, follow the steps that are given below.
 
    ![](Getting-Started_images/Getting-Started_img2.jpeg) 
  
-   Figure : SubItems Added to Node3 and Node1
-
+   SubItems Added to Node3 and Node1
+   {:.caption}
+   
 8. Namespace to be added while creating programmatically.
 
    ~~~ cs
