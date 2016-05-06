@@ -499,7 +499,7 @@ Me.gridControl.TableStyle.AutoSize = True
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img18.png)  
 
 ## Auto Sizing Custom Cells
-When custom controls are placed in the Grid, the corresponding cell can be automatically resized to fit the controls. It can be achieved by overriding the [OnQueryPreferredClientSize](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellModelBase~OnQueryPrefferedClientSize.html) method in the model class. The [ResizeToFit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer~ResizeToFit.html)  method is used to resize the cells while enter the text, but it will not work for Custom controls. The `ResizeToFit` method will resize the cell to the size returned by the `OnQueryPreferredClientSize` method.
+When custom controls are placed in the Grid, the corresponding cell can be automatically resized to fit the controls. It can be achieved by overriding the `OnQueryPreferredClientSize` method in the model class. The [ResizeToFit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer~ResizeToFit.html)  method is used to resize the cells while enter the text, but it will not work for Custom controls. The `ResizeToFit` method will resize the cell to the size returned by the `OnQueryPreferredClientSize` method.
 
 {% tabs %}
 {% highlight c# %}
