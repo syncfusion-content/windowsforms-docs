@@ -143,7 +143,7 @@ ggec.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", options)
 {% endtabs %}
 
 ### Exporting without Styles
-The cell styles can be restricted from the exporting by using the [ExportStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase~ExportStyles.html) property of the converter control. It can export the font, back color, text color, number format, etc.
+The cell styles can be restricted from the exporting by using the [ExportStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GroupingGridExcelConverterControl~ExportStyle.html) property of the converter control. It can export the font, back color, text color, number format, etc.
 {% tabs %}
 {% highlight c# %}
 GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterControl();
