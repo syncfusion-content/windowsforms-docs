@@ -266,6 +266,84 @@ The unbound field added to the GridGroupingControl is shown in the following scr
 ## Setting the Column Widths and Row Heights 
 The column width and row height of the GridGroupingControl can be set dynamically by resizing using the mouse controller. 
 
+### Setting Default Row Heights
+Default row heights can be set by using the [DefaultRecordRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableBase~DefaultRecordRowHeight.html) property
+{% tabs %}
+{% highlight c# %}
+//Setting Default row heights.
+this.gridGroupingControl1.Table.DefaultRecordRowHeight = 150;
+{% endhighlight %}
+{% highlight vb %}
+'Setting default row heights.
+Me.gridGroupingControl1.Table.DefaultRecordRowHeight = 150
+{% endhighlight %}
+{% endtabs %}
+
+### Setting Default Header Row Heights
+The row heights for the column headers can be changed by using the [DefaultColumnHeaderRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultColumnHeaderRowHeight.html) property. Refer the below code.
+{% tabs %}
+{% highlight c# %}
+//Setting default header row heights.
+this.gridGroupingControl1.Table.DefaultColumnHeaderRowHeight= 50;
+{% endhighlight %}
+{% highlight vb %}
+'Setting default header row heights.
+Me.gridGroupingControl1.Table.DefaultColumnHeaderRowHeight= 50
+{% endhighlight %}
+{% endtabs %}
+
+### Setting Default Caption Row Heights
+The row heights for the caption bar can be changed by using the [DefaultCaptionRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultCaptionRowHeight.html) property. Refer the below code. By default, caption bar will not be visible in grid. To enable the caption bar, make use of the ShowCaption property
+{% tabs %}
+{% highlight c# %}
+// Displaying the Caption bar in Grid
+this.gridGroupingControl1.TopLevelGroupOptions.ShowCaption=true; 
+//Setting caption row heights.
+this.gridGroupingControl1.Table.DefaultCaptionRowHeight = 25;
+{% endhighlight %}
+{% highlight vb %}
+'Displaying the caption bar in Grid.
+Me.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = true
+'Setting caption row heights.
+Me.gridGroupingControl1.Table.DefaultCaptionRowHeight = 25
+{% endhighlight %}
+{% endtabs %}
+
+### Setting Default FilterBar Row Height
+The row height for the filter bar can be changed by using the [DefaultFilterBarRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultFilterBarRowHeight.html) property. 
+{% tabs %}
+{% highlight c# %}
+//Setting filter bar row heights.
+this.gridGroupingControl1.Table.DefaultFilterBarRowHeight= 25;
+{% endhighlight %}
+{% highlight vb %}
+'Setting filter bar row heights.
+Me.gridGroupingControl1.Table.DefaultFilterBarRowHeight= 25
+{% endhighlight %}
+{% endtabs %}
+
+### Setting Default Row Height for Groups
+Default row heights for group footer, header and preview sections can be changed by using the [DefaultGroupFooterSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupFooterSectionHeight.html), [DefaultGroupHeaderSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupHeaderSectionHeight.html) and [DefaultGroupPreviewSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupPreviewSectionHeight.html) properties respectively.
+{% tabs %}
+{% highlight c# %}
+//Sets default height for group header sections.
+this.gridGroupingControl1.Table.DefaultGroupHeaderSectionHeight = 25;
+//Sets default height for group footer sections.
+this.gridGroupingControl1.Table.DefaultGroupFooterSectionHeight = 25;
+//Sets default height for Group preview rows.
+this.gridGroupingControl1.Table.DefaultGroupPreviewSectionHeight = 25; 
+{% endhighlight %}
+{% highlight vb %}
+'Sets default height for group header sections.
+Me.gridGroupingControl1.Table.DefaultGroupHeaderSectionHeight = 25
+'Sets default height for group footer sections.
+Me.gridGroupingControl1.Table.DefaultGroupFooterSectionHeight = 25
+'Sets default height for Group preview rows.
+Me.gridGroupingControl1.Table.DefaultGroupPreviewSectionHeight = 25
+{% endhighlight %}
+{% endtabs %}
+
+### Setting Width for a particular Column
 To set the default width for the particular column, use the following code snippet,
 
 {% tabs %}
@@ -297,7 +375,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns(1).Appearance.AnyRecordFieldCell
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img11.jpeg)
 
 ## Proportional Column Sizing 
-All the columns of the grid can be have the same width that of the equal partition of the total width by setting the [AllowProportionalColumnSizing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~AllowProportionalColumnSizing.html) to ‘true`.
+All the columns of the grid can be have the same width that of the equal partition of the total width by setting the [AllowProportionalColumnSizing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~AllowProportionalColumnSizing.html) to `true`.
 
 {% tabs %}
 {% highlight c# %}
