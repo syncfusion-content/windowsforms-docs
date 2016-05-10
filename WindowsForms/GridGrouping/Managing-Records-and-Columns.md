@@ -284,11 +284,11 @@ The row heights for the column headers can be changed by using the [DefaultColum
 {% tabs %}
 {% highlight c# %}
 //Setting default header row heights.
-this.gridGroupingControl1.Table.DefaultColumnHeaderRowHeight= 50;
+this.gridGroupingControl1.Table.DefaultColumnHeaderRowHeight = 50;
 {% endhighlight %}
 {% highlight vb %}
 'Setting default header row heights.
-Me.gridGroupingControl1.Table.DefaultColumnHeaderRowHeight= 50
+Me.gridGroupingControl1.Table.DefaultColumnHeaderRowHeight = 50
 {% endhighlight %}
 {% endtabs %}
 
@@ -297,13 +297,13 @@ The row heights for the caption bar can be changed by using the [DefaultCaptionR
 {% tabs %}
 {% highlight c# %}
 // Displaying the Caption bar in Grid
-this.gridGroupingControl1.TopLevelGroupOptions.ShowCaption=true; 
+this.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = true; 
 //Setting caption row heights.
 this.gridGroupingControl1.Table.DefaultCaptionRowHeight = 25;
 {% endhighlight %}
 {% highlight vb %}
 'Displaying the caption bar in Grid.
-Me.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = true
+Me.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = True
 'Setting caption row heights.
 Me.gridGroupingControl1.Table.DefaultCaptionRowHeight = 25
 {% endhighlight %}
@@ -314,11 +314,11 @@ The row height for the filter bar can be changed by using the [DefaultFilterBarR
 {% tabs %}
 {% highlight c# %}
 //Setting filter bar row heights.
-this.gridGroupingControl1.Table.DefaultFilterBarRowHeight= 25;
+this.gridGroupingControl1.Table.DefaultFilterBarRowHeight = 25;
 {% endhighlight %}
 {% highlight vb %}
 'Setting filter bar row heights.
-Me.gridGroupingControl1.Table.DefaultFilterBarRowHeight= 25
+Me.gridGroupingControl1.Table.DefaultFilterBarRowHeight = 25
 {% endhighlight %}
 {% endtabs %}
 
