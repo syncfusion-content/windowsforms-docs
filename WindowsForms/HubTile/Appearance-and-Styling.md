@@ -92,8 +92,8 @@ HubTileBanner color can be changed using the BannerColor property.
 
 ![](Concept-and-Features_images/Concept-and-Features_img11.png) 
 
-Figure : Banner Color
-
+Banner Color
+{:.caption}
 
 The following code illustrates how to change the Banner color.
 

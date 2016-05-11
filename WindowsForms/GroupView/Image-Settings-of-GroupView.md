@@ -13,7 +13,7 @@ This section describes the image options available for GroupView.
 To add images to the GroupView, ImageList control must be added to the form with images. ImageList control containing large or small images can be set using the properties given below.
 
 
-N> If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list._
+N> If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list.
 
 <table>
 <tr>
@@ -57,7 +57,7 @@ Me.groupView1.SmallImageList = Me.imageList1
 
  {% endhighlight %}
  
-N> Setting Image list component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor._ 
+N> Setting Image list component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor.
 
  ![](Overview_images/Overview_img79.jpeg) 
 
@@ -115,7 +115,7 @@ HighlightImageOffset</td><td>
 Gets / sets the image offset for the highlighted GroupView Item. </td></tr>
 </table>
 
-N> HighlightImage property must be set to 'True' in all the cases._
+N> HighlightImage property must be set to 'True' in all the cases.
 
 {% highlight C# %}  
 

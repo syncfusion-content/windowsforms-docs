@@ -53,7 +53,7 @@ When the code runs, deleting manually selected record is bound to Delete All[Sel
 
 The following code illustrates deleting Specified records.
 
-N>: Parameter – Specify the collection of records that needs to be deleted.
+N> Parameter – Specify the collection of records that needs to be deleted.
 
 
 

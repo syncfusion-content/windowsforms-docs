@@ -84,7 +84,7 @@ Me.groupBar1.Office2007Theme = Office2007Theme.Black
 
 
 
-N> The Visual Style property must be set to Office2007 to enable the color themes._
+N> The Visual Style property must be set to Office2007 to enable the color themes.
 
 ## Custom Colors
 

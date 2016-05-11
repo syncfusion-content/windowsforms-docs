@@ -60,8 +60,8 @@ This editor can be accessed using the below options.
 
 ![](DesignTime-Features_images/DesignTime-Features_img4.jpeg)  
 
-Figure : Properties Grid Commands
-
+Properties Grid Commands
+{:.caption}
 
 ### Columns Editor
 

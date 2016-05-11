@@ -331,7 +331,7 @@ The following steps will guide you to deploy Essential Calculate:
    ~~~
    {:.prettyprint }
 
-   N> Engine is a class that is defined as a "property" in Essential Calculate._
+   N> Engine is a class that is defined as a "property" in Essential Calculate.
 
    Essential Calculate is now deployed in your WPF application.
 

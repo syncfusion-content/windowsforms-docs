@@ -1958,7 +1958,7 @@ gridStackedHeaderRowDescriptor1.Headers.AddRange(New Syncfusion.Windows.Forms.Gr
 
 
 
-N>: The highlighted column name is the column based on which the corresponding stacked header gets filtered. By default, it takes the first column in stacked column collection.
+N> The highlighted column name is the column based on which the corresponding stacked header gets filtered. By default, it takes the first column in stacked column collection.
 
 
 

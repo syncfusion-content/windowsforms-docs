@@ -49,8 +49,9 @@ Me.HubTile1.ImageSource  = Me.ImageListAdv1.Images(0)
 
  ![](Concept-and-Features_images/Concept-and-Features_img1.png) 
  
-Figure : Default Tile
-
+ Default Tile
+ {:.caption}
+ 
 ## Transition Effects
 
 In HubTile, image transition can be performed at specified intervals and in different directions just like the Windows 8 live tiles. They include the following transition effects.

@@ -12,7 +12,7 @@ documentation: ug
 
 When ButtonAdv.PushButton property is enabled, the button will remain in its pressed state, when clicked. The state of the button will be present in the property State. So by examining the state property, we can conclude whether the button is in the Pressed state or not. Using the Office2007 visual styles will help better understanding of this feature.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>

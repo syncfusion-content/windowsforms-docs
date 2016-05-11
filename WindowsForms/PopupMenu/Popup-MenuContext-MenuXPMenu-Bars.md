@@ -1746,7 +1746,7 @@ ShowShadow</td><td>
 Indicates whether to show shadows for popups.</td></tr>
 </table>
 
-N> The properties related to the partial menus concept is discussed in_ ParentBarItem_.
+N> The properties related to the partial menus concept is discussed in_ ParentBarItem.
 
 Tooltip Settings
 

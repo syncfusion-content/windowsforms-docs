@@ -14,7 +14,7 @@ This section covers the below topics:
 
 Essential Tools supports extensive DataBinding in DateTimePickerAdv using the Value and BindableValue property. The following example illustrates the DataBinding of the DataSet belonging to a DataGrid. 
 
-N>: Always use BindableValue property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
+N> Always use BindableValue property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
 
 To bind a DateTimePickerAdv, perform the following steps.
 
@@ -225,7 +225,7 @@ Culture</td><td>
 Gets or set the culture of the calendar that implements this interface.</td></tr>
 </table>
 
-Table197: Events Table
+Events Table
 
 <table>
 <tr>

@@ -86,12 +86,13 @@ overridden by above ColumnStyles settings.
 
 ![](Column-Appearance-images/Column-Appearance-img1.jpg)
 
-Figure 901: ColumnsHeaderBackground property in the Properties Grid
-
+ColumnsHeaderBackground property in the Properties Grid
+{:.caption}
 
 ![](Column-Appearance-images/Column-Appearance-img2.jpg)
 
-Figure 902: Gradient colors set for Header Background
+Gradient colors set for Header Background
+{:.caption}
 
 ### Adding HighlightBorderColor property
 
@@ -114,4 +115,5 @@ Me.treeColumnAdv1.HighlightBorderColor = Color.Brown;
 
 ![](Column-Appearance-images/Column-Appearance-img3.jpg)
 
-Figure 903: Column Header Highlight Border Color changed
+Column Header Highlight Border Color changed
+{:.caption}

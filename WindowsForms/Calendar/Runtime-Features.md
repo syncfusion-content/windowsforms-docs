@@ -57,7 +57,7 @@ Me.dateTimePickerAdv1.MonthImageList = Me.imageList1
 
 At run time, user can easily navigate between values in the text field like date, month, year, time using the TAB key. The below properties settings are necessary for tabbing between the fields.
 
-Table192: Property Table
+Property Table
 
 <table>
 <tr>
@@ -152,7 +152,7 @@ The menu options are:
 
 We can set the text value format that is copied to the clipboard using ClipboardFormat property.
 
-Table191: Property Table
+Property Table
 
 <table>
 <tr>

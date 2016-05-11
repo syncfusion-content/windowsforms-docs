@@ -19,7 +19,7 @@ Appearance contains a list of GridStyleInfo properties as seen in the following 
 
 To understand exactly what is going on here, let us consider three of these GridStyleInfo properties: AnyCell, AnyRecordFieldCell and AnyAlternateRecordFieldCell. Say we set AnyCell.BackColor = Color.LightBlue. This will color any grid cell light blue.
 
-N>: If you are using a Themed Operating system like Windows XP, turn the GridGroupingControl.ThemesEnabled property off so that the theme coloring does not affect things like header cell buttons. Otherwise, this will interfere with illustrating the concepts we are trying to communicate in this section.
+N> If you are using a Themed Operating system like Windows XP, turn the GridGroupingControl.ThemesEnabled property off so that the theme coloring does not affect things like header cell buttons. Otherwise, this will interfere with illustrating the concepts we are trying to communicate in this section.
 
 Next, if we set AnyRecordFieldCell.BackColor = Color.Azure, we will see the color of any record field cell change to azure. If we then set AnyAlternateRecordFieldCell.BackColor = Color.LightGreen, we will see alternate records being displayed with a green background. Below is a picture illustrating the look of the grid after setting each property in order. 
 
@@ -43,7 +43,7 @@ When using Preview tool at design-time, there is a cell tip that is displayed ov
 
 
 
-N>: When using Preview, make sure that you set ThemesEnabled to False, if you want to see the effect of setting the property on a header cell or a button type cell. If you do not, then the theme appearance will supersede the appearance properties you set here.
+N> When using Preview, make sure that you set ThemesEnabled to False, if you want to see the effect of setting the property on a header cell or a button type cell. If you do not, then the theme appearance will supersede the appearance properties you set here.
 
 > _Some of the properties are not applicable unless the item they affect is used in the grid. For example, properties that affect nested tables or summaries will not change the appearance of a Grid Grouping control that does not have either of these items. In latter tutorials, you will be able to test such properties._
 
@@ -420,7 +420,7 @@ Here is a sample screenshot.
 
 
 
-N>: For more details, refer To the following browser sample:
+N> For more details, refer To the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting_
 
@@ -478,7 +478,7 @@ Here is a sample screen shot.
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Group Style Demo_
 
@@ -576,7 +576,7 @@ Given below is a sample screen shot.
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Column Style Demo_
 
@@ -848,7 +848,7 @@ Given below is a sample screenshot.
 
 
 
-N>: For more details, refer the following browser sample:
+N> For more details, refer the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Conditional Formatting Demo_
 
@@ -998,7 +998,7 @@ Given below is a sample screen shot.
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
 
@@ -1393,12 +1393,9 @@ Me.gridGroupingControl1.TableOptions.GridVisualStyles = GridVisualStyles.Office2
 
  ![](Appearance_images/Appearance_img26.jpeg) 
 
-
-
-
-
- _Figure 345: Grid Grouping Control with Office 2007 Blue Visual Style_
-
+ 
+ Grid Grouping Control with Office 2007 Blue Visual Style
+ {:.caption}
 
 
 ![](Appearance_images/Appearance_img27.jpeg) 
@@ -1620,7 +1617,7 @@ In the Preview, try various property settings to see their effect on display. Be
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Table Options Demo_
 

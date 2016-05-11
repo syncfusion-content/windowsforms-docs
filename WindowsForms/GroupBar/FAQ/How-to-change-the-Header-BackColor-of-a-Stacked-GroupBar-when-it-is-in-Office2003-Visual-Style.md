@@ -49,7 +49,7 @@ Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorLight = Color.White
 
 
 
-N> In GroupBar, StackedMode property should be enabled to customize the appearance of the GroupBar header._
+N> In GroupBar, StackedMode property should be enabled to customize the appearance of the GroupBar header.
 
 ![](Overview_images/Overview_img47.png) 
 

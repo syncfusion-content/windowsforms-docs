@@ -43,7 +43,8 @@ Use the following steps to view the samples:
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
-   _Figure 1: Syncfusion Essential Studio Dashboard_
+   Syncfusion Essential Studio Dashboard
+   {:.caption}
 
 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
 
@@ -59,17 +60,15 @@ Use the following steps to view the samples:
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
-   _Figure 2: UI Windows Forms Sample Browser_
-
+   UI Windows Forms Sample Browser
+   {:.caption}
 
 3. Click the TreeMap under Data Visualization. The TreeMap samples will be displayed.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
-
-
-   _Figure 3: Essential TreeMap WF Samples_
-
+   Essential TreeMap WF Samples
+   {:.caption}
 
 
 4. Select any sample and browse through the features. 

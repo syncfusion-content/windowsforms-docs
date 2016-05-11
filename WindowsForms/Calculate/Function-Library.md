@@ -1131,7 +1131,7 @@ Ref1 The first named range which is used for the subtotal. This value is require
 
 Ref2 This value is optional.
 
-N> If the subtotal function has any nested subtotal functions, then the nested subtotal is ignored for double counting._
+N> If the subtotal function has any nested subtotal functions, then the nested subtotal is ignored for double counting.
 
 ### MROUND
 
@@ -1499,7 +1499,7 @@ FORMULA</th><th>
 RESULT</th></tr>
 <tr>
 <td>
-=T(“Syncfusion”)</td><td>
+=T('Syncfusion')</td><td>
 Syncfusion</td></tr>
 <tr>
 <td>

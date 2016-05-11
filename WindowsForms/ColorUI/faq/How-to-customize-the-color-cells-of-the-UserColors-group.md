@@ -70,6 +70,6 @@ Next
      Me.colorUIControl1.UserColorsStretchOnResize = True
 {% endhighlight  %}
 
-N> UserGroups should be selected in ColorGroups property to effect the above settings._
+N> UserGroups should be selected in ColorGroups property to effect the above settings.
 
 ![](FAQ_images/Overview_img245.jpeg) 

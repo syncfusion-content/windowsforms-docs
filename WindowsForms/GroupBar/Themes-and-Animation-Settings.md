@@ -26,8 +26,8 @@ Me.groupBar1.ThemesEnabled = True
 
 ![](Overview_images/Overview_img37.jpeg) 
 
-Figure 947: Themed look of Office 2007 Style GroupBar
-
+Themed look of Office 2007 Style GroupBar
+{:.caption}
 
 ## Animation Settings
 

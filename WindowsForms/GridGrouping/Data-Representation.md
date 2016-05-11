@@ -101,7 +101,7 @@ Me.gridGroupingControl1.TableDescriptor.Relations(0).ChildTableDescriptor.Groupe
 
 {% endhighlight %}
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Grouping Demo_
 
@@ -113,7 +113,7 @@ Grid Grouping control provides built-in support to group the data by more than o
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\2.0\Grouping\Multi Column Grouping Demo_
 
@@ -838,7 +838,7 @@ By default, GroupDropArea is displayed at the top of the Grid Grouping control. 
 
 
 
-N>: For GroupDropAreaAlignment property to take effect, HierarchicalGroupDropArea property must be set to false.
+N> For GroupDropAreaAlignment property to take effect, HierarchicalGroupDropArea property must be set to false.
 
 
 
@@ -908,7 +908,8 @@ The following screen shot shows GroupDropArea positioned at the left of Grid Gro
 
  ![](Data-Representation_images/Data-Representation_img17.png) 
 
-_Figure_ _376__: GroupDropArea aligned at the Left_
+ GroupDropArea aligned at the Left
+ {:.caption}
 
 
 
@@ -1345,7 +1346,7 @@ Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Col
 
 
 
-N>: For more details, refer to the following browser samples:
+N> For more details, refer to the following browser samples:
 
 * _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Top-Level-Group Options Demo_
 * _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Child-Group Options Demo_
@@ -1937,7 +1938,7 @@ Here is a sample output. To indicate sort direction, a sort icon will be display
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Multi Column Sorting Demo_
 
@@ -1945,7 +1946,7 @@ N>: For more details, refer to the following browser sample:
 
 Grid Grouping control sorts the grid based on Value member of the grid data, by default. The user can also sort grid data by Display members of foreign-key combo boxes by setting up a foreign-key reference relation between related tables. 
 
-N>: A foreign-key reference relation allows the user to look up values in a related table using an id column in the main table.
+N> A foreign-key reference relation allows the user to look up values in a related table using an id column in the main table.
 
 The following code example illustrates the usage of foreign-key relation:
 
@@ -2115,7 +2116,7 @@ td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 
 In the figure above, CustomerName column is displayed in Foreign Table whereas a column named Customer is located in the Main Table. Customer column holds key values that match the values in a column named CustomerID in the Foreign Table.
 
-N>: For more details, refer to the following browser sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sort By Display Member Demo
+N> For more details, refer to the following browser sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sort By Display Member Demo
 
 ### Enable or Disable Sorting
 
@@ -2177,7 +2178,7 @@ End Sub
 
 {% endhighlight %}
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sorting Demo_
 
@@ -2311,7 +2312,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Getting Started_
 
@@ -2544,7 +2545,7 @@ Here is a sample screen shot.
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Nested-Table and Group Summary Demo_
 
@@ -2730,7 +2731,7 @@ Here is another screenshot that shows the grouping grid with Caption Summaries d
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Caption Summary Demo_
 
@@ -2860,7 +2861,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd)
 
 
 
-N>: For more details, refer the following browser sample:
+N> For more details, refer the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Summaries\Sort by Summary Demo_
 
@@ -2965,7 +2966,7 @@ The screen shot given below highlights these expression fields.
 ![](Data-Representation_images/Data-Representation_img49.jpeg) 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Expression Field Demo_
 
@@ -3241,7 +3242,7 @@ Given below is a sample screen shot showing the grid filtered with wins > 20.
 
 
 
-N>: Filter Expressions share the same format as in expression fields. For a list of valid expressions, refer to_ List of Filter Expressions.
+N> Filter Expressions share the same format as in expression fields. For a list of valid expressions, refer to_ List of Filter Expressions.
 
 #### Nested Tables
 
@@ -3428,7 +3429,7 @@ End Function
 
 {% endhighlight %}
 
-N>: The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx for detailed information.
+N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx for detailed information.
 
 Clearing Filters
 
@@ -3450,7 +3451,7 @@ Me.gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
 
 {% endhighlight %}
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Getting Started_
 
@@ -3587,7 +3588,7 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowFilterBar = True
 
 {% endhighlight %}
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter Bar Demo_
 
@@ -3646,7 +3647,7 @@ Below image illustrates a sample output.
 
 
 
-N>: For more details, refer the following browser sample:
+N> For more details, refer the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Dynamic Filter Demo_
 
@@ -4166,7 +4167,7 @@ gGCFilter.UnwireGrid(gridGroupingControl1)
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Filters and Expressions\Filter By DisplayMember Demo_
 
@@ -4299,11 +4300,8 @@ After binding an hierarchical dataset to the grouping grid, you could find Table
 ![](Data-Representation_images/Data-Representation_img67.png) 
 
 
-
-
-
-_Figure_ _410__: Setting Up Relations by using GridRelationDescriptor Collection Editor_
-
+Setting Up Relations by using GridRelationDescriptor Collection Editor
+{:.caption}
 
 
 #### Properties
@@ -4757,7 +4755,7 @@ Me.gridGroupingControl1.DataSource = parentTable
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Related Master Details Demo_
 
@@ -5371,7 +5369,7 @@ mainTd.Name = "ForeignKeyReference"
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo_
 
@@ -5712,7 +5710,7 @@ Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Employee Territory Order Demo\_
 
@@ -6340,7 +6338,7 @@ mainTd.Name = “ListItemReference”
 
 
 
-N>: For more details, refer the following browser sample:
+N> For more details, refer the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\List Item Reference Demo_
 
@@ -7026,7 +7024,7 @@ chiltTable.TableDescriptor.GroupedColumns.Add("Field1")
 
 
 
-N>: For more details, refer to the following browser sample:
+N> For more details, refer to the following browser sample:
 
 > _&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Uniform Child List Demo_
 

@@ -14,5 +14,5 @@ Refer TreeView Package > [RunTime Features](/windowsforms/treeview/runtime-featu
 
  
 
-N> Context Menu, Hot Tracking and Tooltip features can be applied only to the nodes in the first column._
+N> Context Menu, Hot Tracking and Tooltip features can be applied only to the nodes in the first column.
 

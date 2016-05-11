@@ -21,8 +21,8 @@ using the SubItems Collection Editor. There are also properties to modify the ap
 
  ![](Adding-Multiple-Columns-and-SubItems_images/Adding-Multiple-Columns-and-SubItems_img1.jpeg) 
  
- Figure : Columns Editor
-
+ Columns Editor
+ {:.caption}
 
 This dialog can be accessed using the context menu of the control or the command available at the bottom of the 
 property grid. The context menu also lets you add columns directly using "Add Column".
@@ -136,7 +136,7 @@ RightImage</td><td>
 Sets the right image for the column.</td></tr>
 </table>
 
-N> The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers._
+N> The TreeColumnAdv1.Background settings overrides the MultiColumnTreeView.ColumnsHeaderBackground property settings for individual column headers.
 
 ### Painting the Column Area
 

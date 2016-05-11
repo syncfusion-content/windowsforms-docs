@@ -36,7 +36,7 @@ Title</td><td>
 Sets the title of the current page.</td></tr>
 </table>
 
-N> The Title and Description settings can be set for individual Wizard Pages using WizardPage.Title and WizardPage.Description properties respectively. See _Wizard Page Settings_.
+N> The Title and Description settings can be set for individual Wizard Pages using WizardPage.Title and WizardPage.Description properties respectively. See _Wizard Page Settings.
 
 {% highlight c# %}
 

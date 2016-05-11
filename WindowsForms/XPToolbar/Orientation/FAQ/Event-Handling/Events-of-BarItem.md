@@ -11,7 +11,7 @@ documentation: ug
 
 This section discusses the events of bar item. 
 
-_Table_ _519_: _Events Table_
+Events Table
 
 <table>
 <tr>

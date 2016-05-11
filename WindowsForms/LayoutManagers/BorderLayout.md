@@ -121,11 +121,13 @@ Me.borderLayout1.SetPosition(Me.btnNorth, Syncfusion.Windows.Forms.Tools.BorderP
 
 ![](BorderLayout_images/BorderLayout_img1.png)
  
-Figure 690: Setting the position of button1 on BorderLayout to "North"
+Setting the position of button1 on BorderLayout to "North"
+{:.caption}
  
 ![](BorderLayout_images/BorderLayout_img2.png)
  
-Figure 691: Layout of all Button Controls using BorderLayout
+Layout of all Button Controls using BorderLayout
+{:.caption}
 
 N> BorderLayout allows only one control to be aligned along a particular layout position, unlike the .NET Framework support.
 
