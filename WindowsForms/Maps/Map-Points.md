@@ -112,4 +112,5 @@ Screenshot:
 
 ![](Map-Points_images/Map-Points_img1.png)
 
- _Figure 19: Map points_
+Map points
+{:.caption}

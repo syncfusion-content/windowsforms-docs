@@ -76,7 +76,7 @@ DirectoryPath</td><td>
 Retrieves the location of the selected folder.</td></tr>
 </table>
 
-N> For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'._
+N> For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'.
 
 {%highlight c#%}
 

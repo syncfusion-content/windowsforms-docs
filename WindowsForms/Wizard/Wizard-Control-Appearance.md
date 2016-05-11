@@ -33,7 +33,7 @@ Sets the font style for the display text in the wizard control.</td></tr>
 ForeColor</td><td>
 Sets the fore color for the display text in the control.</td></tr>
 </table>
-N> These WizardControl.Font property will be applied only to the Description text and the Button texts of the Wizard Page. WizardControl.ForeColor property will be applied to the Page Title and description text alone. To set Font style for Title and description, see Title and Description Settings topic._
+N> These WizardControl.Font property will be applied only to the Description text and the Button texts of the Wizard Page. WizardControl.ForeColor property will be applied to the Page Title and description text alone. To set Font style for Title and description, see Title and Description Settings topic.
 
 {% highlight c# %}
 
@@ -62,7 +62,7 @@ Me.wizardControl1.ForeColor = System.Drawing.Color.DarkBlue
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img2.jpeg) 
 
 
-N> These settings can be overridden by the individual WizardPage.Font and WizardPage.ForeColor settings._ 
+N> These settings can be overridden by the individual WizardPage.Font and WizardPage.ForeColor settings.
 
 The foreground settings for the Button text can be overridden by the WizardPage.Button.Font and WizardPage.Button.ForeColor settings also. See Button Appearance topic.
 
@@ -157,7 +157,7 @@ Me.wizardControl1.BackColor = System.Drawing.Color.LightSteelBlue
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img5.jpeg)
 
 
-N> By default the background settings of the Wizard control will be overridden by the Wizard Container background settings._
+N> By default the background settings of the Wizard control will be overridden by the Wizard Container background settings.
 
 ### Banner Panel Background
 
@@ -300,7 +300,7 @@ Banner Panel is a simple gradient panel whose 3D border styles are as follows.
 * Adjust
 * Flat
 
-N> The GradientPanel.BorderStyle property should be set to "Fixed3D" to make this setting effective._
+N> The GradientPanel.BorderStyle property should be set to "Fixed3D" to make this setting effective.
 
 {% highlight c# %}
 

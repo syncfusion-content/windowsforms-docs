@@ -190,7 +190,7 @@ _(Installed location of Essential QuickTest Professional)\Config_
 
    
 
-   N> In the preceding code, the fully qualified name of the assembly given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:_
+   N> In the preceding code, the fully qualified name of the assembly given in the <DllName> tag assumes that you have installed the Essential QuickTest Professional in the following default path:
    
    > C:\Program Files\Syncfusion\Essential QuickTest Professional\<Version number>\
 

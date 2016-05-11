@@ -52,7 +52,7 @@ Me.progressBarAdv1.BackgroundFallbackStyle = Syncfusion.Windows.Forms.Tools.Prog
 ![](Overview_images/Overview_img6.jpeg) 
 
 
-N> To display the above styles in different colors the BackGradientStartColor and BackGradientEndColor properties can be used._
+N> To display the above styles in different colors the BackGradientStartColor and BackGradientEndColor properties can be used.
 
 
 ## Background Segments

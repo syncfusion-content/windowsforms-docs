@@ -221,7 +221,7 @@ Me.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 ![](Overview_images/Overview_img450.png) 
 
 
-N> The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value._
+N> The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value.
 
 ### OverflowIndicatorToolTipText
 

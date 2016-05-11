@@ -96,8 +96,10 @@ Me.groupBar1.HeaderForeColor = System.Drawing.Color.Maroon
 
 {% endhighlight %}
 
- ![](Overview_images/Overview_img31.jpeg) 
-Figure 942: GroupBar Items with Background Color = "LavenderBlush" and Foreground Color = "Silver"
+ ![](Overview_images/Overview_img31.jpeg)
+ 
+GroupBar Items with Background Color = "LavenderBlush" and Foreground Color = "Silver"
+{:.caption}
 
 The methods given below are used to reset the above properties.
 

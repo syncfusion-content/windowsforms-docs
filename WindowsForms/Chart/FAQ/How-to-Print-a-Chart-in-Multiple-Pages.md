@@ -473,10 +473,10 @@ End Sub
 
 {% endhighlight %}
 
-N> Note: The initial page will be printed based on the specified minimum and maximum value. In further pages minimum value will be the maximum value of previous page and maximum will be the sum of current page minimum value and the specified maximum value in the Range._
+N> Note: The initial page will be printed based on the specified minimum and maximum value. In further pages minimum value will be the maximum value of previous page and maximum will be the sum of current page minimum value and the specified maximum value in the Range.
 
 
-_Events_
+Events
 
 <table>
 <tr>

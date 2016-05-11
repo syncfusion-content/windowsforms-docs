@@ -80,4 +80,4 @@ Me.groupBar1.GroupBarItemCursor = System.Windows.Forms.Cursors.Hand
  ![](Overview_images/Overview_img35.jpeg) 
 
 
-N> The ResetGroupBarItemCursor() method can be used to reset the cursor when it is displayed over a GroupBar Item._ 
+N> The ResetGroupBarItemCursor() method can be used to reset the cursor when it is displayed over a GroupBar Item.

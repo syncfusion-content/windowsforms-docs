@@ -11,7 +11,7 @@ documentation: ug
 
 When the control is set to disabled, we could not make any changes in it. But we can make the text active by setting DrawActiveWhenDisabled to True.
 
-Table 321: Property Table
+Property Table
 
 <table>
 <tr>

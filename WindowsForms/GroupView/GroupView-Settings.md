@@ -145,8 +145,10 @@ Me.groupView1.ItemYSpacing = 10
 {% endhighlight %}
 
  ![](Overview_images/Overview_img58.jpeg) 
-Figure 966: GroupBar with ItemXSpacing = "5" and ItemYSpacing = '"10"
-
+ 
+ GroupBar with ItemXSpacing = "5" and ItemYSpacing = '"10"
+ {:.caption}
+ 
 ## Scroll Settings
 
 We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling property to 'True'.

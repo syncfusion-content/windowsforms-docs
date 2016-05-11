@@ -11,7 +11,7 @@ documentation: ug
 
 ComboBoxBarItem includes Events of BarItem and also contains events discussed in this section. 
 
-_Table_ _521_: _Events Table_
+Events Table
 
 <table>
 <tr>

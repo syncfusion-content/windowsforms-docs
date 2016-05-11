@@ -77,8 +77,9 @@ To view the samples, follow the steps below:
    
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
     
-   _Figure_ _4_: _PivotGrid samples_
-
+   PivotGrid samples
+   {:.caption}
+   
 4. Select any sample and browse through the features.
 
 #### Source Code Location

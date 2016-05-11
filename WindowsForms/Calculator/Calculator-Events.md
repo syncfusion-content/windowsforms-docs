@@ -17,7 +17,7 @@ The ValueCalculated event fires each time the value of the CalculatorControl is 
 
 The event  handler receives an argument of type CalculatorValueCalculatedEventArgs. To get the final result, use LastAction property of the CalculatorValueCalculatedEventArgs in the ValueCalculated event. 
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>

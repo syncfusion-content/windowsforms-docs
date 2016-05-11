@@ -95,8 +95,8 @@ uniColorMapping.Color = Color.MediumSlateBlue;
 ![](Features_images/Features_img8.png)
 
 
-
-_Figure_ _5_: _Leaf Nodes colored by using UniColorMapping_
+Leaf Nodes colored by using UniColorMapping
+{:.caption}
 
 
 
@@ -188,9 +188,8 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
 
 ![](Features_images/Features_img9.png)
 
-
-
-_Figure_ _6_: _Leaf nodes colored by using RangeBrushColorMapping_
+Leaf nodes colored by using RangeBrushColorMapping
+{:.caption}
 
 
 
@@ -280,9 +279,8 @@ public partial class Form1 : Form
 
 ![](Features_images/Features_img10.png)
 
-
-
-_Figure_ _7_:  _Leaf nodes colored by using DesaturationColorMapping_
+Leaf nodes colored by using DesaturationColorMapping
+{:.caption}
 
 
 
@@ -369,6 +367,6 @@ public partial class Form1 : Form
 ![](Features_images/Features_img11.png)
 
 
-
-_Figure_ _8_:  _Leaf nodes colored by using PaletteColorMapping_
+Leaf nodes colored by using PaletteColorMapping
+{:.caption}
 

@@ -1144,9 +1144,8 @@ This sample illustrates the customization of HTMLUI Appearance.
 ![](Style-Sheets-CSS_images/Style-Sheets-CSS_img4.jpeg)
 
 
-
-_Figure_ _43_: HTMLUIBackColor Sample
-
+HTMLUIBackColor Sample
+{:.caption}
 
 
 By default, this sample can be found under the following location:

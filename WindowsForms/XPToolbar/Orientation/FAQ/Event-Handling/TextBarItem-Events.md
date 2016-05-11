@@ -11,7 +11,7 @@ documentation: ug
 
  TextBarItem includes Events of BarItem and also contains events discussed in this section. 
 
-_Table_ _525_: _Events Table_
+Events Table
 
 <table>
 <tr>

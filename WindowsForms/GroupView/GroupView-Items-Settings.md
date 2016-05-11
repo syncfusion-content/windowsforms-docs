@@ -32,8 +32,9 @@ Me.groupView1.HighlightText = True
 {% endhighlight %}
 
  ![](Overview_images/Overview_img60.jpeg)
-Figure 968: "My Computer" Item is Highlighted in the GroupView Control
-
+ 
+ "My Computer" Item is Highlighted in the GroupView Control
+ {:.caption} 
 
 ### Text Offset
 
@@ -65,7 +66,7 @@ Sets the text offset for the selected GroupView Item.</td></tr>
 </table>
 
 
-N> HighlightText property must be set to 'True' in all the cases._
+N> HighlightText property must be set to 'True' in all the cases.
 
 {% highlight C# %}  
 
@@ -248,7 +249,7 @@ HighlightTextColor</td><td>
 Specifies the color for highlighting the text of the GroupView Items when the mouse is moved over it.</td></tr>
 </table>
 
-N> HighlightText property must be set to 'True' in both the cases._
+N> HighlightText property must be set to 'True' in both the cases.
 
 {% highlight C# %}  
 
@@ -329,7 +330,7 @@ SelectingTextColor</td><td>
 Specifies the color used to draw the text of the GroupView Item being selected.</td></tr>
 </table>
 
-N> HighlightText property must be set to 'True' in all the cases._
+N> HighlightText property must be set to 'True' in all the cases.
 
 {% highlight C# %}  
 

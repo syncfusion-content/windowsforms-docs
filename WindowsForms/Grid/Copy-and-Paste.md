@@ -252,7 +252,7 @@ Me.gridControl1.CutPaste.CutRange(range, False)
 ![](CopyPaste_images/CopyPaste_img2.jpeg)
 
 N> If the cell have integer data type, it will became null during the cut operation. The integer data type does not accept the null values therefore it will throws the “InvalidOperationException was unhandled, Rollback without BeginTrans” exception. This exception can be avoided by setting the nullable data type to the cells. For example, The `int` data type is need to be changed to `int?`.
-N>[https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells](https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells) 
+N> [https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells](https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells) 
 
 ## Disable Cut, Copy and Paste
 The Clipboard Cut, Copy and Paste operations of the grid can be disabled by setting the [ClipboardFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs~ClipboardFlags.html) value as `GridDragDropFlags.Disabled`.

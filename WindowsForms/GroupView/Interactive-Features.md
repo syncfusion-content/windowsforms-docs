@@ -50,9 +50,11 @@ Me.groupView1.ClipSelectionBounds = True
 
 
 
- ![](Overview_images/Overview_img85.png) 
-Figure 987: ButtonView of the 'Cut' Item
-
+ ![](Overview_images/Overview_img85.png)
+ 
+ ButtonView of the 'Cut' Item
+ {:.caption}
+ 
 ## ToolTips
 
 The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips 
