@@ -237,7 +237,7 @@ Me.gridGroupingControl1.Splitter.BackColor = Color.Green
 
 ![](Grouping_images/Grouping_img8.jpeg)
 
-Below code can be used to change the backcolor of the `GroupDropArea`.
+Below code can be used to change the BackColor of the `GroupDropArea`.
 
 {% tabs %}
 {% highlight c# %}
@@ -250,7 +250,7 @@ Me.gridGroupingControl1.Splitter.BackColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-GroupDropArea can be accessed as a grid, events like [PrepareViewStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrepareViewStyleInfo_EV.html) can be used. Using this event, you can change the font, text, textcolor and other customizations in GroupDropArea. 
+GroupDropArea can be accessed as a grid, events like [PrepareViewStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrepareViewStyleInfo_EV.html) can be used. Using this event, you can change the Font, Text, TextColor and other customizations in GroupDropArea. 
 {% tabs %}
 {% highlight c# %}
 foreach (Control ctl in this.gridGroupingControl1.GroupDropPanel.Controls)

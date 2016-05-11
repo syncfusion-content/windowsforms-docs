@@ -33,5 +33,5 @@ gecc.GridToExcel(Me.gridControl1.Model, "C:\MyGC.xls")
 
 {% endhighlight %}
 
-The following dll files should be added along with the default dll files in the reference folder: Syncfusion.GridConverter.Base and Syncfusion.XlsIO.Base.
+The following asssembly files should be added along with the default assembly files in the reference folder: Syncfusion.GridConverter.Base and Syncfusion.XlsIO.Base.
 

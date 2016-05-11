@@ -117,7 +117,7 @@ Essential HTMLUI places the following control into your Visual Studio .NET toolb
 
 
 
-### DLLs
+### Assemblies
 
 While deploying an application that references a Syncfusion Essential HTMLUI assembly, the following dependencies must be included in the distribution.
 

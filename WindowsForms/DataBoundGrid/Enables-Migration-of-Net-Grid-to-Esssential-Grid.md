@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Enables-Migration-of-Net-Grid-to-Esssential-Grid | Windows Forms | Syncfusion
-description: enables migration of .net grid to esssential grid
+title: Enables-Migration-of-Net-Grid-to-Essential-Grid | Windows Forms | Syncfusion
+description: enables migration of .net grid to essential grid
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Enables Migration of .Net Grid to Esssential Grid
+# Enables Migration of .NET Grid to Essential Grid
 
-Look-up table that Enables Migration of .Net Grid to Esssential Grid
+Look-up table that Enables Migration of .NET Grid to Essential Grid
 
-The following section contains document that enables users to migrate .Net Grid to Esssential Grid. Most of the properties, events, methods have common names in both grids. So it is not included in the following table. Since the API of both the grids is different, following document contains only common features that can be implemented with single line of code.
+The following section contains document that enables users to migrate .NET Grid to Essential Grid. Most of the properties, events, methods have common names in both grids. So it is not included in the following table. Since the API of both the grids is different, following document contains only common features that can be implemented with single line of code.
 
 ## Equivalent Properties available
 
@@ -21,7 +21,7 @@ The following section contains document that enables users to migrate .Net Grid 
 <tr>
 <th>
 .NET GRID</th><th>
-ESSSENTIAL GRID</th><th>
+ESSENTIAL GRID</th><th>
 DESCRIPTION</th></tr>
 <tr>
 <td>
@@ -47,7 +47,7 @@ Gets or sets a value indicating whether it allows dragging of selected columns f
 <td>
 AllowUserToResizeRows</td><td>
 ResizeRowsBehavior</td><td>
-Gets or sets a value indicating wheather row is resizable.</td></tr>
+Gets or sets a value indicating whether row is resizable.</td></tr>
 <tr>
 <td>
 ColumnCount</td><td>

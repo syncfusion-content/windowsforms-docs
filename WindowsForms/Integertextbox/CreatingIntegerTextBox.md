@@ -28,7 +28,7 @@ This section will give a step by step procedure to design an IntegerTextBox cont
    
    
 
-## Through Programmatical Approach
+## Through Programmatic Approach
 
 The IntegerTextBox control can be created programming through code as detailed below.
 

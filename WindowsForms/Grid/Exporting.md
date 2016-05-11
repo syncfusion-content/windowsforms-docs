@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Exporting
-The columns and rows of the grid can be exported to the Excel, Pdf and word documents. This section will explain about the properties, methods and events available for exporting the GridControl.
+The columns and rows of the grid can be exported to the Excel, PDF and word documents. This section will explain about the properties, methods and events available for exporting the GridControl.
 
 ## Excel Export
 The GridControl has in-built support to export the contents of the GridControl to Excel. The class [GridExcelConverterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support for exporting the GridControl to Excel. 
@@ -373,7 +373,7 @@ pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 ![](Exporting_images/Exporting_img11.jpeg)
 
 ### Adding Header/Footer 
-The pdf converter provides the options to export the contents of the grid with header/footer. This can be achieved by enabling the [ShowHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ShowHeader.html) and [ShowFooter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ShowFooter.html) properties of the converter. 
+The PDF converter provides the options to export the contents of the grid with header/footer. This can be achieved by enabling the [ShowHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ShowHeader.html) and [ShowFooter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ShowFooter.html) properties of the converter. 
 {% tabs %}
 {% highlight c# %}
 //Create PDF converter 
@@ -400,7 +400,7 @@ pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
 ### Setting Header and Footer Height
-The height of the header and footer of the exporter pdf file can be set by using the [HeaderHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~HeaderHeight.html) and [FooterHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~FooterHeight.html) properties.
+The height of the header and footer of the exporter PDF file can be set by using the [HeaderHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~HeaderHeight.html) and [FooterHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~FooterHeight.html) properties.
 {% tabs %}
 {% highlight c# %}
 //Create PDF converter

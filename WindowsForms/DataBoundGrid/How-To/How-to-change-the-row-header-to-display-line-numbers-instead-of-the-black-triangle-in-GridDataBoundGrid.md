@@ -9,7 +9,7 @@ documentation: ug
 
 # How to change the row header to display line numbers instead of the black triangle in GridDataBoundGrid
 
-You can achieve this by setting the row header base style to Header, and handling PrepareViewStyleInfo event handlerto set the line numbers. Refer to the code snippet below, which illustrates this.
+You can achieve this by setting the row header base style to Header, and handling PrepareViewStyleInfo event handler to set the line numbers. Refer to the code snippet below, which illustrates this.
 
 {% highlight c# %}
 

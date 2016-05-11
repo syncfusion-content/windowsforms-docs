@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization
 
-GridControl provide the support for [serialization](https://msdn.microsoft.com/en-us/library/ms233843.aspx#) and de-serialization of grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [deserialization](https://msdn.microsoft.com/en-us/library/fa420a9y.aspx#).
+GridControl provide the support for [serialization](https://msdn.microsoft.com/en-us/library/ms233843.aspx#) and de-serialization of grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://msdn.microsoft.com/en-us/library/fa420a9y.aspx#).
 
 GridControl has the different types of serialization techniques as follows,
 
@@ -59,7 +59,7 @@ Me.gridControl1.Model = GridModel.LoadBinary("GridSchema")
 
 ## XML 
 
-This serialization technique is used to store the data (schema) and Look and feel of the GridControl in to the xml file. This can be applied back to the grid at the time of deserialization.
+This serialization technique is used to store the data (schema) and Look and feel of the GridControl in to the XML file. This can be applied back to the grid at the time of deserialization.
 
 ### Serialization 
 
@@ -79,7 +79,7 @@ Me.gridControl1.SaveXml("GridSchemaXml")
 
 ### Deserialization 
 
-The [InitializeFromXml](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~InitializeFromXml.html#) method is used to deserialize the contents of the xml file to restore the schema and look and feel of the GridControl.
+The [InitializeFromXml](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~InitializeFromXml.html#) method is used to deserialize the contents of the XML file to restore the schema and look and feel of the GridControl.
 
 {% tabs %} 
 {% highlight c# %}
@@ -97,7 +97,7 @@ Me.gridControl1.Refresh()
 {% endhighlight %}
 {% endtabs %}
 
-### Saving Grid Data using Xml Serialization 
+### Saving Grid Data using XML Serialization 
 
 The grid data (schema) can alone serialize without the style information (Look and Feel) by using the [XmlSerializer](https://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx#) method. 
 
@@ -135,9 +135,9 @@ s.Close()
 {% endhighlight %}
 {% endtabs %}
 
-### Loading Grid Data using Xml Serialization
+### Loading Grid Data using XML Serialization
 
-The schema can be deserialized from the xml file and loaded to the grid by using the following code snippet,  
+The schema can be deserialized from the XML file and loaded to the grid by using the following code snippet,  
 
 {% tabs %} 
 {% highlight c# %}

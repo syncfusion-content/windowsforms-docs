@@ -26,7 +26,7 @@ This section discusses the feature list of GroupView.
 
     The text of the GroupView Items can be highlighted and formatted. The text offset can also be set.
 
-    Options for renaming the GroupView Items at run-time, described as Inplace Renaming is supported by the GroupView control.
+    Options for renaming the GroupView Items at run-time, described as inplace Renaming is supported by the GroupView control.
 
  * Color Settings
 

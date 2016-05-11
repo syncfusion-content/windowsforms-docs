@@ -10,6 +10,57 @@ documentation: ug
 # Getting Started
 This section will explain about creating simple GridGroupingControl and the overview of its basic functionalities.
 
+## Choosing the Best Grid 
+
+Essential Grid includes a trio of grid controls as well as many other controls that are used in conjunction with these three grids. Essential Grid works similar to Microsoft Excel and allows extremely detailed customization down to the cell level. Multi-level Undo / Redo, Shared Scrollbar support, Data / View separation, floating cells, more than 15 cell types, and unmatched extensibility are the unique features of the Essential Grid.
+
+[GridGroupingControl](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started) - a high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx#) data source including [ADO.NET](https://msdn.microsoft.com/en-us/library/e80y5yhx.aspx#) [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx#)/[DataTables](https://msdn.microsoft.com/en-US/library/system.data.datatable.aspx#) and [IBindingList](https://msdn.microsoft.com/en-us/library/system.componentmodel.ibindinglist.aspx#) objects.
+
+[GridDataBoundGrid](http://help.syncfusion.com/windowsforms/databoundgrid/getting-started#) - a column oriented grid best suited for use with ADO.NET [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx#)/[DataTables](https://msdn.microsoft.com/en-US/library/system.data.datatable.aspx#) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
+
+[GridControl](#Getting_Started) - a cell oriented grid that can contain its own data and does not need to be bound to a data source. It has the facility to easily be customized down to the cell level. This grid can also be used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grid#) such that it can bind to any type of data source.
+
+<table>
+<tr>
+<th>
+Control<br/><br/></th><th>
+Grouping<br/><br/></th><th>
+Sorting<br/><br/></th><th>
+Summary<br/><br/></th><th>
+Filtering<br/><br/></th><th>
+Export<br/><br/></th></tr>
+<tr>
+<td>
+GGC<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td></tr>
+<tr>
+<td>
+GDBG<br/><br/></td><td>
+-<br/><br/></td><td>
+Yes<br/><br/></td><td>
+-<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td></tr>
+<tr>
+<td>
+GC<br/><br/></td><td>
+-<br/><br/></td><td>
+*<br/><br/></td><td>
+-<br/><br/></td><td>
+*<br/><br/></td><td>
+Yes<br/><br/></td></tr>
+</table>
+
+N> The `*` is denotes that by default the support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://www.syncfusion.com/kb/454) and [Filtering](https://www.syncfusion.com/kb/4409/how-to-add-filter-in-grid-control) functionalities can be added to the `GridControl`by doing some customizations. 
+
+For binding the different kind of data sources and support for filtering, sorting, grouping for flat and hierarchical data sources make use of the `GridGroupingControl`.
+
+If user wants a cell oriented grid that can contain its own data and does not need to be bound to a data source then `GridControl` is the best choice
+
 ## Assembly Deployment
 The following list of assemblies need to be added as reference to use GridGroupingControl in any application,
 
@@ -51,13 +102,13 @@ Syncfusion.Grouping.Base allows you to easily access, manipulate, and display yo
 {{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html)'| markdownify }}
 </td>
 <td>
-Syncfudion.Shared.Base contains style related properties and various editor controls which are used in GridControl.
+Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.
 </td>
 </tr>
 </table>
 
 ## Configuring a simple GridGroupingControl
-This section will explain how to create a simple GridGroupingControl in WindowsForms application and some of the basic functionalities of it.
+This section will explain how to create a simple GridGroupingControl in Windows Forms application and some of the basic functionalities of it.
 
 ### Adding GridGroupingControl through Designer
 GridGroupingControl can be added through designer by following the below steps.

@@ -28,7 +28,7 @@ There is no built-in support in Chart for importing data from CSV (Comma Separat
 
 ## Import Data from XML to a Chart
 
-There is no built-in support in Chart for importing data from an XML file. But given a corresponding XSLT file, the xml data can be converted into a DataSet, which can then be bound to the chart easily. This is illustrated in this sample that is distributed with the installation:
+There is no built-in support in Chart for importing data from an XML file. But given a corresponding XSLT file, the XML data can be converted into a DataSet, which can then be bound to the chart easily. This is illustrated in this sample that is distributed with the installation:
 
 
 

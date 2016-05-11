@@ -69,7 +69,7 @@ The following screen shot illustrates Grid Grouping control with filter drop dow
 
 ### Support to Save and Load Compare Operators State in Grid Dynamic Filter
 
-GridDynamicFilter in GridGroupingControl is now an enhanced functionality to serialize/de-serialize compareoperator images in button. This can be achieved by handling the following method calls.
+GridDynamicFilter in GridGroupingControl is now an enhanced functionality to serialize/deserialize compare operator images in button. This can be achieved by handling the following method calls.
 
 
 
@@ -487,9 +487,9 @@ The following screen shots show the list of available colors when FilerByColor p
 AllowResize
 
 
-Using AllowResize property, you can enable or disable resizable functionality of the GridExcelFilter. GridExcelFilter has a resizable strip at the bottom of the filterpopup, which is used to resize GridExcelFilter popup.
+Using AllowResize property, you can enable or disable resizable functionality of the GridExcelFilter. GridExcelFilter has a resizable strip at the bottom of the filter popup, which is used to resize GridExcelFilter popup.
 Search TextBox  
-Search Textbox added in GridExcelFilter searches the available collection from checkedlistbox and displays searched results in the checkedlistbox.
+Search Textbox added in GridExcelFilter searches the available collection from checked listbox and displays searched results in the checked listbox.
 
 ### Filtering Null Values from the Grid
 

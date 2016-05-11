@@ -818,11 +818,11 @@ CHITEST(actual_range, expected_range)
 ### CHOOSE
 The `CHOOSE` function returns the value from a range of values on a specific index.
 ##### Syntax:
-CHOOSE(index, valuearray)
+CHOOSE(index, value array)
 
 #### Where:
 * **index** is to specify the index from where you want to retrieve the value.
-* **valuearray** is the array of value from where you want to take the value.
+* **value array** is the array of value from where you want to take the value.
 
 ### CLEAN
 `CLEAN` function is used to remove the non-printable characters from the given text, represented by numbers 0 to 31 of the 7-bit ASCII code.
@@ -1216,7 +1216,7 @@ DCOUNT(database, field, criteria )
 * **criteria** is the range of cells that contains the conditions you specify.
 
 ### DCOUNTA
-`DCOUNTA` function counts the number of nonblank cells in a column of a list or database that matches the conditions specified.
+`DCOUNTA` function counts the number of non-blank cells in a column of a list or database that matches the conditions specified.
 
 #### Syntax
 DCOUNTA(database, field, criteria)
@@ -1788,10 +1788,10 @@ FACT(number),
 `FALSE` function returns logical value when the given sting value is false.
 
 #### Syntax
-False(stringvalue)
+False(string value)
 
 #### Where:
-**stringvalue** is to provide any text value or empty string.
+**string value** is to provide any text value or empty string.
 
 ### FILTERXML
 The `FILTERXML` function retrieves specific data from the XML content by using the specified XPath.
@@ -1804,7 +1804,7 @@ FILTERXML(xml, xpath)
 * **xpath** is a string in standard XPath format.
 
 #### Remarks
-`#VALUE!` - occurs if xml is not valid or if xml contains a namespace with a prefix that is not valid.
+`#VALUE!` - occurs if XML is not valid or if XML contains a namespace with a prefix that is not valid.
 
 ### FDIST
 Returns the F probability distribution.
@@ -1821,11 +1821,11 @@ FDIST(x, degrees_freedom1, degrees_freedom2),
 The `Find` function finds a portion of a string from a particular text and returns the location of the string.
 
 #### Syntax
-Find(lookfor, lookin, start)
+Find(look for, look in, start)
 
 #### Where:
-* **lookfor** is the text you want to search.
-* **lookin** is the the text in which you want to search.
+* **look for** is the text you want to search.
+* **look in** is the the text in which you want to search.
 * **start** specifies the starting position of the text from where you want to start searching in the text. This is optional.
 
 ### FINDB
@@ -1880,7 +1880,7 @@ Fixed (number, decimal_places, no_commas)
 #### Where:
 * **number** is the number, which you want to round off.
 * **decimal_**places is the number of decimal places you want to display in the result.
-* **no_commas** isa logical value. It will display commas when it is set to FALSE and does not display commas when it is set to TRUE.
+* **no_commas** is a logical value. It will display commas when it is set to FALSE and does not display commas when it is set to TRUE.
 
 ### FLOOR
 Rounds off the given number down towards zero to the nearest multiple of significance.
@@ -1953,7 +1953,7 @@ The `GAMMA.DIST` function returns either the cumulative distribution or the pr
 GAMMA.DIST(x,y,z,cumulative)
 
 #### Where:
-* **x** is the value that eveluates the function.
+* **x** is the value that evaluates the function.
 * **y** is a distribution parameter.
 * **z** is a distribution parameter.
 * **cumulative** is a logical value that indicates which form of the exponential function to provide.
@@ -2121,7 +2121,7 @@ HLOOKUP(lookup_value, table_array, row_index_num, range_lookup)
 * **lookup_value** is the value to be found in the first row of the table. Lookup_value can be a value, a reference or a text string.
 * **table_array** is a table of information in which, data is looked up. Use a reference to a range or a range name.
 * **row_index_num** is the row number in table_array from which, the matching value will be returned. A row_index_num of 1 returns the first row value in table_array, a row_index_num of 2 returns the second row value in table_array and so on.
-* **range_lookup** isa logical value that specifies whether you want HLOOKUP to find an exact match or an approximate match. If True or omitted, an approximate match is returned. In other words, if an exact match is not found, the next largest value that is less than the lookup_value is returned. (This requires your lookup values to be sorted.) If False, HLOOKUP will find an exact match.
+* **range_lookup** is a logical value that specifies whether you want HLOOKUP to find an exact match or an approximate match. If True or omitted, an approximate match is returned. In other words, if an exact match is not found, the next largest value that is less than the lookup_value is returned. (This requires your lookup values to be sorted.) If False, HLOOKUP will find an exact match.
 
 ### HYPERLINK
 The `HYPERLINK` function creates a hyperlink to a document in a supplied location.
@@ -2171,7 +2171,7 @@ Returns one value if a condition you specify evaluates to `True` and another val
 IF(logical_test, value_if_true, value_if_false)
 
 #### Where:
-* **logical_test** isany value or expression that can be evaluated to True or False.
+* **logical_test** is any value or expression that can be evaluated to True or False.
 * **value_if_true** is the value that is returned if a logical_test is True.
 * **value_if_false** is the value that is returned if a logical_test is False.
 
@@ -3559,7 +3559,7 @@ PERMUT(number, number_chosen),
 
 #### Where:
 * **number** is an integer that describes the number of objects.
-* **number_chosen** isan integer that describes the number of objects in each permutation.
+* **number_chosen** is an integer that describes the number of objects in each permutation.
 
 #### Remarks
 Number must be > 0 and number_chosen must be >= 0. Number must be >= number_chosen. The equation for the number of permutations is,
@@ -3572,7 +3572,7 @@ PERMUTATIONA(number, number-chosen)
 
 #### Where:
 * **number** is an integer that describes the total number of objects.
-* **number-chosen** isan integer that describes the number of objects in each permutation.
+* **number-chosen** is an integer that describes the number of objects in each permutation.
 
 #### Remarks
 * `#VALUE!` - occurs if numeric arguments use data types that are non-numeric.
@@ -3674,7 +3674,7 @@ PROB(x_range, prob_range, lower_limit, upper_limit),
 
 #### Where:
 * **x_range** is the range of numeric values of x with which there are associated probabilities.
-* **prob_range** isa set of probabilities associated with values in x_range.
+* **prob_range** is a set of probabilities associated with values in x_range.
 * **lower_limit** is the lower bound on the value for which you want a probability.
 * **upper_limit** is the optional upper bound on the value for which you want a probability.
 
@@ -3978,8 +3978,8 @@ Returns the square of the Pearson product moment correlation coefficient through
 RSQ(known_y’s, known_x’s),
 
 #### Where:
-* **known_y’s** isan array or range of data points.
-* **known_x’s** isan array or range of data points.
+* **known_y’s** is an array or range of data points.
+* **known_x’s** is an array or range of data points.
 
 #### Remarks
 * The equation for the Pearson product moment correlation coefficient is,
@@ -4139,7 +4139,7 @@ Returns the slope of the linear regression line through data points in known_y�
 SLOPE(known_y’s, known_x’s),
 
 #### Where:
-* **known_y’s** isan array or cell range of numeric dependent data points. 
+* **known_y’s** is an array or cell range of numeric dependent data points. 
 * **known_x’s** is the set of independent data points.
 
 ### SMALL
@@ -4249,8 +4249,8 @@ Returns the standard error of the predicted y-value for each x in the regression
 STEYX(known_y’s, known_x’s),
 
 #### Where:
-* **known_y’s** isan array or range of dependent data points. 
-* **known_x’s** isan array or range of independent data points.
+* **known_y’s** is an array or range of dependent data points. 
+* **known_x’s** is an array or range of independent data points.
 
 ### SUBSTITUTE
 Substitutes new_text for old_text in a text string. Use SUBSTITUTE when you want to replace specific text in a text string; use REPLACE when you want to replace any text that occurs in a specific location in a text string.
@@ -4422,7 +4422,7 @@ TEXT(value, format_text),
 
 #### Where:
 * **value** is a numeric value, formula that evaluates to a numeric value, or reference to a cell containing numeric value.
-* **format_text** isa number format in text form in the Category box of Number tab in the Format Cells dialog box.
+* **format_text** is a number format in text form in the Category box of Number tab in the Format Cells dialog box.
 
 ### TIME
 Returns the decimal number for a particular time. The decimal number returned by TIME is a value ranging from 0 (zero) to 0.99999999, representing the times from 0:00:00 (12:00:00 A.M.) to 23:59:59 (11:59:59 P.M.).
@@ -4442,7 +4442,7 @@ Returns the decimal number of the time represented by a text string. The decimal
 TIMEVALUE(time_text),
 
 #### Where:
-* **time_text** isa text string that represents time as a formatted string; for example, “6:45 PM” and “18:45” text strings within quotation marks that represent time.
+* **time_text** is a text string that represents time as a formatted string; for example, “6:45 PM” and “18:45” text strings within quotation marks that represent time.
 
 ### TODAY
 Returns the serial number of the current date. The serial number is the number of days since Jan 1, 1900.
@@ -4486,16 +4486,16 @@ TRUNC(number, num_digits),
 
 #### Where:
 * **number** is the number you want to truncate. 
-* **num_digits** isan optional argument that specifies the number of decimal places to truncate the supplied number to. The default value is 0.
+* **num_digits** is an optional argument that specifies the number of decimal places to truncate the supplied number to. The default value is 0.
 
 ### TRUE
 `TRUE` function returns the logical value when the given sting value is true.
 
 #### Syntax
-True(stringvalue)
+True(string value)
 
 #### Where:
-* **stringvalue** is to provide any text value or empty string.
+* **string value** is to provide any text value or empty string.
 
 ### TYPE
 The `TYPE` function receives a value and returns an integer that represents the supplied value’s data type.
@@ -4621,10 +4621,10 @@ VLOOKUP(lookup_value, table_array, col_index_num, range_lookup)
 WEBSERVICE(url)
 
 #### Where:
-* url is the url of the web service.
+* URL is the URL of the web service.
 
 #### Remarks:
-`#VALUE!` - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
+`#VALUE!` - occurs if URL is unable to return the data, if URL result in a string that is not valid and if URL is a string that contains more than the 2048 characters.
 
 ### WEEKDAY
 Returns the day of the week corresponding to a date. The day is given as an integer, ranging from 1 (Sunday) to 7 (Saturday) by default.
@@ -4633,8 +4633,8 @@ Returns the day of the week corresponding to a date. The day is given as an inte
 WEEKDAY(serial_number, return_type),
 
 #### Where:
-* **serial_number** isa sequential number that represents the date of the day you are trying to find. Dates should be entered by using the DATE function or as results of other formulas or functions. For example, use DATE(2008,5,23) for the 23rd day of May 2008.
-* **return_type** isa number that determines the type of return value.
+* **serial_number** is a sequential number that represents the date of the day you are trying to find. Dates should be entered by using the DATE function or as results of other formulas or functions. For example, use DATE(2008,5,23) for the 23rd day of May 2008.
+* **return_type** is a number that determines the type of return value.
 
 ### WEEKNUM
 For a supplied a date, the` WEEKNUM` function returns an integer representing the week number (from 1 to 53) of the year.
@@ -4644,7 +4644,7 @@ WEEKNUM( serialNum, [returnType] )
 
 #### Where:
 * **serialNum** is the date that you want to return the week number for.
-* **[returnType]** isan optional argument that specifies which numbering system should be used and which weekday should be treated as the start of the week.
+* **[returnType]** is an optional argument that specifies which numbering system should be used and which weekday should be treated as the start of the week.
 
 #### Remarks
 `#VALUE!` - occurs if the supplied serialNum cannot be recognized as a numeric value or a date.<br/>
@@ -4712,10 +4712,10 @@ WORKDAY.INTL( startDate, days, [weekend], [holidays] )
 `Xirr` function computes the internal rate-of-return for a schedule of possibly non-periodic cash flows.
 
 #### Syntax
-Xirr(cashflow, datelist, value)
+Xirr(cash flow, date list, value)
 
 #### Where:
-cashflow is the range of cash flow. datelist is the list of serial number of the corresponding date values. value is an initial guess integer value which reflects in the result of the function.
+cash flow is the range of cash flow. date list is the list of serial number of the corresponding date values. value is an initial guess integer value which reflects in the result of the function.
 
 ### XOR
 `XOR` function returns the exclusive `OR` for the given arguments.
@@ -4744,7 +4744,7 @@ YEARFRAC( startDate, endDate, [basis] )
 #### Where:
 * **startDate** is the start of the period.
 * **endDate** is the end of the period.
-* **[basis]** isan optional argument that specifies the type of day count basis to be used.
+* **[basis]** is an optional argument that specifies the type of day count basis to be used.
 
 #### Remarks
 `#VALUE!` - occurs if the startDate or endDate arguments are not valid dates.<br/>

@@ -15,7 +15,7 @@ To create a cell that contains a hypertext link along with different formatted t
 
 1. InPlaceRTB Class
 
-   The RichText cell control in the library will allow you to edit richtext via a dropdown panel. However, it will not allow you to edit text in-place. You must derive GridRichTextBoxCellModel and GridRichTextBoxCellRenderer classes in order to use an embedded RichTextBox in the cell and to edit it. This textbox will allow you to Click on the text that will open an Internet Explorer session. To use this control, you must register the new CellControl using grid.CellModels.Add function.
+   The RichText cell control in the library will allow you to edit rich text via a dropdown panel. However, it will not allow you to edit text in-place. You must derive GridRichTextBoxCellModel and GridRichTextBoxCellRenderer classes in order to use an embedded RichTextBox in the cell and to edit it. This textbox will allow you to Click on the text that will open an Internet Explorer session. To use this control, you must register the new CellControl using grid.CellModels.Add function.
 
    ### Example
 
@@ -41,7 +41,7 @@ To create a cell that contains a hypertext link along with different formatted t
    {:.prettyprint}
 
 
-2. Set the CellType property to "InplaceRTB".
+2. Set the CellType property to "InPlaceRTB".
 
    ### Example
 

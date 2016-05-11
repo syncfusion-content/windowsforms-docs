@@ -199,7 +199,7 @@ IpaddingX</td><td>
 Specifies the pixels to be added to the size of the component when determining its overall width. The default value is set to 'Null'.</td></tr>
 <tr>
 <td>
-IpadiingY</td><td>
+IpaddingY</td><td>
 Specifies the pixels to be added to the size of the component when determining its overall height. The default value is set to 'Null'.</td></tr>
 </table>
 
@@ -208,7 +208,7 @@ For example, if IPadX property is set to '10', then the preferred width of the C
 
 ### Insets Rectangle
 
-The padding that is to be added around the Child component can be specified using the property given below. Similar to the IPad settings above, this space will be added to the Child control's preferred size when calculating the layout. However, unlike the IPad settings, this will not increase the size of the Child control, but indicates the minimum padding to be applied around the Child control.
+The padding that is to be added around the Child component can be specified using the property given below. Similar to the IPadding settings above, this space will be added to the Child control's preferred size when calculating the layout. However, unlike the IPadding settings, this will not increase the size of the Child control, but indicates the minimum padding to be applied around the Child control.
 
 
 

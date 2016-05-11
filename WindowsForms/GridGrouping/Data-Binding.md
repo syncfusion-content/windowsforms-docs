@@ -15,7 +15,7 @@ ADO.NET is an object-oriented set of libraries which is used to interact with di
 
 The widely used data providers are,
 
-[Ole Db Data Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/ms709836.aspx)- Data Sources that expose an OleDb interface, i.e. Access or Excel.
+[Ole Db Data Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/ms709836.aspx)- Data Sources that expose an OLEDB interface, i.e. Access or Excel.
 [SQL Data Provider](https://msdn.microsoft.com/en-in/library/system.data.sqlclient.aspx)- For interacting with Microsoft SQL Server.
 
 ### ADO.Net Objects and its usages
@@ -560,7 +560,7 @@ Generics refer to those classes, structure, methods, and interfaces that have pl
 
 It provides a standard way to create non-type-specific collection. Hence, we can get immediate benefit of type safety without having to derive from base collection type and implement type-specific members. Through generics, it is possible to have a single array class to store a list of Players or even a list of Products.
 
-The .NET 2.0 framework provides a number of generic collections to work with. The generic collection classes have been defined in the `System.Collections.Generic` namespace. Some of them are listed below.
+The .NET 2.0 Framework provides a number of generic collections to work with. The generic collection classes have been defined in the `System.Collections.Generic` namespace. Some of them are listed below.
 
 * **List&lt;T&gt;**is the generic version of ArrayList based on generic interface **IList**.
 * **BindingList&lt;T&gt;**is the generic collection based on **IBindingList**.
@@ -832,7 +832,7 @@ The Grid will be loaded with the data looks like the following screenshot,
 *&lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Generic Collection Demo*
 
 ### Dynamic Object Binding
-The grid can be bounded to the [DynamicObject](https://msdn.microsoft.com/en-in/library/system.dynamic.dynamicobject.aspx) by enabling the [IsDynamicData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~IsDynamicData.html) property. It will prepare the grid for the dynamic data source. This feature is only available for the .Net frame work 4.0 and above.
+The grid can be bounded to the [DynamicObject](https://msdn.microsoft.com/en-in/library/system.dynamic.dynamicobject.aspx) by enabling the [IsDynamicData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~IsDynamicData.html) property. It will prepare the grid for the dynamic data source. This feature is only available for the .NET Framework 4.0 and above.
 
 The following steps are used to have the dynamic object binding for the GridGroupingControl.
 
@@ -1745,7 +1745,7 @@ this.gridGroupingControl1.DataSource = new DynamicList(true);
 Me.gridGroupingControl1.DataSource = New DynamicList(True)
 {% endhighlight %}
 {% endtabs %}
-The dashboard sample given below has the Dynamic data source for having the dynamic databinding in GridGroupingControl.
+The dashboard sample given below has the Dynamic data source for having the dynamic DataBinding in GridGroupingControl.
 
 **Sample Location**
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\[Version_No]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Dynamic Object Binding Demo\CS
@@ -1947,7 +1947,7 @@ This section will explain about the MDB file can be bounded to the GridGroupingC
 #### Binding MDB File by using Visual Studio 2005
 The following steps are to be used with Visual Studio 2005 and .NET 2.0. Smart Tags that are available in the .NET 2.0 Designer to hook into your MDB file. This process of binding is fully designer based, user do not need to write even a single line of code.
 
-1.From the Syncfusion tab in the toolbox, drag a GridGroupingcontrol onto the form.
+1.From the Syncfusion tab in the toolbox, drag a GridGroupingControl onto the form.
 2.In the GridGroupingControl smart tag, click the Choose Data Source drop down. Then click the Add Project Data Source link in the drop down.
 
 ![](Data-Binding_images/Data-Binding_img6.jpeg)
@@ -1987,7 +1987,7 @@ Run the application to see the GridGroupingControl display the data from the MDB
 ![](Data-Binding_images/Data-Binding_img15.jpeg)
 
 **Sample Location:**
-&lt;Installled_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\GettingStarted\
+&lt;Insta	lled_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\GettingStarted\
 Data Binding
 
 #### Binding MDB File by using Visual Studio 2008
@@ -2009,7 +2009,7 @@ The following steps are to be used with Visual Studio 2008 and .NET 3.5. Smart T
 
    ![](Data-Binding_images/Data-Binding_img19.jpeg)
 
-5. The Add Connection dialog box appears without the Database file name entry set. Click Browse to choose the Data Source: C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.mdb (this path will vary according to the Essential studio installation location).
+5. The Add Connection dialog box appears without the Database file name entry set. Click Browse to choose the Data Source: C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.mdb (this path will vary according to the Essential Studio installation location).
 
    ![](Data-Binding_images/Data-Binding_img20.jpeg)
 
@@ -2189,11 +2189,11 @@ The following steps used to binding the data source to the Grid grouping control
 
    ![](Data-Binding_images/Data-Binding_img59.jpeg)
 
-5. Choose Data Source dialog will be open, Select the MicroSoft Access Database file from the Data source list. Click on Continue.
+5. Choose Data Source dialog will be open, Select the Microsoft Access Database file from the Data source list. Click on Continue.
 
    ![](Data-Binding_images/Data-Binding_img60.jpeg)
 
-6. Choose the Database file name by clicking the Browse button, and then click the Ok Button.
+6. Choose the Database file name by clicking the Browse button, and then click the OK Button.
 
    ![](Data-Binding_images/Data-Binding_img61.jpeg)
 
@@ -2226,7 +2226,7 @@ The following steps used to binding the data source to the Grid grouping control
     ![](Data-Binding_images/Data-Binding_img68.jpeg)
 
 #### Binding MDB File by using Visual Studio 2015
-The following steps arev used to binding the data source to the GridgroupingControl using the designer. User can make use of the Smart Tags that are available in the Designer to hook into the MDB file. 
+The following steps are used to binding the data source to the GridGroupingControl using the designer. User can make use of the Smart Tags that are available in the Designer to hook into the MDB file. 
 
 1. From the Syncfusion tab in the toolbox and drag and drop GridGroupingControl onto the form. In the GridGroupingControl smart tag, click `Choose DataSource` list, and then click `Add Project Data Source`. Data Source Configuration Wizard dialog box appears.
    
@@ -2236,11 +2236,11 @@ The following steps arev used to binding the data source to the GridgroupingCont
    
    ![](Data-Binding_images/Data-Binding_img70.jpeg)
 
-3. Choose Data Source dialog will be open, Select the MicroSoft Access Database file from the Data source list. Click on Continue.
+3. Choose Data Source dialog will be open, Select the Microsoft Access Database file from the Data source list. Click on Continue.
    
    ![](Data-Binding_images/Data-Binding_img71.jpeg)
 
-4.  Choose the Database file name by clicking the Browse button, and then click the Ok Button.
+4.  Choose the Database file name by clicking the Browse button, and then click the OK Button.
     
     ![](Data-Binding_images/Data-Binding_img72.jpeg)
 
@@ -2268,7 +2268,7 @@ The following steps arev used to binding the data source to the GridgroupingCont
     ![](Data-Binding_images/Data-Binding_img78.jpeg)
 
 ### Binding SQL Server 
-This section explains on bounding of GridGroupingControl to the SQL server database using visual studio designer.
+This section explains on bounding of GridGroupingControl to the SQL server database using Visual Studio designer.
 
 #### Binding SQL server by using VS 2005
 The steps given below is used to bind the SQL server database with Visual Studio 2005 and .NET 2.0. 

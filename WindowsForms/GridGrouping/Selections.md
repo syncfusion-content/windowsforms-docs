@@ -65,7 +65,7 @@ Allows both rows and columns to be selected at the same time when GridSelectionF
 <tr>
 <td>
 Keyboard</td><td>
-Allows extenion of existing selection when user holds SHIFT+Arrow keys.</td></tr>
+Allows extension of existing selection when user holds SHIFT+Arrow keys.</td></tr>
 <tr>
 <td>
 Any</td><td>
@@ -231,7 +231,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiE
 
 #### Format ListBox Selections
 
-ListBoxSelection appearance can be customized by setting the properties: SelectionBackColor, SelectionTextColor and ListBoxSelectionColorOptions. By default, SystemColors.Highlight and SystemColors.HighlightText are the colors used as backcolor and textcolor to highlight selected records. SelectionBackColor and SelectionTextColor property settings can be used to override these default colors.
+ListBoxSelection appearance can be customized by setting the properties: SelectionBackColor, SelectionTextColor and ListBoxSelectionColorOptions. By default, SystemColors.Highlight and SystemColors.HighlightText are the colors used as BackColor and TextColor to highlight selected records. SelectionBackColor and SelectionTextColor property settings can be used to override these default colors.
 
 ListBoxSelectionColorOptions is used to control the appearance of the selections. The GridListBoxSelectionColorOptions enumeration specifies the options for this property.
 

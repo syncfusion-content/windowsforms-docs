@@ -117,7 +117,7 @@ In case you are unable to find the information that you are looking for in the s
 			LAYOUT<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/office2007form/creating-office2007form">Office2007Form</a><br/><br/>
+			<a href="/windowsforms/office2007form/overview">Office2010Form</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -125,7 +125,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/office2010form/creating-office2010-form">Office2010Form</a><br/><br/>
+			<a href="/windowsforms/office2010form/overview">Office2010Form</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -165,7 +165,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/dockingmanager/advanced-features">DockingClientPanel</a><br/><br/>
+			<a href="/windowsforms/dockingmanager/dockingclientpanel">DockingClientPanel</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -237,7 +237,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/metroform/metro-form">MetroForm</a><br/><br/>
+			<a href="/windowsforms/metroform/overview">MetroForm</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -629,7 +629,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/tilelayout/getting-started">ImageStreamer</a><br/><br/>
+			<a href="/windowsforms/tilelayout/hosting-imagestreamer-as-tile-items">ImageStreamer</a><br/><br/>
 		</td>
 	</tr>
 	<tr>

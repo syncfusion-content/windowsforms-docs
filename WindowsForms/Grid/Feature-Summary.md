@@ -320,9 +320,9 @@ Drop-Down Lists</td><td>
 Displays a foreign key table in a drop-down.</td></tr>
 </table>
 
-## MS Office Simulation
+## Microsoft Office Simulation
 
-Essential Grid supports MS Office features like dynamic splitters and undo/redo. Following table lists the available features.
+Essential Grid supports Microsoft Office features like dynamic splitters and undo/redo. Following table lists the available features.
 
 
 
@@ -345,7 +345,7 @@ Access Emulation</td><td>
 Scrolls through records.</td></tr>
 <tr>
 <td>
-ScrollTips/Thumbtracking</td><td>
+ScrollTips/ThumbTrack</td><td>
 Displays scroll tips when the user performs the drag-and-drop operation.</td></tr>
 <tr>
 <td>
@@ -354,7 +354,7 @@ Allows multilevel undo/redo.</td></tr>
 <tr>
 <td>
 IntelliMouse Scrolling</td><td>
-Supports intellipoint mouse scrolling.</td></tr>
+Supports intelli point mouse scrolling.</td></tr>
 <tr>
 <td>
 Excel-like Behavior</td><td>

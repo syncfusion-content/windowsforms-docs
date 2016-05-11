@@ -561,15 +561,15 @@ Description</th></tr>
 <tr>
 <td>
 Position</td><td>
-Specifies the position relative to the chart at which to render the chart title panel.<ul><li> Top - above the chart(Default setting)</li><li> Left - left of the chart* Right - right of the chart</li><li>Bottom - below the chart</li><li>Floating - will not be docked to any specific location. Can be docked manually by dragging the title panel.</ul></li></td></tr>
+Specifies the position relative to the chart at which to render the chart title panel.<ul><li> Top - above the chart(Default setting)</li><li> Left - left of the chart* Right - right of the chart</li><li>Bottom - below the chart</li><li>Floating - will not be docked to any specific location. Can be docked manually by dragging the title panel.</li></ul></td></tr>
 <tr>
 <td>
 <br>Alignment</td><td>
-When docked to a side, this property specifies how the title panel should be aligned with respect to the chart boundaries.<ul><li> Center - will be aligned to center(default setting).</li><li> Far - will be aligned Far.</li><li> Near - will be aligned Near.</ul></li></td></tr>
+When docked to a side, this property specifies how the title panel should be aligned with respect to the chart boundaries.<ul><li> Center - will be aligned to center(default setting).</li><li> Far - will be aligned Far.</li><li> Near - will be aligned Near.</li></ul></td></tr>
 <tr>
 <td>
 <br>Behavior</td><td>
-Specifies the docking behavior of the title.* Docking - It is dockable on all four sides.<ul><li> Movable - It is movable.</li><li> All - It is movable and dockable.</li><li>None - It is neither movable nor dockable.</ul></li></td></tr>
+Specifies the docking behavior of the title.* Docking - It is dockable on all four sides.<ul><li> Movable - It is movable.</li><li> All - It is movable and dockable.</li><li>None - It is neither movable nor dockable.</li></ul></td></tr>
 </table>
 
 ### Title Look and Feel
@@ -784,7 +784,7 @@ VerticalAlign</td><td>
 Sets watermark vertically in the chart area.</td></tr>
 <tr>
 <td>
-Zorder</td><td>
+ZOrder</td><td>
 Used to specify whether watermark should be shown on top of the chart.</td></tr>
 </table>
 

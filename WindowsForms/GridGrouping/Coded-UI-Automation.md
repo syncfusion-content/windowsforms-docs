@@ -92,7 +92,7 @@ The following steps are used to record and playback the application,
    
    ![](Coded-UI-Automation_images/Coded-UI-Automation_img12.jpeg)
 
-5. The coded UI test code will be generated in Coded UI Test Project as follows,
+5. The Coded UI test code will be generated in Coded UI Test Project as follows,
 
    ![](Coded-UI-Automation_images/Coded-UI-Automation_img13.jpeg)
 
@@ -103,7 +103,7 @@ The following steps are used to record and playback the application,
 ### Playback
 The recorded automation codes can be played back. The following steps are used to playback the automated methods,
 
-1. Open the CodedUI Test class file.
+1. Open the Coded UI Test class file.
 2. Run the application which is tested for automation.
 3. Right Click on the `CodedUITestMethod1` method.
 4. Select the `Run Tests` option.
@@ -114,7 +114,7 @@ The recorded automation codes can be played back. The following steps are used t
 The GridGroupingControl supports automated UI testing with Coded UI technology without any external plugins. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
 
 ### System Requirements
-The following IDEs and .Net frameworks are supported for automating the GridGroupingControl.
+The following IDEs and .NET frameworks are supported for automating the GridGroupingControl.
 
 <table>
 <tr>
@@ -141,7 +141,7 @@ Premium, Ultimate, Enterprise editions of
 </table>
 
 ### Enabling Coded UI support
-The coded UI support for GridGroupingControl can be enabled using [AccessibilityEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBaseImp~AccessibilityEnabled.html) property.
+The Coded UI support for GridGroupingControl can be enabled using [AccessibilityEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBaseImp~AccessibilityEnabled.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -343,7 +343,7 @@ The below example shows the highlighting of grid,
 The GridGroupingControl also provides Coded UI support via external plugins. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
 
 ### System Requirements
-The following IDEs and .Net frameworks are supported for automating the GridGroupingControl.
+The following IDEs and .NET frameworks are supported for automating the GridGroupingControl.
 
 <table>
 <tr>
@@ -369,7 +369,7 @@ Premium, Ultimate, Enterprise editions of
 </table>
 
 ### Enabling Coded UI support
-To enable the coded UI support for grid, the following steps has to be implemented,
+To enable the Coded UI support for grid, the following steps has to be implemented,
 
 * Deploying Extensions Assemblies
 * Preparing Grid sample application
@@ -398,7 +398,7 @@ The above extension assemblies should be deployed to the following locations,
 * **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PublicAssemblies***
 * **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PrivateAssemblies***
 
-For example, the DLLs can be deployed for the `Visual Studio 2013`,
+For example, the assemblies can be deployed for the `Visual Studio 2013`,
 
 * C:\Program Files (x86)\Common Files\microsoft shared\VSTT\12.0\UITestExtensionPackages
 * C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies

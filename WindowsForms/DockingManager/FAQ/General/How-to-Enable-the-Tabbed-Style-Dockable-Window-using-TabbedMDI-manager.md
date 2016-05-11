@@ -17,32 +17,30 @@ We can enable and attach the dockable window into the Tabbed MDI manager during 
 * Add 4 panels and the DockingManager to your application.
 * Declare the TabbedMDIManager.
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 private Syncfusion.Windows.Forms.Tools.TabbedMDIManager tm;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 
 Private tm As Syncfusion.Windows.Forms.Tools.TabbedMDIManager
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
 * Set the form's IsMDIContainer property to true. Add a form, form2 to the project.
 * In the form constructor, you have to enable the dockable window into an MDIChild by calling the SetAsMDIChild method. This has to be done before calling the AttachToMdIContainer method. It will give the look and feel of the VS. NET editor with dockable tabbed window appearance.
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
 
 // Enables docking for panel.
 
@@ -78,7 +76,7 @@ this.dockingManager1.SetAsMDIChild(this.panel3,true);
 
 
 
-    // Attach MDI container to TabbedMDI manager.
+ // Attach MDI container to TabbedMDI manager.
 
 this.tm= new TabbedMDIManager();
 
@@ -86,7 +84,7 @@ this.tm.TabControlAdded+= new TabbedMDITabControlEventHandler(tm_TabControlAdded
 
 
 
-    // Assign the MDI form into the TabbedManager MDI container.
+  // Assign the MDI form into the TabbedManager MDI container.
 
 this.tb.AttachToMdiContainer(this);
 
@@ -95,9 +93,7 @@ this.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office20
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 
 'Enables docking for panel.
@@ -144,11 +140,13 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * You can also change the appearance of the tabs by applying the TabStyle in the TabControlAdded event.
 
+{% tabs %}
 
 {% highlight C# %}
-
 
 
 // Enable the rendering for the Tabbed MDI manager tabs.
@@ -164,7 +162,7 @@ private void tm_TabControlAdded(object sender, TabbedMDITabControlEventArgs args
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -175,16 +173,12 @@ Private Sub tm_TabControlAdded(ByVal sender As Object, ByVal args As TabbedMDITa
       args.TabControl.TabStyle=GetType(TabRendererWhidbey)
 
 End Sub
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
  ![](General_images/General_img1.jpeg) 
 
-
-
-{% seealso %}
- 
-[Tabbed Docking](/windowsforms/dockingmanager/docking-styles#tabbed-docking)
-
-{% endseealso %}
 

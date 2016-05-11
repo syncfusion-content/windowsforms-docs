@@ -356,7 +356,7 @@ The following steps illustrate creating a Satellite Assembly:
 
 
 
-3. You can modify the resource file according to your requirements by using the Resorce Editor.
+3. You can modify the resource file according to your requirements by using the Resource Editor.
 
   ![](Localization-Support_images/Localization-Support_img4.png) 
 

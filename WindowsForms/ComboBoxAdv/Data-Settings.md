@@ -35,4 +35,4 @@ Me.comboBoxAdv1.Items.AddRange(New Object() {"Currency", "DateTimePicker", "Comb
 
 
 N> ComboBoxAdv can also be bound to an external Data source like Data Table. 
-Refer [Databinding](/windowsforms/ComboBoxAdv/Advanced-Features.html#data-binding) _topic. To set image for dropdown items refer_ [Image settings](/windowsforms/ComboBoxAdv/ComboBoxAdv-appearance.html#image-settings)_._
+Refer [Data binding](/windowsforms/ComboBoxAdv/Advanced-Features.html#data-binding) _topic. To set image for dropdown items refer_ [Image settings](/windowsforms/ComboBoxAdv/ComboBoxAdv-appearance.html#image-settings)_._

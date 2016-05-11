@@ -124,7 +124,7 @@ The default location of the ASP.NET Grouping source code is:
 
 ## Deployment Requirements
 
-### Dll List
+### Assembly List
 
 While deploying an application that references Syncfusion Essential Grouping assembly, the following dependencies must be included in the distribution.
 

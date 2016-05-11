@@ -53,7 +53,7 @@ Me.gridGroupingControl1.TableControl.VScrollBehavior = GridScrollbarMode.Disable
 Properties and methods related to scrolling has been already explained in our GridControl topic under the section [Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling). You can check that link for more information on Scrolling.
 
 ## Programmatic Scrolling
-It is possible to scroll programmatically in GridGroupingControl by using the [ScrollCellInView](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ScrollCellInView.html) method. You can directly pass the row and column index in this method or you can pass a range of cells using the[GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class.
+It is possible to scroll programmatically in GridGroupingControl by using the [ScrollCellInView](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ScrollCellInView.html) method. You can directly pass the row and column index in this method or you can pass a range of cells using the [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -67,7 +67,7 @@ Me.gridGroupingControl1.TableControl.ScrollCellInView(7, 7)
 {% endtabs %}
 
 ## Scrollbars Appearance
-The columns and rows of the GridGroupingControl can be scrolled horizontally and vertically using built-in scrollbars. The appearance of the scrollbar can be applied using [GridOfficeScrollBar](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GridOfficeScrollBars.html) property. The default scrollbar is ‘OfficeScrollBars.None`. The following are the different styles of scrollbars available for GridGroupingControl,
+The columns and rows of the GridGroupingControl can be scrolled horizontally and vertically using built-in scrollbars. The appearance of the scrollbar can be applied using [GridOfficeScrollBar](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GridOfficeScrollBars.html) property. The default scrollbar is `OfficeScrollBars.None`. The following are the different styles of scrollbars available for GridGroupingControl,
 
 * Metro
 * Office2007
@@ -239,7 +239,7 @@ End Sub
 {% endtabs %}
 
 ## Custom Scrolling
-Custom scroll bar can be added by using the [ScrollersFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame.html) control. ScrollersFrame control has to be added into the application and then the GridGroupingControl has to be added. The GridGroupingControl and ScrollersFrame control has to be referred to each other by using the[AttachedTo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame~AttachedTo.html) property.
+Custom scroll bar can be added by using the [ScrollersFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame.html) control. ScrollersFrame control has to be added into the application and then the GridGroupingControl has to be added. The GridGroupingControl and ScrollersFrame control has to be referred to each other by using the [AttachedTo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame~AttachedTo.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -254,4 +254,3 @@ Me.scrollersFrame1.AttachedTo = Me. gridGroupingControl1.TableControl
 N> For more information regarding the custom scrolling and its styles, refer the GridControl topic under the section [Custom Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling#custom-scrollbar). 
 
 ![](Scrolling_images/Scrolling_img8.png)
-

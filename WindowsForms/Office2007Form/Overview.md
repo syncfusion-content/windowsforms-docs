@@ -9,6 +9,15 @@ documentation: ug
 
 # Overview
 
-Office2007 Form which does not have any dependency in RibbonControlAdv is now available in Essential suite. It supports all three color schemes, help button, Right To left feature everything similar to the normal form with the Office2007 look and feel.
+Office2007Form is an advanced standard Form that offers Microsoft Office2007 like UI and appearance. With this user can create Microsoft Office2007 like appealing User Interface in their application. It also supports various built in Color Schemes and customization options that helps user to control its behavior and appearance.
 
-![](Office2007-Form_images/Office2007-Form_img1.jpeg)
+![](Office2007-Form_images/Office2007-Form_img1.png)
+
+## Features
+
+* Supports various color schemes customization.
+* Help button support.
+* Supports Caption customization.
+* Right to left support.
+
+ 

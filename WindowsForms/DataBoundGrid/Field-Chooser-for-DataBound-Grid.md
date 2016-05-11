@@ -31,15 +31,15 @@ REFERENCE LINKS </th></tr>
 <tr>
 <td>
 WireGrid </td><td>
-Used to wire tde {{ '_FieldChooser._' | markdownify }}</td><td>
+Used to wire the {{ '_FieldChooser._' | markdownify }}</td><td>
 Overloads:  ( Arg1) </td><td>
 In GridWindowsForm </td><td>
-Example: GridDataboundGrid1.WireGrid(GridDataboundGrid). </td><td>
+Example: GridDataboundGrid1.WireGrid(GridDataBoundGrid). </td><td>
 NA</td></tr>
 <tr>
 <td>
 UnWireGrid </td><td>
-Used to unwire tde FieldChooser.</td><td>
+Used to unwire the FieldChooser.</td><td>
 NA</td><td>
 In GridWindowsForm </td><td>
 Example: GridDataboundGrid1.Unwired(). </td><td>

@@ -19,7 +19,7 @@ The GradientLabel.Border3DStyle is another property that can specify the look an
  ![](GradientLabel-Images/Overview_img598.jpeg) 
 
 
-The .NET framework provides a label control typically used to provide descriptive text for a control. The Essential Tools' GradientLabel control provides an easy way to display labels with attractive shades and backgrounds.
+The .NET Framework provides a label control typically used to provide descriptive text for a control. The Essential Tools' GradientLabel control provides an easy way to display labels with attractive shades and backgrounds.
 
 
 

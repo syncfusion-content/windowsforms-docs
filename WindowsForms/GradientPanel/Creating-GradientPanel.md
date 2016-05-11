@@ -43,7 +43,7 @@ This section will guide you to create a GradientPanel control.
 
 The following steps will guide you to create a gradient panel programmatically.
 
-1. Create a C# or VB.NET application through Visual studio and switch to the code view.
+1. Create a C# or VB.NET application through Visual Studio and switch to the code view.
 2. Add the Syncfusion.Shared.Base and Syncfusion.Shared.Windows assembly references.
 3. Declare a gradient panel as below.
 

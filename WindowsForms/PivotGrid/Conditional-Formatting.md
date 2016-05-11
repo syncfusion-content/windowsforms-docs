@@ -83,7 +83,7 @@ Color</td></tr>
 
 ### Sample Location
 
-{Installedpath}\Syncfusion\EssentialStudio\{Version}\Windows\PivotGrid.Windows\Samples\Product Showcase\Conditional Format Demo
+{Installed path}\Syncfusion\EssentialStudio\{Version}\Windows\PivotGrid.Windows\Samples\Product Showcase\Conditional Format Demo
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img1.png)
 

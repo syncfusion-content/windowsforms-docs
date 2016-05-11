@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | WindowsForms | Syncfusion
-description: overview
+description: Overview
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
@@ -9,37 +9,16 @@ documentation: ug
 
 # Overview
 
-Essential Tools for Windows Forms enables you to use the TileLayout control in an application. This feature has similar look as that of the Windows 8 Tiles.  
+The Syncfusion TileLayout control acts as a container that holds a set of LayoutGroups, in which you can host rich information.
+You can drag the items of the TileLayout in a matrix position to achieve the best layout. 
 
-#### Use Case Scenarios
+![](Overview_images/Overviewimg1.png)
 
-This feature can be used in any kind of application that is used to showcase items.
+* This feature can be used in any kind of application that is used to showcase items.
+* Drag-drop facilities to rearrange the Tile Items.
+* Image transition support.
+* Complete customization support for Layout Groups position.
 
-#### Properties
 
-Property Table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-SetParentFormFlat</td><td>
-Sets parents form as flat.</td><td>
-Bool</td></tr>
-<tr>
-<td>
-ShowGroupTitle</td><td>
-Specifies the group title show.</td><td>
-Bool</td></tr>
-<tr>
-<td>
-ShowItemPreview</td><td>
-Shows item preview.</td><td>
-Bool</td></tr>
-</table>
 
 

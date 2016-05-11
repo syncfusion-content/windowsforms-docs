@@ -127,7 +127,7 @@ Figure 690: Setting the position of button1 on BorderLayout to "North"
  
 Figure 691: Layout of all Button Controls using BorderLayout
 
-N> BorderLayout allows only one control to be aligned along a particular layout position, unlike the .NET framework support.
+N> BorderLayout allows only one control to be aligned along a particular layout position, unlike the .NET Framework support.
 
 {% seealso %}
 

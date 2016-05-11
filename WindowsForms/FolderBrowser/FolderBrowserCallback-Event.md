@@ -34,7 +34,7 @@ Gets / sets the contextual string based upon the FolderBrowserCallbackSetState p
 <tr>
 <td>
 FolderBrowserMessage</td><td>
-Returns a value indentify the event.</td></tr>
+Returns a value indention the event.</td></tr>
 <tr>
 <td>
 Path</td><td>

@@ -9,7 +9,7 @@ documentation: ug
 
 # RowPivots Support in PivotGrid.
 
-PivotGrid is customized and displayed in a 3D structural format. It customizes the PivotRows, PivotColoumns and PivotCalculation and displays the customized calculation of these data. This support is reframed by calculating data between PivotRows and PivotCalculations excluding the PivotColumns. 
+PivotGrid is customized and displayed in a 3D structural format. It customizes the PivotRows, PivotColumns and PivotCalculation and displays the customized calculation of these data. This support is reformed by calculating data between PivotRows and PivotCalculations excluding the PivotColumns. 
 
 
 
@@ -34,7 +34,7 @@ Using this support the PivotItems is evaluated in the form of Grid.<br>({{ '_Row
 <tr>
 <td>
 Filtering and sorting support for the PivotCalculation.</td><td>
-The Pivotcalculation items acts like PivotColoumns and provides sorting and filtering support specifically to individual columns.<br></td></tr>
+The Pivot calculation items acts like PivotColumns and provides sorting and filtering support specifically to individual columns.<br></td></tr>
 <tr>
 <td>
 Context menu support.</td><td>
@@ -75,7 +75,7 @@ The PivotCalculation items are supported with Filtering. Whereas the PivotRows i
 
 ## Pivot Value Chooser
 
-Pivot Value chooser is a customized dialog that showcases the available Pivot Calculation items in a context menu. From the available PivotCalculation items you can choose the required pivotitems.
+Pivot Value chooser is a customized dialog that showcases the available Pivot Calculation items in a context menu. From the available PivotCalculation items you can choose the required pivot items.
 
 
 

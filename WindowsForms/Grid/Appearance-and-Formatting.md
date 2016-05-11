@@ -20,13 +20,13 @@ Following is the step-by-step procedure to save the GridControl into an XML form
 
    ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img1.jpeg)
 
-3. GridControl Designer window will be opened. In that select the File -> Save to Xml option.
+3. GridControl Designer window will be opened. In that select the File -> Save to XML option.
    
    ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img2.jpeg)
 
    N> Editor opens up on the right hand side of the page and Grid Properties tab is highlighted by default. The cell content, styles and general grid properties can be modified under Grid Properties tab. 
 
-4. A dialog box will be opened. Save the xml file in the desired location.
+4. A dialog box will be opened. Save the XML file in the desired location.
 
 The cell styles of the Grid can be changed by using the Grid Properties tab and Selected Range tab in the designer which is located at the right side of the GridControl designer. For more information on how to customize the cells using the GridControl designer, check the link over [here](http://help.syncfusion.com/windowsforms/grid/populating-data#modifying-cell-styles-through-designer).
 
@@ -173,7 +173,7 @@ Me.gridControl.Properties.BackgroundColor = Color.PaleGreen
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img8.jpeg)
 
-To recover the background color to its default value, use the [ResetBackgroundcolor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~ResetBackgroundColor.html) method.
+To recover the background color to its default value, use the [ResetBackgroundColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~ResetBackgroundColor.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -363,7 +363,7 @@ Me.gridControl1.VScrollBehavior = GridScrollbarMode.Disabled
 The list of properties related to scroll bar in GridControl can be viewed in the separate topic which comes under Scrolling. 
 
 ## GridFormatCellDialog
-[GridFormatCellDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridFormatCellDialog.html) simulates **Format Cells dialog** feature of MS Excel. It provides numerous formatting options such as Font, Alignment, Background, and Number format, which aid in formatting grid cells dynamically. It is now available as an add-on feature for GridControl. `GridFormatCellDialog` class accepts an instance of the GridControl to be formatted, and exposes the above mentioned formatting options to operate on grid cells that are selected. The `GridFormatCellDialog` class comes under the [Syncfusion.GridHelperClasses](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses_namespace.html) library.
+[GridFormatCellDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridFormatCellDialog.html) simulates **Format Cells dialog** feature of Microsoft Excel. It provides numerous formatting options such as Font, Alignment, Background, and Number format, which aid in formatting grid cells dynamically. It is now available as an add-on feature for GridControl. `GridFormatCellDialog` class accepts an instance of the GridControl to be formatted, and exposes the above mentioned formatting options to operate on grid cells that are selected. The `GridFormatCellDialog` class comes under the [Syncfusion.GridHelperClasses](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses_namespace.html) library.
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img17.jpeg)
 
 This `GridFormatCellDialog` can be enabled by instantiating `GridFormatCellDialog` class and invoking its **ShowDialog** method.

@@ -31,7 +31,7 @@ The important events in Grid control and DataBound Grid are as follows.
 * CurrentCellValidating - Occurs when the grid validates content of the active current cell.
 * CurrentCellValidated - Occurs when the grid has successfully validated the content of the active current cell.
 * CurrentCellAcceptedChanges - Occurs when the grid accepts changes made to the active current cell.
-* CurrentCellConfirmChangesFaileds - Occurs when the grid could not save changes made to the active current cell.
+* CurrentCellConfirmChangesFailed - Occurs when the grid could not save changes made to the active current cell.
 * CurrentCellRejectedChanges - Occurs when the grid rejects changes made to the active current cell.
 * CurrentCellEditingComplete - Occurs when the grid completes editing mode, i.e., when the active current cell exits the editing mode.
 * CurrentCellDeactivated - Occurs after the grid deactivates current cell.
@@ -58,7 +58,7 @@ The important events in Grid control and DataBound Grid are as follows.
 
 * Click - Occurs when control is clicked once.
 * DoubleClick - Occurs when control is double clicked.
-* DragDrp - Occurs when drag-drop operation is completed.
+* DragDrop - Occurs when drag-drop operation is completed.
 * DragEnter - Occurs when an object is dragged into the control's bounds.
 * DragLeave - Occurs when an object is dragged out of control's bound.
 * DragOver - Occurs when the object is dragged over the control.

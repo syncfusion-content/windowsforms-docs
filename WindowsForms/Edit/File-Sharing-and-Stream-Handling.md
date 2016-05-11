@@ -778,7 +778,7 @@ Me.editControl1.SharedFileMode = True
 
 ## Lexical Analysis And Semantic Parsing
 
-Text parsing occurs when a new document is loaded or when modifications occur in an already loaded document. In case of modifications, the Edit Control intelligently reparses only what is necessary to ensure that the text model is up to date with the contents of the editor. Ideally, parsing the Edit Control occurs in a two-phase approach. The first phase is lexical analysis and the second one is semantic parsing.
+Text parsing occurs when a new document is loaded or when modifications occur in an already loaded document. In case of modifications, the Edit Control intelligently combine only what is necessary to ensure that the text model is up to date with the contents of the editor. Ideally, parsing the Edit Control occurs in a two-phase approach. The first phase is lexical analysis and the second one is semantic parsing.
 
 Lexical Analysis breaks up text into tokens, while semantic parsing goes a step further and assigns extra contextual meaning to the tokens. Semantic relations recognized by the semantic parser are based on how human beings represent knowledge of the world. Semantic parsing allows tokens to be accessed and processed in a more meaningful way than lexical analysis, moving the automation of understanding the tokens to a higher level. A semantic parser consumes the output of the lexical analyzer, and operates by analyzing the sequence of tokens returned. The parser matches these sequences to an end state which may be one of the possible end states. The end states define the goals of the parser. When an end state is reached, the program using the parser implements some action-specific code.
 

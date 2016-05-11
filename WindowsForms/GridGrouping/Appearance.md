@@ -127,7 +127,7 @@ Style information for any filter bar cell.</td></tr>
 <tr>
 <td>
 FilterBarRowHeaderCell</td><td>
-Style information for any filter bar rowheader cell.</td></tr>
+Style information for any filter bar row header cell.</td></tr>
 <tr>
 <td>
 GroupCaptionCell</td><td>
@@ -685,7 +685,7 @@ REFERENCE LINKS </th></tr>
 <th>
 Grouping GridFormatCellDialog ()</th><th>
 Uses to wire the Grid with FormatCell Dialog</th><th>
-GridGoupingControl </th><th>
+GridGroupingControl </th><th>
 Method (Constructor)</th><th>
 N/A.</th><th>
 N/A. </th></tr>
@@ -1068,7 +1068,7 @@ In addition to the parent styles discussed in the previous topics, Essential Gri
 
 BaseStyles provide the way to create StyleTemplates that can be applied to the cells. It allows you to apply styles with ease and faster. For example, in a word processing software, there is a common task of defining particular style (such as style Header1 representing a bold, 20-point Helvetica font) and then using it repeatedly in your document. BaseStyles play the same role within Essential Grid. You can define a BaseStyle named Header1 as having certain properties and then you can place these properties onto any cell just by applying this BaseStyle Header1 to the cell. More importantly, if you want to change what Header1 means later on (for example, changing its BackColor property from white to red), you can make the change one time by just changing the Header1 BaseStyle and not having to relabel every other cell assigned to this BaseStyle.
 
-BaseStyles are stored in GridGroupingControl.TableModel.BaseStylesMap class. In addition to the standardstyle, other BaseStyles used by all Essential Grids include Row Header, Header and Column Header. You can define and apply your own BaseStyles as well.
+BaseStyles are stored in GridGroupingControl.TableModel.BaseStylesMap class. In addition to the standard style, other BaseStyles used by all Essential Grids include Row Header, Header and Column Header. You can define and apply your own BaseStyles as well.
 
 Users can add base styles to the engine and inherit the style settings through GridStyleInfo.BaseStyle property. You can create any number of style templates through BaseStyles. 
 
@@ -1190,7 +1190,7 @@ RETURN VALUE</th></tr>
 <td>
 PointToTableCellStyle</td><td>
 ptClient: A type of System.Drawing Point object that represents mouse position in client coordinates.</td><td>
-GridTableCellStyleInfo object that stores stye information of the underlying grid cell.</td></tr>
+GridTableCellStyleInfo object that stores style information of the underlying grid cell.</td></tr>
 </table>
 
 
@@ -1515,7 +1515,7 @@ Default width for columns.</td></tr>
 <tr>
 <td>
 DrawTextWithGdiInterop</td><td>
-Specifies whether the text should be drawn using GDI interop routines.</td></tr>
+Specifies whether the text should be drawn using GDI Interop routines.</td></tr>
 <tr>
 <td>
 GridLineBorder</td><td>

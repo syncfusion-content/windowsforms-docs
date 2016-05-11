@@ -38,7 +38,7 @@ The steps to install the Syncfusion Windows Forms NuGet Packages in Visual Studi
 2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
 
    **Name**: Name of the package that listed in Available package sources  
-   **Source**: Syncfusion Windows Forms NuGet Package feed url 
+   **Source**: Syncfusion Windows Forms NuGet Package feed URL 
    [http://nuget.syncfusion.com/windows-forms](http://nuget.syncfusion.com/windows-forms)
     
    ![](Installation-And-Deployment_images/NuGetConfig2.jpeg)

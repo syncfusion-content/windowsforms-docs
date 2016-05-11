@@ -79,7 +79,7 @@ Use the following steps to view the samples:
 
 
 
-### Dll List
+### Assembly List
 
 While deploying an application that references SyncfusionEssentialMaps assembly, the following dependencies must be included in the distribution.
 

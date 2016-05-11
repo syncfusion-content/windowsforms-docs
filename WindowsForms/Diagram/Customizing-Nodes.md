@@ -13,7 +13,7 @@ This section discusses how to customize Diagram nodes, under the following topic
 
 ## Line Bridging
 
-Line bridging provides the visual effect such that the links jump over other links that are found in it's way with lower ZOrder, thereby avoiding the links from intersecting each other and providing a hassle-free view to clearly state the various connections between the nodes. This is done by enabling the LineBridgingEnabled property. Default value is _false_.
+Line bridging provides the visual effect such that the links jump over other links that are found in it's way with lower Z-order, thereby avoiding the links from intersecting each other and providing a hassle-free view to clearly state the various connections between the nodes. This is done by enabling the LineBridgingEnabled property. Default value is _false_.
 
 
 
@@ -38,7 +38,7 @@ Allows to set the size of the bridge when the links intersect each other. Defaul
 <tr>
 <td>
 BridgeStyle</td><td>
-Specifies the type of bridge to be applied. Default value is 'Arc'. The value when set, applies to all the links that are drawn on the diagram. The links will bridge over the other link only when it's ZOrder value is high. The options include the following:
+Specifies the type of bridge to be applied. Default value is 'Arc'. The value when set, applies to all the links that are drawn on the diagram. The links will bridge over the other link only when it's Z-order value is high. The options include the following:
 <ul><li> Arc</li><li> Gap</li><li> Square</li><li> Side2</li><li>Side3</li><li>Side4</li><li>Side5</li><li>Side6</li><li>Side7</li></ul></td></tr>
 </table>
 

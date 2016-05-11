@@ -182,7 +182,7 @@ This section deals with populating MultiColumnComboBox with typed Dataset as dat
 
 1. Open VS .NET IDE and click File  New  Project  Windows Application. 
 2. Right click the project in the Solutions Explorer and click Add  New Item and Add New Item dialog box will be displayed. 
-3. Select DataSet from templates pane, give the name (Say new dataset.xsd) and click Open. This will add file by name new dataset.xsd to the solution. 
+3. Select DataSet from templates pane, give the name (Say new dataset.XSD) and click Open. This will add file by name new dataset.XSD to the solution. 
 4. Add the XML Schema as shown below. 
 
    ~~~ xaml

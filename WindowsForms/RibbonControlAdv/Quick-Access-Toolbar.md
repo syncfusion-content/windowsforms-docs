@@ -125,9 +125,11 @@ We can also align the QAT, above or below the ribbon using the context menu of t
 
 ## Localization
 
-In the Quick Access Toolbar, the labels present in a customized Quick Access Toolbar dialog box can be localized to a user-defined language. These labels can be localized by using the appropriate localizer keywords. In the below code snippets the return value of the switch case is the localized text for the labels.
+In the Quick Access Toolbar, the labels present in a customized Quick Access Toolbar and Customize the Ribbon dialog boxes can be localized to a user-defined language. These labels can be localized by using the appropriate localizer keywords. In the below code snippets the return value of the switch case is the localized text for the labels.
 
 N> The following changes must be done within a localizer class used for the application which is inherited from the ILocalizationProvider.
+
+Labels for Customized Quick Access Toolbar dialog box:
 
 {% tabs %}
 
@@ -164,6 +166,92 @@ return "Customization Label text"
 {% endhighlight %}
 
 {% endtabs %}
+
+Labels for Customize the Ribbon dialog box: 
+
+{% tabs %}
+
+{% highlight c# %}
+
+ class localization : ILocalizationProvider
+    {
+        public string GetLocalizedString(System.Globalization.CultureInfo culture, string stringname, object obj)
+        {
+            switch (stringname)
+            {  
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonAdd:
+                    return "Customize Ribbon Dialog Add Button Text";
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonRemove:
+                    return "Customize Ribbon Dialog Remove Button Text ";
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonCancel:
+                    return "Customize Ribbon Dialog Cancel Button Text";
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonOk:
+                    return "Customize Ribbon Dialog Ok Button Text";
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonReset:
+                    return "Customize Ribbon Dialog Reset Button Text";               
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogLable:
+                    return "Customize Ribbon Dialog Lable Text";
+
+                case ToolsResourceIdentifiers.CustomizeRibbonDialogChooseCommands:
+                    return "Customize Ribbon Dialog Choose Commands Text ";
+               
+
+                default:
+                    return string.Empty;
+
+            }
+        }
+    }
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Class localization Implements ILocalizationProvider
+
+	Public Function GetLocalizedString(culture As System.Globalization.CultureInfo, stringname As String, obj As Object) As String
+
+		Select Case stringname
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonAdd
+				Return "Customize Ribbon Dialog Add Button Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonRemove
+				Return "Customize Ribbon Dialog Remove Button Text "
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonCancel
+				Return "Customize Ribbon Dialog Cancel Button Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonOk
+				Return "Customize Ribbon Dialog Ok Button Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonReset
+				Return "Customize Ribbon Dialog Reset Button Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogLable
+				Return "Customize Ribbon Dialog Lable Text"
+
+			Case ToolsResourceIdentifiers.CustomizeRibbonDialogChooseCommands
+				Return "Customize Ribbon Dialog Choose Commands Text "
+				
+			Case Else
+				Return String.Empty
+
+		End Select
+	End Function
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 
 ## Events
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # How to access a particular DisplayElement if RowIndex is provided
 
-You can access DisplayElements with rowindex by using the following code.
+You can access DisplayElements with row index by using the following code.
 
 {% highlight c# %}
 

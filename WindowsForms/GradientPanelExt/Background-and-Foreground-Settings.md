@@ -41,7 +41,7 @@ Private gradientPanelExt1.BackColor = System.Drawing.Color.Transparent
 The colors and styles of the GradientPanelExt control can be set using the BackgroundColor properties, which have been explained below:
 
 * Style - The styles available are solid, pattern and gradient.
-* Back Color - User can select the required colors for the background using Backcolor property.
+* Back Color - User can select the required colors for the background using BackColor property.
 * Fore Color - Foreground color, for text or graphics can be set using ForeColor property.
 * PatternStyle - Provides the pattern styles available for the style selected.
 * GradientColors - This pops up the Color Collection Editor, which allows the user to add colors and get a combination of colors to display in the gradient panel with the specified style.

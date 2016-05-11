@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Grid Designer
-The GridGroupingcontrol has strong designer support. The user can control all aspects of grid's appearance through the designer. Additional commands (verbs) will let you save layouts and restore them. 
+The GridGroupingControl has strong designer support. The user can control all aspects of grid's appearance through the designer. Additional commands (verbs) will let you save layouts and restore them. 
 
 The user can also use preview feature that will allow you load data into your control and then further set the GridGroupingControl properties that can be persisted as design-time properties.
 

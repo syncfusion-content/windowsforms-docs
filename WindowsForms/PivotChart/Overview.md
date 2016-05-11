@@ -22,7 +22,7 @@ Essential PivotChart for Windows Forms is easy to use and visually stunning char
 
 * PivotChart DrillDown-PivotChart series is grouped to form highly customizable and interactive PivotChart series based on Pivotal Data.
 
-* PivotTablefieldList- Helps you to group Pivot Items within various fields.
+* PivotTable fieldList- Helps you to group Pivot Items within various fields.
 
 * Interactive Excel Export-Supports PivotChart export to excel with user interaction enabled.
 

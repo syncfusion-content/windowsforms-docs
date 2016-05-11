@@ -27,7 +27,7 @@ In this part, you will learn how to use the designer to place DataBound Grid on 
 
 You now have an empty form on the design surface. Open the Data section of your toolbox and drag a SQLDataAdapter onto your form. This will open a Data Adapter Wizard.
 
-Use the wizard to create a connection to the NorthWind database. This DataBase is installed as part of the .NET Framework ADO.NET samples.
+Use the wizard to create a connection to the Northwind database. This DataBase is installed as part of the .NET Framework ADO.NET samples.
 
 
 

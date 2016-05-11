@@ -16,7 +16,7 @@ This section demonstrates how to create a simple test with TreeViewAdv. The Cod
 ## Creating Coded UI Project
 
 
-CUIT should contain the coded UI test project. When the Application does not contain the CUIT project, create a new project.
+CUIT should contain the Coded UI test project. When the Application does not contain the CUIT project, create a new project.
 
 
 ![](CodedUI_images/CreatingTestApplication.png)
