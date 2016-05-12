@@ -35,107 +35,66 @@ To create the PivotChart through Visual Studio
 
 To add PivotChart control to a Windows Forms Application through code, include the following code example to your application.
 
+{% tabs %}
 {% highlight c# %}
 
 //Creates a PivotChart control.
-
 PivotChart  pivotChart1 = new PivotChart();
-
 this.Controls.Add(pivotChart1);
 
 //Assigns a IEnumerable list collection to the Itemsource.
 this.pivotChart1.ItemSource = ProductSales.GetSalesData();
 
 //Populates PivotAxis, PivotLegends, and PivotCalculation collection.
-
 //Adds PivotAxis to the Control.
-
 this.pivotChart1.PivotAxis.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
-
 this.pivotChart1.PivotAxis.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
-
 this.pivotChart1.PivotAxis.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
 
-
-
 //Adds PivotLegend to the Control.
-
 this.pivotChart1.PivotLegend.Add(new PivotItem { FieldMappingName = "Date", TotalHeader = "Total" });
 
-
-
 // Adds PivotCalculations to the Control.
-
 this.pivotChart1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format = "#,##0" });
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 'Creates a PivotChart control.
-
-    Dim pivotChart1 As New PivotChart()
-
+Dim pivotChart1 As New PivotChart()
 Me.Controls.Add(pivotChart1)
 
-
-
-    'Assigns an IEnumerable list collection to the Itemsource.
-
+'Assigns an IEnumerable list collection to the Itemsource.
 Me.pivotChart1.ItemSource = ProductSales.GetSalesData()
 
-
-
-    'Populates PivotAxis, PivotLegends, and PivotCalculation collection.
-
-    'Adds PivotAxis to the Control.
-
+'Populates PivotAxis, PivotLegends, and PivotCalculation collection.
+'Adds PivotAxis to the Control.
 Me.pivotChart1.PivotAxis.Add(New PivotItem() With { _
-
-Key .FieldMappingName = "Product", _
-
-Key .TotalHeader = "Total" _
-
+ .FieldMappingName = "Product", _
+ .TotalHeader = "Total" _
 })
 
 Me.pivotChart1.PivotAxis.Add(New PivotItem() With { _
-
-Key .FieldMappingName = "Country", _
-
-Key .TotalHeader = "Total" _
-
+ .FieldMappingName = "Country", _
+ .TotalHeader = "Total" _
 })
 
 Me.pivotChart1.PivotAxis.Add(New PivotItem() With { _
-
-Key .FieldMappingName = "State", _
-
-Key .TotalHeader = "Total" _
-
+ .FieldMappingName = "State", _
+ .TotalHeader = "Total" _
 })
 
-
-
-    'Adds PivotLegend to the Control.
-
+'Adds PivotLegend to the Control.
 Me.pivotChart1.PivotLegend.Add(New PivotItem() With { _
-
-Key .FieldMappingName = "Date", _
-
-Key .TotalHeader = "Total" _
-
+ .FieldMappingName = "Date", _
+ .TotalHeader = "Total" _
 })
 
-
-
-    'Adds PivotCalculations to the Control.
-
+'Adds PivotCalculations to the Control.
 Me.pivotChart1.PivotCalculations.Add(New PivotComputationInfo() With { _
-
-Key .FieldName = "Quantity", _
-
-Key .Format = "#,##0" _
-
+ .FieldName = "Quantity", _
+ .Format = "#,##0" _
 })
 
 {% endhighlight %}
+{% endtabs %}
