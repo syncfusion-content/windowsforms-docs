@@ -136,6 +136,98 @@ Me.chartControl1.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 
 N> Remember to enable zooming on both the axis using EnableXZooming and EnableYZooming properties, before trying out the above panning feature. You cannot pan a chart without zooming it.
 
+### Zoom Types
+
+Essential Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The **ZoomType** property is used for specifying the way in which the chart should be zoomed. 
+
+<table>
+<tr>
+<th>
+ChartControl.ZoomType Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+Selection</td><td>
+The Chart is zoomed based on the user selection </td></tr>
+<tr>
+<td>
+MouseWheelZooming</td><td>
+The Chart is zoomed according to the mouse wheel movement </td></tr>
+<tr>
+<td>
+PinchZooming</td><td>
+The Chart is zoomed according to the spread/pinch gestures </td></tr>
+</table>
+
+
+### Zooming via Mouse Selection
+
+In selection zoom type, the user can select the required range to be zoomed and the chart will be zoomed in accordingly. The chart is restored to its original position on Double click.
+
+{% highlight c# %}
+
+this.chartControl1.ZoomType = ZoomType.Selection;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.chartControl1.ZoomType= ZoomType.Selection
+
+{% endhighlight %}
+
+**Illustrates the Selection of Chart Region for Zooming** 
+![](Runtime-Features_images/Runtime-Features_img30.png)
+
+
+**Displays the Zoomed Region of the chart**
+![](Runtime-Features_images/Runtime-Features_img31.png)
+
+
+
+### Zooming via Mouse Wheel
+
+When the ZoomType is set as **ZoomType.MouseWheelZooming** then the chart is zoomed in and out based on the mouse wheel movement. Double clicking on the chart will restore the chart to its original position
+
+{% highlight c# %}
+
+this.chartControl1.ZoomType = ZoomType.MouseWheelZooming;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.chartControl1.ZoomType= ZoomType.MouseWheelZooming
+
+{% endhighlight %}
+
+### Zooming in Touch devices 
+
+In touch enabled devices, the user can zoom  the chart using the spread or pinch gestures.
+
+**Spread**
+![](Runtime-Features_images/Runtime-Features_img32.png)
+
+
+**Pinch**
+![](Runtime-Features_images/Runtime-Features_img33.png)
+
+
+The spread action  will result in zoom- in of the chart and pinch action will result in zoom-out of the chart. Double tapping on the chart area restores the chart to its original position.
+
+{% highlight c# %}
+
+this.chartControl1.ZoomType = ZoomType.PinchZooming;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.chartControl1.ZoomType= ZoomType.PinchZooming
+
+{% endhighlight %}
+
+
 ### Formatted Axes Labels
 
 It is possible to show formatted axes labels for a zoomed chart. EssentialChart'sSmartDateZoom property when set to true enables this feature. You can set any one of the following custom label formats to the chart axis. 
