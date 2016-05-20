@@ -252,6 +252,11 @@ Series and points</td><td>
 All Chart types.</td></tr>
 <tr>
 <td>
+{{ '[Callout](/windowsforms/chart/chart-series#callout)' | markdownify }}</td><td>
+Series and points</td><td>
+Area Chart, Bar Chart, Scatter Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, Stepline Chart, Candle Chart, HiLo Chart, HiLoOpenClose Chart, Combination Chart, Pie Chart.</td></tr>
+<tr>
+<td>
 {{ '[DoughnutCoeficient](/windowsforms/chart/chart-series#doughnutcoeficient)' | markdownify }}</td><td>
 Series</td><td>
 Pie Chart.</td></tr>
@@ -1658,6 +1663,125 @@ Me.chartControl1.Series(0).Style.TextColor = Color.LightSlateGray
 
 ![](Chart-Series_images/Chart-Series_img23.jpeg)
 
+
+
+### Callout 
+
+It allows you to drag and drop the data label in any place of chart and provides support to edit callout properties dynamically by double clicking on the callout label.
+
+
+
+_Features_
+
+<table>
+<tr>
+<th colspan = "2">
+Features</th><th>
+Details</th></tr>
+<tr>
+<td>
+Possible Values</td><td colspan = "2">
+Callout setting object</td></tr>
+<tr>
+<td>
+Default Value     </td><td colspan = "2">
+* Enable – False
+
+* Text - string.Empty
+
+* TextOffset – 2.5f
+
+* Font – ChartFontInfo()
+
+* DisplayTextAndFormat - "{1},{2}"
+
+* Position - LabelPosition.Top
+
+* OffsetX – 0
+
+* OffsetY – 0
+
+* Color – HighlightText
+
+* TextColor – WindowText
+
+* Border - ChartLineInfo</td></tr>
+<tr>
+<td>
+2D / 3D Limitations</td><td colspan = "2">
+No</td></tr>
+<tr>
+<td>
+Applies to Chart Element</td><td colspan = "2">
+All series and points</td></tr>
+<tr>
+<td>
+Applies to Chart Types</td><td colspan = "2">
+Area Chart, Bar Chart, Scatter Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, StepLine Chart, Candle Chart, HiLo Chart, HiLoOpenClose Chart, Combination Chart, Pie Chart.</td></tr>
+</table>
+
+
+Here is some sample code.
+
+{% highlight c# %}
+
+    // Specified 3D View
+
+    this.chartControl1.Series3D = true;
+
+    // Enable Callout Feature
+
+    this.chartControl1.Series[0].Style.Callout.Enable = true;
+
+    // Change Position, DisplayText Format and Color
+
+    this.chartControl1.Series[0].Style.Callout.DisplayTextAndFormat = "{0}: {2}";
+
+    this.chartControl1.Series[0].Style.Callout.Position = LabelPosition.Top;
+
+    this.chartControl1.Series[0].Style.Callout.Color = Color.LightBlue;
+
+    // Customize Text Font
+
+    this.chartControl1.Series[0].Style.Callout.Font.FontStyle = FontStyle.Underline;
+
+    this.chartControl1.Series[0].Style.Callout.TextColor = Color.Black;
+
+    this.chartControl1.Series[0].Style.Callout.Font.Size = 11;
+
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+            ' Specified 3D View
+ 
+            Me.chartControl1.Series3D = True
+ 
+            ' Enable Callout Feature
+ 
+            Me.chartControl1.Series(0).Style.Call.Enable = True
+ 
+            ' Change Position, DisplayText Format and Color
+ 
+            Me.chartControl1.Series(0).Style.Call.DisplayTextAndFormat = "{0}: {2}"
+ 
+            Me.chartControl1.Series(0).Style.Call.Position = LabelPosition.Top
+ 
+            Me.chartControl1.Series(0).Style.Call.Color = Color.LightBlue
+ 
+            ' Customize Text Font
+ 
+            Me.chartControl1.Series(0).Style.Call.Font.FontStyle = FontStyle.Underline
+ 
+            Me.chartControl1.Series(0).Style.Call.TextColor = Color.Black
+ 
+            Me.chartControl1.Series(0).Style.Call.Font.Size = 11
+
+
+{% endhighlight %}
+
+![](Chart-Series_images/Chart-Series_img158.png)
 
 
 ### Specific Data Point Setting
