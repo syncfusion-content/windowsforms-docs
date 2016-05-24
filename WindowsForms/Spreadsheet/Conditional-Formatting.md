@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting 
+title: Conditional Formatting in Spreadsheet
 description: How to apply conditional formatting rules at run time in Spreadsheet.
 platform: windowsforms
 control: Spreadsheet
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains about how to apply conditional formatting rules programmatically at run time in Spreadsheet.
 
-In Spreadsheet, to apply conditional format for a cell or range of cells, add `IConditionalFormat` to that range by using `AddCondition` method.
+In Spreadsheet, to apply conditional format for a cell or range of cells, add [IConditionalFormat](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IConditionalFormat.html) to that range by using [AddCondition](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IConditionalFormats~AddCondition.html) method.
 
 {% highlight c# %}
 
@@ -44,6 +44,28 @@ condition1.Operator = ExcelComparisonOperator.Greater;
 condition1.FirstFormula = "10";
 
 condition1.BackColor = ExcelKnownColors.Light_orange;
+
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
+
+{% endhighlight %}
+
+### Based on Formula or Cell References
+
+To format the cells based on Formula or Cell References, define the conditional format type as **Formula** and other formatting options such as formula, background color etc., to the specified cell or range. Finally, invalidate the cells to refresh the view.
+
+{% highlight c# %}
+
+var worksheet = spreadsheet.Workbook.Worksheets[0];
+
+IConditionalFormats condition = worksheet.Range["A1:A100"].ConditionalFormats;
+
+IConditionalFormat condition1 = condition.AddCondition();
+
+condition1.FormatType = ExcelCFType.Formula;
+
+condition1.FirstFormula = "=(B1+B2)>50";
+
+condition1.BackColor = ExcelKnownColors.Brown;
 
 spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
@@ -94,7 +116,6 @@ condition1.BackColor = ExcelKnownColors.Light_orange;
 spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 {% endhighlight %}
-
 
 Sample Output
 

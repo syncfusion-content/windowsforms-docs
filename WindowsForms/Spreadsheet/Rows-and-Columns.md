@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows and Columns 
+title: Rows and Columns Operations in Spreadsheet
 description: Operations involved with rows and columns in Spreadsheet
 platform: windowsforms
 control: Spreadsheet
@@ -10,9 +10,7 @@ documentation: ug
 # Rows and Columns
 This section explains about the operations related with rows and columns in Spreadsheet
 
-## Insert and Delete
-
-### Inserting Rows and Columns
+## Insert Rows and Columns
 
 Spreadsheet provides support for dynamically inserting rows and columns into a worksheet. 
 
@@ -34,8 +32,7 @@ Spreadsheet provides support for dynamically inserting rows and columns into a w
 {% endhighlight %}
 {% endtabs %}
 
-
-### Deleting Rows and Columns
+## Delete Rows and Columns
 
 Spreadsheet provides support for deleting rows and columns from a worksheet,
 
@@ -57,12 +54,9 @@ Spreadsheet provides support for deleting rows and columns from a worksheet,
 {% endhighlight %}
 {% endtabs %}
 
+## Hide Rows and Columns
 
-## Hide and Unhide
-
-### Hiding Rows/Columns
-
-Spreadsheet provides support to hide rows/columns and this can be done by `HideRow` and `HideColumn` method
+Spreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
 
 {% tabs %}
 {% highlight c# %}
@@ -82,10 +76,9 @@ Spreadsheet provides support to hide rows/columns and this can be done by `HideR
 {% endhighlight %}
 {% endtabs %}
 
+## Unhide Rows and Columns
 
-### Unhiding Rows/Columns
-
-Unhide the rows/columns in Spreadsheet can be done by `ShowRow` and `ShowColumn` methods.
+Unhide the rows/columns in Spreadsheet can be done by [ShowRow](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -104,7 +97,6 @@ Unhide the rows/columns in Spreadsheet can be done by `ShowRow` and `ShowColumn`
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ## Row Height and Column Width
 
@@ -128,11 +120,11 @@ Spreadsheet provides support to adjust the row height and column width. And also
 {% endhighlight %}
 {% endtabs %}
 
-N> In case if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, `RefreshOutlines` method must be invoked to refresh/update the Outlines of the Group.	
+N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
 
-## Freeze Panes
+## Freeze Rows and Columns
 
-Spreadsheet provides support for Freeze panes to keep an area of a worksheet visible while you scroll to another area of the worksheet
+Spreadsheet provides support for Freeze panes to keep an area of a worksheet visible while you scroll to another area of the worksheet.
 
 {% tabs %}
 {% highlight c# %}
@@ -150,3 +142,22 @@ Spreadsheet provides support for Freeze panes to keep an area of a worksheet vis
 {% endhighlight %}
 {% endtabs %}
 
+## Unfreeze Rows and Columns
+
+Spreadsheet provides support to unfreeze the freezed panes in the worksheet of Spreadsheet.
+
+{% tabs %}
+{% highlight c# %}
+
+//Unfreezepanes
+
+//To Unfreeze 4 rows and 4 columns
+
+ spreadsheet.Workbook.ActiveSheet.RemovePanes();
+
+ spreadsheet.ActiveGrid.FrozenRows = 1;
+
+ spreadsheet.ActiveGrid.FrozenColumns = 1;
+
+{% endhighlight %}
+{% endtabs %}
