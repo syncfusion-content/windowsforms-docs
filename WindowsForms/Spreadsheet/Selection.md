@@ -139,12 +139,20 @@ Gets or sets the thickness of selection border.</td></tr>
 <tr>
 <td>
 {{ '[SelectionController](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionController.html) ' | markdownify }}</td><td>
- Gets the Selection Controller which provides the selection of content when the user drags the pressed mouse to an edge of the control.</td></tr>
+Gets the Selection Controller which provides the selection of content when the user drags the pressed mouse to an edge of the control.</td></tr>
 <tr>
 <td>
 {{ '[AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~AllowSelection.html) ' | markdownify }}</td><td>
- Gets or Sets the value whether to allow the selection in the ActiveGrid or not.</td></tr>
- </table>
+Gets or Sets the value whether to allow the selection in the ActiveGrid or not.</td></tr>
+<tr>
+<td>
+{{ '[ShowTouchIndicator](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~ShowTouchIndicator.html) ' | markdownify }}</td><td>
+Determines whether the touch indicator will be shown or not.</td></tr>
+<tr>
+<td>
+{{ '[TouchHitTestPrecision](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~TouchHitTestPrecision.html) ' | markdownify }}</td><td>
+Gets or sets the distance of touch precision point from touch indicator.</td></tr>
+</table>
  
 Below table lists the properties associated with [CurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~CurrentCell.html) of `SpreadsheetGrid`,
 
@@ -172,11 +180,11 @@ Gets the range of the CurrentCell.</td></tr>
 <tr>
 <td>
 {{ '[HasCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~HasCurrentCell.html) ' | markdownify }}</td><td>
- Gets the value indicating whether the Grid has CurrentCell or not.</td></tr>
- <tr>
- <td>
- {{ '[PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~PreviousRowColumnIndex.html) ' | markdownify }}</td><td>
- Gets or sets the row and column index of old CurrentCell.</td></tr>
+Gets the value indicating whether the Grid has CurrentCell or not.</td></tr>
+<tr>
+<td>
+{{ '[PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~PreviousRowColumnIndex.html) ' | markdownify }}</td><td>
+Gets or sets the row and column index of old CurrentCell.</td></tr>
 </table>
 
 Below table lists the methods associated with selection,
