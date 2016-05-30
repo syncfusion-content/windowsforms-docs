@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conversion
+title: Conversion in Spreadsheet
 description: How to convert the workbook in Spreadsheet to image, pdf and html
 platform: windowsforms
 control: Spreadsheet
@@ -10,7 +10,7 @@ documentation: ug
 # Conversion
 This section explains about the conversion of workbook in Spreadsheet into image, PDF and HTML
 
-## Image
+## Convert to Image
 
 Spreadsheet provides support to convert a worksheet in to an image of type Bitmap or Metafile based on the input range of rows and columns with all basic formats preserved, By using the [ConvertToImage](http://help.syncfusion.com/file-formats/xlsio/conversions#convert-worksheet-to-image) method,worksheet can be converted into an image.
 
@@ -34,14 +34,13 @@ System.Diagnostics.Process.Start("Sample.png");
 {% endhighlight %}
 {% endtabs %}
 
-
-## PDF
+## Convert to PDF
 
 Spreadsheet provides support to export the Excel workbook to PDF using ExcelToPdfConverter. 
 
 For converting the Excel sheet to PDF, “Syncfusion.ExcelToPDFConverter.Base.dll” and “Syncfusion.Pdf.Base.dll” references should be added.
 
-Export the Excel workbook as PDF document using `Convert` method of `ExcelToPdfConverter` class which is available under the name space “Syncfusion.ExcelToPdfConverter”
+Export the Excel workbook as PDF document using [Convert](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.ExcelToPDFConverter.Base~Syncfusion.ExcelToPdfConverter.ExcelToPdfConverter~Convert.html) method of [ExcelToPdfConverter](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.ExcelToPDFConverter.Base~Syncfusion.ExcelToPdfConverter.ExcelToPdfConverter.html) class which is available under the name space “Syncfusion.ExcelToPdfConverter”
 
 {% tabs %}
 {% highlight c# %}
@@ -77,7 +76,7 @@ System.Diagnostics.Process.Start("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-## HTML
+## Convert to HTML
 
 Spreadsheet provides support to convert the excel workbook into HTML page.
 
@@ -90,3 +89,4 @@ System.Diagnostics.Process.Start("Sample.html");
 
 {% endhighlight %}
 {% endtabs %}
+

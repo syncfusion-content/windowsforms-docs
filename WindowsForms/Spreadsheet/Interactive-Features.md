@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive Features 
+title: Interactive Features in Spreadsheet
 description: How to use the clipboard operations, undo/redo and other functionalities in Spreadsheet
 platform: windowsforms
 control: Spreadsheet
@@ -68,7 +68,9 @@ Value & Source Formatting</td><td>
 To maintain the source range original format and paste only values</td></tr>
 </table>
 
-For `Cut` Operation,
+N> When the content is copied from external source, Spreadsheet does not support the format settings (paste options).
+
+For [Cut](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste~Cut.html) Operation,
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +88,7 @@ For `Cut` Operation,
 {% endhighlight %}
 {% endtabs %}
 
-For `Copy` Operation,
+For [Copy](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste~Copy.html) Operation,
 
 {% tabs %}
 {% highlight c# %}
@@ -104,7 +106,7 @@ For `Copy` Operation,
 {% endhighlight %}
 {% endtabs %}
 
-For `Paste` Operation,
+For [Paste](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste~Paste.html) Operation,
 
 {% tabs %}
 {% highlight c# %}
@@ -124,7 +126,7 @@ copyPaste.Paste(range, PasteOptions.Paste);
 {% endhighlight %}
 {% endtabs %}
 
-N> When the content is copied from external source, Spreadsheet does not support the format settings (paste options).
+T> Users can also set their default [PasteOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.PasteOptions.html) while pasting in Spreadsheet, by using [DefaultPasteOption](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste~DefaultPasteOption.html) property.
 
 ## Undo/Redo
 
@@ -147,9 +149,9 @@ Redo</td><td>
 Ctrl + Y</td></tr>
 </table>
 
-Spreadsheet has `History Manager` class that supports the implementation of undo/ redo operations
+Spreadsheet has [History Manager](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) class that supports the implementation of undo/ redo operations
 
-To invoke Undo/Redo operations, the `Enabled` property of `History Manager` needs to be true.  
+To invoke Undo/Redo operations, the [Enabled](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager~Enabled.html) property of [History Manager](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) needs to be true.  
 
 {% tabs %}
 {% highlight c# %}
@@ -167,9 +169,9 @@ spreadsheet.HistoryManager.Redo();
 
 Context menu in Spreadsheet is customizable menu which can be used for various functionalities
 
-### TabItem context menu
+### TabItem Context menu
 
-By default, `AllowTabItemContextMenu` property is set to true to enable the TabItemContext Menu in Spreadsheet. Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting `IsCustomTabItemContextMenuEnabled` property to be true and you can add your customized menu items in Context_Menu opening Event.
+By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowTabItemContextMenu.html) property is set to true to enable the TabItemContext Menu in Spreadsheet. Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~IsCustomTabItemContextMenuEnabled.html)  property to be true and you can add your customized menu items in Context_Menu opening Event.
 
 {% tabs %}
 {% highlight c# %}
@@ -181,7 +183,7 @@ By default, `AllowTabItemContextMenu` property is set to true to enable the TabI
 
 ### Cell Context menu
 
-By default, `AllowCellContextMenu` property is set as true to enable the CellContext Menu in Spreadsheet. The Event associated with Cell Context menu `CellContextMenuOpening` Event of SpreadsheetGrid.
+By default, [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowCellContextMenu.html) property is set as true to enable the CellContext Menu in Spreadsheet. The Event associated with Cell Context menu [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) Event of SpreadsheetGrid.
 
 Adding the customized menu items in the CellContextMenuOpening Event,
 
@@ -207,11 +209,12 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
 {% endhighlight %}
 {% endtabs %}
 
+
 ## Cell Comments
 
-Spreadsheet provides support for cell comments like in excel to give the reader additional context for the data it contains. You can set the comment height and color for the particular comments at runtime by invoking `CellCommentOpening` Event of SpreadsheetGrid
+Spreadsheet provides support for cell comments like in excel to give the reader additional context for the data it contains. You can set the comment height and color for the particular comments at runtime by invoking [CellCommentOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellCommentOpening_EV.html) Event of SpreadsheetGrid
 
-To enable the comment in Spreadsheet, set the `ShowComment` property of SpreadsheetGrid to true.
+To enable the comment in Spreadsheet, set the [ShowComment](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~ShowComment.html) property of SpreadsheetGrid to true.
 
 {% tabs %}
 {% highlight c# %}
