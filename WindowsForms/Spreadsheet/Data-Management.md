@@ -8,8 +8,11 @@ documentation: ug
 ---
 
 # Data Management
+This section explains about how to import and export the DataTable in `Spreadsheet`.
 
-Spreadsheet provides support to import data into a SpreadSheet and export data from a SpreadSheet. The following list of data can be imported into the worksheet
+## Import from DataTable
+
+Spreadsheet provides support to import the data. The following list of data can be imported into the worksheet
 
 * Data Table
 * Data Column
@@ -17,7 +20,7 @@ Spreadsheet provides support to import data into a SpreadSheet and export data f
 * Business Objects
 * Array
 
-For your reference, To import the data from a data table, you can use [ImportDataTable](http://help.syncfusion.com/file-formats/xlsio/working-with-data#importing-data-to-worksheets) 
+To import the data from a data table, you can use [ImportDataTable](http://help.syncfusion.com/file-formats/xlsio/working-with-data#importing-data-to-worksheets) 
 method
 
 {% tabs %}
@@ -30,7 +33,11 @@ spreadsheet.ActiveGrid.InvalidateCells();
 {% endhighlight %}
 {% endtabs %}
 
-To Export the data from a data table, you can use [ExportDataTable](http://help.syncfusion.com/file-formats/xlsio/working-with-data#exporting-from-worksheet-to-data-table)
+For more details regarding importing of data, please refer the [XlsIO UG](http://help.syncfusion.com/file-formats/xlsio/working-with-data#importing-data-to-worksheets)
+
+## Export to DataTable
+
+Spreadsheet provides support to export the data. To Export the data from a data table, you can use [ExportDataTable](http://help.syncfusion.com/file-formats/xlsio/working-with-data#exporting-from-worksheet-to-data-table)
 method
 
 {% tabs %}
@@ -45,5 +52,4 @@ DataTable Dt = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNa
 {% endhighlight %}
 {% endtabs %}
 
-For more details regarding importing and exporting data, please refer the [XlsIO UG](http://help.syncfusion.com/file-formats/xlsio/working-with-data)
-
+For more details regarding exporting of data, please refer the [XlsIO UG](http://help.syncfusion.com/file-formats/xlsio/working-with-data#exporting-from-worksheet-to-data-table)

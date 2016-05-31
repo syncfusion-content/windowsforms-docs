@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Outline 
+title: Outlines Support in Spreadsheet 
 description: How to group/ungroup the rows and columns in Spreadsheet
 platform: windowsforms
 control: Spreadsheet
@@ -11,7 +11,11 @@ documentation: ug
 
 Spreadsheet provides support for outlines like in excel which makes your data easier to view. You can group or ungroup the data’s either by rows or columns.
 
-To `Group` the rows/columns
+## Group rows and columns
+
+Spreadsheet provides support to group the specified range in a worksheet.
+
+To [Group](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Group.html) the rows/columns
 
 {% tabs %}
 {% highlight c# %}
@@ -29,7 +33,11 @@ spreadsheet.Group(spreadsheet.ActiveSheet, range, ExcelGroupBy.ByColumns);
 {% endhighlight %}
 {% endtabs %}
 
-To `Ungroup` the rows/columns
+## Ungroup rows and columns
+
+Spreadsheet provides support to ungroup the specified range in a worksheet.
+
+To [Ungroup](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~UnGroup.html) the rows/columns
 
 {% tabs %}
 {% highlight c# %}
@@ -46,9 +54,9 @@ spreadsheet.UnGroup(spreadsheet.ActiveSheet, range, ExcelGroupBy.ByColumns);
 {% endhighlight %}
 {% endtabs %}
 
-### Collapse or Expand Group
+## Collapse or Expand Group
 
-Groups can be Expanded by `ExpandGroup` method  and Collapsed  by `CollapseGroup` method of XlsIO.
+Groups can be Expanded by [ExpandGroup](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~ExpandGroup.html) method  and Collapsed  by [CollapseGroup](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~CollapseGroup.html) method of `XlsIO`.
 
 {% tabs %}
 {% highlight c# %}
@@ -80,6 +88,36 @@ spreadsheet.RefreshOutlines(false,true);
 {% endhighlight %}
 {% endtabs %}
 
-N> `RefreshOutlines` method is invoked to refresh/update the Outlines of the Group in Spreadsheet.
+N> [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RefreshOutlines.html) method is invoked to refresh/update the Outlines of the Group in Spreadsheet.
+
+## Change Outline Settings
+
+In Spreadsheet, users can change the outline settings by changing the display of summary rows to either below or above the details and summary columns to  either left or right of the details in Outlines Group.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.ActiveSheet.PageSetup.IsSummaryRowBelow = false;
+spreadsheet.ActiveSheet.PageSetup.IsSummaryColumnRight = false;
+spreadsheet.RefreshOutlines(true, true);
+            
+{% endhighlight %}
+{% endtabs %}
+           
+## Clear Outlines
+Spreadsheet provides support to clear all the Outlines of the Grouped range.
+
+{% tabs %}
+{% highlight c# %}
+
+var sheet = spreadsheet.Workbook.Worksheets[0] as WorksheetImpl;
+foreach (OutlineWrapper outline in sheet.OutlineWrappers)
+{
+  outline.OutlineRange.Ungroup(outline.GroupBy);
+}
+spreadsheet.RefreshOutlines(true, true);
+
+{% endhighlight %}
+{% endtabs %}
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes
+title: Shapes in Spreadsheet
 description: How to import charts, sparklines, pictures and textboxes in Spreadsheet
 platform: windowsforms
 control: Spreadsheet
@@ -14,9 +14,9 @@ documentation: ug
 
 Spreadsheet provides support to import charts from excel which are used to represent numeric data in graphical format to make it easier to understand large quantities of data.
 
-To import the charts into Spreadsheet, need to create an instance of `GraphicChartCellRenderer` and add that renderer into `GraphicCellRenderers` collection. The `GraphicChartCellRenderer` is available under the this assembly “Syncfusion.SpreadsheetHelper.Windows.dll “
+To import the charts into Spreadsheet, need to create an instance of [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.GraphicChartCellRenderer.html) is available under the this assembly “Syncfusion.SpreadsheetHelper.Windows.dll “
 
-Add the `GraphicChartCellRenderer` into the GraphicCellRenderers collection by using the extension method `AddGraphicChartCellRenderer` of Spreadsheet which method is available under the namespace “Syncfusion.Windows.Forms.Spreadsheet.Helpers”.
+Add the `GraphicChartCellRenderer` into the `GraphicCellRenderers` collection by using the extension method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) of Spreadsheet which method is available under the namespace “Syncfusion.Windows.Forms.Spreadsheet.Helpers”.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,9 @@ Add the `GraphicChartCellRenderer` into the GraphicCellRenderers collection by u
 {% endhighlight %}
 {% endtabs %}
 
-For adding the Charts in Spreadsheet at runtime, use `AddChart` method, also you can resize and reposition the chart.
+### Adding the Charts at Runtime
+
+For adding the Charts in Spreadsheet at runtime, use [AddChart](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddChart.html) method, also you can resize and reposition the chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,9 +58,9 @@ shape.Width = 300;
 
 ## Sparklines
 
-To import the Sparklines into Spreadsheet, need to create an instance of `SparklineCellRenderer` and add that renderer into `GraphicCellRenderers` collection. The `SparklineCellRenderer` is available under the this assembly “Syncfusion.SpreadsheetHelper.Windows.dll”
+To import the Sparklines into Spreadsheet, need to create an instance of [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) is available under the this assembly “Syncfusion.SpreadsheetHelper.Windows.dll”
 
-Add the SparklineCellRenderer into the GraphicCellRenderers collection by using the extension method `AddSparklineCellRenderer` of Spreadsheet which method is available under the namespace “Syncfusion.Windows.Forms.Spreadsheet.Helpers”.
+Add the `SparklineCellRenderer` into the `GraphicCellRenderers` collection by using the extension method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) of Spreadsheet which method is available under the namespace “Syncfusion.Windows.Forms.Spreadsheet.Helpers”.
 
 {% tabs %}
 {% highlight c# %}
@@ -70,7 +72,7 @@ Add the SparklineCellRenderer into the GraphicCellRenderers collection by using 
 
 ## Pictures
 
-Spreadsheet provides support to import images in SpreadsheetGrid and to add an image at run time, use `AddImage` method and also you can resize and reposition the image.
+Spreadsheet provides support to import images in SpreadsheetGrid and to add an image at run time, use [AddImage](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddImage.html) method and also you can resize and reposition the image.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +94,7 @@ shape.Width = 200;
 
 ## TextBoxes
 
-Spreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the rich text box at run time, use `AddTextBox` method
+Spreadsheet provides support to import RichText Box in `SpreadsheetGrid` and to add the rich text box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
 
 {% tabs %}
 {% highlight c# %}
@@ -105,5 +107,34 @@ var textBox = spreadsheet.AddTextBox(spreadsheet.ActiveSheet, new RowColumnIndex
 textBox.Left = 200;
 textBox.Top = 200;
          
+{% endhighlight %}
+{% endtabs %}
+
+## Accessing the selected Shapes
+
+Spreadsheet allows the user to access the selected shapes and modify the properties associated with it in `SpreadsheetGrid`.
+
+{% tabs %}
+{% highlight c# %}
+
+var selectedshape = spreadsheet.ActiveGrid.GraphicModel.SelectedShapes;
+for(int i = 0; i < selectedshape.Count ; i++)
+{
+    if(ExcelShapeType.Chart == selectedshape[i].ShapeType)
+    {
+        var chart = selectedshape[i] as IChart;
+        chart.ChartArea.Fill.FillType = ExcelFillType.Gradient;
+        chart.ChartArea.Fill.ForeColor = Color.Blue;
+    }
+    else if(ExcelShapeType.Picture == selectedshape[i].ShapeType)
+    {
+        var picture = selectedshape[i] as ShapeImpl;
+        picture.Height = 100;
+        picture.Width = 100;
+    }
+}
+spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicObjects();
+spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicVisual();
+
 {% endhighlight %}
 {% endtabs %}
