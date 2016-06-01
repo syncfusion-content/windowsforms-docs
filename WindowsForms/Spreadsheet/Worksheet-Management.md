@@ -52,7 +52,7 @@ Spreadsheet provides support to hide and unhide the worksheets in a workbook.
 
 ## Rename a worksheet
 
-Spreadsheet provides support to rename a worksheet in the workbook by using [RenameSheet](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RenameSheet.html) method. After invoking this method, the sheet tab enters into editing mode and now the users can change the name of the sheet in the tab. 
+Spreadsheet provides support to rename a worksheet in the workbook by using `RenameSheet` method. After invoking this method, the sheet tab enters into editing mode and now the users can change the name of the sheet in the tab. 
 
 {% tabs %}
 {% highlight c# %}
