@@ -138,7 +138,7 @@ N> Remember to enable zooming on both the axis using EnableXZooming and EnableYZ
 
 ### Zoom Types
 
-Essential Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The **ZoomType** property is used for specifying the way in which the chart should be zoomed. 
+Essential Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The **ZoomType** property is used for specifying the way in which the chart should be zoomed. The Zoomtype property is a **flagged enum** and it can accept all 3 types of zooming.
 
 <table>
 <tr>
@@ -227,6 +227,21 @@ Me.chartControl1.ZoomType= ZoomType.PinchZooming
 
 {% endhighlight %}
 
+### ResetOnDoubleClick
+
+When the **ResetOnDoubleClick** option is enabled, the chart is reset to its original position on **Double click or Double Tap**. The default value of this property is **False**.
+
+{% highlight c# %}
+
+this.chartControl1.ResetOnDoubleClick = true;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.chartControl1.ResetOnDoubleClick= true
+
+{% endhighlight %}
 
 ### Formatted Axes Labels
 
