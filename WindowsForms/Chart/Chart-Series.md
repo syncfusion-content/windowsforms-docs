@@ -14,7 +14,7 @@ Provide data for the chart through the ChartSeries. ChartSeries acts as a wrappe
 Here is some sample code to create a new series and add it to the chart.
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // 1) One way to create a series:
 
@@ -69,6 +69,7 @@ series.Points.Add(0,200)
 series.Points.Add(1,300)
 
 {% endhighlight %}
+{% endtabs %}
 
 N> Same ChartSeries object being added to more than one chart is not supported. It binds the series to the default primary axis always.
 
@@ -101,7 +102,7 @@ double or DateTime</td></tr>
 
 Here is some sample code that shows adding data points to the Points collection. You could also optionally create a ChartPoint instance first and then add it to the Points collection.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Option 1: 1 X double value; 2 double Y values in a point
 
@@ -140,12 +141,13 @@ series2.Points.Add(1, DateTime.Now)
 series1.Points.Add(DateTime.Now, 5.3)
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ValueType
 
 Always use the ChartAxis.ValueType property to specify what kind of values you have added in the series data points for the corresponding axis.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // To specify DateTime values in the X axis
 
@@ -172,6 +174,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime
 Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Double
 
 {% endhighlight %}
+{% endtabs %}
 
 N> To display the text right next to the data points, the DisplayText property of the data point's style should be set.
 
@@ -673,7 +676,7 @@ Applies to Chart Types – PieChart.
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
  // Create chart series and add data points into it.
 
@@ -720,6 +723,7 @@ Me.chartControl1.Series3D = True
 Me.chartControl1.Series(0).ConfigItems.PieItem.AngleOffset = 45f
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img3.jpeg)
 
@@ -772,7 +776,7 @@ Pyramid, Funnel, Area, Bar, Bubble, Column Chart, Candle Chart, Renko chart, Thr
 
 The line type can be configured using the ChartSeries.Style.Border property as in the following example.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Set the border style required for the column chart.
 
@@ -811,12 +815,13 @@ series.Style.ShadowInterior = New Syncfusion.Drawing.BrushInfo(Color.White)
 series.Style.ShadowOffset = New Size(3, 3)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img5.jpeg)
 
 To apply this on specific data points:
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //Sets border for the 1st point in 1st series
 
@@ -851,6 +856,7 @@ series2.Styles(2).Border.Width = 3
 series2.Styles(2).Border.Color = Color.White
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img6.jpeg)
 
@@ -901,7 +907,7 @@ Here is some sample code to specify an Image BubbleType.
 
 ### Series wide setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.BubbleItem.BubbleType = ChartBubbleType.Image;
 
@@ -920,12 +926,13 @@ Me.chartControl1.Series[0].Style.Images = New ChartImageCollection(Me.imageList1
 Me.chartControl1.Series[0].Style.ImageIndex = 0
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Specific Data Point Setting
 
 #### Specify image for specific data points.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Styles[0].Images = new ChartImageCollection(this.imageList1.Images );
 
@@ -948,6 +955,7 @@ Me.chartControl1.Series[0].Styles(1).Images = New ChartImageCollection(Me.imageL
 Me.chartControl1.Series[0].Styles(1).ImageIndex = 1
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img7.jpeg)
 
@@ -996,7 +1004,7 @@ Column Chart, ColumnRange Chart,Bar Chart, BoxAndWhisker Chart, Gantt Chart</td>
 
 Here is the sample code snippet using ColumnDrawMode in Column Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.ColumnDrawMode = ChartColumnDrawMode.PlaneMode;
 
@@ -1007,6 +1015,7 @@ this.chartControl1.ColumnDrawMode = ChartColumnDrawMode.PlaneMode;
 Me.chartControl1.ColumnDrawMode = ChartColumnDrawMode.PlaneMode
 
 {% endhighlight %}
+{% endtabs %}
 
 
 
@@ -1069,7 +1078,7 @@ Column charts, BoxAndWhiskerChart, Candle Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Series");
 
@@ -1100,11 +1109,12 @@ chartControl1.Series.Add(series1)
 chartControl1.ColumnWidthMode = ChartColumnWidthMode.DefaultWidthMode 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img11.jpeg)
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 double Interval = this.chartControl1.PrimaryXAxis.Range.Interval;
 
@@ -1151,11 +1161,12 @@ Me.chartControl1.Series.Add(series)
 Me.chartControl1.ColumnWidthMode = ChartColumnWidthMode.RelativeWidthMode
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img12.jpeg)
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Series");
 
@@ -1190,6 +1201,7 @@ chartControl1.Series.Add(series1)
 chartControl1.ColumnWidthMode = ChartColumnWidthMode.FixedWidthMode 
 
 {% endhighlight %}
+{% endtabs %}
 
 
 
@@ -1248,7 +1260,7 @@ Column Charts, BoxAndWhiskerChart, Candle Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Series");
 
@@ -1283,6 +1295,7 @@ chartControl1.ColumnWidthMode = ChartColumnWidthMode.FixedWidthMode
 chartControl1.ColumnFixedWidth = 45 
 
 {% endhighlight %}
+{% endtabs %}
 
 N> The ColumnFixedWidth property can be overridden by specifying a second y value in the data point. See_ ColumnWidthMode _for a sample.
 
@@ -1334,7 +1347,7 @@ Column Chart, Column Range Chart, Stacking Column Chart, Candle Chart, Bar Chart
 
 Here is some sample.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.ColumnItem.ColumnType = ChartColumnType.Cylinder;
 
@@ -1349,6 +1362,7 @@ Me.chartControl1.Series(0).ConfigItems.ColumnItem.ColumnType = ChartColumnType.C
 Me.chartControl1.Series(1).ConfigItems.ColumnItem.ColumnType = ChartColumnType.Box
 
 {% endhighlight %}
+{% endtabs %}
 
 
 
@@ -1408,7 +1422,7 @@ Renko Chart (Financial Chart)</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Setting ColorsMode for series
 
@@ -1423,6 +1437,7 @@ this.chartControl1.Series[0].ConfigItems.FinancialItem.ColorsMode = ChartFinanci
 Me.chartControl1.Series(0).ConfigItems.FinancialItem.ColorsMode = ChartFinancialColorMode.DarkLight
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img18.jpeg)
 
@@ -1476,7 +1491,7 @@ Renko Chart (Financial Charts)</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Setting ColorsMode as DarkLight
 
@@ -1499,6 +1514,7 @@ Me.chartControl1.Series(0).ConfigItems.FinancialItem.ColorsMode = ChartFinancial
 Me.chartControl1.Series(0).ConfigItems.FinancialItem.DarkLightPower = 200
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img20.jpeg)
 
@@ -1550,7 +1566,7 @@ Here is some sample code.
 
 ### Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Style.DisplayShadow = true;
 
@@ -1571,11 +1587,12 @@ Me.chartControl1.Series(0).Style.DisplayShadow = True
 {{ '![](Chart-Series_images/Chart-Series_img21.jpeg)' | markdownify }}
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ### Specific Data Point Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Styles[0].DisplayShadow = true;
 
@@ -1590,6 +1607,7 @@ Me.chartControl1.Series(0).Styles(0).DisplayShadow = True
 Me.chartControl1.Series(0).Styles(1).DisplayShadow = True
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -1637,7 +1655,7 @@ Here is some sample code.
 
 ### Series wide setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Enabling DisplayText
 
@@ -1656,6 +1674,7 @@ Me.chartControl1.Series(0).Style.DisplayText = True
 Me.chartControl1.Series(0).Style.TextColor = Color.LightSlateGray
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img22.jpeg)
 
@@ -1667,7 +1686,7 @@ Me.chartControl1.Series(0).Style.TextColor = Color.LightSlateGray
 
 ### Callout 
 
-It allows you to drag and drop the data label in any place of chart and provides support to edit callout properties dynamically by double clicking on the callout label.
+Callout is a data label text which is used to dragging and customizing the text dynamically. It allows you to drag and drop the data label in any place of chart points plotting area and provides support to edit callout properties by double clicking on the callout label.
 
 
 
@@ -1723,7 +1742,7 @@ Area Chart, Bar Chart, Scatter Chart, Bubble Chart, Column Chart, Stacking Colum
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
     // Specified 3D View
 
@@ -1780,6 +1799,7 @@ Here is some sample code.
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img158.png)
 
@@ -1788,7 +1808,7 @@ Here is some sample code.
 
 To specify text for specific points, use the below code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Enabling DisplayText for the first data point
 
@@ -1807,6 +1827,7 @@ Me.chartControl1.Series(0).Styles(0).DisplayText = True
 Me.chartControl1.Series(0).Styles(0).TextColor = Color.LightSlateGray
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -1854,7 +1875,7 @@ PieCharts with a DoughnutCoefficient specified will be rendered as doughnut. By 
 
 The DoughnutCoefficient property specifies the fraction of the radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PieItem.DoughnutCoeficient = 0.5f;
 
@@ -1865,6 +1886,7 @@ this.chartControl1.Series[0].ConfigItems.PieItem.DoughnutCoeficient = 0.5f;
 Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient = 0.5f
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img24.jpeg)
 
@@ -1912,7 +1934,7 @@ Column Chart and Bar Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].DrawColumnSeparatingLines = true;
 
@@ -1923,6 +1945,7 @@ this.chartControl1.Series[0].DrawColumnSeparatingLines = true;
 Me.chartControl1.Series(0).DrawColumnSeparatingLines = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img25.jpeg)
 
@@ -1974,7 +1997,7 @@ Column Chart, Line Chart and HiLo Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
  // Generating Series
 
@@ -2029,6 +2052,7 @@ Me.chartControl1.Series.Add(series)
 Private Me.chartControl1.Series(0).DrawErrorBars = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img26.jpeg)
 
@@ -2042,7 +2066,7 @@ Private Me.chartControl1.Series(0).DrawErrorBars = True
 
 Orientation of the ErrorBars can be specified in the ErrorBars.Orientation property. It can be _Vertical_ or _Horizontal_. 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //Creates a New Series
 
@@ -2141,6 +2165,7 @@ Me.chartControl1.PrimaryYAxis.DrawGrid = False
 Me.chartControl1.Series.Add(s1) 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img28.jpeg)
 
@@ -2190,7 +2215,7 @@ Histogram Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // This draws the normal distribution curve for the histogram chart.
 
@@ -2217,6 +2242,7 @@ series2.DrawHistogramNormalDistribution = True
 series2.NumberOfHistogramIntervals = 10
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img29.jpeg)
 
@@ -2267,7 +2293,7 @@ All chart types</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Specified 3D View
 
@@ -2310,6 +2336,7 @@ Me.chartControl1.Series(0).Style.Font.Facename = "Times New Roman"
 Me.chartControl1.Series(0).DrawSeriesNameInDepth = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img30.jpeg)
 
@@ -2325,7 +2352,7 @@ The chart also provides you an option to drop some points (by not drawing some p
 
 You can enable this, by setting the DropSeriesPoints property to true.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.DropSeriesPoints = true;
 
@@ -2336,6 +2363,7 @@ this.chartControl1.DropSeriesPoints = true;
 Me.chartControl1.DropSeriesPoints = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ElementBorders
 
@@ -2377,7 +2405,7 @@ Here is some sample code.
 
 ### Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Setting Symbol for the ChartSeries
 
@@ -2416,13 +2444,14 @@ cbi.Inner = New ChartBorder(ChartBorderStyle.DashDot, Color.Cyan)
 Me.chartControl1.Series(0).Style.ElementBorders = cbi
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img31.jpeg)
 
 
 ### Specific Data Point Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //Specifying element border for the first data point Styles(0), second data point Styles(1) and so on..
 
@@ -2437,6 +2466,7 @@ this.chartControl1.Series[0].Styles[0].ElementBorders = cbi;
 this.chartControl1.Series(0).Styles(0).ElementBorders = cbi
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -2484,7 +2514,7 @@ Bubble Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.BubbleItem.EnablePhongStyle = false;
 
@@ -2495,6 +2525,7 @@ this.chartControl1.Series[0].ConfigItems.BubbleItem.EnablePhongStyle = false;
 Me.chartControl1.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img32.jpeg)
@@ -2513,7 +2544,7 @@ To display proper tooltip for the Area charts, use the Series.EnableAreaToolTip 
 
 This splits up the region between two points into two parts while hovering the mouse on the region and displays the tooltip with respect to the nearby chart point.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].EnableAreaToolTip = true;
 
@@ -2524,6 +2555,7 @@ this.chartControl1.Series[0].EnableAreaToolTip = true;
 Me.chartControl1.Series(0).EnableAreaToolTip = True
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img33.jpeg)
@@ -2567,7 +2599,7 @@ Line Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].DrawErrorBars = true;
 
@@ -2582,6 +2614,7 @@ Me.chartControl1.Series(0).DrawErrorBars = true
 Me.chartControl1.Series(0).ErrorBarsSymbolShape = ChartSymbolShape.Circle
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img34.jpeg)
 
@@ -2632,7 +2665,7 @@ Pie Chart, Doughnut Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ExplodedAll = true;
 
@@ -2643,6 +2676,7 @@ this.chartControl1.Series[0].ExplodedAll = true;
 Me.chartControl1.Series(0).ExplodedAll = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img35.jpeg)
 
@@ -2691,7 +2725,7 @@ Pie Chart, Doughnut Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ExplodedIndex = 0;
 
@@ -2702,6 +2736,7 @@ this.chartControl1.Series[0].ExplodedIndex = 0;
 Me.chartControl1.Series(0).ExplodedIndex = 0
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img36.jpeg)
@@ -2753,7 +2788,7 @@ Pie Chart, Doughnut Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ExplodedAll = true;
 
@@ -2768,6 +2803,7 @@ Me.chartControl1.Series[0].ExplodedAll = True
 Me.chartControl1.Series(0).ExplosionOffset = 30f
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img37.jpeg)
 
@@ -2818,7 +2854,7 @@ All Chart Types</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].FancyToolTip.Angle = 180;
 
@@ -2842,6 +2878,7 @@ Me.chartControl1.Series(0).FancyToolTip.Visible = True
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img38.jpeg)
 
@@ -2892,7 +2929,7 @@ Funnel and Pyramid</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Setting FigureBase For Pyramid Chart
 
@@ -2927,6 +2964,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.FigureBase = ChartFigureBase.C
 Me.chartControl1.Series(0).ConfigItems.FunnelItem.FigureBase = ChartFigureBase.Square
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ### Pyramid Chart
@@ -2998,7 +3036,7 @@ Pie Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Setting Pietype
 
@@ -3021,6 +3059,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.PieType = ChartPieType.Round
 Me.chartControl1.Series(0).ConfigItems.PieItem.FillMode = ChartPieFillMode.EveryPie
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img43.jpeg)
 
@@ -3073,7 +3112,7 @@ Funnel Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.FunnelItem.FunnelMode = ChartFunnelMode.YIsHeight;
 
@@ -3088,6 +3127,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.FunnelMode = ChartFunnelMode.Y
 Me.chartControl1.Series(0).ConfigItems.FunnelItem.FunnelMode = ChartFunnelMode.YIsWidth
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img45.jpeg)
 
@@ -3142,7 +3182,7 @@ Here is some sample code.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Style.DisplayText = true; 
 
@@ -3165,10 +3205,11 @@ Me.chartControl1.Series(0).Style.Font.Facename = "Arial"
 Me.chartControl1.Series(0).Style.Text = "Series 1"
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Specific Data Point Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //font style set for first data point
 
@@ -3187,6 +3228,7 @@ Me.chartControl1.Series(0).Styles(0).Font.Bold = True
 Me.chartControl1.Series(0).Styles(0).Font.Facename = "Arial"
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img47.jpeg)
@@ -3236,7 +3278,7 @@ Gantt Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Specifies GenttDrawMode as CustomPointWidthMode
 
@@ -3263,9 +3305,10 @@ Me.chartControl1.Series(1).GanttDrawMode = ChartGanttDrawMode.CustomPointWidthMo
 Me.chartControl1.Series(1).Style.PointWidth = 1f
 
 {% endhighlight %}
+{% endtabs %}
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Specifies GenttDrawMode as AutoSizeMode
 
@@ -3284,6 +3327,7 @@ Me.chartControl1.Series(0).GanttDrawMode = ChartGanttDrawMode.AutoSizeMode
 Me.chartControl1.Series(1).GanttDrawMode = ChartGanttDrawMode.AutoSizeMode
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img48.jpeg)
 
@@ -3335,7 +3379,7 @@ Funnel Chart, Pyramid Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Setting GapRatio for Funnel Chart
 
@@ -3360,6 +3404,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.GapRatio = 0.1f
 Me.chartControl1.Series(0).ConfigItems.PyramidItem.GapRatio = 0.1f
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img50.jpeg)
@@ -3414,7 +3459,7 @@ Pie Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series.ConfigItems.PieItem.PieType = ChartPieType.Custom;
 
@@ -3445,6 +3490,7 @@ clrblnd.Colors = New Color() { Color.SteelBlue, Color.LightSteelBlue, Color.Alic
 series.ConfigItems.PieItem.Gradient = clrblnd
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img52.jpeg)
@@ -3495,7 +3541,7 @@ Point And Figure Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].HeightBox = 2f;
 
@@ -3506,6 +3552,7 @@ this.chartControl1.Series[0].HeightBox = 2f;
 Me.chartControl1.Series(0).HeightBox = 2f
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img53.jpeg)
@@ -3560,7 +3607,7 @@ Pie Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PieItem.HeightByAreaDepth = true;
 
@@ -3575,6 +3622,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightByAreaDepth = True
 Me.chartControl1.ChartArea.Depth = 25f
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img55.jpeg)
@@ -3627,7 +3675,7 @@ Pie Chart</td></tr>
 
 Here is the sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PieItem.HeightByAreaDepth = false;
 
@@ -3642,6 +3690,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightByAreaDepth = False
 Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img57.jpeg)
@@ -3696,7 +3745,7 @@ Here is some sample code.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.AutoHighlight = true;
 
@@ -3715,6 +3764,7 @@ Dim series1 As ChartSeries = Me.chartControl1.Series(0)
 series1.Style.HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagonal, Color.Red, Color.White)
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img58.jpeg)
@@ -3725,7 +3775,7 @@ series1.Style.HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagonal, C
 
 To set interior color for individual highlighted datapoints,
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series1.Styles[0].HighlightInterior = new BrushInfo(GradientStyle.ForwardDiagonal, Color.Red, Color.White);
 
@@ -3748,6 +3798,7 @@ series1.Styles(2).HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagona
 series1.Styles(3).HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagonal, Color.Pink, Color.White)
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -3793,7 +3844,7 @@ Line Chart and Step Line Chart</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Specifies the circle radius around the point for HitTest
 
@@ -3845,6 +3896,7 @@ MessageBox.Show("Point is Hit")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img59.jpeg)
 
@@ -3895,7 +3947,7 @@ Here is some sample code.
 
 ### Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Setting Images For the Series1
 
@@ -3922,13 +3974,14 @@ series1.Style.Symbol.Size = New Size(20, 20)
 series1.Style.Symbol.Shape = ChartSymbolShape.Image
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img60.jpeg)
 
 
 Specific Data Point Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //Symbol set for specific data points (first point)
 
@@ -3979,6 +4032,7 @@ series1.Styles(1).Symbol.Size = New Size(20, 20)
 series1.Styles(1).Symbol.Shape = ChartSymbolShape.Image
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -4024,7 +4078,7 @@ Area Charts, Bar Charts, Bubble Chart, Column Charts, Line  Charts, Candle Chart
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Setting Images For the Series1
 
@@ -4061,6 +4115,7 @@ series1.Style.Symbol.Shape = ChartSymbolShape.Image
 Me.chartControl1.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img61.jpeg)
 
@@ -4069,7 +4124,7 @@ Specific Data Point Setting
 
 You can also specify different image collections for different data points using the below code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series1.Styles[0].Images = new ChartImageCollection(this.imageList1.Images);
 
@@ -4112,7 +4167,7 @@ series1.Styles(1).Symbol.Size = New Size(20, 20)
 series1.Styles(1).Symbol.Shape = ChartSymbolShape.Image
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 {% seealso %}
@@ -4161,7 +4216,7 @@ Here is some sample code.
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Market");
 
@@ -4176,6 +4231,7 @@ Dim series1 As New ChartSeries("Market")
 series1.InSideRadius = 0.5f
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img62.jpeg)
 
@@ -4228,7 +4284,7 @@ The spline area interior brush can be customized using the ChartSeries.Style.Int
 
 The interior color of the chart series can be customized by using the Interior property of the ChartStyleInfo class. The following code illustrates this.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // This sets the interior color for the series. This can be done for any number of series.
 
@@ -4243,6 +4299,7 @@ this.chartControl1.Series[0].Style.Interior = new BrushInfo(GradientStyle.Horizo
 Me.chartControl1.Series(0).Style.Interior = New BrushInfo(GradientStyle.Horizontal,Color.AliceBlue, Color.Green)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img63.jpeg)
 
@@ -4252,7 +4309,7 @@ Specific Data Point Setting
 
 You can also set interior color for individual data points using Series.Styles[0].Interior property.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Styles[0].Interior = new BrushInfo(GradientStyle.Horizontal ,Color.AliceBlue, Color.Green);
 
@@ -4269,12 +4326,13 @@ Me.chartControl1.Series(0).Styles[1].Interior = New BrushInfo(GradientStyle.Hori
 
 
 {% endhighlight %}
+{% endtabs %}
 
 #### PieChart Specific
 
 When rendering pie charts, it's sometimes very helpful to render a patterned background for each slice, while printing the pie on a gray scale printer. You can do as easily as shown below. The code here is for a Pie Chart series with 4 points.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series1.Styles[0].Interior = new BrushInfo(PatternStyle.BackwardDiagonal, new BrushInfoColorArrayList(new Color[] { Color.Yellow, Color.Blue }));
 
@@ -4313,6 +4371,7 @@ series1.Styles(2).Text = "Server3"
 series1.Styles(3).Text = "Server4"
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img64.jpeg)
@@ -4363,7 +4422,7 @@ Funnel and Pyramid Charts</td></tr>
 
 Here is the code snippet using LabelPlacement in Pyramid Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PyramidItem.LabelPlacement = ChartAccumulationLabelPlacement.Center;
 
@@ -4374,13 +4433,14 @@ this.chartControl1.Series[0].ConfigItems.PyramidItem.LabelPlacement = ChartAccum
 Me.chartControl1.Series(0).ConfigItems.PyramidItem.LabelPlacement = ChartAccumulationLabelPlacement.Center
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img65.jpeg)
 
 
 Here is the code snippet using LabelPlacement in Funnel Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.FunnelItem.LabelPlacement = ChartAccumulationLabelPlacement.Center;
 
@@ -4391,7 +4451,7 @@ this.chartControl1.Series[0].ConfigItems.FunnelItem.LabelPlacement = ChartAccumu
 Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelPlacement = ChartAccumulationLabelPlacement.Center
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img66.jpeg)
@@ -4441,7 +4501,7 @@ Funnel, Pyramid charts</td></tr>
 
 Here is the code snippet using LabelStyle in Pyramid Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PyramidItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn;
 
@@ -4452,13 +4512,14 @@ this.chartControl1.Series[0].ConfigItems.PyramidItem.LabelStyle = ChartAccumulat
 Me.chartControl1.Series(0).ConfigItems.PyramidItem.LabelStyle= ChartAccumulationLabelStyle.OutsideInColumn
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img67.jpeg)
 
 
 Here is the code snippet using LabelStyle in Funnel Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.FunnelItem.LabelStyle = ChartAccumulationLabelStyle.OutsideInColumn;
 
@@ -4469,6 +4530,7 @@ this.chartControl1.Series[0].ConfigItems.FunnelItem.LabelStyle = ChartAccumulati
 Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelStyle= ChartAccumulationLabelStyle.OutsideInColumn
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img68.jpeg)
@@ -4522,7 +4584,7 @@ Column Charts , Bar Charts, Box and Whisker Chart, Gantt Chart, Histogram Chart,
 
 Here is code snippet using LightAngle in Column Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Specifies light angle of both the series
 
@@ -4541,6 +4603,7 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.LightAngle =45
 Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightAngle = 45
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img69.jpeg)
@@ -4594,7 +4657,7 @@ Column Chart, Bar Chart, Box and Whisker Chart, Gantt Chart, Histogram Chart, To
 
 Here is sample code snippet using LightColor in Column Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.ColumnItem.LightColor = Color.Blue;
 
@@ -4609,6 +4672,7 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.LightColor = Color.Blu
 Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightColor = Color.Green
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img71.jpeg)
 
@@ -4660,7 +4724,7 @@ All chart types</td></tr>
 
 Here is the code snippet using Name in Column Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //This Code Snippet gives the name of the series as Product1
 
@@ -4708,6 +4772,7 @@ Me.chartControl1.Series["Product1"].Style.Symbol.Shape = ChartSymbolShape.Diamon
 Me.chartControl1.Series["Product1"].Style.Symbol.Color = Color.Red 
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img72.jpeg)
@@ -4758,7 +4823,7 @@ HistoGram Chart</td></tr>
 
 Here is a code sample.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Set the desired number of intervals required for the histogram chart.
 
@@ -4773,6 +4838,7 @@ series.NumberOfHistogramIntervals = 20;
 series.NumberOfHistogramIntervals = 20
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img73.jpeg)
 
@@ -4821,7 +4887,7 @@ HiLoOpenClose Chart</td></tr>
 
 Here is the code snippet using OpenCloseDrawMode.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartSeries CS1 = new ChartSeries("Series Name",ChartSeriesType.HiLoOpenClose);
 
@@ -4864,6 +4930,7 @@ Me.chartControl1.Series.Add(CS1)
 Me.chartControl1.Series(0).OpenCloseDrawMode = ChartOpenCloseDrawMode.Open
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img74.jpeg)
@@ -4921,7 +4988,7 @@ Pie Chart.</td></tr>
 
 Here is the code snippet using OptimizePiePointPositions.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartSeries series = new ChartSeries("Series Name", ChartSeriesType.Pie);
 
@@ -4972,6 +5039,7 @@ series.OptimizePiePointPositions = False
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img77.jpeg)
@@ -5025,7 +5093,7 @@ Column Chart, Bar Chart, Box and Whisker Chart, Gantt Chart, Histogram Chart, To
 
 Here is code snippet using PhongAlpha in Column Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.ColumnItem.PhongAlpha = 2.0;
 
@@ -5036,6 +5104,7 @@ this.chartControl1.Series[0].ConfigItems.ColumnItem.PhongAlpha = 2.0;
 Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.PhongAlpha = 2.0
 
 {% endhighlight %}
+{% endtabs %}
 
 
 
@@ -5093,7 +5162,7 @@ Applies to Chart Types</td><td colspan = "2">
 PieChart</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PieItem.PieType=ChartPieType.Bevel;
 
@@ -5104,6 +5173,7 @@ this.chartControl1.Series[0].ConfigItems.PieItem.PieType=ChartPieType.Bevel;
 Me.chartControl1.Series(0).ConfigItems.PieItem.PieType = ChartPieType.Bevel
 
 {% endhighlight %}
+{% endtabs %}
 
 
 The following screen shots depict these types.
@@ -5170,7 +5240,7 @@ Applies to Chart Types</td><td colspan = "2">
 PieChart and Doughnut chart</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PieItem.PieWithSameRadius=true;
 
@@ -5181,6 +5251,7 @@ this.chartControl1.Series[0].ConfigItems.PieItem.PieWithSameRadius=true;
 Me.chartControl1.Series(0).ConfigItems.PieItem.PieType = True
 
 {% endhighlight %}
+{% endtabs %}
 
 
 Setting this property to true will let you display Pie Chart with same size in the divided area.
@@ -5237,7 +5308,7 @@ Here is a code snippet using PointWidth in Gantt Chart.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ganttSeries.Style.PointWidth = 0.25f;
 
@@ -5248,6 +5319,7 @@ ganttSeries.Style.PointWidth = 0.25f;
 Private ganttSeries.Style.PointWidth = 0.25f
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img86.jpeg)
@@ -5261,7 +5333,7 @@ Specific Data Point Setting
 
 You can also set the PointWidth for specific points using Series.Styles[0].PointWidth for the first data point, Series.Styles[1].PointWidth for the second data point and so on.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ganttSeries.Styles[0].PointWidth = 0.25f;
 
@@ -5276,7 +5348,7 @@ Private ganttSeries.Styles(0).PointWidth = 0.25f
 Private ganttSeries.Styles(1).PointWidth = 0.5f
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 {% seealso %}
@@ -5323,7 +5395,7 @@ Kagi Chart, Point and Figure Chart, Renko Chart, Three Line Break Chart</td></tr
 
 Here is code snippet using PriceDownColor in point and figure Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series7.PriceDownColor = Color.Magenta;
 
@@ -5338,6 +5410,7 @@ series7.PriceDownColor = Color.Magenta
 series7.PriceUpColor = Color.Orange
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img88.jpeg)
 
@@ -5387,7 +5460,7 @@ Kagi Chart, Point and Figure Chart, Renko Chart, Three Line Break Chart</td></tr
 
 Here is sample code snippet using PriceUpColor in Kagi Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series.PriceUpColor = Color.Red;
 
@@ -5402,7 +5475,7 @@ series.PriceUpColor = Color.Red
 series.PriceDownColor = Color.Green
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img89.jpeg)
@@ -5450,7 +5523,7 @@ Pyramid</td></tr>
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PyramidItem.PyramidMode=ChartPyramidMode.Surface;
 
@@ -5461,6 +5534,7 @@ this.chartControl1.Series[0].ConfigItems.PyramidItem.PyramidMode=ChartPyramidMod
 Private Me.chartControl1.Series(0).ConfigItems.PyramidItem.PyramidMode=ChartPyramidMode.Surface
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img90.jpeg)
 
@@ -5509,7 +5583,7 @@ Polar and Radar Chart</td></tr>
 
 Here is code snippet using RadarType.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.RadarItem.Type = ChartRadarDrawType.Symbol;
 
@@ -5541,6 +5615,7 @@ Private Me.chartControl1.Series(1).Style.Symbol.Color = Color.Green
 
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img91.jpeg)
@@ -5593,7 +5668,7 @@ Radar Chart</td></tr>
 
 Here is code snippet using RadarType.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.RadarStyle = ChartRadarAxisStyle.Circle;
 
@@ -5604,6 +5679,7 @@ this.chartControl1.RadarStyle = ChartRadarAxisStyle.Circle;
 Me.chartControl1.RadarStyle = ChartRadarAxisStyle.Circle
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img92.jpeg)
@@ -5661,7 +5737,7 @@ Gantt Chart</td></tr>
 
 Here is sample code snippet using RelatedPoints.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Related Points for first series
 
@@ -5734,6 +5810,7 @@ Me.chartControl1.Series(1).Styles(5).RelatedPoints.DashStyle = System.Drawing.Dr
 Me.chartControl1.Series(1).Styles(5).RelatedPoints.Width = 3f
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img94.jpeg)
 
@@ -5789,7 +5866,7 @@ Here is code snippet using ReversalAmount in Renko Chart.
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series.ReversalAmount = 3;
 
@@ -5800,6 +5877,7 @@ series.ReversalAmount = 3;
 Private series.ReversalAmount = 3
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img96.jpeg)
 
@@ -5849,7 +5927,7 @@ Column Charts, Bar Charts, Area charts, Line Chart, Spline Chart, Stepline Chart
 
 Here is sample code snippet using Rotate in Column Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Rotate = true;
 
@@ -5860,6 +5938,7 @@ this.chartControl1.Series[0].Rotate = true;
 Private Me.chartControl1.Series(0).Rotate = True
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img97.jpeg)
@@ -5914,7 +5993,7 @@ Scatter Chart</td></tr>
 
 Optionally, you can connect the points in the series through straight lines using the ScatterConnectType property as shown below.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series.ScatterConnectType = ScatterConnectType.Line;
 
@@ -5925,6 +6004,7 @@ series.ScatterConnectType = ScatterConnectType.Line;
 series.ScatterConnectType = ScatterConnectType.Line
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img99.jpeg)
@@ -5934,7 +6014,7 @@ series.ScatterConnectType = ScatterConnectType.Line
 
 Alternatively, you can connect the points in the series through splines using the ScatterConnectType property as shown below.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series.ScatterConnectType = ScatterConnectType.Spline;
 
@@ -5949,6 +6029,7 @@ series.ScatterConnectType = ScatterConnectType.Spline
 series.ScatterSplineTension = 1 ' Default is 0
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img100.jpeg)
 
@@ -5995,7 +6076,7 @@ ScatterSplineChart</td></tr>
 </table>
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[i].ScatterConnectType  = ScatterConnectType.Spline;
 
@@ -6010,6 +6091,7 @@ Private Me.chartControl1.Series(i).ScatterConnectType = ScatterConnectType.Splin
 Private Me.chartControl1.Series(i).ScatterSplineTension =3
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img101.jpeg)
 
@@ -6060,7 +6142,7 @@ Area Charts, Radar Chart, Polar Chart, ThreeLineBreak Chart,PointAndFigure Chart
 
 Here is some sample code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[1].SeriesToolTipFormat="{0}";
 
@@ -6071,6 +6153,7 @@ this.chartControl1.Series[1].SeriesToolTipFormat="{0}";
 Private Me.chartControl1.Series(1).SeriesToolTipFormat="{0}"
 
 {% endhighlight %}
+{% endtabs %}
 
 
 
@@ -6122,7 +6205,7 @@ Column Chart, BarCharts, Candle Chart, HiLo Chart, HiLoOpenClose Chart, Tornado 
 
 Here is sample code snippet using ShadingMode.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.ColumnItem.ShadingMode = ChartColumnShadingMode.FlatRectangle;
 
@@ -6133,6 +6216,7 @@ this.chartControl1.Series[0].ConfigItems.ColumnItem.ShadingMode = ChartColumnSha
 Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.ShadingMode = ChartColumnShadingMode.FlatRectangle
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img103.jpeg)
 
@@ -6186,7 +6270,7 @@ Here is sample code snippet using ShadowInterior in Column Chart.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Specifying Shadow Interior for 2 series
 
@@ -6205,6 +6289,7 @@ Private Me.chartControl1.Series(0).Style.DisplayShadow = True
 Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(GradientStyle.None, Color.SteelBlue,Color.SteelBlue)
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img105.jpeg)
@@ -6214,7 +6299,7 @@ Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(Gradient
 
 To specify different shadow colors for individual points, use Series.Styles[0].ShadowInterior property.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Styles[0].ShadowInterior = new BrushInfo(GradientStyle.None, Color.SteelBlue,Color.SteelBlue);
 
@@ -6229,6 +6314,7 @@ Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(Gradient
 Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(GradientStyle.None, Color.Gray,Color.Gray)
 
 {% endhighlight %}
+{% endtabs %}
 
 
 {% seealso %}
@@ -6279,7 +6365,7 @@ Here is sample code snippet using ShadowOffset in Column Chart.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series.Style.DisplayShadow = true;
 
@@ -6314,13 +6400,14 @@ Private series.Styles(1).ShadowOffset = New Size(8, 8)
 Private series.Styles(2).ShadowOffset = New Size(6, 6)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img106.jpeg)
 
 
 Specific Data Point Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //For specific points
 
@@ -6343,6 +6430,7 @@ Private series.Styles(1).ShadowOffset = New Size(8, 8)
 Private series.Styles(2).ShadowOffset = New Size(6, 6)
 
 {% endhighlight %}
+{% endtabs %}
 
 
 {% seealso %}
@@ -6389,7 +6477,7 @@ Pie Chart, Doughnut Chart, Funnel Chart and Pyramid chart.</td></tr>
 
 Here is sample code snippet using ShowDataPointLabels.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //For Pie Chart
 
@@ -6420,6 +6508,7 @@ Me.chartControl.Series(0).ConfigItems.FunnelItem.ShowDataBindLabels = True
 Me.chartControl.Series(0).ConfigItems.PyramidItem.ShowDataBindLabels = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img107.jpeg)
 
@@ -6478,7 +6567,7 @@ Histogram Chart</td></tr>
 
 Here is sample code snippet using ShowHistogramDataPoints.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ShowHistogramDataPoints =true;
 
@@ -6489,6 +6578,7 @@ this.chartControl1.Series[0].ShowHistogramDataPoints =true;
 Private Me.chartControl1.Series(0).ShowHistogramDataPoints =True
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img110.jpeg)
@@ -6542,7 +6632,7 @@ Pie Chart</td></tr>
 
 Here is a sample code snippet using ShowTicks.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Enables Ticks
 
@@ -6557,6 +6647,7 @@ this.chartControl1.Series[0].ShowTicks = true;
 Private Me.chartControl1.Series(0).ShowTicks = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img112.jpeg)
 
@@ -6610,7 +6701,7 @@ All chart types</td></tr>
 
 Here is sample code snippet using Smart Labels in ColumnChart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Style.DisplayText = true;
 
@@ -6629,6 +6720,7 @@ series.Styles(0).Text = series.Name
 Private Me.chartControl1.Series(0).SmartLabels = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img114.jpeg)
 
@@ -6643,7 +6735,7 @@ Private Me.chartControl1.Series(0).SmartLabels = True
 
 Smart labels can be made smarter by displaying with customized borders. The color and the width of the border can be changed using the appearance properties available. SmartLabelsBorderColor property is used to set color for the border and SmartLabelsBorderWidth property is used to set the width of the border.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].SmartLabelsBorderColor = Color.Yellow;
 
@@ -6658,6 +6750,7 @@ Me.chartControl1.Series(0).SmartLabelsBorderColor = Color.Yellow
 Me.chartControl1.Series(0).SmartLabelsBorderWidth = 2
 
 {% endhighlight %}
+{% endtabs %}
 
 
 {% seealso %}
@@ -6705,7 +6798,7 @@ Applies to Chart Types</td><td colspan = "2">
 Column Charts, BarCharts, Box and Whisker Chart, Gantt Chart, Tornado Chart, Candle Chart, HiLo Chart, HiLo Open Close Chart</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //Indicates the spacing width in percentage that is to be applied between the datapoints of the column chart.
 
@@ -6720,6 +6813,7 @@ this.chartControl1.Spacing = 50;
 Me.chartControl1.Spacing = 50
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img116.jpeg)
@@ -6767,7 +6861,7 @@ Applies to Chart Types</td><td colspan = "2">
 Area Charts, BarCharts, Line Charts, Bubble Chart, Financial Charts, Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker Chart</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //Specifies the spacing between individual series.
 
@@ -6782,7 +6876,7 @@ this.chartControl1.SpacingBetweenSeries = 20;
 Me.chartControl1.SpacingBetweenSeries = 20
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img117.jpeg)
@@ -6835,7 +6929,7 @@ Applies to Chart Types</td><td colspan = "2">
 Column Chart, Bar Chart, HiLo Chart, HiLo Open Close Chart, Candle Chart, Tornado Chart, Boxes and Whisker Chart</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.SpacingBetweenPoints = 70;
 
@@ -6846,6 +6940,7 @@ this.chartControl1.SpacingBetweenPoints = 70;
 Me.chartControl1.SpacingBetweenSeries = 70
 
 {% endhighlight %}
+{% endtabs %}
 
 
 {% seealso %}
@@ -6862,7 +6957,7 @@ This section illustrates how to group the stacking series with another stacking 
 
 The below example demonstrates the code on setting the StackingGroup for the series in the Chart control.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartSeries ser1 = new ChartSeries("Series 1");
 
@@ -6917,6 +7012,7 @@ ser3.Type = ChartSeriesType.StackingColumn
 ser3.StackingGroup = "FirstGroup"
 
 {% endhighlight %}
+{% endtabs %}
 
 
 
@@ -6968,7 +7064,7 @@ StepAreaChart, StepLine Chart</td></tr>
 
 Here is sample code snippet using Inverted Step.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.StepItem.Inverted=true;
 
@@ -6979,6 +7075,7 @@ this.chartControl1.Series[0].ConfigItems.StepItem.Inverted=true;
 Private Me.chartControl1.Series(0).ConfigItems.StepItem.Inverted=True
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img121.jpeg)
@@ -7033,7 +7130,7 @@ All chart types</td></tr>
 
 Here is a sample code snippet using Radar chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 string str = this.chartControl1.Series[0].Summary.MaxY.ToString();
 
@@ -7068,6 +7165,7 @@ this.chartControl1.Series[0].Summary.GetYPercentage(1)
 this.chartControl1.Series[0].Summary.GetYPercentage(1, 0)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img123.jpeg)
 
@@ -7119,7 +7217,7 @@ Here is sample code snippet using Symbol in Column Chart.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Style.Symbol.Shape = ChartSymbolShape.Diamond;
 
@@ -7172,6 +7270,7 @@ Private Me.chartControl1.Series(0).Style.Symbol.Border.Color = Color.Blue
 Private Me.chartControl1.Series(0).Style.Symbol.Border.Width = 1
 
 {% endhighlight %}
+{% endtabs %}
 
 
 'Used to set the Alignment of the Symbol border.
@@ -7194,7 +7293,7 @@ Specific Data Point Setting
 
 To specify customized symbols for individual datapoints, use Series.Styles[i].Symbol property, where i ranges from 0 to n representing the data points.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Styles[0].Symbol.Shape = ChartSymbolShape.Diamond;
 
@@ -7275,6 +7374,7 @@ Private Me.chartControl1.Series(0).Styles[0].Symbol.Border.Alignment = PenAlignm
 Private Me.chartControl1.Series0).Styles[0].Symbol.Border.DashStyle = DashStyle.Solid
 
 {% endhighlight %}
+{% endtabs %}
 
 
 {% seealso %}
@@ -7324,7 +7424,7 @@ Text can be set directly by using Series object.
 Here is sample code snippet.
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Here the series text will be taken from series name
 
@@ -7372,6 +7472,7 @@ Dim series2 As New ChartSeries("June",ChartSeriesType.Column)
 series2.Text = "JuneSales"
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img125.jpeg)
@@ -7390,7 +7491,7 @@ Series Wide Setting
 
 Datapoint labels for a series can be specified using Series.Style.Text property.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //labels for the series
 
@@ -7409,6 +7510,7 @@ chartControl1.Series[0].Style.DisplayText = True
 chartControl1.Series(0).Style.Text = "Series1 Point"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img126.jpeg)
 
@@ -7417,7 +7519,7 @@ Specific Data Point Setting
 
 Labels for specific data points can be specified through Series.Styles[0].Text property.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //labels for the individual datapoints in the series
 
@@ -7444,6 +7546,7 @@ chartControl1.Series(0).Styles(1).Text = "Second Point"
 chartControl1.Series(0).Styles(2).Text = "Third Point"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img127.jpeg)
 
@@ -7502,7 +7605,7 @@ Here is sample code snippet using TextColor in Column Chart.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Set the color of the text in the Series
 
@@ -7526,6 +7629,7 @@ Private Me.chartControl1.Series(1).Style.TextColor = Color.Red
 Private Me.chartControl1.Series(2).Style.TextColor = Color.Green
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img129.jpeg)
 
@@ -7534,7 +7638,7 @@ Specific Data Point Setting
 We can set TextColor for specific data points in a series by using Series.Styles[0].TextColor property as follows.
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Set the text color for the three data points in the Series
 
@@ -7557,6 +7661,7 @@ Private Me.chartControl1.Series(0).Styles(1).TextColor = Color.SteelBlue
 Private Me.chartControl1.Series(0).Styles(2).TextColor = Color.LightBlue
 
 {% endhighlight %}
+{% endtabs %}
 
 
 {% seealso %}
@@ -7609,7 +7714,7 @@ Series wide setting
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Style.TextFormat = "T = {0}";
 
@@ -7620,6 +7725,7 @@ this.chartControl1.Series[0].Style.TextFormat = "T = {0}";
 Me.chartControl1.Series(0).Style.TextFormat = "T = {0}"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img130.jpeg)
 
@@ -7630,7 +7736,7 @@ Specific Data Point Setting
 
 TextFormats for individual data points are specified using below code.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 chartControl1.Series[0].Styles[0].TextFormat = "YValue : {0}";
 
@@ -7645,6 +7751,7 @@ chartControl1.Series(0).Styles(0).TextFormat = "YValue : {0}"
 chartControl1.Series(0).Styles(1).TextFormat = "Dollars : {0:C}"
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -7692,7 +7799,7 @@ Here is a sample code snippet using TextOffset in Column Chart.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Style.TextOffset = 10.0F;
 
@@ -7703,7 +7810,7 @@ this.chartControl1.Series[0].Style.TextOffset = 10.0F;
 Me.chartControl1.Series(0).Style.TextOffset = 10.0F
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img131.jpeg)
@@ -7713,7 +7820,7 @@ Specific Data Point Setting
 
 TextOffset for data points can be specified using Series.Styles[0].TextOffset property.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Styles[0].TextOffset = 10.0F;
 
@@ -7728,6 +7835,7 @@ Me.chartControl1.Series(0).Styles(0).TextOffset = 10.0F
 Me.chartControl1.Series(0).Styles(1).TextOffset = 15.0F
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -7787,7 +7895,7 @@ Here is some sample code.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Text Orientation of chart series
 
@@ -7814,6 +7922,7 @@ Private Me.chartControl1.Series(0).Style.TextColor=Color.Blue
 Private Me.chartControl1.Series(1).Style.TextColor=Color.Red
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img132.jpeg)
@@ -7823,7 +7932,7 @@ Private Me.chartControl1.Series(1).Style.TextColor=Color.Red
 
 Text orientation for specific data points can be set using Series.Style[i].TextOrientation property, where "i" represents the index of data points ranging from 0 to n.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[1].Styles[0].TextOrientation = ChartTextOrientation.RegionDown;
 
@@ -7864,6 +7973,7 @@ Private Me.chartControl1.Series(0).Styles(1).TextColor=Color.Green
 Private Me.chartControl1.Series(1).Styles(1).TextColor=Color.Yellow
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -7935,7 +8045,7 @@ Here is sample code snippet using ToolTip in the Column Chart.
 
 Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.ShowToolTips = true;
 
@@ -7954,6 +8064,7 @@ series1.PointsToolTipFormat = "{1}"
 series1.Style.ToolTip = "Tooltip of Series1"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img133.jpeg)
 
@@ -7964,7 +8075,7 @@ series1.Style.ToolTip = "Tooltip of Series1"
 
 ToolTip can be applied to individual points of a Series.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 for (int i = 0; i < series1.Points.Count; i++)
 
@@ -7990,6 +8101,7 @@ Loop
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img134.jpeg)
 
@@ -8043,7 +8155,7 @@ Here is sample code snippet using ToolTipFormat in the Column chart.
 
 #### Series Wide Setting
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.ShowToolTips = true;
 
@@ -8058,6 +8170,7 @@ Me.chartControl1.ShowToolTips = True
 Me.chartControl1.Series[1].Style.ToolTipFormat = "Y = {0}" 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img135.jpeg)
 
@@ -8066,7 +8179,7 @@ Me.chartControl1.Series[1].Style.ToolTipFormat = "Y = {0}"
 
 Tooltip format can be applied for individual points by using Series.Styles[0].ToolTipFormat property settings.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 for (int i = 0; i < series1.Points.Count; i++)
 
@@ -8091,6 +8204,7 @@ series1.Styles(i).ToolTipFormat = "{0}";
 Loop
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img136.jpeg)
@@ -8140,7 +8254,7 @@ All chart types</td></tr>
 
 Here is sample code snippet using Visible property in Bar Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Hides Series[0] and shows Series[1]
 
@@ -8159,6 +8273,7 @@ Private Me.chartControl1.Series(0).Visible = False
 Private Me.chartControl1.Series(1).Visible = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img137.jpeg)
 
@@ -8213,7 +8328,7 @@ Pie Chart</td></tr>
 
 Here is the sample code snippet using VisibleAllPies in PieChart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.ChartArea.VisibleAllPies = false;
 
@@ -8228,6 +8343,7 @@ Me.chartControl1.ChartArea.VisibleAllPies = False
 chartControl1.Legend.RowsCount = 3
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img139.jpeg)
 
@@ -8281,7 +8397,7 @@ All Chart Types</td></tr>
 
 Here is sample code snippet using XType.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 autoLabel1.Text = this.chartControl1.Series[0].XType.ToString();
 
@@ -8292,6 +8408,7 @@ autoLabel1.Text = this.chartControl1.Series[0].XType.ToString();
 Private autoLabel1.Text = Me.chartControl1.Series(0).XType.ToString()
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img141.jpeg)
 
@@ -8341,7 +8458,7 @@ All Chart Types</td></tr>
 
 Here is sample code snippet using YType.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 autoLabel1.Text = this.chartControl1.Series[0].YType.ToString();
 
@@ -8352,6 +8469,7 @@ autoLabel1.Text = this.chartControl1.Series[0].YType.ToString();
 Private autoLabel1.Text = Me.chartControl1.Series(0).YType.ToString()
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Chart-Series_images/Chart-Series_img142.jpeg)
 
@@ -8400,7 +8518,7 @@ Gantt Chart, Histogram chart, Tornado Chart, Combination Chart, Box and Whisker 
 
 Here is sample code snippet using ZOrder.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].ZOrder = 0;
 
@@ -8415,6 +8533,7 @@ Private Me.chartControl1.Series(0).ZOrder = 0
 Private Me.chartControl1.Series(1).ZOrder = 1
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img143.jpeg)
@@ -8428,7 +8547,7 @@ Private Me.chartControl1.Series(1).ZOrder = 1
 
 The chart series can be rearranged at run-time using ZOrder property as follows. The chart needs to be redrawn in order to reflect ZOrder property changes. We cannot call redrawing for every series ZOrder changes. In order to overcome this, we should change the order of the series in between the begin update and end update statements as follows.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.BeginUpdate();
 
@@ -8455,6 +8574,7 @@ Me.chartControl1.Model.Series[2].ZOrder = 0
 Me.chartControl1.EndUpdate()
 
 {% endhighlight %}
+{% endtabs %}
 
 
 
@@ -8523,7 +8643,7 @@ You can set the co-ordinates (XValue and the YValue property), symbols and their
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Point that follows a series point:
 
@@ -8642,6 +8762,7 @@ chartCustomPoint1.Font.Facename = "Verdana"
 chartCustomPoint1.Font.Size = 10F
 
 {% endhighlight %}
+{% endtabs %}
 
 
 
@@ -8651,7 +8772,7 @@ N> You can also customize a custom point symbol using Symbol property.
 
 * Adding Custom Point to the Chart.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Adds the custom point to the collection.
 
@@ -8666,6 +8787,7 @@ this.chartControl1.CustomPoints.Add(cp);
 Me.chartControl1.CustomPoints.Add(cp)
 
 {% endhighlight %}
+{% endtabs %}
 
 
 _Custom point types_
@@ -8716,7 +8838,7 @@ The custom points for the Secondary axis can be achieved by assigning the Series
 
 The following code snippet illustrates this:
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartCustomPoint cp = new ChartCustomPoint();
 
@@ -8779,6 +8901,7 @@ cp.Text = cp.XValue & "," & cp.YValue
 Me.ChartWebControl1.CustomPoints.Add(cp)
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img152.png)
@@ -8790,7 +8913,7 @@ EssentialChart lets you prevent certain points from getting plotted in the resul
 
 Empty Points can be implemented by setting the IsEmpty property of the ChartPoint class to true.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // This sets the specified point as empty point.
 
@@ -8805,7 +8928,7 @@ this.chartControl1.Series[1].Points[0].IsEmpty = true;
 Me.chartControl1.Series[1].Points[0].IsEmpty = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 The following images illustrate the same. The second image displays after setting Point1 as an empty point.
@@ -8832,7 +8955,7 @@ It is possible to set some data point as empty point and still show the chart wi
 
 N> You need to set ChartControl.Indexed property to true for the above setting to be effective.
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Series[0].Points[3].IsEmpty = true;
 
@@ -8851,14 +8974,14 @@ Me.chartControl1.Series(0).Points(4).IsEmpty = True
 Me.chartControl1.Series(0).Points(5).IsEmpty = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ![](Chart-Series_images/Chart-Series_img156.jpeg)
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.Indexed = true;
 
@@ -8873,7 +8996,7 @@ Me.chartControl1.Indexed = True
 Me.chartControl1.AllowGapForEmptyPoints = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 
