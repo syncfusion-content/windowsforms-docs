@@ -363,7 +363,7 @@ When you need to change the back color for the selected range of cells, then sel
 
 ### Modifying Cell Styles through Code
 
-Values can be entered into the GridControl by using the `GridRangeInfo` class and properties of **GridStyleInfo** class. By using the **GridStyleInfo** class, the appearance of the cell can be customized and by using the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ChangeCells.html# "") method, the style can be assigned to the desired range of cells.
+Values can be entered into the GridControl by using the `GridRangeInfo` class and properties of **GridStyleInfo** class. By using the **GridStyleInfo** class, the appearance of the cell can be customized and by using the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ChangeCells.html#) method, the style can be assigned to the desired range of cells.
 
 {% tabs %}
 {% highlight c# %}
