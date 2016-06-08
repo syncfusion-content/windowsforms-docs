@@ -107,7 +107,7 @@ gridControl1(2, 2).CellType = "Header"
 ![](Cell-Types_images/Cell-Types_img4.png)
 
 ### Image cell
-To show an Image in a cell, make use of the **Image** cell type. It can be achieved by setting the `CellType` property as `GridCellTypeName.Image`. Images can be added in GridControl by using the [ImageList](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridListControl~ImageList.html) property. Multiple number of images can be added by using this property. For picking a particular image from the list, make use of the[ImageIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ImageIndex.html) property.
+To show an Image in a cell, make use of the **Image** cell type. It can be achieved by setting the `CellType` property as `GridCellTypeName.Image`. Images can be added in GridControl by using the [ImageList](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridListControl~ImageList.html) property. Multiple number of images can be added by using this property. For picking a particular image from the list, make use of the [ImageIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ImageIndex.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -334,7 +334,7 @@ The drop-down cell behavior of a ComboBox can be changed by using the [DropDownS
 * `Exclusive` style is used to just select the option from the combobox drop down, it will not allow to edit the contents of the cell.
 
 ### Enabling AutoComplete in EditMode
-For enabling the AutoComplete in edit mode, make use of the [AutoCompleteInEditMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~AutoCompleteInEditMode.html) property. Choose any of the[GridComboSelectionOption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridComboSelectionOptions.html) using `AutoCompleteInEditMode` property. Make sure that the `DropDownStyle` is in `Editable` state so that `AutoCompleteInEditMode` can be used. 
+For enabling the AutoComplete in edit mode, make use of the [AutoCompleteInEditMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~AutoCompleteInEditMode.html) property. Choose any of the [GridComboSelectionOption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridComboSelectionOptions.html) using `AutoCompleteInEditMode` property. Make sure that the `DropDownStyle` is in `Editable` state so that `AutoCompleteInEditMode` can be used. 
 
 {% tabs %}
 {% highlight c# %}
@@ -982,7 +982,7 @@ Me.gridControl1(2, 2) = monthCalendar
 ![](Cell-Types_images/Cell-Types_img26.png)
 
 ### NumericUpDown Cells
-**`NumericUpDown`** cell type makes the grid cell to increase or decrease a value by using a pair of arrow buttons. There is also a property `NumericUpDown` under the GridStyleInfo class which gets the value as of type [GridNumericUpDownCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridNumericUpDownCellInfo.html)**.** This `GridNumericUpDownCellInfo` class contains all the style properties related to the `NumericUpDown` cell type. 
+`NumericUpDown` cell type makes the grid cell to increase or decrease a value by using a pair of arrow buttons. There is also a property `NumericUpDown` under the GridStyleInfo class which gets the value as of type [GridNumericUpDownCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridNumericUpDownCellInfo.html)**.** This `GridNumericUpDownCellInfo` class contains all the style properties related to the `NumericUpDown` cell type. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1047,7 +1047,7 @@ Me.gridControl1(2, 2) = numericCelltype
 
 ![](Cell-Types_images/Cell-Types_img27.png)
 
-`NumericUpDown` cell can be customized to allow only numeric characters by setting the[AcceptAlphaKeys](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridNumericUpDownCellModel~AcceptAlphaKeys.html) property to false. This property can be derived from [GridNumericUpDownCellModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridNumericUpDownCellModel.html).
+`NumericUpDown` cell can be customized to allow only numeric characters by setting the [AcceptAlphaKeys](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridNumericUpDownCellModel~AcceptAlphaKeys.html) property to false. This property can be derived from [GridNumericUpDownCellModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridNumericUpDownCellModel.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -1067,7 +1067,7 @@ model.AcceptAlphaKeys = False
 {% endtabs %}
 
 ### ProgressBar Cells
-Progress bars are used in applications to provide a visual cue during lengthy operations such as installation, copying, and printing etc. In GridControl progress bar cells can be used in a cell by setting the `CellType` name as `**ProgressBar`.**
+Progress bars are used in applications to provide a visual cue during lengthy operations such as installation, copying, and printing etc. In GridControl progress bar cells can be used in a cell by setting the `CellType` name as `ProgressBar`.
 
 The `ProgressBar` property in `GridStyleInfo` class will set all the style properties related to the progress bar. This property will get the value of type [GridProgressBarInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProgressBarInfo.html) class.
 
@@ -1706,7 +1706,7 @@ gridControl1(2, 2).Tag = "http://www.syncfusion.com"
 ![](Cell-Types_images/Cell-Types_img40.png)
 
 ### Changing the color of the link while mouse hover
-It is possible to change the color of the link while mouse hover by using of the [ActiveLinkColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LinkLabelCellRenderer~ActiveLinkColor.html) property. This property can be accessed from the[LinkLabelCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html) class.
+It is possible to change the color of the link while mouse hover by using of the [ActiveLinkColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LinkLabelCellRenderer~ActiveLinkColor.html) property. This property can be accessed from the [LinkLabelCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -1808,7 +1808,7 @@ Me.gridControl1(4, 2).CellType = CustomCellTypes.IntegerTextBox.ToString()
 ![](Cell-Types_images/Cell-Types_img43.png)
 
 ### DoubleTextBox Cells
-Double text box is used to display double data-type values in the grid cells. It can be done by assigning the cell type as **CustomCellTypes.DoubleTextBox**.
+Double text box is used to display double data-type values in the grid cells. It can be done by assigning the cell type as `CustomCellTypes.DoubleTextBox`.
 
 {% tabs %}
 {% highlight c# %}
