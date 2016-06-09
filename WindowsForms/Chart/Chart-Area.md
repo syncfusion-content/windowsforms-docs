@@ -19,6 +19,7 @@ By enabling this property, the following are possible.
 
 GetSeriesBounds() method can be used to get the bounds of the DividedArea when ChartArea.DivideArea is set to true. 
 
+{% tabs %}  
 {% highlight c# %}
 
 this.chartControl1.ChartArea.GetSeriesBounds(series);
@@ -30,9 +31,11 @@ this.chartControl1.ChartArea.GetSeriesBounds(series);
 Me.chartControl1.ChartArea.GetSeriesBounds(series)
 
 {% endhighlight %}
+{% endtabs %}
 
 ShowSeriesTitle property is used to display the series name as title for each section of the pie, funnel, pyramid charts in the divided area. 
 
+{% tabs %}  
 {% highlight c# %}
 
 ChartSeries.ConfigItems.PieItem.ShowSeriesTitle = true;
@@ -48,6 +51,7 @@ ChartSeries.ConfigItems.FunnelItem.ShowSeriesTitle = True
 ChartSeries.ConfigItems.PyramidItem.ShowSeriesTitle = True
 
 {% endhighlight %}
+{% endtabs %}
 A sample which demonstrates the divide area support in chart is available in the following sample installation location.
 
 &lt;sample installed location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Chart Divide Area

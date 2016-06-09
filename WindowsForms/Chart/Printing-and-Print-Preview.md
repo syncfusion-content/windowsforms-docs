@@ -14,7 +14,7 @@ documentation: ug
 The chart provides a PrintDocument that can be sent to the .NET PrintPreviewDialog to get a preview of the chart that gets printed. Here is some code that shows how this is done.
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
 
@@ -33,6 +33,7 @@ printPreviewDialog1.Document = Me.chartControl1.PrintDocument
 printPreviewDialog1.ShowDialog()
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img1.jpeg)
 
@@ -43,7 +44,7 @@ Print a chart control using the PrintDocument exposed by the chart control as fo
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.PrintDocument.Print();
 
@@ -54,6 +55,7 @@ this.chartControl1.PrintDocument.Print();
 Me.chartControl1.PrintDocument.Print()
 
 {% endhighlight %}
+{% endtabs %}
 
 
 You can also specify if you want to print the chart in Color or GrayScale using this property.
@@ -71,7 +73,7 @@ Indicates the color mode during printing. Possible Values:* Color - Always Print
 </table>
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale;
 
@@ -82,6 +84,7 @@ this.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale;
 Me.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ## Automatic GrayScale Handling
@@ -104,7 +107,7 @@ ShowToolBar property should be set to true to display a toolbar in the Chart. Yo
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 chartControl1.ShowToolbar = true;
 
@@ -119,3 +122,4 @@ chartControl1.ShowToolbar = True
 chartControl1.PrintDocument.PrintToolBar = True
 
 {% endhighlight %}
+{% endtabs %}
