@@ -180,7 +180,7 @@ Here is a sample code snippet to simulate an ANOVA test.
 
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 AnovaResult ar = BasicStatisticalFormulas.Anova(confidenceLevel,new ChartSeries[]{ series1, series2, series3} );
 
@@ -191,7 +191,6 @@ AnovaResult ar = BasicStatisticalFormulas.Anova(confidenceLevel,new ChartSeries[
 Dim ar As AnovaResult = BasicStatisticalFormulas.Anova(confidenceLevel, New ChartSeries(){ series1, series2, series3})
 
 {% endhighlight %}
-{% endtabs %}
 
 
 The following image displays the results of an ANOVA test.
@@ -247,7 +246,7 @@ Example
 
 The below code snippet demonstrates how to get the correlation coefficient between two groups of data (Series1 and Series2) using the in-built formula.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -268,7 +267,6 @@ Dim Correlation1 As Double
 Correlation1=BasicStatisticalFormulas.Correlation(series,series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 N> For further details, refer to this Browser Sample:
@@ -319,7 +317,7 @@ Example
 
 Here is the code snippet that demonstrates the usage of this method.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -340,7 +338,6 @@ Dim Covariance1 As Double
 Covariance1=BasicStatisticalFormulas.Covariance (series,series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 N> For further details, refer to this Browser Sample:
 
@@ -386,7 +383,7 @@ Example
 Here is a code snippet that shows a sample usage.
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 FTestResult ttr = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.FTest(confidenceLevel,series1,series2);
 
@@ -399,7 +396,6 @@ Dim ttr As FTestResult = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisti
 
 
 {% endhighlight %}
-{% endtabs %}
 
 N> For further details, refer to this Browser Sample:
 
@@ -432,7 +428,7 @@ Example
 Here is a code snippet that shows a sample usage.
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -453,7 +449,6 @@ Dim calculatedMean As Double
 calculatedMean = BasicStatisticalFormulas.Mean(series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 N> For further details, refer to this Browser Sample:
 
@@ -487,7 +482,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -508,7 +503,6 @@ Dim Median1 As Double
 calculatedMedian = BasicStatisticalFormulas.Median(series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 N> For further details, refer to this Browser Sample:
 
@@ -544,7 +538,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -565,7 +559,6 @@ Dim Deviation1 As Double
 Deviation1 = BasicStatisticalFormulas. StandartDeviation  (series1,false)
 
 {% endhighlight %}
-{% endtabs %}
 
 N> For further details, refer to this Browser Sample:
 
@@ -679,7 +672,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -694,7 +687,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim ttr As TTestResult = BasicStatisticalFormulas.TTestEqualVariances (0.2, 0.05, series1, series2)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 
@@ -760,7 +752,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 TTestResult ttr = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05,series1,series2);
 
@@ -771,7 +763,6 @@ TTestResult ttr = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05,serie
 Dim ttr As TTestResult = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05, series1, series2)
 
 {% endhighlight %}
-{% endtabs %}
 
 #### TTest Paired
 
@@ -827,7 +818,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -842,7 +833,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim ttr As TTestResult = BasicStatisticalFormulas.TTestPaired(0.2, 0.05, series1, series2)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Variance
@@ -875,7 +865,7 @@ Example
 
 Variance is the square of the standard deviation for the given data.   
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -895,7 +885,6 @@ Dim Variance1 As Double
 Variance1=BasicStatisticalFormulas.Variance (series1,false) 
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Z-Test
 
@@ -958,7 +947,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ZTestResult ztr = BasicStatisticalFormulas.ZTest( Convert.ToDouble(TextBox6.Text.ToString()), 
 
@@ -974,7 +963,6 @@ Dim ztr As ZTestResult = BasicStatisticalFormulas.ZTest(Convert.ToDouble(TextBox
 
 
 {% endhighlight %}
-{% endtabs %}
 
 N> For programming example, refer to the following Sample:
 
@@ -1095,7 +1083,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1110,7 +1098,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim double as result = UtilityFunctions.Beta(a,b);
 
 {% endhighlight %}
-{% endtabs %}
 
 
 #### Beta Cumulative Distribution
@@ -1148,7 +1135,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series = new ChartSeries("a=b=0.5");
 
@@ -1189,7 +1176,6 @@ series.Text = series.Name
 Me.ChartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Binomial Coefficient 
 
@@ -1229,7 +1215,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1244,7 +1230,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim int as result = UtilityFunctions.Binomial(n, k)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Inverse Beta Cumulative Distribution
 
@@ -1274,7 +1259,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1289,7 +1274,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim double as result = UtilityFunctions.InverseBetaCumulativeDistribution (a, b, p)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Error Function
 
@@ -1329,7 +1313,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1344,7 +1328,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim double as result = UtilityFunctions.Erf(x)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Factorial
 
@@ -1386,7 +1369,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1401,7 +1384,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim int as result = UtilityFunctions.Factorial(int n)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### F Cumulative Distribution
@@ -1445,7 +1427,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1460,7 +1442,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 double x = Statistics.UtilityFunctions. FCumulativelDistribution(fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Gamma Function
 
@@ -1510,7 +1491,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1525,7 +1506,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 double x = Statistics.UtilityFunctions.Gamma( p )
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Gamma Cumulative Distribution
@@ -1546,7 +1526,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series=new ChartSeries("a=2");
 
@@ -1589,7 +1569,6 @@ series.Text=series.Name
 Me.ChartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Inverse Error Function
@@ -1622,7 +1601,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1637,7 +1616,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim double as result = UtilityFunctions.InverseErf(x)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Inverse F Cumulative Distribution
 
@@ -1670,7 +1648,7 @@ Example
 Here is a code snippet that shows a sample usage.
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1685,7 +1663,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 double x= Statistics.UtilityFunctions. InverseFCumulativelDistribution(fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Inverse Normal Distribution
@@ -1720,7 +1697,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1735,7 +1712,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 double x = Statistics.UtilityFunctions.InverseNormalDistribution( p )
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Normal Distribution
 
@@ -1782,7 +1758,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1797,7 +1773,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 double x = Statistics.UtilityFunctions.NormalDistribution( p )
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Normal Distribution Density
 
@@ -1858,7 +1833,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1873,7 +1848,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 Dim double as result = UtilityFunctions.NormalDistributionDensity(x, m ,sigma)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Inverse T Cumulative Distribution
@@ -1908,7 +1882,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1923,7 +1897,6 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 double x= Statistics.UtilityFunctions. InverseTCumulativelDistribution(p, degreeOfFreedom,OneTail )
 
 {% endhighlight %}
-{% endtabs %}
 
 ### TCumulative Distribution
 
@@ -1969,7 +1942,7 @@ Example
 
 Here is a code snippet that shows a sample usage.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
@@ -1984,4 +1957,3 @@ Imports Syncfusion.Windows.Forms.Chart.Statistics
 double x= Statistics.UtilityFunctions.TCumulativelDistribution(tvalue, degreeOfFreedom,OneTail )
 
 {% endhighlight %}
-{% endtabs %}

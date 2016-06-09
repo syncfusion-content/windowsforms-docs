@@ -30,7 +30,7 @@ The below figure shows a chart where the tooltip text for each point shows the c
 
 Code snippet for the above sample
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Chartcontrol mouse move event.
 
@@ -63,7 +63,7 @@ Private Sub chartControl_MouseMove(ByVal sender As Object, ByVal e As System.Win
 End Sub
 
 {% endhighlight %}
-{% endtabs %}
+
 
 
 
@@ -78,7 +78,7 @@ The GetPointByValue method does the opposite of the above - given a chart coordi
 The Legend.GetItemBy method will let you get the reference to a legend item at a specific point. Implementing the below code sample, will display a tooltip with legend item name, on which the user mouse hover. 
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 private ToolTip toolTip2;
 
@@ -127,7 +127,6 @@ If item IsNot Nothing Then
 End Sub
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ![](Hit-Testing_images/Hit-Testing_img2.jpeg)
@@ -141,7 +140,7 @@ Use the Bounds property to get the rectangular area comprising the chart area th
 
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.ChartAreaPaint += new System.Windows.Forms.PaintEventHandler(chartControl1_ChartAreaPaint);
 
@@ -179,7 +178,6 @@ Private Sub chartControl1_ChartAreaPaint(ByVal sender As Object, ByVal e As Syst
 End Sub
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](Hit-Testing_images/Hit-Testing_img3.jpeg)
 
@@ -189,7 +187,7 @@ End Sub
 Use the RenderBounds property to get the rectangular area comprising just the plot-area, bound by the axes.
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.ChartAreaPaint += new System.Windows.Forms.PaintEventHandler(chartControl1_ChartAreaPaint);
 
@@ -227,7 +225,6 @@ Private Sub chartControl1_ChartAreaPaint(ByVal sender As Object, ByVal e As Syst
 End Sub
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ![](Hit-Testing_images/Hit-Testing_img4.jpeg)

@@ -19,7 +19,7 @@ The chart image can easily be exported as an image file in several different for
 
 ### Programmatically
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 private string fileName;
 
@@ -58,7 +58,7 @@ Me.chartControl1.SaveImage(fileName)
 System.Diagnostics.Process.Start(exportFileName)
 
 {% endhighlight %}
-{% endtabs %}
+
 
 Based on the filename extension the chart has built-in support to save the image in the following formats.
 
@@ -115,7 +115,7 @@ Editable Text Support for EPS Images
 
 The Chart control can export an EPS image with editable text by setting the EditableText property to true. 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ToPostScript toPostScript = new ToPostScript();
 
@@ -155,7 +155,6 @@ Using g As Graphics = toPostScript.GetRealGraphics(Me.chartControl1.Size)
 End Using
 
 {% endhighlight %}
-{% endtabs %}
  
 The figure below shows the chart EPS image text editing in Adobe Illustrator.
 
@@ -183,7 +182,6 @@ Given below are the steps that will guide you through this process.
 1. Add the Syncfusion.DocIO.Base and Syncfusion.DocIO.Windows assemblies.
 2. Add the namespace Syncfusion.DocIO and Syncfusion.DocIO.DLS in your form.
 
-{% tabs %}
    ~~~ cs
 
 		using Syncfusion.DocIO;
@@ -202,11 +200,9 @@ Given below are the steps that will guide you through this process.
 
    ~~~
    {:.prettyprint }
-   {% endtabs %}
 
 3. Add the code snippet that is given below in your form.
 
-{% tabs %}
    ~~~ cs
 
 		string fileName=Application.StartupPath+"\\chartexport";
@@ -322,7 +318,6 @@ Given below are the steps that will guide you through this process.
 
    ~~~
    {:.prettyprint }
-   {% endtabs %}
 
 A sample demonstrating the above is available in our installation at the following location:
 
@@ -345,7 +340,6 @@ The steps that are given below will guide you through the process.
 3. Drag a grid control onto the Form2.
 4. Add the namespace Syncfusion.Windows.forms.Grid in Form2.
 
-{% tabs %}
    ~~~ cs
    
 		using Syncfusion.Windows.Forms.Grid;	
@@ -359,11 +353,9 @@ The steps that are given below will guide you through the process.
 
    ~~~
    {:.prettyprint }
-   {% endtabs %}
 
 5. Add the code snippet that is given below in Form2 to get the chart data into the grid.
 
-{% tabs %}
    ~~~ cs
 
 		// Creates a new instance of the Imagelist class.
@@ -458,11 +450,9 @@ The steps that are given below will guide you through the process.
 
    ~~~
    {:.prettyprint }
-   {% endtabs %}
 
 6. Add the code that is given below in the form with the chart control to be exported.
 
-{% tabs %}
    ~~~ cs
 
 		private Form2 gridForm;
@@ -530,7 +520,6 @@ The steps that are given below will guide you through the process.
 
    ~~~
    {:.prettyprint }
-   {% endtabs %}
 
 A sample demonstrating the above is available in our installation at the following location:
 
@@ -552,7 +541,6 @@ Given below are the steps that will guide you through this process.
 1. Add the Syncfusion.XLsIO.Base and Syncfusion.XLsIO.Windows assemblies.
 2. Add the namespace Syncfusion.XLsIO in your form.
 
-{% tabs %}
    ~~~ cs
 
 		using Syncfusion.XlsIO;
@@ -566,13 +554,12 @@ Given below are the steps that will guide you through this process.
 
    ~~~
    {:.prettyprint }
-{% endtabs %}
+
 
 
 
 3. Add the code snippet that is given below in your form.
 
-{% tabs %}
    ~~~ cs
 
 		string exportFileName = Application.StartupPath+"\\chartexport" + ".xls";                                    
@@ -750,7 +737,6 @@ Given below are the steps that will guide you through this process.
 
    ~~~
    {:.prettyprint }
-   {% endtabs %}
 
 ### Sample
 
@@ -769,7 +755,6 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 1. Add the Syncfusion.Pdf.Base and Syncfusion.Pdf.Windows assemblies.
 2. Add the namespace Syncfusion.Pdf in your form.
 
-{% tabs %}
    ~~~ cs
 
 		using Syncfusion.Pdf;
@@ -787,11 +772,9 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 
    ~~~
    {:.prettyprint }
-   {% endtabs %}
 
 3. Add the code snippet that is given below in your form.
 
-{% tabs %}
    ~~~ cs
 
 		string fileName=Application.StartupPath+"\\chartexport";
@@ -877,7 +860,6 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 
    ~~~
    {:.prettyprint }
-   {% endtabs %}
 
 A sample demonstrating the above is available in our installation at the following location:
 

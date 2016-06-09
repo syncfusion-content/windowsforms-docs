@@ -249,7 +249,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Line series can be added to the chart using the following code. 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -292,7 +292,6 @@ series.Points.Add(4, new double[] { 40, 10, 10 })
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Spline Chart
@@ -322,7 +321,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 Spline series can be added to the chart using the following code.
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -373,7 +372,6 @@ series.Points.Add(5, 1)
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
  
 
 ### Customization Options
@@ -406,7 +404,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Rotated Spline series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.   
 
@@ -453,7 +451,6 @@ series1.Points.Add(4, 482)
 Me.chartControl1.Series.Add(series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -479,7 +476,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Step Line series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -522,7 +519,6 @@ series.Points.Add (3, 2)
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -562,7 +558,7 @@ Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
 
 Bar series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -601,7 +597,6 @@ series.Points.Add(2, 4)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -637,7 +632,7 @@ Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
 
 Stacking bar series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data point into it.
 
@@ -700,7 +695,6 @@ Me.chartControl1.Series.Add(series)
 Me.chartControl1.Series.Add(series2)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -732,7 +726,7 @@ SupportMarker - No.
 
 Cannot be Combined with - Any other chart types.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("chart", ChartSeriesType.StackingBar100);
 
@@ -771,7 +765,6 @@ series1.Points.Add(5,216.1)
 Me.chartControl1.Series.Add(series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -808,7 +801,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar.
 
 Gantt series can be added to the chart using the following code. 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -843,7 +836,6 @@ series.Points.Add(2, 4, 8)
 Me.ChartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -874,7 +866,7 @@ Number of Series - One or more.
 
 Cannot be Combined with - Pie, Bar, Polar, Radar.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -941,7 +933,6 @@ series.Points.Add(23, 1000)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -968,7 +959,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar.
 
 The Tornado series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1061,7 +1052,6 @@ series2.Points.Add(5, 0, -11)
 Me.chartControl1.Series.Add(series2)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -1103,7 +1093,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Column series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1142,7 +1132,6 @@ series.Points.Add(2, 4)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -1174,7 +1163,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code snippet illustrates this.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1217,7 +1206,6 @@ series.Text = series.Name
 Me.ChartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -1244,7 +1232,7 @@ Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Stacking column series can be added to the chart using the following code. 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1307,7 +1295,6 @@ Me.chartControl1.Series.Add(series)
 Me.chartControl1.Series.Add(series2)
 
 {% endhighlight %}
-{% endtabs %}
  
 
 ### Customization Options
@@ -1340,7 +1327,7 @@ SupportMarker – No.
 
 Cannot be Combined with - Doughnut, Pie, Bar, Stacked Bar charts, Polar, Radar, Pyramid, or Funnel.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Series 1", ChartSeriesType.StackingColumn100);
 
@@ -1379,7 +1366,6 @@ series1.Points.Add(5,216.1)
 Me.chartControl1.Series.Add(series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -1423,7 +1409,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
 
 An Area series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create a chart series and add data points into it.
 
@@ -1468,7 +1454,6 @@ series.Points.Add(3, 3)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -1502,7 +1487,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Spline area series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create a chart series and add data points into it.
 
@@ -1549,7 +1534,6 @@ series.Points.Add(3, 3)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -1578,7 +1562,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Stacking area series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1641,7 +1625,6 @@ Me.chartControl1.Series.Add(series)
 Me.chartControl1.Series.Add(series2)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -1675,7 +1658,7 @@ SupportMarker – No.
 
 Cannot be Combined with - Any other chart types.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series1=chartControl1.Model.NewSeries("Series1",ChartSeriesType.StackingArea100);
 
@@ -1774,7 +1757,6 @@ series3.Points.Add(4, 20)
 Me.chartControl1.Series.Add(series3)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -1812,7 +1794,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Step Area series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -1859,7 +1841,6 @@ series.Points.Add(4, 3)
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -1887,7 +1868,7 @@ Minimum Number of Series – 1.
 
 Step Area series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Profit Range", ChartSeriesType.RangeArea);
 
@@ -1936,7 +1917,6 @@ series1.Points.Add(7, 19, 52)
 Me.chartControl1.Series.Add (series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -1982,7 +1962,7 @@ Number of Series - One.
 
 Cannot be Combined with - Any other chart types.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Funnel chart", ChartSeriesType.Funnel);
 
@@ -2021,7 +2001,6 @@ series1.Points.Add(5,216.1)
 Me.chartControl1.Series.Add(series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -2058,7 +2037,7 @@ Number of Series - One.
 
 Cannot be Combined with - Any other chart types.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series1 = new ChartSeries("Pyramid chart", ChartSeriesType.Pyramid);
 
@@ -2097,7 +2076,6 @@ series1.Points.Add(5,216.1)
 Me.chartControl1.Series.Add(series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -2135,7 +2113,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Scatter series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -2174,11 +2152,10 @@ series.Points.Add (2, 4)
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
 
 The symbols can be configured using the ChartSeries.Styles[i].Symbol property as in the following example.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Specify the symbol info required for the Scatter chart.
 
@@ -2233,7 +2210,6 @@ series.Styles (2).Symbol.Color = Color.Blue
 series.Styles (2).Symbol.Shape = ChartSymbolShape.Cross 
 
 {% endhighlight %}
-{% endtabs %}
 
 
 
@@ -2270,7 +2246,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Bubble series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -2313,7 +2289,6 @@ series.Points.Add (2, 4, 9)
 Me.chartControl1.Series.Add (series) 
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -2360,7 +2335,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Candle series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data point into it.
 
@@ -2403,7 +2378,6 @@ series.Points.Add(2, 8, 4, 5, 6)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -2435,7 +2409,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Hi Lo series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -2474,7 +2448,6 @@ series.Points.Add(2, 4, 8)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -2499,7 +2472,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Hi Lo Open Close series can be added to the chart using the following code. 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data point into it.
 
@@ -2542,7 +2515,6 @@ series.Points.Add(2, 8, 4, 5, 6)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -2571,7 +2543,7 @@ Cannot be Combined with - Pie, Bar.
 
 Kagi series can be added to the chart using the following code. 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.   
 
@@ -2658,7 +2630,6 @@ series.PriceDownColor = Color.Red
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
 
 If the ReversalAmount is 0.0 instead of 1.0 which is the default value, then the Kagi chart will look like the below image.
 
@@ -2700,7 +2671,7 @@ Cannot be Combined with - Pie, Bar.
 
 Point and Figure series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -2747,7 +2718,6 @@ series.ReversalAmount = 1.0
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -2780,7 +2750,7 @@ Cannot be Combined with - Pie, Bar.
 
 Renko series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.   
 
@@ -2823,7 +2793,6 @@ series.ReversalAmount = 1.0
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -2857,7 +2826,7 @@ Cannot be Combined with - Pie, Bar.
 
 Three Line Break series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.   
 
@@ -2896,7 +2865,6 @@ series.Points.Add (2, 4)
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -2959,7 +2927,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar.
 
 Box and Whisker series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3022,7 +2990,6 @@ Me.chartControl1.Series.Add(series1)
 Me.chartControl1.Series.Add(series2)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -3051,7 +3018,7 @@ Cannot be Combined with - Any other chart types.
 
 Pie series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3090,7 +3057,6 @@ series.Points.Add(2, 4)
 Me.chartControl1.Series.Add(series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -3105,7 +3071,7 @@ Me.chartControl1.Series.Add(series)
 
 PieCharts specified with a DoughnutCoefficient will be rendered as the Doughnut chart. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie. The DoughnutCoefficient property specifies the fraction of radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f;
 
@@ -3116,7 +3082,6 @@ this.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f;
 Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](Chart-Types_images/Chart-Types_img42.jpeg)
 
@@ -3127,7 +3092,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f
 
 When in 3D mode, the relative height of the pie chart can be specified via the HeightCoefficient property. Note that the HeightByAreaDepth property should be set as false for this to take effect. The valid values are 0.1f to 0.5f. This property is set to 0.2f by default.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.Series[0].ConfigItems.PieItem.HeightByAreaDepth = false;
 
@@ -3142,7 +3107,6 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightByAreaDepth = False
 Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoefficient=0.1f
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](Chart-Types_images/Chart-Types_img43.jpeg)
 
@@ -3183,7 +3147,7 @@ Number of Series - One.
 
 Cannot be Combined with - Any other chart types.Polar series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3222,7 +3186,6 @@ series.Points.Add (2, 4)
 Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -3259,7 +3222,7 @@ Cannot be Combined with - Any other chart types.
 
 Radar series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create chart series and add data points into it.
 
@@ -3307,7 +3270,6 @@ Me.chartControl1.Series.Add (series)
 
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Customization Options
 
@@ -3339,7 +3301,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar.
 
 Combination series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries series = new ChartSeries ("Series Name",ChartSeriesType.Line);
 
@@ -3402,7 +3364,6 @@ Me.chartControl1.Series.Add (series)
 Me.chartControl1.Series.Add (series2) 
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Customization Options
@@ -3429,7 +3390,7 @@ Cannot be Combined with - Any other chart types.
 
 Combination series can be added to the chart using the following code.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartSeries Stocks = new ChartSeries("Stocks", ChartSeriesType.HeatMap);
 
@@ -3476,7 +3437,6 @@ Stocks.Points.Add(1,1, 2799)
 Me.chartControl1.Series.Add (Stocks)
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Features
 
@@ -3526,7 +3486,7 @@ LabelMargin</td><td>
 Sets the margin for the left and right side labels.</td></tr>
 </table>
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Sets the Heat map style.
 
@@ -3593,7 +3553,6 @@ series.ConfigItems.HeatMapItem.MiddleValueColor = Color.Gold
 series.ConfigItems.HeatMapItem.LabelMargins = 15
 
 {% endhighlight %}
-{% endtabs %}
 
 ## Stacking Charts
 

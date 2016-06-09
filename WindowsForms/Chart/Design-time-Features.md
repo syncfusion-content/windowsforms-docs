@@ -55,7 +55,7 @@ These Charts can be saved as templates in the below two ways.
 * By clicking the Save Template designer verb in the Visual Studio property browser as shown above.
 * ChartTemplate has a static method to save the data programmatically. We need to pass ChartControl instance and a file name(it can accept stream file also.), through this save method.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartTemplate.Save(this.chartControl1, "TemplateName.xml");
 
@@ -66,7 +66,6 @@ ChartTemplate.Save(this.chartControl1, "TemplateName.xml");
 ChartTemplate.Save(Me.chartControl1, "TemplateName.xml")
 
 {% endhighlight %}
-{% endtabs %}
 
 ### Load Template
 
@@ -86,7 +85,7 @@ The ChartControl, which when loaded with a template will be applied with the app
 
 ChartTemplate can be reset using the following simple statements,
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartTemplate ct = new ChartTemplate();
 
@@ -101,7 +100,6 @@ ChartTemplate ct = New ChartTemplate()
 ct.Reset(Me.chartControl1)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ### Sample Link

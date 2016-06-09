@@ -38,7 +38,7 @@ The following sample code illustrates how a custom DataSet can be bound to a Cha
 ![](Chart-Data_images/Chart-Data_img2.jpeg)
 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartDataBindModel model = null;
 
@@ -161,7 +161,6 @@ Me.chartControl1.PrimaryXAxis.LabelsImpl = Me.xAxisLabelModel
 Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](Chart-Data_images/Chart-Data_img3.jpeg)
 
@@ -173,7 +172,7 @@ Note that the ChartDataBindModel type in the previous topic implements a simple 
 
 Shown below is some sample code that implements IChartSeriesModel interface for use with the chart.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Custom Model
 
@@ -328,11 +327,10 @@ End Class
 
 
 {% endhighlight %}
-{% endtabs %}
 
 ## Bind the above model to the chart series.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Creating series data and binding to the array model
 
@@ -359,7 +357,6 @@ series1.Type = ChartSeriesType.Bar
 Me.chartControl1.Series.Add(series1)
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](Chart-Data_images/Chart-Data_img4.jpeg)
 
@@ -373,7 +370,7 @@ Note that if you have indexed data, which implies that the X values are simply c
 
 Syncfusion chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through ChartDataBindModel implementation.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 class PopulationData
 
@@ -497,13 +494,12 @@ Class PopulationData
     End Property
 
 {% endhighlight %}
-{% endtabs %}
 
 If you have a class like above, you will have a collection of this class instances, in an ArrayList. To bind with the Chart, you need to create a ChartDataBindModel instance, by supplying the instance of data source (In our case, ArrayList is the data source).
 
 In this example, we are binding with a Non Indexed data, with YNames alone and the chart will not be rendered with x-axis values. We need to assign the x-axis values through ChartDataBindAxisLabelModel class. ChartDataBindAxisLabelModel class provides a facility to bind the axis label values through the data source like ChartDataBindModel. 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ArrayList populations = new ArrayList();
 
@@ -610,7 +606,6 @@ chartControl1.Series.Add(series)
 chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel 
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](Chart-Data_images/Chart-Data_img5.jpeg)
 
@@ -771,7 +766,7 @@ Step-1
 
 Create a ChartDataBindModel object with BindingSource as data source
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Using BindingSource as data source to the ChartDataBindModel
 
@@ -786,13 +781,12 @@ Create a ChartDataBindModel object with BindingSource as data source
      Dim model As New ChartDataBindModel(MyBindingSource)
 
 {% endhighlight %}
-{% endtabs %}
 
 Step-2:
 
 Provide a field name in binding source as value to the XName property of the ChartDataBindModel object. 
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Using BindingSource as data source to the ChartDataBindModel
 
@@ -819,7 +813,6 @@ Provide a field name in binding source as value to the XName property of the Cha
       model.XName = "Field1"
 
 {% endhighlight %}
-{% endtabs %}
 
 Step-3:
 
@@ -827,7 +820,7 @@ Similarly, provide a field name in binding source as value to the YNames propert
 
 As pie chart is used in this example, it is enough to use one field name for the YNames property of the ChartDataBindModel object.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
       //Using BindingSource as data source to the ChartDataBindModel
 
@@ -866,13 +859,12 @@ As pie chart is used in this example, it is enough to use one field name for the
       model.YNames = New String() {"Field2"}
 
 {% endhighlight %}
-{% endtabs %}
 
 Step-4:
 
 Set ChartDataBindModel object as value to the ChartSeries object. This binds the Series with BindingSource.
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
       //Using BindingSource as data source to the ChartDataBindModel
 
@@ -917,7 +909,6 @@ Set ChartDataBindModel object as value to the ChartSeries object. This binds the
       series.SeriesModel = model
 
 {% endhighlight %}
-{% endtabs %}
 
 The following screenshot displays a Chart bounded with binding source in code behind.
 
