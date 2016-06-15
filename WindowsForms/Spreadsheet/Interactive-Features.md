@@ -151,7 +151,17 @@ Ctrl + Y</td></tr>
 
 Spreadsheet has [History Manager](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) class that supports the implementation of undo/ redo operations
 
-To invoke Undo/Redo operations, the [Enabled](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager~Enabled.html) property of [History Manager](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) needs to be true.  
+By default, Undo/Redo operations in Spreadsheet is enabled. To disable the Undo/Redo operations, set the [Enabled](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager~Enabled.html) property of [History Manager](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) to be false.  
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.HistoryManager.Enabled = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+To programmatically, invoke the Undo/Redo operations,
 
 {% tabs %}
 {% highlight c# %}
@@ -171,19 +181,66 @@ Context menu in Spreadsheet is customizable menu which can be used for various f
 
 ### TabItem Context menu
 
-By default, [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowTabItemContextMenu.html) property is set to true to enable the TabItemContext Menu in Spreadsheet. Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~IsCustomTabItemContextMenuEnabled.html)  property to be true and you can add your customized menu items in Context_Menu opening Event.
+TabItem Context menu opens when the user right-click on the sheet tab and contains the menus related to worksheet operations.
+
+By default, TabItem Context menu is enabled in Spreadsheet. To disable the TabItem context menu, set the [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowTabItemContextMenu.html) property to false. 
 
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.IsCustomTabItemContextMenuEnabled = true;
+spreadsheet.AllowTabItemContextMenu = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~IsCustomTabItemContextMenuEnabled.html)  property to be true and you can add your customized menu items.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.IsCustomTabItemContextMenuEnabled = true;
+spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
+
+//Custom TabItem ContextMenus
+
+ public ContextMenu CustomTabItemContextMenu()
+ {
+    var contextMenu = new ContextMenuStrip();
+    contextmenu.BackColor = Color.White;
+    contextmenu.RenderMode = ToolStripRenderMode.System;
+    var Insertrowicon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertrow.png", UriKind.Relative)) };
+    var Insertrow = new ToolStripMenuItem() { BackColor = Color.White, Text = "InsertRow" };           
+    Insertrow.Image = Insertrowicon;
+    Insertrow.Click += Insertrow_Click;
+
+    var Deleterowicon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleterow.png", UriKind.Relative)) };
+    var Deleterow = new ToolStripMenuItem() { BackColor = Color.White, Text = "DeleteRow"};
+    Deleterow.Image = Deleterowicon;
+    Deleterow.Click += Deleterow_Click;
+    
+    contextMenu.Items.Add(Insertrow);
+    contextMenu.Items.Add(Deleterow);
+    return contextMenu;
+ }
 
 {% endhighlight %}
 {% endtabs %}
 
 ### Cell Context menu
 
-By default, [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowCellContextMenu.html) property is set as true to enable the CellContext Menu in Spreadsheet. The Event associated with Cell Context menu [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) Event of SpreadsheetGrid.
+Cell Context menu opens when the user right-click on a worksheet cell or selection of cells in Spreadsheet.
+
+By default, Cell Context menu is enabled in Spreadsheet. To disable the Cell Context menu, set the [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowCellContextMenu.html)  property as false.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.AllowCellContextMenu = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+Users can also customize the Cell Context menu of Spreadsheet by using [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) Event of `SpreadsheetGrid`.
 
 Adding the customized menu items in the CellContextMenuOpening Event,
 
@@ -196,19 +253,19 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
 {
     //Adding Customized Menu item
         
-    MenuItem PasteSpecial = new MenuItem();
-    PasteSpecial.Header = "Pastespecial";
+    var PasteSpecial = new ToolStripMenuItem(){ BackColor = Color.White, Name = "PasteSpecialitem"};
+    PasteSpecial.Text = "PasteSpecial";
     Image paste = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\paste.png", UriKind.Relative)) };
-    PasteSpecial.Icon = paste;
+    PasteSpecial.Image = paste;
+    PasteSpecial.Click += PasteSpecial_Click;
     spreadsheet.ActiveGrid.CellContextMenu.Items.Add(PasteSpecial);
-        
+       
     //Remove the existing Context menu
     spreadsheet.ActiveGrid.CellContextMenu.Items.RemoveAt(2);
 }
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ## Cell Comments
 
