@@ -4661,7 +4661,7 @@ series.NumberOfHistogramIntervals = 20
 
 ### OpenCloseDrawMode
 
-Gets or sets the open, close draw mode to the HiloOpenClose chart.
+Gets or sets the open, close draw mode to the HiLoOpenClose chart.
 
 
 
