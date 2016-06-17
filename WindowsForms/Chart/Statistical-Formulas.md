@@ -598,7 +598,7 @@ Use a paired test when there is a natural pairing of observations in the samples
 
 This formula performs a T-test for two groups of data and assumes unequal variances between the two groups. (i.e. series)
 
-This analysis tool is referred to as a heteroscedastic t-test and can be used when the groups that are under study are distinct. Use a paired test when there is one group before and after a treatment.
+This analysis tool is referred to as a heteroscedasticity t-test and can be used when the groups that are under study are distinct. Use a paired test when there is one group before and after a treatment.
 
 N> For programming example, refer to the following Browser Sample:
 
