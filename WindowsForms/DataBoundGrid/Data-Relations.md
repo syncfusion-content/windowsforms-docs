@@ -15,7 +15,7 @@ This section illustrates the following topics.
 
 ## Nested Drop-down Grids
 
-Nested Drop-down grids are used to represent multi-level data in a grid. For example, if a bank wants to load all the accounts of an enrolled user in grid control for a financial project, and some of the accounts have subaccounts with options to be selected under each subaccount, which need to be loaded/ shown as a subelement to that account, Nested Drop-down grids can be used to represent data. Data can be distributed in parent (primary) grid, child grid, and so on. Grid Data Bound Grid control can display hierarchical data using Nested Drop-down grids.
+Nested Drop-down grids are used to represent multi-level data in a grid. For example, if a bank wants to load all the accounts of an enrolled user in grid control for a financial project, and some of the accounts have sub accounts with options to be selected under each sub account, which need to be loaded/ shown as a sub element to that account, Nested Drop-down grids can be used to represent data. Data can be distributed in parent (primary) grid, child grid, and so on. Grid Data Bound Grid control can display hierarchical data using Nested Drop-down grids.
 
 ### Example
 
@@ -176,7 +176,7 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridData
 ## ExpandAll and CollapseAll Methods
 
 1. ExpandAll
-1. Using this method will enable the user to view expanded nodes in DataBound Grid, i.e., the parent, child and subsequent sublevel nodes.
+1. Using this method will enable the user to view expanded nodes in DataBound Grid, i.e., the parent, child and subsequent sub level nodes.
 
    The following code illustrates how to set this method for DataBound Grid:
 

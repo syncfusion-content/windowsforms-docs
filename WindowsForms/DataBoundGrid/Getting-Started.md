@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatical approach in a .NET application.
+This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatic approach in a .NET application.
 
 ## Through Designer
 
