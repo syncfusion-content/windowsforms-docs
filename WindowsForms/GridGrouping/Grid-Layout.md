@@ -723,7 +723,7 @@ Dim fChooser As New FieldChooser(Me.gridGroupingControl1, collection)
 {% endhighlight %}
 {% endtabs %}
 
-### Unwiring FieldChooser
+### UnWiring FieldChooser
 To unwire FieldChooser from the GridGroupingControl, make use of the [UnWireGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.FieldChooser~UnWireGrid.html) method. This method will disable the FieldChooser.
 
 {% tabs %}

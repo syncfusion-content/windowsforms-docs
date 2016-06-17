@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Printing
-GridGroupingControl supports printing and previewing the printing document in dialog box. A derived [GridPrintDocument](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridPrintDocument.html), which represents the print document is passed to these classes. This `GridPrintDocument` implements printing logic that is needed to print multipage grids. 
+GridGroupingControl supports printing and previewing the printing document in dialog box. A derived [GridPrintDocument](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridPrintDocument.html), which represents the print document is passed to these classes. This `GridPrintDocument` implements printing logic that is needed to print multi page grids. 
 
 For printing the grid make use of the [PrintDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printdialog.aspx) class. For printing the document get the grid as document with the help of `GridPrintDocument` class, then assign this document to the property[Document](https://msdn.microsoft.com/en-us/library/system.windows.forms.printdialog.document.aspx) of the `PrintDialog` object. It also supports hierarchical grid printing.
 

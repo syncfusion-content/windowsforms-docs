@@ -2318,7 +2318,7 @@ N> For more details, refer to the following browser sample:
 
 ### Exploring Summaries
 
-In the previous chapter, you learnt how to create simple summaries for a grid table. This chapter will explore the different forms of summaries. It is possible to have multiple summary rows for a single data table. We can define summary for each group and also for each table when nested tables are used.
+In the previous chapter, you learned how to create simple summaries for a grid table. This chapter will explore the different forms of summaries. It is possible to have multiple summary rows for a single data table. We can define summary for each group and also for each table when nested tables are used.
 
 #### Multicolumn Summaries
 
@@ -3156,8 +3156,8 @@ Checks if a date field value between two values is listed in the right-hand oper
 <tr>
 <td>
 Between time </td><td>
-betweentime</td><td>
-Checks if a time in the date field value between the two values is listed in the right-hand operand. For example, [time] between {04:00:00 PM, 05:00:00 PM} returns 1 for any record whose date field is greater than or equal to 04:00 and less than 05:00. The time will be calculated along with date for betweentime.</td><td>
+between time</td><td>
+Checks if a time in the date field value between the two values is listed in the right-hand operand. For example, [time] between {04:00:00 PM, 05:00:00 PM} returns 1 for any record whose date field is greater than or equal to 04:00 and less than 05:00. The time will be calculated along with date for between time.</td><td>
 [OrderDate] between {“04/17/2008 9:00:00 PM”, “04/21/2008 07:00:00 AM”}</td></tr>
 </table>
 
@@ -3457,7 +3457,7 @@ N> For more details, refer to the following browser sample:
 
 #### Filter Bar
 
-Grouping Grid provides in-built support for displaying Filter Bar across the columns. It can be used to filter and unfilter the records at run time. It is very user interactive and more advantageous than using RecordFilters collection. The main reason for its wide usage is that it could display various filter options for the columns. You will be able to add your own filter criteria too.
+Grouping Grid provides in-built support for displaying Filter Bar across the columns. It can be used to filter and unfiltered the records at run time. It is very user interactive and more advantageous than using RecordFilters collection. The main reason for its wide usage is that it could display various filter options for the columns. You will be able to add your own filter criteria too.
 
 When filter bar is applied, a new row (Filter Row) will be added at the top of the table displaying filter options for the columns in a drop down. Each cell in the filter bar row is a simple ComboBox cell whose items are filter options. The filter options for a given column includes one entry for each value in that column. 
 
@@ -4188,32 +4188,32 @@ DESCRIPTION</th></tr>
 <tr>
 <td>
 *</td><td>
-[columnname] * 'anynumber'</td><td>
+[columnname] * 'any number'</td><td>
 Filters grid based on multiplied value computed.</td></tr>
 <tr>
 <td>
 /</td><td>
-[columnname] / 'anynumber'</td><td>
+[columnname] / 'any number'</td><td>
 Filters grid based on divided value computed.</td></tr>
 <tr>
 <td>
 +</td><td>
-[columnname] + 'anynumber'</td><td>
+[columnname] + 'any number'</td><td>
 Filters grid based on result computed.</td></tr>
 <tr>
 <td>
 -</td><td>
-[columnname] – 'anynumber'</td><td>
+[columnname] – 'any number'</td><td>
 Filters grid based on computed value.</td></tr>
 <tr>
 <td>
 <</td><td>
-[columnname] < 'anynumber'</td><td>
+[columnname] < 'any number'</td><td>
 Filters grid displaying records whose specified column holds value lesser than the mentioned value.</td></tr>
 <tr>
 <td>
 ></td><td>
-[columnname] > 'anynumber'</td><td>
+[columnname] > 'any number'</td><td>
 Filters grid displaying records whose specified column holds value greater than the mentioned value.</td></tr>
 <tr>
 <td>
@@ -4223,12 +4223,12 @@ Filters grid displaying records whose specified column holds value equal to the 
 <tr>
 <td>
 <=</td><td>
-10.[columnname] <= 'anynumber'</td><td>
+10.[columnname] <= 'any number'</td><td>
 <br>Filters grid displaying records whose specified column holds value lesser than or equal to the mentioned value.</td></tr>
 <tr>
 <td>
 >=</td><td>
-[columnname] >= 'anynumber'</td><td>
+[columnname] >= 'any number'</td><td>
 Filters grid displaying records whose specified column holds value greater than or equal to the mentioned value.</td></tr>
 <tr>
 <td>
