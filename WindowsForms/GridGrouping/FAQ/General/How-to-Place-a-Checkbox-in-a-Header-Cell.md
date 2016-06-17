@@ -1,4 +1,4 @@
-	---
+---
 layout: post
 title: How-to-Place-a-Checkbox-in-a-Header-Cell | Windows Forms | Syncfusion
 description: how to place a checkbox in a header cell
