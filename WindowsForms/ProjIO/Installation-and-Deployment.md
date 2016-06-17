@@ -86,7 +86,7 @@ The steps to view the ProjIO samples in various platforms are discussed below.
 
 ## Deployment Procedures 
 
-### DLLs
+### Assemblies
 
 The following assemblies need to be referenced in your application for the usage of ProjIO.
 

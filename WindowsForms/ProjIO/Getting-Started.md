@@ -13,7 +13,7 @@ documentation: ug
 
 Important Features of Essential ProjIO are:
 
-* Support to create and edit a new Project xml format documents
+* Support to create and edit a new Project XML format documents
 * Support to modify existing Project documents (XML format alone)
 * Support to change project settings like Start and Finish dates
 * Support to change default project settings like Default Standard Rate, Default Overtime Rate, Default Fixed Cost Accrual, Default Task Type and so on
