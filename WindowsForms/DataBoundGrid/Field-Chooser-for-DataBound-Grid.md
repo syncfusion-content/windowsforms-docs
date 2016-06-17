@@ -71,9 +71,9 @@ Adding Field Chooser for Grid Data Bound Grid
 
 
 
-			Dim fchooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
+			Dim fChooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
 
-			            fchooser.WireGrid(Me.GridDataBoundGrid1)
+			            fChooser.WireGrid(Me.GridDataBoundGrid1)
 
 
 
