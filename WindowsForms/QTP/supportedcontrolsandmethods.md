@@ -126,7 +126,7 @@ Finds the column index for the given column name, returns 0 when the search fail
 <tr>
 <td>
 string GetFormattedText(int row, int col)</td><td>
-Retrives the formatted cell format.</td></tr>
+Retrieves the formatted cell format.</td></tr>
 <tr>
 <td>
 bool IsFormulaCell(int row, int col, out string formula, out string computedValue)</td><td>
