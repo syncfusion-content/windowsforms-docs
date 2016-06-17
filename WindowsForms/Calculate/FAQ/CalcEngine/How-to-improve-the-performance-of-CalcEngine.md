@@ -9,7 +9,7 @@ documentation: ug
 
 # How to improve the performance of CalcEngine ?
 
-By default, CalcEngine calculate the formulas quickly. You can improve the calculation speed by disabling the RethroLibraryException in CalcEngine. It prevents the exception in calculation and return the proper error string. The following code example explains how to increase the performance of CalcEngine. 
+By default, CalcEngine calculate the formulas quickly. You can improve the calculation speed by disabling the RethrowLibraryException in CalcEngine. It prevents the exception in calculation and return the proper error string. The following code example explains how to increase the performance of CalcEngine. 
 
 
 
