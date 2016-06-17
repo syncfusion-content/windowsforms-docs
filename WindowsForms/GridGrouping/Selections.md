@@ -105,7 +105,7 @@ Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBl
 
 ### Format Selection
 
-It is possible to modify default color used for alphablend selection. This can be achieved by assigning a desired color to AlphaBlendSelectionColor property. The example given below uses Red Color for alpha blending.
+It is possible to modify default color used for AlphaBlend selection. This can be achieved by assigning a desired color to AlphaBlendSelectionColor property. The example given below uses Red Color for alpha blending.
 
 {% highlight C# %}  
 
@@ -274,9 +274,9 @@ Here is the effect of the above settings.
 
 
 
-* Draw Alphablend
+* Draw AlphaBlend
 
-Draws alphablending over the selected row.
+Draws AlphaBlending over the selected row.
 
 
 

@@ -519,7 +519,8 @@ You can use the following filter options by using context menu of the filter Dro
 
 * Equal - Returns the records that matches the given date.
 * Before - Returns the records that are created before the given date.
-* Afterbetween - Returns the records that matches the records after the given date.
+* After - Returns the records that matches the records after the given date.
+* Beween - Returns the records that matches the records between the given dates.
 * Today - Returns the records, which are matches today’s date.
 * Tomorrow - To get the records that matches tomorrow’s date.
 * Yesterday - To get the records that matches yesterday’s date.

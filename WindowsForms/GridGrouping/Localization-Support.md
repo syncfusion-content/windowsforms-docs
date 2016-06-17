@@ -23,7 +23,7 @@ To open sample project, navigate to the following sample location in your system
 
 ### Adding Localization Support to Grid Controls
 
-To localize the content, create a class file and add _ILocalizationProvider_ interface to the class. Assign the required content to be displayed to DynamicFilterResourceIdentifiers_,_GroupingResourceIdentifiers_,_ and__GridResourceIdentifiers of GetLocalizedString method as illustrated in the following code.
+To localize the content, create a class file and add _ILocalizationProvider_ interface to the class. Assign the required content to be displayed to _DynamicFilterResourceIdentifiers_, _GroupingResourceIdentifiers_ and _GridResourceIdentifiers_ of GetLocalizedString method as illustrated in the following code.
 
 
 {% highlight c#  %}
@@ -172,7 +172,7 @@ ENUM</th></tr>
 <tr>
 <td>
 StartsWith</td><td>
-CustomAutoFilterGreaterthan</td><td>
+CustomAutoFilterGreaterThan</td><td>
 Office2007FilterOK</td></tr>
 <tr>
 <td>
@@ -188,7 +188,7 @@ CustomAutoFilter</td></tr>
 <td>
 GreaterThan</td><td>
 SortZtoA</td><td>
-CustomAutoFilterLessthan</td></tr>
+CustomAutoFilterLessThan</td></tr>
 <tr>
 <td>
 GreaterThanOrEqualTo</td><td>
@@ -203,7 +203,7 @@ CustomAutoFilterEqual</td></tr>
 <td>
 LessThanOrEqualTo</td><td>
 Custom</td><td>
-CustomAutoFilterNotequal</td></tr>
+CustomAutoFilterNotEqual</td></tr>
 <tr>
 <td>
 Like</td><td>
@@ -221,7 +221,7 @@ OK</td></tr>
 <tr>
 <td colspan = "2">
 GridResourceIdentifiers</td><td colspan = "2">
-Cannotchangepartofamergedcell</td></tr>
+Cannot change part of a merged cell</td></tr>
 </table>
 
 
