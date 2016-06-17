@@ -1347,7 +1347,7 @@ Diagram Builder Functionalities
 Follow the below steps in order to open an existing diagram document
 
 1.  Add OpenFileDialog control to the Form. 
-2.  Set the Filter property of OpenFileDialog as Essential Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
+2.  Set the Filter property of OpenFileDialog as Essential Diagram Palettes|*.edp|Visio Stencils|*.vs; *.vsix|Visio    Drawings(Shapes only)|*.vs; *.All files|*.*. 
 3.  Add the below code snippet in your button click event.
 
 

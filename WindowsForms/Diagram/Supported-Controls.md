@@ -519,7 +519,7 @@ Follow the steps given below for adding symbol palette into PaletteGroupBar:
 
 1. Add OpenFileDialog control into form.
 2. Set the Filter property of OpenFileDialog as,
-3. Essential Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*
+3. Essential Diagram Palettes|*.edp|Visio Stencils|*.vs; *.vsix|Visio Drawings(Shapes only)|*.vs; *.All files|*.*
 4. Add the following lines of code to your button click event.
 
 
@@ -969,7 +969,7 @@ private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e)
 
 ## Property Editor
 
-The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows forms control that can be added to the Visual Studio .NET toolbox. It also allows the users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface, to set and view various property settings. 
+The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET toolbox. It also allows the users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface, to set and view various property settings. 
 
 The following table lists the properties of the Property Editor. The important property of the Property Editor is the Diagram property.
 
