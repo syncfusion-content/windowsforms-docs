@@ -51,11 +51,11 @@ NA</td></tr>
 
 You can find a sample for this feature in the following location: 
 
-_..\..\AppData\Local\Syncfusion\EssentialStudio\9.4.0.49\Windows\Grid.Windows\Samples\2.0\Data Bound\GDBG FieldChooser Demo_
+_..\..\AppData\Local\Syncfusion\EssentialStudio\[Version_Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\GDBG FieldChooser Demo_
 
-Adding Field Chooser for Grid Data Bound Grid
+Adding Field Chooser for GridDataBoundGrid
 
-1. To add field chooser, pass data bound grid as the parameter__of the _WireGrid_ method.
+1. To add field chooser, pass data bound grid as the parameter of the _WireGrid_ method.
 
    The following code illustrates this:
 
@@ -71,9 +71,9 @@ Adding Field Chooser for Grid Data Bound Grid
 
 
 
-			Dim fchooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
+			Dim fChooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
 
-			            fchooser.WireGrid(Me.GridDataBoundGrid1)
+			            fChooser.WireGrid(Me.GridDataBoundGrid1)
 
 
 

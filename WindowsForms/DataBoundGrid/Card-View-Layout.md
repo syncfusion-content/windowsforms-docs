@@ -143,9 +143,9 @@ bool</td></tr>
 <tr>
 <td>
 IsRecordCell</td><td>
-Indicates if tde cell is a record cell.</td><td>
+Indicates if the cell is a record cell.</td><td>
 rowIndex,colIndex.</td><td>
-Metdod</td><td>
+Method</td><td>
 bool</td></tr>
 <tr>
 <td>

@@ -15,7 +15,7 @@ The standard sorting never removes sorting from a column; so once a column is so
 
 The tri-state sort behavior is accomplished by storing sort indicator, which is in the Tag property of the column and by handling the CellClick event. When a column is sorted in descending order, then the sorting is removed the next time the column is clicked.
 
-1. There are a couple of problems that you will have to work around. One is that the standard column header cell uses Tag for its sort header and it explicitly sets the non-sorted header's Tag to ascending/descending only. It does not support none option for unsorting GridDataBoundGridControl. So, you need to hide HeaderCell and add the New Header.
+1. There are a couple of problems that you will have to work around. One is that the standard column header cell uses Tag for its sort header and it explicitly sets the non-sorted header's Tag to ascending/descending only. It does not support none option for unsort GridDataBoundGridControl. So, you need to hide HeaderCell and add the New Header.
 
    #### Example
 
