@@ -142,7 +142,7 @@ The following steps will guide you to deploy Essential Calculate:
    ~~~
    {:.prettyprint }
 
-7. You can also modify the default behavior of the CalculateEngine by using the Engine property. 
+7. You can alsomodify the default behavior of the CalculateEngine by using the Engine property. 
 
    #### Example 
 
@@ -307,7 +307,7 @@ The following steps will guide you to deploy Essential Calculate:
    ~~~
    {:.prettyprint }
 
-5. You can also modify the default behavior of the CalculateEngine by using the Engine property. 
+5. You can alsomodify the default behavior of the CalculateEngine by using the Engine property. 
 
    #### Example 
 

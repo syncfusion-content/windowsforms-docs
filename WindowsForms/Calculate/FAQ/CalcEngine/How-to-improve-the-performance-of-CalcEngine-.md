@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-improve-the-performance-of-CalcEngine | Windows Forms | Syncfusion
+title: How-to-improve-the-performance-of-CalcEngine- | Windows Forms | Syncfusion
 description: how to improve the performance of calcengine ?
 platform: windowsforms
 control: Calculate

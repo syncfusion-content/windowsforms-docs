@@ -13,7 +13,7 @@ This section discusses the library functions that are shipped in the Essential C
 
 ## ABS
 
-Returns the absolute value of a number. The absolute value of a non-negative number is the number itself. The absolute value of a negative number is -1 times the number.
+Returns the absolute value of a number. The absolute value of a non-negative number is the number itself. Theabsolute value of a negative number is -1 times the number.
 
 #### Syntax:
 
@@ -396,7 +396,7 @@ Choose(index, valuearray)
 
 where,
 
-* index is to specify the index from where you want to retrieve the value.
+* index is to specify the index from where you want to retrive the value.
 * valuearray is the array of value from where you want to take the value.
 
 ## Column
@@ -883,7 +883,7 @@ where,
 ## EVEN
 
 
-Returns the numberrounded upto the nearest even integer.
+Returns the numberrounded upto thenearest even integer.
 
 #### Syntax:
 
@@ -982,7 +982,7 @@ False(stringvalue)
 
 where:
 
-* stringvalue is to provide an empty string.
+* stringvalue is toprovide an empty string.
 
 ## FDIST
 
@@ -1020,7 +1020,7 @@ F is a random variable that has an F distribution with degrees_freedom1 and degr
 
 ## Find
 
-The Find function finds  a portion of a string from a particular text and returns the location of the string.
+The Find finction finds  a portion of a string from a particular text and returns the location of the string.
 
 #### Syntax:
 
@@ -1196,7 +1196,7 @@ This is optional. The FV function assumes Type value as 0, when this parameter i
 
 ##  GAMMADIST
 
-Returns the gamma distribution. 
+Returns thegamma distribution. 
 
 #### Syntax:
 
@@ -2005,7 +2005,7 @@ Note:
 
 * The Match function does not distinguish between uppercase and lowercase when searching.
 * If the Match function does not find a match, it returns #N/A error.
-* match_type is optional.  The Match Function assumes match_type as 1 when the parameter is omitted.
+* match_type is optional.  The Match Function assumes match_type as 1 when the parametter is omitted.
 * If the match_type parameter is 0 and a text value, then you can use wildcards in the value parameter.
 
 Where, 
@@ -2124,7 +2124,7 @@ value1, value2, ... are values for which, you want to find the smallest value.
 
 ## MINUTE
 
-Returns the minutes of a time value. The minute is given as an integer, ranging from 0 to 59.
+Returns theminutes of a time value. The minute is given as an integer, ranging from 0 to 59.
 
 #### Syntax:
 
@@ -2582,7 +2582,7 @@ where,
 ## PI
 
 
-Returns the number 3.14159265358979, the mathematical constant pi, accurate to 15 digits.
+Returns the number 3.14159265358979, themathematical constant pi, accurate to 15 digits.
 
 #### Syntax:
 
@@ -3761,7 +3761,7 @@ True(stringvalue)
 
 where,
 
-* stringvalue is to provide an empty string.
+* stringvalue is toprovide an empty string.
 
 ## TRUNC
 

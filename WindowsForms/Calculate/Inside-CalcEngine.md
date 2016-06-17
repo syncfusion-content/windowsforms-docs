@@ -67,7 +67,7 @@ CalcEngine.Parse method does the following:
 * Checks whether it is a valid formula that CalcEngine can understand 
 * Returns a string that represents a parsed version of the formula that can be more readily computed. 
 
-The parsed formula is a Reverse Polish Notation expression using tokens to compactly represent the entered formula. The parsing recognizes and replaces NamedRanges with their corresponding value. The parsing also recognizes library functions and tokenizes them as well.
+The parsed formula is a Reverse Polish Notation expression using tokens to compactly represent the entered formula. The parsing recognizes and replaces NamedRanges with their corresponding value. The parsing also recognizes library functions and tokenises them as well.
 
 ## Calculating
 
@@ -223,10 +223,10 @@ engine.UseDatesInCalculations = True
 
 {% endhighlight %}
 
-The following screenshot displays the calculation when UseDatesInCalculations property is set to “False”.
+The following screenshot displays the calculation when UseDatesInCalculations propertyis set to “False”.
 
 ![C:/Users/labuser/Desktop/b.png](Inside-CalcEngine_images/Inside-CalcEngine_img2.png)
 
-The following screenshot shows a Grid when UseDatesInCalculations property is set to “True”.
+The following screenshot shows a Grid when UseDatesInCalculations propertyis set to “True”.
 
 ![C:/Users/labuser/Desktop/c.png](Inside-CalcEngine_images/Inside-CalcEngine_img3.png)
