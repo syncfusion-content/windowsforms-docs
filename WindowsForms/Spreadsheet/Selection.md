@@ -205,7 +205,7 @@ Clears the Selection.</td></tr>
 <tr>
 <td>
 {{ '[MoveCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~MoveCurrentCell.html)' | markdownify }}</td><td>
-Move the Currentcell to mentioned row and column index.</td></tr>
+Move the Current cell to mentioned row and column index.</td></tr>
 </table>
 
 ## Key Navigation
