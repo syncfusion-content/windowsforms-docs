@@ -40,7 +40,7 @@ The following steps show how to implement the localization in Spreadsheet,
 
 * Create folder name as ‘Resources’ in your application.
 * Add default English("en-US") [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474) (resource) file of `Spreadsheet` in the 'Resources' folder named as Syncfusion.Spreadsheet.Windows.resx
-* Create Resx(resource) file and name it as Syncfusion.Spreadsheet.Windows.[Culture name].resx. For example, Syncfusion.Spreadsheet.Windows.ja.resx for japanese culture.
+* Create Resx(resource) file and name it as Syncfusion.Spreadsheet.Windows.[Culture name].resx. For example, Syncfusion.Spreadsheet.Windows.ja.resx for Japanese culture.
   For your reference, Japanese("ja-JP") [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474) file
 
 ![](localization_images/Loc_Image1.JPG)

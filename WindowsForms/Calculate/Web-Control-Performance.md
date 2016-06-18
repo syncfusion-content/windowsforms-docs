@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion Essential Studio makes use of the class named ScriptResourceAttribute which is used to define a resource in an assembly to be used from a client script file. 
 
-Then the resource files which are all used in the Syncfusion controls are gzipped and served over the network. The following screen shot shows this.
+Then the resource files which are all used in the Syncfusion controls are zipped and served over the network. The following screen shot shows this.
 
 ![](Web-Control-Performance_images/Web-Control-Performance_img1.jpeg)
 
@@ -29,7 +29,7 @@ In order to achieve this, you need to set the following attributes in the projec
 
 {% endhighlight %}
 
-As the resource files get gzipped
+As the resource files get zipped
 
 * It saves the precious network band-width.
 * It reduces the load-time. As a result, the Web Forms, which consists of the Syncfusion controls, will get loaded faster on the client browser.
