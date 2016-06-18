@@ -519,7 +519,7 @@ Follow the steps given below for adding symbol palette into PaletteGroupBar:
 
 1. Add OpenFileDialog control into form.
 2. Set the Filter property of OpenFileDialog as,
-3. Essential Diagram Palettes|*.edp|Visio Stencils|*.vs; *.vsix|Visio Drawings(Shapes only)|*.vs; *.All files|*.*
+3. Essential Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*
 4. Add the following lines of code to your button click event.
 
 
