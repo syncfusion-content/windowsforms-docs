@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu For TextBox
 
-SpellCheckerAdv offers MS Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
+SpellCheckerAdv offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
 
 
 The following steps helps to add context menu support in the TextBox control through code.
