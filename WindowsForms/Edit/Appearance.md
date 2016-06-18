@@ -334,7 +334,7 @@ Specifies the interpolation mode. The options provided are as follows:
 <li> Low</li>
 <li> High</li>
 <li> Bilinear</li>
-<li> Bi cubic</li>
+<li> Bicubic</li>
 <li> NearestNeighbor</li>
 <li> HighQualityBilinear</li>
 <li> HighQualityBicubic</li></ul></td></tr>

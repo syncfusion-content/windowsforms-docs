@@ -13,9 +13,9 @@ This section explains how to implement a similar UI as Visual Studio by using th
 
 ## Add Docking Manager
 
-There are several ways to add Syncfusion control in to the Visual Studio WindowsForms project. The following steps help to add a DockingManager control through Code.
+There are several ways to add Syncfusion control in to the Visual Studio Windows Forms project. The following steps help to add a DockingManager control through Code.
 
-1) Create a WindowsForms project in Visual Studio and refer to the following assemblies.
+1) Create a Windows Forms project in Visual Studio and refer to the following assemblies.
 
    * Syncfusion.Grid.Windows.dll
    * Syncfusion.Grid.Base.dll

@@ -14,7 +14,7 @@ documentation: ug
 
 Caption label can be added to the MetroForm through designer or code.
 
-### Thorugh Designer
+### Through Designer
 
 1) Labels can be added to the CaptionBar using `CaptionLabels` collection property.
 
