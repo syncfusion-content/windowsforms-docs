@@ -2948,9 +2948,9 @@ A sample demonstrating the Custom Cursor feature is available in the below sampl
 
 _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-#### Intellij mouse Scrolling
+#### IntelliJ mouse Scrolling
 
-Essential Edit provides excellent support for viewport navigation including intellij mouse scrolling. Commonly used keyboard navigation functions like PAGE UP/PAGE DOWN keys, ARROW keys, and CTRL+ARROW keys are fully supported by Essential Edit.
+Essential Edit provides excellent support for viewport navigation including intelliJ mouse scrolling. Commonly used keyboard navigation functions like PAGE UP/PAGE DOWN keys, ARROW keys, and CTRL+ARROW keys are fully supported by Essential Edit.
 
 
 
