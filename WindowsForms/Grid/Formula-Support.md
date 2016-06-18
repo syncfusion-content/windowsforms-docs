@@ -4262,7 +4262,7 @@ SUBSTITUTE(text, old_text, new_text, instance_num)
 * **text** is the text or the reference to a cell containing text for which you want to substitute characters.
 * **old_text** is the text you want to replace.
 * **new_text** is the text you want to replace old_text with
-* **instance_num**specifies which occurrence of old_text you want to replace with new_text. If you specify instance_num, only that instance ofold_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
+* **instance_num**specifies which occurrence of old_text you want to replace with new_text. If you specify instance_num, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
 
 ### SUBTOTAL
 `SUBTOTAL` function returns a subtotal in a list. Once the subtotal list is created, you can modify it by editing the `SUBTOTAL` function.
@@ -4507,7 +4507,7 @@ TYPE( value )
 * **value** can be input either directly, as a value returned from a formula, or as a reference to a cell that contains a value.
 
 ### UNICHAR
-The `UNICHAR` function retrieves the unicode character for a given numeric value.
+The `UNICHAR` function retrieves the Unicode character for a given numeric value.
 
 #### Syntax
 UNICHAR(num)

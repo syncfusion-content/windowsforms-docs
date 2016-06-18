@@ -747,7 +747,7 @@ Me.gridControl1(2, 2) = currencyStyle
 
 ![](Cell-Types_images/Cell-Types_img20.png)
 
-[CurrencyPositivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyPositivePattern.html) and [CurrencyNegtivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyNegativePattern.html) are used to specify the format value for positive and negative currency values respectively. It is of integer type.
+[CurrencyPositivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyPositivePattern.html) and [CurrencyNegativePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyNegativePattern.html) are used to specify the format value for positive and negative currency values respectively. It is of integer type.
 
 {% tabs %}
 {% highlight c# %}
