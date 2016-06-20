@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization
 
-GridControl provide the support for [serialization](https://msdn.microsoft.com/en-us/library/ms233843.aspx#) and de-serialization of grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://msdn.microsoft.com/en-us/library/fa420a9y.aspx#).
+GridControl provide the support for [serialization](https://msdn.microsoft.com/en-us/library/ms233843.aspx#) and load the serialized grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://msdn.microsoft.com/en-us/library/fa420a9y.aspx#).
 
 GridControl has the different types of serialization techniques as follows,
 
@@ -42,7 +42,7 @@ Me.gridControl1.SaveBinary("GridSchema")
 
 ### Loading Binary
 
-To de-serialize the contents of the encoded grid schema, decode it by using the [LoadBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadBinary.html#) method and assign it to the grid model.
+To load the serialized contents of the encoded grid schema, decode it by using the [LoadBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadBinary.html#) method and assign it to the grid model.
 
 {% tabs %} 
 {% highlight c# %}
