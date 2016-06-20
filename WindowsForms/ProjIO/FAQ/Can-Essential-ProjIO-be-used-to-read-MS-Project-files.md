@@ -9,5 +9,5 @@ documentation: ug
 
 # Can Essential ProjIO be used to read MS Project files? 
 
-Essential ProjIO provides support for reading MS Project XML format files. Currently ProjIO does not support reading and writing files in .mpp or .mpt format.
+Essential ProjIO provides support for reading MS Project XML format files. Currently ProjIO does not support reading and writing files in MPP or MPT format.
 

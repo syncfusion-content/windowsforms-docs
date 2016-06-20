@@ -132,7 +132,7 @@ True if the task is a recurring task.</td></tr>
 <tr>
 <td>
 OverAllocated</td><td>
-True if the task is overallocated. </td></tr>
+True if the task is over allocated. </td></tr>
 <tr>
 <td>
 Estimated</td><td>
@@ -295,7 +295,7 @@ RemainingOvertimeCost</td><td>
 Gets or sets the remaining overtime cost projected to finish the task.</td></tr>
 <tr>
 <td>
-RemaningOvertimeWork</td><td>
+RemainingOvertimeWork</td><td>
 Gets or sets the remaining overtime work scheduled to finish the task.</td></tr>
 <tr>
 <td>
@@ -368,7 +368,7 @@ Gets or sets the text notes associated with the task.</td></tr>
 <tr>
 <td>
 HideBar</td><td>
-True if the GANTT bar of the task is hidden when displayed in Microsoft Project.</td></tr>
+True if the Gantt bar of the task is hidden when displayed in Microsoft Project.</td></tr>
 <tr>
 <td>
 Rollup</td><td>

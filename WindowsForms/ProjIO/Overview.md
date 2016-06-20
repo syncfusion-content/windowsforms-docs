@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction to Essential ProjIo
 
-Essential ProjIO is a 100% native .NET library that enables .NET applications to read and write Microsoft Project xml format documents without utilizing Microsoft Project. It does not use COM Interop and is built from scratch using C#. The ProjIO library can be used in any .NET environment including C# and VB. It is a Non-UI component that is used both on Windows Forms Applications and Web Applications.
+Essential ProjIO is a 100% native .NET library that enables .NET applications to read and write Microsoft Project XML format documents without utilizing Microsoft Project. It does not use COM Interop and is built from scratch using C#. The ProjIO library can be used in any .NET environment including C# and VB. It is a Non-UI component that is used both on Windows Forms Applications and Web Applications.
 
 ## Use Case Scenario
 
@@ -34,7 +34,7 @@ Development Environments</th><th>
 * Visual Studio 2010 (Ultimate, Premium, Professional and Express)* Visual Studio 2008 (Team System, Professional, Standard & Express)* Visual Studio 2005 (Professional, Standard & Express)</th></tr>
 <tr>
 <td>
-<br>.Net Framework Versions</td><td>
+<br>.NET Framework Versions</td><td>
 * .NET 4.0* .NET 3.5 SP1* .NET 2.0</td></tr>
 </table>
 

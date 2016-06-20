@@ -355,11 +355,11 @@ Saves Project instance to disk</td></tr>
 <tr>
 <td>
 CalculateResourceIDs</td><td>
-Recalculates UIDs and IDs of resources starting from 0</td></tr>
+Recalculates UID's and ID's of resources starting from 0</td></tr>
 <tr>
 <td>
 CalculateTaskIDs</td><td>
-Recalculates UIDs and IDs of tasks starting from 0</td></tr>
+Recalculates UID's and ID's of tasks starting from 0</td></tr>
 <tr>
 <td>
 Equals</td><td>
