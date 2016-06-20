@@ -540,10 +540,10 @@ Math.BigMul(x,y);
 The `BIN2DEC` function converts a binary number into a decimal number.
 
 #### Syntax
-BIN2DEC(num)
+BIN2DEC(number)
 
 #### Where:
-* **num** is the binary number that you want to convert.
+* **number** is the binary number that you want to convert.
 
 #### Remarks
 `#NUM!`- occurs if number is not a valid binary number, or if number contains more than 10 characters.
@@ -552,20 +552,20 @@ BIN2DEC(num)
 The `BIN2OCT` function converts a binary number into an octal number.
 
 #### Syntax
-BIN2OCT(num, places)
+BIN2OCT(number, places)
 
 #### Where:
-* **num** is the decimal integer you want to convert.
+* **number** is the decimal integer you want to convert.
 * **places** is the number of characters to use.
 
 ### BIN2HEX
 The **BIN2HEX** function converts a binary number into a hexadecimal.
 
 #### Syntax
-BIN2HEX(num places)
+BIN2HEX(number places)
 
 #### Where:
-* **num** is the decimal integer you want to convert.
+* **number** is the decimal integer you want to convert.
 * **places** is the number of characters to use.
 
 #### Remarks
@@ -576,17 +576,17 @@ BIN2HEX(num places)
 The `BINOM.DIST` function returns the Binomial Distribution probability for a given number of successes from a specified number of trials.
 
 #### Syntax
-BINOM.DIST (trial number,sp,value, cumulative)
+BINOM.DIST (trial number,success_probability,value, cumulative)
 
 #### Where
 * **trial** number is the number of Bernoulli trials.
-* **sp** is the probability of a success on each trial.
+* **success_probability** is the probability of a success on each trial.
 * **value** is the criterion value.
 * **cumulative** is a logical value that determines the form of the function.
 
 #### Remarks
-`#NUM!` - occurs if trial number is less than zero, if sp and value is less than zero or greater one.<br/>
-`#VALUE!` - occurs if trials, sp and value are non-numeric.
+`#NUM!` - occurs if trial number is less than zero, if success_probability and value is less than zero or greater one.<br/>
+`#VALUE!` - occurs if trials, success_probability and value are non-numeric.
 
 ### BINOMDIST
 Returns the individual term binomial distribution probability.
@@ -864,15 +864,15 @@ COLUMNS( array )
 The `COMPLEX` function converts real and imaginary coefficients into a complex number of the form a + bi or a + bj.
 
 #### Syntax
-COMPLEX(num,inum, suffix )
+COMPLEX(number,imaginary_number, suffix )
 
 #### Where:
-* **num** is the real coefficient of the complex number.
-* **inum** is the imaginary coefficient of the complex number.
+* **number** is the real coefficient of the complex number.
+* **imaginary_number** is the imaginary coefficient of the complex number.
 * **suffix** is the imaginary component of the complex number.
 
 #### Remarks
-`#VALUE!` - occurs if num or inum is non-numeric, if suffix is neither “i” nor “j”.
+`#VALUE!` - occurs if number or imaginary_number is non-numeric, if suffix is neither “i” nor “j”.
 
 ### COMBIN
 Returns the number of combinations for a given number of items. Use `COMBIN` to determine the total possible number of groups for a given number of items.
@@ -907,48 +907,48 @@ CONCATENATE (text1, text2, …),
 Returns a value that you can use to construct a confidence interval about population mean. The confidence interval is a range of values. In your sample, mean x is at the center of this range and the range is x ± CONFIDENCE. For example, if x is the sample mean of delivery times for products ordered through the mail, x ± CONFIDENCE is a range of population means.
 
 #### Syntax
-CONFIDENCE(alpha, standard_dev, size)
+CONFIDENCE(alpha, standard_deviation, size)
 
 #### Where:
 * **alpha** is the significance level used to compute the confidence level. The confidence level equals 100*(1 - alpha)%, or in other words, an alpha of 0.05 indicates a 95 percent confidence level.
-* **standard_dev** is the population standard deviation for the data range and is assumed to be known.
+* **standard_deviation** is the population standard deviation for the data range and is assumed to be known.
 * **size** is the sample size.
 
 ### CONFIDENCE.NORM
 The `CONFIDENCE.NORM` function uses a [Normal Distribution](http://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability and sample size.
 
 #### Syntax
-CONFIDENCE.NORM(alpha,stdev,size)
+CONFIDENCE.NORM(alpha,standard_deviation,size)
 
 #### Where:
 * **alpha** is the significance level.
-* **stdev** is the population standard deviation for the data range.
+* **standard_deviation** is the population standard deviation for the data range.
 * **size** is the sample size.
 
 #### Remarks
 `#VALUE!` - occurs if any argument is non-numeric.<br/>
-`#NUM!`- occurs if alpha and stdev is less than or equal to zero or if alpha is greater than or equal to zero.<br/>
+`#NUM!`- occurs if alpha and standard_deviation is less than or equal to zero or if alpha is greater than or equal to zero.<br/>
 `#DIV/0!` - occurs if the size is equal to one.
 
 ### CONFIDENCE.T
 Using a student’s distribution, this function retrieves the confidence interval for a population mean.
 
 #### Syntax
-CONFIDENCE.T(alpha,standard_dev,size)
+CONFIDENCE.T(alpha,standard_deviation,size)
 
 #### Where:
 * **alpha** is the significance level used to compute the confidence level.
-* **standard_dev** is the population standard deviation for data range and is assumed to be known.
+* **standard_deviation** is the population standard deviation for data range and is assumed to be known.
 * **size** is the sample size.
 
 ### CONVERT
 The `CONVERT` function converts a number from one unit type (e.g. Yards) to another unit type (e.g. Meters).
 
 #### Syntax
-CONVERT(num,fromUnit,toUnit)
+CONVERT(number,fromUnit,toUnit)
 
 #### Where:
-* **num** is the value in fromUnit to convert.
+* **number** is the value in fromUnit to convert.
 * **fromUnit** is the units for number.
 * **toUnit** is the units of the result.
 
@@ -1102,13 +1102,13 @@ CSCH(number)
 Returns the Macaulay duration for an assumed par value of $100. Duration is defined as the weighted average of the present value of cash flows and is used as a measure of a bond price’s response to changes in yield.
 
 #### Syntax
-DURATION(settlement, maturity, coupon, yld, frequency, basis)
+DURATION(settlement, maturity, coupon, yield, frequency, basis)
 
 #### Where:
 * **Settlement** - security’s settlement date.
 * **Maturity** - security’s maturity date.
 * **Coupon** – annual coupon rate
-* **Yld** – security’s annual yield.
+* **yield** – security’s annual yield.
 * **Frequency** – number of coupon payments per year.
 * **Basis** – type of day count basis.
 
@@ -1116,12 +1116,12 @@ DURATION(settlement, maturity, coupon, yld, frequency, basis)
 `CUMPRINC` function returns the cumulative principal paid on a loan between the start_period and end_period.
 
 #### Syntax
-CUMPRINC(rate, nper, pv, start_period, end_period, type)
+CUMPRINC(rate, number_of_periods, present_value, start_period, end_period, type)
 
 #### Where:
 * **Rate** – the interest rate.
-* **Nper** - total number of payment periods
-* **pv** - present value.
+* **number_of_periods** - total number of payment periods
+* **present_value** - present value.
 * **start_period**- first period in calculation. Begin with one.
 * **end_period**- last period in calculation.
 * **type** - timing of the payment.
@@ -1244,10 +1244,10 @@ DDB(cost, salvage, life, period, factor)
 The `DEC2BIN` function converts a decimal number into a binary number.
 
 #### Syntax
-DEC2BIN(num,places)
+DEC2BIN(number,places)
 
 #### Where:
-* **num** is the decimal integer you want to convert.
+* **number** is the decimal integer you want to convert.
 * **places** is the number of characters to use.
 
 #### Remarks
@@ -1258,10 +1258,10 @@ DEC2BIN(num,places)
 The `DEC2OCT` function converts a decimal number into an octal number.
 
 #### Syntax
-DEC2OCT(num, places)
+DEC2OCT(number, places)
 
 #### Where:
-* **num** is the decimal integer you want to convert.
+* **number** is the decimal integer you want to convert.
 * **places** is the number of characters to use.
 
 #### Remarks
@@ -1272,10 +1272,10 @@ DEC2OCT(num, places)
 The `DEC2HEX` function converts a decimal number into hexadecimal number.
 
 #### Syntax
-DEC2HEX(num, places )
+DEC2HEX(number, places )
 
 #### Where:
-* **num** is the decimal integer you want to convert.
+* **number** is the decimal integer you want to convert.
 * **places** is the number of characters to use.
 
 #### Remarks
@@ -1456,13 +1456,13 @@ DSUM(database, field, criteria)
 Returns the annual duration of a security with periodic interest payments.
 
 #### Syntax
-Duration (settlement, maturity, coupon, yld, frequency, basis)
+Duration (settlement, maturity, coupon, yield, frequency, basis)
 
 #### Where:
 * **Settlement** – a security’s settlement date.
 * **Maturity** – a security’s maturity date.
 * **Coupon** – the annual coupon rate.
-* **Yld** – security’s annual yield.
+* **yield** – security’s annual yield.
 * **Frequency** – the number of coupon payments per year.
 * **Basis** – the type of day count basis.
 
@@ -1797,11 +1797,11 @@ False(string value)
 The `FILTERXML` function retrieves specific data from the XML content by using the specified XPath.
 
 #### Syntax
-FILTERXML(xml, xpath)
+FILTERXML(xml, XPath)
 
 #### Where:
 * **xml** is a string in valid XML format.<br/>
-* **xpath** is a string in standard XPath format.
+* **XPath** is a string in standard XPath format.
 
 #### Remarks
 `#VALUE!` - occurs if XML is not valid or if XML contains a namespace with a prefix that is not valid.
@@ -1832,15 +1832,15 @@ Find(look for, look in, start)
 The `FINDB` function finds one text string (text1) within another text string (text2) and returns the number of the starting position of text1, based on the number of bytes each character uses, from the first character of text2.
 
 #### Syntax
-FINDB(text1,text2, num)
+FINDB(text1,text2, number)
 
 #### Where:
 * **text1** is the text that to be found.
 * **text2** is the text that contains found text..
-* **num** specifies the character at which to start the search.
+* **number** specifies the character at which to start the search.
 
 #### Remarks
-`#VALUE!` - occurs if text1 does not appear in text2 and if num is not greater than zero.
+`#VALUE!` - occurs if text1 does not appear in text2 and if number is not greater than zero.
 
 ### FINV
 `FINV` function returns the inverse of F probability distribution. If p = FDIST(x,…), then FINV(p,…) = x. By using F distribution, you can compare the degree of variability for two data sets.
@@ -1896,12 +1896,12 @@ FLOOR(number, significance)
 Calculates future value with existing values by using linear regression. The predicted value is y-value for a given x-value.
 
 #### Syntax
-FORECAST(x, known_ys, known_xs)
+FORECAST(x, Known_YS, Known_XS)
 
 #### Where:
 * **x** is the data point for which you want to predict a value.
-* **known_ys** is the dependent array or range of data.
-* **known_xs** is the independent array or range of data.
+* **Known_YS** is the dependent array or range of data.
+* **Known_XS** is the independent array or range of data.
 
 ### FORMULATEXT
 `FORMULATEXT` function returns the formula as string.
@@ -1924,14 +1924,14 @@ FORMULATEXT(reference)
 Returns the future value of an investment based on periodic, constant payments and interest rate.
 
 #### Syntax
-FV(rate, nper, pmt, pv, type)
+FV(rate, number_of_periods, payment, present_value, type)
 
 #### Where:
 * **rate** is the interest rate per period.
-* **nper** is the total number of payment periods in an annuity.
-* **pmt** is the payment made each period; it cannot change over the life of the annuity. Typically, pmt contains principal and interest, but no other fees or taxes. If pmt is omitted, you must include the pv argument.
-* **pv** is the present value or lump-sum amount that a series of future payments is worth right now. If pv is omitted, it is assumed to be 0 (zero), and you must include the pmt argument.
-* **type** is the number 0 or 1 and indicates when payments are due. If type is omitted it is assumed to be 0. If type equals: 0 - Payments are due at the end of the period. 1 - Payments are due at the beginning of the period. NOTE For a more complete description of the arguments in FV, see PV.
+* **number_of_periods** is the total number of payment periods in an annuity.
+* **payment** is the payment made each period; it cannot change over the life of the annuity. Typically, payment contains principal and interest, but no other fees or taxes. If payment is omitted, you must include the present_value argument.
+* **present_value** is the present value or lump-sum amount that a series of future payments is worth right now. If present_value is omitted, it is assumed to be 0 (zero), and you must include the payment argument.
+* **type** is the number 0 or 1 and indicates when payments are due. If type is omitted it is assumed to be 0. If type equals: 0 - Payments are due at the end of the period. 1 - Payments are due at the beginning of the period. NOTE For a more complete description of the arguments in FV, see present_value.
 
 ### FVSCHEDULE
 After applying a series of compound interest rates, FVSchedule method returns future value of the initial principle.
@@ -2042,10 +2042,10 @@ GEOMEAN(number1, number2, …)
 The `GESTEP` function tests whether a supplied number is greater than a supplied step size and returns 1 if number ≥ step; returns 0 (zero) otherwise.
 
 #### Syntax
-GESTEP(num, step )
+GESTEP(number, step )
 
 #### Where:
-* **num** is the value to test against step.<br/>
+* **number** is the value to test against step.<br/>
 * **step** is the threshold value.
 
 #### Remarks
@@ -2075,10 +2075,10 @@ HARMEAN(number1, number2, …)
 The `HEX2BIN` function converts a hexadecimal number into a binary number.
 
 #### Syntax
-HEX2BIN(num, places )
+HEX2BIN(number, places )
 
 #### Where:
-* **num** is the decimal integer you want to convert.
+* **number** is the decimal integer you want to convert.
 * **places** is the number of characters to use.
 
 #### Remarks
@@ -2089,10 +2089,10 @@ HEX2BIN(num, places )
 The `HEX2OCT` function converts a hexadecimal number into an octal number.
 
 #### Syntax
-HEX2OCT(num, places)
+HEX2OCT(number, places)
 
 #### Where:
-* **num** is the hexadecimal integer you want to convert.
+* **number** is the hexadecimal integer you want to convert.
 * **places** is the number of characters to use.
 
 #### Remarks
@@ -2103,10 +2103,10 @@ HEX2OCT(num, places)
 The `HEX2DEC` function converts a hexadecimal number into a decimal number.
 
 #### Syntax
-HEX2DEC(num)
+HEX2DEC(number)
 
 #### Where:
-* **num** is the hexadecimal integer you want to convert.
+* **number** is the hexadecimal integer you want to convert.
 
 #### Remarks
 `#NUM!`- occurs if number is not a valid hexadecimal number.
@@ -2188,329 +2188,329 @@ IF(logical_test, value_if_true, value_if_false)
 **IFNA** function returns the value specified if the formula returns #N/A error value; otherwise, it returns the result of the given formula.
 
 #### Syntax
-=IFNA (Formula_value, value_if_na)
+=IFNA (Formula_value, value_if_NA)
 
 #### Where:
 * **Formula_value**- The argument that is checked for the #N/A error value.
-* **value_if_na**-The value returned if the formula evaluates to the #N/A error value.
+* **value_if_NA**-The value returned if the formula evaluates to the #N/A error value.
 
 ### IMABS
 The `IMABS` function calculates the absolute value of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMABS(inum)
+IMABS(imaginary_number)
 
 #### Where:
-* `inum` is a complex number for which you want the absolute value.
+* `imaginary_number` is a complex number for which you want the absolute value.
 
 #### Remarks
-`#NUM!`- occurs if inumber is not in the form a + bi or a + bj.
+`#NUM!`- occurs if imaginary_number is not in the form a + bi or a + bj.
 
 ### IMAGINARY
 The `IMAGINARY` function returns the imaginary coefficient of a complex number in a + bi or a+bj text format.
 
 #### Syntax
-IMAGINARY(inum)
+IMAGINARY(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the absolute value.
+* **imaginary_number** is a complex number for which you want the absolute value.
 
 #### Remarks
-`#NUM!`- occurs if inumber is not in the form a + bi or a + bj.
+`#NUM!`- occurs if imaginary_number is not in the form a + bi or a + bj.
 
 ### IMREAL
 The `IMREAL` function returns the real coefficient of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMREAL(inum) 
+IMREAL(imaginary_number) 
 
 #### Where:
-* **inum** is a complex number for which you want the absolute value.
+* **imaginary_number** is a complex number for which you want the absolute value.
 
 #### Remarks
-`#NUM!`- occurs if inumber is not in the form a + bi or a + bj.
+`#NUM!`- occurs if imaginary_number is not in the form a + bi or a + bj.
 
 ### COMPLEX
 The `COMPLEX` function converts real and imaginary coefficients into a complex number of the form a + bi or a + bj.
 
 #### Syntax
-COMPLEX(num,inum, suffix ) 
+COMPLEX(number,imaginary_number, suffix ) 
 
 #### Where:
-* **num** is the real coefficient of the complex number.<br/>
-* **inum** is the imaginary coefficient of the complex number.<br/>
+* **number** is the real coefficient of the complex number.<br/>
+* **imaginary_number** is the imaginary coefficient of the complex number.<br/>
 * **suffix** is the imaginary component of the complex number.
 
 #### Remarks
-`#VALUE!` - occurs if num or inum is non-numeric, if suffix is neither “i” nor “j”.
+`#VALUE!` - occurs if number or imaginary_number is non-numeric, if suffix is neither “i” nor “j”.
 
 ### IMSUM
 The `IMSUM` function calculates the sum of two or more complex numbers in a + bi or a + bj text format.
 
 #### Syntax
-IMSUM(inum1,inum2,…) where:
-* **inum1**,**inum2**,… are 1 to 29 complex numbers to add.
+IMSUM(imaginary_number1,imaginary_number2,…) where:
+* **imaginary_number1**,**imaginary_number2**,… are 1 to 29 complex numbers to add.
 
 ### IMSUB
 The `IMSUB` function calculates the difference of two complex numbers in a + bi or a + bj text format.
 
 #### Syntax
-IMSUB(inumber1,inumber2)
+IMSUB(imaginary_number1,imaginary_number2)
 
 #### Where:
-* **inum1** is the complex number from which to subtract inum1.
+* **imaginary_number1** is the complex number from which to subtract imaginary_number1.
 
 ### IMPRODUCT
 The `IMPRODUCT` function calculates the product of 1 to 255 complex numbers in a + bi or a + bj text format.
 
 #### Syntax
-IMPRODUCT(inum1, inum2,… )
+IMPRODUCT(imaginary_number1, imaginary_number2,… )
 
 #### Where:
-* **inum1**, **inum2**,… are 1 to 255 complex numbers to multiply.
-* **Inum2** is the complex number to subtract from inumber1.
+* **imaginary_number1**, **imaginary_number2**,… are 1 to 255 complex numbers to multiply.
+* **imaginary_number2** is the complex number to subtract from imaginary_number1.
 
 ### IMDIV
 The IMDIV function calculates the quotient of two complex numbers in a + bi or a + bj text format.
 
 #### Syntax
-IMDIV(inum1, inum2) where:
-* **inum1** is the complex numerator or dividend.
-* **Inum2** is the complex denominator or divisor.
+IMDIV(imaginary_number1, imaginary_number2) where:
+* **imaginary_number1** is the complex numerator or dividend.
+* **imaginary_number2** is the complex denominator or divisor.
 
 ### IMCONJUGATE
 The `IMCONJUGATE` function calculates the complex conjugate of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMCONJUGATE(inum) where:
-* **inum** is a complex number for which you want the conjugate.
+IMCONJUGATE(imaginary_number) where:
+* **imaginary_number** is a complex number for which you want the conjugate.
 
 ### IMSQRT
 The` IMSQRT` function calculates the square root of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMSQRT(inum)
+IMSQRT(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the square root.
+* **imaginary_number** is a complex number for which you want the square root.
 
 ### IMARGUMENT
 The `IMARGUMENT` function retrieves the argument Theta, an angle expressed in radians.
 
 #### Syntax
-IMARGUMENT(inum)
+IMARGUMENT(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the argument Theta.
+* **imaginary_number** is a complex number for which you want the argument Theta.
 
 ### IMSIN
 The `IMSIN` function returns the sine of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMSIN(inum)
+IMSIN(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the sine.
+* **imaginary_number** is a complex number for which you want the sine.
 
 ### IMCSC
 The `IMCSC` function retrieves the cosecant of a complex number in a+bi or a+bj text format.
 
 #### Syntax
-IMCSC(inum)
+IMCSC(imaginary_number)
 
 #### Where:
-* **Inum** is a complex number for which you want the cosecant.
+* **imaginary_number** is a complex number for which you want the cosecant.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in the a+bi or a+bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in the a+bi or a+bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMCOS
 The `IMCOS` function retrieves the cosine of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMCOS(inum)
+IMCOS(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the cosine.
+* **imaginary_number** is a complex number for which you want the cosine.
 
 ### IMSEC
 The `IMSEC` function retrieves the secant of a complex number in a+bi or a+bj text format.
 
 #### Syntax
-IMSEC(inum)
+IMSEC(imaginary_number)
 
 #### Where:
-* **Inum** is a complex number for which you want the secant.
+* **imaginary_number** is a complex number for which you want the secant.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in the a + bi or a + bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in the a + bi or a + bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMTAN
 The `IMTAN` function retrieves the tangent of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMTAN(inum) 
+IMTAN(imaginary_number) 
 
 #### Where:
-* **Inum** is a complex number for which you want the cotangent.
+* **imaginary_number** is a complex number for which you want the cotangent.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in a + bi or a + bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in a + bi or a + bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMCOT
 The `IMCOT` function calculates the cotangent of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMCOT(inum)
+IMCOT(imaginary_number)
 
 #### Where:
-* `Inum` is a complex number for which you want the cotangent.
+* `imaginary_number` is a complex number for which you want the cotangent.
 
 #### Remarks
-`#NUM!`- occurs if inum is a value that is not in a + bi or a + bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in a + bi or a + bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMSINH
 The `IMSINH` function calculates the hyperbolic sine of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMSINH(inum)
+IMSINH(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the hyperbolic sine.
+* **imaginary_number** is a complex number for which you want the hyperbolic sine.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in a + bi or a + bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in a + bi or a + bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMCSCH
 The `IMCSCH` function calculates the hyperbolic cosecant of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMCSCH(inum) 
+IMCSCH(imaginary_number) 
 
 #### Where:
-* **inum** is a complex number for which you want the hyperbolic cosecant.
+* **imaginary_number** is a complex number for which you want the hyperbolic cosecant.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in a + bi or a + bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in a + bi or a + bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMCOSH
 The `IMCOSH` function calculates the hyperbolic cosine of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMCOSH(inum)
+IMCOSH(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the hyperbolic cosine.
+* **imaginary_number** is a complex number for which you want the hyperbolic cosine.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in a + bi or a + bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in a + bi or a + bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMSECH
 The `IMSECH` function calculates the hyperbolic secant of a complex number in a + bi or a + bj text format.
 
 #### Syntax
-IMSECH(inum)
+IMSECH(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the hyperbolic secant.
+* **imaginary_number** is a complex number for which you want the hyperbolic secant.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in a + bi or a + bj text format.
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in a + bi or a + bj text format.
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMTANH
 The `IMTANH` function calculates the hyperbolic tangent of the complex number z.
 
 #### Syntax
-IMTANH(inum)
+IMTANH(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the hyperbolic tangent.
+* **imaginary_number** is a complex number for which you want the hyperbolic tangent.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in a + bi or a + bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in a + bi or a + bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMCOTH
 The `IMCOTH` function calculates the hyperbolic cotangent of the complex number z.
 
 #### Syntax
-IMCOTH(inum)
+IMCOTH(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the hyperbolic cotangent.
+* **imaginary_number** is a complex number for which you want the hyperbolic cotangent.
 
 #### Remarks
-`#NUM!`- occurs if inumber is a value that is not in the a + bi or a + bj text format.<br/>
-`#VALUE!` - occurs if inumber is a logical value.
+`#NUM!`- occurs if imaginary_number is a value that is not in the a + bi or a + bj text format.<br/>
+`#VALUE!` - occurs if imaginary_number is a logical value.
 
 ### IMLOG10
 The `IMLOG10` function calculates the common logarithm (base 10) of a complex number z.
 
 #### Syntax
-IMLOG10(inum)
+IMLOG10(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the common logarithm.
+* **imaginary_number** is a complex number for which you want the common logarithm.
 
 #### Remarks
-`#NUM!`- occurs if inumber is not in the complex format
+`#NUM!`- occurs if imaginary_number is not in the complex format
 
 ### IMLOG2
 The `IMLOG2` function calculates the base-2 logarithm of a complex number z.
 
 #### Syntax
-IMLOG2(inum)
+IMLOG2(imaginary_number)
 
 #### Where:
-* **Inum** is a complex number for which you want the base-2 logarithm.
+* **imaginary_number** is a complex number for which you want the base-2 logarithm.
 
 #### Remarks
-`#NUM!`- occurs if inumber is not in the complex format.
+`#NUM!`- occurs if imaginary_number is not in the complex format.
 
 ### IMLN
 The `IMLN` function calculates the natural logarithm of a complex number z.
 
 #### Syntax
-IMLN(inum)
+IMLN(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the natural logarithm.
+* **imaginary_number** is a complex number for which you want the natural logarithm.
 
 #### Remarks
-`#NUM!`- occurs if inumber is not in the complex format
+`#NUM!`- occurs if imaginary_number is not in the complex format
 
 ### IMEXP
 The `IMEXP` function calculates the exponential of a complex number z.
 
 #### Syntax
-IMEXP(inum)
+IMEXP(imaginary_number)
 
 #### Where:
-* **inum** is a complex number for which you want the exponential.
+* **imaginary_number** is a complex number for which you want the exponential.
 
 #### Remarks
-`#NUM!`- occurs if inumber is not in the complex format
+`#NUM!`- occurs if imaginary_number is not in the complex format
 
 ### IMPOWER
 The `IMPOWER` function calculates a complex number in a + bi or a + bj text format raised to a power.
 
 #### Syntax
-IMPOWER(inum,num)
+IMPOWER(imaginary_number,number)
 
 #### Where:
-* **Inum** is a complex number you want to raise to a power.<br/>
-* **Num** is the power to which you want to raise the complex number.
+* **imaginary_number** is a complex number you want to raise to a power.<br/>
+* **number** is the power to which you want to raise the complex number.
 
 #### Remarks
-`#NUM!`- occurs if inumber is not in the complex format<br/>
+`#NUM!`- occurs if imaginary_number is not in the complex format<br/>
 `#VALUE!` - occurs if number is non-numeric.
 
 ### INDEX
@@ -2578,14 +2578,14 @@ INTERCEPT(known_y’s, known_x’s)
 Returns the interest payment for a given period of investment based on periodic, constant payments and constant interest rate.
 
 #### Syntax
-IPMT(rate, per, nper, pv, fv, type)
+IPMT(rate, per, number_of_periods, present_value, future_value, type)
 
 #### Where:
 * **rate** is the interest rate per period.
-* **per** is the period for which you want to find the interest and must be in the range 1 to nper.
-* **nper** is the total number of payment periods in an annuity.
-* **pv** is the present value or the lump-sum amount that a series of future payments is worth right now.
-* **fv** is the future value or a cash balance that you want to attain after the last payment is made. If fv is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0).
+* **per** is the period for which you want to find the interest and must be in the range 1 to number_of_periods.
+* **number_of_periods** is the total number of payment periods in an annuity.
+* **present_value** is the present value or the lump-sum amount that a series of future payments is worth right now.
+* **future_value** is the future value or a cash balance that you want to attain after the last payment is made. If future_value is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0).
 * **type** is the number 0 or 1 and indicates when payments are due. If type is omitted, it is assumed to be 0. If type = 0, payments are made at the end of the period. If type is 1, payments are made at the beginning of the period.
 
 ### IRR
@@ -2672,13 +2672,13 @@ ISOWEEKNUM( DateTime)
 Calculates the interest paid during a specific period of investment.
 
 #### Syntax
-ISPMT(rate, per, nper, pv),
+ISPMT(rate, per, number_of_periods, present_value),
 
 #### Where:
 * **rate** is the interest rate for the investment.
-* **per** is the period for which you want to find the interest, and it must be between 1 and nper.
-* **nper** is the total number of payment periods for the investment.
-* **pv** is the present value of the investment. For a loan, pv is the loan amount.
+* **per** is the period for which you want to find the interest, and it must be between 1 and number_of_periods.
+* **number_of_periods** is the total number of payment periods for the investment.
+* **present_value** is the present value of the investment. For a loan, present_value is the loan amount.
 
 ### ISREF
 The `ISREF` function returns the logical value TRUE if the given value is a reference value; otherwise, the function returns FALSE.
@@ -2832,13 +2832,13 @@ ISODD (value),
 This feature enables you to calculate predicted exponential growth using existing data. This calculates and returns an array of values used for regression analysis.
 
 #### Syntax
-=LOGEST(known_y’s, [known_x’s], [const], [stats])
+=LOGEST(known_y’s, [known_x’s], [constant], [statistics])
 
 #### Where:
 * **known_y’s**: A set of y-values you already know in a relationship, where y = b*m^x.
 * **known_x’s**: An optional set of x-values that you may already know in a relationship, where y = b*m^x.
-* **const** : A logical value specifying whether to force the constant b to equal 1.
-* **stats** : A logical value specifying whether to return additional regression statistics.
+* **constant** : A logical value specifying whether to force the constant b to equal 1.
+* **statistics** : A logical value specifying whether to return additional regression statistics.
 **Code**
 = Logest(B2:B7, A2:A7, TRUE, FALSE)
 
@@ -2852,57 +2852,57 @@ IsLogical(value)
 * **value** is the value to check if it is logical. If the value is `TRUE` or `FALSE`, this function will return TRUE. Otherwise, it will return FALSE.
 
 ### LOGINV
-Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters mean and standard_dev. If p = LOGNORMDIST(x,…), then LOGINV(p,…) = x.
+Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters mean and standard_deviation. If p = LOGNORMDIST(x,…), then LOGINV(p,…) = x.
 
 #### Syntax
-LOGINV(probability, mean, standard_dev),
+LOGINV(probability, mean, standard_deviation),
 
 #### Where:
 * **probability** is the probability associated with the lognormal distribution.
 * **mean** is the mean of ln(x).
-* **standard_dev** is the standard deviation of ln(x).
+* **standard_deviation** is the standard deviation of ln(x).
 
 ### LOGNORM.DIST
 The `LOGNORM.DIST` function calculates the Log-Normal Probability Density Function or the Cumulative Log-Normal Distribution Function for a supplied value of x.
 
 #### Syntax
-LOGNORM.DIST(x,mean,stdev,cumulative)
+LOGNORM.DIST(x,mean,standard_deviation,cumulative)
 
 #### Where:
 * **x** is the value that evaluates the function.
 * **mean** is the mean value of ln(x).
-* **stdev** is the standard deviation of ln(x).
+* **standard_deviation** is the standard deviation of ln(x).
 * **cumulative** is a logical value that determines the form of the function.
 
 #### Remarks
 `#VALUE!` - occurs if any argument is non-numeric.<br/>
-`#NUM!`- occurs if x ≤ 0 or if stdev ≤ 0.
+`#NUM!`- occurs if x ≤ 0 or if standard_deviation ≤ 0.
 
 ### LOGNORM.INV
 The `LOGNORM.INV` function calculates the inverse of the Cumulative Log-Normal Distribution Function of x, for a supplied probability.
 
 #### Syntax
-LOGNORM.INV(probability, mean, stdev)
+LOGNORM.INV(probability, mean, standard_deviation)
 
 #### Where:
 * **probability** is a probability that corresponds to the lognormal distribution.
 * **mean** is the arithmetic mean of In(x).
-* **stdev** is the standard deviation of ln(x).
+* **standard_deviation** is the standard deviation of ln(x).
 
 #### Remarks
 `#VALUE!` - occurs if any argument is non-numeric.<br/>
-`#NUM!`- occurs if probability &lt;= 0 or probability &gt;= 1 and if Stdev<=0.
+`#NUM!`- occurs if probability &lt;= 0 or probability &gt;= 1 and if standard_deviation<=0.
 
 ### LOGNORMDIST
-Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed with parameters mean and standard_dev.
+Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed with parameters mean and standard_deviation.
 
 #### Syntax
-LOGNORMDIST(x, mean, standard_dev),
+LOGNORMDIST(x, mean, standard_deviation),
 
 #### Where:
 * **x** is the value at which the function can be evaluated.
 * **mean** is the mean of ln(x).
-* **standard_dev** is the standard deviation of ln(x).
+* **standard_deviation** is the standard deviation of ln(x).
 
 ### LOOKUP
 `LOOKUP` function returns a value either from a one-row or one-column range or from an array. LOOKUP function has two syntax forms: vector and array.
@@ -3234,37 +3234,37 @@ NETWORKDAYS.INTL(startDate, endDate)
 The `NORM.DIST` function calculates the normal distribution for a supplied value of x, and a supplied distribution mean & standard deviation.
 
 #### Syntax
-NORM.DIST(x,mean,stdev,cumulative)
+NORM.DIST(x,mean,standard_deviation,cumulative)
 
 #### Where:
 * **x** is the value for which you want the distribution.
 * **mean** is the arithmetic mean of the distribution.
-* **stdev** is the standard deviation of the distribution.
+* **standard_deviation** is the standard deviation of the distribution.
 * **cumulative** is a logical value for given function.
 
 #### Remarks
-`#VALUE!` - occurs if mean or stdev is non-numeric.<br/>
-`#NUM!`- occurs if stdev is equal to or less than zero.
+`#VALUE!` - occurs if mean or standard_deviation is non-numeric.<br/>
+`#NUM!`- occurs if standard_deviation is equal to or less than zero.
 
 ### NORMDIST
 Returns the normal distribution for the specified mean and standard deviation.
 
 #### Syntax
-NORMDIST(x, mean, standard_dev, cumulative),
+NORMDIST(x, mean, standard_deviation, cumulative),
 
 #### Where:
 * **x** is the value for which you want the distribution.
 * **mean** is the arithmetic mean of the distribution.
-* **standard_dev** is the standard deviation of the distribution.
+* **standard_deviation** is the standard deviation of the distribution.
 * **cumulative** is a logical value that determines the form of the function. If cumulative is True, NORMDIST returns the cumulative distribution function; if False, it returns the probability mass function.
 
 #### Remarks
-* Standard_dev must be > 0.
+* standard_deviation must be > 0.
 * The equation for normal density function (cumulative = False) is,
 * When cumulative = True, the formula is the integral from negative infinity to x of the given formula.
 * `#VALUE!` - occurs if mean is non-numeric.
-* `#VALUE!` - occurs if standard_dev is non-numeric.
-* `#NUM!`- occurs if standard_dev is equal to or less than zero.
+* `#VALUE!` - occurs if standard_deviation is non-numeric.
+* `#NUM!`- occurs if standard_deviation is equal to or less than zero.
 
 ### NORMSDIST
 `NORMSDIST` function returns the probability that the observed value of a standard normal random variable will be less than or equal to the parameter.
@@ -3279,20 +3279,20 @@ NormsDist(value),
 Returns the inverse of normal cumulative distribution for the specified mean and standard deviation.
 
 #### Syntax
-NORMINV(probability, mean, standard_dev),
+NORMINV(probability, mean, standard_deviation),
 
 #### Where:
 * **probability** is a probability that corresponds to the normal distribution.
 * **mean** is the arithmetic mean of the distribution.
-* **standard_dev** is the standard deviation of the distribution.
+* **standard_deviation** is the standard deviation of the distribution.
 
 #### Remarks
 `#NUM!`- if probability is equal to or less than zero.<br/>
  `#NUM!`- if probability is equal to or greater than 1.<br/>
  `#VALUE!` - if probability is non-numeric. <br/>
 `#VALUE!` - if mean is non-numeric.<br/>
- `#NUM!`- if standard_dev is equal to or less than zero. <br/>
-`#VALUE!` - if standard_dev is non-numeric. Given a value for probability, NORMINV seeks value x such that NORMDIST(x, mean, standard_dev, True) = probability. NORMINV uses an iterative search technique.
+ `#NUM!`- if standard_deviation is equal to or less than zero. <br/>
+`#VALUE!` - if standard_deviation is non-numeric. Given a value for probability, NORMINV seeks value x such that NORMDIST(x, mean, standard_deviation, True) = probability. NORMINV uses an iterative search technique.
 
 ### NORMSINV
 `NormsInv` function returns the standard normal random variable that has Mean 0 and Standard Deviation 1.
@@ -3348,13 +3348,13 @@ NOW( )
 Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
 
 #### Syntax
-NPER(rate, pmt, pv, fv, type),
+NPER(rate, payment, present_value, future_value, type),
 
 #### Where:
 * **rate** is the interest rate per period.
-* **pmt** is the payment made each period; it cannot change over the life of the annuity.
-* **pv** is the present value or lump-sum amount that a series of future payments is worth right now.
-* **fv** is the future value or a cash balance that you want to attain after the last payment is made. If fv is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0).
+* **payment** is the payment made each period; it cannot change over the life of the annuity.
+* **present_value** is the present value or lump-sum amount that a series of future payments is worth right now.
+* **future_value** is the future value or a cash balance that you want to attain after the last payment is made. If future_value is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0).
 * **type** is the number 0 or 1 and indicates when payments are due. If type equals:
   * 0 - Payments are due at the end of the period.
   * 1 - Payments are due at the beginning of the period.
@@ -3390,10 +3390,10 @@ NUMBERVALUE(text)
 The `OCT2BIN` function converts an octal number into a binary number.
 
 #### Syntax
-OCT2BIN(nuM, places )
+OCT2BIN(number, places )
 
 #### Where:
-* **num** is the octal number you want to convert.
+* **number** is the octal number you want to convert.
 * **places** is the number of characters to use.
 
 #### Remarks
@@ -3404,10 +3404,10 @@ OCT2BIN(nuM, places )
 The `OCT2HEX` function converts an octal number into a hexadecimal number.
 
 #### Syntax
-OCT2HEX(num, places)
+OCT2HEX(number, places)
 
 #### Where:
-* **num** is the octal number you want to convert.
+* **number** is the octal number you want to convert.
 * **places** is the number of characters to use.
 
 #### Remarks
@@ -3588,20 +3588,20 @@ PI( )
 Calculates the payment for a loan based on constant payments and constant interest rate.
 
 #### Syntax
-PMT(rate, nper, pv, fv, type)
+PMT(rate, number_of_periods, present_value, future_value, type)
 
 #### Where:
 * **rate** is the interest rate for the loan.
-* **nper** is the total number of payments for the loan.
-* **pv** is the present value or the total amount that a series of future payments is worth now; also known as the principal.
-* **fv** is the future value or cash balance you want to attain after the last payment is made. If fv is omitted, it is assumed to be 0 (zero), that is, the future value of a loan is 0.
+* **number_of_periods** is the total number of payments for the loan.
+* **present_value** is the present value or the total amount that a series of future payments is worth now; also known as the principal.
+* **future_value** is the future value or cash balance you want to attain after the last payment is made. If future_value is omitted, it is assumed to be 0 (zero), that is, the future value of a loan is 0.
 * **type** is the number 0 (zero) or 1 and indicates when payments are due. If type equals:
   * 0 - Payments are due at the end of the period.
   * 1 - Payments are due at the beginning of the period.
 
 #### Remarks
 The payment returned by PMT includes principal and interest, but no taxes, reserve payments, or fees sometimes associated with loans.
-Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12 percent for rate and 4 for nper.
+Make sure that you are consistent about the units you use for specifying rate and number_of_periods. If you make monthly payments on a four-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 4*12 for number_of_periods. If you make annual payments on the same loan, use 12 percent for rate and 4 for number_of_periods.
 
 ### POISSON
 Returns the Poisson distribution.
@@ -3651,20 +3651,20 @@ POWER(number, power),
 Returns the payment on the principal for a given period, for an investment based on periodic, constant payments and a constant interest rate.
 
 #### Syntax
-PPMT(rate, per, nper, pv, fv, type),
+PPMT(rate, per, number_of_periods, present_value, future_value, type),
 
 #### Where:
 * **rate** is the interest rate per period.
-* **per** specifies the period and must be in the range of 1 to nper.
-* **nper** is the total number of payment periods in an annuity.
-* **pv** is the present value - the total amount that a series of future payments is worth now.
-* **fv** is the future value or a cash balance that you may want to attain after the last payment is made. If fv is omitted, it is assumed to be 0 (zero), that is, the future value of a loan is 0.
+* **per** specifies the period and must be in the range of 1 to number_of_periods.
+* **number_of_periods** is the total number of payment periods in an annuity.
+* **present_value** is the present value - the total amount that a series of future payments is worth now.
+* **future_value** is the future value or a cash balance that you may want to attain after the last payment is made. If future_value is omitted, it is assumed to be 0 (zero), that is, the future value of a loan is 0.
 * **type** is the number 0 or 1 and indicates when payments are due. If type equals:
   * 0 - Payments are due at the end of the period.
   * 1 - Payments are due at the beginning of the period.
 
 #### Remarks
-* Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper.
+* Make sure that you are consistent about the units you use for specifying rate and number_of_periods. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for number_of_periods. If you make annual payments on the same loan, use 12% for rate and 4 for number_of_periods.
 
 ### PROB
 Returns the probability whose values are in a range between two limits. If upper_limit is not supplied, returns the probability that values in x_range are equal to lower_limit.
@@ -3704,21 +3704,21 @@ PROPER(text)
 Returns the present value of an investment. The present value is the total amount that a series of future payments is worth now.
 
 #### Syntax
-PV(rate, nper, pmt, fv, type),
+PV(rate, number_of_periods, payment, future_value, type),
 
 #### Where:
 * **rate** is the interest rate per period. For example, if you obtain an automobile loan at 10% annual interest rate and make monthly payments, your interest rate per month is 10%/12 or 0.83%. You would enter 10%/12 or 0.83% or 0.0083, into the formula as the rate.
-* **nper** is the total number of payment periods in an annuity. For example, if you get a four-year car loan and make monthly payments, your loan has 4*12 (or 48) periods. You would enter 48 into the formula for nper.
-* **pmt** is the payment made for each period and cannot change over the life of the annuity. Typically, pmt includes principal and interest, but no other fees or taxes. For example, the monthly payments on $10,000, four-year car loan at 12 percent are $263.33. You will have to enter 263.33 into the formula as the pmt. If pmt is omitted, you must include the fv argument.
-* **fv** is the future value or a cash balance that you want to attain after the last payment is made. If fv is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0). For example, if you want to save $50,000 to pay for a special project in 18 years, then $50,000 is the future value. You could then make a conservative guess at an interest rate and determine how much you must save each month. If fv is omitted, you must include the pmt argument.
+* **number_of_periods** is the total number of payment periods in an annuity. For example, if you get a four-year car loan and make monthly payments, your loan has 4*12 (or 48) periods. You would enter 48 into the formula for number_of_periods.
+* **payment** is the payment made for each period and cannot change over the life of the annuity. Typically, payment includes principal and interest, but no other fees or taxes. For example, the monthly payments on $10,000, four-year car loan at 12 percent are $263.33. You will have to enter 263.33 into the formula as the payment. If payment is omitted, you must include the future_value argument.
+* **future_value** is the future value or a cash balance that you want to attain after the last payment is made. If future_value is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0). For example, if you want to save $50,000 to pay for a special project in 18 years, then $50,000 is the future value. You could then make a conservative guess at an interest rate and determine how much you must save each month. If future_value is omitted, you must include the payment argument.
 * **type** is the number 0 or 1 and indicates when payments are due. If type equals:
   * 0 - Payments are due at the end of the period.
   * 1 - Payments are due at the beginning of the period.
 
 #### Remarks
-* Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper.
+* Make sure that you are consistent about the units you use for specifying rate and number_of_periods. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for number_of_periods. If you make annual payments on the same loan, use 12% for rate and 4 for number_of_periods.
 * In annuity functions, the cash you pay out such as a deposit to savings is represented by a negative number; the cash you receive such as a dividend check is represented by a positive number.
-* One financial argument is solved in terms of the others. If rate is not 0, then, If rate is 0, then, (pmt * nper) + pv + fv = 0
+* One financial argument is solved in terms of the others. If rate is not 0, then, If rate is 0, then, (payment * number_of_periods) + present_value + future_value = 0
 
 ### QUARTILE
 Returns the quartile of a data set.
@@ -3820,13 +3820,13 @@ RANK.EQ( number, ref )
 Returns the interest rate per period of an annuity. `RATE` is calculated by iteration and may not converge to a unique solution.
 
 #### Syntax
-RATE(nper, pmt, pv, fv, type, guess)
+RATE(number_of_periods, payment, present_value, future_value, type, guess)
 
 #### Where:
-* **nper** is the total number of payment periods in an annuity.
-* **pmt** is the payment made for each period and cannot change over the life of the annuity. Typically, pmt includes the principal and interest, but no other fees or taxes. If pmt is omitted, you must include the fv argument.
-* **pv** is the present value - the total amount that a series of future payments is worth now.
-* **fv** is the future value or cash balance that you want to attain after the last payment is made. If fv is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0).
+* **number_of_periods** is the total number of payment periods in an annuity.
+* **payment** is the payment made for each period and cannot change over the life of the annuity. Typically, payment includes the principal and interest, but no other fees or taxes. If payment is omitted, you must include the future_value argument.
+* **present_value** is the present value - the total amount that a series of future payments is worth now.
+* **future_value** is the future value or cash balance that you want to attain after the last payment is made. If future_value is omitted, it is assumed to be 0 (the future value of a loan, for example, is 0).
 * **type** is the number 0 or 1 and indicates when payments are due. If type equals:
 
 ### RECEIVED
@@ -3873,7 +3873,7 @@ REPT(string, number)
 
 #### Where:
 * **string** is the text that you want to repeat.
-* **num** is the number of times to repeat the text.
+* **number** is the number of times to repeat the text.
 
 #### Remarks
 Blank text - occurs if number is zero.
@@ -3892,11 +3892,11 @@ RIGHT(text, num_chars),
 The RIGHTB function returns the last character or characters in a string, based on the number of bytes you specify for double-byte character set (DBCS) languages.
 
 #### Syntax
-RIGHTB(string, num)
+RIGHTB(string, number)
 
 #### Where:
 * **string** contains the characters you want to return.
-* **num** specifies the number of characters.
+* **number** specifies the number of characters.
 
 ### ROMAN
 The `ROMAN` function converts an Arabic number to a Roman numeral. This function returns a text string depicting the Roman numeral form of the given number.
@@ -3964,12 +3964,12 @@ ROWS( array )
 The `RRI` function returns an equivalent interest rate when investment value increases.
 
 #### Syntax
-RRI(np,pv,fv)
+RRI(number_of_periods,present_value,future_value)
 
 #### Where:
-* **np** is the number of investment period.
-* **pv** is the present investment value.
-* **fv** is the future investment value.
+* **number_of_periods** is the number of investment period.
+* **present_value** is the present investment value.
+* **future_value** is the future investment value.
 
 ### RSQ
 Returns the square of the Pearson product moment correlation coefficient through data points in known_y’s and known_x’s.
@@ -4171,15 +4171,15 @@ Number must be >= 0.
 SQRTPI (number) number – Required.
 
 ### STANDARDIZE
-Returns a normalized value from a distribution characterized by mean and standard_dev.
+Returns a normalized value from a distribution characterized by mean and standard_deviation.
 
 #### Syntax
-STANDARDIZE(x,mean, standard_dev)
+STANDARDIZE(x,mean, standard_deviation)
 
 #### Where:
 * **x** is the value that you want to normalize.
 * **mean** is the arithmetic mean of the distribution.
-* **standard_dev** is the standard deviation of the distribution.
+* **standard_deviation** is the standard deviation of the distribution.
 
 ### STDEV
 Estimates the standard deviation based on a sample. The standard deviation is a measure of how widely values are dispersed from the average value (the mean).
@@ -4380,21 +4380,21 @@ T( value ),
 ‘T.DIST’ function returns the left-tailed t-distribution.
 
 #### Syntax
-T.DIST(x,degr_freedom, tails)
+T.DIST(x,degree_freedom, tails)
 
 #### Where:
 * **x** is the numeric value to evaluate the distribution.
-* **degr_freedom** is the number of degrees of freedom.
+* **degree_freedom** is the number of degrees of freedom.
 
 ### T.INV
 Returns the the inverse of the two-tailed t-distribution. It’s must be > 0.
 
 #### Syntax
-T.INV(probability,degr_freedom)
+T.INV(probability,degree_freedom)
 
 #### Where:
 * **probability** associated with the Student’s t-distribution.
-* **degr_freedom** is the number of degrees of freedom. It’s must be > 0.
+* **degree_freedom** is the number of degrees of freedom. It’s must be > 0.
 
 ### TAN
 Returns the tangent of the given angle.
@@ -4510,14 +4510,14 @@ TYPE( value )
 The `UNICHAR` function retrieves the Unicode character for a given numeric value.
 
 #### Syntax
-UNICHAR(num)
+UNICHAR(number)
 
 #### Where:
-* **num** is the Unicode number that represents the character.
+* **number** is the Unicode number that represents the character.
 
 #### Remarks
 `#N/A` - occurs if data types are not valid.<br/>
-`#VALUE!` - occurs if num fall outside the allowable range, if number is zero.
+`#VALUE!` - occurs if number fall outside the allowable range, if number is zero.
 
 ### UNICODE
 The `UNICODE` function calculates the number corresponding to the first character of the text.
