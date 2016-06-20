@@ -747,7 +747,7 @@ Me.gridControl1(2, 2) = currencyStyle
 
 ![](Cell-Types_images/Cell-Types_img20.png)
 
-[CurrencyPositivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyPositivePattern.html) and [CurrencyNegtivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyNegativePattern.html) are used to specify the format value for positive and negative currency values respectively. It is of integer type.
+[CurrencyPositivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyPositivePattern.html) and [CurrencyNegativePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyNegativePattern.html) are used to specify the format value for positive and negative currency values respectively. It is of integer type.
 
 {% tabs %}
 {% highlight c# %}
@@ -1391,7 +1391,7 @@ Me.gridControl1(2, 2).Description = GetIconFile("common\Data\DocIO\SalesInvoiceD
 
 ![](Cell-Types_images/Cell-Types_img34.png)
 
-N> For more details on the Olecontainer cell type property make use of the following dashboard sample &lt;Installed Location&gt;\Syncfusion\ Studio\&lt;Installed Version&gt;\Windows\Grid.Windows\Samples\Custom Cell Types\Interactive Cell Demo\
+N> For more details on the OLEContainer cell type, make use of the following dashboard sample &lt;Installed Location&gt;\Syncfusion\ Studio\&lt;Installed Version&gt;\Windows\Grid.Windows\Samples\Custom Cell Types\Interactive Cell Demo\
 
 ### Calculator TextBox Cells
 Calculator Text Box cell type is implemented as a drop-down container, where the drop down container has the calculator. This drop down container is embedded in a cell. On doing the calculations the final value will be displayed in the cell.
@@ -1544,7 +1544,7 @@ Orientation of the cell container on NumericUpDown.
 </tr>
 <tr>
 <td>
-Intercept Arrowkeys
+Intercept ArrowKeys
 </td>
 <td>
 Allows to change the value by using ARROW keys from keyboard.

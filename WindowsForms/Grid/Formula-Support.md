@@ -1122,7 +1122,7 @@ CUMPRINC(rate, nper, pv, start_period, end_period, type)
 * **Rate** – the interest rate.
 * **Nper** - total number of payment periods
 * **pv** - present value.
-* **start_period**- first period in calculation. Brgind with one.
+* **start_period**- first period in calculation. Begin with one.
 * **end_period**- last period in calculation.
 * **type** - timing of the payment.
 
@@ -1934,7 +1934,7 @@ FV(rate, nper, pmt, pv, type)
 * **type** is the number 0 or 1 and indicates when payments are due. If type is omitted it is assumed to be 0. If type equals: 0 - Payments are due at the end of the period. 1 - Payments are due at the beginning of the period. NOTE For a more complete description of the arguments in FV, see PV.
 
 ### FVSCHEDULE
-After applying a series of compound interest rates, Fvschedule method returns future value of the initial principle.
+After applying a series of compound interest rates, FVSchedule method returns future value of the initial principle.
 
 #### Syntax
 FVSchedule(arg1,arg2)
@@ -4262,7 +4262,7 @@ SUBSTITUTE(text, old_text, new_text, instance_num)
 * **text** is the text or the reference to a cell containing text for which you want to substitute characters.
 * **old_text** is the text you want to replace.
 * **new_text** is the text you want to replace old_text with
-* **instance_num**specifies which occurrence of old_text you want to replace with new_text. If you specify instance_num, only that instance ofold_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
+* **instance_num**specifies which occurrence of old_text you want to replace with new_text. If you specify instance_num, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
 
 ### SUBTOTAL
 `SUBTOTAL` function returns a subtotal in a list. Once the subtotal list is created, you can modify it by editing the `SUBTOTAL` function.
@@ -4507,7 +4507,7 @@ TYPE( value )
 * **value** can be input either directly, as a value returned from a formula, or as a reference to a cell that contains a value.
 
 ### UNICHAR
-The `UNICHAR` function retrieves the unicode character for a given numeric value.
+The `UNICHAR` function retrieves the Unicode character for a given numeric value.
 
 #### Syntax
 UNICHAR(num)

@@ -133,7 +133,7 @@ Me.gridAwareTextBox1.Multiline = True
 
 N> Formula bar supports all the events and methods which are provided by the `TextBox` control.
 
-## Unwiring Formula Bar
+## Unwire Formula Bar
 
 The formula bar can be unwired from the grid by using the [UnwireGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~UnwireGrid.html#) method. It will break the connection between the grid and the formula bar.
 
