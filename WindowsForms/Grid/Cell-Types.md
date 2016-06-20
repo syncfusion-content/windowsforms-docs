@@ -1391,7 +1391,7 @@ Me.gridControl1(2, 2).Description = GetIconFile("common\Data\DocIO\SalesInvoiceD
 
 ![](Cell-Types_images/Cell-Types_img34.png)
 
-N> For more details on the OleContainer cell type property make use of the following dashboard sample &lt;Installed Location&gt;\Syncfusion\ Studio\&lt;Installed Version&gt;\Windows\Grid.Windows\Samples\Custom Cell Types\Interactive Cell Demo\
+N> For more details on the OLEContainer cell type, make use of the following dashboard sample &lt;Installed Location&gt;\Syncfusion\ Studio\&lt;Installed Version&gt;\Windows\Grid.Windows\Samples\Custom Cell Types\Interactive Cell Demo\
 
 ### Calculator TextBox Cells
 Calculator Text Box cell type is implemented as a drop-down container, where the drop down container has the calculator. This drop down container is embedded in a cell. On doing the calculations the final value will be displayed in the cell.
