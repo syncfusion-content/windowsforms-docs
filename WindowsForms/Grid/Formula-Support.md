@@ -2158,7 +2158,7 @@ HYPGEOMDIST(sample_s, number_sample, population_s, number_population),
 `IEEEREMAINDER` function returns the remainder operation on two arguments.
 
 #### Syntax
-IEEEremainder(d1, d2)
+IEEERemainder(d1, d2)
 
 #### Where:
 * **d1** is the divisor.
