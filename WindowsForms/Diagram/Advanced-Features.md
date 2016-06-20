@@ -3498,7 +3498,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Cancels the Z-orderChanging event.</td></tr>
+Cancels the Z-order changing event.</td></tr>
 <tr>
 <td>
 ChangeType</td><td>
