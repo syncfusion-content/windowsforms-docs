@@ -9,7 +9,7 @@ documentation: ug
 
 # How to set the Color Palette for a Chart
 
-Custom color Palette can be specified in PivotChart by using the CustomPalatte color collection.
+Custom color Palette can be specified in PivotChart by using the CustomPalette color collection.
 
 {% highlight C# %}
 
