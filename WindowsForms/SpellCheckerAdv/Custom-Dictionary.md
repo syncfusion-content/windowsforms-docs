@@ -16,7 +16,23 @@ Words can be added to the custom dictionary with the *Add to dictionary* button 
 Word list can be customized with the Custom Dictionary Editor dialog, and this can be invoked by the Custom Dictionary button in the SpellChecker dialog. Users can add or delete words from the dictionary.
 
 
- ![](Custom-Dictionary_images/CustomDictionary.png)
+{% tabs %}
+
+{% highlight C# %}
+
+this.spellCheckerAdv1.CustomDictionaryPath = "C:\\ProgramData\\ClipboardFunctionsDemo\\SpellCheckerDemo_2008\\1.0.0.0\\Custom_Dictionay.dic";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.spellCheckerAdv1.CustomDictionaryPath = "C:\\ProgramData\\ClipboardFunctionsDemo\\SpellCheckerDemo_2008\\1.0.0.0\\Custom_Dictionay.dic"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Custom-Dictionary_images/CustomDictionary.png)
 
 
 
