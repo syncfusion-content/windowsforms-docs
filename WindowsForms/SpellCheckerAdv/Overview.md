@@ -16,7 +16,6 @@ SpellCheckerAdv control offers Microsoft Office style spell checking capabilitie
 
 ## Features
 
-
 * Custom Dictionary support.
 * Option to Ignore words one at a time or all at a time.
 * Option to replace words one at a time or all at a time.
