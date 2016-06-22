@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Text-Color-that-Appears-in-a-Cell | Windows Forms | Syncfusion
+title: Appearance in GridControl
 description: how to set the text color that appears in a cell
 platform: windowsforms
 control: Grid
@@ -15,25 +15,15 @@ Harnessing the ability to customize text color to your application allows you en
 
 ### Example
 
-
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Modifies the TextColor of a cell.
-
 gridControl1[rowIndex, colIndex].TextColor = Color.Red;
 {% endhighlight  %}
 
-
 {% highlight vbnet %}
-
-
-
 'Modifies the TextColor of a cell.
-
 GridControl1(rowIndex, colIndex).TextColor = Color.Red
-
-
 {% endhighlight  %}
+{% endtabs %}

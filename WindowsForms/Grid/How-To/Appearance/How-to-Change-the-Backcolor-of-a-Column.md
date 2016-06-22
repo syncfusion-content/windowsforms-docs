@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Column | Windows Forms | Syncfusion
+title: Appearance in GridControl
 description: how to change the backcolor of a column
 platform: windowsforms
 control: Grid
@@ -16,25 +16,18 @@ The GridControl.ColStyles collection contains [GridStyleInfo](/windowsforms/Grid
 
 ### Example
 
-
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Sets the BackColor for the third column.
-
 gridControl1.ColStyles[3].BackColor = Color.Red;
 
 {% endhighlight  %}
 
 {% highlight vbnet %}
 
-
-
 'Sets the BackColor for the third column.
-
 GridControl1.ColStyles(3).BackColor = Color.Red
 
 {% endhighlight  %}
-
+{% endtabs %}

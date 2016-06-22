@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Change-the-Backcolor-of-a-Single-Row | Windows Forms | Syncfusion
+title: Appearance in GridControl
 description: how to change the backcolor of a single row
 platform: windowsforms
 control: Grid
@@ -15,23 +15,16 @@ GridControl.RowStyles collection contains [GridStyleInfo](/windowsforms/Grid/Cel
 
 ### Example
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Sets the BackColor of the 3rd row.
-
 gridControl1.RowStyles[3].BackColor = Color.Red;
 {% endhighlight  %}
 
-
 {% highlight vbnet %}
-
-
-
 'Sets the BackColor of the 3rd row.
-
 GridControl1.RowStyles(3).BackColor = Color.Red
 
-
 {% endhighlight  %}
+{% endtabs %}

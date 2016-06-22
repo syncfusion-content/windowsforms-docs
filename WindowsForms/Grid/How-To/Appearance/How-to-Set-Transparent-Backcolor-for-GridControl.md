@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-Transparent-Backcolor-for-GridControl | Windows Forms | Syncfusion
+title: Appearance in GridControl
 description: how to set transparent backcolor for gridcontrol
 platform: windowsforms
 control: Grid
@@ -15,16 +15,12 @@ Setting the transparent [BackColor](/windowsforms/Grid/Cell-Style-Architecture#b
 
 ### Example
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Sets up Transparent Background.
-
 this.gridControl1.SupportsTransparentBackColor = true;
 this.gridControl1.TransparentBackground = true;
-
-
 
 //Sets Color for the Transparent Background.
 this.gridControl1.Properties.BackgroundColor = Color.FromArgb(0, 1, 1, 1);
@@ -34,18 +30,13 @@ this.gridControl1.BackColor = Color.FromArgb(0, SystemColors.Window);
 
 {% highlight vbnet %}
 
-
-
 'Sets up Transparent Background.
-
 Me.gridControl1.SupportsTransparentBackColor = True
 Me.gridControl1.TransparentBackground = True
-
-
 
 'Sets Color for the Transparent Background.
 Me.gridControl1.Properties.BackgroundColor = Color.FromArgb(0, 1, 1, 1)
 Me.gridControl1.BackColor = Color.FromArgb(0, SystemColors.Window)
 
-
 {% endhighlight  %}
+{% endtabs %}

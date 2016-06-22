@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Change-the-Appearance-of-a-Single-Header-Ce | Windows Forms | Syncfusion
+title: Appearance in GridControl
 description: how to change the appearance of a single header cell
 platform: windowsforms
 control: Grid
@@ -16,50 +16,33 @@ To make changes to individual cells (header cells or otherwise), use an indexer 
 ### Example
 
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Changes the font properties of the header cell.
-
 gridControl1[0, 3].Font.Italic = true; 
-
 gridControl1[0, 3].Font.Bold = true; 
-
 gridControl1[0, 3].Font.Orientation = 270;
 
-
-
 //Changes the Text Color and Text of the header cell. 
-
 gridControl1[0, 3].TextColor = Color.Red; 
-
 gridControl1[0, 3].Text = "Sales";
 
 {% endhighlight  %}
 
 {% highlight vbnet %}
 
-
-
 //Changes the font properties of the header cell.
-
 GridControl1(0, 3).Font.Italic = True
-
 GridControl1(0, 3).Font.Bold = True
-
 GridControl1(0, 3).Font.Orientation = 270
 
-
-
 //Changes the Text Color and Text of the header cell.
-
 GridControl1(0, 3).TextColor = Color.Red
-
 GridControl1(0, 3).Text = "Sales"
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](How-to-Change-the-Appearance-of-a-Single-Header-Ce_images/How-to-Change-the-Appearance-of-a-Single-Header-Ce_img1.jpeg)
 

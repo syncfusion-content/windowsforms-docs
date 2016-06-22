@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: How-to-Change-a-Cells-Font-to-a-Particular-Font-Fa | Windows Forms | Syncfusion
+title: Appearance in GridControl
 description: how to change a cell's font to a particular font family
 platform: windowsforms
 control: Grid
@@ -23,41 +23,28 @@ You can also change several font properties in one statement by using font class
 
 ### Example
 
+{% tabs %}
 {% highlight c# %}
 
-//Snippet 1.        
-
+//Snippet 1.  
 gridControl1[rowIndex, colIndex].Font.Facename = "Arial";
-
 gridControl1[rowIndex, colIndex].Font.Bold = true;
-
 gridControl1[rowIndex, colIndex].Font.Size = 10;
 
-
-
 //Snippet 2.
-
 gridControl1[rowIndex, colIndex].Font.SetFacename("Arial").SetBold(true).SetSize(10);
 
 {% endhighlight  %}
 
 {% highlight vbnet %}
 
-
-
-'Snippet 1.        
-
+'Snippet 1. 
 gridControl1(rowIndex, colIndex).Font.Facename = "Arial"
-
 gridControl1(rowIndex, colIndex).Font.Bold = 
-
 gridControl1(rowIndex, colIndex).Font.Size = 10
 
-
-
-'Snippet 2.       
-
+'Snippet 2.
 gridControl1(rowIndex, colIndex).Font.SetFacename("Arial").SetBold(True).SetSize(10)
 
-
 {% endhighlight  %}
+{% endtabs %}
