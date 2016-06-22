@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-export-user-defined-function-from-Grid-to-Excel-workbook | Windows Forms | Syncfusion
+title: Exporting in GridControl
 description: how to export user-defined function from grid to excel workbook
 platform: windowsforms
 control: Grid
@@ -38,17 +38,10 @@ The following code illustrates how to export the user-defined function to Excel.
 
 {% highlight c# %}
 
-
-
 //Exports the user-defined function.
-
 string xla = @"..\..\AddIns\Add.xla";
-
 Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
-
 gecc.AddCustomFunction(xla, "add", saveFileDialog1.FileName);
-
 gecc.GridToExcel(this.gridControl1.Model, saveFileDialog1.FileName);
-
 
 {% endhighlight %}

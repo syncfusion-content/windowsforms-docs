@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-a-Value-into-a-Cell | Windows Forms | Syncfusion
+title: Cell Styles in GridControl
 description: how to set a value into a cell
 platform: windowsforms
 control: Grid
@@ -18,51 +18,32 @@ A style object holds all the information that affects cells appearance. One prop
 
 Use two-parameter indexer (rowIndex, colIndex) on your GridControl object to get a reference to that particular cells style, GridStyleInfo object.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Sets the CellValues of the cell.
-
 int rowIndex = 1;
-
 int colIndex = 2;        
-
 gridControl1[rowIndex, colIndex].CellValue = "PI";
-
 rowIndex++;
 
-
-
 //Sets a different value in the next row.
-
 gridControl1[rowIndex, colIndex].CellValue = 3.14159;
-
 
 {% endhighlight  %}
 {% highlight vbnet %}
 
-
-
 'Sets the CellValues of the cell.
-
 Dim rowIndex As Integer = 1
-
 Dim colIndex As Integer = 2
-
 GridControl1(rowIndex, colIndex).CellValue = "PI"
-
 rowIndex = rowIndex + 1
 
-
-
 'Sets a different value in the next row.
-
 GridControl1(rowIndex, colIndex).CellValue = 3.14159
 
 {% endhighlight %}
+{% endtabs %}
 
 N> Using an indexer on the GridControl to set values will trigger several notification events that listeners (and the GridControl itself) can use to monitor the state of the GridControl. These events may slow things down if you have a lot of data to move into the GridControl. In this case, you can want to employ a technique that will avoid these events.
 

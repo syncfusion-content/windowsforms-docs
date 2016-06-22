@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Change-the-Color-of-All-Headers | Windows Forms | Syncfusion
+title: Common questions in Essential Grid
 description: how to change the color of all headers
 platform: windowsforms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Number-of-Rows-or-Columns | Windows Forms | Syncfusion
+title: Managing Rows and Columns in GridControl
 description: how to set the number of rows or columns
 platform: windowsforms
 control: Grid
@@ -15,77 +15,35 @@ Dynamically changing the RowCount or ColCount properties while a GridControl is 
 
 ### Example
 
+{% tabs %}
 {% highlight c# %}
-
-
-
 public Form1()
-
 {
+    //Requires for Windows Form Designer support.
+    InitializeComponent();
 
-        //
+    //Sets the number of rows.
+    gridControl1.RowCount = 20;
 
-        //Requires for Windows Form Designer support.
-
-        //
-
-        InitializeComponent();
-
-
-
-        //
-
-        //TODO: Add any constructor code after InitializeComponent call.
-
-        //
-
-
-
-        //Sets the number of rows.             
-
-        gridControl1.RowCount = 20;
-
-
-
-        //Sets the number of columns.    
-
-        gridControl1.ColCount = 200;
-
+    //Sets the number of columns.
+    gridControl1.ColCount = 200;
 }
 
-
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
+Public Sub New()
+    MyBase.New()
+	'This call is required by the Windows Form Designer.
+      InitializeComponent()
+	'Adds any initialization after the InitializeComponent() call.
+	
+	'Sets the number of rows.  
+      GridControl1.RowCount = 20 
 
+	'Sets the number of columns.
+      GridControl1.ColCount = 200 
 
-  Public Sub New()
-
-        MyBase.New()
-
-
-
-'This call is required by the Windows Form Designer.
-
-        InitializeComponent()
-
-
-
-'Adds any initialization after the InitializeComponent() call.
-
-
-
-'Sets the number of rows.             
-
-        GridControl1.RowCount = 20 
-
-
-
-'Sets the number of columns.    
-
-        GridControl1.ColCount = 200 
-
-    End Sub
-
+End Sub
 {% endhighlight  %}
-
+{% endtabs %}

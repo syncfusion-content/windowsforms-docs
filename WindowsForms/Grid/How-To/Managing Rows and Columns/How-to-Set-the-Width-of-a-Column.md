@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Width-of-a-Column | Windows Forms | Syncfusion
+title: Managing Rows and Columns in GridControl
 description: how to set the width of a column
 platform: windowsforms
 control: Grid
@@ -15,11 +15,8 @@ Changing a column's width is simple whether you are using the designer or code. 
 
 ### Example
 
-
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 //Sets size of column 3 to 250.
 this.gridControl1.ColWidths[3] = 250;
@@ -28,10 +25,8 @@ this.gridControl1.ColWidths[3] = 250;
 
 {% highlight vbnet %}
 
-
-
 'Sets size of column 3 to 250.
 Me.GridControl1.ColWidths(3) = 250 
 
-
 {% endhighlight  %}
+{% endtabs %}

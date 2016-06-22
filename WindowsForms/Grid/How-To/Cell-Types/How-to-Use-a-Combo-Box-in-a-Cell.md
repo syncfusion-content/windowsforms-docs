@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Use-a-Combo-Box-in-a-Cell | Windows Forms | Syncfusion
+title: Cell Types in GridControl
 description: how to use a combo box in a cell
 platform: windowsforms
 control: Grid
@@ -22,142 +22,80 @@ In the second case, use GridStyleInfo.DataSource, DisplayMember and ValueMember 
 
 Here is the code that will set cells 4,2 to a combo box by setting the items in the combo box through styles ChoiceList property.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Requires to access the StringCollection.
-
 using System.Collections.Specialized;       
 
-
-
 //...
-
 // Creates the list.
-
 StringCollection items = new StringCollection();
-
 items.AddRange(new string[]{"One", "Two", "Three", "Four", "Five"});
 
-
-
 //Sets the style properties.
-
 GridStyleInfo style = gridControl1[4, 2];
-
 style.CellType = "ComboBox";
-
 style.ChoiceList = items;
-
 style.CellValue = "Five";
 
-
-
 //True droplist - no editing.
-
 style.DropDownStyle = GridDropDownStyle.Exclusive; 
 
-
 {% endhighlight  %}
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Requires to access the StringCollection.
-
 Imports System.Collections.Specialized 
 
-
-
-'...
-
 'Creates the list.
-
 Dim items As New StringCollection
-
 items.AddRange(New String() {"One", "Two", "Three", "Four", "Five"})
 
-
-
 'Sets the style properties.
-
 Dim style As GridStyleInfo = GridControl1(4, 2)
 
 style.CellType = "ComboBox"
-
 style.ChoiceList = items
-
 style.CellValue = "Five"
-
 'True droplist - no editing.
-
 style.DropDownStyle = GridDropDownStyle.Exclusive 
 {% endhighlight  %}
+{% endtabs %}
 
 Here is the code that will set cells 4,2 to a combo box by setting items in the combo box through a DataTable datasource.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Assumes this.dt is a DataTable object with at least 2 columns named "id" and "display".
-
-
-
 //Sets the style properties.
-
 GridStyleInfo style = gridControl1[4, 2];
-
 style.CellType = "ComboBox";
-
 style.DataSource = dt;
-
 style.DisplayMember = "display"; 
 
-
-
 //Displays in the grid cell.
-
 style.ValueMember = "id"; 
 
-
-
 //Values in the grid cell.
-
 style.DropDownStyle = GridDropDownStyle.AutoComplete;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 'Assumes this.dt is a DataTable object with at least 2 columns named "id" and "display".
-
-
-
 'Sets the style properties.
-
 Dim style As GridStyleInfo = GridControl1(4, 2)
-
 style.CellType = "ComboBox"
-
 style.DataSource = dt
-
 style.DisplayMember = "display" 
 
-
-
 'Displays in the grid cell.
-
 style.ValueMember = "id" 
 
-
-
 'Values in the grid cell.
-
 style.DropDownStyle = GridDropDownStyle.AutoComplete
 
-
 {% endhighlight  %}
+{% endtabs %}

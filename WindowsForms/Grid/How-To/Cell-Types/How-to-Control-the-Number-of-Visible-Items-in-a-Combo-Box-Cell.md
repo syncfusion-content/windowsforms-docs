@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Control-the-Number-of-Visible-Items-in-a-Co | Windows Forms | Syncfusion
+title: Cell Types in GridControl
 description: how to control the number of visible items in a combo box cell
 platform: windowsforms
 control: Grid
@@ -15,103 +15,56 @@ There is a GridComboBoxListBoxPart.DropDownRows property that you can set to con
 
 #### Example
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void grid_CurrentCellShowingDropDown(object sender, GridCurrentCellShowingDropDownEventArgs e)
-
 { 
+    GridControlBase grid = sender as GridControlBase; 
+    if(grid != null) 
+    { 
+        GridCurrentCell cc = grid.CurrentCell; 
+        GridComboBoxCellRenderer cr = cc.Renderer as GridComboBoxCellRenderer;
 
-        GridControlBase grid = sender as GridControlBase; 
-
-        if(grid != null) 
-
-        { 
-
-            GridCurrentCell cc = grid.CurrentCell; 
-
-            GridComboBoxCellRenderer cr = cc.Renderer as GridComboBoxCellRenderer;
-
-
-
-//Sets number of visible items for comboboxes in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
-
-            if(cc != null) 
-
-            { 
-
-                if(cc.RowIndex == 6) 
-
-                     ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 4; 
-
-                else if(cc.RowIndex == 4) 
-
-                     ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 7; 
-
-                else if(cc.RowIndex == 2)
-
-                     ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 10; 
-
-                else ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 6; 
-
-            } 
-
-         }
-
+		//Sets number of visible items for comboboxes in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
+        if(cc != null) 
+        {
+            if(cc.RowIndex == 6) 
+                 ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 4; 
+            else if(cc.RowIndex == 4) 
+                 ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 7; 
+            else if(cc.RowIndex == 2)
+                 ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 10; 
+            else ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 6; 
+        } 
+    }
 }
 
-
 {% endhighlight %}
-
 
 {% highlight vbnet %}
 
-
-
 Private Sub Grid_CurrentCellShowingDropDown(sender As Object, e As GridCurrentCellShowingDropDownEventArgs)
-
-        Try
-
-            Dim grid As GridControlBase = sender
-
-            Dim cc As GridCurrentCell = grid.CurrentCell
-
-            If cc.Renderer Is GetType(GridComboBoxCellRenderer) Then
-
-                Dim cr As GridComboBoxCellRenderer = cc.Renderer
-
-
-
-'Sets number of visible items for comboboxes in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on.
-
-                If cc.RowIndex = 6 Then
-
-                    CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 4
-
-                ElseIf cc.RowIndex = 4 Then
-
-                    CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 7
-
-                ElseIf cc.RowIndex = 2 Then
-
-                    CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 10
-
-                Else
-
-                    CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 6
-
-                End If
-
+    Try
+        Dim grid As GridControlBase = sender
+        Dim cc As GridCurrentCell = grid.CurrentCell
+        If cc.Renderer Is GetType(GridComboBoxCellRenderer) Then
+            Dim cr As GridComboBoxCellRenderer = cc.Renderer
+			
+			'Sets number of visible items for comboboxes in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on.
+            If cc.RowIndex = 6 Then
+                CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 4
+            ElseIf cc.RowIndex = 4 Then
+                CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 7
+            ElseIf cc.RowIndex = 2 Then
+                CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 10
+            Else
+                CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 6
             End If
-
-        Catch
-
-        End Try
-
+        End If
+    Catch
+    End Try
 End Sub
 
-
-
-
 {% endhighlight %}
+{% endtabs %}

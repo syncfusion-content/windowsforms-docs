@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Set-the-Cell-Properties-for-a-Range-of-Cell | Windows Forms | Syncfusion
+title: Cell Styles in GridControl
 description: how to set the cell properties for a range of cells
 platform: windowsforms
 control: Grid
@@ -17,43 +17,27 @@ Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/window
 
 To set the [BackColor](/windowsforms/grid/cell-style-architecture#backcolor) and TextColor for a range of cells, use the below given code snippet.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Style settings.
-
 GridStyleInfo style = new GridStyleInfo();
-
 style.TextColor = Color.Red;
-
 style.BackColor = Color.LightBlue;
 
-
-
 //Modifies a range of cells.
-
 gridControl1.ChangeCells(GridRangeInfo.Cells(1, 1, 4, 5), style);
-
 
 {% endhighlight  %}
 {% highlight vbnet %}
 
-
-
 'Style settings.
-
 Dim style As New GridStyleInfo()
-
 style.TextColor = Color.Red
-
 style.BackColor = Color.LightBlue
 
-
-
 ' Modifies a range of cells.
-
 GridControl1.ChangeCells(GridRangeInfo.Cells(1, 1, 4, 5), style)
 
 {% endhighlight  %}
-
+{% endtabs %}

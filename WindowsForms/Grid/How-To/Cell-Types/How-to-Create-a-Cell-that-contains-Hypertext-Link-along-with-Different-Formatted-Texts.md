@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Create-a-Cell-that-contains-Hypertext-Link- | Windows Forms | Syncfusion
+title: Cell Types in GridControl
 description: how to create a cell that contains hypertext link along with different formatted texts
 platform: windowsforms
 control: Grid
@@ -21,22 +21,15 @@ To create a cell that contains a hypertext link along with different formatted t
 
 
    ~~~ cs
-
-
-			//Adds the cell Model to the specified type Name "InPlaceRTB". 
-
-			this.gridControl1.CellModels.Add("InPlaceRTB", new InPlaceRichTextCellModel(this.gridControl1.Model));
+	//Adds the cell Model to the specified type Name "InPlaceRTB". 
+	this.gridControl1.CellModels.Add("InPlaceRTB", new InPlaceRichTextCellModel(this.gridControl1.Model));
 
    ~~~
    {:.prettyprint}
 
-
-
    ~~~ vbnet
-
-			//Adds the cell Model to the specified type Name "InPlaceRTB". 
-
-			Me.gridControl1.CellModels.Add("InPlaceRTB", New InPlaceRichTextCellModel(Me.gridControl1.Model))
+	//Adds the cell Model to the specified type Name "InPlaceRTB". 
+	Me.gridControl1.CellModels.Add("InPlaceRTB", New InPlaceRichTextCellModel(Me.gridControl1.Model))
    ~~~
    {:.prettyprint}
 
@@ -44,14 +37,11 @@ To create a cell that contains a hypertext link along with different formatted t
 2. Set the CellType property to "InPlaceRTB".
 
    ### Example
-
-
-
+   
    ~~~ cs
 
-			//Sets the CellType to 'InPlaceRTB'.
-
-			 this.gridControl1(1,1).CellType = "InPlaceRTB"
+	//Sets the CellType to 'InPlaceRTB'.
+	this.gridControl1(1,1).CellType = "InPlaceRTB"
 
 
    ~~~
@@ -60,9 +50,8 @@ To create a cell that contains a hypertext link along with different formatted t
 
 
    ~~~ vbnet
-			//Sets the CellType to 'InPlaceRTB'.
-
-			 Me.gridControl1(1,1).CellType = "InPlaceRTB"
+	//Sets the CellType to 'InPlaceRTB'.
+	Me.gridControl1(1,1).CellType = "InPlaceRTB"
    ~~~
    {:.prettyprint}
 
@@ -75,17 +64,12 @@ To create a cell that contains a hypertext link along with different formatted t
 
    ~~~ cs
 
-				//Assigns the Text property to RTF Text.
-
-				this.gridControl1[1,1].Text = @"{\rtf1\ansi\ansicpg1252\deff0\deftab709{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}}"+
-
-				@"{\colortbl ;\red0\green0\blue255;\red0\green0\blue128;}"+
-
-				@"{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1033\b\f0\fs24 Bold\b0\par"+
-
-				@"\i Italic\i0\par"+
-
-				@"{\field{\*\fldinst{HYPERLINK 'http://www.google.com/' }}{\fldrslt{\cf2\ul www.google.com}}}\cf0\ulnone\f0\fs24\par}";
+	//Assigns the Text property to RTF Text.
+	this.gridControl1[1,1].Text = @"{\rtf1\ansi\ansicpg1252\deff0\deftab709{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}}"+
+	@"{\colortbl ;\red0\green0\blue255;\red0\green0\blue128;}"+
+	@"{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1033\b\f0\fs24 Bold\b0\par"+
+	@"\i Italic\i0\par"+
+	@"{\field{\*\fldinst{HYPERLINK 'http://www.google.com/' }}{\fldrslt{\cf2\ul www.google.com}}}\cf0\ulnone\f0\fs24\par}";
    ~~~
    {:.prettyprint}
 
@@ -93,9 +77,8 @@ To create a cell that contains a hypertext link along with different formatted t
 
    ~~~ vbnet
 
-				//Assigns the text property to RTF Text. 
-
-				Me.gridControl1(1,1).Text = "{\rtf1\ansi\ansicpg1252\deff0\deftab709{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}}"+ "{\colortbl ;\red0\green0\blue255;\red0\green0\blue128;}"+ "{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1033\b\f0\fs24 Bold\b0\par"+ "\i Italic\i0\par"+ "{\field{\*\fldinst{HYPERLINK 'http://www.google.com/' }}{\fldrslt{\cf2\ul www.google.com}}}\cf0\ulnone\f0\fs24\par}"
+	//Assigns the text property to RTF Text.
+	Me.gridControl1(1,1).Text = "{\rtf1\ansi\ansicpg1252\deff0\deftab709{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}}"+ "{\colortbl ;\red0\green0\blue255;\red0\green0\blue128;}"+ "{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1033\b\f0\fs24 Bold\b0\par"+ "\i Italic\i0\par"+ "{\field{\*\fldinst{HYPERLINK 'http://www.google.com/' }}{\fldrslt{\cf2\ul www.google.com}}}\cf0\ulnone\f0\fs24\par}"
 
 				
    ~~~ 

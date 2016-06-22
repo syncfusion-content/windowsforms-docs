@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing-Options | Windows Forms | Syncfusion
-description: printing options 
+title: Printing in GridControl
+description: Printing options in GridControl
 platform: windowsforms
 control: Grid
 documentation: ug
@@ -22,7 +22,6 @@ The following code illustrates how to print column header in GridControl:
 gridControl1.PrintColumnHeader = true;
 
 {% endhighlight %}
-
 
 The following code illustrates how to print column header in GridDataBoundGrid: 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Create-a-Multi-Select-DropDown-Grid-in-a-Ce | Windows Forms | Syncfusion
+title: Cell Types in GridControl
 description: how to create a multi-select dropdown grid in a cell
 platform: windowsforms
 control: Grid

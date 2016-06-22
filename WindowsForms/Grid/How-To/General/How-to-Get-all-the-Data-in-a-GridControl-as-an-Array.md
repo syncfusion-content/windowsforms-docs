@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Get-all-the-Data-in-a-GridControl-as-an-Arr | Windows Forms | Syncfusion
+title: General questions in GridControl
 description: how to get all the data in a gridcontrol as an array
 platform: windowsforms
 control: Grid
@@ -15,11 +15,8 @@ Using an indexer to retrieve grid[row, col].CellValue triggers events(like Query
 
 ### Example
 
-
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 //Accesses data through the GridData object.... 
 GridData gridData = this.gridControl1.Data;
@@ -46,9 +43,7 @@ Console.WriteLine("");
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Accesses data through the GridData object....
    Dim gridData As GridData = Me.gridControl1.Data
@@ -70,18 +65,12 @@ Console.WriteLine("");
    arrayCount += 1
    Else
    Console.Write("empty")
-
    EndIf
-
    j+=1
-
    Loop
-
    Console.WriteLine("")
-
    i+=1
-
    Loop
-
+   
 {% endhighlight  %}
-
+{% endtabs %}

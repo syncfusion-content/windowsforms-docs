@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-To-Resize-Row-Height-Based-On-the-Font-of-Grid | Windows Forms | Syncfusion
+title: Managing Rows and Columns in GridControl 
 description: how to resize row height based on the font of grid cell content
 platform: windowsforms
 control: Grid
@@ -15,6 +15,7 @@ You can resize the rows individually using AllowResizingIndividualRows() method 
 
 The following code illustrates resizing rows based on the grid cell content: 
 
+{% tabs %}
 {% highlight c# %}
 public Form1()
 {
@@ -72,4 +73,4 @@ Private Sub TableControl_ResizingRows(ByVal sender As Object, ByVal e As GridRes
   End If
 End Sub
 {% endhighlight %}
-
+{% endtabs %}
