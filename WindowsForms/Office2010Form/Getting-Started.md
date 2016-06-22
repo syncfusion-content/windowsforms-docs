@@ -11,7 +11,7 @@ documentation: ug
 
 The default forms can be changed into the Office2010 Form by following the below given steps.
 
-1)	Create a WindowsForms project in Visual Studio and refer to the following assemblies.
+1)	Create a Window Forms project in Visual Studio and refer to the following assemblies.
 
    * Syncfusion.Shared.Base.dll
    

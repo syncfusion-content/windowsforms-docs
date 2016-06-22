@@ -15,7 +15,7 @@ The TileLayout can be created through designer or code. The following sections d
 
 To create TileLayout through designer.
 
-1) Create a WindowsForms project in Visual Studio and refer to the following assemblies.
+1) Create a Windows Forms project in Visual Studio and refer to the following assemblies.
 
   * Syncfusion.Grid.Windows.dll
   * Syncfusion.Grid.Base.dll

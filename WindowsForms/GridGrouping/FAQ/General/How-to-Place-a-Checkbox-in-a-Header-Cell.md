@@ -11,7 +11,7 @@ documentation: ug
 
 A CheckBox can be placed in a header cell of the GridGroupingControl by handling QueryCellStyleInfo event. The value of the check box has to be stored in any data type and SaveCellText handler saves the value from the grid. To get this working, you need to cancel sorting of the header cell by handling TableControlCellClick event.
 
-In the TableControl.MouseUp event handler, CellRenderer's mouseup has to be raised. By default, selectcells MouseController calls CellRenderer's MouseUp, which in turn raises CheckBoxClick. DragGroupHeader MouseController, which is for the header cells and does not call Renderer's mouseup. So you have to explicitly call Renderer's Mouseup from TableControl's Mouseup checking for MouseController type. Refer to the attached sample for more details.
+In the TableControl.MouseUp event handler, CellRenderer's MouseUp has to be raised. By default, SelectCells MouseController calls CellRenderer's MouseUp, which in turn raises CheckBoxClick. DragGroupHeader MouseController, which is for the header cells and does not call Renderer's MouseUp. So you have to explicitly call Renderer's MouseUp from TableControl's MouseUp checking for MouseController type. Refer to the attached sample for more details.
 
 ## Example
 

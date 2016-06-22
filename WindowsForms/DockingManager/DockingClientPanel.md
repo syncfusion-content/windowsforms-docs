@@ -11,7 +11,7 @@ documentation: ug
 
 # DockingClientPanel
 
-A premise of any docking windows implementation is the existence of a client window the bounds of which vary at run-time as windows get docked or undocked. This paradigm is extremely well suited for MDI type forms where the MDIClient window gets resized / relocated in synchronization with changes in the docking windows layout. 
+A premise of any docking windows implementation is the existence of a client window the bounds of which vary at run-time as windows get docked or undone. This paradigm is extremely well suited for MDI type forms where the MDIClient window gets resized / relocated in synchronization with changes in the docking windows layout. 
 
 Child controls located within the MDIClient window are thus always assured of a static spatial relationship with the parent container. 
 

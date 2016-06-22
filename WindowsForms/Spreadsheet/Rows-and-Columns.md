@@ -144,7 +144,7 @@ Spreadsheet provides support for Freeze panes to keep an area of a worksheet vis
 
 ## Unfreeze Rows and Columns
 
-Spreadsheet provides support to unfreeze the freezed panes in the worksheet of Spreadsheet.
+Spreadsheet provides support to unfreeze the freeze panes in the worksheet of Spreadsheet.
 
 {% tabs %}
 {% highlight c# %}

@@ -1987,7 +1987,7 @@ Run the application to see the GridGroupingControl display the data from the MDB
 ![](Data-Binding_images/Data-Binding_img15.jpeg)
 
 **Sample Location:**
-&lt;Insta	lled_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\GettingStarted\
+&lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\GettingStarted\
 Data Binding
 
 #### Binding MDB File by using Visual Studio 2008

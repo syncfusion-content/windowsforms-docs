@@ -9,7 +9,7 @@ documentation: ug
 
 # How to set Layout Group location in TileLayout?
 
-We can customize the Layout Group location by using the MainLayout propertly in TileLayout.
+We can customize the Layout Group location by using the MainLayout property in TileLayout.
 
 The alignment of the Layout can be Near, Center and Far as in the below code snippet.
 

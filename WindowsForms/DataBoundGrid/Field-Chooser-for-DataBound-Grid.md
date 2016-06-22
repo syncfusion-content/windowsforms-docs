@@ -70,9 +70,11 @@ Adding Field Chooser for GridDataBoundGrid
 
 
 
+
 			Dim fChooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
 
 			            fChooser.WireGrid(Me.GridDataBoundGrid1)
+
 
 
 
@@ -95,5 +97,5 @@ Adding Field Chooser for GridDataBoundGrid
 
    ![](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img3.png) 
 
-   {:.prettyprint}
 
+   {:.prettyprint}

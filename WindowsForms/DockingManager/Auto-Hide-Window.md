@@ -57,7 +57,7 @@ When the AutoHidden Tabs overflow onto the side panel, ScrollButton is added to 
 
 ## Full Caption in AutoHide Mode
 
-Create a docked window with two ListBoxs. Dock the controls. Tab the controls and set the **FullCaptionInAutoHideMode** property. Setting this property to true, will display the full caption text in the auto hidden tab's page. It displays full caption within the application if necessary with a scrollbar, so that end user can scroll and view the hidden tab’s full caption.
+Create a docked window with two ListBoxes. Dock the controls. Tab the controls and set the **FullCaptionInAutoHideMode** property. Setting this property to true, will display the full caption text in the auto hidden tab's page. It displays full caption within the application if necessary with a scrollbar, so that end user can scroll and view the hidden tab’s full caption.
 
 {% tabs %}
 

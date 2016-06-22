@@ -50,19 +50,6 @@ Spreadsheet provides support to hide and unhide the worksheets in a workbook.
 {% endhighlight %}
 {% endtabs %}
 
-## Rename a worksheet
-
-Spreadsheet provides support to rename a worksheet in the workbook by using `RenameSheet` method. After invoking this method, the sheet tab enters into editing mode and now the users can change the name of the sheet in the tab. 
-
-{% tabs %}
-{% highlight c# %}
-
-//Rename sheet
- spreadsheet.RenameSheet("Sheet1");
- 
-{% endhighlight %}
-{% endtabs %}
-
 ## Protection
 
 ### Protecting a worksheet
@@ -91,7 +78,7 @@ The Protect sheet options are
 
 * DeletingColumns     - Allows the users to delete columns on the protected worksheet.
 
-* Objects             - Allows the users to edit the objects such as Graphic cells like charts,richtextbox, etc.
+* Objects             - Allows the users to edit the objects such as Graphic cells like charts,rich textbox, etc.
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +181,7 @@ Occurs when the workbook is to be created in Spreadsheet.</td></tr>
 <tr>
 <td>
 {{ '[WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookLoaded_EV.html) ' | markdownify }}</td><td>
-Occur when the workbook is loadeded in Spreadsheet.</td></tr>
+Occur when the workbook is loaded in Spreadsheet.</td></tr>
 <tr>
 <td>
 {{ '[WorksheetAdding](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetAdding_EV.html) ' | markdownify }}
