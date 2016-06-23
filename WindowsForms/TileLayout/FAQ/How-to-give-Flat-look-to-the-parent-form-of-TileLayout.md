@@ -10,7 +10,7 @@ documentation: ug
 
 # How to give Flat look to the parent form of TileLayout? 
 
-We can give the Flat look to the parent form by using the property named SetParenFormFlat.
+We can give the Flat look to the parent form by using the property named SetParentFormFlat.
 
 {% tabs %}
 

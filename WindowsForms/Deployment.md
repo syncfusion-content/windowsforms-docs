@@ -12,7 +12,7 @@ documentation: ug
 
 ## Copy Local
 
-Copying assembly in local folder is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to `True`. So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the EXE, dll and xml files to the client machines similar to that of manual copy.
+Copying assembly in local folder is supported by the Syncfusion assembly reference in the Solutions Explorer. It can be achieved by setting its Copy Local property of the reference to `True`. So, that the Syncfusion assemblies are copied to the Release/Bin, Debug/Bin folders. This deployment consists of copying the EXE, assembly and XML files to the client machines similar to that of manual copy.
 
 ![](Installation-And-Deployment_images/Deployment_img1.png)
 

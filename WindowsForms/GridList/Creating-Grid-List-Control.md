@@ -9,7 +9,7 @@ documentation: ug
 
 # Creating Grid List Control
 
-This section will provide step-by-step procedure to create a Grid List control through designer and through programmatical approach in a .NET application.
+This section will provide step-by-step procedure to create a Grid List control through designer and through programmatic approach in a .NET application.
 
 ## Through Designer
 

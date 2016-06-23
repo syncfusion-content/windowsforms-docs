@@ -32,7 +32,7 @@ Dim dhost As Syncfusion.Windows.Forms.Tools.DockHost = Me.listView1.Parent as Sy
 
 {% endtabs %}
 
-* Access the DockHost's InternalController and get its current serialization information through the GetSerCurrIndo() method.
+* Access the DockHost's InternalController and get its current serialization information through the GetSerCurrInfo() method.
 
 {% tabs %}
 

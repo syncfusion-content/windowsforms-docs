@@ -13,7 +13,7 @@ This section discusses the library functions that are shipped in the Essential C
 
 ## ABS
 
-Returns the absolute value of a number. The absolute value of a non-negative number is the number itself. Theabsolute value of a negative number is -1 times the number.
+Returns the absolute value of a number. The absolute value of a non-negative number is the number itself. The absolute value of a negative number is -1 times the number.
 
 #### Syntax:
 
@@ -396,7 +396,7 @@ Choose(index, valuearray)
 
 where,
 
-* index is to specify the index from where you want to retrive the value.
+* index is to specify the index from where you want to retrieve the value.
 * valuearray is the array of value from where you want to take the value.
 
 ## Column
@@ -883,7 +883,7 @@ where,
 ## EVEN
 
 
-Returns the numberrounded upto thenearest even integer.
+Returns the number rounded upto the nearest even integer.
 
 #### Syntax:
 
@@ -982,7 +982,7 @@ False(stringvalue)
 
 where:
 
-* stringvalue is toprovide an empty string.
+* stringvalue is to provide an empty string.
 
 ## FDIST
 
@@ -1020,7 +1020,7 @@ F is a random variable that has an F distribution with degrees_freedom1 and degr
 
 ## Find
 
-The Find finction finds  a portion of a string from a particular text and returns the location of the string.
+The Find function finds  a portion of a string from a particular text and returns the location of the string.
 
 #### Syntax:
 
@@ -1196,7 +1196,7 @@ This is optional. The FV function assumes Type value as 0, when this parameter i
 
 ##  GAMMADIST
 
-Returns thegamma distribution. 
+Returns the gamma distribution. 
 
 #### Syntax:
 
@@ -1911,7 +1911,7 @@ Stats  : A logical value specifying whether to return additional regression stat
 
 ## LOGINV
 
-Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters mean and standard_dev. If p = LOGNORMDIST(x,...), then LOGINV(p,...) = x.
+Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters mean and standard deviation. If p = LOGNORMDIST(x,...), then LOGINV(p,...) = x.
 
 #### Syntax:
 
@@ -1941,7 +1941,7 @@ standard_dev is the standard deviation of ln(x).
 
 ## LOGNORMDIST
 
-Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed with parameters mean and standard_dev.
+Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed with parameters mean and standard deviation.
 
 #### Syntax:
 
@@ -2005,7 +2005,7 @@ Note:
 
 * The Match function does not distinguish between uppercase and lowercase when searching.
 * If the Match function does not find a match, it returns #N/A error.
-* match_type is optional.  The Match Function assumes match_type as 1 when the parametter is omitted.
+* match_type is optional.  The Match Function assumes match_type as 1 when the parameter is omitted.
 * If the match_type parameter is 0 and a text value, then you can use wildcards in the value parameter.
 
 Where, 
@@ -2124,7 +2124,7 @@ value1, value2, ... are values for which, you want to find the smallest value.
 
 ## MINUTE
 
-Returns theminutes of a time value. The minute is given as an integer, ranging from 0 to 59.
+Returns the minutes of a time value. The minute is given as an integer, ranging from 0 to 59.
 
 #### Syntax:
 
@@ -2582,7 +2582,7 @@ where,
 ## PI
 
 
-Returns the number 3.14159265358979, themathematical constant pi, accurate to 15 digits.
+Returns the number 3.14159265358979, the mathematical constant pi, accurate to 15 digits.
 
 #### Syntax:
 
@@ -3205,7 +3205,7 @@ number is the number for which you want the square root.
 
 ## STANDARDIZE
 
-Returns a normalized value from a distribution characterized by mean and standard_dev.
+Returns a normalized value from a distribution characterized by mean and standard deviation.
 
 #### Syntax:
 
@@ -3761,7 +3761,7 @@ True(stringvalue)
 
 where,
 
-* stringvalue is toprovide an empty string.
+* stringvalue is to provide an empty string.
 
 ## TRUNC
 

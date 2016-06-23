@@ -396,7 +396,7 @@ _(Installed location of the product)\Bin\_
 
 
 
-Uninstallation can be done with the help of the unins000 file available in the installed location. Double-clicking the file uninstalls the Essential QuickTest Professional.
+Uninstallation can be done with the help of the unins000 file available in the installed location. Double-clicking the file uninstall the Essential QuickTest Professional.
 
 ### Assembly information
 

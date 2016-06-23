@@ -11,18 +11,18 @@ documentation: ug
 Essential Grouping lets you add your own functions to a function library which can be used in an expression field. In this manner, you can do custom calculations in expressions. This is a two-step process which is given below:
 1. Register the function name and a delegate with the grouping engine.
 2. Implement a method that does your calculation.
-   In the code given below, we add a method named 'Func' that takes two arguments and performs a certain calculation on those arguments.
+   In the code given below, we add a method named 'New_Function' that takes two arguments and performs a certain calculation on those arguments.
 
 {% highlight C# %}
  
 // Step 1
-// Add function named Func that uses a delegate named ComputeFunc to define a custom calculation.
+// Add function named New_Function that uses a delegate named ComputeFunc to define a custom calculation.
 ExpressionFieldEvaluator evaluator = this.groupingEngine.TableDescriptor.ExpressionFieldEvaluator;
-evaluator.AddFunction("Func", new ExpressionFieldEvaluator.LibraryFunction(ComputeFunc));
+evaluator.AddFunction("New_Function", new ExpressionFieldEvaluator.LibraryFunction(ComputeFunc));
  
 // Sample usage in an Expression column.
 this.groupingEngine.TableDescriptor.ExpressionFields.Add("test");
-this.groupingEngine.TableDescriptor.ExpressionFields["test"].Expression = "Func([Col1], [Col2])";
+this.groupingEngine.TableDescriptor.ExpressionFields["test"].Expression = "New_Function([Col1], [Col2])";
  
 //...
  
@@ -50,13 +50,13 @@ return "";
 {% highlight vbnet %}
  
 ' Step 1
-' Add function named Func that uses a delegate named ComputeFunc to define a custom calculation.
+' Add function named New_Function that uses a delegate named ComputeFunc to define a custom calculation.
 Dim evaluator As ExpressionFieldEvaluator = Me.groupingEngine.TableDescriptor.ExpressionFieldEvaluator
-evaluator.AddFunction("Func", New ExpressionFieldEvaluator.LibraryFunction(ComputeFunc))
+evaluator.AddFunction("New_Function", New ExpressionFieldEvaluator.LibraryFunction(ComputeFunc))
  
 ' Sample usage in an Expression column.
 Me.groupingEngine.TableDescriptor.ExpressionFields.Add("test")
-Me.groupingEngine.TableDescriptor.ExpressionFields("test").Expression = "Func([Col1], [Col2])"
+Me.groupingEngine.TableDescriptor.ExpressionFields("test").Expression = "New_Function([Col1], [Col2])"
  
 ' Step 2
 ' Define ComputeFunc that returns the absolute value of the 1st arg minus 2 * the 2nd arg.

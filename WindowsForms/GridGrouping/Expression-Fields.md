@@ -334,7 +334,7 @@ Checks if a date field value between two values is listed in the right-hand oper
 Between time 
 </td>
 <td>
-betweentime
+between time
 </td>
 <td>
 Checks if a time in the date field value between the two values is listed in the right-hand operand. For example, [time] between {04:00:00 PM, 05:00:00 PM} returns 1 for any record whose date field is greater than or equal to 04:00 and less than 05:00. The time will be calculated along with date for between time.

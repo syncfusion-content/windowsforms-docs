@@ -137,7 +137,7 @@ Me.dockingManager1.SaveDockState(serializer, this.listBox1)
 
 ## Serialize the dynamically added children
 
-By default, DockingManager cannot de-serialize its Saved Layout properly, when its child collection is modified after DockState is saved.
+By default, DockingManager cannot deserialize its Saved Layout properly, when its child collection is modified after DockState is saved.
 
 Since the DockingManager state persistence feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
 

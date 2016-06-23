@@ -203,31 +203,6 @@ Me.gridControl1(2, 2).CheckBoxOptions = New GridCheckBoxCellInfo("True", "False"
 
 ![](Cell-Types_images/Cell-Types_img7.png)
 
-### Alignment in RadioButton
-GridControl includes support for displaying radio button in both vertical and horizontal order. By default the `RadioButton` cell aligns the buttons in horizontal order. The display of order can be changed by using the RadioButtonAlignment property. 
-
-{% tabs %}
-{% highlight c# %}
-
-// Displays radio buttons vertically.
-this.gridControl1[1, 1].RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Vertical;
-
-// Displays radio buttons horizontally.
-this.gridControl1[2, 2].RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Horizontal;
-
-{% endhighlight %}
-{% highlight vb %}
-
-'Displays radio buttons vertically.
-Me.gridControl1(1, 1).RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Vertical
-
-'Displays radio buttons horizontally.
-Me.gridControl1(2, 2).RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Horizontal
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Cell-Types_images/Cell-Types_img8.png)
 
 ## ComboBox Cell Type
 Adding a combo box to a grid cell, will enable to show a pop up displaying an associated list of choices. The combo box can be populated in several ways by setting the appropriate `GridStyleInfo` properties. 
@@ -501,6 +476,32 @@ Me.gridControl1(3, 1).CellType = "RadioButton"
 
 ![](Cell-Types_images/Cell-Types_img12.png)
 
+### Alignment in RadioButton
+GridControl includes support for displaying radio button in both vertical and horizontal order. By default the `RadioButton` cell aligns the buttons in horizontal order. The display of order can be changed by using the RadioButtonAlignment property. 
+
+{% tabs %}
+{% highlight c# %}
+
+// Displays radio buttons vertically.
+this.gridControl1[1, 1].RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Vertical;
+
+// Displays radio buttons horizontally.
+this.gridControl1[2, 2].RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Horizontal;
+
+{% endhighlight %}
+{% highlight vb %}
+
+'Displays radio buttons vertically.
+Me.gridControl1(1, 1).RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Vertical
+
+'Displays radio buttons horizontally.
+Me.gridControl1(2, 2).RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Horizontal
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Cell-Types_images/Cell-Types_img8.png)
+
 ## ColorEdit Cell Type
 Color Edit cell type will allow to pick up colors and set a color object as the `CellValue`. To do this, set the CellType property as **ColorEdit.**On clicking the ColorEdit cell, a popup will be opened for choosing the desired color.
 
@@ -744,7 +745,7 @@ Me.gridControl1(2, 2) = currencyStyle
 
 ![](Cell-Types_images/Cell-Types_img20.png)
 
-[CurrencyPositivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyPositivePattern.html) and [CurrencyNegtivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyNegativePattern.html) are used to specify the format value for positive and negative currency values respectively. It is of integer type.
+[CurrencyPositivePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyPositivePattern.html) and [CurrencyNegativePattern](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyNegativePattern.html) are used to specify the format value for positive and negative currency values respectively. It is of integer type.
 
 {% tabs %}
 {% highlight c# %}
