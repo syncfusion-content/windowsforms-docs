@@ -26,7 +26,7 @@ To suppress the TableControlCurrentCellKeyDown event, enable the SuppressKeyPres
    ~~~
    {:.prettyprint }
 
-   ~~~ vbnet
+   ~~~ vb
 
 		Private Sub gridGroupingControl1_TableControlCurrentCellKeyDown(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlKeyEventArgs)
 
@@ -84,7 +84,7 @@ To suppress the TableControlCurrentCellKeyDown event, enable the SuppressKeyPres
    ~~~
    {:.prettyprint }
 
-   ~~~ vbnet
+   ~~~ vb
 
 		Protected Overrides Function ProcessCmdKey(ByRef msg As Message, ByVal keyData As Keys) As Boolean
 

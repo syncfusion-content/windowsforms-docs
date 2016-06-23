@@ -11,6 +11,7 @@ documentation: ug
 
 To prevent GridGroupingControl's child table or grandchild table's columns from getting resized, you must handle TableControlResizingColumns event of the grid. In the event handler, check for the e.TableDescriptor.Name and cancel the event by setting e.Cancel to true. The following code snippet cancels resizing the Child table.
 
+ 
 {% highlight c# %}
 
 
@@ -48,7 +49,7 @@ private void gridGroupingControl1_TableControlResizingColumns(object sender,Sync
 }
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

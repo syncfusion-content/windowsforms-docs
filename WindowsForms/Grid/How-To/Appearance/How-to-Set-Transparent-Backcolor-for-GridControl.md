@@ -13,8 +13,6 @@ documentation: ug
 
 Setting the transparent [BackColor](/windowsforms/Grid/Cell-Style-Architecture#backcolor) for a GridControl can be done easily with simple code.
 
-### Example
-
 {% tabs %}
 {% highlight c# %}
 
@@ -28,7 +26,7 @@ this.gridControl1.BackColor = Color.FromArgb(0, SystemColors.Window);
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets up Transparent Background.
 Me.gridControl1.SupportsTransparentBackColor = True

@@ -33,7 +33,7 @@ this.gridcontrol1[1,1].AutoFit=AutoFitOptions.Alphabet;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.gridcontrol1(1,1).AutoFit=AutoFitOptions.Alphabet
 

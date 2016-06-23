@@ -26,7 +26,7 @@ e.ExcelCell.AddComment().Text = style.ExcelTipText;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim gecc As New Syncfusion.GridExcelConverter.GridExcelConverterControl()
 AddHandler gecc.QueryImportExportCellInfo, AddressOf gecc_QueryImportExportCellInfo

@@ -13,8 +13,6 @@ documentation: ug
 
 The GridControl will allow you to place images in cells by specifying style.ImageIndex and style.ImageList value for the cell, provided style.CellType is either "Static" or "Text Box". So, to make your header cell hold an icon, make it "Static" and set the following properties.
 
-### Example
-
 {% tabs %}
 {% highlight c# %}
 
@@ -26,7 +24,7 @@ this.gridControl1[0,3].ImageIndex = 1;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 'GridControl. 
 Me.gridControl1(0,3).CellType = "Static"
 Me.gridControl1(0,3).CellAppearance = GridCellAppearance.Raised

@@ -11,6 +11,7 @@ documentation: ug
 
 By default, any changes made to GridGroupingControl will affect the underlying data source. In order to cancel the changes, you can make use of RejectChanges method to reject the recent changes made to the data source. Also, ensure that AcceptChanges method is called after date source is filled, as RejectChanges method will roll back all the changes made to the data source since the last time the AcceptChanges method was called.
 
+ 
 {% highlight c# %}
 
 
@@ -27,7 +28,7 @@ dt.RejectChanges();
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

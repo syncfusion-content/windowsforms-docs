@@ -13,8 +13,6 @@ documentation: ug
 
 Use the Borders property of [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) to change the style and the appearance of the grid cells border. Each border side of the cell can be configured individually with GridBorder value. There is a BorderMargins property to control margins on all four sides. 
 
-### Example
-
 {% tabs %}
 {% highlight c# %}
 
@@ -34,7 +32,7 @@ this.gridControl1.RowStyles[4].BorderMargins.Bottom = 26;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Borders on all four sides of the cell.
 Me.GridControl1.RowStyles(1).Borders.All = New GridBorder(GridBorderStyle.Solid, Color.Red, GridBorderWeight.Thin)

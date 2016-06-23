@@ -16,6 +16,7 @@ In the TableControl.MouseUp event handler, CellRenderer's MouseUp has to be rais
 ## Example
 
 
+ 
 {% highlight c# %}
 
 
@@ -47,7 +48,7 @@ private void TableControl_MouseUp(object sender, MouseEventArgs e)
 
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

@@ -23,7 +23,7 @@ void grid_CurrentCellCloseDropDown(object sender, PopupClosedEventArgs e)
 //Code...
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'code...
 AddHandler gridControl1.CurrentCellCloseDropDown, AddressOf grid_CurrentCellCloseDropDown

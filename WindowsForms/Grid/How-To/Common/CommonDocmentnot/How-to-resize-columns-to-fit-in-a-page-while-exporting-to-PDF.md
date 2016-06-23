@@ -13,6 +13,7 @@ To resize columns to fit in a page, you can use property ExportRange of GridPDFC
 
 ## Example
 
+ 
 {% highlight c# %}
 
     GridPDFConverter pdfConvertor = new GridPDFConverter();
@@ -59,7 +60,7 @@ To resize columns to fit in a page, you can use property ExportRange of GridPDFC
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

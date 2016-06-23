@@ -13,8 +13,6 @@ documentation: ug
 
 The embedded text box control gets the mouse actions while the text box is active. You can subscribe to the embedded text box's events inside a cell by accessing it through the cell's renderer. 
 
-#### Example
-
 {% tabs %}
 {% highlight c# %}
 

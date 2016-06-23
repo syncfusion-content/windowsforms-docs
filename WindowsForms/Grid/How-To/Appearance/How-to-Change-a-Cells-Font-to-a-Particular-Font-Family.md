@@ -21,8 +21,6 @@ gridControl1[rowIndex, colIndex].Font.Facename = "Arial";
 {% endhighlight  %}
 You can also change several font properties in one statement by using font class’s SetXXX method which, will return a reference to the font object. 
 
-### Example
-
 {% tabs %}
 {% highlight c# %}
 
@@ -36,7 +34,7 @@ gridControl1[rowIndex, colIndex].Font.SetFacename("Arial").SetBold(true).SetSize
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Snippet 1. 
 gridControl1(rowIndex, colIndex).Font.Facename = "Arial"

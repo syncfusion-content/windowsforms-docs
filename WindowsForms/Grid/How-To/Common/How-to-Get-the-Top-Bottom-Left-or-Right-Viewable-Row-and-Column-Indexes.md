@@ -13,8 +13,6 @@ documentation: ug
 
 Use the following variables to get the viewable row and column indexes.
 
-#### Example
-
 {% tabs %}
 {% highlight c# %}
 

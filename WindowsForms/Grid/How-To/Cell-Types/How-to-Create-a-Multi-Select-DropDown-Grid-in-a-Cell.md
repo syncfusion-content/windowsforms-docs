@@ -42,7 +42,7 @@ To have a cell that has a multi-selection dropdown grid, you must use a derived 
    {:.prettyprint}
 
 
-   ~~~ vbnet
+   ~~~ vb
 
 						'Creates an instance of the DropDownGrid Model.
 
@@ -78,7 +78,7 @@ To have a cell that has a multi-selection dropdown grid, you must use a derived 
 
 
 
-   ~~~ vbnet
+   ~~~ vb
 					'Sets the CellType to 'InPlaceRTB'.
 
 					Me.gridControl1(4,2).CellType = "MultiSelectCombo"

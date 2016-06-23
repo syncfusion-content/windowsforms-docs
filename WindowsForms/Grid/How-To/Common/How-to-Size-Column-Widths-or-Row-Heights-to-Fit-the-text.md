@@ -13,9 +13,6 @@ documentation: ug
 
 To size columns so that all the text is visible, use grid.Model.ColWidths.ResizeToFit method. This method will take two arguments, GridRangeInfo object that will specify the cells that are to be resized and GridResizeToFitOptions setting that will specify certain behaviors. The second setting controls whether you allow the cell to shrink when it is resized and whether you want to include any header cells in the resizing. There is also grid.Model.RowHeights.ResizeToFit method to size row heights.
 
-
-#### Example
-
 {% tabs %}
 {% highlight c# %}
 

@@ -13,8 +13,6 @@ documentation: ug
 
 In GridControl, values in header cells are set just as in any other cell. 
 
-### Example
-
 Use an indexer on your GridControl with the row index set to 0.
 
 {% tabs %}
@@ -25,7 +23,7 @@ gridControl1[0, 5].Text = "HeaderTextForColumn5";
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets Text property in the 5th column header cell.
 GridControl1(0, 5).Text = "HeaderTextForColumn5"

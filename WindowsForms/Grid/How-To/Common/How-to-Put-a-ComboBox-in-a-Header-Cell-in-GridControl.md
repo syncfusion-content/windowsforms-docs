@@ -15,8 +15,6 @@ documentation: ug
 
 To place a ComboBox in a header cell of GridControl, you must set CellType of the header to ComboBox and assign a valid data source (ChoiceList or DataSource).
 
-#### Example
-
 {% tabs %}
 {% highlight c# %}
 

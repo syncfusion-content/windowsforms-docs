@@ -18,8 +18,6 @@ The control type of a cell is part of the cell style and is determined by GridSt
 
 In the second case, use GridStyleInfo.DataSource, DisplayMember and ValueMember properties to set datasource for the drop list. In addition to setting the CellType, ChoiceList, datasource, DisplayMember and ValueMember, the DropDownStyle property of [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview)-controls the editing behavior of the combo box cell. You can also use GridStyleInfo.ShowButton property to control when the combo box button is visible. 
 
-### Example
-
 Here is the code that will set cells 4,2 to a combo box by setting the items in the combo box through styles ChoiceList property.
 
 {% tabs %}

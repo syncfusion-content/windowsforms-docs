@@ -13,9 +13,6 @@ documentation: ug
 
 A style object holds all the information that affects cells appearance. One property contained in the style object is its CellValue. It is this property that you have to set in order to place a value in a cell. Another property called GridStyleInfo.Text will allow you to set the value of a cell using a string. Text and [CellValue](/windowsforms/Grid/Cell-Style-Architecture#text-and-cellvalue) are related properties and setting one of these properties will also set the other.
 
-
-### Example
-
 Use two-parameter indexer (rowIndex, colIndex) on your GridControl object to get a reference to that particular cells style, GridStyleInfo object.
 
 {% tabs %}
@@ -31,7 +28,7 @@ rowIndex++;
 gridControl1[rowIndex, colIndex].CellValue = 3.14159;
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets the CellValues of the cell.
 Dim rowIndex As Integer = 1

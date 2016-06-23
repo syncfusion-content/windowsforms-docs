@@ -13,8 +13,6 @@ documentation: ug
 
 Changing a column's width is simple whether you are using the designer or code. In the designer, use ColWidthsEntries collection. In code, use GridControl.ColWidths collection to specify the width of a column. 
 
-### Example
-
 {% tabs %}
 {% highlight c# %}
 

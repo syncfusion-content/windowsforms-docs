@@ -11,35 +11,20 @@ documentation: ug
 
 The TableDescriptor object has VisibleColumns collection that you can use to control the columns that are visible. You can hide or unhide columns using the following code.
 
-## Example
-
-
+ 
 {% highlight c# %}
-
-
 //Hides.
-
 this.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("Col1");
 
-
-
 //Unhides.
-
 this.gridGroupingControl1.TableDescriptor.VisibleColumns.Add("Col1");
 
 {% endhighlight  %}
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 'Hides.
-
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("Col1")
 
-
-
 'Unhides.
-
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Add("Col1")
 {% endhighlight  %}

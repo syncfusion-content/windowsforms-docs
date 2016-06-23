@@ -13,8 +13,6 @@ documentation: ug
 
 This can be done in GridControl by handling virtual events QueryCellInfo, SaveCellInfo, QueryRowCount, QueryColCount. Here GridControl.Data property is used.
 
-### Example
-
 {% tabs %}
 {% highlight c# %}
 

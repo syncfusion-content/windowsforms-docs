@@ -36,7 +36,7 @@ private void gridControl1_MouseDown(object sender, MouseEventArgs e)
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub gridControl1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
 If e.Button = MouseButtons.Right Then

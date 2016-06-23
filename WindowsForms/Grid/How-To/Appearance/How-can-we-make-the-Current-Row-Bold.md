@@ -51,7 +51,7 @@ private void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewSty
 }
 {% endhighlight   %}
 
-{% highlight vbnet  %}
+{% highlight vb  %}
 //Adds the handlers...
 AddHandler Me.gridControl1.CurrentCellDeactivated, New GridCurrentCellDeactivatedEventHandler(AddressOf gridControl1_CurrentCellDeactivated)
 AddHandler Me.gridControl1.PrepareViewStyleInfo, New GridPrepareViewStyleInfoEventHandler(AddressOf gridControl1_PrepareViewStyleInfo)

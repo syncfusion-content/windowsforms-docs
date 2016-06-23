@@ -13,8 +13,6 @@ documentation: ug
 
 It is simple to use the ColorEdit control to specify a cell's value. Just set the [CellType](/windowsforms/grid/feature-summary#cell-types) property in the cell style to "ColorEdit" and set the text property to an appropriate value.
 
-### Example
-
 {% tabs %}
 {% highlight c# %}
 

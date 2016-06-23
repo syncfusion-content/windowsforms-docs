@@ -1,6 +1,6 @@
 ---
 layout: post
-title: General questions in GridControl
+title: How-to-Exclude-Hidden-Rows-and-Column-for-Scrollin | Windows Forms | Syncfusion
 description: how to exclude hidden rows and column for scrolling? 
 platform: windowsforms
 control: Grid
@@ -13,39 +13,64 @@ When scrolling the grid, hidden rows and columns are considered as existing rows
 
 The following code illustrates how to exclude hidden columns for scrolling: 
 
-{% tabs %}
 {% highlight c# %}
 
+
+
 private void Form1_Load(object sender, System.EventArgs e)
+
 {
+
 this.gridControl1.HScrollPixel = true;
+
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
+
+
 
 Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    Me.gridControl1.HScrollPixel = True;
-End Sub
-{% endhighlight  %}
-{% endtabs %}
 
+
+
+      Me.gridControl1.HScrollPixel = True;
+
+
+
+    End Sub
+{% endhighlight  %}
 The following code illustrates how to exclude hidden rows for scrolling: 
 
-{% tabs %}
 {% highlight c# %}
 
+
+
 private void Form1_Load(object sender, System.EventArgs e)
+
 {
+
 this.gridControl1.VScrollPixel = true;
+
 }
+
 {% endhighlight  %}
 
 {% highlight vb %}
 
+
+
 Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+
+
       Me.gridControl1.VScrollPixel = True;
+
+
+
+
     End Sub
-{% endhighlight  %}
-{% endtabs %}
+
+	  {% endhighlight  %}
+

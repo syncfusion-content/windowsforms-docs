@@ -21,12 +21,12 @@ gridControl1.Model = GridModel.LoadSoap(s);
 gridControl2.Model = GridModel.LoadSoap(s);
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim s As MemoryStream = New MemoryStream()
 gridControl1.Model.SaveSoap(s) 
 s.Position = 0
 gridControl1.Model = GridModel.LoadSoap(s)
 gridControl2.Model = GridModel.LoadSoap(s)
-
+{% endhighlight %}
 {% endtabs %}

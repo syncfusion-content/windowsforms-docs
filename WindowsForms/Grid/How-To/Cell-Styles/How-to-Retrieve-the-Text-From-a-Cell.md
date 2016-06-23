@@ -13,8 +13,6 @@ documentation: ug
 
 To retrieve text from a cell, simply use [Text](/windowsforms/grid/cell-style-architecture#text-and-cellvalue) property of the cells style object, which is obtained through an indexer in the GridControl.
 
-### Example
-
 {% tabs %}
 {% highlight c# %}
 
@@ -23,7 +21,7 @@ string cellText = gridControl1[2, 3].Text;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Access the cell's Text property to retrieve the text from the cell.
 Dim cellText As String = gridControl1(2,3).Text

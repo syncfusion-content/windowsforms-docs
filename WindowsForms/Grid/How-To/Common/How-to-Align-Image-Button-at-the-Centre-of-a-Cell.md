@@ -26,7 +26,7 @@ protected override Rectangle OnLayout(int rowIndex, int colIndex, GridStyleInfo 
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 Protected Overrides Function OnLayout(ByVal rowIndex As Integer, ByVal colIndex As Integer, ByVal style As GridStyleInfo, ByVal innerBounds As Rectangle, ByVal buttonsBounds As Rectangle()) As Rectangle            
 	TraceUtil.TraceCurrentMethodInfo(rowIndex, colIndex, style, innerBounds, buttonsBounds)            
 	Dim rect As Rectangle = GridUtil.CenterInRect(innerBounds, Me.Model.ButtonBarSize)            

@@ -41,7 +41,7 @@ private void menuItem13_Click(object sender, System.EventArgs e)
 		
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub menuItem13_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         If Not (Me.grid Is Nothing) Then

@@ -50,7 +50,7 @@ targetGrid.Selections.Ranges.AddRange(ranges);
 }
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Sub gridControl1_SelectionChanged(ByVal sender As Object, ByVal e As GridSelectionChangedEventArgs)
 	Synchronize_SelectionChanged(gridControl2, gridControl1, e)

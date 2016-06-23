@@ -13,8 +13,6 @@ documentation: ug
 
 Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/windowsforms/Grid/Cell-Style-Architecture#gridrangeinfo) object to change the appearance of a range of cells. 
 
-### Example
-
 To set the [BackColor](/windowsforms/grid/cell-style-architecture#backcolor) and TextColor for a range of cells, use the below given code snippet.
 
 {% tabs %}
@@ -29,7 +27,7 @@ style.BackColor = Color.LightBlue;
 gridControl1.ChangeCells(GridRangeInfo.Cells(1, 1, 4, 5), style);
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Style settings.
 Dim style As New GridStyleInfo()

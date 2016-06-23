@@ -13,9 +13,6 @@ documentation: ug
 
 To make changes to individual cells (header cells or otherwise), use an indexer on GridControl. In a GridControl with default headers, column headers are row zero and row headers are column zero. Given below is the code that will change a column header.
 
-### Example
-
-
 {% tabs %}
 {% highlight c# %}
 
@@ -30,7 +27,7 @@ gridControl1[0, 3].Text = "Sales";
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 //Changes the font properties of the header cell.
 GridControl1(0, 3).Font.Italic = True

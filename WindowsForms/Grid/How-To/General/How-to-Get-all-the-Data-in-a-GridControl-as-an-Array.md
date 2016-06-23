@@ -1,6 +1,6 @@
 ---
 layout: post
-title: General questions in GridControl
+title: How-to-Get-all-the-Data-in-a-GridControl-as-an-Arr | Windows Forms | Syncfusion
 description: how to get all the data in a gridcontrol as an array
 platform: windowsforms
 control: Grid
@@ -13,10 +13,9 @@ documentation: ug
 
 Using an indexer to retrieve grid[row, col].CellValue triggers events(like QueryCellInfo). In a GridControl where the data is stored in the grid, you can avoid triggering of these events (which slow things down) by accessing GridData directly. 
 
-### Example
-
-{% tabs %}
 {% highlight c# %}
+
+
 
 //Accesses data through the GridData object.... 
 GridData gridData = this.gridControl1.Data;
@@ -45,6 +44,8 @@ Console.WriteLine("");
 
 {% highlight vb %}
 
+
+
 'Accesses data through the GridData object....
    Dim gridData As GridData = Me.gridControl1.Data
    Dim numRows As Integer = gridData.RowCount
@@ -65,12 +66,18 @@ Console.WriteLine("");
    arrayCount += 1
    Else
    Console.Write("empty")
+
    EndIf
+
    j+=1
+
    Loop
+
    Console.WriteLine("")
+
    i+=1
+
    Loop
-   
+
 {% endhighlight  %}
-{% endtabs %}
+

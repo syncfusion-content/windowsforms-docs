@@ -37,7 +37,7 @@ MessageBox.Show("An error occurred attempting to print the grid - " + ex.Message
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub button2_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button2.Click
 Me.gridControl1.Model.Properties.PrintRowHeader = False

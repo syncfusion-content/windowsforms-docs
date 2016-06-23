@@ -13,8 +13,6 @@ documentation: ug
 
 The grid.Selections.Ranges is GridRangeInfoList object, which holds the currently selected ranges. 
 
-#### Example
-
 You can iterate through this list retrieving GridRangeInfo objects with code such as.
 
 {% tabs %}

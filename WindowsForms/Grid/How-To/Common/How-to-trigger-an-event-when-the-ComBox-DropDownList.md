@@ -38,5 +38,5 @@ Dim rend As GridComboBoxCellRenderer = TryCast(e.TableControl.CurrentCell.Render
   End If
 'Code.. 
 {% endhighlight %}
-{% tabs %}
+{% endtabs %}
 

@@ -32,7 +32,7 @@ this.gridControl1[1,1].CellValue = true;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets the cell type as Checkbox.
 Me.gridControl1(1, 1).CellType = "CheckBox" 

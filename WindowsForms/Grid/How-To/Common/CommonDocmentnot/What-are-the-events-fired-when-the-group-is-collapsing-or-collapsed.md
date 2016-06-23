@@ -11,6 +11,7 @@ documentation: ug
 
 Following are the events triggered when the group is collapsing or collapsed.
 
+ 
 {% highlight c# %}
 
 
@@ -54,7 +55,7 @@ private void gridGroupingControl1_GroupCollapsed(object sender, Syncfusion.Group
 }
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

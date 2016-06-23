@@ -28,7 +28,7 @@ this.gridControl1.ColStyles[6].TextAlign = GridTextAlign.Right;
 this.gridControl1.ColStyles[8].VerticalAlignment = GridVerticalAlignment.Bottom;
 
 {% endhighlight   %}
-{% highlight vbnet  %}
+{% highlight vb  %}
 
 'Right aligns the cell values of column 3 horizontally.
 Me.gridControl1.ColStyles(3).HorizontalAlignment = GridHorizontalAlignment.Right
