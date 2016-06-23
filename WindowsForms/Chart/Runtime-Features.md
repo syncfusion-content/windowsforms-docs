@@ -111,7 +111,7 @@ Specifies the zoom action on the corresponding axis. The options are,{{ '_Pannin
 </table>
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.MouseAction = ChartMouseAction.Panning;
 
@@ -131,7 +131,7 @@ Me.chartControl1.PrimaryXAxis.ZoomActions = ChartZoomingAction.Panning
 Me.chartControl1.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 N> Remember to enable zooming on both the axis using EnableXZooming and EnableYZooming properties, before trying out the above panning feature. You cannot pan a chart without zooming it.
@@ -149,7 +149,7 @@ It is possible to show formatted axes labels for a zoomed chart. EssentialChart'
 * SmartDateZoomMinuteLevelLabelFormat
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.SmartDateZoom = true;
 
@@ -164,6 +164,7 @@ Me.chartControl1.PrimaryXAxis.SmartDateZoom = True
 Me.chartControl1.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Runtime-Features_images/Runtime-Features_img5.jpeg)
 
@@ -308,7 +309,7 @@ This command enables panning of the zoomed chart.</td></tr>
 </table>
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 ChartToolBarCommandItem x1 = new ChartToolBarCommandItem();
 
@@ -351,6 +352,7 @@ x1.Checked = True
 Me.chartControl1.ToolBar.Items.Add(x1)
 
 {% endhighlight %}
+{% endtabs %}
   
 ![](Runtime-Features_images/Runtime-Features_img8.jpeg)
 
@@ -497,7 +499,7 @@ Specifies the docking behavior of the toolbar.Docking - It is dockable on all fo
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.ToolBar.Behavior = ChartDockingFlags.All;
 
@@ -508,6 +510,7 @@ this.chartControl1.ToolBar.Behavior = ChartDockingFlags.All;
 Me.chartControl1.ToolBar.Behavior = ChartDockingFlags.All
 
 {% endhighlight %}
+{% endtabs %}
 
 N> You can display or hide a toolbar while printing a Chart. See Printing And Print Preview topic for more details.
 
@@ -547,7 +550,7 @@ This feature lets you position the mouse pointer at a specific data point in a s
 Interactive Cursor can be implemented by creating an instance of ChartInteractiveCursor with the ChartSeries as its input. Then add the instance to the InteractiveCursors collection as shown below. 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Create a new instance of the ChartInteractiveCursor class and initialize chartseries into it.
 
@@ -586,6 +589,7 @@ Me.chartControl1.ChartArea.InteractiveCursors.Add(cursor1))
 cursor1.Color = Color.Red
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Runtime-Features_images/Runtime-Features_img18.jpeg)
 
@@ -632,7 +636,7 @@ N> The AutoHighlight property should be disabled to enable this chart series hig
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 this.chartControl1.SeriesHighlight = true;
 
@@ -655,6 +659,7 @@ Dim bi As New BrushInfo(GradientStyle.Vertical, Color.Red, Color.Red)
 Me.chartControl1.Series(0).Style.HiddenInterior = New BrushInfo(0, bi
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Runtime-Features_images/Runtime-Features_img21.jpeg)
 
@@ -711,7 +716,7 @@ To add Interactive Cursor to the Chart control:
 Refer to the following code snippets to draw the interactive cursor separately.
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 cursor1 = new ChartInteractiveCursor(this.chartControl1.Series[0]);
 
@@ -734,6 +739,7 @@ cursor1 = New ChartInteractiveCursor(Me.chartControl1.Series(0))
       cursor1.HorizontalCursorColor = Color.Red
 
 {% endhighlight %}
+{% endtabs %}
 
 
 The interactive cursor as described earlier can be set in three different orientations. 
@@ -741,7 +747,7 @@ The interactive cursor as described earlier can be set in three different orient
 To draw the interactive cursor in horizontal orientation, you need to set the cursor orientation to “Horizontal” as shown in the following code snippets:
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal;
 
@@ -752,6 +758,7 @@ cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal;
       cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal
 
 {% endhighlight %}
+{% endtabs %}
 
 
 The same step is repeated for “vertical” and “both” cursor orientations except for the naming “Vertical” and “Both” respectively.
@@ -759,7 +766,7 @@ The same step is repeated for “vertical” and “both” cursor orientations 
 You can also add color(s) to individual interactive cursor. The default color (base color) is Red. You can change the default color by using Color, HorizontalCursorColor, and VerticalCursorColor properties. When you use the Color property, the interactive cursor will be drawn based on the color specified by the Color property (assuming this as base/parent color) regardless of the colors specified for Horizontal and Vertical cursor orientations. This is shown in the following code snippets:
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
       cursor1.CursorOrientation = InteractiveCursorOrientation.Both ;
 
@@ -782,6 +789,7 @@ cursor1.HorizontalCursorColor = Color.Red;
        cursor1.HorizontalCursorColor = Color.Red
 
 {% endhighlight %}
+{% endtabs %}
 
 
 Now, the default color would be replaced with blue color at both the orientations as it is the parent color.
@@ -794,7 +802,7 @@ Now, the default color would be replaced with blue color at both the orientation
 The following code snippets draw interactive cursor in different colors:
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
       cursor1.CursorOrientation = InteractiveCursorOrientation.Both ;
 
@@ -813,6 +821,7 @@ cursor1.HorizontalCursorColor = Color.Red;
        cursor1.HorizontalCursorColor = Color.Red
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Runtime-Features_images/Runtime-Features_img24.png)
@@ -891,7 +900,7 @@ We can move the interactive cursor for series points only (i.e., the interactive
 We can enable this feature by setting the MoveToChartArea property of the interactive cursor to true. The default value is false.
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
  this.chartControl1.ChartArea.InteractiveCursors[0].MoveToChartArea = true;
 
@@ -902,6 +911,7 @@ We can enable this feature by setting the MoveToChartArea property of the intera
 Me.chartControl1.ChartArea.InteractiveCursors(0).MoveToChartArea = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ### XInterval
 
@@ -916,7 +926,7 @@ The cursor on the y-axis can be moved from top to bottom or bottom to top based 
 Symbols will be displayed when the interactive cursor meets the series point in the chart area by dragging.
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
  this.chartControl1.ChartArea.InteractiveCursors[0].XInterval = 2;
 
@@ -931,6 +941,7 @@ Symbols will be displayed when the interactive cursor meets the series point in 
   Me.chartControl1.ChartArea.InteractiveCursors(0).YInterval = 50
 
 {% endhighlight %}
+{% endtabs %}
 
 ![C:/Users/sivakumard/Desktop/Symbols.PNG](Runtime-Features_images/Runtime-Features_img25.png)
 
@@ -961,7 +972,7 @@ Specifies the format for the datapoint tooltips. The following place-holders can
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series1.PointsToolTipFormat = "Sales:{4}K";
 
@@ -972,6 +983,7 @@ series1.PointsToolTipFormat = "Sales:{4}K";
 series1.PointsToolTipFormat = "Sales:{4}K"
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Runtime-Features_images/Runtime-Features_img27.jpeg)
@@ -981,7 +993,7 @@ series1.PointsToolTipFormat = "Sales:{4}K"
 You can also customize the tooltip for individual data points by setting the ToolTip style for each data point. This is best accomplished by listening to the ChartSeries.PrepareStyle event as shown below.
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 //Setting the Tooltip Format
 
@@ -1042,6 +1054,7 @@ Protected Sub series1_PrepareStyle(ByVal sender As Object, ByVal args As ChartPr
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Runtime-Features_images/Runtime-Features_img28.jpeg)
@@ -1127,7 +1140,7 @@ Turns on/off fancy tooltips.</td></tr>
 </table>
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 series1.FancyToolTip.Visible = true;
 
@@ -1142,6 +1155,7 @@ series1.FancyToolTip.Visible = True
 series1.FancyToolTip.Alignment = TabAlignment.Top
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Runtime-Features_images/Runtime-Features_img29.jpeg)
 
