@@ -1808,6 +1808,7 @@ Here is some sample code.
 
 To specify text for specific points, use the below code.
 
+{% tabs %}
 {% highlight c# %}
 
 // Enabling DisplayText for the first data point
