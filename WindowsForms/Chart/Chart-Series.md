@@ -1667,7 +1667,7 @@ Me.chartControl1.Series(0).Style.TextColor = Color.LightSlateGray
 
 ### Callout 
 
-Callout is a data label text which is used to dragging and customizing the text dynamically. It allows you to drag and drop the data label in any place of chart area and edit callout properties by double clicking on the callout label.
+Callout is a data label text which is used to drag and customize the text dynamically. It allows you to drag and drop the data label in any place of chart area and edit callout properties by double clicking on the callout label.
 
 
 
