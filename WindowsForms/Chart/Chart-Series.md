@@ -1683,6 +1683,7 @@ Me.chartControl1.Series(0).Style.TextColor = Color.LightSlateGray
 
 To specify text for specific points, use the below code.
 
+{% tabs %}
 {% highlight c# %}
 
 // Enabling DisplayText for the first data point
