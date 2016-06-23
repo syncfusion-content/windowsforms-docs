@@ -59,7 +59,7 @@ Encapsulate your "data points adding code" within BeginUpdate and EndUpdate to i
 
 
 
-{% highlight c# %}
+{% tabs %}  {% highlight c# %}
 
 // Improves the performance of the chart when a large number of series are used.
 
@@ -146,3 +146,4 @@ Me.chartControl1.BeginUpdate()
 Me.chartControl1.EndUpdate()
 
 {% endhighlight %}
+{% endtabs %}
