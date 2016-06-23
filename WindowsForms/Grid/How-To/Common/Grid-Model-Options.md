@@ -23,6 +23,7 @@ This section provides information on how to write syntax for the following GridM
 The following code illustrates how to activate current cell behavior:
 
 
+
 {% highlight c# %}
 
 this.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll;
@@ -33,11 +34,8 @@ this.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.S
 
 The following code illustrates how to allow scroll for current cell view:
 
-this.gridGroupingControl1.AllowScrollCurrentCellInView = GridScrollCurrentCellReason.Activate;
-
 {% highlight c# %}
-
-
+this.gridGroupingControl1.AllowScrollCurrentCellInView = GridScrollCurrentCellReason.Activate;
 
 {% endhighlight %}
 
@@ -62,10 +60,10 @@ this.gridGroupingControl1.ClickedOnDisabledCellBehavior = GridClickedOnDisabledC
 {% endhighlight %}
 
 
-
 ## Show Current Cell Border Behavior
 
 The following code illustrates how to show current cell border behavior: 
+
 
 {% highlight c# %}
 

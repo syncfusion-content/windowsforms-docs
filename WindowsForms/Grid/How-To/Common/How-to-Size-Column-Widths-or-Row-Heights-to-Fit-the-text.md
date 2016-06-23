@@ -16,36 +16,25 @@ To size columns so that all the text is visible, use grid.Model.ColWidths.Resize
 
 #### Example
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //AutoFits RowHeights.
-
 grid.Model.RowHeights.ResizeToFit(GridRangeInfo.Table, GridResizeToFitOptions.NoShrinkSize);
 
-
-
 //AutoFits ColumnWidths.
-
 grid.Model.ColWidths.ResizeToFit(GridRangeInfo.Col(2), GridResizeToFitOptions.NoShrinkSize);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'AutoFits RowHeights.
-
 grid.Model.RowHeights.ResizeToFit(GridRangeInfo.Table, GridResizeToFitOptions.NoShrinkSize)
 
-
-
 'AutoFits ColumnWidths. 
-
 grid.Model.ColWidths.ResizeToFit(GridRangeInfo.Col(2), GridResizeToFitOptions.NoShrinkSize)
 
 {% endhighlight %}
-
+{% endtabs %}
 N> Resizing the entire grid for very large grids can be time consuming. To only resize the visible area of the grid, you can set the range argument to grid.ViewLayout.VisibleCellsRange.

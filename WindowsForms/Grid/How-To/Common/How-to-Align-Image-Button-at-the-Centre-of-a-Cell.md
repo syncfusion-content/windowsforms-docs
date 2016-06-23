@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Common questions in Essential Grid
+title: How-to-Align-Image-Button-at-the-Centre-of-a-Cell | Windows Forms | Syncfusion
 description: how to align image button at the centre of a cell 
 platform: windowsforms
 control: Grid
@@ -10,6 +10,7 @@ documentation: ug
 # How to Align Image Button at the Center of a Cell 
 
 To align the button at the center of the cell, customize the model and the renderer of the cell. Specify the bounds of the button using the OnLayout() method. The following code illustrates how to align the button at the center of the grid cell: 
+
 
 {% tabs %}
 {% highlight c# %}

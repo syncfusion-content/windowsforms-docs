@@ -15,39 +15,27 @@ Use the following variables to get the viewable row and column indexes.
 
 #### Example
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Top Row Index.
-
 this.grid.TopRowIndex
-
-
 
 //Left Column Index.
 this.grid.LeftColIndex
 
-
-
 //Bottom Row Index.
 this.grid.ViewLayout.LastVisibleRow
-
-
 
 //Right Column Index.
 this.grid.ViewLayout.LastVisibleCol
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Top Row Index.
 Me.grid.TopRowIndex
-
 
 'Left Column Index.
 Me.grid.LeftColIndex
@@ -58,6 +46,5 @@ Me.grid.ViewLayout.LastVisibleRow
 'Right Column Index.
 Me.grid.ViewLayout.LastVisibleCol
 
-
 {% endhighlight %}
-
+{% endtabs %}

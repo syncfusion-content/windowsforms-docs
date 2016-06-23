@@ -15,38 +15,29 @@ ActivateCurrentCellBehavior property controls the activation behavior as a cell 
 
 The following code illustrates how to set Cell Activation behavior to SelectAll in GridControl:
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Sets Cell Activation behavior to 'SelectAll'.
-
 this.gridControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll;
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Sets Cell Activation behavior to 'SelectAll'.
-
 Me.Grid.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll
 
-
 {% endhighlight %}
+{% endtabs %}
 
 The following code illustrates how to set Cell Activation behavior to SelectAll in GridGrouping control:
 
+{% tabs %}
 {% highlight c# %}
-
-
-
 this.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll;
-
-
 {% endhighlight %}
+{% endtabs %}
 
 N> Other options range from None (no activation at all) to ClickOnCell, DblClickOnCell or SetCurrent.
 

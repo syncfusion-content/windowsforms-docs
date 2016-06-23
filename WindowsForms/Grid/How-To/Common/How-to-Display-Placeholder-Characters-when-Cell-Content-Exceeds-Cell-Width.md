@@ -25,6 +25,7 @@ N> When set to None, the original content will be displayed.
 
 Use the following code to specify that only alphabetic content will be converted to placeholder characters when content exceeds a cell.
 
+{% tabs %}
 {% highlight c# %}
 
 this.gridcontrol1[1,1].AutoFit=AutoFitOptions.Alphabet;
@@ -38,31 +39,28 @@ Me.gridcontrol1(1,1).AutoFit=AutoFitOptions.Alphabet
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Converting Numeric Content
 
 Use the following code to specify that only numeric content will be converted to placeholder characters when content exceeds a cell.
 
+{% tabs %}
 {% highlight c# %}
-
- this.gridcontrol1[1,1].AutoFit=AutoFitOptions.Numeric
-
-
-
+this.gridcontrol1[1,1].AutoFit=AutoFitOptions.Numeric
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
- Me.gridcontrol1(1,1).AutoFit=AutoFitOptions.Numeric
-
-
+{% highlight vb %}
+Me.gridcontrol1(1,1).AutoFit=AutoFitOptions.Numeric
 {% endhighlight %}
+{% endtabs %}
 
 ### Converting Alphabetic and Numeric Content
 
 The following code specifies that both alphabetic and numeric content will be converted to placeholder characters. To do so, set AutoFitOptions to Both.
 
+{% tabs %}
 {% highlight c# %}
 
  this.gridcontrol1[1,1].AutoFit=AutoFitOptions.Both
@@ -72,19 +70,20 @@ The following code specifies that both alphabetic and numeric content will be co
 
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
  Me.gridcontrol1(1,1).AutoFit=AutoFitOptions.Both
 
 
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ### Not Converting Content
 
 Use the following code to display original cell content without converting anything to placeholder characters. This is performed by setting AutoFitOptions to None.
 
+{% tabs %}
 {% highlight c# %}
 
  this.gridcontrol1[1,1].AutoFit=AutoFitOptions.None
@@ -94,12 +93,13 @@ Use the following code to display original cell content without converting anyth
 
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
  Me.gridcontrol1(1,1).AutoFit=AutoFitOptions.None
 
 
 {% endhighlight %}
+{% endtabs %}
 
 N> By default, AutoFitOptions is set to None.
 
@@ -108,6 +108,7 @@ N> By default, AutoFitOptions is set to None.
 
 Characters other than the number sign (#), the default, can be used to replace alphanumeric content that exceeds the size of a cell.To do so, set AutoFitChar to the desired character. For example, in the code samples below, the placeholder character has been changed to the _at_ (@) character.
 
+{% tabs %}
 {% highlight c# %}
 
  this.gridcontrol1[1,1]. AutoFitChar=’@’
@@ -117,12 +118,13 @@ Characters other than the number sign (#), the default, can be used to replace a
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
  Me.gridcontrol1[1,1]. AutoFitChar=’@’
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img4.png)
 

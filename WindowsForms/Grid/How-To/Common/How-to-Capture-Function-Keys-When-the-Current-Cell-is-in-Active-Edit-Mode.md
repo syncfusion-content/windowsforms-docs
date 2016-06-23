@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Common questions in Essential Grid
+title: How-to-Capture-Function-Keys-When-the-Current-Cell-is-in-active-edit-mode | Windows Forms | Syncfusion
 description: how to capture function keys when the current cell is in active edit mode
 platform: windowsforms
 control: Grid
@@ -29,16 +29,18 @@ private void grid_CurrentCellControlKeyMessage(object sender, GridCurrentCellCon
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Subscribes to the event.
 AddHandler Me.grid.CurrentCellControlKeyMessage, AddressOf grid_CurrentCellControlKeyMessage
 
 'The handler.
 Private Sub grid_CurrentCellControlKeyMessage(ByVal sender As Object, ByVal e As GridCurrentCellControlKeyMessageEventArgs)
-    Dim keyCode As Keys = CType(Fix(e.Msg.WParam), Keys) And Keys.KeyCode
-    Console.WriteLine(keyCode)
-    Console.WriteLine(e.Msg)
+        Dim keyCode As Keys = CType(Fix(e.Msg.WParam), Keys) And Keys.KeyCode
+        Console.WriteLine(keyCode)
+        Console.WriteLine(e.Msg)
+'Grid_CurrentCellControlKeyMessage.
 End Sub 
+
 {% endhighlight %}
 {% endtabs %}

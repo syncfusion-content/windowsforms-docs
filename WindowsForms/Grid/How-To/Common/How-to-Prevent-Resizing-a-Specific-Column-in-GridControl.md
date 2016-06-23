@@ -13,53 +13,30 @@ documentation: ug
 
 Handle ResizingColumns event and cancel the resizing for specific columns.
 
-#### Example
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Handles ResizingColumns event.
-
  private void grid_ResizingColumns(object sender, GridResizingColumnsEventArgs e)
-
+{
+	//Disables Column Resizing for the third column from the Right.
+    if(e.Columns.Right == 2)
     {
-
-//Disables Column Resizing for the third column from the Right.
-
-        if(e.Columns.Right == 2)
-
-        {
-
-            e.Cancel = true;
-
-        }
-
+        e.Cancel = true;
     }
-
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Handles ResizingColumns event.
+Private Sub grid_ResizingColumns(ByVal sender As Object, ByVal e As GridResizingColumnsEventArgs)
 
-  Private Sub grid_ResizingColumns(ByVal sender As Object, ByVal e As GridResizingColumnsEventArgs)
-
-
-
-//Disables Column Resizing for the third column from the Right.
-
-        If e.Columns.Right = 2 Then
-
-            e.Cancel = True
-
-        End If
-
-   End Sub
-
-
+	//Disables Column Resizing for the third column from the Right.
+      If e.Columns.Right = 2 Then
+          e.Cancel = True
+      End If
+End Sub
 {% endhighlight %}
-
+{% endtabs %}

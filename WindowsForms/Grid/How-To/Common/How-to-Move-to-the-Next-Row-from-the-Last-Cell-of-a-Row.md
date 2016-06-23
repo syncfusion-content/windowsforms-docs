@@ -13,27 +13,18 @@ documentation: ug
 
 Set the WrapCellBehavior property to wrap a row when the Tab or Enter key is pressed.
 
-#### Example
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Sets WrapCellBehaviour property to Wrap Row to move to the next row.
-
 this.grid.Model.Options.WrapCellBehavior = GridWrapCellBehavior.WrapRow; 
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Sets WrapCellBehaviour property to Wrap Row to move to the next row.
-
 Me.grid.Model.Options.WrapCellBehavior = GridWrapCellBehavior.WrapRow
 
-
 {% endhighlight %}
-
+{% endtabs %}

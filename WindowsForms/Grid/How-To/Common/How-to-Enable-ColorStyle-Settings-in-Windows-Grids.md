@@ -49,21 +49,16 @@ _{Installed Path}\Syncfusion\EssentialStudio\{Version}\Windows\Grid.Grouping.Win
 
 To enable this feature, use the following code:
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.gridGroupingControl1.TableModel.EnableLegacyStyle  = false;
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.gridGroupingControl1.TableModel.EnableLegacyStyle  = False
 
-
 {% endhighlight %}
-
+{% endtabs %}

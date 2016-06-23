@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Common questions in Essential Grid
+title: How-to-achieve-Excel-like-Text-Alignment-in-Grid-Control | Windows Forms | Syncfusion
 description: how to achieve excel-like text alignment in grid control?
 platform: windowsforms
 control: Grid
@@ -13,10 +13,15 @@ Text alignment in Grid cells is similar to text alignment in Excel cells. When n
 
 {% tabs %}
 {% highlight c# %}
+
 this.gridControl1.ExcelLikeAlignment = true;
+
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight vb %}
+
 Me.gridControl1.ExcelLikeAlignment = True;
+
 {% endhighlight %}
 {% endtabs %}
 

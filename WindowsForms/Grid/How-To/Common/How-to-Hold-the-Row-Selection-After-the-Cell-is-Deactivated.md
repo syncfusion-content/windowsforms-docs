@@ -15,37 +15,25 @@ The following code holds the selection even after the cell is deactivated:
 
 
 
+{% tabs %}
 {% highlight c# %}
 
 void Model_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
-
-        {
-
-            if (e.Reason == GridSelectionReason.MouseDown || e.Reason == GridSelectionReason.Clear)
-
-                e.Cancel = true;
-
-        }
-
-
-
+{
+    if (e.Reason == GridSelectionReason.MouseDown || e.Reason == GridSelectionReason.Clear)
+        e.Cancel = true;
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Model_SelectionChanging(ByVal sender As Object, ByVal e As GridSelectionChangingEventArgs)
-
             If e.Reason = GridSelectionReason.MouseDown OrElse e.Reason = GridSelectionReason.Clear Then
-
                 e.Cancel = True
-
             End If
-
         End Sub
-
-
 {% endhighlight %}
-
+{% endtabs %}
 
 

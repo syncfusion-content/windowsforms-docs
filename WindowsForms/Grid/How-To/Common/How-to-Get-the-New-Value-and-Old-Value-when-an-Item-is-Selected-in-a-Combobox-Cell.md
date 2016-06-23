@@ -13,123 +13,65 @@ documentation: ug
 
 CurrentCellCloseDropDown event gets triggered when a dropdown is closed in a grid cell. The new value of ComboBox can be obtained from CurrentCell's Renderer property and old value can be obtained from the grid.
 
-#### Example
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 GridCurrentCell cc;
-
-
-
 //Handles CurrentCellCloseDropDown.
-
 private void gridDataBoundGrid1_CurrentCellCloseDropDown(object sender, Syncfusion.Windows.Forms.PopupClosedEventArgs e)
-
 {
+    cc= this.gridDataBoundGrid1.CurrentCell;
+    Console.WriteLine(e.PopupCloseType.ToString());
 
-          cc= this.gridDataBoundGrid1.CurrentCell;
+	//Uses Renderer.GetCellValue() to retrieve the new cell value.
+    Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue());
 
-          Console.WriteLine(e.PopupCloseType.ToString());
-
-
-
-//Uses Renderer.GetCellValue() to retrieve the new cell value.
-
-          Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue());
-
-
-
-//Retrieves the oldvalue. 
-
-          Console.WriteLine("Old Value {0}",this.gridDataBoundGrid1[cc.RowIndex,cc.ColIndex].CellValue.ToString());
-
+	//Retrieves the oldvalue. 
+    Console.WriteLine("Old Value {0}",this.gridDataBoundGrid1[cc.RowIndex,cc.ColIndex].CellValue.ToString());
 }
 
-
-
 //Handle CurrentCellCloseDropDown.
-
 private void gridControl1_CurrentCellCloseDropDown(object sender, Syncfusion.Windows.Forms.PopupClosedEventArgs e)
-
 {
+    cc= this.gridControl1.CurrentCell;
+    Console.WriteLine(e.PopupCloseType.ToString());
 
-       cc= this.gridControl1.CurrentCell;
-
-       Console.WriteLine(e.PopupCloseType.ToString());
-
-
-
-//Uses Renderer.GetCellValue() to retrieve the new cell value.
-
-       Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue()); 
-
-
-
-//Retrieves the oldvalue.
-
-       Console.WriteLine("Old Value {0}",this.gridControl1[cc.RowIndex,cc.ColIndex].CellValue.ToString());
-
+	//Uses Renderer.GetCellValue() to retrieve the new cell value.
+    Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue()); 
+	
+	//Retrieves the oldvalue.
+    Console.WriteLine("Old Value {0}",this.gridControl1[cc.RowIndex,cc.ColIndex].CellValue.ToString());
 }
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private cc As GridCurrentCell
-
-
-
 'Handles CurrentCellCloseDropDown.
-
 Private Sub gridDataBoundGrid1_CurrentCellCloseDropDown(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.PopupClosedEventArgs)
-
     cc= Me.gridDataBoundGrid1.CurrentCell
-
     Console.WriteLine(e.PopupCloseType.ToString())
 
-
-
-'Uses Renderer.GetCellValue() to retrieve the new cell value.
-
+    'Uses Renderer.GetCellValue() to retrieve the new cell value.
     Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue())
-
-
-
-'Retrieves the oldvalue.
-
+	
+    'Retrieves the oldvalue.
     Console.WriteLine("Old Value{0}",Me.gridDataBoundGrid1(cc.RowIndex,cc.ColIndex).CellValue. ToString())
-
 End Sub
 
-
-
 'Handles CurrentCellCloseDropDown.
-
 Private Sub gridControl1_CurrentCellCloseDropDown(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.PopupClosedEventArgs)
-
      cc= Me.gridControl1.CurrentCell
-
      Console.WriteLine(e.PopupCloseType.ToString())
 
-
-
-'Uses Renderer.GetCellValue() to retrieve the new cell value.
-
+     'Uses Renderer.GetCellValue() to retrieve the new cell value.
      Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue())
 
-
-
-'Retrieves the oldvalue.
-
+     'Retrieves the oldvalue.
      Console.WriteLine("Old Value {0}",Me.gridControl1(cc.RowIndex,cc.ColIndex).CellValue.ToString())
 
 End Sub
 
-
-
 {% endhighlight %}
+{% endtabs %}

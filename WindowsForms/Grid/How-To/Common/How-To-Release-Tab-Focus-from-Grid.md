@@ -13,34 +13,24 @@ When you set ActiveControl variable to Grid__control, focus will be on Grid cont
 
 The following code illustrates how to release tab focus from GridGroupingControl: 
 
+{% tabs %}
 {% highlight c# %}
 
 private void FormMain_Load(object sender, EventArgs e)
-
-        {
-
-            this.ActiveControl = this.gridGroupingControl1.TableControl;
-
-            gridGroupingControl1.WantTabKey = false;
-
-            return;
-
-        }
-
-
+{
+    this.ActiveControl = this.gridGroupingControl1.TableControl;
+    gridGroupingControl1.WantTabKey = false;
+    return;
+}
+		
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 Private Sub FormMain_Load(ByVal sender As Object, ByVal e As EventArgs)
-
 Me.ActiveControl = Me.gridGroupingControl1.TableControl
-
 gridGroupingControl1.WantTabKey = False
-
 Return
-
- End Sub
-
+End Sub
 
 {% endhighlight %}
+{% endtabs %}

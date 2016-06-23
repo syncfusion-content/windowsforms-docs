@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: Cell Types for Syncfusion Essential WindowsForms
+title: Cell Types for GridControl
 description: This section explains on different kinds of cell types available in GridControl.
 platform: WindowsForms
 control: Grid
@@ -12,7 +12,7 @@ GridControl allows the inclusion of some special controls in the grid cells. Thi
 
 In GridControl each cell has been created by [GridCellModelBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellModelBase.html) and [GridCellRendererBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html). `GridCellModelBase` defines the data or model part of a cell type. It holds all the data information of a cell.**Rendering** generally refers to the process of creating a visual representation on a user's screen. `GridCellRendererBase` acts a base class for all the renderer part of the cell type.  
 
-## Adding a cell type into a cell
+## Setting cell type for a cell
 This section will explain on how to add a basic cell type into a grid cell. To add the desired cell type in a cell, the [CellType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellType.html) property can be used. There are two ways to assign cell types, by string format or by using the [GridCellTypeName](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellTypeName.html) static class which contains all the built-in cell type names in it. 
 
 {% tabs %}
@@ -30,7 +30,7 @@ Me.gridControl1(2, 2).Description = "Enable"
 
 ![](Cell-Types_images/Cell-Types_img1.png)
 
-## TextBox Cell
+## TextBox Cell Type
 TextBox cells are the default cell type of GridControl. TextBox cells displays text and images which can be edited when clicked.
 
 {% tabs %}
@@ -53,7 +53,7 @@ gridControl1(2, 3).ImageIndex = 0
 
 ![](Cell-Types_images/Cell-Types_img2.png)
 
-## Static Cells
+## Static Cell Type
 Static cell type will display text that cannot be edited. It is possible to make the static cells as current cell but static cells cannot be activated for editing. Static cells can also include images in addition to the text.
 
 {% tabs %}
@@ -83,7 +83,7 @@ gridControl1(2, 3).ImageIndex = 2
 
 N> Though static cells cannot be edited, it can be deleted by using the&lt;kbd&gt DELETE&lt;/kbd&gt; key.
 
-## Header Cells
+## Header Cell Type
 Header cells are as same as that of static cells, in addition, this cell type has a button-like border that can have a depressed state. Header cell type is mainly used as header for rows and columns. If a particular cell needs to be of type header, then make use of this cell type.
 
 {% tabs %}
@@ -103,7 +103,7 @@ gridControl1(2, 2).CellType = "Header"
 
 ![](Cell-Types_images/Cell-Types_img4.png)
 
-## Image cell
+## Image Cell Type
 To show an Image in a cell, make use of the **Image** cell type. It can be achieved by setting the `CellType` property as `GridCellTypeName.Image`. Images can be added in GridControl by using the [ImageList](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridListControl~ImageList.html) property. Multiple number of images can be added by using this property. For picking a particular image from the list, make use of the [ImageIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ImageIndex.html) property.
 
 {% tabs %}
@@ -179,7 +179,7 @@ End Sub
 
 ![](Cell-Types_images/Cell-Types_img6.jpeg)
 
-## CheckBox Cells
+## CheckBox Cell Type
 `CheckBox` cell type displays a check box in a grid cell. The check box has three states:**Checked, Unchecked and Indeterminate**. It is possible to decide whether the check box should behave as a two-state check box or a three-state check box by using the [CheckBoxOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CheckBoxOptions.html) property. Use the `Description` property of the cell style to display the text in a checkbox cell.
 
 {% tabs %}
@@ -229,7 +229,7 @@ Me.gridControl1(2, 2).RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.Butto
 
 ![](Cell-Types_images/Cell-Types_img8.png)
 
-## ComboBox Cells
+## ComboBox Cell Type
 Adding a combo box to a grid cell, will enable to show a pop up displaying an associated list of choices. The combo box can be populated in several ways by setting the appropriate `GridStyleInfo` properties. 
 
 {% tabs %}
@@ -474,7 +474,7 @@ Me.gridControl1(0, 4).ChoiceList = items
 {% endtabs %}
 N> To know more details and sample, refer the KB link over [here](https://www.syncfusion.com/kb/580/how-to-insert-a-combobox-in-a-header-cell-of-a-grid).
 
-### RadioButton Cells
+### RadioButton Cell Type
 `RadioButton` cell type displays a radio button in a grid cell. The choices of radio button are mutually exclusive. Like combobox, radio button values can be populated by using the `ChoiceList` or `DataSource` property.
 
 {% tabs %}
@@ -501,7 +501,7 @@ Me.gridControl1(3, 1).CellType = "RadioButton"
 
 ![](Cell-Types_images/Cell-Types_img12.png)
 
-## ColorEdit Cells
+## ColorEdit Cell Type
 Color Edit cell type will allow to pick up colors and set a color object as the `CellValue`. To do this, set the CellType property as **ColorEdit.**On clicking the ColorEdit cell, a popup will be opened for choosing the desired color.
 
 {% tabs %}
@@ -560,7 +560,7 @@ End Sub
 
 N> For sample and more information check the KB link over [here](https://www.syncfusion.com/kb/5708/how-to-customize-the-tab-name-of-the-coloruicontrol-cell-dropdown).
 
-## Control
+## Control Cell Type
 It is possible to add an arbitrary control in a grid cell through `Control` cell type. Each cells using this cell type requires to instantiate a control object and that object has to be assigned to the [style.Control](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Control.html) property. The following code illustrates how to set a cell type as `Control`.
 
 {% tabs %}
@@ -591,7 +591,7 @@ Me.gridControl1(2, 2).CellType = "Control"
 ### Inserting an Animated image in cell
 It is possible to animate an image in grid cell by setting the cell type as `Control` and assigning it to a picture box control. To display the image as an animated one it is necessary to refresh the picture cell for a given time interval. For more details and sample please check the KB link over [here](https://www.syncfusion.com/kb/4502/how-to-insert-animated-image-to-a-grid-cell).
 
-## Currency Cells
+## Currency Cell Type
 This cell type can be used to represent monetary values to achieve accuracy in the calculations. It will add the currency sign in the cell and attempt to parse only the number from the input. To customize the currency cells make use of the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) properties.
 
 For setting a current cell as a Currency cell type, make use of the `CellType` property as `GridCellTypeName.Currency`.
@@ -884,7 +884,7 @@ Me.gridControl1(2, 2) = currencyStyle
 
 ![](Cell-Types_images/Cell-Types_img24.png)
 
-## Formula Cells
+## Formula Cell Type
 `FormulaCell` cell type adds algebraic formulas to a cell that depends on other cells. The cell value should be a well-formed formula starting with an `=` and the `CellType` property set to `FormulaCell`. If a formula cell does not begin with an `=`, the cell is treated as a text box cell. For details, refer the topic [Formula Support](http://help.syncfusion.com/windowsforms/grid/formula-support).
 
 {% tabs %}
@@ -902,7 +902,7 @@ gridControl1(rowIndex, colIndex).CellValue = "= (A1+A2) / 2"
 {% endhighlight %}
 {% endtabs %}
 
-## MaskEdit Cells
+## MaskEdit Cell Type
 [MaskEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~MaskEdit.html) cell type allows to create specially formatted text cells, which confirms an edit mask that has been specified. For setting a current cell as a `MaskEdit` cell type, then set the `CellType` property as `GridCellTypeName.MaskEdit`. There is a class named [GridMaskEditInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMaskEditInfo.html) which contains all the style properties related to the Mask Edit cells.
 
 {% tabs %}
@@ -952,7 +952,7 @@ maskStyleInfo2.CellValue = "10232015"
 
 ![](Cell-Types_images/Cell-Types_img24a.png)
 
-## MonthCalendar Cells
+## MonthCalendar Cell Type
 To display the calendar in a Grid cell make use of the `MonthCalendar` cell type. It will automatically display the Month calendar in the drop down grid while clicking on it. The cell value given for this cell has to be in [DateTime](https://msdn.microsoft.com/en-us/library/system.datetime.aspx) format.
 
 {% tabs %}
@@ -978,7 +978,7 @@ Me.gridControl1(2, 2) = monthCalendar
 
 ![](Cell-Types_images/Cell-Types_img26.png)
 
-## NumericUpDown Cells
+## NumericUpDown Cell Type
 `NumericUpDown` cell type makes the grid cell to increase or decrease a value by using a pair of arrow buttons. There is also a property `NumericUpDown` under the GridStyleInfo class which gets the value as of type [GridNumericUpDownCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridNumericUpDownCellInfo.html)**.** This `GridNumericUpDownCellInfo` class contains all the style properties related to the `NumericUpDown` cell type. 
 
 {% tabs %}
@@ -1063,7 +1063,7 @@ model.AcceptAlphaKeys = False
 {% endhighlight %}
 {% endtabs %}
 
-## ProgressBar Cells
+## ProgressBar Cell Type
 Progress bars are used in applications to provide a visual cue during lengthy operations such as installation, copying, and printing etc. In GridControl progress bar cells can be used in a cell by setting the `CellType` name as `ProgressBar`.
 
 The `ProgressBar` property in `GridStyleInfo` class will set all the style properties related to the progress bar. This property will get the value of type [GridProgressBarInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProgressBarInfo.html) class.
@@ -1125,7 +1125,7 @@ Me.gridControl1(2, 2) = progressBarCelltype
 
 ![](Cell-Types_images/Cell-Types_img28.png)
 
-## PushButton cells
+## PushButton Cell Type
 To display a Push Button in a grid cell, use the **PushButton** cell type. The appearance of the button can be changed by using the [CellAppearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellAppearance.html) property.Use the `Description` property of the cell style to specify the text that is to be displayed on the button.
 
 {% tabs %}
@@ -1187,7 +1187,7 @@ AddHandler GridControl1.CellButtonClicked, AddressOf gridControl1_CellButtonClic
 {% endhighlight %}
 {% endtabs %}
 
-## RichTextBox Cells
+## RichTextBox Cell Type
 The `RichTextBox` control will allow to display and edit rich text in grid cells. To make use of this control set the cell type as `GridCellTypeName.RichTextBox`.
 {% tabs %}
 {% highlight c# %}
@@ -1205,7 +1205,7 @@ style.CellType = GridCellTypeName.RichText
 {% endtabs %}
 ![](Cell-Types_images/Cell-Types_img30.png)
 
-## OriginalTextBox Cells
+## OriginalTextBox Cell Type
 This cell type is used to show the text in a grid cell, it is derived from the System.Windows.Forms.TextBox control. [CharacterCasing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CharacterCasing.html) works only with this cell type. The `RichTextBox` cell type does not have `CharacterCasing` property. 
 {% tabs %}
 {% highlight c# %}

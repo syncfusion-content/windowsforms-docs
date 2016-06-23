@@ -21,7 +21,7 @@ this.gridControl1[2, 2].RadioButtonAlignment = ButtonAlignment.Horizontal;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.gridControl1[1, 2].RadioButtonAlignment = ButtonAlignment.Vertical
 Me.gridControl1[2, 2].RadioButtonAlignment = ButtonAlignment.Horizontal

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Common questions in Essential Grid
+title: How-Does-the-Helper-class-Support-Percentage-Sizinng-in-GridControl-or-GridDataBoundGrid | Windows Forms | Syncfusion
 description: how does the helper class support percentage sizing in gridcontrol / griddataboundgrid
 platform: windowsforms
 control: Grid
@@ -27,7 +27,7 @@ private void Form1_Load(object sender, System.EventArgs e)
             dt.Rows.Add(new object[]{});
     }
     this.gridDataBoundGrid1.DataSource = dt;
-
+	
 	//There is a condition check in accepting hashtable values.
 	// ie.. the total of values passed must not be greater than (100 - Unmodified Column count)
     ht = new Hashtable();
