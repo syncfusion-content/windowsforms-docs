@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How-to-Overcome-SendKey-Exception-in-Currency-Cell | Windows Forms | Syncfusion
 description: how to overcome sendkey exception in currency cell
@@ -20,7 +20,7 @@ The following code illustrates this:
 this.Grid.TableModel.Option.ActivateSendKey = false;
 
 //GridControl/GridDataBound:
-this.Grid.Model.Option. ActivateSendKey = false;
+this.Grid.Model.Option.ActivateSendKey = false;
 
 //GridListControl:
 this.GridList.Grid.Model.Option.ActivateSendKey = false;
