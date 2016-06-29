@@ -10,6 +10,7 @@ documentation: ug
 
 Following are the events fired when the group is expanding or expanded.
 
+ 
 {% highlight c# %}
 
 
@@ -52,7 +53,7 @@ Console.WriteLine("Expanded event "+r.Info);
 
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

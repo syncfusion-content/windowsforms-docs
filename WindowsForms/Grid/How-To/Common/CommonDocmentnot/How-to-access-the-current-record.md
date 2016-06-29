@@ -12,20 +12,15 @@ documentation: ug
 To access the current record, use the following code.
 
 
+ 
 {% highlight c# %}
 
-
 Record rec = this.gridGroupingControl1.Table.CurrentRecord;
-
 Trace.WriteLine(rec.ToString());
-
 {% endhighlight  %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Dim rec As Record = Me.gridGroupingControl1.Table.CurrentRecord
-
 Trace.WriteLine(rec.ToString())
 {% endhighlight  %}

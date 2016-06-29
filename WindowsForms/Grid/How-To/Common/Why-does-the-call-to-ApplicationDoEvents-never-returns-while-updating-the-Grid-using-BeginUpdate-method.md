@@ -27,109 +27,61 @@ If the usage of Application.DoEvents is mandatory, then the simplest way to get 
 
 Add a public static member to the class where Application.DoEvents is to be used. Then override the Grid's WndProc method and process WM_PAINT if the DoEvents loop is triggered.
 
+{% tabs %}
 {% highlight c# %}
 
 public static bool InDoEvents = false;
-
 private void button1_Click(object sender, System.EventArgs e)
-
 {
-
-      this.gridControl1.BeginUpdate();
-
-      this.gridControl1.Refresh();
-
-
-
-      Console.WriteLine("before Application.DoEvents");
-
-      Form1.InDoEvents = true;
-
-      Application.DoEvents();
-
-      Form1.InDoEvents = false;
-
-      Console.WriteLine("after Application.DoEvents");
-
-
-
-      this.gridControl1.EndUpdate();
-
+    this.gridControl1.BeginUpdate();
+    this.gridControl1.Refresh();
+    Console.WriteLine("before Application.DoEvents");
+    Form1.InDoEvents = true;
+    Application.DoEvents();
+    Form1.InDoEvents = false;
+    Console.WriteLine("after Application.DoEvents");
+    this.gridControl1.EndUpdate();
 }
 
 public class MyGridControl : GridControl
-
 {
-
-       public const int WM_PAINT = 15;
-
-       protected override void WndProc(ref System.Windows.Forms.Message msg)
-
-       {
-
-         if (Form1.InDoEvents && msg.Msg == WM_PAINT)
-
-               DefWndProc(ref msg);
-
-          else
-
-             base.WndProc(ref msg);
-
-       }
-
+    public const int WM_PAINT = 15;
+    protected override void WndProc(ref System.Windows.Forms.Message msg)
+    {
+      if (Form1.InDoEvents && msg.Msg == WM_PAINT)
+            DefWndProc(ref msg);
+       else
+          base.WndProc(ref msg);
+    }
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Shared InDoEvents As Boolean = False
-
 Private Sub button1_Click(sender As Object, e As System.EventArgs)
-
 Me.gridControl1.BeginUpdate()
-
 Me.gridControl1.Refresh()
-
-
-
 Console.WriteLine("before Application.DoEvents")
-
 Form1.InDoEvents = True
-
 Application.DoEvents()
-
 Form1.InDoEvents = False
-
 Console.WriteLine("after Application.DoEvents")
-
-
-
 Me.gridControl1.EndUpdate()
-
 End Sub
 
 Public Class MyGridControl
-
 Inherits GridControl
-
 Public Const WM_PAINT As Integer = 15
-
 Protected Overrides Sub WndProc(ByRef msg As System.Windows.Forms.Message)
-
 If Form1.InDoEvents AndAlso msg.Msg = WM_PAINT Then
-
 DefWndProc(msg)
-
 Else
-
 MyBase.WndProc(msg)
-
 End If
-
 End Sub
-
 End Class
 
 {% endhighlight %}
-
+{% endtabs %}

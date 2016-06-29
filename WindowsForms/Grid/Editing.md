@@ -34,7 +34,7 @@ Me.gridControl1.ActivateCurrentCellBehavior = GridCellActivateAction.None
 {% endhighlight %}
 {% endtabs %}
 
-It is also possible to disable editing by using the `Static` cell type for a cell.
+It is also possible to disable editing by using the `Static` cell type to a cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -339,7 +339,7 @@ End Sub
 
 ### CurrentCell Changing/Changed
 
-While changing contents in the current cell, the [CurrentCellChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanging_EV.html#) and [CurrentCellChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanged_EV.html#) events will be triggered respectively for each cells.
+While changing contents in the current cell, [CurrentCellChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanging_EV.html#) and [CurrentCellChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanged_EV.html#) events will be triggered respectively for each cells.
 
 {% tabs %}
 {% highlight c# %}

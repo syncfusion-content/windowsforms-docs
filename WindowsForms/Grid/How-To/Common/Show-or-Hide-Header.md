@@ -31,8 +31,6 @@ gridDataBoundGrid.ShowColumnHeaders = true;
 
 {% endhighlight %}
 
-
-
 The following code illustrates how to show column header in GridGrouping control: 
 
 {% highlight c# %}
@@ -40,8 +38,6 @@ The following code illustrates how to show column header in GridGrouping control
 gridGroupingControl1.ShowColumnHeaders = true;
 
 {% endhighlight %}
-
-
 
 ## Row Header
 

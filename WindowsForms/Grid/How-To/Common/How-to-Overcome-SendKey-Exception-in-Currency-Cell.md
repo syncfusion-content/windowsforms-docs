@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How-to-Overcome-SendKey-Exception-in-Currency-Cell | Windows Forms | Syncfusion
 description: how to overcome sendkey exception in currency cell
@@ -13,65 +13,30 @@ CurrentCellKeyDown event cannot be handled for CurrencyTextbox when Windows Form
 
 The following code illustrates this: 
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 //GridGroupingControl: 
-
-
-
 this.Grid.TableModel.Option.ActivateSendKey = false;
 
-
-
 //GridControl/GridDataBound:
-
-
-
-this.Grid.Model.Option. ActivateSendKey = false;
-
-
+this.Grid.Model.Option.ActivateSendKey = false;
 
 //GridListControl:
-
-
-
 this.GridList.Grid.Model.Option.ActivateSendKey = false;
 
-
-
-
-
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'GridGroupingControl: 
-
-
-
 Me.Grid.TableModel.Option.ActivateSendKey = False
 
-
-
 'GridControl/GridDataBound:
-
-
-
 Me.Grid.Model.Option.ActivateSendKey = False
 
-
-
 'GridListControl:
-
-
-
 Me.GridList.Grid.Model.Option.ActivateSendKey = False
 
-
-
 {% endhighlight %}
+{% endtabs %}

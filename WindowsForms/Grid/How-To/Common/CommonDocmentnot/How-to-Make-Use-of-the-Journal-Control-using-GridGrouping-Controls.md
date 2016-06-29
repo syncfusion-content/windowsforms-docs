@@ -29,6 +29,7 @@ Indicates whether the nested table has preview row.</td></tr>
 </table>
 The following code example illustrates how to make use of Journal control using GridGrouping controls.
 
+ 
 {% highlight c# %}
 
 
@@ -71,7 +72,7 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.F
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

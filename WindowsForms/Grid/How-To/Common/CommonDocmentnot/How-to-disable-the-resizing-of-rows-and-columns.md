@@ -11,33 +11,21 @@ documentation: ug
 
 This can be done using the below code.
 
-
+ 
 {% highlight c# %}
-
 
 //Code to disable the resizing of rows.
-
 this.gridGroupingControl1.TableModel.Options.ResizeRowsBehavior = Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.None;
 
-
-
 //Code to disable the column resizing.
-
 this.gridGroupingControl1.TableModel.Options.ResizeColsBehavior = Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.None;
-
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
+{% highlight vb %}
 
 'Code to disable the column resizing.
-
 Me.gridGroupingControl1.TableModel.Options.ResizeColsBehavior = Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.None
 
-
-
 'Code to disable the resizing of rows.
-
 Me.gridGroupingControl1.TableModel.Options.ResizeRowsBehavior = Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.None
 {% endhighlight  %}

@@ -12,6 +12,7 @@ documentation: ug
 The following code illustrates various expression column options.
 
 
+ 
 {% highlight c# %}
 
 
@@ -37,7 +38,7 @@ ExpressionFieldDescriptor exp= new ExpressionFieldDescriptor("Expr1","[ColumnNam
 
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 

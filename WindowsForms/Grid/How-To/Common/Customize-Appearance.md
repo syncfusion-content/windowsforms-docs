@@ -17,16 +17,16 @@ You can display horizontal lined using DisplayHorizontalLines property.
 
 The following code illustrates how to display horizontal lines in GridControl: 
 
+
 {% highlight c# %}
 
+//The following code illustrates how to customize grid line color in GridControl:
 gridControl1.DisplayHorizontalLines = true;
 
-The following code illustrates how to display horizontal lines in GridDataBoundGrid: 
-
+//The following code illustrates how to display horizontal lines in GridDataBoundGrid: 
 gridDataBoundGrid.DisplayHorizontalLines = true;
 
-The following code illustrates how to display horizontal lines in GridGrouping control: 
-
+//The following code illustrates how to display horizontal lines in GridGrouping control: 
 gridGroupingControl1.DisplayHorizontalLines = true;
 
 {% endhighlight %}
@@ -39,14 +39,13 @@ The following code illustrates how to display vertical lines in GridControl:
 
 {% highlight c# %}
 
+//The following code illustrates how to customize grid line color in GridControl:
 gridControl1.DisplayVerticalLines = true;
 
-The following code illustrates how to display vertical lines in GridDataBoundGrid: 
-
+//The following code illustrates how to display vertical lines in GridDataBoundGrid: 
 gridDataBoundGrid.DisplayVerticalLines = true;
 
-The following code illustrates how to display vertical lines in GridGrouping control: 
-
+//The following code illustrates how to display vertical lines in GridGrouping control: 
 gridGroupingControl1.DisplayVerticalLines = true;
 
 {% endhighlight %}
@@ -60,18 +59,15 @@ The following code illustrates how to display vertical lines in GridControl:
 
 {% highlight c# %}
 
+//The following code illustrates how to customize grid line color in GridControl:
 gridControl1.GridLineColor = Color.Red;
 
-The following code illustrates how to customize grid line color in GridDataBoundGrid: 
-
+//The following code illustrates how to customize grid line color in GridDataBoundGrid: 
 gridDataBoundGrid.GridLineColor = Color.Red;
 
-The following code illustrates how to customize grid line color in GridGrouping control: 
-
+//The following code illustrates how to customize grid line color in GridGrouping control: 
 gridGroupingControl1.GridLineColor = Color.Red;
 
 {% endhighlight %}
-
-
 
 

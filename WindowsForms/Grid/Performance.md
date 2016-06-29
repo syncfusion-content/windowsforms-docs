@@ -283,4 +283,4 @@ excelConverter.ImportStyles = False
 {% endhighlight %}
 {% endtabs %}
 
-N> To know more how to use virtual import, refer our Importing topic
+N> To know more how to use virtual import, refer our [Importing](http://help.syncfusion.com/windowsforms/grid/importing#virtual-importing) topic

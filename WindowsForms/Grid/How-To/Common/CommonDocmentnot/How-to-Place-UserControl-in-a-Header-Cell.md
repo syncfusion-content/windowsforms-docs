@@ -17,6 +17,7 @@ Step 1: The UserControl form is added to the project and the required controls a
 
 Step 2: The GridGenericCellModel and GridGenericCellRenderer classes are derived and the UserControl is drawn accordingly to fit into the required cell header.
 
+ 
 {% highlight c# %}
 
 
@@ -63,7 +64,7 @@ Step 2: The GridGenericCellModel and GridGenericCellRenderer classes are derived
 
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 
@@ -108,6 +109,7 @@ End Class
 
 Step 3: A new CellType is created by adding the instance of derived generic cell model class into the GridGroupingControl's CellModels.
 
+ 
 {% highlight c# %}
 
 
@@ -117,7 +119,7 @@ CustomControlCellModel.CustomControl = new Button();
 this.gridGroupingControl1.Table.TableModel.CellModels.Add("UserControl",new CustomControlCellModel(this.gridGroupingControl1.TableModel));
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 
