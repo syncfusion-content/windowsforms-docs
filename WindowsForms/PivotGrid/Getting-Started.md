@@ -17,9 +17,9 @@ The following list of assemblies needs to be added as reference to use PivotGrid
 
 <table>
 <tr>
-<td>
-**Required** **assemblies**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Required assemblies<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 {{'[Syncfusion.PivotAnalysis.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~PivotGrid_namespace.html)'| markdownify }}<br/><br/></td><td>
@@ -41,9 +41,9 @@ In addition to these assemblies, there are also other optional assemblies.
 
 <table>
 <tr>
-<td>
-**Optional** **assemblies**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Optional assemblies<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 {{'[Syncfusion.Tools.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows.html)'| markdownify }}<br/><br/></td><td>
@@ -67,6 +67,7 @@ This section explains how to add the PivotGridControl through designer and also 
 PivotGridControl can be added through designer by following the below steps.
 
 1.Create a new **Windows** **Form** **Application**.
+
 2.Drag and Drop PivotGridControl from the toolbox into the designer page.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
@@ -88,6 +89,7 @@ PivotGridControl can be added through designer by following the below steps.
 PivotGridControl can be added through code-behind by following the below steps.
 
 1.Create a new **Windows** **Form** **Application**.
+
 2.Add the below assemblies into the project file.
 * Syncfusion.Grid.Windows.dll
 * Syncfusion.PivotAnalysis.Base.dll
@@ -116,7 +118,7 @@ Private pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGri
 
 4.Use the below code for adding the initialized GridControl to the application.
 
-{% endtabs %}
+{% tabs %}
 {% highlight c# %}
 
 // Add required size for the PivotGridControl
@@ -398,7 +400,7 @@ Me.pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.Field
 
 ## Pivot Schema Designer
 
-Pivot Schema Designer is a layout which is supported in PivotGridControl that can be presented like as Microsoft Excelӳ pivot table field list. It enables the drag-and-drop feature for fields between different areas, including column, row, value, and filter. By using PivotTableFieldList, you can add, rearrange, or remove fields to show data in a PivotGridControl in the exact way you want. For more information, refer [Pivot Schema Designer](http://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) topic. This Pivot Schema Designer can be enabled in PivotGridControl by setting the [ShowPivotTableFieldList](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html) property to `true`.
+Pivot Schema Designer is a layout which is supported in PivotGridControl that can be presented like as Microsoft Excel pivot table field list. It enables the drag-and-drop feature for fields between different areas, including column, row, value, and filter. By using PivotTableFieldList, you can add, rearrange, or remove fields to show data in a PivotGridControl in the exact way you want. For more information, refer [Pivot Schema Designer](http://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) topic. This Pivot Schema Designer can be enabled in PivotGridControl by setting the [ShowPivotTableFieldList](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -469,3 +471,4 @@ Me.pivotGridControl1.AllowFiltering = True
 
 {% endhighlight %}
 {% endtabs %}
+
