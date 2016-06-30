@@ -2950,7 +2950,7 @@ _..\____My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Wind
 
 #### IntelliJ mouse Scrolling
 
-Essential Edit provides excellent support for viewport navigation including intelliJ mouse scrolling. Commonly used keyboard navigation functions like PAGE UP/PAGE DOWN keys, ARROW keys, and CTRL+ARROW keys are fully supported by Essential Edit.
+Essential Edit provides excellent support for viewport navigation including IntelliJ mouse scrolling. Commonly used keyboard navigation functions like PAGE UP/PAGE DOWN keys, ARROW keys, and CTRL+ARROW keys are fully supported by Essential Edit.
 
 
 

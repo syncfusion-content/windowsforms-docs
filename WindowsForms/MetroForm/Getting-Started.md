@@ -11,7 +11,7 @@ documentation: ug
 
 The default Form can be changed into the MetroForm by following the below given steps.
 
-1)	Create a WindowsForms project in Visual Studio and refer to the following assembly.
+1)	Create a Windows Forms project in Visual Studio and refer to the following assembly.
 
    * Syncfusion.Shared.Base.dll
    
