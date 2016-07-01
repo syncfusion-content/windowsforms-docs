@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Overcome-SendKey-Exception-in-Currency-Cell | Windows Forms | Syncfusion
+title: How-to-Overcome-SendKey-Exception-in-Currency-Cell
 description: how to overcome sendkey exception in currency cell
 platform: windowsforms
 control: Grid
