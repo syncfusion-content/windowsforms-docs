@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Cell Types for GridControl
 description: This section explains on different kinds of cell types available in GridControl.
@@ -6,6 +6,7 @@ platform: WindowsForms
 control: Grid
 documentation: ug
 ---
+
 # Cell Types
 
 GridControl allows the inclusion of some special controls in the grid cells. This attribute of a grid cell is referred to as its Cell Type. GridControl supports more than 20 built-in cell types

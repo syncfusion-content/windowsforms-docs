@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in GridControl
 description: how to change a cell's font to a particular font family
