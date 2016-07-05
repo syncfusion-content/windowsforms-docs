@@ -43,7 +43,7 @@ We can save and load the background color information in an XML file to persist 
 {% endhighlight %}
 
 
-*  The below code snippet saves the information in a file called the colorinfo.xml.
+*  The below code snippet saves the information in a file called the color.xml.
 
 
 {% highlight c# %}
@@ -55,7 +55,7 @@ We can save and load the background color information in an XML file to persist 
 
 		this.gradientLabel1.BackgroundColor = new BrushInfo(GradientStyle.Gradient, Color.ForwardDiagonal , Color.Biege);
 
-		string xmlFilename = "C:\\colorinfo.xml";
+		string xmlFilename = "C:\\color.xml";
 
 		XmlSerializer serializer = new XmlSerializer(typeof(Syncfusion.Drawing.BrushInfo));
 
@@ -79,7 +79,7 @@ We can save and load the background color information in an XML file to persist 
 
 		Me.gradientLabel1.BackgroundColor = New BrushInfo(GradientStyle.Gradient, Color.ForwardDiagonal, Color.Biege)
 
-		Private xmlFilename As String = "C:\colorinfo.xml"
+		Private xmlFilename As String = "C:\color.xml"
 
 		Private serializer As XmlSerializer = New XmlSerializer(GetType(Syncfusion.Drawing.BrushInfo))
 
