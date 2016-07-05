@@ -683,7 +683,7 @@ This overloaded method returns the index of the image associated with the dockin
 <tr>
 <td>
 SetDockLabel</td><td>
-Sets the text to be displayed in the docking window caption.Ctrl - Indicates the docking window.strText - A string value representing the text caption.</td></tr>
+Sets the text to be displayed in the docking window caption.</td></tr>
 </table>
 
 ## Caption Buttons

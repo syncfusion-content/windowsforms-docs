@@ -1405,19 +1405,19 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets value indicating whether the user cancels the underlying event.</td></tr>
+Gets / Sets value indicating whether the user cancels the underlying event.</td></tr>
 <tr>
 <td>
 CollapsedText</td><td>
-Gets / sets collapsed text.</td></tr>
+Gets / Sets the CollapsedText.</td></tr>
 <tr>
 <td>
 CollapseName</td><td>
-Gets / sets collapse name.</td></tr>
+Gets / Sets the CollapseName.</td></tr>
 <tr>
 <td>
 Collapser</td><td>
-Gets / sets collapser.</td></tr>
+Gets / Sets the Collapser.</td></tr>
 </table>
 
 
@@ -1463,19 +1463,19 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets value indicating whether the user cancels the underlying event.</td></tr>
+Gets / Sets value indicating whether the user cancels the underlying event.</td></tr>
 <tr>
 <td>
 CollapsedText</td><td>
-Gets / sets collapsed text.</td></tr>
+Gets / Sets the CollapsedText.</td></tr>
 <tr>
 <td>
 CollapseName</td><td>
-Gets / sets collapse name.</td></tr>
+Gets / Sets the CollapseName.</td></tr>
 <tr>
 <td>
 Collapser</td><td>
-Gets / sets collapser.</td></tr>
+Gets / Sets  the Collapser.</td></tr>
 </table>
 
 
@@ -1521,15 +1521,15 @@ Description</th></tr>
 <tr>
 <td>
 CollapsedText</td><td>
-Gets / sets collapsed text.</td></tr>
+Gets / Sets the CollapsedText.</td></tr>
 <tr>
 <td>
 CollapseName</td><td>
-Gets / sets collapse name.</td></tr>
+Gets / Sets the CollapseName.</td></tr>
 <tr>
 <td>
 Collapser</td><td>
-Gets / sets collapser.</td></tr>
+Gets / Sets the Collapser.</td></tr>
 </table>
 
 
@@ -1573,15 +1573,15 @@ Description</th></tr>
 <tr>
 <td>
 CollapsedText</td><td>
-Gets / sets collapsed text.</td></tr>
+Gets / Sets the CollapsedText.</td></tr>
 <tr>
 <td>
 CollapseName</td><td>
-Gets / sets collapse name.</td></tr>
+Gets / Sets the CollapseName.</td></tr>
 <tr>
 <td>
 Collapser</td><td>
-Gets / sets collapser.</td></tr>
+Gets / Sets the Collapser.</td></tr>
 </table>
 
 
@@ -1633,15 +1633,15 @@ Description</th></tr>
 <tr>
 <td>
 CollapsedText</td><td>
-Gets / sets collapsed text.</td></tr>
+Gets / Sets the CollapsedText.</td></tr>
 <tr>
 <td>
 CollapseName</td><td>
-Gets / sets collapse name.</td></tr>
+Gets / Sets the CollapseName.</td></tr>
 <tr>
 <td>
 Collapser</td><td>
-Gets / sets collapser.</td></tr>
+Gets / Sets the Collapser.</td></tr>
 </table>
 
 
@@ -1687,15 +1687,15 @@ Description</th></tr>
 <tr>
 <td>
 CollapsedText</td><td>
-Gets / sets collapsed text.</td></tr>
+Gets / Sets the CollapsedText.</td></tr>
 <tr>
 <td>
 CollapseName</td><td>
-Gets / sets collapse name.</td></tr>
+Gets / Sets the CollapseName.</td></tr>
 <tr>
 <td>
 Collapser</td><td>
-Gets / sets collapser.</td></tr>
+Gets / Sets the Collapser.</td></tr>
 </table>
 
 

@@ -46,7 +46,7 @@ Some of the key features are listed below.
 * Edit supports clipboard operations for editing the text. 
 * Essential Edit enables users to locate a section or a line of a document, using the Bookmarks and Custom Indicators features like in Visual Studio.
 * Edit provides support for Word Wrap. You can also set images for Line and Point Wrapping.
-* Essential Edit provides Visual Studio like support for collapsing and expanding blocks of code through the use of collapsers (plus-minus buttons).
+* Essential Edit provides Visual Studio like support for collapsing and expanding blocks of code through the use of Collapsers (plus-minus buttons).
 * Sections of code which form the outlining blocks can be specified using the Configuration Settings. Edit control defines different brackets for highlighting different languages.
 * Essential Edit provides Printing support. It includes printing options to print a page, print a selection, print an entire document, print a current page and print only a selected set of pages.
 * In the age of globalization the markets for all goods become more and more internationalized, enforcing the need to provide information in a variety of languages. The edit control supports complete localization to any desired language of all the dialogs and strings associated with it.
