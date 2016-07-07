@@ -138,7 +138,7 @@ N> Remember to enable zooming on both the axis using EnableXZooming and EnableYZ
 
 ### Zoom Types
 
-Essential Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The **ZoomType** property is used for specifying the way in which the chart should be zoomed. The Zoomtype property is a **flagged enum** and it can accept all 3 types of zooming.
+Essential Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The **ZoomType** property is used for specifying the way in which the chart should be zoomed. The ZoomType property is a **flagged enum** and it can accept all 3 types of zooming.
 
 <table>
 <tr>
