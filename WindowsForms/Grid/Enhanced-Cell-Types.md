@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Enhanced Cell Types for GridControl
