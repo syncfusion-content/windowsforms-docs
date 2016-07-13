@@ -65,7 +65,7 @@ PrintColumnHeader</td><td>
 Specifies whether column header has to be printed. </td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/common/printing-options">Printing Options</a>
+<a href="/windowsforms/grid/how-to/printing/printing-options">Printing Options</a>
 </td></tr>
 <tr>
 <td>
@@ -73,21 +73,21 @@ PrintHorizontalLines</td><td>
 Specifies whether horizontal lines have to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/common/printing-options">Printing Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/printing/printing-options">Printing Options</a></td></tr>
 <tr>
 <td>
 PrintRowHeader</td><td>
 Specifies whether row header has to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/common/printing-options">Printing Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/printing/printing-options">Printing Options</a></td></tr>
 <tr>
 <td>
 PrintVerticalLines</td><td>
 Specifies whether vertical lines have to be printed.</td><td>
 GridControl</td><td>
 Boolean  </td><td>
-<a href="/windowsforms/grid/how-to/common/printing-options">Printing Options</a></td></tr>
+<a href="/windowsforms/grid/how-to/printing/printing-options">Printing Options</a></td></tr>
 </table>
 
 
