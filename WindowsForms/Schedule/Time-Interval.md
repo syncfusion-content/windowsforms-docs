@@ -69,7 +69,7 @@ Maintains the repeat type value for every Month on the selected date or week.Syn
 <td>
 9.</td><td>
 Every QUARTER</td><td>
-Maintains the repeat type value for every quarter.Syntax:{StartDate};{EndDate};Every QUARTER on {Date} after MONTH:{DiffMonth}{StartDate};{EndDate};Every QUARTER on {Day}:{Date} after MONTH:{DiffMonth}Example:10/13/2015;10/13/2016;Every QUARTER on 20 after MONTH:110/13/2015;10/13/2016;Every QUARTER on MON:1 after MONTH:1</td></tr>
+Maintains the repeat type value for every quarter.Syntax:{StartDate};{EndDate};Every QUARTER on {Date} after MONTH:{MonthDifference}{StartDate};{EndDate};Every QUARTER on {Day}:{Date} after MONTH:{MonthDifference}Example:10/13/2015;10/13/2016;Every QUARTER on 20 after MONTH:110/13/2015;10/13/2016;Every QUARTER on MON:1 after MONTH:1</td></tr>
 <tr>
 <td>
 10.</td><td>

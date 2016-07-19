@@ -378,7 +378,7 @@ This section deals with license keys, patches, and the uninstallation process.
 
 
 
-Essentialqtpaddonsetup is the setup file for Essential QuickTest Professional that can be installed with the same license key used to install the Essential Studio. Essential QuickTest Professional does not require a separate license. 
+EssentialQTPAddOnSetup is the setup file for Essential QuickTest Professional that can be installed with the same license key used to install the Essential Studio. Essential QuickTest Professional does not require a separate license. 
 
 
 

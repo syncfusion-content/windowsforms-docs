@@ -51,7 +51,7 @@ Syncfusion.Tools.Windows assembly contains classes that implements all the tools
 <tr>
 <td>
 {{'[Syncfusion.Linq.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.Linq.Base.html)'| markdownify }} <br/><br/></td><td>
-Syncfusion.LinQ.Base contains fundamental and base classes for creating and manipulating Linq queries.<br/><br/></td></tr>
+Syncfusion.LinQ.Base contains fundamental and base classes for creating and manipulating LINQ queries.<br/><br/></td></tr>
 <tr>
 <td>
 {{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base.html)'| markdownify }}<br/><br/></td><td>

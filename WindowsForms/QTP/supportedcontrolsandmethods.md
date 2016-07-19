@@ -82,15 +82,15 @@ SelectRange(string range, int top, int left, int bottom, int right)</td><td>
 Selects the range.</td></tr>
 <tr>
 <td>
-SetCellData(int row, int col, string str)</td><td>
+SetCellData(int row, int col, string value)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
-SetCellCheckBox(int row, int col, string str)</td><td>
+SetCellCheckBox(int row, int col, string text)</td><td>
 Sets the cell value of the check box cell.</td></tr>
 <tr>
 <td>
-SetCellRadioButton(int row, int col, string str)</td><td>
+SetCellRadioButton(int row, int col, string text)</td><td>
 Sets the cell value of the radio button cell.</td></tr>
 <tr>
 <td>
@@ -249,11 +249,11 @@ Selects the range.</td></tr>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
- SetCellCheckBox(int row, int col, string str)</td><td>
+ SetCellCheckBox(int row, int col, string text)</td><td>
 Sets the cell value of the check box cell.</td></tr>
 <tr>
 <td>
- SetCellRadioButton(int row, int col, string str)</td><td>
+ SetCellRadioButton(int row, int col, string text)</td><td>
 Sets the cell value of the radio button cell.</td></tr>
 <tr>
 <td>
@@ -536,15 +536,15 @@ Selects the range.</td></tr>
 Selects a record for the GridGroupingControl.</td></tr>
 <tr>
 <td>
- SetCellData(object row, object col, string str)</td><td>
+ SetCellData(object row, object col, string value)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
- SetCellCheckBox(object row, object col, string str)</td><td>
+ SetCellCheckBox(object row, object col, string text)</td><td>
 Sets the cell value of the check box cell.</td></tr>
 <tr>
 <td>
- SetCellRadioButton(object row, object col, string str)</td><td>
+ SetCellRadioButton(object row, object col, string text)</td><td>
 Sets the cell value of the radio button cell.</td></tr>
 <tr>
 <td>
@@ -556,7 +556,7 @@ Sets the location of current cell.</td></tr>
 Sets the scroll position.</td></tr>
 <tr>
 <td>
- SortColumn(string table name,object col, string sortBehavior, bool cntrl)</td><td>
+ SortColumn(string table name,object col, string sortBehavior, bool control)</td><td>
 Sorts the column.</td></tr>
 <tr>
 <td>
@@ -744,7 +744,7 @@ Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-Set(string chkState)</td><td>
+Set(string CheckState)</td><td>
 The CheckState of the CheckBoxAdv.</td></tr>
 <tr>
 <td colspan = "2">
@@ -887,11 +887,11 @@ void PopupClose(object visible);</td><td>
 Interface to close the popup window.</td></tr>
 <tr>
 <td>
-void SetTodayValue(string str);</td><td>
+void SetTodayValue(string date);</td><td>
 Interface to set the today value when the today button is clicked.</td></tr>
 <tr>
 <td>
-void SetNoValue(string str);</td><td>
+void SetNoValue();</td><td>
 Interface to set the null value when the None button is clicked.</td></tr>
 <tr>
 <td>
@@ -1228,7 +1228,7 @@ Set(string text)</td><td>
 Sets the text in the TextBoxExt.</td></tr>
 <tr>
 <td>
-SelectText(string selText, object start, object length);</td><td>
+SelectText(string Text, object start, object length);</td><td>
 Select the text in the TextBoxExt.</td></tr>
 </table>
 
@@ -1244,7 +1244,7 @@ Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-Set(string chkState)</td><td>
+Set(string CheckState)</td><td>
 Sets the CheckState of the CheckBox in the DateTimeAdv.</td></tr>
 <tr>
 <td>
