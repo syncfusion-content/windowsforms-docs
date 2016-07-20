@@ -288,12 +288,12 @@ x = acsch(y)
 `ADDRESS` function returns the address of a cell in a worksheet given specified row and column numbers.
 
 #### Syntax
-ADDRESS(row_num, column_num, [abs_num], [a1], [sheet_text])
+ADDRESS(row_number, column_number, [abs_number], [a1], [sheet_text])
 
 #### Where:
-* **row_num**: A numeric value that specifies the row number.
-* **column_num**: A numeric value that specifies the column number
-* **abs_num**: Optional. A numeric value that specifies the type of reference to return.
+* **row_number**: A numeric value that specifies the row number.
+* **column_number**: A numeric value that specifies the column number
+* **abs_number**: Optional. A numeric value that specifies the type of reference to return.
 
 ### AND
 Returns `True` if all the arguments have a logical value of true and returns `False` if at least one argument is false.
@@ -369,14 +369,14 @@ ATAN(number)
 * **number** is the tangent of the angle that you want.
 
 ### ATAN2
-Returns the inverse tangent of the specified x- and y-coordinates. The arctangent is the angle from the x-axis to a line containing the origin (0, 0) and the point (x_num, y_num). The angle is given in radians between -pi and pi, excluding -pi.
+Returns the inverse tangent of the specified x- and y-coordinates. The arctangent is the angle from the x-axis to a line containing the origin (0, 0) and the point (x_number, y_number). The angle is given in radians between -pi and pi, excluding -pi.
 
 #### Syntax
-ATAN2(x_num,y_num)
+ATAN2(x_number,y_number)
 
 #### Where:
-* **x_num** is the X coordinate of the point.
-* **y_num** is the Y coordinate of the point.
+* **x_number** is the X coordinate of the point.
+* **y_number** is the Y coordinate of the point.
 
 ### ATANH
 Returns the inverse hyperbolic tangent of a number. Number must be strictly between -1 and 1. The inverse hyperbolic tangent is the value whose hyperbolic tangent is a number, so ATANH(TANH(number)) equals the given number.
@@ -2115,12 +2115,12 @@ HEX2DEC(number)
 Searches for a value in the top row of the array of values and then returns a value in the same column from a row you specify in the array. Use `HLOOKUP` when your comparison values are located in a row across the top of a table of data and you want to look down a specified number of rows. Use `VLOOKUP` when your comparison values are located in a column to the left of the data you want to find.
 
 #### Syntax
-HLOOKUP(lookup_value, table_array, row_index_num, range_lookup)
+HLOOKUP(lookup_value, table_array, row_index_number, range_lookup)
 
 #### Where:
 * **lookup_value** is the value to be found in the first row of the table. Lookup_value can be a value, a reference or a text string.
 * **table_array** is a table of information in which, data is looked up. Use a reference to a range or a range name.
-* **row_index_num** is the row number in table_array from which, the matching value will be returned. A row_index_num of 1 returns the first row value in table_array, a row_index_num of 2 returns the second row value in table_array and so on.
+* **row_index_number** is the row number in table_array from which, the matching value will be returned. A row_index_num of 1 returns the first row value in table_array, a row_index_num of 2 returns the second row value in table_array and so on.
 * **range_lookup** is a logical value that specifies whether you want HLOOKUP to find an exact match or an approximate match. If True or omitted, an approximate match is returned. In other words, if an exact match is not found, the next largest value that is less than the lookup_value is returned. (This requires your lookup values to be sorted.) If False, HLOOKUP will find an exact match.
 
 ### HYPERLINK
@@ -2748,11 +2748,11 @@ LARGE(array, k),
 `LEFT` returns the first character or characters in a text string based on the number of characters you specify.
 
 #### Syntax
-LEFT(text, num_chars)
+LEFT(text, numeric_chars)
 
 #### Where:
 * **text** is the text string that contains characters you want to extract.
-* **num_chars**specifies the number of characters you want LEFT to extract.
+* **numeric_chars**specifies the number of characters you want LEFT to extract.
 
 ### LEFTB
 The `LEFTB` function returns the first character or characters in a text string, based on the number of bytes you specify for double-byte character set (DBCS) languages.
@@ -2991,7 +2991,7 @@ MEDIAN(number1, number2, …),
 `MID` returns a text segment of a character string. The parameters specify the starting position and the number of characters.
 
 #### Syntax
-MID(text, start_position, num_chars),
+MID(text, start_position, numeric_chars),
 
 #### Where:
 * **text** is the text containing characters to extract.
@@ -3002,12 +3002,12 @@ MID(text, start_position, num_chars),
 The `MIDB` function returns a specific number of characters from a text string, starting at the position you specify, based on the number of bytes you specify for double-byte character set (DBCS) languages.
 
 #### Syntax
-MIDB(text, startNum, numBytes)
+MIDB(text, startNumber, numericBytes)
 
 #### Where:
 * **text** is a string that contains the characters that you want to return.
-* **startNum** is the position of the first character that you want to extract in text.
-* **numBytes** specifies the number of characters you want in bytes.
+* **startNumber** is the position of the first character that you want to extract in text.
+* **numericBytes** specifies the number of characters you want in bytes.
 
 ### MIN
 Returns the smallest number in a set of values.
@@ -3779,11 +3779,11 @@ RAND( )
 `RANDBETWEEN` function returns a random number that is between the given ranges. This function returns a new random number each time in recalculation.
 
 #### Syntax
-RANDBETWEEN (start_num, end_num),
+RANDBETWEEN (start_number, end_number),
 
 #### Where:
-* **start_num**– is the smallest integer.
-* **end_num**– is the largest integer.
+* **start_number**– is the smallest integer.
+* **end_number**– is the largest integer.
 
 ### RANK
 Returns the rank of a number in a list of numbers. The rank of a number is its size relative to other values in a list. (If you were to sort the list, the rank of the number would be its position)
@@ -3845,24 +3845,24 @@ RECEIVED(settlement, maturity, investment, discount, basis)
 The `REPLACE` function replaces a certain part of text with a different part of text based on the number of characters given.
 
 #### Syntax
-REPLACE(oldText, startNum, numChars, newText)
+REPLACE(oldText, start_number, numeric_chars, newText)
 
 #### Where:
 * **oldText** is the text that needs to be replaced.
-* **startNum** is the position of the character in oldText
-* **numChars** is the number of characters that is need to be replaced
+* **startNumber** is the position of the character in oldText
+* **numeric_chars** is the number of characters that is need to be replaced
 * **newText** is the text that replaces the character in old text.
 
 ### REPLACEB
 The `REPLACEB` function replaces a certain part of text with a different part of text based on the number of bytes given.
 
 #### Syntax
-REPLACEB(oldText, startNum, numBytes, newText)
+REPLACEB(oldText, start_number, number_bytes, newText)
 
 #### Where:
 * **oldText** is the text that needs to be replaced.
-* **startNum** is the position of the character in oldText
-* **numChars** is the number of bytes that is need to be replaced,
+* **startNumber** is the position of the character in oldText
+* **number_bytes** is the number of bytes that is need to be replaced,
 * newText is the text that replaces the character in old text.
 
 ### REPT
@@ -3882,11 +3882,11 @@ Blank text - occurs if number is zero.
 `RIGHT` returns the last character or characters in a text string based on the number of characters you specify.
 
 #### Syntax
-RIGHT(text, num_chars),
+RIGHT(text, numeric_chars),
 
 #### Where:
 * **text** is the text string containing the characters you want to extract.
-* **num_chars**specifies the number of characters you want RIGHT to extract.
+* **numeric_chars**specifies the number of characters you want RIGHT to extract.
 
 ### RIGHTB
 The RIGHTB function returns the last character or characters in a string, based on the number of bytes you specify for double-byte character set (DBCS) languages.
@@ -3912,21 +3912,21 @@ ROMAN( number, (form) )
 Rounds a number to a specified number of digits.
 
 #### Syntax
-ROUND(number, num_digits),
+ROUND(number, number_digits),
 
 #### Where:
 * **number** is the number you want to round off.
-* **num_digits**specifies the number of digits you want to round off.
+* **number_digits**specifies the number of digits you want to round off.
 
 ### ROUNDDOWN
 Rounds a number down towards zero.
 
 #### Syntax
-ROUNDDOWN(number, num_digits),
+ROUNDDOWN(number, number_digits),
 
 #### Where:
 * **number** is any real number that you want rounded down.
-* **Num_digits** is the number of digits to which you want to round a number.
+* **number_digits** is the number of digits to which you want to round a number.
 
 #### Remark
 ROUNDDOWN behaves like ROUND, except that it always rounds a number down.
@@ -3935,11 +3935,11 @@ ROUNDDOWN behaves like ROUND, except that it always rounds a number down.
 Rounds a number up away from 0 (zero).
 
 #### Syntax
-ROUNDUP(number, num_digits),
+ROUNDUP(number, number_digits),
 
 #### Where:
 * **number** is any real number that you want rounded up.
-* **num_digits** is the number of digits to which you want to round a number.
+* **number_digits** is the number of digits to which you want to round a number.
 
 #### Remarks
 ROUNDUP behaves like ROUND, except that it always rounds a number up.
@@ -3997,18 +3997,18 @@ SEARCH(substring, string, [start_position] )
 #### Where:
 * **substring**: Required. The text to be found.
 * **string:Required**. The text in which to search for the value of the substring.
-* **start_num**: Optional. The starting position for searching the string.
+* **start_number**: Optional. The starting position for searching the string.
 
 ### SEARCHB
 The `SEARCHB` function finds one text string (find_text) within another text string (within_text), and returns the number of the starting position of find_text for double-byte character set (DBCS) languages.
 
 #### Syntax
-SEARCHB(findText,withinText, startNum )
+SEARCHB(findText,withinText, start_number )
 
 #### Where:
 * **findText** is the text that you want to find.
 * **withinText** is the text in which you want to search for findText.
-* **startNum** is the character number in withinText, at which you want to start the search.
+* **start_number** is the character number in withinText, at which you want to start the search.
 
 ### SEC
 `SEC` function returns the secant of an angle.
@@ -4256,13 +4256,13 @@ STEYX(known_y’s, known_x’s),
 Substitutes new_text for old_text in a text string. Use SUBSTITUTE when you want to replace specific text in a text string; use REPLACE when you want to replace any text that occurs in a specific location in a text string.
 
 #### Syntax
-SUBSTITUTE(text, old_text, new_text, instance_num)
+SUBSTITUTE(text, old_text, new_text, instance_number)
 
 #### Where:
 * **text** is the text or the reference to a cell containing text for which you want to substitute characters.
 * **old_text** is the text you want to replace.
 * **new_text** is the text you want to replace old_text with
-* **instance_num**specifies which occurrence of old_text you want to replace with new_text. If you specify instance_num, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
+* **instance_number**specifies which occurrence of old_text you want to replace with new_text. If you specify instance_num, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
 
 ### SUBTOTAL
 `SUBTOTAL` function returns a subtotal in a list. Once the subtotal list is created, you can modify it by editing the `SUBTOTAL` function.
@@ -4482,11 +4482,11 @@ TRIMMEAN(array, percent)
 `TRUNC` function truncates a supplied number to a specified number of decimal places.
 
 #### Syntax
-TRUNC(number, num_digits),
+TRUNC(number, number_digits),
 
 #### Where:
 * **number** is the number you want to truncate. 
-* **num_digits** is an optional argument that specifies the number of decimal places to truncate the supplied number to. The default value is 0.
+* **number_digits** is an optional argument that specifies the number of decimal places to truncate the supplied number to. The default value is 0.
 
 ### TRUE
 `TRUE` function returns the logical value when the given sting value is true.
@@ -4606,12 +4606,12 @@ VDB(cost, salvage, life, start_period, end_period, factor, no_switch)
 Searches for a value in the left most column of a table and then returns a value in the same row from a column you specify in the table. Use `VLOOKUP` instead of `HLOOKUP` when your comparison values are located in a column to the left of the data you want to find. The V in `VLOOKUP` stands for “Vertical.”
 
 #### Syntax
-VLOOKUP(lookup_value, table_array, col_index_num, range_lookup)
+VLOOKUP(lookup_value, table_array, col_index_number, range_lookup)
 
 #### Where:
 * **lookup_value** is the value to be found in the first column of the array. Lookup_value can be a value, a reference, or a text string.
 * **table_array** is the table of information in which data is looked up. Use a reference to a range or a range name.
-* **col_index_num** is the column number in table_array from which the matching value must be returned. Col_index_num of 1 returns the value in the first column of the table_array; col_index_num of 2 returns the value in the second column of the table_array, and so on.
+* **col_index_number** is the column number in table_array from which the matching value must be returned. Col_index_num of 1 returns the value in the first column of the table_array; col_index_num of 2 returns the value in the second column of the table_array, and so on.
 * **range_lookup** is a logical value that specifies whether you want VLOOKUP to find an exact match or an approximate match. If True or omitted, an approximate match is returned. In other words, if an exact match is not found, the next largest value that is less than the lookup_value is returned.
 
 ### WEBSERVICE
@@ -4640,14 +4640,14 @@ WEEKDAY(serial_number, return_type),
 For a supplied a date, the` WEEKNUM` function returns an integer representing the week number (from 1 to 53) of the year.
 
 #### Syntax
-WEEKNUM( serialNum, [returnType] )
+WEEKNUM( serial_number, [returnType] )
 
 #### Where:
-* **serialNum** is the date that you want to return the week number for.
+* **serial_number** is the date that you want to return the week number for.
 * **[returnType]** is an optional argument that specifies which numbering system should be used and which weekday should be treated as the start of the week.
 
 #### Remarks
-`#VALUE!` - occurs if the supplied serialNum cannot be recognized as a numeric value or a date.<br/>
+`#VALUE!` - occurs if the supplied serial_number cannot be recognized as a numeric value or a date.<br/>
 `#NUM!`- occurs if the supplied [returnType] argument is not one of the above listed permitted values.<br/>
 `#NUM!`- occurs if the supplied serialNum argument is numeric but is out of range for the current date base.
 

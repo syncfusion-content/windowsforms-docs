@@ -21,7 +21,7 @@ Nested Drop-down grids are used to represent multi-level data in a grid. For exa
 
 In the code example below, the parent (primary) grid is the 'Customers' table from Northwind database. On clicking a row of this table, the 'Orders' table will be displayed in a new grid providing details on orders placed by the customers. On clicking any of the rows in Orders table, another grid named 'Order_Details' table is displayed providing details on the order details of the selected row in the Orders table.  
 
-This example has a derived GridDataBoundGrid class called GridHierDataBoundGrid used for all the grids to be displayed. In the constructor for this class, the tables for parent and child are to be passed.
+This example has a derived GridDataBoundGrid class called GridHierarchicalDataBoundGrid used for all the grids to be displayed. In the constructor for this class, the tables for parent and child are to be passed.
 {% highlight c# %}
 
 
