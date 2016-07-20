@@ -82,7 +82,7 @@ SelectRange(string range, int top, int left, int bottom, int right)</td><td>
 Selects the range.</td></tr>
 <tr>
 <td>
-SetCellData(int row, int col, string value)</td><td>
+SetCellData(int row, int col, string cellValue)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
@@ -245,7 +245,7 @@ Resizes the specified rows.</td></tr>
 Selects the range.</td></tr>
 <tr>
 <td>
- SetCellData(int row, int col, string str)</td><td>
+ SetCellData(int row, int col, string cellValue)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
@@ -536,7 +536,7 @@ Selects the range.</td></tr>
 Selects a record for the GridGroupingControl.</td></tr>
 <tr>
 <td>
- SetCellData(object row, object col, string value)</td><td>
+ SetCellData(object row, object col, string cellValue)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
@@ -744,7 +744,7 @@ Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-Set(string CheckState)</td><td>
+Set(string checkState)</td><td>
 The CheckState of the CheckBoxAdv.</td></tr>
 <tr>
 <td colspan = "2">
@@ -1228,7 +1228,7 @@ Set(string text)</td><td>
 Sets the text in the TextBoxExt.</td></tr>
 <tr>
 <td>
-SelectText(string Text, object start, object length);</td><td>
+SelectText(string text, object start, object length);</td><td>
 Select the text in the TextBoxExt.</td></tr>
 </table>
 
@@ -1244,7 +1244,7 @@ Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-Set(string CheckState)</td><td>
+Set(string checkState)</td><td>
 Sets the CheckState of the CheckBox in the DateTimeAdv.</td></tr>
 <tr>
 <td>
