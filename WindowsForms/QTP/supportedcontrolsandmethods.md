@@ -82,7 +82,7 @@ SelectRange(string range, int top, int left, int bottom, int right)</td><td>
 Selects the range.</td></tr>
 <tr>
 <td>
-SetCellData(int row, int col, string cellValue)</td><td>
+SetCellData(int row, int col, string value)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
@@ -245,7 +245,7 @@ Resizes the specified rows.</td></tr>
 Selects the range.</td></tr>
 <tr>
 <td>
- SetCellData(int row, int col, string cellValue)</td><td>
+ SetCellData(int row, int col, string value)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
@@ -536,7 +536,7 @@ Selects the range.</td></tr>
 Selects a record for the GridGroupingControl.</td></tr>
 <tr>
 <td>
- SetCellData(object row, object col, string cellValue)</td><td>
+ SetCellData(object row, object col, string value)</td><td>
 Sets the cell value of the cell.</td></tr>
 <tr>
 <td>
