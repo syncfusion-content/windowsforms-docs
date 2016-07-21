@@ -941,7 +941,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/spellchecker/overview">SpellChecker</a><br/><br/>
+			<a href="/windowsforms/spellcheckeradv/overview">SpellCheckerAdv</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
