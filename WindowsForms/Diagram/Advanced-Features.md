@@ -3509,7 +3509,7 @@ It returns the following possible values,* Front-whether the controller bring th
 Returns the node's name by which the node was affected.</td></tr>
 <tr>
 <td>
-ZOrder</td><td>
+Z-order</td><td>
 Returns the current Z-order value.</td></tr>
 </table>
 
