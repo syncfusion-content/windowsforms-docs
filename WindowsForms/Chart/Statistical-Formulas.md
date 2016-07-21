@@ -783,7 +783,7 @@ Steps to perform the test
    * Null Hypothesis: Difference between the two means is zero.
    * Alternate Hypothesis: Difference between the two means is not zero.
 2. Calculate the difference between two series on each pair of values. Calculate the mean difference ( Mdiff ), i.e. mean of the new series values.
-3. Calculate the Standard Deviation of the differences( _Sd_ ).
+3. Calculate the Standard Deviation of the differences( _SD_ ).
 4. Get the degrees of freedom.
 
 
@@ -793,7 +793,7 @@ Steps to perform the test
 
 5. Compute the t-statistic as given below.
 
-   _t = ( Mdiff - Md ) / [Sd * Sqrt( 1/n1 )]_
+   _t = ( Mdiff - Md ) / [SD * Sqrt( 1/n1 )]_
 
 
 
