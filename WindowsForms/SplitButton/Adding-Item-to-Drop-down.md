@@ -11,13 +11,21 @@ documentation: ug
 
 This feature enables you to add items to the SplitButton drop-down list. 
 
-You can add item using the _DropDownItems_ property. The following code illustrates how to add items to the drop-down list:
+In SplitButton, you can add ToolStripItem as drop-down using the _DropDownItems_ property. The following code illustrates how to add items to the drop-down list:
 
 {% highlight c# %}
 
-	this.splitButton1.DropDownItems.Add("Item 1");
+    toolstripitem toolStripItem1 = new toolstripitem();
+    toolStripItem1.Text = "Paste";
+    this.toolstripitem1.Image = ((System.Drawing.Image)(resources.GetObject("toolstripitem1.Image")));
+    this.splitButton.DropDownItems.Add(toolStripItem1);
 
-	this.splitButton1.DropDownItems.Add("Item 2");
+
+    toolstripitem toolStripItem2 = new toolstripitem();
+    toolStripItem2.Text = "Copy";
+    this.toolstripitem2.Image = ((System.Drawing.Image)(resources.GetObject("toolstripitem2.Image")));
+    this.splitButton.DropDownItems.Add(toolStripItem2);
+
 
 
 {% endhighlight %}
@@ -25,9 +33,17 @@ You can add item using the _DropDownItems_ property. The following code illustra
 
 {% highlight vbnet %}
 
-Me.splitButton1.DropDownItems.Add("Item 1")
+    Dim toolStripItem1 As New toolstripitem()
+    toolStripItem1.Text = "Paste"
+    Me.toolstripitem1.Image = (CType(resources.GetObject("toolstripitem1.Image"), System.Drawing.Image))
+    Me.splitButton.DropDownItems.Add(toolStripItem1)
 
-Me.splitButton1.DropDownItems.Add("Item 2")
+
+    Dim toolStripItem2 As New toolstripitem()
+    toolStripItem2.Text = "Copy"
+    Me.toolstripitem2.Image = (CType(resources.GetObject("toolstripitem2.Image"), System.Drawing.Image))
+    Me.splitButton.DropDownItems.Add(toolStripItem2)  
+
 
 {% endhighlight %}
 
@@ -38,7 +54,6 @@ Me.splitButton1.DropDownItems.Add("Item 2")
 
 
 
-Removing Item from Drop-Down List
 
 You can also remove the added items if required. The following code illustrates how to remove items form drop-down list:
 
