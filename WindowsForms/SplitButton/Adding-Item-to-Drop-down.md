@@ -53,7 +53,7 @@ In SplitButton, you can add ToolStripItem as drop-down using the _DropDownItems_
 ![](Adding-Item-to-Drop-down_images/Adding-Item-to-Drop-down_img1.png)
 
 
-
+Removing item from Drop-Down list
 
 You can also remove the added items if required. The following code illustrates how to remove items form drop-down list:
 
