@@ -1432,6 +1432,221 @@ Absolute,Relative</td><td>
 GroupNodePosition</td></tr>
 </table>
 
+
+## Diagram Data Binding
+
+### Populating the Data
+
+*	Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
+*	Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
+
+### DataBinding APIs
+
+<table>
+<th>Properties</th><th>Description</th>
+<tr>
+    <td>DefaultNode</td>
+    <td>Used to get/set the default diagram’s node like rectangle, ellipse, polygon and etc.</td>
+</tr>
+<tr>
+    <td>DefaultConnector</td>
+    <td>Used to get/set the default diagram’s connector like LineConnector, OrthogonalConnector, OrgLineConnector and etc.</td>
+</tr>
+<tr>
+    <td>Id</td>
+    <td>Used to get/set the desired column as a child id from the table.</td>
+</tr>
+<tr>
+    <td>ParentId</td>
+    <td>Used to get/set the desired column as a parent id from the table.</td>
+</tr>
+<tr>
+    <td>DataSource</td>
+    <td>This API object act as DataTables which is fetched the table data from the XML or DataSource.</td>
+</tr>
+</table>
+
+### Xml Data Binding
+
+Diagram can be populated based on the user defined XML data by mapping the relevant data source fields.
+To map the user defined XML data with Diagram, you have to configure the fields of DataSource. The following code example illustrates how to bind XML data with the Diagram.
+
+{% highlight xml %}
+
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="Employees.xsd" generated="2005-01-18T15:03:23">
+  <Employees EmployeeID="113001">
+   <Name>Antwone Burnett</Name>
+    <Designation>Chief Executive Officer</Designation>
+  </Employees>  
+  
+  <Employees EmployeeID="113002">
+   <Name>Christina Berglund</Name>
+    <Designation>Vice President of sales</Designation>
+    <ManagerID>113001</ManagerID>
+  </Employees>
+  <Employees EmployeeID="113003">
+   <Name>Thomas Hardy</Name>
+    <Designation>Vice President of Engineering</Designation>
+    <ManagerID>113001</ManagerID>
+  </Employees>
+  <Employees  EmployeeID="113004">
+   <Name>Ana Trujillo</Name>
+    <Designation>Vice President of Production</Designation>
+    <ManagerID>113001</ManagerID>
+  </Employees>
+  <Employees  EmployeeID="113005">
+   <Name>Antonio Moreno</Name>
+    <Designation>Information Services Manager</Designation>
+    <ManagerID>113001</ManagerID>
+  </Employees>
+  <Employees  EmployeeID="113006">
+   <Name>Maria Anders</Name>
+    <Designation>Chief Financial Officer</Designation>
+    <ManagerID>113001</ManagerID>
+  </Employees>
+  <Employees  EmployeeID="113007">
+   <Name>Van Der Wane</Name>
+    <Designation>Marketing Manager</Designation>
+    <ManagerID>113001</ManagerID>
+  </Employees>
+   <Employees  EmployeeID="113008">
+   <Name>Alexis Patrick</Name>
+    <Designation>Production Supervisor</Designation>
+    <ManagerID>113003</ManagerID>
+  </Employees>
+    <Employees  EmployeeID="113009">
+   <Name>Suzie Watts</Name>
+    <Designation>Quality Assurance Manager</Designation>
+    <ManagerID>113003</ManagerID>
+  </Employees>  
+  <Employees  EmployeeID="113010">
+   <Name>Hanna Moos</Name>
+    <Designation>Account Manager</Designation>
+    <ManagerID>113006</ManagerID>
+  </Employees>
+ </dataroot>
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Binds the XML(local data) with node
+
+diagram1.Binding.DefaultNode = rect;
+
+diagram1.Binding.ParentId = "ManagerID";
+
+diagram1.Binding.Id = "EmployeeID";
+
+diagram1.Binding.DataSource = diagram1.GetDataSourceFromXML("..\\..\\XML Binding1.xml");
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Binds the XML(local data) with node
+
+diagram1.Binding.DefaultNode = rect
+
+diagram1.Binding.ParentId = "ManagerID"
+
+diagram1.Binding.Id = "EmployeeID"
+
+diagram1.Binding.DataSource = diagram1.GetDataSourceFromXML("..\..\XML Binding1.xml")
+
+{% endhighlight %}
+
+
+Sample diagram is as follows,
+
+
+
+![](Advanced-Features_images/Advanced-Features_img69.jpg)
+
+
+### DataBase Binding
+
+You can bind the Diagram with Remote Data by using SqlConnection.
+The following code illustrates how to bind the data to the Diagram.
+
+{% highlight c# %}
+
+diagram1.Binding.Id = "Id";
+
+diagram1.Binding.ParentId = "ParentId";
+
+DataTable table = new DataTable("alldata");
+
+string command = "SELECT * FROM databind ";
+
+using (SqlConnection conn = new SqlConnection(cbn.Connection.ConnectionString))
+
+{
+
+using (SqlCommand cmd = new SqlCommand(command, conn))
+
+{
+
+SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+
+conn.Open();
+
+adapt.Fill(table);
+
+//Passing the table data to DataSource
+
+diagram1.Binding.DataSource = table;
+
+conn.Close();
+
+}
+
+}
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+diagram1.Binding.Id = "Id"
+
+diagram1.Binding.ParentId = "ParentId"
+
+Dim table As New DataTable("alldata")
+
+Dim command As String = "SELECT * FROM databind "
+
+Using conn As New SqlConnection(cbn.Connection.ConnectionString)
+
+Using cmd As New SqlCommand(command, conn)
+
+Dim adapt As New SqlDataAdapter(cmd)
+
+conn.Open()
+
+adapt.Fill(table)
+
+'Passing the table data to DataSource
+
+diagram1.Binding.DataSource = table
+
+conn.Close()
+
+End Using
+
+End Using
+
+{% endhighlight %}
+
+
+
+Sample diagram is as follows,
+
+
+
+![](Advanced-Features_images/Advanced-Features_img70.jpg)
+
+
+
 ## Scrolling, Zooming And Panning Support
 
 The interactive features like scrolling, zooming and panning support are discussed in this section:
