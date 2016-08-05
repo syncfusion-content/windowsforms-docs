@@ -1440,31 +1440,7 @@ GroupNodePosition</td></tr>
 *	Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 *	Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
-### DataBinding APIs
-
-<table>
-<th>Properties</th><th>Description</th>
-<tr>
-    <td>DefaultNode</td>
-    <td>Used to get/set the default diagram’s node like rectangle, ellipse, polygon and etc.</td>
-</tr>
-<tr>
-    <td>DefaultConnector</td>
-    <td>Used to get/set the default diagram’s connector like LineConnector, OrthogonalConnector, OrgLineConnector and etc.</td>
-</tr>
-<tr>
-    <td>Id</td>
-    <td>Used to get/set the desired column as a child id from the table.</td>
-</tr>
-<tr>
-    <td>ParentId</td>
-    <td>Used to get/set the desired column as a parent id from the table.</td>
-</tr>
-<tr>
-    <td>DataSource</td>
-    <td>This API object act as DataTables which is fetched the table data from the XML or DataSource.</td>
-</tr>
-</table>
+To explore those properties, see [Data source settings](http://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Binding_properties.html)
 
 ### Xml Data Binding
 
