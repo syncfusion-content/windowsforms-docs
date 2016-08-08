@@ -1543,7 +1543,7 @@ Sample diagram is as follows,
 
 ### DataBase Binding
 
-You can bind the Diagram with Remote Data by using SqlConnection.
+You can bind the Diagram with DataBase data by using SqlConnection.
 The following code illustrates how to bind the data to the Diagram.
 
 {% highlight c# %}
@@ -1555,6 +1555,8 @@ diagram1.Binding.ParentId = "ParentId";
 DataTable table = new DataTable("alldata");
 
 string command = "SELECT * FROM databind ";
+
+diagramDataSetTableAdapters.databindTableAdapter cbn = new diagramDataSetTableAdapters.databindTableAdapter();
 
 using (SqlConnection conn = new SqlConnection(cbn.Connection.ConnectionString))
 
@@ -1588,6 +1590,8 @@ diagram1.Binding.Id = "Id"
 diagram1.Binding.ParentId = "ParentId"
 
 Dim table As New DataTable("alldata")
+
+Dim cbn As New diagramDataSetTableAdapters.databindTableAdapter()
 
 Dim command As String = "SELECT * FROM databind "
 
