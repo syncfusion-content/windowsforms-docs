@@ -1509,21 +1509,73 @@ To map the user defined XML data with Diagram, you have to configure the fields 
 
 //Binds the XML(local data) with node
 
-diagram1.Binding.DefaultNode = rect;
+ Syncfusion.Windows.Forms.Diagram.Rectangle rect = new Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 40, MeasureUnits.Pixel);
+ 
+ rect.LineStyle.LineWidth = 0;
+ 
+ rect.FillStyle.Color = Color.DarkCyan;
+ 
+ // Default Label 
+ 
+ Syncfusion.Windows.Forms.Diagram.Label label = new Syncfusion.Windows.Forms.Diagram.Label();
+ 
+ label.FontStyle.Family = "Segoe UI";
+ 
+ label.FontStyle.Size = 9;
+ 
+ label.FontStyle.Bold = true;
+ 
+ label.FontColorStyle.Color = Color.White;
+ 
+ label.UpdatePosition = true;
+ 
+ rect.Labels.Add(label);
+ 
+ //Initializing Data Binding properties
+ 
+ diagram1.Binding.DefaultNode = rect;
+ 
+ diagram1.Binding.Label.Add("Name");
+ 
+ diagram1.Binding.ParentId = "ManagerID";
+ 
+ diagram1.Binding.Id = "EmployeeID";
 
-diagram1.Binding.ParentId = "ManagerID";
-
-diagram1.Binding.Id = "EmployeeID";
-
-diagram1.Binding.DataSource = diagram1.GetDataSourceFromXML("..\\..\\XML Binding1.xml");
-
+ diagram1.Binding.DataSource = diagram1.GetDataSourceFromXML("..\\..\\XML Binding1.xml");
+ 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
 'Binds the XML(local data) with node
 
+Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 40, MeasureUnits.Pixel)
+
+rect.LineStyle.LineWidth = 0
+
+rect.FillStyle.Color = Color.DarkCyan
+
+' Default Label 
+
+Dim label As New Syncfusion.Windows.Forms.Diagram.Label()
+
+label.FontStyle.Family = "Segoe UI"
+
+label.FontStyle.Size = 9
+
+label.FontStyle.Bold = True
+
+label.FontColorStyle.Color = Color.White
+
+label.UpdatePosition = True
+
+rect.Labels.Add(label)
+
+'Initializing Data Binding properties
+
 diagram1.Binding.DefaultNode = rect
+
+diagram1.Binding.Label.Add("Name")
 
 diagram1.Binding.ParentId = "ManagerID"
 
@@ -1547,6 +1599,31 @@ You can bind the Diagram with DataBase data by using SqlConnection.
 The following code illustrates how to bind the data to the Diagram.
 
 {% highlight c# %}
+Syncfusion.Windows.Forms.Diagram.Rectangle rect = new Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 40, MeasureUnits.Pixel);
+
+rect.LineStyle.LineWidth = 0;
+
+rect.FillStyle.Color = Color.DarkCyan;
+
+// Default Label 
+
+Syncfusion.Windows.Forms.Diagram.Label label = new Syncfusion.Windows.Forms.Diagram.Label();
+
+label.FontStyle.Family = "Segoe UI";
+
+label.FontStyle.Size = 10;
+
+label.FontStyle.Bold = true;
+
+label.FontColorStyle.Color = Color.White;
+
+label.UpdatePosition = true;
+
+rect.Labels.Add(label);
+
+//Initializing Data Binding properties
+            
+diagram1.Binding.DefaultNode = rect;
 
 diagram1.Binding.Id = "Id";
 
@@ -1584,6 +1661,32 @@ conn.Close();
 
 {% endhighlight %}
 {% highlight vbnet %}
+
+Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 40, MeasureUnits.Pixel)
+
+rect.LineStyle.LineWidth = 0
+
+rect.FillStyle.Color = Color.DarkCyan
+
+' Default Label 
+
+Dim label As New Syncfusion.Windows.Forms.Diagram.Label()
+
+label.FontStyle.Family = "Segoe UI"
+
+label.FontStyle.Size = 10
+
+label.FontStyle.Bold = True
+
+label.FontColorStyle.Color = Color.White
+
+label.UpdatePosition = True
+
+rect.Labels.Add(label)
+
+'Initializing Data Binding properties
+
+diagram1.Binding.DefaultNode = rect
 
 diagram1.Binding.Id = "Id"
 
