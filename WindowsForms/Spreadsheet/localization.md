@@ -38,14 +38,16 @@ Now, the Application is set to the Japanese Culture info.
 
 The following steps show how to implement the localization in Spreadsheet,
 
-* Create folder name as ‘Resources’ in your application.
-* Add default English("en-US") [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474) (resource) file of `Spreadsheet` in the 'Resources' folder named as Syncfusion.Spreadsheet.Windows.resx
-* Create Resx(resource) file and name it as Syncfusion.Spreadsheet.Windows.[Culture name].resx. For example, Syncfusion.Spreadsheet.Windows.ja.resx for Japanese culture.
-  For your reference, Japanese("ja-JP") [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474) file
+* Create a folder and name it as ‘Resources’ in your application.
+* Add the default resource[English("en-US")] file of `Spreadsheet` in the 'Resources' folder named as Syncfusion.Spreadsheet.Windows.resx.
+  You can download the Resx file [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474)
+* Create Resx(resource) file under the 'Resources' folder and name it as Syncfusion.Spreadsheet.Windows.[Culture name].resx. 
+  For example, Syncfusion.Spreadsheet.Windows.ja.resx for Japanese culture. 
 
 ![](localization_images/Loc_Image1.JPG)
 
 * Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.Spreadsheet.Windows.ja.resx file.
+  For your reference, you can download the Japanese("ja-JP") Resx file [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474)
 
 ![](localization_images/Loc_Image2.JPG)
 
@@ -54,4 +56,10 @@ The following screenshot shows you the localization in Spreadsheet,
 
 ![](localization_images/localization_img1.jpg)
 
+## Modifying the localized strings in Resource file
 
+Users can modify the default localized strings in Resource file by adding the default [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474) (resource) file of `Spreadsheet` in the 'Resources' folder of your application and name it as Syncfusion.Spreadsheet.Windows.resx.
+
+Now, the default localized strings can be modified by changing the Name/Value pair in the Syncfusion.Spreadsheet.Windows.resx file.
+
+![](localization_images/Loc_Image3.jpg)
