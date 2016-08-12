@@ -80,15 +80,20 @@ spreadsheet.ActiveGrid.SelectionController.ClearSelection();
 {% endhighlight %}
 {% endtabs %}
 
-### Move Current Cell
+## Move Current Cell
 
-Spreadsheet allows the user to move the current cell to the mentioned cell in `SpreadsheetGrid`.
+SfSpreadsheet allows the user to move the current cell to the mentioned cell in `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}
 
 //Moves current cell to the mentioned row and column index of cell,
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(5, 5);
+
+For moving the current cell to a different sheet,
+
+spreadsheet.SetActiveSheet("Sheet2");
+spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(6, 5);
 
 {% endhighlight %}
 {% endtabs %}

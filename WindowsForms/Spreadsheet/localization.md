@@ -56,7 +56,7 @@ The following screenshot shows you the localization in Spreadsheet,
 
 ![](localization_images/localization_img1.jpg)
 
-## Modifying the Localized strings in Resource file
+## Modifying the localized strings in Resource file
 
 Users can modify the default localized strings in Resource file by adding the default [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474) (resource) file of `Spreadsheet` in the 'Resources' folder of your application and name it as Syncfusion.Spreadsheet.Windows.resx.
 
