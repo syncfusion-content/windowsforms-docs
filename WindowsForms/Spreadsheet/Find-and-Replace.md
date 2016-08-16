@@ -17,7 +17,7 @@ Searches for specific data such as particular number or text according to specif
 
 * [FindAll](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindAll.html)
 * [FindNext](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindNext.html)
-* [FindCondtionalFormatting](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindConditionalFormatting.html)
+* [FindConditionalFormatting](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindConditionalFormatting.html)
 * [FindConstants](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindConstants.html)
 * [FindFormulas](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindFormulas.html)
 * [FindDataValidation](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindDataValidation.html)
@@ -87,7 +87,7 @@ spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);
 {% endhighlight %}
 {% endtabs %}
 
-### Find CondtionalFormatting
+### Find Conditional Formatting
 
 Searches and returns the `IRange` list which have conditional formatting within the specified worksheet.
 
@@ -150,7 +150,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find DataValidation
+### Find Data Validation
 
 Searches and returns the `IRange` list which have data validation within the specified worksheet.
 
