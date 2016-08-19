@@ -2120,7 +2120,7 @@ HLOOKUP(lookup_value, table_array, row_index_number, range_lookup)
 #### Where:
 * **lookup_value** is the value to be found in the first row of the table. Lookup_value can be a value, a reference or a text string.
 * **table_array** is a table of information in which, data is looked up. Use a reference to a range or a range name.
-* **row_index_number** is the row number in table_array from which, the matching value will be returned. A row_index_num of 1 returns the first row value in table_array, a row_index_num of 2 returns the second row value in table_array and so on.
+* **row_index_number** is the row number in table_array from which, the matching value will be returned. A row_index_number of 1 returns the first row value in table_array, a row_index_number of 2 returns the second row value in table_array and so on.
 * **range_lookup** is a logical value that specifies whether you want HLOOKUP to find an exact match or an approximate match. If True or omitted, an approximate match is returned. In other words, if an exact match is not found, the next largest value that is less than the lookup_value is returned. (This requires your lookup values to be sorted.) If False, HLOOKUP will find an exact match.
 
 ### HYPERLINK
@@ -4262,7 +4262,7 @@ SUBSTITUTE(text, old_text, new_text, instance_number)
 * **text** is the text or the reference to a cell containing text for which you want to substitute characters.
 * **old_text** is the text you want to replace.
 * **new_text** is the text you want to replace old_text with
-* **instance_number**specifies which occurrence of old_text you want to replace with new_text. If you specify instance_num, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
+* **instance_number**specifies which occurrence of old_text you want to replace with new_text. If you specify instance_number, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.
 
 ### SUBTOTAL
 `SUBTOTAL` function returns a subtotal in a list. Once the subtotal list is created, you can modify it by editing the `SUBTOTAL` function.
@@ -4611,7 +4611,7 @@ VLOOKUP(lookup_value, table_array, col_index_number, range_lookup)
 #### Where:
 * **lookup_value** is the value to be found in the first column of the array. Lookup_value can be a value, a reference, or a text string.
 * **table_array** is the table of information in which data is looked up. Use a reference to a range or a range name.
-* **col_index_number** is the column number in table_array from which the matching value must be returned. Col_index_num of 1 returns the value in the first column of the table_array; col_index_num of 2 returns the value in the second column of the table_array, and so on.
+* **col_index_number** is the column number in table_array from which the matching value must be returned. Col_index_number of 1 returns the value in the first column of the table_array; col_index_number of 2 returns the value in the second column of the table_array, and so on.
 * **range_lookup** is a logical value that specifies whether you want VLOOKUP to find an exact match or an approximate match. If True or omitted, an approximate match is returned. In other words, if an exact match is not found, the next largest value that is less than the lookup_value is returned.
 
 ### WEBSERVICE
@@ -4649,7 +4649,7 @@ WEEKNUM( serial_number, [returnType] )
 #### Remarks
 `#VALUE!` - occurs if the supplied serial_number cannot be recognized as a numeric value or a date.<br/>
 `#NUM!`- occurs if the supplied [returnType] argument is not one of the above listed permitted values.<br/>
-`#NUM!`- occurs if the supplied serialNum argument is numeric but is out of range for the current date base.
+`#NUM!`- occurs if the supplied serial_number argument is numeric but is out of range for the current date base.
 
 ### WEIBULL
 Returns the Weibull distribution.
