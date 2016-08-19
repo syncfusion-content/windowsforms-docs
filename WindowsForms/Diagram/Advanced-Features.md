@@ -1442,7 +1442,7 @@ GroupNodePosition</td></tr>
 
 To explore those properties, see [Data source settings](http://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Binding_properties.html)
 
-### Xml Data Binding
+### XML Data Binding
 
 Diagram can be populated based on the user defined XML data by mapping the relevant data source fields.
 To map the user defined XML data with Diagram, you have to configure the fields of DataSource. The following code example illustrates how to bind XML data with the Diagram.
