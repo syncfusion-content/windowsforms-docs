@@ -469,10 +469,10 @@ The below steps needs to be followed for spanning the records across multiple ro
 {% tabs %}
 {% highlight c# %}
 // Create objects for GridColumnSpanDescriptor
-GridColumnSpanDescriptor csd0 = new GridColumnSpanDescriptor("EmployeeID");
-GridColumnSpanDescriptor csd1 = new GridColumnSpanDescriptor("Address");   
-GridColumnSpanDescriptor csd2 = new GridColumnSpanDescriptor("City");      
-GridColumnSpanDescriptor csd3 = new GridColumnSpanDescriptor("Country");
+GridColumnSpanDescriptor csd0 = new GridColumnSpanDescriptor("ProductID");
+GridColumnSpanDescriptor csd1 = new GridColumnSpanDescriptor("ProductName");   
+GridColumnSpanDescriptor csd2 = new GridColumnSpanDescriptor("SupplierID");      
+GridColumnSpanDescriptor csd3 = new GridColumnSpanDescriptor("CategoryID");
 
 // Add the required ranges for the created object
 csd0.Range = GridRangeInfo.Cells(0, 0, 1, 0);
@@ -482,10 +482,10 @@ csd3.Range = GridRangeInfo.Cells(1, 2, 1, 2);
 {% endhighlight %}
 {% highlight vb %}
 ' Create objects for GridColumnSpanDescriptor
-Dim csd0 As New GridColumnSpanDescriptor("EmployeeID")
-Dim csd1 As New GridColumnSpanDescriptor("Address")
-Dim csd2 As New GridColumnSpanDescriptor("City")
-Dim csd3 As New GridColumnSpanDescriptor("Country")
+Dim csd0 As New GridColumnSpanDescriptor("ProductID")
+Dim csd1 As New GridColumnSpanDescriptor("ProductName")
+Dim csd2 As New GridColumnSpanDescriptor("SupplierID")
+Dim csd3 As New GridColumnSpanDescriptor("CategoryID")
 
 ' Add the required ranges for the created object
 csd0.Range = GridRangeInfo.Cells(0, 0, 1, 0)
@@ -537,7 +537,6 @@ Me.gridGroupingControl1.TableDescriptor.ColumnSets.Add(csd)
 
 N> For more information regarding the Multi-Row record, refer our dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Record Customization Demo\
 
-![](Grid-Layout_images/Grid-Layout_img18.png)
 
 ### Clearing ColumnSpans
 The column spans can be removed from the GridGroupingControl by using the [ColumnSets.Reset](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptorCollection~Reset.html) method. This method will clear all the collection of column sets available.
