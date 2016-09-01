@@ -111,10 +111,3 @@ End If
 End Sub
 {% endhighlight %}
 ![](How-to-Make-Use-of-the-Journal-Control-using-GridG_images/How-to-Make-Use-of-the-Journal-Control-using-GridG_img1.png)
-
-
-
-## Sample link:
-
-[http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=I68039-490391191.zip](http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=I68039-490391191.zip)
-
