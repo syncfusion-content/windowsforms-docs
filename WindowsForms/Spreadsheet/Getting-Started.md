@@ -201,3 +201,45 @@ The `SaveAs` method in Spreadsheet can be used in various ways,
       
 {% endhighlight %}
 {% endtabs %}
+
+## Displaying Charts and Sparklines
+
+For importing charts and sparklines in Spreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SpreadsheetHelper.Windows.dll** 
+
+### Charts
+ 
+Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection by using the helper method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`. 
+
+{% tabs %}
+{% highlight c# %}
+
+public MainWindow()
+{
+  InitializeComponent();
+  
+  //For importing charts,
+  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Sparklines
+
+Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into Spreadsheetby using the helper method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`.
+
+{% tabs %}
+{% highlight c# %}
+
+public MainWindow()
+{
+  InitializeComponent();
+      
+  //For importing sparklines,
+  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+}
+
+{% endhighlight %}
+{% endtabs %}
