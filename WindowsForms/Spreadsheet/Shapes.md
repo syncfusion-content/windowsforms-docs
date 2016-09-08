@@ -8,23 +8,32 @@ documentation: ug
 ---
 
 # Shapes
- This section explains how to charts, sparklines, pictures and textboxes in Spreadsheet.
+ This section explains how to import charts, sparklines, pictures and textboxes in Spreadsheet.
 
 ## Charts
 
 Spreadsheet provides support to import charts from excel which are used to represent numeric data in graphical format to make it easier to understand large quantities of data.
 
-To import the charts into Spreadsheet, need to create an instance of [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.GraphicChartCellRenderer.html) is available under the this assembly “Syncfusion.SpreadsheetHelper.Windows.dll “
-
-Add the `GraphicChartCellRenderer` into the `GraphicCellRenderers` collection by using the extension method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) of Spreadsheet which method is available under the namespace “Syncfusion.Windows.Forms.Spreadsheet.Helpers”.
+For importing charts in Spreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SpreadsheetHelper.Windows.dll** 
+ 
+Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[GraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection by using the helper method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`. 
 
 {% tabs %}
 {% highlight c# %}
 
-    this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+public Form1()
+{
+  InitializeComponent();
+  
+  //For importing charts,
+  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+}
 
 {% endhighlight %}
 {% endtabs %}
+
 
 ### Adding the Charts at Runtime
 
@@ -58,14 +67,22 @@ shape.Width = 300;
 
 ## Sparklines
 
-To import the Sparklines into Spreadsheet, need to create an instance of [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection. The [SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) is available under the this assembly “Syncfusion.SpreadsheetHelper.Windows.dll”
+For importing sparklines in Spreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SpreadsheetHelper.Windows.dll** 
 
-Add the `SparklineCellRenderer` into the `GraphicCellRenderers` collection by using the extension method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) of Spreadsheet which method is available under the namespace “Syncfusion.Windows.Forms.Spreadsheet.Helpers”.
+Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into Spreadsheetby using the helper method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`.
 
 {% tabs %}
 {% highlight c# %}
 
-    this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+public Form1()
+{
+  InitializeComponent();
+      
+  //For importing sparklines,
+  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+}
 
 {% endhighlight %}
 {% endtabs %}
