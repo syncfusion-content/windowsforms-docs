@@ -41,7 +41,7 @@ Select Groups Collection to add Layout group in to TileLayout.
 
 ![](How-to-load-Image-to-the-ImageStreamer_images/GroupCollection.png)
 
-It will show the LayoutGroup Collection Editior window as shown in the below image.
+It will show the LayoutGroup Collection Editor window as shown in the below image.
 
 ![](How-to-load-Image-to-the-ImageStreamer_images/LayoutGroup.png)
 

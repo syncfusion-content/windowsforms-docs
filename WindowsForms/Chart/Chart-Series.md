@@ -8485,7 +8485,7 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).YType.ToString()
 
 Specifies the order in which the objects are arranged and controls the visibility when one is placed over the other.
 
-By default, the ZOrder for series are assigned based on the order in which they are added to the Series collection.
+By default, the Z-order for series are assigned based on the order in which they are added to the Series collection.
 
 
 
