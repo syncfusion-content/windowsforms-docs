@@ -23,7 +23,7 @@ Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[GraphicChartCe
 {% tabs %}
 {% highlight c# %}
 
-public MainWindow()
+public Form1()
 {
   InitializeComponent();
   
@@ -76,7 +76,7 @@ Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellR
 {% tabs %}
 {% highlight c# %}
 
-public MainWindow()
+public Form1()
 {
   InitializeComponent();
       
