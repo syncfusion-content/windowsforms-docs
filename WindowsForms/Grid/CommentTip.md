@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel like comment tip for Syncfusion Essential WindowsForms GridControl 
+title: Comment Tip in GridControl for Syncfusion Essential Windows Forms
 description: This sections explains about how to add Excel-like comment tip to the GridControl.
 platform: WindowsForms
 control: GridControl
