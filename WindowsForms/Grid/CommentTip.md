@@ -28,7 +28,7 @@ gridControl1(2, 2).CommentTip.CommentText = "Hello"
 ![](CommentTip_images/CommentTip_img2.png)
 
 ### Adding image to comment tip
-An image can be added to the comment tip windows by setting the `CommentImage` property value.
+An image can be added to the comment tip window by setting the `CommentImage` property.
 {% tabs %}
 {% highlight c# %}
 //Adding comment tip by setting the CommentImage
@@ -308,6 +308,7 @@ End Sub
 
 ## Customization using events
 The `CommentTipShowing` and `CommentIndicatorDraw` events are used to customize an appearance of the comment tip window. This section explains about the customization of comment tip using these events.
+
 ### Changing the color and location of the comment indicator 
 The color and location of the comment indicator can be customized by using the `DrawCommentIndicator` event. 
 {% tabs %}
@@ -336,7 +337,7 @@ End Sub
 
 ### Changing the shape of the comment indicator
 By default, the comment indicator will be drawn in a triangle shape at the top right corner of the cell. the default shape of the comment indicator can be changed by using the `DrawCommentIndicator` event. 
-Using the event argument `e.Graphics`, the shape can be filled that you want to display as the comment indicator. The default location of the comment indicator can be get by using the `e.IndicatorBounds property`. 
+Using the event argument `e.Graphics`, the shape can be filled that you want to display as the comment indicator. The default location of the comment indicator can be get by using the `e.IndicatorBounds` property. 
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.DrawCommentIndicator +=new DrawCommentIndicatornEventHandler(gridControl1_DrawCommentIndicatorn);
