@@ -98,3 +98,47 @@ Me.pivotChart1.PivotCalculations.Add(New PivotComputationInfo() With { _
 
 {% endhighlight %}
 {% endtabs %}
+
+## PivotChart Real Time Update
+
+PivotChart Updating Manager is Automatically updates the PivotChart series values. When the Underlying collection changed by using EnableUpdating property.
+
+{% tabs %}
+{% highlight c# %}
+// Update the PivotChart series values whenever we change the underlying data source.
+this.pivotChart1.EnableUpdating = true;
+{% endhighlight %}
+
+{% highlight vb %}
+' Update the PivotChart series values whenever we change the underlying data source.
+Me.pivotChart1.EnableUpdating = True
+{% endhighlight %}
+{% endtabs %}
+
+N> Default value for PivotChart EnableUpdating property is false.
+
+## BeginUpdate and EndUpdate
+
+When we change bulk changes in underlying data source it updates pivotChart for every changes. So it may cause performance issue. To prevent this, do the bulk changes between the pivotChart.BeginUpdate and PivotChar.EndUpdate methods. BeginUpdate method is used to temporarily freeze the painting of the control. After all updates have been made, invoke the EndUpdate method to resume painting of the control.
+
+{% tabs %}
+{% highlight c# %}
+//Used to Suspend the painting Untill end update method.
+this.pivotChart1.BeginUpdate();
+
+// do your bulk changes.
+
+//Resumes the painting of the control suspended by calling BegingUpdate method.
+this.pivotChart1.EndUpdate();
+{% endhighlight %}
+
+{% highlight vb %}
+'Used to Suspend the painting Untill end update method.
+Me.pivotChart1.BeginUpdate()
+
+' do your bulk changes.
+
+'Resumes the painting of the control suspended by calling BegingUpdate method.
+Me.pivotChart1.EndUpdate()
+{% endhighlight %}
+{% endtabs %}
