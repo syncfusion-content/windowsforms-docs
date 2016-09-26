@@ -71,7 +71,7 @@ For importing sparklines in Spreadsheet, add the following assembly as reference
  
 Assembly: **Syncfusion.SpreadsheetHelper.Windows.dll** 
 
-Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into Spreadsheetby using the helper method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`.
+Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheethelper/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into Spreadsheet by using the helper method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`.
 
 {% tabs %}
 {% highlight c# %}
