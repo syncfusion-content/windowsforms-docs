@@ -165,7 +165,7 @@ Me.gridControl1(2, 2).CommentTip.ResetCommentImage()
 The `CommentTip` property provides the list of properties that are used to customize an appearance of the comment tip window.
  
 ### Comment indicator
-The size and color of the comment indicator can be customized by using the `CommentIndicatorSize` and `CommentIndicatorColor` properties of the `CommentTip`. By default, it will be displayed at the red color triangle at the top-right corner of the cell.
+The size and color of the comment indicator can be customized by using the `CommentIndicatorSize` and `CommentIndicatorColor` properties of the `CommentTip`. By default, it will be displayed as the red color triangle at the top-right corner of the cell.
 {% tabs %}
 {% highlight c# %}
 //Setting Comment indicator color
