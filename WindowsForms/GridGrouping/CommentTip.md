@@ -87,6 +87,24 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ColumnName").Appearance.AnyReco
 
 ![](CommentTip_images/CommentTip_img4.png)
 
+### Adding comment tip to nested table
+The comment tip can be added for the nested tables by getting the table descriptor using the [GetTableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GetTableDescriptor.html) method and setting the `CommentTip.CommentText` to the column that you want. 
+{% tabs %}
+{% highlight c# %}
+// Adding Comment text for nested table cells
+this.gridGroupingControl1.GetTableDescriptor("Orders").Columns["Freight"].Appearance.AnyRecordFieldCell.CommentTip.CommentText = "Hello";
+{% endhighlight %}
+
+{% highlight vb %}
+' Adding Comment text for nested table cells
+Me.gridGroupingControl1.GetTableDescriptor("Orders").Columns("Freight").Appearance.AnyRecordFieldCell.CommentTip.CommentText = "Hello"
+{% endhighlight %}
+{% endtabs %}
+
+![](CommentTip_images/CommentTip_img15.png)
+
+N> The comment tip events for the nested table can be accessed by getting the specific nested table’s table control using the [GetTableControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GetTableControl.html) method.
+
 ## Removing comment tip 
 The comment tip for the cell can be removed by using the `ResetCommentTip` method.  It will reset the comment tip properties to the default values.
 {% tabs %}
