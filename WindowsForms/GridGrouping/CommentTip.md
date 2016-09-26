@@ -220,7 +220,7 @@ The following events are used to customize an appearance of the comment tip,
 This event is used to customize an appearance of the comment indicator by changing its shape, color and location through the event arguments.
 {% tabs %}
 {% highlight c# %}
-this.gridGroupingControl1.TableControl.CommentTipIndicatorDraw += new CommentTipIndicatorDrawEventHandler(TableControl_DrawCommentIndicator);
+this.gridGroupingControl1.TableControl.DrawCommentIndicator += new DrawCommentIndicatorEventHandler(TableControl_DrawCommentIndicator);
 void TableControl_DrawCommentIndicator(object sender, DrawCommentIndicatorEventArgs e)
 {
      Console.WriteLine("CommentRow {0} CommentColumn {1}", e.RowIndex, e.ColIndex);
@@ -342,7 +342,7 @@ void TableControl_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.DrawCommentIndicator, AddressOf TableControl_DrawCommentIndicator
-Private Sub TableControl_DrawCommentIndicator(ByVal sender As Object, ByVal e As CommentTipIndicatorDrawEventArgs)
+Private Sub TableControl_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
 	'Cancel the displaying of the comment tip indicator.
 	e.Cancel = True
 End Sub
