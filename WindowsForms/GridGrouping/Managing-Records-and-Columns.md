@@ -203,7 +203,7 @@ The grid after moving the column
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img9.jpeg)
 
 ## Unbound Columns
-The GridGroupingControl is provide the support for adding the unbound columns which are not bounded to the gridâ€™s data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~UnboundFields.html) collection.
+The GridGroupingControl is provide the support for adding the unbound columns which are not bounded to the grid’s data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~UnboundFields.html) collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -354,6 +354,32 @@ this.gridGroupingControl1.TableDescriptor.Columns[1].Width = 150;
 {% highlight vb %}
 'Setting the column width for the given column index
 Me.gridGroupingControl1.TableDescriptor.Columns(1).Width = 150
+{% endhighlight %}
+{% endtabs %}
+
+### Setting DefaultColumnWidth for columns
+The columns size will be initialized based on the [DefaultColumnWidth]( https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~DefaultColumnWidth.html) only when set the [AllowCalculateMaxColumnWidth]( https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~AllowCalculateMaxColumnWidth.html) to false. 
+{% tabs %}
+{% highlight c# %}
+this.gridGroupingControl1.TableDescriptor.AllowCalculateMaxColumnWidth = false;
+this.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100;
+{% endhighlight %}
+{% highlight vb %}
+Me.gridGroupingControl1.TableDescriptor.AllowCalculateMaxColumnWidth = False
+Me.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100
+
+{% endhighlight %}
+{% endtabs %}
+Otherwise the columns size will be initialized based on the [DefaultColumnWidth]( https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~DefaultColumnWidth.html) only when set the [ColumnsMaxLengthStrategy]( https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthStrategy.html) to `GridColumnsMaxLengthStrategy.None`.
+{% tabs %}
+{% highlight c# %}
+this.gridGroupingControl1.TableOptions.ColumnsMaxLengthStrategy = Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.None;
+this.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100;
+
+{% endhighlight %}
+{% highlight vb %}
+Me.gridGroupingControl1.TableOptions.ColumnsMaxLengthStrategy = Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.None
+Me.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100
 {% endhighlight %}
 {% endtabs %}
 
