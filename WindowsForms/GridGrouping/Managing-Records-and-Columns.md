@@ -203,7 +203,7 @@ The grid after moving the column
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img9.jpeg)
 
 ## Unbound Columns
-The GridGroupingControl is provide the support for adding the unbound columns which are not bounded to the grid�s data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~UnboundFields.html) collection.
+The GridGroupingControl is provide the support for adding the unbound columns which are not bounded to the grid's data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~UnboundFields.html) collection.
 
 {% tabs %}
 {% highlight c# %}
