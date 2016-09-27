@@ -411,13 +411,18 @@ The primitive datatype (int, float, double Etc.) does not contain any properties
 If you want to bind the primitive datatype collections to the grid, you can create a class which contains the property with the type that you want to add to the collection.
 {% tabs %}
 {% highlight c# %}
-//Create a list of Items.
-List<Items> list = new List<Items>();           
-list.Add(new Items(1));
-list.Add(new Items(2));
+public Form1()
+{
+    InitializeComponent();
 
-//Set the data source.
-gridGroupingControl1.DataSource = list;
+    //Create a list of Items.
+    List<Items> list = new List<Items>();
+    list.Add(new Items(1));
+    list.Add(new Items(2));
+
+    //Set the data source.
+    gridGroupingControl1.DataSource = list;
+}
 
 //Class that contains one property with Primitive data type
 public class Items
@@ -430,13 +435,17 @@ public class Items
 }
 {% endhighlight %}
 {% highlight vb %}
-'Create a list of Items.
-Private list As New List(Of Items)()
-list.Add(New Items(1))
-list.Add(New Items(2))
+Public Sub New()
+	InitializeComponent()
 
-'Set the data source.
-gridGroupingControl1.DataSource = list
+	'Create a list of Items.
+	Dim list As New List(Of Items)()
+	list.Add(New Items(1))
+	list.Add(New Items(2))
+
+	'Set the data source.
+	gridGroupingControl1.DataSource = list
+End Sub
 
 'Class that contains one property with Primitive data type
 Public Class Items
