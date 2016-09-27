@@ -81,7 +81,7 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
    
    ![](Grid-Layout_images/Grid-Layout_img4.png)
 
- N> The stacked headers will not be generated if those columns are not presented in the `Columns` collection. So the stacked headers are depending upon the `Column` collection. Before adding stacked headers, make sure that those columns are available in `Columns` collection or underlying datasource of the grid.
+ N> The stacked headers will be generated if the added columns in the stacked headers are presented in the [Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Columns.html) collection. So the stacked headers are depending upon the `Column` collection. Before adding stacked headers, make sure that those columns are available in `Columns` collection or underlying datasource of the grid.
  
 ### Adding Stacked Headers through Code
 The stacked headers can be added through code by using the below method,
