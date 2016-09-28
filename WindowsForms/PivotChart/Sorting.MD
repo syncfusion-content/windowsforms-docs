@@ -71,7 +71,7 @@ There are two events available for sorting in both PivotAxis and PivotLegends, t
 <th>S.No</th><th>API Name</th><th>Details</th><th>Event Args</th>
 </tr>
 <tr>
-<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td>PivotItemSortedEventArgs<td></td>
+<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td>PivotItemSortedEventArgs</td>
 <tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td>PivotItemSortingEventArgs</td>
 </tr>
 </table>
