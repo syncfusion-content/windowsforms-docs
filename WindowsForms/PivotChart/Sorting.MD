@@ -11,7 +11,7 @@ documentation: ug
 Sorting enables you to quickly visualize and understand the data in a better way, organize and find the data that you want, and ultimately make more effective decisions. By default, the PivotChart will populate the series in ascending order. The sorting order for `PivotAxis` and `PivotLegends` can be changed by adding `SortAxisDescriptorCollection`, `SortLegendDescriptorCollection` objects to the `SortedAxis` and `SortedLegends` collection vice versa. 
 
 ## Sort by PivotAxis 
-PivotAxis can be sorted by adding `SortAxisDescritorCollection` object to the `SortedAxis` collection. Here “Gender” is an PivotAxis item, ListSortDirection is used to specify the sorting order.
+PivotAxis can be sorted by adding `SortAxisDescritorCollection` object to the `SortedAxis` collection. Here "Gender" is an PivotAxis item, ListSortDirection is used to specify the sorting order.
 
 {% tabs %}
 {% highlight c# %}
@@ -29,12 +29,12 @@ Before Applying sorting
 
 ![](Sorting/images/Before_Sorting.png) 
 
-After Applying Sorting on PivotAxis “Gender”
+After Applying Sorting on PivotAxis "Gender"
 
 ![](Sorting/images/After_Sorting.png) 
 
 ## Sort by PivotLegends
-`PivotLegends` can be sorted by adding `SortLegendDescritorCollection` object to the `SortedLegends` collection. Here “state” is PivotLgends item `FieldMappingName`, And sorting direction takes default value Ascending order. 
+`PivotLegends` can be sorted by adding `SortLegendDescritorCollection` object to the `SortedLegends` collection. Here "state" is PivotLgends item `FieldMappingName`, And sorting direction takes default value Ascending order. 
 
 {% tabs %}
 {% highlight c# %}
