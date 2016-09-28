@@ -17,6 +17,7 @@ A user can customize an appearance of the comment tip window and comment indicat
 The `CommentTip` property provides the various options to customize the comment tip of the cells. The comment tip can be added to the particular cell by setting the `CommentText` property in the `QueryCellStyleInfo` event. The comment text will be displayed in the comment tip window.
 {% tabs %}
 {% highlight c# %}
+this.gridGroupingControl1.QueryCellStyleInfo +=new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
     if (e.Style.TableCellIdentity.Column != null && e.Style.TableCellIdentity.Column.Name == "FirstName")
@@ -30,6 +31,7 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleIn
 }
 {% endhighlight %}
 {% highlight vb %}
+AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
 	If e.Style.TableCellIdentity.Column IsNot Nothing AndAlso e.Style.TableCellIdentity.Column.Name = "FirstName" Then
 		'Setting the comment tip text
@@ -47,6 +49,7 @@ End Sub
 The comment tip for the cells can also be added by setting the `CommentImage` property. The given image will be displayed as the comment tip for the cells.
 {% tabs %}
 {% highlight c# %}
+this.gridGroupingControl1.QueryCellStyleInfo +=new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs e)
 {
     if (e.Style.TableCellIdentity.Column != null && e.Style.TableCellIdentity.Column.Name == "FirstName"
@@ -58,6 +61,7 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.F
 }
 {% endhighlight %}
 {% highlight vb %}
+AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
 	If e.Style.TableCellIdentity.Column IsNot Nothing AndAlso e.Style.TableCellIdentity.Column.Name = "FirstName" AndAlso e.TableCellIdentity.DisplayElement IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.Kind Is Syncfusion.Grouping.DisplayElementKind.Record Then
 		'Set the comment image for the cell.
@@ -179,6 +183,7 @@ The size and font of the comment tip window can be customized by using the `Comm
 The foreground and background colors of the comment tip window can be changed by using the `ForeColor` and `BackColor` properties of the `CommentTip`.
 {% tabs %}
 {% highlight c# %}
+this.gridGroupingControl1.QueryCellStyleInfo +=new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs e)
 {
     if (e.Style.TableCellIdentity.Column != null && e.Style.TableCellIdentity.Column.Name == "ColumnName"
@@ -195,6 +200,7 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.F
 }
 {% endhighlight %}
 {% highlight vb %}
+AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
 	If e.Style.TableCellIdentity.Column IsNot Nothing AndAlso e.Style.TableCellIdentity.Column.Name = "ColumnName" AndAlso e.TableCellIdentity.DisplayElement IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.Kind Is Syncfusion.Grouping.DisplayElementKind.Record Then
 		'Set the comment text, comment font and fore color.
@@ -421,8 +427,8 @@ End Sub
 To highlight the cells or customize the cells if that cell has comment tip, check whether the `CommentText` and `CommentImage` properties are changed in the `PrepareViewStyleInfo` event. 
 {% tabs %}
 {% highlight c# %}
-this.gridGroupingControl1.TableControl.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(TableControl_PrepareViewStyleInfo);
-void TableControl_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
+this.gridGroupingControl1.QueryCellStyleInfo +=new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
+void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
     //Check whether the cell has comment tip or not.
     if (e.Style.CommentTip.CommentText != "" || e.Style.CommentTip.CommentImage != null)
@@ -433,8 +439,8 @@ void TableControl_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEv
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler gridGroupingControl1.TableControl.PrepareViewStyleInfo, AddressOf TableControl_PrepareViewStyleInfo
-Private Sub TableControl_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
+AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
+Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
 	'Check whether the cell has comment tip or not.
 	If e.Style.CommentTip.CommentText <> "" OrElse e.Style.CommentTip.CommentImage IsNot Nothing Then
 		e.Style.BackColor = Color.Green
