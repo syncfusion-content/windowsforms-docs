@@ -406,6 +406,57 @@ Me.gridGroupingControl1.DataSource = MyBooks
 **Sample Link:**
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo
 
+### Binding a list with primitive datatype 
+The primitive datatype (int, float, double Etc.) does not contain any properties. For example, `string` data type has the `Length` property. But `int` datatype does not have any properties. Therefore, columns will not be populated for primitive data types when bind the list with primitive datatype which has no properties to the grid.
+If you want to bind the primitive datatype collections to the grid, you can create a class which contains the property with the type that you want to add to the collection.
+{% tabs %}
+{% highlight c# %}
+public Form1()
+{
+    InitializeComponent();
+
+    //Create a list of Items.
+    List<Items> list = new List<Items>();
+    list.Add(new Items(1));
+    list.Add(new Items(2));
+
+    //Set the data source.
+    gridGroupingControl1.DataSource = list;
+}
+
+//Class that contains one property with Primitive data type
+public class Items
+{
+    public int No { get; set; }
+    public Items(int no)
+    {
+        No = no;
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+Public Sub New()
+	InitializeComponent()
+
+	'Create a list of Items.
+	Dim list As New List(Of Items)()
+	list.Add(New Items(1))
+	list.Add(New Items(2))
+
+	'Set the data source.
+	gridGroupingControl1.DataSource = list
+End Sub
+
+'Class that contains one property with Primitive data type
+Public Class Items
+	Public Property No() As Integer
+	Public Sub New(ByVal no As Integer)
+		Me.No = no
+	End Sub
+End Class
+{% endhighlight %}
+{% endtabs %}  
+
 ### Strongly Typed Collections
 GridGroupingControl can be bound to a strongly typed collection. Strongly Typed Collection is a collection that stores a Known Type. It can be viewed as an array of specific object. For example, suppose the application needs to store information about products in a factory, user can create a Strongly Typed collection of Product objects.
 

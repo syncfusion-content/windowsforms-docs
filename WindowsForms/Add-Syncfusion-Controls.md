@@ -13,6 +13,8 @@ The Syncfusion Windows Forms controls can be added in a Visual Studio projects b
 
 * Through Designer
 * Through Code-Behind
+* Through Project Template
+* Through Item Template
 
 ## Through Designer
 
@@ -102,3 +104,102 @@ Me.Controls.Add(Me.textBoxExt1)
 {% endtabs %}
 
 ![](Add-Syncfusion-Control_images/AddSyncfusionControls_img3.jpeg)
+
+## Through Project Template
+
+Syncfusion provides the Visual Studio Project Templates for the Syncfusion Windows Forms platform to create Syncfusion Windows Forms Application. 
+
+I> The Syncfusion Windows Forms templates are available from v14.3.0.49. 
+
+### Create Syncfusion Windows Forms Project 
+
+The following steps direct you to create the Syncfusion Windows Forms project through the Visual Studio Project Template. 
+
+1. To create a Syncfusion Windows Forms project, choose New Project-> Syncfusion->Windows->Syncfusion Windows Forms Application from Visual Studio
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-1.png)
+
+2. Name the Project, choose the destination location when required and set the Framework of the project, then click OK.  
+
+   N> Minimum target framework is 3.5 for Syncfusion Windows Forms project templates. 
+
+3. Choose the options to configure the Syncfusion Windows Forms Application by using the following Project Configuration Wizard.  
+  
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-2.png)
+                                                     
+   ### Project configurations: 
+
+   **Language:** Select the language, either C# or VB. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-3.png)
+
+   **Assemblies From:** Choose the assembly location from where it is going to be added to the project. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-4.png)
+
+   **Select Control:** Choose the control based on your need. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-5.png)
+      
+4. Once the Project Configuration Wizard is done, the Syncfusion Windows Forms project is created with required references and forms. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-6.png)
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-7.png)
+
+## Through Item Template
+
+The Syncfusion Item Templates Add new item feature provides support to Windows Forms platform. To add the Syncfusion item files in Visual Studio, install Syncfusion Essential Studio for Windows Forms platform.The item template available from Syncfusion Essential Studio v13.1.0.21.
+
+### Using Syncfusion Item Template Gallery
+
+Follow the given steps to add the Syncfusion item in Visual Studio.
+
+1. Open a new or existing Windows Forms application.
+
+2. Right-click on the Windows Forms Project from the Solution Explorer. Select the Add Syncfusion Item  New Item... option. Refer to the following screenshot
+   for more information.
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-1.png)
+
+3. Now the Syncfusion Item Template Gallery window will open.
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-2.png)
+   
+4. Select the required version and themes or Form from the Syncfusion Item Template Gallery. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-3.png)
+   
+   ![](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-4.png)
+
+#### Platform
+
+This is a combo box where you can choose the application’s platform. For now it contains Windows Forms Platform alone.
+
+#### Version
+
+Syncfusion’s Installed Build Versions are listed for Syncfusion Essential Studio v13.1.0.21 and later, for the installed Windows Forms platform. 
+
+#### Template Gallery
+
+This part contains a set of Syncfusion Item Templates, and you can choose the Item Templates based on your need.
+
+When Add button is clicked, then the selected item template is added to the project.
+
+![](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-5.png)
+
+### Using Visual Studio Add new Item
+
+Syncfusion Project Template can be also add from the Visual Studio Item Template. Right-click on the Windows Forms Project Add ->New Item. You can refer to the following screenshot for more information.
+
+![](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-1.png)
+
+1. The Syncfusion Item Templates are available under the Syncfusion tab. It is available for both C# Items and VB Items. 
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-2.png)
+
+2. Now the selected template is added to the project along with Syncfusion references.
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-3.png)
+
+   ![](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-4.png)
