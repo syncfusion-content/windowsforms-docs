@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Types
 GridGroupingControl allows the inclusion of some special controls in the grid cells. This attribute of a grid cell is referred to as its Cell Type. This section explains about the built in cell types and how to create a custom cell types in GridGroupingControl.
-In grid each cell has been created by using [GridCellModelBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellModelBase.html#) and [GridCellRendererBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html#) class. `GridCellModelBase` defines the data or model part of a cell type. It holds all the data information of a cell. Rendering generally refers to the process of creating a visual representation on a userâ€™s screen. `GridCellRendererBase` acts a base class for all the renderer part of the cell type.
+In grid each cell has been created by using [GridCellModelBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellModelBase.html#) and [GridCellRendererBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html#) class. `GridCellModelBase` defines the data or model part of a cell type. It holds all the data information of a cell. Rendering generally refers to the process of creating a visual representation on a user’s screen. `GridCellRendererBase` acts a base class for all the renderer part of the cell type.
 
 N> The GridGroupingControl supports all the [basic cell types](http://help.syncfusion.com/windowsforms/grid/cell-types#basic-cell-types) used in GridControl.
 
@@ -53,7 +53,6 @@ RegisterCellModel.GridGroupingCellType(Me.gridGroupingControl1, CustomCellTypes.
 N> The above code shows how to register a `PercentTextBox` custom cell type to a GridGroupingControl.
  
 The following sample shows how to include the helper cell types to the grid cell,
-**Sample:**
 &lt;Installation_Location&gt;\Syncfusion\EssentialStudio\&lt;version&gt;\Windows\Grid.Windows\Samples\Custom Cell Types
 
 ## Creating a custom cell type
