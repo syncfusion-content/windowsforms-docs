@@ -212,7 +212,8 @@ End If
 {% endhighlight %}
 {% endtabs %}
 
-**Sample:**&lt;Installation_Location&gt;\Syncfusion\EssentialStudio\&lt;version&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Find-Replace Demo
+The following sample shows how to include the find and replace functionality in GridGroupingControl,
+&lt;Installation_Location&gt;\Syncfusion\EssentialStudio\&lt;version&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Find-Replace Demo
 
 ## Highlight the search text
 The search text can be highlighted by using the [GridHighlightSearchText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridHighlightSearchText.html#) class. It will highlight the search text with the default color (yellow). The highlighting color can be changed by using[HighlightColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridHighlightSearchText~HighlightColor.html#) property.
