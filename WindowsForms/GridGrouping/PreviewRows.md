@@ -8,9 +8,16 @@ documentation: ug
 ---
 
 # Preview Rows
-Preview rows are the one which are used to show the additional description for the groups or records. In GridGroupingControl the additional information of the records can be displayed through record preview row and the groups can show the additional information in the group preview row or group Header/Footer section. This section explains about how to add the preview rows in GridGroupingControl.
+Preview rows are the one which are used to show the additional description for the groups or records. GridGroupingControl provides following types of preview rows,
+ 
+* [Record preview row](#record-preview-row)
+* [Group preview row](#group-preview-row)
+* [Group header/footer](#group-headerfooter)
 
-## Adding record preview rows
+## Record preview row
+The record preview row is used to display additional information about the particular record. 
+
+### Adding record preview row
 The record preview row can be enabled in the GridGroupingControl by setting the [ShowRecordPreviewRow](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ShowRecordPreviewRow.html#) property to `true`.
 {% tabs %}
 {% highlight c# %}
@@ -34,7 +41,7 @@ Me.gridGroupingControl1.Appearance.RecordPreviewCell.TextColor = Color.White
 ![](PreviewRows_images/PreviewRows_img1.png)
 
 ### Customizing the text for record preview row
-The record preview row text can be customized by using the [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryCellStyleInfo_EV.html#) event. In this event, set the cell value of the[RecordPreviewCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~RecordPreviewCell.html#) that need to be displayed in the record preview section.
+The record preview row text can be customized by using the [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryCellStyleInfo_EV.html#) event. In this event, set the cell value of the [RecordPreviewCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~RecordPreviewCell.html#) that need to be displayed in the record preview section.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
@@ -92,7 +99,10 @@ The following browser sample shows the customized appearance of record preview r
 **Sample:**
 &lt;InstalledLocation&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Record Customization Demo
 
-## Adding group preview rows
+## Group preview row
+The groups can show the additional information in the group preview section. 
+
+### Adding group preview rows
 Group preview section is the suitable place to display memo fields or add custom notes for a given group. It can be enabled by setting [GroupOptions.ShowGroupPreview](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowGroupPreview.html#) property to `true`. 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +179,7 @@ Me.gridGroupingControl1.Appearance.GroupPreviewCell.TextColor = Color.White
 
 ![](PreviewRows_images/PreviewRows_img6.png)
 
-## Adding group header and footer
+## Group header/footer
 The group header/group footer sections can be added to the top and bottom of the groups. This can be used to show the additional information about the groups like the group preview rows.
 ![](PreviewRows_images/PreviewRows_img7.png)
 

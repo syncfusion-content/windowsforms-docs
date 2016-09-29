@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Find and Replace
-The searching and replacing of text and numbers can be done as like the Find and Replace functionality in the Excel. This can be done by using dialog or programmatically. This feature can be added to the GridGroupingControl by including the Syncfusion.GridHelperClasses.Windows.dll to the assembly reference. The following classes are used to implement the Find and Replace technique in GridGroupingControl.
+The searching and replacing of text and numbers can be done as like the Find and Replace functionality in the Excel. This can be done by using dialog or programmatically. This feature can be added to the GridGroupingControl by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the Find and Replace technique in GridGroupingControl.
 
 * [GridFindReplaceDialogSink](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html#)
 * [GridFindReplaceDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceDialog.html#)

@@ -14,7 +14,7 @@ In grid each cell has been created by using [GridCellModelBase](http://help.sync
 N> The GridGroupingControl supports all the [basic cell types](http://help.syncfusion.com/windowsforms/grid/cell-types#basic-cell-types) used in GridControl.
 
 ## Setting cell type 
-The cell type of a cell can be specified by using the [CellType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfo~CellType.html#) property. There are two ways to assign the value for `CellType` property, by string format or by using the[GridCellTypeName](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellTypeName.html#) static class which contains all the built-in cell type names in it.
+The cell type of a cell can be specified by using the [CellType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfo~CellType.html#) property. There are two ways to assign the value for `CellType` property, by string format or by using the [GridCellTypeName](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellTypeName.html#) static class which contains all the built-in cell type names in it.
 {% tabs %}
 {% highlight c# %}
 //Setting checkbox as the CellType for the column
