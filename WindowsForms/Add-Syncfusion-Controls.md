@@ -121,7 +121,7 @@ The following steps direct you to create the Syncfusion Windows Forms project th
 
 2. Name the Project, choose the destination location when required and set the Framework of the project, then click OK.  
 
-   N> Minimum target framework is 3.5 for Syncfusion Windows Forms project templates. 
+   N> Minimum target Framework is 3.5 for Syncfusion Windows Forms project templates. 
 
 3. Choose the options to configure the Syncfusion Windows Forms Application by using the following Project Configuration Wizard.  
   
