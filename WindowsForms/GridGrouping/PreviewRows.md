@@ -94,9 +94,7 @@ Me.gridGroupingControl1.Appearance.RecordPreviewCell.TextColor = Color.White
 {% endtabs %}
 ![](PreviewRows_images/PreviewRows_img3.png)
 
-The following browser sample shows the customized appearance of record preview row,
-
-**Sample:**
+The following sample shows the customization of the record preview row appearance,
 &lt;InstalledLocation&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Record Customization Demo
 
 ## Group preview row
