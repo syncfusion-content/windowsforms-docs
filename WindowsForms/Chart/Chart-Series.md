@@ -9012,5 +9012,385 @@ Me.chartControl1.AllowGapForEmptyPoints = True
 
 ![](Chart-Series_images/Chart-Series_img157.jpeg)
 
+## Trendlines 
 
+Trendlines are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends.
+ Multiple Trendlines can be added to the **ChartSeries.Trendlines** collection which holds objects of class **Trendline**.
+ 
+ _Features_
+ 
+ <table>
+<tr>
+<th colspan = "2">
+Features</th><th>
+Details</th></tr>
+<tr>
+<td>
+2D / 3D Limitations</td><td colspan = "2">
+Not Applicable for 3D</td></tr>
+<tr>
+<td>
+Applies to Chart Element</td><td colspan = "2">
+All series and Points </td></tr>
+<tr>
+<td>
+Applies to Chart Types</td><td colspan = "2">
+Scatter Chart, Hilo Open Close Chart, Column Charts, Bar Charts, Bubble Chart,
+Line Charts, Box and Whisker Chart,  Combination Chart, Candle Chart, Area Charts,
+ColumnRange Chart, BoxAndWhiskerChart, Stacking Column Chart, Stacking Bar Chart, Stacking Area, Stacking Area100</td></tr>
+</table>
+
+The Properties of Trendlines are listed below 
+
+<table>
+<tr>
+<th>
+Trendline Properties</th><th colspan = "2">
+Description </th><th>
+Default Value</th></tr>
+<tr>
+<td>
+Name</td><td colspan = "2">
+Gets or Sets the name for the Trendline</td><td>Trendline</td></tr>
+<tr>
+<td>
+Visible</td><td colspan = "2">
+Displays the Trendline</td><td>True</td></tr>
+<tr>
+<td>
+Type</td><td colspan = "2">
+Enum property that displays the various types of Trendlines</td><td>TrendlineType.Linear</td></tr>
+<tr>
+<td>
+BackwardForecast</td><td colspan = "2">
+Gets or Sets the Backward Forecast values </td><td>0</td></tr>
+<tr>
+<td>
+ForwardForecast</td><td colspan = "2">
+Gets or Sets the Forward Forecast values</td><td>0</td></tr>
+<tr>
+<td>
+PolynomialOrder</td><td colspan = "2">
+Gets or Sets the Polynomial Order value for the Polynomial Trendline </td><td>2</td></tr>
+<tr>
+<td>
+Period</td><td colspan = "2">
+Gets or Sets the period used in the Moving Average Trendline</td><td>2</td></tr>
+<tr>
+<td>
+Style</td><td colspan = "2">
+Gets or Sets the Dash Style for the Trendline </td><td>DashStyle.Solid</td></tr>
+<tr>
+<td>
+Width</td><td colspan = "2">
+Gets or Sets the line  width  for the Trendline</td><td>1f</td></tr>
+<tr>
+<td>
+Color</td><td colspan = "2">
+Gets or Sets the Color associated with the Trendline</td><td>Color.Black</td></tr>
+</table>
+
+The Code Snippet to enable the Trendlines in Chart
+{% tabs %}  {% highlight c# %}
+
+//Declaring
+
+Trendline trendline = new Trendline();
+             
+//Customizing the Trendline
+
+trendline.Name = "Linear";
+trendline.Visible = true;
+trendline.Style = DashStyle.Solid;
+trendline.Width = 2f;
+trendline.Color = Color.Black;
+trendline.Type = TrendlineType.Linear;
+
+//Adding Trendline to the series 
+
+this.chartControl1.Series[0].Trendlines.Add(trendline);
+
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Declaring
+
+Private  trendline  As Trendline = new Trendline()
+             
+'Customizing the Trendline
+
+trendline.Name = "Linear"
+
+trendline.Visible = true
+
+trendline.Style = DashStyle.Solid
+
+trendline.Width = 2f
+
+trendline.Color = Color.Black
+
+trendline.Type = TrendlineType.Linear
+
+'Adding Trendline to the series 
+
+Me.chartControl1.Series[0].Trendlines.Add(trendline)
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img159.png)
+
+### Trendline Types
+
+The different types of trendlines are 
+
+*	Linear Trendline
+*	Exponential Trendline
+*	Power Trendline
+*   Logarithmic Trendline
+*	Polynomial Trendline
+*	Moving Average Trendline
+
+
+### Linear Trendline
+
+To render the Linear Trendline, you have to set the Type as **TrendlineType.Linear**.
+
+{% tabs %}  {% highlight c# %}
+
+trendline.Type = TrendlineType.Linear;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Type = TrendlineType.Linear
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img159.png)
+
+### Exponential Trendline
+
+Exponential Trendline can be rendered by setting the trendline.Type as **TrendlineType.Exponential**.
+
+{% tabs %}  {% highlight c# %}
+
+trendline.Type = TrendlineType.Exponential;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Type = TrendlineType.Exponential
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img160.png)
+
+N> This trendline cannot be used for negative values and values containing zero
+
+### Power Trendline
+
+Power Trendline can be rendered by setting the trendline.Type as **TrendlineType.Power**.
+
+{% tabs %}  {% highlight c# %}
+
+trendline.Type = TrendlineType.Power;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Type = TrendlineType.Power
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img161.png)
+
+
+### Logarithmic Trendline
+
+Logarithmic Trendline can be rendered by setting the trendline.Type as **TrendlineType.Logarithmic**.
+
+{% tabs %}  {% highlight c# %}
+
+trendline.Type = TrendlineType.Logarithmic;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Type = TrendlineType.Logarithmic
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img162.png)
+
+### Polynomial Trendline
+
+Polynomial Trendline can be rendered by setting the trendline.Type as **TrendlineType.Polynomial**.
+
+{% tabs %}  {% highlight c# %}
+
+trendline.Type = TrendlineType.Polynomial;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Type = TrendlineType.Polynomial
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img163.png)
+
+### Polynomial Order
+
+You can set the Polynomial order for the Polynomial trendline. Polynomial order calculates order based on the equation and this value should fall between 2 and 6.
+
+{% tabs %}  {% highlight c# %}
+
+trendline.Type = TrendlineType.Polynomial;
+trendline.PolynomialOrder = 4;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Type = TrendlineType.Polynomial
+trendline.PolynomialOrder = 4
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img164.png)
+
+### Moving Average Trendline
+
+Moving Average Trendline can be rendered by setting the trendline.Type as **TrendlineType.MovingAverage**.
+
+{% tabs %}  {% highlight c# %}
+
+trendline.Type = TrendlineType.MovingAverage;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Type = TrendlineType.MovingAverage
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img165.png)
+
+### Period
+
+The period of the Moving Average Trendline is modified by using the **period** property 
+ 
+ {% tabs %}  {% highlight c# %}
+
+trendline.Type = TrendlineType.MovingAverage;
+trendline.Period = 3;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Type = TrendlineType.MovingAverage
+trendline.Period = 3
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img166.png)
+
+### Forecasting 
+ 
+ **Trendline forecasting** is the prediction of future/past situations.
+  
+**Forecasting** can be classified into two types as follows.
+
+*	Forward Forecasting
+
+*	Backward Forecasting
+ 
+ 
+### Forward Forecasting
+
+For determining the future trends (in forward direction). The following code example explains the how to set the value for forward forecast.
+
+ {% tabs %}  {% highlight c# %}
+
+trendline.ForwardForecast = 10;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.ForwardForecast = 10
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img167.png)
+
+
+### Backward Forecasting
+
+For determining the past trends (in backward direction). The following code example explains the how to set the value for backward forecast.
+
+ {% tabs %}  {% highlight c# %}
+
+trendline.BackwardForecast = 10;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.BackwardForecast = 10
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img168.png)
+
+### Trendline Legends
+
+The visibility of the trendline can also be checked using the checkboxes in the legend. When the legend checkbox is unchecked, the trendline is hidden. 
+
+![](Chart-Series_images/Chart-Series_img169.png)
+
+N> In order to enable the checkboxes in the trendline legend ,**VisibleCheckBox** property should be enabled in the legend.
+
+### Customizing the Styles of the Trendlines
+
+The trendline can be customized by using the properties such as **Color, Width and Style**.
+
+ {% tabs %}  {% highlight c# %}
+
+trendline.Style = DashStyle.Dash;
+trendline.Width = 3f;
+trendline.Color = Color.Red;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+trendline.Style = DashStyle.Dash
+trendline.Width = 3f
+trendline.Color = Color.Red
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Chart-Series_images/Chart-Series_img170.png)
 
