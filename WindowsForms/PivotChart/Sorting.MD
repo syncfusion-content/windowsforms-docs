@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Sorting | Windows Forms | Syncfusion
-description: sorting
+title: Sorting in PivotChart
+description: Sorting operations in PivotChart
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
 # Sorting
-Sorting enables you to quickly visualize and understand the data in a better way, organize and find the data that you want, and ultimately make more effective decisions. By default, the PivotChart will populate the series in ascending order. The sorting order for `PivotAxis` and `PivotLegends` can be changed by adding `SortAxisDescriptorCollection`, `SortLegendDescriptorCollection` objects to the `SortedAxis` and `SortedLegends` collection vice versa. 
+PivotChart provides support to sort both `PivotAxis` and `PivotLegends` programmatically in both ascending and descending order. By default, the PivotChart will populate the series in ascending order.
 
-## Sort by PivotAxis 
-PivotAxis can be sorted by adding `SortAxisDescritorCollection` object to the `SortedAxis` collection. Here "Gender" is an PivotAxis item, ListSortDirection is used to specify the sorting order.
+## Sort by Pivot Axis 
+PivotAxis can be sorted by adding `PivotSortDescriptor` to the `SortedAxis` collection and `ListSortDirection` is used to specify the sorting order.
+
+Here "Gender" is an `PivotAxis` item.
 
 {% tabs %}
 {% highlight c# %}
@@ -25,16 +27,18 @@ Me.pivotChart1.SortedAxis.Add(New PivotSortDescriptor("Gender", ListSortDirectio
 {% endhighlight %}
 {% endtabs %}
  
-Before Applying sorting
+Before applying sorting
 
 ![](Sorting/images/Before_Sorting.png) 
 
-After Applying Sorting on PivotAxis "Gender"
+After aplying sorting on `PivotAxis` "Gender"
 
 ![](Sorting/images/After_Sorting.png) 
 
-## Sort by PivotLegends
-`PivotLegends` can be sorted by adding `SortLegendDescritorCollection` object to the `SortedLegends` collection. Here "state" is PivotLgends item `FieldMappingName`, And sorting direction takes default value Ascending order. 
+## Sort by Pivot Legends
+`PivotLegends` can be sorted by adding `PivotSortDescriptor` to the `SortedLegends` collection and `ListSortDirection` is used to specify the sorting order.
+
+Here "State" `FieldMappingName` of `PivotLegends` item and sorting order is ascending. 
 
 {% tabs %}
 {% highlight c# %}
@@ -49,7 +53,7 @@ Me.pivotChart1.SortedLegends.Add(New PivotSortDescriptor("State"))
 {% endtabs %}
 
 ## Sort by values
-`PivotLegends` can be sorted based on the label Text, you can able to sort them using values.  Below code snippet is used for applying sorting based on values.
+`PivotLegends` can also be sorted based on the values by using `SortByCalculation` method of `PivotEngine`.
 
 {% tabs %}
 {% highlight c# %}
@@ -64,15 +68,15 @@ Me.pivotChart1.PivotEngine.SortByCalculation(6, False, ListSortDirection.Descend
 {% endtabs %}
 
 ## Events
-There are two events available for sorting in both PivotAxis and PivotLegends, those details were given below.
+There are two events available in both `SortedAxis` and `SortedLegends` of PivotChart to handle or notify the sorting operation.
 
 <table>
 <tr>
-<th>S.No</th><th>API Name</th><th>Details</th><th>Event Args</th>
+<th>S.No</th><th>Event name</th><th>Details</th><th>Event arguments</th>
 </tr>
 <tr>
-<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td>PivotItemSortedEventArgs</td>
-<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td>PivotItemSortingEventArgs</td>
+<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td>`PivotItemSortingEventArgs`</td>
+<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td>`PivotItemSortedEventArgs`</td>
 </tr>
 </table>
 
