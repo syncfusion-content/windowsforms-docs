@@ -107,7 +107,7 @@ Me.gridGroupingControl1.GetTableDescriptor("Orders").Columns("Freight").Appearan
 
 ![](CommentTip_images/CommentTip_img15.png)
 
-N> The comment tip events for the nested table can be accessed by getting the specific nested table’s table control using the [GetTableControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GetTableControl.html) method.
+N> The comment tip events for the nested table can be accessed by getting the specific nested table's table control using the [GetTableControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GetTableControl.html) method.
 
 ## Removing comment tip 
 The comment tip for the cell can be removed by using the `ResetCommentTip` method.  It will reset the comment tip properties to the default values.
