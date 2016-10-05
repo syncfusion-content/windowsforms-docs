@@ -597,7 +597,7 @@ Dim gridExcelFilter As GridExcelFilter = New GridExcelFilter
 ![](Filtering_images/Filtering_img15.png)
 
 ##### Filter by color
-The `GridExcelFilter` lets the user to filter the records based on its cell `Backcolor` and `Textcolor`. This filter option can be enabled by using [AllowFilterByColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~AllowFilterByColor.html#).
+The `GridExcelFilter` lets the user to filter the records based on its cell `Backcolor` and `TextColor`. This filter option can be enabled by using [AllowFilterByColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~AllowFilterByColor.html#).
 {% tabs %}
 {% highlight c# %}
 GridExcelFilter gridExcelFilter = new GridExcelFilter();
@@ -746,7 +746,7 @@ Dim officeFilter As GridOffice2007Filter = New GridOffice2007Filter
 ![](Filtering_images/Filtering_img23.png)
 
 ### Stacked header filtering
-To filter the stacked header column, [EnableStackedColumnFilterIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~EnableStackedColumnFilterIcon.html#)property can be used. To know about the Stacked Headers, refer [this](http://help.syncfusion.com/windowsforms/gridgrouping/grid-layout#stacked-headers) section.
+To filter the stacked header column, [EnableStackedColumnFilterIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~EnableStackedColumnFilterIcon.html#) property can be used. To know about the Stacked Headers, refer [this](http://help.syncfusion.com/windowsforms/gridgrouping/grid-layout#stacked-headers) section.
 The stacked header column will show the filter dialog box for specified column in the [GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html#). 
 The following example shows the filter is enabled for stacked header in which filter dialog box will be shown for `ID` column. 
 {% tabs %}
