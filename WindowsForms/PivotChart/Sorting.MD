@@ -31,7 +31,7 @@ Before applying sorting
 
 ![](Sorting/images/Before_Sorting.png) 
 
-After aplying sorting on `PivotAxis` "Gender"
+After applying sorting on `PivotAxis` "Gender"
 
 ![](Sorting/images/After_Sorting.png) 
 

@@ -407,8 +407,8 @@ Me.gridGroupingControl1.DataSource = MyBooks
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo
 
 ### Binding a list with primitive data type 
-The primitive data type (int, float, double Etc.) does not contain any properties. For example, `string` data type has the `Length` property. But `int` data type does not have any properties. Therefore, columns will not be populated for primitive data types when bind the list with primitive datatype which has no properties to the grid.
-If you want to bind the primitive datatype collections to the grid, you can create a class which contains the property with the type that you want to add to the collection.
+The primitive data type (int, float, double Etc.) does not contain any properties. For example, `string` data type has the `Length` property. But `int` data type does not have any properties. Therefore, columns will not be populated for primitive data types when bind the list with primitive data type which has no properties to the grid.
+If you want to bind the primitive data type collections to the grid, you can create a class which contains the property with the type that you want to add to the collection.
 {% tabs %}
 {% highlight c# %}
 public Form1()

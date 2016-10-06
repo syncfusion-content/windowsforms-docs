@@ -43,9 +43,17 @@ The following code illustrates how to select specified records.
 N> Method Name:  AddRange   Parameter: Specify the Record collection to be selected
 {% highlight C# %} 
 
-//Selects the specified records in the grid table.
+//Defining record collection
+Record[] recordCollection = new Record[5];
 
-this.gridGroupingControl1.Table.SelectedRecords.AddRange(rec);
+//Adding records to collection
+for (int index = 0; index < recordCollection.Length; index++)
+{
+    recordCollection[index] = this.gridGroupingControl1.Table.Records[index];
+}
+
+//Adding records collection to SelectedRecords
+this.gridGroupingControl1.Table.SelectedRecords.AddRange(recordCollection);
 
  {% endhighlight %}
 
