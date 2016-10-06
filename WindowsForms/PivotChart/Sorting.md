@@ -46,7 +46,7 @@ Here "State" `FieldMappingName` of `PivotLegends` item and sorting order is asce
 this.pivotChart1.SortedLegends.Add(new PivotSortDescriptor("State"));
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 'Adding PiovtAxis to the SortAxis collection for sorting.
 Me.pivotChart1.SortedLegends.Add(New PivotSortDescriptor("State"))
 {% endhighlight %}
@@ -61,7 +61,7 @@ Me.pivotChart1.SortedLegends.Add(New PivotSortDescriptor("State"))
 this.pivotChart1.PivotEngine.SortByCalculation(6, false, ListSortDirection.Descending);
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 ' Sorts the given indexed columns based on values in 
 Me.pivotChart1.PivotEngine.SortByCalculation(6, False, ListSortDirection.Descending)
 {% endhighlight %}
@@ -75,8 +75,8 @@ There are two events available in both `SortedAxis` and `SortedLegends` of Pivot
 <th>S.No</th><th>Event name</th><th>Details</th><th>Event arguments</th>
 </tr>
 <tr>
-<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td><a href = "https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html">PivotItemSortingEventArgs</a></td>
-<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td><a href = "https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html">PivotItemSortedEventArgs</a></td>
+<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td>[PivotItemSortingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html)</td>
+<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td>[PivotItemSortedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html)</a></td>
 </tr>
 </table>
 
