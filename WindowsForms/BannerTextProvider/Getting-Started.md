@@ -9,11 +9,7 @@ documentation: ug
 
 # Getting Started
 
-
-Syncfusion introduces BannerTextProvider class that provides the ability to display banner text in the textbox. 
-
- ![](Overview_images/Overview_img2.jpeg) 
-
+This section guides you on getting started with the BannerTextProvider control. It describes you about the control structure, basic settings, implementation and members.
 
 
 * BannerTextProvider component is available in the Toolbox under Syncfusion tab. 
