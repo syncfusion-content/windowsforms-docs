@@ -29,11 +29,11 @@ Me.pivotChart1.SortedAxis.Add(New PivotSortDescriptor("Gender", ListSortDirectio
  
 Before applying sorting
 
-![](Sorting/images/Before_Sorting.png) 
+![](Sorting_images/Before_Sorting.png) 
 
 After applying sorting on `PivotAxis` "Gender"
 
-![](Sorting/images/After_Sorting.png) 
+![](Sorting_images/After_Sorting.png) 
 
 ## Sort by Pivot Legends
 `PivotLegends` can be sorted by adding `PivotSortDescriptor` to the `SortedLegends` collection and `ListSortDirection` is used to specify the sorting order.
