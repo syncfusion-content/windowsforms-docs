@@ -357,6 +357,35 @@ Me.gridGroupingControl1.TableDescriptor.Columns(1).Width = 150
 {% endhighlight %}
 {% endtabs %}
 
+### Setting Default Column Width for columns
+The default column width can be assigned for GridGroupingControl columns by setting the [DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~DefaultColumnWidth.html) property. Please refer the below code,
+{% tabs %}
+{% highlight c# %}
+this.gridGroupingControl1.TableDescriptor.AllowCalculateMaxColumnWidth = false;
+this.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100;
+{% endhighlight %}
+{% highlight vb %}
+Me.gridGroupingControl1.TableDescriptor.AllowCalculateMaxColumnWidth = False
+Me.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100
+{% endhighlight %}
+{% endtabs %}
+N> The `DefaultColumnWidth` can be affected to columns only when set the [AllowCalculateMaxColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~AllowCalculateMaxColumnWidth.html) property to false.
+
+The column width can be calculated based on [ColumnsMaxLengthStragegy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthStrategy.html) property. Below is the list of predefined column sizing options available in[GridColumnMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.html) enumeration.
+`GridColumnsMaxLengthStrategy.None`:The Default column width or defined width set to column. 
+`GridColumnsMaxLengthStrategy.MaxLengthSummary`:Calculates the width of column based on header and cell contents. So that header and cell contents are not truncated.
+`GridColumnsMaxLengthStrategy. FirstNRecords`:Calculates the width of the column based on the number of rows is defined by [ColumnsMaxLengthFirstNRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthFirstNRecords.html) property. Please refer the below code,
+{% tabs %}
+{% highlight c# %}
+this.gridGroupingControl1.TableOptions.ColumnsMaxLengthFirstNRecords = 10;
+this.gridGroupingControl1.TableOptions.ColumnsMaxLengthStrategy = Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.FirstNRecords;
+{% endhighlight %}
+{% highlight vb %}
+Me.gridGroupingControl1.TableOptions.ColumnsMaxLengthFirstNRecords = 10
+Me.gridGroupingControl1.TableOptions.ColumnsMaxLengthStrategy = Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.FirstNRecords
+{% endhighlight %}
+{% endtabs %}
+
 ### Setting Column Styles 
 The styles can be applied for the particular column by using the [Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) properties of the [TableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor_members.html).
 
