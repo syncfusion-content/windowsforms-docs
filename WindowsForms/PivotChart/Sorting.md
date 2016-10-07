@@ -76,7 +76,7 @@ There are two events available in both `SortedAxis` and `SortedLegends` of Pivot
 </tr>
 <tr>
 <td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td><a href="https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html">PivotItemSortingEventArgs</a></td>
-<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td><a href="https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html">PivotItemSortingEventArgs</a></td>
+<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td><a href="https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html">PivotItemSortedEventArgs</a></td>
 </tr>
 </table>
 
