@@ -385,7 +385,7 @@ Sample diagram is as follows,
 
 ### Connection Point Properties
 
-ConnectionPoint class provides points to connect to other nodes using a connector. It is available in different custom appearance and in different sizes.
+ConnectionPoint class provides points to connect to other nodes using a connector. It is available in different custom appearance and in different sizes.It is also has a feature to generate connector automatically when we hover on port through AllowConnectOnDrag.
 
 The ConnectionPointType and ConnectionsLimit properties are available for the ports to define their nature.
 
@@ -406,7 +406,12 @@ Specifies the type of connection to be used. The values included are as follows:
 <td>
 ConnectionsLimit</td><td>
 Specifies the number of connections to be allowed. Default value is 10.</td></tr>
+<tr>
+<td>
+AllowConnectOnDrag</td><td>
+It is used to generate connector automatically when we hover on port. Default Value is false.</td></tr>
 </table>
+
 
 
 The following code snippet demonstrates their usage.
@@ -423,9 +428,12 @@ cp.ConnectionPointType = ConnectionPointType.Incoming;
 
 cp.ConnectionsLimit = 12;
 
+cp.AllowConnectOnDrag = true;
+
 {% endhighlight %}
 
 {% highlight vbnet %}
+
 
 
 Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
@@ -433,6 +441,8 @@ Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
 cp.ConnectionPointType = ConnectionPointType.Incoming
 
 cp.ConnectionsLimit = 12
+
+cp.AllowConnectOnDrag = True
 
 {% endhighlight %}
 
@@ -2554,6 +2564,115 @@ Sample diagrams are as follows,
 
 
 
+#### Node Mouse Events
+
+This topic discusses the events that are raised when mouse entering or leaving the node. The below table discusses all the available node mouse events.
+
+
+
+Node Mouse Events
+
+<table>
+<tr>
+<th>
+DiagramViewerEventSink</th><th>
+Description</th></tr>
+<tr>
+<td>
+NodeMouseEnter</td><td>
+Triggered when mouse enter into the node.</td></tr>
+<tr>
+<td>
+NodeMouseLeave</td><td>
+Triggered when mouse leaves the node.</td></tr>
+</table>
+
+
+
+EventArgs members can be accessed using the following members.
+
+
+
+Properties
+
+<table>
+<tr>
+<th>
+NodeMouse EventArgs Member</th><th>
+Description</th></tr>
+<tr>
+<td>
+Node</td><td>
+Gets the node clicked. If a single node is clicked that node will be returned. If a node is clicked from a group it will return that group as a node.</td></tr>
+<tr>
+<td>
+Actual Node</td><td>
+Actual Nodes gets the exact node. If we click a node from group it will retrieve the exact node clicked.</td></tr>
+</table>
+
+
+
+{% highlight c# %}
+
+
+
+private void Form1_Load(object sender, EventArgs e)
+{
+
+    this.diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
+
+    this.diagram1.EventSink.NodeMouseLeave += EventSink_NodeMouseLeave;
+       
+}
+
+
+
+void EventSink_NodeMouseEnter(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs evtArgs)
+{
+
+    MessageBox.Show("Node: " + evtArgs.Node.Name.ToString() +" , "+ "Actual Node: " + evtArgs.ActualNode.Name.ToString());
+
+}
+
+
+
+void EventSink_NodeMouseLeave(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs evtArgs)
+{
+
+    MessageBox.Show("Node: " + evtArgs.Node.Name.ToString() + " , " + "Actual Node: " + evtArgs.ActualNode.Name.ToString());
+
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
+
+    AddHandler Me.diagram1.EventSink.NodeMouseEnter, AddressOf EventSink_NodeMouseEnter
+
+    AddHandler Me.diagram1.EventSink.NodeMouseLeave, AddressOf EventSink_NodeMouseLeave
+
+End Sub
+
+Private Sub EventSink_NodeMouseEnter(ByVal evtArgs As Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)
+
+    MessageBox.Show("Node: " & evtArgs.Node.Name.ToString() & " , " & "Actual Node: " & evtArgs.ActualNode.Name.ToString())
+
+End Sub
+
+Private Sub EventSink_NodeMouseLeave(ByVal evtArgs As Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)
+
+    MessageBox.Show("Node: " & evtArgs.Node.Name.ToString() & " , " & "Actual Node: " & evtArgs.ActualNode.Name.ToString())
+
+End Sub
+
+{% endhighlight %}
+
+
+
 #### Tool Events
 
 The below events gets fired while activating or deactivating the UI tools (Zoom, Pan, Select etc) in the diagram.
@@ -3047,7 +3166,16 @@ This event is raised when the text in the text editor is changed. </td></tr>
 <td>
 LabelTextChanged</td><td>
 This event is raised when the text in the label editor is changed.</td></tr>
+<tr>
+<td>
+KeyDown</td><td>
+This event is raised whenever a key is pressed in the text editor. </td></tr>
+<tr>
+<td>
+TextEditingCompleted</td><td>
+This event is raised when the text editing in the text editor is completed. </td></tr>
 </table>
+
 
 
 The following code example illustrates how the TextChanged and LabelTextChanged events are raised when the text in the text editor and label editor are changed respectively.
@@ -3065,6 +3193,10 @@ private void Form1_Load(object sender, EventArgs e)
      diagram1.Controller.TextEditor.TextChanged += new EventHandler(TextEditor_TextChanged);
 
      diagram1.Controller.InPlaceEditor.LabelTextChanged += new EventHandler(InPlaceEditor_LabelTextChanged); 
+
+     diagram1.Controller.TextEditor.KeyDown += TextEditor_KeyDown;
+
+     diagram1.Controller.TextEditor.TextEditingCompleted += TextEditor_TextEditingCompleted;
 
 }
 
@@ -3088,6 +3220,24 @@ void InPlaceEditor_LabelTextChanged(object sender, EventArgs e)
 
 }  
 
+
+
+void TextEditor_KeyDown(object sender, KeyEventArgs e)
+{
+
+    MessageBox.Show("Key Down:" + e.KeyData);
+
+}
+
+
+
+void TextEditor_TextEditingCompleted(object sender, Syncfusion.Windows.Forms.Diagram.LabelEditingCompletedEventArgs evtArgs)
+{
+
+    MessageBox.Show("Text Edit Completed:" + evtArgs.Value.ToString());
+
+}
+
 {% endhighlight %}
 
 {% highlight vbnet %}
@@ -3099,6 +3249,11 @@ Private Sub Form1_Load(sender As Object, e As EventArgs)
         diagram1.Controller.TextEditor.TextChanged += New EventHandler(AddressOf TextEditor_TextChanged)
 
         diagram1.Controller.InPlaceEditor.LabelTextChanged += New EventHandler(AddressOf InPlaceEditor_LabelTextChanged)
+        
+        diagram1.Controller.TextEditor.KeyDown += New EventHandler(AddressOf TextEditor_KeyDown)
+
+        diagram1.Controller.TextEditor.TextEditingCompleted += New EventHandler(AddressOf TextEditor_TextEditingCompleted)     
+
 
 End Sub
 
@@ -3115,6 +3270,22 @@ End Sub
 Private Sub InPlaceEditor_LabelTextChanged(sender As Object, e As EventArgs)
 
         MessageBox.Show("Text :" & Convert.ToString(Me.diagram1.Controller.InPlaceEditor.Text))
+
+End Sub
+
+
+
+Private Sub TextEditor_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+
+        MessageBox.Show("Key Down:" & e.KeyData)
+
+End Sub
+
+
+
+Private Sub TextEditor_TextEditingCompleted(ByVal sender As Object, ByVal evtArgs As Syncfusion.Windows.Forms.Diagram.LabelEditingCompletedEventArgs)
+
+        MessageBox.Show("Text Edit Completed:" & evtArgs.Value.ToString())
 
 End Sub
 

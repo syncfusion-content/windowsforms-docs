@@ -13,7 +13,7 @@ This section discusses how to customize Diagram nodes, under the following topic
 
 ## Line Bridging
 
-Line bridging provides the visual effect such that the links jump over other links that are found in it's way with lower Z-order, thereby avoiding the links from intersecting each other and providing a hassle-free view to clearly state the various connections between the nodes. This is done by enabling the LineBridgingEnabled property. Default value is _false_.
+Line bridging provides the visual effect such that the links jump over other links that are found in it's way with lower Z-order, thereby avoiding the links from intersecting each other and providing a hassle-free view to clearly state the various connections between the nodes.It will also create the same visual effect when it jumps over any port. This is done by enabling the LineBridgingEnabled property. Default value is _false_.
 
 
 
