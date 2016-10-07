@@ -29,11 +29,11 @@ Me.pivotChart1.SortedAxis.Add(New PivotSortDescriptor("Gender", ListSortDirectio
  
 Before applying sorting
 
-![](Sorting/images/Before_Sorting.png) 
+![](Sorting_images/Before_Sorting.png) 
 
 After applying sorting on `PivotAxis` "Gender"
 
-![](Sorting/images/After_Sorting.png) 
+![](Sorting_images/After_Sorting.png) 
 
 ## Sort by Pivot Legends
 `PivotLegends` can be sorted by adding `PivotSortDescriptor` to the `SortedLegends` collection and `ListSortDirection` is used to specify the sorting order.
@@ -75,8 +75,8 @@ There are two events available in both `SortedAxis` and `SortedLegends` of Pivot
 <th>S.No</th><th>Event name</th><th>Details</th><th>Event arguments</th>
 </tr>
 <tr>
-<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td>[PivotItemSortingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html)</td>
-<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td>[PivotItemSortedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortedEventArgs.html)</a></td>
+<td>1</td><td>Changing</td><td>Occurs before a property in a nested element or the collection is changed.</td><td><a href="https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html">PivotItemSortingEventArgs</a></td>
+<tr><td>2</td><td>Changed</td><td>Occurs after a property in a nested element or the collection is changed.	</td><td><a href="https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotItemSortingEventArgs.html">PivotItemSortingEventArgs</a></td>
 </tr>
 </table>
 
