@@ -203,7 +203,7 @@ The grid after moving the column
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img9.jpeg)
 
 ## Unbound Columns
-The GridGroupingControl is provide the support for adding the unbound columns which are not bounded to the gridâ€™s data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~UnboundFields.html) collection.
+The GridGroupingControl is provide the support for adding the unbound columns which are not bounded to the grid’s data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~UnboundFields.html) collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -371,7 +371,7 @@ Me.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100
 {% endtabs %}
 N> The `DefaultColumnWidth` can be affected to columns only when set the [AllowCalculateMaxColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~AllowCalculateMaxColumnWidth.html) property to false.
 
-The column width can be calculated based on [ColumnsMaxLengthStragegy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthStrategy.html) property. Below is the list of predefined column sizing options available in[GridColumnMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.html) enumeration.
+The column width can be calculated based on [ColumnsMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthStrategy.html) property. Below is the list of predefined column sizing options available in[GridColumnMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.html) enumeration.
 `GridColumnsMaxLengthStrategy.None`:The Default column width or defined width set to column. 
 `GridColumnsMaxLengthStrategy.MaxLengthSummary`:Calculates the width of column based on header and cell contents. So that header and cell contents are not truncated.
 `GridColumnsMaxLengthStrategy. FirstNRecords`:Calculates the width of the column based on the number of rows is defined by [ColumnsMaxLengthFirstNRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthFirstNRecords.html) property. Please refer the below code,
