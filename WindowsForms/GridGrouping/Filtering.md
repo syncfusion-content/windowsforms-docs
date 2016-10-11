@@ -423,6 +423,7 @@ Dim dynamicFilter As GridDynamicFilter = New GridDynamicFilter'Wiring th
 ![](Filtering_images/Filtering_img8.png)
 
 The column will be filtered based on the typed character or word in the filter bar cell. The compare operator for filtering the values is available in the `CompareOperator` dropdown. The below example shows the behavior of the `CompareOperator` dropdown.
+
 ![](Filtering_images/Filtering_img9.png)
 
 ### Apply filter only on lost focus
