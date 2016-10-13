@@ -9035,7 +9035,7 @@ All series and Points </td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Scatter Chart, Hilo Open Close Chart, Column Charts, Bar Charts, Bubble Chart,
+Scatter Chart, HiLo Open Close Chart, Column Charts, Bar Charts, Bubble Chart,
 Line Charts, Box and Whisker Chart,  Combination Chart, Candle Chart, Area Charts,
 ColumnRange Chart, BoxAndWhiskerChart, Stacking Column Chart, Stacking Bar Chart, Stacking Area, Stacking Area100</td></tr>
 </table>
