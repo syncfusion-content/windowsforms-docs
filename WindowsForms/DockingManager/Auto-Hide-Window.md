@@ -131,3 +131,65 @@ Me.dockingManager1.AutoHideSelectionStyle = Syncfusion.Windows.Forms.Tools.AutoH
 
 {% endtabs %}
 
+## Auto Hide Backcolor
+
+The background color of the Auto Hide window can be customized by using the property named TabPanelBackcolor in AHTabControl. The following code is used to customize the back color.
+
+{% tabs %}
+
+{% highlight C# %}
+
+DockHost dhost = this.dockingManager1.ControlsArray[0].Parent as DockHost; 
+
+DockHostController dhc = dhost.InternalController as DockHostController; 
+ 
+MainFormController mfc = dhc.ParentController.ToplevelController as MainFormController; 
+         
+AHTabControl ahTabCtrlLeft = mfc.GetAHTabControl(DockingStyle.Left); 
+
+ahTabCtrlLeft.TabPanelBackColor = Color.Yellow; 
+
+AHTabControl ahTabCtrlBottom = mfc.GetAHTabControl(DockingStyle.Bottom); 
+
+ahTabCtrlBottom.TabPanelBackColor = Color.Green; 
+
+AHTabControl ahTabCtrlRight = mfc.GetAHTabControl(DockingStyle.Right); 
+
+ahTabCtrlRight.TabPanelBackColor = Color.Gray; 
+
+AHTabControl ahTabCtrlTop = mfc.GetAHTabControl(DockingStyle.Top); 
+
+ahTabCtrlTop.TabPanelBackColor = Color.YellowGreen; 
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Dim dhost As DockHost = TryCast(Me.panel1.Parent, DockHost)
+
+Dim dhc As DockHostController = TryCast(dhost.InternalController, DockHostController)
+
+Dim mfc As MainFormController = TryCast(dhc.ParentController.ParentController, MainFormController)
+
+Dim ahTabCtrlBottom As AHTabControl = mfc.GetAHTabControl(DockingStyle.Bottom)
+
+ahTabCtrlBottom.TabPanelBackColor = Color.Red
+
+Dim ahTabCtrlLeft As AHTabControl = mfc.GetAHTabControl(DockingStyle.Left)
+
+ahTabCtrlLeft.TabPanelBackColor = Color.Green
+
+Dim ahTabCtrlRight As AHTabControl = mfc.GetAHTabControl(DockingStyle.Right)
+
+ahTabCtrlRight.TabPanelBackColor = Color.Yellow
+
+Dim ahTabCtrlTop As AHTabControl = mfc.GetAHTabControl(DockingStyle.Top)
+
+ahTabCtrlTop.TabPanelBackColor = Color.Gray
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/AutoHideBackground.png)
