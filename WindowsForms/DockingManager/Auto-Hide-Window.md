@@ -133,7 +133,7 @@ Me.dockingManager1.AutoHideSelectionStyle = Syncfusion.Windows.Forms.Tools.AutoH
 
 ## Auto Hide Backcolor
 
-The background color of the Auto Hide window can be customized by using the property named TabPanelBackcolor in AHTabControl. The following code is used to customize the back color.
+The background color of the Auto Hide window can be customized using the property named `TabPanelBackcolor` in AHTabControl. The following code used to customize the back color.
 
 {% tabs %}
 
