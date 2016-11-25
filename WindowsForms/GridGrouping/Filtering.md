@@ -876,7 +876,7 @@ gridGroupingControl1.TableControl.CellRenderers("CustomStackedHeaderCell") = New
 ![](Filtering_images/Filtering_img28.png)
 
 ### GridExcelFilter Serialization
-The process of serializing and deserializing the `GridExcelFilter` settings and its filter collection is explained in detail in the [link.](https://help.syncfusion.com/windowsforms/gridgrouping/serialization#gridexcelfilter-serialization)
+The process of serializing and deserializing the `GridExcelFilter` settings and its filter collection is explained in detail in this [link.](https://help.syncfusion.com/windowsforms/gridgrouping/serialization#gridexcelfilter-serialization)
 
 ### Office2007 filter
 Office2007Filter is built-in filter similar to `Microsoft Excel 2007` filter. The **Office2007** filter can be added to GridGroupingControl by using the [GridOffice2007Filter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridOffice2007Filter.html#) class. 
