@@ -692,6 +692,192 @@ filter.WireGrid(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
+### Filter Icon Customization
+The default icons of `GridExcelFilter` can be customized for column headers and stacked headers. To set the filter icon, custom cell renderer and cell model needs to be created. 
+
+### Customizing Filter Icon for Column Headers
+To customize the filter icon for column headers, the cell model and cell renderer of [GridExcelFilterCellModel](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellModel.html) and [GridExcelFilterCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer.html) should be overridden. The icons for the column headers can be customized using the below properties,
+
+ * [FilterIconSize](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer~FilterIconSize.html) - Sets the size of the `GridExcelFilter` filter icon.
+ * [FilterIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer~FilterIcon.html) - Sets the Bitmap of the Filter icon.
+ * [FilteredIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer~FilteredIcon.html) - Sets the Bitmap of the Filtered icon.
+
+The following is the process of creating cell model and cell renderer for customizing the column headers filter icon,
+
+*	Creating cell model.
+{% tabs %}
+{% highlight c#%}
+public class GridExcelFilterCellModelAdv : GridExcelFilterCellModel
+{
+    private GridExcelFilter excelFilter;
+
+    public GridExcelFilterCellModelAdv(GridModel grid, GridExcelFilter excelFilter)
+        : base(grid, excelFilter)
+    {
+        this.excelFilter = excelFilter;
+    }
+
+    public override GridCellRendererBase CreateRenderer(GridControlBase control)
+    {
+        return new GridExcelFilterCellRendererAdv(control, this, this.excelFilter);
+    }
+}
+{% endhighlight %}
+{% highlight vb%}
+Public Class GridExcelFilterCellModelAdv
+    Inherits GridExcelFilterCellModel
+    Private excelFilter As GridExcelFilter
+
+    Public Sub New(ByVal grid As GridModel, ByVal excelFilter As GridExcelFilter)
+        MyBase.New(grid, excelFilter)
+        Me.excelFilter = excelFilter
+    End Sub
+
+    Public Overrides Function CreateRenderer(ByVal control As GridControlBase) As GridCellRendererBase
+        Return New GridExcelFilterCellRendererAdv(control, Me, Me.excelFilter)
+    End Function
+End Class
+{% endhighlight%}
+{% endtabs %}
+
+
+* Creating cell renderer.
+{% tabs %}
+{% highlight c#%}
+class GridExcelFilterCellRendererAdv : GridExcelFilterCellRenderer
+{
+    public GridExcelFilterCellRendererAdv(GridControlBase grid, GridCellModelBase cellModel, GridExcelFilter excelFilter)
+        : base(grid, cellModel, excelFilter)
+    {
+        base.FilterIconSize = new Size(30, 30);
+        base.FilterIcon = new Bitmap("Filter.png");
+        base.FilteredIcon = new Bitmap("ClearFilters.png");
+    }
+}
+{% endhighlight %}
+{% highlight vb%}
+Friend Class GridExcelFilterCellRendererAdv
+    Inherits GridExcelFilterCellRenderer
+    Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridCellModelBase, ByVal excelFilter As GridExcelFilter)
+        MyBase.New(grid, cellModel, excelFilter)
+        MyBase.FilterIconSize = New Size(30, 30)
+        MyBase.FilterIcon = New Bitmap("Filter.png")
+        MyBase.FilteredIcon = New Bitmap("ClearFilters.png")
+    End Sub
+End Class
+{% endhighlight%}
+{% endtabs %}
+
+
+* Replacing the cell renderer for default `ColumnHeaderCell`.
+{% tabs %}
+{% highlight c#%}
+//To enable the custom ColumnHeaderCell cell type.
+gridGroupingControl1.TableControl.CellRenderers["ColumnHeaderCell"] = new GridExcelFilterCellRendererAdv(gridGroupingControl1.TableControl, new GridExcelFilterCellModelAdv(gridGroupingControl1.TableModel, excelFilter), excelFilter);
+{% endhighlight %}
+{% highlight vb%}
+'To enable the custom ColumnHeaderCell cell type.
+gridGroupingControl1.TableControl.CellRenderers("ColumnHeaderCell") = New GridExcelFilterCellRendererAdv(gridGroupingControl1.TableControl, New GridExcelFilterCellModelAdv(gridGroupingControl1.TableModel, excelFilter), excelFilter)
+{% endhighlight%}
+{% endtabs %}
+ 
+![](Filtering_images/Filtering_img27.png)
+ 
+### Customizing Filter Icon for StackedHeaders
+To customize the filter icon for stacked headers, the cell model and cell renderer of [StackedHeaderCellModel](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellModel.html) and [StackedHeaderCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellRenderer.html) should be overridden. The icons for the stacked headers can be customized using the below properties.
+
+ *  [FilterIconSize](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellRenderer~FilterIconSize.html)- Sets the size of the `GridExcelFilter` filter icon.
+ * [FilterIconImage](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellRenderer~FilterIconImage.html)- Sets the Bitmap of the Filter icon.
+ * [FilteredIconImage](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellRenderer~FilteredIconImage.html)- Sets the Bitmap of the Filtered icon.
+ 
+The following is the process of creating custom cell model and cell renderer for customizing the stacked headers filter icon,
+
+*	Creating cell model.
+{% tabs %}
+{% highlight c#%}
+public class StackedHeaderCellModelAdv : StackedHeaderCellModel
+{
+    private GridExcelFilter excelFilter;
+
+    public StackedHeaderCellModelAdv(GridModel grid, GridExcelFilter excelFilter)
+        : base(grid, excelFilter)
+    {
+        this.excelFilter = excelFilter;
+    }
+
+    public override GridCellRendererBase CreateRenderer(GridControlBase control)
+    {
+        return new StackedHeaderCellRendererAdv(control, this, excelFilter);
+    }
+}
+{% endhighlight %}
+{% highlight vb%}
+Public Class StackedHeaderCellModelAdv
+    Inherits StackedHeaderCellModel
+    Private excelFilter As GridExcelFilter
+
+    Public Sub New(ByVal grid As GridModel, ByVal excelFilter As GridExcelFilter)
+        MyBase.New(grid, excelFilter)
+        Me.excelFilter = excelFilter
+    End Sub
+
+    Public Overrides Function CreateRenderer(ByVal control As GridControlBase) As GridCellRendererBase
+        Return New StackedHeaderCellRendererAdv(control, Me, excelFilter)
+    End Function
+End Class
+{% endhighlight%}
+{% endtabs %}
+
+* Creating cell renderer.
+{% tabs %}
+{% highlight c#%}
+public class StackedHeaderCellRendererAdv : StackedHeaderCellRenderer
+{
+    private GridExcelFilter excelFilter;
+
+    public StackedHeaderCellRendererAdv(GridControlBase grid, GridHeaderCellModel cellModel, GridExcelFilter excelFilter)
+        : base(grid, cellModel, excelFilter)
+    {
+        this.excelFilter = excelFilter;
+        FilterIconSize = new Size(30, 30);
+        FilterIconImage = new Bitmap("Filter.png");
+        FilteredIconImage = new Bitmap("ClearFilters.png");
+    }
+}
+{% endhighlight %}
+{% highlight vb%}
+Public Class StackedHeaderCellRendererAdv
+    Inherits StackedHeaderCellRenderer
+    Private excelFilter As GridExcelFilter
+
+    Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridHeaderCellModel, ByVal excelFilter As GridExcelFilter)
+        MyBase.New(grid, cellModel, excelFilter)
+        Me.excelFilter = excelFilter
+        FilterIconSize = New Size(30, 30)
+        FilterIconImage = New Bitmap("Filter.png")
+        FilteredIconImage = New Bitmap("ClearFilters.png")
+    End Sub
+End Class
+{% endhighlight%}
+{% endtabs %}
+
+* Replacing the cell renderer for `CustomStackedHeaderCell`.
+{% tabs %}
+{% highlight c#%}
+//To enable the custom StackedHeaderCell cell type.
+gridGroupingControl1.TableControl.CellRenderers["CustomStackedHeaderCell"] = new StackedHeaderCellRendererAdv(this.gridGroupingControl1.TableControl, new StackedHeaderCellModelAdv(gridGroupingControl1.TableModel, excelFilter), excelFilter);
+{% endhighlight %}
+{% highlight vb%}
+'To enable the custom StackedHeaderCell cell type.
+gridGroupingControl1.TableControl.CellRenderers("CustomStackedHeaderCell") = New StackedHeaderCellRendererAdv(Me.gridGroupingControl1.TableControl, New StackedHeaderCellModelAdv(gridGroupingControl1.TableModel, excelFilter), excelFilter)
+{% endhighlight%}
+{% endtabs %}
+
+![](Filtering_images/Filtering_img28.png)
+
+### GridExcelFilter Serialization
+The process of serializing and deserializing the `GridExcelFilter` settings and its filter collection is explained in detail in this [link.](https://help.syncfusion.com/windowsforms/gridgrouping/serialization#gridexcelfilter-serialization)
+
 ### Office2007 filter
 Office2007Filter is built-in filter similar to `Microsoft Excel 2007` filter. The **Office2007** filter can be added to GridGroupingControl by using the [GridOffice2007Filter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridOffice2007Filter.html#) class. 
 

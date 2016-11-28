@@ -105,5 +105,64 @@ Me.gridGroupingControl1.ApplyXmlLookAndFeel(xr)
 {% endhighlight %}
 {% endtabs %}
 
+## GridExcelFilter Serialization
+[GridExcelFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter.html) settings and the filter collections can be serialized into an XML file and deserialized from an XML file to the `GridExcelFilter`. 
+
+### Serialization
+The settings of the `GridExcelFilter` and its filter collection can be saved into an XML file by using [WriteXml](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~WriteXml.html) method. 
+{% tabs %}
+{% highlight c#%}
+GridExcelFilter excelFilter = new GridExcelFilter();
+excelFilter.AllowResize = true;
+excelFilter.EnableDateFilter = true;
+excelFilter.AllowSearch = false;
+excelFilter.EnableNumberFilter = true;
+excelFilter.WireGrid(gridGroupingControl1);
+XmlTextWriter xwExcelFilter = new XmlTextWriter("GridExcelFilter.xml", System.Text.Encoding.UTF8);
+this.excelFilter.WriteXml(xwExcelFilter);
+xwExcelFilter.Close();
+{% endhighlight %}
+{% highlight vb%}
+Dim excelFilter As New GridExcelFilter()
+excelFilter.AllowResize = True
+excelFilter.EnableDateFilter = True
+excelFilter.AllowSearch = False
+excelFilter.EnableNumberFilter = True
+excelFilter.WireGrid(gridGroupingControl1)
+Dim xwExcelFilter As New XmlTextWriter("GridExcelFilter.xml", System.Text.Encoding.UTF8)
+Me.excelFilter.WriteXml(xwExcelFilter)
+xwExcelFilter.Close()
+{% endhighlight%}
+{% endtabs %}
+
+
+### Deserialization
+The saved settings of the `GridExcelFilter` from an XML file can be deserialized to `GridExcelFilter` settings by using the [ApplyXml](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~ApplyXml.html) method.
+{% tabs %}
+{% highlight c#%} 
+GridExcelFilter excelFilter = new GridExcelFilter();
+excelFilter.AllowResize = true;
+excelFilter.EnableDateFilter = true;
+excelFilter.AllowSearch = false;
+excelFilter.EnableNumberFilter = true;
+excelFilter.WireGrid(gridGroupingControl1);
+XmlReader xrExcelFilter = new XmlTextReader("GridExcelFilter.xml");
+this.excelFilter.ApplyXml(xrExcelFilter);
+xrExcelFilter.Close();
+{% endhighlight %}
+{% highlight vb%}
+Dim excelFilter As New GridExcelFilter()
+excelFilter.AllowResize = True
+excelFilter.EnableDateFilter = True
+excelFilter.AllowSearch = False
+excelFilter.EnableNumberFilter = True
+excelFilter.WireGrid(gridGroupingControl1)
+Dim xrExcelFilter As XmlReader = New XmlTextReader("GridExcelFilter.xml")
+Me.excelFilter.ApplyXml(xrExcelFilter)
+xrExcelFilter.Close()
+{% endhighlight%}
+{% endtabs %}
+
+
 **Sample Location**
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Serialization\XML Serialization Demo
