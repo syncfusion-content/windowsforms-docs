@@ -1289,15 +1289,15 @@ The `SelectionFrameOption` enumeration has the following types of selection fram
 {% tabs %}
 {% highlight c# %}
 //Enable the Excel-like selection frame.
-this.gridGroupingControl1.TableControl.Model.Options.ExcelLikeSelectionFrame = true;
+this.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = true;
 //Enable the Excel-like current cell.
-this.gridGroupingControl1.TableControl.Model.Options.ExcelLikeCurrentCell = true;
+this.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = true;
 {% endhighlight %}
 {% highlight vb %}
 'Enable the Excel-like selection frame.
-Me.gridGroupingControl1.TableControl.Model.Options.ExcelLikeSelectionFrame = True
+Me.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = True
 'Enable the Excel-like current cell.
-Me.gridGroupingControl1.TableControl.Model.Options.ExcelLikeCurrentCell = True
+Me.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = True
 {% endhighlight %}
 {% endtabs %}
 ![](Selections_images/DataGrid_img1.png)
@@ -1307,11 +1307,11 @@ Me.gridGroupingControl1.TableControl.Model.Options.ExcelLikeCurrentCell = True
 {% tabs %}
 {% highlight c# %}
 //Enable the 2003 Excel like selectin frame.
-this.gridGroupingControl1.TableControl.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2003;
+this.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2003;
 {% endhighlight %}
 {% highlight vb %}
 'Enable the 2003 Excel like selectin frame.
-Me.gridGroupingControl1.TableControl.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
+Me.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
 {% endhighlight %}
 {% endtabs %}
 ![](Selections_images/DataGrid_img2.png)
@@ -1321,11 +1321,11 @@ The selection border brush for 2016 Excel like selection frame can be changed by
 {% tabs %}
 {% highlight c# %}
 //Sets the selection border brush for 2016 Excel-like selection frame.
-this.gridGroupingControl1.TableControl.Model.Options.SelectionBorderBrush = new SolidBrush(Color.Blue);
+this.gridGroupingControl1.TableModel.Options.SelectionBorderBrush = new SolidBrush(Color.DarkGreen);
 {% endhighlight %}
 {% highlight vb %}
 'Sets the selection border brush for 2016 Excel-like selection frame.
-Me.gridGroupingControl1.TableControl.Model.Options.SelectionBorderBrush = New SolidBrush(Color.Blue)
+Me.gridGroupingControl1.TableModel.Options.SelectionBorderBrush = New SolidBrush(Color.DarkGreen)
 {% endhighlight %}
 {% endtabs %}
 ![](Selections_images/DataGrid_img3.png)
@@ -1335,11 +1335,11 @@ The selection border thickness for 2016 Excel like selection frame can be change
 {% tabs %}
 {% highlight c# %}
 //Set the selection border thickness for 2016 Excel-like selection frame.
-this.gridGroupingControl1.TableControl.Model.Options.SelectionBorderThickness = 4;
+this.gridGroupingControl1.TableModel.Options.SelectionBorderThickness = 4;
 {% endhighlight %}
 {% highlight vb %}
 'Set the selection border thickness for 2016 Excel-like selection frame.
-Me.gridGroupingControl1.TableControl.Model.Options.SelectionBorderThickness = 4
+Me.gridGroupingControl1.TableModel.Options.SelectionBorderThickness = 4
 {% endhighlight %}
 {% endtabs %}
 ![](Selections_images/DataGrid_img4.png)

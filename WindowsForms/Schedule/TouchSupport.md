@@ -24,6 +24,6 @@ ScheduleControl allows to perform the vertical swipe scrolling in Day, `WorkWeek
 ![](TouchSupport_images/Schedule_img1.png)
 
 ## Touch Zooming
-The ScheduleControl view can be changed when perform the zooming operation as like MS Outlook calendar.
+The ScheduleControl view can be changed when perform the zooming operation as like MS Outlook calendar. 
 ![](TouchSupport_images/Schedule_img2.png)
 

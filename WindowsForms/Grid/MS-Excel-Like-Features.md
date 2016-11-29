@@ -24,7 +24,7 @@ Me.gridControl1.ExcelLikeSelectionFrame = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img1.jpeg)
+![](Excel-Like-Features_images/CellGrid_img1.png)
 
 ## 2016 Excel like Selection Frame 
 2016 Excel like selection frame can be enabled by setting the [ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ExcelLikeSelectionFrame.html# ) and [ExcelLikeCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ExcelLikeCurrentCell.html# ) properties to `true`. The [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionFrameOption.html# ) property can be used to enable the 2016 Excel like selection frame or 2003 Excel like selection fame by using [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html# ) enumeration. The default value of the `SelectionFrameOption` property is `SelectionFrameOption.Excel2016`.
@@ -54,11 +54,11 @@ The selection border brush for 2016 Excel like selection frame can be changed by
 {% tabs %}
 {% highlight c# %}
 //Sets the selection border brush for 2016 Excel-like selection frame.
-this.gridControl1.Model.Options.SelectionBorderBrush = new SolidBrush(Color.Blue);
+this.gridControl1.Model.Options.SelectionBorderBrush = new SolidBrush(Color.DarkGreen);
 {% endhighlight %}
 {% highlight vb %}
 'Sets the selection border brush for 2016 Excel-like selection frame.
-Me.gridControl1.Model.Options.SelectionBorderBrush = New SolidBrush(Color.Blue)
+Me.gridControl1.Model.Options.SelectionBorderBrush = New SolidBrush(Color.DarkGreen)
 {% endhighlight %}
 {% endtabs %}
 ![](Excel-Like-Features_images/CellGrid_img2.png)
@@ -77,7 +77,7 @@ Me.gridControl1.Model.Options.SelectionBorderThickness = 4
 {% endtabs %}
 ![](Excel-Like-Features_images/CellGrid_img3.png)
 
-## Setting the 2003 Excel like Selection Frame 
+### Setting the 2003 Excel like Selection Frame 
 2003 Excel like selection frame can be enabled by setting the `SelectionFrameOption` property to `SelectionFrameOption.Excel2003`.
 {% tabs %}
 {% highlight c# %}

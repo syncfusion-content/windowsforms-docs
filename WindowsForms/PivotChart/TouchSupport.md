@@ -41,7 +41,7 @@ Me.pivotChart1.EnableYZooming = True
 {% endtabs %}
 ![](TouchSupport_images/PivotChart_img2.png)
 
-### Disable zooming in X and Y axis
+### Disabling X and Y axis zooming
 The zooming can be disabled in X axis and Y axis by setting the `EnableXZooming` and `EnableYZooming` properties to `false`.
 {% tabs %}
 {% highlight c# %}

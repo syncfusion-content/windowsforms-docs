@@ -62,7 +62,7 @@ Me.gridControl1.ExcelLikeCurrentCell = True
 {% endtabs %}
 ![](TouchSupport_images/CellGrid_img3.png)
 
-N> The GridControl does not allow to perform the touch selection operation in 2003 Excel like selection frame. And also grid does not allow to perform the touch selection operations when current cell is in editing mode. This can be avoid by setting the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ActivateCurrentCellBehavior.html#) property to `GridCellActivateAction.DblClickOnCell` or ` GridCellActivateAction .None` option.
+N> The GridControl does not allow to perform the touch selection operation in 2003 Excel like selection frame. And also grid does not allow to perform the touch selection operations when current cell is in editing mode. This can be avoid by setting the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ActivateCurrentCellBehavior.html#) property to `GridCellActivateAction.DblClickOnCell` or `GridCellActivateAction .None` option.
 
 ### Disabling the Touch Selection
 The touch selection can be disabled by setting the [ShowTouchIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowTouchIndicator.html#) property to `false`. The default value of `ShowTouchIndicator` property is `true`. 
