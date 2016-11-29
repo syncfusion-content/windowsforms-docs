@@ -24,7 +24,72 @@ Me.gridControl1.ExcelLikeSelectionFrame = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img1.jpeg)
+![](Excel-Like-Features_images/CellGrid_img1.png)
+
+## 2016 Excel like Selection Frame 
+2016 Excel like selection frame can be enabled by setting the [ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ExcelLikeSelectionFrame.html# ) and [ExcelLikeCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ExcelLikeCurrentCell.html# ) properties to `true`. The [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionFrameOption.html# ) property can be used to enable the 2016 Excel like selection frame or 2003 Excel like selection fame by using [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html# ) enumeration. The default value of the `SelectionFrameOption` property is `SelectionFrameOption.Excel2016`.
+
+The `SelectionFrameOption` enumeration has the following types of selection frame options,  
+   
+ [SelectionFrameOption.Excel2003](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) - It is used the enable the 2003 Excel like selection frame for the grid. 
+ [SelectionFrameOption.Excel2016](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) - It is used the enable the 2016 Excel like selection frame for the grid.
+{% tabs %}
+{% highlight c# %}
+//Enable the Excel like selection frame to grid
+this.gridControl1.ExcelLikeSelectionFrame = true;
+//Enable Excel like current cell to grid
+this.gridControl1.ExcelLikeCurrentCell = true;
+{% endhighlight %}
+{% highlight vb %}
+'Enable the Excel like selection frame to grid
+Me.gridControl1.ExcelLikeSelectionFrame = True
+'Enable Excel like current cell to grid
+Me.gridControl1.ExcelLikeCurrentCell = True
+{% endhighlight %}
+{% endtabs %}
+![](Excel-Like-Features_images/CellGrid_img1.png)
+
+### Changing the Selection Border Brush 
+The selection border brush for 2016 Excel like selection frame can be changed by using the [SelectionBorderBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderBrush.html# ) property.
+{% tabs %}
+{% highlight c# %}
+//Sets the selection border brush for 2016 Excel-like selection frame.
+this.gridControl1.Model.Options.SelectionBorderBrush = new SolidBrush(Color.DarkGreen);
+{% endhighlight %}
+{% highlight vb %}
+'Sets the selection border brush for 2016 Excel-like selection frame.
+Me.gridControl1.Model.Options.SelectionBorderBrush = New SolidBrush(Color.DarkGreen)
+{% endhighlight %}
+{% endtabs %}
+![](Excel-Like-Features_images/CellGrid_img2.png)
+
+### Changing the Selection Border Thickness 
+The selection border thickness for 2016 Excel like selection frame can be changed by using the [SelectionBorderThickness](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderThickness.html#) property.
+{% tabs %}
+{% highlight c# %}
+//Set the selection border thickness for 2016 Excel-like selection frame.
+this.gridControl1.Model.Options.SelectionBorderThickness = 4;
+{% endhighlight %}
+{% highlight vb %}
+'Set the selection border thickness for 2016 Excel-like selection frame.
+Me.gridControl1.Model.Options.SelectionBorderThickness = 4
+{% endhighlight %}
+{% endtabs %}
+![](Excel-Like-Features_images/CellGrid_img3.png)
+
+### Setting the 2003 Excel like Selection Frame 
+2003 Excel like selection frame can be enabled by setting the `SelectionFrameOption` property to `SelectionFrameOption.Excel2003`.
+{% tabs %}
+{% highlight c# %}
+//Enable the 2003 Excel like selectin frame.
+this.gridControl1.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2003;
+{% endhighlight %}
+{% highlight vb %}
+'Enable the 2003 Excel like selectin frame.
+Me.gridControl1.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
+{% endhighlight %}
+{% endtabs %}
+![](Excel-Like-Features_images/CellGrid_img4.png)
 
 ## Excel-Like Current Cell
 To have the Excel-Like current cell in the GridControl, set the [ExcelLikeCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ExcelLikeCurrentCell.html) property to `true`. When the current cell moves out of a selected range, then the range will be cleared. Whereas the current cell can be moved inside a selected range, the range will be stayed.
