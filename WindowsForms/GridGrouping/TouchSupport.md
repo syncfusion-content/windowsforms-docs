@@ -49,15 +49,15 @@ To enable excel like selection frame in the grid, the [ExcelLikeSelectionFrame](
 {% tabs %}
 {% highlight c# %}
 //Enable the Excel-like selection frame.
-this.gridGroupingControl1.TableControl.Model.Options.ExcelLikeSelectionFrame = true;
+this.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = true;
 //Enable the Excel-like current cell.
-this.gridGroupingControl1.TableControl.Model.Options.ExcelLikeCurrentCell = true;
+this.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = true;
 {% endhighlight %}
 {% highlight vb %}
 'Enable the Excel-like selection frame.
-Me.gridGroupingControl1.TableControl.Model.Options.ExcelLikeSelectionFrame = True
+Me.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = True
 'Enable the Excel-like current cell.
-Me.gridGroupingControl1.TableControl.Model.Options.ExcelLikeCurrentCell = True
+Me.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = True
 {% endhighlight %}
 {% endtabs %}
 ![](TouchSupport_images/DataGrid_img3.png)
