@@ -42,8 +42,7 @@ Me.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = True
 {% endtabs %}
 ![](TouchSupport_images/PivotGrid_img2.png)
 
-**Note**
-PivotGridControl does not allow to perform the touch selection operation in 2003 Excel like selection frame. 
+N> PivotGridControl does not allow to perform the touch selection operation in 2003 Excel like selection frame. 
 
 ### Disabling the Touch Selection
 The touch selection can be disabled by setting the [ShowTouchIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowTouchIndicator.html#) property to `false`. The default value of `ShowTouchIndicator` property is `true`.
