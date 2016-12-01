@@ -218,13 +218,6 @@ Me.editControl1.SplitFourQuadrants()
 
 
 
-
-A sample which demonstrates Split Views is available in the below sample installation path.
-
-
-
-_..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-
 {% seealso %}
 
 [Scrolling Support](/windowsforms/edit/runtime-features#scrolling-support)
@@ -258,13 +251,6 @@ Me.editControl1.UseXPStyle = True
 ![](Appearance_images/Appearance_img2.jpeg)
 
 
-
-
-A sample based on XP Themes is available in the below sample installation path.
-
-
-
-_..\_ _My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 ### Border Style
 
@@ -484,10 +470,6 @@ Me.editControl1.MarkChangedLines = True
 
 
 
-Refer to the Selection Margin Demo sample in the following sample installation location, for more information in this regard.
-
-_..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-
 ### User Margin
 
 Edit Control supports the User Margin feature, which can be used to display additional information regarding the contents in the Edit Control. Information can also be displayed on a line-by-line basis.
@@ -658,12 +640,6 @@ End Sub
 
 {% endhighlight %}
 
-Refer to the User Margin Demo sample in the following sample installation location for more information in this regard.
-
-
-
-_..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-
 
 
 ## Background Settings
@@ -788,12 +764,6 @@ Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Dr
 
 
 
-
-A sample which demonstrates the Gradient Background feature is available in the below sample installation path.
-
-
-
-_..\ My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 ### Setting BackgroundColor for Specified Range of Text
 
@@ -1030,9 +1000,7 @@ this.editControl1.ShowFormatsCustomizationDialog();
 
 {% endhighlight %}
 
-Refer to the Font Customization Demo sample for more information in this regard.
 
-_..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 ## Single Line Mode
 
@@ -1051,12 +1019,6 @@ N> The SingleLineMode is intended for use, only when the Edit Control contains s
 
 
 
-
-Refer to the Single Line Mode Demo sample in the following sample installation location, for more information in this regard.
-
-
-
-_..\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 ## Customizable Find Dialog
 
