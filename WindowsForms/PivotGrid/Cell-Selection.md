@@ -118,7 +118,7 @@ Me.pivotGridControl1.TableModel.Options.SelectionBorderBrush = New SolidBrush(Co
 {% endtabs %}
 ![](Cell-Selection_images/PivotGrid_img3.png)
 
-### Changinging the Selection Border Thickness
+### Changing the Selection Border Thickness
 The selection border thickness for 2016 Excel like selection frame can be changed by using the [SelectionBorderThickness](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderThickness.html#) property.
 {% tabs %}
 {% highlight c# %}
