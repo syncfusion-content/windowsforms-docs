@@ -289,7 +289,7 @@ N> The [CellToolTip  ](http://help.syncfusion.com/cr/cref_files/windowsforms/g
 
 ### ActivateToolTip event
 
-This event will be occurred whenever mouse has moved to a new cell and ToolTip is initialized for that cell.
+[ActivateToolTip](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~ActivateToolTip_EV.html) event will be occurred whenever mouse has moved to a new cell and ToolTip is initialized for that cell.
 
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.ActivateToolTip += TableControl_ActivateToolTip;
