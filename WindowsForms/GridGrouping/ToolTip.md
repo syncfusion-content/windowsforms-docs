@@ -231,7 +231,7 @@ End Sub
 
 ## Disabling the ToolTip Window for particular cell
 
-The displaying of ToolTip window on mouse hover for particular cells can be restricted by cancelling the `ActivateToolTip` event instead of setting the empty string to `CellTipText` property.
+The displaying of ToolTip window on mouse hover for particular cells can be restricted by canceling the `ActivateToolTip` event instead of setting the empty string to `CellTipText` property.
 
 {% tabs %}
 {% highlight c# %}
