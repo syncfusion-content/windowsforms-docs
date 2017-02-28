@@ -46,7 +46,7 @@ End Sub
 
 ![](ToolTip_images/ToolTip_img2.jpeg)
 
-### Adding ToolTip for Column
+### Adding ToolTip to Column
 
 The ToolTip can be added to specific column by setting the `Appearance.AnyRecordFieldCell.CellTipText` property of the particular column descriptor. It will enable the ToolTip for all the cells in the column with same tip text.
 
@@ -82,6 +82,8 @@ Me.gridGroupingControl1.GetTableDescriptor("Orders").Columns("Freight").Appearan
 ![](ToolTip_images/ToolTip_img4.jpeg)
 
 
+N> The ToolTip will not be enabled for a cell if the `CellTipText` property of the cell is empty.
+
 ## Removing ToolTip
 
 The ToolTip for the cell can be removed by using the [ResetCellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ResetCellTipText.html) method. It will reset the `CellTipText` property to the default values.
@@ -97,9 +99,9 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ColumnName ").Appearance.AnyRec
 {% endhighlight %}
 {% endtabs %}
 
-## Disabling ToolTip window for Control
+## Disabling ToolTip for Control
 
-The displaying of ToolTip window on mouse hover for control can be restricted by setting the `Active` property of `CellToolTip` to `false`.
+The displaying of ToolTip on mouse hover for control can be restricted by setting the `Active` property of `CellToolTip` to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -124,7 +126,7 @@ The below properties are used to set the ToolTip delay time.
 ### AutoPopDelay
 
 
-In order to increase or decrease tooltip visible state time, `CellToolTip.AutoPopDelay` property can be used.
+The `CellToolTip.AutoPopDelay` property enables you to shorten or lengthen the time that the `ToolTip` is displayed when the pointer is on a control. User can increase the value of this property to ensure that the user has sufficient time to read the text. The maximum time you can delay a popup is 5000 milliseconds.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +141,7 @@ Me.gridGroupingControl1.TableControl.CellToolTip.AutoPopDelay = 5000
 
 ### InitialDelay
 
-In order to increase or decrease the time that the ToolTip waits before displaying a ToolTip window, `CellToolTip.InitialDelay` property can be used.
+The `CellToolTip.InitialDelay` property enables you to shorten or lengthen the time that the `ToolTip` waits before displaying a ToolTip. User can use this property to ensure that the user has ToolTips displayed quickly by shortening the time specified. The value for this property cannot exceed 32767.
 
 {% tabs %}
 {% highlight c# %}
@@ -154,7 +156,11 @@ Me.gridGroupingControl1.TableControl.CellToolTip.InitialDelay = 1000
 
 ### ReshowDelay
 
-In order to increase or decrease the time that the ToolTip waits before displaying the next ToolTip, `CellToolTip.ReshowDelay` property can be used.
+The `CellToolTip.ReshowDelay` property enables you to shorten or lengthen the time that the `ToolTip` waits before displaying a ToolTip after a previous ToolTip is displayed. 
+
+When a ToolTip is currently being displayed and the user moves the pointer to another control that displays a ToolTip, the value of the `CellToolTip.ReshowDelay` property is used before showing the ToolTip for the new control. 
+
+The ToolTip from the previous control must still be displayed in order for the delay specified in the `CellToolTip.ReshowDelay` property to be used; otherwise the `CellToolTip.InitialDelay` property value is used.
 
 {% tabs %}
 {% highlight c# %}
@@ -229,9 +235,9 @@ End Sub
 ![](ToolTip_images/ToolTip_img5.jpeg)
 
 
-## Disabling the ToolTip Window for particular cell
+## Disabling the ToolTip for particular cell
 
-The displaying of ToolTip window on mouse hover for particular cells can be restricted by canceling the `ActivateToolTip` event instead of setting the empty string to `CellTipText` property.
+The displaying of ToolTip on mouse hover for particular cells can be restricted by canceling the `ActivateToolTip` event instead of setting the empty string to `CellTipText` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -239,10 +245,8 @@ this.gridGroupingControl1.TableControl.ActivateToolTip += TableControl_ActivateT
 
 private void TableControl_ActivateToolTip(object sender, GridActivateToolTipEventArgs e)
 {
-    GridTableCellStyleInfo cellstyle = e.Style as GridTableCellStyleInfo;
-
-    //Diable the ToolTip for "FirstName" Column.
-    if (cellstyle != null && cellstyle.TableCellIdentity.Column.Name == "FirstName")
+    //Disable the ToolTip for particular cell.
+    if(e.ColIndex == 3 && e.RowIndex == 3)
     {
         e.Cancel = true;
     }
@@ -252,19 +256,19 @@ private void TableControl_ActivateToolTip(object sender, GridActivateToolTipEven
 AddHandler gridGroupingControl1.TableControl.ActivateToolTip, AddressOf TableControl_ActivateToolTip
 
 Private Sub TableControl_ActivateToolTip(ByVal sender As Object, ByVal e As GridActivateToolTipEventArgs)
-    Dim cellstyle As GridTableCellStyleInfo = TryCast(e.Style, GridTableCellStyleInfo)
-
-    'Diable the ToolTip for "FirstName" Column.
-    If cellstyle IsNot Nothing AndAlso cellstyle.TableCellIdentity.Column.Name = "FirstName" Then
+    'Disable the ToolTip for particular cell.
+    If e.ColIndex = 3 AndAlso e.RowIndex = 3 Then
         e.Cancel = True
     End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Highlighting the ToolTip cell
+## Identify whether cell has ToolTip
 
-To highlight or customize the cells if that cell has ToolTip, [HasCellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~HasCellTipText.html) property can be used in the `QueryCellStyleInfo` event.
+To identify whether the cell has ToolTip or not, [HasCellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~HasCellTipText.html) property can be used in the `QueryCellStyleInfo` event. 
+
+The below code illustrates that back color and text color are changed for the cells which has ToolTip.
 
 {% tabs %}
 {% highlight c# %}
