@@ -228,6 +228,7 @@ PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. Th
 
 The PrintDocument property of PdfViewerControl returns System.Drawing.Printing.PrintDocument that helps to complete printing using PrintDialog. The following code sample demonstrates this:
 
+{% tabs %}
 {%highlight c#%}
 
 
@@ -256,6 +257,7 @@ dialog.Document = viewer.PrintDocument
 dialog.Document.Print()
 
 {%endhighlight%}
+{% endtabs %}
 
 ## Customizing print size
 
@@ -410,9 +412,6 @@ pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape
 ### Exporting PDFs as Raster Images
 
 Essential PDF Viewer allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
-
-{%endhighlight%}
-
 
 {%highlight c#%}
 
