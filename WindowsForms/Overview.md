@@ -53,7 +53,7 @@ In case you are unable to find the information that you are looking for in the s
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/windowsforms/databoundgrid/getting-started">DataGrid</a><br/><br/>
+			<a href="/windowsforms/gridgrouping/getting-started">DataGrid</a><br/><br/>
 		</td>
 	</tr>
 	<tr>

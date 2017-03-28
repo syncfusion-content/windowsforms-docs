@@ -8,7 +8,14 @@ documentation: ug
 ---
 
 # Importing
-The `GridExcelConverterControl` provides support to import the content from Excel sheet to GridControl. 
+The [GridExcelConverterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support to import the content from Excel sheet to GridControl. 
+
+The following assembly files should be added to the application reference folder,
+
+* Syncfusion.GridConverter.Windows
+* Syncfusion.XlsIO.Base
+
+N> **Syncfusion.XlsIO.Base** libraries are used to support conversion of the grid contents to Excel. 
 
 The [ExcelToGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~ExcelToGrid.html) method is used to import the entire Excel sheet to GridControl. In this technique, the entire cells from Excel sheet will be imported to GridControl. The following styles can be imported to GridControl from Excel,
 

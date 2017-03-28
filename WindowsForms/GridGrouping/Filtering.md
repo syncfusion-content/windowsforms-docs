@@ -426,6 +426,25 @@ The column will be filtered based on the typed character or word in the filter b
 
 ![](Filtering_images/Filtering_img9.png)
 
+### Setting filtering delay
+Filtering can be delayed for a specified amount of time (milliseconds) while typing the characters in the filter bar cell. The time to delay the filtering can be specified by the **FilterDelay** property. Default value of the **FilterDelay** property is `0`.
+The below example illustrates how to apply filter delay for the dynamic filter,
+
+{% tabs %}
+{% highlight c# %}
+GridDynamicFilter filter = new GridDynamicFilter();
+// Delay the filtering for 300 milliseconds.
+filter.FilterDelay = 300;
+filter.WireGrid(this.gridGroupingControl1);
+{% endhighlight %}
+{% highlight vb %}
+Dim filter As New GridDynamicFilter()
+' Delay the filtering for 300 milliseconds.
+filter.FilterDelay = 300
+filter.WireGrid(Me.gridGroupingControl1)
+{% endhighlight %}
+{% endtabs %}
+
 ### Apply filter only on lost focus
 [ApplyFilterOnlyOnCellLostFocus](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridDynamicFilter~ApplyFilterOnlyOnCellLostFocus.html#) property enables the filtering on each key stroke in `GridDynamicFilter`. Set `ApplyFilterOnlyOnCellLostFocus` property to `true` to filter only when the filter cell lost focus. This disables filtering for each key stroke including Enter, arrow keys, and tab keys. Defaults value is `false` and allows filtering for each key stroke.
 The following code illustrates how to add `ApplyFilterOnlyOnCellLostFocus` property.
