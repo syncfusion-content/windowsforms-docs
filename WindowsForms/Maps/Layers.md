@@ -23,6 +23,67 @@ This feature allows the map to load multiple types of shape files in a single co
 
 The ShapeFileLayers is the core layer of the map. Multiple layers can be added in the ShapeFileLayer as SubShapeFileLayer, within the shape Layers.
 
+## LayoutType
+
+`LayoutType` defines the way to project the map. This can be categorized into the following types,
+
+1. Default
+2. Tile
+
+### Default
+
+In `Default` layout type maps will be rendered based on the given points of shapefile without any further manipulation of maps scale. 
+
+### Tile
+
+In `Tile` layout type maps scale value is maintained in every direction around a point. Therefore shapes are represented accurately and without distortion for small areas.
+
+
+{% highlight c# %}
+
+    public partial class Form1 : Form
+        {            
+
+            private void Form1_Load(object sender, EventArgs e)
+            {
+            
+                ShapeFileLayer shapeLayer = new ShapeFileLayer();
+                shapeLayer.Uri = "world1.shp";
+
+                shapeLayer.LayoutType = LayoutType.Tile;  // LayoutType Tile
+
+                
+                shapeLayer.Annotations = new ObservableCollection<Annotation>(){
+                new SyncfusionLocations() { Name = "USA", Latitude = 38.8833, Longitude = -77.0167},
+                new SyncfusionLocations() { Name = "Indonesia", Latitude = -6.1750, Longitude = 106.8283},
+
+            };
+
+
+                this.mapsControl1.AnnotationDrawing += mapsControl1_AnnotationDrawing;
+                this.mapsControl1.Layers.Add(shapeLayer);
+            
+            }
+
+            void mapsControl1_AnnotationDrawing(object sender, AnnotationDrawingEventArgs e)
+            {
+        
+                Image img = Image.FromFile("..//..//pin.png");
+                e.Graphics.DrawImage(img, (float)(e.X-10), (float)(e.Y-25),25,30);
+                
+            }
+            
+        }
+
+       public class SyncfusionLocations : Annotation
+        {
+            public string Name { get; set; }  
+        }
+
+{% endhighlight %}
+
+![](LayerImage/Tile.png)
+
 ## ItemSource
 
 The ItemSource property accepts collection values as input. For example, the list of objects can be provided as input.
