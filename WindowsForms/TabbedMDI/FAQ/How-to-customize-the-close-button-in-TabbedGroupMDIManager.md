@@ -49,7 +49,7 @@ public class CustomMDITabPanel : MDITabPanel
 
         Rectangle rect = base.GetCloseButtonBounds();
 
-        rect.Width = 20; rect.Height = 20;
+        rect.Y = 4; rect.Width = 15; rect.Height = 15;
 
         return rect;
 
@@ -91,9 +91,11 @@ Public Class CustomMDITabPanel : Inherits MDITabPanel
 
         Dim rect As Rectangle = MyBase.GetCloseButtonBounds()
 
-        rect.Width = 20
+        rect.Y = 4
 
-        rect.Height = 20
+        rect.Width = 15
+
+        rect.Height = 15
 
         Return rect
 
