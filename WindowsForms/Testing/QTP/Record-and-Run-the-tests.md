@@ -10,9 +10,8 @@ documentation: ug
 # Create, Record and Run the tests
 Essential QuickTest Professional lets you test applications with different Syncfusion controls, and allows playback of scripts. This section describes about how to create, record and run the tests in HP QTP/UFT.
 
-## Create and Record a Test
+## Creating a new Test
 
-To create a new test
 
 1) Open QTP by double-clicking the QuickTest Professional icon.
 

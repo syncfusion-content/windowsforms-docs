@@ -78,33 +78,3 @@ Essential QuickTest Professional is compatible with the following operating syst
 </td>
 </tr>
 </table>
-
-## Documentation
-Syncfusion provides the following documentation segments that covers all the necessary information pertaining to Essential QuickTest Professional.
-
-<table>
-<tr>
-<td>
-{{'**Type of documentation**'| markdownify }}
-</td>
-<td>
-{{'**Location**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Readme
-</td>
-<td>
-(Installed location of Essential QTP)\ReadMe\ReadMe.htm
-</td>
-</tr>
-<tr>
-<td>
-Class Reference
-</td>
-<td>
-(Installed location of Essential QTP)\Help\ClassReference.chm
-</td>
-</tr>
-</table>

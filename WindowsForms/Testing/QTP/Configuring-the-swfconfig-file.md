@@ -9,7 +9,7 @@ documentation: ug
 
 # Configuring the swfconfig file
 
-An XML file in QTP called swfconfig is the configuration file located at (Installed location of Essential QuickTest Professional)\Config&lt;version-2.0, 3.5, or 4.0&gt;\swfconfig, that contains all the mapping information for QTP to recognize Syncfusion controls. Using the swfconfig utility, you can easily configure the swfconfig.xml file in HP QTP/UFT.
+An XML file in QTP called swfconfig is the configuration file located at (Installed location of Essential QuickTest Professional)\Config&lt;version-2.0 or 3.5 or 4.0 or 4.5 or 4.5.1 0r 4.6&gt;\swfconfig, that contains all the mapping information for QTP to recognize Syncfusion controls. Using the swfconfig utility, you can easily configure the swfconfig.xml file in HP QTP/UFT.
 
 ## Steps to Configure the swfconfig.xml File
 
