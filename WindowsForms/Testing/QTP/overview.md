@@ -32,7 +32,7 @@ The following are the prerequisites,
 {{'**Testing Environments**'| markdownify }}
 </td>
 <td>
-1) QuickTest Professional version 9.5 and above 2) QuickTest Professional .NET add-in or UFT.
+1) QuickTest Professional version 9.5 and above<br/> 2) QuickTest Professional .NET add-in or UFT.
 </td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following are the prerequisites,
 {{'**.NET Framework**'| markdownify }}
 </td>
 <td>
-.NET Framework version 2.0, 3.5, 4.0, 4.5 or 4.5.1 or 4.6
+.NET Framework version 2.0, 3.5, 4.0, 4.5, 4.5.1, 4.6
 </td>
 </tr>
 <tr>
@@ -63,9 +63,9 @@ Essential QuickTest Professional is compatible with the following operating syst
 {{'**Operating Systems**'| markdownify }}
 </td>
 <td>
-<li> Microsoft Windows 10 ((32 bit and 64 bit)</li>
-<li> Microsoft Windows 8.1 ((32 bit and 64 bit)</li>
-<li> Microsoft Windows 8 ((32 bit and 64 bit)</li>
+<li> Microsoft Windows 10 (32 bit and 64 bit)</li>
+<li> Microsoft Windows 8.1 (32 bit and 64 bit)</li>
+<li> Microsoft Windows 8 (32 bit and 64 bit)</li>
 <li>Microsoft Windows Server 2013 (32 bit and 64 bit)</li>
 <li>Microsoft Windows Server 2013 (32 bit and 64 bit)</li>
 <li>Microsoft Windows Server 2013 (32 bit and 64 bit)</li>
