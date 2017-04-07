@@ -17,7 +17,7 @@ The following controls are supported by Essential QuickTest Professional,
 * Essential Schedule
 * Essential Diagram
 
-Supported methods denote those methods that are recorded in QTP/UFT.
+Supported methods denote those methods that are recorded in QTP.
 
 ## Essential Grid
 Essential Grid supports the following controls,
@@ -26,7 +26,6 @@ Essential Grid supports the following controls,
 * GridDataBoundGrid
 * GridGroupingControl
 * GridListControl
-* TabBarSplitterControl
 
 The following are the recorded methods and their corresponding descriptions for Essential Grid,
 
@@ -1962,81 +1961,6 @@ string
 </tr>
 </table>
 
-### TabBarSplitterControl
-
-<table>
-<tr>
-<td>
-{{'**Method**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Paramenters**'| markdownify }}
-</td>
-<td>
-{{'**Return Type**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-string GetName()
-</td>
-<td>
-Gets the name of the TabBarControl.
-</td>
-<td>
--
-</td>
-<td>
-string
-</td>
-</tr>
-<tr>
-<td>
-string GetTabName(int index)
-</td>
-<td>
-The label in the tab page can be known by passing the index.
-</td>
-<td>
-int index
-</td>
-<td>
-string
-</td>
-</tr>
-<tr>
-<td>
-void Select(string tab)
-</td>
-<td>
-The name of the selected tab.
-</td>
-<td>
-string tab
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-void SetSplitterPosition(string tab, int vSplit, int hSplit)
-</td>
-<td>
-The splitter position in the tab bar page.
-</td>
-<td>
-string tab, int vSplit, int hSplit
-</td>
-<td>
-void
-</td>
-</tr>
-</table>
-
 ## Essential Tools
 
 The following controls are supported by Essential Tools.
@@ -2073,6 +1997,7 @@ The following controls are supported by Essential Tools.
 * RangeSlider
 * NavigationView
 * TabBarSplitterControl
+
 The following are the recorded methods and their corresponding descriptions for Essential Tools,
 
 ### ButtonAdv

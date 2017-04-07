@@ -7,8 +7,8 @@ control: Testing
 documentation: ug
 ---
 
-# Record and Run the tests
-This section describes how to create, record and the tests in HP QTP/UFT.
+# Create, Record and Run the tests
+Essential QuickTest Professional lets you test applications with different Syncfusion controls, and allows playback of scripts. This section describes about how to create, record and run the tests in HP QTP/UFT.
 
 ## Create and Record a Test
 
@@ -57,7 +57,8 @@ N> The Application Details dialog box is displayed.
 
 8) Browse and select the path of the application that is to be tested by clicking (![https://help.syncfusion.com/windowsforms/testing/qtp/Getting-Started_images/Getting-Started_img14.jpeg](QTP_images/QTP_img18.jpeg)) for the Application: label.
 
-9) Browse and select the path of the working folder by clicking (![https://help.syncfusion.com/windowsforms/testing/qtp/Getting-Started_images/Getting-Started_img15.jpeg](QTP_images/QTP_img19.jpeg)) for the Working folder: label.
+9) Browse and select the path of the working folder by clicking![https://help.syncfusion.com/windowsforms/testing/qtp/Getting-Started_images/Getting-Started_img15.jpeg](QTP_images/QTP_img19.jpeg)
+()for the Working folder: label.
 
 N> Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box that includes all the processes that are descendant to the current process. Both these check boxes are selected by default.
 

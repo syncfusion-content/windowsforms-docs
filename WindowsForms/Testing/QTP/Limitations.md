@@ -9,7 +9,7 @@ documentation: ug
 
 # Limitations
 
-The following are the limitations in various platforms that are yet to be solved.
+The followings are the limitations in various platforms that are yet to be resolved.
 
 ## General
 Documentation column is not supported in the Keyword View.
