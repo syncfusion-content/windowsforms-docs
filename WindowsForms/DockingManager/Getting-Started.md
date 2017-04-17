@@ -36,7 +36,7 @@ private Syncfusion.Windows.Forms.Tools.DockingManager dockingManager;
 
 this.dockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components); 
 
-this.Controls.Add(this.dockingManager);
+this.dockingManager.HostControl = this;
 
 {% endhighlight %}
 
