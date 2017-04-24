@@ -91,7 +91,7 @@ End Sub
 {% endtabs %}
 
 ## Advanced Print Document
-The [GridPrintDocumentAdv](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html) class provides the advanced options to print the grid. To have this printing support, the [Syncfusion.GridHelperClasses.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows.html) needs to be added into the assembly reference. 
+The [GridPrintDocumentAdv](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html) class provides the advanced options to print the grid. To have this printing support, the [Syncfusion.GridHelperClasses.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows.html) assembly needs to be added into the assembly reference. 
 
 This class provides the following functionalities,
 
