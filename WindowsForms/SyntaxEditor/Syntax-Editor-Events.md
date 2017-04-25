@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Edit-Control-Events | WindowsForms | Syncfusion
-description: edit control events
+title: Syntax-Editor-Events | WindowsForms | Syncfusion
+description: Syntax Editor events
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

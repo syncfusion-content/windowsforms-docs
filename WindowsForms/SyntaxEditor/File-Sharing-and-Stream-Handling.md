@@ -3,7 +3,7 @@ layout: post
 title: File-Sharing-and-Stream-Handling | WindowsForms | Syncfusion
 description: file sharing and stream handling
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Text-Export | WindowsForms | Syncfusion
 description: text export
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

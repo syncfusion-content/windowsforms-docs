@@ -3,7 +3,7 @@ layout: post
 title: Printing | WindowsForms | Syncfusion
 description: printing
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

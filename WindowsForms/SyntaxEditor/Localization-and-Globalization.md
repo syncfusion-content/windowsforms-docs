@@ -3,7 +3,7 @@ layout: post
 title: Localization-and-Globalization | WindowsForms | Syncfusion
 description: localization and globalization
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 
