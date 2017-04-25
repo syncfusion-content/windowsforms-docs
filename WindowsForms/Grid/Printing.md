@@ -99,6 +99,8 @@ End Sub
 ## Print Settings
 GridControl supports all the default settings of the printing. This section explains about the additional settings and the usages of [GridPrintDocument](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridPrintDocument_members.html) and [GridPrintDocumentAdv](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html).
 
+The `GridPrintDocumentAdv` class is available in the [Syncfusion.GridHelperClasses.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows.html) assembly. So, this assembly needs to be added into the assembly reference.
+
 ### Scaling 
 All the columns of the grid can be printed with in a single page by enabling the [ScaleColumnsToFitPage](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~ScaleColumnsToFitPage.html) property of the `GridPrintDocumentAdv`.
 {% tabs %}
