@@ -3,7 +3,7 @@ layout: post
 title: Configuration-Settings | WindowsForms | Syncfusion
 description: configuration settings
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

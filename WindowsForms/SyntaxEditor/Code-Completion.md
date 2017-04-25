@@ -3,7 +3,7 @@ layout: post
 title: Code-Completion | WindowsForms | Syncfusion
 description: code completion
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

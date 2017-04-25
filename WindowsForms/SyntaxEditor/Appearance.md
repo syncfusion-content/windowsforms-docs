@@ -3,7 +3,7 @@ layout: post
 title: Appearance | WindowsForms | Syncfusion
 description: appearance
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

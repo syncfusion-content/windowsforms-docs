@@ -3,7 +3,7 @@ layout: post
 title: Text-Visualization | WindowsForms | Syncfusion
 description: text visualization
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

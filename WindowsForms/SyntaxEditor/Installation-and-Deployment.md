@@ -3,7 +3,7 @@ layout: post
 title: Installation-and-Deployment | WindowsForms | Syncfusion
 description: installation and deployment
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

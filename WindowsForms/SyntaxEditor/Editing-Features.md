@@ -3,7 +3,7 @@ layout: post
 title: Editing-Features | WindowsForms | Syncfusion
 description: editing features
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

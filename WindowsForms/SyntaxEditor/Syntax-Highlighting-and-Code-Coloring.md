@@ -3,7 +3,7 @@ layout: post
 title: Syntax-Highlighting-and-Code-Coloring | WindowsForms | Syncfusion
 description: syntax highlighting and code coloring
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 

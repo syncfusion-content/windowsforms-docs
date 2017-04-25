@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
 platform: WindowsForms
-control: Edit
+control: SyntaxEditor
 documentation: ug
 ---
 
