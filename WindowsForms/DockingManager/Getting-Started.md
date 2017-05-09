@@ -34,9 +34,11 @@ There are several ways to add Syncfusion control in to the Visual Studio Windows
 
 private Syncfusion.Windows.Forms.Tools.DockingManager dockingManager; 
 
+this.components = new System.ComponentModel.Container();
+
 this.dockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components); 
 
-this.Controls.Add(this.dockingManager);
+this.dockingManager.HostControl = this;
 
 {% endhighlight %}
 
@@ -47,9 +49,11 @@ this.Controls.Add(this.dockingManager);
 
 Private dockingManager As Syncfusion.Windows.Forms.Tools.DockingManager
 
+Me.components = New System.ComponentModel.Container()
+
 Me.dockingManager = New Syncfusion.Windows.Forms.Tools.DockingManager(Me.components) 
 
-Me.Controls.Add(Me.dockingManager)
+Me.dockingManager.HostControl = Me
 
 {% endhighlight %}
 
@@ -84,6 +88,17 @@ this.panel4 = new System.Windows.Forms.Panel();
 		
 this.panel5 = new System.Windows.Forms.Panel();
 
+//Enables the docking for the panels
+
+this.dockingManager.SetEnableDocking(panel1, true);
+
+this.dockingManager.SetEnableDocking(panel2, true);
+
+this.dockingManager.SetEnableDocking(panel3, true);
+
+this.dockingManager.SetEnableDocking(panel4, true);
+
+this.dockingManager.SetEnableDocking(panel5, true);
 
 {% endhighlight %}
 
@@ -110,6 +125,18 @@ Me.panel4 = New System.Windows.Forms.Panel()
 
 Me.panel5 = New System.Windows.Forms.Panel()
 
+'Enables the docking for the panels
+
+Me.dockingManager.SetEnableDocking(panel1, True)
+
+Me.dockingManager.SetEnableDocking(panel2, True)
+
+Me.dockingManager.SetEnableDocking(panel3, True)
+
+Me.dockingManager.SetEnableDocking(panel4, True)
+
+Me.dockingManager.SetEnableDocking(panel5, True)
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -128,15 +155,15 @@ DockingManger provides with an attached method `SetDockLabel` which helps to set
 
 // To set the label for the docked controls
 
-this.dockingManager1.SetDockLabel(panel1, "Solution Explorer");
+this.dockingManager.SetDockLabel(panel1, "Solution Explorer");
 
-this.dockingManager1.SetDockLabel(panel2, "Toolbox");
+this.dockingManager.SetDockLabel(panel2, "Toolbox");
 
-this.dockingManager1.SetDockLabel(panel3, "Properties");
+this.dockingManager.SetDockLabel(panel3, "Properties");
 
-this.dockingManager1.SetDockLabel(panel4, "Output");
+this.dockingManager.SetDockLabel(panel4, "Output");
 
-this.dockingManager1.SetDockLabel(panel5, "Start Page");
+this.dockingManager.SetDockLabel(panel5, "Start Page");
 
 
 {% endhighlight %}
@@ -146,15 +173,15 @@ this.dockingManager1.SetDockLabel(panel5, "Start Page");
 
 ' To set the label for the docked controls
 
-Me.dockingManager1.SetDockLabel(panel1, "Solution Explorer");
+Me.dockingManager.SetDockLabel(panel1, "Solution Explorer");
 
-Me.dockingManager1.SetDockLabel(panel2, "Toolbox");
+Me.dockingManager.SetDockLabel(panel2, "Toolbox");
 
-Me.dockingManager1.SetDockLabel(panel3, "Properties");
+Me.dockingManager.SetDockLabel(panel3, "Properties");
 
-Me.dockingManager1.SetDockLabel(panel4, "Output");
+Me.dockingManager.SetDockLabel(panel4, "Output");
 
-Me.dockingManager1.SetDockLabel(panel5, "Start Page");
+Me.dockingManager.SetDockLabel(panel5, "Start Page");
 
 {% endhighlight %}
 
@@ -175,7 +202,7 @@ To dock the child window use below code snippet.
 
 //To dock the panel1 on left side of the form.
 
- this.dockingManager1.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+ this.dockingManager.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
 
 {% endhighlight %}
 
@@ -184,7 +211,7 @@ To dock the child window use below code snippet.
 
 'To dock the panel1 on left side of the form.
 
-Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100)
+Me.dockingManager.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100)
 
 {% endhighlight %}
 
@@ -235,15 +262,15 @@ The DockingStyle’s Tabbed option is used to tab a window on another window. T
 
 // To set the DockingStyle for the docked controls
 
-this.dockingManager1.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
+this.dockingManager.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
 
-this.dockingManager1.DockControl(this.panel2, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+this.dockingManager.DockControl(this.panel2, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
 
 this.dockingManager.FloatControl(this.panel3, new Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200));
 
-this.dockingManager1.DockControl(this.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 100);
+this.dockingManager.DockControl(this.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 100);
 
-this.dockingManager1.DockControl(this.panel5, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+this.dockingManager.DockControl(this.panel5, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
 
 
 {% endhighlight %}
@@ -253,15 +280,15 @@ this.dockingManager1.DockControl(this.panel5, this, Syncfusion.Windows.Forms.Too
 
 'To set the DockingStyle for the docked controls
 
-Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
+Me.dockingManager.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
 
-Me.dockingManager1.DockControl(Me.panel2, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+Me.dockingManager.DockControl(Me.panel2, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
 
-Me.dockingManager1.DockControl(Me.panel3, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
+Me.dockingManager.DockControl(Me.panel3, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
 
-Me.dockingManager1.DockControl(Me.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 100);
+Me.dockingManager.DockControl(Me.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 100);
 
-Me.dockingManager1.DockControl(Me.panel5, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+Me.dockingManager.DockControl(Me.panel5, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
 
 {% endhighlight %}
 
@@ -280,15 +307,15 @@ The PersistState feature of the DockingManager helps to save the current layou
 
 //Saves the current dock state to Isolated Storage.
 
-this.dockingManager1.SaveDockState();
+this.dockingManager.SaveDockState();
 
 //Saves the current dock state information to the specified AppStateSerializer.
 
-this.dockingManager1.SaveDockState(serializer);
+this.dockingManager.SaveDockState(serializer);
 
 //Saves the dock state information for the specified dockable control.
 
-this.dockingManager1.SaveDockState(serializer, this.listBox1);
+this.dockingManager.SaveDockState(serializer, this.listBox1);
 
 {% endhighlight %}
 
@@ -297,15 +324,15 @@ this.dockingManager1.SaveDockState(serializer, this.listBox1);
 
 'Saves the current dock state to Isolated Storage.
 
-Me.dockingManager1.SaveDockState()
+Me.dockingManager.SaveDockState()
 
 'Saves the current dock state information to the specified AppStateSerializer.
 
-Me.dockingManager1.SaveDockState(serializer)
+Me.dockingManager.SaveDockState(serializer)
 
 'Saves the dock state information for the specified dockable control.
 
-Me.dockingManager1.SaveDockState(serializer, this.listBox1)
+Me.dockingManager.SaveDockState(serializer, this.listBox1)
 
 {% endhighlight %}
 
@@ -320,15 +347,15 @@ The saved state can be reload by calling the `LoadDockState` method, whenever 
 
 //Reads the persisted dock state from the Isolated Storage.
 
-this.dockingManager1.LoadDockState();
+this.dockingManager.LoadDockState();
 
 //Reads a previously serialized dock state using the AppStateSerializer object. 
 
-this.dockingManager1.LoadDockState(serializer);
+this.dockingManager.LoadDockState(serializer);
 
 //Reads a previously serialized dock state for the specified dockable control and applies the new state.
 
-this.dockingManager1.LoadDockState(serializer, this.listBox1);
+this.dockingManager.LoadDockState(serializer, this.listBox1);
 
 {% endhighlight %}
 
@@ -337,15 +364,15 @@ this.dockingManager1.LoadDockState(serializer, this.listBox1);
 
 'Reads the persisted dock state from the Isolated Storage.
 
-Me.dockingManager1.LoadDockState(serializer)
+Me.dockingManager.LoadDockState(serializer)
 
 'Reads a previously serialized dock state using the AppStateSerializer object. 
 
-Me.dockingManager1.LoadDockState();
+Me.dockingManager.LoadDockState();
 
 'Reads a previously serialized dock state for the specified dockable control and applies the new state.
 
-Me.dockingManager1.LoadDockState(serializer, this.listBox1)
+Me.dockingManager.LoadDockState(serializer, this.listBox1)
 
 {% endhighlight %}
 
