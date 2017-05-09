@@ -40,7 +40,7 @@ Represents the collection of string for the custom source, when AutoCompleteSour
 
 this.fontComboBox1.UseAutoComplete =true;
 
-this.fontComboBox2.AutoCompleteCustomSource.AddRange(new string[] { "Calibria", "Cambria", "Candara"});
+this.fontComboBox2.AutoCompleteCustomSource.AddRange(new string[] { "Calibri", "Cambria", "Candara"});
 
 this.fontComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
 
@@ -54,7 +54,7 @@ this.fontComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.
 
 Me.fontComboBox1.UseAutoComplete = True
 
-Me.fontComboBox2.AutoCompleteCustomSource.AddRange(New String() {"Calibria", "Cambria", "Candara"}) 
+Me.fontComboBox2.AutoCompleteCustomSource.AddRange(New String() {"Calibri", "Cambria", "Candara"}) 
 
 Me.fontComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
 

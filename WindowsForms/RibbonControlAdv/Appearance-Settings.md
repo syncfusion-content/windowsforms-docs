@@ -148,10 +148,10 @@ The following code demonstrate how to use the TouchStyleColorTable.
 TouchStyleColorTable _touchColorTable = new TouchStyleColorTable();
 
 
-//To set forecolor of the Active tab item
+//To set fore color of the Active tab item
 
 _touchColorTable.ToolstripActiveTabItemForeColor = Color.RoyalBlue;
-//To set forecolor of the Inactive tab item
+//To set fore color of the Inactive tab item
 
 _touchColorTable.ToolstripTabItemForeColor = Color.White;
 //To set the Button hover color
@@ -177,7 +177,7 @@ _touchColorTable.HeaderColor = Color. DarkViolet;
 
 _touchColorTable.DropDownBodyColor = Color.White;
 
-//To set the forecolor of the dropdown items
+//To set the fore color of the dropdown items
 
 _touchColorTable.DropDownTextForeColor = Color.Black;
 
@@ -193,11 +193,11 @@ _touchColorTable.DropDownSelectedTextForeColor = Color.White;
 
 _touchColorTable.ToolstripTabItemBorder = ColorTranslator.FromHtml("#0272c5");
 
-//To set the back color of active toolstriptabitem
+//To set the back color of active ToolStripTabItem
 
 _touchColorTable.ActiveToolStripTabItemBackColor = ColorTranslator.FromHtml("#0272c5");
 
-//To sets the back color of active toolstriptabitem
+//To sets the back color of active ToolStripTabItem
 
 _touchColorTable.BackStageButtonColor = ColorTranslator.FromHtml("#0272c5");
 
@@ -329,7 +329,7 @@ _touchColorTable.ToolstripButtonPressedBorder = ColorTranslator.FromHtml("#0272c
 
 _touchColorTable.ToolstripSelectedTabItemBorder = Color.DodgerBlue;
 
-//To sets the color for Spliter.
+//To sets the color for Splitter.
 
 _touchColorTable.ToolStripSpliterColor = Color.Red;
 
@@ -350,11 +350,11 @@ this.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable);
 Dim _touchColorTable As New TouchStyleColorTable()
 
 
-'To set forecolor of the Active tab item
+'To set fore color of the Active tab item
 
 _touchColorTable.ToolstripActiveTabItemForeColor = Color.RoyalBlue
 
-'To set forecolor of the Inactive tab item
+'To set fore color of the Inactive tab item
 
 _touchColorTable.ToolstripTabItemForeColor = Color.White
 
@@ -382,7 +382,7 @@ _touchColorTable.HeaderColor = Color. DarkViolet
 
 _touchColorTable.DropDownBodyColor = Color.White
 
-'To set the forecolor of the dropdown items
+'To set the fore color of the dropdown items
 
 _touchColorTable.DropDownTextForeColor = Color.Black
 
@@ -398,11 +398,11 @@ _touchColorTable.DropDownSelectedTextForeColor = Color.White
 
 _touchColorTable.ToolstripTabItemBorder = ColorTranslator.FromHtml("#0272c5")
 
-'To set the back color of active toolstriptabitem
+'To set the back color of active ToolStripTabItem
 
 _touchColorTable.ActiveToolStripTabItemBackColor = ColorTranslator.FromHtml("#0272c5")
 
-'To sets the back color of active toolstriptabitem
+'To sets the back color of active ToolStripTabItem
 
 _touchColorTable.BackStageButtonColor = ColorTranslator.FromHtml("#0272c5")
 
@@ -534,7 +534,7 @@ _touchColorTable.ToolstripButtonPressedBorder = ColorTranslator.FromHtml("#0272c
 
 _touchColorTable.ToolstripSelectedTabItemBorder = Color.DodgerBlue
 
-'To sets the color for Spliter.
+'To sets the color for Splitter.
 
 _touchColorTable.ToolStripSpliterColor = Color.Red
 

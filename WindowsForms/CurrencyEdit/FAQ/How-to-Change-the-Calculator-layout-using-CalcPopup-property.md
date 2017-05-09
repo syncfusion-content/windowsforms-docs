@@ -18,7 +18,7 @@ Sometimes we may be in need of a calculator with Windows standard layout. By cha
 
 // Changes the layout of the calculator.
 
-PopupCalculator pc=new Popupcalculator();
+PopupCalculator pc=new PopupCalculator();
 
 pc.LayoutType=CalculatorLayoutTypes.WindowsStandard;
 
@@ -34,7 +34,7 @@ currencyEdit1.CalcPopup=pc;
 
 ' Changes the layout of the calculator.
 
-Dim pc As PopupCalculator = New Popupcalculator()
+Dim pc As PopupCalculator = New PopupCalculator()
 
 pc.LayoutType=CalculatorLayoutTypes.WindowsStandard
 
