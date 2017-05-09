@@ -331,7 +331,7 @@ Console.WriteLine("Auto Hide Animation starting now : "+ i++);
 
 Console.WriteLine("Control Name : "+arg.Control.Name);
 
-//The display bounds of the autohidden control. It will return the object of
+//The display bounds of the AutoHidden control. It will return the object of
 
 // Rectangle Class
 
@@ -364,7 +364,7 @@ Console.WriteLine("Auto Hide Animation starting now : "+ i++)
 
 Console.WriteLine("Control Name : "+arg.Control.Name)
 
-'The display bounds of the autohidden control. It will return the object of
+'The display bounds of the AutoHidden control. It will return the object of
 
 ' Rectangle Class
 
@@ -413,7 +413,7 @@ The HostForm border along which the AutoHide tab is aligned.</td></tr>
 {% highlight C# %}
 
 
-//The AutoHideAnimationStop event occurs immediately after the end of an autohide animation
+//The AutoHideAnimationStop event occurs immediately after the end of an AutoHide animation
 
 private void dockingManager1_AutoHideAnimationStop(object sender, Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs arg)
 
@@ -427,7 +427,7 @@ Console.WriteLine("Animation has been stopped");
 
 Console.WriteLine("Control Name : "+arg.Control.Name);
 
-//The display bounds of the autohidden control. It will return the object of
+//The display bounds of the AutoHidden control. It will return the object of
 
 // Rectangle Class
 
@@ -446,7 +446,7 @@ Console.WriteLine("Control Dock Border Value : "+arg.DockBorder.ToString()
 {% highlight VB %}
 
 
-'The AutoHideAnimationStop event occurs immediately after the end of an autohide animation
+'The AutoHideAnimationStop event occurs immediately after the end of an AutoHide animation
 
 Private Sub dockingManager1_AutoHideAnimationStop(ByVal sender As object, ByVal arg As Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs )
 
@@ -458,7 +458,7 @@ Console.WriteLine("Animation has been stopped")
 
 Console.WriteLine("Control Name : "+arg.Control.Name)
 
-'The display bounds of the autohidden control. It will return the object of
+'The display bounds of the AutoHidden control. It will return the object of
 
 ' Rectangle Class
 
@@ -1032,7 +1032,7 @@ Console.WriteLine("Total Number of controls in a group : " +
 
 arg.Controls.Length.ToString());
 
-//arg.Controls Gets the collection of controls undergoing the dockstate transfer.
+//arg.Controls Gets the collection of controls undergoing the dock state transfer.
 
 Control[] ctrls = arg.Controls;
 
@@ -1065,7 +1065,7 @@ Console.WriteLine("DockStateChanged Event has occurred")
 
 Console.WriteLine("Total Number of controls in a group : " + arg.Controls.Length.ToString)
 
-'arg.Controls Gets the collection of controls undergoing the dockstate transfer.
+'arg.Controls Gets the collection of controls undergoing the dock state transfer.
 
 Dim ctrls As Control() = arg.Controls
 
