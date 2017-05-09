@@ -114,7 +114,7 @@ class NumericupdownextDerived : NumericUpDownExt
 
 private IntegerTextBox itb = new IntegerTextBox();
 
-public integerupdown()
+public NumericupdownextDerived()
 
 {
 

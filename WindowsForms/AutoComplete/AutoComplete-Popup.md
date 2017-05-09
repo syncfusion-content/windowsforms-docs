@@ -124,11 +124,11 @@ Gets or sets the AutoCompletePopup Column Header style.</td></tr>
 
 
 
-//Specifies the header forecolor of the AutoComplete Popup.
+//Specifies the header fore color of the AutoComplete Popup.
 
 this.autoComplete1.HeaderForeColor = Color.Red;
 
-//Specifies the item forecolor of the AutoComplete Popup.
+//Specifies the item fore color of the AutoComplete Popup.
 
 this.autoComplete1.TextColor = Color.Blue;
 
@@ -151,11 +151,11 @@ this.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable;
 
 
 
-'Specifies the header forecolor of the AutoComplete Popup.
+'Specifies the header fore color of the AutoComplete Popup.
 
 Me.autoComplete1.HeaderForeColor = Color.Red
 
-'Specifies the item forecolor of the AutoComplete Popup.
+'Specifies the item fore color of the AutoComplete Popup.
 
 Me.autoComplete1.TextColor = Color.Blue
 

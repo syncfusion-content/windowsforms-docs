@@ -32,7 +32,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 
 		if(this.treeView1.SelectedNode != null)
 
-		// Set the combodropdown's text to be the TreeNode's text.
+		// Set the ComboDropDown's text to be the TreeNode's text.
 
 		this.comboDropDown1.Text = this.treeView1.SelectedNode.Text;
 
@@ -40,7 +40,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 
 		this.comboDropDown1.Text = String.Empty;
 
-		// Close the combodropdown.
+		// Close the ComboDropDown.
 
 		this.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done);
 
@@ -55,7 +55,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 
 		If Not (Me.treeView1.SelectedNode Is Nothing) Then
 
-		' Set the combodropdown's text to be the TreeNode's text.
+		' Set the ComboDropDown's text to be the TreeNode's text.
 
 		Me.comboDropDown1.Text = Me.treeView1.SelectedNode.Text
 
@@ -65,7 +65,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 
 		End If
 
-		' Close the combodropdown.
+		' Close the ComboDropDown.
 
 		Me.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done)
 

@@ -39,11 +39,11 @@ To set custom text input for VisualItem, based on the end-user’s requirement.<
 
 {% highlight c# %}
 
-//Derfine the Visual items as DisplayMember
+//Define the Visual items as DisplayMember
 
 this.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.DisplayMemberMode;
 
-//Derfine the Visual items as ValueMember
+//Define the Visual items as ValueMember
 
 this.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.ValueMemberMode;
 
@@ -55,11 +55,11 @@ this.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tool
 
 {% highlight vbnet %}
 
-'Derfine the Visual items as DisplayMember
+'Define the Visual items as DisplayMember
 
 Me.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.DisplayMemberMode
 
-'Derfine the Visual items as ValueMember
+'Define the Visual items as ValueMember
 
 Me.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.ValueMemberMode
 
