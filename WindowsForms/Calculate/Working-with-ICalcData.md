@@ -176,9 +176,9 @@ The `SetValueRowCol` method is used to set the value to `ICalcData` object.
 
 CalcData calcData = new CalcData();
 
-calcData.SetValueRowCol(“10”, 1, 1);
+calcData.SetValueRowCol(10, 1, 1);
 
-calcData.SetValueRowCol(“20”, 1, 2);
+calcData.SetValueRowCol(20, 1, 2);
 
 {% endhighlight %}
 {% endtabs %}
@@ -207,9 +207,9 @@ The `ParseAndComputeFormula` method of `CalcEngine` is used to evaluate the form
 
 CalcData calcData = new CalcData();
 
-calcData.SetValueRowCol(“10”, 1, 1);
+calcData.SetValueRowCol(10, 1, 1);
 
-calcData.SetValueRowCol(“20”, 1, 2);
+calcData.SetValueRowCol(20, 1, 2);
 
 CalcEngine engine = new CalcEngine(calcData);
 

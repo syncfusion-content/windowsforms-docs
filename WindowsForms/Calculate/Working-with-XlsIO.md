@@ -13,221 +13,73 @@ Essential XIsIO provides an Excel-like Automation-type support without having Mi
 to read and write an XLS file and hold its contents in memory. But you cannot perform actual computations on the contents of the XLS file. Hence Essential Calculate
 is integrated with Essential XlsIO, to calculate formulas entered at runtime without any additional references or packages.
 
-## CalcSheet
+## Open a Workbook using XlsIO
 
-The `CalcSheet` class is an `ICalcData` derived object that plays the role of a single worksheet. It does have the optional facility to hold row/column type data objects 
-that can be set through indexing an instance of the class. It will also allocate the storage to hold such data. It maintains its own internal data object
-to hold `FormulaInfo` objects used by the `CalcEngine` in its calculation work. The `CalcSheet` accesses the raw data / formulas that you want to use in the 
-calculations via the `ICalcData` interface.
-
-**For example:**
-
-Create a class **XlsIOCalcSheet** which is derived from `CalcSheet` and implement `Syncfusion.XlsIO.IWorksheet`. This derived class overrides the base class's method to get and set the data 
-through the `XlsIO` objects that holds the XLS data. 
+To open a workbook using XIsIO, instantiate the `ExcelEngine` to initialize the application object for creating or manipulating Excel documents. To open an existing workbook,
+use the `Open` methods of `IWorkbook` interface.
 
 {% tabs %}
 {% highlight c# %}
 
-// Specially derived CalcSheet to access the contents of XlsIO IWorksheet.
-public class XlsIOCalcSheet : CalcSheet
-{
-    //XlsIO object,
-	IWorksheet excelSheet;
-	
-	// Constructor
-	public XlsIOCalcSheet()
-	{
-		excelSheet = null;
-	}
+//Creates a new instance for ExcelEngine.
 
-	
-	//Constructor with underlying IWorksheet object.
-	public XlsIOCalcSheet(IWorksheet sheet)
-	{
-		excelSheet = sheet;
-	}
+ExcelEngine excelEngine = new ExcelEngine();
 
-	
-	// Sets the value into the mentioned row and column index of XlsIO worksheet. 
-    // If CalculationsSuspended is not True, a ValueChanged event is raised.
-	public override void SetValue(int rowPos, int colPos, string val)
-	{
-		SetValueRowCol(val, rowPos, colPos);
-		if(CalculationsSuspended)
-			return;
-			
-		ValueChangedEventArgs e1 = new ValueChangedEventArgs(rowPos, colPos, val);
-		base.OnValueChanged(e1);
-	}
+//Loads or open an existing workbook through Open method of IWorkbook
 
-	
-	// Number of rows in the worksheet.
-	public new int RowCount
-	{
-		get{return this.excelSheet.UsedRange.Rows.GetLength(0);}
-	}
-	
-	// Number of columns in the worksheet.
-	public new int ColCount
-	{
-		get{return this.excelSheet.UsedRange.Columns.GetLength(0);}
-	}
-		 
-	// Gets the value at the specified row and column index of worksheet.
-	public override object GetValueRowCol(int row, int col)
-	{
-		object o = excelSheet[row, col].Formula;
-		if(o == null)
-			o = excelSheet[row, col].Value;
-		if(o != null)
-		{
-			return o.ToString();//.Replace("'", ""); //keep the tic defect#541
-		}
-		return o;
-	}
-
-	// Sets the value at a specified row and column index of worksheet.
-	public override void SetValueRowCol(object value, int row, int col)
-	{
-		//set the row and col value for excel sheet
-		excelSheet[row, col].Value = value.ToString();
-	}
-}
+IWorkbook workbook = excelEngine.Excel.Workbooks.Open(@"..\..\Data\Sample.xlsx");
 
 {% endhighlight %}
 {% endtabs %}
 
-## CalcWorkbook
+## Enable and Disable Calculations in XlsIO
 
-The `CalcWorkbook` class is a collection of `CalcSheet` objects. This class is used to provide support for creating and computing with Excel files.
-It maintains the sheet id, name and count of the `CalcSheet` objects in the workbook.
+To perform calculation in an Excel workbook, it is recommended to invoke `EnableSheetCalculations` method of `IWorksheet`. Enabling this method will initialize
+`CalcEngine` objects and retrieves calculated values of formulas in a worksheet.
 
-**For example:**
-
-Create a class **XlsIOCalcWorkbook** which is derived from `CalcWorkbook` and implement `Syncfusion.XlsIO.IWorkbook`. This class uses XlsIO library 
-through the supported interfaces to populate a `CalcWorkbook` object from an XLS file. In addition, the derived class overrides the methods of base class
-to create and calculate the XLS data through XlsIO objects, instead of relying on the internal data storage that is available in `CalcSheet`. 
-This gives us the ability to change values in the `CalcWorkbook` object and view the newly computed results.
+On completion of worksheet calculation, it is also recommended to invoke `DisableSheetCalculations` method of `IWorksheet`. 
+This will dispose all the `CalcEngine` objects.
 
 {% tabs %}
 {% highlight c# %}
 
-// A `CalcWorkbook` derived class that uses XlsIO object to read / compute Excel XLS files.
-public class XlsIOCalcWorkbook : CalcWorkbook
-{
+//Creates a new instance for ExcelEngine,
 
-	// XlsIO object.
-	public IWorkbook excelRWWB;
-		 
-	// Constructor with array of `XlsIOCalcSheet` objects and a hashtable containing
-	// named ranges in the workbook
-	public XlsIOCalcWorkbook(XlsIOCalcSheet[]calcSheets, Hashtable namedRanges) 
-		: base(calcSheets, namedRanges)
-	{
+ExcelEngine excelEngine = new ExcelEngine();
 
-	}
+//Loads or open an existing workbook through Open method of IWorkbook,
 
-	//Creates a XlsIOCalcWorkbook object from an XLS file with the given pathname.	
-	public static XlsIOCalcWorkbook CreateFromXLS(string fileName)
-	{
-		IWorkbook wb;
-		try
-		{
-			wb = ExcelUtils.Open(fileName);
-			ExcelUtils.ThrowNotSavedOnDestroy = false;
-		}
-		catch
-		{
-			throw new FileLoadException("XlsIO cannot load the file.", fileName);
-		}
+IWorkbook workbook = excelEngine.Excel.Workbooks.Open(@"..\..\Data\Sample.xlsx");
 
-		XlsIOCalcSheet[] sheets = new XlsIOCalcSheet[wb.Worksheets.Count];
-        string nameList = "!";
+//Accessing the worksheet,
+IWorksheet sheet = workbook.Worksheets[0];
 
-		for(int i = 0; i < wb.Worksheets.Count; ++i)
-		{
-			sheets[i] = new XlsIOCalcSheet(wb.Worksheets[i]);
-			sheets[i].Name = wb.Worksheets[i].Name;
-            nameList += sheets[i].Name + "!";
-				
-		}
-		Hashtable ranges = new Hashtable();
-		foreach(IName name in wb.Names)
-		{
-            if (name.Scope.Length > 0 && nameList.IndexOf("!" + name.Scope + "!") > -1)
-            {
-                ranges.Add((name.Scope + "!" + name.Name).ToUpper(), name.Value.Replace("'", ""));
-            }
-            else
-            {
-                ranges.Add(name.Name.ToUpper(), name.Value.Replace("'", ""));
-            }
-        }
+//Formula calculation is enabled for the sheet,
+sheet.EnableSheetCalculations();
 
-		XlsIOCalcWorkbook cwb = new XlsIOCalcWorkbook(sheets, ranges);
-        cwb.excelRWWB = wb;
-		return cwb;
-	}
+//Assigning values in the worksheet,
 
+worksheet["C3"].Number = 45;
+         
+worksheet["C4"].Number = 20;
+            
+worksheet["C5"].Number = 38;
 
-	// Performs all calculations in the workbook.
-	public override void CalculateAll()
-	{
-		foreach(CalcSheet sheet in this.CalcSheetList)
-		{
-			sheet.CalculationsSuspended = false;
-		}
+//Assigning the formula in the worksheet,           
+worksheet["C24"].Formula = "=SUM(C3:C4)-C5";
 
-		foreach(XlsIOCalcSheet sheet in this.CalcSheetList)
-		{
-			sheet.Engine.UpdateCalcID();
-			for(int row = 1; row <= sheet.RowCount; ++row)
-			{
-				for(int col = 1; col <= sheet.ColCount; ++col)
-				{
-					object o = sheet[row, col];
-					if(o != null)
-					{
-						string s2 = o.ToString();
-						if(s2.Length > 0 && s2[0] == '=')
-							sheet[row, col] = s2;
-					}
-				}
-					
-			}				
-		}
-	}
-}
+//Getting the calculated value,
+var value = sheet.Range["C24"].CalculatedValue;
+
+//Formula calculation is disabled for the sheet,
+sheet.DisableSheetCalculations();
 
 {% endhighlight %}
 {% endtabs %}
 
-## Computation using XlsIO
+## Set and Compute the values at runtime in the Worksheet
 
-To use an XLS file in your business objects and modify the values or get new calculated results, add the two classes derived from `CalcSheet` and `CalcWorkbook` 
-to the project and utilize the support to get/set or compute/display the values in the workbook.
-
-### Initialization of Workbook
-
-To read and instantiate an `CalcWorkbook` object from the given XLS file, user need to invoke a method(`Open` method of `ExcelUtils` which relies on XlsIO Source) to open the XLS file with given path and also
-invoke `CalculateAll` method to perform calculations.
-
-{% tabs %}
-{% highlight c# %}
-
-//Instantiates the workbook object,
-XlsIOCalcWorkbook calcWB = XlsIOCalcWorkbook.CreateFromXLS(@"..\..\..\Book.xls");
-
-//Perform Calculations,
-this.calcWB.Engine.LockDependencies = false;
-this.calcWB.CalculateAll();
-
-{% endhighlight %}
-{% endtabs %}
-
-### Set and Compute the values at runtime in the Worksheet
-
-At runtime, user can set the values in the particular `CalcSheet` by indexing the workbook with the sheet name 
+At runtime, user can set the values in the particular `IWorksheet` by indexing the worksheet with the sheet name or id
 and then use the appropriate row and column indexes. Invoking `UpdateCalcID` and `PullUpdatedValue` method of `CalcEngine` 
 guarantees the current/updated values in the workbook.
 
@@ -237,31 +89,64 @@ either by the user or programmatically. When the changes are complete, set this 
 {% tabs %}
 {% highlight c# %}
 
-//Initialize CalcSheet,
-CalcSheet inputSheet = this.calcWB["Inputs"];
+//Creates a new instance for ExcelEngine,
+
+ExcelEngine excelEngine = new ExcelEngine();
+
+//Loads or open an existing workbook through Open method of IWorkbook,
+
+IWorkbook workbook = excelEngine.Excel.Workbooks.Open(@"..\..\Data\Sample.xlsx");
+
+//Accessing the worksheet,
+IWorksheet sheet = workbook.Worksheets["Inputs"];
 
 Random r = new Random();
 
-this.calcWB.Engine.CalculatingSuspended = true;
+sheet.CalcEngine.CalculatingSuspended = true;
 
 //Set random values into the "Inputs" sheet,
-inputSheet[1, 2] = (r.Next(74) + 15).ToString();
-inputSheet[2, 2] = r.Next(2) == 1 ? "M" : "F";
-inputSheet[3, 2] = r.Next(50);
-inputSheet[4, 2] = r.Next(15).ToString();
-inputSheet[5, 2] = r.Next(11).ToString();
-inputSheet[6, 2] = (33 + r.Next(1972)).ToString();
-inputSheet[7, 2] = r.Next(2) == 1 ? "Yes" : "No";
-inputSheet[8, 5] = r.Next(20); ;
+sheet[1, 2].Value = (r.Next(74) + 15).ToString();
+sheet[2, 2].Value = r.Next(2) == 1 ? "M" : "F";
+sheet[3, 2].Value = r.Next(50);
+sheet[4, 2].Value = r.Next(15).ToString();
+sheet[5, 2].Value = r.Next(11).ToString();
+sheet[6, 2].Value = (33 + r.Next(1972)).ToString();
+sheet[7, 2].Value = r.Next(2) == 1 ? "Yes" : "No";
+sheet[8, 5].Value = r.Next(20); 
 
 //Calculations are suspended so need to pull the computed value to make sure it has been calculated with the latest changes,
-this.calcWB.Engine.UpdateCalcID();
-this.calcWB.Engine.PullUpdatedValue(this.calcWB.GetSheetID("Outputs"), 1, 1);
+sheet.CalcEngine.UpdateCalcID();
+sheet.CalcEngine.PullUpdatedValue(sheet.CalcEngine.GetSheetID("Outputs"), 1, 1);
 
 //Get the Calculated value from "Outputs" sheet,
-string val = calcWB["Outputs"][1, 1].ToString();
+string val = workbook.Worksheets["Outputs"][1, 1].CalculatedValue;
 
-this.calcWB.Engine.CalculatingSuspended = false;
+sheet.CalcEngine.CalculatingSuspended = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+## To compute particular cell in the worksheet
+
+To compute particular cell in the worksheet, use `ParseAndComputeFormula` method of `CalcEngine`. For more details regarding 
+`ParseAndComputeFormula` method, refer [here](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#parseandcomputeformula).
+
+{% tabs %}
+{% highlight c# %}
+
+//Creates a new instance for ExcelEngine,
+
+ExcelEngine excelEngine = new ExcelEngine();
+
+//Loads or open an existing workbook through Open method of IWorkbook,
+
+IWorkbook workbook = excelEngine.Excel.Workbooks.Open(@"..\..\Data\Sample.xlsx");
+
+//Accessing the worksheet,
+IWorksheet sheet = workbook.Worksheets["Sheet1"];
+
+//To calculate particular cell,
+sheet.CalcEngine.ParseAndComputeFormula(sheet["C5"].Formula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -274,3 +159,62 @@ there is no need to add Calculate.Base reference explicitly. The calculate refer
 But if you want both the references in your project, you can use `extern alias` to differentiate the namespaces.
 For your reference, please find the msdn [link](https://blogs.msdn.microsoft.com/ansonh/2006/09/27/extern-alias-walkthrough/) regarding
 `extern alias`.
+
+## Table Formulas
+
+A table is a collection of data about a specific topic that is stored in rows and columns. These tables are defined with a name and `CalcEngine` supports these table format.
+
+For Example: =SUM(Table1[[#All],[Column1]:[Column2]])
+
+A table needs to be defined with the following protocols,
+
+* All table, column, and special item specifiers must be enclosed in matching brackets [ ]
+* Expression cannot be used with these brackets. Column headers should be a text strings.
+* The special characters such as comma ,, colon :, period ., left bracket [ , right bracket ], pound sign #, single quotation mark ', double quotation mark ", 
+  left brace {, right brace }, dollar sign $, caret ^, ampersand &, asterisk *, plus sign +, equal sign =, minus sign -, greater than symbol >,  less than symbol <, and division sign / can be used.
+
+These table are converted into cell ranges and then it will be evaluated. The data from one row can also be taken with this table structure.
+
+{% tabs %}
+{% highlight c# %}
+
+//Creates a new instance for ExcelEngine,
+
+ExcelEngine excelEngine = new ExcelEngine();
+
+//Loads or open an existing workbook through Open method of IWorkbook,
+
+IWorkbook workbook = excelEngine.Excel.Workbooks.Open(@"..\..\Data\Sample.xlsx");
+
+//Accessing the worksheet,
+IWorksheet sheet = workbook.Worksheets[0];
+
+//Formula calculation is enabled for the sheet,
+sheet.EnableSheetCalculations();
+
+//Create Table,
+IListObject table1 = sheet.ListObjects.Create("Table1", sheet["A1:F6"]);
+
+// Fill table data
+sheet[1, 1].Text = "Column1";
+sheet[1, 2].Text = "Column2";
+sheet[1, 3].Text = "Column3";
+
+sheet[2, 1].Number = 3;
+sheet[2, 2].Number = 2;
+sheet[2, 3].Number = 16.80;
+
+sheet[3, 1].Number = 5;
+sheet[3, 2].Number = 3;
+sheet[3, 3].Number = 15.60;
+
+sheet[4, 1].Number = 8;
+sheet[4, 2].Number = 2;
+sheet[4, 3].Number = 20.10;
+
+string result1 = sheet.CalcEngine.ParseAndComputeFormula("=SUM(Table1[Column1])");
+
+string result2 = sheet.CalcEngine.ParseAndComputeFormula("=MIN(Table1[#All])");
+
+{% endhighlight %}
+{% endtabs %}
