@@ -15,13 +15,13 @@ In SplitButton, you can add ToolStripItem as drop-down using the _DropDownItems_
 
 {% highlight c# %}
 
-    toolstripitem toolStripItem1 = new toolstripitem();
+    ToolStripItem toolStripItem1 = new ToolStripItem();
     toolStripItem1.Text = "Paste";
     this.toolstripitem1.Image = ((System.Drawing.Image)(resources.GetObject("toolstripitem1.Image")));
     this.splitButton.DropDownItems.Add(toolStripItem1);
 
 
-    toolstripitem toolStripItem2 = new toolstripitem();
+    ToolStripItem toolStripItem2 = new ToolStripItem();
     toolStripItem2.Text = "Copy";
     this.toolstripitem2.Image = ((System.Drawing.Image)(resources.GetObject("toolstripitem2.Image")));
     this.splitButton.DropDownItems.Add(toolStripItem2);
@@ -33,13 +33,13 @@ In SplitButton, you can add ToolStripItem as drop-down using the _DropDownItems_
 
 {% highlight vbnet %}
 
-    Dim toolStripItem1 As New toolstripitem()
+    Dim toolStripItem1 As New ToolStripItem()
     toolStripItem1.Text = "Paste"
     Me.toolstripitem1.Image = (CType(resources.GetObject("toolstripitem1.Image"), System.Drawing.Image))
     Me.splitButton.DropDownItems.Add(toolStripItem1)
 
 
-    Dim toolStripItem2 As New toolstripitem()
+    Dim toolStripItem2 As New ToolStripItem()
     toolStripItem2.Text = "Copy"
     Me.toolstripitem2.Image = (CType(resources.GetObject("toolstripitem2.Image"), System.Drawing.Image))
     Me.splitButton.DropDownItems.Add(toolStripItem2)  

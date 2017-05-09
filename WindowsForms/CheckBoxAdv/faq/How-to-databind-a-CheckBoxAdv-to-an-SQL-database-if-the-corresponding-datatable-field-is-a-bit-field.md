@@ -17,7 +17,7 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 {
 
-// Using CheckBoxAdv's IntValue property for Databinding.
+// Using CheckBoxAdv's IntValue property for Data binding.
 
 this.oleDbDataAdapter1.Fill(this.dataSet11.Table1);
 
@@ -35,7 +35,7 @@ this.checkBoxAdv1.DataBindings.Add("IntValue", this.dataSet11.Table1, "BitField"
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
-' Using CheckBoxAdv's IntValue property for Databinding.
+' Using CheckBoxAdv's IntValue property for Data binding.
 
 Me.oleDbDataAdapter1.Fill(Me.dataSet11.Table1)
 
