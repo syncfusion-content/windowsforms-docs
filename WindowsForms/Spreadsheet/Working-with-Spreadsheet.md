@@ -282,3 +282,90 @@ spreadsheet.FormulaBarVisibility = true;
 
 {% endhighlight %}
 {% endtabs %}
+
+## Identify whether the workbook is modified or not
+
+`IsCellModified` property of `WorkbookImpl` is used to identify whether any cell modified in a workbook or not after importing. Since it is an internal property, access it using Reflection.
+
+{% tabs %}
+{% highlight c# %}
+
+var wb = spreadsheet.Workbook as WorkbookImpl; 
+ 
+BindingFlags bindFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static; 
+ 
+var value = typeof(WorkbookImpl).GetProperty("IsCellModified", bindFlags).GetValue(wb); 
+
+
+{% endhighlight %}
+{% endtabs %}
+
+## Suppress message boxes in Spreadsheet
+
+In Spreadsheet, warning messages, error alerts are displayed while performing some actions like Excel. If you want to avoid those alerts, then set the [DisplayAlerts](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~DisplayAlerts.html) property to `false`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//To Suppress message boxes in Spreadsheet
+spreadsheet.DisplayAlerts = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Suspend and resume formula calculation
+
+Spreadsheet provides support to suspend the formula calculation and resume it whenever needed using the [SuspendFormulaCalculation](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~SuspendFormulaCalculation.html) and [ResumeFormulaCalculation](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ResumeFormulaCalculation.html) method.
+
+Resuming formula calculation will recalculate all the formula cells in a workbook. This would be helpful to improve the performance when you are updating the value of more number of cells by skipping the dependent cells recalculation on each cell value changed.
+
+{% tabs %}
+{% highlight c# %}
+
+//Resumes the automatic formula calculation
+spreadsheet.ResumeFormulaCalculation();
+
+//Suspends the automatic formula calculation
+spreadsheet.SuspendFormulaCalculation();
+
+
+{% endhighlight %}
+{% endtabs %}
+
+## Close the popup programmatically 	
+
+In Spreadsheet, popup windows are used to display the options like copy paste option, fill series option, etc. which will be closed automatically on certain actions. However you can also able to close the popup programmatically by using the [ShowHidePopup](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~ShowHidePopup.html) method of `SpreadsheetGrid`.
+
+{% tabs %}
+{% highlight c# %}
+
+//To close the popup
+spreadsheet.ActiveGrid.ShowHidePopup(false);
+
+//To show the closed popup, if needed.
+spreadsheet.ActiveGrid.ShowHidePopup(true);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Identify when the active sheet is changed
+
+Spreadsheet provides support to identify when the active sheet is changed by using [PropertyChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~PropertyChanged_EV.html) event of Spreadsheet like below.
+
+{% tabs %}
+{% highlight c# %}
+
+Spreadsheet.PropertyChanged += Spreadsheet_PropertyChanged;
+
+void Spreadsheet_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+{
+    // when the worksheets in the workbook changed
+	
+    if(e.PropertyName == "ActiveSheet")
+    {
+        //Implement code
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
