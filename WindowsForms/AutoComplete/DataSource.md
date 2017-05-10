@@ -255,7 +255,7 @@ You can specify an external datasource for the AutoComplete control to use as th
 
 		{
 
-		  // Displays corresponding OrgID of the OrganisationName on the label.
+		  // Displays corresponding OrgID of the OrganizationName on the label.
 
 		this.label1.Text = args.ItemArray[0].ToString();
 
@@ -271,7 +271,7 @@ You can specify an external datasource for the AutoComplete control to use as th
 
 
 
-		  ' Displays corresponding OrgID of the OrganisationName on the label.
+		  ' Displays corresponding OrgID of the OrganizationName on the label.
 
 		Me.label1.Text = args.ItemArray(0).ToString()
 

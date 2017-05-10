@@ -151,7 +151,7 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
             }
 
-            #endregion
+            #end region
 
             #region ISplitButtonRenderer Members
 
@@ -179,7 +179,7 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
 
 
-            #endregion
+            #end region
 
         }
 

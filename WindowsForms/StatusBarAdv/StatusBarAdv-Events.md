@@ -252,7 +252,7 @@ The event handler receives an argument of type EventArgs.
 {% highlight c# %}
 
 
-// 2D or 3D border can be set for the StatusBarAdv control using the BorderStyle property. The StatusBarAdv control can also be displayed borderless using this property.
+// 2D or 3D border can be set for the StatusBarAdv control using the BorderStyle property. The StatusBarAdv control can also be displayed border less using this property.
 
 this.statusBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
@@ -280,7 +280,7 @@ Console.WriteLine(" BorderStyleChanged event is raised ");
 
 
 
-' 2D or 3D border can be set for the StatusBarAdv control using the BorderStyle property. The StatusBarAdv control can also be displayed borderless using this property. 
+' 2D or 3D border can be set for the StatusBarAdv control using the BorderStyle property. The StatusBarAdv control can also be displayed border less using this property. 
 
 Me.statusBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle 
 
