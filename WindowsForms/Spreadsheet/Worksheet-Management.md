@@ -50,6 +50,20 @@ Spreadsheet provides support to hide and unhide the worksheets in a workbook.
 {% endhighlight %}
 {% endtabs %}
 
+## Rename a sheet programmatically
+
+Spreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RenameSheet.html) method.
+
+{% tabs %}
+	
+{% highlight c# %}
+
+//To Rename a sheet programmatically
+spreadsheet.RenameSheet("ExistingSheetName", "NewSheetName");
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Protection
 
 ### Protecting a worksheet
