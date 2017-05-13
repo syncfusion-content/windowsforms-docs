@@ -74,7 +74,7 @@ N> ResetDockTabFont and ResetDockTabHeight methods lets you reset the above sett
 
 {% highlight C# %}
 
-//Specifies the forecolor of the Docked tab Control.
+//Specifies the fore color of the Docked tab Control.
 
 this.dockingManager1.DockTabForeColor = System.Drawing.Color.Red;
 
@@ -83,7 +83,7 @@ this.dockingManager1.DockTabForeColor = System.Drawing.Color.Red;
 
 {% highlight VB %}
 
-'Specifies the forecolor of the Docked tab Control.
+'Specifies the fore color of the Docked tab Control.
 
 Me.dockingManager1.DockTabForeColor = System.Drawing.Color.Red
 

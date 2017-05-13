@@ -69,7 +69,7 @@ this.dockingClientPanel1.SuspendLayout();
 
 
 
-//Add a control to dockingclientpanel
+//Add a control to DockingClientPanel
 
 this.dockingClientPanel1.Controls.Add(this.tabControlAdv1);
 
@@ -116,7 +116,7 @@ Me.dockingClientPanel1.SuspendLayout()
 
 
 
-' Add a control to dockingclientpanel 
+' Add a control to DockingClientPanel 
 
 Me.dockingClientPanel1.Controls.AddRange(New System.Windows.Forms.Control() {Me.tabControlAdv1})
 

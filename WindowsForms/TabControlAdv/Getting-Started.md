@@ -109,7 +109,7 @@ this.tabControlAdv1.Controls.Add(this.tabPageAdv1);
 
 
 
-//Set the location of the TabContolAdv
+//Set the location of the TabControlAdv
 
 this.tabControlAdv1.Location = new Point(16, 24);
 
@@ -149,7 +149,7 @@ Me.tabControlAdv1.Controls.Add(Me.tabPageAdv1)
 
 
 
-'Set the location of the TabContolAdv
+'Set the location of the TabControlAdv
 
 Me.tabControlAdv1.Location = New Point(16, 24)
 

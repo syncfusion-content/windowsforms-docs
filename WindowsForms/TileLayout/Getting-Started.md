@@ -147,7 +147,7 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 	 this.layoutGroup1.Controls.Add(this.imageStreamer1);
 
-	 new Syncfusion.Windows.Forms.Tools.ImageStremerCollection().AddRange(new Syncfusion.Windows.Forms.Tools.ImageStreamer[] {
+	 new Syncfusion.Windows.Forms.Tools.ImageStreamerCollection().AddRange(new Syncfusion.Windows.Forms.Tools.ImageStreamer[] {
 
 	 this.imageStreamer1});
 

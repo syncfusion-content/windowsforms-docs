@@ -929,7 +929,7 @@ Private Sub tabControlAdv1_PreviewKeyDown(ByVal sender As Object, ByVal e As Sys
 
 Console.Write("PreviewKeyDown event is raised")
 
-'The below code prints the Keycode, KeyValue, KeyData and Modifiers in the output window at run-time.
+'The below code prints the KeyCode, KeyValue, KeyData and Modifiers in the output window at run-time.
 
 Console.Write("Key code :" + e.KeyCode.ToString() + "\n" + "Key Value :" + e.KeyValue.ToString() + "\n" + "Key Data:" + e.KeyData.ToString() + "\n" + "Modifiers:" + e.Modifiers.ToString())
 
