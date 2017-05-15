@@ -62,7 +62,7 @@ Here, the windows from DockingManager1 are only allowed to be dragged and droppe
 
 {% highlight C# %}
 
-//To add ChildForm's DcokingManager to the MainForm's TargetManagerList. 
+//To add ChildForm's DockingManager to the MainForm's TargetManagerList. 
 
 this.dockingManager1.AddToTargetManagersList(ChildWindow.dockingManager2);
 
@@ -70,7 +70,7 @@ this.dockingManager1.AddToTargetManagersList(ChildWindow.dockingManager2);
 
 {% highlight VB %}
 
-'To add ChildForm's DcokingManager to the MainForm's TargetManagerList. 
+'To add ChildForm's DockingManager to the MainForm's TargetManagerList. 
 
 Me.dockingManager1.AddToTargetManagersList(ChildWindow.dockingManager1)
 
@@ -85,7 +85,7 @@ To drag and drop the window from DockingManager2 to DockingManager1, DockingMana
 
 {% highlight C# %}
 
-//To add ChildForm's DcokingManager to the MainForm's TargetManagerList. 
+//To add ChildForm's DockingManager to the MainForm's TargetManagerList. 
 
 this.dockingManager1.AddToTargetManagersList(ChildWindow.dockingManager2);
 
@@ -95,7 +95,7 @@ ChildWindow.dockingManager2.AddToTargetManagersList(this.dockingManager1);
 
 {% highlight VB %}
 
-'To add ChildForm's DcokingManager to the MainForm's TargetManagerList. 
+'To add ChildForm's DockingManager to the MainForm's TargetManagerList. 
 
 Me.dockingManager1.AddToTargetManagersList(ChildWindow.dockingManager1);
 
@@ -114,7 +114,7 @@ To remove DockingManager from the TargetManagerList, call `RemoveFromTargetMana
 
 {% highlight C# %}
 
-//To remove ChildForm's DcokingManager to the MainForm's TargetManagerList. 
+//To remove ChildForm's DockingManager to the MainForm's TargetManagerList. 
 
 this.dockingManager1.RemoveFromTargetManagersList(ChildWindow.dockingManager2);
 
@@ -122,7 +122,7 @@ this.dockingManager1.RemoveFromTargetManagersList(ChildWindow.dockingManager2);
 
 {% highlight VB %}
 
-'To remove ChildForm's DcokingManager to the MainForm's TargetManagerList. 
+'To remove ChildForm's DockingManager to the MainForm's TargetManagerList. 
 
 Me.dockingManager1.RemoveFromTargetManagersList(ChildWindow.dockingManager2);
 
