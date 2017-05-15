@@ -165,7 +165,7 @@ When the DockingManager’s PersistState property is set, it will save the dock 
 
 using Syncfusion.Runtime.Serialization;
 
-// Persist the dock state into XML File named Dock1.xml. Use this line in the constructor of Control which hosts the dockinglayout 
+// Persist the dock state into XML File named Dock1.xml. Use this line in the constructor of Control which hosts the docking layout 
 
 public form1()
 
@@ -182,7 +182,7 @@ AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile,"Dock1");
 
 Imports Syncfusion.Runtime.Serialization
 
-' Persist the dock state into XML File named Dock1.xml.Use this line in the constructor of Control which hosts the dockinglayout 
+' Persist the dock state into XML File named Dock1.xml.Use this line in the constructor of Control which hosts the docking layout 
 
 Private Sub New()
 
@@ -205,7 +205,7 @@ To persist docking information in a database, we need to serialize the state int
 {% highlight C# %}
 
 
-// Saving dockstate to memory stream  
+// Saving dock state to memory stream  
 
 MemoryStream ms = new MemoryStream();
 
@@ -223,7 +223,7 @@ aser.PersistNow();
 {% highlight VB %}
 
 
-' Saving dockstate to memory stream  
+' Saving dock state to memory stream  
 
 Dim ms As MemoryStream = New MemoryStream()
 

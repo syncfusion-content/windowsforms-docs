@@ -66,7 +66,7 @@ Syncfusion.Windows.Forms.Tools.DockTabControl docktab = (dhc.ParentController as
 
 
 
-       // Iterating through the tabpages to get other controls in that tab.
+       // Iterating through the TabPages to get other controls in that tab.
 
        foreach(DockTabPage tabpage in docktab.TabPages) 
 
@@ -103,7 +103,7 @@ Dim docktab As Syncfusion.Windows.Forms.Tools.DockTabControl = (CType(IIf(TypeOf
 
 
 
-       'Iterating through the tabpages to get other controls in that tab.
+       'Iterating through the TabPages to get other controls in that tab.
 
         For Each tabpage As DockTabPage In docktab.TabPages
 
