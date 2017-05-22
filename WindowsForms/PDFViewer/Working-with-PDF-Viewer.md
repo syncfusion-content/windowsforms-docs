@@ -409,7 +409,7 @@ pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape
 
 ## Exporting PDF
 
-### Exporting PDFs as Raster Images
+### Exporting pages of PDF document as Raster Images
 
 Essential PDF Viewer allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
 
@@ -458,9 +458,9 @@ Bitmap[] image = pdfViewer1.ExportAsImage(0, 3);
 
 Dim image() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
 
-Exporting PDFs as Vector Images
+Exporting pages of PDF document as Vector Images
 
-Exporting PDFs as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
+Exporting pages of PDF document as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
 
 {%endhighlight%}
 
