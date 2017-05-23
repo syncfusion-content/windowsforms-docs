@@ -388,10 +388,10 @@ To add a PDF Viewer control to your application:
    
 	   Imports Syncfusion.PdfViewer.Windows
 	  
-	  'Initializing the Pdf Viewer
+	  'Initializing the PDF viewer
 	   Dim viewer As PdfViewer = New PdfViewer()
 	   
-	   'Loading the document in the Pdf Viewer
+	   'Loading the document in the PDF viewer
 	   viewer.Load("c:/documents/myPDF.pdf")
    ~~~
    {:.prettyprint}
