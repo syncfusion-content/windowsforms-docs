@@ -169,7 +169,7 @@ for (int i = 0; i < 5; i++)
 {
     for (int j = 0; j < 5; j++)
     {
-        calcData.SetValueRowCol(randm.Next(5) + 1);
+        calcData.SetValueRowCol(randm.Next(5) + 1,i,j);
     }
 }
 
