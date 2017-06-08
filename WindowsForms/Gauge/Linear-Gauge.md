@@ -439,12 +439,14 @@ The styles are built-in for all of the gauges. Using SkinManager, these four sty
 * Black
 * Silver
 * Metro
-
+* Office2016White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016Black
+* Custom
 
 
 {% highlight c# %}
-
-
 
 this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black;
 
@@ -480,6 +482,178 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 ![](Linear-Gauge_images/Linear-Gauge_img10.png)
 
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016White
+
+this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016White
+
+Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016White
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+ ![](Linear-Gauge_images/Linear-Gauge_img12.png)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Colorful
+
+Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Colorful
+
+{%endhighlight %}
+
+{% endtabs %}
+
+ ![](Linear-Gauge_images/Linear-Gauge_img11.png)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016DarkGray
+
+this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB%}
+
+'Office2016DarkGray
+
+Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray
+
+{% endhighlight VB %}
+
+{% endtabs %}
+
+![](Linear-Gauge_images/Linear-Gauge_img13.png)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016Black
+
+this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB%}
+
+'Office2016Black
+
+Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black
+
+{% endhighlight VB %}
+
+{% endtabs %}
+
+
+ ![](Linear-Gauge_images/Linear-Gauge_img14.png)
+
+
+**Custom**
+
+ Linear Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the **VisualStyle** property as **Custom**.
+
+ **Steps to Customize the theme in Design time.**
+
+ **Step 1:**  Need to add Linear Gauge control to Form Designer.
+
+![](Linear-Gauge_images/Linear-Gauge_img15.png)
+
+ **Step 2:** Set the VisualStyle as Custom
+
+![](Linear-Gauge_images/Linear-Gauge_img16.png)
+
+ **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in LinearGauge control.
+
+![](Linear-Gauge_images/Linear-Gauge_img18.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.linearGauge1 = new Syncfusion.Windows.Forms.Gauge.LinearGauge();
+this.linearGauge1.BackgroundGradientEndColor = System.Drawing.Color.Purple;this.linearGauge1.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+this.linearGauge1.ForeColor = System.Drawing.Color.Gray;
+this.linearGauge1.GaugelabelFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+this.linearGauge1.LinearFrameType = Syncfusion.Windows.Forms.Gauge.LinearFrameType.Horizontal;
+this.linearGauge1.Location = new System.Drawing.Point(138, 109);
+this.linearGauge1.MajorTicksHeight = 15;
+this.linearGauge1.MinimumSize = new System.Drawing.Size(75, 125);
+this.linearGauge1.MinorTickCount = 5;
+this.linearGauge1.MinorTickHeight = 10;
+this.linearGauge1.MinorTickMarkColor = System.Drawing.Color.Maroon;
+this.linearGauge1.Name = "linearGauge1";
+this.linearGauge1.PointerPlacement = Syncfusion.Windows.Forms.Gauge.Placement.Center;
+this.linearGauge1.ScaleColor = System.Drawing.Color.Gray;
+this.linearGauge1.Size = new System.Drawing.Size(300, 125);
+this.linearGauge1.TabIndex = 0;
+this.linearGauge1.Text = "linearGauge1";
+this.linearGauge1.ValueIndicatorColor = System.Drawing.Color.Gray;
+this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.linearGauge1 = New Syncfusion.Windows.Forms.Gauge.LinearGauge()
+Me.linearGauge1.BackgroundGradientEndColor = System.Drawing.Color.Purple
+Me.linearGauge1.BackgroundGradientStartColor = System.Drawing.Color.FromArgb((CType(((CType((255), Byte))), Integer)), (CType(((CType((128), Byte))), Integer)), (CType(((CType((128), Byte))), Integer)))Me.linearGauge1.ForeColor = System.Drawing.Color.Gray
+Me.linearGauge1.GaugelabelFont = New System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CType((0), Byte)))
+Me.linearGauge1.LinearFrameType = Syncfusion.Windows.Forms.Gauge.LinearFrameType.Horizontal
+Me.linearGauge1.Location = New System.Drawing.Point(138, 109)
+Me.linearGauge1.MajorTicksHeight = 15
+Me.linearGauge1.MinimumSize = New System.Drawing.Size(75, 125)
+Me.linearGauge1.MinorTickCount = 5
+Me.linearGauge1.MinorTickHeight = 10
+Me.linearGauge1.MinorTickMarkColor = System.Drawing.Color.Maroon
+Me.linearGauge1.Name = "linearGauge1"
+Me.linearGauge1.PointerPlacement = Syncfusion.Windows.Forms.Gauge.Placement.Center
+Me.linearGauge1.ScaleColor = System.Drawing.Color.Gray
+Me.linearGauge1.Size = New System.Drawing.Size(300, 125)
+Me.linearGauge1.TabIndex = 0
+Me.linearGauge1.Text = "linearGauge1"
+Me.linearGauge1.ValueIndicatorColor = System.Drawing.Color.Gray
+Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Output:**
+
+![](Linear-Gauge_images/Linear-Gauge_img17.png)
 
 
 ## Data Binding
