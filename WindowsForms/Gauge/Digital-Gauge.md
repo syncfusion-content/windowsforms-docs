@@ -43,7 +43,11 @@ Different visual styles can be applied using the VisualStyle property. The Digit
 * Silver
 * Blue
 * Metro
-* Default
+* Office2016White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016Black
+* Custom
 
 <table>
 <tr>
@@ -133,6 +137,181 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 {% endhighlight %}
 
 ![](Digital-Gauge_images/Digital-Gauge_img4.png)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016White
+
+this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016White
+
+Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016White
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+ ![](Digital-Gauge_images/Digital-Gauge_img13.png)
+
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Colorful
+
+Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Colorful
+
+{%endhighlight %}
+
+{% endtabs %}
+
+ ![](Digital-Gauge_images/Digital-Gauge_img16.png)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016DarkGray
+
+this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB%}
+
+'Office2016DarkGray
+
+Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray
+
+{% endhighlight VB %}
+
+{% endtabs %}
+
+![](Digital-Gauge_images/Digital-Gauge_img14.png)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016Black
+
+this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB%}
+
+'Office2016Black
+
+Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black
+
+{% endhighlight VB %}
+{% endtabs %}
+
+![](Digital-Gauge_images/Digital-Gauge_img15.png)
+
+**Custom**
+
+ Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the **VisualStyle** property as **Custom**.
+
+ **Steps to Customize the theme in Design time.**
+
+ **Step 1:**  Need to add DigitalGauge control to Form Designer.
+
+
+![](Digital-Gauge_images/Digital-Gauge_img17.png)
+
+ **Step 2:** Set the VisualStyle as Custom
+
+![](Digital-Gauge_images/Digital-Gauge_img18.png)
+
+ **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in DigitalGauge control.
+
+![](Digital-Gauge_images/Digital-Gauge_img19.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+Syncfusion.Windows.Forms.Gauge.DigitalGaugeThemeBrush digitalGaugeThemeBrush1 = new Syncfusion.Windows.Forms.Gauge.DigitalGaugeThemeBrush();
+this.digitalGauge1 = new Syncfusion.Windows.Forms.Gauge.DigitalGauge();
+this.digitalGauge1.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+this.digitalGauge1.DisplayRecordIndex = 0;
+this.digitalGauge1.ForeColor = System.Drawing.Color.Yellow;
+this.digitalGauge1.FrameBorderColor = System.Drawing.Color.Red;
+this.digitalGauge1.Location = new System.Drawing.Point(201, 106);
+this.digitalGauge1.MaximumSize = new System.Drawing.Size(500, 180);
+this.digitalGauge1.MinimumSize = new System.Drawing.Size(90, 90);
+this.digitalGauge1.Name = "digitalGauge1";
+this.digitalGauge1.Size = new System.Drawing.Size(180, 90);
+this.digitalGauge1.TabIndex = 0;
+digitalGaugeThemeBrush1.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+digitalGaugeThemeBrush1.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+digitalGaugeThemeBrush1.ForeColor = System.Drawing.Color.Yellow;
+digitalGaugeThemeBrush1.FrameBorderColor = System.Drawing.Color.Red;
+digitalGaugeThemeBrush1.InactiveTextColor = System.Drawing.Color.Transparent;digitalGaugeThemeBrush1.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+digitalGaugeThemeBrush1.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+this.digitalGauge1.ThemeBrush.Add(digitalGaugeThemeBrush1);
+this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim digitalGaugeThemeBrush1 As Syncfusion.Windows.Forms.Gauge.DigitalGaugeThemeBrush =  New Syncfusion.Windows.Forms.Gauge.DigitalGaugeThemeBrush() 
+Me.digitalGauge1 = New Syncfusion.Windows.Forms.Gauge.DigitalGauge()
+Me.digitalGauge1.BackgroundGradientEndColor = System.Drawing.Color.FromArgb((CType(((CType((192), Byte))), Integer)), (CType(((CType((0), Byte))), Integer)), (CType(((CType((192), Byte))), Integer)))
+Me.digitalGauge1.DisplayRecordIndex = 0
+Me.digitalGauge1.ForeColor = System.Drawing.Color.Yellow
+Me.digitalGauge1.FrameBorderColor = System.Drawing.Color.Red
+Me.digitalGauge1.Location = New System.Drawing.Point(201, 106)
+Me.digitalGauge1.MaximumSize = New System.Drawing.Size(500, 180)
+Me.digitalGauge1.MinimumSize = New System.Drawing.Size(90, 90)
+Me.digitalGauge1.Name = "digitalGauge1"
+Me.digitalGauge1.Size = New System.Drawing.Size(180, 90)
+Me.digitalGauge1.TabIndex = 0
+digitalGaugeThemeBrush1.BackgroundGradientEndColor = System.Drawing.Color.FromArgb((CType(((CType((192), Byte))), Integer)), (CType(((CType((0), Byte))), Integer)), (CType(((CType((192), Byte))), Integer)))
+digitalGaugeThemeBrush1.BackgroundGradientStartColor = System.Drawing.Color.FromArgb((CType(((CType((240), Byte))), Integer)), (CType(((CType((240), Byte))), Integer)), (CType(((CType((240), Byte))), Integer)))
+digitalGaugeThemeBrush1.ForeColor = System.Drawing.Color.Yellow
+digitalGaugeThemeBrush1.FrameBorderColor = System.Drawing.Color.Red
+digitalGaugeThemeBrush1.InactiveTextColor = System.Drawing.Color.TransparentdigitalGaugeThemeBrush1.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb((CType(((CType((172), Byte))), Integer)), (CType(((CType((172), Byte))), Integer)), (CType(((CType((172), Byte))), Integer)))
+digitalGaugeThemeBrush1.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb((CType(((CType((229), Byte))), Integer)), (CType(((CType((229), Byte))), Integer)), (CType(((CType((229), Byte))), Integer)))
+Me.digitalGauge1.ThemeBrush.Add(digitalGaugeThemeBrush1)
+Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Output:**
+
+![](Digital-Gauge_images/Digital-Gauge_img20.png)
 
 
 
