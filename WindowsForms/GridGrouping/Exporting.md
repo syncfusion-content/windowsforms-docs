@@ -510,9 +510,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img1.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img1.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img2.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img2.jpeg)
 
 ### Export caption summary
 In order to export the caption summary, the [ExportCaptionSummary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportCaptionSummary.html) property of `ExcelExportingOptions` can be  set to `true`. Default value of this property is `true`.
@@ -538,9 +538,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img3.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img3.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img4.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img4.jpeg)
 
 ### Export group preview row
 In order to export the group preview row, the [ExportGroupPreviewRow](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportGroupPreviewRow.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
@@ -566,9 +566,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img5.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img5.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img6.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img6.jpeg)
 
 ### Export group summary
 In order to export the group summary, the [ExportGroupSummary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportGroupSummary.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
@@ -618,13 +618,13 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img7.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img7.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img8.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img8.jpeg)
 
 Exported grid when `ExportNestedTableIndent` = false;
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img9.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img9.jpeg)
 
 ### Export record preview row
 In order to export the record preview row, the [ExportRecordPreviewRow](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportRecordPreviewRow.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
@@ -650,9 +650,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img10.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img10.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img11.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img11.jpeg)
 
 ### Export table summary
 In order to export the table summary, the [ExportTableSummary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportTableSummary.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
@@ -678,9 +678,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img12.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img12.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img13.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img13.jpeg)
 
 ## Export groups with outline
 In order to export groups with outline, the [AllowGroupOutlining](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~AllowGroupOutlining.html) property of the [GridGroupingExcelConverterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl_members.html) can be set to `true`. Default value of this property is `true`.
@@ -705,9 +705,9 @@ Dim exportingOptions As New ExcelExportingOptions()
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
 {% endtabs %}
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img14.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img14.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img15.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img15.jpeg)
 
 ## Export nested table with outlines
 In order to export nested table with outline, the [AllowNestedTableOutling](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~AllowNestedTableOutling.html) property of the `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
@@ -733,9 +733,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img16.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img16.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img17.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img17.jpeg)
 
 ## Export the grid row height and column width
 In order to export the grid’s row height and column width, [CanExportColumnWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~CanExportColumnWidth.html) and [CanExportRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~CanExportRowHeight.html) properties of the `GridGroupingExcelConverterControl` can be set to `true`.
@@ -844,9 +844,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img18.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img18.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img19.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img19.jpeg)
 
 ## Export nested table caption
 In order to export the grid with nested table caption, the [ExportNestedTableCaption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~ExportNestedTableCaption.html) property of `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
@@ -872,9 +872,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img20.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img20.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img21.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img21.jpeg)
 
 ## Export grid with style 
 In order to export the grid with style, the [ExportStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase~ExportStyle.html) property of `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
@@ -900,9 +900,9 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img22.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img22.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img23.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img23.jpeg)
 
 ## Export gridlines
 In order to export the gridlines in Excel sheet, the [ShowGridLines](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~ShowGridLines.html) property of `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
@@ -927,7 +927,7 @@ Dim exportingOptions As New ExcelExportingOptions()
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
 {% endtabs %}
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img24.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img24.jpeg)
 
 ## Events
 The following events are supported in advanced Excel exporting,
@@ -972,9 +972,9 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img25.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img25.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img26.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img26.jpeg)
 
 ### QueryExportRowRange
 This event will be triggered before exporting a row. If you want to avoid specific row while exporting, you can achieve this by handling the [QueryExportRowRange](https://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportRowRangeEventHandler.html) event.
@@ -1005,9 +1005,9 @@ Private Sub ExcelConverter_QueryExportRowRange(sender As Object, e As Syncfusion
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img27.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img27.jpeg)
 
-![](Advanced_Excel_Exporting_images/Advanced_Excel_Exporting_img28.jpeg)
+![](Exporting_images/Advanced_Excel_Exporting_img28.jpeg)
 
 ### QueryExportNestedTable
 This event will be triggered before exporting a nested table. By this event, you can get the `ExportingOptions`, `NestedTable` and `ParentRecord`.
