@@ -639,6 +639,11 @@ The styles are built in for all of the gauges. Using SkinManager, these four sty
 * Black
 * Silver
 * Metro
+* Office2016White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016Black
+* Custom
 
 
 
@@ -680,6 +685,178 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 ![](Radial-Gauge_images/Radial-Gauge_img16.png)
 
+
+
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016White
+
+this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016White
+
+Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016White
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+ ![](Radial-Gauge_images/Radial-Gauge_img18.jpeg)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Colorful
+
+Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Colorful
+
+{%endhighlight %}
+
+{% endtabs %}
+
+  ![](Radial-Gauge_images/Radial-Gauge_img19.jpeg)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016DarkGray
+
+this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB%}
+
+'Office2016DarkGray
+
+Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray
+
+{% endhighlight VB %}
+
+{% endtabs %}
+
+![](Radial-Gauge_images/Radial-Gauge_img20.jpg)
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016Black
+
+this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB%}
+
+'Office2016Black
+
+Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black
+
+{% endhighlight VB %}
+
+{% endtabs %}
+
+
+ ![](Radial-Gauge_images/Radial-Gauge_img21.jpg)
+
+**Custom**:
+
+ RadialGauge provides an option to end user to create their own custom theme based on the requirement by setting the **VisualStyle** as **Custom**.
+
+ Steps to Customize the theme in Design time.
+
+ **Step 1:**  Need to add RadialGauge control to Form Designer.
+
+
+![](Radial-Gauge_images/Radial-Gauge_img22.png)
+
+ **Step 2:** Set the VisualStyle as Custom
+
+![](Radial-Gauge_images/Radial-Gauge_img23.png)
+
+ **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in RadialGauge control.
+
+![](Radial-Gauge_images/Radial-Gauge_img24.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+Syncfusion.Windows.Forms.Gauge.RadialGaugeThemeBrush radialGaugeThemeBrush1 = new Syncfusion.Windows.Forms.Gauge.RadialGaugeThemeBrush();
+radialGaugeThemeBrush1.ArcColor = System.Drawing.Color.Gray;
+radialGaugeThemeBrush1.BackgroundGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+radialGaugeThemeBrush1.BackgroundGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+radialGaugeThemeBrush1.InnerFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
+radialGaugeThemeBrush1.InnerFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+radialGaugeThemeBrush1.InterLinesColor = System.Drawing.Color.Gray;
+radialGaugeThemeBrush1.LabelColor = System.Drawing.Color.Gray;
+radialGaugeThemeBrush1.MajorTickMarkColor = System.Drawing.Color.Gray;
+radialGaugeThemeBrush1.MinorTickMarkColor = System.Drawing.Color.Gray;
+radialGaugeThemeBrush1.NeedleColor = System.Drawing.Color.Gray;
+radialGaugeThemeBrush1.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+radialGaugeThemeBrush1.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+radialGaugeThemeBrush1.ScaleLabelColor = System.Drawing.Color.Gray;
+radialGaugeThemeBrush1.ValueColor = System.Drawing.Color.Gray;
+this.radialGauge1.ThemeBrush.Add(radialGaugeThemeBrush1);
+this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim radialGaugeThemeBrush1 As Syncfusion.Windows.Forms.Gauge.RadialGaugeThemeBrush = New Syncfusion.Windows.Forms.Gauge.RadialGaugeThemeBrush()
+radialGaugeThemeBrush1.ArcColor = System.Drawing.Color.Gray
+radialGaugeThemeBrush1.BackgroundGradientEndColor = System.Drawing.Color.FromArgb((CType(((CType((255), Byte))), Integer)), (CType(((CType((128), Byte))), Integer)), (CType(((CType((128), Byte))), Integer)))
+radialGaugeThemeBrush1.BackgroundGradientStartColor = System.Drawing.Color.FromArgb((CType(((CType((240), Byte))), Integer)), (CType(((CType((240), Byte))), Integer)), (CType(((CType((240), Byte))), Integer)))
+radialGaugeThemeBrush1.InnerFrameGradientEndColor = System.Drawing.Color.FromArgb((CType(((CType((194), Byte))), Integer)), (CType(((CType((194), Byte))), Integer)), (CType(((CType((194), Byte))), Integer)))
+radialGaugeThemeBrush1.InnerFrameGradientStartColor = System.Drawing.Color.FromArgb((CType(((CType((180), Byte))), Integer)), (CType(((CType((180), Byte))), Integer)), (CType(((CType((180), Byte))), Integer)))
+radialGaugeThemeBrush1.InterLinesColor = System.Drawing.Color.Gray
+radialGaugeThemeBrush1.LabelColor = System.Drawing.Color.Gray
+radialGaugeThemeBrush1.MajorTickMarkColor = System.Drawing.Color.Gray
+radialGaugeThemeBrush1.MinorTickMarkColor = System.Drawing.Color.Gray
+radialGaugeThemeBrush1.NeedleColor = System.Drawing.Color.Gray
+radialGaugeThemeBrush1.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb((CType(((CType((172), Byte))), Integer)), (CType(((CType((172), Byte))), Integer)), (CType(((CType((172), Byte))), Integer)))
+radialGaugeThemeBrush1.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb((CType(((CType((229), Byte))), Integer)), (CType(((CType((229), Byte))), Integer)), (CType(((CType((229), Byte))), Integer)))
+radialGaugeThemeBrush1.ScaleLabelColor = System.Drawing.Color.Gray
+radialGaugeThemeBrush1.ValueColor = System.Drawing.Color.Gray
+Me.radialGauge1.ThemeBrush.Add(radialGaugeThemeBrush1)
+Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Output:**
+
+![](Radial-Gauge_images/Radial-Gauge_img25.png)
 
 
 ## Data Binding
@@ -816,6 +993,8 @@ needle1.NeedleStyle = Syncfusion.Windows.Forms.Gauge.NeedleStyle.Advanced
 Me.RadialGauge1.NeedleCollection(0).Value = 5
 
 {% endhighlight %}
+
+
 
 ### How to customize Radial Gauge appearance ?
 
@@ -1524,5 +1703,7 @@ Me.radialGauge1.SweepAngle = 200
 {% endhighlight %}
 
 ![](Radial-Gauge_images/arc.png)
+
+
 
 
