@@ -451,80 +451,616 @@ End Class
 N> The naming of the `CopyStyles` and `CopyAlignment` methods of the `GridConverterBase` is changed to `ExportBordersToExcel` and `ExportAlignmentToExcel`. 
 
 ## Advanced Excel Exporting
-The `GridGroupingExcelConverterControl` is created for better performance of exporting the grid contents to Excel. It can be enabled by adding [Converter.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/webtoc.html) in to assembly reference. 
 
-### Restrict the Exporting of Empty Groups 
-The child without (empty) records can be hidden/skipped while exporting by canceling the [QueryExportNestedTable](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~QueryExportNestedTable_EV.html) event of GridGroupingExcelConverterControl.
+### Exporting Mode
+By default, actual cell value will be exported to Excel. In order to export the display text, set the [ExportMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase~ExportMode.html) property as `Text`. Default value of this property is `Value`.
 
 {% tabs %}
 {% highlight c# %}
-GridGroupingExcelConverterControl gridExcelConverter = new GridGroupingExcelConverterControl();
-gridExcelConverter.QueryExportNestedTable += gridExcelConverter_QueryExportNestedTable;
-void gridExcelConverter_QueryExportNestedTable(object sender, ExportNestedTableEventArgs e)
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export the display text to Excel sheet.
+ExcelConverter.ExportMode = Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase.ExportingMode.Text;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export the display text to Excel sheet.
+ExcelConverter.ExportMode = Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase.ExportingMode.Text
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+### Exporting Options
+
+#### Exclude columns while exporting
+By default, all the columns of the grid will be exported to Excel. In order to exclude some columns while exporting, the [ExcludeColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExcludeColumns.html) property of [ExcelExportingOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions.html) can be used.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Column list for exclude the columns.
+List<String> Col = new List<string>();
+Col.Add("ProductName");
+Col.Add("SupplierID");
+//Assign the Column list to ExcludeColumn option.
+exportingOptions.ExcludeColumns = Col;
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Column list for exclude the columns.
+Dim Col As New List(Of String)()
+Col.Add("ProductName")
+Col.Add("SupplierID")
+'Assign the Column list to ExcludeColumn option.
+exportingOptions.ExcludeColumns = Col
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img1.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img2.jpeg)
+
+#### Export caption summary
+In order to export the caption summary, the [ExportCaptionSummary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportCaptionSummary.html) property of `ExcelExportingOptions` can be  set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export Caption summary to Excel.
+exportingOptions.ExportCaptionSummary = true;
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export Caption summary to Excel.
+exportingOptions.ExportCaptionSummary = True
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img3.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img4.jpeg)
+
+#### Export group preview row
+In order to export the group preview row, the [ExportGroupPreviewRow](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportGroupPreviewRow.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export Group Preview Row to Excel.
+exportingOptions.ExportGroupPreviewRow = true;
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export Group Preview Row to Excel.
+exportingOptions.ExportGroupPreviewRow = True
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img5.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img6.jpeg)
+
+#### Export group summary
+In order to export the group summary, the [ExportGroupSummary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportGroupSummary.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export Grid with Group summary to Excel.
+exportingOptions.ExportGroupSummary = true;
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export Grid with Group summary to Excel.
+exportingOptions.ExportGroupSummary = True
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+#### Export nested table indent
+In order to export nested table with indent, the [ExportNestedTableIndent](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportNestedTableIndent.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export nested table with indent.
+exportingOptions.ExportNestedTableIndent = true;
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export nested table with indent.
+exportingOptions.ExportNestedTableIndent = True
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img7.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img8.jpeg)
+
+Exported grid when `ExportNestedTableIndent` = false;
+
+![](Exporting_images/Advanced_Excel_Exporting_img9.jpeg)
+
+#### Export record preview row
+In order to export the record preview row, the [ExportRecordPreviewRow](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportRecordPreviewRow.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export Grid with Record Preview Row to Excel.
+exportingOptions.ExportRecordPreviewRow = true;
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export Grid with Record Preview Row to Excel.
+exportingOptions.ExportRecordPreviewRow = True
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img10.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img11.jpeg)
+
+#### Export table summary
+In order to export the table summary, the [ExportTableSummary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.ExcelExportingOptions~ExportTableSummary.html) property of `ExcelExportingOptions` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export Grid with Table summary to Excel.
+exportingOptions.ExportTableSummary = true;
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export Grid with Table summary to Excel.
+exportingOptions.ExportTableSummary = True
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img12.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img13.jpeg)
+
+### Export groups with outline
+In order to export groups with outline, the [AllowGroupOutlining](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~AllowGroupOutlining.html) property of the [GridGroupingExcelConverterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl_members.html) can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export group with outline.
+ExcelConverter.AllowGroupOutlining = true;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export group with outline.
+ExcelConverter.AllowGroupOutlining = True
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+![](Exporting_images/Advanced_Excel_Exporting_img14.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img15.jpeg)
+
+### Export nested table with outlines
+In order to export nested table with outline, the [AllowNestedTableOutling](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~AllowNestedTableOutling.html) property of the `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export nested table with outline.
+ExcelConverter.AllowNestedTableOutling = true;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export nested table with outline.
+ExcelConverter.AllowNestedTableOutling = True
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img16.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img17.jpeg)
+
+### Export the grid row height and column width
+In order to export the grid’s row height and column width, [CanExportColumnWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~CanExportColumnWidth.html) and [CanExportRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~CanExportRowHeight.html) properties of the `GridGroupingExcelConverterControl` can be set to `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export the grid's row height and column width.
+ExcelConverter.CanExportColumnWidth = true;
+ExcelConverter.CanExportRowHeight = true;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export the grid's row height and column width.
+ExcelConverter.CanExportColumnWidth = True
+ExcelConverter.CanExportRowHeight = True
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+### Setting default row height and column width while exporting
+The default row height and column width can be set for the exported Excel for columns and rows by using the [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~DefaultColumnWidth.html) and [DefaultRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~DefaultRowHeight.html) property of the `GridGroupingExcelConverterControl`.
+This is only applicable when the `CanExportColumnWidth` and `CanExportRowHeight` properties are disabled.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export the grid's row height and column width.
+ExcelConverter.CanExportColumnWidth = true;
+ExcelConverter.CanExportRowHeight = true;
+//Set the row height and column width in Excel sheet.
+ExcelConverter.DefaultRowHeight = 40;
+ExcelConverter.DefaultColumnWidth = 40;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export the grid's row height and column width.
+ExcelConverter.CanExportColumnWidth = True
+ExcelConverter.CanExportRowHeight = True
+'Set the row height and column width in Excel sheet.
+ExcelConverter.DefaultRowHeight = 40
+ExcelConverter.DefaultColumnWidth = 40
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+### Excel version
+In order to specify the version of exported Excel file, the [ExcelVersion](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~ExcelVersion.html) property of `GridGroupingExcelConverterControl` can be used.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export the Grid to Excel 2007 version.
+ExcelConverter.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export the Grid to Excel 2007 version.
+ExcelConverter.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+### Export borders
+In order to export the borders of the grid cell to Excel sheet, the [ExportBorders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase~ExportBorders.html) property of `GridGroupingExcelConverterControl` can be used. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//export the borders of grid cell to Excel.
+ExcelConverter.ExportBorders = true;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'export the borders of grid cell to Excel.
+ExcelConverter.ExportBorders = True
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img18.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img19.jpeg)
+
+### Export nested table caption
+In order to export the grid with nested table caption, the [ExportNestedTableCaption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~ExportNestedTableCaption.html) property of `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export Nested table caption to Excel.
+ExcelConverter.ExportNestedTableCaption = true;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export Nested table caption to Excel.
+ExcelConverter.ExportNestedTableCaption = True
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img20.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img21.jpeg)
+
+### Export grid with style 
+In order to export the grid with style, the [ExportStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase~ExportStyle.html) property of `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export the Grid with style.
+ExcelConverter.ExportStyle = true;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export the Grid with style.
+ExcelConverter.ExportStyle = True
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+
+![](Exporting_images/Advanced_Excel_Exporting_img22.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img23.jpeg)
+
+### Export gridlines
+In order to export the gridlines in Excel sheet, the [ShowGridLines](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~ShowGridLines.html) property of `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+//Export grid lines to Excel sheet.
+ExcelConverter.ShowGridLines = true;
+//Exporting Options
+ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+//Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
+{% endhighlight %}
+{% highlight vb %}
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+'Export grid lines to Excel sheet.
+ExcelConverter.ShowGridLines = True
+'Exporting Options
+Dim exportingOptions As New ExcelExportingOptions()
+'Export the contents of the grid to Excel.
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
+{% endhighlight %}
+{% endtabs %}
+![](Exporting_images/Advanced_Excel_Exporting_img24.jpeg)
+
+### Events
+The following events are supported in advanced Excel exporting,
+
+* QueryExportCellRange
+* QueryExportRowRange
+* QueryExportNestedTable
+
+N> These events should be subscribed before the exporting the grid to Excel.
+
+#### QueryExportCellRange
+This event will be triggered for every cell after the cell exported. By this event, you will get the Excel range for the cell so you can customize the cell while exporting by using [QueryExportCellRange](https://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportCellRangeEventHandler.html) event.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+ExcelConverter.QueryExportCellRange += ggec_QueryExportCellRange;
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
+
+void ExcelConverter_QueryExportCellRange(object sender, Syncfusion.GroupingGridExcelConverter.QueryExportCellRangeEventArgs e)
 {
-    // Hide the empty elements being exported to Excel.
-    if (e.NestedTable.Records.Count == 0)
-        e.Cancel = true;
+   if (e.GridCell.CellIdentity.RowIndex % 2 == 0 && e.GridCell.CellIdentity.ColIndex % 2 == 0)
+   {
+       e.ExcelCell.CellStyle.Font.Color = Syncfusion.XlsIO.ExcelKnownColors.Blue;
+       e.ExcelCell.CellStyle.Color = Color.SandyBrown;
+        e.ExcelCell.CellStyle.Borders.Color = Syncfusion.XlsIO.ExcelKnownColors.Black;
+   }
 }
 {% endhighlight %}
 {% highlight vb %}
-Private gridExcelConverter As New GridGroupingExcelConverterControl()
-Private gridExcelConverter.QueryExportNestedTable += AddressOf gridExcelConverter_QueryExportNestedTable
-Private Sub gridExcelConverter_QueryExportNestedTable(ByVal sender As Object, ByVal e As ExportNestedTableEventArgs)
-    ' Hide the empty elements being exported to Excel.
-    If e.NestedTable.Records.Count = 0 Then
-        e.Cancel = True
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+AddHandler ExcelConverter.QueryExportCellRange, AddressOf ExcelConverter_QueryExportCellRange
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
+
+Private Sub ExcelConverter_QueryExportCellRange(ByVal sender As Object, ByVal e As Syncfusion.GroupingGridExcelConverter.QueryExportCellRangeEventArgs)
+    If e.GridCell.CellIdentity.RowIndex Mod 2 = 0 AndAlso e.GridCell.CellIdentity.ColIndex Mod 2 = 0 Then
+        e.ExcelCell.CellStyle.Font.Color = Syncfusion.XlsIO.ExcelKnownColors.Blue
+        e.ExcelCell.CellStyle.Color = Color.SandyBrown
+        e.ExcelCell.CellStyle.Borders.Color = Syncfusion.XlsIO.ExcelKnownColors.Black
     End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Exporting Caption and Outlines 
-By default, the structure of the grid will be exported as it is to the Excel sheet i.e. nested table outlining, nested table’s caption row, and so on. To stop the exporting of the Nested table’s caption and its outlining, disable the [ExportNestedTableCaption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~ExportNestedTableCaption.html) property.
+![](Exporting_images/Advanced_Excel_Exporting_img25.jpeg)
+
+![](Exporting_images/Advanced_Excel_Exporting_img26.jpeg)
+
+#### QueryExportRowRange
+This event will be triggered before exporting a row. If you want to avoid specific row while exporting, you can achieve this by handling the [QueryExportRowRange](https://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportRowRangeEventHandler.html) event.
 
 {% tabs %}
 {% highlight c# %}
-GridGroupingExcelConverterControl excelConverter = new GridGroupingExcelConverterControl();
-// Export the Grid without Caption and Outlines of nested tables
-excelConverter.ExportNestedTableCaption = false;
-ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
-excelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+ExcelConverter.QueryExportRowRange += ExcelConverter_QueryExportRowRange;
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
+
+void ExcelConverter_QueryExportRowRange(object sender, Syncfusion.GroupingGridExcelConverter.QueryExportRowRangeEventArgs e)
+{
+    if (e.Element.Kind == Syncfusion.Grouping.DisplayElementKind.Record 
+        && this.gridGroupingControl2.Table.Records.IndexOf(e.Element.GetRecord()) % 3 == 0)
+        e.Cancel = true;
+}
+
 {% endhighlight %}
 {% highlight vb %}
-Dim excelConverter As New GridGroupingExcelConverterControl()
-' Export the Grid without Caption and Outlines of nested tables
-excelConverter.ExportNestedTableCaption = False
-Dim exportingOptions As New ExcelExportingOptions()
-excelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
+Private ExcelConverter As New GridGroupingExcelConverterControl()
+AddHandler ExcelConverter.QueryExportRowRange, AddressOf ExcelConverter_QueryExportRowRange
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
+
+Private Sub ExcelConverter_QueryExportRowRange(sender As Object, e As Syncfusion.GroupingGridExcelConverter.QueryExportRowRangeEventArgs)	
+       If e.Element.Kind Is Syncfusion.Grouping.DisplayElementKind.Record AndAlso        Me.gridGroupingControl2.Table.Records.IndexOf(e.Element.GetRecord()) Mod 3 = 0 Then
+            e.Cancel = True
+       End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
-The grid without the caption and outlines is shown below![](Exporting_images/Exporting_img11.png)
+![](Exporting_images/Advanced_Excel_Exporting_img27.jpeg)
 
+![](Exporting_images/Advanced_Excel_Exporting_img28.jpeg)
+
+#### QueryExportNestedTable
+This event will be triggered before exporting a nested table. By this event, you can get the `ExportingOptions`, `NestedTable` and `ParentRecord`.
+If you want to hide the empty child table, you can use the [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property the [QueryExportNestedTable](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~QueryExportNestedTable_EV.html) event of `GridGroupingExcelConverterControl` by checking the **Records** count.
+
+{% tabs %}
+{% highlight c# %}
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+ExcelConverter.QueryExportNestedTable += ExcelConverter_QueryExportNestedTable;
+ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
+
+void ExcelConverter_QueryExportNestedTable(object sender, Syncfusion.GroupingGridExcelConverter.ExportNestedTableEventArgs e)
+{
+    // Hide the empty elements being exported to Excel. 
+    if (e.NestedTable.Records.Count == 0)
+        e.Cancel = true;
+}
+{% endhighlight %}
+{% endtabs %}
+{% tabs %}
+{% highlight vb %}
+Private ExcelConverter As New GridGroupingExcelConverterControl()
+AddHandler ExcelConverter.QueryExportNestedTable, AddressOf ExcelConverter_QueryExportNestedTable
+ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
+
+Private Sub ExcelConverter_QueryExportNestedTable(Object sender, Syncfusion.GroupingGridExcelConverter.ExportNestedTableEventArgs e)
+    ' Hide the empty elements being exported to Excel. 
+    If e.NestedTable.Records.Count = 0 Then
+       e.Cancel = True
+    End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
 
 ### Efficient Exporting
-By default, the grid will be exported all the elements when the [ExportStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase~ExportStyle.html) is enabled. Since the style has to be taken from [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo_events.html) store it leads to some amount of memory consumption while exporting large amount of records with styling. 
-
-To resolve this kind of issue, use the [EnableOptimization](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~EnableOptimization.html) property.  The basic idea behind in this is, the cell value will be taken from[Table.Records](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridChildTable~Records.html) instead of taking it from the `GridStyleInfo`. Therefore the performance of exporting is improve much more than exporting with styling.
+By default, the grid will be exported with all the elements when the [ExportStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase~ExportStyle.html) is enabled. Since the style has to be taken from [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo_events.html) store for each and every cell, it leads to some amount of memory consumption while exporting large amount of records with styling.
+To resolve this kind of issue, use the [EnableOptimization](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~EnableOptimization.html) property. The basic idea behind in this is, the cell value will be taken from[Table.Records](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridChildTable~Records.html) instead of taking it from the `GridStyleInfo`. Therefore, the performance of exporting has improved much more than exporting with styling.
+The column formats which are all set using the `Column.Appearance.AnyRecordFieldCell.Format` property will be applied to columns.
 
 {% tabs %}
 {% highlight c# %}
-GridGroupingExcelConverterControl excelConverter = new GridGroupingExcelConverterControl();      
-// Exporing the data without creating style object 
-excelConverter.EnableOptimization = true;
-excelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
+GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+// Exporing the data without creating style object ExcelConverter.EnableOptimization = true; ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
-Dim excelConverter As New GridGroupingExcelConverterControl()
-' Exporing the data without creating style object 
-excelConverter.EnableOptimization = True
-excelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
+Dim ExcelConverter As New GridGroupingExcelConverterControl()
+' Exporing the data without creating style object ExcelConverter.EnableOptimization = true; ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
 {% endhighlight %}
 {% endtabs %}
 
-### Limitations in Efficient Exporting 
-
-* As styles are not created for each and every cell, the values which are set using [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~QueryCellStyleInfo_EV.html) or [PrepareViewStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrepareViewStyleInfo_EV.html) event will not be exported to Excel sheet. The value which are all available in Records collection can be exported to Excel sheet if `EnableOptimization` property is enabled.
-* Since styles are not available for `EnableOptimization` exporting, the [GridCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.QueryExportCellRangeEventArgs~GridCell.html) property or grid cell style will be `null` when you are using [QueryExportCellRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~QueryExportCellRange_EV.html) event and only Excel range will be available for customization.
+#### Limitations
+* As styles are not created for each and every cell, the values which are set using [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~QueryCellStyleInfo_EV.html) or [PrepareViewStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrepareViewStyleInfo_EV.html) event will not be exported to Excel sheet. The value which are all available in Records collection can be exported to Excel sheet if `EnableOptimization` property is enabled.
+* Since styles are not available for `EnableOptimization` exporting, the [GridCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.QueryExportCellRangeEventArgs~GridCell.html) property or grid cell style will be `null` when you are using [QueryExportCellRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~QueryExportCellRange_EV.html) event and only Excel range will be available for customization.
 
 N> For more information refer to the below dashboard sample,
 &lt;Installation_Location&gt;\Syncfusion\EssentialStudio\&lt;Product_Version&gt;\Windows\Grid.Grouping.Windows\Samples\Exporting\Excel Exporting Demo\
