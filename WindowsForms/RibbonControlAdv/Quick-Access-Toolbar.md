@@ -43,7 +43,7 @@ The following code snippet allows us to add ToolStripButton to Quick Access Tool
 
 {% highlight c# %}
 
-// Declare and initialize the toolstripbutton.
+// Declare and initialize the ToolStripButton.
 
 private System.Windows.Forms.ToolStripButton toolStripButton1;
 
@@ -55,7 +55,7 @@ this.toolStripButton1.Text = "File";
 
 this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 
-// Add the toolstripbutton in the header of the RibbonControlAdv.
+// Add the ToolStripButton in the header of the RibbonControlAdv.
 
 this.ribbonControlAdv1.Header.AddQuickItem(this.toolStripButton1);
 
@@ -63,7 +63,7 @@ this.ribbonControlAdv1.Header.AddQuickItem(this.toolStripButton1);
 
 {% highlight vb %}
 
-' Declare and initialize the toolstripbutton.
+' Declare and initialize the ToolStripButton.
 
 Private toolStripButton1 As System.Windows.Forms.ToolStripButton
 
@@ -79,7 +79,7 @@ Me.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyl
 
 
 
-' Add the toolstripbutton in the header of the RibbonControlAdv.
+' Add the ToolStripButton in the header of the RibbonControlAdv.
 
 Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 
@@ -190,7 +190,7 @@ Labels for Customize the Ribbon dialog box:
                     return "Customize Ribbon Dialog Cancel Button Text";
 
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonOk:
-                    return "Customize Ribbon Dialog Ok Button Text";
+                    return "Customize Ribbon Dialog OK Button Text";
 
                 case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonReset:
                     return "Customize Ribbon Dialog Reset Button Text";               
@@ -229,7 +229,7 @@ Class localization Implements ILocalizationProvider
 				Return "Customize Ribbon Dialog Cancel Button Text"
 
 			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonOk
-				Return "Customize Ribbon Dialog Ok Button Text"
+				Return "Customize Ribbon Dialog OK Button Text"
 
 			Case ToolsResourceIdentifiers.CustomizeRibbonDialogButtonReset
 				Return "Customize Ribbon Dialog Reset Button Text"

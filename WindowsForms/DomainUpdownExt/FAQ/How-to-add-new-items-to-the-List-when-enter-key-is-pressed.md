@@ -14,7 +14,7 @@ To add the new items which are entered by the user at runtime after the user had
 
 {% highlight c# %}
 
-private voiddomainUpDownExt1_KeyDown(objectsender, System.Windows.Forms.KeyEventArgs e)
+private voiddomainUpDownExt1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
 
 {
 

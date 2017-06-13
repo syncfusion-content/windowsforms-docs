@@ -409,20 +409,20 @@ pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape
 
 ## Exporting PDF
 
-### Exporting PDFs as Raster Images
+### Exporting pages of PDF document as Raster Images
 
 Essential PDF Viewer allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
 
 {%highlight c#%}
 
 
-Bitmap img = pdfViewer1.ExportAsImage(0);
+Bitmap image = pdfViewer1.ExportAsImage(0);
 
 
 
 // Save the image.
 
-img.Save("Sample.png", ImageFormat.Png);
+image.Save("Sample.png", ImageFormat.Png);
 
 {%endhighlight%}
 
@@ -431,13 +431,13 @@ img.Save("Sample.png", ImageFormat.Png);
 
 
 
-Dim img As Bitmap = pdfViewer1.ExportAsImage(0)
+Dim image As Bitmap = pdfViewer1.ExportAsImage(0)
 
 
 
 'Save the image.
 
-img.Save("Sample.png", ImageFormat.Png)
+image.Save("Sample.png", ImageFormat.Png)
 
 {%endhighlight%}
 
@@ -447,7 +447,7 @@ You can also specify the page range instead of converting each page.
 {%highlight c#%}
 
 
-Bitmap[] img = pdfViewer1.ExportAsImage(0, 3);
+Bitmap[] image = pdfViewer1.ExportAsImage(0, 3);
 
 {%endhighlight%}
 
@@ -456,11 +456,11 @@ Bitmap[] img = pdfViewer1.ExportAsImage(0, 3);
 
 
 
-Dim img() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
+Dim image() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
 
-Exporting PDFs as Vector Images
+Exporting pages of PDF document as Vector Images
 
-Exporting PDFs as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a metafile.
+Exporting pages of PDF document as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
 
 {%endhighlight%}
 
@@ -469,13 +469,13 @@ Exporting PDFs as vector images can be done using the ExportAsMetafile method. T
 
 
 
-Metafile img = pdfViewer1.ExportAsMetafile(0);
+Metafile image = pdfViewer1.ExportAsMetafile(0);
 
 
 
 // Save the image
 
-img.Save("Sample.emf", ImageFormat.Emf);
+image.Save("Sample.emf", ImageFormat.Emf);
 
 {%endhighlight%}
 
@@ -484,13 +484,13 @@ img.Save("Sample.emf", ImageFormat.Emf);
 
 
 
-Dim img As Metafile = pdfViewer1.ExportAsMetafile(0)
+Dim image As Metafile = pdfViewer1.ExportAsMetafile(0)
 
 
 
 ' Save the image
 
-img.Save("Sample.emf", ImageFormat.Emf)
+image.Save("Sample.emf", ImageFormat.Emf)
 
 {%endhighlight%}
 
@@ -500,7 +500,7 @@ You can also specify the page range instead of converting each page individually
 
 
 
-Metafile[] img = pdfViewer1.ExportAsMetafile(0, 3);
+Metafile[] image = pdfViewer1.ExportAsMetafile(0, 3);
 
 {%endhighlight%}
 
@@ -508,7 +508,7 @@ Metafile[] img = pdfViewer1.ExportAsMetafile(0, 3);
 
 
 
-Dim img() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
+Dim image() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
 {%endhighlight%}
 

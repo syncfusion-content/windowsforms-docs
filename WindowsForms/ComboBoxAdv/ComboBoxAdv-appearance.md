@@ -42,7 +42,7 @@ Specifies the color with which flat border should be drawn. FlatStyle must be se
 
 {% highlight c# %}
 
-//Border appearance ssettings
+//Border appearance settings
 
 this.comboBoxAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
 

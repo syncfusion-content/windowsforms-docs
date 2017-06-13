@@ -55,7 +55,7 @@ this.ColorScheme = ColorSchemeType.Blue;
 
 
 
-//To disable the Aerotheme
+//To disable the Aero theme
 
 this.EnableAeroTheme = false;
 
@@ -77,7 +77,7 @@ Me.Appearance = AppearanceType.Office2007
 Me.ColorScheme = ColorSchemeType.Blue
 
 
-'To disable the Aerotheme
+'To disable the Aero theme
 Me.EnableAeroTheme = false
 
 

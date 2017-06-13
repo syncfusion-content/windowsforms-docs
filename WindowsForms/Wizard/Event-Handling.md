@@ -185,7 +185,7 @@ if(this.textBox1.Text == String.Empty)
 
 {
 
-MessageBox.Show("Text cannot be empty.","Datas Needed",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+MessageBox.Show("Text cannot be empty.","Data Needed",MessageBoxButtons.OK,MessageBoxIcon.Warning);
 
 e.Cancel = true;
 
@@ -223,7 +223,7 @@ Private Sub wizardControlPage2_ValidatePage(ByVal sender As Object, ByVal e As S
 
 If Me.textBox1.Text = String.Empty Then
 
-MessageBox.Show("Text cannot be empty.","Datas Needed",MessageBoxButtons.OK,MessageBoxIcon.Warning)
+MessageBox.Show("Text cannot be empty.","Data Needed",MessageBoxButtons.OK,MessageBoxIcon.Warning)
 
 e.Cancel = True
 

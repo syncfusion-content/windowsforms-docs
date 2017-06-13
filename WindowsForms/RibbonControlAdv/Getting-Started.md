@@ -317,7 +317,7 @@ A sample code snippet which adds a ToolStripButton named "File" to the QuickAcce
 
 {% highlight c# %}
 
-// Declare and initialize the toolstripbutton.
+// Declare and initialize the ToolStripButton.
 
 private System.Windows.Forms.ToolStripButton toolStripButton1;
 
@@ -329,7 +329,7 @@ this.toolStripButton1.Text = "File";
 
 this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 
-// Add the toolstripbutton in the header of the RibbonControlAdv.
+// Add the ToolStripButton in the header of the RibbonControlAdv.
 
 this.ribbonControlAdv1.Header.AddQuickItem(this.toolStripButton1);
 
@@ -337,7 +337,7 @@ this.ribbonControlAdv1.Header.AddQuickItem(this.toolStripButton1);
 
 {% highlight vb %}
 
-' Declare and initialize the toolstripbutton.
+' Declare and initialize the ToolStripButton.
 
 Private toolStripButton1 As System.Windows.Forms.ToolStripButton
 
@@ -353,7 +353,7 @@ Me.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyl
 
 
 
-' Add the toolstripbutton in the header of the RibbonControlAdv.
+' Add the ToolStripButton in the header of the RibbonControlAdv.
 
 Me.ribbonControlAdv1.Header.AddQuickItem (Me.toolStripButton1)
 

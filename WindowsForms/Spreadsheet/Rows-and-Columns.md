@@ -32,6 +32,35 @@ Spreadsheet provides support for dynamically inserting rows and columns into a w
 {% endhighlight %}
 {% endtabs %}
 
+###Events
+
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are trigerred while inserting the rows and columns. 
+
+* [RowsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
+* [ColumnsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsInserted_EV.html)
+
+{% tabs %}
+{% highlight c# %}
+
+//To notify when rows are inserted
+
+ spreadsheet.ActiveGrid.Model.RowsInserted += Model_RowsInserted;
+
+ void Model_RowsInserted(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
+
+//To notify when Columns are inserted
+
+ spreadsheet.ActiveGrid.Model.ColumnsInserted += Model_ColumnsInserted;
+
+ void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Delete Rows and Columns
 
 Spreadsheet provides support for deleting rows and columns from a worksheet,
@@ -50,6 +79,35 @@ Spreadsheet provides support for deleting rows and columns from a worksheet,
  spreadsheet.ActiveSheet.DeleteColumn(3, 2);
 
  spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
+
+{% endhighlight %}
+{% endtabs %}
+
+###Events
+
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are trigerred while deleting the rows and columns. 
+
+* [RowsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~RowsRemoved_EV.html)
+* [ColumnsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsRemoved_EV.html)
+
+{% tabs %}
+{% highlight c# %}
+
+//To notify when rows are deleted
+
+ spreadsheet.ActiveGrid.Model.RowsRemoved += Model_RowsRemoved;
+
+ void Model_RowsRemoved(object sender, GridRangeRemovedEventArgs e)
+ {
+ }
+
+//To notify when columns are deleted
+
+ spreadsheet.ActiveGrid.Model.ColumnsRemoved += Model_ColumnsRemoved;
+
+ void Model_ColumnsRemoved(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
 
 {% endhighlight %}
 {% endtabs %}
