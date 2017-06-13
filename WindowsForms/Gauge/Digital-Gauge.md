@@ -37,7 +37,9 @@ This section illustrates the features of the digital gauge with different visual
 ### Visual Styles
 
 
-Different visual styles can be applied using the VisualStyle property. The Digital Gauge control features five visual styles:
+The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
+
+The styles are built in for all of the gauges.
 
 * Black
 * Silver
@@ -63,7 +65,13 @@ Gets or sets the frame type.</td></tr>
 </table>
 
 
+**Black**
+
+This option helps to set the Black theme. 
+
 ##### Code Sample
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -83,62 +91,85 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 
 
+**Blue**
 
+This option helps to set the Blue theme.
 
 ##### Code Sample
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Digital-Gauge_images/Digital-Gauge_img2.png)
 
 
+**Silver**
+
+This option helps to set the Silver theme.
 
 ##### Code Sample
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Digital-Gauge_images/Digital-Gauge_img3.png)
 
 
+**Metro**
 
-#####  Code Sample
+This option helps to set the Metro theme.
 
-{% highlight c# %}
+##### Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
 
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Digital-Gauge_images/Digital-Gauge_img4.png)
 
-#####  Code Sample
+**Office2016White**
+
+This option helps to set the Office2016White theme. 
+
+##### Code Sample
 
 {% tabs %}
 
@@ -164,7 +195,11 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
  ![](Digital-Gauge_images/Digital-Gauge_img13.png)
 
 
-#####  Code Sample
+**Office2016Colorful**
+
+This option helps to set the Office2016Colorful theme. 
+
+##### Code Sample
 
 {% tabs %}
 
@@ -188,7 +223,11 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
  ![](Digital-Gauge_images/Digital-Gauge_img16.png)
 
-#####  Code Sample
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray theme. 
+
+##### Code Sample
 
 {% tabs %}
 
@@ -212,7 +251,11 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 ![](Digital-Gauge_images/Digital-Gauge_img14.png)
 
-#####  Code Sample
+**Office2016Black**
+
+This option helps to set the office2016Black theme. 
+
+##### Code Sample
 
 {% tabs %}
 
@@ -231,6 +274,7 @@ this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Offic
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black
 
 {% endhighlight VB %}
+
 {% endtabs %}
 
 ![](Digital-Gauge_images/Digital-Gauge_img15.png)
