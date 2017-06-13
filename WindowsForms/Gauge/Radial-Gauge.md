@@ -633,7 +633,7 @@ Me.radialGauge1.MinorDifference = 1
 
 The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
 
-The styles are built in for all of the gauges. Using SkinManager, these four styles can be assigned to the gauge. The following skins are available:
+The styles are built in for all of the gauges.
 
 * Blue
 * Black
@@ -645,19 +645,34 @@ The styles are built in for all of the gauges. Using SkinManager, these four sty
 * Office2016Black
 * Custom
 
+<table>
+<tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+VisualStyle</td><td>
+Enum</td><td>
+Gets or sets the frame type.</td></tr>
+</table>
 
+**Black**
 
-{% highlight c# %}
+This option helps to set the Black theme.
 
+#####  Code Sample
 
+{% tabs %}
+
+{% highlight C# %}
 
 this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Me.radialGauge1.VisualStyle = 
 
@@ -665,30 +680,96 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 {% endhighlight %}
 
-![](Radial-Gauge_images/Radial-Gauge_img13.png)
-
-
-
-
+{% endtabs %}
 
 ![](Radial-Gauge_images/Radial-Gauge_img14.png)
 
+**Blue**
+
+This option helps to set the Blue theme.
+
+#####  Code Sample
 
 
+{% tabs %}
 
+{% highlight C# %}
+
+this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.VisualStyle = 
+
+Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Radial-Gauge_images/Radial-Gauge_img13.png)
+
+
+**Silver**
+
+This option helps to set the Silver theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.VisualStyle = 
+
+Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Radial-Gauge_images/Radial-Gauge_img15.png)
 
+**Metro**
 
+This option helps to set the Metro theme.
+#####  Code Sample
 
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.VisualStyle = 
+
+Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](Radial-Gauge_images/Radial-Gauge_img16.png)
 
 
-
+**Office2016White**
 
 #####  Code Sample
+
+This option helps to set the Office2016White theme.
 
 {% tabs %}
 
@@ -712,6 +793,11 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 
  ![](Radial-Gauge_images/Radial-Gauge_img18.jpeg)
+
+
+**Office2016Colorful**
+
+This option helps to set the Office2016Colorful theme.
 
 #####  Code Sample
 
@@ -737,6 +823,10 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
   ![](Radial-Gauge_images/Radial-Gauge_img19.jpeg)
 
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray theme.
+
 #####  Code Sample
 
 {% tabs %}
@@ -760,6 +850,11 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 {% endtabs %}
 
 ![](Radial-Gauge_images/Radial-Gauge_img20.jpg)
+
+
+**Office2016Black**
+
+This option helps to set the Office2016Black theme.
 
 #####  Code Sample
 
