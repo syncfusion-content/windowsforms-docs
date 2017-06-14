@@ -73,22 +73,21 @@ This option helps to set the Black theme.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black;
 
-
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 {% endhighlight %}
 
-![](Digital-Gauge_images/Digital-Gauge_img1.png)
+{% endtabs %}
 
+![](Digital-Gauge_images/Digital-Gauge_img1.png)
 
 
 **Blue**
@@ -217,7 +216,7 @@ this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Offic
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Colorful
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -239,7 +238,7 @@ this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Offic
 
 {% endhighlight %}
 
-{% highlight VB%}
+{% highlight VB %}
 
 'Office2016DarkGray
 
@@ -267,7 +266,7 @@ this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Offic
 
 {% endhighlight %}
 
-{% highlight VB%}
+{% highlight VB %}
 
 'Office2016Black
 
