@@ -15,8 +15,8 @@ is integrated with Essential XlsIO, to calculate formulas entered at runtime wit
 
 ## Open a Workbook using XlsIO
 
-To open a workbook using XIsIO, instantiate the `ExcelEngine` to initialize the application object for creating or manipulating Excel documents. To open an existing workbook,
-use the `Open` methods of `IWorkbook` interface.
+To open a workbook using XIsIO, instantiate the [ExcelEngine](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelEngine.html) to initialize the application object for creating or manipulating Excel documents. To open an existing workbook,
+use the [Open](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbooks~Open.html) methods of [IWorkbook](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html) interface.
 
 {% tabs %}
 {% highlight c# %}
@@ -34,10 +34,10 @@ IWorkbook workbook = excelEngine.Excel.Workbooks.Open(@"..\..\Data\Sample.xlsx")
 
 ## Enable and Disable Calculations in XlsIO
 
-To perform calculation in an Excel workbook, it is recommended to invoke `EnableSheetCalculations` method of `IWorksheet`. Enabling this method will initialize
-`CalcEngine` objects and retrieves calculated values of formulas in a worksheet.
+To perform calculation in an Excel workbook, it is recommended to invoke [EnableSheetCalculations](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~EnableSheetCalculations.html) method of [IWorksheet](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet.html). Enabling this method will initialize
+[CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~CalcEngine.html) objects and retrieves calculated values of formulas in a worksheet.
 
-On completion of worksheet calculation, it is also recommended to invoke `DisableSheetCalculations` method of `IWorksheet`. 
+On completion of worksheet calculation, it is also recommended to invoke [DisableSheetCalculations](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~DisableSheetCalculations.html) method of `IWorksheet`. 
 This will dispose all the `CalcEngine` objects.
 
 {% tabs %}
@@ -47,7 +47,7 @@ This will dispose all the `CalcEngine` objects.
 
 ExcelEngine excelEngine = new ExcelEngine();
 
-//Loads or open an existing workbook through Open method of IWorkbook,
+//Loads or open an existing workbook through Open method of IWorkbook, 
 
 IWorkbook workbook = excelEngine.Excel.Workbooks.Open(@"..\..\Data\Sample.xlsx");
 
@@ -80,10 +80,10 @@ sheet.DisableSheetCalculations();
 ## Set and Compute the values at runtime in the Worksheet
 
 At runtime, user can set the values in the particular `IWorksheet` by indexing the worksheet with the sheet name or id
-and then use the appropriate row and column indexes. Invoking `UpdateCalcID` and `PullUpdatedValue` method of `CalcEngine` 
+and then use the appropriate row and column indexes. Invoking [UpdateCalcID](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~UpdateCalcID.html) and [PullUpdatedValue](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~PullUpdatedValue.html) method of `CalcEngine` 
 guarantees the current/updated values in the workbook.
 
-`CalculatingSuspended` method of `CalcEngine`  is to suspend calculations while a series of changes are made to dependent cells 
+[CalculatingSuspended](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~CalculatingSuspended.html) method of `CalcEngine`  is to suspend calculations while a series of changes are made to dependent cells 
 either by the user or programmatically. When the changes are complete, set this property to False.
 
 {% tabs %}
@@ -128,7 +128,7 @@ sheet.CalcEngine.CalculatingSuspended = false;
 
 ## To compute particular cell in the worksheet
 
-To compute particular cell in the worksheet, use `ParseAndComputeFormula` method of `CalcEngine`. For more details regarding 
+To compute particular cell in the worksheet, use [ParseAndComputeFormula](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~ParseAndComputeFormula.html) method of `CalcEngine`. For more details regarding 
 `ParseAndComputeFormula` method, refer [here](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#parseandcomputeformula).
 
 {% tabs %}
