@@ -354,7 +354,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 
 **Output:**
 
-![](Digital-Gauge_images/Digital-Gauge_img20.png)
+![](Digital-Gauge_images/Digital-Gauge_img21.png)
 
 
 
