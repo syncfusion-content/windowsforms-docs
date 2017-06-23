@@ -741,6 +741,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver
 **Metro**
 
 This option helps to set the Metro theme.
+
 #####  Code Sample
 
 {% tabs %}
