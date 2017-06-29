@@ -73,7 +73,7 @@ series.Points.Add(1,300)
 
 N> Same ChartSeries object being added to more than one chart is not supported. It binds the series to the default primary axis always.
 
-### Chart Points
+## Chart Points
 
 The ChartPoint class holds value information about a single point in a series (x and y values). The following table describes the kind of x and y values you can specify via a chart point.
 
@@ -143,7 +143,7 @@ series1.Points.Add(DateTime.Now, 5.3)
 {% endhighlight %}
 {% endtabs %}
 
-### ValueType
+## ValueType
 
 Always use the ChartAxis.ValueType property to specify what kind of values you have added in the series data points for the corresponding axis.
 
@@ -179,6 +179,145 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Double
 N> To display the text right next to the data points, the DisplayText property of the data point's style should be set.
 
 The Chart Series features are elaborated in more detail in the following sub-topics.
+
+## Sorting
+
+Chart has built-in support to sort the data points either in ascending or descending order. By default, chart renders the sorted data points. Sorting feature can be enabled or disabled using the property **SortPoints** of. **ChartSeries**.
+
+Here is a simple code to sort the data points in ascending order.
+
+{% tabs %}  {% highlight c# %}
+
+// Create chart series and add data points into it.
+ChartSeries series1 = new ChartSeries("Market");
+
+series1.Points.Add(1, 20);
+series1.Points.Add(3, 28);
+series1.Points.Add(5, 38);
+series1.Points.Add(2, 18);
+series1.Points.Add(6, 58);
+series1.Points.Add(9, 28);
+series1.Points.Add(4, 48);
+
+//Enable sorting. Sorting is enabled by default
+series1.SortPoints = true;
+            
+series1.Type = ChartSeriesType.Line;
+
+// Add the series to the chart series collection.
+this.chartControl1.Series.Add(series1);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+' Create chart series and add data points into it.
+Dim series1 As New ChartSeries("Market")
+
+series1.Points.Add(1, 20)
+series1.Points.Add(3, 28)
+series1.Points.Add(5, 38)
+series1.Points.Add(2, 18)
+series1.Points.Add(6, 58)
+series1.Points.Add(9, 28)
+series1.Points.Add(4, 48)
+
+'Enable sorting. Sorting is enabled by default
+series1.SortPoints = True
+
+series1.Type = ChartSeriesType.Line
+
+' Add the series to the chart series collection.
+Me.chartControl1.Series.Add(series1)
+
+{% endhighlight %}
+{% endtabs %}
+
+Following screenshot displays chart without sorting
+![Data points in random order](Chart-Series_images/Chart-Series_img171.png)
+
+Following screenshot displays chart with sorted data points
+![Data points after sorting](Chart-Series_images/Chart-Series_img172.png)
+
+### Sorting In Categorical Axis
+
+In categorical axis, data points can be sorted based on their x-value (value along x-axis) or y-value (value along y-axis) in either ascending or descending order. 
+
+Sorting order (ascending or descending) can be specified using the **SortOrder** property in **ChartSeries**. The **SortBy** property of **ChartSeries** can be used to specify whether sorting should work on x or y values of data point.
+
+Here is a simple code to sort the data points in categorical axis
+
+{% tabs %}  {% highlight c# %}
+
+//Set axis type as Category
+this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category;
+
+series1.Points.Add("A1", 20);
+series1.Points.Add("D1", 28);
+series1.Points.Add("C1", 38);
+series1.Points.Add("B1", 18);
+series1.Points.Add("G1", 58);
+series1.Points.Add("E1", 28);
+series1.Points.Add("F1", 48);
+//Enable sorting. Sorting is enabled by default
+series1.SortPoints = true;
+
+//Specify the order of sorting
+series1.SortOrder = ChartSeriesSortingOrder.Ascending;
+
+//Specify the value to consider
+series1.SortBy = ChartSeriesSortingType.X;
+            
+series1.Type = ChartSeriesType.Line;
+
+// Add the series to the chart series collection.
+this.chartControl1.Series.Add(series1);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Set axis type as Category
+Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
+
+series1.Points.Add("A1", 20)
+series1.Points.Add("D1", 28)
+series1.Points.Add("C1", 38)
+series1.Points.Add("B1", 18)
+series1.Points.Add("G1", 58)
+series1.Points.Add("E1", 28)
+series1.Points.Add("F1", 48)
+'Enable sorting. Sorting is enabled by default
+series1.SortPoints = True
+
+'Specify the order of sorting
+series1.SortOrder = ChartSeriesSortingOrder.Ascending
+
+'Specify the value to consider
+series1.SortBy = ChartSeriesSortingType.X
+
+series1.Type = ChartSeriesType.Line
+
+' Add the series to the chart series collection.
+Me.chartControl1.Series.Add(series1)
+
+{% endhighlight %}
+{% endtabs %}
+
+Data points in chart before sorting
+![](Chart-Series_images/Chart-Series_img173.png)
+
+Data points sorted by x-values in ascending order
+![](Chart-Series_images/Chart-Series_img174.png)
+
+Data points sorted by X-values in descending order
+![](Chart-Series_images/Chart-Series_img175.png)
+
+Data points sorted by y-values in ascending order
+![](Chart-Series_images/Chart-Series_img176.png)
+
+Data points sorted by Y-values in descending order
+![](Chart-Series_images/Chart-Series_img177.png)
 
 ## Series Customization
 

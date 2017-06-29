@@ -19,6 +19,33 @@ The title for an axis is set through the Title property, and the TitleAlignment 
 
 Axes features are discussed under the following topics:
 
+## Categorical Axis
+
+Categorical axis displays text instead of number as labels i.e. labels are not linear in categorical axis. To use the categorical axis, you can set the **ValueType** property of the **PrimaryXAxis** to **Category**. Default value of **ValueType** property is **Double**.
+
+N> Categorical axis is supported only for x-axis
+
+You can set x-axis to display categorical values using the following code
+
+{% tabs %}  
+{% highlight c# %}
+
+//Set axis type as Category
+this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Set axis type as Category
+Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
+
+{% endhighlight %}
+{% endtabs %}
+
+Chart displaying categorical values in x-axis
+![](Chart-Axes_images/Chart-Axes_img39.png)
+
 ## Indexed X Values
 
 By default points in a series are plotted against their x and y values. However in some cases the x values are meaningless, they simply represent categories, and you do not want to plot the points against such x values. Such an x-axis that ignores the x-values and simply uses the positional value of a point in a series is said to be indexed.
