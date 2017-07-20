@@ -73,7 +73,7 @@ Programmatically, the table layout manager instance should be created with the r
 
 
 
-TableLayoutManagermt lLayout=new TableLayoutManager(this.diagram1.Model, 7, 7);
+TableLayoutManager lLayout=new TableLayoutManager(this.diagram1.Model, 7, 7);
 
 tlLayout.VerticalSpacing = 20;
 
@@ -109,7 +109,7 @@ documentExplorer1.ShowNodeToolTips = true;
 
 
 
-Dim lLayout As TableLayoutManagermt = New TableLayoutManager(Me.diagram1.Model, 7, 7)
+Dim lLayout As TableLayoutManager = New TableLayoutManager(Me.diagram1.Model, 7, 7)
 
 tlLayout.VerticalSpacing = 20
 

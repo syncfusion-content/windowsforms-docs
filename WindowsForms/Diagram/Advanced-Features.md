@@ -245,9 +245,9 @@ The central port for a diagram node can be enabled by using the following code s
 
 
 
-Ellipse ellips = new Ellipse(100, 100, 200, 100);
+Ellipse ellipse = new Ellipse(100, 100, 200, 100);
 
-ellips.EnableCentralPort = true;
+ellipse.EnableCentralPort = true;
 
 {% endhighlight %}
 
@@ -255,9 +255,9 @@ ellips.EnableCentralPort = true;
 
 
 
-Dim ellips As New Ellipse(100, 100, 200, 100)
+Dim ellipse As New Ellipse(100, 100, 200, 100)
 
-ellips.EnableCentralPort = True
+ellipse.EnableCentralPort = True
 
 {% endhighlight %}
 
@@ -5165,21 +5165,21 @@ The following code shows how to add additional data to a node by using the Prope
 
 {% highlight c# %}
 
-node.PropertyBag.Add("Name", emply.EmployeeName);
+node.PropertyBag.Add("Name", employ.EmployeeName);
 
-node.PropertyBag.Add("ID", emply.EmployeeID);
+node.PropertyBag.Add("ID", employ.EmployeeID);
 
-node.PropertyBag.Add("Designation", emply.Designation);
+node.PropertyBag.Add("Designation", employ.Designation);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-node.PropertyBag.Add("Name", emply.EmployeeName)
+node.PropertyBag.Add("Name", employ.EmployeeName)
 
-node.PropertyBag.Add("ID", emply.EmployeeID)
+node.PropertyBag.Add("ID", employ.EmployeeID)
 
-node.PropertyBag.Add("Designation", emply.Designation)
+node.PropertyBag.Add("Designation", employ.Designation)
 
 {% endhighlight %}
 
