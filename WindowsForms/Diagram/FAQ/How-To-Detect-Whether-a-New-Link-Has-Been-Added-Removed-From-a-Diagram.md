@@ -29,17 +29,17 @@ private void diagram1_ConnectionsChangeComplete(object sender, Syncfusion.Window
 
     {
 
-        Connection newconnector = evtArgs.Connection;
+        Connection newConnector = evtArgs.Connection;
 
         Link newlink = null;
 
-        if (newconnector.SourcePort is LinkPort)
+        if (newConnector.SourcePort is LinkPort)
 
-            newlink = newconnector.SourcePort.Container as Link;
+            newlink = newConnector.SourcePort.Container as Link;
 
-        else if (newconnector.TargetPort is LinkPort)
+        else if (newConnector.TargetPort is LinkPort)
 
-            newlink = newconnector.TargetPort.Container as Link;
+            newlink = newConnector.TargetPort.Container as Link;
 
         if ((newlink != null) && (newlink.FromNode != null) && (newlink.ToNode != null))
 
@@ -87,19 +87,19 @@ Private Sub diagram1_ConnectionsChangeComplete(ByVal sender As Object, ByVal evt
 
     If evtArgs.ChangeType = Syncfusion.Windows.Forms.Diagram.CollectionExChangeType.Insert AndAlso Not (evtArgs.Connection Is Nothing) Then
 
-        Dim newconnector As Connection = evtArgs.Connection
+        Dim newConnector As Connection = evtArgs.Connection
 
         Dim newlink As Link = Nothing
 
-        If TypeOf newconnector.SourcePort Is LinkPort Then
+        If TypeOf newConnector.SourcePort Is LinkPort Then
 
-            newlink = newconnector.SourcePort.Container
+            newlink = newConnector.SourcePort.Container
 
         End If
 
-        If TypeOf newconnector.TargetPort Is LinkPort Then
+        If TypeOf newConnector.TargetPort Is LinkPort Then
 
-            newlink = newconnector.TargetPort.Container
+            newlink = newConnector.TargetPort.Container
 
         End If
 
