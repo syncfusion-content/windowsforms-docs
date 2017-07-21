@@ -41,7 +41,7 @@ The following steps help you configure Syncfusion NuGet Packages with a URL.
 1. **Syncfusion NuGet Manager** is allows you to **add** the Syncfusion NuGet sources (for available platforms) to NuGet Package Manager. Download the [Syncfusion NuGet Manager](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SyncfusionNugetManager-1610952973.zip) utility.
 2. Extract zip file and run the SyncfusionNuGetManager.exe
 3. Syncfusion NuGet Manager Window will be opened.
-4. Select the platform **WPF** (or required platform) from **“Select platforms to add”** (Left side of the window) column and click **Add>>** button. Then click **Configure** button.
+4. Select the platform **WindowsForms** from **“Select platforms to add”** (Left side of the window) column and click **Add>>** button. Then click **Configure** button.
 
    ![](Installation-And-Deployment_images/Syncfusion_NuGet_Manager_img1.jpg)
 
