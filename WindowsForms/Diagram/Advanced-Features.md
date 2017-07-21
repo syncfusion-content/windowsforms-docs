@@ -1462,7 +1462,7 @@ To map the user defined XML data with Diagram, you have to configure the fields 
 <?xml version="1.0" encoding="UTF-8"?>
 <dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="Employees.xsd" generated="2005-01-18T15:03:23">
   <Employees EmployeeID="113001">
-   <Name>Antwone Burnett</Name>
+   <Name>Antone Burnett</Name>
     <Designation>Chief Executive Officer</Designation>
   </Employees>  
   
