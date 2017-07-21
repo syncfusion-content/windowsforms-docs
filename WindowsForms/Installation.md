@@ -29,6 +29,30 @@ Syncfusion Windows Forms NuGet packages are available [here](http://nuget.syncfu
 
 ### NuGet Configuration  
 
+Syncfusion NuGet Package feed links are configured in Visual Studio in the following ways,
+
+1. Syncfusion NuGet Package Manager
+2. NuGet Package Manager settings
+
+#### Syncfusion NuGet Package Manager
+
+The following steps help you configure Syncfusion NuGet Packages with a URL.
+
+1. **Syncfusion NuGet Manager** is allows you to **add** the Syncfusion NuGet sources (for available platforms) to NuGet Package Manager. Download the [Syncfusion NuGet Manager](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SyncfusionNugetManager-1610952973.zip) utility.
+2. Extract zip file and run the SyncfusionNuGetManager.exe
+3. Syncfusion NuGet Manager Window will be opened.
+4. Select the platform **WPF** (or required platform) from **“Select platforms to add”** (Left side of the window) column and click **Add>>** button. Then click **Configure** button.
+
+   ![](Installation-And-Deployment_images/Syncfusion_NuGet_Manager_img1.jpg)
+
+5. Once Syncfusion NuGet Manager added the Syncfusion NuGet sources, the changes will be reflected in package sources of your Visual Studio. 
+
+   ![](Installation-And-Deployment_images/Syncfusion_NuGet_Manager_img2.jpg)
+
+**Note:** Get the more details about Syncfusion NuGet Manager utility from [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/syncfusion-nuget-manager).
+
+#### NuGet Package Manager settings
+
 The steps to install the Syncfusion Windows Forms NuGet Packages in Visual Studio are as follows,
 
 1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
