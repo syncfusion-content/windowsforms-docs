@@ -5165,21 +5165,21 @@ The following code shows how to add additional data to a node by using the Prope
 
 {% highlight c# %}
 
-node.PropertyBag.Add("Name", employ.EmployeeName);
+node.PropertyBag.Add("Name", employee.EmployeeName);
 
-node.PropertyBag.Add("ID", employ.EmployeeID);
+node.PropertyBag.Add("ID", employee.EmployeeID);
 
-node.PropertyBag.Add("Designation", employ.Designation);
+node.PropertyBag.Add("Designation", employee.Designation);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-node.PropertyBag.Add("Name", employ.EmployeeName)
+node.PropertyBag.Add("Name", employee.EmployeeName)
 
-node.PropertyBag.Add("ID", employ.EmployeeID)
+node.PropertyBag.Add("ID", employee.EmployeeID)
 
-node.PropertyBag.Add("Designation", employ.Designation)
+node.PropertyBag.Add("Designation", employee.Designation)
 
 {% endhighlight %}
 
