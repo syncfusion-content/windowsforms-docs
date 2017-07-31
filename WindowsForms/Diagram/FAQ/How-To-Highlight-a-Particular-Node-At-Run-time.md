@@ -15,7 +15,7 @@ A diagram node can be highlighted at run time using the mouse move actions. Usin
 
 {% highlight c# %}
 
-Node globelNode;
+Node globalNode;
 
 Polygon PolygonNode;
 
@@ -43,7 +43,7 @@ private void diagram1_MouseMove( object sender, MouseEventArgs e ) {
 
 
 
-            globelNode = node1;
+            globalNode = node1;
 
             PolygonNode = node1 as Polygon;
 
@@ -79,7 +79,7 @@ private void timer1_Tick( object sender, EventArgs e ) {
 
     // Convert node as polygon
 
-    Polygon poly = globelNode as Polygon;
+    Polygon poly = globalNode as Polygon;
 
     Random r = new Random( );
 
@@ -91,9 +91,9 @@ private void timer1_Tick( object sender, EventArgs e ) {
 
         poly.FillStyle.Color = Color.FromArgb(r.Next(255), r.Next(255), r.Next(255));
 
-        globelNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+        globalNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
 
-        globelNode.LineStyle.LineWidth = 3;
+        globalNode.LineStyle.LineWidth = 3;
 
 
 
@@ -101,9 +101,9 @@ private void timer1_Tick( object sender, EventArgs e ) {
 
         poly.FillStyle.Color = defaultColor;
 
-        globelNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+        globalNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
 
-        globelNode.LineStyle.LineWidth = 1;
+        globalNode.LineStyle.LineWidth = 1;
 
     }
 
@@ -113,7 +113,7 @@ private void timer1_Tick( object sender, EventArgs e ) {
 
 {% highlight vbnet %}
 
-Private globelNode As Syncfusion.Windows.Forms.Diagram.Node
+Private globalNode As Syncfusion.Windows.Forms.Diagram.Node
 
 Private PolygonNode As Syncfusion.Windows.Forms.Diagram.Polygon
 
@@ -137,7 +137,7 @@ Try
 
 
 
-			globelNode = node1
+			globalNode = node1
 
 			PolygonNode = CType(IIf(TypeOf node1 Is Syncfusion.Windows.Forms.Diagram.Polygon, node1, Nothing), Syncfusion.Windows.Forms.Diagram.Polygon)
 
@@ -165,7 +165,7 @@ Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles ti
 
         ' Convert node as polygon
 
-        Dim poly As Syncfusion.Windows.Forms.Diagram.Polygon = CType(IIf(TypeOf globelNode Is Syncfusion.Windows.Forms.Diagram.Polygon, globelNode, Nothing), Syncfusion.Windows.Forms.Diagram.Polygon)
+        Dim poly As Syncfusion.Windows.Forms.Diagram.Polygon = CType(IIf(TypeOf globalNode Is Syncfusion.Windows.Forms.Diagram.Polygon, globelNode, Nothing), Syncfusion.Windows.Forms.Diagram.Polygon)
 
         Dim r As Random = New Random()
 
@@ -175,9 +175,9 @@ Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles ti
 
             poly.FillStyle.Color = Color.FromArgb(r.Next(255), r.Next(255), r.Next(255))
 
-            globelNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash
+            globalNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash
 
-            globelNode.LineStyle.LineWidth = 3
+            globalNode.LineStyle.LineWidth = 3
 
 
 
@@ -185,9 +185,9 @@ Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles ti
 
             poly.FillStyle.Color = defaultColor
 
-            globelNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
+            globalNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
 
-            globelNode.LineStyle.LineWidth = 1
+            globalNode.LineStyle.LineWidth = 1
 
         End If
 

@@ -660,7 +660,7 @@ RoundRect node = new RoundRect(0, 0, 170, 100,MeasureUnits.Pixel);
 
             Syncfusion.Windows.Forms.Diagram.Label lbl_TopCenter = new Syncfusion.Windows.Forms.Diagram.Label(node, "Label_TopCenter");            
 
-            //Postion the label
+            //Position the label
 
             lbl_TopCenter.Position = Position.TopCenter; 
 
@@ -682,11 +682,11 @@ RoundRect node = new RoundRect(0, 0, 170, 100,MeasureUnits.Pixel);
 
 
 
-            //Create a lable with custom position
+            //Create a label with custom position
 
             Syncfusion.Windows.Forms.Diagram.Label lbl_Custom = new Syncfusion.Windows.Forms.Diagram.Label(node, "Label_Custom");
 
-            //Postion the label
+            //Position the label
 
             lbl_Custom.Position = Position.Custom;
 
@@ -734,7 +734,7 @@ Dim node As New RoundRect(0, 0, 170, 100,MeasureUnits.Pixel)
 
 Dim lbl_TopCenter As New Syncfusion.Windows.Forms.Diagram.Label(node, "Label_TopCenter")
 
-'Postion the label
+'Position the label
 
 lbl_TopCenter.Position = Position.TopCenter
 
@@ -756,11 +756,11 @@ node.Labels.Add(lbl_TopCenter)
 
 
 
-'Create a lable with custom position
+'Create a label with custom position
 
 Dim lbl_Custom As New Syncfusion.Windows.Forms.Diagram.Label(node, "Label_Custom")
 
-'Postion the label
+'Position the label
 
 lbl_Custom.Position = Position.Custom
 
