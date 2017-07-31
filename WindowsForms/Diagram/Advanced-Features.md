@@ -245,9 +245,9 @@ The central port for a diagram node can be enabled by using the following code s
 
 
 
-Ellipse ellips = new Ellipse(100, 100, 200, 100);
+Ellipse ellipse = new Ellipse(100, 100, 200, 100);
 
-ellips.EnableCentralPort = true;
+ellipse.EnableCentralPort = true;
 
 {% endhighlight %}
 
@@ -255,9 +255,9 @@ ellips.EnableCentralPort = true;
 
 
 
-Dim ellips As New Ellipse(100, 100, 200, 100)
+Dim ellipse As New Ellipse(100, 100, 200, 100)
 
-ellips.EnableCentralPort = True
+ellipse.EnableCentralPort = True
 
 {% endhighlight %}
 
@@ -1462,7 +1462,7 @@ To map the user defined XML data with Diagram, you have to configure the fields 
 <?xml version="1.0" encoding="UTF-8"?>
 <dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="Employees.xsd" generated="2005-01-18T15:03:23">
   <Employees EmployeeID="113001">
-   <Name>Antwone Burnett</Name>
+   <Name>Antone Burnett</Name>
     <Designation>Chief Executive Officer</Designation>
   </Employees>  
   
@@ -5165,21 +5165,21 @@ The following code shows how to add additional data to a node by using the Prope
 
 {% highlight c# %}
 
-node.PropertyBag.Add("Name", emply.EmployeeName);
+node.PropertyBag.Add("Name", employee.EmployeeName);
 
-node.PropertyBag.Add("ID", emply.EmployeeID);
+node.PropertyBag.Add("ID", employee.EmployeeID);
 
-node.PropertyBag.Add("Designation", emply.Designation);
+node.PropertyBag.Add("Designation", employee.Designation);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-node.PropertyBag.Add("Name", emply.EmployeeName)
+node.PropertyBag.Add("Name", employee.EmployeeName)
 
-node.PropertyBag.Add("ID", emply.EmployeeID)
+node.PropertyBag.Add("ID", employee.EmployeeID)
 
-node.PropertyBag.Add("Designation", emply.Designation)
+node.PropertyBag.Add("Designation", employee.Designation)
 
 {% endhighlight %}
 

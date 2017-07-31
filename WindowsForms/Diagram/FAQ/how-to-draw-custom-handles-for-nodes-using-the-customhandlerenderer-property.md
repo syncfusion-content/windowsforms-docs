@@ -95,7 +95,7 @@ public class MyHandleRenderer : UserHandleRenderer
 
     /// Method creates and returns GraphicsPath that represents rotation handle
 
-    /// Override this method to change rotationhandle appearance
+    /// Override this method to change rotation handle appearance
 
     /// &lt;/summary&gt;
 
@@ -243,7 +243,7 @@ End Sub
 
 	''' Method creates and returns GraphicsPath that represents rotation handle 
 
-	''' Override this method to change rotationhandle appearance 
+	''' Override this method to change rotation handle appearance 
 
 	''' &lt;/summary&gt; 
 

@@ -27,7 +27,7 @@ leftport = new CirclePort(new PointF(0, this.Height / 2));
 
 rightport = new CirclePort(new PointF(this.Width, this.Height / 2));
 
-//Append CirlePorts to MySymbol
+//Append CirclePorts to MySymbol
 
 AppendChild(leftport);
 
@@ -53,7 +53,7 @@ leftport = New CirclePort(New PointF(0, Me.Height / 2))
 
 rightport = New CirclePort(New PointF(Me.Width, Me.Height / 2))
 
-'Append CirlePorts to MySymbol
+'Append CirclePorts to MySymbol
 
 AppendChild(leftport)
 
