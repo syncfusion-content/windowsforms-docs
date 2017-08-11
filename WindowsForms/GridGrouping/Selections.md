@@ -1209,7 +1209,7 @@ Example
 
 This example shows how to loop through SelectedRanges collection to retrieve information about the records that are being selected.
 
-1. Turn on any type of selection. Here the record-based selection is active. It is enabled by setting ListBoxSelectionMode property to a value other than None. You could set the selection colors as well.
+1. Turn on any type of selection. Here the record-based selection is active. It is enabled by setting AllowSelection property to a value other than None. You could set the selection colors as well.
 
 
 {% tabs %}
