@@ -81,6 +81,7 @@ You can combine more than one flags to customize current selection behavior.
 
 Following code example illustrates how to set the selection mode for selecting multiple rows with alpha blending.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -96,6 +97,7 @@ this.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.Alpha
 Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend Or GridSelectionFlags.Row Or GridSelectionFlags.Multiple
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Selections_images/Selections_img1.jpeg) 
 
@@ -107,8 +109,8 @@ Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBl
 
 It is possible to modify default color used for AlphaBlend selection. This can be achieved by assigning a desired color to AlphaBlendSelectionColor property. The example given below uses Red Color for alpha blending.
 
+{% tabs %}
 {% highlight C# %}  
-
 
 
 this.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend | GridSelectionFlags.Cell;
@@ -120,12 +122,13 @@ this.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Re
 {% highlight vbnet %}  
 
 
-
 Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend Or GridSelectionFlags.Cell
 
 Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
 
 {% endhighlight %}
+
+{% endtabs %}
 
  ![](Selections_images/Selections_img2.jpeg) 
 
@@ -150,7 +153,7 @@ Following code example illustrates the different types of record based selection
 It allows you to select only one item (record).
 
 
-
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -166,6 +169,7 @@ this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One;
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Selections_images/Selections_img4.jpeg) 
 
@@ -178,7 +182,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One
 You can select multiple items individually. It does not support the use of SHIFT, CTRL and ARROW keys to extend the selection.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -194,6 +198,7 @@ this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.Mult
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiSimple
 
  {% endhighlight %}
+ {% endtabs %}
 
  ![](Selections_images/Selections_img5.jpeg) 
 
@@ -206,7 +211,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiS
 This selection type allows selection of multiple items through Shift, Ctrl and Arrow keys.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -222,6 +227,7 @@ this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.Mult
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiExtended
 
  {% endhighlight %}
+ {% endtabs %}
 
  ![](Selections_images/Selections_img6.jpeg) 
 
@@ -242,7 +248,7 @@ ListBoxSelectionColorOptions is used to control the appearance of the selections
 Gets the required colors from the SelectionBackColor and SelectionTextColor properties.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -266,6 +272,7 @@ Me.gridGroupingControl1.TableOptions.SelectionBackColor = Color.PaleGreen
 Me.gridGroupingControl1.TableOptions.SelectionTextColor = Color.Green
 
 {% endhighlight %}
+{% endtabs %}
 
 Here is the effect of the above settings.
 
@@ -279,7 +286,7 @@ Here is the effect of the above settings.
 Draws AlphaBlending over the selected row.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -294,7 +301,7 @@ this.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBo
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.DrawAlphablend
 
 {% endhighlight %}
-
+{% endtabs %}
 
  ![](Selections_images/Selections_img8.jpeg) 
 
@@ -307,7 +314,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 Inverts the cells in selected row. As a result, the back color of the cell is used to draw the text and CellTextColor becomes its BackColor.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -323,6 +330,7 @@ this.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBo
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.InvertCells
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Selections_images/Selections_img9.jpeg) 
 
@@ -335,7 +343,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 Do not change the appearance of the cells. The cell appearance could be specified manually by handling TableControlPrepareViewStyleInfo and TableControlCellDrawn events.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -350,7 +358,7 @@ this.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBo
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.None
 
 {% endhighlight %}
-
+{% endtabs %}
 
  ![](Selections_images/Selections_img10.jpeg) 
 
@@ -462,7 +470,7 @@ Follow the steps below to create a sample that shows the above selections.
 3.Set the required flags with respect to the current cell.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -481,12 +489,12 @@ Me.gridGroupingControl1.TableModel.Options.RefreshCurrentCellBehavior = GridRefr
 
 Me.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.GrayWhenLostFocus
 
-
+{% endhighlight %}
+{% endtabs %}
 
 4.Handle PrepareViewStyleInfo event to focus the current selection according to the chosen selection type. It also includes the code to highlight the current selection. This works for CellOnly, RowOnly, ColumnOnly, and Row and Column types.
 
-{% endhighlight %}
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -710,10 +718,11 @@ End If
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 Enable ListBoxSelection mode to expose the default selection.
 
-
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -770,10 +779,11 @@ Next t
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 Below is the code for None option that disables the selection.
 
-
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -818,11 +828,12 @@ End If
 End Sub
 
  {% endhighlight %}
+ {% endtabs %}
 
 Refresh the table control once the selection type is changed. You could also handle TableControlCurrentCellActivating event for this purpose.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -920,6 +931,7 @@ Me.gridGroupingControl1.TableControl.Refresh()
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 Here is a sample output that focuses the current row and column.
 
@@ -937,6 +949,7 @@ Selecting Multiple Records
 
 Multiple records can be selected at a time by adding the desired record specifications into the SelectedRecords collection. The following code example illustrates this process. It selects the records with indexes 2, 4 and 0 by adding them into the SelectedRecords collection.
 
+{% tabs %}
 {% highlight C# %} 
 
 
@@ -980,6 +993,7 @@ t.SelectedRecords.Add(r2)
 t.SelectedRecords.Add(r3)
 
  {% endhighlight %}
+ {% endtabs %}
 
  ![](Selections_images/Selections_img17.jpeg) 
 
@@ -994,7 +1008,7 @@ RecordSelection with NestedTables
 When nested tables are used, you can extend record selection mechanisms to each of the child table by accessing SelectedRecords collection of the desired child table.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -1062,6 +1076,7 @@ Me.gridGroupingControl1.GetTable("Orders").SelectedRecords.Add(or1)
 Me.gridGroupingControl1.GetTable("Orders").SelectedRecords.Add(or2)
 
  {% endhighlight %}
+ {% endtabs %}
 
  ![](Selections_images/Selections_img19.png) 
 
@@ -1070,6 +1085,7 @@ Record Search
 
 To search for a particular record, SelectedRecords collection provides a method called FindRecord(). This method searches for the occurrences of the specified record and returns a zero-based index of the occurrence found. If there is no such record, then returns -1. It comes in two versions: one accepts the whole record as its parameter and the other accepts the position of the record in the underlying datasource.
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -1109,13 +1125,14 @@ Dim index As Integer = Me.gridGroupingControl1.Table.SelectedRecords.FindRecord(
 Dim index2 As Integer = Me.gridGroupingControl1.Table.SelectedRecords.FindRecord(2)
 
  {% endhighlight %}
+ {% endtabs %}
 
 Removing a RecordSelection
 
 A record can be removed from the SelectedRecords collection by using the methods Remove() and RemoveAt(). A call to Remove() requires you to specify the whole record as parameter. In case if you know only the record index, you could then make use of RemoveAt(). Both the methods remove the specified record from the collection and mark it as deselect.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -1155,13 +1172,14 @@ Me.gridGroupingControl1.Table.SelectedRecords.Remove(rec)
 Me.gridGroupingControl1.Table.SelectedRecords.RemoveAt(2)
 
 {% endhighlight %}
+{% endtabs %}
 
 Clear Selection
 
 To remove all the selections from the grid, you can call SelectedRecords.Clear() method that removes all the elements from the collection and marks them as deselect.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -1177,6 +1195,7 @@ this.gridGroupingControl1.Table.SelectedRecords.Clear();
 Me.gridGroupingControl1.Table.SelectedRecords.Clear()
 
 {% endhighlight %}
+{% endtabs %}
 
 N> For more details, refer to the following browser sample:
 
@@ -1193,14 +1212,11 @@ This example shows how to loop through SelectedRanges collection to retrieve inf
 1. Turn on any type of selection. Here the record-based selection is active. It is enabled by setting ListBoxSelectionMode property to a value other than None. You could set the selection colors as well.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
-
-this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiExtended;
-
-this.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.DrawAlphablend;
+this.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend | GridSelectionFlags.Row;
 
 this.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red;
 
@@ -1209,14 +1225,13 @@ this.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Re
 {% highlight vbnet %}  
 
 
-Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiExtended
-
-Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.DrawAlphablend
+Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend | GridSelectionFlags.Row
 
 Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
 
 {% endhighlight %}
 
+{% endtabs %}
 
 2.The code below loops through the ranges of all the selections and writes the record values that have been selected to a listbox control. 
 
@@ -1272,7 +1287,7 @@ End If
 Next range
 
 {% endhighlight %}
-
+{% endtabs %}
 
 3.Here is a sample screenshot.
 
