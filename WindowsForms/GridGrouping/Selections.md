@@ -886,9 +886,9 @@ void TableControl_CurrentCellActivating(object sender, GridCurrentCellActivating
 
 }
 
+{% endhighlight %}
 
-
-{% highlight vbnet %}  {% endhighlight %}
+{% highlight vbnet %}  
 
 
 
@@ -1235,6 +1235,7 @@ Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
 
 2.The code below loops through the ranges of all the selections and writes the record values that have been selected to a listbox control. 
 
+{% tabs %}
 {% highlight C# %} 
 
 
