@@ -659,7 +659,7 @@ Interactive Cursor can be implemented by creating an instance of ChartInteractiv
 
 {% tabs %}  {% highlight c# %}
 
-// Create a new instance of the ChartInteractiveCursor class and initialize chartseries into it.
+// Create a new instance of the ChartInteractiveCursor class and initialize chart series into it.
 
 ChartInteractiveCursor cursor1 = new ChartInteractiveCursor(this.chartControl1.Series[0]);
 
@@ -679,7 +679,7 @@ cursor1.Color = Color.Red;
 
 {% highlight vbnet %}
 
-' Create a new instance of the ChartInteractiveCursor class and initialize chartseries into it.
+' Create a new instance of the ChartInteractiveCursor class and initialize chart series into it.
 
 ChartInteractiveCursor cursor1 = New ChartInteractiveCursor(Me.chartControl1.Series(0))
 

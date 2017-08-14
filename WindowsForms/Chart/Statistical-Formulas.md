@@ -388,14 +388,14 @@ Here is a code snippet that shows a sample usage.
 
 {% tabs %}  {% highlight c# %}
 
-FTestResult ttr = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.FTest(confidenceLevel,series1,series2);
+FTestResult result = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.FTest(confidenceLevel,series1,series2);
 
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-Dim ttr As FTestResult = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.FTest(confidenceLevel,series1,series2)
+Dim result As FTestResult = Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.FTest(confidenceLevel,series1,series2)
 
 
 {% endhighlight %}
@@ -683,7 +683,7 @@ Here is a code snippet that shows a sample usage.
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
-TTestResult ttr = BasicStatisticalFormulas.TTestEqualVariances (0.2, 0.05, series1, series2);
+TTestResult result = BasicStatisticalFormulas.TTestEqualVariances (0.2, 0.05, series1, series2);
 
 {% endhighlight %}
 
@@ -691,7 +691,7 @@ TTestResult ttr = BasicStatisticalFormulas.TTestEqualVariances (0.2, 0.05, serie
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
-Dim ttr As TTestResult = BasicStatisticalFormulas.TTestEqualVariances (0.2, 0.05, series1, series2)
+Dim result As TTestResult = BasicStatisticalFormulas.TTestEqualVariances (0.2, 0.05, series1, series2)
 
 {% endhighlight %}
 {% endtabs %}
@@ -762,13 +762,13 @@ Here is a code snippet that shows a sample usage.
 
 {% tabs %}  {% highlight c# %}
 
-TTestResult ttr = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05,series1,series2);
+TTestResult result = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05,series1,series2);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-Dim ttr As TTestResult = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05, series1, series2)
+Dim result As TTestResult = BasicStatisticalFormulas.TTestUnEqualVariances(0.2, 0.05, series1, series2)
 
 {% endhighlight %}
 {% endtabs %}
@@ -831,7 +831,7 @@ Here is a code snippet that shows a sample usage.
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
-TTestResult ttr = BasicStatisticalFormulas.TTestPaired(0.2, 0.05, series1, series2);
+TTestResult result = BasicStatisticalFormulas.TTestPaired(0.2, 0.05, series1, series2);
 
 {% endhighlight %}
 
@@ -839,7 +839,7 @@ TTestResult ttr = BasicStatisticalFormulas.TTestPaired(0.2, 0.05, series1, serie
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
-Dim ttr As TTestResult = BasicStatisticalFormulas.TTestPaired(0.2, 0.05, series1, series2)
+Dim result As TTestResult = BasicStatisticalFormulas.TTestPaired(0.2, 0.05, series1, series2)
 
 {% endhighlight %}
 {% endtabs %}
@@ -960,7 +960,7 @@ Here is a code snippet that shows a sample usage.
 
 {% tabs %}  {% highlight c# %}
 
-ZTestResult ztr = BasicStatisticalFormulas.ZTest( Convert.ToDouble(TextBox6.Text.ToString()), 
+ZTestResult result = BasicStatisticalFormulas.ZTest( Convert.ToDouble(TextBox6.Text.ToString()), 
 
 sqrtVarianceOfFirstSeries*sqrtVarianceOfFirstSeries,
 
@@ -970,7 +970,7 @@ sqrtVarianceOfSecondSeries* sqrtVarianceOfSecondSeries,0.05,series1,series2);
 
 {% highlight vbnet %}
 
-Dim ztr As ZTestResult = BasicStatisticalFormulas.ZTest(Convert.ToDouble(TextBox6.Text.ToString()), sqrtVarianceOfFirstSeries*sqrtVarianceOfFirstSeries, sqrtVarianceOfSecondSeries*sqrtVarianceOfSecondSeries, 0.05, series1, series2)
+Dim result As ZTestResult = BasicStatisticalFormulas.ZTest(Convert.ToDouble(TextBox6.Text.ToString()), sqrtVarianceOfFirstSeries*sqrtVarianceOfFirstSeries, sqrtVarianceOfSecondSeries*sqrtVarianceOfSecondSeries, 0.05, series1, series2)
 
 
 {% endhighlight %}
@@ -1449,7 +1449,7 @@ Here is a code snippet that shows a sample usage.
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
-double x = Statistics.UtilityFunctions. FCumulativelDistribution( fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom );
+double x = Statistics.UtilityFunctions. FCumulativeDistribution( fValue, firstDegreeOfFreedom, secondDegreeOfFreedom );
 
 {% endhighlight %}
 
@@ -1457,7 +1457,7 @@ double x = Statistics.UtilityFunctions. FCumulativelDistribution( fvalue, firstd
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
-double x = Statistics.UtilityFunctions. FCumulativelDistribution(fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom)
+double x = Statistics.UtilityFunctions. FCumulativeDistribution(fValue, firstDegreeOfFreedom, secondDegreeOfFreedom)
 
 {% endhighlight %}
 {% endtabs %}
@@ -1674,7 +1674,7 @@ Here is a code snippet that shows a sample usage.
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
-double x= Statistics.UtilityFunctions. InverseFCumulativelDistribution( fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom );
+double x= Statistics.UtilityFunctions. InverseFCumulativeDistribution( fValue, firstDegreeOfFreedom, secondDegreeOfFreedom );
 
 {% endhighlight %}
 
@@ -1682,7 +1682,7 @@ double x= Statistics.UtilityFunctions. InverseFCumulativelDistribution( fvalue, 
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
-double x= Statistics.UtilityFunctions. InverseFCumulativelDistribution(fvalue, firstdegreeOf Freedom, secondDegreeOfFreedom)
+double x= Statistics.UtilityFunctions. InverseFCumulativeDistribution(fValue, firstDegreeOfFreedom, secondDegreeOfFreedom)
 
 {% endhighlight %}
 {% endtabs %}
@@ -1912,7 +1912,7 @@ Here is a code snippet that shows a sample usage.
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
-double x= Statistics.UtilityFunctions. InverseTCumulativelDistribution(p, degreeOfFreedom,OneTail );
+double x= Statistics.UtilityFunctions. InverseTCumulativeDistribution(p, degreeOfFreedom,OneTail );
 
 {% endhighlight %}
 
@@ -1920,7 +1920,7 @@ double x= Statistics.UtilityFunctions. InverseTCumulativelDistribution(p, degree
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
-double x= Statistics.UtilityFunctions. InverseTCumulativelDistribution(p, degreeOfFreedom,OneTail )
+double x= Statistics.UtilityFunctions. InverseTCumulativeDistribution(p, degreeOfFreedom,OneTail )
 
 {% endhighlight %}
 {% endtabs %}
@@ -1973,7 +1973,7 @@ Here is a code snippet that shows a sample usage.
 
 using Syncfusion.Windows.Forms.Chart.Statistics;
 
-double x= Statistics.UtilityFunctions.TCumulativelDistribution(tvalue, degreeOfFreedom,OneTail );
+double x= Statistics.UtilityFunctions.TCumulativeDistribution(tvalue, degreeOfFreedom,OneTail );
 
 {% endhighlight %}
 
@@ -1981,7 +1981,7 @@ double x= Statistics.UtilityFunctions.TCumulativelDistribution(tvalue, degreeOfF
 
 Imports Syncfusion.Windows.Forms.Chart.Statistics
 
-double x= Statistics.UtilityFunctions.TCumulativelDistribution(tvalue, degreeOfFreedom,OneTail )
+double x= Statistics.UtilityFunctions.TCumulativeDistribution(tvalue, degreeOfFreedom,OneTail )
 
 {% endhighlight %}
 {% endtabs %}

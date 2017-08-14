@@ -721,13 +721,13 @@ If LabelRotate is true, this property specifies the angle of rotation.</td></tr>
 
 {% tabs %}  {% highlight c# %}
 
-//Settings datetime format to Xaxis
+//Settings datetime format to X axis
 
 this.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM";
 
 
 
-//Settings format to Yaxis
+//Settings format to Y axis
 
 this.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Double;
 
@@ -749,7 +749,7 @@ this.chartControl1.PrimaryYAxis.Font = new System.Drawing.Font("Arial", 9F, Syst
 
 //Label property settings for X-Axis
 
-this.chartControl1.PrimaryXAxis.LabelAligment = System.Drawing.StringAlignment.Center;
+this.chartControl1.PrimaryXAxis.LabelAlignment = System.Drawing.StringAlignment.Center;
 
 this.chartControl1.PrimaryXAxis.LabelRotate = true;
 
@@ -759,19 +759,19 @@ this.chartControl1.PrimaryXAxis.LabelRotateAngle = 45;
 
 //Label property settings for Y-Axis
 
-this.chartControl1.PrimaryYAxis.LabelAligment = System.Drawing.StringAlignment.Far;
+this.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Far;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-'Settings datetime format to Xaxis
+'Settings datetime format to X axis
 
 Me.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM"
 
 
 
-Settings format to Yaxis
+Settings format to Y axis
 
 Me.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Double
 
@@ -793,7 +793,7 @@ Me.chartControl1.PrimaryYAxis.Font = new System.Drawing.Font("Arial", 9F, System
 
 'Label property settings for X-Axis
 
-Me.chartControl1.PrimaryXAxis.LabelAligment = System.Drawing.StringAlignment.Center
+Me.chartControl1.PrimaryXAxis.LabelAlignment = System.Drawing.StringAlignment.Center
 
 Me.chartControl1.PrimaryXAxis.LabelRotate = true
 
@@ -803,7 +803,7 @@ Me.chartControl1.PrimaryXAxis.LabelRotateAngle = 45
 
 'Label property settings for Y-Axis
 
-Me.chartControl1.PrimaryYAxis.LabelAligment = System.Drawing.StringAlignment.Far
+Me.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Far
 
 {% endhighlight %}
 {% endtabs %}
@@ -1210,13 +1210,13 @@ ChartSeries series = new ChartSeries("Series");
 
             this.chartControl1.Series.Add(series);
 
-			//Set labeltext
+			//Set label text
 
             arrLabel.Add("India");
 
             arrLabel.Add("Pakistan");
 
-            arrLabel.Add("Srilanka");
+            arrLabel.Add("SriLanka");
 
             arrLabel.Add("Japan");
 
@@ -1290,13 +1290,13 @@ Me.chartControl1.Series.Add(series)
 
 
 
-' Set labeltext
+' Set label text
 
 arrLabel.Add("India")
 
 arrLabel.Add("Pakistan")
 
-arrLabel.Add("Srilanka")
+arrLabel.Add("SriLanka")
 
 arrLabel.Add("Japan")
 
@@ -1386,11 +1386,11 @@ Sets the font style for the title text.</td></tr>
 
 //Sets custom title for x- axis. 
 
-this.chartControl1.PrimaryXaxis.Title = "x-axis";
+this.chartControl1.PrimaryXAxis.Title = "x-axis";
 
-this.chartControl1.PrimaryXaxis.TitleColor = Color.Red;
+this.chartControl1.PrimaryXAxis.TitleColor = Color.Red;
 
-this.chartControl1.PrimaryXaxis.TitleFont = new Font("Arial", 10);
+this.chartControl1.PrimaryXAxis.TitleFont = new Font("Arial", 10);
 
 //Set custom title for y-axis in the similar method.
 
@@ -1400,11 +1400,11 @@ this.chartControl1.PrimaryXaxis.TitleFont = new Font("Arial", 10);
 
 'Sets custom title for x- axis. 
 
-Me.chartControl1.PrimaryXaxis.Title = "x-axis"
+Me.chartControl1.PrimaryXAxis.Title = "x-axis"
 
-Me.chartControl1.PrimaryXaxis.TitleColor = Color.Red
+Me.chartControl1.PrimaryXAxis.TitleColor = Color.Red
 
-Me.chartControl1.PrimaryXaxis.TitleFont = New Font("Arial", 10)
+Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 
 'Set custom title for y-axis in the similar method.
 
