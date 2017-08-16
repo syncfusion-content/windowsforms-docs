@@ -23,7 +23,7 @@ The chart image can easily be exported as an image file in several different for
 
 private string fileName;
 
-fileName = Application.StartupPath + "\\chartexport";
+fileName = Application.StartupPath + "\\chartExport";
 
 fileName = fileName + ".gif";
 
@@ -43,7 +43,7 @@ System.Diagnostics.Process.Start(exportFileName);
 
 Private fileName As String
 
-fileName = Application.StartupPath + "\chartexport"
+fileName = Application.StartupPath + "\chartExport"
 
 fileName = fileName + ".gif"
 
@@ -209,7 +209,7 @@ Given below are the steps that will guide you through this process.
 {% tabs %}
    ~~~ cs
 
-		string fileName=Application.StartupPath+"\\chartexport";
+		string fileName=Application.StartupPath+"\\chartExport";
 
 		string exportFileName = fileName + ".doc";
 
@@ -268,7 +268,7 @@ Given below are the steps that will guide you through this process.
 
    ~~~ vbnet
 
-		Dim fileName As String =Application.StartupPath & "\chartexport"
+		Dim fileName As String =Application.StartupPath & "\chartExport"
 
 		Dim exportFileName As String = fileName & ".doc"
 
@@ -366,27 +366,27 @@ The steps that are given below will guide you through the process.
 {% tabs %}
    ~~~ cs
 
-		// Creates a new instance of the Imagelist class.
+		// Creates a new instance of the ImageList class.
 
-		ImageList img = new ImageList();
+		ImageList image = new ImageList();
 
 
 
-		// Adds the image to the Image collection of the Imagelist.
+		// Adds the image to the Image collection of the ImageList.
 
-		img.Images.Add(Image.FromFile(this.Name));
+		image.Images.Add(Image.FromFile(this.Name));
 
 
 
 		// Specify the size of the image.
 
-		img.ImageSize = new Size(256, 256);
+		image.ImageSize = new Size(256, 256);
 
 
 
-		// Set the imagelist of the cell.
+		// Set the imageList of the cell.
 
-		this.gridControl1[1,1].ImageList = img;
+		this.gridControl1[1,1].ImageList = image;
 
 
 
@@ -414,27 +414,27 @@ The steps that are given below will guide you through the process.
 
    ~~~ vbnet
 
-		' Creates a new instance of the Imagelist class.
+		' Creates a new instance of the ImageList class.
 
-		Dim img As ImageList = New ImageList()
+		Dim image As ImageList = New ImageList()
 
 
 
-		' Adds the image to the Image collection of the Imagelist.
+		' Adds the image to the Image collection of the ImageList.
 
-		img.Images.Add(Image.FromFile(Me.Name))
+		image.Images.Add(Image.FromFile(Me.Name))
 
 
 
 		' Specify the size of the image.
 
-		img.ImageSize = New Size(256, 256)
+		image.ImageSize = New Size(256, 256)
 
 
 
-		' Set the imagelist of the cell.
+		' Set the imageList of the cell.
 
-		Me.gridControl1(1,1).ImageList = img
+		Me.gridControl1(1,1).ImageList = image
 
 
 
@@ -471,7 +471,7 @@ The steps that are given below will guide you through the process.
 
 
 
-		string fileName=Application.StartupPath+"\\chartexport";
+		string fileName=Application.StartupPath+"\\chartExport";
 
 		string file = fileName + ".gif";
 
@@ -504,7 +504,7 @@ The steps that are given below will guide you through the process.
 
 
 
-		Dim fileName As String =Application.StartupPath & "\chartexport"
+		Dim fileName As String =Application.StartupPath & "\chartExport"
 
 		Dim file As String = fileName & ".gif"
 
@@ -575,7 +575,7 @@ Given below are the steps that will guide you through this process.
 {% tabs %}
    ~~~ cs
 
-		string exportFileName = Application.StartupPath+"\\chartexport" + ".xls";                                    
+		string exportFileName = Application.StartupPath+"\\chartExport" + ".xls";                                    
 
 
 
@@ -668,7 +668,7 @@ Given below are the steps that will guide you through this process.
 
    ~~~ vbnet
 
-		Dim exportFileName As String = Application.StartupPath & "\chartexport" & ".xls"
+		Dim exportFileName As String = Application.StartupPath & "\chartExport" & ".xls"
 
 
 
@@ -794,7 +794,7 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 {% tabs %}
    ~~~ cs
 
-		string fileName=Application.StartupPath+"\\chartexport";
+		string fileName=Application.StartupPath+"\\chartExport";
 
 		string exportFileName = fileName + ".pdf";
 
@@ -837,7 +837,7 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 
    ~~~ vbnet
 
-		Dim fileName As String = Application.StartupPath & "\chartexport"
+		Dim fileName As String = Application.StartupPath & "\chartExport"
 
 		Dim exportFileName As String = fileName & ".pdf"
 
