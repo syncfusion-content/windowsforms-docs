@@ -1028,7 +1028,7 @@ ChartSeries ser1 = new ChartSeries("Series 1");
 
 ser1.Type = ChartSeriesType.StackingColumn;
 
-// specifing group name .
+// specifying group name .
 
 ser1.StackingGroup = "FirstGroup";
 
@@ -1036,7 +1036,7 @@ ChartSeries ser2 = new ChartSeries("Series 2");
 
 ser2.Type = ChartSeriesType.StackingColumn;
 
-// specifing group name .
+// specifying group name .
 
 ser2.StackingGroup = "SecondGroup";
 
@@ -1044,7 +1044,7 @@ ChartSeries ser3 = new ChartSeries("Series 3");
 
 ser3.Type = ChartSeriesType.StackingColumn;
 
-// specifing group name .
+// specifying group name .
 
 ser3.StackingGroup = "FirstGroup";
 
@@ -1056,7 +1056,7 @@ Dim ser1 As New ChartSeries("Series 1")
 
 ser1.Type = ChartSeriesType.StackingColumn
 
-' specifing group name .
+' specifying group name .
 
 ser1.StackingGroup = "FirstGroup"
 
@@ -1064,7 +1064,7 @@ Dim ser2 As New ChartSeries("Series 2")
 
 ser2.Type = ChartSeriesType.StackingColumn
 
-' specifing group name .
+' specifying group name .
 
 ser2.StackingGroup = "SecondGroup"
 
@@ -1072,7 +1072,7 @@ Dim ser3 As New ChartSeries("Series 3")
 
 ser3.Type = ChartSeriesType.StackingColumn
 
-' specifing group name .
+' specifying group name .
 
 ser3.StackingGroup = "FirstGroup"
 

@@ -53,9 +53,9 @@ ExpressionFieldDescriptor exp = new ExpressionFieldDescriptor();
 
 exp.Expression = "[Y] > "+this.textBox1.Text.ToString();
 
-RecordFilterDescriptor rfd = new RecordFilterDescriptor(exp.Expression);
+RecordFilterDescriptor record = new RecordFilterDescriptor(exp.Expression);
 
-group.TableDescriptor.RecordFilters.Add (rfd);
+group.TableDescriptor.RecordFilters.Add (record);
 
 System.Diagnostics.Trace.WriteLine("Filtered Record Count:" + group.Table.FilteredRecords.Count);
 
@@ -123,9 +123,9 @@ Dim exp As ExpressionFieldDescriptor = New ExpressionFieldDescriptor()
 
 exp.Expression = "[Y] > " & Me.textBox1.Text.ToString()
 
-Dim rfd As RecordFilterDescriptor = New RecordFilterDescriptor(exp.Expression)
+Dim record As RecordFilterDescriptor = New RecordFilterDescriptor(exp.Expression)
 
-group.TableDescriptor.RecordFilters.Add (rfd)
+group.TableDescriptor.RecordFilters.Add (record)
 
 System.Diagnostics.Trace.WriteLine("Filtered Record Count:" & group.Table.FilteredRecords.Count)
 

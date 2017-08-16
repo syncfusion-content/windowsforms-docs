@@ -1636,7 +1636,7 @@ Here is some sample code.
 
 this.chartControl1.Series[0].ConfigItems.FinancialItem.ColorsMode = ChartFinancialColorMode.DarkLight;
 
-// Setting the power value of the darklight
+// Setting the power value of the dark light
 
 this.chartControl1.Series[0].ConfigItems.FinancialItem.DarkLightPower = 200;
 
@@ -1648,7 +1648,7 @@ this.chartControl1.Series[0].ConfigItems.FinancialItem.DarkLightPower = 200;
 
 Me.chartControl1.Series(0).ConfigItems.FinancialItem.ColorsMode = ChartFinancialColorMode.DarkLight
 
-' Setting the power value of the darklight
+' Setting the power value of the dark light
 
 Me.chartControl1.Series(0).ConfigItems.FinancialItem.DarkLightPower = 200
 
@@ -2017,13 +2017,13 @@ The DoughnutCoefficient property specifies the fraction of the radius occupied b
 
 {% tabs %}  {% highlight c# %}
 
-this.chartControl1.Series[0].ConfigItems.PieItem.DoughnutCoeficient = 0.5f;
+this.chartControl1.Series[0].ConfigItems.PieItem.DoughnutCoefficient = 0.5f;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoeficient = 0.5f
+Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient = 0.5f
 
 {% endhighlight %}
 {% endtabs %}
@@ -2555,13 +2555,13 @@ this.chartControl1.Series[0].Style.Symbol.Shape = ChartSymbolShape.InvertedTrian
 
 // Setting ElementBorder for a symbol
 
-ChartBordersInfo cbi = new ChartBordersInfo();
+ChartBordersInfo border = new ChartBordersInfo();
 
-cbi.Outer = new ChartBorder(ChartBorderStyle.Solid, Color.White);
+border.Outer = new ChartBorder(ChartBorderStyle.Solid, Color.White);
 
-cbi.Inner = new ChartBorder(ChartBorderStyle.DashDot, Color.Cyan);
+border.Inner = new ChartBorder(ChartBorderStyle.DashDot, Color.Cyan);
 
-this.chartControl1.Series[0].Style.ElementBorders = cbi;
+this.chartControl1.Series[0].Style.ElementBorders = border;
 
 {% endhighlight %}
 
@@ -2575,13 +2575,13 @@ Me.chartControl1.Series(0).Style.Symbol.Shape = ChartSymbolShape.InvertedTriangl
 
  ' Setting ElementBorder for a symbol
 
-cbi As ChartBordersInfo = New ChartBordersInfo()
+border As ChartBordersInfo = New ChartBordersInfo()
 
-cbi.Outer = New ChartBorder(ChartBorderStyle.Solid, Color.White)
+border.Outer = New ChartBorder(ChartBorderStyle.Solid, Color.White)
 
-cbi.Inner = New ChartBorder(ChartBorderStyle.DashDot, Color.Cyan)
+border.Inner = New ChartBorder(ChartBorderStyle.DashDot, Color.Cyan)
 
-Me.chartControl1.Series(0).Style.ElementBorders = cbi
+Me.chartControl1.Series(0).Style.ElementBorders = border
 
 {% endhighlight %}
 {% endtabs %}
@@ -2595,7 +2595,7 @@ Me.chartControl1.Series(0).Style.ElementBorders = cbi
 
 //Specifying element border for the first data point Styles(0), second data point Styles(1) and so on..
 
-this.chartControl1.Series[0].Styles[0].ElementBorders = cbi;
+this.chartControl1.Series[0].Styles[0].ElementBorders = border;
 
 {% endhighlight %}
 
@@ -2603,7 +2603,7 @@ this.chartControl1.Series[0].Styles[0].ElementBorders = cbi;
 
 'Specifying element border for the first data point Styles(0), second data point Styles(1) and so on..
 
-this.chartControl1.Series(0).Styles(0).ElementBorders = cbi
+this.chartControl1.Series(0).Styles(0).ElementBorders = border
 
 {% endhighlight %}
 {% endtabs %}
@@ -3178,7 +3178,7 @@ Here is some sample code.
 
 {% tabs %}  {% highlight c# %}
 
-// Setting Pietype
+// Setting Pie type
 
 this.chartControl1.Series[0].ConfigItems.PieItem.PieType = ChartPieType.Round;
 
@@ -3190,7 +3190,7 @@ this.chartControl1.Series[0].ConfigItems.PieItem.FillMode = ChartPieFillMode.Eve
 
 {% highlight vbnet %}
 
-' Setting Pietype
+' Setting Pie type
 
 Me.chartControl1.Series(0).ConfigItems.PieItem.PieType = ChartPieType.Round
 
@@ -3420,7 +3420,7 @@ Here is some sample code.
 
 {% tabs %}  {% highlight c# %}
 
-// Specifies GenttDrawMode as CustomPointWidthMode
+// Specifies GanttDrawMode as CustomPointWidthMode
 
 this.chartControl1.Series[0].GanttDrawMode = ChartGanttDrawMode.CustomPointWidthMode;
 
@@ -3434,7 +3434,7 @@ this.chartControl1.Series[1].Style.PointWidth = 1f;
 
 {% highlight vbnet %}
 
-' Specifies GenttDrawMode as CustomPointWidthMode
+' Specifies GanttDrawMode as CustomPointWidthMode
 
 Me.chartControl1.Series(0).GanttDrawMode = ChartGanttDrawMode.CustomPointWidthMode
 
@@ -3450,7 +3450,7 @@ Me.chartControl1.Series(1).Style.PointWidth = 1f
 
 {% tabs %}  {% highlight c# %}
 
-// Specifies GenttDrawMode as AutoSizeMode
+// Specifies GanttDrawMode as AutoSizeMode
 
 this.chartControl1.Series[0].GanttDrawMode = ChartGanttDrawMode.AutoSizeMode;
 
@@ -3460,7 +3460,7 @@ this.chartControl1.Series[1].GanttDrawMode = ChartGanttDrawMode.AutoSizeMode;
 
 {% highlight vbnet %}
 
-' Specifies GenttDrawMode as AutoSizeMode
+' Specifies GanttDrawMode as AutoSizeMode
 
 Me.chartControl1.Series(0).GanttDrawMode = ChartGanttDrawMode.AutoSizeMode
 
@@ -3603,15 +3603,15 @@ Here is some sample code.
 
 series.ConfigItems.PieItem.PieType = ChartPieType.Custom;
 
-ColorBlend clrblnd = new ColorBlend();
+ColorBlend color = new ColorBlend();
 
-clrblnd.Positions = new float[] { 0f, 0.05f, 1f };
+color.Positions = new float[] { 0f, 0.05f, 1f };
 
-clrblnd.Colors = new Color[] { Color.SteelBlue, Color.LightSteelBlue, Color.AliceBlue };
+color.Colors = new Color[] { Color.SteelBlue, Color.LightSteelBlue, Color.AliceBlue };
 
 // Specifying Gradient Style 
 
-series.ConfigItems.PieItem.Gradient = clrblnd;
+series.ConfigItems.PieItem.Gradient = color;
 
 {% endhighlight %}
 
@@ -3619,15 +3619,15 @@ series.ConfigItems.PieItem.Gradient = clrblnd;
 
 series.ConfigItems.PieItem.PieType = ChartPieType.Custom
 
-Private clrblnd As ColorBlend = New ColorBlend()
+Private color As ColorBlend = New ColorBlend()
 
-clrblnd.Positions = New Single() { 0f, 0.05f, 1f }
+color.Positions = New Single() { 0f, 0.05f, 1f }
 
-clrblnd.Colors = New Color() { Color.SteelBlue, Color.LightSteelBlue, Color.AliceBlue }
+color.Colors = New Color() { Color.SteelBlue, Color.LightSteelBlue, Color.AliceBlue }
 
 ' Specifying Gradient Style 
 
-series.ConfigItems.PieItem.Gradient = clrblnd
+series.ConfigItems.PieItem.Gradient = color
 
 {% endhighlight %}
 {% endtabs %}
@@ -3819,7 +3819,7 @@ Here is the sample code.
 
 this.chartControl1.Series[0].ConfigItems.PieItem.HeightByAreaDepth = false;
 
-this.chartControl1.Series[0].ConfigItems.PieItem.HeightCoeficient = 0.1f;
+this.chartControl1.Series[0].ConfigItems.PieItem.HeightCoefficient = 0.1f;
 
 {% endhighlight %}
 
@@ -3827,7 +3827,7 @@ this.chartControl1.Series[0].ConfigItems.PieItem.HeightCoeficient = 0.1f;
 
 Me.chartControl1.Series(0).ConfigItems.PieItem.HeightByAreaDepth = False
 
-Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoeficient=0.1f
+Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoefficient=0.1f
 
 {% endhighlight %}
 {% endtabs %}
@@ -7103,7 +7103,7 @@ ChartSeries ser1 = new ChartSeries("Series 1");
 
 ser1.Type = ChartSeriesType.StackingColumn;
 
-// specifing group name .
+// specifying group name .
 
 ser1.StackingGroup = "FirstGroup";
 
@@ -7111,7 +7111,7 @@ ChartSeries ser2 = new ChartSeries("Series 2");
 
 ser2.Type = ChartSeriesType.StackingColumn;
 
-// specifing group name .
+// specifying group name .
 
 ser2.StackingGroup = "SecondGroup";
 
@@ -7119,7 +7119,7 @@ ChartSeries ser3 = new ChartSeries("Series 3");
 
 ser3.Type = ChartSeriesType.StackingColumn;
 
-// specifing group name .
+// specifying group name .
 
 ser3.StackingGroup = "FirstGroup";
 
@@ -7131,7 +7131,7 @@ Dim ser1 As New ChartSeries("Series 1")
 
 ser1.Type = ChartSeriesType.StackingColumn
 
-' specifing group name .
+' specifying group name .
 
 ser1.StackingGroup = "FirstGroup"
 
@@ -7139,7 +7139,7 @@ Dim ser2 As New ChartSeries("Series 2")
 
 ser2.Type = ChartSeriesType.StackingColumn
 
-' specifing group name .
+' specifying group name .
 
 ser2.StackingGroup = "SecondGroup"
 
@@ -7147,7 +7147,7 @@ Dim ser3 As New ChartSeries("Series 3")
 
 ser3.Type = ChartSeriesType.StackingColumn
 
-' specifing group name .
+' specifying group name .
 
 ser3.StackingGroup = "FirstGroup"
 
@@ -7294,7 +7294,7 @@ Dim str As String = Me.chartControl1.Series(0).Summary.MaxY.ToString()
 
 Dim str1 As String = Me.chartControl1.Series(0).Summary.MinY.ToString() 
 
-label1.Text = "Summary" + "" & Chr(10) & "" + " MaxY Value : " + str + "" & Chr(10) & "" + "MinY Value : " + str1
+label1.Text = "Summary" + "" & Char(10) & "" + " MaxY Value : " + str + "" & Char(10) & "" + "MinY Value : " + str1
 
 
 
@@ -8791,7 +8791,7 @@ ChartCustomPoint cp = new ChartCustomPoint();
 
 
 
-// Gets the series index and point index if the Customtype is Pointfollow.
+// Gets the series index and point index if the CustomType is PointFollow.
 
 cp.PointIndex = 1;
 
@@ -8851,7 +8851,7 @@ cp As ChartCustomPoint = New ChartCustomPoint()
 
 
 
-'Gets the series index and point index if the Customtype is Pointfollow.
+'Gets the series index and point index if the CustomType is PointFollow.
 
 cp.PointIndex = 1
 
@@ -8984,7 +8984,7 @@ ChartCustomPoint cp = new ChartCustomPoint();
 
 cp.CustomType = ChartCustomPointType.ChartCoordinates;
 
-//Set the series index if the Customtype is ChartCoordinates in multiple axis
+//Set the series index if the CustomType is ChartCoordinates in multiple axis
 
 cp.SeriesIndex = 0;
 
@@ -9016,7 +9016,7 @@ Dim cp As ChartCustomPoint = New ChartCustomPoint()
 
 cp.CustomType = ChartCustomPointType.ChartCoordinates
 
-'Set the series index if the Customtype is ChartCoordinates in multiple axis
+'Set the series index if the CustomType is ChartCoordinates in multiple axis
 
 cp.SeriesIndex = 0
 
