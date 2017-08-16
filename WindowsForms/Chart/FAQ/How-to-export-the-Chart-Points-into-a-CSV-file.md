@@ -37,7 +37,7 @@ foreach(ChartSeries series in this.chartControl1.Series)
 
 
 
-         string yvaluescsv = String.Empty;
+         string yValuesCSV = String.Empty;
 
          int count = point.YValues.Length;
 
@@ -45,15 +45,15 @@ foreach(ChartSeries series in this.chartControl1.Series)
 
          {
 
-              yvaluescsv += point.YValues[i];
+              yValuesCSV += point.YValues[i];
 
               if(i != count-1)
 
-              yvaluescsv += comma;
+              yValuesCSV += comma;
 
          }
 
-         csvLine = seriesName + "-" + seriesType + comma + point.X + comma + yvaluescsv;
+         csvLine = seriesName + "-" + seriesType + comma + point.X + comma + yValuesCSV;
 
          csvContent += csvLine + "\r\n";
 
@@ -95,7 +95,7 @@ For Each series In Me.chartControl1.Series
 
          Dim point As ChartPoint = series.Points(p)
 
-         Dim yvaluescsv As String = String.Empty
+         Dim yValuesCSV As String = String.Empty
 
          Dim count As Integer = point.YValues.Length
 
@@ -103,17 +103,17 @@ For Each series In Me.chartControl1.Series
 
          For i = 0 To count - 1
 
-            yvaluescsv += point.YValues(i).ToString()
+            yValuesCSV += point.YValues(i).ToString()
 
             If i &lt;&gt; count - 1 Then
 
-            yvaluescsv += comma
+            yValuesCSV += comma
 
             End If
 
          Next i
 
-         csvLine = seriesName + "-" + seriesType + comma + point.X.ToString() + comma + yvaluescsv
+         csvLine = seriesName + "-" + seriesType + comma + point.X.ToString() + comma + yValuesCSV
 
          csvContent += csvLine + vbCr + vbLf
 

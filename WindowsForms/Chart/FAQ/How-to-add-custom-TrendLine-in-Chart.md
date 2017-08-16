@@ -25,21 +25,21 @@ ChartPoint ptStart = this.chart.ChartArea.GetValueByPoint(start);
 
 ChartPoint ptEnd = this.chart.ChartArea.GetValueByPoint(end);
 
-ChartSeries tseries = this.chart.Model.NewSeries("TrendLine", ChartSeriesType.Line);
+ChartSeries series = this.chart.Model.NewSeries("TrendLine", ChartSeriesType.Line);
 
-tseries.Points.Add(ptStart);
+series.Points.Add(ptStart);
 
-tseries.Points.Add(ptEnd);
+series.Points.Add(ptEnd);
 
-this.chart.Series.Add(tseries);
+this.chart.Series.Add(series);
 
-tseries.LegendItem.Visible = false;
+series.LegendItem.Visible = false;
 
 
 
 // Specify the color for the lines.
 
-tseries.Style.Interior = new Syncfusion.Drawing.BrushInfo(ptStart.YValues[0] < ptEnd.YValues[0] ? Color.DarkGreen : Color.Red); 
+series.Style.Interior = new Syncfusion.Drawing.BrushInfo(ptStart.YValues[0] < ptEnd.YValues[0] ? Color.DarkGreen : Color.Red); 
 
 {% endhighlight %}
 
@@ -49,21 +49,21 @@ tseries.Style.Interior = new Syncfusion.Drawing.BrushInfo(ptStart.YValues[0] < p
 
 ' Creating Custom Points
 
-Dim tlineAdder As TrendLineAdder
+Dim tLineAdder As TrendLineAdder
 
 Dim ptStart As ChartPoint = Me.chart.ChartArea.GetValueByPoint(start)
 
 Dim ptEnd As ChartPoint = Me.chart.ChartArea.GetValueByPoint(end_Renamed)
 
-Dim tseries As ChartSeries = Me.chart.Model.NewSeries("TrendLine", ChartSeriesType.Line)
+Dim series As ChartSeries = Me.chart.Model.NewSeries("TrendLine", ChartSeriesType.Line)
 
-tseries.Points.Add(ptStart)
+series.Points.Add(ptStart)
 
-tseries.Points.Add(ptEnd)
+series.Points.Add(ptEnd)
 
-Me.chart.Series.Add(tseries)
+Me.chart.Series.Add(series)
 
-tseries.LegendItem.Visible = False
+series.LegendItem.Visible = False
 
 
 
@@ -71,11 +71,11 @@ tseries.LegendItem.Visible = False
 
 If ptStart.YValues(0) < ptEnd.YValues(0) Then
 
-tseries.Style.Interior = New Syncfusion.Drawing.BrushInfo(Color.DarkGreen)
+series.Style.Interior = New Syncfusion.Drawing.BrushInfo(Color.DarkGreen)
 
 Else
 
-tseries.Style.Interior = New Syncfusion.Drawing.BrushInfo(Color.Red)
+series.Style.Interior = New Syncfusion.Drawing.BrushInfo(Color.Red)
 
 End If
 

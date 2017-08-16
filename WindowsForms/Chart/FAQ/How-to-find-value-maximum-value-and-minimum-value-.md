@@ -46,7 +46,7 @@ It should return the first chart point with the specified X or Y-value, and shou
 
 
 
-dbl = Int64.Parse(txBxValue.Text);
+dbl = Int64.Parse(textBoxValue.Text);
 
 ChartPoint dp1 = this.chartControl1.Series[0].Summary.FindValue(dbl);
 
@@ -56,7 +56,7 @@ ChartPoint dp1 = this.chartControl1.Series[0].Summary.FindValue(dbl);
 
 
 
-dbl = Int64.Parse(txBxValue.Text)
+dbl = Int64.Parse(textBoxValue.Text)
 
 Dim dp1 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl)
 
@@ -98,13 +98,13 @@ It should return the first chart point with a maximum value. The search should s
 
 
 
-String str = txBxString.Text;
+String str = textBoxString.Text;
 
-staIndx = Int32.Parse(txBxIndex.Text);
+startIndex = Int32.Parse(textBoxIndex.Text);
 
-endIndx = Int32.Parse(textBox1.Text);
+endIndex = Int32.Parse(textBox1.Text);
 
-ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMinValue(str, ref staIndx, endIndx);
+ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMinValue(str, ref startIndex, endIndex);
 
 {% endhighlight %}
 
@@ -112,13 +112,13 @@ ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMinValue(str, ref staI
 
 
 
-Dim str As String = txBxString.Text
+Dim str As String = textBoxString.Text
 
-staIndx = Int32.Parse(txBxIndex.Text)
+startIndex = Int32.Parse(textBoxIndex.Text)
 
-endIndx = Int32.Parse(textBox1.Text)
+endIndex = Int32.Parse(textBox1.Text)
 
-Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMinValue(str, ref staIndx, endIndx)
+Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMinValue(str, ref startIndex, endIndex)
 
 {% endhighlight %}
 
@@ -156,13 +156,13 @@ It should return the first Chart point with a minimum value. The search should s
 
 
 
-String str = txBxString.Text;
+String str = textBoxString.Text;
 
-staIndx = Int32.Parse(txBxIndex.Text);
+startIndx = Int32.Parse(textBoxIndex.Text);
 
-endIndx = Int32.Parse(textBox1.Text);
+endIndex = Int32.Parse(textBox1.Text);
 
-ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMaxValue(str, ref staIndx, endIndx);
+ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMaxValue(str, ref startIndex, endIndex);
 
 {% endhighlight %}
 
@@ -170,13 +170,13 @@ ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMaxValue(str, ref staI
 
 
 
-Dim str As String = txBxString.Text
+Dim str As String = textBoxString.Text
 
-staIndx = Int32.Parse(txBxIndex.Text)
+startIndex = Int32.Parse(textBoxIndex.Text)
 
-endIndx = Int32.Parse(textBox1.Text)
+endIndex = Int32.Parse(textBox1.Text)
 
-Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMaxValue(str, staIndx, endIndx)
+Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMaxValue(str, startIndex, endIndex)
 
 {% endhighlight %}
 

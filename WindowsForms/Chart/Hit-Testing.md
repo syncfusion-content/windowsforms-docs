@@ -38,9 +38,9 @@ private void chartControl_MouseMove(object sender,System.Windows.Forms.MouseEven
 
 {
 
-       ChartPoint chpt = this.chartControl.ChartArea.GetValueByPoint( new Point( e.X, e.Y ) );
+       ChartPoint point = this.chartControl.ChartArea.GetValueByPoint( new Point( e.X, e.Y ) );
 
-       string text = "Result of method GetValueByPoint - {" + chpt.X.ToString() + "," + chpt.YValues[0].ToString() + "}" ;
+       string text = "Result of method GetValueByPoint - {" + point.X.ToString() + "," + point.YValues[0].ToString() + "}" ;
 
        toolTip.SetToolTip( chartControl, text );
 
@@ -54,9 +54,9 @@ private void chartControl_MouseMove(object sender,System.Windows.Forms.MouseEven
 
 Private Sub chartControl_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
 
-    Dim chpt As ChartPoint = Me.chartControl.ChartArea.GetValueByPoint(New Point(e.X, e.Y))
+    Dim point As ChartPoint = Me.chartControl.ChartArea.GetValueByPoint(New Point(e.X, e.Y))
 
-    Dim [text] As String = "Result of method GetValueByPoint - {" + chpt.X.ToString() + "," + chpt.YValues(0).ToString() + "}" 
+    Dim [text] As String = "Result of method GetValueByPoint - {" + point.X.ToString() + "," + point.YValues(0).ToString() + "}" 
 
     toolTip.SetToolTip(chartControl, text)
 
@@ -82,11 +82,11 @@ The Legend.GetItemBy method will let you get the reference to a legend item at a
 
 private ToolTip toolTip2;
 
-this.chartControl1.Legend.MouseHover += new MouseEventHandler(lgnd_MouseHover);
+this.chartControl1.Legend.MouseHover += new MouseEventHandler(legend_MouseHover);
 
 
 
-void lgnd_MouseHover(object sender, EventArgs e)
+void legend_MouseHover(object sender, EventArgs e)
 
 {
 
@@ -106,11 +106,11 @@ void lgnd_MouseHover(object sender, EventArgs e)
 
 private toolTip2 As ToolTip
 
-AddHandler Me.chartControl1.Legend.MouseHover, AddressOf lgnd_MouseHover
+AddHandler Me.chartControl1.Legend.MouseHover, AddressOf legend_MouseHover
 
 
 
-Private Sub lgnd_MouseHover(ByVal sender As Object, ByVal e As EventArgs)
+Private Sub legend_MouseHover(ByVal sender As Object, ByVal e As EventArgs)
 
     ' Get the item at the specified location..
 

@@ -103,7 +103,7 @@ private void chartControl1_ChartRegionDoubleClick(object sender, ChartRegionMous
 
 {
 
-    if (this.chkRegionDoubleClick.Checked)
+    if (this.chartRegionDoubleClick.Checked)
 
     {
 
@@ -160,7 +160,7 @@ AddHandler Me.chartControl1.ChartRegionDoubleClick, AddressOf Me.chartControl1_C
 
 Private Sub chartControl1_ChartRegionDoubleClick(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
 
-    If Me.chkRegionDoubleClick.Checked Then
+    If Me.chartRegionDoubleClick.Checked Then
 
         If e.Region.SeriesIndex = 0 Then
 
