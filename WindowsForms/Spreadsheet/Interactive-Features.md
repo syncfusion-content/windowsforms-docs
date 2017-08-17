@@ -206,20 +206,20 @@ spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
  public ContextMenu CustomTabItemContextMenu()
  {
     var contextMenu = new ContextMenuStrip();
-    contextmenu.BackColor = Color.White;
-    contextmenu.RenderMode = ToolStripRenderMode.System;
-    var Insertrowicon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertrow.png", UriKind.Relative)) };
-    var Insertrow = new ToolStripMenuItem() { BackColor = Color.White, Text = "InsertRow" };           
-    Insertrow.Image = Insertrowicon;
-    Insertrow.Click += Insertrow_Click;
+    contextMenu.BackColor = Color.White;
+    contextMenu.RenderMode = ToolStripRenderMode.System;
+    var insertRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertrow.png", UriKind.Relative)) };
+    var insertRow = new ToolStripMenuItem() { BackColor = Color.White, Text = "InsertRow" };           
+    insertRow.Image = insertRowIcon;
+    insertRow.Click += insertRow_Click;
 
-    var Deleterowicon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleterow.png", UriKind.Relative)) };
-    var Deleterow = new ToolStripMenuItem() { BackColor = Color.White, Text = "DeleteRow"};
-    Deleterow.Image = Deleterowicon;
-    Deleterow.Click += Deleterow_Click;
+    var deleteRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleterow.png", UriKind.Relative)) };
+    var deleteRow = new ToolStripMenuItem() { BackColor = Color.White, Text = "DeleteRow"};
+    deleteRow.Image = deleteRowIcon;
+    deleteRow.Click += deleteRow_Click;
     
-    contextMenu.Items.Add(Insertrow);
-    contextMenu.Items.Add(Deleterow);
+    contextMenu.Items.Add(insertRow);
+    contextMenu.Items.Add(deleteRow);
     return contextMenu;
  }
 
@@ -253,7 +253,7 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
 {
     //Adding Customized Menu item
         
-    var PasteSpecial = new ToolStripMenuItem(){ BackColor = Color.White, Name = "PasteSpecialitem"};
+    var PasteSpecial = new ToolStripMenuItem(){ BackColor = Color.White, Name = "PasteSpecial"};
     PasteSpecial.Text = "PasteSpecial";
     Image paste = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\paste.png", UriKind.Relative)) };
     PasteSpecial.Image = paste;

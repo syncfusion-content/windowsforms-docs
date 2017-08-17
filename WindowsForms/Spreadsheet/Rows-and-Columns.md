@@ -34,7 +34,7 @@ Spreadsheet provides support for dynamically inserting rows and columns into a w
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are trigerred while inserting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
 
 * [RowsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
 * [ColumnsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsInserted_EV.html)
@@ -85,7 +85,7 @@ Spreadsheet provides support for deleting rows and columns from a worksheet,
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are trigerred while deleting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
 
 * [RowsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~RowsRemoved_EV.html)
 * [ColumnsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsRemoved_EV.html)
@@ -187,7 +187,7 @@ Spreadsheet provides support for Freeze panes to keep an area of a worksheet vis
 {% tabs %}
 {% highlight c# %}
 
-//Freezepanes
+//Freeze panes
 
 //To Freeze 4 rows and 4 columns
 
@@ -207,7 +207,7 @@ Spreadsheet provides support to unfreeze the freeze panes in the worksheet of Sp
 {% tabs %}
 {% highlight c# %}
 
-//Unfreezepanes
+//Unfreeze panes
 
 //To Unfreeze 4 rows and 4 columns
 
