@@ -169,7 +169,7 @@ Spreadsheet provides support to zoom in and zoom out of a worksheet view. The pr
 {% tabs %}
 {% highlight c# %}
 
-//zoomfactor
+//zoom factor
  spreadsheet.SetZoomFactor("Sheet1", 200);
 
 {% endhighlight %}
