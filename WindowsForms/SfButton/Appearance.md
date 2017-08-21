@@ -201,7 +201,7 @@ Please find the **SfButton** with rounded rectangle below,
 
 Please refer the below sample shows how to implement the rounded rectangle in **SfButton** control.
 
-[Sample](http://www.syncfusion.com/downloads/support/directtrac/general/SFBUTT~1449710690.ZIP# "")
+[Sample](http://www.syncfusion.com/downloads/support/directtrac/general/SFBUTT~1449710690.ZIP#)
 
 **Note**
 
