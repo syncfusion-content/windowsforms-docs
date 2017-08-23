@@ -14,15 +14,15 @@ The PivotGrid for Windows Forms provides built-in support for freezing column an
 
 {% highlight c# %}
 
-// To Freeze Grid Headersthis.
-PivotGridControl1.FreezeHeaders = true;
+// To Freeze Grid Headers.
+this.PivotGridControl1.FreezeHeaders = true;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-' To Freeze Grid HeadersMe.
-PivotGridControl1.FreezeHeaders = True
+' To Freeze Grid Headers.
+Me.PivotGridControl1.FreezeHeaders = True
 
 {% endhighlight %}
 

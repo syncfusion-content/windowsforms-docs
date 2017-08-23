@@ -192,7 +192,7 @@ The following code example illustrates usage of this property to set the require
 
 {% highlight c# %}
 
-this.gridListControl1.BackgroundImage = Image.FromFile("Colud.jpg");
+this.gridListControl1.BackgroundImage = Image.FromFile("Cloud.jpg");
 
 {% endhighlight  %}
 
@@ -200,7 +200,7 @@ this.gridListControl1.BackgroundImage = Image.FromFile("Colud.jpg");
 {% highlight vbnet %}
 
 
-Me.gridListControl1.BackgroundImage = Image.FromFile("Colud.jpg")
+Me.gridListControl1.BackgroundImage = Image.FromFile("Cloud.jpg")
 {% endhighlight  %}
 
 
