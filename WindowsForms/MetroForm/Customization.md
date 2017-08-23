@@ -234,6 +234,50 @@ Me.CaptionButtonHoverColor = System.Drawing.Color.Lime
 ![](Customization_images/Caption-Bar-Customization_img6.png)
 
 
+## Caption Bar
+
+User can customize the Brush effects in Caption Bar using the event CaptionBarPaint and the property CaptionBarBrush. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Applied Gradient effects in Caption Bar. 
+this.CaptionBarBrush = new LinearGradientBrush(new Rectangle(0, 0, this.Width, this.CaptionBarHeight), Color.DarkRed, Color.Yellow, LinearGradientMode.BackwardDiagonal);
+
+// Event to customize the Caption Bar
+this.CaptionBarPaint += new PaintEventHandler(Form1_CaptionBarPaint);
+
+// Event to overdraw Caption Bar appearance
+void Form1_CaptionBarPaint(object sender, PaintEventArgs e)
+{
+     e.Graphics.FillRectangle(new LinearGradientBrush(e.ClipRectangle, Color.DarkRed, Color.Yellow, LinearGradientMode.BackwardDiagonal), e.ClipRectangle);
+}
+
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Applied Gradient effects in Caption Bar. 
+Me.CaptionBarBrush = New LinearGradientBrush(New Rectangle(0, 0, Me.Width, Me.CaptionBarHeight), Color.DarkRed, Color.Yellow, LinearGradientMode.BackwardDiagonal)
+
+' Event to customize the Caption Bar
+Me.CaptionBarPaint += New PaintEventHandler(Form1_CaptionBarPaint)
+
+' Event to overdraw Caption Bar appearance
+Private Sub Form1_CaptionBarPaint(sender As Object, e As PaintEventArgs)
+	e.Graphics.FillRectangle(New LinearGradientBrush(e.ClipRectangle, Color.DarkRed, Color.Yellow, LinearGradientMode.BackwardDiagonal), e.ClipRectangle)
+End Sub
+
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Customization_images/Caption-Bar-Customization_img7.png)
+
 ## Mouse Events for Caption Image
 
 ### ImageMouseDown Event
