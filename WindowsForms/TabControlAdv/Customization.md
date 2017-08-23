@@ -216,7 +216,7 @@ The code should be in the following format:
 
 {% highlight c# %}
 
-this.tabPageAdv.Image = Image.FromFile(imagepath);
+this.tabPageAdv.Image = Image.FromFile(imagePath);
 
 this.tabPageAdv.ImageSize = new System.Drawing.Size(height,width);
 
