@@ -129,7 +129,7 @@ In order to use the recurring appointments data provider of the Schedule control
 
 {% highlight c# %}
 
-IRecurringScheduleDataProvider dp = scheduleProvider as IRecurringScheduleDataProvider;
+IRecurringScheduleDataProvider dataProvider = scheduleProvider as IRecurringScheduleDataProvider;
 
 IScheduleAppointment app = scheduleProvider.NewScheduleAppointment();
 
@@ -147,7 +147,7 @@ item.Subject = "Call Joe";
 
 item.RecurrenceRule = "05/06/2015 ;05/07/2015 ;Every DAY;EVERY MIN 10";
 
-dp.AddNewRecurringAppointments(item, new DateTime(2015, 09, 09));
+dataProvider.AddNewRecurringAppointments(item, new DateTime(2015, 09, 09));
 
 }
 
@@ -156,7 +156,7 @@ dp.AddNewRecurringAppointments(item, new DateTime(2015, 09, 09));
 
 {% highlight vbnet %}
 
-Dim dp As IRecurringScheduleDataProvider = TryCast(scheduleProvider, IRecurringScheduleDataProvider)
+Dim dataProvider As IRecurringScheduleDataProvider = TryCast(scheduleProvider, IRecurringScheduleDataProvider)
 
 Dim app As IScheduleAppointment = scheduleProvider.NewScheduleAppointment()
 
@@ -172,7 +172,7 @@ item.Subject = "Call Joe"
 
 item.RecurrenceRule = "05/06/2015 ;05/07/2015 ;Every DAY;EVERY MIN 10"
 
-dp.AddNewRecurringAppointments(item, New DateTime(2015, 09, 09))
+dataProvider.AddNewRecurringAppointments(item, New DateTime(2015, 09, 09))
 
 End If
 

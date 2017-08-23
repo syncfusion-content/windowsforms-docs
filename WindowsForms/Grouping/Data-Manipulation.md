@@ -26,7 +26,7 @@ Another collection that is part of the schema information in the Engine.TableDes
 
 		{
 
-				// Create an arraylist of random MyObjects.
+				// Create an array list of random MyObjects.
 
 				ArrayList list = new ArrayList();
 
@@ -63,7 +63,7 @@ Another collection that is part of the schema information in the Engine.TableDes
 
 		Sub Main()
 
-				' Create an arraylist of random MyObjects.
+				' Create an array list of random MyObjects.
 
 				Dim list As New ArrayList()
 
@@ -144,9 +144,9 @@ Do the following steps:
 
 		// Filter on [D] = d1
 
-		RecordFilterDescriptor rfd = new RecordFilterDescriptor("[D] LIKE 'd1'");
+		RecordFilterDescriptor recordFilterDescriptor = new RecordFilterDescriptor("[D] LIKE 'd1'");
 
-		groupingEngine.TableDescriptor.RecordFilters.Add(rfd);
+		groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
 
 
 
@@ -207,9 +207,9 @@ Do the following steps:
 
 		' Filter on [D] = d1
 
-		Dim rfd As New RecordFilterDescriptor("[D] LIKE 'd1'")
+		Dim recordFilterDescriptor As New RecordFilterDescriptor("[D] LIKE 'd1'")
 
-				groupingEngine.TableDescriptor.RecordFilters.Add(rfd)
+				groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
 
 
 
@@ -246,9 +246,9 @@ Do the following steps:
 
 
 
-		rfd = new RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2");
+		recordFilterDescriptor = new RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2");
 
-		groupingEngine.TableDescriptor.RecordFilters.Add(rfd);
+		groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
 
 
 
@@ -283,9 +283,9 @@ Do the following steps:
 
 		groupingEngine.TableDescriptor.RecordFilters.Clear()
 
-				rfd = New RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2")
+				recordFilterDescriptor = New RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2")
 
-				groupingEngine.TableDescriptor.RecordFilters.Add(rfd)
+				groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
 
 
 
@@ -331,7 +331,7 @@ To add an expression, you need to create an ExpressionFieldDescriptor and add it
 
 
 
-		// Create an arraylist of random MyObjects.
+		// Create an array list of random MyObjects.
 
 		ArrayList list = new ArrayList();
 
@@ -366,7 +366,7 @@ To add an expression, you need to create an ExpressionFieldDescriptor and add it
 
    ~~~ vbnet
 
-		' Create an arraylist of random MyObjects.
+		' Create an array list of random MyObjects.
 
 		Dim list As New ArrayList()
 
@@ -429,9 +429,9 @@ To add an expression, you need to create an ExpressionFieldDescriptor and add it
 
 				// Add an expression property.
 
-		ExpressionFieldDescriptor efd = new ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2");
+		ExpressionFieldDescriptor expressionFieldDescriptor = new ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2");
 
-				groupingEngine.TableDescriptor.ExpressionFields.Add(efd);
+				groupingEngine.TableDescriptor.ExpressionFields.Add(expressionFieldDescriptor);
 
 
 
@@ -483,9 +483,9 @@ To add an expression, you need to create an ExpressionFieldDescriptor and add it
 
 		' Add an expression property.
 
-		Dim efd As New ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2")
+		Dim expressionFieldDescriptor As New ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2")
 
-		groupingEngine.TableDescriptor.ExpressionFields.Add(efd)
+		groupingEngine.TableDescriptor.ExpressionFields.Add(expressionFieldDescriptor)
 
 
 
@@ -516,7 +516,7 @@ In the Console Application, comment out all the code that is in the Main method 
 
 
 
-// Create an arraylist of random MyObjects.
+// Create an array list of random MyObjects.
 
 ArrayList list = new ArrayList();
 
@@ -607,7 +607,7 @@ Console.ReadLine();
 
 
 
-' Create an arraylist of random MyObjects.
+' Create an array list of random MyObjects.
 
 Dim list As New ArrayList()
 
@@ -708,7 +708,7 @@ The following code snippets illustrate the syntax for these overloads:
 
 public int Add(string propertyName);
 
-public int Add(string propertyName, ListSortDirection dir);
+public int Add(string propertyName, ListSortDirection direction);
 
 public int Add(SortColumnDescriptor sdc); 
 
@@ -720,7 +720,7 @@ public int Add(SortColumnDescriptor sdc);
 
 Overloads Public Function Add(propertyName As String) As Integer
 
-Overloads Public Function Add(propertyName As String, dir As ListSortDirection) As Integer
+Overloads Public Function Add(propertyName As String, direction As ListSortDirection) As Integer
 
 Overloads Public Function Add(sdc As SortColumnDescriptor) As Integer
 
@@ -864,7 +864,7 @@ The following steps illustrate how to do custom sorting using the IComparer prop
 
    ~~~ cs
 
-		// Create an arraylist of random MyObjects.
+		// Create an array list of random MyObjects.
 
 		ArrayList list = new ArrayList();
 
@@ -963,7 +963,7 @@ The following steps illustrate how to do custom sorting using the IComparer prop
 
 
 
-		' Create an arraylist of random MyObjects.
+		' Create an array list of random MyObjects.
 
 		Dim list As New ArrayList()
 
