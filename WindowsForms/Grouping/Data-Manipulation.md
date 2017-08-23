@@ -762,9 +762,9 @@ The following steps illustrate how to do custom sorting using the IComparer prop
 
 					   {
 
-							 int sx = 0;
+							 int value1 = 0;
 
-							 int sy = 0;
+							 int value2 = 0;
 
 							 try
 
@@ -772,11 +772,11 @@ The following steps illustrate how to do custom sorting using the IComparer prop
 
 								  // Ignoring the leading character to have numerical sorting.
 
-								 sx = int.Parse(x.ToString().Substring(1));
+								 value1 = int.Parse(x.ToString().Substring(1));
 
-								 sy = int.Parse(y.ToString().Substring(1));
+								 value2 = int.Parse(y.ToString().Substring(1));
 
-								 return sy - sx;
+								 return value2 - value1;
 
 							 }
 
@@ -784,7 +784,7 @@ The following steps illustrate how to do custom sorting using the IComparer prop
 
 							 {
 
-								throw new ArgumentException("A must be in the form 'annnn'");
+								throw new ArgumentException("A must be in the form");
 
 							 }
 
@@ -828,19 +828,19 @@ The following steps illustrate how to do custom sorting using the IComparer prop
 
 							Else
 
-								Dim sx As Integer = 0
+								Dim value1 As Integer = 0
 
-								Dim sy As Integer = 0
+								Dim value2 As Integer = 0
 
 								Try
 
 									' Ignoring the leading character to have numerical sorting.
 
-									sx = Integer.Parse(x.ToString().Substring(1))
+									value1 = Integer.Parse(x.ToString().Substring(1))
 
-									sy = Integer.Parse(y.ToString().Substring(1))
+									value2 = Integer.Parse(y.ToString().Substring(1))
 
-									Return sy - sx
+									Return value2 - value1
 
 								Catch
 

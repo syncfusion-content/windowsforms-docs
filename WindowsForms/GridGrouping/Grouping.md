@@ -518,18 +518,18 @@ The below code explains the implementation of `IGroupByColumnCategorizer` interf
      //defines a group and returns a group category object (here returns 1 through 5)
      public static int GetCategory(int i)
      {
-         int ret = 0;
+         int value = 0;
          if (i < 10)
-             ret = 1;
+             value = 1;
          else if (i >= 10 && i < 20)
-             ret = 2;
+             value = 2;
          else if (i >= 20 && i < 30)
-             ret = 3;
+             value = 3;
          else if (i >= 30 && i < 40)
-             ret = 4;
+             value = 4;
          else
-             ret = 5;
-         return ret;
+             value = 5;
+         return value;
      }
      public object GetGroupByCategoryKey(SortColumnDescriptor column, bool isForeignKey, Record record)
      {
@@ -548,19 +548,19 @@ The below code explains the implementation of `IGroupByColumnCategorizer` interf
      Implements Syncfusion.Grouping.IGroupByColumnCategorizer
      'defines a group and returns a group category object (here returns 1 through 5)
      Public Shared Function GetCategory(ByVal i As Integer) As Integer
-         Dim ret As Integer = 0
+         Dim value As Integer = 0
          If i < 10 Then
-             ret = 1
+             value = 1
          ElseIf i >= 10 AndAlso i < 20 Then
-             ret = 2
+             value = 2
          ElseIf i >= 20 AndAlso i < 30 Then
-             ret = 3
+             value = 3
          ElseIf i >= 30 AndAlso i < 40 Then
-             ret = 4
+             value = 4
          Else
-             ret = 5
+             value = 5
          End If
-         Return ret
+         Return value
      End Function
      Public Function GetGroupByCategoryKey(ByVal column As SortColumnDescriptor, ByVal isForeignKey As Boolean, ByVal record As Record) As Object
          Return GetCategory(Integer.Parse(record.GetValue(column).ToString()))
@@ -651,26 +651,26 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.W
             && e.TableCellIdentity.GroupedColumn.Name == "Col2")
         {
             int cat = (int)e.TableCellIdentity.DisplayElement.ParentGroup.Category;
-            string ret = "";
+            string value = "";
             switch (cat)
             {
                 case 1:
-                    ret = " < 10";
+                    value = " < 10";
                     break;
                 case 2:
-                    ret = "10 - 19";
+                    value = "10 - 19";
                     break;
                 case 3:
-                    ret = "20 - 29";
+                    value = "20 - 29";
                     break;
                 case 4:
-                    ret = "30 - 39";
+                    value = "30 - 39";
                     break;
                 case 5:
-                    ret = " >= 40";
+                    value = " >= 40";
                     break;
             }
-            e.Style.CellValue = String.Format("{0}: {1} Items.", ret, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount());
+            e.Style.CellValue = String.Format("{0}: {1} Items.", value, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount());
         }
     }
 }
@@ -683,20 +683,20 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
     If e.TableCellIdentity.GroupedColumn IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.ParentGroup IsNot Nothing AndAlso TypeOf e.TableCellIdentity.DisplayElement.ParentGroup.Category Is Integer Then
         If TypeOf e.TableCellIdentity.DisplayElement Is CaptionRow AndAlso e.TableCellIdentity.GroupedColumn.Name = "Col2" Then
             Dim cat As Integer = CInt(Fix(e.TableCellIdentity.DisplayElement.ParentGroup.Category))
-            Dim ret As String = ""
+            Dim value As String = ""
             Select Case cat
                 Case 1
-                    ret = " < 10"
+                    value = " < 10"
                 Case 2
-                    ret = "10 - 19"
+                    value = "10 - 19"
                 Case 3
-                    ret = "20 - 29"
+                    value = "20 - 29"
                 Case 4
-                    ret = "30 - 39"
+                    value = "30 - 39"
                 Case 5
-                    ret = " >= 40"
+                    value = " >= 40"
             End Select
-            e.Style.CellValue = String.Format("{0}: {1} Items.", ret, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount())
+            e.Style.CellValue = String.Format("{0}: {1} Items.", value, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount())
         End If
     End If
 End Sub

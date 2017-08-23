@@ -191,7 +191,7 @@ Follow the steps that are given below to do this.
    ~~~ cs
 				//Sets the derived GridControl to the grid.
 
-				this.gridControl1 = new VscrollOptimization.DerivedGridControl();
+				this.gridControl1 = new verticalScrollOptimization.DerivedGridControl();
 
 
    ~~~
@@ -202,7 +202,7 @@ Follow the steps that are given below to do this.
 
 				'Sets the derived GridControl to the grid.
 
-				Me.GridControl1 = New VscrollOptimization.DerivedGridControl
+				Me.GridControl1 = New verticalScrollOptimization.DerivedGridControl
    ~~~ 
    {:.prettyprint}
    

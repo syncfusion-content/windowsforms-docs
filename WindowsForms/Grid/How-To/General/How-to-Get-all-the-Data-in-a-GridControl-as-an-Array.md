@@ -19,12 +19,12 @@ Using an indexer to retrieve grid[row, col].CellValue triggers events(like Query
 
 //Accesses data through the GridData object.... 
 GridData gridData = this.gridControl1.Data;
-int numRows = gridData.RowCount;
-int numCols = gridData.ColCount;
-Console.WriteLine("{0} rows by {1} cols", numRows, numCols);
-for(int i = 1; i <= numRows; ++i)
+int noOfRows = gridData.RowCount;
+int noOfCols = gridData.ColCount;
+Console.WriteLine("{0} rows by {1} cols", noOfRows, noOfCols);
+for(int i = 1; i <= noOfRows; ++i)
 {
-for(int j = 1; j <= numCols; ++j)
+for(int j = 1; j <= noOfCols; ++j)
 {
 int arrayCount=0;
 if(gridData[i, j] != null)
@@ -48,13 +48,13 @@ Console.WriteLine("");
 
 'Accesses data through the GridData object....
    Dim gridData As GridData = Me.gridControl1.Data
-   Dim numRows As Integer = gridData.RowCount
-   Dim numCols As Integer = gridData.ColCount
-   Console.WriteLine("{0} rows by {1} cols", numRows, numCols)
+   Dim noOfRows As Integer = gridData.RowCount
+   Dim noOfCols As Integer = gridData.ColCount
+   Console.WriteLine("{0} rows by {1} cols", noOfRows, noOfCols)
    Dim i As Integer = 1
-   Do While i <= numRows
+   Do While i <= noOfRows
    Dim j As Integer = 1
-   Do While j <= numCols
+   Do While j <= noOfCols
    Dim arrayCount As Integer = 0
    If Not gridData(i, j) Is Nothing Then
 
