@@ -172,17 +172,17 @@ public static ProductSalesCollection GetSalesData()
 /// Geography
 string[] countries = new string[] { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" };
 
-string[] ausStates = new string[] { "New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria" };
+string[] states1 = new string[] { "New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria" };
 
-string[] canadaStates = new string[] { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
+string[] states2 = new string[] { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
 
-string[] franceStates = new string[] { "Charente Maritime", "Essonne", "Garonne (Haute)", "Gers", };
+string[] states3 = new string[] { "Charente Maritime", "Essonne", "Garonne (Haute)", "Gers", };
 
-string[] germanyStates = new string[] { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland" };
+string[] states4 = new string[] { "Munich", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland" };
 
-string[] ukStates = new string[] { "England" };
+string[] states5 = new string[] { "England" };
 
-string[] ussStates = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
+string[] states6 = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
 
 /// Time
 string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
@@ -210,32 +210,32 @@ switch (sales.Country)
 {
 case "Australia":
 {
-sales.State = ausStates[r.Next(ausStates.GetLength(0))];
+sales.State = states1[r.Next(states1.GetLength(0))];
 break;
 }
 case "Canada":
 {
-sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];
+sales.State = states2[r.Next(states2.GetLength(0))];
 break;
 }
 case "France":
 {
-sales.State = franceStates[r.Next(franceStates.GetLength(0))];
+sales.State = states3[r.Next(states3.GetLength(0))];
 break;
 }
 case "Germany":
 {
-sales.State = germanyStates[r.Next(germanyStates.GetLength(0))];
+sales.State = states4[r.Next(states4.GetLength(0))];
 break;
 }
 case "United Kingdom":
 {
-sales.State = ukStates[r.Next(ukStates.GetLength(0))];
+sales.State = states5[r.Next(states5.GetLength(0))];
 break;
 }
 case "United States":
 {
-sales.State = ussStates[r.Next(ussStates.GetLength(0))];
+sales.State = states6[r.Next(states6.GetLength(0))];
 break;
 }
 }
@@ -266,12 +266,12 @@ Public Shared Function GetSalesData() As ProductSalesCollection
 
 ''' Geography
 Dim countries() As String = {"Australia", "Canada", "France", "Germany", "United Kingdom", "United States"}
-Dim ausStates() As String = {"New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria"}
-Dim canadaStates() As String = {"Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec"}
-Dim franceStates() As String = {"Charente Maritime", "Essonne", "Garonne (Haute)", "Gers"}
-Dim germanyStates() As String = {"Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland"}
-Dim ukStates() As String = {"England"}
-Dim ussStates() As String = {"New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina"}
+Dim states1() As String = {"New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria"}
+Dim states2() As String = {"Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec"}
+Dim states3() As String = {"Charente Maritime", "Essonne", "Garonne (Haute)", "Gers"}
+Dim states4() As String = {"Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland"}
+Dim states5() As String = {"England"}
+Dim states6() As String = {"New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina"}
 
 ''' Time
 Dim dates() As String = {"FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009"}
@@ -295,22 +295,22 @@ sales.Date = dates(r.Next(r.Next(dates.GetLength(0) + 1)))
 sales.Product = products(r.Next(r.Next(products.GetLength(0) + 1)))
 Select Case sales.Country
 Case "Australia"
-sales.State = ausStates(r.Next(ausStates.GetLength(0)))
+sales.State = states1(r.Next(states1.GetLength(0)))
 Exit Select
 Case "Canada"
-sales.State = canadaStates(r.Next(canadaStates.GetLength(0)))
+sales.State = states2(r.Next(states2.GetLength(0)))
 Exit Select
 Case "France"
-sales.State = franceStates(r.Next(franceStates.GetLength(0)))
+sales.State = states3(r.Next(states3.GetLength(0)))
 Exit Select
 Case "Germany"
-sales.State = germanyStates(r.Next(germanyStates.GetLength(0)))
+sales.State = states4(r.Next(states4.GetLength(0)))
 Exit Select
 Case "United Kingdom"
-sales.State = ukStates(r.Next(ukStates.GetLength(0)))
+sales.State = states5(r.Next(states5.GetLength(0)))
 Exit Select
 Case "United States"
-sales.State = ussStates(r.Next(ussStates.GetLength(0)))
+sales.State = states6(r.Next(states6.GetLength(0)))
 Exit Select
 End Select
 listOfProductSales.Add(sales)

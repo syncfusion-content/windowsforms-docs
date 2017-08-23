@@ -15,7 +15,7 @@ You can export pivot data to excel. The exported pivot data has interaction enab
 
 ExcelExport excelExport = new ExcelExport(this.pivotChart1, Syncfusion.XlsIO.ExcelVersion.Excel2010, Syncfusion.XlsIO.ExcelChartType.Column_Clustered);
 
-            excelExport.Export(savedialog.FileName);
+            excelExport.Export(saveDialog.FileName);
 
 {% endhighlight %}
 
@@ -23,7 +23,7 @@ ExcelExport excelExport = new ExcelExport(this.pivotChart1, Syncfusion.XlsIO.Exc
 
 Dim excelExport As New ExcelExport(Me.pivotChart1, Syncfusion.XlsIO.ExcelVersion.Excel2010, Syncfusion.XlsIO.ExcelChartType.Column_Clustered)
 
-excelExport.Export(savedialog.FileName)
+excelExport.Export(saveDialog.FileName)
 
 {% endhighlight %}
 

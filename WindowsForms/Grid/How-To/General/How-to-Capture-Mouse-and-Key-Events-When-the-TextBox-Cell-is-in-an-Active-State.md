@@ -19,13 +19,13 @@ The embedded text box control gets the mouse actions while the text box is activ
  private void Form1_Load(object sender, System.EventArgs e)
 {
     //Creates TextBoxCellRenderer object.
-    GridTextBoxCellRenderer tbr = (GridTextBoxCellRenderer) this.grid.CellRenderers["TextBox"];
+    GridTextBoxCellRenderer textBoxCellRenderer = (GridTextBoxCellRenderer) this.grid.CellRenderers["TextBox"];
     
     //Handle Renderer.TextBox.MouseDown to capture mouse events. 
-    tbr.TextBox.MouseDown += new MouseEventHandler(textbox_MouseDown);
+    textBoxCellRenderer.TextBox.MouseDown += new MouseEventHandler(textbox_MouseDown);
     
     //Handle Renderer.TextBox.KeyUp to capture key events.
-    tbr.TextBox.KeyUp += new KeyEventHandler(textBox_KeyUp);
+    textBoxCellRenderer.TextBox.KeyUp += new KeyEventHandler(textBox_KeyUp);
 
 }
 
@@ -45,11 +45,11 @@ private void textBox_KeyUp(object sender, KeyEventArgs e)
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
     'Creates TextBoxCellRenderer object.
-    Dim tbr As GridTextBoxCellRenderer = CType(Me.grid.CellRenderers("TextBox"), GridTextBoxCellRenderer)
+    Dim textBoxCellRenderer As GridTextBoxCellRenderer = CType(Me.grid.CellRenderers("TextBox"), GridTextBoxCellRenderer)
 
     'Handle Renderer.TextBox.MouseDown to capture mouse events.
-    AddHandler tbr.TextBox.MouseDown, AddressOf textbox_MouseDown
-    AddHandler tbr.TextBox.KeyUp, AddressOf textBox_KeyUp
+    AddHandler textBoxCellRenderer.TextBox.MouseDown, AddressOf textbox_MouseDown
+    AddHandler textBoxCellRenderer.TextBox.KeyUp, AddressOf textBox_KeyUp
 
 'Form1_Load.
 End Sub 
