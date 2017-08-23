@@ -16,13 +16,13 @@ The TabStrip can be made visible even if there are no TabPages added. The TabCon
 {% highlight c# %}
 
 
-//Setting the visibility of tabstrip.
+//Setting the visibility of TabStrip.
 
 this.tabControlAdv1.ReserveTabSpace = true;
 
 
 
-//Specifying the height of the tabstrip.
+//Specifying the height of the TabStrip.
 
 this.tabControlAdv1.ReservedSpace = 25;
 
@@ -32,13 +32,13 @@ this.tabControlAdv1.ReservedSpace = 25;
 
 
 
-'Setting the visibility of tabstrip.
+'Setting the visibility of TabStrip.
 
 Me.tabControlAdv1.ReserveTabSpace =  True
 
 
 
-'Specifying the height of the tabstrip.
+'Specifying the height of the TabStrip.
 
 Me.tabControlAdv1.ReservedSpace = 25
 

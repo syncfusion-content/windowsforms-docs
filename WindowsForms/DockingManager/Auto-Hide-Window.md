@@ -139,25 +139,25 @@ The background color of the Auto Hide window can be customized using the propert
 
 {% highlight C# %}
 
-DockHost dhost = this.dockingManager1.ControlsArray[0].Parent as DockHost; 
+DockHost dockHost = this.dockingManager1.ControlsArray[0].Parent as DockHost; 
 
-DockHostController dhc = dhost.InternalController as DockHostController; 
+DockHostController dockHostController = dockHost.InternalController as DockHostController; 
  
-MainFormController mfc = dhc.ParentController.ToplevelController as MainFormController; 
+MainFormController mainFormController = dockHostController.ParentController.ToplevelController as MainFormController; 
          
-AHTabControl ahTabCtrlLeft = mfc.GetAHTabControl(DockingStyle.Left); 
+AHTabControl ahTabCtrlLeft = mainFormController.GetAHTabControl(DockingStyle.Left); 
 
 ahTabCtrlLeft.TabPanelBackColor = Color.Yellow; 
 
-AHTabControl ahTabCtrlBottom = mfc.GetAHTabControl(DockingStyle.Bottom); 
+AHTabControl ahTabCtrlBottom = mainFormController.GetAHTabControl(DockingStyle.Bottom); 
 
 ahTabCtrlBottom.TabPanelBackColor = Color.Green; 
 
-AHTabControl ahTabCtrlRight = mfc.GetAHTabControl(DockingStyle.Right); 
+AHTabControl ahTabCtrlRight = mainFormController.GetAHTabControl(DockingStyle.Right); 
 
 ahTabCtrlRight.TabPanelBackColor = Color.Gray; 
 
-AHTabControl ahTabCtrlTop = mfc.GetAHTabControl(DockingStyle.Top); 
+AHTabControl ahTabCtrlTop = mainFormController.GetAHTabControl(DockingStyle.Top); 
 
 ahTabCtrlTop.TabPanelBackColor = Color.YellowGreen; 
 
@@ -166,25 +166,25 @@ ahTabCtrlTop.TabPanelBackColor = Color.YellowGreen;
 
 {% highlight VB %}
 
-Dim dhost As DockHost = TryCast(Me.panel1.Parent, DockHost)
+Dim dockHost As DockHost = TryCast(Me.panel1.Parent, DockHost)
 
-Dim dhc As DockHostController = TryCast(dhost.InternalController, DockHostController)
+Dim dockHostController As DockHostController = TryCast(dockHost.InternalController, DockHostController)
 
-Dim mfc As MainFormController = TryCast(dhc.ParentController.ParentController, MainFormController)
+Dim mainFormController As MainFormController = TryCast(dockHostController.ParentController.ToplevelController, MainFormController)
 
-Dim ahTabCtrlBottom As AHTabControl = mfc.GetAHTabControl(DockingStyle.Bottom)
+Dim ahTabCtrlBottom As AHTabControl = mainFormController.GetAHTabControl(DockingStyle.Bottom)
 
 ahTabCtrlBottom.TabPanelBackColor = Color.Red
 
-Dim ahTabCtrlLeft As AHTabControl = mfc.GetAHTabControl(DockingStyle.Left)
+Dim ahTabCtrlLeft As AHTabControl = mainFormController.GetAHTabControl(DockingStyle.Left)
 
 ahTabCtrlLeft.TabPanelBackColor = Color.Green
 
-Dim ahTabCtrlRight As AHTabControl = mfc.GetAHTabControl(DockingStyle.Right)
+Dim ahTabCtrlRight As AHTabControl = mainFormController.GetAHTabControl(DockingStyle.Right)
 
 ahTabCtrlRight.TabPanelBackColor = Color.Yellow
 
-Dim ahTabCtrlTop As AHTabControl = mfc.GetAHTabControl(DockingStyle.Top)
+Dim ahTabCtrlTop As AHTabControl = mainFormController.GetAHTabControl(DockingStyle.Top)
 
 ahTabCtrlTop.TabPanelBackColor = Color.Gray
 

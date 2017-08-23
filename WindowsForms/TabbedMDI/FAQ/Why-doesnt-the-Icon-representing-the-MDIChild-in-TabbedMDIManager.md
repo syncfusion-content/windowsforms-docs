@@ -24,19 +24,19 @@ TabPageExt tabPage = mdiTabPanel.GetTabPageExtFromForm(mdiChildForm);
 
 // The new icon.
 
-Icon ico = mdiChildForm.Icon;
+Icon icon = mdiChildForm.Icon;
 
 // Get the image with the preferred size.
 
-if (ico.Size != mdiTabPanel.ImageList.ImageSize)
+if (icon.Size != mdiTabPanel.ImageList.ImageSize)
 
 // This will try to retrieve an image of the preferred size, if not found, it will create a zoomed version.
 
-ico = new Icon(ico, mdiTabPanel.ImageList.ImageSize);
+icon = new Icon(icon, mdiTabPanel.ImageList.ImageSize);
 
 // Change the icon in the tab control to the new one. 
 
-mdiTabPanel.ImageList.Images[tabPage.ImageIndex] = ico.ToBitmap();
+mdiTabPanel.ImageList.Images[tabPage.ImageIndex] = icon.ToBitmap();
 
 // Update the tab control. 
 
@@ -60,21 +60,21 @@ Dim tabPage As TabPageExt = mdiTabPanel.GetTabPageExtFromForm(mdiChildForm)
 
 ' The new icon.
 
-Dim ico As Icon = mdiChildForm.Icon
+Dim icon As Icon = mdiChildForm.Icon
 
 ' Get the image with the preferred size.
 
-If ico.Size &lt;&gt; mdiTabPanel.ImageList.ImageSize Then
+If icon.Size &lt;&gt; mdiTabPanel.ImageList.ImageSize Then
 
 ' This will try to retrieve an image of the preferred size, if not found, it will create a zoomed version.
 
-ico = New Icon(ico, mdiTabPanel.ImageList.ImageSize)
+icon = New Icon(icon, mdiTabPanel.ImageList.ImageSize)
 
 End If
 
 ' Change the icon in the tab control to the new one. 
 
-mdiTabPanel.ImageList.Images(tabPage.ImageIndex) = ico.ToBitmap()
+mdiTabPanel.ImageList.Images(tabPage.ImageIndex) = icon.ToBitmap()
 
 ' Update the tab control. 
 

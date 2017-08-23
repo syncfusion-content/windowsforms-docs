@@ -61,18 +61,18 @@ Me.dockingManager1.SetEnableDocking(Me.listView1, True)
 
 //listView1 is the dockable control. We could get it's dock properties by accessing DockHost and DockHostController.
 
-Syncfusion.Windows.Forms.Tools.DockHost dhost = this.listView1.Parent as Syncfusion.Windows.Forms.Tools.DockHost;
+Syncfusion.Windows.Forms.Tools.DockHost dockHost = this.listView1.Parent as Syncfusion.Windows.Forms.Tools.DockHost;
 
-Syncfusion.Windows.Forms.Tools.DockHostController dhc = dhost.InternalController as
+Syncfusion.Windows.Forms.Tools.DockHostController dockHostController = dockHost.InternalController as
 
 Syncfusion.Windows.Forms.Tools.DockHostController;
 
 
 //The DockInfo object will give all the information about docked control.
 
-Syncfusion.Windows.Forms.Tools.DockInfo di = dhc.GetSerCurrentDI();
+Syncfusion.Windows.Forms.Tools.DockInfo dockInfo = dockHostController.GetSerCurrentDI();
 
-MessageBox.Show(di.dStyle.ToString() + dhc.LayoutRect.ToString());
+MessageBox.Show(dockInfo.dStyle.ToString() + dockHostController.LayoutRect.ToString());
 
 {% endhighlight %}
 
@@ -82,16 +82,16 @@ MessageBox.Show(di.dStyle.ToString() + dhc.LayoutRect.ToString());
 
 ' listView1 is the dockable control. We could get it's dock properties by accessing DockHost and DockHostController.
 
-Dim dhost As Syncfusion.Windows.Forms.Tools.DockHost = CType(IIf(TypeOfMe.listView1.Parent Is Syncfusion.Windows.Forms.Tools.DockHost, Me.listView1.Parent,Nothing), Syncfusion.Windows.Forms.Tools.DockHost)
+Dim dockHost As Syncfusion.Windows.Forms.Tools.DockHost = CType(IIf(TypeOf Me.listView1.Parent Is Syncfusion.Windows.Forms.Tools.DockHost, Me.listView1.Parent,Nothing), Syncfusion.Windows.Forms.Tools.DockHost)
 
-Dim dhc As Syncfusion.Windows.Forms.Tools.DockHostController = CType(IIf(TypeOfdhost.InternalController Is Syncfusion.Windows.Forms.Tools.DockHostController, dhost.InternalController, Nothing), Syncfusion.Windows.Forms.Tools.DockHostController)
+Dim dockHostController As Syncfusion.Windows.Forms.Tools.DockHostController = CType(IIf(TypeOf dockHost.InternalController Is Syncfusion.Windows.Forms.Tools.DockHostController, dockHost.InternalController, Nothing), Syncfusion.Windows.Forms.Tools.DockHostController)
 
 
 ' The DockInfo object will give all the information about docked control.
 
-Dim di As Syncfusion.Windows.Forms.Tools.DockInfo = dhc.GetSerCurrentDI()
+Dim dockInfo As Syncfusion.Windows.Forms.Tools.DockInfo = dockHostController.GetSerCurrentDI()
 
-MessageBox.Show((di.dStyle.ToString + dhc.LayoutRect.ToString))
+MessageBox.Show((dockInfo.dStyle.ToString + dockHostController.LayoutRect.ToString))
 
 {% endhighlight %}
 

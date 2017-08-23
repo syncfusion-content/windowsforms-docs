@@ -225,9 +225,9 @@ To Float the control use below code snippet.
 
 //To set properties window state as floating at the desired location.
 
-Rectangle rcfrm = this.Bounds;
+Rectangle rectangle = this.Bounds;
 
-this.dockingManager.FloatControl(this.panel3, new Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200));
+this.dockingManager.FloatControl(this.panel3, new Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200));
 
 {% endhighlight %}
 
@@ -236,9 +236,9 @@ this.dockingManager.FloatControl(this.panel3, new Rectangle(rcfrm.Right+25,rcfrm
 
 'To set properties window state as floating at the desired location.
 
-Dim rcfrm As Rectangle = Me.Bounds 
+Dim rectangle As Rectangle = Me.Bounds 
 
-Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200))
+Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200))
 
 {% endhighlight %}
 
@@ -266,7 +266,7 @@ this.dockingManager.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tool
 
 this.dockingManager.DockControl(this.panel2, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
 
-this.dockingManager.FloatControl(this.panel3, new Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200));
+this.dockingManager.FloatControl(this.panel3, new Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200));
 
 this.dockingManager.DockControl(this.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 100);
 

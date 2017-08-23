@@ -32,21 +32,21 @@ using Syncfusion.Windows.Forms.Tools.XPMenus;
 
 private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem bar1;
 
-private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem pbiFile;
+private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem fileItem;
 
 
 
 //Initialize and set the properties.
 
-this.pbiFile = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
+this.fileItem = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
 
 this.bar1 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
 
-this.pbiFile.Text = "File";
+this.fileItem.Text = "File";
 
 this.bar1.Text = "Exit";
 
-this.pbiFile.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {this.bar1});
+this.fileItem.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {this.bar1});
 
 //Call the event
 
@@ -58,7 +58,7 @@ private void dockingManager1_DockContextMenu(object sender, Syncfusion.Windows.F
 
 {
 
-   arg.ContextMenu.ParentBarItem.Items.Add(this.pbiFile);
+   arg.ContextMenu.ParentBarItem.Items.Add(this.fileItem);
 
 }
 
@@ -75,28 +75,28 @@ Imports Syncfusion.Windows.Forms.Tools.XPMenus
 
 'Declaration
 
-Private pbiFile As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
+Private fileItem As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
 
 Private WithEvents bar1 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 
 'Initialize and set the properties
 
-Me.pbiFile = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
+Me.fileItem = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
 
 Me.bar1 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
 
-Me.pbiFile.Text = "File"
+Me.fileItem.Text = "File"
 
 Me.bar1.Text = "Exit"
 
-Me.pbiFile.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.bar1})
+Me.fileItem.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.bar1})
 
 
 //handling the event
 
 Private Sub dockingManager1_DockContextMenu(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs)
 
-arg.ContextMenu.ParentBarItem.Items.Add(Me.pbiFile)
+arg.ContextMenu.ParentBarItem.Items.Add(Me.fileItem)
 
 End Sub
 

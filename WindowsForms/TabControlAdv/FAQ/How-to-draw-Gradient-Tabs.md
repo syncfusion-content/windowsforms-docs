@@ -32,7 +32,7 @@ private void tabControlAdv1_DrawItem(object sender, Syncfusion.Windows.Forms.Too
 
         // For the non-selected tabs. 
 
-        lgb = new System.Drawing.Drawing2D.LinearGradientBrush(
+        linearBrush = new System.Drawing.Drawing2D.LinearGradientBrush(
 
         this.tabControlAdv1.GetTabRect(drawItemInfo.Index), Color.FromArgb(197, 197, 173), Color.FromArgb(228, 228, 212), LinearGradientMode.Horizontal);
 
@@ -44,7 +44,7 @@ private void tabControlAdv1_DrawItem(object sender, Syncfusion.Windows.Forms.Too
 
         // For the selected tab. 
 
-        lgb = new System.Drawing.Drawing2D.LinearGradientBrush(
+        linearBrush = new System.Drawing.Drawing2D.LinearGradientBrush(
 
         this.tabControlAdv1.GetTabRect(drawItemInfo.Index), Color.White, Color.WhiteSmoke, LinearGradientMode.Horizontal);
 
@@ -64,11 +64,11 @@ private void tabControlAdv1_DrawItem(object sender, Syncfusion.Windows.Forms.Too
 
    blend.Positions = positions;
 
-   lgb.Blend = blend;
+   linearBrush.Blend = blend;
 
-   drawItemInfo.Graphics.FillRectangle(lgb, this.tabControlAdv1.GetTabRect(drawItemInfo.Index));
+   drawItemInfo.Graphics.FillRectangle(linearBrush, this.tabControlAdv1.GetTabRect(drawItemInfo.Index));
 
-   lgb.Dispose();
+   linearBrush.Dispose();
 
    // Draw the default borders and interior (text and image). 
 
@@ -90,18 +90,18 @@ Private Sub tabControlAdv1_DrawItem(sender As Object, drawItemInfo As Syncfusion
 
 ' Use GetTabRect to get the rectangle of the tabs. 
 
-Dim lgb As LinearGradientBrush
+Dim linearBrush As LinearGradientBrush
 If drawItemInfo.Index <> Me.tabControlAdv1.SelectedIndex Then
 ' For the non-selected tabs. 
 
 
-lgb = New System.Drawing.Drawing2D.LinearGradientBrush(Me.tabControlAdv1.GetTabRect(drawItemInfo.Index), Color.FromArgb(197, 197, 173), Color.FromArgb(228, 228, 212), LinearGradientMode.Horizontal)
+linearBrush = New System.Drawing.Drawing2D.LinearGradientBrush(Me.tabControlAdv1.GetTabRect(drawItemInfo.Index), Color.FromArgb(197, 197, 173), Color.FromArgb(228, 228, 212), LinearGradientMode.Horizontal)
 Else
 
 ' For the selected tab. 
 
 
-lgb = New System.Drawing.Drawing2D.LinearGradientBrush(Me.tabControlAdv1.GetTabRect(drawItemInfo.Index), Color.White, Color.WhiteSmoke, LinearGradientMode.Horizontal)
+linearBrush = New System.Drawing.Drawing2D.LinearGradientBrush(Me.tabControlAdv1.GetTabRect(drawItemInfo.Index), Color.White, Color.WhiteSmoke, LinearGradientMode.Horizontal)
 End If
 
 Dim positions As Single() = {0F, 0.05F, 0.95F, 1F}
@@ -116,11 +116,11 @@ blend.Factors = factors
 
 blend.Positions = positions
 
-lgb.Blend = blend
+linearBrush.Blend = blend
 
-drawItemInfo.Graphics.FillRectangle(lgb, Me.tabControlAdv1.GetTabRect(drawItemInfo.Index))
+drawItemInfo.Graphics.FillRectangle(linearBrush, Me.tabControlAdv1.GetTabRect(drawItemInfo.Index))
 
-lgb.Dispose()
+linearBrush.Dispose()
 
 ' Draw the default borders and interior (text and image). 
 

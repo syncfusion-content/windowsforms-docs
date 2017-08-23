@@ -22,15 +22,15 @@ OuterArcColor is used to fill the drilldown region in the normal state.
 
 {% highlight c# %}
 
-// DrillDown 
-colorthis.radialMenu1.OuterArcColor= Color.Black; 
+// DrillDown color 
+this.radialMenu1.OuterArcColor= Color.Black; 
 
 {% endhighlight %} 
 
 {% highlight vbnet %}
 
-' DrillDown 
-colorMe.RadialMenu1.OuterArcColor = Color.Black
+' DrillDown color
+Me.RadialMenu1.OuterArcColor = Color.Black
 
 {% endhighlight %}
 

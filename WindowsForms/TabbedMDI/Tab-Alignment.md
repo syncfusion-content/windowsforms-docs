@@ -15,14 +15,14 @@ The tabs in the TabbedMDI layout can be aligned to the Top, Left, Right and Bott
 
    ~~~ cs
 
-		this.tb.TabControlAdded += new TabbedMDITabControlEventHandler(tb_TabControlAdded);
+		this.tabbedMDIManager.TabControlAdded += new TabbedMDITabControlEventHandler(tabbedMDIManager_TabControlAdded);
 
    ~~~
    {:.prettyprint }
 
    ~~~ vbnet
 
-		AddHandler tb.TabControlAdded, AddressOf tb_TabControlAdded
+		AddHandler tabbedMDIManager.TabControlAdded, AddressOf tabbedMDIManager_TabControlAdded
 
    ~~~
    {:.prettyprint }
@@ -31,7 +31,7 @@ The tabs in the TabbedMDI layout can be aligned to the Top, Left, Right and Bott
 
    ~~~ cs
 
-		private void tb_TabControlAdded(object sender, TabbedMDITabControlEventArgs args)
+		private void tabbedMDIManager_TabControlAdded(object sender, TabbedMDITabControlEventArgs args)
 
 		{
 
@@ -44,7 +44,7 @@ The tabs in the TabbedMDI layout can be aligned to the Top, Left, Right and Bott
 
    ~~~ vbnet
 
-		Private Sub tb_TabControlAdded(ByVal sender As Object, ByVal args As TabbedMDITabControlEventArgs)
+		Private Sub tabbedMDIManager_TabControlAdded(ByVal sender As Object, ByVal args As TabbedMDITabControlEventArgs)
 
 		args.TabControl.Alignment = TabAlignment.Bottom
 

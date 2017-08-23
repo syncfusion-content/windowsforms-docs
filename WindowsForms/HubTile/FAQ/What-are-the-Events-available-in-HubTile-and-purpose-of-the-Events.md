@@ -69,7 +69,7 @@ This property returns the Rotate transition direction of the HubTile.</td>
 
             e.ImageIndex = 1;
 
-            e.SlideTransition = TransitionDirection.ToptoBottom;
+            e.SlideTransition = TransitionDirection.TopToBottom;
 
             e.TileType = HubTileType.DefaultTile;
 
@@ -141,7 +141,7 @@ TransitionCompletedEventArgs contain the following members that provide informat
 
        e.ImageIndex = 1;
 
-e.SlideTransition = TransitionDirection.ToptoBottom;
+e.SlideTransition = TransitionDirection.TopToBottom;
 
 e.TileType = HubTileType.DefaultTile;
 
@@ -157,7 +157,7 @@ Private Sub HubTile1_TransitionCompleted(sender As System.Object, e As Transitio
 
             e.ImageIndex = 1
 
-            e.SlideTransition = TransitionDirection.ToptoBottom
+            e.SlideTransition = TransitionDirection.TopToBottom
 
             e.TileType = HubTileType.DefaultTile
 

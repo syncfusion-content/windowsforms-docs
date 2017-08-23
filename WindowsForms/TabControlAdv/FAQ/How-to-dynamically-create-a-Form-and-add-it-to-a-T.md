@@ -24,13 +24,13 @@ Form2 frm2 = new Form2();
 
 frm2.TopLevel = false;
 
-//Create the new tab which will display Form2TabPageAdv newtab = new TabPageExt("FORM_2");
+//Create the new tab which will display Form2TabPageAdv newTab = new TabPageExt("FORM_2");
 
-this.tabControlAdv1.Controls.Add(newtab);
+this.tabControlAdv1.Controls.Add(newTab);
 
 //Set the parent of Form2 to be the new tab and display the form in the newly created tab.
 
-frm2.Parent = newtab;
+frm2.Parent = newTab;
 
 frm2.Visible = true;
 
@@ -52,13 +52,13 @@ frm2.TopLevel = False
 
 'Create the new tab which will display Form2.
 
-Dim Newtab As TabPageAdv = New TabPageExt("FORM_2")
+Dim newTab As TabPageAdv = New TabPageExt("FORM_2")
 
-Me.tabControlAdv1.Controls.Add(Newtab) 
+Me.tabControlAdv1.Controls.Add(newTab) 
 
 'Set the parent of Form2 parent to be the new tab and display the form in the newly created tab.
 
-frm2.Parent = Newtab
+frm2.Parent = newTab
 
 frm2.Visible = True
 
