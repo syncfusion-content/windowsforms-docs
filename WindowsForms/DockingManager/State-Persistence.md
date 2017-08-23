@@ -209,11 +209,11 @@ To persist docking information in a database, we need to serialize the state int
 
 MemoryStream ms = new MemoryStream();
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
 
-this.dockingManager1.SaveDockState(aser);
+this.dockingManager1.SaveDockState(serializer);
 
-aser.PersistNow();
+serializer.PersistNow();
 
 //Code to store the memory stream into database. Depends upon the database.
 
@@ -227,11 +227,11 @@ aser.PersistNow();
 
 Dim ms As MemoryStream = New MemoryStream()
 
-Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
 
-Me.dockingManager1.SaveDockState(aser) 
+Me.dockingManager1.SaveDockState(serializer) 
 
-aser.PersistNow() 
+serializer.PersistNow() 
 
 'Code to store the memory stream into database. Depends upon the database.
 
@@ -253,9 +253,9 @@ MemoryStream ms = new MemoryStream(val);
 
 ms.Position = 0;
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
 
-this.dockingManager1.LoadDockState(aser);
+this.dockingManager1.LoadDockState(serializer);
 
 {% endhighlight %}
 
@@ -267,9 +267,9 @@ Dim ms As MemoryStream = New MemoryStream(value)
 
 ms.Position = 0
 
-Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
 
-Me.dockingManager1.LoadDockState(aser)
+Me.dockingManager1.LoadDockState(serializer)
 
 {% endhighlight %}
 
@@ -285,7 +285,7 @@ Me.dockingManager1.LoadDockState(aser)
 
 // To Save
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "MyFile");
 
 this.dockingManager1.SaveDockState(serializer);
 
@@ -295,7 +295,7 @@ serializer.PersistNow();
 
 // To Load
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "MyFile");
 
 this.dockingManager1.LoadDockState(serializer);
 
@@ -307,7 +307,7 @@ this.dockingManager1.LoadDockState(serializer);
 
 ' To Save
 
-Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "MyFile")
 
 Me.dockingManager1.SaveDockState(serializer)
 
@@ -316,7 +316,7 @@ serializer.PersistNow()
 
 ' To Load
 
-Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "MyFile")
 
 Me.dockingManager1.LoadDockState(serializer)
 
@@ -334,7 +334,7 @@ Serialization in Isolated Storage medium
 
 // To Save
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile");
 
 this.dockingManager1.SaveDockState(serializer);
 
@@ -343,7 +343,7 @@ serializer.PersistNow();
 
 // To Load
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile");
 
 this.dockingManager1.LoadDockState(serializer);
 
@@ -355,7 +355,7 @@ this.dockingManager1.LoadDockState(serializer);
 
 ' To Save
 
-Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile")
 
 Me.dockingManager1.SaveDockState(serializer)
 
@@ -364,7 +364,7 @@ serializer.PersistNow()
 
 ' To Load
 
-Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile")
 
 Me.dockingManager1.LoadDockState(serializer)
 

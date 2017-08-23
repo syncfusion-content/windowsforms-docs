@@ -17,9 +17,9 @@ The `FloatControl` method enables the end users to float a particular control. U
 
 //To set ListBox state as floating at the desired location.
 
-Rectangle rcfrm = this.Bounds;
+Rectangle rectangle = this.Bounds;
 
-this.dockingManager.FloatControl(this.listBox1, new Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200));
+this.dockingManager.FloatControl(this.listBox1, new Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200));
 
 {% endhighlight %}
 
@@ -28,9 +28,9 @@ this.dockingManager.FloatControl(this.listBox1, new Rectangle(rcfrm.Right+25,rcf
 
 'To set ListBox state as floating at the desired location.
 
-Dim rcfrm As Rectangle = Me.Bounds 
+Dim rectangle As Rectangle = Me.Bounds 
 
-Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200))
+Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200))
 
 {% endhighlight %}
 
@@ -74,7 +74,7 @@ The float window changes to its Dock state when double clicking on its caption
 
 {% highlight C# %}
 
-//To disable the redocking the floating window on caption double click.
+//To disable the Redocking the floating window on caption double click.
  
 this.dockingManager1.EnableDoubleClickOnCaption = false;
 
@@ -83,7 +83,7 @@ this.dockingManager1.EnableDoubleClickOnCaption = false;
 
 {% highlight VB %}
 
-'To disable the redocking the floating window on caption double click.
+'To disable the Redocking the floating window on caption double click.
  
 Me.dockingManager1.EnableDoubleClickOnCaption = false
 
@@ -102,9 +102,9 @@ The FloatWindow can be placed at any desired location. To position the FloatWind
 
 //To display the ListBox control at the desired location.
 
-Rectangle rcfrm = this.Bounds;
+Rectangle rectangle = this.Bounds;
  
-this.dockingManager.FloatControl(this.listBox1, new Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200));
+this.dockingManager.FloatControl(this.listBox1, new Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200));
 
 {% endhighlight %}
 
@@ -113,9 +113,9 @@ this.dockingManager.FloatControl(this.listBox1, new Rectangle(rcfrm.Right+25,rcf
 
 'To display the ListBox control at the desired location.
 
-Dim rcfrm As Rectangle = Me.Bounds 
+Dim rectangle As Rectangle = Me.Bounds 
 
-Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200))
+Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200))
 
 {% endhighlight %}
 

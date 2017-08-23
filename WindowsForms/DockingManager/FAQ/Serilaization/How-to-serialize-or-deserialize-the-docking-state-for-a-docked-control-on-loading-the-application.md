@@ -19,14 +19,14 @@ Before closing the docked / floating control, access the control's parent and ca
 {% highlight C# %}
 
 
-Syncfusion.Windows.Forms.Tools.DockHost dhost = ctrl.Parent as Syncfusion.Windows.Forms.Tools.DockHost; 
+Syncfusion.Windows.Forms.Tools.DockHost dockHost = ctrl.Parent as Syncfusion.Windows.Forms.Tools.DockHost; 
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 
-Dim dhost As Syncfusion.Windows.Forms.Tools.DockHost = Me.listView1.Parent as Syncfusion.Windows.Forms.Tools.DockHost  
+Dim dockHost As Syncfusion.Windows.Forms.Tools.DockHost = Me.listView1.Parent as Syncfusion.Windows.Forms.Tools.DockHost  
 
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ Dim dhost As Syncfusion.Windows.Forms.Tools.DockHost = Me.listView1.Parent as Sy
 
 {% highlight C# %}
 
-Syncfusion.Windows.Forms.Tools.DockHostController dhc = dhost.InternalController as Syncfusion.Windows.Forms.Tools.DockHostController; 
+Syncfusion.Windows.Forms.Tools.DockHostController dockHostController = dockHost.InternalController as Syncfusion.Windows.Forms.Tools.DockHostController; 
 
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ Syncfusion.Windows.Forms.Tools.DockHostController dhc = dhost.InternalController
 {% highlight VB %}
 
 
-Dim dhc As Syncfusion.Windows.Forms.Tools.DockHostController = dhost.InternalController as  Syncfusion.Windows.Forms.Tools.DockHostController
+Dim dockHostController As Syncfusion.Windows.Forms.Tools.DockHostController = dockHost.InternalController as  Syncfusion.Windows.Forms.Tools.DockHostController
 
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ Dim dhc As Syncfusion.Windows.Forms.Tools.DockHostController = dhost.InternalCon
 
 {% highlight C# %}
 
-Syncfusion.Windows.Forms.Tools.DockInfo di = dhc.GetSerCurrentDI(); 
+Syncfusion.Windows.Forms.Tools.DockInfo dockInfo = dockHostController.GetSerCurrentDI(); 
 
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ Syncfusion.Windows.Forms.Tools.DockInfo di = dhc.GetSerCurrentDI();
 {% highlight VB %}
 
 
-Dim di As Syncfusion.Windows.Forms.Tools.DockInfo = dhc.GetSerCurrentDI()
+Dim dockInfo As Syncfusion.Windows.Forms.Tools.DockInfo = dockHostController.GetSerCurrentDI()
 
 {% endhighlight %}
 
