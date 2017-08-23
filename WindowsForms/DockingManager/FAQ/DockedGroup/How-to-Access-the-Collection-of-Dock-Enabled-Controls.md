@@ -28,17 +28,17 @@ The below given code snippet accesses the docked controls, disable docking and t
 
 //Getting the Controls into an ArrayList.
 
-IEnumerator ienum = this.dockingManager.Controls; 
+IEnumerator enumerator = this.dockingManager.Controls; 
 
-ArrayList dockedctrls = new ArrayList(); 
+ArrayList dockedControls = new ArrayList(); 
 
-while(ienum.MoveNext()) 
+while(enumerator.MoveNext()) 
 
-dockedctrls.Add(ienum.Current); 
+dockedControls.Add(enumerator.Current); 
 
 // Iterating through the collection to perform the required operation.
 
-foreach(Control ctrl in dockedctrls) 
+foreach(Control ctrl in dockedControls) 
 
 {                         
 
@@ -56,19 +56,19 @@ ctrl.Dispose();
 
 'Getting the Controls into an ArrayList.
 
-Dim ienum As IEnumerator = Me.dockingManager.Controls
+Dim enumerator As IEnumerator = Me.dockingManager.Controls
 
-Dim dockedctrls As ArrayList = New ArrayList()
+Dim dockedControls As ArrayList = New ArrayList()
 
-Do While ienum.MoveNext()
+Do While enumerator.MoveNext()
 
-   dockedctrls.Add(ienum.Current)
+   dockedControls.Add(enumerator.Current)
 
 Loop
 
 'Iterating through the collection to perform the required operation.
 
-For Each ctrl As Control In dockedctrls
+For Each ctrl As Control In dockedControls
 
 'Disabling the docking and disposing control.
 

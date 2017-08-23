@@ -17,17 +17,17 @@ Add a UserControl to the form and initialize it inside the parent form. Add a Do
 
 
 
-UserControl Uc = new UserControl();
+UserControl userControl = new UserControl();
 
-Uc.Parent = this;
+userControl.Parent = this;
 
 // Dock the user contro1 to the form. 
 
-this.dockingManager1.DockControl(Uc, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200);
+this.dockingManager1.DockControl(userControl, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200);
 
 // Set the user controls to MDI mode. 
 
-this.dockingManager1.SetAsMDIChild(Uc, true);
+this.dockingManager1.SetAsMDIChild(userControl, true);
 
 
 {% endhighlight %}
@@ -36,17 +36,17 @@ this.dockingManager1.SetAsMDIChild(Uc, true);
 
 
 
-Dim Uc As New UserControl()
+Dim userControl As New UserControl()
 
-Uc.Parent = Me 
+userControl.Parent = Me 
 
 ' Dock the user contro1 to the form. 
 
-Me.dockingManager1.DockControl(Uc, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200) 
+Me.dockingManager1.DockControl(userControl, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200) 
 
 ' Set the user controls to MDI mode. 
 
-Me.dockingManager1.SetAsMDIChild(Uc, True) 
+Me.dockingManager1.SetAsMDIChild(userControl, True) 
 
 {% endhighlight %}
 

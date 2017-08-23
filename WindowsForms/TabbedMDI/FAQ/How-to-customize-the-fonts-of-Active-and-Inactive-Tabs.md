@@ -27,7 +27,7 @@ private void TabbedMDITabControl_Added(object sender, TabbedMDITabControlEventAr
 
 args.TabControl.ActiveTabFont = new Font ("Comic Sans MS", 11);
 
-args.TabControl.Font = new Font ("Garamond", 12);
+args.TabControl.Font = new Font ("Italic", 12);
 
 }
 
@@ -47,7 +47,7 @@ Private Sub TabbedMDITabControl_Added(ByVal sender As Object, ByVal args As Tabb
 
 args.TabControl.ActiveTabFont = New Font("Comic Sans MS", 11)
 
-args.TabControl.Font = New Font("Garamond", 12)
+args.TabControl.Font = New Font("Italic", 12)
 
 End Sub
 

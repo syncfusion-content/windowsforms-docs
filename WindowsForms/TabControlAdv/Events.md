@@ -824,9 +824,9 @@ if(this.ClientRectangle.Width > 0 && this.ClientRectangle.Height > 0)
 
 {
 
-LinearGradientBrush lgb = new LinearGradientBrush(this.ClientRectangle, SystemColors.Control, SystemColors.ControlDark, LinearGradientMode.Horizontal);
+LinearGradientBrush linearBrush = new LinearGradientBrush(this.ClientRectangle, SystemColors.Control, SystemColors.ControlDark, LinearGradientMode.Horizontal);
 
-e.Graphics.FillRectangle(lgb, this.ClientRectangle);
+e.Graphics.FillRectangle(linearBrush, this.ClientRectangle);
 
 }
 
@@ -840,9 +840,9 @@ Private Sub tabControlAdv1_Paint(ByVal sender As Object, ByVal e As System.Windo
 
 If Me.ClientRectangle.Width > 0 AndAlso Me.ClientRectangle.Height > 0 Then
 
-Dim lgb As LinearGradientBrush = New LinearGradientBrush(Me.ClientRectangle, SystemColors.Control, SystemColors.ControlDark, LinearGradientMode.Horizontal)
+Dim linearBrush As LinearGradientBrush = New LinearGradientBrush(Me.ClientRectangle, SystemColors.Control, SystemColors.ControlDark, LinearGradientMode.Horizontal)
 
-e.Graphics.FillRectangle(lgb, Me.ClientRectangle)
+e.Graphics.FillRectangle(linearBrush, Me.ClientRectangle)
 
 End If
 

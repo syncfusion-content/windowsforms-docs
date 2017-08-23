@@ -129,7 +129,7 @@ contextMenuItem.BeginGroupAt(newDocItem);
 
 // Items in this Parent Bar Item will be merged with the standard context menu Parent Bar Item of the MDI tab.
 
-tb.ContextMenuItem = contextMenuItem;
+tabbedMDIManager.ContextMenuItem = contextMenuItem;
 
 {% endhighlight %}
 
