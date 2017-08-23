@@ -73,7 +73,7 @@ Specifies the style for the windows of the TabbedMDIManager Control. The options
 
 //Detach the MDIParent form from TabbedMDIManager.
 
-this.tb.DetachFromMdiContainer(this, false);
+this.tabbedMDIManager.DetachFromMdiContainer(this, false);
 
 
 
@@ -88,7 +88,7 @@ this.LayoutMdi(MdiLayout.TileHorizontal);
 
 'Detach the MDIParent form from TabbedMDIManager.
 
-Me.tb.DetachFromMdiContainer(Me, False)
+Me.tabbedMDIManager.DetachFromMdiContainer(Me, False)
 
 
 'Arranges the multiple document interface Child forms in Horizontal style within the MDIParent form.                        

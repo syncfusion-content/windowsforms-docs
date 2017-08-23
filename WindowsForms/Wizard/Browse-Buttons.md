@@ -149,19 +149,19 @@ The following code snippet shows how to add a button to the wizard control brows
 
 // To add a new button 
 
-Button btn = new Button(); 
+Button button = new Button(); 
 
-btn.Text = "New Button"; 
+button.Text = "New Button"; 
 
 // Add button to the WizardControl
 
-this.wizardControl1.Controls.Add(btn); 
+this.wizardControl1.Controls.Add(button); 
 
 // Set the constraints for the newly created Button 
 
-this.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosX = 6; 
+this.wizardControl1.GridBagLayout.GetConstraintsRef(button).GridPosX = 6; 
 
-this.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosY = 5; 
+this.wizardControl1.GridBagLayout.GetConstraintsRef(button).GridPosY = 5; 
 
 {% endhighlight %}
 
@@ -171,19 +171,19 @@ this.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosY = 5;
 
 ' To add a new button 
 
-Private btn As Button = New Button()
+Private button As Button = New Button()
 
-Private btn.Text = "New Button"
+Private button.Text = "New Button"
 
 'Add button to the WizardControl
 
-Me.wizardControl1.Controls.Add(btn)
+Me.wizardControl1.Controls.Add(button)
 
 ' Set the constraints for the newly created Button 
 
-Me.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosX = 6
+Me.wizardControl1.GridBagLayout.GetConstraintsRef(button).GridPosX = 6
 
-Me.wizardControl1.GridBagLayout.GetConstraintsRef(btn).GridPosY = 5
+Me.wizardControl1.GridBagLayout.GetConstraintsRef(button).GridPosY = 5
 
 {% endhighlight %}
 

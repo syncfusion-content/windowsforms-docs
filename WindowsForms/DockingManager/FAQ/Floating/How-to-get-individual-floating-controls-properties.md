@@ -61,11 +61,11 @@ Me.dockingManager1.SetFloatOnly(Me.listView1,True)
 
 // Get the FloatingForm object to get location of control.FloatingForm is a Form derived class.
 
-DockHost dhost = this.listView1.Parent as Syncfusion.Windows.Forms.Tools.DockHost;
+DockHost dockHost = this.listView1.Parent as Syncfusion.Windows.Forms.Tools.DockHost;
 
-FloatingForm floatfrm = dhost.ParentForm as FloatingForm;
+FloatingForm floatForm = dockHost.ParentForm as FloatingForm;
 
-MessageBox.Show(floatfrm.Location.ToString());
+MessageBox.Show(floatForm.Location.ToString());
 
 {% endhighlight %}
 
@@ -73,11 +73,11 @@ MessageBox.Show(floatfrm.Location.ToString());
 
 ' Get the FloatingForm object to get location of control.FloatingForm is a Form derived class.
 
-Dim dhost As DockHost = CType(IIf(TypeOf Me.listView1.Parent Is Syncfusion.Windows.Forms.Tools.DockHost, Me.listView1.Parent, Nothing), Syncfusion.Windows.Forms.Tools.DockHost)
+Dim dockHost As DockHost = CType(IIf(TypeOf Me.listView1.Parent Is Syncfusion.Windows.Forms.Tools.DockHost, Me.listView1.Parent, Nothing), Syncfusion.Windows.Forms.Tools.DockHost)
 
-Dim floatfrm As FloatingForm = CType(IIf(TypeOf dhost.ParentForm Is FloatingForm, dhost.ParentForm, Nothing), FloatingForm)
+Dim floatForm As FloatingForm = CType(IIf(TypeOf dockHost.ParentForm Is FloatingForm, dockHost.ParentForm, Nothing), FloatingForm)
 
-MessageBox.Show(floatfrm.Location.ToString())
+MessageBox.Show(floatForm.Location.ToString())
 
 {% endhighlight %}
 

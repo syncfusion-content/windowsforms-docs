@@ -53,7 +53,7 @@ N> The LoadTabGroupStates and SaveTabGroupStates methods get called automaticall
 
 // To Save
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "MyFile");
 
 this.tabbedMdiManager.SaveTabGroupStates(serializer);
 
@@ -63,7 +63,7 @@ serializer.PersistNow();
 
 // To Load
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "MyFile");
 
 this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
@@ -75,9 +75,9 @@ this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
 ' To Save
 
-Dim serializer As New AppStateSerializer(SerializeMode.XMLFile, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.XMLFile, "MyFile")
 
-Me.tabbedMdiManager.SaveTabGroupStates(aser)
+Me.tabbedMdiManager.SaveTabGroupStates(serializer)
 
 serializer.PersistNow()
 
@@ -85,9 +85,9 @@ serializer.PersistNow()
 
 ' To Load
 
-Dim serializer As New AppStateSerializer(SerializeMode.XMLFile, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.XMLFile, "MyFile")
 
-Me.tabbedMdiManager.LoadTabGroupStates(aser)
+Me.tabbedMdiManager.LoadTabGroupStates(serializer)
 
 Singleton method
 
@@ -101,7 +101,7 @@ The AppStateSerializer is set to use the IsolatedStorage format by default. When
 
 //Initializing the AppStateSerializer's Singleton at the beginning of an application.
 
-AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile, "myfile");
+AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile, "MyFile");
 
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile, "myfile");
 
 ' Initializing the AppStateSerializer's Singleton at the beginning of an application.
 
-AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile, "myfile")
+AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile, "MyFile")
 
 
 
@@ -127,7 +127,7 @@ To serialize in Binary Format, use the below code.
 
 // To Save
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "MyFile");
 
 this.tabbedMdiManager.SaveTabGroupStates(serializer);
 
@@ -137,7 +137,7 @@ serializer.PersistNow();
 
 // To Load
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "MyFile");
 
 this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
@@ -149,7 +149,7 @@ this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
 ' To Save
 
-Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "MyFile")
 
 Me.tabbedMdiManager.SaveTabGroupStates(serializer)
 
@@ -159,7 +159,7 @@ serializer.PersistNow()
 
 ' To Load
 
-Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "MyFile")
 
 Me.tabbedMdiManager.LoadTabGroupStates(serializer)
 
@@ -175,7 +175,7 @@ To serialize in Isolated Storage, use the below code.
 
 // To Save
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile");
 
 this.tabbedMdiManager.SaveTabGroupStates(serializer);
 
@@ -185,7 +185,7 @@ serializer.PersistNow();
 
 // To Load
 
-AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "myfile");
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile");
 
 this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
@@ -197,7 +197,7 @@ this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
 ' To Save
 
-Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile")
 
 Me.tabbedMdiManager.SaveTabGroupStates(serializer)
 
@@ -207,7 +207,7 @@ serializer.PersistNow()
 
 ' To Load
 
-Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "myfile")
+Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile")
 
 Me.tabbedMdiManager.LoadTabGroupStates(serializer)
 
@@ -225,19 +225,19 @@ System.IO.MemoryStream ms = new MemoryStream();
 
 
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
 
-this.tabbedMDIManager.SaveTabGroupStates(aser);
+this.tabbedMDIManager.SaveTabGroupStates(serializer);
 
-aser.PersistNow();
+serializer.PersistNow();
 
 
 
 // To Load
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.IsolatedStorage, ms);
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, ms);
 
-this.tabbedMdiManager.LoadTabGroupStates(aser);
+this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
 {% endhighlight %}
 
@@ -251,19 +251,19 @@ Dim ms As MemoryStream = New MemoryStream()
 
 
 
-Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
 
-Me.tabbedMdiManager.SaveDockState(aser)
+Me.tabbedMdiManager.SaveDockState(serializer)
 
-aser.PersistNow()
+serializer.PersistNow()
 
 
 
 ' To Load
 
-Dim aser As New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
+Dim serializer As New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
 
-Me.tabbedMdiManager.LoadTabGroupStates(aser)
+Me.tabbedMdiManager.LoadTabGroupStates(serializer)
 
 {% endhighlight %}
 

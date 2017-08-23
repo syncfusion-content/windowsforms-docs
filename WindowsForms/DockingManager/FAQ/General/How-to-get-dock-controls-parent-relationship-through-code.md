@@ -49,11 +49,11 @@ private void GetDockingRelationship(Control dockedControl)
 
     {
 
-        DockHost dockhost = dockedControl.Parent as DockHost;
+        DockHost dockHost = dockedControl.Parent as DockHost;
 
-        DockHostController dhc = dockhost.InternalController as DockHostController;
+        DockHostController dockHostController = dockHost.InternalController as DockHostController;
 
-        DockControllerBase baseController = dhc.DICurrent.dController;
+        DockControllerBase baseController = dockHostController.DICurrent.dController;
 
 
 
@@ -67,7 +67,7 @@ private void GetDockingRelationship(Control dockedControl)
 
 
 
-                if (count != dockedctrls.Count - 1)
+                if (count != dockedControls.Count - 1)
 
                 {
 
@@ -79,7 +79,7 @@ private void GetDockingRelationship(Control dockedControl)
 
                 }
 
-                else if (count == dockedctrls.Count - 1)
+                else if (count == dockedControls.Count - 1)
 
                 {
 
@@ -159,7 +159,7 @@ private void GetDockingRelationship(Control dockedControl)
 
 
 
-ArrayList dockedctrls;
+ArrayList dockedControls;
 
 int count;
 
@@ -169,23 +169,23 @@ private void getControlsRelationToolStripMenuItem_Click(object sender, EventArgs
 
     count = 0;
 
-    IEnumerator ienum = this.dockingManager1.Controls;
+    IEnumerator enumerator = this.dockingManager1.Controls;
 
-    dockedctrls = new ArrayList();
+    dockedControls = new ArrayList();
 
 
 
-    while (ienum.MoveNext())
+    while (enumerator.MoveNext())
 
     {
 
-        dockedctrls.Add(ienum.Current);
+        dockedControls.Add(enumerator.Current);
 
     }
 
 
 
-    foreach (Control dockedControl in dockedctrls)
+    foreach (Control dockedControl in dockedControls)
 
     {
 
@@ -233,11 +233,11 @@ Private Sub GetDockingRelationship(ByVal dockedControl As Control)
 
     If TypeOf dockedControl.Parent Is DockHost Then
 
-        Dim dockhost As DockHost = TryCast(dockedControl.Parent, DockHost)
+        Dim dockHost As DockHost = TryCast(dockedControl.Parent, DockHost)
 
-        Dim dhc As DockHostController = TryCast(dockhost.InternalController, DockHostController)
+        Dim dockHostController As DockHostController = TryCast(dockHost.InternalController, DockHostController)
 
-        Dim baseController As DockControllerBase = dhc.DICurrent.dController
+        Dim baseController As DockControllerBase = dockHostController.DICurrent.dController
 
 
 
@@ -247,7 +247,7 @@ Private Sub GetDockingRelationship(ByVal dockedControl As Control)
 
 
 
-                If count &lt;&gt; dockedctrls.Count - 1 Then
+                If count &lt;&gt; dockedControls.Count - 1 Then
 
                     targetControl = baseController.HostControl.Controls(0)
 
@@ -255,7 +255,7 @@ Private Sub GetDockingRelationship(ByVal dockedControl As Control)
 
                     statusMessage += "DockingStyle " + Me.dockingManager1.GetDockStyle(dockedControl)
 
-                ElseIf count = dockedctrls.Count - 1 Then
+                ElseIf count = dockedControls.Count - 1 Then
 
                     targetControl = baseController.HostControl
 
@@ -315,7 +315,7 @@ Private Sub GetDockingRelationship(ByVal dockedControl As Control)
 
 End Sub
 
-Private dockedctrls As ArrayList
+Private dockedControls As ArrayList
 
 Private count As Integer
 
@@ -325,21 +325,21 @@ Private Sub getControlsRelationToolStripMenuItem_Click(ByVal sender As Object, B
 
     count = 0
 
-    Dim ienum As IEnumerator = Me.dockingManager1.Controls
+    Dim enumerator As IEnumerator = Me.dockingManager1.Controls
 
-    dockedctrls = New ArrayList()
+    dockedControls = New ArrayList()
 
 
 
-    While ienum.MoveNext()
+    While enumerator.MoveNext()
 
-        dockedctrls.Add(ienum.Current)
+        dockedControls.Add(enumerator.Current)
 
     End While
 
 
 
-    For Each dockedControl As Control In dockedctrls
+    For Each dockedControl As Control In dockedControls
 
         GetDockingRelationship(dockedControl)
 

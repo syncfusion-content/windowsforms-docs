@@ -37,9 +37,9 @@ public class CustomMDITabPanel : MDITabPanel
 
 {
 
-    public CustomMDITabPanel(TabbedMDIManager tm)
+    public CustomMDITabPanel(TabbedMDIManager tabbedMDIManager)
 
-        : base(tm)
+        : base(tabbedMDIManager)
 
     { }
 
@@ -81,9 +81,9 @@ End Class
 
 Public Class CustomMDITabPanel : Inherits MDITabPanel
 
-    Public Sub New(ByVal tm As TabbedMDIManager)
+    Public Sub New(ByVal tabbedMDIManager As TabbedMDIManager)
 
-        MyBase.New(tm)
+        MyBase.New(tabbedMDIManager)
 
     End Sub
 

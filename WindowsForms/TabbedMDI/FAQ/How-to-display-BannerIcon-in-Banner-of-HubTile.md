@@ -39,7 +39,7 @@ this.HubTile1.ShowBannerIcon = true;
 
 
 
-/// Sets BannerIcon in BannerTile type of Hubtile.
+/// Sets BannerIcon in BannerTile type of HubTile.
 
 this.HubTile1.BannerIcon = this.ImageListAdv.Images[0];
 
@@ -57,7 +57,7 @@ Me.HubTile1.ShowBannerIcon = True
 
 
 
-‘Sets BannerIcon in BannerTile type of Hubtile.
+‘Sets BannerIcon in BannerTile type of HubTile.
 
 Me.HubTile1.BannerIcon = Me.ImageListAdv.Images[0]
 

@@ -19,9 +19,9 @@ The `FloatControl` method enables the end users to float a particular control. U
 
 //To display the ListBox control at the desired location.
 
-Rectangle rcfrm = this.Bounds;
+Rectangle rectangle = this.Bounds;
  
-this.dockingManager.FloatControl(this.listBox1, new Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200));
+this.dockingManager.FloatControl(this.listBox1, new Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200));
 
 {% endhighlight %}
 
@@ -30,9 +30,9 @@ this.dockingManager.FloatControl(this.listBox1, new Rectangle(rcfrm.Right+25,rcf
 
 'To display the ListBox control at the desired location.
 
-Dim rcfrm As Rectangle = Me.Bounds 
+Dim rectangle As Rectangle = Me.Bounds 
 
-Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rcfrm.Right+25,rcfrm.Bottom-150,175,200))
+Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200))
 
 {% endhighlight %}
 

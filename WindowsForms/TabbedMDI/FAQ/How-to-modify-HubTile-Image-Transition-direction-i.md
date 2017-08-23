@@ -43,7 +43,7 @@ this.HubTile1.SlideTransition = TransitionDirection.LeftToRight;
 
 /// Sets Image transition direction as TopToBottom
 
-this.HubTile1.SlideTransition = TransitionDirection.ToptoBottom;
+this.HubTile1.SlideTransition = TransitionDirection.TopToBottom;
 
 
 
@@ -73,7 +73,7 @@ Me.HubTile1.SlideTransition = TransitionDirection.LeftToRight
 
 ‘Sets Image transition direction as TopToBottom
 
-Me.HubTile1.SlideTransition = TransitionDirection.ToptoBottom
+Me.HubTile1.SlideTransition = TransitionDirection.TopToBottom
 
 
 
