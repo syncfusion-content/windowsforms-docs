@@ -287,7 +287,7 @@ The first thing you need to do is to derive a class that will serve as your cust
 
 		{
 
-		   // Create an arraylist of random MyObjects.
+		   // Create an array list of random MyObjects.
 
 		   ArrayList list = new ArrayList();
 
@@ -322,7 +322,7 @@ The first thing you need to do is to derive a class that will serve as your cust
 
 
 
-				' Create an arraylist of random MyObjects.
+				' Create an array list of random MyObjects.
 
 				Dim list As New ArrayList()
 
