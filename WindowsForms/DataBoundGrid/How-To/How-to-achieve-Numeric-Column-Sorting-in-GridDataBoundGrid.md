@@ -26,11 +26,11 @@ public int Compare(object x, object y)
 
 {
 
-string xs = x.ToString(); ;
+string value1 = x.ToString(); ;
 
-string ys = y.ToString(); ;
+string value2 = y.ToString(); ;
 
-return  xs.Length - ys.Length;
+return  value1.Length - value2.Length;
 
 }
 
@@ -82,11 +82,11 @@ Public Class StringLenComparer Implements IComparer
 
 Public Function Compare(ByVal x As Object, ByVal y As Object) As Integer
 
-Dim xs As String = x.ToString()
+Dim value1 As String = x.ToString()
 
-Dim ys As String = y.ToString()
+Dim value2 As String = y.ToString()
 
-Return xs.Length - ys.Length
+Return value1.Length - value2.Length
 
 End Function
 

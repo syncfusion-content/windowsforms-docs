@@ -29,19 +29,19 @@ public class Person
 
 {
 
-    private string lname;
+    private string lastName;
 
-    private string fname;
+    private string firstName;
 
 
 
-    public Person(string fname, string lname)
+    public Person(string firstName, string lastName)
 
     {
 
-            this.fname = fname;
+            this.firstName = firstName;
 
-            this.lname = lname;
+            this.lastName = lastName;
 
     }
 
@@ -51,9 +51,9 @@ public class Person
 
     {
 
-            get{return fname;}
+            get{return firstName;}
 
-            set{fname = value;}
+            set{firstName = value;}
 
     }
 
@@ -61,9 +61,9 @@ public class Person
 
     {
 
-            get{return lname;}
+            get{return lastName;}
 
-            set{lname = value;}
+            set{lastName = value;}
 
     }
 
@@ -110,17 +110,17 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 Public Class Person
 
-Private fname As String
+Private firstName As String
 
-Private lname As String
+Private lastName As String
 
 
 
-Public Sub New(ByVal fname As String, ByVal lname As String)
+Public Sub New(ByVal firstName As String, ByVal lastName As String)
 
-Me.fname = fname
+Me.firstName = firstName
 
-Me.lname = lname
+Me.lastName = lastName
 
 End Sub
 
@@ -132,13 +132,13 @@ Public Property LastName()
 
 Get
 
-Return lname
+Return lastName
 
 End Get
 
 Set(ByVal Value)
 
-lname = Value
+lastName = Value
 
 End Set
 
@@ -150,13 +150,13 @@ Public Property FirstName()
 
 Get
 
-Return fname
+Return firstName
 
 End Get
 
 Set(ByVal Value)
 
-fname = Value
+firstName = Value
 
 End Set
 
