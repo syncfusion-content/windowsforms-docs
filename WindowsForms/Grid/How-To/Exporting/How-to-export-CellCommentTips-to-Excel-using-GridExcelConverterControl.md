@@ -14,10 +14,10 @@ You can achieve this by handling QueryImportExportCellInfo event handler. In the
 {% tabs %}
 {% highlight c# %}
 
-Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
-gecc.QueryImportExportCellInfo += new Syncfusion.GridExcelConverter.GridImportExportCellInfoEventHandler(gecc_QueryImportExportCellInfo);
+Syncfusion.GridExcelConverter.GridExcelConverterControl excelConverter = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
+excelConverter.QueryImportExportCellInfo += new Syncfusion.GridExcelConverter.GridImportExportCellInfoEventHandler(excelConverter_QueryImportExportCellInfo);
 
-void gecc_QueryImportExportCellInfo(object sender, Syncfusion.GridExcelConverter.GridImportExportCellInfoEventArgs e)
+void excelConverter_QueryImportExportCellInfo(object sender, Syncfusion.GridExcelConverter.GridImportExportCellInfoEventArgs e)
 {
 ExcelTip.GridExcelTipStyleProperties style = new ExcelTip.GridExcelTipStyleProperties(e.GridCell);
 if (style.HasExcelTipText)
@@ -28,15 +28,15 @@ e.ExcelCell.AddComment().Text = style.ExcelTipText;
 
 {% highlight vb %}
 
-Dim gecc As New Syncfusion.GridExcelConverter.GridExcelConverterControl()
-AddHandler gecc.QueryImportExportCellInfo, AddressOf gecc_QueryImportExportCellInfo
+Dim excelConverter As New Syncfusion.GridExcelConverter.GridExcelConverterControl()
+AddHandler excelConverter.QueryImportExportCellInfo, AddressOf excelConverter_QueryImportExportCellInfo
 
-Private Sub gecc_QueryImportExportCellInfo(ByVal sender As Object, ByVal e As Syncfusion.GridExcelConverter.GridImportExportCellInfoEventArgs)
+Private Sub excelConverter_QueryImportExportCellInfo(ByVal sender As Object, ByVal e As Syncfusion.GridExcelConverter.GridImportExportCellInfoEventArgs)
 Dim style As New ExcelTipDLL.GridExcelTipStyleProperties(e.GridCell)
 If style.HasExcelTipText Then
 e.ExcelCell.AddComment().Text = style.ExcelTipText
 End If
-End Sub 'gecc_QueryImportExportCellInfo
+End Sub 'excelConverter_QueryImportExportCellInfo
 
 {% endhighlight %}
 {% endtabs %}

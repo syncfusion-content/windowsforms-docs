@@ -158,7 +158,7 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Hand
 
 ' There is a condition check in accepting hashtable values.
 
-' ie.. the total of values passed must not be greater than (100 - Unmodified Column count)
+' The total of values passed must not be greater than (100 - Unmodified Column count)
 
     ht = New Hashtable()
 

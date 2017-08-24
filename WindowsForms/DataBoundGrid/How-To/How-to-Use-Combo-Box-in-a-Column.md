@@ -92,7 +92,7 @@ style.CellValue = "Five"
 
 
 
-'True droplist - no editing.
+'True drop list - no editing.
 
 style.DropDownStyle = GridDropDownStyle.Exclusive 
 
@@ -104,7 +104,7 @@ Here is the code that will set column 2 to a combobox setting items in the combo
 
 
 
-//Assumes this.dt is a DataTable object with at least 2 columns named "id" and "display".
+//Assumes this.dataTable is a DataTable object with at least 2 columns named "id" and "display".
 
 
 
@@ -114,7 +114,7 @@ GridStyleInfo style = this.gridDataBoundGrid1.GridBoundColumns[1].StyleInfo;
 
 style.CellType = "ComboBox";
 
-style.DataSource = dt;
+style.DataSource = dataTable;
 
 
 
@@ -136,7 +136,7 @@ style.DropDownStyle = GridDropDownStyle.AutoComplete;
 
 
 
-'Assumes this.dt is a DataTable object with at least 2 columns named "id" and "display".
+'Assumes this.dataTable is a DataTable object with at least 2 columns named "id" and "display".
 
 
 
@@ -146,7 +146,7 @@ Dim style As GridStyleInfo = Me.gridDataBoundGrid1.GridBoundColumns(1).StyleInfo
 
 style.CellType = "ComboBox"
 
-style.DataSource = dt
+style.DataSource = dataTable
 
 
 

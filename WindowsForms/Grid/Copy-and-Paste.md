@@ -163,24 +163,24 @@ void gridControl1_ClipboardPaste(object sender, GridCutPasteEventArgs e)
 {
     DataObject data = (DataObject)Clipboard.GetDataObject();
     string[] rows = null;
-    int numRows = 0;
-    int numCols = 0;
+    int numberOfRows = 0;
+    int numberOfCols = 0;
     //Get the size of the paste
     if (data.GetDataPresent(DataFormats.Text))
     {
         string s = (string)data.GetData(DataFormats.Text);
         rows = s.Split(new char[] { '\n' });
-        numRows = rows.GetLength(0);
-        if (numRows > 0 && rows[numRows - 1].Length == 0)
-            numRows--; //remove extra empty row if present
-        if (numRows > 0)
+        numberOfRows = rows.GetLength(0);
+        if (numberOfRows > 0 && rows[numberOfRows - 1].Length == 0)
+            numberOfRows--; //remove extra empty row if present
+        if (numberOfRows > 0)
         {
             string[] cols = rows[0].Split(new char[] { '\t' });
-            numCols = cols.GetLength(0);
+            numberOfCols = cols.GetLength(0);
         }
     }
     //paste one to many
-    if (numRows == 1 && numCols == 1 && !this.gridControl1.Selections.Ranges.ActiveRange.IsEmpty)
+    if (numberOfRows == 1 && numberOfCols == 1 && !this.gridControl1.Selections.Ranges.ActiveRange.IsEmpty)
     {
         this.gridControl1.ChangeCells(this.gridControl1.Selections.Ranges.ActiveRange,
         rows[0]);
@@ -194,23 +194,23 @@ Private Me.gridControl1.ClipboardPaste += AddressOf gridControl1_ClipboardPaste
 Private Sub gridControl1_ClipboardPaste(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
 	Dim data As DataObject = CType(Clipboard.GetDataObject(), DataObject)
 	Dim rows() As String = Nothing
-	Dim numRows As Integer = 0
-	Dim numCols As Integer = 0
+	Dim numberOfRows As Integer = 0
+	Dim numberOfCols As Integer = 0
 	'Get the size of the paste
 	If data.GetDataPresent(DataFormats.Text) Then
 		Dim s As String = CStr(data.GetData(DataFormats.Text))
 		rows = s.Split(New Char() { ControlChars.Lf })
-		numRows = rows.GetLength(0)
-		If numRows > 0 AndAlso rows(numRows - 1).Length = 0 Then
-			numRows -= 1 'remove extra empty row if present
+		numberOfRows = rows.GetLength(0)
+		If numberOfRows > 0 AndAlso rows(numberOfRows - 1).Length = 0 Then
+			numberOfRows -= 1 'remove extra empty row if present
 		End If
-		If numRows > 0 Then
+		If numberOfRows > 0 Then
 			Dim cols() As String = rows(0).Split(New Char() { ControlChars.Tab })
-			numCols = cols.GetLength(0)
+			numberOfCols = cols.GetLength(0)
 		End If
 	End If
 	'paste one to many
-	If numRows = 1 AndAlso numCols = 1 AndAlso (Not Me.gridControl1.Selections.Ranges.ActiveRange.IsEmpty) Then
+	If numberOfRows = 1 AndAlso numberOfCols = 1 AndAlso (Not Me.gridControl1.Selections.Ranges.ActiveRange.IsEmpty) Then
 		Me.gridControl1.ChangeCells(Me.gridControl1.Selections.Ranges.ActiveRange, rows(0))
 		e.Handled = True
 		e.Result = True

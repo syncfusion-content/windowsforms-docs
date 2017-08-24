@@ -23,19 +23,19 @@ Given below are some code samples.
 
 CurrencyManager cm = (CurrencyManager)this.grid.BindingContext[this.grid.DataSource, this.grid.DataMember];
 
-DataRowView drv = cm.List[1] as DataRowView; 
+DataRowView dataRowView = cm.List[1] as DataRowView; 
 
 
 
 //Accesses row 2 of the grid.
 
-if(drv != null)
+if(dataRowView != null)
 
 {
 
-    DataRow dr = drv.Row;
+    DataRow dataRow = dataRowView.Row;
 
-    Console.WriteLine(dr["FirstName"].ToString());
+    Console.WriteLine(dataRow["FirstName"].ToString());
 
 }
 
@@ -50,17 +50,17 @@ if(drv != null)
 
 Dim cm As CurrencyManager = CType(Me.grid.BindingContext(Me.grid.DataSource, Me.grid.DataMember), CurrencyManager)
 
-Dim drv As DataRowView = cm.List(1)  
+Dim dataRowView As DataRowView = cm.List(1)  
 
 
 
 'Accesses row 2 of the grid.
 
-If Not (drv Is Nothing) Then
+If Not (dataRowView Is Nothing) Then
 
-Dim dr As DataRow = drv.Row
+Dim dataRow As DataRow = dataRowView.Row
 
-Console.WriteLine(dr("FirstName").ToString())
+Console.WriteLine(dataRow("FirstName").ToString())
 
 End If
 

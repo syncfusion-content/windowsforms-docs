@@ -37,9 +37,9 @@ Me.gridControl1(4, 4).BackColor = Color.LightPink
 
 [Font](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Font.html) property of the `GridStyleInfo` class specifies the font for the text displayed in the cell. In GridControl [GridFontInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFontInfo.html) class acts as a wrapper class for the standard [System.Drawing.Font](https://msdn.microsoft.com/en-us/library/system.drawing.font.aspx) class. The `GridFontInfo` class has special static members that easily modify font property members.
 {% tabs %}{% highlight c# %}
-GridFontInfo fontsize = new GridFontInfo();
-fontsize.Size = 11f;
-this.gridControl1[2, 2].Font = fontsize;
+GridFontInfo fontSize = new GridFontInfo();
+fontSize.Size = 11f;
+this.gridControl1[2, 2].Font = fontSize;
 this.gridControl1[2, 3].Font.Bold = true;
 this.gridControl1[2, 3].Font.Italic = true;
 this.gridControl1[3, 2].Font.Underline = true;
@@ -47,9 +47,9 @@ this.gridControl1[3, 3].Font.Strikeout = true;
 {% endhighlight %}
 
 {% highlight vb %}
-Dim fontsize As New GridFontInfo()
-fontsize.Size = 11f
-Me.gridControl1(2, 2).Font = fontsize
+Dim fontSize As New GridFontInfo()
+fontSize.Size = 11f
+Me.gridControl1(2, 2).Font = fontSize
 Me.gridControl1(2, 3).Font.Bold = True
 Me.gridControl1(2, 3).Font.Italic = True
 Me.gridControl1(3, 2).Font.Underline = True
@@ -345,7 +345,7 @@ this.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style, StyleModif
 {% endhighlight %}
 
 {% highlight vb %}
-'Creates a GridSyleInfo object
+'Creates a GridStyleInfo object
 Dim style As New GridStyleInfo()
 ' Set values and properties
 style.BackColor = Color.LightPink
@@ -368,7 +368,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style, StyleModifyT
 Changes can be done for the whole grid by using the [TableStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~TableStyle.html) property. TableStyle is a single `GridStyleInfo` object that is associated with the entire grid. 
 
 {% tabs %}{% highlight c# %}
-//Creates a GridSyleInfo object
+//Creates a GridStyleInfo object
 GridStyleInfo style = new GridStyleInfo();
 // Set values and properties
 style.BackColor = Color.LightPink;
@@ -385,7 +385,7 @@ this.gridControl1.TableStyle = style;
 {% endhighlight %}
 
 {% highlight vb %}
-'Creates a GridSyleInfo object
+'Creates a GridStyleInfo object
 Dim style As New GridStyleInfo()
 ' Set values and properties
 style.BackColor = Color.LightPink
@@ -408,7 +408,7 @@ Me.gridControl1.TableStyle = style
 Changes can be done for a particular or range of rows by using the [RowStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~RowStyles.html) property. This property is a `GridStyleInfo` object which is associated with each row.
 
 {% tabs %}{% highlight c# %}
-//Creates a GridSyleInfo object
+//Creates a GridStyleInfo object
 GridStyleInfo style = new GridStyleInfo();
 // Set values and properties
 style.BackColor = Color.LightPink;
@@ -426,7 +426,7 @@ this.gridControl1.RowStyles[4] = style;
 {% endhighlight %}
 
 {% highlight vb %}
-'Creates a GridSyleInfo object
+'Creates a GridStyleInfo object
 Dim style As New GridStyleInfo()
 ' Set values and properties
 style.BackColor = Color.LightPink
@@ -450,7 +450,7 @@ Me.gridControl1.RowStyles(4) = style
 Changes can be done for a particular or range of columns by using the [ColStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColStyles.html) property. This property is a `GridStyleInfo` object which is associated with each column.
 
 {% tabs %} {% highlight c# %}
-//Creates a GridSyleInfo object
+//Creates a GridStyleInfo object
 GridStyleInfo style = new GridStyleInfo();
 // Set values and properties
 style.BackColor = Color.LightPink;
@@ -468,7 +468,7 @@ this.gridControl1.ColStyles[4] = style;
 {% endhighlight %}
 
 {% highlight vb %}
-'Creates a GridSyleInfo object
+'Creates a GridStyleInfo object
 Dim style As New GridStyleInfo()
 ' Set values and properties
 style.BackColor = Color.LightPink

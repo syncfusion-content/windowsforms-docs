@@ -27,9 +27,9 @@ void gridDataBoundGrid1_CellClick(object sender, GridCellClickEventArgs e)
 
                 string name = this.gridDataBoundGrid1.Binder.InternalColumns[filed].MappingName;
 
-                WrapperClass lw = this.gridDataBoundGrid1.DataSource as WrapperClass;
+                WrapperClass wrapper = this.gridDataBoundGrid1.DataSource as WrapperClass;
 
-                lw.Sort(name, true);
+                wrapper.Sort(name, true);
 
                 e.Cancel = true;
 
@@ -51,9 +51,9 @@ Private Sub gridDataBoundGrid1_CellClick(ByVal sender As Object, ByVal e As Grid
 
                 Dim name As String = Me.gridDataBoundGrid1.Binder.InternalColumns(filed).MappingName
 
-                Dim lw As WrapperClass = TryCast(Me.gridDataBoundGrid1.DataSource, WrapperClass)
+                Dim wrapper As WrapperClass = TryCast(Me.gridDataBoundGrid1.DataSource, WrapperClass)
 
-                lw.Sort(name, True)
+                wrapper.Sort(name, True)
 
                 e.Cancel = True
 

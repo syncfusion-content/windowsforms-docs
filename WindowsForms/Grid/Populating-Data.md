@@ -171,7 +171,7 @@ this.gridControl1[2, 2].CellValue = "Essential";
 
 this.gridControl1[2, 2].Font.Bold = true;
 
-//Creates a GridSyleInfo object
+//Creates a GridStyleInfo object
 GridStyleInfo style = new GridStyleInfo();
 
 // Set values and properties

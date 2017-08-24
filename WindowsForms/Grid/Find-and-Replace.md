@@ -198,7 +198,7 @@ if (txtSearchText.Text != null)
         }
     }
 }
-this.highlighttext.HighlightText = "";
+this.highlightText.highlightText = "";
 this.gridControl1.Refresh();
 {% endhighlight %}
 {% highlight vb %}
@@ -230,7 +230,7 @@ If txtSearchText.Text IsNot Nothing Then
         End If
     Loop
 End If
-Me.highlighttext.HighlightText = ""
+Me.highlightText.highlightText = ""
 Me.gridControl1.Refresh()
 {% endhighlight %}
 {% endtabs %}
@@ -268,29 +268,29 @@ The search text can be highlighted by using the [GridHighlightSearchText](http:/
 {% tabs %}
 {% highlight c# %}
 //Creates an instance for the class “GridHighlightSearchText”.
-GridHighlightSearchText highlighttext = new GridHighlightSearchText();
+GridHighlightSearchText highlightText = new GridHighlightSearchText();
 
 //Wires the grid to the object.
-highlighttext.WireGrid(this.gridControl1);
+highlightText.WireGrid(this.gridControl1);
 
 //Assigns the text that needs to be highlighted.
-highlighttext.HighlightText = txtSearchText.Text;
+highlightText.highlightText = txtSearchText.Text;
 
 //Assigns the color (optional).
-highlighttext.HighlightColor = Color.Yellow;
+highlightText.HighlightColor = Color.Yellow;
 {% endhighlight %}
 {% highlight vb %}
 'Creates an instance for the class “GridHighlightSearchText”.
-Dim highlighttext As New GridHighlightSearchText()
+Dim highlightText As New GridHighlightSearchText()
 
 'Wires the grid to the object.
-highlighttext.WireGrid(Me.gridControl1)
+highlightText.WireGrid(Me.gridControl1)
 
 'Assigns the text that needs to be highlighted.
-highlighttext.HighlightText = txtSearchText.Text
+highlightText.highlightText = txtSearchText.Text
 
 'Assigns the color (optional).
-highlighttext.HighlightColor = Color.Yellow
+highlightText.HighlightColor = Color.Yellow
 {% endhighlight %}
 {% endtabs %}
 

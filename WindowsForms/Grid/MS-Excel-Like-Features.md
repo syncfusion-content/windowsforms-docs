@@ -81,11 +81,11 @@ Me.gridControl1.Model.Options.SelectionBorderThickness = 4
 2003 Excel like selection frame can be enabled by setting the `SelectionFrameOption` property to `SelectionFrameOption.Excel2003`.
 {% tabs %}
 {% highlight c# %}
-//Enable the 2003 Excel like selectin frame.
+//Enable the 2003 Excel like selection frame.
 this.gridControl1.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2003;
 {% endhighlight %}
 {% highlight vb %}
-'Enable the 2003 Excel like selectin frame.
+'Enable the 2003 Excel like selection frame.
 Me.gridControl1.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
 {% endhighlight %}
 {% endtabs %}
