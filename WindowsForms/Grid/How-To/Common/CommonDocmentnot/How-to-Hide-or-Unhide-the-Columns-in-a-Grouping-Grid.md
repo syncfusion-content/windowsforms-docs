@@ -16,7 +16,7 @@ The TableDescriptor object has VisibleColumns collection that you can use to con
 //Hides.
 this.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("Col1");
 
-//Unhides.
+//Unhide.
 this.gridGroupingControl1.TableDescriptor.VisibleColumns.Add("Col1");
 
 {% endhighlight  %}
@@ -25,6 +25,6 @@ this.gridGroupingControl1.TableDescriptor.VisibleColumns.Add("Col1");
 'Hides.
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("Col1")
 
-'Unhides.
+'Unhide.
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Add("Col1")
 {% endhighlight  %}

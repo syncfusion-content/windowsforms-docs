@@ -18,7 +18,7 @@ You can iterate through this list retrieving GridRangeInfo objects with code suc
 {% tabs %}
 {% highlight c# %}
 
-//Iterate throughs the SelectionRanges to display every range in the list.
+//Iterate through the SelectionRanges to display every range in the list.
 foreach(GridRangeInfo range in this.grid.Selections.Ranges)
 {
    MessageBox.Show(range.ToString());

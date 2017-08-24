@@ -15,10 +15,10 @@ This can be done using the code below.
 {% highlight c# %}
 
 //Group "Col2" using a custom categorizer and Comparer.
-Syncfusion.Grouping.SortColumnDescriptor cd = new Syncfusion.Grouping.SortColumnDescriptor("Col2");
-cd.Categorizer = new CustomCategorizer();
-cd.Comparer = new CustomComparer();
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd);
+Syncfusion.Grouping.SortColumnDescriptor columnDescriptor = new Syncfusion.Grouping.SortColumnDescriptor("Col2");
+columnDescriptor.Categorizer = new CustomCategorizer();
+columnDescriptor.Comparer = new CustomComparer();
+this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor);
 
 //Custom comparer function.
 public int Compare(object x, object y)
@@ -38,28 +38,28 @@ else
 //Custom categorizer function.
 public static int GetCategory(int i)
 {
-int ret = 0;
+int value = 0;
 if(i < 10)
- ret = 1;
+ value = 1;
 else if(i >= 10 && i < 20)
- ret = 2;
+ value = 2;
 else if(i >= 20 && i < 30)
- ret = 3;
+ value = 3;
 else if(i >= 30 && i < 40)
- ret = 4;
+ value = 4;
 else  
- ret = 5;
-return ret;
+ value = 5;
+return value;
 }
 {% endhighlight  %}
 {% highlight vb %}
 
 'Group "Col2" using a custom categorizer and Comparer.
-   Dim cd As Syncfusion.Grouping.SortColumnDescriptor = New 
+   Dim columnDescriptor As Syncfusion.Grouping.SortColumnDescriptor = New 
 Syncfusion.Grouping.SortColumnDescriptor("Col2")
-   cd.Categorizer = New CustomCategorizer()
-   cd.Comparer = New CustomComparer()
-   Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd)
+   columnDescriptor.Categorizer = New CustomCategorizer()
+   columnDescriptor.Comparer = New CustomComparer()
+   Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor)
 
 'Custom Comparer function.
    Public Function Compare(ByVal x As Object, ByVal y As Object) As 
@@ -78,19 +78,19 @@ End Function
 
 'Custom Categorizer function.
 Public Shared Function GetCategory(ByVal i As Integer) As Integer
-    Dim ret As Integer = 0
+    Dim value As Integer = 0
     If i < 10 Then
-        ret = 1
+        value = 1
     ElseIf i >= 10 AndAlso i < 20 Then
-        ret = 2
+        value = 2
     ElseIf i >= 20 AndAlso i < 30 Then
-        ret = 3
+        value = 3
     ElseIf i >= 30 AndAlso i < 40 Then
-        ret = 4
+        value = 4
     Else
-        ret = 5
+        value = 5
     End If
-    Return ret
+    Return value
 End Function
 
 {% endhighlight  %}

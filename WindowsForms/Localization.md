@@ -92,7 +92,7 @@ LocalizationProvider.Provider = New Localizer()
 
 {% highlight c# %}
 
-public string GetLocalizedString(System.Globalization.CultureInfo culture, stringname,object obj)
+public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
 
 {
 
