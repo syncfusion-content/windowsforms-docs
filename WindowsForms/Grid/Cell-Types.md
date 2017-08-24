@@ -114,7 +114,7 @@ ImageList imageList1 = new ImageList();
 imageList1.Images.Add(SystemIcons.Warning.ToBitmap());
 imageList1.Images.Add(SystemIcons.Application.ToBitmap());
 
-//Sets the imagelist into the TableStyle.
+//Sets the image list into the TableStyle.
 gridControl1.TableStyle.ImageList = imageList1;
 
 gridControl1[2, 2].CellType = GridCellTypeName.Image;
@@ -128,7 +128,7 @@ Dim imageList1 As New ImageList()
 imageList1.Images.Add(SystemIcons.Warning.ToBitmap())
 imageList1.Images.Add(SystemIcons.Application.ToBitmap())
 
-'Sets the imagelist into the TableStyle.
+'Sets the image list into the TableStyle.
 gridControl1.TableStyle.ImageList = imageList1
 
 gridControl1(2, 2).CellType = GridCellTypeName.Image
@@ -231,22 +231,22 @@ The Combobox created using [ChoiceList](http://help.syncfusion.com/cr/cref_files
 {% tabs %}
 {% highlight c# %}
 
-StringCollection sc = new StringCollection();
+StringCollection stringCollection = new StringCollection();
 
-sc.AddRange(new String[]{ "One", "Two", "Three", "Four", "Five" });
+stringCollection.AddRange(new String[]{ "One", "Two", "Three", "Four", "Five" });
 GridStyleInfo style = gridControl1.Model[2, 2];
 style.CellType = GridCellTypeName.ComboBox;
-style.ChoiceList = sc;
+style.ChoiceList = stringCollection;
 
 {% endhighlight %}
 {% highlight vb %}
 
-Dim sc As New StringCollection()
+Dim stringCollection As New StringCollection()
 
-sc.AddRange(New String(){ "One", "Two", "Three", "Four", "Five" })
+stringCollection.AddRange(New String(){ "One", "Two", "Three", "Four", "Five" })
 Dim style As GridStyleInfo = gridControl1.Model(2, 2)
 style.CellType = GridCellTypeName.ComboBox
-style.ChoiceList = sc
+style.ChoiceList = stringCollection
 
 {% endhighlight %}
 {% endtabs %}
@@ -261,18 +261,18 @@ The [DisplayMember](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/S
 {% highlight c# %}
 
 // DataSource
-DataTable dt = new DataTable();
-dt.Columns.Add("Name");
+DataTable dataTable = new DataTable();
+dataTable.Columns.Add("Name");
 
-dt.Rows.Add(new object[] { "Nancy" });
-dt.Rows.Add(new object[] { "Andrew" });
-dt.Rows.Add(new object[] { "Janet" });
-dt.Rows.Add(new object[] { "Margaret" });
+dataTable.Rows.Add(new object[] { "Nancy" });
+dataTable.Rows.Add(new object[] { "Andrew" });
+dataTable.Rows.Add(new object[] { "Janet" });
+dataTable.Rows.Add(new object[] { "Margaret" });
 
 //Assigning Datasource to combobox
 GridStyleInfo style = gridControl1.Model[2, 2];
 style.CellType = GridCellTypeName.ComboBox;
-style.DataSource = dt;
+style.DataSource = dataTable;
 style.DisplayMember = "Name";
 style.ValueMember = "Name";
 
@@ -280,18 +280,18 @@ style.ValueMember = "Name";
 {% highlight vb %}
 
 ' DataSource
-Dim dt As New DataTable()
-dt.Columns.Add("Name")
+Dim dataTable As New DataTable()
+dataTable.Columns.Add("Name")
 
-dt.Rows.Add(New Object() { "Nancy" })
-dt.Rows.Add(New Object() { "Andrew" })
-dt.Rows.Add(New Object() { "Janet" })
-dt.Rows.Add(New Object() { "Margaret" })
+dataTable.Rows.Add(New Object() { "Nancy" })
+dataTable.Rows.Add(New Object() { "Andrew" })
+dataTable.Rows.Add(New Object() { "Janet" })
+dataTable.Rows.Add(New Object() { "Margaret" })
 
 'Assigning Datasource to combobox
 Dim style As GridStyleInfo = gridControl1.Model(2, 2)
 style.CellType = GridCellTypeName.ComboBox
-style.DataSource = dt
+style.DataSource = dataTable
 style.DisplayMember = "Name"
 style.ValueMember = "Name"
 
@@ -358,19 +358,19 @@ void gridControl1_CurrentCellShowingDropDown(object sender, GridCurrentCellShowi
    if (grid != null)
    {
       GridCurrentCell cc = grid.CurrentCell;
-      GridComboBoxCellRenderer cr = cc.Renderer as GridComboBoxCellRenderer;
+      GridComboBoxCellRenderer cellRenderer = cc.Renderer as GridComboBoxCellRenderer;
   
-      //Sets number of visible items for comboboxes in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
+      //Sets number of visible items for combobox in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
   
       if (cc != null)
       {
          if (cc.RowIndex == 6)
-            ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 4;
+            ((GridComboBoxListBoxPart)cellRenderer.ListBoxPart).DropDownRows = 4;
          else if (cc.RowIndex == 4)
-            ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 7;
+            ((GridComboBoxListBoxPart)cellRenderer.ListBoxPart).DropDownRows = 7;
          else if (cc.RowIndex == 2)
-            ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 10;
-         else ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 6;
+            ((GridComboBoxListBoxPart)cellRenderer.ListBoxPart).DropDownRows = 10;
+         else ((GridComboBoxListBoxPart)cellRenderer.ListBoxPart).DropDownRows = 6;
       }
    }
 }
@@ -382,19 +382,19 @@ Private Sub gridControl1_CurrentCellShowingDropDown(ByVal sender As Object, ByVa
    Dim grid As GridControlBase = TryCast(sender, GridControlBase)
    If grid IsNot Nothing Then
       Dim cc As GridCurrentCell = grid.CurrentCell
-      Dim cr As GridComboBoxCellRenderer = TryCast(cc.Renderer, GridComboBoxCellRenderer)
+      Dim cellRenderer As GridComboBoxCellRenderer = TryCast(cc.Renderer, GridComboBoxCellRenderer)
 
-      'Sets number of visible items for comboboxes in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
+      'Sets number of visible items for combobox in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
 
       If cc IsNot Nothing Then
          If cc.RowIndex = 6 Then
-            CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 4
+            CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 4
          ElseIf cc.RowIndex = 4 Then
-            CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 7
+            CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 7
          ElseIf cc.RowIndex = 2 Then
-            CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 10
+            CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 10
          Else
-             CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 6
+             CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 6
          End If
       End If
    End If
@@ -420,11 +420,11 @@ items.AddRange(new String[]{    "One",
                 });
 
 
-//set the celltype into combobox.
+//set the cell type into combobox.
 this.gridControl1[0, 4].CellType = "ComboBox";
 this.gridControl1[0, 4].CellValue = "combo";
 //Set the GridShowButtons as Show option for showing the combobox in the normal view.
-//The combobox is modified like currentcellediting by assigning the GridShowButtons as CurrentCellEditing
+//The combobox is modified like current cell editing by assigning the GridShowButtons as CurrentCellEditing
 this.gridControl1[0, 4].ShowButtons = GridShowButtons.Show;
 this.gridControl1[0, 4].CellAppearance = GridCellAppearance.Raised;
 this.gridControl1[0, 4].ChoiceList = items;
@@ -437,11 +437,11 @@ Dim items As New StringCollection()
 items.AddRange(New String(){ "One", "Two", "Three", "Four", "Five" })
 
 
-'set the celltype into combobox.
+'set the cell type into combobox.
 Me.gridControl1(0, 4).CellType = "ComboBox"
 Me.gridControl1(0, 4).CellValue = "combo"
 'Set the GridShowButtons as Show option for showing the combobox in the normal view.
-'The combobox is modified like currentcellediting by assigning the GridShowButtons as CurrentCellEditing
+'The combobox is modified like current cell editing by assigning the GridShowButtons as CurrentCellEditing
 Me.gridControl1(0, 4).ShowButtons = GridShowButtons.Show
 Me.gridControl1(0, 4).CellAppearance = GridCellAppearance.Raised
 Me.gridControl1(0, 4).ChoiceList = items
@@ -456,20 +456,20 @@ N> To know more details and sample, refer the KB link over [here](https://www.sy
 {% tabs %}
 {% highlight c# %}
 
-StringCollection sc = new StringCollection();
-sc.AddRange(new String[]{   "Button 0", 
+StringCollection stringCollection = new StringCollection();
+stringCollection.AddRange(new String[]{   "Button 0", 
                             "Disabled/disabled", 
                             "Button 2", 
                             "Button 3"});
-this.gridControl1[3, 1].ChoiceList = sc;
+this.gridControl1[3, 1].ChoiceList = stringCollection;
 this.gridControl1[3, 1].CellType = "RadioButton";
 
 {% endhighlight %}
 {% highlight vb %}
 
-Dim sc As New StringCollection()
-sc.AddRange(New String(){ "Button 0", "Disabled/disabled", "Button 2", "Button 3"})
-Me.gridControl1(3, 1).ChoiceList = sc
+Dim stringCollection As New StringCollection()
+stringCollection.AddRange(New String(){ "Button 0", "Disabled/disabled", "Button 2", "Button 3"})
+Me.gridControl1(3, 1).ChoiceList = stringCollection
 Me.gridControl1(3, 1).CellType = "RadioButton"
 
 {% endhighlight %}
@@ -986,8 +986,8 @@ Me.gridControl1(2, 2) = monthCalendar
 {% tabs %}
 {% highlight c# %}
 
-GridStyleInfo numericCelltype = new GridStyleInfo();
-numericCelltype.CellType = GridCellTypeName.NumericUpDown;
+GridStyleInfo numericCellType = new GridStyleInfo();
+numericCellType.CellType = GridCellTypeName.NumericUpDown;
 
 GridNumericUpDownCellInfo numeric = new GridNumericUpDownCellInfo();
 
@@ -1008,15 +1008,15 @@ numeric.Step = 2;
 // reaches the maximum or minimum.
 numeric.WrapValue = true;
 
-numericCelltype.NumericUpDown = numeric;
+numericCellType.NumericUpDown = numeric;
 
-this.gridControl1[2, 2] = numericCelltype;
+this.gridControl1[2, 2] = numericCellType;
 
 {% endhighlight %}
 {% highlight vb %}
 
-Dim numericCelltype As New GridStyleInfo()
-numericCelltype.CellType = GridCellTypeName.NumericUpDown
+Dim numericCellType As New GridStyleInfo()
+numericCellType.CellType = GridCellTypeName.NumericUpDown
 
 Dim numeric As New GridNumericUpDownCellInfo()
 
@@ -1037,9 +1037,9 @@ numeric.Step = 2
 ' reaches the maximum or minimum.
 numeric.WrapValue = True
 
-numericCelltype.NumericUpDown = numeric
+numericCellType.NumericUpDown = numeric
 
-Me.gridControl1(2, 2) = numericCelltype
+Me.gridControl1(2, 2) = numericCellType
 
 {% endhighlight %}
 {% endtabs %}
@@ -1073,8 +1073,8 @@ The `ProgressBar` property in `GridStyleInfo` class will set all the style prope
 {% tabs %}
 {% highlight c# %}
 
-GridStyleInfo progressBarCelltype = new GridStyleInfo();
-progressBarCelltype.CellType = GridCellTypeName.ProgressBar;
+GridStyleInfo progressBarCellType = new GridStyleInfo();
+progressBarCellType.CellType = GridCellTypeName.ProgressBar;
 
 GridProgressBarInfo progressBar = new GridProgressBarInfo();
 //It denotes the Background style for the Progress Bar
@@ -1093,14 +1093,14 @@ progressBar.TubeEndColor = System.Drawing.Color.Honeydew;
 progressBar.TubeStartColor = System.Drawing.Color.Green;
 progressBar.ProgressValue = 50;
 
-progressBarCelltype.ProgressBar = progressBar;
-this.gridControl1[2, 2] = progressBarCelltype;
+progressBarCellType.ProgressBar = progressBar;
+this.gridControl1[2, 2] = progressBarCellType;
 
 {% endhighlight %}
 {% highlight vb %}
 
-Dim progressBarCelltype As New GridStyleInfo()
-progressBarCelltype.CellType = GridCellTypeName.ProgressBar
+Dim progressBarCellType As New GridStyleInfo()
+progressBarCellType.CellType = GridCellTypeName.ProgressBar
 
 Dim progressBar As New GridProgressBarInfo()
 'It denotes the Background style for the Progress Bar
@@ -1113,14 +1113,14 @@ progressBar.FontColor = System.Drawing.Color.White
 progressBar.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube
 ' Checks whether the text has to visible or not.
 progressBar.TextVisible = True
-' Sets the start color and end color of the forground
-' if ProgrssStyle is in Tube.
+' Sets the start color and end color of the foreground
+' if ProgressStyle is in Tube.
 progressBar.TubeEndColor = System.Drawing.Color.Honeydew
 progressBar.TubeStartColor = System.Drawing.Color.Green
 progressBar.ProgressValue = 50
 
-progressBarCelltype.ProgressBar = progressBar
-Me.gridControl1(2, 2) = progressBarCelltype
+progressBarCellType.ProgressBar = progressBar
+Me.gridControl1(2, 2) = progressBarCellType
 
 {% endhighlight %}
 {% endtabs %}
@@ -1305,7 +1305,7 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
     private bool _drawHotLink;
     private Color _hotColor;
     private Color _visitedColor;
-    private string _EXEname;
+    private string _EXEName;
 
     public LinkLabelCellRenderer(GridControlBase grid, GridCellModelBase cellModel)
         : base(grid, cellModel)
@@ -1316,7 +1316,7 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
         _hotColor = Color.Red;
         _visitedColor = Color.Purple;
 
-        _EXEname = "iexplore.exe";
+        _EXEName = "iexplore.exe";
     }
 
     public Color VisitedLinkColor
@@ -1331,10 +1331,10 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
         set { _hotColor = value; }
     }
 
-    public string EXEname
+    public string EXEName
     {
-        get { return _EXEname; }
-        set { _EXEname = value; }
+        get { return _EXEName; }
+        set { _EXEName = value; }
     }
 
     protected virtual void LaunchBrowser(GridStyleInfo style)
@@ -1342,7 +1342,7 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
         try
         {
             System.Diagnostics.Process process = new System.Diagnostics.Process();
-            process.StartInfo.FileName = EXEname;
+            process.StartInfo.FileName = EXEName;
             process.StartInfo.Arguments = (string)style.Tag;
             process.Start();
         }
@@ -1449,7 +1449,7 @@ Public Class LinkLabelCellRenderer
     Private _drawHotLink As Boolean
     Private _hotColor As Color
     Private _visitedColor As Color
-    Private _EXEname As String
+    Private _EXEName As String
 
     Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridCellModelBase)
         MyBase.New(grid, cellModel)
@@ -1459,7 +1459,7 @@ Public Class LinkLabelCellRenderer
         _hotColor = Color.Red
         _visitedColor = Color.Purple
 
-        _EXEname = "iexplore.exe"
+        _EXEName = "iexplore.exe"
     End Sub
 
     Public Property VisitedLinkColor() As Color
@@ -1480,19 +1480,19 @@ Public Class LinkLabelCellRenderer
         End Set
     End Property
 
-    Public Property EXEname() As String
+    Public Property EXEName() As String
         Get
-            Return _EXEname
+            Return _EXEName
         End Get
         Set(ByVal value As String)
-            _EXEname = value
+            _EXEName = value
         End Set
     End Property
 
     Protected Overridable Sub LaunchBrowser(ByVal style As GridStyleInfo)
         Try
             Dim process As New System.Diagnostics.Process()
-            process.StartInfo.FileName = EXEname
+            process.StartInfo.FileName = EXEName
             process.StartInfo.Arguments = CStr(style.Tag)
             process.Start()
         Catch ex As Exception
@@ -1589,13 +1589,13 @@ After creating the Cell model and Cell Renderer for the custom cell type it is n
 {% tabs %}
 {% highlight c# %}
 
-// Registering the celltype LinkLabelCell to the GridControl
+// Registering the cell type LinkLabelCell to the GridControl
 gridControl1.CellModels.Add("LinkLabelCell", new LinkLabelCellModel(gridControl1.Model));
 
 {% endhighlight %}
 {% highlight vb %}
 
-' Registering the celltype LinkLabelCell to the GridControl
+' Registering the cell type LinkLabelCell to the GridControl
 gridControl1.CellModels.Add("LinkLabelCell", New LinkLabelCellModel(gridControl1.Model))
 
 {% endhighlight %}

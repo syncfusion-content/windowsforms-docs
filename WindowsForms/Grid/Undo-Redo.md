@@ -232,11 +232,11 @@ GridRangeInfoList ranges;
 
 bool setOrReset;
 
-private GridModelCoveredRanges cr;
+private GridModelCoveredRanges coveredRange;
 
-public GridModelSetCoveredRangesCommand(GridModelCoveredRanges cr, GridRangeInfoList ranges, bool setOrReset)
+public GridModelSetCoveredRangesCommand(GridModelCoveredRanges coveredRange, GridRangeInfoList ranges, bool setOrReset)
 
-: base(cr.Model)
+: base(coveredRange.Model)
 
 {
 
@@ -256,7 +256,7 @@ SetDescription("CommandRemoveCoveredRanges");
 
 }
 
-this.cr = cr;
+this.coveredRange = coveredRange;
 
 this.ranges = ranges;
 
@@ -270,7 +270,7 @@ public override void Execute()
 
 {
 
-cr.SetCoveredRanges(ranges, setOrReset);
+coveredRange.SetCoveredRanges(ranges, setOrReset);
 
 Grid.ScrollCellInView(ranges.ActiveRange, GridScrollCurrentCellReason.Command);
 
@@ -288,11 +288,11 @@ Private ranges As GridRangeInfoList
 
 Private setOrReset As Boolean
 
-Private cr As GridModelCoveredRanges
+Private coveredRange As GridModelCoveredRanges
 
-Public Sub New(ByVal cr As GridModelCoveredRanges, ByVal ranges As GridRangeInfoList, ByVal setOrReset As Boolean)
+Public Sub New(ByVal coveredRange As GridModelCoveredRanges, ByVal ranges As GridRangeInfoList, ByVal setOrReset As Boolean)
 
-MyBase.New(cr.Model)
+MyBase.New(coveredRange.Model)
 
 If setOrReset Then
 
@@ -304,7 +304,7 @@ SetDescription("CommandRemoveCoveredRanges")
 
 End If
 
-Me.cr = cr
+Me.coveredRange = coveredRange
 
 Me.ranges = ranges
 
@@ -316,7 +316,7 @@ End Sub
 
 Public Overrides Sub Execute()
 
-cr.SetCoveredRanges(ranges, setOrReset)
+coveredRange.SetCoveredRanges(ranges, setOrReset)
 
 Grid.ScrollCellInView(ranges.ActiveRange, GridScrollCurrentCellReason.Command)
 

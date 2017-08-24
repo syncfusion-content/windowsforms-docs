@@ -68,12 +68,12 @@ The schema and look and feel of the GridControl can be serialized by using the [
 {% tabs %} 
 {% highlight c# %}
 //Serialize the grid schema and Look And Feel to the Xml file
-this.gridControl1.SaveXml("GridSchemaXml");
+this.gridControl1.SaveXml("GridSchema");
 {% endhighlight %}
 
 {% highlight vb %}
 'Serialize the grid schema and Look And Feel to the Xml file
-Me.gridControl1.SaveXml("GridSchemaXml")
+Me.gridControl1.SaveXml("GridSchema")
 {% endhighlight %}
 {% endtabs %}
 
@@ -84,14 +84,14 @@ The [InitializeFromXml](http://help.syncfusion.com/cr/cref_files/windowsforms/gr
 {% tabs %} 
 {% highlight c# %}
 //Deserialize the schema and the look and feel of the grid
-this.gridControl1.InitializeFromXml("GridSchemaXml");
+this.gridControl1.InitializeFromXml("GridSchema");
 
 this.gridControl1.Refresh();
 {% endhighlight %}
 
 {% highlight vb %}
 'Deserialize the schema and the look and feel of the grid
-Me.gridControl1.InitializeFromXml("GridSchemaXml")
+Me.gridControl1.InitializeFromXml("GridSchema")
 
 Me.gridControl1.Refresh()
 {% endhighlight %}
@@ -104,32 +104,32 @@ The grid data (schema) can alone serialize without the style information (Look a
 {% tabs %} 
 {% highlight c# %}
 //create stream for saving the data
-Stream s = File.Create("GridSchemaxml");
+Stream s = File.Create("GridSchema");
 
 //Xml writer for writing the data into the xml format
-XmlWriter xw = new XmlTextWriter(s, System.Text.Encoding.Default);
+XmlWriter xmlWriter = new XmlTextWriter(s, System.Text.Encoding.Default);
 
 //Creating the object for serialize the grid data
-XmlSerializer xs = new System.Xml.Serialization.XmlSerializer(this.gridControl1.Model.Data.GetType());
+XmlSerializer xmlSerializer = new System.Xml.Serialization.XmlSerializer(this.gridControl1.Model.Data.GetType());
 
 //Serialize the content of the grid to xml file
-xs.Serialize(xw, this.gridControl1.Model.Data);
+xmlSerializer.Serialize(xmlWriter, this.gridControl1.Model.Data);
 
 s.Close();
 {% endhighlight %}
 
 {% highlight vb %}
 'create stream for saving the data
-Dim s As Stream = File.Create("GridSchemaxml")
+Dim s As Stream = File.Create("GridSchema")
 
 'Xml writer for writing the data into the xml format
-Dim xw As XmlWriter = New XmlTextWriter(s, System.Text.Encoding.Default)
+Dim xmlWriter As XmlWriter = New XmlTextWriter(s, System.Text.Encoding.Default)
 
 'Creating the object for serializing the grid data
-Dim xs As XmlSerializer = New System.Xml.Serialization.XmlSerializer(Me.gridControl1.Model.Data.GetType())
+Dim xmlSerializer As XmlSerializer = New System.Xml.Serialization.XmlSerializer(Me.gridControl1.Model.Data.GetType())
 
 'Serialize the content of the grid to xml file
-xs.Serialize(xw, Me.gridControl1.Model.Data)
+xmlSerializer.Serialize(xmlWriter, Me.gridControl1.Model.Data)
 
 s.Close()
 {% endhighlight %}
@@ -142,15 +142,15 @@ The schema can be deserialized from the XML file and loaded to the grid by using
 {% tabs %} 
 {% highlight c# %}
 //Open the xml file in the read mode
-Stream s = File.OpenRead("GridSchemaxml");
+Stream s = File.OpenRead("GridSchema");
 
 //read the stream of data using the xml reader
-XmlReader xr = new XmlTextReader(s);
+XmlReader xmlReader = new XmlTextReader(s);
 
-XmlSerializer xs = new XmlSerializer(this.gridControl1.Model.Data.GetType());
+XmlSerializer xmlSerializer = new XmlSerializer(this.gridControl1.Model.Data.GetType());
 
 //Deserialize the content of xml file to the grid data
-this.gridControl1.Model.Data = (GridData)xs.Deserialize(xr);
+this.gridControl1.Model.Data = (GridData)xmlSerializer.Deserialize(xmlReader);
 
 s.Close();
 
@@ -159,15 +159,15 @@ this.gridControl1.Refresh();
 
 {% highlight vb %}
 'Open the xml file in the read mode
-Dim s As Stream = File.OpenRead("GridSchemaxml")
+Dim s As Stream = File.OpenRead("GridSchema")
 
 'read the stream of data using the xml reader
-Dim xr As XmlReader = New XmlTextReader(s)
+Dim xmlReader As XmlReader = New XmlTextReader(s)
 
-Dim xs As New XmlSerializer(Me.gridControl1.Model.Data.GetType())
+Dim xmlSerializer As New XmlSerializer(Me.gridControl1.Model.Data.GetType())
 
 'Deserialize the content of xml file to the grid data
-Me.gridControl1.Model.Data = CType(xs.Deserialize(xr), GridData)
+Me.gridControl1.Model.Data = CType(xmlSerializer.Deserialize(xmlReader), GridData)
 
 s.Close()
 

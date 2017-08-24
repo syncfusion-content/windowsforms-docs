@@ -129,11 +129,11 @@ End Class
 {% tabs %}
 {% highlight c# %}
 //Sets the derived GridControl to the grid.
-this.gridControl1 = new VscrollOptimization.DerivedGridControl();
+this.gridControl1 = new VerticalScrollOptimization.DerivedGridControl();
 {% endhighlight %}
 {% highlight vb %}
 'Sets the derived GridControl to the grid.
-Me.gridControl1 = New VscrollOptimization.DerivedGridControl()
+Me.gridControl1 = New VerticalScrollOptimization.DerivedGridControl()
 {% endhighlight %}
 {% endtabs %}
 3. Set the `VScrollPixel` property to true.

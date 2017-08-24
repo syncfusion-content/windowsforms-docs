@@ -30,13 +30,13 @@ User can specify the size of the grid that is to be populated and then can try a
 This technique loops through the cells and uses an indexer on the GridControl to set values.
 {% tabs %}
 {% highlight c# %}
-for (int i = 0; i < this.numArrayRows; ++i)
-    for (int j = 0; j < this.numArrayCols; ++j)
+for (int i = 0; i < this.numberOfArrayRows; ++i)
+    for (int j = 0; j < this.numberOfArrayCols; ++j)
         this.gridControl1[i + 1, j + 1].CellValue = this.intArray[i, j];
 {% endhighlight %}
 {% highlight vb %}
-For i As Integer = 0 To Me.numArrayRows - 1
-For j As Integer = 0 To Me.numArrayCols - 1
+For i As Integer = 0 To Me.numberOfArrayRows - 1
+For j As Integer = 0 To Me.numberOfArrayCols - 1
 Me.gridControl1(i + 1, j + 1).CellValue = Me.intArray(i, j)
 Next j
 Next i
@@ -72,7 +72,7 @@ Three events need to be handled in order to implement a virtual mode in GridCont
 this.gridControl1.QueryRowCount += new GridRowColCountEventHandler(GridQueryRowCount); 
 private void GridQueryRowCount(object sender, GridRowColCountEventArgs e)
 { 
-    e.Count = this.numArrayRows;
+    e.Count = this.numberOfArrayRows;
     e.Handled = true;
 }  
 
@@ -80,7 +80,7 @@ private void GridQueryRowCount(object sender, GridRowColCountEventArgs e)
 this.gridControl1.QueryColCount += new GridRowColCountEventHandler(GridQueryColCount);       
 private void GridQueryColCount(object sender, GridRowColCountEventArgs e)
 {
-    e.Count = this.numArrayCols;
+    e.Count = this.numberOfArrayCols;
     e.Handled = true;
 }
 
@@ -101,7 +101,7 @@ private void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 'Determines number of rows.
 Private Me.gridControl1.QueryRowCount += New GridRowColCountEventHandler(AddressOf GridQueryRowCount)
 Private Sub GridQueryRowCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
-e.Count = Me.numArrayRows
+e.Count = Me.numberOfArrayRows
 e.Handled = True
 End Sub
 
@@ -109,7 +109,7 @@ End Sub
 'Determines the number of columns.
 Private Me.gridControl1.QueryColCount += New GridRowColCountEventHandler(AddressOf GridQueryColCount)
 Private Sub GridQueryColCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
-e.Count = Me.numArrayCols
+e.Count = Me.numberOfArrayCols
 e.Handled = True
 End Sub
 

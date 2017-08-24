@@ -19,7 +19,7 @@ You can hide rows and columns using grid.Model.Rows.Hidden collection and grid.M
 this.grid.Model.Rows.Hidden[2] = true; 
 
 //Hides column 3.
-this.grid.Model.Cols.Hiddent[3] = true; 
+this.grid.Model.Cols.Hidden[3] = true; 
 
 //Hides cols 1-3.
 this.grid.Model.HideCols.SetRange(1, 3, true); 
@@ -32,7 +32,7 @@ this.grid.Model.HideCols.SetRange(1, 3, true);
 Me.grid.Model.Rows.Hidden(2) = True 
 
 'Hides column 3.
-Me.grid.Model.Cols.Hiddent(3) = True 
+Me.grid.Model.Cols.Hidden(3) = True 
 
 'Hides cols 1-3.
 Me.grid.Model.HideCols.SetRange(1, 3, True) 

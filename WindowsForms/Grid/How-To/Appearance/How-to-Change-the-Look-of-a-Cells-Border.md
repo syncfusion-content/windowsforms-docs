@@ -24,7 +24,7 @@ this.gridControl1.RowStyles[3].Borders.Bottom = new GridBorder(GridBorderStyle.S
 this.gridControl1.RowStyles[4].Borders.Left = new GridBorder(GridBorderStyle.DashDot, Color.LightGreen, GridBorderWeight.ExtraThick);
 this.gridControl1.RowStyles[5].Borders.Top = new GridBorder(GridBorderStyle.DashDotDot, Color.Purple, GridBorderWeight.ExtraExtraThick);
 
-//Bordermargins.
+//BorderMargins.
 this.gridControl1.RowStyles[1].BorderMargins.Right = 20;
 this.gridControl1.RowStyles[2].BorderMargins.Left = 22;
 this.gridControl1.RowStyles[3].BorderMargins.Top = 24;
@@ -41,7 +41,7 @@ Me.GridControl1.RowStyles(3).Borders.Bottom = New GridBorder(GridBorderStyle.Sol
 Me.GridControl1.RowStyles(4).Borders.Left = New GridBorder(GridBorderStyle.DashDot, Color.LightGreen, GridBorderWeight.ExtraThick)
 Me.GridControl1.RowStyles(5).Borders.Top = New GridBorder(GridBorderStyle.DashDotDot, Color.Purple, GridBorderWeight.ExtraExtraThick)
 
-'Bordermargins.
+'BorderMargins.
 Me.GridControl1.RowStyles(1).BorderMargins.Right = 20
 Me.GridControl1.RowStyles(2).BorderMargins.Left = 22
 Me.GridControl1.RowStyles(3).BorderMargins.Top = 24

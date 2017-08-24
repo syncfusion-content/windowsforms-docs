@@ -248,7 +248,7 @@ void gridControl1_CellDrawn(object sender, GridDrawCellEventArgs e)
 
 {
 
-//get the currentcell
+//get the current cell
 GridCurrentCell cc = this.gridControl1.CurrentCell;
 
 if (e.RowIndex == cc.RowIndex && e.ColIndex == cc.ColIndex)
@@ -275,7 +275,7 @@ Private Me.gridControl1.CellDrawn += AddressOf gridControl1_CellDrawn
 
 Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As GridDrawCellEventArgs)
 
-'get the currentcell
+'get the current cell
 Dim cc As GridCurrentCell = Me.gridControl1.CurrentCell
 
 If e.RowIndex = cc.RowIndex AndAlso e.ColIndex = cc.ColIndex Then
