@@ -569,9 +569,9 @@ Here are the methods and properties used as part of the ScheduleDataProvider's s
 
 {% highlight c# %}
 
-/// Provides default droplists for entering IScheduleAppointment data. 
+/// Provides default drop lists for entering IScheduleAppointment data. 
 
-/// You can override this method to provide customized droplists.
+/// You can override this method to provide customized drop lists.
 
 public virtual void InitLists()
 

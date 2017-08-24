@@ -25,7 +25,7 @@ TabPageAdv st =new TabPageAdv();
 
 // Handles the TabControlAdded event of TabbedMDIManager. 
 
-void tmm_TabControlAdded(object sender, TabbedMDITabControlEventArgs args) 
+void tabbedMDIManager_TabControlAdded(object sender, TabbedMDITabControlEventArgs args) 
 
 { 
 
@@ -47,13 +47,13 @@ st = (sender as MDITabPanel).SelectedTab;
 
 // Adding handler for the Context Menu Item. 
 
-tmm.ContextMenuItem.BeforePopup += new CancelEventHandler(ContextMenuItem_BeforePopup); 
+tabbedMDIManager.ContextMenuItem.BeforePopup += new CancelEventHandler(ContextMenuItem_BeforePopup); 
 
 // Handler for BeforePopup event.
 
 void ContextMenuItem_BeforePopup(object sender, CancelEventArgs e)
 
-// Cancelling if the Title is New Document.  
+// Canceling if the Title is New Document.  
 
 { 
 
@@ -73,7 +73,7 @@ Private st As TabPageAdv
 
 ' Handles the TabControlAdded event of TabbedMDIManager. 
 
-Private Sub tmm_TabControlAdded(ByVal sender As Object, ByVal args As TabbedMDITabControlEventArgs) Handles tmm.TabControlAdded
+Private Sub tabbedMDIManager_TabControlAdded(ByVal sender As Object, ByVal args As TabbedMDITabControlEventArgs) Handles tabbedMDIManager.TabControlAdded
 
 ' Subscribe to SelectedIndexChanged event. 
 
@@ -85,23 +85,23 @@ End Sub
 
 Private Sub SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
 
-Dim mtp As MDITabPanel = CType(sender, MDITabPanel)
+Dim mdiTabPanel As MDITabPanel = CType(sender, MDITabPanel)
 
 ' Store in a temporary variable.  
 
-st = mtp.SelectedTab
+st = mdiTabPanel.SelectedTab
 
 End Sub
 
 ' Adding handler for the Context Menu Item. 
 
-AddHandler tmm.ContextMenuItem.BeforePopup, AddressOf tmm_BeforePopup 
+AddHandler tabbedMDIManager.ContextMenuItem.BeforePopup, AddressOf TabbedMDIManager_BeforePopup 
 
 ' Handler for BeforePopup event. 
 
-Private Sub tmm_BeforePopup(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
+Private Sub tabbedMDIManager_BeforePopup(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
 
-' Cancelling if the Title is New Document. 
+' Canceling if the Title is New Document. 
 
 If st.Text = "New Document" Then e.Cancel = True
 

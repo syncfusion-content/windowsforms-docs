@@ -25,19 +25,19 @@ private void Form1_Load(object sender, System.EventArgs e)
 
                 {
 
-                        DataTable dt = new DataTable();
+                        DataTable dataTable = new DataTable();
 
                         for(int i=0; i<10; i++)
 
                         {
 
-                                dt.Columns.Add();
+                                dataTable.Columns.Add();
 
-                                dt.Rows.Add(new object[]{});
+                                dataTable.Rows.Add(new object[]{});
 
                         }
 
-                        this.gridDataBoundGrid1.DataSource = dt;
+                        this.gridDataBoundGrid1.DataSource = dataTable;
 
 
 
@@ -45,7 +45,7 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 //There is a condition check in accepting hashtable values.
 
-// ie.. the total of values passed must not be greater than (100 - Unmodified Column count)
+//The total of values passed must not be greater than (100 - Unmodified Column count)
 
                         ht = new Hashtable();
 
@@ -140,17 +140,17 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-    Dim dt As DataTable = New DataTable()
+    Dim dataTable As DataTable = New DataTable()
 
     For i As Integer = 0 To 9
 
-        dt.Columns.Add()
+        dataTable.Columns.Add()
 
-        dt.Rows.Add(New Object(){})
+        dataTable.Rows.Add(New Object(){})
 
     Next i
 
-    Me.gridDataBoundGrid1.DataSource = dt
+    Me.gridDataBoundGrid1.DataSource = dataTable
 
 
 
@@ -158,7 +158,7 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Hand
 
 ' There is a condition check in accepting hashtable values.
 
-' ie.. the total of values passed must not be greater than (100 - Unmodified Column count)
+' The total of values passed must not be greater than (100 - Unmodified Column count)
 
     ht = New Hashtable()
 

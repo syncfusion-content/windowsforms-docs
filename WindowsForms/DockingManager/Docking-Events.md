@@ -586,21 +586,21 @@ using Syncfusion.Windows.Forms.Tools.XPMenus;
 
 private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem bar1;
 
-private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem pbiFile;
+private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem fileItem;
 
 
 
 //Initialize and set the properties.
 
-this.pbiFile = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
+this.fileItem = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
 
 this.bar1 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
 
-this.pbiFile.Text = "File";
+this.fileItem.Text = "File";
 
 this.bar1.Text = "Exit";
 
-this.pbiFile.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {this.bar1});
+this.fileItem.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {this.bar1});
 
 //Call the event
 
@@ -612,7 +612,7 @@ private void dockingManager1_DockContextMenu(object sender, Syncfusion.Windows.F
 
 {
 
-   arg.ContextMenu.ParentBarItem.Items.Add(this.pbiFile);
+   arg.ContextMenu.ParentBarItem.Items.Add(this.fileItem);
 
 }
 
@@ -628,21 +628,21 @@ Imports Syncfusion.Windows.Forms.Tools.XPMenus
 
 'Declaration
 
-Private pbiFile As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
+Private fileItem As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
 
 Private WithEvents bar1 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 
 'Initialize and set the properties
 
-Me.pbiFile = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
+Me.fileItem = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
 
 Me.bar1 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
 
-Me.pbiFile.Text = "File"
+Me.fileItem.Text = "File"
 
 Me.bar1.Text = "Exit"
 
-Me.pbiFile.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.bar1})
+Me.fileItem.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.bar1})
 
 
 
@@ -650,7 +650,7 @@ Me.pbiFile.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() {
 
 Private Sub dockingManager1_DockContextMenu(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs)
 
-arg.ContextMenu.ParentBarItem.Items.Add(Me.pbiFile)
+arg.ContextMenu.ParentBarItem.Items.Add(Me.fileItem)
 
 End Sub
 
@@ -1034,13 +1034,13 @@ arg.Controls.Length.ToString());
 
 //arg.Controls Gets the collection of controls undergoing the dock state transfer.
 
-Control[] ctrls = arg.Controls;
+Control[] controls = arg.Controls;
 
 int i=1;
 
 //Here display all the controls in arg.Controls group.
 
-foreach(Control ctrl in ctrls)
+foreach(Control ctrl in controls)
 
 {
 
@@ -1067,13 +1067,13 @@ Console.WriteLine("Total Number of controls in a group : " + arg.Controls.Length
 
 'arg.Controls Gets the collection of controls undergoing the dock state transfer.
 
-Dim ctrls As Control() = arg.Controls
+Dim controls As Control() = arg.Controls
 
 Dim i As Integer = 1
 
 'Here display all the controls in arg.Controls group.
 
-For Each ctrl As Control In ctrls
+For Each ctrl As Control In controls
 
 Console.WriteLine("Control" + i + " Name : " + ctrl.Name)
 
@@ -1126,13 +1126,13 @@ Console.WriteLine("Total Number of controls in a group : "+arg.Controls.Length.T
 
 //arg.Controls gives the collection of controls which are in Docked Area.
 
-Control[] ctrls = arg.Controls;
+Control[] controls = arg.Controls;
 
 int i=1;
 
 //Here display all the controls in arg.Controls group.
 
-foreach(Control ctrl in ctrls)
+foreach(Control ctrl in controls)
 
 {
 
@@ -1159,13 +1159,13 @@ Console.WriteLine("Total Number of controls in a group : " + arg.Controls.Length
 
 'arg.Controls gives the collection of controls which are in Docked Area.
 
-Dim ctrls As Control() = arg.Controls
+Dim controls As Control() = arg.Controls
 
 Dim i As Integer = 1
 
 'Here display all the controls in arg.Controls group.
 
-For Each ctrl As Control In ctrls
+For Each ctrl As Control In controls
 
 Console.WriteLine("Control" + i + " Name : " + ctrl.Name)
 
@@ -1328,7 +1328,7 @@ private void dockingManager1_NewDockStateEndLoad(object sender, System.EventArgs
 
 {
 
-Console.WriteLine("NewDockstateEndLoad Event occurred");
+Console.WriteLine("NewDockStateEndLoad Event occurred");
 
 //This will show until you click on the OK button.
 
@@ -1346,7 +1346,7 @@ MessageBox.Show("This is NewDockStateEndLoad Event Message Box");
 
 Private Sub dockingManager1_NewDockStateEndLoad(ByVal sender As Object, ByVal e As System.EventArgs)
 
-Console.WriteLine("NewDockstateEndLoad Event occurred")
+Console.WriteLine("NewDockStateEndLoad Event occurred")
 
 'This will show until you click on the OK button.
 
@@ -1574,15 +1574,15 @@ Syncfusion.Windows.Forms.Tools.DockingManager ctrl=sender as
 
 Syncfusion.Windows.Forms.Tools.DockingManager;
 
-IEnumerator ienum = ctrl.Controls;
+IEnumerator enumerator = ctrl.Controls;
 
-ArrayList dockedctrls = new ArrayList();
+ArrayList dockedControls = new ArrayList();
 
-while(ienum.MoveNext())
+while(enumerator.MoveNext())
 
-dockedctrls.Add(ienum.Current);
+dockedControls.Add(enumerator.Current);
 
-foreach(Control c in dockedctrls)
+foreach(Control c in dockedControls)
 
 {
 
@@ -1604,17 +1604,17 @@ Console.WriteLine("DragFeedbackStart Event has been ")
 
 Dim ctrl As Syncfusion.Windows.Forms.Tools.DockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(Syncfusion.Windows.Forms.Tools.DockingManager)), Syncfusion.Windows.Forms.Tools.DockingManager)
 
-Dim ienum As IEnumerator = ctrl.Controls
+Dim enumerator As IEnumerator = ctrl.Controls
 
-Dim dockedctrls As ArrayList = New ArrayList
+Dim dockedControls As ArrayList = New ArrayList
 
-While ienum.MoveNext
+While enumerator.MoveNext
 
-dockedctrls.Add(ienum.Current)
+dockedControls.Add(enumerator.Current)
 
 End While
 
-For Each c As Control In dockedctrls
+For Each c As Control In dockedControls
 
 Console.WriteLine("Control Name :" + c.Name)
 
@@ -1721,11 +1721,11 @@ protected void DockingManager_TransferredToManager(object sender, TransferManage
 
 Console.WriteLine("Transferred to Manager Event has been Raised");
 
-DockableControlBase dockablecontrol = args.Control as DockableControlBase;
+DockableControlBase dockableControl = args.Control as DockableControlBase;
 
-dockablecontrol.CurrentDockingManager = sender as DockingManager;
+dockableControl.CurrentDockingManager = sender as DockingManager;
 
-Console.WriteLine("HostControl Name (Target Page Name) : "+dockablecontrol.CurrentDockingManager.HostControl.Name);
+Console.WriteLine("HostControl Name (Target Page Name) : "+dockableControl.CurrentDockingManager.HostControl.Name);
 
 }
 
@@ -1740,11 +1740,11 @@ Protected Sub DockingManager_TransferredToManager(ByVal sender As Object, ByVal 
 
 Console.WriteLine("Transferred to Manager Event has been Raised")
 
-Dim dockablecontrol As DockableControlBase = CType(ConversionHelpers.AsWorkaround(args.Control, GetType(DockableControlBase)), DockableControlBase)
+Dim dockableControl As DockableControlBase = CType(ConversionHelpers.AsWorkaround(args.Control, GetType(DockableControlBase)), DockableControlBase)
 
-dockablecontrol.CurrentDockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
+dockableControl.CurrentDockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
 
-Console.WriteLine("HostControl Name (Target Page Name) : " + dockablecontrol.CurrentDockingManager.HostControl.Name)
+Console.WriteLine("HostControl Name (Target Page Name) : " + dockableControl.CurrentDockingManager.HostControl.Name)
 
 End Sub
 
@@ -1787,11 +1787,11 @@ protected void DockingManager_TransferringFromManager(object sender, TransferMan
 
 Console.WriteLine("Transferring From Manager Event has been raised");
 
-DockableControlBase dockablecontrol = args.Control as DockableControlBase;
+DockableControlBase dockableControl = args.Control as DockableControlBase;
 
-dockablecontrol.CurrentDockingManager = sender as DockingManager; 
+dockableControl.CurrentDockingManager = sender as DockingManager; 
 
-Console.WriteLine("HostControl name : "+dockablecontrol.CurrentDockingManager.HostControl.Name);
+Console.WriteLine("HostControl name : "+dockableControl.CurrentDockingManager.HostControl.Name);
 
 }
 {% endhighlight %}
@@ -1807,11 +1807,11 @@ Protected Sub DockingManager_TransferringFromManager(ByVal sender As Object, ByV
 
 Console.WriteLine("Transferring From Manager Event has been raised")
 
-Dim dockablecontrol As DockableControlBase = CType(ConversionHelpers.AsWorkaround(args.Control, GetType(DockableControlBase)), DockableControlBase)
+Dim dockableControl As DockableControlBase = CType(ConversionHelpers.AsWorkaround(args.Control, GetType(DockableControlBase)), DockableControlBase)
 
-dockablecontrol.CurrentDockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
+dockableControl.CurrentDockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
 
-Console.WriteLine("HostControl name : " + dockablecontrol.CurrentDockingManager.HostControl.Name)
+Console.WriteLine("HostControl name : " + dockableControl.CurrentDockingManager.HostControl.Name)
 
 End Sub
 
@@ -1913,7 +1913,7 @@ Console.WriteLine("InitializeControlOnLoad Event is Raised for the Control :
 
 " +args.ControlName);
 
-DockingManager dockingmgr = sender as DockingManager;
+DockingManager dockingManager = sender as DockingManager;
 
 switch (args.ControlName)
 
@@ -1921,37 +1921,37 @@ switch (args.ControlName)
 
 case "Suite Logo":
 
-this.ActivateSuiteLogoControl(dockingmgr, false);
+this.ActivateSuiteLogoControl(dockingManager, false);
 
 break;
 
 case "Suite Info":
 
-this.ActivateSuiteInfoControl(dockingmgr, false);
+this.ActivateSuiteInfoControl(dockingManager, false);
 
 break;
 
 case "Tools Info":
 
-this.ActivateToolsInfoControl(dockingmgr, false);
+this.ActivateToolsInfoControl(dockingManager, false);
 
 break;
 
 case "Tools Logo":
 
-this.ActivateToolsLogoControl(dockingmgr, false);
+this.ActivateToolsLogoControl(dockingManager, false);
 
 break;
 
 case "Grid Logo":
 
-this.ActivateGridLogoControl(dockingmgr, false);
+this.ActivateGridLogoControl(dockingManager, false);
 
 break;
 
 case "Grid Info":
 
-this.ActivateGridInfoControl(dockingmgr, false);
+this.ActivateGridInfoControl(dockingManager, false);
 
 break;
 
@@ -1968,43 +1968,43 @@ Protected Sub DockingManager_InitializeControlOnLoad(ByVal sender As Object, ByV
 
 Console.WriteLine("InitializeControlOnLoad Event is Raised for the Control : " + args.ControlName)
 
-Dim dockingmgr As DockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
+Dim dockingManager As DockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
 
 Select Case args.ControlName
 
 Case "Suite Logo"
 
-Me.ActivateSuiteLogoControl(dockingmgr, False)
+Me.ActivateSuiteLogoControl(dockingManager, False)
 
 ' break 
 
 Case "Suite Info"
 
-Me.ActivateSuiteInfoControl(dockingmgr, False)
+Me.ActivateSuiteInfoControl(dockingManager, False)
 
 ' break 
 
 Case "Tools Info"
 
-Me.ActivateToolsInfoControl(dockingmgr, False)
+Me.ActivateToolsInfoControl(dockingManager, False)
 
 ' break 
 
 Case "Tools Logo"
 
-Me.ActivateToolsLogoControl(dockingmgr, False)
+Me.ActivateToolsLogoControl(dockingManager, False)
 
 ' break 
 
 Case "Grid Logo"
 
-Me.ActivateGridLogoControl(dockingmgr, False)
+Me.ActivateGridLogoControl(dockingManager, False)
 
 ' break 
 
 Case "Grid Info"
 
-Me.ActivateGridInfoControl(dockingmgr, False)
+Me.ActivateGridInfoControl(dockingManager, False)
 
 ' break 
 
@@ -2172,13 +2172,13 @@ protected void DockingManager_ProvidePersistenceID(object sender,Syncfusion.Wind
 
 Console.WriteLine("Provide Persistence ID Event has been raised");
 
-Syncfusion.Windows.Forms.Tools.DockingManager dm = sender as DockingManager;
+Syncfusion.Windows.Forms.Tools.DockingManager dockingManager = sender as DockingManager;
 
-Console.WriteLine("Host control name = "+dm.HostControl.Name.ToString());
+Console.WriteLine("Host control name = "+dockingManager.HostControl.Name.ToString());
 
 //The docking state stores in a place named as that Host control name.
 
-e.PersistenceID=dm.HostControl.Name.ToString();
+e.PersistenceID = dockingManager.HostControl.Name.ToString();
 
 }
 
@@ -2196,13 +2196,13 @@ Protected Sub DockingManager_ProvidePersistenceID(ByVal sender As Object, ByVal 
 
 Console.WriteLine("Provide Persistence ID Event has been raised")
 
-Dim dm As Syncfusion.Windows.Forms.Tools.DockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
+Dim dockingManager As Syncfusion.Windows.Forms.Tools.DockingManager = CType(ConversionHelpers.AsWorkaround(sender, GetType(DockingManager)), DockingManager)
 
-Console.WriteLine("Host control name = " + dm.HostControl.Name.ToString)
+Console.WriteLine("Host control name = " + dockingManager.HostControl.Name.ToString)
 
 'The docking state stores in a place named as that Host control name.
 
-e.PersistenceID = dm.HostControl.Name.ToString
+e.PersistenceID = dockingManager.HostControl.Name.ToString
 
 End Sub
 

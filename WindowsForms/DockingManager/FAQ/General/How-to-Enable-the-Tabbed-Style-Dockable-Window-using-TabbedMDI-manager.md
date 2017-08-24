@@ -21,14 +21,14 @@ We can enable and attach the dockable window into the Tabbed MDI manager during 
 
 {% highlight C# %}
 
-private Syncfusion.Windows.Forms.Tools.TabbedMDIManager tm;
+private Syncfusion.Windows.Forms.Tools.TabbedMDIManager tabbedMDIManager;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 
-Private tm As Syncfusion.Windows.Forms.Tools.TabbedMDIManager
+Private tabbedMDIManager As Syncfusion.Windows.Forms.Tools.TabbedMDIManager
 
 {% endhighlight %}
 
@@ -78,15 +78,15 @@ this.dockingManager1.SetAsMDIChild(this.panel3,true);
 
  // Attach MDI container to TabbedMDI manager.
 
-this.tm= new TabbedMDIManager();
+this.tabbedMDIManager= new TabbedMDIManager();
 
-this.tm.TabControlAdded+= new TabbedMDITabControlEventHandler(tm_TabControlAdded);
+this.tabbedMDIManager.TabControlAdded+= new TabbedMDITabControlEventHandler(tabbedMDIManager_TabControlAdded);
 
 
 
   // Assign the MDI form into the TabbedManager MDI container.
 
-this.tb.AttachToMdiContainer(this);
+this.tabbedMDIManager.AttachToMdiContainer(this);
 
 this.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003;
 
@@ -128,13 +128,13 @@ Me.dockingManager1.SetAsMdiChild(Me.Panel4, True)
 
 'Attach MDI container to TabbedMDI manager.
 
-Me.tm= New TabbedMDIManager()
+Me.tabbedMDIManager= New TabbedMDIManager()
 
-AddHandler tm.TabControlAdded, AddressOf tm_TabControlAdded
+AddHandler tabbedMDIManager.TabControlAdded, AddressOf tabbedMDIManager_TabControlAdded
 
  ' Assign the MDI form into the TabbedManager MDI container.
 
-Me.tb.AttachToMdiContainer(Me)
+Me.tabbedMDIManager.AttachToMdiContainer(Me)
 
 Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
@@ -151,7 +151,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
 // Enable the rendering for the Tabbed MDI manager tabs.
 
-private void tm_TabControlAdded(object sender, TabbedMDITabControlEventArgs args)
+private void tabbedMDIManager_TabControlAdded(object sender, TabbedMDITabControlEventArgs args)
 
 {
 
@@ -168,7 +168,7 @@ private void tm_TabControlAdded(object sender, TabbedMDITabControlEventArgs args
 
 'Enable the rendering for the Tabbed MDI manager tabs.
 
-Private Sub tm_TabControlAdded(ByVal sender As Object, ByVal args As TabbedMDITabControlEventArgs)
+Private Sub tabbedMDIManager_TabControlAdded(ByVal sender As Object, ByVal args As TabbedMDITabControlEventArgs)
 
       args.TabControl.TabStyle=GetType(TabRendererWhidbey)
 

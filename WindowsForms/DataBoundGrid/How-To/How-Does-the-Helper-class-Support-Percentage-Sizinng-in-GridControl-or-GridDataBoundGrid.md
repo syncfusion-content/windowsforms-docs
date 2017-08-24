@@ -20,16 +20,16 @@ WireGrid and UnwireGrid are the methods used to enable sizing of the helper clas
 
 private void Form1_Load(object sender, System.EventArgs e)
 {
-    DataTable dt = new DataTable();
+    DataTable dataTable = new DataTable();
     for(int i=0; i<10; i++)
     {
-            dt.Columns.Add();
-            dt.Rows.Add(new object[]{});
+            dataTable.Columns.Add();
+            dataTable.Rows.Add(new object[]{});
     }
-    this.gridDataBoundGrid1.DataSource = dt;
+    this.gridDataBoundGrid1.DataSource = dataTable;
 	
 	//There is a condition check in accepting hashtable values.
-	// ie.. the total of values passed must not be greater than (100 - Unmodified Column count)
+	//The total of values passed must not be greater than (100 - Unmodified Column count)
     ht = new Hashtable();
     ht.Add(1,20);
     ht.Add(9,30);
@@ -75,15 +75,15 @@ private void buttonAdv3_Click(object sender, System.EventArgs e)
 {% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    Dim dt As DataTable = New DataTable()
+    Dim dataTable As DataTable = New DataTable()
     For i As Integer = 0 To 9
-        dt.Columns.Add()
-        dt.Rows.Add(New Object(){})
+        dataTable.Columns.Add()
+        dataTable.Rows.Add(New Object(){})
     Next i
-    Me.gridDataBoundGrid1.DataSource = dt
+    Me.gridDataBoundGrid1.DataSource = dataTable
 
 ' There is a condition check in accepting hashtable values.
-' ie.. the total of values passed must not be greater than (100 - Unmodified Column count)
+' The total of values passed must not be greater than (100 - Unmodified Column count)
     ht = New Hashtable()
     ht.Add(1,20)
     ht.Add(9,30)

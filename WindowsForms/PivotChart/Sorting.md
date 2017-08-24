@@ -17,12 +17,12 @@ Here "Gender" is an `PivotAxis` item.
 
 {% tabs %}
 {% highlight c# %}
-//Adding PiovtAxis to the SortAxis collection for sorting.
+//Adding PivotAxis to the SortAxis collection for sorting.
 this.pivotChart1.SortedAxis.Add(new PivotSortDescriptor("Gender", ListSortDirection.Ascending));
 {% endhighlight %}
 
 {% highlight vb %}
-'Adding PiovtAxis to the SortAxis collection for sorting.
+'Adding PivotAxis to the SortAxis collection for sorting.
 Me.pivotChart1.SortedAxis.Add(New PivotSortDescriptor("Gender", ListSortDirection.Ascending))
 {% endhighlight %}
 {% endtabs %}
@@ -42,12 +42,12 @@ Here "State" `FieldMappingName` of `PivotLegends` item and sorting order is asce
 
 {% tabs %}
 {% highlight c# %}
-//Adding PiovtAxis to the SortLegends collection for sorting.
+//Adding PivotAxis to the SortLegends collection for sorting.
 this.pivotChart1.SortedLegends.Add(new PivotSortDescriptor("State"));
 {% endhighlight %}
 
 {% highlight vb %}
-'Adding PiovtAxis to the SortAxis collection for sorting.
+'Adding PivotAxis to the SortAxis collection for sorting.
 Me.pivotChart1.SortedLegends.Add(New PivotSortDescriptor("State"))
 {% endhighlight %}
 {% endtabs %}

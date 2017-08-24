@@ -29,41 +29,41 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 //Creates a DataTable.
 
-                        DataTable dt = new DataTable("Table");
+                        DataTable dataTable = new DataTable("Table");
 
-                        dt.Columns.Add("Product",typeof(System.String));
+                        dataTable.Columns.Add("Product",typeof(System.String));
 
-                        dt.Columns.Add("Product_ID",typeof(System.Int32));
+                        dataTable.Columns.Add("Product_ID",typeof(System.Int32));
 
 
 
 //Adds a primary key.
 
-                        dt.PrimaryKey = new DataColumn[] {dt.Columns["Product_ID"]};
+                        dataTable.PrimaryKey = new DataColumn[] {dataTable.Columns["Product_ID"]};
 
-                        dt.Columns.Add("QtyPerUnit",typeof(System.String));
+                        dataTable.Columns.Add("QtyPerUnit",typeof(System.String));
 
-                        dt.Columns.Add("UnitPrice",typeof(System.Double));
+                        dataTable.Columns.Add("UnitPrice",typeof(System.Double));
 
 
 
-                        dt.Rows.Add(new Object[] { "Coffee",1,"1 kg",200.00});
+                        dataTable.Rows.Add(new Object[] { "Coffee",1,"1 kg",200.00});
 
-                        dt.Rows.Add(new Object[] { "Tea",2,"1 kg",120.00});
+                        dataTable.Rows.Add(new Object[] { "Tea",2,"1 kg",120.00});
 
-                        dt.Rows.Add(new Object[] { "Milk Powder",3,"1 kg",260.00});
+                        dataTable.Rows.Add(new Object[] { "Milk Powder",3,"1 kg",260.00});
 
-                        dt.Rows.Add(new Object[] { "Biscuits",4,"1 Packet",20.00});
+                        dataTable.Rows.Add(new Object[] { "Biscuits",4,"1 Packet",20.00});
 
-                        dt.Rows.Add(new Object[] { "Pepsi",5,"1 Lit",60.00});
+                        dataTable.Rows.Add(new Object[] { "Pepsi",5,"1 Lit",60.00});
 
-                        dt.Rows.Add(new Object[] { "Coke",6,"1 Lit",55.00});
+                        dataTable.Rows.Add(new Object[] { "Coke",6,"1 Lit",55.00});
 
 
 
 // Sets DataSource property.
 
-                        this.gridDataBoundGrid1.DataSource = dt;
+                        this.gridDataBoundGrid1.DataSource = dataTable;
 
 
 
@@ -207,41 +207,41 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Hand
 
 'Creates a DataTable.
 
-   Dim dt As DataTable = New DataTable("Table")
+   Dim dataTable As DataTable = New DataTable("Table")
 
-   dt.Columns.Add("Product",GetType(System.String))
+   dataTable.Columns.Add("Product",GetType(System.String))
 
-   dt.Columns.Add("Product_ID",GetType(System.Int32))
+   dataTable.Columns.Add("Product_ID",GetType(System.Int32))
 
 
 
 'Adds a primary key.
 
-   dt.PrimaryKey = New DataColumn() {dt.Columns("Product_ID")}
+   dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("Product_ID")}
 
-   dt.Columns.Add("QtyPerUnit",GetType(System.String))
+   dataTable.Columns.Add("QtyPerUnit",GetType(System.String))
 
-   dt.Columns.Add("UnitPrice",GetType(System.Double))
+   dataTable.Columns.Add("UnitPrice",GetType(System.Double))
 
 
 
-   dt.Rows.Add(New Object() { "Coffee",1,"1 kg",200.00})
+   dataTable.Rows.Add(New Object() { "Coffee",1,"1 kg",200.00})
 
-   dt.Rows.Add(New Object() { "Tea",2,"1 kg",120.00})
+   dataTable.Rows.Add(New Object() { "Tea",2,"1 kg",120.00})
 
-   dt.Rows.Add(New Object() { "Milk Powder",3,"1 kg",260.00})
+   dataTable.Rows.Add(New Object() { "Milk Powder",3,"1 kg",260.00})
 
-   dt.Rows.Add(New Object() { "Biscuits",4,"1 Packet",20.00})
+   dataTable.Rows.Add(New Object() { "Biscuits",4,"1 Packet",20.00})
 
-   dt.Rows.Add(New Object() { "Pepsi",5,"1 Lit",60.00})
+   dataTable.Rows.Add(New Object() { "Pepsi",5,"1 Lit",60.00})
 
-   dt.Rows.Add(New Object() { "Coke",6,"1 Lit",55.00})
+   dataTable.Rows.Add(New Object() { "Coke",6,"1 Lit",55.00})
 
 
 
 'Sets DataSource property.
 
-   Me.gridDataBoundGrid1.DataSource = dt
+   Me.gridDataBoundGrid1.DataSource = dataTable
 
 
 

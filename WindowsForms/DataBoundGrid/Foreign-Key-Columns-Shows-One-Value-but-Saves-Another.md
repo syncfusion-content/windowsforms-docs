@@ -31,19 +31,19 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 //Column 2 of the grid is the foreign key combo.
 
-    GridBoundColumn gbc = this.gridDataBoundGrid1.Binder.InternalColumns[1];
+    GridBoundColumn gridBoundColumn = this.gridDataBoundGrid1.Binder.InternalColumns[1];
 
-    gbc.StyleInfo.CellType = "ComboBox";
+    gridBoundColumn.StyleInfo.CellType = "ComboBox";
 
-    gbc.StyleInfo.DataSource = ForeignKeyTable();
+    gridBoundColumn.StyleInfo.DataSource = ForeignKeyTable();
 
-    gbc.StyleInfo.DisplayMember = "Name";
+    gridBoundColumn.StyleInfo.DisplayMember = "Name";
 
-    gbc.StyleInfo.ValueMember = "CustID";
+    gridBoundColumn.StyleInfo.ValueMember = "CustomerID";
 
-    gbc.StyleInfo.ShowButtons = GridShowButtons.ShowCurrentRow;
+    gridBoundColumn.StyleInfo.ShowButtons = GridShowButtons.ShowCurrentRow;
 
-    gbc.StyleInfo.HorizontalAlignment = GridHorizontalAlignment.Left;
+    gridBoundColumn.StyleInfo.HorizontalAlignment = GridHorizontalAlignment.Left;
 
 
 
@@ -63,35 +63,35 @@ private DataTable PrimaryTable()
 
 {
 
-    DataTable dt = new DataTable("PrimaryTable");
+    DataTable dataTable = new DataTable("PrimaryTable");
 
-    dt.Columns.Add(new DataColumn("ID", typeof(int)));
+    dataTable.Columns.Add(new DataColumn("ID", typeof(int)));
 
-    dt.Columns.Add(new DataColumn("CustID", typeof(int)));
+    dataTable.Columns.Add(new DataColumn("CustomerID", typeof(int)));
 
-    dt.Columns.Add(new DataColumn("Address"));
+    dataTable.Columns.Add(new DataColumn("Address"));
 
-    dt.Columns.Add(new DataColumn("City"));
+    dataTable.Columns.Add(new DataColumn("City"));
 
     for(int i = 0; i < 10; ++i)
 
     {
 
-        DataRow dr = dt.NewRow();
+        DataRow dataRow = dataTable.NewRow();
 
-        dr[0] = i;
+        dataRow[0] = i;
 
-        dr[1] = i % 4;
+        dataRow[1] = i % 4;
 
-        dr[2] = string.Format("address{0}", i);
+        dataRow[2] = string.Format("address{0}", i);
 
-        dr[3] = string.Format("city{0}", i);
+        dataRow[3] = string.Format("city{0}", i);
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
 
     }
 
-    return dt;
+    return dataTable;
 
 }
 
@@ -101,29 +101,29 @@ private DataTable ForeignKeyTable()
 
 {
 
-//Two columns CustID (Value Member) and Name (Display Member).
+//Two columns CustomerID (Value Member) and Name (Display Member).
 
-    DataTable dt = new DataTable("ForeignKeyTable");
+    DataTable dataTable = new DataTable("ForeignKeyTable");
 
-    dt.Columns.Add(new DataColumn("CustID", typeof(int)));
+    dataTable.Columns.Add(new DataColumn("CustomerID", typeof(int)));
 
-    dt.Columns.Add(new DataColumn("Name"));
+    dataTable.Columns.Add(new DataColumn("Name"));
 
     for(int i = 0; i < 4; ++i)
 
     {
 
-        DataRow dr = dt.NewRow();
+        DataRow dataRow = dataTable.NewRow();
 
-        dr[0] = i;
+        dataRow[0] = i;
 
-        dr[1] = string.Format("Name{0}", i);
+        dataRow[1] = string.Format("Name{0}", i);
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
 
     }
 
-    return dt;
+    return dataTable;
 
 }
 
@@ -144,19 +144,19 @@ Me.gridDataBoundGrid1.EnableAddNew = False
 
 'Col 2 of the grid is the foreign key combo.
 
-Dim gbc As GridBoundColumn = Me.gridDataBoundGrid1.Binder.InternalColumns(1)
+Dim gridBoundColumn As GridBoundColumn = Me.gridDataBoundGrid1.Binder.InternalColumns(1)
 
-gbc.StyleInfo.CellType = "ComboBox"
+gridBoundColumn.StyleInfo.CellType = "ComboBox"
 
-gbc.StyleInfo.DataSource = ForeignKeyTable()
+gridBoundColumn.StyleInfo.DataSource = ForeignKeyTable()
 
-gbc.StyleInfo.DisplayMember = "Name"
+gridBoundColumn.StyleInfo.DisplayMember = "Name"
 
-gbc.StyleInfo.ValueMember = "CustID"
+gridBoundColumn.StyleInfo.ValueMember = "CustomerID"
 
-gbc.StyleInfo.ShowButtons = GridShowButtons.ShowCurrentRow
+gridBoundColumn.StyleInfo.ShowButtons = GridShowButtons.ShowCurrentRow
 
-gbc.StyleInfo.HorizontalAlignment = GridHorizontalAlignment.Left
+gridBoundColumn.StyleInfo.HorizontalAlignment = GridHorizontalAlignment.Left
 
 
 
@@ -182,15 +182,15 @@ End Sub
 
 Private Function PrimaryTable() As DataTable
 
-Dim dt As New DataTable("PrimaryTable")
+Dim dataTable As New DataTable("PrimaryTable")
 
-dt.Columns.Add(New DataColumn("ID", GetType(Integer)))
+dataTable.Columns.Add(New DataColumn("ID", GetType(Integer)))
 
-dt.Columns.Add(New DataColumn("CustID", GetType(Integer)))
+dataTable.Columns.Add(New DataColumn("CustomerID", GetType(Integer)))
 
-dt.Columns.Add(New DataColumn("Address"))
+dataTable.Columns.Add(New DataColumn("Address"))
 
-dt.Columns.Add(New DataColumn("City"))
+dataTable.Columns.Add(New DataColumn("City"))
 
 
 
@@ -198,23 +198,23 @@ Dim i As Integer
 
 While i < 10
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
-dr(0) = i
+dataRow(0) = i
 
-dr(1) = i Mod 4
+dataRow(1) = i Mod 4
 
-dr(2) = String.Format("address{0}", i)
+dataRow(2) = String.Format("address{0}", i)
 
-dr(3) = String.Format("city{0}", i)
+dataRow(3) = String.Format("city{0}", i)
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 i += 1
 
 End While
 
-Return dt
+Return dataTable
 
 
 
@@ -228,13 +228,13 @@ Private Function ForeignKeyTable() As DataTable
 
 
 
-'Two columns CustID (Value Member) and Name (Display Member).
+'Two columns CustomerID (Value Member) and Name (Display Member).
 
-Dim dt As New DataTable("ForeignKeyTable")
+Dim dataTable As New DataTable("ForeignKeyTable")
 
-dt.Columns.Add(New DataColumn("CustID", GetType(Integer)))
+dataTable.Columns.Add(New DataColumn("CustomerID", GetType(Integer)))
 
-dt.Columns.Add(New DataColumn("Name"))
+dataTable.Columns.Add(New DataColumn("Name"))
 
 
 
@@ -242,19 +242,19 @@ Dim i As Integer
 
 While i < 4
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
-dr(0) = i
+dataRow(0) = i
 
-dr(1) = String.Format("Name{0}", i)
+dataRow(1) = String.Format("Name{0}", i)
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 i = i + 1
 
 End While
 
-Return dt
+Return dataTable
 
 
 
