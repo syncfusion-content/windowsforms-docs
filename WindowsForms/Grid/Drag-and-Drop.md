@@ -245,7 +245,7 @@ void gridControl1_QueryCanOleDragRange(object sender, GridQueryCanOleDragRangeEv
 
 {
 
-// Drag Drop process will be cancelled.
+// Drag Drop process will be canceled.
 e.Cancel = true;
 
 }
@@ -256,7 +256,7 @@ Private Me.gridControl1.QueryCanOleDragRange += New GridQueryCanOleDragRangeEven
 
 Private Sub gridControl1_QueryCanOleDragRange(ByVal sender As Object, ByVal e As GridQueryCanOleDragRangeEventArgs)
 
-'Drag Drop process will be cancelled.
+'Drag Drop process will be canceled.
 e.Cancel = True
 
 End Sub

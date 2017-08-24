@@ -221,7 +221,7 @@ void gridControl1_CurrentCellStartEditing(object sender, CancelEventArgs e)
 
 GridCurrentCell currentCell = this.gridControl1.CurrentCell;
 
-// Editing for the rows in-between 2 and 6 will be cancelled.
+// Editing for the rows in-between 2 and 6 will be canceled.
 if (currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)))
 
 e.Cancel = true;
@@ -236,7 +236,7 @@ Private Sub gridControl1_CurrentCellStartEditing(ByVal sender As Object, ByVal e
 
 Dim currentCell As GridCurrentCell = Me.gridControl1.CurrentCell
 
-'Editing for the rows in-between 2 and 6 will be cancelled.
+'Editing for the rows in-between 2 and 6 will be canceled.
 If currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)) Then
 
 e.Cancel = True
@@ -422,12 +422,12 @@ While the current cell is in edit mode, the mouse and key events of the current 
 {% tabs %}
 {% highlight c# %}
 //Creates TextBoxCellRenderer object.
-GridTextBoxCellRenderer textBoxCelRenderer = (GridTextBoxCellRenderer)this.gridControl1.CellRenderers["TextBox"];
+GridTextBoxCellRenderer textBoxCellRenderer = (GridTextBoxCellRenderer)this.gridControl1.CellRenderers["TextBox"];
 
 //Invokes the Events of the TextBox renderer.
-textBoxCelRenderer.TextBox.KeyUp += TextBox_KeyUp;
+textBoxCellRenderer.TextBox.KeyUp += TextBox_KeyUp;
 
-textBoxCelRenderer.TextBox.MouseDown += TextBox_MouseDown;
+textBoxCellRenderer.TextBox.MouseDown += TextBox_MouseDown;
 
 void TextBox_MouseDown(object sender, MouseEventArgs e)
 
@@ -451,12 +451,12 @@ Console.WriteLine("textBox_KeyUp");
 
 {% highlight vb %}
 'Creates TextBoxCellRenderer object.
-Dim textBoxCelRenderer As GridTextBoxCellRenderer = CType(Me.gridControl1.CellRenderers("TextBox"), GridTextBoxCellRenderer)
+Dim textBoxCellRenderer As GridTextBoxCellRenderer = CType(Me.gridControl1.CellRenderers("TextBox"), GridTextBoxCellRenderer)
 
 'Invokes the Events of the TextBox renderer.
-AddHandler textBoxCelRenderer.TextBox.KeyUp, AddressOf TextBox_KeyUp
+AddHandler textBoxCellRenderer.TextBox.KeyUp, AddressOf TextBox_KeyUp
 
-AddHandler textBoxCelRenderer.TextBox.MouseDown, AddressOf TextBox_MouseDown
+AddHandler textBoxCellRenderer.TextBox.MouseDown, AddressOf TextBox_MouseDown
 
 Private Sub TextBox_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
 
@@ -524,7 +524,7 @@ this.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Alphabet;
 //To convert the numeric content to the placeholder characters
 this.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Numeric;
 
-//To convert both Numeric and Alphabet contents to the placehold characters
+//To convert both Numeric and Alphabet contents to the place hold characters
 this.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Both;
 
 //To display original cell content without converting anything to placeholder characters
@@ -601,14 +601,14 @@ void gridControl1_CurrentCellKeyPress(object sender, KeyPressEventArgs e)
 {
 
 //Create object for current cell renderer
-GridTextBoxCellRenderer cr = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
+GridTextBoxCellRenderer cellRenderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
-if (e.KeyChar != Convert.ToChar(Keys.Back) && cr.TextBox.SelectionLength == 0)
+if (e.KeyChar != Convert.ToChar(Keys.Back) && cellRenderer.TextBox.SelectionLength == 0)
 
 {
 
 //Programmatically selects One char.
-cr.TextBox.SelectionLength = 1;
+cellRenderer.TextBox.SelectionLength = 1;
 
 }
 
@@ -640,12 +640,12 @@ AddHandler gridControl1.CurrentCellKeyDown , AddressOf gridControl1_CurrentCellK
 Private Sub gridControl1_CurrentCellKeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs)
 
 'Create object for current cell renderer
-Dim cr As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Renderer, GridTextBoxCellRenderer)
+Dim cellRenderer As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Renderer, GridTextBoxCellRenderer)
 
-If e.KeyChar <> Convert.ToChar(Keys.Back) AndAlso cr.TextBox.SelectionLength = 0 Then
+If e.KeyChar <> Convert.ToChar(Keys.Back) AndAlso cellRenderer.TextBox.SelectionLength = 0 Then
 
 'Programmatically selects One char.
-cr.TextBox.SelectionLength = 1
+cellRenderer.TextBox.SelectionLength = 1
 
 End If
 

@@ -37,7 +37,7 @@ style.CellType = "ComboBox";
 style.ChoiceList = items;
 style.CellValue = "Five";
 
-//True droplist - no editing.
+//True drop list - no editing.
 style.DropDownStyle = GridDropDownStyle.Exclusive; 
 
 {% endhighlight  %}
@@ -56,7 +56,7 @@ Dim style As GridStyleInfo = GridControl1(4, 2)
 style.CellType = "ComboBox"
 style.ChoiceList = items
 style.CellValue = "Five"
-'True droplist - no editing.
+'True drop list - no editing.
 style.DropDownStyle = GridDropDownStyle.Exclusive 
 {% endhighlight  %}
 {% endtabs %}
@@ -66,11 +66,11 @@ Here is the code that will set cells 4,2 to a combo box by setting items in the 
 {% tabs %}
 {% highlight c# %}
 
-//Assumes this.dt is a DataTable object with at least 2 columns named "id" and "display".
+//Assumes this.dataTable is a DataTable object with at least 2 columns named "id" and "display".
 //Sets the style properties.
 GridStyleInfo style = gridControl1[4, 2];
 style.CellType = "ComboBox";
-style.DataSource = dt;
+style.DataSource = dataTable;
 style.DisplayMember = "display"; 
 
 //Displays in the grid cell.
@@ -82,11 +82,11 @@ style.DropDownStyle = GridDropDownStyle.AutoComplete;
 {% endhighlight  %}
 
 {% highlight vb %}
-'Assumes this.dt is a DataTable object with at least 2 columns named "id" and "display".
+'Assumes this.dataTable is a DataTable object with at least 2 columns named "id" and "display".
 'Sets the style properties.
 Dim style As GridStyleInfo = GridControl1(4, 2)
 style.CellType = "ComboBox"
-style.DataSource = dt
+style.DataSource = dataTable
 style.DisplayMember = "display" 
 
 'Displays in the grid cell.

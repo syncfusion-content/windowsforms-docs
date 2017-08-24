@@ -31,12 +31,12 @@ void TableControl_ResizingRows(object sender, GridResizingRowsEventArgs e)
     //Resize the row on double click on the row header resizing cursor
     if (e.Reason == GridResizeCellsReason.DoubleClick)
     {
-        Graphics grapics = CreateGraphics();
+        Graphics graphics = CreateGraphics();
         long maxHeight = 0;
 
         // Get the style info of the particular cell value
         GridStyleInfo style = this.gridGroupingControl1.TableControl.GetViewStyleInfo(e.Rows.Bottom, 2);
-        stringSize = grapics.MeasureString(style.Text, style.GdipFont, this.gridGroupingControl1.TableModel.ColWidths[2]).ToSize();
+        stringSize = graphics.MeasureString(style.Text, style.GdipFont, this.gridGroupingControl1.TableModel.ColWidths[2]).ToSize();
         if (maxHeight < stringSize.Height)
         {
             maxHeight = (long)stringSize.Height;
@@ -59,12 +59,12 @@ Private stringSize As Size
 Private Sub TableControl_ResizingRows(ByVal sender As Object, ByVal e As GridResizingRowsEventArgs)
   'Resize the row on double click on the row header resizing cursor
   If e.Reason = GridResizeCellsReason.DoubleClick Then
-	Dim grapics As Graphics = CreateGraphics()
+	Dim graphics As Graphics = CreateGraphics()
 	Dim maxHeight As Long = 0
     
 	' Get the style info of the particular cell value
 	Dim style As GridStyleInfo = Me.gridGroupingControl1.TableControl.GetViewStyleInfo(e.Rows.Bottom, 2)
-	stringSize = grapics.MeasureString(style.Text, style.GdipFont, Me.gridGroupingControl1.TableModel.ColWidths(2)).ToSize()
+	stringSize = graphics.MeasureString(style.Text, style.GdipFont, Me.gridGroupingControl1.TableModel.ColWidths(2)).ToSize()
 	If maxHeight < stringSize.Height Then
 		maxHeight = CLng(Fix(stringSize.Height))
 	End If

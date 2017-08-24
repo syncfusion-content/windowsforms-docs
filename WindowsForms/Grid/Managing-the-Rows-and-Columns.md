@@ -691,7 +691,7 @@ this.gridControl1.GetSpannedRangeInfo(8, 2, out coveredRange);
 //Getting merged range.
 this.gridControl1.GetSpannedRangeInfo(4, 2, out mergedRange);
 
-MessageBox.Show("Floatrange for cell(4,4) is " + floatRange.Info.ToString()
+MessageBox.Show("Float range for cell(4,4) is " + floatRange.Info.ToString()
 + "\n" + "CoveredRange for cell(8,2) is " + coveredRange.Info.ToString());
 
 {% endhighlight %}
@@ -708,7 +708,7 @@ Me.gridControl1.GetSpannedRangeInfo(8, 2, coveredRange)
 'Getting merged range.
 Me.gridControl1.GetSpannedRangeInfo(4, 2, mergedRange)
 
-MessageBox.Show("Floatrange for cell(4,4) is " & floatRange.Info.ToString() & Constants.vbLf & "CoveredRange for cell(8,2) is " & coveredRange.Info.ToString())
+MessageBox.Show("Float range for cell(4,4) is " & floatRange.Info.ToString() & Constants.vbLf & "CoveredRange for cell(8,2) is " & coveredRange.Info.ToString())
 {% endhighlight %}
 {% endtabs %}
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img24.png)

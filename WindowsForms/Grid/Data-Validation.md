@@ -89,7 +89,7 @@ if (renderer != null && !int.TryParse(renderer.ControlText, out val))
 
 {
 
-//Disply custom error provider
+//Display custom error provider
 this.gridControl1.CurrentCell.SetError("Please enter the valid input");
 
 }
@@ -125,7 +125,7 @@ Dim renderer As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Re
 
 If renderer IsNot Nothing AndAlso (Not Integer.TryParse(renderer.ControlText, val)) Then
 
-'Disply custom error provider
+'Display custom error provider
 Me.gridControl1.CurrentCell.SetError("Please enter the valid input")
 
 End If
@@ -195,7 +195,7 @@ if (renderer != null && int.TryParse(renderer.ControlText,out val) && val> 20)
 
 {
 
-//Disply custom error provider
+//Display custom error provider
 this.gridControl1.CurrentCell.SetError("Please enter the valid input");
 
 }
@@ -219,7 +219,7 @@ Dim renderer As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Re
 
 If renderer IsNot Nothing AndAlso Integer.TryParse(renderer.ControlText,val) AndAlso val> 20 Then
 
-'Disply custom error provider
+'Display custom error provider
 Me.gridControl1.CurrentCell.SetError("Please enter the valid input")
 
 End If

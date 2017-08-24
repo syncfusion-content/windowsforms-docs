@@ -54,7 +54,7 @@ The following example shows the Excel sheet is imported and the row back color i
 {% tabs %}
 {% highlight c# %}
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
-excelConverter.QueryImportExportCellInfo += new GridImportExportCellInfoEventHandler(gecc_QueryImportExportCellInfo);
+excelConverter.QueryImportExportCellInfo += new GridImportExportCellInfoEventHandler(excelConverter_QueryImportExportCellInfo);
 
 //Import the content of Excel to the Grid
 excelConverter.ExcelToGrid("Sample.xls", this.gridControl1.Model);
@@ -81,7 +81,7 @@ void excelConverter_QueryImportExportCellInfo(object sender, GridImportExportCel
 {% endhighlight %}
 {% highlight vb %}
 Private excelConverter As New GridExcelConverterControl()
-Private excelConverter.QueryImportExportCellInfo += New GridImportExportCellInfoEventHandler(AddressOf gecc_QueryImportExportCellInfo)
+Private excelConverter.QueryImportExportCellInfo += New GridImportExportCellInfoEventHandler(AddressOf excelConverter_QueryImportExportCellInfo)
 
 'Import the content of Excel to the Grid
 excelConverter.ExcelToGrid("Sample.xls", Me.gridControl1.Model)
