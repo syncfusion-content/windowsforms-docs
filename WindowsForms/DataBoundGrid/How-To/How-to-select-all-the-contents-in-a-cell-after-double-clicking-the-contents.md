@@ -21,17 +21,17 @@ private void gridControl1_CurrentCellControlDoubleClick(object sender, ControlEv
 
 
 
-GridTextBoxCellRenderer ren = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
+GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
 
 
-if (ren.TextBox.TextLength > 0)
+if (renderer.TextBox.TextLength > 0)
 
 {
 
 
 
-ren.TextBox.Select(0, ren.TextBox.TextLength);
+renderer.TextBox.Select(0, renderer.TextBox.TextLength);
 
 
 
@@ -50,15 +50,15 @@ Private Sub gridControl1_CurrentCellControlDoubleClick(ByVal sender As Object, B
 
 
 
-Dim ren As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Renderer, GridTextBoxCellRenderer)
+Dim renderer As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Renderer, GridTextBoxCellRenderer)
 
 
 
-            If ren.TextBox.TextLength > 0 Then
+            If renderer.TextBox.TextLength > 0 Then
 
 
 
-                ren.TextBox.Select(0, ren.TextBox.TextLength)
+                renderer.TextBox.Select(0, renderer.TextBox.TextLength)
 
 
 

@@ -63,7 +63,7 @@ DataView is created by using List property under CurrencyManager class.
 {% highlight c# %}
 CurrencyManager cm = BindingContext[grid.DataSource, grid.DataMember] as CurrencyManager;
 
-DataView dv = cm.List as DataView;
+DataView dataView = cm.List as DataView;
 
 
 {% endhighlight  %}
@@ -73,7 +73,7 @@ DataView dv = cm.List as DataView;
 {% highlight vbnet %}
 Dim cm As CurrencyManager = TryCast(BindingContext(Grid.DataSource, Grid.DataMember), CurrencyManager)
 
-Dim dv As DataView = TryCast(cm.List, DataView)
+Dim dataView As DataView = TryCast(cm.List, DataView)
 
 DataView sort is applied to this with sortName.
 
@@ -81,17 +81,17 @@ DataView sort is applied to this with sortName.
 
 
 
-if (dv.Sort == sortName)
+if (dataView.Sort == sortName)
 
 {
 
-    dv.Sort = sortName + " DESC";
+    dataView.Sort = sortName + " DESC";
 
 }
 
 else
 
-    dv.Sort = sortName;
+    dataView.Sort = sortName;
 
 
 
@@ -99,13 +99,13 @@ else
 
 
 
-If dv.Sort = sortName Then
+If dataView.Sort = sortName Then
 
-dv.Sort = sortName & " DESC"
+dataView.Sort = sortName & " DESC"
 
 Else
 
-dv.Sort = sortName
+dataView.Sort = sortName
 
 End If
 {% endhighlight  %}
@@ -118,11 +118,11 @@ In QueryCellInfo handler, the sorting icon is drawn with respect to sorting
 {% highlight c# %}
 
 
-if (dv.Sort == sortName)
+if (dataView.Sort == sortName)
 
     e.Style.Tag = ListSortDirection.Ascending;
 
-else if (dv.Sort == sortName + " DESC")
+else if (dataView.Sort == sortName + " DESC")
 
     e.Style.Tag = ListSortDirection.Descending;
 
@@ -133,11 +133,11 @@ else if (dv.Sort == sortName + " DESC")
 
 
 
-If dv.Sort = sortName Then
+If dataView.Sort = sortName Then
 
 e.Style.Tag = ListSortDirection.Ascending
 
-ElseIf dv.Sort = sortName & " DESC" Then
+ElseIf dataView.Sort = sortName & " DESC" Then
 
 e.Style.Tag = ListSortDirection.Descending
 

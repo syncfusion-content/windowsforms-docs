@@ -35,15 +35,15 @@ string s = (string)data.GetData(DataFormats.Text);
 
 string[] rows = s.Split(new char[]{'\n'});
 
-int numRows = rows.GetLength(0);
+int numberOfRows = rows.GetLength(0);
 
-if(numRows > 0 && rows[numRows - 1].Length == 0)
+if(numberOfRows > 0 && rows[numberOfRows - 1].Length == 0)
 
 
 
 //Removes extra empty row if present.
 
-numRows--; 
+numberOfRows--; 
 
 
 
@@ -51,15 +51,15 @@ numRows--;
 
 string[] cols = rows[0].Split(new char[]{'\t'});
 
-int numCols = cols.GetLength(0);
+int numberOfCols = cols.GetLength(0);
 
-if(numCols > 0 && cols[numCols - 1].Length == 0)
+if(numberOfCols > 0 && cols[numberOfCols - 1].Length == 0)
 
 
 
 //Removes extra empty column if present.
 
-numCols--; 
+numberOfCols--; 
 
 
 
@@ -67,23 +67,23 @@ numCols--;
 
 int extraRowIfStartAtAddNewRow = this.gridDataBoundGrid1.Binder.IsAddNew ? 1 : 0;
 
-while(currentCell.RowIndex + numRows + extraRowIfStartAtAddNewRow > grid.Model.RowCount)
+while(currentCell.RowIndex + numberOfRows + extraRowIfStartAtAddNewRow > grid.Model.RowCount)
 
 {
 
-      DataRow dr = dt.NewRow();
+      DataRow dataRow = dataTable.NewRow();
 
-      dt.Rows.Add(dr);
+      dataTable.Rows.Add(dataRow);
 
       row--;
 
 }
 
-while(currentCell.COlIndex + numCols > grid.Model.ColCount+1)
+while(currentCell.ColIndex + numberOfCols > grid.Model.ColCount+1)
 
 {
 
-      dt.Columns.Add();
+      dataTable.Columns.Add();
 
       col--;
 
@@ -113,15 +113,15 @@ s As String = CStr(data.GetData(DataFormats.Text))
 
 rows As String() = s.Split(New Char(){ControlChars.Lf})
 
-numRows As Integer = rows.GetLength(0)
+numberOfRows As Integer = rows.GetLength(0)
 
-If numRows > 0 AndAlso rows(numRows - 1).Length = 0 Then
+If numberOfRows > 0 AndAlso rows(numberOfRows - 1).Length = 0 Then
 
 
 
 'Removes extra empty row if present.
 
-        numRows -= 1 
+        numberOfRows -= 1 
 
 End If
 
@@ -131,15 +131,15 @@ End If
 
 Dim cols As String() = rows(0).Split(New Char(){ControlChars.Tab})
 
-Dim numCols As Integer = cols.GetLength(0)
+Dim numberOfCols As Integer = cols.GetLength(0)
 
-If numCols > 0 AndAlso cols(numCols - 1).Length = 0 Then
+If numberOfCols > 0 AndAlso cols(numberOfCols - 1).Length = 0 Then
 
 
 
 'Removes extra empty column if present.
 
-     numCols -= 1 
+     numberOfCols -= 1 
 
 End If
 
@@ -147,19 +147,19 @@ End If
 
 Dim extraRowIfStartAtAddNewRow As Integer = If(Me.gridDataBoundGrid1.Binder.IsAddNew, 1, 0)
 
-Do While currentCell.RowIndex + numRows + extraRowIfStartAtAddNewRow > grid.Model.RowCount
+Do While currentCell.RowIndex + numberOfRows + extraRowIfStartAtAddNewRow > grid.Model.RowCount
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 row -= 1
 
 Loop
 
-Do While currentCell.COlIndex + numCols> grid.Model.ColCount+1
+Do While currentCell.ColIndex + numberOfCols> grid.Model.ColCount+1
 
-dt.Columns.Add()
+dataTable.Columns.Add()
 
 col -= 1
 

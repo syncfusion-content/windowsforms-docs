@@ -26,7 +26,7 @@ private void gridDataBoundGrid1_CurrentCellCloseDropDown(object sender, Syncfusi
 	//Uses Renderer.GetCellValue() to retrieve the new cell value.
     Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue());
 
-	//Retrieves the oldvalue. 
+	//Retrieves the old value. 
     Console.WriteLine("Old Value {0}",this.gridDataBoundGrid1[cc.RowIndex,cc.ColIndex].CellValue.ToString());
 }
 
@@ -39,7 +39,7 @@ private void gridControl1_CurrentCellCloseDropDown(object sender, Syncfusion.Win
 	//Uses Renderer.GetCellValue() to retrieve the new cell value.
     Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue()); 
 	
-	//Retrieves the oldvalue.
+	//Retrieves the old value.
     Console.WriteLine("Old Value {0}",this.gridControl1[cc.RowIndex,cc.ColIndex].CellValue.ToString());
 }
 
@@ -56,7 +56,7 @@ Private Sub gridDataBoundGrid1_CurrentCellCloseDropDown(ByVal sender As Object, 
     'Uses Renderer.GetCellValue() to retrieve the new cell value.
     Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue())
 	
-    'Retrieves the oldvalue.
+    'Retrieves the old value.
     Console.WriteLine("Old Value{0}",Me.gridDataBoundGrid1(cc.RowIndex,cc.ColIndex).CellValue. ToString())
 End Sub
 
@@ -68,7 +68,7 @@ Private Sub gridControl1_CurrentCellCloseDropDown(ByVal sender As Object, ByVal 
      'Uses Renderer.GetCellValue() to retrieve the new cell value.
      Console.WriteLine("New Value {0}",cc.Renderer.GetCellValue())
 
-     'Retrieves the oldvalue.
+     'Retrieves the old value.
      Console.WriteLine("Old Value {0}",Me.gridControl1(cc.RowIndex,cc.ColIndex).CellValue.ToString())
 
 End Sub
