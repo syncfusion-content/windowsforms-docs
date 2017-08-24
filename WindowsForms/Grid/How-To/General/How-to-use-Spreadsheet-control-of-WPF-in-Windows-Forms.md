@@ -13,15 +13,15 @@ You can host that WPF component in Windows Forms through ElementHost container. 
 
 {% highlight c# %}
 
-ElementHost elhost = new ElementHost();
+ElementHost elementHost = new ElementHost();
 
-elhost.Size = new System.Drawing.Size(1000, 600);
+elementHost.Size = new System.Drawing.Size(1000, 600);
 
-Spreadsheet wpfctl = new Spreadsheet();
+Spreadsheet control = new Spreadsheet();
 
-elhost.Child = wpfctl;
+elementHost.Child = control;
 
-this.Controls.Add(elhost);
+this.Controls.Add(elementHost);
 
 
 {% endhighlight  %}
@@ -29,15 +29,15 @@ this.Controls.Add(elhost);
 
 {% highlight vb %}
 
-Dim elhost As New ElementHost()
+Dim elementHost As New ElementHost()
 
-elhost.Size = New System.Drawing.Size(1000, 600)
+elementHost.Size = New System.Drawing.Size(1000, 600)
 
-Dim wpfctl As New Spreadsheet()
+Dim control As New Spreadsheet()
 
-elhost.Child = wpfctl
+elementHost.Child = control
 
-Me.Controls.Add(elhost)
+Me.Controls.Add(elementHost)
 
 {% endhighlight  %}
 
