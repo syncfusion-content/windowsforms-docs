@@ -31,53 +31,53 @@ private void Form1_Load(object sender, System.EventArgs e)
 
 //Creates GridBoundColumn for each displayed column.
 
-    GridBoundColumn gbc = new GridBoundColumn();
+    GridBoundColumn gridBoundColumn = new GridBoundColumn();
 
-    gbc.MappingName = "FirstName";  
+    gridBoundColumn.MappingName = "FirstName";  
 
 
 
 //Must set to column mapping name.
 
-    gbc.HeaderText = "Name";
+    gridBoundColumn.HeaderText = "Name";
 
 
 
 //Sets some style properties.
 
-    gbc.StyleInfo.BackColor = Color.FromArgb(0xC0, 0xC9, 0xdb);
+    gridBoundColumn.StyleInfo.BackColor = Color.FromArgb(0xC0, 0xC9, 0xdb);
 
-    gbc.StyleInfo.TextColor = Color.Blue;
+    gridBoundColumn.StyleInfo.TextColor = Color.Blue;
 
 
 
 //Adds the column to GridBoundColumns collection.
 
-    this.gridDataBoundGrid1.GridBoundColumns.Add(gbc);
+    this.gridDataBoundGrid1.GridBoundColumns.Add(gridBoundColumn);
 
 
 
 //Repeats for each column.
 
-    gbc = new GridBoundColumn();
+    gridBoundColumn = new GridBoundColumn();
 
-    gbc.MappingName = "LastName";
+    gridBoundColumn.MappingName = "LastName";
 
-    gbc.HeaderText = "FamilyName";
+    gridBoundColumn.HeaderText = "FamilyName";
 
-    gbc.StyleInfo.Font.Bold = true;
+    gridBoundColumn.StyleInfo.Font.Bold = true;
 
-    this.gridDataBoundGrid1.GridBoundColumns.Add(gbc);
+    this.gridDataBoundGrid1.GridBoundColumns.Add(gridBoundColumn);
 
 
 
-    gbc = new GridBoundColumn();
+    gridBoundColumn = new GridBoundColumn();
 
-    gbc.MappingName = "City";
+    gridBoundColumn.MappingName = "City";
 
-    gbc.HeaderText = "City";
+    gridBoundColumn.HeaderText = "City";
 
-    this.gridDataBoundGrid1.GridBoundColumns.Add(gbc);
+    this.gridDataBoundGrid1.GridBoundColumns.Add(gridBoundColumn);
 
 
 
@@ -111,53 +111,53 @@ Me.gridDataBoundGrid1.BackColor = Color.FromArgb(&HCC, &HD4, &HE6)
 
 'Creates GridBoundColumn for each displayed column.
 
-Dim gbc As New GridBoundColumn()
+Dim gridBoundColumn As New GridBoundColumn()
 
-gbc.MappingName = "FirstName"
+gridBoundColumn.MappingName = "FirstName"
 
 
 
 'Must set to column mapping name.
 
-gbc.HeaderText = "Name"
+gridBoundColumn.HeaderText = "Name"
 
 
 
 'Sets some style properties.
 
-gbc.StyleInfo.BackColor = Color.FromArgb(&HC0, &HC9, &HDB)
+gridBoundColumn.StyleInfo.BackColor = Color.FromArgb(&HC0, &HC9, &HDB)
 
-gbc.StyleInfo.TextColor = Color.Blue
+gridBoundColumn.StyleInfo.TextColor = Color.Blue
 
 
 
 'Adds column to GridBoundColumns collection.
 
-Me.gridDataBoundGrid1.GridBoundColumns.Add(gbc)
+Me.gridDataBoundGrid1.GridBoundColumns.Add(gridBoundColumn)
 
 
 
 'Repeats for each column.
 
-gbc = New GridBoundColumn()
+gridBoundColumn = New GridBoundColumn()
 
-gbc.MappingName = "LastName"
+gridBoundColumn.MappingName = "LastName"
 
-gbc.HeaderText = "FamilyName"
+gridBoundColumn.HeaderText = "FamilyName"
 
-gbc.StyleInfo.Font.Bold = True
+gridBoundColumn.StyleInfo.Font.Bold = True
 
-Me.gridDataBoundGrid1.GridBoundColumns.Add(gbc)
+Me.gridDataBoundGrid1.GridBoundColumns.Add(gridBoundColumn)
 
 
 
-gbc = New GridBoundColumn()
+gridBoundColumn = New GridBoundColumn()
 
-gbc.MappingName = "City"
+gridBoundColumn.MappingName = "City"
 
-gbc.HeaderText = "City"
+gridBoundColumn.HeaderText = "City"
 
-Me.gridDataBoundGrid1.GridBoundColumns.Add(gbc)
+Me.gridDataBoundGrid1.GridBoundColumns.Add(gridBoundColumn)
 
 
 
@@ -202,23 +202,23 @@ private void Form1_Load(object sender, System.EventArgs e)
 
     GridModelDataBinder binder = this.gridDataBoundGrid1.Binder;
 
-    GridBoundColumn gbc = binder.InternalColumns["FirstName"];
+    GridBoundColumn gridBoundColumn = binder.InternalColumns["FirstName"];
 
-    gbc.HeaderText = "Name";
+    gridBoundColumn.HeaderText = "Name";
 
-    gbc.StyleInfo.BackColor = Color.FromArgb(0xC0, 0xC9, 0xdb);
+    gridBoundColumn.StyleInfo.BackColor = Color.FromArgb(0xC0, 0xC9, 0xdb);
 
-    gbc.StyleInfo.TextColor = Color.Blue;
+    gridBoundColumn.StyleInfo.TextColor = Color.Blue;
 
 
 
 //Sets the second column.
 
-    gbc = binder.InternalColumns["LastName"];
+    gridBoundColumn = binder.InternalColumns["LastName"];
 
-    gbc.HeaderText = "FamilyName";
+    gridBoundColumn.HeaderText = "FamilyName";
 
-    gbc.StyleInfo.Font.Bold = true;
+    gridBoundColumn.StyleInfo.Font.Bold = true;
 
 
 
@@ -250,23 +250,23 @@ Me.gridDataBoundGrid1.BackColor = Color.FromArgb(&HCC, &HD4, &HE6)
 
 Dim binder As GridModelDataBinder = Me.gridDataBoundGrid1.Binder
 
-Dim gbc As GridBoundColumn = binder.InternalColumns("FirstName")
+Dim gridBoundColumn As GridBoundColumn = binder.InternalColumns("FirstName")
 
-gbc.HeaderText = "Name"
+gridBoundColumn.HeaderText = "Name"
 
-gbc.StyleInfo.BackColor = Color.FromArgb(&HC0, &HC9, &HDB)
+gridBoundColumn.StyleInfo.BackColor = Color.FromArgb(&HC0, &HC9, &HDB)
 
-gbc.StyleInfo.TextColor = Color.Blue
+gridBoundColumn.StyleInfo.TextColor = Color.Blue
 
 
 
 'Sets the second column.
 
-gbc = binder.InternalColumns("LastName")
+gridBoundColumn = binder.InternalColumns("LastName")
 
-gbc.HeaderText = "FamilyName"
+gridBoundColumn.HeaderText = "FamilyName"
 
-gbc.StyleInfo.Font.Bold = True
+gridBoundColumn.StyleInfo.Font.Bold = True
 
 
 

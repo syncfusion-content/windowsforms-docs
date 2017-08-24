@@ -39,11 +39,11 @@ private void Form1_Load(object sender , System.EventArgs e)
 
 //Adds Data Relation to the Data Set.
 
-    DataRelation dr  = new DataRelation("CustomersToOrders", this.dataSet11.Customers.Columns["CustomerID"],
+    DataRelation dataRow  = new DataRelation("CustomersToOrders", this.dataSet11.Customers.Columns["CustomerID"],
 
     this.dataSet11.Orders.Columns["CustomerID"]);
 
-    this.dataSet11.Relations.Add(dr);
+    this.dataSet11.Relations.Add(dataRow);
 
 
 
@@ -77,11 +77,11 @@ Me.SqlDataAdapter2.Fill(Me.DataSet11.Orders)
 
 'Adds Data Relation to Data Set.
 
-Dim dr As DataRelation = New DataRelation("CustomersToOrders", Me.DataSet11.Customers.Columns("CustomerID"),
+Dim dataRow As DataRelation = New DataRelation("CustomersToOrders", Me.DataSet11.Customers.Columns("CustomerID"),
 
 Me.DataSet11.Orders.Columns("CustomerID"))
 
-Me.DataSet11.Relations.Add(dr)
+Me.DataSet11.Relations.Add(dataRow)
 
 
 

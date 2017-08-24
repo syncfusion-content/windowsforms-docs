@@ -29,7 +29,7 @@ private void Model_PasteCellText(object sender, Syncfusion.Windows.Forms.Grid.Gr
 
      {
 
-//If rowindex falls beyond upper bound, Cancels and Aborts the Paste process.
+//If row index falls beyond upper bound, Cancels and Aborts the Paste process.
 
          MessageBox.Show("There is no enough rows to paste the rest of the contents");
 
@@ -58,7 +58,7 @@ Private Sub Model_PasteCellText(ByVal sender As Object, ByVal e As Syncfusion.Wi
 
 
 
-'If rowindex falls beyond upper bound, Cancels and Aborts the Paste process.
+'If row index falls beyond upper bound, Cancels and Aborts the Paste process.
 
         MessageBox.Show("There is no enough rows to paste the rest of the contents")
 

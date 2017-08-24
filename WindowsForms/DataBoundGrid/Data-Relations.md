@@ -29,9 +29,9 @@ This example has a derived GridDataBoundGrid class called GridHierarchicalDataBo
 
 //Parent table to Child table.
 
-//Creates the outermost grid for customers table-uses GridHierDataBoundGrid class.
+//Creates the outermost grid for customers table-uses GridHierarchicalDataBoundGrid class.
 
-this.customerGrid1 = new GridHierDataBoundGrid(this, this.dataSet11.Customers,
+this.customerGrid1 = new GridHierarchicalDataBoundGrid(this, this.dataSet11.Customers,
 
 this.dataSet11.Orders, this.orderGrid2, new QueryFilterStringEventHandler(ProvideOrdersFilterStrings),
 
@@ -46,9 +46,9 @@ new QueryFormatGridEventHandler(ProvideOrderFormat), true);
 
 'Parent table to Child table.
 
-'Creates the outermost grid for customers table and uses GridHierDataBoundGrid class.
+'Creates the outermost grid for customers table and uses GridHierarchicalDataBoundGrid class.
 
-Me.customerGrid1 = New GridHierDataBoundGrid(Me, Me.dataSet11.Customers, Me.dataSet11.Orders, Me.orderGrid2, New QueryFilterStringEventHandler(AddressOf ProvideOrdersFilterStrings), New QueryFormatGridEventHandler(AddressOf ProvideOrderFormat), True)
+Me.customerGrid1 = New GridHierarchicalDataBoundGrid(Me, Me.dataSet11.Customers, Me.dataSet11.Orders, Me.orderGrid2, New QueryFilterStringEventHandler(AddressOf ProvideOrdersFilterStrings), New QueryFormatGridEventHandler(AddressOf ProvideOrderFormat), True)
 
 {% endhighlight  %}
 
@@ -121,9 +121,9 @@ The following code example illustrates the display of a DataSet with multiple ne
 
 
 
-GridHierarchyLevel hlCategory_Products = gridBinder.AddRelation("Category_Products");
+GridHierarchyLevel hierarchyLevelCategory_Products = gridBinder.AddRelation("Category_Products");
 
-GridHierarchyLevel hlProducts_OrderDetails = gridBinder.AddRelation("Products_OrderDetails");
+GridHierarchyLevel hierarchyLevelProducts_OrderDetails = gridBinder.AddRelation("Products_OrderDetails");
 
 {% endhighlight  %}
 {% highlight vbnet %}
@@ -131,9 +131,9 @@ GridHierarchyLevel hlProducts_OrderDetails = gridBinder.AddRelation("Products_Or
 
 
 
-Dim hlCategory_Products As GridHierarchyLevel = gridBinder.AddRelation("Category_Products")
+Dim hierarchyLevelCategory_Products As GridHierarchyLevel = gridBinder.AddRelation("Category_Products")
 
-Dim hlProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRelation("Products_OrderDetails")
+Dim hierarchyLevelProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRelation("Products_OrderDetails")
 {% endhighlight  %}
 ![](Data-Relations_images/Data-Relations_img2.jpeg) 
 

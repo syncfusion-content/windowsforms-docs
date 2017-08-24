@@ -54,9 +54,9 @@ The filtered grid is created by setting RowFilter property of it to default view
 
 //Assuming the grid is bound to a Data Table.
 
-DataView dv = ((DataTable)this.gridDataBoundGrid1.DataSource).DefaultView;
+DataView dataView = ((DataTable)this.gridDataBoundGrid1.DataSource).DefaultView;
 
-dv.RowFilter = "FirstName LIKE 's*'";
+dataView.RowFilter = "FirstName LIKE 's*'";
 
 
 {% endhighlight  %}
@@ -67,9 +67,9 @@ dv.RowFilter = "FirstName LIKE 's*'";
 
 ' Assuming the grid is bound to a Data Table.
 
-Dim dv As DataView = CType(Me.gridDataBoundGrid1.DataSource, DataTable).DefaultView
+Dim dataView As DataView = CType(Me.gridDataBoundGrid1.DataSource, DataTable).DefaultView
 
-dv.RowFilter = "FirstName LIKE 's*'"
+dataView.RowFilter = "FirstName LIKE 's*'"
 
 You can use the Essential Grid's GridFilterBar class to automatically add a row of drop-down cells at the top of a simple (non-hierarchical) DataBound Grid that can be used to filter the grid to display only rows that match values from the drop-down. For example, when you have a grid with Grid Filter Bar, if one of your columns is City and you want to see all the rows where City is 'Boston' for example and then you will have to drop the combo box at the top of the City column and select Boston. The grid will then display only those rows with Boston in the City column. Adding a Grid Filter Bar takes only two lines of code. 
 
@@ -77,7 +77,7 @@ You can use the Essential Grid's GridFilterBar class to automatically add a row 
 
 
 
-//Adds a Filter Bar to the databound grid.
+//Adds a Filter Bar to the DataBoundGrid.
 
 GridFilterBar filterBar = new Syncfusion.Windows.Forms.Grid.GridFilterBar();
 
@@ -89,7 +89,7 @@ filterBar.WireGrid(gridDataBoundGrid1);
 
 
 
-'Adds a Filter Bar to the databound grid.
+'Adds a Filter Bar to the DataBoundGrid.
 
 Dim filterBar As GridFilterBar = New Syncfusion.Windows.Forms.Grid.GridFilterBar()
 

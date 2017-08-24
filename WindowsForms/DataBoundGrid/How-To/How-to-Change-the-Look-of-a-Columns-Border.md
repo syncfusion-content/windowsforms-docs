@@ -75,7 +75,7 @@ style.Borders.Top = New GridBorder(GridBorderStyle.DashDotDot, Color.Purple, Gri
 
 
 
-'Bordermargins.
+'BorderMargins.
 
 Me.gridDataBoundGrid1.GridBoundColumns(4).StyleInfo.BorderMargins.Right = 20
 
