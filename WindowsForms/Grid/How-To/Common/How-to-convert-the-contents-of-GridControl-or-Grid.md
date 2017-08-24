@@ -14,15 +14,15 @@ The Contents of GridControl and GridDataBoundGrid can be transferred to Excel by
 {% tabs %}
 {% highlight c# %}
 
-Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
-gecc.GridToExcel(this.gridControl1.Model,@"C:\MyGC.xls");
+Syncfusion.GridExcelConverter.GridExcelConverterControl excelConverter = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
+excelConverter.GridToExcel(this.gridControl1.Model,@"C:\MyGC.xls");
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim gecc As New Syncfusion.GridExcelConverter.GridExcelConverterControl
-gecc.GridToExcel(Me.gridControl1.Model, "C:\MyGC.xls")
+Dim excelConverter As New Syncfusion.GridExcelConverter.GridExcelConverterControl
+excelConverter.GridToExcel(Me.gridControl1.Model, "C:\MyGC.xls")
 
 {% endhighlight %}
 {% endtabs %}

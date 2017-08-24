@@ -20,9 +20,9 @@ private void button1_Click(object sender, EventArgs e)
 
 { 
 
-DataTable dt = this.gridGroupingControl1.DataSource as DataTable; 
+DataTable dataTable = this.gridGroupingControl1.DataSource as DataTable; 
 
-dt.RejectChanges(); 
+dataTable.RejectChanges(); 
 
 }
 
@@ -34,9 +34,9 @@ dt.RejectChanges();
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
 
-Dim dt As DataTable = TryCast(Me.gridGroupingControl1.DataSource, DataTable)
+Dim dataTable As DataTable = TryCast(Me.gridGroupingControl1.DataSource, DataTable)
 
-dt.RejectChanges()
+dataTable.RejectChanges()
 
 End Sub
 {% endhighlight  %}

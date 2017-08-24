@@ -26,18 +26,18 @@ if(el != null)
 	//Checks for a child table.
     else if(el is GridNestedTable)
     {
-        GridNestedTable gnt = el as GridNestedTable;
-        GridNestedTable gnt1 = gnt;
+        GridNestedTable gridNestedTable = el as GridNestedTable;
+        GridNestedTable gnt1 = gridNestedTable;
         while(gnt1 != null && gnt1.ChildTable != null)
         {
-             gnt = gnt1;
+             gridNestedTable = gnt1;
 			//Gets the handle for parent table.
-             gnt1 = gnt.ChildTable.ParentTable.CurrentElement as GridNestedTable;
+             gnt1 = gridNestedTable.ChildTable.ParentTable.CurrentElement as GridNestedTable;
         }
 		//Retrieves the corresponding parent table's record.
-        DataRowView drv = gnt.ParentRecord.GetData() as DataRowView;
+        DataRowView dataRowView = gridNestedTable.ParentRecord.GetData() as DataRowView;
 		//Shows column 2.
-        Console.WriteLine(drv[1].ToString()); 
+        Console.WriteLine(dataRowView[1].ToString()); 
     }
 }
 
@@ -51,26 +51,26 @@ If Not (el Is Nothing) Then
     Else
 	'Checks for a child table.
         If TypeOf el Is GridNestedTable Then
-		Dim gnt As GridNestedTable = el
+		Dim gridNestedTable As GridNestedTable = el
             Dim gnt1 As GridNestedTable
-            If TypeOf gnt Is GridNestedTable Then
-                gnt1 = gnt
+            If TypeOf gridNestedTable Is GridNestedTable Then
+                gnt1 = gridNestedTable
             Else
                 gnt1 = Nothing
             End If
             While Not (gnt1 Is Nothing) AndAlso Not (gnt1.ChildTable Is Nothing)
-                gnt = gnt1
-                If TypeOf gnt.ChildTable.ParentTable.CurrentElement Is GridNestedTable Then
+                gridNestedTable = gnt1
+                If TypeOf gridNestedTable.ChildTable.ParentTable.CurrentElement Is GridNestedTable Then
 				'Gets the handle for parent table.
-                    gnt1 = gnt.ChildTable.ParentTable.CurrentElement
+                    gnt1 = gridNestedTable.ChildTable.ParentTable.CurrentElement
                 Else
                     gnt1 = Nothing
                 End If
             End While
 			'Retrieves the corresponding parent table's record.
-            Dim drv As DataRowView = gnt.ParentRecord.GetData()
+            Dim dataRowView As DataRowView = gridNestedTable.ParentRecord.GetData()
 			'Shows column 2.
-            Console.WriteLine(drv(1).ToString())
+            Console.WriteLine(dataRowView(1).ToString())
         End If
     End If
 End If
