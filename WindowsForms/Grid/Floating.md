@@ -74,8 +74,8 @@ GridRangeInfo floatRange = this.gridControl1.Model.FloatingCells.FindRange(4, 4)
 // Finding a FloatRange for cell(7,9)
 GridRangeInfo floatRange2 = this.gridControl1.Model.FloatingCells.FindRange(7, 9);
 
-MessageBox.Show("Floatrange for cell(4,4) is " + floatRange.Info.ToString()
-+ "\n" + "Floatrange for cell(7,9) is " + floatRange2.RangeType.ToString());
+MessageBox.Show("Float range for cell(4,4) is " + floatRange.Info.ToString()
++ "\n" + "Float range for cell(7,9) is " + floatRange2.RangeType.ToString());
 
 {% endhighlight %}
 {% highlight vb %}
@@ -84,7 +84,7 @@ Dim floatRange As GridRangeInfo = Me.gridControl1.Model.FloatingCells.FindRange(
 ' Finding a FloatRange for cell(7,9)
 Dim floatRange2 As GridRangeInfo = Me.gridControl1.Model.FloatingCells.FindRange(7, 9)
 
-MessageBox.Show("Floatrange for cell(4,4) is " & floatRange.Info.ToString() & Constants.vbLf & "Floatrange for cell(7,9) is " & floatRange2.RangeType.ToString())
+MessageBox.Show("Float range for cell(4,4) is " & floatRange.Info.ToString() & Constants.vbLf & "Float range for cell(7,9) is " & floatRange2.RangeType.ToString())
 {% endhighlight %}
 {% endtabs %}
 

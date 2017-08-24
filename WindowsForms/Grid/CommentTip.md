@@ -323,7 +323,7 @@ void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler gridControl1.DrawCommentIndicatorn, AddressOf gridControl1_DrawCommentIndicatorn
+AddHandler gridControl1.DrawCommentIndicator, AddressOf gridControl1_DrawCommentIndicator
 Private Sub gridControl1_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
 	'Set the color for the comment indicator.
 	e.Style.CommentTip.CommentIndicatorColor = Color.Green
@@ -340,7 +340,7 @@ By default, the comment indicator will be drawn in a triangle shape at the top r
 Using the event argument `e.Graphics`, the shape can be filled that you want to display as the comment indicator. The default location of the comment indicator can be get by using the `e.IndicatorBounds` property. 
 {% tabs %}
 {% highlight c# %}
-this.gridControl1.DrawCommentIndicator +=new DrawCommentIndicatornEventHandler(gridControl1_DrawCommentIndicatorn);
+this.gridControl1.DrawCommentIndicator +=new DrawCommentIndicatornEventHandler(gridControl1_DrawCommentIndicator);
 void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventArgs e)
 {
   if (e.ColIndex == 2)

@@ -4792,7 +4792,7 @@ The [GetCellsFromArgs](http://help.syncfusion.com/cr/cref_files/windowsforms/gri
 {% highlight c# %}
 
 //Implements the desired method.
-public string ComputeSumPosNums(string args)
+public string ComputeSumPosNumber(string args)
 {
     GridFormulaCellModel model = this.gridControl1.CellModels["FormulaCell"] as GridFormulaCellModel;
     if (model != null)
@@ -4857,7 +4857,7 @@ public string ComputeSumPosNums(string args)
 {% endhighlight %}
 {% highlight vb %}
 
-Public Function ComputeSumPosNums(ByVal args As String) As String
+Public Function ComputeSumPosNumber(ByVal args As String) As String
     Dim model As GridFormulaCellModel = TryCast(Me.gridControl1.CellModels("FormulaCell"), GridFormulaCellModel)
     If model IsNot Nothing Then
         Dim engine As GridFormulaEngine = model.Engine
@@ -4910,15 +4910,15 @@ End Function
 {% highlight c# %}
 
 GridFormulaCellModel cellModel = this.gridControl1.CellModels["FormulaCell"] as GridFormulaCellModel;
-//Adds a formula named SumPosNums to the Library.
-cellModel.Engine.AddFunction("SumPosNums", new GridFormulaEngine.LibraryFunction(ComputeSumPosNums));
+//Adds a formula named SumPosNumber to the Library.
+cellModel.Engine.AddFunction("SumPosNumber", new GridFormulaEngine.LibraryFunction(ComputeSumPosNumber));
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim cellModel As GridFormulaCellModel = TryCast(Me.gridControl1.CellModels("FormulaCell"), GridFormulaCellModel)
-'Adds a formula named SumPosNums to the Library.
-cellModel.Engine.AddFunction("SumPosNums", New GridFormulaEngine.LibraryFunction(ComputeSumPosNums))
+'Adds a formula named SumPosNumber to the Library.
+cellModel.Engine.AddFunction("SumPosNumber", New GridFormulaEngine.LibraryFunction(ComputeSumPosNumber))
 
 {% endhighlight %}
 {% endtabs %}

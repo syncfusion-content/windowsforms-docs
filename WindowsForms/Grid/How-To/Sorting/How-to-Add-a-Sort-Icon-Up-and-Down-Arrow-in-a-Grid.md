@@ -25,7 +25,7 @@ this.gridControl1.CellModels.Add("SortHeader", new GridSortColumnHeaderCellModel
 
 
 
-//Sets new celltype to a column header cell.
+//Sets new cell type to a column header cell.
 
 this.gridControl1[0,1].CellType = "SortHeader";
 
@@ -47,7 +47,7 @@ Me.GridControl1.CellModels.Add("SortHeader", New GridSortColumnHeaderCellModel(M
 
 
 
-'Sets new celltype to a column header cell.
+'Sets new cell type to a column header cell.
 
 Me.GridControl1(0, 1).CellType = "SortHeader"
 

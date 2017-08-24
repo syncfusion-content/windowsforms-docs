@@ -115,11 +115,11 @@ The background of the GridControl can be filled with an image by using [Backgrou
 
 {% tabs %}
 {% highlight c# %}
-//To change the background image of gridcontrol
+//To change the background image of grid control
 this.gridControl.BackgroundImage = Image.FromFile(@"sync.jpg");
 {% endhighlight %}
 {% highlight vb %}
-' To change the background image of gridcontrol
+' To change the background image of grid control
 Me.gridControl.BackgroundImage = Image.FromFile("sync.jpg")
 {% endhighlight %}
 {% endtabs %}
@@ -539,14 +539,14 @@ void gridControl1_DrawCellFrameAppearance(object sender, Syncfusion.Windows.Form
         //Space has been reserved for this area with the TableStyle.BorderMargins property.
         Rectangle rect = e.TargetBounds;
         rect.Inflate(-2, -2);
-        Rectangle[] rects = new Rectangle[] 
+        Rectangle[] rectangles = new Rectangle[] 
         {
             new Rectangle(rect.X, rect.Y, rect.Width, 4),
             new Rectangle(rect.X, rect.Y, 4, rect.Height),
             new Rectangle(rect.Right-4, rect.Y, 4, rect.Height),
             new Rectangle(rect.X, rect.Bottom-4, rect.Width, 4),
         };
-        g.FillRectangles(brush, rects);
+        g.FillRectangles(brush, rectangles);
 
         //Disallows grid's default drawing of cell frame for this cell.
         e.Cancel = true;
@@ -571,8 +571,8 @@ Private Sub gridControl1_DrawCellFrameAppearance(ByVal sender As Object, ByVal e
         'Space has been reserved for this area with the TableStyle.BorderMargins property.
         Dim rect As Rectangle = e.TargetBounds
         rect.Inflate(-2, -2)
-        Dim rects() As Rectangle = { New Rectangle(rect.X, rect.Y, rect.Width, 4), New Rectangle(rect.X, rect.Y, 4, rect.Height), New Rectangle(rect.Right-4, rect.Y, 4, rect.Height), New Rectangle(rect.X, rect.Bottom-4, rect.Width, 4) }
-        g.FillRectangles(brush, rects)
+        Dim rectangles() As Rectangle = { New Rectangle(rect.X, rect.Y, rect.Width, 4), New Rectangle(rect.X, rect.Y, 4, rect.Height), New Rectangle(rect.Right-4, rect.Y, 4, rect.Height), New Rectangle(rect.X, rect.Bottom-4, rect.Width, 4) }
+        g.FillRectangles(brush, rectangles)
 
         'Disallows grid's default drawing of cell frame for this cell.
         e.Cancel = True

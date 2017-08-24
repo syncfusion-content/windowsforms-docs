@@ -40,8 +40,8 @@ The following code illustrates how to export the user-defined function to Excel.
 
 //Exports the user-defined function.
 string xla = @"..\..\AddIns\Add.xla";
-Syncfusion.GridExcelConverter.GridExcelConverterControl gecc = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
-gecc.AddCustomFunction(xla, "add", saveFileDialog1.FileName);
-gecc.GridToExcel(this.gridControl1.Model, saveFileDialog1.FileName);
+Syncfusion.GridExcelConverter.GridExcelConverterControl excelConverter = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
+excelConverter.AddCustomFunction(xla, "add", saveFileDialog1.FileName);
+excelConverter.GridToExcel(this.gridControl1.Model, saveFileDialog1.FileName);
 
 {% endhighlight %}

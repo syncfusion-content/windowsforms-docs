@@ -761,8 +761,8 @@ StringBuilder ExportAsHTML(GridRangeInfoList rangeList)
                 GridStyleInfo style = this.gridControl1.Model[i, j];
 
                 string align = style.VerticalAlignment.ToString();
-                string bcolor = ColorTranslator.ToHtml(Color.FromArgb(style.BackColor.A, style.BackColor.R, style.BackColor.G, style.BackColor.B));
-                string fcolor = ColorTranslator.ToHtml(Color.FromArgb(style.TextColor.A, style.TextColor.R, style.TextColor.G, style.TextColor.B));
+                string backColor = ColorTranslator.ToHtml(Color.FromArgb(style.BackColor.A, style.BackColor.R, style.BackColor.G, style.BackColor.B));
+                string foreColor = ColorTranslator.ToHtml(Color.FromArgb(style.TextColor.A, style.TextColor.R, style.TextColor.G, style.TextColor.B));
                 string htmlStyle = BordersAsStyle(style.Borders);
                 htmlStyle += " " + FontAsStyle(style.Font, style.TextColor, style.HorizontalAlignment);
 
@@ -784,7 +784,7 @@ StringBuilder ExportAsHTML(GridRangeInfoList rangeList)
                 }
 
                 html.AppendFormat("<" + tag + " width=\"{0}\" height = \"{1}\" valign =\"{2}\" bgcolor=\"{3}\" style=\"{4}\">",
-                    this.gridControl1.ColWidths[j], this.gridControl1.RowHeights[i], align, bcolor, htmlStyle);
+                    this.gridControl1.ColWidths[j], this.gridControl1.RowHeights[i], align, backColor, htmlStyle);
 
                 if (style.CellType == GridCellTypeName.CheckBox || style.CellType == GridCellTypeName.PushButton ||
                     style.CellType == GridCellTypeName.RadioButton || style.CellType == GridCellTypeName.Image ||
@@ -818,8 +818,8 @@ StringBuilder ExportAsHTML(GridRangeInfoList rangeList)
                             {
                                 html.Append("<select>");
                                 html.Append("<OPTION></OPTION>");
-                                for (int lc = 0; lc < style.ChoiceList.Count; lc++)
-                                    html.AppendFormat("<option value=\"{0}\" {1}>{0}</option>", style.ChoiceList[lc], style.ChoiceList[lc] == style.CellValue.ToString() ? "selected" : "");
+                                for (int l = 0; l < style.ChoiceList.Count; l++)
+                                    html.AppendFormat("<option value=\"{0}\" {1}>{0}</option>", style.ChoiceList[l], style.ChoiceList[l] == style.CellValue.ToString() ? "selected" : "");
                                 html.Append("</select>");
                             }
                             else
@@ -853,8 +853,8 @@ Private Function ExportAsHTML(ByVal rangeList As GridRangeInfoList) As StringBui
                 Dim style As GridStyleInfo = Me.gridControl1.Model(i, j)
 
                 Dim align As String = style.VerticalAlignment.ToString()
-                Dim bcolor As String = ColorTranslator.ToHtml(Color.FromArgb(style.BackColor.A, style.BackColor.R, style.BackColor.G, style.BackColor.B))
-                Dim fcolor As String = ColorTranslator.ToHtml(Color.FromArgb(style.TextColor.A, style.TextColor.R, style.TextColor.G, style.TextColor.B))
+                Dim backColor As String = ColorTranslator.ToHtml(Color.FromArgb(style.BackColor.A, style.BackColor.R, style.BackColor.G, style.BackColor.B))
+                Dim foreColor As String = ColorTranslator.ToHtml(Color.FromArgb(style.TextColor.A, style.TextColor.R, style.TextColor.G, style.TextColor.B))
                 Dim htmlStyle As String = BordersAsStyle(style.Borders)
                 htmlStyle &= " " & FontAsStyle(style.Font, style.TextColor, style.HorizontalAlignment)
 
@@ -877,7 +877,7 @@ Private Function ExportAsHTML(ByVal rangeList As GridRangeInfoList) As StringBui
                     tag = "th"
                 End If
 
-                html.AppendFormat("<" & tag & " width=""{0}"" height = ""{1}"" valign =""{2}"" bgcolor=""{3}"" style=""{4}"">", Me.gridControl1.ColWidths(j), Me.gridControl1.RowHeights(i), align, bcolor, htmlStyle)
+                html.AppendFormat("<" & tag & " width=""{0}"" height = ""{1}"" valign =""{2}"" bgcolor=""{3}"" style=""{4}"">", Me.gridControl1.ColWidths(j), Me.gridControl1.RowHeights(i), align, backColor, htmlStyle)
 
                 If style.CellType Is GridCellTypeName.CheckBox OrElse style.CellType Is GridCellTypeName.PushButton OrElse style.CellType Is GridCellTypeName.RadioButton OrElse style.CellType Is GridCellTypeName.Image OrElse style.CellType Is GridCellTypeName.ComboBox Then
                     Select Case style.CellType
@@ -902,9 +902,9 @@ Private Function ExportAsHTML(ByVal rangeList As GridRangeInfoList) As StringBui
                             If style.ChoiceList IsNot Nothing Then
                                 html.Append("<select>")
                                 html.Append("<OPTION></OPTION>")
-                                For lc As Integer = 0 To style.ChoiceList.Count - 1
-                                    html.AppendFormat("<option value=""{0}"" {1}>{0}</option>", style.ChoiceList(lc),If(style.ChoiceList(lc) = style.CellValue.ToString(), "selected", ""))
-                                Next lc
+                                For l As Integer = 0 To style.ChoiceList.Count - 1
+                                    html.AppendFormat("<option value=""{0}"" {1}>{0}</option>", style.ChoiceList(l),If(style.ChoiceList(l) = style.CellValue.ToString(), "selected", ""))
+                                Next l
                                 html.Append("</select>")
                             Else
                                 html.Append(style.FormattedText)
@@ -937,12 +937,12 @@ private void ExportToHTML(object sender, EventArgs e)
     System.Diagnostics.Process.Start(CopyHtmlToClipBoard(ExportAsHTML(range).ToString(), true));
 }
 
-public static string CopyHtmlToClipBoard(string html, bool ie)
+public static string CopyHtmlToClipBoard(string html, bool e)
 {
   if (html != "")
   {
        Encoding enc = Encoding.UTF8;
-       string begin = ie ? "<!--Syncfusion Essential Grid-->" : "Version:0.9\r\nStartHTML:{0:000000}\r\nEndHTML:{1:000000}"
+       string begin = e ? "<!--Syncfusion Essential Grid-->" : "Version:0.9\r\nStartHTML:{0:000000}\r\nEndHTML:{1:000000}"
                 + "\r\nStartFragment:{2:000000}\r\nEndFragment:{3:000000}\r\n";
             string html_begin = "<html>\r\n<head>\r\n"
                 + "<meta http-equiv=\"Content-Type\""
@@ -972,9 +972,9 @@ public static string CopyHtmlToClipBoard(string html, bool ie)
         obj.SetData(DataFormats.Text, true, html_total);
         Clipboard.SetDataObject(obj, true);
         string htmlFile = System.IO.Path.Combine(System.IO.Path.GetTempPath(), System.IO.Path.GetTempFileName() + ".html");
-        System.IO.StreamWriter sw = System.IO.File.CreateText(htmlFile);
-        sw.Write(html_total);
-        sw.Close();
+        System.IO.StreamWriter streamWriter = System.IO.File.CreateText(htmlFile);
+        streamWriter.Write(html_total);
+        streamWriter.Close();
         return htmlFile;
     }
     return "";
@@ -991,10 +991,10 @@ Private Sub ExportToHTML(ByVal sender As Object, ByVal e As EventArgs)
 	System.Diagnostics.Process.Start(CopyHtmlToClipBoard(ExportAsHTML(range).ToString(), True))
 End Sub
 
-Public Shared Function CopyHtmlToClipBoard(ByVal html As String, ByVal ie As Boolean) As String
+Public Shared Function CopyHtmlToClipBoard(ByVal html As String, ByVal e As Boolean) As String
   If html <> "" Then
 	   Dim enc As Encoding = Encoding.UTF8
-	   Dim begin As String = If(ie, "<!--Syncfusion Essential Grid-->", "Version:0.9" & Constants.vbCrLf & "StartHTML:{0:000000}" & Constants.vbCrLf & "EndHTML:{1:000000}" & Constants.vbCrLf & "StartFragment:{2:000000}" & Constants.vbCrLf & "EndFragment:{3:000000}" & Constants.vbCrLf)
+	   Dim begin As String = If(e, "<!--Syncfusion Essential Grid-->", "Version:0.9" & Constants.vbCrLf & "StartHTML:{0:000000}" & Constants.vbCrLf & "EndHTML:{1:000000}" & Constants.vbCrLf & "StartFragment:{2:000000}" & Constants.vbCrLf & "EndFragment:{3:000000}" & Constants.vbCrLf)
 			Dim html_begin As String = "<html>" & Constants.vbCrLf & "<head>" & Constants.vbCrLf & "<meta http-equiv=""Content-Type""" & " content=""text/html; charset=" & enc.WebName & """>" & Constants.vbCrLf & "<title>Syncfusion Essential Grid</title>" & Constants.vbCrLf & "</head>" & Constants.vbCrLf & "<body>" & Constants.vbCrLf & "<!--StartFragment-->"
 
 	   Dim html_end As String = "<!--EndFragment-->" & Constants.vbCrLf & "</body>" & Constants.vbCrLf & "</html>" & Constants.vbCrLf
@@ -1013,9 +1013,9 @@ Public Shared Function CopyHtmlToClipBoard(ByVal html As String, ByVal ie As Boo
 		obj.SetData(DataFormats.Text, True, html_total)
 		Clipboard.SetDataObject(obj, True)
 		Dim htmlFile As String = System.IO.Path.Combine(System.IO.Path.GetTempPath(), System.IO.Path.GetTempFileName() & ".html")
-		Dim sw As System.IO.StreamWriter = System.IO.File.CreateText(htmlFile)
-		sw.Write(html_total)
-		sw.Close()
+		Dim streamWriter As System.IO.StreamWriter = System.IO.File.CreateText(htmlFile)
+		streamWriter.Write(html_total)
+		streamWriter.Close()
 		Return htmlFile
   End If
 	Return ""

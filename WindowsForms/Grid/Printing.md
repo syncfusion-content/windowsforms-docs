@@ -13,19 +13,19 @@ The GridControl has in-built support for printing. To print the contents of the 
 {% tabs %}
 {% highlight c# %}
 //Convert the Grid as printing document
-GridPrintDocument gpd = new GridPrintDocument(this.gridControl1);
+GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1);
 PrintDialog pd = new PrintDialog();
-pd.Document = gpd;
+pd.Document = gridPrintDocument;
 //Print the contents of the Grid
-gpd.Print();
+gridPrintDocument.Print();
 {% endhighlight %}
 {% highlight vb %}
 'Convert the Grid as printing document
-Dim gpd As New GridPrintDocument(Me.gridControl1)
+Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1)
 Dim pd As New PrintDialog()
-pd.Document = gpd
+pd.Document = gridPrintDocument
 'Print the contents of the Grid
-gpd.Print()
+gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 ![](Printing_images/Printing_img1.jpeg)
@@ -36,21 +36,21 @@ The [PrintPreviewDialog](https://msdn.microsoft.com/en-us/library/system.windows
 {% tabs %}
 {% highlight c# %}
 // Converting the grid to printable document
-GridPrintDocument gpd = new GridPrintDocument(this.gridControl1, true);
-PrintPreviewDialog ppd = new PrintPreviewDialog();
+GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
+PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
 //Set the Grid contents to the print preview document
-ppd.Document = gpd;
+printPreviewDialog.Document = gridPrintDocument;
 //Display the print preview dialog
-ppd.ShowDialog();
+printPreviewDialog.ShowDialog();
 {% endhighlight %}
 {% highlight vb %}
 ' Converting the grid to printable document
-Dim gpd As New GridPrintDocument(Me.gridControl1, True)
-Dim ppd As New PrintPreviewDialog()
+Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1, True)
+Dim printPreviewDialog As New PrintPreviewDialog()
 'Set the Grid contents to the print preview document
-ppd.Document = gpd
+printPreviewDialog.Document = gridPrintDocument
 'Display the print preview dialog
-ppd.ShowDialog()
+printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,23 +106,23 @@ All the columns of the grid can be printed with in a single page by enabling the
 {% tabs %}
 {% highlight c# %}
 //Create the Grid as printing document
-GridPrintDocumentAdv gpd = new GridPrintDocumentAdv(this.gridControl1);
+GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridControl1);
 PrintDialog pd = new PrintDialog();
 //Scale all columns to fit within a page
-gpd.ScaleColumnsToFitPage = true;
-pd.Document = gpd;
+gridPrintDocument.ScaleColumnsToFitPage = true;
+pd.Document = gridPrintDocument;
 //Print the contents of the Grid
-gpd.Print();           
+gridPrintDocument.Print();           
 {% endhighlight %}
 {% highlight vb %}
 'Create the Grid as printing document
-Dim gpd As New GridPrintDocumentAdv(Me.gridControl1)
+Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridControl1)
 Dim pd As New PrintDialog()
 'Scale all columns to fit within a page
-gpd.ScaleColumnsToFitPage = True
-pd.Document = gpd
+gridPrintDocument.ScaleColumnsToFitPage = True
+pd.Document = gridPrintDocument
 'Print the contents of the Grid
-gpd.Print()
+gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,25 +132,25 @@ The grid data will be fit to a single page or the minimal number of pages using 
 {% tabs %}
 {% highlight c# %}
 //Create the grid document for print
-GridPrintDocumentAdv gpd = new GridPrintDocumentAdv(this.gridControl1);
+GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridControl1);
 //Used to print all columns to fit within a page
-gpd.PrintColumnToFitPage = true;
+gridPrintDocument.PrintColumnToFitPage = true;
 // Printing All the Contents into a Single Page
-gpd.PagesToFit = 1;
+gridPrintDocument.PagesToFit = 1;
 PrintDialog pd = new PrintDialog();
-pd.Document = gpd;
-gpd.Print();           
+pd.Document = gridPrintDocument;
+gridPrintDocument.Print();           
 {% endhighlight %}
 {% highlight vb %}
 'Create the grid document for print
-Dim gpd As New GridPrintDocumentAdv(Me.gridControl1)
+Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridControl1)
 'Used to print all columns to fit within a page
-gpd.PrintColumnToFitPage = True
+gridPrintDocument.PrintColumnToFitPage = True
 ' Printing All the Contents into a Single Page
-gpd.PagesToFit = 1
+gridPrintDocument.PagesToFit = 1
 Dim pd As New PrintDialog()
-pd.Document = gpd
-gpd.Print()
+pd.Document = gridPrintDocument
+gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
@@ -172,23 +172,23 @@ The orientation of the printing layout can be changed to landscape by setting [L
 {% tabs %}
 {% highlight c# %}
 //Create the Grid as printing document
-GridPrintDocument gpd = new GridPrintDocument(this.gridControl1);
+GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1);
 //Print the page in landscape mode
-gpd.DefaultPageSettings.Landscape = true;            
+gridPrintDocument.DefaultPageSettings.Landscape = true;            
 PrintDialog pd = new PrintDialog();
-pd.Document = gpd;
+pd.Document = gridPrintDocument;
 //Print the contents of the Grid
-gpd.Print(); 
+gridPrintDocument.Print(); 
 {% endhighlight %}
 {% highlight vb %}
 'Create the Grid as printing document
-Dim gpd As New GridPrintDocument(Me.gridControl1)
+Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1)
 'Print the page in landscape mode
-gpd.DefaultPageSettings.Landscape = True
+gridPrintDocument.DefaultPageSettings.Landscape = True
 Dim pd As New PrintDialog()
-pd.Document = gpd
+pd.Document = gridPrintDocument
 'Print the contents of the Grid
-gpd.Print()
+gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
@@ -219,31 +219,31 @@ The [GridPrintOption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid
 {% tabs %}
 {% highlight c# %}
 List<Control> gridsToPrint = new List<Control>();
-foreach (Control cd in this.Controls)
+foreach (Control ctrl in this.Controls)
 {
-    if (cd is Control)
+    if (ctrl is Control)
     {
-        gridsToPrint.Add((Control)cd);
+        gridsToPrint.Add((Control)ctrl);
     }
 }
-MultiGridPrintDocument mgpd = new MultiGridPrintDocument(gridsToPrint);
-mgpd.GridPrintOption = MultiGridPrintDocument.GridPrintOptions.MultipleGridPrint;
-mgpd.ShowHeaderFooterOnAllPages = true;
+MultiGridPrintDocument multiGridPrintDocument = new MultiGridPrintDocument(gridsToPrint);
+multiGridPrintDocument.GridPrintOption = MultiGridPrintDocument.GridPrintOptions.MultipleGridPrint;
+multiGridPrintDocument.ShowHeaderFooterOnAllPages = true;
 PrintPreviewDialog printDialog = new PrintPreviewDialog();
-printDialog.Document = mgpd;
+printDialog.Document = multiGridPrintDocument;
 {% endhighlight %}
 {% highlight vb %}
 Dim gridsToPrint As New List(Of Control)()
-For Each cd As Control In Me.Controls
-    If TypeOf cd Is Control Then
-        gridsToPrint.Add(CType(cd, Control)
+For Each ctrl As Control In Me.Controls
+    If TypeOf ctrl Is Control Then
+        gridsToPrint.Add(CType(ctrl, Control)
     End If
-Next cd
-Dim mgpd As New MultiGridPrintDocument(gridsToPrint)
-mgpd.GridPrintOption = MultiGridPrintDocument.GridPrintOptions.MultipleGridPrint
-mgpd.ShowHeaderFooterOnAllPages = True
+Next ctrl
+Dim multiGridPrintDocument As New MultiGridPrintDocument(gridsToPrint)
+multiGridPrintDocument.GridPrintOption = MultiGridPrintDocument.GridPrintOptions.MultipleGridPrint
+multiGridPrintDocument.ShowHeaderFooterOnAllPages = True
 Dim printDialog As New PrintPreviewDialog()
-printDialog.Document = mgpd
+printDialog.Document = multiGridPrintDocument
 {% endhighlight %}
 {% endtabs %}
 
@@ -258,39 +258,39 @@ _&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_No&gt;\Window
 The grid can be print with the headers and footers by setting the [HeaderPrintStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~HeaderPrintStyleInfo.html) and [FooterPrintStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~FooterPrintStyleInfo.html) properties of the advanced GridPrintDocument.
 {% tabs %}
 {% highlight c# %}
-GridPrintDocumentAdv gpd = new GridPrintDocumentAdv(this.gridControl1);
-PrintPreviewDialog ppd = new PrintPreviewDialog();
-ppd.Document = gpd;
+GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridControl1);
+PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+printPreviewDialog.Document = gridPrintDocument;
 //Setting the height for header and footer
-gpd.HeaderHeight = 30;
-gpd.FooterHeight = 30;
-gpd.HeaderPrintStyleInfo.Text = "Syncfusion Software Private Ltd";
-gpd.FooterPrintStyleInfo.Text = "Time :" + DateTime.Now.TimeOfDay.ToString();
-gpd.HeaderPrintStyleInfo.TextColor = Color.Orange;
-gpd.HeaderPrintStyleInfo.Font.Bold = true;
-gpd.HeaderPrintStyleInfo.Font.Size = 20;
+gridPrintDocument.HeaderHeight = 30;
+gridPrintDocument.FooterHeight = 30;
+gridPrintDocument.HeaderPrintStyleInfo.Text = "Syncfusion Software Private Ltd";
+gridPrintDocument.FooterPrintStyleInfo.Text = "Time :" + DateTime.Now.TimeOfDay.ToString();
+gridPrintDocument.HeaderPrintStyleInfo.TextColor = Color.Orange;
+gridPrintDocument.HeaderPrintStyleInfo.Font.Bold = true;
+gridPrintDocument.HeaderPrintStyleInfo.Font.Size = 20;
 //Set the alignments 
-gpd.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center;
-gpd.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right;
-ppd.ShowDialog();
+gridPrintDocument.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center;
+gridPrintDocument.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right;
+printPreviewDialog.ShowDialog();
 {% endhighlight %}
 
 {% highlight vb %}
-Dim gpd As New GridPrintDocumentAdv(Me.gridControl1)
-Dim ppd As New PrintPreviewDialog()
-ppd.Document = gpd
+Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridControl1)
+Dim printPreviewDialog As New PrintPreviewDialog()
+printPreviewDialog.Document = gridPrintDocument
 'Setting the height for header and footer
-gpd.HeaderHeight = 30
-gpd.FooterHeight = 30
-gpd.HeaderPrintStyleInfo.Text = "Syncfusion Software Private Ltd"
-gpd.FooterPrintStyleInfo.Text = "Time :" & DateTime.Now.TimeOfDay.ToString()
-gpd.HeaderPrintStyleInfo.TextColor = Color.Orange
-gpd.HeaderPrintStyleInfo.Font.Bold = True
-gpd.HeaderPrintStyleInfo.Font.Size = 20
+gridPrintDocument.HeaderHeight = 30
+gridPrintDocument.FooterHeight = 30
+gridPrintDocument.HeaderPrintStyleInfo.Text = "Syncfusion Software Private Ltd"
+gridPrintDocument.FooterPrintStyleInfo.Text = "Time :" & DateTime.Now.TimeOfDay.ToString()
+gridPrintDocument.HeaderPrintStyleInfo.TextColor = Color.Orange
+gridPrintDocument.HeaderPrintStyleInfo.Font.Bold = True
+gridPrintDocument.HeaderPrintStyleInfo.Font.Size = 20
 'Set the alignments 
-gpd.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center
-gpd.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right
-ppd.ShowDialog()
+gridPrintDocument.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center
+gridPrintDocument.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right
+printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
@@ -335,7 +335,7 @@ The sample demonstrating the printing layout is given in the below location,<br/
 The row breaks and column breaks for each pages can be customized by using the [PrintInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrintInfo.html) property. This will provide the list of first row index and first column index of each pages while printing.
 {% tabs %}
 {% highlight c# %}
-private void btnPageBreak_Click(object sender, EventArgs e)
+private void PageBreak_Click(object sender, EventArgs e)
 {
     GridPrintDocument document = new GridPrintDocument(this.gridControl1);
     PrintPreviewDialog dialog = new PrintPreviewDialog();
@@ -358,7 +358,7 @@ private void Document_PrintPage(object sender, System.Drawing.Printing.PrintPage
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Sub btnPageBreak_Click(ByVal sender As Object, ByVal e As EventArgs)
+Private Sub PageBreak_Click(ByVal sender As Object, ByVal e As EventArgs)
     Dim document As New GridPrintDocument(Me.gridControl1)
     Dim dialog As New PrintPreviewDialog()
     AddHandler document.PrintPage, AddressOf Document_PrintPage1
@@ -528,14 +528,14 @@ End Sub
 To print only the selected range of cells from the grid, set the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) value as `Selection`. It will print the selected range of cells or the selected page from the GridControl. 
 {% tabs %}
 {% highlight c# %}
-GridPrintDocument gpd = new GridPrintDocument(this.gridControl1, true);
+GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
 //To print the selected range of cells
-gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection;
+gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection;
 {% endhighlight %}
 {% highlight vb %}
-Dim gpd As New GridPrintDocument(Me.gridControl1, True)
+Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1, True)
 'To print the selected range of cells
-gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection
+gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection
 {% endhighlight %}
 {% endtabs %}
 The `PrintRange` enumeration has the following printing options,
@@ -551,24 +551,24 @@ N> By default the [PrintRange](https://msdn.microsoft.com/en-us/library/system.d
 The needed pages in the grid can only be printed by setting the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) property value as `SomePages`.
 {% tabs %}
 {% highlight c# %}
-GridPrintDocument gpd = new GridPrintDocument(this.gridControl1, true);
-PrintPreviewDialog ppd = new PrintPreviewDialog();
-ppd.Document = gpd;
+GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
+PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+printPreviewDialog.Document = gridPrintDocument;
 //To print the specific range of pages
-gpd.PrinterSettings.FromPage = 2;
-gpd.PrinterSettings.ToPage = 3;
-gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.SomePages;
-ppd.ShowDialog();
+gridPrintDocument.PrinterSettings.FromPage = 2;
+gridPrintDocument.PrinterSettings.ToPage = 3;
+gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.SomePages;
+printPreviewDialog.ShowDialog();
 {% endhighlight %}
 {% highlight vb %}
-Dim gpd As New GridPrintDocument(Me.gridControl1, True)
-Dim ppd As New PrintPreviewDialog()
-ppd.Document = gpd
+Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1, True)
+Dim printPreviewDialog As New PrintPreviewDialog()
+printPreviewDialog.Document = gridPrintDocument
 'To print the specific range of pages
-gpd.PrinterSettings.FromPage = 2
-gpd.PrinterSettings.ToPage = 3
-gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.SomePages
-ppd.ShowDialog()
+gridPrintDocument.PrinterSettings.FromPage = 2
+gridPrintDocument.PrinterSettings.ToPage = 3
+gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.SomePages
+printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
@@ -586,9 +586,9 @@ public class MyPrintDocument : GridPrintDocument
         _grid = grid;
     }
 
-    protected override void OnPrintPage(System.Drawing.Printing.PrintPageEventArgs ev)
+    protected override void OnPrintPage(System.Drawing.Printing.PrintPageEventArgs e)
     {
-        base.OnPrintPage(ev);
+        base.OnPrintPage(e);
         _grid.PrintingMode = true;
 
         //Gets Top Row Index.
@@ -616,8 +616,8 @@ Public Class MyPrintDocument
         _grid = grid
     End Sub
 
-    Protected Overrides Sub OnPrintPage(ByVal ev As System.Drawing.Printing.PrintPageEventArgs)
-        MyBase.OnPrintPage(ev)
+    Protected Overrides Sub OnPrintPage(ByVal e As System.Drawing.Printing.PrintPageEventArgs)
+        MyBase.OnPrintPage(e)
         _grid.PrintingMode = True
 
         'Gets Top Row Index.
