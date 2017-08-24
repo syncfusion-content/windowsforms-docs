@@ -165,7 +165,7 @@ Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles ti
 
         ' Convert node as polygon
 
-        Dim poly As Syncfusion.Windows.Forms.Diagram.Polygon = CType(IIf(TypeOf globalNode Is Syncfusion.Windows.Forms.Diagram.Polygon, globalNode, Nothing), Syncfusion.Windows.Forms.Diagram.Polygon)
+        Dim poly As Syncfusion.Windows.Forms.Diagram.Polygon = CType(IIf(TypeOf globalNode Is Syncfusion.Windows.Forms.Diagram.Polygon, globelNode, Nothing), Syncfusion.Windows.Forms.Diagram.Polygon)
 
         Dim r As Random = New Random()
 

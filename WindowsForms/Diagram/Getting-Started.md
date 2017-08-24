@@ -1847,7 +1847,7 @@ Code Snippet</th></tr>
 <td>
 SpaceAcross</td><td>
 Positions the selected nodes for equal horizontal spacing</td><td>
-diagram1.SpaceAcross();</td></tr>
+diagram1.SpaceAccross();</td></tr>
 <tr>
 <td>
 SpaceDown</td><td>
