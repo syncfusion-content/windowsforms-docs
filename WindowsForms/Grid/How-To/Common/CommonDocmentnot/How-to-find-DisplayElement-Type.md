@@ -15,11 +15,11 @@ You can find the type of particular DisplayElement using the code below.
 {% highlight c# %}
 
 //Accesses the type of display element.
-Console.WriteLine(this.gridGroupingControl1.Table.DisplayElements[rowindex].Kind);
+Console.WriteLine(this.gridGroupingControl1.Table.DisplayElements[rowIndex].Kind);
 {% endhighlight  %}
 
 {% highlight vb %}
 
 'Accesses the type of display element.
-Console.WriteLine(Me.gridGroupingControl1.Table.DisplayElements(rowindex).Kind)
+Console.WriteLine(Me.gridGroupingControl1.Table.DisplayElements(rowIndex).Kind)
 {% endhighlight  %}
