@@ -18,12 +18,12 @@ This can be achieved by using TextBox.SelectionLength property of GridTextBoxCel
 
 private void gridControl1_CurrentCellKeyPress(object sender, KeyPressEventArgs e)
 {
-   GridTextBoxCellRenderer cr = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
+   GridTextBoxCellRenderer cellRenderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
    if(e.KeyChar != Convert.ToChar(Keys.Back) 
-    && cr.TextBox.SelectionLength == 0)
+    && cellRenderer.TextBox.SelectionLength == 0)
    {
 	   //Programmatically selects One char.
-       cr.TextBox.SelectionLength = 1; 
+       cellRenderer.TextBox.SelectionLength = 1; 
    }
 }
 
@@ -42,11 +42,11 @@ private void gridControl1_CurrentCellKeyDown(object sender, System.Windows.Forms
 {% highlight vb %}
 
 Private Sub gridControl1_CurrentCellKeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs)
-    Dim cr As GridTextBoxCellRenderer = CType(IIf(TypeOf Me.gridControl1.CurrentCell.Renderer Is GridTextBoxCellRenderer, Me.gridControl1.CurrentCell.Renderer, Nothing), GridTextBoxCellRenderer)
+    Dim cellRenderer As GridTextBoxCellRenderer = CType(IIf(TypeOf Me.gridControl1.CurrentCell.Renderer Is GridTextBoxCellRenderer, Me.gridControl1.CurrentCell.Renderer, Nothing), GridTextBoxCellRenderer)
 
 'Programmatically selects One char.
-        If e.KeyChar &lt;&gt; Convert.ToChar(Keys.Back) AndAlso cr.TextBox.SelectionLength = 0 Then
-cr.TextBox.SelectionLength = 1 
+        If e.KeyChar &lt;&gt; Convert.ToChar(Keys.Back) AndAlso cellRenderer.TextBox.SelectionLength = 0 Then
+cellRenderer.TextBox.SelectionLength = 1 
         End If
 End Sub
 

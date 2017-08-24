@@ -66,13 +66,13 @@ public class GridTableFilterBarCellModel1: GridTableFilterBarCellModel
 
     public override GridCellRendererBase CreateRenderer(GridControlBase control)
     {
-        return new Cellrenderer(control, this); 
+        return new CellRenderer(control, this); 
     }
 }
 
-public class Cellrenderer : GridTableFilterBarCellRenderer
+public class CellRenderer : GridTableFilterBarCellRenderer
 {
-    public Cellrenderer(GridControlBase grid, GridCellModelBase cellModel): base(grid , cellModel)
+    public CellRenderer(GridControlBase grid, GridCellModelBase cellModel): base(grid , cellModel)
     {
 
     }
@@ -85,7 +85,7 @@ public class Cellrenderer : GridTableFilterBarCellRenderer
            }
     }
 
-	//Overridse ListBoxMouseUP method to call Customized Select method instead of the usual 'Select' method.
+	//Overrides ListBoxMouseUP method to call Customized Select method instead of the usual 'Select' method.
     protected override void ListBoxMouseUp(object sender, MouseEventArgs e)
     {
         CurrentCell.CloseDropDown(PopupCloseType.Done);
@@ -138,11 +138,11 @@ Public Class GridTableFilterBarCellModel1: Inherits GridTableFilterBarCellModel
        End Sub 
 
        Public Overrides Function CreateRenderer(ByVal control As GridControlBase) As GridCellRendererBase 
-            Return New Cellrenderer(control, Me) 
+            Return New CellRenderer(control, Me) 
        End Function 
 End Class 
 
-Public Class Cellrenderer : Inherits GridTableFilterBarCellRenderer 
+Public Class CellRenderer : Inherits GridTableFilterBarCellRenderer 
            Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridCellModelBase) 
                  MyBase.New(grid, cellModel) 
            End Sub 
