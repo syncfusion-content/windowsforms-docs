@@ -17,8 +17,8 @@ To add a filter condition, add a RecordFilterDescriptor to the Engine.TableDescr
 {% highlight C# %}
 
 // Filter on [D] = d1
-RecordFilterDescriptor rfd = new RecordFilterDescriptor("[D] LIKE 'd1'");
-this.groupingEngine.TableDescriptor.RecordFilters.Add(rfd);
+RecordFilterDescriptor recordFilterDescriptor = new RecordFilterDescriptor("[D] LIKE 'd1'");
+this.groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
 
 {% endhighlight %}
 
@@ -26,7 +26,7 @@ this.groupingEngine.TableDescriptor.RecordFilters.Add(rfd);
 
  
 ' Filter on [D] = d1
-Dim rfd As New RecordFilterDescriptor("[D] LIKE 'd1'")
-Me.groupingEngine.TableDescriptor.RecordFilters.Add(rfd)
+Dim recordFilterDescriptor As New RecordFilterDescriptor("[D] LIKE 'd1'")
+Me.groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
 
 {% endhighlight %}

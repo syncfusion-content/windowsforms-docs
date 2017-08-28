@@ -991,7 +991,7 @@ numericCellType.CellType = GridCellTypeName.NumericUpDown;
 
 GridNumericUpDownCellInfo numeric = new GridNumericUpDownCellInfo();
 
-// Represents the first value of the NumericUpDown celltype.
+// Represents the first value of the NumericUpDown cell type.
 numeric.StartValue = 5;
 
 // Represents the maximum value.
@@ -1020,7 +1020,7 @@ numericCellType.CellType = GridCellTypeName.NumericUpDown
 
 Dim numeric As New GridNumericUpDownCellInfo()
 
-' Represents the first value of the NumericUpDown celltype.
+' Represents the first value of the NumericUpDown cell type.
 numeric.StartValue = 5
 
 ' Represents the maximum value.

@@ -269,7 +269,7 @@ Dim countries() As String = {"Australia", "Canada", "France", "Germany", "United
 Dim states1() As String = {"New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria"}
 Dim states2() As String = {"Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec"}
 Dim states3() As String = {"Charente Maritime", "Essonne", "Garonne (Haute)", "Gers"}
-Dim states4() As String = {"Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland"}
+Dim states4() As String = {"Bayern Munich", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland"}
 Dim states5() As String = {"England"}
 Dim states6() As String = {"New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina"}
 
