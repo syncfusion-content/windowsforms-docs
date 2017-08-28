@@ -16,9 +16,9 @@ Essential Grouping lets you add your own functions to a function library which c
 {% highlight C# %}
  
 // Step 1
-// Add function named New_Function that uses a delegate named ComputeFunc to define a custom calculation.
+// Add function named New_Function that uses a delegate named ComputeFunction to define a custom calculation.
 ExpressionFieldEvaluator evaluator = this.groupingEngine.TableDescriptor.ExpressionFieldEvaluator;
-evaluator.AddFunction("New_Function", new ExpressionFieldEvaluator.LibraryFunction(ComputeFunc));
+evaluator.AddFunction("New_Function", new ExpressionFieldEvaluator.LibraryFunction(ComputeFunction));
  
 // Sample usage in an Expression column.
 this.groupingEngine.TableDescriptor.ExpressionFields.Add("test");
@@ -27,8 +27,8 @@ this.groupingEngine.TableDescriptor.ExpressionFields["test"].Expression = "New_F
 //...
  
 // Step 2
-// Define ComputeFunc that returns the absolute value of the 1st arg minus 2 * the 2nd arg.
-public string ComputeFunc(string s)
+// Define ComputeFunction that returns the absolute value of the 1st arg minus 2 * the 2nd arg.
+public string ComputeFunction(string s)
 {
 // Get the list delimiter (for en-us, it is a comma).
 char comma = Convert.ToChar(this.gridGroupingControl1.Culture.TextInfo.ListSeparator);
@@ -50,17 +50,17 @@ return "";
 {% highlight vbnet %}
  
 ' Step 1
-' Add function named New_Function that uses a delegate named ComputeFunc to define a custom calculation.
+' Add function named New_Function that uses a delegate named ComputeFunction to define a custom calculation.
 Dim evaluator As ExpressionFieldEvaluator = Me.groupingEngine.TableDescriptor.ExpressionFieldEvaluator
-evaluator.AddFunction("New_Function", New ExpressionFieldEvaluator.LibraryFunction(ComputeFunc))
+evaluator.AddFunction("New_Function", New ExpressionFieldEvaluator.LibraryFunction(ComputeFunction))
  
 ' Sample usage in an Expression column.
 Me.groupingEngine.TableDescriptor.ExpressionFields.Add("test")
 Me.groupingEngine.TableDescriptor.ExpressionFields("test").Expression = "New_Function([Col1], [Col2])"
  
 ' Step 2
-' Define ComputeFunc that returns the absolute value of the 1st arg minus 2 * the 2nd arg.
-Public Function ComputeFunc(ByVal s As String) As String
+' Define ComputeFunction that returns the absolute value of the 1st arg minus 2 * the 2nd arg.
+Public Function ComputeFunction(ByVal s As String) As String
  
 ' Get the list delimiter (for en-us, it is a comma).
 Dim comma As Char = Convert.ToChar(Me.gridGroupingControl1.Culture.TextInfo.ListSeparator)
@@ -75,7 +75,7 @@ Return Math.Abs((arg1 - 2 * arg2)).ToString()
 End If
 Return ""
  
-' ComputeFunc
+' ComputeFunction
 End Function  
 
 {% endhighlight %}

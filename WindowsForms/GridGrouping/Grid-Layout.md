@@ -27,37 +27,37 @@ Every header in a Stacked Header Row is defined by [GridStackedHeaderDescriptor]
 // Step 1: Creating StackedHeaderDescriptor for adding stacked columns
 // “header1” denotes the name of the GridStackedHeaderDescriptor
 // “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
-GridStackedHeaderDescriptor shd = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
+GridStackedHeaderDescriptor stackedHeaderDescriptor = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
 
 // Step 2: Adding visible columns to the StackedHeaderDescriptor
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("EmployeeID"));
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("FirstName"));
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("LastName"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("EmployeeID"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("FirstName"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("LastName"));
 
 // Step 3: Adding StackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-GridStackedHeaderRowDescriptor shrd = new GridStackedHeaderRowDescriptor("Row1",
-    new GridStackedHeaderDescriptor[] { shd });
+GridStackedHeaderRowDescriptor stackedHeaderRowDescriptor = new GridStackedHeaderRowDescriptor("Row1",
+    new GridStackedHeaderDescriptor[] { stackedHeaderDescriptor });
 
 // Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows
-this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd);
+this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor);
 
 {% endhighlight %}
 {% highlight vb %}
 ' Step 1: Creating StackedHeaderDescriptor for adding stacked columns
 ' “header1” denotes the name of the GridStackedHeaderDescriptor
 ' “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
-Dim shd As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
+Dim stackedHeaderDescriptor As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
 
 ' Step 2: Adding visible columns to the StackedHeaderDescriptor
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("EmployeeID"))
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("FirstName"))
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("LastName"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("EmployeeID"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("FirstName"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("LastName"))
 
 ' Step 3: Adding StackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-Dim shrd As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { shd })
+Dim stackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { stackedHeaderDescriptor })
 
 ' Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows
-Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd)
+Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor)
 
 {% endhighlight %}
 {% endtabs %}
@@ -97,13 +97,13 @@ The stacked headers can be added through code by using the below method,
 // Step 1: Creating StackedHeaderDescriptor for adding stacked columns
 // “header1” denotes the name of the GridStackedHeaderDescriptor
 // “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
-GridStackedHeaderDescriptor shd = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
+GridStackedHeaderDescriptor stackedHeaderDescriptor = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
 GridStackedHeaderDescriptor shd1 = new GridStackedHeaderDescriptor("header2", "StackedHeader2");
 
 // Step 2: Adding visible columns to the StackedHeaderDescriptor
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("EmployeeID"));
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("FirstName"));
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("LastName"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("EmployeeID"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("FirstName"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("LastName"));
 
 shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Title"));
 shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Address"));
@@ -111,11 +111,11 @@ shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("City"));
 shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Country"));
 
 // Step 3: Adding StackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-GridStackedHeaderRowDescriptor shrd = new GridStackedHeaderRowDescriptor("Row1",
-    new GridStackedHeaderDescriptor[] { shd, shd1 });
+GridStackedHeaderRowDescriptor stackedHeaderRowDescriptor = new GridStackedHeaderRowDescriptor("Row1",
+    new GridStackedHeaderDescriptor[] { stackedHeaderDescriptor, shd1 });
 
 // Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows
-this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd);
+this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor);
 
 // Display Stacked Headers 
 this.gridGroupingControl1.TopLevelGroupOptions.ShowStackedHeaders = true;
@@ -126,13 +126,13 @@ this.gridGroupingControl1.TopLevelGroupOptions.ShowStackedHeaders = true;
 ' “header1” denotes the name of the GridStackedHeaderDescriptor
 ' “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
 
-Dim shd As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
+Dim stackedHeaderDescriptor As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
 Dim shd1 As New GridStackedHeaderDescriptor("header2", "StackedHeader2")
 
 ' Step 2: Adding visible columns to the StackedHeaderDescriptor
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("EmployeeID"))
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("FirstName"))
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("LastName"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("EmployeeID"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("FirstName"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("LastName"))
 
 shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Title"))
 shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Address"))
@@ -140,10 +140,10 @@ shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("City"))
 shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Country"))
 
 ' Step 3: Adding StackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-Dim shrd As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { shd, shd1 })
+Dim stackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { stackedHeaderDescriptor, shd1 })
 
 ' Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows
-Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd)
+Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor)
 
 ' Display Stacked Headers 
 Me.gridGroupingControl1.TopLevelGroupOptions.ShowStackedHeaders = True
@@ -161,25 +161,25 @@ Users can also display the stacked headers for the child groups as well as the n
 // Step 1: Creating StackedHeaderDescriptor for adding stacked columns
 // “header1” denotes the name of the GridStackedHeaderDescriptor
 // “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
-GridStackedHeaderDescriptor shd = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
+GridStackedHeaderDescriptor stackedHeaderDescriptor = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
 GridStackedHeaderDescriptor shd1 = new GridStackedHeaderDescriptor("header2", "StackedHeader2");
 
 // Step 2: Adding visible columns to the StackedHeaderDescriptor
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("CustomerID"));
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("OrderDate"));
-shd.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("OrderID"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("CustomerID"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("OrderDate"));
+stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("OrderID"));
 
 shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShipAddress"));
 shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShipName"));
 shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShippedDate"));
 
 // Step 3: Adding GridStackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-GridStackedHeaderRowDescriptor shrd = new GridStackedHeaderRowDescriptor("Row1",
-    new GridStackedHeaderDescriptor[] { shd, shd1 });
+GridStackedHeaderRowDescriptor stackedHeaderRowDescriptor = new GridStackedHeaderRowDescriptor("Row1",
+    new GridStackedHeaderDescriptor[] { stackedHeaderDescriptor, shd1 });
 
 
 // Step 4: Add the GridStackedHeaderRowDescriptor collection to the StackedHeaderRows of the Nested TableDescriptor.
-this.gridGroupingControl1.GetTableDescriptor("Orders").StackedHeaderRows.Add(shrd);
+this.gridGroupingControl1.GetTableDescriptor("Orders").StackedHeaderRows.Add(stackedHeaderRowDescriptor);
 
 // Display Stacked Headers for the Child Group.
 this.gridGroupingControl1.ChildGroupOptions.ShowStackedHeaders = true;
@@ -190,24 +190,24 @@ this.gridGroupingControl1.ChildGroupOptions.ShowStackedHeaders = true;
 ' “header1” denotes the name of the GridStackedHeaderDescriptor
 ' “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
 
-Dim shd As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
+Dim stackedHeaderDescriptor As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
 Dim shd1 As New GridStackedHeaderDescriptor("header2", "StackedHeader2")
 
 ' Step 2: Adding visible columns to the StackedHeaderDescriptor
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("CustomerID"))
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("OrderDate"))
-shd.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("OrderID"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("CustomerID"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("OrderDate"))
+stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("OrderID"))
 
 shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShipAddress"))
 shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShipName"))
 shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShippedDate"))
 
 ' Step 3: Adding GridStackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-Dim shrd As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { shd, shd1 })
+Dim stackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { stackedHeaderDescriptor, shd1 })
 
 
 ' Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows of the Nested TableDescriptor.
-Me.gridGroupingControl1.GetTableDescriptor("Orders").StackedHeaderRows.Add(shrd)
+Me.gridGroupingControl1.GetTableDescriptor("Orders").StackedHeaderRows.Add(stackedHeaderRowDescriptor)
 
 ' Display Stacked Headers for the Child Group.
 Me.gridGroupingControl1.ChildGroupOptions.ShowStackedHeaders = True
@@ -368,11 +368,11 @@ User can show or hide the columns of a stacked header in a grid by using the [Fi
 {% tabs %}
 {% highlight c# %}
 // Adding FieldChooser support to the GridGroupingControl
-FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);
+FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1);
 {% endhighlight %}
 {% highlight vb %}
 ' Adding FieldChooser support to the GridGroupingControl
-Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
@@ -387,14 +387,14 @@ By default, `FieldChooser Dialog` will be loaded with the inner columns along wi
 
 {% tabs %}
 {% highlight c# %}
-FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);
+FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1);
 // Do not display the inner columns of stacked header in FieldChooser
-fchooser.EnableColumnsInView = false;
+fieldChooser.EnableColumnsInView = false;
 {% endhighlight %}
 {% highlight vb %}
-Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 ' Do not display the inner columns of stacked header in FieldChooser
-fchooser.EnableColumnsInView = False
+fieldChooser.EnableColumnsInView = False
 {% endhighlight %}
 {% endtabs %}
 ![](Grid-Layout_images/Grid-Layout_img15.png)
@@ -502,23 +502,23 @@ csd3.Range = GridRangeInfo.Cells(1, 2, 1, 2)
 {% tabs %}
 {% highlight c# %}
 // Create object for GridColumnSetDescriptor
-GridColumnSetDescriptor csd = new GridColumnSetDescriptor();
+GridColumnSetDescriptor columnSetDescriptor = new GridColumnSetDescriptor();
 // Add the column span descriptor to the created 
 // columns set descriptor
-csd.ColumnSpans.Add(csd0);
-csd.ColumnSpans.Add(csd1);
-csd.ColumnSpans.Add(csd2);
-csd.ColumnSpans.Add(csd3);
+columnSetDescriptor.ColumnSpans.Add(csd0);
+columnSetDescriptor.ColumnSpans.Add(csd1);
+columnSetDescriptor.ColumnSpans.Add(csd2);
+columnSetDescriptor.ColumnSpans.Add(csd3);
 {% endhighlight %}
 {% highlight vb %}
 ' Create object for GridColumnSetDescriptor
-Dim csd As New GridColumnSetDescriptor()
+Dim columnSetDescriptor As New GridColumnSetDescriptor()
 ' Add the column span descriptor to the created 
 ' columns set descriptor
-csd.ColumnSpans.Add(csd0)
-csd.ColumnSpans.Add(csd1)
-csd.ColumnSpans.Add(csd2)
-csd.ColumnSpans.Add(csd3) 
+columnSetDescriptor.ColumnSpans.Add(csd0)
+columnSetDescriptor.ColumnSpans.Add(csd1)
+columnSetDescriptor.ColumnSpans.Add(csd2)
+columnSetDescriptor.ColumnSpans.Add(csd3) 
 {% endhighlight %}
 {% endtabs %}
 
@@ -527,11 +527,11 @@ csd.ColumnSpans.Add(csd3)
 {% tabs %}
 {% highlight c# %}
 // Add the column set descriptor to the ColumnSets property
-this.gridGroupingControl1.TableDescriptor.ColumnSets.Add(csd);
+this.gridGroupingControl1.TableDescriptor.ColumnSets.Add(columnSetDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 ' Add the column set descriptor to the ColumnSets property 
-Me.gridGroupingControl1.TableDescriptor.ColumnSets.Add(csd)
+Me.gridGroupingControl1.TableDescriptor.ColumnSets.Add(columnSetDescriptor)
 {% endhighlight %}
 {% endtabs %}
 
@@ -576,11 +576,11 @@ On enabling the FieldChooser, a dialog box will be opened when right clicked on 
 {% tabs %}
 {% highlight c# %}
 // Adding FieldChooser support to the GridGroupingControl
-FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);
+FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1);
 {% endhighlight %}
 {% highlight vb %}
 ' Adding FieldChooser support to the GridGroupingControl
-Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
@@ -591,8 +591,8 @@ FieldChooser events are used to customize FieldChooser dialog box. For changing 
 
 {% tabs %}
 {% highlight c# %}
-FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);
-fchooser.Grid.FieldChooserShowing += Grid_FieldChooserShowing;
+FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1);
+fieldChooser.Grid.FieldChooserShowing += Grid_FieldChooserShowing;
 
 void Grid_FieldChooserShowing(object sender, Syncfusion.Windows.Forms.Grid.FieldChooserShowingEventArgs e)
 {
@@ -601,8 +601,8 @@ void Grid_FieldChooserShowing(object sender, Syncfusion.Windows.Forms.Grid.Field
 }
 {% endhighlight %}
 {% highlight vb %}
-Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
-fchooser.Grid.FieldChooserShowing += Grid_FieldChooserShowing
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
+fieldChooser.Grid.FieldChooserShowing += Grid_FieldChooserShowing
 Private Sub Grid_FieldChooserShowing(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.FieldChooserShowingEventArgs)
     'Setting the caption for FieldChooser dialog
     e.Caption = "Syncfusion"
@@ -619,15 +619,15 @@ By default, the GridGroupingControl will update the changes in the visibility of
 {% tabs %}
 {% highlight c# %}
 // Adding FieldChooser support to the GridGroupingControl
-FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);
+FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1);
 // Update while closing the FieldChooser Dialog
-fchooser.DeferLayoutUpdate = true;
+fieldChooser.DeferLayoutUpdate = true;
 {% endhighlight %}
 {% highlight vb %}
 ' Adding FieldChooser support to the GridGroupingControl
-Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 ' Update while closing the FieldChooser Dialog
-fchooser.DeferLayoutUpdate = True
+fieldChooser.DeferLayoutUpdate = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -660,8 +660,8 @@ Users can restrict the closing of FieldChooser dialog by using the FieldChooserC
 
 {% tabs %}
 {% highlight c# %}
-FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);
-fchooser.Grid.FieldChooserClosing += Grid_FieldChooserClosing;
+FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1);
+fieldChooser.Grid.FieldChooserClosing += Grid_FieldChooserClosing;
 void Grid_FieldChooserClosing(object sender, Syncfusion.Windows.Forms.Grid.FieldChooserClosingEventArgs e)
 {
 //Add required condition
@@ -671,8 +671,8 @@ if (result1 == System.Windows.Forms.DialogResult.No)
 }
 {% endhighlight %}
 {% highlight vb %}
-Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
-fchooser.Grid.FieldChooserClosing += Grid_FieldChooserClosing
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
+fieldChooser.Grid.FieldChooserClosing += Grid_FieldChooserClosing
 Private Sub Grid_FieldChooserClosing(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.FieldChooserClosingEventArgs)
 'Add required condition
 Dim result1 As DialogResult = MessageBox.Show("Do you want to close the FieldChooser dialog?", "Syncfusion", MessageBoxButtons.YesNo)
@@ -706,7 +706,7 @@ this.gridGroupingControl1.TableDescriptor.Columns.Clone();
 collection.Remove("Name3");
 
 //Passes the collection as an argument to the Field Chooser object.
-FieldChooser fChooser = new FieldChooser(this.gridGroupingControl1, collection);
+FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1, collection);
 {% endhighlight %}
 {% highlight vb %}
 'Removes Visible Columns.
@@ -720,7 +720,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns.Clone()
 collection.Remove("Name3")
 
 'Passes the collection as an argument to the Field Chooser object.
-Dim fChooser As New FieldChooser(Me.gridGroupingControl1, collection)
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1, collection)
 {% endhighlight %}
 {% endtabs %}
 
@@ -730,18 +730,18 @@ To unwire FieldChooser from the GridGroupingControl, make use of the [UnWireGrid
 {% tabs %}
 {% highlight c# %}
 // Adding FieldChooser support to the GridGroupingControl
-FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1);
+FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1);
 
 // Disables the FieldChooser support for the added GridGroupingControl
-fchooser.UnWireGrid();
+fieldChooser.UnWireGrid();
 
 {% endhighlight %}
 {% highlight vb %}
 ' Adding FieldChooser support to the GridGroupingControl
-Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 
 ' Disables the FieldChooser support for the added GridGroupingControl
-fchooser.UnWireGrid()
+fieldChooser.UnWireGrid()
 
 {% endhighlight %}
 {% endtabs %}
@@ -809,11 +809,11 @@ GridGroupingControl provides support to freeze caption row to make sure it stays
 {% tabs %}
 {% highlight c# %}
 // Freezes the caption row
-this.gridgroupingcontrol.FreezeCaption = true
+this.gridGroupingControl.FreezeCaption = true
 {% endhighlight %}
 {% highlight vb %}
 'Freezes the caption row
-Me.gridgroupingcontrol.FreezeCaption = True
+Me.gridGroupingControl.FreezeCaption = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -840,14 +840,14 @@ void Form1_ResizeEnd(object sender, EventArgs e)
              oGrid.TableModel.ResetColHiddenEntries();
              oGrid.TableDescriptor.FrozenColumn = "";
              oGrid.TableControl.SetCurrentHScrollPixelPos(1);
-             notfrozenview = true; 
-             frozenview = false;
+             notFrozenView = true; 
+             frozenView = false;
          }
          else if (buttonClick)
          {
                oGrid.TableDescriptor.FrozenColumn = col.Name;
-               frozenview = true;
-               notfrozenview = false;
+               frozenView = true;
+               notFrozenView = false;
          }
     }
 }
@@ -857,18 +857,18 @@ void TableControl_HScrollPixelPosChanging(object sender, GridScrollPositionChang
 
     int fieldIndex = Convert.ToInt32(textBox1.Text);
     var col = oGrid.TableDescriptor.VisibleColumns[fieldIndex - 1];
-    int colpos = 0;
+    int columnPosition = 0;
     int pixelDelta;
-    oGrid.TableControl.HScrollPixelPosToColIndex(e.ScrollPosition, out colpos, out pixelDelta);
+    oGrid.TableControl.HScrollPixelPosToColIndex(e.ScrollPosition, out columnPosition, out pixelDelta);
     var LeftmostPixel=oGrid.TableControl.GetHScrollPixelMinimum();      
     var last = oGrid.TableControl.ViewLayout.LastVisibleCol;
     var vCount = oGrid.TableControl.ViewLayout.VisibleColumnsList.Count;
-    if (colpos==0)
+    if (columnPosition==0)
     {
         e.Cancel = true;
     }
 
-    if (notfrozenview && buttonClick && last==fieldIndex+1)
+    if (notFrozenView && buttonClick && last==fieldIndex+1)
     {
         for (int i = 1; i <= fieldIndex-(vCount-3); i++)
         {
@@ -879,7 +879,7 @@ void TableControl_HScrollPixelPosChanging(object sender, GridScrollPositionChang
         unfreeze = true;
 
     }
-    if (colpos == fieldIndex + 1 && LeftmostPixel == e.ScrollPosition && unfreeze && !frozenview && buttonClick)
+    if (columnPosition == fieldIndex + 1 && LeftmostPixel == e.ScrollPosition && unfreeze && !frozenView && buttonClick)
     {
         oGrid.TableModel.ResetColHiddenEntries();
         oGrid.TableDescriptor.FrozenColumn = "";
@@ -900,12 +900,12 @@ Private Sub Form1_ResizeEnd(ByVal sender As Object, ByVal e As EventArgs)
              oGrid.TableModel.ResetColHiddenEntries()
              oGrid.TableDescriptor.FrozenColumn = ""
              oGrid.TableControl.SetCurrentHScrollPixelPos(1)
-             notfrozenview = True
-             frozenview = False
+             notFrozenView = True
+             frozenView = False
          ElseIf buttonClick Then
                oGrid.TableDescriptor.FrozenColumn = col.Name
-               frozenview = True
-               notfrozenview = False
+               frozenView = True
+               notFrozenView = False
          End If
     End If
 End Sub
@@ -914,17 +914,17 @@ Private Sub TableControl_HScrollPixelPosChanging(ByVal sender As Object, ByVal e
 
     Dim fieldIndex As Integer = Convert.ToInt32(textBox1.Text)
     Dim col = oGrid.TableDescriptor.VisibleColumns(fieldIndex - 1)
-    Dim colpos As Integer = 0
+    Dim columnPosition As Integer = 0
     Dim pixelDelta As Integer
-    oGrid.TableControl.HScrollPixelPosToColIndex(e.ScrollPosition, colpos, pixelDelta)
+    oGrid.TableControl.HScrollPixelPosToColIndex(e.ScrollPosition, columnPosition, pixelDelta)
     Dim LeftmostPixel =oGrid.TableControl.GetHScrollPixelMinimum()
     Dim last = oGrid.TableControl.ViewLayout.LastVisibleCol
     Dim vCount = oGrid.TableControl.ViewLayout.VisibleColumnsList.Count
-    If colpos=0 Then
+    If columnPosition=0 Then
         e.Cancel = True
     End If
 
-    If notfrozenview AndAlso buttonClick AndAlso last Is fieldIndex+1 Then
+    If notFrozenView AndAlso buttonClick AndAlso last Is fieldIndex+1 Then
         For i As Integer = 1 To fieldIndex-(vCount-3)
             Dim hid As New GridColHidden(i)
             oGrid.TableModel.ColHiddenEntries.Add(hid)
@@ -933,7 +933,7 @@ Private Sub TableControl_HScrollPixelPosChanging(ByVal sender As Object, ByVal e
         unfreeze = True
 
     End If
-    If colpos = fieldIndex + 1 AndAlso LeftmostPixel Is e.ScrollPosition AndAlso unfreeze AndAlso (Not frozenview) AndAlso buttonClick Then
+    If columnPosition = fieldIndex + 1 AndAlso LeftmostPixel Is e.ScrollPosition AndAlso unfreeze AndAlso (Not frozenView) AndAlso buttonClick Then
         oGrid.TableModel.ResetColHiddenEntries()
         oGrid.TableDescriptor.FrozenColumn = ""
         unfreeze = False
