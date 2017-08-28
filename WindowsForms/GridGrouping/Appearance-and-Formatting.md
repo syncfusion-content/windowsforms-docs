@@ -118,38 +118,38 @@ To set the appearance for the child table, get the table descriptor of the parti
 {% tabs %}
 {% highlight c# %}
 
-// Get the TableDescrptor for the Child Table named "Orders".
-GridTableDescriptor gtd = this.gridGroupingControl1.GetTableDescriptor("Orders");
+// Get the TableDescriptor for the Child Table named "Orders".
+GridTableDescriptor tableDescriptor = this.gridGroupingControl1.GetTableDescriptor("Orders");
 
 //Record Field Cell styles.
-gtd.Appearance.AnyRecordFieldCell.BackColor = Color.FromArgb(223, 247, 252);
-gtd.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 229, 201);
+tableDescriptor.Appearance.AnyRecordFieldCell.BackColor = Color.FromArgb(223, 247, 252);
+tableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 229, 201);
 
 //Column Header Cell styles.
-gtd.Appearance.ColumnHeaderCell.Interior = new BrushInfo(GradientStyle.Vertical, Color.FromArgb(203, 201, 202), Color.FromArgb(253, 247, 215));
-gtd.Appearance.ColumnHeaderCell.TextColor = Color.Black;
+tableDescriptor.Appearance.ColumnHeaderCell.Interior = new BrushInfo(GradientStyle.Vertical, Color.FromArgb(203, 201, 202), Color.FromArgb(253, 247, 215));
+tableDescriptor.Appearance.ColumnHeaderCell.TextColor = Color.Black;
 
 //Group Caption Cell styles.
-gtd.Appearance.GroupCaptionCell.Interior = new BrushInfo(Color.FromArgb(255, 238, 220));
-gtd.Appearance.GroupCaptionCell.Borders.Bottom = new GridBorder(GridBorderStyle.Solid, Color.FromArgb(242, 158, 32), GridBorderWeight.Medium);
+tableDescriptor.Appearance.GroupCaptionCell.Interior = new BrushInfo(Color.FromArgb(255, 238, 220));
+tableDescriptor.Appearance.GroupCaptionCell.Borders.Bottom = new GridBorder(GridBorderStyle.Solid, Color.FromArgb(242, 158, 32), GridBorderWeight.Medium);
 
 {% endhighlight %}
 {% highlight vb %}
 
 'Get the TableDescrptor for the Child Table named "Orders".
-Dim gtd As GridTableDescriptor = Me.gridGroupingControl1.GetTableDescriptor("Orders")
+Dim tableDescriptor As GridTableDescriptor = Me.gridGroupingControl1.GetTableDescriptor("Orders")
 
 'Record Field Cell styles.
-gtd.Appearance.AnyRecordFieldCell.BackColor = Color.FromArgb(223, 247, 252)
-gtd.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 229, 201)
+tableDescriptor.Appearance.AnyRecordFieldCell.BackColor = Color.FromArgb(223, 247, 252)
+tableDescriptor.Appearance.AlternateRecordFieldCell.BackColor = Color.FromArgb(255, 229, 201)
 
 'Column Header Cell styles.
-gtd.Appearance.ColumnHeaderCell.Interior = New BrushInfo(GradientStyle.Vertical, Color.FromArgb(203, 201, 202), Color.FromArgb(253, 247, 215))
-gtd.Appearance.ColumnHeaderCell.TextColor = Color.Black
+tableDescriptor.Appearance.ColumnHeaderCell.Interior = New BrushInfo(GradientStyle.Vertical, Color.FromArgb(203, 201, 202), Color.FromArgb(253, 247, 215))
+tableDescriptor.Appearance.ColumnHeaderCell.TextColor = Color.Black
 
 'Group Caption Cell styles.
-gtd.Appearance.GroupCaptionCell.Interior = New BrushInfo(Color.FromArgb(255, 238, 220))
-gtd.Appearance.GroupCaptionCell.Borders.Bottom = New GridBorder(GridBorderStyle.Solid, Color.FromArgb(242, 158, 32), GridBorderWeight.Medium)
+tableDescriptor.Appearance.GroupCaptionCell.Interior = New BrushInfo(Color.FromArgb(255, 238, 220))
+tableDescriptor.Appearance.GroupCaptionCell.Borders.Bottom = New GridBorder(GridBorderStyle.Solid, Color.FromArgb(242, 158, 32), GridBorderWeight.Medium)
 
 {% endhighlight %}
 {% endtabs %}

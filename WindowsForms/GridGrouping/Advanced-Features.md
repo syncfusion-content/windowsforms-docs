@@ -31,7 +31,7 @@ private DataTable GetADataTable()
 
 {
 
-    DataTable dt = new DataTable("MyTable");
+    DataTable dataTable = new DataTable("MyTable");
 
 
 
@@ -43,7 +43,7 @@ private DataTable GetADataTable()
 
     for(int i = 0; i < nCols; i++)
 
-    dt.Columns.Add(new DataColumn(string.Format("Col{0}", i)));
+    dataTable.Columns.Add(new DataColumn(string.Format("Col{0}", i)));
 
 
 
@@ -53,17 +53,17 @@ private DataTable GetADataTable()
 
     {
 
-        DataRow dr = dt.NewRow();
+        DataRow dataRow = dataTable.NewRow();
 
         for(int j = 0; j < nCols; j++)
 
-        dr[j] = r.Next(100).ToString();
+        dataRow[j] = r.Next(100).ToString();
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
 
     }
 
-    return dt;
+    return dataTable;
 
 }
 
@@ -86,7 +86,7 @@ Private Function GetADataTable() As DataTable
 
 
 
-    Dim dt As New DataTable("MyTable")
+    Dim dataTable As New DataTable("MyTable")
 
 
 
@@ -100,7 +100,7 @@ Private Function GetADataTable() As DataTable
 
     For i = 0 To nCols - 1
 
-        dt.Columns.Add(New DataColumn(String.Format("Col{0}", i)))
+        dataTable.Columns.Add(New DataColumn(String.Format("Col{0}", i)))
 
     Next i
 
@@ -112,17 +112,17 @@ Private Function GetADataTable() As DataTable
 
     While i < nRows
 
-        Dim dr As DataRow = dt.NewRow()
+        Dim dataRow As DataRow = dataTable.NewRow()
 
         Dim j As Integer
 
         For j = 0 To nCols - 1
 
-            dr(j) = r.Next(100).ToString()
+            dataRow(j) = r.Next(100).ToString()
 
         Next j
 
-        dt.Rows.Add(dr)
+        dataTable.Rows.Add(dataRow)
 
         i += 1
 
@@ -130,7 +130,7 @@ Private Function GetADataTable() As DataTable
 
 
 
-    Return dt
+    Return dataTable
 
 End Function
 
@@ -164,31 +164,31 @@ public class CustomCategorizer : Syncfusion.Grouping.IGroupByColumnCategorizer
 
     {
 
-    int ret = 0;
+    int value = 0;
 
     if(i < 10)
 
-    ret = 1;
+    value = 1;
 
     else if(i >= 10 && i < 20)
 
-    ret = 2;
+    value = 2;
 
     else if(i >= 20 && i < 30)
 
-    ret = 3;
+    value = 3;
 
     else if(i >= 30 && i < 40)
 
-    ret = 4;
+    value = 4;
 
     else  
 
-    ret = 5;
+    value = 5;
 
 
 
-    return ret;
+    return value;
 
     }
 
@@ -233,31 +233,31 @@ Public Class CustomCategorizer
 
     Public Shared Function GetCategory(ByVal i As Integer) As Integer
 
-        Dim ret As Integer = 0
+        Dim value As Integer = 0
 
         If i < 10 Then
 
-            ret = 1
+            value = 1
 
         ElseIf i >= 10 AndAlso i < 20 Then
 
-            ret = 2
+            value = 2
 
         ElseIf i >= 20 AndAlso i < 30 Then
 
-            ret = 3
+            value = 3
 
         ElseIf i >= 30 AndAlso i < 40 Then
 
-            ret = 4
+            value = 4
 
         Else
 
-            ret = 5
+            value = 5
 
         End If
 
-        Return ret
+        Return value
 
     End Function
 
@@ -370,13 +370,13 @@ End Class
 
 //Groups "Col2" by using Custom Categorizer and Comparer.
 
-SortColumnDescriptor cd = new SortColumnDescriptor("Col2");
+SortColumnDescriptor columnDescriptor = new SortColumnDescriptor("Col2");
 
-cd.Categorizer = new CustomCategorizer();
+columnDescriptor.Categorizer = new CustomCategorizer();
 
-cd.Comparer = new CustomComparer();
+columnDescriptor.Comparer = new CustomComparer();
 
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd);
+this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor);
 
 {% endhighlight %}
 
@@ -385,13 +385,13 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd);
 
 'Groups "Col2" by using Custom Categorizer and Comparer.
 
-Dim cd As New Syncfusion.Grouping.SortColumnDescriptor("Col2")
+Dim columnDescriptor As New Syncfusion.Grouping.SortColumnDescriptor("Col2")
 
-cd.Categorizer = New CustomCategorizer()
+columnDescriptor.Categorizer = New CustomCategorizer()
 
-cd.Comparer = New CustomComparer()
+columnDescriptor.Comparer = New CustomComparer()
 
-Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd)
+Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor)
 
  {% endhighlight %}
 
@@ -428,7 +428,7 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCel
 
             int cat = (int) e.TableCellIdentity.DisplayElement.ParentGroup.Category;
 
-            string ret = "";
+            string value = "";
 
             switch (cat)
 
@@ -436,37 +436,37 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCel
 
                 case 1:     
 
-                ret = " < 10";
+                value = " < 10";
 
                 break;
 
                 case 2:     
 
-                ret = "10 - 19";
+                value = "10 - 19";
 
                 break;
 
                 case 3:     
 
-                ret = "20 - 29";
+                value = "20 - 29";
 
                 break;
 
                 case 4:     
 
-                ret = "30 - 39";
+                value = "30 - 39";
 
                 break;
 
                 case 5:     
 
-                ret = " >= 40";
+                value = " >= 40";
 
                 break;
 
             }
 
-            e.Style.CellValue = String.Format("{0}: {1} Items.", ret, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount());
+            e.Style.CellValue = String.Format("{0}: {1} Items.", value, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount());
 
         }
 
@@ -496,33 +496,33 @@ If TypeOf e.TableCellIdentity.DisplayElement Is CaptionRow AndAlso e.TableCellId
 
 Dim cat As Integer = Fix(e.TableCellIdentity.DisplayElement.ParentGroup.Category)
 
-Dim ret As String = ""
+Dim value As String = ""
 
 Select Case cat
 
 Case 1
 
-ret = " < 10"
+value = " < 10"
 
 Case 2
 
-ret = "10 - 19"
+value = "10 - 19"
 
 Case 3
 
-ret = "20 - 29"
+value = "20 - 29"
 
 Case 4
 
-ret = "30 - 39"
+value = "30 - 39"
 
 Case 5
 
-ret = " >= 40"
+value = " >= 40"
 
 End Select
 
-e.Style.CellValue = String.Format("{0}: {1} Items.", ret, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount())
+e.Style.CellValue = String.Format("{0}: {1} Items.", value, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount())
 
 End If
 
@@ -560,7 +560,7 @@ The example illustrates this process in a step-by-step manner.
 
 //Creates a Data Source.
 
-DataTable dt = new DataTable("MyTable");
+DataTable dataTable = new DataTable("MyTable");
 
 int nCols = 4;
 
@@ -568,7 +568,7 @@ int nRows = 30;
 
 for (int i = 0; i < nCols; i++)
 
-    dt.Columns.Add(new DataColumn(string.Format("Col{0}", i)));
+    dataTable.Columns.Add(new DataColumn(string.Format("Col{0}", i)));
 
 Random r = new Random();
 
@@ -576,17 +576,17 @@ for (int i = 0; i < nRows; ++i)
 
 {
 
-    DataRow dr = dt.NewRow();
+    DataRow dataRow = dataTable.NewRow();
 
     for (int j = 0; j < nCols; j++)
 
-        dr[j] = string.Format("row{0} col{1}", i, j);
+        dataRow[j] = string.Format("row{0} col{1}", i, j);
 
     DateTime d = DateTime.Now.AddDays(r.Next(i < 20 ? 700 : 1));
 
-    dr[nCols - 1] = string.Format("{0:MMM}{1:00} - {2:0.00}", d, d.Year, r.Next(1000000) / 100d);
+    dataRow[nCols - 1] = string.Format("{0:MMM}{1:00} - {2:0.00}", d, d.Year, r.Next(1000000) / 100d);
 
-    dt.Rows.Add(dr);
+    dataTable.Rows.Add(dataRow);
 
 }
 
@@ -594,7 +594,7 @@ for (int i = 0; i < nRows; ++i)
 
 //Binds the data source to the grouping grid.
 
-this.gridGroupingControl1.DataSource = new DataView(dt);
+this.gridGroupingControl1.DataSource = new DataView(dataTable);
 
 {% endhighlight %}
 
@@ -604,7 +604,7 @@ this.gridGroupingControl1.DataSource = new DataView(dt);
 
 'Creates a Data Source.
 
-Dim dt As DataTable = New DataTable("MyTable")
+Dim dataTable As DataTable = New DataTable("MyTable")
 
 
 
@@ -618,7 +618,7 @@ Dim i As Integer = 0
 
 Do While i < nCols
 
-dt.Columns.Add(New DataColumn(String.Format("Col{0}", i)))
+dataTable.Columns.Add(New DataColumn(String.Format("Col{0}", i)))
 
 i += 1
 
@@ -632,13 +632,13 @@ i = 0
 
 Do While i < nRows
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
 Dim j As Integer = 0
 
 Do While j < nCols
 
-dr(j) = String.Format("row{0} col{1}", i, j)
+dataRow(j) = String.Format("row{0} col{1}", i, j)
 
 j += 1
 
@@ -646,9 +646,9 @@ Loop
 
 Dim d As DateTime = DateTime.Now.AddDays(r.Next(IIf(i < 20, 700, 1)))
 
-dr(nCols - 1) = String.Format("{0:MMM}{1:00} - {2:0.00}", d, d.Year, r.Next(1000000) / 100.0R)
+dataRow(nCols - 1) = String.Format("{0:MMM}{1:00} - {2:0.00}", d, d.Year, r.Next(1000000) / 100.0R)
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 i += 1
 
@@ -658,7 +658,7 @@ Loop
 
 'Binds the data source to the grouping grid.
 
-Me.gridGroupingControl1.DataSource = New DataView(dt)
+Me.gridGroupingControl1.DataSource = New DataView(dataTable)
 
 {% endhighlight %}
 
@@ -698,11 +698,11 @@ public class DateComparer : IComparer
 
         {
 
-            DateTime xdate = Convert.ToDateTime(x.ToString());
+            DateTime date1 = Convert.ToDateTime(x.ToString());
 
-            DateTime ydate = Convert.ToDateTime(y.ToString());
+            DateTime date2 = Convert.ToDateTime(y.ToString());
 
-            int c = xdate.CompareTo(ydate);
+            int c = date1.CompareTo(date2);
 
             return c;
 
@@ -760,17 +760,17 @@ End Function
 
 Private Function GetDate(ByVal s As String) As DateTime
 
-Dim dt As DateTime = DateTime.MinValue
+Dim dataTable As DateTime = DateTime.MinValue
 
 Dim pos As Integer = s.IndexOf("-"c)
 
 If pos > -1 Then
 
-DateTime.TryParse(s.Substring(0, pos), dt)
+DateTime.TryParse(s.Substring(0, pos), dataTable)
 
 End If
 
-Return dt
+Return dataTable
 
 End Function
 
@@ -822,9 +822,9 @@ void SortedColumns_Changing(object sender, ListPropertyChangedEventArgs e)
 
 {
 
-    SortColumnDescriptor scd = e.Item as SortColumnDescriptor;
+    SortColumnDescriptor sortColumnDescriptor = e.Item as SortColumnDescriptor;
 
-    if (e.Action == ListPropertyChangedType.Add && scd != null && scd.Name == specialDateColName)
+    if (e.Action == ListPropertyChangedType.Add && sortColumnDescriptor != null && sortColumnDescriptor.Name == specialDateColName)
 
     {
 
@@ -857,9 +857,9 @@ AddHandler gridGroupingControl1.TableDescriptor.SortedColumns.Changing, AddressO
 
 Private Sub SortedColumns_Changing(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
 
-Dim scd As SortColumnDescriptor = CType(IIf(TypeOf e.Item Is SortColumnDescriptor, e.Item, Nothing), SortColumnDescriptor)
+Dim sortColumnDescriptor As SortColumnDescriptor = CType(IIf(TypeOf e.Item Is SortColumnDescriptor, e.Item, Nothing), SortColumnDescriptor)
 
-If e.Action = ListPropertyChangedType.Add AndAlso Not scd Is Nothing AndAlso scd.Name = specialDateColName Then
+If e.Action = ListPropertyChangedType.Add AndAlso Not sortColumnDescriptor Is Nothing AndAlso sortColumnDescriptor.Name = specialDateColName Then
 
 CType(e.Item, SortColumnDescriptor).Comparer = specialDateComparer
 
@@ -1123,7 +1123,7 @@ The following code shows how to add custom function in ExpressionFieldEvaluator.
 
 ExpressionFieldEvaluator evaluator = this.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator;
 
-            evaluator.AddFunction("Customadd", new ExpressionFieldEvaluator.LibraryFunction(ComputeCustomAdd));
+            evaluator.AddFunction("CustomAdd", new ExpressionFieldEvaluator.LibraryFunction(ComputeCustomAdd));
 
 
 {% endhighlight %}
@@ -1135,7 +1135,7 @@ ExpressionFieldEvaluator evaluator = this.gridGroupingControl1.TableDescriptor.E
 
 Dim evaluator As ExpressionFieldEvaluator = Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator
 
-evaluator.AddFunction("Customadd", New ExpressionFieldEvaluator.LibraryFunction(ComputeCustomAdd))
+evaluator.AddFunction("CustomAdd", New ExpressionFieldEvaluator.LibraryFunction(ComputeCustomAdd))
 
 {% endhighlight %}
 
@@ -1155,7 +1155,7 @@ ExpressionFieldDescriptor field2 = new ExpressionFieldDescriptor();
 
 field2.Name = "CustomExpression";
 
-            field2.Expression = "10 + Customadd([ColZero],[ColOne])";
+            field2.Expression = "10 + CustomAdd([ColZero],[ColOne])";
 
 
 {% endhighlight %}
@@ -1169,7 +1169,7 @@ field2.Name = "CustomExpression";
 
 field2.Name = "CustomExpression"
 
-field2.Expression = "10 + Customadd([ColZero],[ColOne])"
+field2.Expression = "10 + CustomAdd([ColZero],[ColOne])"
 
  {% endhighlight %}
 
@@ -1199,7 +1199,7 @@ Following steps illustrate how to add a custom filter dialog.
 
 //Sets up a data source.
 
-DataTable dt = new DataTable("MyTable");
+DataTable dataTable = new DataTable("MyTable");
 
 
 
@@ -1211,7 +1211,7 @@ Random r = new Random(100);
 
 for (int i = 0; i < nCols; i++)
 
-    dt.Columns.Add(new DataColumn(string.Format("Col{0}", i), typeof(int)));
+    dataTable.Columns.Add(new DataColumn(string.Format("Col{0}", i), typeof(int)));
 
 
 
@@ -1219,13 +1219,13 @@ for (int i = 0; i < nRows; ++i)
 
 {
 
-    DataRow dr = dt.NewRow();
+    DataRow dataRow = dataTable.NewRow();
 
     for (int j = 0; j < nCols; j++)
 
-        dr[j] = r.Next(10);
+        dataRow[j] = r.Next(10);
 
-    dt.Rows.Add(dr);
+    dataTable.Rows.Add(dataRow);
 
 }
 
@@ -1233,7 +1233,7 @@ for (int i = 0; i < nRows; ++i)
 
 //Binds it to the grouping grid.
 
-this.gridGroupingControl1.DataSource = dt;
+this.gridGroupingControl1.DataSource = dataTable;
 
 
 
@@ -1255,7 +1255,7 @@ gridGroupingControl1.TableDescriptor.Columns[i].AllowFilter = true;
 
 'Sets up a data source.
 
-Dim dt As DataTable = New DataTable("MyTable")
+Dim dataTable As DataTable = New DataTable("MyTable")
 
 
 
@@ -1271,7 +1271,7 @@ Dim i As Integer = 0
 
 Do While i < nCols
 
-dt.Columns.Add(New DataColumn(String.Format("Col{0}", i), GetType(Integer)))
+dataTable.Columns.Add(New DataColumn(String.Format("Col{0}", i), GetType(Integer)))
 
 i += 1
 
@@ -1283,19 +1283,19 @@ i = 0
 
 Do While i < nRows
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
 Dim j As Integer = 0
 
 Do While j < nCols
 
-dr(j) = r.Next(10)
+dataRow(j) = r.Next(10)
 
 j += 1
 
 Loop
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 i += 1
 
@@ -1305,7 +1305,7 @@ Loop
 
 'Binds it to the grouping grid.
 
-Me.gridGroupingControl1.DataSource = dt
+Me.gridGroupingControl1.DataSource = dataTable
 
 
 
@@ -1347,13 +1347,13 @@ internal FilterString = "";
 
 //Fills up the combo boxes with the operator options.
 
-public void SetupOptions(string[] filteroptions)
+public void SetupOptions(string[] filterOptions)
 
 {
 
-    this.comboBox1.Items.AddRange(filteroptions);
+    this.comboBox1.Items.AddRange(filterOptions);
 
-    this.comboBox2.Items.AddRange(filteroptions);
+    this.comboBox2.Items.AddRange(filterOptions);
 
 }
 
@@ -1463,11 +1463,11 @@ Friend FilterString As String = ""
 
 'Fills up the combo boxes with the operator options.
 
-Public Sub SetupOptions(ByVal filteroptions As String())
+Public Sub SetupOptions(ByVal filterOptions As String())
 
-Me.comboBox1.Items.AddRange(filteroptions)
+Me.comboBox1.Items.AddRange(filterOptions)
 
-Me.comboBox2.Items.AddRange(filteroptions)
+Me.comboBox2.Items.AddRange(filterOptions)
 
 End Sub
 

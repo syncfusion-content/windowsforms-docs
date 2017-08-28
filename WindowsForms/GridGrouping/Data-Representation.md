@@ -382,11 +382,11 @@ Private Me.gridGroupingControl1.GroupDropPanel.BackColor = Color.YellowGreen
 
 
 
-foreach (Control ctl in this.gridGroupingControl1.GroupDropPanel.Controls)
+foreach (Control ctrl in this.gridGroupingControl1.GroupDropPanel.Controls)
 
 {
 
-    GridGroupDropArea groupDropArea = ctl as GridGroupDropArea;
+    GridGroupDropArea groupDropArea = ctrl as GridGroupDropArea;
 
 
 
@@ -422,11 +422,11 @@ foreach (Control ctl in this.gridGroupingControl1.GroupDropPanel.Controls)
 
 
 
-Dim ctl As Control
+Dim ctrl As Control
 
-For Each ctl In Me.gridGroupingControl1.GroupDropPanel.Controls
+For Each ctrl In Me.gridGroupingControl1.GroupDropPanel.Controls
 
-Dim groupDropArea As GridGroupDropArea = ctl
+Dim groupDropArea As GridGroupDropArea = ctrl
 
 Select Case groupDropArea.Model.Table.TableDescriptor.Name
 
@@ -446,7 +446,7 @@ AddHandler groupDropArea.PrepareViewStyleInfo, AddressOf ChildTable_PrepareViewS
 
 End Select
 
-Next ctl
+Next ctrl
 
 {% endhighlight %}
 
@@ -846,7 +846,7 @@ N> For GroupDropAreaAlignment property to take effect, HierarchicalGroupDropArea
 
 
 
-//Top alignment for GroupDopArea.
+//Top alignment for GroupDropArea.
 
 this.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Top;
 
@@ -873,7 +873,7 @@ this.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Ri
 {% highlight vbnet %} 
 
 
-'Top alignment for GroupDopArea.
+'Top alignment for GroupDropArea.
 
 Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Top;
 
@@ -1612,11 +1612,11 @@ void GroupedColumns_Changing(object sender, ListPropertyChangedEventArgs e)
 
 {
 
-SortColumnDescriptor scd = e.Item as SortColumnDescriptor;
+SortColumnDescriptor sortColumnDescriptor = e.Item as SortColumnDescriptor;
 
 if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Insert)
 
-Console.WriteLine("Column Added - {0}", scd.Name);
+Console.WriteLine("Column Added - {0}", sortColumnDescriptor.Name);
 
 }
 
@@ -1628,11 +1628,11 @@ void GroupedColumns_Changed(object sender, ListPropertyChangedEventArgs e)
 
 {
 
-SortColumnDescriptor scd = e.Item as SortColumnDescriptor;
+SortColumnDescriptor sortColumnDescriptor = e.Item as SortColumnDescriptor;
 
 if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Remove)
 
-Console.WriteLine("Column Removed - {0}", scd.Name);
+Console.WriteLine("Column Removed - {0}", sortColumnDescriptor.Name);
 
 }
 
@@ -1654,11 +1654,11 @@ AddHandler gridGroupingControl1.TableDescriptor.GroupedColumns.Changing, Address
 
 Private Sub GroupedColumns_Changed(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
 
-Dim scd As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
+Dim sortColumnDescriptor As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
 
 If e.Action = ListPropertyChangedType.Insert Then
 
-Console.WriteLine("Column Added - {0}" + scd.Name)
+Console.WriteLine("Column Added - {0}" + sortColumnDescriptor.Name)
 
 End If
 
@@ -1670,11 +1670,11 @@ End Sub
 
 Private Sub GroupedColumns_Changing(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
 
-Dim scd As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
+Dim sortColumnDescriptor As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
 
 If e.Action = ListPropertyChangedType.Remove Then
 
-Console.WriteLine("Column Removed - {0}" + scd.Name)
+Console.WriteLine("Column Removed - {0}" + sortColumnDescriptor.Name)
 
 End If
 
@@ -1720,21 +1720,21 @@ if (e.PropertyName == "Columns")
 
 {
 
-ListPropertyChangedEventArgs le = (ListPropertyChangedEventArgs) e.Inner;
+ListPropertyChangedEventArgs listEventArgs = (ListPropertyChangedEventArgs) e.Inner;
 
-if (le.Action == ListPropertyChangedType.ItemPropertyChanged)
+if (listEventArgs.Action == ListPropertyChangedType.ItemPropertyChanged)
 
 {
 
-if (le.Property == "Appearance" || le.Property == "Width"
+if (listEventArgs.Property == "Appearance" || listEventArgs.Property == "Width"
 
-|| le.Property == "ReadOnly" || le.Property == "HeaderText"
+|| listEventArgs.Property == "ReadOnly" || listEventArgs.Property == "HeaderText"
 
-|| le.Action == ListPropertyChangedType.Remove
+|| listEventArgs.Action == ListPropertyChangedType.Remove
 
-|| le.Action == ListPropertyChangedType.Move
+|| listEventArgs.Action == ListPropertyChangedType.Move
 
-|| le.Property == "AllowFilter")
+|| listEventArgs.Property == "AllowFilter")
 
 {
 
@@ -1788,11 +1788,11 @@ End If
 
 If e.PropertyName = "Columns" Then
 
-Dim le As ListPropertyChangedEventArgs = CType(e.Inner, ListPropertyChangedEventArgs)
+Dim listEventArgs As ListPropertyChangedEventArgs = CType(e.Inner, ListPropertyChangedEventArgs)
 
-If le.Action = ListPropertyChangedType.ItemPropertyChanged Then
+If listEventArgs.Action = ListPropertyChangedType.ItemPropertyChanged Then
 
-If le.Property = "Appearance" OrElse le.Property = "Width" OrElse le.Property = "ReadOnly" OrElse le.Property = "HeaderText" OrElse le.Action = ListPropertyChangedType.Remove OrElse le.Action = ListPropertyChangedType.Move OrElse le.Property = "AllowFilter" Then
+If listEventArgs.Property = "Appearance" OrElse listEventArgs.Property = "Width" OrElse listEventArgs.Property = "ReadOnly" OrElse listEventArgs.Property = "HeaderText" OrElse listEventArgs.Action = ListPropertyChangedType.Remove OrElse listEventArgs.Action = ListPropertyChangedType.Move OrElse listEventArgs.Property = "AllowFilter" Then
 
 Return
 
@@ -1832,7 +1832,7 @@ Grid Grouping control provides support to freeze Caption Row to make sure it sta
 
 
 
-this.gridgroupingcontrol.FreezeCaption = true
+this.gridGroupingControl.FreezeCaption = true
 
  {% endhighlight %}
 
@@ -1840,7 +1840,7 @@ this.gridgroupingcontrol.FreezeCaption = true
 
 
 
-Me.gridgroupingcontrol.FreezeCaption = True
+Me.gridGroupingControl.FreezeCaption = True
 
 {% endhighlight %}
 
@@ -2225,17 +2225,17 @@ This example shows a grouping grid bound with Statistics table whose columns are
 {% highlight C# %}  
 
 
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor();
+GridSummaryColumnDescriptor sortColumnDescriptor = new GridSummaryColumnDescriptor();
 
-scd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(192, 255, 162));
+sortColumnDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(192, 255, 162));
 
-scd.DataMember = "wins";
+sortColumnDescriptor.DataMember = "wins";
 
-scd.Format = "{Sum}";
+sortColumnDescriptor.Format = "{Sum}";
 
-scd.Name = "TotalWins";
+sortColumnDescriptor.Name = "TotalWins";
 
-scd.SummaryType = SummaryType.Int32Aggregate;
+sortColumnDescriptor.SummaryType = SummaryType.Int32Aggregate;
 
 {% endhighlight %}
 
@@ -2244,17 +2244,17 @@ scd.SummaryType = SummaryType.Int32Aggregate;
 
 
 
-Dim scd As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor()
+Dim sortColumnDescriptor As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor()
 
-scd.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 162))
+sortColumnDescriptor.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 162))
 
-scd.DataMember = "wins"
+sortColumnDescriptor.DataMember = "wins"
 
-scd.Format = "{Sum}"
+sortColumnDescriptor.Format = "{Sum}"
 
-scd.Name = "TotalWins"
+sortColumnDescriptor.Name = "TotalWins"
 
-scd.SummaryType = SummaryType.Int32Aggregate
+sortColumnDescriptor.SummaryType = SummaryType.Int32Aggregate
 
 {% endhighlight %}
 
@@ -2266,11 +2266,11 @@ scd.SummaryType = SummaryType.Int32Aggregate
 
 
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor();
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor();
 
-srd.SummaryColumns.Add(scd);
+summaryRowDescriptor.SummaryColumns.Add(sortColumnDescriptor);
 
-srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
 
 {% endhighlight %}
 
@@ -2278,11 +2278,11 @@ srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 
 
 
 
-Dim srd As GridSummaryRowDescriptor = New GridSummaryRowDescriptor()
+Dim summaryRowDescriptor As GridSummaryRowDescriptor = New GridSummaryRowDescriptor()
 
-srd.SummaryColumns.Add(scd)
+summaryRowDescriptor.SummaryColumns.Add(sortColumnDescriptor)
 
-srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162))
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162))
 
 {% endhighlight %}
 
@@ -2294,7 +2294,7 @@ srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 
 
 
 
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 
 {% endhighlight %}
 
@@ -2302,7 +2302,7 @@ this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
 
 
 
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 {% endhighlight %}
 
@@ -2340,15 +2340,15 @@ scd2.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.LavenderBlush);
 
 
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor();
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor();
 
-srd.SummaryColumns.AddRange(new GridSummaryColumnDescriptor[] { scd1, scd2 });
+summaryRowDescriptor.SummaryColumns.AddRange(new GridSummaryColumnDescriptor[] { scd1, scd2 });
 
-srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
 
 
 
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 
 {% endhighlight %}
 
@@ -2368,15 +2368,15 @@ scd2.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.LavenderBlush)
 
 
 
-Dim srd As GridSummaryRowDescriptor = New GridSummaryRowDescriptor()
+Dim summaryRowDescriptor As GridSummaryRowDescriptor = New GridSummaryRowDescriptor()
 
-srd.SummaryColumns.AddRange(New GridSummaryColumnDescriptor() {scd1, scd2})
+summaryRowDescriptor.SummaryColumns.AddRange(New GridSummaryColumnDescriptor() {scd1, scd2})
 
-srd.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231, 162))
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231, 162))
 
 
 
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 {% endhighlight %}
 
 Here is a sample screenshot displaying the summaries for the columns wins and losses.
@@ -2407,17 +2407,17 @@ scd2.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.LavenderBlush);
 
 
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor();
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor();
 
-srd.SummaryColumns.AddRange(new GridSummaryColumnDescriptor[] { scd1, scd2 });
+summaryRowDescriptor.SummaryColumns.AddRange(new GridSummaryColumnDescriptor[] { scd1, scd2 });
 
-srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
 
 
 
 GridSummaryColumnDescriptor scd3 = new GridSummaryColumnDescriptor("Total", SummaryType.Count, "{Count} Records.");
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor("Row2", scd3);
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor("Row2", scd3);
 
 srd2.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
 
@@ -2481,29 +2481,29 @@ For example, if your datasource has two tables nested, Orders and Order Details,
 
 //Adds Summaries for the Parent Table(Orders).
 
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
+GridSummaryColumnDescriptor sortColumnDescriptor = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor("Sum", "$", scd);
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor("Sum", "$", sortColumnDescriptor);
 
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
 
-srd.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162);
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162);
 
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 
 
 
 //Adds Summaries for the Child Table(Order Details).
 
-scd = new GridSummaryColumnDescriptor("Sum", SummaryType.Int32Aggregate, "Quantity", "{Sum:#}");
+sortColumnDescriptor = new GridSummaryColumnDescriptor("Sum", SummaryType.Int32Aggregate, "Quantity", "{Sum:#}");
 
-srd = new GridSummaryRowDescriptor("Sum", "Total", scd);
+summaryRowDescriptor = new GridSummaryRowDescriptor("Sum", "Total", sortColumnDescriptor);
 
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
 
-srd.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162);
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162);
 
-this.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(srd);
+this.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(summaryRowDescriptor);
 
 {% endhighlight %}
 
@@ -2513,29 +2513,29 @@ this.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(sr
 
 'Adds Summaries for the Parent Table(Orders).
 
-Dim scd As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
+Dim sortColumnDescriptor As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
 
-Dim srd As GridSummaryRowDescriptor = New GridSummaryRowDescriptor("Sum", "$", scd)
+Dim summaryRowDescriptor As GridSummaryRowDescriptor = New GridSummaryRowDescriptor("Sum", "$", sortColumnDescriptor)
 
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
 
-srd.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162)
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162)
 
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 
 
 'Adds Summaries for the Child Table(Order Details).
 
-scd = New GridSummaryColumnDescriptor("Sum", SummaryType.Int32Aggregate, "Quantity", "{Sum:#}")
+sortColumnDescriptor = New GridSummaryColumnDescriptor("Sum", SummaryType.Int32Aggregate, "Quantity", "{Sum:#}")
 
-srd = New GridSummaryRowDescriptor("Sum", "Total", scd)
+summaryRowDescriptor = New GridSummaryRowDescriptor("Sum", "Total", sortColumnDescriptor)
 
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
 
-srd.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162)
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162)
 
-Me.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(srd)
+Me.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(summaryRowDescriptor)
 
 {% endhighlight %}
 
@@ -2593,15 +2593,15 @@ Lets you control the caption text to be displayed.</td></tr>
 
 //Adds Summaries.
 
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
+GridSummaryColumnDescriptor sortColumnDescriptor = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor("Sum", "$", scd);
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor("Sum", "$", sortColumnDescriptor);
 
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
 
-srd.Appearance.AnyCell.BackColor = Color.Cornsilk;
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.Cornsilk;
 
-this.gridGroupingControl1.GetTableDescriptor("Orders").SummaryRows.Add(srd);
+this.gridGroupingControl1.GetTableDescriptor("Orders").SummaryRows.Add(summaryRowDescriptor);
 
 
 
@@ -2617,15 +2617,15 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("RequiredDate");
 
 'Adds Summaries.
 
-Dim scd As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
+Dim sortColumnDescriptor As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
 
-Dim srd As GridSummaryRowDescriptor = New GridSummaryRowDescriptor("Sum", "$", scd)
+Dim summaryRowDescriptor As GridSummaryRowDescriptor = New GridSummaryRowDescriptor("Sum", "$", sortColumnDescriptor)
 
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
 
-srd.Appearance.AnyCell.BackColor = Color.Cornsilk
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.Cornsilk
 
-Me.gridGroupingControl1.GetTableDescriptor("Orders").SummaryRows.Add(srd)
+Me.gridGroupingControl1.GetTableDescriptor("Orders").SummaryRows.Add(summaryRowDescriptor)
 
 
 
@@ -2819,17 +2819,17 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
 
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
 
-SortColumnDescriptor gsd = new SortColumnDescriptor("ShipCountry");
+SortColumnDescriptor sortColumnDescriptor1 = new SortColumnDescriptor("ShipCountry");
 
 
 
 //Specifies a summary name and the property (values will be determined using reflection).
 
-gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
+sortColumnDescriptor1.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
 
 
 
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd);
+this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor1);
 
 {% endhighlight %}
 
@@ -2840,17 +2840,17 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd);
 
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
 
-Dim gsd As New SortColumnDescriptor("ShipCountry")
+Dim sortColumnDescriptor1 As New SortColumnDescriptor("ShipCountry")
 
 
 
 'Specifies a summary name and property (values will be determined using reflection)
 
-gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
+sortColumnDescriptor1.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
 
 
 
-Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd)
+Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor1)
 
 {% endhighlight %}
 
@@ -3139,7 +3139,7 @@ Returns 1 if there is any occurrence of right-hand argument in the left-hand arg
 <td>
 Like</td><td>
 Like</td><td>
-Checks if the field starts exactly as specified in the right-hand argument. For example, [CompanyName] like 'RTR' returns 1 for any record whose CompanyName field is exactly RTR. You can use an asterisk as a wildcard. [CompanyName] like 'RTR*' returns 1 for any record whose CompanyName field starts with RTR. [CompanyName] like '*RTR' returns 1 for any record whose CompanyName field ends with RTR. </td><td>
+Checks if the field starts exactrly as specified in the right-hand argument. For example, [CompanyName] like 'RTR' returns 1 for any record whose CompanyName field is exactrly RTR. You can use an asterisk as a wildcard. [CompanyName] like 'RTR*' returns 1 for any record whose CompanyName field starts with RTR. [CompanyName] like '*RTR' returns 1 for any record whose CompanyName field ends with RTR. </td><td>
 [Sport] like 'Basket*'</td></tr>
 <tr>
 <td>
@@ -3216,9 +3216,9 @@ Following code example illustrates how to add a record filter for the column "wi
 
 
 
-FilterCondition cond = new FilterCondition(FilterCompareOperator.GreaterThan, 20);
+FilterCondition filterCondition = new FilterCondition(FilterCompareOperator.GreaterThan, 20);
 
-RecordFilterDescriptor filter = new RecordFilterDescriptor("wins", cond);
+RecordFilterDescriptor filter = new RecordFilterDescriptor("wins", filterCondition);
 
 this.gridGroupingControl1.TableDescriptor.RecordFilters.Add(filter);
 
@@ -3228,9 +3228,9 @@ this.gridGroupingControl1.TableDescriptor.RecordFilters.Add(filter);
 
 
 
-Dim cond As FilterCondition = New FilterCondition(FilterCompareOperator.GreaterThan, 20)
+Dim filterCondition As FilterCondition = New FilterCondition(FilterCompareOperator.GreaterThan, 20)
 
-Dim filter As RecordFilterDescriptor = New RecordFilterDescriptor("wins", cond)
+Dim filter As RecordFilterDescriptor = New RecordFilterDescriptor("wins", filterCondition)
 
 Me.gridGroupingControl1.TableDescriptor.RecordFilters.Add(filter)
 
@@ -3252,9 +3252,9 @@ Record Filters can also be set to nested tables by accessing RecordFilters colle
 
 
 
-FilterCondition cond = new FilterCondition(FilterCompareOperator.GreaterThan, 20);
+FilterCondition filterCondition = new FilterCondition(FilterCompareOperator.GreaterThan, 20);
 
-RecordFilterDescriptor filter = new RecordFilterDescriptor("OrderID", cond);
+RecordFilterDescriptor filter = new RecordFilterDescriptor("OrderID", filterCondition);
 
 this.gridGroupingControl1.GetTableDescriptor("Orders").RecordFilters.Add(filter);
 
@@ -3264,9 +3264,9 @@ this.gridGroupingControl1.GetTableDescriptor("Orders").RecordFilters.Add(filter)
 
 
 
-Dim cond As FilterCondition = New FilterCondition(FilterCompareOperator.GreaterThan, 20)
+Dim filterCondition As FilterCondition = New FilterCondition(FilterCompareOperator.GreaterThan, 20)
 
-Dim filter As RecordFilterDescriptor = New RecordFilterDescriptor("OrderID", cond)
+Dim filter As RecordFilterDescriptor = New RecordFilterDescriptor("OrderID", filterCondition)
 
 Me.gridGroupingControl1.GetTableDescriptor("Orders").RecordFilters.Add(filter)
 {% endhighlight %}
@@ -3287,11 +3287,11 @@ void Form1_Load(object sender, EventArgs e)
 
 ArrayList rank = new ArrayList();
 
-RankData rankData = new RankData("aaa");
+RankData rankData = new RankData("a");
 
 rank.Add(rankData);
 
-rankData = new RankData("bbb#");
+rankData = new RankData("b");
 
 rank.Add(rankData);
 
@@ -3299,7 +3299,7 @@ gridGroupingControl1.DataSource = rank;
 
 string filter = "";
 
-RecordFilterDescriptor rfd = null;
+RecordFilterDescriptor recordFilterDescriptor = null;
 
 Record r = null;
 
@@ -3311,9 +3311,9 @@ foreach (RankData a in rank)
 
 filter = "[WellName] like '" + ReplaceSpcChar(a.WellName) + "'"; 
 
-rfd = new RecordFilterDescriptor(filter);
+recordFilterDescriptor = new RecordFilterDescriptor(filter);
 
-gridGroupingControl1.TableDescriptor.RecordFilters.Add(rfd);
+gridGroupingControl1.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
 
 int cont = gridGroupingControl1.Table.FilteredRecords.Count;
 
@@ -3363,11 +3363,11 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 Dim rank As New ArrayList()
 
-Dim rankData As New RankData("aaa")
+Dim rankData As New RankData("a")
 
 rank.Add(rankData)
 
-rankData = New RankData("bbb#")
+rankData = New RankData("b")
 
 rank.Add(rankData)
 
@@ -3375,7 +3375,7 @@ gridGroupingControl1.DataSource = rank
 
 Dim filter As String = ""
 
-Dim rfd As RecordFilterDescriptor = Nothing
+Dim recordFilterDescriptor As RecordFilterDescriptor = Nothing
 
 Dim r As Record = Nothing
 
@@ -3385,9 +3385,9 @@ For Each a As RankData In rank
 
 filter = "[WellName] like '" & ReplaceSpcChar(a.WellName) & "'"
 
-rfd = New RecordFilterDescriptor(filter)
+recordFilterDescriptor = New RecordFilterDescriptor(filter)
 
-gridGroupingControl1.TableDescriptor.RecordFilters.Add(rfd)
+gridGroupingControl1.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
 
 Dim cont As Integer = gridGroupingControl1.Table.FilteredRecords.Count
 
@@ -3967,11 +3967,11 @@ If you want to work with the subset of records being filtered from a grid table,
 
 GridTable table = this.grid.Table;
 
-foreach (Record frec in table.FilteredRecords)
+foreach (Record filteredRecord in table.FilteredRecords)
 
 {
 
-Console.WriteLine("Record Info : " + frec);
+Console.WriteLine("Record Info : " + filteredRecord);
 
 }
 
@@ -3983,11 +3983,11 @@ Console.WriteLine("Record Info : " + frec);
 
 Private table As GridTable = Me.grid.Table
 
-For Each frec As Record In table.FilteredRecords
+For Each filteredRecord As Record In table.FilteredRecords
 
-Console.WriteLine("Record Info : " & frec)
+Console.WriteLine("Record Info : " & filteredRecord)
 
-Next frec
+Next filteredRecord
 
 {% endhighlight %}
 
@@ -4039,15 +4039,15 @@ private void GetFilterBarString()
 
 
 
-//Uses calulated row and column indices, gets the filter bar string of the record filter.
+//Uses calculated row and column indices, gets the filter bar string of the record filter.
 
-    GridTableFilterBarCellRenderer cr = this.gridGroupingControl1.TableControl.CellRenderers["FilterBarCell"] as                              GridTableFilterBarCellRenderer;
+    GridTableFilterBarCellRenderer cellRenderer = this.gridGroupingControl1.TableControl.CellRenderers["FilterBarCell"] as                              GridTableFilterBarCellRenderer;
 
-    if (cr != null && row != 0)
+    if (cellRenderer != null && row != 0)
 
     {
 
-         Console.WriteLine(cr.GetFilterBarText(this.gridGroupingControl1.TableModel[row, col]));
+         Console.WriteLine(cellRenderer.GetFilterBarText(this.gridGroupingControl1.TableModel[row, col]));
 
     }
 
@@ -4101,11 +4101,11 @@ Next el
 
 'Uses the calculated row and column indices, gets the filter bar string of the record filter.
 
-Dim cr As GridTableFilterBarCellRenderer = TryCast(Me.gridGroupingControl1.TableControl.CellRenderers("FilterBarCell"), GridTableFilterBarCellRenderer)
+Dim cellRenderer As GridTableFilterBarCellRenderer = TryCast(Me.gridGroupingControl1.TableControl.CellRenderers("FilterBarCell"), GridTableFilterBarCellRenderer)
 
-If Not cr Is Nothing AndAlso row &lt;&gt; 0 Then
+If Not cellRenderer Is Nothing AndAlso row &lt;&gt; 0 Then
 
-Console.WriteLine(cr.GetFilterBarText(Me.gridGroupingControl1.TableModel(row, col)))
+Console.WriteLine(cellRenderer.GetFilterBarText(Me.gridGroupingControl1.TableModel(row, col)))
 
 End If
 
@@ -4273,7 +4273,7 @@ Filters grid displaying records whose datetime value lies between two dates and 
 <tr>
 <td>
 IN</td><td>
-[columnname] IN 'val1,val2,..,valn'</td><td>
+[columnname] IN 'val1,val2,..,n'</td><td>
 Filters grid displaying records whose specified column hold the values mentioned.</td></tr>
 </table>
 
@@ -4406,15 +4406,15 @@ private DataTable GetParentTable()
 
 {
 
-    DataTable dt = new DataTable("ParentTable");
+    DataTable dataTable = new DataTable("ParentTable");
 
 
 
-    dt.Columns.Add(new DataColumn("parentID"));
+    dataTable.Columns.Add(new DataColumn("parentID"));
 
-    dt.Columns.Add(new DataColumn("ParentName"));
+    dataTable.Columns.Add(new DataColumn("ParentName"));
 
-    dt.Columns.Add(new DataColumn("ParentDec"));
+    dataTable.Columns.Add(new DataColumn("ParentDec"));
 
 
 
@@ -4422,21 +4422,21 @@ private DataTable GetParentTable()
 
     {
 
-        DataRow dr = dt.NewRow();
+        DataRow dataRow = dataTable.NewRow();
 
 
 
-        dr[0] = i;
+        dataRow[0] = i;
 
-        dr[1] = string.Format("parentName{0}", i);
+        dataRow[1] = string.Format("parentName{0}", i);
 
-        dr[1] = string.Format("parentName{0}", i);
+        dataRow[1] = string.Format("parentName{0}", i);
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
 
     }
 
-    return dt;
+    return dataTable;
 
 }
 
@@ -4448,15 +4448,15 @@ private DataTable GetChildTable()
 
 {
 
-    DataTable dt = new DataTable("ChildTable");
+    DataTable dataTable = new DataTable("ChildTable");
 
 
 
-    dt.Columns.Add(new DataColumn("childID"));
+    dataTable.Columns.Add(new DataColumn("childID"));
 
-    dt.Columns.Add(new DataColumn("Name"));
+    dataTable.Columns.Add(new DataColumn("Name"));
 
-    dt.Columns.Add(new DataColumn("ParentID"));
+    dataTable.Columns.Add(new DataColumn("ParentID"));
 
 
 
@@ -4464,19 +4464,19 @@ private DataTable GetChildTable()
 
     {
 
-        DataRow dr = dt.NewRow();
+        DataRow dataRow = dataTable.NewRow();
 
-        dr[0] = i.ToString();
+        dataRow[0] = i.ToString();
 
-        dr[1] = string.Format("ChildName{0}",i);
+        dataRow[1] = string.Format("ChildName{0}",i);
 
-        dr[2] = (i % numberParentRows).ToString();
+        dataRow[2] = (i % numberParentRows).ToString();
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
 
     }
 
-    return dt;
+    return dataTable;
 
 }
 
@@ -4488,15 +4488,15 @@ private DataTable GetGrandChildTable()
 
 {
 
-    DataTable dt = new DataTable("GrandChildTable");
+    DataTable dataTable = new DataTable("GrandChildTable");
 
 
 
-    dt.Columns.Add(new DataColumn("GrandChildID"));
+    dataTable.Columns.Add(new DataColumn("GrandChildID"));
 
-    dt.Columns.Add(new DataColumn("Name"));
+    dataTable.Columns.Add(new DataColumn("Name"));
 
-    dt.Columns.Add(new DataColumn("ChildID"));
+    dataTable.Columns.Add(new DataColumn("ChildID"));
 
 
 
@@ -4504,19 +4504,19 @@ private DataTable GetGrandChildTable()
 
     {
 
-        DataRow dr = dt.NewRow();
+        DataRow dataRow = dataTable.NewRow();
 
-        dr[0] = i.ToString();
+        dataRow[0] = i.ToString();
 
-        dr[1] = string.Format("GrandChildName{0}",i);
+        dataRow[1] = string.Format("GrandChildName{0}",i);
 
-        dr[2] = (i % numberChildRows).ToString();
+        dataRow[2] = (i % numberChildRows).ToString();
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
 
     }
 
-    return dt;
+    return dataTable;
 
 }
 
@@ -4539,15 +4539,15 @@ Private numberGrandChildRows As Integer = 50
 
 Private Function GetParentTable() As DataTable
 
-Dim dt As New DataTable("ParentTable")
+Dim dataTable As New DataTable("ParentTable")
 
 
 
-dt.Columns.Add(New DataColumn("parentID"))
+dataTable.Columns.Add(New DataColumn("parentID"))
 
-dt.Columns.Add(New DataColumn("ParentName"))
+dataTable.Columns.Add(New DataColumn("ParentName"))
 
-dt.Columns.Add(New DataColumn("ParentDec"))
+dataTable.Columns.Add(New DataColumn("ParentDec"))
 
 
 
@@ -4555,21 +4555,21 @@ Dim i As Integer
 
 For i = 0 To numberParentRows - 1
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
-dr(0) = i
+dataRow(0) = i
 
-dr(1) = String.Format("parentName{0}", i)
+dataRow(1) = String.Format("parentName{0}", i)
 
-dr(1) = String.Format("parentName{0}", i)
+dataRow(1) = String.Format("parentName{0}", i)
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 Next i
 
 
 
-Return dt
+Return dataTable
 
 End Function
 
@@ -4579,35 +4579,35 @@ End Function
 
 Private Function GetChildTable() As DataTable
 
-Dim dt As New DataTable("ChildTable")
+Dim dataTable As New DataTable("ChildTable")
 
 
 
-dt.Columns.Add(New DataColumn("childID"))
+dataTable.Columns.Add(New DataColumn("childID"))
 
-dt.Columns.Add(New DataColumn("Name"))
+dataTable.Columns.Add(New DataColumn("Name"))
 
-dt.Columns.Add(New DataColumn("ParentID"))
+dataTable.Columns.Add(New DataColumn("ParentID"))
 
 Dim i As Integer
 
 For i = 0 To numberChildRows - 1
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
-dr(0) = i.ToString()
+dataRow(0) = i.ToString()
 
-dr(1) = String.Format("ChildName{0}", i)
+dataRow(1) = String.Format("ChildName{0}", i)
 
-dr(2) = (i Mod numberParentRows).ToString()
+dataRow(2) = (i Mod numberParentRows).ToString()
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 Next i
 
 
 
-Return dt
+Return dataTable
 
 End Function
 
@@ -4617,35 +4617,35 @@ End Function
 
 Private Function GetGrandChildTable() As DataTable
 
-Dim dt As New DataTable("GrandChildTable")
+Dim dataTable As New DataTable("GrandChildTable")
 
 
 
-dt.Columns.Add(New DataColumn("GrandChildID"))
+dataTable.Columns.Add(New DataColumn("GrandChildID"))
 
-dt.Columns.Add(New DataColumn("Name"))
+dataTable.Columns.Add(New DataColumn("Name"))
 
-dt.Columns.Add(New DataColumn("ChildID"))
+dataTable.Columns.Add(New DataColumn("ChildID"))
 
 Dim i As Integer
 
 For i = 0 To numberGrandChildRows - 1
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
-dr(0) = i.ToString()
+dataRow(0) = i.ToString()
 
-dr(1) = String.Format("GrandChildName{0}", i)
+dataRow(1) = String.Format("GrandChildName{0}", i)
 
-dr(2) = (i Mod numberChildRows).ToString()
+dataRow(2) = (i Mod numberChildRows).ToString()
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 Next i
 
 
 
-Return dt
+Return dataTable
 
 End Function
 
@@ -5428,15 +5428,15 @@ private DataTable GetParentTable()
 
 {
 
-    DataTable dt = new DataTable("Customers");
+    DataTable dataTable = new DataTable("Customers");
 
 
 
-    dt.Columns.Add(new DataColumn("customerID"));
+    dataTable.Columns.Add(new DataColumn("customerID"));
 
-    dt.Columns.Add(new DataColumn("CustomerName"));
+    dataTable.Columns.Add(new DataColumn("CustomerName"));
 
-    dt.Columns.Add(new DataColumn("Address"));
+    dataTable.Columns.Add(new DataColumn("Address"));
 
 
 
@@ -5444,21 +5444,21 @@ private DataTable GetParentTable()
 
     {
 
-        DataRow dr = dt.NewRow();
+        DataRow dataRow = dataTable.NewRow();
 
-        dr[0] = i;
+        dataRow[0] = i;
 
-        dr[1] = string.Format("CustomerName{0}", i);
+        dataRow[1] = string.Format("CustomerName{0}", i);
 
-        dr[2] = string.Format("Address{0}", i);
+        dataRow[2] = string.Format("Address{0}", i);
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
 
     }
 
 
 
-    return dt;
+    return dataTable;
 
 }
 
@@ -5468,17 +5468,17 @@ private DataTable GetChildTable()
 
 {
 
-    DataTable dt = new DataTable("Items");
+    DataTable dataTable = new DataTable("Items");
 
 
 
-    dt.Columns.Add(new DataColumn("ItemID")); 
+    dataTable.Columns.Add(new DataColumn("ItemID")); 
 
-    dt.Columns.Add(new DataColumn("ItemName"));
+    dataTable.Columns.Add(new DataColumn("ItemName"));
 
-    dt.Columns.Add(new DataColumn("CustomerID"));
+    dataTable.Columns.Add(new DataColumn("CustomerID"));
 
-    dt.Columns.Add(new DataColumn("Price")); 
+    dataTable.Columns.Add(new DataColumn("Price")); 
 
     Random rand = new Random();
 
@@ -5486,23 +5486,23 @@ private DataTable GetChildTable()
 
     {
 
-        DataRow dr = dt.NewRow();
+        DataRow dataRow = dataTable.NewRow();
 
-        dr[0] = i.ToString();
+        dataRow[0] = i.ToString();
 
-        dr[1] = string.Format("ItemName{0}",i);
+        dataRow[1] = string.Format("ItemName{0}",i);
 
-        dr[2] = (i % numberParentRows).ToString();
+        dataRow[2] = (i % numberParentRows).ToString();
 
-        dr[3] = rand.Next(500).ToString();
+        dataRow[3] = rand.Next(500).ToString();
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
 
     }
 
 
 
-    return dt;
+    return dataTable;
 
 }
 
@@ -5520,15 +5520,15 @@ Private numberChildRows As Integer = 20
 
 Private Function GetParentTable() As DataTable
 
-Dim dt As DataTable = New DataTable("Customers")
+Dim dataTable As DataTable = New DataTable("Customers")
 
 
 
-dt.Columns.Add(New DataColumn("customerID"))
+dataTable.Columns.Add(New DataColumn("customerID"))
 
-dt.Columns.Add(New DataColumn("CustomerName"))
+dataTable.Columns.Add(New DataColumn("CustomerName"))
 
-dt.Columns.Add(New DataColumn("Address"))
+dataTable.Columns.Add(New DataColumn("Address"))
 
 
 
@@ -5538,21 +5538,21 @@ Dim i As Integer = 0
 
 Do While i < numberParentRows
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
-dr(0) = i
+dataRow(0) = i
 
-dr(1) = String.Format("CustomerName{0}", i)
+dataRow(1) = String.Format("CustomerName{0}", i)
 
-dr(2) = String.Format("Address{0}", i)
+dataRow(2) = String.Format("Address{0}", i)
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 i += 1
 
 Loop
 
-Return dt
+Return dataTable
 
 End Function
 
@@ -5560,17 +5560,17 @@ End Function
 
 Private Function GetChildTable() As DataTable
 
-Dim dt As DataTable = New DataTable("Items")
+Dim dataTable As DataTable = New DataTable("Items")
 
 
 
-dt.Columns.Add(New DataColumn("ItemID"))
+dataTable.Columns.Add(New DataColumn("ItemID"))
 
-dt.Columns.Add(New DataColumn("ItemName"))
+dataTable.Columns.Add(New DataColumn("ItemName"))
 
-dt.Columns.Add(New DataColumn("CustomerID"))
+dataTable.Columns.Add(New DataColumn("CustomerID"))
 
-dt.Columns.Add(New DataColumn("Price"))
+dataTable.Columns.Add(New DataColumn("Price"))
 
 Dim rand As Random = New Random()
 
@@ -5578,23 +5578,23 @@ Dim i As Integer = 0
 
 Do While i < numberChildRows
 
-Dim dr As DataRow = dt.NewRow()
+Dim dataRow As DataRow = dataTable.NewRow()
 
-dr(0) = i.ToString()
+dataRow(0) = i.ToString()
 
-dr(1) = String.Format("ItemName{0}", i)
+dataRow(1) = String.Format("ItemName{0}", i)
 
-dr(2) = (i Mod numberParentRows).ToString()
+dataRow(2) = (i Mod numberParentRows).ToString()
 
-dr(3) = rand.Next(500).ToString()
+dataRow(3) = rand.Next(500).ToString()
 
-dt.Rows.Add(dr)
+dataTable.Rows.Add(dataRow)
 
 i += 1
 
 Loop
 
-Return dt
+Return dataTable
 
 End Function
 
@@ -6982,11 +6982,11 @@ gridGroupingControl1.TableDescriptor.Relations.Add(relation);
 
 this.gridGroupingControl1.ShowGroupDropArea = true;
 
-GridTable chiltTable = gridGroupingControl1.GetTable("ChildTable");
+GridTable childTable = gridGroupingControl1.GetTable("ChildTable");
 
-this.gridGroupingControl1.AddGroupDropArea(chiltTable);
+this.gridGroupingControl1.AddGroupDropArea(childTable);
 
-chiltTable.TableDescriptor.GroupedColumns.Add("Field1");
+childTable.TableDescriptor.GroupedColumns.Add("Field1");
 
  {% endhighlight %}
 
@@ -7010,11 +7010,11 @@ gridGroupingControl1.TableDescriptor.Relations.Add(relation)
 
 Me.gridGroupingControl1.ShowGroupDropArea = True
 
-Dim chiltTable As GridTable = gridGroupingControl1.GetTable("ChildTable")
+Dim childTable As GridTable = gridGroupingControl1.GetTable("ChildTable")
 
-Me.gridGroupingControl1.AddGroupDropArea(chiltTable)
+Me.gridGroupingControl1.AddGroupDropArea(childTable)
 
-chiltTable.TableDescriptor.GroupedColumns.Add("Field1")
+childTable.TableDescriptor.GroupedColumns.Add("Field1")
 
 {% endhighlight %}
 

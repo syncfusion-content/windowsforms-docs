@@ -263,20 +263,20 @@ The below example shows filter values are replaced with valid characters,
 void Form1_Load(object sender, EventArgs e)
 {
 ArrayList rank = new ArrayList();
-RankData rankData = new RankData("aaa");
+RankData rankData = new RankData("a");
 rank.Add(rankData);
-rankData = new RankData("bbb#");
+rankData = new RankData("b");
 rank.Add(rankData);
 gridGroupingControl1.DataSource = rank;
 string filter = "";
-RecordFilterDescriptor rfd = null;
+RecordFilterDescriptor recordFilterDescriptor = null;
 Record r = null;
 
 foreach (RankData a in rank)
 {
-filter = "[WellName] like '" + ReplaceSpcChar(a.WellName) + "'"; 
-rfd = new RecordFilterDescriptor(filter);
-gridGroupingControl1.TableDescriptor.RecordFilters.Add(rfd);
+filter = "[WellName] like '" + ReplaceSpecialChar(a.WellName) + "'"; 
+recordFilterDescriptor = new RecordFilterDescriptor(filter);
+gridGroupingControl1.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
 int cont = gridGroupingControl1.Table.FilteredRecords.Count;
 r = new Record(gridGroupingControl1.Table);
 
@@ -287,7 +287,7 @@ gridGroupingControl1.TableDescriptor.RecordFilters.Clear();
 }
 }
 
-private string ReplaceSpcChar(string pattern)
+private string ReplaceSpecialChar(string pattern)
 {
 //Take caution while replacing the pattern and ensure that only the intended pattern is modified.
 pattern = pattern.Replace("[", "[[]");
@@ -300,19 +300,19 @@ return pattern;
 {% highlight vb %}
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 Dim rank As New ArrayList()
-Dim rankData As New RankData("aaa")
+Dim rankData As New RankData("a")
 rank.Add(rankData)
-rankData = New RankData("bbb#")
+rankData = New RankData("b")
 rank.Add(rankData)
 gridGroupingControl1.DataSource = rank
 Dim filter As String = ""
-Dim rfd As RecordFilterDescriptor = Nothing
+Dim recordFilterDescriptor As RecordFilterDescriptor = Nothing
 Dim r As Record = Nothing
 
 For Each a As RankData In rank
-filter = "[WellName] like '" & ReplaceSpcChar(a.WellName) & "'"
-rfd = New RecordFilterDescriptor(filter)
-gridGroupingControl1.TableDescriptor.RecordFilters.Add(rfd)
+filter = "[WellName] like '" & ReplaceSpecialChar(a.WellName) & "'"
+recordFilterDescriptor = New RecordFilterDescriptor(filter)
+gridGroupingControl1.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
 Dim cont As Integer = gridGroupingControl1.Table.FilteredRecords.Count
 r = New Record(gridGroupingControl1.Table)
 
@@ -323,7 +323,7 @@ gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
 Next a
 End Sub
 
-Private Function ReplaceSpcChar(ByVal pattern As String) As String
+Private Function ReplaceSpecialChar(ByVal pattern As String) As String
 'Take caution while replacing the pattern and ensure that only the intended pattern is modified.
 pattern = pattern.Replace("[", "[[]")
 pattern = pattern.Replace("#", "[#]")
@@ -1100,11 +1100,11 @@ private void GetFilterBarString()
         }
     }
 
-    //Uses calulated row and column indices, gets the filter bar string of the record filter.
-    GridTableFilterBarCellRenderer cr = this.gridGroupingControl1.TableControl.CellRenderers["FilterBarCell"] as                              GridTableFilterBarCellRenderer;
-    if (cr != null && row != 0)
+    //Uses calculated row and column indices, gets the filter bar string of the record filter.
+    GridTableFilterBarCellRenderer cellRenderer = this.gridGroupingControl1.TableControl.CellRenderers["FilterBarCell"] as                              GridTableFilterBarCellRenderer;
+    if (cellRenderer != null && row != 0)
     {
-         Console.WriteLine(cr.GetFilterBarText(this.gridGroupingControl1.TableModel[row, col]));
+         Console.WriteLine(cellRenderer.GetFilterBarText(this.gridGroupingControl1.TableModel[row, col]));
     }
 }
 {% endhighlight %}
@@ -1128,9 +1128,9 @@ Private Sub GetFilterBarString()
 	Next el
 
     'Uses calculated row and column indices, gets the filter bar string of the record filter.
-	Dim cr As GridTableFilterBarCellRenderer = TryCast(Me.gridGroupingControl1.TableControl.CellRenderers("FilterBarCell"), GridTableFilterBarCellRenderer)
-	If cr IsNot Nothing AndAlso row <> 0 Then
-		 Console.WriteLine(cr.GetFilterBarText(Me.gridGroupingControl1.TableModel(row, col)))
+	Dim cellRenderer As GridTableFilterBarCellRenderer = TryCast(Me.gridGroupingControl1.TableControl.CellRenderers("FilterBarCell"), GridTableFilterBarCellRenderer)
+	If cellRenderer IsNot Nothing AndAlso row <> 0 Then
+		 Console.WriteLine(cellRenderer.GetFilterBarText(Me.gridGroupingControl1.TableModel(row, col)))
 	End If
 End Sub
 {% endhighlight %}

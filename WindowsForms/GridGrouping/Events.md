@@ -577,14 +577,14 @@ This event will be triggered after a column is filtered. Selected column, select
 this.gridGroupingControl1.FilterBarSelectedItemChanged += new Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangedEventHandler(gridGroupingControl1_FilterBarSelectedItemChanged);
 void gridGroupingControl1_FilterBarSelectedItemChanged(object sender, Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangedEventArgs e)
 {
-    //Retreives the selected column, selected index and selected text.
+    //Retrieves the selected column, selected index and selected text.
     MessageBox.Show(e.SelectedIndex.ToString());
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.FilterBarSelectedItemChanged, AddressOf gridGroupingControl1_FilterBarSelectedItemChanged
 Private Sub gridGroupingControl1_FilterBarSelectedItemChanged(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangedEventArgs)
-    'Retreives the selected column, selected index and selected text.
+    'Retrieves the selected column, selected index and selected text.
     MessageBox.Show(e.SelectedIndex.ToString())
 End Sub
 {% endhighlight %}
@@ -876,11 +876,11 @@ this.gridGroupingControl1.GroupSummaryInvalidated += new GroupEventHandler(gridG
 {
     e.Group.ParentTable.SummariesDirty = true;
     GridGroupingControl grid = sender as GridGroupingControl;
-    GridTableControl tc = grid.GetTableControl(e.Group.ParentTableDescriptor.Name);
-    tc.RefreshRange(GridRangeInfo.Cell(8, 3));
+    GridTableControl  tableControl = grid.GetTableControl(e.Group.ParentTableDescriptor.Name);
+     tableControl.RefreshRange(GridRangeInfo.Cell(8, 3));
 
     // Display the updated summary value in the message box
-    MessageBox.Show(tc.Model[8, 3].Text);
+    MessageBox.Show( tableControl.Model[8, 3].Text);
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -888,11 +888,11 @@ AddHandler gridGroupingControl1.GroupSummaryInvalidated, AddressOf gridGroupingC
 Private Sub gridGroupingControl1_GroupSummaryInvalidated(ByVal sender As Object, ByVal e As GroupEventArgs)
     e.Group.ParentTable.SummariesDirty = True
     Dim grid As GridGroupingControl = TryCast(sender, GridGroupingControl)
-    Dim tc As GridTableControl = grid.GetTableControl(e.Group.ParentTableDescriptor.Name)
-    tc.RefreshRange(GridRangeInfo.Cell(8, 3))
+    Dim  tableControl As GridTableControl = grid.GetTableControl(e.Group.ParentTableDescriptor.Name)
+     tableControl.RefreshRange(GridRangeInfo.Cell(8, 3))
 
     ' Display the updated summary value in the message box
-    MessageBox.Show(tc.Model(8, 3).Text)
+    MessageBox.Show( tableControl.Model(8, 3).Text)
 End Sub
 {% endhighlight %}
 {% endtabs %}

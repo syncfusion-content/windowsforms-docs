@@ -394,13 +394,13 @@ The following Extensions assemblies can be located in the UI test folder and the
 **Directory**
 The above extension assemblies should be deployed to the following locations,
 
-* **C:\Program Files (x86)\Common Files\microsoft shared\VSTT\&lt;Visual Studio Version&gt;\UITestExtensionPackages***
+* **C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\&lt;Visual Studio Version&gt;\UITestExtensionPackages***
 * **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PublicAssemblies***
 * **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PrivateAssemblies***
 
 For example, the assemblies can be deployed for the `Visual Studio 2013`,
 
-* C:\Program Files (x86)\Common Files\microsoft shared\VSTT\12.0\UITestExtensionPackages
+* C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\12.0\UITestExtensionPackages
 * C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies
 * C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies
 

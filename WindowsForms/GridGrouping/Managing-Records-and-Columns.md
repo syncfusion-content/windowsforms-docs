@@ -31,17 +31,17 @@ The rows can be hidden by adding the [RowHiddenEntries](http://help.syncfusion.c
 {% tabs %}
 {% highlight c# %}
 int n = this.gridGroupingControl1.TableControl.TopRowIndex;
-GridRowHidden[] hiddenrows = new GridRowHidden[1];
-hiddenrows[0] = new GridRowHidden(n);            
+GridRowHidden[] hiddenRows = new GridRowHidden[1];
+hiddenRows[0] = new GridRowHidden(n);            
 //Hide the first row
-this.gridGroupingControl1.TableControl.Model.RowHiddenEntries.AddRange(hiddenrows);      
+this.gridGroupingControl1.TableControl.Model.RowHiddenEntries.AddRange(hiddenRows);      
 {% endhighlight %}
 {% highlight vb %}
 Dim n As Integer = Me.gridGroupingControl1.TableControl.TopRowIndex
-Dim hiddenrows(0) As GridRowHidden
-hiddenrows(0) = New GridRowHidden(n)
+Dim hiddenRows(0) As GridRowHidden
+hiddenRows(0) = New GridRowHidden(n)
 'Hide the first row
-Me.gridGroupingControl1.TableControl.Model.RowHiddenEntries.AddRange(hiddenrows)
+Me.gridGroupingControl1.TableControl.Model.RowHiddenEntries.AddRange(hiddenRows)
 {% endhighlight %}
 {% endtabs %}
 

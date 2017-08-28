@@ -1322,11 +1322,11 @@ Me.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = True
 2003 Excel like selection frame can be enabled by setting the `SelectionFrameOption` property to `SelectionFrameOption.Excel2003`.
 {% tabs %}
 {% highlight c# %}
-//Enable the 2003 Excel like selectin frame.
+//Enable the 2003 Excel like selection frame.
 this.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2003;
 {% endhighlight %}
 {% highlight vb %}
-'Enable the 2003 Excel like selectin frame.
+'Enable the 2003 Excel like selection frame.
 Me.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
 {% endhighlight %}
 {% endtabs %}
