@@ -144,12 +144,12 @@ You can customize column appearance of a Grid Grouping control by using plug-in 
 
 
 {% highlight C# %} 
- FieldChooser fchooser = new FieldChooser(this.gridGroupingControl1)
+ FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1)
 {% endhighlight %}
 
 {% highlight vbnet %}  
 
-Dim fchooser As New FieldChooser(Me.gridGroupingControl1)
+Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 
 {% endhighlight %}
 

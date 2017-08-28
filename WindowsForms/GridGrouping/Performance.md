@@ -478,10 +478,10 @@ public class VirtualList : IList, ITypedList
 
     public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
     {
-        System.ComponentModel.PropertyDescriptorCollection pds
+        System.ComponentModel.PropertyDescriptorCollection propertyDescriptorCollection
             = TypeDescriptor.GetProperties(typeof(VirtualItem));
 
-        string[] atts = new string[]
+        string[] attr = new string[]
         {
             "Index",
             "Name",
@@ -489,7 +489,7 @@ public class VirtualList : IList, ITypedList
             "OtherValue",
         };
 
-        return pds.Sort(atts);
+        return propertyDescriptorCollection.Sort(attr);
     }
 
     public string GetListName(PropertyDescriptor[] listAccessors)
@@ -599,11 +599,11 @@ Public Class VirtualList
     #Region "ITypedList Members"
 
     Public Function GetItemProperties(ByVal listAccessors() As PropertyDescriptor) As PropertyDescriptorCollection
-        Dim pds As System.ComponentModel.PropertyDescriptorCollection = TypeDescriptor.GetProperties(GetType(VirtualItem))
+        Dim propertyDescriptorCollection As System.ComponentModel.PropertyDescriptorCollection = TypeDescriptor.GetProperties(GetType(VirtualItem))
 
-        Dim atts() As String = { "Index", "Name", "SomeValue", "OtherValue" }
+        Dim attr() As String = { "Index", "Name", "SomeValue", "OtherValue" }
 
-        Return pds.Sort(atts)
+        Return propertyDescriptorCollection.Sort(attr)
     End Function
 
     Public Function GetListName(ByVal listAccessors() As PropertyDescriptor) As String
@@ -631,7 +631,7 @@ schema.CounterLogic = EngineCounters.YAmount;
 
 
 
-//Also dependant on CounterLogic = EngineCounters.YAmount.
+//Also dependent on CounterLogic = EngineCounters.YAmount.
 
 schema.TableOptions.VerticalPixelScroll = true;
 
@@ -660,7 +660,7 @@ schema.CounterLogic = EngineCounters.YAmount
 
 
 
-'Also dependant on CounterLogic = EngineCounters.YAmount.
+'Also dependent on CounterLogic = EngineCounters.YAmount.
 
 schema.TableOptions.VerticalPixelScroll = True
 
@@ -697,8 +697,8 @@ void LogMemoryUsage()
     LogWindow.Items.Add(string.Format("WithoutCounter: {0}, ", this.gridGroupingControl1.Table.WithoutCounter));
     LogWindow.Items.Add(string.Format("RecordsAsDisplayElements: {0}, ", gridGroupingControl1.Table.RecordsAsDisplayElements));
     Process myProcess = Process.GetCurrentProcess();
-    double workingSetSizeinKiloBytes = myProcess.WorkingSet64 / 1000;
-    string s = "Process's physical memory usage: " + workingSetSizeinKiloBytes.ToString() + " kb";
+    double workingSetSizeInKiloBytes = myProcess.WorkingSet64 / 1000;
+    string s = "Process's physical memory usage: " + workingSetSizeInKiloBytes.ToString() + " kb";
     LogWindow.Items.Add(s); 
     LogWindow.Items.Add("");
 }
@@ -716,8 +716,8 @@ Private Sub LogMemoryUsage()
     LogWindow.Items.Add(String.Format("WithoutCounter: {0}, ", Me.gridGroupingControl1.Table.WithoutCounter))
     LogWindow.Items.Add(String.Format("RecordsAsDisplayElements: {0}, ", gridGroupingControl1.Table.RecordsAsDisplayElements))
     Dim myProcess As Process = Process.GetCurrentProcess()
-    Dim workingSetSizeinKiloBytes As Double = myProcess.WorkingSet64 \ 1000
-    Dim s As String = "Process's physical memory usage: " & workingSetSizeinKiloBytes.ToString() & " kb"
+    Dim workingSetSizeInKiloBytes As Double = myProcess.WorkingSet64 \ 1000
+    Dim s As String = "Process's physical memory usage: " & workingSetSizeInKiloBytes.ToString() & " kb"
     LogWindow.Items.Add(s)
     LogWindow.Items.Add("")
 End Sub
@@ -728,8 +728,8 @@ End Sub
 
 {% tabs %}
 {% highlight c# %}
-this.btnLoadGrid.Click += new System.EventHandler(this.btnLoadGrid_Click);
-private void btnLoadGrid_Click(object sender, EventArgs e)
+this.buttonLoadGrid.Click += new System.EventHandler(this.btnLoadGridLoadGrid_Click);
+private void btnLoadGridLoadGrid_Click(object sender, EventArgs e)
 {
     this.LogWindow.Items.Add("");
     this.LogWindow.Items.Add("Flat, Virtual List with Sorting and Grouping Enabled.");
@@ -761,8 +761,8 @@ private void btnLoadGrid_Click(object sender, EventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler btnLoadGrid.Click, AddressOf btnLoadGrid_Click
-Private Sub btnLoadGrid_Click(ByVal sender As Object, ByVal e As EventArgs)
+AddHandler buttonLoadGrid.Click, AddressOf btnLoadGridLoadGrid_Click
+Private Sub btnLoadGridLoadGrid_Click(ByVal sender As Object, ByVal e As EventArgs)
     Me.LogWindow.Items.Add("")
     Me.LogWindow.Items.Add("Flat, Virtual List with Sorting and Grouping Enabled.")
     Dim time As Integer = Environment.TickCount
@@ -944,8 +944,8 @@ public class ManualTotalSummary
         set
         {
             this.group = value;
-            IManualTotalSummaryArraySource tsa = group as IManualTotalSummaryArraySource;
-            tsa.GetManualTotalSummaryArray()[FieldIndex] = this;
+            IManualTotalSummaryArraySource ts = group as IManualTotalSummaryArraySource;
+            ts.GetManualTotalSummaryArray()[FieldIndex] = this;
         }
     }
 
@@ -1014,8 +1014,8 @@ public class ManualTotalSummary
         {
             foreach (Group g in group.Groups)
             {
-                IManualTotalSummaryArraySource tsa = g as IManualTotalSummaryArraySource;
-                ManualTotalSummary mt = tsa.GetManualTotalSummaryArray()[this.FieldIndex];
+                IManualTotalSummaryArraySource ts = g as IManualTotalSummaryArraySource;
+                ManualTotalSummary mt = ts.GetManualTotalSummaryArray()[this.FieldIndex];
                 if (mt == null)
                     mt = new ManualTotalSummary(g, field);
                 double d = mt.Total;
@@ -1024,7 +1024,7 @@ public class ManualTotalSummary
         }
     }
 
-    public void ApplyDelta(Element r, bool isObsoleteRecord, bool isAddedRecord, ChangedFieldInfo ci)
+    public void ApplyDelta(Element r, bool isObsoleteRecord, bool isAddedRecord, ChangedFieldInfo fieldInfo)
     {
         if (Dirty)
             return;
@@ -1033,16 +1033,16 @@ public class ManualTotalSummary
 
         if (isObsoleteRecord)
         {
-            if (ci.OldValue != null && !(ci.OldValue is DBNull))
-                mt.Total -= Convert.ToDouble(ci.OldValue);
+            if (fieldInfo.OldValue != null && !(fieldInfo.OldValue is DBNull))
+                mt.Total -= Convert.ToDouble(fieldInfo.OldValue);
         }
         else if (isAddedRecord)
         {
-            if (ci.NewValue != null && !(ci.NewValue is DBNull))
-                mt.Total += Convert.ToDouble(ci.NewValue);
+            if (fieldInfo.NewValue != null && !(fieldInfo.NewValue is DBNull))
+                mt.Total += Convert.ToDouble(fieldInfo.NewValue);
         }
         else
-            mt.Total += ci.Delta;
+            mt.Total += fieldInfo.Delta;
     }
 
 }
@@ -1082,8 +1082,8 @@ Public Class ManualTotalSummary
         End Get
         Set(ByVal value As Group)
             Me.group_Renamed = value
-            Dim tsa As IManualTotalSummaryArraySource = TryCast(group_Renamed, IManualTotalSummaryArraySource)
-            tsa.GetManualTotalSummaryArray()(FieldIndex) = Me
+            Dim ts As IManualTotalSummaryArraySource = TryCast(group_Renamed, IManualTotalSummaryArraySource)
+            ts.GetManualTotalSummaryArray()(FieldIndex) = Me
         End Set
     End Property
 
@@ -1135,8 +1135,8 @@ Public Class ManualTotalSummary
             Next r
         Else
             For Each g As Group In group_Renamed.Groups
-                Dim tsa As IManualTotalSummaryArraySource = TryCast(g, IManualTotalSummaryArraySource)
-                Dim mt As ManualTotalSummary = tsa.GetManualTotalSummaryArray()(Me.FieldIndex)
+                Dim ts As IManualTotalSummaryArraySource = TryCast(g, IManualTotalSummaryArraySource)
+                Dim mt As ManualTotalSummary = ts.GetManualTotalSummaryArray()(Me.FieldIndex)
                 If mt Is Nothing Then
                     mt = New ManualTotalSummary(g, field_Renamed)
                 End If
@@ -1146,7 +1146,7 @@ Public Class ManualTotalSummary
         End If
     End Sub
 
-    Public Sub ApplyDelta(ByVal r As Element, ByVal isObsoleteRecord As Boolean, ByVal isAddedRecord As Boolean, ByVal ci As ChangedFieldInfo)
+    Public Sub ApplyDelta(ByVal r As Element, ByVal isObsoleteRecord As Boolean, ByVal isAddedRecord As Boolean, ByVal fieldInfo As ChangedFieldInfo)
         If Dirty Then
             Return
         End If
@@ -1154,15 +1154,15 @@ Public Class ManualTotalSummary
         Dim mt As ManualTotalSummary = Me
 
         If isObsoleteRecord Then
-            If ci.OldValue IsNot Nothing AndAlso Not(TypeOf ci.OldValue Is DBNull) Then
-                mt.Total -= Convert.ToDouble(ci.OldValue)
+            If fieldInfo.OldValue IsNot Nothing AndAlso Not(TypeOf fieldInfo.OldValue Is DBNull) Then
+                mt.Total -= Convert.ToDouble(fieldInfo.OldValue)
             End If
         ElseIf isAddedRecord Then
-            If ci.NewValue IsNot Nothing AndAlso Not(TypeOf ci.NewValue Is DBNull) Then
-                mt.Total += Convert.ToDouble(ci.NewValue)
+            If fieldInfo.NewValue IsNot Nothing AndAlso Not(TypeOf fieldInfo.NewValue Is DBNull) Then
+                mt.Total += Convert.ToDouble(fieldInfo.NewValue)
             End If
         Else
-            mt.Total += ci.Delta
+            mt.Total += fieldInfo.Delta
         End If
     End Sub
 
@@ -1201,19 +1201,19 @@ public class ManualTotalSummaryTable : GridTable
         // Save values for all fields where we need to be able to access the
         // old value (e.g. Delta for TotalSummaries).
         TableDescriptor td = TableDescriptor;
-        IManualTotalSummaryArraySource tsa = this.TopLevelGroup as IManualTotalSummaryArraySource;
-        if (tsa != null)
+        IManualTotalSummaryArraySource ts = this.TopLevelGroup as IManualTotalSummaryArraySource;
+        if (ts != null)
         {
             foreach (string name in this.totalSummaries)
             {
-                FieldDescriptor fd = td.Fields[name];
-                if (fd.IsPropertyField())
+                FieldDescriptor fieldDescriptor = td.Fields[name];
+                if (fieldDescriptor.IsPropertyField())
                 {
-                    PropertyDescriptor pd = fd.GetPropertyDescriptor();
+                    PropertyDescriptor pd = fieldDescriptor.GetPropertyDescriptor();
                     object value = GetValue(row, pd);
 
-                    ChangedFieldInfo ci = new ChangedFieldInfo(td, pd.Name, value, null);
-                    this.AddChangedField(ci);
+                    ChangedFieldInfo fieldInfo = new ChangedFieldInfo(td, pd.Name, value, null);
+                    this.AddChangedField(fieldInfo);
                 }
             }
         }
@@ -1224,21 +1224,21 @@ public class ManualTotalSummaryTable : GridTable
     protected override void OnPrepareItemAdded(object row)
     {
         // Get new values for which delta information is needed
-        IManualTotalSummaryArraySource tsa = this.TopLevelGroup as IManualTotalSummaryArraySource;
-        if (tsa != null)
+        IManualTotalSummaryArraySource ts = this.TopLevelGroup as IManualTotalSummaryArraySource;
+        if (ts != null)
         {
             TableDescriptor td = TableDescriptor;
 
             foreach (string name in this.totalSummaries)
             {
-                FieldDescriptor fd = td.Fields[name];
-                if (fd.IsPropertyField())
+                FieldDescriptor fieldDescriptor = td.Fields[name];
+                if (fieldDescriptor.IsPropertyField())
                 {
-                    PropertyDescriptor pd = fd.GetPropertyDescriptor();
+                    PropertyDescriptor pd = fieldDescriptor.GetPropertyDescriptor();
                     object value = GetValue(row, pd);
 
-                    ChangedFieldInfo ci = new ChangedFieldInfo(td, pd.Name, null, value);
-                    this.AddChangedField(ci);
+                    ChangedFieldInfo fieldInfo = new ChangedFieldInfo(td, pd.Name, null, value);
+                    this.AddChangedField(fieldInfo);
                 }
             }
         }
@@ -1254,12 +1254,12 @@ public class ManualTotalSummaryTable : GridTable
         {
             OnGroupSummaryInvalidated(new GroupEventArgs(g));
 
-            IManualTotalSummaryArraySource tsa = g as IManualTotalSummaryArraySource;
-            foreach (ChangedFieldInfo ci in this.ChangedFieldsArray)
+            IManualTotalSummaryArraySource ts = g as IManualTotalSummaryArraySource;
+            foreach (ChangedFieldInfo fieldInfo in this.ChangedFieldsArray)
             {
-                ManualTotalSummary mt = tsa.GetManualTotalSummaryArray()[ci.FieldIndex];
+                ManualTotalSummary mt = ts.GetManualTotalSummaryArray()[fieldInfo.FieldIndex];
                 if (mt != null)
-                    mt.ApplyDelta(r, isObsoleteRecord, isAddedRecord, ci);
+                    mt.ApplyDelta(r, isObsoleteRecord, isAddedRecord, fieldInfo);
             }
 
             g = g.ParentGroup;
@@ -1291,16 +1291,16 @@ Public Class ManualTotalSummaryTable
         ' Save values for all fields where we need to be able to access the
         ' old value (e.g. Delta for TotalSummaries).
         Dim td As TableDescriptor = TableDescriptor
-        Dim tsa As IManualTotalSummaryArraySource = TryCast(Me.TopLevelGroup, IManualTotalSummaryArraySource)
-        If tsa IsNot Nothing Then
+        Dim ts As IManualTotalSummaryArraySource = TryCast(Me.TopLevelGroup, IManualTotalSummaryArraySource)
+        If ts IsNot Nothing Then
             For Each name As String In Me.totalSummaries_Renamed
-                Dim fd As FieldDescriptor = td.Fields(name)
-                If fd.IsPropertyField() Then
-                    Dim pd As PropertyDescriptor = fd.GetPropertyDescriptor()
+                Dim fieldDescriptor As FieldDescriptor = td.Fields(name)
+                If fieldDescriptor.IsPropertyField() Then
+                    Dim pd As PropertyDescriptor = fieldDescriptor.GetPropertyDescriptor()
                     Dim value As Object = GetValue(row, pd)
 
-                    Dim ci As New ChangedFieldInfo(td, pd.Name, value, Nothing)
-                    Me.AddChangedField(ci)
+                    Dim fieldInfo As New ChangedFieldInfo(td, pd.Name, value, Nothing)
+                    Me.AddChangedField(fieldInfo)
                 End If
             Next name
         End If
@@ -1310,18 +1310,18 @@ Public Class ManualTotalSummaryTable
 
     Protected Overrides Sub OnPrepareItemAdded(ByVal row As Object)
         ' Get new values for which delta information is needed
-        Dim tsa As IManualTotalSummaryArraySource = TryCast(Me.TopLevelGroup, IManualTotalSummaryArraySource)
-        If tsa IsNot Nothing Then
+        Dim ts As IManualTotalSummaryArraySource = TryCast(Me.TopLevelGroup, IManualTotalSummaryArraySource)
+        If ts IsNot Nothing Then
             Dim td As TableDescriptor = TableDescriptor
 
             For Each name As String In Me.totalSummaries_Renamed
-                Dim fd As FieldDescriptor = td.Fields(name)
-                If fd.IsPropertyField() Then
-                    Dim pd As PropertyDescriptor = fd.GetPropertyDescriptor()
+                Dim fieldDescriptor As FieldDescriptor = td.Fields(name)
+                If fieldDescriptor.IsPropertyField() Then
+                    Dim pd As PropertyDescriptor = fieldDescriptor.GetPropertyDescriptor()
                     Dim value As Object = GetValue(row, pd)
 
-                    Dim ci As New ChangedFieldInfo(td, pd.Name, Nothing, value)
-                    Me.AddChangedField(ci)
+                    Dim fieldInfo As New ChangedFieldInfo(td, pd.Name, Nothing, value)
+                    Me.AddChangedField(fieldInfo)
                 End If
             Next name
         End If
@@ -1335,13 +1335,13 @@ Public Class ManualTotalSummaryTable
         Do While TypeOf g Is IManualTotalSummaryArraySource
             OnGroupSummaryInvalidated(New GroupEventArgs(g))
 
-            Dim tsa As IManualTotalSummaryArraySource = TryCast(g, IManualTotalSummaryArraySource)
-            For Each ci As ChangedFieldInfo In Me.ChangedFieldsArray
-                Dim mt As ManualTotalSummary = tsa.GetManualTotalSummaryArray()(ci.FieldIndex)
+            Dim ts As IManualTotalSummaryArraySource = TryCast(g, IManualTotalSummaryArraySource)
+            For Each fieldInfo As ChangedFieldInfo In Me.ChangedFieldsArray
+                Dim mt As ManualTotalSummary = ts.GetManualTotalSummaryArray()(fieldInfo.FieldIndex)
                 If mt IsNot Nothing Then
-                    mt.ApplyDelta(r, isObsoleteRecord, isAddedRecord, ci)
+                    mt.ApplyDelta(r, isObsoleteRecord, isAddedRecord, fieldInfo)
                 End If
-            Next ci
+            Next fieldInfo
 
             g = g.ParentGroup
         Loop
@@ -1391,10 +1391,10 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "C
 
 {% tabs %}
 {% highlight c# %}
-ManualTotalSummaryTable tb = (ManualTotalSummaryTable)this.gridGroupingControl1.Table;
-tb.TotalSummaries.Add("Freight");
-tb.TotalSummaries.Add("EmployeeID");
-tb.TableDirty = true; // needed after changing TotalSummaries ...
+ManualTotalSummaryTable tbs = (ManualTotalSummaryTable)this.gridGroupingControl1.Table;
+tbs.TotalSummaries.Add("Freight");
+tbs.TotalSummaries.Add("EmployeeID");
+tbs.TableDirty = true; // needed after changing TotalSummaries ...
 
 // Totals with delta support for ListChanged events - replacement for built-in summaries of grouping engine.
 this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
@@ -1423,9 +1423,9 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCel
                 if (column != null && table.TotalSummaries.IndexOf(column.MappingName) != -1)
                 {
                     int index = column.TableDescriptor.Fields.IndexOf(column.FieldDescriptor);
-                    IManualTotalSummaryArraySource tsa = (el is Syncfusion.Grouping.Group ? el : el.ParentGroup) as IManualTotalSummaryArraySource;
-                    ManualTotalSummary tm = tsa.GetManualTotalSummaryArray()[index];
-                    e.Style.CellValue = tm.Total;
+                    IManualTotalSummaryArraySource ts = (el is Syncfusion.Grouping.Group ? el : el.ParentGroup) as IManualTotalSummaryArraySource;
+                    ManualTotalSummary manualTotalSummary = ts.GetManualTotalSummaryArray()[index];
+                    e.Style.CellValue = manualTotalSummary.Total;
                     e.Style.CellValueType = typeof(double);
                     e.Style.Format = "0.00";
                 }
@@ -1439,9 +1439,9 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCel
             if (column != null && table.TotalSummaries.IndexOf(column.MappingName) != -1)
             {
                 int index = column.TableDescriptor.Fields.IndexOf(column.FieldDescriptor);
-                IManualTotalSummaryArraySource tsa = (el is Syncfusion.Grouping.Group ? el : el.ParentGroup) as IManualTotalSummaryArraySource;
-                ManualTotalSummary tm = tsa.GetManualTotalSummaryArray()[index];
-                e.Style.CellValue = tm.Total;
+                IManualTotalSummaryArraySource ts = (el is Syncfusion.Grouping.Group ? el : el.ParentGroup) as IManualTotalSummaryArraySource;
+                ManualTotalSummary manualTotalSummary = ts.GetManualTotalSummaryArray()[index];
+                e.Style.CellValue = manualTotalSummary.Total;
                 e.Style.CellValueType = typeof(double);
                 e.Style.Format = "0.00";
             }
@@ -1452,10 +1452,10 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCel
 
 {% endhighlight %}
 {% highlight vb %}
-Dim tb As ManualTotalSummaryTable = CType(Me.gridGroupingControl1.Table, ManualTotalSummaryTable)
-tb.TotalSummaries.Add("Freight")
-tb.TotalSummaries.Add("EmployeeID")
-tb.TableDirty = True ' needed after changing TotalSummaries...
+Dim tbs As ManualTotalSummaryTable = CType(Me.gridGroupingControl1.Table, ManualTotalSummaryTable)
+tbs.TotalSummaries.Add("Freight")
+tbs.TotalSummaries.Add("EmployeeID")
+tbs.TableDirty = True ' needed after changing TotalSummaries...
 
 ' Totals with delta support for ListChanged events - replacement for built-in summaries of grouping engine.
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
@@ -1480,9 +1480,9 @@ If e.Style.TableCellIdentity.ColIndex > 3 Then
 
     If column IsNot Nothing AndAlso table.TotalSummaries.IndexOf(column.MappingName) <> -1 Then
         Dim index As Integer = column.TableDescriptor.Fields.IndexOf(column.FieldDescriptor)
-        Dim tsa As IManualTotalSummaryArraySource = TryCast((If(TypeOf el Is Syncfusion.Grouping.Group, el, el.ParentGroup)), IManualTotalSummaryArraySource)
-        Dim tm As ManualTotalSummary = tsa.GetManualTotalSummaryArray()(index)
-        e.Style.CellValue = tm.Total
+        Dim ts As IManualTotalSummaryArraySource = TryCast((If(TypeOf el Is Syncfusion.Grouping.Group, el, el.ParentGroup)), IManualTotalSummaryArraySource)
+        Dim manualTotalSummary As ManualTotalSummary = ts.GetManualTotalSummaryArray()(index)
+        e.Style.CellValue = manualTotalSummary.Total
         e.Style.CellValueType = GetType(Double)
         e.Style.Format = "0.00"
     End If
@@ -1493,9 +1493,9 @@ ElseIf TypeOf el Is GridSummaryRow Then
     Dim column As GridColumnDescriptor = Me.gridGroupingControl1.TableModel.GetHeaderColumnDescriptorAt(e.TableCellIdentity.ColIndex)
     If column IsNot Nothing AndAlso table.TotalSummaries.IndexOf(column.MappingName) <> -1 Then
         Dim index As Integer = column.TableDescriptor.Fields.IndexOf(column.FieldDescriptor)
-        Dim tsa As IManualTotalSummaryArraySource = TryCast((If(TypeOf el Is Syncfusion.Grouping.Group, el, el.ParentGroup)), IManualTotalSummaryArraySource)
-        Dim tm As ManualTotalSummary = tsa.GetManualTotalSummaryArray()(index)
-        e.Style.CellValue = tm.Total
+        Dim ts As IManualTotalSummaryArraySource = TryCast((If(TypeOf el Is Syncfusion.Grouping.Group, el, el.ParentGroup)), IManualTotalSummaryArraySource)
+        Dim manualTotalSummary As ManualTotalSummary = ts.GetManualTotalSummaryArray()(index)
+        e.Style.CellValue = manualTotalSummary.Total
         e.Style.CellValueType = GetType(Double)
         e.Style.Format = "0.00"
     End If
@@ -1529,7 +1529,7 @@ Me.gridGroupingControl1.BlinkTime = 100
 void timer_tick(object sender, EventArgs e)
 {
 GridTableDescriptor td = this.gridGroupingControl1.TableDescriptor;
-ManualTotalSummaryTable tb = ((ManualTotalSummaryTable)this.gridGroupingControl1.Table);
+ManualTotalSummaryTable tbs = ((ManualTotalSummaryTable)this.gridGroupingControl1.Table);
 int i = 0;
 using (MeasureTime.Measure("Form1.timer_tick"))
 {
@@ -1546,19 +1546,19 @@ if (sortedByEmployeeID)
 
 for (i = 0; i < count; i++)
 {
-    ManualTotalSummaries.DataSet1.OrdersRow dr;
+    ManualTotalSummaries.DataSet1.OrdersRow dataRow;
 
     // Insert Records
     if (gridGroupingControl1.TestInsertRecords)
     {
       if (i % 10 == 0)
       {
-         dr = northwindDataSet1.Orders.NewOrdersRow();
-         dr.CustomerID = i.ToString() + (j++).ToString();
-         dr.EmployeeID = i;
-         dr.Freight = i / 10;
-         dr.ShipVia = 0;
-         dr.Table.Rows.Add(dr);
+         dataRow = northwindDataSet1.Orders.NewOrdersRow();
+         dataRow.CustomerID = i.ToString() + (j++).ToString();
+         dataRow.EmployeeID = i;
+         dataRow.Freight = i / 10;
+         dataRow.ShipVia = 0;
+         dataRow.Table.Rows.Add(dataRow);
          continue;
       }
     }
@@ -1569,42 +1569,42 @@ for (i = 0; i < count; i++)
         return;
     }
 
-    int newIndex = rnd.Next(northwindDataSet1.Orders.Rows.Count);
-    dr = northwindDataSet1.Orders[newIndex];
+    int newIndex = random.Next(northwindDataSet1.Orders.Rows.Count);
+    dataRow = northwindDataSet1.Orders[newIndex];
     
     // Delete records
     if (gridGroupingControl1.TestDeleteRecords)
     {
         if (i % 12 == 0)
         {
-            dr.Delete();
+            dataRow.Delete();
             continue;
         }
     }
 
     // Change records
     // Freight
-    decimal freight = (decimal)dr.Freight + Math.Round((decimal)rnd.Next(-100, 100) / 10000, 2);
-    int employeeID = (int)(rnd.NextDouble() * 1000);
+    decimal freight = (decimal)dataRow.Freight + Math.Round((decimal)random.Next(-100, 100) / 10000, 2);
+    int employeeID = (int)(random.NextDouble() * 1000);
 
-    dr.BeginEdit();
+    dataRow.BeginEdit();
 
-    decimal oldFreight = dr.Freight;
-    dr.Freight = freight;
-    dr.EmployeeID = employeeID;
+    decimal oldFreight = dataRow.Freight;
+    dataRow.Freight = freight;
+    dataRow.EmployeeID = employeeID;
 
     if (gridGroupingControl1.TestChangeGroup)
     {
         // Change Group Category
         if (i == 10)
         {
-            tb.AddChangedField(new ChangedFieldInfo(td, "ShipVia", dr.ShipVia, 0));
-            dr.ShipVia = 0;
+            tbs.AddChangedField(new ChangedFieldInfo(td, "ShipVia", dataRow.ShipVia, 0));
+            dataRow.ShipVia = 0;
         }
     }
 
     // fires ListChanged event
-    dr.EndEdit();
+    dataRow.EndEdit();
 }
 
 // Optionally manually flush changes
@@ -1618,7 +1618,7 @@ if (this.gridGroupingControl1.UpdateDisplayFrequency == 0)
 {% highlight vb %}
 Private Sub timer_tick(ByVal sender As Object, ByVal e As EventArgs)
 Dim td As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor
-Dim tb As ManualTotalSummaryTable = (CType(Me.gridGroupingControl1.Table, ManualTotalSummaryTable))
+Dim tbs As ManualTotalSummaryTable = (CType(Me.gridGroupingControl1.Table, ManualTotalSummaryTable))
 Dim i As Integer = 0
 Using MeasureTime.Measure("Form1.timer_tick")
 Dim count As Integer = 1000
@@ -1635,18 +1635,18 @@ If Me.gridGroupingControl1.SortPositionChangedBehavior = GridListChangedInsertRe
 End If
 
 For i = 0 To count - 1
-    Dim dr As ManualTotalSummaries.DataSet1.OrdersRow
+    Dim dataRow As ManualTotalSummaries.DataSet1.OrdersRow
 
     ' Insert Records
     If gridGroupingControl1.TestInsertRecords Then
         If i Mod 10 = 0 Then
-            dr = northwindDataSet1.Orders.NewOrdersRow()
-            dr.CustomerID = i.ToString() & (j).ToString()
+            dataRow = northwindDataSet1.Orders.NewOrdersRow()
+            dataRow.CustomerID = i.ToString() & (j).ToString()
             j += 1
-            dr.EmployeeID = i
-            dr.Freight = i \ 10
-            dr.ShipVia = 0
-            dr.Table.Rows.Add(dr)
+            dataRow.EmployeeID = i
+            dataRow.Freight = i \ 10
+            dataRow.ShipVia = 0
+            dataRow.Table.Rows.Add(dataRow)
             Continue For
         End If
     End If
@@ -1656,15 +1656,15 @@ For i = 0 To count - 1
         Return
     End If
 
-    Dim newIndex As Integer = rnd.Next(northwindDataSet1.Orders.Rows.Count)
-    dr = northwindDataSet1.Orders(newIndex)
+    Dim newIndex As Integer = random.Next(northwindDataSet1.Orders.Rows.Count)
+    dataRow = northwindDataSet1.Orders(newIndex)
 
 
     ' Delete records
 
     If gridGroupingControl1.TestDeleteRecords Then
         If i Mod 12 = 0 Then
-            dr.Delete()
+            dataRow.Delete()
             Continue For
         End If
     End If
@@ -1672,25 +1672,25 @@ For i = 0 To count - 1
     ' Change records
 
     ' Freight
-    Dim freight As Decimal = CDec(dr.Freight) + Math.Round(CDec(rnd.Next(-100, 100)) / 10000, 2)
-    Dim employeeID As Integer = CInt(Fix(rnd.NextDouble() * 1000))
+    Dim freight As Decimal = CDec(dataRow.Freight) + Math.Round(CDec(random.Next(-100, 100)) / 10000, 2)
+    Dim employeeID As Integer = CInt(Fix(random.NextDouble() * 1000))
 
-    dr.BeginEdit()
+    dataRow.BeginEdit()
 
-    Dim oldFreight As Decimal = dr.Freight
-    dr.Freight = freight
-    dr.EmployeeID = employeeID
+    Dim oldFreight As Decimal = dataRow.Freight
+    dataRow.Freight = freight
+    dataRow.EmployeeID = employeeID
 
     If gridGroupingControl1.TestChangeGroup Then
         ' Change Group Category
         If i = 10 Then
-            tb.AddChangedField(New ChangedFieldInfo(td, "ShipVia", dr.ShipVia, 0))
-            dr.ShipVia = 0
+            tbs.AddChangedField(New ChangedFieldInfo(td, "ShipVia", dataRow.ShipVia, 0))
+            dataRow.ShipVia = 0
         End If
     End If
 
     ' fires ListChanged event
-    dr.EndEdit()
+    dataRow.EndEdit()
 Next i
 
 ' Optionally manually flush changes
@@ -1807,10 +1807,10 @@ gridGroupingControl1.InvalidateAllWhenListChanged = False
 void gridGroupingControl1_TableControlPrepareViewStyleInfo(object sender, GridTableControlPrepareViewStyleInfoEventArgs e)
 {
     GridTableCellStyleInfo style = (GridTableCellStyleInfo)e.Inner.Style;
-    BlinkState bs = gridGroupingControl1.GetBlinkState(style.TableCellIdentity);
-    if (bs != BlinkState.None)
+    BlinkState blinkState = gridGroupingControl1.GetBlinkState(style.TableCellIdentity);
+    if (blinkState != BlinkState.None)
     {
-        if (bs == BlinkState.NewRecord)
+        if (blinkState == BlinkState.NewRecord)
         {
             e.Inner.Style.BaseStyle = "CustomStyle";
         }
@@ -1821,9 +1821,9 @@ void gridGroupingControl1_TableControlPrepareViewStyleInfo(object sender, GridTa
 {% highlight vb %}
 Private Sub gridGroupingControl1_TableControlPrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridTableControlPrepareViewStyleInfoEventArgs)
     Dim style As GridTableCellStyleInfo = CType(e.Inner.Style, GridTableCellStyleInfo)
-    Dim bs As BlinkState = gridGroupingControl1.GetBlinkState(style.TableCellIdentity)
-    If bs IsNot BlinkState.None Then
-        If bs Is BlinkState.NewRecord Then
+    Dim blinkState As BlinkState = gridGroupingControl1.GetBlinkState(style.TableCellIdentity)
+    If blinkState IsNot BlinkState.None Then
+        If blinkState Is BlinkState.NewRecord Then
             e.Inner.Style.BaseStyle = "CustomStyle"
         End If
     End If
@@ -1848,13 +1848,13 @@ try
     {
         //  Application.DoEvents();
 
-        int recNum = rand.Next(table.Rows.Count - 1);
-        int rowNum = recNum + 1;
+        int recordNumber = rand.Next(table.Rows.Count - 1);
+        int rowNumber = recordNumber + 1;
         int col = rand.Next(16) + 1;
         int colNum = col + 1;
-        DataRow drow = table.Rows[recNum];
-        if (!(drow[col] is DBNull))
-            drow[col] = (int)(Convert.ToDouble(drow[col]) * (rand.Next(50) / 100.0f + 0.8));// rand.Next(100);
+        DataRow dataRow = table.Rows[recordNumber];
+        if (!(dataRow[col] is DBNull))
+            dataRow[col] = (int)(Convert.ToDouble(dataRow[col]) * (rand.Next(50) / 100.0f + 0.8));// rand.Next(100);
 
     }
 
@@ -1865,37 +1865,37 @@ try
 
     if (toggleInsertRemove > 0 && (timerCount % insertRemoveModulus) == 0)
     {
-        icount = ++icount % (toggleInsertRemove * 2);
-        shouldInsert = icount < toggleInsertRemove;
+        iCount = ++iCount % (toggleInsertRemove * 2);
+        shouldInsert = iCount < toggleInsertRemove;
 
         if (shouldInsert)
         {
-            for (int ri = 0; ri < insertRemoveCount; ri++)
+            for (int r = 0; r < insertRemoveCount; r++)
             {
-                int recNum = 5;// rand.Next(table.Rows.Count - 1);
+                int recordNumber = 5;// rand.Next(table.Rows.Count - 1);
 
                 int next = rand.Next(100);
                 object[] row = new object[]{"H"+ti.ToString("00000"),next+1,next+2, next+3,next+4,next+5,next+6, next+7,next+8,next+9,next+10, next+11,next+12,next+13,next+14, next+15,next+16,next+17, next+18,next+19,next+20};
                 ti++;
-                DataRow drow = table.NewRow();
-                drow.ItemArray = row;
-                table.Rows.InsertAt(drow, recNum);
-                //table.Rows.Add(drow);
+                DataRow dataRow = table.NewRow();
+                dataRow.ItemArray = row;
+                table.Rows.InsertAt(dataRow, recordNumber);
+                //table.Rows.Add(dataRow);
 
             }
         }
         else
         {
-            for (int ri = 0; ri < insertRemoveCount; ri++)
+            for (int r = 0; r < insertRemoveCount; r++)
             {
-                int recNum = 5; //rand.Next(m_set.Count - 1);
-                int rowNum = recNum + 1;
+                int recordNumber = 5; //rand.Next(m_set.Count - 1);
+                int rowNumber = recordNumber + 1;
 
-                // Underlying data structure (this could be a datatable or whatever structure
+                // Underlying data structure (this could be a data table or whatever structure
                 // you use behind a virtual grid).
 
                 if (table.Rows.Count > 10)
-                    table.Rows.RemoveAt(recNum);
+                    table.Rows.RemoveAt(recordNumber);
             }
         }
     }
@@ -1920,13 +1920,13 @@ Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
         For i As Integer = 0 To m_numUpdatesPerTick - 1
             '  Application.DoEvents();
 
-            Dim recNum As Integer = rand.Next(table.Rows.Count - 1)
-            Dim rowNum As Integer = recNum + 1
+            Dim recordNumber As Integer = rand.Next(table.Rows.Count - 1)
+            Dim rowNumber As Integer = recordNumber + 1
             Dim col As Integer = rand.Next(16) + 1
             Dim colNum As Integer = col + 1
-            Dim drow As DataRow = table.Rows(recNum)
-            If Not(TypeOf drow(col) Is DBNull) Then
-                drow(col) = CInt(Fix(Convert.ToDouble(drow(col)) * (rand.Next(50) / 100.0f + 0.8))) ' rand.Next(100);
+            Dim dataRow As DataRow = table.Rows(recordNumber)
+            If Not(TypeOf dataRow(col) Is DBNull) Then
+                dataRow(col) = CInt(Fix(Convert.ToDouble(dataRow(col)) * (rand.Next(50) / 100.0f + 0.8))) ' rand.Next(100);
             End If
 
         Next i
@@ -1938,34 +1938,34 @@ Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
         End If
 
         If toggleInsertRemove > 0 AndAlso (timerCount Mod insertRemoveModulus) = 0 Then
-            icount = ++icount Mod (toggleInsertRemove * 2)
-            shouldInsert = icount < toggleInsertRemove
+            iCount = ++iCount Mod (toggleInsertRemove * 2)
+            shouldInsert = iCount < toggleInsertRemove
 
             If shouldInsert Then
-                For ri As Integer = 0 To insertRemoveCount - 1
-                    Dim recNum As Integer = 5 ' rand.Next(table.Rows.Count - 1);
+                For r As Integer = 0 To insertRemoveCount - 1
+                    Dim recordNumber As Integer = 5 ' rand.Next(table.Rows.Count - 1);
 
                     Dim [next] As Integer = rand.Next(100)
                     Dim row() As Object = {"H" & ti.ToString("00000"),[next]+1,[next]+2, [next]+3,[next]+4,[next]+5,[next]+6, [next]+7,[next]+8,[next]+9,[next]+10, [next]+11,[next]+12,[next]+13,[next]+14, [next]+15,[next]+16,[next]+17, [next]+18,[next]+19,[next]+20}
                     ti += 1
-                    Dim drow As DataRow = table.NewRow()
-                    drow.ItemArray = row
-                    table.Rows.InsertAt(drow, recNum)
-                    'table.Rows.Add(drow);
+                    Dim dataRow As DataRow = table.NewRow()
+                    dataRow.ItemArray = row
+                    table.Rows.InsertAt(dataRow, recordNumber)
+                    'table.Rows.Add(dataRow);
 
-                Next ri
+                Next r
             Else
-                For ri As Integer = 0 To insertRemoveCount - 1
-                    Dim recNum As Integer = 5 'rand.Next(m_set.Count - 1);
-                    Dim rowNum As Integer = recNum + 1
+                For r As Integer = 0 To insertRemoveCount - 1
+                    Dim recordNumber As Integer = 5 'rand.Next(m_set.Count - 1);
+                    Dim rowNumber As Integer = recordNumber + 1
 
                     ' Underlying data structure (this could be a datatable or whatever structure
                     ' you use behind a virtual grid).
 
                     If table.Rows.Count > 10 Then
-                        table.Rows.RemoveAt(recNum)
+                        table.Rows.RemoveAt(recordNumber)
                     End If
-                Next ri
+                Next r
             End If
         End If
 
@@ -2019,7 +2019,7 @@ private void checkBoxColor_CheckedChanged(object sender, System.EventArgs e)
             gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 
             // The color of these cells depends on value of cell "1". If engines ListChanged handler
-            // detects a change to column "1" it should also automatically repaint the dependant columns
+            // detects a change to column "1" it should also automatically repaint the dependent columns
             for (int i = 2; i <= 20; i++)
                 gridGroupingControl1.TableDescriptor.Fields[i.ToString()].ReferencedFields = "1";
 
@@ -2069,7 +2069,7 @@ Private Sub checkBoxColor_CheckedChanged(ByVal sender As Object, ByVal e As Syst
             AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
             ' The color of these cells depends on value of cell "1". If engines ListChanged handler
-            ' detects a change to column "1" it should also automatically repaint the dependant columns
+            ' detects a change to column "1" it should also automatically repaint the dependent columns
             For i As Integer = 2 To 20
                 gridGroupingControl1.TableDescriptor.Fields(i.ToString()).ReferencedFields = "1"
             Next i
@@ -2243,7 +2243,7 @@ This section focuses on a sample that lets you check the performance of the grid
 The grouping performance is implemented in the following sample
 
 **Sample Location:**<br/> 
-&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Nunmber&gt;\Windows\Grid.Grouping.Windows\Samples\Performance\Grouping Performance Demo
+&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Performance\Grouping Performance Demo
 
 The following is the list of the options used.
 
@@ -2271,14 +2271,14 @@ this.gridGroupingControl1.SourceListListChanged += new TableListChangedEventHand
 void gridGroupingControl1_SourceListListChanged(object sender, TableListChangedEventArgs e)
 {
     // Enable RealTime Updates
-    this.gridGroupingControl1.OptimizeIListGroupingPeformance(sender, e);
+    this.gridGroupingControl1.OptimizeIListGroupingPerformance(sender, e);
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.SourceListListChanged, AddressOf gridGroupingControl1_SourceListListChanged
 Private Sub gridGroupingControl1_SourceListListChanged(ByVal sender As Object, ByVal e As TableListChangedEventArgs)
     ' Enable RealTime Updates
-    Me.gridGroupingControl1.OptimizeIListGroupingPeformance(sender, e)
+    Me.gridGroupingControl1.OptimizeIListGroupingPerformance(sender, e)
 End Sub
 {% endhighlight %}
 {% endtabs %}

@@ -117,7 +117,7 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
     private bool _drawHotLink;
     private Color _hotColor;
     private Color _visitedColor;
-    private string _EXEname;
+    private string _EXEName;
 
     public LinkLabelCellRenderer(GridControlBase grid, GridCellModelBase cellModel)
         : base(grid, cellModel)
@@ -128,7 +128,7 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
         _hotColor = Color.Red;
         _visitedColor = Color.Purple;
 
-        _EXEname = "iexplore.exe";
+        _EXEName = "iexplore.exe";
     }
 
     public Color VisitedLinkColor
@@ -143,10 +143,10 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
         set { _hotColor = value; }
     }
 
-    public string EXEname
+    public string EXEName
     {
-        get { return _EXEname; }
-        set { _EXEname = value; }
+        get { return _EXEName; }
+        set { _EXEName = value; }
     }
 
     protected virtual void LaunchBrowser(GridStyleInfo style)
@@ -154,7 +154,7 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
         try
         {
             System.Diagnostics.Process process = new System.Diagnostics.Process();
-            process.StartInfo.FileName = EXEname;
+            process.StartInfo.FileName = EXEName;
             process.StartInfo.Arguments = (string)style.Tag;
             process.Start();
         }
@@ -259,7 +259,7 @@ Public Class LinkLabelCellRenderer
 	Private _drawHotLink As Boolean
 	Private _hotColor As Color
 	Private _visitedColor As Color
-	Private _EXEname As String
+	Private _EXEName As String
 
 	Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridCellModelBase)
 		MyBase.New(grid, cellModel)
@@ -269,7 +269,7 @@ Public Class LinkLabelCellRenderer
 		_hotColor = Color.Red
 		_visitedColor = Color.Purple
 
-		_EXEname = "iexplore.exe"
+		_EXEName = "iexplore.exe"
 	End Sub
 
 	Public Property VisitedLinkColor() As Color
@@ -290,19 +290,19 @@ Public Class LinkLabelCellRenderer
 		End Set
 	End Property
 
-	Public Property EXEname() As String
+	Public Property EXEName() As String
 		Get
-			Return _EXEname
+			Return _EXEName
 		End Get
 		Set(ByVal value As String)
-			_EXEname = value
+			_EXEName = value
 		End Set
 	End Property
 
 	Protected Overridable Sub LaunchBrowser(ByVal style As GridStyleInfo)
 		Try
 			Dim process As New System.Diagnostics.Process()
-			process.StartInfo.FileName = EXEname
+			process.StartInfo.FileName = EXEName
 			process.StartInfo.Arguments = CStr(style.Tag)
 			process.Start()
 		Catch ex As Exception

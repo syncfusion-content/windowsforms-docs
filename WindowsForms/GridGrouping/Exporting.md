@@ -89,24 +89,24 @@ By default, the rows and columns are exported with its corresponding row height 
 
 {% tabs %}
 {% highlight c# %}
-GridGroupingExcelConverterControl ggec = new GridGroupingExcelConverterControl();
+GridGroupingExcelConverterControl excelConverter = new GridGroupingExcelConverterControl();
 //Auto fit rows and columns
-ggec.CanExportColumnWidth = true;
-ggec.CanExportRowHeight = true;
+excelConverter.CanExportColumnWidth = true;
+excelConverter.CanExportRowHeight = true;
 //Exporting Options
 ExcelExportingOptions options = new ExcelExportingOptions();            
 //Export the contents of the grid to excel
-ggec.ExportToExcel(this.gridGroupingControl1, "FileName.xls", options);
+excelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.xls", options);
 {% endhighlight %}
 {% highlight vb %}
-Dim ggec As New GridGroupingExcelConverterControl()
+Dim excelConverter As New GridGroupingExcelConverterControl()
 'Auto fit rows and columns
-ggec.CanExportColumnWidth = True
-ggec.CanExportRowHeight = True
+excelConverter.CanExportColumnWidth = True
+excelConverter.CanExportRowHeight = True
 'Exporting Options
 Dim options As New ExcelExportingOptions()
 'Export the contents of the grid to excel
-ggec.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", options)
+excelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", options)
 {% endhighlight %}
 {% endtabs %}
 
@@ -115,30 +115,30 @@ The default row height and column width can be set for the exported excel docume
 
 {% tabs %}
 {% highlight c# %}
-GridGroupingExcelConverterControl ggec = new GridGroupingExcelConverterControl();
+GridGroupingExcelConverterControl excelConverter = new GridGroupingExcelConverterControl();
 //Disable auto fit rows and columns
-ggec.CanExportColumnWidth = false;
-ggec.CanExportRowHeight = false;
+excelConverter.CanExportColumnWidth = false;
+excelConverter.CanExportRowHeight = false;
 //Set default row height and col width need to be export
-ggec.DefaultRowHeight = 20;
-ggec.DefaultColumnWidth = 20;            
+excelConverter.DefaultRowHeight = 20;
+excelConverter.DefaultColumnWidth = 20;            
 //Exporting Options
 ExcelExportingOptions options = new ExcelExportingOptions();
 //Export the contents of the grid to excel
-ggec.ExportToExcel(this.gridGroupingControl1, "FileName.xls", options);
+excelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.xls", options);
 {% endhighlight %}
 {% highlight vb %}
-Dim ggec As New GridGroupingExcelConverterControl()
+Dim excelConverter As New GridGroupingExcelConverterControl()
 'Disable auto fit rows and columns
-ggec.CanExportColumnWidth = False
-ggec.CanExportRowHeight = False
+excelConverter.CanExportColumnWidth = False
+excelConverter.CanExportRowHeight = False
 'Set default row height and col width need to be export
-ggec.DefaultRowHeight = 20
-ggec.DefaultColumnWidth = 20
+excelConverter.DefaultRowHeight = 20
+excelConverter.DefaultColumnWidth = 20
 'Exporting Options
 Dim options As New ExcelExportingOptions()
 'Export the contents of the grid to excel
-ggec.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", options)
+excelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", options)
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,16 +167,16 @@ The version of the exported excel file can be specified by using the [ExcelVersi
 
 {% tabs %}
 {% highlight c# %}
-GridGroupingExcelConverterControl ggec = new GridGroupingExcelConverterControl();
+GridGroupingExcelConverterControl excelConverter = new GridGroupingExcelConverterControl();
 //Export the grid to Excel 2007 version 
-ggec.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007;
-ggec.ExportToExcel(this.gridGroupingControl1, "FileName.xls", new ExcelExportingOptions());
+excelConverter.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007;
+excelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.xls", new ExcelExportingOptions());
 {% endhighlight %}
 {% highlight vb %}
-Dim ggec As New GridGroupingExcelConverterControl()
+Dim excelConverter As New GridGroupingExcelConverterControl()
 'Export the grid to Excel 2007 version 
-ggec.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007
-ggec.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", New ExcelExportingOptions())
+excelConverter.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007
+excelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", New ExcelExportingOptions())
 {% endhighlight %}
 {% endtabs %}
 
@@ -1050,11 +1050,11 @@ The column formats which are all set using the `Column.Appearance.AnyRecordField
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
-// Exporing the data without creating style object ExcelConverter.EnableOptimization = true; ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
+// Exporting the data without creating style object ExcelConverter.EnableOptimization = true; ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
-' Exporing the data without creating style object ExcelConverter.EnableOptimization = true; ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
+' Exporting the data without creating style object ExcelConverter.EnableOptimization = true; ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
 {% endhighlight %}
 {% endtabs %}
 

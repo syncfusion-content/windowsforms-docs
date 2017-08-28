@@ -17,8 +17,8 @@ The following code snippet illustrates this.
 
  
 // Add an expression property that multiplies field B by 2.1 and adds 3.2
-ExpressionFieldDescriptor efd = new ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2");
-this.groupingEngine.TableDescriptor.ExpressionFields.Add(efd);
+ExpressionFieldDescriptor expressionFieldDescriptor = new ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2");
+this.groupingEngine.TableDescriptor.ExpressionFields.Add(expressionFieldDescriptor);
  
 // Assumes the datasource to be an IList, holding objects of type MyObject.
 MyObject o = this.groupingEngine.Table.Records[2].GetData() as MyObject;
@@ -35,8 +35,8 @@ object someExpressionValue = this.groupingEngine.Table.Records[2].GetValue("Mult
 
  {% highlight vbnet %}
 ' Add an expression property that multiplies field B by 2.1 and adds 3.2
-Dim efd As New ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2")
-Me.groupingEngine.TableDescriptor.ExpressionFields.Add(efd)
+Dim expressionFieldDescriptor As New ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2")
+Me.groupingEngine.TableDescriptor.ExpressionFields.Add(expressionFieldDescriptor)
  
 ' Assumes the datasource to be an IList, holding objects of type MyObject.
 Dim o As MyObject = CType(Me.groupingEngine.Table.Records(2).GetData(), MyObject)
