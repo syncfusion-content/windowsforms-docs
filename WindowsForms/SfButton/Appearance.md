@@ -39,7 +39,7 @@ Please find the **SfButton** with gradient background below,
 ![](SfButton_images/SfButton_img9.jpeg)
 
 ### Background Image
-The background of the **SfButton** can be filled with image by initialize the **BackgroundImage** property. The background image layout can be changing by initializing any one of**ImageLayout** enumeration value to **BackgroundImageLayout** property.
+The background of the **SfButton** can be filled with image by initialize the **BackgroundImage** property. The background image layout can be changing by initializing any one of **ImageLayout** enumeration value to **BackgroundImageLayout** property.
 
 {% highlight c# %}
 
@@ -60,7 +60,7 @@ Please find the **SfButton** with background image with center layout below,
 **SfButton** provides options to customize the appearance based on the button state.
 
 ### BackColor and ForeColor
-The backcolor and forecolor of the **SfButton** in hover state can be changed by using the **HoverBackColor** and **HoverForeColor** properties. Like the hover state, you can able to customize in pressed state, focused state, normal state and disable state of the SfButton.
+The backcolor and fore color of the **SfButton** in hover state can be changed by using the **HoverBackColor** and **HoverForeColor** properties. Like the hover state, you can able to customize in pressed state, focused state, normal state and disable state of the SfButton.
 
 {% highlight c# %}
 //Initializing the back color.
@@ -171,7 +171,7 @@ To draw the rounded rectangle shape for **SfButton** follow the below steps,
 1. Raise the Paint event of the SfButton,
 
 {% highlight c# %}
-//Raises the paint event of the Sfbutton
+//Raises the paint event of the SfButton
 sfButton1.Paint += sfButton1_Paint;
 {% endhighlight %}
 

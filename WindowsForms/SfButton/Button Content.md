@@ -57,7 +57,7 @@ If the **AutoSize** property is enabled, the **SfButton** does not allow to wrap
 The ellipsis character can be shown inside the SfButton by enable the **AllowEllipsis** property.
 
 {% highlight c# %}
-//Enable AutoEllipsis property to show the ellpsis character.
+//Enable AutoEllipsis property to show the ellipsis character.
 sfButton1.AutoEllipsis = true;
 
 {% endhighlight %}
