@@ -31,44 +31,44 @@ The summary can be added to a particular column using the steps given below,
 
 {% tabs %}
 {% highlight c# %}
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor(); 
-scd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(192, 255, 162)); 
-scd.DataMember = "wins"; 
-scd.Format = "{Sum}"; 
-scd.Name = "TotalWins"; 
-scd.SummaryType = SummaryType.Int32Aggregate;
+GridSummaryColumnDescriptor summaryColumnDescriptor = new GridSummaryColumnDescriptor(); 
+summaryColumnDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(192, 255, 162)); 
+summaryColumnDescriptor.DataMember = "wins"; 
+summaryColumnDescriptor.Format = "{Sum}"; 
+summaryColumnDescriptor.Name = "TotalWins"; 
+summaryColumnDescriptor.SummaryType = SummaryType.Int32Aggregate;
 {% endhighlight %}
 {% highlight vb %}
-Dim scd As New GridSummaryColumnDescriptor()
-scd.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 162))
-scd.DataMember = "wins"
-scd.Format = "{Sum}"
-scd.Name = "TotalWins"
-scd.SummaryType = SummaryType.Int32Aggregate
+Dim summaryColumnDescriptor As New GridSummaryColumnDescriptor()
+summaryColumnDescriptor.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(192, 255, 162))
+summaryColumnDescriptor.DataMember = "wins"
+summaryColumnDescriptor.Format = "{Sum}"
+summaryColumnDescriptor.Name = "TotalWins"
+summaryColumnDescriptor.SummaryType = SummaryType.Int32Aggregate
 {% endhighlight %}
 {% endtabs %}
 
 2.Define a summary row and add the summary column into it.
 {% tabs %}
 {% highlight c# %}
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor(); 
-srd.SummaryColumns.Add(scd); 
-srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor(); 
+summaryRowDescriptor.SummaryColumns.Add(summaryColumnDescriptor); 
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
 {% endhighlight %}
 {% highlight vb %}
-Dim srd As New GridSummaryRowDescriptor()
-srd.SummaryColumns.Add(scd)
-srd.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231, 162))
+Dim summaryRowDescriptor As New GridSummaryRowDescriptor()
+summaryRowDescriptor.SummaryColumns.Add(summaryColumnDescriptor)
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231, 162))
 {% endhighlight %}
 {% endtabs %}
 
 3.Finally add summary row to the grid.
 {% tabs %}
 {% highlight c# %}
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 {% endhighlight %}
 {% highlight vb %}
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 {% endhighlight %}
 {% endtabs %}
 
@@ -89,11 +89,11 @@ scd1.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(192, 255,
 GridSummaryColumnDescriptor scd2 = new GridSummaryColumnDescriptor("Losses", SummaryType.Int32Aggregate, "losses", "{Sum}");
 scd2.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.LavenderBlush);
 
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor();
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor();
 //Adding the summary columns into the summary row descriptor
-srd.SummaryColumns.AddRange(new GridSummaryColumnDescriptor[] { scd1, scd2 });
-srd.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+summaryRowDescriptor.SummaryColumns.AddRange(new GridSummaryColumnDescriptor[] { scd1, scd2 });
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.FromArgb(255, 231, 162));
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'Create summary column descriptor 1
@@ -104,11 +104,11 @@ scd1.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(192, 255,
 Dim scd2 As New GridSummaryColumnDescriptor("Losses", SummaryType.Int32Aggregate, "losses", "{Sum}")
 scd2.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.LavenderBlush)
 
-Dim srd As New GridSummaryRowDescriptor()
+Dim summaryRowDescriptor As New GridSummaryRowDescriptor()
 'Adding the summary columns into the summary row descriptor
-srd.SummaryColumns.AddRange(New GridSummaryColumnDescriptor() { scd1, scd2 })
-srd.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231, 162))
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
+summaryRowDescriptor.SummaryColumns.AddRange(New GridSummaryColumnDescriptor() { scd1, scd2 })
+summaryRowDescriptor.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.FromArgb(255, 231, 162))
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 {% endhighlight %}
 {% endtabs %}
@@ -169,21 +169,21 @@ The GridGroupingControl allows to display the summaries for the child groups of 
 {% tabs %}
 {% highlight c# %}
 //Adds Summaries for the Parent Table(Orders).
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor("Sum", "$", scd);
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
-srd.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162);
+GridSummaryColumnDescriptor summaryColumnDescriptor = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor("Sum", "$", summaryColumnDescriptor);
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162);
 
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'Adds Summaries for the Parent Table(Orders).
-Dim scd As New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
-Dim srd As New GridSummaryRowDescriptor("Sum", "$", scd)
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
-srd.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162)
+Dim summaryColumnDescriptor As New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
+Dim summaryRowDescriptor As New GridSummaryRowDescriptor("Sum", "$", summaryColumnDescriptor)
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.FromArgb(255, 231, 162)
 
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 {% endhighlight %}
 {% endtabs %}
 
@@ -200,22 +200,22 @@ GridGroupingControl provides built-in options to display group summaries for the
 {% tabs %}
 {% highlight c# %}
 //Adds Summaries.
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "wins", "{Sum:#}");
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor("Sum", "$", scd);
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
-srd.Appearance.AnyCell.BackColor = Color.Cornsilk;
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+GridSummaryColumnDescriptor summaryColumnDescriptor = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "wins", "{Sum:#}");
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor("Sum", "$", summaryColumnDescriptor);
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.Cornsilk;
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 
 this.gridGroupingControl1.ShowGroupDropArea = true;
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Sport");
 {% endhighlight %}
 {% highlight vb %}
 'Adds Summaries.
-Dim scd As New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "wins", "{Sum:#}")
-Dim srd As New GridSummaryRowDescriptor("Sum", "$", scd)
-srd.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
-srd.Appearance.AnyCell.BackColor = Color.Cornsilk
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
+Dim summaryColumnDescriptor As New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "wins", "{Sum:#}")
+Dim summaryRowDescriptor As New GridSummaryRowDescriptor("Sum", "$", summaryColumnDescriptor)
+summaryRowDescriptor.Appearance.AnyCell.HorizontalAlignment = GridHorizontalAlignment.Right
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.Cornsilk
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 Me.gridGroupingControl1.ShowGroupDropArea = True
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Sport")
@@ -315,22 +315,22 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
 {% highlight c# %}
 //Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
-SortColumnDescriptor gsd = new SortColumnDescriptor("ShipCountry");
+SortColumnDescriptor sortColumnDescriptor = new SortColumnDescriptor("ShipCountry");
 
 //Specifies a summary name and the property (values will be determined using reflection).
-gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
+sortColumnDescriptor.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
 
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd);
+this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
-Dim gsd As New SortColumnDescriptor("ShipCountry")
+Dim sortColumnDescriptor As New SortColumnDescriptor("ShipCountry")
 
 'Specifies a summary name and the property (values will be determined using reflection).
-gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
+sortColumnDescriptor.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
 
-Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd)
+Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor)
 {% endhighlight %}
 {% endtabs %}
 
@@ -383,15 +383,15 @@ The alignment of the summary value can be changed by using the alignment propert
 {% tabs %}
 {% highlight c# %}
 //Create summary column descriptor 
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor("Freight", SummaryType.Int32Aggregate, "Freight", "Total ={Count}");
+GridSummaryColumnDescriptor summaryColumnDescriptor = new GridSummaryColumnDescriptor("Freight", SummaryType.Int32Aggregate, "Freight", "Total ={Count}");
 //Set the alignment for the summary column descriptor cell.
-scd.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+summaryColumnDescriptor.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right;
 {% endhighlight %}
 {% highlight vb %}
 'Create summary column descriptor 
-Dim scd As New GridSummaryColumnDescriptor("Freight", SummaryType.Int32Aggregate, "Freight", "Total ={Count}")
+Dim summaryColumnDescriptor As New GridSummaryColumnDescriptor("Freight", SummaryType.Int32Aggregate, "Freight", "Total ={Count}")
 'Set the alignment for the summary column descriptor cell.
-scd.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right
+summaryColumnDescriptor.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right
 {% endhighlight %}
 {% endtabs %}
 The alignment of the summary cells can also be changed by using the [Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~Appearance.html) property of the GridGroupingControl.
@@ -420,13 +420,13 @@ this.gridGroupingControl1.TableDescriptor.Appearance.AnySummaryCell.Font.Bold = 
 //Setting the Appearance of the Summary Cells through the SummaryRowDescriptor
 
 //Adds Summaries for the Parent Table(Orders).
-GridSummaryColumnDescriptor scd = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
-GridSummaryRowDescriptor srd = new GridSummaryRowDescriptor("Sum", "$", scd);
+GridSummaryColumnDescriptor summaryColumnDescriptor = new GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}");
+GridSummaryRowDescriptor summaryRowDescriptor = new GridSummaryRowDescriptor("Sum", "$", summaryColumnDescriptor);
 //Setting the appearance for the summary cells
-srd.Appearance.AnyCell.BackColor = Color.Green;
-srd.Appearance.AnyCell.TextColor = Color.White;
-srd.Appearance.AnyCell.CellType = GridCellTypeName.Static;
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd);
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.Green;
+summaryRowDescriptor.Appearance.AnyCell.TextColor = Color.White;
+summaryRowDescriptor.Appearance.AnyCell.CellType = GridCellTypeName.Static;
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'Changing the Appearance of the Summary Cells through the TableDescriptor
@@ -438,14 +438,14 @@ Me.gridGroupingControl1.TableDescriptor.Appearance.AnySummaryCell.Font.Bold = Tr
 'Setting the Appearance of the Summary Cells through the SummaryRowDescriptor
 
 'Adds Summaries for the Parent Table(Orders).
-Dim scd As New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
-Dim srd As New GridSummaryRowDescriptor("Sum", "$", scd)
+Dim summaryColumnDescriptor As New GridSummaryColumnDescriptor("Sum", SummaryType.DoubleAggregate, "Freight", "{Sum:#}")
+Dim summaryRowDescriptor As New GridSummaryRowDescriptor("Sum", "$", summaryColumnDescriptor)
 'Setting the appearance for the summary cells
-srd.Appearance.AnyCell.BackColor = Color.Green
-srd.Appearance.AnyCell.TextColor = Color.White
-srd.Appearance.AnyCell.CellType = GridCellTypeName.Static
+summaryRowDescriptor.Appearance.AnyCell.BackColor = Color.Green
+summaryRowDescriptor.Appearance.AnyCell.TextColor = Color.White
+summaryRowDescriptor.Appearance.AnyCell.CellType = GridCellTypeName.Static
 
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(srd)
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 {% endhighlight %}
 {% endtabs %}
 ![](Summaries_images/Summaries_img8.png)
@@ -497,9 +497,9 @@ public class TotalSummary : SummaryBase
 
     public static readonly TotalSummary Empty = new TotalSummary(0);
 
-    public static ITreeTableSummary CreateSummaryMethod(SummaryDescriptor sd, Record record)
+    public static ITreeTableSummary CreateSummaryMethod(SummaryDescriptor summaryDescriptor, Record record)
     {
-        object obj = sd.GetValue(record);
+        object obj = summaryDescriptor.GetValue(record);
         bool isNull = (obj == null || obj is DBNull);
         if (isNull)
             return Empty;
@@ -554,8 +554,8 @@ Public Class TotalSummary
 
     Public Shared ReadOnly Empty As New TotalSummary(0)
 
-    Public Shared Function CreateSummaryMethod(ByVal sd As SummaryDescriptor, ByVal record As Record) As ITreeTableSummary
-        Dim obj As Object = sd.GetValue(record)
+    Public Shared Function CreateSummaryMethod(ByVal summaryDescriptor As SummaryDescriptor, ByVal record As Record) As ITreeTableSummary
+        Dim obj As Object = summaryDescriptor.GetValue(record)
         Dim isNull As Boolean = (obj Is Nothing OrElse TypeOf obj Is DBNull)
         If isNull Then
             Return Empty
@@ -603,22 +603,22 @@ Add the custom summary to the grid by specifying the `SummaryType` as `Custom` f
 
 {% tabs %}
 {% highlight c# %}
-GridSummaryColumnDescriptor sd1 = new GridSummaryColumnDescriptor();
-sd1.Name = "QuantityTotal";
-sd1.DataMember = "Freight";
-sd1.DisplayColumn = "Freight";
-sd1.Format = "{Total}";
-sd1.SummaryType = SummaryType.Custom;
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(new GridSummaryRowDescriptor("Row 1", "Total", sd1));
+GridSummaryColumnDescriptor summaryDescriptor1 = new GridSummaryColumnDescriptor();
+summaryDescriptor1.Name = "QuantityTotal";
+summaryDescriptor1.DataMember = "Freight";
+summaryDescriptor1.DisplayColumn = "Freight";
+summaryDescriptor1.Format = "{Total}";
+summaryDescriptor1.SummaryType = SummaryType.Custom;
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(new GridSummaryRowDescriptor("Row 1", "Total", summaryDescriptor1));
 {% endhighlight %}
 {% highlight vb %}
-Dim sd1 As New GridSummaryColumnDescriptor()
-sd1.Name = "QuantityTotal"
-sd1.DataMember = "Freight"
-sd1.DisplayColumn = "Freight"
-sd1.Format = "{Total}"
-sd1.SummaryType = SummaryType.Custom
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(New GridSummaryRowDescriptor("Row 1", "Total", sd1))
+Dim summaryDescriptor1 As New GridSummaryColumnDescriptor()
+summaryDescriptor1.Name = "QuantityTotal"
+summaryDescriptor1.DataMember = "Freight"
+summaryDescriptor1.DisplayColumn = "Freight"
+summaryDescriptor1.Format = "{Total}"
+summaryDescriptor1.SummaryType = SummaryType.Custom
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(New GridSummaryRowDescriptor("Row 1", "Total", summaryDescriptor1))
 {% endhighlight %}
 {% endtabs %}
 Set the custom summary value to the GridGroupingControl using the `QueryCustomSummary` event of the [GridSummaryRowDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridSummaryRowDescriptor.html).

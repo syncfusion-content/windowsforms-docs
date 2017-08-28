@@ -253,9 +253,9 @@ Me.gridGroupingControl1.Splitter.BackColor = Color.Green
 GroupDropArea can be accessed as a grid, events like [PrepareViewStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrepareViewStyleInfo_EV.html) can be used. Using this event, you can change the Font, Text, TextColor and other customizations in GroupDropArea. 
 {% tabs %}
 {% highlight c# %}
-foreach (Control ctl in this.gridGroupingControl1.GroupDropPanel.Controls)
+foreach (Control ctrl in this.gridGroupingControl1.GroupDropPanel.Controls)
 {
-    GridGroupDropArea groupDropArea = ctl as GridGroupDropArea;
+    GridGroupDropArea groupDropArea = ctrl as GridGroupDropArea;
     switch (groupDropArea.Model.Table.TableDescriptor.Name)
     {
         case "Customers":
@@ -275,8 +275,8 @@ this.gridGroupingControl1.Splitter.BackColor = Color.IndianRed;
 {% endhighlight %}
 {% highlight vb %}
 
-For Each ctl As Control In Me.gridGroupingControl1.GroupDropPanel.Controls
-    Dim groupDropArea As GridGroupDropArea = TryCast(ctl, GridGroupDropArea)
+For Each ctrl As Control In Me.gridGroupingControl1.GroupDropPanel.Controls
+    Dim groupDropArea As GridGroupDropArea = TryCast(ctrl, GridGroupDropArea)
     Select Case groupDropArea.Model.Table.TableDescriptor.Name
         Case "Customers"
             groupDropArea.BackColor = Color.DarkOliveGreen
@@ -286,7 +286,7 @@ For Each ctl As Control In Me.gridGroupingControl1.GroupDropPanel.Controls
             groupDropArea.BackColor = Color.DarkOliveGreen
             AddHandler groupDropArea.PrepareViewStyleInfo, AddressOf ChildTable_PrepareViewStyleInfo
     End Select
-Next ctl
+Next ctrl
 Me.gridGroupingControl1.Splitter.BackColor = Color.IndianRed
 {% endhighlight %}
 {% endtabs %}
@@ -518,18 +518,18 @@ The below code explains the implementation of `IGroupByColumnCategorizer` interf
      //defines a group and returns a group category object (here returns 1 through 5)
      public static int GetCategory(int i)
      {
-         int ret = 0;
+         int value = 0;
          if (i < 10)
-             ret = 1;
+             value = 1;
          else if (i >= 10 && i < 20)
-             ret = 2;
+             value = 2;
          else if (i >= 20 && i < 30)
-             ret = 3;
+             value = 3;
          else if (i >= 30 && i < 40)
-             ret = 4;
+             value = 4;
          else
-             ret = 5;
-         return ret;
+             value = 5;
+         return value;
      }
      public object GetGroupByCategoryKey(SortColumnDescriptor column, bool isForeignKey, Record record)
      {
@@ -548,19 +548,19 @@ The below code explains the implementation of `IGroupByColumnCategorizer` interf
      Implements Syncfusion.Grouping.IGroupByColumnCategorizer
      'defines a group and returns a group category object (here returns 1 through 5)
      Public Shared Function GetCategory(ByVal i As Integer) As Integer
-         Dim ret As Integer = 0
+         Dim value As Integer = 0
          If i < 10 Then
-             ret = 1
+             value = 1
          ElseIf i >= 10 AndAlso i < 20 Then
-             ret = 2
+             value = 2
          ElseIf i >= 20 AndAlso i < 30 Then
-             ret = 3
+             value = 3
          ElseIf i >= 30 AndAlso i < 40 Then
-             ret = 4
+             value = 4
          Else
-             ret = 5
+             value = 5
          End If
-         Return ret
+         Return value
      End Function
      Public Function GetGroupByCategoryKey(ByVal column As SortColumnDescriptor, ByVal isForeignKey As Boolean, ByVal record As Record) As Object
          Return GetCategory(Integer.Parse(record.GetValue(column).ToString()))
@@ -621,17 +621,17 @@ After implementing both `IComparer` and `IGroupByColumnCategorizer` interfaces, 
 {% tabs %}
 {% highlight c# %}
 //group "Col2" using a custom categorizer and Comparer
-Syncfusion.Grouping.SortColumnDescriptor cd = new Syncfusion.Grouping.SortColumnDescriptor("Col2");
-cd.Categorizer = new CustomCategorizer();
-cd.Comparer = new CustomComparer();
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd);
+Syncfusion.Grouping.SortColumnDescriptor columnDescriptor = new Syncfusion.Grouping.SortColumnDescriptor("Col2");
+columnDescriptor.Categorizer = new CustomCategorizer();
+columnDescriptor.Comparer = new CustomComparer();
+this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'group "Col2" using a custom categorizer and Comparer
-Dim cd As New Syncfusion.Grouping.SortColumnDescriptor("Col2")
-cd.Categorizer = New CustomCategorizer()
-cd.Comparer = New CustomComparer()
-Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd)
+Dim columnDescriptor As New Syncfusion.Grouping.SortColumnDescriptor("Col2")
+columnDescriptor.Categorizer = New CustomCategorizer()
+columnDescriptor.Comparer = New CustomComparer()
+Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor)
 {% endhighlight %}
 {% endtabs %}
 
@@ -651,26 +651,26 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.W
             && e.TableCellIdentity.GroupedColumn.Name == "Col2")
         {
             int cat = (int)e.TableCellIdentity.DisplayElement.ParentGroup.Category;
-            string ret = "";
+            string value = "";
             switch (cat)
             {
                 case 1:
-                    ret = " < 10";
+                    value = " < 10";
                     break;
                 case 2:
-                    ret = "10 - 19";
+                    value = "10 - 19";
                     break;
                 case 3:
-                    ret = "20 - 29";
+                    value = "20 - 29";
                     break;
                 case 4:
-                    ret = "30 - 39";
+                    value = "30 - 39";
                     break;
                 case 5:
-                    ret = " >= 40";
+                    value = " >= 40";
                     break;
             }
-            e.Style.CellValue = String.Format("{0}: {1} Items.", ret, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount());
+            e.Style.CellValue = String.Format("{0}: {1} Items.", value, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount());
         }
     }
 }
@@ -683,20 +683,20 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
     If e.TableCellIdentity.GroupedColumn IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.ParentGroup IsNot Nothing AndAlso TypeOf e.TableCellIdentity.DisplayElement.ParentGroup.Category Is Integer Then
         If TypeOf e.TableCellIdentity.DisplayElement Is CaptionRow AndAlso e.TableCellIdentity.GroupedColumn.Name = "Col2" Then
             Dim cat As Integer = CInt(Fix(e.TableCellIdentity.DisplayElement.ParentGroup.Category))
-            Dim ret As String = ""
+            Dim value As String = ""
             Select Case cat
                 Case 1
-                    ret = " < 10"
+                    value = " < 10"
                 Case 2
-                    ret = "10 - 19"
+                    value = "10 - 19"
                 Case 3
-                    ret = "20 - 29"
+                    value = "20 - 29"
                 Case 4
-                    ret = "30 - 39"
+                    value = "30 - 39"
                 Case 5
-                    ret = " >= 40"
+                    value = " >= 40"
             End Select
-            e.Style.CellValue = String.Format("{0}: {1} Items.", ret, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount())
+            e.Style.CellValue = String.Format("{0}: {1} Items.", value, e.TableCellIdentity.DisplayElement.ParentGroup.GetChildCount())
         End If
     End If
 End Sub
@@ -1081,17 +1081,17 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.Changed += new ListProp
 //GroupedColumns_Changing event.
 void GroupedColumns_Changing(object sender, ListPropertyChangedEventArgs e)
 {
-SortColumnDescriptor scd = e.Item as SortColumnDescriptor;
+SortColumnDescriptor sortColumnDescriptor = e.Item as SortColumnDescriptor;
 if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Insert)
-Console.WriteLine("Column Added - {0}", scd.Name);
+Console.WriteLine("Column Added - {0}", sortColumnDescriptor.Name);
 }
 
 //GroupedColumns_Changed event.
 void GroupedColumns_Changed(object sender, ListPropertyChangedEventArgs e)
 {
-SortColumnDescriptor scd = e.Item as SortColumnDescriptor;
+SortColumnDescriptor sortColumnDescriptor = e.Item as SortColumnDescriptor;
 if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Remove)
-Console.WriteLine("Column Removed - {0}", scd.Name);
+Console.WriteLine("Column Removed - {0}", sortColumnDescriptor.Name);
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -1101,17 +1101,17 @@ AddHandler gridGroupingControl1.TableDescriptor.GroupedColumns.Changing, Address
 'Event Handlers.
 'GroupedColumns_Changing event.
 Private Sub GroupedColumns_Changed(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
-Dim scd As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
+Dim sortColumnDescriptor As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
 If e.Action = ListPropertyChangedType.Insert Then
-Console.WriteLine("Column Added - {0}" + scd.Name)
+Console.WriteLine("Column Added - {0}" + sortColumnDescriptor.Name)
 End If
 End Sub
 
 'GroupedColumns_Changed event.
 Private Sub GroupedColumns_Changing(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
-Dim scd As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
+Dim sortColumnDescriptor As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
 If e.Action = ListPropertyChangedType.Remove Then
-Console.WriteLine("Column Removed - {0}" + scd.Name)
+Console.WriteLine("Column Removed - {0}" + sortColumnDescriptor.Name)
 End If
 End Sub
 {% endhighlight %}

@@ -151,7 +151,7 @@ frDialog.Find(frEvents)
 The below code snippet denotes to find the text in all places at once.
 {% tabs %}
 {% highlight c# %}
-private void findallBtn_Click(object sender, EventArgs e)
+private void findAll_Click(object sender, EventArgs e)
 {
      findAll = true;
      resetAll = false;
@@ -164,7 +164,7 @@ private void findallBtn_Click(object sender, EventArgs e)
 
 {% endhighlight %}
 {% highlight vb %}
-Private Sub findallBtn_Click(ByVal sender As Object, ByVal e As EventArgs)
+Private Sub findAll_Click(ByVal sender As Object, ByVal e As EventArgs)
 	findAll = True
 	resetAll = False
 	SetOptions()
@@ -220,29 +220,29 @@ The search text can be highlighted by using the [GridHighlightSearchText](http:/
 {% tabs %}
 {% highlight c# %}
 //Creates an instance for the class “GridHighlightSearchText”.
-GridHighlightSearchText highlighttext = new GridHighlightSearchText();
+GridHighlightSearchText highlightText = new GridHighlightSearchText();
 
 //Wires the table control to the object.
-highlighttext.WireGrid(this.gridGroupingControl1.TableControl);
+highlightText.WireGrid(this.gridGroupingControl1.TableControl);
 
 //Assigns the text that needs to be highlighted.
-highlighttext.HighlightText = "112";
+highlightText.highlightText = "112";
 
 //Assigns the color (optional).
-highlighttext.HighlightColor = Color.Yellow;
+highlightText.HighlightColor = Color.Yellow;
 {% endhighlight %}
 {% highlight vb %}
 'Creates an instance for the class “GridHighlightSearchText”.
-Dim highlighttext As New GridHighlightSearchText()
+Dim highlightText As New GridHighlightSearchText()
 
 'Wires the table control to the object.
-highlighttext.WireGrid(Me.gridGroupingControl1.TableControl)
+highlightText.WireGrid(Me.gridGroupingControl1.TableControl)
 
 'Assigns the text that needs to be highlighted.
-highlighttext.HighlightText = "112"
+highlightText.highlightText = "112"
 
 'Assigns the color (optional).
-highlighttext.HighlightColor = Color.Yellow
+highlightText.HighlightColor = Color.Yellow
 {% endhighlight %}
 {% endtabs %}
 

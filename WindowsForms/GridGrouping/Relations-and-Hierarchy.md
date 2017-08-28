@@ -61,59 +61,59 @@ private int numberGrandChildRows = 50;
 //Creates Parent Table.
 private DataTable GetParentTable()
 {
-    DataTable dt = new DataTable("ParentTable");
-    dt.Columns.Add(new DataColumn("parentID"));
-    dt.Columns.Add(new DataColumn("ParentName"));
-    dt.Columns.Add(new DataColumn("ParentDec"));
+    DataTable dataTable = new DataTable("ParentTable");
+    dataTable.Columns.Add(new DataColumn("parentID"));
+    dataTable.Columns.Add(new DataColumn("ParentName"));
+    dataTable.Columns.Add(new DataColumn("ParentDec"));
 
     for (int i = 0; i < numberParentRows; i++)
     {
-        DataRow dr = dt.NewRow();
-        dr[0] = i;
-        dr[1] = string.Format("parentName{0}", i);
-        dr[1] = string.Format("parentName{0}", i);
-        dt.Rows.Add(dr);
+        DataRow dataRow = dataTable.NewRow();
+        dataRow[0] = i;
+        dataRow[1] = string.Format("parentName{0}", i);
+        dataRow[1] = string.Format("parentName{0}", i);
+        dataTable.Rows.Add(dataRow);
     }
-    return dt;
+    return dataTable;
 }
 
 //Creates Child Table.
 private DataTable GetChildTable()
 {
-    DataTable dt = new DataTable("ChildTable");
-    dt.Columns.Add(new DataColumn("childID"));
-    dt.Columns.Add(new DataColumn("Name"));
-    dt.Columns.Add(new DataColumn("ParentID"));
+    DataTable dataTable = new DataTable("ChildTable");
+    dataTable.Columns.Add(new DataColumn("childID"));
+    dataTable.Columns.Add(new DataColumn("Name"));
+    dataTable.Columns.Add(new DataColumn("ParentID"));
 
     for (int i = 0; i < numberChildRows; i++)
     {
-        DataRow dr = dt.NewRow();
-        dr[0] = i.ToString();
-        dr[1] = string.Format("ChildName{0}", i);
-        dr[2] = (i % numberParentRows).ToString();
+        DataRow dataRow = dataTable.NewRow();
+        dataRow[0] = i.ToString();
+        dataRow[1] = string.Format("ChildName{0}", i);
+        dataRow[2] = (i % numberParentRows).ToString();
 
-        dt.Rows.Add(dr);
+        dataTable.Rows.Add(dataRow);
     }
-    return dt;
+    return dataTable;
 }
 
 //Creates Grand Child Table.
 private DataTable GetGrandChildTable()
 {
-    DataTable dt = new DataTable("GrandChildTable");
-    dt.Columns.Add(new DataColumn("GrandChildID"));
-    dt.Columns.Add(new DataColumn("Name"));
-    dt.Columns.Add(new DataColumn("ChildID"));
+    DataTable dataTable = new DataTable("GrandChildTable");
+    dataTable.Columns.Add(new DataColumn("GrandChildID"));
+    dataTable.Columns.Add(new DataColumn("Name"));
+    dataTable.Columns.Add(new DataColumn("ChildID"));
 
     for (int i = 0; i < numberGrandChildRows; i++)
     {
-        DataRow dr = dt.NewRow();
-        dr[0] = i.ToString();
-        dr[1] = string.Format("GrandChildName{0}", i);
-        dr[2] = (i % numberChildRows).ToString();
-        dt.Rows.Add(dr);
+        DataRow dataRow = dataTable.NewRow();
+        dataRow[0] = i.ToString();
+        dataRow[1] = string.Format("GrandChildName{0}", i);
+        dataRow[2] = (i % numberChildRows).ToString();
+        dataTable.Rows.Add(dataRow);
     }
-    return dt;
+    return dataTable;
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -123,54 +123,54 @@ Private numberGrandChildRows As Integer = 50
 
 'Creates Parent Table.
 Private Function GetParentTable() As DataTable
-    Dim dt As New DataTable("ParentTable")
-    dt.Columns.Add(New DataColumn("parentID"))
-    dt.Columns.Add(New DataColumn("ParentName"))
-    dt.Columns.Add(New DataColumn("ParentDec"))
+    Dim dataTable As New DataTable("ParentTable")
+    dataTable.Columns.Add(New DataColumn("parentID"))
+    dataTable.Columns.Add(New DataColumn("ParentName"))
+    dataTable.Columns.Add(New DataColumn("ParentDec"))
 
     For i As Integer = 0 To numberParentRows - 1
-        Dim dr As DataRow = dt.NewRow()
-        dr(0) = i
-        dr(1) = String.Format("parentName{0}", i)
-        dr(1) = String.Format("parentName{0}", i)
-        dt.Rows.Add(dr)
+        Dim dataRow As DataRow = dataTable.NewRow()
+        dataRow(0) = i
+        dataRow(1) = String.Format("parentName{0}", i)
+        dataRow(1) = String.Format("parentName{0}", i)
+        dataTable.Rows.Add(dataRow)
     Next i
-    Return dt
+    Return dataTable
 End Function
 
 'Creates Child Table.
 Private Function GetChildTable() As DataTable
-    Dim dt As New DataTable("ChildTable")
-    dt.Columns.Add(New DataColumn("childID"))
-    dt.Columns.Add(New DataColumn("Name"))
-    dt.Columns.Add(New DataColumn("ParentID"))
+    Dim dataTable As New DataTable("ChildTable")
+    dataTable.Columns.Add(New DataColumn("childID"))
+    dataTable.Columns.Add(New DataColumn("Name"))
+    dataTable.Columns.Add(New DataColumn("ParentID"))
 
     For i As Integer = 0 To numberChildRows - 1
-        Dim dr As DataRow = dt.NewRow()
-        dr(0) = i.ToString()
-        dr(1) = String.Format("ChildName{0}", i)
-        dr(2) = (i Mod numberParentRows).ToString()
+        Dim dataRow As DataRow = dataTable.NewRow()
+        dataRow(0) = i.ToString()
+        dataRow(1) = String.Format("ChildName{0}", i)
+        dataRow(2) = (i Mod numberParentRows).ToString()
 
-        dt.Rows.Add(dr)
+        dataTable.Rows.Add(dataRow)
     Next i
-    Return dt
+    Return dataTable
 End Function
 
 'Creates Grand Child Table.
 Private Function GetGrandChildTable() As DataTable
-    Dim dt As New DataTable("GrandChildTable")
-    dt.Columns.Add(New DataColumn("GrandChildID"))
-    dt.Columns.Add(New DataColumn("Name"))
-    dt.Columns.Add(New DataColumn("ChildID"))
+    Dim dataTable As New DataTable("GrandChildTable")
+    dataTable.Columns.Add(New DataColumn("GrandChildID"))
+    dataTable.Columns.Add(New DataColumn("Name"))
+    dataTable.Columns.Add(New DataColumn("ChildID"))
 
     For i As Integer = 0 To numberGrandChildRows - 1
-        Dim dr As DataRow = dt.NewRow()
-        dr(0) = i.ToString()
-        dr(1) = String.Format("GrandChildName{0}", i)
-        dr(2) = (i Mod numberChildRows).ToString()
-        dt.Rows.Add(dr)
+        Dim dataRow As DataRow = dataTable.NewRow()
+        dataRow(0) = i.ToString()
+        dataRow(1) = String.Format("GrandChildName{0}", i)
+        dataRow(2) = (i Mod numberChildRows).ToString()
+        dataTable.Rows.Add(dataRow)
     Next i
-    Return dt
+    Return dataTable
 End Function
 {% endhighlight %}
 {% endtabs %}
@@ -604,43 +604,43 @@ private int numberChildRow = 20;
 
 private DataTable GetParentTable()
 {
-    DataTable dt = new DataTable("Customers");
-    dt.Columns.Add(new DataColumn("customerID"));
-    dt.Columns.Add(new DataColumn("CustomerName"));
-    dt.Columns.Add(new DataColumn("Address"));
+    DataTable dataTable = new DataTable("Customers");
+    dataTable.Columns.Add(new DataColumn("customerID"));
+    dataTable.Columns.Add(new DataColumn("CustomerName"));
+    dataTable.Columns.Add(new DataColumn("Address"));
 
     for (int i = 0; i < numberParentRow; ++i)
     {
-        DataRow dr = dt.NewRow();
-        dr[0] = i;
-        dr[1] = string.Format("CustomerName{0}", i);
-        dr[2] = string.Format("Address{0}", i);
-        dt.Rows.Add(dr);
+        DataRow dataRow = dataTable.NewRow();
+        dataRow[0] = i;
+        dataRow[1] = string.Format("CustomerName{0}", i);
+        dataRow[2] = string.Format("Address{0}", i);
+        dataTable.Rows.Add(dataRow);
     }
-    return dt;
+    return dataTable;
 }
 
 private DataTable GetChildTable()
 {
-    DataTable dt = new DataTable("Items");
+    DataTable dataTable = new DataTable("Items");
 
-    dt.Columns.Add(new DataColumn("ItemID"));
-    dt.Columns.Add(new DataColumn("ItemName"));
-    dt.Columns.Add(new DataColumn("CustomerID"));
-    dt.Columns.Add(new DataColumn("Price"));
+    dataTable.Columns.Add(new DataColumn("ItemID"));
+    dataTable.Columns.Add(new DataColumn("ItemName"));
+    dataTable.Columns.Add(new DataColumn("CustomerID"));
+    dataTable.Columns.Add(new DataColumn("Price"));
 
     Random rand = new Random();
 
     for (int i = 0; i < numberChildRow; ++i)
     {
-        DataRow dr = dt.NewRow();
-        dr[0] = i.ToString();
-        dr[1] = string.Format("ItemName{0}", i);
-        dr[2] = (i % numberParentRows).ToString();
-        dr[3] = rand.Next(500).ToString();
-        dt.Rows.Add(dr);
+        DataRow dataRow = dataTable.NewRow();
+        dataRow[0] = i.ToString();
+        dataRow[1] = string.Format("ItemName{0}", i);
+        dataRow[2] = (i % numberParentRows).ToString();
+        dataRow[3] = rand.Next(500).ToString();
+        dataTable.Rows.Add(dataRow);
     }
-    return dt;
+    return dataTable;
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -648,40 +648,40 @@ Private numberParentRow As Integer = 6
 Private numberChildRow As Integer = 20
 
 Private Function GetParentTable() As DataTable
-    Dim dt As New DataTable("Customers")
-    dt.Columns.Add(New DataColumn("customerID"))
-    dt.Columns.Add(New DataColumn("CustomerName"))
-    dt.Columns.Add(New DataColumn("Address"))
+    Dim dataTable As New DataTable("Customers")
+    dataTable.Columns.Add(New DataColumn("customerID"))
+    dataTable.Columns.Add(New DataColumn("CustomerName"))
+    dataTable.Columns.Add(New DataColumn("Address"))
 
     For i As Integer = 0 To numberParentRow - 1
-        Dim dr As DataRow = dt.NewRow()
-        dr(0) = i
-        dr(1) = String.Format("CustomerName{0}", i)
-        dr(2) = String.Format("Address{0}", i)
-        dt.Rows.Add(dr)
+        Dim dataRow As DataRow = dataTable.NewRow()
+        dataRow(0) = i
+        dataRow(1) = String.Format("CustomerName{0}", i)
+        dataRow(2) = String.Format("Address{0}", i)
+        dataTable.Rows.Add(dataRow)
     Next i
-    Return dt
+    Return dataTable
 End Function
 
 Private Function GetChildTable() As DataTable
-    Dim dt As New DataTable("Items")
+    Dim dataTable As New DataTable("Items")
 
-    dt.Columns.Add(New DataColumn("ItemID"))
-    dt.Columns.Add(New DataColumn("ItemName"))
-    dt.Columns.Add(New DataColumn("CustomerID"))
-    dt.Columns.Add(New DataColumn("Price"))
+    dataTable.Columns.Add(New DataColumn("ItemID"))
+    dataTable.Columns.Add(New DataColumn("ItemName"))
+    dataTable.Columns.Add(New DataColumn("CustomerID"))
+    dataTable.Columns.Add(New DataColumn("Price"))
 
     Dim rand As New Random()
 
     For i As Integer = 0 To numberChildRow - 1
-        Dim dr As DataRow = dt.NewRow()
-        dr(0) = i.ToString()
-        dr(1) = String.Format("ItemName{0}", i)
-        dr(2) = (i Mod numberParentRows).ToString()
-        dr(3) = rand.Next(500).ToString()
-        dt.Rows.Add(dr)
+        Dim dataRow As DataRow = dataTable.NewRow()
+        dataRow(0) = i.ToString()
+        dataRow(1) = String.Format("ItemName{0}", i)
+        dataRow(2) = (i Mod numberParentRows).ToString()
+        dataRow(3) = rand.Next(500).ToString()
+        dataTable.Rows.Add(dataRow)
     Next i
-    Return dt
+    Return dataTable
 End Function
 
 {% endhighlight %}
@@ -1373,9 +1373,9 @@ relation.ChildTableName = "ChildTable";
 gridGroupingControl1.TableDescriptor.Relations.Add(relation);
 
 this.gridGroupingControl1.ShowGroupDropArea = true;
-GridTable chiltTable = gridGroupingControl1.GetTable("ChildTable");
-this.gridGroupingControl1.AddGroupDropArea(chiltTable);
-chiltTable.TableDescriptor.GroupedColumns.Add("Field1");
+GridTable childTable = gridGroupingControl1.GetTable("ChildTable");
+this.gridGroupingControl1.AddGroupDropArea(childTable);
+childTable.TableDescriptor.GroupedColumns.Add("Field1");
 {% endhighlight %}
 {% highlight vb %}
 Dim relation As New GridRelationDescriptor()
@@ -1386,9 +1386,9 @@ relation.ChildTableName = "ChildTable"
 gridGroupingControl1.TableDescriptor.Relations.Add(relation)
 
 Me.gridGroupingControl1.ShowGroupDropArea = True
-Dim chiltTable As GridTable = gridGroupingControl1.GetTable("ChildTable")
-Me.gridGroupingControl1.AddGroupDropArea(chiltTable)
-chiltTable.TableDescriptor.GroupedColumns.Add("Field1")
+Dim childTable As GridTable = gridGroupingControl1.GetTable("ChildTable")
+Me.gridGroupingControl1.AddGroupDropArea(childTable)
+childTable.TableDescriptor.GroupedColumns.Add("Field1")
 {% endhighlight %}
 {% endtabs %}
 

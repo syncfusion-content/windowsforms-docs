@@ -512,13 +512,13 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("IF
 
 {% tabs %}
 {% highlight c# %}
-// Adding the Expressions using ComputeIffunction.
+// Adding the Expressions using ComputeIfFunction.
 ExpressionFieldDescriptor expField1 = new ExpressionFieldDescriptor("Winning %", "IF([wins]<100,[losses],0)", typeof(System.Double));
 ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Lossing %", "IF([losses]<100,[wins],0)", typeof(System.Double));
 this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(new ExpressionFieldDescriptor[] { expField1,expField2});
 {% endhighlight %}
 {% highlight vb %}
-' Adding the Expressions using ComputeIffunction.
+' Adding the Expressions using ComputeIfFunction.
 Dim expField1 As New ExpressionFieldDescriptor("Winning %", "IF([wins]<100,[losses],0)", GetType(System.Double))
 Dim expField2 As New ExpressionFieldDescriptor("Lossing %", "IF([losses]<100,[wins],0)", GetType(System.Double))
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1,expField2})

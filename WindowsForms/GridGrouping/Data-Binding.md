@@ -284,9 +284,9 @@ Follow the steps below to create a collection (Books Collection) that implements
 {% highlight c# %}
 class Book
 {
-    public Book(string bname, string author)
+    public Book(string bookName, string author)
     {
-        this.bookName = bname;
+        this.bookName = bookName;
         this.author = author;
     }
     private string bookName;
@@ -317,8 +317,8 @@ class Book
 {% endhighlight %}
 {% highlight vb %}
 Friend Class Book
-    Public Sub New(ByVal bname As String, ByVal author As String)
-        Me.bookName_Renamed = bname
+    Public Sub New(ByVal bookName As String, ByVal author As String)
+        Me.bookName_Renamed = bookName
         Me.author_Renamed = author
     End Sub
     Private bookName_Renamed As String
@@ -649,12 +649,12 @@ public class CustomClass : INotifyPropertyChanged
     string address;
     string city;
 
-    public CustomClass(int id, string fname, string lname, string addr, string city)
+    public CustomClass(int id, string firstName, string lname, string address, string city)
     {
         this.id = id;
-        first_name = fname;
+        first_name = firstName;
         last_name = lname;
-        address = addr;
+        this.address = address;
         this.city = city;
     }
 
@@ -762,11 +762,11 @@ Public Class CustomClass
 'INSTANT VB NOTE: The variable city was renamed since Visual Basic does not allow class members with the same name:
     Private city_Renamed As String
 
-    Public Sub New(ByVal id As Integer, ByVal fname As String, ByVal lname As String, ByVal addr As String, ByVal city As String)
+    Public Sub New(ByVal id As Integer, ByVal firstName As String, ByVal lname As String, ByVal address As String, ByVal city As String)
         Me.id_Renamed = id
-        first_name = fname
+        first_name = firstName
         last_name = lname
-        address_Renamed = addr
+        address_Renamed = address
         Me.city_Renamed = city
     End Sub
 
@@ -1221,8 +1221,8 @@ public class DynamicOrders : List<dynamic>
                 if (isComplex)
                 {
                     d.ShipCountry = new DynamicDictionary();
-                    d.ShipCountry.DestinatedCity = o.ShipCity;
-                    d.ShipCountry.DestinatedCountry = o.ShipCountry;
+                    d.ShipCountry.DestinateCity = o.ShipCity;
+                    d.ShipCountry.DestinateCountry = o.ShipCountry;
                 }
                 else
                 {
@@ -1247,8 +1247,8 @@ Public Class DynamicOrders
                 d.Freight = o.Freight
                 If isComplex Then
                     d.ShipCountry = New DynamicDictionary()
-                    d.ShipCountry.DestinatedCity = o.ShipCity
-                    d.ShipCountry.DestinatedCountry = o.ShipCountry
+                    d.ShipCountry.DestinateCity = o.ShipCity
+                    d.ShipCountry.DestinateCountry = o.ShipCountry
                 Else
                     d.ShipCountry = o.ShipCountry
                 End If
@@ -1359,16 +1359,16 @@ public class NorthwindOrders : List<Orders>
     Random r = new Random();
     private Orders GetOrder(int i)
     {
-        var shipcountry = ShipCountry[r.Next(5)];
-        var shipcitycoll = ShipCity[shipcountry];
+        var shipCountry = ShipCountry[r.Next(5)];
+        var shipCityColl = ShipCity[shipCountry];
         return new Orders()
         {
             OrderID = i,
             CustomerID = CustomerID[r.Next(15)],
             EmployeeID = r.Next(9),
             Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2),
-            ShipCountry = shipcountry,
-            ShipCity = shipcitycoll[r.Next(shipcitycoll.Length - 1)],
+            ShipCountry = shipCountry,
+            ShipCity = shipCityColl[r.Next(shipCityColl.Length - 1)],
         };
     }
 
@@ -1402,69 +1402,69 @@ public class NorthwindOrders : List<Orders>
 
     private void SetShipCity()
     {
-        string[] argentina = new string[] { "Buenos Aires" };
+        string[] states1 = new string[] { "Buenos Aires" };
 
-        string[] austria = new string[] { "Graz", "Salzburg" };
+        string[] states2 = new string[] { "Graz", "Salzburg" };
 
-        string[] belgium = new string[] { "Bruxelles", "Charleroi" };
+        string[] states3 = new string[] { "Bruxelles", "Charleroi" };
 
-        string[] brazil = new string[] { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" };
+        string[] states4 = new string[] { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" };
 
-        string[] canada = new string[] { "Montréal", "Tsawassen", "Vancouver" };
+        string[] states5 = new string[] { "Montréal", "Tsawassen", "Vancouver" };
 
-        string[] denmark = new string[] { "Århus", "København" };
+        string[] states6 = new string[] { "Århus", "København" };
 
-        string[] finland = new string[] { "Helsinki", "Oulu" };
+        string[] states7 = new string[] { "Helsinki", "Oulu" };
 
-        string[] france = new string[] { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" };
+        string[] states8 = new string[] { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" };
 
-        string[] germany = new string[] { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" };
+        string[] states9 = new string[] { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" };
 
-        string[] ireland = new string[] { "Cork" };
+        string[] states10 = new string[] { "Cork" };
 
-        string[] italy = new string[] { "Bergamo", "Reggio Emilia", "Torino" };
+        string[] states11 = new string[] { "Bergamo", "Reggio Emilia", "Torino" };
 
-        string[] mexico = new string[] { "México D.F." };
+        string[] states12 = new string[] { "México D.F." };
 
-        string[] norway = new string[] { "Stavern" };
+        string[] states13 = new string[] { "Stavern" };
 
-        string[] poland = new string[] { "Warszawa" };
+        string[] states14 = new string[] { "Warszawa" };
 
-        string[] portugal = new string[] { "Lisboa" };
+        string[] states15 = new string[] { "Lisboa" };
 
-        string[] spain = new string[] { "Barcelona", "Madrid", "Sevilla" };
+        string[] states16 = new string[] { "Barcelona", "Madrid", "Sevilla" };
 
-        string[] sweden = new string[] { "Bräcke", "Luleå" };
+        string[] states17 = new string[] { "Bräcke", "Luleå" };
 
-        string[] switzerland = new string[] { "Bern", "Genève" };
+        string[] states18 = new string[] { "Bern", "Genève" };
 
-        string[] uk = new string[] { "Colchester", "Hedge End", "London" };
+        string[] states19 = new string[] { "Colchester", "Hedge End", "London" };
 
-        string[] usa = new string[] { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" };
+        string[] states20 = new string[] { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" };
 
-        string[] venezuela = new string[] { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" };
+        string[] states21 = new string[] { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" };
 
-        ShipCity.Add("Argentina", argentina);
-        ShipCity.Add("Austria", austria);
-        ShipCity.Add("Belgium", belgium);
-        ShipCity.Add("Brazil", brazil);
-        ShipCity.Add("Canada", canada);
-        ShipCity.Add("Denmark", denmark);
-        ShipCity.Add("Finland", finland);
-        ShipCity.Add("France", france);
-        ShipCity.Add("Germany", germany);
-        ShipCity.Add("Ireland", ireland);
-        ShipCity.Add("Italy", italy);
-        ShipCity.Add("Mexico", mexico);
-        ShipCity.Add("Norway", norway);
-        ShipCity.Add("Poland", poland);
-        ShipCity.Add("Portugal", portugal);
-        ShipCity.Add("Spain", spain);
-        ShipCity.Add("Sweden", sweden);
-        ShipCity.Add("Switzerland", switzerland);
-        ShipCity.Add("UK", uk);
-        ShipCity.Add("USA", usa);
-        ShipCity.Add("Venezuela", venezuela);
+        ShipCity.Add("Argentina", states1);
+        ShipCity.Add("Austria", states2);
+        ShipCity.Add("Belgium", states3);
+        ShipCity.Add("Brazil", states4);
+        ShipCity.Add("Canada", states5);
+        ShipCity.Add("Denmark", states6);
+        ShipCity.Add("Finland", states7);
+        ShipCity.Add("France", states8);
+        ShipCity.Add("Germany", states9);
+        ShipCity.Add("Ireland", states10);
+        ShipCity.Add("Italy", states11);
+        ShipCity.Add("Mexico", states12);
+        ShipCity.Add("Norway", states13);
+        ShipCity.Add("Poland", states14);
+        ShipCity.Add("Portugal", states15);
+        ShipCity.Add("Spain", states16);
+        ShipCity.Add("Sweden", states17);
+        ShipCity.Add("Switzerland", states18);
+        ShipCity.Add("UK", states19);
+        ShipCity.Add("USA", states20);
+        ShipCity.Add("Venezuela", states21);
 
     }
 
@@ -1647,55 +1647,55 @@ End Get
 End Property
 Private r As New Random()
 Private Function GetOrder(ByVal i As Integer) As Orders
-Dim shipcountry = Me.ShipCountry(r.Next(5))
-Dim shipcitycoll = ShipCity(shipcountry)
-Return New Orders() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(9), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipcountry, .ShipCity = shipcitycoll(r.Next(shipcitycoll.Length - 1))}
+Dim shipCountry = Me.ShipCountry(r.Next(5))
+Dim shipCityColl = ShipCity(shipCountry)
+Return New Orders() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(9), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipCountry, .ShipCity = shipCityColl(r.Next(shipCityColl.Length - 1))}
 End Function
 Private ShipCountry() As String = { "Argentina", "Austria", "Belgium", "Brazil", "Canada", "Denmark", "Finland", "France", "Germany", "Ireland", "Italy", "Mexico", "Norway", "Poland", "Portugal", "Spain", "Sweden", "Switzerland", "UK", "USA", "Venezuela" }
 Private ShipCity As New Dictionary(Of String, String())()
 Private Sub SetShipCity()
-Dim argentina() As String = { "Buenos Aires" }
-Dim austria() As String = { "Graz", "Salzburg" }
-Dim belgium() As String = { "Bruxelles", "Charleroi" }
-Dim brazil() As String = { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" }
-Dim canada() As String = { "Montréal", "Tsawassen", "Vancouver" }
-Dim denmark() As String = { "Århus", "København" }
-Dim finland() As String = { "Helsinki", "Oulu" }
-Dim france() As String = { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" }
-Dim germany() As String = { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" }
-Dim ireland() As String = { "Cork" }
-Dim italy() As String = { "Bergamo", "Reggio Emilia", "Torino" }
-Dim mexico() As String = { "México D.F." }
-Dim norway() As String = { "Stavern" }
-Dim poland() As String = { "Warszawa" }
-Dim portugal() As String = { "Lisboa" }
-Dim spain() As String = { "Barcelona", "Madrid", "Sevilla" }
-Dim sweden() As String = { "Bräcke", "Luleå" }
-Dim switzerland() As String = { "Bern", "Genève" }
-Dim uk() As String = { "Colchester", "Hedge End", "London" }
-Dim usa() As String = { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" }
-Dim venezuela() As String = { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" }
-ShipCity.Add("Argentina", argentina)
-ShipCity.Add("Austria", austria)
-ShipCity.Add("Belgium", belgium)
-ShipCity.Add("Brazil", brazil)
-ShipCity.Add("Canada", canada)
-ShipCity.Add("Denmark", denmark)
-ShipCity.Add("Finland", finland)
-ShipCity.Add("France", france)
-ShipCity.Add("Germany", germany)
-ShipCity.Add("Ireland", ireland)
-ShipCity.Add("Italy", italy)
-ShipCity.Add("Mexico", mexico)
-ShipCity.Add("Norway", norway)
-ShipCity.Add("Poland", poland)
-ShipCity.Add("Portugal", portugal)
-ShipCity.Add("Spain", spain)
-ShipCity.Add("Sweden", sweden)
-ShipCity.Add("Switzerland", switzerland)
-ShipCity.Add("UK", uk)
-ShipCity.Add("USA", usa)
-ShipCity.Add("Venezuela", venezuela)
+Dim states1() As String = { "Buenos Aires" }
+Dim states2() As String = { "Graz", "Salzburg" }
+Dim states3() As String = { "Bruxelles", "Charleroi" }
+Dim states4() As String = { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" }
+Dim states5() As String = { "Montréal", "Tsawassen", "Vancouver" }
+Dim states6() As String = { "Århus", "København" }
+Dim states7() As String = { "Helsinki", "Oulu" }
+Dim states8() As String = { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" }
+Dim states9() As String = { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" }
+Dim states10() As String = { "Cork" }
+Dim states11() As String = { "Bergamo", "Reggio Emilia", "Torino" }
+Dim states12() As String = { "México D.F." }
+Dim states13() As String = { "Stavern" }
+Dim states14() As String = { "Warszawa" }
+Dim states15() As String = { "Lisboa" }
+Dim states16() As String = { "Barcelona", "Madrid", "Sevilla" }
+Dim states17() As String = { "Bräcke", "Luleå" }
+Dim states18() As String = { "Bern", "Genève" }
+Dim states19() As String = { "Colchester", "Hedge End", "London" }
+Dim states20() As String = { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" }
+Dim states21() As String = { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" }
+ShipCity.Add("Argentina", states1)
+ShipCity.Add("Austria", states2)
+ShipCity.Add("Belgium", states3)
+ShipCity.Add("Brazil", states4)
+ShipCity.Add("Canada", states5)
+ShipCity.Add("Denmark", states6)
+ShipCity.Add("Finland", states7)
+ShipCity.Add("France", states8)
+ShipCity.Add("Germany", states9)
+ShipCity.Add("Ireland", states10)
+ShipCity.Add("Italy", states11)
+ShipCity.Add("Mexico", states12)
+ShipCity.Add("Norway", states13)
+ShipCity.Add("Poland", states14)
+ShipCity.Add("Portugal", states15)
+ShipCity.Add("Spain", states16)
+ShipCity.Add("Sweden", states17)
+ShipCity.Add("Switzerland", states18)
+ShipCity.Add("UK", states19)
+ShipCity.Add("USA", states20)
+ShipCity.Add("Venezuela", states21)
 End Sub
 Private CustomerID() As String = { "ALFKI", "FRANS", "MEREP", "FOLKO", "SIMOB", "WARTH", "VAFFE", "FURIB", "SEVES", "LINOD", "RISCU", "PICCO", "BLONP", "WELLI", "FOLIG" }
 End Class
@@ -1819,23 +1819,23 @@ this.gridGroupingControl1 = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroup
 this.gridGroupingControl1.Size = new System.Drawing.Size(160, 200);
 
 //Creates Data Store.
-DataTable dt = new DataTable("MyTable");
+DataTable dataTable = new DataTable("MyTable");
 int nCols = 2;
 int nRows = 5;
 
 for (int i = 0; i < nCols; i++)
-    dt.Columns.Add(new DataColumn(string.Format("Col{0}", i)));
+    dataTable.Columns.Add(new DataColumn(string.Format("Col{0}", i)));
 
 for (int i = 0; i < nRows; ++i)
 {
-    DataRow dr = dt.NewRow();
+    DataRow dataRow = dataTable.NewRow();
     for (int j = 0; j < nCols; j++)
-        dr[j] = string.Format("row{0} col{1}", i, j);
-    dt.Rows.Add(dr);
+        dataRow[j] = string.Format("row{0} col{1}", i, j);
+    dataTable.Rows.Add(dataRow);
 }
 
 //Binds data source to grouping grid.
-this.gridGroupingControl1.DataSource = dt;
+this.gridGroupingControl1.DataSource = dataTable;
 {% endhighlight %}
 {% highlight vb %}
 Private gridGroupingControl1 As Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl
@@ -1845,24 +1845,24 @@ Me.gridGroupingControl1 = New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupin
 Me.gridGroupingControl1.Size = New System.Drawing.Size(160, 200)
 
 'Creates Data Store.
-Dim dt As New DataTable("MyTable")
+Dim dataTable As New DataTable("MyTable")
 Dim nCols As Integer = 2
 Dim nRows As Integer = 5
 
 For i As Integer = 0 To nCols - 1
-    dt.Columns.Add(New DataColumn(String.Format("Col{0}", i)))
+    dataTable.Columns.Add(New DataColumn(String.Format("Col{0}", i)))
 Next i
 
 For i As Integer = 0 To nRows - 1
-    Dim dr As DataRow = dt.NewRow()
+    Dim dataRow As DataRow = dataTable.NewRow()
     For j As Integer = 0 To nCols - 1
-        dr(j) = String.Format("row{0} col{1}", i, j)
+        dataRow(j) = String.Format("row{0} col{1}", i, j)
     Next j
-    dt.Rows.Add(dr)
+    dataTable.Rows.Add(dataRow)
 Next i
 
 'Binds data source to grouping grid.
-Me.gridGroupingControl1.DataSource = dt
+Me.gridGroupingControl1.DataSource = dataTable
 {% endhighlight %}
 {% endtabs %}
 

@@ -26,14 +26,14 @@ dlg.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
 if (dlg.ShowDialog() == DialogResult.OK)
 {
     // Create xml writer for adding the info to the xml file.
-    XmlTextWriter xw = new XmlTextWriter(dlg.FileName, System.Text.Encoding.UTF8);
+    XmlTextWriter xmlWriter = new XmlTextWriter(dlg.FileName, System.Text.Encoding.UTF8);
 
-    xw.Formatting = System.Xml.Formatting.Indented;
+    xmlWriter.Formatting = System.Xml.Formatting.Indented;
 
     // Write Grid schema to the xml file.
-    this.gridGroupingControl1.WriteXmlSchema(xw);
+    this.gridGroupingControl1.WriteXmlSchema(xmlWriter);
 
-    xw.Close();
+    xmlWriter.Close();
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -42,14 +42,14 @@ dlg.AddExtension = True
 dlg.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
 If dlg.ShowDialog() = DialogResult.OK Then
 	' Create xml writer for adding the info to the xml file.
-	Dim xw As New XmlTextWriter(dlg.FileName, System.Text.Encoding.UTF8)
+	Dim xmlWriter As New XmlTextWriter(dlg.FileName, System.Text.Encoding.UTF8)
 
-	xw.Formatting = System.Xml.Formatting.Indented
+	xmlWriter.Formatting = System.Xml.Formatting.Indented
 
 	' Write Grid schema to the xml file.
-	Me.gridGroupingControl1.WriteXmlSchema(xw)
+	Me.gridGroupingControl1.WriteXmlSchema(xmlWriter)
 
-	xw.Close()
+	xmlWriter.Close()
 End If
 {% endhighlight %}
 {% endtabs %}
@@ -64,10 +64,10 @@ dlg.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
 if (dlg.ShowDialog() == DialogResult.OK)
 {
     // Create the xml reader for reading the schema of the Grid.
-    XmlReader xr = new XmlTextReader(dlg.FileName);
+    XmlReader xmlReader = new XmlTextReader(dlg.FileName);
     // Apply the schema to the GridGroupingControl.
-    this.gridGroupingControl1.ApplyXmlSchema(xr);
-    xr.Close();
+    this.gridGroupingControl1.ApplyXmlSchema(xmlReader);
+    xmlReader.Close();
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -75,10 +75,10 @@ Dim dlg As FileDialog = New OpenFileDialog()
 dlg.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
 If dlg.ShowDialog() = DialogResult.OK Then
 	' Create the xml reader for reading the schema of the Grid.
-	Dim xr As XmlReader = New XmlTextReader(dlg.FileName)
+	Dim xmlReader As XmlReader = New XmlTextReader(dlg.FileName)
 	' Apply the schema to the GridGroupingControl.
-	Me.gridGroupingControl1.ApplyXmlSchema(xr)
-	xr.Close()
+	Me.gridGroupingControl1.ApplyXmlSchema(xmlReader)
+	xmlReader.Close()
 End If
 {% endhighlight %}
 {% endtabs %}
@@ -96,12 +96,12 @@ To save the look and feel of the grid, use the following code snippet,
 
 {% tabs %}
 {% highlight c# %}
-System.Xml.XmlReader xr = new System.Xml.XmlReader("BaseLandF.xml");
-this.gridGroupingControl1.ApplyXmlLookAndFeel(xr);
+System.Xml.XmlReader xmlReader = new System.Xml.XmlReader("BaseLandF.xml");
+this.gridGroupingControl1.ApplyXmlLookAndFeel(xmlReader);
 {% endhighlight %}
 {% highlight vb %}
-Dim xr As New System.Xml.XmlReader("BaseLandF.xml")
-Me.gridGroupingControl1.ApplyXmlLookAndFeel(xr)
+Dim xmlReader As New System.Xml.XmlReader("BaseLandF.xml")
+Me.gridGroupingControl1.ApplyXmlLookAndFeel(xmlReader)
 {% endhighlight %}
 {% endtabs %}
 
@@ -118,9 +118,9 @@ excelFilter.EnableDateFilter = true;
 excelFilter.AllowSearch = false;
 excelFilter.EnableNumberFilter = true;
 excelFilter.WireGrid(gridGroupingControl1);
-XmlTextWriter xwExcelFilter = new XmlTextWriter("GridExcelFilter.xml", System.Text.Encoding.UTF8);
-this.excelFilter.WriteXml(xwExcelFilter);
-xwExcelFilter.Close();
+XmlTextWriter xmlExcelFilter = new XmlTextWriter("GridExcelFilter.xml", System.Text.Encoding.UTF8);
+this.excelFilter.WriteXml(xmlExcelFilter);
+xmlExcelFilter.Close();
 {% endhighlight %}
 {% highlight vb%}
 Dim excelFilter As New GridExcelFilter()
@@ -129,9 +129,9 @@ excelFilter.EnableDateFilter = True
 excelFilter.AllowSearch = False
 excelFilter.EnableNumberFilter = True
 excelFilter.WireGrid(gridGroupingControl1)
-Dim xwExcelFilter As New XmlTextWriter("GridExcelFilter.xml", System.Text.Encoding.UTF8)
-Me.excelFilter.WriteXml(xwExcelFilter)
-xwExcelFilter.Close()
+Dim xmlExcelFilter As New XmlTextWriter("GridExcelFilter.xml", System.Text.Encoding.UTF8)
+Me.excelFilter.WriteXml(xmlExcelFilter)
+xmlExcelFilter.Close()
 {% endhighlight%}
 {% endtabs %}
 

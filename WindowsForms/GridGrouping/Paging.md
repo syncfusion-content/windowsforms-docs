@@ -15,13 +15,13 @@ Paging is the process of splitting up of large records into a separate segments 
 //Creating the object for Pager
 Pager pager = new Pager();
 //Wiring the pager to the Grid 
-pager.Wire(this.gridGroupingControl1, _dt); // _dt is the DataTable object
+pager.Wire(this.gridGroupingControl1, dataTable); // dataTable is the DataTable object
 {% endhighlight %}
 {% highlight vb %}
 'Creating the object for Pager
 Dim pager As New Pager()
 ' wiring the pager to the Grid 
-pager.Wire(Me.gridGroupingControl1, _dt) ' _dt is the DataTable object
+pager.Wire(Me.gridGroupingControl1, dataTable) ' dataTable is the DataTable object
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,7 +39,7 @@ Pager pager = new Pager();
 //Set the size  1000 records in each page
 pager.PageSize = 1000;
 //Add the paging support to the GridGroupingControl 
-pager.Wire(this.gridGroupingControl1, _dt); // _dt is the DataTable object
+pager.Wire(this.gridGroupingControl1, dataTable); // dataTable is the DataTable object
 {% endhighlight %}
 
 {% highlight vb %}
@@ -48,7 +48,7 @@ Dim pager As New Pager()
 ' Set the size  1000 records in each page
 pager.PageSize = 1000
 'Add the paging support to the GridGroupingControl 
-pager.Wire(Me.gridGroupingControl1, _dt) ' _dt is the DataTable object
+pager.Wire(Me.gridGroupingControl1, dataTable) ' dataTable is the DataTable object
 {% endhighlight %}
 {% endtabs %}
 

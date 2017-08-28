@@ -262,23 +262,23 @@ This `SetGroupSummaryOrder` method will set up a custom comparer for sorting gro
 //Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
 
-SortColumnDescriptor gsd = new SortColumnDescriptor("ShipCountry");
+SortColumnDescriptor columnDescriptor = new SortColumnDescriptor("ShipCountry");
 
 //Specifies a summary name and the property (values will be determined using reflection).
-gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
+columnDescriptor.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
 
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd);
+this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
 
-Dim gsd As New SortColumnDescriptor("ShipCountry")
+Dim columnDescriptor As New SortColumnDescriptor("ShipCountry")
 
 'Specifies a summary name and the property (values will be determined using reflection).
-gsd.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
+columnDescriptor.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
 
-Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(gsd)
+Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor)
 {% endhighlight %}
 {% endtabs %}
 For more information about `Sort by Summary`, refer the [Sort by Summary](http://help.syncfusion.com/windowsforms/gridgrouping/summaries#sort-by-summary-in-caption "") section.
@@ -293,13 +293,13 @@ The following code example illustrates the usage of foreign-key relation:
 1.Save the location of the `mainTable.Customer` column, it can be swapped after foreign table reference has been set.
 {% tabs %}
 {% highlight c# %}
-//Remember the location of lookupcol so it can be swapped out later
+//Remember the location of lookup col so it can be swapped out later
 GridTableDescriptor td = this.gridGroupingControl1.TableDescriptor;
 td.VisibleColumns.LoadDefault();
 int lookUpIndex = td.VisibleColumns.IndexOf("Customer");
 {% endhighlight %}
 {% highlight vb %}
-'Remember the location of lookupcol so it can be swapped out later
+'Remember the location of lookup col so it can be swapped out later
 Dim td As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor
 td.VisibleColumns.LoadDefault()
 Dim lookUpIndex As Integer = td.VisibleColumns.IndexOf("Customer")
@@ -355,11 +355,11 @@ rd.ChildTableDescriptor.SortedColumns.Add("CustomerName")
 5.Add relation descriptor to `MainTableDescriptor`.
 {% tabs %}
 {% highlight c# %}
-//Add relation descriptor to main tabledescriptor
+//Add relation descriptor to MainTableDescriptor
 td.Relations.Add(rd);
 {% endhighlight %}
 {% highlight vb %}
-'Add relation descriptor to main tabledescriptor
+'Add relation descriptor to MainTableDescriptor
 td.Relations.Add(rd)
 {% endhighlight %}
 {% endtabs %}

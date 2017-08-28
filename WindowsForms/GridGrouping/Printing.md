@@ -42,17 +42,17 @@ Printing gives support for showing a print preview dialog. To access it, [PrintP
 {% highlight c# %}
 
 GridPrintDocument pd = new GridPrintDocument(this.gridGroupingControl1.TableControl, true);
-PrintPreviewDialog ppv = new PrintPreviewDialog();
-ppv.Document = pd;
-ppv.ShowDialog();
+PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+printPreviewDialog.Document = pd;
+printPreviewDialog.ShowDialog();
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim pd As New GridPrintDocument(Me.gridGroupingControl1.TableControl, True)
-Dim ppv As New PrintPreviewDialog()
-ppv.Document = pd
-ppv.ShowDialog()
+Dim printPreviewDialog As New PrintPreviewDialog()
+printPreviewDialog.Document = pd
+printPreviewDialog.ShowDialog()
 
 {% endhighlight %}
 {% endtabs %}
@@ -126,23 +126,23 @@ All the columns of the GridGroupingControl can be printed with in a single page 
 {% tabs %}
 {% highlight c# %}
 //Create the Grid as printing document
-GridPrintDocumentAdv gpd = new GridPrintDocumentAdv(this.gridGroupingControl1.TableControl);
+GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridGroupingControl1.TableControl);
 PrintDialog pd = new PrintDialog();
 //Scale all columns to fit within a page
-gpd.ScaleColumnsToFitPage = true;
-pd.Document = gpd;
+gridPrintDocument.ScaleColumnsToFitPage = true;
+pd.Document = gridPrintDocument;
 //Print the contents of the Grid
-gpd.Print();           
+gridPrintDocument.Print();           
 {% endhighlight %}
 {% highlight vb %}
 'Create the Grid as printing document
-Dim gpd As New GridPrintDocumentAdv(Me.gridGroupingControl1.TableControl)
+Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridGroupingControl1.TableControl)
 Dim pd As New PrintDialog()
 'Scale all columns to fit within a page
-gpd.ScaleColumnsToFitPage = True
-pd.Document = gpd
+gridPrintDocument.ScaleColumnsToFitPage = True
+pd.Document = gridPrintDocument
 'Print the contents of the Grid
-gpd.Print()
+gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
@@ -154,25 +154,25 @@ The grid data will be fit to a single page or the minimal number of pages using 
 {% tabs %}
 {% highlight c# %}
 //Create the grid document for print
-GridPrintDocumentAdv gpd = new GridPrintDocumentAdv(this.gridGroupingControl1.TableControl);
+GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridGroupingControl1.TableControl);
 //Used to print all columns to fit within a page
-gpd.PrintColumnToFitPage = true;
+gridPrintDocument.PrintColumnToFitPage = true;
 // Printing All the Contents into a Single Page
-gpd.PagesToFit = 1;
+gridPrintDocument.PagesToFit = 1;
 PrintDialog pd = new PrintDialog();
-pd.Document = gpd;
-gpd.Print();           
+pd.Document = gridPrintDocument;
+gridPrintDocument.Print();           
 {% endhighlight %}
 {% highlight vb %}
 'Create the grid document for print
-Dim gpd As New GridPrintDocumentAdv(Me.gridGroupingControl1.TableControl)
+Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridGroupingControl1.TableControl)
 'Used to print all columns to fit within a page
-gpd.PrintColumnToFitPage = True
+gridPrintDocument.PrintColumnToFitPage = True
 ' Printing All the Contents into a Single Page
-gpd.PagesToFit = 1
+gridPrintDocument.PagesToFit = 1
 Dim pd As New PrintDialog()
-pd.Document = gpd
-gpd.Print()
+pd.Document = gridPrintDocument
+gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
@@ -289,38 +289,38 @@ The GridGroupingControl can be printed with the headers and footers by setting t
 
 {% tabs %}
 {% highlight c# %}
-GridPrintDocumentAdv gpd = new GridPrintDocumentAdv(this.gridGroupingControl1.TableControl);
-PrintPreviewDialog ppd = new PrintPreviewDialog();
-ppd.Document = gpd;
+GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridGroupingControl1.TableControl);
+PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+printPreviewDialog.Document = gridPrintDocument;
 //Setting the height for header and footer
-gpd.HeaderHeight = 30;
-gpd.FooterHeight = 30;
-gpd.HeaderPrintStyleInfo.Text = "Syncfusion Software Private Ltd";
-gpd.FooterPrintStyleInfo.Text = "Time :" + DateTime.Now.TimeOfDay.ToString();
-gpd.HeaderPrintStyleInfo.TextColor = Color.Orange;
-gpd.HeaderPrintStyleInfo.Font.Bold = true;
-gpd.HeaderPrintStyleInfo.Font.Size = 20;
+gridPrintDocument.HeaderHeight = 30;
+gridPrintDocument.FooterHeight = 30;
+gridPrintDocument.HeaderPrintStyleInfo.Text = "Syncfusion Software Private Ltd";
+gridPrintDocument.FooterPrintStyleInfo.Text = "Time :" + DateTime.Now.TimeOfDay.ToString();
+gridPrintDocument.HeaderPrintStyleInfo.TextColor = Color.Orange;
+gridPrintDocument.HeaderPrintStyleInfo.Font.Bold = true;
+gridPrintDocument.HeaderPrintStyleInfo.Font.Size = 20;
 //Set the alignments 
-gpd.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center;
-gpd.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right;
-ppd.ShowDialog();
+gridPrintDocument.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center;
+gridPrintDocument.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right;
+printPreviewDialog.ShowDialog();
 {% endhighlight %}
 {% highlight vb %}
-Dim gpd As New GridPrintDocumentAdv(Me.gridGroupingControl1.TableControl)
-Dim ppd As New PrintPreviewDialog()
-ppd.Document = gpd
+Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridGroupingControl1.TableControl)
+Dim printPreviewDialog As New PrintPreviewDialog()
+printPreviewDialog.Document = gridPrintDocument
 'Setting the height for header and footer
-gpd.HeaderHeight = 30
-gpd.FooterHeight = 30
-gpd.HeaderPrintStyleInfo.Text = "Syncfusion Software Private Ltd"
-gpd.FooterPrintStyleInfo.Text = "Time :" & DateTime.Now.TimeOfDay.ToString()
-gpd.HeaderPrintStyleInfo.TextColor = Color.Orange
-gpd.HeaderPrintStyleInfo.Font.Bold = True
-gpd.HeaderPrintStyleInfo.Font.Size = 20
+gridPrintDocument.HeaderHeight = 30
+gridPrintDocument.FooterHeight = 30
+gridPrintDocument.HeaderPrintStyleInfo.Text = "Syncfusion Software Private Ltd"
+gridPrintDocument.FooterPrintStyleInfo.Text = "Time :" & DateTime.Now.TimeOfDay.ToString()
+gridPrintDocument.HeaderPrintStyleInfo.TextColor = Color.Orange
+gridPrintDocument.HeaderPrintStyleInfo.Font.Bold = True
+gridPrintDocument.HeaderPrintStyleInfo.Font.Size = 20
 'Set the alignments 
-gpd.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center
-gpd.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right
-ppd.ShowDialog()
+gridPrintDocument.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center
+gridPrintDocument.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right
+printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
@@ -344,9 +344,9 @@ void pd_DrawGridPrintHeader(object sender, Syncfusion.GridHelperClasses.GridPrin
     SizeF imageSize = new SizeF(header.Width / 3, header.Height * 0.8f);
     //Locating the logo on the right corner of the Drawing Surface
     PointF imageLocation = new PointF(e.DrawRectangle.Width - imageSize.Width - 20, header.Y + 5);
-    Bitmap img = new Bitmap(@"..\..\Data\logo.png");
+    Bitmap image = new Bitmap(@"..\..\Data\logo.png");
     //Draw the image in the Header.
-    e.Graphics.DrawImage(img, new RectangleF(imageLocation, imageSize));
+    e.Graphics.DrawImage(image, new RectangleF(imageLocation, imageSize));
     //TITLE
     Color activeColor = Color.FromArgb(44, 71, 120);
     SolidBrush brush = new SolidBrush(activeColor);
@@ -406,9 +406,9 @@ Private Sub pd_DrawGridPrintHeader(ByVal sender As Object, ByVal e As Syncfusion
     Dim imageSize As New SizeF(header.Width \ 3, header.Height * 0.8f)
     'Locating the logo on the right corner of the Drawing Surface
     Dim imageLocation As New PointF(e.DrawRectangle.Width - imageSize.Width - 20, header.Y + 5)
-    Dim img As New Bitmap("..\..\Data\logo.png")
+    Dim image As New Bitmap("..\..\Data\logo.png")
     'Draw the image in the Header.
-    e.Graphics.DrawImage(img, New RectangleF(imageLocation, imageSize))
+    e.Graphics.DrawImage(image, New RectangleF(imageLocation, imageSize))
 
     'TITLE
     Dim activeColor As Color = Color.FromArgb(44, 71, 120)
@@ -532,14 +532,14 @@ The GridGroupingControl does not have built-in support for printing the client a
 using System.Runtime.InteropServices;
 
 [DllImport("gdi32.dll")]
-private static extern bool BitBlt(IntPtr hdcDest, int nXDestint, int nYDest,
-int nWidthint, int nHeight, IntPtr hdcSrcint, int nXSrcint, int nYSrc, System.Int32 dwRop);
+private static extern bool BitBlt(IntPtr hdc, int nXint, int nY,
+int nWidthInt, int nHeight, IntPtr hdcSrcInt, int nXSrcInt, int nYSrc, System.Int32 n);
 {% endhighlight %}
 {% highlight vb %}
 Imports System.Runtime.InteropServices
 
 <DllImport("gdi32.dll")>
-Private Shared Function BitBlt(ByVal hdcDest As IntPtr, ByVal nXDestint As Integer, ByVal nYDest As Integer, ByVal nWidthint As Integer, ByVal nHeight As Integer, ByVal hdcSrcint As IntPtr, ByVal nXSrcint As Integer, ByVal nYSrc As Integer, ByVal dwRop As System.Int32) As Boolean
+Private Shared Function BitBlt(ByVal hdc As IntPtr, ByVal nXint As Integer, ByVal nY As Integer, ByVal nWidthInt As Integer, ByVal nHeight As Integer, ByVal hdcSrcInt As IntPtr, ByVal nXSrcInt As Integer, ByVal nYSrc As Integer, ByVal n As System.Int32) As Boolean
 End Function
 
 {% endhighlight %}
@@ -557,14 +557,14 @@ void printDocument_PrintPage(object sender, PrintPageEventArgs e)
 {
    e.Cancel = true;
    Graphics graphic = CreateGraphics();
-   Image memImage = new Bitmap(Size.Width, Size.Height, graphic);
-   Graphics memGraphic = Graphics.FromImage(memImage);
+   Image image = new Bitmap(Size.Width, Size.Height, graphic);
+   Graphics graphics = Graphics.FromImage(image);
    IntPtr dc1 = graphic.GetHdc();
-   IntPtr dc2 = memGraphic.GetHdc();
+   IntPtr dc2 = graphics.GetHdc();
    BitBlt(dc2, 0, 0, ClientRectangle.Width, ClientRectangle.Height, dc1, 0, 0, 13369376);
    graphic.ReleaseHdc(dc1);
-   memGraphic.ReleaseHdc(dc2);
-   e.Graphics.DrawImage(memImage, 0, 0);
+   graphics.ReleaseHdc(dc2);
+   e.Graphics.DrawImage(image, 0, 0);
 }
 
 {% endhighlight %}
@@ -577,14 +577,14 @@ previewDialog.Show()
 void printDocument_PrintPage(Object sender, PrintPageEventArgs e)
    e.Cancel = True
    Dim graphic As Graphics = CreateGraphics()
-   Dim memImage As Image = New Bitmap(Size.Width, Size.Height, graphic)
-   Dim memGraphic As Graphics = Graphics.FromImage(memImage)
+   Dim image As Image = New Bitmap(Size.Width, Size.Height, graphic)
+   Dim graphics As Graphics = Graphics.FromImage(image)
    Dim dc1 As IntPtr = graphic.GetHdc()
-   Dim dc2 As IntPtr = memGraphic.GetHdc()
+   Dim dc2 As IntPtr = graphics.GetHdc()
    BitBlt(dc2, 0, 0, ClientRectangle.Width, ClientRectangle.Height, dc1, 0, 0, 13369376)
    graphic.ReleaseHdc(dc1)
-   memGraphic.ReleaseHdc(dc2)
-   e.Graphics.DrawImage(memImage, 0, 0)
+   graphics.ReleaseHdc(dc2)
+   e.Graphics.DrawImage(image, 0, 0)
 {% endhighlight %}
 {% endtabs %}
 ![](Printing_images/Printing_img9.png)
@@ -987,17 +987,17 @@ This will only print the selected range which is enabled by the [AllowSelection]
 //Enabling the AllowSelection type selection
 this.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.Any;
 
-GridPrintDocument gpd = new GridPrintDocument(this.gridGroupingControl1.TableControl, true);
+GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridGroupingControl1.TableControl, true);
 //To print the selected range of cells
-gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection;
+gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection;
 {% endhighlight %}
 {% highlight vb %}
 'Enabling the AllowSelection type selection
 Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.Any
 
-Dim gpd As New GridPrintDocument(Me.gridGroupingControl1.TableControl, True)
+Dim gridPrintDocument As New GridPrintDocument(Me.gridGroupingControl1.TableControl, True)
 'To print the selected range of cells
-gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection
+gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection
 {% endhighlight %}
 {% endtabs %}
 The `PrintRange` enumeration has the following printing options,
@@ -1014,24 +1014,24 @@ The needed pages in the grid can only be printed by setting the [PrintRange](htt
 
 {% tabs %}
 {% highlight c# %}
-GridPrintDocument gpd = new GridPrintDocument(this. gridGroupingControl1.TableControl, true);
-PrintPreviewDialog ppd = new PrintPreviewDialog();
-ppd.Document = gpd;
+GridPrintDocument gridPrintDocument = new GridPrintDocument(this. gridGroupingControl1.TableControl, true);
+PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+printPreviewDialog.Document = gridPrintDocument;
 //To print the specific range of pages
-gpd.PrinterSettings.FromPage = 2;
-gpd.PrinterSettings.ToPage = 3;
-gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.SomePages;
-ppd.ShowDialog();
+gridPrintDocument.PrinterSettings.FromPage = 2;
+gridPrintDocument.PrinterSettings.ToPage = 3;
+gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.SomePages;
+printPreviewDialog.ShowDialog();
 {% endhighlight %}
 {% highlight vb %}
-Dim gpd As New GridPrintDocument(Me.gridGroupingControl1.TableControl, True)
-Dim ppd As New PrintPreviewDialog()
-ppd.Document = gpd
+Dim gridPrintDocument As New GridPrintDocument(Me.gridGroupingControl1.TableControl, True)
+Dim printPreviewDialog As New PrintPreviewDialog()
+printPreviewDialog.Document = gridPrintDocument
 'To print the specific range of pages
-gpd.PrinterSettings.FromPage = 2
-gpd.PrinterSettings.ToPage = 3
-gpd.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.SomePages
-ppd.ShowDialog()
+gridPrintDocument.PrinterSettings.FromPage = 2
+gridPrintDocument.PrinterSettings.ToPage = 3
+gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.SomePages
+printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
@@ -1062,9 +1062,9 @@ public class GridPrintAtLocDocument : GridPrintDocument
       this.DefaultPageSettings.Margins = new Margins(left, right, top, bottom);
       pageNo = 1;
    }
-   protected override void OnPrintPage(System.Drawing.Printing.PrintPageEventArgs ev)
+   protected override void OnPrintPage(System.Drawing.Printing.PrintPageEventArgs e)
    {
-       base.OnPrintPage(ev);
+       base.OnPrintPage(e);
        // compute the position of the header
        float x = float.Parse(this.DefaultPageSettings.Bounds.X);
        float y = (float.Parse(this.DefaultPageSettings.Margins.Top) - (headerHeight - 30));
@@ -1077,7 +1077,7 @@ public class GridPrintAtLocDocument : GridPrintDocument
        // define the header text and draw it
        string text = string.Format("Header Text {0}", pageNo);
        Font font = new Font(_grid.Font.Name, 30);
-       ev.Graphics.DrawString(text, font, Brushes.Black, new RectangleF(x, y, w, h), format);
+       e.Graphics.DrawString(text, font, Brushes.Black, new RectangleF(x, y, w, h), format);
        // position the footer; align the footer ; print the footer
        y = float.Parse((this.DefaultPageSettings.Bounds.Top + (this.DefaultPageSettings.Bounds.Height - footerHeight)));
        h = float.Parse(footerHeight);
@@ -1085,7 +1085,7 @@ public class GridPrintAtLocDocument : GridPrintDocument
        //  Gets the page No. with the Maximum Page
        text = string.Format("Footer Text {0} of {1}", pageNo, this.PrinterSettings.MaximumPage);
        font = new Font(_grid.Font.Name, 10);
-       ev.Graphics.DrawString(text, font, Brushes.Black, new RectangleF(x, y, w, h), format);
+       e.Graphics.DrawString(text, font, Brushes.Black, new RectangleF(x, y, w, h), format);
        pageNo++;
    }
 }
@@ -1116,8 +1116,8 @@ Public Class GridPrintAtLocDocument
         pageNo = 1
     End Sub
 
-    Protected Overrides Sub OnPrintPage(ByVal ev As System.Drawing.Printing.PrintPageEventArgs)
-        MyBase.OnPrintPage(ev)
+    Protected Overrides Sub OnPrintPage(ByVal e As System.Drawing.Printing.PrintPageEventArgs)
+        MyBase.OnPrintPage(e)
         ' compute the position of the header
         Dim x As Single = Single.Parse(Me.DefaultPageSettings.Bounds.X)
         Dim y As Single = (Single.Parse(Me.DefaultPageSettings.Margins.Top) - (headerHeight - 30))
@@ -1130,7 +1130,7 @@ Public Class GridPrintAtLocDocument
         ' define the header text and draw it
         Dim text As String = String.Format("Header Text {0}", pageNo)
         Dim font As New Font(_grid.Font.Name, 30)
-        ev.Graphics.DrawString(text, font, Brushes.Black, New RectangleF(x, y, w, h), format)
+        e.Graphics.DrawString(text, font, Brushes.Black, New RectangleF(x, y, w, h), format)
         ' position the footer; align the footer ; print the footer
         y = Single.Parse((Me.DefaultPageSettings.Bounds.Top + (Me.DefaultPageSettings.Bounds.Height - footerHeight)))
         h = Single.Parse(footerHeight)
@@ -1138,7 +1138,7 @@ Public Class GridPrintAtLocDocument
         '  Gets the page No. with the Maximum Page
         text = String.Format("Footer Text {0} of {1}", pageNo, Me.PrinterSettings.MaximumPage)
         font = New Font(_grid.Font.Name, 10)
-        ev.Graphics.DrawString(text, font, Brushes.Black, New RectangleF(x, y, w, h), format)
+        e.Graphics.DrawString(text, font, Brushes.Black, New RectangleF(x, y, w, h), format)
         pageNo += 1
     End Sub
 End Class
