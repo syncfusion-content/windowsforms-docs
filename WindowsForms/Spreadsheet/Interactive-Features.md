@@ -208,12 +208,12 @@ spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
     var contextMenu = new ContextMenuStrip();
     contextMenu.BackColor = Color.White;
     contextMenu.RenderMode = ToolStripRenderMode.System;
-    var insertRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertrow.png", UriKind.Relative)) };
+    var insertRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\insertRow.png", UriKind.Relative)) };
     var insertRow = new ToolStripMenuItem() { BackColor = Color.White, Text = "InsertRow" };           
     insertRow.Image = insertRowIcon;
     insertRow.Click += insertRow_Click;
 
-    var deleteRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleterow.png", UriKind.Relative)) };
+    var deleteRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleteRow.png", UriKind.Relative)) };
     var deleteRow = new ToolStripMenuItem() { BackColor = Color.White, Text = "DeleteRow"};
     deleteRow.Image = deleteRowIcon;
     deleteRow.Click += deleteRow_Click;
