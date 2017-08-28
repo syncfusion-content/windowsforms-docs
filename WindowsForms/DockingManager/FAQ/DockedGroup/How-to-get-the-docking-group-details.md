@@ -50,31 +50,31 @@ Add the code given below in the button click event.
 {% highlight C# %}
 
 
-Syncfusion.Windows.Forms.Tools.DockHost dhost = this.listBox1.Parent as Syncfusion.Windows.Forms.Tools.DockHost; 
+Syncfusion.Windows.Forms.Tools.DockHost dockHost = this.listBox1.Parent as Syncfusion.Windows.Forms.Tools.DockHost; 
 
-Syncfusion.Windows.Forms.Tools.DockHostController dhc = dhost.InternalController as  Syncfusion.Windows.Forms.Tools.DockHostController;
+Syncfusion.Windows.Forms.Tools.DockHostController dockHostController = dockHost.InternalController as  Syncfusion.Windows.Forms.Tools.DockHostController;
 
 // If ParentController is DockTabController the control will be in a tab.
 
-if(dhc.ParentController is Syncfusion.Windows.Forms.Tools.DockTabController) 
+if(dockHostController.ParentController is Syncfusion.Windows.Forms.Tools.DockTabController) 
 
 { 
 
        // Getting the DockTabControl from the DockTabController.
 
-Syncfusion.Windows.Forms.Tools.DockTabControl docktab = (dhc.ParentController as  Syncfusion.Windows.Forms.Tools.DockTabController).TabControl;
+Syncfusion.Windows.Forms.Tools.DockTabControl dockTab = (dockHostController.ParentController as  Syncfusion.Windows.Forms.Tools.DockTabController).TabControl;
 
 
 
        // Iterating through the TabPages to get other controls in that tab.
 
-       foreach(DockTabPage tabpage in docktab.TabPages) 
+       foreach(DockTabPage tabPage in dockTab.TabPages) 
 
        { 
 
-           Control siblingcontrol = tabpage.dhcClient.HostControl.Controls[0];
+           Control siblingControl = tabPage.dhcClient.HostControl.Controls[0];
 
-           MessageBox.Show(siblingcontrol.Name);
+           MessageBox.Show(siblingControl.Name);
 
        }
 
@@ -85,33 +85,33 @@ Syncfusion.Windows.Forms.Tools.DockTabControl docktab = (dhc.ParentController as
 {% highlight VB %}
 
 
-Dim dhost As Syncfusion.Windows.Forms.Tools.DockHost = CType(IIf(TypeOf Me.listBox1.Parent Is Syncfusion.Windows.Forms.Tools.DockHost, Me.listBox1.Parent, Nothing), Syncfusion.Windows.Forms.Tools.DockHost)
+Dim dockHost As Syncfusion.Windows.Forms.Tools.DockHost = CType(IIf(TypeOf Me.listBox1.Parent Is Syncfusion.Windows.Forms.Tools.DockHost, Me.listBox1.Parent, Nothing), Syncfusion.Windows.Forms.Tools.DockHost)
 
-Dim dhc As Syncfusion.Windows.Forms.Tools.DockHostController = CType(IIf(TypeOf dhost.InternalController Is Syncfusion.Windows.Forms.Tools.DockHostController, dhost.InternalController, Nothing), Syncfusion.Windows.Forms.Tools.DockHostController)
+Dim dockHostController As Syncfusion.Windows.Forms.Tools.DockHostController = CType(IIf(TypeOf dockHost.InternalController Is Syncfusion.Windows.Forms.Tools.DockHostController, dockHost.InternalController, Nothing), Syncfusion.Windows.Forms.Tools.DockHostController)
 
 
 
-    'If Parentcontroller is DockTabController the control will be in a tab.
+    'If ParentController is DockTabController the control will be in a tab.
 
-    If TypeOf dhc.ParentController Is Syncfusion.Windows.Forms.Tools.DockTabController Then
+    If TypeOf dockHostController.ParentController Is Syncfusion.Windows.Forms.Tools.DockTabController Then
 
 
 
        'Getting the DockTabControl from the DockTabController
 
-Dim docktab As Syncfusion.Windows.Forms.Tools.DockTabControl = (CType(IIf(TypeOf dhc.ParentController Is  Syncfusion.Windows.Forms.Tools.DockTabController, dhc.ParentController, Nothing), Syncfusion.Windows.Forms.Tools.DockTabController)).TabControl
+Dim dockTab As Syncfusion.Windows.Forms.Tools.DockTabControl = (CType(IIf(TypeOf dockHostController.ParentController Is  Syncfusion.Windows.Forms.Tools.DockTabController, dockHostController.ParentController, Nothing), Syncfusion.Windows.Forms.Tools.DockTabController)).TabControl
 
 
 
        'Iterating through the TabPages to get other controls in that tab.
 
-        For Each tabpage As DockTabPage In docktab.TabPages
+        For Each tabPage As DockTabPage In dockTab.TabPages
 
-            Dim siblingcontrol As Control = tabpage.dhcClient.HostControl.Controls(0)
+            Dim siblingControl As Control = tabPage.dhcClient.HostControl.Controls(0)
 
-            MessageBox.Show(siblingcontrol.Name)
+            MessageBox.Show(siblingControl.Name)
 
-    Next tabpage
+    Next tabPage
 
 End If
 

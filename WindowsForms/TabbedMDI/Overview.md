@@ -135,14 +135,14 @@ To create a TabbedMDIManager programmatically,
 
 
 
-		private TabbedMDIManager tb;
+		private TabbedMDIManager tabbedMDIManager;
 
    ~~~
    {:.prettyprint }
 
    ~~~ vbnet
 
-		Private WithEvents tb As tabbedMDIManager
+		Private WithEvents tabbedMDIManager As TabbedMDIManager
 
    ~~~
    {:.prettyprint }
@@ -159,7 +159,7 @@ To create a TabbedMDIManager programmatically,
 
 		InitializeComponent();
 
-		this.tb = new TabbedMDIManager();
+		this.tabbedMDIManager = new TabbedMDIManager();
 
 		}
 
@@ -170,7 +170,7 @@ To create a TabbedMDIManager programmatically,
 
 		Public Sub New()
 
-		tb = New TabbedMDIManager()
+		tabbedMDIManager = New TabbedMDIManager()
 
 		End Sub
    ~~~
@@ -189,7 +189,7 @@ To create a TabbedMDIManager programmatically,
 
 		this.IsMdiContainer=true;
 
-		this.tb.AttachToMdiContainer(this);
+		this.tabbedMDIManager.AttachToMdiContainer(this);
 
 		Form2 frm = new Form2();
 
@@ -210,7 +210,7 @@ To create a TabbedMDIManager programmatically,
 
 		Me.IsMdiContainer=true
 
-		Me.tb.AttachToMdiContainer(Me)
+		Me.tabbedMDIManager.AttachToMdiContainer(Me)
 
 		Dim frm As Form2 = New Form2
 

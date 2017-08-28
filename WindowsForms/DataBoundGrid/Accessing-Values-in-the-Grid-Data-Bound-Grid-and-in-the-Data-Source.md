@@ -29,7 +29,7 @@ object myValue = this.gridDataBoundGrid1[row, col].CellValue;
 
 'Gets Value at (row, col).
 
-Dim myValue as Object = Me.GridDataBoundGrid1(row, col).CellValueget value at row, col
+Dim myValue as Object = Me.GridDataBoundGrid1(row, col).CellValue
 {% endhighlight  %}
 If you want to retrieve the values that are based on column names, use the methods in the GridDataBoundGrid.Binder object to switch the name for a column index.
 {% highlight c# %}

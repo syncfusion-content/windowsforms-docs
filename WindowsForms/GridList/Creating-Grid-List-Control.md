@@ -70,7 +70,7 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Win
 
 {% highlight c# %}
 
-//Sets to arraylist of states.
+//Sets to array list of states.
 
 gridListBox1.DataSource = USStates;
 
@@ -103,7 +103,7 @@ gridListBox1.FillLastColumn = true;
 
 
 
-'Sets to arraylist of states.
+'Sets to array list of states.
 
 gridListBox1.DataSource = USStates        
 

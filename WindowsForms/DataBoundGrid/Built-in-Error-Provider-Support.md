@@ -100,7 +100,7 @@ The following code illustrates how to display the error icon on both the cell as
 {% highlight C# %}
 
 
-this.gridDataBoundGrid1.CurrentCell.ShowerrorIcon = true;
+this.gridDataBoundGrid1.CurrentCell.ShowErrorIcon = true;
 
 this.gridDataBoundGrid1.ShowRowHeaderErrorIcon = true; 
 {% endhighlight %}
@@ -111,7 +111,7 @@ this.gridDataBoundGrid1.ShowRowHeaderErrorIcon = true;
 
 
 
-Me.gridDataBoundGrid1.CurrentCell.ShowerrorIcon = True
+Me.gridDataBoundGrid1.CurrentCell.ShowErrorIcon = True
 
 Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
 

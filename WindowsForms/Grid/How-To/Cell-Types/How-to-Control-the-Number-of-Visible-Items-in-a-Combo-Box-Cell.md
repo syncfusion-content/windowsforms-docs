@@ -22,18 +22,18 @@ private void grid_CurrentCellShowingDropDown(object sender, GridCurrentCellShowi
     if(grid != null) 
     { 
         GridCurrentCell cc = grid.CurrentCell; 
-        GridComboBoxCellRenderer cr = cc.Renderer as GridComboBoxCellRenderer;
+        GridComboBoxCellRenderer cellRenderer = cc.Renderer as GridComboBoxCellRenderer;
 
-		//Sets number of visible items for comboboxes in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
+		//Sets number of visible items for combobox in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
         if(cc != null) 
         {
             if(cc.RowIndex == 6) 
-                 ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 4; 
+                 ((GridComboBoxListBoxPart)cellRenderer.ListBoxPart).DropDownRows = 4; 
             else if(cc.RowIndex == 4) 
-                 ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 7; 
+                 ((GridComboBoxListBoxPart)cellRenderer.ListBoxPart).DropDownRows = 7; 
             else if(cc.RowIndex == 2)
-                 ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 10; 
-            else ((GridComboBoxListBoxPart)cr.ListBoxPart).DropDownRows = 6; 
+                 ((GridComboBoxListBoxPart)cellRenderer.ListBoxPart).DropDownRows = 10; 
+            else ((GridComboBoxListBoxPart)cellRenderer.ListBoxPart).DropDownRows = 6; 
         } 
     }
 }
@@ -47,17 +47,17 @@ Private Sub Grid_CurrentCellShowingDropDown(sender As Object, e As GridCurrentCe
         Dim grid As GridControlBase = sender
         Dim cc As GridCurrentCell = grid.CurrentCell
         If cc.Renderer Is GetType(GridComboBoxCellRenderer) Then
-            Dim cr As GridComboBoxCellRenderer = cc.Renderer
+            Dim cellRenderer As GridComboBoxCellRenderer = cc.Renderer
 			
-			'Sets number of visible items for comboboxes in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on.
+			'Sets number of visible items for combobox in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on.
             If cc.RowIndex = 6 Then
-                CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 4
+                CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 4
             ElseIf cc.RowIndex = 4 Then
-                CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 7
+                CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 7
             ElseIf cc.RowIndex = 2 Then
-                CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 10
+                CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 10
             Else
-                CType(cr.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 6
+                CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 6
             End If
         End If
     Catch

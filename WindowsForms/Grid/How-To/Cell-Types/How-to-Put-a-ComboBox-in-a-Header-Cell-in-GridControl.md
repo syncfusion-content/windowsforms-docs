@@ -59,7 +59,7 @@ if(e.ColIndex > 0 && e.RowIndex == 0)
     int colIndex2 = this.gridDataBoundGrid1.Binder.NameToColIndex("Column4");
     if(colIndex2 == e.ColIndex)
     {
-          e.Style.Borders.All = gb;
+          e.Style.Borders.All = gridBorder;
           e.Style.BackColor = Color.White;
           e.Style.CellType = "ComboBox";
 
@@ -100,7 +100,7 @@ Private Sub Model_QueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCell
     If e.ColIndex > 0 AndAlso e.RowIndex = 0 Then
 	Dim colIndex2 As Integer = Me.gridDataBoundGrid1.Binder.NameToColIndex("Column4")
          If colIndex2 = e.ColIndex Then
-              e.Style.Borders.All = gb
+              e.Style.Borders.All = gridBorder
               e.Style.BackColor = Color.White
               e.Style.CellType = "ComboBox"
 			  'Sets Datasource for combobox.

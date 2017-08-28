@@ -16,7 +16,7 @@ It is simple to use the ColorEdit control to specify a cell's value. Just set th
 {% tabs %}
 {% highlight c# %}
 
-//Sets the controltype.
+//Sets the control type.
 gridControl1[4, 4].CellType = "ColorEdit"; 
 
 //Sets initial value to Color.Aqua or to sets RGB color, use something like 
@@ -33,7 +33,7 @@ Color c = (Color)System.ComponentModel.TypeDescriptor.GetConverter(typeof(Color)
 
 {% highlight vb %}
 
-'Sets controltype.
+'Sets control type.
 GridControl1(4, 4).CellType = "ColorEdit" 
 
 'Sets initial value to Color.Aqua or to sets RGB color, use something like  

@@ -23,7 +23,7 @@ The tri-state sort behavior is accomplished by storing sort indicator, which is 
 
 		//Sets Datasource.
 
-		this.gridDataBoundGrid1.DataSource = dt;
+		this.gridDataBoundGrid1.DataSource = dataTable;
 
 		this.gridDataBoundGrid1.Model.BaseStylesMap["Column Header"].StyleInfo.CellType = "Header"; 
 
@@ -60,7 +60,7 @@ The tri-state sort behavior is accomplished by storing sort indicator, which is 
 
 		'Sets Datasource.
 
-		Me.gridDataBoundGrid1.DataSource = dt
+		Me.gridDataBoundGrid1.DataSource = dataTable
 
 		Me.gridDataBoundGrid1.Model.BaseStylesMap("Column Header").StyleInfo.CellType = "Header" 
 

@@ -377,12 +377,12 @@ This section explains about deploying the external assemblies through batch file
 
 The above extension assemblies should be deployed to the following locations,
 
-**C:\Program Files (x86)\Common Files\microsoft shared\VSTT\&lt;Visual Studio Version&gt;\UITestExtensionPackages**
+**C:\Program Files (x86)\Common Files\Microsoft shared\VSTT\&lt;Visual Studio Version&gt;\UITestExtensionPackages**
 **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PublicAssemblies**<br/>
 **C:\Program Files (x86)\Microsoft Visual Studio &lt;Visual Studio Version&gt;\Common7\IDE\PrivateAssemblies**
 
 For example, these assemblies can be deployed for `Visual Studio 2013` in the following locations,<br/>
-C:\Program Files (x86)\Common Files\microsoft shared\VSTT\12.0\UITestExtensionPackages<br/>
+C:\Program Files (x86)\Common Files\Microsoft shared\VSTT\12.0\UITestExtensionPackages<br/>
 C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies<br/>
 C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies
 

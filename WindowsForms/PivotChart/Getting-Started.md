@@ -123,22 +123,22 @@ When we do bulk changes in underlying data source, it updates PivotChart for eve
 
 {% tabs %}
 {% highlight c# %}
-//Used to Suspend the painting Untill end update method.
+//Used to Suspend the painting Until end update method.
 this.pivotChart1.BeginUpdate();
 
 // do your bulk changes.
 
-//Resumes the painting of the control suspended by calling BegingUpdate method.
+//Resumes the painting of the control suspended by calling BeginUpdate method.
 this.pivotChart1.EndUpdate();
 {% endhighlight %}
 
 {% highlight vb %}
-'Used to Suspend the painting Untill end update method.
+'Used to Suspend the painting Until end update method.
 Me.pivotChart1.BeginUpdate()
 
 ' do your bulk changes.
 
-'Resumes the painting of the control suspended by calling BegingUpdate method.
+'Resumes the painting of the control suspended by calling BeginUpdate method.
 Me.pivotChart1.EndUpdate()
 {% endhighlight %}
 {% endtabs %}

@@ -45,73 +45,73 @@ private DataTable ReturnATable()
 
 //Adds some rows.
 
-   DataRow dr = table.NewRow();
+   DataRow dataRow = table.NewRow();
 
-   dr["FirstName"] = "John";
+   dataRow["FirstName"] = "John";
 
-   dr["LastName"] = "Smith";
+   dataRow["LastName"] = "Smith";
 
-   table.Rows.Add(dr);
-
-
-
-   dr = table.NewRow();
-
-   dr["FirstName"] = "Mary";
-
-   dr["LastName"] = "Tucker";
-
-   table.Rows.Add(dr);
+   table.Rows.Add(dataRow);
 
 
 
-   dr = table.NewRow();
+   dataRow = table.NewRow();
 
-   dr["FirstName"] = "Sue";
+   dataRow["FirstName"] = "Mary";
 
-   dr["LastName"] = "Gaskins";
+   dataRow["LastName"] = "Tucker";
 
-   table.Rows.Add(dr);
-
-
-
-   dr = table.NewRow();
-
-   dr["FirstName"] = "John";
-
-   dr["LastName"] = "Jacobs";
-
-   table.Rows.Add(dr);
+   table.Rows.Add(dataRow);
 
 
 
-   dr = table.NewRow();
+   dataRow = table.NewRow();
 
-   dr["FirstName"] = "Sam";
+   dataRow["FirstName"] = "Sue";
 
-   dr["LastName"] = "Garfunkel";
+   dataRow["LastName"] = "Gaskins";
 
-   table.Rows.Add(dr);
-
-
-
-   dr = table.NewRow();
-
-   dr["FirstName"] = "George";
-
-   dr["LastName"] = "Shepherd";
-
-   table.Rows.Add(dr);
+   table.Rows.Add(dataRow);
 
 
 
-   dr = table.NewRow();
+   dataRow = table.NewRow();
 
-   dr["FirstName"] = "Becky";
+   dataRow["FirstName"] = "John";
 
-   dr["LastName"] = "Dunsford";
+   dataRow["LastName"] = "Jacobs";
 
-   table.Rows.Add(dr);
+   table.Rows.Add(dataRow);
+
+
+
+   dataRow = table.NewRow();
+
+   dataRow["FirstName"] = "Sam";
+
+   dataRow["LastName"] = "Garfunkel";
+
+   table.Rows.Add(dataRow);
+
+
+
+   dataRow = table.NewRow();
+
+   dataRow["FirstName"] = "George";
+
+   dataRow["LastName"] = "Shepherd";
+
+   table.Rows.Add(dataRow);
+
+
+
+   dataRow = table.NewRow();
+
+   dataRow["FirstName"] = "Becky";
+
+   dataRow["LastName"] = "Dunsford";
+
+   table.Rows.Add(dataRow);
 
 
 
@@ -149,73 +149,73 @@ table.Columns.Add(New DataColumn("LastName"))
 
 'Adds some rows.
 
-Dim dr As DataRow = table.NewRow()
+Dim dataRow As DataRow = table.NewRow()
 
-dr("FirstName") = "John"
+dataRow("FirstName") = "John"
 
-dr("LastName") = "Smith"
+dataRow("LastName") = "Smith"
 
-table.Rows.Add(dr)
-
-
-
-dr = table.NewRow()
-
-dr("FirstName") = "Mary"
-
-dr("LastName") = "Tucker"
-
-table.Rows.Add(dr)
+table.Rows.Add(dataRow)
 
 
 
-dr = table.NewRow()
+dataRow = table.NewRow()
 
-dr("FirstName") = "Sue"
+dataRow("FirstName") = "Mary"
 
-dr("LastName") = "Gaskins"
+dataRow("LastName") = "Tucker"
 
-table.Rows.Add(dr)
-
-
-
-dr = table.NewRow()
-
-dr("FirstName") = "John"
-
-dr("LastName") = "Jacobs"
-
-table.Rows.Add(dr)
+table.Rows.Add(dataRow)
 
 
 
-dr = table.NewRow()
+dataRow = table.NewRow()
 
-dr("FirstName") = "Sam"
+dataRow("FirstName") = "Sue"
 
-dr("LastName") = "Garfunkel"
+dataRow("LastName") = "Gaskins"
 
-table.Rows.Add(dr)
-
-
-
-dr = table.NewRow()
-
-dr("FirstName") = "George"
-
-dr("LastName") = "Shepherd"
-
-table.Rows.Add(dr)
+table.Rows.Add(dataRow)
 
 
 
-dr = table.NewRow()
+dataRow = table.NewRow()
 
-dr("FirstName") = "Becky"
+dataRow("FirstName") = "John"
 
-dr("LastName") = "Dunsford"
+dataRow("LastName") = "Jacobs"
 
-table.Rows.Add(dr)
+table.Rows.Add(dataRow)
+
+
+
+dataRow = table.NewRow()
+
+dataRow("FirstName") = "Sam"
+
+dataRow("LastName") = "Garfunkel"
+
+table.Rows.Add(dataRow)
+
+
+
+dataRow = table.NewRow()
+
+dataRow("FirstName") = "George"
+
+dataRow("LastName") = "Shepherd"
+
+table.Rows.Add(dataRow)
+
+
+
+dataRow = table.NewRow()
+
+dataRow("FirstName") = "Becky"
+
+dataRow("LastName") = "Dunsford"
+
+table.Rows.Add(dataRow)
 
 
 

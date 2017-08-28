@@ -119,7 +119,7 @@ this.miWindow = this.mainMenu1.MenuItems.Add("Window");
 
 // Let the TabbedMDIManager insert the MDIChild windows list.
 
-this.tb.MdiListMenuItem = miWindow;
+this.tabbedMDIManager.MdiListMenuItem = miWindow;
 
 }
 
@@ -140,7 +140,7 @@ Me.miWindow = Me.mainMenu1.MenuItems.Add("Window")
 
 ' Let the TabbedMDIManager insert the MDIChild windows list.
 
-Me.tb.MdiListMenuItem = miWindow
+Me.tabbedMDIManager.MdiListMenuItem = miWindow
 
 End Sub
 

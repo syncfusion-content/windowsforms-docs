@@ -24,7 +24,7 @@ this.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.ShowColumnHeaders
 this.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.ShowFilterBar=true;
 
 //Sets the caption.
-this.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.CaptionText="Hai";
+this.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.CaptionText="SampleText";
 
 //Shows the group footer.
 this.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.ShowGroupFooter=true;
@@ -43,7 +43,7 @@ Me.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.ShowAddNewRecordBef
    Me.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.ShowFilterBar=True
 
 'Sets the caption.
-Me.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.CaptionText="Hai"
+Me.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.CaptionText="SampleText"
 
 'Shows the group footer.
 Me.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.ShowGroupFooter=True
