@@ -80,10 +80,10 @@ this.gridGroupingControl1.TableDescriptor.Columns["Winning %"].Appearance.AnyRec
 this.gridGroupingControl1.TableDescriptor.Columns["Winning %"].Appearance.AnyRecordFieldCell.Font.Size = 12;
 this.gridGroupingControl1.TableDescriptor.Columns["Winning %"].Appearance.AnyRecordFieldCell.HorizontalAlignment = GridHorizontalAlignment.Center;
 
-// Setting text color for "Lossing %" column
-this.gridGroupingControl1.TableDescriptor.Columns["Lossing %"].Appearance.AnyRecordFieldCell.TextColor = Color.White;
-this.gridGroupingControl1.TableDescriptor.Columns["Lossing %"].Appearance.AnyRecordFieldCell.Font.Facename = "Segoe UI";
-this.gridGroupingControl1.TableDescriptor.Columns["Lossing %"].Appearance.AnyRecordFieldCell.Font.Size = 12;
+// Setting text color for "Losing %" column
+this.gridGroupingControl1.TableDescriptor.Columns["Losing %"].Appearance.AnyRecordFieldCell.TextColor = Color.White;
+this.gridGroupingControl1.TableDescriptor.Columns["Losing %"].Appearance.AnyRecordFieldCell.Font.Facename = "Segoe UI";
+this.gridGroupingControl1.TableDescriptor.Columns["Losing %"].Appearance.AnyRecordFieldCell.Font.Size = 12;
 this.gridGroupingControl1.TableDescriptor.Columns["Winning %"].Appearance.AnyRecordFieldCell.HorizontalAlignment = GridHorizontalAlignment.Center;
 
 {% endhighlight %}
@@ -94,10 +94,10 @@ Me.gridGroupingControl1.TableDescriptor.Columns("Winning %").Appearance.AnyRecor
 Me.gridGroupingControl1.TableDescriptor.Columns("Winning %").Appearance.AnyRecordFieldCell.Font.Size = 12
 Me.gridGroupingControl1.TableDescriptor.Columns("Winning %").Appearance.AnyRecordFieldCell.HorizontalAlignment = GridHorizontalAlignment.Center
 
-' Setting text color for "Lossing %" column
-Me.gridGroupingControl1.TableDescriptor.Columns("Lossing %").Appearance.AnyRecordFieldCell.TextColor = Color.White
-Me.gridGroupingControl1.TableDescriptor.Columns("Lossing %").Appearance.AnyRecordFieldCell.Font.Facename = "Segoe UI"
-Me.gridGroupingControl1.TableDescriptor.Columns("Lossing %").Appearance.AnyRecordFieldCell.Font.Size = 12
+' Setting text color for "Losing %" column
+Me.gridGroupingControl1.TableDescriptor.Columns("Losing %").Appearance.AnyRecordFieldCell.TextColor = Color.White
+Me.gridGroupingControl1.TableDescriptor.Columns("Losing %").Appearance.AnyRecordFieldCell.Font.Facename = "Segoe UI"
+Me.gridGroupingControl1.TableDescriptor.Columns("Losing %").Appearance.AnyRecordFieldCell.Font.Size = 12
 Me.gridGroupingControl1.TableDescriptor.Columns("Winning %").Appearance.AnyRecordFieldCell.HorizontalAlignment = GridHorizontalAlignment.Center
 
 {% endhighlight %}
@@ -356,7 +356,7 @@ Expression fields can be nested, which means that the formula expression of an e
 {% highlight c# %}
 //Defines expression fields that are nested.
 ExpressionFieldDescriptor expField1 = new ExpressionFieldDescriptor("Winning %", "[wins]+[ties]+[losses]", typeof(System.Double));
-ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Lossing %", "[ Winning %
+ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Losing %", "[ Winning %
 ]*100", typeof(System.Double));
 
 //Adds these expression fields to the grid table.
@@ -364,13 +364,13 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(new Expressi
 
 //Appearance Settings.
 this.gridGroupingControl1.TableDescriptor.Columns["Winning %"].Appearance.AnyRecordFieldCell.BackColor = Color.Cornsilk;
-this.gridGroupingControl1.TableDescriptor.Columns["Lossing %"].Appearance.AnyRecordFieldCell.BackColor = Color.Cornsilk;
+this.gridGroupingControl1.TableDescriptor.Columns["Losing %"].Appearance.AnyRecordFieldCell.BackColor = Color.Cornsilk;
 {% endhighlight %}
 {% highlight vb %}
 'Defines expression fields that are nested.
 Dim expField1 As ExpressionFieldDescriptor = New ExpressionFieldDescriptor("Winning %
 ", "[wins]+[ties]+[losses]", GetType(System.Double)))
-Dim expField1 As ExpressionFieldDescriptor = New ExpressionFieldDescriptor("Lossing %
+Dim expField1 As ExpressionFieldDescriptor = New ExpressionFieldDescriptor("Losing %
 ", "[ExpCol1]*100", GetType(System.Double))
 
 'Adds these expression fields to the grid table.
@@ -379,7 +379,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Expression
 'Appearance Settings.
 Me.gridGroupingControl1.TableDescriptor.Columns("Winning %
 ").Appearance.AnyRecordFieldCell.BackColor = Color.Cornsilk
-Me.gridGroupingControl1.TableDescriptor.Columns("Lossing %
+Me.gridGroupingControl1.TableDescriptor.Columns("Losing %
 ").Appearance.AnyRecordFieldCell.BackColor = Color.Cornsilk
 {% endhighlight %}
 {% endtabs %}
@@ -460,13 +460,13 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("AB
 {% highlight c# %}
 // Adding the Expressions using ComputeAbsoluteValue function.
 ExpressionFieldDescriptor expField1 = new ExpressionFieldDescriptor("Winning %", "ABSOLUTEVALUE([wins],[losses])", typeof(System.Double));
-ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Lossing %", "ABSOLUTEVALUE([wins],[ties])", typeof(System.Double));
+ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Losing %", "ABSOLUTEVALUE([wins],[ties])", typeof(System.Double));
 this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(new ExpressionFieldDescriptor[] { expField1,expField2});
 {% endhighlight %}
 {% highlight vb %}
 ' Adding the Expressions using ComputeAbsoluteValue function.
 Dim expField1 As New ExpressionFieldDescriptor("Winning %", "ABSOLUTEVALUE([wins],[losses])", GetType(System.Double))
-Dim expField2 As New ExpressionFieldDescriptor("Lossing %", "ABSOLUTEVALUE([wins],[ties])", GetType(System.Double))
+Dim expField2 As New ExpressionFieldDescriptor("Losing %", "ABSOLUTEVALUE([wins],[ties])", GetType(System.Double))
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1,expField2})
 {% endhighlight %}
 {% endtabs %}
@@ -514,13 +514,13 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("IF
 {% highlight c# %}
 // Adding the Expressions using ComputeIfFunction.
 ExpressionFieldDescriptor expField1 = new ExpressionFieldDescriptor("Winning %", "IF([wins]<100,[losses],0)", typeof(System.Double));
-ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Lossing %", "IF([losses]<100,[wins],0)", typeof(System.Double));
+ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Losing %", "IF([losses]<100,[wins],0)", typeof(System.Double));
 this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(new ExpressionFieldDescriptor[] { expField1,expField2});
 {% endhighlight %}
 {% highlight vb %}
 ' Adding the Expressions using ComputeIfFunction.
 Dim expField1 As New ExpressionFieldDescriptor("Winning %", "IF([wins]<100,[losses],0)", GetType(System.Double))
-Dim expField2 As New ExpressionFieldDescriptor("Lossing %", "IF([losses]<100,[wins],0)", GetType(System.Double))
+Dim expField2 As New ExpressionFieldDescriptor("Losing %", "IF([losses]<100,[wins],0)", GetType(System.Double))
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1,expField2})
 {% endhighlight %}
 {% endtabs %}
@@ -573,13 +573,13 @@ evaluator.AddFunction("MAX", New ExpressionFieldEvaluator.LibraryFunction(engine
 {% highlight c# %}
 // Adding the Nested Expressions.
 ExpressionFieldDescriptor expField1 = new ExpressionFieldDescriptor("Winning %", "IF([wins]<100,[losses],0)", typeof(System.Double));
-ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Lossing %", "IF([losses]<100,MAX([wins],[losses]),0) * 5", typeof(System.Double));
+ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Losing %", "IF([losses]<100,MAX([wins],[losses]),0) * 5", typeof(System.Double));
 this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(new ExpressionFieldDescriptor[] { expField1,expField2});
 {% endhighlight %}
 {% highlight vb %}
 ' Adding the Nested Expressions.
 Dim expField1 As New ExpressionFieldDescriptor("Winning %", "IF([wins]<100,[losses],0)", GetType(System.Double))
-Dim expField2 As New ExpressionFieldDescriptor("Lossing %", "IF([losses]<100,MAX([wins],[losses]),0) * 5", GetType(System.Double))
+Dim expField2 As New ExpressionFieldDescriptor("Losing %", "IF([losses]<100,MAX([wins],[losses]),0) * 5", GetType(System.Double))
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1
 {% endhighlight %}
 {% endtabs %}
@@ -605,7 +605,7 @@ string errorString = string.Empty;
 if (evaluator.IsExpressionValid("Winning %", "ABSOLUTEVALUE([wins],[losses])", record, out errorString))
     {
        ExpressionFieldDescriptor expField1 = new ExpressionFieldDescriptor("Winning %",    "ABSOLUTEVALUE([wins],[losses])", typeof(System.Double));
-      ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Lossing %", "ABSOLUTEVALUE([wins],[ties])", typeof(System.Double));
+      ExpressionFieldDescriptor expField2 = new ExpressionFieldDescriptor("Losing %", "ABSOLUTEVALUE([wins],[ties])", typeof(System.Double));
       this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(new    ExpressionFieldDescriptor[] { expField1, expField2 });
 }
 
@@ -622,7 +622,7 @@ Dim errorString As String = String.Empty
 ' Validating the expression
 If evaluator.IsExpressionValid("Winning %", "ABSOLUTEVALUE([wins],[losses])", record, errorString) Then
        Dim expField1 As New ExpressionFieldDescriptor("Winning %", "ABSOLUTEVALUE([wins],[losses])", GetType(System.Double))
-      Dim expField2 As New ExpressionFieldDescriptor("Lossing %", "ABSOLUTEVALUE([wins],[ties])", GetType(System.Double))
+      Dim expField2 As New ExpressionFieldDescriptor("Losing %", "ABSOLUTEVALUE([wins],[ties])", GetType(System.Double))
       Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1, expField2 })
 End If
 {% endhighlight %}
