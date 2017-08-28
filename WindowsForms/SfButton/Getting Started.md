@@ -42,7 +42,7 @@ To add a **SfButton** to form, drag and drop a **SfButton** from the toolbox ont
 
 ![](SfButton_images/SfButton_img1.jpeg)
 
-### Thorugh code
+### Through code
 
 To programmatically add the **SfButton** to form, create a new instance of the SfButton and add it to the form **Controls** collection.
 
