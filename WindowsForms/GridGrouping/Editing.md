@@ -263,7 +263,7 @@ void gridGroupingControl1_TableControlCurrentCellStartEditing(object sender, Gri
 {
     GridCurrentCell currentCell = e.TableControl.CurrentCell;
 
-    // Editing for the rows in-between 2 and 6 will be cancelled.
+    // Editing for the rows in-between 2 and 6 will be canceled.
     if (currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)))
         e.Inner.Cancel = true;
 }
@@ -275,7 +275,7 @@ AddHandler gridGroupingControl1.TableControlCurrentCellStartEditing, AddressOf g
 Private Sub gridGroupingControl1_TableControlCurrentCellStartEditing(ByVal sender As Object, ByVal e As GridTableControlCancelEventArgs)
     Dim currentCell As GridCurrentCell = e.TableControl.CurrentCell
 
-    ' Editing for the rows in-between 2 and 6 will be cancelled.
+    ' Editing for the rows in-between 2 and 6 will be canceled.
     If currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)) Then
         e.Inner.Cancel = True
     End If
@@ -410,7 +410,7 @@ The `AutoFit` property has the following options,
 this.gridGroupingControl1.TableDescriptor.Columns["CustomerID"].Appearance.AnyRecordFieldCell.AutoFit = AutoFitOptions.Both;
 {% endhighlight %}
 {% highlight vb %}
-'To convert both Numeric and Alphabet contents to the placehold characters
+'To convert both Numeric and Alphabet contents to the place hold characters
 Me.gridGroupingControl1.TableDescriptor.Columns("CustomerID").Appearance.AnyRecordFieldCell.AutoFit = AutoFitOptions.Both
 {% endhighlight %}
 {% endtabs %}
@@ -460,12 +460,12 @@ this.gridGroupingControl1.TableControlCurrentCellKeyDown += new GridTableControl
 void gridGroupingControl1_TableControlCurrentCellKeyPress(object sender, GridTableControlKeyPressEventArgs e)
 {
     //Create object for current cell renderer
-    GridTextBoxCellRenderer cr = e.TableControl.CurrentCell.Renderer as GridTextBoxCellRenderer;
+    GridTextBoxCellRenderer cellRenderer = e.TableControl.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
-    if (e.Inner.KeyChar != Convert.ToChar(Keys.Back) && cr.TextBox.SelectionLength == 0)
+    if (e.Inner.KeyChar != Convert.ToChar(Keys.Back) && cellRenderer.TextBox.SelectionLength == 0)
     {
         //Programmatically selects One char.
-        cr.TextBox.SelectionLength = 1;
+        cellRenderer.TextBox.SelectionLength = 1;
     }
 }
 
@@ -488,11 +488,11 @@ AddHandler gridGroupingControl1.TableControlCurrentCellKeyDown, AddressOf gridGr
 
 Private Sub gridGroupingControl1_TableControlCurrentCellKeyPress(ByVal sender As Object, ByVal e As GridTableControlKeyPressEventArgs)
     'Create object for current cell renderer
-    Dim cr As GridTextBoxCellRenderer = TryCast(e.TableControl.CurrentCell.Renderer, GridTextBoxCellRenderer)
+    Dim cellRenderer As GridTextBoxCellRenderer = TryCast(e.TableControl.CurrentCell.Renderer, GridTextBoxCellRenderer)
 
-    If e.Inner.KeyChar <> Convert.ToChar(Keys.Back) AndAlso cr.TextBox.SelectionLength = 0 Then
+    If e.Inner.KeyChar <> Convert.ToChar(Keys.Back) AndAlso cellRenderer.TextBox.SelectionLength = 0 Then
         'Programmatically selects One char.
-        cr.TextBox.SelectionLength = 1
+        cellRenderer.TextBox.SelectionLength = 1
     End If
 End Sub
 
