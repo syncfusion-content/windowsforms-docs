@@ -85,7 +85,7 @@ PivotWordExport wordExport = new PivotWordExport();
 
 
 
-wordExport.pivotGridToWord(savedialog.FileName, pivotGridControl1);
+wordExport.pivotGridToWord(saveDialog.FileName, pivotGridControl1);
 
 {% endhighlight %}
 
@@ -93,7 +93,7 @@ wordExport.pivotGridToWord(savedialog.FileName, pivotGridControl1);
 
 Dim wordExport As New PivotWordExport()
 
-wordExport.pivotGridToWord(savedialog.FileName, pivotGridControl1)
+wordExport.pivotGridToWord(saveDialog.FileName, pivotGridControl1)
 
 {% endhighlight %}
 
@@ -117,7 +117,7 @@ The Export method is used to export PivotGrid content to a PDF file. The follow
 
 PivotPdfExport pdfExport = new PivotPdfExport(pivotGridControl1);
 
-pdfExport.Export(savedialog.FileName);
+pdfExport.Export(saveDialog.FileName);
 
 {% endhighlight %}
 
@@ -125,7 +125,7 @@ pdfExport.Export(savedialog.FileName);
 
 Dim pdfExport As New PivotPdfExport(pivotGridControl1)
 
-pdfExport.Export(savedialog.FileName)
+pdfExport.Export(saveDialog.FileName)
 
 {% endhighlight %}
 

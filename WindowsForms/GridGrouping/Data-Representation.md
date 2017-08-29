@@ -3139,7 +3139,7 @@ Returns 1 if there is any occurrence of right-hand argument in the left-hand arg
 <td>
 Like</td><td>
 Like</td><td>
-Checks if the field starts exactrly as specified in the right-hand argument. For example, [CompanyName] like 'RTR' returns 1 for any record whose CompanyName field is exactrly RTR. You can use an asterisk as a wildcard. [CompanyName] like 'RTR*' returns 1 for any record whose CompanyName field starts with RTR. [CompanyName] like '*RTR' returns 1 for any record whose CompanyName field ends with RTR. </td><td>
+Checks if the field starts exactly as specified in the right-hand argument. For example, [CompanyName] like 'RTR' returns 1 for any record whose CompanyName field is exactrly RTR. You can use an asterisk as a wildcard. [CompanyName] like 'RTR*' returns 1 for any record whose CompanyName field starts with RTR. [CompanyName] like '*RTR' returns 1 for any record whose CompanyName field ends with RTR. </td><td>
 [Sport] like 'Basket*'</td></tr>
 <tr>
 <td>
@@ -3309,7 +3309,7 @@ foreach (RankData a in rank)
 
 {
 
-filter = "[WellName] like '" + ReplaceSpcChar(a.WellName) + "'"; 
+filter = "[WellName] like '" + ReplaceSpecialChar(a.WellName) + "'"; 
 
 recordFilterDescriptor = new RecordFilterDescriptor(filter);
 
@@ -3335,7 +3335,7 @@ gridGroupingControl1.TableDescriptor.RecordFilters.Clear();
 
 
 
-private string ReplaceSpcChar(string pattern)
+private string ReplaceSpecialChar(string pattern)
 
 {
 
@@ -3383,7 +3383,7 @@ Dim r As Record = Nothing
 
 For Each a As RankData In rank
 
-filter = "[WellName] like '" & ReplaceSpcChar(a.WellName) & "'"
+filter = "[WellName] like '" & ReplaceSpecialChar(a.WellName) & "'"
 
 recordFilterDescriptor = New RecordFilterDescriptor(filter)
 
@@ -3409,7 +3409,7 @@ End Sub
 
 
 
-Private Function ReplaceSpcChar(ByVal pattern As String) As String
+Private Function ReplaceSpecialChar(ByVal pattern As String) As String
 
 
 

@@ -146,9 +146,9 @@ excelFilter.EnableDateFilter = true;
 excelFilter.AllowSearch = false;
 excelFilter.EnableNumberFilter = true;
 excelFilter.WireGrid(gridGroupingControl1);
-XmlReader xrExcelFilter = new XmlTextReader("GridExcelFilter.xml");
-this.excelFilter.ApplyXml(xrExcelFilter);
-xrExcelFilter.Close();
+XmlReader xmlReader = new XmlTextReader("GridExcelFilter.xml");
+this.excelFilter.ApplyXml(xmlReader);
+xmlReader.Close();
 {% endhighlight %}
 {% highlight vb%}
 Dim excelFilter As New GridExcelFilter()
@@ -157,9 +157,9 @@ excelFilter.EnableDateFilter = True
 excelFilter.AllowSearch = False
 excelFilter.EnableNumberFilter = True
 excelFilter.WireGrid(gridGroupingControl1)
-Dim xrExcelFilter As XmlReader = New XmlTextReader("GridExcelFilter.xml")
-Me.excelFilter.ApplyXml(xrExcelFilter)
-xrExcelFilter.Close()
+Dim xmlReader As XmlReader = New XmlTextReader("GridExcelFilter.xml")
+Me.excelFilter.ApplyXml(xmlReader)
+xmlReader.Close()
 {% endhighlight%}
 {% endtabs %}
 
