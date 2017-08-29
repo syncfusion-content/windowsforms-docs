@@ -649,11 +649,11 @@ public class CustomClass : INotifyPropertyChanged
     string address;
     string city;
 
-    public CustomClass(int id, string firstName, string lname, string address, string city)
+    public CustomClass(int id, string firstName, string lastName, string address, string city)
     {
         this.id = id;
         first_name = firstName;
-        last_name = lname;
+        last_name = lastName;
         this.address = address;
         this.city = city;
     }
@@ -762,10 +762,10 @@ Public Class CustomClass
 'INSTANT VB NOTE: The variable city was renamed since Visual Basic does not allow class members with the same name:
     Private city_Renamed As String
 
-    Public Sub New(ByVal id As Integer, ByVal firstName As String, ByVal lname As String, ByVal address As String, ByVal city As String)
+    Public Sub New(ByVal id As Integer, ByVal firstName As String, ByVal lastName As String, ByVal address As String, ByVal city As String)
         Me.id_Renamed = id
         first_name = firstName
-        last_name = lname
+        last_name = lastName
         address_Renamed = address
         Me.city_Renamed = city
     End Sub
@@ -2719,8 +2719,8 @@ OleDbConnection connection = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4
 OleDbDataAdapter adapter = new OleDbDataAdapter("SELECT * FROM Customers", connection);
 
 // Creates and fills Data Set. 
-DataSet dtSet = new DataSet();
-adapter.Fill(dtSet);
+DataSet dataSet = new DataSet();
+adapter.Fill(dataSet);
 {% endhighlight %}
 {% highlight vb %}
 'Creates Connection Object. 
@@ -2730,8 +2730,8 @@ Dim connection As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Sou
 Dim adapter As New OleDbDataAdapter("SELECT * FROM Customers", connection)
 
 ' Creates and fills Data Set. 
-Dim dtSet As New DataSet()
-adapter.Fill(dtSet)
+Dim dataSet As New DataSet()
+adapter.Fill(dataSet)
 {% endhighlight %}
 {% endtabs %}
 
@@ -2739,11 +2739,11 @@ adapter.Fill(dtSet)
 {% tabs %}
 {% highlight c# %}
 //Bind the dataset to the grid's data source 
-this.gridGroupingControl1.DataSource = dtSet.Tables[0];
+this.gridGroupingControl1.DataSource = dataSet.Tables[0];
 {% endhighlight %}
 {% highlight vb %}
 'Bind the dataset to the grid's data source 
-Me.gridGroupingControl1.DataSource = dtSet.Tables(0)
+Me.gridGroupingControl1.DataSource = dataSet.Tables(0)
 {% endhighlight %}
 {% endtabs %}
 

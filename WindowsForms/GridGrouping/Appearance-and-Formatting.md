@@ -136,7 +136,7 @@ tableDescriptor.Appearance.GroupCaptionCell.Borders.Bottom = new GridBorder(Grid
 {% endhighlight %}
 {% highlight vb %}
 
-'Get the TableDescrptor for the Child Table named "Orders".
+'Get the TableDescriptor for the Child Table named "Orders".
 Dim tableDescriptor As GridTableDescriptor = Me.gridGroupingControl1.GetTableDescriptor("Orders")
 
 'Record Field Cell styles.

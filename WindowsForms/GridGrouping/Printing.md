@@ -532,14 +532,14 @@ The GridGroupingControl does not have built-in support for printing the client a
 using System.Runtime.InteropServices;
 
 [DllImport("gdi32.dll")]
-private static extern bool BitBlt(IntPtr hdc, int nXint, int nY,
+private static extern bool BitBlt(IntPtr hdc, int nX, int nY,
 int nWidthInt, int nHeight, IntPtr hdcSrcInt, int nXSrcInt, int nYSrc, System.Int32 n);
 {% endhighlight %}
 {% highlight vb %}
 Imports System.Runtime.InteropServices
 
 <DllImport("gdi32.dll")>
-Private Shared Function BitBlt(ByVal hdc As IntPtr, ByVal nXint As Integer, ByVal nY As Integer, ByVal nWidthInt As Integer, ByVal nHeight As Integer, ByVal hdcSrcInt As IntPtr, ByVal nXSrcInt As Integer, ByVal nYSrc As Integer, ByVal n As System.Int32) As Boolean
+Private Shared Function BitBlt(ByVal hdc As IntPtr, ByVal nX As Integer, ByVal nY As Integer, ByVal nWidthInt As Integer, ByVal nHeight As Integer, ByVal hdcSrcInt As IntPtr, ByVal nXSrcInt As Integer, ByVal nYSrc As Integer, ByVal n As System.Int32) As Boolean
 End Function
 
 {% endhighlight %}

@@ -98,21 +98,21 @@ The stacked headers can be added through code by using the below method,
 // “header1” denotes the name of the GridStackedHeaderDescriptor
 // “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
 GridStackedHeaderDescriptor stackedHeaderDescriptor = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
-GridStackedHeaderDescriptor shd1 = new GridStackedHeaderDescriptor("header2", "StackedHeader2");
+GridStackedHeaderDescriptor stackedHeaderDescriptor1 = new GridStackedHeaderDescriptor("header2", "StackedHeader2");
 
 // Step 2: Adding visible columns to the StackedHeaderDescriptor
 stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("EmployeeID"));
 stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("FirstName"));
 stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("LastName"));
 
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Title"));
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Address"));
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("City"));
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Country"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Title"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Address"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("City"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Country"));
 
 // Step 3: Adding StackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
 GridStackedHeaderRowDescriptor stackedHeaderRowDescriptor = new GridStackedHeaderRowDescriptor("Row1",
-    new GridStackedHeaderDescriptor[] { stackedHeaderDescriptor, shd1 });
+    new GridStackedHeaderDescriptor[] { stackedHeaderDescriptor, stackedHeaderDescriptor1 });
 
 // Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows
 this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor);
@@ -127,20 +127,20 @@ this.gridGroupingControl1.TopLevelGroupOptions.ShowStackedHeaders = true;
 ' “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
 
 Dim stackedHeaderDescriptor As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
-Dim shd1 As New GridStackedHeaderDescriptor("header2", "StackedHeader2")
+Dim stackedHeaderDescriptor1 As New GridStackedHeaderDescriptor("header2", "StackedHeader2")
 
 ' Step 2: Adding visible columns to the StackedHeaderDescriptor
 stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("EmployeeID"))
 stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("FirstName"))
 stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("LastName"))
 
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Title"))
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Address"))
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("City"))
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Country"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Title"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Address"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("City"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Country"))
 
 ' Step 3: Adding StackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-Dim stackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { stackedHeaderDescriptor, shd1 })
+Dim stackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { stackedHeaderDescriptor, stackedHeaderDescriptor1 })
 
 ' Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows
 Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor)
@@ -162,20 +162,20 @@ Users can also display the stacked headers for the child groups as well as the n
 // “header1” denotes the name of the GridStackedHeaderDescriptor
 // “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
 GridStackedHeaderDescriptor stackedHeaderDescriptor = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
-GridStackedHeaderDescriptor shd1 = new GridStackedHeaderDescriptor("header2", "StackedHeader2");
+GridStackedHeaderDescriptor stackedHeaderDescriptor1 = new GridStackedHeaderDescriptor("header2", "StackedHeader2");
 
 // Step 2: Adding visible columns to the StackedHeaderDescriptor
 stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("CustomerID"));
 stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("OrderDate"));
 stackedHeaderDescriptor.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("OrderID"));
 
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShipAddress"));
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShipName"));
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShippedDate"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShipAddress"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShipName"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("ShippedDate"));
 
 // Step 3: Adding GridStackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
 GridStackedHeaderRowDescriptor stackedHeaderRowDescriptor = new GridStackedHeaderRowDescriptor("Row1",
-    new GridStackedHeaderDescriptor[] { stackedHeaderDescriptor, shd1 });
+    new GridStackedHeaderDescriptor[] { stackedHeaderDescriptor, stackedHeaderDescriptor1 });
 
 
 // Step 4: Add the GridStackedHeaderRowDescriptor collection to the StackedHeaderRows of the Nested TableDescriptor.
@@ -191,19 +191,19 @@ this.gridGroupingControl1.ChildGroupOptions.ShowStackedHeaders = true;
 ' “StackedHeader1” denotes the display text of the GridStackedHeaderDescriptor
 
 Dim stackedHeaderDescriptor As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
-Dim shd1 As New GridStackedHeaderDescriptor("header2", "StackedHeader2")
+Dim stackedHeaderDescriptor1 As New GridStackedHeaderDescriptor("header2", "StackedHeader2")
 
 ' Step 2: Adding visible columns to the StackedHeaderDescriptor
 stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("CustomerID"))
 stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("OrderDate"))
 stackedHeaderDescriptor.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("OrderID"))
 
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShipAddress"))
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShipName"))
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShippedDate"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShipAddress"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShipName"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("ShippedDate"))
 
 ' Step 3: Adding GridStackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-Dim stackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { stackedHeaderDescriptor, shd1 })
+Dim stackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { stackedHeaderDescriptor, stackedHeaderDescriptor1 })
 
 
 ' Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows of the Nested TableDescriptor.
@@ -310,7 +310,7 @@ Multiple stacked headers can be achieved in GridGroupingControl by just adding t
 {% tabs %}
 {% highlight c# %}
 // Step 1: Creating StackedHeaderDescriptor for adding stacked columns
-GridStackedHeaderDescriptor shd1 = new GridStackedHeaderDescriptor("groupheader1", "GroupStackedHeader1");
+GridStackedHeaderDescriptor stackedHeaderDescriptor1 = new GridStackedHeaderDescriptor("groupheader1", "GroupStackedHeader1");
 GridStackedHeaderDescriptor shd2 = new GridStackedHeaderDescriptor("header1", "StackedHeader1");
 
 // Step 2: Adding visible columns to the StackedHeaderDescriptor
@@ -320,23 +320,23 @@ shd2.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("LastName")
 shd2.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("Title"));
 
 
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("EmployeeID"));
-shd1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("FirstName"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("EmployeeID"));
+stackedHeaderDescriptor1.VisibleColumns.Add(new GridStackedHeaderVisibleColumnDescriptor("FirstName"));
 
 // Step 3: Adding StackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-GridStackedHeaderRowDescriptor shrd1 = new GridStackedHeaderRowDescriptor("Row1",
-    new GridStackedHeaderDescriptor[] { shd1 });
-GridStackedHeaderRowDescriptor shrd2 = new GridStackedHeaderRowDescriptor("Row2",
+GridStackedHeaderRowDescriptor stackedHeaderRowDescriptor1 = new GridStackedHeaderRowDescriptor("Row1",
+    new GridStackedHeaderDescriptor[] { stackedHeaderDescriptor1 });
+GridStackedHeaderRowDescriptor stackedHeaderRowDescriptor2 = new GridStackedHeaderRowDescriptor("Row2",
     new GridStackedHeaderDescriptor[] { shd2 });
 
 // Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows
-this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd1);
-this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd2);
+this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor1);
+this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor2);
 
 {% endhighlight %}
 {% highlight vb %}
 ' Step 1: Creating StackedHeaderDescriptor for adding stacked columns
-Dim shd1 As New GridStackedHeaderDescriptor("groupheader1", "GroupStackedHeader1")
+Dim stackedHeaderDescriptor1 As New GridStackedHeaderDescriptor("groupheader1", "GroupStackedHeader1")
 Dim shd2 As New GridStackedHeaderDescriptor("header1", "StackedHeader1")
 
 ' Step 2: Adding visible columns to the StackedHeaderDescriptor
@@ -346,16 +346,16 @@ shd2.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("LastName")
 shd2.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("Title"))
 
 
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("EmployeeID"))
-shd1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("FirstName"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("EmployeeID"))
+stackedHeaderDescriptor1.VisibleColumns.Add(New GridStackedHeaderVisibleColumnDescriptor("FirstName"))
 
 ' Step 3: Adding StackedHeaderDescriptor to the GridStackedHeaderRowDescriptor collection
-Dim shrd1 As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { shd1 })
-Dim shrd2 As New GridStackedHeaderRowDescriptor("Row2", New GridStackedHeaderDescriptor() { shd2 })
+Dim stackedHeaderRowDescriptor1 As New GridStackedHeaderRowDescriptor("Row1", New GridStackedHeaderDescriptor() { stackedHeaderDescriptor1 })
+Dim stackedHeaderRowDescriptor2 As New GridStackedHeaderRowDescriptor("Row2", New GridStackedHeaderDescriptor() { shd2 })
 
 ' Step 4: Add the GridStackedRowHeaderDescriptor collection to the StackedHeaderRows
-Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd1)
-Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(shrd2)
+Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor1)
+Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDescriptor2)
 
 {% endhighlight %}
 {% endtabs %}
@@ -471,29 +471,29 @@ The below steps needs to be followed for spanning the records across multiple ro
 {% tabs %}
 {% highlight c# %}
 // Create objects for GridColumnSpanDescriptor
-GridColumnSpanDescriptor csd0 = new GridColumnSpanDescriptor("ProductID");
-GridColumnSpanDescriptor csd1 = new GridColumnSpanDescriptor("ProductName");   
-GridColumnSpanDescriptor csd2 = new GridColumnSpanDescriptor("SupplierID");      
-GridColumnSpanDescriptor csd3 = new GridColumnSpanDescriptor("CategoryID");
+GridColumnSpanDescriptor columnSpanDescriptor0 = new GridColumnSpanDescriptor("ProductID");
+GridColumnSpanDescriptor columnSpanDescriptor1 = new GridColumnSpanDescriptor("ProductName");   
+GridColumnSpanDescriptor columnSpanDescriptor2 = new GridColumnSpanDescriptor("SupplierID");      
+GridColumnSpanDescriptor columnSpanDescriptor3 = new GridColumnSpanDescriptor("CategoryID");
 
 // Add the required ranges for the created object
-csd0.Range = GridRangeInfo.Cells(0, 0, 1, 0);
-csd1.Range = GridRangeInfo.Cells(0, 1, 0, 2);
-csd2.Range = GridRangeInfo.Cells(1, 1, 1, 1);
-csd3.Range = GridRangeInfo.Cells(1, 2, 1, 2);
+columnSpanDescriptor0.Range = GridRangeInfo.Cells(0, 0, 1, 0);
+columnSpanDescriptor1.Range = GridRangeInfo.Cells(0, 1, 0, 2);
+columnSpanDescriptor2.Range = GridRangeInfo.Cells(1, 1, 1, 1);
+columnSpanDescriptor3.Range = GridRangeInfo.Cells(1, 2, 1, 2);
 {% endhighlight %}
 {% highlight vb %}
 ' Create objects for GridColumnSpanDescriptor
-Dim csd0 As New GridColumnSpanDescriptor("ProductID")
-Dim csd1 As New GridColumnSpanDescriptor("ProductName")
-Dim csd2 As New GridColumnSpanDescriptor("SupplierID")
-Dim csd3 As New GridColumnSpanDescriptor("CategoryID")
+Dim columnSpanDescriptor0 As New GridColumnSpanDescriptor("ProductID")
+Dim columnSpanDescriptor1 As New GridColumnSpanDescriptor("ProductName")
+Dim columnSpanDescriptor2 As New GridColumnSpanDescriptor("SupplierID")
+Dim columnSpanDescriptor3 As New GridColumnSpanDescriptor("CategoryID")
 
 ' Add the required ranges for the created object
-csd0.Range = GridRangeInfo.Cells(0, 0, 1, 0)
-csd1.Range = GridRangeInfo.Cells(0, 1, 0, 2)
-csd2.Range = GridRangeInfo.Cells(1, 1, 1, 1)
-csd3.Range = GridRangeInfo.Cells(1, 2, 1, 2)
+columnSpanDescriptor0.Range = GridRangeInfo.Cells(0, 0, 1, 0)
+columnSpanDescriptor1.Range = GridRangeInfo.Cells(0, 1, 0, 2)
+columnSpanDescriptor2.Range = GridRangeInfo.Cells(1, 1, 1, 1)
+columnSpanDescriptor3.Range = GridRangeInfo.Cells(1, 2, 1, 2)
 {% endhighlight %}
 {% endtabs %}
 
@@ -505,20 +505,20 @@ csd3.Range = GridRangeInfo.Cells(1, 2, 1, 2)
 GridColumnSetDescriptor columnSetDescriptor = new GridColumnSetDescriptor();
 // Add the column span descriptor to the created 
 // columns set descriptor
-columnSetDescriptor.ColumnSpans.Add(csd0);
-columnSetDescriptor.ColumnSpans.Add(csd1);
-columnSetDescriptor.ColumnSpans.Add(csd2);
-columnSetDescriptor.ColumnSpans.Add(csd3);
+columnSetDescriptor.ColumnSpans.Add(columnSpanDescriptor0);
+columnSetDescriptor.ColumnSpans.Add(columnSpanDescriptor1);
+columnSetDescriptor.ColumnSpans.Add(columnSpanDescriptor2);
+columnSetDescriptor.ColumnSpans.Add(columnSpanDescriptor3);
 {% endhighlight %}
 {% highlight vb %}
 ' Create object for GridColumnSetDescriptor
 Dim columnSetDescriptor As New GridColumnSetDescriptor()
 ' Add the column span descriptor to the created 
 ' columns set descriptor
-columnSetDescriptor.ColumnSpans.Add(csd0)
-columnSetDescriptor.ColumnSpans.Add(csd1)
-columnSetDescriptor.ColumnSpans.Add(csd2)
-columnSetDescriptor.ColumnSpans.Add(csd3) 
+columnSetDescriptor.ColumnSpans.Add(columnSpanDescriptor0)
+columnSetDescriptor.ColumnSpans.Add(columnSpanDescriptor1)
+columnSetDescriptor.ColumnSpans.Add(columnSpanDescriptor2)
+columnSetDescriptor.ColumnSpans.Add(columnSpanDescriptor3) 
 {% endhighlight %}
 {% endtabs %}
 
