@@ -23,7 +23,7 @@ GridStyleInfo style = gridDataBoundGrid1.GridBoundColumns[1].StyleInfo;
 
 
 
-//Sets controltype.
+//Sets control type.
 
 style.CellType = "ColorEdit"; 
 
@@ -55,7 +55,7 @@ Dim style As GridStyleInfo = gridDataBoundGrid1.GridBoundColumns(1).StyleInfo
 
 
 
-'Sets controltype.
+'Sets control type.
 
 style.CellType = "ColorEdit" 
 
