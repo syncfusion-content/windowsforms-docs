@@ -944,7 +944,7 @@ This event will be triggered for every cell after the cell exported. By this eve
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
-ExcelConverter.QueryExportCellRange += ggec_QueryExportCellRange;
+ExcelConverter.QueryExportCellRange += ExcelConverter_QueryExportCellRange;
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
 
 void ExcelConverter_QueryExportCellRange(object sender, Syncfusion.GroupingGridExcelConverter.QueryExportCellRangeEventArgs e)

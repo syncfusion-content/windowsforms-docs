@@ -728,8 +728,8 @@ End Sub
 
 {% tabs %}
 {% highlight c# %}
-this.buttonLoadGrid.Click += new System.EventHandler(this.btnLoadGridLoadGrid_Click);
-private void btnLoadGridLoadGrid_Click(object sender, EventArgs e)
+this.buttonLoadGrid.Click += new System.EventHandler(this.LoadGridLoadGrid_Click);
+private void LoadGridLoadGrid_Click(object sender, EventArgs e)
 {
     this.LogWindow.Items.Add("");
     this.LogWindow.Items.Add("Flat, Virtual List with Sorting and Grouping Enabled.");
@@ -761,8 +761,8 @@ private void btnLoadGridLoadGrid_Click(object sender, EventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler buttonLoadGrid.Click, AddressOf btnLoadGridLoadGrid_Click
-Private Sub btnLoadGridLoadGrid_Click(ByVal sender As Object, ByVal e As EventArgs)
+AddHandler buttonLoadGrid.Click, AddressOf LoadGridLoadGrid_Click
+Private Sub LoadGridLoadGrid_Click(ByVal sender As Object, ByVal e As EventArgs)
     Me.LogWindow.Items.Add("")
     Me.LogWindow.Items.Add("Flat, Virtual List with Sorting and Grouping Enabled.")
     Dim time As Integer = Environment.TickCount
@@ -1844,14 +1844,14 @@ timerCount++;
 
 try
 {
-    for (int i = 0; i < m_numUpdatesPerTick; i++)
+    for (int i = 0; i < m_numberUpdatesPerTick; i++)
     {
         //  Application.DoEvents();
 
         int recordNumber = rand.Next(table.Rows.Count - 1);
         int rowNumber = recordNumber + 1;
         int col = rand.Next(16) + 1;
-        int colNum = col + 1;
+        int columnNumber = col + 1;
         DataRow dataRow = table.Rows[recordNumber];
         if (!(dataRow[col] is DBNull))
             dataRow[col] = (int)(Convert.ToDouble(dataRow[col]) * (rand.Next(50) / 100.0f + 0.8));// rand.Next(100);
@@ -1917,13 +1917,13 @@ Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
     timerCount += 1
 
     Try
-        For i As Integer = 0 To m_numUpdatesPerTick - 1
+        For i As Integer = 0 To m_numberUpdatesPerTick - 1
             '  Application.DoEvents();
 
             Dim recordNumber As Integer = rand.Next(table.Rows.Count - 1)
             Dim rowNumber As Integer = recordNumber + 1
             Dim col As Integer = rand.Next(16) + 1
-            Dim colNum As Integer = col + 1
+            Dim columnNumber As Integer = col + 1
             Dim dataRow As DataRow = table.Rows(recordNumber)
             If Not(TypeOf dataRow(col) Is DBNull) Then
                 dataRow(col) = CInt(Fix(Convert.ToDouble(dataRow(col)) * (rand.Next(50) / 100.0f + 0.8))) ' rand.Next(100);
@@ -1959,7 +1959,7 @@ Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
                     Dim recordNumber As Integer = 5 'rand.Next(m_set.Count - 1);
                     Dim rowNumber As Integer = recordNumber + 1
 
-                    ' Underlying data structure (this could be a datatable or whatever structure
+                    ' Underlying data structure (this could be a data table or whatever structure
                     ' you use behind a virtual grid).
 
                     If table.Rows.Count > 10 Then
