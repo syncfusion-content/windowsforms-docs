@@ -589,13 +589,13 @@ dataSeriesModel.YNames = New String() {"Population"}
 
 
 
-'Binding the ChartDataBindModel with the Series. This is the best practise for binding with the large amount of data since it will reduce the performance issue of Chart rendering and manipulating data. 
+'Binding the ChartDataBindModel with the Series. This is the best practice for binding with the large amount of data since it will reduce the performance issue of Chart rendering and manipulating data. 
 
 series.SeriesModel = dataSeriesModel 
 
 
 
-'Since we have specified YNames only for the DataBind model, it will take the data source is non indexed model and it will ignore the X axis values. We need to assign the X axis values what we need to show on X axis by ChartDataBindAxisLableModel separately. 
+'Since we have specified YNames only for the DataBind model, it will take the data source is non indexed model and it will ignore the X axis values. We need to assign the X axis values what we need to show on X axis by ChartDataBindAxisLabelModel separately. 
 
 Dim dataLabelsModel As New ChartDataBindAxisLabelModel(populations)
 
