@@ -710,13 +710,13 @@ ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exporting
 ![](Exporting_images/Advanced_Excel_Exporting_img15.jpeg)
 
 ### Export nested table with outlines
-In order to export nested table with outline, the [AllowNestedTableOutling](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~AllowNestedTableOutling.html) property of the `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
+In order to export nested table with outline, the [AllowNestedTableOutlining](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl~AllowNestedTableOutlining.html) property of the `GridGroupingExcelConverterControl` can be set to `true`. Default value of this property is `true`.
 
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
 //Export nested table with outline.
-ExcelConverter.AllowNestedTableOutling = true;
+ExcelConverter.AllowNestedTableOutlining = true;
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
 //Export the contents of the grid to Excel.
@@ -725,7 +725,7 @@ ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exporti
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
 'Export nested table with outline.
-ExcelConverter.AllowNestedTableOutling = True
+ExcelConverter.AllowNestedTableOutlining = True
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
 'Export the contents of the grid to Excel.
