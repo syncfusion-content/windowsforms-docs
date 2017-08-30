@@ -32,7 +32,7 @@ Code snippet for the above sample
 
 {% tabs %}  {% highlight c# %}
 
-// Chartcontrol mouse move event.
+// Chart control mouse move event.
 
 private void chartControl_MouseMove(object sender,System.Windows.Forms.MouseEventArgs e)  
 

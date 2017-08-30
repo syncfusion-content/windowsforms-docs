@@ -158,7 +158,7 @@ It should return the first Chart point with a minimum value. The search should s
 
 String str = textBoxString.Text;
 
-startIndx = Int32.Parse(textBoxIndex.Text);
+startIndex = Int32.Parse(textBoxIndex.Text);
 
 endIndex = Int32.Parse(textBox1.Text);
 
