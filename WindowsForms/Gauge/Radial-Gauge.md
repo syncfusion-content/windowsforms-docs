@@ -582,12 +582,12 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-Minimum </td><td>
+MinimumValue </td><td>
 Float</td><td>
 Gets or sets the minimum value for the radial scale. Default value is set to 0.</td></tr>
 <tr>
 <td>
-Maximum </td><td>
+MaximumValue </td><td>
 Float</td><td>
 Gets or sets the maximum value for the radial scale. Default value is set to 120.</td></tr>
 <tr>
@@ -598,26 +598,28 @@ Gets or sets the major difference value.</td></tr>
 <tr>
 <td>
 MinorDifference</td><td>
-Integer</td><td>
+Float</td><td>
 Gets or sets the minor difference value.</td></tr>
 </table>
 
+The following code sample illustrates how to use the above properties in the RadialGauge:
 
 {% highlight c# %}
 
-           this.radialGauge1.MajorDifference = 20F;
 
-           this.radialGauge1.MaximumValue = 120F;
 
-           this.radialGauge1.MinimumValue = 0F;
+this.radialGauge1.MajorDifference = 20F;
 
-           this.radialGauge1.MinorDifference = 1;
+this.radialGauge1.MaximumValue = 120F;
+
+this.radialGauge1.MinimumValue = 0F;
+
+this.radialGauge1.MinorDifference = 2F;
 
 {% endhighlight %}
 
-
-
 {% highlight vbnet %}
+
 
 Me.radialGauge1.MajorDifference = 20F
 
@@ -625,9 +627,11 @@ Me.radialGauge1.MaximumValue = 120F
 
 Me.radialGauge1.MinimumValue = 0F
 
-Me.radialGauge1.MinorDifference = 1
+Me.radialGauge1.MinorDifference = 2F
 
 {% endhighlight %}
+
+![](Radial-Gauge_images/Radial-Gauge_img18.png)
 
 ## Visual Styles 
 
