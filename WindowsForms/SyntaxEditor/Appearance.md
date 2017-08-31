@@ -72,7 +72,7 @@ Edit Control provides in-built support for horizontal and vertical splitters, wh
 
 The vertical and horizontal splitters are always visible, by default. They can be disabled by setting the below given properties to False.
 
-
+User can customize the Splitter Background color using SplitterBackgroundBrush property.
 
 <table>
 <tr>
@@ -87,6 +87,10 @@ Gets / sets value that indicates whether horizontal splitters are visible.</td><
 <td>
 ShowVerticalSplitters</td><td>
 Gets / sets value that indicates whether vertical splitters are visible.</td></tr>
+<tr>
+<td>
+SplitterBackgroundBrush</td><td>
+Gets / Sets the Background Brush of Horizontal / Vertical splitters. </td></tr>
 </table>
 
 
@@ -112,12 +116,15 @@ Splits the Edit Control into two equal vertical halves.</td></tr>
 
 {% highlight c# %}
 
-
+// To enable the Splitters
 
 this.editControl1.ShowHorizontalSplitters = true;
 
 this.editControl1.ShowVerticalSplitters = true;
 
+// To customize Splitter Background
+
+this.editControl1.SplitterBackgroundBrush = Brushes.Red;
 
 
 this.editControl1.SplitHorizontally();
@@ -129,11 +136,15 @@ this.editControl1.SplitVertically();
 {%highlight vbnet %}
 
 
+// To enable the Splitters
 
 Me.editControl1.ShowHorizontalSplitters = True
 
 Me.editControl1.ShowVerticalSplitters = True
 
+// To customize Splitter Background
+
+Me.editControl1.SplitterBackgroundBrush = Brushes.Red
 
 
 Me.editControl1.SplitHorizontally()
@@ -141,6 +152,8 @@ Me.editControl1.SplitHorizontally()
 Me.editControl1.SplitVertically()
 
 {% endhighlight %}
+
+![](Appearance_images/Appearance_img13.png)
 
 #### Positioning
 
