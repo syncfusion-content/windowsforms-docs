@@ -234,7 +234,7 @@ Me.CaptionButtonHoverColor = System.Drawing.Color.Lime
 ![](Customization_images/Caption-Bar-Customization_img6.png)
 
 
-## Caption Bar
+## Caption Bar Background
 
 User can customize the Brush effects in Caption Bar using the event CaptionBarPaint and the property CaptionBarBrush. 
 
