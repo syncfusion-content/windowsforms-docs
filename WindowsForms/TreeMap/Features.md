@@ -989,7 +989,7 @@ public partial class Form1 : Form
 
         TreeMap TreeMap1 = new TreeMap();
 
-RangeBrushColorMappingrangeBrushColorMapping = new RangeBrushColorMapping();
+RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();
 
      public Form1()
 

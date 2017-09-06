@@ -74,7 +74,7 @@ The float window changes to its Dock state when double clicking on its caption
 
 {% highlight C# %}
 
-//To disable the Redocking the floating window on caption double click.
+//To disable the ReDocking the floating window on caption double click.
  
 this.dockingManager1.EnableDoubleClickOnCaption = false;
 
@@ -83,7 +83,7 @@ this.dockingManager1.EnableDoubleClickOnCaption = false;
 
 {% highlight VB %}
 
-'To disable the Redocking the floating window on caption double click.
+'To disable the ReDocking the floating window on caption double click.
  
 Me.dockingManager1.EnableDoubleClickOnCaption = false
 

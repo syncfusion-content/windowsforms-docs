@@ -21,33 +21,33 @@ The stroke of the major and minor ticks is customized by setting the MajorTickSt
 
 {% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bullet = new BulletGraph();
 
-bulletgraph.Dock = DockStyle.Fill;            
+bullet.Dock = DockStyle.Fill;            
 
-bulletgraph.FeaturedMeasure = 4.5;
+bullet.FeaturedMeasure = 4.5;
 
-bulletgraph.ComparativeMeasure = 7;            
+bullet.ComparativeMeasure = 7;            
 
-bulletgraph.MajorTickStroke = Color.Black;
+bullet.MajorTickStroke = Color.Black;
 
-bulletgraph.MajorTickSize = 15;
+bullet.MajorTickSize = 15;
 
-bulletgraph.MinorTickSize = 10;
+bullet.MinorTickSize = 10;
 
-bulletgraph.MajorTickStroke = Color.Red;
+bullet.MajorTickStroke = Color.Red;
 
-bulletgraph.MinorTickStroke = Color.Green;
+bullet.MinorTickStroke = Color.Green;
 
-bulletgraph.MinorTicksPerInterval = 3;
+bullet.MinorTicksPerInterval = 3;
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });  
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });  
 
-this.Controls.Add(bulletgraph);
+this.Controls.Add(bullet);
 
 {% endhighlight %}
 
@@ -65,27 +65,27 @@ They are:
 
 {% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bullet = new BulletGraph();
 
-bulletgraph.Dock = DockStyle.Fill;
+bullet.Dock = DockStyle.Fill;
 
-bulletgraph.ComparativeMeasure = 7;
+bullet.ComparativeMeasure = 7;
 
-bulletgraph.TickPosition = BulletGraphTicksPosition.Cross;
+bullet.TickPosition = BulletGraphTicksPosition.Cross;
 
-bulletgraph.MajorTickSize = 30;
+bullet.MajorTickSize = 30;
 
-bulletgraph.MinorTickSize = 30;
+bullet.MinorTickSize = 30;
 
-bulletgraph.MinorTicksPerInterval = 3;
+bullet.MinorTicksPerInterval = 3;
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });                          
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });                          
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });               
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });               
 
-this.Controls.Add(bulletgraph);
+this.Controls.Add(bullet);
 
 {% endhighlight %}
 

@@ -68,8 +68,8 @@ In `Tile` layout type maps scale value is maintained in every direction around a
             void mapsControl1_AnnotationDrawing(object sender, AnnotationDrawingEventArgs e)
             {
         
-                Image img = Image.FromFile("..//..//pin.png");
-                e.Graphics.DrawImage(img, (float)(e.X-10), (float)(e.Y-25),25,30);
+                Image image = Image.FromFile("..//..//pin.png");
+                e.Graphics.DrawImage(image, (float)(e.X-10), (float)(e.Y-25),25,30);
                 
             }
             
@@ -144,7 +144,7 @@ public partial class Form1 : Form
 
 
 
-             MapViewModel viewmodel = new MapViewModel();
+             MapViewModel model = new MapViewModel();
 
 
 
@@ -152,7 +152,7 @@ public partial class Form1 : Form
 
              shapeLayer.Uri = "world1.shp";
 
-             shapeLayer.ItemSource = viewmodel. Countries; 
+             shapeLayer.ItemSource = model. Countries; 
 
              this.mapsControl1.Layers.Add(shapeLayer); 
 
@@ -324,7 +324,7 @@ public partial class Form1 : Form
 
         {
 
-              MapViewModel viewmodel = new MapViewModel();
+              MapViewModel model = new MapViewModel();
 
 
 
@@ -332,7 +332,7 @@ public partial class Form1 : Form
 
              shapeLayer.Uri = "world1.shp";
 
-             shapeLayer.ItemSource = viewmodel. Countries;
+             shapeLayer.ItemSource = model. Countries;
 
              shapeLayer.ShapeIDPath = "NAME";
 
@@ -404,7 +404,7 @@ public partial class Form1 : Form
 
         {
 
-              MapViewModel viewmodel = new MapViewModel();
+              MapViewModel model = new MapViewModel();
 
 
 
@@ -412,7 +412,7 @@ public partial class Form1 : Form
 
             shapeLayer.Uri = "world1.shp";
 
-            shapeLayer.ItemSource = viewmodel.Countries;
+            shapeLayer.ItemSource = model.Countries;
 
             shapeLayer.ShapeIDPath = "NAME";
 

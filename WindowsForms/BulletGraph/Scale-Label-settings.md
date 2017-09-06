@@ -20,31 +20,31 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 
 {% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bullet = new BulletGraph();
 
-bulletgraph.Dock = DockStyle.Fill;
+bullet.Dock = DockStyle.Fill;
 
-bulletgraph.FeaturedMeasure = 5;
+bullet.FeaturedMeasure = 5;
 
-bulletgraph.ComparativeMeasure = 7;
+bullet.ComparativeMeasure = 7;
 
-bulletgraph.LabelOffset = 5;
+bullet.LabelOffset = 5;
 
-bulletgraph.LabelFontSize = 10;
+bullet.LabelFontSize = 10;
 
-bulletgraph.LabelFormat = "#0 K";
+bullet.LabelFormat = "#0 K";
 
-bulletgraph.LabelStroke =Color.Red;
+bullet.LabelStroke =Color.Red;
 
-bulletgraph.MinorTicksPerInterval = 3;
+bullet.MinorTicksPerInterval = 3;
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });
 
-this.Controls.Add(bulletgraph); 
+this.Controls.Add(bullet); 
 
 {% endhighlight %} 
 
@@ -59,25 +59,25 @@ The labels in the scale are placed above or below the qualitative ranges by choo
 
 {% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bullet = new BulletGraph();
 
-bulletgraph.Dock = DockStyle.Fill;
+bullet.Dock = DockStyle.Fill;
 
-bulletgraph.FeaturedMeasure = 5;
+bullet.FeaturedMeasure = 5;
 
-bulletgraph.ComparativeMeasure = 7;
+bullet.ComparativeMeasure = 7;
 
-bulletgraph.LabelPosition = BulletGraphLabelsPosition.Above;
+bullet.LabelPosition = BulletGraphLabelsPosition.Above;
 
-bulletgraph.MinorTicksPerInterval = 3;
+bullet.MinorTicksPerInterval = 3;
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });
 
-this.Controls.Add(bulletgraph);   
+this.Controls.Add(bullet);   
 
 {% endhighlight %}
 
