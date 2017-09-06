@@ -9,241 +9,266 @@ documentation: ug
 
 # Data Binding
 
-TreeViewAdv control supports data binding with hierarchical data source like XML and displays the information.
+TreeViewAdv does not have direct option to populate from XML and DataTable. This below section will help to load TreeViewAdv from XML and DataTable.
 
-The TreeViewAdv architecture provides a way to consume information from an external XML file, DataSet objects etc and allows the user to convert the Tree to XML structure and vice versa. To implement this data binding concept in TreeViewAdv, the user should drag and drop a TreeViewAdv control, RichTextBox control and MainFrameBarManager to the form. Create bar items and handle the below click events accordingly.
+
+
+
+## XML
+
+
+{% highlight XML %}
+
+~~~ 
+<?xml version="1.0" encoding="utf-8" ?> 
+<countries>
+	<country>
+		<name>USA</name>
+		<states>
+			<state>Alabama</state>
+			<state>Alaska</state>
+			<state>Arkansas</state>
+			<state>California</state>
+		</states>
+	</country>
+	<country>
+		<name>Canada</name>
+		<states>
+			<state>Alberta</state>
+			<state>Manitoba</state>
+			<state>Saskatchewan</state>
+			<state>Ontario</state>
+			<state>Quebec</state>
+			<state>British Columbia</state>
+			<state>Yukon</state>
+			<state>Northwest Territories</state>
+		</states>
+	</country>
+</countries>
+
+~~~
+
+{% endhighlight %}
 
 {% highlight c# %}
 
+        /// <summary>
+        /// To load TreeViewAdv from XML File
+        /// </summary>
+        private void LoadTreeViewAdvfromXML()
+        {
+            XmlDocument xDoc = new XmlDocument();
+			//Load the xml file
+            xDoc.Load("TreeView.xml");
+            treeViewAdv1.Nodes.Clear();
+            treeViewAdv1.Nodes.Add(new
+              TreeNodeAdv(xDoc.DocumentElement.Name));
+            TreeNodeAdv tNode = new TreeNodeAdv();
+            tNode = (TreeNodeAdv)treeViewAdv1.Nodes[0];
+            LoadFromXML(xDoc.DocumentElement, tNode);
+            treeViewAdv1.ExpandAll();
+        }
+
+        /// <summary>
+		/// To load information to XML File
+		/// </summary>
+        private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
+        {
+            XmlNode xNode;
+            TreeNodeAdv tNode;
+            XmlNodeList xNodeList;
+            if (xmlNode.HasChildNodes) 
+            {
+                xNodeList = xmlNode.ChildNodes;
+                for (int x = 0; x <= xNodeList.Count - 1; x++)
+                {
+                    xNode = xmlNode.ChildNodes[x];
+                    treeNode.Nodes.Add(new TreeNodeAdv(xNode.Name));
+                    tNode = treeNode.Nodes[x];
+                    LoadFromXML(xNode, tNode);
+                }
+            }
+            else 
+                treeNode.Text = xmlNode.OuterXml.Trim();
+        }
+
+        /// <summary>
+        /// To write details in XML Elements
+        /// </summary>
+        private XmlTextWriter XmlTextWriter;
+
+        /// <summary>
+        /// To save TreeViewAdv node information to XML File
+        /// </summary>
+        public void ExportToXML(TreeViewAdv tv, string filename)
+        {
+            XmlTextWriter = new XmlTextWriter(filename, System.Text.Encoding.UTF8);
+            XmlTextWriter.WriteStartDocument();
+            XmlTextWriter.WriteStartElement(treeViewAdv1.Nodes[0].Text);
+            foreach (TreeNodeAdv node in tv.Nodes)
+            {
+                SaveToXML(node.Nodes);
+            }
+            XmlTextWriter.WriteEndElement();
+            XmlTextWriter.Close();
+        }
+
+        /// <summary>
+        /// Iterate function helps to save TreeNodeAdv information to XML
+        /// </summary>
+        private void SaveToXML(TreeNodeAdvCollection tnc)
+        {
+            foreach (TreeNodeAdv node in tnc)
+            {
+                if (node.Nodes.Count > 0)
+                {
+                    XmlTextWriter.WriteStartElement(node.Text);
+                    SaveToXML(node.Nodes);
+                    XmlTextWriter.WriteEndElement();
+                }
+                else
+                {
+                    XmlTextWriter.WriteString(node.Text);
+                }
+            }
+        }
 
 
-//Adding namespaces
+{% endhighlight %}
 
-using System.Data;
+{% highlight vbnet %}
 
-using System.Xml;
+		''' <summary>
+		''' To load TreeViewAdv from XML File
+		''' </summary>
+		Private Sub LoadTreeViewAdvfromXML()
+			Dim xDoc As New XmlDocument()
+			xDoc.Load("TreeView.xml")
+			treeViewAdv1.Nodes.Clear()
+			treeViewAdv1.Nodes.Add(New TreeNodeAdv(xDoc.DocumentElement.Name))
+			Dim tNode As New TreeNodeAdv()
+			tNode = CType(treeViewAdv1.Nodes(0), TreeNodeAdv)
+			LoadFromXML(xDoc.DocumentElement, tNode)
+			treeViewAdv1.ExpandAll()
+		End Sub
 
+
+		Private Sub LoadFromXML(ByVal xmlNode As XmlNode, ByVal treeNode As TreeNodeAdv)
+			Dim xNode As XmlNode
+			Dim tNode As TreeNodeAdv
+			Dim xNodeList As XmlNodeList
+			If xmlNode.HasChildNodes Then
+				xNodeList = xmlNode.ChildNodes
+				For x As Integer = 0 To xNodeList.Count - 1
+					xNode = xmlNode.ChildNodes(x)
+					treeNode.Nodes.Add(New TreeNodeAdv(xNode.Name))
+					tNode = treeNode.Nodes(x)
+					LoadFromXML(xNode, tNode)
+				Next x
+			Else
+				treeNode.Text = xmlNode.OuterXml.Trim()
+			End If
+		End Sub
+
+		''' <summary>
+		''' To write details in XML Elements
+		''' </summary>
+		Private XmlTextWriter As XmlTextWriter
+
+		''' <summary>
+		''' To save TreeViewAdv node information to XML File
+		''' </summary>
+		Public Sub ExportToXML(ByVal tv As TreeViewAdv, ByVal filename As String)
+			XmlTextWriter = New XmlTextWriter(filename, System.Text.Encoding.UTF8)
+			XmlTextWriter.WriteStartDocument()
+			XmlTextWriter.WriteStartElement(treeViewAdv1.Nodes(0).Text)
+			For Each node As TreeNodeAdv In tv.Nodes
+				SaveToXML(node.Nodes)
+			Next node
+			XmlTextWriter.WriteEndElement()
+			XmlTextWriter.Close()
+		End Sub
+
+		''' <summary>
+		''' Iterate function helps to save TreeNodeAdv information to XML
+		''' </summary>
+		Private Sub SaveToXML(ByVal tnc As TreeNodeAdvCollection)
+			For Each node As TreeNodeAdv In tnc
+				If node.Nodes.Count > 0 Then
+					XmlTextWriter.WriteStartElement(node.Text)
+					SaveToXML(node.Nodes)
+					XmlTextWriter.WriteEndElement()
+				Else
+					XmlTextWriter.WriteString(node.Text)
+				End If
+			Next node
+		End Sub
+
+	End Class
+End Namespace
+
+{% endhighlight %}
+
+![](DataBinding_images/databindingimage2.png)
+
+## DataTable
+
+{% highlight c# %}
+
+/// <summary>
+/// Adding namespace
+/// </summary>
+using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+public Form1()
+        {
+            InitializeComponent();
+
+            dt.Columns.Add("Name", typeof(string));
+            dt.Columns.Add("Parent", typeof(string));
+
+            dt.Rows.Add(new string[] { "Root", "0" });
+            dt.Rows.Add(new string[] { "Work", "Root" });
+            dt.Rows.Add(new string[] { "Home", "Root" });
+            dt.Rows.Add(new string[] { "One", "Work" });
+            dt.Rows.Add(new string[] { "Two", "Work" });
+            dt.Rows.Add(new string[] { "One", "Home" });
+            dt.Rows.Add(new string[] { "Two", "Home" });
+            dt.Rows.Add(new string[] { "Three", "Home" });
+            dt.Rows.Add(new string[] { "Other", "Root" });
+
+            ds.Tables.Add(dt);
+            //add a relationship
+            ds.Relations.Add("TreeParentChild", ds.Tables["AddressLists"].Columns["Name"],
+                ds.Tables["AddressLists"].Columns["Parent"], false);
+        }
+        #endregion
+
+        #region Function
+        /// <summary>
+        /// To Populate TreeView
+        /// </summary>
+        public void PopulateTree(DataRow dr, TreeNodeAdv pNode)
+        {
+            foreach (DataRow row in dr.GetChildRows("TreeParentChild"))
+            {
+                TreeNodeAdv cChild = new TreeNodeAdv(row["Name"].ToString());
+                pNode.Nodes.Add(cChild);
+                //Recursively build the tree
+                PopulateTree(row, cChild);
+            }
+        }
 
-
-
-//handling the click event which Converts Tree to Xml
-
-private void Tree2XMLButton_Click(object sender, System.EventArgs e)
-
-{
-
-if ( this.tvaTreeContent.Nodes.Count > 0 )
-
-{
-
-try
-
-{
-
-//Provides the stream to write the Xml data
-
-XmlTextWriter myXMLFileWriter = new XmlTextWriter("C:\temp.xml", null);
-
-myXMLFileWriter.WriteStartDocument();
-
-
-
-//Helper Method
-
-AddNodes ( myXMLFileWriter , this.tvaTreeContent.Nodes );
-
-myXMLFileWriter.Close();
-
-//Loading the XML Data From file
-
-XmlDocument dom = new XmlDocument();
-
-dom.Load( "C:\temp.xml" ); //creating local path
-
-//Copy the Loaded XML data to RichTextBox Control
-
-this.rtbXmlContent.Clear();
-
-this.rtbXmlContent.Text = dom.OuterXml;
-
-}
-
-catch ( Exception Exp )
-
-{
-
-MessageBox.Show( Exp.Message );
-
-}
-
-}
-
-else
-
-{
-
-MessageBox.Show( "No node is available to convert as XML" );
-
-}
-
-}
-
-
-
-//The click event which Converts Xml to Tree
-
-private void XML2TreeButton_Click(object sender, System.EventArgs e)
-
-{
-
-this.tvaTreeContent.Nodes.Clear();
-
-try 
-
-{
-
-XmlDocument dom = new XmlDocument();
-
-dom.InnerXml = this.rtbXmlContent.Text;
-
-// Initialize the TreeViewAdv
-
-this.tvaTreeContent.Nodes.Clear();
-
-this.tvaTreeContent.Nodes.Add(new TreeNodeAdv(dom.DocumentElement.Name));
-
-TreeNodeAdv tNodeAdv = new TreeNodeAdv();
-
-tNodeAdv = this.tvaTreeContent.Nodes[0];
-
-//Populate the TreeView with the DOM nodes.
-
-AddNode(dom.DocumentElement, tNodeAdv);
-
-//Show Expanded Tree
-
-this.tvaTreeContent.ExpandAll();
-
-}
-
-catch(XmlException xmlEx)
-
-{
-
-MessageBox.Show(xmlEx.Message);
-
-}
-
-catch(Exception ex)
-
-{
-
-MessageBox.Show(ex.Message);
-
-}
-
-}
-
-
-
-//Event which loads Xml
-
-private void btnLoadfrmXML_Click(object sender, System.EventArgs e)
-
-{
-
-this.ofdOpenXmlFile.ShowDialog();
-
-}
-
-
-
-//Event which Opens Xml
-
-private void biOpenxml_Click(object sender, System.EventArgs e)
-
-{
-
-btnLoadfrmXML_Click(sender, System.EventArgs.Empty );
-
-}
-
-
-
-//Accept the open Xml file
-
-private void OpenXmlFile_FileOK(object sender, System.ComponentModel.CancelEventArgs e)
-
-{
-
-	try 
-
-{
-
-XmlDocument dom = new XmlDocument();
-
-dom.Load( this.ofdOpenXmlFile.FileName );
-
-this.rtbXmlContent.Text = dom.OuterXml;
-
-}
-
-catch(XmlException xmlEx)
-
-{
-
-MessageBox.Show(xmlEx.Message);
-
-}
-
-catch(Exception ex)
-
-{
-
-MessageBox.Show(ex.Message);
-
-}
-
-}
-
-//Accept the save xml file
-
-private void SaveXmlFile_FileOK(object sender, System.ComponentModel.CancelEventArgs e)
-
-{
-
-XmlDocument dom = new XmlDocument();
-
-dom.InnerXml = this.rtbXmlContent.Text;
-
-dom.Save( this.sfdSaveXmlFile.FileName);
-
-}
-
-
-
-//Event which Saves Xml
-
-private void btnSavasXML_Click(object sender, System.EventArgs e)
-
-{
-
-this.sfdSaveXmlFile.ShowDialog();
-
-}
-
-
-
-//Event which Close Xml
-
-private void biClose_Click(object sender, System.EventArgs e)
-
-{
-
-this.Close();
-
-}
 
 {% endhighlight %}
 
@@ -253,191 +278,71 @@ this.Close();
 
 ' Adding name spaces
 
-Imports System.Xml
-
+Imports Syncfusion.Windows.Forms
 Imports Syncfusion.Windows.Forms.Tools
-
-
-
-' The click event which Converts Tree to Xml
-
-Private Sub Tree2XMLButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biTree2Xml.Click
-
-
-
-If Me.tvaTreeContent.Nodes.Count > 0 Then
-
-Try
-
-'Provides the stream to write the Xml data
-
-Dim myXMLFileWriter As XmlTextWriter = New XmlTextWriter("C:\temp.xml", Nothing)
-
-myXMLFileWriter.WriteStartDocument()
-
-
-
-'Helper Method
-
-AddNodes(myXMLFileWriter, Me.tvaTreeContent.Nodes)
-
-myXMLFileWriter.Close()
-
-'Loading the XML Data From file
-
-Dim dom As XmlDocument = New XmlDocument()
-
-dom.Load("C:\temp.xml")
-
-'dom.
-
-'Copy the Loaded XML data to RichTextBox Control
-
-Me.rtbXmlContent.Clear()
-
-Me.rtbXmlContent.Text = dom.OuterXml
-
-Catch Exp As Exception
-
-MessageBox.Show(Exp.Message)
-
-End Try
-
-Else
-
-MessageBox.Show("No node is available to convert as XML")
-
-End If
-
-End Sub
-
-
-
-' The click event which Converts Xml to Tree
-
-Private Sub XML2TreeButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biXml2Tree.Click
-
-Me.tvaTreeContent.Nodes.Clear()
-
-
-
-Try
-
-Dim dom As XmlDocument = New XmlDocument()
-
-dom.InnerXml = Me.rtbXmlContent.Text
-
-' Initialize the TreeViewAdv
-
-Me.tvaTreeContent.Nodes.Clear()
-
-Me.tvaTreeContent.Nodes.Add(New TreeNodeAdv(dom.DocumentElement.Name))
-
-Dim tNodeAdv As TreeNodeAdv = New TreeNodeAdv()
-
-tNodeAdv = Me.tvaTreeContent.Nodes(0)
-
-'Populate the TreeView with the DOM nodes.
-
-AddNode(dom.DocumentElement, tNodeAdv)
-
-'Show Expanded Tree
-
-Me.tvaTreeContent.ExpandAll()
-
-Catch xmlEx As XmlException
-
-MessageBox.Show(xmlEx.Message)
-
-Catch ex As Exception
-
-MessageBox.Show(ex.Message)
-
-End Try
-
-End Sub
-
-
-
-' Event which Load Xml
-
-Private Sub btnLoadfrmXML_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biLoadXml.Click
-
-Me.ofdOpenXmlFile.ShowDialog()
-
-End Sub
-
-
-
-' Event which Opens Xml
-
-Private Sub biOpenxml_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
-btnLoadfrmXML_Click(sender, System.EventArgs.Empty)
-
-End Sub
-
-
-
-' Accept the Xml by handling this event
-
-Private Sub OpenXmlFile_FileOK(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles ofdOpenXmlFile.FileOk
-
-Try
-
-Dim dom As XmlDocument = New XmlDocument()
-
-dom.Load(Me.ofdOpenXmlFile.FileName)
-
-Me.rtbXmlContent.Text = dom.OuterXml
-
-Catch xmlEx As XmlException
-
-MessageBox.Show(xmlEx.Message)
-
-Catch ex As Exception
-
-MessageBox.Show(ex.Message)
-
-End Try
-
-End Sub
-
-
-
-' Accept to save the file
-
-Private Sub SaveXmlFile_FileOK(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles sfdSaveXmlFile.FileOk
-
-Dim dom As XmlDocument = New XmlDocument()
-
-dom.InnerXml = Me.rtbXmlContent.Text
-
-dom.Save(Me.sfdSaveXmlFile.FileName)
-
-End Sub
-
-
-
-' Event which Saves Xml
-
-Private Sub btnSavasXML_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biSaveXml.Click
-
-Me.sfdSaveXmlFile.ShowDialog()
-
-End Sub
-
-
-
-' Event which Close Xml
-
-Private Sub biClose_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biClose.Click
-
-Me.Close()
-
-End Sub
+Imports System
+Imports System.Collections.Generic
+Imports System.ComponentModel
+Imports System.Data
+Imports System.Drawing
+Imports System.Linq
+Imports System.Text
+Imports System.Threading.Tasks
+Imports System.Windows.Forms
+
+Namespace TreeViewDataBinding
+	Partial Public Class Form1
+		Inherits MetroForm
+
+		#Region "Variables"
+		' DataTable
+		Private dt As New DataTable("AddressLists")
+
+		'Use a DataSet to manage the data
+		Private ds As New DataSet()
+		#End Region
+
+		#Region "Constructor"
+		Public Sub New()
+			InitializeComponent()
+
+			dt.Columns.Add("Name", GetType(String))
+			dt.Columns.Add("Parent", GetType(String))
+
+			dt.Rows.Add(New String() { "Root", "0" })
+			dt.Rows.Add(New String() { "Work", "Root" })
+			dt.Rows.Add(New String() { "Home", "Root" })
+			dt.Rows.Add(New String() { "One", "Work" })
+			dt.Rows.Add(New String() { "Two", "Work" })
+			dt.Rows.Add(New String() { "One", "Home" })
+			dt.Rows.Add(New String() { "Two", "Home" })
+			dt.Rows.Add(New String() { "Three", "Home" })
+			dt.Rows.Add(New String() { "Other", "Root" })
+
+			ds.Tables.Add(dt)
+			'add a relationship
+			ds.Relations.Add("TreeParentChild", ds.Tables("AddressLists").Columns("Name"), ds.Tables("AddressLists").Columns("Parent"), False)
+		End Sub
+		#End Region
+
+		#Region "Function"
+		''' <summary>
+		''' To Populate TreeView
+		''' </summary>
+		Public Sub PopulateTree(ByVal dr As DataRow, ByVal pNode As TreeNodeAdv)
+			For Each row As DataRow In dr.GetChildRows("TreeParentChild")
+				Dim cChild As New TreeNodeAdv(row("Name").ToString())
+				pNode.Nodes.Add(cChild)
+				'Recursively build the tree
+				PopulateTree(row, cChild)
+			Next row
+		End Sub
+
+		#End Region
+
+	End Class
+End Namespace
 
 {% endhighlight %}
 
-
-![](Concepts-and--Features_images/Concepts-and--Features_img60.jpeg)
+![](DataBinding_images/databindingimage1.png)
