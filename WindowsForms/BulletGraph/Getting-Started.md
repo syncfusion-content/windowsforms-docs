@@ -36,39 +36,39 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
    ~~~ cs
 
-		BulletGraph bulletgraph = new BulletGraph();
+		BulletGraph bullet = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;
+            bullet.Dock = DockStyle.Fill;
 
-            bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
+            bullet.FlowDirection = BulletGraphFlowDirection.Forward;
 
-            bulletgraph.Orientation = Orientation.Horizontal;
+            bullet.Orientation = Orientation.Horizontal;
 
-            bulletgraph.FeaturedMeasure = 4.5;
+            bullet.FeaturedMeasure = 4.5;
 
-            bulletgraph.ComparativeMeasure = 7;
+            bullet.ComparativeMeasure = 7;
 
-            bulletgraph.LabelFontSize = 10;
+            bullet.LabelFontSize = 10;
 
-            bulletgraph.LabelStroke = Color.Black;
+            bullet.LabelStroke = Color.Black;
 
-            bulletgraph.MajorTickStroke = Color.Black;
+            bullet.MajorTickStroke = Color.Black;
 
-            bulletgraph.Minimum = 0;
+            bullet.Minimum = 0;
 
-            bulletgraph.Maximum = 10;
+            bullet.Maximum = 10;
 
-            bulletgraph.Interval = 2;
+            bullet.Interval = 2;
 
-            bulletgraph.MinorTicksPerInterval = 3;
+            bullet.MinorTicksPerInterval = 3;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });            
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green });            
 
-            this.Controls.Add(bulletgraph);
+            this.Controls.Add(bullet);
 
    ~~~
    {:.prettyprint }
@@ -107,39 +107,39 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
    ~~~ cs
 
-        BulletGraph bulletgraph = new BulletGraph();
+        BulletGraph bullet = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;
+            bullet.Dock = DockStyle.Fill;
 
-            bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
+            bullet.FlowDirection = BulletGraphFlowDirection.Forward;
 
-            bulletgraph.Orientation = Orientation.Horizontal;
+            bullet.Orientation = Orientation.Horizontal;
 
-            bulletgraph.FeaturedMeasure = 4.5;
+            bullet.FeaturedMeasure = 4.5;
 
-            bulletgraph.ComparativeMeasure = 7;
+            bullet.ComparativeMeasure = 7;
 
-            bulletgraph.LabelFontSize = 10;
+            bullet.LabelFontSize = 10;
 
-            bulletgraph.LabelStroke = Color.Black;
+            bullet.LabelStroke = Color.Black;
 
-            bulletgraph.MajorTickStroke = Color.Black;
+            bullet.MajorTickStroke = Color.Black;
 
-            bulletgraph.Minimum = 0;
+            bullet.Minimum = 0;
 
-            bulletgraph.Maximum = 10;
+            bullet.Maximum = 10;
 
-            bulletgraph.Interval = 2;
+            bullet.Interval = 2;
 
-            bulletgraph.MinorTicksPerInterval = 3;
+            bullet.MinorTicksPerInterval = 3;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4, RangeCaption = "Bad", RangeStroke = Color.Red });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeCaption = "Satisfactory", RangeStroke = Color.Yellow });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green }); 
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeCaption = "Good", RangeStroke = Color.Green }); 
 
-            this.Controls.Add(bulletgraph);   
+            this.Controls.Add(bullet);   
 
    ~~~
    {:.prettyprint }  

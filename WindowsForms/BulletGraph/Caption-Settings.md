@@ -14,19 +14,19 @@ The Caption for a Bullet Graph specifies a unique label describing the value rep
 
 {% highlight c# %}
 
-			BulletGraph bulletgraph = new BulletGraph();
+			BulletGraph bullet = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;
+            bullet.Dock = DockStyle.Fill;
 
-            bulletgraph.Caption = " Revenue YTD \n $ in thousands";
+            bullet.Caption = " Revenue YTD \n $ in thousands";
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
 
-            this.Controls.Add(bulletgraph);
+            this.Controls.Add(bullet);
 
 {% endhighlight %}
 
@@ -41,19 +41,19 @@ The caption in the Bullet Graph is placed at the start or end of the quantitativ
 
 {% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+     BulletGraph bullet = new BulletGraph();
 
-bulletgraph.Dock = DockStyle.Fill;
+     bullet.Dock = DockStyle.Fill;
 
-bulletgraph.Caption = " Revenue YTD \n $ in thousands";
+     bullet.Caption = " Revenue YTD \n $ in thousands";
 
-bulletgraph.CaptionPosition = BulletGraphCaptionPosition.Far;            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
+     bullet.CaptionPosition = BulletGraphCaptionPosition.Far;            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
+    bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
+    bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
 
-this.Controls.Add(bulletgraph);
+    this.Controls.Add(bullet);
 
 {% endhighlight %}
 

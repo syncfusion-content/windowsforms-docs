@@ -67,7 +67,7 @@ public partial class Form1 : Form
 
 
 
-             MapViewModel viewmodel = new MapViewModel();
+             MapViewModel model = new MapViewModel();
 
 
 
@@ -75,7 +75,7 @@ public partial class Form1 : Form
 
             shapeLayer.Uri = "world1.shp";
 
-            shapeLayer.ItemSource = viewmodel.Countries;
+            shapeLayer.ItemSource = model.Countries;
 
             shapeLayer.ShapeIDPath = "NAME";
 
