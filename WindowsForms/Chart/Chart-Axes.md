@@ -1216,7 +1216,7 @@ ChartSeries series = new ChartSeries("Series");
 
             arrLabel.Add("Pakistan");
 
-            arrLabel.Add("Sri Lanka");
+            arrLabel.Add("SriLanka");
 
             arrLabel.Add("Japan");
 
@@ -1296,7 +1296,7 @@ arrLabel.Add("India")
 
 arrLabel.Add("Pakistan")
 
-arrLabel.Add("Sri Lanka")
+arrLabel.Add("SriLanka")
 
 arrLabel.Add("Japan")
 

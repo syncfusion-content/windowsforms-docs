@@ -237,7 +237,7 @@ public class ArrayModel : IChartSeriesModel
 
 
 
-   // Indicates whether a plottable value is present at the specified point index.
+   // Indicates whether a specified point index has a value which can be plotted.
 
    public bool GetEmpty(int index)
 
@@ -310,7 +310,7 @@ Public Class ArrayModel Implements IChartSeriesModel
 
 
 
-   ' Indicates whether a plottable value is present at the specified point index.
+   ' Indicates whether a specified point index has a value which can be plotted.
 
    Public Function GetEmpty(ByVal index As Integer) As Boolean
 
