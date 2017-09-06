@@ -85,7 +85,7 @@ public partial class Form1 : Form
 
             shapeLayer.Uri = "world1.shp";
 
-            shapeLayer.ItemSource = viewmodel.Countries;
+            shapeLayer.ItemSource = model.Countries;
 
             shapeLayer.ShapeIDPath = "NAME";
 
