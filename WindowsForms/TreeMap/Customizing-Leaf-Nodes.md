@@ -101,7 +101,7 @@ void treeMap_LeafItemDrawing(object sender, LeafItemDrawingEventArgs e)
 
 #region View Model
 
-public class OlymicMedalsViewModel
+public class OlympicMedalsViewModel
 
 {
 
@@ -109,7 +109,7 @@ public class OlymicMedalsViewModel
 
 
 
-	public OlymicMedalsViewModel()
+	public OlympicMedalsViewModel()
 
 	{
 
@@ -147,13 +147,13 @@ public class OlymicMedalsViewModel
 
 	{
 
-		Image img = null;
+		Image _image = null;
 
 
 
 		   try{
 
-			   img = Image.FromFile(@"..\..\..\..\..\images\" + image + ".png");
+			   _image = Image.FromFile(@"..\..\..\..\..\images\" + image + ".png");
 
 		   }
 
@@ -161,7 +161,7 @@ public class OlymicMedalsViewModel
 
 
 
-		   return img;
+		   return _image;
 
 	}
 

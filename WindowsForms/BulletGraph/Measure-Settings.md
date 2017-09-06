@@ -21,21 +21,21 @@ The value of the Featured Measure of the BulletGraph is set by the FeaturedMeasu
 
 {% highlight c# %}
 
-            BulletGraph bulletgraph = new BulletGraph();
+            BulletGraph bullet = new BulletGraph();
 
-            bulletgraph.Dock = DockStyle.Fill;
+            bullet.Dock = DockStyle.Fill;
 
-            bulletgraph.FeaturedMeasure = 5;
+            bullet.FeaturedMeasure = 5;
 
-            bulletgraph.FeaturedMeasureBarStroke = Color.Red;
+            bullet.FeaturedMeasureBarStroke = Color.Red;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
+            bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
 
-            this.Controls.Add(bulletgraph);
+            this.Controls.Add(bullet);
 
 {% endhighlight %}
 
@@ -51,21 +51,21 @@ The value of the Comparative Measure is set by using the ComparativeMeasure prop
 
 {% highlight c# %}
 
-BulletGraph bulletgraph = new BulletGraph();
+BulletGraph bullet = new BulletGraph();
 
-bulletgraph.Dock = DockStyle.Fill;
+bullet.Dock = DockStyle.Fill;
 
-bulletgraph.ComparativeMeasure = 5;
+bullet.ComparativeMeasure = 5;
 
-bulletgraph.ComparativeMeasureSymbolStroke = Color.Red;
+bullet.ComparativeMeasureSymbolStroke = Color.Red;
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeStroke = Color.LightGray });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeStroke = Color.Gray });
 
-bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
+bullet.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeStroke = Color.DarkGray });                    
 
-this.Controls.Add(bulletgraph);
+this.Controls.Add(bullet);
 
 {% endhighlight %}
 
