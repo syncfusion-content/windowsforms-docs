@@ -105,11 +105,11 @@ The displaying of ToolTip on mouse hover for control can be restricted by settin
 
 {% tabs %}
 {% highlight c# %}
-//Disable the ToolTip for GridGroupingcontrol.
+//Disable the ToolTip for GridGroupingControl.
 this.gridGroupingControl1.TableControl.CellToolTip.Active = false;
 {% endhighlight %}
 {% highlight vb %}
-'Disable the ToolTip for GridGroupingcontrol.
+'Disable the ToolTip for GridGroupingControl.
 Me.gridGroupingControl1.TableControl.CellToolTip.Active = False
 {% endhighlight %}
 {% endtabs %}
