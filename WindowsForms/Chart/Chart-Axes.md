@@ -1216,7 +1216,7 @@ ChartSeries series = new ChartSeries("Series");
 
             arrLabel.Add("Pakistan");
 
-            arrLabel.Add("SriLanka");
+            arrLabel.Add("China");
 
             arrLabel.Add("Japan");
 
@@ -1226,7 +1226,7 @@ ChartSeries series = new ChartSeries("Series");
 
             arrTooltip.Add("PAK");
 
-            arrTooltip.Add("SRL");
+            arrTooltip.Add("CHN");
 
             arrTooltip.Add("JPN");
 
@@ -1296,7 +1296,7 @@ arrLabel.Add("India")
 
 arrLabel.Add("Pakistan")
 
-arrLabel.Add("SriLanka")
+arrLabel.Add("China")
 
 arrLabel.Add("Japan")
 
@@ -1306,7 +1306,7 @@ arrTooltip.Add("IND")
 
 arrTooltip.Add("PAK")
 
-arrTooltip.Add("SRL")
+arrTooltip.Add("CHN")
 
 arrTooltip.Add("JPN")
 
