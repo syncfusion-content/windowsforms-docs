@@ -53,7 +53,7 @@ We can save and load the background color information in an XML file to persist 
 
 		{
 
-		this.gradientLabel1.BackgroundColor = new BrushInfo(GradientStyle.Gradient, Color.ForwardDiagonal , Color.Biege);
+		this.gradientLabel1.BackgroundColor = new BrushInfo(GradientStyle.Gradient, Color.ForwardDiagonal , Color.Beige);
 
 		string xmlFilename = "C:\\color.xml";
 
@@ -77,7 +77,7 @@ We can save and load the background color information in an XML file to persist 
 
 		Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
-		Me.gradientLabel1.BackgroundColor = New BrushInfo(GradientStyle.Gradient, Color.ForwardDiagonal, Color.Biege)
+		Me.gradientLabel1.BackgroundColor = New BrushInfo(GradientStyle.Gradient, Color.ForwardDiagonal, Color.Beige)
 
 		Private xmlFilename As String = "C:\color.xml"
 
