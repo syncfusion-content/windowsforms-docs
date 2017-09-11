@@ -75,19 +75,19 @@ private void treeViewAdv1_BeforeExpand(object sender, Syncfusion.Windows.Forms.T
 
 	//Get an Array of Directories from the current directory path
 
-    ArrayList dirs = new  ArrayList(Directory.GetDirectories(path));
+    ArrayList dis = new  ArrayList(Directory.GetDirectories(path));
 
     //Add the Directories as a node in TreeViewAdv
 
-    for(int i=0;i<dirs.Count;i++)
+    for(int i=0;i<dis.Count;i++)
 
     {
 
-        string dir = (string)dirs[i];
+        string dirt = (string)dis[i];
 
-        int lastIndex = dir.LastIndexOf("\\")+1;
+        int lastIndex = dirt.LastIndexOf("\\")+1;
 
-        TreeNodeAdv node = new TreeNodeAdv(dir.Substring(lastIndex));
+        TreeNodeAdv node = new TreeNodeAdv(dirt.Substring(lastIndex));
 
         e.Node.Nodes.Add(node);
 
@@ -117,7 +117,7 @@ this.listBox1.Items.AddRange(Directory.GetFiles(this.treeViewAdv2.SelectedNode.G
 
 }
 
-catch{}	// Exception will be thrown in the user renamed the dirs and then selects them. Lose the exception.
+catch{}	// Exception will be thrown in the user renamed the dis and then selects them. Lose the exception.
 
 }
 
@@ -154,7 +154,7 @@ Dim path As String = e.Node.GetPath("\")
 
 'Get an Array of Directories from the current directory path
 
-Dim dirs As ArrayList = New ArrayList(Directory.GetDirectories(path))
+Dim dis As ArrayList = New ArrayList(Directory.GetDirectories(path))
 
 'Add the Directories as a node in TreeViewAdv
 
@@ -162,13 +162,13 @@ Dim i As Integer = 0
 
 
 
-Do While i < dirs.Count
+Do While i < dis.Count
 
-Dim dir As String = CStr(dirs(i))
+Dim dirt As String = CStr(dis(i))
 
-Dim lastIndex As Integer = dir.LastIndexOf("\") + 1
+Dim lastIndex As Integer = dirt.LastIndexOf("\") + 1
 
-Dim node As TreeNodeAdv = New TreeNodeAdv(dir.Substring(lastIndex))
+Dim node As TreeNodeAdv = New TreeNodeAdv(dirt.Substring(lastIndex))
 
 e.Node.Nodes.Add(node)
 
@@ -192,7 +192,7 @@ Try
 
 Me.listBox1.Items.AddRange(Directory.GetFiles(Me.treeViewAdv2.SelectedNode.GetPath("\")))
 
-Catch ' Exception will be thrown in the user renamed the dirs and then selects them. Lose the exception.
+Catch ' Exception will be thrown in the user renamed the dis and then selects them. Lose the exception.
 
 End Try
 

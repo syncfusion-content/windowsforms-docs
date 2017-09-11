@@ -115,7 +115,7 @@ using Syncfusion.Runtime.Serialization;
 
 //Save Bar State in Binary format
 
-//You can also use BinaryFmtStream instead of Binaryfile
+//You can also use BinaryFmStream instead of Binaryfile
 
 AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile,"Barstate");
 
@@ -127,7 +127,7 @@ app.PersistNow ();
 
 //Load Bar State in Binary format
 
-//You can also use BinaryFmtStream instead of Binaryfile
+//You can also use BinaryFmStream instead of Binaryfile
 
 AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile,"Barstate");
 
@@ -147,7 +147,7 @@ Imports Syncfusion.Runtime.Serialization
 
 'Save Bar State in Binary format
 
-'You can also use BinaryFmtStream instead of Binaryfile
+'You can also use BinaryFmStream instead of Binaryfile
 
 Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile, "Barstate")
 
@@ -159,7 +159,7 @@ app.PersistNow ()
 
 'Load Bar State in Binary format
 
-'You can also use BinaryFmtStream instead of Binaryfile
+'You can also use BinaryFmStream instead of Binaryfile
 
 Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile, "Barstate")
 
@@ -181,7 +181,7 @@ Storing State
 
 MemoryStream ms = new MemoryStream();
 
-AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
+AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmStream, ms);
 
 this.mainFrameBarManager1.SaveBarState(aser);
 
@@ -197,7 +197,7 @@ aser.PersistNow();
 
 Dim ms As MemoryStream = New MemoryStream()
 
-Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
+Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmStream, ms)
 
 Me.mainFrameBarManager1.SaveBarState(aser) 
 
@@ -219,7 +219,7 @@ using Syncfusion.Runtime.Serialization;
 
 //Save Bar State in XML format
 
-//You can also use XMLFmtStream instead of XMLfile
+//You can also use XMLFmStream instead of XML File
 
 AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.XMLFile,"Barstate");
 
@@ -231,7 +231,7 @@ app.PersistNow ();
 
 //Load Bar State in XML format
 
-//You can also use XMLFmtStream instead of XMLfile
+//You can also use XMLFmStream instead of XML File
 
 AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.XMLFile,"Barstate");
 
@@ -249,7 +249,7 @@ Imports Syncfusion.Runtime.Serialization
 
 'Save Bar State in XML format
 
-'You can also use XMLFmtStream instead of XMLfile
+'You can also use XMLFmStream instead of XML File
 
 Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.XMLFile, "Barstate")
 
@@ -261,7 +261,7 @@ app.PersistNow ()
 
 'Load Bar State in XML format
 
-'You can also use XMLFmtStream instead of XMLfile
+'You can also use XMLFmStream instead of XML File
 
 Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.XMLFile, "Barstate")
 

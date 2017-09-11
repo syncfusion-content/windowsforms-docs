@@ -15,10 +15,10 @@ You can draw the image of GroupBarItem (without scaling it), by overriding the D
 // For this callback to occur LargeImageMode must be set to true.
  this.groupBarItem1.LargeImageMode = true;
 
-protected override void DrawGroupBarImage(Graphics gph, int nindex, Rectangle rcbar)
+protected override void DrawGroupBarImage(Graphics g, int index, Rectangle bar)
 {
-Point location = new Point(rcbar.X + 20, rcbar.Y);
-gph.DrawImage(this.VisibleGroupBarItems[nindex].Image, new Rectangle(location, new Size(20, 20)));
+Point location = new Point(bar.X + 20, bar.Y);
+g.DrawImage(this.VisibleGroupBarItems[index].Image, new Rectangle(location, new Size(20, 20)));
 }
 
 {% endhighlight %}
@@ -30,11 +30,11 @@ gph.DrawImage(this.VisibleGroupBarItems[nindex].Image, new Rectangle(location, n
 
 Me.groupBarItem1.LargeImageMode = True
 
-Overrides Sub DrawGroupBarImage(Graphics gph, Integer nindex, Rectangle rcbar)
+Overrides Sub DrawGroupBarImage(Graphics g, Integer index, Rectangle bar)
 
-Dim location As New Point(rcbar.X + 20, rcbar.Y)
+Dim location As New Point(bar.X + 20, bar.Y)
 
-gph.DrawImage(Me.VisibleGroupBarItems(nindex).Image, New Rectangle(location, New Size(20, 20)))
+g.DrawImage(Me.VisibleGroupBarItems(index).Image, New Rectangle(location, New Size(20, 20)))
 
 End Sub
 

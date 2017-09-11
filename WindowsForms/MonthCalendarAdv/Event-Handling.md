@@ -130,7 +130,7 @@ private void monthCalendarAdv1_DateCellQueryInfo(object sender,DateCellQueryI
 
 {
 
-     //To disbale the highlight color of the selected date value
+     //To disable the highlight color of the selected date value
 
      if (this.monthCalendarAdv1.Value.Date == DateTime.Today)
 
@@ -191,7 +191,7 @@ Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, By
 
     If Me.monthCalendarAdv1.Value.Date = DateTime.Today Then
 
-        'To disbale the highlight color of the selected date value
+        'To disable the highlight color of the selected date value
 
         e.EnableHighlightColor = False
 

@@ -58,7 +58,7 @@ void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateCha
 
        args.Cancel = true;
 
-       TreeMenuItem Newitem = args.NewValue;
+       TreeMenuItem newitem = args.NewValue;
 
         TreeMenuItem OldItem = args.OldValue;
 
@@ -80,7 +80,7 @@ Private Sub treeNavigator1_SelectionChanging(sender As TreeNavigator, args 
 
         args.Cancel = True
 
-        Dim Newitem As TreeMenuItem = args.NewValue
+        Dim newitem As TreeMenuItem = args.NewValue
 
         Dim OldItem As TreeMenuItem = args.OldValue
 

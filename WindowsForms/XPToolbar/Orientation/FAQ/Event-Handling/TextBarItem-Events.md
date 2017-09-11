@@ -31,7 +31,7 @@ Triggers when embedding the internal text box control with the BarItem</td></tr>
 
 // Triggers when embedding the internal textbox control with the BarItem
 
-TextBox tbox;
+TextBox box;
 
 private void textBoxBarItem1_TextBoxItemBound(object sender, Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxItemBoundEventArgs args)
 
@@ -39,7 +39,7 @@ private void textBoxBarItem1_TextBoxItemBound(object sender, Syncfusion.Windows.
 
     // Retrieving the internally embedded textBox
 
-    tbox = (TextBox)args.TextBox;
+    box = (TextBox)args.TextBox;
 
 }
 
@@ -51,7 +51,7 @@ private void textBoxBarItem1_TextBoxItemBound(object sender, Syncfusion.Windows.
 
 ' Triggers when embedding the internal textbox control with the BarItem
 
-Private tbox As TextBox
+Private box As TextBox
 
 Private Sub textBoxBarItem1_TextBoxItemBound(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxItemBoundEventArgs)
 
@@ -59,7 +59,7 @@ Private Sub textBoxBarItem1_TextBoxItemBound(ByVal sender As Object, ByVal args 
 
     ' Retrieving the internally embedded textBox
 
-    tbox = CType(args.TextBox, TextBox)
+    box = CType(args.TextBox, TextBox)
 
 
 

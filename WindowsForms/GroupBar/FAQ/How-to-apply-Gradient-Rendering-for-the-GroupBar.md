@@ -32,17 +32,17 @@ blend.Positions = new float[] { 0.0F, 0.5f, 1.0F };
 
 // Estimate the GroupBar Item bounds.
 
-Rectangle rcgroupbaritem = args.Bounds;
+Rectangle item = args.Bounds;
 
 // Create and initialize the LinearGradientBrush.
 
-System.Drawing.Drawing2D.LinearGradientBrush lgbrush = new System.Drawing.Drawing2D.LinearGradientBrush(rcgroupbaritem, Color.White, SystemColors.ButtonShadow, 90, true);
+System.Drawing.Drawing2D.LinearGradientBrush brush = new System.Drawing.Drawing2D.LinearGradientBrush(item, Color.White, SystemColors.ButtonShadow, 90, true);
 
-lgbrush.Blend = blend;
+brush.Blend = blend;
 
 // Set the brush that will be used to draw the specified bounds.
 
-args.BackgroundBrush = lgbrush;
+args.BackgroundBrush = brush;
 
 }
 
@@ -67,17 +67,17 @@ blend.Positions = New Single() {0.0F, 0.5F, 1.0F}
 
 ' Estimate the GroupBar Item bounds.
 
-Dim rcgroupbaritem As Rectangle = args.Bounds
+Dim item As Rectangle = args.Bounds
 
 ' Create and initialize the LinearGradientBrush.
 
-Dim lgbrush As System.Drawing.Drawing2D.LinearGradientBrush = New System.Drawing.Drawing2D.LinearGradientBrush(rcgroupbaritem, Color.White, SystemColors.ButtonShadow, 90, True)
+Dim brush As System.Drawing.Drawing2D.LinearGradientBrush = New System.Drawing.Drawing2D.LinearGradientBrush(item, Color.White, SystemColors.ButtonShadow, 90, True)
 
-lgbrush.Blend = blend
+brush.Blend = blend
 
 ' Set brush that will be used to draw the specified bounds.
 
-args.BackgroundBrush = lgbrush
+args.BackgroundBrush = brush
 
 End Sub
 

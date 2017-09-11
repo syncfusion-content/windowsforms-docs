@@ -210,9 +210,9 @@ private void splashPanel1_BeforeSplash(object sender, System.ComponentModel.Canc
 
 {
 
-string eventlogmessage = String.Format("Event: {0} Object: {1}\r\n", "BeforeSplash", ((Control)sender).Name);
+string message = String.Format("Event: {0} Object: {1}\r\n", "BeforeSplash", ((Control)sender).Name);
 
-textBox1.Text = textBox1.Text + eventlogmessage;
+textBox1.Text = textBox1.Text + message;
 
 
 
@@ -236,15 +236,15 @@ AddHandler Me.splashPanel1.BeforeSplash, AddressOf splashPanel1_BeforeSplash
 
 Private Sub splashPanel1_BeforeSplash(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles splashPanel1.BeforeSplash
 
-Dim eventlogmessage As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "BeforeSplash", (CType(sender, Control)).Name)
+Dim message As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "BeforeSplash", (CType(sender, Control)).Name)
 
 If Me.InvokeRequired Then
 
-Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { eventlogmessage })
+Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { message })
 
 Else
 
-OutputText(eventlogmessage)
+OutputText(message)
 
 End If
 
@@ -270,13 +270,13 @@ private void splashPanel1_SplashDisplayed(object sender, System.EventArgs e)
 
 {
 
-string eventlogmessage = String.Format("Event: {0} Object: {1}\r\n", "SplashDisplayed", ((Control)sender).Name);
+string message = String.Format("Event: {0} Object: {1}\r\n", "SplashDisplayed", ((Control)sender).Name);
 
 if (this.InvokeRequired)
 
 {
 
-this.Invoke(new SetStringDelegate(OutputText), new object[] { eventlogmessage });
+this.Invoke(new SetStringDelegate(OutputText), new object[] { message });
 
 }
 
@@ -284,7 +284,7 @@ else
 
 {
 
-textBox1.Text = textBox1.Text + eventlogmessage;
+textBox1.Text = textBox1.Text + message;
 
 }
 
@@ -306,15 +306,15 @@ Private Sub splashPanel1_SplashDisplayed(ByVal sender As Object, ByVal e As Syst
 
 
 
-Dim eventlogmessage As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "SplashDisplayed", (CType(sender, Control)).Name)
+Dim message As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "SplashDisplayed", (CType(sender, Control)).Name)
 
 If Me.InvokeRequired Then
 
-Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { eventlogmessage })
+Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { message })
 
 Else
 
-OutputText(eventlogmessage)
+OutputText(message)
 
 End If
 
@@ -384,13 +384,13 @@ private void splashPanel1_SplashClosing(object sender, Syncfusion.Windows.Forms.
 
 {
 
-string eventlogmessage = String.Format("Event: {0} Object: {1}\r\n", "SplashClosing", ((Control)sender).Name);
+string message = String.Format("Event: {0} Object: {1}\r\n", "SplashClosing", ((Control)sender).Name);
 
 if (this.InvokeRequired)
 
 {
 
-this.Invoke(new SetStringDelegate(OutputText), new object[] { eventlogmessage });
+this.Invoke(new SetStringDelegate(OutputText), new object[] { message });
 
 }
 
@@ -398,7 +398,7 @@ else
 
 {
 
-OutputText(eventlogmessage);
+OutputText(message);
 
 }
 
@@ -426,15 +426,15 @@ AddHandler Me.splashPanel1.SplashClosing, AddressOf splashPanel1_SplashClosing
 
 Private Sub splashPanel1_SplashClosing(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.SplashClosedEventArgs)
 
-Dim eventlogmessage As String = [String].Format("Event: {0} Object: {1}" & Chr(13) & "" & Chr(10) & "", "SplashClosing", DirectCast(sender, Control).Name)
+Dim message As String = [String].Format("Event: {0} Object: {1}" & Chm(13) & "" & Chm(10) & "", "SplashClosing", DirectCast(sender, Control).Name)
 
 If Me.InvokeRequired Then
 
-Me.Invoke(New SetStringDelegate(OutputText), New Object() {eventlogmessage})
+Me.Invoke(New SetStringDelegate(OutputText), New Object() {message})
 
 Else
 
-OutputText(eventlogmessage)
+OutputText(message)
 
 End If
 
@@ -490,13 +490,13 @@ private void splashPanel1_SplashClosed(object sender, Syncfusion.Windows.Forms.T
 
 {
 
-string eventlogmessage = String.Format("Event: {0} Object: {1}\r\n", "SplashClosing", ((Control)sender).Name);
+string message = String.Format("Event: {0} Object: {1}\r\n", "SplashClosing", ((Control)sender).Name);
 
 if (this.InvokeRequired)
 
 {
 
-this.Invoke(new SetStringDelegate(OutputText), new object[] { eventlogmessage });
+this.Invoke(new SetStringDelegate(OutputText), new object[] { message });
 
 }
 
@@ -504,7 +504,7 @@ else
 
 {
 
-OutputText(eventlogmessage);
+OutputText(message);
 
 }
 
@@ -538,15 +538,15 @@ AddHandler Me.splashPanel1.SplashClosed, AddressOf splashPanel1_SplashClosed
 
 Private Sub splashPanel1_SplashClosed(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.SplashClosedEventArgs) Handles splashPanel1.SplashClosed
 
-Dim eventlogmessage As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "SplashClosing", (CType(sender, Control)).Name)
+Dim message As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "SplashClosing", (CType(sender, Control)).Name)
 
 If Me.InvokeRequired Then
 
-Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { eventlogmessage })
+Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { message })
 
 Else
 
-OutputText(eventlogmessage)
+OutputText(message)
 
 End If
 
@@ -612,13 +612,13 @@ private void splashPanel1_SplashMouseEnter(object sender, System.EventArgs e)
 
 {
 
-string eventlogmessage = String.Format("Event: {0} Object: {1}\r\n", "SplashMouseEnter", ((Control)sender).Name);
+string message = String.Format("Event: {0} Object: {1}\r\n", "SplashMouseEnter", ((Control)sender).Name);
 
 if (this.InvokeRequired)
 
 {
 
-this.Invoke(new SetStringDelegate(OutputText), new object[] { eventlogmessage });
+this.Invoke(new SetStringDelegate(OutputText), new object[] { message });
 
 }
 
@@ -626,7 +626,7 @@ else
 
 {
 
-OutputText(eventlogmessage);
+OutputText(message);
 
 }
 
@@ -646,15 +646,15 @@ AddHandler Me.splashPanel1.SplashMouseEnter, AddressOf splashPanel1_SplashMouseE
 
 Private Sub splashPanel1_SplashMouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles splashPanel1.SplashMouseEnter
 
-Dim eventlogmessage As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "SplashMouseEnter", (CType(sender, Control)).Name)
+Dim message As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "SplashMouseEnter", (CType(sender, Control)).Name)
 
 If Me.InvokeRequired Then
 
-Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { eventlogmessage })
+Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { message })
 
 Else
 
-OutputText(eventlogmessage)
+OutputText(message)
 
 End If
 
@@ -684,13 +684,13 @@ private void splashPanel1_SplashMouseLeave(object sender, System.EventArgs e)
 
 {
 
-string eventlogmessage = String.Format("Event: {0} Object: {1}\r\n", "SplashMouseLeave", ((Control)sender).Name);
+string message = String.Format("Event: {0} Object: {1}\r\n", "SplashMouseLeave", ((Control)sender).Name);
 
 if (this.InvokeRequired)
 
 {
 
-this.Invoke(new SetStringDelegate(OutputText), new object[] { eventlogmessage });
+this.Invoke(new SetStringDelegate(OutputText), new object[] { message });
 
 }
 
@@ -698,7 +698,7 @@ else
 
 {
 
-string text = eventlogmessage;
+string text = message;
 
 textBox1.Text = textBox1.Text + text;
 
@@ -722,15 +722,15 @@ Private Sub splashPanel1_SplashMouseLeave(ByVal sender As Object, ByVal e As Sys
 
 
 
-Dim eventlogmessage As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "SplashMouseLeave", (CType(sender, Control)).Name)
+Dim message As String = String.Format("Event: {0} Object: {1}" & Constants.vbCrLf, "SplashMouseLeave", (CType(sender, Control)).Name)
 
 If Me.InvokeRequired Then
 
-Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { eventlogmessage })
+Me.Invoke(New SetStringDelegate(AddressOf OutputText), New Object() { message })
 
 Else
 
-OutputText(eventlogmessage)
+OutputText(message)
 
 End If
 

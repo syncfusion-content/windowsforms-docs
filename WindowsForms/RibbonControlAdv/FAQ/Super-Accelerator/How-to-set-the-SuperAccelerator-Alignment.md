@@ -135,7 +135,7 @@ The following code example illustrates how to set the alignment property for Sup
 
 this.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAlignment.Default;
 
-//Set the SuperAccelerator alignment on Topleft of the control
+//Set the SuperAccelerator alignment on TopLeft of the control
 
 this.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAlignment.TopLeft;
 
@@ -178,7 +178,7 @@ this.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAli
 'Set the default SuperAccelerator alignment
 
 Me.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAlignment.Default
-'Set the SuperAccelerator alignment on Topleft of the control
+'Set the SuperAccelerator alignment on TopLeft of the control
 
 Me.superAccelerator1.Alignment = Syncfusion.Windows.Forms.Tools.AcceleratorAlignment.TopLeft
 

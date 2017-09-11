@@ -399,11 +399,11 @@ The following code sample can be utilized for applying a custom renderer to the 
 
         {
 
-            Image newbitmap =Image.FromFile(@"D:\CustomClock.PNG");
+            Image image =Image.FromFile(@"D:\CustomClock.PNG");
 
 
 
-            base.DrawDigitalClockFrame(g, newbitmap, clock);
+            base.DrawDigitalClockFrame(g, image, clock);
 
         }
 
@@ -421,8 +421,8 @@ Public Class DigitalRenderer
     Inherits DigitalClockRenderer
 
     Public Overrides Sub DrawDigitalClockFrame(ByVal g As Graphics, ByVal newImage As Image, ByVal clock As Clock)
-        Dim newbitmap As Image = Image.FromFile("G:\CustomClock.PNG")
-        MyBase.DrawDigitalClockFrame(g, newbitmap, clock)
+        Dim imaga As Image = Image.FromFile("G:\CustomClock.PNG")
+        MyBase.DrawDigitalClockFrame(g, image, clock)
     End Sub
 End Class
 
