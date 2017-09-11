@@ -363,11 +363,11 @@ XPTaskBarItem box = sender as XPTaskBarItem;
 
 // Header back brush.
 
-LinearGradientBrush lgBrush = new LinearGradientBrush(args.Bounds, Color.White, box.HeaderBackColor, 0, true);
+LinearGradientBrush brush = new LinearGradientBrush(args.Bounds, Color.White, box.HeaderBackColor, 0, true);
 
-lgBrush.Blend = blend;
+brush.Blend = blend;
 
-args.Brush = lgBrush;
+args.Brush = brush;
 
 }
 
@@ -407,11 +407,11 @@ Dim box As  = CType(sender, XPTaskBarItem)
 
 ' Header back brush.
 
-Dim lgBrush As New LinearGradientBrush(args.Bounds, Color.White, box.HeaderBackColor, 0, True)
+Dim brush As New LinearGradientBrush(args.Bounds, Color.White, box.HeaderBackColor, 0, True)
 
-lgBrush.Blend = blend
+brush.Blend = blend
 
-args.Brush = lgBrush
+args.Brush = brush
 
 End If
 
@@ -444,15 +444,15 @@ blend.Positions = new float[] { 0.0F, 0.25F, 0.5F, 1.0F, 1.5F };
 
 // Estimate the GroupBarItem bounds
 
-Rectangle rcgroupbaritem = args.Bounds;
+Rectangle rec = args.Bounds;
 
 // Create and initialize the LinearGradientBrush
 
-System.Drawing.Drawing2D.LinearGradientBrush lgbrush = new System.Drawing.Drawing2D.LinearGradientBrush(rcgroupbaritem, Color.FromArgb(227, 238, 255), Color.FromArgb(227, 238, 255), 75, true);
+System.Drawing.Drawing2D.LinearGradientBrush brush = new System.Drawing.Drawing2D.LinearGradientBrush(rec, Color.FromArgb(227, 238, 255), Color.FromArgb(227, 238, 255), 75, true);
 
-lgbrush.Blend = blend;
+lbrush.Blend = blend;
 
-args.Brush = lgbrush;
+args.Brush = brush;
 
 }
 
@@ -472,15 +472,15 @@ blend.Positions = New Single() {0.0F, 0.25F, 0.5F, 1.0F, 1.5F}
 
 ' Estimate the GroupBarItem bounds 
 
-Dim rcgroupbaritem As Rectangle = args.Bounds
+Dim rec As Rectangle = args.Bounds
 
 ' Create and initialize the LinearGradientBrush 
 
-Dim lgbrush As New System.Drawing.Drawing2D.LinearGradientBrush(rcgroupbaritem, Color.FromArgb(227, 238, 255), Color.FromArgb(227, 238, 255), 75, True)
+Dim brush As New System.Drawing.Drawing2D.LinearGradientBrush(rec, Color.FromArgb(227, 238, 255), Color.FromArgb(227, 238, 255), 75, True)
 
-lgbrush.Blend = blend
+brush.Blend = blend
 
-args.Brush = lgbrush
+args.Brush = brush
 
 End Sub
 

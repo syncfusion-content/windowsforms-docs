@@ -29,7 +29,7 @@ This section discusses AfterInteractiveChecks Event.
 
 ### AfterInteractiveChecks Event
 
-InteractiveCheckBox settings available for the treeNodeAdv indicates whether the node will have an interactive checkbox. This AfterInteractiveChecks event will be triggered when the checked state of one or more nodes of a TreeViewAdv has changed due to this InteractiveCheckbox setting.
+InteractiveCheckBox settings available for the TreeNodeAdv indicates whether the node will have an interactive checkbox. This AfterInteractiveChecks event will be triggered when the checked state of one or more nodes of a TreeViewAdv has changed due to this InteractiveCheckbox setting.
 
 #### Event Data
 
@@ -240,14 +240,14 @@ The nodes can be added to the TreeViewAdv when any key is pressed, whereby the t
 
 
 
-// Setting the keydata to the newly added node.
+// Setting the key data to the newly added node.
 
 // Add the nodes to the selected node.
 
 private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e) 
 { 
 
-     // Setting the keydata to the newly added node.
+     // Setting the key data to the newly added node.
      TreeNodeAdv node=new TreeNodeAdv("Node"+" "+e.KeyData.ToString()); 
 
 
@@ -265,7 +265,7 @@ Private Sub treeViewAdv1_KeyDown(ByVal sender As Object, ByVal e As System.Windo
 
 
 
-     ' Setting the keydata to the newly added node.
+     ' Setting the key data to the newly added node.
 
      Dim node As TreeNodeAdv = New TreeNodeAdv("Node" & " " & e.KeyData.ToString())
 
@@ -340,11 +340,11 @@ The nodes can be added to the TreeViewAdv when any key is pressed, whereby the t
 
 {% highlight c# %}
 
-// Setting the keydata to the newly added node.
+// Setting the key data to the newly added node.
 // Add the nodes to the selected node.
 private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e) 
 { 
-     // Setting the keydata to the newly added node.
+     // Setting the key data to the newly added node.
      TreeNodeAdv node=new TreeNodeAdv("Node"+" "+e.KeyData.ToString()); 
 
      // Add the nodes to the selected node.
@@ -358,7 +358,7 @@ private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventAr
 
 Private Sub treeViewAdv1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
 
-     ' Setting the keydata to the newly added node.
+     ' Setting the key data to the newly added node.
      Dim node As TreeNodeAdv = New TreeNodeAdv("Node" & " " & e.KeyData.ToString())
 
      ' Add the nodes to the selected node.
@@ -475,7 +475,7 @@ Disable the menu shortcut as soon as the editor gets focus and enable the shortc
 
 
 
-TextBox editbox;
+TextBox editor;
 
 
 
@@ -483,9 +483,9 @@ private void treeViewAdv1_BeforeEdit(object sender, Syncfusion.Windows.Forms.Too
 
 {
 
-this.editbox = e.TextBox;
+this.editor = e.TextBox;
 
-this.editbox.Leave += new EventHandler(editbox_Leave);
+this.editor.Leave += new EventHandler(editor_Leave);
 
 // Disabling  the menu shortcut as soon as the editor gets focused.
 
@@ -495,7 +495,7 @@ this.barItem1.Shortcut = Shortcut.None;
 
   // Enabling the shortcut as soon as the editor loses focus.
 
-private void editbox_Leave(object sender, EventArgs args)
+private void editor_Leave(object sender, EventArgs args)
 
 {
 
@@ -507,13 +507,13 @@ this.barItem1.Shortcut = Shortcut.Del;
 
 {% highlight vbnet %}
 
-Private editbox As TextBox
+Private editor As TextBox
 
 Private Sub treeViewAdv1_BeforeEdit(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs)
 
-Me.editbox = e.TextBox
+Me.editor = e.TextBox
 
-AddHandler editbox.Leave, AddressOf editbox_Leave
+AddHandler editor.Leave, AddressOf editor_Leave
 
  Disabling the menu shortcut as soon as the editor gets focused.
 
@@ -521,7 +521,7 @@ Me.barItem1.Shortcut = Shortcut.None
 
 End Sub
 
-Private Sub editbox_Leave(ByVal sender As Object, ByVal args As EventArgs)
+Private Sub editor_Leave(ByVal sender As Object, ByVal args As EventArgs)
 
      ' Enabling the shortcut as soon as the editor loses focus.
 
@@ -1161,7 +1161,7 @@ private void treeViewAdv1_BeforeEdit(object sender, Syncfusion.Windows.Forms.Too
 
 {
 
-// By cancelling the BeforeEdit event for particular nodes helps to cancel the Read/Write property of that nodes. 
+// By cancel the BeforeEdit event for particular nodes helps to cancel the Read/Write property of that nodes. 
 
 if(username=="user1")
 
@@ -1199,7 +1199,7 @@ Private Sub treeViewAdv1_BeforeEdit(ByVal sender As Object, ByVal e As Syncfusio
 
 
 
-     ' By cancelling the BeforeEdit event for particular nodes helps to cancel the Read/Write property of that nodes. 
+     ' By cancel the BeforeEdit event for particular nodes helps to cancel the Read/Write property of that nodes. 
 
 If username="user1" Then
 
@@ -2290,7 +2290,7 @@ private void treeViewAdv1_ScrollControlHandledMouseDown(object sender, Syncfusio
 
 //Returns the MouseEventArgs data for this event
 
-Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cor" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()");
+Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()");
 
 //Cancel the event using the below code.
 
@@ -2308,7 +2308,7 @@ Private Sub treeViewAdv1_ScrollControlHandledMouseDown(ByVal sender As Object, B
 
 //Returns the MouseEventArgs data for this event
 
-Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cor" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()")
+Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()")
 
 //Cancel the event using the below code.
 
@@ -2354,7 +2354,7 @@ private void treeViewAdv1_ScrollControlHandledMouseMove(object sender, Syncfusio
 
 //Returns the MouseEventArgs data for this event
 
-Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cor" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()");
+Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()");
 
 //Cancel the event using the below code.
 
@@ -2372,7 +2372,7 @@ Private Sub treeViewAdv1_ScrollControlHandledMouseMove(ByVal sender As Object, B
 
 //Returns the MouseEventArgs data for this event
 
-Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cor" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()")
+Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()")
 
 //Cancel the event using the below code.
 
@@ -2526,31 +2526,31 @@ Console.Write("Action :" + e.Action.ToString());
 
 
 
-//This prints the Back Color to be used for the ScrollTipText
+//This prints the Back Color to be used for the Scroll Tip Text
 
 Console.Write("BackColor:" + e.BackColor.ToString());
 
 
 
-//This prints the Border style to be used for the ScrollTipText
+//This prints the Border style to be used for the Scroll Tip Text
 
 Console.Write("Border Style:" + e.BorderStyle.ToString());
 
 
 
-//This prints the Font to be used for the ScrollTiptext
+//This prints the Font to be used for the Scroll Tip text
 
 Console.Write("Font:" + e.Font.ToString());
 
 
 
-//This prints the text color to be used for the ScrollTiptext
+//This prints the text color to be used for the Scroll Tip text
 
 Console.Write("Fore Color:" + e.ForeColor.ToString());
 
 
 
-//This prints the layout out info to be used for the ScrollTiptext
+//This prints the layout out info to be used for the Scroll Tip text
 
 Console.Write("Format:" + e.Format.ToString());
 
@@ -2602,31 +2602,31 @@ Console.Write("Action :" + e.Action.ToString())
 
 
 
-'This prints the Back Color to be used for the ScrollTipText
+'This prints the Back Color to be used for the Scroll Tip Text
 
 Console.Write("BackColor:" + e.BackColor.ToString())
 
 
 
-'This prints the Border style to be used for the ScrollTipText
+'This prints the Border style to be used for the Scroll Tip Text
 
 Console.Write("Border Style:" + e.BorderStyle.ToString())
 
 
 
-'This prints the Font to be used for the ScrollTiptext
+'This prints the Font to be used for the Scroll Tip text
 
 Console.Write("Font:" + e.Font.ToString())
 
 
 
-'This prints the text color to be used for the ScrollTiptext
+'This prints the text color to be used for the Scroll Tip text
 
 Console.Write("Fore Color:" + e.ForeColor.ToString())
 
 
 
-'This prints the layout out info to be used for the ScrollTiptext
+'This prints the layout out info to be used for the Scroll Tip text
 
 Console.Write("Format:" + e.Format.ToString())
 

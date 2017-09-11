@@ -32,7 +32,7 @@ AllowDrop</td><td>
 Gets / sets a value indicating whether the control can accept data that the user drags on it.</td><td>
 Normal</td><td>
 Boolean[true/false]</td><td>
-Public Property AllowDrop As Booleanthis.xpTaskBar1.AllowDrop = true;</td><td>
+Public Property AllowDrop As Boolean this.xpTaskBar1.AllowDrop = true;</td><td>
 -</td><td>
 -</td></tr>
 <tr>
@@ -41,7 +41,7 @@ AutoPersistStates</td><td>
 Specifies whether to automatically persist the collapsed state of the child boxes.</td><td>
 Normal</td><td>
 Boolean[true/false]</td><td>
-Public Property AutoPersistStates As Booleanthis.xpTaskBar1.AutoPersistStates = true;</td><td>
+Public Property AutoPersistStates As Boolean this.xpTaskBar1.AutoPersistStates = true;</td><td>
 No</td><td>
 The expanded states of the child task bar boxes are cached as the users expands/collapses them, when this property is true. The cached state is persisted in the Isolated Storage, when this control is disposed.If the child task bar boxes are added to this control, the saved state is reapplied on the task bar boxes, when the application loads again.State is saved in the Isolated Storage of the system, scoped by the current user identity.You can control the persistent store and/or the time of persistence using LoadBoxExpandedStates() and SaveBoxExpandedStates() methods.</td></tr>
 <tr>
@@ -50,7 +50,7 @@ VerticalLayout</td><td>
 Gets / sets the value which determines whether the TaskBar Boxes should be aligned vertically or horizontally in the XPTaskBar control. The default layout is Vertical.</td><td>
 Normal</td><td>
 Boolean[true/false]</td><td>
-Public Property VerticalLayout As Booleanthis.xpTaskBar1.VerticalLayout = true;</td><td>
+Public Property VerticalLayout As Boolean this.xpTaskBar1.VerticalLayout = true;</td><td>
 </td><td>
 </td></tr>
 <tr>
@@ -98,7 +98,7 @@ Me.xpTaskBar1.VerticalLayout = True
 
 ## Scroll Settings 
 
-Vertical scrollbar will be automatically added to the XPTaskBar when the TaskBarBoxes are placed outside the TaskBar's client 
+Vertical scrollbar will be automatically added to the XPTaskBar when the TaskBar Boxes are placed outside the TaskBar's client 
 area, provided the XPTaskBar is in the Vertical Layout mode. 
 
 In the Horizontal Layout mode, the horizontal scrollbar appears on setting the ColWidthOnHorizontalLayout property to large 

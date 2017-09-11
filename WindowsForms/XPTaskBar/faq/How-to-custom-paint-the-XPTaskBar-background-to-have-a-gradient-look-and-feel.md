@@ -20,11 +20,11 @@ Rectangle rc = this.ClientRectangle;
 
 int gradientWidth = rc.Width;
 
-LinearGradientBrush lgb = new System.Drawing.Drawing2D.LinearGradientBrush( new Point(0, 0), new Point(0, gradientWidth), Color.SandyBrown, Color.White);
+LinearGradientBrush lg = new System.Drawing.Drawing2D.LinearGradientBrush( new Point(0, 0), new Point(0, gradientWidth), Color.SandyBrown, Color.White);
 
  
 
-// LinearGradientBrush lgb = new System.Drawing.Drawing2D.LinearGradientBrush(rc, Color.SandyBrown, Color, LinearGradientMode.ForwardDiagonal);
+// LinearGradientBrush lg = new System.Drawing.Drawing2D.LinearGradientBrush(rc, Color.SandyBrown, Color, LinearGradientMode.ForwardDiagonal);
 
 float[] positions = {0.0f, 0.005f, 0.95f, 1.0f};
 
@@ -40,11 +40,11 @@ blend.Factors = factors;
 
 blend.Positions = positions;
 
-lgb.Blend = blend;
+lg.Blend = blend;
 
-e.Graphics.FillRectangle(lgb, 0, 0, gradientWidth, rc.Height);
+e.Graphics.FillRectangle(lg, 0, 0, gradientWidth, rc.Height);
 
-lgb.Dispose();
+lg.Dispose();
 
 }
 
@@ -60,11 +60,11 @@ Dim rc As Rectangle = Me.ClientRectangle
 
 Dim gradientWidth As Integer = rc.Width
 
-Dim lgb As LinearGradientBrush = New System.Drawing.Drawing2D.LinearGradientBrush(New Point(0, 0), New Point(0, gradientWidth), Color.SandyBrown, Color.White)
+Dim lg As LinearGradientBrush = New System.Drawing.Drawing2D.LinearGradientBrush(New Point(0, 0), New Point(0, gradientWidth), Color.SandyBrown, Color.White)
 
  
 
-' LinearGradientBrush lgb = new System.Drawing.Drawing2D.LinearGradientBrush(rc, Color.SandyBrown, Color, LinearGradientMode.ForwardDiagonal);
+' LinearGradientBrush lg = new System.Drawing.Drawing2D.LinearGradientBrush(rc, Color.SandyBrown, Color, LinearGradientMode.ForwardDiagonal);
 
 Dim positions As Single() = {0.0F, 0.005F, 0.95F, 1.0F}
 
@@ -80,11 +80,11 @@ blend.Factors = factors
 
 blend.Positions = positions
 
-lgb.Blend = blend
+lg.Blend = blend
 
-e.Graphics.FillRectangle(lgb, 0, 0, gradientWidth, rc.Height)
+e.Graphics.FillRectangle(lg, 0, 0, gradientWidth, rc.Height)
 
-lgb.Dispose()
+lg.Dispose()
 
 End Sub
 

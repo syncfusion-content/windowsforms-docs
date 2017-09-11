@@ -81,7 +81,7 @@ Specifies the Foreground color for the GroupBar Item.</td></tr>
 
 {% highlight C# %}  
 
-this.groupBar1.HeaderBackColor = System.Drawing.Color.LavendarBlush;
+this.groupBar1.HeaderBackColor = System.Drawing.Color.LavenderBlush;
 
 this.groupBar1.HeaderForeColor = System.Drawing.Color.Silver;
 

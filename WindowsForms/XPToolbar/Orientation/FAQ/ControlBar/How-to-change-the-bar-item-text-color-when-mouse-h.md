@@ -13,7 +13,7 @@ Bar item text color can be changed at run time, when the mouse hovers over it, w
 
 {% highlight c# %}
 
-//Set the baItem's text Color
+//Set the bar item's text Color
 
 Syncfusion.Windows.Forms.MenuColors.SelTextColor = Color.Blue;
 
@@ -22,7 +22,7 @@ Syncfusion.Windows.Forms.MenuColors.SelTextColor = Color.Blue;
 {% highlight vbnet %}
 
 
-'Set the baItem's text Color
+'Set the bar item's text Color
 
 Syncfusion.Windows.Forms.MenuColors.SelTextColor = Color.Blue
 

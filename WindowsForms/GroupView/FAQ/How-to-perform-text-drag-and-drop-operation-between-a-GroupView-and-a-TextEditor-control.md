@@ -12,7 +12,7 @@ You could perform text drag-and-drop operation between a TextEditor control like
 
 {% highlight C# %}  
 
-string draggedtext = "";
+string dragged = "";
 
 // Get the text to be dragged. 
 
@@ -20,9 +20,9 @@ private void groupView1_DragEnter(object sender, System.Windows.Forms.DragEventA
 
 {  
 
-this.draggedtext = e.Data.GetData(typeof(string)) as string; 
+this.dragged = e.Data.GetData(typeof(string)) as string; 
 
-} 
+}
 
 // Drop the selected text in the GroupView Item.
 
@@ -36,13 +36,13 @@ if (this.groupView1.ClientRectangle.Contains(pt))
 
 { 
 
-if (this.draggedtext != "") 
+if (this.dragged != "") 
 
 { 
 
 GroupViewItem gvi = new GroupViewItem(); 
 
-gvi.Text = this.draggedtext; 
+gvi.Text = this.dragged; 
 
 this.groupView1.GroupViewItems.Add(gvi); 
 
@@ -50,7 +50,7 @@ this.groupView1.GroupViewItems.Add(gvi);
 
 } 
 
-this.draggedtext = ""; 
+this.dragged = ""; 
 
 } 
 
@@ -60,13 +60,13 @@ this.draggedtext = "";
 
 {% highlight vbnet %} 
 
-Dim draggedtext As String = ""
+Dim dragged As String = ""
 
 ' Get the text to be dragged.
 
 Private Sub groupView1_DragEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs)
 
-Me.draggedtext = e.Data.GetData(Type.GetType(String)) as String 
+Me.dragged = e.Data.GetData(Type.GetType(String)) as String 
 
 End Sub
 
@@ -78,19 +78,19 @@ Dim pt As Point = Me.groupView1.PointToClient(Control.MousePosition)
 
 If Me.groupView1.ClientRectangle.Contains(pt) Then
 
-If Me.draggedtext.Equals("") Then
+If Me.dragged.Equals("") Then
 
 Else
 
 Dim gvi As New GroupViewItem()
 
-gvi.Text = Me.draggedtext
+gvi.Text = Me.dragged
 
 Me.groupView1.GroupViewItems.Add(gvi)
 
 End If
 
-Me.draggedtext = ""
+Me.dragged = ""
 
 End Sub
 

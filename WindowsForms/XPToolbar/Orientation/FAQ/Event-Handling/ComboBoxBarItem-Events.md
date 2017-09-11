@@ -43,7 +43,7 @@ This event is handled when the ComboBoxBarItem's value is changed.</td></tr>
 
 // Triggers when embedding the internal textbox control with the ComboBoxBarItem 
 
-TextBox txtbox;
+TextBox box;
 
 private void comboBoxBarItem1_TextBoxBound(object sender, Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBoundEventArgs args)
 
@@ -53,7 +53,7 @@ private void comboBoxBarItem1_TextBoxBound(object sender, Syncfusion.Windows.For
 
    // Retrieving the internally embedded textBox
 
-    txtbox = (TextBox)args.TextBox;
+    box = (TextBox)args.TextBox;
 
 }
 
@@ -101,7 +101,7 @@ private void comboBoxBarItem1_TextBoxValueChange(object sender, Syncfusion.Windo
 
 ' Triggers when embedding the internal textbox control with the ComboBoxBarItem 
 
-Private txtbox As TextBox
+Private box As TextBox
 
 Private Sub comboBoxBarItem1_TextBoxBound(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBoundEventArgs)
 
@@ -109,7 +109,7 @@ Private Sub comboBoxBarItem1_TextBoxBound(ByVal sender As Object, ByVal args As 
 
     ' Retrieving the internally embedded textBox
 
-    txtbox = CType(args.TextBox, TextBox)
+    box = CType(args.TextBox, TextBox)
 
 
 

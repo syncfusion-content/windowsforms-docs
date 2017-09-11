@@ -95,7 +95,7 @@ Gets / sets a value to be added or subtracted from the Value Property, when vert
 
 {% highlight c# %}
 
-this.scrollersFrame2.VerticallSmallChange = 25;
+this.scrollersFrame2.VerticalSmallChange = 25;
 
 this.scrollersFrame2.HorizontalSmallChange = 25;
 
@@ -103,7 +103,7 @@ this.scrollersFrame2.HorizontalSmallChange = 25;
 
 {% highlight vbnet %}
 
-Me.scrollersFrame2.VerticallSmallChange = 25
+Me.scrollersFrame2.VerticalSmallChange = 25
 
 Me.scrollersFrame2.HorizontalSmallChange  = 25
 

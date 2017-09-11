@@ -70,7 +70,7 @@ To add TreeNavigator Control to a Windows Forms Application through code behind.
    ~~~ cs
 
 
-		//Creates the Treenavigator instance.
+		//Creates the TreeNavigator instance.
 
 		TreeNavigator treeNavigator = new TreeNavigator();
 
