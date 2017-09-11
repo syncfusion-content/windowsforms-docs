@@ -24,7 +24,7 @@ this.oleDbDataAdapter1.Fill(this.dataSet11.Table1);
 
 
 
-// Using CheckBoxAdv's BoolValue property for Databinding.
+// Using CheckBoxAdv's BoolValue property for Data binding.
 
 this.checkBoxAdv1.DataBindings.Add("BoolValue", this.dataSet11.Table1, "CheckValue");
 
@@ -41,7 +41,7 @@ End Sub
 
 
 
-' Using CheckBoxAdv's BoolValue property for Databinding.
+' Using CheckBoxAdv's BoolValue property for Data binding.
 
 Me.checkBoxAdv1.DataBindings.Add("BoolValue", Me.dataSet11.Table1, "CheckValue")
 

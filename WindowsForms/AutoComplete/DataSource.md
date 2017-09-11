@@ -215,9 +215,9 @@ You can specify an external datasource for the AutoComplete control to use as th
 
 			// Set up the datasource on the Autocomplete control. 
 
-		this.oleDbDataAdapter1.Fill(this.dataSet11.organisation);
+		this.oleDbDataAdapter1.Fill(this.dataSet11.organization);
 
-		this.autoComplete1.DataSource = this.dataSet11.organisation;
+		this.autoComplete1.DataSource = this.dataSet11.organization;
 
 		}
    ~~~
@@ -236,9 +236,9 @@ You can specify an external datasource for the AutoComplete control to use as th
 
 			 ' Set up the datasource on the Autocomplete control  .
 
-		Me.oleDbDataAdapter1.Fill(Me.dataSet11.organisation)
+		Me.oleDbDataAdapter1.Fill(Me.dataSet11.organization)
 
-		Me.autoComplete1.DataSource = Me.dataSet11.organisation
+		Me.autoComplete1.DataSource = Me.dataSet11.organization
 
 		End Sub
 
