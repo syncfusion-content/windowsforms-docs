@@ -40,7 +40,7 @@ Private  Sub form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
   ' Sets the AutoComplete.
 
-autoComplete1.DataDource=editableList1.ListBox.Items
+autoComplete1.DataSource=editableList1.ListBox.Items
 
 autoComplete1.SetAutoComplete(editableList1.TextBox,AutoCompleteModes.Both)
 
