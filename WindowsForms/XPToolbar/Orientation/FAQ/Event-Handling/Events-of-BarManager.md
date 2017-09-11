@@ -67,7 +67,7 @@ Console.WriteLine("CustomizationDone occurred");
 
 Private Sub Customization_Begin(ByVal sender As Object, ByVal e As System.EventArgs)
 
-    Console.WriteLine("CustomizationBegin occured.")
+    Console.WriteLine("CustomizationBegin occurred.")
 
 End Sub
 
@@ -77,7 +77,7 @@ End Sub
 
 Private Sub Customization_Done(ByVal sender As Object, ByVal e As System.EventArgs)
 
-    Console.WriteLine("CustomizationDone occured.")
+    Console.WriteLine("CustomizationDone occurred.")
 
 End Sub
 

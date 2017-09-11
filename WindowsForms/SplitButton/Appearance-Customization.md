@@ -27,7 +27,7 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
             #region ISplitButtonRenderer Members
 
-             public void DrawText(PaintEventArgs e, string text, Font font, Color color, int totalwidth, int totalheight, int splitwidth)
+             public void DrawText(PaintEventArgs e, string text, Font font, Color color, int width, int height, int split)
 
             {
 
@@ -41,11 +41,11 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
                 format.Alignment = StringAlignment.Center;
 
-                Rectangle textArea = new Rectangle(7, 1, totalwidth - splitwidth, totalheight);
+                Rectangle textArea = new Rectangle(7, 1, width - split, height);
 
                 e.Graphics.DrawString(text, font, brush, textArea, format);
 
-                Rectangle imageRect = new Rectangle(4, 11, 15, totalheight - 24);
+                Rectangle imageRect = new Rectangle(4, 11, 15, height - 24);
 
                 Image img = Image.FromFile(@"../../logo_16.ico");
 
@@ -55,7 +55,7 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
             }
 
-            public void DrawBorder(PaintEventArgs e, int width, int height, int splitwidth, Color outerColor, Color innerColor, Color arrowOuter, Color arrowInner, Color buttonInner)
+            public void DrawBorder(PaintEventArgs e, int width, int height, int split, Color outerColor, Color innerColor, Color arrowOuter, Color arrowInner, Color buttonInner)
 
             {
 
@@ -95,15 +95,15 @@ The following code illustrates how to implement the ISplitButtonRenderer interfa
 
 
 
-                e.Graphics.DrawLine(arrowouter, new Point(width - splitwidth, 0), new Point(width - splitwidth, height - 1));
+                e.Graphics.DrawLine(arrowouter, new Point(width - split, 0), new Point(width - split, height - 1));
 
 
 
-                e.Graphics.DrawLine(buttoninner, new Point(width - splitwidth - 1, 2), new Point(width - splitwidth - 1, height - 3));
+                e.Graphics.DrawLine(buttoninner, new Point(width - split - 1, 2), new Point(width - split - 1, height - 3));
 
 
 
-                e.Graphics.DrawRectangle(arrowinner, width - splitwidth + 1, 1, splitwidth - 3, height - 3);
+                e.Graphics.DrawRectangle(arrowinner, width - split + 1, 1, split - 3, height - 3);
 
 
 
@@ -193,7 +193,7 @@ Implements ISplitButtonRenderer
 
 Private splitButton_Renamed As SplitButton
 
-Public Sub DrawText(ByVal e As PaintEventArgs, ByVal text As String, ByVal font As Font, ByVal color As Color, ByVal totalwidth As Integer, ByVal totalheight As Integer, ByVal splitwidth As Integer)
+Public Sub DrawText(ByVal e As PaintEventArgs, ByVal text As String, ByVal font As Font, ByVal color As Color, ByVal width As Integer, ByVal height As Integer, ByVal split As Integer)
 
 
 
@@ -207,13 +207,13 @@ format.LineAlignment = StringAlignment.Center
 
 format.Alignment = StringAlignment.Center
 
-Dim textArea As New Rectangle(7, 1, totalwidth - splitwidth, totalheight)
+Dim textArea As New Rectangle(7, 1, width - split, height)
 
 e.Graphics.DrawString(text, font, brush, textArea, format)
 
 
 
-Dim imageRect As New Rectangle(4, 11, 15, totalheight - 24)
+Dim imageRect As New Rectangle(4, 11, 15, height - 24)
 
 Dim img As Image = Image.FromFile("../../logo_16.ico")
 
@@ -224,7 +224,7 @@ brush.Dispose()
 End Sub
 
 
-Public Sub DrawBorder(ByVal e As PaintEventArgs, ByVal width As Integer, ByVal height As Integer, ByVal splitwidth As Integer, ByVal outerColor As Color, ByVal innerColor As Color, ByVal arrowOuter As Color, ByVal arrowInner As Color, ByVal buttonInner As Color)
+Public Sub DrawBorder(ByVal e As PaintEventArgs, ByVal width As Integer, ByVal height As Integer, ByVal split As Integer, ByVal outerColor As Color, ByVal innerColor As Color, ByVal arrowOuter As Color, ByVal arrowInner As Color, ByVal buttonInner As Color)
 
 				' Customize the Border Color And BackColor of the SplitButton 
 
@@ -264,15 +264,15 @@ e.Graphics.DrawLine(innercolor_Renamed, New Point(1, 1), New Point(1, height - 2
 
 
 
-e.Graphics.DrawLine(arrowouter_Renamed, New Point(width - splitwidth, 0), New Point(width - splitwidth, height - 1))
+e.Graphics.DrawLine(arrowouter_Renamed, New Point(width - split, 0), New Point(width - split, height - 1))
 
 
 
-e.Graphics.DrawLine(buttoninner_Renamed, New Point(width - splitwidth - 1, 2), New Point(width - splitwidth - 1, height - 3))
+e.Graphics.DrawLine(buttoninner_Renamed, New Point(width - split - 1, 2), New Point(width - split - 1, height - 3))
 
 
 
-e.Graphics.DrawRectangle(arrowinner_Renamed, width - splitwidth + 1, 1, splitwidth - 3, height - 3)
+e.Graphics.DrawRectangle(arrowinner_Renamed, width - split + 1, 1, split - 3, height - 3)
 
 
 

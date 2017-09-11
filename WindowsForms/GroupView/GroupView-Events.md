@@ -124,7 +124,7 @@ Returns the index of the GroupBar Item being drawn.</td></tr>
 
 // This event occurs when a GroupView Item in the GroupView is renamed.
 
-private void gvcWinForms_GroupViewItemRenamed(object obj, Syncfusion.Windows.Forms.Tools.GroupItemRenamedEventArgs arg)
+private void groupWinForms_GroupViewItemRenamed(object obj, Syncfusion.Windows.Forms.Tools.GroupItemRenamedEventArgs arg)
 
 {
 
@@ -142,7 +142,7 @@ this.listView1.Items.Add(listViewItem1);
 
 // This event occurs when a GroupView Item in the GroupView is renamed.
 
-Private Sub gvcWinForms_GroupViewItemRenamed(ByVal obj As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.GroupItemRenamedEventArgs) Handles gvcWinForms.GroupViewItemRenamed
+Private Sub groupWinForms_GroupViewItemRenamed(ByVal obj As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.GroupItemRenamedEventArgs) Handles groupWinForms.GroupViewItemRenamed
 
 Dim listViewItem1 As ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"GroupViewItemRenamed", "Old Label: " + arg.OldLabel & " New Label: " + arg.NewLabel})
 
@@ -163,7 +163,7 @@ The event handler receives an argument of type GroupItemRenamedEventArgs.
 
 // This event occurs when a GroupView Item in the GroupView is reordered.
 
-private void gvcWinForms_GroupViewItemsReordered(object sender, System.EventArgs e)
+private void groupWinForms_GroupViewItemsReordered(object sender, System.EventArgs e)
 
 {
 
@@ -181,7 +181,7 @@ this.listView1.Items.Add(listViewItem1);
 
 // This event occurs when a GroupView Item in the GroupView is reordered.
 
-Private Sub gvcWinForms_GroupViewItemsReordered(ByVal sender As Object, ByVal e As System.EventArgs) Handles gvcWinForms.GroupViewItemsReordered
+Private Sub groupWinForms_GroupViewItemsReordered(ByVal sender As Object, ByVal e As System.EventArgs) Handles groupWinForms.GroupViewItemsReordered
 
 Dim listViewItem1 As ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"GroupViewItemsReordered"})
 
@@ -213,7 +213,7 @@ private void groupView1_GroupViewItemSelected(object sender, System.EventArgs e)
 
 {
 
-Trace.WriteLine(String.Concat("Selected Item = ", this.gvcWinForms.GroupViewItems[this.gvcWinForms.SelectedItem].Text)); 
+Trace.WriteLine(String.Concat("Selected Item = ", this.groupWinForms.GroupViewItems[this.groupWinForms.SelectedItem].Text)); 
 
 }
 
@@ -259,21 +259,21 @@ Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu menu = new Syncfusion.Windows.F
 
 menu.ParentBarItem = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
 
-Syncfusion.Windows.Forms.Tools.GroupBar grpbar = sender as GroupBar;              
+Syncfusion.Windows.Forms.Tools.GroupBar grp = sender as GroupBar;              
 
 
 
-BarItem addtab = new BarItem("Add New Tab", new EventHandler(this.OngbVSMenuAddNewTab));
+BarItem tab = new BarItem("Add New Tab", new EventHandler(this.OngbVSMenuAddNewTab));
 
-addtab.Tag = this.grpBar;
+tab.Tag = this.grp;
 
-menu.ParentBarItem.Items.Add(addtab);        
+menu.ParentBarItem.Items.Add(tab);        
 
 
 
 BarItem deletetab = new BarItem("Delete Tab", new EventHandler(this.OngbMenuRemoveGroup));
 
-deletetab.Tag = this.grpBar;
+deletetab.Tag = this.grp;
 
 menu.ParentBarItem.Items.Add(deletetab);
 
@@ -281,11 +281,11 @@ menu.ParentBarItem.Items.Add(deletetab);
 
 // If the mouse click occurred over a GroupBarItem then get that item's client control and update the menu with client specific menu items.
 
-if(this.grpBar.ContextMenuItem != -1)
+if(this.grp.ContextMenuItem != -1)
 
 {
 
-GroupView grpvwctrl = this.grpBar.GroupBarItems[this.grpBar.ContextMenuItem].Client as GroupView;
+GroupView grpvwctrl = this.grp.GroupBarItems[this.grp.ContextMenuItem].Client as GroupView;
 
 
 
@@ -301,7 +301,7 @@ moveupitem.Enabled = false;
 
 // Finally invoke the XPMenus.PopupMenu.Show() method to display the context menu.
 
-menu.Show(this.grpBar, this.grpBar.PointToClient(Cursor.Position));             
+menu.Show(this.grp, this.grp.PointToClient(Cursor.Position));             
 
 }
 
@@ -323,21 +323,21 @@ menu.ParentBarItem = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
 
 
 
-Private grpbar As Syncfusion.Windows.Forms.Tools.GroupBar = CType(IIf(TypeOf sender Is GroupBar, sender, Nothing), GroupBar)
+Private grp As Syncfusion.Windows.Forms.Tools.GroupBar = CType(IIf(TypeOf sender Is GroupBar, sender, Nothing), GroupBar)
 
 
 
-Dim addtab As BarItem = New BarItem("Add New Tab", New EventHandler(Me.OngbVSMenuAddNewTab))
+Dim tab As BarItem = New BarItem("Add New Tab", New EventHandler(Me.OngbVSMenuAddNewTab))
 
-addtab.Tag = Me.grpBar
+tab.Tag = Me.grp
 
-menu.ParentBarItem.Items.Add(addtab)
+menu.ParentBarItem.Items.Add(tab)
 
 
 
 Dim deletetab As BarItem = New BarItem("Delete Tab", New EventHandler(Me.OngbMenuRemoveGroup))
 
-deletetab.Tag = Me.grpBar
+deletetab.Tag = Me.grp
 
 menu.ParentBarItem.Items.Add(deletetab)
 
@@ -345,9 +345,9 @@ menu.ParentBarItem.Items.Add(deletetab)
 
 ' If the mouse click occurred over a GroupBarItem then get that item's client control and update the menu with client specific menu items.
 
-If Me.grpBar.ContextMenuItem &lt;&gt; -1 Then
+If Me.grp.ContextMenuItem &lt;&gt; -1 Then
 
-Dim grpvwctrl As GroupView =  Me.grpBar.GroupBarItems(Me.grpBar.ContextMenuItem).Client as GroupView 
+Dim grpvwctrl As GroupView =  Me.grp.GroupBarItems(Me.grp.ContextMenuItem).Client as GroupView 
 
 Dim moveupitem As BarItem = New BarItem("Move &Up", New EventHandler(Me.OngbVSMenuMoveUpDown))
 
@@ -361,7 +361,7 @@ End If
 
 ' Finally invoke the XPMenus.PopupMenu.Show() method to display the context menu.
 
-menu.Show(Me.grpBar, Me.grpBar.PointToClient(Cursor.Position))
+menu.Show(Me.grp, Me.grp.PointToClient(Cursor.Position))
 
 End Sub
 
@@ -373,7 +373,7 @@ The following code from the GroupView Demo shows a sample handler for the GroupV
 
 // Handler for the GroupView.ShowContextMenu event.
 
-private void gvc_ShowContextMenu(object sender, System.EventArgs e)
+private void group_ShowContextMenu(object sender, System.EventArgs e)
 
 {
 
@@ -383,13 +383,13 @@ menu.ParentBarItem = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
 
 
 
-BarItem additem = new BarItem("Add New Item", new EventHandler(this.gvc_MenuAddNewItem));
+BarItem additem = new BarItem("Add New Item", new EventHandler(this.group_MenuAddNewItem));
 
 menu.ParentBarItem.Items.Add(additem);
 
 
 
-BarItem removeitem = new BarItem("Remove Item", new EventHandler(this.gvc_MenuRemoveItem));
+BarItem removeitem = new BarItem("Remove Item", new EventHandler(this.group_MenuRemoveItem));
 
 menu.ParentBarItem.Items.Add(removeitem);
 
@@ -397,7 +397,7 @@ menu.ParentBarItem.Items.Add(removeitem);
 
 // Enable the RemoveItem menu item only if the mouse click occurred over a GroupView Item.
 
-if(this.gvcWinForms.HighlightedItem == -1)
+if(this.groupWinForms.HighlightedItem == -1)
 
 removeitem.Enabled = false;
 
@@ -405,7 +405,7 @@ removeitem.Enabled = false;
 
 // Show the context menu using the Cursor.Position value for the location.
 
-menu.Show(this.gvcWinForms, this.gvcWinForms.PointToClient(Cursor.Position));
+menu.Show(this.groupWinForms, this.groupWinForms.PointToClient(Cursor.Position));
 
 }   
 
@@ -417,7 +417,7 @@ menu.Show(this.gvcWinForms, this.gvcWinForms.PointToClient(Cursor.Position));
 
 ' Handler for the GroupView.ShowContextMenu event.
 
-Private Sub gvc_ShowContextMenu(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles gvcWinForms.ShowContextMenu
+Private Sub group_ShowContextMenu(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles groupWinForms.ShowContextMenu
 
 
 
@@ -427,13 +427,13 @@ menu.ParentBarItem = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
 
 
 
-Dim additem As BarItem = New BarItem("Add New Item", New EventHandler(Me.gvc_MenuAddNewItem))
+Dim additem As BarItem = New BarItem("Add New Item", New EventHandler(Me.group_MenuAddNewItem))
 
  menu.ParentBarItem.Items.Add(additem)
 
 
 
-Dim removeitem As BarItem = New BarItem("Remove Item", New EventHandler(Me.gvc_MenuRemoveItem))
+Dim removeitem As BarItem = New BarItem("Remove Item", New EventHandler(Me.group_MenuRemoveItem))
 
 menu.ParentBarItem.Items.Add(removeitem)
 
@@ -441,7 +441,7 @@ menu.ParentBarItem.Items.Add(removeitem)
 
 ' Enable the RemoveItem menu item only if the mouse click occurred over a GroupView Item.
 
-If Me.gvcWinForms.HighlightedItem = -1 Then
+If Me.groupWinForms.HighlightedItem = -1 Then
 
 removeitem.Enabled = False
 
@@ -451,7 +451,7 @@ End If
 
 ' Show the context menu using the Cursor.Position value for the location.
 
-menu.Show(Me.gvcWinForms, Me.gvcWinForms.PointToClient(Cursor.Position))
+menu.Show(Me.groupWinForms, Me.gcWinForms.PointToClient(Cursor.Position))
 
 End Sub
 

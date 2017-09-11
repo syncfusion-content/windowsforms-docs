@@ -56,15 +56,15 @@ To create a NavigationView control programmatically, follow the below given step
 
         // Creating instance of Bars 
 
-		Syncfusion.Windows.Forms.Tools.Navigation.Bar Rootbar = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
+		Syncfusion.Windows.Forms.Tools.Navigation.Bar root = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
 
 		Syncfusion.Windows.Forms.Tools.Navigation.Bar ChildBar1 = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
 
 		Syncfusion.Windows.Forms.Tools.Navigation.Bar ChildBar2 = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
 
-		Rootbar.ImageIndex = 0;
+		root.ImageIndex = 0;
 
-		Rootbar.Text = "MyComputer";
+		root.Text = "MyComputer";
 
 		ChildBar1.ImageIndex = 1;
 
@@ -74,21 +74,21 @@ To create a NavigationView control programmatically, follow the below given step
 
 		ChildBar2.Text = "Program Files";
 
-		// Adding child bars into Rootbar
+		// Adding child bars into root
 
 		ChildBar1.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
 
 		ChildBar2});
 
-		Rootbar.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
+		root.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
 
 		ChildBar1});
 
-		// Adding the rootbar into NavigationView
+		// Adding the root into NavigationView
 
 		navigationView4.Bars.AddRange(new Syncfusion.Windows.Forms.Tools.Navigation.Bar[] {
 
-		Rootbar});
+		root});
 
 		navigationView4.ImageList = this.imageList1;
 
@@ -119,15 +119,15 @@ To create a NavigationView control programmatically, follow the below given step
 
 		' Creating instance of Bars 
 
-		Dim Rootbar As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
+		Dim root As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
 
 		Dim ChildBar1 As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
 
 		Dim ChildBar2 As Syncfusion.Windows.Forms.Tools.Navigation.Bar = New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
 
-		Rootbar.ImageIndex = 0
+		root.ImageIndex = 0
 
-		Rootbar.Text = "MyComputer"
+		root.Text = "MyComputer"
 
 		ChildBar1.ImageIndex = 1
 
@@ -137,15 +137,15 @@ To create a NavigationView control programmatically, follow the below given step
 
 		ChildBar2.Text = "Program Files"
 
-		' Adding child bars into Rootbar
+		' Adding child bars into root
 
 		ChildBar1.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { ChildBar2})
 
-		Rootbar.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { ChildBar1})
+		root.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { ChildBar1})
 
-		' Adding the rootbar into NavigationView
+		' Adding the root into NavigationView
 
-		navigationView4.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { Rootbar})
+		navigationView4.Bars.AddRange(New Syncfusion.Windows.Forms.Tools.Navigation.Bar() { root})
 
 		navigationView4.ImageList = Me.imageList1
 

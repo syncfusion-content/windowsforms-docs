@@ -33,7 +33,7 @@ private void Tree2XMLButton_Click(object sender, System.EventArgs e)
 
 {
 
-if ( this.tvaTreeContent.Nodes.Count > 0 )
+if ( this.tvTreeContent.Nodes.Count > 0 )
 
 {
 
@@ -51,21 +51,21 @@ myXMLFileWriter.WriteStartDocument();
 
 //Helper Method
 
-AddNodes ( myXMLFileWriter , this.tvaTreeContent.Nodes );
+AddNodes ( myXMLFileWriter , this.tvTreeContent.Nodes );
 
 myXMLFileWriter.Close();
 
 //Loading the XML Data From file
 
-XmlDocument dom = new XmlDocument();
+XmlDocument doc = new XmlDocument();
 
-dom.Load( "C:\temp.xml" ); //creating local path
+doc.Load( "C:\temp.xml" ); //creating local path
 
 //Copy the Loaded XML data to RichTextBox Control
 
-this.rtbXmlContent.Clear();
+this.rtXmlContent.Clear();
 
-this.rtbXmlContent.Text = dom.OuterXml;
+this.rtXmlContent.Text = doc.OuterXml;
 
 }
 
@@ -97,33 +97,33 @@ private void XML2TreeButton_Click(object sender, System.EventArgs e)
 
 {
 
-this.tvaTreeContent.Nodes.Clear();
+this.tvTreeContent.Nodes.Clear();
 
 try 
 
 {
 
-XmlDocument dom = new XmlDocument();
+XmlDocument doc = new XmlDocument();
 
-dom.InnerXml = this.rtbXmlContent.Text;
+doc.InnerXml = this.rtXmlContent.Text;
 
 // Initialize the TreeViewAdv
 
-this.tvaTreeContent.Nodes.Clear();
+this.tvTreeContent.Nodes.Clear();
 
-this.tvaTreeContent.Nodes.Add(new TreeNodeAdv(dom.DocumentElement.Name));
+this.tvTreeContent.Nodes.Add(new TreeNodeAdv(doc.DocumentElement.Name));
 
 TreeNodeAdv tNodeAdv = new TreeNodeAdv();
 
-tNodeAdv = this.tvaTreeContent.Nodes[0];
+tNodeAdv = this.tvTreeContent.Nodes[0];
 
-//Populate the TreeView with the DOM nodes.
+//Populate the TreeView with the doc nodes.
 
-AddNode(dom.DocumentElement, tNodeAdv);
+AddNode(doc.DocumentElement, tNodeAdv);
 
 //Show Expanded Tree
 
-this.tvaTreeContent.ExpandAll();
+this.tvTreeContent.ExpandAll();
 
 }
 
@@ -149,11 +149,11 @@ MessageBox.Show(ex.Message);
 
 //Event which loads Xml
 
-private void btnLoadfrmXML_Click(object sender, System.EventArgs e)
+private void buttonLoaderXML_Click(object sender, System.EventArgs e)
 
 {
 
-this.ofdOpenXmlFile.ShowDialog();
+this.ofxmlFile.ShowDialog();
 
 }
 
@@ -161,11 +161,11 @@ this.ofdOpenXmlFile.ShowDialog();
 
 //Event which Opens Xml
 
-private void biOpenxml_Click(object sender, System.EventArgs e)
+private void bixml_Click(object sender, System.EventArgs e)
 
 {
 
-btnLoadfrmXML_Click(sender, System.EventArgs.Empty );
+buttonLoaderXML_Click(sender, System.EventArgs.Empty );
 
 }
 
@@ -173,7 +173,7 @@ btnLoadfrmXML_Click(sender, System.EventArgs.Empty );
 
 //Accept the open Xml file
 
-private void OpenXmlFile_FileOK(object sender, System.ComponentModel.CancelEventArgs e)
+private void xmlFile_FileOK(object sender, System.ComponentModel.CancelEventArgs e)
 
 {
 
@@ -181,11 +181,11 @@ private void OpenXmlFile_FileOK(object sender, System.ComponentModel.CancelEvent
 
 {
 
-XmlDocument dom = new XmlDocument();
+XmlDocument doc = new XmlDocument();
 
-dom.Load( this.ofdOpenXmlFile.FileName );
+doc.Load( this.ofxmlFile.FileName );
 
-this.rtbXmlContent.Text = dom.OuterXml;
+this.rtXmlContent.Text = doc.OuterXml;
 
 }
 
@@ -213,11 +213,11 @@ private void SaveXmlFile_FileOK(object sender, System.ComponentModel.CancelEvent
 
 {
 
-XmlDocument dom = new XmlDocument();
+XmlDocument doc = new XmlDocument();
 
-dom.InnerXml = this.rtbXmlContent.Text;
+doc.InnerXml = this.rtXmlContent.Text;
 
-dom.Save( this.sfdSaveXmlFile.FileName);
+doc.Save( this.sfSaveXmlFile.FileName);
 
 }
 
@@ -225,11 +225,11 @@ dom.Save( this.sfdSaveXmlFile.FileName);
 
 //Event which Saves Xml
 
-private void btnSavasXML_Click(object sender, System.EventArgs e)
+private void buttonSavesXML_Click(object sender, System.EventArgs e)
 
 {
 
-this.sfdSaveXmlFile.ShowDialog();
+this.sfSaveXmlFile.ShowDialog();
 
 }
 
@@ -265,7 +265,7 @@ Private Sub Tree2XMLButton_Click(ByVal sender As Object, ByVal e As System.Event
 
 
 
-If Me.tvaTreeContent.Nodes.Count > 0 Then
+If Me.tvTreeContent.Nodes.Count > 0 Then
 
 Try
 
@@ -279,23 +279,23 @@ myXMLFileWriter.WriteStartDocument()
 
 'Helper Method
 
-AddNodes(myXMLFileWriter, Me.tvaTreeContent.Nodes)
+AddNodes(myXMLFileWriter, Me.tvTreeContent.Nodes)
 
 myXMLFileWriter.Close()
 
 'Loading the XML Data From file
 
-Dim dom As XmlDocument = New XmlDocument()
+Dim doc As XmlDocument = New XmlDocument()
 
-dom.Load("C:\temp.xml")
+doc.Load("C:\temp.xml")
 
-'dom.
+'doc.
 
 'Copy the Loaded XML data to RichTextBox Control
 
-Me.rtbXmlContent.Clear()
+Me.rtXmlContent.Clear()
 
-Me.rtbXmlContent.Text = dom.OuterXml
+Me.rtXmlContent.Text = doc.OuterXml
 
 Catch Exp As Exception
 
@@ -317,33 +317,33 @@ End Sub
 
 Private Sub XML2TreeButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biXml2Tree.Click
 
-Me.tvaTreeContent.Nodes.Clear()
+Me.tvTreeContent.Nodes.Clear()
 
 
 
 Try
 
-Dim dom As XmlDocument = New XmlDocument()
+Dim doc As XmlDocument = New XmlDocument()
 
-dom.InnerXml = Me.rtbXmlContent.Text
+doc.InnerXml = Me.rtXmlContent.Text
 
 ' Initialize the TreeViewAdv
 
-Me.tvaTreeContent.Nodes.Clear()
+Me.tvTreeContent.Nodes.Clear()
 
-Me.tvaTreeContent.Nodes.Add(New TreeNodeAdv(dom.DocumentElement.Name))
+Me.tvTreeContent.Nodes.Add(New TreeNodeAdv(doc.DocumentElement.Name))
 
 Dim tNodeAdv As TreeNodeAdv = New TreeNodeAdv()
 
-tNodeAdv = Me.tvaTreeContent.Nodes(0)
+tNodeAdv = Me.tvTreeContent.Nodes(0)
 
-'Populate the TreeView with the DOM nodes.
+'Populate the TreeView with the DOC nodes.
 
-AddNode(dom.DocumentElement, tNodeAdv)
+AddNode(doc.DocumentElement, tNodeAdv)
 
 'Show Expanded Tree
 
-Me.tvaTreeContent.ExpandAll()
+Me.tvTreeContent.ExpandAll()
 
 Catch xmlEx As XmlException
 
@@ -361,9 +361,9 @@ End Sub
 
 ' Event which Load Xml
 
-Private Sub btnLoadfrmXML_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biLoadXml.Click
+Private Sub buttonLoaderXML_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biLoadXml.Click
 
-Me.ofdOpenXmlFile.ShowDialog()
+Me.ofxmlFile.ShowDialog()
 
 End Sub
 
@@ -371,9 +371,9 @@ End Sub
 
 ' Event which Opens Xml
 
-Private Sub biOpenxml_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+Private Sub bixml_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
-btnLoadfrmXML_Click(sender, System.EventArgs.Empty)
+buttonLoaderXML_Click(sender, System.EventArgs.Empty)
 
 End Sub
 
@@ -381,15 +381,15 @@ End Sub
 
 ' Accept the Xml by handling this event
 
-Private Sub OpenXmlFile_FileOK(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles ofdOpenXmlFile.FileOk
+Private Sub xmlFile_FileOK(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles ofpenXmlFile.FileOk
 
 Try
 
-Dim dom As XmlDocument = New XmlDocument()
+Dim doc As XmlDocument = New XmlDocument()
 
-dom.Load(Me.ofdOpenXmlFile.FileName)
+doc.Load(Me.ofxmlFile.FileName)
 
-Me.rtbXmlContent.Text = dom.OuterXml
+Me.rtXmlContent.Text = doc.OuterXml
 
 Catch xmlEx As XmlException
 
@@ -407,13 +407,13 @@ End Sub
 
 ' Accept to save the file
 
-Private Sub SaveXmlFile_FileOK(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles sfdSaveXmlFile.FileOk
+Private Sub SaveXmlFile_FileOK(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles sfSaveXmlFile.FileOk
 
-Dim dom As XmlDocument = New XmlDocument()
+Dim doc As XmlDocument = New XmlDocument()
 
-dom.InnerXml = Me.rtbXmlContent.Text
+doc.InnerXml = Me.rtXmlContent.Text
 
-dom.Save(Me.sfdSaveXmlFile.FileName)
+doc.Save(Me.sfSaveXmlFile.FileName)
 
 End Sub
 
@@ -421,9 +421,9 @@ End Sub
 
 ' Event which Saves Xml
 
-Private Sub btnSavasXML_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biSaveXml.Click
+Private Sub buttonSavesXML_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles biSaveXml.Click
 
-Me.sfdSaveXmlFile.ShowDialog()
+Me.sfSaveXmlFile.ShowDialog()
 
 End Sub
 

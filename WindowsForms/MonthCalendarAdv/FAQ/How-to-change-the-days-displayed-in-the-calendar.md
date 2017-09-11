@@ -20,11 +20,11 @@ private void Form1_Load(object sender, EventArgs e)
 
 {
 
-    foreach (Control ctl in this.monthCalendarAdv1.Controls)
+    foreach (Control ctrl in this.monthCalendarAdv1.Controls)
 
     {
 
-        grid = ctl as GridControl;
+        grid = ctrl as GridControl;
 
         if (grid != null)
 
@@ -67,9 +67,9 @@ void grid_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs 
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
-    For Each ctl As Control In Me.monthCalendarAdv1.Controls
+    For Each ctrl As Control In Me.monthCalendarAdv1.Controls
 
-        grid = CType(IIf(TypeOf ctl Is GridControl, ctl, Nothing), GridControl)
+        grid = CType(IIf(TypeOf ctrl Is GridControl, ctrl, Nothing), GridControl)
 
         If Not grid Is Nothing Then
 
@@ -79,7 +79,7 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
         End If
 
-    Next ctl
+    Next ctrl
 
 End Sub
 

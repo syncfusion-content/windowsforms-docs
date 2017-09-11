@@ -1157,7 +1157,7 @@ public class CustomRenderer : IRadialGaugeRenderer
         /// <summary>
         /// Used to calculate the text bounds 
         /// </summary>
-        /// <param name="e">Paintevent arguement</param>
+        /// <param name="e">Paint event arguement</param>
         /// <param name="m_font">Font used in Radial gauge</param>
         public void FindFontBounds(Graphics g, Font m_font)
         {
@@ -1216,7 +1216,7 @@ public class CustomRenderer : IRadialGaugeRenderer
         /// <summary>
         /// Method used to draw outer arc.
         /// </summary>
-        /// <param name="e">Paintevent arguement</param>
+        /// <param name="e">Paint event arguement</param>
         /// <param name="m_GaugeArcStart">Arc start position</param>
         /// <param name="m_GaugeArcEnd">Arc end position</param>
         /// <param name="m_Center">Center point for gauge</param>
@@ -1224,7 +1224,7 @@ public class CustomRenderer : IRadialGaugeRenderer
         {
             e.SmoothingMode = SmoothingMode.AntiAlias;
             e.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            GraphicsPath pth = new GraphicsPath();
+            GraphicsPath path = new GraphicsPath();
             Color c = this.RadialGauge.Parent != null ? this.RadialGauge.Parent.BackColor : Color.Empty;
             Rectangle r = new Rectangle(0, 0, this.RadialGauge.Width, this.RadialGauge.Height);
             System.Drawing.Drawing2D.GraphicsPath basePath = new System.Drawing.Drawing2D.GraphicsPath();
@@ -1235,29 +1235,29 @@ public class CustomRenderer : IRadialGaugeRenderer
             //Define rectangles inside which we will draw circles.
 
             Rectangle rect = new Rectangle(0 + 10, 0 + 10, (int)x - 20, (int)y - 20);
-            Rectangle rectrim = new Rectangle(0 + 23, 0 + 23, (int)x - 46, (int)y - 46);
+            Rectangle rector = new Rectangle(0 + 23, 0 + 23, (int)x - 46, (int)y - 46);
             Rectangle rectinner = new Rectangle(0 + 40, 0 + 40, (int)x - 80, (int)y - 80);
 
             //OUTER
             LinearGradientBrush gb = new LinearGradientBrush(rect, RadialGauge.OuterFrameGradientStartColor, RadialGauge.OuterFrameGradientEndColor, LinearGradientMode.Vertical);
 
-            pth.AddEllipse(rect);
+            path.AddEllipse(rect);
             if (RadialGauge.TransparentBackGround)
-                this.RadialGauge.Region = new Region(pth);
-            PathGradientBrush pgb = new PathGradientBrush(pth);
+                this.RadialGauge.Region = new Region(path);
+            PathGradientBrush pg = new PathGradientBrush(path);
 
-            pgb.CenterColor = RadialGauge.BackgroundGradientStartColor;
+            pg.CenterColor = RadialGauge.BackgroundGradientStartColor;
 
-            pgb.SurroundColors = new Color[] { RadialGauge.BackgroundGradientEndColor };
+            pg.SurroundColors = new Color[] { RadialGauge.BackgroundGradientEndColor };
 
-            pgb.FocusScales = new PointF(0.1f, 0.1f);
+            pg.FocusScales = new PointF(0.1f, 0.1f);
 
             Blend bevelBlend = new Blend();
             bevelBlend.Positions = new float[] { 0.0f, .2f, .4f, .6f, .8f, 1.0f };
             bevelBlend.Factors = new float[] { .2f, .4f, .6f, .6f, 1f, 1f };
-            Rectangle lgbRect = rect;
-            lgbRect.Inflate(1, 1);
-            LinearGradientBrush innerBevelBrush = new LinearGradientBrush(lgbRect,
+            Rectangle lgRect = rect;
+            lgRect.Inflate(1, 1);
+            LinearGradientBrush innerBevelBrush = new LinearGradientBrush(lgRect,
                                                 RadialGauge.InnerFrameGradientStartColor,
                                                 RadialGauge.InnerFrameGradientEndColor,
                                                 LinearGradientMode.Vertical);
@@ -1266,10 +1266,10 @@ public class CustomRenderer : IRadialGaugeRenderer
             if (this.RadialGauge.ShowBackgroundFrame)
             {
                 e.FillEllipse(gb, rect);
-                e.FillEllipse(innerBevelBrush, rectrim);
-                rectrim.Inflate(-3, -3);
+                e.FillEllipse(innerBevelBrush, rector);
+                rector.Inflate(-3, -3);
 
-                e.FillEllipse(pgb, rectrim);
+                e.FillEllipse(pg, rector);
             }
 
             GraphicsPath gp = new GraphicsPath();
@@ -1349,7 +1349,7 @@ public class CustomRenderer : IRadialGaugeRenderer
         /// </summary>
         /// <param name="gr">Graphics</param>
         /// <param name="gp">Graphics path</param>
-        /// <param name="m_GaugeArcStart">Start poistion of the arc</param>
+        /// <param name="m_GaugeArcStart">Start position of the arc</param>
         /// <param name="m_GaugeArcEnd">End position of the arc</param>
         /// <param name="m_GaugeArcRadius">Radius of the arc</param>
         /// <param name="m_Center">Center of the gauge</param>
@@ -1366,7 +1366,7 @@ public class CustomRenderer : IRadialGaugeRenderer
                     rangeSweepAngle = (ptrRange.EndValue - ptrRange.StartValue) * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue);
 
 
-                    Int32 linevalue = m_GaugeArcRadius + RadialGauge.MajorTickMarkHeight;
+                    Int32 line = m_GaugeArcRadius + RadialGauge.MajorTickMarkHeight;
                     gr.SmoothingMode = SmoothingMode.AntiAlias;
                     gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
                     int m_GaugeArcRadius1 = m_GaugeArcRadius + RadialGauge.MajorTickMarkHeight;
@@ -1381,7 +1381,7 @@ public class CustomRenderer : IRadialGaugeRenderer
         /// <param name="graphics">Graphics</param>
         /// <param name="gp">Graphics Path</param>
         /// <param name="m_GaugeArcRadius">Radius of the arc</param>
-        /// <param name="m_GaugeArcStart">Start poistion of the arc</param>
+        /// <param name="m_GaugeArcStart">Start position of the arc</param>
         /// <param name="m_GaugeArcEnd">End position of the arc</param>
         /// <param name="m_MajorTickMarkWidth">Tick mark width</param>
         /// <param name="m_Center">Center of the gauge</param>
@@ -1399,27 +1399,27 @@ public class CustomRenderer : IRadialGaugeRenderer
                 graphics.ResetTransform();
                 boundingBox = graphics.MeasureString(valueText, RadialGauge.Font, -1, StringFormat.GenericTypographic);
 
-                Int32 linevalue = TempGaugeArcRadius - RadialGauge.MajorTickMarkHeight;
-                Int32 lineminervalue = TempGaugeArcRadius - RadialGauge.MinorTickMarkHeight;
-                Int32 lineminerintervalue = TempGaugeArcRadius - RadialGauge.MinorInnerLinesHeight;
+                Int32 line = TempGaugeArcRadius - RadialGauge.MajorTickMarkHeight;
+                Int32 lineMinerValue = TempGaugeArcRadius - RadialGauge.MinorTickMarkHeight;
+                Int32 lineMinerInterValue = TempGaugeArcRadius - RadialGauge.MinorInnerLinesHeight;
                 gp.Reset();
                 gp.AddEllipse(new Rectangle(m_Center.X - TempGaugeArcRadius, m_Center.Y - TempGaugeArcRadius, 2 * TempGaugeArcRadius, 2 * TempGaugeArcRadius));
                 gp.Reverse();
-                gp.AddEllipse(new Rectangle(m_Center.X - linevalue, m_Center.Y - linevalue, 2 * linevalue, 2 * linevalue));
+                gp.AddEllipse(new Rectangle(m_Center.X - line, m_Center.Y - line, 2 * line, 2 * line));
                 gp.Reverse();
                 graphics.SetClip(gp);
 
                 graphics.DrawLine(new Pen(this.RadialGauge.MajorTickMarkColor, m_MajorTickMarkWidth),
                                (Single)(m_Center.X),
                                (Single)(m_Center.Y),
-                               (Single)(m_Center.X + 2 * lineminervalue * Math.Cos((m_GaugeArcStart + countValue * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)) * Math.PI / 180.0)),
-                               (Single)(m_Center.Y + 2 * lineminervalue * Math.Sin((m_GaugeArcStart + countValue * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)) * Math.PI / 180.0)));
+                               (Single)(m_Center.X + 2 * lineMinerValue * Math.Cos((m_GaugeArcStart + countValue * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)) * Math.PI / 180.0)),
+                               (Single)(m_Center.Y + 2 * lineMinerValue * Math.Sin((m_GaugeArcStart + countValue * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)) * Math.PI / 180.0)));
 
                 gp.Reset();
                 
                     gp.AddEllipse(new Rectangle(m_Center.X - TempGaugeArcRadius, m_Center.Y - TempGaugeArcRadius, 2 * TempGaugeArcRadius, 2 * TempGaugeArcRadius));
                     gp.Reverse();
-                    gp.AddEllipse(new Rectangle(m_Center.X - lineminervalue, m_Center.Y - lineminervalue, 2 * lineminervalue, 2 * lineminervalue));
+                    gp.AddEllipse(new Rectangle(m_Center.X - lineMinerValue, m_Center.Y - lineMinerValue, 2 * lineMinerValue, 2 * lineMinerValue));
                
                 gp.Reverse();
                 graphics.SetClip(gp);
@@ -1507,7 +1507,7 @@ Public Class CustomRenderer
 		''' <summary>
 		''' Used to calculate the text bounds 
 		''' </summary>
-		''' <param name="e">Paintevent arguement</param>
+		''' <param name="e">Paint event arguement</param>
 		''' <param name="m_font">Font used in Radial gauge</param>
 		Public Sub FindFontBounds(ByVal g As Graphics, ByVal m_font As Font)
 			'find upper and lower bounds for numeric characters
@@ -1559,14 +1559,14 @@ Public Class CustomRenderer
 		''' <summary>
 		''' Method used to draw outer arc.
 		''' </summary>
-		''' <param name="e">Paintevent arguement</param>
+		''' <param name="e">Paint event arguement</param>
 		''' <param name="m_GaugeArcStart">Arc start position</param>
 		''' <param name="m_GaugeArcEnd">Arc end position</param>
 		''' <param name="m_Center">Center point for gauge</param>
 		Public Sub DrawOuterArc(ByVal e As Graphics, ByVal m_GaugeArcStart As Int32, ByVal m_GaugeArcEnd As Int32, ByVal m_Center As Point, ByVal m_GaugeArcRadius As Int32, ByVal GaugeRadius As Integer)
 			e.SmoothingMode = SmoothingMode.AntiAlias
 			e.PixelOffsetMode = PixelOffsetMode.HighQuality
-			Dim pth As New GraphicsPath()
+			Dim path As New GraphicsPath()
 			Dim c As Color = If(Me.RadialGauge.Parent IsNot Nothing, Me.RadialGauge.Parent.BackColor, Color.Empty)
 			Dim r As New Rectangle(0, 0, Me.RadialGauge.Width, Me.RadialGauge.Height)
 			Dim basePath As New System.Drawing.Drawing2D.GraphicsPath()
@@ -1577,38 +1577,38 @@ Public Class CustomRenderer
 			'Define rectangles inside which we will draw circles.
 
 			Dim rect As New Rectangle(0 + 10, 0 + 10, CInt(Fix(x)) - 20, CInt(Fix(y)) - 20)
-			Dim rectrim As New Rectangle(0 + 23, 0 + 23, CInt(Fix(x)) - 46, CInt(Fix(y)) - 46)
+			Dim rector As New Rectangle(0 + 23, 0 + 23, CInt(Fix(x)) - 46, CInt(Fix(y)) - 46)
 			Dim rectinner As New Rectangle(0 + 40, 0 + 40, CInt(Fix(x)) - 80, CInt(Fix(y)) - 80)
 
 			'OUTER
 			Dim gb As New LinearGradientBrush(rect, RadialGauge.OuterFrameGradientStartColor, RadialGauge.OuterFrameGradientEndColor, LinearGradientMode.Vertical)
 
-			pth.AddEllipse(rect)
+			path.AddEllipse(rect)
 			If RadialGauge.TransparentBackGround Then
-				Me.RadialGauge.Region = New Region(pth)
+				Me.RadialGauge.Region = New Region(path)
 			End If
-			Dim pgb As New PathGradientBrush(pth)
+			Dim pg As New PathGradientBrush(path)
 
-			pgb.CenterColor = RadialGauge.BackgroundGradientStartColor
+			pg.CenterColor = RadialGauge.BackgroundGradientStartColor
 
-			pgb.SurroundColors = New Color() { RadialGauge.BackgroundGradientEndColor }
+			pg.SurroundColors = New Color() { RadialGauge.BackgroundGradientEndColor }
 
-			pgb.FocusScales = New PointF(0.1f, 0.1f)
+			pg.FocusScales = New PointF(0.1f, 0.1f)
 
 			Dim bevelBlend As New Blend()
 			bevelBlend.Positions = New Single() { 0.0f,.2f,.4f,.6f,.8f, 1.0f }
 			bevelBlend.Factors = New Single() {.2f,.4f,.6f,.6f, 1f, 1f }
-			Dim lgbRect As Rectangle = rect
-			lgbRect.Inflate(1, 1)
+			Dim lgRect As Rectangle = rect
+			lgRect.Inflate(1, 1)
 			Dim innerBevelBrush As New LinearGradientBrush(lgbRect, RadialGauge.InnerFrameGradientStartColor, RadialGauge.InnerFrameGradientEndColor, LinearGradientMode.Vertical)
 
 			innerBevelBrush.Blend = bevelBlend
 			If Me.RadialGauge.ShowBackgroundFrame Then
 				e.FillEllipse(gb, rect)
-				e.FillEllipse(innerBevelBrush, rectrim)
-				rectrim.Inflate(-3, -3)
+				e.FillEllipse(innerBevelBrush, rector)
+				rector.Inflate(-3, -3)
 
-				e.FillEllipse(pgb, rectrim)
+				e.FillEllipse(pg, rector)
 			End If
 
 			Dim gp As New GraphicsPath()
@@ -1677,7 +1677,7 @@ Public Class CustomRenderer
 		''' </summary>
 		''' <param name="gr">Graphics</param>
 		''' <param name="gp">Graphics path</param>
-		''' <param name="m_GaugeArcStart">Start poistion of the arc</param>
+		''' <param name="m_GaugeArcStart">Start position of the arc</param>
 		''' <param name="m_GaugeArcEnd">End position of the arc</param>
 		''' <param name="m_GaugeArcRadius">Radius of the arc</param>
 		''' <param name="m_Center">Center of the gauge</param>
@@ -1706,7 +1706,7 @@ Public Class CustomRenderer
 		''' <param name="graphics">Graphics</param>
 		''' <param name="gp">Graphics Path</param>
 		''' <param name="m_GaugeArcRadius">Radius of the arc</param>
-		''' <param name="m_GaugeArcStart">Start poistion of the arc</param>
+		''' <param name="m_GaugeArcStart">Start position of the arc</param>
 		''' <param name="m_GaugeArcEnd">End position of the arc</param>
 		''' <param name="m_MajorTickMarkWidth">Tick mark width</param>
 		''' <param name="m_Center">Center of the gauge</param>
@@ -1722,23 +1722,23 @@ Public Class CustomRenderer
 				graphics.ResetTransform()
 				boundingBox = graphics.MeasureString(valueText, RadialGauge.Font, -1, StringFormat.GenericTypographic)
 
-				Dim linevalue As Int32 = TempGaugeArcRadius - RadialGauge.MajorTickMarkHeight
-				Dim lineminervalue As Int32 = TempGaugeArcRadius - RadialGauge.MinorTickMarkHeight
-				Dim lineminerintervalue As Int32 = TempGaugeArcRadius - RadialGauge.MinorInnerLinesHeight
+				Dim line As Int32 = TempGaugeArcRadius - RadialGauge.MajorTickMarkHeight
+				Dim lineMinerValue As Int32 = TempGaugeArcRadius - RadialGauge.MinorTickMarkHeight
+				Dim lineMinerInterValue As Int32 = TempGaugeArcRadius - RadialGauge.MinorInnerLinesHeight
 				gp.Reset()
 				gp.AddEllipse(New Rectangle(m_Center.X - TempGaugeArcRadius, m_Center.Y - TempGaugeArcRadius, 2 * TempGaugeArcRadius, 2 * TempGaugeArcRadius))
 				gp.Reverse()
-				gp.AddEllipse(New Rectangle(m_Center.X - linevalue, m_Center.Y - linevalue, 2 * linevalue, 2 * linevalue))
+				gp.AddEllipse(New Rectangle(m_Center.X - line, m_Center.Y - line, 2 * line, 2 * line))
 				gp.Reverse()
 				graphics.SetClip(gp)
 
-				graphics.DrawLine(New Pen(Me.RadialGauge.MajorTickMarkColor, m_MajorTickMarkWidth), CType(m_Center.X, Single), CType(m_Center.Y, Single), CType(m_Center.X + 2 * lineminervalue * Math.Cos((m_GaugeArcStart + countValue * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)) * Math.PI / 180.0), Single), CType(m_Center.Y + 2 * lineminervalue * Math.Sin((m_GaugeArcStart + countValue * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)) * Math.PI / 180.0), Single))
+				graphics.DrawLine(New Pen(Me.RadialGauge.MajorTickMarkColor, m_MajorTickMarkWidth), CType(m_Center.X, Single), CType(m_Center.Y, Single), CType(m_Center.X + 2 * lineMinerValue * Math.Cos((m_GaugeArcStart + countValue * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)) * Math.PI / 180.0), Single), CType(m_Center.Y + 2 * lineMinerValue * Math.Sin((m_GaugeArcStart + countValue * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)) * Math.PI / 180.0), Single))
 
 				gp.Reset()
 
 					gp.AddEllipse(New Rectangle(m_Center.X - TempGaugeArcRadius, m_Center.Y - TempGaugeArcRadius, 2 * TempGaugeArcRadius, 2 * TempGaugeArcRadius))
 					gp.Reverse()
-					gp.AddEllipse(New Rectangle(m_Center.X - lineminervalue, m_Center.Y - lineminervalue, 2 * lineminervalue, 2 * lineminervalue))
+					gp.AddEllipse(New Rectangle(m_Center.X - lineMinerValue, m_Center.Y - lineMinerValue, 2 * lineMinerValue, 2 * lineMinerValue))
 
 				gp.Reverse()
 				graphics.SetClip(gp)
