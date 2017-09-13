@@ -15,15 +15,15 @@ The following code shows how to format summary rows.
 
 
 
-//sd is GridSummaryColumnDescriptor. 
+//summaryColumnDescriptor is GridSummaryColumnDescriptor. 
 
 //Changes the backcolor of the SummaryFieldCell.
 
-sd.Appearance.SummaryFieldCell.BackColor = Color.LightBlue;
+summaryColumnDescriptor.Appearance.SummaryFieldCell.BackColor = Color.LightBlue;
 
 //Changes the type of SummaryFieldCell.
 
-sd.Appearance.SummaryFieldCell.CellType = "ComboBox";
+summaryColumnDescriptor.Appearance.SummaryFieldCell.CellType = "ComboBox";
 
 {% endhighlight  %}
 
@@ -31,15 +31,15 @@ sd.Appearance.SummaryFieldCell.CellType = "ComboBox";
 
 
 
-'sd is GridSummaryColumnDescriptor. 
+'summaryColumnDescriptor is GridSummaryColumnDescriptor. 
 
 'Changes the backcolor of the SummaryFieldCell.
 
-sd.Appearance.SummaryFieldCell.BackColor = Color.LightBlue
+summaryColumnDescriptor.Appearance.SummaryFieldCell.BackColor = Color.LightBlue
 
 'Changes the type of SummaryFieldCell.
 
-sd.Appearance.SummaryFieldCell.CellType = "ComboBox"
+summaryColumnDescriptor.Appearance.SummaryFieldCell.CellType = "ComboBox"
 
 {% endhighlight  %}
 

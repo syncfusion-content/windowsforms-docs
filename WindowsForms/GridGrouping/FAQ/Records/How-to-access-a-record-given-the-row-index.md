@@ -19,7 +19,7 @@ This can be done using the following code snippet.
 
 //Uses the DisplayElements property of the grid to find the corresponding record.
 
-Record r = gridGroupingControl1.Table.DisplayElements[rowindex].ParentRecord;
+Record r = gridGroupingControl1.Table.DisplayElements[rowIndex].ParentRecord;
 
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ Record r = gridGroupingControl1.Table.DisplayElements[rowindex].ParentRecord;
 
 'Uses the DisplayElements property of the grid to find the corresponding record.
 
-Dim r As Record = gridGroupingControl1.Table.DisplayElements(rowindex).ParentRecord
+Dim r As Record = gridGroupingControl1.Table.DisplayElements(rowIndex).ParentRecord
 
 
 {% endhighlight %}

@@ -40,21 +40,21 @@ Element el = this.gridGroupingControl1.TableControl.Table.CurrentElement;
 
         {
 
-            GridNestedTable gnat = el as GridNestedTable;
+            GridNestedTable gridNestedTable = el as GridNestedTable;
 
-            GridNestedTable gnat1 = gnat;
+            GridNestedTable gridNestedTable1 = gridNestedTable;
 
-            while(gnat1 != null && gnat1.ChildTable != null)
+            while(gridNestedTable1 != null && gridNestedTable1.ChildTable != null)
 
             {
 
-                 gnat = gnat1;
+                 gridNestedTable = gridNestedTable1;
 
 
 
 //Gets the handle for parent table.
 
-                 gnat1 = gnat.ChildTable.ParentTable.CurrentElement as GridNestedTable;
+                 gridNestedTable1 = gridNestedTable.ChildTable.ParentTable.CurrentElement as GridNestedTable;
 
             }
 
@@ -62,7 +62,7 @@ Element el = this.gridGroupingControl1.TableControl.Table.CurrentElement;
 
 //Retrieves the corresponding parent table's record.
 
-            DataRowView drv = gnat.ParentRecord.GetData() as DataRowView;
+            DataRowView drv = gridNestedTable.ParentRecord.GetData() as DataRowView;
 
 
 
@@ -99,37 +99,37 @@ Dim el As Element = Me.GridGroupingControl1.TableControl.Table.CurrentElement
 
             If TypeOf el Is GridNestedTable Then
 
-                Dim gnat As GridNestedTable = el
+                Dim gridNestedTable As GridNestedTable = el
 
-                Dim gnat1 As GridNestedTable
+                Dim gridNestedTable1 As GridNestedTable
 
-                If TypeOf gnat Is GridNestedTable Then
+                If TypeOf gridNestedTable Is GridNestedTable Then
 
-                    gnat1 = gnat
+                    gridNestedTable1 = gridNestedTable
 
                 Else
 
-                    gnat1 = Nothing
+                    gridNestedTable1 = Nothing
 
                 End If
 
 
 
-                While Not (gnat1 Is Nothing) AndAlso Not (gnat1.ChildTable Is Nothing)
+                While Not (gridNestedTable1 Is Nothing) AndAlso Not (gridNestedTable1.ChildTable Is Nothing)
 
-                    gnat = gnat1
+                    gridNestedTable = gridNestedTable1
 
-                    If TypeOf gnat.ChildTable.ParentTable.CurrentElement Is GridNestedTable Then
+                    If TypeOf gridNestedTable.ChildTable.ParentTable.CurrentElement Is GridNestedTable Then
 
 
 
 'Gets the handle for parent table.
 
-                        gnat1 = gnat.ChildTable.ParentTable.CurrentElement
+                        gridNestedTable1 = gridNestedTable.ChildTable.ParentTable.CurrentElement
 
                     Else
 
-                        gnat1 = Nothing
+                        gridNestedTable1 = Nothing
 
                     End If
 
@@ -139,7 +139,7 @@ Dim el As Element = Me.GridGroupingControl1.TableControl.Table.CurrentElement
 
 'Retrieves the corresponding parent table's record.
 
-                Dim drv As DataRowView = gnat.ParentRecord.GetData()
+                Dim drv As DataRowView = gridNestedTable.ParentRecord.GetData()
 
 
 

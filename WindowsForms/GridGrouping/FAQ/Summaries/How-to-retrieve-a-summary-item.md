@@ -15,9 +15,9 @@ The following code shows how to retrieve a summary item.
 
 
 
-//sd is GridSummaryColumnDescriptor. 
+//summaryColumnDescriptor is GridSummaryColumnDescriptor. 
 
-string item=GridEngine.GetSummaryText(this.gridGroupingControl1.Table.TopLevelGroup,sd)
+string item=GridEngine.GetSummaryText(this.gridGroupingControl1.Table.TopLevelGroup,summaryColumnDescriptor)
 
 {% endhighlight  %}
 
@@ -25,9 +25,9 @@ string item=GridEngine.GetSummaryText(this.gridGroupingControl1.Table.TopLevelGr
 
 
 
-'sd is GridSummaryColumnDescriptor. 
+'summaryColumnDescriptor is GridSummaryColumnDescriptor. 
 
-Dim item As String = GridEngine.GetSummaryText(Me.gridGroupingControl1.Table.TopLevelGroup, sd)
+Dim item As String = GridEngine.GetSummaryText(Me.gridGroupingControl1.Table.TopLevelGroup, summaryColumnDescriptor)
 
 
 {% endhighlight  %}

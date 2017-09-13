@@ -1,4 +1,4 @@
----
+    ---
 layout: post
 title: How to resize columns to fit in a page while exporting to PDF | Windows Forms | Syncfusion
 description: how to resize columns to fit in a page while exporting to pdf
@@ -32,7 +32,7 @@ To resize columns to fit in a page, you can use property ExportRange of GridPDFC
 
 //Resize the column to fit in PDF.
 
-       float temperance = currentPercent;
+       float tempPercent = currentPercent;
 
        this.gridGroupingControl1.BeginUpdate();
 
@@ -83,7 +83,7 @@ Dim pdfConvertor As New GridPDFConverter()
 
 'Resize the column to fit in PDF.
 
-       Dim temperance As Single = currentPercent
+       Dim tempPercent As Single = currentPercent
 
        Me.gridGroupingControl1.BeginUpdate()
 
