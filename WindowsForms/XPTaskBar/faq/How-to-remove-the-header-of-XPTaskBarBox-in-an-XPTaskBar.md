@@ -12,11 +12,11 @@ For this, you need to derive XPTaskBarBox class, and override DetermineHeaderHei
 
 {% highlight C# %} 
 
-public class CustomTaskBarbox : XPTaskBarBox
+public class CustomTaskBar: XPTaskBarBox
 
 {
 
-    public CustomTaskBarbox()
+    public CustomTaskBar()
 
         : base()
 
@@ -46,7 +46,7 @@ public class CustomTaskBarbox : XPTaskBarBox
 
  {% highlight vbnet %} 
 
-Public Class CustomTaskBarbox : Inherits XPTaskBarBox
+Public Class CustomTaskBar : Inherits XPTaskBarBox
 
     Public Sub New()
 

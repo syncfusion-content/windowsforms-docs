@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-access-a-particular-DisplayElement-if-RowIn | Windows Forms | Syncfusion
-description: how to access a particular displayelement if rowindex is provided
+description: how to access a particular displayelement if row index is provided
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# How to access a particular DisplayElement if RowIndex is provided
+# How to access a particular DisplayElement if Row Index is provided
 
 You can access DisplayElements with row index by using the following code.
 
@@ -17,7 +17,7 @@ You can access DisplayElements with row index by using the following code.
 
 // Accesses a particular display element.
 
-Element el=this.gridGroupingControl1.Table.DisplayElements[rowindex].ParentElement;
+Element el=this.gridGroupingControl1.Table.DisplayElements[rowing].ParentElement;
 {% endhighlight %}
 
 
@@ -27,7 +27,7 @@ Element el=this.gridGroupingControl1.Table.DisplayElements[rowindex].ParentEleme
 
 ' Accesses a particular display element.
 
-Dim el As Element = Me.gridGroupingControl1.Table.DisplayElements(rowindex).ParentElement
+Dim el As Element = Me.gridGroupingControl1.Table.DisplayElements(rowing).ParentElement
 
 
 {% endhighlight %}

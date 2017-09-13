@@ -114,7 +114,7 @@ public class GridTableFilterBarCellModel1: GridTableFilterBarCellModel
 
     {
 
-            return new Cellrenderer(control, this); 
+            return new Cellared(control, this); 
 
     }
 
@@ -122,11 +122,11 @@ public class GridTableFilterBarCellModel1: GridTableFilterBarCellModel
 
 }
 
-public class Cellrenderer : GridTableFilterBarCellRenderer
+public class Cellared : GridTableFilterBarCellRenderer
 
 {
 
-      public Cellrenderer(GridControlBase grid, GridCellModelBase cellModel): base(grid , cellModel)
+      public Cellared(GridControlBase grid, GridCellModelBase cellModel): base(grid , cellModel)
 
      {
 
@@ -148,7 +148,7 @@ public class Cellrenderer : GridTableFilterBarCellRenderer
 
 
 
-//Overridse ListBoxMouseUP method to call Customized Select method instead of the usual 'Select' method.
+//Overrides ListBoxMouseUP method to call Customized Select method instead of the usual 'Select' method.
 
           protected override void ListBoxMouseUp(object sender, MouseEventArgs e)
 
@@ -263,7 +263,7 @@ Public Class GridTableFilterBarCellModel1: Inherits GridTableFilterBarCellModel
        Public Overrides Function CreateRenderer(ByVal control As GridControlBase) As GridCellRendererBase 
 
 
-              Return New Cellrenderer(control, Me) 
+              Return New Cellared(control, Me) 
 
        End Function 
 
@@ -271,7 +271,7 @@ End Class
 
 } 
 
-Public Class Cellrenderer : Inherits GridTableFilterBarCellRenderer 
+Public Class CCellared : Inherits GridTableFilterBarCellRenderer 
 
 
            Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridCellModelBase) 

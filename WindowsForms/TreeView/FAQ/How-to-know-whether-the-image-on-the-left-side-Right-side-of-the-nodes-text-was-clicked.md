@@ -27,15 +27,15 @@ private void treeViewAdv1_MouseUp(object sender, System.Windows.Forms.MouseEvent
 
     TreeNodeAdv node = this.treeViewAdv1.SelectedNode;
 
-    Point imgpt = new Point(node.TextAndImageBounds.X, node.TextAndImageBounds.Y);
+    Point image = new Point(node.TextAndImageBounds.X, node.TextAndImageBounds.Y);
 
     Size imgSize = new Size(this.imageList1.ImageSize.Width, this.imageList1.ImageSize.Height);
 
-    Rectangle imgrec = new Rectangle(imgpt, imgSize);
+    Rectangle rect = new Rectangle(image, imgSize);
 
-    Point clickpt = new Point(e.X, e.Y);
+    Point click = new Point(e.X, e.Y);
 
-    if (imgrec.Contains(clickpt) == true)
+    if (rect.Contains(click) == true)
 
     {
 
@@ -59,15 +59,15 @@ private void treeViewAdv1_MouseUp(object sender, System.Windows.Forms.MouseEvent
 
     TreeNodeAdv node = this.treeViewAdv1.SelectedNode;
 
-    Point imgpt = new Point(node.RightImagesX, node.TextBounds.Y);
+    Point image = new Point(node.RightImagesX, node.TextBounds.Y);
 
     Size imgSize = new Size(this.imageList1.ImageSize.Width, this.imageList1.ImageSize.Height);
 
-    Rectangle imgrec = new Rectangle(imgpt, imgSize);
+    Rectangle rect = new Rectangle(image imgSize);
 
-    Point clickpt = new Point(e.X, e.Y);
+    Point click = new Point(e.X, e.Y);
 
-    if (imgrec.Contains(clickpt) == true)
+    if (rect.Contains(click) == true)
 
     {
 
@@ -95,15 +95,15 @@ Private Sub treeViewAdv1_MouseUp(ByVal sender As Object, ByVal e As System.Windo
 
     Dim node As TreeNodeAdv = Me.treeViewAdv1.SelectedNode
 
-    Dim imgpt As Point = New Point(node.TextAndImageBounds.X, node.TextAndImageBounds.Y)
+    Dim image As Point = New Point(node.TextAndImageBounds.X, node.TextAndImageBounds.Y)
 
     Dim imgSize As Size = New Size(Me.imageList1.ImageSize.Width, Me.imageList1.ImageSize.Height)
 
-    Dim imgrec As Rectangle = New Rectangle(imgpt, imgSize)
+    Dim imgrec As Rectangle = New Rectangle(image, imgSize)
 
-    Dim clickpt As Point = New Point(e.X, e.Y)
+    Dim click As Point = New Point(e.X, e.Y)
 
-    If imgrec.Contains(clickpt) = True Then
+    If imgrec.Contains(click) = True Then
 
         Console.WriteLine("Clicked on " & node.Text & "'s left image")
 
@@ -123,15 +123,15 @@ Private Sub treeViewAdv1_MouseUp(ByVal sender As Object, ByVal e As System.Windo
 
     Dim node As TreeNodeAdv = Me.treeViewAdv1.SelectedNode
 
-    Dim imgpt As Point = New Point(node.RightImagesX, node.TextBounds.Y)
+    Dim image As Point = New Point(node.RightImagesX, node.TextBounds.Y)
 
     Dim imgSize As Size = New Size(Me.imageList1.ImageSize.Width, Me.imageList1.ImageSize.Height)
 
-    Dim imgrec As Rectangle = New Rectangle(imgpt, imgSize)
+    Dim rect As Rectangle = New Rectangle(image, imgSize)
 
-    Dim clickpt As Point = New Point(e.X, e.Y)
+    Dim click As Point = New Point(e.X, e.Y)
 
-    If imgrec.Contains(clickpt) = True Then
+    If rect.Contains(click) = True Then
 
         MessageBox.Show("Clicked on " & node.Text & "'s right image")
 

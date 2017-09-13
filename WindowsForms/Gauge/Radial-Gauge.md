@@ -1236,10 +1236,10 @@ public class CustomRenderer : IRadialGaugeRenderer
 
             Rectangle rect = new Rectangle(0 + 10, 0 + 10, (int)x - 20, (int)y - 20);
             Rectangle rector = new Rectangle(0 + 23, 0 + 23, (int)x - 46, (int)y - 46);
-            Rectangle rectinner = new Rectangle(0 + 40, 0 + 40, (int)x - 80, (int)y - 80);
+            Rectangle inner = new Rectangle(0 + 40, 0 + 40, (int)x - 80, (int)y - 80);
 
             //OUTER
-            LinearGradientBrush gb = new LinearGradientBrush(rect, RadialGauge.OuterFrameGradientStartColor, RadialGauge.OuterFrameGradientEndColor, LinearGradientMode.Vertical);
+            LinearGradientBrush graph = new LinearGradientBrush(rect, RadialGauge.OuterFrameGradientStartColor, RadialGauge.OuterFrameGradientEndColor, LinearGradientMode.Vertical);
 
             path.AddEllipse(rect);
             if (RadialGauge.TransparentBackGround)
@@ -1265,7 +1265,7 @@ public class CustomRenderer : IRadialGaugeRenderer
             innerBevelBrush.Blend = bevelBlend;
             if (this.RadialGauge.ShowBackgroundFrame)
             {
-                e.FillEllipse(gb, rect);
+                e.FillEllipse(graph, rect);
                 e.FillEllipse(innerBevelBrush, rector);
                 rector.Inflate(-3, -3);
 
@@ -1578,10 +1578,10 @@ Public Class CustomRenderer
 
 			Dim rect As New Rectangle(0 + 10, 0 + 10, CInt(Fix(x)) - 20, CInt(Fix(y)) - 20)
 			Dim rector As New Rectangle(0 + 23, 0 + 23, CInt(Fix(x)) - 46, CInt(Fix(y)) - 46)
-			Dim rectinner As New Rectangle(0 + 40, 0 + 40, CInt(Fix(x)) - 80, CInt(Fix(y)) - 80)
+			Dim inner As New Rectangle(0 + 40, 0 + 40, CInt(Fix(x)) - 80, CInt(Fix(y)) - 80)
 
 			'OUTER
-			Dim gb As New LinearGradientBrush(rect, RadialGauge.OuterFrameGradientStartColor, RadialGauge.OuterFrameGradientEndColor, LinearGradientMode.Vertical)
+			Dim grapf As New LinearGradientBrush(rect, RadialGauge.OuterFrameGradientStartColor, RadialGauge.OuterFrameGradientEndColor, LinearGradientMode.Vertical)
 
 			path.AddEllipse(rect)
 			If RadialGauge.TransparentBackGround Then
@@ -1600,11 +1600,11 @@ Public Class CustomRenderer
 			bevelBlend.Factors = New Single() {.2f,.4f,.6f,.6f, 1f, 1f }
 			Dim lgRect As Rectangle = rect
 			lgRect.Inflate(1, 1)
-			Dim innerBevelBrush As New LinearGradientBrush(lgbRect, RadialGauge.InnerFrameGradientStartColor, RadialGauge.InnerFrameGradientEndColor, LinearGradientMode.Vertical)
+			Dim innerBevelBrush As New LinearGradientBrush(lgraphRect, RadialGauge.InnerFrameGradientStartColor, RadialGauge.InnerFrameGradientEndColor, LinearGradientMode.Vertical)
 
 			innerBevelBrush.Blend = bevelBlend
 			If Me.RadialGauge.ShowBackgroundFrame Then
-				e.FillEllipse(gb, rect)
+				e.FillEllipse(graph, rect)
 				e.FillEllipse(innerBevelBrush, rector)
 				rector.Inflate(-3, -3)
 

@@ -17,11 +17,11 @@ The options in the summary columns are illustrated using the code below.
 
 //Disables the change of summary value during the filter criteria.
 
-//sd is GridSummaryColumnDescriptor. 
+//sdc is GridSummaryColumnDescriptor. 
 
 //This ignores filtering of the grid. So, the summary value does not change.
 
-sd.IgnoreRecordFilterCriteria=true;
+sdc.IgnoreRecordFilterCriteria=true;
 
 
 {% endhighlight  %}
@@ -31,11 +31,11 @@ sd.IgnoreRecordFilterCriteria=true;
 
 'Disables the change of summary value during the filter criteria.
 
-'sd is GridSummaryColumnDescriptor. 
+'sdc is GridSummaryColumnDescriptor. 
 
 'This ignores filtering of the grid. So, the summary value does not change.
 
-sd.IgnoreRecordFilterCriteria=True
+sdc.IgnoreRecordFilterCriteria=True
 
 {% endhighlight  %}
 

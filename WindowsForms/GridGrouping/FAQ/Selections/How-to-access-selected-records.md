@@ -15,7 +15,7 @@ The selected records can be accessed using the code snippet below.
 
 
 
-//Accesses Selected records in GridGroupingcontrol.      
+//Accesses Selected records in GridGroupingControl.      
 
 foreach(SelectedRecord rec in this.gridGroupingControl1.Table.SelectedRecords)
 
