@@ -13,7 +13,7 @@ While sorting, the grid rearranges data to match current sort criteria, but it e
 
 {% highlight c# %}
 
-private void PeformSort(GridTableControl tableControl, string name)
+private void PerformSort(GridTableControl tableControl, string name)
 
 {
 
@@ -23,11 +23,11 @@ private void PeformSort(GridTableControl tableControl, string name)
 
 //Code...
 
-if (gsc != null)
+if (gs != null)
 
 {
 
-string caption = gsc.Format.Trim(new char[]{'{','}'});
+string caption = gs.Format.Trim(new char[]{'{','}'});
 
 foreach (SortColumnDescriptor col in tableControl.TableDescriptor.GroupedColumns)
 
@@ -35,7 +35,7 @@ foreach (SortColumnDescriptor col in tableControl.TableDescriptor.GroupedColumns
 
    if (!flag)
 
-   group.Add(col.Name, col.Clone());                                   col.SetGroupSummarySortOrder(gsc.GetSummaryDescriptorName(),caption, _summSort);    
+   group.Add(col.Name, col.Clone());                                   col.SetGroupSummarySortOrder(gs.GetSummaryDescriptorName(),caption, _sumSort);    
 
   }
 
@@ -49,7 +49,7 @@ foreach (SortColumnDescriptor col in tableControl.TableDescriptor.GroupedColumns
 {% endhighlight  %}
 {% highlight vbnet %}
 
-Private Sub PeformSort(ByVal tableControl As GridTableControl, ByVal name As String)
+Private Sub PerformSort(ByVal tableControl As GridTableControl, ByVal name As String)
 
 If tableControl.TableDescriptor.IsGrouped Then
 
@@ -59,9 +59,9 @@ If tableControl.TableDescriptor.IsGrouped Then
 
 
 
-If gsc IsNot Nothing Then
+If gs IsNot Nothing Then
 
-Dim caption As String = gsc.Format.Trim(New Char(){"{"c,"}"c})
+Dim caption As String = gs.Format.Trim(New Char(){"{"c,"}"c})
 
 For Each col As SortColumnDescriptor In tableControl.TableDescriptor.GroupedColumns
 
@@ -71,7 +71,7 @@ group.Add(col.Name, col.Clone())
 
   End If
 
-col.SetGroupSummarySortOrder(gsc.GetSummaryDescriptorName(),caption, _summSort)
+col.SetGroupSummarySortOrder(gs.GetSummaryDescriptorName(),caption, _sumSort)
 
 Next col
 

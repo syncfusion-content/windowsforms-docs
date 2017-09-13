@@ -888,7 +888,7 @@ class CustomRenderer :ILinearGaugeRenderer
             float minortickValue = 0;
             float tickPositionMinor = 0;
             GraphicsPath path = new GraphicsPath();
-            int minorcount = LinearGauge.MinorTickCount;
+            int minor = LinearGauge.MinorTickCount;
             m_minorTicksPixels = ((this.LinearGauge.Height - 50) / majorTicksDistance);
             int x = this.LinearGauge.Width / 2;
             temp1 = 0;
@@ -900,10 +900,10 @@ class CustomRenderer :ILinearGaugeRenderer
                     Graphics.DrawString(Math.Round(majorTickValue, 2).ToString(),
                              LinearGauge.Font, brush, new PointF(x - LinearGauge.MajorTicksHeight - 25, this.LinearGauge.Height - tickPosition), sf);
                 if (L == majorTicksCount)
-                    minorcount = (LinearGauge.MinorTickCount * (int)Math.Ceiling(s)) / LinearGauge.MajorDifference;
+                    minor = (LinearGauge.MinorTickCount * (int)Math.Ceiling(s)) / LinearGauge.MajorDifference;
                 if (majorTickValue < LinearGauge.MaximumValue)
                 {
-                    for (int S = 1; S <= minorcount; S++)
+                    for (int S = 1; S <= minor; S++)
                     {
                         minortickValue = (m_minorTicksPixels / (LinearGauge.MinorTickCount + 1)) * S;
                         tickPositionMinor = this.LinearGauge.Height - (minortickValue + temp1 + 25);
@@ -929,7 +929,7 @@ class CustomRenderer :ILinearGaugeRenderer
             Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias ;
             foreach (LinearRange ptrRange in this.LinearGauge.Ranges)
             {
-                int val = (int)Math.Ceiling(LinearGauge.MaximumValue - ptrRange.EndValue) / LinearGauge.MajorDifference;
+                int value = (int)Math.Ceiling(LinearGauge.MaximumValue - ptrRange.EndValue) / LinearGauge.MajorDifference;
                 if (ptrRange.EndValue > ptrRange.StartValue && ptrRange.EndValue <= this.LinearGauge.MaximumValue)
                 {
                     if (this.LinearGauge.MinimumValue >= 0 && ptrRange.StartValue < 0)
@@ -1073,7 +1073,7 @@ Public Class CustomRenderer
             Dim tick As Single = 0
             Dim tickPositionMinor As Single = 0
             Dim path As New GraphicsPath()
-            Dim minorcount As Integer = LinearGauge.MinorTickCount
+            Dim minor As Integer = LinearGauge.MinorTickCount
             m_minorTicksPixels = ((Me.LinearGauge.Height - 50) / majorTicksDistance)
             Dim x As Integer = Me.LinearGauge.Width \ 2
             temp1 = 0
@@ -1084,11 +1084,11 @@ Public Class CustomRenderer
                     Graphics.DrawString(Math.Round(majorTickValue, 2).ToString(), LinearGauge.Font, brush, New PointF(x - LinearGauge.MajorTicksHeight - 25, Me.LinearGauge.Height - tickPosition), sf)
                 End If
                 If L = majorTicksCount Then
-                    minorcount = (LinearGauge.MinorTickCount * CInt(Fix(Math.Ceiling(s)))) / LinearGauge.MajorDifference
+                    minor = (LinearGauge.MinorTickCount * CInt(Fix(Math.Ceiling(s)))) / LinearGauge.MajorDifference
                 End If
                 If majorTickValue < LinearGauge.MaximumValue Then
                     'INSTANT VB NOTE: The variable S was renamed since Visual Basic will not allow local variables with the same name as parameters or other local variables:
-                    For S_Renamed As Integer = 1 To minorcount
+                    For S_Renamed As Integer = 1 To minor
                         tick = (m_minorTicksPixels / (LinearGauge.MinorTickCount + 1)) * S_Renamed
                         tickPositionMinor = Me.LinearGauge.Height - (minortick + temp1 + 25)
                         Graphics.DrawLine(minorTickPen, x, CSng(tickPositionMinor), x - LinearGauge.MinorTickHeight, CSng(tickPositionMinor))
@@ -1112,7 +1112,7 @@ Public Class CustomRenderer
         Public Sub DrawRanges(ByVal Graphics As System.Drawing.Graphics)
             Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias
             For Each ptrRange As LinearRange In Me.LinearGauge.Ranges
-                Dim val As Integer = CInt(Fix(Math.Ceiling(LinearGauge.MaximumValue - ptrRange.EndValue))) / LinearGauge.MajorDifference
+                Dim value As Integer = CInt(Fix(Math.Ceiling(LinearGauge.MaximumValue - ptrRange.EndValue))) / LinearGauge.MajorDifference
                 If ptrRange.EndValue > ptrRange.StartValue AndAlso ptrRange.EndValue <= Me.LinearGauge.MaximumValue Then
                     If Me.LinearGauge.MinimumValue >= 0 AndAlso ptrRange.StartValue < 0 Then
                         Return

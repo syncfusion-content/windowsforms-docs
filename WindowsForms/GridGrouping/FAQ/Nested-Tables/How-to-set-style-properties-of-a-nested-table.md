@@ -22,11 +22,11 @@ This can be done using the code below.
 
 //Gets the child table descriptor for a particular relation.
 
-GridTableDescriptor child_tabledescriptor = this.gridGroupingControl1.TableDescriptor.Relations["MyChildTable"].ChildTableDescriptor;
+GridTableDescriptor child_table= this.gridGroupingControl1.TableDescriptor.Relations["MyChildTable"].ChildTableDescriptor;
 
 //Sets the style properties.   
 
-child_tabledescriptor.Columns["childID"].Appearance.AnyRecordFieldCell.BackColor = Color.Pink;
+child_table.Columns["childID"].Appearance.AnyRecordFieldCell.BackColor = Color.Pink;
 
 
 
@@ -36,11 +36,11 @@ child_tabledescriptor.Columns["childID"].Appearance.AnyRecordFieldCell.BackColor
 
 //Gets the child table descriptor for a particular relation.
 
-GridTableDescriptor child_tabledescriptor = this.gridGroupingControl1.TableDescriptor.Relations["MyChildTable"].ChildTableDescriptor;
+GridTableDescriptor child_table = this.gridGroupingControl1.TableDescriptor.Relations["MyChildTable"].ChildTableDescriptor;
 
 //Sets the style properties.   
 
-child_tableDescriptor.Columns["childID"].Appearance.AnyRecordFieldCell.CellType="ComboBox";
+child_table.Columns["childID"].Appearance.AnyRecordFieldCell.CellType="ComboBox";
 
 {% endhighlight %}
 
@@ -55,11 +55,11 @@ child_tableDescriptor.Columns["childID"].Appearance.AnyRecordFieldCell.CellType=
 
 'Gets the child table descriptor for a particular relation
 
-Dim child_tabledescriptor As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor.Relations("ComSal").ChildTableDescriptor
+Dim child_table As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor.Relations("ComSal").ChildTableDescriptor
 
 'Sets the style properties.              
 
-child_tabledescriptor.Columns("Des").Appearance.AnyRecordFieldCell.BackColor = Color.Pink
+child_table.Columns("Des").Appearance.AnyRecordFieldCell.BackColor = Color.Pink
 
 
 
@@ -67,11 +67,11 @@ child_tabledescriptor.Columns("Des").Appearance.AnyRecordFieldCell.BackColor = C
 
 'Gets the child table descriptor for a particular relation.
 
-Dim child_tabledescriptor As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor.Relations("ComSal").ChildTableDescriptor
+Dim child_table As GridTableDescriptor = Me.gridGroupingControl1.TableDescriptor.Relations("ComSal").ChildTableDescriptor
 
 'Sets the style properties.   
 
-child_tabledescriptor.Columns("Des").Appearance.AnyRecordFieldCell.CellType="ComboBox"
+child_table.Columns("Des").Appearance.AnyRecordFieldCell.CellType="ComboBox"
 {% endhighlight %}
 
 

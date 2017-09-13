@@ -42,11 +42,11 @@ gridGroupingControl1.TableDescriptor.Relations.Add(parentToChildRelationDescript
 
 
 
-//Adds Relation to GrandChildTable in Childtable like look up.
+//Adds Relation to GrandChildTable in Child table like look up.
 
             GridRelationDescriptor childToGrandChildRelationDescriptor = new GridRelationDescriptor();
 
-childToGrandChildRelationDescriptor.ChildTableName = "MyGrandChildTable";  //Same as SourceListSetEntry.Name for grandChhildTable (see below)
+childToGrandChildRelationDescriptor.ChildTableName = "MyGrandChildTable";  //Same as SourceListSetEntry.Name for grandChildTable (see below)
 
 childToGrandChildRelationDescriptor.RelationKind = RelationKind.ForeignKeyReference;
 
@@ -95,7 +95,7 @@ Public Sub New()
 
 
 
-'Adds Relation to GrandChildTable in Childtable like look up.
+'Adds Relation to GrandChildTable in Child table like look up.
 
             Dim childToGrandChildRelationDescriptor As New GridRelationDescriptor()
 

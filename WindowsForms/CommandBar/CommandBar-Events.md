@@ -163,13 +163,13 @@ Gets / sets the CommandBar's new position.</td></tr>
 
 // Handler for the CommandBar.CommandBarStateChanging event.
 
-private void cbFonts_CommandBarStateChanging(object obj, Syncfusion.Windows.Forms.Tools.CommandBarStateChangingEventArgs arg)
+private void comFonts_CommandBarStateChanging(object obj, Syncfusion.Windows.Forms.Tools.CommandBarStateChangingEventArgs arg)
 
 {
 
-// If the fonts CommandBar is being docked to a vertical dock position, ie., left or right, 
+// If the fonts CommandBar is being docked to a vertical dock position, that is left or right, 
 
-// then hide the two combo boxes and set the commandbar maxlength to be equal to 
+// then hide the two combo boxes and set the commandbar max length to be equal to 
 
 // the length of the fonts toolbar.
 
@@ -177,21 +177,21 @@ private void cbFonts_CommandBarStateChanging(object obj, Syncfusion.Windows.Form
 
 // is in an indeterminate state. This happens only during loading and deserialization.
 
-Syncfusion.Windows.Forms.Tools.CommandBarDockState currentborder = this.commandBarFonts.DockState;
+Syncfusion.Windows.Forms.Tools.CommandBarDockState border = this.commandBarFonts.DockState;
 
-Syncfusion.Windows.Forms.Tools.CommandBarDockState newborder = arg.NewDockState;
+Syncfusion.Windows.Forms.Tools.CommandBarDockState newborn = arg.NewDockState;
 
-if (((currentborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Top) ||
+if (((border == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Top) ||
 
-(currentborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bottom) ||
+(border == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bottom) ||
 
-(currentborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float) ||
+(border == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float) ||
 
-(currentborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.None)) &&
+(border == Syncfusion.Windows.Forms.Tools.CommandBarDockState.None)) &&
 
-((newborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) ||
+((newborn == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) ||
 
-(newborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)))
+(newborn == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)))
 
 {
 
@@ -199,11 +199,11 @@ this.fontComboBox.Visible = false;
 
 this.fontSizeComboBox.Visible = false;
 
-this.commandBarFonts.MaxLength = this.commandBarFonts.CalcCommandBarMaxLength(this.szFontToolBarPanel.Width);
+this.commandBarFonts.MaxLength = this.commandBarFonts.CalcCommandBarMaxLength(this.FontToolBarPanel.Width);
 
 // Move the panel containing the fonts toolbar to the (0,0) position of the commandbar panel.
 
-this.pnlFontsTB.Location = new Point(0, 0);
+this.polFontsTB.Location = new Point(0, 0);
 
 }
 
@@ -211,25 +211,25 @@ this.pnlFontsTB.Location = new Point(0, 0);
 
 // increase the max length and restore combo box visibility.
 
-if (((currentborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) ||
+if (((border == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) ||
 
-(currentborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)) &&
+(border == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)) &&
 
-((newborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Top) ||
+((newborn == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Top) ||
 
-(newborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bottom) ||
+(newborn == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bottom) ||
 
-(newborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float) ||
+(newborn == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float) ||
 
-(newborder == Syncfusion.Windows.Forms.Tools.CommandBarDockState.None)))
+(newborn == Syncfusion.Windows.Forms.Tools.CommandBarDockState.None)))
 
 {
 
-this.commandBarFonts.MaxLength = this.commandBarFonts.CalcCommandBarMaxLength(this.szFontCommandBarPanelSize.Width);
+this.commandBarFonts.MaxLength = this.commandBarFonts.CalcCommandBarMaxLength(this.FontCommandBarPanelSize.Width);
 
-// Move the fonts toolbar panel to its original position ie., after the two combo boxes.
+// Move the fonts toolbar panel to its original position that is after the two combo boxes.
 
-this.pnlFontsTB.Location = new Point(this.fontSizeComboBox.Right + 6, 0);
+this.polFontsTB.Location = new Point(this.fontSizeComboBox.Right + 6, 0);
 
 this.fontComboBox.Visible = true;
 
@@ -248,11 +248,11 @@ this.fontSizeComboBox.Visible = true;
 
 ' Handler for the CommandBar.CommandBarStateChanging event. 
 
-Private Sub cbFonts_CommandBarStateChanging(ByVal obj As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.CommandBarStateChangingEventArgs)
+Private Sub comFonts_CommandBarStateChanging(ByVal obj As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.CommandBarStateChangingEventArgs)
 
-' If the fonts CommandBar is being docked to a vertical dock position, ie., left or right, 
+' If the fonts CommandBar is being docked to a vertical dock position, that is left or right, 
 
-' then hide the two combo boxes and set the commandbar maxlength to be equal to 
+' then hide the two combo boxes and set the commandbar max length to be equal to 
 
 ' the length of the fonts toolbar. 
 
@@ -260,21 +260,21 @@ Private Sub cbFonts_CommandBarStateChanging(ByVal obj As Object, ByVal arg As Sy
 
 ' is in an indeterminate state. This happens only during loading and deserialization. 
 
-Dim currentborder As Syncfusion.Windows.Forms.Tools.CommandBarDockState = Me.commandBarFonts.DockState
+Dim border As Syncfusion.Windows.Forms.Tools.CommandBarDockState = Me.commandBarFonts.DockState
 
-Dim newborder As Syncfusion.Windows.Forms.Tools.CommandBarDockState = arg.NewDockState
+Dim newborn As Syncfusion.Windows.Forms.Tools.CommandBarDockState = arg.NewDockState
 
-If ((currentborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Top) OrElse (currentborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bottom) OrElse (currentborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float) OrElse (currentborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.None)) AndAlso ((newborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) OrElse (newborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)) Then
+If ((border = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Top) OrElse (border = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bottom) OrElse (border = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float) OrElse (border = Syncfusion.Windows.Forms.Tools.CommandBarDockState.None)) AndAlso ((newborn = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) OrElse (newborn = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)) Then
 
 Me.fontComboBox.Visible = False
 
 Me.fontSizeComboBox.Visible = False
 
-Me.commandBarFonts.MaxLength = Me.commandBarFonts.CalcCommandBarMaxLength(Me.szFontToolBarPanel.Width)
+Me.commandBarFonts.MaxLength = Me.commandBarFonts.CalcCommandBarMaxLength(Me.FontToolBarPanel.Width)
 
 ' Move the panel containing the fonts toolbar to the (0,0) position of the commandbar panel. 
 
-Me.pnlFontsTB.Location = New Point(0, 0)
+Me.polFontsTB.Location = New Point(0, 0)
 
 End If
 
@@ -282,13 +282,13 @@ End If
 
 ' increase the max length and restore combo box visibility. 
 
-If ((currentborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) OrElse (currentborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)) AndAlso ((newborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Top) OrElse (newborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bottom) OrElse (newborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float) OrElse (newborder = Syncfusion.Windows.Forms.Tools.CommandBarDockState.None)) Then
+If ((border = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) OrElse (border = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)) AndAlso ((newborn = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Top) OrElse (newborn = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bottom) OrElse (newborn = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float) OrElse (newborn = Syncfusion.Windows.Forms.Tools.CommandBarDockState.None)) Then
 
-Me.commandBarFonts.MaxLength = Me.commandBarFonts.CalcCommandBarMaxLength(Me.szFontCommandBarPanelSize.Width)
+Me.commandBarFonts.MaxLength = Me.commandBarFonts.CalcCommandBarMaxLength(Me.FontCommandBarPanelSize.Width)
 
-' Move the fonts toolbar panel to its original position ie., after the two combo boxes. 
+' Move the fonts toolbar panel to its original position that is after the two combo boxes. 
 
-Me.pnlFontsTB.Location = New Point(Me.fontSizeComboBox.Right + 6, 0)
+Me.polFontsTB.Location = New Point(Me.fontSizeComboBox.Right + 6, 0)
 
 Me.fontComboBox.Visible = True
 
@@ -312,11 +312,11 @@ The event handler receives an argument of type EventArgs containing data related
 
 // Handler for the CommandBar.CommandBarStateChanged event.
 
-private void cbFonts_CommandBarStateChanged(object sender, System.EventArgs e)
+private void comFonts_CommandBarStateChanged(object sender, System.EventArgs e)
 
 {
 
-// The Fonts CommandBar client dimensions may have been changed by the redocking. 
+// The Fonts CommandBar client dimensions may have been changed by the redoubling. 
 
 // Size the panel containing the Fonts toolbar to fit the new CommandBar panel dimensions.
 
@@ -324,11 +324,11 @@ if (((this.commandBarFonts.DockState == Syncfusion.Windows.Forms.Tools.CommandBa
 
 (this.commandBarFonts.DockState == Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right))
 
-&& (this.pnlFontsTB.Width > this.commandBarFonts.Width))
+&& (this.plFontsTB.Width > this.commandBarFonts.Width))
 
 {
 
-this.pnlFontsTB.Size = this.pnlFonts.Size;
+this.polFontsTB.Size = this.polFonts.Size;
 
 }
 
@@ -338,11 +338,11 @@ else
 
 // The CommandBar has been moved out of a left / right dock position.
 
-if (this.pnlFontsTB.Height > this.commandBarFonts.Height)
+if (this.polFontsTB.Height > this.commandBarFonts.Height)
 
 {
 
-this.pnlFontsTB.Size = this.szFontToolBarPanel;
+this.polFontsTB.Size = this.FontToolBarPanel;
 
 }
 
@@ -360,23 +360,23 @@ this.pnlFontsTB.Size = this.szFontToolBarPanel;
 
 ' Handler for the CommandBar.CommandBarStateChanged event. 
 
-Private Sub cbFonts_CommandBarStateChanged(ByVal sender As Object, ByVal e As System.EventArgs)
+Private Sub comFonts_CommandBarStateChanged(ByVal sender As Object, ByVal e As System.EventArgs)
 
-' The Fonts CommandBar client dimensions may have been changed by the redocking. 
+' The Fonts CommandBar client dimensions may have been changed by the redoubling. 
 
 ' Size the panel containing the Fonts toolbar to fit the new CommandBar panel dimensions. 
 
-If ((Me.commandBarFonts.DockState = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) OrElse (Me.commandBarFonts.DockState = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)) AndAlso (Me.pnlFontsTB.Width > Me.commandBarFonts.Width) Then
+If ((Me.commandBarFonts.DockState = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) OrElse (Me.commandBarFonts.DockState = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right)) AndAlso (Me.polFontsTB.Width > Me.commandBarFonts.Width) Then
 
-Me.pnlFontsTB.Size = Me.pnlFonts.Size
+Me.polFontsTB.Size = Me.polFonts.Size
 
 Else
 
 ' The CommandBar has been moved out of a left / right dock position. 
 
-If Me.pnlFontsTB.Height > Me.commandBarFonts.Height Then
+If Me.polFontsTB.Height > Me.commandBarFonts.Height Then
 
-Me.pnlFontsTB.Size = Me.szFontToolBarPanel
+Me.polFontsTB.Size = Me.FontToolBarPanel
 
 End If
 
@@ -484,11 +484,11 @@ if (this.commandBarAlign.DockState == Syncfusion.Windows.Forms.Tools.CommandBarD
 
 {
 
-Size szmaxwrap = new Size(40, 67);
+Size max = new Size(40, 67);
 
-Size szminwrap = new Size(72, 23);
+Size min = new Size(72, 23);
 
-this.DoToolBarWrapping(this.tbAlign, szmaxwrap, szminwrap, arg);
+this.DoToolBarWrapping(this.tbsAlign, max, min, arg);
 
 }
 
@@ -498,29 +498,29 @@ else if ((this.commandBarAlign.DockState == Syncfusion.Windows.Forms.Tools.Comma
 
 {
 
-Size szmaxwrap = new Size(24, 67);
+Size max = new Size(24, 67);
 
-arg.ClientSize = szmaxwrap;
-
-}
+arg.ClientSize = max;
 
 }
 
+}
 
 
-private void DoToolBarWrapping(ToolBar toolbar, Size szmaxwrap, Size szminwrap, Syncfusion.Windows.Forms.Tools.CommandBarWrappingEventArgs arg)
+
+private void DoToolBarWrapping(ToolBar toolbar, Size max, Size min, Syncfusion.Windows.Forms.Tools.CommandBarWrappingEventArgs arg)
 
 {
 
-Size szcurrent = arg.ClientSize;
+Size current = arg.ClientSize;
 
-Size sztemp = toolbar.Size;
+Size temp = toolbar.Size;
 
 
 
-int nbtncount = toolbar.Buttons.Count;
+int count = toolbar.Buttons.Count;
 
-Size szbtn = toolbar.ButtonSize;
+Size button = toolbar.ButtonSize;
 
 
 
@@ -528,31 +528,31 @@ if ((arg.CommandBarResizeType == Syncfusion.Windows.Forms.Tools.CommandBarResize
 
 {
 
-int nfactor = (int)Math.Ceiling((float)szminwrap.Width / (float)szcurrent.Width);
+int factor = (int)Math.Ceiling((float)min.Width / (float)current.Width);
 
-float ffactor = (float)szminwrap.Width / (float)szcurrent.Width;
+float ffactor = (float)min.Width / (float)current.Width;
 
 
 
-if (szcurrent.Width < szmaxwrap.Width)
+if (current.Width < max.Width)
 
 {
 
-arg.ClientSize = szmaxwrap;
+arg.ClientSize = max;
 
 }
 
-else if ((nfactor > 1) && (nfactor == ffactor))
+else if ((factor > 1) && (factor == factors))
 
 {
 
-int nnewwidth = (int)Math.Ceiling((float)nbtncount / (float)nfactor) * szbtn.Width;
+int width = (int)Math.Ceiling((float)count / (float)factor) * button.Width;
 
 
 
-Size sznew = Size.Empty;
+Size new = Size.Empty;
 
-if (nnewwidth > szmaxwrap.Width)
+if (width > max.Width)
 
 {
 
@@ -562,25 +562,25 @@ if (nnewwidth > szmaxwrap.Width)
 
 // the CommandBar client size.
 
-sznew.Width = nnewwidth;
+new.Width = width;
 
-toolbar.Parent.Width = sznew.Width;
+toolbar.Parent.Width = new.Width;
 
-sznew.Height = toolbar.Height;
+new.Height = toolbar.Height;
 
-toolbar.Parent.Width = sztemp.Width;
+toolbar.Parent.Width = temp.Width;
 
 }
 
 else
 
-sznew = szmaxwrap;
+new = max;
 
 
 
 // Set the CommandBar's client size to be equal to this new size.
 
-arg.ClientSize = sznew;
+arg.ClientSize = new;
 
 }
 
@@ -590,7 +590,7 @@ else if (ffactor <= 1)
 
 // The CommandBar is extended to the maximum width.
 
-arg.ClientSize = szminwrap;
+arg.ClientSize = min;
 
 }
 
@@ -608,33 +608,33 @@ else if ((arg.CommandBarResizeType == Syncfusion.Windows.Forms.Tools.CommandBarR
 
 {
 
-int nfactor = (int)Math.Floor((float)szcurrent.Height / (float)szbtn.Height);
+int factor = (int)Math.Floor((float)current.Height / (float)button.Height);
 
-float ffactor = (float)szcurrent.Height / (float)szbtn.Height;
+float factors = (float)current.Height / (float)button.Height;
 
 
 
-if (szcurrent.Height > szmaxwrap.Height)
+if (current.Height > max.Height)
 
 {
 
-arg.ClientSize = szmaxwrap;
+arg.ClientSize = max;
 
 }
 
-else if ((nfactor > 1) && (nfactor == ffactor))
+else if ((factor > 1) && (factor == factors))
 
 {
 
 // The toolbar width is estimated to be equal to the button width + the number of button columns required.
 
-int nnewwidth = (int)Math.Ceiling((float)nbtncount / (float)nfactor) * szbtn.Width;
+int width = (int)Math.Ceiling((float)count / (float)factor) * button.Width;
 
 
 
-Size sznew = Size.Empty;
+Size new = Size.Empty;
 
-if (nnewwidth > szmaxwrap.Width)
+if (width > max.Width)
 
 {
 
@@ -642,25 +642,25 @@ if (nnewwidth > szmaxwrap.Width)
 
 // toolbar height.
 
-sznew.Width = nnewwidth;
+new.Width = width;
 
-toolbar.Parent.Width = sznew.Width;
+toolbar.Parent.Width = new.Width;
 
-sznew.Height = toolbar.Height;
+new.Height = toolbar.Height;
 
-toolbar.Parent.Width = sztemp.Width;
+toolbar.Parent.Width = temp.Width;
 
 }
 
 else
 
-sznew = szmaxwrap;
+new = max;
 
 
 
 // Set the CommandBar's client size to be equal to this new size.
 
-arg.ClientSize = sznew;
+arg.ClientSize = new;
 
 }
 
@@ -668,7 +668,7 @@ else if (ffactor <= 1)
 
 {
 
-arg.ClientSize = szminwrap;
+arg.ClientSize = min;
 
 }
 
@@ -697,17 +697,17 @@ Private Sub commandBarAlign_CommandBarWrapping(ByVal obj As Object, ByVal arg As
 
 If Me.commandBarAlign.DockState = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Float Then
 
-Dim szmaxwrap As New Size(40, 67)
+Dim max As New Size(40, 67)
 
-Dim szminwrap As New Size(72, 23)
+Dim min As New Size(72, 23)
 
-Me.DoToolBarWrapping(Me.tbAlign, szmaxwrap, szminwrap, arg)
+Me.DoToolBarWrapping(Me.tbsAlign, max, min, arg)
 
 ElseIf (Me.commandBarAlign.DockState = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Left) OrElse (Me.commandBarAlign.DockState = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Right) Then
 
-Dim szmaxwrap As New Size(24, 67)
+Dim max As New Size(24, 67)
 
-arg.ClientSize = szmaxwrap
+arg.ClientSize = max
 
 End If
 
@@ -715,41 +715,41 @@ End Sub
 
 
 
-Private Sub DoToolBarWrapping(ByVal toolbar As ToolBar, ByVal szmaxwrap As Size, ByVal szminwrap As Size, ByVal arg As Syncfusion.Windows.Forms.Tools.CommandBarWrappingEventArgs)
+Private Sub DoToolBarWrapping(ByVal toolbar As ToolBar, ByVal max As Size, ByVal min As Size, ByVal arg As Syncfusion.Windows.Forms.Tools.CommandBarWrappingEventArgs)
 
-Dim szcurrent As Size = arg.ClientSize
+Dim current As Size = arg.ClientSize
 
-Dim sztemp As Size = ToolBar.Size
+Dim temp As Size = ToolBar.Size
 
 
 
-Dim nbtncount As Integer = ToolBar.Buttons.Count
+Dim count As Integer = ToolBar.Buttons.Count
 
-Dim szbtn As Size = ToolBar.ButtonSize
+Dim button As Size = ToolBar.ButtonSize
 
 
 
 If (arg.CommandBarResizeType = Syncfusion.Windows.Forms.Tools.CommandBarResizeType.Right) OrElse (arg.CommandBarResizeType = Syncfusion.Windows.Forms.Tools.CommandBarResizeType.Left) Then
 
-Dim nfactor As Integer = CInt(Math.Ceiling(CSng(szminwrap.Width) / CSng(szcurrent.Width)))
+Dim factor As Integer = CInt(Math.Ceiling(CSn(min.Width) / CSn(current.Width)))
 
-Dim ffactor As Single = CSng(szminwrap.Width) / CSng(szcurrent.Width)
-
-
-
-If szcurrent.Width < szmaxwrap.Width Then
-
-arg.ClientSize = szmaxwrap
-
-ElseIf (nfactor > 1) AndAlso (nfactor = ffactor) Then
-
-Dim nnewwidth As Integer = CInt(Math.Ceiling(CSng(nbtncount) / CSng(nfactor))) * szbtn.Width
+Dim ffactor As Single = CSn(min.Width) / CSn(current.Width)
 
 
 
-Dim sznew As Size = Size.Empty
+If current.Width < max.Width Then
 
-If nnewwidth > szmaxwrap.Width Then
+arg.ClientSize = max
+
+ElseIf (factor > 1) AndAlso (factor = factors) Then
+
+Dim width As Integer = CInt(Math.Ceiling(CSn(count) / CSn(factor))) * button.Width
+
+
+
+Dim new As Size = Size.Empty
+
+If width > max.Width Then
 
 ' Set this width to be the toolbar's parent panel width and allow the toolbar to
 
@@ -757,17 +757,17 @@ If nnewwidth > szmaxwrap.Width Then
 
 ' the CommandBar client size.
 
-sznew.Width = nnewwidth
+new.Width = width
 
-ToolBar.Parent.Width = sznew.Width
+ToolBar.Parent.Width = new.Width
 
-sznew.Height = ToolBar.Height
+new.Height = ToolBar.Height
 
-ToolBar.Parent.Width = sztemp.Width
+ToolBar.Parent.Width = temp.Width
 
 Else
 
-sznew = szmaxwrap
+new = max
 
 End If
 
@@ -775,13 +775,13 @@ End If
 
 ' Set the CommandBar's client size to be equal to this new size.
 
-arg.ClientSize = sznew
+arg.ClientSize = new
 
 ElseIf ffactor <= 1 Then
 
 ' The CommandBar is extended to the maximum width.
 
-arg.ClientSize = szminwrap
+arg.ClientSize = min
 
 Else
 
@@ -791,43 +791,43 @@ End If
 
 ElseIf (arg.CommandBarResizeType = Syncfusion.Windows.Forms.Tools.CommandBarResizeType.Bottom) OrElse (arg.CommandBarResizeType = Syncfusion.Windows.Forms.Tools.CommandBarResizeType.Top) Then
 
-Dim nfactor As Integer = CInt(Math.Floor(CSng(szcurrent.Height) / CSng(szbtn.Height)))
+Dim factor As Integer = CInt(Math.Floor(CSn(current.Height) / CSn(button.Height)))
 
-Dim ffactor As Single = CSng(szcurrent.Height) / CSng(szbtn.Height)
+Dim factors As Single = CSn(current.Height) / CSn(button.Height)
 
 
 
-If szcurrent.Height > szmaxwrap.Height Then
+If current.Height > max.Height Then
 
-arg.ClientSize = szmaxwrap
+arg.ClientSize = max
 
-ElseIf (nfactor > 1) AndAlso (nfactor = ffactor) Then
+ElseIf (factor > 1) AndAlso (factor = factors) Then
 
 ' The toolbar width is estimated to be equal to the button width + the number of button columns required. 
 
-Dim nnewwidth As Integer = CInt(Math.Ceiling(CSng(nbtncount) / CSng(nfactor))) * szbtn.Width
+Dim width As Integer = CInt(Math.Ceiling(CSn(count) / CSn(factor))) * button.Width
 
 
 
-Dim sznew As Size = Size.Empty
+Dim new As Size = Size.Empty
 
-If nnewwidth > szmaxwrap.Width Then
+If width > max.Width Then
 
 ' Assign the new width to the toolbar parent panel and get the corresponding 
 
 ' toolbar height. 
 
-sznew.Width = nnewwidth
+new.Width = width
 
-ToolBar.Parent.Width = sznew.Width
+ToolBar.Parent.Width = new.Width
 
-sznew.Height = ToolBar.Height
+new.Height = ToolBar.Height
 
-ToolBar.Parent.Width = sztemp.Width
+ToolBar.Parent.Width = temp.Width
 
 Else
 
-sznew = szmaxwrap
+new = max
 
 End If
 
@@ -835,11 +835,11 @@ End If
 
 ' Set the CommandBar's client size to be equal to this new size. 
 
-arg.ClientSize = sznew
+arg.ClientSize = new
 
 ElseIf ffactor <= 1 Then
 
-arg.ClientSize = szminwrap
+arg.ClientSize = min
 
 Else
 

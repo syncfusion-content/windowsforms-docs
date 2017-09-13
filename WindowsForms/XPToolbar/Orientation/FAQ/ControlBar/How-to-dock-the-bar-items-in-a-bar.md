@@ -15,7 +15,7 @@ We can dock the bar items in a bar using XPMenus CommandBarExt class as follows.
 
 CommandBarExt bar = this.mainFrameBarManager1.GetBarControl(this.bar1) as CommandBarExt;
 
-//Get the bar control that hold the baritems.
+//Get the bar control that hold the bar items.
 
 bar.BarControl.Dock = System.Windows.Forms.DockStyle.Right;
 
@@ -26,7 +26,7 @@ bar.BarControl.Dock = System.Windows.Forms.DockStyle.Right;
 
 Dim bar As CommandBarExt = TryCast(Me.mainFrameBarManager1.GetBarControl(Me.bar1), CommandBarExt)
 
-'Get the bar control that hold the baritems. 
+'Get the bar control that hold the bar items. 
 
 bar.BarControl.Dock = System.Windows.Forms.DockStyle.Right
 

@@ -115,9 +115,9 @@ using Syncfusion.Runtime.Serialization;
 
 //Save Bar State in Binary format
 
-//You can also use BinaryFmStream instead of Binaryfile
+//You can also use BinaryFmStream instead of Binary file
 
-AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile,"Barstate");
+AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile,"Bar state");
 
 this.mainFrameBarManager1.SaveBarState(app);
 
@@ -127,9 +127,9 @@ app.PersistNow ();
 
 //Load Bar State in Binary format
 
-//You can also use BinaryFmStream instead of Binaryfile
+//You can also use BinaryFmStream instead of Binary file
 
-AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile,"Barstate");
+AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile,"Bar state");
 
 this.mainFrameBarManager1.LoadBarState(app);
 
@@ -147,9 +147,9 @@ Imports Syncfusion.Runtime.Serialization
 
 'Save Bar State in Binary format
 
-'You can also use BinaryFmStream instead of Binaryfile
+'You can also use BinaryFmStream instead of Binary file
 
-Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile, "Barstate")
+Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile, "Bar state")
 
 Me.mainFrameBarManager1.SaveBarState(app)
 
@@ -159,9 +159,9 @@ app.PersistNow ()
 
 'Load Bar State in Binary format
 
-'You can also use BinaryFmStream instead of Binaryfile
+'You can also use BinaryFmStream instead of Binary file
 
-Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile, "Barstate")
+Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.BinaryFile, "Bar state")
 
 Me.mainFrameBarManager1.LoadBarState(app)
 
@@ -221,7 +221,7 @@ using Syncfusion.Runtime.Serialization;
 
 //You can also use XMLFmStream instead of XML File
 
-AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.XMLFile,"Barstate");
+AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.XML,"Bar state");
 
 this.mainFrameBarManager1.SaveBarState(app);
 
@@ -233,7 +233,7 @@ app.PersistNow ();
 
 //You can also use XMLFmStream instead of XML File
 
-AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.XMLFile,"Barstate");
+AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.XML,"Bar state");
 
 this.mainFrameBarManager1.LoadBarState(app);
 
@@ -251,7 +251,7 @@ Imports Syncfusion.Runtime.Serialization
 
 'You can also use XMLFmStream instead of XML File
 
-Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.XMLFile, "Barstate")
+Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.XML, "Bar state")
 
 Me.mainFrameBarManager1.SaveBarState(app)
 
@@ -263,7 +263,7 @@ app.PersistNow ()
 
 'You can also use XMLFmStream instead of XML File
 
-Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.XMLFile, "Barstate")
+Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.XML, "Bar state")
 
 Me.mainFrameBarManager1.LoadBarState(app)
 
@@ -283,7 +283,7 @@ using Syncfusion.Runtime.Serialization;
 
 //Save Bar State in Isolated storage
 
-AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.IsolatedStorage,"Barstate");
+AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.IsolatedStorage,"Bar state");
 
 this.mainFrameBarManager1.SaveBarState(app);
 
@@ -293,7 +293,7 @@ app.PersistNow ();
 
 //Load Bar State in Isolated storage
 
-AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.IsolatedStorage,"Barstate");
+AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.IsolatedStorage,"Bar state");
 
 this.mainFrameBarManager1.LoadBarState(app);
 
@@ -309,7 +309,7 @@ Imports Syncfusion.Runtime.Serialization
 
 'Save Bar State in Isolated storage
 
-Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.IsolatedStorage, "Barstate")
+Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.IsolatedStorage, "Bar state")
 
 Me.mainFrameBarManager1.SaveBarState(app)
 
@@ -319,7 +319,7 @@ app.PersistNow ()
 
 'Load Bar State in Isolated storage
 
-Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.IsolatedStorage, "Barstate")
+Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.IsolatedStorage, "Bar state")
 
 Me.mainFrameBarManager1.LoadBarState(app)
 
@@ -339,7 +339,7 @@ using Syncfusion.Runtime.Serialization;
 
 //Save Bar State in Windows Registry
 
-AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.WindowsRegistry,"Barstate");
+AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.WindowsRegistry,"Bar state");
 
 this.mainFrameBarManager1.SaveBarState(app);
 
@@ -349,7 +349,7 @@ app.PersistNow ();
 
 //Load Bar State in Windows Registry
 
-AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.WindowsRegistry,"Barstate");
+AppStateSerializer app=new AppStateSerializer (Syncfusion.Runtime.Serialization.SerializeMode.WindowsRegistry,"Bar state");
 
 this.mainFrameBarManager1.LoadBarState(app);
 
@@ -365,7 +365,7 @@ Imports Syncfusion.Runtime.Serialization
 
 'Save Bar State in Windows Registry
 
-Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.WindowsRegistry, "Barstate")
+Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.WindowsRegistry, "Bar state")
 
 Me.mainFrameBarManager1.SaveBarState(app)
 
@@ -375,7 +375,7 @@ app.PersistNow ()
 
 'Load Bar State in Windows Registry
 
-Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.WindowsRegistry, "Barstate")
+Private app As AppStateSerializer = New AppStateSerializer(Syncfusion.Runtime.Serialization.SerializeMode.WindowsRegistry, "Bar state")
 
 Me.mainFrameBarManager1.LoadBarState(app)
 
