@@ -391,7 +391,7 @@ hostPrimitive2.Size = new System.Drawing.Size(100, 20);
 
 //Adding Primitives
 
-gpe.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] {
+gradientPanelExt.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] {
 
   hostPrimitive1,
 
@@ -456,7 +456,7 @@ Private hostPrimitive2.Size = New System.Drawing.Size(100, 20)
 
 'Adding Primitives
 
-gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2})
+gradientPanelExt.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2})
 
 {% endhighlight  %}
 

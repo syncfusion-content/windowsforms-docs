@@ -37,11 +37,11 @@ int dataRowPos = table.UnsortedRecords.IndexOf(r);
 
 
 //Retrieves the corresponding data row from the datasource.
-CustomersDataRow row = dataSoure.Rows[dataRowPos];
+CustomersDataRow row = dataSource.Rows[dataRowPos];
 
 
 
-// Accesses the CutomerId value of the current record.
+// Accesses the CustomerId value of the current record.
 string id = row.CustomerId;
 
 {% endhighlight %}
@@ -70,11 +70,11 @@ Dim dataRowPos As Integer = table.UnsortedRecords.IndexOf(r)
 
 
 'Retrieves the corresponding data row from the datasource. 
-Dim row As CustomersDataRow = dataSoure.Rows(dataRowPos)
+Dim row As CustomersDataRow = dataSoucre.Rows(dataRowPos)
 
 
 
-'Accesses the CutomerId value of the current record. 
+'Accesses the CustomerId value of the current record. 
 Dim id As String = row.CustomerId
 
 {% endhighlight %}

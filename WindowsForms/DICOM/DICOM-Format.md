@@ -78,26 +78,26 @@ The following sets of code snippets illustrate the conversion to DICOM Format.
 
 {% highlight c# %}
 
-   //Initailizing the DICOM Image object.
+   //Initializing the DICOM Image object.
 
-     DICOMImage dcmImage = new DICOMImage((string)this.textBox1.Tag);
+     DICOMImage dcImage = new DICOMImage((string)this.textBox1.Tag);
 
    //Saving the DICOM image.
 
-     dcmImage.Save("Sample.dcm");
+     dcImage.Save("Sample.dc");
 
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-   'Initailizing the DICOM Image object.
+   'Initializing the DICOM Image object.
 
-    Dim dcmImage As New DICOMImage(DirectCast(Me.textBox1.Tag, String))
+    Dim dcImage As New DICOMImage(DirectCast(Me.textBox1.Tag, String))
 
    'Saving the DICOM image.
 
-   dcmImage.Save("Sample.dcm")
+   dcImage.Save("Sample.dc")
 
 {% endhighlight %}
 

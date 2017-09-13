@@ -73,21 +73,21 @@ The following steps will guide you to create a GradientPanelExt through code.
          
 			//Adding the GradientPanelExt
 
-			GradientPanelExt gpe = new GradientPanelExt();
+			GradientPanelExt gradientPanelExt = new GradientPanelExt();
 
-			gpe.Dock = DockStyle.Fill;
+			gradientPanelExt.Dock = DockStyle.Fill;
 
 			gradientPanelExt1.CornerRadius = 10;
 
-			this.Controls.Add(gpe);
+			this.Controls.Add(gradientPanelExt);
 
 
 
 			//Defining Gradient Colors
 
-			gpe.BackColor = System.Drawing.Color.Transparent;
+			gradientPanelExt.BackColor = System.Drawing.Color.Transparent;
 
-			gpe.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, new System.Drawing.Color[] {
+			gradientPanelExt.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, new System.Drawing.Color[] {
 
 			  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon,System.Drawing.Color.LightCoral});
 
@@ -139,7 +139,7 @@ The following steps will guide you to create a GradientPanelExt through code.
 
 			//Adding Primitives
 
-			gpe.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] { hostPrimitive1, textPrimitive1,  textPrimitive2});
+			gradientPanelExt.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] { hostPrimitive1, textPrimitive1,  textPrimitive2});
 
    ~~~
    {:.prettyprint }
@@ -150,21 +150,21 @@ The following steps will guide you to create a GradientPanelExt through code.
 
 			'Adding the GradientPanelExt
 
-			Private gpe As GradientPanelExt = New GradientPanelExt()
+			Private gradientPanelExt As GradientPanelExt = New GradientPanelExt()
 
-			Private gpe.Dock = DockStyle.Fill
+			Private gradientPanelExt.Dock = DockStyle.Fill
 
 			Private gradientPanelExt1.CornerRadius = 10
 
-			Me.Controls.Add(gpe)
+			Me.Controls.Add(gradientPanelExt)
 
 
 
 			'Defining Gradient Colors
 
-			Private gpe.BackColor = System.Drawing.Color.Transparent
+			Private gradientPanelExt.BackColor = System.Drawing.Color.Transparent
 
-			Private gpe.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New                           System.Drawing.Color() { System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
+			Private gradientPanelExt.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New                           System.Drawing.Color() { System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
 
 
 
@@ -214,7 +214,7 @@ The following steps will guide you to create a GradientPanelExt through code.
 
 			'Adding Primitives
 
-			gpe.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2, textPrimitive1,textPrimitive2})
+			gradientPanelExt.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2, textPrimitive1,textPrimitive2})
 
    ~~~
    {:.prettyprint }

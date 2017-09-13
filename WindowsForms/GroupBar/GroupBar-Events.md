@@ -62,7 +62,7 @@ The event handler of this event receives an argument of type GroupBarItemEventAr
 
 // The GroupBarItemAdded event occurs when a GroupBar Item is added to the GroupBar Items Collection.
 
-private void grpbr_GroupBarItemAdded(object sender, GroupBarItemEventArgs args)
+private void grp_GroupBarItemAdded(object sender, GroupBarItemEventArgs args)
 
 {
 
@@ -80,7 +80,7 @@ this.listView1.Items.Add(listViewItem1);
 
 // The GroupBarItemAdded event occurs when a GroupBar Item is added to the GroupBar Items Collection.
 
-Private Sub grpbr_GroupBarItemAdded(ByVal sender As Object, ByVal args As GroupBarItemEventArgs)
+Private Sub grp_GroupBarItemAdded(ByVal sender As Object, ByVal args As GroupBarItemEventArgs)
 
 listViewItem1 = New System.Windows.Forms.ListViewItem(New String() {"GroupBarItemAdded", "Item Added: " + args.Item.Text})
 
@@ -102,7 +102,7 @@ The event handler of this event receives an argument of type GroupBarItemEventAr
 
 // The GroupBarItemRemoved event occurs when a GroupBar Item is removed from the GroupBar Items Collection.
 
-private void grpbr_GroupBarItemRemoved(object sender, GroupBarItemEventArgs args)
+private void grp_GroupBarItemRemoved(object sender, GroupBarItemEventArgs args)
 
 {
 
@@ -119,7 +119,7 @@ this.listView1.Items.Add(listViewItem1);
 
 // The GroupBarItemRemoved event occurs when a GroupBar Item is removed from the GroupBar Items Collection.
 
-Private Sub grpbr_GroupBarItemRemoved(ByVal sender As Object, ByVal args As GroupBarItemEventArgs)
+Private Sub grp_GroupBarItemRemoved(ByVal sender As Object, ByVal args As GroupBarItemEventArgs)
 
 listViewItem1 = New System.Windows.Forms.ListViewItem(New String() {"GroupBarItemRemoved", "Item Removed: " + args.Item.Text})
 
@@ -140,7 +140,7 @@ The event handler of this event receives an argument of type GroupItemRenamedEve
 
 // The GroupBarItemRenamed event occurs when a GroupBar Item is renamed by an in-place edit operation.
 
-private void grpbr_GroupBarItemRenamed(object obj, GroupItemRenamedEventArgs arg)
+private void grp_GroupBarItemRenamed(object obj, GroupItemRenamedEventArgs arg)
 
 {
 
@@ -157,7 +157,7 @@ this.listView1.Items.Add(listViewItem1);
 
 // The GroupBarItemRenamed event occurs when a GroupBar Item is renamed by an inplace edit operation.
 
-Private Sub grpbr_GroupBarItemRenamed(ByVal obj As Object, ByVal arg As GroupItemRenamedEventArgs)
+Private Sub grp_GroupBarItemRenamed(ByVal obj As Object, ByVal arg As GroupItemRenamedEventArgs)
 
 listViewItem1 = New System.Windows.Forms.ListViewItem(New String() {"GroupBarItemRenamed", "Item Renamed: " + arg.Index + " NewLabel: " + arg.NewLabel + " OldLabel: " + arg.OldLabel})
 
@@ -179,7 +179,7 @@ The event handler of this event receives an argument of type GroupItemSelectionC
 
 // The GroupBarItemSelected event occurs when a GroupBar Item is selected in the GroupBar control. 
 
-private void grpbr_GroupBarItemSelectionChanging(object sender, GroupBarItemSelectionChangingEventArgs args)
+private void grp_GroupBarItemSelectionChanging(object sender, GroupBarItemSelectionChangingEventArgs args)
 
 {
 
@@ -197,7 +197,7 @@ this.listView1.Items.Add(listViewItem1);
 
 // The GroupBarItemSelected event occurs when a GroupBar Item is selected in the GroupBar control. 
 
-Private Sub grpbr_GroupBarItemSelectionChanging(ByVal sender As Object, ByVal args As GroupBarItemSelectionChangingEventArgs)
+Private Sub grp_GroupBarItemSelectionChanging(ByVal sender As Object, ByVal args As GroupBarItemSelectionChangingEventArgs)
 
 listViewItem1 = New System.Windows.Forms.ListViewItem(New String() {"GroupBarItemSelectionChanging ", "Old Selected: " + args.OldSelected.ToString() + " New Selected: " + args.NewSelected.ToString()})
 
@@ -390,15 +390,15 @@ blend.Positions = new float[] { 0.0F, 0.5f, 1.0F };
 
 // Estimate the GroupBar Item bounds.
 
-Rectangle rcgroupbaritem = args.Bounds;
+Rectangle rcGroupBarItem = args.Bounds;
 
 // Create and initialize the LinearGradientBrush.
 
-System.Drawing.Drawing2D.LinearGradientBrush lgbrush = new System.Drawing.Drawing2D.LinearGradientBrush(rcgroupbaritem, gbOutlook.GroupBarItems[0].BackColor, SystemColors.ScrollBar, 90, true);
+System.Drawing.Drawing2D.LinearGradientBrush brush = new System.Drawing.Drawing2D.LinearGradientBrush(rcGroupBarItem, gbOutlook.GroupBarItems[0].BackColor, SystemColors.ScrollBar, 90, true);
 
-lgbrush.Blend = blend;
+brush.Blend = blend;
 
-args.BackgroundBrush = lgbrush;
+args.BackgroundBrush = brush;
 
 }
 
@@ -418,15 +418,15 @@ blend.Positions = New Single() {0.0F, 0.5F, 1.0F}
 
 ' Estimate the GroupBar Item bounds. 
 
-Dim rcgroupbaritem As Rectangle = args.Bounds
+Dim rcGroupBarItem As Rectangle = args.Bounds
 
 ' Create and initialize the LinearGradientBrush. 
 
-Dim lgbrush As New System.Drawing.Drawing2D.LinearGradientBrush(rcgroupbaritem, gbOutlook.GroupBarItems(0).BackColor, SystemColors.ScrollBar, 90, True)
+Dim brush As New System.Drawing.Drawing2D.LinearGradientBrush(rcGroupBarItem, gbOutlook.GroupBarItems(0).BackColor, SystemColors.ScrollBar, 90, True)
 
-lgbrush.Blend = blend
+brush.Blend = blend
 
-args.BackgroundBrush = lgbrush
+args.BackgroundBrush = brush
 
 End Sub
 

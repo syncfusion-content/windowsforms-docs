@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ContextMenuStripEx | WindowsForms | Syncfusion
-description: contextmenustripex
+description: ContextMenuStripEx
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -85,7 +85,7 @@ Me.EditorContextMenuStripEx = New Syncfusion.Windows.Forms.Tools.ContextMenuStri
 
 
 
-'Assigning the contextmenustrip created
+'Assigning the ContextMenuStrip created
 
 Me.richTextBox1.ContextMenuStrip = Me.EditorContextMenuStripEx
 

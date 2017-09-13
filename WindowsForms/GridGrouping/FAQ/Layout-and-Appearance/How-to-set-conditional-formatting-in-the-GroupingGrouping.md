@@ -17,29 +17,29 @@ To set up conditional formatting in the GroupingGrid, use the following code.
 
 //Declares conditional format descriptor.
 
-GridConditionalFormatDescriptor gcfd = new GridConditionalFormatDescriptor();
+GridConditionalFormatDescriptor des = new GridConditionalFormatDescriptor();
 
 
 
 //Sets some properties.
 
-gcfd.Appearance.AnyRecordFieldCell.Font.Bold = true;
+des.Appearance.AnyRecordFieldCell.Font.Bold = true;
 
-gcfd.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.LightGreen);
+des.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.LightGreen);
 
 
 
 //Expression which is applied on the table data.
 
-gcfd.Expression = "[ColumnName] like \'true\'";
+des.Expression = "[ColumnName] like \'true\'";
 
 
 
 //Sets name to the conditional format and adds it to the grid.
 
-gcfd.Name = "gcfd";
+des.Name = "grid";
 
-this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(gcfd);
+this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(des);
 
 
 {% endhighlight %}
@@ -49,29 +49,29 @@ this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(gcfd);
 
 'Declares conditional format descriptor.
 
-Dim gcfd As GridConditionalFormatDescriptor = New GridConditionalFormatDescriptor()
+Dim des As GridConditionalFormatDescriptor = New GridConditionalFormatDescriptor()
 
 
 
 'Sets some properties.
 
-gcfd.Appearance.AnyRecordFieldCell.Font.Bold = True
+des.Appearance.AnyRecordFieldCell.Font.Bold = True
 
-gcfd.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.LightGreen)
+des.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.LightGreen)
 
 
 
 'Expression which is applied on the table data.
 
-gcfd.Expression = "[ColumnName] like 'true'"
+des.Expression = "[ColumnName] like 'true'"
 
 
 
 'Sets name to the conditional format and adds it to the grid.
 
-gcfd.Name = "gcfd"
+des.Name = "des"
 
-Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(gcfd)
+Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(des)
 
 {% endhighlight %}
 

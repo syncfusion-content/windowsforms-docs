@@ -37,23 +37,23 @@ private GridSummaryColumnDescriptor GetWeightedSummaryColumnDescriptor(string so
 
 {
 
-GridSummaryColumnDescriptor wgtSumCol = new GridSummaryColumnDescriptor();
+GridSummaryColumnDescriptor wetSumCol = new GridSummaryColumnDescriptor();
 
-wgtSumCol.Name = string.Format("{0}_{1}", sourceCol, weightCol); //special name following the convention above
+wetSumCol.Name = string.Format("{0}_{1}", sourceCol, weightCol); //special name following the convention above
 
-wgtSumCol.DataMember = sourceCol; //the column this summary is applied to
+wetSumCol.DataMember = sourceCol; //the column this summary is applied to
 
-wgtSumCol.DisplayColumn = sourceCol; //where this summary is displayed
+wetSumCol.DisplayColumn = sourceCol; //where this summary is displayed
 
-wgtSumCol.Format = "{WeightedAverage:#.#}"; //what is displayed in the summary
+wetSumCol.Format = "{WeightedAverage:#.#}"; //what is displayed in the summary
 
-wgtSumCol.SummaryType = SummaryType.Custom; //marks this as a Custom Summary
+wetSumCol.SummaryType = SummaryType.Custom; //marks this as a Custom Summary
 
-wgtSumCol.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+wetSumCol.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right;
 
-wgtSumCol.MaxLength = 6;
+wetSumCol.MaxLength = 6;
 
-return wgtSumCol;
+return wetSumCol;
 
 }
 
@@ -81,23 +81,23 @@ End Sub
 
 Private Function GetWeightedSummaryColumnDescriptor(ByVal sourceCol As String, ByVal weightCol As String) As GridSummaryColumnDescriptor
 
-Dim wgtSumCol As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor
+Dim wetSumCol As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor
 
-wgtSumCol.Name = String.Format("{0}_{1}", sourceCol, weightCol) 'special name following the convention above
+wetSumCol.Name = String.Format("{0}_{1}", sourceCol, weightCol) 'special name following the convention above
 
-wgtSumCol.DataMember = sourceCol 'the column this summary is applied to
+wetSumCol.DataMember = sourceCol 'the column this summary is applied to
 
-wgtSumCol.DisplayColumn = sourceCol 'where this summary is displayed
+wetSumCol.DisplayColumn = sourceCol 'where this summary is displayed
 
-wgtSumCol.Format = "{WeightedAverage:#.#}" 'what is displayed in the summary
+wetSumCol.Format = "{WeightedAverage:#.#}" 'what is displayed in the summary
 
-wgtSumCol.SummaryType = SummaryType.Custom 'marks this as a Custom Summary
+wetSumCol.SummaryType = SummaryType.Custom 'marks this as a Custom Summary
 
-wgtSumCol.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right
+wetSumCol.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right
 
-wgtSumCol.MaxLength = 6
+wetSumCol.MaxLength = 6
 
-Return wgtSumCol
+Return wetSumCol
 
 End Function
 

@@ -15,23 +15,22 @@ SpellCheckerAdv allows customizing options to add misspelled words from the inpu
 
 {% highlight C# %}
 
-SpellCheckerAdv spellCheckeradv = new SpellCheckerAdv();
+SpellCheckerAdv checker = new SpellCheckerAdv();
 
-spellCheckeradv.IgnoreEmailAddress = true;
+checker.IgnoreEmailAddress = true;
+checker.IgnoreFileNames = true;
 
-spellCheckeradv.IgnoreFileNames = true;
+checker.IgnoreHtmlTags = true;
 
-spellCheckeradv.IgnoreHtmlTags = true;
+checker.IgnoreUrl = true;
 
-spellCheckeradv.IgnoreUrl = true;
+checker.IgnoreSpecialSymbols = true;
 
-spellCheckeradv.IgnoreSpecialSymbols = true;
+checker.IgnoreMixedCaseWords = true;
 
-spellCheckeradv.IgnoreMixedCaseWords = true;
+checker.IgnoreUpperCaseWords = true;
 
-spellCheckeradv.IgnoreUpperCaseWords = true;
-
-spellCheckeradv.IgnoreAlphaNumericWords = true;
+checker.IgnoreAlphaNumericWords = true;
 
 
 {% endhighlight %}
@@ -40,23 +39,23 @@ spellCheckeradv.IgnoreAlphaNumericWords = true;
 {% highlight VB %}
 
 
-Private spellChecker As New SpellCheckerAdv()
+Private checker As New SpellCheckerAdv()
 
-spellCheckeradv.IgnoreEmailAddress = True
+checker.IgnoreEmailAddress = True
 
-spellCheckeradv.IgnoreFileNames = True
+checker.IgnoreFileNames = True
 
-spellCheckeradv.IgnoreHtmlTags = True
+checker.IgnoreHtmlTags = True
 
-spellCheckeradv.IgnoreUrl = True
+checker.IgnoreUrl = True
 
-spellCheckeradv.IgnoreSpecialSymbols = True
+checker.IgnoreSpecialSymbols = True
 
-spellCheckeradv.IgnoreMixedCaseWords = True
+checker.IgnoreMixedCaseWords = True
 
-spellCheckeradv.IgnoreUpperCaseWords = True
+checker.IgnoreUpperCaseWords = True
 
-spellCheckeradv.IgnoreAlphaNumericWords = True
+checker.IgnoreAlphaNumericWords = True
 
 {% endhighlight %}
 

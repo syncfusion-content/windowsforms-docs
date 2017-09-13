@@ -24,17 +24,17 @@ if(e.RowIndex==e.ColIndex)
 
    // Creates an instance of GridStyleInfo. 
 
-Syncfusion.Windows.Forms.Grid.GridStyleInfo gsi=e.Style;
+Syncfusion.Windows.Forms.Grid.GridStyleInfo gs=e.Style;
 
 
 
 // Changes backcolor.
 
-gsi.BackColor=Color.Green;
+gs.BackColor=Color.Green;
 
 
 
-monthCalendarAdv1.SetInfo(e.RowIndex,e.ColIndex,gsi);
+monthCalendarAdv1.SetInfo(e.RowIndex,e.ColIndex,gs);
 
 }
 
@@ -55,17 +55,17 @@ Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, ByVal e 
 
 If e.RowIndex = e.ColIndex Then 
 
-Dim gsi As Syncfusion.Windows.Forms.Grid.GridStyleInfo = e.Style 
+Dim gs As Syncfusion.Windows.Forms.Grid.GridStyleInfo = e.Style 
 
 
 
 ' Changes backcolor.
 
-gsi.BackColor = Color.Green 
+gs.BackColor = Color.Green 
 
 
 
-monthCalendarAdv1.SetInfo(e.RowIndex, e.ColIndex, gsi) 
+monthCalendarAdv1.SetInfo(e.RowIndex, e.ColIndex, gs) 
 
 End If 
 

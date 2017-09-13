@@ -35,7 +35,7 @@ this.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.ShowFilterBar=tru
 
 //Sets the caption.
 
-this.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.CaptionText="Hai";
+this.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.CaptionText="Hail";
 
 
 
@@ -69,7 +69,7 @@ Me.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.ShowAddNewRecordBef
 
 'Sets the caption.
 
-Me.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.CaptionText="Hai"
+Me.gridGroupingControl1.TableDescriptor.TopLevelGroupOptions.CaptionText="Hail"
 
 
 

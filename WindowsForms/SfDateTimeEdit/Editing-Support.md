@@ -16,7 +16,7 @@ The DateTime value of the `SfDateTimeEdit` control can be updated by editing the
 
 ## Textbox Editing
 
-The DateTime can be edited in the TextBox of the `SfDateTimeEdit` control when the `DateTimeEditingMode` is Default. In Default editing mode the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, SfDateTimeEdit control automatically update the value in the correct pattern on lost focus. i.e If the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is enterted as "Mar 28 2017" in Editing text box, DateTimeText will be automatially converted according to LongDate pattern while pressing the enter key or on lost focus of the control.
+The DateTime can be edited in the TextBox of the `SfDateTimeEdit` control when the `DateTimeEditingMode` is Default. In Default editing mode the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, SfDateTimeEdit control automatically update the value in the correct pattern on lost focus. i.e If the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in Editing text box, DateTimeText will be automatically converted according to LongDate pattern while pressing the enter key or on lost focus of the control.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default
 
 ## Mask Editing
 
-The Mask Edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In Mask editing mode the date will be seperated into different fields such as Date, Month, Year, Minutes, Hours and Seconds. The field can be updated by selecting the field and pressing the UP or Down arrow to increament or decreament the selected field.
+The Mask Edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In Mask editing mode the date will be seperated into different fields such as Date, Month, Year, Minutes, Hours and Seconds. The field can be updated by selecting the field and pressing the UP or Down arrow to increment or decrement the selected field.
 
 {% tabs %}
 

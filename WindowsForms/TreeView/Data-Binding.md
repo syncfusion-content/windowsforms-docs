@@ -12,67 +12,34 @@ documentation: ug
 TreeViewAdv does not have direct option to populate from XML and DataTable. This below section will help to load TreeViewAdv from XML and DataTable.
 
 
-
-
-## XML
-
-
-{% highlight XML %}
-
-~~~ 
-<?xml version="1.0" encoding="utf-8" ?> 
-<countries>
-	<country>
-		<name>USA</name>
-		<states>
-			<state>Alabama</state>
-			<state>Alaska</state>
-			<state>Arkansas</state>
-			<state>California</state>
-		</states>
-	</country>
-	<country>
-		<name>Canada</name>
-		<states>
-			<state>Alberta</state>
-			<state>Manitoba</state>
-			<state>Saskatchewan</state>
-			<state>Ontario</state>
-			<state>Quebec</state>
-			<state>British Columbia</state>
-			<state>Yukon</state>
-			<state>Northwest Territories</state>
-		</states>
-	</country>
-</countries>
-
-~~~
-
-{% endhighlight %}
+{% tabs %}
 
 {% highlight c# %}
 
-        /// <summary>
+ /// <summary>
         /// To load TreeViewAdv from XML File
         /// </summary>
         private void LoadTreeViewAdvfromXML()
         {
             XmlDocument xDoc = new XmlDocument();
-			//Load the xml file
+
             xDoc.Load("TreeView.xml");
+
             treeViewAdv1.Nodes.Clear();
+
             treeViewAdv1.Nodes.Add(new
               TreeNodeAdv(xDoc.DocumentElement.Name));
+
             TreeNodeAdv tNode = new TreeNodeAdv();
+
             tNode = (TreeNodeAdv)treeViewAdv1.Nodes[0];
+
             LoadFromXML(xDoc.DocumentElement, tNode);
+
             treeViewAdv1.ExpandAll();
         }
 
-        /// <summary>
-		/// To load information to XML File
-		/// </summary>
-        private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
+		  private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
         {
             XmlNode xNode;
             TreeNodeAdv tNode;
@@ -86,10 +53,14 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
                     treeNode.Nodes.Add(new TreeNodeAdv(xNode.Name));
                     tNode = treeNode.Nodes[x];
                     LoadFromXML(xNode, tNode);
-                }
-            }
-            else 
-                treeNode.Text = xmlNode.OuterXml.Trim();
+                }}
+            
+			else 
+                treeNode.Text = xmlNode.OuterXml.Trim();}
+				 //click  event to LoadTreeViewAdvfromXML()
+        private void buttonAdv1_Click(object sender, EventArgs e)
+        {
+            LoadTreeViewAdvfromXML();
         }
 
         /// <summary>
@@ -111,7 +82,7 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
             }
             XmlTextWriter.WriteEndElement();
             XmlTextWriter.Close();
-        }
+}
 
         /// <summary>
         /// Iterate function helps to save TreeNodeAdv information to XML
@@ -128,17 +99,14 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
                 }
                 else
                 {
-                    XmlTextWriter.WriteString(node.Text);
-                }
-            }
-        }
+                    XmlTextWriter.WriteString(node.Text);}}}
 
-
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            ExportToXML(treeViewAdv1, "TreeView.xml");}
 {% endhighlight %}
-
-{% highlight vbnet %}
-
-		''' <summary>
+{% highlight VB %}
+''' <summary>
 		''' To load TreeViewAdv from XML File
 		''' </summary>
 		Private Sub LoadTreeViewAdvfromXML()
@@ -151,7 +119,6 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
 			LoadFromXML(xDoc.DocumentElement, tNode)
 			treeViewAdv1.ExpandAll()
 		End Sub
-
 
 		Private Sub LoadFromXML(ByVal xmlNode As XmlNode, ByVal treeNode As TreeNodeAdv)
 			Dim xNode As XmlNode
@@ -167,9 +134,11 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
 				Next x
 			Else
 				treeNode.Text = xmlNode.OuterXml.Trim()
-			End If
-		End Sub
+			End If End Sub
 
+		Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles buttonAdv1.Click
+			LoadTreeViewAdvfromXML()
+		End Sub
 		''' <summary>
 		''' To write details in XML Elements
 		''' </summary>
@@ -188,7 +157,6 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
 			XmlTextWriter.WriteEndElement()
 			XmlTextWriter.Close()
 		End Sub
-
 		''' <summary>
 		''' Iterate function helps to save TreeNodeAdv information to XML
 		''' </summary>
@@ -202,147 +170,13 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
 					XmlTextWriter.WriteString(node.Text)
 				End If
 			Next node
+		
+		End Sub
+		Private Sub buttonAdv2_Click(ByVal sender As Object, ByVal e As EventArgs) Handles buttonAdv2.Click
+			ExportToXML(treeViewAdv1, "TreeView.xml")
 		End Sub
 
-	End Class
-End Namespace
-
 {% endhighlight %}
-
-![](DataBinding_images/databindingimage2.png)
-
-## DataTable
-
-{% highlight c# %}
-
-/// <summary>
-/// Adding namespace
-/// </summary>
-using Syncfusion.Windows.Forms;
-using Syncfusion.Windows.Forms.Tools;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-public Form1()
-        {
-            InitializeComponent();
-
-            dt.Columns.Add("Name", typeof(string));
-            dt.Columns.Add("Parent", typeof(string));
-
-            dt.Rows.Add(new string[] { "Root", "0" });
-            dt.Rows.Add(new string[] { "Work", "Root" });
-            dt.Rows.Add(new string[] { "Home", "Root" });
-            dt.Rows.Add(new string[] { "One", "Work" });
-            dt.Rows.Add(new string[] { "Two", "Work" });
-            dt.Rows.Add(new string[] { "One", "Home" });
-            dt.Rows.Add(new string[] { "Two", "Home" });
-            dt.Rows.Add(new string[] { "Three", "Home" });
-            dt.Rows.Add(new string[] { "Other", "Root" });
-
-            ds.Tables.Add(dt);
-            //add a relationship
-            ds.Relations.Add("TreeParentChild", ds.Tables["AddressLists"].Columns["Name"],
-                ds.Tables["AddressLists"].Columns["Parent"], false);
-        }
-        #endregion
-
-        #region Function
-        /// <summary>
-        /// To Populate TreeView
-        /// </summary>
-        public void PopulateTree(DataRow dr, TreeNodeAdv pNode)
-        {
-            foreach (DataRow row in dr.GetChildRows("TreeParentChild"))
-            {
-                TreeNodeAdv cChild = new TreeNodeAdv(row["Name"].ToString());
-                pNode.Nodes.Add(cChild);
-                //Recursively build the tree
-                PopulateTree(row, cChild);
-            }
-        }
-
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-
-
-' Adding name spaces
-
-Imports Syncfusion.Windows.Forms
-Imports Syncfusion.Windows.Forms.Tools
-Imports System
-Imports System.Collections.Generic
-Imports System.ComponentModel
-Imports System.Data
-Imports System.Drawing
-Imports System.Linq
-Imports System.Text
-Imports System.Threading.Tasks
-Imports System.Windows.Forms
-
-Namespace TreeViewDataBinding
-	Partial Public Class Form1
-		Inherits MetroForm
-
-		#Region "Variables"
-		' DataTable
-		Private dt As New DataTable("AddressLists")
-
-		'Use a DataSet to manage the data
-		Private ds As New DataSet()
-		#End Region
-
-		#Region "Constructor"
-		Public Sub New()
-			InitializeComponent()
-
-			dt.Columns.Add("Name", GetType(String))
-			dt.Columns.Add("Parent", GetType(String))
-
-			dt.Rows.Add(New String() { "Root", "0" })
-			dt.Rows.Add(New String() { "Work", "Root" })
-			dt.Rows.Add(New String() { "Home", "Root" })
-			dt.Rows.Add(New String() { "One", "Work" })
-			dt.Rows.Add(New String() { "Two", "Work" })
-			dt.Rows.Add(New String() { "One", "Home" })
-			dt.Rows.Add(New String() { "Two", "Home" })
-			dt.Rows.Add(New String() { "Three", "Home" })
-			dt.Rows.Add(New String() { "Other", "Root" })
-
-			ds.Tables.Add(dt)
-			'add a relationship
-			ds.Relations.Add("TreeParentChild", ds.Tables("AddressLists").Columns("Name"), ds.Tables("AddressLists").Columns("Parent"), False)
-		End Sub
-		#End Region
-
-		#Region "Function"
-		''' <summary>
-		''' To Populate TreeView
-		''' </summary>
-		Public Sub PopulateTree(ByVal dr As DataRow, ByVal pNode As TreeNodeAdv)
-			For Each row As DataRow In dr.GetChildRows("TreeParentChild")
-				Dim cChild As New TreeNodeAdv(row("Name").ToString())
-				pNode.Nodes.Add(cChild)
-				'Recursively build the tree
-				PopulateTree(row, cChild)
-			Next row
-		End Sub
-
-		#End Region
-
-	End Class
-End Namespace
-
-{% endhighlight %}
+{% endtabs %}
 
 ![](DataBinding_images/databindingimage1.png)

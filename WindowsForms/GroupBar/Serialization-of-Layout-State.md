@@ -55,15 +55,15 @@ The following step-by-step procedure helps you to achieve the same.
 
 		ArrayList temp = new ArrayList();
 
-		foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
+		foreach (GroupBarItem item in this.groupBar1.GroupBarItems)
 
 		{
 
 		// Store the index of each GroupBar Item in the Navigation Pane.
 
-		if (gbi.InNavigationPane == true)
+		if (item.InNavigationPane == true)
 
-		temp.Add(this.groupBar1.GroupBarItems.IndexOf(gbi));
+		temp.Add(this.groupBar1.GroupBarItems.IndexOf(item));
 
 		}
 
@@ -73,11 +73,11 @@ The following step-by-step procedure helps you to achieve the same.
 
 		// Persist this information to an XML file using the AppStateSerializer class.
 
-		AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
+		AppStateSerializer serial = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
 
-		aser.SerializeObject("StackedModeState", temp);
+		serial.SerializeObject("StackedModeState", temp);
 
-		aser.PersistNow();
+		serial.PersistNow();
 
 		}
 
@@ -94,17 +94,17 @@ The following step-by-step procedure helps you to achieve the same.
 
 		Dim temp As ArrayList = New ArrayList()
 
-		For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
+		For Each item As GroupBarItem In Me.groupBar1.GroupBarItems
 
 		' Store the index of each GroupBar Item in the Navigation Pane.
 
-		If gbi.InNavigationPane = True Then
+		If item.InNavigationPane = True Then
 
-		temp.Add(Me.groupBar1.GroupBarItems.IndexOf(gbi))
+		temp.Add(Me.groupBar1.GroupBarItems.IndexOf(item))
 
 		End If
 
-		Next gbi
+		Next item
 
 		' Store the index of the selected GroupBar Item.
 
@@ -112,11 +112,11 @@ The following step-by-step procedure helps you to achieve the same.
 
 		' Persist this information to an XML file using the AppStateSerializer class.
 
-		Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
+		Dim serial As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
 
-		aser.SerializeObject("StackedModeState", temp)
+		serial.SerializeObject("StackedModeState", temp)
 
-		aser.PersistNow()
+		serial.PersistNow()
 
 		End Sub
 
@@ -133,17 +133,17 @@ The following step-by-step procedure helps you to achieve the same.
 
 		// De-Persist this information from the XML file using the AppStateSerializer class.
 
-		AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
+		AppStateSerializer serial = new AppStateSerializer(SerializeMode.XMLFile, "..\\..\\StateInfo");
 
-		ArrayList temp = aser.DeserializeObject("StackedModeState") as ArrayList;
+		ArrayList temp = serial.DeserializeObject("StackedModeState") as ArrayList;
 
 		// Reset the InNavigationPane for all GroupBar Items.
 
-		foreach (GroupBarItem gbi in this.groupBar1.GroupBarItems)
+		foreach (GroupBarItem item in this.groupBar1.GroupBarItems)
 
 		{
 
-		gbi.InNavigationPane = false;
+		item.InNavigationPane = false;
 
 		}
 
@@ -177,18 +177,18 @@ The following step-by-step procedure helps you to achieve the same.
 
 		' De-Persist this information from the XML file using the AppStateSerializer class.
 
-		Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
+		Dim serial As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "..\..\StateInfo")
 
-		Dim temp As ArrayList = CType(IIf(TypeOf aser.DeserializeObject("StackedModeState") Is ArrayList,                   
-			 aser.DeserializeObject("StackedModeState"), Nothing), ArrayList)
+		Dim temp As ArrayList = CType(IIf(TypeOf serial.DeserializeObject("StackedModeState") Is ArrayList,                   
+			 serial.DeserializeObject("StackedModeState"), Nothing), ArrayList)
 
 		' Reset the InNavigationPane for all GroupBar Items.
 
-		For Each gbi As GroupBarItem In Me.groupBar1.GroupBarItems
+		For Each item As GroupBarItem In Me.groupBar1.GroupBarItems
 
-		gbi.InNavigationPane = False
+		item.InNavigationPane = False
 
-		Next gbi
+		Next item
 
 		' Restore the saved state by setting the appropriate InNavigationPane entries.
 
