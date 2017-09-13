@@ -20,7 +20,7 @@ You can get access to a nested table inside a record using the following code.
 
 //Accesses a nested table.
 
-NestedTable nt = groupingGrid.Table.Records[n].NestedTables[0];
+NestedTable nestedTable = groupingGrid.Table.Records[n].NestedTables[0];
 
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ NestedTable nt = groupingGrid.Table.Records[n].NestedTables[0];
 
 'Accesses a nested table.
 
-Dim nt As NestedTable = groupingGrid.Table.Records(n).NestedTables(0)
+Dim nestedTable As NestedTable = groupingGrid.Table.Records(n).NestedTables(0)
 
 Whereas n is the specific record that owns the nested table.
 
@@ -45,7 +45,7 @@ The NestedTable has a ChildTable property.
 
 //Gets the child of the nested table.
 
-ChildTable ct = nt.ChildTable;
+ChildTable ct = nestedTable.ChildTable;
 
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ ChildTable ct = nt.ChildTable;
 
 'Gets the child of the nested table.
 
-Dim ct As ChildTable = nt.ChildTable
+Dim ct As ChildTable = nestedTable.ChildTable
 {% endhighlight %}
 To get access to a specific record in that child table, use the code snippet given below.
 

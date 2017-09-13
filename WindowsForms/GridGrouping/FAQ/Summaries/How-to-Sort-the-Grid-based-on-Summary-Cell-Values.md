@@ -35,7 +35,9 @@ foreach (SortColumnDescriptor col in tableControl.TableDescriptor.GroupedColumns
 
    if (!flag)
 
-   group.Add(col.Name, col.Clone());                                   col.SetGroupSummarySortOrder(gs.GetSummaryDescriptorName(),caption, _sumSort);    
+      group.Add(col.Name, col.Clone());
+
+   col.SetGroupSummarySortOrder(gs.GetSummaryDescriptorName(),caption, _sumSort);    
 
   }
 
