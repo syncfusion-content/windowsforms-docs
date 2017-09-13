@@ -17,7 +17,7 @@ You can access DisplayElements with row index by using the following code.
 
 // Accesses a particular display element.
 
-Element el=this.gridGroupingControl1.Table.DisplayElements[rowing].ParentElement;
+Element el=this.gridGroupingControl1.Table.DisplayElements[rowIndex].ParentElement;
 {% endhighlight %}
 
 
@@ -27,7 +27,7 @@ Element el=this.gridGroupingControl1.Table.DisplayElements[rowing].ParentElement
 
 ' Accesses a particular display element.
 
-Dim el As Element = Me.gridGroupingControl1.Table.DisplayElements(rowing).ParentElement
+Dim el As Element = Me.gridGroupingControl1.Table.DisplayElements(rowIndex).ParentElement
 
 
 {% endhighlight %}

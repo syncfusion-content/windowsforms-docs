@@ -59,13 +59,13 @@ public int Compare(object x, object y)
 
 
 
-SortColumnDescriptor cdn = new Syncfusion.Grouping.SortColumnDescriptor();
+SortColumnDescriptor sortColumnDescriptor = new Syncfusion.Grouping.SortColumnDescriptor();
 
-this.gridGroupingControl1.TableDescriptor.SortedColumns.Add(cdn);
+this.gridGroupingControl1.TableDescriptor.SortedColumns.Add(sortColumnDescriptor);
 
-cdn.SortDirection = System.ComponentModel.ListSortDirection.Descending;
+sortColumnDescriptor.SortDirection = System.ComponentModel.ListSortDirection.Descending;
 
-cdn.Comparer = new StrLenComparer();
+sortColumnDescriptor.Comparer = new StrLenComparer();
 
 {% endhighlight %}
 
@@ -101,13 +101,13 @@ End Function
 
 
 
-Private cdn As SortColumnDescriptor = New Syncfusion.Grouping.SortColumnDescriptor()
+Private sortColumnDescriptor As SortColumnDescriptor = New Syncfusion.Grouping.SortColumnDescriptor()
 
-Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add(cdn)
+Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add(sortColumnDescriptor)
 
-Private cdn.SortDirection = System.ComponentModel.ListSortDirection.Descending
+Private sortColumnDescriptor.SortDirection = System.ComponentModel.ListSortDirection.Descending
 
-Private cdn.Comparer = New StrLenComparer()
+Private sortColumnDescriptor.Comparer = New StrLenComparer()
 
 {% endhighlight %}
 

@@ -114,7 +114,7 @@ public class GridTableFilterBarCellModel1: GridTableFilterBarCellModel
 
     {
 
-            return new Cellared(control, this); 
+            return new CellRenderer(control, this); 
 
     }
 
@@ -122,11 +122,11 @@ public class GridTableFilterBarCellModel1: GridTableFilterBarCellModel
 
 }
 
-public class Cellared : GridTableFilterBarCellRenderer
+public class CellRenderer : GridTableFilterBarCellRenderer
 
 {
 
-      public Cellared(GridControlBase grid, GridCellModelBase cellModel): base(grid , cellModel)
+      public CellRenderer(GridControlBase grid, GridCellModelBase cellModel): base(grid , cellModel)
 
      {
 
@@ -263,7 +263,7 @@ Public Class GridTableFilterBarCellModel1: Inherits GridTableFilterBarCellModel
        Public Overrides Function CreateRenderer(ByVal control As GridControlBase) As GridCellRendererBase 
 
 
-              Return New Cellared(control, Me) 
+              Return New CellRenderer(control, Me) 
 
        End Function 
 
@@ -271,7 +271,7 @@ End Class
 
 } 
 
-Public Class CCellared : Inherits GridTableFilterBarCellRenderer 
+Public Class CellRenderer : Inherits GridTableFilterBarCellRenderer 
 
 
            Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridCellModelBase) 
