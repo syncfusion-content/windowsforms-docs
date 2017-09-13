@@ -9,9 +9,8 @@ documentation: ug
 
 # Data Binding
 
-TreeViewAdv control supports data binding with hierarchical data source like XML and displays the information.
+TreeViewAdv does not have direct option to populate from XML and DataTable. This below section will help to load TreeViewAdv from XML and DataTable.
 
-The TreeViewAdv architecture provides a way to consume information from an external XML file, DataSet objects etc and allows the user to convert the Tree to XML structure and vice versa. To implement this data binding concept in TreeViewAdv, the user should drag and drop a TreeViewAdv control, RichTextBox control and MainFrameBarManager to the form. Create bar items and handle the below click events accordingly.
 
 {% tabs %}
 
@@ -180,5 +179,4 @@ The TreeViewAdv architecture provides a way to consume information from an exter
 {% endhighlight %}
 {% endtabs %}
 
-
-![](Concepts-and--Features_images/Concepts-and--Features_img60.jpeg)
+![](DataBinding_images/databindingimage1.png)
