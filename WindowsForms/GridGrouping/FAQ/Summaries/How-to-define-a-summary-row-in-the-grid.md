@@ -17,23 +17,23 @@ This can be done using the code below.
 
 //Defines a summary column descriptor.
 
-GridSummaryColumnDescriptor sd = new GridSummaryColumnDescriptor();
+GridSummaryColumnDescriptor sdc = new GridSummaryColumnDescriptor();
 
 //Summary for Col2. 
 
-sd.DataMember= "Col2";
+sdc.DataMember= "Col2";
 
 //Sets under which column you need to see the total.
 
-sd.DisplayColumn = "Col2";
+sdc.DisplayColumn = "Col2";
 
 //Here you specify the format of the field to be displayed.
 
-sd.Format = "{Count}";
+sdc.Format = "{Count}";
 
-//Here you set the type of the summary i.e totalling or average or count etc...
+//Here you set the type of the summary i.e total or average or count etc...
 
-sd.SummaryType = SummaryType.DistinctCount;
+sdc.SummaryType = SummaryType.DistinctCount;
 
 //Here"Total" is the text that occurs as the header.
 
@@ -49,29 +49,29 @@ this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(new GridSummaryRowDesc
 
 'Defines a summary column descriptor.
 
-Private sd As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor()
+Private sdc As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor()
 
 'Summary for Col2. 
 
-sd.DataMember= "Col2"
+sdc.DataMember= "Col2"
 
 'Sets under which column you need to see the total.
 
-sd.DisplayColumn = "Col2"
+sdc.DisplayColumn = "Col2"
 
 'Here you specify the format of the field to be displayed.
 
-sd.Format = "{Count}"
+sdc.Format = "{Count}"
 
-'Here you set the type of the summary i.e totalling or average or count etc...
+'Here you set the type of the summary i.e total or average or count etc...
 
-sd.SummaryType = SummaryType.DistinctCount
+sdc.SummaryType = SummaryType.DistinctCount
 
 'Here "Total" is the text that occurs as the header.
 
 'Creates a new SummaryRowDescriptor and adds it to the SummaryRows collection
 
-Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(New GridSummaryRowDescriptor("Col2", "Total", sd))
+Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(New GridSummaryRowDescriptor("Col2", "Total", sdc))
 
 
 {% endhighlight  %}

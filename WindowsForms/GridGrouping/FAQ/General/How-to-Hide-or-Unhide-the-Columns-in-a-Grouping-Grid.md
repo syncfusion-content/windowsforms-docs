@@ -25,7 +25,7 @@ this.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("Col1");
 
 
 
-//Unhides.
+//Unhide.
 
 this.gridGroupingControl1.TableDescriptor.VisibleColumns.Add("Col1");
 
@@ -42,7 +42,7 @@ Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("Col1")
 
 
 
-'Unhides.
+'Unhide.
 
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Add("Col1")
 

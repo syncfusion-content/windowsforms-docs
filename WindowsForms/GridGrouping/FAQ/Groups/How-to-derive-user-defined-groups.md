@@ -17,13 +17,13 @@ This can be done using the code below.
 
 //Group "Col2" using a custom categorizer and Comparer.
 
-Syncfusion.Grouping.SortColumnDescriptor cd = new Syncfusion.Grouping.SortColumnDescriptor("Col2");
+Syncfusion.Grouping.SortColumnDescriptor cdn = new Syncfusion.Grouping.SortColumnDescriptor("Col2");
 
-cd.Categorizer = new CustomCategorizer();
+cdn.Categorizer = new CustomCategorizer();
 
-cd.Comparer = new CustomComparer();
+cdn.Comparer = new CustomComparer();
 
-this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd);
+this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cdn);
 
 
 
@@ -63,29 +63,29 @@ public static int GetCategory(int i)
 
 {
 
-int ret = 0;
+int rte = 0;
 
 if(i < 10)
 
- ret = 1;
+ rte = 1;
 
 else if(i >= 10 && i < 20)
 
- ret = 2;
+ rte = 2;
 
 else if(i >= 20 && i < 30)
 
- ret = 3;
+ rte = 3;
 
 else if(i >= 30 && i < 40)
 
- ret = 4;
+ rte = 4;
 
 else  
 
- ret = 5;
+ rte = 5;
 
-return ret;
+return rte;
 
 }
 {% endhighlight  %}
@@ -97,17 +97,17 @@ return ret;
 
 'Group "Col2" using a custom categorizer and Comparer.
 
-   Dim cd As Syncfusion.Grouping.SortColumnDescriptor = New 
+   Dim cdn As Syncfusion.Grouping.SortColumnDescriptor = New 
 
 
 
 Syncfusion.Grouping.SortColumnDescriptor("Col2")
 
-   cd.Categorizer = New CustomCategorizer()
+   cdn.Categorizer = New CustomCategorizer()
 
-   cd.Comparer = New CustomComparer()
+   cdn.Comparer = New CustomComparer()
 
-   Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cd)
+   Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(cdn)
 
 
 
@@ -145,33 +145,33 @@ End Function
 
 Public Shared Function GetCategory(ByVal i As Integer) As Integer
 
-    Dim ret As Integer = 0
+    Dim rte As Integer = 0
 
     If i < 10 Then
 
-        ret = 1
+        rte = 1
 
     ElseIf i >= 10 AndAlso i < 20 Then
 
-        ret = 2
+        rte = 2
 
     ElseIf i >= 20 AndAlso i < 30 Then
 
-        ret = 3
+        rte = 3
 
     ElseIf i >= 30 AndAlso i < 40 Then
 
-        ret = 4
+        rte = 4
 
     Else
 
-        ret = 5
+        rte = 5
 
     End If
 
 
 
-    Return ret
+    Return rte
 
 End Function
 
