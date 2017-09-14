@@ -1,4 +1,4 @@
-    ---
+---
 layout: post
 title: How to resize columns to fit in a page while exporting to PDF | Windows Forms | Syncfusion
 description: how to resize columns to fit in a page while exporting to pdf
