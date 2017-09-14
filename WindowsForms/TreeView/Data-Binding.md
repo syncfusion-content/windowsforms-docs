@@ -9,17 +9,19 @@ documentation: ug
 
 # Data Binding
 
-TreeViewAdv does not have direct option to populate from XML and DataTable. This below section will help to load TreeViewAdv from XML and DataTable.
+TreeViewAdv does not have direct option to populate from XML. This below section will help to load TreeViewAdv from XML.
 
 
 {% tabs %}
 
 {% highlight c# %}
 
- /// <summary>
+        /// <summary>
         /// To load TreeViewAdv from XML File
         /// </summary>
+
         private void LoadTreeViewAdvfromXML()
+
         {
             XmlDocument xDoc = new XmlDocument();
 
@@ -39,7 +41,8 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
             treeViewAdv1.ExpandAll();
         }
 
-		  private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
+
+        private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
         {
             XmlNode xNode;
             TreeNodeAdv tNode;
@@ -53,11 +56,12 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
                     treeNode.Nodes.Add(new TreeNodeAdv(xNode.Name));
                     tNode = treeNode.Nodes[x];
                     LoadFromXML(xNode, tNode);
-                }}
-            
-			else 
-                treeNode.Text = xmlNode.OuterXml.Trim();}
-				 //click  event to LoadTreeViewAdvfromXML()
+                }
+            }
+            else 
+                treeNode.Text = xmlNode.OuterXml.Trim();
+        }
+        //click  event to LoadTreeViewAdvfromXML()
         private void buttonAdv1_Click(object sender, EventArgs e)
         {
             LoadTreeViewAdvfromXML();
@@ -82,7 +86,32 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
             }
             XmlTextWriter.WriteEndElement();
             XmlTextWriter.Close();
-}
+        }
+
+        /// <summary>
+        /// Iterate function helps to save TreeNodeAdv information to XML
+        /// </summary>
+        private void SaveToXML(TreeNodeAdvCollection tnc)
+        {
+            foreach (TreeNodeAdv node in tnc)
+            {
+                if (node.Nodes.Count > 0)
+                {
+                    XmlTextWriter.WriteStartElement(node.Text);
+                    SaveToXML(node.Nodes);
+                    XmlTextWriter.WriteEndElement();
+                }
+                else
+                {
+                    XmlTextWriter.WriteString(node.Text);
+                }
+            }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            ExportToXML(treeViewAdv1, "TreeView.xml");
+        }
 
         /// <summary>
         /// Iterate function helps to save TreeNodeAdv information to XML
@@ -103,12 +132,17 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
 
         private void buttonAdv2_Click(object sender, EventArgs e)
         {
-            ExportToXML(treeViewAdv1, "TreeView.xml");}
+            ExportToXML(treeViewAdv1, "TreeView.xml");
+        }
+
+
 {% endhighlight %}
 {% highlight VB %}
-''' <summary>
-		''' To load TreeViewAdv from XML File
-		''' </summary>
+
+        ''' <summary>
+        ''' To load TreeViewAdv from XML File
+        ''' </summary>
+
 		Private Sub LoadTreeViewAdvfromXML()
 			Dim xDoc As New XmlDocument()
 			xDoc.Load("TreeView.xml")
@@ -179,4 +213,4 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
 {% endhighlight %}
 {% endtabs %}
 
-![](DataBinding_images/databindingimage1.png)
+![](Concepts-and--Features_images/Concepts-and--Features_img60.jpeg)
