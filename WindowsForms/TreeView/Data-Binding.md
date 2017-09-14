@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-TreeViewAdv does not have direct option to populate from XML. This below section will help to load TreeViewAdv from XML.
+TreeViewAdv does not have direct option to load/save from XML file. This below section will help to load/save TreeViewAdv from XML.
 
 
 {% tabs %}
@@ -61,11 +61,7 @@ TreeViewAdv does not have direct option to populate from XML. This below section
             else 
                 treeNode.Text = xmlNode.OuterXml.Trim();
         }
-        //click  event to LoadTreeViewAdvfromXML()
-        private void buttonAdv1_Click(object sender, EventArgs e)
-        {
-            LoadTreeViewAdvfromXML();
-        }
+       
 
         /// <summary>
         /// To write details in XML Elements
@@ -108,33 +104,7 @@ TreeViewAdv does not have direct option to populate from XML. This below section
             }
         }
 
-        private void buttonAdv2_Click(object sender, EventArgs e)
-        {
-            ExportToXML(treeViewAdv1, "TreeView.xml");
-        }
-
-        /// <summary>
-        /// Iterate function helps to save TreeNodeAdv information to XML
-        /// </summary>
-        private void SaveToXML(TreeNodeAdvCollection tnc)
-        {
-            foreach (TreeNodeAdv node in tnc)
-            {
-                if (node.Nodes.Count > 0)
-                {
-                    XmlTextWriter.WriteStartElement(node.Text);
-                    SaveToXML(node.Nodes);
-                    XmlTextWriter.WriteEndElement();
-                }
-                else
-                {
-                    XmlTextWriter.WriteString(node.Text);}}}
-
-        private void buttonAdv2_Click(object sender, EventArgs e)
-        {
-            ExportToXML(treeViewAdv1, "TreeView.xml");
-        }
-
+       
 
 {% endhighlight %}
 {% highlight VB %}
@@ -170,9 +140,6 @@ TreeViewAdv does not have direct option to populate from XML. This below section
 				treeNode.Text = xmlNode.OuterXml.Trim()
 			End If End Sub
 
-		Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles buttonAdv1.Click
-			LoadTreeViewAdvfromXML()
-		End Sub
 		''' <summary>
 		''' To write details in XML Elements
 		''' </summary>
@@ -206,9 +173,7 @@ TreeViewAdv does not have direct option to populate from XML. This below section
 			Next node
 		
 		End Sub
-		Private Sub buttonAdv2_Click(ByVal sender As Object, ByVal e As EventArgs) Handles buttonAdv2.Click
-			ExportToXML(treeViewAdv1, "TreeView.xml")
-		End Sub
+
 
 {% endhighlight %}
 {% endtabs %}
