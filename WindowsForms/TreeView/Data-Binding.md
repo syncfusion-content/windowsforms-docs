@@ -9,17 +9,19 @@ documentation: ug
 
 # Data Binding
 
-TreeViewAdv does not have direct option to populate from XML and DataTable. This below section will help to load TreeViewAdv from XML and DataTable.
+TreeViewAdv does not have direct option to load/save from XML file. This below section will help to load/save TreeViewAdv from XML.
 
 
 {% tabs %}
 
 {% highlight c# %}
 
- /// <summary>
+        /// <summary>
         /// To load TreeViewAdv from XML File
         /// </summary>
+
         private void LoadTreeViewAdvfromXML()
+
         {
             XmlDocument xDoc = new XmlDocument();
 
@@ -39,7 +41,8 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
             treeViewAdv1.ExpandAll();
         }
 
-		  private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
+
+        private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
         {
             XmlNode xNode;
             TreeNodeAdv tNode;
@@ -53,15 +56,12 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
                     treeNode.Nodes.Add(new TreeNodeAdv(xNode.Name));
                     tNode = treeNode.Nodes[x];
                     LoadFromXML(xNode, tNode);
-                }}
-            
-			else 
-                treeNode.Text = xmlNode.OuterXml.Trim();}
-				 //click  event to LoadTreeViewAdvfromXML()
-        private void buttonAdv1_Click(object sender, EventArgs e)
-        {
-            LoadTreeViewAdvfromXML();
+                }
+            }
+            else 
+                treeNode.Text = xmlNode.OuterXml.Trim();
         }
+       
 
         /// <summary>
         /// To write details in XML Elements
@@ -82,7 +82,7 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
             }
             XmlTextWriter.WriteEndElement();
             XmlTextWriter.Close();
-}
+        }
 
         /// <summary>
         /// Iterate function helps to save TreeNodeAdv information to XML
@@ -99,16 +99,20 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
                 }
                 else
                 {
-                    XmlTextWriter.WriteString(node.Text);}}}
+                    XmlTextWriter.WriteString(node.Text);
+                }
+            }
+        }
 
-        private void buttonAdv2_Click(object sender, EventArgs e)
-        {
-            ExportToXML(treeViewAdv1, "TreeView.xml");}
+       
+
 {% endhighlight %}
 {% highlight VB %}
-''' <summary>
-		''' To load TreeViewAdv from XML File
-		''' </summary>
+
+        ''' <summary>
+        ''' To load TreeViewAdv from XML File
+        ''' </summary>
+
 		Private Sub LoadTreeViewAdvfromXML()
 			Dim xDoc As New XmlDocument()
 			xDoc.Load("TreeView.xml")
@@ -136,9 +140,6 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
 				treeNode.Text = xmlNode.OuterXml.Trim()
 			End If End Sub
 
-		Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles buttonAdv1.Click
-			LoadTreeViewAdvfromXML()
-		End Sub
 		''' <summary>
 		''' To write details in XML Elements
 		''' </summary>
@@ -172,11 +173,9 @@ TreeViewAdv does not have direct option to populate from XML and DataTable. This
 			Next node
 		
 		End Sub
-		Private Sub buttonAdv2_Click(ByVal sender As Object, ByVal e As EventArgs) Handles buttonAdv2.Click
-			ExportToXML(treeViewAdv1, "TreeView.xml")
-		End Sub
+
 
 {% endhighlight %}
 {% endtabs %}
 
-![](DataBinding_images/databindingimage1.png)
+![](Concepts-and--Features_images/Concepts-and--Features_img60.jpeg)
