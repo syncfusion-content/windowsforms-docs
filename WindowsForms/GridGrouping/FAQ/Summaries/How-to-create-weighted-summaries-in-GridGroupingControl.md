@@ -37,23 +37,23 @@ private GridSummaryColumnDescriptor GetWeightedSummaryColumnDescriptor(string so
 
 {
 
-GridSummaryColumnDescriptor wetSumCol = new GridSummaryColumnDescriptor();
+GridSummaryColumnDescriptor summaryColumnDescriptor = new GridSummaryColumnDescriptor();
 
-wetSumCol.Name = string.Format("{0}_{1}", sourceCol, weightCol); //special name following the convention above
+summaryColumnDescriptor.Name = string.Format("{0}_{1}", sourceCol, weightCol); //special name following the convention above
 
-wetSumCol.DataMember = sourceCol; //the column this summary is applied to
+summaryColumnDescriptor.DataMember = sourceCol; //the column this summary is applied to
 
-wetSumCol.DisplayColumn = sourceCol; //where this summary is displayed
+summaryColumnDescriptor.DisplayColumn = sourceCol; //where this summary is displayed
 
-wetSumCol.Format = "{WeightedAverage:#.#}"; //what is displayed in the summary
+summaryColumnDescriptor.Format = "{WeightedAverage:#.#}"; //what is displayed in the summary
 
-wetSumCol.SummaryType = SummaryType.Custom; //marks this as a Custom Summary
+summaryColumnDescriptor.SummaryType = SummaryType.Custom; //marks this as a Custom Summary
 
-wetSumCol.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right;
+summaryColumnDescriptor.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right;
 
-wetSumCol.MaxLength = 6;
+summaryColumnDescriptor.MaxLength = 6;
 
-return wetSumCol;
+return summaryColumnDescriptor;
 
 }
 
@@ -81,23 +81,23 @@ End Sub
 
 Private Function GetWeightedSummaryColumnDescriptor(ByVal sourceCol As String, ByVal weightCol As String) As GridSummaryColumnDescriptor
 
-Dim wetSumCol As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor
+Dim summaryColumnDescriptor As GridSummaryColumnDescriptor = New GridSummaryColumnDescriptor
 
-wetSumCol.Name = String.Format("{0}_{1}", sourceCol, weightCol) 'special name following the convention above
+summaryColumnDescriptor.Name = String.Format("{0}_{1}", sourceCol, weightCol) 'special name following the convention above
 
-wetSumCol.DataMember = sourceCol 'the column this summary is applied to
+summaryColumnDescriptor.DataMember = sourceCol 'the column this summary is applied to
 
-wetSumCol.DisplayColumn = sourceCol 'where this summary is displayed
+summaryColumnDescriptor.DisplayColumn = sourceCol 'where this summary is displayed
 
-wetSumCol.Format = "{WeightedAverage:#.#}" 'what is displayed in the summary
+summaryColumnDescriptor.Format = "{WeightedAverage:#.#}" 'what is displayed in the summary
 
-wetSumCol.SummaryType = SummaryType.Custom 'marks this as a Custom Summary
+summaryColumnDescriptor.SummaryType = SummaryType.Custom 'marks this as a Custom Summary
 
-wetSumCol.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right
+summaryColumnDescriptor.Appearance.AnySummaryCell.HorizontalAlignment = GridHorizontalAlignment.Right
 
-wetSumCol.MaxLength = 6
+summaryColumnDescriptor.MaxLength = 6
 
-Return wetSumCol
+Return summaryColumnDescriptor
 
 End Function
 

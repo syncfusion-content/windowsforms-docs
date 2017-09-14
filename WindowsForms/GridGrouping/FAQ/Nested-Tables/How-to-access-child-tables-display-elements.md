@@ -33,9 +33,9 @@ if(el.Kind == DisplayElementKind.NestedTable)
 
 //Displays the nested table elements.
 
-GridNestedTable nth = (GridNestedTable) el;
+GridNestedTable gridNestedTable = (GridNestedTable) el;
 
-foreach(Element el1 in nth.ChildTable.NestedDisplayElements)
+foreach(Element el1 in gridNestedTable.ChildTable.NestedDisplayElements)
 
 {
 
@@ -43,7 +43,7 @@ System.Diagnostics.Trace.WriteLine(el1);
 
 }
 
-i += (nth.ChildTable.NestedDisplayElements.Count - 1);
+i += (gridNestedTable.ChildTable.NestedDisplayElements.Count - 1);
 
 }}
 {% endhighlight %}
@@ -69,15 +69,15 @@ Dim el As Element = Me.gridGroupingControl1.Table.DisplayElements(i)
 
 'Displays the nested table elements.
 
-Dim nth As GridNestedTable = CType(el, GridNestedTable)
+Dim gridNestedTable As GridNestedTable = CType(el, GridNestedTable)
 
-        For Each el1 As Element In nth.ChildTable.NestedDisplayElements
+        For Each el1 As Element In gridNestedTable.ChildTable.NestedDisplayElements
 
             System.Diagnostics.Trace.WriteLine(el1)
 
         Next el1
 
-        i += (nth.ChildTable.NestedDisplayElements.Count - 1)
+        i += (gridNestedTable.ChildTable.NestedDisplayElements.Count - 1)
 
     End If
 

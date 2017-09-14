@@ -27,7 +27,7 @@ This can be done using the code below.
 
 //{RecordCount} - Displays the CaptionSection.ParentGroup.GetFilteredRecordCount()
 
-this.gridGroupingControl1.TopLevelGroupOptions.CaptionText = "Table is {TableName} : {Category} : {RecordCount}";
+this.gridGroupingControl1.TopLevelGroupOptions.CaptionText = "TableName is {TableName} : {Category} : {RecordCount}";
 
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ this.gridGroupingControl1.TopLevelGroupOptions.CaptionText = "Table is {TableNam
 
 '{RecordCount} - Displays the CaptionSection.ParentGroup.GetFilteredRecordCount()
 
-Me.gridGroupingControl1.TopLevelGroupOptions.CaptionText = "Table is {TableName} : {Category} : {RecordCount}"
+Me.gridGroupingControl1.TopLevelGroupOptions.CaptionText = "TableName is {TableName} : {Category} : {RecordCount}"
 
 {% endhighlight %}
 

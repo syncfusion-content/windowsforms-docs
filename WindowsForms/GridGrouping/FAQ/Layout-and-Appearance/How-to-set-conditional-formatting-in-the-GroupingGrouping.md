@@ -17,29 +17,29 @@ To set up conditional formatting in the GroupingGrid, use the following code.
 
 //Declares conditional format descriptor.
 
-GridConditionalFormatDescriptor des = new GridConditionalFormatDescriptor();
+GridConditionalFormatDescriptor gridConditionalFormatDescriptor = new GridConditionalFormatDescriptor();
 
 
 
 //Sets some properties.
 
-des.Appearance.AnyRecordFieldCell.Font.Bold = true;
+gridConditionalFormatDescriptor.Appearance.AnyRecordFieldCell.Font.Bold = true;
 
-des.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.LightGreen);
+gridConditionalFormatDescriptor.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.LightGreen);
 
 
 
 //Expression which is applied on the table data.
 
-des.Expression = "[ColumnName] like \'true\'";
+gridConditionalFormatDescriptor.Expression = "[ColumnName] like \'true\'";
 
 
 
 //Sets name to the conditional format and adds it to the grid.
 
-des.Name = "grid";
+gridConditionalFormatDescriptor.Name = "grid";
 
-this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(des);
+this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(gridConditionalFormatDescriptor);
 
 
 {% endhighlight %}
@@ -49,29 +49,29 @@ this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(des);
 
 'Declares conditional format descriptor.
 
-Dim des As GridConditionalFormatDescriptor = New GridConditionalFormatDescriptor()
+Dim gridConditionalFormatDescriptor As GridConditionalFormatDescriptor = New GridConditionalFormatDescriptor()
 
 
 
 'Sets some properties.
 
-des.Appearance.AnyRecordFieldCell.Font.Bold = True
+gridConditionalFormatDescriptor.Appearance.AnyRecordFieldCell.Font.Bold = True
 
-des.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.LightGreen)
+gridConditionalFormatDescriptor.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.LightGreen)
 
 
 
 'Expression which is applied on the table data.
 
-des.Expression = "[ColumnName] like 'true'"
+gridConditionalFormatDescriptor.Expression = "[ColumnName] like 'true'"
 
 
 
 'Sets name to the conditional format and adds it to the grid.
 
-des.Name = "des"
+gridConditionalFormatDescriptor.Name = "gridConditionalFormatDescriptor"
 
-Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(des)
+Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(gridConditionalFormatDescriptor)
 
 {% endhighlight %}
 

@@ -16,13 +16,13 @@ You can do this by accessing the Child Table of GridGroupingControl using GridTa
 {% highlight C# %}
 
 
-GridTableModel tbd = this.gridGroupingControl1.GetTableModel("ChildTable"); 
+GridTableModel tableModel = this.gridGroupingControl1.GetTableModel("ChildTable"); 
 
-tbd.QueryColWidth += new GridRowColSizeEventHandler(tbd_QueryColWidth); 
+tableModel.QueryColWidth += new GridRowColSizeEventHandler(tableModel_QueryColWidth); 
 
 
 
-void tbd_QueryColWidth(object sender, GridRowColSizeEventArgs e) 
+void tableModel_QueryColWidth(object sender, GridRowColSizeEventArgs e) 
 
 { 
 
@@ -47,13 +47,13 @@ e.Handled = true;
 
 
 
-Dim tbd As GridTableModel = Me.GridGroupingControl1.GetTableModel("ChildTable")
+Dim tableModel As GridTableModel = Me.GridGroupingControl1.GetTableModel("ChildTable")
 
-AddHandler tbd.QueryColWidth, AddressOf tbd_QueryColWidth 
+AddHandler tableModel.QueryColWidth, AddressOf tableModel_QueryColWidth 
 
 
 
-Private Sub tbd_QueryColWidth(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
+Private Sub tableModel_QueryColWidth(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
 
 If e.Index = 0 Then
 
@@ -63,7 +63,7 @@ e.Handled = True
 
 End If
 
-End Sub 'tbd_QueryColWidth 
+End Sub 'tableModel_QueryColWidth 
 
 {% endhighlight %}
 
