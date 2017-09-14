@@ -61,7 +61,7 @@ public partial class Form1 : Form
 
 
 
-            MapViewModel viewmodel = new MapViewModel();
+            MapViewModel model = new MapViewModel();
 
 
 
