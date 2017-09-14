@@ -50,7 +50,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default
 
 ## Mask Editing
 
-The Mask Edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In Mask editing mode the date will be seperated into different fields such as Date, Month, Year, Minutes, Hours and Seconds. The field can be updated by selecting the field and pressing the UP or Down arrow to increment or decrement the selected field.
+The Mask Edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In Mask editing mode the date will be separated into different fields such as Date, Month, Year, Minutes, Hours and Seconds. The field can be updated by selecting the field and pressing the UP or Down arrow to increment or decrement the selected field.
 
 {% tabs %}
 
