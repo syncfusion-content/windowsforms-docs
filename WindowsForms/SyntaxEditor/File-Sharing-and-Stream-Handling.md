@@ -53,13 +53,13 @@ this.editControl.NewFile();
 
 // Creates a new stream with specified configuration settings.
 
-this.editControl.New(ConfigLanguage lang);
+this.editControl.New(ConfigLanguage language);
 
 
 
 // Creates a new file with specified configuration settings.
 
-this.editControl.NewFile(IConfigLanguage lang);
+this.editControl.NewFile(IConfigLanguage language);
 
 {% endhighlight %}
 
@@ -806,7 +806,7 @@ The Parser property indicates the parser used for parsing the currently loaded d
 
 // Indicates the parser used for parsing the currently loaded document in the Edit Control. 
 
-RenderableLexemParser lexemParser = this.editControl1.Parser;
+RenderLexemParser lexemParser = this.editControl1.Parser;
 
 {% endhighlight %}
 
@@ -816,7 +816,7 @@ RenderableLexemParser lexemParser = this.editControl1.Parser;
 
 ' Indicates the parser used for parsing the currently loaded document in the Edit Control. 
 
-Dim lexemParser As RenderableLexemParser = Me.editControl1.Parser
+Dim lexemParser As RenderLexemParser = Me.editControl1.Parser
 
 {% endhighlight %}
 

@@ -43,9 +43,9 @@ private void button2_Click(object sender, System.EventArgs e)
 
      // Adding new parent nodes.
 
-     TreeNodeAdv newnode = new TreeNodeAdv("Parentnode"); 
+     TreeNodeAdv node = new TreeNodeAdv("Parent node"); 
 
-     this.treeViewAdv1.Nodes.Add(newnode); 
+     this.treeViewAdv1.Nodes.Add(node); 
 
 }
 
@@ -79,9 +79,9 @@ Private Sub button2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
      ' Adding new parent nodes.
 
-     Dim newnode As TreeNodeAdv = New TreeNodeAdv("Parentnode") 
+     Dim node As TreeNodeAdv = New TreeNodeAdv("Parent node") 
 
-     Me.treeViewAdv1.Nodes.Add(newnode) 
+     Me.treeViewAdv1.Nodes.Add(node) 
 
 End Sub 
 

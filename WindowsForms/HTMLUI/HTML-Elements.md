@@ -27,9 +27,9 @@ This property returns an array of events supporting the element.
 
 // SupportedEvents property returns an array of events supporting the element. 
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-BRElementImpl br = htmlelements["br"] as BRElementImpl;
+BRElementImpl br = tab["br"] as BRElementImpl;
 
 this.label1.Text = this.br.SupportedEvents.Length.ToString(); 
 
@@ -41,9 +41,9 @@ this.label1.Text = this.br.SupportedEvents.Length.ToString();
 
 ‘SupportedEvents property returns an array of events supporting the element. 
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Private tr As BRElementImpl = CType(IIf(TypeOf htmlelements("br") Is BRElementImpl, htmlelements("br"), Nothing), BRElementImpl)
+Private tr As BRElementImpl = CType(IIf(TypeOf tab("br") Is BRElementImpl, tab("br"), Nothing), BRElementImpl)
 
 Private Me.label1.Text = Me.br.SupportedEvents.Length.ToString()
 
@@ -61,9 +61,9 @@ The MergeSupportedEvents method is used to merge the standard and special events
 
 // MergeSupportedEvents method is to merge the standard and special events.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-INPUTElementImpl txt = htmlelements["txt"] as INPUTElementImpl;
+INPUTElementImpl txt = tab["txt"] as INPUTElementImpl;
 
 string[] specialEvents = new string[2];
 
@@ -85,9 +85,9 @@ MessageBox.Show("After Merging:" + this.txt.SupportedEvents.Length.ToString());
 
 ‘MergeSupportedEvents method is to merge the standard and special events.
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Private txt As INPUTElementImpl = CType(IIf(TypeOf htmlelements("txt") Is INPUTElementImpl, htmlelements("txt"), Nothing), INPUTElementImpl)
+Private txt As INPUTElementImpl = CType(IIf(TypeOf tab("txt") Is INPUTElementImpl, tab("txt"), Nothing), INPUTElementImpl)
 
 Private specialEvents As String() = New String(1) {}
 
@@ -180,9 +180,9 @@ The A element is used in creating links to another document or in creating bookm
 
 // VisitedFormat property get the format of the A element visited recently. 
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-AElementImpl a = htmlelements["a"] as AElementImpl;
+AElementImpl a = tab["a"] as AElementImpl;
 
 this.label1.Text = "\nA(IsVisited and VisitedFormat):" + this.a.IsVisited.ToString() + "," + this.a.VisitedFormat.BackgroundColor.Name.ToString(); 
 
@@ -196,11 +196,11 @@ this.label1.Text = "\nA(IsVisited and VisitedFormat):" + this.a.IsVisited.ToStri
 
 ‘VisitedFormat property get the format of the A element visited recently. 
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
 
 
-Private a As AElementImpl = CType(IIf(TypeOf htmlelements("a") Is AElementImpl, htmlelements("a"), Nothing), AElementImpl)
+Private a As AElementImpl = CType(IIf(TypeOf tab("a") Is AElementImpl, tab("a"), Nothing), AElementImpl)
 
 
 
@@ -240,9 +240,9 @@ The BR element is used for inserting a line break after a particular line. This 
 
 // Get the Boolean value to indicate whether the control is visible or not.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-BRElementImpl br = htmlelements["br"] as BRElementImpl;
+BRElementImpl br = tab["br"] as BRElementImpl;
 
 this.label1.Text = "\nBR(IsVisible):" + this.br.IsVisible.ToString(); 
 
@@ -254,9 +254,9 @@ this.label1.Text = "\nBR(IsVisible):" + this.br.IsVisible.ToString();
 
 ' Get the Boolean value to indicate whether the control is visible or not.
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Private br As BRElementImpl = CType(IIf(TypeOf htmlelements("br") Is BRElementImpl, htmlelements("br"), Nothing), BRElementImpl)
+Private br As BRElementImpl = CType(IIf(TypeOf tab("br") Is BRElementImpl, tab("br"), Nothing), BRElementImpl)
 
 Me.label1.Text = Constants.vbLf & "BR(IsVisible):" & Me.br.IsVisible.ToString()
 
@@ -348,9 +348,9 @@ Properties
 
 // Gets the bitmap of the image that represents IMG element.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-IMGElementImpl img = htmlelements["img"] as IMGElementImpl;
+IMGElementImpl img = tab["img"] as IMGElementImpl;
 
 
 
@@ -366,9 +366,9 @@ this.label1.Text ="\nIMG(Image)" + this.img.Image.PhysicalDimension.ToString();
 
 ‘Gets the bitmap of the image  that represents IMG element.
 
-Private htmlelements As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
 
-Private img As IMGElementImpl = CType(IIf(TypeOf htmlelements("img") Is  IMGElementImpl, htmlelements("img"), Nothing), IMGElementImpl)
+Private img As IMGElementImpl = CType(IIf(TypeOf tab("img") Is  IMGElementImpl, tab("img"), Nothing), IMGElementImpl)
 
 Me.label1.Text =Constants.vbLf & "IMG(Image)" & Me.img.Image.PhysicalDimension.ToString()
 
@@ -392,9 +392,9 @@ The INPUT element is used for getting input from the user. It can be a text box,
 
 // Sets the user control instance for the particular input element declared by the user.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-INPUTElementImpl txt = htmlelements["txt"] as INPUTElementImpl;
+INPUTElementImpl txt = tab["txt"] as INPUTElementImpl;
 
 this.txt.UserControl.CustomControl.Text = "This is a textBox";
 
@@ -406,9 +406,9 @@ this.txt.UserControl.CustomControl.Text = "This is a textBox";
 
 '  User control property sets the user control instance for the particular input element declared by the user.
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Private txt As INPUTElementImpl = CType(IIf(TypeOf htmlelements("txt") Is INPUTElementImpl, htmlelements("txt"), Nothing), INPUTElementImpl)
+Private txt As INPUTElementImpl = CType(IIf(TypeOf tab("txt") Is INPUTElementImpl, tab("txt"), Nothing), INPUTElementImpl)
 
 Me.txt.UserControl.CustomControl.Text = "This is a textBox"
 
@@ -451,9 +451,9 @@ The LINK element is used to define links to other documents, style sheets, and s
 
 // Get the value indicating whether the link is visible or not.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-LinkElementImpl link = htmlelements["link"] as LinkElementImpl;
+LinkElementImpl link = tab["link"] as LinkElementImpl;
 
 this.label1.Text = "\nLink(IsVisible):" + this.link.IsVisible.ToString();
 
@@ -465,7 +465,7 @@ this.label1.Text = "\nLink(IsVisible):" + this.link.IsVisible.ToString();
 
 Private As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
 
-Private link As LinkElementImpl = CType(IIf(TypeOf HtmlElement("link") Is LinkElementImpl, htmlelements("link"), Nothing), LinkElementImpl)
+Private link As LinkElementImpl = CType(IIf(TypeOf tab("link") Is LinkElementImpl, tab("link"), Nothing), LinkElementImpl)
 
 Me.label1.Text = Constants.vbLf & "Link(IsVisible):" & Me.link.IsVisible.ToString()
 
@@ -513,9 +513,9 @@ The SCRIPT element is used to define scripts to the HTML document. This makes th
 
 // Gets or sets a value indicating whether the script is visible or not.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-this.script = htmlelements["script"] as SCRIPTElementImpl;
+this.script = tab["script"] as SCRIPTElementImpl;
 
 this.label1.Text = "\nScript(IsVisible):" + this.script.IsVisible.ToString();
 
@@ -527,9 +527,9 @@ this.label1.Text = "\nScript(IsVisible):" + this.script.IsVisible.ToString();
 
 ‘Gets or sets a value indicating whether the script is visible or not.
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Private Me.script = Ctype(IIf(TypeOf htmlelements("script") Is SCRIPTElementImpl, htmlelements("script"), Nothing), SCRIPTElementImpl)
+Private Me.script = Ctype(IIf(TypeOf tab("script") Is SCRIPTElementImpl, tab("script"), Nothing), SCRIPTElementImpl)
 
 Private Me.label1.Text = Constants.vbLf & "Script(IsVisible):" & Me.script.IsVisible.ToString()  
 
@@ -579,9 +579,9 @@ The SELECT element is used to define a drop-down list. The user can specify the 
 
 // UserControl property gets or sets the user control instance to the particular element.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-this.select = htmlelements["select"] as SELECTElementImpl;
+this.select = tab["select"] as SELECTElementImpl;
 
 this.label1.Text = "\nSelect(UserControl):" + this.UserControl.DefaultSize.ToString();                      
 
@@ -593,9 +593,9 @@ this.label1.Text = "\nSelect(UserControl):" + this.UserControl.DefaultSize.ToStr
 
 ‘UserControl property gets or sets the user control instance to the particular element.
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Me.Select = CType(IIf(TypeOf htmlelements("select") Is SELECTElementImpl, htmlelements("select"), Nothing), SELECTElementImpl)
+Me.Select = CType(IIf(TypeOf tab("select") Is SELECTElementImpl, tab("select"), Nothing), SELECTElementImpl)
 
 Me.label1.Text = Constants.vbLf & "Select(UserControl):" & Me.Select.UserControl.DefaultSize.ToString()
 
@@ -635,9 +635,9 @@ The STYLE element is used to implement custom style in a document. It occurs ins
 
 // Gets a value indicating whether the link is visible or not.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-StyleElementImpl link = htmlelements["style"] as StyleElementImpl;
+StyleElementImpl link = tab ["style"] as StyleElementImpl;
 
 this.label1.Text = "\nLink(IsVisible):" + link.IsVisible.ToString();
 
@@ -649,9 +649,9 @@ this.label1.Text = "\nLink(IsVisible):" + link.IsVisible.ToString();
 
 ‘Gets a value indicating whether the link is visible or not.
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab  As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Private link As StyleElementImpl = CType(IIf(TypeOf htmlelements("style") Is StyleElementImpl, htmlelements("style"), Nothing), StyleElementImpl)
+Private link As StyleElementImpl = CType(IIf(TypeOf tab("style") Is StyleElementImpl, tab("style"), Nothing), StyleElementImpl)
 
 Private Me.label1.Text = Constants.vbLf & "Link(IsVisible):" &  link.IsVisible.ToString()
 
@@ -684,9 +684,9 @@ The TABLE element is used to create tables in a document. The table element cont
 
 // Gets the number of columns and rows present in the table.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab  = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-TABLEElementImpl table = htmlelements["table"] as TABLEElementImpl;
+TABLEElementImpl table = tab ["table"] as TABLEElementImpl;
 
 this.label1.Text = "\nTable(ColsCount and RowsCount):" + table.ColsCount.ToString() + "," + table.RowsCount.ToString();
 
@@ -700,9 +700,9 @@ this.label1.Text = "\nTable(ColsCount and RowsCount):" + table.ColsCount.ToStrin
 
 ‘Gets the number of columns and rows present in the table.
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab  As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Private table As TABLEElementImpl = CType(IIf(TypeOf htmlelements("table") Is TABLEElementImpl, htmlelements("table"), Nothing), TABLEElementImpl)
+Private table As TABLEElementImpl = CType(IIf(TypeOf tab("table") Is TABLEElementImpl, tab("table"), Nothing), TABLEElementImpl)
 
 Private Me.label1.Text = Constants.vbLf & "Table(ColsCount and RowsCount):" & table.ColsCount.ToString()+","+table.RowsCount.ToString()
 
@@ -732,9 +732,9 @@ The TEXTAREA element is used to define a multiline textbox, allowing the user to
 
 // UserControl property gets the user control instance for the particular input element declared by the // user.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab  = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-TEXTAREAElementImpl txt = htmlelements["txt"] as TEXTAREAElementImpl;
+TEXTAREAElementImpl txt = tab ["txt"] as TEXTAREAElementImpl;
 
 this.txt.UserControl.CustomControl.Text = "This is a multiline textBox";
 
@@ -744,9 +744,9 @@ this.txt.UserControl.CustomControl.Text = "This is a multiline textBox";
 
 ‘UserControl property gets the user control instance for the particular input element declared by the      '  user.
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
-Private txt As TEXTAREAElementImpl = CType(IIf(TypeOf htmlelements("txt") Is TEXTAREAElementImpl, htmlelements("txt"), Nothing), TEXTAREAElementImpl)
+Private txt As TEXTAREAElementImpl = CType(IIf(TypeOf tab("txt") Is TEXTAREAElementImpl, tab("txt"), Nothing), TEXTAREAElementImpl)
 
 Private Me.txt.UserControl.CustomControl.Text= "This is a multiline textBox"
 
@@ -775,11 +775,11 @@ The TR element is used to create rows inside a table. The TRElementImpl class co
 
 
 
-// Gets the number of cells present in the row and gets total number of cells including the colspan.
+// Gets the number of cells present in the row and gets total number of cells including the column.
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-TRElementImpl tr = htmlelements["tr"] as TRElementImpl;
+TRElementImpl tr = tab["tr"] as TRElementImpl;
 
 this.label1.Text = "TR(CellsCount and VirtualCellsCount):"+ tr.CellsCount.ToString()+","+ tr.VirtualCellsCount.ToString();
 
@@ -789,11 +789,11 @@ this.label1.Text = "TR(CellsCount and VirtualCellsCount):"+ tr.CellsCount.ToStri
 
 
 
-‘Gets the  number of cells present in the row and gets total number of cells including the colspan.
+‘Gets the  number of cells present in the row and gets total number of cells including the column.
 
-Private htmlelements As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
 
-Private tr As TRElementImpl = Ctype(IIf(TypeOf htmlelements("tr") Is TRElementImpl, htmlelements("tr"), Nothing), TRElementImpl)
+Private tr As TRElementImpl = Ctype(IIf(TypeOf tab("tr") Is TRElementImpl, tab("tr"), Nothing), TRElementImpl)
 
 Private Me.label1.Text = "TR(CellsCount and VirtualCellsCount):"+ tr.CellsCount.ToString()+","+ tr.VirtualCellsCount.ToString()
 

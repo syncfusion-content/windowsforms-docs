@@ -1003,7 +1003,7 @@ ConfigLexem configLex = new ConfigLexem("<%@", "%>", FormatType.Custom, false);
 
 // The actual regex can then be substituted with the lexical macro while defining the config lexem.
 
-// NameInConfig returns the name of the macro rounded with braces, like "{testmacro}".
+// NameInConfig returns the name of the macro rounded with braces, like "{test macro}".
 
 configLex.ContinueBlock = macro.NameInConfig;
 
@@ -1033,7 +1033,7 @@ Dim configLex As ConfigLexem = New ConfigLexem("<%@", "%>", FormatType.Custom, F
 
 ' The actual regex can then be substituted with the lexical macro while defining the config lexem.
 
-' NameInConfig returns name of the macro rounded with braces, like "{testmacro}".
+' NameInConfig returns name of the macro rounded with braces, like "{test macro}".
 
 configLex.ContinueBlock = macro.NameInConfig 
 
@@ -1119,11 +1119,11 @@ this.editControl1.IndentSelection();
 
 
 
-// Outdents text in the specified range.
+// Outdent text in the specified range.
 
 this.editControl1.OutdentText(new Point(5, 5), new Point(10, 10));
 
-// Outdents selected text.
+// Outdent selected text.
 
 this.editControl1.OutdentSelection();
 
@@ -1143,11 +1143,11 @@ Me.editControl1.IndentSelection()
 
 
 
-' Outdents text in the specified range.
+' Outdent text in the specified range.
 
 Me.editControl1.OutdentText(New Point(5, 5), New Point(10, 10))
 
-' Outdents selected text.
+' Outdent selected text.
 
 Me.editControl1.OutdentSelection()
 

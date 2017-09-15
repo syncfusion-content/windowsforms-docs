@@ -63,15 +63,15 @@ private void htmluiControl1_PreRenderDocument(object sender, Syncfusion.Windows.
 
 { 
 
-Hashtable htmlelements = new Hashtable(); 
+Hashtable tab = new Hashtable(); 
 
-htmlelements = e.Document.ElementsByUserID; 
+tab = e.Document.ElementsByUserID; 
 
 
 
 // Here the base functionality of the 'this.checkBoxAdv1' is implemented to the 'checkBoxAdvElement1'. 
 
-BaseElement CheckBoxAdvElement1 = htmlelements["CheckBoxAdv"] as BaseElement;
+BaseElement CheckBoxAdvElement1 = tab["CheckBoxAdv"] as BaseElement;
 
 
 
@@ -79,7 +79,7 @@ BaseElement CheckBoxAdvElement1 = htmlelements["CheckBoxAdv"] as BaseElement;
 
 new CustomControlBase( CheckBoxAdvElement1, this.CheckBoxAdv1 ); 
 
-BaseElement NumericUpDownElement = htmlelements["NumericUpDown"] as BaseElement; 
+BaseElement NumericUpDownElement = tab["NumericUpDown"] as BaseElement; 
 
 new CustomControlBase( NumericUpDownElement, this.NumericUpDown1 ); 
 
@@ -93,15 +93,15 @@ new CustomControlBase( NumericUpDownElement, this.NumericUpDown1 );
 
 Private Sub htmluiControl1_PreRenderDocument(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.HTMLUI.PreRenderDocumentArgs)
 
-Dim htmlelements As Hashtable = New Hashtable()
+Dim tab As Hashtable = New Hashtable()
 
-htmlelements = e.Document.ElementsByUserID
+tab = e.Document.ElementsByUserID
 
 
 
 ' Here the base functionality of the 'this.checkBoxAdv1' is implemented to the 'checkBoxAdvElement1'. 
 
-Dim CheckBoxAdvElement1 As BaseElement = CType(IIf(TypeOf htmlelements("CheckBoxAdv") Is BaseElement, htmlelements("CheckBoxAdv"), Nothing), BaseElement)
+Dim CheckBoxAdvElement1 As BaseElement = CType(IIf(TypeOf tab("CheckBoxAdv") Is BaseElement, tab("CheckBoxAdv"), Nothing), BaseElement)
 
 
 
@@ -109,7 +109,7 @@ Dim CheckBoxAdvElement1 As BaseElement = CType(IIf(TypeOf htmlelements("CheckBox
 
 Dim oTemp1 As CustomControlBase = New CustomControlBase(CheckBoxAdvElement1, Me.CheckBoxAdv1)
 
-Dim NumericUpDownElement As BaseElement = CType(IIf(TypeOf htmlelements("NumericUpDown") Is BaseElement, htmlelements("NumericUpDown"), Nothing), BaseElement)
+Dim NumericUpDownElement As BaseElement = CType(IIf(TypeOf tab("NumericUpDown") Is BaseElement, tab("NumericUpDown"), Nothing), BaseElement)
 
 Dim oTemp2 As CustomControlBase = New CustomControlBase(NumericUpDownElement, Me.NumericUpDown1)
 

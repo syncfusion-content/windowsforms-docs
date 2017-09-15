@@ -135,9 +135,9 @@ if (e.Control == this.label1 && e.Requested == LayoutInformationType.PreferredSi
 
 Graphics g = this.CreateGraphics();
 
-SizeF szPref = g.MeasureString(this.label1.Text, this.label1.Font, this.ClientRectangle.Width);
+SizeF measure = g.MeasureString(this.label1.Text, this.label1.Font, this.ClientRectangle.Width);
 
-e.Size = new Size(this.ClientRectangle.Width-20, (int)szPref.Height + 5);
+e.Size = new Size(this.ClientRectangle.Width-20, (int)measure.Height + 5);
 
 e.Handled = true;
 
@@ -160,9 +160,9 @@ If e.Control = Me.label1 AndAlso e.Requested = LayoutInformationType.PreferredSi
 
 Dim g As Graphics = Me.CreateGraphics()
 
-Dim szPref As SizeF = g.MeasureString(Me.label1.Text, Me.label1.Font, Me.ClientRectangle.Width)
+Dim measure As SizeF = g.MeasureString(Me.label1.Text, Me.label1.Font, Me.ClientRectangle.Width)
 
-e.Size = New Size(Me.ClientRectangle.Width - 20, CInt(szPref.Height) + 5)
+e.Size = New Size(Me.ClientRectangle.Width - 20, CInt(measure.Height) + 5)
 
 e.Handled = True
 

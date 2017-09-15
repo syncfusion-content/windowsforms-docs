@@ -425,13 +425,13 @@ To create and display Custom Controls:
 
 		{
 
-		Hashtable htmlelements = new Hashtable();
+		Hashtable tab = new Hashtable();
 
-		htmlelements = e.Document.ElementsByUserID;
+		tab = e.Document.ElementsByUserID;
 
 
 
-		BaseElement maskedEditTextBoxElement1 = htmlelements["maskedEditTextBox1"] as BaseElement;
+		BaseElement maskedEditTextBoxElement1 = tab["maskedEditTextBox1"] as BaseElement;
 
 
 
@@ -441,13 +441,13 @@ To create and display Custom Controls:
 
 
 
-		BaseElement monthCalendarElement1 = htmlelements["monthCalendar1"] as BaseElement;
+		BaseElement monthCalendarElement1 = tab["monthCalendar1"] as BaseElement;
 
 		new CustomControlBase( monthCalendarElement1, this.monthCalendar1  ); 
 
 
 
-		BaseElement dataGridElement1 = htmlelements["dataGrid1"] as BaseElement;
+		BaseElement dataGridElement1 = tab["dataGrid1"] as BaseElement;
 
 		new CustomControlBase( dataGridElement1, this.dataGrid1  ); 
 
@@ -495,7 +495,7 @@ To create and display Custom Controls:
 
 				// Loads the specified manifest resource from the Assembly
 
-		_htmlStream = (Stream)_assembly.GetManifestResourceStream("HTMLUICustomControls.customcontrols.htm");
+		_htmlStream = (Stream)_assembly.GetManifestResourceStream("HTMLUICustomControls.custom.htm");
 
 		if(_htmlStream != null)
 

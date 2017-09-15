@@ -40,9 +40,9 @@ system - Direct-Trac.
 
 
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-DIVElementImpl div1 = this.htmlelements["div1"] as DIVElementImpl;
+DIVElementImpl div1 = this.tab["div1"] as DIVElementImpl;
 
 MessageBox.Show(div1.InnerHTML.ToString());
 
@@ -52,11 +52,11 @@ MessageBox.Show(div1.InnerHTML.ToString());
 
 
 
-Private htmlelements As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
 
-Private div1 As DIVElementImpl = CType(IIf(TypeOf Me.htmlelements("div1") Is DIVElementImpl, 
+Private div1 As DIVElementImpl = CType(IIf(TypeOf Me.tab("div1") Is DIVElementImpl, 
 
-Me.htmlelements("div1"), Nothing), DIVElementImpl)
+Me.tab("div1"), Nothing), DIVElementImpl)
 
 MessageBox.Show(div1.InnerHTML.ToString())
 

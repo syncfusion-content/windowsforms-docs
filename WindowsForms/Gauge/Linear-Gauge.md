@@ -1091,7 +1091,7 @@ Public Class CustomRenderer
                     For S_Renamed As Integer = 1 To minor
                         tick = (m_minorTicksPixels / (LinearGauge.MinorTickCount + 1)) * S_Renamed
                         tickPositionMinor = Me.LinearGauge.Height - (minortick + temp1 + 25)
-                        Graphics.DrawLine(minorTickPen, x, CSng(tickPositionMinor), x - LinearGauge.MinorTickHeight, CSng(tickPositionMinor))
+                        Graphics.DrawLine(minorTickPen, x, tickPositionMinor, x - LinearGauge.MinorTickHeight, tickPositionMinor)
                     Next s
                     temp1 = m_minorTicksPixels * L
                 End If
@@ -1117,8 +1117,8 @@ Public Class CustomRenderer
                     If Me.LinearGauge.MinimumValue >= 0 AndAlso ptrRange.StartValue < 0 Then
                         Return
                     End If
-                    Dim startValue As Single = CSng(ptrRange.StartValue)
-                    Dim end As Single = CSng(ptrRange.EndValue)
+                    Dim startValue As Single = ptrRange.StartValue
+                    Dim end As Single = ptrRange.EndValue
                     If Me.LinearGauge.MinimumValue < 0 Then
                         startValue = Me.LinearGauge.MinimumValue + Math.Abs(ptrRange.StartValue)
                     End If
@@ -1155,9 +1155,9 @@ Public Class CustomRenderer
             Dim path As New GraphicsPath()
             Dim a As Integer = 0
             If Me.LinearGauge.MinimumValue < 0 Then
-                a = CInt(Fix(Math.Ceiling((((Math.Abs(Me.LinearGauge.MinimumValue) + LinearGauge.Value) / CSng(LinearGauge.MajorDifference)) * m_minorTicksPixels))))
+                a = CInt(Fix(Math.Ceiling((((Math.Abs(Me.LinearGauge.MinimumValue) + LinearGauge.Value) / LinearGauge.MajorDifference) * m_minorTicksPixels))))
             Else
-                a = CInt(Fix(Math.Ceiling(((LinearGauge.Value / CSng(LinearGauge.MajorDifference)) * m_minorTicksPixels))))
+                a = CInt(Fix(Math.Ceiling(((LinearGauge.Value / LinearGauge.MajorDifference) * m_minorTicksPixels))))
             End If
             Dim y As Integer = (Me.LinearGauge.Height \ 2 + 5 + LinearGauge.MajorTicksHeight) - LinearGauge.MajorTicksHeight
             a = 10 + CInt(Fix(Math.Ceiling((majorTicksDistance * m_minorTicksPixels)))) - a

@@ -82,11 +82,11 @@ private void child_Click(object sender, EventArgs e)
 
 {
 
-BubblingEventArgs bargs = HTMLUIControl.GetBublingEventArgs(e);
+BubblingEventArgs argument = HTMLUIControl.GetBublingEventArgs(e);
 
 //Accessing the element that is sending the event
 
-BaseElement elem = bargs.RootSender as BaseElement;
+BaseElement elem = argument.RootSender as BaseElement;
 
 //Validating the element for execution
 
@@ -150,11 +150,11 @@ End Sub
 
 Private Sub child_Click(ByVal sender As Object, ByVal e As EventArgs)
 
-Dim bargs As BubblingEventArgs = HTMLUIControl.GetBublingEventArgs(e)
+Dim argument As BubblingEventArgs = HTMLUIControl.GetBublingEventArgs(e)
 
 'Accessing the element that is sending the event
 
-Dim elem As BaseElement = CType(IIf(TypeOf bargs.RootSender Is BaseElement, bargs.RootSender, Nothing), BaseElement)
+Dim elem As BaseElement = CType(IIf(TypeOf argument.RootSender Is BaseElement, argument.RootSender, Nothing), BaseElement)
 
 
 

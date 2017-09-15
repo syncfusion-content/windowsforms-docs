@@ -138,7 +138,7 @@ Me.treeViewAdv1.AddSeparatorAtEnd = True
 
 Private Sub treeViewAdv2_BeforeExpand(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeViewAdvCancelableNodeEventArgs) Handles treeViewAdv2.BeforeExpand
 
-'Checking Whether the Node has been expanded atleast once
+'Checking Whether the Node has been expanded at least once
 
 If e.Node.ExpandedOnce Then
 

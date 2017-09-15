@@ -1672,7 +1672,7 @@ void treeViewAdv1_NodeMouseClick(object sender, TreeViewAdvMouseClickEventArgs e
 
     int yPosition = e.Y;
 
-    //Gets a signed count of the number of detents the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.
+    //Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.
 
    int delta = e.Delta;
 
@@ -1704,7 +1704,7 @@ void treeViewAdv1_NodeMouseDoubleClick(object sender, TreeViewAdvMouseClickEvent
 
     int yPosition = e.Y;
 
-    //Gets a signed count of the number of detents the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.
+    //Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.
 
    int delta = e.Delta;
 
@@ -1740,7 +1740,7 @@ Dim xPosition As Integer = e.X
 
 Dim yPosition As Integer = e.Y
 
-‘Gets a signed count of the number of detents the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.
+‘Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.
 
 Dim delta As Integer = e.Delta
 
@@ -1769,7 +1769,7 @@ Dim xPosition As Integer = e.X
 
 Dim yPosition As Integer = e.Y
 
-‘Gets a signed count of the number of detents the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.
+‘Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detent is one notch of the mouse wheel.
 
 Dim delta As Integer = e.Delta
 
@@ -2576,7 +2576,7 @@ Console.Write("Size :" + e.Size.ToString());
 
 //This prints the text for the ScrollTip
 
-Console.Write("Scrolltip Text:" + e.Text.ToString());
+Console.Write("Scroll tip Text:" + e.Text.ToString());
 
 
 
@@ -2652,7 +2652,7 @@ Console.Write("Size :" + e.Size.ToString())
 
 'This prints the text for the ScrollTip
 
-Console.Write("Scrolltip Text:" + e.Text.ToString())
+Console.Write("Scroll tip Text:" + e.Text.ToString())
 
 
 

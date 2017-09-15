@@ -35,13 +35,13 @@ dlg.ShowDialog();
 
 //Print
 
-PrintDialog dg = new PrintDialog();
+PrintDialog dialog = new PrintDialog();
 
-dg.AllowSomePages = true;
+dialog.AllowSomePages = true;
 
-dg.Document = pd;
+dialog.Document = pd;
 
-if (dg.ShowDialog() == DialogResult.OK)
+if (dialog.ShowDialog() == DialogResult.OK)
 
 pd.Print();
 
@@ -69,13 +69,13 @@ dlg.ShowDialog()
 
 'Print
 
-Dim dg As New PrintDialog()
+Dim dialog As New PrintDialog()
 
-dg.AllowSomePages = True
+dialog.AllowSomePages = True
 
-dg.Document = pd
+dialog.Document = pd
 
-If dg.ShowDialog() = DialogResult.OK Then
+If dialog.ShowDialog() = DialogResult.OK Then
 
 pd.Print()
 
