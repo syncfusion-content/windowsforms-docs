@@ -104,7 +104,7 @@ private System.Windows.Forms.Button btn4;
 
 private System.Windows.Forms.Button btn5;
 
-private Syncfusion.Windows.Forms.Tools.BorderLayout brd;
+private Syncfusion.Windows.Forms.Tools.BorderLayout layout;
 
 
 {% endhighlight %}
@@ -122,7 +122,7 @@ Private btn4 As System.Windows.Forms.Button
 
 Private btn5 As System.Windows.Forms.Button
 
-Private brd As Syncfusion.Windows.Forms.Tools.BorderLayout
+Private layout As Syncfusion.Windows.Forms.Tools.BorderLayout
 
 {% endhighlight %}
 
@@ -184,7 +184,7 @@ Me.Controls.AddRange(New Button() {btn1,btn2,btn3,btn4,btn5})
 
 {% highlight c# %}
 
-brd = new Syncfusion.Windows.Forms.Tools.BorderLayout();
+layout = new Syncfusion.Windows.Forms.Tools.BorderLayout();
 
 {% endhighlight %}
 
@@ -192,7 +192,7 @@ brd = new Syncfusion.Windows.Forms.Tools.BorderLayout();
 
 {% highlight vbnet %}
 
-brd = New Syncfusion.Windows.Forms.Tools.BorderLayout()
+layout = New Syncfusion.Windows.Forms.Tools.BorderLayout()
 
 {% endhighlight %}
 
@@ -202,11 +202,11 @@ brd = New Syncfusion.Windows.Forms.Tools.BorderLayout()
 
 {% highlight c# %}
 
-this.brd.ContainerControl = this;
+this.layout.ContainerControl = this;
 
 // To set the container control for a panel.
 
-// this.brd.ContainerControl = this.panel1;
+// this.layout.ContainerControl = this.panel1;
 
 {% endhighlight %}
 
@@ -214,11 +214,11 @@ this.brd.ContainerControl = this;
 
 {% highlight vbnet %}
 
-Me.brd.ContainerControl = Me
+Me.layout.ContainerControl = Me
 
 // To set the container control for a panel.
 
-// Me.brd.ContainerControl = Me.panel1;
+// Me.layout.ContainerControl = Me.panel1;
 
 {% endhighlight %}
 
@@ -228,13 +228,13 @@ Me.brd.ContainerControl = Me
 {% highlight c# %}
 
 
-this.brd.BottomMargin = 20;
+this.layout.BottomMargin = 20;
 
-this.brd.HorzFarMargin = 20;
+this.layout.HorzFarMargin = 20;
 
-this.brd.HorzNearMargin = 20;
+this.layout.HorzNearMargin = 20;
 
-this.brd.TopMargin = 20;
+this.layout.TopMargin = 20;
 
 {% endhighlight %}
 
@@ -242,13 +242,13 @@ this.brd.TopMargin = 20;
 {% highlight vbnet %}
 
 
-Me.brd.BottomMargin = 20
+Me.layout.BottomMargin = 20
 
-Me.brd.HorzFarMargin = 20
+Me.layout.HorzFarMargin = 20
 
-Me.brd.HorzNearMargin = 20
+Me.layout.HorzNearMargin = 20
 
-Me.brd.TopMargin = 20
+Me.layout.TopMargin = 20
 
 {% endhighlight %}
 
@@ -258,9 +258,9 @@ Me.brd.TopMargin = 20
 
 {% highlight c# %}
 
-this.brd.HGap = 20;
+this.layout.HGap = 20;
 
-this.brd.VGap = 20;
+this.layout.VGap = 20;
 
 {% endhighlight %}
 
@@ -268,9 +268,9 @@ this.brd.VGap = 20;
 
 {% highlight vbnet %}
 
-Me.brd.HGap = 20
+Me.layout.HGap = 20
 
-Me.brd.VGap = 20
+Me.layout.VGap = 20
 
 {% endhighlight %}
 
@@ -290,15 +290,15 @@ this.btn4.Text = "Four";
 
 this.btn5.Text = "Five";
 
-this.brd.SetPosition(this.btn1,Syncfusion.Windows.Forms.Tools.BorderPosition.North);
+this.layout.SetPosition(this.btn1,Syncfusion.Windows.Forms.Tools.BorderPosition.North);
 
-this.brd.SetPosition(this.btn2,Syncfusion.Windows.Forms.Tools.BorderPosition.South);
+this.layout.SetPosition(this.btn2,Syncfusion.Windows.Forms.Tools.BorderPosition.South);
 
-this.brd.SetPosition(this.btn3,Syncfusion.Windows.Forms.Tools.BorderPosition.East);
+this.layout.SetPosition(this.btn3,Syncfusion.Windows.Forms.Tools.BorderPosition.East);
 
-this.brd.SetPosition(this.btn4,Syncfusion.Windows.Forms.Tools.BorderPosition.West);
+this.layout.SetPosition(this.btn4,Syncfusion.Windows.Forms.Tools.BorderPosition.West);
 
-this.brd.SetPosition(this.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Center);
+this.layout.SetPosition(this.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Center);
 
 {% endhighlight %}
 
@@ -316,15 +316,15 @@ Me.btn4.Text = "Four"
 
 Me.btn5.Text = "Five"
 
-Me.brd.SetPosition(Me.btn1,Syncfusion.Windows.Forms.Tools.BorderPosition.North)
+Me.layout.SetPosition(Me.btn1,Syncfusion.Windows.Forms.Tools.BorderPosition.North)
 
-Me.brd.SetPosition(Me.btn2,Syncfusion.Windows.Forms.Tools.BorderPosition.South)
+Me.layout.SetPosition(Me.btn2,Syncfusion.Windows.Forms.Tools.BorderPosition.South)
 
-Me.brd.SetPosition(Me.btn3,Syncfusion.Windows.Forms.Tools.BorderPosition.East)
+Me.layout.SetPosition(Me.btn3,Syncfusion.Windows.Forms.Tools.BorderPosition.East)
 
-Me.brd.SetPosition(Me.btn4,Syncfusion.Windows.Forms.Tools.BorderPosition.West)
+Me.layout.SetPosition(Me.btn4,Syncfusion.Windows.Forms.Tools.BorderPosition.West)
 
-Me.brd.SetPosition(Me.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Center)
+Me.layout.SetPosition(Me.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Center)
 
 {% endhighlight  %}
 

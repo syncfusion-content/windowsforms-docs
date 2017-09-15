@@ -1157,7 +1157,7 @@ public class CustomRenderer : IRadialGaugeRenderer
         /// <summary>
         /// Used to calculate the text bounds 
         /// </summary>
-        /// <param name="e">Paint event arguement</param>
+        /// <param name="e">Paint event argument</param>
         /// <param name="m_font">Font used in Radial gauge</param>
         public void FindFontBounds(Graphics g, Font m_font)
         {
@@ -1216,7 +1216,7 @@ public class CustomRenderer : IRadialGaugeRenderer
         /// <summary>
         /// Method used to draw outer arc.
         /// </summary>
-        /// <param name="e">Paint event arguement</param>
+        /// <param name="e">Paint event argument</param>
         /// <param name="m_GaugeArcStart">Arc start position</param>
         /// <param name="m_GaugeArcEnd">Arc end position</param>
         /// <param name="m_Center">Center point for gauge</param>
@@ -1333,7 +1333,7 @@ public class CustomRenderer : IRadialGaugeRenderer
         /// <summary>
         /// Used to draw the  label of the gauge
         /// </summary>
-        /// <param name="e">paint event arguement</param>
+        /// <param name="e">paint event argument</param>
         /// <param name="m_Center">Center point of the gauge</param>
         public void DrawLabel(Graphics e, Point m_Center, int GaugeRadius)
         {
@@ -1507,7 +1507,7 @@ Public Class CustomRenderer
 		''' <summary>
 		''' Used to calculate the text bounds 
 		''' </summary>
-		''' <param name="e">Paint event arguement</param>
+		''' <param name="e">Paint event argument</param>
 		''' <param name="m_font">Font used in Radial gauge</param>
 		Public Sub FindFontBounds(ByVal g As Graphics, ByVal m_font As Font)
 			'find upper and lower bounds for numeric characters
@@ -1559,7 +1559,7 @@ Public Class CustomRenderer
 		''' <summary>
 		''' Method used to draw outer arc.
 		''' </summary>
-		''' <param name="e">Paint event arguement</param>
+		''' <param name="e">Paint event argument</param>
 		''' <param name="m_GaugeArcStart">Arc start position</param>
 		''' <param name="m_GaugeArcEnd">Arc end position</param>
 		''' <param name="m_Center">Center point for gauge</param>
@@ -1581,7 +1581,7 @@ Public Class CustomRenderer
 			Dim inner As New Rectangle(0 + 40, 0 + 40, CInt(Fix(x)) - 80, CInt(Fix(y)) - 80)
 
 			'OUTER
-			Dim grapf As New LinearGradientBrush(rect, RadialGauge.OuterFrameGradientStartColor, RadialGauge.OuterFrameGradientEndColor, LinearGradientMode.Vertical)
+			Dim graph As New LinearGradientBrush(rect, RadialGauge.OuterFrameGradientStartColor, RadialGauge.OuterFrameGradientEndColor, LinearGradientMode.Vertical)
 
 			path.AddEllipse(rect)
 			If RadialGauge.TransparentBackGround Then
@@ -1600,7 +1600,7 @@ Public Class CustomRenderer
 			bevelBlend.Factors = New Single() {.2f,.4f,.6f,.6f, 1f, 1f }
 			Dim lgRect As Rectangle = rect
 			lgRect.Inflate(1, 1)
-			Dim innerBevelBrush As New LinearGradientBrush(lgraphRect, RadialGauge.InnerFrameGradientStartColor, RadialGauge.InnerFrameGradientEndColor, LinearGradientMode.Vertical)
+			Dim innerBevelBrush As New LinearGradientBrush(graphRect, RadialGauge.InnerFrameGradientStartColor, RadialGauge.InnerFrameGradientEndColor, LinearGradientMode.Vertical)
 
 			innerBevelBrush.Blend = bevelBlend
 			If Me.RadialGauge.ShowBackgroundFrame Then
@@ -1663,7 +1663,7 @@ Public Class CustomRenderer
 		''' <summary>
 		''' Used to draw the  label of the gauge
 		''' </summary>
-		''' <param name="e">paint event arguement</param>
+		''' <param name="e">paint event argument</param>
 		''' <param name="m_Center">Center point of the gauge</param>
 		Public Sub DrawLabel(ByVal e As Graphics, ByVal m_Center As Point, ByVal GaugeRadius As Integer)
 			Dim br As New SolidBrush(Me.RadialGauge.GaugeLableColor)
@@ -1691,7 +1691,7 @@ Public Class CustomRenderer
 					rangeSweepAngle = (ptrRange.EndValue - ptrRange.StartValue) * m_GaugeArcEnd / (RadialGauge.MaximumValue - RadialGauge.MinimumValue)
 
 
-					Dim linevalue As Int32 = m_GaugeArcRadius + RadialGauge.MajorTickMarkHeight
+					Dim line As Int32 = m_GaugeArcRadius + RadialGauge.MajorTickMarkHeight
 					gr.SmoothingMode = SmoothingMode.AntiAlias
 					gr.PixelOffsetMode = PixelOffsetMode.HighQuality
 					Dim m_GaugeArcRadius1 As Integer = m_GaugeArcRadius + RadialGauge.MajorTickMarkHeight

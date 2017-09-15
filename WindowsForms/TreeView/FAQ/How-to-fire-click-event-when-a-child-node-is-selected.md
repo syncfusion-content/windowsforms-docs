@@ -35,7 +35,7 @@ private void treeViewAdv1_AfterSelect(object sender, EventArgs e)
 
         }
 
-        CheckForChildern(node);
+        CheckForChildren(node);
 
 
 
@@ -44,7 +44,7 @@ private void treeViewAdv1_AfterSelect(object sender, EventArgs e)
 }
 
 
-private void CheckForChildern(TreeNodeAdv node)
+private void CheckForChildren(TreeNodeAdv node)
 
 {
 
@@ -60,15 +60,15 @@ private void CheckForChildern(TreeNodeAdv node)
 
         // iterate through child nodes in the collection
 
-        foreach (TreeNodeAdv childnode in node.Nodes)
+        foreach (TreeNodeAdv node in node.Nodes)
 
         {
 
-            if (childnode.IsSelected)
+            if (node.IsSelected)
 
             {
 
-                Console.WriteLine(childnode.Text + "is selected");
+                Console.WriteLine(node.Text + "is selected");
 
             }
 
@@ -76,7 +76,7 @@ private void CheckForChildern(TreeNodeAdv node)
 
             // Do recursive call
 
-            CheckForChildern(childnode);
+            CheckForChildren(node);
 
         }
 
@@ -104,7 +104,7 @@ Private Sub treeViewAdv1_AfterSelect(ByVal sender As Object, ByVal e As EventArg
 
         End If
 
-        CheckForChildern(node)
+        CheckForChildren(node)
 
 
 
@@ -114,7 +114,7 @@ End Sub
 
 
 
-Private Sub CheckForChildern(ByVal node As TreeNodeAdv)
+Private Sub CheckForChildren(ByVal node As TreeNodeAdv)
 
 
 
@@ -126,11 +126,11 @@ Private Sub CheckForChildern(ByVal node As TreeNodeAdv)
 
         ' iterate through child nodes in the collection
 
-        For Each childnode As TreeNodeAdv In node.Nodes
+        For Each node As TreeNodeAdv In node.Nodes
 
-            If childnode.IsSelected Then
+            If node.IsSelected Then
 
-                Console.WriteLine(childnode.Text & "is selected")
+                Console.WriteLine(node.Text & "is selected")
 
             End If
 
@@ -138,9 +138,9 @@ Private Sub CheckForChildern(ByVal node As TreeNodeAdv)
 
             ' Do recursive call
 
-            CheckForChildern(childnode)
+            CheckForChildren(node)
 
-        Next childnode
+        Next node
 
     End If
 

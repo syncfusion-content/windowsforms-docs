@@ -207,7 +207,7 @@ this.polFontsTB.Location = new Point(0, 0);
 
 }
 
-// If the Fonts CommandBar is being redocked / floated from the left or right borders, then 
+// If the Fonts CommandBar is being dock / floated from the left or right borders, then 
 
 // increase the max length and restore combo box visibility.
 
@@ -278,7 +278,7 @@ Me.polFontsTB.Location = New Point(0, 0)
 
 End If
 
-' If the Fonts CommandBar is being redocked / floated from the left or right borders, then 
+' If the Fonts CommandBar is being dock / floated from the left or right borders, then 
 
 ' increase the max length and restore combo box visibility. 
 
@@ -530,7 +530,7 @@ if ((arg.CommandBarResizeType == Syncfusion.Windows.Forms.Tools.CommandBarResize
 
 int factor = (int)Math.Ceiling((float)min.Width / (float)current.Width);
 
-float ffactor = (float)min.Width / (float)current.Width;
+float factors = (float)min.Width / (float)current.Width;
 
 
 
@@ -584,7 +584,7 @@ arg.ClientSize = new;
 
 }
 
-else if (ffactor <= 1)
+else if (factors <= 1)
 
 {
 
@@ -664,7 +664,7 @@ arg.ClientSize = new;
 
 }
 
-else if (ffactor <= 1)
+else if (factors <= 1)
 
 {
 
@@ -733,7 +733,7 @@ If (arg.CommandBarResizeType = Syncfusion.Windows.Forms.Tools.CommandBarResizeTy
 
 Dim factor As Integer = CInt(Math.Ceiling(CSn(min.Width) / CSn(current.Width)))
 
-Dim ffactor As Single = CSn(min.Width) / CSn(current.Width)
+Dim factors As Single = CSn(min.Width) / CSn(current.Width)
 
 
 
@@ -777,7 +777,7 @@ End If
 
 arg.ClientSize = new
 
-ElseIf ffactor <= 1 Then
+ElseIf factors <= 1 Then
 
 ' The CommandBar is extended to the maximum width.
 
@@ -837,7 +837,7 @@ End If
 
 arg.ClientSize = new
 
-ElseIf ffactor <= 1 Then
+ElseIf factors <= 1 Then
 
 arg.ClientSize = min
 

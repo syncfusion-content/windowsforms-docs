@@ -23,7 +23,7 @@ private void button1_Click(object sender, System.EventArgs e)
 
 Bitmap bmp = CreateBitmap();
 
-bmp.Save(@"C:\Myprojects\Bitmap.bmp");
+bmp.Save(@"C:\MyProjects\Bitmap.bmp");
 
 bmp.Dispose();
 
@@ -85,7 +85,7 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 Dim bmp As Bitmap = CreateBitmap()
 
-bmp.Save("C:\Myprojects\Bitmap.bmp")
+bmp.Save("C:\MyProjects\Bitmap.bmp")
 
 bmp.Dispose()
 

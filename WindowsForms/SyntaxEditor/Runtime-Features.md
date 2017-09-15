@@ -1181,7 +1181,7 @@ This is illustrated in the code given below.
 
 
 
-CodeSnippetsExtractor.Extract(csharpsnippetsPath, editControl1);
+CodeSnippetsExtractor.Extract(csharpPath, editControl1);
 
 {% endhighlight %}
 
@@ -1189,7 +1189,7 @@ CodeSnippetsExtractor.Extract(csharpsnippetsPath, editControl1);
 
 
 
-CodeSnippetsExtractor.Extract(vbsnippetsPath, editControl1)
+CodeSnippetsExtractor.Extract(snippetsPath, editControl1)
 
 {% endhighlight %}
 
@@ -1235,7 +1235,7 @@ The code snippets can also be contained in containers and displayed in the pop-u
 
 private CodeSnippetsContainer container = new Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer(); 
 
-container = CodeSnippetsExtractor.Extract(csharpsnippetsPath@"\Loops");
+container = CodeSnippetsExtractor.Extract(csharpPath@"\Loops");
 
 container.Name = "Loops";
 
@@ -1249,7 +1249,7 @@ this.editControl1.Language.SnippetsContainer.AddContainer(container);
 
 container As CodeSnippetsContainer = New Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer()
 
-container = CodeSnippetsExtractor.Extract(vbsnippetsPath "\Loops")
+container = CodeSnippetsExtractor.Extract(snippetsPath "\Loops")
 
 container.Name = "Loops"
 
@@ -1267,11 +1267,11 @@ Code snippets can also be created by using the configuration file. For example, 
 
        <Header>
 
-        <Title>struct</Title>
+        <Title>strut</Title>
 
-         <Shortcut>struct</Shortcut>
+         <Shortcut>strut</Shortcut>
 
- <Description>Code snippet for struct</Description>
+ <Description>Code snippet for strut</Description>
 
      </Header>
 
@@ -1283,15 +1283,15 @@ Code snippets can also be created by using the configuration file. For example, 
 
          <ID>name</ID>
 
-         <ToolTip>Struct name</ToolTip>
+         <ToolTip>strut name</ToolTip>
 
-        <Default>MyStruct</Default>
+        <Default>strut</Default>
 
       </Literal>
 
          </Declarations>
 
-       <Code Language ="csharp"><![CDATA[struct $name$
+       <Code Language ="csharp"><![CDATA[strut $name$
 
        {
 
@@ -1704,7 +1704,7 @@ This event occurs when the Context Choice window has been closed.</td></tr>
 
 
 
-private void editControl1_ContextChoiceClose(Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController controller, System.Windows.Forms.DialogResult dialogresult)
+private void editControl1_ContextChoiceClose(Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController controller, System.Windows.Forms.DialogResult result)
 
 {
 
@@ -1720,7 +1720,7 @@ this.editControl1.ContextChoiceController.Items.Clear();
 
 
 
-Private Sub editControl1_ContextChoiceClose(ByVal controller As Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController, ByVal dialogresult As System.Windows.Forms.DialogResult) Handles EditControl1.ContextChoiceClose
+Private Sub editControl1_ContextChoiceClose(ByVal controller As Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController, ByVal result As System.Windows.Forms.DialogResult) Handles EditControl1.ContextChoiceClose
 
 ' Clear the Context Choice items.
 

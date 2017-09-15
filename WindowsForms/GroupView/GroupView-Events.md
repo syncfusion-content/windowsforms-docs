@@ -263,7 +263,7 @@ Syncfusion.Windows.Forms.Tools.GroupBar grp = sender as GroupBar;
 
 
 
-BarItem tab = new BarItem("Add New Tab", new EventHandler(this.OngbVSMenuAddNewTab));
+BarItem tab = new BarItem("Add New Tab", new EventHandler(this.TabVSMenuAddNewTab));
 
 tab.Tag = this.grp;
 
@@ -271,11 +271,11 @@ menu.ParentBarItem.Items.Add(tab);
 
 
 
-BarItem deletetab = new BarItem("Delete Tab", new EventHandler(this.OngbMenuRemoveGroup));
+BarItem delete = new BarItem("Delete Tab", new EventHandler(this.TabMenuRemoveGroup));
 
-deletetab.Tag = this.grp;
+delete.Tag = this.grp;
 
-menu.ParentBarItem.Items.Add(deletetab);
+menu.ParentBarItem.Items.Add(delete);
 
         ...
 
@@ -285,17 +285,17 @@ if(this.grp.ContextMenuItem != -1)
 
 {
 
-GroupView grpvwctrl = this.grp.GroupBarItems[this.grp.ContextMenuItem].Client as GroupView;
+GroupView view = this.grp.GroupBarItems[this.grp.ContextMenuItem].Client as GroupView;
 
 
 
-BarItem moveupitem = new BarItem("Move &Up", new EventHandler(this.OngbVSMenuMoveUpDown));
+BarItem move = new BarItem("Move &Up", new EventHandler(this.TabVSMenuMoveUpDown));
 
-moveupitem.Tag = grpvwctrl;
+move.Tag = view;
 
-menu.ParentBarItem.Items.Add(moveupitem);
+menu.ParentBarItem.Items.Add(move);
 
-moveupitem.Enabled = false;
+move.Enabled = false;
 
 }
 
@@ -327,7 +327,7 @@ Private grp As Syncfusion.Windows.Forms.Tools.GroupBar = CType(IIf(TypeOf sender
 
 
 
-Dim tab As BarItem = New BarItem("Add New Tab", New EventHandler(Me.OngbVSMenuAddNewTab))
+Dim tab As BarItem = New BarItem("Add New Tab", New EventHandler(Me.TabVSMenuAddNewTab))
 
 tab.Tag = Me.grp
 
@@ -335,11 +335,11 @@ menu.ParentBarItem.Items.Add(tab)
 
 
 
-Dim deletetab As BarItem = New BarItem("Delete Tab", New EventHandler(Me.OngbMenuRemoveGroup))
+Dim delete As BarItem = New BarItem("Delete Tab", New EventHandler(Me.TabMenuRemoveGroup))
 
-deletetab.Tag = Me.grp
+delete.Tag = Me.grp
 
-menu.ParentBarItem.Items.Add(deletetab)
+menu.ParentBarItem.Items.Add(delete)
 
 
 
@@ -347,15 +347,15 @@ menu.ParentBarItem.Items.Add(deletetab)
 
 If Me.grp.ContextMenuItem &lt;&gt; -1 Then
 
-Dim grpvwctrl As GroupView =  Me.grp.GroupBarItems(Me.grp.ContextMenuItem).Client as GroupView 
+Dim view As GroupView =  Me.grp.GroupBarItems(Me.grp.ContextMenuItem).Client as GroupView 
 
-Dim moveupitem As BarItem = New BarItem("Move &Up", New EventHandler(Me.OngbVSMenuMoveUpDown))
+Dim move As BarItem = New BarItem("Move &Up", New EventHandler(Me.TabVSMenuMoveUpDown))
 
-moveupitem.Tag = grpvwctrl
+move.Tag = view
 
-menu.ParentBarItem.Items.Add(moveupitem)
+menu.ParentBarItem.Items.Add(move)
 
-moveupitem.Enabled = False
+move.Enabled = False
 
 End If
 
@@ -383,15 +383,15 @@ menu.ParentBarItem = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
 
 
 
-BarItem additem = new BarItem("Add New Item", new EventHandler(this.group_MenuAddNewItem));
+BarItem item = new BarItem("Add New Item", new EventHandler(this.group_MenuAddNewItem));
 
-menu.ParentBarItem.Items.Add(additem);
+menu.ParentBarItem.Items.Add(item);
 
 
 
-BarItem removeitem = new BarItem("Remove Item", new EventHandler(this.group_MenuRemoveItem));
+BarItem remove = new BarItem("Remove Item", new EventHandler(this.group_MenuRemoveItem));
 
-menu.ParentBarItem.Items.Add(removeitem);
+menu.ParentBarItem.Items.Add(remove);
 
 
 
@@ -399,7 +399,7 @@ menu.ParentBarItem.Items.Add(removeitem);
 
 if(this.groupWinForms.HighlightedItem == -1)
 
-removeitem.Enabled = false;
+remove.Enabled = false;
 
 
 
@@ -427,15 +427,15 @@ menu.ParentBarItem = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
 
 
 
-Dim additem As BarItem = New BarItem("Add New Item", New EventHandler(Me.group_MenuAddNewItem))
+Dim item As BarItem = New BarItem("Add New Item", New EventHandler(Me.group_MenuAddNewItem))
 
- menu.ParentBarItem.Items.Add(additem)
+ menu.ParentBarItem.Items.Add(item)
 
 
 
-Dim removeitem As BarItem = New BarItem("Remove Item", New EventHandler(Me.group_MenuRemoveItem))
+Dim remove As BarItem = New BarItem("Remove Item", New EventHandler(Me.group_MenuRemoveItem))
 
-menu.ParentBarItem.Items.Add(removeitem)
+menu.ParentBarItem.Items.Add(remove)
 
 
 
@@ -443,7 +443,7 @@ menu.ParentBarItem.Items.Add(removeitem)
 
 If Me.groupWinForms.HighlightedItem = -1 Then
 
-removeitem.Enabled = False
+remove.Enabled = False
 
 End If
 

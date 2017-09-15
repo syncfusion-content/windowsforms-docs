@@ -51,13 +51,13 @@ INPUTElementImpl text;
 
 //Collection class accessing the HTML document with the userID as the key
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
 
 
 //Code variable assigned to the html element with the help of the element's id as //the key 
 
-this.text = htmlelements["txt"] as INPUTElementImpl;
+this.text = tab["txt"] as INPUTElementImpl;
 
 
 
@@ -82,13 +82,13 @@ Private text As INPUTElementImpl
 
 'Collection class accessing the HTML document with the userID as the key 
 
-Private htmlelements As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.HtmluiControl1.Document.GetElementsByUserIdHash()
 
 
 
 'Code variable assigned to the html element with the help of the element's id as 'the key 
 
-Me.Text = CType(IIf(TypeOf htmlelements("txt") Is INPUTElementImpl, htmlelements("txt"), Nothing), INPUTElementImpl)
+Me.Text = CType(IIf(TypeOf tab("txt") Is INPUTElementImpl, tab("txt"), Nothing), INPUTElementImpl)
 
 
 

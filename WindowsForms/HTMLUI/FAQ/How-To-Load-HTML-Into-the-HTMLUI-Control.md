@@ -154,9 +154,9 @@ To load the file from disk into the HTMLUI, the following code snippet can be us
 
 // Load the specified HTML document from Disk at runtime.
 
-string filepath = @"C:\MyProjects\LoadHTML\FromDisk.htm";
+string path = @"C:\MyProjects\LoadHTML\FromDisk.htm";
 
-this.htmluiControl1.LoadHTML(filePath);
+this.htmluiControl1.LoadHTML(path);
 
 {% endhighlight %}
 
@@ -166,9 +166,9 @@ this.htmluiControl1.LoadHTML(filePath);
 
 ' Load the specified HTML document from Disk at runtime.
 
-Private filepath As String = "C:\MyProjects\LoadHTML\FromDisk.htm"
+Private path As String = "C:\MyProjects\LoadHTML\FromDisk.htm"
 
-Me.HtmluiControl1.LoadHTML(filepath)
+Me.HtmluiControl1.LoadHTML(path)
 
 {% endhighlight %}
 
@@ -248,7 +248,7 @@ To load a HTML file as an embedded resource:
 
 Stream htmlStream = (Stream)Assembly.GetExecutingAssembly().GetManifestResourceStream
 
-("LoadingFileFromResource.resfile.htm");
+("LoadingFileFromResource.report.htm");
 
 this.htmluiControl1.LoadHTML(htmlStream);
 
@@ -258,7 +258,7 @@ this.htmluiControl1.LoadHTML(htmlStream);
 
 
 
-Private htmlStream As Stream = CType(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("LoadingFileFromResource.resfile.htm"), Stream)
+Private htmlStream As Stream = CType(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("LoadingFileFromResource.report.htm"), Stream)
 
 Me.HtmluiControl1.LoadHTML(htmlStream)
 

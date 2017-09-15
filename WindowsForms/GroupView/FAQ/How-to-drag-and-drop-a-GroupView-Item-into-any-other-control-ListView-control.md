@@ -36,7 +36,7 @@ else
 
 e.Effect = DragDropEffects.Copy; 
 
-GroupViewItem gbItem = e.Data.GetData(Syncfusion.Windows.Forms.Tools.GroupView.GroupViewFormatName) as GroupViewItem; str = gbItem.Text; imageIndex = gbItem.ImageIndex; 
+GroupViewItem groupItem = e.Data.GetData(Syncfusion.Windows.Forms.Tools.GroupView.GroupViewFormatName) as GroupViewItem; str =groupItem.Text; imageIndex = groupItem.ImageIndex; 
 
 }  
 
@@ -112,11 +112,11 @@ e.Effect = DragDropEffects.Copy
 
 End If
 
-Dim gbItem As GroupViewItem = TryCast(e.Data.GetData(Syncfusion.Windows.Forms.Tools.GroupView.GroupViewFormatName), GroupViewItem)
+Dim groupItem As GroupViewItem = TryCast(e.Data.GetData(Syncfusion.Windows.Forms.Tools.GroupView.GroupViewFormatName), GroupViewItem)
 
-str = gbItem.Text
+str = groupItem.Text
 
-imageIndex = gbItem.ImageIndex
+imageIndex = groupItem.ImageIndex
 
 Else
 

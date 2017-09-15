@@ -646,7 +646,7 @@ The event handler receives an argument of type EventArgs.
 
 
 
-//2D or 3D border can be set for the HTMLUIControl using the BorderStyle property. The HTMLUIControl can also be displayed borderless using this property.
+//2D or 3D border can be set for the HTMLUIControl using the BorderStyle property. The HTMLUIControl can also be displayed border less using this property.
 
 this.htmluiControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
@@ -673,8 +673,8 @@ private void htmluiControl1_BorderStyleChanged(object sender, EventArgs e)
 {% highlight vbnet %}
 
 
-
-'2D or 3D border can be set for the HTMLUIControl control using the BorderStyle property. The HTMLUIControl control can also be displayed borderless using this property.
+ 
+'2D or 3D border can be set for the HTMLUIControl control using the BorderStyle property. The HTMLUIControl control can also be displayed border less using this property.
 
 Me.htmluiControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 

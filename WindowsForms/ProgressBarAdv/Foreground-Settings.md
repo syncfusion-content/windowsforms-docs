@@ -191,7 +191,7 @@ this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarS
 
 this.progressBarAdv1.MultipleColors = new System.Drawing.Color[] {System.Drawing.Color.Orange, System.Drawing.Color.Yellow, System.Drawing.Color.Blue, System.Drawing.Color.Pink, System.Drawing.Color.Green};
 
-this.progressBarAdv1.StretchMultGrad = false;
+this.progressBarAdv1.StretchMultiGrad = false;
 
 {% endhighlight %}
 
@@ -201,7 +201,7 @@ Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarSty
 
 Me.progressBarAdv1.MultipleColors = New System.Drawing.Color[] {System.Drawing.Color.Orange, System.Drawing.Color.Yellow, System.Drawing.Color.Blue, System.Drawing.Color.Pink, System.Drawing.Color.Green};
 
-Me.progressBarAdv1.StretchMultGrad = False
+Me.progressBarAdv1.StretchMultiGrad = False
 
 {% endhighlight %}
 

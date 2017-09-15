@@ -114,7 +114,7 @@ The following step by step procedure helps you to save and load the layout state
 
 		private string selRad;
 
-		private MemoryStream memstream;
+		private MemoryStream memory;
 		
    ~~~
    {:.prettyprint}
@@ -128,7 +128,7 @@ The following step by step procedure helps you to save and load the layout state
 
 		Private selRad As String
 
-		Private memstream As MemoryStream
+		Private memory As MemoryStream
 
    ~~~
    {:.prettyprint}

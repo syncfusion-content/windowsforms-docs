@@ -378,8 +378,8 @@ Returns the index of the GroupBar Item being drawn.</td></tr>
 
 {% highlight C# %}  
 
-private void gbOutlook_ProvideGroupBarItemBrush(object sender, Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs args)
-
+private void groupOutlook_ProvideGroupBarItemBrush (object sender, Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs args)
+ 
 {
 
 System.Drawing.Drawing2D.Blend blend = new System.Drawing.Drawing2D.Blend();
@@ -394,7 +394,7 @@ Rectangle rcGroupBarItem = args.Bounds;
 
 // Create and initialize the LinearGradientBrush.
 
-System.Drawing.Drawing2D.LinearGradientBrush brush = new System.Drawing.Drawing2D.LinearGradientBrush(rcGroupBarItem, gbOutlook.GroupBarItems[0].BackColor, SystemColors.ScrollBar, 90, true);
+System.Drawing.Drawing2D.LinearGradientBrush brush = new System.Drawing.Drawing2D.LinearGradientBrush(rcGroupBarItem, groupOutlook.GroupBarItems[0].BackColor, SystemColors.ScrollBar, 90, true);
 
 brush.Blend = blend;
 
@@ -408,7 +408,7 @@ args.BackgroundBrush = brush;
 
 {% highlight vbnet %} 
 
-Private Sub gbOutlook_ProvideGroupBarItemBrush(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs)
+Private Sub groupOutlook_ProvideGroupBarItemBrush(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs)
 
 Dim blend As New System.Drawing.Drawing2D.Blend()
 
@@ -422,7 +422,7 @@ Dim rcGroupBarItem As Rectangle = args.Bounds
 
 ' Create and initialize the LinearGradientBrush. 
 
-Dim brush As New System.Drawing.Drawing2D.LinearGradientBrush(rcGroupBarItem, gbOutlook.GroupBarItems(0).BackColor, SystemColors.ScrollBar, 90, True)
+Dim brush As New System.Drawing.Drawing2D.LinearGradientBrush(rcGroupBarItem, groupOutlook.GroupBarItems(0).BackColor, SystemColors.ScrollBar, 90, True)
 
 brush.Blend = blend
 

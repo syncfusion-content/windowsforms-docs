@@ -53,9 +53,9 @@ public class Script
 
 {
 
-INPUTElementImpl scripttext;
+INPUTElementImpl script;
 
-Hashtable htmlelements = new Hashtable();
+Hashtable tab = new Hashtable();
 
 
 
@@ -75,15 +75,15 @@ public Script()
 
 {
 
-htmlelements = Global.Document.GetElementsByUserIdHash();
+tab = Global.Document.GetElementsByUserIdHash();
 
-scripttext = htmlelements["txt"] as INPUTElementImpl;
+script = tab["txt"] as INPUTElementImpl;
 
 
 
 // User control property sets the user control instance for the particular input element declared by the user
 
-scripttext.UserControl.CustomControl.Text = "This is a sample for scripting";
+script.UserControl.CustomControl.Text = "This is a sample for scripting";
 
 }
 

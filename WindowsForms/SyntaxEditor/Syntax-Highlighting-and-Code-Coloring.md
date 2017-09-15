@@ -426,7 +426,7 @@ The language-specific configuration is stored in XML files. The below given code
 
         <extensions>
 
-                <extension>lsp</extension>
+                <extension>ls</extension>
 
         </extensions>
 

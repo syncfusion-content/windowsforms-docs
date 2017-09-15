@@ -123,9 +123,9 @@ The HTML file that is located in the user's disk can be loaded into the HTMLUICo
 
 // Load the specified HTML Document from user's drive.
 
-string filepath = @"C:\MyProjects\LoadHTML\FromDisk.htm";
+string path = @"C:\MyProjects\LoadHTML\FromDisk.htm";
 
-this.htmluiControl1.LoadHTML(filePath);
+this.htmluiControl1.LoadHTML(path);
 
 {% endhighlight %}
 
@@ -135,9 +135,9 @@ this.htmluiControl1.LoadHTML(filePath);
 
 'Load the specified HTML Document from user's drive.
 
-Private filepath As String = "C:\MyProjects\LoadHTML\FromDisk.htm"
+Private path As String = "C:\MyProjects\LoadHTML\FromDisk.htm"
 
-Me.HtmluiControl1.LoadHTML(filepath)
+Me.HtmluiControl1.LoadHTML(path)
 
 {% endhighlight %}
 
@@ -173,9 +173,9 @@ The HTMLUI supports Link property. Links in HTML code are easily invoked in HTML
 
 // Load the specified HTML Document that contains link for another document.
 
-string filepath = @"C:\MyProjects\LoadHTML\Main.htm";
+string path = @"C:\MyProjects\LoadHTML\Main.htm";
 
-this.htmluiControl1.LoadHTML(filePath);
+this.htmluiControl1.LoadHTML(path);
 
 {% endhighlight %}
 
@@ -185,9 +185,9 @@ this.htmluiControl1.LoadHTML(filePath);
 
 ‘Load the specified HTML Document that contains link for another document.
 
-Private filepath As String = "C:\MyProjects\LoadHTML\Main.htm"
+Private path As String = "C:\MyProjects\LoadHTML\Main.htm"
 
-Me.HtmluiControl1.LoadHTML(filepath)
+Me.HtmluiControl1.LoadHTML(path)
 
 {% endhighlight %}
 

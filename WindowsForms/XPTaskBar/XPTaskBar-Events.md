@@ -450,7 +450,7 @@ Rectangle rec = args.Bounds;
 
 System.Drawing.Drawing2D.LinearGradientBrush brush = new System.Drawing.Drawing2D.LinearGradientBrush(rec, Color.FromArgb(227, 238, 255), Color.FromArgb(227, 238, 255), 75, true);
 
-lbrush.Blend = blend;
+brush.Blend = blend;
 
 args.Brush = brush;
 

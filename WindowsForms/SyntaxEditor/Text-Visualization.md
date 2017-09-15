@@ -1436,7 +1436,7 @@ Toggles showing of whitespace.</td></tr>
 
 // Enabling white space indicators.
 
-this.editControl1.ShowWhitespaces = true;
+this.editControl1.ShowWhiteSpaces = true;
 
 
 
@@ -1452,7 +1452,7 @@ this.editControl1.ToggleShowingWhiteSpaces();
 
 ' Enabling white space indicators.
 
-Me.editControl1.ShowWhitespaces = True
+Me.editControl1.ShowWhiteSpaces = True
 
 
 
