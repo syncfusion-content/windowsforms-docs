@@ -1442,7 +1442,7 @@ Water - H<sub>2</sub>O<br/>
 
 Sulphuric Acid - H<sub>2</sub>SO<sub>4</sub><br/>
 
-Carbon-Dioxide - CO<sub>2</sub>
+Carbon - CO<sub>2</sub>
 
 </body>
 
