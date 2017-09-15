@@ -87,7 +87,7 @@ Code snippet that is currently activated.</td></tr>
 
 
 
-private void editControl1_CodeSnippetActivating(object sender, Syncfusion.Windows.Forms.Edit.CancelableCodeSnippetsEventArgs e)
+private void editControl1_CodeSnippetActivating(object sender, Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs e)
 
 {
 
@@ -103,7 +103,7 @@ Console.WriteLine(" CodeSnippetActivating event is raised ");
 
 
 
-Private Sub editControl1_CodeSnippetActivating(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.CancelableCodeSnippetsEventArgs)
+Private Sub editControl1_CodeSnippetActivating(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs)
 
 ' The below line will be displayed in the output window at runtime.
 
