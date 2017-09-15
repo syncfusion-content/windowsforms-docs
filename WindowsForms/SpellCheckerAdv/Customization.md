@@ -80,9 +80,9 @@ SpellCheckerAdv provides support to get suggestion list by passing the wrong wor
 
 {% highlight C# %}
 
-this.spellCheckerAdv1.GetSuggestions("Textbox");
+this.spellCheckerAdv1.GetSuggestions("Textboxx");
 
-this.spellCheckerAdv1.GetPhoneticWords("Textbox");
+this.spellCheckerAdv1.GetPhoneticWords("Textboxx");
 
 this.spellCheckerAdv1.GetAnagrams("Textbox");
 
@@ -90,9 +90,9 @@ this.spellCheckerAdv1.GetAnagrams("Textbox");
 
 {% highlight VB %}
 
-Me.spellCheckerAdv1.GetSuggestions("Textbox")
+Me.spellCheckerAdv1.GetSuggestions("Textboxx")
 
-Me.spellCheckerAdv1.GetPhoneticWords("Textbox")
+Me.spellCheckerAdv1.GetPhoneticWords("Textboxx")
 
 Me.spellCheckerAdv1.GetAnagrams("Textbox")
 
