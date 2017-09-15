@@ -140,7 +140,7 @@ Moves caret to the end of the line.</td></tr>
 {% highlight c# %}
 
 
-this.editControl1.MoveToLineStart();
+this.editControl1.MoveToLinestart();
 
 this.editControl1.MoveToLineEnd();
 
@@ -149,7 +149,7 @@ this.editControl1.MoveToLineEnd();
 {% highlight vbnet %}
 
 
-Me.editControl1.MoveToLineStart();
+Me.editControl1.MoveToLinestart();
 
 Me.editControl1.MoveToLineEnd();
 
