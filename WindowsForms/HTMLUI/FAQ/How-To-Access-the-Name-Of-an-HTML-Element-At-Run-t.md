@@ -41,13 +41,13 @@ The following HTML document illustrates how an input element with a name is decl
 
 INPUTElementImpl textBox1;
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
 
 
 //accessing the input element
 
-textBox1 = htmlelements["txt1"] as INPUTElementImpl;
+textBox1 = tab["txt1"] as INPUTElementImpl;
 
 
 
@@ -69,15 +69,15 @@ Console.WriteLine("Name given for TextBox1:\n"+ textBox1.Attributes["name"].Valu
 
 Private textBox1 As INPUTElementImpl
 
-Private htmlelements As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
+Private tab As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
 
 
 
 'accessing the input element
 
-Private textBox1 = CType(IIf(TypeOf htmlelements("txt1") Is INPUTElementImpl, 
+Private textBox1 = CType(IIf(TypeOf tab("txt1") Is INPUTElementImpl, 
 
-htmlelements("txt1"), Nothing), INPUTElementImpl)
+tab("txt1"), Nothing), INPUTElementImpl)
 
 
 

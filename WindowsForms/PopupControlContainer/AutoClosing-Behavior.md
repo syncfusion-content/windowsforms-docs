@@ -31,7 +31,7 @@ private void button1_Click(object sender,EventArgs e)
 
   // Hides the PopupControlContainer under a button click.
 
-if(txtbox.Text!="") 
+if(Textbox.Text!="") 
 
 {
 
@@ -58,7 +58,7 @@ Private Sub button1_Click(sender as Object,e as EventArgs)
 
 'Hides the PopupControlContainer under a button click.
 
-If Not txtbox.Text = "" Then
+If Not Textbox.Text = "" Then
 
       this.popupControlContainer1.HidePopup(PopupCloseTypes.Done)
 

@@ -1181,7 +1181,7 @@ This is illustrated in the code given below.
 
 
 
-CodeSnippetsExtractor.Extract(csharpsnippetsPath, editControl1);
+CodeSnippetsExtractor.Extract(Path, editControl1);
 
 {% endhighlight %}
 
@@ -1189,7 +1189,7 @@ CodeSnippetsExtractor.Extract(csharpsnippetsPath, editControl1);
 
 
 
-CodeSnippetsExtractor.Extract(vbsnippetsPath, editControl1)
+CodeSnippetsExtractor.Extract(Path, editControl1)
 
 {% endhighlight %}
 
@@ -1235,7 +1235,7 @@ The code snippets can also be contained in containers and displayed in the pop-u
 
 private CodeSnippetsContainer container = new Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer(); 
 
-container = CodeSnippetsExtractor.Extract(csharpsnippetsPath@"\Loops");
+container = CodeSnippetsExtractor.Extract(Path@"\Loops");
 
 container.Name = "Loops";
 
@@ -1249,7 +1249,7 @@ this.editControl1.Language.SnippetsContainer.AddContainer(container);
 
 container As CodeSnippetsContainer = New Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer()
 
-container = CodeSnippetsExtractor.Extract(vbsnippetsPath "\Loops")
+container = CodeSnippetsExtractor.Extract(Path "\Loops")
 
 container.Name = "Loops"
 
@@ -1271,7 +1271,7 @@ Code snippets can also be created by using the configuration file. For example, 
 
          <Shortcut>struct</Shortcut>
 
- <Description>Code snippet for struct</Description>
+ <Description>Code snippet for Struct</Description>
 
      </Header>
 
@@ -1285,7 +1285,7 @@ Code snippets can also be created by using the configuration file. For example, 
 
          <ToolTip>Struct name</ToolTip>
 
-        <Default>MyStruct</Default>
+        <Default>Struct</Default>
 
       </Literal>
 
@@ -1704,7 +1704,7 @@ This event occurs when the Context Choice window has been closed.</td></tr>
 
 
 
-private void editControl1_ContextChoiceClose(Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController controller, System.Windows.Forms.DialogResult dialogresult)
+private void editControl1_ContextChoiceClose(Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController controller, System.Windows.Forms.DialogResult result)
 
 {
 
@@ -1720,7 +1720,7 @@ this.editControl1.ContextChoiceController.Items.Clear();
 
 
 
-Private Sub editControl1_ContextChoiceClose(ByVal controller As Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController, ByVal dialogresult As System.Windows.Forms.DialogResult) Handles EditControl1.ContextChoiceClose
+Private Sub editControl1_ContextChoiceClose(ByVal controller As Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController, ByVal result As System.Windows.Forms.DialogResult) Handles EditControl1.ContextChoiceClose
 
 ' Clear the Context Choice items.
 

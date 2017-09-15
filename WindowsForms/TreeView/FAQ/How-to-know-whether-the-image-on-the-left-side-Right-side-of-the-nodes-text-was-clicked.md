@@ -99,11 +99,11 @@ Private Sub treeViewAdv1_MouseUp(ByVal sender As Object, ByVal e As System.Windo
 
     Dim imgSize As Size = New Size(Me.imageList1.ImageSize.Width, Me.imageList1.ImageSize.Height)
 
-    Dim imgrec As Rectangle = New Rectangle(image, imgSize)
+    Dim image As Rectangle = New Rectangle(image, imgSize)
 
     Dim click As Point = New Point(e.X, e.Y)
 
-    If imgrec.Contains(click) = True Then
+    If image.Contains(click) = True Then
 
         Console.WriteLine("Clicked on " & node.Text & "'s left image")
 

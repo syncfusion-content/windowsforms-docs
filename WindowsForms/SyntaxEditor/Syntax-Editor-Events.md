@@ -2315,7 +2315,7 @@ Syncfusion.Windows.Forms.Edit.TextChangingEventHandler(editControl1_LineChanged)
 
 
 
-void editControl1_LineChanged(objectsender,Syncfusion.Windows.Forms.Edit.TextChangingEventArgs e)
+void editControl1_LineChanged(object sender,Syncfusion.Windows.Forms.Edit.TextChangingEventArgs e)
 
        { 
 
@@ -2335,7 +2335,7 @@ void editControl1_LineChanged(objectsender,Syncfusion.Windows.Forms.Edit.TextCha
 
 
 
-    Private Sub editControl1_LineChanged(ByVal , As objectsender, 
+    Private Sub editControl1_LineChanged(ByVal , As object sender, 
 
                            ByVal e As Syncfusion.Windows.Forms.Edit.TextChangingEventArgs)
 
@@ -2364,7 +2364,7 @@ The LineInserted event will be fired when a new line is inserted in the Edit con
 
 
 
-void editControl1_LineInserted(objectsender,Syncfusion.Windows.Forms.Edit.LinesEventArgs e)
+void editControl1_LineInserted(object sender,Syncfusion.Windows.Forms.Edit.LinesEventArgs e)
 
         {
 
@@ -2384,7 +2384,7 @@ void editControl1_LineInserted(objectsender,Syncfusion.Windows.Forms.Edit.LinesE
     AddHandler Me.editControl1.LineInserted, AddressOf Me.editControl1_LineInserted
 
 
-    Private Sub editControl1_LineInserted(ByVal , As objectsender, 
+    Private Sub editControl1_LineInserted(ByVal , As object sender, 
 
                                           ByVal e As Syncfusion.Windows.Forms.Edit.LinesEventArgs)
 

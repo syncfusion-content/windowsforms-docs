@@ -911,7 +911,7 @@ The Ordered List tag defines the start of an ordered list. The ordered list is n
 
 
 
-File Location and Name:  C:\MyProjects\listItem\ol.html
+File Location and Name:  C:\MyProjects\listItem\old.html
 
 
 
@@ -939,7 +939,7 @@ File Location and Name:  C:\MyProjects\listItem\ol.html
 
 
 
-this.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\ol.html");
+this.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\old.html");
 
 {% endhighlight %}
 
@@ -1628,7 +1628,7 @@ File Location and Name:  C:\MyProjects\table\td.html
 
 <tr>
 
-<td colspan=2>Colspan cell</td>
+<td colspan=2>Collumn cell</td>
 
 </tr>
 
@@ -1636,13 +1636,13 @@ File Location and Name:  C:\MyProjects\table\td.html
 
 <td height="50">Custom height cell</td>
 
-<td nowrap>nowrap cell</td>
+<td nowrap>no wrap cell</td>
 
 </tr>
 
 <tr>
 
-<td rowspan=2>Rowspan cell</td>
+<td rowspan=2>Rows cell</td>
 
 <td valign="bottom" height="80">V align cell</td>
 

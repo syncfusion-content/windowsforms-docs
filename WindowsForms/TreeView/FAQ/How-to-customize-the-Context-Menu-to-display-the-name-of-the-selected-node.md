@@ -37,9 +37,9 @@ private void treeViewAdv1_MouseDown(object sender, System.Windows.Forms.MouseEve
 
             //Create MenuItem for the SelectedNode
 
-            MenuItem menuitem = new MenuItem(this.treeViewAdv1.SelectedNode.Text);
+            MenuItem menu = new MenuItem(this.treeViewAdv1.SelectedNode.Text);
 
-            this.contextMenu1.MenuItems.Add(menuitem);
+            this.contextMenu1.MenuItems.Add(menu);
 
         }
 
@@ -69,9 +69,9 @@ Private Sub treeViewAdv1_MouseDown(ByVal sender As Object, ByVal e As System.Win
 
             'Create MenuItem for the SelectedNode
 
-            Dim menuitem As MenuItem = New MenuItem(Me.treeViewAdv1.SelectedNode.Text)
+            Dim menu As MenuItem = New MenuItem(Me.treeViewAdv1.SelectedNode.Text)
 
-            Me.contextMenu1.MenuItems.Add(menuitem)
+            Me.contextMenu1.MenuItems.Add(menu)
 
         End If
 

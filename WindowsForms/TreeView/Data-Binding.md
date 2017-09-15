@@ -20,7 +20,7 @@ TreeViewAdv does not have direct option to load/save from XML file. This below s
         /// To load TreeViewAdv from XML File
         /// </summary>
 
-        private void LoadTreeViewAdvfromXML()
+        private void LoadTreeViewAdvXML()
 
         {
             XmlDocument xDoc = new XmlDocument();
@@ -71,12 +71,12 @@ TreeViewAdv does not have direct option to load/save from XML file. This below s
         /// <summary>
         /// To save TreeViewAdv node information to XML File
         /// </summary>
-        public void ExportToXML(TreeViewAdv tv, string filename)
+        public void ExportToXML(TreeViewAdv tree, string filename)
         {
             XmlTextWriter = new XmlTextWriter(filename, System.Text.Encoding.UTF8);
             XmlTextWriter.WriteStartDocument();
             XmlTextWriter.WriteStartElement(treeViewAdv1.Nodes[0].Text);
-            foreach (TreeNodeAdv node in tv.Nodes)
+            foreach (TreeNodeAdv node in tree.Nodes)
             {
                 SaveToXML(node.Nodes);
             }
@@ -87,9 +87,9 @@ TreeViewAdv does not have direct option to load/save from XML file. This below s
         /// <summary>
         /// Iterate function helps to save TreeNodeAdv information to XML
         /// </summary>
-        private void SaveToXML(TreeNodeAdvCollection tnc)
+        private void SaveToXML(TreeNodeAdvCollection menu)
         {
-            foreach (TreeNodeAdv node in tnc)
+            foreach (TreeNodeAdv node in menu)
             {
                 if (node.Nodes.Count > 0)
                 {
@@ -113,7 +113,7 @@ TreeViewAdv does not have direct option to load/save from XML file. This below s
         ''' To load TreeViewAdv from XML File
         ''' </summary>
 
-		Private Sub LoadTreeViewAdvfromXML()
+		Private Sub LoadTreeViewAdvXML()
 			Dim xDoc As New XmlDocument()
 			xDoc.Load("TreeView.xml")
 			treeViewAdv1.Nodes.Clear()
@@ -148,11 +148,11 @@ TreeViewAdv does not have direct option to load/save from XML file. This below s
 		''' <summary>
 		''' To save TreeViewAdv node information to XML File
 		''' </summary>
-		Public Sub ExportToXML(ByVal tv As TreeViewAdv, ByVal filename As String)
+		Public Sub ExportToXML(ByVal tree As TreeViewAdv, ByVal filename As String)
 			XmlTextWriter = New XmlTextWriter(filename, System.Text.Encoding.UTF8)
 			XmlTextWriter.WriteStartDocument()
 			XmlTextWriter.WriteStartElement(treeViewAdv1.Nodes(0).Text)
-			For Each node As TreeNodeAdv In tv.Nodes
+			For Each node As TreeNodeAdv In tree.Nodes
 				SaveToXML(node.Nodes)
 			Next node
 			XmlTextWriter.WriteEndElement()
@@ -161,8 +161,8 @@ TreeViewAdv does not have direct option to load/save from XML file. This below s
 		''' <summary>
 		''' Iterate function helps to save TreeNodeAdv information to XML
 		''' </summary>
-		Private Sub SaveToXML(ByVal tnc As TreeNodeAdvCollection)
-			For Each node As TreeNodeAdv In tnc
+		Private Sub SaveToXML(ByVal menu As TreeNodeAdvCollection)
+			For Each node As TreeNodeAdv In menu
 				If node.Nodes.Count > 0 Then
 					XmlTextWriter.WriteStartElement(node.Text)
 					SaveToXML(node.Nodes)

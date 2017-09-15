@@ -1010,13 +1010,13 @@ private void button1_Click(object sender, System.EventArgs e)
 
 // Create a temporary collection of Panel's controls.
 
-ArrayList panelarr = new ArrayList();
+ArrayList panel = new ArrayList();
 
 foreach (Control ctrl in this.panel1.Controls)
 
 {
 
-panelarr.Add(ctrl);
+panel.Add(ctrl);
 
 }
 
@@ -1024,11 +1024,11 @@ this.panel1.Controls.Clear();
 
 // Reorder the panels.
 
-for (int i=panelarr.Count-1; i>=0; i--)
+for (int i=panel.Count-1; i>=0; i--)
 
 {
 
-Panel pan = panelarr[i] as Panel;
+Panel pan = panel[i] as Panel;
 
 this.panel1.Controls.Add(pan);
 
@@ -1051,11 +1051,11 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
 ' Create a temporary collection of Panel's controls.
 
-Dim panelarr As ArrayList = New ArrayList()
+Dim panel As ArrayList = New ArrayList()
 
 For Each ctrl As Control In Me.panel1.Controls
 
-panelarr.Add(ctrl)
+panel.Add(ctrl)
 
 Next ctrl
 
@@ -1063,9 +1063,9 @@ Me.panel1.Controls.Clear()
 
 'Reorder the panels.
 
-For i As Integer = panelarr.Count - 1 To 0 Step -1 
+For i As Integer = panel.Count - 1 To 0 Step -1 
 
-Dim pan As Panel = CType(IIf(TypeOf panelarr(i) Is Panel, panelarr(i), Nothing), Panel)
+Dim pan As Panel = CType(IIf(TypeOf panel(i) Is Panel, panel(i), Nothing), Panel)
 
 Me.panel1.Controls.Add(pan)
 

@@ -21,7 +21,7 @@ private void button1_Click(object sender, System.EventArgs e)
 
       // Set the destination parent node.
 
-      TreeNodeAdv Pnode = this.treeViewAdv1.Nodes[0];
+      TreeNodeAdv node = this.treeViewAdv1.Nodes[0];
 
       TreeNodeAdv[] nodes =new TreeNodeAdv[this.treeViewAdv1.SelectedNodes.Count];
 
@@ -47,7 +47,7 @@ private void button1_Click(object sender, System.EventArgs e)
 
       {
 
-          Pnode.Nodes.Add(node);
+          node.Nodes.Add(node);
 
       }
 
@@ -63,7 +63,7 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
     ' Set the destination parent node.
 
-    Dim Pnode As TreeNodeAdv = Me.treeViewAdv1.Nodes(0)
+    Dim node As TreeNodeAdv = Me.treeViewAdv1.Nodes(0)
 
     Dim nodes As TreeNodeAdv() = New TreeNodeAdv(Me.treeViewAdv1.SelectedNodes.Count - 1) {}
 
@@ -85,7 +85,7 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
 
     For Each node As TreeNodeAdv In nodes
 
-         Pnode.Nodes.Add(node)
+         node.Nodes.Add(node)
 
     Next node
 
