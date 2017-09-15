@@ -23,7 +23,7 @@ private void button1_Click(object sender, System.EventArgs e)
 
 Bitmap bmp = CreateBitmap();
 
-bmp.Save(@"C:\MyProjects\Bitmap.bmp");
+bmp.Save(@"C:\Files\Bitmap.bmp");
 
 bmp.Dispose();
 
@@ -37,7 +37,7 @@ private Bitmap CreateBitmap()
 
 FormatManager manager = new FormatManager( htmluiControl1 );
 
-InputHTML doc = new InputHTML( @"C:\MyProjects\HTML.htm", manager );
+InputHTML doc = new InputHTML( @"C:\Files\HTML.htm", manager );
 
 doc.ClientSize = new Size( 550, 200 );
 
