@@ -1267,11 +1267,11 @@ Code snippets can also be created by using the configuration file. For example, 
 
        <Header>
 
-        <Title>strut</Title>
+        <Title>struct</Title>
 
-         <Shortcut>strut</Shortcut>
+         <Shortcut>struct</Shortcut>
 
- <Description>Code snippet for strut</Description>
+ <Description>Code snippet for struct</Description>
 
      </Header>
 
@@ -1283,15 +1283,15 @@ Code snippets can also be created by using the configuration file. For example, 
 
          <ID>name</ID>
 
-         <ToolTip>strut name</ToolTip>
+         <ToolTip>struct name</ToolTip>
 
-        <Default>strut</Default>
+        <Default>struct</Default>
 
       </Literal>
 
          </Declarations>
 
-       <Code Language ="csharp"><![CDATA[strut $name$
+       <Code Language ="csharp"><![CDATA[struct $name$
 
        {
 
