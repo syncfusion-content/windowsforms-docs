@@ -50,7 +50,7 @@ The following snippet shows how an image reference is changed for a page in the 
 
 
 
-Hashtable htmlelements = new Hashtable();
+Hashtable tab = new Hashtable();
 
 
 
@@ -72,11 +72,11 @@ private void htmluiControl1_PreRenderDocument(object sender,PreRenderDocumentArg
 
 // elements with Current name.
 
-this.htmlelements = e.Document.GetElementsByNameHash();
+this.tab = e.Document.GetElementsByNameHash();
 
-ArrayList imgs = this.htmlelements["img"] as ArrayList;
+ArrayList image = this.tab["img"] as ArrayList;
 
-foreach(BaseElement elem in imgs)
+foreach(BaseElement elem in image)
 
 {
 
@@ -102,7 +102,7 @@ Console.WriteLine(elem.Attributes["src"].Value);
 
 
 
-Private htmlelements As Hashtable = New Hashtable()
+Private tab As Hashtable = New Hashtable()
 
 
 
@@ -124,11 +124,11 @@ Private Sub htmluiControl1_PreRenderDocument(ByVal sender As Object, ByVal e As 
 
 ' elements with Current name.
 
-Me.htmlelements = e.Document.GetElementsByNameHash()
+Me.tab = e.Document.GetElementsByNameHash()
 
-Dim imgs As ArrayList = CType(IIf(TypeOf Me.htmlelements("img") Is ArrayList, Me.htmlelements("img"), Nothing), ArrayList)
+Dim image As ArrayList = CType(IIf(TypeOf Me.tab("img") Is ArrayList, Me.tab("img"), Nothing), ArrayList)
 
-For Each elem As BaseElement In imgs
+For Each elem As BaseElement In image
 
 Dim oldValue As String = elem.Attributes("src").Value
 

@@ -40,11 +40,11 @@ if (this.dragged != "")
 
 { 
 
-GroupViewItem gvi = new GroupViewItem(); 
+GroupViewItem item = new GroupViewItem(); 
 
-gvi.Text = this.dragged; 
+item.Text = this.dragged; 
 
-this.groupView1.GroupViewItems.Add(gvi); 
+this.groupView1.GroupViewItems.Add(item); 
 
 } 
 
@@ -82,11 +82,11 @@ If Me.dragged.Equals("") Then
 
 Else
 
-Dim gvi As New GroupViewItem()
+Dim item As New GroupViewItem()
 
-gvi.Text = Me.dragged
+item.Text = Me.dragged
 
-Me.groupView1.GroupViewItems.Add(gvi)
+Me.groupView1.GroupViewItems.Add(item)
 
 End If
 

@@ -24,9 +24,9 @@ The following code snippet shows how the visibility of an element is toggled on 
 
 <tr>
 
-<td id="tdpopup">Cell Toggle</td>
+<td id="popup">Cell Toggle</td>
 
-<td id="tdpopup">Cell Toggle</td>
+<td id="popup">Cell Toggle</td>
 
 </tr>
 
@@ -82,7 +82,7 @@ foreach (IHTMLElement description in elem)
 
 {
 
-if(description.ID == "tdpopup")
+if(description.ID == "popup")
 
 description.Attributes["xVisible"].Value = visibleString;
 
@@ -128,7 +128,7 @@ Me.bDescriptionHidden = Not Me.bDescriptionHidden
 
 For Each description As IHTMLElement In elem
 
-If description.ID = "tdpopup" Then
+If description.ID = "popup" Then
 
 description.Attributes("xVisible").Value = visibleString
 

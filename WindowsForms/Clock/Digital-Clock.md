@@ -421,7 +421,7 @@ Public Class DigitalRenderer
     Inherits DigitalClockRenderer
 
     Public Overrides Sub DrawDigitalClockFrame(ByVal g As Graphics, ByVal newImage As Image, ByVal clock As Clock)
-        Dim imaga As Image = Image.FromFile("G:\CustomClock.PNG")
+        Dim image As Image = Image.FromFile("G:\CustomClock.PNG")
         MyBase.DrawDigitalClockFrame(g, image, clock)
     End Sub
 End Class

@@ -1120,7 +1120,7 @@ The Beta Distribution can be defined as a family of probability distributions di
 
 ![](Statistical-Formulas_images/Statistical-Formulas_img21.jpeg)
 
-where Bx(α,ß) is the incomplete beta function and Ix(α,ß) is the regularized incomplete beta function.
+where Bx(α, ß) is the incomplete beta function and Ix(α, ß) is the regularized incomplete beta function.
 
 #### Using the Formula
 

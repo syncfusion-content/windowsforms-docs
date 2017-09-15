@@ -17,7 +17,7 @@ You can find the type of particular DisplayElement using the code below.
 
 //Accesses the type of display element.
 
-Console.WriteLine(this.gridGroupingControl1.Table.DisplayElements[rowindex].Kind);
+Console.WriteLine(this.gridGroupingControl1.Table.DisplayElements[rowIndex].Kind);
 
 {% endhighlight %}
 
@@ -27,7 +27,7 @@ Console.WriteLine(this.gridGroupingControl1.Table.DisplayElements[rowindex].Kind
 
 'Accesses the type of display element.
 
-Console.WriteLine(Me.gridGroupingControl1.Table.DisplayElements(rowindex).Kind)
+Console.WriteLine(Me.gridGroupingControl1.Table.DisplayElements(rowIndex).Kind)
 
 
 {% endhighlight %}

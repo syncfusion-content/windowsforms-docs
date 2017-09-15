@@ -84,7 +84,7 @@ this.spellCheckerAdv1.GetSuggestions("Textboxx");
 
 this.spellCheckerAdv1.GetPhoneticWords("Textboxx");
 
-this.spellCheckerAdv1.GetAnagrams("Textboxx");
+this.spellCheckerAdv1.GetAnagrams("Textbox");
 
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ Me.spellCheckerAdv1.GetSuggestions("Textboxx")
 
 Me.spellCheckerAdv1.GetPhoneticWords("Textboxx")
 
-Me.spellCheckerAdv1.GetAnagrams("Textboxx")
+Me.spellCheckerAdv1.GetAnagrams("Textbox")
 
 {% endhighlight %}
 

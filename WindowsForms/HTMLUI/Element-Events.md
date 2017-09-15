@@ -39,9 +39,9 @@ private void htmluiControl1_LoadFinished(object sender, System.EventArgs e)
 
 {
 
-Hashtable htmlelements = this.htmluiControl1.Document.GetElementsByUserIdHash();
+Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
-BaseElement textElement  = htmlelements["text1"] as BaseElement;
+BaseElement textElement  = tab["text1"] as BaseElement;
 
 
 
@@ -101,9 +101,9 @@ Console.WriteLine("MouseDown Event Handled");
 
 Private Sub htmluiControl1_LoadFinished(ByVal sender As Object, ByVal e As System.EventArgs)
 
-Dim htmlelements As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
+Dim tab As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
 
-Dim textElement As BaseElement = Ctype(IIf(TypeOf htmlelements("text1") Is BaseElement, htmlelements("text1"), Nothing), BaseElement)
+Dim textElement As BaseElement = Ctype(IIf(TypeOf tab("text1") Is BaseElement, tab("text1"), Nothing), BaseElement)
 
 
 
@@ -181,9 +181,9 @@ private void htmluiControl1_LoadFinished(object sender, System.EventArgs e)
 
 {
 
-IHTMLElement[] htmlelement = this.htmluiControl1.Document.GetElementsByName("body");
+IHTMLElement[] tab = this.htmluiControl1.Document.GetElementsByName("body");
 
-htmlelement[0].MouseLeave += new EventHandler(body_MouseLeave);
+tab[0].MouseLeave += new EventHandler(body_MouseLeave);
 
 }
 
@@ -197,13 +197,13 @@ private void body_MouseLeave(object sender, EventArgs e)
 
    // Converts the  EventArgs object to BubblingEventArgs type if possible.
 
-BubblingEventArgs bargs = HTMLUIControl.GetBublingEventArgs(e);
+BubblingEventArgs argument = HTMLUIControl.GetBublingEventArgs(e);
 
 
 
    // Returns the first sender of the event.
 
-BaseElement elem = bargs.RootSender as BaseElement;
+BaseElement elem = argument.RootSender as BaseElement;
 
 
 
@@ -241,9 +241,9 @@ else if(elem.ID == "button2")
 
 Private Sub htmluiControl1_LoadFinished(ByVal sender As Object, ByVal e As System.EventArgs)
 
-Dim htmlelement As IHTMLElement() = Me.htmluiControl1.Document.GetElementsByName("body")
+Dim tab As IHTMLElement() = Me.htmluiControl1.Document.GetElementsByName("body")
 
-AddHandler htmlelement(0).MouseLeave, AddressOf body_MouseLeave
+AddHandler tab(0).MouseLeave, AddressOf body_MouseLeave
 
 End Sub
 
@@ -255,13 +255,13 @@ Private Sub body_MouseLeave(ByVal sender As Object, ByVal e As EventArgs)
 
 ‘Converts the  EventArgs object to BubblingEventArgs type if possible.
 
-Dim bargs As BubblingEventArgs = HTMLUIControl.GetBublingEventArgs(e)
+Dim argument As BubblingEventArgs = HTMLUIControl.GetBublingEventArgs(e)
 
 
 
 ‘Returns the first sender of the event.
 
-Dim elem As BaseElement = CType(IIf(TypeOf bargs.RootSender Is BaseElement, bargs.RootSender, Nothing), BaseElement)
+Dim elem As BaseElement = CType(IIf(TypeOf argument.RootSender Is BaseElement, argument.RootSender, Nothing), BaseElement)
 
 If Not elem Is Nothing AndAlso TypeOf elem Is INPUTElementImpl Then
 

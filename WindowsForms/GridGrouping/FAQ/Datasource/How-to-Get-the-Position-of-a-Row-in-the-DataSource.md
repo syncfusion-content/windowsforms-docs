@@ -70,7 +70,7 @@ Dim dataRowPos As Integer = table.UnsortedRecords.IndexOf(r)
 
 
 'Retrieves the corresponding data row from the datasource. 
-Dim row As CustomersDataRow = dataSoucre.Rows(dataRowPos)
+Dim row As CustomersDataRow = dataSource.Rows(dataRowPos)
 
 
 
