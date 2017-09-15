@@ -1181,7 +1181,7 @@ This is illustrated in the code given below.
 
 
 
-CodeSnippetsExtractor.Extract(csharpPath, editControl1);
+CodeSnippetsExtractor.Extract(Path, editControl1);
 
 {% endhighlight %}
 
@@ -1189,7 +1189,7 @@ CodeSnippetsExtractor.Extract(csharpPath, editControl1);
 
 
 
-CodeSnippetsExtractor.Extract(snippetsPath, editControl1)
+CodeSnippetsExtractor.Extract(Path, editControl1)
 
 {% endhighlight %}
 
@@ -1235,7 +1235,7 @@ The code snippets can also be contained in containers and displayed in the pop-u
 
 private CodeSnippetsContainer container = new Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer(); 
 
-container = CodeSnippetsExtractor.Extract(csharpPath@"\Loops");
+container = CodeSnippetsExtractor.Extract(Path@"\Loops");
 
 container.Name = "Loops";
 
@@ -1249,7 +1249,7 @@ this.editControl1.Language.SnippetsContainer.AddContainer(container);
 
 container As CodeSnippetsContainer = New Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer()
 
-container = CodeSnippetsExtractor.Extract(snippetsPath "\Loops")
+container = CodeSnippetsExtractor.Extract(Path "\Loops")
 
 container.Name = "Loops"
 
@@ -1271,7 +1271,7 @@ Code snippets can also be created by using the configuration file. For example, 
 
          <Shortcut>struct</Shortcut>
 
- <Description>Code snippet for struct</Description>
+ <Description>Code snippet for Struct</Description>
 
      </Header>
 
@@ -1283,9 +1283,9 @@ Code snippets can also be created by using the configuration file. For example, 
 
          <ID>name</ID>
 
-         <ToolTip>struct name</ToolTip>
+         <ToolTip>Struct name</ToolTip>
 
-        <Default>struct</Default>
+        <Default>Struct</Default>
 
       </Literal>
 
