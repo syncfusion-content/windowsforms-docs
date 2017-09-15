@@ -46,7 +46,7 @@ User-defined shapes can be used in the form of images.
 
 this.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.CustomImages;
 
-customImageCollection1.NormalImage = global::WindowsFormsApplication20.Properties.Resources.xmen;
+customImageCollection1.NormalImage = global::WindowsFormsApplication20.Properties.Resources.file;
 
             this.ratingControl1.Images = customImageCollection1;
 
@@ -58,7 +58,7 @@ customImageCollection1.NormalImage = global::WindowsFormsApplication20.Propertie
 
 Me.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.CustomImages
 
-customImageCollection1.NormalImage = Global.WindowsFormsApplication20.Properties.Resources.xmen
+customImageCollection1.NormalImage = Global.WindowsFormsApplication20.Properties.Resources.file
 
 Me.ratingControl1.Images = customImageCollection1
 
