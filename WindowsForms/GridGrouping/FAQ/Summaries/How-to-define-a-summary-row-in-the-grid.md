@@ -39,7 +39,7 @@ summaryColumnDescriptor.SummaryType = SummaryType.DistinctCount;
 
 //Creates a new SummaryRowDescriptor and adds it to the SummaryRows collection.
 
-this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(new GridSummaryRowDescriptor("Col2", "Total", sd));
+this.gridGroupingControl1.TableDescriptor.SummaryRows.Add(new GridSummaryRowDescriptor("Col2", "Total", summaryColumnDescriptor));
 
 
 {% endhighlight  %}
