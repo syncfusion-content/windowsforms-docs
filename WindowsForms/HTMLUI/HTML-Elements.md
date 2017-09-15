@@ -775,7 +775,7 @@ The TR element is used to create rows inside a table. The TRElementImpl class co
 
 
 
-// Gets the number of cells present in the row and gets total number of cells including the collumn.
+// Gets the number of cells present in the row and gets total number of cells including the column.
 
 Hashtable tab = this.htmluiControl1.Document.GetElementsByUserIdHash();
 
@@ -789,7 +789,7 @@ this.label1.Text = "TR(CellsCount and VirtualCellsCount):"+ tr.CellsCount.ToStri
 
 
 
-‘Gets the  number of cells present in the row and gets total number of cells including the collumn.
+‘Gets the  number of cells present in the row and gets total number of cells including the column.
 
 Private tab As Hashtable = Me.htmluiControl1.Document.GetElementsByUserIdHash()
 
