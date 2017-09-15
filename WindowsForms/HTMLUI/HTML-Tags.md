@@ -911,7 +911,7 @@ The Ordered List tag defines the start of an ordered list. The ordered list is n
 
 
 
-File Location and Name:  C:\MyProjects\listItem\old.html
+File Location and Name:  C:\MyProjects\listItem\ol.html
 
 
 
@@ -939,7 +939,7 @@ File Location and Name:  C:\MyProjects\listItem\old.html
 
 
 
-this.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\old.html");
+this.htmluiControl.LoadHTML(@"C:\MyProjects\listItem\ol.html");
 
 {% endhighlight %}
 
@@ -1442,7 +1442,7 @@ Water - H<sub>2</sub>O<br/>
 
 Sulphuric Acid - H<sub>2</sub>SO<sub>4</sub><br/>
 
-Carbon-di-Oxide - CO<sub>2</sub>
+Carbon-Dioxide - CO<sub>2</sub>
 
 </body>
 
@@ -1628,7 +1628,7 @@ File Location and Name:  C:\MyProjects\table\td.html
 
 <tr>
 
-<td colspan=2>Collumn cell</td>
+<td colspan=2>Column cell</td>
 
 </tr>
 
