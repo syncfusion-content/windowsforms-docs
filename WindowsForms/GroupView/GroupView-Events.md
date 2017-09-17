@@ -249,7 +249,7 @@ The following code from the GroupBar Demo shows a sample handler for the GroupBa
 
 // Handler for the GroupBar.ShowContextMenu event.
 
-private void gbVS_ShowContextMenu(object sender, System.EventArgs e)
+private void groupVS_ShowContextMenu(object sender, System.EventArgs e)
 
 {
 
@@ -313,7 +313,7 @@ menu.Show(this.grp, this.grp.PointToClient(Cursor.Position));
 
 // Handler for the GroupBar.ShowContextMenu event.
 
-Private Sub gbVS_ShowContextMenu(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles gbVStudio.ShowContextMenu
+Private Sub groupVS_ShowContextMenu(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles groupVStudio.ShowContextMenu
 
 ' Create the XPMenus.PopupMenu instance and populate it with the menu items.
 
