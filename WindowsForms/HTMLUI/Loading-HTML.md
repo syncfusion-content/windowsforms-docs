@@ -409,7 +409,7 @@ The file can be retrieved from the resource by using the following C# code.
 
 htmlStream = (Stream)Assembly.GetExecutingAssembly().GetManifestResourceStream
 
-("LoadingFileFromResource.resfile.htm");
+("LoadingFileFromResource.report.htm");
 
 
 
@@ -425,7 +425,7 @@ this.htmluiControl1.LoadHTML(htmlStream);
 
 Private htmlStream = Ctype(System.Reflection.Assembly.GetExecutingAssembly().
 
-GetManifestResourceStream ("LoadingFileFromResource.resfile.htm"), Stream)
+GetManifestResourceStream ("LoadingFileFromResource.report.htm"), Stream)
 
 
 
