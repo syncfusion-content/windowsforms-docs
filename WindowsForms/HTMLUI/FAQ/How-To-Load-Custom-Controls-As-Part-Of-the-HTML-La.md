@@ -109,15 +109,15 @@ private void htmluiControl1_PreRenderDocument(object sender, Syncfusion.Windows.
 
 {
 
-Hashtable htmlelements = new Hashtable();
+Hashtable tab = new Hashtable();
 
 
 
    // Returns an hash of elements by their User Id.
 
-htmlelements = e.Document.ElementsByUserID;
+tab = e.Document.ElementsByUserID;
 
-BaseElement maskedEditTextBoxElement1 = htmlelements["maskedEditTextBox1"] as BaseElement;
+BaseElement maskedEditTextBoxElement1 = tab["maskedEditTextBox1"] as BaseElement;
 
 
 
@@ -125,7 +125,7 @@ BaseElement maskedEditTextBoxElement1 = htmlelements["maskedEditTextBox1"] as Ba
 
 new CustomControlBase( maskedEditTextBoxElement1, this.maskedEditBox1  ); 
 
-BaseElement monthCalendarElement1 = htmlelements["monthCalendar1"] as BaseElement;
+BaseElement monthCalendarElement1 = tab["monthCalendar1"] as BaseElement;
 
 
 
@@ -133,7 +133,7 @@ BaseElement monthCalendarElement1 = htmlelements["monthCalendar1"] as BaseElemen
 
 new CustomControlBase( monthCalendarElement1, this.monthCalendar1  ); 
 
-BaseElement dataGridElement1 = htmlelements["dataGrid1"] as BaseElement;
+BaseElement dataGridElement1 = tab["dataGrid1"] as BaseElement;
 
 
 
@@ -151,25 +151,25 @@ new CustomControlBase( dataGridElement1, this.dataGrid1  );
 
 Private Sub htmluiControl1_PreRenderDocument(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.HTMLUI.PreRenderDocumentArgs)
 
-Dim htmlelements As Hashtable = New Hashtable()
+Dim tab As Hashtable = New Hashtable()
 
-htmlelements = e.Document.ElementsByUserID
+tab = e.Document.ElementsByUserID
 
 
 
-Dim maskedEditTextBoxElement1 As BaseElement = CType(IIf(TypeOf htmlelements("maskedEditTextBox1") Is BaseElement, htmlelements("maskedEditTextBox1"), Nothing), BaseElement)
+Dim maskedEditTextBoxElement1 As BaseElement = CType(IIf(TypeOf tab("maskedEditTextBox1") Is BaseElement, tab("maskedEditTextBox1"), Nothing), BaseElement)
 
 Dim oTemp1 As CustomControlBase = New CustomControlBase(maskedEditTextBoxElement1, Me.maskedEditBox1)
 
 
 
-Dim monthCalendarElement1 As BaseElement = CType(IIf(TypeOf htmlelements("monthCalendar1") Is BaseElement, htmlelements("monthCalendar1"), Nothing), BaseElement)
+Dim monthCalendarElement1 As BaseElement = CType(IIf(TypeOf tab("monthCalendar1") Is BaseElement, tab("monthCalendar1"), Nothing), BaseElement)
 
 Dim oTemp2 As CustomControlBase = New CustomControlBase(monthCalendarElement1, Me.monthCalendar1)
 
 
 
-Dim dataGridElement1 As BaseElement = CType(IIf(TypeOf htmlelements("dataGrid1") Is BaseElement, htmlelements("dataGrid1"), Nothing), BaseElement)
+Dim dataGridElement1 As BaseElement = CType(IIf(TypeOf tab("dataGrid1") Is BaseElement, tab("dataGrid1"), Nothing), BaseElement)
 
 Dim oTemp3 As CustomControlBase = New CustomControlBase(dataGridElement1, Me.dataGrid1)
 

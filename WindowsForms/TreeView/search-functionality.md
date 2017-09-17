@@ -56,11 +56,11 @@ The find and replace feature can be enabled for the TreeViewAdv control by using
 
 
 
- dialog.Find("india", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+ dialog.Find("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
 
 
 
- dialog.FindAll("india", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+ dialog.FindAll("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
 
 
 
@@ -78,11 +78,11 @@ Dim dialog As New TreeViewAdvFindReplaceDialog(Me.TreeView)
 
 
 
-dialog.Find("india", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
+dialog.Find("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
 
 
 
-dialog.FindAll("india", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
+dialog.FindAll("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
 
 
 
