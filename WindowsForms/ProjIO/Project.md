@@ -640,7 +640,7 @@ Dim project As Project = ProjectReader.Open("Sample Project.xml")
 
 
 
-' Retrieving Project information
+' Retriving Project information
 
 Console.WriteLine("Default Start Time: " & project.DefaultStartTime.ToString())
 
@@ -778,7 +778,7 @@ Dim project As Project = ProjectReader.Open("Sample Project.xml")
 
 
 
-' Retrieving  Project information
+' Retriving Project information
 
 project.SaveVersion = 14
 
