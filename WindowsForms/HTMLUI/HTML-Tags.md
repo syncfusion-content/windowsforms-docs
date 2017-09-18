@@ -1156,7 +1156,7 @@ public class Script
 
                   IHTMLElement img = null;
 
-                Hashtable htmlelements = new Hashtable();
+                Hashtable tab = new Hashtable();
 
                   /* Initializes script.*/
 
