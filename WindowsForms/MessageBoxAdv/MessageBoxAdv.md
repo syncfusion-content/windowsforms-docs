@@ -1,167 +1,428 @@
 ---
 layout: post
-title: MessageBoxAdv | WindowsForms | Syncfusion
-description: messageboxadv
+title: Feature | WindowsForms | Syncfusion
+description: Feature
 platform: WindowsForms
-control: RibbonControlAdv
+control: MessageBoxAdv
 documentation: ug
 ---
 
-# MessageBoxAdv
+# Feature
 
-## Overview
+This section explains all the design time feature of MessageBoxAdv.
 
-Syncfusion MessageBoxAdv supports an application-defined message and title, plus any combination of predefined icons and buttons.
+## Details Pane:
 
-## Style
+This pane helps to view the detail message about the text shown in the MessageBoxAdv.
 
-MessageBoxAdv supports styles such as Default and Metro.
+**Details View**
 
-### Default
+{% tabs %}
 
-Office2007 Style Message Box is available in Tools Windows. You can replace the .NET MessageBox with new MessageBoxAdv that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBoxAdv. To display the Message Box, call MessageBoxAdv.Show method.
+{% highlight C# %}
 
-{% highlight c# %}
+//Details Pane
 
-MessageBoxAdv.Office2007Theme = Office2007Theme.Managed;
+result = MessageBoxAdv.Show(this, bdyText, CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details");
+{% endhighlight %}
 
-Office2007Colors.ApplyManagedColors(this, Color.Red);
+{% highlight VB %}
 
-MessageBoxAdv.Show("Office 2007 Style with Black Color Scheme", "MessageBoxAdv", MessageBoxButtons.OK);
+'Details Pane
+
+result = MessageBoxAdv.Show(Me, bdyText, CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details")
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% endtabs %}
 
-MessageBoxAdv.Office2007Theme = Office2007Theme.Managed
+Ex: Detail Pane Figure
 
-Office2007Colors.ApplyManagedColors(Me, Color.Red)
+![](MessageBoxAdv_images/MessageBoxAdv_img18.jpg) 
 
-MessageBoxAdv.Show("Office 2007 Style with Black Color Scheme", "MessageBoxAdv", MessageBoxButtons.OK)
+Eg: Collapsed Pane
 
-{% endhighlight %}
+![](MessageBoxAdv_images/MessageBoxAdv_img19.jpg) 
 
-![](MessageBoxAdv_images/MessageBoxAdv_img1.jpeg)
+## Button Support:
 
-### Metro
+By default, the MessageBox only has the one Ok button, but this can be changed, in case you want to ask your user a question and not just show a piece of information. Also notice how I use multiple lines in this message, by using a line break character (\n):
+You control which buttons are displayed by using a value from the **MessageBoxButtons** enumeration - in this case, a Yes, No and Cancel button is included. The following values, which should be self-explanatory, can be used:
 
-In MessageBoxAdv, MetroColorTable is implemented for color customization of buttons and caption of metro form. 
+•	Ok
 
+•	OkCancel
 
-#### MetroStyleColorTable
+•	YesNo
 
-The MetroStyleColor table helps to customize the buttons, captions and text color in MessageBoxAdv. MessageBoxAdv can be customized by using the following properties.
+•	YesNoCancel
 
-<table>
-<tr>
-<th>
-MetroStyleColorTable Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ForeColor</td><td>
-Gets or sets the fore color.</td></tr>
-<tr>
-<td>
-BackColor</td><td>
-Gets or sets the back color.</td></tr>
-<tr>
-<td>
-BorderColor</td><td>
-Gets or sets the border color.</td></tr>
-<tr>
-<td>
-CancelButtonBackColor</td><td>
-Gets or sets the CancelButtonBackColor.</td></tr>
-<tr>
-<td>
-CaptionBarColor</td><td>
-Gets or sets the caption bar color.</td></tr>
-<tr>
-<td>
-CaptionForeColor</td><td>
-Gets or sets the caption fore color.</td></tr>
-<tr>
-<td>
-CloseButtonColor</td><td>
-Gets or sets the CloseButton back color.</td></tr>
-<tr>
-<td>
-CloseButtonHoverColor</td><td>
-Gets or sets the CloseButton hover color.</td></tr>
-<tr>
-<td>
-AbortButtonBackColor</td><td>
-Gets or sets the AbortButtonBackColor.</td></tr>
-<tr>
-<td>
-IgnoreButtonBackColor</td><td>
-Gets or sets the IgnoreButtonBackColor.</td></tr>
-<tr>
-<td>
-NoButtonBackColor</td><td>
-Gets or sets the NoButtonBackColor.</td></tr>
-<tr>
-<td>
-OKButtonBackColor</td><td>
-Gets or sets the OKButtonBackColor.</td></tr>
-<tr>
-<td>
-RetryButtonBackColor</td><td>
-Gets or sets the RetryButtonBackColor.</td></tr>
-<tr>
-<td>
-YesButtonBackColor</td><td>
-Gets or sets the YesButtonBackColor.</td></tr>
-</table>
+•	RetryCancel
+
+•	AbortRetryIgnore
 
 
-You can achieve this by using the following code example.
+**Ok**
 
-{% highlight c# %}
+This option helps to show the MessageBoxAdv with Ok Button.
 
- MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
+{% tabs %}
 
- MessageBoxAdv.MetroColorTable.NoButtonBackColor = Color.FromArgb(22, 165, 220);
+{% highlight C# %}
 
- MessageBoxAdv.MetroColorTable.YesButtonBackColor = Color.FromArgb(22, 165, 220);
-
- MessageBoxAdv.MetroColorTable.CancelButtonBackColor = Color.FromArgb(22, 165, 220);
-
- MessageBoxAdv.MetroColorTable.BackColor = Color.White;
-
- MessageBoxAdv.MetroColorTable.BorderColor = Color.FromArgb(22, 165, 220);
-
- MessageBoxAdv.MetroColorTable.CaptionBarColor = Color.FromArgb(22, 165, 220);
-
- MessageBoxAdv.MetroColorTable.CaptionForeColor = Color.Black;
-
- MessageBoxAdv.MetroColorTable.ForeColor = Color.Black;
+//MessageBox with Ok Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
-MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
-
- MessageBoxAdv.MetroColorTable.NoButtonBackColor = Color.FromArgb(22, 165, 220)
-
- MessageBoxAdv.MetroColorTable.YesButtonBackColor = Color.FromArgb(22, 165, 220
-
- MessageBoxAdv.MetroColorTable.CancelButtonBackColor = Color.FromArgb(22, 165, 220)
-
- MessageBoxAdv.MetroColorTable.BackColor = Color.White
-
- MessageBoxAdv.MetroColorTable.BorderColor = Color.FromArgb(22, 165, 220)
-
- MessageBoxAdv.MetroColorTable.CaptionBarColor = Color.FromArgb(22, 165, 220)
-
- MessageBoxAdv.MetroColorTable.CaptionForeColor = Color.Black
-
- MessageBoxAdv.MetroColorTable.ForeColor = Color.Black 
-
- MessageBoxAdv.MetroColorTable.OKButtonBackColor = Color.Red
+'MessageBox with Ok Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK)
 
 {% endhighlight %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img2.png) 
+{% endtabs %}
+
+![](MessageBoxAdv_images/MessageBoxAdv_img20.jpg) 
+ 
+**OkCancel**
+
+This option helps to show the MessageBoxAdv with combination of Ok and Cancel Button.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//MessageBox with combination of Ok,Cancel Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'MessageBox with combination of Ok,Cancel Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel)
+
+{% endhighlight %}
+
+{% endtabs %}
+ 
+ ![](MessageBoxAdv_images/MessageBoxAdv_img21.jpg) 
+
+**YesNo**
+
+This option helps to show the MessageBoxAdv with combination of  Yes and No Button.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//MessageBox with combination of Yes and No Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.YesNo);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'MessageBox with combination of Yes And No Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.YesNo)
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![](MessageBoxAdv_images/MessageBoxAdv_img22.jpg) 
+
+**YesNoCancel**
+
+This option helps to show the MessageBoxAdv with combination of Yes,No and Cancel Button.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//MessageBox with combination of Yes,No and Cancel Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.YesNoCancel);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'MessageBox with combination of Yes,No And Cancel Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.YesNoCancel)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MessageBoxAdv_images/MessageBoxAdv_img23.jpg) 
+ 
+**RetryCancel**
+
+This option helps to show the MessageBoxAdv with combination of Retry and Cancel Button.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//MessageBox with combination of Retry and Cancel Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.RetryCancel);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'MessageBox with combination of Retry And Cancel Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.RetryCancel)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MessageBoxAdv_images/MessageBoxAdv_img24.jpg) 
+
+**AbortRetryIgnore**
+
+This option helps to show the MessageBoxAdv with combination of Abort, Retry and Ignore Button.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//MessageBox with combination of Abort,Retry and Ignore Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.AbortRetryIgnore);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'MessageBox with combination of Abort,Retry And Ignore Button
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.AbortRetryIgnore)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MessageBoxAdv_images/MessageBoxAdv_img25.jpg) 
+
+## Icon Customization
+
+MessageBoxAdv control provides support to add the custom image. It can be shown or invoked using the MessageBoxAdv show method.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Icon Support
+
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel,this.imageListAdv1.Images[0],new Size(50, 50));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Icon Support
+
+MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel,this.imageListAdv1.Images[0],new Size(50, 50))
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MessageBoxAdv_images/MessageBoxAdv_img26.jpg) 
+
+## MultiLineText Support
+
+MesssageBoxAdv provides MultiLine support to display the multiple lines of Text. It can be achieved using the Show method and multiple lines of text provided in it.
+
+{% tabs %}
+
+{% highlight C# %}
+
+MessageBoxAdv.Show("Syncfusion is the enterprise technology partner of choice for software development, delivering a broad range of web, mobile, and desktop controls coupled with a service-oriented approach throughout the entire application lifecycle. Syncfusion has established itself as the trusted partner worldwide for use in mission-critical applications. Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 12,000 customers, including large financial institutions, Fortune 100 companies, and global IT consultancies.", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+MessageBoxAdv.Show("Syncfusion is the enterprise technology partner of choice for software development, delivering a broad range of web, mobile, and desktop controls coupled with a service-oriented approach throughout the entire application lifecycle. Syncfusion has established itself as the trusted partner worldwide for use in mission-critical applications. Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 12,000 customers, including large financial institutions, Fortune 100 companies, and global IT consultancies.", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel)
+
+{% endhighlight %}
+
+{% endtabs %}
+ 
+![](MessageBoxAdv_images/MessageBoxAdv_img27.jpg) 
+
+## Right To left Support:
+
+MessageBoxAdv support the RightToLeft support which aligns the content of the messageboxadv in right to left manner or Left to Right Manner.
+
+{% tabs %}
+
+{% highlight C# %}
+
+MessageBoxAdv.RightToLeft = RightToLeft.Yes;
+MessageBoxAdv.Show("Right To Left support","This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+MessageBoxAdv.RightToLeft = RightToLeft.Yes
+MessageBoxAdv.Show("Right To Left support", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MessageBoxAdv_images/MessageBoxAdv_img28.jpg) 
+
+## Dialog Result:
+
+This support helps to display the result of the MessageBoxButton .
+
+{% tabs %}
+
+{% highlight C# %}
+
+CustomButtons = new string[] { "Okay", "Cancel", "Help" };
+DlgRtTxtBox.Text = CustomButtons[clickedIndex - 1];
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+CustomButtons = New String()
+{
+"Okay", "Cancel", "Help"
+}
+
+DlgRtTxtBox.Text = CustomButtons(clickedIndex - 1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MessageBoxAdv_images/MessageBoxAdv_img29.jpg) 
+
+![](MessageBoxAdv_images/MessageBoxAdv_img30.jpg) 
+
+## Localization Support:
+
+Localization is the process of making application multilingual by formatting the content according to the cultures. MessageBoxAdv control can be localized in any Languages, based on application requirement by following below steps.
+
+Step 1: Need to initialize the LocalizationProvider class, inherited from the ILocalizationProvider interface, before the initializeComponent call in the constructor of an application.
+
+Step 2: It will add the GetLocalizedString function in the LocalizationProvider class.It is needed to provide the Localization content, for the required components used in MessageBoxAdv control.
+
+For example:
+Here, MessageBoxAdv control is localized in German Language.
+The following code demonstrates the same:
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Call the Localizer
+LocalizationProvider.Provider = new Localizer();
+MessageBoxAdv.Show("Metro Theme Anpassung", "Das ist Syncfusion MessageBoxAdv Control", MessageBoxButtons.AbortRetryIgnore);
+
+// localizer inherits the interface ILocationProvider
+public class Localizer : ILocalizationProvider
+{
+#region ILocalizationProvider Members
+
+public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
+{
+switch (name)
+{
+
+#region MessageBoxAdv
+
+///<summary
+///<summary>
+///Retry Button in German Language
+///</summary>
+case ResourceIdentifiers.Retry:
+return "Wiederholen";
+
+///<summary>
+///Abort Button in German Language
+///</summary>
+///
+case ResourceIdentifiers.Abort:
+return "Abbrechen";
+
+///<summary>
+///Ignore Button in German Language
+///</summary>
+
+case ResourceIdentifiers.Ignore:
+return "Ignorae";
+
+///<summary>
+/// default
+///</summary>
+
+default:
+return string.Empty;
+#endregion
+}
+}
+
+#endregion
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+' call the localizer
+LocalizationProvider.Provider = New Localizer()
+'MessageBox show
+MessageBoxAdv.Show("Metro Theme Anpassung", "Das ist Syncfusion MessageBoxAdv Control", MessageBoxButtons.AbortRetryIgnore)
+'localizer inherits the interface of ILocationProvider
+Public Class Localizer
+Implements ILocalizationProvider
+
+'MessageBoxAdv Localization
+#Region "ILocalizationProvider MemberS"
+
+Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String Implements ILocalizationProvider.GetLocalizedString
+Select Case name
+
+'''<summary>
+'''Retry Button in German Language
+'''</summary>
+Case ResourceIdentifiers.Retry
+Return "Wiederholen"
+
+'''<summary>
+'''Abort Button in German Language
+'''</summary>
+Case ResourceIdentifiers.Abort
+Return "Abbrechen"
+
+'''<summary>
+'''Ignore Button in German Language
+'''</summary>
+Case ResourceIdentifiers.Ignore
+Return "ignorieren"
+'''<summary>
+''' default
+'''</summary>
+Case Else
+Return String.Empty
+
+End Select
+End Function
+
+#End Region
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MessageBoxAdv_images/MessageBoxAdv_img31.jpg) 
