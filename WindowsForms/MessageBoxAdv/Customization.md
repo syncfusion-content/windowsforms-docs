@@ -262,7 +262,7 @@ MessageBoxAdv.Office2010Theme = Office2010Theme.Silver;
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2010;
 MessageBoxAdv.Show("Office 2010 Theme", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
 
-% endhighlight %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -462,6 +462,7 @@ This option helps to set the White color scheme in Office2016Theme.
 {% tabs %}
 
 {% highlight C# %}
+
 MessageBoxAdv.Office2016Theme = Office2016Theme.White;
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2016;
 MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
@@ -556,7 +557,7 @@ You can achieve this by using the following code example.
 
 {% tabs %}
 
-{% highlight C#}
+{% highlight C# %}
 
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
 MessageBoxAdv.MetroColorTable.NoButtonBackColor = Color.FromArgb(22, 165, 220);
