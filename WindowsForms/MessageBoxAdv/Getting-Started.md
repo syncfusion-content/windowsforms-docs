@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started | WindowsForms | Syncfusion
 description: Getting Started
-platform: Windows Forms
+platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
