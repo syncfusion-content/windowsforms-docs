@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Feature | Windows Forms | Syncfusion
+title: Feature | WindowsForms | Syncfusion
 description: Feature
-platform: Windows Forms
+platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
