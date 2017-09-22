@@ -230,29 +230,7 @@ MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAd
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img26.jpg) 
-
-## MultiLineText Support
-
-MessageBoxAdv provides MultiLine support to display the multiple lines of Text. It can be achieved using the Show method and multiple lines of text provided in it.
-
-{% tabs %}
-
-{% highlight C# %}
-
- MessageBoxAdv.Show("Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
- MessageBoxAdv.Show("Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel)
-
-{% endhighlight %}
-
-{% endtabs %}
- 
-![](MessageBoxAdv_images/MessageBoxAdv_img27.jpg) 
+![](MessageBoxAdv_images/MessageBoxAdv_img26.jpg)
 
 ## Right To left Support
 
