@@ -7,7 +7,7 @@ control: MessageBoxAdv
 documentation: ug
 ---
 
-# Overview:
+# Overview
 
 Syncfusion MessageBoxAdv supports an application-defined message and title, plus any combination of predefined icons and buttons.
 MessageBoxAdv provides some of the features such as:

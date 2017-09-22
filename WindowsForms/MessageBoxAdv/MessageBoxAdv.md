@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Feature | WindowsForms | Syncfusion
+title: Feature | Windows Forms | Syncfusion
 description: Feature
-platform: WindowsForms
+platform: Windows Forms
 control: MessageBoxAdv
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains all the design time feature of MessageBoxAdv.
 
-## Details Pane:
+## Details Pane
 
 This pane helps to view the detail message about the text shown in the MessageBoxAdv.
 
@@ -23,14 +23,14 @@ This pane helps to view the detail message about the text shown in the MessageBo
 
 //Details Pane
 
-result = MessageBoxAdv.Show(this, bdyText, CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details");
+result = MessageBoxAdv.Show(this,"Hello World!", CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details");
 {% endhighlight %}
 
 {% highlight VB %}
 
 'Details Pane
 
-result = MessageBoxAdv.Show(Me, bdyText, CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details")
+result = MessageBoxAdv.Show(Me,"Hello World!", CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details")
 
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ Eg: Collapsed Pane
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img19.jpg) 
 
-## Button Support:
+## Button Support
 
 By default, the MessageBox only has the one Ok button, but this can be changed, in case you want to ask your user a question and not just show a piece of information. Also notice how I use multiple lines in this message, by using a line break character (\n):
 You control which buttons are displayed by using a value from the **MessageBoxButtons** enumeration - in this case, a Yes, No and Cancel button is included. The following values, which should be self-explanatory, can be used:
@@ -234,19 +234,19 @@ MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAd
 
 ## MultiLineText Support
 
-MesssageBoxAdv provides MultiLine support to display the multiple lines of Text. It can be achieved using the Show method and multiple lines of text provided in it.
+MessageBoxAdv provides MultiLine support to display the multiple lines of Text. It can be achieved using the Show method and multiple lines of text provided in it.
 
 {% tabs %}
 
 {% highlight C# %}
 
-MessageBoxAdv.Show("Syncfusion is the enterprise technology partner of choice for software development, delivering a broad range of web, mobile, and desktop controls coupled with a service-oriented approach throughout the entire application lifecycle. Syncfusion has established itself as the trusted partner worldwide for use in mission-critical applications. Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 12,000 customers, including large financial institutions, Fortune 100 companies, and global IT consultancies.", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel);
+ MessageBoxAdv.Show("Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-MessageBoxAdv.Show("Syncfusion is the enterprise technology partner of choice for software development, delivering a broad range of web, mobile, and desktop controls coupled with a service-oriented approach throughout the entire application lifecycle. Syncfusion has established itself as the trusted partner worldwide for use in mission-critical applications. Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 12,000 customers, including large financial institutions, Fortune 100 companies, and global IT consultancies.", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel)
+ MessageBoxAdv.Show("Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OKCancel)
 
 {% endhighlight %}
 
@@ -254,7 +254,7 @@ MessageBoxAdv.Show("Syncfusion is the enterprise technology partner of choice fo
  
 ![](MessageBoxAdv_images/MessageBoxAdv_img27.jpg) 
 
-## Right To left Support:
+## Right To left Support
 
 MessageBoxAdv support the RightToLeft support which aligns the content of the messageboxadv in right to left manner or Left to Right Manner.
 
@@ -278,7 +278,7 @@ MessageBoxAdv.Show("Right To Left support", "This is Syncfusion MessageBoxAdv Co
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img28.jpg) 
 
-## Dialog Result:
+## Dialog Result
 
 This support helps to display the result of the MessageBoxButton .
 
@@ -308,7 +308,7 @@ DlgRtTxtBox.Text = CustomButtons(clickedIndex - 1)
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img30.jpg) 
 
-## Localization Support:
+## Localization Support
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. MessageBoxAdv control can be localized in any Languages, based on application requirement by following below steps.
 

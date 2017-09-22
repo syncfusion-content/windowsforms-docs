@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | Windows Forms | Syncfusion
 description: Getting Started
-platform: WindowsForms
+platform: Windows Forms
 control: MessageBoxAdv
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 This session explains about how to implement a window popup using the MessageBoxAdv. The Syncfusion control can be added using the following Syncfusion Assemblies as follows:
-1)	Create a WindowsForms project in visual studio and add the following Syncfusion assembly as follows:
+1)	Create a Windows Forms project in Visual Studio and add the following Syncfusion assembly as follows:
 
     * Syncfusion.Shared.Base.dll
 
