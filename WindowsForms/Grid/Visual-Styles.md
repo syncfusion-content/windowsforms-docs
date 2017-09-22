@@ -128,7 +128,7 @@ Me.gridControl1.MetroColorTable.ThumbNormal = Color.Blue
 N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling) section.
 
 ### Apply Skins to the GridControl
-The more advanced themes along with the basic themes defined by GridVisualStyles can be added to the grid by using the [GridSkins](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins.html). It is available as an add-on feature in the [GridHelperClasses](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows.html) library. `GridSkins` depict the custom skin of `GridVisualStyles`. Currently, it comes with Vista skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the [ApplySkin](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins~ApplySkin.html) method.
+The more advanced themes along with the basic themes defined by GridVisualStyles can be added to the grid by using the [GridSkins](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins.html). It is available as an add-on feature in the [GridHelperClasses](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows.html) library. `GridSkins` depict the custom skin of `GridVisualStyles`. Currently, it comes with Vista skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the [ApplySkin](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins~ApplySkin.html) method.
 {% tabs %}
 {% highlight c# %}
 //Apply skin to the GridControl
@@ -172,7 +172,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
 ![](Visual-Syles_images/Visual-Syles_img4.jpeg)
 
 ## Customizing Visual Styles
-All the elements of the GridControl’s appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
+All the elements of the GridControl’s appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
 
 ### Customization Using IVisualStylesDrawing
 The grid can be applied with the [custom visual styles](https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol) by implementing the [IVisualStylesDrawing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.IVisualStylesDrawing_members.html) interface. This interface provides the list of methods for drawing the icons and header colors of the grid.

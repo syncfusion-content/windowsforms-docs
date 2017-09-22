@@ -237,7 +237,7 @@ gridControl.ResetAlphaBlendSelectionColor()
 
 ### Setting the CurrentCell back color similar to the back color of the remaining selected cells
 
-When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CellDrawn_EV.html#) event.
+When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CellDrawn_EV.html#) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -365,7 +365,7 @@ The selected values are printed in the output screen as of follows,
 
 ## Cell Text Selection
 
-The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ActivateCurrentCellBehavior.html#) property. When the property is set to [SelectAll](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html#)**,** it will selects all the text in the cell when the cell is activated.
+The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ActivateCurrentCellBehavior.html#) property. When the property is set to [SelectAll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html#)**,** it will selects all the text in the cell when the cell is activated.
 
 {% tabs %}
 {% highlight c# %}

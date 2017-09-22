@@ -48,7 +48,7 @@ The [ConverterOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/gri
 * **Visible** – To Export only the visible columns to the Excel. i.e. the hidden columns will be skipped.
 
 ### Exporting with Row and Column Headers
-By default, [GridExcelConverterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl.html) exports all elements in the grid. The following code example illustrates how to include both row and column headers during the export.
+By default, [GridExcelConverterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl.html) exports all elements in the grid. The following code example illustrates how to include both row and column headers during the export.
 {% tabs %}
 {% highlight c# %}
 //Converter to export the contents of the Grid to Excel
@@ -400,7 +400,7 @@ pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
 ### Setting Header and Footer Height
-The height of the header and footer of the exporter PDF file can be set by using the [HeaderHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~HeaderHeight.html) and [FooterHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~FooterHeight.html) properties.
+The height of the header and footer of the exporter PDF file can be set by using the [HeaderHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~HeaderHeight.html) and [FooterHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~FooterHeight.html) properties.
 {% tabs %}
 {% highlight c# %}
 //Create PDF converter
@@ -468,8 +468,8 @@ pdfConverter.ExportToPdfWithMerge("Sample1.pdf", Me.gridControl1)
 ### Events
 The `GridPDFConverter` provides support to customize the exporting actions through events. The following events are used to customize the exporting,
 
-* [Exporting](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exporting_EV.html) – This event will be raised before exporting is started.
-* [Exported](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exported_EV.html)– This event will be raised after exporting is completed.
+* [Exporting](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exporting_EV.html) – This event will be raised before exporting is started.
+* [Exported](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exported_EV.html)– This event will be raised after exporting is completed.
 * [DrawPDFHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~DrawPDFHeader_EV.html)– This event is used to draw the header for the PDF document.
 * [DrawPDFFooter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~DrawPDFFooter_EV.html)– This event is used to draw the footer for the PDF document.
 
