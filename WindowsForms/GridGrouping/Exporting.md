@@ -939,7 +939,7 @@ The following events are supported in advanced Excel exporting,
 N> These events should be subscribed before the exporting the grid to Excel.
 
 #### QueryExportCellRange
-This event will be triggered for every cell after the cell exported. By this event, you will get the Excel range for the cell so you can customize the cell while exporting by using [QueryExportCellRange](https://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportCellRangeEventHandler.html) event.
+This event will be triggered for every cell after the cell exported. By this event, you will get the Excel range for the cell so you can customize the cell while exporting by using [QueryExportCellRange](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportCellRangeEventHandler.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -977,7 +977,7 @@ End Sub
 ![](Exporting_images/Advanced_Excel_Exporting_img26.jpeg)
 
 #### QueryExportRowRange
-This event will be triggered before exporting a row. If you want to avoid specific row while exporting, you can achieve this by handling the [QueryExportRowRange](https://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportRowRangeEventHandler.html) event.
+This event will be triggered before exporting a row. If you want to avoid specific row while exporting, you can achieve this by handling the [QueryExportRowRange](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportRowRangeEventHandler.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1193,7 +1193,7 @@ pdfConverter.ExportToPdfWithMerge("Sample1.pdf", Me.gridGroupingControl1.TableCo
 {% endtabs %}
 
 ### Events
-The `GridPDFConverter` provides support to customize the exporting actions through events. The [Exporting](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exporting_EV.html) and [Exported](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exported_EV.html) events of the converter is used to notify the PDF exporting of the grid.
+The `GridPDFConverter` provides support to customize the exporting actions through events. The [Exporting](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exporting_EV.html) and [Exported](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~Exported_EV.html) events of the converter is used to notify the PDF exporting of the grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -1397,7 +1397,7 @@ csvConverter.GridToCSV(Me.gridGroupingControl1.TableModel, "Sample.csv")
 {% endtabs %}
 
 ### Exporting the Range of Cells
-The range of cells can be exported from the grid to excel as the [CSV](https://msdn.microsoft.com/en-us/library/azure/dn906002.aspx) format by using the [ExportRange](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCSVConverter~ExportRange.html) method.
+The range of cells can be exported from the grid to excel as the [CSV](https://msdn.microsoft.com/en-us/library/azure/dn906002.aspx) format by using the [ExportRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCSVConverter~ExportRange.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1417,7 +1417,7 @@ csvConverter.ExportRange(GridRangeInfo.Rows(rowIndex, rowIndex + 3), Me.gridGrou
 ![](Exporting_images/Exporting_img19.png)
 
 ### Exporting Selected Range of Cells
-The selected range of cells can be exported to the CSV format by using the [SelectedExport](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCSVConverter~SelectedExport.html) method. This can only export the model based selection. Therefore enable the[range selection](http://help.syncfusion.com/windowsforms/gridgrouping/selections#model-based-selection) for the grid.
+The selected range of cells can be exported to the CSV format by using the [SelectedExport](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCSVConverter~SelectedExport.html) method. This can only export the model based selection. Therefore enable the[range selection](http://help.syncfusion.com/windowsforms/gridgrouping/selections#model-based-selection) for the grid.
 
 {% tabs %}
 {% highlight c# %}
