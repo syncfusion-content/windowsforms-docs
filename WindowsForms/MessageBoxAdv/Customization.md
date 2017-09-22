@@ -25,6 +25,7 @@ MessageBoxAdv provides the following style and Theme support to customize the co
 
 •	Office2016
 
+
 **Default:**
 
 This option helps to set the Default theme.
@@ -32,7 +33,6 @@ This option helps to set the Default theme.
 {% tabs %}
 
 {% highlight C# %}
-
 
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Default;
 MessageBoxAdv.Show("Metro Theme","This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
@@ -49,6 +49,7 @@ MessageBoxAdv.Show("Metro Theme", "This is Syncfusion MessageBoxAdv Control", Me
 {% endtabs %}
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img2.jpg) 
+
 
 **Metro:**
 
@@ -74,6 +75,7 @@ MessageBoxAdv.Show("Metro Theme", "This is Syncfusion MessageBoxAdv Control", Me
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img1.jpg) 
 
+
 **Office2007Theme**
 
 Office2007 Style Message Box is available in Tools Windows. You can replace the .NET MessageBox with new MessageBoxAdv that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBoxAdv. To display the Message Box, call MessageBoxAdv.Show method.
@@ -98,6 +100,7 @@ This option helps to set the Black theme
 
 MessageBoxAdv.Office2007Theme = Office2007Theme.Black;
 MessageBoxAdv.Show("Office 2007Theme", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
+
 {% endhighlight %}
 
 {% highlight VB %}
@@ -110,6 +113,7 @@ MessageBoxAdv.Show("Office 2007Theme", "This is Syncfusion MessageBoxAdv Control
 {% endtabs %}
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img3.jpg) 
+
  
 **Blue**
 
@@ -136,6 +140,7 @@ MessageBoxAdv.Show("Office 2007Theme", "This is Syncfusion MessageBoxAdv Control
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img4.jpg) 
 
+
 **Silver**
 
 This option helps to set the Silver color scheme in Office2007 theme.
@@ -159,6 +164,7 @@ MessageBoxAdv.Show("Office 2007Theme", "This is Syncfusion MessageBoxAdv Control
 {% endtabs %}
 
  ![](MessageBoxAdv_images/MessageBoxAdv_img5.jpg) 
+
 
 **Managed**
 
@@ -186,6 +192,7 @@ MessageBoxAdv.Show("Office 2007Theme", "This is Syncfusion MessageBoxAdv Control
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img6.jpg) 
 
+
 **Office2010Theme**
 
 This option helps to set the various color schemes such as
@@ -197,6 +204,7 @@ This option helps to set the various color schemes such as
 •	Silver
 
 •	Managed
+
 
 **Black**
 
@@ -224,6 +232,7 @@ MessageBoxAdv.Show("Office 2010 Theme", "This is Syncfusion MessageBoxAdv Contro
  
 ![](MessageBoxAdv_images/MessageBoxAdv_img7.jpg) 
 
+
 **Blue**
 
 This option helps to set the Blue color scheme in Office2010Theme.
@@ -249,6 +258,7 @@ MessageBoxAdv.Show("Office 2010 Theme", "This is Syncfusion MessageBoxAdv Contro
 {% endtabs %}
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img8.jpg) 
+
  
 **Silver**
 
@@ -275,6 +285,7 @@ MessageBoxAdv.Show("Office 2010 Theme", "This is Syncfusion MessageBoxAdv Contro
 {% endtabs %}
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img9.jpg) 
+
 
 **Office2010 Managed:**
 
@@ -305,6 +316,7 @@ MessageBoxAdv.Show("Office 2010 Style with Custom Color Scheme", "This is Syncfu
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img10.jpg) 
 
+
 **Office2013Theme:**
 
 This option helps to set the various color schemes in Office2013Theme such as
@@ -327,6 +339,7 @@ This option helps to set the DarkGray color scheme in Office2013Theme.
 MessageBoxAdv.Office2013Theme = Office2013Theme.DarkGray;
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2013;
 MessageBoxAdv.Show("Office 2013 Theme", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
+
 {% endhighlight %}
 
 {% highlight VB %}
@@ -340,6 +353,7 @@ MessageBoxAdv.Show("Office 2013 Theme", "This is Syncfusion MessageBoxAdv Contro
 {% endtabs %}
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img11.jpg) 
+
 
 **LightGray**
 
@@ -367,6 +381,7 @@ MessageBoxAdv.Show("Office 2013 Theme", "This is Syncfusion MessageBoxAdv Contro
  
  ![](MessageBoxAdv_images/MessageBoxAdv_img12.jpg) 
 
+
 **White Theme**
 
 This option helps to set the white color scheme in office2013Theme.
@@ -393,6 +408,7 @@ MessageBoxAdv.Show("Office 2013 Theme", "This is Syncfusion MessageBoxAdv Contro
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img13.jpg) 
 
+
 **Office2016Theme**
 
 This option helps to set the various color schemes in Office2016Themesuch as
@@ -406,6 +422,7 @@ This option helps to set the various color schemes in Office2016Themesuch as
 
 **Colorful**
 
+
 This scheme helps to set the Colorful scheme in Office2016Theme.
 
 {% tabs %}
@@ -415,6 +432,7 @@ This scheme helps to set the Colorful scheme in Office2016Theme.
 MessageBoxAdv.Office2016Theme = Office2016Theme.Colorful;
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2016;
 MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
+
 {% endhighlight %}
 
 {% highlight VB %}
@@ -429,6 +447,8 @@ MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Contro
 
  ![](MessageBoxAdv_images/MessageBoxAdv_img14.jpg) 
 
+
+
 **Dark**
 
 
@@ -441,6 +461,7 @@ This option helps to set the Dark color scheme in Office2016Theme.
 MessageBoxAdv.Office2016Theme = Office2016Theme.DarkGray;
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2016;
 MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK);
+
 {% endhighlight %}
 
 {% highlight VB %}
@@ -454,8 +475,11 @@ MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Contro
 {% endtabs %}
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img15.jpg) 
+
  
+
 **White**
+
 
 This option helps to set the White color scheme in Office2016Theme.
 
@@ -471,7 +495,6 @@ MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Contro
 
 {% highlight VB %}
 
-
 MessageBoxAdv.Office2016Theme = Office2016Theme.White
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Office2016
 MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Control", MessageBoxButtons.OK)
@@ -481,6 +504,7 @@ MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Contro
 {% endtabs %}
  
  ![](MessageBoxAdv_images/MessageBoxAdv_img16.jpg) 
+
 
 **Metro**
 
@@ -570,6 +594,7 @@ MessageBoxAdv.MetroColorTable.CaptionForeColor = Color.Black;
 MessageBoxAdv.MetroColorTable.ForeColor = Color.Red;
 
 {% endhighlight %}
+
 
 {% highlight VB %}
 

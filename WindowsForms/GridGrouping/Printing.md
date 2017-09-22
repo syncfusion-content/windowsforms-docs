@@ -91,7 +91,7 @@ End Sub
 {% endtabs %}
 
 ## Advanced Print Document
-The [GridPrintDocumentAdv](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html) class provides the advanced options to print the grid. To have this printing support, the [Syncfusion.GridHelperClasses.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows.html) assembly needs to be added into the assembly reference. 
+The [GridPrintDocumentAdv](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html) class provides the advanced options to print the grid. To have this printing support, the [Syncfusion.GridHelperClasses.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows.html) assembly needs to be added into the assembly reference. 
 
 This class provides the following functionalities,
 
@@ -121,7 +121,7 @@ The detailed information about the advanced printing is discussed in below secti
 The GridGroupingControl can be printed with various options. i.e. scaling, print frame, and Orientation of the print document can be applied on printing. 
 
 ### Scaling
-All the columns of the GridGroupingControl can be printed with in a single page by enabling the [ScaleColumnsToFitPage](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~ScaleColumnsToFitPage.html) property of the `GridPrintDocumentAdv`.
+All the columns of the GridGroupingControl can be printed with in a single page by enabling the [ScaleColumnsToFitPage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~ScaleColumnsToFitPage.html) property of the `GridPrintDocumentAdv`.
 
 {% tabs %}
 {% highlight c# %}
@@ -218,7 +218,7 @@ End If
 {% endtabs %}
 
 ## Black and White Printing 
-The grid can be printed with the `black and white` color combination by setting [BlackWhite](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~BlackWhite.html) property to `true`. 
+The grid can be printed with the `black and white` color combination by setting [BlackWhite](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~BlackWhite.html) property to `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -233,7 +233,7 @@ Me.gridGroupingControl1.TableModel.Properties.BlackWhite = True
 ![](Printing_images/Printing_img5.png)
 
 ## Multiple Grid Printing
-Multiple GridGroupingControl can be printed across various pages using helper class [MultipleGridPrintDocument](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument.html). This is achieved by drawing full-size grid to a large bitmap and then scaling this bitmap to fit the output page.
+Multiple GridGroupingControl can be printed across various pages using helper class [MultipleGridPrintDocument](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument.html). This is achieved by drawing full-size grid to a large bitmap and then scaling this bitmap to fit the output page.
 
 The [GridPrintOption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~GridPrintOption.html) property is used to specify the multiple grids printing options. 
 
@@ -285,7 +285,7 @@ previewDialog.Show()
 {% endtabs %}
 
 ## Setting Header and Footer 
-The GridGroupingControl can be printed with the headers and footers by setting the [HeaderPrintStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~HeaderPrintStyleInfo.html) and [FooterPrintStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~FooterPrintStyleInfo.html) properties of the advanced `GridPrintDocument`. 
+The GridGroupingControl can be printed with the headers and footers by setting the [HeaderPrintStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~HeaderPrintStyleInfo.html) and [FooterPrintStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~FooterPrintStyleInfo.html) properties of the advanced `GridPrintDocument`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -592,7 +592,7 @@ void printDocument_PrintPage(Object sender, PrintPageEventArgs e)
 ## Print Layout Helper
 The Print Page Layout feature enables viewing page layout on the grid by displaying a segment line and page number with each segment. This helps to analyze page breaks within the grid, and manage them accordingly.
 
-The [LayoutSupportHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LayoutSupportHelper.html) class provides the functionality of the layout helper in grid. It provides the following options to view the pages,
+The [LayoutSupportHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LayoutSupportHelper.html) class provides the functionality of the layout helper in grid. It provides the following options to view the pages,
 
 * Page breaks
 * Customization in page break line color and line width
@@ -717,7 +717,7 @@ helper.ShowLayoutLines = True
 ![](Printing_images/Printing_img13.png)
 
 ### Customizing Page Breaks
-The row breaks and column breaks for each pages can be customized by using the [PrintInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrintInfo.html) property. This will provide the list of first row index and first column index of each pages while printing.
+The row breaks and column breaks for each pages can be customized by using the [PrintInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrintInfo.html) property. This will provide the list of first row index and first column index of each pages while printing.
 The below example shows the 30 rows and 5 columns are printed for each pages,
 {% tabs %}
 {% highlight c# %}
@@ -801,7 +801,7 @@ End Sub
 The printing options of the grid can be customized by using the following methods.
 
 ### Applying Header Colors While Printing
-The cell styles can be changed dynamically on printing the grid by using [PrintingMode](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrintingMode.html) property. The following code snippet is used to set the header colors for the GridGroupingControl only on the printed document,
+The cell styles can be changed dynamically on printing the grid by using [PrintingMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrintingMode.html) property. The following code snippet is used to set the header colors for the GridGroupingControl only on the printed document,
 
 {% tabs %}
 {% highlight c# %}
@@ -837,7 +837,7 @@ End Sub
 ![](Printing_images/Printing_img16.png)
 
 ### Hiding Row and Column Headers 
-To hide the row and column headers while printing or print previewing the grid, set the [PrintRowHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~PrintRowHeader.html) and [PrintColumnHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/gridconverter/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~PrintColumnHeader.html) property values as `false` which are available in the [TableModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableModel.html) property.
+To hide the row and column headers while printing or print previewing the grid, set the [PrintRowHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~PrintRowHeader.html) and [PrintColumnHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~PrintColumnHeader.html) property values as `false` which are available in the [TableModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableModel.html) property.
 
 {% tabs %}
 {% highlight c# %}
