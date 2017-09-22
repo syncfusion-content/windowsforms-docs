@@ -23,14 +23,14 @@ This pane helps to view the detail message about the text shown in the MessageBo
 
 //Details Pane
 
-result = MessageBoxAdv.Show(this,"Hello World!", CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details");
+result = MessageBoxAdv.Show(this,"Hello World !", CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details");
 {% endhighlight %}
 
 {% highlight VB %}
 
 'Details Pane
 
-result = MessageBoxAdv.Show(Me,"Hello World!", CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details")
+result = MessageBoxAdv.Show(Me,"Hello World !", CaptionText, MessageBoxButtons.OK, SelectedIcon, SelectedIcon.Size,"details")
 
 {% endhighlight %}
 
