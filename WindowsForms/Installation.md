@@ -27,6 +27,8 @@ The following procedure illustrates how to manually install Essential Studio for
 
 Syncfusion Windows Forms NuGet packages are available [here](http://nuget.syncfusion.com/package/windows-forms).
 
+N> If you wish to use the Windows Forms NuGet packages then Essential Studio or Windows Forms platform installation not required to implement with Syncfusion Windows Forms controls. 
+
 ### NuGet Configuration  
 
 Syncfusion NuGet Package feed links are configured in Visual Studio in the following ways,
