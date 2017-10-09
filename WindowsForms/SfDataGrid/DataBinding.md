@@ -58,7 +58,7 @@ this.sfDataGrid1.DataSource = dataSet.Tables[0];
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "Empcomplexmodel.EmpName", HeaderText = "Employee Name" });
+this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeComplexModel.EmployeeName", HeaderText = "Employee Name" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,7 +72,7 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmpDetails[0].Title", HeaderText = "Title" });
+this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeDetails[0].Title", HeaderText = "Title" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -293,7 +293,7 @@ N> `View` has properties that already defined in `SfDataGrid`. It recommended se
 [https://msdn.microsoft.com/en-us/library/jj682076(v=vs.113).aspx](https://msdn.microsoft.com/en-us/library/jj682076(v=vs.113).aspx) 
 
 ### Defining Data Model using Entity Framework 4.0
-To create Data Model using Entity Framework in Windows forms application, follow the below steps.
+To create Data Model using Entity Framework in Windows Forms application, follow the below steps.
 
 1) Right click your project, select **Add** option and then click **New Item**.
 
@@ -322,12 +322,12 @@ To create Data Model using Entity Framework in Windows forms application, follow
    ![](DataBinding_images/DataBinding_img7.jpeg)
 
 ### Loading data from Entity Framework data service
-The data from the defined entity model can be loaded as a data source to the `SfDataGrid` by loading the **Order Details** table by the created entity for the **Northwnd** data base.
+The data from the defined entity model can be loaded as a data source to the `SfDataGrid` by loading the **Order Details** table by the created entity for the **Northwnd** database.
 
 {% tabs %}
 {% highlight c# %}
-NORTHWNDEntities northWind = new NORTHWNDEntities();
-this.sfDataGrid1.DataSource = northWind.Order_Details;
+NORTHWNDEntities entities = new NORTHWNDEntities();
+this.sfDataGrid1.DataSource = entities.Order_Details;
 {% endhighlight %}
 {% endtabs %}
 Now, run the application and you can see the following screenshot shows the `SfDataGrid` control populated with data from Entity Framework data service.
@@ -371,12 +371,12 @@ To create data model using LINQ to SQL in WF project follow the below steps.
 10) Drag **Shippers** table in to design view of **Northwind.dbml**. The Entity model diagram for **Shippers** table is generated once it is dropped in to design view.
 
 ### Loading data from LINQ to SQL classes
-The data from the defined data model of the LINQ to SQL classes can be loaded as a data source to the `SfDataGrid` by loading the **Shippers** table by the created data context for the **Northwnd** data base.
+The data from the defined data model of the LINQ to SQL classes can be loaded as a data source to the `SfDataGrid` by loading the **Shippers** table by the created data context for the **Northwnd** database.
 
 {% tabs %}
 {% highlight c# %}
-NorthwindDataContext nordthWinddataContext = new NorthwindDataContext();
-this.sfDataGrid1.DataSource = nordthWinddataContext.Shippers;
+NorthwindDataContext DataContext = new NorthwindDataContext();
+this.sfDataGrid1.DataSource = DataContext.Shippers;
 {% endhighlight %}
 {% endtabs %}
 
@@ -414,7 +414,7 @@ To access the data from data source using `ADO.NET`, follow the below steps.
 
 1) Create a connection through any of the [.NET Framework data provider](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source that you have owned.
 
-2) Fill the data from the data base to a data set using the data adapter.
+2) Fill the data from the database to a data set using the data adapter.
 
 3) Set the `DataSource` as **Suppliers** table from the data set.
 
@@ -470,18 +470,18 @@ To access the Microsoft Access database, follow the below steps.
 
 1) Create a **OleDbConnection** with the Microsoft Access database.
 
-2) Fill the data from the data base to a data set using the **OleDbDataAdapter**.
+2) Fill the data from the database to a data set using the **OleDbDataAdapter**.
 
 3) Set the `DataSource` as **Employees** table from the data set.
 
 {% tabs %}
 {% highlight c# %}
-OleDbConnection oleConnection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\SfWinforms\SfDataGrid_UserGuide\Sample\DataBinding\Data\Employees.accdb;Persist Security Info=True");
-OleDbDataAdapter oleDataAdapter = new OleDbDataAdapter("SELECT * FROM Employees", oleConnection);
+OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\SfWindowsForms\SfDataGrid_UserGuide\Sample\DataBinding\Data\Employees.accdb;Persist Security Info=True");
+OleDbDataAdapter DataAdapter = new OleDbDataAdapter("SELECT * FROM Employees", connection);
 EmployeesDataSet employeeDataSet = new EmployeesDataSet();
-oleConnection.Open();
-oleDataAdapter.Fill(employeeDataSet, "Employees");
-oleConnection.Close();
+connection.Open();
+DataAdapter.Fill(employeeDataSet, "Employees");
+connection.Close();
 this.sfDataGrid1.DataSource = employeeDataSet.Tables[“Employees”];
 {% endhighlight %}
 {% endtabs %}

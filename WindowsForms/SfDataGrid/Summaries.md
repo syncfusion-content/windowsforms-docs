@@ -609,7 +609,7 @@ public static class LinqExtensions
 {
     public static double StdDev&lt;T&gt;(this IEnumerable&lt;T&gt; values, Func&lt;T, double?&gt; selector)
     {
-        double ret = 0;
+        double value = 0;
         var count = values.Count();
         if (count > 0)
         {
@@ -622,9 +622,9 @@ public static class LinqExtensions
                 }
                 return 0.0;
             });
-            ret = Math.Sqrt((sum) / (count - 1));
+            value = Math.Sqrt((sum) / (count - 1));
         }
-        return ret;
+        return value;
     }
 }
 {% endhighlight %}
