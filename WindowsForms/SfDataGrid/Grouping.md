@@ -255,8 +255,8 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
             var dt = DateTime.Now;
             var item = (o as SalesByDate).Date;
             var days = (int)Math.Floor((dt - item).TotalDays);
-            var dayofweek = (int)dt.DayOfWeek;
-            var diff = days - dayofweek;
+            var dayOfWeek = (int)dt.DayOfWeek;
+            var difference = days - dayofWeek;
             if (days <= dayofweek)
             {
                 if (days == 0)
@@ -265,11 +265,11 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
                     return "YESTERDAY";
                 return item.Date.DayOfWeek.ToString().ToUpper();
             }
-            if (diff > 0 && diff <= 7)
+            if (difference > 0 && difference <= 7)
                 return "LAST WEEK";
-            if (diff > 7 && diff <= 14)
+            if (difference > 7 && difference <= 14)
                 return "TWO WEEKS AGO";
-            if (diff > 14 && diff <= 21)
+            if (difference > 14 && difference <= 21)
                 return "THREE WEEKS AGO";
             if (dt.Year == item.Date.Year && dt.Month == item.Date.Month)
                 return "EARLIER THIS MONTH";
@@ -298,9 +298,9 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
             var dt = DateTime.Now;
             var item = (o as SalesByDate).Date;
             var days = (int)Math.Floor((dt - item).TotalDays);
-            var dayofweek = (int)dt.DayOfWeek;
-            var diff = days - dayofweek;
-            if (days <= dayofweek)
+            var dayOfWeek = (int)dt.DayOfWeek;
+            var difference = days - dayOfWeek;
+            if (days <= dayOfWeek)
             {
                 if (days == 0)
                     return "TODAY";
@@ -308,11 +308,11 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
                     return "YESTERDAY";
                 return item.Date.DayOfWeek.ToString().ToUpper();
             }
-            if (diff > 0 && diff <= 7)
+            if (difference > 0 && difference <= 7)
                 return "LAST WEEK";
-            if (diff > 7 && diff <= 14)
+            if (difference > 7 && difference <= 14)
                 return "TWO WEEKS AGO";
-            if (diff > 14 && diff <= 21)
+            if (difference > 14 && difference <= 21)
                 return "THREE WEEKS AGO";
             if (dt.Year == item.Date.Year && dt.Month == item.Date.Month)
                 return "EARLIER THIS MONTH";
@@ -344,7 +344,7 @@ private void SfDataGrid1_GroupExpanding(object sender, GroupChangingEventArgs e)
 {% endtabs %}
 
 ## Cancel collapsing of groups
-The collapsing of the groups can be cancelled by setting the `Cancel` property of the [GroupChangingEventArgs](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.GroupChangingEventArgs.html) to `true` in the [GroupCollapsing](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupCollapsing) event.
+The collapsing of the groups can be canceled by setting the `Cancel` property of the [GroupChangingEventArgs](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.GroupChangingEventArgs.html) to `true` in the [GroupCollapsing](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupCollapsing) event.
 
 {% tabs %}
 {% highlight c# %}
