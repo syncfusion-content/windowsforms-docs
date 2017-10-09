@@ -111,7 +111,7 @@ private void SfDataGrid1_AutoGeneratingColumn(object sender, AutoGeneratingColum
 {% endtabs %}
 
 #### Cancel column generation for particular property
-The auto generation of the specific column can be canceled by handling the `AutoGeneratingColumn` event. The column generation can be cancelled by setting the `Cancel` property to `true`.
+The auto generation of the specific column can be canceled by handling the `AutoGeneratingColumn` event. The column generation can be canceled by setting the `Cancel` property to `true`.
 
 {% tabs %}
 {% highlight c# %}
