@@ -476,7 +476,7 @@ To access the Microsoft Access database, follow the below steps.
 
 {% tabs %}
 {% highlight c# %}
-OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\SfWindowsForms\SfDataGrid_UserGuide\Sample\DataBinding\Data\Employees.accdb;Persist Security Info=True");
+OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Employees.accdb;Persist Security Info=True");
 OleDbDataAdapter DataAdapter = new OleDbDataAdapter("SELECT * FROM Employees", connection);
 EmployeesDataSet employeeDataSet = new EmployeesDataSet();
 connection.Open();
