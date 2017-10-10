@@ -173,7 +173,7 @@ By default, the entire row is selected when a user clicks a cell in a SfDataGrid
 
 {% tabs %}
 {% highlight c# %}
-//Mutliple items can be selected at the same time.
+//Multiple items can be selected at the same time.
 this.sfDataGrid.SelectionMode = GridSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
@@ -267,7 +267,7 @@ summaryColumn.SummaryType = SummaryType.CountAggregate;
 //Add the GridSummaryColumn to ObservableCollection
 summaryColumns.Add(summaryColumn);
 
-//Intialize the ObservableCollection to SummaryColumns collection.
+//Initialize the ObservableCollection to SummaryColumns collection.
 tableSummaryRow.SummaryColumns = summaryColumns;
 
 //Add the GridTableSummaryRow to TableSummaryRows collection.
@@ -295,7 +295,7 @@ summaryColumn.SummaryType = SummaryType.Int32Aggregate;
 //Add the GridSummaryColumn to ObservableCollection
 summaryColumns.Add(summaryColumn);
 
-//Intialize the ObservableCollection to SummaryColumns collection.
+//Initialize the ObservableCollection to SummaryColumns collection.
 groupSummaryRow.SummaryColumns = summaryColumns;
 
 this.sfDataGrid.GroupSummaryRows.Add(groupSummaryRow);
@@ -323,7 +323,7 @@ summaryColumn.SummaryType = SummaryType.Int32Aggregate;
 //Add the GridSummaryColumn to ObservableCollection
 summaryColumnsCollection.Add(summaryColumn);
 
-//Intialize the ObservableCollection to SummaryColumns collection.
+//Initialize the ObservableCollection to SummaryColumns collection.
 captionSummaryRow.SummaryColumns = summaryColumnsCollection;
 
 this.sfDataGrid.CaptionSummaryRow = captionSummaryRow;

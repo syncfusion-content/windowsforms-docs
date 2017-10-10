@@ -111,7 +111,7 @@ private void SfDataGrid1_AutoGeneratingColumn(object sender, AutoGeneratingColum
 {% endtabs %}
 
 #### Cancel column generation for particular property
-The auto generation of the specific column can be cancelled by handling the `AutoGeneratingColumn` event. The column generation can be cancelled by setting the `Cancel` property to `true`.
+The auto generation of the specific column can be canceled by handling the `AutoGeneratingColumn` event. The column generation can be canceled by setting the `Cancel` property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -248,7 +248,7 @@ To add the stacked headers in SfDataGrid in designer mode, follow the below step
 
 {% tabs %}
 {% highlight c# %}
-//Step 1: Creating SteackedHeaderRow object.
+//Step 1: Creating StackedHeaderRow object.
 Syncfusion.WinForms.DataGrid.StackedHeaderRow stackedHeaderRow1 = new Syncfusion.WinForms.DataGrid.StackedHeaderRow(); 
 
 //Step 1: Creating StackedColumn to add columns.
@@ -272,7 +272,7 @@ stackedHeaderRow1.StackedColumns.Add(stackedColumn1);
 stackedHeaderRow1.StackedColumns.Add(stackedColumn2);
 stackedHeaderRow1.StackedColumns.Add(stackedColumn3);
 
-//Step 1: Adding SteackedHeaderRow to StackedHeaderRows.
+//Step 1: Adding StackedHeaderRow to StackedHeaderRows.
 this.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 
 {% endhighlight %}

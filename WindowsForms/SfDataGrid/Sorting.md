@@ -68,11 +68,11 @@ You can sort the data programmatically by adding or removing the `SortColumnDesc
 Sorting can be applied to the grid data by creating a `SortColumnDescription` of the desired field name to the `SortColumnDescriptions.Add()`.
 {% tabs %}
 {% highlight c# %}
-SortColumnDescription scd = new SortColumnDescription();
-scd.ColumnName = "CustomerID";
-scd.SortDirection = ListSortDirection.Ascending;
+SortColumnDescription sortColumnDescription = new SortColumnDescription();
+sortColumnDescription.ColumnName = "CustomerID";
+sortColumnDescription.SortDirection = ListSortDirection.Ascending;
 
-this.sfDataGrid1.SortColumnDescriptions.Add(scd);
+this.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription);
 {% endhighlight %}
 {% endtabs %}
 
@@ -250,7 +250,7 @@ private void SfDataGrid1_SortColumnsChanging(object sender, GridSortColumnsChang
 {% endtabs %}
 
 ### Canceling scrolling after sorting
-The scrolling after the sorting to bring SelectedItem in view can be cancelled by using the `SortColumnsChanging` event through [CancelScroll](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.GridSortColumnsChangingEventArgs.html#Syncfusion_WinForms_DataGrid_GridSortColumnsChangingEventArgs_CancelScroll) property.
+The scrolling after the sorting to bring SelectedItem in view can be canceled by using the `SortColumnsChanging` event through [CancelScroll](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.GridSortColumnsChangingEventArgs.html#Syncfusion_WinForms_DataGrid_GridSortColumnsChangingEventArgs_CancelScroll) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SortColumnsChanging += SfDataGrid1_SortColumnsChanging;
