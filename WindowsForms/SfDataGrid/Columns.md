@@ -547,7 +547,7 @@ For example, you can refresh all the column’s width based on the cell contents
 var orderInfoCollection = this.sfDataGrid1.DataSource as OrderInfoCollection;
 orderInfoCollection.Orders.Add(new OrderInfo() { OrderID = 11, CustomerID = "BLFKI", ProductName = "Boston Crab Meat" });
 
-this.sfDataGrid1.ColumnSizer.ResetAutoSizeWidthforAllColumns();
+this.sfDataGrid1.ColumnSizer.ResetAutoSizeWidthForAllColumns();
 this.sfDataGrid1.ColumnSizer.Refresh();
 {% endhighlight %}
 {% endtabs %}
