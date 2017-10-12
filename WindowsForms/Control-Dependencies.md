@@ -721,4 +721,10 @@ Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.PivotA
 Pivot Chart<br/><br/></td><td>
 Syncfusion.PivotChart.Windows<br/><br/></td><td>
 Syncfusion.Chart.Base<br/><br/>Syncfusion.Chart.Windows<br/><br/>Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.PivotAnalysis.Base<br/><br/>Syncfusion.PivotAnalysis.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/></td></tr>
+<tr>
+<td>IO</td>
+<td>PDF Viewer</td>
+<td>Syncfusion.PdfViewer.Windows</td>
+<td>Syncfusion.Compression.Base<br/>Syncfusion.Pdf.Base<br/></td>
+</tr>
 </table>
