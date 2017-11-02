@@ -3155,7 +3155,7 @@ Description</th></tr>
 <tr>
 <td>
 WordWrapMode</td><td>
-Gets / sets state of the word wrapping mode. The options provided are{{ ''_WordWrapMargin_'  | markdownify }}- wraps text at the boundary between text area and wordwrap margin of the Edit ControlThe area beyond the text area in the Edit Control is referred to asthe wordwrap margin. Hence, the width of the wordwrap margin is the difference between Edit Control's width and the TextArea width.{{ '_Control_'  | markdownify }}- wraps the text at the edge of the Edit Control{{ '_SpecifiedColumn -_' | markdownify }} wraps the text at the specified column that is specified in WordWrapColumn propertyThe default value is set to Control.</td></tr>
+Gets / sets state of the word wrapping mode. The options provided are wraps text at the boundary between text area and wordwrap margin of the Edit ControlThe area beyond the text area in the Edit Control is referred to as the wordwrap margin. Hence, the width of the wordwrap margin is the difference between Edit Control's width and the TextArea width. Column Mode wraps the text at the edge of the Edit Control. SpecifiedColumn mode wraps the text at the specified column that is specified in WordWrapColumn property. The default value is set to Control.</td></tr>
 <tr>
 <td>
 WordWrapColumnMeasuringFont</td><td>
