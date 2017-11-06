@@ -18,14 +18,12 @@ You must set GridStyleInfo'sTrimming property to achieve this. To enable trimmin
 
 //Sets Ellipsis Text for the whole grid.
 this.grid.TableStyle.Trimming = StringTrimming.EllipsisWord;
-this.grid.TableStyle.Trimming = StringTrimming.EllipsisWord;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 'Sets Ellipsis Text for the whole grid.
-Me.grid.TableStyle.Trimming = StringTrimming.EllipsisWord
 Me.grid.TableStyle.Trimming = StringTrimming.EllipsisWord
 
 {% endhighlight %}
