@@ -93,7 +93,7 @@ Yes</td><td>
 Yes</td></tr>
 <tr>
 <td>
-TrueType Fonts</td><td>
+TrueType Fonts****</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
@@ -346,6 +346,8 @@ No</td></tr>
 **Supports only URI annotation.
 
 ***Supported in 4.0 and higher Framework.
+
+*\*\*\*When the document contains texts that uses TrueType System Fonts to be rendered, then the content in the PDF document is rendered using the font installed in the system/machine in the PDF Viewer control. If the required font is not installed in the system, then the contents would be rendered using **Arial** font.
 
 ## Adding PDF Viewer to an Application
 
