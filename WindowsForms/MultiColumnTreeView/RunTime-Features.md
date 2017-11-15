@@ -8,8 +8,6 @@ documentation: ug
 ---
 # RunTime Features
 
-# RunTime Features
-
 This section will walk you through the following runtime features of MultiColumnTreeViewAdv Control.
 
 ## Context Menu
@@ -392,11 +390,11 @@ When set to true, the scroll control can increase the scrollbar.small change pro
 
 MultiColumnTreeView provides support for Office2007Scrollbars with all three color schemes.
 
-![](RunTime-Features_images/RunTime-Features_img3.png)
+![](RunTime-Features_images/MultiColumnTreeViewBlue.png)
 
-![](RunTime-Features_images/RunTime-Features_img4.png)
+![](RunTime-Features_images/MultiColumnTreeViewSilver.png)
 
-![](RunTime-Features_images/RunTime-Features_img5.png)
+![](RunTime-Features_images/MultiColumnTreeViewBlack.png)
 
 
 
