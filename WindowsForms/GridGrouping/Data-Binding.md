@@ -2872,12 +2872,12 @@ Me.gridGroupingControl1.DataSource = myDataTable
 
 {% tabs %}
 {% highlight c#%}
-//Binding the data table to the grid
-this.gridGroupingControl1.DataSource = myDataTable;
+//Add the GridGroupingControl to the form
+this.Controls.Add(this.gridGroupingControl1);
 {% endhighlight %}
 {% highlight vb %}
-'Binding the data table to the grid
-Me.gridGroupingControl1.DataSource = myDataTable
+'Add the GridGroupingControl to the form
+Me.Controls.Add(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
