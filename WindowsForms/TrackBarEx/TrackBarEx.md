@@ -59,19 +59,19 @@ Description</th></tr>
 <tr>
 <td>
 IncreaseButtonSize</td><td>
-Specifies the size of Increase button. Default value is (18, 18)</td></tr>
+Gets or sets the size of Increase button. Default value is (18, 18)</td></tr>
 <tr>
 <td>
 DecreaseButtonSize</td><td>
-Specifies the size of Decrease button. Default value is (18, 18)</td></tr>
+Gets or sets the size of Decrease button. Default value is (18, 18)</td></tr>
 <tr>
 <td>
 SliderSize</td><td>
-Specifies the size of the slider. Default value is (11, 14).</td></tr>
+Gets or sets the size of the slider. Default value is (11, 14).</td></tr>
 <tr>
 <td>
 ChannelHeight</td><td>
-Specifies the height of the channel. Default value is 4.</td></tr>
+Gets or sets height of the channel. Default value is 4.</td></tr>
 </table>
 
 ## Button Appearance
@@ -87,19 +87,19 @@ Description</th></tr>
 <tr>
 <td>
 ShowButton</td><td>
-Specifies whether to show the Increase and Decrease buttons.</td></tr>
+Gets or sets a value indicating whether to show the Increase and Decrease buttons.</td></tr>
 <tr>
 <td>
 ButtonColor</td><td>
-Sets the color for the buttons and the slider.</td></tr>
+Gets or sets the color for the Increase and Decrease buttons.</td></tr>
 <tr>
 <td>
 HighlightedButtonColor</td><td>
-Sets the color for the buttons and the slider, when they are highlighted.</td></tr>
+Gets or sets the color for the buttons, when they are highlighted.</td></tr>
 <tr>
 <td>
 PushedButtonEndColor</td><td>
-Sets the color of the buttons and the slider, when they are pushed.</td></tr>
+Gets or sets the color of the buttons, when they are pushed.</td></tr>
 </table>
 
 
@@ -221,27 +221,27 @@ Description</th></tr>
 <tr>
 <td>
 Minimum</td><td>
-Specifies the minimum value of the track bar. Default is 10.</td></tr>
+Gets or sets minimum value of TrackBarEx. Default is 10. </td></tr>
 <tr>
 <td>
 Maximum</td><td>
-Specifies the maximum value of the track bar. Default is 20.</td></tr>
+Gets or sets the maximum value of TrackBarEx. Default is 20. </td></tr>
 <tr>
 <td>
 Value</td><td>
-Specifies the value of the track bar position. i.e, slider position. Default is 5.</td></tr>
+Gets or sets value of TrackBarEx position i.e. slider position. Default is 5. </td></tr>
 <tr>
 <td>
 SmallChange</td><td>
-Specifies the small change of Track bar value. Default is 1. </td></tr>
+Gets or sets small change of TrackBarEx value while changing. Default is 1. </td></tr>
 <tr>
 <td>
 LargeChange</td><td>
-Specifies the large change of Track bar value. Default is 5.</td></tr>
+Gets or sets large change of TrackBarEx value while changing. Default is 5. </td></tr>
 <tr>
 <td>
 TimeInterval</td><td>
-Specifies the interval for the timer. Default is 100.</td></tr>
+Gets or sets interval for timer while increasing/decreasing the value using Increase/Decrease button. Default is 100. </td></tr>
 </table>
 
 
@@ -288,20 +288,21 @@ Description</th></tr>
 <tr>
 <td>
 LargeIncrease</td><td>
-Increases the value by large change specified in LargeChange property.</td></tr>
+Increases the value by large change specified in LargeChange property. </td></tr>
 <tr>
 <td>
 LargeDecrease</td><td>
-Decreases the value by large change specified in LargeChange property.</td></tr>
+Decreases the value by large change specified in LargeChange property. </td></tr>
 <tr>
 <td>
 SmallDecrease</td><td>
-Decreases the value by small change specified in SmallChange property.</td></tr>
+Decreases the value by small change specified in SmallChange property. </td></tr>
 <tr>
 <td>
 SmallIncrease</td><td>
-Increases the value by small change specified in SmallChange property.</td></tr>
+Increases the value by small change specified in SmallChange property. </td></tr>
 </table>
+
 
 ## TrackBarEx Event
 
