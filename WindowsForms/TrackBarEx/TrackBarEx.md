@@ -240,7 +240,7 @@ LargeChange</td><td>
 Gets or sets large change of TrackBarEx value while changing. Default is 5. </td></tr>
 <tr>
 <td>
-TimeInterval</td><td>
+TimerInterval</td><td>
 Gets or sets interval for timer while increasing/decreasing the value using Increase/Decrease button. Default is 100. </td></tr>
 </table>
 
