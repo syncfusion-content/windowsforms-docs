@@ -401,7 +401,7 @@ To achieve the above customization through code behind, follow the below steps.
  
  color.CloseButtonBackground = ColorTranslator.FromHtml("#e81123");
  
- // To set the combobox dropdwon color
+ // To set the combobox dropdown color
  
  color.DropDownBackColor = ColorTranslator.FromHtml("#ffffff");
 
@@ -415,7 +415,7 @@ To achieve the above customization through code behind, follow the below steps.
  
  color.TabGroupForeColor = Color.FromArgb(165, 185, 210);
 
- // Adds the color table instance to the Colortable
+ // Adds the color table instance to the ColorTable
  
  this.ribbonControlAdv1.Office2016ColorTable.Add(color);
 
@@ -631,7 +631,7 @@ To achieve the above customization through code behind, follow the below steps.
  
  color.CloseButtonBackground = ColorTranslator.FromHtml("#e81123")
  
- ' To set the combobox dropdwon color
+ ' To set the combobox dropdown color
  
  color.DropDownBackColor = ColorTranslator.FromHtml("#ffffff")
  
@@ -645,7 +645,7 @@ To achieve the above customization through code behind, follow the below steps.
  
  color.TabGroupForeColor = Color.FromArgb(165, 185, 210)
  
- ' Adds the color table instance to the Colortable
+ ' Adds the color table instance to the ColorTable
  
  Me.ribbonControlAdv1.Office2016ColorTable.Add(color)
 
