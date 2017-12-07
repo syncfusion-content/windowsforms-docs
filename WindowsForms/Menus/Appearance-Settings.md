@@ -1037,7 +1037,7 @@ This option helps to set the Black color scheme of Office2010 Theme.
 
 #####  Code Sample
 
-% tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
@@ -1067,7 +1067,7 @@ This option helps to set the silver color scheme of Office2010 Theme.
 
 #####  Code Sample
 
-% tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
@@ -1097,7 +1097,7 @@ This option helps to apply the custom colors to the MainFrameBarManager by setti
 
 #####  Code Sample
 
-% tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
@@ -1266,7 +1266,7 @@ Foreground and Background Settings
 Fore color, back color and the Font style can be set for the Customize Dialog using ForeColor, BackColor and Font properties respectively.
 
 
-{% highlight c# %}
+{% highlight C# %}
 
 //to change ForeColor
 
@@ -1286,8 +1286,9 @@ mainFrameBarManager1.CustomizationDialog.Font = new Font("Arial", 8, System.Draw
 
 
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -1307,7 +1308,7 @@ Me.mainFrameBarManager1.CustomizationDialog.BackColor = Color.PowderBlue
 
 mainFrameBarManager1.CustomizationDialog.Font = New Font("Arial", 8, System.Drawing.FontStyle.Bold) 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ![](Overview_images/Overview_img168.jpeg) 
 
@@ -1320,7 +1321,7 @@ Size and the client size of the Customize Dialog can be controlled using the Siz
 
 
 
-{% highlight c# %}
+{% highlight C# %}
 //to change the size of entire dialog
 
 this.mainFrameBarManager1.CustomizationDialog.Size = new Size(700, 800);
@@ -1330,8 +1331,8 @@ this.mainFrameBarManager1.CustomizationDialog.Size = new Size(700, 800);
 this.mainFrameBarManager1.CustomizationDialog.ClientSize = new Size(600, 700);
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+{% highlight VB %}
 
 
 
@@ -1342,7 +1343,7 @@ Me.mainFrameBarManager1.CustomizationDialog.Size = New Size(700, 800)
 'to change the client area 
 
 Me.mainFrameBarManager1.CustomizationDialog.ClientSize = New Size(600, 700)
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ## Multiline Support for ParentBarItem in MainFrameBarManager
@@ -1369,20 +1370,20 @@ Enables MultiLine in MainFrameBarManager</td></tr>
 
 The following code example illustrates how to set MultiLine property in C# and VB language.
 
-{% highlight c# %}
+{% highlight C# %}
 
   this.parentBarItem1.MultiLine = true;
 
 
 
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
+{% highlight VB %}
 
 
     Me.parentBarItem1.MultiLine = true
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 
@@ -1437,7 +1438,7 @@ The following code example shows how to set the vertical and horizontal text ali
 
 
 
-{% highlight c# %}
+{% highlight C# %}
 // To set Vertical text alignment.
 
 this.parentBarItem1.Orientation= Syncfusion.Windows.Forms.Tools.XPMenus.Orientation.Vertical;
@@ -1449,10 +1450,10 @@ this.parentBarItem1.Orientation= Syncfusion.Windows.Forms.Tools.XPMenus.Orientat
 this.parentBarItem1. Orientation=Syncfusion.Windows.Forms.Tools.XPMenus.Orientation.Vertical;
 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -1467,4 +1468,4 @@ Me.parentBarItem1. Orientation= Syncfusion.Windows.Forms.Tools.XPMenus. Orientat
 Me.parentBarItem1. Orientation= Syncfusion.Windows.Forms.Tools.XPMenus. Orientation.Vertical
 
 
-{% endhighlight  %}
+{% endhighlight %}
