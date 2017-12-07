@@ -1,23 +1,24 @@
 ---
 layout: post
-title: PivotAxis | Windows Forms | Syncfusion
-description: pivotaxis
+title: Pivot Axis | Windows Forms | Syncfusion
+description: pivot axis
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
-# PivotAxis
+# Pivot Axis
 
 Axis is used to locate a data point inside the chart area. Generally, two axes are required along each direction to locate a data point in the chart, i.e., horizontal and vertical. PivotCharts typically have two axes to measure and categorize data.
-    * Vertical axis (y-Axis).
-    * Horizontal axis (x-Axis). 
-    
+
+* Vertical axis (y-Axis).
+* Horizontal axis (x-Axis).
+
 By default, horizontal axis (PrimaryXAxis) and vertical axis (PrimaryYAxis) are added to the PivotChart with axis labels, grid lines and tick lines. You can also customize the axis explicitly by adding axis title or removing grid lines, tick lines that are added to the axis. The following screenshot displays the _PivotChart with Axis_
 
-![](PivotAxes_images/PivotAxes_image3.png)
+![](PivotAxis_images/PivotAxes_image3.png)
 
-### Axis Title
+## Axis Title
 
 PivotChart provides support to set custom title for axis. You can customize the axis by using the following properties.
 
@@ -40,7 +41,7 @@ TitleFont</td><td>
 Specifies the font style for axis title.</td></tr>
 </table>
 
-The following code snippet illustrates how to customize the title of both axes.
+The following code snippet illustrates how to customize the title of both the axes.
 
 {% tabs %}
 
@@ -61,20 +62,20 @@ this.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = new Font("Arial", 14);
 {% highlight vbnet %}
 
 'Sets custom title for x-axis.
-Me.pivotChart1.ChartControl.PrimaryXAxis.Title = "x-axis" 
-Me.pivotChart1.ChartControl.PrimaryXAxis.TitleColor = Color.Red 
+Me.pivotChart1.ChartControl.PrimaryXAxis.Title = "x-axis"
+Me.pivotChart1.ChartControl.PrimaryXAxis.TitleColor = Color.Red
 Me.pivotChart1.ChartControl.PrimaryXAxis.TitleFont = New Font("Arial", 14)
 
 'Sets custom title for y-axis.
-Me.pivotChart1.ChartControl.PrimaryYAxis.Title = "y-axis" 
-Me.pivotChart1.ChartControl.PrimaryYAxis.TitleColor = Color.Red 
+Me.pivotChart1.ChartControl.PrimaryYAxis.Title = "y-axis"
+Me.pivotChart1.ChartControl.PrimaryYAxis.TitleColor = Color.Red
 Me.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = New Font("Arial", 14)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](PivotAxes_images/PivotAxes_image1.png)
+![](PivotAxis_images/PivotAxes_image1.png)
 
 *PivotChart displays the axis with title*
 
@@ -147,7 +148,7 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 
 {% endtabs %}
 
-![](PivotAxes_images/PivotAxes_image2.png)
+![](PivotAxis_images/PivotAxes_image2.png)
 
 *PivotChart with customized style*
 
@@ -173,10 +174,10 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.IsVisible = False
 
 {% endtabs %}
 
-![](PivotAxes_images/PivotAxes_image4.png)
+![](PivotAxis_images/PivotAxes_image4.png)
 
 _PivotChart without axis_
 
-A sample demo is available at the following location:
-    
+A demo sample is available at the following location:
+
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Windows\PivotChart.Windows\Samples\Appearance\PivotChartStyles Demo
