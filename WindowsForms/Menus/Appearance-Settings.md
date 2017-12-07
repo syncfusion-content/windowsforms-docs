@@ -731,133 +731,533 @@ A sample which demonstrates setting colors for Menus using Office2007Colors clas
 
 ## Visual Styles
 
-The Visual appearance of the menus can be defined by using various Visual Styles and Themes.
+The MainFrameBarManager control for Windows Forms Supports for below listed Visual Styles. It can easily modify the look using the built-in visual styles.
 
-Themes define the look and feel of the whole menu and it also changes the behavior of the menu. Themes can be enabled by setting ThemesEnabled property of mainFrameBarManager to true.
+•	Default
 
-![](Overview_images/Overview_img156.jpeg) 
+•	Office2007
 
+•	Office2007Outlook
 
+•	Office2010
 
-![](Overview_images/Overview_img157.jpeg) 
+•	Metro
 
+•	Office2016Colorful
 
+•	Office2016DarkGray
 
-### Supported GUI styles
+•	Office2016Black
 
-The supported Visual styles are:
+•	Office2016White
 
-* Office 2003 look: This can enabled by setting Style to Office2003.
+**Default**
 
-![](Overview_images/Overview_img158.jpeg) 
+This option is used to set the Default theme.
 
+#####  Code Sample
 
+{% tabs %}
 
-* OfficeXP look: This can enabled by setting Style to OfficeXP.
+{% highlight C# %}
 
-![](Overview_images/Overview_img159.jpeg) 
+// Default
 
+this.MainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Default;
 
+{% endhighlight %}
 
-* VS2005 look: This can enabled by setting Style to VS2005.
+{% highlight VB %}
 
-![](Overview_images/Overview_img160.jpeg) 
+' Default
 
+Me.MainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Default
 
+{% endhighlight %}
 
-* Office 2007 look:This can enabled by setting Style to Office2007.
+{% endtabs %}
 
-![](Overview_images/Overview_img161.jpeg)
+![](Overview_images/Overview_img173.png) 
 
+**Office2007**
 
+This option helps to set the Office2007 theme.
 
-* Office 2007 Outlook:This can enabled by setting Style to Office2007Outlook.
+#####  Code Sample
 
-![](Overview_images/Overview_img162.jpeg) 
+{% tabs %}
 
+{% highlight C# %}
 
+// office2007
 
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
+{% endhighlight %}
 
-{% highlight c# %}
+{% highlight VB %}
 
-this.mainFrameBarManager1.Style = VisualStyle.Office2003;  
+' office2007
 
+Me.MainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.office2007
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
 
+{% endtabs %}
 
 
+![](Overview_images/Overview_img174.png) 
 
-Me.mainFrameBarManager1.Style = VisualStyle.Office2003
-{% endhighlight  %}
-Office 2007 Themes
+Office2007 Theme also allows to specify the different color schemes. They can be Blue, Silver, Black and Managed.
 
-You can also specify the color schemes for Office 2007 visual styles. They can be blue, silver and black.
+**Blue**
 
-N> The property ThemesEnabled must be set to true and the property Style must be set to either Office2007 or Office2007Outlook.
+This option helps to set the Blue color scheme of Office2007 Theme.
 
+#####  Code Sample
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
-this.mainFrameBarManager1.Style = VisualStyle.Office2007;     
+// Office2007Theme.Blue
 
-this.mainFrameBarManager1.Office2007Theme = Office2007ColorScheme.Blue;
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
-{% endhighlight  %}
-{% highlight vbnet %}
+this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Blue;
 
+{% endhighlight %}
 
+{% highlight VB %}
 
+' Office2007Theme.Blue
 
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
-Me.mainFrameBarManager1.Style = VisualStyle.Office2007
+Me.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
-Me.mainFrameBarManager1.Office2007Theme = Office2007ColorScheme.Blue
+{% endhighlight %}
 
-{% endhighlight  %}
+{% endtabs %}
 
-![](Overview_images/Overview_img164.jpeg) 
+![](Overview_images/Overview_img175.png) 
 
+**Black**
 
+This option helps to set the Black color scheme of Office2007 Theme.
 
-![](Overview_images/Overview_img165.jpeg) 
+#####  Code Sample
 
+{% tabs %}
 
+{% highlight C# %}
 
-![](Overview_images/Overview_img166.jpeg) 
+// Office2007Theme.Black
 
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
+this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
-### Custom Colors
+{% endhighlight %}
 
-We can also apply custom colors to the MainFrameBarManager by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+{% highlight VB %}
 
+'Office2007Theme.Black
 
-{% highlight c# %}
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
+Me.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img176.png) 
+
+**Silver**
+
+This option helps to set the silver color scheme of Office2007 Theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007ThemeSilver
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
+
+this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+‘ Office2007ThemeSilver
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
+
+Me.mainFrameBarManager1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img177.png) 
+
+**Managed**
+
+This option helps to apply the custom colors to the MainFrameBarManager by setting Office2007Theme to **Managed** and specifying the custom color through the ApplyManagedColors method as follows.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Managed
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
 this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
 
-Office2007Colors.ApplyManagedColors(this, Color.Crimson);
-
-{% endhighlight  %}
-{% highlight vbnet %}
+Office2007Colors.ApplyManagedColors(this, Color.Crimson);;
 
 
+{% endhighlight %}
 
+{% highlight VB %}
 
+'Managed
 
-Me.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+Me.mainFrameBarManager1.Style =Syncfusion.Windows.Forms.VisualStyle.Office2007
 
-Office2007Colors.ApplyManagedColors(Me, Color.Crimson)
-{% endhighlight  %}
+Me.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed
 
+Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Crimson)
 
-![](Overview_images/Overview_img167.jpeg)
+{% endhighlight %}
 
+{% endtabs %}
+
+![](Overview_images/Overview_img178.png) 
+
+**Office2007Outlook**
+
+This option helps to set the Office2007 Outlook theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Outlook2007
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Outlook2007
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img179.png) 
+
+**Office2010**
+
+This option helps to set the Office2010 theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2010
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010
+
+ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img180.png) 
+
+You can also specify the different color schemes for Office 2010 visual styles. They can be Blue, Silver, Black and managed.
+
+**Blue**
+
+This option helps to set the Blue color scheme of Office2010 Theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2010Theme.Blue
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Blue;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010Theme.Blue
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Blue
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img181.png) 
+
+**Black**
+
+This option helps to set the Black color scheme of Office2010 Theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+/// Office2010Theme.Black
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010Theme.Black
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.mainFrameBarManager1.Office2010Theme .= Syncfusion.Windows.Forms.Office2010Theme.Black
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img182.png) 
+
+**Silver**
+
+This option helps to set the silver color scheme of Office2010 Theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007ThemeSilver
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+' Office2007ThemeSilver
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img183.png) 
+
+**Managed**
+
+This option helps to apply the custom colors to the MainFrameBarManager by setting Office2010Theme to **Managed** and specifying the custom color through the ApplyManagedColors method as follows.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Managed
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed;
+Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Managed
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed
+Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img184.png)
+
+**Metro**
+
+This option helps to set the Metro theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Metro
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Metro
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img185.png)
+
+**Office2016Colorful**
+
+This option helps to set the Office2016Colorful theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// office2016Colorful
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+' office2016Colorful
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img186.png)
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// office2016DarkGray
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+' office2016DarkGray
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img187.png)
+
+**Office2016Black**
+
+This option helps to set the Office2016Black theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// office2016Black
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'office2016Black
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img188.png)
+
+**Office2016White**
+
+This option helps to set the Office2016White theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// office2016White
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+' office2016White
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016White
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img189.png)
 
 ## Customize Dialog Appearance
 
@@ -866,8 +1266,7 @@ Foreground and Background Settings
 Fore color, back color and the Font style can be set for the Customize Dialog using ForeColor, BackColor and Font properties respectively.
 
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 //to change ForeColor
 
@@ -887,8 +1286,9 @@ mainFrameBarManager1.CustomizationDialog.Font = new Font("Arial", 8, System.Draw
 
 
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -908,7 +1308,7 @@ Me.mainFrameBarManager1.CustomizationDialog.BackColor = Color.PowderBlue
 
 mainFrameBarManager1.CustomizationDialog.Font = New Font("Arial", 8, System.Drawing.FontStyle.Bold) 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ![](Overview_images/Overview_img168.jpeg) 
 
@@ -921,7 +1321,7 @@ Size and the client size of the Customize Dialog can be controlled using the Siz
 
 
 
-{% highlight c# %}
+{% highlight C# %}
 //to change the size of entire dialog
 
 this.mainFrameBarManager1.CustomizationDialog.Size = new Size(700, 800);
@@ -931,8 +1331,8 @@ this.mainFrameBarManager1.CustomizationDialog.Size = new Size(700, 800);
 this.mainFrameBarManager1.CustomizationDialog.ClientSize = new Size(600, 700);
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+{% highlight VB %}
 
 
 
@@ -943,7 +1343,7 @@ Me.mainFrameBarManager1.CustomizationDialog.Size = New Size(700, 800)
 'to change the client area 
 
 Me.mainFrameBarManager1.CustomizationDialog.ClientSize = New Size(600, 700)
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ## Multiline Support for ParentBarItem in MainFrameBarManager
@@ -970,20 +1370,20 @@ Enables MultiLine in MainFrameBarManager</td></tr>
 
 The following code example illustrates how to set MultiLine property in C# and VB language.
 
-{% highlight c# %}
+{% highlight C# %}
 
   this.parentBarItem1.MultiLine = true;
 
 
 
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
+{% highlight VB %}
 
 
     Me.parentBarItem1.MultiLine = true
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 
@@ -1038,7 +1438,7 @@ The following code example shows how to set the vertical and horizontal text ali
 
 
 
-{% highlight c# %}
+{% highlight C# %}
 // To set Vertical text alignment.
 
 this.parentBarItem1.Orientation= Syncfusion.Windows.Forms.Tools.XPMenus.Orientation.Vertical;
@@ -1050,10 +1450,10 @@ this.parentBarItem1.Orientation= Syncfusion.Windows.Forms.Tools.XPMenus.Orientat
 this.parentBarItem1. Orientation=Syncfusion.Windows.Forms.Tools.XPMenus.Orientation.Vertical;
 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -1068,4 +1468,4 @@ Me.parentBarItem1. Orientation= Syncfusion.Windows.Forms.Tools.XPMenus. Orientat
 Me.parentBarItem1. Orientation= Syncfusion.Windows.Forms.Tools.XPMenus. Orientation.Vertical
 
 
-{% endhighlight  %}
+{% endhighlight %}
