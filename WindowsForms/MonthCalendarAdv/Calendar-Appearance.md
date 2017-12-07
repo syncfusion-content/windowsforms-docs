@@ -183,7 +183,7 @@ this.monthCalendarAdv1.ThemedEnabledGrid = true;
 this.monthCalendarAdv1.ThemedEnabledScrollButtons = true;
 
 
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight vbnet %}
 
 
@@ -195,7 +195,7 @@ Me.monthCalendarAdv1.ThemedEnabledGrid = True
 
 Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ![](CalendarDateTime_images/Overview_img139.jpeg) 
 
@@ -250,7 +250,7 @@ This option helps to set the Default theme.
 
 this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Default;
 
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight VB %}
 
 'Default
@@ -277,7 +277,7 @@ This option helps to set the Office2007 theme.
 
 this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -327,6 +327,8 @@ Me. monthCalendarAdv1.Office2007Theme = Office2007Theme.Blue
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](CalendarDateTime_images/Overview_img215.jpeg) 
 
 **Black**
@@ -337,7 +339,7 @@ This option helps to set the Office2007 Black theme.
 
 {% tabs %}
 
-{% highlight C#}
+{% highlight C# %}
 
 // Office2007Black
 
@@ -435,7 +437,7 @@ This option helps to set the Office2007Outlook theme.
 
 this.monthCalendarAdv2.Style =  Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -511,6 +513,8 @@ Me. monthCalendarAdv1.Office2010Theme = Office2010Theme.Blue
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](CalendarDateTime_images/Overview_img220.jpeg) 
 
 **Black**
@@ -521,7 +525,7 @@ This option helps to set the Office2010 Black theme.
 
 {% tabs %}
 
-{% highlight C#}
+{% highlight C# %}
 
 // Office2010Black
 
@@ -608,7 +612,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
 
 This option helps to set the Metro theme.
  
- {% tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
