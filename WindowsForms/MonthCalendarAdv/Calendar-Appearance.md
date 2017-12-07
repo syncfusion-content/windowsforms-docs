@@ -106,7 +106,7 @@ Me.dateTimePickerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 'Sets SunkenInner 3D border style 
 
 Me.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner 
-{% endhighlight   %}
+{% endhighlight %}
 
 
 ![](CalendarDateTime_images/Overview_img209.png) 
@@ -203,9 +203,27 @@ Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
 
 ### Styles 
 
-MonthCalendarAdv supports the styles in the below table, which can be set through Style property.
+The MonthCalenderAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the built-in visual styles.
 
+The styles are built in for MonthCalenderAdv.
 
+•	Default
+
+•	Office2007
+
+•	Office2007Outlook
+
+•	Office2010
+
+•	Metro
+
+•	Office2016Colorful
+
+•	Office2016DarkGray
+
+•	Office2016Black
+
+•	Office2016White
 
 <table>
 <tr>
@@ -215,90 +233,532 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets or Sets the visual style of the MonthCalendarAdv. The options are {{ '_Default_' | markdownify }}{{ '_OfficeXP_' | markdownify }}{{ '_Office2003_' | markdownify }}{{ '_VS2005_' | markdownify }}{{ '_Office2007_' | markdownify }}The default value is 'Default'.</td></tr>
+Gets or Sets the visual style of the MonthCalendarAdv. The default value is 'Default'.</td></tr>
 </table>
 
+**Default**
 
+This option helps to set the Default theme.
 
+#####  Code Sample
 
+{% tabs %}
 
-{% highlight c# %}
-// Sample code for setting Office2003 style for MonthCalendarAdv
+{% highlight C# %}
 
-this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003;
-{% endhighlight  %}
-{% highlight vbnet %}
+//Default
 
-
-
-
-
-
-' Sample code for setting Office2003 style for MonthCalendarAdv
-
-Me.monthCalendarAdv1.Style  = Syncfusion.Windows.Forms.VisualStyle.Office2003
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Default;
 
 {% endhighlight  %}
+{% highlight VB %}
 
-![](CalendarDateTime_images/Overview_img140.jpeg) 
+'Default
 
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Default
 
+{% endhighlight %}
 
+{% endtabs %}
 
+![](CalendarDateTime_images/Overview_img213.jpeg) 
 
+**Office2007**
 
-{% highlight c# %}
+This option helps to set the Office2007 theme.
 
+#####  Code Sample
 
-//Sets the Color scheme as Silver when the style is Office2007
+{% tabs %}
 
-this.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+{% highlight C# %}
 
-{% endhighlight  %}
-{% highlight vbnet %}
+// Office2007
 
-
-
-
-
-'Sets the Color scheme as Silver when the style is Office2007
-
-Me.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
 {% endhighlight  %}
 
-![](CalendarDateTime_images/Overview_img141.jpeg)
+{% highlight VB %}
+
+'Office2007
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img214.jpg) 
+
+It also specifies the color schemes for Office 2007 visual styles. They can be Blue, Silver, Black and Managed.
+
+•	Blue
+
+•	Black
+
+•	Silver
+
+•	Managed
+
+**Blue**
+
+This option helps to set the Office2007 Blue theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007Blue
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
+this. monthCalendarAdv1.Office2007Theme = Office2007Theme.Blue;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Blue
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
+Me. monthCalendarAdv1.Office2007Theme = Office2007Theme.Blue
+
+{% endhighlight %}
+
+![](CalendarDateTime_images/Overview_img215.jpeg) 
+
+**Black**
+
+This option helps to set the Office2007 Black theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C#}
+
+// Office2007Black
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
+this. monthCalendarAdv1.Office2007Theme = Office2007Theme.Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Black
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
+Me. monthCalendarAdv1.Office2007Theme = Office2007Theme.Black
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img217.jpg) 
+
+**Silver**
+
+#####  Code Sample
+
+This option helps to set the Office2007 Silver theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007Silver
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
+this. monthCalendarAdv1.Office2007Theme = Office2007Theme.Silver;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Silver
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
+Me. monthCalendarAdv1.Office2007Theme = Office2007Theme.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img216.jpg) 
+
+**Managed**
+
+This option helps to apply the custom colors to the MonthCalendarAdv by setting Office2007Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Managed
+
+this.monthCalendarAdv2.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
+this.monthCalendarAdv2.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Red);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Managed
+Me.monthCalendarAdv2.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.monthCalendarAdv2.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed
+Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 
+{% endhighlight %}
 
-### Custom Colors
+{% endtabs %}
 
-We can also apply custom colors to the MonthCalendarAdv control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+![](CalendarDateTime_images/Overview_img218.jpeg) 
 
+**Office2007Outlook**
 
+This option helps to set the Office2007Outlook theme.
 
+#####  Code Sample
 
-{% highlight c# %}
-this.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+{% tabs %}
 
-Office2007Colors.ApplyManagedColors(this, Color.Orange);
+{% highlight C# %}
 
+// Office2007Outlook
+
+this.monthCalendarAdv2.Style =  Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook;
 
 {% endhighlight  %}
-{% highlight vbnet %}
+
+{% highlight VB %}
+
+'Office2007Outlook
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img229.jpeg) 
+
+**Office2010**
+
+This option helps to set the Office2010 theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2010
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img219.jpeg) 
+
+It also allows to specify the color schemes for Office 2010 visual styles. They can be blue, silver and black and managed
+
+•	Blue
+
+•	Black
+
+•	Silver
+
+•	Managed
+
+**Blue**
+
+This option helps to set the Office2010 Blue theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2010Blue
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this. monthCalendarAdv1.Office2010Theme = Office2010Theme.Blue;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010Blue
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me. monthCalendarAdv1.Office2010Theme = Office2010Theme.Blue
+
+{% endhighlight %}
+
+![](CalendarDateTime_images/Overview_img220.jpeg) 
+
+**Black**
+
+This option helps to set the Office2010 Black theme.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C#}
+
+// Office2010Black
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this. monthCalendarAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Black
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.monthCalendarAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Black
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img221.jpeg) 
 
 
+**Silver**
+
+#####  Code Sample
+
+This option helps to set the Office2010 Silver theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007Silver
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this.monthCalendarAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Silver
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.monthCalendarAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img222.jpeg) 
+
+**Managed**
+
+This option helps to apply the custom colors to the MonthCalendarAdv by setting Office2010Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Managed
+
+this.monthCalendarAdv2.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this.monthCalendarAdv2.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed;
+Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
 
-Me.monthCalendarAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed
+{% endhighlight %}
 
-Office2007Colors.ApplyManagedColors(Me, Color.Orange)
+{% highlight VB %}
 
-{% endhighlight  %}
+'Managed
+Me.monthCalendarAdv2.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.monthCalendarAdv2.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed
+Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
 
-![](CalendarDateTime_images/Overview_img142.jpeg) 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img223.jpeg)
+
+**Metro**
+
+This option helps to set the Metro theme.
+ 
+ {% tabs %}
+
+{% highlight C# %}
+
+// Metro
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Metro
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img224.jpeg)
+
+**Office2016Colorful**
+
+This option helps to set the Office2016Colorful theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// office2016Colorful
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'office2016Colorful
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img225.jpeg)
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray theme. theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016DarkGray
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray;
 
 
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016DarkGray
+
+Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img226.jpeg)
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray theme. theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Office2016DarkGray
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray;
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'office2016DarkGray
+
+Me. monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img226.jpeg)
+
+**Office2016Black**
+
+This option helps to set the Office2016Black theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// office2016Black
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+' office2016Black
+
+Me. monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img227.jpeg)
+
+**Office2016White**
+
+This option helps to set the Office2016White theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// office2016White
+
+this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+' office2016White
+
+Me. monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016White
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img228.jpeg)
 
 N> Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See [Scroll Buttons](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#scroll-buttons).
 
