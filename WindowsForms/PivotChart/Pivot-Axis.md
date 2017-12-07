@@ -16,7 +16,7 @@ Axis is used to locate a data point inside the chart area. Generally, two axes a
 
 By default, horizontal axis (PrimaryXAxis) and vertical axis (PrimaryYAxis) are added to the PivotChart with axis labels, grid lines and tick lines. You can also customize the axis explicitly by adding axis title or removing grid lines, tick lines that are added to the axis. The following screenshot displays the _PivotChart with Axis_
 
-![](PivotAxis_images/PivotAxes_image3.png)
+![](Pivot-Axis_images/PivotAxes_image3.png)
 
 ## Axis Title
 
@@ -75,7 +75,7 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = New Font("Arial", 14)
 
 {% endtabs %}
 
-![](PivotAxis_images/PivotAxes_image1.png)
+![](Pivot-Axis_images/PivotAxes_image1.png)
 
 *PivotChart displays the axis with title*
 
@@ -148,7 +148,7 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 
 {% endtabs %}
 
-![](PivotAxis_images/PivotAxes_image2.png)
+![](Pivot-Axis_images/PivotAxes_image2.png)
 
 *PivotChart with customized style*
 
@@ -174,7 +174,7 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.IsVisible = False
 
 {% endtabs %}
 
-![](PivotAxis_images/PivotAxes_image4.png)
+![](Pivot-Axis_images/PivotAxes_image4.png)
 
 _PivotChart without axis_
 
