@@ -251,7 +251,7 @@ This option helps to set the Default theme.
 this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Default;
 
 {% endhighlight %}
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Default
 
@@ -279,7 +279,7 @@ this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2007
 
@@ -318,7 +318,7 @@ this. monthCalendarAdv1.Office2007Theme = Office2007Theme.Blue;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2007Blue
 
@@ -348,7 +348,7 @@ this. monthCalendarAdv1.Office2007Theme = Office2007Theme.Black;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2007Black
 
@@ -378,7 +378,7 @@ this. monthCalendarAdv1.Office2007Theme = Office2007Theme.Silver;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2007Silver
 
@@ -409,7 +409,7 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Managed
 Me.monthCalendarAdv2.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
@@ -439,7 +439,7 @@ this.monthCalendarAdv2.Style =  Syncfusion.Windows.Forms.VisualStyle.Office2007O
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2007Outlook
 
@@ -465,7 +465,7 @@ this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2010
 
@@ -504,7 +504,7 @@ this. monthCalendarAdv1.Office2010Theme = Office2010Theme.Blue;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2010Blue
 
@@ -534,7 +534,7 @@ this. monthCalendarAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010The
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2007Black
 
@@ -564,7 +564,7 @@ this.monthCalendarAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Them
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2007Silver
 Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
@@ -595,7 +595,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Managed
 Me.monthCalendarAdv2.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
@@ -621,7 +621,7 @@ this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Metro
 Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
@@ -646,7 +646,7 @@ this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Co
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'office2016Colorful
 
@@ -673,7 +673,7 @@ this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Da
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2016DarkGray
 
@@ -700,7 +700,7 @@ this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Da
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'office2016DarkGray
 
@@ -726,7 +726,7 @@ this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Bl
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' office2016Black
 
@@ -752,7 +752,7 @@ this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Wh
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' office2016White
 
