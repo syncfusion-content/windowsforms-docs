@@ -767,7 +767,7 @@ this.MainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Default;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' Default
 
@@ -795,7 +795,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office200
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' office2007
 
@@ -828,7 +828,7 @@ this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' Office2007Theme.Blue
 
@@ -860,7 +860,7 @@ this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2007Theme.Black
 
@@ -892,7 +892,7 @@ this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ‘ Office2007ThemeSilver
 
@@ -927,7 +927,7 @@ Office2007Colors.ApplyManagedColors(this, Color.Crimson);;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Managed
 
@@ -959,7 +959,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office200
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Outlook2007
 
@@ -987,7 +987,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2010
 
@@ -1018,7 +1018,7 @@ this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010T
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2010Theme.Blue
 
@@ -1048,7 +1048,7 @@ this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010T
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Office2010Theme.Black
 
@@ -1078,7 +1078,7 @@ this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010T
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' Office2007ThemeSilver
 
@@ -1109,7 +1109,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Managed
 
@@ -1139,7 +1139,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'Metro
 
@@ -1167,7 +1167,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' office2016Colorful
 
@@ -1195,7 +1195,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' office2016DarkGray
 
@@ -1221,7 +1221,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 'office2016Black
 
@@ -1247,7 +1247,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 ' office2016White
 
@@ -1288,7 +1288,7 @@ mainFrameBarManager1.CustomizationDialog.Font = new Font("Arial", 8, System.Draw
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -1332,7 +1332,7 @@ this.mainFrameBarManager1.CustomizationDialog.ClientSize = new Size(600, 700);
 
 
 {% endhighlight %}
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
@@ -1378,7 +1378,7 @@ The following code example illustrates how to set MultiLine property in C# and V
 
 
 {% endhighlight %}
-{% highlight VB %}
+{% highlight vbnet %}
 
 
     Me.parentBarItem1.MultiLine = true
@@ -1453,7 +1453,7 @@ this.parentBarItem1. Orientation=Syncfusion.Windows.Forms.Tools.XPMenus.Orientat
 {% endhighlight %}
 
 
-{% highlight VB %}
+{% highlight vbnet %}
 
 
 
