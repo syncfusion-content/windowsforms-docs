@@ -88,7 +88,7 @@ This option helps to set the Office2007 theme.
 
 this.dateTimePickerAdv1.Style=Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vbnet %}
 
@@ -152,7 +152,7 @@ This option helps to set the Office2007 Black theme.
 
 {% tabs %}
 
-{% highlight C#}
+{% highlight C# %}
 
 // Office2007ThemeBlack
 
@@ -334,6 +334,8 @@ Me.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](DateTimePicker_images/Overview_img208.jpeg) 
 
 **Black**
@@ -344,7 +346,7 @@ This option helps to set the Office2010 Black theme.
 
 {% tabs %}
 
-{% highlight C#}
+{% highlight C# %}
 
 // Office2010Black
 
