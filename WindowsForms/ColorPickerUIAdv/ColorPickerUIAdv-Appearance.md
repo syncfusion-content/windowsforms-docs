@@ -37,16 +37,42 @@ Me.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 [Style Settings](#style-settings)
 {% endseealso %}
  
-
-
-
-
 ## Style Settings
 
-The appearance and behavior settings, available for the ColorPickerUIAdv are discussed in this section.
+The appearance and behavior settings, available for the ColorPickerUIAdv are discussed in this section. This control supports the below VisualStyles
+
+* Default
+* Office2007
+* Office2010
+* Metro
+* Office2016Colorful
+* Office2016White
+* Office2016Black
+* Office2016DarkGray
+
+The style can be applied using the Style property. The following code example allows you to set the style for the ColorPickerUIAdv.
+
+{% highlight c# %}
+
+//Sets the Office2016 colorful style for ColorPickerUIAdv
+
+this.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.visualstyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Sets the Office2016 colorful style for ColorPickerUIAdv
+
+Me.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.visualstyle.Office2016Colorful
+
+{% endhighlight %}
+
+![](ColorPickerUIAdv_Images/ColorPicker2016Style.jpeg)
+
+### Office2007 Color Schemes
 
 By default ColorPickerUIAdv control has Office2007 look and feel. 
-
 
 <table>
 <tr>
@@ -76,15 +102,7 @@ colorPickerUIAdv1.UseOffice2007Style = true;
 
 colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
-
-
-
-
-
-
 colorPickerUIAdv1.UseOffice2007Style = True
-
-
 
 'Sets Office2007 Black color Theme
 
@@ -98,9 +116,7 @@ Private colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 
 The Office2007 Visual Styles can be turned off by setting the UseOffice2007Style property to false.
 
-![](ColorPickerUIAdv_Images/Overview_img272.jpeg) 
-
-
+![](ColorPickerUIAdv_Images/Overview_img272.jpeg)
 
 ### Custom Colors
 
