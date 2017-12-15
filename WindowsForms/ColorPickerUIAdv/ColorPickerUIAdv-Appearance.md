@@ -39,6 +39,8 @@ Me.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
  
 ## Style Settings
 
+### Visual style
+
 The appearance and behavior settings, available for the ColorPickerUIAdv are discussed in this section. This control supports the below VisualStyles
 
 * Default
@@ -68,7 +70,7 @@ Me.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.vis
 
 {% endhighlight %}
 
-![](ColorPickerUIAdv_Images/ColorPicker2016Style.jpeg)
+![](ColorPickerUIAdv_Images/ColorPickerStyle.jpeg)
 
 ### Office2007 Color Schemes
 
