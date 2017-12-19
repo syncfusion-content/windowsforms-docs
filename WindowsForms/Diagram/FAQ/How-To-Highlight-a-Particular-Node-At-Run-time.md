@@ -15,11 +15,11 @@ A diagram node can be highlighted at run time using the mouse move actions. Usin
 
 {% highlight c# %}
 
-Node globalNode;
+Node m_globalNode;
 
-Polygon PolygonNode;
+Polygon m_polygonNode;
 
-Color defaultColor;
+Color m_defaultColor;
 
 private void diagram1_MouseMove(object sender, MouseEventArgs e)
 {
@@ -28,19 +28,19 @@ private void diagram1_MouseMove(object sender, MouseEventArgs e)
         // Retrieves node under the mouse action
         Node node1 = (Node)this.diagram1.Controller.GetNodeUnderMouse(new Point(e.X, e.Y));
 
-        if (PolygonNode == null && node1 != null && (node1.Name.ToString() != "TextNode"))
+        if (m_polygonNode == null && node1 != null && (node1.Name.ToString() != "TextNode"))
         {
             toolTip1.SetToolTip(this.diagram1, node1.Name);
             toolTip1.Active = true;
-            globalNode = node1;
-            PolygonNode = node1 as Polygon;
-            defaultColor = PolygonNode.FillStyle.Color;
+            m_globalNode = node1;
+            m_polygonNode = node1 as Polygon;
+            m_defaultColor = m_polygonNode.FillStyle.Color;
             this.timer1.Start();
         }
         else
         {
             this.toolTip1.Active = false;
-            globalNode = null;
+            m_globalNode = null;
         }
     }
 
@@ -55,7 +55,7 @@ private void timer1_Tick( object sender, EventArgs e )
 
     // Convert node as polygon
 
-    Polygon poly = globalNode as Polygon;
+    Polygon poly = m_globalNode as Polygon;
 
     Random r = new Random();
 
@@ -65,21 +65,21 @@ private void timer1_Tick( object sender, EventArgs e )
 
         poly.FillStyle.Color = Color.FromArgb(r.Next(255), r.Next(255), r.Next(255));
 
-        globalNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+        m_globalNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
 
-        globalNode.LineStyle.LineWidth = 3;
+        m_globalNode.LineStyle.LineWidth = 3;
     }
     else
     {   
         // Resetting the node with default values
 
-        PolygonNode.FillStyle.Color = defaultColor;
+        m_polygonNode.FillStyle.Color = m_defaultColor;
 
-        PolygonNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+        m_polygonNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid;
 
-        PolygonNode.LineStyle.LineWidth = 1;
+        m_polygonNode.LineStyle.LineWidth = 1;
 
-        PolygonNode = null;
+        m_polygonNode = null;
 
         this.timer1.Stop();
     }
