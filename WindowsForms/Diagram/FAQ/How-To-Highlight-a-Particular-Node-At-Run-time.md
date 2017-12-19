@@ -89,9 +89,9 @@ private void timer1_Tick( object sender, EventArgs e )
 
 {% highlight vbnet %}
 
-Private globalNode As Syncfusion.Windows.Forms.Diagram.Node
+Private m_globalNode As Syncfusion.Windows.Forms.Diagram.Node
 
-Private PolygonNode As Syncfusion.Windows.Forms.Diagram.Polygon
+Private m_polygonNode As Syncfusion.Windows.Forms.Diagram.Polygon
 
 Public WithEvents timer1 As Timer
 
@@ -101,16 +101,16 @@ Private Sub diagram1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs
 		' Retrieves node under the mouse action
 		Dim node1 As Node = CType(Me.diagram1.Controller.GetNodeUnderMouse(New Point(e.X, e.Y)), Node)
 
-		If PolygonNode Is Nothing AndAlso node1 IsNot Nothing AndAlso (node1.Name.ToString() <> "TextNode") Then
+		If m_polygonNode Is Nothing AndAlso node1 IsNot Nothing AndAlso (node1.Name.ToString() <> "TextNode") Then
 			toolTip1.SetToolTip(Me.diagram1, node1.Name)
 			toolTip1.Active = True
-			globalNode = node1
-			PolygonNode = TryCast(node1, Polygon)
-			defaultColor = PolygonNode.FillStyle.Color
+			m_globalNode = node1
+			m_polygonNode = TryCast(node1, Polygon)
+			m_defaultColor = m_polygonNode.FillStyle.Color
 			Me.timer1.Start()
 		Else
 			Me.toolTip1.Active = False
-			globalNode = Nothing
+			m_globalNode = Nothing
 		End If
 
 	Catch
@@ -123,7 +123,7 @@ Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles ti
 
     ' Convert node as polygon
 
-	Dim poly As Polygon = TryCast(globalNode, Polygon)
+	Dim poly As Polygon = TryCast(m_globalNode, Polygon)
 
 	Dim r As New Random()
 
@@ -132,19 +132,19 @@ Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles ti
 
 		poly.FillStyle.Color = Color.FromArgb(r.Next(255), r.Next(255), r.Next(255))
 
-		globalNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash
+		m_globalNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash
 
-		globalNode.LineStyle.LineWidth = 3
+		m_globalNode.LineStyle.LineWidth = 3
 	Else
 		' Resetting the node with default values
 
-		PolygonNode.FillStyle.Color = defaultColor
+		m_polygonNode.FillStyle.Color = m_defaultColor
 
-		PolygonNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
+		m_polygonNode.LineStyle.DashStyle = System.Drawing.Drawing2D.DashStyle.Solid
 
-		PolygonNode.LineStyle.LineWidth = 1
+		m_polygonNode.LineStyle.LineWidth = 1
 
-		PolygonNode = Nothing
+		m_polygonNode = Nothing
 
 		Me.timer1.Stop()
 	End If
