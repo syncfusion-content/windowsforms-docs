@@ -1,4 +1,4 @@
----
+source---
 layout: post
 title: How To Draw Custom Handles For Nodes Using the Cus | Diagram | Windows Forms | Syncfusion
 description: how to draw custom handles for nodes using the customhandlerenderer property
@@ -320,8 +320,3 @@ End Class
 
 Customized Appearance
 {:.captiontext }
-
-A sample which demonstrates this feature is available in the below sample installation location.
-
-..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Diagram.Windows\Samples\2.0\Getting Started\CustomSelectionHandle
-
