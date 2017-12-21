@@ -60,6 +60,8 @@ Inherits RibbonForm
 
 {% endtabs %}
 
+N> RibbonForm is specifically implemented to hold the RibbonControlAdv over it. So, it cannot be used separately without RibbonControlAdv. Use of standard Form as parent may cause inappropriate view to the BackStage. 
+
 ## Set Visual Styles
 
 RibbonControlAdv appearance can be enhanced by using the Style property of the Ribbon Control.
