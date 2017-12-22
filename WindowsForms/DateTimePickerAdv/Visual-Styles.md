@@ -346,7 +346,7 @@ This option helps to set the Office2010 Black theme.
 
 {% tabs %}
 
-{% highlight C#%}
+{% highlight C# %}
 
 // Office2010Black
 
