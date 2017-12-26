@@ -1154,7 +1154,8 @@ Next
 
 End Sub
 
-{% endhighlight}
+{% endhighlight %}
+
 {% endtabs %}
 
 ## TabsOrderChanged Event
