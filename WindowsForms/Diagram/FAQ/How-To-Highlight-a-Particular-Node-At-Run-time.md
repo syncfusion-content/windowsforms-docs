@@ -93,7 +93,7 @@ Private m_globalNode As Syncfusion.Windows.Forms.Diagram.Node
 
 Private m_polygonNode As Syncfusion.Windows.Forms.Diagram.Polygon
 
-Public WithEvents timer1 As Timer
+Private m_defaultColor As Color
 
 Private Sub diagram1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Diagram1.MouseMove
 
