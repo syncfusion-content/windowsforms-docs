@@ -82,6 +82,14 @@ TabPrimitiveClick Event</td><td>
 This event occurs before the NavigationButton click.</td></tr>
 <tr>
 <td>
+SelectedIndexChanging Event</td><td>
+This event occurs when the SelectedIndex of the TabControlAdv is changing.</td></tr>
+<tr>
+<td>
+SelectedIndexChanged Event</td><td>
+This event occurs when the SelectedIndex of the TabControlAdv is changed.</td></tr>
+<tr>
+<td>
 TabsOrderChanged Event</td><td>
 This event occurs when the order of the tabs is changed.</td></tr>
 <tr>
@@ -1057,6 +1065,96 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
+## SelectedIndexChanging Event
+
+
+SelectedIndexChanging event occurs while changing the SelectedIndex or SelectedTab of the TabControlAdv. Tab Selection can be restricted by setting args.Cancel to true. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+private void TabControlAdv1_SelectedIndexChanging(object sender, SelectedIndexChangingEventArgs args)
+
+{
+
+if(this.tabControlAdv1.TabPages[args.NewSelectedIndex].Text == "TabPageAdv 2")
+
+{
+
+args.Cancel = true;
+
+}
+
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Private Sub TabControlAdv1_SelectedIndexChanging(ByVal sender As Object, ByVal args As SelectedIndexChangingEventArgs)
+
+If Me.tabControlAdv1.TabPages(args.NewSelectedIndex).Text = "TabPageAdv 2" Then
+
+args.Cancel = True
+
+End If
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## SelectedIndexChanged Event
+
+SelectedIndexChanged event occurs when the SelectedIndex or SelectedTab of the TabControlAdv is changed. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+private void TabControlAdv1_SelectedIndexChanged(object sender, EventArgs e)
+
+{
+
+foreach (TabPageAdv item in this.tabControlAdv1.TabPages)
+
+{
+
+if (this.tabControlAdv1.SelectedTab == item)
+
+{ 
+
+Console.WriteLine("Selected Tab:" + item.Text);                    
+
+}               
+
+}
+
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Private Sub TabControlAdv1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+
+For Each item As TabPageAdv In Me.tabControlAdv1.TabPages
+
+If Me.tabControlAdv1.SelectedTab = item Then
+
+Console.WriteLine("Selected Tab:" & item.Text)
+
+End If
+
+Next
+
+End Sub
+
+{% endhighlight}
 {% endtabs %}
 
 ## TabsOrderChanged Event
