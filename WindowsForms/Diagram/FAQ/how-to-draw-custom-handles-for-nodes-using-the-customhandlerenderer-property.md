@@ -320,3 +320,8 @@ End Class
 
 Customized Appearance
 {:.captiontext }
+
+A sample which demonstrates this feature is available in the below sample installation location.
+
+..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Diagram.Windows\Samples\2.0\Getting Started\CustomSelectionHandle
+

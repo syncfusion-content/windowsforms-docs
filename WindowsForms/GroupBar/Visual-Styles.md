@@ -46,7 +46,7 @@ this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Default;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Default
 
@@ -75,7 +75,7 @@ this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2007
 
@@ -112,7 +112,7 @@ this. groupBar1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.Blue;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2007ThemeBlue
 
@@ -142,7 +142,7 @@ this.groupBar1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.Black;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2007ThemeBlack
 
@@ -172,7 +172,7 @@ this.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2007ThemeSilver
 
@@ -204,7 +204,7 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Managed
 Me.gbVisualStudio.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
@@ -233,7 +233,7 @@ This option helps to set the Office2010 theme.
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010; 
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2010
 
@@ -271,7 +271,7 @@ this.groupBar1.Office2010Theme =Syncfusion.Windows.Forms.Office2010Theme.Blue;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2010ThemeBlue
 
@@ -302,7 +302,7 @@ this.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Black;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2010ThemeBlack
 
@@ -331,7 +331,7 @@ this.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2010ThemeSilver
 
@@ -362,7 +362,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Managed
 
@@ -392,7 +392,7 @@ this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Metro
 
@@ -421,7 +421,7 @@ this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colo
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2016Colorful
 
@@ -449,7 +449,7 @@ this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Dark
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2016DarkGray
 
@@ -478,7 +478,7 @@ this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Blac
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2016Black
 
@@ -506,7 +506,7 @@ this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Whit
  
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2016White
 

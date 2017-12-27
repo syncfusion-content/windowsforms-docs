@@ -98,7 +98,6 @@ Vista Aero theme support is available for Ribbon Form when used in Vista machine
 
 ![](Ribbon-Form_images/Ribbon-Form_img5.jpeg)
 
-N> RibbonForm is specifically implemented to hold the RibbonControlAdv over it. So, it cannot be used separately without RibbonControlAdv. Use of standard Form as parent may cause inappropriate view to the BackStage. 
 
 ## Customization
 

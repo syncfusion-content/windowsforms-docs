@@ -72,3 +72,7 @@ Me.PrintPreview( )
 {% endhighlight %}
 
 {% endtabs %}
+
+A sample which demonstrates Printing is available in the below sample installation path.
+
+..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Diagram.Windows\Samples\2.0\Getting Started\Printing

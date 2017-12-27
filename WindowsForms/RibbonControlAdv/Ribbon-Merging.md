@@ -46,7 +46,7 @@ frm.Show()
 
 {% endtabs %}
 
-N> To use RibbonMerging feature, the Host form should inherit from RibbonForm otherwise form throws message "Use Form inherits from RibbonForm to use RibbonMerging feature" while merging. Also, the host form's `IsMDIContainer` property must be set as true and it should contain a RibbonControlAdv to get the ChildForm’s panels to be merged.
+N> The form's IsMDIContainer property must be set as true . Also the MDIParent Ribbon form should host a RibbonControlAdv to get the ChildForm's panels to be merged.
 
 ![](Ribbon-Merging_images/Ribbon-Merging_img2.jpeg)
 
