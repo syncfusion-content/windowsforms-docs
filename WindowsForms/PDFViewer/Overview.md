@@ -37,11 +37,11 @@ This section covers the requirements that are mandatory for using Syncfusion Ess
 <tr>
 <td>
  Development Environments</td><td>
-<ul><li> Visual Studio 2010 (Ultimate, Premium, Professional and Express)</li><li>Visual Studio 2008 (Team System, Professional, Standard & Express)</li><li> Visual Studio 2005 (Professional, Standard & Express)</li><li> Microsoft Expression Blend</li></ul><br></td></tr>
+<ul><li> Visual Studio 2017 (Community, Professional and Enterprise)</li><li> Visual Studio 2015 (Community, Professional and Enterprise)</li><li> Visual Studio 2013 (Ultimate, Premium, Professional and Express)</li><li> Visual Studio 2012 (Ultimate, Premium, Professional and Express)</li><li> Visual Studio 2010 (Ultimate, Premium, Professional and Express)</li><li>Visual Studio 2008 (Team System, Professional, Standard & Express)</li><li> Visual Studio 2005 (Professional, Standard & Express)</li><li> Microsoft Expression Blend</li></ul><br></td></tr>
 <tr>
 <td>
 .NET Framework versions</td><td>
-<ul><li> .NET Framework version 3.5 with Service Pack 1</li><li>  .NET Framework version 4.0</li><li> .NET Framework version 2.0</li></ul></td></tr>
+<ul><li>  .NET Framework version 4.6</li><li>  .NET Framework version 4.5.1</li><li>  .NET Framework version 4.5</li><li>  .NET Framework version 4.0</li><li> .NET Framework version 3.5 with Service Pack 1</li><li> .NET Framework version 3.5</li><li> .NET Framework version 2.0</li></ul></td></tr>
 </table>
 
 
@@ -52,7 +52,7 @@ This section covers the requirements that are mandatory for using Syncfusion Ess
 <tr>
 <td>
  Operating Systems</td><td>
-<ul><li>Windows Server 2008 (32 bit and 64 bit)</li><li> Windows Vista (32 bit and 64 bit)</li><li> Windows XP</li><li> Windows 2003</li><li> Windows 7 </li></ul></td></tr>
+<ul><li>Windows 10 (32 bit and 64 bit)</li><li>Windows 8.1 (32 bit and 64 bit)</li><li>Windows 8 (32 bit and 64 bit)</li><li>Windows Server 2013 (32 bit and 64 bit)</li><li>Windows Server 2012 (32 bit and 64 bit)</li><li>Windows Server 2008 (32 bit and 64 bit)</li><li> Windows Vista (32 bit and 64 bit)</li><li> Windows XP</li><li> Windows 2003</li><li> Windows 7 </li></ul></td></tr>
 </table>
 
 
