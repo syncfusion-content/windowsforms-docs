@@ -414,14 +414,16 @@ The following screenshot is a pictorial representation of PDF Viewer.
 
 
 1. File Open Dialog
-2. Show Print Dialog
-3. Go to first page
-4. Go to previous page
-5. Page Indicator
-6. Go to next page
-7. Go to last page
-8. Increase magnification
-9. Decrease magnification
+2. Bookmark 
+3. Save document
+4. Show Print Dialog
+5. Go to first page
+6. Go to previous page
+7. Page Indicator
+8. Go to next page
+9. Go to last page
 10. Preset magnification
-11. Fill window
-12. Fit page to window
+11. Decrease magnification
+12. Increase magnification
+13. Fill window
+14. Fit page to window
