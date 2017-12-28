@@ -15,8 +15,6 @@ Essential PDF Viewer can display PDF files, and print and export the pages as ra
 
 ### Properties
 
-
-
 <table>
 <tr>
 <th>
@@ -44,11 +42,7 @@ N/A</td><td>
 bool</td></tr>
 </table>
 
-
 ### Methods
-
-
-
 
 <table>
 <tr>
@@ -111,8 +105,6 @@ Void</td></tr>
 
 ### Events
 
-
-
 <table>
 <tr>
 <th>
@@ -146,13 +138,9 @@ A PDF can be loaded into the PDF Viewer either through the File Open dialog avai
 
 {%highlight c#%}
 
-
-
 //Initialize PDF Viewer.
 
 PdfViewerControl pdfViewer1 = new PdfViewerControl();
-
-
 
 //Load the PDF.
 
@@ -163,13 +151,9 @@ pdfViewer1.Load("Template.pdf");
 
 {%highlight vbnet%}
 
-
-
 'Initialize PDF Viewer.
 
 Private pdfViewer1 As New PdfViewerControl()
-
-
 
 'Load the PDF.
 
@@ -181,13 +165,9 @@ You can load an encrypted document by using the overload in the Load method.
 
 {%highlight c#%}
 
-
-
 //Initialize PDF Viewer.
 
 PdfViewerControl pdfViewer1 = new PdfViewerControl();
-
-
 
 //Load the PDF.
 
@@ -195,16 +175,11 @@ pdfViewer1.Load("Template.pdf", "password");
 
 {%endhighlight%}
 
-
 {%highlight vbnet%}
-
-
 
 'Initialize PDF Viewer.
 
 Private pdfViewer1 As New PdfViewerControl()
-
-
 
 'Load the PDF.
 
@@ -216,13 +191,7 @@ pdfViewer1.Load("Template.pdf", "password")
 
 PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon triggering the Print button.
 
-
-
 ![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
-
-
-
-
 
 ### Silent Printing
 
@@ -230,8 +199,6 @@ The PrintDocument property of PdfViewerControl returns System.Drawing.Printing.P
 
 {% tabs %}
 {%highlight c#%}
-
-
 
 PrintDialog dialog = new PrintDialog();
 
@@ -243,10 +210,7 @@ dialog.Document.Print();
 
 {%endhighlight%}
 
-
 {%highlight vbnet%}
-
-
 
 Dim dialog As New PrintDialog()
 
@@ -418,22 +382,15 @@ Essential PDF Viewer allows selected pages to be exported as raster images. Expo
 
 Bitmap image = pdfViewer1.ExportAsImage(0);
 
-
-
 // Save the image.
 
 image.Save("Sample.png", ImageFormat.Png);
 
 {%endhighlight%}
 
-
 {%highlight vbnet%}
 
-
-
 Dim image As Bitmap = pdfViewer1.ExportAsImage(0)
-
-
 
 'Save the image.
 
@@ -443,18 +400,13 @@ image.Save("Sample.png", ImageFormat.Png)
 
 You can also specify the page range instead of converting each page.
 
-
 {%highlight c#%}
-
 
 Bitmap[] image = pdfViewer1.ExportAsImage(0, 3);
 
 {%endhighlight%}
 
-
 {%highlight vbnet%}
-
-
 
 Dim image() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
 
@@ -464,14 +416,9 @@ Exporting pages of PDF document as vector images can be done using the ExportAsM
 
 {%endhighlight%}
 
-
 {%highlight c#%}
 
-
-
 Metafile image = pdfViewer1.ExportAsMetafile(0);
-
-
 
 // Save the image
 
@@ -479,14 +426,9 @@ image.Save("Sample.emf", ImageFormat.Emf);
 
 {%endhighlight%}
 
-
 {%highlight vbnet%}
 
-
-
 Dim image As Metafile = pdfViewer1.ExportAsMetafile(0)
-
-
 
 ' Save the image
 
@@ -498,15 +440,11 @@ You can also specify the page range instead of converting each page individually
 
 {%highlight c#%}
 
-
-
 Metafile[] image = pdfViewer1.ExportAsMetafile(0, 3);
 
 {%endhighlight%}
 
 {%highlight vbnet%}
-
-
 
 Dim image() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
@@ -518,44 +456,29 @@ Essential PDF Viewer allows end users to search and highlight the text in the PD
 
 ![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
 
-
-
-
-
-
-
 The PDF Viewer control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the PDF Viewer control.
 
-
 {%highlight c#%}
-
-
 
 bool IsMatchFound;
 
 pdfViewerControl1.Load("../../Data/Barcode.pdf");
 
-
-
 //Get the occurrences of the target text and location.
 
 Dictionary<int, List<RectangleF>> 
 
-          textSearch = new Dictionary<int, List<RectangleF>>();
+textSearch = new Dictionary<int, List<RectangleF>>();
 
 IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
 
 {%endhighlight%}
 
-
 {%highlight vbnet%}
-
 
 Dim IsMatchFound As Boolean
 
 pdfViewerControl1.Load("../../Data/Barcode.pdf")
-
-
 
 'Get the occurrences of the target text and location.
 
@@ -564,9 +487,6 @@ Dim textSearch As New Dictionary(Of Integer, List(Of RectangleF))()
 IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 
 {%endhighlight%}
-
-
-
 
 ## Annotation
  
