@@ -33,7 +33,7 @@ Dim process As New Syncfusion.Windows.Forms.Diagram.Rectangle(50, 325, 100, 70)
 
 'To disable label editing for node
 
-process.Labels.Add(New Syncfusion.Windows.Forms.Diagram.Label() With {.ReadOnly = True ,Text="process2"})
+process.Labels.Add(New Syncfusion.Windows.Forms.Diagram.Label() With {.ReadOnly = true ,Text="process2"})
 
 {% endhighlight %}
 

@@ -16,7 +16,7 @@ This method has two parameters: _int_ and _bool_
 * int specifies the vertex point in the local coordinates
 * bool specifies the path of the connector 
 
-Set the bool parameter to True to get the connector vertex point based on its graphical path and False to get the connector point based on its relative path.
+Set the bool parameter to true to get the connector vertex point based on its graphical path and false to get the connector point based on its relative path.
 
 The following code snippet illustrates this:
 
