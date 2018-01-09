@@ -9,7 +9,7 @@ documentation: ug
 
 # How To Move / Place the Nodes Outside the Diagram Model's Bounds
 
-Setting the model's BoundaryConstraintsEnabled property to 'False', will let you place the nodes outside the bounds of the diagram model.
+Setting the model's BoundaryConstraintsEnabled property to 'false', will let you place the nodes outside the bounds of the diagram model.
 
 {% tabs %}
 

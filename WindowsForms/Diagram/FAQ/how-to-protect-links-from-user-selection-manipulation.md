@@ -9,7 +9,7 @@ documentation: ug
 
 # How To Protect Links From User Selection / Manipulation
 
-You can protect links from user selection / manipulation by making use of the EditStyle class. By setting the Enabled property of the EditStyle class to _False_, you can disable the selection of a node link.
+You can protect links from user selection / manipulation by making use of the EditStyle class. By setting the Enabled property of the EditStyle class to _false_, you can disable the selection of a node link.
 
 
 {% tabs %}

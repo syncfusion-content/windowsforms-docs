@@ -31,31 +31,31 @@ Description</th></tr>
 <tr>
 <td>
 AllowChangeHeight </td><td>
-Specifies whether or not to allow the height to be changed. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the height to be changed. Default value is {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowChangeWidth </td><td>
-Specifies whether or not to allow the width to be changed. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the width to be changed. Default value is {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowDelete  </td><td>
-Specifies whether or not to allow the node to be deleted on clicking the DELETE key. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the node to be deleted on clicking the DELETE key. Default value is {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowMoveX</td><td>
-Specifies whether or not to allow the node to be moved along the x-axis. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the node to be moved along the x-axis. Default value is {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowMoveY</td><td>
-Specifies whether or not to allow the node to be moved along the y-axis. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to allow the node to be moved along the y-axis. Default value is {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowRotate</td><td>
-Specifies whether or not to rotate the node using the PinPoint. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to rotate the node using the PinPoint. Default value is {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowSelect</td><td>
-Specifies whether or not to select the node on mouse click. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to select the node on mouse click. Default value is {{ '_true_' | markdownify }}.</td></tr>
 </table>
 
 
@@ -127,19 +127,19 @@ Specifies the mode in which the node should be handled. The default value for li
 <tr>
 <td>
 Enabled</td><td>
-Specifies whether the node is enabled. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether the node is enabled. Default value is {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 AllowVertexEdit</td><td>
-Specifies whether or not to edit the vertex. Default value is {{ '_True_' | markdownify }}.</td></tr>
+Specifies whether or not to edit the vertex. Default value is {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 HidePinPoint</td><td>
-Specifies whether to show or hide the PinPoint. Default value is {{ '_False_' | markdownify }}.</td></tr>
+Specifies whether to show or hide the PinPoint. Default value is {{ '_false_' | markdownify }}.</td></tr>
 <tr>
 <td>
 HideRotationHandle</td><td>
-Specifies whether to show or hide the RotationHandle in order to control the rotation of the node. Default value is {{ '_False_' | markdownify }}.</td></tr>
+Specifies whether to show or hide the RotationHandle in order to control the rotation of the node. Default value is {{ '_false_' | markdownify }}.</td></tr>
 </table>
 
 
@@ -276,7 +276,7 @@ Custom ports can be defined at any position of the diagram node, thus allowing t
 
 
 
-N> When a link is drawn to a node or another link and when the EnableCentralPort is set to True, the links cannot be connected to the custom port. Hence make sure to disable that property for the links and the nodes to connect the links to the custom ports.
+N> When a link is drawn to a node or another link and when the EnableCentralPort is set to true, the links cannot be connected to the custom port. Hence make sure to disable that property for the links and the nodes to connect the links to the custom ports.
 
 <table>
 <tr>
@@ -286,7 +286,7 @@ Description</th></tr>
 <tr>
 <td>
 DrawPorts</td><td>
-Specifies whether creation of custom ports is enabled. Default value is True.</td></tr>
+Specifies whether creation of custom ports is enabled. Default value is true.</td></tr>
 </table>
 
 
@@ -905,7 +905,7 @@ Description</th></tr>
 <tr>
 <td>
 Enabled</td><td>
-Indicates whether the layer should be active or not. Default value is False.</td></tr>
+Indicates whether the layer should be active or not. Default value is false.</td></tr>
 <tr>
 <td>
 Name</td><td>
