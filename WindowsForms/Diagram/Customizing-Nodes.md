@@ -147,7 +147,7 @@ Me.diagram1.Model.LineRoutingEnabled = True
 
 'enabling for link object
 
-link.LineRoutingEnabled = True.Model.LineBridgeSize = 5
+link.LineRoutingEnabled = True
 
 {% endhighlight %}
 
