@@ -32,4 +32,4 @@ this.SfCalendar1.AllowMultipleSelection = True
 
 {% endtabs %} 
 
-![](Selecting-Multiples_images/MultiSelection.png)
+![](Selecting-Multiple-Dates_images/MultiSelection.png)

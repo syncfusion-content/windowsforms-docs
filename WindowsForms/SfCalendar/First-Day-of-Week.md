@@ -33,4 +33,4 @@ this.SfCalendar1.FirstDayOfWeek = DayOfWeek.Sunday
 
 {% endtabs %} 
 
-![](First-day-of-week_images/FirstDayOfWeek.png)
+![](First-Day-of-Week_images/FirstDayOfWeek.png)

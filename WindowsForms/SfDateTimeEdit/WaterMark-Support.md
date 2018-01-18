@@ -41,7 +41,7 @@ dateTimeEdit.Value = Nothing
 
 {% endtabs %} 
 
-![](Null-Value-Support_image/NullValue.png)
+![](WaterMark-Support_images/NullValue.png)
 
 ## Watermark
 
@@ -79,4 +79,4 @@ dateTimeEdit.WatermarkText = "Date is null"
 
 {% endtabs %} 
 
-![](WatermarkSupport_image/Watermark.png)
+![](WaterMark-Support_images/Watermark.png)

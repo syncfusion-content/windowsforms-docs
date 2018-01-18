@@ -148,7 +148,7 @@ private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
 
 {% endtabs %} 
 
-![](Customize-the-dates_images/CustomizeDates.png)
+![](Customization-of-Dates_images/CustomizeDates.png)
 
 # Special Dates 
 
@@ -279,4 +279,4 @@ private void InitializeComponent()
 
 {% endtabs %} 
 
-![](Customize-the-dates_images/SpecialDates.png)
+![](Customization-of-Dates_images/SpecialDates.png)
