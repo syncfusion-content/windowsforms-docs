@@ -197,8 +197,8 @@ This option helps to apply the custom colors to the GroupBar by setting Office20
 
 // Managed
 
-this.gbVisualStudio.VisualStyle =Syncfusion.Windows.Forms.VisualStyle.Office2007;
-this.gbVisualStudio.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+this.groubbarVisualStudio.VisualStyle =Syncfusion.Windows.Forms.VisualStyle.Office2007;
+this.groubbarVisualStudio.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
 Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 
@@ -207,8 +207,8 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Red);
 {% highlight VB %}
 
 ' Managed
-Me.gbVisualStudio.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
-Me.gbVisualStudio.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed
+Me.groubbarVisualStudio.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
+Me.groubbarVisualStudio.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed
 Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 
@@ -356,8 +356,8 @@ This option helps to apply the custom colors to the GroupBar by setting Office20
 
 //Managed
 
-this.gbVisualStudio.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010;
-this.gbVisualStudio.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed;
+this.groubbarVisualStudio.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010;
+this.groubbarVisualStudio.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed;
 Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight  %}
@@ -366,8 +366,8 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
 ' Managed
 
-Me.gbVisualStudio.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
-Me.gbVisualStudio.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed
+Me.groubbarVisualStudio.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
+Me.groubbarVisualStudio.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed
 Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endhighlight %}
