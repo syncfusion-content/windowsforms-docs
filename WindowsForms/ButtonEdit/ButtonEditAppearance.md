@@ -40,12 +40,28 @@ Description</th></tr>
 <td>
 ButtonStyle</td><td>
 Specifies the button style for the control. The styles are,
+
 Classic,
+
 Office2000,
+
 WindowsXP,
+
 OfficeXP,
-Office2003 and
-Office2007.</td></tr>
+
+Office2003,
+
+Office2007,
+
+Metro,
+
+Office2016Colorful,
+
+Office2016White,
+
+Office2016DarkGray and
+
+Office2016Black.</td></tr>
 <tr>
 <td>
 UseVisualStyle</td><td>
@@ -59,7 +75,7 @@ Specifies whether the visual styles can be applied using ButtonStyle property or
 
 this.buttonEdit3.UseVisualStyle = true;
 
-this.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Classic;
+this.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful;
 
 {%endhighlight%}
 
@@ -70,12 +86,11 @@ this.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Classic
 
 Me.buttonEdit3.UseVisualStyle = True
 
-Me.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Classic
+Me.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful
 
 {%endhighlight%}
 
-![](Overview_images/Overview_img86.jpeg)
-
+![](Overview_images/Office2016.jpeg)
 
 
 N> ButtonEdit control also supports all the three windows color themes, i.e., Blue, Silver and Oliver themes. We need to change the Windows theme color in desktop properties for this.
