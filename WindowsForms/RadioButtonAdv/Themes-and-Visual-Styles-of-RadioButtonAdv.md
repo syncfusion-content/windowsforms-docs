@@ -61,7 +61,17 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.{{ '_Default and_' | markdownify }} {{ '_Office2007._' | markdownify }}</td></tr>
+Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.
+
+* {{ '_Default_' | markdownify }}
+* {{ '_Office2007_' | markdownify }}
+* {{ '_Metro_' | markdownify }}
+* {{ '_Office2016Colorful_' | markdownify }}
+* {{ '_Office2016White_' | markdownify }}
+* {{ '_Office2016Black_' | markdownify }}
+* {{ '_Office2016DarkGray_' | markdownify }}
+
+</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
@@ -73,9 +83,7 @@ Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Ma
 
 
 
-this.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
-
-this.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue;
+this.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2016Colorful;
 
 {% endhighlight %}
 
@@ -83,15 +91,11 @@ this.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007
 
 
 
-Me.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007
-
-Me.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
+Me.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2016Colorful
 
 {% endhighlight %}
 
- ![](Overview_images/Overview_img644.jpeg)
-
- ![](Overview_images/Overview_img645.jpeg) 
+ ![](Overview_images/RadioButtonStyle.jpeg) 
 
 
 
@@ -123,8 +127,3 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 {% endhighlight %}
 
 ![](Overview_images/Overview_img646.jpeg) 
-
-
-A sample which demonstrates the Themes and Visual Styles of RadioButtonAdv is available in the below sample installation path.
-
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_

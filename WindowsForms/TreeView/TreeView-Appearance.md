@@ -559,3 +559,42 @@ Me.treeViewAdv1.Indent = 21
 
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img46.jpeg)
+
+## Visual Style
+
+VisualStyles provides rich and professional look and feel UI for the TreeViewAdv control. Some of the available VisualStyles are as follows:
+
+* Default
+* Office2007
+* Office2010
+* Metro
+* Office2016Colorful
+* Office2016White
+* Office2016Black
+* Office2016DarkGray
+
+
+The visual style can be applied for the TreeViewAdv using `Style` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Set the visual Style of the TreeViewAdv control.
+
+this.treeViewAdv1.Style = Syncfusion.Windows.Forms.Tools.TreeStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+'Set the visual Style of the TreeViewAdv control.
+
+Me.treeViewAdv1.Style = Syncfusion.Windows.Forms.Tools.TreeStyle.Office2016Colorful
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/Office2016Colorful.jpeg)
