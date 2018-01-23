@@ -247,20 +247,26 @@ The grid records can be programmatically navigate by using the [NavigationBar](h
 {% highlight c# %}
 //Moves the current record position to the first row 
 this.gridRecordNavigationControl1.NavigationBar.MoveFirst();
+
 //Moves the current record position to the last row 
 this.gridRecordNavigationControl1.NavigationBar.MoveLast();
+
 //Moves the current record position to the next row 
 this.gridRecordNavigationControl1.NavigationBar.MoveNext();
+
 //Moves the current record position to the previous row 
 this.gridRecordNavigationControl1.NavigationBar.MovePrevious();
 {% endhighlight %}
 {% highlight vb %}
 'Moves the current record position to the first row 
 Me.gridRecordNavigationControl1.NavigationBar.MoveFirst()
+
 'Moves the current record position to the last row 
 Me.gridRecordNavigationControl1.NavigationBar.MoveLast()
+
 'Moves the current record position to the next row 
 Me.gridRecordNavigationControl1.NavigationBar.MoveNext()
+
 'Moves the current record position to the previous row 
 Me.gridRecordNavigationControl1.NavigationBar.MovePrevious()
 {% endhighlight %}
