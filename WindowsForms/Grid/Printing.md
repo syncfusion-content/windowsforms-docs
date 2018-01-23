@@ -16,6 +16,7 @@ The GridControl has in-built support for printing. To print the contents of the 
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1);
 PrintDialog pd = new PrintDialog();
 pd.Document = gridPrintDocument;
+
 //Print the contents of the Grid
 gridPrintDocument.Print();
 {% endhighlight %}
@@ -24,6 +25,7 @@ gridPrintDocument.Print();
 Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1)
 Dim pd As New PrintDialog()
 pd.Document = gridPrintDocument
+
 'Print the contents of the Grid
 gridPrintDocument.Print()
 {% endhighlight %}
@@ -38,8 +40,10 @@ The [PrintPreviewDialog](https://msdn.microsoft.com/en-us/library/system.windows
 // Converting the grid to printable document
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
 PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+
 //Set the Grid contents to the print preview document
 printPreviewDialog.Document = gridPrintDocument;
+
 //Display the print preview dialog
 printPreviewDialog.ShowDialog();
 {% endhighlight %}
@@ -47,8 +51,10 @@ printPreviewDialog.ShowDialog();
 ' Converting the grid to printable document
 Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1, True)
 Dim printPreviewDialog As New PrintPreviewDialog()
+
 'Set the Grid contents to the print preview document
 printPreviewDialog.Document = gridPrintDocument
+
 'Display the print preview dialog
 printPreviewDialog.ShowDialog()
 {% endhighlight %}
@@ -65,7 +71,8 @@ void gridControl1_KeyDown(object sender, KeyEventArgs e)
 {
    if(e.Control && e.KeyCode== Keys.P)
    {
-       //Call the method used to print the grid.
+
+//Call the method used to print the grid.
        PrintGridControl();
    }
 }
@@ -108,9 +115,11 @@ All the columns of the grid can be printed with in a single page by enabling the
 //Create the Grid as printing document
 GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridControl1);
 PrintDialog pd = new PrintDialog();
+
 //Scale all columns to fit within a page
 gridPrintDocument.ScaleColumnsToFitPage = true;
 pd.Document = gridPrintDocument;
+
 //Print the contents of the Grid
 gridPrintDocument.Print();           
 {% endhighlight %}
@@ -118,9 +127,11 @@ gridPrintDocument.Print();
 'Create the Grid as printing document
 Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridControl1)
 Dim pd As New PrintDialog()
+
 'Scale all columns to fit within a page
 gridPrintDocument.ScaleColumnsToFitPage = True
 pd.Document = gridPrintDocument
+
 'Print the contents of the Grid
 gridPrintDocument.Print()
 {% endhighlight %}
@@ -133,8 +144,10 @@ The grid data will be fit to a single page or the minimal number of pages using 
 {% highlight c# %}
 //Create the grid document for print
 GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridControl1);
+
 //Used to print all columns to fit within a page
 gridPrintDocument.PrintColumnToFitPage = true;
+
 // Printing All the Contents into a Single Page
 gridPrintDocument.PagesToFit = 1;
 PrintDialog pd = new PrintDialog();
@@ -144,8 +157,10 @@ gridPrintDocument.Print();
 {% highlight vb %}
 'Create the grid document for print
 Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridControl1)
+
 'Used to print all columns to fit within a page
 gridPrintDocument.PrintColumnToFitPage = True
+
 ' Printing All the Contents into a Single Page
 gridPrintDocument.PagesToFit = 1
 Dim pd As New PrintDialog()
@@ -173,20 +188,24 @@ The orientation of the printing layout can be changed to landscape by setting [L
 {% highlight c# %}
 //Create the Grid as printing document
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1);
+
 //Print the page in landscape mode
 gridPrintDocument.DefaultPageSettings.Landscape = true;            
 PrintDialog pd = new PrintDialog();
 pd.Document = gridPrintDocument;
+
 //Print the contents of the Grid
 gridPrintDocument.Print(); 
 {% endhighlight %}
 {% highlight vb %}
 'Create the Grid as printing document
 Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1)
+
 'Print the page in landscape mode
 gridPrintDocument.DefaultPageSettings.Landscape = True
 Dim pd As New PrintDialog()
 pd.Document = gridPrintDocument
+
 'Print the contents of the Grid
 gridPrintDocument.Print()
 {% endhighlight %}
@@ -261,6 +280,7 @@ The grid can be print with the headers and footers by setting the [HeaderPrintSt
 GridPrintDocumentAdv gridPrintDocument = new GridPrintDocumentAdv(this.gridControl1);
 PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
 printPreviewDialog.Document = gridPrintDocument;
+
 //Setting the height for header and footer
 gridPrintDocument.HeaderHeight = 30;
 gridPrintDocument.FooterHeight = 30;
@@ -269,6 +289,7 @@ gridPrintDocument.FooterPrintStyleInfo.Text = "Time :" + DateTime.Now.TimeOfDay.
 gridPrintDocument.HeaderPrintStyleInfo.TextColor = Color.Orange;
 gridPrintDocument.HeaderPrintStyleInfo.Font.Bold = true;
 gridPrintDocument.HeaderPrintStyleInfo.Font.Size = 20;
+
 //Set the alignments 
 gridPrintDocument.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center;
 gridPrintDocument.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right;
@@ -279,6 +300,7 @@ printPreviewDialog.ShowDialog();
 Dim gridPrintDocument As New GridPrintDocumentAdv(Me.gridControl1)
 Dim printPreviewDialog As New PrintPreviewDialog()
 printPreviewDialog.Document = gridPrintDocument
+
 'Setting the height for header and footer
 gridPrintDocument.HeaderHeight = 30
 gridPrintDocument.FooterHeight = 30
@@ -287,6 +309,7 @@ gridPrintDocument.FooterPrintStyleInfo.Text = "Time :" & DateTime.Now.TimeOfDay.
 gridPrintDocument.HeaderPrintStyleInfo.TextColor = Color.Orange
 gridPrintDocument.HeaderPrintStyleInfo.Font.Bold = True
 gridPrintDocument.HeaderPrintStyleInfo.Font.Size = 20
+
 'Set the alignments 
 gridPrintDocument.HeaderPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Center
 gridPrintDocument.FooterPrintStyleInfo.HorizontalAlignment = GridHorizontalAlignment.Right
@@ -345,13 +368,14 @@ private void PageBreak_Click(object sender, EventArgs e)
 }
 private void Document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
 {
-    // set the row count need to be printed for each page
+
+// set the row count need to be printed for each page
     this.gridControl1.PrintInfo.m_awPageFirstRow = new ArrayList();
     this.gridControl1.PrintInfo.m_awPageFirstRow.Add(0);
     this.gridControl1.PrintInfo.m_awPageFirstRow.Add(30);
     this.gridControl1.PrintInfo.m_awPageFirstRow.Add(60);
 
-    // Set the starting column count for each page
+// Set the starting column count for each page
     this.gridControl1.PrintInfo.m_awPageFirstCol = new ArrayList();
     this.gridControl1.PrintInfo.m_awPageFirstCol.Add(0);
     this.gridControl1.PrintInfo.m_awPageFirstCol.Add(5);
@@ -366,13 +390,14 @@ Private Sub PageBreak_Click(ByVal sender As Object, ByVal e As EventArgs)
     dialog.ShowDialog()
 End Sub
 Private Sub Document_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs)
-    ' set the row count need to be printed for each page
+
+' set the row count need to be printed for each page
     Me.gridControl1.PrintInfo.m_awPageFirstRow = New ArrayList()
     Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(0)
     Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(30)
     Me.gridControl1.PrintInfo.m_awPageFirstRow.Add(60)
 
-    ' Set the starting column count for each page
+' Set the starting column count for each page
     Me.gridControl1.PrintInfo.m_awPageFirstCol = New ArrayList()
     Me.gridControl1.PrintInfo.m_awPageFirstCol.Add(0)
     Me.gridControl1.PrintInfo.m_awPageFirstCol.Add(5)
@@ -390,10 +415,12 @@ The cell styles can be changed dynamically on printing the grid by using [Printi
 this.gridControl1.QueryCellInfo += new GridQueryCellInfoEventHandler(gridControl1_QueryCellInfo);
 void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-   //Change the back color of the headers only when the grid is in printing mode.
+
+//Change the back color of the headers only when the grid is in printing mode.
    if(this.gridControl1.PrintingMode)
    {
-       //Column headers or Row headers
+ 
+ //Column headers or Row headers
        if(e.RowIndex == 0 || e.ColIndex ==0)
        {
            e.Style.BackColor = Color.Pink;
@@ -404,7 +431,8 @@ void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {% highlight vb %}
 AddHandler gridControl1.QueryCellInfo, AddressOf gridControl1_QueryCellInfo
 Private Sub gridControl1_QueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
-   'Change the back color of the headers only when the grid is in printing mode.
+
+'Change the back color of the headers only when the grid is in printing mode.
    If Me.gridControl1.PrintingMode Then
                  'Column headers or Row headers
        If e.RowIndex = 0 OrElse e.ColIndex =0 Then
@@ -443,12 +471,14 @@ The grid can be centered vertically while printing by setting the [CenterVertica
 {% highlight c# %}
 //Specifies if the grid should be centered vertically on printing.
 this.gridControl1.Properties.CenterVertical = true;
+
 //Specifies if the grid should be centered horizontally while printing.
 this.gridControl1.Properties.CenterHorizontal = true;
 {% endhighlight %}
 {% highlight vb %}
 'Specifies if the grid should be centered vertically on printing.
 Me.gridControl1.Properties.CenterVertical = True
+
 'Specifies if the grid should be centered horizontally while printing.
 Me.gridControl1.Properties.CenterHorizontal = True
 {% endhighlight %}
@@ -475,12 +505,14 @@ To hide some of the rows and columns while printing the grid, set the size of th
 {% highlight c# %}
 void gridControl1_QueryRowHeight(object sender, GridRowColSizeEventArgs e)
 {
-    //Apply the condition only on printing 
+
+//Apply the condition only on printing 
     if(this.gridControl1.PrintingMode)
     {
         if(e.Index==2 || e.Index ==3)
         {
-            //Set the row height value as zero while the Grid in printing mode
+
+//Set the row height value as zero while the Grid in printing mode
             e.Size = 0;
             e.Handled = true;
         }
@@ -488,7 +520,8 @@ void gridControl1_QueryRowHeight(object sender, GridRowColSizeEventArgs e)
 }
 void gridControl1_QueryColWidth(object sender, GridRowColSizeEventArgs e)
 {
-    //Apply the condition only on printing 
+
+//Apply the condition only on printing 
     if (this.gridControl1.PrintingMode)
     {
         if (e.Index == 3)
@@ -502,7 +535,8 @@ void gridControl1_QueryColWidth(object sender, GridRowColSizeEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Private Sub gridControl1_QueryRowHeight(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
-    'Apply the condition only on printing 
+
+'Apply the condition only on printing 
     If Me.gridControl1.PrintingMode Then
         If e.Index=2 OrElse e.Index =3 Then
             'Set the row height value as zero while the Grid in printing mode
@@ -512,7 +546,8 @@ Private Sub gridControl1_QueryRowHeight(ByVal sender As Object, ByVal e As GridR
     End If
 End Sub
 Private Sub gridControl1_QueryColWidth(ByVal sender As Object, ByVal e As GridRowColSizeEventArgs)
-    'Apply the condition only on printing 
+
+'Apply the condition only on printing 
     If Me.gridControl1.PrintingMode Then
         If e.Index = 3 Then
             'Set the Column width value as zero while the Grid in printing mode
@@ -529,11 +564,13 @@ To print only the selected range of cells from the grid, set the [PrintRange](ht
 {% tabs %}
 {% highlight c# %}
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
+
 //To print the selected range of cells
 gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection;
 {% endhighlight %}
 {% highlight vb %}
 Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1, True)
+
 'To print the selected range of cells
 gridPrintDocument.PrinterSettings.PrintRange = System.Drawing.Printing.PrintRange.Selection
 {% endhighlight %}
@@ -554,6 +591,7 @@ The needed pages in the grid can only be printed by setting the [PrintRange](htt
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
 PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
 printPreviewDialog.Document = gridPrintDocument;
+
 //To print the specific range of pages
 gridPrintDocument.PrinterSettings.FromPage = 2;
 gridPrintDocument.PrinterSettings.ToPage = 3;
@@ -564,6 +602,7 @@ printPreviewDialog.ShowDialog();
 Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1, True)
 Dim printPreviewDialog As New PrintPreviewDialog()
 printPreviewDialog.Document = gridPrintDocument
+
 'To print the specific range of pages
 gridPrintDocument.PrinterSettings.FromPage = 2
 gridPrintDocument.PrinterSettings.ToPage = 3
@@ -591,17 +630,17 @@ public class MyPrintDocument : GridPrintDocument
         base.OnPrintPage(e);
         _grid.PrintingMode = true;
 
-        //Gets Top Row Index.
+//Gets Top Row Index.
         int topRow = _grid.TopRowIndex;
         _grid.ViewLayout.Reset();
 
-        //Gets Bottom Row Index.
+//Gets Bottom Row Index.
         int botRow = this._grid.ViewLayout.LastVisibleRow
                         - (this._grid.ViewLayout.HasPartialVisibleRows ? 1 : 0);
 
         _grid.PrintingMode = false;
 
-        //Prints.
+//Prints.
         Console.WriteLine("OnPrintPage " + topRow.ToString() + "   " + botRow.ToString();
     }
 }
@@ -620,16 +659,16 @@ Public Class MyPrintDocument
         MyBase.OnPrintPage(e)
         _grid.PrintingMode = True
 
-        'Gets Top Row Index.
+'Gets Top Row Index.
         Dim topRow As Integer = _grid.TopRowIndex
         _grid.ViewLayout.Reset()
 
-        'Gets Bottom Row Index.
+'Gets Bottom Row Index.
         Dim botRow As Integer = Me._grid.ViewLayout.LastVisibleRow - (If(Me._grid.ViewLayout.HasPartialVisibleRows, 1, 0)
 
         _grid.PrintingMode = False
 
-        'Prints.
+'Prints.
         Console.WriteLine("OnPrintPage " & topRow.ToString() & "   " & botRow.ToString()
     End Sub
 End Class
