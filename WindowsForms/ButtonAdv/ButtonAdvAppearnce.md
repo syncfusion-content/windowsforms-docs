@@ -182,13 +182,13 @@ Gets or sets the metro color of the control.(Applicable for metro style only)</t
 
 {%highlight c#%}
 
-this.buttonAdv1.Apperance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful;
+this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful;
 
 {%endhighlight%}
 
 {%highlight vbnet%}
 
-Me.buttonAdv1.Apperance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful
+Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful
 
 {%endhighlight%}
 

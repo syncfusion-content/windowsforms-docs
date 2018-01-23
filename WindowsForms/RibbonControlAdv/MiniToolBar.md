@@ -230,7 +230,7 @@ Me.MiniToolBar.AssociatedControl = Me.richTextBox1
 
 * Right-click on the RichTextBox to view the MiniToolBar.
 
-##Visual Styel
+##Visual Style
 
 MiniToolbar supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
 
