@@ -25,11 +25,11 @@ The GridControl provides the support for navigating the cells using the mouse cl
 
 {% tabs %}
 {% highlight c# %}
-//Prevent cell navigation using mouse click
+//Prevent cell navigation using mouse click.
 this.gridControl1.ControllerOptions &= ~Syncfusion.Windows.Forms.Grid.GridControllerOptions.SelectCells & ~Syncfusion.Windows.Forms.Grid.GridControllerOptions.ClickCells;
 {% endhighlight %}
 {% highlight vb %}
-'Prevent cell navigation using mouse click
+'Prevent cell navigation using mouse click.
 Me.gridControl1.ControllerOptions = Me.gridControl1.ControllerOptions And (Not Syncfusion.Windows.Forms.Grid.GridControllerOptions.SelectCells) And Not Syncfusion.Windows.Forms.Grid.GridControllerOptions.ClickCells
 {% endhighlight %}
 {% endtabs %}
@@ -38,11 +38,12 @@ Me.gridControl1.ControllerOptions = Me.gridControl1.ControllerOptions And (Not S
 The selection will be cleared when perform the right click on the selected range of cells. It can be restricted from clearing the selection using the [SelectCellsMouseButtonsMask](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectCellsMouseButtonsMask.html) property. This will be used to display the context menu for performing the actions on the selected range of cells.
 {% tabs %}
 {% highlight c# %}
-//Restrict the clearing of selection using the mouse right click
+//Restrict the clearing of selection using the mouse right click.
 this.gridControl1.SelectCellsMouseButtonsMask = System.Windows.Forms.MouseButtons.Left;
 {% endhighlight %}
 {% highlight vb %}
-' Restrict the clearing of selection using the mouse right click Me.gridControl1.SelectCellsMouseButtonsMask = System.Windows.Forms.MouseButtons.Left
+' Restrict the clearing of selection using the mouse right click.
+Me.gridControl1.SelectCellsMouseButtonsMask = System.Windows.Forms.MouseButtons.Left
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,14 +55,14 @@ The current cell navigation can be restricted by canceling the [CurrentCellActiv
 this.gridControl1.CurrentCellActivating += new GridCurrentCellActivatingEventHandler(gridControl1_CurrentCellActivating);
 void gridControl1_CurrentCellActivating(object sender, Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventArgs e)
 {
-    //Cancel the activation of current cell
+    //Cancel the activation of current cell.
     e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridControl1.CurrentCellActivating += New GridCurrentCellActivatingEventHandler(AddressOf gridControl1_CurrentCellActivating)
 Private Sub gridControl1_CurrentCellActivating(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventArgs)
-	'Cancel the activation of current cell
+	'Cancel the activation of current cell.
 	e.Cancel = True
 End Sub
 {% endhighlight %}
@@ -72,17 +73,17 @@ The cell navigation using <kbd>TAB</kbd> key can be enabled in GridControl by se
 
 {% tabs %}
 {% highlight c# %}
-//Enable Cell Navigation using Tab Key
+//Enable Cell Navigation using Tab Key.
 this.gridControl.WantTabKey = true;
 
-//Disable Cell Navigation Using Tab Key
+//Disable Cell Navigation Using Tab Key.
 this.gridControl.WantTabKey = false;
 {% endhighlight %}
 {% highlight vb %}
-'Enable Cell Navigation using Tab Key
+'Enable Cell Navigation using Tab Key.
 Me.gridControl.WantTabKey = True
 
-'Disable Cell Navigation Using Tab Key
+'Disable Cell Navigation Using Tab Key.
 Me.gridControl.WantTabKey = False
 {% endhighlight %}
 {% endtabs %}
@@ -92,11 +93,11 @@ The [WantTabKeyInPreProcessMessage](http://help.syncfusion.com/cr/cref_files/win
 
 {% tabs %}
 {% highlight c# %}
-//set true for tab key move between cells right away and restrict to other controls use the tab behavior
+//set true for tab key move between cells right away and restrict to other controls use the tab behavior.
 this.gridControl.WantTabKeyInPreProcessMessage = true;
 {% endhighlight %}
 {% highlight vb %}
-' set true for tab key move between cells right away and restrict to other controls use the tab behavior
+' set true for tab key move between cells right away and restrict to other controls use the tab behavior.
 Me.gridControl.WantTabKeyInPreProcessMessage = True
 {% endhighlight %}
 {% endtabs %}
@@ -106,11 +107,11 @@ The [TabIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfu
 
 {% tabs %}
 {% highlight c# %}
-//The grid will get the focus at the 4th time of pressing the Tab key on the form
+//The grid will get the focus at the 4th time of pressing the Tab key on the form.
 this.gridControl.TabIndex = 4;
 {% endhighlight %}
 {% highlight vb %}
-'The grid will get the focus at the 4th time of pressing the Tab key on the form
+'The grid will get the focus at the 4th time of pressing the Tab key on the form.
 Me.gridControl.TabIndex = 4
 {% endhighlight %}
 {% endtabs %}
@@ -122,11 +123,11 @@ The focus for particular control using <kbd>TAB</kbd> key can be restricted by u
 
 {% tabs %}
 {% highlight c# %}
-//Set true to allow focus using TAB key, Set false to restrict the focus using TAB key,
+//Set true to allow focus using TAB key, Set false to restrict the focus using TAB key.
 this.gridControl.TabStop = false;
 {% endhighlight %}
 {% highlight vb %}
-'Set true to allow focus using TAB key, Set false to restrict the focus using TAB key,
+'Set true to allow focus using TAB key, Set false to restrict the focus using TAB key.
 Me.gridControl.TabStop = False
 {% endhighlight %}
 {% endtabs %}
@@ -136,12 +137,12 @@ When setting the [ActiveControl](https://msdn.microsoft.com/en-us/library/system
 
 {% tabs %}
 {% highlight c# %}
-//Setting the ActiveControl to GridControl
+//Setting the ActiveControl to GridControl.
 this.ActiveControl = this.gridControl1;
 this.gridControl1.WantTabKey = false;
 {% endhighlight %}
 {% highlight vb %}
-'Setting the ActiveControl to GridControl
+'Setting the ActiveControl to GridControl.
 Me.ActiveControl = Me.gridControl1
 Me.gridControl1.WantTabKey = False
 {% endhighlight %}
@@ -152,7 +153,7 @@ The grid can reset the cell contents or the cell selection using the <kbd>Escape
 
 {% tabs %}
 {% highlight c# %}
-'To avoid the Escape key.
+//To avoid the Escape key.
 this.gridControl.WantEscapeKey = false;
 {% endhighlight %}
 {% highlight vb %}
@@ -193,11 +194,11 @@ The navigation of cells using the <kbd>Enter</kbd> key can be handled using [Ent
 
 {% tabs %}
 {% highlight c# %}
-// cell focus moved to down direction
+// Cell focus moved to down direction.
 this.gridControl.EnterKeyBehavior = GridDirectionType.Down;
 {% endhighlight %}
 {% highlight vb %}
-' cell focus moved to down direction
+' Cell focus moved to down direction.
 Me.gridControl.EnterKeyBehavior = GridDirectionType.Down
 {% endhighlight %}
 {% endtabs %}
@@ -214,11 +215,11 @@ The [GridWrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms
 
 {% tabs %}
 {% highlight c# %}
-//focus was moved to first row and column, when focus at the last row and last column,
+//Focus was moved to first row and column, when focus at the last row and last column.
 this.gridControl.Model.Options.WrapCellBehavior = GridWrapCellBehavior.WrapGrid;
 {% endhighlight %}
 {% highlight vb %}
-' focus was moved to first row and column, when focus at the last row and last column,
+' Focus was moved to first row and column, when focus at the last row and last column.
 Me.gridControl.Model.Options.WrapCellBehavior = GridWrapCellBehavior.WrapGrid
 {% endhighlight %}
 {% endtabs %}
@@ -228,23 +229,29 @@ The cells navigation through arrow keys can be achieved programmatically by usin
 
 {% tabs %}
 {% highlight c# %}
-//Move the Current Cell to the Up direction
+//Move the Current Cell to the Up direction.
 this.gridControl1.CurrentCell.MoveUp();
-//Move the Current Cell to the down direction
+
+//Move the Current Cell to the down direction.
 this.gridControl1.CurrentCell.MoveDown();
-//Move current cell to the left
+
+//Move current cell to the left.
 this.gridControl1.CurrentCell.MoveLeft();
-//Move Current Cell to the right
+
+//Move Current Cell to the right.
 this.gridControl1.CurrentCell.MoveRight();
 {% endhighlight %}
 {% highlight vb %}
-'Move the Current Cell to the Up direction
+'Move the Current Cell to the Up direction.
 Me.gridControl1.CurrentCell.MoveUp()
-'Move the Current Cell to the down direction
+
+'Move the Current Cell to the down direction.
 Me.gridControl1.CurrentCell.MoveDown()
-'Move current cell to the left
+
+'Move current cell to the left.
 Me.gridControl1.CurrentCell.MoveLeft()
-'Move Current Cell to the right
+
+'Move Current Cell to the right.
 Me.gridControl1.CurrentCell.MoveRight()
 {% endhighlight %}
 {% endtabs %}
@@ -254,11 +261,11 @@ The current cell can be moved to particular cell by using [MoveTo](http://help.s
 
 {% tabs %}
 {% highlight c# %}
-//Move the current cell to specific cell
+//Move the current cell to specific cell.
 this.gridControl1.CurrentCell.MoveTo(GridRangeInfo.Cell(2, 2));
 {% endhighlight %}
 {% highlight vb %}
-'Move the current cell to specific cell
+'Move the current cell to specific cell.
 Me.gridControl1.CurrentCell.MoveTo(GridRangeInfo.Cell(2, 2))
 {% endhighlight %}
 {% endtabs %}
@@ -270,11 +277,11 @@ The current cell can be moved to the specific direction without selecting any ce
 
 {% tabs %}
 {% highlight c# %}
-// Used to move the current cell to the specific direction without selection 
+// Used to move the current cell to the specific direction without selection. 
 this.gridControl1.CurrentCell.InternalMove(GridDirectionType.Right, 4, GridSetCurrentCellOptions.ScrollInView);
 {% endhighlight %}
 {% highlight vb %}
-' Used to move the current cell to the specific direction without selection 
+' Used to move the current cell to the specific direction without selection. 
 Me.gridControl1.CurrentCell.InternalMove(GridDirectionType.Right, 4, GridSetCurrentCellOptions.ScrollInView)
 {% endhighlight %}
 {% endtabs %}
