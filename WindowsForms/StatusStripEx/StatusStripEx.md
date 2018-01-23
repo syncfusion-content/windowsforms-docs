@@ -216,6 +216,26 @@ Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx
 ![](StatusStripEx_images/StatusStripEx_img9.jpeg)
 
 
+### Visual Style
+
+StatusStripEx control supports Office2016 Visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+
+//Sample code for setting "Office2016 Colorful" style for StatusStripEx
+
+{% highlight c# %}
+
+this.statusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.statusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+![](StatusStripEx_images/StatusStripEx_img11.png)
+
 
 ### Custom Colors
 

@@ -125,7 +125,25 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 ![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img4.png)
 
+## Office2016 Theme
 
+NumericUpDownExt control supports Office2016 Visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+
+//Sample code for setting "Office2016 Colorful" style for NumericUpDownExt
+
+{% highlight c# %}
+
+this.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+![](Appearance-Settings_images/Appearance-Settings_img4.png)
 
 N> The ThemesEnabled property should be set to 'True' for the above settings to take effect.
 
