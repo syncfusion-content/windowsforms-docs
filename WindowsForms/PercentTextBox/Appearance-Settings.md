@@ -203,6 +203,10 @@ ShouldSerializeZeroColor</td><td>
 Serializes the ZeroColor property.</td></tr>
 </table>
 
+## Visual Style
+
+Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for PercentTextBox.
+
 
 A sample which demonstrates the Foreground Settings of PercentTextBox control is available in the below sample installation path.
 

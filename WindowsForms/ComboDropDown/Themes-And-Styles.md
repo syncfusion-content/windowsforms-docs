@@ -24,7 +24,7 @@ Specifies whether the control will ignore the theme's background color and draw 
 <tr>
 <td>
 Style</td><td>
-Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,<ul><li>{{ 'Default,' | markdownify }}</li><li>{{ 'OfficeXP,' | markdownify }}</li><li>{{ 'Office2003,' | markdownify }}</li><li>{{ 'VS2005 and' | markdownify }}</li><li>{{ 'Office2007.' | markdownify }}</li></ul></td></tr>
+Specifies advanced appearance and behavior of the ComboDropDown. The default value is 'Default'. The options are,<ul><li>{{ 'Office2016Colorful,' | markdownify }}</li><li>{{ 'Office2016White,' | markdownify }}</li><li>{{ 'Office2016DarkGray,' | markdownify }}</li><li>{{ 'Office2016Black,' | markdownify }}</li><li>{{ 'Metro,' | markdownify }}</li><li>{{ 'Office2010,' | markdownify }}</li><li>{{ 'Office2007.' | markdownify }}</li><li>{{ 'OfficeXP,' | markdownify }}</li><li>{{ 'Office2003,' | markdownify }}</li><li>{{ 'VS2005 and' | markdownify }}</li><li>{{ 'Default,' | markdownify }}</li></ul></td></tr>
 </table>
 
 
@@ -34,57 +34,19 @@ Specifies advanced appearance and behavior of the ComboDropDown. The default val
 
 this.comboDropDown1.IgnoreThemeBackground = true;
 
+//To set Office2016Colorful Visual Style
 
-
-//To set Default Visual Style
-
-this.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Default;
-
-//To set Office2003 Visual Style
-
-this.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003;
-
-//To set OfficeXP Visual Style
-
-this.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP;
-
-//To set VS2005 Visual Style
-
-this.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2005;
-
-//To set Office2007 Visual Style
-
-this.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;          
+this.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-
-
 Me.comboDropDown1.IgnoreThemeBackground = True
 
+'To set Office2016Colorful Visual Style
 
-
-'To set Default Visual Style
-
-Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Default
-
-'To set Office2003 Visual Style
-
-Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003
-
-'To set OfficeXP Visual Style
-
-Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
-
-'To set VS2005 Visual Style
-
-Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2005
-
-'To set Office2007 Visual Style
-
-Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
+Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
 
 {% endhighlight %}
 

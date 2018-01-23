@@ -152,3 +152,6 @@ Me.currencyTextBox1.ZeroColor = System.Drawing.Color.DarkOrange
 
 ![](Overview_images/Overview_img503.png) 
 
+## Visual Style
+
+Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for CurrencyTextBox.
