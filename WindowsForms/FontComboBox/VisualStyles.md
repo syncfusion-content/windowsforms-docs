@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual Styles
 
-The Office2007 visual style for the FontComboBox control can be enabled through below properties.
+Visual Styles for the FontComboBox control can be enabled through below properties.
 
 <table>
 <tr>
@@ -19,20 +19,17 @@ Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Sets the visual style for the control. The options are,Default (default value) andOffice2007.</td></tr>
+Sets the visual style for the control. The options are Office2016Colorful, Office2016White, Office2016Black, Office2016DarkGray, Metro, Office2010, Office2007, Default.</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Specifies the office color schemes. The color schemes are,Blue,Silver and Black.</td></tr>
+Specifies the office color schemes for Office2007 style. The color schemes are,Blue,Silver and Black.</td></tr>
 </table>
 
 {%highlight c#%}
 
 
-
-this.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2007;
-
-this.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+this.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2016Colorful;
 
 {%endhighlight%}
 
@@ -42,13 +39,11 @@ this.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007The
 
 
 
-Me.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2007
-
-Me.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Silver
+Me.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2016Colorful
 
 {%endhighlight%}
 
-![](Overview_images/Overview_img586.jpeg) 
+![](Overview_images/Overview_img582.jpeg) 
 
 
 
