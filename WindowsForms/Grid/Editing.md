@@ -113,18 +113,18 @@ To enable/disable the editing for the entire GridControl, make use of the [ReadO
 
 {% tabs %}
 {% highlight c# %}
-//Enabling Readonly for whole Grid
+//Enabling Readonly for whole Grid.
 this.gridControl1.ReadOnly = true;
 
-//Disabling Readonly for whole Grid
+//Disabling Readonly for whole Grid.
 this.gridControl1.ReadOnly = false;
 {% endhighlight %}
 
 {% highlight vb %}
-'Enabling Readonly for whole Grid
+'Enabling Readonly for whole Grid.
 Me.gridControl1.ReadOnly = True
 
-'Disabling Readonly for whole Grid
+'Disabling Readonly for whole Grid.
 Me.gridControl1.ReadOnly = False
 {% endhighlight %}
 {% endtabs %}
@@ -135,18 +135,18 @@ For preventing the editing in cell by cell basis, make use of the [GridStyleInfo
 
 {% tabs %}
 {% highlight c# %}
-//Enabling Readonly for particular cell in Grid
+//Enabling Readonly for particular cell in Grid.
 this.gridControl1[2, 2].ReadOnly = true;
 
-//Disabling Readonly for particular cell in Grid
+//Disabling Readonly for particular cell in Grid.
 this.gridControl1[2, 2].ReadOnly = false;
 {% endhighlight %}
 
 {% highlight vb %}
-'Enabling Readonly for particular cell in Grid
+'Enabling Readonly for particular cell in Grid.
 Me.gridControl1(2, 2).ReadOnly = True
 
-'Disabling Readonly for particular cell in Grid
+'Disabling Readonly for particular cell in Grid.
 Me.gridControl1(2, 2).ReadOnly = False
 {% endhighlight %}
 {% endtabs %}
@@ -195,12 +195,12 @@ Me.gridControl1.IgnoreReadOnly = False
 
 {% tabs %}
 {% highlight c# %}
-//Disabling Readonly for particular cell in Grid
+//Disabling Readonly for particular cell in Grid.
 this.gridControl1.BrowseOnly = true;
 {% endhighlight %}
 
 {% highlight vb %}
-'Disabling Readonly for particular cell in Grid
+'Disabling Readonly for particular cell in Grid.
 Me.gridControl1.BrowseOnly = True
 {% endhighlight %}
 {% endtabs %}
@@ -216,33 +216,24 @@ It is possible to prevent a particular cell or range of cells by using the [Curr
 this.gridControl1.CurrentCellEditingComplete += new EventHandler(gridControl1_CurrentCellEditingComplete);
 
 void gridControl1_CurrentCellStartEditing(object sender, CancelEventArgs e)
-
 {
-
 GridCurrentCell currentCell = this.gridControl1.CurrentCell;
 
 // Editing for the rows in-between 2 and 6 will be canceled.
 if (currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)))
-
 e.Cancel = true;
-
 }
 {% endhighlight %}
 
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellEditingComplete, AddressOf gridControl1_CurrentCellEditingComplete
-
 Private Sub gridControl1_CurrentCellStartEditing(ByVal sender As Object, ByVal e As CancelEventArgs)
-
 Dim currentCell As GridCurrentCell = Me.gridControl1.CurrentCell
 
 'Editing for the rows in-between 2 and 6 will be canceled.
 If currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)) Then
-
 e.Cancel = True
-
 End If
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -258,21 +249,17 @@ The [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsform
 this.gridControl1.CurrentCellActivating+=gridControl1_CurrentCellActivating;
 
 void gridControl1_CurrentCellActivating(object sender, GridCurrentCellActivatingEventArgs e)
-
 {    
 
 // Desired code can be added.
-
 }
 {% endhighlight %}
 
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellActivating, AddressOf gridControl1_CurrentCellActivating
-
 Private Sub gridControl1_CurrentCellActivating(ByVal sender As Object, ByVal e As GridCurrentCellActivatingEventArgs)
 
-'Desired Code can be added
-
+'Desired Code can be added.
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -287,11 +274,9 @@ this.gridControl1.CurrentCellActivated+=gridControl1_CurrentCellActivated;
 
 // Will be fired when current cell is activated.
 void gridControl1_CurrentCellActivated(object sender, EventArgs e)
-
 {    
 
 // Desired code can be added. 
-
 }
 {% endhighlight %}
 
@@ -316,20 +301,19 @@ The [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsfo
 this.gridControl1.CurrentCellStartEditing += new CancelEventHandler(gridControl1_CurrentCellStartEditing);
 
 void gridControl1_CurrentCellStartEditing(object sender, CancelEventArgs e)
-
 {
 
 // Cancels the Editing.
 e.Cancel = true;
-
+    
 }
 {% endhighlight %}
 
 
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellStartEditing, AddressOf gridControl1_CurrentCellStartEditing 
-
 Private Sub gridControl1_CurrentCellStartEditing(ByVal sender As Object, ByVal e As CancelEventArgs)
+
 'Cancels the Editing.
  e.Cancel = True
 End Sub
@@ -348,31 +332,24 @@ this.gridControl1.CurrentCellChanging += new CancelEventHandler(gridControl1_Cur
 this.gridControl1.CurrentCellChanged += new EventHandler(gridControl1_CurrentCellChanged);
 
 void gridControl1_CurrentCellChanging(object sender, CancelEventArgs e)
-
 {
 
 // Desired Code can be added.
-
 }
 
 void gridControl1_CurrentCellChanged(object sender, EventArgs e)
-
 {
 
 // Desired Code can be added.
-
 }
 {% endhighlight %}
 
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellChanged , AddressOf gridControl1_CurrentCellChanged
-
 AddHandler gridControl1.CurrentCellChanging, AddressOf gridControl1_CurrentCellChanging
-
 Private Sub gridControl1_CurrentCellChanging(ByVal sender As Object, ByVal e As CancelEventArgs)
 
 'Desired Code can be added.
-
 End Sub
 
 Private Sub gridControl1_CurrentCellChanged(ByVal sender As Object, ByVal e As EventArgs)
@@ -392,21 +369,17 @@ After all the changes done in the current cell and editing mode is completed for
 this.gridControl1.CurrentCellEditingComplete += new EventHandler(gridControl1_CurrentCellEditingComplete);
 
 void gridControl1_CurrentCellEditingComplete(object sender, EventArgs e)
-
 {
 
 // Desired Code can be added.
-
 }
 {% endhighlight %}
 
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellEditingComplete, AddressOf gridControl1_CurrentCellEditingComplete
-
 Private Sub gridControl1_CurrentCellEditingComplete(ByVal sender As Object, ByVal e As EventArgs)
 
 'Desired Code can be added.
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -430,44 +403,32 @@ textBoxCellRenderer.TextBox.KeyUp += TextBox_KeyUp;
 textBoxCellRenderer.TextBox.MouseDown += TextBox_MouseDown;
 
 void TextBox_MouseDown(object sender, MouseEventArgs e)
-
 {
-
 Console.WriteLine("textBox_MouseDown");
-
 }
 
 void TextBox_KeyUp(object sender, KeyEventArgs e)
-
 {
-
 Console.WriteLine("textBox_KeyUp");
-
 }
-
-
-
 {% endhighlight %}
 
 {% highlight vb %}
+
 'Creates TextBoxCellRenderer object.
 Dim textBoxCellRenderer As GridTextBoxCellRenderer = CType(Me.gridControl1.CellRenderers("TextBox"), GridTextBoxCellRenderer)
 
+
 'Invokes the Events of the TextBox renderer.
 AddHandler textBoxCellRenderer.TextBox.KeyUp, AddressOf TextBox_KeyUp
-
 AddHandler textBoxCellRenderer.TextBox.MouseDown, AddressOf TextBox_MouseDown
 
 Private Sub TextBox_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
-
 Console.WriteLine("textBox_MouseDown")
-
 End Sub
 
 Private Sub TextBox_KeyUp(ByVal sender As Object, ByVal e As KeyEventArgs)
-
 Console.WriteLine("textBox_KeyUp")
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -478,20 +439,15 @@ When the current cell is actively being edited, the grid does not automatically 
 
 {% tabs %}
 {% highlight c# %}
-//Capture Function keys on current cell
+//Capture Function keys on current cell.
 
 this.gridControl1.CurrentCellControlKeyMessage += gridControl1_CurrentCellControlKeyMessage;
 
 void gridControl1_CurrentCellControlKeyMessage(object sender, GridCurrentCellControlKeyMessageEventArgs e)
-
 {
-
 Keys keyCode = (Keys)((int)e.Msg.WParam) & Keys.KeyCode;
-
 Console.WriteLine(keyCode);
-
 Console.WriteLine(e.Msg);
-
 }
 {% endhighlight %}
 
@@ -499,13 +455,9 @@ Console.WriteLine(e.Msg);
 AddHandler gridControl1.CurrentCellControlKeyMessage , AddressOf gridControl1_CurrentCellControlKeyMessage
 
 Private Sub gridControl1_CurrentCellControlKeyMessage(ByVal sender As Object, ByVal e As GridCurrentCellControlKeyMessageEventArgs)
-
 Dim keyCode As Keys = CType(CInt(Fix(e.Msg.WParam)), Keys) And Keys.KeyCode
-
 Console.WriteLine(keyCode)
-
 Console.WriteLine(e.Msg)
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -518,31 +470,31 @@ The placeholder is used to display the character instead of the alphabet, numeri
 
 {% tabs %}
 {% highlight c# %}
-//To convert alphabetic contents to placeholder characters
+//To convert alphabetic contents to placeholder characters.
 this.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Alphabet;
 
-//To convert the numeric content to the placeholder characters
+//To convert the numeric content to the placeholder characters.
 this.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Numeric;
 
-//To convert both Numeric and Alphabet contents to the place hold characters
+//To convert both Numeric and Alphabet contents to the place hold characters.
 this.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Both;
 
-//To display original cell content without converting anything to placeholder characters
+//To display original cell content without converting anything to placeholder characters.
 this.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.None;
 
 {% endhighlight %}
 
 {% highlight vb %}
-'To convert alphabetic contents to placeholder characters
+'To convert alphabetic contents to placeholder characters.
 Me.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Alphabet
 
-'To convert the numeric content to the placeholder characters
+'To convert the numeric content to the placeholder characters.
 Me.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Numeric
 
-'To convert both Numeric and Alphabet contents to the place hold characters
+'To convert both Numeric and Alphabet contents to the place hold characters.
 Me.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.Both
 
-'To display original cell content without converting anything to placeholder characters
+'To display original cell content without converting anything to placeholder characters.
 Me.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.None
 {% endhighlight %}
 {% endtabs %}
@@ -551,12 +503,12 @@ The desired character can be changed by using the [AutoFitChar](http://help.sync
 
 {% tabs %}
 {% highlight c# %}
-//Set the placeholder character 
+//Set the placeholder character.
 this.gridControl1.ColStyles[2].AutoFitChar = '#’;
 {% endhighlight %}
 
 {% highlight vb %}
-'Set the placeholder character 
+'Set the placeholder character. 
 Me.gridControl1.ColStyles[2].AutoFitChar = '#’
 {% endhighlight %}
 {% endtabs %}
@@ -575,7 +527,7 @@ this.gridControl1.ColStyles[2].Trimming = StringTrimming.EllipsisWord;
 {% endhighlight %}
 
 {% highlight vb %}
-'Apply Ellipsis word for second column alone
+'Apply Ellipsis word for second column alone.
 Me.gridControl1.ColStyles[2].Trimming = StringTrimming.EllipsisWord
 {% endhighlight %}
 {% endtabs %}
@@ -591,78 +543,57 @@ To edit the contents of the cell in insert mode (Replace the existing character 
 
 {% tabs %}
 {% highlight c# %}
-//Invoke this event to enable Over strike edit mode
+//Invoke this event to enable Over strike edit mode.
 this.gridControl1.CurrentCellKeyPress += gridControl1_CurrentCellKeyPress;
 
 this.gridControl1.CurrentCellKeyDown += gridControl1_CurrentCellKeyDown;
 
 void gridControl1_CurrentCellKeyPress(object sender, KeyPressEventArgs e)
-
 {
 
 //Create object for current cell renderer
 GridTextBoxCellRenderer cellRenderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
-
 if (e.KeyChar != Convert.ToChar(Keys.Back) && cellRenderer.TextBox.SelectionLength == 0)
-
 {
 
 //Programmatically selects One char.
 cellRenderer.TextBox.SelectionLength = 1;
-
 }
-
 }
 
 void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
-
 {
 
 //Translates the Backspace key to a left arrow key.
 if (e.KeyCode == Keys.Back)
-
 {
-
 SendKeys.Send("{LEFT}");
-
 e.Handled = true;
-
 }
-
 }
 {% endhighlight %}
-
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellKeyPress , AddressOf gridControl1_CurrentCellKeyPress
-
 AddHandler gridControl1.CurrentCellKeyDown , AddressOf gridControl1_CurrentCellKeyDown 
 
 Private Sub gridControl1_CurrentCellKeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs)
 
-'Create object for current cell renderer
+'Create object for current cell renderer.
 Dim cellRenderer As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Renderer, GridTextBoxCellRenderer)
-
 If e.KeyChar <> Convert.ToChar(Keys.Back) AndAlso cellRenderer.TextBox.SelectionLength = 0 Then
 
 'Programmatically selects One char.
 cellRenderer.TextBox.SelectionLength = 1
-
 End If
-
 End Sub
 
 Private Sub gridControl1_CurrentCellKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 
 'Translates the Backspace key to a left arrow key.
 If e.KeyCode = Keys.Back Then
-
 SendKeys.Send("{LEFT}")
-
 e.Handled = True
-
 End If
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
-
