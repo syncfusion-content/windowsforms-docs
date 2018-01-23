@@ -25,7 +25,6 @@ GridControl has a property [CommandStack](http://help.syncfusion.com/cr/cref_fil
 this.gridControl1.CommandStack.Enabled = true;
 
 // Turns off Undo/Redo buffer
-
 this.gridControl1.CommandStack.Enabled = false;
 {% endhighlight %}
 
@@ -35,7 +34,6 @@ this.gridControl1.CommandStack.Enabled = false;
 Me.gridControl1.CommandStack.Enabled = True
 
 ' Turns off Undo/Redo buffer
-
 Me.gridControl1.CommandStack.Enabled = False
 {% endhighlight %}
 {% endtabs %}
@@ -48,21 +46,17 @@ The undo operation can be done in GridControl by using the [CommandStack.Undo](h
 
 {% highlight c# %}
 // Makes the undo operation
-
 this.gridControl1.CommandStack.Undo();
 
 // Clears the Undo buffer
-
 this.gridControl1.CommandStack.Undo.Clear();
 {% endhighlight %}
 
 {% highlight vb %}
 ' Makes the undo operation
-
 Me.gridControl1.CommandStack.Undo()
 
 ' Clears the Undo buffer
-
 Me.gridControl1.CommandStack.Undo.Clear()
 {% endhighlight %}
 {% endtabs %}
@@ -75,21 +69,17 @@ The redo operation can be done by using the [CommandStack.Redo](http://help.sync
 
 {% highlight c# %}
 // Makes the redo operation
-
 this.gridControl1.CommandStack.Redo();
 
 // Clears the Undo buffer
-
 this.gridControl1.CommandStack.Redo.Clear();
 {% endhighlight %}
 
 {% highlight vb %}
 ' Makes the redo operation
-
 Me.gridControl1.CommandStack.Redo()
 
 ' Clears the Undo buffer
-
 Me.gridControl1.CommandStack.Redo.Clear()
 {% endhighlight %}
 {% endtabs %}
@@ -108,13 +98,11 @@ A call to [CommandStack.BeginTrans](http://help.syncfusion.com/cr/cref_files/win
 
 {% highlight c# %}
 // Transaction will be started
-
 this.gridControl1.CommandStack.BeginTrans("Transaction started");
 {% endhighlight %}
 
 {% highlight vb %}
 ' Transaction will be started
-
 Me.gridControl1.CommandStack.BeginTrans("Transaction started")
 {% endhighlight %}
 {% endtabs %}
@@ -129,13 +117,11 @@ After starting the transaction using the above method, do the list of changes in
 
 {% highlight c# %}
 // Current Transaction will be stopped
-
 this.gridControl1.CommandStack.CommitTrans();
 {% endhighlight %}
 
 {% highlight vb %}
 ' Current Transaction will be stopped
-
 Me.gridControl1.CommandStack.CommitTrans()
 {% endhighlight %}
 {% endtabs %}
@@ -148,13 +134,11 @@ A call to [CommandStack.Rollback](http://help.syncfusion.com/cr/cref_files/windo
 
 {% highlight c# %}
 // Current Transaction will be stopped and undone
-
 this.gridControl1.CommandStack.Rollback();
 {% endhighlight %}
 
 {% highlight vb %}
 ' Current Transaction will be stopped and undone
-
 Me.gridControl1.CommandStack.Rollback()
 {% endhighlight %}
 {% endtabs %}
@@ -164,49 +148,33 @@ Me.gridControl1.CommandStack.Rollback()
 Undo/Redo methods can be handled manually and not the standard implementation used in Undo/Redo architecture, by using the derived custom commands from the [GridModelCommand](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCommand.html#) abstract class. In the derived class, add necessary members to track the Undo/Redo actions.
 
 {% tabs %}
-
 {% highlight c# %}
 public class MyCustomCommand : GridModelCommand
-
 {
 
 // Constructor for MyCustomCommand class.
-
 public MyCustomCommand()
-
 {
-
 }
 
 // Overrides the Execute method.
-
 public override void Execute()
-
 {
-
 }
-
 }
-
 {% endhighlight %}
 
 {% highlight vb %}
 Public Class MyCustomCommand
-
 Inherits GridModelCommand
 
 'Constructor for MyCustomCommand class.
-
 Public Sub New()
-
 End Sub
 
 'Overrides the Execute method.
-
 Public Overrides Sub Execute()
-
 End Sub
-
 End Class
 {% endhighlight %}
 {% endtabs %}
@@ -220,40 +188,25 @@ To create a custom command on making the undo/redo operations for covered ranges
 The `GridModelCommand` class has an overridden method called Execute. This method will execute the set of codes mentioned in it while the custom undo/redo process goes on.
 
 {% tabs %}
-
 {% highlight c# %}
 public class GridModelSetCoveredRangesCommand
 
 : GridModelCommand
-
 {
-
 GridRangeInfoList ranges;
-
 bool setOrReset;
-
 private GridModelCoveredRanges coveredRange;
-
 public GridModelSetCoveredRangesCommand(GridModelCoveredRanges coveredRange, GridRangeInfoList ranges, bool setOrReset)
 
 : base(coveredRange.Model)
-
 {
-
 if (setOrReset)
-
 {
-
 SetDescription("CommandAddCoveredRanges");
-
 }
-
 else
-
 {
-
 SetDescription("CommandRemoveCoveredRanges");
-
 }
 
 this.coveredRange = coveredRange;
@@ -261,15 +214,12 @@ this.coveredRange = coveredRange;
 this.ranges = ranges;
 
 this.setOrReset = setOrReset;
-
 }
 
 // Executes the command.
 
 public override void Execute()
-
 {
-
 coveredRange.SetCoveredRanges(ranges, setOrReset);
 
 Grid.ScrollCellInView(ranges.ActiveRange, GridScrollCurrentCellReason.Command);
@@ -281,27 +231,16 @@ Grid.ScrollCellInView(ranges.ActiveRange, GridScrollCurrentCellReason.Command);
 
 {% highlight vb %}
 Public Class GridModelSetCoveredRangesCommand
-
 Inherits GridModelCommand
-
 Private ranges As GridRangeInfoList
-
 Private setOrReset As Boolean
-
 Private coveredRange As GridModelCoveredRanges
-
 Public Sub New(ByVal coveredRange As GridModelCoveredRanges, ByVal ranges As GridRangeInfoList, ByVal setOrReset As Boolean)
-
 MyBase.New(coveredRange.Model)
-
 If setOrReset Then
-
 SetDescription("CommandAddCoveredRanges")
-
 Else
-
 SetDescription("CommandRemoveCoveredRanges")
-
 End If
 
 Me.coveredRange = coveredRange
@@ -315,13 +254,9 @@ End Sub
 ' Executes the command.
 
 Public Overrides Sub Execute()
-
 coveredRange.SetCoveredRanges(ranges, setOrReset)
-
 Grid.ScrollCellInView(ranges.ActiveRange, GridScrollCurrentCellReason.Command)
-
 End Sub
-
 End Class
 {% endhighlight %}
 {% endtabs %}
