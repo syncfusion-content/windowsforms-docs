@@ -53,29 +53,30 @@ The following methods are need to be override in the derived GridControl for Opt
 {% highlight c# %}
 public class DerivedGridControl : GridControl
 {
-    ///Gets the Scroll Position for the pixel scrolling of a row. 
+ 
+//Gets the Scroll Position for the pixel scrolling of a row. 
     public override int RowIndexToVScrollPixelPos(int rowIndex)
     {
 
-        //Takes separate height for column headers into account. 
+//Takes separate height for column headers into account. 
         rowIndex = Math.Min(rowIndex, Model.RowCount);
         if (rowIndex > 0) return (rowIndex - 1) * Model.Rows.DefaultSize + Model.RowHeights[0];
         else
             return Model.RowHeights[0];
     }
 
-    ///Gets the value for the vertical pixel Position. 
+//Gets the value for the vertical pixel Position. 
     public override int GetVScrollPixelHeight()
     {
 
-        //Checks the number of rows in the Grid.
+//Checks the number of rows in the Grid.
         if (Model.RowCount == 0) return 0;
 
-        //Returns the vertical pixel Position. 
+//Returns the vertical pixel Position. 
         return (Model.RowCount - 1) * Model.Rows.DefaultSize + Model.RowHeights[0];
     }
 
-    ///Gets the row and pixel Delta to the scroll position of the row for the specified scroll position. 
+//Gets the row and pixel Delta to the scroll position of the row for the specified scroll position. 
     public override void VScrollPixelPosToRowIndex(int pixelPos, out int rowIndex, out int pixelDelta)
     {
         if (pixelPos < pixelPos - Model.RowHeights[0])
@@ -89,10 +90,11 @@ public class DerivedGridControl : GridControl
 {% highlight vb %}
 Public Class DerivedGridControl
 	Inherits GridControl
-	'''Gets the Scroll Position for the pixel scrolling of a row. 
+
+'Gets the Scroll Position for the pixel scrolling of a row. 
 	Public Overrides Function RowIndexToVScrollPixelPos(ByVal rowIndex As Integer) As Integer
 
-		'Takes separate height for column headers into account. 
+'Takes separate height for column headers into account. 
 		rowIndex = Math.Min(rowIndex, Model.RowCount)
 		If rowIndex > 0 Then
 			Return (rowIndex - 1) * Model.Rows.DefaultSize + Model.RowHeights(0)
@@ -101,19 +103,19 @@ Public Class DerivedGridControl
 		End If
 	End Function
 
-	'Gets the value for the vertical pixel Position. 
+'Gets the value for the vertical pixel Position. 
 	Public Overrides Function GetVScrollPixelHeight() As Integer
 
-		'Checks the number of rows in the Grid.
+'Checks the number of rows in the Grid.
 		If Model.RowCount = 0 Then
 			Return 0
 		End If
 
-		'Returns the vertical pixel Position. 
+'Returns the vertical pixel Position. 
 		Return (Model.RowCount - 1) * Model.Rows.DefaultSize + Model.RowHeights(0)
 	End Function
 
-	'Gets the row and pixel Delta to the scroll position of the row for the specified scroll position. 
+'Gets the row and pixel Delta to the scroll position of the row for the specified scroll position. 
 	Public Overrides Sub VScrollPixelPosToRowIndex(ByVal pixelPos As Integer, <System.Runtime.InteropServices.Out()> ByRef rowIndex As Integer, <System.Runtime.InteropServices.Out()> ByRef pixelDelta As Integer)
 		If pixelPos < pixelPos - Model.RowHeights(0) Then
 			rowIndex = 0
@@ -388,10 +390,12 @@ this.gridControl1.ShowContextMenu += new Syncfusion.Windows.Forms.ShowContextMen
 void gridControl1_ShowContextMenu(object sender, Syncfusion.Windows.Forms.ShowContextMenuEventArgs e)
 {
     Point pt = this.gridControl1.GridPointToClient(e.Point);
-    //Check for clicking in the region of Vertical and Horizontal scrollbar 
+
+//Check for clicking in the region of Vertical and Horizontal scrollbar 
     if (this.gridControl1.ClientRectangle.Width < pt.X  || this.gridControl1.ClientRectangle.Height < pt.Y)
     {
-        //context menu has been handled
+
+//context menu has been handled
         e.Cancel = true;
     }
 }
@@ -400,9 +404,11 @@ void gridControl1_ShowContextMenu(object sender, Syncfusion.Windows.Forms.ShowCo
 AddHandler gridControl1.ShowContextMenu, AddressOf gridControl1_ShowContextMenu
 Private Sub gridControl1_ShowContextMenu(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.ShowContextMenuEventArgs)
 	Dim pt As Point = Me.gridControl1.GridPointToClient(e.Point)
-	'Check for clicking in the region of Vertical and Horizontal scrollbar 
+
+'Check for clicking in the region of Vertical and Horizontal scrollbar 
 	If Me.gridControl1.ClientRectangle.Width < pt.X OrElse Me.gridControl1.ClientRectangle.Height < pt.Y Then
-		'context menu has been handled
+
+'context menu has been handled
 		e.Cancel = True
 	End If
 End Sub
@@ -484,13 +490,15 @@ this.gridControl1.VScrollPixelPosChanging += new GridScrollPositionChangingEvent
 void gridControl1_HScrollPixelPosChanging(object sender, GridScrollPositionChangingEventArgs e)
 {
     MessageBox.Show(e.ScrollPosition.ToString());
-    //Cancel the Horizontal Pixel scrolling of grid through the thumb track
+
+//Cancel the Horizontal Pixel scrolling of grid through the thumb track
     e.Cancel = true;
 }
 void gridControl1_VScrollPixelPosChanging(object sender, GridScrollPositionChangingEventArgs e)
 {
     MessageBox.Show(e.ScrollPosition.ToString());
-    //Cancel the Vertical Pixel scrolling of the grid through the thumb track
+
+//Cancel the Vertical Pixel scrolling of the grid through the thumb track
     e.Cancel = true;
 }
 {% endhighlight %}
@@ -499,12 +507,14 @@ AddHandler gridControl1.HScrollPixelPosChanging, AddressOf gridControl1_HScrollP
 AddHandler gridControl1.VScrollPixelPosChanging, AddressOf gridControl1_VScrollPixelPosChanging
 Private Sub gridControl1_HScrollPixelPosChanging(ByVal sender As Object, ByVal e As GridScrollPositionChangingEventArgs)
 	MessageBox.Show(e.ScrollPosition.ToString())
-	'Cancel the Horizontal Pixel scrolling of grid through the thumb track
+
+'Cancel the Horizontal Pixel scrolling of grid through the thumb track
 	e.Cancel = True
 End Sub
 Private Sub gridControl1_VScrollPixelPosChanging(ByVal sender As Object, ByVal e As GridScrollPositionChangingEventArgs)
 	MessageBox.Show(e.ScrollPosition.ToString())
-	'Cancel the Vertical Pixel scrolling of the grid through the thumb track
+
+'Cancel the Vertical Pixel scrolling of the grid through the thumb track
 	e.Cancel = True
 End Sub
 {% endhighlight %}
@@ -547,7 +557,8 @@ void gridControl1_HorizontalScroll(object sender, ScrollEventArgs e)
 {
     if(e.NewValue > 230)
     {
-        //Set the maximum scroll position
+
+//Set the maximum scroll position
         e.NewValue = 230;
     }            
 }
@@ -556,7 +567,8 @@ void gridControl1_HorizontalScroll(object sender, ScrollEventArgs e)
 Private Me.gridControl1.HorizontalScroll += New ScrollEventHandler(AddressOf gridControl1_HorizontalScroll)
 Private Sub gridControl1_HorizontalScroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
 	If e.NewValue > 230 Then
-		'Set the maximum scroll position
+
+'Set the maximum scroll position
 		e.NewValue = 230
 	End If
 End Sub
