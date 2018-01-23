@@ -143,6 +143,26 @@ toolTipInfo2.Separator = True
 
 ![](SuperToolTip_images/SuperToolTip_img6.jpeg)
 
+### Visual Style
+
+SuperToolTip control supports Visual styles such as Default,Metro,Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+
+//Sample code for setting "Office2016 Colorful" style for SuperToolTip
+
+{% highlight c# %}
+
+this.superToolTip1.VisualStyle = Syncfusion.Windows.Forms.Tools.SuperToolTip.Appearance.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.superToolTip1.VisualStyle = Syncfusion.Windows.Forms.Tools.SuperToolTip.Appearance.Office2016Colorful;
+
+{% endhighlight %}
+
+![](SuperToolTip_images/SuperToolTip_img17.png)
+
 ### Behavior Settings
 
 The following properties control the behavior of the SuperToolTip control.
