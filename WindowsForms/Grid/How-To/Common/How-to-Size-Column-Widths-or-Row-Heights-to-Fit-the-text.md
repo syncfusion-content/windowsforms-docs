@@ -17,7 +17,7 @@ To size columns so that all the text is visible, use grid.Model.ColWidths.Resize
 {% highlight c# %}
 
 //AutoFits RowHeights.
-grid.Model.RowHeights.ResizeToFit(GridRangeInfo.Table, GridResizeToFitOptions.NoShrinkSize);
+grid.Model.RowHeights.ResizeToFit(GridRangeInfo.Table(), GridResizeToFitOptions.NoShrinkSize);
 
 //AutoFits ColumnWidths.
 grid.Model.ColWidths.ResizeToFit(GridRangeInfo.Col(2), GridResizeToFitOptions.NoShrinkSize);
@@ -27,7 +27,7 @@ grid.Model.ColWidths.ResizeToFit(GridRangeInfo.Col(2), GridResizeToFitOptions.No
 {% highlight vb %}
 
 'AutoFits RowHeights.
-grid.Model.RowHeights.ResizeToFit(GridRangeInfo.Table, GridResizeToFitOptions.NoShrinkSize)
+grid.Model.RowHeights.ResizeToFit(GridRangeInfo.Table(), GridResizeToFitOptions.NoShrinkSize)
 
 'AutoFits ColumnWidths. 
 grid.Model.ColWidths.ResizeToFit(GridRangeInfo.Col(2), GridResizeToFitOptions.NoShrinkSize)
