@@ -74,91 +74,31 @@ Me.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue
 
 ## Visual Styles
 
-ComboBoxAdv supports visual styles such as Default, OfficeXP, Office2003, Office2007, Office2007Outlook, Office2010, VS2005 , VS2007 and Metro with all three color schemes. The style can be set using Style property.
+ComboBoxAdv supports visual styles such as Office2016Colorful, Office2016White, Office2016Black, Office2016DarkGray, Metro, Office2010, Default, OfficeXP, Office2003, Office2007, Office2007Outlook, , VS2005 , VS2007 with all three color schemes. The style can be set using Style property.
 
 
 
 {% highlight c# %}
 
-//To set Default Visual Style
+//To set Visual Style for ComboBox 
 
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Default;
-
-//To set Office2003 Visual Style
-
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003;
-
-//To set OfficeXP Visual Style
-
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP;
-
-//To set VS2005 Visual Style
-
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2005;
-
-//To set VS2010 Visual Style
-
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2010;
-
-//To set Office2007 Visual Style
-
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
-
-//To set Office2007Outlook Visual Style
-
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook;
-
-//To set Office2010 Visual Style
-
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
-
-//To set Metro Visual Style
-
-this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
+this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-'To set Default Visual Style
+'To set Visual Style for ComboBox 
 
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.[Default]
-
-'To set Office2003 Visual Style
-
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003
-
-'To set OfficeXP Visual Style
-
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
-
-'To set VS2005 Visual Style
-
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2005
-
-'To set VS2010 Visual Style
-
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2010
-
-'To set Office2007 Visual Style
-
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
-
-'To set Office2007Outlook Visual Style
-
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook
-
-'To set Office2010 Visual Style
-
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
-
-'To set Metro Visual Style
-
-Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
+Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
 
 {% endhighlight %}
 
 ![](Overview_images/Overview_img308.png) 
+
+### Office Color schemes
+
+We can set color schemes for Office2007 style.
 
 {% highlight c# %}
 

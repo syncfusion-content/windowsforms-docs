@@ -87,5 +87,31 @@ Me.textBoxExt1.ForeColor = System.Drawing.Color.LightSeaGreen
 
 ![](Appearance-Settings_images/Appearance-Settings_img2.png)
 
+## Visual Style
 
+Visual styles for the TextBoxExt can be specified using TextBoxExt.Style property. The various styles are,
+
+* Office2016Colorful
+* Office2016White
+* Office2016Black
+* Office2016DarkGray
+* Metro
+* Office2010
+* Office2007 
+* Default
+
+
+{% highlight c# %}
+
+this.textBoxExt1.Style = TextBoxExt.theme.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.textBoxExt1.Style = TextBoxExt.theme.Office2016Colorful
+
+{% endhighlight %}
+
+![](Appearance-Settings_images/Appearance-Settings_img3.png) 
 

@@ -108,6 +108,9 @@ Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
 ![](MaskedEditBox-images/MarkedEditBox-img16.png)
 
+## Visual Style
+
+Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for CurrencyTextBox.
 
 A Sample which demonstrates the Foreground Settings of MaskedEditBox control is available in the below sample installation path.
 
