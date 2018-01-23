@@ -13,17 +13,21 @@ The following code snippet is used to enable the merging in GridControl,
 
 {% tabs %}
 {% highlight c# %}
-// Set MergeCells direction for the GridControl
+
+// Set MergeCells direction for the GridControl.
 this.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.Both;
-// Set merge cells behavior for the Grid
+
+// Set merge cells behavior for the Grid.
 this.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation
     | GridMergeCellsMode.MergeColumnsInRow | GridMergeCellsMode.MergeRowsInColumn;
 this.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid;
 {% endhighlight %}
 {% highlight vb %}
-' Set MergeCells direction for the GridControl
+
+' Set MergeCells direction for the GridControl.
 Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.Both
-' Set merge cells behavior for the Grid
+
+' Set merge cells behavior for the Grid.
 Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation Or GridMergeCellsMode.MergeColumnsInRow Or GridMergeCellsMode.MergeRowsInColumn
 Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
 {% endhighlight %}
@@ -42,11 +46,13 @@ The [MergeCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncf
 
 {% tabs %}
 {% highlight c# %}
-// Set MergeCells direction for the GridControl
+
+// Set MergeCells direction for the GridControl.
 this.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.ColumnsInRow | GridMergeCellDirection.RowsInColumn;
 {% endhighlight %}
 {% highlight vb %}
-' Set MergeCells direction for the GridControl
+
+' Set MergeCells direction for the GridControl.
 Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.ColumnsInRow Or GridMergeCellDirection.RowsInColumn
 {% endhighlight %}
 {% endtabs %}
@@ -87,21 +93,23 @@ The [MergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Sync
 
 {% tabs %}
 {% highlight c# %}
+
 // Finding a MergedRange for cell(4,3)
 GridRangeInfo mergedRange = this.gridControl1.Model.MergeCells.FindRange(4, 3);
+
 // Finding a MergedRange for cell(7,9)
 GridRangeInfo mergedRange2 = this.gridControl1.Model.MergeCells.FindRange(7, 9);
-
 MessageBox.Show("MergedRange for cell(4,3) is " + mergedRange.Info.ToString()
 + "\n" + "MergedRange for cell(7,9) is " + mergedRange2.RangeType.ToString());
 
 {% endhighlight %}
 {% highlight vb %}
+
 ' Finding a MergedRange for cell(4,3)
 Dim mergedRange As GridRangeInfo = Me.gridControl1.Model.MergeCells.FindRange(4, 3)
+
 ' Finding a MergedRange for cell(7,9)
 Dim mergedRange2 As GridRangeInfo = Me.gridControl1.Model.MergeCells.FindRange(7, 9)
-
 MessageBox.Show("MergedRange for cell(4,3) is " & mergedRange.Info.ToString() & Constants.vbLf & "MergedRange for cell(7,9) is " & mergedRange2.RangeType.ToString())
 {% endhighlight %}
 {% endtabs %}
@@ -115,18 +123,18 @@ The cells which are all having same content will be merged. The merging can be d
 
 {% tabs %}
 {% highlight c# %}
-// Delaying the merging of cells for specified range
+// Delaying the merging of cells for specified range.
 this.gridControl1.Model.MergeCells.DelayMergeCells(GridRangeInfo.Rows(1, 3));
 
-// Re-evaluating of merged cells
+// Re-evaluating of merged cells.
 this.gridControl1.Model.MergeCells.EvaluateMergeCells(GridRangeInfo.Rows(1, 3));
 
 {% endhighlight %}
 {% highlight vb %}
-' Delaying the merging of cells for specified range
+' Delaying the merging of cells for specified range.
 Me.gridControl1.Model.MergeCells.DelayMergeCells(GridRangeInfo.Rows(1, 3))
 
-' Re-evaluating of merged cells
+' Re-evaluating of merged cells.
 Me.gridControl1.Model.MergeCells.EvaluateMergeCells(GridRangeInfo.Rows(1, 3))
 {% endhighlight %}
 {% endtabs %}
@@ -140,15 +148,16 @@ The following example shows the two cells with different content are merged,
 
 {% tabs %}
 {% highlight c# %}
-//Triggering the QueryCanMergeCells event
+
+//Triggering the QueryCanMergeCells event.
 this.gridControl1.QueryCanMergeCells += new GridQueryCanMergeCellsEventHandler(gridControl1_QueryCanMergeCells);
 
 void gridControl1_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventArgs e)
  {
-      // Checking whether it is already merged cells
+      // Checking whether it is already merged cells.
       if (!e.Result)
       {
-            // Sets merging for two cells with different data
+            // Sets merging for two cells with different data.
             if (e.Style1.CellValue.ToString() == "381" && e.Style2.CellValue.ToString() == "794")
                 {
                   e.Result = true;
@@ -159,13 +168,14 @@ void gridControl1_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventA
 
 {% endhighlight %}
 {% highlight vb %}
-'Triggering the QueryCanMergeCells event
+
+'Triggering the QueryCanMergeCells event.
 Private Me.gridControl1.QueryCanMergeCells += New GridQueryCanMergeCellsEventHandler(AddressOf gridControl1_QueryCanMergeCells)
 
 Private Sub gridControl1_QueryCanMergeCells(ByVal sender As Object, ByVal e As GridQueryCanMergeCellsEventArgs)
-      ' Checking whether it is already merged cells
+      ' Checking whether it is already merged cells.
       If Not e.Result Then
-            ' Sets merging for two cells with different data
+            ' Sets merging for two cells with different data.
             If e.Style1.CellValue.ToString() = "381" AndAlso e.Style2.CellValue.ToString() = "794" Then
                   e.Result = True
                   e.Handled = True
