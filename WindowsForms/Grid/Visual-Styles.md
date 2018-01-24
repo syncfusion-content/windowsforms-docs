@@ -197,11 +197,12 @@ public class CustomTheme : IVisualStylesDrawing
     
     public void DrawHeaderStyle(Graphics g, Rectangle rect, ThemedHeaderDrawing.HeaderState state)
     {            
-        //Check for empty headers
+
+//Check for empty headers
         if (rect.Height == 0 && rect.Width == 0)
             return;
 
-        //Check for the current state of the header and paints the foreground accordingly.
+//Check for the current state of the header and paints the foreground accordingly.
 
         if (state == ThemedHeaderDrawing.HeaderState.Normal)
         {
@@ -218,7 +219,8 @@ public class CustomTheme : IVisualStylesDrawing
             br.Dispose();
         }
     }
-    // IVisualStylesDrawing Members …
+
+// IVisualStylesDrawing Members …
 }
 
 {% endhighlight %}
@@ -238,12 +240,13 @@ Public Class CustomTheme
 
 
     Public Sub DrawHeaderStyle(ByVal g As Graphics, ByVal rect As Rectangle, ByVal state As ThemedHeaderDrawing.HeaderState)
-        'Check for empty headers
+ 
+  'Check for empty headers
         If rect.Height = 0 AndAlso rect.Width = 0 Then
             Return
         End If
 
-        'Check for the current state of the header and paints the foreground accordingly.
+ 'Check for the current state of the header and paints the foreground accordingly.
 
         If state Is ThemedHeaderDrawing.HeaderState.Normal Then
             Dim br As New LinearGradientBrush(rect, Color.FromArgb(255, 128, 255), Color.FromArgb(255, 0, 128), LinearGradientMode.Vertical)
@@ -257,7 +260,8 @@ Public Class CustomTheme
             br.Dispose()
         End If
     End Sub
-    ' IVisualStylesDrawing Members …
+ 
+ ' IVisualStylesDrawing Members …
 End Class
 {% endhighlight %}
 {% endtabs %}

@@ -16,11 +16,11 @@ A user can customize an appearance of the comment tip window and comment indicat
 The `CommentTip` property provides the various options to customize the comment tip of the cells. The comment tip can be added to the particular cell by setting the `CommentText` property. The comment text will be displayed in the comment tip window.
 {% tabs %}
 {% highlight c# %}
-//Set the comment text for particular cell
+//Set the comment text for particular cell.
 gridControl1[2, 2].CommentTip.CommentText = "Hello";
 {% endhighlight %}
 {% highlight vb %}
-'Set the comment text for particular cell
+'Set the comment text for particular cell.
 gridControl1(2, 2).CommentTip.CommentText = "Hello"
 {% endhighlight %}
 {% endtabs %}
@@ -31,11 +31,11 @@ gridControl1(2, 2).CommentTip.CommentText = "Hello"
 An image can be added to the comment tip window by setting the `CommentImage` property.
 {% tabs %}
 {% highlight c# %}
-//Adding comment tip by setting the CommentImage
+//Adding comment tip by setting the CommentImage.
 this.gridControl1[2, 2].CommentTip.CommentImage = Image.FromFile(@"..\..\img1.png");
 {% endhighlight %}
 {% highlight vb %}
-'Adding comment tip by setting the CommentImage
+'Adding comment tip by setting the CommentImage.
 Me.gridControl1(2, 2).CommentTip.CommentImage = Image.FromFile("..\..\img1.png")
 {% endhighlight %}
 {% endtabs %}
@@ -94,6 +94,7 @@ void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Private Sub gridControl1_QueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
+	
 	' Enabling comment tip for particular cell.
 	If e.RowIndex = 1 AndAlso e.ColIndex = 1 Then
 		e.Style.CommentTip.CommentText = "Cell comment"
@@ -168,14 +169,16 @@ The `CommentTip` property provides the list of properties that are used to custo
 The size and color of the comment indicator can be customized by using the `CommentIndicatorSize` and `CommentIndicatorColor` properties of the `CommentTip`. By default, it will be displayed as the red color triangle at the top-right corner of the cell.
 {% tabs %}
 {% highlight c# %}
-//Setting Comment indicator color
+//Setting Comment indicator color.
 this.gridControl1[2, 2].CommentTip.CommentIndicatorColor = Color.Green;
+
 //Set the size for the comment indicator.
 this.gridControl1[2, 2].CommentTip.CommentIndicatorSize = new Size(20, 20);
 {% endhighlight %}
 {% highlight vb %}
-'Setting Comment indicator color
+'Setting Comment indicator color.
 Me.gridControl1(2, 2).CommentTip.CommentIndicatorColor = Color.Green
+
 'Set the size for the comment indicator.
 Me.gridControl1(2, 2).CommentTip.CommentIndicatorSize = New Size(20, 20)
 {% endhighlight %}
@@ -188,12 +191,14 @@ The size and color of the comment arrow can be customized by using the `CommentA
 {% tabs %}
 {% highlight c# %}
 this.gridControl1[3, 2].CommentTip.CommentText = "Hello";
+
 //Set comment arrow size and arrow color.
 this.gridControl1[3, 2].CommentTip.CommentArrowSize = new Size(10, 40);
 this.gridControl1[3, 2].CommentTip.CommentArrowColor = Color.Green;
 {% endhighlight %}
 {% highlight vb %}
 Me.gridControl1(3, 2).CommentTip.CommentText = "Hello"
+
 'Set comment arrow size and arrow color.
 Me.gridControl1(3, 2).CommentTip.CommentArrowSize = New Size(10, 40)
 Me.gridControl1(3, 2).CommentTip.CommentArrowColor = Color.Green
@@ -207,12 +212,14 @@ The comment arrow can be hidden by setting the width of the `CommentArrowSize` p
 {% tabs %}
 {% highlight c# %}
 this.gridControl1[4, 2].CommentTip.CommentText = "Hello";
-//To hide the comment arrow
+
+//To hide the comment arrow.
 this.gridControl1[4, 2].CommentTip.CommentArrowSize = new Size(0, 10);
 {% endhighlight %}
 {% highlight vb %}
 Me.gridControl1(4, 2).CommentTip.CommentText = "Hello"
-'To hide the comment arrow
+
+'To hide the comment arrow.
 Me.gridControl1(4, 2).CommentTip.CommentArrowSize = New Size(0, 10)
 {% endhighlight %}
 {% endtabs %}
@@ -226,7 +233,7 @@ The size and font of the comment tip window can be customized by using the `Comm
 The foreground and background colors of the comment tip window can be changed by using the `ForeColor` and `BackColor` properties of the `CommentTip`.
 {% tabs %}
 {% highlight c# %}
-//Setting window size and Font
+//Setting window size and Font.
 this.gridControl1[2, 2].CommentTip.CommentText = "Hello";
 this.gridControl1[2, 2].CommentTip.CommentWindowSize = new Size(100, 30);
 this.gridControl1[2, 2].CommentTip.CommentFont = new Font("sans serif", 12, FontStyle.Italic);
@@ -234,7 +241,7 @@ this.gridControl1[2, 2].CommentTip.ForeColor = Color.White;
 this.gridControl1[2, 2].CommentTip.BackColor = Color.Purple;
 {% endhighlight %}
 {% highlight vb %}
-'Setting window size and Font
+'Setting window size and Font.
 Me.gridControl1(2, 2).CommentTip.CommentText = "Hello"
 Me.gridControl1(2, 2).CommentTip.CommentWindowSize = New Size(100, 30)
 Me.gridControl1(2, 2).CommentTip.CommentFont = New Font("sans serif", 12, FontStyle.Italic)
@@ -318,7 +325,8 @@ void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 {
     //Set the color for the comment indicator.
     e.Style.CommentTip.CommentIndicatorColor = Color.Green;
-    // Modify the indicator location
+   
+    // Modify the indicator location.
     e.IndicatorBounds = new Rectangle(e.IndicatorBounds.Left , e.IndicatorBounds.Top + e.CellBounds.Height -8, 8, 8);
 }
 {% endhighlight %}
@@ -327,7 +335,8 @@ AddHandler gridControl1.DrawCommentIndicator, AddressOf gridControl1_DrawComment
 Private Sub gridControl1_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
 	'Set the color for the comment indicator.
 	e.Style.CommentTip.CommentIndicatorColor = Color.Green
-	' Modify the indicator location
+	
+	' Modify the indicator location.
 	e.IndicatorBounds = New Rectangle(e.IndicatorBounds.Left, e.IndicatorBounds.Top + e.CellBounds.Height -8, 8, 8)
 End Sub
 {% endhighlight %}
@@ -347,6 +356,7 @@ void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
   {
      // Cancel the default drawing of Comment indicator.
      e.Cancel = true;
+    
      // Draw the custom comment indicator.
      e.Graphics.FillRectangle(new SolidBrush(Color.Orange), e.IndicatorBounds);
   }
@@ -358,6 +368,7 @@ Private Sub gridControl1_DrawCommentIndicator(ByVal sender As Object, ByVal e As
 	If e.ColIndex = 2 Then
 		'Cancel the default drawing of Comment indicator.
 		e.Cancel = True
+		
 		'Set the comment indicator color and shape.
 		e.Graphics.FillRectangle(New SolidBrush(Color.Orange), e.IndicatorBounds)
 	End If
@@ -381,7 +392,8 @@ void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 {% highlight vb %}
 AddHandler gridControl1.DrawCommentIndicator, AddressOf gridControl1_DrawCommentIndicator
 Private Sub gridControl1_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
-	'Cancel the displaying of the comment tip indicator.
+
+'Cancel the displaying of the comment tip indicator.
 	e.Cancel = True
 End Sub
 {% endhighlight %}
@@ -396,14 +408,14 @@ The displaying of comment tip window for comment tip cell can be canceled by usi
 this.gridControl1.CommentTipShowing += new CommentTipShowingEventHandler(gridControl1_CommentTipShowing);
 void gridControl1_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {
-     //Cancel the displaying of the comment tip window.
+ //Cancel the displaying of the comment tip window.
      e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.CommentTipShowing, AddressOf gridControl1_CommentTipShowing
 Private Sub gridControl1_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
-	'Cancel the displaying of the comment tip window.
+'Cancel the displaying of the comment tip window.
 	e.Cancel = True
 End Sub
 {% endhighlight %}
@@ -416,7 +428,8 @@ The location of the comment tip window can be modified dynamically by handling t
 this.gridControl1.CommentTipShowing += new CommentTipShowingEventHandler(gridControl1_CommentTipShowing);void gridControl1_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {
     Point pt = e.CommentTipWindow.Location;
-    //Display the comment tip window at the given point.
+
+//Display the comment tip window at the given point.
     e.CommentTipWindow.Location = new Point(pt.X + 40, pt.Y + 10);
 }
 {% endhighlight %}
@@ -424,7 +437,7 @@ this.gridControl1.CommentTipShowing += new CommentTipShowingEventHandler(gridCon
 AddHandler gridControl1.CommentTipShowing, AddressOf gridControl1_CommentTipShowing
 Private Sub gridControl1_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
 	Dim pt As Point = e.CommentTipWindow.Location
-	'Display the comment tip window at the given point.
+'Display the comment tip window at the given point.
 	e.CommentTipWindow.Location = New Point(pt.X + 40, pt.Y + 10)
 End Sub
 {% endhighlight %}
@@ -463,10 +476,11 @@ To highlight the cells or customize the cells if that cell has comment tip, `Has
 this.gridControl1.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(gridControl1_PrepareViewStyleInfo);
 void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
 {
-    //Checking whether the cell has comment tip or not.
+//Checking whether the cell has comment tip or not.
     if (e.Style.HasCommentTip)
     {
-        //Setting the BackColor and ForeColor for the Comment tip cell.
+
+ //Setting the BackColor and ForeColor for the Comment tip cell.
         e.Style.BackColor = Color.Green;
         e.Style.TextColor = Color.White;
     }               
@@ -475,9 +489,10 @@ void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEv
 {% highlight vb %}
 AddHandler gridControl1.PrepareViewStyleInfo, AddressOf gridControl1_PrepareViewStyleInfo
 Private Sub gridControl1_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
-	'Checking whether the cell has comment tip or not.
+'Checking whether the cell has comment tip or not.
 	If e.Style.HasCommentTip Then
-		'Setting the BackColor and ForeColor for the Comment tip cell.
+
+'Setting the BackColor and ForeColor for the Comment tip cell.
 		e.Style.BackColor = Color.Green
 		e.Style.TextColor = Color.White
 	End If

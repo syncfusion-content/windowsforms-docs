@@ -14,11 +14,11 @@ The selected range of cells or data can be copied to the Clipboard by using the 
 
 {% tabs %}
 {% highlight c# %}
-//Copy the selection to the Clipboard
+//Copy the selection to the Clipboard.
 this.gridControl1.CutPaste.Copy();
 {% endhighlight %}
 {% highlight vb %}
-'Copy the selection to the Clipboard
+'Copy the selection to the Clipboard.
 Me.gridControl1.CutPaste.Copy()
 {% endhighlight %}
 {% endtabs %}
@@ -30,12 +30,14 @@ The range of cells can be programmatically copied to the clipboard by using the 
 {% tabs %}
 {% highlight c# %}
 GridRangeInfo range = GridRangeInfo.Cells(3, 3, 4, 4);
-//Copy the range of cells to the Clipboard
+
+//Copy the range of cells to the Clipboard.
 this.gridControl1.CutPaste.CopyRange(range);
 {% endhighlight %}
 {% highlight vb %}
 Dim range As GridRangeInfo = GridRangeInfo.Cells(3, 3, 4, 4)
-'Copy the range of cells to the Clipboard
+
+'Copy the range of cells to the Clipboard.
 Me.gridControl1.CutPaste.CopyRange(range)
 {% endhighlight %}
 {% endtabs %}
@@ -48,6 +50,7 @@ GridCurrentCell cc = this.gridControl1.CurrentCell;
 GridRangeInfoList rangeList = new GridRangeInfoList();
 rangeList.Add(GridRangeInfo.Cells(3, 3, 4, 4));
 rangeList.Add(GridRangeInfo.Cell(cc.RowIndex, cc.ColIndex));
+
 //Copies the formatted text of a specified range of cells to clipboard.
 this.gridControl1.CutPaste.CopyTextToClipboard(rangeList);
 {% endhighlight %}
@@ -56,6 +59,7 @@ Dim cc As GridCurrentCell = Me.gridControl1.CurrentCell
 Dim rangeList As New GridRangeInfoList()
 rangeList.Add(GridRangeInfo.Cells(3, 3, 4, 4))
 rangeList.Add(GridRangeInfo.Cell(cc.RowIndex, cc.ColIndex))
+
 'Copies the formatted text of a specified range of cells to clipboard.
 Me.gridControl1.CutPaste.CopyTextToClipboard(rangeList)
 {% endhighlight %}
@@ -81,14 +85,14 @@ The copy operation can be restricted by handling the [ClipboardCopy](http://help
 this.gridControl1.ClipboardCopy += gridControl1_ClipboardCopy;
 void gridControl1_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 {
-    //To restrict the Clipboard copy
+    //To restrict the Clipboard copy.
     e.Handled = true;           
 }
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridControl1.ClipboardCopy += AddressOf gridControl1_ClipboardCopy
 Private Sub gridControl1_ClipboardCopy(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
-	'To restrict the Clipboard copy
+	'To restrict the Clipboard copy.
 	e.Handled = True
 End Sub
 {% endhighlight %}
@@ -99,11 +103,11 @@ The [Paste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusio
 
 {% tabs %}
 {% highlight c# %}
-//Paste the contents of the clipboard to the specific selected range
+//Paste the contents of the clipboard to the specific selected range.
 this.gridControl1.CutPaste.Paste();
 {% endhighlight %}
 {% highlight vb %}
-'Paste the contents of the clipboard to the specific selected range
+'Paste the contents of the clipboard to the specific selected range.
 Me.gridControl1.CutPaste.Paste()
 {% endhighlight %}
 {% endtabs %}
@@ -113,14 +117,14 @@ The pasting operation can be notified by the [ClipboardPaste](http://help.syncfu
 this.gridControl1.ClipboardPaste += gridControl1_ClipboardPaste;
 void gridControl1_ClipboardPaste(object sender, GridCutPasteEventArgs e)
 {
-    //To restrict the paste operation
+//To restrict the paste operation.
     e.Handled = true;
 }
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridControl1.ClipboardPaste += AddressOf gridControl1_ClipboardPaste
 Private Sub gridControl1_ClipboardPaste(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
-	'To restrict the paste operation
+'To restrict the paste operation.
 	e.Handled = True
 End Sub
 {% endhighlight %}
@@ -132,11 +136,11 @@ N> **ClipboardPasted** - This event is to be handled after a paste operation.
 When the number of rows/columns copied is greater than the number of rows/columns count of the grid, then the grid will automatically add the additional columns/rows according to the copied content. To avoid the unwanted rows/columns to be appended to the GridControl, set the [ClipboardFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs~ClipboardFlags.html) as follows,
 {% tabs %}
 {% highlight c# %}
-// To Do not append additional rows/columns while pasting 
+// To Do not append additional rows/columns while pasting .
 this.gridControl1.CutPaste.ClipboardFlags |= GridDragDropFlags.NoAppendRows | GridDragDropFlags.NoAppendCols;
 {% endhighlight %}
 {% highlight vb %}
-' To Do not append additional rows/columns while pasting 
+' To Do not append additional rows/columns while pasting.
 Me.gridControl1.CutPaste.ClipboardFlags = Me.gridControl1.CutPaste.ClipboardFlags Or GridDragDropFlags.NoAppendRows Or GridDragDropFlags.NoAppendCols
 {% endhighlight %}
 {% endtabs %}
@@ -145,11 +149,11 @@ Me.gridControl1.CutPaste.ClipboardFlags = Me.gridControl1.CutPaste.ClipboardFlag
 When the Copy/Paste is done with in the GridControl, it copies the style of the selected range of cells and pastes it to the targeted cells. This can be restricted to copy only the text of the grid cells by setting the `ClipboardFlags` as of follows,
 {% tabs %}
 {% highlight c# %}
-//Copy only the text of the cell without the styles
+//Copy only the text of the cell without the styles.
 this.gridControl1.CutPaste.ClipboardFlags &= ~GridDragDropFlags.Styles;
 {% endhighlight %}
 {% highlight vb %}
-'Copy only the text of the cell without the styles
+'Copy only the text of the cell without the styles.
 Me.gridControl1.CutPaste.ClipboardFlags = Me.gridControl1.CutPaste.ClipboardFlags And Not GridDragDropFlags.Styles
 {% endhighlight %}
 {% endtabs %}
@@ -165,7 +169,8 @@ void gridControl1_ClipboardPaste(object sender, GridCutPasteEventArgs e)
     string[] rows = null;
     int numberOfRows = 0;
     int numberOfCols = 0;
-    //Get the size of the paste
+
+//Get the size of the paste.
     if (data.GetDataPresent(DataFormats.Text))
     {
         string s = (string)data.GetData(DataFormats.Text);
@@ -179,7 +184,8 @@ void gridControl1_ClipboardPaste(object sender, GridCutPasteEventArgs e)
             numberOfCols = cols.GetLength(0);
         }
     }
-    //paste one to many
+
+//Paste one to many.
     if (numberOfRows == 1 && numberOfCols == 1 && !this.gridControl1.Selections.Ranges.ActiveRange.IsEmpty)
     {
         this.gridControl1.ChangeCells(this.gridControl1.Selections.Ranges.ActiveRange,
@@ -196,7 +202,7 @@ Private Sub gridControl1_ClipboardPaste(ByVal sender As Object, ByVal e As GridC
 	Dim rows() As String = Nothing
 	Dim numberOfRows As Integer = 0
 	Dim numberOfCols As Integer = 0
-	'Get the size of the paste
+'Get the size of the paste.
 	If data.GetDataPresent(DataFormats.Text) Then
 		Dim s As String = CStr(data.GetData(DataFormats.Text))
 		rows = s.Split(New Char() { ControlChars.Lf })
@@ -209,7 +215,7 @@ Private Sub gridControl1_ClipboardPaste(ByVal sender As Object, ByVal e As GridC
 			numberOfCols = cols.GetLength(0)
 		End If
 	End If
-	'paste one to many
+'Paste one to many.
 	If numberOfRows = 1 AndAlso numberOfCols = 1 AndAlso (Not Me.gridControl1.Selections.Ranges.ActiveRange.IsEmpty) Then
 		Me.gridControl1.ChangeCells(Me.gridControl1.Selections.Ranges.ActiveRange, rows(0))
 		e.Handled = True
@@ -225,11 +231,11 @@ End Sub
 The <kbd>Ctrl</kbd>+<kbd>X</kbd> keyboard combination is used to cut the data from the grid. It is used to remove the selected data from the source and add it to the Clipboard. 
 {% tabs %}
 {% highlight c# %}
-// Cuts and copies the contents of selected cells to clipboard 
+// Cuts and copies the contents of selected cells to clipboard. 
 this.gridControl1.CutPaste.Cut();
 {% endhighlight %}
 {% highlight vb %}
-' Cuts and copies the contents of selected cells to clipboard 
+' Cuts and copies the contents of selected cells to clipboard.
 Me.gridControl1.CutPaste.Cut()
 {% endhighlight %}
 {% endtabs %}
@@ -239,11 +245,13 @@ A range of cells can be programmatically cut to the clipboard by using the [CutR
 {% tabs %}
 {% highlight c# %}
 GridRangeInfo range = GridRangeInfo.Cells(2, 2, 4, 4);
+
 //Cuts and copies the contents of a specified range of cells to clipboard.
 this.gridControl1.CutPaste.CutRange(range, false);
 {% endhighlight %}
 {% highlight vb %}
 Dim range As GridRangeInfo = GridRangeInfo.Cells(2, 2, 4, 4)
+
 'Cuts and copies the contents of a specified range of cells to clipboard.
 Me.gridControl1.CutPaste.CutRange(range, False)
 {% endhighlight %}
@@ -271,19 +279,23 @@ Me.gridControl1.CutPaste.ClipboardFlags = GridDragDropFlags.Disabled
 To get the clipboard operations can be performed or not for the given range of cells, use the [CanCut](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanCut.html), [CanCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanCopy.html) and [CanPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanPaste.html) methods.
 {% tabs %}
 {% highlight c# %}
-//Get the content can be copied to the Clipboard or not
+//Get the content can be copied to the Clipboard or not.
 bool allowCopy = this.gridControl1.Model.CutPaste.CanCopy();
-//Get the content can be cut to the Clipboard or not
+
+//Get the content can be cut to the Clipboard or not.
 bool allowCut = this.gridControl1.Model.CutPaste.CanCut();
-// Get the content can be pasted to the Clipboard or not
+
+// Get the content can be pasted to the Clipboard or not.
 bool allowPaste = this.gridControl1.Model.CutPaste.CanPaste();
 {% endhighlight %}
 {% highlight vb %}
-'Get the content can be copied to the Clipboard or not
+'Get the content can be copied to the Clipboard or not.
 Dim allowCopy As Boolean = Me.gridControl1.Model.CutPaste.CanCopy()
-'Get the content can be cut to the Clipboard or not
+
+'Get the content can be cut to the Clipboard or not.
 Dim allowCut As Boolean = Me.gridControl1.Model.CutPaste.CanCut()
-' Get the content can be pasted to the Clipboard or not
+
+' Get the content can be pasted to the Clipboard or not.
 Dim allowPaste As Boolean = Me.gridControl1.Model.CutPaste.CanPaste()
 {% endhighlight %}
 {% endtabs %}
@@ -296,46 +308,46 @@ this.gridControl1.ClipboardCanCopy +=gridControl1_ClipboardCanCopy;
 this.gridControl1.ClipboardCanCut += gridControl1_ClipboardCanCut;
 void gridControl1_ClipboardCanCut(object sender, GridCutPasteEventArgs e)
 {         
-    //disables the cut to the clipboard
+//Disables the cut to the clipboard.
     e.Handled = true;
     e.Result = false;
 }
 
 void gridControl1_ClipboardCanPaste(object sender, GridCutPasteEventArgs e)
 {
-    //Cancel the pasting of clipboard content to grid
+
+//Cancel the pasting of clipboard content to grid.
     e.Handled = true;
     e.Result = false;
 }
 
 void gridControl1_ClipboardCanCopy(object sender, GridCutPasteEventArgs e)
 {
-    //disables the copy to the clipboard
+//Disables the copy to the clipboard.
     e.Handled = true;
     e.Result = false;
 }
 {% endhighlight %}
 {% highlight vb %}
 'Clipboard Events
-'Clipboard Events
 AddHandler gridControl1.ClipboardCanPaste, AddressOf gridControl1_ClipboardCanPaste
 AddHandler gridControl1.ClipboardCanCopy, AddressOf gridControl1_ClipboardCanCopy
 AddHandler gridControl1.ClipboardCanCut, AddressOf gridControl1_ClipboardCanCut
 
 Private Sub gridControl1_ClipboardCanCut(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
-	'disables the cut to the clipboard
+'Disables the cut to the clipboard.
 	e.Handled = True
 	e.Result = False
 End Sub
 
 Private Sub gridControl1_ClipboardCanPaste(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
-	' Cancel the pasting of clipboard content to grid
+' Cancel the pasting of clipboard content to grid.
 	e.Handled = True
 	e.Result = False
 End Sub
 
 Private Sub gridControl1_ClipboardCanCopy(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
-	'disables the copy to the clipboard
+'disables the copy to the clipboard.
 	e.Handled = True
 	e.Result = False
 End Sub
@@ -390,7 +402,8 @@ The pasting operation can be prevented for particular cells by handling the [Pas
 this.gridControl1.PasteCellText += new GridPasteCellTextEventHandler(gridControl1_PasteCellText);
 void gridControl1_PasteCellText(object sender, GridPasteCellTextEventArgs e)
 {
-    //Prevent pasting the clipboard data in row 
+
+//Prevent pasting the clipboard data in row. 
     if (e.RowIndex == 3)
         e.Cancel = true;
 }
@@ -398,7 +411,8 @@ void gridControl1_PasteCellText(object sender, GridPasteCellTextEventArgs e)
 {% highlight vb %}
 Private Me.gridControl1.PasteCellText += New GridPasteCellTextEventHandler(AddressOf gridControl1_PasteCellText)
 Private Sub gridControl1_PasteCellText(ByVal sender As Object, ByVal e As GridPasteCellTextEventArgs)
-	'Prevent pasting the clipboard data in row 
+
+'Prevent pasting the clipboard data in row. 
 	If e.RowIndex = 3 Then
 		e.Cancel = True
 	End If
@@ -414,11 +428,13 @@ this.gridControl1.CurrentCellControlKeyMessage += new GridCurrentCellControlKeyM
 void gridControl1_CurrentCellControlKeyMessage(object sender, GridCurrentCellControlKeyMessageEventArgs e)
 {
     Keys keyCode = (Keys)((int)e.Msg.WParam) & Keys.KeyCode;
-    //Condition for Ctr+V keys
+
+//Condition for Ctr+V keys.
     if ((Control.ModifierKeys & Keys.Control) != 0 && keyCode == Keys.V)
     {
         GridCurrentCell cc = this.gridControl1.CurrentCell;
-        //set the row 3 as prevent from  paste
+
+//Set the row 3 as prevent from  paste.
         if (cc.RowIndex == 3)
             e.Handled = true;
         e.Result = true;
@@ -429,7 +445,7 @@ void gridControl1_CurrentCellControlKeyMessage(object sender, GridCurrentCellCon
 AddHandler gridControl1.CurrentCellControlKeyMessage, AddressOf gridControl1_CurrentCellControlKeyMessage
 Private Sub gridControl1_CurrentCellControlKeyMessage(ByVal sender As Object, ByVal e As GridCurrentCellControlKeyMessageEventArgs)
 	Dim keyCode As Keys = CType(CInt(Fix(e.Msg.WParam)), Keys) And Keys.KeyCode
-	'Condition for Ctr+V keys
+'Condition for Ctr+V keys.
 	If (Control.ModifierKeys And Keys.Control) <> 0 AndAlso keyCode = Keys.V Then
 		Dim cc As GridCurrentCell = Me.gridControl1.CurrentCell
 		'set the row 3 as prevent from  paste

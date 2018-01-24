@@ -51,15 +51,17 @@ The [ConverterOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/gri
 By default, [GridExcelConverterControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl.html) exports all elements in the grid. The following code example illustrates how to include both row and column headers during the export.
 {% tabs %}
 {% highlight c# %}
-//Converter to export the contents of the Grid to Excel
+//Converter to export the contents of the Grid to Excel.
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
+
 //Set converter options to export the Grid with Row Headers and Column Headers
 excelConverter.GridToExcel(this.gridControl1.Model, "SampleExcel.xlsx", ConverterOptions.ColumnHeaders | ConverterOptions.RowHeaders);
 {% endhighlight %}
 {% highlight vb %}
-'Converter to export the contents of the Grid to Excel
+'Converter to export the contents of the Grid to Excel.
 Dim excelConverter As New GridExcelConverterControl()
-'Set converter options to export the Grid with Row Headers and Column Headers
+
+'Set converter options to export the Grid with Row Headers and Column Headers.
 excelConverter.GridToExcel(Me.gridControl1.Model, "SampleExcel.xlsx", ConverterOptions.ColumnHeaders Or ConverterOptions.RowHeaders)
 {% endhighlight %}
 {% endtabs %}
@@ -71,17 +73,21 @@ The borders and Images of the GridControl can be exported to the Excel by using 
 {% tabs %}
 {% highlight c# %}
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
-// To export the Grid with applied borders to the Excel file
+
+// To export the Grid with applied borders to the Excel file.
 excelConverter.ExportBorders = true;
-// To export the images to the Excel  
+
+// To export the images to the Excel.  
 excelConverter.ExportImage = true;
 excelConverter.GridToExcel(this.gridControl1.Model, "FileName.xls", ConverterOptions.Default);
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New GridExcelConverterControl()
-' To export the Grid with applied borders to the Excel file
+
+' To export the Grid with applied borders to the Excel file.
 excelConverter.ExportBorders = True
-' To export the images to the Excel  
+
+' To export the images to the Excel.  
 excelConverter.ExportImage = True
 excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptions.Default)
 {% endhighlight %}
@@ -97,20 +103,20 @@ The following example shows the GridControl content is resized based on its cont
 {% tabs %}
 {% highlight c# %}
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
-// Enabling row heights to be fitted
+// Enabling row heights to be fitted.
 excelConverter.AutoFitRows = true;
 
-// Enabling column widths to be fitted
+// Enabling column widths to be fitted.
 excelConverter.AutoFitColumns = true;
 
 excelConverter.GridToExcel(this.gridControl1.Model, "FileName.xls", ConverterOptions.Default);
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New GridExcelConverterControl()
-' Enabling row heights to be fitted
+' Enabling row heights to be fitted.
 excelConverter.AutoFitRows = True
 
-' Enabling column widths to be fitted
+' Enabling column widths to be fitted.
 excelConverter.AutoFitColumns = True
 
 excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptions.Default)
@@ -134,25 +140,33 @@ The following example shows the GridControl is exported with the default row hei
 {% tabs %}
 {% highlight c# %}
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
-//Disabling row height to be exported
+
+//Disabling row height to be exported.
 excelConverter.CanExportRowHeight = false;
+
 //Disabling column width to be exported.
 excelConverter.CanExportColumnWidth = false;
-//Setting default column width
+
+//Setting default column width.
 excelConverter.DefaultColumnWidth = 40;
-//Setting default row height
+
+//Setting default row height.
 excelConverter.DefaultRowHeight = 30;
 excelConverter.GridToExcel(this.gridControl1.Model, "FileName.xls", ConverterOptions.Default);
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New GridExcelConverterControl()
-'Disabling row height to be exported
+
+'Disabling row height to be exported.
 excelConverter.CanExportRowHeight = False
+
 'Disabling column width to be exported.
 excelConverter.CanExportColumnWidth = False
-'Setting default column width
+
+'Setting default column width.
 excelConverter.DefaultColumnWidth = 40
-'Setting default row height
+
+'Setting default row height.
 excelConverter.DefaultRowHeight = 30
 excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptions.Default)
 {% endhighlight %}
@@ -166,17 +180,17 @@ The `GridExcelConverterControl` lets you export a particular range of cells to E
 The particular range of cells can be exported to Excel by using [ExportRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~ExportRange.html) method.
 {% tabs %}
 {% highlight c# %}
-//Create converter for export grid to excel
+//Create converter for export grid to excel.
 GridExcelConverterControl converter = new GridExcelConverterControl();
 
-//Convert the specific row range of Grid to Excel
+//Convert the specific row range of Grid to Excel.
 converter.ExportRange(GridRangeInfo.Rows(4, 6), this.gridControl1.Model, "FileName", ConverterOptions.Default);
 {% endhighlight %}
 {% highlight vb %}
-'Create converter for export grid to excel
+'Create converter for export grid to excel.
 Dim converter As New GridExcelConverterControl()
 
-'Convert the specific range of Grid to Excel
+'Convert the specific range of Grid to Excel.
 converter.ExportRange(GridRangeInfo.Rows(4, 6), Me.gridControl1.Model, "FileName", ConverterOptions.Default)
 {% endhighlight %}
 {% endtabs %}
@@ -186,17 +200,17 @@ converter.ExportRange(GridRangeInfo.Rows(4, 6), Me.gridControl1.Model, "FileName
 The `GridExcelConverterControl` provides support to export the ranges which are all selected in the GridControl. To export the selected ranges to Excel, the [SelectedExport](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~SelectedExport.html) method can be used.
 {% tabs %}
 {% highlight c# %}
-//Create converter for export grid to excel
+//Create converter for export grid to excel.
 GridExcelConverterControl converter = new GridExcelConverterControl();
 
-//Convert the selected row range of Grid to Excel
+//Convert the selected row range of Grid to Excel.
 converter. SelectedExport(this.gridControl1.Model, "FileName", ConverterOptions.Default);
 {% endhighlight %}
 {% highlight vb %}
-'Create converter for export grid to excel
+'Create converter for export grid to excel.
 Dim converter As New GridExcelConverterControl()
 
-'Convert the selected range of Grid to Excel
+'Convert the selected range of Grid to Excel.
 converter. SelectedExport(Me.gridControl1.Model, "FileName", ConverterOptions.Default)
 {% endhighlight %}
 {% endtabs %}
@@ -207,13 +221,15 @@ The GridControl will be exported to Excel with styles including font, back color
 {% tabs %}
 {% highlight c# %}
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
-// Disabling exporting with styles
+
+// Disabling exporting with styles.
 excelConverter.ExportStyle = true
 excelConverter.GridToExcel(this.gridControl1.Model, "FileName.xls", ConverterOptions.Default);
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New GridExcelConverterControl()
-' Disabling exporting with styles
+
+' Disabling exporting with styles.
 excelConverter.ExportStyle = true excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptions.Default)
 {% endhighlight %}
 {% endtabs %}
@@ -233,14 +249,16 @@ The following example shows the GridControl is exported with hidden columns with
 {% tabs %}
 {% highlight c# %}
 Syncfusion.GridExcelConverter.GridExcelConverterControl excelConverter = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
-//To Avoid Exporting Hidden Rows and Columns
+
+//To Avoid Exporting Hidden Rows and Columns.
 excelConverter.ExportHiddenColumnsMode = GridExcelConverterControl.ExportHiddenColumns. ExportAndHide;
 excelConverter.ExportHiddenRowsMode = GridExcelConverterControl.ExportHiddenRows. ExportAndHide;
 excelConverter.GridToExcel(this.gridControl1.Model, "FileName.xlsx");
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New Syncfusion.GridExcelConverter.GridExcelConverterControl()
-'To Avoid Exporting Hidden Rows and Columns
+
+'To Avoid Exporting Hidden Rows and Columns.
 excelConverter.ExportHiddenColumnsMode = GridExcelConverterControl.ExportHiddenColumns. ExportAndHide
 excelConverter.ExportHiddenRowsMode = GridExcelConverterControl.ExportHiddenRows. ExportAndHide
 excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xlsx")
@@ -274,14 +292,18 @@ saveFileDialog.DefaultExt = ".xls";
 if(saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 {
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
-//Create new workbook with two worksheets named sheet1 and sheet2
+
+//Create new workbook with two worksheets named sheet1 and sheet2.
 IWorkbook workbook = ExcelUtils.CreateWorkbook(new string[] { "sheet1", "sheet2" });
-//Export the each grid separately to the worksheets
+
+//Export the each grid separately to the worksheets.
 excelConverter.GridToExcel(this.gridControl1.Model, workbook.Worksheets[0]);
 excelConverter.GridToExcel(this.gridControl1.Model, workbook.Worksheets[1]);
-//save the workbook with the filename
+
+//save the workbook with the filename.
 workbook.SaveAs(saveFileDialog.FileName);
-//close the workbook object
+
+//close the workbook object.
 workbook.Close();
 }
 {% endhighlight %}
@@ -292,14 +314,18 @@ saveFileDialog.DefaultExt = ".xls"
 
 If saveFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
 Dim excelConverter As New GridExcelConverterControl()
-'Create new workbook with two worksheets named sheet1 and sheet2
+
+'Create new workbook with two worksheets named sheet1 and sheet2.
 Dim workbook As IWorkbook = ExcelUtils.CreateWorkbook(New String() { "sheet1", "sheet2" })
-'Export the each grid separately to the worksheets
+
+'Export the each grid separately to the worksheets.
 excelConverter.GridToExcel(Me.gridControl1.Model, workbook.Worksheets(0))
 excelConverter.GridToExcel(Me.gridControl1.Model, workbook.Worksheets(1))
-'save the workbook with the filename
+
+'Save the workbook with the filename.
 workbook.SaveAs(saveFileDialog.FileName)
-'close the workbook object
+
+'Close the workbook object.
 workbook.Close()
 End If
 {% endhighlight %}
@@ -312,20 +338,23 @@ The following example shows on how to change a row back color to pink on exporti
 {% tabs %}
 {% highlight c# %}
 Syncfusion.GridExcelConverter.GridExcelConverterControl excelConverter = new Syncfusion.GridExcelConverter.GridExcelConverterControl();
-// Triggering the event
+
+// Triggering the event.
 excelConverter.QueryImportExportCellInfo += new GridImportExportCellInfoEventHandler(excelConverter _QueryImportExportCellInfo);
 excelConverter.GridToExcel(this.gridControl1.Model, "Sample.xlsx");
 
 void excelConverter _QueryImportExportCellInfo(object sender, GridImportExportCellInfoEventArgs e)
 {
-    // Checking whether it is Exporting action
+
+// Checking whether it is Exporting action.
     if (e.Action == GridConverterAction.Export)
     {
-         // Setting backcolor for first row cells in Excel sheet.
+
+// Setting backcolor for first row cells in Excel sheet.
          if (e.RowIndex == 1)
          {
               e.ExcelCell.CellStyle.Color = Color.Pink;
-              // Handled property has to be enabled to confirm the changes
+// Handled property has to be enabled to confirm the changes.
               e.Handled = true;
           }
     }
@@ -334,17 +363,21 @@ void excelConverter _QueryImportExportCellInfo(object sender, GridImportExportCe
 {% endhighlight %}
 {% highlight vb %}
 Private excelConverter As New Syncfusion.GridExcelConverter.GridExcelConverterControl()
-' Triggering the event
+
+' Triggering the event.
 Private excelConverter.QueryImportExportCellInfo += New GridImportExportCellInfoEventHandler(excelConverter AddressOf _QueryImportExportCellInfo)
 excelConverter.GridToExcel(Me.gridControl1.Model, "Sample.xlsx")
 
 void excelConverter _QueryImportExportCellInfo(Object sender, GridImportExportCellInfoEventArgs e)
-    ' Checking whether it is Exporting action
+ 
+ ' Checking whether it is Exporting action.
     If e.Action = GridConverterAction.Export Then
-         ' Setting backcolor for first row cells in Excel sheet.
+
+' Setting backcolor for first row cells in Excel sheet.
          If e.RowIndex = 1 Then
               e.ExcelCell.CellStyle.Color = Color.Pink
-              ' Handled property has to be enabled to confirm the changes
+
+' Handled property has to be enabled to confirm the changes.
               e.Handled = True
          End If
     End If
@@ -358,15 +391,19 @@ The following example shows the row back color is changed to pink color in Excel
 To Export the contents of the grid to PDF file, use the [GridPDFConverter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter.html) class. To have this class, refer the `Syncfusion.PDF.Base.dll` and `GridHelperClasses.Windows.dll` to the application. The[ExportToPDF](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ExportToPdf.html) method of this converter is used to export the content of grid to the PDF. 
 {% tabs %}
 {% highlight c# %}
-//Create PDF converter 
+
+//Create PDF converter. 
 GridPDFConverter pdfConverter = new GridPDFConverter();
-//Export the content of Grid to the PDF file
+
+//Export the content of Grid to the PDF file.
 pdfConverter.ExportToPdf("Sample.pdf", this.gridControl1);
 {% endhighlight %}
 {% highlight vb %}
-'Create PDF converter 
+
+'Create PDF converter. 
 Dim pdfConverter As New GridPDFConverter()
-'Export the content of Grid to the PDF file
+
+'Export the content of Grid to the PDF file.
 pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
@@ -376,26 +413,26 @@ pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 The PDF converter provides the options to export the contents of the grid with header/footer. This can be achieved by enabling the [ShowHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ShowHeader.html) and [ShowFooter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~ShowFooter.html) properties of the converter. 
 {% tabs %}
 {% highlight c# %}
-//Create PDF converter 
+//Create PDF converter. 
 GridPDFConverter pdfConverter = new GridPDFConverter();
 
-// Add the Header and Footer to the Exported pdf
+// Add the Header and Footer to the Exported pdf.
 pdfConverter.ShowHeader = true;
 pdfConverter.ShowFooter = true;
 
-//Export the content of Grid to the PDF file
+//Export the content of Grid to the PDF file.
 pdfConverter.ExportToPdf("Sample.pdf", this.gridControl1);
 {% endhighlight %}
 
 {% highlight vb %}
-'Create PDF converter 
+'Create PDF converter. 
 Dim pdfConverter As New GridPDFConverter()
 
-' Add the Header and Footer to the Exported pdf
+' Add the Header and Footer to the Exported pdf.
 pdfConverter.ShowHeader = True
 pdfConverter.ShowFooter = True
 
-'Export the content of Grid to the PDF file
+'Export the content of Grid to the PDF file.
 pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
@@ -403,34 +440,34 @@ pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 The height of the header and footer of the exporter PDF file can be set by using the [HeaderHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~HeaderHeight.html) and [FooterHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPDFConverter~FooterHeight.html) properties.
 {% tabs %}
 {% highlight c# %}
-//Create PDF converter
+//Create PDF converter.
 GridPDFConverter pdfConverter = new GridPDFConverter();
 
-// Add the Header and Footer to the Exported pdf
+// Add the Header and Footer to the Exported pdf.
 pdfConverter.ShowHeader = true;
 pdfConverter.ShowFooter = true;
 
-//Setting the Height of the Header and Footer
+//Setting the Height of the Header and Footer.
 pdfConverter.HeaderHeight = 100;
 pdfConverter.FooterHeight = 50;
 
-//Export the content of Grid to the PDF file
+//Export the content of Grid to the PDF file.
 pdfConverter.ExportToPdf("Sample.pdf", this.gridControl1);
 {% endhighlight %}
 
 {% highlight vb %}
-'Create PDF converter
+'Create PDF converter.
 Dim pdfConverter As New GridPDFConverter()
 
-' Add the Header and Footer to the Exported pdf
+' Add the Header and Footer to the Exported pdf.
 pdfConverter.ShowHeader = True
 pdfConverter.ShowFooter = True
 
-'Setting the Height of the Header and Footer
+'Setting the Height of the Header and Footer.
 pdfConverter.HeaderHeight = 100
 pdfConverter.FooterHeight = 50
 
-'Export the content of Grid to the PDF file
+'Export the content of Grid to the PDF file.
 pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
@@ -444,23 +481,23 @@ To resolve this exception, the GridControl can be exported as two or more docume
 
 {% tabs %}
 {% highlight c# %}
-//Create PDF converter 
+//Create PDF converter. 
 GridPDFConverter pdfConverter = new GridPDFConverter();
 
-//First 40000 records will be exported
+//First 40000 records will be exported.
 pdfConverter.ExportRange = 40000;
 
-//Exporting and merging with another PDF document
+//Exporting and merging with another PDF document.
 pdfConverter.ExportToPdfWithMerge("Sample1.pdf", this.gridControl1);
 {% endhighlight %}
 {% highlight vb %}
-'Create PDF converter 
+'Create PDF converter. 
 Dim pdfConverter As New GridPDFConverter()
 
-'First 40000 records will be exported
+'First 40000 records will be exported.
 pdfConverter.ExportRange = 40000
 
-' Exporting and merging with another PDF document
+' Exporting and merging with another PDF document.
 pdfConverter.ExportToPdfWithMerge("Sample1.pdf", Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
@@ -477,49 +514,47 @@ The PDF converter has `Exporting` and `Exported` events to notify the exporting 
 
 {% tabs %}
 {% highlight c# %}
-//Create PDF converter 
+//Create PDF converter. 
 GridPDFConverter pdfConverter = new GridPDFConverter();
-//Used to perform the action while exporting the Grid
+//Used to perform the action while exporting the Grid.
 pdfConverter.Exporting += new GridPDFConverter.PDFExportingEventHandler(pdfConverter_Exporting);
 pdfConverter.Exported += new GridPDFConverter.PDFExportedEventHandler(pdfConverter_Exported);
 
 private void pdfConverter_Exporting(object sender, PDFExportingEventArgs e)
 {
-     // Getting the pdf document
+     // Getting the pdf document.
      PdfDocument pdfDocument = e.PdfDocument;
 
-      // To-Do
-
+      // To-Do.
 }
 
 private void pdfConverter_Exported(object sender, PDFExportedEventArgs e)
 {
-      // Getting the pdf document
+      // Getting the pdf document.
      PdfDocument pdfDocument = e.PdfDocument;
 
-     // To-Do
+     // To-Do.
 }
 
 {% endhighlight %}
 {% highlight vb %}
 'Create PDF converter 
 Private pdfConverter As New GridPDFConverter()
-'Used to perform the action while exporting the Grid
+'Used to perform the action while exporting the Grid.
 Private pdfConverter.Exporting += New GridPDFConverter.PDFExportingEventHandler(AddressOf pdfConverter_Exporting)
 Private pdfConverter.Exported += New GridPDFConverter.PDFExportedEventHandler(AddressOf pdfConverter_Exported)
 
 Private Sub pdfConverter_Exporting(ByVal sender As Object, ByVal e As PDFExportingEventArgs)
-     '  Getting the pdf document
+     '  Getting the pdf document.
      Dim pdfDocument As PdfDocument = e.PdfDocument
-     ' To-Do
+     ' To-Do.
 End Sub
 
 Private Sub pdfConverter_Exported(ByVal sender As Object, ByVal e As PDFExportedEventArgs)
-     '  Getting the pdf document
+     '  Getting the pdf document.
      Dim pdfDocument As PdfDocument = e.PdfDocument
-     ' To-Do
+     ' To-Do.
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 The following example shows the header and footer is exported to PDF,
@@ -534,16 +569,16 @@ void pdfConverter_DrawPDFHeader(object sender, PDFHeaderFooterEventArgs e)
     PdfSolidBrush brush = new PdfSolidBrush(Color.FromArgb(44, 71, 120));
     PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 16, PdfFontStyle.Bold);
 
-    //Set formatting's for the text
+ //Set formatting's for the text.
     PdfStringFormat format = new PdfStringFormat();
     format.Alignment = PdfTextAlignment.Center;
     format.LineAlignment = PdfVerticalAlignment.Middle;
 
-    //Draw title
+ //Draw title.
     header.Graphics.DrawString("Syncfusion Essential PDF", font, brush, new RectangleF(0, 0, header.Width, header.Height), format);           
 }
 
-//Displaying Footer with the page number
+//Displaying Footer with the page number.
 void pdfConverter_DrawPDFFooter(object sender, PDFHeaderFooterEventArgs e)
 {
     PdfPageTemplateElement footer = e.HeaderFooterTemplate;
@@ -558,10 +593,10 @@ void pdfConverter_DrawPDFFooter(object sender, PDFHeaderFooterEventArgs e)
     format.Alignment = PdfTextAlignment.Right;
     format.LineAlignment = PdfVerticalAlignment.Bottom;
 
-    //Create page number field
+//Create page number field.
     PdfPageNumberField pageNumber = new PdfPageNumberField(font, brush);
 
-    //Create page count field
+//Create page count field.
     PdfPageCountField count = new PdfPageCountField(font, brush);
 
     PdfCompositeField compositeField = new PdfCompositeField(font, brush, "Page {0} of {1}", pageNumber, count);
@@ -579,16 +614,16 @@ Private Sub pdfConverter_DrawPDFHeader(ByVal sender As Object, ByVal e As PDFHea
     Dim brush As New PdfSolidBrush(Color.FromArgb(44, 71, 120))
     Dim font As PdfFont = New PdfStandardFont(PdfFontFamily.Helvetica, 16, PdfFontStyle.Bold)
 
-    'Set formatting's for the text
+'Set formatting's for the text.
     Dim format As New PdfStringFormat()
     format.Alignment = PdfTextAlignment.Center
     format.LineAlignment = PdfVerticalAlignment.Middle
 
-    'Draw title
+'Draw title.
     header.Graphics.DrawString("Syncfusion Essential PDF", font, brush, New RectangleF(0, 0, header.Width, header.Height), format)
 End Sub
 
-'Displaying Footer with the page number
+'Displaying Footer with the page number.
 Private Sub pdfConverter_DrawPDFFooter(ByVal sender As Object, ByVal e As PDFHeaderFooterEventArgs)
     Dim footer As PdfPageTemplateElement = e.HeaderFooterTemplate
     Dim brush As New PdfSolidBrush(Color.Gray)
@@ -602,10 +637,10 @@ Private Sub pdfConverter_DrawPDFFooter(ByVal sender As Object, ByVal e As PDFHea
     format.Alignment = PdfTextAlignment.Right
     format.LineAlignment = PdfVerticalAlignment.Bottom
 
-    'Create page number field
+ 'Create page number field.
     Dim pageNumber As New PdfPageNumberField(font, brush)
 
-    'Create page count field
+'Create page count field.
     Dim count As New PdfPageCountField(font, brush)
 
     Dim compositeField As New PdfCompositeField(font, brush, "Page {0} of {1}", pageNumber, count)
@@ -625,12 +660,12 @@ N> &lt;Installation Location&gt;\Syncfusion\EssentialStudio\&lt;Product Version&
 To export the contents of the grid to word, use the [GridToWord](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridWordConverter~GridToWord.html) method of the [GridWordConverter](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridWordConverter.html) class which is derived from [GridWordConverterBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridWordConverterBase.html). This method does the conversion of grid content in a tabular format to the word file.
 {% tabs %}
 {% highlight c# %}
-//Create Converter to export the contents of Grid to Excel
+//Create Converter to export the contents of Grid to Excel.
 GridWordConverter wordConverter = new GridWordConverter();
 wordConverter.GridToWord("Sample.doc", gridControl1);
 {% endhighlight %}
 {% highlight vb %}
-'Create Converter to export the contents of Grid to Excel
+'Create Converter to export the contents of Grid to Excel.
 Dim wordConverter As New GridWordConverter()
 wordConverter.GridToWord("Sample.doc", gridControl1)
 {% endhighlight %}
@@ -640,9 +675,11 @@ The word converter provides the option to display the Header/Footer to the expor
 {% tabs %}
 {% highlight c#%}
 // “true” defines the ShowHeader and ShowFooter to export.
-// i.e. GridWordConverter(bool showHeader, bool showFooter)
+
+// i.e. GridWordConverter(bool showHeader, bool showFooter).
 GridWordConverter converter = new GridWordConverter(true,true);
-//To Set the Header and Footer for the Exported word document
+
+//To Set the Header and Footer for the Exported word document.
 wordConverter.DrawHeader += new GridWordConverterBase.DrawDocHeaderFooterEventHandler(converter_DrawHeader);
 wordConverter.DrawFooter += new GridWordConverterBase.DrawDocHeaderFooterEventHandler(converter_DrawFooter);
 converter.GridToWord("Sample.doc", gridControl1);
@@ -658,9 +695,11 @@ void converter_DrawHeader(object sender, DocHeaderFooterEventArgs e)
 
 {% highlight vb %}
 ' “true” defines the ShowHeader and ShowFooter to export.
-' i.e. GridWordConverter(bool showHeader, bool showFooter)
+
+' i.e. GridWordConverter(bool showHeader, bool showFooter).
 Private converter As New GridWordConverter(True,True)
-'To Set the Header and Footer for the Exported word document
+
+'To Set the Header and Footer for the Exported word document.
 Private wordConverter.DrawHeader += New GridWordConverterBase.DrawDocHeaderFooterEventHandler(AddressOf converter_DrawHeader)
 Private wordConverter.DrawFooter += New GridWordConverterBase.DrawDocHeaderFooterEventHandler(AddressOf converter_DrawFooter)
 converter.GridToWord("Sample.doc", gridControl1)
@@ -690,13 +729,14 @@ The following example shows the GridControl is exported to the CSV format,
 {% tabs %}
 {% highlight c# %}
 GridCSVConverter csvConverter = new GridCSVConverter();
-//Exporting to CSV format
-csvConverter.GridToCSV(this.gridControl1.Model, "Sample.csv");
 
+//Exporting to CSV format.
+csvConverter.GridToCSV(this.gridControl1.Model, "Sample.csv");
 {% endhighlight %}
 {% highlight vb %}
 Dim csvConverter As New GridCSVConverter()
-'Exporting to CSV format
+
+'Exporting to CSV format.
 csvConverter.GridToCSV(Me.gridControl1.Model, "Sample.csv")
 {% endhighlight %}
 {% endtabs %}
@@ -708,12 +748,14 @@ The following example shows the rows 4 to 8 are exported to CSV,
 {% tabs %}
 {% highlight c# %}
 GridCSVConverter csvConverter = new GridCSVConverter();
-//Exporting the range of cells to CSV
+
+//Exporting the range of cells to CSV.
 csvConverter.ExportRange(GridRangeInfo.Rows(4, 8), this.gridControl1.Model, "Sample.csv");
 {% endhighlight %}
 {% highlight vb %}
 Dim csvConverter As New GridCSVConverter()
-'Exporting the range of cells to CSV
+
+'Exporting the range of cells to CSV.
 csvConverter.ExportRange(GridRangeInfo.Rows(4, 8), Me.gridControl1.Model, "Sample.csv")
 {% endhighlight %}
 {% endtabs %}
@@ -725,12 +767,14 @@ The following example shows the rows 4 to 8 are exported to CSV,
 {% tabs %}
 {% highlight c# %}
 GridCSVConverter csvConverter = new GridCSVConverter();
-//Exporting the selected ranges
+
+//Exporting the selected ranges.
 csvConverter.SelectedExport(this.gridControl1.Model, "Sample.csv");
 {% endhighlight %}
 {% highlight vb %}
 Dim csvConverter As New GridCSVConverter()
-'Exporting the selected ranges
+
+'Exporting the selected ranges.
 csvConverter.SelectedExport(Me.gridControl1.Model, "Sample.csv")
 {% endhighlight %}
 {% endtabs %}
@@ -769,7 +813,7 @@ StringBuilder ExportAsHTML(GridRangeInfoList rangeList)
                 object o = (object)style.FormattedText;
                 string tag = "td";
 
-                //add a non-breaking space (&nbsp;) to empty cells, to make the borders visible:
+//Add a non-breaking space (&nbsp;) to empty cells, to make the borders visible.
                 if (!style.HasText)
                     o = (object)"&nbsp;";
 
@@ -805,8 +849,10 @@ StringBuilder ExportAsHTML(GridRangeInfoList rangeList)
                             }
                             break;
                         case "PushButton":
-                            //To show button uncomment below
-                            //html.AppendFormat("<input type=\"button\" value=\"{0}\">",style.Description);
+
+//To show button uncomment below.
+                            
+//html.AppendFormat("<input type=\"button\" value=\"{0}\">",style.Description);
                             html.Append(style.Description);
                             break;
                         case "RadioButton":
@@ -861,7 +907,7 @@ Private Function ExportAsHTML(ByVal rangeList As GridRangeInfoList) As StringBui
                 Dim o As Object = CObj(style.FormattedText)
                 Dim tag As String = "td"
 
-                'add a non-breaking space (&nbsp;) to empty cells, to make the borders visible:
+'Add a non-breaking space (&nbsp;) to empty cells, to make the borders visible:
                 If Not style.HasText Then
                     o = CObj("&nbsp;")
                 End If
@@ -891,8 +937,10 @@ Private Function ExportAsHTML(ByVal rangeList As GridRangeInfoList) As StringBui
                                 html.AppendFormat("<img src=""{0}"">", srcFile)
                             End If
                         Case "PushButton"
-                            'To show button uncomment below
-                            'html.AppendFormat("<input type=\"button\" value=\"{0}\">",style.Description);
+
+'To show button uncomment below.
+                           
+'html.AppendFormat("<input type=\"button\" value=\"{0}\">",style.Description);
                             html.Append(style.Description)
                         Case "RadioButton"
                             For rc As Integer = 0 To style.ChoiceList.Count - 1
@@ -930,10 +978,12 @@ Convert the string which is formed as HTML tags to the HTML file,
 {% highlight c# %}
 private void ExportToHTML(object sender, EventArgs e)
 {
-    //Getting the GridControl table range.
+
+//Getting the GridControl table range.
     GridRangeInfoList range = new GridRangeInfoList();
     range.Add(GridRangeInfo.Table());
-    //Exporting the GridControl content to HTML
+
+//Exporting the GridControl content to HTML.
     System.Diagnostics.Process.Start(CopyHtmlToClipBoard(ExportAsHTML(range).ToString(), true));
 }
 
@@ -984,10 +1034,12 @@ public static string CopyHtmlToClipBoard(string html, bool e)
 {% endhighlight %}
 {% highlight vb %}
 Private Sub ExportToHTML(ByVal sender As Object, ByVal e As EventArgs)
-	'Getting the GridControl table range.
+
+'Getting the GridControl table range.
 	Dim range As New GridRangeInfoList()
 	range.Add(GridRangeInfo.Table())
-	'Exporting the GridControl content to HTML
+
+'Exporting the GridControl content to HTML.
 	System.Diagnostics.Process.Start(CopyHtmlToClipBoard(ExportAsHTML(range).ToString(), True))
 End Sub
 

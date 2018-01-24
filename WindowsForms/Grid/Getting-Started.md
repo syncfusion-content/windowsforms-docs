@@ -150,7 +150,6 @@ GridControl can be added through code-behind by following the below steps.
 //Initializing a new Grid.
  private Syncfusion.Windows.Forms.Grid.GridControl gridControl1 = new Syncfusion.Windows.Forms.Grid.GridControl();
 {% endhighlight %}
-
 {% highlight vb %}
 'Initializing a new Grid.
 Private gridControl1 As New Syncfusion.Windows.Forms.Grid.GridControl()
@@ -166,7 +165,6 @@ this.gridControl1.Size = new System.Drawing.Size(344, 250);
 
 this.Controls.Add(this.gridControl1);
 {% endhighlight %}
-
 {% highlight vb %}   
 'Add required size for the Grid.
 Me.gridControl1.Size = New System.Drawing.Size(344, 250)
@@ -190,20 +188,13 @@ gridControl1.ColCount = 4;
 
 //Looping through the cells and assigning the values based on row and column index
 for (int row = 1; row <= gridControl1.RowCount; row++)
-
 {
-
 for (int col = 1; col <= gridControl1.ColCount; col++)
-
 {
-
 gridControl1.Model[row, col].CellValue = string.Format("{0}/{1}", row, col);
-
 }
-
 }
 {% endhighlight %} 
-
 {% highlight vb %}  
 'Specifying row and column count
 gridControl1.RowCount = 15
@@ -212,13 +203,9 @@ gridControl1.ColCount = 4
 
 'Looping through the cells and assigning the values based on row and column index
 For row As Integer = 1 To gridControl1.RowCount
-
 For col As Integer = 1 To gridControl1.ColCount
-
 gridControl1.Model(row, col).CellValue = String.Format("{0}/{1}", row, col)
-
 Next col
-
 Next row
 {% endhighlight %}
 {% endtabs %}
@@ -236,40 +223,28 @@ gridControl1.ColCount = 4;
 
 //Data type of string array has been created here.
 string[,] table = new string[this.gridControl1.RowCount, this.gridControl1.ColCount];
-
 for (int row = 1; row <= this.gridControl1.RowCount; ++row)
-
 for (int col = 1; col <= this.gridControl1.ColCount; ++col)
-
 table[row - 1, col - 1] = string.Format("{0}/{1}", row, col);
 
 //Populating values using PopulateValues method
 this.gridControl1.PopulateValues(
-
 GridRangeInfo.Cells(1, 1, this.gridControl1.RowCount, this.gridControl1.ColCount),
-
 table);
 {% endhighlight %}
-
 {% highlight vb %}  
 'Specifying row and column count
 gridControl1.RowCount = 15
-
 gridControl1.ColCount = 4
 
 'DataTable and other related binding types can be populated in GridControl
 
 'Data type of string array has been created here.
  Dim table(Me.gridControl1.RowCount - 1, Me.gridControl1.ColCount - 1) As String
-
  For row As Integer = 1 To Me.gridControl1.RowCount
-
  For col As Integer = 1 To Me.gridControl1.ColCount
-
  table(row - 1, col - 1) = String.Format("{0}/{1}", row, col)
-
  Next col
-
  Next row
 
 'Populating values using PopulateValues method
@@ -290,35 +265,24 @@ this.gridControl1.QueryCellInfo += gridControl1_QueryCellInfo;
 
 //Assigning values by handling the QueryCellInfo event
 void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
-
 {
-
 if (e.RowIndex > 0 && e.ColIndex > 0)
-
 {
-
 e.Style.CellValue = string.Format("{0}/{1}", e.RowIndex, e.ColIndex);
-
 }
-
 }
 {% endhighlight %}
-
 {% highlight vb %}
 'Specifying row and column count
  gridControl1.Model.RowCount = 15
 
 gridControl1.Model.ColCount = 4
-
 AddHandler Me.gridControl1.QueryCellInfo, AddressOf gridControl1_QueryCellInfo 
 
 'Assigning values by handling the QueryCellInfo event
 void gridControl1_QueryCellInfo(Object sender, GridQueryCellInfoEventArgs e)
-
 If e.RowIndex > 0 AndAlso e.ColIndex > 0 Then
-
 e.Style.CellValue = String.Format("{0}/{1}", e.RowIndex, e.ColIndex)
-
 End If
 {% endhighlight %}	   
 {% endtabs %}
@@ -372,32 +336,23 @@ GridStyleInfo style = new GridStyleInfo();
 
 //Set properties to it.
 style.BackColor = Color.DarkGreen;
-
 style.TextColor = Color.White;
-
 style.Font.Facename = "Verdana";
-
 style.Font.Bold = true;
-
 style.Font.Size = 9f;
 
 //Apply the style to desired range of cells.
 this.gridControl1.ChangeCells(GridRangeInfo.Cells(2, 2, 4, 2), style);
 {% endhighlight %}
-
 {% highlight vb %}
 'Creates GridStyleInfo object.
 Dim style As New GridStyleInfo()
 
 'Set properties to it.
 style.BackColor = Color.DarkGreen
-
 style.TextColor = Color.White
-
 style.Font.Facename = "Verdana"
-
 style.Font.Bold = True
-
 style.Font.Size = 9f
 
 'Apply the style to desired range of cells.
@@ -418,7 +373,6 @@ For selecting single row or multiple range of rows in GridControl, set the [List
 {% highlight c# %}
 this.gridControl1.ListBoxSelectionMode = SelectionMode.None;
 {% endhighlight %}
-
 {% highlight vb %}
 Me.gridControl1.ListBoxSelectionMode = SelectionMode.None
 {% endhighlight %}
