@@ -115,11 +115,11 @@ The background of the GridControl can be filled with an image by using [Backgrou
 
 {% tabs %}
 {% highlight c# %}
-//To change the background image of grid control
+//To change the background image of grid control.
 this.gridControl.BackgroundImage = Image.FromFile(@"sync.jpg");
 {% endhighlight %}
 {% highlight vb %}
-' To change the background image of grid control
+' To change the background image of grid control.
 Me.gridControl.BackgroundImage = Image.FromFile("sync.jpg")
 {% endhighlight %}
 {% endtabs %}
@@ -177,11 +177,11 @@ To recover the background color to its default value, use the [ResetBackgroundCo
 
 {% tabs %}
 {% highlight c# %}
-//To recover the background color,
+//To recover the background color.
 this.gridControl.Properties.ResetBackgroundColor();
 {% endhighlight %}
 {% highlight vb %}
-' To recover the background color,
+' To recover the background color.
 Me.gridControl.Properties.ResetBackgroundColor()
 {% endhighlight %}
 {% endtabs %}
@@ -191,11 +191,11 @@ The [ColHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Sync
 
 {% tabs %}
 {% highlight c# %}
-// To remove Column header,
+// To remove Column header.
 this.gridControl.Properties.ColHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' To remove column header,
+' To remove column header.
 Me.gridControl.Properties.ColHeaders = False
 {% endhighlight %}
 {% endtabs %}
@@ -206,11 +206,11 @@ The visibility of the row headers in the grid can be set by using the [RowHeader
 
 {% tabs %}
 {% highlight c# %}
-'//To remove Row header,
+//To remove Row header.
 this.gridControl.Properties.RowHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' To remove Row header,
+' To remove Row header.
 Me.gridControl.Properties.RowHeaders = False
 {% endhighlight %}
 {% endtabs %}
@@ -221,11 +221,11 @@ The [NumberedColHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/g
 
 {% tabs %}
 {% highlight c# %}
-//Remove the Column header name
+//Remove the Column header name.
 this.gridControl.Model.Options.NumberedColHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' Remove the Column header name
+' Remove the Column header name.
 Me.gridControl.Model.Options.NumberedColHeaders = False
 {% endhighlight %}
 {% endtabs %}
@@ -236,11 +236,11 @@ The [NumberedRowHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/g
 
 {% tabs %}
 {% highlight c# %}
-//Remove the Row header numbers
+//Remove the Row header numbers.
 this.gridControl.Model.Options.NumberedRowHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' Remove the Row header numbers
+' Remove the Row header numbers.
 Me.gridControl.Model.Options.NumberedRowHeaders = False
 {% endhighlight %}
 {% endtabs %}
@@ -251,11 +251,11 @@ The color of the frozen grid lines can be set by using [FixedLinesColor](http://
 
 {% tabs %}
 {% highlight c# %}
-//Apply color for frozen gridlines
+//Apply color for frozen gridlines.
 this.gridControl.Properties.FixedLinesColor = Color.Red;
 {% endhighlight %}
 {% highlight vb %}
-'Apply color for frozen gridlines
+'Apply color for frozen gridlines.
 Me.gridControl.Properties.FixedLinesColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
@@ -266,11 +266,11 @@ To recover the `FixedLinesColor` to its default value, you can use [ResetFixedLi
 
 {% tabs %}
 {% highlight c# %}
-//To recover the FixedLinesColor,
+//To recover the FixedLinesColor.
 this.gridControl.Properties.ResetFixedLinesColor();
 {% endhighlight %}
 {% highlight vb %}
-' To recover the FixedLinesColor,
+' To recover the FixedLinesColor.
 Me.gridControl.Properties.ResetFixedLinesColor()
 {% endhighlight %}
 {% endtabs %}
@@ -280,11 +280,11 @@ The column header for the current cell can be highlighted by using [MarkColHeade
 
 {% tabs %}
 {% highlight c# %}
-//To highlight the Column header for the current cell,
+//To highlight the Column header for the current cell.
 this.gridControl.Properties.MarkColHeader = true;
 {% endhighlight %}
 {% highlight vb %}
-'To highlight the Column header for the current cell,
+'To highlight the Column header for the current cell.
 Me.gridControl.Properties.MarkColHeader = True
 {% endhighlight %}
 {% endtabs %}
@@ -296,11 +296,11 @@ The row header of the current cell can be highlighted by using [MarkRowHeader](h
 
 {% tabs %}
 {% highlight c# %}
-//To highlight the Column header for the current cell,
+//To highlight the Column header for the current cell.
 this.gridControl.Properties.MarkRowHeader = true;
 {% endhighlight %}
 {% highlight vb %}
-'To highlight the Column header for the current cell,
+'To highlight the Column header for the current cell.
 Me.gridControl.Properties.MarkRowHeader = True
 {% endhighlight %}
 {% endtabs %}
@@ -311,11 +311,11 @@ While resizing the columns or rows in grid at run time, a virtual marker will be
 
 {% tabs %}
 {% highlight c# %}
-//to set color for grid line marker
+//To set color for grid line marker.
 this.gridControl.Properties.ResizingCellsLinesColor = Color.Red;
 {% endhighlight %}
 {% highlight vb %}
-'to set color for grid line marker
+'To set color for grid line marker.
 Me.gridControl.Properties.ResizingCellsLinesColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
@@ -520,7 +520,7 @@ The custom borders around cells can be drawn by using [DrawCellFrameAppearance](
 
 {% tabs %}
 {% highlight c# %}
-//Draw Custom Borders
+//Draw Custom Borders.
 this.gridControl1.DrawCellFrameAppearance += gridControl1_DrawCellFrameAppearance;
 
 void gridControl1_DrawCellFrameAppearance(object sender, Syncfusion.Windows.Forms.Grid.GridDrawCellBackgroundEventArgs e)
@@ -590,7 +590,7 @@ Banner cells are multiple cells spanning a single background image. An image to 
 
 {% tabs %}
 {% highlight c# %}
-//Create Banner cells
+//Create Banner cells.
 GridStyleInfo style;
 style = this.gridControl1[1, 7];
 gridControl1.BanneredRanges.Add(GridRangeInfo.FromTlhw(1, 7, 8, 3));
@@ -599,7 +599,7 @@ style.Text = "Plan.jpg";
 style.TextColor = Color.Red;
 {% endhighlight %}
 {% highlight vb %}
-'Create Banner cells
+'Create Banner cells.
 Dim style As GridStyleInfo
 style = Me.gridControl1(1, 7)
 gridControl1.BanneredRanges.Add(GridRangeInfo.FromTlhw(1, 7, 8, 3))

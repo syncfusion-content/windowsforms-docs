@@ -165,12 +165,12 @@ void gridControl1_SelectionChanging(object sender, GridSelectionChangingEventArg
 
 {
 
-//prevent cell from selection
+//Prevent cell from selection
 if (e.Range.Contains(GridRangeInfo.Cell(2, 2)))
 
 e.Cancel = true;
 
-//prevent column from selection
+//Prevent column from selection
 if (e.Range.IntersectsWith(GridRangeInfo.Col(3)))
 
 e.Cancel = true;
@@ -184,14 +184,14 @@ Private Me.gridControl1.SelectionChanging += AddressOf gridControl1_SelectionCha
 
 Private Sub gridControl1_SelectionChanging(ByVal sender As Object, ByVal e As GridSelectionChangingEventArgs)
 
-'prevent cell from selection
+'Prevent cell from selection
 If e.Range.Contains(GridRangeInfo.Cell(2, 2)) Then
 
 e.Cancel = True
 
 End If
 
-'prevent column from selection
+'Prevent column from selection
 If e.Range.IntersectsWith(GridRangeInfo.Col(3)) Then
 
 e.Cancel = True
@@ -245,27 +245,19 @@ When the cell is entered into the edit mode, it will not display the selection c
 this.gridControl1.CellDrawn += gridControl1_CellDrawn;
 
 void gridControl1_CellDrawn(object sender, GridDrawCellEventArgs e)
-
 {
 
-//get the current cell
+//Get the current cell
 GridCurrentCell cc = this.gridControl1.CurrentCell;
-
 if (e.RowIndex == cc.RowIndex && e.ColIndex == cc.ColIndex)
-
 {
 
-//fill the selection color to the cells background
+//Fill the selection color to the cells background
 using (SolidBrush br = new SolidBrush(this.gridControl1.AlphaBlendSelectionColor))
-
 {
-
 e.Graphics.FillRectangle(br, e.Bounds);
-
 }
-
 }
-
 }
 {% endhighlight %}
 
@@ -275,26 +267,21 @@ Private Me.gridControl1.CellDrawn += AddressOf gridControl1_CellDrawn
 
 Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As GridDrawCellEventArgs)
 
-'get the current cell
+'Get the current cell
 Dim cc As GridCurrentCell = Me.gridControl1.CurrentCell
 
 If e.RowIndex = cc.RowIndex AndAlso e.ColIndex = cc.ColIndex Then
 
-'fill the selection color to the cells background
+'Fill the selection color to the cells background
 Using br As New SolidBrush(Me.gridControl1.AlphaBlendSelectionColor)
-
 e.Graphics.FillRectangle(br, e.Bounds)
-
 End Using
-
 End If
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
 
 ![](Selection_images/Selection_img6.jpeg)
-
 
 ## Retrieving Selected Values
 
@@ -306,51 +293,32 @@ To get the values from the selected range of cells, get the range list of the se
 GridRangeInfoList list = this.gridControl1.Model.SelectedRanges;
 
 foreach (GridRangeInfo range in list)
-
 {
-
 for (int i = range.Top; i <= range.Bottom; i++)
-
 {
-
 for (int j = range.Left; j <= range.Right; j++)
-
 {
 
 //Prints the text in the output screen.
 Trace.Write(this.gridControl1[i, j].Text + "\t");    
-
 }
-
 Trace.WriteLine("");
-
 }
-
 }
-
-
-
 {% endhighlight %}
 
 {% highlight vb %}
 'Get the Selected ranges as the RangeInfoList
 Dim list As GridRangeInfoList = Me.gridControl1.Model.SelectedRanges
-
 For Each range As GridRangeInfo In list
-
 For i As Integer = range.Top To range.Bottom
-
 For j As Integer = range.Left To range.Right
 
 'Prints the text in the output screen.
 Trace.Write(Me.gridControl1(i, j).Text + Constants.vbTab)
-
 Next j
-
 Trace.WriteLine("")
-
 Next i
-
 Next range
 {% endhighlight %}
 {% endtabs %}

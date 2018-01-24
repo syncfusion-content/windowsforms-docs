@@ -24,9 +24,11 @@ public string GetLocalizedString(System.Globalization.CultureInfo culture, strin
 {
 switch (name)
 {
+
 // Returns the localized value for the word "OK"
 case ResourceIdentifiers.OK:
 return "D'accord";
+
 // Returns the localized value for the word "Cancel"
 case ResourceIdentifiers.Cancel:
 return "annuler";
@@ -42,9 +44,11 @@ Friend Class Localizer
 Implements ILocalizationProvider
 Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String
 Select Case name
+
 ' Returns the localized value for the word "OK"
 Case ResourceIdentifiers.OK
 Return "D'accord"
+
 ' Returns the localized value for the word "Cancel"
 Case ResourceIdentifiers.Cancel
 Return "annuler"

@@ -27,35 +27,24 @@ gridControl1.ColCount = 4;
 
 //Looping through the cells and assigning the values based on row and column index
 for (int row = 1; row <= gridControl1.RowCount; row++)
-
 {
-
 for (int col = 1;col <= gridControl1.ColCount; col++)
-
 {
-
 gridControl1.Model[row, col].CellValue = string.Format("{0}/{1}", row, col);
-
 }
-
 }
 {% endhighlight %}
 
 {% highlight vb %}
 'Specifying row and column count
 gridControl1.RowCount = 15
-
 gridControl1.ColCount = 4
 
 'Looping through the cells and assigning the values based on row and column index
 For row As Integer = 1 To gridControl1.RowCount
-
 For col As Integer = 1 To gridControl1.ColCount
-
 gridControl1.Model(row, col).CellValue = String.Format("{0}/{1}", row, col)
-
 Next col
-
 Next row
 {% endhighlight %}
 {% endtabs %}
@@ -80,20 +69,14 @@ gridControl1.ColCount = 4;
 
 //Populating values using PopulateValues method
 string[,] table = new string[this.gridControl1.RowCount, this.gridControl1.ColCount];
-
 for (int row = 1; row <= this.gridControl1.RowCount; ++row)
-
 for (int col = 1; col <= this.gridControl1.ColCount; ++col)
-
 table[row - 1, col - 1] = string.Format(“Row{0}:Col{0}”, row, col);
 
 this.gridControl1.PopulateValues(
-
 GridRangeInfo.Cells(1, 1, this.gridControl1.RowCount, this.gridControl1.ColCount),
-
 table);
 {% endhighlight %}
-
 {% highlight vb %}
 'Specifying row and column count
 gridControl1.RowCount = 15
@@ -102,15 +85,10 @@ gridControl1.ColCount = 4
 
 'Populating values using PopulateValues method
 Dim table(Me.gridControl1.RowCount - 1, Me.gridControl1.ColCount - 1) As String
-
 For row As Integer = 1 To Me.gridControl1.RowCount
-
 For col As Integer = 1 To Me.gridControl1.ColCount
-
 table(row - 1, col - 1) = String.Format(“Row{0}:=Col{0}”, row, col)
-
 Next col
-
 Next row
 
 Me.gridControl1.PopulateValues(GridRangeInfo.Cells(1, 1, Me.gridControl1.RowCount, Me.gridControl1.ColCount), table)
@@ -176,15 +154,10 @@ GridStyleInfo style = new GridStyleInfo();
 
 // Set values and properties
 style.BackColor = Color.LightPink;
-
 style.CellValue = "Grid";
-
 style.Font.Facename = "Verdana";
-
 style.Font.Size = 8.2f;
-
 style.Font.Bold = true;
-
 style.Font.Italic = true;
 
 // Applies the styles to a range of cells
@@ -202,15 +175,10 @@ Dim style As New GridStyleInfo()
 
 'Set values and properties
 style.BackColor = Color.LightPink
-
 style.CellValue = "Grid"
-
 style.Font.Facename = "Verdana"
-
 style.Font.Size = 8.2f
-
 style.Font.Bold = True
-
 style.Font.Italic = True
 
 'Applies the styles to a range of cells

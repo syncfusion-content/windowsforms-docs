@@ -14,13 +14,11 @@ Setting cell type of a cell to **FormulaCell** will allow to enter algebraic exp
 
 //Setting Formula cell for a particular cell
 this.gridControl1[2, 2].CellType = GridCellTypeName.FormulaCell;
-
 {% endhighlight %}
 {% highlight vb %}
 
 'Setting Formula cell for a particular cell
 Me.gridControl1(2, 2).CellType = GridCellTypeName.FormulaCell
-
 {% endhighlight %}
 {% endtabs %}
 ## Operators
@@ -4802,7 +4800,7 @@ public string ComputeSumPosNumber(string args)
         double d;
         string s1;
 
-        //Loops through arguments and sum up the positive values.
+//Loops through arguments and sum up the positive values.
         foreach (string r in args.Split(new char[] { ',' }))
         {
             //Cell Range.
@@ -4865,7 +4863,7 @@ Public Function ComputeSumPosNumber(ByVal args As String) As String
         Dim d As Double
         Dim s1 As String
 
-        'Loops through arguments and sum up the positive values.
+'Loops through arguments and sum up the positive values.
         For Each r As String In args.Split(New Char() { ","c })
             'Cell Range.
             If r.IndexOf(":"c) > -1 Then
@@ -4910,6 +4908,7 @@ End Function
 {% highlight c# %}
 
 GridFormulaCellModel cellModel = this.gridControl1.CellModels["FormulaCell"] as GridFormulaCellModel;
+
 //Adds a formula named SumPosNumber to the Library.
 cellModel.Engine.AddFunction("SumPosNumber", new GridFormulaEngine.LibraryFunction(ComputeSumPosNumber));
 
@@ -4917,6 +4916,7 @@ cellModel.Engine.AddFunction("SumPosNumber", new GridFormulaEngine.LibraryFuncti
 {% highlight vb %}
 
 Dim cellModel As GridFormulaCellModel = TryCast(Me.gridControl1.CellModels("FormulaCell"), GridFormulaCellModel)
+
 'Adds a formula named SumPosNumber to the Library.
 cellModel.Engine.AddFunction("SumPosNumber", New GridFormulaEngine.LibraryFunction(ComputeSumPosNumber))
 
@@ -4943,12 +4943,14 @@ To replace an existing function with another implementation, it is necessary to 
 {% highlight c# %}
 //Removes the SUM function from the library.
 cellModel.Engine.RemoveFunction("SUM");
+
 //Add the function of SUM but with the name MySUM
 cellModel.Engine.AddFunction("MySUM", cellModel.Engine.ComputeSum);
 {% endhighlight %}
 {% highlight vb %}
 'Removes the SUM function from the library.
 cellModel.Engine.RemoveFunction("SUM")
+
 'Add the function of SUM but with the name MySUM
 cellModel.Engine.AddFunction("MySUM", cellModel.Engine.ComputeSum)
 {% endhighlight %}
@@ -4980,6 +4982,7 @@ Initially, register both the grids by using the static[RegisterGridAsSheet](http
 
 //Register the grid1 so it can be referenced in a formula from grid2.
 GridFormulaEngine.RegisterGridAsSheet(this. gridControl1.Text, this. gridControl1.Model, 0);
+
 //Register the grid2 so it can be referenced in a formula from grid1.
 GridFormulaEngine.RegisterGridAsSheet(this. gridControl2.Text, this. gridControl2.Model, 0);
 
@@ -4988,9 +4991,9 @@ GridFormulaEngine.RegisterGridAsSheet(this. gridControl2.Text, this. gridControl
 
 'Register the grid1 so it can be referenced in a formula from grid2.
 GridFormulaEngine.RegisterGridAsSheet(Me. gridControl1.Text, Me. gridControl1.Model, 0)
+
 'Register the grid2 so it can be referenced in a formula from grid1.
 GridFormulaEngine.RegisterGridAsSheet(Me. gridControl2.Text, Me. gridControl2.Model, 0)
-
 {% endhighlight %}
 {% endtabs %}
  After registering, the values of `grid1` can be accessed in the formula cell of grid by assigning the string `"=gridControl1!B3 + B4"` to that particular formula cell. Where `grid1` denotes the name of the first grid. `B3 + B4` denotes the formula.
@@ -5002,15 +5005,12 @@ this.gridControl1[3, 1].Text = "Salary1";
 this.gridControl1[3, 2].Text = "2,000";
 this.gridControl1[4, 1].Text = "Salary2";
 this.gridControl1[4, 2].Text = "1,500";
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridControl1(3, 1).Text = "Salary1"
 Me.gridControl1(3, 2).Text = "2,000"
 Me.gridControl1(4, 1).Text = "Salary2"
 Me.gridControl1(4, 2).Text = "1,500"
-
 {% endhighlight %}
 {% endtabs %}
 ![](Formula-Support_images/Formula-Support_img_1.jpg)
@@ -5018,24 +5018,27 @@ Me.gridControl1(4, 2).Text = "1,500"
 Now compute the values for the `grid2` by using the values in the `grid1` by using the below code.
 {% tabs %}
 {% highlight c# %}
-
 this.gridControl2[3, 2].Text = "Salary1";
 this.gridControl2[4, 2].Text = "Salary2";
 this.gridControl2[5, 2].Text = "Total";
 
 // Assigning the cell type as formula cell
 this.gridControl2[3, 3].CellType = GridCellTypeName.FormulaCell;
+
 // Assigning the formula.
 this.gridControl2[3, 3].Text = "=" + this.gridControl1.Text + "!C3";
+
 // Assigning the cell type as formula cell
 this.gridControl2[4, 3].CellType = GridCellTypeName.FormulaCell;
+
 // Assigning the formula.
 this.gridControl2[4, 3].Text = "=" + this.gridControl1.Text + "!C4";
+
 // Assigning the cell type as formula cell
 this.gridControl2[5, 3].CellType = GridCellTypeName.FormulaCell;
+
 // Assigning the formula.
 this.gridControl2[5, 3].Text = "=" + this.gridControl1.Text + "!C3 + C4";
-
 {% endhighlight %}
 {% highlight vb %}
 
@@ -5045,14 +5048,19 @@ Me.gridControl2(5, 2).Text = "Total"
 
 'Assigning the cell type as formula cell
 Me.gridControl2(3, 3).CellType = GridCellTypeName.FormulaCell
+
 'Assigning the formula.
 Me.gridControl2(3, 3).Text = "=" & Me.gridControl1.Text & "!C3"
+
 ' Assigning the cell type as formula cell
 Me.gridControl2(4, 3).CellType = GridCellTypeName.FormulaCell
+
 'Assigning the formula.
 Me.gridControl2(4, 3).Text = "=" & Me.gridControl1.Text & "!C4"
+
 'Assigning the cell type as formula cell
 Me.gridControl2(5, 3).CellType = GridCellTypeName.FormulaCell
+
 'Assigning the formula.
 Me.gridControl2(5, 3).Text = "=" & Me.gridControl1.Text & "!C3 + C4"
 
@@ -5069,20 +5077,16 @@ For adding the custom name for a particular range, [AddNamedRange](http://help.s
 
 {% tabs %}
 {% highlight c# %}
-
 GridFormulaEngine engine;
 engine = ((GridFormulaCellModel)gridControl1.Model.CellModels["FormulaCell"]).Engine;
 engine.AddNamedRange("Total", "A1:A3");
 this.gridControl1[3, 3].CellType = GridCellTypeName.FormulaCell;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim engine As GridFormulaEngine
 engine = (CType(gridControl1.Model.CellModels("FormulaCell"), GridFormulaCellModel)).Engine
 engine.AddNamedRange("Total", "A1:A3")
 Me.gridControl1(3, 3).CellType = GridCellTypeName.FormulaCell
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -5100,16 +5104,12 @@ N> The following sample illustrates the use of Cross Sheet References and Named 
 GridControl provides **Named Range Collection Editor**, in which it is possible to edit the named ranges. To display the **Named Range Collection Editor** make use of the method.
 {% tabs %}
 {% highlight c# %}
-
 GridFormulaCellModel cellModel = this.gridControl1.CellModels["FormulaCell"] as GridFormulaCellModel;
 GridFormulaNamedRangesEditHelper.ShowNamedRangesDialog(cellModel.Engine);
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim cellModel As GridFormulaCellModel = TryCast(Me.gridControl1.CellModels("FormulaCell"), GridFormulaCellModel)
 GridFormulaNamedRangesEditHelper.ShowNamedRangesDialog(cellModel.Engine)
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -5131,12 +5131,11 @@ void GridFormulaNamedRangesEditHelper_ShowingNamedRangesDialog(object sender, Co
     Form f = e.Control as Form;
     if (f != null)
     {
-        //Sets title for the dialog box.
+
+//Sets title for the dialog box.
         f.Text = "CashFlow Inputs";
     }   
-
 }
-
 {% endhighlight %}
 {% highlight vb %}
 AddHandler GridFormulaNamedRangesEditHelper.ShowingNamedRangesDialog, AddressOf GridFormulaNamedRangesEditHelper_ShowingNamedRangesDialog
@@ -5145,12 +5144,11 @@ AddHandler GridFormulaNamedRangesEditHelper.ShowingNamedRangesDialog, AddressOf 
 Private Sub GridFormulaNamedRangesEditHelper_ShowingNamedRangesDialog(ByVal sender As Object, ByVal e As ControlEventArgs)
     Dim f As Form = TryCast(e.Control, Form)
     If f IsNot Nothing Then
-        'Sets title for the dialog box.
+
+'Sets title for the dialog box.
         f.Text = "CashFlow Inputs"
     End If
-
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 ![](Formula-Support_images/Formula-Support_img78.jpg)

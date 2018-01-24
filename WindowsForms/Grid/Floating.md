@@ -17,12 +17,14 @@ Floating cells are those cells whose content floats over empty, adjacent cells. 
 {% highlight c# %}
 // Enable Float Cells for GridControl
 this.gridControl1.TableStyle.FloatCell = true;
+
 // Set mode for calculating the float cells
 this.gridControl1.FloatCellsMode = GridFloatCellsMode.OnDemandCalculation;
 {% endhighlight %}
 {% highlight vb %}
 ' Enable Float Cells for GridControl
 Me.gridControl1.TableStyle.FloatCell = True
+
 ' Set mode for calculating the float cells
 Me.gridControl1.FloatCellsMode = GridFloatCellsMode.OnDemandCalculation
 {% endhighlight %}
@@ -71,9 +73,9 @@ The [FloatingCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/S
 {% highlight c# %}
 // Finding a FloatRange for cell(4,4)
 GridRangeInfo floatRange = this.gridControl1.Model.FloatingCells.FindRange(4, 4);
+
 // Finding a FloatRange for cell(7,9)
 GridRangeInfo floatRange2 = this.gridControl1.Model.FloatingCells.FindRange(7, 9);
-
 MessageBox.Show("Float range for cell(4,4) is " + floatRange.Info.ToString()
 + "\n" + "Float range for cell(7,9) is " + floatRange2.RangeType.ToString());
 
@@ -81,9 +83,9 @@ MessageBox.Show("Float range for cell(4,4) is " + floatRange.Info.ToString()
 {% highlight vb %}
 ' Finding a FloatRange for cell(4,4)
 Dim floatRange As GridRangeInfo = Me.gridControl1.Model.FloatingCells.FindRange(4, 4)
+
 ' Finding a FloatRange for cell(7,9)
 Dim floatRange2 As GridRangeInfo = Me.gridControl1.Model.FloatingCells.FindRange(7, 9)
-
 MessageBox.Show("Float range for cell(4,4) is " & floatRange.Info.ToString() & Constants.vbLf & "Float range for cell(7,9) is " & floatRange2.RangeType.ToString())
 {% endhighlight %}
 {% endtabs %}
