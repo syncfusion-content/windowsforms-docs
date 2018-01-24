@@ -37,12 +37,14 @@ The `SelectionFrameOption` enumeration has the following types of selection fram
 {% highlight c# %}
 //Enable the Excel like selection frame to grid
 this.gridControl1.ExcelLikeSelectionFrame = true;
+
 //Enable Excel like current cell to grid
 this.gridControl1.ExcelLikeCurrentCell = true;
 {% endhighlight %}
 {% highlight vb %}
 'Enable the Excel like selection frame to grid
 Me.gridControl1.ExcelLikeSelectionFrame = True
+
 'Enable Excel like current cell to grid
 Me.gridControl1.ExcelLikeCurrentCell = True
 {% endhighlight %}
@@ -128,11 +130,14 @@ The GridControl can be used like workbook in Excel. This can be achieved by addi
 {% tabs %}
 {% highlight c# %}
 //Creating Tab pages
+
 //TabBarPage tabBarPage = new Syncfusion.Windows.Forms.TabBarPage();
+
 //Add TabBarPage to the TabBarSplitterControl
 this.tabBarSplitterControl1.Controls.Add(this.tabBarPage1);
 this.tabBarSplitterControl1.Controls.Add(this.tabBarPage2);
 this.tabBarSplitterControl1.Controls.Add(this.tabBarPage3);
+
 //Adding Grid control to the Tab bar pages
 this.tabBarPage1.Controls.Add(gridcontrol1);
 this.tabBarPage2.Controls.Add(gridControl2);
@@ -140,6 +145,7 @@ this.tabBarPage3.Controls.Add(gridControl3);
 {% endhighlight %}
 {% highlight vb %}
 'Creating Tab pages
+
 'Dim tabBarPage As TabBarPage = New Syncfusion.Windows.Forms.TabBarPage()
 
 'Add TabBarPage to the TabBarSplitterControl
@@ -166,13 +172,13 @@ private ExcelTip.CommentMouseController commentMouseController1;
 //Create the Comment mouse controller.
 this.commentMouseController1 = new ExcelTip.CommentMouseController(gridControl1);
 
-//allow context menu to edit/add comments
+//Allow context menu to edit/add comments
 this.commentMouseController1.ContextMenuEnabled = true;
 
-//register the controller
+//Register the controller
 gridControl1.MouseControllerDispatcher.Add(commentMouseController1);
 
-//set the comment using custom style property, ExcelTipText
+//Set the comment using custom style property, ExcelTipText
 ExcelTip.GridExcelTipStyleProperties style = new ExcelTip.GridExcelTipStyleProperties(gridControl1[2, 2]);
 style.ExcelTipText = "Comment for cell 2,2.";
 {% endhighlight %}
@@ -183,13 +189,13 @@ Private commentMouseController1 As ExcelTip.CommentMouseController
 'Create the Comment mouse controller.
 Me.commentMouseController1 = New ExcelTip.CommentMouseController(gridControl1)
 
-'allow context menu to edit/add comments
+'Allow context menu to edit/add comments
 Me.commentMouseController1.ContextMenuEnabled = True
 
-'register the controller
+'Register the controller
 gridControl1.MouseControllerDispatcher.Add(commentMouseController1)
 
-'set the comment using custom style property, ExcelTipText
+'Set the comment using custom style property, ExcelTipText
 Dim style As New ExcelTip.GridExcelTipStyleProperties(gridControl1(2, 2))
 style.ExcelTipText = "Comment for cell 2,2."
 
@@ -254,6 +260,7 @@ The GridControl supports Microsoft Excel-like Freeze Pane feature. In a large wo
 //Frozen the Rows and columns in the Grid control
 this.gridControl1.Rows.FrozenCount = 3;
 this.gridControl1.Cols.FrozenCount = 2;
+
 //Clear the Frozen range of Rows and Columns
 this.gridControl1.Rows.RestoreFrozen();
 this.gridControl1.Cols.RestoreFrozen();
@@ -433,6 +440,7 @@ The following code snippet is used to enable the merging in GridControl,
 {% highlight c# %}
 // Set MergeCells direction for the GridControl
 this.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.Both;
+
 // Set merge cells behavior for the Grid
 this.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation
     | GridMergeCellsMode.MergeColumnsInRow | GridMergeCellsMode.MergeRowsInColumn;
@@ -441,6 +449,7 @@ this.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid;
 {% highlight vb %}
 ' Set MergeCells direction for the GridControl
 Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.Both
+
 ' Set merge cells behavior for the Grid
 Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation Or GridMergeCellsMode.MergeColumnsInRow Or GridMergeCellsMode.MergeRowsInColumn
 Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
@@ -462,12 +471,14 @@ The preventing of a cell being flooded by using [FloodCell](http://help.syncfusi
 {% highlight c# %}
 // Enable Float Cells for GridControl
 this.gridControl1.TableStyle.FloatCell = true;
+
 // Set mode for calculating the float cells
 this.gridControl1.FloatCellsMode = GridFloatCellsMode.OnDemandCalculation;
 {% endhighlight %}
 {% highlight vb %}
 ' Enable Float Cells for GridControl
 Me.gridControl1.TableStyle.FloatCell = True
+
 ' Set mode for calculating the float cells
 Me.gridControl1.FloatCellsMode = GridFloatCellsMode.OnDemandCalculation
 {% endhighlight %}
@@ -519,8 +530,10 @@ The below example shows the `Find and Replace` dialog is shown in GridControl,
 {% highlight c# %}
 // Setting the Dialog sink
 GridFindReplaceDialogSink findReplaceSink = new GridFindReplaceDialogSink(this.gridControl1);
+
 // Setting the Dialog
 GridFindReplaceDialog findReplaceDialog = GridFindReplaceDialog.Instance;
+
 // Setting the sink to dialog
 findReplaceDialog.ActiveSink = findReplaceSink;
 findReplaceDialog.ShowDialog();
@@ -528,8 +541,10 @@ findReplaceDialog.ShowDialog();
 {% highlight vb %}
 ' Setting the Dialog sink
 Dim findReplaceSink As New GridFindReplaceDialogSink(Me.gridControl1)
+
 ' Setting the Dialog
 Dim findReplaceDialog As GridFindReplaceDialog = GridFindReplaceDialog.Instance
+
 ' Setting the sink to dialog
 findReplaceDialog.ActiveSink = findReplaceSink
 findReplaceDialog.ShowDialog()

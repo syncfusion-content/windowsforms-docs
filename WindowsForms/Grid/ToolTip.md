@@ -78,15 +78,16 @@ this.gridControl1.QueryCellInfo += gridControl1_QueryCellInfo;
 
 void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-    // Enabling comment tip for particular cell.
+
+// Enabling comment tip for particular cell.
     if (e.RowIndex == 1 && e.ColIndex == 1)
         e.Style.CellTipText = "Cell comment";
 
-    // Enabling comment tip for row.
+// Enabling comment tip for row.
     if (e.ColIndex > 0 && e.RowIndex == 5)
         e.Style.CellTipText = "Row comment";
 
-    // Enabling comment tip for column.
+// Enabling comment tip for column.
     if (e.RowIndex > 0 && e.ColIndex == 4)
         e.Style.CellTipText = "Column comment";
 }
@@ -95,17 +96,18 @@ void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 AddHandler gridControl1.QueryCellInfo, AddressOf gridControl1_QueryCellInfo
 
 Private Sub gridControl1_QueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
-    ' Enabling comment tip for particular cell.
+
+' Enabling comment tip for particular cell.
     If e.RowIndex = 1 AndAlso e.ColIndex = 1 Then
         e.Style.CellTipText = "Cell comment"
     End If
 
-    ' Enabling comment tip for row.
+' Enabling comment tip for row.
     If e.ColIndex > 0 AndAlso e.RowIndex = 5 Then
         e.Style.CellTipText = "Row comment"
     End If
 
-    ' Enabling comment tip for column.
+' Enabling comment tip for column.
     If e.RowIndex > 0 AndAlso e.ColIndex = 4 Then
         e.Style.CellTipText = "Column comment"
     End If
@@ -275,10 +277,10 @@ The displaying of ToolTip on mouse hover for particular cells can be restricted 
 {% highlight c# %}
 this.gridControl1.ActivateToolTip += GridControl1_ActivateToolTip;
 
-
 private void GridControl1_ActivateToolTip(object sender, GridActivateToolTipEventArgs e)
 {
-    //Disable the ToolTip for particular cell.
+
+//Disable the ToolTip for particular cell.
     if (e.ColIndex == 3 && e.RowIndex == 3)
     {
         e.Cancel = true;
@@ -289,7 +291,8 @@ private void GridControl1_ActivateToolTip(object sender, GridActivateToolTipEven
 AddHandler gridControl1.ActivateToolTip, AddressOf GridControl1_ActivateToolTip
 
 Private Sub GridControl1_ActivateToolTip(ByVal sender As Object, ByVal e As GridActivateToolTipEventArgs)
-    'Disable the ToolTip for particular cell.
+
+'Disable the ToolTip for particular cell.
     If e.ColIndex = 3 AndAlso e.RowIndex = 3 Then
         e.Cancel = True
     End If
@@ -309,7 +312,8 @@ this.gridControl1.QueryCellInfo += gridControl1_QueryCellInfo;
 
 void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-    //Checking whether the cell has ToolTip or not.
+
+//Checking whether the cell has ToolTip or not.
     if (e.Style.HasCellTipText)
     {
         e.Style.BackColor = Color.Green;
@@ -321,7 +325,8 @@ void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 AddHandler gridControl1.QueryCellInfo, AddressOf gridControl1_QueryCellInfo
 
 Private Sub gridControl1_QueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
-    'Checking whether the cell has ToolTip or not.
+
+'Checking whether the cell has ToolTip or not.
     If e.Style.HasCellTipText Then
         e.Style.BackColor = Color.Green
         e.Style.TextColor = Color.White

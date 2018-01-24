@@ -105,14 +105,12 @@ e.Count = Me.numberOfArrayRows
 e.Handled = True
 End Sub
 
-
 'Determines the number of columns.
 Private Me.gridControl1.QueryColCount += New GridRowColCountEventHandler(AddressOf GridQueryColCount)
 Private Sub GridQueryColCount(ByVal sender As Object, ByVal e As GridRowColCountEventArgs)
 e.Count = Me.numberOfArrayCols
 e.Handled = True
 End Sub
-
 
 'Passes value to a cell from a given data source.
 Private Me.gridControl1.QueryCellInfo += New GridQueryCellInfoEventHandler(AddressOf QueryCellInfoHandler)
@@ -153,7 +151,8 @@ public class DerivedGridControl : GridControl
 // Gets the Scroll Position for the pixel scrolling of a row.
 public override int RowIndexToVScrollPixelPos(int rowIndex)
 {
-    // Takes separate height for the column headers into account.
+
+// Takes separate height for the column headers into account.
     rowIndex = Math.Min(rowIndex, Model.RowCount);
     if (rowIndex > 0)
         return (rowIndex - 1) * Model.Rows.DefaultSize +
@@ -161,16 +160,20 @@ public override int RowIndexToVScrollPixelPos(int rowIndex)
     else
         return Model.RowHeights[0];
 }
+
 // Gets the value for the vertical pixel Position.
 public override int GetVScrollPixelHeight()
 {
-    //Checks the number of rows in the Grid.
+
+//Checks the number of rows in the Grid.
     if (Model.RowCount == 0)
         return 0;
-    // Returns the vertical pixel position.
+
+// Returns the vertical pixel position.
     return (Model.RowCount - 1) * Model.Rows.DefaultSize +
     Model.RowHeights[0];
 }
+
 // Gets the row and pixel Delta to the scroll position of the row for the specified scroll position.
 public override void VScrollPixelPosToRowIndex(int pixelPos, out
 int rowIndex, out int pixelDelta)
@@ -192,7 +195,8 @@ Public Class DerivedGridControl
                 Inherits GridControl
 'Gets the Scroll Position for the pixel scrolling of a row.
 Public Overrides Function RowIndexToVScrollPixelPos(ByVal rowIndex As Integer) As Integer
-    'Takes separate height for the column headers into account.
+   
+'Takes separate height for the column headers into account.
     rowIndex = Math.Min(rowIndex, Model.RowCount)
     If rowIndex > 0 Then
         Return (rowIndex - 1) * Model.Rows.DefaultSize + Model.RowHeights(0)
@@ -200,15 +204,19 @@ Public Overrides Function RowIndexToVScrollPixelPos(ByVal rowIndex As Integer) A
         Return Model.RowHeights(0)
     End If
 End Function
+
 'Gets the value for the vertical pixel position.
 Public Overrides Function GetVScrollPixelHeight() As Integer
-    'Checks the number of rows in the Grid.
+
+'Checks the number of rows in the Grid.
     If Model.RowCount = 0 Then
         Return 0
     End If
-    'Returns the vertical pixel Position.
+
+'Returns the vertical pixel Position.
     Return (Model.RowCount - 1) * Model.Rows.DefaultSize + Model.RowHeights(0)
 End Function
+
 'Gets the row and pixel Delta to the scroll position of the row for the specified scroll position.
 Public Overrides Sub VScrollPixelPosToRowIndex(ByVal pixelPos As Integer, <System.Runtime.InteropServices.Out()> ByRef rowIndex As Integer, <System.Runtime.InteropServices.Out()> ByRef pixelDelta As Integer)
     If pixelPos < pixelPos - Model.RowHeights(0) Then
