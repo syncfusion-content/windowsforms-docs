@@ -155,6 +155,7 @@ private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingC
 Private gridGroupingControl1 As New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
 {% endhighlight %}
 {% endtabs %}
+
 4.Use the below code for adding the initialized GridGroupingControl to the application.
 
 {% tabs %}
@@ -211,13 +212,10 @@ If grouping is enabled in GridGroupingControl then there will be a specific area
 {% highlight c# %}
 // Allows GroupDropArea to be visible
 this.gridGroupingControl1.ShowGroupDropArea = true;
-
 {% endhighlight %}
 {% highlight vb %}
-
 ' Allows GroupDropArea to be visible
 Me.gridGroupingControl1.ShowGroupDropArea = True
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -246,16 +244,12 @@ GridGroupingControl is specially designed for supporting the filtering options. 
 
 {% tabs %}
 {% highlight c# %}
-
 // Enable Filtering for the 3rd column.
 this.gridGroupingControl1.TableDescriptor.Columns[3].AllowFilter = true;
-
 {% endhighlight %}
 {% highlight vb %}
-
 'Enable Filtering for the 3rd column.
 Me.gridGroupingControl1.TableDescriptor.Columns(3).AllowFilter = True
-
 {% endhighlight %}
 {% endtabs %}
 
