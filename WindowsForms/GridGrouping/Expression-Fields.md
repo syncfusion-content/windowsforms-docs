@@ -394,13 +394,9 @@ The following steps are used to add the custom function in ExpressionFields,
 // Define ComputeAbsoluteValue that returns the absolute value of the 1st argument minus 2 * the 2nd argument.
 
 /// <summary>
-
 /// Computes the absolute value for specified arguments.
-
 /// </summary>
-
 /// <param name="args">The arguments to compute.</param>
-
 /// <returns>The absolute value.</returns>
 
 private string ComputeAbsoluteValue(string args)
@@ -428,14 +424,11 @@ private string ComputeAbsoluteValue(string args)
 ' Define ComputeAbsoluteValue that returns the absolute value of the 1st argument minus 2 * the 2nd argument.
 
 ''' <summary>
-
 ''' Computes the absolute value for specified arguments.
-
 ''' </summary>
-
 ''' <param name="args">The arguments to compute.</param>
-
 ''' <returns>The absolute value.</returns>
+
 Private Function ComputeAbsoluteValue(ByVal args As String) As String
 
    ' Get the list delimiter (for en-us, it is a comma).
