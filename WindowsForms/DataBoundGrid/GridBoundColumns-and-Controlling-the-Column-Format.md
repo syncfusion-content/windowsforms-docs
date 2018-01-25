@@ -148,6 +148,7 @@ gridBoundColumn.HeaderText = "FamilyName"
 gridBoundColumn.StyleInfo.Font.Bold = True
 
 'Just uses the default third column... no changes.
+
 'Resizes the column headers.
 Me.gridDataBoundGrid1.Model.ColWidths.ResizeToFit(GridRangeInfo.Row(0), GridResizeToFitOptions.NoShrinkSize)
 
