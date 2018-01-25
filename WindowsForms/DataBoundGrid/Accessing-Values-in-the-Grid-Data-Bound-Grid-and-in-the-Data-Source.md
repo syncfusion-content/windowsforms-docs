@@ -26,7 +26,6 @@ If you want to retrieve the values that are based on column names, use the metho
 
 {% tabs %}
 {% highlight c# %}
-
 //Specifies the field name.
 int nField = this.gridDataBoundGrid1.Binder.NameToField("FirstName");
 
