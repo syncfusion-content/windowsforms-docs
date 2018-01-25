@@ -25,15 +25,12 @@ Sorting can be applied to the grid data by specifying the desired field name to 
 
 {% tabs %}
 {% highlight c# %}
-
 // ‘CustomerID` column will be sorted.
 this.gridGroupingControl1.TableDescriptor.SortedColumns.Add("CustomerID");
 {% endhighlight %}
 {% highlight vb %}
-
 ' ‘CustomerID` column will be sorted.
 Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("CustomerID")
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,13 +41,11 @@ Sorting can be removed for a particular or range of columns by specifying the de
 
 {% tabs %}
 {% highlight c# %}
-
 // Sorting will be removed for the ‘ProductName’ column. 
 this.gridGroupingControl1.TableDescriptor.SortedColumns.Remove("ProductName");
 
 // Sorting will be removed for the column with index 2.
 this.gridGroupingControl1.TableDescriptor.SortedColumns.RemoveAt(2);
-
 {% endhighlight %}
 {% highlight vb %}
 ' Sorting will be removed for the ‘ProductName’ column. 
@@ -58,7 +53,6 @@ Me.gridGroupingControl1.TableDescriptor.SortedColumns.Remove("ProductName")
 
 ' Sorting will be removed for the column with index 2.
 Me.gridGroupingControl1.TableDescriptor.SortedColumns.RemoveAt(2)
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -99,6 +93,7 @@ this.gridGroupingControl1.TableControlQueryAllowSortColumn+=new GridQueryAllowSo
 
 private void gridGroupingControl1_TableControlQueryAllowSortColumn(object sender, GridQueryAllowSortColumnEventArgs e)
 {
+
     if(e.Column.GetName() == "CompanyName")
     {
         e.AllowSort=false;
@@ -109,6 +104,7 @@ private void gridGroupingControl1_TableControlQueryAllowSortColumn(object sender
 AddHandler gridGroupingControl1.TableControlQueryAllowSortColumn, AddressOf gridGroupingControl1_TableControlQueryAllowSortColumn
 
 Private Sub gridGroupingControl1_TableControlQueryAllowSortColumn(ByVal sender As Object, ByVal e As GridQueryAllowSortColumnEventArgs)
+
 If e.Column.GetName() = "CompanyName" Then
 e.AllowSort=False
 End If
@@ -220,12 +216,14 @@ this.gridGroupingControl1.SortedItemsInGroup += new GroupEventHandler(gridGroupi
 
 void gridGroupingControl1_SortingItemsInGroup(object sender, GroupEventArgs e)
 {
+
     // To-Do
     e.Cancel = true;
 }
 
 void gridGroupingControl1_SortedItemsInGroup(object sender, GroupEventArgs e)
 {
+
     // To-Do
     e.Cancel = true;            
 }
@@ -238,11 +236,13 @@ AddHandler gridGroupingControl1.SortingItemsInGroup, AddressOf gridGroupingContr
 AddHandler gridGroupingControl1.SortedItemsInGroup, AddressOf gridGroupingControl1_SortedItemsInGroup
 
 Private Sub gridGroupingControl1_SortingItemsInGroup(ByVal sender As Object, ByVal e As GroupEventArgs)
+
 	' To-Do
 	e.Cancel = True
 End Sub
 
 Private Sub gridGroupingControl1_SortedItemsInGroup(ByVal sender As Object, ByVal e As GroupEventArgs)
+
 	' To-Do
 	e.Cancel = True
 End Sub
@@ -261,23 +261,19 @@ This `SetGroupSummaryOrder` method will set up a custom comparer for sorting gro
 {% highlight c# %}
 //Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear();
-
 SortColumnDescriptor columnDescriptor = new SortColumnDescriptor("ShipCountry");
 
 //Specifies a summary name and the property (values will be determined using reflection).
 columnDescriptor.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average");
-
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'Specifies group sort order behavior when adding SortColumnDescriptor to GroupedColumns.
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear()
-
 Dim columnDescriptor As New SortColumnDescriptor("ShipCountry")
 
 'Specifies a summary name and the property (values will be determined using reflection).
 columnDescriptor.SetGroupSummarySortOrder(summaryColumn1.GetSummaryDescriptorName(), "Average")
-
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor)
 {% endhighlight %}
 {% endtabs %}
@@ -391,32 +387,35 @@ N> The detailed information about the `Events` of GridGroupingControl has been d
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControlQueryAllowSortColumn += new Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowSortColumnEventHandler(gridGroupingControl1_TableControlQueryAllowSortColumn);
-
 this.gridGroupingControl1.TableDescriptor.SortedColumns.Changed += new Syncfusion.Collections.ListPropertyChangedEventHandler(SortedColumns_Changed);
-
 this.gridGroupingControl1.TableDescriptor.SortedColumns.Changing += new Syncfusion.Collections.ListPropertyChangedEventHandler(SortedColumns_Changing);
-
 
 private void gridGroupingControl1_TableControlQueryAllowSortColumn(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowSortColumnEventArgs e)
  {
+
    if (e.Column.GetName() == "CompanyName")
    {
+
 	   //To-Do
    }
  }
 
  private void SortedColumns_Changing(object sender, Syncfusion.Collections.ListPropertyChangedEventArgs e)
  {
+
    if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Add)
    {
+
 	   // To-Do
    }
  }
 
  private void SortedColumns_Changed(object sender, Syncfusion.Collections.ListPropertyChangedEventArgs e)
  {
+
    if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Add)
    {
+
 	  // To-Do
    }
  }
@@ -425,25 +424,29 @@ private void gridGroupingControl1_TableControlQueryAllowSortColumn(object sender
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControlQueryAllowSortColumn, AddressOf gridGroupingControl1_TableControlQueryAllowSortColumn
-
 AddHandler gridGroupingControl1.TableDescriptor.SortedColumns.Changed, AddressOf SortedColumns_Changed
-
 AddHandler gridGroupingControl1.TableDescriptor.SortedColumns.Changing, AddressOf SortedColumns_Changing
 
 Private Sub gridGroupingControl1_TableControlQueryAllowSortColumn(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowSortColumnEventArgs)
+
    If e.Column.GetName() = "CompanyName" Then
+
 	   'To-Do
    End If
 End Sub
 
- Private Sub SortedColumns_Changing(ByVal sender As Object, ByVal e As Syncfusion.Collections.ListPropertyChangedEventArgs)
+Private Sub SortedColumns_Changing(ByVal sender As Object, ByVal e As Syncfusion.Collections.ListPropertyChangedEventArgs)
+
    If e.Action = Syncfusion.Collections.ListPropertyChangedType.Add Then
+
 	   ' To-Do
    End If
  End Sub
 
- Private Sub SortedColumns_Changed(ByVal sender As Object, ByVal e As Syncfusion.Collections.ListPropertyChangedEventArgs)
+Private Sub SortedColumns_Changed(ByVal sender As Object, ByVal e As Syncfusion.Collections.ListPropertyChangedEventArgs)
+
    If e.Action = Syncfusion.Collections.ListPropertyChangedType.Add Then
+
 	  ' To-Do
    End If
  End Sub
@@ -467,6 +470,7 @@ sortColumnDescriptor.SortDirection = System.ComponentModel.ListSortDirection.Asc
 sortColumnDescriptor.Comparer = new CustomSortComparer(true);
 
 // Custom Sorting Comparer
+
 public class CustomSortComparer : IComparer
 {
   private bool isAscending = true;
@@ -478,8 +482,10 @@ public class CustomSortComparer : IComparer
 
   public int Compare(object x, object y)
   {
+
 	if (isAscending)
 	{
+
 	   if (x == null && y == null)
 	   {
 		return 0;
@@ -489,17 +495,21 @@ public class CustomSortComparer : IComparer
 	   {
 		  return 1;
 	   }
+
 	   else if (string.IsNullOrEmpty(y.ToString()))
 	   {
 		  return -1;
 	   }
+
 	   else
 	   {
 		  return ((IComparable)(x.ToString())).CompareTo(y.ToString());
 	   }
 	}
+
 	else
 	{
+
 	  if (x == null && y == null)
 	  {
 		 return 0;
@@ -509,14 +519,17 @@ public class CustomSortComparer : IComparer
 	  {
 		 return 0;
 	  }
+
 	  else if (string.IsNullOrEmpty(x.ToString()))
 	  {
 		 return -1;
 	  }
+
 	  else if (string.IsNullOrEmpty(y.ToString()))
 	  {
 		 return 1;
 	  }
+
 	  else
 	  {
 		 return ((IComparable)(x.ToString())).CompareTo(y.ToString());
@@ -526,10 +539,12 @@ public class CustomSortComparer : IComparer
 
    private long CustomParser(object s)
    {
+
 	 if (string.IsNullOrEmpty(s.ToString()))
 	 {
 		return If(isAscending, int.MaxValue, int.MinValue);
 	 }
+
 	 else
 	 {
 		return 0;
@@ -548,44 +563,57 @@ sortColumnDescriptor.SortDirection = System.ComponentModel.ListSortDirection.Asc
 sortColumnDescriptor.Comparer = New CustomSortComparer(True)
 
 ' Custom Sorting Comparer
+
 public class CustomSortComparer : IComparer
+
   private Boolean isAscending = True
 
   public CustomSortComparer(Boolean isAscendingSortDirection)
 	isAscending = isAscendingSortDirection
 
   public Integer Compare(Object x, Object y)
+
 	If isAscending Then
+
 	   If x Is Nothing AndAlso y Is Nothing Then
 		Return 0
 	   End If
 
 	   If ((String.IsNullOrEmpty(x.ToString())) AndAlso (String.IsNullOrEmpty(y.ToString()))) OrElse String.IsNullOrEmpty(x.ToString()) Then
 		  Return 1
+
 	   ElseIf String.IsNullOrEmpty(y.ToString()) Then
 		  Return -1
+
 	   Else
 		  Return (CType(x.ToString(), IComparable)).CompareTo(y.ToString())
 	   End If
+
 	Else
+
 	  If x Is Nothing AndAlso y Is Nothing Then
 		 Return 0
 	  End If
 
 	  If (String.IsNullOrEmpty(x.ToString())) AndAlso (String.IsNullOrEmpty(y.ToString())) Then
 		 Return 0
+
 	  ElseIf String.IsNullOrEmpty(x.ToString()) Then
 		 Return -1
+
 	  ElseIf String.IsNullOrEmpty(y.ToString()) Then
 		 Return 1
+
 	  Else
 		 Return (CType(x.ToString(), IComparable)).CompareTo(y.ToString())
 	  End If
 	End If
 
    private Long CustomParser(Object s)
+
 	 If String.IsNullOrEmpty(s.ToString()) Then
 		Return If(isAscending, Integer.MaxValue, Integer.MinValue)
+
 	 Else
 		Return 0
 	 End If
