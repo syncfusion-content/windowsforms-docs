@@ -17,12 +17,14 @@ The columns can be hidden from GridGroupingControl by using the [VisibleColumns.
 {% highlight c# %}
 //Hide the given column 
 this.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("ProductName");
+
 //Hide the column at the given index
 this.gridGroupingControl1.TableDescriptor.VisibleColumns.RemoveAt(2);
 {% endhighlight %}
 {% highlight vb %}
 'Hide the given column 
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("ProductName")
+
 'Hide the column at the given index
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.RemoveAt(2)
 {% endhighlight %}
@@ -33,6 +35,7 @@ The rows can be hidden by adding the [RowHiddenEntries](http://help.syncfusion.c
 int n = this.gridGroupingControl1.TableControl.TopRowIndex;
 GridRowHidden[] hiddenRows = new GridRowHidden[1];
 hiddenRows[0] = new GridRowHidden(n);            
+
 //Hide the first row
 this.gridGroupingControl1.TableControl.Model.RowHiddenEntries.AddRange(hiddenRows);      
 {% endhighlight %}
@@ -40,6 +43,7 @@ this.gridGroupingControl1.TableControl.Model.RowHiddenEntries.AddRange(hiddenRow
 Dim n As Integer = Me.gridGroupingControl1.TableControl.TopRowIndex
 Dim hiddenRows(0) As GridRowHidden
 hiddenRows(0) = New GridRowHidden(n)
+
 'Hide the first row
 Me.gridGroupingControl1.TableControl.Model.RowHiddenEntries.AddRange(hiddenRows)
 {% endhighlight %}
@@ -131,11 +135,14 @@ The columns can be prevent from hiding on resizing by canceling the [ColsHiding]
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableModel.ColsHiding += new GridRowColHidingEventHandler(TableModel_ColsHiding);
+
 void TableModel_ColsHiding(object sender, GridRowColHidingEventArgs e)
 {
     int colIndex = 3;
+
     if (e.From <= colIndex && e.To >= colIndex)
     {
+
         //Restrict the column from hiding. 
         e.Cancel = true;
     }
@@ -143,9 +150,12 @@ void TableModel_ColsHiding(object sender, GridRowColHidingEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.TableModel.ColsHiding += New GridRowColHidingEventHandler(AddressOf TableModel_ColsHiding)
+
 Private Sub TableModel_ColsHiding(ByVal sender As Object, ByVal e As GridRowColHidingEventArgs)
     Dim colIndex As Integer = 3
+
     If e.From <= colIndex AndAlso e.To >= colIndex Then
+
         'Restrict the column from hiding. 
         e.Cancel = True
     End If
@@ -215,17 +225,20 @@ this.gridGroupingControl1.TableDescriptor.UnboundFields.Add("UnboundField");
 Me.gridGroupingControl1.TableDescriptor.UnboundFields.Add("UnboundField")
 {% endhighlight %}
 {% endtabs %}
+
 Since the unbound fields are working independently, it has to be manually populated with the [TableDescriptor.QueryValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryValue_EV.html) event and store the edited value by using the [TableDescriptor.SaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~SaveValue_EV.html) events.
+
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableDescriptor.QueryValue += new FieldValueEventHandler(TableDescriptor_QueryValue);
 this.gridGroupingControl1.TableDescriptor.SaveValue += new FieldValueEventHandler(TableDescriptor_SaveValue);
 
-//maintain the typed values in unbound column
+//Maintain the typed values in unbound column
 Hashtable UnboundValues = new Hashtable();
 
 void TableDescriptor_SaveValue(object sender, FieldValueEventArgs e)
 {
+
     if (e.Field.Name == "UnboundField")
     {
         UnboundValues[e.Record.Id] = e.Value;
@@ -234,6 +247,7 @@ void TableDescriptor_SaveValue(object sender, FieldValueEventArgs e)
 
 void TableDescriptor_QueryValue(object sender, FieldValueEventArgs e)
 {
+
     if (e.Field.Name == "UnboundField")
     {
         e.Value = UnboundValues[e.Record.Id];
@@ -244,16 +258,18 @@ void TableDescriptor_QueryValue(object sender, FieldValueEventArgs e)
 AddHandler gridGroupingControl1.TableDescriptor.QueryValue, AddressOf TableDescriptor_QueryValue
 AddHandler gridGroupingControl1.TableDescriptor.SaveValue, AddressOf TableDescriptor_SaveValue
 
-'maintain the typed values in unbound column
+'Maintain the typed values in unbound column
 Private UnboundValues As New Hashtable()
 
 Private Sub TableDescriptor_SaveValue(ByVal sender As Object, ByVal e As FieldValueEventArgs)
+
     If e.Field.Name = "UnboundField" Then
         UnboundValues(e.Record.Id) = e.Value
     End If
 End Sub
 
 Private Sub TableDescriptor_QueryValue(ByVal sender As Object, ByVal e As FieldValueEventArgs)
+
     If e.Field.Name = "UnboundField" Then
         e.Value = UnboundValues(e.Record.Id)
     End If
@@ -298,12 +314,14 @@ The row heights for the caption bar can be changed by using the [DefaultCaptionR
 {% highlight c# %}
 // Displaying the Caption bar in Grid
 this.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = true; 
+
 //Setting caption row heights.
 this.gridGroupingControl1.Table.DefaultCaptionRowHeight = 25;
 {% endhighlight %}
 {% highlight vb %}
 'Displaying the caption bar in Grid.
 Me.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = True
+
 'Setting caption row heights.
 Me.gridGroupingControl1.Table.DefaultCaptionRowHeight = 25
 {% endhighlight %}
@@ -328,16 +346,20 @@ Default row heights for group footer, header and preview sections can be changed
 {% highlight c# %}
 //Sets default height for group header sections.
 this.gridGroupingControl1.Table.DefaultGroupHeaderSectionHeight = 25;
+
 //Sets default height for group footer sections.
 this.gridGroupingControl1.Table.DefaultGroupFooterSectionHeight = 25;
+
 //Sets default height for Group preview rows.
 this.gridGroupingControl1.Table.DefaultGroupPreviewSectionHeight = 25; 
 {% endhighlight %}
 {% highlight vb %}
 'Sets default height for group header sections.
 Me.gridGroupingControl1.Table.DefaultGroupHeaderSectionHeight = 25
+
 'Sets default height for group footer sections.
 Me.gridGroupingControl1.Table.DefaultGroupFooterSectionHeight = 25
+
 'Sets default height for Group preview rows.
 Me.gridGroupingControl1.Table.DefaultGroupPreviewSectionHeight = 25
 {% endhighlight %}
@@ -359,6 +381,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns(1).Width = 150
 
 ### Setting Default Column Width for columns
 The default column width can be assigned for GridGroupingControl columns by setting the [DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~DefaultColumnWidth.html) property. Please refer the below code,
+
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableDescriptor.AllowCalculateMaxColumnWidth = false;
@@ -369,12 +392,14 @@ Me.gridGroupingControl1.TableDescriptor.AllowCalculateMaxColumnWidth = False
 Me.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100
 {% endhighlight %}
 {% endtabs %}
+
 N> The `DefaultColumnWidth` can be affected to columns only when set the [AllowCalculateMaxColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~AllowCalculateMaxColumnWidth.html) property to false.
 
 The column width can be calculated based on [ColumnsMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthStrategy.html) property. Below is the list of predefined column sizing options available in[GridColumnMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.html) enumeration.
 `GridColumnsMaxLengthStrategy.None`:The Default column width or defined width set to column. 
 `GridColumnsMaxLengthStrategy.MaxLengthSummary`:Calculates the width of column based on header and cell contents. So that header and cell contents are not truncated.
 `GridColumnsMaxLengthStrategy. FirstNRecords`:Calculates the width of the column based on the number of rows is defined by [ColumnsMaxLengthFirstNRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthFirstNRecords.html) property. Please refer the below code,
+
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableOptions.ColumnsMaxLengthFirstNRecords = 10;
@@ -423,12 +448,14 @@ The record id of the current record can be get by using the [Table.CurrentRecord
 {% highlight c# %}
 //Get the current record of the grid
 Record record = this.gridGroupingControl1.Table.CurrentRecord;
+
 //Display the record id of the current record
 MessageBox.Show("The Current Record ID is :" + record.Id.ToString());
 {% endhighlight %}
 {% highlight vb %}
 'Get the current record of the grid
 Dim record As Record = Me.gridGroupingControl1.Table.CurrentRecord
+
 'Display the record id of the current record
 MessageBox.Show("The Current Record ID is :" & record.Id.ToString())
 {% endhighlight %}
@@ -489,12 +516,14 @@ The row index of the record can be get by using the [GetRowIndex](http://help.sy
 {% highlight c# %}
 //Get the current record of the grid
 int index = this.gridGroupingControl1.Table.CurrentRecord.GetRowIndex();
+
 //Display the row index of the current record
 MessageBox.Show("The Current Record row index is :" + index.ToString());
 {% endhighlight %}
 {% highlight vb %}
 'Get the current record of the grid
 Dim index As Integer = Me.gridGroupingControl1.Table.CurrentRecord.GetRowIndex()
+
 'Display the row index of the current record
 MessageBox.Show("The Current Record row index is :" & index.ToString())
 {% endhighlight %}
