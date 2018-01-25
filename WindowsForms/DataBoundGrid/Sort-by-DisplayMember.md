@@ -53,8 +53,12 @@ DataView dataView = cm.List as DataView;
 {% highlight vbnet %}
 Dim cm As CurrencyManager = TryCast(BindingContext(Grid.DataSource, Grid.DataMember), CurrencyManager)
 Dim dataView As DataView = TryCast(cm.List, DataView)
-DataView sort is applied to this with sortName.
+{% endhighlight %}
+{% endtabs %}
 
+DataView sort is applied to this with sortName.
+{% tabs %}
+{% highlight c# %}
 if (dataView.Sort == sortName)
 {
     dataView.Sort = sortName + " DESC";
@@ -62,7 +66,8 @@ if (dataView.Sort == sortName)
 
 else
     dataView.Sort = sortName;
-
+{% endhighlight %}
+{% highlight vbnet %}
 If dataView.Sort = sortName Then
 dataView.Sort = sortName & " DESC"
 
