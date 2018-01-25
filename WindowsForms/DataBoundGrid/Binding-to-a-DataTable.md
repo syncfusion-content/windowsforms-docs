@@ -15,7 +15,6 @@ Creating a DataTable from code is a two-step process. You must first add DataCol
 
 {% tabs %}
 {% highlight c# %}
-
 private void Form1_Load(object sender, System.EventArgs e)
 {
 this.gridDataBoundGrid1.DataSource = ReturnATable();
@@ -70,7 +69,6 @@ private DataTable ReturnATable()
 }
 {% endhighlight  %}
 {% highlight vbnet %}
-
 Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 Me.GridDataBoundGrid1.DataSource = ReturnATable()
 End Sub
