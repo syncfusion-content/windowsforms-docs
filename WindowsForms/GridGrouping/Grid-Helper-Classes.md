@@ -310,20 +310,20 @@ The following code illustrates how to add Excel-like filter to grid filter bar:
 {% highlight C# %}  
 GridExcelFilter filter;
 
-         private void showFilter_CheckedChanged(object sender, EventArgs e)
-        {
-            this.gridGroupingControl1.TableDescriptor.Columns[0].AllowFilter = true;
+private void showFilter_CheckedChanged(object sender, EventArgs e)
+{
+   this.gridGroupingControl1.TableDescriptor.Columns[0].AllowFilter = true;
 
-            if (this.showFilter.Checked)
-            {
-                filter.WireGrid(this.gridGroupingControl1);
-            }
-
-            else
-            {
-                filter.UnWireGrid(this.gridGroupingControl1);
-            }
+       if (this.showFilter.Checked)
+       {
+            filter.WireGrid(this.gridGroupingControl1);
         }
+
+       else
+       {
+            filter.UnWireGrid(this.gridGroupingControl1);
+       }
+}
 {% endhighlight %}
 {% highlight vbnet %}  
 Private filter As GridExcelFilter
