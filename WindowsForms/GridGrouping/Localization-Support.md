@@ -28,55 +28,49 @@ To localize the content, create a class file and add _ILocalizationProvider_ int
 {% tabs %}
 {% highlight c#  %}
  public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
+{
+
+    switch (name)
     {
+        case DynamicFilterResourceIdentifiers.StartsWith:
 
-        switch (name)
-        {
+            if (comparerList)
+                return "empieza con";
 
-                case DynamicFilterResourceIdentifiers.StartsWith:
-
-                    if (comparerList)
-                        return "empieza con";
-
-                    else
-                        return "StartsWith";                
+            else
+                return "StartsWith";                
 
 
-                case GroupingResourceIdentifiers.RecordNavigatorOF:
+        case GroupingResourceIdentifiers.RecordNavigatorOF:
 
-                    if (recordNavigBar)
-                        return "von";
+            if (recordNavigBar)
+                return "von";
 
-                    else
-                        return "Of";
-
-
+            else
+                return "Of";
 
 //Drag group column.
 
-                case GroupingResourceIdentifiers.DragColumnHeaderHereText:
-                    return "Ziehen Sie die Spaltenüberschrift";
+        case GroupingResourceIdentifiers.DragColumnHeaderHereText:
+               return "Ziehen Sie die Spaltenüberschrift";
 
+        case DynamicFilterResourceIdentifiers.SortAtoZ:
 
+            if (office2007Filter)
+                return "&SortierenAbisZ";
 
-                case DynamicFilterResourceIdentifiers.SortAtoZ:
+            else
+                return "&SortAtoZ";
 
-                    if (office2007Filter)
-                        return "&SortierenAbisZ";
-
-                    else
-                        return "&SortAtoZ";
-
-                default:
-                    return string.Empty;
-
+        default:
+                return string.Empty;
             }
-        }
+            }
 {% endhighlight   %}
 {% highlight vbnet  %}
 Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String Implements ILocalizationProvider.GetLocalizedString
 
-#### Select Case name
+'Select Case name
 
 Case DynamicFilterResourceIdentifiers.StartsWith
 
@@ -209,25 +203,25 @@ The following code example illustrates how to add localization support to ComboB
 {% tabs %}
 {% highlight c#  %}
 public object ConvertToString(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value)
-    {
+{
 
-        switch ((Status)value)
+    switch ((Status)value)
 
-          {case Status.Divorced:
-            return "geschieden";
+      {case Status.Divorced:
+        return "geschieden"
+        
+      case Status.Married:
+        return "verheiratet";
 
-          case Status.Married:
-            return "verheiratet";
+      case Status.Single:
+        return "Einzel";
 
-          case Status.Single:
-            return "Einzel";
+      case Status.Widow:
+        return "Witwe";
 
-          case Status.Widow:
-            return "Witwe";
-
-          default:
-            return string.Empty;
-            }}
+      default:
+        return string.Empty;
+  }}
 {% endhighlight   %}
 {% highlight vbnet  %}
 
