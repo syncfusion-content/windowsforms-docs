@@ -16,12 +16,10 @@ Let’s consider three of the `GridStyleInfo` properties for better explanation.
 
 {% tabs %}
 {% highlight c# %}
-
 // Applies back color as LightGreen for all the cells in the Grid.
 this.gridGroupingControl1.Appearance.AnyCell.BackColor = Color.LightGreen;
 {% endhighlight %}
 {% highlight vb %}
-
 'Applies back color as LightGreen for all the cells in the Grid.
 Me.gridGroupingControl1.Appearance.AnyCell.BackColor = Color.LightGreen
 {% endhighlight %}
@@ -33,12 +31,10 @@ N> For enabling the styles to be changes in the headers also, then you have to s
 
 {% tabs %}
 {% highlight c# %}
-
 // Applies back color as LightPink for all the records in the Grid.
 this.gridGroupingControl1.Appearance.AnyRecordFieldCell.BackColor = Color.LightPink;
 {% endhighlight %}
 {% highlight vb %}
-
 'Applies back color as LightPink for all the records in the Grid.
 Me.gridGroupingControl1.Appearance.AnyRecordFieldCell.BackColor = Color.LightPink
 {% endhighlight %}
