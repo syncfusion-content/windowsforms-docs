@@ -134,6 +134,8 @@ Development Environments</td><td>
 <ul>
 <li> Visual Studio 2017</li>
 <li> Visual Studio 2015</li>
+<li> Visual Studio 2013</li>
+<li> Visual Studio 2012</li>
 <li> Visual Studio 2010 (Ultimate and Express)</li>
 <li> Visual Studio 2008 (Team, Professional, Standard and Express)</li>
 <li> Visual Studio 2005 (Team, Professional, Standard and Express)</li>
