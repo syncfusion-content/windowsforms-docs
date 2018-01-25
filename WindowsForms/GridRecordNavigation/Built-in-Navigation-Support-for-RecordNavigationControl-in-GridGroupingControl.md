@@ -72,7 +72,7 @@ The following are steps to add navigation bar:
 
 1. Enable navigation bar by setting ShowNavigationBar property to true. The following code illustrates this:
 
-
+{% tabs %}
    ~~~ cs
 
 
@@ -84,18 +84,22 @@ The following are steps to add navigation bar:
               Me.gridGroupingControl1.ShowNavigationBar = True
    ~~~
    {:.prettyprint}
-
+{% endtabs %}
 
 2. Call the methods for navigation bar i.e., MoveFirst(), MoveLast(), MoveNext() and MovePrevious() methods. The following code illustrates this: 
 
-
+{% tabs %}
    ~~~ cs
 
 				//This property should set to true to show navigation bar.      
 				 this.gridGroupingControl1.ShowNavigationBar = true;
+				 
 				 //This method is used to navigate the first record.this.gridGroupingControl1.RecordNavigationBar.MoveFirst();
+				 
 				 //This method is used to navigate the last record.this.gridGroupingControl1.RecordNavigationBar.MoveLast();
+				 
 				 //This method is used to navigate the next record.this.gridGroupingControl1.RecordNavigationBar.MoveNext();
+				 
 				 //This method is used to navigate the previous record.    
 				 this.gridGroupingControl1.RecordNavigationBar.MovePrevious();
    ~~~
@@ -110,6 +114,8 @@ The following are steps to add navigation bar:
 				Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
    ~~~
    {:.prettyprint}
+   {% endtabs %}
+   
    ![](Builtin_images/Builtin_img1.png)
 
 
