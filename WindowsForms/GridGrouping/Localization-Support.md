@@ -30,42 +30,41 @@ To localize the content, create a class file and add _ILocalizationProvider_ int
  public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
 {
 
-    switch (name)
-    {
-        case DynamicFilterResourceIdentifiers.StartsWith:
+   switch (name)
+   {
+      case DynamicFilterResourceIdentifiers.StartsWith:
 
-            if (comparerList)
-                return "empieza con";
+        if (comparerList)
+            return "empieza con";
 
-            else
-                return "StartsWith";                
+        else
+            return "StartsWith";                
 
+      case GroupingResourceIdentifiers.RecordNavigatorOF:
 
-        case GroupingResourceIdentifiers.RecordNavigatorOF:
+        if (recordNavigBar)
+            return "von";
 
-            if (recordNavigBar)
-                return "von";
-
-            else
-                return "Of";
+        else
+            return "Of";
 
 //Drag group column.
 
-        case GroupingResourceIdentifiers.DragColumnHeaderHereText:
-               return "Ziehen Sie die Spaltenüberschrift";
+      case GroupingResourceIdentifiers.DragColumnHeaderHereText:
+            return "Ziehen Sie die Spaltenüberschrift";
 
-        case DynamicFilterResourceIdentifiers.SortAtoZ:
+      case DynamicFilterResourceIdentifiers.SortAtoZ:
 
-            if (office2007Filter)
-                return "&SortierenAbisZ";
+        if (office2007Filter)
+            return "&SortierenAbisZ";
 
-            else
-                return "&SortAtoZ";
+        else
+            return "&SortAtoZ";
 
-        default:
-                return string.Empty;
-            }
-            }
+      default:
+            return string.Empty;
+      }
+  }
 {% endhighlight   %}
 {% highlight vbnet  %}
 Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String Implements ILocalizationProvider.GetLocalizedString
