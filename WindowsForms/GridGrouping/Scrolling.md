@@ -37,7 +37,6 @@ Me.gridGroupingControl1.TableControl.HScrollBehavior = GridScrollbarMode.Enabled
 Me.gridGroupingControl1.TableControl.VScroll = True
 Me.gridGroupingControl1.TableControl.VScrollBehavior = GridScrollbarMode.Enabled
 
-
 'Disables Horizontal ScrollBar
 Me.gridGroupingControl1.TableControl.HScroll = False
 Me.gridGroupingControl1.TableControl.HScrollBehavior = GridScrollbarMode.Disabled
@@ -97,12 +96,14 @@ The themes can be applied for the office scrollbars by setting the appropriate c
 {% highlight c# %}
 // Sets the Office2010 Office ScrollBars
 this.gridGroupingControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2010;
+
 //Set the color scheme
 this.gridGroupingControl1.Office2010ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2010ColorScheme.Black;
 {% endhighlight %}
 {% highlight vb %}
 ' Sets the Office2010 Office ScrollBars
 Me.gridGroupingControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2010
+
 'Set the color scheme
 Me.gridGroupingControl1.Office2010ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2010ColorScheme.Black
 {% endhighlight %}
@@ -114,12 +115,14 @@ Me.gridGroupingControl1.Office2010ScrollBarsColorScheme = Syncfusion.Windows.For
 {% highlight c# %}
 // Sets the Office2007 Office ScrollBars
 this.gridGroupingControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2007;
+
 //Set the color scheme
 this.gridGroupingControl1.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Silver;
 {% endhighlight %}
 {% highlight vb %}
 ' Sets the Office2007 Office ScrollBars
 Me.gridGroupingControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2007
+
 'Set the color scheme
 Me.gridGroupingControl1.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Silver
 {% endhighlight %}
@@ -134,12 +137,14 @@ The back color of the metro scrollbars can be customized to the desired color by
 {% highlight c# %}
 // Sets the Metro theme for Grid Office Scroll Bars
 this.gridGroupingControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro;
+
 // Changes the back color of the scroll bar
 this.gridGroupingControl1.TableControl.MetroColorTable.ScrollerBackground = Color.CadetBlue;
 {% endhighlight %}
 {% highlight vb %}
 ' Sets the Metro theme for Grid Office Scroll Bars
 Me.gridGroupingControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro
+
 ' Changes the back color of the scroll bar
 Me.gridGroupingControl1.TableControl.MetroColorTable.ScrollerBackground = Color.CadetBlue
 {% endhighlight %}
@@ -177,7 +182,6 @@ this.gridGroupingControl1.TableControl.UseSharedScrollBars = true;
 
 //Set the inner scrollbar which is shared to the grid
 this.gridGroupingControl1.TableControl.HScrollBar.InnerScrollBar = hScrollBar1;
-
 this.gridGroupingControl1.TableControl.VScrollBar.InnerScrollBar = vScrollBar1;
 {% endhighlight %}
 {% highlight vb %}
@@ -190,9 +194,7 @@ Me.gridGroupingControl1.TableControl.UseSharedScrollBars = True
 
 'Set the inner scrollbar which is shared to the grid
 Me.gridGroupingControl1.TableControl.HScrollBar.InnerScrollBar = hScrollBar1
-
 Me.gridGroupingControl1.TableControl.VScrollBar.InnerScrollBar = vScrollBar1
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -207,14 +209,15 @@ this.gridGroupingControl1.TableControl.HorizontalScroll += new ScrollEventHandle
 
 void TableControl_HorizontalScroll(object sender, ScrollEventArgs e)
 {
+
     // Displays the changed horizontal scroll value
     Console.WriteLine(e.NewValue);
 }
-
 this.gridGroupingControl1.TableControl.VerticalScroll += new ScrollEventHandler(TableControl_VerticalScroll);
 
 void TableControl_VerticalScroll(object sender, ScrollEventArgs e)
 {
+
     // Displays the changed vertical scroll value
     Console.WriteLine(e.NewValue);
 }
@@ -224,6 +227,7 @@ void TableControl_VerticalScroll(object sender, ScrollEventArgs e)
 Private Me.gridGroupingControl1.TableControl.HorizontalScroll += New ScrollEventHandler(AddressOf TableControl_HorizontalScroll)
 
 Private Sub TableControl_HorizontalScroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
+
 	'Displays the changed horizontal scroll value
 	Console.WriteLine(e.NewValue)
 End Sub
@@ -231,6 +235,7 @@ End Sub
 Private Me.gridGroupingControl1.TableControl.VerticalScroll += New ScrollEventHandler(AddressOf TableControl_VerticalScroll)
 
 Private Sub TableControl_VerticalScroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
+
 	'Displays the changed vertical scroll value
 	Console.WriteLine(e.NewValue)
 End Sub
