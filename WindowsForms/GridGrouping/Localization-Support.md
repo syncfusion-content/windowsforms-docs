@@ -25,36 +25,29 @@ To open sample project, navigate to the following sample location in your system
 
 To localize the content, create a class file and add _ILocalizationProvider_ interface to the class. Assign the required content to be displayed to _DynamicFilterResourceIdentifiers_, _GroupingResourceIdentifiers_ and _GridResourceIdentifiers_ of GetLocalizedString method as illustrated in the following code.
 
-
+{% tabs %}
 {% highlight c#  %}
-   public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
+ public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
+    {
 
+        switch (name)
         {
-
-            switch (name)
-
-            {
 
                 case DynamicFilterResourceIdentifiers.StartsWith:
 
                     if (comparerList)
-
                         return "empieza con";
 
                     else
-
                         return "StartsWith";                
-
 
 
                 case GroupingResourceIdentifiers.RecordNavigatorOF:
 
                     if (recordNavigBar)
-
                         return "von";
 
                     else
-
                         return "Of";
 
 
@@ -62,7 +55,6 @@ To localize the content, create a class file and add _ILocalizationProvider_ int
 //Drag group column.
 
                 case GroupingResourceIdentifiers.DragColumnHeaderHereText:
-
                     return "Ziehen Sie die Spaltenüberschrift";
 
 
@@ -70,34 +62,18 @@ To localize the content, create a class file and add _ILocalizationProvider_ int
                 case DynamicFilterResourceIdentifiers.SortAtoZ:
 
                     if (office2007Filter)
-
                         return "&SortierenAbisZ";
 
                     else
-
                         return "&SortAtoZ";
 
                 default:
-
                     return string.Empty;
 
             }
-
         }
-
-
-
-
-
-
-
-
 {% endhighlight   %}
 {% highlight vbnet  %}
-
-
-
-
 Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String Implements ILocalizationProvider.GetLocalizedString
 
 #### Select Case name
@@ -105,59 +81,36 @@ Public Function GetLocalizedString(ByVal culture As System.Globalization.Culture
 Case DynamicFilterResourceIdentifiers.StartsWith
 
 If comparerList Then
-
 Return "empieza con"
 
 Else
-
 Return "StartsWith"
-
 End If
-
-
-
-
 
 Case GroupingResourceIdentifiers.RecordNavigatorOF
 
 If recordNavigBar Then
-
 Return "von"
 
 Else
-
 Return "Of"
-
 End If
-
-
-
-
 
 Case DynamicFilterResourceIdentifiers.SortAtoZ
 
 If office2007Filter Then
-
 Return "&SortierenAbisZ"
 
 Else
-
 Return "&SortAtoZ"
-
 End If
 
-
-
 Case Else
-
 Return String.Empty
-
 End Select
-
 End Function
-
 {% endhighlight   %}
-
+{% endtabs %}
 
 
 Add the following table items to the above code example by substituting the identifiers and Enum values as in they correspond in the table.
@@ -253,42 +206,28 @@ To get DataGrid samples from the dashboard:
 
 The following code example illustrates how to add localization support to ComboBox cell using ConvertToString method of Status class.
 
-
+{% tabs %}
 {% highlight c#  %}
-
-
 public object ConvertToString(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value)
+    {
 
-        {
+        switch ((Status)value)
 
-            switch ((Status)value)
+          {case Status.Divorced:
+            return "geschieden";
 
-            {case Status.Divorced:
+          case Status.Married:
+            return "verheiratet";
 
-                    return "geschieden";
+          case Status.Single:
+            return "Einzel";
 
-                case Status.Married:
+          case Status.Widow:
+            return "Witwe";
 
-                    return "verheiratet";
-
-                case Status.Single:
-
-                    return "Einzel";
-
-                case Status.Widow:
-
-                    return "Witwe";
-
-                default:
-
-                    return string.Empty;
-
+          default:
+            return string.Empty;
             }}
-
-
-
-
-
 {% endhighlight   %}
 {% highlight vbnet  %}
 
@@ -297,30 +236,23 @@ Private Overloads Function ConvertFromString(ByVal context As ITypeDescriptorCon
 Select Case CStr(value)
 
 Case "geschieden"
-
 Return Status.Divorced
 
 Case "verheiratet"
-
 Return Status.Married
 
 Case "Einzel"
-
 Return Status.Single
 
 Case "Witwe"
-
 Return Status.Widow
 
 Case Else
-
 Return Nothing
-
 End Select
-
 End Function
-
 {% endhighlight   %}
+{% endtabs %}
 
 ![](Localization-Support_images/Localization-Support_img2.png)
 
