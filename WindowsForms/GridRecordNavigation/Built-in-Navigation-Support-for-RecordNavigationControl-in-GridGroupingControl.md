@@ -74,14 +74,12 @@ The following are steps to add navigation bar:
 
 {% tabs %}
    ~~~ cs
-
-
-             this.gridGroupingControl1.ShowNavigationBar = true;
+ this.gridGroupingControl1.ShowNavigationBar = true;
    ~~~
    {:.prettyprint}
    
-   ~~~ vbnet
-              Me.gridGroupingControl1.ShowNavigationBar = True
+  ~~~ vbnet
+  Me.gridGroupingControl1.ShowNavigationBar = True
    ~~~
    {:.prettyprint}
 {% endtabs %}
@@ -90,31 +88,29 @@ The following are steps to add navigation bar:
 
 {% tabs %}
    ~~~ cs
+//This property should set to true to show navigation bar.      
+this.gridGroupingControl1.ShowNavigationBar = true;
 
-				//This property should set to true to show navigation bar.      
-				 this.gridGroupingControl1.ShowNavigationBar = true;
-				 
-				 //This method is used to navigate the first record.this.gridGroupingControl1.RecordNavigationBar.MoveFirst();
-				 
-				 //This method is used to navigate the last record.this.gridGroupingControl1.RecordNavigationBar.MoveLast();
-				 
-				 //This method is used to navigate the next record.this.gridGroupingControl1.RecordNavigationBar.MoveNext();
-				 
-				 //This method is used to navigate the previous record.    
-				 this.gridGroupingControl1.RecordNavigationBar.MovePrevious();
+//This method is used to navigate the first record.this.gridGroupingControl1.RecordNavigationBar.MoveFirst();
+
+//This method is used to navigate the last record.this.gridGroupingControl1.RecordNavigationBar.MoveLast();
+
+//This method is used to navigate the next record.this.gridGroupingControl1.RecordNavigationBar.MoveNext();
+
+//This method is used to navigate the previous record.    
+ this.gridGroupingControl1.RecordNavigationBar.MovePrevious();
    ~~~
    {:.prettyprint}
-   
-   ~~~ vbnet
-				'This property should set to true to show the navigation bar.      
-				Me.gridGroupingControl1.ShowNavigationBar = True'This method is used to navigate the first record.   
-				Me.gridGroupingControl1.RecordNavigationBar.MoveFirst()'This method is used to navigate the last record.   
-				Me.gridGroupingControl1.RecordNavigationBar.MoveLast()'This method is used to navigate the next record. 
-				Me.gridGroupingControl1.RecordNavigationBar.MoveNext()'This method is used to navigate the previous record.
-				Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
+ ~~~ vbnet
+'This property should set to true to show the navigation bar.      
+Me.gridGroupingControl1.ShowNavigationBar = True'This method is used to navigate the first record.   
+Me.gridGroupingControl1.RecordNavigationBar.MoveFirst()'This method is used to navigate the last record.   
+Me.gridGroupingControl1.RecordNavigationBar.MoveLast()'This method is used to navigate the next record. 
+Me.gridGroupingControl1.RecordNavigationBar.MoveNext()'This method is used to navigate the previous record.
+Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
    ~~~
-   {:.prettyprint}
-   {% endtabs %}
+{:.prettyprint}
+{% endtabs %}
    
    ![](Builtin_images/Builtin_img1.png)
 
