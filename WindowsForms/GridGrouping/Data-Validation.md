@@ -145,12 +145,14 @@ this.gridGroupingControl1.TableControlCurrentCellValidateString+=new GridTableCo
 (gridGroupingControl1_TableControlCurrentCellValidateString);
 this.gridGroupingControl1.TableControlCurrentCellErrorMessage+=new GridTableControlCurrentCellErrorMessageEventHandler
 (gridGroupingControl1_TableControlCurrentCellErrorMessage);
+
 void gridGroupingControl1_TableControlCurrentCellErrorMessage(object sender, GridTableControlCurrentCellErrorMessageEventArgs e)
 {
     string ErrorMessage = e.Inner.Text;
 
     //To-Do
 }
+
 void gridGroupingControl1_TableControlCurrentCellValidateString(object sender, GridTableControlCurrentCellValidateStringEventArgs e)
 {
     string enteredString = e.Inner.Text;
@@ -209,6 +211,7 @@ The validation error message can be handled by using the `TableControlCurrentCel
 {% highlight c# %}
 this.gridGroupingControl1.TableControlCurrentCellErrorMessage += new GridTableControlCurrentCellErrorMessageEventHandler
 (gridGroupingControl1_TableControlCurrentCellErrorMessage);
+
 void gridGroupingControl1_TableControlCurrentCellErrorMessage(object sender, GridTableControlCurrentCellErrorMessageEventArgs e)
 {
 
@@ -255,6 +258,7 @@ The invalid key pressing can be prevented by handling the `TableControlCurrentCe
 {% highlight c# %}
 this.gridGroupingControl1.TableControlCurrentCellValidateString+=new GridTableControlCurrentCellValidateStringEventHandler
 (gridGroupingControl1_TableControlCurrentCellValidateString);
+
 void gridGroupingControl1_TableControlCurrentCellValidateString(object sender, GridTableControlCurrentCellValidateStringEventArgs e)
 {
     double numericValue;
