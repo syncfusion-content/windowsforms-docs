@@ -19,20 +19,24 @@ The below example shows the `Find and Replace` dialog is shown in GridControl,
 
 {% tabs %}
 {% highlight c# %}
-// Setting the Dialog sink
+// Setting the Dialog sink.
 GridFindReplaceDialogSink findReplaceSink = new GridFindReplaceDialogSink(this.gridControl1);
-// Setting the Dialog
+
+// Setting the Dialog.
 GridFindReplaceDialog findReplaceDialog = GridFindReplaceDialog.Instance;
-// Setting the sink to dialog
+
+// Setting the sink to dialog.
 findReplaceDialog.ActiveSink = findReplaceSink;
 findReplaceDialog.ShowDialog();
 {% endhighlight %}
 {% highlight vb %}
-' Setting the Dialog sink
+' Setting the Dialog sink.
 Dim findReplaceSink As New GridFindReplaceDialogSink(Me.gridControl1)
-' Setting the Dialog
+
+' Setting the Dialog.
 Dim findReplaceDialog As GridFindReplaceDialog = GridFindReplaceDialog.Instance
-' Setting the sink to dialog
+
+' Setting the sink to dialog.
 findReplaceDialog.ActiveSink = findReplaceSink
 findReplaceDialog.ShowDialog()
 {% endhighlight %}
@@ -52,32 +56,30 @@ The finding options are used to set certain conditions for search the text and n
 
 {% tabs %}
 {% highlight c# %}
-//Create object for Find and Replace dialog
+//Create object for Find and Replace dialog.
 GridFindReplaceDialogSink frDialog = new GridFindReplaceDialogSink(this.gridControl1);
 
-//Set options for find Text
+//Set options for find Text.
 GridFindTextOptions options = GridFindTextOptions.WholeTable;
 
-//Set the range info
+//Set the range info.
 object locInfo = GridRangeInfo.Table();
 
-//Create Find and Replace event args 
+//Create Find and Replace event args. 
 GridFindReplaceEventArgs frEvents = new GridFindReplaceEventArgs(this.txtSearchText.Text, "", options, locInfo);
-
 {% endhighlight %}
 {% highlight vb %}
-'Create object for Find and Replace dialog
+'Create object for Find and Replace dialog.
 Dim frDialog As New GridFindReplaceDialogSink(Me.gridControl1)
 
-'Set options for find Text
+'Set options for find Text.
 Dim options As GridFindTextOptions = GridFindTextOptions.WholeTable
 
-'Set the range info
+'Set the range info.
 Dim locInfo As Object = GridRangeInfo.Table()
 
-'Create Find and Replace event args 
+'Create Find and Replace event args. 
 Dim frEvents As New GridFindReplaceEventArgs(Me.txtSearchText.Text, "", options, locInfo)
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,35 +88,40 @@ The Find and Replace dialog can be shown in GridControl as like Excel while pres
 
 {% tabs %}
 {% highlight c# %}
-//Triggering the CurrentCellKeyDown event
+//Triggering the CurrentCellKeyDown event.
 this.gridControl1.CurrentCellKeyDown += new KeyEventHandler(gridControl1_CurrentCellKeyDown);
 
 void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
 {
      if (e.Control && e.KeyCode == Keys.F)
      {
-         // Setting the Dialog sink
+
+// Setting the Dialog sink.
          GridFindReplaceDialogSink findReplaceSink = new GridFindReplaceDialogSink(this.gridControl1);
-        // Setting the Dialog
+
+// Setting the Dialog.
         GridFindReplaceDialog findReplaceDialog = GridFindReplaceDialog.Instance;
-        // Setting the sink to dialog
+        
+// Setting the sink to dialog.
          findReplaceDialog.ActiveSink = findReplaceSink;
          findReplaceDialog.ShowDialog();
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
-'Triggering the CurrentCellKeyDown event
+'Triggering the CurrentCellKeyDown event.
 Private Me.gridControl1.CurrentCellKeyDown += New KeyEventHandler(AddressOf gridControl1_CurrentCellKeyDown)
 
 Private Sub gridControl1_CurrentCellKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
      If e.Control AndAlso e.KeyCode = Keys.F Then
-         ' Setting the Dialog sink
+    
+' Setting the Dialog sink.
          Dim findReplaceSink As New GridFindReplaceDialogSink(Me.gridControl1)
-        ' Setting the Dialog
+
+' Setting the Dialog.
         Dim findReplaceDialog As GridFindReplaceDialog = GridFindReplaceDialog.Instance
-        ' Setting the sink to dialog
+
+' Setting the sink to dialog.
          findReplaceDialog.ActiveSink = findReplaceSink
          findReplaceDialog.ShowDialog()
      End If
@@ -131,35 +138,35 @@ To find first possible match at the earliest based on the search options, use th
 
 {% tabs %}
 {% highlight c# %}
-//Create object for Find and Replace dialog
+//Create object for Find and Replace dialog.
 GridFindReplaceDialogSink frDialog = new GridFindReplaceDialogSink(this.gridControl1);
 
-//Set options for find Text
+//Set options for find Text.
 GridFindTextOptions options = GridFindTextOptions.WholeTable;
 
-//Set the range info
+//Set the range info.
 object locInfo = GridRangeInfo.Table();
 
-//Create Find and Replace event args 
+//Create Find and Replace event args.
 GridFindReplaceEventArgs frEvents = new GridFindReplaceEventArgs(this.txtSearchText.Text, "", options, locInfo);
 
-//Used to Find the next possible match
+//Used to Find the next possible match.
 frDialog.Find(frEvents);            
 {% endhighlight %}
 {% highlight vb %}
-'Create object for Find and Replace dialog
+'Create object for Find and Replace dialog.
 Dim frDialog As New GridFindReplaceDialogSink(Me.gridControl1)
 
-'Set options for find Text
+'Set options for find Text.
 Dim options As GridFindTextOptions = GridFindTextOptions.WholeTable
 
-'Set the range info
+'Set the range info.
 Dim locInfo As Object = GridRangeInfo.Table()
 
-'Create Find and Replace event args 
+'Create Find and Replace event args.
 Dim frEvents As New GridFindReplaceEventArgs(Me.txtSearchText.Text, "", options, locInfo)
 
-'Used to Find the next possible match
+'Used to Find the next possible match.
 frDialog.Find(frEvents) 
 {% endhighlight %}
 {% endtabs %}
@@ -240,18 +247,22 @@ The `Replace` and `Replace All` methods are used to replace the found text or nu
 
 {% tabs %}
 {% highlight c# %}
-//Create Find and Replace event args
+//Create Find and Replace event args.
 GridFindReplaceEventArgs frEvents = new GridFindReplaceEventArgs("Search Text", "Replace Text", searchOptions, locInfo);
-//Replace the text with the first match found using the Find option
+
+//Replace the text with the first match found using the Find option.
 frDialog.Replace(frEvents);
+
 //Replace the entire match with the possible replace string
 frDialog.ReplaceAll(frEvents);
 {% endhighlight %}
 {% highlight vb %}
 'Create Find and Replace event args 
 Dim frEvents As New GridFindReplaceEventArgs("Search Text", "Replace Text", searchOptions, locInfo)
+
 'Replace the text with the first match found using the Find option
 frDialog.Replace(frEvents)
+
 'Replace the entire match with the possible replace string
 frDialog.ReplaceAll(frEvents)
 {% endhighlight %}

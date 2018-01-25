@@ -19,12 +19,14 @@ This section will explain on how to add a basic cell type into a grid cell. To a
 {% tabs %}
 {% highlight c# %}
 this.gridControl1[2, 2].CellType = GridCellTypeName.CheckBox;
-//Set the text to be displayed in the checkbox cell
+
+//Set the text to be displayed in the checkbox cell.
 this.gridControl1[2, 2].Description = "Enable";
 {% endhighlight %}
 {% highlight vb %}
 Me.gridControl1(2, 2).CellType = GridCellTypeName.CheckBox
-'Set the text to be displayed in the checkbox cell
+
+'Set the text to be displayed in the checkbox cell.
 Me.gridControl1(2, 2).Description = "Enable"
 {% endhighlight %}
 {% endtabs %}
@@ -45,7 +47,8 @@ gridControl1[2, 3].ImageIndex = 0;
 {% highlight vb %}
 gridControl1(2, 2).Text = "TextBox"
 gridControl1(2, 2).CellType = "TextBox"
-'Text box with image - assumes ImageList set the same Static sample code.
+
+'Text box with image assumes ImageList set the same Static sample code.
 gridControl1(2, 3).Text = "TextBox/Image"
 gridControl1(2, 2).CellType = "TextBox"
 gridControl1(2, 3).ImageIndex = 0
@@ -116,8 +119,8 @@ imageList1.Images.Add(SystemIcons.Application.ToBitmap());
 
 //Sets the image list into the TableStyle.
 gridControl1.TableStyle.ImageList = imageList1;
-
 gridControl1[2, 2].CellType = GridCellTypeName.Image;
+
 // Adds the image located in the index 1.
 gridControl1[2, 2].ImageIndex = 1;
 
@@ -130,8 +133,8 @@ imageList1.Images.Add(SystemIcons.Application.ToBitmap())
 
 'Sets the image list into the TableStyle.
 gridControl1.TableStyle.ImageList = imageList1
-
 gridControl1(2, 2).CellType = GridCellTypeName.Image
+
 'Adds the image located in the index 1.
 gridControl1(2, 2).ImageIndex = 1
 
@@ -148,7 +151,6 @@ It is possible to add multiple images in a grid cell with the help of `CellDrawn
 
 //Sets the CellType to Image Type.
 this.gridControl1[3,3].CellType = GridCellTypeName.Image;
-
 gridControl1.CellDrawn+=new GridDrawCellEventHandler(gridControl1_CellDrawn);
 
 private void gridControl1_CellDrawn(object sender, Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs e)
@@ -165,7 +167,6 @@ e.Graphics.DrawImage(SystemIcons.Information.ToBitmap(), e.Bounds.X +     System
 
 'Sets the CellType to Image Type.
 Me.gridControl1(3,3).CellType = GridCellTypeName.Image
-
 AddHandler gridControl1.CellDrawn, AddressOf gridControl1_CellDrawn
 
 Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs)
@@ -188,6 +189,7 @@ End Sub
 
 gridControl1[2, 2].Description = "CheckBox";
 this.gridControl1[2, 2].CellType = GridCellTypeName.CheckBox;
+
 // Sets a flat look and values that represent checked, unchecked and indeterminate state.
 this.gridControl1[2, 2].CheckBoxOptions = new GridCheckBoxCellInfo("True", "False", "", true);
 
@@ -196,6 +198,7 @@ this.gridControl1[2, 2].CheckBoxOptions = new GridCheckBoxCellInfo("True", "Fals
 
 gridControl1(2, 2).Description = "CheckBox"
 Me.gridControl1(2, 2).CellType = GridCellTypeName.CheckBox
+
 'Sets a flat look and values that represent checked, unchecked and indeterminate state.
 Me.gridControl1(2, 2).CheckBoxOptions = New GridCheckBoxCellInfo("True", "False", "", True)
 
@@ -210,14 +213,10 @@ Adding a combo box to a grid cell, will enable to show a pop up displaying an as
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridControl1[2, 2].CellType = GridCellTypeName.ComboBox;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridControl1(2, 2).CellType = GridCellTypeName.ComboBox
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -259,8 +258,7 @@ The [DisplayMember](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/S
 
 {% tabs %}
 {% highlight c# %}
-
-// DataSource
+// DataSource.
 DataTable dataTable = new DataTable();
 dataTable.Columns.Add("Name");
 
@@ -269,7 +267,7 @@ dataTable.Rows.Add(new object[] { "Andrew" });
 dataTable.Rows.Add(new object[] { "Janet" });
 dataTable.Rows.Add(new object[] { "Margaret" });
 
-//Assigning Datasource to combobox
+//Assigning Datasource to combobox.
 GridStyleInfo style = gridControl1.Model[2, 2];
 style.CellType = GridCellTypeName.ComboBox;
 style.DataSource = dataTable;
@@ -278,8 +276,7 @@ style.ValueMember = "Name";
 
 {% endhighlight %}
 {% highlight vb %}
-
-' DataSource
+' DataSource.
 Dim dataTable As New DataTable()
 dataTable.Columns.Add("Name")
 
@@ -288,7 +285,7 @@ dataTable.Rows.Add(New Object() { "Andrew" })
 dataTable.Rows.Add(New Object() { "Janet" })
 dataTable.Rows.Add(New Object() { "Margaret" })
 
-'Assigning Datasource to combobox
+'Assigning Datasource to combobox.
 Dim style As GridStyleInfo = gridControl1.Model(2, 2)
 style.CellType = GridCellTypeName.ComboBox
 style.DataSource = dataTable
@@ -329,11 +326,11 @@ The size of the ComboBox button can be changed by setting the size of the Button
 {% highlight c# %}
 //Creates Combobox Cell model object.
 GridComboBoxCellModel model = this.gridControl1.Model.CellModels["ComboBox"] as GridComboBoxCellModel;
+
 //Assigns a new value to its ButtonBarSize property.
 model.ButtonBarSize = new Size(8, 8);
 {% endhighlight %}
 {% highlight vb %}
-
 'Creates Combobox Cell model object.
 Dim model As GridComboBoxCellModel = TryCast(Me.gridControl1.Model.CellModels("ComboBox"), GridComboBoxCellModel)
 
@@ -360,8 +357,7 @@ void gridControl1_CurrentCellShowingDropDown(object sender, GridCurrentCellShowi
       GridCurrentCell cc = grid.CurrentCell;
       GridComboBoxCellRenderer cellRenderer = cc.Renderer as GridComboBoxCellRenderer;
   
-      //Sets number of visible items for combobox in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
-  
+//Sets number of visible items for combobox in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
       if (cc != null)
       {
          if (cc.RowIndex == 6)
@@ -384,8 +380,7 @@ Private Sub gridControl1_CurrentCellShowingDropDown(ByVal sender As Object, ByVa
       Dim cc As GridCurrentCell = grid.CurrentCell
       Dim cellRenderer As GridComboBoxCellRenderer = TryCast(cc.Renderer, GridComboBoxCellRenderer)
 
-      'Sets number of visible items for combobox in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
-
+'Sets number of visible items for combobox in Row 6 as 4, Row 4 as 7, Row 2 as 10 , and so on. 
       If cc IsNot Nothing Then
          If cc.RowIndex = 6 Then
             CType(cellRenderer.ListBoxPart, GridComboBoxListBoxPart).DropDownRows = 4
@@ -409,8 +404,7 @@ It is also possible to place a ComboBox cell in header cells by just setting the
 
 {% tabs %}
 {% highlight c# %}
-
-// Create a data source
+// Create a data source.
 StringCollection items = new StringCollection();
 items.AddRange(new String[]{    "One",
                 "Two",
@@ -420,28 +414,30 @@ items.AddRange(new String[]{    "One",
                 });
 
 
-//set the cell type into combobox.
+//Set the cell type into combobox.
 this.gridControl1[0, 4].CellType = "ComboBox";
 this.gridControl1[0, 4].CellValue = "combo";
+
 //Set the GridShowButtons as Show option for showing the combobox in the normal view.
-//The combobox is modified like current cell editing by assigning the GridShowButtons as CurrentCellEditing
+
+//The combobox is modified like current cell editing by assigning the GridShowButtons as CurrentCellEditing.
 this.gridControl1[0, 4].ShowButtons = GridShowButtons.Show;
 this.gridControl1[0, 4].CellAppearance = GridCellAppearance.Raised;
 this.gridControl1[0, 4].ChoiceList = items;
 
 {% endhighlight %}
 {% highlight vb %}
-
-' Create a data source
+' Create a data source.
 Dim items As New StringCollection()
 items.AddRange(New String(){ "One", "Two", "Three", "Four", "Five" })
-
 
 'set the cell type into combobox.
 Me.gridControl1(0, 4).CellType = "ComboBox"
 Me.gridControl1(0, 4).CellValue = "combo"
+
 'Set the GridShowButtons as Show option for showing the combobox in the normal view.
-'The combobox is modified like current cell editing by assigning the GridShowButtons as CurrentCellEditing
+
+'The combobox is modified like current cell editing by assigning the GridShowButtons as CurrentCellEditing.
 Me.gridControl1(0, 4).ShowButtons = GridShowButtons.Show
 Me.gridControl1(0, 4).CellAppearance = GridCellAppearance.Raised
 Me.gridControl1(0, 4).ChoiceList = items
@@ -455,7 +451,6 @@ N> To know more details and sample, refer the KB link over [here](https://www.sy
 
 {% tabs %}
 {% highlight c# %}
-
 StringCollection stringCollection = new StringCollection();
 stringCollection.AddRange(new String[]{   "Button 0", 
                             "Disabled/disabled", 
@@ -466,7 +461,6 @@ this.gridControl1[3, 1].CellType = "RadioButton";
 
 {% endhighlight %}
 {% highlight vb %}
-
 Dim stringCollection As New StringCollection()
 stringCollection.AddRange(New String(){ "Button 0", "Disabled/disabled", "Button 2", "Button 3"})
 Me.gridControl1(3, 1).ChoiceList = stringCollection
@@ -482,7 +476,6 @@ GridControl includes support for displaying radio button in both vertical and ho
 
 {% tabs %}
 {% highlight c# %}
-
 // Displays radio buttons vertically.
 this.gridControl1[1, 1].RadioButtonAlignment = Syncfusion.Windows.Forms.Grid.ButtonAlignment.Vertical;
 
@@ -508,16 +501,12 @@ Color Edit cell type will allow to pick up colors and set a color object as the 
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridControl1[2, 2].CellType = GridCellTypeName.ColorEdit;            
 this.gridControl1[2, 2].CellValue = "Aqua";
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridControl1(2, 2).CellType = GridCellTypeName.ColorEdit
 Me.gridControl1(2, 2).CellValue = "Aqua"
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -528,7 +517,6 @@ As mentioned in the beginning of this topic, each cell type has been created by 
 
 {% tabs %}
 {% highlight c# %}
-
 protected /*internal*/ override void InitializeDropDownContainer()
 {
     base.InitializeDropDownContainer();
@@ -538,7 +526,7 @@ protected /*internal*/ override void InitializeDropDownContainer()
     colorUI.Visible = true;
     colorUI.ColorSelected += new EventHandler(ColorUIColorSelected);
     this.colorUI.ColorGroups = ((Syncfusion.Windows.Forms.ColorUIGroups)((Syncfusion.Windows.Forms.ColorUIGroups.StandardColors)));
-    //Color tab name has changed
+//Color tab name has changed
     colorUI.StandardTabName = "TEST";
     this.DropDownContainer.Controls.Add(colorUI);
 }
@@ -553,7 +541,7 @@ Protected Overrides Sub InitializeDropDownContainer() 'internal
     colorUI.Visible = True
     AddHandler colorUI.ColorSelected, AddressOf ColorUIColorSelected
     Me.colorUI.ColorGroups = (CType((Syncfusion.Windows.Forms.ColorUIGroups.StandardColors), Syncfusion.Windows.Forms.ColorUIGroups))
-    'Color tab name has changed
+'Color tab name has changed
     colorUI.StandardTabName = "TEST"
     Me.DropDownContainer.Controls.Add(colorUI)
 End Sub
@@ -567,20 +555,20 @@ It is possible to add an arbitrary control in a grid cell through `Control` cell
 
 {% tabs %}
 {% highlight c# %}
-
 Panel panel1 = new Panel();
 panel.Controls.Add(new Button());
 panel.Controls.Add(new RadioButton());
+
 //Sets the control object.
 this.gridControl1[2, 2].Control = panel1;
 this.gridControl1[2, 2].CellType = "Control";
 
 {% endhighlight %}
 {% highlight vb %}
-
 Dim panel1 As New Panel()
 panel.Controls.Add(New Button())
 panel.Controls.Add(New RadioButton())
+
 'Sets the control object.
 Me.gridControl1(2, 2).Control = panel1
 Me.gridControl1(2, 2).CellType = "Control"
@@ -600,18 +588,14 @@ For setting a current cell as a Currency cell type, make use of the `CellType` p
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridControl1[2, 2].CellType = GridCellTypeName.Currency;
 this.gridControl1[3, 2].CellType = GridCellTypeName.Currency;
 this.gridControl1[4, 2].CellType = GridCellTypeName.Currency;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridControl1(2, 2).CellType = GridCellTypeName.ColorEdit
 Me.gridControl1[3, 2].CellType = GridCellTypeName.Currency
 Me.gridControl1[4, 2].CellType = GridCellTypeName.Currency
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -621,23 +605,18 @@ It is possible to display a special character if the currency cell is null by us
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo currencyStyle = new GridStyleInfo();
 currencyStyle.CellType = GridCellTypeName.Currency;
 currencyStyle.Text = "";
 currencyStyle.CurrencyEdit.NullString = "*";
 this.gridControl1[2, 2] = currencyStyle;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim currencyStyle As New GridStyleInfo()
 currencyStyle.CellType = GridCellTypeName.Currency
 currencyStyle.Text = ""
 currencyStyle.CurrencyEdit.NullString = "*"
 Me.gridControl1(2, 2) = currencyStyle
-
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -649,22 +628,18 @@ For setting the number of digits for the decimal portion of the currency, make u
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo currencyStyle = new GridStyleInfo();
 currencyStyle.CellType = GridCellTypeName.Currency;
 currencyStyle.Text = "2";
 currencyStyle.CurrencyEdit.CurrencyDecimalDigits = 2;
 this.gridControl1[2, 2] = currencyStyle;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim currencyStyle As New GridStyleInfo()
 currencyStyle.CellType = GridCellTypeName.Currency
 currencyStyle.Text = "2"
 currencyStyle.CurrencyEdit.CurrencyDecimalDigits = 2
 Me.gridControl1(2, 2) = currencyStyle
-
 {% endhighlight %}
 {% endtabs %}
 ![](Cell-Types_images/Cell-Types_img17.png)
@@ -673,24 +648,20 @@ Me.gridControl1(2, 2) = currencyStyle
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo currencyStyle = new GridStyleInfo();
 currencyStyle.CellType = GridCellTypeName.Currency;
 currencyStyle.Text = "700";
 currencyStyle.CurrencyEdit.CurrencyDecimalDigits = 2;
 currencyStyle.CurrencyEdit.CurrencyDecimalSeparator = "/";
 this.gridControl1[2, 2] = currencyStyle;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim currencyStyle As New GridStyleInfo()
 currencyStyle.CellType = GridCellTypeName.Currency
 currencyStyle.Text = "700"
 currencyStyle.CurrencyEdit.CurrencyDecimalDigits = 2
 currencyStyle.CurrencyEdit.CurrencyDecimalSeparator = "/"
 Me.gridControl1(2, 2) = currencyStyle
-
 {% endhighlight %}
 {% endtabs %}
 ![](Cell-Types_images/Cell-Types_img18.png)
@@ -698,23 +669,19 @@ Me.gridControl1(2, 2) = currencyStyle
 [CurrencyGroupSeparator](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyGroupSeparator.html) is a string property in `GridStyleInfo` class which specifies the separator to be used for grouping digits. The default string is comma.
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo currencyStyle = new GridStyleInfo();
 currencyStyle.CellType = GridCellTypeName.Currency;
 currencyStyle.Text = "7000";
 currencyStyle.CurrencyEdit.CurrencyGroupSeparator = "/";
 this.gridControl1[2, 2] = currencyStyle;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim currencyStyle As New GridStyleInfo()
 currencyStyle.CellType = GridCellTypeName.Currency
 currencyStyle.Text = "7000"
 currencyStyle.CurrencyEdit.CurrencyDecimalDigits = 2
 currencyStyle.CurrencyEdit.CurrencyDecimalSeparator = "/"
 Me.gridControl1(2, 2) = currencyStyle
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -723,24 +690,20 @@ Me.gridControl1(2, 2) = currencyStyle
 [CurrencyGroupSizes](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrencyEditInfo~CurrencyGroupSizes.html) property specifies the grouping of currency digit in the currency textbox. The value assigned has to be in the integer array because the values assigned will be from right to left.
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo currencyStyle = new GridStyleInfo();
 currencyStyle.CellType = GridCellTypeName.Currency;
 currencyStyle.Text = "700000";
 currencyStyle.CurrencyEdit.CurrencyDecimalDigits = 0;
 currencyStyle.CurrencyEdit.CurrencyGroupSizes = new int[] { 3, 2 };
 this.gridControl1[2, 2] = currencyStyle;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim currencyStyle As New GridStyleInfo()
 currencyStyle.CellType = GridCellTypeName.Currency
 currencyStyle.Text = "700000"
 currencyStyle.CurrencyEdit.CurrencyDecimalDigits = 0
 currencyStyle.CurrencyEdit.CurrencyGroupSizes = New Integer() { 3, 2 }
 Me.gridControl1(2, 2) = currencyStyle
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -750,7 +713,6 @@ Me.gridControl1(2, 2) = currencyStyle
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo positiveValue = new GridStyleInfo();
 positiveValue.CellType = GridCellTypeName.Currency;
 positiveValue.Text = "700000";
@@ -766,10 +728,8 @@ negativeValue.Format = "###,###";
 negativeValue.CurrencyEdit.CurrencyNegativePattern = 2;
 
 this.gridControl1[3, 2] = negativeValue;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim positiveValue As New GridStyleInfo()
 positiveValue.CellType = GridCellTypeName.Currency
 positiveValue.Text = "700000"
@@ -785,7 +745,6 @@ negativeValue.Format = "###,###"
 negativeValue.CurrencyEdit.CurrencyNegativePattern = 2
 
 Me.gridControl1(3, 2) = negativeValue
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -795,7 +754,6 @@ Currency cell type also has the support to the change the color of the currency 
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo positiveValue = new GridStyleInfo();
 positiveValue.CellType = GridCellTypeName.Currency;
 positiveValue.Text = "700000";
@@ -811,10 +769,8 @@ negativeValue.CurrencyEdit.CurrencyNegativePattern = 1;
 negativeValue.CurrencyEdit.NegativeColor = Color.SaddleBrown;
 
 this.gridControl1[3, 2] = negativeValue;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim positiveValue As New GridStyleInfo()
 positiveValue.CellType = GridCellTypeName.Currency
 positiveValue.Text = "700000"
@@ -830,7 +786,6 @@ negativeValue.CurrencyEdit.CurrencyNegativePattern = 1
 negativeValue.CurrencyEdit.NegativeColor = Color.SaddleBrown
 
 Me.gridControl1(3, 2) = negativeValue
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -848,10 +803,8 @@ negativeValue.CurrencyEdit.CurrencyNegativePattern = 1;
 negativeValue.CurrencyEdit.NegativeSign = "^";
 
 this.gridControl1[2, 2] = negativeValue;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim negativeValue As New GridStyleInfo()
 negativeValue.CellType = GridCellTypeName.Currency
 negativeValue.Text = "-700000"
@@ -859,7 +812,6 @@ negativeValue.CurrencyEdit.CurrencyNegativePattern = 1
 negativeValue.CurrencyEdit.NegativeSign = "^"
 
 Me.gridControl1(2, 2) = negativeValue
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -893,12 +845,15 @@ Me.gridControl1(2, 2) = currencyStyle
 {% highlight c# %}
 //Sets Cell Type as Formula Cell.
 gridControl1[rowIndex, colIndex].CellType = "FormulaCell";
+
 //Assigns a Formula.
 gridControl1[rowIndex, colIndex].CellValue = "= (A1+A2) / 2";
 {% endhighlight %}
 {% highlight vb %}
+
 'Sets Cell Type as Formula Cell.
 gridControl1(rowIndex, colIndex).CellType = "FormulaCell"
+
 'Assigns a Formula.
 gridControl1(rowIndex, colIndex).CellValue = "= (A1+A2) / 2"
 {% endhighlight %}
@@ -909,7 +864,6 @@ gridControl1(rowIndex, colIndex).CellValue = "= (A1+A2) / 2"
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo maskStyleInfo = this.gridControl1.Model[2, 2];
 maskStyleInfo.CellType = GridCellTypeName.MaskEdit;
 maskStyleInfo.MaskEdit = GridMaskEditInfo.Default;
@@ -927,10 +881,8 @@ maskStyleInfo2.CellType = GridCellTypeName.MaskEdit;
 maskStyleInfo2.MaskEdit = GridMaskEditInfo.Default;
 maskStyleInfo2.MaskEdit.Mask = "99/99/9999";
 maskStyleInfo2.CellValue = "10232015";
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim maskStyleInfo As GridStyleInfo = Me.gridControl1.Model(2, 2)
 maskStyleInfo.CellType = GridCellTypeName.MaskEdit
 maskStyleInfo.MaskEdit = GridMaskEditInfo.Default
@@ -948,7 +900,6 @@ maskStyleInfo2.CellType = GridCellTypeName.MaskEdit
 maskStyleInfo2.MaskEdit = GridMaskEditInfo.Default
 maskStyleInfo2.MaskEdit.Mask = "99/99/9999"
 maskStyleInfo2.CellValue = "10232015"
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -959,22 +910,18 @@ To display the calendar in a Grid cell make use of the `MonthCalendar` cell type
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo monthCalendar = new GridStyleInfo();
 monthCalendar.CellType = GridCellTypeName.MonthCalendar;
 monthCalendar.CellValue = DateTime.Now;
 
 this.gridControl1[2, 2] = monthCalendar;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim monthCalendar As New GridStyleInfo()
 monthCalendar.CellType = GridCellTypeName.MonthCalendar
 monthCalendar.CellValue = DateTime.Now
 
 Me.gridControl1(2, 2) = monthCalendar
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -985,7 +932,6 @@ Me.gridControl1(2, 2) = monthCalendar
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo numericCellType = new GridStyleInfo();
 numericCellType.CellType = GridCellTypeName.NumericUpDown;
 
@@ -1004,7 +950,8 @@ numeric.Minimum = 0;
 // decrease while clicking up or down arrow.
 numeric.Step = 2;
 
-// Indicates whether to start over when the value
+// Indicates whether to start over when the value.
+
 // reaches the maximum or minimum.
 numeric.WrapValue = true;
 
@@ -1029,18 +976,19 @@ numeric.Maximum = 10
 ' Represents the minimum value.
 numeric.Minimum = 0
 
-' Represents the step to increase or
-' decrease while clicking up or down arrow.
+' Represents the step to increase.
+
+' Decrease while clicking up or down arrow.
 numeric.Step = 2
 
-' Indicates whether to start over when the value
-' reaches the maximum or minimum.
+' Indicates whether to start over when the value.
+
+' Reaches the maximum or minimum.
 numeric.WrapValue = True
 
 numericCellType.NumericUpDown = numeric
 
 Me.gridControl1(2, 2) = numericCellType
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1050,18 +998,14 @@ Me.gridControl1(2, 2) = numericCellType
 
 {% tabs %}
 {% highlight c# %}
-
-// To allow only numeric characters
+// To allow only numeric characters.
 GridNumericUpDownCellModel model = this.gridControl1.CellModels[GridCellTypeName.NumericUpDown] as GridNumericUpDownCellModel;
 model.AcceptAlphaKeys = false;
-
 {% endhighlight %}
 {% highlight vb %}
-
-' To allow only numeric characters
+' To allow only numeric characters.
 Dim model As GridNumericUpDownCellModel = TryCast(Me.gridControl1.CellModels(GridCellTypeName.NumericUpDown), GridNumericUpDownCellModel)
 model.AcceptAlphaKeys = False
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1072,56 +1016,65 @@ The `ProgressBar` property in `GridStyleInfo` class will set all the style prope
 
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo progressBarCellType = new GridStyleInfo();
 progressBarCellType.CellType = GridCellTypeName.ProgressBar;
 
 GridProgressBarInfo progressBar = new GridProgressBarInfo();
-//It denotes the Background style for the Progress Bar
+
+//It denotes the Background style for the Progress Bar.
 progressBar.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.VerticalGradient;
-// It checks whether background segment has to be shown
+
+// It checks whether background segment has to be shown.
 progressBar.BackSegments = false;
-// Sets the Font color of the progress bar text
+
+// Sets the Font color of the progress bar text.
 progressBar.FontColor = System.Drawing.Color.White;
+
 // It denotes the foreground style of the Progress Bar.
 progressBar.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube;
+
 // Checks whether the text has to visible or not.
 progressBar.TextVisible = true;
-// Sets the start color and end color of the foreground
-// if ProgressStyle is in Tube.
+
+// Sets the start color and end color of the foreground.
+
+// If ProgressStyle is in Tube.
 progressBar.TubeEndColor = System.Drawing.Color.Honeydew;
 progressBar.TubeStartColor = System.Drawing.Color.Green;
 progressBar.ProgressValue = 50;
 
 progressBarCellType.ProgressBar = progressBar;
 this.gridControl1[2, 2] = progressBarCellType;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim progressBarCellType As New GridStyleInfo()
 progressBarCellType.CellType = GridCellTypeName.ProgressBar
 
 Dim progressBar As New GridProgressBarInfo()
-'It denotes the Background style for the Progress Bar
+
+'It denotes the Background style for the Progress Bar.
 progressBar.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.VerticalGradient
-' It checks whether background segment has to be shown
+
+' It checks whether background segment has to be shown.
 progressBar.BackSegments = False
-' Sets the Font color of the progress bar text
+
+' Sets the Font color of the progress bar text.
 progressBar.FontColor = System.Drawing.Color.White
+
 ' It denotes the foreground style of the Progress Bar.
 progressBar.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube
+
 ' Checks whether the text has to visible or not.
 progressBar.TextVisible = True
-' Sets the start color and end color of the foreground
-' if ProgressStyle is in Tube.
+
+' Sets the start color and end color of the foreground.
+' If ProgressStyle is in Tube.
 progressBar.TubeEndColor = System.Drawing.Color.Honeydew
 progressBar.TubeStartColor = System.Drawing.Color.Green
 progressBar.ProgressValue = 50
 
 progressBarCellType.ProgressBar = progressBar
 Me.gridControl1(2, 2) = progressBarCellType
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1132,7 +1085,6 @@ To display a Push Button in a grid cell, use the **PushButton** cell type. The a
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridControl1[2, 2].CellType = GridCellTypeName.PushButton;
 this.gridControl1[2, 2].CellAppearance = GridCellAppearance.Flat;
 this.gridControl1[2, 2].Description = "Flat Appearance";
@@ -1144,10 +1096,8 @@ this.gridControl1[4, 2].Description = "Sunken Appearance";
 this.gridControl1[6, 2].CellType = GridCellTypeName.PushButton;
 this.gridControl1[6, 2].CellAppearance = GridCellAppearance.Raised;
 this.gridControl1[6, 2].Description = "Raised Appearance";
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridControl1(2, 2).CellType = GridCellTypeName.PushButton
 Me.gridControl1(2, 2).CellAppearance = GridCellAppearance.Flat
 Me.gridControl1(2, 2).Description = "Flat Appearance"
@@ -1159,7 +1109,6 @@ Me.gridControl1(4, 2).Description = "Sunken Appearance"
 Me.gridControl1(6, 2).CellType = GridCellTypeName.PushButton
 Me.gridControl1(6, 2).CellAppearance = GridCellAppearance.Raised
 Me.gridControl1(6, 2).Description = "Raised Appearance"
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1181,7 +1130,7 @@ private void gridControl1_CellButtonClicked(object sender, GridCellButtonClicked
 {% highlight vb %}
 AddHandler GridControl1.CellButtonClicked, AddressOf gridControl1_CellButtonClicked
 
-    '...
+  '...
     Private Sub gridControl1_CellButtonClicked(sender As Object, e As GridCellButtonClickedEventArgs)
         Dim s As String = String.Format("You clicked ({0},{1}).", e.RowIndex, e.ColIndex)
         MessageBox.Show(s)
@@ -1193,16 +1142,12 @@ AddHandler GridControl1.CellButtonClicked, AddressOf gridControl1_CellButtonClic
 The `RichTextBox` control will allow to display and edit rich text in grid cells. To make use of this control set the cell type as `GridCellTypeName.RichTextBox`.
 {% tabs %}
 {% highlight c# %}
-
 GridStyleInfo style = gridControl1.Model[2, 2];
 style.CellType = GridCellTypeName.RichText;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim style As GridStyleInfo = gridControl1.Model(2, 2)
 style.CellType = GridCellTypeName.RichText
-
 {% endhighlight %}
 {% endtabs %}
 ![](Cell-Types_images/Cell-Types_img30.png)
@@ -1211,20 +1156,18 @@ style.CellType = GridCellTypeName.RichText
 This cell type is used to show the text in a grid cell, it is derived from the System.Windows.Forms.TextBox control. [CharacterCasing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CharacterCasing.html) works only with this cell type. The `RichTextBox` cell type does not have `CharacterCasing` property. 
 {% tabs %}
 {% highlight c# %}
-
-//Set the OriginalTextBox cell for entire table
+//Set the OriginalTextBox cell for entire table.
 this.gridControl1.TableStyle.CellType = GridCellTypeName.OriginalTextBox;
-//Display text in upper case
-this.gridControl1.TableStyle.CharacterCasing = CharacterCasing.Upper;
 
+//Display text in upper case.
+this.gridControl1.TableStyle.CharacterCasing = CharacterCasing.Upper;
 {% endhighlight %}
 {% highlight vb %}
-
-'Set the OriginalTextBox cell for entire table
+'Set the OriginalTextBox cell for entire table.
 Me.gridControl1.TableStyle.CellType = GridCellTypeName.OriginalTextBox
-'Display text in upper case
-Me.gridControl1.TableStyle.CharacterCasing = CharacterCasing.Upper
 
+'Display text in upper case.
+Me.gridControl1.TableStyle.CharacterCasing = CharacterCasing.Upper
 {% endhighlight %}
 {% endtabs %}
 
@@ -1298,7 +1241,6 @@ In general, it is unlikely to derive directly from the `GridCellRendererBase` cl
 
 {% tabs %}
 {% highlight c# %}
-
 public class LinkLabelCellRenderer : GridStaticCellRenderer
 {
     private bool _isMouseDown;
@@ -1394,7 +1336,7 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
 
     protected override System.Windows.Forms.Cursor OnGetCursor(int rowIndex, int colIndex)
     {
-        //if over cell, return HandPointerCursor otherwise NoCursor.
+        //If over cell, return HandPointerCursor otherwise NoCursor.
         Point pt = this.Grid.PointToClient(Cursor.Position);
         int row, col;
         this.Grid.PointToRowCol(pt, out row, out col);
@@ -1404,10 +1346,11 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
 
     protected override int OnHitTest(int rowIndex, int colIndex, MouseEventArgs e, IMouseController controller)
     {
-        //return a nonzero so the mouse messages will be forwarded to the cell render
-        //but don't include the cell borders so D&D can be handled
+        //Return a nonzero so the mouse messages will be forwarded to the cell render
+        
+        //But do not include the cell borders so D&D can be handled
         if (controller != null && controller.Name == "OleDataSource")
-            // other controllers have higher priority than me
+            // Other controllers have higher priority than me
             return 0;
 
         return 1;
@@ -1442,7 +1385,6 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
 
 {% endhighlight %}
 {% highlight vb %}
-
 Public Class LinkLabelCellRenderer
     Inherits GridStaticCellRenderer
     Private _isMouseDown As Boolean
@@ -1537,7 +1479,7 @@ Public Class LinkLabelCellRenderer
     End Sub
 
     Protected Overrides Function OnGetCursor(ByVal rowIndex As Integer, ByVal colIndex As Integer) As System.Windows.Forms.Cursor
-        'if over cell, return HandPointerCursor otherwise NoCursor...
+        'If over cell, return HandPointerCursor otherwise NoCursor...
         Dim pt As Point = Me.Grid.PointToClient(Cursor.Position)
         Dim row, col As Integer
         Me.Grid.PointToRowCol(pt, row, col)
@@ -1546,10 +1488,11 @@ Public Class LinkLabelCellRenderer
     End Function
 
     Protected Overrides Function OnHitTest(ByVal rowIndex As Integer, ByVal colIndex As Integer, ByVal e As MouseEventArgs, ByVal controller As IMouseController) As Integer
-        'return a nonzero so the mouse messages will be forwarded to the cell render
-        'but don't include the cell borders so D&D can be handled
+        'Return a nonzero so the mouse messages will be forwarded to the cell render
+        
+        'But do not include the cell borders so D&D can be handled
         If controller IsNot Nothing AndAlso controller.Name = "OleDataSource" Then
-            ' other controllers have higher priority than me
+            ' Other controllers have higher priority than me
             Return 0
         End If
 
@@ -1576,7 +1519,6 @@ Public Class LinkLabelCellRenderer
         MyBase.OnMouseHoverLeave(rowIndex, colIndex, e)
         DrawLink(False, rowIndex, colIndex)
     End Sub
-
 End Class
 {% endhighlight %}
 {% endtabs %}
@@ -1588,14 +1530,11 @@ After creating the Cell model and Cell Renderer for the custom cell type it is n
 
 {% tabs %}
 {% highlight c# %}
-
-// Registering the cell type LinkLabelCell to the GridControl
+// Registering the cell type LinkLabelCell to the GridControl.
 gridControl1.CellModels.Add("LinkLabelCell", new LinkLabelCellModel(gridControl1.Model));
-
 {% endhighlight %}
 {% highlight vb %}
-
-' Registering the cell type LinkLabelCell to the GridControl
+' Registering the cell type LinkLabelCell to the GridControl.
 gridControl1.CellModels.Add("LinkLabelCell", New LinkLabelCellModel(gridControl1.Model))
 
 {% endhighlight %}
@@ -1605,16 +1544,13 @@ gridControl1.CellModels.Add("LinkLabelCell", New LinkLabelCellModel(gridControl1
 Assign the registered cell type to a GridControl like a normal cell type. The custom cell type `LinkLabelCell` acts as a hyperlink. The link for the LinkLabelCell will be assigned in the [Tag](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Tag.html) property of that cell. This cell displays the ordinary text, but on clicking it will relocate to the link given in the Tag.
 {% tabs %}
 {% highlight c# %}
-
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.LinkLabelCell);
 gridControl1[2, 2].CellType = CustomCellTypes.LinkLabelCell.ToString();
 gridControl1[2, 2].Text = "Syncfusion, Inc.";
 gridControl1[2, 2].Font.Bold = true;
 gridControl1[2, 2].Tag = "http://www.syncfusion.com";
-
 {% endhighlight %}
 {% highlight vb %}
-
 RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.LinkLabelCell)
 gridControl1(2, 2).CellType = CustomCellTypes.LinkLabelCell.ToString()
 gridControl1(2, 2).Text = "Syncfusion, Inc."

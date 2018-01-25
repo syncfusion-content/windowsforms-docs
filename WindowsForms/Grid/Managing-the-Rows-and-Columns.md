@@ -123,11 +123,11 @@ void gridControl1_RowsHiding(object sender, Syncfusion.Windows.Forms.Grid.GridRo
     int rowIndex = 5;
     if (e.From <= rowIndex && e.To >= rowIndex)
     {
-        //Restrict the particular row from hiding. 
+
+//Restrict the particular row from hiding. 
         e.Cancel = true;
     }
 }
-
 
 void gridControl1_ColsHiding(object sender, Syncfusion.Windows.Forms.Grid.GridRowColHidingEventArgs e)
 {
@@ -145,16 +145,17 @@ AddHandler gridControl1.RowsHiding, AddressOf gridControl1_RowsHiding
 Private Sub gridControl1_RowsHiding(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridRowColHidingEventArgs)
     Dim rowIndex As Integer = 5
     If e.From <= rowIndex AndAlso e.To >= rowIndex Then
-        'Restrict the particular row from hiding. 
+    
+'Restrict the particular row from hiding. 
         e.Cancel = True
     End If
 End Sub
 
-
 Private Sub gridControl1_ColsHiding(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridRowColHidingEventArgs)
     Dim colIndex As Integer = 3
     If e.From <= colIndex AndAlso e.To >= colIndex Then
-        'Restrict the column from hiding. 
+
+'Restrict the column from hiding. 
         e.Cancel = True
     End If
 End Sub
@@ -297,13 +298,15 @@ this.gridControl1.RowsInserting += new Syncfusion.Windows.Forms.Grid.GridRangeIn
 this.gridControl1.ColsInserting += new Syncfusion.Windows.Forms.Grid.GridRangeInsertingEventHandler(gridControl1_ColsInserting);
 void gridControl1_ColsInserting(object sender, Syncfusion.Windows.Forms.Grid.GridRangeInsertingEventArgs e)
 {
-    //Restricting the insertion of columns
+
+//Restricting the insertion of columns
     e.Cancel = true;
 }
 
 void gridControl1_RowsInserting(object sender, Syncfusion.Windows.Forms.Grid.GridRangeInsertingEventArgs e)
 {
-    //Restrict the inserting of rows
+
+//Restrict the inserting of rows
     e.Cancel = true;
 }
 {% endhighlight %}
@@ -311,12 +314,14 @@ void gridControl1_RowsInserting(object sender, Syncfusion.Windows.Forms.Grid.Gri
 AddHandler gridControl1.RowsInserting, AddressOf gridControl1_RowsInserting
 AddHandler gridControl1.ColsInserting, AddressOf gridControl1_ColsInserting
 Private Sub gridControl1_ColsInserting(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridRangeInsertingEventArgs)
-    'Restricting the insertion of columns
+
+'Restricting the insertion of columns
     e.Cancel = True
 End Sub
 
 Private Sub gridControl1_RowsInserting(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridRangeInsertingEventArgs)
-    'Restrict the inserting of rows
+
+'Restrict the inserting of rows
     e.Cancel = True
 End Sub
 
@@ -510,6 +515,7 @@ if(Grid[rowIndex,colIndex].Tag == null)
 throw new Exception("No User Control is tagged");
 else
 {
+
 //Gets the type of the control from Style.Tag.
 Control userControl = Grid[rowIndex,colIndex].Tag as Control;
 
@@ -591,12 +597,14 @@ When the rightmost cell of the row is reached, then the grid will automatically 
 {% highlight c# %}
 //Set the Enter key behavior navigate the selection to the right side of the current cell 
 this.gridControl1.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.Right;
+
 //Navigate the selection to the first cell of the next row, when it’s in rightmost cell of the row
 this.gridControl1.Model.Options.WrapCellBehavior = Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.WrapRow;
 {% endhighlight %}
 {% highlight vb %}
 'Set the Enter key behavior navigate the selection to the right side of the current cell 
 Me.gridControl1.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.Right
+
 'Navigate the selection to the first cell of the next row, when it’s in rightmost cell of the row
 Me.gridControl1.Model.Options.WrapCellBehavior = Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.WrapRow
 {% endhighlight %}
@@ -686,11 +694,12 @@ GridRangeInfo mergedRange = GridRangeInfo.Empty;
 
 //Getting floating range.
 this.gridControl1.GetSpannedRangeInfo(4, 4, out floatRange);
+
 //Getting covered range.
 this.gridControl1.GetSpannedRangeInfo(8, 2, out coveredRange);
+
 //Getting merged range.
 this.gridControl1.GetSpannedRangeInfo(4, 2, out mergedRange);
-
 MessageBox.Show("Float range for cell(4,4) is " + floatRange.Info.ToString()
 + "\n" + "CoveredRange for cell(8,2) is " + coveredRange.Info.ToString());
 
@@ -703,11 +712,12 @@ Dim mergedRange As GridRangeInfo = GridRangeInfo.Empty
 
 'Getting floating range.
 Me.gridControl1.GetSpannedRangeInfo(4, 4, floatRange)
+
 'Getting covered range.
 Me.gridControl1.GetSpannedRangeInfo(8, 2, coveredRange)
+
 'Getting merged range.
 Me.gridControl1.GetSpannedRangeInfo(4, 2, mergedRange)
-
 MessageBox.Show("Float range for cell(4,4) is " & floatRange.Info.ToString() & Constants.vbLf & "CoveredRange for cell(8,2) is " & coveredRange.Info.ToString())
 {% endhighlight %}
 {% endtabs %}

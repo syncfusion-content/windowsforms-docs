@@ -34,11 +34,13 @@ The following example shows the GridControl is imported from Excel sheet,
 {% tabs %}
 {% highlight c# %}
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
+
 //Import the content of Excel to the Grid
 excelConverter.ExcelToGrid("Sample.xls", this.gridControl1.Model);
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New GridExcelConverterControl()
+
 'Import the content of Excel to the Grid
 excelConverter.ExcelToGrid("Sample.xls", Me.gridControl1.Model)
 {% endhighlight %}
@@ -61,10 +63,12 @@ excelConverter.ExcelToGrid("Sample.xls", this.gridControl1.Model);
 
 void excelConverter_QueryImportExportCellInfo(object sender, GridImportExportCellInfoEventArgs e)
  {
-      // Checking whether it is Importing action
+
+ // Checking whether it is Importing action
        if (e.Action == GridConverterAction.Import)
         {
-            // Setting backcolor for second row cells in GridControl.
+
+// Setting backcolor for second row cells in GridControl.
             if (e.RowIndex == 9)
              {
                  e.GridCell.BackColor = Color.Pink;
@@ -73,7 +77,8 @@ void excelConverter_QueryImportExportCellInfo(object sender, GridImportExportCel
                  e.GridCell.Font.Facename = "Calibri";
                  e.GridCell.Font.Size = 11;
                  e.GridCell.TextColor = Color.Black;
-                 // Handled property has to be enabled to confirm the changes
+    
+// Handled property has to be enabled to confirm the changes
                   e.Handled = true;
               }
         }
@@ -87,9 +92,11 @@ Private excelConverter.QueryImportExportCellInfo += New GridImportExportCellInfo
 excelConverter.ExcelToGrid("Sample.xls", Me.gridControl1.Model)
 
 void excelConverter_QueryImportExportCellInfo(Object sender, GridImportExportCellInfoEventArgs e)
-  ' Checking whether it is Importing action
+ 
+ ' Checking whether it is Importing action
    If e.Action = GridConverterAction.Import Then
-        ' Setting backcolor for second row cells in GridControl.
+ 
+ ' Setting backcolor for second row cells in GridControl.
         If e.RowIndex = 9 Then
              e.GridCell.BackColor = Color.Pink
              e.GridCell.CellValue = e.ExcelCell.Value
@@ -97,7 +104,8 @@ void excelConverter_QueryImportExportCellInfo(Object sender, GridImportExportCel
              e.GridCell.Font.Facename = "Calibri"
              e.GridCell.Font.Size = 11
              e.GridCell.TextColor = Color.Black
-             ' Handled property has to be enabled to confirm the changes
+
+' Handled property has to be enabled to confirm the changes
               e.Handled = True
         End If
    End If
@@ -156,7 +164,8 @@ public void Model_QueryCellInfo(object sender, Syncfusion.Windows.Forms.Grid.Gri
             if (e.RowIndex >= range.Row && e.ColIndex >= range.Column)
             {
                 IRange rangeToConvert = sheet.Range[e.RowIndex, e.ColIndex];
-                //Used to set the styles of the Excel cell to grid.  
+
+//Used to set the styles of the Excel cell to grid.  
                 excelConverter.ConvertExcelStyleToVirtualGridStyle(e.Style, sheet, rangeToConvert);
                 
             }
@@ -167,7 +176,8 @@ void gridModel_SaveCellInfo(object sender, GridSaveCellInfoEventArgs e)
 {
       int index = this.tabBarSplitterControl.ActivePageIndex;
       IWorksheet Worksheet = workbook.Worksheets[index];
-      //Used to save the changes made in grid to Excel sheet which is currently in view. 
+
+//Used to save the changes made in grid to Excel sheet which is currently in view. 
        excelConverter.SaveCellInfoToExcelsheet(Worksheet, sender as GridModel, e.Style);
 }
 
@@ -191,17 +201,18 @@ Public Sub Model_QueryCellInfo(ByVal sender As Object, ByVal e As Syncfusion.Win
             Dim range As IRange = sheet.Range
             If e.RowIndex >= range.Row AndAlso e.ColIndex >= range.Column Then
                 Dim rangeToConvert As IRange = sheet.Range(e.RowIndex, e.ColIndex)
-                'Used to set the styles of the Excel cell to grid.  
-                excelConverter.ConvertExcelStyleToVirtualGridStyle(e.Style, sheet, rangeToConvert)
 
-            End If
+'Used to set the styles of the Excel cell to grid.  
+                excelConverter.ConvertExcelStyleToVirtualGridStyle(e.Style, sheet, rangeToConvert)
+          End If
         End If
     End If
 End Sub
 void gridModel_SaveCellInfo(Object sender, GridSaveCellInfoEventArgs e)
       Dim index As Integer = Me.tabBarSplitterControl.ActivePageIndex
       Dim Worksheet As IWorksheet = workbook.Worksheets(index)
-      'Used to save the changes made in grid to Excel sheet which is currently in view. 
+
+'Used to save the changes made in grid to Excel sheet which is currently in view. 
        excelConverter.SaveCellInfoToExcelsheet(Worksheet, TryCast(sender, GridModel), e.Style)
 End Sub
 {% endhighlight %}
@@ -221,6 +232,7 @@ N> The performance of the virtual importing can also be increased by disabling t
 GridExcelConverterControl excelConverter = new GridExcelConverterControl();
 excelConverter.ImportBorders = false;
 excelConverter.ImportStyles = false;
+
 //Import the content of Excel to the Grid as virtual
 excelConverter.ExcelToVirtualGrid("Sample.xls", this.gridControl1.Model);
 {% endhighlight %}
@@ -228,6 +240,7 @@ excelConverter.ExcelToVirtualGrid("Sample.xls", this.gridControl1.Model);
 Dim excelConverter As GridExcelConverterControl = New GridExcelConverterControl
 excelConverter.ImportBorders = False
 excelConverter.ImportStyles = False
+
 'Import the content of Excel to the Grid as virtual
 excelConverter.ExcelToVirtualGrid("Sample.xls", Me.gridControl1.Model)
 {% endhighlight %}
