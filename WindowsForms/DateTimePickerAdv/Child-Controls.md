@@ -425,7 +425,22 @@ N> The text field can be refreshed programmatically by calling DateTimePickerAdv
   Navigating between Fields, UpDown and DropDown Buttons
 {% endseealso %}
  
- 
+### Navigation to Next field
+
+By default, we have to move the cursor manually, to next field while giving input value in `Value` field of DateTimePickerAdv. Using the property `AutoForwarding` of DatePickerAdv, the cursor will move automatically to next field without using navigation keys. Following code example illustrate the same,
+
+{% highlight C# %}
+
+this.dateTimePickerAdv1.AutoForwarding = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.dateTimePickerAdv1.AutoForwarding = True
+
+{% endhighlight %}
+
 
 ###  Null Value Settings
 
