@@ -110,6 +110,7 @@ Follow these steps to bind an array of custom objects to a GridGroupingControl.
 {% highlight c# %}
 public class Data
 {
+
     public Data()
         : this("", "", "")
     { }
@@ -122,6 +123,7 @@ public class Data
     }
 
     private string cat_Name;
+
     public string CategoryName
     {
         get
@@ -135,6 +137,7 @@ public class Data
     }
 
     private string desc;
+
     public string Description
     {
         get
@@ -147,6 +150,7 @@ public class Data
         }
     }
     private string cat_Id;
+
     public string CategoryID
     {
         get
@@ -162,6 +166,7 @@ public class Data
 {% endhighlight %}
 {% highlight vb %}
 Public Class Data
+
     Public Sub New()
         Me.New("", "", "")
     End Sub
@@ -173,6 +178,7 @@ Public Class Data
     End Sub
 
     Private cat_Name As String
+
     Public Property CategoryName() As String
         Get
             Return Me.cat_Name
@@ -183,6 +189,7 @@ Public Class Data
     End Property
 
     Private desc As String
+
     Public Property Description() As String
         Get
             Return Me.desc
@@ -192,6 +199,7 @@ Public Class Data
         End Set
     End Property
     Private cat_Id As String
+
     Public Property CategoryID() As String
         Get
             Return Me.cat_Id
@@ -284,12 +292,15 @@ Follow the steps below to create a collection (Books Collection) that implements
 {% highlight c# %}
 class Book
 {
+
     public Book(string bookName, string author)
     {
         this.bookName = bookName;
         this.author = author;
     }
+
     private string bookName;
+
     public string BookName
     {
         get
@@ -301,7 +312,9 @@ class Book
             this.bookName = value;
         }
     }
+
     private string author;
+
     public string Author
     {
         get
@@ -317,11 +330,14 @@ class Book
 {% endhighlight %}
 {% highlight vb %}
 Friend Class Book
+
     Public Sub New(ByVal bookName As String, ByVal author As String)
         Me.bookName_Renamed = bookName
         Me.author_Renamed = author
     End Sub
+
     Private bookName_Renamed As String
+
     Public Property BookName() As String
         Get
             Return Me.bookName_Renamed
@@ -330,7 +346,9 @@ Friend Class Book
             Me.bookName_Renamed = value
         End Set
     End Property
+
     Private author_Renamed As String
+
     Public Property Author() As String
         Get
             Return Me.author_Renamed
@@ -348,8 +366,10 @@ End Class
 
 {% tabs %}
 {% highlight c# %}
+
 public class Books : ArrayList, ITypedList
 {
+
     public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
     {
         return TypeDescriptor.GetProperties(typeof(Book));
@@ -365,6 +385,7 @@ public class Books : ArrayList, ITypedList
 Public Class Books
     Inherits ArrayList
     Implements ITypedList
+
     Public Function GetItemProperties(ByVal listAccessors() As PropertyDescriptor) As PropertyDescriptorCollection
         Return TypeDescriptor.GetProperties(GetType(Book))
     End Function
@@ -475,11 +496,13 @@ Strongly Typed collection can be created by inheriting from the `System.Collecti
 class Product
 {
     string productName, qtyPerUnit;
+
     public Product(string name, string qty)
     {
         this.productName = name;
         this.qtyPerUnit = qty;
     }
+
     public string ProductName
     {
         get
@@ -491,6 +514,7 @@ class Product
             productName = value;
         }
     }
+
     public string QuantityPerUnit
     {
         get
@@ -506,11 +530,14 @@ class Product
 {% endhighlight %}
 {% highlight vb %}
 Friend Class Product
+
     Private productName_Renamed, qtyPerUnit As String
+
     Public Sub New(ByVal name As String, ByVal qty As String)
         Me.productName_Renamed = name
         Me.qtyPerUnit = qty
     End Sub
+
     Public Property ProductName() As String
         Get
             Return productName_Renamed
@@ -519,6 +546,7 @@ Friend Class Product
             productName_Renamed = value
         End Set
     End Property
+
     Public Property QuantityPerUnit() As String
         Get
             Return qtyPerUnit
@@ -540,12 +568,15 @@ using System.Collections;
 
 class Products : CollectionBase
 {
+
     //Default Property.
+
     public Product this[int index]
     {
         get { return (Product)List[index]; }
         set { List[index] = (Product)value; }
     }
+
     public int Add(Product item)
     {
         return List.Add(item);
@@ -558,6 +589,7 @@ Imports System.Collections
 
 Friend Class Products
     Inherits CollectionBase
+
     'Default Property.
     Default Public Property Item(ByVal index As Integer) As Product
         Get
@@ -567,6 +599,7 @@ Friend Class Products
             List(index) = CType(value, Product)
         End Set
     End Property
+
     Public Function Add(ByVal item As Product) As Integer
         Return List.Add(item)
     End Function
@@ -628,18 +661,20 @@ Follow the steps below to implement generic collection and bind it to grid. This
 {% highlight c# %}
 class Products : CollectionBase
 {
+
     //Default Property.
+
     public Product this[int index]
     {
         get { return (Product)List[index]; }
         set { List[index] = (Product)value; }
     }
+
     public int Add(Product item)
     {
         return List.Add(item);
     }
 }
-
 
 public class CustomClass : INotifyPropertyChanged
 {
@@ -723,20 +758,24 @@ public class CustomClass : INotifyPropertyChanged
             }
         }
     }
-
     void RaisePropertyChanged(string name)
     {
+
         if (PropertyChanged != null)
             PropertyChanged(this, new PropertyChangedEventArgs(name));
     }
+
     //INotifyPropertyChanged Members.
+
     public event PropertyChangedEventHandler PropertyChanged;
 }
 {% endhighlight %}
 {% highlight vb %}
 Friend Class Products
     Inherits CollectionBase
+
     'Default Property.
+
     Default Public Property Item(ByVal index As Integer) As Product
         Get
             Return CType(List(index), Product)
@@ -745,21 +784,25 @@ Friend Class Products
             List(index) = CType(value, Product)
         End Set
     End Property
+
     Public Function Add(ByVal item As Product) As Integer
         Return List.Add(item)
     End Function
 End Class
 
-
 Public Class CustomClass
     Implements INotifyPropertyChanged
+
 'INSTANT VB NOTE: The variable id was renamed since Visual Basic does not allow class members with the same name:
     Private id_Renamed As Integer
     Private first_name As String
     Private last_name As String
+
 'INSTANT VB NOTE: The variable address was renamed since Visual Basic does not allow class members with the same name:
     Private address_Renamed As String
+
 'INSTANT VB NOTE: The variable city was renamed since Visual Basic does not allow class members with the same name:
+
     Private city_Renamed As String
 
     Public Sub New(ByVal id As Integer, ByVal firstName As String, ByVal lastName As String, ByVal address As String, ByVal city As String)
@@ -834,7 +877,9 @@ Public Class CustomClass
     Private Sub RaisePropertyChanged(ByVal name As String)
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
     End Sub
+
     'INotifyPropertyChanged Members.
+
     Public Event PropertyChanged As PropertyChangedEventHandler
 End Class
 {% endhighlight %}
@@ -894,12 +939,15 @@ The following steps are used to have the dynamic object binding for the GridGrou
 // The class derived from DynamicObject.  
 public class DynamicDictionary : DynamicObject, IDictionary<string, object>
 {
+
     // The inner dictionary.
-    public Dictionary<string, object> dictionary
-        = new Dictionary<string, object>();
+
+    public Dictionary<string, object> dictionary = new Dictionary<string, object>();
 
     // This property returns the number of elements 
+
     // in the inner dictionary. 
+ 
     public int Count
     {
         get
@@ -909,30 +957,40 @@ public class DynamicDictionary : DynamicObject, IDictionary<string, object>
     }
 
     // If you try to get a value of a property  
-    // not defined in the class, this method is called. 
+ 
+    // Not defined in the class, this method is called. 
+ 
     public override bool TryGetMember(
         GetMemberBinder binder, out object result)
     {
+ 
         // Converting the property name to lowercase 
+ 
         // so that property names become case-insensitive. 
         string name = binder.Name;
 
         // If the property name is found in a dictionary, 
+ 
         // set the result parameter to the property value and return true. 
+ 
         // Otherwise, return false. 
         return dictionary.TryGetValue(name, out result);
     }
 
     // If you try to set a value of a property that is 
+ 
     // not defined in the class, this method is called. 
     public override bool TrySetMember(
         SetMemberBinder binder, object value)
     {
+ 
         // Converting the property name to lowercase 
+ 
         // so that property names become case-insensitive.
         dictionary[binder.Name] = value;
 
         // You can always add a value to a dictionary, 
+ 
         // so this method always returns true. 
         return true;
     }
@@ -1058,10 +1116,12 @@ public class DynamicDictionary : DynamicObject, IDictionary<string, object>
 Public Class DynamicDictionary
     Inherits DynamicObject
     Implements IDictionary(Of String, Object)
+ 
     ' The inner dictionary.
     Public dictionary As New Dictionary(Of String, Object)()
 
     ' This property returns the number of elements 
+ 
     ' in the inner dictionary. 
     Public ReadOnly Property Count() As Integer
         Get
@@ -1070,26 +1130,37 @@ Public Class DynamicDictionary
     End Property
 
     ' If you try to get a value of a property  
+ 
     ' not defined in the class, this method is called. 
+ 
     Public Overrides Function TryGetMember(ByVal binder As GetMemberBinder, <System.Runtime.InteropServices.Out()> ByRef result As Object) As Boolean
+ 
         ' Converting the property name to lowercase 
+ 
         ' so that property names become case-insensitive. 
         Dim name As String = binder.Name
 
         ' If the property name is found in a dictionary, 
+ 
         ' set the result parameter to the property value and return true. 
+ 
         ' Otherwise, return false. 
         Return dictionary.TryGetValue(name, result)
     End Function
 
     ' If you try to set a value of a property that is 
+ 
     ' not defined in the class, this method is called. 
+ 
     Public Overrides Function TrySetMember(ByVal binder As SetMemberBinder, ByVal value As Object) As Boolean
+ 
         ' Converting the property name to lowercase 
+ 
         ' so that property names become case-insensitive.
         dictionary(binder.Name) = value
 
         ' You can always add a value to a dictionary, 
+ 
         ' so this method always returns true. 
         Return True
     End Function
@@ -1207,9 +1278,11 @@ End Class
 {% highlight c# %}
 public class DynamicOrders : List<dynamic>
 {
+
     public DynamicOrders(bool isComplex)
     {
             var orders = NorthwindOrders.Model;
+
             foreach (var o in orders)
             {
                 dynamic d = new ExpandoObject();
@@ -1218,12 +1291,14 @@ public class DynamicOrders : List<dynamic>
                 d.EmployeeID = o.EmployeeID;
                 d.ShipCity = o.ShipCity;
                 d.Freight = o.Freight;
+
                 if (isComplex)
                 {
                     d.ShipCountry = new DynamicDictionary();
                     d.ShipCountry.DestinateCity = o.ShipCity;
                     d.ShipCountry.DestinateCountry = o.ShipCountry;
                 }
+
                 else
                 {
                     d.ShipCountry = o.ShipCountry; 
@@ -1236,8 +1311,10 @@ public class DynamicOrders : List<dynamic>
 {% highlight vb %}
 Public Class DynamicOrders
     Inherits List(Of dynamic)
+
     Public Sub New(ByVal isComplex As Boolean)
             Dim orders = NorthwindOrders.Model
+
             For Each o In orders
                 Dim d As dynamic = New ExpandoObject()
                 d.OrderID = o.OrderID
@@ -1245,10 +1322,12 @@ Public Class DynamicOrders
                 d.EmployeeID = o.EmployeeID
                 d.ShipCity = o.ShipCity
                 d.Freight = o.Freight
+ 
                 If isComplex Then
                     d.ShipCountry = New DynamicDictionary()
                     d.ShipCountry.DestinateCity = o.ShipCity
                     d.ShipCountry.DestinateCountry = o.ShipCountry
+
                 Else
                     d.ShipCountry = o.ShipCountry
                 End If
@@ -1264,14 +1343,20 @@ End Class
 {% highlight c# %}
 public class DynamicList:BindingList<DynamicDictionary>
 {
+
     public DynamicList(bool isComplex)
     {
+
         for (int i = 0; i < 1000; i++)
         {
+
             // Creating a dynamic dictionary.
             dynamic person = new DynamicDictionary();
+
             // Adding new dynamic properties.  
+
             // The TrySetMember method is called.
+
             if (isComplex)
             {
                 person.Name = "Adams";
@@ -1279,6 +1364,7 @@ public class DynamicList:BindingList<DynamicDictionary>
                 person.City = "North Caroline";
                 person.Country = "United States";
             }
+
             else
             {
                 person.Name = "Adams";
@@ -1292,17 +1378,24 @@ public class DynamicList:BindingList<DynamicDictionary>
 {% highlight vb %}
 Public Class DynamicList
     Inherits BindingList(Of DynamicDictionary)
+
     Public Sub New(ByVal isComplex As Boolean)
+
         For i As Integer = 0 To 999
+
             ' Creating a dynamic dictionary.
             Dim person As dynamic = New DynamicDictionary()
+
             ' Adding new dynamic properties.  
+
             ' The TrySetMember method is called.
+
             If isComplex Then
                 person.Name = "Adams"
                 person.Address = New DynamicDictionary()
                 person.City = "North Caroline"
                 person.Country = "United States"
+
             Else
                 person.Name = "Adams"
                 person.Address = "United States"
@@ -1319,6 +1412,7 @@ End Class
 {% highlight c# %}
 public class NorthwindOrders : List<Orders>
 {
+
     public static NorthwindOrders Model
     {
         get
@@ -1357,6 +1451,7 @@ public class NorthwindOrders : List<Orders>
     }
 
     Random r = new Random();
+ 
     private Orders GetOrder(int i)
     {
         var shipCountry = ShipCountry[r.Next(5)];
@@ -1403,45 +1498,25 @@ public class NorthwindOrders : List<Orders>
     private void SetShipCity()
     {
         string[] states1 = new string[] { "Buenos Aires" };
-
         string[] states2 = new string[] { "Graz", "Salzburg" };
-
         string[] states3 = new string[] { "Bruxelles", "Charleroi" };
-
         string[] states4 = new string[] { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" };
-
         string[] states5 = new string[] { "Montréal", "Tsawassen", "Vancouver" };
-
         string[] states6 = new string[] { "Århus", "København" };
-
         string[] states7 = new string[] { "Helsinki", "Oulu" };
-
         string[] states8 = new string[] { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" };
-
         string[] states9 = new string[] { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" };
-
         string[] states10 = new string[] { "Cork" };
-
         string[] states11 = new string[] { "Bergamo", "Reggio Emilia", "Torino" };
-
         string[] states12 = new string[] { "México D.F." };
-
         string[] states13 = new string[] { "Stavern" };
-
         string[] states14 = new string[] { "Warszawa" };
-
         string[] states15 = new string[] { "Lisboa" };
-
         string[] states16 = new string[] { "Barcelona", "Madrid", "Sevilla" };
-
         string[] states17 = new string[] { "Bräcke", "Luleå" };
-
         string[] states18 = new string[] { "Bern", "Genève" };
-
         string[] states19 = new string[] { "Colchester", "Hedge End", "London" };
-
         string[] states20 = new string[] { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" };
-
         string[] states21 = new string[] { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" };
 
         ShipCity.Add("Argentina", states1);
@@ -1465,7 +1540,6 @@ public class NorthwindOrders : List<Orders>
         ShipCity.Add("UK", states19);
         ShipCity.Add("USA", states20);
         ShipCity.Add("Venezuela", states21);
-
     }
 
     string[] CustomerID = new string[]
@@ -1492,17 +1566,11 @@ public class Orders : INotifyPropertyChanged
 {
 
     private int _OrderID;
-
     private string _CustomerID;
-
     private System.Nullable<int> _EmployeeID;
-
     private string _ShipCity;
-
     private string _ShipCountry;
-
     private double _Freight;
-
     private bool _isClosed;
 
     public Orders()
@@ -1622,37 +1690,47 @@ public class Orders : INotifyPropertyChanged
 
 Public Class NorthwindOrders
 Inherits List(Of Orders)
+
 Public Shared ReadOnly Property Model() As NorthwindOrders
 Get
 Return New NorthwindOrders(1000)
 End Get
 End Property
+
 Public Sub New()
 End Sub
+
 Public Sub New(ByVal count As Integer)
 SetShipCity()
 For i As Integer = 10000 To count + 10000 - 1
 Me.Add(GetOrder(i))
 Next i
 End Sub
+
 Public ReadOnly Property Customers() As List(Of String)
 Get
 Return Me.CustomerID.ToList()
 End Get
 End Property
+
 Public ReadOnly Property ShipCountries() As List(Of String)
 Get
 Return Me.ShipCountry.ToList()
 End Get
 End Property
+
 Private r As New Random()
+
 Private Function GetOrder(ByVal i As Integer) As Orders
 Dim shipCountry = Me.ShipCountry(r.Next(5))
 Dim shipCityColl = ShipCity(shipCountry)
 Return New Orders() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(9), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipCountry, .ShipCity = shipCityColl(r.Next(shipCityColl.Length - 1))}
 End Function
+
 Private ShipCountry() As String = { "Argentina", "Austria", "Belgium", "Brazil", "Canada", "Denmark", "Finland", "France", "Germany", "Ireland", "Italy", "Mexico", "Norway", "Poland", "Portugal", "Spain", "Sweden", "Switzerland", "UK", "USA", "Venezuela" }
+
 Private ShipCity As New Dictionary(Of String, String())()
+
 Private Sub SetShipCity()
 Dim states1() As String = { "Buenos Aires" }
 Dim states2() As String = { "Graz", "Salzburg" }
@@ -1675,6 +1753,7 @@ Dim states18() As String = { "Bern", "Genève" }
 Dim states19() As String = { "Colchester", "Hedge End", "London" }
 Dim states20() As String = { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" }
 Dim states21() As String = { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" }
+
 ShipCity.Add("Argentina", states1)
 ShipCity.Add("Austria", states2)
 ShipCity.Add("Belgium", states3)
@@ -1697,8 +1776,10 @@ ShipCity.Add("UK", states19)
 ShipCity.Add("USA", states20)
 ShipCity.Add("Venezuela", states21)
 End Sub
+
 Private CustomerID() As String = { "ALFKI", "FRANS", "MEREP", "FOLKO", "SIMOB", "WARTH", "VAFFE", "FURIB", "SEVES", "LINOD", "RISCU", "PICCO", "BLONP", "WELLI", "FOLIG" }
 End Class
+
 Public Class Orders
 Implements INotifyPropertyChanged
 Private _OrderID As Integer
@@ -1710,6 +1791,7 @@ Private _Freight As Double
 Private _isClosed As Boolean
 Public Sub New()
 End Sub
+
 Public Property OrderID() As Integer
 Get
 Return Me._OrderID
@@ -1719,6 +1801,7 @@ Me._OrderID = value
 Me.RaisePropertyChanged("OrderID")
 End Set
 End Property
+
 Public Property CustomerID() As String
 Get
 Return Me._CustomerID
@@ -1728,6 +1811,7 @@ Me._CustomerID = value
 Me.RaisePropertyChanged("CustomerID")
 End Set
 End Property
+
 Public Property EmployeeID() As Integer?
 Get
 Return Me._EmployeeID
@@ -1737,6 +1821,7 @@ Me._EmployeeID = value
 Me.RaisePropertyChanged("EmployeeID")
 End Set
 End Property
+
 Public Property ShipCity() As String
 Get
 Return Me._ShipCity
@@ -1746,6 +1831,7 @@ Me._ShipCity = value
 Me.RaisePropertyChanged("ShipCity")
 End Set
 End Property
+
 Public Property ShipCountry() As String
 Get
 Return Me._ShipCountry
@@ -1755,6 +1841,7 @@ Me._ShipCountry = value
 Me.RaisePropertyChanged("ShipCountry")
 End Set
 End Property
+
 Public Property Freight() As Double
 Get
 Return Me._Freight
@@ -1764,6 +1851,7 @@ Me._Freight = value
 Me.RaisePropertyChanged("Freight")
 End Set
 End Property
+
 Public Property IsClosed() As Boolean
 Get
 Return Me._isClosed
@@ -1773,14 +1861,19 @@ Me._isClosed = value
 Me.RaisePropertyChanged("IsClosed")
 End Set
 End Property
+
 #Region "INotifyPropertyChanged Members"
+
 Private Sub RaisePropertyChanged(ByVal propertyName As String)
 Dim handler = Me.PropertyChangedEvent
+
 If handler IsNot Nothing Then
 handler(Me, New PropertyChangedEventArgs(propertyName))
 End If
 End Sub
+
 Public Event PropertyChanged As PropertyChangedEventHandler
+
 #End Region
 End Class
 {% endhighlight%}
@@ -1905,9 +1998,11 @@ gridGroupingControl1.TableDescriptor.Columns("CheckboxCol").Appearance.AnyRecord
 Hashtable unboundValues = new Hashtable();
 void gridGroupingControl1_QueryValue(object sender, FieldValueEventArgs e)
 {
+
     if (e.Field.Name == "CheckboxCol")
     {
         string key = e.Record.GetValue("Col1").ToString();
+
         if (key != null)
         {
             object val = unboundValues[key];
@@ -1918,9 +2013,11 @@ void gridGroupingControl1_QueryValue(object sender, FieldValueEventArgs e)
 
 void gridGroupingControl1_SaveValue(object sender, FieldValueEventArgs e)
 {
+
     if (e.Field.Name == "CheckboxCol")
     {
         string key = e.Record.GetValue("Col1").ToString();
+
         if (key != null)
         {
             object val = e.Value;
@@ -1931,9 +2028,12 @@ void gridGroupingControl1_SaveValue(object sender, FieldValueEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Private unboundValues As New Hashtable()
+
 Private Sub gridGroupingControl1_QueryValue(ByVal sender As Object, ByVal e As FieldValueEventArgs)
+
     If e.Field.Name = "CheckboxCol" Then
         Dim key As String = e.Record.GetValue("Col1").ToString()
+
         If key IsNot Nothing Then
             Dim val As Object = unboundValues(key)
             e.Value = val
@@ -1942,8 +2042,10 @@ Private Sub gridGroupingControl1_QueryValue(ByVal sender As Object, ByVal e As F
 End Sub
 
 Private Sub gridGroupingControl1_SaveValue(ByVal sender As Object, ByVal e As FieldValueEventArgs)
+
     If e.Field.Name = "CheckboxCol" Then
         Dim key As String = e.Record.GetValue("Col1").ToString()
+
         If key IsNot Nothing Then
             Dim val As Object = e.Value
             unboundValues(key) = val
@@ -1960,10 +2062,13 @@ this.gridGroupingControl1.QueryCellStyleInfo += new Syncfusion.Windows.Forms.Gri
 
 void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.TableCellIdentity.ColIndex == 3 && e.TableCellIdentity.RowIndex > 2)
     {
+
         if (e.TableCellIdentity.RowIndex % 4 == 0)
             e.Style.CellValue = false;
+
         else
             e.Style.CellValue = true;
     }
@@ -1973,9 +2078,12 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.F
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
+
     If e.TableCellIdentity.ColIndex = 3 AndAlso e.TableCellIdentity.RowIndex > 2 Then
+
         If e.TableCellIdentity.RowIndex Mod 4 = 0 Then
             e.Style.CellValue = False
+
         Else
             e.Style.CellValue = True
         End If
@@ -2804,20 +2912,25 @@ Me.gridGroupingControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualSt
 {% tabs %}
 {% highlight c# %}
 DataTable myDataTable = new DataTable("MyDataTable");
+
 //Declares Data Column and Data Row variables.
 DataColumn myDataColumn;
 DataRow myDataRow;
+
 //Creates new Data Column, sets Data Type and Column Name and adds to the Data Table.
 myDataColumn = new DataColumn();
 myDataColumn.DataType = System.Type.GetType("System.Int32");
 myDataColumn.ColumnName = "id";
 myDataTable.Columns.Add(myDataColumn);
+
 //Creates a second column.
 myDataColumn = new DataColumn();
 myDataColumn.DataType = Type.GetType("System.String");
 myDataColumn.ColumnName = "item";
 myDataTable.Columns.Add(myDataColumn);
+
 //Creates new Data Row objects and adds to the Data Table.
+
 for (int i = 0; i <= 10; i++)
 {
     myDataRow = myDataTable.NewRow();

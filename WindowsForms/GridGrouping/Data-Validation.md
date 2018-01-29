@@ -65,30 +65,27 @@ The below examples shows the `Phone` column is validated when string value is en
 
 {% tabs %}
 {% highlight c# %}
-
 // Setting the current cell
 this.gridGroupingControl1.TableControl.CurrentCell.MoveTo(5, 6);
 
 //Validating the specific cell
 this.gridGroupingControl1.TableControl.CurrentCell.Validate();
-
 this.gridGroupingControl1.TableControlCurrentCellValidating += new GridTableControlCancelEventHandler(gridGroupingControl1_TableControlCurrentCellValidating);
-
 void gridGroupingControl1_TableControlCurrentCellValidating(object sender, GridTableControlCancelEventArgs e)
 {
     GridCurrentCell currentCell = this.gridGroupingControl1.TableControl.CurrentCell;
     GridTableCellStyleInfo tableCellStyle = e.TableControl.GetTableViewStyleInfo(currentCell.RowIndex,currentCell.ColIndex);
     double cellValue;
+
     if (tableCellStyle.TableCellIdentity.Column != null && tableCellStyle.TableCellIdentity.Column.Name == "Phone")
     {
+
         if (!double.TryParse(currentCell.Renderer.ControlText,out cellValue))
         {
             currentCell.SetError("Please enter the valid data");
         }
     }            
 }
-
-
 {% endhighlight %}
 {% highlight vb %}
 ' Setting the current cell
@@ -103,7 +100,9 @@ Private Sub gridGroupingControl1_TableControlCurrentCellValidating(ByVal sender 
     Dim currentCell As GridCurrentCell = Me.gridGroupingControl1.TableControl.CurrentCell
     Dim tableCellStyle As GridTableCellStyleInfo = e.TableControl.GetTableViewStyleInfo(currentCell.RowIndex,currentCell.ColIndex)
     Dim cellValue As Double
+
     If tableCellStyle.TableCellIdentity.Column IsNot Nothing AndAlso tableCellStyle.TableCellIdentity.Column.Name = "Phone" Then
+
         If Not Double.TryParse(currentCell.Renderer.ControlText,cellValue) Then
             currentCell.SetError("Please enter the valid data")
         End If
@@ -141,12 +140,9 @@ The GridGroupingControl has various events to customize the validation process f
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControlCurrentCellValidating += new GridTableControlCancelEventHandler(gridGroupingControl1_TableControlCurrentCellValidating);
-
 this.gridGroupingControl1.TableControlCurrentCellValidated+=new GridTableControlEventHandler(gridGroupingControl1_TableControlCurrentCellValidated);
-
 this.gridGroupingControl1.TableControlCurrentCellValidateString+=new GridTableControlCurrentCellValidateStringEventHandler
 (gridGroupingControl1_TableControlCurrentCellValidateString);
-
 this.gridGroupingControl1.TableControlCurrentCellErrorMessage+=new GridTableControlCurrentCellErrorMessageEventHandler
 (gridGroupingControl1_TableControlCurrentCellErrorMessage);
 
@@ -166,28 +162,22 @@ void gridGroupingControl1_TableControlCurrentCellValidateString(object sender, G
 
 void gridGroupingControl1_TableControlCurrentCellValidated(object sender, GridTableControlEventArgs e)
 {
+
     // To-Do
 }
 
 void gridGroupingControl1_TableControlCurrentCellValidating(object sender, GridTableControlCancelEventArgs e)
 {
-    // To-Do
 
+    // To-Do
     e.Inner.Cancel = true;
 }
-
-
-
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControlCurrentCellValidating, AddressOf gridGroupingControl1_TableControlCurrentCellValidating
-
 AddHandler gridGroupingControl1.TableControlCurrentCellValidated, AddressOf gridGroupingControl1_TableControlCurrentCellValidated
-
 AddHandler gridGroupingControl1.TableControlCurrentCellValidateString, AddressOf gridGroupingControl1_TableControlCurrentCellValidateString
-
 AddHandler gridGroupingControl1.TableControlCurrentCellErrorMessage, AddressOf gridGroupingControl1_TableControlCurrentCellErrorMessage
-
 
 Private Sub gridGroupingControl1_TableControlCurrentCellErrorMessage(ByVal sender As Object, ByVal e As GridTableControlCurrentCellErrorMessageEventArgs)
     Dim ErrorMessage As String = e.Inner.Text
@@ -202,15 +192,15 @@ Private Sub gridGroupingControl1_TableControlCurrentCellValidateString(ByVal sen
 End Sub
 
 Private Sub gridGroupingControl1_TableControlCurrentCellValidated(ByVal sender As Object, ByVal e As GridTableControlEventArgs)
+
     ' To-Do
 End Sub
 
 Private Sub gridGroupingControl1_TableControlCurrentCellValidating(ByVal sender As Object, ByVal e As GridTableControlCancelEventArgs)
-    ' To-Do
 
+    ' To-Do
     e.Inner.Cancel = True
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -224,6 +214,7 @@ this.gridGroupingControl1.TableControlCurrentCellErrorMessage += new GridTableCo
 
 void gridGroupingControl1_TableControlCurrentCellErrorMessage(object sender, GridTableControlCurrentCellErrorMessageEventArgs e)
 {
+
     //Getting current cell
     GridCurrentCell currentCell = this.gridGroupingControl1.TableControl.CurrentCell;
 
@@ -231,6 +222,7 @@ void gridGroupingControl1_TableControlCurrentCellErrorMessage(object sender, Gri
     GridTableCellStyleInfo tableCellStyle = e.TableControl.GetTableViewStyleInfo(currentCell.RowIndex, currentCell.ColIndex);
 
     //Checking column name
+
     if (tableCellStyle.TableCellIdentity.Column != null && tableCellStyle.TableCellIdentity.Column.Name == "SupplierID")
     {
         e.Inner.Cancel = true;
@@ -243,6 +235,7 @@ void gridGroupingControl1_TableControlCurrentCellErrorMessage(object sender, Gri
 AddHandler gridGroupingControl1.TableControlCurrentCellErrorMessage, AddressOf gridGroupingControl1_TableControlCurrentCellErrorMessage
 
 Private Sub gridGroupingControl1_TableControlCurrentCellErrorMessage(ByVal sender As Object, ByVal e As GridTableControlCurrentCellErrorMessageEventArgs)
+
     'Getting current cell
     Dim currentCell As GridCurrentCell = Me.gridGroupingControl1.TableControl.CurrentCell
 
@@ -250,12 +243,11 @@ Private Sub gridGroupingControl1_TableControlCurrentCellErrorMessage(ByVal sende
     Dim tableCellStyle As GridTableCellStyleInfo = e.TableControl.GetTableViewStyleInfo(currentCell.RowIndex, currentCell.ColIndex)
 
     'Checking column name
+
     If tableCellStyle.TableCellIdentity.Column IsNot Nothing AndAlso tableCellStyle.TableCellIdentity.Column.Name = "SupplierID" Then
         e.Inner.Cancel = True
     End If
 End Sub
-
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -267,24 +259,26 @@ The invalid key pressing can be prevented by handling the `TableControlCurrentCe
 this.gridGroupingControl1.TableControlCurrentCellValidateString+=new GridTableControlCurrentCellValidateStringEventHandler
 (gridGroupingControl1_TableControlCurrentCellValidateString);
 
-
 void gridGroupingControl1_TableControlCurrentCellValidateString(object sender, GridTableControlCurrentCellValidateStringEventArgs e)
 {
     double numericValue;
+
     //Checks the entered text is numeric
+
     if (!double.TryParse(e.Inner.Text, out numericValue))
     {
         e.Inner.Cancel = true;
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControlCurrentCellValidateString, AddressOf gridGroupingControl1_TableControlCurrentCellValidateString
 
 Private Sub gridGroupingControl1_TableControlCurrentCellValidateString(ByVal sender As Object, ByVal e As GridTableControlCurrentCellValidateStringEventArgs)
     Dim numericValue As Double
+
     'Checks the entered text is numeric
+
     If Not Double.TryParse(e.Inner.Text, numericValue) Then
         e.Inner.Cancel = True
     End If

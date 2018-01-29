@@ -119,49 +119,29 @@ Products</td></tr>
 </table>
 Double click the form on the design surface (not one of the controls, but the form itself) to add a load event handler. In this handler, add the single statement given below.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 //Loads dataset with records.
-
 this.sqlDataAdapter1.Fill(this.dataSet11);
-
 {% endhighlight  %}
-
 {% highlight vbnet %}
-
-
-
 'Loads dataset with records.
-
 Me.sqlDataAdapter1.Fill(Me.dataSet11)
-
 {% endhighlight  %}
+{% endtabs %}
 
 To support updating data in your database, you will need to call Update command on the SQLDataAdapter. Double click Update button on the design surface to add a Click Handler. Then add this single line of code to the handler.
 
-
-
-
+{% tabs %}
 {% highlight c# %}
-
-
 //Saves Changes(if any) back to the database.
-
 this.sqlDataAdapter1.Update(this.dataSet11);
-
-
 {% endhighlight  %}
-
-
-
 {% highlight vbnet %}
 'Saves Changes (if any) back to the database.
-
 Me.sqlDataAdapter1.Update(Me.dataSet11);
-
 {% endhighlight  %}
+{% endtabs %}
 
 Now when you click Update button, it will post the changes made back to your database.
 
@@ -213,142 +193,73 @@ Compile and run the project to see formatted Grid Data Bound Grid. In the follow
 
 Here are some code samples that will create a DataTable and bind it a to Grid Data Bound Grid. Once you have a DataTable object populated you can use the GridDataBoundGrid.DataSource property to implement the binding.
 
-
-
-
-
+{% tabs %}
 {% highlight c# %}
-
 DataTable myDataTable = new DataTable("MyDataTable");
 
 //Declares the Data Column and Data Row variables.
-
 DataColumn myDataColumn;
-
 DataRow myDataRow;
 
-
-
 //Creates a new Data Column, sets the Data Type and Column Name and adds to the Data Table.   
-
 myDataColumn = new DataColumn();
-
 myDataColumn.DataType = System.Type.GetType("System.Int32");
-
 myDataColumn.ColumnName = "id";
-
 myDataTable.Columns.Add(myDataColumn);
-
-
 
 //Creates a second column.
-
 myDataColumn = new DataColumn();
-
 myDataColumn.DataType = Type.GetType("System.String");
-
 myDataColumn.ColumnName = "item";
-
 myDataTable.Columns.Add(myDataColumn);
-
-
 
 //Creates new Data Row objects and adds to the Data Table.    
 
 for (int i = 0; i <= 10; i++)
-
 {
-
     myDataRow = myDataTable.NewRow();
-
     myDataRow["id"] = i;
-
     myDataRow["item"] = "item " + i.ToString();
-
     myDataTable.Rows.Add(myDataRow);
-
 }
-
 this.GridDataBoundGrid1.DataSource = myDataTable;
 
-
-
 //Sizes the columns.
-
 this.GridDataBoundGrid1.Model.ColWidths[1] = 30;
-
 this.GridDataBoundGrid1.Model.ColWidths[2] = 50;
-
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 Dim myDataTable As DataTable = New DataTable("MyDataTable")
 
-
-
 'Declares the Data Column and Data Row variables.
-
 Dim myDataColumn As DataColumn
-
 Dim myDataRow As DataRow
 
-
-
 'Creates a new Data Column, sets Data Type and Column Name and adds to the Data Table. 
-
 myDataColumn = New DataColumn()
-
 myDataColumn.DataType = System.Type.GetType("System.Int32")
-
 myDataColumn.ColumnName = "id"
-
 myDataTable.Columns.Add(myDataColumn)
-
-
 
 'Creates a second column.
-
 myDataColumn = New DataColumn()
-
 myDataColumn.DataType = Type.GetType("System.String")
-
 myDataColumn.ColumnName = "item"
-
 myDataTable.Columns.Add(myDataColumn)
 
-
-
 'Creates new Data Row objects and adds to the Data Table.    
-
 Dim i As Integer
 
 For i = 0 To 10
-
 myDataRow = myDataTable.NewRow
-
 myDataRow("id") = i
-
 myDataRow("item") = "item " & i
-
 myDataTable.Rows.Add(myDataRow)
-
 Next i
-
-
-
 Me.gridDataBoundGrid1.DataSource = myDataTable
 
-
-
 'Sizes the columns.
-
 Me.gridDataBoundGrid1.Model.ColWidths(1) = 30
-
 Me.gridDataBoundGrid1.Model.ColWidths(2) = 50
-
-
 {% endhighlight  %}
+{% endtabs %}

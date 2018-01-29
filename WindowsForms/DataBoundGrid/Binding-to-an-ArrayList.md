@@ -17,180 +17,96 @@ You can bind an ArrayList that holds objects with public properties. Given below
 
 Given below is the code sample for this.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 
 //Creates the Person object class.
 
 public class Person
-
 {
-
     private string lastName;
-
     private string firstName;
 
-
-
     public Person(string firstName, string lastName)
-
     {
-
-            this.firstName = firstName;
-
-            this.lastName = lastName;
-
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-
-
     public string FirstName
-
     {
-
-            get{return firstName;}
-
-            set{firstName = value;}
-
+        get{return firstName;}
+        set{firstName = value;}
     }
 
     public string LastName
-
     {
-
-            get{return lastName;}
-
-            set{lastName = value;}
-
+        get{return lastName;}
+        set{lastName = value;}
     }
-
 }
-
-
 
 //Code within your Form Load event handler.
 
 private void Form1_Load(object sender, System.EventArgs e)
-
 {
-
     ArrayList al = new ArrayList();
-
     al.Add(new Person("John", "Smith"));
-
     al.Add(new Person("Mary", "Tucker"));
-
     al.Add(new Person("Sue", "Gaskins"));
-
     al.Add(new Person("John", "Jacobs"));
-
     al.Add(new Person("Sam", "Garfunkel"));
-
     al.Add(new Person("George", "Shepherd"));
-
     al.Add(new Person("Becky", "Dunsford"));
-
-
-
     this.gridDataBoundGrid1.DataSource = al;
-
 }
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
-
 'Creates the Person object class.
 
 Public Class Person
-
 Private firstName As String
-
 Private lastName As String
 
-
-
 Public Sub New(ByVal firstName As String, ByVal lastName As String)
-
 Me.firstName = firstName
-
 Me.lastName = lastName
-
 End Sub
 
-
-
-
-
 Public Property LastName()
-
 Get
-
 Return lastName
-
 End Get
-
 Set(ByVal Value)
-
 lastName = Value
-
 End Set
-
 End Property
-
-
 
 Public Property FirstName()
-
 Get
-
 Return firstName
-
 End Get
-
 Set(ByVal Value)
-
 firstName = Value
-
 End Set
-
 End Property
-
 End Class
-
-
 
 'Code within your Form Load event handler.
 
 Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
 Dim al As ArrayList = New ArrayList()
-
 al.Add(New Person("John", "Smith"))
-
 al.Add(New Person("Mary", "Tucker"))
-
 al.Add(New Person("Sue", "Gaskins"))
-
 al.Add(New Person("John", "Jacobs"))
-
 al.Add(New Person("Sam", "Garfunkel"))
-
 al.Add(New Person("George", "Shepherd"))
-
 al.Add(New Person("Becky", "Dunsford"))
-
 Me.GridDataBoundGrid1.DataSource = al
-
 End Sub
 {% endhighlight  %}
-
+{% endtabs %} 
 
 ## ArrayList Class with IBindingList Support
 

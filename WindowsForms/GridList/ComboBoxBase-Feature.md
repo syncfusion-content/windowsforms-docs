@@ -14,20 +14,14 @@ Grid List control can be coupled to a ComboBoxBase control by using ListControl 
 The following code example illustrates usage of Grid List control as a drop-down in Combo Box Base control.
 
 
-
+{% tabs %}
 {% highlight c# %}
-
 this.comboBoxBase1.ListControl = this.gridListControl1;
-
 {% endhighlight  %}
-
 {% highlight vbnet %}
-
-
-
 Me.comboBoxBase1.ListControl = Me.gridListControl1
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](ComboBoxBase-Feature_images/ComboBoxBase-Feature_img1.jpeg) 
 

@@ -20,13 +20,13 @@ Essential GridGroupingControl now supports two methods for selecting records in 
 
 The following code illustrates how to select all record in grid table.
 
+{% tabs %}
 {% highlight C# %} 
 
 //Selects all the records from the grid table.
-
 this.gridGroupingControl1.Table.Records.SelectAll();
-
- {% endhighlight %}
+{% endhighlight %}
+{% endtabs %}
 
 When the code runs, selecting all record is bound to Select All button.
 
@@ -41,12 +41,15 @@ When the code runs, selecting all record is bound to Select All button.
 The following code illustrates how to select specified records.
 
 N> Method Name:  AddRange   Parameter: Specify the Record collection to be selected
+
+{% tabs %}
 {% highlight C# %} 
 
 //Defining record collection
 Record[] recordCollection = new Record[5];
 
 //Adding records to collection
+
 for (int index = 0; index < recordCollection.Length; index++)
 {
     recordCollection[index] = this.gridGroupingControl1.Table.Records[index];
@@ -55,7 +58,8 @@ for (int index = 0; index < recordCollection.Length; index++)
 //Adding records collection to SelectedRecords
 this.gridGroupingControl1.Table.SelectedRecords.AddRange(recordCollection);
 
- {% endhighlight %}
+{% endhighlight %}
+{% endtabs %}
 
 When the code runs, selecting specified records is bound to Select Specified Records button. 
 

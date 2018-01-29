@@ -17,14 +17,18 @@ N> The GridGroupingControl supports all the [basic cell types](http://help.syncf
 The cell type of a cell can be specified by using the [CellType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfo~CellType.html#) property. There are two ways to assign the value for `CellType` property, by string format or by using the [GridCellTypeName](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellTypeName.html#) static class which contains all the built-in cell type names in it.
 {% tabs %}
 {% highlight c# %}
+
 //Setting checkbox as the CellType for the column
 this.gridGroupingControl1.TableDescriptor.Columns[2].Appearance.AnyRecordFieldCell.CellType = GridCellTypeName.CheckBox;
+
 //Adding the Description for the checkbox column
 this.gridGroupingControl1.TableDescriptor.Columns[2].Appearance.AnyRecordFieldCell.Description = "Included";
 {% endhighlight %}
 {% highlight vb %}
+
 'Setting checkbox as the CellType for the column
 Me.gridGroupingControl1.TableDescriptor.Columns(2).Appearance.AnyRecordFieldCell.CellType = GridCellTypeName.CheckBox
+
 'Adding the Description for the checkbox column
 Me.gridGroupingControl1.TableDescriptor.Columns(2).Appearance.AnyRecordFieldCell.Description = "Included"
 {% endhighlight %}
@@ -39,10 +43,12 @@ GridGroupingControl supports more than 10 enhanced cell types. These enhanced ce
 Before setting any [enhanced](http://help.syncfusion.com/windowsforms/grid/cell-types#enhanced-cell-types) cell type to the particular cell, it is needed to be registered in the GridGroupingControl. This can be achieved by using the [GridGroupingCellType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.RegisterCellModel~GridGroupingCellType.html#) static method of the [RegisterCellModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.RegisterCellModel.html#) class.
 {% tabs %}
 {% highlight c# %}
+
 //Registering the custom cell type to the GridGroupingControl
 RegisterCellModel.GridGroupingCellType(this.gridGroupingControl1, CustomCellTypes.PercentTextBox);
 {% endhighlight %}
 {% highlight vb %}
+
 'Registering the custom cell type to the GridGroupingControl
 RegisterCellModel.GridGroupingCellType(Me.gridGroupingControl1, CustomCellTypes.PercentTextBox)
 {% endhighlight %}
@@ -69,18 +75,23 @@ Another major function of this class is to create cell renderer object for the c
 In general, it is unlikely to derive directly from the base class. Instead of that, override an existing GridGroupingControl derived class such as [GridStaticCellModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStaticCellModel.html#). The following code example illustrates this.
 {% tabs %}
 {% highlight c# %}
+
 //Defines custom Cell Model by inheriting GridStaticCellModel.
 public class LinkLabelCellModel : GridStaticCellModel
 {
+
     protected LinkLabelCellModel(SerializationInfo info, StreamingContext context)
         : base(info, context)
     {
     }
+
     public LinkLabelCellModel(GridModel grid)
         : base(grid)
     {
     }
+
     //Overrides CreateRenderer Method to create CellRenderer object.   
+
     public override GridCellRendererBase CreateRenderer(GridControlBase control)
     {
         return new LinkLabelCellRenderer(control, this);
@@ -88,16 +99,22 @@ public class LinkLabelCellModel : GridStaticCellModel
 }
 {% endhighlight %}
 {% highlight vb %}
+
 'Defines custom Cell Model by inheriting GridStaticCellModel.
+
 Public Class LinkLabelCellModel
 	Inherits GridStaticCellModel
+
 	Protected Sub New(ByVal info As SerializationInfo, ByVal context As StreamingContext)
 		MyBase.New(info, context)
 	End Sub
+
 	Public Sub New(ByVal grid As GridModel)
 		MyBase.New(grid)
 	End Sub
+
 	'Overrides CreateRenderer Method to create CellRenderer object.   
+
 	Public Overrides Function CreateRenderer(ByVal control As GridControlBase) As GridCellRendererBase
 		Return New LinkLabelCellRenderer(control, Me)
 	End Function
@@ -124,10 +141,8 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
     {
         _isMouseDown = false;
         _drawHotLink = false;
-
         _hotColor = Color.Red;
         _visitedColor = Color.Purple;
-
         _EXEName = "iexplore.exe";
     }
 
@@ -162,16 +177,13 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
         {
             MessageBox.Show("Error: " + ex.ToString());
         }
-
     }
 
     private void DrawLink(bool useHotColor, int rowIndex, int colIndex)
     {
         if (useHotColor)
             _drawHotLink = true;
-
         this.Grid.RefreshRange(GridRangeInfo.Cell(rowIndex, colIndex), GridRangeOptions.None);
-
         _drawHotLink = false;
     }
 
@@ -206,20 +218,23 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
 
     protected override System.Windows.Forms.Cursor OnGetCursor(int rowIndex, int colIndex)
     {
-        //if over cell, return HandPointerCursor otherwise NoCursor.
+        
+        //If over cell, return HandPointerCursor otherwise NoCursor.
         Point pt = this.Grid.PointToClient(Cursor.Position);
         int row, col;
         this.Grid.PointToRowCol(pt, out row, out col);
-
         return (row == rowIndex && col == colIndex) ? Cursors.Hand : (this._isMouseDown) ? Cursors.No : base.OnGetCursor(rowIndex, colIndex);
     }
 
     protected override int OnHitTest(int rowIndex, int colIndex, MouseEventArgs e, IMouseController controller)
     {
-        //return a nonzero so the mouse messages will be forwarded to the cell render
-        //but don't include the cell borders so D&D can be handled
+
+        //Return a nonzero so the mouse messages will be forwarded to the cell render
+
+        //But don't include the cell borders so D&D can be handled
         if (controller != null && controller.Name == "OleDataSource")
-            // other controllers have higher priority than me
+            
+            // Other controllers have higher priority than me
             return 0;
 
         return 1;
@@ -235,8 +250,7 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
             style.TextColor = ActiveLinkColor;
         }
         base.OnDraw(g, clientRectangle, rowIndex, colIndex, style);
-
-    }
+   }
 
     protected override void OnMouseHoverEnter(int rowIndex, int colIndex)
     {
@@ -249,7 +263,6 @@ public class LinkLabelCellRenderer : GridStaticCellRenderer
         base.OnMouseHoverLeave(rowIndex, colIndex, e);
         DrawLink(false, rowIndex, colIndex);
     }
-
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -265,10 +278,8 @@ Public Class LinkLabelCellRenderer
 		MyBase.New(grid, cellModel)
 		_isMouseDown = False
 		_drawHotLink = False
-
 		_hotColor = Color.Red
 		_visitedColor = Color.Purple
-
 		_EXEName = "iexplore.exe"
 	End Sub
 
@@ -308,18 +319,15 @@ Public Class LinkLabelCellRenderer
 		Catch ex As Exception
 			MessageBox.Show("Error: " & ex.ToString())
 		End Try
-
 	End Sub
 
 	Private Sub DrawLink(ByVal useHotColor As Boolean, ByVal rowIndex As Integer, ByVal colIndex As Integer)
 		If useHotColor Then
 			_drawHotLink = True
 		End If
-
 		Me.Grid.RefreshRange(GridRangeInfo.Cell(rowIndex, colIndex), GridRangeOptions.None)
-
 		_drawHotLink = False
-	End Sub
+		End Sub
 
 	Protected Overrides Sub OnMouseDown(ByVal rowIndex As Integer, ByVal colIndex As Integer, ByVal e As System.Windows.Forms.MouseEventArgs)
 		MyBase.OnMouseDown(rowIndex, colIndex, e)
@@ -362,9 +370,7 @@ Public Class LinkLabelCellRenderer
 			' other controllers have higher priority than me
 			Return 0
 		End If
-
 		Return 1
-
 	End Function
 
 	Protected Overrides Sub OnDraw(ByVal g As System.Drawing.Graphics, ByVal clientRectangle As System.Drawing.Rectangle, ByVal rowIndex As Integer, ByVal colIndex As Integer, ByVal style As Syncfusion.Windows.Forms.Grid.GridStyleInfo)
@@ -374,7 +380,6 @@ Public Class LinkLabelCellRenderer
 			style.TextColor = ActiveLinkColor
 		End If
 		MyBase.OnDraw(g, clientRectangle, rowIndex, colIndex, style)
-
 	End Sub
 
 	Protected Overrides Sub OnMouseHoverEnter(ByVal rowIndex As Integer, ByVal colIndex As Integer)

@@ -20,8 +20,10 @@ The below example shows the Find and Replace dialog is shown in GridGroupingCont
 {% highlight c# %}
 // Setting the Dialog sink
 GridFindReplaceDialogSink findReplaceSink = new GridFindReplaceDialogSink(this.gridGroupingControl1.TableControl);
+
 // Setting the Dialog
 GridFindReplaceDialog findReplaceDialog = GridFindReplaceDialog.Instance;
+
 // Setting the sink to dialog
 findReplaceDialog.ActiveSink = findReplaceSink;
 findReplaceDialog.ShowDialog();
@@ -29,8 +31,10 @@ findReplaceDialog.ShowDialog();
 {% highlight vb %}
 ' Setting the Dialog sink
 Dim findReplaceSink As New GridFindReplaceDialogSink(Me.gridGroupingControl1.TableControl)
+
 ' Setting the Dialog
 Dim findReplaceDialog As GridFindReplaceDialog = GridFindReplaceDialog.Instance
+
 ' Setting the sink to dialog
 findReplaceDialog.ActiveSink = findReplaceSink
 findReplaceDialog.ShowDialog()
@@ -86,12 +90,16 @@ this.gridGroupingControl1.TableControlCurrentCellKeyDown  += new KeyEventHandler
 
 void gridGroupingControl1_TableControlCurrentCellKeyDown (object sender, KeyEventArgs e)
 {
+
          if (e.Control && e.KeyCode == Keys.F)
          {
+
              // Setting the Dialog sink
              GridFindReplaceDialogSink findReplaceSink = new GridFindReplaceDialogSink(grid.TableControl);
+
             // Setting the Dialog
             GridFindReplaceDialog findReplaceDialog = GridFindReplaceDialog.Instance;
+
             // Setting the sink to dialog
              findReplaceDialog.ActiveSink = findReplaceSink;
              findReplaceDialog.ShowDialog();
@@ -100,7 +108,8 @@ void gridGroupingControl1_TableControlCurrentCellKeyDown (object sender, KeyEven
 {% endhighlight %}
 {% highlight vb %}
 'Triggering the TableControlCurrentCellKeyDown eventAddHandler Me. gridGroupingControl1.TableControlCurrentCellKeyDown
-, AddressOf Me. gridGroupingControl1_ TableControlCurrentCellKeyDown
+ AddressOf Me. gridGroupingControl1_ TableControlCurrentCellKeyDown
+
 Private Sub gridGroupingControl1_ TableControlCurrentCellKeyDown
  (ByVal sender As Object, ByVal e As KeyEventArgs)     If (e.Control  AndAlso (e.KeyCode = Keys.F)) Then          ' Setting the Dialog sink          Dim findReplaceSink As GridFindReplaceDialogSink = New GridFindReplaceDialogSink(Me.gridControl1)         ' Setting the Dialog         Dim findReplaceDialog As GridFindReplaceDialog = GridFindReplaceDialog.Instance        ' Setting the sink to dialog         findReplaceDialog.ActiveSink = findReplaceSink         findReplaceDialog.ShowDialog      End If        End Sub
 {% endhighlight %}
@@ -157,6 +166,7 @@ private void findAll_Click(object sender, EventArgs e)
      resetAll = false;
      SetOptions();
      frEvents = new GridFindReplaceEventArgs(txtSearch.Text, "", options, locInfo);
+
      if (frDialog.Find(frEvents) == null)
           MessageBox.Show("No Matches found for Text" + txtSearch.Text);
      grid.Refresh();
@@ -169,6 +179,7 @@ Private Sub findAll_Click(ByVal sender As Object, ByVal e As EventArgs)
 	resetAll = False
 	SetOptions()
 	frEvents = New GridFindReplaceEventArgs(txtSearch.Text, "", options, locInfo)
+
 	If frDialog.Find(frEvents) Is Nothing Then
 		MessageBox.Show("No Matches found for Text" & txtSearch.Text)
 	End If
@@ -184,12 +195,16 @@ The `Replace` and `ReplaceAll` methods are used to replace the found text or num
 if (!string.IsNullOrEmpty(txtSearch.Text) && !string.IsNullOrEmpty(txtReplace.Text))
 {
       SetOptions();
+
       //Create Find and Replace event args 
       frEvents = new GridFindReplaceEventArgs(txtSearch.Text, txtReplace.Text, options, locInfo);
+
       //Replace the text with the first match found using the Find option
       frDialog.Replace(frEvents);
+
       //Replace the entire match with the possible replace string
       frDialog.ReplaceAll(frEvents);
+
       if (frDialog.Replace(frEvents) == null)
       {
             MessageBox.Show("No matches found");
@@ -199,12 +214,16 @@ if (!string.IsNullOrEmpty(txtSearch.Text) && !string.IsNullOrEmpty(txtReplace.Te
 {% highlight vb %}
 If (Not String.IsNullOrEmpty(txtSearch.Text)) AndAlso (Not String.IsNullOrEmpty(txtReplace.Text)) Then
     SetOptions()
+
     'Create Find and Replace event args
     frEvents = New GridFindReplaceEventArgs(txtSearch.Text, txtReplace.Text, options, locInfo)
+
     'Replace the text with the first match found using the Find option
     frDialog.Replace(frEvents)
+
     'Replace the entire match with the possible replace string
     frDialog.ReplaceAll(frEvents);
+
     If frDialog.Replace(frEvents) Is Nothing Then
         MessageBox.Show("No matches found")
     End If

@@ -27,7 +27,6 @@ Me.gridGroupingControl1.ShowNavigationBar = True
 
 ' Show tooltips when the user hovers the mouse over the elements of the RecordNavigationBar.
 Me.gridGroupingControl1.ShowNavigationBarToolTips = True
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,15 +93,19 @@ User can change the arrow type of the navigation bar while clicking the arrow bu
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.RecordNavigationBar.ArrowButtonClicked += RecordNavigationBar_ArrowButtonClicked;
+
 void RecordNavigationBar_ArrowButtonClicked(object sender, ArrowButtonEventArgs e)
 {
+
     // Set the arrow type of the navigation bar
     e.Arrow = ArrowType.AddNew;
 }
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.RecordNavigationBar.ArrowButtonClicked += AddressOf RecordNavigationBar_ArrowButtonClicked
+
 Private Sub RecordNavigationBar_ArrowButtonClicked(ByVal sender As Object, ByVal e As ArrowButtonEventArgs)
+
     ' Set the arrow type of the navigation bar
     e.Arrow = ArrowType.AddNew
 End Sub
@@ -164,12 +167,14 @@ To set back color for the record navigation bar, use the [NavigationBarBackColor
 {% highlight c# %}
 // Sets the back color for navigation bar
 this.gridGroupingControl1.RecordNavigationControl.NavigationBarBackColor = Color.LightCoral;
+
 // Sets the foreground color of the navigation bar
 this.gridGroupingControl1.RecordNavigationControl.ForeColor = Color.White;
 {% endhighlight %}
 {% highlight vb %}
 ' Sets the back color for navigation bar
 Me.gridGroupingControl1.RecordNavigationControl.NavigationBarBackColor = Color.LightCoral
+
 ' Sets the foreground color of the navigation bar
 Me.gridGroupingControl1.RecordNavigationControl.ForeColor = Color.White
 {% endhighlight %}
@@ -184,12 +189,14 @@ The style of the `NavigationBar` can be changed by using the [GridOfficeScrollBa
 {% highlight c# %}
 // Changes the visual style of the GridGroupingControl
 this.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2010Blue;
+
 // Changes the visual style of the NavigationBar control
 this.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010;
 {% endhighlight %}
 {% highlight vb %}
 ' Changes the visual style of the GridGroupingControl
 Me.gridGroupingControl1.GridVisualStyles = GridVisualStyles.Office2010Blue
+
 ' Changes the visual style of the NavigationBar control
 Me.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010
 {% endhighlight %}
@@ -204,20 +211,26 @@ The grid records can be programmatically navigate by using some of the methods i
 {% highlight c# %}
 //Moves the current record position to the first row 
 this.gridGroupingControl1.RecordNavigationBar.MoveFirst();
+
 //Moves the current record position to the last row 
 this.gridGroupingControl1.RecordNavigationBar.MoveLast();
+
 //Moves the current record position to the next row 
 this.gridGroupingControl1.RecordNavigationBar.MoveNext();
+
 //Moves the current record position to the previous row 
 this.gridGroupingControl1.RecordNavigationBar.MovePrevious();
 {% endhighlight %}
 {% highlight vb %}
 'Moves the current record position to the first row 
 Me.gridGroupingControl1.RecordNavigationBar.MoveFirst()
+
 'Moves the current record position to the last row 
 Me.gridGroupingControl1.RecordNavigationBar.MoveLast()
+
 'Moves the current record position to the next row 
 Me.gridGroupingControl1.RecordNavigationBar.MoveNext()
+
 'Moves the current record position to the previous row 
 Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
 {% endhighlight %}
