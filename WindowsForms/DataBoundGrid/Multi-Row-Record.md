@@ -23,39 +23,19 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridData
 
 Using the following code example, you can switch display of records from NorthWind's Customers table between displaying a single row per record and multiple rows per record. The Binder.LayoutColumns function can be used to break records into multiple rows. The record can be broken by inserting a "." in the LayoutColumns() function of GridHierarchyLevel class.
 
-
-
-
-
+{% tabs %}
 {% highlight c# %}
-
 GridModel gridModel = gridDataBoundGrid1.Model;
-
 GridModelDataBinder binder = gridDataBoundGrid1.Binder;
 
-
-
 // "." indicates a new row.
-
 binder.LayoutColumns(new string[] {"CustomerID", "CompanyName", "ContactTitle", "ContactName", ".", "Address", "City", ".", "PostalCode", "Country", "Phone", "Fax", "Region"});
-
-
 {% endhighlight  %}
-
 {% highlight vbnet %}
-
-
 Dim gridModel As GridModel = gridDataBoundGrid1.Model
-
 Dim binder As GridModelDataBinder = gridDataBoundGrid1.Binder
 
-
-
 ' "." indicates a new row.
-
-binder.LayoutColumns(New String() {"CustomerID", "CompanyName", "ContactTitle", "ContactName", ".", "Address", "City", ".", "PostalCode",
-
-"Country", "Phone", "Fax", "Region"})
-
+binder.LayoutColumns(New String() {"CustomerID", "CompanyName", "ContactTitle", "ContactName", ".", "Address", "City", ".", "PostalCode", "Country", "Phone", "Fax", "Region"})
 {% endhighlight  %}
-
+{% endtabs %}

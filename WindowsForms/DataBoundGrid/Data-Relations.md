@@ -22,84 +22,52 @@ Nested Drop-down grids are used to represent multi-level data in a grid. For exa
 In the code example below, the parent (primary) grid is the 'Customers' table from Northwind database. On clicking a row of this table, the 'Orders' table will be displayed in a new grid providing details on orders placed by the customers. On clicking any of the rows in Orders table, another grid named 'Order_Details' table is displayed providing details on the order details of the selected row in the Orders table.  
 
 This example has a derived GridDataBoundGrid class called GridHierarchicalDataBoundGrid used for all the grids to be displayed. In the constructor for this class, the tables for parent and child are to be passed.
+
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 //Parent table to Child table.
 
 //Creates the outermost grid for customers table-uses GridHierarchicalDataBoundGrid class.
-
 this.customerGrid1 = new GridHierarchicalDataBoundGrid(this, this.dataSet11.Customers,
-
 this.dataSet11.Orders, this.orderGrid2, new QueryFilterStringEventHandler(ProvideOrdersFilterStrings),
-
 new QueryFormatGridEventHandler(ProvideOrderFormat), true);
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
-
 'Parent table to Child table.
 
 'Creates the outermost grid for customers table and uses GridHierarchicalDataBoundGrid class.
-
 Me.customerGrid1 = New GridHierarchicalDataBoundGrid(Me, Me.dataSet11.Customers, Me.dataSet11.Orders, Me.orderGrid2, New QueryFilterStringEventHandler(AddressOf ProvideOrdersFilterStrings), New QueryFormatGridEventHandler(AddressOf ProvideOrderFormat), True)
-
 {% endhighlight  %}
+{% endtabs %}
 
 Finally, to specify a relationship between a parent table and a child table, an event handler must be passed for the QueryFilterString event. The event should specify the FilterString that defines the relationship between the parent table and the child table.
 
+{% tabs %}
 {% highlight c# %}
-
-
-
-
-
 // Parent table to Child table.
 
 private void ProvideOrdersFilterStrings(object sender, QueryFilterStringEventArgs e)
-
 {
 
 if (this.customerGrid1.Model[e.Row, e.Column + 1].Text != "")
 
-
-
 //Adds 1 to get to Customer ID.
-
 e.FilterString = string.Format("CustomerID = '{0}'", this.customerGrid1.Model[e.Row, e.Column + 1].Text);
-
 }
-
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 'Parent table to Child table.
 
 Private Sub ProvideOrdersFilterStrings(ByVal sender As Object, ByVal e As QueryFilterStringEventArgs)
 
 If Me.customerGrid1.Model(e.Row, e.Column + 1).Text <> "" Then
 
-
-
 ' Adds 1 to get to Customer ID.
-
 e.FilterString = String.Format("CustomerID = '{0}'", Me.customerGrid1.Model(e.Row, e.Column + 1).Text)
-
 End If
-
 End Sub
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Data-Relations_images/Data-Relations_img1.jpeg)
 
@@ -116,25 +84,18 @@ Grid Data Bound Grid control supports multiple nested relations. A relation can 
 ### Example:
 
 The following code example illustrates the display of a DataSet with multiple nested relations. The sample displays NorthWind's 'Category', 'Products' and the 'Orders_Details' table, and allows you to expand and collapse the order details for each order and products for each category. After adding a relation in the dataset and setting DataSource to the grid, the name of the relation is passed through Grid.Binder.AddRelation function in order to show hierarchical pattern.
+
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 GridHierarchyLevel hierarchyLevelCategory_Products = gridBinder.AddRelation("Category_Products");
-
 GridHierarchyLevel hierarchyLevelProducts_OrderDetails = gridBinder.AddRelation("Products_OrderDetails");
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 Dim hierarchyLevelCategory_Products As GridHierarchyLevel = gridBinder.AddRelation("Category_Products")
-
 Dim hierarchyLevelProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRelation("Products_OrderDetails")
 {% endhighlight  %}
+{% endtabs %}
+
 ![](Data-Relations_images/Data-Relations_img2.jpeg) 
 
 
@@ -145,23 +106,15 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridData
 ## Hierarchical Grid with Tree Lines
 
 Grid Data Bound Grid supports display of hierarchical grid with tree lines. This can be achieved by setting the ShowTreeLines property to _true_. 
+
+{% tabs %}
 {% highlight c# %}
-
-
-
-
 this.gridDataBoundGrid1.ShowTreeLines = true;
-
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
 Me.gridDataBoundGrid1.ShowTreeLines = True
-
 {% endhighlight  %}
+{% endtabs %}
 
 With ShowTreeLines property set to true, there is no separate column allotted for plus or minus buttons, instead the indented text in the first column can be seen. 
 
@@ -180,12 +133,14 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridData
 
    The following code illustrates how to set this method for DataBound Grid:
 
-
-
-
-
-          this.gridDataBoundGrid1.ExpandAll();
-          Me.gridDataBoundGrid1.ExpandAll()
+{% tabs %}
+{% highlight c# %}
+this.gridDataBoundGrid1.ExpandAll();
+{% endhighlight %}
+{% highlight vbnet %}
+Me.gridDataBoundGrid1.ExpandAll()
+{% endhighlight %}
+{% endtabs %}
 
    ![](Data-Relations_images/Data-Relations_img4.jpeg)
 
@@ -196,14 +151,14 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridData
 
    The following code illustrates how to set this method for DataBound Grid:
 
-
-
-   this.gridDataBoundGrid1.CollapseAll();
-
-
-
-   Me.gridDataBoundGrid1.CollapseAll()
-
+{% tabs %}
+{% highlight c# %}
+ this.gridDataBoundGrid1.CollapseAll();
+{% endhighlight %}
+{% highlight vbnet %} 
+Me.gridDataBoundGrid1.CollapseAll()
+{% endhighlight %}
+{% endtabs %}
    ![](Data-Relations_images/Data-Relations_img5.jpeg) 
 
    {:.prettyprint}
