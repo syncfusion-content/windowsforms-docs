@@ -34,16 +34,12 @@ The following code will be generated after expression field is added at design t
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(new Syncfusion.Grouping.ExpressionFieldDescriptor[] {
 new Syncfusion.Grouping.ExpressionFieldDescriptor("ExpressionWins", "[wins] * 100", "System.Double"),
 new Syncfusion.Grouping.ExpressionFieldDescriptor("ExpressionLosses", "[losses] / 100", "System.Double")});
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Syncfusion.Grouping.ExpressionFieldDescriptor() { New Syncfusion.Grouping.ExpressionFieldDescriptor("ExpressionWins", "[wins] * 100", "System.Double"), New Syncfusion.Grouping.ExpressionFieldDescriptor("ExpressionLosses", "[losses] / 100", "System.Double")})
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,6 +70,7 @@ The Appearance for the Expression column can be applied as like column styling b
 
 {% tabs %}
 {% highlight c# %}
+
 // Setting text color for "Winning %" column
 this.gridGroupingControl1.TableDescriptor.Columns["Winning %"].Appearance.AnyRecordFieldCell.TextColor = Color.Red;
 this.gridGroupingControl1.TableDescriptor.Columns["Winning %"].Appearance.AnyRecordFieldCell.Font.Facename = "Segoe UI";
@@ -395,19 +392,24 @@ The following steps are used to add the custom function in ExpressionFields,
 {% tabs %}
 {% highlight c# %}
 // Define ComputeAbsoluteValue that returns the absolute value of the 1st argument minus 2 * the 2nd argument.
+
 /// <summary>
 /// Computes the absolute value for specified arguments.
 /// </summary>
 /// <param name="args">The arguments to compute.</param>
 /// <returns>The absolute value.</returns>
+
 private string ComputeAbsoluteValue(string args)
 {
+
    // Get the list delimiter (for en-us, it is a comma).
    char comma = Convert.ToChar(this.gridGroupingControl1.Culture.TextInfo.ListSeparator);
    string[] arguments = args.Split(comma);
+
    if (arguments.GetLength(0) != 2)
        throw new ArgumentException("Requires 2 arguments.");
    double arg1, arg2;
+
    if (double.TryParse(arguments[0], System.Globalization.NumberStyles.Any, null, out arg1)
 && double.TryParse(arguments[1], System.Globalization.NumberStyles.Any, null, out arg2))
        {
@@ -418,20 +420,26 @@ private string ComputeAbsoluteValue(string args)
 
 {% endhighlight %}
 {% highlight vb %}
+
 ' Define ComputeAbsoluteValue that returns the absolute value of the 1st argument minus 2 * the 2nd argument.
+
 ''' <summary>
 ''' Computes the absolute value for specified arguments.
 ''' </summary>
 ''' <param name="args">The arguments to compute.</param>
 ''' <returns>The absolute value.</returns>
+
 Private Function ComputeAbsoluteValue(ByVal args As String) As String
+
    ' Get the list delimiter (for en-us, it is a comma).
    Dim comma As Char = Convert.ToChar(Me.gridGroupingControl1.Culture.TextInfo.ListSeparator)
    Dim arguments() As String = args.Split(comma)
+
    If arguments.GetLength(0) <> 2 Then
        Throw New ArgumentException("Requires 2 arguments.")
    End If
    Dim arg1, arg2 As Double
+
    If Double.TryParse(arguments(0), System.Globalization.NumberStyles.Any, Nothing, arg1) AndAlso Double.TryParse(arguments(1), System.Globalization.NumberStyles.Any, Nothing, arg2) Then
           Return Math.Abs(arg1 - 2 * arg2).ToString()
    End If
@@ -602,6 +610,7 @@ Record record = this.gridGroupingControl1.Table.Records[1];
 string errorString = string.Empty;
 
 // Validating the expression
+
 if (evaluator.IsExpressionValid("Winning %", "ABSOLUTEVALUE([wins],[losses])", record, out errorString))
     {
        ExpressionFieldDescriptor expField1 = new ExpressionFieldDescriptor("Winning %",    "ABSOLUTEVALUE([wins],[losses])", typeof(System.Double));
@@ -620,6 +629,7 @@ Dim record As Record = Me.gridGroupingControl1.Table.Records(1)
 Dim errorString As String = String.Empty
 
 ' Validating the expression
+
 If evaluator.IsExpressionValid("Winning %", "ABSOLUTEVALUE([wins],[losses])", record, errorString) Then
        Dim expField1 As New ExpressionFieldDescriptor("Winning %", "ABSOLUTEVALUE([wins],[losses])", GetType(System.Double))
       Dim expField2 As New ExpressionFieldDescriptor("Losing %", "ABSOLUTEVALUE([wins],[ties])", GetType(System.Double))

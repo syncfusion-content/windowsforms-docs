@@ -13,43 +13,25 @@ Grid Data Bound Grid supports display of multiple row and column headers. Additi
 
 The following code example illustrates how to display multiple row and column headers.
 
-
-
-
+{% tabs %}
 {% highlight c# %}
 int extraRowHeaders = 1;
-
 int extraColHeaders = 1;
 
-
-
 //Initializes extra row and column headers.
-
 this.gridDataBoundGrid1.Model.Rows.HeaderCount = extraRowHeaders;
-
 this.gridDataBoundGrid1.Model.Cols.HeaderCount = extraColHeaders;
-
-
-
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
 Dim extraRowHeaders As Integer = 1
-
 Dim extraColHeaders As Integer = 1
 
-
-
 'Initializes extra row and column headers.
-
 Me.gridDataBoundGrid1.Model.Rows.HeaderCount = extraRowHeaders
-
 Me.gridDataBoundGrid1.Model.Cols.HeaderCount = extraColHeaders
-
-
 {% endhighlight  %}
+{% endtabs %}
+
 The resultant output is shown below.
 
 ![](Multiple-Headers_images/Multiple-Headers_img1.jpeg)

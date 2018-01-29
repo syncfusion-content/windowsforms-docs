@@ -44,14 +44,10 @@ This section will explain on how to begin, commit and cancel the editing process
 The [CurrentCell.BeginEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~BeginEdit.html) method is used to start editing for a current cell and it also allows to set the focus for the cell editor.
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TableControl.CurrentCell.BeginEdit();
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridGroupingControl1.TableControl.CurrentCell.BeginEdit()
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,14 +58,11 @@ The [CurrentCell.EndEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TableControl.CurrentCell.EndEdit();
 
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridGroupingControl1.TableControl.CurrentCell.EndEdit()
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,14 +73,10 @@ The [CancelEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Sync
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TableControl.CurrentCell.CancelEdit();
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridGroupingControl1.TableControl.CurrentCell.CancelEdit()
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,18 +108,21 @@ For preventing the editing in cell by cell basis, make use of the [GridStyleInfo
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.TableCellIdentity.TableCellType == GridTableCellType.RecordFieldCell
        || e.TableCellIdentity.TableCellType == GridTableCellType.AlternateRecordFieldCell)
     {
+
         //Checking column name
+
         if (e.TableCellIdentity.Column != null && e.TableCellIdentity.Column.Name == "FirstName")
         {
             // Checking specific record
+
             if (e.TableCellIdentity.DisplayElement.GetRecord().Id == 5)
             {
                 e.Style.ReadOnly = true;
@@ -138,16 +130,20 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleIn
         }
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+
     If e.TableCellIdentity.TableCellType = GridTableCellType.RecordFieldCell OrElse e.TableCellIdentity.TableCellType = GridTableCellType.AlternateRecordFieldCell Then
+
         'Checking column name
+
         If e.TableCellIdentity.Column IsNot Nothing AndAlso e.TableCellIdentity.Column.Name = "FirstName" Then
+
             ' Checking specific record
+
             If e.TableCellIdentity.DisplayElement.GetRecord().Id = 5 Then
                 e.Style.ReadOnly = True
             End If
@@ -165,21 +161,26 @@ The specific cell properties can be changed by handling the `QueryCellStyleInfo`
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
-
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.TableCellIdentity.TableCellType == GridTableCellType.RecordFieldCell
        || e.TableCellIdentity.TableCellType == GridTableCellType.AlternateRecordFieldCell)
     {
+
         //Checking column name
+
         if (e.TableCellIdentity.Column != null && e.TableCellIdentity.Column.Name == "FirstName")
         {
+
             // Checking specific record
+
             if (e.TableCellIdentity.DisplayElement.GetRecord().Id == 5)
             {
                 e.Style.ReadOnly = true;
 
                 //To change its value, you need to use IgnoreReadOnly property.
+
                 //Turns off Read-only checking.
                 this.gridGroupingControl1.TableModel.IgnoreReadOnly = true;
 
@@ -198,14 +199,20 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleIn
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+
     If e.TableCellIdentity.TableCellType = GridTableCellType.RecordFieldCell OrElse e.TableCellIdentity.TableCellType = GridTableCellType.AlternateRecordFieldCell Then
+
         'Checking column name
+
         If e.TableCellIdentity.Column IsNot Nothing AndAlso e.TableCellIdentity.Column.Name = "FirstName" Then
+
             ' Checking specific record
+
             If e.TableCellIdentity.DisplayElement.GetRecord().Id = 5 Then
                 e.Style.ReadOnly = True
 
                 'To change its value, you need to use IgnoreReadOnly property.
+
                 'Turns off Read-only checking.
                 Me.gridGroupingControl1.TableModel.IgnoreReadOnly = True
 
@@ -230,13 +237,11 @@ The [BrowseOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Sync
 
 // Disabling Editing mode for whole grid
 this.gridGroupingControl1.BrowseOnly = true;
-
 {% endhighlight %}
 {% highlight vb %}
 
 ' Disabling Editing mode for whole grid
 Me.gridGroupingControl1.BrowseOnly = True
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -258,12 +263,12 @@ It is possible to prevent a particular cell or range of cells by using the [Tabl
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControlCurrentCellStartEditing += new GridTableControlCancelEventHandler(gridGroupingControl1_TableControlCurrentCellStartEditing);
-
 void gridGroupingControl1_TableControlCurrentCellStartEditing(object sender, GridTableControlCancelEventArgs e)
 {
     GridCurrentCell currentCell = e.TableControl.CurrentCell;
 
     // Editing for the rows in-between 2 and 6 will be canceled.
+
     if (currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)))
         e.Inner.Cancel = true;
 }
@@ -276,11 +281,11 @@ Private Sub gridGroupingControl1_TableControlCurrentCellStartEditing(ByVal sende
     Dim currentCell As GridCurrentCell = e.TableControl.CurrentCell
 
     ' Editing for the rows in-between 2 and 6 will be canceled.
+
     If currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)) Then
         e.Inner.Cancel = True
     End If
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -296,26 +301,24 @@ The current cell editing can be handled by following events,
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TableControlCurrentCellActivating += new GridTableControlCurrentCellActivatingEventHandler(gridGroupingControl1_TableControlCurrentCellActivating);
-
 
 void gridGroupingControl1_TableControlCurrentCellActivating(object sender, GridTableControlCurrentCellActivatingEventArgs e)
 {
+
     //To-Do
     e.Inner.Cancel = true;
 }
 
 {% endhighlight %}
 {% highlight vb %}
-
 AddHandler gridGroupingControl1.TableControlCurrentCellActivating, AddressOf gridGroupingControl1_TableControlCurrentCellActivating
 
 Private Sub gridGroupingControl1_TableControlCurrentCellChanging(ByVal sender As Object, ByVal e As GridTableControlCancelEventArgs)
+
     'To-Do
     e.Inner.Cancel = True
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 The detailed explanation of the `CurrentCell Events` has been discussed in [CurrentCell Events](http://help.syncfusion.com/windowsforms/gridgrouping/events#current-cell-events) section.
@@ -343,8 +346,6 @@ void TextBox_KeyUp(object sender, KeyEventArgs e)
 {
     Console.WriteLine("textBox_KeyUp");
 }
-
-
 {% endhighlight %}
 {% highlight vb %}
 Dim textBoxCellRenderer As GridTextBoxCellRenderer = CType(Me.gridGroupingControl1.TableControl.CellRenderers("TextBox"), GridTextBoxCellRenderer)
@@ -368,24 +369,20 @@ When the current cell is actively being edited, the grid does not automatically 
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TableControlCurrentCellControlKeyMessage += new GridTableControlCurrentCellControlKeyMessageEventHandler(gridGroupingControl1_TableControlCurrentCellControlKeyMessage);
 
 void gridGroupingControl1_TableControlCurrentCellControlKeyMessage(object sender, GridTableControlCurrentCellControlKeyMessageEventArgs e)
 {
     Keys keyCode = (Keys)((int)e.Inner.Msg.WParam) & Keys.KeyCode;
-
     Console.WriteLine(keyCode);
     Console.WriteLine(e.Inner.Msg);
 }
-
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControlCurrentCellControlKeyMessage, AddressOf gridGroupingControl1_TableControlCurrentCellControlKeyMessage
 
 Private Sub gridGroupingControl1_TableControlCurrentCellControlKeyMessage(ByVal sender As Object, ByVal e As GridTableControlCurrentCellControlKeyMessageEventArgs)
     Dim keyCode As Keys = CType(CInt(Fix(e.Inner.Msg.WParam)), Keys) And Keys.KeyCode
-
     Console.WriteLine(keyCode)
     Console.WriteLine(e.Inner.Msg)
 End Sub
@@ -452,13 +449,12 @@ N>
 N> The [TableControl.CurrentCellKeyPress](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellKeyPress_EV.html) event can also be used for the below customization.
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TableControlCurrentCellKeyPress += new GridTableControlKeyPressEventHandler(gridGroupingControl1_TableControlCurrentCellKeyPress);
-
 this.gridGroupingControl1.TableControlCurrentCellKeyDown += new GridTableControlKeyEventHandler(gridGroupingControl1_TableControlCurrentCellKeyDown);
 
 void gridGroupingControl1_TableControlCurrentCellKeyPress(object sender, GridTableControlKeyPressEventArgs e)
 {
+
     //Create object for current cell renderer
     GridTextBoxCellRenderer cellRenderer = e.TableControl.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
@@ -471,33 +467,36 @@ void gridGroupingControl1_TableControlCurrentCellKeyPress(object sender, GridTab
 
 void gridGroupingControl1_TableControlCurrentCellKeyDown(object sender, GridTableControlKeyEventArgs e)
 {
+
     //Translates the Backspace key to a left arrow key.
+
     if (e.Inner.KeyCode == Keys.Back)
     {
         SendKeys.Send("{LEFT}");
         e.Inner.Handled = true;
     }
 }
-
-
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControlCurrentCellKeyPress, AddressOf gridGroupingControl1_TableControlCurrentCellKeyPress
-
 AddHandler gridGroupingControl1.TableControlCurrentCellKeyDown, AddressOf gridGroupingControl1_TableControlCurrentCellKeyDown
 
 Private Sub gridGroupingControl1_TableControlCurrentCellKeyPress(ByVal sender As Object, ByVal e As GridTableControlKeyPressEventArgs)
+
     'Create object for current cell renderer
     Dim cellRenderer As GridTextBoxCellRenderer = TryCast(e.TableControl.CurrentCell.Renderer, GridTextBoxCellRenderer)
 
     If e.Inner.KeyChar <> Convert.ToChar(Keys.Back) AndAlso cellRenderer.TextBox.SelectionLength = 0 Then
+
         'Programmatically selects One char.
         cellRenderer.TextBox.SelectionLength = 1
     End If
 End Sub
 
 Private Sub gridGroupingControl1_TableControlCurrentCellKeyDown(ByVal sender As Object, ByVal e As GridTableControlKeyEventArgs)
+
     'Translates the Backspace key to a left arrow key.
+
     If e.Inner.KeyCode = Keys.Back Then
         SendKeys.Send("{LEFT}")
         e.Inner.Handled = True

@@ -220,24 +220,16 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridData
 ## Enable the Card View Layout
 
 The following code is used to enable card view layout in GridDataBoundGrid control.
+
+{% tabs %}
 {% highlight c# %}
-
-
 GridCardView card = new GridCardView();
-
 card.CaptionField = "ProductName";
-
 card.WireGrid(this.gridDataBoundGrid1);
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
 Private card As New GridCardView()
-
 card.CaptionField = "ProductName"
-
 card.WireGrid(Me.gridDataBoundGrid1)
-
 {% endhighlight  %}
-
+{% endtabs %}

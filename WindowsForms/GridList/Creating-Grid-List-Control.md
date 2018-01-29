@@ -67,67 +67,36 @@ For the complete implementation details, refer to the sample in the below instal
 _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_
 
 
-
+{% tabs %}
 {% highlight c# %}
-
 //Sets to array list of states.
-
 gridListBox1.DataSource = USStates;
 
-
-
 //ImageList-the images displayed in the list.      
-
 gridListBox1.ImageList = imageList;
 
-
-
 //Displays multiple columns.
-
 gridListBox1.MultiColumn = true;
-
 gridListBox1.ShowColumnHeader = true;
-
 gridListBox1.SelectionMode = SelectionMode.One;
 
-
-
 //Makes the last column wide enough to fill client area.
-
 gridListBox1.FillLastColumn = true; 
-
-
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
 'Sets to array list of states.
-
 gridListBox1.DataSource = USStates        
 
-
-
 'ImageList-the images displayed in the list.       
-
 gridListBox1.ImageList = ImageList           
 
-
-
 'Displays multiple columns.       
-
 gridListBox1.MultiColumn = True                
-
 gridListBox1.ShowColumnHeader = True
-
 gridListBox1.SelectionMode = SelectionMode.One
 
-
-
 'Makes last column.
-
 gridListBox1.FillLastColumn = True             
 {% endhighlight  %}
-
+{% endtabs %}
 

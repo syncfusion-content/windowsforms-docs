@@ -24,9 +24,11 @@ this.gridGroupingControl1.QueryCellStyleInfo += gridGroupingControl1_QueryCellSt
 
 void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.Style.TableCellIdentity.Column != null && e.Style.TableCellIdentity.Column.Name == "FirstName"
         && e.TableCellIdentity.DisplayElement != null && e.TableCellIdentity.DisplayElement.Kind == Syncfusion.Grouping.DisplayElementKind.Record)
     {
+
         //Setting the ToolTip text.
         e.Style.CellTipText = e.TableCellIdentity.Column.Name + " is " + e.Style.Text;
     }
@@ -36,7 +38,9 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.F
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
+
     If e.Style.TableCellIdentity.Column IsNot Nothing AndAlso e.Style.TableCellIdentity.Column.Name = "FirstName" AndAlso e.TableCellIdentity.DisplayElement IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.Kind Is Syncfusion.Grouping.DisplayElementKind.Record Then
+
         'Setting the ToolTip text.
         e.Style.CellTipText = e.TableCellIdentity.Column.Name & " is " & e.Style.Text
     End If
@@ -245,7 +249,9 @@ this.gridGroupingControl1.TableControl.ActivateToolTip += TableControl_ActivateT
 
 private void TableControl_ActivateToolTip(object sender, GridActivateToolTipEventArgs e)
 {
+
     //Disable the ToolTip for particular cell.
+
     if(e.ColIndex == 3 && e.RowIndex == 3)
     {
         e.Cancel = true;
@@ -256,7 +262,9 @@ private void TableControl_ActivateToolTip(object sender, GridActivateToolTipEven
 AddHandler gridGroupingControl1.TableControl.ActivateToolTip, AddressOf TableControl_ActivateToolTip
 
 Private Sub TableControl_ActivateToolTip(ByVal sender As Object, ByVal e As GridActivateToolTipEventArgs)
+
     'Disable the ToolTip for particular cell.
+
     If e.ColIndex = 3 AndAlso e.RowIndex = 3 Then
         e.Cancel = True
     End If
@@ -274,10 +282,11 @@ The below code illustrates that back color and text color are changed for the ce
 {% highlight c# %}
 this.gridGroupingControl1.QueryCellStyleInfo += gridGroupingControl1_QueryCellStyleInfo;
 
-
 void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs e)
 {
+
     //Checking whether the cell has ToolTip or not.
+
     if (e.Style.HasCellTipText)
     {
         e.Style.BackColor = Color.Green;   
@@ -289,7 +298,9 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.F
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
+
     'Checking whether the cell has ToolTip or not.
+
     If e.Style.HasCellTipText Then
         e.Style.BackColor = Color.Green
         e.Style.TextColor = Color.White

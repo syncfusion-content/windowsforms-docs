@@ -83,19 +83,10 @@ Following code example illustrates how to set the selection mode for selecting m
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 this.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend | GridSelectionFlags.Row | GridSelectionFlags.Multiple;
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
-
 Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend Or GridSelectionFlags.Row Or GridSelectionFlags.Multiple
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,23 +102,13 @@ It is possible to modify default color used for AlphaBlend selection. This can b
 
 {% tabs %}
 {% highlight C# %}  
-
-
 this.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend | GridSelectionFlags.Cell;
-
 this.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red;
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
 Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend Or GridSelectionFlags.Cell
-
 Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
-
 {% endhighlight %}
-
 {% endtabs %}
 
  ![](Selections_images/Selections_img2.jpeg) 
@@ -155,19 +136,10 @@ It allows you to select only one item (record).
 
 {% tabs %}
 {% highlight C# %} 
-
-
-
 this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One;
-
- {% endhighlight %}
-
+{% endhighlight %}
 {% highlight vbnet %}  
-
-
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,21 +156,12 @@ You can select multiple items individually. It does not support the use of SHIFT
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiSimple;
-
 {% endhighlight %}
-
 {% highlight vbnet %} 
-
-
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiSimple
-
- {% endhighlight %}
- {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
  ![](Selections_images/Selections_img5.jpeg) 
 
@@ -213,21 +176,12 @@ This selection type allows selection of multiple items through Shift, Ctrl and A
 
 {% tabs %}
 {% highlight C# %}  
-
-
 this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiExtended;
-
 {% endhighlight %}
-
-
 {% highlight vbnet %} 
-
-
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiExtended
-
- {% endhighlight %}
- {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
  ![](Selections_images/Selections_img6.jpeg) 
 
@@ -250,27 +204,14 @@ Gets the required colors from the SelectionBackColor and SelectionTextColor prop
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 this.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.ApplySelectionColor;
-
 this.gridGroupingControl1.TableOptions.SelectionBackColor = Color.PaleGreen;
-
 this.gridGroupingControl1.TableOptions.SelectionTextColor = Color.Green;
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.ApplySelectionColor
-
 Me.gridGroupingControl1.TableOptions.SelectionBackColor = Color.PaleGreen
-
 Me.gridGroupingControl1.TableOptions.SelectionTextColor = Color.Green
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -288,18 +229,10 @@ Draws AlphaBlending over the selected row.
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 this.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.DrawAlphablend;
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.DrawAlphablend
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -316,19 +249,10 @@ Inverts the cells in selected row. As a result, the back color of the cell is us
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 this.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.InvertCells;
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.InvertCells
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -345,18 +269,10 @@ Do not change the appearance of the cells. The cell appearance could be specifie
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 this.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.None;
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxSelectionColorOptions.None
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -472,23 +388,12 @@ Follow the steps below to create a sample that shows the above selections.
 
 {% tabs %}
 {% highlight C# %}  
-
-
 this.gridGroupingControl1.TableModel.Options.RefreshCurrentCellBehavior = GridRefreshCurrentCellBehavior.RefreshCell;
-
 this.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.GrayWhenLostFocus;
-
 {% endhighlight %}
-
-
 {% highlight vbnet %}  
-
-
-
 Me.gridGroupingControl1.TableModel.Options.RefreshCurrentCellBehavior = GridRefreshCurrentCellBehavior.RefreshCell
-
 Me.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.GrayWhenLostFocus
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -496,227 +401,134 @@ Me.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridS
 
 {% tabs %}
 {% highlight C# %}  
-
-
 this.gridGroupingControl1.TableControl.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(TableControl_PrepareViewStyleInfo);
 
-
-
 void TableControl_PrepareViewStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.GridPrepareViewStyleInfoEventArgs e)
-
 {
-
     GridCurrentCell cc = gridGroupingControl1.TableControl.CurrentCell;
-
     GridControlBase grid = this.gridGroupingControl1.TableControl.CurrentCell.Grid;
-
-
 
 //Code for RowOnly.
 
     if (radioButton3.Checked)
-
     {
 
 //Highlights the current row with SystemColors.Highlight and Bold font.
 
         if (e.RowIndex > grid.Model.Rows.HeaderCount && e.ColIndex > grid.Model.Cols.HeaderCount
-
         && cc.HasCurrentCellAt(e.RowIndex))
-
         {
-
             e.Style.Interior = new BrushInfo(SystemColors.Highlight);
-
             e.Style.TextColor = SystemColors.HighlightText;
-
             e.Style.Font.Bold = true;
-
         }
-
     }
-
-
 
 //Code for CellOnly.
 
     else if (radioButton2.Checked)
-
     {
 
 //Highlights the current cell with SystemColors.Highlight and Bold font.
 
         if (e.RowIndex > grid.Model.Rows.HeaderCount && e.ColIndex > grid.Model.Cols.HeaderCount
-
         && cc.HasCurrentCellAt(e.RowIndex, e.ColIndex))
-
         {
-
         e.Style.Interior = new BrushInfo(SystemColors.Highlight);
-
         e.Style.TextColor = SystemColors.HighlightText;
-
         e.Style.Font.Bold = true;
-
         }
-
     }
-
-
 
 //Code for ColumnOnly.
 
     else if (radioButton4.Checked)
-
     {
 
 //Highlight the current column with SystemColors.Highlight and Bold font.
 
         if (e.RowIndex > grid.Model.Rows.HeaderCount && e.ColIndex > grid.Model.Cols.HeaderCount
-
         && cc.ColIndex == e.ColIndex)
-
         {
-
             e.Style.Interior = new BrushInfo(SystemColors.Highlight);
-
             e.Style.TextColor = SystemColors.HighlightText;
-
             e.Style.Font.Bold = true;
-
         }
-
     }
-
-
 
 //Code for Row and Column.
 
     else if (radioButton5.Checked)
-
     {
 
 //Highlights the current row and column with SystemColors.Highlight and Bold font.
 
         if (e.RowIndex > grid.Model.Rows.HeaderCount && e.ColIndex > grid.Model.Cols.HeaderCount
-
         && (cc.RowIndex == e.RowIndex || cc.ColIndex == e.ColIndex))
-
         {
-
             e.Style.Interior = new BrushInfo(SystemColors.Highlight);
-
             e.Style.TextColor = SystemColors.HighlightText;
-
             e.Style.Font.Bold = true;
-
         }
-
     }
-
 }
-
 {% endhighlight %}
-
-
 {% highlight vbnet %}  
-
-
-
 AddHandler gridGroupingControl1.TableControl.PrepareViewStyleInfo, AddressOf TableControl_PrepareViewStyleInfo
 
-
-
 Private Sub TableControl_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
-
 Dim cc As GridCurrentCell = gridGroupingControl1.TableControl.CurrentCell
-
 Dim grid As GridControlBase = Me.gridGroupingControl1.TableControl.CurrentCell.Grid
-
-
 
 'Code for RowOnly.
 
 If radioButton3.Checked Then
 
-
-
 'Highlights the current row with SystemColors.Highlight and Bold font.
 
 If e.RowIndex > grid.Model.Rows.HeaderCount AndAlso e.ColIndex > grid.Model.Cols.HeaderCount AndAlso cc.HasCurrentCellAt(e.RowIndex) Then
-
 e.Style.Interior = New BrushInfo(SystemColors.Highlight)
-
 e.Style.TextColor = SystemColors.HighlightText
-
 e.Style.Font.Bold = True
-
 End If
-
-
 
 'Code for CellOnly.
 
 ElseIf radioButton2.Checked Then
 
-
-
 'Highlights the current cell with SystemColors.Highlight and Bold font.
 
 If e.RowIndex > grid.Model.Rows.HeaderCount AndAlso e.ColIndex > grid.Model.Cols.HeaderCount AndAlso cc.HasCurrentCellAt(e.RowIndex, e.ColIndex) Then
-
 e.Style.Interior = New BrushInfo(SystemColors.Highlight)
-
 e.Style.TextColor = SystemColors.HighlightText
-
 e.Style.Font.Bold = True
-
 End If
-
-
 
 'Code for ColumnOnly.
 
 ElseIf radioButton4.Checked Then
 
-
-
 'Highlights the current column with SystemColors.Highlight and Bold font.
 
 If e.RowIndex > grid.Model.Rows.HeaderCount AndAlso e.ColIndex > grid.Model.Cols.HeaderCount AndAlso cc.ColIndex = e.ColIndex Then
-
 e.Style.Interior = New BrushInfo(SystemColors.Highlight)
-
 e.Style.TextColor = SystemColors.HighlightText
-
 e.Style.Font.Bold = True
-
 End If
-
-
 
 'Code for Row and Column.
 
 ElseIf radioButton5.Checked Then
 
-
-
 'Highlights the current row and column with SystemColors.Highlight and Bold font.
 
 If e.RowIndex > grid.Model.Rows.HeaderCount AndAlso e.ColIndex > grid.Model.Cols.HeaderCount AndAlso (cc.RowIndex = e.RowIndex OrElse cc.ColIndex = e.ColIndex) Then
-
 e.Style.Interior = New BrushInfo(SystemColors.Highlight)
-
 e.Style.TextColor = SystemColors.HighlightText
-
 e.Style.Font.Bold = True
-
 End If
-
 End If
-
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -726,58 +538,40 @@ Enable ListBoxSelection mode to expose the default selection.
 
 {% highlight C# %}  
 
-
 //Code for Default option.
 
 private void radioButton1_CheckedChanged(object sender, System.EventArgs e)
-
 {
 
     if (this.radioButton1.Checked)
-
     this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One;
 
     else
-
     this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.None;
 
     foreach (Table t in this.gridGroupingControl1.Engine.EnumerateTables())
-
     this.gridGroupingControl1.GetTable(t.TableDescriptor.Name).SelectedRecords.Clear();
-
 }
-
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
 
 'Code for Default option.
 
 Private Sub radioButton1_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radioButton1.CheckedChanged
 
 If Me.radioButton1.Checked Then
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One
 
 Else
-
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.None
 
 End If
-
 Dim t As Table
 
 For Each t In Me.gridGroupingControl1.Engine.EnumerateTables()
-
 Me.gridGroupingControl1.GetTable(t.TableDescriptor.Name).SelectedRecords.Clear()
-
 Next t
-
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -787,48 +581,33 @@ Below is the code for None option that disables the selection.
 
 {% highlight C# %}  
 
-
-
 //Code for None option.
 
 private void radioButton6_CheckedChanged(object sender, System.EventArgs e)
-
 {
 
     if(this.radioButton6.Checked)
-
     this.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.HideAlways;
 
     else
-
     this.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.GrayWhenLostFocus;
-
 }
-
 {% endhighlight %}
-
 {% highlight vbnet %} 
-
-
 
 ' Code for None option.
 
 Private Sub radioButton6_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radioButton6.CheckedChanged
 
 If Me.radioButton6.Checked Then
-
 Me.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.HideAlways
 
 Else
-
 Me.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.GrayWhenLostFocus
-
 End If
-
 End Sub
-
- {% endhighlight %}
- {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 Refresh the table control once the selection type is changed. You could also handle TableControlCurrentCellActivating event for this purpose.
 
@@ -836,100 +615,52 @@ Refresh the table control once the selection type is changed. You could also han
 {% tabs %}
 {% highlight C# %}  
 
-
-
 private void radioButton2_CheckedChanged(object sender, System.EventArgs e)
-
 {
-
     this.gridGroupingControl1.TableControl.Refresh();
-
 }
-
-
 
 private void radioButton3_CheckedChanged(object sender, System.EventArgs e)
-
 {
-
     this.gridGroupingControl1.TableControl.Refresh();
-
 }
-
-
 
 private void radioButton4_CheckedChanged(object sender, System.EventArgs e)
-
 {
-
     this.gridGroupingControl1.TableControl.Refresh();
-
 }
-
-
 
 private void radioButton5_CheckedChanged(object sender, System.EventArgs e)
-
 {
-
     this.gridGroupingControl1.TableControl.Refresh();
-
 }
-
-
 
 void TableControl_CurrentCellActivating(object sender, GridCurrentCellActivatingEventArgs e)
-
 {
-
     this.gridGroupingControl1.TableControl.Refresh();
-
 }
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
 
-
-
 Private Sub radioButton2_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radioButton2.CheckedChanged
-
 Me.gridGroupingControl1.TableControl.Refresh()
-
 End Sub
-
-
 
 Private Sub radioButton3_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radioButton3.CheckedChanged
-
 Me.gridGroupingControl1.TableControl.Refresh()
-
 End Sub
-
-
 
 Private Sub radioButton4_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radioButton4.CheckedChanged
-
 Me.gridGroupingControl1.TableControl.Refresh()
-
 End Sub
-
-
 
 Private Sub radioButton5_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radioButton5.CheckedChanged
-
 Me.gridGroupingControl1.TableControl.Refresh()
-
 End Sub
-
-
 
 Private Sub TableControl_CurrentCellActivating(ByVal sender As Object, ByVal e As GridCurrentCellActivatingEventArgs)
-
 Me.gridGroupingControl1.TableControl.Refresh()
-
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -951,49 +682,24 @@ Multiple records can be selected at a time by adding the desired record specific
 
 {% tabs %}
 {% highlight C# %} 
-
-
-
 Record r1 = this.gridGroupingControl1.Table.Records[2];
-
 Record r2 = this.gridGroupingControl1.Table.Records[4];
-
 Record r3 = this.gridGroupingControl1.Table.Records[0];
-
-
-
 Table t = this.gridGroupingControl1.Table;
-
 t.SelectedRecords.Add(r1);
-
 t.SelectedRecords.Add(r2);
-
 t.SelectedRecords.Add(r3);
-
- {% endhighlight %}
-
+{% endhighlight %}
 {% highlight vbnet %} 
-
-
-
 Dim r1 As Record = Me.gridGroupingControl1.Table.Records(2)
-
 Dim r2 As Record = Me.gridGroupingControl1.Table.Records(4)
-
 Dim r3 As Record = Me.gridGroupingControl1.Table.Records(0)
-
-
-
 Dim t As Table = Me.gridGroupingControl1.Table
-
 t.SelectedRecords.Add(r1)
-
 t.SelectedRecords.Add(r2)
-
 t.SelectedRecords.Add(r3)
-
- {% endhighlight %}
- {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
  ![](Selections_images/Selections_img17.jpeg) 
 
@@ -1011,72 +717,37 @@ When nested tables are used, you can extend record selection mechanisms to each 
 {% tabs %}
 {% highlight C# %}  
 
-
 //For Parent Table.
-
 Record r1 = this.gridGroupingControl1.Table.Records[1];
-
 Record r2 = this.gridGroupingControl1.Table.Records[2];
-
-
-
 Table t = this.gridGroupingControl1.Table;
-
 t.SelectedRecords.Add(r1);
-
 t.SelectedRecords.Add(r2);
-
 t.SelectedRecords.Add(r3);
 
 //For Child Table.
-
 Record cr1 = this.gridGroupingControl1.GetTable("Orders").Records[7];
-
 Record cr2 = this.gridGroupingControl1.GetTable("Orders").Records[12];
-
-
-
 this.gridGroupingControl1.GetTable("Orders").SelectedRecords.Add(or1);
-
 this.gridGroupingControl1.GetTable("Orders").SelectedRecords.Add(or2);
-
 {% endhighlight %}
-
-
 {% highlight vbnet %} 
 
-
-
 'For Parent Table.
-
 Dim r1 As Record = Me.gridGroupingControl1.Table.Records(1)
-
 Dim r2 As Record = Me.gridGroupingControl1.Table.Records(2)
-
 Dim t As Table = Me.gridGroupingControl1.Table
-
 t.SelectedRecords.Add(r1)
-
 t.SelectedRecords.Add(r2)
-
 t.SelectedRecords.Add(r3)
 
-
-
 'For Child Table.
-
 Dim cr1 As Record = Me.gridGroupingControl1.GetTable("Orders").Records(7)
-
 Dim cr2 As Record = Me.gridGroupingControl1.GetTable("Orders").Records(12)
-
-
-
 Me.gridGroupingControl1.GetTable("Orders").SelectedRecords.Add(or1)
-
 Me.gridGroupingControl1.GetTable("Orders").SelectedRecords.Add(or2)
-
- {% endhighlight %}
- {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
  ![](Selections_images/Selections_img19.png) 
 
@@ -1087,45 +758,24 @@ To search for a particular record, SelectedRecords collection provides a method 
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 Record rec = this.gridGroupingControl1.Table.Records[2];
 
-
-
 //Searches for the record 'rec'.
-
 int index = this.gridGroupingControl1.Table.SelectedRecords.FindRecord(rec);
 
-
-
 //Searches for the record with index 2.
-
 int index2 = this.gridGroupingControl1.Table.SelectedRecords.FindRecord(2);
-
 {% endhighlight %}
-
 {% highlight vbnet %} 
-
-
-
 Dim rec As Record = Me.gridGroupingControl1.Table.Records(2)
 
-
-
 'Searches for the record 'rec'.
-
 Dim index As Integer = Me.gridGroupingControl1.Table.SelectedRecords.FindRecord(rec)
 
-
-
 'Searches for the record with index 2.
-
 Dim index2 As Integer = Me.gridGroupingControl1.Table.SelectedRecords.FindRecord(2)
-
- {% endhighlight %}
- {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 Removing a RecordSelection
 
@@ -1134,43 +784,22 @@ A record can be removed from the SelectedRecords collection by using the methods
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 Record rec = this.gridGroupingControl1.Table.Records[2];
 
-
-
 //Removes the record 'rec'.
-
 this.gridGroupingControl1.Table.SelectedRecords.Remove(rec);
 
-
-
 //Removes the record at the index 2.
-
-this.gridGroupingControl1.Table.SelectedRecords.RemoveAt(2);
-
+this.gridGroupingControl1.Table.SelectedRecords.RemoveAt(2)
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
-
 Dim rec As Record = Me.gridGroupingControl1.Table.Records(2)
 
-
-
 'Removes the record 'rec'.
-
 Me.gridGroupingControl1.Table.SelectedRecords.Remove(rec)
 
-
-
 'Removes the record at the index 2.
-
 Me.gridGroupingControl1.Table.SelectedRecords.RemoveAt(2)
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1181,19 +810,10 @@ To remove all the selections from the grid, you can call SelectedRecords.Clear()
 
 {% tabs %}
 {% highlight C# %}  
-
-
-
 this.gridGroupingControl1.Table.SelectedRecords.Clear();
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
-
 Me.gridGroupingControl1.Table.SelectedRecords.Clear()
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1214,23 +834,13 @@ This example shows how to loop through SelectedRanges collection to retrieve inf
 
 {% tabs %}
 {% highlight C# %}  
-
-
 this.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend | GridSelectionFlags.Row;
-
 this.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red;
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
 Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend | GridSelectionFlags.Row
-
 Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
-
 {% endhighlight %}
-
 {% endtabs %}
 
 2.The code below loops through the ranges of all the selections and writes the record values that have been selected to a listbox control. 
@@ -1238,55 +848,34 @@ Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
 {% tabs %}
 {% highlight C# %} 
 
-
-
 foreach (GridRangeInfo range in gridGroupingControl1.TableModel.SelectedRanges)
-
 {
 
     if (range.IsRows)
-
     {
 
         for (int i = range.Top; i <= range.Bottom; i++)
-
         {
-
             Record rec = gridGroupingControl1.Table.DisplayElements[i].GetRecord();
-
             listBox1.Items.Add(rec.ToString());
-
         }
-
     }
-
 }
-
- {% endhighlight %}
-
+{% endhighlight %}
 {% highlight vbnet %}  
-
 
 For Each range As GridRangeInfo In gridGroupingControl1.TableModel.SelectedRanges
 
 If range.IsRows Then
-
 Dim i As Integer = range.Top
 
 Do While i <= range.Bottom
-
 Dim rec As Record = gridGroupingControl1.Table.DisplayElements(i).GetRecord()
-
 listBox1.Items.Add(rec.ToString())
-
 i += 1
-
 Loop
-
 End If
-
 Next range
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1306,12 +895,14 @@ The `SelectionFrameOption` enumeration has the following types of selection fram
 {% highlight c# %}
 //Enable the Excel-like selection frame.
 this.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = true;
+
 //Enable the Excel-like current cell.
 this.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = true;
 {% endhighlight %}
 {% highlight vb %}
 'Enable the Excel-like selection frame.
 Me.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = True
+
 'Enable the Excel-like current cell.
 Me.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = True
 {% endhighlight %}

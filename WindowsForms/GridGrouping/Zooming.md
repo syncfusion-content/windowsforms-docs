@@ -14,12 +14,10 @@ GridGroupingControl supports zooming functionality by magnifying the image of gr
 {% highlight c# %}
 // Initialize the Zooming to GridGroupingControl   
 ZoomGroupingGrid zoom = new ZoomGroupingGrid(this.gridGroupingControl1);
-
 {% endhighlight %}
 {% highlight vb %}
 ' Initialize the Zooming to GridGroupingControl   
 Dim zoom As New ZoomGroupingGrid(Me.gridGroupingControl1)
-
 {% endhighlight %}
 {% endtabs %}
 

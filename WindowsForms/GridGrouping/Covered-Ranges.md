@@ -35,8 +35,10 @@ this.gridGroupingControl1.QueryCoveredRange += gridGroupingControl1_QueryCovered
 void gridGroupingControl1_QueryCoveredRange(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableQueryCoveredRangeEventArgs e)
 {
     int index = 3;   
+    
     if(e.Table.Records[index].GetValue("Description").ToString()== "Cheeses")
     {
+    
         if (e.RowIndex > 4 && e.RowIndex < 7 && e.ColIndex >1 && e.ColIndex <3)
         {
             e.Range = GridRangeInfo.Cells(e.RowIndex, e.ColIndex, e.RowIndex +1, e.ColIndex +1);
@@ -47,9 +49,12 @@ void gridGroupingControl1_QueryCoveredRange(object sender, Syncfusion.Windows.Fo
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.QueryCoveredRange, AddressOf gridGroupingControl1_QueryCoveredRange
+
 Private Sub gridGroupingControl1_QueryCoveredRange(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableQueryCoveredRangeEventArgs)
     Dim index As Integer = 3
+
     If e.Table.Records(index).GetValue("Description").ToString()= "Cheeses" Then
+
         If e.RowIndex > 4 AndAlso e.RowIndex < 7 AndAlso e.ColIndex >1 AndAlso e.ColIndex <3 Then
             e.Range = GridRangeInfo.Cells(e.RowIndex, e.ColIndex, e.RowIndex +1, e.ColIndex +1)
             e.Handled = True
@@ -68,26 +73,26 @@ The covered range for the given cell can be found by using the [Find](http://hel
 {% highlight c# %}
 //Adding the range of cells into the CoveredRange
 this.gridGroupingControl1.TableModel.CoveredRanges.Add(GridRangeInfo.Cells(5, 3, 4, 2));
-
 GridRangeInfo range1, range2;
+
 //Find covered range for the cell(5,3)
 this.gridGroupingControl1.TableModel.CoveredRanges.Find(5, 3, out range1);
+
 //Find covered range for the cell(2,3)
 range2 = this.gridGroupingControl1.TableModel.CoveredRanges.FindRange(2, 3);
-
 MessageBox.Show("The covered range of the cell[5,3] is :" + range1.ToString()
     + "\nThe covered range of the cell [2,2] is :" + range2.RangeType.ToString());
 {% endhighlight %}
 {% highlight vb %}
 'Adding the range of cells into the CoveredRange
 Me.gridGroupingControl1.TableModel.CoveredRanges.Add(GridRangeInfo.Cells(5, 3, 4, 2))
-
 Dim range1, range2 As GridRangeInfo
+
 'Find covered range for the cell(5,3)
 Me.gridGroupingControl1.TableModel.CoveredRanges.Find(5, 3, range1)
+
 'Find covered range for the cell(2,3)
 range2 = Me.gridGroupingControl1.TableModel.CoveredRanges.FindRange(2, 3)
-
 MessageBox.Show("The covered range of the cell[5,3] is :" & range1.ToString() & Constants.vbLf & "The covered range of the cell [2,2] is :" & range2.RangeType.ToString())
 {% endhighlight %}
 {% endtabs %}
