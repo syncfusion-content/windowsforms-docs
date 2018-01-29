@@ -15,21 +15,14 @@ The appearance Grid List control can be customized by customizing the background
 
 The following code example illustrates setting of a transparent background for grid cells.
 
-
-
+{% tabs %}
 {% highlight c# %}
-
 this.gridListControl1.TransparentBackground = true;
-
-
-
 {% endhighlight  %}
-
 {% highlight vbnet %}
-
 Me.gridListControl1.TransparentBackground = True
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Customizing-List-control_images/Customizing-List-control_img1.jpeg) 
 
@@ -41,24 +34,16 @@ Me.gridListControl1.TransparentBackground = True
 
 The following code example illustrates usage of the properties to display grid lines.
 
-
-
+{% tabs %}
 {% highlight c# %}
-
 this.gridListControl1.Properties.DisplayHorzLines = true;
-
 this.gridListControl1.Properties.DisplayVertLines = true;
-
 {% endhighlight  %}
-
-
-
 {% highlight vbnet %}
-
 Me.gridListControl1.Properties.DisplayHorzLines = True
-
 Me.gridListControl1.Properties.DisplayVertLines = True
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Customizing-List-control_images/Customizing-List-control_img2.jpeg) 
 
@@ -76,20 +61,15 @@ Me.gridListControl1.Properties.DisplayVertLines = True
 
 The following code example illustrates the usage of the property to render a 3D header.
 
-
-
+{% tabs %}
 {% highlight c# %}
-
 this.gridListControl1.Properties.Buttons3D = true;
-
 {% endhighlight  %}
-
-
 {% highlight vbnet %}
-
-
 Me.gridListControl1.Properties.Buttons3D = True
 {% endhighlight  %}
+{% endtabs %}
+
 ![](Customizing-List-control_images/Customizing-List-control_img4.jpeg) 
 
 
@@ -98,21 +78,14 @@ Me.gridListControl1.Properties.Buttons3D = True
 
 The following code example illustrates the usage of this property to render blue grid lines.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 this.gridListControl1.Grid.Properties.GridLineColor = Color.Blue;
-
 {% endhighlight  %}
-
-
-
 {% highlight vbnet %}
-
 Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Customizing-List-control_images/Customizing-List-control_img5.jpeg) 
 
@@ -124,21 +97,14 @@ Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
 
 The following code example illustrates the usage of this property to render Beige background color.
 
-
-
+{% tabs %}
 {% highlight c# %}
-
 this.gridListControl1.BackColor = Color.Beige;
-
 {% endhighlight  %}
-
-
 {% highlight vbnet %}
-
-
 Me.gridListControl1.BackColor = Color.Beige
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Customizing-List-control_images/Customizing-List-control_img6.jpeg) 
 
@@ -148,61 +114,40 @@ Me.gridListControl1.BackColor = Color.Beige
 
 The following code example illustrates usage of this property to render a red background for the headers.
 
-
-
-
+{% tabs %}
 {% highlight c# %}
 this.gridListControl1.HeaderBackColor = Color.Red;
-
 {% endhighlight  %}
-
-
-
-
 {% highlight vbnet %}
 Me.gridListControl1.HeaderBackColor = Color.Red
-
 {% endhighlight  %}
+{% endtabs %}
 
 * HeaderTextColor - This property allows the user to specify header text color. 
 
 The following code example illustrates usage of this property to render a blue header text color.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 this.gridListControl1.HeaderTextColor = Color.Blue;
-
 {% endhighlight %}
-
-
-
 {% highlight vbnet %}
-
 Me.gridListControl1.HeaderTextColor = Color.Blue;
-
 {% endhighlight  %}
+{% endtabs %}
 
 * BackgroundImage - This property allows the user to specify the background image used for control.
 
 The following code example illustrates usage of this property to set the required image as background of the control.
 
-
-
+{% tabs %}
 {% highlight c# %}
-
 this.gridListControl1.BackgroundImage = Image.FromFile("Cloud.jpg");
-
 {% endhighlight  %}
-
-
 {% highlight vbnet %}
-
-
 Me.gridListControl1.BackgroundImage = Image.FromFile("Cloud.jpg")
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Customizing-List-control_images/Customizing-List-control_img7.jpeg)
 
