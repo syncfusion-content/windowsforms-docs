@@ -16,16 +16,12 @@ Let’s consider three of the `GridStyleInfo` properties for better explanation.
 
 {% tabs %}
 {% highlight c# %}
-
 // Applies back color as LightGreen for all the cells in the Grid.
 this.gridGroupingControl1.Appearance.AnyCell.BackColor = Color.LightGreen;
-
 {% endhighlight %}
 {% highlight vb %}
-
 'Applies back color as LightGreen for all the cells in the Grid.
 Me.gridGroupingControl1.Appearance.AnyCell.BackColor = Color.LightGreen
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,16 +31,12 @@ N> For enabling the styles to be changes in the headers also, then you have to s
 
 {% tabs %}
 {% highlight c# %}
-
 // Applies back color as LightPink for all the records in the Grid.
 this.gridGroupingControl1.Appearance.AnyRecordFieldCell.BackColor = Color.LightPink;
-
 {% endhighlight %}
 {% highlight vb %}
-
 'Applies back color as LightPink for all the records in the Grid.
 Me.gridGroupingControl1.Appearance.AnyRecordFieldCell.BackColor = Color.LightPink
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,13 +47,11 @@ Me.gridGroupingControl1.Appearance.AnyRecordFieldCell.BackColor = Color.LightPin
 
 // Applies back color as LightSalmon for alternative records in the Grid.
 this.gridGroupingControl1.Appearance.AlternateRecordFieldCell.BackColor = Color.LightSalmon;
-
 {% endhighlight %}
 {% highlight vb %}
 
 'Applies back color as LightSalmon for alternative records in the Grid.
 Me.gridGroupingControl1.Appearance.AlternateRecordFieldCell.BackColor = Color.LightSalmon
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +98,6 @@ Me.gridGroupingControl1.Appearance.RowHeaderCell.Themed = False
 
 'Top Left Header Cell style.
 Me.gridGroupingControl1.Appearance.TopLeftHeaderCell.Interior = New BrushInfo(GradientStyle.PathRectangle, SystemColors.Window, Color.FromArgb(255, 228, 221))
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,7 +121,6 @@ tableDescriptor.Appearance.ColumnHeaderCell.TextColor = Color.Black;
 //Group Caption Cell styles.
 tableDescriptor.Appearance.GroupCaptionCell.Interior = new BrushInfo(Color.FromArgb(255, 238, 220));
 tableDescriptor.Appearance.GroupCaptionCell.Borders.Bottom = new GridBorder(GridBorderStyle.Solid, Color.FromArgb(242, 158, 32), GridBorderWeight.Medium);
-
 {% endhighlight %}
 {% highlight vb %}
 
@@ -150,7 +138,6 @@ tableDescriptor.Appearance.ColumnHeaderCell.TextColor = Color.Black
 'Group Caption Cell styles.
 tableDescriptor.Appearance.GroupCaptionCell.Interior = New BrushInfo(Color.FromArgb(255, 238, 220))
 tableDescriptor.Appearance.GroupCaptionCell.Borders.Bottom = New GridBorder(GridBorderStyle.Solid, Color.FromArgb(242, 158, 32), GridBorderWeight.Medium)
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -161,20 +148,16 @@ This section explains how to customize the appearances of different group elemen
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.Appearance.AnyGroupCell.Interior = new BrushInfo(Color.Black);
 this.gridGroupingControl1.Appearance.AnyGroupCell.Themed = false;
 this.gridGroupingControl1.Appearance.GroupCaptionCell.Borders.Bottom =new GridBorder(GridBorderStyle.Solid, Color.FromArgb(157, 179, 200));
 this.gridGroupingControl1.Appearance.GroupCaptionRowHeaderCell.Interior = new BrushInfo(GradientStyle.BackwardDiagonal, SystemColors.Window, Color.DarkOrange);
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridGroupingControl1.Appearance.AnyGroupCell.Interior = New BrushInfo(Color.Black)
 Me.gridGroupingControl1.Appearance.AnyGroupCell.Themed = False
 Me.gridGroupingControl1.Appearance.GroupCaptionCell.Borders.Bottom = New GridBorder(GridBorderStyle.Solid, Color.FromArgb(157, 179, 200))
 Me.gridGroupingControl1.Appearance.GroupCaptionRowHeaderCell.Interior = New BrushInfo(GradientStyle.BackwardDiagonal, SystemColors.Window, Color.DarkOrange)
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -183,16 +166,12 @@ Images can be added to the header of GridGroupingControl by using the [HeaderIma
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TableDescriptor.Columns["Title"].HeaderImage = Image.FromFile(@"\..\..Contact.PNG");
 this.gridGroupingControl1.TableDescriptor.Columns["Title"].HeaderImageAlignment = HeaderImageAlignment.Right;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridGroupingControl1.TableDescriptor.Columns("Title").HeaderImage = Image.FromFile(@"\..\..Contact.PNG")
 Me.gridGroupingControl1.TableDescriptor.Columns("Title").HeaderImageAlignment = HeaderImageAlignment.Right
-
 {% endhighlight %}
 {% endtabs %}
 N> The images in header will also be shown in the grouped column headers which is visible in the `GroupDropArea`.
@@ -212,7 +191,6 @@ Once the data source is set, select [TableDescriptor.Columns](http://help.syncfu
 
 {% tabs %}
 {% highlight c# %}
-
 GridColumnDescriptor desc1 = new GridColumnDescriptor();
 desc1.MappingName = "EmployeeID";
 desc1.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.FromArgb(237, 240, 246));
@@ -228,10 +206,8 @@ desc3.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.FromArgb(102,
 GridColumnDescriptor desc4 = new GridColumnDescriptor();
 desc4.MappingName = "Title";
 desc4.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.FromArgb(252, 172, 38));
-
 {% endhighlight %}
 {% highlight vb %}
-
 Dim desc1 As New GridColumnDescriptor()
 desc1.MappingName = "EmployeeID"
 desc1.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.FromArgb(237, 240, 246))
@@ -247,8 +223,6 @@ desc3.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.FromArgb(102,
 Dim desc4 As New GridColumnDescriptor()
 desc4.MappingName = "Title"
 desc4.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.FromArgb(252, 172, 38))
-
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -289,7 +263,6 @@ style1.Name = "BaseStyle 1"
 style1.StyleInfo.Font.Facename = "Verdana"
 style1.StyleInfo.BackColor = Color.LightBlue
 
-
 gridGroupingControl1.BaseStyles.Add(style1)
 gridGroupingControl1.Appearance.AlternateRecordFieldCell.BaseStyle = "BaseStyle 1"
 {% endhighlight %}
@@ -300,7 +273,6 @@ gridGroupingControl1.Appearance.AlternateRecordFieldCell.BaseStyle = "BaseStyle 
 [TableOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.IGridTableOptionsSource~TableOptions.html) lets you set various properties that will affect the look and behavior of a GridGroupingControl across all groups and child groups. Properties such as default height of a Caption Row, group header and Footer, PreviewRow, or whether TreeLines are visible between PlusMinus cells are controlled by this property. All the properties are stored in the [GridTableOptionsStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo_properties.html) class.
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = true;
 this.gridGroupingControl1.TableOptions.RecordPreviewRowHeight = 55;
 this.gridGroupingControl1.TableOptions.ShowRowHeader = false;
@@ -309,10 +281,8 @@ this.gridGroupingControl1.TableOptions.SelectionTextColor = Color.Maroon;
 this.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiExtended;
 this.gridGroupingControl1.TableOptions.DefaultColumnWidth = 65;
 this.gridGroupingControl1.TableOptions.CaptionRowHeight = 22;
-
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = True
 Me.gridGroupingControl1.TableOptions.RecordPreviewRowHeight = 55
 Me.gridGroupingControl1.TableOptions.ShowRowHeader = False
@@ -321,7 +291,6 @@ Me.gridGroupingControl1.TableOptions.SelectionTextColor = Color.Maroon
 Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiExtended
 Me.gridGroupingControl1.TableOptions.DefaultColumnWidth = 65
 Me.gridGroupingControl1.TableOptions.CaptionRowHeight = 22
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -335,11 +304,13 @@ GridGroupingControl has an option to show FormatCell dialog which imitates Excel
 
 {% tabs %}
 {% highlight c# %}
+
 // Shows FormatCell Dialog box
 GroupingGridFormatCellDialog dialog = new GroupingGridFormatCellDialog(this.gridGroupingControl1);
 dialog.ShowDialog(); 
 {% endhighlight %}
 {% highlight vb %}
+
 'Shows FormatCell Dialog box
 Dim dialog As New GroupingGridFormatCellDialog(Me.gridGroupingControl1)
 dialog.ShowDialog()
@@ -355,6 +326,7 @@ Conditional Formatting can be specified by accessing the [TableDescriptor.Condit
 {% highlight c# %}
 
 //Define Conditional Format Descriptor and specify filter criteria and style to be applied.
+
 //Applies the following style to the records whose CustomerID starts with 'A'.
 GridConditionalFormatDescriptor format1 = new GridConditionalFormatDescriptor();
 format1.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.FromArgb(255, 191, 52));
@@ -373,10 +345,11 @@ format2.Name = "ConditionalFormat 2";
 // Add the descriptor to the TableDescriptor.ConditionalFormats property.
 this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(format1);
 this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(format2);
-
 {% endhighlight %}
 {% highlight vb %}
+
 'Define Conditional Format Descriptor and specify filter criteria and style to be applied.
+
 'Applies the following style to the records whose CustomerID starts with 'A'.
 Dim format1 As New GridConditionalFormatDescriptor()
 format1.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.FromArgb(255, 191, 52))
@@ -409,69 +382,72 @@ Style settings can be applied to different grid elements dynamically at run time
 
 {% tabs %}
 {% highlight c# %}
-
 this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
-
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
     if (e.TableCellIdentity.TableCellType == GridTableCellType.RecordFieldCell)
     {
+
         if (e.TableCellIdentity.ColIndex % 2 == 0)
         {
             e.Style.BackColor = Color.FromArgb(255, 187, 111);
             e.Style.Font.FontStyle = FontStyle.Bold;
         }
+
         else
         {
             e.Style.TextColor = Color.White;
             e.Style.BackColor = Color.FromArgb(55, 91, 114);
         }
     }
+    
     else if (e.TableCellIdentity.TableCellType == GridTableCellType.AlternateRecordFieldCell)
     {
+    
         if (e.TableCellIdentity.ColIndex % 2 == 0)
         {
             e.Style.Font.FontStyle = FontStyle.Underline;
             e.Style.BackColor = Color.FromArgb(0, 21, 84);
             e.Style.TextColor = Color.White;
         }
+    
         else
         {
             e.Style.BackColor = Color.FromArgb(255, 188, 112);
             e.Style.Font.FontStyle = FontStyle.Italic;
         }
     }
-
 }
-
-
 {% endhighlight %}
 {% highlight vb %}
-
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+
     If e.TableCellIdentity.TableCellType = GridTableCellType.RecordFieldCell Then
+
         If e.TableCellIdentity.ColIndex Mod 2 = 0 Then
             e.Style.BackColor = Color.FromArgb(255, 187, 111)
             e.Style.Font.FontStyle = FontStyle.Bold
+
         Else
             e.Style.TextColor = Color.White
             e.Style.BackColor = Color.FromArgb(55, 91, 114)
         End If
+
     ElseIf e.TableCellIdentity.TableCellType = GridTableCellType.AlternateRecordFieldCell Then
+
         If e.TableCellIdentity.ColIndex Mod 2 = 0 Then
             e.Style.Font.FontStyle = FontStyle.Underline
             e.Style.BackColor = Color.FromArgb(0, 21, 84)
             e.Style.TextColor = Color.White
+
         Else
             e.Style.BackColor = Color.FromArgb(255, 188, 112)
             e.Style.Font.FontStyle = FontStyle.Italic
         End If
     End If
-
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 

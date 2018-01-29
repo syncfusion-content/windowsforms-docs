@@ -34,11 +34,13 @@ The range of cells can be copied to the clipboard by using the [CutPaste.CopyRan
 {% tabs %}
 {% highlight c# %}
 GridRangeInfo range = GridRangeInfo.Cells(3, 3, 4, 4);
+
 //Copy the range of cells to the clipboard
 this.gridGroupingControl1.TableModel.CutPaste.CopyRange(range);
 {% endhighlight %}
 {% highlight vb %}
 Dim range As GridRangeInfo = GridRangeInfo.Cells(3, 3, 4, 4)
+
 'Copy the range of cells to the clipboard
 Me.gridGroupingControl1.TableModel.CutPaste.CopyRange(range)
 {% endhighlight %}
@@ -53,6 +55,7 @@ GridCurrentCell cc = this.gridGroupingControl1.TableControl.CurrentCell;
 GridRangeInfoList rangeList = new GridRangeInfoList();
 rangeList.Add(GridRangeInfo.Cells(3, 3, 4, 4));
 rangeList.Add(GridRangeInfo.Cell(cc.RowIndex, cc.ColIndex));   
+
 //Copy the formatted text of the given range
 this.gridGroupingControl1.TableModel.CutPaste.CopyTextToClipboard(rangeList);
 {% endhighlight %}
@@ -61,6 +64,7 @@ Dim cc As GridCurrentCell = Me.gridGroupingControl1.TableControl.CurrentCell
 Dim rangeList As New GridRangeInfoList()
 rangeList.Add(GridRangeInfo.Cells(3, 3, 4, 4))
 rangeList.Add(GridRangeInfo.Cell(cc.RowIndex, cc.ColIndex))
+
 'Copy the formatted text of the given range
 Me.gridGroupingControl1.TableModel.CutPaste.CopyTextToClipboard(rangeList)
 {% endhighlight %}
@@ -81,11 +85,15 @@ Clipboard.SetText(this.CopyGroup(el.ParentGroup));
 String str;
 public String CopyGroup(Group g)
 {
+
     if (g.Records != null && g.Records.Count > 0)
     {
+
         //Iterate through the each records in the given group
+
         foreach (Record r in g.Records)
         {
+
             foreach (FieldDescriptor descriptor in this.gridGroupingControl1.TableDescriptor.Fields)
                 str += r.GetValue(descriptor).ToString() + "\t";
             str += "\n";                    
@@ -99,14 +107,20 @@ public String CopyGroup(Group g)
 Dim cc As GridCurrentCell = Me.gridGroupingControl1.TableControl.CurrentCell
 Dim style As GridTableCellStyleInfo = Me.gridGroupingControl1.TableControl.GetTableViewStyleInfo(cc.RowIndex, cc.ColIndex)
 Dim el As Element = style.TableCellIdentity.DisplayElement
+
 'Copy the records of the given group into the clipboard
 Clipboard.SetText(Me.CopyGroup(el.ParentGroup))
 
 Private str As String
+
 Public Function CopyGroup(ByVal g As Group) As String
+
     If g.Records IsNot Nothing AndAlso g.Records.Count > 0 Then
+
         'Iterate through the each records in the given group
+
         For Each r As Record In g.Records
+
             For Each descriptor As FieldDescriptor In Me.gridGroupingControl1.TableDescriptor.Fields
                 str &= r.GetValue(descriptor).ToString() & Constants.vbTab
             Next descriptor
@@ -115,7 +129,6 @@ Public Function CopyGroup(ByVal g As Group) As String
     End If
     Return str
 End Function
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,18 +155,24 @@ A record can be copied to from the grid and pasted to the particular record inde
 {% highlight c# %}
 int index = 3;
 string str = null;
+
 foreach (FieldDescriptor descriptor in this.gridGroupingControl1.TableDescriptor.Fields)
 {
+
     //Add the record value to the string
     str += this.gridGroupingControl1.Table.Records[index].GetValue(descriptor).ToString() + "\t";
 }
+
 //Set the record value as the clipboard data
 Clipboard.SetText(str);         
+
 //Get the current row index of the grid
 int rowIndex = this.gridGroupingControl1.Table.CurrentRecord.GetRowIndex();
 int colIndex = this.gridGroupingControl1.TableDescriptor.FieldToColIndex(0);
+
 //Move the current cell to the first column of the current record
 this.gridGroupingControl1.TableControl.CurrentCell.MoveTo(rowIndex, colIndex);     
+
 //Paste the clipboard content to the current record
 this.gridGroupingControl1.TableModel.CutPaste.Paste();
 {% endhighlight %}
@@ -161,16 +180,21 @@ this.gridGroupingControl1.TableModel.CutPaste.Paste();
 Dim index As Integer = 3
 Dim str As String = Nothing
 For Each descriptor As FieldDescriptor In Me.gridGroupingControl1.TableDescriptor.Fields
+
     'Add the record value to the string
     str &= Me.gridGroupingControl1.Table.Records(index).GetValue(descriptor).ToString() & Constants.vbTab
 Next descriptor
+
 'Set the record value as the clipboard data
 Clipboard.SetText(str)
+
 'Get the current row index of the grid
 Dim rowIndex As Integer = Me.gridGroupingControl1.Table.CurrentRecord.GetRowIndex()
 Dim colIndex As Integer = Me.gridGroupingControl1.TableDescriptor.FieldToColIndex(0)
+
 'Move the current cell to the first column of the current record
 Me.gridGroupingControl1.TableControl.CurrentCell.MoveTo(rowIndex, colIndex)
+
 'Paste the clipboard content to the current record
 Me.gridGroupingControl1.TableModel.CutPaste.Paste()
 {% endhighlight %}
@@ -223,6 +247,7 @@ this.gridGroupingControl1.TableModel.ClipboardCanCopy += new GridCutPasteEventHa
 
 void TableModel_ClipboardCanCopy(object sender, GridCutPasteEventArgs e)
 {
+
     // Ignore the current cell from copy to clipboard
     e.IgnoreCurrentCell = true;            
 }
@@ -231,6 +256,7 @@ void TableModel_ClipboardCanCopy(object sender, GridCutPasteEventArgs e)
 AddHandler gridGroupingControl1.TableModel.ClipboardCanCopy, AddressOf TableModel_ClipboardCanCopy
 
 Private Sub TableModel_ClipboardCanCopy(ByVal sender As Object, ByVal e As GridCutPasteEventArgs)
+
     ' Ignore the current cell from copy to clipboard
     e.IgnoreCurrentCell = True
 End Sub

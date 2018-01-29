@@ -20,9 +20,12 @@ The `CommentTip` property provides the various options to customize the comment 
 this.gridGroupingControl1.QueryCellStyleInfo +=new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.Style.TableCellIdentity.Column != null && e.Style.TableCellIdentity.Column.Name == "FirstName")
     {
+
         //Setting the comment tip text
+
         if (e.TableCellIdentity.DisplayElement != null && e.TableCellIdentity.DisplayElement.Kind == DisplayElementKind.Record)
         {
             e.Style.CommentTip.CommentText = "Hello";
@@ -32,9 +35,13 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleIn
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
+
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+
 	If e.Style.TableCellIdentity.Column IsNot Nothing AndAlso e.Style.TableCellIdentity.Column.Name = "FirstName" Then
+
 		'Setting the comment tip text
+
 		If e.TableCellIdentity.DisplayElement IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.Kind Is DisplayElementKind.Record Then
 			e.Style.CommentTip.CommentText = "Hello"
 		End If
@@ -52,9 +59,11 @@ The comment tip for the cells can also be added by setting the `CommentImage` pr
 this.gridGroupingControl1.QueryCellStyleInfo +=new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.Style.TableCellIdentity.Column != null && e.Style.TableCellIdentity.Column.Name == "FirstName"
         && e.TableCellIdentity.DisplayElement != null && e.TableCellIdentity.DisplayElement.Kind == Syncfusion.Grouping.DisplayElementKind.Record)
     {
+
         //Set the comment image for the cell.
         e.Style.CommentTip.CommentImage = Image.FromFile(@"../../Images/" + e.Style.Text + ".png");
     }
@@ -62,8 +71,11 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.F
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
+
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
+
 	If e.Style.TableCellIdentity.Column IsNot Nothing AndAlso e.Style.TableCellIdentity.Column.Name = "FirstName" AndAlso e.TableCellIdentity.DisplayElement IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.Kind Is Syncfusion.Grouping.DisplayElementKind.Record Then
+
 		'Set the comment image for the cell.
 		e.Style.CommentTip.CommentImage = Image.FromFile("../../Images/" & e.Style.Text & ".png")
 	End If
@@ -186,9 +198,11 @@ The foreground and background colors of the comment tip window can be changed by
 this.gridGroupingControl1.QueryCellStyleInfo +=new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.Style.TableCellIdentity.Column != null && e.Style.TableCellIdentity.Column.Name == "ColumnName"
         && e.TableCellIdentity.DisplayElement != null && e.TableCellIdentity.DisplayElement.Kind == Syncfusion.Grouping.DisplayElementKind.Record)
     {
+
         //Set the comment text, comment font and fore color.
         {
             e.Style.CommentTip.CommentWindowSize = new Size(100, 30);
@@ -201,8 +215,11 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.F
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
+
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
+
 	If e.Style.TableCellIdentity.Column IsNot Nothing AndAlso e.Style.TableCellIdentity.Column.Name = "ColumnName" AndAlso e.TableCellIdentity.DisplayElement IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.Kind Is Syncfusion.Grouping.DisplayElementKind.Record Then
+
 		'Set the comment text, comment font and fore color.
 			e.Style.CommentTip.CommentWindowSize = New Size(100, 30)
 			e.Style.CommentTip.CommentFont = New Font("sans serif", 12, FontStyle.Italic)
@@ -234,6 +251,7 @@ void TableControl_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.DrawCommentIndicator, AddressOf TableControl_DrawCommentIndicator
+
 Private Sub TableControl_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
      Console.WriteLine("CommentRow {0} CommentColumn {1}", e.RowIndex, e.ColIndex)
 End Sub
@@ -252,6 +270,7 @@ void TableControl_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.CommentTipShowing, AddressOf TableControl_CommentTipShowing
+
 Private Sub TableControl_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
      Console.WriteLine("CommentRow {0} CommentColumn {1}", e.RowIndex, e.ColIndex)
 End Sub
@@ -270,6 +289,7 @@ void TableControl_CommentTipShown(object sender, CommentTipShownEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.CommentTipShown, AddressOf TableControl_CommentTipShown
+
 Private Sub TableControl_CommentTipShown(ByVal sender As Object, ByVal e As CommentTipShownEventArgs)
 	Console.WriteLine("Comment tip is shown for the cell [" & e.RowIndex & "," & e.ColIndex & "].")
 End Sub
@@ -286,17 +306,22 @@ The color and location of the comment indicator can be customized by using the `
 this.gridGroupingControl1.TableControl.DrawCommentIndicator += new DrawCommentIndicatorEventHandler(TableControl_DrawCommentIndicator);
 void TableControl_DrawCommentIndicator(object sender, DrawCommentIndicatorEventArgs e)
 {
+
     //Set the color for the comment indicator.
     e.Style.CommentTip.CommentIndicatorColor = Color.Green;
+
     // Modify the indicator location
     e.IndicatorBounds = new Rectangle(e.IndicatorBounds.Left, e.IndicatorBounds.Top + e.CellBounds.Height - 8, 8, 8);
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.DrawCommentIndicator, AddressOf TableControl_DrawCommentIndicator
+
 Private Sub TableControl_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
+
 	'Set the color for the comment indicator.
 	e.Style.CommentTip.CommentIndicatorColor = Color.Green
+
 	' Modify the indicator location
 	e.IndicatorBounds = New Rectangle(e.IndicatorBounds.Left, e.IndicatorBounds.Top + e.CellBounds.Height - 8, 8, 8)
 End Sub
@@ -313,9 +338,11 @@ Using the event argument `e.Graphics`, the shape can be filled that you want to 
 this.gridGroupingControl1.TableControl.DrawCommentIndicator += new DrawCommentIndicatorEventHandler(TableControl_DrawCommentIndicator);
 void TableControl_DrawCommentIndicator(object sender, DrawCommentIndicatorEventArgs e)
 {
+
     if (e.ColIndex == 2)
     {
         e.Cancel = true;
+
         //Set the comment indicator color and shape.
         e.Graphics.FillRectangle(new SolidBrush(Color.Orange), e.IndicatorBounds);
     }
@@ -323,9 +350,12 @@ void TableControl_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.DrawCommentIndicator, AddressOf TableControl_DrawCommentIndicator
+
 Private Sub TableControl_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
+
 	If e.ColIndex = 2 Then
 		e.Cancel = True
+
 		'Set the comment indicator color and shape.
 		e.Graphics.FillRectangle(New SolidBrush(Color.Orange), e.IndicatorBounds)
 	End If
@@ -342,13 +372,16 @@ The `DrawCommentIndicator` event is used to avoid displaying the comment indicat
 this.gridGroupingControl1.TableControl.DrawCommentIndicator += new DrawCommentIndicatorEventHandler(TableControl_DrawCommentIndicator);
 void TableControl_DrawCommentIndicator(object sender, DrawCommentIndicatorEventArgs e)
 {
+
      //Cancel the displaying of the comment tip indicator.
      e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.DrawCommentIndicator, AddressOf TableControl_DrawCommentIndicator
+
 Private Sub TableControl_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
+
 	'Cancel the displaying of the comment tip indicator.
 	e.Cancel = True
 End Sub
@@ -364,13 +397,16 @@ The displaying of comment tip window on mouse hover at the comment tip cell can 
 this.gridGroupingControl1.TableControl.CommentTipShowing += new CommentTipShowingEventHandler(TableControl_CommentTipShowing);
 void TableControl_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {
+
     //Cancel the displaying of the comment tip window.
     e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.CommentTipShowing, AddressOf TableControl_CommentTipShowing
+
 Private Sub TableControl_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
+
 	'Cancel the displaying of the comment tip window.
 	e.Cancel = True
 End Sub
@@ -385,14 +421,17 @@ this.gridGroupingControl1.TableControl.CommentTipShowing += new CommentTipShowin
 void TableControl_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {
     Point pt = e.CommentTipWindow.Location;
+
     //Display the comment tip window at the given point.
     e.CommentTipWindow.Location = new Point(pt.X + 40, pt.Y + 10);
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.CommentTipShowing, AddressOf TableControl_CommentTipShowing
+
 Private Sub TableControl_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
 	Dim pt As Point = e.CommentTipWindow.Location
+
 	'Display the comment tip window at the given point.
 	e.CommentTipWindow.Location = New Point(pt.X + 40, pt.Y + 10)
 End Sub
@@ -414,6 +453,7 @@ void TableControl_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.CommentTipShowing, AddressOf TableControl_CommentTipShowing
+
 Private Sub TableControl_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
 	Dim comment As String = "Employee Name is " & e.Style.CellValue.ToString()
 	e.Style.CommentTip.CommentText = comment
@@ -430,7 +470,9 @@ To highlight the cells or customize the cells if that cell has comment tip, chec
 this.gridGroupingControl1.QueryCellStyleInfo +=new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
+
     //Check whether the cell has comment tip or not.
+
     if (e.Style.CommentTip.CommentText != "" || e.Style.CommentTip.CommentImage != null)
     {
         e.Style.BackColor = Color.Green;
@@ -440,8 +482,11 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleIn
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
+
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+
 	'Check whether the cell has comment tip or not.
+
 	If e.Style.CommentTip.CommentText <> "" OrElse e.Style.CommentTip.CommentImage IsNot Nothing Then
 		e.Style.BackColor = Color.Green
 		e.Style.TextColor = Color.White

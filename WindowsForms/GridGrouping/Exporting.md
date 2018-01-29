@@ -16,11 +16,13 @@ The GridGroupingControl can be exported to the Excel by using the [GroupingGridE
 {% tabs %}
 {% highlight c# %}
 GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterControl();
+
 // Export the contents of the Grid to Excel
 converter.GroupingGridToExcel(this.gridGroupingControl1, "Grid.xls", ConverterOptions.Visible);
 {% endhighlight %}
 {% highlight vb %}
 Dim converter As New GroupingGridExcelConverterControl()
+
 ' Export the contents of the Grid to Excel
 converter.GroupingGridToExcel(Me.gridGroupingControl1, "Grid.xls", ConverterOptions.Visible)
 {% endhighlight %}
@@ -49,12 +51,14 @@ The row and column headers of the GridGroupingControl can be exported to excel b
 {% highlight c# %}
 //Creating the converter control for Exporting the grid
 GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterControl();
+
 // Export the contents of the Grid to Excel
 converter.GroupingGridToExcel(this.gridGroupingControl1, "FileName.xls", ConverterOptions.RowHeaders | ConverterOptions.ColumnHeaders);
 {% endhighlight %}
 {% highlight vb %}
 'Creating the converter control for Exporting the grid
 Dim converter As New GroupingGridExcelConverterControl()
+
 ' Export the contents of the Grid to Excel
 converter.GroupingGridToExcel(Me.gridGroupingControl1, "FileName.xls", ConverterOptions.RowHeaders Or ConverterOptions.ColumnHeaders)
 {% endhighlight %}
@@ -67,18 +71,22 @@ The borders and images of the grid cells can be exported to excel by using the [
 {% highlight c# %}
 //Creating the converter control for Exporting the grid
 GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterControl();
+
 //Enable exporting of borders and Images
 converter.ExportBorders = true;
 converter.ExportImage = true;
+
 // Export the contents of the Grid to Excel
 converter.GroupingGridToExcel(this.gridGroupingControl1, "FileName.xls", ConverterOptions.Default);
 {% endhighlight %}
 {% highlight vb %}
 'Creating the converter control for Exporting the grid
 Dim converter As New GroupingGridExcelConverterControl()
+
 'Enable exporting of borders and Images
 converter.ExportBorders = True
 converter.ExportImage = True
+
 ' Export the contents of the Grid to Excel
 converter.GroupingGridToExcel(Me.gridGroupingControl1, "FileName.xls", ConverterOptions.Default)
 {% endhighlight %}
@@ -90,21 +98,27 @@ By default, the rows and columns are exported with its corresponding row height 
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl excelConverter = new GridGroupingExcelConverterControl();
+
 //Auto fit rows and columns
 excelConverter.CanExportColumnWidth = true;
 excelConverter.CanExportRowHeight = true;
+
 //Exporting Options
 ExcelExportingOptions options = new ExcelExportingOptions();            
+
 //Export the contents of the grid to excel
 excelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.xls", options);
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New GridGroupingExcelConverterControl()
+
 'Auto fit rows and columns
 excelConverter.CanExportColumnWidth = True
 excelConverter.CanExportRowHeight = True
+
 'Exporting Options
 Dim options As New ExcelExportingOptions()
+
 'Export the contents of the grid to excel
 excelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", options)
 {% endhighlight %}
@@ -116,27 +130,35 @@ The default row height and column width can be set for the exported excel docume
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl excelConverter = new GridGroupingExcelConverterControl();
+
 //Disable auto fit rows and columns
 excelConverter.CanExportColumnWidth = false;
 excelConverter.CanExportRowHeight = false;
+
 //Set default row height and col width need to be export
 excelConverter.DefaultRowHeight = 20;
 excelConverter.DefaultColumnWidth = 20;            
+
 //Exporting Options
 ExcelExportingOptions options = new ExcelExportingOptions();
+
 //Export the contents of the grid to excel
 excelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.xls", options);
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New GridGroupingExcelConverterControl()
+
 'Disable auto fit rows and columns
 excelConverter.CanExportColumnWidth = False
 excelConverter.CanExportRowHeight = False
+
 'Set default row height and col width need to be export
 excelConverter.DefaultRowHeight = 20
 excelConverter.DefaultColumnWidth = 20
+
 'Exporting Options
 Dim options As New ExcelExportingOptions()
+
 'Export the contents of the grid to excel
 excelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", options)
 {% endhighlight %}
@@ -147,6 +169,7 @@ The cell styles can be restricted from the exporting by using the [ExportStyle](
 {% tabs %}
 {% highlight c# %}
 GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterControl();
+
 //To export the cell’s  without styles to the excel cell
 converter.ExportStyle = false;
 converter.GroupingGridToExcel(this.gridGroupingControl1, "FileName.xls", ConverterOptions.Default);
@@ -154,6 +177,7 @@ converter.GroupingGridToExcel(this.gridGroupingControl1, "FileName.xls", Convert
 
 {% highlight vb %}
 Dim converter As New GroupingGridExcelConverterControl()
+
 'To export the cell’s without styles to the excel cell
 converter.ExportStyle = True
 converter.GroupingGridToExcel(Me.gridGroupingControl1, "FileName.xls", ConverterOptions.Default)
@@ -168,12 +192,14 @@ The version of the exported excel file can be specified by using the [ExcelVersi
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl excelConverter = new GridGroupingExcelConverterControl();
+
 //Export the grid to Excel 2007 version 
 excelConverter.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007;
 excelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.xls", new ExcelExportingOptions());
 {% endhighlight %}
 {% highlight vb %}
 Dim excelConverter As New GridGroupingExcelConverterControl()
+
 'Export the grid to Excel 2007 version 
 excelConverter.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007
 excelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.xls", New ExcelExportingOptions())
@@ -186,12 +212,14 @@ The groups can be exported to the Excel by using the [ExportGroupPlusMinus](http
 {% tabs %}
 {% highlight c# %}
 GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterControl();
+
 //Export Groups as the Excel Groups
 converter.ExportGroupPlusMinus = true;
 converter.GroupingGridToExcel(this.gridGroupingControl1, "FileName.xls", ConverterOptions.Default);
 {% endhighlight %}
 {% highlight vb %}
 Dim converter As New GroupingGridExcelConverterControl()
+
 'Export Groups as the Excel Groups
 converter.ExportGroupPlusMinus = True
 converter.GroupingGridToExcel(Me.gridGroupingControl1, "FileName.xls", ConverterOptions.Default)
@@ -214,6 +242,7 @@ The record preview rows can be exported to the Excel by enabling the [ExportPrev
 //Display record preview row
 this.gridGroupingControl1.TableOptions.ShowRecordPreviewRow = true;
 GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterControl();
+
 //Enable exporting of the preview record rows to the excel
 converter.ExportPreviewRows = true;
 converter.GroupingGridToExcel(this.gridGroupingControl1, "FileName.xls", ConverterOptions.Default);
@@ -222,6 +251,7 @@ converter.GroupingGridToExcel(this.gridGroupingControl1, "FileName.xls", Convert
 'Display record preview row
 Me.gridGroupingControl1.TableOptions.ShowRecordPreviewRow = True
 Dim converter As New GroupingGridExcelConverterControl()
+
 'Enable exporting of the preview record rows to the excel
 converter.ExportPreviewRows = True
 converter.GroupingGridToExcel(Me.gridGroupingControl1, "FileName.xls", ConverterOptions.Default)
@@ -242,13 +272,16 @@ GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterCont
 converter.ExportPreviewRows = true;
 converter.HeaderBackColor = Color.Orange;
 converter.CaptionBackColor = Color.Lavender;
+
 // To customize the appearance of RecordPreviewCell after exporting
 converter.QueryExportPreviewRowInfo += new GroupingGridExcelConverterControl.GroupingGridExportPreviewRowQueryInfoEventHandler(converter_QueryExportPreviewRowInfo);
+
 // Export the contents of the Grid to Excel
 converter.GroupingGridToExcel(this.gridGroupingControl1, "Grid.xls", ConverterOptions.Visible);                     
 
 private void converter_QueryExportPreviewRowInfo(object sender, GroupingGridExportPreviewRowQueryInfoEventArgs e)
 {
+  
     if (e.Element.Kind == DisplayElementKind.GroupPreview)
     {
         Element el = e.Element;
@@ -256,6 +289,7 @@ private void converter_QueryExportPreviewRowInfo(object sender, GroupingGridExpo
         e.Style.BackColor = Color.MistyRose;
         e.Handled = true;
     }
+
 
     if (e.Element.Kind == DisplayElementKind.RecordPreview)
     {
@@ -267,16 +301,20 @@ private void converter_QueryExportPreviewRowInfo(object sender, GroupingGridExpo
 }
 {% endhighlight %}
 {% highlight vb %}
+
 Private converter As New GroupingGridExcelConverterControl()
 converter.ExportPreviewRows = True
 converter.HeaderBackColor = Color.Orange
 converter.CaptionBackColor = Color.Lavender
+
 ' To customize the appearance of RecordPreviewCell after exporting
 AddHandler converter.QueryExportPreviewRowInfo, AddressOf converter_QueryExportPreviewRowInfo
+
 ' Export the contents of the Grid to Excel
 converter.GroupingGridToExcel(Me.gridGroupingControl1, "Grid.xls", ConverterOptions.Visible)
 
 private void converter_QueryExportPreviewRowInfo(Object sender, GroupingGridExportPreviewRowQueryInfoEventArgs e)
+
     If e.Element.Kind = DisplayElementKind.GroupPreview Then
         Dim el As Element = e.Element
         e.Style.CellValue = "Preview notes for Group (" & el.ParentGroup.Name & ": " & el.ParentGroup.Category.ToString() & ")"
@@ -311,11 +349,14 @@ It caches the `SparklineGroup` that needs to be added to the Excel sheet. The sp
 {% highlight c# %}
 GroupingGridExcelConverterControl converter = new GroupingGridExcelConverterControl();
 converter.QueryImportExportCellInfo += converter_QueryImportExportCellInfo;
+
 void converter_QueryImportExportCellInfo(object sender, GridImportExportCellInfoEventArgs e)
 {
+
     if (e.Action == GridConverterAction.Export)
     {
         GridTableCellStyleInfoIdentity id = e.GridCell.CellIdentity as GridTableCellStyleInfoIdentity;
+
         if (id != null && id.Column != null && id.DisplayElement.IsRecord() &&
         e.GridCell.CellType == GridCellTypeName.Control && e.GridCell.Control is SparkLine)
         {
@@ -325,10 +366,12 @@ void converter_QueryImportExportCellInfo(object sender, GridImportExportCellInfo
 
             //Specify your needed Column index for starting range
             string startRange = GridRangeInfo.GetAlphaLabel(e.ExcelCell.Column - 3) + e.ExcelCell.Row.ToString();
+
             //Specify your needed Column  index for end range
             string endRange = GridRangeInfo.GetAlphaLabel(e.ExcelCell.Column - 1) + e.ExcelCell.Row.ToString();
             IRange dataRange = e.ExcelCell.Worksheet.Range[startRange + ":" + endRange];
             IRange referenceRange = e.ExcelCell;
+
             //Adding Sparkline in excel sheet range
             sparklines.Add(dataRange, referenceRange);
             e.Handled = true;
@@ -337,11 +380,14 @@ void converter_QueryImportExportCellInfo(object sender, GridImportExportCellInfo
 }
 {% endhighlight %}
 {% highlight vb %}
+
 Private converter As New GroupingGridExcelConverterControl()
 Private converter.QueryImportExportCellInfo += AddressOf converter_QueryImportExportCellInfo
 Private Sub converter_QueryImportExportCellInfo(ByVal sender As Object, ByVal e As GridImportExportCellInfoEventArgs)
+
     If e.Action = GridConverterAction.Export Then
         Dim id As GridTableCellStyleInfoIdentity = TryCast(e.GridCell.CellIdentity, GridTableCellStyleInfoIdentity)
+
         If id IsNot Nothing AndAlso id.Column IsNot Nothing AndAlso id.DisplayElement.IsRecord() AndAlso e.GridCell.CellType Is GridCellTypeName.Control AndAlso TypeOf e.GridCell.Control Is SparkLine Then
             Dim sparklineGroup As ISparklineGroup = e.ExcelCell.Worksheet.SparklineGroups.Add()
             sparklineGroup.SparklineType = SparklineType.Line
@@ -349,10 +395,12 @@ Private Sub converter_QueryImportExportCellInfo(ByVal sender As Object, ByVal e 
 
             'Specify your needed Column index for starting range
             Dim startRange As String = GridRangeInfo.GetAlphaLabel(e.ExcelCell.Column - 3) + e.ExcelCell.Row.ToString()
+
             'Specify your needed Column  index for end range
             Dim endRange As String = GridRangeInfo.GetAlphaLabel(e.ExcelCell.Column - 1) + e.ExcelCell.Row.ToString()
             Dim dataRange As IRange = e.ExcelCell.Worksheet.Range(startRange & ":" & endRange)
             Dim referenceRange As IRange = e.ExcelCell
+
             'Adding Sparkline in excel sheet range
             sparklines.Add(dataRange, referenceRange)
             e.Handled = True
@@ -397,6 +445,7 @@ class CustomExcelConverter : GroupingGridExcelConverterControl
     {
         base.ExportImageToExcel(gridCell, range);
     }
+
     protected override void ExportStylesToExcel(GridModel grid, int iRow, int iColumn, GridStyleInfo gridCell, Syncfusion.XlsIO.IRange range)
     {
         base.ExportStylesToExcel(grid, iRow, iColumn, gridCell, range);
@@ -432,6 +481,7 @@ Friend Class CustomExcelConverter
     Protected Overrides Sub ExportImageToExcel(ByVal gridCell As GridStyleInfo, ByVal range As Syncfusion.XlsIO.IRange)
         MyBase.ExportImageToExcel(gridCell, range)
     End Sub
+
     Protected Overrides Sub ExportStylesToExcel(ByVal grid As GridModel, ByVal iRow As Integer, ByVal iColumn As Integer, ByVal gridCell As GridStyleInfo, ByVal range As Syncfusion.XlsIO.IRange)
         MyBase.ExportStylesToExcel(grid, iRow, iColumn, gridCell, range)
     End Sub
@@ -458,19 +508,25 @@ By default, actual cell value will be exported to Excel. In order to export the 
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export the display text to Excel sheet.
 ExcelConverter.ExportMode = Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase.ExportingMode.Text;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export the display text to Excel sheet.
 ExcelConverter.ExportMode = Syncfusion.GridExcelConverter.GridGroupingExcelConverterBase.ExportingMode.Text
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -484,27 +540,35 @@ By default, all the columns of the grid will be exported to Excel. In order to e
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Column list for exclude the columns.
 List<String> Col = new List<string>();
 Col.Add("ProductName");
 Col.Add("SupplierID");
+
 //Assign the Column list to ExcludeColumn option.
 exportingOptions.ExcludeColumns = Col;
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Column list for exclude the columns.
 Dim Col As New List(Of String)()
 Col.Add("ProductName")
 Col.Add("SupplierID")
+
 'Assign the Column list to ExcludeColumn option.
 exportingOptions.ExcludeColumns = Col
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -520,19 +584,25 @@ In order to export the caption summary, the [ExportCaptionSummary](http://help.s
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export Caption summary to Excel.
 exportingOptions.ExportCaptionSummary = true;
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export Caption summary to Excel.
 exportingOptions.ExportCaptionSummary = True
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -548,19 +618,25 @@ In order to export the group preview row, the [ExportGroupPreviewRow](http://hel
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export Group Preview Row to Excel.
 exportingOptions.ExportGroupPreviewRow = true;
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export Group Preview Row to Excel.
 exportingOptions.ExportGroupPreviewRow = True
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -576,19 +652,25 @@ In order to export the group summary, the [ExportGroupSummary](http://help.syncf
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export Grid with Group summary to Excel.
 exportingOptions.ExportGroupSummary = true;
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export Grid with Group summary to Excel.
 exportingOptions.ExportGroupSummary = True
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -600,19 +682,25 @@ In order to export nested table with indent, the [ExportNestedTableIndent](http:
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export nested table with indent.
 exportingOptions.ExportNestedTableIndent = true;
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export nested table with indent.
 exportingOptions.ExportNestedTableIndent = True
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -632,19 +720,25 @@ In order to export the record preview row, the [ExportRecordPreviewRow](http://h
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export Grid with Record Preview Row to Excel.
 exportingOptions.ExportRecordPreviewRow = true;
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export Grid with Record Preview Row to Excel.
 exportingOptions.ExportRecordPreviewRow = True
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -660,19 +754,25 @@ In order to export the table summary, the [ExportTableSummary](http://help.syncf
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export Grid with Table summary to Excel.
 exportingOptions.ExportTableSummary = true;
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export Grid with Table summary to Excel.
 exportingOptions.ExportTableSummary = True
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -688,19 +788,25 @@ In order to export groups with outline, the [AllowGroupOutlining](http://help.sy
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export group with outline.
 ExcelConverter.AllowGroupOutlining = true;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export group with outline.
 ExcelConverter.AllowGroupOutlining = True
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -715,19 +821,25 @@ In order to export nested table with outline, the [AllowNestedTableOutlining](ht
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export nested table with outline.
 ExcelConverter.AllowNestedTableOutlining = true;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export nested table with outline.
 ExcelConverter.AllowNestedTableOutlining = True
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -743,21 +855,27 @@ In order to export the grid’s row height and column width, [CanExportColumnWid
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export the grid's row height and column width.
 ExcelConverter.CanExportColumnWidth = true;
 ExcelConverter.CanExportRowHeight = true;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export the grid's row height and column width.
 ExcelConverter.CanExportColumnWidth = True
 ExcelConverter.CanExportRowHeight = True
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -770,27 +888,35 @@ This is only applicable when the `CanExportColumnWidth` and `CanExportRowHeight`
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export the grid's row height and column width.
 ExcelConverter.CanExportColumnWidth = true;
 ExcelConverter.CanExportRowHeight = true;
+
 //Set the row height and column width in Excel sheet.
 ExcelConverter.DefaultRowHeight = 40;
 ExcelConverter.DefaultColumnWidth = 40;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export the grid's row height and column width.
 ExcelConverter.CanExportColumnWidth = True
 ExcelConverter.CanExportRowHeight = True
+
 'Set the row height and column width in Excel sheet.
 ExcelConverter.DefaultRowHeight = 40
 ExcelConverter.DefaultColumnWidth = 40
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -802,19 +928,25 @@ In order to specify the version of exported Excel file, the [ExcelVersion](http:
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export the Grid to Excel 2007 version.
 ExcelConverter.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export the Grid to Excel 2007 version.
 ExcelConverter.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2007
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -826,19 +958,25 @@ In order to export the borders of the grid cell to Excel sheet, the [ExportBorde
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //export the borders of grid cell to Excel.
 ExcelConverter.ExportBorders = true;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'export the borders of grid cell to Excel.
 ExcelConverter.ExportBorders = True
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -854,19 +992,25 @@ In order to export the grid with nested table caption, the [ExportNestedTableCap
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export Nested table caption to Excel.
 ExcelConverter.ExportNestedTableCaption = true;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export Nested table caption to Excel.
 ExcelConverter.ExportNestedTableCaption = True
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -882,19 +1026,25 @@ In order to export the grid with style, the [ExportStyle](http://help.syncfusion
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export the Grid with style.
 ExcelConverter.ExportStyle = true;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export the Grid with style.
 ExcelConverter.ExportStyle = True
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -910,19 +1060,25 @@ In order to export the gridlines in Excel sheet, the [ShowGridLines](http://help
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 //Export grid lines to Excel sheet.
 ExcelConverter.ShowGridLines = true;
+
 //Exporting Options
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
+
 //Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(this.gridGroupingControl1, "FileName.Xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 'Export grid lines to Excel sheet.
 ExcelConverter.ShowGridLines = True
+
 'Exporting Options
 Dim exportingOptions As New ExcelExportingOptions()
+
 'Export the contents of the grid to Excel.
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "FileName.Xlsx", exportingOptions)
 {% endhighlight %}
@@ -949,6 +1105,7 @@ ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exporting
 
 void ExcelConverter_QueryExportCellRange(object sender, Syncfusion.GroupingGridExcelConverter.QueryExportCellRangeEventArgs e)
 {
+
    if (e.GridCell.CellIdentity.RowIndex % 2 == 0 && e.GridCell.CellIdentity.ColIndex % 2 == 0)
    {
        e.ExcelCell.CellStyle.Font.Color = Syncfusion.XlsIO.ExcelKnownColors.Blue;
@@ -963,6 +1120,7 @@ AddHandler ExcelConverter.QueryExportCellRange, AddressOf ExcelConverter_QueryEx
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
 
 Private Sub ExcelConverter_QueryExportCellRange(ByVal sender As Object, ByVal e As Syncfusion.GroupingGridExcelConverter.QueryExportCellRangeEventArgs)
+
     If e.GridCell.CellIdentity.RowIndex Mod 2 = 0 AndAlso e.GridCell.CellIdentity.ColIndex Mod 2 = 0 Then
         e.ExcelCell.CellStyle.Font.Color = Syncfusion.XlsIO.ExcelKnownColors.Blue
         e.ExcelCell.CellStyle.Color = Color.SandyBrown
@@ -987,6 +1145,7 @@ ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exporting
 
 void ExcelConverter_QueryExportRowRange(object sender, Syncfusion.GroupingGridExcelConverter.QueryExportRowRangeEventArgs e)
 {
+
     if (e.Element.Kind == Syncfusion.Grouping.DisplayElementKind.Record 
         && this.gridGroupingControl2.Table.Records.IndexOf(e.Element.GetRecord()) % 3 == 0)
         e.Cancel = true;
@@ -999,6 +1158,7 @@ AddHandler ExcelConverter.QueryExportRowRange, AddressOf ExcelConverter_QueryExp
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
 
 Private Sub ExcelConverter_QueryExportRowRange(sender As Object, e As Syncfusion.GroupingGridExcelConverter.QueryExportRowRangeEventArgs)	
+
        If e.Element.Kind Is Syncfusion.Grouping.DisplayElementKind.Record AndAlso        Me.gridGroupingControl2.Table.Records.IndexOf(e.Element.GetRecord()) Mod 3 = 0 Then
             e.Cancel = True
        End If
@@ -1021,7 +1181,9 @@ ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exporting
 
 void ExcelConverter_QueryExportNestedTable(object sender, Syncfusion.GroupingGridExcelConverter.ExportNestedTableEventArgs e)
 {
+ 
     // Hide the empty elements being exported to Excel. 
+ 
     if (e.NestedTable.Records.Count == 0)
         e.Cancel = true;
 }
@@ -1034,7 +1196,9 @@ AddHandler ExcelConverter.QueryExportNestedTable, AddressOf ExcelConverter_Query
 ExcelConverter.ExportToExcel(Me.gridGroupingControl1, "Sample.xlsx", exportingOptions)
 
 Private Sub ExcelConverter_QueryExportNestedTable(Object sender, Syncfusion.GroupingGridExcelConverter.ExportNestedTableEventArgs e)
+
     ' Hide the empty elements being exported to Excel. 
+
     If e.NestedTable.Records.Count = 0 Then
        e.Cancel = True
     End If
@@ -1050,10 +1214,12 @@ The column formats which are all set using the `Column.Appearance.AnyRecordField
 {% tabs %}
 {% highlight c# %}
 GridGroupingExcelConverterControl ExcelConverter = new GridGroupingExcelConverterControl();
+
 // Exporting the data without creating style object ExcelConverter.EnableOptimization = true; ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
 {% endhighlight %}
 {% highlight vb %}
 Dim ExcelConverter As New GridGroupingExcelConverterControl()
+
 ' Exporting the data without creating style object ExcelConverter.EnableOptimization = true; ExcelConverter.ExportToExcel(this.gridGroupingControl1, "Sample.xlsx", exportingOptions);
 {% endhighlight %}
 {% endtabs %}
@@ -1074,11 +1240,13 @@ The GridGroupingControl can export to the PDF document by using the [ExportToPdf
 {% tabs %}
 {% highlight c# %}
 GridPDFConverter pdfConvertor = new GridPDFConverter();
+
 // Export the contents of the Grid to Pdf
 pdfConvertor.ExportToPdf("Sample.pdf", this.gridGroupingControl1.TableControl);
 {% endhighlight %}
 {% highlight vb %}
 Dim pdfConvertor As New GridPDFConverter()
+
 ' Export the contents of the Grid to Pdf
 pdfConvertor.ExportToPdf("Sample.pdf", Me.gridGroupingControl1.TableControl)
 {% endhighlight %}
@@ -1093,9 +1261,11 @@ The grid can be exported with the header/footer to the PDF document by enabling 
 {% highlight c# %}
 //Create pdf converter
 GridPDFConverter pdfConverter = new GridPDFConverter();
+
 //Enable exporting of header and footer
 pdfConverter.ShowHeader = true;
 pdfConverter.ShowFooter = true;
+
 //Invoke this events to draw the text in header/footer
 pdfConverter.DrawPDFHeader += pdfConverter_DrawPDFHeader;
 pdfConverter.DrawPDFFooter += pdfConverter_DrawPDFFooter;
@@ -1114,8 +1284,8 @@ void pdfConverter_DrawPDFHeader(object sender, PDFHeaderFooterEventArgs e)
 
     //Draw title
     header.Graphics.DrawString("Syncfusion Essential PDF", font, brush, new RectangleF(0, 0, header.Width, header.Height), format);           
-
 }
+
 void pdfConverter_DrawPDFFooter(object sender, PDFHeaderFooterEventArgs e)
 {
     PdfPageTemplateElement footer = e.HeaderFooterTemplate;
@@ -1131,9 +1301,11 @@ void pdfConverter_DrawPDFFooter(object sender, PDFHeaderFooterEventArgs e)
 {% highlight vb %}
 'Create pdf converter
 Private pdfConverter As New GridPDFConverter()
+
 'Enable exporting of header and footer
 pdfConverter.ShowHeader = True
 pdfConverter.ShowFooter = True
+
 'Invoke this events to draw the text in header/footer
 AddHandler pdfConverter.DrawPDFHeader, AddressOf pdfConverter_DrawPDFHeader
 AddHandler pdfConverter.DrawPDFFooter, AddressOf pdfConverter_DrawPDFFooter
@@ -1151,7 +1323,6 @@ Private Sub pdfConverter_DrawPDFHeader(ByVal sender As Object, ByVal e As PDFHea
 
     'Draw title
     header.Graphics.DrawString("Syncfusion Essential PDF", font, brush, New RectangleF(0, 0, header.Width, header.Height), format)
-
 End Sub
 Private Sub pdfConverter_DrawPDFFooter(ByVal sender As Object, ByVal e As PDFHeaderFooterEventArgs)
     Dim footer As PdfPageTemplateElement = e.HeaderFooterTemplate
@@ -1161,7 +1332,6 @@ Private Sub pdfConverter_DrawPDFFooter(ByVal sender As Object, ByVal e As PDFHea
     format.Alignment = PdfTextAlignment.Center
     format.LineAlignment = PdfVerticalAlignment.Top
     footer.Graphics.DrawString("@Copyright 2015", font, brush, New RectangleF(0, footer.Height - 40, footer.Width, footer.Height), format)
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -1177,16 +1347,20 @@ The GridGroupingControl can be exported to the PDF document using [ExportToPdfWi
 {% highlight c# %}
 //Create PDF converter 
 GridPDFConverter pdfConverter = new GridPDFConverter();
+
 //First 40000 records will be exported
 pdfConverter.ExportRange = 40000;
+
 //Exporting and merging with another PDF document
 pdfConverter.ExportToPdfWithMerge("Sample1.pdf", this.gridGroupingControl1.TableControl);
 {% endhighlight %}
 {% highlight vb %}
 'Create PDF converter 
 Dim pdfConverter As New GridPDFConverter()
+
 'First 40000 records will be exported
 pdfConverter.ExportRange = 40000
+
 'Exporting and merging with another PDF document
 pdfConverter.ExportToPdfWithMerge("Sample1.pdf", Me.gridGroupingControl1.TableControl)
 {% endhighlight %}
@@ -1199,12 +1373,14 @@ The `GridPDFConverter` provides support to customize the exporting actions throu
 {% highlight c# %}
 //Create PDF converter 
 GridPDFConverter pdfConverter = new GridPDFConverter();
+
 //Used to perform the action while exporting the Grid
 pdfConverter.Exporting += new GridPDFConverter.PDFExportingEventHandler(pdfConverter_Exporting);
 pdfConverter.Exported += new GridPDFConverter.PDFExportedEventHandler(pdfConverter_Exported);
 
 private void pdfConverter_Exporting(object sender, PDFExportingEventArgs e)
 {
+
      // Getting the pdf document
      PdfDocument pdfDocument = e.PdfDocument;
 
@@ -1213,6 +1389,7 @@ private void pdfConverter_Exporting(object sender, PDFExportingEventArgs e)
 
 private void pdfConverter_Exported(object sender, PDFExportedEventArgs e)
 {
+
       // Getting the pdf document
      PdfDocument pdfDocument = e.PdfDocument;
 
@@ -1223,11 +1400,13 @@ private void pdfConverter_Exported(object sender, PDFExportedEventArgs e)
 {% highlight vb %}
 'Create PDF converter 
 Private pdfConverter As New GridPDFConverter()
+
 'Used to perform the action while exporting the Grid
 Private pdfConverter.Exporting += New GridPDFConverter.PDFExportingEventHandler(AddressOf pdfConverter_Exporting)
 Private pdfConverter.Exported += New GridPDFConverter.PDFExportedEventHandler(AddressOf pdfConverter_Exported)
 
 Private Sub pdfConverter_Exporting(ByVal sender As Object, ByVal e As PDFExportingEventArgs)
+
      ' Getting the pdf document
      Dim pdfDocument As PdfDocument = e.PdfDocument
 
@@ -1236,6 +1415,7 @@ Private Sub pdfConverter_Exporting(ByVal sender As Object, ByVal e As PDFExporti
 End Sub
 
 Private Sub pdfConverter_Exported(ByVal sender As Object, ByVal e As PDFExportedEventArgs)
+
       ' Getting the pdf document
      Dim pdfDocument As PdfDocument = e.PdfDocument
 
@@ -1251,11 +1431,13 @@ The GridGroupingControl data can be exported to the word by using the [GroupingG
 {% tabs %}
 {% highlight c# %}
 GroupingGridWordConverter converter = new GroupingGridWordConverter();
+
 // Export the contents of the Grid To Word
 converter.GroupingGridToWord("Grid.doc", this.gridGroupingControl1);
 {% endhighlight %}
 {% highlight vb %}
 Dim converter As New GroupingGridWordConverter()
+
 ' Export the contents of the Grid To Word
 converter.GroupingGridToWord("Grid.doc", Me.gridGroupingControl1)
 {% endhighlight %}
@@ -1271,12 +1453,14 @@ The styles of the GridGroupingControl can be exported to the grid by setting the
 {% tabs %}
 {% highlight c# %}
 GroupingGridWordConverter wordConverter = new GroupingGridWordConverter();
+
 //Export the Style of the grid to word
 wordConverter.ExportStyle = true;
 wordConverter.GroupingGridToWord("FileName.doc", this.gridGroupingControl1);
 {% endhighlight %}
 {% highlight vb %}
 Dim wordConverter As New GroupingGridWordConverter()
+
 'Export the Style of the grid to word
 wordConverter.ExportStyle = True
 wordConverter.GroupingGridToWord("FileName.doc", Me.gridGroupingControl1)
@@ -1293,9 +1477,11 @@ The GridGroupingControl can be exported to the word with the headers and footers
 {% tabs %}
 {% highlight c# %}
 GroupingGridWordConverter wordConverter = new GroupingGridWordConverter();
+
 //Export the grid to word document
 wordConverter.ShowFooter = true;
 wordConverter.ShowHeader = true;
+
 //Set the text for header and footer
 wordConverter.DrawHeader += wordConverter_DrawHeader;
 wordConverter.DrawFooter += wordConverter_DrawFooter;
@@ -1305,6 +1491,7 @@ void wordConverter_DrawHeader(object sender, DocHeaderFooterEventArgs e)
 {            
     e.Header.AddParagraph().AppendText("Syncfusion Inc.");            
 }
+
 void wordConverter_DrawFooter(object sender, DocHeaderFooterEventArgs e)
 {
     e.Footer.AddParagraph().AppendText("Copyright 2001-2015");
@@ -1312,9 +1499,11 @@ void wordConverter_DrawFooter(object sender, DocHeaderFooterEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Private wordConverter As New GroupingGridWordConverter()
+
 'Export the grid to word document
 wordConverter.ShowFooter = True
 wordConverter.ShowHeader = True
+
 'Set the text for header and footer
 AddHandler wordConverter.DrawHeader, AddressOf wordConverter_DrawHeader
 AddHandler wordConverter.DrawFooter, AddressOf wordConverter_DrawFooter
@@ -1322,6 +1511,7 @@ wordConverter.GroupingGridToWord("FileName.doc", Me.gridGroupingControl1)
 
 void wordConverter_DrawHeader(Object sender, DocHeaderFooterEventArgs e)
     e.Header.AddParagraph().AppendText("Syncfusion Inc.")
+
 void wordConverter_DrawFooter(Object sender, DocHeaderFooterEventArgs e)
     e.Footer.AddParagraph().AppendText("Copyright 2001-2015")
 
@@ -1385,12 +1575,14 @@ The GridGroupingControl can be exported to the CSV format by using the [GridCSVC
 {% tabs %}
 {% highlight c# %}
 GridCSVConverter csvConverter = new GridCSVConverter();
+
 //Exporting to CSV format
 csvConverter.GridToCSV(this.gridGroupingControl1.TableModel, "Sample.csv");
 {% endhighlight %}
 
 {% highlight vb %}
 Dim csvConverter As New GridCSVConverter()
+
 'Exporting to CSV format
 csvConverter.GridToCSV(Me.gridGroupingControl1.TableModel, "Sample.csv")
 {% endhighlight %}
@@ -1403,12 +1595,14 @@ The range of cells can be exported from the grid to excel as the [CSV](https://m
 {% highlight c# %}
 GridCSVConverter csvConverter = new GridCSVConverter();
 int rowIndex = this.gridGroupingControl1.TableControl.TopRowIndex;
+
 //Export the range of rows to CSV format
 csvConverter.ExportRange(GridRangeInfo.Rows(rowIndex, rowIndex + 3), this.gridGroupingControl1.TableModel, "Sample.csv");
 {% endhighlight %}
 {% highlight vb %}
 Dim csvConverter As New GridCSVConverter()
 Dim rowIndex As Integer = Me.gridGroupingControl1.TableControl.TopRowIndex
+
 'Export the range of rows to CSV format
 csvConverter.ExportRange(GridRangeInfo.Rows(rowIndex, rowIndex + 3), Me.gridGroupingControl1.TableModel, "Sample.csv")
 {% endhighlight %}
@@ -1422,11 +1616,13 @@ The selected range of cells can be exported to the CSV format by using the [Sele
 {% tabs %}
 {% highlight c# %}
 GridCSVConverter csvConverter = new GridCSVConverter();
+
 //Export selected range of cells to CSV format
 csvConverter.SelectedExport(this.gridGroupingControl1.TableModel, "Sample.csv");
 {% endhighlight %}
 {% highlight vb %}
 Dim csvConverter As New GridCSVConverter()
+
 'Export selected range of cells to CSV format
 csvConverter.SelectedExport(Me.gridGroupingControl1.TableModel, "Sample.csv")
 {% endhighlight %}

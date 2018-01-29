@@ -247,11 +247,13 @@ To find a cell in the GridGroupingControl, `SearchProperties` property can be us
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
+
 public void GetGridCell()
 {
     UITestControl grid = this.UIMap.UIGettingStartedWindow.UITableControl1Window;
     UITestControl cell = new UITestControl(grid);
     cell.SearchProperties["Name"] = "GridCell_R6_C3";
+
     if (cell.TryFind())
     {
      MessageBox.Show(cell.GetProperty("HelpText").ToString());
@@ -260,6 +262,7 @@ public void GetGridCell()
 {% endhighlight %}
 {% highlight vb %}
 <TestMethod>
+
 Public Sub GetGridCell()
     Dim grid As UITestControl = Me.UIMap.UIGettingStartedWindow.UITableControl1Window
     Dim cell As New UITestControl(grid)
@@ -281,11 +284,13 @@ To highlight a cell in GridGroupingControl, `DrawHighlight` method of correspond
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
+
 public void HighlightCell()
 {
 UITestControl grid = this.UIMap.UIGettingStartedWindow.UITableControl1Window;
  UITestControl cell = new UITestControl(grid);
  cell.SearchProperties["Name"] = "GridCell_R7_C5";
+
  if (cell.TryFind())
  {
    cell.DrawHighlight();
@@ -294,10 +299,12 @@ UITestControl grid = this.UIMap.UIGettingStartedWindow.UITableControl1Window;
 {% endhighlight %}
 {% highlight vb %}
 <TestMethod>
+
 Public Sub HighlightCell()
  Dim grid As UITestControl = Me.UIMap.UIGettingStartedWindow.UITableControl1Window
  Dim cell As New UITestControl(grid)
  cell.SearchProperties("Name") = "GridCell_R7_C5"
+
  If cell.TryFind() Then
    cell.DrawHighlight()
  End If
@@ -315,9 +322,11 @@ To highlight a GridGroupingControl, `DrawHighlight` method of corresponding `UIT
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
+
 public void HighlightGrid()
 {
 UITestControl grid = this.UIMap.UIGettingStartedWindow.UITableControl1Window;
+
 if (grid.TryFind())
 {
   grid.DrawHighlight();
@@ -326,8 +335,10 @@ if (grid.TryFind())
 {% endhighlight %}
 {% highlight vb %}
 <TestMethod>
+
 Public Sub HighlightGrid()
 Dim grid As UITestControl = Me.UIMap.UIGettingStartedWindow.UITableControl1Window
+
 If grid.TryFind() Then
   grid.DrawHighlight()
 End If
@@ -412,11 +423,13 @@ The grid application host runs with .NET Remoting channel hosted internally to c
 
 {% tabs %}
 {% highlight c# %}
+
 public class Form1 : GridGroupingControlTestApplication
 {
 }
 {% endhighlight %}
 {% highlight vb %}
+
 Public Class Form1
         Inherits GridGroupingControlTestApplication
 End Class
@@ -582,6 +595,7 @@ To find a cell in the GridGroupingControl, `SearchProperties` property can be us
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
+
 public void HighlightCell()
 {
   var dataGrid = this.UIMap.UICellCustomizationWindow.UIGridGroupingControl1Window.UIGridGroupingControl1Table;
@@ -589,6 +603,7 @@ public void HighlightCell()
   dataGridCell.SearchProperties["ControlType"] = "Cell";
   dataGridCell.SearchProperties["RowIndex"] = "6";
   dataGridCell.SearchProperties["ColumnIndex"] = "3";
+
   if (dataGridCell.TryFind())
     {
        dataGridCell.DrawHighlight();
@@ -597,12 +612,14 @@ public void HighlightCell()
 {% endhighlight %}
 {% highlight vb %}
 <TestMethod>
+
 Public Sub HighlightCell()
   Dim dataGrid = Me.UIMap.UICellCustomizationWindow.UIGridGroupingControl1Window.UIGridGroupingControl1Table
   Dim dataGridCell As New UITestControl(dataGrid)
   dataGridCell.SearchProperties("ControlType") = "Cell"
   dataGridCell.SearchProperties("RowIndex") = "6"
   dataGridCell.SearchProperties("ColumnIndex") = "3"
+
   If dataGridCell.TryFind() Then
        dataGridCell.DrawHighlight()
   End If
@@ -620,6 +637,7 @@ To highlight a cell in GridGroupingControl, the GridGroupingControl has to be se
 {% tabs %}
 {% highlight c# %}
 [TestMethod]
+
 public void HighlightCell()
 {
   var dataGrid = this.UIMap.UICellCustomizationWindow.UIGridGroupingControl1Window.UIGridGroupingControl1Table;
@@ -627,6 +645,7 @@ public void HighlightCell()
   dataGridCell.SearchProperties["ControlType"] = "Cell";
   dataGridCell.SearchProperties["RowIndex"] = "4";
   dataGridCell.SearchProperties["ColumnIndex"] = "2";
+
   if (dataGridCell.TryFind())
     {
        dataGridCell.DrawHighlight();
@@ -635,12 +654,14 @@ public void HighlightCell()
 {% endhighlight %}
 {% highlight vb %}
 <TestMethod>
+
 Public Sub HighlightCell()
   Dim dataGrid = Me.UIMap.UICellCustomizationWindow.UIGridGroupingControl1Window.UIGridGroupingControl1Table
   Dim dataGridCell As New UITestControl(dataGrid)
   dataGridCell.SearchProperties("ControlType") = "Cell"
   dataGridCell.SearchProperties("RowIndex") = "4"
   dataGridCell.SearchProperties("ColumnIndex") = "2"
+
   If dataGridCell.TryFind() Then
 	   dataGridCell.DrawHighlight()
   End If

@@ -34,13 +34,11 @@ Exporting Summary as Caption
 
 You can export summary as caption using _ExportCaptionSummary_ property. The following code illustrates this:
 
+{% tabs %}
 {% highlight C# %}  
-
-
-
 converter.ExportCaptionSummary = true;
-
 {% endhighlight %}
+{% endtabs %}
 
  ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/exportsummarycaption.png](Export-Summary-as-Caption_images/Export-Summary-as-Caption_img1.png) 
 
@@ -80,48 +78,30 @@ Here, text is provided as a parameter in the Search method in TableDescriptor. I
 
 The following code sample illustrates how to perform the search operation:
 
+{% tabs %}
 {% highlight C# %}  
-
 this.gridGroupingControl1.TableDescriptor.Search("Duke");
-
 {% endhighlight %}
-
 {% highlight vbnet %} 
-
  Me.gridGroupingControl1.TableDescriptor.Search("Duke");
-
 {% endhighlight %} 
-
+{% endtabs %}
 
 ### Searching for text in particular columns
 
 We can perform this operation by passing columns that need to be searched into the Search() method. In this case, we need to create a list that will hold columns that need to be searched for that particular text. The search text and the list of columns that will be searched are passed as parameters for performing the operation. The following code illustrates this:
 
+{% tabs %}
 {% highlight C# %}  
-
 List<GridColumnDescriptor> list= new List<GridColumnDescriptor>();
-
 list.Add(this.gridGroupingControl1.TableDescriptor.Columns[1]);
-
 list.Add(this.gridGroupingControl1.TableDescriptor.Columns[3]);
-
 this.gridGroupingControl1.TableDescriptor.Search("Duke", list);
-
 {% endhighlight %}
-
 {% highlight vbnet %} 
-
 Dim list As New List(Of GridColumnDescriptor)()
-
 list.Add(Me.gridGroupingControl1.TableDescriptor.Columns(1))
-
 list.Add(Me.gridGroupingControl1.TableDescriptor.Columns(3))
-
-
-
 Me.gridGroupingControl1.TableDescriptor.Search("Duke", list)
-
-
 {% endhighlight %} 
-
-
+{% endtabs %}

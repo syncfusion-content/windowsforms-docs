@@ -92,9 +92,10 @@ GridMetroColors metroColor = new GridMetroColors();
 metroColor.HeaderColor.NormalColor = Color.FromArgb(169, 219, 128);
 metroColor.HeaderColor.HoverColor = Color.FromArgb(0, 110, 46); 
 metroColor.HeaderColor.PressedColor = Color.GhostWhite;
-
 metroColor.HeaderBottomBorderWeight = GridBottomBorderWeight.None;
+
 //set bottom border color of the column header
+
 //metroColor.HeaderBottomBorderColor = Color.LightGreen;
 
 //Set the back colors for the CheckBox and ComboBox
@@ -103,7 +104,6 @@ metroColor.ComboboxColor.NormalBackColor = Color.FromArgb(255, 26, 0);
 
 //Apply Custom colors to the Metro visual style
 this.gridGroupingControl1.SetMetroStyle(metroColor);
-
 {% endhighlight %}
 {% highlight vb %}
 'Create GridMetroColors object for customizing the metro visual style
@@ -113,9 +113,10 @@ Dim metroColor As New GridMetroColors()
 metroColor.HeaderColor.NormalColor = Color.FromArgb(169, 219, 128)
 metroColor.HeaderColor.HoverColor = Color.FromArgb(0, 110, 46)
 metroColor.HeaderColor.PressedColor = Color.GhostWhite
-
 metroColor.HeaderBottomBorderWeight = GridBottomBorderWeight.None
+
 'set bottom border color of the column header
+
 'metroColor.HeaderBottomBorderColor = Color.LightGreen;
 
 'Set the back colors for the CheckBox and ComboBox
@@ -187,6 +188,7 @@ The grid can be applied with the [custom visual styles](https://www.syncfusion.c
 {% highlight c# %}
 public class CustomTheme : IVisualStylesDrawing
 {
+
     private GridVisualStyles visualStyle;
 
     public CustomTheme(GridVisualStyles style)
@@ -194,16 +196,18 @@ public class CustomTheme : IVisualStylesDrawing
         this.visualStyle = style;
 
     }
+
     public CustomTheme(GridVisualStyles style, bool legacyStyle)
     {
         this.visualStyle = style;
         this.isLegacyStyle = legacyStyle;
     }
 
-    
     public void DrawHeaderStyle(Graphics g, Rectangle rect, ThemedHeaderDrawing.HeaderState state)
     {            
+
         //Check for empty headers
+
         if (rect.Height == 0 && rect.Width == 0)
             return;
 
@@ -216,6 +220,7 @@ public class CustomTheme : IVisualStylesDrawing
             g.FillRectangle(br, new Rectangle(rect.X + 1, rect.Y + 1, rect.Width - 2, rect.Height - 2));
             br.Dispose();
         }            
+
         else
         {               
             LinearGradientBrush br = new LinearGradientBrush(rect, Color.FromArgb(0, 128, 0), Color.FromArgb(128, 255, 128), LinearGradientMode.Vertical);
@@ -224,6 +229,7 @@ public class CustomTheme : IVisualStylesDrawing
             br.Dispose();
         }
     }
+
     // IVisualStylesDrawing Members …
 }
 
@@ -231,12 +237,13 @@ public class CustomTheme : IVisualStylesDrawing
 {% highlight vb %}
 Public Class CustomTheme
     Implements IVisualStylesDrawing
+
     Private visualStyle As GridVisualStyles
 
     Public Sub New(ByVal style As GridVisualStyles)
         Me.visualStyle = style
+        End Sub
 
-    End Sub
     Public Sub New(ByVal style As GridVisualStyles, ByVal legacyStyle As Boolean)
         Me.visualStyle = style
         Me.isLegacyStyle = legacyStyle
@@ -244,7 +251,9 @@ Public Class CustomTheme
 
 
     Public Sub DrawHeaderStyle(ByVal g As Graphics, ByVal rect As Rectangle, ByVal state As ThemedHeaderDrawing.HeaderState)
+ 
         'Check for empty headers
+ 
         If rect.Height = 0 AndAlso rect.Width = 0 Then
             Return
         End If
@@ -256,6 +265,7 @@ Public Class CustomTheme
             g.FillRectangle(br, rect)
             g.FillRectangle(br, New Rectangle(rect.X + 1, rect.Y + 1, rect.Width - 2, rect.Height - 2))
             br.Dispose()
+ 
         Else
             Dim br As New LinearGradientBrush(rect, Color.FromArgb(0, 128, 0), Color.FromArgb(128, 255, 128), LinearGradientMode.Vertical)
             g.FillRectangle(br, rect)
@@ -263,6 +273,7 @@ Public Class CustomTheme
             br.Dispose()
         End If
     End Sub
+ 
     ' IVisualStylesDrawing Members …
 End Class
 {% endhighlight %}

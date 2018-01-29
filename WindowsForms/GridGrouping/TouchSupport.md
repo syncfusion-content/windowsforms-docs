@@ -50,12 +50,14 @@ To enable excel like selection frame in the grid, the [ExcelLikeSelectionFrame](
 {% highlight c# %}
 //Enable the Excel-like selection frame.
 this.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = true;
+
 //Enable the Excel-like current cell.
 this.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = true;
 {% endhighlight %}
 {% highlight vb %}
 'Enable the Excel-like selection frame.
 Me.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = True
+
 'Enable the Excel-like current cell.
 Me.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = True
 {% endhighlight %}
