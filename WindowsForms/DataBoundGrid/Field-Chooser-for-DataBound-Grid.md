@@ -59,23 +59,16 @@ Adding Field Chooser for GridDataBoundGrid
 
    The following code illustrates this:
 
-
-
-
-
-			  GridDataBoundFieldChooser fChooser = new GridDataBoundFieldChooser();
-
-			            fChooser.WireGrid(this.GridDataBoundGrid1);
-
-
-
-
-
-			Dim fChooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
-
-			            fChooser.WireGrid(Me.GridDataBoundGrid1)
-
-
+{% tabs %}
+{% highlight c# %}
+GridDataBoundFieldChooser fChooser = new GridDataBoundFieldChooser();
+fChooser.WireGrid(this.GridDataBoundGrid1);
+{% endhighlight %}
+{% highlight vbnet %}
+Dim fChooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
+fChooser.WireGrid(Me.GridDataBoundGrid1)
+{% endhighlight %}
+{% endtabs %}
 
 
 

@@ -59,6 +59,7 @@ private int numberChildRows = 20;
 private int numberGrandChildRows = 50;
 
 //Creates Parent Table.
+
 private DataTable GetParentTable()
 {
     DataTable dataTable = new DataTable("ParentTable");
@@ -78,6 +79,7 @@ private DataTable GetParentTable()
 }
 
 //Creates Child Table.
+
 private DataTable GetChildTable()
 {
     DataTable dataTable = new DataTable("ChildTable");
@@ -122,6 +124,7 @@ Private numberChildRows As Integer = 20
 Private numberGrandChildRows As Integer = 50
 
 'Creates Parent Table.
+
 Private Function GetParentTable() As DataTable
     Dim dataTable As New DataTable("ParentTable")
     dataTable.Columns.Add(New DataColumn("parentID"))
@@ -139,6 +142,7 @@ Private Function GetParentTable() As DataTable
 End Function
 
 'Creates Child Table.
+
 Private Function GetChildTable() As DataTable
     Dim dataTable As New DataTable("ChildTable")
     dataTable.Columns.Add(New DataColumn("childID"))
@@ -157,6 +161,7 @@ Private Function GetChildTable() As DataTable
 End Function
 
 'Creates Grand Child Table.
+
 Private Function GetGrandChildTable() As DataTable
     Dim dataTable As New DataTable("GrandChildTable")
     dataTable.Columns.Add(New DataColumn("GrandChildID"))
@@ -279,15 +284,16 @@ The following steps demonstrate this process.
 {% highlight c# %}
 //US States Collection.
 [Serializable]
+
 public class USStatesCollection : ArrayList
 {
+
     public new USState this[int index]
     {
         get
         {
             return (USState)base[index];
         }
-
         set
         {
             base[index] = value;
@@ -333,6 +339,7 @@ public class USStatesCollection : ArrayList
 
 //US State Class.
 [Serializable]
+
 public class USState
 {
     private string _code;
@@ -348,13 +355,13 @@ public class USState
     }
 
     [Browsable(true)]
+
     public string Key
     {
         get
         {
             return _code;
         }
-
         set
         {
             _code = value;
@@ -383,13 +390,13 @@ public class USState
 {% highlight vb %}
 'US States Collection.
 <Serializable>
+
 Public Class USStatesCollection
     Inherits ArrayList
     Default Public Shadows Property Item(ByVal index As Integer) As USState
         Get
             Return CType(MyBase.Item(index), USState)
         End Get
-
         Set(ByVal value As USState)
             MyBase.Item(index) = value
         End Set
@@ -440,8 +447,8 @@ Public Class USState
         Me._code = key
         Me._name = name
     End Sub
-
     <Browsable(True)>
+
     Public Property Key() As String
         Get
             Return _code
@@ -451,8 +458,8 @@ Public Class USState
             _code = value
         End Set
     End Property
-
     <Browsable(True)>
+
     Public Property Name() As String
         Get
             Return _name
@@ -491,6 +498,7 @@ table.Columns.Add("Id", typeof(string));
 table.Columns.Add("State", typeof(string));
 
 //Adds rows.
+
 for (int i = 0; i < 25; i++)
 {
     table.Rows.Add(table.NewRow());
@@ -504,6 +512,7 @@ table.Columns.Add("Id", GetType(String))
 table.Columns.Add("State", GetType(String))
 
 'Adds rows.
+
 For i As Integer = 0 To 24
     table.Rows.Add(table.NewRow())
     table.Rows(i)(0) = i
@@ -628,7 +637,6 @@ private DataTable GetChildTable()
     dataTable.Columns.Add(new DataColumn("ItemName"));
     dataTable.Columns.Add(new DataColumn("CustomerID"));
     dataTable.Columns.Add(new DataColumn("Price"));
-
     Random rand = new Random();
 
     for (int i = 0; i < numberChildRow; ++i)
@@ -665,12 +673,10 @@ End Function
 
 Private Function GetChildTable() As DataTable
     Dim dataTable As New DataTable("Items")
-
     dataTable.Columns.Add(New DataColumn("ItemID"))
     dataTable.Columns.Add(New DataColumn("ItemName"))
     dataTable.Columns.Add(New DataColumn("CustomerID"))
     dataTable.Columns.Add(New DataColumn("Price"))
-
     Dim rand As New Random()
 
     For i As Integer = 0 To numberChildRow - 1
@@ -683,7 +689,6 @@ Private Function GetChildTable() As DataTable
     Next i
     Return dataTable
 End Function
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -725,7 +730,6 @@ childRelation.ChildTableName = "Items";
 childRelation.RelationKeys.Add("customerID", "CustomerID");
 childRelation.ChildTableDescriptor.AllowEdit = true;
 childRelation.ChildTableDescriptor.AllowNew = true;
-
 this.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation);
 {% endhighlight %}
 {% highlight vb %}
@@ -737,7 +741,6 @@ childRelation.ChildTableName = "Items"
 childRelation.RelationKeys.Add("customerID", "CustomerID")
 childRelation.ChildTableDescriptor.AllowEdit = True
 childRelation.ChildTableDescriptor.AllowNew = True
-
 Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 {% endhighlight %}
 {% endtabs %}
@@ -756,8 +759,10 @@ The following steps demonstrate creating process of List item reference relation
 {% tabs %}
 {% highlight c# %}
 //Countries Collection.
+
 public class CountriesCollection : ArrayList
 {
+
     public new Country this[int index]
     {
         get
@@ -811,6 +816,7 @@ public class CountriesCollection : ArrayList
 }
 
 //Country Class.
+
 public class Country
 {
     private string _code;
@@ -857,8 +863,10 @@ public class Country
 {% endhighlight %}
 {% highlight vb %}
 'Countries Collection.
+
 Public Class CountriesCollection
     Inherits ArrayList
+ 
     Default Public Shadows Property Item(ByVal index As Integer) As Country
         Get
             Return CType(MyBase.Item(index), Country)
@@ -904,6 +912,7 @@ Public Class CountriesCollection
 End Class
 
 'Country Class.
+
 Public Class Country
     Private _code As String
     Private _name As String
@@ -1098,6 +1107,7 @@ public class ChildObj : INotifyPropertyChanged
         get { return f3; }
         set
         {
+
             if (f3 != value)
             {
                 f3 = value;
@@ -1108,6 +1118,7 @@ public class ChildObj : INotifyPropertyChanged
 
     void RaisePropertyChanged(string name)
     {
+
         if (PropertyChanged != null)
             PropertyChanged(this, new PropertyChangedEventArgs(name));
     }
@@ -1131,6 +1142,7 @@ Public Class ChildObj
             Return f1
         End Get
         Set(ByVal value As String)
+
             If f1 <> value Then
                 f1 = value
                 RaisePropertyChanged("Field1")
@@ -1143,6 +1155,7 @@ Public Class ChildObj
             Return f2
         End Get
         Set(ByVal value As String)
+
             If f2 <> value Then
                 f2 = value
                 RaisePropertyChanged("Field2")
@@ -1155,6 +1168,7 @@ Public Class ChildObj
             Return f3
         End Get
         Set(ByVal value As Integer)
+
             If f3 <> value Then
                 f3 = value
                 RaisePropertyChanged("Field3")
@@ -1186,6 +1200,7 @@ public class ParentObj : INotifyPropertyChanged
         this.f1 = f1;
         this.f2 = f2;
         this.f3 = f3;
+
         foreach (ChildObj i in c)
             childObj.Add(i);
     }
@@ -1195,6 +1210,7 @@ public class ParentObj : INotifyPropertyChanged
         get { return f1; }
         set
         {
+
             if (f1 != value)
             {
                 f1 = value;
@@ -1208,6 +1224,7 @@ public class ParentObj : INotifyPropertyChanged
         get { return f2; }
         set
         {
+
             if (f2 != value)
             {
                 f2 = value;
@@ -1221,6 +1238,7 @@ public class ParentObj : INotifyPropertyChanged
         get { return f3; }
         set
         {
+
             if (f3 != value)
             {
                 f3 = value;
@@ -1236,6 +1254,7 @@ public class ParentObj : INotifyPropertyChanged
 
     void RaisePropertyChanged(string name)
     {
+
         if (PropertyChanged != null)
             PropertyChanged(this, new PropertyChangedEventArgs(name));
     }
@@ -1265,6 +1284,7 @@ Public Class ParentObj
             Return f1
         End Get
         Set(ByVal value As String)
+
             If f1 <> value Then
                 f1 = value
                 RaisePropertyChanged("Field1")
@@ -1277,6 +1297,7 @@ Public Class ParentObj
             Return f2
         End Get
         Set(ByVal value As String)
+
             If f2 <> value Then
                 f2 = value
                 RaisePropertyChanged("Field2")
@@ -1289,6 +1310,7 @@ Public Class ParentObj
             Return f3
         End Get
         Set(ByVal value As Integer)
+
             If f3 <> value Then
                 f3 = value
                 RaisePropertyChanged("Field3")
@@ -1317,15 +1339,15 @@ End Class
 {% highlight c# %}
 BindingList<ParentObj> topList = new BindingList<ParentObj>();
 BindingList<ChildObj> childList = new BindingList<ChildObj>();
-
 Random r = new Random();
+
 for (int i = 0; i < 30; i++)
     childList.Add(new ChildObj(string.Format("Name{0}", r.Next(10)), string.Format("Desc{0}", r.Next(20)), r.Next(30)));
-
 
 for (int i = 0; i < 5; i++)
 {
     topList.Add(new ParentObj(string.Format("Name{0}", r.Next(5)), string.Format("Desc{0}", r.Next(15)), r.Next(20)));
+
     for (int j = i * 5; j < (i * 5) + 5; j++)
         topList[i].Child.Add(childList[j]);
 }
@@ -1334,15 +1356,15 @@ for (int i = 0; i < 5; i++)
 {% highlight vb %}
 Dim topList As New BindingList(Of ParentObj)()
 Dim childList As New BindingList(Of ChildObj)()
-
 Dim r As New Random()
+
 For i As Integer = 0 To 29
     childList.Add(New ChildObj(String.Format("Name{0}", r.Next(10)), String.Format("Desc{0}", r.Next(20)), r.Next(30)))
 Next i
 
-
 For i As Integer = 0 To 4
     topList.Add(New ParentObj(String.Format("Name{0}", r.Next(5)), String.Format("Desc{0}", r.Next(15)), r.Next(20)))
+    
     For j As Integer = i * 5 To (i * 5) + 5 - 1
         topList(i).Child.Add(childList(j))
     Next j
@@ -1371,7 +1393,6 @@ relation.MappingName = "Child";
 relation.Name = "Child";
 relation.ChildTableName = "ChildTable";
 gridGroupingControl1.TableDescriptor.Relations.Add(relation);
-
 this.gridGroupingControl1.ShowGroupDropArea = true;
 GridTable childTable = gridGroupingControl1.GetTable("ChildTable");
 this.gridGroupingControl1.AddGroupDropArea(childTable);
@@ -1384,7 +1405,6 @@ relation.MappingName = "Child"
 relation.Name = "Child"
 relation.ChildTableName = "ChildTable"
 gridGroupingControl1.TableDescriptor.Relations.Add(relation)
-
 Me.gridGroupingControl1.ShowGroupDropArea = True
 Dim childTable As GridTable = gridGroupingControl1.GetTable("ChildTable")
 Me.gridGroupingControl1.AddGroupDropArea(childTable)
@@ -1443,8 +1463,10 @@ The [QueryShowRelationDisplayFields](http://help.syncfusion.com/cr/cref_files/wi
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.Engine.QueryShowRelationDisplayFields += new QueryShowRelationFieldsEventHandler(Engine_QueryShowRelationDisplayFields);
+
 void Engine_QueryShowRelationDisplayFields(object sender, QueryShowRelationFieldsEventArgs e)
 {
+
     if (e.Relation.ChildTableName == "Countries")
     {
         e.ShowRelationFields = ShowRelationFields.Hide;
@@ -1453,7 +1475,9 @@ void Engine_QueryShowRelationDisplayFields(object sender, QueryShowRelationField
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.Engine.QueryShowRelationDisplayFields += New QueryShowRelationFieldsEventHandler(AddressOf Engine_QueryShowRelationDisplayFields)
+
 Private Sub Engine_QueryShowRelationDisplayFields(ByVal sender As Object, ByVal e As QueryShowRelationFieldsEventArgs)
+
     If e.Relation.ChildTableName = "Countries" Then
         e.ShowRelationFields = ShowRelationFields.Hide
     End If
@@ -1467,15 +1491,19 @@ The [QueryShowField](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.Engine.QueryShowField += new QueryShowFieldEventHandler(Engine_QueryShowField);
+
 void Engine_QueryShowField(object sender, QueryShowFieldEventArgs e)
 {
+
     if (e.Field.Name == "GrandChildID")
         e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.Engine.QueryShowField += New QueryShowFieldEventHandler(AddressOf Engine_QueryShowField)
+
 Private Sub Engine_QueryShowField(ByVal sender As Object, ByVal e As QueryShowFieldEventArgs)
+
     If e.Field.Name = "GrandChildID" Then
         e.Cancel = True
     End If
@@ -1489,6 +1517,7 @@ The [QueryAddRelation](http://help.syncfusion.com/cr/cref_files/windowsforms/gri
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.Engine.QueryAddRelation += new QueryAddRelationEventHandler(Engine_QueryAddRelation);
+
 void Engine_QueryAddRelation(object sender, QueryAddRelationEventArgs e)
 {
     Console.WriteLine(e.Relation.Name);
@@ -1496,6 +1525,7 @@ void Engine_QueryAddRelation(object sender, QueryAddRelationEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.Engine.QueryAddRelation += New QueryAddRelationEventHandler(AddressOf Engine_QueryAddRelation)
+
 Private Sub Engine_QueryAddRelation(ByVal sender As Object, ByVal e As QueryAddRelationEventArgs)
     Console.WriteLine(e.Relation.Name)
 End Sub
@@ -1508,15 +1538,19 @@ The [QueryShowNestedPropertiesFields](http://help.syncfusion.com/cr/cref_files/w
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.Engine.QueryShowNestedPropertiesFields += new QueryShowNestedPropertiesFieldsEventHandler(Engine_QueryShowNestedPropertiesFields);
+
 void Engine_QueryShowNestedPropertiesFields(object sender, QueryShowNestedPropertiesFieldsEventArgs e)
 {
+
     if (e.PropertyDescriptor.PropertyType == typeof(BaseClass))
         e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.Engine.QueryShowNestedPropertiesFields += New QueryShowNestedPropertiesFieldsEventHandler(AddressOf Engine_QueryShowNestedPropertiesFields)
+
 Private Sub Engine_QueryShowNestedPropertiesFields(ByVal sender As Object, ByVal e As QueryShowNestedPropertiesFieldsEventArgs)
+
     If e.PropertyDescriptor.PropertyType Is GetType(BaseClass) Then
         e.Cancel = True
     End If

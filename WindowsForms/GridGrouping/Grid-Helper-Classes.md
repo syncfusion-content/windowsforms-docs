@@ -13,21 +13,14 @@ documentation: ug
 
 Grid Grouping control does not support resizing heights of individual rows in the grid. This feature has been newly added and can be implemented by initializing an instance of the AllowResizingIndividualRows class to GridEngineFactory in the Form's constructor of your Windows application. The following code examples illustrate how to do this.
 
+{% tabs %}
 {% highlight C# %}  
-
-
-
 GridEngineFactory.Factory = new Syncfusion.GridHelperClasses.AllowResizingIndividualRows();
-
 {% endhighlight %}
-
 {% highlight vbnet %} 
-
-
-
 GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndividualRows()
-
  {% endhighlight %}
+{% endtabs %}
 
 You can make use of AllowResizingIndividualRows class by adding dependent assembly, Syncfusion.GridHelperClasses.Windows to the References folder in your application.
 
@@ -45,21 +38,14 @@ The new filter bar adds two cell buttons, Filter button and Clear Filter button,
 
 The following code example illustrates how to invoke Grid Dynamic Filter.
 
+{% tabs %}
 {% highlight C# %}  
-
-
-
 GridEngineFactory.Factory = new Syncfusion.GridHelperClasses.AllowResizingIndividualRows();
-
 {% endhighlight %}
-
 {% highlight vbnet %} 
-
-
-
 GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndividualRows()
-
  {% endhighlight %}
+{% endtabs %}
 
 The following screen shot illustrates Grid Grouping control with filter drop down.
 
@@ -90,16 +76,13 @@ ApplyFilterOnlyOnCellLostFocus property enables you to turn off/on the filtering
 
 The following code illustrates how to add ApplyFilterOnlyOnCellLostFocus property.
 
+{% tabs %}
 {% highlight C# %}  
+GridDynamicFilter filter = new GridDynamicFilter();
+filter.ApplyFilterOnlyOnCellLoseFocus= true;
+{% endhighlight %}
+{% endtabs %}
 
-
-
-  GridDynamicFilter filter = new GridDynamicFilter();
-
-  filter.ApplyFilterOnlyOnCellLoseFocus= true;
-
-  {% endhighlight %}
-  
 When the code runs, the following output displays.
 
  ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img4.jpeg) 
@@ -112,21 +95,14 @@ GridForeignKeyHelper class is used to set up foreign key relations to perform fo
 
 The following code example illustrates how to use this class.
 
+{% tabs %}
 {% highlight C# %}  
-
-
-
 GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", countries, "CountryCode", "CountryName");
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
-
 GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, "Country", countries, "CountryCode", "CountryName")
-
 {% endhighlight %}
+{% endtabs %}
 
 N> * The first argument in this method is an instance of Grid Grouping control.* The second argument is the column name of the Parent table's Value Member.* The third argument is the name of the Foreign table.* The fourth argument is the column name of Child table's Value Member.* The fifth argument is the column name of Child tables's Display Member.
 
@@ -140,18 +116,14 @@ The following screen shot illustrates Foreign Key Relations in the Grid Grouping
 
 You can customize column appearance of a Grid Grouping control by using plug-in utility called Field Chooser. FieldChooser class can be associated with Grid Grouping control to add or remove columns from the grid. The following code example illustrates this.
 
-
-
-
+{% tabs %}
 {% highlight C# %} 
  FieldChooser fieldChooser = new FieldChooser(this.gridGroupingControl1)
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
 Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
-
 {% endhighlight %}
+{% endtabs %}
 
 Following screen shot shows Grid Grouping control with the Field dialog box.
 
@@ -177,31 +149,20 @@ GridDataBoundGridFilterBarExt class provides support to filter a column in DataB
 
 Following code example illustrates how to wire GridDataBoundGridFilterBarExt to Data Bound Grid.
 
-
-
+{% tabs %}
 {% highlight C# %}  
 
-
-
 private GridDataBoundGridFilterBarExt filterBar;
-
 filterBar = new GridDataBoundGridFilterBarExt();
-
 filterBar.WireGrid(this.gridDataBoundGrid1);
-
 {% endhighlight %}
-
 {% highlight vbnet %}  
 
-
-
 Private filterBar As GridDataBoundGridFilterBarExt
-
 filterBar = New GridDataBoundGridFilterBarExt()
-
 filterBar.WireGrid(Me.gridDataBoundGrid1)
-
 {% endhighlight %}
+{% endtabs %}
 
 Following screen shot illustrates how to filter a column in the Grid Data Bound Grid by its display member.
 
@@ -217,29 +178,20 @@ GroupingGridFilterBarExt class provides support to filter a column in the Grid G
 
 Following code example illustrates how to wire the GroupingGridFilterBarExt to the Grid Grouping control. 
 
+{% tabs %}
 {% highlight C# %}  
 
-
 private GroupingGridFilterBarExt gGCFilter;
-
 this.gGCFilter = new GroupingGridFilterBarExt();
-
 this.gGCFilter.WireGrid(this.gridGroupingControl1);
-
 {% endhighlight %}
-
-
 {% highlight vbnet %}  
 
-
 Private gGCFilter As GroupingGridFilterBarExt
-
 Me.gGCFilter = New GroupingGridFilterBarExt()
-
 Me.gGCFilter.WireGrid(Me.gridGroupingControl1)
-
 {% endhighlight %}
-
+{% endtabs %}
 
 Following screen shot illustrates how to filter a column in the Grid Grouping control by its display member.
  ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img9.jpeg) 
@@ -260,62 +212,41 @@ Set Allow filter to true when Grid Control is wired with GridOffice2007Filter to
 
 The following code illustrates how to add Excel Like Filter to the Grid filter bar.
 
+{% tabs %}
 {% highlight C# %}  
+GridOffice2007Filter filter;
 
-
-
-         GridOffice2007Filter filter;
-
-         private void showFilter_CheckedChanged(object sender, EventArgs e)
-
-        {
-
-            this.gridGroupingControl1.TableDescriptor.Columns[0].AllowFilter = true;
+ private void showFilter_CheckedChanged(object sender, EventArgs e)
+    {
+        this.gridGroupingControl1.TableDescriptor.Columns[0].AllowFilter = true;
 
             if (this.showFilter.Checked)
-
             {
-
                 filter.WireGrid(this.gridGroupingControl1);
-
             }
 
             else
-
             {
-
                 filter.UnWireGrid(this.gridGroupingControl1);
-
             }
-
         }
-
 {% endhighlight %}
-
 {% highlight vbnet %} 
+Private filter As GridOffice2007Filter
 
+Private Sub showFilter_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
+Me.gridGroupingControl1.TableDescriptor.Columns(0).AllowFilter = True
 
-
-    Private filter As GridOffice2007Filter
-
-    Private Sub showFilter_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-        Me.gridGroupingControl1.TableDescriptor.Columns(0).AllowFilter = True
-
-        If Me.showFilter.Checked Then
-
-            filter.WireGrid(Me.gridGroupingControl1)
+    If Me.showFilter.Checked Then
+        filter.WireGrid(Me.gridGroupingControl1)
 
         Else
-
-            filter.UnWireGrid(Me.gridGroupingControl1)
-
+          filter.UnWireGrid(Me.gridGroupingControl1)
         End If
-
     End Sub
-
 	 {% endhighlight %} 
-	
+{% endtabs %}
+
 N> GridOffice2007Filter can be unwired from the grid to disable Excel like filter.
 
 #### Specifying Value To Filter 
@@ -375,61 +306,40 @@ Set AllowFilter to True when the Grid control is wired with GridOffice2007Filter
 
 The following code illustrates how to add Excel-like filter to grid filter bar:
 
+{% tabs %}
 {% highlight C# %}  
-
-
-
 GridExcelFilter filter;
 
-         private void showFilter_CheckedChanged(object sender, EventArgs e)
+private void showFilter_CheckedChanged(object sender, EventArgs e)
+{
+   this.gridGroupingControl1.TableDescriptor.Columns[0].AllowFilter = true;
 
-        {
-
-            this.gridGroupingControl1.TableDescriptor.Columns[0].AllowFilter = true;
-
-            if (this.showFilter.Checked)
-
-            {
-
-                filter.WireGrid(this.gridGroupingControl1);
-
-            }
-
-            else
-
-            {
-
-                filter.UnWireGrid(this.gridGroupingControl1);
-
-            }
-
+       if (this.showFilter.Checked)
+       {
+            filter.WireGrid(this.gridGroupingControl1);
         }
 
+       else
+       {
+            filter.UnWireGrid(this.gridGroupingControl1);
+       }
+}
 {% endhighlight %}
-
 {% highlight vbnet %}  
-
-
 Private filter As GridExcelFilter
 
 Private Sub showFilter_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Me.gridGroupingControl1.TableDescriptor.Columns(0).AllowFilter = True
 
 If Me.showFilter.Checked Then
-
 filter.WireGrid(Me.gridGroupingControl1)
 
 Else
-
 filter.UnWireGrid(Me.gridGroupingControl1)
-
 End If
-
 End Sub
-
 {% endhighlight %} 
-
+{% endtabs %}
 
 ### GridExcelFilter Enhancement
 
@@ -445,26 +355,19 @@ The following screenshot shows the result of setting FilterByColor property in G
 
  The following code example shows how to set FilterByColor property for GridGroupingControl.
 
+{% tabs %}
 {% highlight C# %}  
-
 this.filter.AllowResize = true;
-
 this.filter.AllowFilterByColor = true;
-
-
 GridTableDescriptor td = this.gridGroupingControl1.TableDescriptor.Relations["ParentToChild"].ChildTableDescriptor;
 
 foreach (GridColumnDescriptor col in td.Columns)
-
 {
-
 col.AllowFilter = true;
-
 }
-
 this.filter.WireGrid(gridGroupingControl1);
-
 {% endhighlight %}
+{% endtabs %}
 
 AllowFilterByColor
 

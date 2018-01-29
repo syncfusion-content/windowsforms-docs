@@ -19,23 +19,13 @@ Following is the list of options/values that can be assigned to SortBehavior pro
 
 The following code example illustrates sorting of columns on a single click.
 
-
-
-
+{% tabs %}
 {% highlight c# %}
 this.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick;
-
-
 {% endhighlight  %}
-
-
-
 {% highlight vbnet %}
 Me.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Sorting_images/Sorting_img1.jpeg)
-
-
-

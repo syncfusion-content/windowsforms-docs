@@ -12,15 +12,19 @@ Merging is the process of combining two or more adjacent cells with the same dat
 
 {% tabs %}
 {% highlight c# %}
+
 //Setting the merge cell direction
 this.gridGroupingControl1.TableDescriptor.Appearance.AnyRecordFieldCell.MergeCell = GridMergeCellDirection.Both;
+
 // Set merge cells behavior for the Grid
 this.gridGroupingControl1.TableModel.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation | GridMergeCellsMode.MergeColumnsInRow | GridMergeCellsMode.MergeRowsInColumn;
 this.gridGroupingControl1.TableModel.Options.MergeCellsLayout = GridMergeCellsLayout.Grid;
 {% endhighlight %}
 {% highlight vb %}
+
 'Setting the merge cell direction
 Me.gridGroupingControl1.TableDescriptor.Appearance.AnyRecordFieldCell.MergeCell = GridMergeCellDirection.Both
+
 ' Set merge cells behavior for the Grid
 Me.gridGroupingControl1.TableModel.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation Or GridMergeCellsMode.MergeColumnsInRow Or GridMergeCellsMode.MergeRowsInColumn
 {% endhighlight %}
@@ -50,16 +54,21 @@ By default, when merging is applied in the cells, the grid’s bounds will be dr
 
 {% tabs %}
 {% highlight c# %}
+
+
 //Existing code to set merge cells.
 this.gridGroupingControl1.TableDescriptor.Columns["ColumnName"].Appearance.AnyRecordFieldCell.MergeCell = GridMergeCellDirection.Both;
 this.gridGroupingControl1.TableModel.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation;
+
 //Sets the range of cells.
 this.gridGroupingControl1.TableModel.Options.MergeCellsLayout = GridMergeCellsLayout.Grid;
 {% endhighlight %}
 {% highlight vb %}
+
 'Existing code to set merge cells.
 Me.gridGroupingControl1.TableDescriptor.Columns("ColumnName").Appearance.AnyRecordFieldCell.MergeCell = GridMergeCellDirection.Both
 Me.gridGroupingControl1.TableModel.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation
+
 'Sets the range of cells.
 Me.gridGroupingControl1.TableModel.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
 {% endhighlight %}
@@ -70,6 +79,7 @@ The merging can be delayed for specified range of cells by using [DelayMergeCell
 
 {% tabs %}
 {% highlight c# %}
+
 // Delaying the merging of cells for specified range
 this.gridGroupingControl1.TableModel.MergeCells.DelayMergeCells(GridRangeInfo.Rows(4, 5));
 
@@ -77,6 +87,7 @@ this.gridGroupingControl1.TableModel.MergeCells.DelayMergeCells(GridRangeInfo.Ro
 this.gridGroupingControl1.TableModel.MergeCells.EvaluateMergeCells(GridRangeInfo.Rows(4, 5));
 {% endhighlight %}
 {% highlight vb %}
+
 ' Delaying the merging of cells for specified range
 Me.gridGroupingControl1.TableModel.MergeCells.DelayMergeCells(GridRangeInfo.Rows(4, 5))
 
@@ -92,6 +103,7 @@ The [MergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Sync
 {% highlight c# %}
 GridRangeInfo range1 = this.gridGroupingControl1.TableModel.MergeCells.FindRange(5, 2);
 GridRangeInfo range2 = this.gridGroupingControl1.TableModel.MergeCells.FindRange(7, 9);
+
 // Display the MergeCells range
 MessageBox.Show("MergedRange for cell(5,2) is " + range1.Info.ToString()
                 + "\n" + "MergedRange for cell(7,9) is " + range2.RangeType.ToString());
@@ -99,6 +111,7 @@ MessageBox.Show("MergedRange for cell(5,2) is " + range1.Info.ToString()
 {% highlight vb %}
 Dim range1 As GridRangeInfo = Me.gridGroupingControl1.TableModel.MergeCells.FindRange(5, 2)
 Dim range2 As GridRangeInfo = Me.gridGroupingControl1.TableModel.MergeCells.FindRange(7, 9)
+
 ' Display the MergeCells range
 MessageBox.Show("MergedRange for cell(5,2) is " & range1.Info.ToString() & Constants.vbLf & "MergedRange for cell(7,9) is " & range2.RangeType.ToString())
 {% endhighlight %}
@@ -118,9 +131,11 @@ The below code snippet is used to merge the two columns with the different data,
 this.gridGroupingControl1.TableModel.QueryCanMergeCells += new GridQueryCanMergeCellsEventHandler(TableModel_QueryCanMergeCells);
 void TableModel_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventArgs e)
 {
+    
     // Checking whether it is already merged cells
     if (!e.Result)
     {
+    
         // Sets merging for two columns with different data
         if (e.Style1.CellIdentity.ColIndex == 1 && e.Style2.CellIdentity.ColIndex== 2)
         {
@@ -133,8 +148,10 @@ void TableModel_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventArg
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableModel.QueryCanMergeCells, AddressOf TableModel_QueryCanMergeCells
 Private Sub TableModel_QueryCanMergeCells(ByVal sender As Object, ByVal e As GridQueryCanMergeCellsEventArgs)
+    
     ' Checking whether it is already merged cells
     If Not e.Result Then
+    
         ' Sets merging for two columns with different data
         If e.Style1.CellIdentity.ColIndex = 1 AndAlso e.Style2.CellIdentity.ColIndex= 2 Then
             e.Result = True

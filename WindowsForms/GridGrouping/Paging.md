@@ -14,12 +14,14 @@ Paging is the process of splitting up of large records into a separate segments 
 {% highlight c# %}
 //Creating the object for Pager
 Pager pager = new Pager();
+
 //Wiring the pager to the Grid 
 pager.Wire(this.gridGroupingControl1, dataTable); // dataTable is the DataTable object
 {% endhighlight %}
 {% highlight vb %}
 'Creating the object for Pager
 Dim pager As New Pager()
+
 ' wiring the pager to the Grid 
 pager.Wire(Me.gridGroupingControl1, dataTable) ' dataTable is the DataTable object
 {% endhighlight %}
@@ -36,8 +38,10 @@ The size of the page that is number of records needs to be visible in each page 
 {% highlight c# %}
 //Creating the object for Pager
 Pager pager = new Pager();
+
 //Set the size  1000 records in each page
 pager.PageSize = 1000;
+
 //Add the paging support to the GridGroupingControl 
 pager.Wire(this.gridGroupingControl1, dataTable); // dataTable is the DataTable object
 {% endhighlight %}
@@ -45,8 +49,10 @@ pager.Wire(this.gridGroupingControl1, dataTable); // dataTable is the DataTable 
 {% highlight vb %}
 'Creating the object for Pager
 Dim pager As New Pager()
+
 ' Set the size  1000 records in each page
 pager.PageSize = 1000
+
 'Add the paging support to the GridGroupingControl 
 pager.Wire(Me.gridGroupingControl1, dataTable) ' dataTable is the DataTable object
 {% endhighlight %}
@@ -66,8 +72,10 @@ this.gridGroupingControl1.RecordNavigationBar.ArrowButtonClicked += new ArrowBut
 
 void RecordNavigationBar_ArrowButtonClicked(object sender, ArrowButtonEventArgs e)
 {
+
    if(e.Arrow == ArrowType.Previous)
    {          
+
        //Notify the button clicked on the page navigation bar
        MessageBox.Show("Current page is moved to previous page");
    }
@@ -78,7 +86,9 @@ void RecordNavigationBar_ArrowButtonClicked(object sender, ArrowButtonEventArgs 
 Private Me.gridGroupingControl1.RecordNavigationBar.ArrowButtonClicked += New ArrowButtonEventHandler(AddressOf RecordNavigationBar_ArrowButtonClicked)
 
 Private Sub RecordNavigationBar_ArrowButtonClicked(ByVal sender As Object, ByVal e As ArrowButtonEventArgs)
+
    If e.Arrow = ArrowType.Previous Then
+
        'Notify the button clicked on the page navigation bar
        MessageBox.Show("Current page is moved to previous page")
    End If
@@ -114,14 +124,18 @@ The filtering can be applied to the GridGroupingControl when the paging is enabl
 {% highlight c# %}
 //Display filter bar for the GridGroupingControl
 this.gridGroupingControl1.TopLevelGroupOptions.ShowFilterBar = true;
+
 //Enable filtering for all the columns 
+
 foreach (var column in this.gridGroupingControl1.TableDescriptor.Columns)
     column.AllowFilter = true;
 {% endhighlight %}
 {% highlight vb %}
 'Display filter bar for the GridGroupingControl
 Me.gridGroupingControl1.TopLevelGroupOptions.ShowFilterBar = True
+
 'Enable filtering for all the columns 
+
 For Each column In Me.gridGroupingControl1.TableDescriptor.Columns
     column.AllowFilter = True
 Next column
@@ -141,6 +155,5 @@ pager.Unwire(this.gridGroupingControl1);
 {% highlight vb %}
 'Remove the pager from grid
 pager.Unwire(Me.gridGroupingControl1)
-
 {% endhighlight %}
 {% endtabs %}

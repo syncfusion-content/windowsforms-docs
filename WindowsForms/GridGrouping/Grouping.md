@@ -15,6 +15,7 @@ If Grouping is enabled in GridGroupingControl, then there will be a specific are
 ![](Grouping_images/Grouping_img1.jpeg)
 
 The grouped columns are maintained by the [GroupedColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.TableDescriptor~GroupedColumns.html) collection. This collection defines the field to group and the sort. The collection can have multiple entries resulting in nested groups.
+
 {% tabs %}
 {% highlight c# %}
 // The column ‘Title’ will be grouped by using this code
@@ -25,7 +26,9 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title");
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title")
 {% endhighlight %}
 {% endtabs %}
+
 The `GroupDropArea` can be shown in the GridGroupingControl by enabling the [ShowGroupDropArea](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowGroupDropArea.html) property.
+
 {% tabs %}
 {% highlight c# %}
 //Enabling the GroupDropArea
@@ -46,6 +49,7 @@ Grouping can also be done at design time. After binding dataset to the grouping 
 
 ### Programmatic Grouping
 The data can be grouped by adding the column name to [GroupedColumns.Add](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.SortColumnDescriptorCollection~Add.html) method.
+
 {% tabs %}
 {% highlight c# %}
 // The column ‘Title’ will be grouped by using this code
@@ -56,9 +60,11 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title");
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title")
 {% endhighlight %}
 {% endtabs %}
+
 ![](Grouping_images/Grouping_img3.jpeg)
 
 By default, the grouping of a column sorts records in the ascending order of their `GroupedColumns` values. It is possible to specify the sort order while grouping. The code below arranges the data in the descending order of their Title field values.
+
 {% tabs %}
 {% highlight c# %}
 // The column ‘Title’ will be will be sorted in descending order
@@ -128,26 +134,30 @@ this.gridGroupingControl1.TableControlQueryAllowGroupByColumn += new GridQueryAl
 
 void gridGroupingControl1_TableControlQueryAllowGroupByColumn(object sender, GridQueryAllowGroupByColumnEventArgs e)
 {
+
     //Checking the column name
+
     if (e.Column == "Title")
     {
+
         //Disabling from grouping
         e.AllowGroupByColumn = false;
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControlQueryAllowGroupByColumn, AddressOf gridGroupingControl1_TableControlQueryAllowGroupByColumn
 
 Private Sub gridGroupingControl1_TableControlQueryAllowGroupByColumn(ByVal sender As Object, ByVal e As GridQueryAllowGroupByColumnEventArgs)
+
     'Checking the column name
+
     If e.Column = "Title" Then
+
         'Disabling from grouping
         e.AllowGroupByColumn = False
     End If
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -189,27 +199,32 @@ In this example, the grid is bound to a hierarchical dataset containing three ta
 {% highlight c# %}
 //Getting parent main table
 Table categoriesTable = this.gridGroupingControl1.Engine.Table;
+
 //Getting child table of categories table
 Table productsTable = categoriesTable.RelatedTables["Products"];
+
 //Getting child table of products table
 Table orderDetailsTable = productsTable.RelatedTables["OrdersDetails"];
 
 //Adding GroupDropArea for Products table
 this.gridGroupingControl1.AddGroupDropArea((GridTable)productsTable);
+
 //Adding GroupDropArea for OrdersDetails table
 this.gridGroupingControl1.AddGroupDropArea((GridTable)orderDetailsTable);
-
 {% endhighlight %}
 {% highlight vb %}
 'Getting parent main table
 Dim categoriesTable As Table = Me.gridGroupingControl1.Engine.Table
+
 'Getting child table of categories table
 Dim productsTable As Table = categoriesTable.RelatedTables("Products")
+
 'Getting child table of products table
 Dim orderDetailsTable As Table = productsTable.RelatedTables("OrdersDetails")
 
 'Adding GroupDropArea for Products table
 Me.gridGroupingControl1.AddGroupDropArea(CType(productsTable, GridTable))
+
 'Adding GroupDropArea for OrdersDetails table
 Me.gridGroupingControl1.AddGroupDropArea(CType(orderDetailsTable, GridTable))
 {% endhighlight %}
@@ -256,28 +271,30 @@ GroupDropArea can be accessed as a grid, events like [PrepareViewStyleInfo](http
 foreach (Control ctrl in this.gridGroupingControl1.GroupDropPanel.Controls)
 {
     GridGroupDropArea groupDropArea = ctrl as GridGroupDropArea;
+
     switch (groupDropArea.Model.Table.TableDescriptor.Name)
     {
+
         case "Customers":
             groupDropArea.BackColor = Color.DarkOliveGreen;
             groupDropArea.PrepareViewStyleInfo += new System.EventHandler(ParentTable_PrepareViewStyleInfo);
-
             break;
+
         case "Orders":
             groupDropArea.BackColor = Color.DarkOliveGreen;
             groupDropArea.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(ChildTable_PrepareViewStyleInfo);
             break;
     }
 }
-
 this.gridGroupingControl1.Splitter.BackColor = Color.IndianRed;
-
 {% endhighlight %}
 {% highlight vb %}
 
 For Each ctrl As Control In Me.gridGroupingControl1.GroupDropPanel.Controls
     Dim groupDropArea As GridGroupDropArea = TryCast(ctrl, GridGroupDropArea)
+
     Select Case groupDropArea.Model.Table.TableDescriptor.Name
+
         Case "Customers"
             groupDropArea.BackColor = Color.DarkOliveGreen
             AddHandler groupDropArea.PrepareViewStyleInfo, AddressOf ParentTable_PrepareViewStyleInfo
@@ -290,11 +307,15 @@ Next ctrl
 Me.gridGroupingControl1.Splitter.BackColor = Color.IndianRed
 {% endhighlight %}
 {% endtabs %}
+
 The below example shows the Parent table’s `GridGroupDropArea` is customized,
+
 {% tabs %}
 {% highlight c# %}
 Private Sub ParentTable_PrepareViewStyleInfo(ByVal sender As object, ByVal e As GridPrepareViewStyleInfoEventArgs);
+
     //Sets color to the text displaying table name.
+
     if (e.ColIndex == 2 && e.RowIndex == 2)
     {
         e.Style.Text = "Parent";
@@ -302,28 +323,35 @@ Private Sub ParentTable_PrepareViewStyleInfo(ByVal sender As object, ByVal e As 
         e.Style.TextColor = Color.Yellow;
         e.Style.CellType = "Static";
         e.Style.HorizontalAlignment = GridHorizontalAlignment.Left;
+
         //e.Style.Enabled = false;
+
     //Sets color to the drop area.
     }
+
     else if (e.Style.Text.StartsWith("Drag a"))
     {
         e.Style.Text = "Drag and Drop Parent Table Column headers";
         e.Style.Font.Italic = true;
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
 Private Sub ParentTable_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
+
     'Sets color to the text displaying table name.
+
     If e.ColIndex = 2 AndAlso e.RowIndex = 2 Then
         e.Style.Text = "Parent"
         e.Style.Font.Bold = True
         e.Style.TextColor = Color.Yellow
         e.Style.CellType = "Static"
         e.Style.HorizontalAlignment = GridHorizontalAlignment.Left
+
         'e.Style.Enabled = false;
+
     'Sets color to the drop area.
+
     ElseIf e.Style.Text.StartsWith("Drag a") Then
         e.Style.Text = "Drag and Drop Parent Table Column headers"
         e.Style.Font.Italic = True
@@ -333,18 +361,23 @@ End Sub
 {% endtabs %}
 
 The below example shows the child table’s `GridGroupDropArea` is customized,
+
 {% tabs %}
 {% highlight c# %}
 private void ChildTable_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
 {
+
     //Sets color to the text displaying table name.
+
     if (e.ColIndex == 2 && e.RowIndex == 2)
     {
         e.Style.Text = "Child ";
         e.Style.Font.Bold = true;
         e.Style.TextColor = Color.Yellow;
         e.Style.HorizontalAlignment = GridHorizontalAlignment.Left;
+
         //e.Style.Enabled = false;
+
     //Sets color to the drop area.
     }
     else if (e.Style.Text.StartsWith("Drag a"))
@@ -358,20 +391,24 @@ private void ChildTable_PrepareViewStyleInfo(object sender, GridPrepareViewStyle
 {% endhighlight %}
 {% highlight vb %}
 Private Sub ChildTable_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
+
     'Sets color to the text displaying table name.
+
     If e.ColIndex = 2 AndAlso e.RowIndex = 2 Then
         e.Style.Text = "Child "
         e.Style.Font.Bold = True
         e.Style.TextColor = Color.Yellow
         e.Style.HorizontalAlignment = GridHorizontalAlignment.Left
+
         'e.Style.Enabled = false;
+
     'Sets color to the drop area.
+
     ElseIf e.Style.Text.StartsWith("Drag a") Then
         e.Style.Text = "Drag and Drop Child Table Column headers"
         e.Style.TextColor = Color.Orange
         e.Style.Font.Italic = True
     End If
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -394,7 +431,6 @@ this.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Bo
 
 //Right alignment for GroupDropArea.
 this.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Right;
-
 {% endhighlight %}
 {% highlight vb %}
 'Top alignment for GroupDropArea.
@@ -408,7 +444,6 @@ Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Bott
 
 'Right alignment for GroupDropArea.
 Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Right
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -451,13 +486,15 @@ Few features supported with `HierarchicalGroupDropArea` are [Dynamic Resizing](h
 
 //Supports dynamic removal of the column from being grouped (adds support in default GroupDropArea too).
 this.gridGroupingControl1. GridGroupDropArea.AllowRemove = true;
+
 //Supports switching tree line placement to the top and bottom between hierarchy levels.
 this.gridGroupingControl1.GridGroupDropArea.TreeLinePlacement = TreeLinePlacement.Bottom;
+
 //Supports resizing GroupDropArea dynamically up to the last level of the hierarchy.
 this.gridGroupingControl1.GridGroupDropArea.DynamicResizing = true;
+
 //Supports setting tree lines to a desired color.
 this.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red;
-
 {% endhighlight %}
 {% highlight vb %}
 
@@ -472,7 +509,6 @@ Me.gridGroupingControl1.GridGroupDropArea.DynamicResizing = True
 
 'Supports setting tree lines to a desired color.
 Me.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -486,21 +522,17 @@ Using Multi-Column Grouping, GridGroupingControl will organize the data in a hie
 
 {% tabs %}
 {% highlight c# %}
-
 //Adding Multiple columns to the GroupedColumns collection in the TableDescriptor
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.AddRange(new Syncfusion.Grouping.SortColumnDescriptor[] {
 new Syncfusion.Grouping.SortColumnDescriptor("Title", System.ComponentModel.ListSortDirection.Ascending),
 new Syncfusion.Grouping.SortColumnDescriptor("Country", System.ComponentModel.ListSortDirection.Ascending)});
-
 {% endhighlight %}
 {% highlight vb %}
-
 'Adding Multiple columns to the GroupedColumns collection in the TableDescriptor
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.AddRange(New Syncfusion.Grouping.SortColumnDescriptor() { New Syncfusion.Grouping.SortColumnDescriptor("Title", System.ComponentModel.ListSortDirection.Ascending), New Syncfusion.Grouping.SortColumnDescriptor("Country", System.ComponentModel.ListSortDirection.Ascending)})
-
-
 {% endhighlight %}
 {% endtabs %}
+
 ![](Grouping_images/Grouping_img16.jpeg)
 
 ## Custom Grouping
@@ -513,28 +545,38 @@ The below code explains the implementation of `IGroupByColumnCategorizer` interf
 {% tabs %}
 {% highlight c# %}
 //defines custom categorizer
+
  public class CustomCategorizer : Syncfusion.Grouping.IGroupByColumnCategorizer
  {
+
      //defines a group and returns a group category object (here returns 1 through 5)
+
      public static int GetCategory(int i)
      {
          int value = 0;
+
          if (i < 10)
              value = 1;
+
          else if (i >= 10 && i < 20)
              value = 2;
+
          else if (i >= 20 && i < 30)
              value = 3;
+
          else if (i >= 30 && i < 40)
              value = 4;
+
          else
              value = 5;
          return value;
      }
+
      public object GetGroupByCategoryKey(SortColumnDescriptor column, bool isForeignKey, Record record)
      {
          return GetCategory(int.Parse(record.GetValue(column).ToString()));
      }
+
      public int CompareCategoryKey(SortColumnDescriptor column, bool isForeignKey, object category, Record record)
      {
          return GetCategory(int.Parse(record.GetValue(column).ToString())) - (int)category;
@@ -544,32 +586,41 @@ The below code explains the implementation of `IGroupByColumnCategorizer` interf
 {% endhighlight %}
 {% highlight vb %}
 'defines custom categorizer
+ 
  Public Class CustomCategorizer
      Implements Syncfusion.Grouping.IGroupByColumnCategorizer
+ 
      'defines a group and returns a group category object (here returns 1 through 5)
+ 
      Public Shared Function GetCategory(ByVal i As Integer) As Integer
          Dim value As Integer = 0
+ 
          If i < 10 Then
              value = 1
+ 
          ElseIf i >= 10 AndAlso i < 20 Then
              value = 2
+ 
          ElseIf i >= 20 AndAlso i < 30 Then
              value = 3
+ 
          ElseIf i >= 30 AndAlso i < 40 Then
              value = 4
+ 
          Else
              value = 5
          End If
          Return value
      End Function
+ 
      Public Function GetGroupByCategoryKey(ByVal column As SortColumnDescriptor, ByVal isForeignKey As Boolean, ByVal record As Record) As Object
          Return GetCategory(Integer.Parse(record.GetValue(column).ToString()))
      End Function
+ 
      Public Function CompareCategoryKey(ByVal column As SortColumnDescriptor, ByVal isForeignKey As Boolean, ByVal category As Object, ByVal record As Record) As Integer
          Return GetCategory(Integer.Parse(record.GetValue(column).ToString())) - CInt(Fix(category))
      End Function
  End Class
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -580,12 +631,16 @@ The below code explains the implementation of `IComparer` interface.
 //make sure the string integers are sorted as integers instead of strings
 public class CustomComparer : IComparer
 {
+
     public int Compare(object x, object y)
     {
+
         if (x == null)
             return -1;
+
         else if (y == null)
             return 100;
+
         else
         {
             int i = int.Parse(x.ToString());
@@ -594,17 +649,21 @@ public class CustomComparer : IComparer
         }
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
 'make sure the string integers are sorted as integers instead of strings
+
 Public Class CustomComparer
     Implements IComparer
+
     Public Function Compare(ByVal x As Object, ByVal y As Object) As Integer
+
         If x Is Nothing Then
             Return -1
+
         ElseIf y Is Nothing Then
             Return 100
+
         Else
             Dim i As Integer = Integer.Parse(x.ToString())
             Dim j As Integer = Integer.Parse(y.ToString())
@@ -644,28 +703,35 @@ this.gridGroupingControl1.QueryCellStyleInfo += new Syncfusion.Windows.Forms.Gri
 
 private void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEvent
 {
+
     if (e.TableCellIdentity.GroupedColumn != null && e.TableCellIdentity.DisplayElement.ParentGroup != null
         && e.TableCellIdentity.DisplayElement.ParentGroup.Category is int)
     {
+
         if (e.TableCellIdentity.DisplayElement is CaptionRow
             && e.TableCellIdentity.GroupedColumn.Name == "Col2")
         {
             int cat = (int)e.TableCellIdentity.DisplayElement.ParentGroup.Category;
             string value = "";
+
             switch (cat)
             {
                 case 1:
                     value = " < 10";
                     break;
+
                 case 2:
                     value = "10 - 19";
                     break;
+
                 case 3:
                     value = "20 - 29";
                     break;
+
                 case 4:
                     value = "30 - 39";
                     break;
+
                 case 5:
                     value = " >= 40";
                     break;
@@ -674,25 +740,31 @@ private void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.W
         }
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
+
     If e.TableCellIdentity.GroupedColumn IsNot Nothing AndAlso e.TableCellIdentity.DisplayElement.ParentGroup IsNot Nothing AndAlso TypeOf e.TableCellIdentity.DisplayElement.ParentGroup.Category Is Integer Then
+
         If TypeOf e.TableCellIdentity.DisplayElement Is CaptionRow AndAlso e.TableCellIdentity.GroupedColumn.Name = "Col2" Then
             Dim cat As Integer = CInt(Fix(e.TableCellIdentity.DisplayElement.ParentGroup.Category))
             Dim value As String = ""
+
             Select Case cat
                 Case 1
                     value = " < 10"
+
                 Case 2
                     value = "10 - 19"
+
                 Case 3
                     value = "20 - 29"
+
                 Case 4
                     value = "30 - 39"
+
                 Case 5
                     value = " >= 40"
             End Select
@@ -700,7 +772,6 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
         End If
     End If
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -718,22 +789,18 @@ The headers and footers of a group can be used to display any information that i
 
 {% tabs %}
 {% highlight c# %}
-
 // Will enable the Group Header for the top most group.
 this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupHeader = true;
 
 // Will enable the Group Footer for the top most group.
 this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupFooter = true;
-
 {% endhighlight %}
 {% highlight vb %}
-
 'Will enable the Group Header for the top most group.
 Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupHeader = True
 
 'Will enable the Group Footer for the top most group.
 Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupFooter = True
-
 {% endhighlight %}
 {% endtabs %}
 Also the height of the header and footer of the groups can be changed by using the **HeaderSectionHeight** and **FooterSectionHeight** properties.
@@ -743,10 +810,8 @@ this.gridGroupingControl1.TableOptions.GroupHeaderSectionHeight = 20;
 this.gridGroupingControl1.TableOptions.GroupFooterSectionHeight = 20;
 {% endhighlight %}
 {% highlight vb %}
-
 Me.gridGroupingControl1.TableOptions.GroupHeaderSectionHeight = 20
 Me.gridGroupingControl1.TableOptions.GroupFooterSectionHeight = 20
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -759,20 +824,18 @@ Group headers and footers can be populated by handling `QueryCellStyleInfo` even
 
 {% tabs %}
 {% highlight c# %}
-
 // Enable Group Preview section.
 this.gridGroupingControl1.TopLevelGroupOptions.ShowGroupPreview = true;
+
 // Sets the height for the Group Preview section.
 this.gridGroupingControl1.TableOptions.GroupPreviewSectionHeight = 50;
-
 {% endhighlight %}
 {% highlight vb %}
-
 'Enable Group Preview section.
 Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupPreview = True
+
 'Sets the height for the Group Preview section.
 Me.gridGroupingControl1.TableOptions.GroupPreviewSectionHeight = 50
-
 {% endhighlight %}
 {% endtabs %}
 ![](Grouping_images/Grouping_img19.jpeg)
@@ -784,7 +847,6 @@ The [ChildGroupOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/gr
 
 {% tabs %}
 {% highlight c# %}
-
 // Enables the GridGroupingControl to allow new records
 this.gridGroupingControl1.TableDescriptor.AllowNew = true;
 
@@ -793,8 +855,6 @@ this.gridGroupingControl1.ChildGroupOptions.ShowAddNewRecordAfterDetails = true;
 
 // Enables the AddNewRecord at bottom of the group
 this.gridGroupingControl1.ChildGroupOptions.ShowAddNewRecordBeforeDetails = true;
-
-
 {% endhighlight %}
 {% highlight vb %}
 ' Enables the GridGroupingControl to allow new records
@@ -805,7 +865,6 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowAddNewRecordAfterDetails = True
 
 ' Enables the AddNewRecord at bottom of the group
 Me.gridGroupingControl1.ChildGroupOptions.ShowAddNewRecordBeforeDetails = True
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -876,11 +935,14 @@ this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventH
 
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupFooterSectionCell || e.TableCellIdentity.TableCellType == GridTableCellType.GroupHeaderSectionCell)
     {
         e.Style.Enabled = false;
+
         if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupFooterSectionCell)
         e.Style.Text = "The details in the footer can be placed by enabling ShowGroupFooter and handling QueryCellStyleInfo";
+
         if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupHeaderSectionCell)
         e.Style.Text = "The details in the header can be placed by enabling ShowGroupHeader and handling QueryCellStyleInfo";
     }
@@ -897,9 +959,11 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
 
 If e.TableCellIdentity.TableCellType = GridTableCellType.GroupFooterSectionCell OrElse e.TableCellIdentity.TableCellType = GridTableCellType.GroupHeaderSectionCell Then
 e.Style.Enabled = False
+
 If e.TableCellIdentity.TableCellType = GridTableCellType.GroupFooterSectionCell Then
 e.Style.Text = "The details in the footer can be placed by enabling ShowGroupFooter and handling QueryCellStyleInfo"
 End If
+
 If e.TableCellIdentity.TableCellType = GridTableCellType.GroupHeaderSectionCell Then
 e.Style.Text = "The details in the header can be placed by enabling ShowGroupHeader and handling QueryCellStyleInfo"
 End If
@@ -989,10 +1053,12 @@ IterateGroup(g);
 IterateGroup(this.gridGroupingControl1.Table.TopLevelGroup);
 
 //IterateThrough method iterates through records and nested groups.
+
 public void IterateThrough(Group g)
 {
     System.Diagnostics.Trace.WriteLine("GroupLevel = "+g.GroupLevel);
     System.Diagnostics.Trace.WriteLine(g.Info);
+
     foreach(Record r in g.Records)
     {
         System.Diagnostics.Trace.WriteLine(r.Info);
@@ -1014,12 +1080,15 @@ IterateThrough(g)
 IterateThrough(Me.gridGroupingControl1.Table.TopLevelGroup)
 
 'IterateThrough method iterates through the records and nested groups.
+
 Public Sub IterateThrough(ByVal g As Group)
 System.Diagnostics.Trace.WriteLine("GroupLevel = "+ g.GroupLevel.ToString())
 System.Diagnostics.Trace.WriteLine(g.Info)
+
 For Each r As Record In g.Records
 System.Diagnostics.Trace.WriteLine(r.Info)
 Next r
+
 For Each gr As Group In g.Groups
 IterateThrough(gr)
 Next gr
@@ -1078,18 +1147,23 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.Changing += new ListPro
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.Changed += new ListPropertyChangedEventHandler(GroupedColumns_Changed);
 
 //Event Handlers.
+
 //GroupedColumns_Changing event.
+
 void GroupedColumns_Changing(object sender, ListPropertyChangedEventArgs e)
 {
 SortColumnDescriptor sortColumnDescriptor = e.Item as SortColumnDescriptor;
+
 if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Insert)
 Console.WriteLine("Column Added - {0}", sortColumnDescriptor.Name);
 }
 
 //GroupedColumns_Changed event.
+
 void GroupedColumns_Changed(object sender, ListPropertyChangedEventArgs e)
 {
 SortColumnDescriptor sortColumnDescriptor = e.Item as SortColumnDescriptor;
+
 if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Remove)
 Console.WriteLine("Column Removed - {0}", sortColumnDescriptor.Name);
 }
@@ -1099,17 +1173,22 @@ Console.WriteLine("Column Removed - {0}", sortColumnDescriptor.Name);
 AddHandler gridGroupingControl1.TableDescriptor.GroupedColumns.Changing, AddressOf GroupedColumns_Changing
 
 'Event Handlers.
+
 'GroupedColumns_Changing event.
+
 Private Sub GroupedColumns_Changed(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
 Dim sortColumnDescriptor As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
+
 If e.Action = ListPropertyChangedType.Insert Then
 Console.WriteLine("Column Added - {0}" + sortColumnDescriptor.Name)
 End If
 End Sub
 
 'GroupedColumns_Changed event.
+
 Private Sub GroupedColumns_Changing(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
 Dim sortColumnDescriptor As SortColumnDescriptor = CType(e.Item, SortColumnDescriptor)
+
 If e.Action = ListPropertyChangedType.Remove Then
 Console.WriteLine("Column Removed - {0}" + sortColumnDescriptor.Name)
 End If

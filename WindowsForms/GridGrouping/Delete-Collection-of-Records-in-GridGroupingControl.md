@@ -22,15 +22,13 @@ For these methods DeleteAll have been implemented to support delete all the reco
 
 The following code illustrates deleting all the records.
 
+{% tabs %}
 {% highlight C# %} 
 
-
-
 //Deletes all the records from the grid table.
-
 this.gridGroupingControl1.Table.Records.DeleteAll();
-
  {% endhighlight %}
+{% endtabs %}
 
 When the code runs, Deleting all records is bound to Delete All button.
 
@@ -38,14 +36,13 @@ When the code runs, Deleting all records is bound to Delete All button.
 
 The following code illustrates deleting records manually selected.  
 
+{% tabs %}
 {% highlight C# %}  
 
-
-
 //Delete selected records from the grid table. 
-
 this.gridGroupingControl1.Table.SelectedRecords.DeleteAll();
 {% endhighlight %}
+{% endtabs %}
 
 When the code runs, deleting manually selected record is bound to Delete All[Selected] button  
 
@@ -56,22 +53,14 @@ The following code illustrates deleting Specified records.
 N> Parameter – Specify the collection of records that needs to be deleted.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
-
-
 //Deletes the specified records from the table. 
-
  this.gridGroupingControl1.Table.Records.DeleteRecords(rec);
- 
-{% endhighlight %}
+ {% endhighlight %}
+{% endtabs %}
 
 When the code runs, deleting specified records are bound to Delete Selected Records button. 
 
- ![](Delete-Collection-of-Records-in-GridGroupingControl_images/Delete-Collection-of-Records-in-GridGroupingControl_img2.png) 
-
-
-
-
-
+ ![](Delete-Collection-of-Records-in-GridGroupingControl_images/Delete-Collection-of-Records-in-GridGroupingControl_img2.png)

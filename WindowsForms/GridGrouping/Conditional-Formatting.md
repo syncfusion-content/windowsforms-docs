@@ -32,6 +32,7 @@ The conditional formatting can be programmatically added to the GridGroupingCont
 {% tabs %}
 {% highlight c# %}
 //Define Conditional Format Descriptor and specify filter criteria and style to be applied.
+
 //Applies the following style to the records whose CustomerID starts with 'A'.
 GridConditionalFormatDescriptor format1 = new GridConditionalFormatDescriptor();
 format1.Appearance.AnyRecordFieldCell.Interior = new BrushInfo(Color.FromArgb(255, 191, 52));
@@ -54,6 +55,7 @@ this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(format2);
 {% endhighlight %}
 {% highlight vb %}
 'Define Conditional Format Descriptor and specify filter criteria and style to be applied.
+
 'Applies the following style to the records whose CustomerID starts with 'A'.
 Dim format1 As New GridConditionalFormatDescriptor()
 format1.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.FromArgb(255, 191, 52))
@@ -95,6 +97,7 @@ conditionalFormat1.Expression = "[City]  Like \'L*\' ";
 GridConditionalFormatDescriptor conditionalFormat2 = new GridConditionalFormatDescriptor();
 conditionalFormat2.Appearance.RecordPreviewCell.Interior = new BrushInfo(Color.FromArgb(102, 110, 152));
 conditionalFormat2.Expression = "[CompanyName]  Like \'A*\' ";
+
 //Adding conditional format to the grid
 this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalFormat1);
 this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalFormat2);
@@ -110,6 +113,7 @@ conditionalFormat1.Expression = "[City]  Like 'L*' "
 Dim conditionalFormat2 As New GridConditionalFormatDescriptor()
 conditionalFormat2.Appearance.RecordPreviewCell.Interior = New BrushInfo(Color.FromArgb(102, 110, 152))
 conditionalFormat2.Expression = "[CompanyName]  Like 'A*' "
+
 'Adding conditional format to the grid
 Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalFormat1)
 Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalFormat2)
@@ -162,6 +166,7 @@ The cells can be formatted dynamically based on the given condition by using the
 this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.Style.Text.StartsWith("A"))
     {
         e.Style.BackColor = Color.LightGreen;
@@ -170,7 +175,9 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleIn
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
+
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+
     If e.Style.Text.StartsWith("A") Then
         e.Style.BackColor = Color.LightGreen
     End If
@@ -212,24 +219,32 @@ The data bar rule can be added programmatically by defining `ConditionalFormatDa
 {% highlight c# %}
 //Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
 GridConditionalFormatDescriptor conditionalDescriptor = new GridConditionalFormatDescriptor();
+
 //object for data bar rule
 ConditionalFormatDataBarRule conditionDataBarRule1 = new ConditionalFormatDataBarRule();
+
 //Assigning column for data bar
 conditionDataBarRule1.ColumnName = "Profit";
+
 //Adding the rule to rules collection
 conditionalDescriptor.Rules.Add(conditionDataBarRule1);
+
 //Adding descriptor.
 this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
 Dim conditionalDescriptor As New GridConditionalFormatDescriptor()
+
 'object for data bar rule
 Dim conditionDataBarRule1 As New ConditionalFormatDataBarRule()
+
 'Assigning column for data bar
 conditionDataBarRule1.ColumnName = "Profit"
+
 'Adding the rule to rules collection
 conditionalDescriptor.Rules.Add(conditionDataBarRule1)
+
 'Adding descriptor.
 Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalDescriptor)
 {% endhighlight %}
@@ -247,16 +262,20 @@ N> If `ConditionalFormatDataBarRule.AutoCalculateMinMax` is set as `false`, then
 {% tabs %}
 {% highlight c# %}
 ConditionalFormatDataBarRule dataBarRule = new ConditionalFormatDataBarRule();
+
 //setting automatic calculation enable or disable.
 dataBarRule.AutoCalculateMinMax = false;
+
 //Setting Maximum and minimum values
 dataBarRule.Maximum = 50;
 dataBarRule.Minimum = -10;
 {% endhighlight %}
 {% highlight vb %}
 Dim dataBarRule As New ConditionalFormatDataBarRule()
+
 'setting automatic calculation enable or disable.
 dataBarRule.AutoCalculateMinMax = False
+
 'Setting Maximum and minimum values
 dataBarRule.Maximum = 50
 dataBarRule.Minimum = -10
@@ -271,6 +290,7 @@ If no colors assigned for positive and negative bars, it will take the below def
 {% tabs %}
 {% highlight c# %}
 ConditionalFormatDataBarRule dataBarRule = new ConditionalFormatDataBarRule();
+
 //Setting appearance for Positive cells.
 dataBarRule.PositiveBar.FillStyle = FillStyles.Gradient;
 dataBarRule.PositiveBar.GradientFillColor1 = Color.FromArgb(255, 99, 195, 132);
@@ -312,6 +332,7 @@ To apply solid fill color for data bars, it is necessary to choose [ConditionalF
 //Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
 GridConditionalFormatDescriptor ConditionalDescriptor1 = new GridConditionalFormatDescriptor();
 ConditionalFormatDataBarRule dataBarRule = new ConditionalFormatDataBarRule();
+
 //Setting appearance for Positive cells.
 dataBarRule.PositiveBar.FillStyle = FillStyle.Solid;
 dataBarRule.PositiveBar.SolidFillColor = Color.Purple;
@@ -324,6 +345,7 @@ dataBarRule.NegativeBar.BorderColor = Color.Orange;
 	
 //Adding DataBar Rule to the ConditionalFormatDescriptor.
 ConditionalDescriptor1.Rules.Add(dataBarRule);
+
 //Adding GridConditionalFormatDescriptor to GridGroupingControl.
 this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDescriptor1);
 {% endhighlight %}
@@ -331,6 +353,7 @@ this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDesc
 'Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
 Dim ConditionalDescriptor1 As New GridConditionalFormatDescriptor()
 Dim dataBarRule As New ConditionalFormatDataBarRule()
+
 'Setting appearance for Positive cells.
 dataBarRule.PositiveBar.FillStyle = FillStyle.Solid
 dataBarRule.PositiveBar.SolidFillColor = Color.Purple
@@ -343,6 +366,7 @@ dataBarRule.NegativeBar.BorderColor = Color.Orange
 
 'Adding DataBar Rule to the ConditionalFormatDescriptor.
 ConditionalDescriptor1.Rules.Add(dataBarRule)
+
 'Adding GridConditionalFormatDescriptor to GridGroupingControl.
 Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDescriptor1)
 {% endhighlight %}
@@ -358,6 +382,7 @@ Choose `FillStyle` as `Gradient` to apply gradient colors for both positive and 
 //Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
 GridConditionalFormatDescriptor ConditionalDescriptor1 = new GridConditionalFormatDescriptor();
 ConditionalFormatDataBarRule dataBarRule = new ConditionalFormatDataBarRule();
+
 //Setting appearance for Positive cells.
 dataBarRule.PositiveBar.FillStyle = FillStyle.Gradient;
 dataBarRule.PositiveBar.GradientFillColor1 = Color.Purple;
@@ -372,6 +397,7 @@ dataBarRule.NegativeBar.BorderColor = Color.Orange;
 
 //Adding DataBar Rule to the ConditionalFormatDescriptor.
 ConditionalDescriptor1.Rules.Add(conditionDataBarRule1);
+
 //Adding GridConditionalFormatDescriptor to GridGroupingControl.
 this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDescriptor1);
 {% endhighlight %}
@@ -379,6 +405,7 @@ this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDesc
 'Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
 Dim ConditionalDescriptor1 As New GridConditionalFormatDescriptor()
 Dim dataBarRule As New ConditionalFormatDataBarRule()
+
 'Setting appearance for Positive cells.
 dataBarRule.PositiveBar.FillStyle = FillStyle.Gradient
 dataBarRule.PositiveBar.GradientFillColor1 = Color.Purple
@@ -393,6 +420,7 @@ dataBarRule.NegativeBar.BorderColor = Color.Orange
 
 'Adding DataBar Rule to the ConditionalFormatDescriptor.
 ConditionalDescriptor1.Rules.Add(conditionDataBarRule1)
+
 'Adding GridConditionalFormatDescriptor to GridGroupingControl.
 Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDescriptor1)
 {% endhighlight %}
@@ -457,12 +485,14 @@ The rule applied for the specific column can be retrieved by using the [GridCond
 {% highlight c# %}
 //Getting conditional format descriptor.
 GridConditionalFormatDescriptor conditionalDescriptor = this.gridGroupingControl1.TableDescriptor.ConditionalFormats[0]; 
+ 
  // Gets the rule applied to the Unit Price column.
 ConditionalFormatDataBarRule  rule = conditionalDescriptor.GetRule("UnitPrice") as ConditionalFormatDataBarRule; 
 {% endhighlight %}
 {% highlight vb %}
 'Getting conditional format descriptor.
 Dim conditionalDescriptor As GridConditionalFormatDescriptor = Me.gridGroupingControl1.TableDescriptor.ConditionalFormats(0)
+
  ' Gets the rule applied to the Unit Price column.
 Dim rule As ConditionalFormatDataBarRule = TryCast(conditionalDescriptor.GetRule("UnitPrice"), ConditionalFormatDataBarRule)
 {% endhighlight %}
@@ -479,16 +509,20 @@ When there is no expression, data bar will be drawn for all the cell values in t
 {% highlight c# %}
 //Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
 GridConditionalFormatDescriptor ConditionalDescriptor1 = new Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor();
+
 //Define Expression for GridConditionalFormatDescriptor.
 gridConditionalFormatDescriptor1.Expression = "[UnitPrice] > '0' AND [UnitPrice] < '70' ";
+
 //Adding ConditionalFormatDescriptor with ConditionalFormats collection
 this.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDescriptor1);
 {% endhighlight %}
 {% highlight vb %}
 'Initialize the GridConditionalFormatDescriptor and ConditionalFormatDataBarRule.
 Dim gridConditionalFormatDescriptor1 As New Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor()
+
 'Define Expression for GridConditionalFormatDescriptor.
 gridConditionalFormatDescriptor1.Expression = "[UnitPrice] > '0' AND [UnitPrice] < '70' "
+
 'Adding GridConditionalFormatDescriptor with TableDescriptor.ConditionalFormats collection
 Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(gridConditionalFormatDescriptor1)
 {% endhighlight %}
@@ -504,15 +538,19 @@ Data Bar can be cleared by removing `ConditionalFormatDataBarRule` objects from 
 {% highlight c# %}
 //Getting conditional format descriptor.
 GridConditionalFormatDescriptor conditionalDescriptor = this.gridGroupingControl1.TableDescriptor.ConditionalFormats[0]; 
+ 
  // Get the rule applied to the Unit Price column.
 ConditionalFormatDataBarRule  rule = conditionalDescriptor.GetRule("UnitPrice") as ConditionalFormatDataBarRule; 
+
 //Removing conditionalFormatDataBarRule 
 conditionalDescriptor.Rules.Remove(rule);
 {% endhighlight %}
 {% highlight vb %}
 Dim conditionalDescriptor As GridConditionalFormatDescriptor = Me.gridGroupingControl1.TableDescriptor.ConditionalFormats(0)
+
  ' Get the rule applied to the Unit Price column.
 Dim rule As ConditionalFormatDataBarRule = TryCast(conditionalDescriptor.GetRule("UnitPrice"), ConditionalFormatDataBarRule)
+
 'Removing conditionalFormatDataBarRule 
 conditionalDescriptor.Rules.Remove(rule)
 {% endhighlight %}

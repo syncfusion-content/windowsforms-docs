@@ -48,6 +48,7 @@ this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventH
 
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
+
    if(e.TableCellIdentity.TableCellType == GridTableCellType.RecordPreviewCell)
    {
        Element el = e.TableCellIdentity.DisplayElement;
@@ -61,6 +62,7 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleIn
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+
    If e.TableCellIdentity.TableCellType = GridTableCellType.RecordPreviewCell Then
 	   Dim el As Element = e.TableCellIdentity.DisplayElement
 	   e.Style.CellValue = "Preview notes for Record (" & el.ParentTableDescriptor.Fields(0).Name & ": " & el.ParentRecord.GetValue(el.ParentTableDescriptor.Fields(0).Name) & ")"
@@ -131,11 +133,11 @@ this.gridGroupingControl1.QueryCellStyleInfo += new GridTableCellStyleInfoEventH
 
 void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleInfoEventArgs e)
 {
+
     if (e.TableCellIdentity.TableCellType == GridTableCellType.GroupPreviewCell)
     {
         Element el = e.TableCellIdentity.DisplayElement;
         e.Style.CellValue = "Preview notes for Group (" + el.ParentGroup.Name + ": " + el.ParentGroup.Category.ToString() + ")";
-
     }
 }  
 {% endhighlight %}
@@ -143,10 +145,10 @@ void gridGroupingControl1_QueryCellStyleInfo(object sender, GridTableCellStyleIn
 AddHandler gridGroupingControl1.QueryCellStyleInfo, AddressOf gridGroupingControl1_QueryCellStyleInfo
 
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As GridTableCellStyleInfoEventArgs)
+
 	If e.TableCellIdentity.TableCellType = GridTableCellType.GroupPreviewCell Then
 		Dim el As Element = e.TableCellIdentity.DisplayElement
 		e.Style.CellValue = "Preview notes for Group (" & el.ParentGroup.Name & ": " & el.ParentGroup.Category.ToString() & ")"
-
 	End If
 End Sub
 {% endhighlight %}
