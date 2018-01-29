@@ -19,81 +19,49 @@ Another collection that is part of the schema information in the Engine.TableDes
 
 1. In the Console Application used in lessons 1 and 2, comment out all the code that is in the Main method and add the following code to create a data object and set it into the Grouping Engine.
 
+{% tabs %}
+{% highlight c# %}
+static void Main(string[] args)
+{
 
-   ~~~ cs
-   
-		static void Main(string[] args)
+// Create an array list of random MyObjects.
+ArrayList list = new ArrayList();
+Random r = new Random();
 
-		{
+for(int i = 0; i < 10; i++)
+{
+	list.Add(new MyObject(r.Next(5)));
+}
 
-				// Create an array list of random MyObjects.
+// Create a Grouping.Engine object.
+Engine groupingEngine = new Engine();
 
-				ArrayList list = new ArrayList();
-
-				Random r = new Random();
-
-
-
-				for(int i = 0; i < 10; i++)
-
-				{
-
-								list.Add(new MyObject(r.Next(5)));
-
-				}
-
-
-
-				// Create a Grouping.Engine object.
-
-				Engine groupingEngine = new Engine();
-
-
-
-				// Set its datasource.
-
-				groupingEngine.SetSourceList(list);
-
-		}
-
-   ~~~
+// Set its datasource.
+groupingEngine.SetSourceList(list);
+}
+{% endhighlight %}
+ 
    {:.prettyprint }
+{% highlight vb %}
+Sub Main()
 
-   ~~~ vbnet
+' Create an array list of random MyObjects.
+Dim list As New ArrayList()
+Dim r As New Random()
+Dim i As Integer
 
-		Sub Main()
+For i = 0 To 10
+list.Add(New MyObject(r.Next(5)))
+Next
 
-				' Create an array list of random MyObjects.
+' Create a Grouping.Engine object.
+Dim groupingEngine As New Engine()
 
-				Dim list As New ArrayList()
-
-				Dim r As New Random()
-
-
-
-				Dim i As Integer
-
-				For i = 0 To 10
-
-					list.Add(New MyObject(r.Next(5)))
-
-				Next
-
-
-
-				 ' Create a Grouping.Engine object.
-
-				Dim groupingEngine As New Engine()
-
-
-
-				' Set its data source.
-
-				groupingEngine.SetSourceList(list)
-
-		End Sub 
-
-   ~~~
+' Set its data source.
+groupingEngine.SetSourceList(list)
+End Sub 
+{% endhighlight %}
+{% endtabs %}
    {:.prettyprint }
 
 2. You are now ready to apply a filter to the data. Say for example you want to see only those items whose property D has the value d1. You must observe that D is a string that has non-numeric values. So, in this case you will need to use one of the string comparison operators (LIKE or MATCH) in your filter condition.
@@ -114,201 +82,127 @@ Do the following steps:
 
 5. Note that the constructor on theRecordFilterDescription takes an expression, "[D] LIKE 'd1'". This expression will be _True_ only for those items in the list where property D has the value d1.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
+// Display the data before filtering.
 
-		// Display the data before filtering.
+foreach(Record rec in groupingEngine.Table.FilteredRecords)
+{
+	MyObject obj = rec.GetData() as MyObject;
 
-		foreach(Record rec in groupingEngine.Table.FilteredRecords)
+   if(obj != null)
+   {
+	  Console.WriteLine(obj);
+   }
+}
 
-		{
+// Pause
+Console.ReadLine(); 
 
-				MyObject obj = rec.GetData() as MyObject;
+// Filter on [D] = d1
+RecordFilterDescriptor recordFilterDescriptor = new RecordFilterDescriptor("[D] LIKE 'd1'");
+groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
 
-			   if(obj != null)
+// Display the data after filtering.
 
-			   {
+foreach(Record rec in groupingEngine.Table.FilteredRecords)
+{
+	MyObject obj = rec.GetData() as MyObject;
 
-				  Console.WriteLine(obj);
+	if(obj != null)
+	{
+        Console.WriteLine(obj);
+	}
 
-			   }
+}
 
-		}
-
-
-
-		// Pause
-
-		Console.ReadLine(); 
-
-
-
-		// Filter on [D] = d1
-
-		RecordFilterDescriptor recordFilterDescriptor = new RecordFilterDescriptor("[D] LIKE 'd1'");
-
-		groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
-
-
-
-		// Display the data after filtering.
-
-		foreach(Record rec in groupingEngine.Table.FilteredRecords)
-
-		{
-
-				MyObject obj = rec.GetData() as MyObject;
-
-				if(obj != null)
-
-				{
-
-				  Console.WriteLine(obj);
-
-				}
-
-		}
-
-
-
-		// Pause
-
-		Console.ReadLine(); 
-
-   ~~~
+// Pause
+Console.ReadLine(); 
+{% endhighlight %}
+ 
    {:.prettyprint }
+{% highlight %}
+' Display the data before filtering.
+Dim rec As Record
 
-   ~~~ vbnet
+For Each rec In groupingEngine.Table.FilteredRecords
+Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
+If Not (obj Is Nothing) Then
+Console.WriteLine(obj)
+End If
+Next rec
 
+' Pause
+Console.ReadLine() 
 
-		' Display the data before filtering.
+' Filter on [D] = d1
+Dim recordFilterDescriptor As New RecordFilterDescriptor("[D] LIKE 'd1'")
+groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
 
-		Dim rec As Record
+' Display the data after filtering.
 
-				For Each rec In groupingEngine.Table.FilteredRecords
+For Each rec In groupingEngine.Table.FilteredRecords
+Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
-		Dim obj As MyObject = CType(rec.GetData(), MyObject)
+If Not (obj Is Nothing) Then
+Console.WriteLine(obj)
+End If
+Next rec
 
-					If Not (obj Is Nothing) Then
-
-						Console.WriteLine(obj)
-
-					End If
-
-				Next rec
-
-
-
-				' Pause
-
-				Console.ReadLine() 
-
-
-
-		' Filter on [D] = d1
-
-		Dim recordFilterDescriptor As New RecordFilterDescriptor("[D] LIKE 'd1'")
-
-				groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
-
-
-
-			  ' Display the data after filtering.
-
-			   For Each rec In groupingEngine.Table.FilteredRecords
-
-		Dim obj As MyObject = CType(rec.GetData(), MyObject)
-
-					If Not (obj Is Nothing) Then
-
-						Console.WriteLine(obj)
-
-					End If
-
-				Next rec
-
-
-
-				' Pause
-
-				Console.ReadLine() 
-		
-   ~~~
+' Pause
+Console.ReadLine() 
+{% endhighlight %}
+{% endtabs %}
+ 
    {:.prettyprint }
 
 
    ![](Data-Manipulation_images/Data-Manipulation_img2.png)
 6. You can apply more complex filters. Here is the code that will remove any existing filters and filter the property D being d1 or property b equal 2. Note here that since you expect property B to display only numeric data you must use the = operator in the comparison.
 
-   ~~~ cs
+{% tabs %}
+{% highlight %} 
+groupingEngine.TableDescriptor.RecordFilters.Clear();
+recordFilterDescriptor = new RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2");
+groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
 
-		groupingEngine.TableDescriptor.RecordFilters.Clear();
+// Access the data directly from the Engine.
 
+foreach(Record rec in groupingEngine.Table.FilteredRecords)
+{
+    MyObject obj = rec.GetData() as MyObject;
 
+	if(obj != null)
+	{
+		  Console.WriteLine(obj);
+	}
+}
 
-		recordFilterDescriptor = new RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2");
-
-		groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
-
-
-
-				// Access the data directly from the Engine.
-
-		foreach(Record rec in groupingEngine.Table.FilteredRecords)
-
-		{
-
-				MyObject obj = rec.GetData() as MyObject;
-
-				if(obj != null)
-
-				{
-
-				  Console.WriteLine(obj);
-
-				}
-
-		}
-
-
-
-		// Pause
-
-		Console.ReadLine(); 
-
-   ~~~
+// Pause
+Console.ReadLine(); 
+{% endhighlight %}
+ 
    {:.prettyprint }
+{% highlight vb %}
+groupingEngine.TableDescriptor.RecordFilters.Clear()
+recordFilterDescriptor = New RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2")
+groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
 
-   ~~~ vbnet
+' Access the data directly from the Engine.
 
-		groupingEngine.TableDescriptor.RecordFilters.Clear()
+For Each rec In groupingEngine.Table.FilteredRecords
+Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
-				recordFilterDescriptor = New RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2")
+If Not (obj Is Nothing) Then
+Console.WriteLine(obj)
+End If
+Next rec
 
-				groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
-
-
-
-		' Access the data directly from the Engine.
-
-				For Each rec In groupingEngine.Table.FilteredRecords
-
-		Dim obj As MyObject = CType(rec.GetData(), MyObject)
-
-					If Not (obj Is Nothing) Then
-
-						Console.WriteLine(obj)
-
-					End If
-
-				Next rec
-
-
-
-				' Pause
-
-				Console.ReadLine() 
-   ~~~
+' Pause
+Console.ReadLine() 
+{% endhighlight %}
+{% endtabs %}
    {:.prettyprint }
 
 
@@ -325,179 +219,104 @@ To add an expression, you need to create an ExpressionFieldDescriptor and add it
 
 1. In the Console Application, comment out all the code that is in the Main method and add this code to create a data object and set it into the GroupingEngine.
 
+{% tabs %}
+{% highlight c# %}
+// Create an array list of random MyObjects.
+ArrayList list = new ArrayList();
+Random r = new Random();
 
+for(int i = 0; i < 10; i++)
+{
+    list.Add(new MyObject(r.Next(5)));
+}
 
-   ~~~ cs
+// Create a Grouping.Engine object.
+Engine groupingEngine = new Engine();
 
-
-
-		// Create an array list of random MyObjects.
-
-		ArrayList list = new ArrayList();
-
-		Random r = new Random();
-
-
-
-		for(int i = 0; i < 10; i++)
-
-		{
-
-			 list.Add(new MyObject(r.Next(5)));
-
-		}
-
-
-
-		// Create a Grouping.Engine object.
-
-		Engine groupingEngine = new Engine();
-
-
-
-		// Set its datasource.
-
-		groupingEngine.SetSourceList(list);
-
-
-
-   ~~~
+// Set its datasource.
+groupingEngine.SetSourceList(list);
+{% endhighlight %}
    {:.prettyprint }
+{% highlight vb %}
+' Create an array list of random MyObjects.
+Dim list As New ArrayList()
+Dim r As New Random()
+Dim i As Integer
 
-   ~~~ vbnet
+For i = 0 To 10
+list.Add(New MyObject(r.Next(5)))
+Next
 
-		' Create an array list of random MyObjects.
+' Create a Grouping.Engine object.
+Dim groupingEngine As New Engine()
 
-		Dim list As New ArrayList()
-
-		Dim r As New Random()
-
-
-
-		Dim i As Integer
-
-		For i = 0 To 10
-
-			list.Add(New MyObject(r.Next(5)))
-
-		Next
-
-
-
-		' Create a Grouping.Engine object.
-
-		Dim groupingEngine As New Engine()
-
-
-
-		' Set its datasource.
-
-		groupingEngine.SetSourceList(list)
-
-   ~~~
+' Set its datasource.
+groupingEngine.SetSourceList(list)
+{% endhighlight %}
+{% endtabs %}
    {:.prettyprint }
 
 2. Now you must add code to list the data, add an expression property and then display the value of the expression. To retrieve the value, you must use the Record.GetValue method by passing it as the name of the expression that you had assigned when it was created.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
+// Display the data before filtering.
 
-		// Display the data before filtering.
+foreach(Record rec in groupingEngine.Table.FilteredRecords)
+{
+	MyObject obj = rec.GetData() as MyObject;
 
-		foreach(Record rec in groupingEngine.Table.FilteredRecords)
+	if(obj != null)
+	{
+		Console.WriteLine(obj);
+	}
+}
 
-		{
+// Pause
+Console.ReadLine(); 
 
-				MyObject obj = rec.GetData() as MyObject;
+// Add an expression property.
+ExpressionFieldDescriptor expressionFieldDescriptor = new ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2");
+groupingEngine.TableDescriptor.ExpressionFields.Add(expressionFieldDescriptor);
 
-				if(obj != null)
+// Display the data after adding the field.
 
-				{
+foreach(Record rec in groupingEngine.Table.FilteredRecords)
+{
+	Console.WriteLine(rec.GetValue("MultipleOfB"));
+}
 
-					Console.WriteLine(obj);
+// Pause
+Console.ReadLine(); 
+{% endhighlight %}  
 
-				}
-
-		}
-
-
-
-		// Pause
-
-		Console.ReadLine(); 
-
-
-
-				// Add an expression property.
-
-		ExpressionFieldDescriptor expressionFieldDescriptor = new ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2");
-
-				groupingEngine.TableDescriptor.ExpressionFields.Add(expressionFieldDescriptor);
-
-
-
-		// Display the data after adding the field.
-
-		foreach(Record rec in groupingEngine.Table.FilteredRecords)
-
-		{
-
-				Console.WriteLine(rec.GetValue("MultipleOfB"));
-
-		}
-
-
-
-		// Pause
-
-		Console.ReadLine(); 
-  
-   ~~~
    {:.prettyprint }
+{% highlight vb %}
+' Display the data before filtering.
+Dim rec As Record
 
+For Each rec In groupingEngine.Table.FilteredRecords
+Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
-   ~~~ vbnet
+If Not (obj Is Nothing) Then
+Console.WriteLine(obj)
+End If
+Next rec
 
+' Pause
+Console.ReadLine() 
 
-		' Display the data before filtering.
+' Add an expression property.
+Dim expressionFieldDescriptor As New ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2")
+groupingEngine.TableDescriptor.ExpressionFields.Add(expressionFieldDescriptor)
 
-		Dim rec As Record
+' Display the data after adding the field.
 
-		For Each rec In groupingEngine.Table.FilteredRecords
-
-			Dim obj As MyObject = CType(rec.GetData(), MyObject)
-
-			If Not (obj Is Nothing) Then
-
-			   Console.WriteLine(obj)
-
-			End If
-
-		Next rec
-
-
-
-		' Pause
-
-		Console.ReadLine() 
-
-
-		' Add an expression property.
-
-		Dim expressionFieldDescriptor As New ExpressionFieldDescriptor("MultipleOfB", "2.1 * [B] + 3.2")
-
-		groupingEngine.TableDescriptor.ExpressionFields.Add(expressionFieldDescriptor)
-
-
-
-		' Display the data after adding the field.
-
-		For Each rec In groupingEngine.Table.FilteredRecords
-
-			Console.WriteLine(rec.GetValue("MultipleOfB"))
-
-		Next rec
-
-   ~~~
+For Each rec In groupingEngine.Table.FilteredRecords
+Console.WriteLine(rec.GetValue("MultipleOfB"))
+Next rec
+{% endhighlight %}
+{% endtabs %}
    {:.prettyprint }
 
    ![](Data-Manipulation_images/Data-Manipulation_img4.png)
@@ -510,183 +329,103 @@ To sort your data, you must add the name of the property that you want to sort t
 
 In the Console Application, comment out all the code that is in the Main method and add this code to create a data object, set it into the GroupingEngine, display the data, sort it by property A and re-display the sorted data.
 
-
-
+{% tabs %}
 {% highlight c# %}
-
-
-
 // Create an array list of random MyObjects.
-
 ArrayList list = new ArrayList();
-
 Random r = new Random();
 
-
-
 for(int i = 0; i < 10; i++)
-
 {
-
-     list.Add(new MyObject(r.Next(5)));
-
+    list.Add(new MyObject(r.Next(5)));
 }
 
-
-
-        // Create a Grouping.Engine object.
-
+// Create a Grouping.Engine object.
 Engine groupingEngine = new Engine();
 
-
-
-        // Set its datasource.
-
+// Set its datasource.
 groupingEngine.SetSourceList(list);
 
-
-
-        // Display the data before sorting.
+// Display the data before sorting.
 
 foreach(Record rec in groupingEngine.Table.Records)
-
 {
+    MyObject obj = rec.GetData() as MyObject;
 
-        MyObject obj = rec.GetData() as MyObject;
-
-        if(obj != null)
-
-        {
-
-           Console.WriteLine(obj);
-
-        }
-
+    if(obj != null)
+    {
+       Console.WriteLine(obj);
+    }
 }
 
-
-
 // Pause
-
 Console.ReadLine(); 
 
-
-
-        // Sort column A.
-
+// Sort column A.
 groupingEngine.TableDescriptor.SortedColumns.Add("A");        
 
-
-
-        // Display the data after sorting.
+// Display the data after sorting.
 
 foreach(Record rec in groupingEngine.Table.FilteredRecords)
-
 {
+    MyObject obj = rec.GetData() as MyObject;
 
-        MyObject obj = rec.GetData() as MyObject;
-
-        if(obj != null)
-
-        {
-
-           Console.WriteLine(obj);
-
-        }
-
+    if(obj != null)
+    {
+       Console.WriteLine(obj);
+    }
 }
 
-
 // Pause
-
 Console.ReadLine(); 
-
 {% endhighlight %}
-
 {% highlight vbnet %}
-
-
-
 ' Create an array list of random MyObjects.
-
 Dim list As New ArrayList()
-
 Dim r As New Random()
-
-
-
 Dim i As Integer
 
 For i = 0 To 9
-
-    list.Add(New MyObject(r.Next(5)))
-
+list.Add(New MyObject(r.Next(5)))
 Next i
 
-
-
 ' Create a Grouping.Engine object.
-
 Dim groupingEngine As New Engine()
 
-
-
 ' Set its datasource.
-
-        groupingEngine.SetSourceList(list)
-
-
+groupingEngine.SetSourceList(list)
 
 ' Display the data before sorting.
-
 Dim rec As Record
 
 For Each rec In groupingEngine.Table.Records
-
 Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
-            If Not (obj Is Nothing) Then
+If Not (obj Is Nothing) Then
+Console.WriteLine(obj)
+End If
+Next rec
 
-                Console.WriteLine(obj)
-
-            End If
-
-        Next rec
-
-
-        ' Pause
-
-        Console.ReadLine() 
-
-
+' Pause
+Console.ReadLine() 
 
 ' Sort column A.
-
 groupingEngine.TableDescriptor.SortedColumns.Add("A")
-
-
 
 ' Display the data after sorting.
 
- For Each rec In groupingEngine.Table.FilteredRecords
+For Each rec In groupingEngine.Table.FilteredRecords
+Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
-     Dim obj As MyObject = CType(rec.GetData(), MyObject)
-
-     If Not (obj Is Nothing) Then
-
-            Console.WriteLine(obj)
-
-            End If
-
+If Not (obj Is Nothing) Then
+Console.WriteLine(obj)
+End If
 Next rec
 
-
-
-' Pause
-
+'Pause
 Console.ReadLine() 
-
 {% endhighlight %}
+{% endtabs %}
 
 ![](Data-Manipulation_images/Data-Manipulation_img5.png)
 
@@ -702,29 +441,18 @@ We used a simplest overload in the previous section for sorting the data. The Ta
 
 The following code snippets illustrate the syntax for these overloads:
 
+{% tabs %}
 {% highlight c# %}
-
-
-
 public int Add(string propertyName);
-
 public int Add(string propertyName, ListSortDirection direction);
-
 public int Add(SortColumnDescriptor sdc); 
-
 {% endhighlight %}
-
 {% highlight vbnet %}
-
-
-
 Overloads Public Function Add(propertyName As String) As Integer
-
 Overloads Public Function Add(propertyName As String, direction As ListSortDirection) As Integer
-
 Overloads Public Function Add(sdc As SortColumnDescriptor) As Integer
-
 {% endhighlight %}
+{% endtabs %}
 
 The second overload can be used to specify the sort direction. The SortColumnDescriptor.Comparer is an IComparer property that allows you to specify a custom comparer object. 
 
@@ -735,325 +463,202 @@ The following steps illustrate how to do custom sorting using the IComparer prop
 1. Here, you must create a class that implements IComparer which can accept value such as ax, where x is a digit which is used to do the comparison. This leads to numerical sorting, ignoring the leading character.
 2. Add this code immediately following the end of the Class1 code.
 
-   ~~~ cs
-		public class AComparer : IComparer
+{% tabs %}
+{% highlight c# %}
+public class AComparer : IComparer
+{
 
-		{
+// Implementing IComparer to define the object comparisons.
 
-				  // Implementing IComparer to define the object comparisons.
+public int Compare(object x, object y)
+{
 
-				 public int Compare(object x, object y)
+   if(x == null && y == null)
+	  return 0;
 
-				 {
+   else if(x == null)
+	  return -1;
 
-					   if(x == null && y == null)
+   else if(y == null)
+      return 1;
 
-							  return 0;
+    else
+   {
+        int value1 = 0;
+        int value2 = 0;
+        try
+        {
+            // Ignoring the leading character to have numerical sorting.
+			 value1 = int.Parse(x.ToString().Substring(1));
+			 value2 = int.Parse(y.ToString().Substring(1));
+			 return value2 - value1;
+		 }
+		 catch 
+		 {
+			throw new ArgumentException("A must be in the form");
+		 }
+		 }
+ }
+}
+{% endhighlight %}
 
-					   else if(x == null)
-
-							  return -1;
-
-					   else if(y == null)
-
-							  return 1;
-
-					   else
-
-					   {
-
-							 int value1 = 0;
-
-							 int value2 = 0;
-
-							 try
-
-							 {
-
-								  // Ignoring the leading character to have numerical sorting.
-
-								 value1 = int.Parse(x.ToString().Substring(1));
-
-								 value2 = int.Parse(y.ToString().Substring(1));
-
-								 return value2 - value1;
-
-							 }
-
-							 catch 
-
-							 {
-
-								throw new ArgumentException("A must be in the form");
-
-							 }
-
-						 }
-
-				  }
-
-		}
-
-   ~~~
    {:.prettyprint }
+{% highlight vb %}
+Public Class AComparer
+Implements IComparer
 
-   ~~~ vbnet
+' Implementing IComparer to define the object comparisons.
 
+Public Function Compare(ByVal x As Object, ByVal y As Object) As Integer _ 
+Implements IComparer.Compare
 
-		Public Class AComparer
+If x Is Nothing And y Is Nothing Then
+Return 0
 
-				Implements IComparer
+Else
 
-				' Implementing IComparer to define the object comparisons.
+If x Is Nothing Then
+Return -1
 
-				Public Function Compare(ByVal x As Object, ByVal y As Object) As Integer _ 
+Else
 
-														Implements IComparer.Compare
+If y Is Nothing Then
+Return 1
 
-					If x Is Nothing And y Is Nothing Then
+Else
+Dim value1 As Integer = 0
+Dim value2 As Integer = 0
 
-						Return 0
+Try
 
-					Else
+' Ignoring the leading character to have numerical sorting.
+value1 = Integer.Parse(x.ToString().Substring(1))
+value2 = Integer.Parse(y.ToString().Substring(1))
+Return value2 - value1
 
-						If x Is Nothing Then
-
-							Return -1
-
-						Else
-
-							If y Is Nothing Then
-
-								Return 1
-
-							Else
-
-								Dim value1 As Integer = 0
-
-								Dim value2 As Integer = 0
-
-								Try
-
-									' Ignoring the leading character to have numerical sorting.
-
-									value1 = Integer.Parse(x.ToString().Substring(1))
-
-									value2 = Integer.Parse(y.ToString().Substring(1))
-
-									Return value2 - value1
-
-								Catch
-
-								End Try
-
-							End If
-
-						End If
-
-					End If
-
-				End Function
-
-		End Class
-   ~~~
+Catch
+End Try
+End If
+End If
+End If
+End Function
+End Class
+{% endhighlight %}
+{% endtabs %}
    {:.prettyprint }
 
 
 3. Add this code to the Main method to use this custom comparer to sort column A.
 
+{% tabs %}
+{% highlight c# %}
+// Create an array list of random MyObjects.
+ArrayList list = new ArrayList();
+Random r = new Random();
 
-   ~~~ cs
+for(int i = 0; i < 10; i++)
+{
+    list.Add(new MyObject(r.Next(20)));
+}
 
-		// Create an array list of random MyObjects.
+// Create a Grouping.Engine object.
+Engine groupingEngine = new Engine();
 
-		ArrayList list = new ArrayList();
+// Set its datasource.
+groupingEngine.SetSourceList(list);
 
-		Random r = new Random();
+// Display the data before sorting.
 
+foreach(Record rec in groupingEngine.Table.Records)
+{
+    MyObject obj = rec.GetData() as MyObject;
 
+	if(obj != null)
+	{
+		Console.WriteLine(obj);
+	}
+}
 
-		for(int i = 0; i < 10; i++)
+// Pause
+Console.ReadLine(); 
 
-		{
+// Custom sort column A.
 
-			list.Add(new MyObject(r.Next(20)));
+// Get an IComparer object to handle the custom sorting.
+AComparer comparer = new AComparer();
+groupingEngine.TableDescriptor.SortedColumns.Add("A");
+groupingEngine.TableDescriptor.SortedColumns["A"].Comparer = comparer;
 
-		}
+// Display the data before sorting.
 
+foreach(Record rec in groupingEngine.Table.FilteredRecords)
+{
+	MyObject obj = rec.GetData() as MyObject;
 
+	if(obj != null)
+   {
+	   Console.WriteLine(obj);
+   }
+}
 
-		// Create a Grouping.Engine object.
-
-		Engine groupingEngine = new Engine();
-
-
-
-		// Set its datasource.
-
-		groupingEngine.SetSourceList(list);
-
-
-
-		// Display the data before sorting.
-
-		foreach(Record rec in groupingEngine.Table.Records)
-
-		{
-
-				MyObject obj = rec.GetData() as MyObject;
-
-				if(obj != null)
-
-				{
-
-					Console.WriteLine(obj);
-
-				}
-
-		}
-
-
-
-		// Pause
-
-		Console.ReadLine(); 
-
-
-
-		// Custom sort column A.
-
-		// Get an IComparer object to handle the custom sorting.
-
-		AComparer comparer = new AComparer();
-
-		groupingEngine.TableDescriptor.SortedColumns.Add("A");
-
-		groupingEngine.TableDescriptor.SortedColumns["A"].Comparer = comparer;
-
-
-
-		// Display the data before sorting.
-
-		foreach(Record rec in groupingEngine.Table.FilteredRecords)
-
-		{
-
-				MyObject obj = rec.GetData() as MyObject;
-
-				if(obj != null)
-
-			   {
-
-				   Console.WriteLine(obj);
-
-			   }
-
-		}
-
-
-
-		// Pause
-
-		Console.ReadLine(); 
-
+// Pause
+Console.ReadLine(); 
+{% endhighlight %}
    ~~~
    {:.prettyprint }
+{% highlight vb %}
+' Create an array list of random MyObjects.
+Dim list As New ArrayList()
+Dim r As New Random()
+Dim i As Integer
 
-   ~~~ vbnet
+For i = 0 To 9
+list.Add(New MyObject(r.Next(20)))
+Next i
 
+' Create a Grouping.Engine object.
+Dim groupingEngine As New Engine()
 
+' Set its datasource.
+groupingEngine.SetSourceList(list)
 
-		' Create an array list of random MyObjects.
+' Display the data before sorting.
+Dim rec As Record
 
-		Dim list As New ArrayList()
+For Each rec In groupingEngine.Table.Records
+Dim obj As MyObject = rec.GetData() '
+Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
-		Dim r As New Random()
+If Not (obj Is Nothing) Then
+Console.WriteLine(obj)
+End If
+Next rec
 
+' Pause
+Console.ReadLine() 
 
+' Custom sort column A.
 
-		Dim i As Integer
+' Get an IComparer object to handle the custom sorting.
+Dim comparer As New AComparer()
+groupingEngine.TableDescriptor.SortedColumns.Add("A")
+groupingEngine.TableDescriptor.SortedColumns("A").Comparer = comparer 
 
-		For i = 0 To 9
+' Display the data before sorting.
+Dim rec As Record
 
-			list.Add(New MyObject(r.Next(20)))
+For Each rec In groupingEngine.Table.FilteredRecords
+Dim obj As MyObject = CType(rec.GetData(), MyObject)
 
-		Next i
+If Not (obj Is Nothing) Then
+Console.WriteLine(obj)
+End If
+Next rec
 
-
-
-		' Create a Grouping.Engine object.
-
-		Dim groupingEngine As New Engine()
-
-
-
-		' Set its datasource.
-
-		groupingEngine.SetSourceList(list)
-
-
-
-		' Display the data before sorting.
-
-		Dim rec As Record
-
-		For Each rec In groupingEngine.Table.Records
-
-			Dim obj As MyObject = rec.GetData() '
-
-			Dim obj As MyObject = CType(rec.GetData(), MyObject)
-
-			If Not (obj Is Nothing) Then
-
-					Console.WriteLine(obj)
-
-			End If
-
-		Next rec
-
-
-
-		' Pause
-
-		Console.ReadLine() 
-
-
-
-		' Custom sort column A.
-
-		' Get an IComparer object to handle the custom sorting.
-
-		Dim comparer As New AComparer()
-
-		groupingEngine.TableDescriptor.SortedColumns.Add("A")
-
-		groupingEngine.TableDescriptor.SortedColumns("A").Comparer = comparer 
-
-
-
-		' Display the data before sorting.
-
-		Dim rec As Record
-
-		For Each rec In groupingEngine.Table.FilteredRecords
-
-			Dim obj As MyObject = CType(rec.GetData(), MyObject)
-
-			If Not (obj Is Nothing) Then
-
-			   Console.WriteLine(obj)
-
-			End If
-
-		Next rec
-
-
-
-		' Pause
-
-		Console.ReadLine() 
-   
-   ~~~
+' Pause
+Console.ReadLine() 
+{% endhighlight %}   
+{% endtabs %}
    {:.prettyprint }
 
    ![](Data-Manipulation_images/Data-Manipulation_img7.png)
