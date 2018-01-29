@@ -113,32 +113,18 @@ The following steps will guide you to deploy Essential Grouping in an ASP.NET ap
  
 N> They can also be in the GAC, in which case, they should be referenced in Web.config file.
 
-
-
+{% tabs %}
 {% highlight html %}
-
-
-
 <configuration>
-
-   <system.web>
-
-     <compilation>
-
-      <assemblies>
-
+<system.web>
+<compilation>
+<assemblies>
 <add assembly="Syncfusion.Grid.Grouping.Web, Version=x.x.x.x, Culture=neutral, PublicKeyToken=3D67ED1F87D44C89"/></assemblies>
-
-     </compilation>
-
-  ...                
-
-  </system.web>
-
+</compilation>
+</system.web>
 </configuration>
-
-
 {% endhighlight %}
+{% endtabs %}
 
 N> The version numbers in the above references will vary depending on the version you are linking to.
 
