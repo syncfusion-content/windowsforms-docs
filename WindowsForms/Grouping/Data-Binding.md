@@ -164,7 +164,7 @@ End Module
 3. Add the code to the Main function as follows. This creates a random list of 'MyObject' and echoes this list to the console.
 
 {% tabs %}
-{% highlight %}
+{% highlight c# %}
 static void Main(string[] args)
 {
 
