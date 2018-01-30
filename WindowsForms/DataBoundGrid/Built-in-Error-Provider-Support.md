@@ -96,28 +96,16 @@ To show the error icon in the cell, set ShowErrorIcon property to True. By defau
 The following code illustrates how to display the error icon on both the cell as well as the row header:
 
 
-
+{% tabs %}
 {% highlight C# %}
-
-
 this.gridDataBoundGrid1.CurrentCell.ShowErrorIcon = true;
-
 this.gridDataBoundGrid1.ShowRowHeaderErrorIcon = true; 
 {% endhighlight %}
-
-
-
 {% highlight vbnet %}
-
-
-
 Me.gridDataBoundGrid1.CurrentCell.ShowErrorIcon = True
-
 Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
-
-
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Built-in-Error-Provider-Support_images/Built-in-Error-Provider-Support_img1.png) 
 
@@ -129,31 +117,17 @@ You can show an error dialog using ShowErrorMessageBox property and specify the 
 
 The following code illustrates this:
 
-
-
+{% tabs %}
 {% highlight C# %}
-
 this.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= false;
-
-
-
 this.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text";
-
 {% endhighlight %}
-
-
-
-
 {% highlight vbnet %}
-
-
-
 Me.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= False
-
-
-
 Me.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text"
 {% endhighlight %}
+{% endtabs %}
+
  ![](Built-in-Error-Provider-Support_images/Built-in-Error-Provider-Support_img2.png) 
 
 
@@ -163,23 +137,12 @@ You can specify error conditions for individual cells using SetError() method of
 
 The following code illustrates this:
 
-
-
+{% tabs %}
 {% highlight C# %}
-
-
-
 this.gridDataBoundGrid1.CurrentCell.SetError("Please enter valid number");
 {% endhighlight %}
-
-
-
-
 {% highlight vbnet %}
-
-
-
 Me.gridDataBoundGrid1.CurrentCell.SetError("Please enter valid number")
 {% endhighlight %}
-
+{% endtabs %}
 

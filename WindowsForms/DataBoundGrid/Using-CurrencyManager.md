@@ -15,54 +15,30 @@ Your first inclination might be to grab the row number from the grid and try to 
 
 Given below are some code samples.
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 //Assuming the grid is bound to a Data Table.
-
 CurrencyManager cm = (CurrencyManager)this.grid.BindingContext[this.grid.DataSource, this.grid.DataMember];
-
 DataRowView dataRowView = cm.List[1] as DataRowView; 
-
-
 
 //Accesses row 2 of the grid.
 
 if(dataRowView != null)
-
 {
-
     DataRow dataRow = dataRowView.Row;
-
     Console.WriteLine(dataRow["FirstName"].ToString());
-
 }
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
-
-
 'Assuming grid is bound to a Data Table.
-
 Dim cm As CurrencyManager = CType(Me.grid.BindingContext(Me.grid.DataSource, Me.grid.DataMember), CurrencyManager)
-
 Dim dataRowView As DataRowView = cm.List(1)  
-
-
 
 'Accesses row 2 of the grid.
 
 If Not (dataRowView Is Nothing) Then
-
 Dim dataRow As DataRow = dataRowView.Row
-
 Console.WriteLine(dataRow("FirstName").ToString())
-
 End If
-
-
 {% endhighlight  %}
+{% endtabs %}

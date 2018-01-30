@@ -222,6 +222,7 @@ this.gridGroupingControl1.TableDescriptor.RecordFilters.Add(recordFilterDescript
 Dim recordFilterDescriptor As RecordFilterDescriptor = New RecordFilterDescriptor("SupplierID")
 
 'Setting the RecordFilterDescriptorrecordFilterDescriptor.Expression = "[SupplierID] <= 10"
+
 'Adding the RecordFilterDescriptor to collectionMe.gridGroupingControl1.TableDescriptor.RecordFilters.Add(recordFilterDescriptor)
 {% endhighlight %}
 {% endtabs %}
@@ -240,12 +241,13 @@ FilterCondition condition = new FilterCondition(FilterCompareOperator.GreaterTha
 //Setting the RecordFilterDescriptor and adding filter condition
 RecordFilterDescriptor recordFilterDescriptor = new RecordFilterDescriptor("UnitPrice", condition);
 
-//'Getting child table descriptor of “Products” nested table  and adding the RecordFilterDescriptor to collection
+//Getting child table descriptor of “Products” nested table  and adding the RecordFilterDescriptor to collection
 this.groupingGrid1.GetTableDescriptor("Products").RecordFilters.Add(recordFilterDescriptor);
 {% endhighlight %}
 {% highlight vb %}
 'Setting the filter condition
 Dim condition As FilterCondition = New FilterCondition(FilterCompareOperator.GreaterThan, 10)
+
 'Setting the RecordFilterDescriptor and adding filter condition
 Dim recordFilterDescriptor As RecordFilterDescriptor = New RecordFilterDescriptor("UnitPrice", condition)
 
@@ -260,6 +262,7 @@ To match the special characters like left bracket `[`, question mark `?`, number
 The below example shows filter values are replaced with valid characters,
 {% tabs %}
 {% highlight c# %}
+
 void Form1_Load(object sender, EventArgs e)
 {
 ArrayList rank = new ArrayList();
@@ -289,6 +292,7 @@ gridGroupingControl1.TableDescriptor.RecordFilters.Clear();
 
 private string ReplaceSpecialChar(string pattern)
 {
+
 //Take caution while replacing the pattern and ensure that only the intended pattern is modified.
 pattern = pattern.Replace("[", "[[]");
 pattern = pattern.Replace("#", "[#]");
@@ -324,6 +328,7 @@ Next a
 End Sub
 
 Private Function ReplaceSpecialChar(ByVal pattern As String) As String
+
 'Take caution while replacing the pattern and ensure that only the intended pattern is modified.
 pattern = pattern.Replace("[", "[[]")
 pattern = pattern.Replace("#", "[#]")
@@ -373,15 +378,19 @@ The changes made in the `RecordFilters` collection can be notified by using the 
 {% highlight c# %}
 this.gridGroupingControl1.TableDescriptor.RecordFilters.Changing += new ListPropertyChangedEventHandler(RecordFilters_Changing);
 this.gridGroupingControl1.TableDescriptor.RecordFilters.Changed += new ListPropertyChangedEventHandler(RecordFilters_Changed);
+
 void RecordFilters_Changing(object sender, ListPropertyChangedEventArgs e)
 {
+
     if(e.Action == Syncfusion.Collections.ListPropertyChangedType.Add)
     {
         Console.WriteLine("Adding Record Filter");
     }
 }
+
 void RecordFilters_Changed(object sender, ListPropertyChangedEventArgs e)
 {
+
     if (e.Action == Syncfusion.Collections.ListPropertyChangedType.Add)
     {
         Console.WriteLine("Record filter is added");
@@ -392,12 +401,16 @@ void RecordFilters_Changed(object sender, ListPropertyChangedEventArgs e)
 AddHandler gridGroupingControl1.TableDescriptor.RecordFilters.Changing, AddressOf RecordFilters_Changing
 AddHandler gridGroupingControl1.TableDescriptor.RecordFilters.Changed, AddressOf RecordFilters_Changed
 
+
 Private Sub RecordFilters_Changing(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
+
 	If e.Action = Syncfusion.Collections.ListPropertyChangedType.Add Then
 		Console.WriteLine("Adding Record Filter")
 	End If
 End Sub
+
 Private Sub RecordFilters_Changed(ByVal sender As Object, ByVal e As ListPropertyChangedEventArgs)
+
 	If e.Action = Syncfusion.Collections.ListPropertyChangedType.Add Then
 		Console.WriteLine("Record filter is added")
 	End If
@@ -412,6 +425,7 @@ The dynamic filter is defined in the `GridDynamicFilter` class which is availabl
 {% tabs %}
 {% highlight c# %}
 GridDynamicFilter dynamicFilter = new GridDynamicFilter();
+
 //Wiring the Dynamic Filter to GridGroupingControl
 dynamicFilter.WireGrid(this.gridGroupingControl1);
 {% endhighlight %}
@@ -433,12 +447,14 @@ The below example illustrates how to apply filter delay for the dynamic filter,
 {% tabs %}
 {% highlight c# %}
 GridDynamicFilter filter = new GridDynamicFilter();
+
 // Delay the filtering for 300 milliseconds.
 filter.FilterDelay = 300;
 filter.WireGrid(this.gridGroupingControl1);
 {% endhighlight %}
 {% highlight vb %}
 Dim filter As New GridDynamicFilter()
+
 ' Delay the filtering for 300 milliseconds.
 filter.FilterDelay = 300
 filter.WireGrid(Me.gridGroupingControl1)
@@ -502,6 +518,7 @@ The individual columns can be wired with the dynamic filter by setting the [Allo
 {% tabs %}
 {% highlight c# %}
 GridDynamicFilter filter = new GridDynamicFilter();
+
 // Apply filter for the column which has the cell type DynamicFilterCell
 filter.AllowIndividualColumnWiring = true;
 this.gridGroupingControl1.TableDescriptor.Columns[1].Appearance.FilterBarCell.CellType = "DynamicFilterCell";
@@ -509,6 +526,7 @@ filter.WireGrid(this.gridGroupingControl1);
 {% endhighlight %}
 {% highlight vb %}
 Dim filter As New GridDynamicFilter()
+
 ' Apply filter for the column which has the cell type DynamicFilterCell
 filter.AllowIndividualColumnWiring = True
 Me.gridGroupingControl1.TableDescriptor.Columns(1).Appearance.FilterBarCell.CellType = "DynamicFilterCell"
@@ -525,6 +543,7 @@ dynamicFilter.ShowingCustomFilterDialog+=new ControlEventHandler(dynamicFilter_S
 
 void dynamicFilter_ShowingCustomFilterDialog(object sender, ControlEventArgs e)
 {
+
      //To-Do
 }
 {% endhighlight %}
@@ -533,6 +552,7 @@ void dynamicFilter_ShowingCustomFilterDialog(object sender, ControlEventArgs e)
 AddHandler dynamicFilter.ShowingCustomFilterDialog, AddressOf Me.dynamicFilter_ShowingCustomFilterDialog
     
 Private Sub dynamicFilter_ShowingCustomFilterDialog(ByVal sender As Object, ByVal e As ControlEventArgs)        
+
     'To-Do
 End Sub
 {% endhighlight %}
@@ -589,6 +609,7 @@ gridExcelFilter.WireGrid(this.gridGroupingControl1);
 Dim gridExcelFilter As GridExcelFilter = New GridExcelFilter
 
 'Enabling Number filtergridExcelFilter.EnableNumberFilter = true
+
 'Wiring GridExcelFilter to GridGroupingControlgridExcelFilter.WireGrid(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
@@ -611,6 +632,7 @@ gridExcelFilter.WireGrid(this.gridGroupingControl1);
 Dim gridExcelFilter As GridExcelFilter = New GridExcelFilter
 
 'Enabling Number filtergridExcelFilter.EnableNumberFilter = true
+
 'Wiring GridExcelFilter to GridGroupingControlgridExcelFilter.WireGrid(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
@@ -621,8 +643,10 @@ The `GridExcelFilter` lets the user to filter the records based on its cell `Bac
 {% tabs %}
 {% highlight c# %}
 GridExcelFilter gridExcelFilter = new GridExcelFilter();
+
 //Enabling filter by color option
 gridExcelFilter.AllowFilterByColor = true;
+
 //Wiring GridExcelFilter to GridGroupingControl
 gridExcelFilter.WireGrid(this.gridGroupingControl1);
 {% endhighlight %}
@@ -642,12 +666,14 @@ By default, it shows the filter icon for the filter enabled column when enabling
 {% highlight c# %}
 GridExcelFilter filter = new GridExcelFilter();
 filter.WireGrid(this.gridGroupingControl1);
+
 //Show filter icon on mouse hover at the header cell
 GridExcelFilter.EnableFilteredColumnIcon = true;
 {% endhighlight %}
 {% highlight vb %}
 Dim filter As New GridExcelFilter()
 filter.WireGrid(Me.gridGroupingControl1)
+
 'Show filter icon on mouse hover at the header cell
 GridExcelFilter.EnableFilteredColumnIcon = True
 {% endhighlight %}
@@ -661,12 +687,14 @@ The search text box of the excel filter dialog can be hidden by setting the [All
 {% highlight c# %}
 GridExcelFilter filter = new GridExcelFilter();
 filter.WireGrid(this.gridGroupingControl1);
+
 // Disable the search box in filter pop-up
 filter.AllowSearch = false;
 {% endhighlight %}
 {% highlight vb %}
 Dim filter As New GridExcelFilter()
 filter.WireGrid(Me.gridGroupingControl1)
+
 ' Disable the search box in filter pop-up
 filter.AllowSearch = False
 {% endhighlight %}
@@ -680,12 +708,14 @@ The excel filter popup can be resized by setting the [AllowResize](http://help.s
 {% highlight c# %}
 GridExcelFilter filter = new GridExcelFilter();
 filter.WireGrid(this.gridGroupingControl1);
+
 // Enable resizing the filter dialog
 filter.AllowResize = true;
 {% endhighlight %}
 {% highlight vb %}
 Dim filter As New GridExcelFilter()
 filter.WireGrid(Me.gridGroupingControl1)
+
 ' Enable resizing the filter dialog
 filter.AllowResize = True
 {% endhighlight %}
@@ -697,6 +727,7 @@ The individual columns can be wired with the Excel filter by setting the [AllowI
 {% tabs %}
 {% highlight c# %}
 GridExcelFilter filter = new GridExcelFilter();
+
 // Apply filter for the column which has the cell type GridExcelFilterCell 
 filter.AllowIndividualColumnWiring = true;
 this.gridGroupingControl1.TableDescriptor.Columns[1].Appearance.ColumnHeaderCell.CellType = "GridExcelFilterCell";
@@ -704,6 +735,7 @@ filter.WireGrid(this.gridGroupingControl1);
 {% endhighlight %}
 {% highlight vb %}
 Dim filter As New GridExcelFilter()
+
 ' Apply filter for the column which has the cell type GridExcelFilterCell 
 filter.AllowIndividualColumnWiring = True
 Me.gridGroupingControl1.TableDescriptor.Columns(1).Appearance.ColumnHeaderCell.CellType = "GridExcelFilterCell"
@@ -724,10 +756,13 @@ To customize the filter icon for column headers, the cell model and cell rendere
 The following is the process of creating cell model and cell renderer for customizing the column headers filter icon,
 
 *	Creating cell model.
+
 {% tabs %}
 {% highlight c#%}
+
 public class GridExcelFilterCellModelAdv : GridExcelFilterCellModel
 {
+
     private GridExcelFilter excelFilter;
 
     public GridExcelFilterCellModelAdv(GridModel grid, GridExcelFilter excelFilter)
@@ -745,6 +780,7 @@ public class GridExcelFilterCellModelAdv : GridExcelFilterCellModel
 {% highlight vb%}
 Public Class GridExcelFilterCellModelAdv
     Inherits GridExcelFilterCellModel
+
     Private excelFilter As GridExcelFilter
 
     Public Sub New(ByVal grid As GridModel, ByVal excelFilter As GridExcelFilter)
@@ -761,10 +797,12 @@ End Class
 
 
 * Creating cell renderer.
+
 {% tabs %}
 {% highlight c#%}
 class GridExcelFilterCellRendererAdv : GridExcelFilterCellRenderer
 {
+
     public GridExcelFilterCellRendererAdv(GridControlBase grid, GridCellModelBase cellModel, GridExcelFilter excelFilter)
         : base(grid, cellModel, excelFilter)
     {
@@ -777,6 +815,7 @@ class GridExcelFilterCellRendererAdv : GridExcelFilterCellRenderer
 {% highlight vb%}
 Friend Class GridExcelFilterCellRendererAdv
     Inherits GridExcelFilterCellRenderer
+
     Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridCellModelBase, ByVal excelFilter As GridExcelFilter)
         MyBase.New(grid, cellModel, excelFilter)
         MyBase.FilterIconSize = New Size(30, 30)
@@ -789,6 +828,7 @@ End Class
 
 
 * Replacing the cell renderer for default `ColumnHeaderCell`.
+
 {% tabs %}
 {% highlight c#%}
 //To enable the custom ColumnHeaderCell cell type.
@@ -812,10 +852,12 @@ To customize the filter icon for stacked headers, the cell model and cell render
 The following is the process of creating custom cell model and cell renderer for customizing the stacked headers filter icon,
 
 *	Creating cell model.
+
 {% tabs %}
 {% highlight c#%}
 public class StackedHeaderCellModelAdv : StackedHeaderCellModel
 {
+
     private GridExcelFilter excelFilter;
 
     public StackedHeaderCellModelAdv(GridModel grid, GridExcelFilter excelFilter)
@@ -833,6 +875,7 @@ public class StackedHeaderCellModelAdv : StackedHeaderCellModel
 {% highlight vb%}
 Public Class StackedHeaderCellModelAdv
     Inherits StackedHeaderCellModel
+
     Private excelFilter As GridExcelFilter
 
     Public Sub New(ByVal grid As GridModel, ByVal excelFilter As GridExcelFilter)
@@ -848,10 +891,12 @@ End Class
 {% endtabs %}
 
 * Creating cell renderer.
+
 {% tabs %}
 {% highlight c#%}
 public class StackedHeaderCellRendererAdv : StackedHeaderCellRenderer
 {
+
     private GridExcelFilter excelFilter;
 
     public StackedHeaderCellRendererAdv(GridControlBase grid, GridHeaderCellModel cellModel, GridExcelFilter excelFilter)
@@ -867,6 +912,7 @@ public class StackedHeaderCellRendererAdv : StackedHeaderCellRenderer
 {% highlight vb%}
 Public Class StackedHeaderCellRendererAdv
     Inherits StackedHeaderCellRenderer
+
     Private excelFilter As GridExcelFilter
 
     Public Sub New(ByVal grid As GridControlBase, ByVal cellModel As GridHeaderCellModel, ByVal excelFilter As GridExcelFilter)
@@ -881,6 +927,7 @@ End Class
 {% endtabs %}
 
 * Replacing the cell renderer for `CustomStackedHeaderCell`.
+
 {% tabs %}
 {% highlight c#%}
 //To enable the custom StackedHeaderCell cell type.
@@ -921,6 +968,7 @@ By default, the filter icon in column headers will not be shown until mouse is h
 {% highlight c# %}
 GridOffice2007Filter.ShowOffice2007FilterOnMouseHover = true;
 GridOffice2007Filter officeFilter = new GridOffice2007Filter();
+
 //Wiring the GridGroupingControl
 officeFilter.WireGrid(this.gridGroupingControl1);
 {% endhighlight %}
@@ -946,6 +994,7 @@ officeFilter.WireGrid(this.gridGroupingControl1);
 GridOffice2007Filter.ShowOffice2007FilterOnMouseHover = true
 GridOffice2007Filter.EnableFilteredColumnIcon = true
 Dim officeFilter As GridOffice2007Filter = New GridOffice2007Filter
+
 'Wiring the GridGroupingControlofficeFilter.WireGrid(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
@@ -966,13 +1015,10 @@ new GridStackedHeaderVisibleColumnDescriptor("Date"),
 new GridStackedHeaderVisibleColumnDescriptor("Product")});
 
 gridStackedHeaderRowDescriptor.Headers.Add(gridStackedHeaderDescriptor);
-
 this.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(gridStackedHeaderRowDescriptor);
-
 GridExcelFilter filter = new GridExcelFilter();
 filter.EnableStackedColumnFilterIcon = true;
 filter.WireGrid(gridGroupingControl1);
-
 {% endhighlight %}
 {% highlight vb %}
 Dim gridStackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor()
@@ -981,9 +1027,7 @@ Dim gridStackedHeaderRowDescriptor As New GridStackedHeaderRowDescriptor()
 Dim gridStackedHeaderDescriptor As New GridStackedHeaderDescriptor("Stacked Header1", "Header One", "ID", New Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderVisibleColumnDescriptor() { New GridStackedHeaderVisibleColumnDescriptor("ID"), New GridStackedHeaderVisibleColumnDescriptor("Date"), New GridStackedHeaderVisibleColumnDescriptor("Product")})
 
 gridStackedHeaderRowDescriptor.Headers.Add(gridStackedHeaderDescriptor)
-
 Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(gridStackedHeaderRowDescriptor)
-
 Dim filter As New GridExcelFilter()
 filter.EnableStackedColumnFilterIcon = True
 filter.WireGrid(gridGroupingControl1)
@@ -1031,7 +1075,8 @@ GroupingGridFilterBarExt gGCFilter = new GroupingGridFilterBarExt();
 
 gGCFilter.AllowIndividualColumnWiring = true;
 
-//Apply FilterByDisplayMember to the 1st column            this.gridGroupingControl1.TableDescriptor.Columns[1].Appearance.FilterBarCell.CellType = "FilterByDisplayMemberCell";
+//Apply FilterByDisplayMember to the 1st column           
+this.gridGroupingControl1.TableDescriptor.Columns[1].Appearance.FilterBarCell.CellType = "FilterByDisplayMemberCell";
 gGCFilter.WireGrid(gridGroupingControl1);
 
 //Disables filter.
@@ -1062,6 +1107,7 @@ The filtered records can be accessed by using the [Table.FilteredRecords](http:/
 {% tabs %}
 {% highlight c# %}
 GridTable table = this.gridGroupingControl1.Table;
+
 foreach (Record record in table.FilteredRecords)
 {
     Console.WriteLine("Record Info : " + record);
@@ -1069,6 +1115,7 @@ foreach (Record record in table.FilteredRecords)
 {% endhighlight %}
 {% highlight vb %}
 Dim table As GridTable = Me.gridGroupingControl1.Table
+
 For Each record As Record In table.FilteredRecords
 	Console.WriteLine("Record Info : " & record)
 Next record
@@ -1087,11 +1134,13 @@ private void GetFilterBarString()
     GridTableCellStyleInfo style;
 
     //Ensures that the filter bar is visible and RecordFilters collection is not empty and gets the filter bar row index and index of the field by using the value with which the grid records are filtered.
+
     if(gridGroupingControl1.TableDescriptor.RecordFilters.Count > 0)
     colName = gridGroupingControl1.TableDescriptor.RecordFilters[0].MappingName;
 
     foreach (Element el in this.gridGroupingControl1.Table.DisplayElements)
     {
+
         if (el.IsFilterBar() && colName != null)
         {
             style = gridGroupingControl1.Table.GetTableCellStyle(el, colName);
@@ -1115,6 +1164,7 @@ Private Sub GetFilterBarString()
 	Dim style As GridTableCellStyleInfo
     
     'Ensures that the filter bar is visible and RecordFilters collection is not empty and gets the filter bar row index and index of the field by using the value with which the grid records are filtered.
+
 	If gridGroupingControl1.TableDescriptor.RecordFilters.Count > 0 Then
 	colName = gridGroupingControl1.TableDescriptor.RecordFilters(0).MappingName
 	End If
@@ -1129,6 +1179,7 @@ Private Sub GetFilterBarString()
 
     'Uses calculated row and column indices, gets the filter bar string of the record filter.
 	Dim cellRenderer As GridTableFilterBarCellRenderer = TryCast(Me.gridGroupingControl1.TableControl.CellRenderers("FilterBarCell"), GridTableFilterBarCellRenderer)
+
 	If cellRenderer IsNot Nothing AndAlso row <> 0 Then
 		 Console.WriteLine(cellRenderer.GetFilterBarText(Me.gridGroupingControl1.TableModel(row, col)))
 	End If

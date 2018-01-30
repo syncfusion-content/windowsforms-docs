@@ -21,129 +21,83 @@ The following code example implements a solution for sorting a column by its dis
 
 To accomplish this, two handlers, CellClick event and QueryCellInfo event have been used. In CellClick event, display member is set to the existing mapping name in sortName (which will be the value member) so that sorting is done by display member.
 
-
-
+{% tabs %}
 {% highlight c# %}
-
 string sortName = column.MappingName;
 
 if (column.MappingName == "SupplierID")
-
     sortName = "CompanyName";
 
 else if (column.MappingName == "CategoryID")
-
     sortName = "CategoryName";
-
-
 {% endhighlight  %}
-
 {% highlight vbnet %}
-
-
 Dim sortName As String = column.MappingName
 
 If column.MappingName = "SupplierID" Then
-
 sortName = "CompanyName"
 
 ElseIf column.MappingName = "CategoryID" Then
-
 sortName = "CategoryName"
-
 End If
-
 {% endhighlight  %}
+{% endtabs %}
 
 DataView is created by using List property under CurrencyManager class.
 
-
-
-
+{% tabs %}
 {% highlight c# %}
 CurrencyManager cm = BindingContext[grid.DataSource, grid.DataMember] as CurrencyManager;
-
 DataView dataView = cm.List as DataView;
-
-
 {% endhighlight  %}
-
-
-
 {% highlight vbnet %}
 Dim cm As CurrencyManager = TryCast(BindingContext(Grid.DataSource, Grid.DataMember), CurrencyManager)
-
 Dim dataView As DataView = TryCast(cm.List, DataView)
+{% endhighlight %}
+{% endtabs %}
 
 DataView sort is applied to this with sortName.
-
-
-
-
-
+{% tabs %}
+{% highlight c# %}
 if (dataView.Sort == sortName)
-
 {
-
     dataView.Sort = sortName + " DESC";
-
 }
 
 else
-
     dataView.Sort = sortName;
-
-
-
-
-
-
-
+{% endhighlight %}
+{% highlight vbnet %}
 If dataView.Sort = sortName Then
-
 dataView.Sort = sortName & " DESC"
 
 Else
-
 dataView.Sort = sortName
-
 End If
 {% endhighlight  %}
+{% endtabs %}
 
 N> CurrencyManager manages a list of binding objects when data source uses IBindingList interface.
 
 In QueryCellInfo handler, the sorting icon is drawn with respect to sorting
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 if (dataView.Sort == sortName)
-
     e.Style.Tag = ListSortDirection.Ascending;
 
 else if (dataView.Sort == sortName + " DESC")
-
     e.Style.Tag = ListSortDirection.Descending;
-
-
-
 {% endhighlight  %}
 {% highlight vbnet %}
-
-
-
 If dataView.Sort = sortName Then
-
 e.Style.Tag = ListSortDirection.Ascending
 
 ElseIf dataView.Sort = sortName & " DESC" Then
-
 e.Style.Tag = ListSortDirection.Descending
-
 End If
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Sort-by-DisplayMember_images/Sort-by-DisplayMember_img3.jpeg)
 

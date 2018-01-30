@@ -97,6 +97,7 @@ This occurs when a user clicks on a child button element inside the cell rendere
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.CellButtonClicked += new Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventHandler(TableControl_CellButtonClicked);
+
 private void TableControl_CellButtonClicked(object sender, Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventArgs e)
 {
     Console.WriteLine("CellButtonClicked");
@@ -104,6 +105,7 @@ private void TableControl_CellButtonClicked(object sender, Syncfusion.Windows.Fo
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.TableControl.CellButtonClicked += New Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventHandler(AddressOf TableControl_CellButtonClicked)
+
 Private Sub TableControl_CellButtonClicked(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridCellButtonClickedEventArgs)
     Console.WriteLine("CellButtonClicked")
 End Sub
@@ -116,15 +118,19 @@ This occurs when the user double-clicks inside a cell. The event handler receive
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.CellDoubleClick += new Syncfusion.Windows.Forms.Grid.GridCellClickEventHandler(TableControl_CellDoubleClick);
+
 private void TableControl_CellDoubleClick(object sender, Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs e)
 {
+
     // Notify the double click performed in a cell
     MessageBox.Show("Mouse Button is clicked Twice");
 }
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.TableControl.CellDoubleClick += New Syncfusion.Windows.Forms.Grid.GridCellClickEventHandler(AddressOf TableControl_CellDoubleClick)
+
 Private Sub TableControl_CellDoubleClick(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs)
+
     ' Notify the double click performed in a cell
     MessageBox.Show("Mouse Button is clicked Twice")
 End Sub
@@ -137,6 +143,7 @@ This occurs for every cell after the grid has drawn the specified cell. The even
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.CellDrawn += new Syncfusion.Windows.Forms.Grid.GridDrawCellEventHandler(TableControl_CellDrawn);
+
 void TableControl_CellDrawn(object sender, Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs e)
 {
     Console.WriteLine("Cell Drawn");
@@ -144,6 +151,7 @@ void TableControl_CellDrawn(object sender, Syncfusion.Windows.Forms.Grid.GridDra
 {% endhighlight %}
 {% highlight vb %}
 Private Me.gridGroupingControl1.TableControl.CellDrawn += New Syncfusion.Windows.Forms.Grid.GridDrawCellEventHandler(AddressOf TableControl_CellDrawn)
+
 Private Sub TableControl_CellDrawn(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs)
     Console.WriteLine("Cell Drawn")
 End Sub
@@ -159,6 +167,7 @@ It will occur before the grid activates the specified cell as current cell. The 
 {% highlight c# %}
 // Notifies before activating the current cell
 this.gridGroupingControl1.TableControl.CurrentCellActivating += new Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventHandler(TableControl_CurrentCellActivating);
+
 void TableControl_CurrentCellActivating(object sender, Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventArgs e)
 {
     Console.WriteLine("CurrentCell is activating");
@@ -166,7 +175,9 @@ void TableControl_CurrentCellActivating(object sender, Syncfusion.Windows.Forms.
 {% endhighlight %}
 {% highlight vb %}
 ' Notifies before activating the current cell
+
 Private Me.gridGroupingControl1.TableControl.CurrentCellActivating += New Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventHandler(AddressOf TableControl_CurrentCellActivating)
+
 Private Sub TableControl_CurrentCellActivating(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridCurrentCellActivatingEventArgs)
     Console.WriteLine("CurrentCell is activating")
 End Sub
@@ -180,6 +191,7 @@ It will occur after the grid activates the specified cell as current cell.
 {% highlight c# %}
 // Notifies after activating the current cell
 this.gridGroupingControl1.TableControl.CurrentCellActivated += new EventHandler(TableControl_CurrentCellActivated);
+
 void TableControl_CurrentCellActivated(object sender, EventArgs e)
 {
     Console.WriteLine("CurrentCell is activated");
@@ -188,6 +200,7 @@ void TableControl_CurrentCellActivated(object sender, EventArgs e)
 {% highlight vb %}
 ' Notifies after activating the current cell
 AddHandler gridGroupingControl1.TableControl.CurrentCellActivated, AddressOf TableControl_CurrentCellActivated
+
 Private Sub TableControl_CurrentCellActivated(ByVal sender As Object, ByVal e As EventArgs)
     Console.WriteLine("CurrentCell is activated")
 End Sub
@@ -201,6 +214,7 @@ It will occur when the user changes contents of the current cell.
 {% highlight c# %}
 // Notify while changing the current cell
 this.gridGroupingControl1.TableControl.CurrentCellChanged += new EventHandler(TableControl_CurrentCellChanged);
+
 void TableControl_CurrentCellChanged(object sender, EventArgs e)
 {
     Console.WriteLine("CurrentCell is Changed");
@@ -209,6 +223,7 @@ void TableControl_CurrentCellChanged(object sender, EventArgs e)
 {% highlight vb %}
 ' Notify while changing the current cell
 AddHandler gridGroupingControl1.TableControl.CurrentCellChanged, AddressOf TableControl_CurrentCellChanged
+
 Private Sub TableControl_CurrentCellChanged(ByVal sender As Object, ByVal e As EventArgs)
     Console.WriteLine("CurrentCell is Changed")
 End Sub
@@ -222,6 +237,7 @@ It will occur when the current cell switches to in-place editing and the control
 {% highlight c# %}
 // Notify while current cell control get focus 
 this.gridGroupingControl1.TableControl.CurrentCellControlGotFocus += new ControlEventHandler(TableControl_CurrentCellControlGotFocus);    
+
 void TableControl_CurrentCellControlGotFocus(object sender, ControlEventArgs e)
 {
     Console.WriteLine("CurrentCell control is get focused")
@@ -230,6 +246,7 @@ void TableControl_CurrentCellControlGotFocus(object sender, ControlEventArgs e)
 {% highlight vb %}
 ' Notify while current cell control get focus 
 AddHandler gridGroupingControl1.TableControl.CurrentCellControlGotFocus, AddressOf TableControl_CurrentCellControlGotFocus
+
 Private Sub TableControl_CurrentCellControlGotFocus(ByVal sender As Object, ByVal e As ControlEventArgs)
     Console.WriteLine("CurrentCell control is get focused")
 End Sub
@@ -255,6 +272,7 @@ It will occur after the grid deactivates current cell. The event handler receive
 {% highlight c# %}
 // Notify after deactivating the current cell
 this.gridGroupingControl1.TableControl.CurrentCellDeactivated += new Syncfusion.Windows.Forms.Grid.GridCurrentCellDeactivatedEventHandler(TableControl_CurrentCellDeactivated);
+
 void TableControl_CurrentCellDeactivated(object sender, Syncfusion.Windows.Forms.Grid.GridCurrentCellDeactivatedEventArgs e)
 {
     Console.WriteLine("CurrentCell is deactivated");
@@ -263,6 +281,7 @@ void TableControl_CurrentCellDeactivated(object sender, Syncfusion.Windows.Forms
 {% highlight vb %}
 ' Notify after deactivating the current cell
 AddHandler gridGroupingControl1.TableControl.CurrentCellDeactivated, AddressOf TableControl_CurrentCellDeactivated
+
 Private Sub TableControl_CurrentCellDeactivated(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridCurrentCellDeactivatedEventArgs)
     Console.WriteLine("CurrentCell is deactivated")
 End Sub
@@ -290,6 +309,7 @@ It will occur when the grid has successfully validated the contents of the activ
 {% highlight c# %}
 // Notify that the Current cell content is successfully validated
 this.gridGroupingControl1.TableControl.CurrentCellValidated += new EventHandler(TableControl_CurrentCellValidated);
+
 void TableControl_CurrentCellValidated(object sender, EventArgs e)
 {
     Console.WriteLine("Current cell is validated");
@@ -298,6 +318,7 @@ void TableControl_CurrentCellValidated(object sender, EventArgs e)
 {% highlight vb %}
 ' Notify that the Current cell content is successfully validated
 AddHandler gridGroupingControl1.TableControl.CurrentCellValidated, AddressOf TableControl_CurrentCellValidated
+
 Private Sub TableControl_CurrentCellValidated(ByVal sender As Object, ByVal e As EventArgs)
     Console.WriteLine("Current cell is validated")
 End Sub
@@ -313,6 +334,7 @@ This event will occur when the grid [TableControl](http://help.syncfusion.com/cr
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.Click += new EventHandler(TableControl_Click);
+
 void TableControl_Click(object sender, EventArgs e)
 {
     Console.WriteLine("Control is Clicked");
@@ -320,6 +342,7 @@ void TableControl_Click(object sender, EventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.Click, AddressOf TableControl_Click
+
 Private Sub TableControl_Click(ByVal sender As Object, ByVal e As EventArgs)
     Console.WriteLine("Control is Clicked")
 End Sub
@@ -332,6 +355,7 @@ This event will be occur when grid [TableControl](http://help.syncfusion.com/cr/
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.DoubleClick += new EventHandler(TableControl_DoubleClick);
+
 void TableControl_DoubleClick(object sender, EventArgs e)
 {
     Console.WriteLine("Double Click is performed");
@@ -339,6 +363,7 @@ void TableControl_DoubleClick(object sender, EventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.DoubleClick, AddressOf TableControl_DoubleClick
+
 Private Sub TableControl_DoubleClick(ByVal sender As Object, ByVal e As EventArgs)
     Console.WriteLine("Double Click is performed")
 End Sub
@@ -352,6 +377,7 @@ This event will occur when the Drag and Drop is completed.
 {% highlight c# %}
 // Notify the DragDrop operation
 this.gridGroupingControl1.TableControl.DragDrop += new DragEventHandler(TableControl_DragDrop);
+
 void TableControl_DragDrop(object sender, DragEventArgs e)
 {
     Console.WriteLine("DragDrop");
@@ -360,6 +386,7 @@ void TableControl_DragDrop(object sender, DragEventArgs e)
 {% highlight vb %}
 ' Notify the DragDrop operation
 AddHandler gridGroupingControl1.TableControl.DragDrop, AddressOf TableControl_DragDrop
+
 Private Sub TableControl_DragDrop(ByVal sender As Object, ByVal e As DragEventArgs)
     Console.WriteLine("DragDrop")
 End Sub
@@ -372,6 +399,7 @@ This event will occur when the GridGroupingControl receives the focus.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.GotFocus += new EventHandler(TableControl_GotFocus);
+
 void TableControl_GotFocus(object sender, EventArgs e)
 {
     Console.WriteLine("Control Got Focus.");
@@ -379,6 +407,7 @@ void TableControl_GotFocus(object sender, EventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.GotFocus, AddressOf TableControl_GotFocus
+
 Private Sub TableControl_GotFocus(ByVal sender As Object, ByVal e As EventArgs)
     Console.WriteLine("Control Got Focus.")
 End Sub
@@ -391,6 +420,7 @@ It occurs when the mouse pointer is over the control and mouse button is pressed
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.MouseDown += new MouseEventHandler(TableControl_MouseDown);
+
 void TableControl_MouseDown(object sender, MouseEventArgs e)
 {
     Console.WriteLine("MouseDown is performed");
@@ -398,6 +428,7 @@ void TableControl_MouseDown(object sender, MouseEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.MouseDown, AddressOf TableControl_MouseDown
+
 Private Sub TableControl_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
     Console.WriteLine("MouseDown is performed")
 End Sub
@@ -410,6 +441,7 @@ This event will occur when mouse pointer leaves the GridGroupingControl.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.MouseLeave += new EventHandler(TableControl_MouseLeave);
+
 void TableControl_MouseLeave(object sender, EventArgs e)
 {
     Console.WriteLine("Mouse button is released");
@@ -417,6 +449,7 @@ void TableControl_MouseLeave(object sender, EventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.MouseLeave, AddressOf TableControl_MouseLeave
+
 Private Sub TableControl_MouseLeave(ByVal sender As Object, ByVal e As EventArgs)
     Console.WriteLine("Mouse button is released")
 End Sub
@@ -429,6 +462,7 @@ This event will occur when the mouse pointer is over the control and mouse butto
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.MouseUp += new MouseEventHandler(TableControl_MouseUp);
+
 private void TableControl_MouseUp(object sender, MouseEventArgs e)
 {
     Console.WriteLine("MouseUp: No. of Clicks" + e.Clicks.ToString());
@@ -436,6 +470,7 @@ private void TableControl_MouseUp(object sender, MouseEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.MouseUp, AddressOf TableControl_MouseUp
+
 Private Sub TableControl_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs)
     Console.WriteLine("MouseUp: No. of Clicks" & e.Clicks.ToString())
 End Sub
@@ -471,6 +506,7 @@ It occurs when the mouse pointer is over the control and mouse button is pressed
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.MouseUp += new MouseEventHandler(TableControl_MouseUp);
+
 private void TableControl_MouseUp(object sender, MouseEventArgs e)
 {
     Console.WriteLine("MouseUp: No. of Clicks" + e.Clicks.ToString());
@@ -478,6 +514,7 @@ private void TableControl_MouseUp(object sender, MouseEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.MouseUp, AddressOf TableControl_MouseUp
+
 Private Sub TableControl_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs)
     Console.WriteLine("MouseUp: No. of Clicks" & e.Clicks.ToString())
 End Sub
@@ -494,6 +531,7 @@ This event will occur when any key is pressed at the time of GridGroupingControl
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.KeyDown += new KeyEventHandler(TableControl_KeyDown);
+
 void TableControl_KeyDown(object sender, KeyEventArgs e)
 {
     Console.WriteLine("key down is performed");
@@ -501,6 +539,7 @@ void TableControl_KeyDown(object sender, KeyEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.KeyDown, AddressOf TableControl_KeyDown
+
 Private Sub TableControl_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
     Console.WriteLine("key down is performed")
 End Sub
@@ -513,6 +552,7 @@ This event will occur when any key is pressed at the time of GridGroupingControl
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TableControl.KeyPress += new KeyPressEventHandler(TableControl_KeyPress);
+
 void TableControl_KeyPress(object sender, KeyPressEventArgs e)
 {
     Console.WriteLine("Key " + e.KeyChar + "is Pressed");
@@ -520,6 +560,7 @@ void TableControl_KeyPress(object sender, KeyPressEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.KeyPress, AddressOf TableControl_KeyPress
+
 Private Sub TableControl_KeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs)
     Console.WriteLine("Key " & e.KeyChar & "is Pressed")
 End Sub
@@ -540,6 +581,7 @@ void TableControl_KeyUp(object sender, KeyEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.TableControl.KeyUp, AddressOf TableControl_KeyUp
+
 Private Sub TableControl_KeyUp (ByVal sender As Object, ByVal e As KeyEventArgs)
     Console.WriteLine("key is released ")
 End Sub
@@ -555,6 +597,7 @@ This event will be triggered while filtering a column. Using this event, user ca
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.FilterBarSelectedItemChanging += new Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangingEventHandler(gridGroupingControl1_FilterBarSelectedItemChanging); 
+
 void gridGroupingControl1_FilterBarSelectedItemChanging(object sender, Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangingEventArgs e)
 {
     Console.WriteLine("FilterBar selected item is changing");
@@ -563,6 +606,7 @@ void gridGroupingControl1_FilterBarSelectedItemChanging(object sender, Syncfusio
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.FilterBarSelectedItemChanging, AddressOf gridGroupingControl1_FilterBarSelectedItemChanging
+
 Private Sub gridGroupingControl1_FilterBarSelectedItemChanging(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangingEventArgs)
     Console.WriteLine("FilterBar selected item is changing")
 End Sub
@@ -575,6 +619,7 @@ This event will be triggered after a column is filtered. Selected column, select
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.FilterBarSelectedItemChanged += new Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangedEventHandler(gridGroupingControl1_FilterBarSelectedItemChanged);
+
 void gridGroupingControl1_FilterBarSelectedItemChanged(object sender, Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangedEventArgs e)
 {
     //Retrieves the selected column, selected index and selected text.
@@ -583,6 +628,7 @@ void gridGroupingControl1_FilterBarSelectedItemChanged(object sender, Syncfusion
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.FilterBarSelectedItemChanged, AddressOf gridGroupingControl1_FilterBarSelectedItemChanged
+
 Private Sub gridGroupingControl1_FilterBarSelectedItemChanged(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.FilterBarSelectedItemChangedEventArgs)
     'Retrieves the selected column, selected index and selected text.
     MessageBox.Show(e.SelectedIndex.ToString())
@@ -718,6 +764,7 @@ The event occurs before and after the status of the current record is changed. E
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.CurrentRecordContextChange += new Syncfusion.Grouping.CurrentRecordContextChangeEventHandler(gridGroupingControl1_CurrentRecordContextChange);
+
 void gridGroupingControl1_CurrentRecordContextChange(object sender, Syncfusion.Grouping.CurrentRecordContextChangeEventArgs e)
 {
     if (e.Action == CurrentRecordAction.EndEditComplete)
@@ -726,6 +773,7 @@ void gridGroupingControl1_CurrentRecordContextChange(object sender, Syncfusion.G
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.CurrentRecordContextChange, AddressOf gridGroupingControl1_CurrentRecordContextChange
+
 Private Sub gridGroupingControl1_CurrentRecordContextChange(ByVal sender As Object, ByVal e As Syncfusion.Grouping.CurrentRecordContextChangeEventArgs)
     If e.Action = CurrentRecordAction.EndEditComplete Then
         Console.WriteLine(e.Record)
@@ -742,6 +790,7 @@ User can handle this event to make the child groups that were not initially expa
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.GroupAdded += new GroupEventHandler(gridGroupingControl1_GroupAdded);
+
 void gridGroupingControl1_GroupAdded(object sender, GroupEventArgs e)
 {
     e.Group.IsExpanded = false;
@@ -749,6 +798,7 @@ void gridGroupingControl1_GroupAdded(object sender, GroupEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.GroupAdded, AddressOf gridGroupingControl1_GroupAdded
+
 Private Sub gridGroupingControl1_GroupAdded(ByVal sender As Object, ByVal e As GroupEventArgs)
     e.Group.IsExpanded = False
 End Sub
@@ -760,6 +810,7 @@ This occurs before a group is collapsed. The event handler receives an argument 
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.GroupCollapsing += new GroupEventHandler(gridGroupingControl1_GroupCollapsing);
+
 void gridGroupingControl1_GroupCollapsing(object sender, GroupEventArgs e)
 {
     foreach (Record r in e.Group.Records)
@@ -768,6 +819,7 @@ void gridGroupingControl1_GroupCollapsing(object sender, GroupEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.GroupCollapsing, AddressOf gridGroupingControl1_GroupCollapsing
+
 Private Sub gridGroupingControl1_GroupCollapsing(ByVal sender As Object, ByVal e As GroupEventArgs)
     For Each r As Record In e.Group.Records
         Console.WriteLine("Collapsing event " & r.Info)
@@ -782,6 +834,7 @@ This occurs when a group is collapsed. The event handler receives an argument of
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.GroupCollapsed += new GroupEventHandler(gridGroupingControl1_GroupCollapsed);
+
 void gridGroupingControl1_ GroupCollapsed(object sender, GroupEventArgs e)
 {
     foreach (Record r in e.Group.Records)
@@ -790,6 +843,7 @@ void gridGroupingControl1_ GroupCollapsed(object sender, GroupEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.GroupCollapsed, AddressOf gridGroupingControl1_GroupCollapsed
+
 Private Sub gridGroupingControl1_GroupCollapsed(ByVal sender As Object, ByVal e As GroupEventArgs)
     For Each r As Record In e.Group.Records
         Console.WriteLine("Collapsing event " & r.Info)
@@ -805,6 +859,7 @@ This will triggers before a group is expanded. The event handler receives an arg
 {% highlight c# %}
 this.gridGroupingControl1.GroupExpanding += new GroupEventHandler(gridGroupingControl1_GroupExpanding);
 bool IsClickExpand = false;
+
 void gridGroupingControl1_GroupExpanding(object sender, GroupEventArgs e)
 {
     if (IsClickExpand)
@@ -816,6 +871,7 @@ void gridGroupingControl1_GroupExpanding(object sender, GroupEventArgs e)
 {% highlight vb %}
 AddHandler gridGroupingControl1.GroupExpanding, AddressOf gridGroupingControl1_GroupExpanding
 Private IsClickExpand As Boolean = False
+
 Private Sub gridGroupingControl1_GroupExpanding(ByVal sender As Object, ByVal e As GroupEventArgs)
     If IsClickExpand Then
         IsClickExpand = False
@@ -832,6 +888,7 @@ This occurs when a group is expanded. The event handler receives an argument of 
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.GroupExpanded += new GroupEventHandler(gridGroupingControl1_GroupExpanded);
+
 void gridGroupingControl1_GroupExpanded(object sender, GroupEventArgs e)
 {
     foreach (Record r in e.Group.Records)
@@ -840,6 +897,7 @@ void gridGroupingControl1_GroupExpanded(object sender, GroupEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.GroupExpanded, AddressOf gridGroupingControl1_GroupExpanded
+
 Private Sub gridGroupingControl1_GroupExpanded(ByVal sender As Object, ByVal e As GroupEventArgs)
     For Each r As Record In e.Group.Records
         Console.WriteLine("Expanded event " & r.Info)
@@ -854,6 +912,7 @@ This event occurs before a group is removed after the table was categorized and 
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.GroupRemoving += gridGroupingControl1_GroupRemoving;
+
 void gridGroupingControl1_GroupRemoving(object sender, GroupEventArgs e)
 {
     Console.WriteLine("Group is removing" + e.Group.Name);
@@ -861,6 +920,7 @@ void gridGroupingControl1_GroupRemoving(object sender, GroupEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Me.gridGroupingControl1.GroupRemoving += gridGroupingControl1_GroupRemoving
+
 Private Sub gridGroupingControl1_GroupRemoving(ByVal sender As Object, ByVal e As GroupEventArgs)
     Console.WriteLine("Group is removing" & e.Group.Name)
 End Sub
@@ -903,6 +963,7 @@ This occurs before a record with nested table is expanded. The event handler rec
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.RecordExpanding += new RecordEventHandler(gridGroupingControl1_RecordExpanding);
+
 void gridGroupingControl1_RecordExpanding(object sender, RecordEventArgs e)
 {
     if (e.Record.GetRelatedChildTable(new RelationDescriptor("ParentToChild")).GetRecordCount() == 0)
@@ -911,6 +972,7 @@ void gridGroupingControl1_RecordExpanding(object sender, RecordEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.RecordExpanding, AddressOf gridGroupingControl1_RecordExpanding
+
 Private Sub gridGroupingControl1_RecordExpanding(ByVal sender As Object, ByVal e As RecordEventArgs)
     If e.Record.GetRelatedChildTable(New RelationDescriptor("ParentToChild")).GetRecordCount() = 0 Then
         e.Cancel = True
@@ -925,6 +987,7 @@ This occurs when [RecordFieldCell](http://help.syncfusion.com/cr/cref_files/wind
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.RecordValueChanging +=new RecordValueChangingEventHandler(gridGroupingControl1_RecordValueChanging);
+
 void gridGroupingControl1_RecordValueChanging(object sender, RecordValueChangingEventArgs e)
 {
     Console.WriteLine(" New Value: {0} ", e.NewValue);
@@ -933,6 +996,7 @@ void gridGroupingControl1_RecordValueChanging(object sender, RecordValueChanging
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.RecordValueChanging, AddressOf gridGroupingControl1_RecordValueChanging
+
 Private Sub gridGroupingControl1_RecordValueChanging(ByVal sender As Object, ByVal e As RecordValueChangingEventArgs)
     Console.WriteLine(" New Value: {0} ", e.NewValue)
     Console.WriteLine(" Old Value: {0} ", e.Record.GetValue(e.Column))
@@ -946,6 +1010,7 @@ This occurs when `RecordFieldCell` cell’s value is changed and after `Record.S
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.RecordValueChanged += new RecordValueChangedEventHandler(gridGroupingControl1_RecordValueChanged);
+
 void gridGroupingControl1_RecordValueChanged(object sender, RecordValueChangedEventArgs e)
 {
     Record r = e.Record;
@@ -955,6 +1020,7 @@ void gridGroupingControl1_RecordValueChanged(object sender, RecordValueChangedEv
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.RecordValueChanged, AddressOf gridGroupingControl1_RecordValueChanged
+
 Private Sub gridGroupingControl1_RecordValueChanged(ByVal sender As Object, ByVal e As RecordValueChangedEventArgs)
     Dim r As Record = e.Record
     If e.Column <> "Column2" Then
@@ -970,6 +1036,7 @@ This occurs before the records for a group is sorted. The event handler receives
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.Table.SortingItemsInGroup += new GroupEventHandler(Table_SortingItemsInGroup);
+
 void Table_SortingItemsInGroup(object sender, GroupEventArgs e)
 {
     Console.WriteLine("Before Sorting the records in the group: " + e.Group.Info);
@@ -977,6 +1044,7 @@ void Table_SortingItemsInGroup(object sender, GroupEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler his.gridGroupingControl1.Table.SortingItemsInGroup, AddressOf Table_SortingItemsInGroup
+
 Private Sub Table_SortingItemsInGroup(ByVal sender As Object, ByVal e As GroupEventArgs)
     Console.WriteLine("Before Sorting the records in the group: " & e.Group.Info)
 End Sub
@@ -989,6 +1057,7 @@ This occurs after the records for a group is sorted. The event handler receives 
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.Table.SortedItemsInGroup += new GroupEventHandler(Table_SortedItemsInGroup);
+
 void Table_SortedItemsInGroup(object sender, GroupEventArgs e)
 {
     Console.WriteLine("After Sorting the records in the group: " + e.Group.Info);
@@ -996,6 +1065,7 @@ void Table_SortedItemsInGroup(object sender, GroupEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.Table.SortedItemsInGroup, AddressOf Table_SortedItemsInGroup
+
 Private Sub Table_SortedItemsInGroup(ByVal sender As Object, ByVal e As GroupEventArgs)
     Console.WriteLine("After Sorting the records in the group: " & e.Group.Info)
 End Sub
@@ -1008,6 +1078,7 @@ This occurs before the table processes [System.ComponentModel.IBindingList.ListC
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.SourceListListChanged += new TableListChangedEventHandler(gridGroupingControl1_SourceListListChanged);
+
 void gridGroupingControl1_SourceListListChanged(object sender, TableListChangedEventArgs e)
 {
     Console.WriteLine("ListChangedType :" + e.ListChangedType.ToString());
@@ -1015,11 +1086,9 @@ void gridGroupingControl1_SourceListListChanged(object sender, TableListChangedE
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridGroupingControl1.SourceListListChanged, AddressOf gridGroupingControl1_SourceListListChanged
+
 Private Sub gridGroupingControl1_SourceListListChanged(ByVal sender As Object, ByVal e As TableListChangedEventArgs)
     Console.WriteLine("ListChangedType :" & e.ListChangedType.ToString())
 End Sub
 {% endhighlight %}
 {% endtabs %}
-
-
-
