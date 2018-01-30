@@ -162,7 +162,7 @@ Console.ReadLine()
 6. You can apply more complex filters. Here is the code that will remove any existing filters and filter the property D being d1 or property b equal 2. Note here that since you expect property B to display only numeric data you must use the = operator in the comparison.
 
 {% tabs %}
-{% highlight %} 
+{% highlight c# %} 
 groupingEngine.TableDescriptor.RecordFilters.Clear();
 recordFilterDescriptor = new RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2");
 groupingEngine.TableDescriptor.RecordFilters.Add(recordFilterDescriptor);
