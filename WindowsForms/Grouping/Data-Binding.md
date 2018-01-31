@@ -201,7 +201,7 @@ Next
 ' Pause
 Console.ReadLine() 
 End Sub
-{% endhighligt %} 
+{% endhighlight %} 
 {% endtabs %} 
    {:.prettyprint }
 
