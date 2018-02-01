@@ -70,7 +70,7 @@ You can use the Essential Grid's GridFilterBar class to automatically add a row 
 GridFilterBar filterBar = new Syncfusion.Windows.Forms.Grid.GridFilterBar();
 filterBar.WireGrid(gridDataBoundGrid1);
 {% endhighlight %}
-{% highlight %}
+{% highlight vb %}
 'Adds a Filter Bar to the DataBoundGrid.
 Dim filterBar As GridFilterBar = New Syncfusion.Windows.Forms.Grid.GridFilterBar()
 filterBar.WireGrid(GridDataBoundGrid1)
