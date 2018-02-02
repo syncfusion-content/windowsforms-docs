@@ -11,10 +11,10 @@ documentation: ug
 
 The DateTime value of the `SfDateTimeEdit` control can be updated by editing the text in the control. DateTimeText text can be edited by two modes. 
 
-* Textbox Editing 
+* Default Editing 
 * Mask Editing
 
-## Textbox Editing
+## Default Editing
 
 The DateTime can be edited in the TextBox of the `SfDateTimeEdit` control when the `DateTimeEditingMode` is Default. In Default editing mode the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, SfDateTimeEdit control automatically update the value in the correct pattern on lost focus. i.e If the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in Editing text box, DateTimeText will be automatically converted according to LongDate pattern while pressing the enter key or on lost focus of the control. The following code snippets illustrates the same.
 
@@ -82,36 +82,28 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 ![](Editing-Support_images/Mask.png)
 
-# Right-To-Left Support
+# ReadOnly Support
 
-This control supports Right-To-Left layout. The following code snippets illustrates the same.
+This control supports ReadOnly which is used to restrict the user interactions. The following code snippets illustrates the same.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Disable the Right to Left
+//Enable the User interactions
 
-this.dateTimeEdit.RightToLeft = RightToLeft.No;
-
-//Enable the Right to Left 
-
-this.dateTimeEdit.RightToLeft = RightToLeft.Yes;
+this.dateTimeEdit.ReadOnly = true;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-'Disable the Right to Left 
-
- this.dateTimeEdit.RightToLeft = RightToLeft.No
-
 'Enable the Right to Left 
 
- this.dateTimeEdit.RightToLeft = RightToLeft.No
+this.dateTimeEdit.ReadOnly = True
 
 {% endhighlight  %}
 
 {% endtabs %}
 
-![](Editing-Support_images/lefttoright.png)
+![](Editing-Support_images/Readonly.png)

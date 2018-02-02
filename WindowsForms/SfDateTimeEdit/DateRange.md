@@ -29,11 +29,11 @@ Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.
 
 this.Controls.Add(dateTimeEdit);
 
-dateTimeEdit.Value = new DateTime(2017, 7, 5);
+dateTimeEdit.Value = new DateTime(2018, 2, 1);
 
-dateTimeEdit.MinDateTime = new DateTime(2010, 1, 1);
+dateTimeEdit.MinDateTime = new DateTime(2018, 2, 1);
 
-dateTimeEdit.MaxDateTime = new DateTime(2030, 1, 1);
+dateTimeEdit.MaxDateTime = new DateTime(2018, 2, 28);
 
 {% endhighlight  %}
 
@@ -43,15 +43,17 @@ Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
 
 Me.Controls.Add(dateTimeEdit)
 
-dateTimeEdit.Value = New DateTime(2017, 7, 5)
+dateTimeEdit.Value = New DateTime(2018, 2, 1)
 
-dateTimeEdit.MinDateTime = New DateTime(2010, 01, 01)
+dateTimeEdit.MinDateTime = New DateTime(2018, 2, 1)
 
-dateTimeEdit.MaxDateTime = New DateTime(2030, 01, 01)
+dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 28)
 
 {% endhighlight  %}
 
 {% endtabs %}
+
+![](DateRange_images/SfCalendarMinMaxDate.png)
 
 ## Detect the Value change of SfDateTimeEdit
 

@@ -7,9 +7,9 @@ control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Keyboard and Mouse interaction
+# Keyboard and Mouse support
 
-In Mask Edit mode, the Up and Down arrows in the `SfDateTimeEdit` control spin the selected field (Month, Day, Year, Hour, Second and Minute) one step up or down. Mouse Scroll in the `SfDateTimeEdit` control spin the selected parts in the Value property one step up or down. The spin behavior in the DateTimeEdit control can be enabled by setting the `AllowValueChangeOnMouseWheel` property to true.
+In Mask Edit mode, the Up and Down arrows in the `SfDateTimeEdit` control spin the selected field (Month, Day, Year, Hour, Second and Minute) one step up or down. Mouse Scroll in the `SfDateTimeEdit` control spin the selected parts in the Value property one step up or down. The spin behavior in this control can be enabled by setting the `AllowValueChangeOnMouseWheel` property to true.
 
 {% tabs %}
 

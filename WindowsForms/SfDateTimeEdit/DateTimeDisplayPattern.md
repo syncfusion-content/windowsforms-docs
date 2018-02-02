@@ -93,7 +93,7 @@ dateTimeEdit.DateTimePattern = DateTimePattern.Custom;
 
 //Setting Custom Pattern
 
-dateTimeEdit.CustomPattern = "MM/dd/yy hh:mm:ss";
+dateTimeEdit.Format = "MM/dd/yy hh:mm:ss";
 
 {% endhighlight %}
 
@@ -109,7 +109,7 @@ dateTimeEdit.DateTimePattern = DateTimePattern.[Custom]
 
 'Setting Custom Pattern
 
-dateTimeEdit.CustomPattern = "MM/dd/yy hh:mm:ss"
+dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 
 {% endhighlight %}
 
