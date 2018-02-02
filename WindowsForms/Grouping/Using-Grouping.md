@@ -42,8 +42,6 @@ foreach(Record rec in groupingEngine.Table.Records)
    }
 }
 {% endhighlight %}
-
-   {:.prettyprint }
 {% highlight vb %}
 ' Group on property C.
 groupingEngine.TableDescriptor.GroupedColumns.Add("C")
@@ -60,8 +58,6 @@ Next rec
 {% endhighlight %}
 {% endtabs %}
  
-   {:.prettyprint }
-
 2. After running the code from step 1, a screen similar to the one below will be displayed. Note that the bottom list displayed is now sorted by column C. This is a one side effect of grouping by column C.
 
 
@@ -157,8 +153,6 @@ else if(g.Groups != null && g.Groups.Count > 0)
 }
 }
 {% endhighlight %}
-
-   {:.prettyprint }
 {% highlight vb %}
 Private Sub ShowRecordsUnderGroup(ByVal g As Group)
 
@@ -209,8 +203,6 @@ ShowRecordsUnderGroup(g);
 // Pause
 Console.ReadLine(); 
 {% endhighlight %}
- 
-   {:.prettyprint }
 {% highlight vb %}
 ' Get the Group associated with the value "c1".
 Dim g As Group = groupingEngine.Table.TopLevelGroup.Groups("c1")
@@ -220,7 +212,6 @@ ShowRecordsUnderGroup(g)
 Console.ReadLine() 
 {% endhighlight %}
 {% endtabs %}
-   {:.prettyprint }
 
    ![](Using-Grouping_images/Using-Grouping_img3.png)
 
@@ -244,7 +235,7 @@ ShowRecordsUnderGroup(groupingEngine.Table.TopLevelGroup)
 ' Pause
 Console.ReadLine() 
 {% endhighlight %}		
-   {:.prettyprint }
+{% endtabs %}
    
 ## Adding a Summary
 
