@@ -45,7 +45,7 @@ dateTimeEdit.Value = Nothing
 
 ## Watermark
 
-Watermark is the help content to displayed in the `SfDateTimeEdit` control when AllowNull property is true and the Value property is set to null, and it displayed when the control lost its Focus. The context of the Watermark text can be assigned by set the `WatermarkText` of SfDateTimeEdit.
+Watermark is the help content to displayed in the `SfDateTimeEdit` control when `AllowNull` property is true and the Value property is set to null, and it displayed when the control lost its Focus. The context of the Watermark text can be assigned by set the `Watermark` of SfDateTimeEdit.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ dateTimeEdit.AllowNull = true;
 
 dateTimeEdit.Value = null;
 
-dateTimeEdit.WatermarkText = "Date is null";
+dateTimeEdit.Watermark = "Date is null";
 
 {% endhighlight  %}
 
@@ -73,7 +73,7 @@ dateTimeEdit.AllowNull = True
 
 dateTimeEdit.Value = Nothing
 
-dateTimeEdit.WatermarkText = "Date is null"
+dateTimeEdit.Watermark = "Date is null"
 
 {% endhighlight  %}
 

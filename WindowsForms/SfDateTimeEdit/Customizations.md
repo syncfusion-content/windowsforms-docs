@@ -18,9 +18,11 @@ UpDown allows to change the value by Keyboard or Mouse interaction and it also a
 {% highlight c# %}
 
 //Enable the UpDown Button
+
 this.dateTimeEdit.ShowUpDown = true;
 
 //Disable the UpDown Button
+
 this.dateTimeEdit.ShowUpDown = false;
 
 {% endhighlight  %}
@@ -28,9 +30,11 @@ this.dateTimeEdit.ShowUpDown = false;
 {% highlight vb %}
 
 'Enable the UpDown Button
+
 this.dateTimeEdit.ShowUpDown = True
 
 'Disable the UpDown Button
+
 this.dateTimeEdit.ShowUpDown = False
 
 {% endhighlight  %}
@@ -38,6 +42,40 @@ this.dateTimeEdit.ShowUpDown = False
 {% endtabs %} 
 
 ![](Customization_images/Showupdown.png)
+
+## Customize the DropDown Button
+
+DropDown allows to open the Calendar Popup by Keyboard or Mouse interaction. Shows or hides the DropDown button using the `ShowDropDown` property. The following code snippets illustrates the same.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Enable the DropDown Button
+
+this.dateTimeEdit.ShowDropDown = true;
+
+//Disable the DropDown Button
+
+this.dateTimeEdit.ShowDropDown = false;
+
+{% endhighlight  %}
+
+{% highlight vb %}
+
+'Enable the DropDown Button
+
+this.dateTimeEdit.ShowDropDown = True
+
+'Disable the DropDown Button
+
+this.dateTimeEdit.ShowDropDown = False
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+![](Customization_images/ShowDropDown.png)
 
 ## Key Navigation Support
 
@@ -48,9 +86,11 @@ this.dateTimeEdit.ShowUpDown = False
 {% highlight c# %}
 
 //Allow the arrow keys functionalities
+
 this.dateTimeEdit.InterceptArrowKeys = true;
 
 //Disable the arrow keys functionalities
+
 this.dateTimeEdit.InterceptArrowKeys = false;
 
 {% endhighlight  %}
@@ -58,9 +98,11 @@ this.dateTimeEdit.InterceptArrowKeys = false;
 {% highlight vb %}
 
 'Allow the arrow keys functionalities
+
 this.dateTimeEdit.InterceptArrowKeys = True
 
 'Disable the arrow keys functionalities
+
 this.dateTimeEdit.InterceptArrowKeys = False
 
 {% endhighlight  %}
@@ -78,9 +120,11 @@ this.dateTimeEdit.InterceptArrowKeys = False
 {% highlight c# %}
 
 //Setting Left Popup alignment
+
 this.dateTimeEdit.DropDownPopupAlignment = DropDownPopupAlignment.Left;
 
 //Setting Right Popup alignment
+
 this.dateTimeEdit.DropDownPopupAlignment = DropDownPopupAlignment.Right;
 
 {% endhighlight  %}
@@ -88,9 +132,11 @@ this.dateTimeEdit.DropDownPopupAlignment = DropDownPopupAlignment.Right;
 {% highlight vb %}
 
 'Setting Left Popup alignment
+
 this.dateTimeEdit.DropDownPopupAlignment = DropDownPopupAlignment.Left
 
 'Setting Right Popup alignment
+
 this.dateTimeEdit.DropDownPopupAlignment = DropDownPopupAlignment.Right
 
 {% endhighlight  %}
@@ -99,3 +145,32 @@ this.dateTimeEdit.DropDownPopupAlignment = DropDownPopupAlignment.Right
 
 ![](Customization_images/popupalignment.png)
 
+## DropDown Popup Size customization
+
+By default it will be displayed from Left position with default Popup Width and it can be customized by `DropDownSize` property. The following code snippets illustrates the same.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Setting DropDownSize
+
+this.dateTimeEdit.DropDownSize = new Size(294, 293);
+
+this.dateTimeEdit.Width = 294;
+
+{% endhighlight  %}
+
+{% highlight vb %}
+
+'Setting DropDownSize
+
+this.dateTimeEdit.DropDownSize = new Size(294, 293)
+
+this.dateTimeEdit.Width = 294
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+![](Customization_images/DropDownSize.png)

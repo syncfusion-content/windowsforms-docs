@@ -25,7 +25,7 @@ Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.
 
 this.Controls.Add(dateTimeEdit);
 
-dateTimeEdit.Value = new DateTime(2017, 6, 27);
+dateTimeEdit.Value = new DateTime(2018, 2, 1);
 
 dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default;
 
@@ -40,7 +40,7 @@ Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
 
 Me.Controls.Add(dateTimeEdit)
 
-dateTimeEdit.Value = New DateTime(2017, 6, 27)
+dateTimeEdit.Value = New DateTime(2018, 2, 1)
 
 dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default
 
