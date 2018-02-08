@@ -9,7 +9,7 @@ documentation: ug
 
 # Globalization
 
-`SfDateTimeEdit` control provides globalization support that helps to designing and developing a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, you should determine which cultures your appliction will support. 
+`SfDateTimeEdit` control provides globalization support that helps to designing and developing a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, you should determine which cultures your application will support. 
 
 {% tabs %}
 

@@ -15,11 +15,11 @@ documentation: ug
 
 DropDown Calendar control to pick the date `Value` for `SfDateTimeEdit` can be opened by `ALT + DOWN` arrow combinations. DropDown calendar can be closed by `ALT + UP` and `ALT + Down` key combinations if dropdown calendar is already opened. State of DropDown calendar can be get from `IsDropDowOpen` of SfDateTimeEdit.
 
-DropDown Calendar provides key board support to change the selected date by keyboard. Date from different month, year or decade can be selectd by navigate to next view on press `CTRL + UP` and navigate back to the old view on `CTRL + Down` key combinations. Selection in views can be changed by Right and Left arrow keys.
+DropDown Calendar provides key board support to change the selected date by keyboard. Date from different month, year or decade can be selected by navigate to next view on press `CTRL + UP` and navigate back to the old view on `CTRL + Down` key combinations. Selection in views can be changed by Right and Left arrow keys.
 
 ### Handle DropDown Calendar Programmatically
 
-Dropdown calendar can be opened by `ShowPopup` method of SfDateTimeEdit. the follow code illustatres how to open the DropDown Calendar programmatically.
+Dropdown calendar can be opened by `ShowPopup` method of SfDateTimeEdit. the follow code illustrates how to open the DropDown Calendar programmatically.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ dateTimeEdit.ShowPopup()
 
 {% endtabs %}
 
-Dropdown calendar can be closed by `ClosePopup` method of SfDateTimeEdit. the follow code illustatres how to open the DropDown Calendar programmatically.
+Dropdown calendar can be closed by `ClosePopup` method of SfDateTimeEdit. the follow code illustrates how to open the DropDown Calendar programmatically.
 
 {% tabs %}
 

@@ -42,8 +42,8 @@ SfDateTimEdit control can be added to the application by dragging it from Toolbo
 In order to add control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
-	* Syncfusion.Core.Winforms
-	* Syncfusion.SfInput.Winforms
+	* Syncfusion.Core.Winforms.dll
+	* Syncfusion.SfInput.Winforms.dll
 
 2. Include the namespaces **Syncfusion.WinForms.Input**
 
