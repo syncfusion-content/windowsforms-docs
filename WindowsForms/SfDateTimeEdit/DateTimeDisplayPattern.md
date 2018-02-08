@@ -1,15 +1,15 @@
 ---
 layout: post
-title: DateTime display patterns of SfDateTimeEdit
-description: DateTime display patterns of SfDateTimeEdit
+title: DateTime display patterns of SfDateTimeEdit for Windows Forms
+description: How to change display patterns of DateTime and Custom patttern for SfDateTimeEdit 
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
 
-# DateTime Display Patterns
+# Display Patterns
 
-The display format of the date in `SfDateTimeEdit` control can be customized by the Pattern and Custom display Pattern properties.
+`DateTimePattern` helps to defines how to specifies the date time display pattern for SfDateTimeEdit. The display format of the date in `SfDateTimeEdit` control can be customized by the Pattern and Custom display Pattern properties.
 
 ## DateTime Format
 
@@ -45,7 +45,7 @@ dateTimeEdit.DateTimePattern = DateTimePattern.LongDate;
 
 {% highlight VB %}
 
-Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
+Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.
 
 Me.Controls.Add(dateTimeEdit)
 
@@ -57,7 +57,7 @@ dateTimeEdit.DateTimePattern = DateTimePattern.LongDate
 
 {% endtabs %} 
 
-![](DateTimePattern_images/DateTimePattern_LongDate.png)
+![](datetimepattern-images/datetimepattern_longdate.png)
 
 Long Date
 {:.caption}
@@ -99,13 +99,13 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss";
 
 {% highlight VB %}
 
-Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
+Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
 Me.Controls.Add(dateTimeEdit)
 
 dateTimeEdit.Value = New DateTime(2017, 7, 5)
 
-dateTimeEdit.DateTimePattern = DateTimePattern.[Custom]
+dateTimeEdit.DateTimePattern = DateTimePattern.Custom
 
 'Setting Custom Pattern
 
@@ -116,6 +116,6 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 {% endtabs %} 
 
 
-![](DateTimePattern_images/DateTimePattern_Custom.png)
+![](datetimepattern-images/datetimepattern_custom.png)
 
 N> CustomPattern support can be enabled by setting the `DateTimePattern` to the `Custom`.
