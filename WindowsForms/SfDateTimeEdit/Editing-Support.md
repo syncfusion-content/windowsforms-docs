@@ -1,15 +1,15 @@
 ---
 layout: post
 title: DateTime Editing Modes of SfDateTimeEdit control for Windows Forms
-description: DateTime Editing Modes of SfDateTimeEdit control for Windows Forms
+description: How to use different editing modes of SfDateTimeEdit control
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
 
-# DateTime Editing Modes
+# DateTime Editing
 
-The DateTime value of the `SfDateTimeEdit` control can be updated by editing the text in the control. DateTimeText text can be edited by two modes. 
+The DateTime value of the `SfDateTimeEdit` control can be updated by editing the text in the control. `DateTimeEditingMode` decides how to insert the input values for SfDateTimeEdit from keyboard. DateTimeText text can be edited by two ways. 
 
 * Default Editing 
 * Mask Editing
@@ -34,7 +34,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default;
 
 {% highlight VB %}
 
-Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
+Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.
 
 Me.Controls.Add(dateTimeEdit)
 
@@ -46,7 +46,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default
 
 {% endtabs %} 
 
-![](Editing-Support_images/Default.png)
+![](editing-support-images/default.png)
 
 ## Mask Editing
 
@@ -68,7 +68,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask;
 
 {% highlight VB %}
 
-Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
+Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
 Me.Controls.Add(dateTimeEdit)
 
@@ -80,11 +80,11 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 {% endtabs %} 
 
-![](Editing-Support_images/Mask.png)
+![](editing-support-images/mask.png)
 
-# ReadOnly Support
+## ReadOnly
 
-This control supports ReadOnly which is used to restrict the user interactions. The following code snippets illustrates the same.
+This control supports ReadOnly which is used to restrict edit date and time fields in the `SfDateTimeEdit`. Set ReadOnly as **true** restricts the text editing in SfDateTimeEdit and user can change the Value only by clicking UpDown buttons or pick the date from the DropDown SfCalendar. The following code snippets illustrates the same.
 
 {% tabs %}
 
@@ -92,18 +92,18 @@ This control supports ReadOnly which is used to restrict the user interactions. 
 
 //Enable the User interactions
 
-this.dateTimeEdit.ReadOnly = true;
+this.dateTimeEdit.ReadOnly = false;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-'Enable the Right to Left 
+'Enable the User interactions
 
-this.dateTimeEdit.ReadOnly = True
+Me.dateTimeEdit.ReadOnly = false
 
 {% endhighlight  %}
 
 {% endtabs %}
 
-![](Editing-Support_images/Readonly.png)
+![](editing-support-images/readonly.png)

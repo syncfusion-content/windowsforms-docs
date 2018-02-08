@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting started with SfDateTimeEdit for Syncfusion Essential Windows Forms
+description: How to add SfDateTimeEdit and enable its basic features.
 platform: WindowsForms
 control: SfDateTimeEdit 
 documentation: ug
@@ -11,46 +11,41 @@ documentation: ug
 
 This section briefly describes how to design a `SfDateTimeEdit` Control in a Windows Forms Application.
 
-* Adding SfDateTimEdit Control 
+* Adding SfDateTimeEdit Control 
 * Configuring SfDateTimeEdit Values
 
-## Adding SfDateTimeEdit Control
+## Creating simple application with SfDateTimeEdit
 
-### Through Designer
+In this walk through, you will create Windows Forms Application that contains SfDateTimEdit control.
 
-The following steps illustrate how to create an Edit Control through designer.
+1. [Creating project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in C#](#adding-control-manually-in-code)
+4. [Configuring date range](#configuring-date-range)
+5. [Configure editing mode](#configure-editing-mode)
+6. [Configure allow null value](#configure-allow-null-value)
+7. [Configure custom format](#configure-custom-format)
+8. [Configure UpDown DateTimeEdit](#configure-updown-datetimeedit)
 
-* Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
-* Drag and Drop `SfDateTimeEdit` control in the Form from Toolbox.
+### Creating the project
 
-![](Getting-Started_images/GettingStarted.png) 
+Create new Windows Forms Project in Visual Studio to display SfDateTimEdit with date and time information.
 
-### Configuring SfDateTimeEdit Values
+### Adding control via Designer
 
-The most commonly used settings of the `SfDateTimeEdit` control are configured either through Designer using the Smart tag or through the Properties window or through code.
+SfDateTimEdit control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![](Getting-Started_images/GettingStarted-SmartTag.png)
+![](getting-started-images/toolbox.png)
 
-### Through Code
+### Adding control manually in Code
 
-There are several ways to add Syncfusion control in to the Visual Studio Windows Forms project. The following steps help to add a SfDateTimeEdit control through Code.
+In order to add control manually in C#, do the below steps,
 
-1) Create a Windows Forms project in Visual Studio and refer to the following assemblies.
+1. Add the below required assembly references to the project,
+	* Syncfusion.Core.Winforms.dll
+	* Syncfusion.SfInput.Winforms.dll
 
-* Syncfusion.Core.Windows.dll
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.SpellChecker.Base.dll
-* Syncfusion.Tools.Windows.dll
-* Syncfusion.SfInput.Windows.dll
-
-2) Now add the `SfDateTimeEdit` control with a required optimal name by using the included namespace.
-
-To add `SfDateTimeEdit` Control to a Windows Forms Application through code behind.
-
-1. Include the namespaces Syncfusion.WinForms.Input
+2. Include the namespaces **Syncfusion.WinForms.Input**
 
 {% tabs %}
 
@@ -68,7 +63,7 @@ Imports Syncfusion.WinForms.Input
 
 {% endtabs %} 
 
-2. Create an instance of the `SfDateTimeEdit` control and add it to the Form.
+2. Create `SfDateTimeEdit` control instance and add it to the Form.
 
 {% tabs %}
 
@@ -90,7 +85,7 @@ Me.Controls.Add(sfDateTimeEdit)
 
 {% endtabs %}
 
-### Set the Min and Max Date with Time Interval
+## Configure date range
 
 In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by using the properties minimum and maximum that enables the specified date range in the SfDateTimeEdit control. The following code snippets illustrates the same.
 
@@ -126,11 +121,58 @@ dateTimeEdit.MaxDateTime = New DateTime(2030, 01, 01)
 
 {% endtabs %}
 
-![](Getting-Started_images/SfCalendarMinMaxDate.png)
+## Configure editing mode
 
-### Set the Culture
+DateTimeEdit text can be edited by two ways. 
 
-This control provides globalization support through the Culture property. If the `Culture` property is changed, then the DateTime displayed as per the Culture. The following code snippets illustrates the same
+* Default Editing 
+* Mask Editing
+
+Editing modes can be changed by `DateTimeEditingMode` of SfDateTimEdit.
+
+{% tabs %}
+
+{% highlight C# %}
+
+dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+## Configure allow null value
+
+SfDateTimEdit allow to set the `Value` as Null in Mask mode of DateTimeEditing when `AllowNull` is true. The following code snippets illustrates the same
+
+{% tabs %}
+
+{% highlight C# %}
+
+dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask;
+
+dateTimeEdit.AllowNull = true;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
+
+dateTimeEdit.AllowNull = true
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+## Configure custom format
+
+The custom pattern can be displayed in the `SfDateTimeEdit` control using the `Format` property when `DateTimePattern` is Custom. Refer the following list to create the custom format for `SfDateTimeEdit`.
 
 {% tabs %}
 
@@ -138,56 +180,58 @@ This control provides globalization support through the Culture property. If th
 
 Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.Input.SfDateTimeEdit();
 
-dateTimeEdit.Value = new DateTime(2010, 07, 05);
+this.Controls.Add(dateTimeEdit);
 
-dateTimeEdit.DateTimePattern = DateTimePattern.LongDate;
+dateTimeEdit.Value = new DateTime(2017, 07, 05);
 
-dateTimeEdit.Culture = new CultureInfo("en-US");
+dateTimeEdit.DateTimePattern = DateTimePattern.Custom;
 
-{% endhighlight  %}
+//Setting Custom Pattern
+
+dateTimeEdit.Format = "MM/dd/yy hh:mm:ss";
+
+{% endhighlight %}
 
 {% highlight VB %}
 
-Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
+Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
-dateTimeEdit.Value = New DateTime(2010, 7, 5)
+Me.Controls.Add(dateTimeEdit)
 
-dateTimeEdit.DateTimePattern = DateTimePattern.LongDate
+dateTimeEdit.Value = New DateTime(2017, 7, 5)
 
-dateTimeEdit.Culture = New CultureInfo("en-US")
+dateTimeEdit.DateTimePattern = DateTimePattern.Custom
 
-{% endhighlight  %}
+'Setting Custom Pattern
+
+dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
+
+{% endhighlight %}
 
 {% endtabs %} 
 
-![](Culture-Support_images/Culture_US.png)
+## Configure UpDown DateTimeEdit
+
+To Make the DateTimeEdit as UpDown control set `ShowUpDown` property as `true`. UpDown will appear only when `DateTimeEditingMode` is Mask.
 
 {% tabs %}
 
 {% highlight C# %}
 
-Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.Input.SfDateTimeEdit();
+//Enable the UpDown Button
 
-dateTimeEdit.Value = new DateTime(2010, 07, 05);
-
-dateTimeEdit.DateTimePattern = DateTimePattern.LongDate;
-
-dateTimeEdit.Culture = new CultureInfo("fr-FR");
+this.dateTimeEdit.ShowUpDown = true;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
+'Enable the UpDown Button
 
-dateTimeEdit.Value = New DateTime(2010, 7, 5)
-
-dateTimeEdit.DateTimePattern = DateTimePattern.LongDate
-
-dateTimeEdit.Culture = New CultureInfo("fr-FR")
+Me.dateTimeEdit.ShowUpDown = true
 
 {% endhighlight  %}
 
 {% endtabs %} 
 
-![](Culture-Support_images/Culture_FR.png)
+![](getting-started-images/daterange.png)

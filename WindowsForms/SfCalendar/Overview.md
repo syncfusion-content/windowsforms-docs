@@ -9,22 +9,18 @@ documentation: ug
 
 # Overview
 
-`SfCalendar` is a control that allows to select the day in a month or month in a year or year in a decade, so calendar should have the below three level of views.
-
-* Month view
-* Year view 
-* Decade view
-
+The SfCalendar control provides multiple views of the month, year, and decade so that dates can be displayed and selected. It also has an option to navigate between different views with support for multiple selection and complete control customization.
 
 ## Features
 
-* 	Selection of day or month or year should be restricted based on the min and max date value.
-*	Calendar need to support different cultures with specific to their value.
-*	Days or months or years in a calendar can be customizable, so that user can highlight the specific days in a calendar.
-*	Allow selectable date in a calendar by restricting the out of range through min and max. 
-*	Disabling the dates are used in calendar to restrict the user to select certain dates in selectable range.
-*	Displaying the calendar with week number used to know the selection of day comes under specific week count.
-*	Calendar used to highlight dates or customize to mention some special date 
-*	Calendar cell can be customized with icons and calendar item border (gridlines) visibility can be changed
-*	Calendar header display the week days. This format of day of week header can be customized
-*	Calendar view showing or hiding previous and next month days in current month
+* **Different views**: Support for month, year, and decade views to quickly select dates.
+
+* **Date-range support**: Maximum and minimum date support to prevent users from selecting dates within a specified range.
+
+* **Globalization and localization**: Support for localized first day of the week, localized static text, and day names based on culture.
+
+* **Special dates**: Support for highlighting special dates with icons and descriptions.
+
+* **Blackout dates**: Support for blocking certain dates from selection and user interaction. Separate styles can be applied to blackout dates. 
+
+* **Accessibility**: Touch, keyboard, and mouse support to make applications available to a wide variety of users.
