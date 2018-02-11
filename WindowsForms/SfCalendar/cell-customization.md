@@ -1,186 +1,21 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: How to add SfCalendar and enable its basic features.
+title: Customize the Dates of SfCalendar control for Windows Forms
+description: Customize the Dates of SfCalendar control for Windows Forms
 platform: WindowsForms
-control: SfCalendar 
+control: SfCalendar
 documentation: ug
 ---
 
-# Getting Started
+# Cell Customization
 
-This section briefly describes how to design a `SfCalendar` control in a Windows Forms Application.
+`SfCalendar` cells can be customized for mentioning some special or important days. 
 
-* Adding SfCalendar control 
-* Configuring SfCalendar
+## Special Dates 
 
-## Creating simple application with SfCalendar
+This Support is used to mention some special dates. `SpecialDates` property helps to hold the Special Dates collection, which can be customized
 
-In this walk through, you will create Windows Forms Application that contains SfCalendar control.
-
-1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Configuring date range](#configuring-date-range)
-5. [Configure BlackoutDates](#configure-blackoutdates)
-6. [Configure SpecialDates](#configure-specialdates)
-7. [Configure to allow multiple selection](#configure-to-allow-multiple-selection)
-8. [Configure number of weeks in view](#configure-number-of-weeks-in-view)
-9. [Configure first day of week](#configure-first-day-of-week)
-10.[Configure to show week number](#configure-to-show-week-number)
-
-### Creating the project
-
-Create new Windows Forms Project in Visual Studio to display SfCalendar with date information.
-
-### Adding control via Designer
-
-SfCalendar control can be added to the application by dragging it from Toolbox and dropping it in designer view. The required assembly references will be added automatically.
-
-![](getting-started-images/gettingstarted.png) 
-
-### Adding control manually in code
-
-In order to add control manually in C#, do the below steps,
-
-1. Add the below required assembly references to the project,
-	* Syncfusion.Core.WinForms.dll
-	* Syncfusion.SfInput.WinForms.dll
-
-2. Include the namespaces **Syncfusion.WinForms.Input**
-
-{% tabs %}
-
-{% highlight C# %}
-
-using Syncfusion.WinForms.Input;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-Imports Syncfusion.WinForms.Input
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-2. Create `SfCalendar` control instance and add it to the Form.
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfCalendar sfCalendar = new SfCalendar();
-
-this.Controls.Add(sfCalendar);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim sfCalendar As SfCalendar = New SfCalendar
-
-Me.Controls.Add(sfCalendar)
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Configure date range
-
-`SfCalendar` prevent users from selecting dates within a specified minimum and maximum range. To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Setting the Minimum and Maximum date
-
-Syncfusion.WinForms.Input.SfCalendar calendar = new Syncfusion.WinForms.Input.SfCalendar();
-
-this.Controls.Add(calendar);
-
-calendar.Value = new DateTime(2018, 1, 12);
-
-calendar.MinDate = new DateTime(2018, 1, 03);
-
-calendar.MaxDate = new DateTime(2018, 1, 29);
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Setting the Minimum and Maximum date
-
-Dim calendar As Syncfusion.WinForms.Input.SfCalendar = New Syncfusion.WinForms.Input.SfCalendar
-
-Me.Controls.Add(calendar)
-
-calendar.Value = New DateTime(2018, 1, 12)
-
-calendar.MinDate = New DateTime(2018, 1, 3)
-
-calendar.MaxDate = New DateTime(2018, 1, 29)
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-![](appearance-images/minmax.png)
-
-## Configure BlackoutDates
-
-`BlackoutDates` refers the disabled dates that restrict the user from selecting it. A date collection can be provided to set the `BlackoutDates` for this control, use the following code example.
-
-{% tabs %}
-
-{% highlight C# %}
-
-//Setting the Blackout Dates
-    
-DateTime date = new DateTime(2018, 01, 25);
-    
-DateTime date1 = new DateTime(2018, 01, 23);
-    
-DateTime date2 = new DateTime(2018, 01, 17);
-    
-DateTime date3 = new DateTime(2018, 01, 18);
-    
-DateTime date4 = new DateTime(2018, 01, 20);
-    
-DateTime date5 = new DateTime(2018, 01, 22);
-    
-this.SfCalendar1.BlackoutDates = new DateTime[]{ date, date1, date2, date3, date4, date5};
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-Dim date As DateTime = New DateTime(2018, 1, 25)
-
-Dim date1 As DateTime = New DateTime(2018, 1, 23)
-
-Dim date2 As DateTime = New DateTime(2018, 1, 17)
-
-Dim date3 As DateTime = New DateTime(2018, 1, 18)
-
-Dim date4 As DateTime = New DateTime(2018, 1, 20)
-
-Dim date5 As DateTime = New DateTime(2018, 1, 22)
-
-Me.SfCalendar1.BlackoutDates = New DateTime() {date, date1, date2, date3, date4, date5}
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-![](getting-started-images/blackoutdates.png)
-
-## Configure SpecialDates
-
-`SfCalendar` allows to highlight special dates with icons and descriptions. Special dates to calendar can be added through `SpecialDates`collection.
-Below code illustrates how to add the special dates in calendar.
+To customize the dates, use the following code example.
 
 {% tabs %}
 
@@ -246,7 +81,26 @@ private void InitializeComponent()
         specialDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
         specialDate5.Value = new System.DateTime(2018, 7, 11, 0, 0, 0, 0);
-        
+
+        this.sfCalendar.BackColor = System.Drawing.Color.White;
+        this.sfCalendar.BlackoutDates = null;            
+        this.sfCalendar.Culture = new System.Globalization.CultureInfo("en-US");
+        this.sfCalendar.DownArrowImage = null;
+        this.sfCalendar.EnableAnimation = true;
+        this.sfCalendar.FooterHeight = 30;
+        this.sfCalendar.HeaderHeight = 70;
+        this.sfCalendar.Location = new System.Drawing.Point(154, 64);
+        this.sfCalendar.MaxDate = new System.DateTime(9999, 12, 31, 23, 59, 59, 999);
+        this.sfCalendar.MinDate = new System.DateTime(((long)(0)));
+        this.sfCalendar.Name = "sfCalendar";
+        this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Right;
+        this.sfCalendar.NumberOfWeeksInView = 6;
+        this.sfCalendar.ShowAbbreviatedDayNames = true;
+        this.sfCalendar.ShowFooter = false;
+        this.sfCalendar.ShowNavigationButton = true;
+        this.sfCalendar.ShowWeekNumbers = true;
+        this.sfCalendar.VisualStyle.Header.BackColor = System.Drawing.Color.Red;
+        this.sfCalendar.Size = new System.Drawing.Size(378, 354);
         this.sfCalendar.SpecialDates = new SpecialDate[] {specialDate1, specialDate2, specialDate3, specialDate4, specialDate5};
     }
 
@@ -271,7 +125,7 @@ private void InitializeComponent()
         specialDate1.IsDateVisible = false
         specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate1.Value = New Date(2018, 1, 15, 0, 0, 0, 0)
+        specialDate1.Value = New Date(2018, 1, 12, 0, 0, 0, 0)
 
         specialDate2.BackColor = System.Drawing.Color.White
         specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
@@ -281,7 +135,7 @@ private void InitializeComponent()
         specialDate2.IsDateVisible = false
         specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate2.Value = New Date(2018, 4, 7, 0, 0, 0, 0)
+        specialDate2.Value = New Date(2018, 1, 15, 0, 0, 0, 0)
 
         specialDate3.BackColor = System.Drawing.Color.White
         specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
@@ -291,7 +145,7 @@ private void InitializeComponent()
         specialDate3.IsDateVisible = false
         specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate3.Value = New Date(2018, 2, 24, 0, 0, 0, 0)
+        specialDate3.Value = New Date(2018, 2, 4, 0, 0, 0, 0)
 
         specialDate4.BackColor = System.Drawing.Color.White
         specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
@@ -301,7 +155,7 @@ private void InitializeComponent()
         specialDate4.IsDateVisible = false
         specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate4.Value = New Date(2018, 2, 8, 0, 0, 0, 0)
+        specialDate4.Value = New Date(2018, 2, 14, 0, 0, 0, 0)
 
         specialDate5.BackColor = System.Drawing.Color.White
         specialDate5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
@@ -311,8 +165,27 @@ private void InitializeComponent()
         specialDate5.IsDateVisible = false
         specialDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate5.Value = New Date(2018, 3, 21, 0, 0, 0, 0)
-        
+        specialDate5.Value = New Date(2018, 7, 11, 0, 0, 0, 0)
+
+        Me.sfCalendar.BackColor = System.Drawing.Color.White
+        Me.sfCalendar.BlackoutDates = Nothing
+        Me.sfCalendar.Culture = New System.Globalization.CultureInfo("en-US")
+        Me.sfCalendar.DownArrowImage = Nothing
+        Me.sfCalendar.EnableAnimation = true
+        Me.sfCalendar.FooterHeight = 30
+        Me.sfCalendar.HeaderHeight = 70
+        Me.sfCalendar.Location = New System.Drawing.Point(154, 64)
+        Me.sfCalendar.MaxDate = New Date(9999, 12, 31, 23, 59, 59, 999)
+        Me.sfCalendar.MinDate = New Date(CType(0,Long))
+        Me.sfCalendar.Name = "sfCalendar"
+        Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Right
+        Me.sfCalendar.NumberOfWeeksInView = 6
+        Me.sfCalendar.ShowAbbreviatedDayNames = true
+        Me.sfCalendar.ShowFooter = false
+        Me.sfCalendar.ShowNavigationButton = true
+        Me.sfCalendar.ShowWeekNumbers = true
+        Me.sfCalendar.VisualStyle.Header.BackColor = System.Drawing.Color.Red
+        Me.sfCalendar.Size = New System.Drawing.Size(378, 354)
         Me.sfCalendar.SpecialDates = New SpecialDate() {specialDate1, specialDate2, specialDate3, specialDate4, specialDate5}
         
     End Sub
@@ -323,106 +196,146 @@ private void InitializeComponent()
 
 ![](cell-customization-images/specialdates.png)
 
-## Configure to allow multiple selection
+# Render cell on-demand
 
-SfCalendar control allows to select multiple dates by setting the `AllowMultipleSelection` property to true. The following code example illustrates the same.
+This Support is used to highlight dates or customize to mention some special date.
 
-{% tabs %}
-
-{% highlight C# %}
-
-// Setting to Allow Multiple Selection
-
-this.SfCalendar1.AllowMultipleSelection = true;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Setting to Allow Multiple Selection
-
-Me.SfCalendar1.AllowMultipleSelection = true
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-![](selection-images/multiselection.png)
-
-## Configure number of weeks in view
-
-The number of weeks shown in the month view can be changed by setting the `NumberOfWeeksInView` property as follows.
+To customize the dates, use the following code example.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Setting the Number of weeks in View
+public Form1()
+{
+    
+    InitializeComponent();
 
-this.sfCalendar.NumberOfWeeksInView = 3;
+    // Invoking the DrawCell Event.
+
+    this.SfCalendar1.DrawCell += SfCalendar1_DrawCell;
+}
+
+/// <summary>
+/// To Draw the Cell
+/// </summary>
+/// <param name="sender">SfCalendar</param>
+/// <param name="args">DrawCell Event Args</param>
+private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
+{
+    SelectionRange range1 = new SelectionRange(new DateTime(2017, 09, 01), new DateTime(2017, 09, 15));
+
+    SelectionRange range2 = new SelectionRange(new DateTime(2017, 09, 16), new DateTime(2017, 09, 30));
+
+    DateTime Christmas = new DateTime(2017, 12, 25);
+
+    if (args.Value != null)
+    {
+
+       if (args.Value == Christmas)
+
+        {
+
+            args.BackColor = Color.Green;
+
+            args.ForeColor = Color.Yellow;
+            
+            args.Image = Resources.Christmas;
+            
+            args.ImageBounds = new Rectangle(25, 13, 30, 30);
+            
+            args.HorizontalAlignment = StringAlignment.Near;
+            
+            args.VerticalAlignment = StringAlignment.Near;
+        }
+
+        if (args.Value.Value.Date == this.dateTimePicker5.Value.Date)
+        
+        {
+             string month = args.Value.Value.ToString("MMM", this.SfCalendar1.Culture);
+
+             args.BackColor = this.colorPickerButton17.SelectedColor;
+
+             args.ForeColor = this.colorPickerButton18.SelectedColor;
+
+             args.Image = Resources.Cell;
+
+             args.ImageBounds = new Rectangle(0, 20, 30, 30);
+
+             args.VerticalAlignment = this.verticalAlignment;
+
+             args.HorizontalAlignment = this.horizontalAlignment;
+
+             args.Text = month + " " + args.Text;
+
+         }
+     }
+ }
+
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-' Setting the Number of weeks in View
+public Form1()
 
-Me.sfCalendar.NumberOfWeeksInView = 3
+{
+
+    InitializeComponent();
+    
+    // Invoking the DrawCell Event.
+
+    this.SfCalendar1.DrawCell += SfCalendar1_DrawCell;
+
+}
+
+/// <summary>
+/// To Draw the Cell
+/// </summary>
+/// <param name="sender">SfCalendar</param>
+/// <param name="args">DrawCell Event Args</param>
+
+private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
+
+{
+
+    SelectionRange range1 = new SelectionRange(new DateTime(2017, 09, 01), new DateTime(2017, 09, 15));
+
+    SelectionRange range2 = new SelectionRange(new DateTime(2017, 09, 16), new DateTime(2017, 09, 30));
+
+  
+    DateTime Christmas = new DateTime(2017, 12, 25);
+
+   
+    if (args.Value != null)
+
+    {
+
+        if (args.Value == Christmas)
+
+        {
+
+            args.BackColor = Color.Green
+
+            args.ForeColor = Color.Yellow
+
+            args.Image = Resources.Christmas
+
+            args.ImageBounds = new Rectangle(25, 13, 30, 30)
+
+            args.HorizontalAlignment = StringAlignment.Near
+
+            args.VerticalAlignment = StringAlignment.Near
+
+        }
+
+    }
+
+}
 
 {% endhighlight  %}
 
 {% endtabs %} 
 
-![](getting-started-images/numberofweeksinview.png)
+![](cell-customization-images/customizedates.png)
 
-## Configure first day of week
-
-The first day of a week can be changed by setting `FirstDayOfWeek` property. The following code example shows how to set `FirstDayofWeek` property.
-
-{% tabs %}
-
-{% highlight C# %}
-
-//Setting the First Day Of Week
-
-this.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-'Setting the First Day Of Week
-
-Me.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-![](getting-started-images/firstdayofweek.png)
-
-## Configure to show week number
-
-The week number of current week in a year can be shown in the calenar control by setting `ShowWeekNumber` property to true as follows.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Setting the Minimum and Maximum date
-
-this.SfCalendar1.ShowWeekNumber = true;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Setting the Minimum and Maximum date
-
-Me.SfCalendar1.ShowWeekNumber = true
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-![](appearance-images/showweeknumber.png)

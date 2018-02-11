@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to design a `SfDateTimeEdit` Control in a Windows Forms Application.
+This section briefly describes how to design a `SfDateTimeEdit` control in a Windows Forms Application.
 
 * Adding SfDateTimeEdit Control 
 * Configuring SfDateTimeEdit Values
@@ -33,7 +33,7 @@ Create new Windows Forms Project in Visual Studio to display SfDateTimEdit with 
 
 ### Adding control via Designer
 
-SfDateTimEdit control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+`SfDateTimEdit` control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![](getting-started-images/toolbox.png)
 
@@ -148,7 +148,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 ## Configure allow null value
 
-SfDateTimEdit allow to set the `Value` as Null in Mask mode of DateTimeEditing when `AllowNull` is true. The following code snippets illustrates the same
+SfDateTimEdit allow to set the `Value` as null in Mask mode of DateTimeEditing when `AllowNull` is true. The following code snippets illustrates the same
 
 {% tabs %}
 
