@@ -76,6 +76,16 @@ Me.SfCalendar1.AllowMultipleSelection = true
 
 ![](selection-images/multiselection.png)
 
+### Select multiple dates through mouse
+
+`SfCalendar` allows to select the multiple dates through mouse by selecting the cells while pressing `Ctrl` key. 
+
+Range Selection can be achieved by pressing the `Shift` key, Select a date to set the Start date of the Range Selection and Select the End date when pressing the `Shift` Key. 
+
+### Select multiple dates through keyboard 
+
+`SfCalendar` allows to select the multiple dates through keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT Arrow` keys. 
+
 ## Disable selection
 
 `BlackoutDates` refers the disabled dates that restrict the user from selecting it. A date collection can be provided to set the `BlackoutDates` for this control, use the following code example.
@@ -148,7 +158,7 @@ calendar.Value = new DateTime(2018, 1, 12);
 
 calendar.MinDate = new DateTime(2018, 1, 03);
 
-calendar.MaxDate = new DateTime(2018, 1, 30);
+calendar.MaxDate = new DateTime(2018, 1, 29);
 
 {% endhighlight  %}
 
@@ -164,7 +174,7 @@ calendar.Value = New DateTime(2018, 1, 12)
 
 calendar.MinDate = new DateTime(2018, 1, 03)
 
-calendar.MaxDate = new DateTime(2018, 1, 30)
+calendar.MaxDate = new DateTime(2018, 1, 29)
 
 {% endhighlight  %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance of header, footer and cells of SfCalendar control for Windows Forms
+title: Appearance of SfCalendar control for Windows Forms
 description: The appearance of header, footer and cells.
 platform: WindowsForms
 control: SfCalendar
@@ -456,32 +456,6 @@ Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Naviga
 
 ![](appearance-images/navbuttonalignboth.png)
 
-## Change the visibility of the Vertical splitter
-
-Visibility of vertical splitter in calendar control can be customized by setting the `ShowVerticalSplitter`property. The following code example illustrates the same.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Indicating whether the dates of each columns in the SfCalendar are separated with vertical splitter.
-
-this.sfCalendar.ShowVerticalSplitter = true;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Indicating whether the dates of each columns in the SfCalendar are separated with vertical splitter.
-
-Me.sfCalendar.ShowVerticalSplitter = true
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](appearance-images/verticalsplitter.png)
-
 ## Change the visibility of the footer Today or None Button
 
 Visibility of the calendar footer Today/None button can be customized by using `ShowToday` and `ShowNone` properties. The following code example illustrates the same.
@@ -537,3 +511,53 @@ Me.sfCalendar.ShowToday = false
 {% endtabs %}
 
 ![](appearance-images/shownone.png)
+
+## Customize splitter appearance
+
+Visibility of splitters in calendar control can be customized by setting the `ShowHorizontalSplitter` and `ShowVerticalSplitter` properties respectively. Also splitters color can be customized by `HorizontalSplitterColor` and `VerticalSplitterColor` for horizontal and vertical Splitters respectively. The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Enable Horizontal splitter
+
+ this.sfCalendar.ShowHorizontalSplitter = true;
+
+// Enable Vertical splitter
+
+this.sfCalendar.ShowVerticalSplitter = true;
+
+//  color used draw the Horizontal splitter in cell view
+
+this.sfCalendar.Style.HorizontalSplitterColor = Color.Red;
+
+// color used draw the vertical splitter in cell view
+
+this.sfCalendar.Style.VerticalSplitterColor = Color.Green;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Enable Horizontal splitter
+
+Me.sfCalendar.ShowHorizontalSplitter = true
+
+' Enable Vertical splitter
+
+Me.sfCalendar.ShowVerticalSplitter = true
+
+'  color used draw the Horizontal splitter in cell view
+
+Me.sfCalendar.Style.HorizontalSplitterColor = Color.Red
+
+' color used draw the vertical splitter in cell view
+
+Me.sfCalendar.Style.VerticalSplitterColor = Color.Green
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/splittercolor.png)

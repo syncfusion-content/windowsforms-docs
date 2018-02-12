@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-`SfCalendar` is a control that allows users to select a date from a calendar and various customization options for the calendar. Also provides multiple views of the month, year, decade and century so that dates can be displayed and support for multiple selection and complete control customization.
+`SfCalendar` is a control that allows to select a date from a calendar and various customization options for the calendar. Also provides multiple views of the month, year, decade and century so that dates can be displayed and support for multiple selection and complete control customization.
 
 ## Key Features
 

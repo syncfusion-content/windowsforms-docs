@@ -41,9 +41,9 @@ this.Controls.Add(dateTimeEdit);
 
 dateTimeEdit.Value = new DateTime(2018, 2, 1);
 
-dateTimeEdit.MinDateTime = new DateTime(2018, 2, 1);
+dateTimeEdit.MinDateTime = new DateTime(2018, 2, 3);
 
-dateTimeEdit.MaxDateTime = new DateTime(2018, 2, 28);
+dateTimeEdit.MaxDateTime = new DateTime(2018, 2, 27);
 
 {% endhighlight  %}
 
@@ -55,9 +55,9 @@ Me.Controls.Add(dateTimeEdit)
 
 dateTimeEdit.Value = New DateTime(2018, 2, 1)
 
-dateTimeEdit.MinDateTime = New DateTime(2018, 2, 1)
+dateTimeEdit.MinDateTime = New DateTime(2018, 2, 3)
 
-dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 28)
+dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 27)
 
 {% endhighlight  %}
 

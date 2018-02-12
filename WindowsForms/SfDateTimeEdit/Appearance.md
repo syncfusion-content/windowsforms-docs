@@ -43,7 +43,7 @@ Me.dateTimeEdit.ShowUpDown = false
 
 ![](appearance-images/showupdown.png)
 
-## Customize the DropDown Button
+## Change visibility of DropDown Button
 
 DropDown button in SfDateTimeEdit allows to open the Popup Calendar by Mouse interaction. Visibility of DropDown button can be changed by `ShowDropDown` property. The following code snippets illustrates the same.
 
@@ -77,10 +77,6 @@ Me.dateTimeEdit.ShowDropDown = false
 
 ![](appearance-images/showdropdown.png)
 
-## Change Dropdown Calendar Size
-
-Size of Dropdown calendar to pick the date for SfDateTimeEdit can be changed `DropDownSize`.
-
 ## DropDown Calendar Size customization
 
 Size of the dropdown calendar can be customized by `DropDownSize` property. The following code snippets illustrates the same.
@@ -111,7 +107,7 @@ Me.dateTimeEdit.Width = 294
 
 ![](appearance-images/dropdownsize.png)
 
-## Customize Calendar
+## Customize Dropdown Calendar Appearance
 
 DropDown Calendar of SfDateTimeEdit can be get from `MonthCalendar` property. All the customization with `MonthCalendar` will be reflected in dropdown calendar of SfDateTimeEdit. The below code snippets illustrates how to change the visibility of footer in dropdown calendar of SfDateTimeEdit.
 
@@ -131,24 +127,26 @@ dateTimeEdit.MonthCalendar.ShowFooter = false
 
 {% endtabs %} 
 
+![](appearance-images/footer.png)
+
 ## Customize DateTimeEdit Appearance
 
-BackColor, ForeColor and BorderColor of control can be customized through `VisualStyle` of SfDateTimeEdit. UpDown and Dropdown button of SfDateTimeEdit control also can be customized through `VisualStyle`. The following code snippets illustrates the customization.
+BackColor, ForeColor and BorderColor of control can be customized through `Style` of SfDateTimeEdit. UpDown and Dropdown button of SfDateTimeEdit control also can be customized through `VisualStyle`. The following code snippets illustrates the customization.
 
 {% tabs %}
 
 {% highlight C# %}
 
-sfDateTimeEdit1.VisualStyle.BorderColor = Color.Green;
+sfDateTimeEdit1.Style.BorderColor = Color.Red;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-sfDateTimeEdit1.VisualStyle.BorderColor = Color.Green
+sfDateTimeEdit1.Style.BorderColor = Color.Red
 
 {% endhighlight  %}
 
 {% endtabs %} 
 
-
+![](appearance-images/bordercolor.png)

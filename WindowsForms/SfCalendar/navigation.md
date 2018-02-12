@@ -69,6 +69,49 @@ Me.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.All
 
 {% endtabs %}
 
+## Handle view change
+
+`ViewChanging` event occurs when click on the Calendar Header text to change the view from one view to another view. The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Invoked when the view changed.
+
+ this.sfCalendar.ViewChanging += SfCalendar_ViewChanging;
+
+  private void SfCalendar_ViewChanging(Syncfusion.WinForms.Input.SfCalendar sender, Syncfusion.WinForms.Input.Events.ViewChangingEventArgs args)
+        {
+            if(args.NewViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Year)
+            {
+                args.Cancel = true;
+            }
+        }
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Invoked when the view changed.
+
+Me.sfCalendar.ViewChanging = (Me.sfCalendar.ViewChanging + SfCalendar_ViewChanging)
+
+    Private Sub SfCalendar_ViewChanging(ByVal sender As 
+    Syncfusion.WinForms.Input.SfCalendar, ByVal args As Syncfusion.WinForms.Input.Events.ViewChangingEventArgs)
+      
+        If (args.NewViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year) Then
+      
+            args.Cancel = true
+      
+        End If
+        
+    End Sub
+
+{% endhighlight  %}
+
+{% endtabs %}
+
 ## Navigation through mouse
 
 It is possible to navigate from one view to other views by using the mouse which is done by clicking the header of the Calendar control in Backward direction. Also by selecting the month or year or decade cell to navigate from one to other views in Forward direction. 
@@ -93,7 +136,7 @@ N> Can navigate multiple views through mouse when `ViewMode` property value as A
 
 ## Handle Navigation
 
-`Navigating` event occurs when press navigation buttons to move next or previous month, year or decade in calendar. The following codes illustrates the same.
+`Navigating` event occurs when press navigation buttons to move next or previous month, year or decade in calendar. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -134,3 +177,4 @@ End Sub
 {% endhighlight  %}
 
 {% endtabs %}
+

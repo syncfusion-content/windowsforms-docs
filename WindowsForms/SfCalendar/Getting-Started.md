@@ -39,7 +39,7 @@ SfCalendar control can be added to the application by dragging it from Toolbox a
 
 ![](getting-started-images/gettingstarted.png) 
 
-### Adding control manually in code
+### Adding control manually in Code
 
 In order to add control manually in C#, do the below steps,
 
