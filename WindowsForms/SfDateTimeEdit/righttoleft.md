@@ -15,29 +15,21 @@ SfDateTimeEdit control elements can be aligned in right-to-left layout. The `Rig
 
 {% highlight C# %}
 
-//Disable the Right to Left
+//Enable the Right to Left
 
-this.dateTimeEdit.RightToLeftLayout = false;
 this.dateTimeEdit.RightToLeft = RightToLeft.Yes;
 
-//Enable the Right to Left 
-
-this.dateTimeEdit.RightToLeftLayout = true;
-this.dateTimeEdit.RightToLeft = RightToLeft.Yes;
+this.dateTimeEdit.MonthCalendar.RightToLeftLayout = true;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-'Disable the Right to Left
+'Enable the Right to Left
 
-Me.dateTimeEdit.RightToLeftLayout = false
 Me.dateTimeEdit.RightToLeft = RightToLeft.Yes
 
-'Enable the Right to Left 
-
-Me.dateTimeEdit.RightToLeftLayout = true
-Me.dateTimeEdit.RightToLeft = RightToLeft.Yes
+Me.dateTimeEdit.MonthCalendar.RightToLeftLayout = true
 
 {% endhighlight  %}
 

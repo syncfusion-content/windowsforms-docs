@@ -271,7 +271,7 @@ Me.sfCalendar.Style.Cell.CellFont = New System.Drawing.Font("Calibri", 11.25!, S
 
 ## Settings the Days   
 
-It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the `TrailingCellVisible` property.
+It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the `TrailingDatesVisible` property.
 
 For setting these properties, use the following code.
 
@@ -281,7 +281,7 @@ For setting these properties, use the following code.
 
 // Setting the Next and Previous Months Dates invisible
 
-this.SfCalendar1.TrailingCellVisible = false;
+this.SfCalendar1.TrailingDatesVisible = false;
 
 {% endhighlight  %}
 
@@ -289,7 +289,7 @@ this.SfCalendar1.TrailingCellVisible = false;
 
 ' Setting the Next and Previous Months Dates invisible
 
-this.SfCalendar1.TrailingCellVisible = False
+this.SfCalendar1.TrailingDatesVisible = False
 
 {% endhighlight  %}
 
