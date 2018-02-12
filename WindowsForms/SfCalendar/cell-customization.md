@@ -40,7 +40,7 @@ private void InitializeComponent()
         specialDate1.IsDateVisible = false;
         specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-        specialDate1.Value = new System.DateTime(2018, 1, 12, 0, 0, 0, 0);
+        specialDate1.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
     
         specialDate2.BackColor = System.Drawing.Color.White;
         specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -50,7 +50,7 @@ private void InitializeComponent()
         specialDate2.IsDateVisible = false;
         specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-        specialDate2.Value = new System.DateTime(2018, 1, 15, 0, 0, 0, 0); specialDate1.BackColor = System.Drawing.Color.White;
+        specialDate2.Value = new System.DateTime(2018, 3, 24, 0, 0, 0, 0); specialDate1.BackColor = System.Drawing.Color.White;
         
         specialDate3.BackColor = System.Drawing.Color.White;
         specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -60,7 +60,7 @@ private void InitializeComponent()
         specialDate3.IsDateVisible = false;
         specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-        specialDate3.Value = new System.DateTime(2018, 2, 4, 0, 0, 0, 0);
+        specialDate3.Value = new System.DateTime(2018, 3, 21, 0, 0, 0, 0);
             
         specialDate4.BackColor = System.Drawing.Color.White;
         specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -70,7 +70,7 @@ private void InitializeComponent()
         specialDate4.IsDateVisible = false;
         specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-        specialDate4.Value = new System.DateTime(2018, 2, 14, 0, 0, 0, 0);
+        specialDate4.Value = new System.DateTime(2018, 3, 14, 0, 0, 0, 0);
             
         specialDate5.BackColor = System.Drawing.Color.White;
         specialDate5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,7 +80,7 @@ private void InitializeComponent()
         specialDate5.IsDateVisible = false;
         specialDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-        specialDate5.Value = new System.DateTime(2018, 7, 11, 0, 0, 0, 0);
+        specialDate5.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
 
         this.sfCalendar.SpecialDates = new SpecialDate[] {specialDate1, specialDate2, specialDate3, specialDate4, specialDate5};
     }
@@ -106,7 +106,7 @@ private void InitializeComponent()
         specialDate1.IsDateVisible = false
         specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate1.Value = New Date(2018, 1, 12, 0, 0, 0, 0)
+        specialDate1.Value = New Date(2018, 4, 7, 0, 0, 0, 0)
 
         specialDate2.BackColor = System.Drawing.Color.White
         specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
@@ -116,7 +116,7 @@ private void InitializeComponent()
         specialDate2.IsDateVisible = false
         specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate2.Value = New Date(2018, 1, 15, 0, 0, 0, 0)
+        specialDate2.Value = New Date(2018, 3, 24, 0, 0, 0, 0)
 
         specialDate3.BackColor = System.Drawing.Color.White
         specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
@@ -126,7 +126,7 @@ private void InitializeComponent()
         specialDate3.IsDateVisible = false
         specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate3.Value = New Date(2018, 2, 4, 0, 0, 0, 0)
+        specialDate3.Value = New Date(2018, 3, 21, 0, 0, 0, 0)
 
         specialDate4.BackColor = System.Drawing.Color.White
         specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
@@ -136,7 +136,7 @@ private void InitializeComponent()
         specialDate4.IsDateVisible = false
         specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate4.Value = New Date(2018, 2, 14, 0, 0, 0, 0)
+        specialDate4.Value = New Date(2018, 3, 14, 0, 0, 0, 0)
 
         specialDate5.BackColor = System.Drawing.Color.White
         specialDate5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
@@ -146,7 +146,7 @@ private void InitializeComponent()
         specialDate5.IsDateVisible = false
         specialDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        specialDate5.Value = New Date(2018, 7, 11, 0, 0, 0, 0)
+        specialDate5.Value = New Date(2018, 3, 8, 0, 0, 0, 0)
 
         Me.sfCalendar.SpecialDates = New SpecialDate() {specialDate1, specialDate2, specialDate3, specialDate4, specialDate5}
         
