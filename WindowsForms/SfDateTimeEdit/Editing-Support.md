@@ -50,7 +50,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default
 
 ## Mask Editing
 
-The Mask Edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In Mask editing mode the date will be separated into different fields such as Date, Month, Year, Minutes, Hours and Seconds. The field can be updated by selecting the field and pressing the UP or Down arrow to increment or decrement the selected field. The following code snippets illustrates the same.
+The Mask Edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In Mask editing mode the date will be separated into different fields such as Date, Month, Year, Minutes, Hours and Seconds. The field can be updated by selecting the field and pressing the UP or DOWN arrow to increment or decrement the selected field. The following code snippets illustrates the same.
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.
 
 this.Controls.Add(dateTimeEdit);
 
-dateTimeEdit.Value = new DateTime(2017, 6, 27);
+dateTimeEdit.Value = new DateTime(2018, 2, 01);
 
 dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask;
 
@@ -72,7 +72,7 @@ Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.Wi
 
 Me.Controls.Add(dateTimeEdit)
 
-dateTimeEdit.Value = New DateTime(2017, 6, 27)
+dateTimeEdit.Value = New DateTime(2018, 2, 1)
 
 dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
@@ -84,7 +84,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 ## ReadOnly
 
-This control supports ReadOnly which is used to restrict edit date and time fields in the `SfDateTimeEdit`. Set ReadOnly as **true** restricts the text editing in SfDateTimeEdit and user can change the Value only by clicking UpDown buttons or pick the date from the DropDown SfCalendar. The following code snippets illustrates the same.
+This control supports `ReadOnly` which is used to restrict edit date and time fields in the `SfDateTimeEdit`. Set ReadOnly as **true** restricts the text editing in `SfDateTimeEdit` and user can change the Value only by clicking UpDown buttons or pick the date from the DropDown `SfCalendar`. The following code snippets illustrates the same.
 
 {% tabs %}
 

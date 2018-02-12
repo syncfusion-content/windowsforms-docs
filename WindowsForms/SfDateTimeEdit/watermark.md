@@ -9,11 +9,11 @@ documentation: ug
 
 # Watermark
 
-`SfDateTimeEdit` control allows to set the `Value` as null in Default mode of `DateTimeEditingMode` and watermark can be shown on null value.
+`SfDateTimeEdit` control allows to set the `Value` as null in default mode of `DateTimeEditingMode` and watermark can be shown on null value.
 
 ## Null Value
 
-`SfDateTimeEdit` control accepts null values only when the `DateTimeEditingMode` is Default. NullValue support in the `SfDateTimeEdit` control can be enabled by setting the `AllowNull` property to true. If the Value is null and the editing text box is empty then the `Watermark` will be displayed as the Text in `SfDateTimeEdit` control.
+`SfDateTimeEdit` control accepts null values only when the `DateTimeEditingMode` is default. NullValue support in the `SfDateTimeEdit` control can be enabled by setting the `AllowNull` property to true. If the value is null and the editing text box is empty then the `Watermark` will be displayed as the Text in `SfDateTimeEdit` control.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ dateTimeEdit.Value = Nothing
 
 ## Change Watermark
 
-Watermark is the help content to display in the `SfDateTimeEdit` control when `AllowNull` property is true and the Value property is set to null. `Watermark` text will be displayed only when the control lost its focus. The context of the Watermark text can be assigned by set the `Watermark` of SfDateTimeEdit.
+Watermark is the help content to display in the `SfDateTimeEdit` control when `AllowNull` property is true and the `Value` property is set to null. `Watermark` text will be displayed only when the control lost its focus. The context of the watermark text can be assigned by set the `Watermark` of SfDateTimeEdit.
 
 {% tabs %}
 

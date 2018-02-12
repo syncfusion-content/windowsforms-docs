@@ -45,7 +45,7 @@ dateTimeEdit.DateTimePattern = DateTimePattern.LongDate;
 
 {% highlight VB %}
 
-Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.
+Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
 Me.Controls.Add(dateTimeEdit)
 

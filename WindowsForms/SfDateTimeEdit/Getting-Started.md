@@ -33,7 +33,7 @@ Create new Windows Forms Project in Visual Studio to display SfDateTimEdit with 
 
 ### Adding control via Designer
 
-`SfDateTimEdit` control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+`SfDateTimEdit` control can be added to the application by dragging it from Toolbox and dropping it in designer view. The required assembly references will be added automatically.
 
 ![](getting-started-images/toolbox.png)
 

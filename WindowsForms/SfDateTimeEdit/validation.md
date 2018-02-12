@@ -54,9 +54,15 @@ dateTimeEdit.ValidationOption = ValidationOption.MinDateTime
 
 {% endtabs %} 
 
+### DateTime Validation
+
+The given value can be treated as a date/time value. It can be validated based on the DateTime format with culture. There is an error indicating image will be shown, when the validation test gets failed. 
+
+![](validation-images/errorsymbol.png)
+
 ## Handle Validation
 
-``ValidatingEventArgs` provides data for the `Validating` event of the SfDateTimeEdit control. By handling the `Validating` event, it is possible to find the cause of the validation failed with the error message in the `ValidatingEventArgs`.
+`ValidatingEventArgs` provides data for the `Validating` event of the SfDateTimeEdit control. By handling the `Validating` event, it is possible to find the cause of the validation failed with the error message in the `ValidatingEventArgs`.
 
 * **IsError** - To indicate whether the entered date and time is valid or in-valid.
 
