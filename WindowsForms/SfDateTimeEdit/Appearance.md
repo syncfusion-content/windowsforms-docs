@@ -131,7 +131,7 @@ dateTimeEdit.MonthCalendar.ShowFooter = false
 
 ## Customize DateTimeEdit Appearance
 
-BackColor, ForeColor and BorderColor of control can be customized through `Style` of SfDateTimeEdit. UpDown and Dropdown button of SfDateTimeEdit control also can be customized through `VisualStyle`. The following code snippets illustrates the customization.
+BackColor, ForeColor and BorderColor of control can be customized through `Style` of SfDateTimeEdit. UpDown and Dropdown button of SfDateTimeEdit control also can be customized through `Style`. The following code snippets illustrates the customization.
 
 {% tabs %}
 
