@@ -240,7 +240,7 @@ private void InitializeComponent()
         specialDate5.BackColor = System.Drawing.Color.White;
         specialDate5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         specialDate5.ForeColor = System.Drawing.Color.Magenta;
-        specialDate5.Image = Properties.Resources.Icon_Childrens_day;
+        specialDate5.Image = Properties.Resources.Icon_Children_day;
         specialDate5.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate5.IsDateVisible = false;
         specialDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -306,7 +306,7 @@ private void InitializeComponent()
         specialDate5.BackColor = System.Drawing.Color.White
         specialDate5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate5.ForeColor = System.Drawing.Color.Magenta
-        specialDate5.Image = Properties.Resources.Icon_Childrens_day
+        specialDate5.Image = Properties.Resources.Icon_Children_day
         specialDate5.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate5.IsDateVisible = false
         specialDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -403,7 +403,7 @@ Me.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday
 
 ## Configure to show week number
 
-The week number of current week in a year can be shown in the calenar control by setting `ShowWeekNumber` property to true as follows.
+The week number of current week in a year can be shown in the calendar control by setting `ShowWeekNumber` property to true as follows.
 
 {% tabs %}
 

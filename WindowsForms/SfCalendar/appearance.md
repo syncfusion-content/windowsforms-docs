@@ -383,7 +383,7 @@ Me.sfCalendar.HighlightTodayCell = false
 
 ## Change visibility of Navigation Buttons
 
-Navigation buttons used to move between views in SfCalendar. It visiblity can be customized by using `ShowNavigationButton` property. The following code example illustrates the same.
+Navigation buttons used to move between views in SfCalendar. It visibility can be customized by using `ShowNavigationButton` property. The following code example illustrates the same.
 
 {% tabs %}
 

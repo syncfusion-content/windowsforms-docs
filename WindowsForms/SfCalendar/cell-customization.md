@@ -75,32 +75,13 @@ private void InitializeComponent()
         specialDate5.BackColor = System.Drawing.Color.White;
         specialDate5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         specialDate5.ForeColor = System.Drawing.Color.Magenta;
-        specialDate5.Image = Properties.Resources.Icon_Childrens_day;
+        specialDate5.Image = Properties.Resources.Icon_Children_day;
         specialDate5.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate5.IsDateVisible = false;
         specialDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         specialDate5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
         specialDate5.Value = new System.DateTime(2018, 7, 11, 0, 0, 0, 0);
 
-        this.sfCalendar.BackColor = System.Drawing.Color.White;
-        this.sfCalendar.BlackoutDates = null;            
-        this.sfCalendar.Culture = new System.Globalization.CultureInfo("en-US");
-        this.sfCalendar.DownArrowImage = null;
-        this.sfCalendar.EnableAnimation = true;
-        this.sfCalendar.FooterHeight = 30;
-        this.sfCalendar.HeaderHeight = 70;
-        this.sfCalendar.Location = new System.Drawing.Point(154, 64);
-        this.sfCalendar.MaxDate = new System.DateTime(9999, 12, 31, 23, 59, 59, 999);
-        this.sfCalendar.MinDate = new System.DateTime(((long)(0)));
-        this.sfCalendar.Name = "sfCalendar";
-        this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Right;
-        this.sfCalendar.NumberOfWeeksInView = 6;
-        this.sfCalendar.ShowAbbreviatedDayNames = true;
-        this.sfCalendar.ShowFooter = false;
-        this.sfCalendar.ShowNavigationButton = true;
-        this.sfCalendar.ShowWeekNumbers = true;
-        this.sfCalendar.VisualStyle.Header.BackColor = System.Drawing.Color.Red;
-        this.sfCalendar.Size = new System.Drawing.Size(378, 354);
         this.sfCalendar.SpecialDates = new SpecialDate[] {specialDate1, specialDate2, specialDate3, specialDate4, specialDate5};
     }
 
@@ -160,32 +141,13 @@ private void InitializeComponent()
         specialDate5.BackColor = System.Drawing.Color.White
         specialDate5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate5.ForeColor = System.Drawing.Color.Magenta
-        specialDate5.Image = Properties.Resources.Icon_Childrens_day
+        specialDate5.Image = Properties.Resources.Icon_Children_day
         specialDate5.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate5.IsDateVisible = false
         specialDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         specialDate5.Value = New Date(2018, 7, 11, 0, 0, 0, 0)
 
-        Me.sfCalendar.BackColor = System.Drawing.Color.White
-        Me.sfCalendar.BlackoutDates = Nothing
-        Me.sfCalendar.Culture = New System.Globalization.CultureInfo("en-US")
-        Me.sfCalendar.DownArrowImage = Nothing
-        Me.sfCalendar.EnableAnimation = true
-        Me.sfCalendar.FooterHeight = 30
-        Me.sfCalendar.HeaderHeight = 70
-        Me.sfCalendar.Location = New System.Drawing.Point(154, 64)
-        Me.sfCalendar.MaxDate = New Date(9999, 12, 31, 23, 59, 59, 999)
-        Me.sfCalendar.MinDate = New Date(CType(0,Long))
-        Me.sfCalendar.Name = "sfCalendar"
-        Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Right
-        Me.sfCalendar.NumberOfWeeksInView = 6
-        Me.sfCalendar.ShowAbbreviatedDayNames = true
-        Me.sfCalendar.ShowFooter = false
-        Me.sfCalendar.ShowNavigationButton = true
-        Me.sfCalendar.ShowWeekNumbers = true
-        Me.sfCalendar.VisualStyle.Header.BackColor = System.Drawing.Color.Red
-        Me.sfCalendar.Size = New System.Drawing.Size(378, 354)
         Me.sfCalendar.SpecialDates = New SpecialDate() {specialDate1, specialDate2, specialDate3, specialDate4, specialDate5}
         
     End Sub
@@ -196,7 +158,7 @@ private void InitializeComponent()
 
 ![](cell-customization-images/specialdates.png)
 
-# Render cell on-demand
+## Render cell on-demand
 
 This Support is used to highlight dates or customize to mention some special date.
 
