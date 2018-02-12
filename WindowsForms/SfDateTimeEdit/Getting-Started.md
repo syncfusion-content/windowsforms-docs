@@ -42,8 +42,8 @@ Create new Windows Forms Project in Visual Studio to display SfDateTimEdit with 
 In order to add control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
-	* Syncfusion.Core.Winforms.dll
-	* Syncfusion.SfInput.Winforms.dll
+	* Syncfusion.Core.WinForms.dll
+	* Syncfusion.SfInput.WinForms.dll
 
 2. Include the namespaces **Syncfusion.WinForms.Input**
 
