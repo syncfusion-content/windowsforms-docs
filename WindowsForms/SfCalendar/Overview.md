@@ -9,15 +9,15 @@ documentation: ug
 
 # Overview
 
-The SfCalendar control provides multiple views of the month, year, and decade so that dates can be displayed and selected. It also has an option to navigate between different views with support for multiple selection and complete control customization.
+`SfCalendar` is a control that allows users to select a date from a calendar and various customization options for the calendar. Also provides multiple views of the month, year, decade and century so that dates can be displayed and support for multiple selection and complete control customization.
 
-## Features
+## Key Features
 
-* **Different views**: Support for month, year, and decade views to quickly select dates.
+* **Different views**: Support for month, year, decade and century views to quickly select dates.
 
 * **Date-range support**: Maximum and minimum date support to prevent users from selecting dates within a specified range.
 
-* **Globalization and localization**: Support for localized first day of the week, localized static text, and day names based on culture.
+* **Globalization and localization**: Support for localized first day of the week, localized static text and day names based on culture.
 
 * **Special dates**: Support for highlighting special dates with icons and descriptions.
 
