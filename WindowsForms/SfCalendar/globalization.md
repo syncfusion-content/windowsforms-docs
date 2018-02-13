@@ -23,7 +23,7 @@ To change the culture for this control, use the following code example.
 
 //Setting the culture
 
-this.SfCalendar1.Culture = new System.Globalization.CultureInfo(2);
+this.sfCalendar.Culture = new CultureInfo("he-IL");
 
 {% endhighlight  %}
 
@@ -31,7 +31,7 @@ this.SfCalendar1.Culture = new System.Globalization.CultureInfo(2);
 
 ' Setting the culture
 
-this.SfCalendar1.Culture = new System.Globalization.CultureInfo(2)
+Me.sfCalendar.Culture = New CultureInfo("he-IL")
 
 {% endhighlight  %}
 

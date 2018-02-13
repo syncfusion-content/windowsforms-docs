@@ -33,17 +33,21 @@ The following code example illustrates to customize the appearances.
 
 this.sfCalendar.Style.Header.BackColor = Color.Red;
 
-// Setting header BackColor
+// Setting header ForeColor
 
 this.sfCalendar.Style.Header.ForeColor = Color.Yellow;
 
-// Setting header BackColor
+// Setting header DayNames BackColor
 
 this.sfCalendar.Style.Header.DayNamesBackColor = Color.Green;
 
-// Setting header BackColor
+// Setting header DayNames ForeColor
 
 this.sfCalendar.Style.Header.DayNamesForeColor = Color.WhiteSmoke;
+
+// Setting header DayNames Font
+
+this.sfCalendar.Style.Header.DayNamesFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular);
 
 {% endhighlight  %}
 
@@ -66,6 +70,10 @@ Me.sfCalendar.Style.Header.DayNamesBackColor = Color.Green
 ' Setting header DayNamesForeColor
 
 Me.sfCalendar.Style.Header.DayNamesForeColor = Color.WhiteSmoke
+
+' Setting header DayNames Font
+
+Me.sfCalendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular)
 
 {% endhighlight  %}
 
@@ -146,7 +154,7 @@ Calendar control cells can be customized by using the following properties.
 
 ### Customize trailing date appearance 
 
-Calendar control Trailing(Next or Previous month) cells can be customized by the below properties.
+Calendar control trailing(Next or Previous month) cells can be customized by the below properties.
 
 * TrailingCellBackColor
 * TrailingCellForeColor
@@ -276,7 +284,7 @@ Me.sfCalendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 1
 
 ## Hide trailing dates   
 
-It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the `TrailingDatesVisible` property.
+`SfCalendar` allows to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the calendar. This is done by disabling the `TrailingDatesVisible` property.
 
 For setting these properties, use the following code.
 
@@ -384,7 +392,7 @@ Me.sfCalendar.HighlightTodayCell = true
 
 ## Change visibility of navigation buttons
 
-Navigation buttons used to move between views in `SfCalendar`. It visibility can be customized by using `ShowNavigationButton` property. The following code example illustrates the same.
+Navigation buttons are used to move between views in `SfCalendar`. It visibility can be customized by using `ShowNavigationButton` property. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -434,7 +442,6 @@ Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Naviga
 
 ![](appearance-images/navbuttonalignleft.png)
 
-
 {% tabs %}
 
 {% highlight C# %}
@@ -459,7 +466,7 @@ Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Naviga
 
 ## Change visibility of the footer
 
-Visibility of the calendar footer Today/None button can be customized by using `ShowToday` and `ShowNone` properties. The following code example illustrates the same.
+Visibility of the calendar footer can be customized by using `ShowFooter` property which contains Today and None buttons and it can be customized `ShowToday` and `ShowNone` properties. The following code example illustrates the same.
 
 {% tabs %}
 
