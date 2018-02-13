@@ -20,7 +20,7 @@ In this walk through, you will create Windows Forms Application that contains Sf
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in C#](#adding-control-manually-in-code)
+3. [Adding control manually in code](#adding-control-manually-in-code)
 4. [Configuring date range](#configuring-date-range)
 5. [Configure editing mode](#configure-editing-mode)
 6. [Configure allow null value](#configure-allow-null-value)
