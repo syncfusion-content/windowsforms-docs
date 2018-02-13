@@ -160,14 +160,13 @@ Calendar control Selected cells can be customized by the below properties.
 * SelectedCellForeColor
 * SelectedCellBorderColor
 * SelectedCellHoverBorderColor
+* SelectedCellFont
 
 The following code example illustrates the customization of the Calendar cells.
 
 {% tabs %}
 
 {% highlight C# %}
-
-// Footer customizations
 
 // Setting CellBackColor
 
@@ -213,11 +212,13 @@ this.sfCalendar.Style.Cell.TrailingCellFont = new System.Drawing.Font("Calibri",
 
 this.sfCalendar.Style.Cell.CellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
 
+// Setting selected CellFont
+
+this.sfCalendar.Style.Cell.SelectedCellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular); 
+
 {% endhighlight  %}
 
 {% highlight VB %}
-
-' Footer customizations
 
 ' Setting CellBackColor
 
@@ -263,13 +264,17 @@ Me.sfCalendar.Style.Cell.TrailingCellFont = New System.Drawing.Font("Calibri", 1
 
 Me.sfCalendar.Style.Cell.CellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
 
+' Setting selected CellFont
+
+Me.sfCalendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular)
+
 {% endhighlight  %}
 
 {% endtabs %} 
 
 ![](appearance-images/cellcustomization.png)
 
-## Settings the Days   
+## Hide trailing dates   
 
 It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the `TrailingDatesVisible` property.
 
@@ -297,7 +302,7 @@ this.SfCalendar1.TrailingDatesVisible = False
 
 ![](appearance-images/inactivedaysfalse.png)
 
-## Abbreviating Day Names
+## Abbreviating day names
 
 By default, the day names are displayed in an abbreviated form in the Calendar control. They can also be displayed in an expanded form by setting `ShowAbbreviatedDayNames` property to false. This indicates whether the name of day is abbreviated or expanded. It returns the Boolean value.
 
@@ -327,7 +332,7 @@ Me.sfCalendar.ShowAbbreviatedDayNames = false
 
 ## Right-To-Left
 
-`SfCalendar` control elements can be aligned in right-to-left layout. The `RightToLeftLayout` property is used for international applications where the language is written from right to left such as Hebrew or Arabic. `SfCalendar` control laid out from right to left when `RightToLeftLayout` is `true` and  `RightToLeft` value is `Yes`. The following code example illustrates the same.
+`SfCalendar` control elements can be aligned in right-to-left layout. `SfCalendar` control laid out from right to left when `RightToLeft` value is `Yes`. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -337,8 +342,6 @@ Me.sfCalendar.ShowAbbreviatedDayNames = false
 
 this.sfCalendar.RightToLeft = RightToLeft.Yes;
 
-this.sfCalendar.RightToLeftLayout = true;
-
 {% endhighlight  %}
 
 {% highlight VB %}
@@ -347,15 +350,13 @@ this.sfCalendar.RightToLeftLayout = true;
 
 Me.sfCalendar.RightToLeft = RightToLeft.Yes
 
-Me.sfCalendar.RightToLeftLayout = true
-
 {% endhighlight  %}
 
 {% endtabs %}
 
 ![](appearance-images/righttoleft.png)
 
-## Highlight Today cell 
+## Highlight today cell 
 
 Today cell highlighted even selected date is different than Today in `SfCalendar`. The highlight of today cell can be customized by using `HighlightTodayCell` property. The following code snippets illustrates the same.
 
@@ -365,7 +366,7 @@ Today cell highlighted even selected date is different than Today in `SfCalendar
 
 // Indicating whether Today cell highlighted even selected date is different than Today
 
-this.sfCalendar.HighlightTodayCell = false;
+this.sfCalendar.HighlightTodayCell = true;
 
 {% endhighlight  %}
 
@@ -373,7 +374,7 @@ this.sfCalendar.HighlightTodayCell = false;
 
 ' Indicating whether Today cell highlighted even selected date is different than Today
 
-Me.sfCalendar.HighlightTodayCell = false
+Me.sfCalendar.HighlightTodayCell = true
 
 {% endhighlight  %}
 
@@ -381,9 +382,9 @@ Me.sfCalendar.HighlightTodayCell = false
 
 ![](appearance-images/todaycell.png)
 
-## Change visibility of Navigation Buttons
+## Change visibility of navigation buttons
 
-Navigation buttons used to move between views in SfCalendar. It visibility can be customized by using `ShowNavigationButton` property. The following code example illustrates the same.
+Navigation buttons used to move between views in `SfCalendar`. It visibility can be customized by using `ShowNavigationButton` property. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -407,7 +408,7 @@ Me.sfCalendar.ShowNavigationButton = false
 
 ![](appearance-images/navigationbuttons.png)
 
-## Navigation Buttons alignment
+## Customize navigation buttons alignment
 
 Navigation buttons should align relative to the Calendar Header. It alignment can be customized by using `NavigationButtonAlignment`. The following code example illustrates the same.
 
@@ -456,7 +457,7 @@ Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Naviga
 
 ![](appearance-images/navbuttonalignboth.png)
 
-## Change the visibility of the footer Today or None Button
+## Change visibility of the footer
 
 Visibility of the calendar footer Today/None button can be customized by using `ShowToday` and `ShowNone` properties. The following code example illustrates the same.
 

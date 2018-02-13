@@ -136,13 +136,13 @@ Me.SfCalendar1.BlackoutDates = New DateTime() {date, date1, date2, date3, date4,
 
 ## Minimum DateTime
 
-`MinDate` can help to restrict the `DateTime` value set lesser than specific `DateTime` Value. If the Value of `SfCalendar` is less than `MinDate`, then the Value property reset to `MinDate`. When the `MinDate` is set, if the new `MinDate` value is greater than the `MaxDate`, then the `MaxDate` reset to the `MinDate`. 
+`MinDate` can help to restrict the `DateTime` value set lesser than specific `DateTime` value. If the value of `SfCalendar` is less than `MinDate`, then the `Value` property reset to `MinDate`. When the `MinDate` is set, if the new `MinDate` value is greater than the `MaxDate`, then the `MaxDate` reset to the `MinDate`. 
 
 ## Maximum DateTime
 
-`MaxDate` can help to restrict the `DateTime` value set greater than specific `DateTime` Value. If the Value of `SfCalendar` is greater than `MaxDate`, then the Value property reset to `MaxDate`. When the `MaxDate` is set, if the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` reset to the `MaxDate`. 
+`MaxDate` can help to restrict the `DateTime` value set greater than specific `DateTime` value. If the value of `SfCalendar` is greater than `MaxDate`, then the `Value` property reset to `MaxDate`. When the `MaxDate` is set, if the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` reset to the `MaxDate`. 
 
-Sometimes, the value needs to be restricted in between some date range. Lets Consider a project for hotel reservation system. The “In Date” should be lesser than the “Out Date” and vice versa. So “In Date” should be set as minimum Date and “Out Date” should be set as maximum Date in the `SfCalendar` control.
+Sometimes, the value needs to be restricted in between some date range. Lets Consider a project for hotel reservation system. The “In Date” should be lesser than the “Out Date” and vice versa. So “In Date” should be set as minimum date and “Out Date” should be set as maximum date in the `SfCalendar` control.
 
 {% tabs %}
 

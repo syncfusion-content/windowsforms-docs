@@ -69,6 +69,8 @@ Me.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.All
 
 {% endtabs %}
 
+![](navigation-images/allview.png)
+
 ## Handle view change
 
 `ViewChanging` event occurs when click on the Calendar Header text to change the view from one view to another view. The following code example illustrates the same.
@@ -125,14 +127,6 @@ It is possible to navigate from one view to other views through keyboard. It can
 In Calendar control, navigate from one view to other views by tapping the header of the Calendar control. 
 
 N> Can navigate multiple views through mouse when `ViewMode` property value as All. 
-
-![](navigation-images/monthview.png)
-
-![](navigation-images/yearview.png)
-
-![](navigation-images/decadeview.png)
-
-![](navigation-images/centuryview.png)
 
 ## Handle Navigation
 
