@@ -7,13 +7,13 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Cell Customization
+# Cell customization
 
 `SfCalendar` cells can be customized for mentioning some special or important days. 
 
 ## Special Dates 
 
-This Support is used to mention some special dates. `SpecialDates` property helps to hold the Special Dates collection, which can be customized
+This support is used to mention some special dates. `SpecialDates` property helps to hold the Special Dates collection, which can be customized.
 
 To customize the dates, use the following code example.
 
@@ -160,7 +160,7 @@ private void InitializeComponent()
 
 ## Render cell on-demand
 
-This Support is used to highlight dates or customize to mention some special date.
+This support is used to highlight dates or customize to mention some special date.
 
 To customize the dates, use the following code example.
 

@@ -27,7 +27,7 @@ In this walk through, you will create Windows Forms Application that contains Sf
 7. [Configure to allow multiple selection](#configure-to-allow-multiple-selection)
 8. [Configure number of weeks in view](#configure-number-of-weeks-in-view)
 9. [Configure first day of week](#configure-first-day-of-week)
-10.[Configure to show week number](#configure-to-show-week-number)
+10. [Configure to show week number](#configure-to-show-week-number)
 
 ### Creating the project
 
@@ -359,7 +359,7 @@ The number of weeks shown in the month view can be changed by setting the `Numbe
 
 // Setting the Number of weeks in View
 
-this.sfCalendar.NumberOfWeeksInView = 3;
+this.sfCalendar.NumberOfWeeksInView = 8;
 
 {% endhighlight  %}
 
@@ -367,7 +367,7 @@ this.sfCalendar.NumberOfWeeksInView = 3;
 
 ' Setting the Number of weeks in View
 
-Me.sfCalendar.NumberOfWeeksInView = 3
+Me.sfCalendar.NumberOfWeeksInView = 8
 
 {% endhighlight  %}
 

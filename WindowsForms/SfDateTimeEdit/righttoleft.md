@@ -9,34 +9,22 @@ documentation: ug
 
 # Right-To-Left
 
-SfDateTimeEdit control elements can be aligned in right-to-left layout. The `RightToLeftLayout` property is used for international applications where the language is written from right to left such as Hebrew or Arabic. SfDateTimeEdit control laid out from right to left when `RightToLeftLayout` is `true` and  `RightToLeft` value is `Yes`. The following code snippets illustrates the same.
+`SfDateTimeEdit` control elements can be aligned in right-to-left layout. This control laid out from right to left when `RightToLeft` value is `Yes`. The following code snippets illustrates the same.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Disable the Right to Left
+//Enable the Right to Left
 
-this.dateTimeEdit.RightToLeftLayout = false;
-this.dateTimeEdit.RightToLeft = RightToLeft.Yes;
-
-//Enable the Right to Left 
-
-this.dateTimeEdit.RightToLeftLayout = true;
 this.dateTimeEdit.RightToLeft = RightToLeft.Yes;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-'Disable the Right to Left
+'Enable the Right to Left
 
-Me.dateTimeEdit.RightToLeftLayout = false
-Me.dateTimeEdit.RightToLeft = RightToLeft.Yes
-
-'Enable the Right to Left 
-
-Me.dateTimeEdit.RightToLeftLayout = true
 Me.dateTimeEdit.RightToLeft = RightToLeft.Yes
 
 {% endhighlight  %}
