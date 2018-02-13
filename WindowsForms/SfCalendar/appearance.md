@@ -154,7 +154,7 @@ Calendar control cells can be customized by using the following properties.
 
 ### Customize trailing date appearance 
 
-Calendar control Trailing(Next or Previous month) cells can be customized by the below properties.
+Calendar control trailing(Next or Previous month) cells can be customized by the below properties.
 
 * TrailingCellBackColor
 * TrailingCellForeColor
