@@ -160,14 +160,13 @@ Calendar control Selected cells can be customized by the below properties.
 * SelectedCellForeColor
 * SelectedCellBorderColor
 * SelectedCellHoverBorderColor
+* SelectedCellFont
 
 The following code example illustrates the customization of the Calendar cells.
 
 {% tabs %}
 
 {% highlight C# %}
-
-// Footer customizations
 
 // Setting CellBackColor
 
@@ -213,11 +212,13 @@ this.sfCalendar.Style.Cell.TrailingCellFont = new System.Drawing.Font("Calibri",
 
 this.sfCalendar.Style.Cell.CellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
 
+// Setting selected CellFont
+
+this.sfCalendar.Style.Cell.SelectedCellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular); 
+
 {% endhighlight  %}
 
 {% highlight VB %}
-
-' Footer customizations
 
 ' Setting CellBackColor
 
@@ -262,6 +263,10 @@ Me.sfCalendar.Style.Cell.TrailingCellFont = New System.Drawing.Font("Calibri", 1
 ' Setting CellFont
 
 Me.sfCalendar.Style.Cell.CellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
+
+' Setting selected CellFont
+
+Me.sfCalendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular)
 
 {% endhighlight  %}
 
