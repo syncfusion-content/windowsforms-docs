@@ -116,15 +116,15 @@ Me.sfCalendar.ViewChanging = (Me.sfCalendar.ViewChanging + SfCalendar_ViewChangi
 
 ## Navigation through mouse
 
-It is possible to navigate from one view to other views by using the mouse which is done by clicking the header of the Calendar control in Backward direction. Also by selecting the month or year or decade cell to navigate from one to other views in Forward direction. 
+`SfCalendar` control allows to navigate from one view to other views through mouse which is done by clicking the header of the Calendar control in Backward direction. Also by selecting the month or year or decade cell to navigate from one to other views in Forward direction. 
 
 ## Navigation through keyboard
 
-It is possible to navigate from one view to other views through keyboard. It can be navigate from one view to other views by pressing the `CTRL + Up Arrow` or `CTRL + Down Arrow` keys. 
+`SfCalendar` control allows to navigate from one view to other views through keyboard by pressing the `CTRL + Up Arrow` in Backward direction or `CTRL + Down Arrow` keys in Forward direction. 
 
 ## Navigation through touch
 
-In Calendar control, navigate from one view to other views by tapping the header of the Calendar control. 
+`SfCalendar` control allows to navigate from one view to other views by touch gestures on the header of the Calendar control in Backward direction. Also by selecting the month or year or decade cell by touch gesture can be navigate from one to other views in Forward direction. 
 
 N> Can navigate multiple views through mouse when `ViewMode` property value as All. 
 

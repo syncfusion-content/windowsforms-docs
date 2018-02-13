@@ -160,9 +160,7 @@ private void InitializeComponent()
 
 ## Render cell on-demand
 
-This support is used to highlight dates or customize to mention some special date.
-
-To customize the dates, use the following code example.
+This support is used to highlight or customize dates to mention some special date on demand. To customize the dates, use the following code example.
 
 {% tabs %}
 

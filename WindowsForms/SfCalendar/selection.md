@@ -13,11 +13,11 @@ SfCalendar allow to select one or more dates. For selecting a date you have to s
 
 ## Change selection
 
-Selected date of the Calendar control can be changed by using the `SelectedDate` property.  
+`SfCalendar` control allows to change the selection by using `SelectedDate` property through keyboard and code as the below. 
 
 ### Change selection through keyboard
 
-Selected date of the Calendar control can be changed by using the keyboard the date selection of the control by using the `Up/Down Arrow` and `Left/Right Arrow` keys. 
+`SfCalendar` control allows to select the date through keyboard by using `Up/Down Arrow` and `Left/Right Arrow` keys. 
 
 ### Change selection programmatically
 
