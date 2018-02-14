@@ -9,71 +9,51 @@ documentation: ug
 
 # Navigation
 
-This section explains the views and navigations of the `SfCalendar`. 
+By default, Calendar displays the month view. Users can move from current month to previous or next month in the Calendar control by clicking navigation buttons in the header and also can move from month view to other views (Year, Decade, Century) to select the dates from other year or decade by click the header text of Calendar. 
 
 ## Different views 
 
-This calendar support for month, year, decade, century views and provides intuitive interface through which user can navigate and quickly select dates. To set the View, set `ViewMode` property. 
+Calendar supports month, year, decade, century views and provides intuitive interface through which user can navigate and quickly select dates.
 
-The following codes illustrates the same.
+![](navigation-images/allview.png)
+
+User can choose the view options in calendar by `ViewMode` property. the below code illustrates how to restrict decade view in calendar.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// setting Year to display month view
-
-    this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Month;
-
-// setting Year to display year view
+// setting Year and decade mode to display year and decade view
     
-    this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year;
-
-// setting Year to display decade view
-    
-    this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade;
-
-// setting Year to display Century view
-
-    this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Century;
-   
-// setting Year display all the views. Its a default value of ViewMode
-
-    this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.All;
+this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year | this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-' setting Month to display month view
+' setting Year and decade mode to display year and decade view
 
-Me.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Month
-
-' setting Year to display year view
-
-Me.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year
-
-' setting Decade to display decade view
-
-Me.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade
-
-' setting Century to display Century view
-
-Me.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Century
-
-' setting All to display all the views
-
-Me.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.All
+(Syncfusion.WinForms.Input.Enums.CalendarViewType.Year Or Me.sfCalendar.ViewMode) = Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade
 
 {% endhighlight  %}
 
 {% endtabs %}
 
-![](navigation-images/allview.png)
+## Navigation through mouse
+
+Navigation between next or previous range of dates for the current view in the calendar can be done by clicking up and down navigation buttons in calendar header. `SfCalendar` control allows to navigate from one view to other views through mouse which is done by clicking the header text of the calendar and selecting cell from the view navigate back to next available view in `ViewMode`.
+
+## Navigation through keyboard
+
+`SfCalendar` control allows to navigate from one view to other views through keyboard by pressing the `CTRL + UP` in Backward direction or `CTRL + DOWN` keys in Forward direction. SfCalendar allows to navigate between different cells in the same view by pressing navigation arrows.
+
+## Navigation through touch
+
+Navigation between next or previous range of dates for the current view in the calendar can be done by panning on thh calendar view. `SfCalendar` control allows to navigate from one view by tap the header of calendar. Tapping cell from the view navigate back to next available view in `ViewMode`. 
 
 ## Handle view change
 
-`ViewChanging` event occurs when click on the Calendar Header text to change the view from one view to another view. The following code example illustrates the same.
+`ViewChanging` event occurs when click on the Calendar Header text to change the view from one view to another view. Change of view can be restricted on-demand by handling the `ViewChanging` event. `ViewChangingEventArgs` provides the information about the old and new `ViewType`. This helps to restrict view change in specific scenarios only. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -84,12 +64,12 @@ Me.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.All
  this.sfCalendar.ViewChanging += SfCalendar_ViewChanging;
 
   private void SfCalendar_ViewChanging(Syncfusion.WinForms.Input.SfCalendar sender, Syncfusion.WinForms.Input.Events.ViewChangingEventArgs args)
-        {
-            if(args.NewViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Year)
-            {
-                args.Cancel = true;
-            }
-        }
+  {
+      if(args.NewViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Year)
+      {
+         args.Cancel = true;
+      }
+  }
 
 {% endhighlight  %}
 
@@ -114,23 +94,10 @@ Me.sfCalendar.ViewChanging = (Me.sfCalendar.ViewChanging + SfCalendar_ViewChangi
 
 {% endtabs %}
 
-## Navigation through mouse
-
-`SfCalendar` control allows to navigate from one view to other views through mouse which is done by clicking the header of the Calendar control in Backward direction. Also by selecting the month or year or decade cell to navigate from one to other views in Forward direction. 
-
-## Navigation through keyboard
-
-`SfCalendar` control allows to navigate from one view to other views through keyboard by pressing the `CTRL + Up Arrow` in Backward direction or `CTRL + Down Arrow` keys in Forward direction. 
-
-## Navigation through touch
-
-`SfCalendar` control allows to navigate from one view to other views by touch gestures on the header of the Calendar control in Backward direction. Also by selecting the month or year or decade cell by touch gesture can be navigate from one to other views in Forward direction. 
-
-N> Can navigate multiple views through mouse when `ViewMode` property value as All. 
 
 ## Handle Navigation
 
-`Navigating` event occurs when press navigation buttons to move next or previous month, year or decade in calendar. The following code example illustrates the same.
+`Navigating` event occurs when navigating between current range of dates to next or previous range of dates in calendar. Navigating between the same view can be restricted by handling the `Navigating` event. `NavigatingEventArgs` provides the information about the old and new range of dates. This helps to restrict navigation in specific scenarios only. The following code example illustrates the same.
 
 {% tabs %}
 
