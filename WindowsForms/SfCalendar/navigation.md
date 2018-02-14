@@ -45,15 +45,15 @@ Navigation between next or previous range of dates for the current view in the c
 
 ## Navigation through keyboard
 
-`SfCalendar` control allows to navigate from one view to other views through keyboard by pressing the `CTRL + UP` in Backward direction or `CTRL + DOWN` keys in Forward direction. SfCalendar allows to navigate beetween different cells in the same view by pressing navigation arrows.
+`SfCalendar` control allows to navigate from one view to other views through keyboard by pressing the `CTRL + UP` in Backward direction or `CTRL + DOWN` keys in Forward direction. SfCalendar allows to navigate between different cells in the same view by pressing navigation arrows.
 
 ## Navigation through touch
 
-Navigation beetween next or previous range of dates for the current view in the calendar can be done by panning on thh calendar view. `SfCalendar` control allows to navigate from one view by tap the header of calendar. Tapping cell from the view navigate back to next available view in `ViewMode`. 
+Navigation between next or previous range of dates for the current view in the calendar can be done by panning on thh calendar view. `SfCalendar` control allows to navigate from one view by tap the header of calendar. Tapping cell from the view navigate back to next available view in `ViewMode`. 
 
 ## Handle view change
 
-`ViewChanging` event occurs when click on the Calendar Header text to change the view from one view to another view. Change of view can be restricted on-demad by handling the `ViewChanging` event. `ViewChangingEventArgs` provides the information about the old and new `ViewType`. This helps to restrict view change in specific scenarios only. The following code example illustrates the same.
+`ViewChanging` event occurs when click on the Calendar Header text to change the view from one view to another view. Change of view can be restricted on-demand by handling the `ViewChanging` event. `ViewChangingEventArgs` provides the information about the old and new `ViewType`. This helps to restrict view change in specific scenarios only. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ Me.sfCalendar.ViewChanging = (Me.sfCalendar.ViewChanging + SfCalendar_ViewChangi
 
 ## Handle Navigation
 
-`Navigating` event occurs when navigating beetween current range of dates to next or previous range of dates in calendar. Navigating between the same view can berestricted by handling the `Navigating` event. `NavigatingEventArgs` provides the information about the old and new range of dates. This helps to restrict navigation in specific scenarios only. The following code example illustrates the same.
+`Navigating` event occurs when navigating between current range of dates to next or previous range of dates in calendar. Navigating between the same view can be restricted by handling the `Navigating` event. `NavigatingEventArgs` provides the information about the old and new range of dates. This helps to restrict navigation in specific scenarios only. The following code example illustrates the same.
 
 {% tabs %}
 
