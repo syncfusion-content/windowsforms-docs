@@ -40,6 +40,29 @@ Me.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue
 {% endhighlight %}
 
 
+## DropDowWidth
 
+The DropDownWidth property is used to set the width for the DropDown Popup of MultiColumnComboBox. Please find the code for the same:
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.multiColumnComboBox1.DropDownWidth = 240;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.multiColumnComboBox1.DropDownWidth = 240
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Dropdownimage.png) 
+
+ Fig 1: This screenshot shows the width sets for the DropDown popup of MultiColumnComboBox
 
  
