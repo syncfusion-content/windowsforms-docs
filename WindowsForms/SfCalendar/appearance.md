@@ -100,7 +100,7 @@ The following code example illustrates the same.
 
 // Setting Footer BackColor
 
-this.sfCalendar.VisualStyle.Footer.BackColor = Color.Tomato;
+this.sfCalendar.Style.Footer.BackColor = Color.Tomato;
 
 // Setting Footer ForeColor
 
