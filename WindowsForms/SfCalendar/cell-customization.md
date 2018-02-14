@@ -15,6 +15,20 @@ documentation: ug
 
 This support is used to mention some special dates. `SpecialDates` property helps to hold the Special Dates collection, which can be customized.
 
+`SpecialDates` contains the following properties to customize the cells. 
+
+* **BackColor** - The Background color for the SpecialDate, it fill the cell.
+* **Value** - The value for the SpecialDate.
+* **ForeColor** - The foreground color for the SpecialDate.
+* **Image** - The image for the SpecialDate.
+* **Font** - The font used to draw the SpecialDate.
+* **IsDateVisible** - A value indicating whether the Date Text will be visible in SpecialDate.
+* **Description** - The description for SpecialDate.
+* **ImageAlign** - The alignment of image in SpecialDate. 
+* **TextAlign** -  The alignment of date text in SpecialDate. 
+* **TextImageRelation** - The alignment of date text and image relative to each other in SpecialDate. 
+
+
 To customize the dates, use the following code example.
 
 {% tabs %}
