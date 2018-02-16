@@ -72,6 +72,10 @@ The given value can be treated as a date/time value. It can be validated based o
 
 {% highlight C# %}
 
+// Invoking Validating event
+
+this.dateTimeEdit.Validating += DateTimeEdit_Validating;
+
 private void DateTimeEdit_Validating(object sender, ValidatingEventArgs e)
 
 {
@@ -90,7 +94,11 @@ private void DateTimeEdit_Validating(object sender, ValidatingEventArgs e)
 
 {% highlight VB %}
 
-Private Sub DateTimeEdit_Validating(ByVal sender As Object, ByVal e As ValidatingEventArgs)
+' Invoking Validating event
+
+Me.dateTimeEdit.Validating = (Me.dateTimeEdit.Validating + DateTimeEdit_Validating)
+    
+    Private Sub DateTimeEdit_Validating(ByVal sender As Object, ByVal e As ValidatingEventArgs)
 
         If e.IsError Then
 
