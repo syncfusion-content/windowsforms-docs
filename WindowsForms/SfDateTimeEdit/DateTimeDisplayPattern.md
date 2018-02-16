@@ -27,6 +27,8 @@ documentation: ug
 * RFC1123 
 * YearMonth 
 
+![](datetimepattern-images/allpattern.png)
+
 The different display format of DateTime can be set by `DateTimePattern` property. The following code snippet illustrates how to set the format as LongDate:
 
 {% tabs %}
@@ -58,9 +60,6 @@ dateTimeEdit.DateTimePattern = DateTimePattern.LongDate
 {% endtabs %} 
 
 ![](datetimepattern-images/datetimepattern_longdate.png)
-
-Long Date
-{:.caption}
 
 ## Custom Display Pattern
 

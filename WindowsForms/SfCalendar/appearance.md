@@ -366,13 +366,13 @@ Me.sfCalendar.RightToLeft = RightToLeft.Yes
 
 ## Highlight today cell 
 
-Today cell highlighted even selected date is different than Today in `SfCalendar`. The highlight of today cell can be customized by using `HighlightTodayCell` property. The following code snippets illustrates the same.
+Today cell highlighted even selected date is different than today in `SfCalendar`. The highlight of today cell can be customized by using `HighlightTodayCell` property. The following code snippets illustrates the same.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Indicating whether Today cell highlighted even selected date is different than Today
+// Indicating whether Today cell highlighted even selected date is different than today
 
 this.sfCalendar.HighlightTodayCell = true;
 

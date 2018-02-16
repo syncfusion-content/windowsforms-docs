@@ -28,7 +28,6 @@ This support is used to mention some special dates. `SpecialDates` property help
 * **TextAlign** -  The alignment of date text in SpecialDate. 
 * **TextImageRelation** - The alignment of date text and image relative to each other in SpecialDate. 
 
-
 To customize the dates, use the following code example.
 
 {% tabs %}
@@ -166,16 +165,12 @@ This support is used to highlight or customize dates to mention some special dat
 {% tabs %}
 
 {% highlight C# %}
-
-public Form1()
-{
-    
+   
     InitializeComponent();
 
     // Invoking the DrawCell Event.
 
     this.SfCalendar1.DrawCell += SfCalendar1_DrawCell;
-}
 
 /// <summary>
 /// To Draw the Cell
@@ -238,61 +233,55 @@ private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
 
 {% highlight VB %}
 
-public Form1()
+InitializeComponent
 
-{
+' Invoking the DrawCell Event.
 
-    InitializeComponent();
+Me.SfCalendar1.DrawCell = (Me.SfCalendar1.DrawCell + SfCalendar1_DrawCell)
     
-    // Invoking the DrawCell Event.
+    ''' <summary>
+    ''' To Draw the Cell
+    ''' </summary>
+    ''' <param name="sender">SfCalendar</param>
+    ''' <param name="args">DrawCell Event Args</param>
 
-    this.SfCalendar1.DrawCell += SfCalendar1_DrawCell;
+    Private Sub SfCalendar1_DrawCell(ByVal sender As SfCalendar, ByVal args As DrawCellEventArgs)
 
-}
+        Dim range1 As SelectionRange = New SelectionRange(New DateTime(2017, 9, 1), New DateTime(2017, 9, 15))
 
-/// <summary>
-/// To Draw the Cell
-/// </summary>
-/// <param name="sender">SfCalendar</param>
-/// <param name="args">DrawCell Event Args</param>
+        Dim range2 As SelectionRange = New SelectionRange(New DateTime(2017, 9, 16), New DateTime(2017, 9, 30))
 
-private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
+        Dim Christmas As DateTime = New DateTime(2017, 12, 25)
 
-{
+        If (Not (args.Value) Is Nothing) Then
 
-    SelectionRange range1 = new SelectionRange(new DateTime(2017, 09, 01), new DateTime(2017, 09, 15));
+            If (args.Value = Christmas) Then
 
-    SelectionRange range2 = new SelectionRange(new DateTime(2017, 09, 16), new DateTime(2017, 09, 30));
+                args.BackColor = Color.Green
+                args.ForeColor = Color.Yellow
+                args.Image = Resources.Christmas
+                args.ImageBounds = New Rectangle(25, 13, 30, 30)
+                args.HorizontalAlignment = StringAlignment.Near
+                args.VerticalAlignment = StringAlignment.Near
 
-  
-    DateTime Christmas = new DateTime(2017, 12, 25);
+            End If
+            
+            If (args.Value.Value.Date = Me.dateTimePicker5.Value.Date) Then
 
-   
-    if (args.Value != null)
+                Dim month As String = args.Value.Value.ToString("MMM", Me.SfCalendar1.Culture)
+                args.BackColor = Me.colorPickerButton17.SelectedColor
+                args.ForeColor = Me.colorPickerButton18.SelectedColor
+                args.Image = Resources.Cell
+                args.ImageBounds = New Rectangle(0, 20, 30, 30)
+                args.VerticalAlignment = Me.verticalAlignment
+                args.HorizontalAlignment = Me.horizontalAlignment
+                args.Text = (month + (" " + args.Text))
 
-    {
-
-        if (args.Value == Christmas)
-
-        {
-
-            args.BackColor = Color.Green
-
-            args.ForeColor = Color.Yellow
-
-            args.Image = Resources.Christmas
-
-            args.ImageBounds = new Rectangle(25, 13, 30, 30)
-
-            args.HorizontalAlignment = StringAlignment.Near
-
-            args.VerticalAlignment = StringAlignment.Near
-
-        }
-
-    }
-
-}
+            End If
+            
+        End If
+        
+    End Sub
 
 {% endhighlight  %}
 

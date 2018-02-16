@@ -97,11 +97,11 @@ Syncfusion.WinForms.Input.SfDateTimeEdit dateTimeEdit = new Syncfusion.WinForms.
 
 this.Controls.Add(dateTimeEdit);
 
-dateTimeEdit.Value = new DateTime(2018, 1, 2);
+dateTimeEdit.Value = new DateTime(2018, 2, 16);
 
-dateTimeEdit.MinDateTime = new DateTime(2018, 1, 2);
+dateTimeEdit.MinDateTime = new DateTime(2018, 2, 3);
 
-dateTimeEdit.MaxDateTime = new DateTime(2018, 28, 2);
+dateTimeEdit.MaxDateTime = new DateTime(2018, 2, 27);
 
 {% endhighlight  %}
 
@@ -111,15 +111,17 @@ Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
 
 Me.Controls.Add(dateTimeEdit)
 
-dateTimeEdit.Value = New DateTime(2018, 1, 2)
+dateTimeEdit.Value = New DateTime(2018, 2, 16)
 
-dateTimeEdit.MinDateTime = New DateTime(2010, 01, 01)
+dateTimeEdit.MinDateTime = New DateTime(2018, 2, 3)
 
-dateTimeEdit.MaxDateTime = New DateTime(2030, 01, 01)
+dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 27)
 
 {% endhighlight  %}
 
 {% endtabs %}
+
+![](getting-started-images/minmax.png)
 
 ## Configure editing mode
 
@@ -146,6 +148,8 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 {% endtabs %} 
 
+![](editing-support-images/mask.png)
+
 ## Configure allow null value
 
 SfDateTimEdit allow to set the `Value` as null in Mask mode of DateTimeEditing when `AllowNull` is true. The following code snippets illustrates the same
@@ -169,6 +173,8 @@ dateTimeEdit.AllowNull = true
 {% endhighlight  %}
 
 {% endtabs %} 
+
+![](watermark-images/nullvalue.png)
 
 ## Configure custom format
 
@@ -209,6 +215,8 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 {% endhighlight %}
 
 {% endtabs %} 
+
+![](getting-started-images/customformat.png)
 
 ## Configure UpDown DateTimeEdit
 
