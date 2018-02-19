@@ -25,7 +25,7 @@ User can choose the view options in calendar by `ViewMode` property. the below c
 
 // setting Year and decade mode to display year and decade view
     
-this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year | this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade;
+this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year | Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade;
 
 {% endhighlight  %}
 
@@ -33,7 +33,7 @@ this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year
 
 ' setting Year and decade mode to display year and decade view
 
-(Syncfusion.WinForms.Input.Enums.CalendarViewType.Year Or Me.sfCalendar.ViewMode) = Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade
+Me.sfCalendar.ViewMode = (Syncfusion.WinForms.Input.Enums.CalendarViewType.Year Or Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade)
 
 {% endhighlight  %}
 

@@ -13,7 +13,7 @@ documentation: ug
 
 ## Change culture
 
-The culture information can be applied using the `Culture` property. 
+The culture information can be applied to the calendar using the `Culture` property. 
 
 To change the culture for this control, use the following code example.
 
@@ -41,7 +41,7 @@ Me.sfCalendar.Culture = New CultureInfo("he-IL")
 
 ## Localization
 
-In SfCalendar control, it is possible to localize the today button and none button contents based on application requirement. It can be achieved by retrieving Today Button by customizing SfCalendar control Template.  The following steps are used to override the default resource files from the application resource files,
+`SfCalendar` control allows to localize the static text used in calendar footer such as today button and none button contents based on application requirement. The following steps are used to override the default resource files from the application resource files and change the static text,
 
 * **Step 1**: Add the Resource folder to the application.                                                         
 
