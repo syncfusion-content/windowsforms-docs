@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DateTime display patterns of SfDateTimeEdit for Windows Forms
-description: How to change display patterns of DateTime and Custom patttern for SfDateTimeEdit 
+description: How to change display patterns of DateTime and Custom pattern for SfDateTimeEdit 
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug

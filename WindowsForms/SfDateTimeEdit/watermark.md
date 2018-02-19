@@ -13,7 +13,7 @@ documentation: ug
 
 ## Null Value
 
-`SfDateTimeEdit` control accepts null values only when the `DateTimeEditingMode` is default. NullValue support in the `SfDateTimeEdit` control can be enabled by setting the `AllowNull` property to true. If the value is null and the editing text box is empty then the `Watermark` will be displayed as the Text in `SfDateTimeEdit` control.
+`SfDateTimeEdit` control accepts null values only when the `DateTimeEditingMode` is default. NullValue support in the `SfDateTimeEdit` control can be enabled by setting the `AllowNull` property to true. If the value is null and the editing text box is empty then the `Watermark` will be displayed as the text in `SfDateTimeEdit` control.
 
 {% tabs %}
 

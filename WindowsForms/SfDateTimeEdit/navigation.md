@@ -9,7 +9,7 @@ documentation: ug
 
 # Navigation
 
-`SfDateTimeEdit` provides on easy navigation and `Value` changes though keyboard and mouse interaction in Mask mode of `DateTimeEditMode` and also provides free style text editing support for date and time information.`SfDateTimeEdit` allows to change the `SelectedField` by Right and Left arrow keys through keyboard interaction. Right and Left arrow key change the `SelectedField` of `SfDateTimeEdit` can be restricted by set `InterceptArrowKeys` as `false`.
+`SfDateTimeEdit` provides on easy navigation and `Value` changes though keyboard and mouse interaction in Mask mode of `DateTimeEditMode` and also provides free style text editing support for date and time information. `SfDateTimeEdit` allows to change the `SelectedField` by Right and Left arrow keys through keyboard interaction. Right and Left arrow key change the `SelectedField` of `SfDateTimeEdit` can be restricted by set `InterceptArrowKeys` as `false`.
 
 ## Navigate to DropDown Calendar
 
@@ -63,7 +63,7 @@ In `Mask` edit mode, `Value` of `SfDateTimeEdit` can be changed through Up and D
 
 In `Mask` edit mode, `Value` of `SfDateTimeEdit` can be changed through Up and Down buttons. To make DateTimeEdit as UpDown control, set `ShowUpDown` as `true` and DateTimeEdit control can be used as UpDown only when `DateTimeEditMode` is `Mask`. SfDateTimeEdit spin the value of `SelectedField` (Month, Day, Year, Hour, Second and Minute) one step up or down based on the up and down buttons press. `SelectedField` of SfDateTimeEdit provides the information about FieldType and FieldValue. `FieldType` of SelectedField in SfDateTimeEdit mention the type of selected `DateTimeField` and `FieldValue`  of SelectedField in SfDateTimeEdit provides text in selected `DateTimeField`.
 
-`SfDateTimeEdit` also allows to change the `Value` by mouse wheel action. But this mouse wheel changing the value applicable only on Mask mode DateTimeEditing. This vale change by mouse wheel can be restricted by set `AllowValueChangeOnMouseWheel` as `false`.
+`SfDateTimeEdit` also allows to change the `Value` by mouse wheel action. But this mouse wheel changing the value applicable only on Mask mode `DateTimeEditing`. This vale change by mouse wheel can be restricted by set `AllowValueChangeOnMouseWheel` as `false`.
 
 {% tabs %}
 

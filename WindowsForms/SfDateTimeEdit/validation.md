@@ -7,9 +7,14 @@ control: SfDateTimeEdit
 documentation: ug
 ---
 
-# DateTime Validation
+# Validation
 
-`SfDateTimeEdit` control validate the DateTime Value on pressing the Enter key, control lost its focus or pick the date from the DropDown Calendar. `ValidationOption` that helps to decides how the value will be changed when validation failed. If the validation failed, Value reset with previous date time `Value` or `MinValue` or `MaxValue`. If the validating event is not handled then the validation will be done based on the `ValidationOption` of SfDateTimeEdit.
+`SfDateTimeEdit` control validate the DateTime Value on pressing the Enter key, control lost its focus or pick the date from the DropDown Calendar. 
+
+
+## Validation reset option
+
+`ValidationOption` that helps to decides how the value will be changed when validation failed. If the validation failed, Value reset with previous date time `Value` or `MinValue` or `MaxValue`. If the validating event is not handled then the validation will be done based on the `ValidationOption` of SfDateTimeEdit.
 
 Validation results based on the input provided to `Value` or `DateTimeText` of SfDateTimeEdit. If the provided input is invalid datetime format or value met minimum or maximum value constraint, validation results will be fail. 
 
@@ -53,8 +58,6 @@ dateTimeEdit.ValidationOption = ValidationResetOption.MinValue
 {% endhighlight  %}
 
 {% endtabs %} 
-
-### DateTime Validation
 
 The given value can be treated as a date/time value. It can be validated based on the DateTime format with culture. There is an error indicating image will be shown, when the validation test gets failed. 
 

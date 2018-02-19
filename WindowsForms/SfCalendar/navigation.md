@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation of SfCalendar
-description: This section explains the views and naviagtions of the `SfCalendar`
+description: This section explains the views and navigations of the `SfCalendar`
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
@@ -17,7 +17,7 @@ Calendar supports month, year, decade, century views and provides intuitive inte
 
 ![](navigation-images/allview.png)
 
-User can choose the view options in calendar by `ViewMode` property. the below code illustrates how to restrict decade view in calendar.
+User can choose the required view options in calendar by `ViewMode` property. the below code illustrates how to show only year and decade views in calendar.
 
 {% tabs %}
 
@@ -45,11 +45,11 @@ Navigation between next or previous range of dates for the current view in the c
 
 ## Navigation through keyboard
 
-`SfCalendar` control allows to navigate from one view to other views through keyboard by pressing the `CTRL + UP` in Backward direction or `CTRL + DOWN` keys in Forward direction. SfCalendar allows to navigate between different cells in the same view by pressing navigation arrows.
+`SfCalendar` control allows to navigate from one view to other views through keyboard by pressing the `CTRL + UP` in backward direction or `CTRL + DOWN` keys in forward direction. SfCalendar allows to navigate between different cells in the same view by pressing navigation arrows. `CTRL + LEFT` and `CTRL + RIGHT` arrow keys to navigate to previous or next month of calendar.
 
 ## Navigation through touch
 
-Navigation between next or previous range of dates for the current view in the calendar can be done by panning on thh calendar view. `SfCalendar` control allows to navigate from one view by tap the header of calendar. Tapping cell from the view navigate back to next available view in `ViewMode`. 
+Navigation between next or previous range of dates for the current view in the calendar can be done by panning on the calendar view. `SfCalendar` control allows to navigate from one view to other view by tap the header of calendar. Tapping cell from the view navigate back to next available view in `ViewMode`. 
 
 ## Handle view change
 
@@ -64,11 +64,17 @@ Navigation between next or previous range of dates for the current view in the c
  this.sfCalendar.ViewChanging += SfCalendar_ViewChanging;
 
   private void SfCalendar_ViewChanging(Syncfusion.WinForms.Input.SfCalendar sender, Syncfusion.WinForms.Input.Events.ViewChangingEventArgs args)
+  
   {
+
       if(args.NewViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Year)
+
       {
+
          args.Cancel = true;
+
       }
+
   }
 
 {% endhighlight  %}
@@ -108,11 +114,17 @@ Me.sfCalendar.ViewChanging = (Me.sfCalendar.ViewChanging + SfCalendar_ViewChangi
 this.sfCalendar.Navigating += SfCalendar_Navigating;
 
 private void SfCalendar_Navigating(SfCalendar sender, Syncfusion.WinForms.Input.Events.NavigatingEventArgs args)
+
 {
+
     if (args.NewValue.Start <= new DateTime(2018, 04, 01) && args.NewValue.End >= new DateTime(2018, 04, 30))
+
     {
+
         args.Cancel = true;
+
     }
+
 }
 
 {% endhighlight  %}

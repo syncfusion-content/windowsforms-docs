@@ -11,7 +11,7 @@ documentation: ug
 
 ## Change visibility of UpDown
 
-UpDown allows to change the value Mouse interaction and it also allows to increment or decrement the values of date, month and year when change the value by clicking Up and Down buttons. This value change by Up and Down buttons are only applicable when `DateTimeEditingMode` is Mask. Visibility of UpDown buttons can be changed by `ShowUpDown` property. The following code snippets illustrates the same.
+UpDown allows to change the value by increment or decrement the values of date, month and year based on the selected field. This value change by Up and Down buttons are only applicable when `DateTimeEditingMode` is Mask. Visibility of UpDown buttons can be changed by `ShowUpDown` property. The following code snippets illustrates the same.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ Me.dateTimeEdit.ShowUpDown = false
 
 ## Change visibility of DropDown Button
 
-DropDown button in SfDateTimeEdit allows to open the Popup Calendar by Mouse interaction. Visibility of DropDown button can be changed by `ShowDropDown` property. The following code snippets illustrates the same.
+DropDown button in SfDateTimeEdit allows to open the popup calendar by mouse interaction. Visibility of DropDown button can be changed by `ShowDropDown` property. The following code snippets illustrates the same.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ Me.dateTimeEdit.ShowDropDown = false
 
 ![](appearance-images/showdropdown.png)
 
-## DropDown Calendar Size customization
+## DropDown calendar Size customization
 
 Size of the dropdown calendar can be customized by `DropDownSize` property. The following code snippets illustrates the same.
 
@@ -107,9 +107,9 @@ Me.dateTimeEdit.Width = 294
 
 ![](appearance-images/dropdownsize.png)
 
-## Customize Dropdown Calendar Appearance
+## Customize Dropdown calendar Appearance
 
-DropDown Calendar of SfDateTimeEdit can be get from `MonthCalendar` property. All the customization with `MonthCalendar` will be reflected in dropdown calendar of SfDateTimeEdit. The below code snippets illustrates how to change the visibility of footer in dropdown calendar of SfDateTimeEdit.
+DropDown Calendar of SfDateTimeEdit can be get from `MonthCalendar` property. All the customization with `SfCalendar` will be reflected in dropdown calendar of SfDateTimeEdit. The below code snippets illustrates how to change the visibility of footer in dropdown calendar of SfDateTimeEdit.
 
 {% tabs %}
 

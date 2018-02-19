@@ -35,7 +35,7 @@ Me.dateTimeEdit.RightToLeft = RightToLeft.Yes
 
 ## Change Dropdown Calendar Alignment
 
-`SfDateTimeEdit` allows to change the dropdown opening side of Calendar relative to control. `DropDownPopupAlignment` of SfDateTimeEdit can be used to change the alignment of Calendar.The following code snippets illustrates how to change dropdown calendar alignment.
+`SfDateTimeEdit` allows to change the dropdown opening side of Calendar relative to control. `DropDownPopupAlignment` of SfDateTimeEdit can be used to change the alignment of Calendar. The following code snippets illustrates how to change dropdown calendar alignment.
 
 {% tabs %}
 
