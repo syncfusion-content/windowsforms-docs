@@ -13,7 +13,7 @@ This section explains the customization of appearance for header, footer and cel
 
 ## Customize header appearance
 
-Backcolor and Forecolor of each part in calendar header can customized. Calendar control header can be customized by using the following style properties.
+BackColor and ForeColor of each part in calendar header can customized. Calendar control header can be customized by using the following style properties.
 
 * BackColor
 * ForeColor
@@ -83,7 +83,7 @@ Me.sfCalendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.
 
 ## Customize footer appearance
 
-Backcolor and Forecolor of each part in calendar footer can customized. Footer of the calendar control can be customized by the following style properties.
+BackColor and ForeColor of each part in calendar footer can customized. Footer of the calendar control can be customized by the following style properties.
 
 * BackColor
 * ForeColor
@@ -162,7 +162,7 @@ Calendar control trailing(Next or Previous month) cells can be customized by the
 
 ### Customize selected date appearance
 
-Backcolor and Forecolor of selected date cell in calendar can customized. The following code illustrates how to customize the cell appearance.
+BackColor and ForeColor of selected date cell in calendar can customized. The following code illustrates how to customize the cell appearance.
 
 * SelectedCellBackColor
 * SelectedCellForeColor

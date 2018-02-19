@@ -130,7 +130,7 @@ Date-time value in DateTimeEdit can be edited by two ways.
 * Default Editing 
 * Mask Editing
 
-Editing modes can be changed by `DateTimeEditingMode` of SfDateTimEdit. The following code example illustrates how to change the date time edting mode.
+Editing modes can be changed by `DateTimeEditingMode` of SfDateTimEdit. The following code example illustrates how to change the date time editing mode.
 
 {% tabs %}
 
