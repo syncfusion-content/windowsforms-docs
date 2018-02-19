@@ -16,7 +16,7 @@ The DateTime value of the `SfDateTimeEdit` control can be updated by editing the
 
 ## Default Editing
 
-The DateTime can be edited in the TextBox of the `SfDateTimeEdit` control when the `DateTimeEditingMode` is Default. In Default editing mode the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, SfDateTimeEdit control automatically update the value in the correct pattern on lost focus. i.e If the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in Editing text box, DateTimeText will be automatically converted according to LongDate pattern while pressing the enter key or on lost focus of the control. The following code snippets illustrates the same.
+The DateTime can be edited in the textbox of the `SfDateTimeEdit` control when the `DateTimeEditingMode` is Default. In Default editing mode the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, SfDateTimeEdit control automatically update the value in the correct pattern on lost focus. i.e If the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in Editing text box, DateTimeText will be automatically converted according to LongDate pattern while pressing the enter key or on lost focus of the control. The following code snippets illustrates the same.
 
 {% tabs %}
 

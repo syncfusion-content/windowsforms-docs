@@ -13,20 +13,18 @@ documentation: ug
 
 ## Special Dates 
 
-This support is used to mention some special dates. `SpecialDates` property helps to hold the Special Dates collection, which can be customized.
+`SpecialDates` helps to hold the special Dates collection with icon and description for the dates which need to be highlighted. `SpecialDates` contains the following properties to customize the cells. 
 
-`SpecialDates` contains the following properties to customize the cells. 
-
-* **BackColor** - The Background color for the SpecialDate to fill the cell.
-* **Value** - The value for the SpecialDate.
-* **ForeColor** - The foreground color for the SpecialDate to draw the text.
-* **Image** - Image to display on SpecialDate cell.
+* **BackColor** - The Background color for the special date to fill the cell.
+* **Value** - The value for the special date.
+* **ForeColor** - The foreground color for the special date to draw the text.
+* **Image** - Image to display on special date cell.
 * **Font** - The font used to draw the SpecialDate.
-* **IsDateVisible** - A value indicating whether the Date Text will be visible in SpecialDate cell.
-* **Description** - The description for SpecialDate.
-* **ImageAlign** - The alignment of image in SpecialDate. 
-* **TextAlign** -  The alignment of date text in SpecialDate. 
-* **TextImageRelation** - The alignment of date text and image relative to each other in SpecialDate. 
+* **IsDateVisible** - A value indicating whether the Date Text will be visible in special date cell.
+* **Description** - The description for special date.
+* **ImageAlign** - The alignment of image in special date. 
+* **TextAlign** -  The alignment of date text in special date. 
+* **TextImageRelation** - The alignment of date text and image relative to each other in special date. 
 
 To customize the dates, use the following code example.
 
@@ -35,65 +33,111 @@ To customize the dates, use the following code example.
 {% highlight C# %}
 
 private void InitializeComponent()
+
     {
 
         this.components = new System.ComponentModel.Container();
         
         SpecialDate specialDate1 = new SpecialDate();
+
         SpecialDate specialDate2 = new SpecialDate();
+
         SpecialDate specialDate3 = new SpecialDate();
+
         SpecialDate specialDate4 = new SpecialDate();  
-        List<SpecialDate> SpecialDates = new List<SpecialDate>();      
+
+        List<SpecialDate> SpecialDates = new List<SpecialDate>();
          
         specialDate1.BackColor = System.Drawing.Color.White;
+
         specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         specialDate1.ForeColor = System.Drawing.Color.Magenta;
+
         specialDate1.Image = Properties.Resources.icons_Womens_day;
+
         specialDate1.Description = "International Women’s Day";
+
         specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate1.IsDateVisible = false;
+
         specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
         specialDate1.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
             
         specialDate2.BackColor = System.Drawing.Color.White;
+
         specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         specialDate2.ForeColor = System.Drawing.Color.Magenta;
+
         specialDate2.Description = "World Forestry Day";
+
         specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day;
+
         specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate2.IsDateVisible = false;
+
         specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
         specialDate2.Value = new System.DateTime(2018, 3, 21, 0, 0, 0, 0);
             
         specialDate3.BackColor = System.Drawing.Color.White;
+
         specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         specialDate3.ForeColor = System.Drawing.Color.Magenta;
+
         specialDate3.Image = Properties.Resources.Icon_Water_day;
+        
         specialDate3.Description = "World Day for Water";
+
         specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate3.IsDateVisible = false;
+
         specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
         specialDate3.Value = new System.DateTime(2018, 3, 24, 0, 0, 0, 0);
         
         specialDate4.BackColor = System.Drawing.Color.White;
+
         specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         specialDate4.ForeColor = System.Drawing.Color.Magenta;
+
         specialDate4.Image = Properties.Resources.Icon_Healthy_day;
+
         specialDate4.Description = "World Health Day";
+
         specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate4.IsDateVisible = false;
+
         specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
         specialDate4.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
+        
+        SpecialDates.Add(specialDate1);
+
+        SpecialDates.Add(specialDate2);
+
+        SpecialDates.Add(specialDate3);
+
+        SpecialDates.Add(specialDate4);
 
         this.sfCalendar.SpecialDates = SpecialDates;
-        SpecialDates.Add(specialDate1);
-        SpecialDates.Add(specialDate2);
-        SpecialDates.Add(specialDate3);
-        SpecialDates.Add(specialDate4);
+        
     }
 
 {% endhighlight  %}
@@ -171,23 +215,23 @@ private void InitializeComponent()
 
 ## Render cell on-demand
 
-This support is used to highlight or customize dates to mention some special date on-demand. To customize the dates, use the following code example.
+This support is used to highlight or customize dates to mention some special date on-demand. The following code example illustrates how to customize the cell on-demand.
 
 {% tabs %}
 
 {% highlight C# %}
-   
-    InitializeComponent();
-
+  
     // Invoking the DrawCell Event.
 
     this.SfCalendar1.DrawCell += SfCalendar1_DrawCell;
 
 
-/// To Draw the Cell
+   /// To Draw the Cell
 
-private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
-{
+   private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
+
+   { 
+
     SelectionRange range1 = new SelectionRange(new DateTime(2017, 09, 01), new DateTime(2017, 09, 15));
 
     SelectionRange range2 = new SelectionRange(new DateTime(2017, 09, 16), new DateTime(2017, 09, 30));

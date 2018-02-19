@@ -87,7 +87,7 @@ Me.Controls.Add(sfDateTimeEdit)
 
 ## Configure date range
 
-In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by using the properties minimum and maximum that enables the specified date range in the SfDateTimeEdit control. The following code snippets illustrates the same.
+In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by the properties minimum and maximum that enables the specified date range in the SfDateTimeEdit control. The following code snippets illustrates the same.
 
 {% tabs %}
 
@@ -125,12 +125,12 @@ dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 27)
 
 ## Configure editing mode
 
-DateTimeEdit text can be edited by two ways. 
+Date-time value in DateTimeEdit can be edited by two ways. 
 
 * Default Editing 
 * Mask Editing
 
-Editing modes can be changed by `DateTimeEditingMode` of SfDateTimEdit.
+Editing modes can be changed by `DateTimeEditingMode` of SfDateTimEdit. The following code example illustrates how to change the date time editing mode.
 
 {% tabs %}
 

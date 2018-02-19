@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance
 
-This section explains the appearance of header, footer and cells.
+This section explains the customization of appearance for header, footer and cells in Calendar.
 
 ## Customize header appearance
 
-Calendar control header can be customized by using the following properties.
+BackColor and ForeColor of each part in calendar header can customized. Calendar control header can be customized by using the following style properties.
 
 * BackColor
 * ForeColor
@@ -21,7 +21,7 @@ Calendar control header can be customized by using the following properties.
 * DayNamesForeColor
 * DayFont
 
-The following code example illustrates to customize the appearances. 
+The following code example illustrates to customize the appearances of calendar header. 
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ Me.sfCalendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.
 
 ## Customize footer appearance
 
-Calendar control footer can be customized by using the following properties.
+BackColor and ForeColor of each part in calendar footer can customized. Footer of the calendar control can be customized by the following style properties.
 
 * BackColor
 * ForeColor
@@ -144,7 +144,7 @@ Me.sfCalendar.Style.Footer.HoverForeColor = Color.SpringGreen
 
 ## Customize cell appearance
 
-Calendar control cells can be customized by using the following properties.
+Date cells in the calendar control can be customized by using the following style properties.
 
 * CellBackColor
 * CellForeColor
@@ -162,7 +162,7 @@ Calendar control trailing(Next or Previous month) cells can be customized by the
 
 ### Customize selected date appearance
 
-Calendar control Selected cells can be customized by the below properties.
+BackColor and ForeColor of selected date cell in calendar can customized. The following code illustrates how to customize the cell appearance.
 
 * SelectedCellBackColor
 * SelectedCellForeColor
@@ -284,7 +284,7 @@ Me.sfCalendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 1
 
 ## Hide trailing dates   
 
-`SfCalendar` allows to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the calendar. This is done by disabling the `TrailingDatesVisible` property.
+`SfCalendar` allows to hide the days of the next month and the previous month in the calendar to enhance the appearance of the calendar. This can be achieved by disabling the `TrailingDatesVisible` property.
 
 For setting these properties, use the following code.
 
@@ -312,7 +312,7 @@ this.SfCalendar1.TrailingDatesVisible = False
 
 ## Abbreviating day names
 
-By default, the day names are displayed in an abbreviated form in the Calendar control. They can also be displayed in an expanded form by setting `ShowAbbreviatedDayNames` property to false. This indicates whether the name of day is abbreviated or expanded. It returns the Boolean value.
+By default, the day names are displayed in an abbreviated form in the Calendar control. They can also be displayed in an expanded form by setting `ShowAbbreviatedDayNames` property to false. This indicates whether the name of day is abbreviated or expanded.
 
 To set this property, use the following code:
 
@@ -392,7 +392,7 @@ Me.sfCalendar.HighlightTodayCell = true
 
 ## Change visibility of navigation buttons
 
-Navigation buttons are used to move between views in `SfCalendar`. It visibility can be customized by using `ShowNavigationButton` property. The following code example illustrates the same.
+Navigation buttons are used to move between views in `SfCalendar`. Visibility of navigation buttons can be customized by `ShowNavigationButton` property. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -418,7 +418,7 @@ Me.sfCalendar.ShowNavigationButton = false
 
 ## Customize navigation buttons alignment
 
-Navigation buttons should align relative to the Calendar Header. It alignment can be customized by using `NavigationButtonAlignment`. The following code example illustrates the same.
+Navigation buttons can be aligned in different sides relative to the calendar header. Alignment of navigation buttons can be customized by `NavigationButtonAlignment`. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -466,7 +466,7 @@ Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Naviga
 
 ## Change visibility of the footer
 
-Visibility of the calendar footer can be customized by using `ShowFooter` property which contains Today and None buttons and it can be customized `ShowToday` and `ShowNone` properties. The following code example illustrates the same.
+Visibility of the calendar footer can be customized by using `ShowFooter` property which contains Today and None buttons. Visibility of today and none button separately by `ShowToday` and `ShowNone` properties respectively. The following code example illustrates the same.
 
 {% tabs %}
 

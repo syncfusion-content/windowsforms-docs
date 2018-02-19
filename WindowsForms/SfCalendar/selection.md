@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection
 
-SfCalendar allows to select one or more dates. Selected date in calendar can be changed by mouse, keyboard interaction.
+SfCalendar allows to select one or more dates. Selected date in calendar can be changed by mouse, keyboard and touch interaction.
 
 ## Change selection
 
@@ -21,7 +21,7 @@ Selected date of `SfCalendar` control can be changed by keyboard. `Up/Down` and 
 
 ### Change selection programmatically
 
-Selection of the calendar control can be changed through programmatically by set the `SelectedDate` property. `GoToDate` method used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. It return `false`, If the date value is not fall between minimum and maximum range or blackout dates contains the date. The following code example illustrates the same.
+Selection of the calendar control can be changed through programmatically by set the `SelectedDate` property. `GoToDate` method used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. It returns `false`, If the date value is not fall between minimum and maximum range or blackout dates contains the date. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ Specific range of dates can be selected by pressing the `Shift`. Select a date t
 
 ### Multiple selection through keyboard 
 
-`SfCalendar` allows to select the multiple dates through keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT Arrow` keys.
+`SfCalendar` allows to select the multiple dates through keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT` arrow keys.
 
 `Shift + UP` -  It selects the previous week dates from selected date.
 
@@ -103,9 +103,6 @@ Specific range of dates can be selected by pressing the `Shift`. Select a date t
 
 {% highlight C# %}
 
-private void Form1_Load(object sender, EventArgs e)
-{
-
 //Setting the Blackout Dates
 
 var weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(d => d.DayOfWeek == DayOfWeek.Saturday || d.DayOfWeek == DayOfWeek.Sunday);
@@ -116,13 +113,10 @@ time = weekends.ToList();
 
 this.sfCalendar.BlackoutDates = time;
 
-}
 
 {% endhighlight  %}
 
 {% highlight VB %}
-
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
         'Setting the Blackout Dates
 
@@ -134,8 +128,6 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
         time = weekends.ToList
 
         Me.sfCalendar.BlackoutDates = time
-    
-End Sub
 
 {% endhighlight  %}
 
@@ -161,8 +153,6 @@ Sometimes, the value needs to be restricted between some date range. In that sce
 
 Syncfusion.WinForms.Input.SfCalendar calendar = new Syncfusion.WinForms.Input.SfCalendar();
 
-this.Controls.Add(calendar);
-
 calendar.Value = new DateTime(2018, 1, 12);
 
 calendar.MinDate = new DateTime(2018, 1, 03);
@@ -176,8 +166,6 @@ calendar.MaxDate = new DateTime(2018, 1, 29);
 ' Setting the Minimum and Maximum date
 
 Dim calendar  As New Syncfusion.WinForms.Input.SfCalendar ()
-
-Me.Controls.Add(calendar)
 
 calendar.Value = New DateTime(2018, 1, 12)
 
@@ -197,16 +185,16 @@ calendar.MaxDate = new DateTime(2018, 1, 29)
 
 * `SelectionChanged` event invoked after the selected date changed in Calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event.
 
-**OldValue** - An old SelectedDate of SfCalendar.
-**NewValue** - The new SelectedDate of SfCalendar.
-**IsMultipleDatesSelected** - `AllowMultipleSelection` property is enabled or not. 
+**OldValue** - An old selected date of SfCalendar.
+**NewValue** - The new selected date of SfCalendar.
+**IsMultipleDatesSelected** - Indicates whether multiples dates are selected in calendar or not. 
 
 * `SelectionChanging` event invoked before the selected date changed in Calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event.
 
 **OldValue** - An old SelectedDate of SfCalendar.
 **NewValue** - The new SelectedDate of SfCalendar.
 
-The following code example illustrates the same.
+The following code example illustrates how to restrict selection change on-demand.
 
 {% tabs %}
 
@@ -223,7 +211,10 @@ this.sfCalendar.SelectionChanged += SfCalendar_SelectionChanged;
 // Occurs before the selected date changed in Calendar.
 
 private void SfCalendar_SelectionChanging(SfCalendar sender, Syncfusion.WinForms.Input.Events.SelectionChangingEventArgs args)
+
 {
+    if(args.NewValue == new DateTime(2018, 1, 16))
+
     args.Cancel = true;
 }
 
@@ -231,8 +222,11 @@ private void SfCalendar_SelectionChanging(SfCalendar sender, Syncfusion.WinForms
 // Occurs after the selected date changed in Calendar. 
 
 private void SfCalendar_SelectionChanged(object sender, EventArgs e)
+
 {
+
     MessageBox.Show("Selection changed");
+
 }
 
 {% endhighlight  %}
@@ -265,4 +259,4 @@ End Sub
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
