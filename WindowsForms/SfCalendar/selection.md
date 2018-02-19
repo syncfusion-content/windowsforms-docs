@@ -21,7 +21,7 @@ Selected date of `SfCalendar` control can be changed by keyboard. `Up/Down` and 
 
 ### Change selection programmatically
 
-Selection of the calendar control can be changed through programmatically by set the `SelectedDate` proeprty. `GoToDate` method used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. It return `false`, If te date value is not fall between minimum and maximum range or blackout dates contains the date. The following code example illustrates the same.
+Selection of the calendar control can be changed through programmatically by set the `SelectedDate` property. `GoToDate` method used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. It return `false`, If the date value is not fall between minimum and maximum range or blackout dates contains the date. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ Me.SfCalendar1.AllowMultipleSelection = true
 
 ### Multiple selection through mouse
 
-`SfCalendar` allows to select the multiple dates through mouse interaction by selecting the seperate cells while pressing `Ctrl` key. 
+`SfCalendar` allows to select the multiple dates through mouse interaction by selecting the separate cells while pressing `Ctrl` key. 
 
 Specific range of dates can be selected by pressing the `Shift`. Select a date to set the start date of the range selection and select the end date when pressing the `Shift` Key. 
 
@@ -86,13 +86,13 @@ Specific range of dates can be selected by pressing the `Shift`. Select a date t
 
 `SfCalendar` allows to select the multiple dates through keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT Arrow` keys.
 
-`Shift + UP` -  It selects the previos week dates from selected date.
+`Shift + UP` -  It selects the previous week dates from selected date.
 
 `Shift + DOWN` -  It selects the next week dates from selected date.
 
 `Shift + RIGHT` -  It selects the next date from selected date.
 
-`Shift + LEFT` -  It selects the previos date from selected date.
+`Shift + LEFT` -  It selects the previous date from selected date.
 
 
 ## Disable selection
@@ -151,7 +151,7 @@ End Sub
 
 `MaxDate` can help to restrict the `SelectedDate` of calendar falls greater than specific date. If the `SelectedDate` of calendar is greater than `MaxDate`, then the `SelectedDate` property reset to `MaxDate`. When the `MaxDate` is set, if the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` reset to the `MaxDate`. 
 
-Sometimes, the value needs to be restricted between some date range. In that scenario `MinDate` and `MaxDate` helps to select only the dates betwween these range and dates other than this range will not be displayed calendar.
+Sometimes, the value needs to be restricted between some date range. In that scenario `MinDate` and `MaxDate` helps to select only the dates between these range and dates other than this range will not be displayed calendar.
 
 {% tabs %}
 
