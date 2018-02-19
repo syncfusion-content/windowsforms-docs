@@ -137,39 +137,39 @@ calendar.MaxDate = New DateTime(2018, 1, 29)
 
 {% highlight C# %}
 
+private void Form1_Load(object sender, EventArgs e)
+{
+
 //Setting the Blackout Dates
-    
-DateTime date = new DateTime(2018, 01, 25);
-    
-DateTime date1 = new DateTime(2018, 01, 23);
-    
-DateTime date2 = new DateTime(2018, 01, 17);
-    
-DateTime date3 = new DateTime(2018, 01, 18);
-    
-DateTime date4 = new DateTime(2018, 01, 20);
-    
-DateTime date5 = new DateTime(2018, 01, 22);
-    
-this.SfCalendar1.BlackoutDates = new DateTime[]{ date, date1, date2, date3, date4, date5};
+
+var weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(d => d.DayOfWeek == DayOfWeek.Saturday || d.DayOfWeek == DayOfWeek.Sunday);
+
+List<DateTime> time = new List<DateTime>();
+
+time = weekends.ToList();
+
+this.sfCalendar.BlackoutDates = time;
+
+}
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Dim date As DateTime = New DateTime(2018, 1, 25)
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 
-Dim date1 As DateTime = New DateTime(2018, 1, 23)
+        'Setting the Blackout Dates
 
-Dim date2 As DateTime = New DateTime(2018, 1, 17)
+        Dim weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(() => {  }, ((d.DayOfWeek = DayOfWeek.Saturday)  _
+                        OrElse (d.DayOfWeek = DayOfWeek.Sunday)))
 
-Dim date3 As DateTime = New DateTime(2018, 1, 18)
+        Dim time As List(Of DateTime) = New List(Of DateTime)
 
-Dim date4 As DateTime = New DateTime(2018, 1, 20)
+        time = weekends.ToList
 
-Dim date5 As DateTime = New DateTime(2018, 1, 22)
-
-Me.SfCalendar1.BlackoutDates = New DateTime() {date, date1, date2, date3, date4, date5}
+        Me.sfCalendar.BlackoutDates = time
+    
+End Sub
 
 {% endhighlight  %}
 
@@ -194,7 +194,8 @@ private void InitializeComponent()
         SpecialDate specialDate1 = new SpecialDate();
         SpecialDate specialDate2 = new SpecialDate();
         SpecialDate specialDate3 = new SpecialDate();
-        SpecialDate specialDate4 = new SpecialDate();        
+        SpecialDate specialDate4 = new SpecialDate();  
+        List<SpecialDate> SpecialDates = new List<SpecialDate>();      
          
         specialDate1.BackColor = System.Drawing.Color.White;
         specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,7 +241,11 @@ private void InitializeComponent()
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
         specialDate4.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
 
-        this.sfCalendar.SpecialDates = new SpecialDate[] {specialDate1, specialDate2, specialDate3, specialDate4};
+        this.sfCalendar.SpecialDates = SpecialDates;
+        SpecialDates.Add(specialDate1);
+        SpecialDates.Add(specialDate2);
+        SpecialDates.Add(specialDate3);
+        SpecialDates.Add(specialDate4);
     }
 
 {% endhighlight  %}
@@ -255,7 +260,8 @@ private void InitializeComponent()
         Dim specialDate2 As SpecialDate = New SpecialDate
         Dim specialDate3 As SpecialDate = New SpecialDate
         Dim specialDate4 As SpecialDate = New SpecialDate
- 
+        Dim SpecialDates As List(Of SpecialDate) = New List(Of SpecialDate)
+        
         specialDate1.BackColor = System.Drawing.Color.White
         specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate1.ForeColor = System.Drawing.Color.Magenta
@@ -266,7 +272,7 @@ private void InitializeComponent()
         specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         specialDate1.Value = New Date(2018, 3, 8, 0, 0, 0, 0)
- 
+
         specialDate2.BackColor = System.Drawing.Color.White
         specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate2.ForeColor = System.Drawing.Color.Magenta
@@ -276,8 +282,8 @@ private void InitializeComponent()
         specialDate2.IsDateVisible = false
         specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
- 
         specialDate2.Value = New Date(2018, 3, 21, 0, 0, 0, 0)
+
         specialDate3.BackColor = System.Drawing.Color.White
         specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate3.ForeColor = System.Drawing.Color.Magenta
@@ -288,7 +294,7 @@ private void InitializeComponent()
         specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         specialDate3.Value = New Date(2018, 3, 24, 0, 0, 0, 0)
- 
+
         specialDate4.BackColor = System.Drawing.Color.White
         specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate4.ForeColor = System.Drawing.Color.Magenta
@@ -299,9 +305,14 @@ private void InitializeComponent()
         specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         specialDate4.Value = New Date(2018, 4, 7, 0, 0, 0, 0)
- 
-        Me.sfCalendar.SpecialDates = New SpecialDate() {specialDate1, specialDate2, specialDate3, specialDate4}
- 
+
+        Me.sfCalendar.SpecialDates = SpecialDates
+
+        SpecialDates.Add(specialDate1)
+        SpecialDates.Add(specialDate2)
+        SpecialDates.Add(specialDate3)
+        SpecialDates.Add(specialDate4)
+
     End Sub
 
 {% endhighlight  %}
