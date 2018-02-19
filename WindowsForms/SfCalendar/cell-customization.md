@@ -17,12 +17,12 @@ This support is used to mention some special dates. `SpecialDates` property help
 
 `SpecialDates` contains the following properties to customize the cells. 
 
-* **BackColor** - The Background color for the SpecialDate, it fill the cell.
+* **BackColor** - The Background color for the SpecialDate to fill the cell.
 * **Value** - The value for the SpecialDate.
-* **ForeColor** - The foreground color for the SpecialDate.
-* **Image** - The image for the SpecialDate.
+* **ForeColor** - The foreground color for the SpecialDate to draw the text.
+* **Image** - Image to display on SpecialDate cell.
 * **Font** - The font used to draw the SpecialDate.
-* **IsDateVisible** - A value indicating whether the Date Text will be visible in SpecialDate.
+* **IsDateVisible** - A value indicating whether the Date Text will be visible in SpecialDate cell.
 * **Description** - The description for SpecialDate.
 * **ImageAlign** - The alignment of image in SpecialDate. 
 * **TextAlign** -  The alignment of date text in SpecialDate. 
@@ -42,7 +42,8 @@ private void InitializeComponent()
         SpecialDate specialDate1 = new SpecialDate();
         SpecialDate specialDate2 = new SpecialDate();
         SpecialDate specialDate3 = new SpecialDate();
-        SpecialDate specialDate4 = new SpecialDate();        
+        SpecialDate specialDate4 = new SpecialDate();  
+        List<SpecialDate> SpecialDates = new List<SpecialDate>();      
          
         specialDate1.BackColor = System.Drawing.Color.White;
         specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,7 +89,11 @@ private void InitializeComponent()
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
         specialDate4.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
 
-        this.sfCalendar.SpecialDates = new SpecialDate[] {specialDate1, specialDate2, specialDate3, specialDate4};
+        this.sfCalendar.SpecialDates = SpecialDates;
+        SpecialDates.Add(specialDate1);
+        SpecialDates.Add(specialDate2);
+        SpecialDates.Add(specialDate3);
+        SpecialDates.Add(specialDate4);
     }
 
 {% endhighlight  %}
@@ -103,7 +108,8 @@ private void InitializeComponent()
         Dim specialDate2 As SpecialDate = New SpecialDate
         Dim specialDate3 As SpecialDate = New SpecialDate
         Dim specialDate4 As SpecialDate = New SpecialDate
- 
+        Dim SpecialDates As List(Of SpecialDate) = New List(Of SpecialDate)
+        
         specialDate1.BackColor = System.Drawing.Color.White
         specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate1.ForeColor = System.Drawing.Color.Magenta
@@ -114,7 +120,7 @@ private void InitializeComponent()
         specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         specialDate1.Value = New Date(2018, 3, 8, 0, 0, 0, 0)
- 
+
         specialDate2.BackColor = System.Drawing.Color.White
         specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate2.ForeColor = System.Drawing.Color.Magenta
@@ -124,8 +130,8 @@ private void InitializeComponent()
         specialDate2.IsDateVisible = false
         specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
- 
         specialDate2.Value = New Date(2018, 3, 21, 0, 0, 0, 0)
+
         specialDate3.BackColor = System.Drawing.Color.White
         specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate3.ForeColor = System.Drawing.Color.Magenta
@@ -136,7 +142,7 @@ private void InitializeComponent()
         specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         specialDate3.Value = New Date(2018, 3, 24, 0, 0, 0, 0)
- 
+
         specialDate4.BackColor = System.Drawing.Color.White
         specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         specialDate4.ForeColor = System.Drawing.Color.Magenta
@@ -147,20 +153,25 @@ private void InitializeComponent()
         specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         specialDate4.Value = New Date(2018, 4, 7, 0, 0, 0, 0)
- 
-        Me.sfCalendar.SpecialDates = New SpecialDate() {specialDate1, specialDate2, specialDate3, specialDate4}
- 
+
+        Me.sfCalendar.SpecialDates = SpecialDates
+
+        SpecialDates.Add(specialDate1)
+        SpecialDates.Add(specialDate2)
+        SpecialDates.Add(specialDate3)
+        SpecialDates.Add(specialDate4)
+        
     End Sub
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}  
 
 ![](cell-customization-images/specialdates.png)
 
 ## Render cell on-demand
 
-This support is used to highlight or customize dates to mention some special date on demand. To customize the dates, use the following code example.
+This support is used to highlight or customize dates to mention some special date on-demand. To customize the dates, use the following code example.
 
 {% tabs %}
 
@@ -172,11 +183,9 @@ This support is used to highlight or customize dates to mention some special dat
 
     this.SfCalendar1.DrawCell += SfCalendar1_DrawCell;
 
-/// <summary>
+
 /// To Draw the Cell
-/// </summary>
-/// <param name="sender">SfCalendar</param>
-/// <param name="args">DrawCell Event Args</param>
+
 private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
 {
     SelectionRange range1 = new SelectionRange(new DateTime(2017, 09, 01), new DateTime(2017, 09, 15));
@@ -239,53 +248,49 @@ InitializeComponent
 
 Me.SfCalendar1.DrawCell = (Me.SfCalendar1.DrawCell + SfCalendar1_DrawCell)
     
-    ''' <summary>
-    ''' To Draw the Cell
-    ''' </summary>
-    ''' <param name="sender">SfCalendar</param>
-    ''' <param name="args">DrawCell Event Args</param>
+' To Draw the Cell
+    
 
-    Private Sub SfCalendar1_DrawCell(ByVal sender As SfCalendar, ByVal args As DrawCellEventArgs)
+Private Sub SfCalendar1_DrawCell(ByVal sender As SfCalendar, ByVal args As DrawCellEventArgs)
 
-        Dim range1 As SelectionRange = New SelectionRange(New DateTime(2017, 9, 1), New DateTime(2017, 9, 15))
+    Dim range1 As SelectionRange = New SelectionRange(New DateTime(2017, 9, 1), New DateTime(2017, 9, 15))
 
-        Dim range2 As SelectionRange = New SelectionRange(New DateTime(2017, 9, 16), New DateTime(2017, 9, 30))
+    Dim range2 As SelectionRange = New SelectionRange(New DateTime(2017, 9, 16), New DateTime(2017, 9, 30))
 
-        Dim Christmas As DateTime = New DateTime(2017, 12, 25)
+    Dim Christmas As DateTime = New DateTime(2017, 12, 25)
 
-        If (Not (args.Value) Is Nothing) Then
+    If (Not (args.Value) Is Nothing) Then
 
-            If (args.Value = Christmas) Then
+        If (args.Value = Christmas) Then
 
-                args.BackColor = Color.Green
-                args.ForeColor = Color.Yellow
-                args.Image = Resources.Christmas
-                args.ImageBounds = New Rectangle(25, 13, 30, 30)
-                args.HorizontalAlignment = StringAlignment.Near
-                args.VerticalAlignment = StringAlignment.Near
+            args.BackColor = Color.Green
+            args.ForeColor = Color.Yellow
+            args.Image = Resources.Christmas
+            args.ImageBounds = New Rectangle(25, 13, 30, 30)
+            args.HorizontalAlignment = StringAlignment.Near
+            args.VerticalAlignment = StringAlignment.Near
 
-            End If
-            
-            If (args.Value.Value.Date = Me.dateTimePicker5.Value.Date) Then
-
-                Dim month As String = args.Value.Value.ToString("MMM", Me.SfCalendar1.Culture)
-                args.BackColor = Me.colorPickerButton17.SelectedColor
-                args.ForeColor = Me.colorPickerButton18.SelectedColor
-                args.Image = Resources.Cell
-                args.ImageBounds = New Rectangle(0, 20, 30, 30)
-                args.VerticalAlignment = Me.verticalAlignment
-                args.HorizontalAlignment = Me.horizontalAlignment
-                args.Text = (month + (" " + args.Text))
-
-            End If
-            
         End If
+            
+    If (args.Value.Value.Date = Me.dateTimePicker5.Value.Date) Then
+
+        Dim month As String = args.Value.Value.ToString("MMM", Me.SfCalendar1.Culture)
+        args.BackColor = Me.colorPickerButton17.SelectedColor
+        args.ForeColor = Me.colorPickerButton18.SelectedColor
+        args.Image = Resources.Cell
+        args.ImageBounds = New Rectangle(0, 20, 30, 30)
+        args.VerticalAlignment = Me.verticalAlignment
+        args.HorizontalAlignment = Me.horizontalAlignment
+        args.Text = (month + (" " + args.Text))
+
+    End If
+            
+End If
         
-    End Sub
+End Sub
 
 {% endhighlight  %}
 
 {% endtabs %} 
 
 ![](cell-customization-images/customizedates.png)
-
