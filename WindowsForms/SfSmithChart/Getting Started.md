@@ -305,3 +305,5 @@ this.Controls.Add(chart);
 
 {% endhighlight %}
 
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Axis.png](GettingStarted_images/GettingStarted_img7.jpeg)
+
