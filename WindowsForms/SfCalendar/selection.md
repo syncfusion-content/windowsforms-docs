@@ -302,13 +302,13 @@ Selected dates of the calendar control will be cleared when select the single da
 
 ### Clear selected dates programmatically
 
-Selected dates of the calendar control can be removed from selection by programmatically. SfCalendar provides `ClearSelection` method that helps to remove already selected dates and also provide options to select the new date. The following code example illustrates how to remove the sleected dates and select new date.
+Selected dates of the calendar control can be removed from selection by programmatically. SfCalendar provides `ClearSelection` method that helps to remove already selected dates and also provide options to select the new date. The following code example illustrates how to remove the selected dates and select new date.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Clear the selected dates and set the newdate as selected date
+// Clear the selected dates and set the new date as selected date
 
 sfCalendar.ClearSelection(new DateTime(2018, 02, 16));
 
