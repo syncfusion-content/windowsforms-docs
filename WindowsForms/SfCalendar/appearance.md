@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-This section explains customize the appearance for header, footer and cells in Calendar through `style`proeprties.
+This section explains customize the appearance for header, footer and cells in Calendar through `style`properties.
 
 ## Customize header appearance
 
@@ -94,7 +94,7 @@ Me.sfCalendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.
 
 ## Customize navigation buttons
 
-Navigation buttons in the calendar header can be customized by change the icons used for up and down. Icons used for navigation buttons can be changed by `UpArrowImage` and `DownArrowImage` properties of SfCalendar. Color used draw the default icons for up and down navaigation buttons can be customized by follwing properties.
+Navigation buttons in the calendar header can be customized by change the icons used for up and down. Icons used for navigation buttons can be changed by `UpArrowImage` and `DownArrowImage` properties of SfCalendar. Color used draw the default icons for up and down navigation buttons can be customized by following properties.
 
 * NavigationButtonForeColor - To change foreground color of up and down navigation buttons.
 * NavigationButtonHoverForeColor - To change foreground color of up and down navigation buttons in mouse hover state.
