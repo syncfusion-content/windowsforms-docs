@@ -155,7 +155,7 @@ End Sub
 
 ## Disable animation on navigation
 
-SfCalendar animate the content while navigate between different set of date range or move from one view to another view. This animation can be disabled by `EnableAnimattion` as false. The following code example illustrates the same.
+SfCalendar animate the content while navigate between different set of date range or move from one view to another view. This animation can be disabled by `EnableAnimation` as false. The following code example illustrates the same.
 
 {% tabs %}
 
