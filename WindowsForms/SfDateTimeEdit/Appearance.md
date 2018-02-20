@@ -48,9 +48,9 @@ sfDateTimeEdit1.Style.BorderColor = Color.Red
 BackColor and ForeColor of drop down icon to open the calendar can be customized by following `DropDown` style properties. The following `style` properties of `DropDown` used to change the color of dropdown icon in different states.
 
 * BackColor - To change the background color of dropdown icon in DateTimeEdit.
-* ForeColor - To change the forground color of dropdown icon in DateTimeEdit.
-* HoverForeColor - To change the forground color of dropdown icon in mouse hover state.
-* PressedForeColor - To change the forground color of dropdown icon in pressed state.
+* ForeColor - To change the foreground color of dropdown icon in DateTimeEdit.
+* HoverForeColor - To change the foreground color of dropdown icon in mouse hover state.
+* PressedForeColor - To change the foreground color of dropdown icon in pressed state.
 
 ### Change visibility of dropdown button
 
@@ -90,8 +90,8 @@ Me.dateTimeEdit.ShowDropDown = false
 
 ForeColor of updown icon in the `SfDateTimeEdit` can be customized by following `Style` properties. The following `style` properties of SfDateTimeEdit used to change the color of updown icon in different states.
 
-* UpDownForeColor - To change the forground color of updown icon in DateTimeEdit.
-* UpDownHoverForeColor - To change the forground color of updown icon in mouse hover state.
+* UpDownForeColor - To change the foreground color of updown icon in DateTimeEdit.
+* UpDownHoverForeColor - To change the foreground color of updown icon in mouse hover state.
 
 The following code snippets illustrates the same.
 
