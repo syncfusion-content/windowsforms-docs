@@ -13,7 +13,7 @@ Appearance of each and every part in the DateTimeEdit can be customized. SfDateT
 
 ## Customize DateTimeEdit Appearance
 
-BackColor, ForeColor and BorderColor of control can be customized through following `Style` propertiees of SfDateTimeEdit. UpDown and Dropdown button of SfDateTimeEdit control also can be customized through `Style`. 
+BackColor, ForeColor and BorderColor of control can be customized through following `Style` properties of SfDateTimeEdit. UpDown and Dropdown button of SfDateTimeEdit control also can be customized through `Style`. 
 
 * BackColor - To change the background color of DateTimeEdit.
 * ForeColor - To change the foreground color of date-time text in DateTimeEdit.
