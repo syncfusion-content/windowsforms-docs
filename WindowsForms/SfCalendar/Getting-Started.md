@@ -103,9 +103,9 @@ this.Controls.Add(calendar);
 
 calendar.Value = new DateTime(2018, 1, 12);
 
-calendar.MinDate = new DateTime(2018, 1, 03);
+calendar.MinDate = new DateTime(2018, 1, 05);
 
-calendar.MaxDate = new DateTime(2018, 1, 29);
+calendar.MaxDate = new DateTime(2018, 1, 25);
 
 {% endhighlight  %}
 
@@ -119,9 +119,9 @@ Me.Controls.Add(calendar)
 
 calendar.Value = New DateTime(2018, 1, 12)
 
-calendar.MinDate = New DateTime(2018, 1, 3)
+calendar.MinDate = New DateTime(2018, 1, 5)
 
-calendar.MaxDate = New DateTime(2018, 1, 29)
+calendar.MaxDate = New DateTime(2018, 1, 25)
 
 {% endhighlight  %}
 
@@ -131,18 +131,16 @@ calendar.MaxDate = New DateTime(2018, 1, 29)
 
 ## Configure BlackoutDates
 
-`BlackoutDates` refers the disabled dates that restrict the user from selecting it. A date collection can be provided to set the `BlackoutDates` for this control, use the following code example.
+`BlackoutDates` refers the disabled dates that restrict the user from selecting it. A date collection can be provided to set the `BlackoutDates` for this control. Below code example illustrates how to add blackout dates to calendar.
 
 {% tabs %}
 
 {% highlight C# %}
 
-private void Form1_Load(object sender, EventArgs e)
-{
-
 //Setting the Blackout Dates
 
-var weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(d => d.DayOfWeek == DayOfWeek.Saturday || d.DayOfWeek == DayOfWeek.Sunday);
+var weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value)
+        .Where(d => d.DayOfWeek == DayOfWeek.Saturday || d.DayOfWeek == DayOfWeek.Sunday);
 
 List<DateTime> time = new List<DateTime>();
 
@@ -150,27 +148,21 @@ time = weekends.ToList();
 
 this.sfCalendar.BlackoutDates = time;
 
-}
-
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
+'Setting the Blackout Dates
 
-        'Setting the Blackout Dates
-
-        Dim weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(() => {  }, ((d.DayOfWeek = DayOfWeek.Saturday)  _
+Dim weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(() => {  }, ((d.DayOfWeek = DayOfWeek.Saturday)  _
                         OrElse (d.DayOfWeek = DayOfWeek.Sunday)))
 
-        Dim time As List(Of DateTime) = New List(Of DateTime)
+Dim time As List(Of DateTime) = New List(Of DateTime)
 
-        time = weekends.ToList
+time = weekends.ToList
 
-        Me.sfCalendar.BlackoutDates = time
+Me.sfCalendar.BlackoutDates = time
     
-End Sub
-
 {% endhighlight  %}
 
 {% endtabs %} 
@@ -186,68 +178,110 @@ Below code illustrates how to add the special dates in calendar.
 
 {% highlight C# %}
 
-private void InitializeComponent()
-    {
-
-        this.components = new System.ComponentModel.Container();
-        
         SpecialDate specialDate1 = new SpecialDate();
+
         SpecialDate specialDate2 = new SpecialDate();
+
         SpecialDate specialDate3 = new SpecialDate();
+
         SpecialDate specialDate4 = new SpecialDate();  
+
         List<SpecialDate> SpecialDates = new List<SpecialDate>();      
          
         specialDate1.BackColor = System.Drawing.Color.White;
-        specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         specialDate1.ForeColor = System.Drawing.Color.Magenta;
+
         specialDate1.Image = Properties.Resources.icons_Womens_day;
+
         specialDate1.Description = "International Women’s Day";
+
         specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate1.IsDateVisible = false;
+
         specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
         specialDate1.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
             
         specialDate2.BackColor = System.Drawing.Color.White;
-        specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         specialDate2.ForeColor = System.Drawing.Color.Magenta;
+
         specialDate2.Description = "World Forestry Day";
+
         specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day;
+
         specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate2.IsDateVisible = false;
+
         specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
         specialDate2.Value = new System.DateTime(2018, 3, 21, 0, 0, 0, 0);
             
         specialDate3.BackColor = System.Drawing.Color.White;
-        specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         specialDate3.ForeColor = System.Drawing.Color.Magenta;
+
         specialDate3.Image = Properties.Resources.Icon_Water_day;
+
         specialDate3.Description = "World Day for Water";
+
         specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate3.IsDateVisible = false;
+
         specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
         specialDate3.Value = new System.DateTime(2018, 3, 24, 0, 0, 0, 0);
         
         specialDate4.BackColor = System.Drawing.Color.White;
-        specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
         specialDate4.ForeColor = System.Drawing.Color.Magenta;
+
         specialDate4.Image = Properties.Resources.Icon_Healthy_day;
+
         specialDate4.Description = "World Health Day";
+
         specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate4.IsDateVisible = false;
+
         specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
         specialDate4.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
 
-        this.sfCalendar.SpecialDates = SpecialDates;
         SpecialDates.Add(specialDate1);
-        SpecialDates.Add(specialDate2);
-        SpecialDates.Add(specialDate3);
-        SpecialDates.Add(specialDate4);
-    }
 
+        SpecialDates.Add(specialDate2);
+
+        SpecialDates.Add(specialDate3);
+
+        SpecialDates.Add(specialDate4);
+
+        this.sfCalendar.SpecialDates = SpecialDates;       
+  
 {% endhighlight  %}
 
 {% highlight VB %}
@@ -257,61 +291,109 @@ private void InitializeComponent()
         Me.components = New System.ComponentModel.Container
  
         Dim specialDate1 As SpecialDate = New SpecialDate
+
         Dim specialDate2 As SpecialDate = New SpecialDate
+
         Dim specialDate3 As SpecialDate = New SpecialDate
+
         Dim specialDate4 As SpecialDate = New SpecialDate
+
         Dim SpecialDates As List(Of SpecialDate) = New List(Of SpecialDate)
+
         
         specialDate1.BackColor = System.Drawing.Color.White
-        specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
+        specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
         specialDate1.ForeColor = System.Drawing.Color.Magenta
+
         specialDate1.Image = Properties.Resources.icons_Womens_day
+
         specialDate1.Description = "International Womens Day"
+
         specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+
         specialDate1.IsDateVisible = false
+
         specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+
         specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+
         specialDate1.Value = New Date(2018, 3, 8, 0, 0, 0, 0)
 
         specialDate2.BackColor = System.Drawing.Color.White
-        specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
+        specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
         specialDate2.ForeColor = System.Drawing.Color.Magenta
+
         specialDate2.Description = "World Forestry Day"
+
         specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day
+
         specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+
         specialDate2.IsDateVisible = false
+
         specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+
         specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+
         specialDate2.Value = New Date(2018, 3, 21, 0, 0, 0, 0)
 
         specialDate3.BackColor = System.Drawing.Color.White
-        specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
+        specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
         specialDate3.ForeColor = System.Drawing.Color.Magenta
+
         specialDate3.Image = Properties.Resources.Icon_Water_day
+
         specialDate3.Description = "World Day for Water"
+
         specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+
         specialDate3.IsDateVisible = false
+
         specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+
         specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+
         specialDate3.Value = New Date(2018, 3, 24, 0, 0, 0, 0)
 
         specialDate4.BackColor = System.Drawing.Color.White
-        specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
+        specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
         specialDate4.ForeColor = System.Drawing.Color.Magenta
+
         specialDate4.Image = Properties.Resources.Icon_Healthy_day
+
         specialDate4.Description = "World Health Day"
+
         specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+
         specialDate4.IsDateVisible = false
+
         specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+
         specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+
         specialDate4.Value = New Date(2018, 4, 7, 0, 0, 0, 0)
+        
+        SpecialDates.Add(specialDate1)
+
+        SpecialDates.Add(specialDate2)
+
+        SpecialDates.Add(specialDate3)
+        
+        SpecialDates.Add(specialDate4)
 
         Me.sfCalendar.SpecialDates = SpecialDates
-
-        SpecialDates.Add(specialDate1)
-        SpecialDates.Add(specialDate2)
-        SpecialDates.Add(specialDate3)
-        SpecialDates.Add(specialDate4)
 
     End Sub
 
@@ -345,7 +427,7 @@ Me.SfCalendar1.AllowMultipleSelection = true
 
 {% endtabs %} 
 
-![](selection-images/multiselection.png)
+![](getting-started-images/multiselection.png)
 
 ## Configure number of weeks in view
 

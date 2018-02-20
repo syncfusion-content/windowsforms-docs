@@ -13,9 +13,7 @@ documentation: ug
 
 ## Change culture
 
-The culture information can be applied to the calendar using the `Culture` property. 
-
-To change the culture for this control, use the following code example.
+The culture information can be applied to the calendar using the `Culture` property. The following code example illustrates how to change the culture for calendar.
 
 {% tabs %}
 
@@ -45,7 +43,7 @@ Me.sfCalendar.Culture = New CultureInfo("he-IL")
 
 * **Step 1**: Add the Resource folder to the application.                                                         
 
-* **Step 2**: Add the fallback resx file with the assembly name of the control.
+* **Step 2**: Add the fallback resource file with the assembly name of the control.
 
 ![](globalization-images/resource.png)
 
