@@ -76,23 +76,23 @@ Using this NumberFormatInfo, we can define how the values can be formatted and d
 
 {% highlight c# %}
 
-NumberFormatInfo numberformat = new NumberFormatInfo();
- numberformat.NumberDecimalSeparator = "*";
- numberformat.NumberDecimalDigits = 4;
- numberformat.NumberGroupSeparator = "/";
- numberformat.NumberGroupSizes = new int[3] { 1, 2, 3 };
- numericTextBox.NumberFormatInfo = numberformat;
+NumberFormatInfo numberFormat = new NumberFormatInfo();
+ numberFormat.NumberDecimalSeparator = "*";
+ numberFormat.NumberDecimalDigits = 4;
+ numberFormat.NumberGroupSeparator = "/";
+ numberFormat.NumberGroupSizes = new int[3] { 1, 2, 3 };
+ numericTextBox.NumberFormatInfo = numberFormat;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
- Dim numberformat As New NumberFormatInfo()
- numberformat.NumberDecimalSeparator = "*"
- numberformat.NumberDecimalDigits = 4
- numberformat.NumberGroupSeparator = "/"
- numberformat.NumberGroupSizes = New Integer(2) { 1, 2, 3 }
- Me.numericTextBox.NumberFormatInfo = numberformat
+ Dim numberFormat As New NumberFormatInfo()
+ numberFormat.NumberDecimalSeparator = "*"
+ numberFormat.NumberDecimalDigits = 4
+ numberFormat.NumberGroupSeparator = "/"
+ numberFormat.NumberGroupSizes = New Integer(2) { 1, 2, 3 }
+ Me.numericTextBox.NumberFormatInfo = numberFormat
 
 {% endhighlight %}
 

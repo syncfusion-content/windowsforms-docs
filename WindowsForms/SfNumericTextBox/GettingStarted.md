@@ -100,7 +100,7 @@ Me.Controls.Add(Me.numericTextBox)
 
 {% endhighlight %}
 
-## Addding Value to the control
+## Adding Value to the control
 
 It assigns the value to SfNumericTextBox. It holds the double value which can also hold null value. The “AllowNull” property needs to be set to make the Value nullable. The “Text” property of the control gets formatted from the Value property.
 
