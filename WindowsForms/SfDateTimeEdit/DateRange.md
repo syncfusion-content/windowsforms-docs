@@ -43,7 +43,7 @@ dateTimeEdit.Value = new DateTime(2018, 2, 1);
 
 dateTimeEdit.MinDateTime = new DateTime(2018, 2, 3);
 
-dateTimeEdit.MaxDateTime = new DateTime(2018, 2, 27);
+dateTimeEdit.MaxDateTime = new DateTime(2018, 2, 22);
 
 {% endhighlight  %}
 
@@ -57,7 +57,7 @@ dateTimeEdit.Value = New DateTime(2018, 2, 1)
 
 dateTimeEdit.MinDateTime = New DateTime(2018, 2, 3)
 
-dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 27)
+dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 22)
 
 {% endhighlight  %}
 

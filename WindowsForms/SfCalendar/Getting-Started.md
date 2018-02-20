@@ -103,9 +103,9 @@ this.Controls.Add(calendar);
 
 calendar.Value = new DateTime(2018, 1, 12);
 
-calendar.MinDate = new DateTime(2018, 1, 03);
+calendar.MinDate = new DateTime(2018, 1, 05);
 
-calendar.MaxDate = new DateTime(2018, 1, 29);
+calendar.MaxDate = new DateTime(2018, 1, 25);
 
 {% endhighlight  %}
 
@@ -119,9 +119,9 @@ Me.Controls.Add(calendar)
 
 calendar.Value = New DateTime(2018, 1, 12)
 
-calendar.MinDate = New DateTime(2018, 1, 3)
+calendar.MinDate = New DateTime(2018, 1, 5)
 
-calendar.MaxDate = New DateTime(2018, 1, 29)
+calendar.MaxDate = New DateTime(2018, 1, 25)
 
 {% endhighlight  %}
 
@@ -139,7 +139,8 @@ calendar.MaxDate = New DateTime(2018, 1, 29)
 
 //Setting the Blackout Dates
 
-var weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value).Where(d => d.DayOfWeek == DayOfWeek.Saturday || d.DayOfWeek == DayOfWeek.Sunday);
+var weekends = GetDaysBetween(minDateTimeEdit.Value.Value, maxDateTimeEdit.Value.Value)
+        .Where(d => d.DayOfWeek == DayOfWeek.Saturday || d.DayOfWeek == DayOfWeek.Sunday);
 
 List<DateTime> time = new List<DateTime>();
 
@@ -189,7 +190,8 @@ Below code illustrates how to add the special dates in calendar.
          
         specialDate1.BackColor = System.Drawing.Color.White;
 
-        specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
         specialDate1.ForeColor = System.Drawing.Color.Magenta;
 
@@ -209,7 +211,8 @@ Below code illustrates how to add the special dates in calendar.
             
         specialDate2.BackColor = System.Drawing.Color.White;
 
-        specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
         specialDate2.ForeColor = System.Drawing.Color.Magenta;
 
@@ -229,7 +232,8 @@ Below code illustrates how to add the special dates in calendar.
             
         specialDate3.BackColor = System.Drawing.Color.White;
 
-        specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
         specialDate3.ForeColor = System.Drawing.Color.Magenta;
 
@@ -249,7 +253,8 @@ Below code illustrates how to add the special dates in calendar.
         
         specialDate4.BackColor = System.Drawing.Color.White;
 
-        specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
         specialDate4.ForeColor = System.Drawing.Color.Magenta;
 
@@ -298,7 +303,8 @@ Below code illustrates how to add the special dates in calendar.
         
         specialDate1.BackColor = System.Drawing.Color.White
 
-        specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
         specialDate1.ForeColor = System.Drawing.Color.Magenta
 
@@ -318,7 +324,8 @@ Below code illustrates how to add the special dates in calendar.
 
         specialDate2.BackColor = System.Drawing.Color.White
 
-        specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
         specialDate2.ForeColor = System.Drawing.Color.Magenta
 
@@ -338,7 +345,8 @@ Below code illustrates how to add the special dates in calendar.
 
         specialDate3.BackColor = System.Drawing.Color.White
 
-        specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
         specialDate3.ForeColor = System.Drawing.Color.Magenta
 
@@ -358,7 +366,8 @@ Below code illustrates how to add the special dates in calendar.
 
         specialDate4.BackColor = System.Drawing.Color.White
 
-        specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
 
         specialDate4.ForeColor = System.Drawing.Color.Magenta
 
@@ -418,7 +427,7 @@ Me.SfCalendar1.AllowMultipleSelection = true
 
 {% endtabs %} 
 
-![](selection-images/multiselection.png)
+![](getting-started-images/multiselection.png)
 
 ## Configure number of weeks in view
 

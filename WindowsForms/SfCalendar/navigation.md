@@ -17,6 +17,8 @@ Calendar supports month, year, decade, century views and provides intuitive inte
 
 ![](navigation-images/allview.png)
 
+![](navigation-images/allview1.png)
+
 User can choose the required view options in calendar by `ViewMode` property. the below code illustrates how to show only year and decade views in calendar.
 
 {% tabs %}
@@ -151,3 +153,26 @@ End Sub
 
 {% endtabs %}
 
+## Disable animation on navigation
+
+SfCalendar animate the content while navigate between different set of date range or move from one view to another view. This animation can be disabled by `EnableAnimattion` as false. The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Disabling the animation
+
+this.sfCalendar.EnableAnimation = false;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Disabling the animation
+
+Me.sfCalendar.EnableAnimation = false
+
+{% endhighlight  %}
+
+{% endtabs %}
