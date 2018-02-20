@@ -74,7 +74,6 @@ Me.SfCalendar1.AllowMultipleSelection = true
 
 {% endtabs %} 
 
-![](selection-images/multiselection.png)
 
 ### Multiple selection through mouse
 
@@ -84,16 +83,52 @@ Specific range of dates can be selected by pressing the `Shift`. Select a date t
 
 ### Multiple selection through keyboard 
 
-`SfCalendar` allows to select the multiple dates through keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT` arrow keys.
+`SfCalendar` allows to select the multiple dates through keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT` and `Shift + HOME/END` arrow keys.
 
-`Shift + UP` -  It selects the previous week dates from selected date.
+* Shift + UP -  It selects the previous week dates from selected date.
 
-`Shift + DOWN` -  It selects the next week dates from selected date.
+* Shift + DOWN -  It selects the next week dates from selected date.
 
-`Shift + RIGHT` -  It selects the next date from selected date.
+* Shift + RIGHT -  It selects the next date from selected date.
 
-`Shift + LEFT` -  It selects the previous date from selected date.
+* Shift + LEFT -  It selects the previous date from selected date.
 
+*  Shift + HOME - It selects the date range from first day of month to current selected date.
+
+*  Shift + END - It selects the date range from current selected date to last date of month.
+
+
+### Multiple selection programmatically
+
+Multiple dates in the calendar control can be selected through programmatically by adding dates to the `SelectedDates` collection. If the date which passed for adding with selected dates is not fall within minimum or maximum range or contains in blackout dates, it will not be added to selected dates. The following code example illustrates how to add the selected dates programmatically. In the below code example blackout dates contains the first date which is added to selected dates. So except that firstly added date, other dates ar added to selected dates.
+
+{% tabs %}
+
+{% highlight C# %}
+
+sfCalendar.AllowMultipleSelection = true;
+
+sfCalendar.BlackoutDates.Add(new DateTime(2018, 02, 12));
+
+sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 12));
+
+sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 13));
+
+sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 14));
+
+sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 15));
+
+sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 16));
+
+sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 17));
+
+sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 18));         
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](selection-images/multiselection.png)
 
 ## Disable selection
 
@@ -155,9 +190,9 @@ Syncfusion.WinForms.Input.SfCalendar calendar = new Syncfusion.WinForms.Input.Sf
 
 calendar.Value = new DateTime(2018, 1, 12);
 
-calendar.MinDate = new DateTime(2018, 1, 03);
+calendar.MinDate = new DateTime(2018, 1, 05);
 
-calendar.MaxDate = new DateTime(2018, 1, 29);
+calendar.MaxDate = new DateTime(2018, 1, 25);
 
 {% endhighlight  %}
 
@@ -169,9 +204,9 @@ Dim calendar  As New Syncfusion.WinForms.Input.SfCalendar ()
 
 calendar.Value = New DateTime(2018, 1, 12)
 
-calendar.MinDate = new DateTime(2018, 1, 03)
+calendar.MinDate = new DateTime(2018, 1, 05)
 
-calendar.MaxDate = new DateTime(2018, 1, 29)
+calendar.MaxDate = new DateTime(2018, 1, 25)
 
 {% endhighlight  %}
 
@@ -181,18 +216,18 @@ calendar.MaxDate = new DateTime(2018, 1, 29)
 
 ## Handle Selection change
  
- Restrict to set selected date can also be handled on-demand. While changing selection, based on the new selected date user can restrict selection change by handle the `SelectionChanging` event.
+ Restrict to set selected date can also be handled on-demand. While changing selection, based on the new selected date user can restrict selection change by handle the `SelectionChanging` event. 
+ 
+ `SelectionChanging` event invoked before the selected date changed in Calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event.
 
-* `SelectionChanged` event invoked after the selected date changed in Calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event.
+* OldValue - Old SelectedDate of SfCalendar.
+* NewValue - New SelectedDate of SfCalendar.
 
-**OldValue** - An old selected date of SfCalendar.
-**NewValue** - The new selected date of SfCalendar.
-**IsMultipleDatesSelected** - Indicates whether multiples dates are selected in calendar or not. 
+`SelectionChanged` event invoked after the selected date changed in Calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event.
 
-* `SelectionChanging` event invoked before the selected date changed in Calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event.
-
-**OldValue** - An old SelectedDate of SfCalendar.
-**NewValue** - The new SelectedDate of SfCalendar.
+* OldValue - Old selected date of SfCalendar.
+* NewValue - New selected date of SfCalendar.
+* IsMultipleDatesSelected - Indicates whether multiples dates are selected in calendar or not. 
 
 The following code example illustrates how to restrict selection change on-demand.
 
@@ -260,3 +295,25 @@ End Sub
 {% endhighlight  %}
 
 {% endtabs %}
+
+## Clear Selection
+
+Selected dates of the calendar control will be cleared when select the single date. Calendar control also provides support to remove single date from the selected dates by selecting the already selected date while press the `CTRL` key.
+
+### Clear selected dates programmatically
+
+Selected dates of the calendar control can be removed from selection by programmatically. SfCalendar provides `ClearSelection` method that helps to remove already selected dates and also provide options to select the new date. The following code example illustrates how to remove the selected dates and select new date.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Clear the selected dates and set the new date as selected date
+
+sfCalendar.ClearSelection(new DateTime(2018, 02, 16));
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+![](selection-images/selection.png)

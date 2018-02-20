@@ -9,17 +9,28 @@ documentation: ug
 
 # Appearance
 
-This section explains the customization of appearance for header, footer and cells in Calendar.
+This section explains customize the appearance for header, footer and cells in Calendar through `style`properties.
 
 ## Customize header appearance
 
-BackColor and ForeColor of each part in calendar header can customized. Calendar control header can be customized by using the following style properties.
+BackColor and ForeColor of each part in calendar header can customized. Height of the calendar header can be customized by change the `HeaderHeight` property and width of header can updated automatically from the calendar width.
 
-* BackColor
-* ForeColor
-* DayNamesBackColor
-* DayNamesForeColor
-* DayFont
+### Customize header text
+
+Header text in Calendar control which display the month and year of selected date. Calendar header color can be customized by using the following style properties.
+
+* BackColor - To change the background color of header in calendar.
+* ForeColor - To change the foreground color of text which display month and year in calendar header.
+* HoverForeColor - To change the foreground color of header text on mouse hover state.
+* Font - To change the font used to draw the header text in  calendar.
+
+### Customize day names
+
+Calendar header also contains the day names of week for the month view. Day names of the calendar header can be customized using the following properties.
+
+* DayNamesBackColor - To change the background color of day names in calendar header.
+* DayNamesForeColor - To change the foreground color of day names in calendar header.
+* DayNamesFont - To change the font used to draw the day names text in calendar.
 
 The following code example illustrates to customize the appearances of calendar header. 
 
@@ -57,19 +68,19 @@ this.sfCalendar.Style.Header.DayNamesFont = new System.Drawing.Font("Calibri", 1
 
 ' Setting header BackColor
 
-Me.sfCalendar.Style.Header.BackColor = Color.Red
+Me.sfCalendar.Style.Header.BackColor = Color.LightGray
 
 ' Setting header ForeColor
 
-Me.sfCalendar.Style.Header.ForeColor = Color.Yellow
+Me.sfCalendar.Style.Header.ForeColor = Color.Blue
 
-' Setting header DayNamesBackColor
+' Setting header DayNames BackColor
 
-Me.sfCalendar.Style.Header.DayNamesBackColor = Color.Green
+Me.sfCalendar.Style.Header.DayNamesBackColor = Color.LightSeaGreen
 
-' Setting header DayNamesForeColor
+' Setting header DayNames ForeColor
 
-Me.sfCalendar.Style.Header.DayNamesForeColor = Color.WhiteSmoke
+Me.sfCalendar.Style.Header.DayNamesForeColor = Color.AliceBlue
 
 ' Setting header DayNames Font
 
@@ -81,16 +92,140 @@ Me.sfCalendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.
 
 ![](appearance-images/headercustomizations.png)
 
-## Customize footer appearance
+## Customize navigation buttons
 
-BackColor and ForeColor of each part in calendar footer can customized. Footer of the calendar control can be customized by the following style properties.
+Navigation buttons in the calendar header can be customized by change the icons used for up and down. Icons used for navigation buttons can be changed by `UpArrowImage` and `DownArrowImage` properties of SfCalendar. Color used draw the default icons for up and down navigation buttons can be customized by following properties.
 
-* BackColor
-* ForeColor
-* HoverBackColor
-* HoverForeColor
+* NavigationButtonForeColor - To change foreground color of up and down navigation buttons.
+* NavigationButtonHoverForeColor - To change foreground color of up and down navigation buttons in mouse hover state.
+* NavigationButtonDisabledForeColor - To change foreground color of up and down navigation buttons in disabled state.
 
 The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// set the Navigation Button ForeColor
+            
+this.sfCalendar.Style.Header.NavigationButtonForeColor = Color.HotPink;
+
+// set the Navigation Button Hover ForeColor
+
+this.sfCalendar.Style.Header.NavigationButtonHoverForeColor = Color.Indigo;
+
+// set the Navigation Button disabled ForeColor
+            
+this.sfCalendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' set the Navigation Button ForeColor
+
+Me.sfCalendar.Style.Header.NavigationButtonForeColor = Color.HotPink
+
+' set the Navigation Button Hover ForeColor
+
+Me.sfCalendar.Style.Header.NavigationButtonHoverForeColor = Color.Indigo
+
+' set the Navigation Button disabled ForeColor
+
+Me.sfCalendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray
+
+Visibility and alignment of navigation buttons also can be customized.
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+![](appearance-images/navigationcolor.png)
+
+### Visibility of navigation buttons
+
+Navigation buttons are used to move between views in `SfCalendar`. Visibility of navigation buttons can be customized by `ShowNavigationButton` property. The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Indicating whether show the navigation buttons which used to move between views. 
+
+this.sfCalendar.ShowNavigationButton = false;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Indicating whether  show the navigation buttons which used to move between views. 
+
+Me.sfCalendar.ShowNavigationButton = false
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/navigationbuttons.png)
+
+### Navigation buttons alignment
+
+Navigation buttons can be aligned in different sides relative to the calendar header. Alignment of navigation buttons can be customized by `NavigationButtonAlignment`. The following code example illustrates the same.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Indicating how the navigation buttons should align relative to the Calendar Header. Setting Left alignment. 
+
+this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Left;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Indicating how the navigation buttons should align relative to the Calendar Header. Setting Left alignment. 
+
+Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Left
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/navbuttonalignleft.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Indicating how the navigation buttons should align relative to the Calendar Header. Setting Both alignment. 
+
+this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Both;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Indicating how the navigation buttons should align relative to the Calendar Header. Setting Both alignment. 
+
+Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Both
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/navbuttonalignboth.png)
+
+## Customize footer appearance
+
+BackColor and ForeColor of each part in calendar footer can customized. Height of the calendar footer can be customized by change the `FooterHeight` property and width of footer can updated automatically from the calendar width. Calendar control footer color can be customized by the following style properties.
+
+* BackColor - To change the background color of footer in calendar
+* ForeColor - To change the foreground color of footer in calendar
+* HoverBackColor - To change the background color of footer on mouse hover state.
+* HoverForeColor - To change the foreground color of footer text on mouse hover state.
+
+The following code example illustrates how to change the background and foreground of calendar footer.
 
 {% tabs %}
 
@@ -100,11 +235,11 @@ The following code example illustrates the same.
 
 // Setting Footer BackColor
 
-this.sfCalendar.Style.Footer.BackColor = Color.Tomato;
+this.sfCalendar.Style.Footer.BackColor = Color.LightGreen;
 
 // Setting Footer ForeColor
 
-this.sfCalendar.Style.Footer.ForeColor = Color.WhiteSmoke;
+this.sfCalendar.Style.Footer.ForeColor = Color.Green;
 
 // Setting Footer HoverBackColor
 
@@ -122,11 +257,11 @@ this.sfCalendar.Style.Footer.HoverForeColor = Color.SpringGreen;
 
 ' Setting Footer BackColor
 
-Me.sfCalendar.Style.Footer.BackColor = Color.Tomato
+Me.sfCalendar.Style.Footer.BackColor = Color.LightGreen
 
 ' Setting Footer ForeColor
 
-Me.sfCalendar.Style.Footer.ForeColor = Color.WhiteSmoke
+Me.sfCalendar.Style.Footer.ForeColor = Color.Green
 
 ' Setting Footer HoverBackColor
 
@@ -144,31 +279,30 @@ Me.sfCalendar.Style.Footer.HoverForeColor = Color.SpringGreen
 
 ## Customize cell appearance
 
-Date cells in the calendar control can be customized by using the following style properties.
+BackColor, ForeColor and BorderColor of each date cells in the calendar can be customized. Date cells in the calendar control can be customized by the following style properties.
 
-* CellBackColor
-* CellForeColor
-* CellHoverBackColor
-* CellHoverForeColor
-* CellFont 
+* CellBackColor - To change the background color of date cells in calendar
+* CellForeColor - To change the foreground color of date cells in calendar
+* CellHoverBorderColor - To change the border color of date cells in calendar 
+* CellFont - To change font used draw the date text of cell in calendar
 
 ### Customize trailing date appearance 
 
-Calendar control trailing(Next or Previous month) cells can be customized by the below properties.
+Calendar control trailing (Next or Previous month) cells can be customized by the below properties.
 
-* TrailingCellBackColor
-* TrailingCellForeColor
-* TrailingCellFont
+* TrailingCellBackColor - To change background color of the previous and following month cells which shown in current view in calendar.
+* TrailingCellForeColor - To change foreground color of the previous and following month cells which shown in current view in calendar.
+* TrailingCellFont - To change the font used to draw the date text for the previous and following month cells which shown in current view in calendar.
 
 ### Customize selected date appearance
 
-BackColor and ForeColor of selected date cell in calendar can customized. The following code illustrates how to customize the cell appearance.
+BackColor and ForeColor of selected date cell in calendar can customized. The following code illustrates how to customize the selected date cell appearance.
 
-* SelectedCellBackColor
-* SelectedCellForeColor
-* SelectedCellBorderColor
-* SelectedCellHoverBorderColor
-* SelectedCellFont
+* SelectedCellBackColor - To change the background color of selected date cell in calendar
+* SelectedCellForeColor - To change the foreground color of selected date cell in calendar
+* SelectedCellBorderColor - To change the border color of selected date cell in calendar 
+* SelectedCellHoverBorderColor - To change the border color of selected date cell in mouse hover state
+* SelectedCellFont - To change the font used to draw the date text of selected cell in calendar
 
 The following code example illustrates the customization of the Calendar cells.
 
@@ -284,9 +418,7 @@ Me.sfCalendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 1
 
 ## Hide trailing dates   
 
-`SfCalendar` allows to hide the days of the next month and the previous month in the calendar to enhance the appearance of the calendar. This can be achieved by disabling the `TrailingDatesVisible` property.
-
-For setting these properties, use the following code.
+`SfCalendar` allows to hide the days of the next month and the previous month in the calendar to enhance the appearance of the calendar. This can be achieved by disabling the `TrailingDatesVisible` property. The following code example illustrates how to hide trailing dates in calendar.
 
 {% tabs %}
 
@@ -312,9 +444,7 @@ this.SfCalendar1.TrailingDatesVisible = False
 
 ## Abbreviating day names
 
-By default, the day names are displayed in an abbreviated form in the Calendar control. They can also be displayed in an expanded form by setting `ShowAbbreviatedDayNames` property to false. This indicates whether the name of day is abbreviated or expanded.
-
-To set this property, use the following code:
+By default, the day names are displayed in an abbreviated form in the Calendar control. They can also be displayed in an expanded form by setting `ShowAbbreviatedDayNames` property to false. This indicates whether the name of day is abbreviated or expanded. The following code example illustrates how to display the day names in expanded form.
 
 {% tabs %}
 
@@ -366,7 +496,7 @@ Me.sfCalendar.RightToLeft = RightToLeft.Yes
 
 ## Highlight today cell 
 
-Today cell highlighted even selected date is different than today in `SfCalendar`. The highlight of today cell can be customized by using `HighlightTodayCell` property. The following code snippets illustrates the same.
+Today cell highlighted even selected date is different than today in `SfCalendar`. The highlight of today cell can be changed by `HighlightTodayCell` property. Today date cell can also be customized the following style properties. The following code snippets illustrates the same.
 
 {% tabs %}
 
@@ -390,79 +520,14 @@ Me.sfCalendar.HighlightTodayCell = true
 
 ![](appearance-images/todaycell.png)
 
-## Change visibility of navigation buttons
+### Customize today cell appearance
 
-Navigation buttons are used to move between views in `SfCalendar`. Visibility of navigation buttons can be customized by `ShowNavigationButton` property. The following code example illustrates the same.
+BackColor, ForeColor and BorderColor of today cell in the calendar can be customized. Today cell in the calendar control can be customized by the following style properties.
 
-{% tabs %}
-
-{% highlight C# %}
-
-// Indicating whether show the navigation buttons which used to move between views. 
-
-this.sfCalendar.ShowNavigationButton = false;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Indicating whether  show the navigation buttons which used to move between views. 
-
-Me.sfCalendar.ShowNavigationButton = false
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](appearance-images/navigationbuttons.png)
-
-## Customize navigation buttons alignment
-
-Navigation buttons can be aligned in different sides relative to the calendar header. Alignment of navigation buttons can be customized by `NavigationButtonAlignment`. The following code example illustrates the same.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Indicating how the navigation buttons should align relative to the Calendar Header. Setting Left alignment. 
-
-this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Left;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Indicating how the navigation buttons should align relative to the Calendar Header. Setting Left alignment. 
-
-Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Left
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](appearance-images/navbuttonalignleft.png)
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Indicating how the navigation buttons should align relative to the Calendar Header. Setting Both alignment. 
-
-this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Both;
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Indicating how the navigation buttons should align relative to the Calendar Header. Setting Both alignment. 
-
-Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Both
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](appearance-images/navbuttonalignboth.png)
+* TodayBackColor - To change the background color of today cell in calendar
+* TodayForeColor - To change the foreground color of today cell in calendar
+* TodayFont - To change the font used to draw the date text of today cell in calendar
+* TodayHoverBorderColor - To change the border color of today cell in mouse hover state
 
 ## Change visibility of the footer
 
