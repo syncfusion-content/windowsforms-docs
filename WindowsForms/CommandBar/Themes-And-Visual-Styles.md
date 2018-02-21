@@ -351,6 +351,122 @@ XPTaskPane</td></tr>
 XPToolBar</td></tr>
 </table>
 
+## Office 2016 Styles
+
+CommandBars control supports Office2016 Visual styles such as Office2016Colorful, Office2016White, Office2016Black and Office2016DarkGray.
+
+**Office2016Colorful**
+
+This option helps to set the Office2016Colorful style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Colorful
+
+Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img6.png) 
+
+**Office2016White**
+
+This option helps to set the Office2016White style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016White
+
+this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016White
+
+Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016White
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img7.png) 
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016DarkGray
+
+this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016DarkGray
+
+Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img8.png) 
+
+**Office2016Black**
+
+This option helps to set the Office2016Black style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Black
+
+this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Black
+
+Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img9.png) 
+
 ## Skin Manager Compatibility
 
 Previously, the SkinManager supported only Office 2007 themes. Now the SkinManager will support Office 2010 themes for the following color schemes:

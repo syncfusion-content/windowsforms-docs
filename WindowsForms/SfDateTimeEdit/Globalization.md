@@ -9,7 +9,31 @@ documentation: ug
 
 # Globalization
 
-`SfDateTimeEdit` control provides globalization support through the Culture property. If the Culture property is changed, then the DateTime displayed as per the Culture.
+`SfDateTimeEdit` control provides globalization support that helps to designing and developing a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, you should determine which cultures your application will support. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+
+System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("pt-BR")
+
+System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("pt-BR")
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+## Change Culture
+
+By default, `SfDateTimeEdit` supports system's current culture. Based on the usage, culture of `SfDateTimeEdit` can be changed through `Culture` property. Date and time information displayed in `SfDateTimeEdit` changed based on Culture changes.
 
 {% tabs %}
 
@@ -27,7 +51,7 @@ dateTimeEdit.Culture = new CultureInfo("en-US");
 
 {% highlight VB %}
 
-Dim dateTimeEdit As New Syncfusion.WinForms.Input.SfDateTimeEdit()
+Dim dateTimeEdit As Syncfusion.WinForms.Input.SfDateTimeEdit = New Syncfusion.WinForms.Input.SfDateTimeEdit
 
 dateTimeEdit.Value = New DateTime(2010, 7, 5)
 
@@ -39,8 +63,7 @@ dateTimeEdit.Culture = New CultureInfo("en-US")
 
 {% endtabs %} 
 
-
-![](Culture-Support_images/Culture_US.png)
+![](globalization-images/culture-us.png)
 
 {% tabs %}
 
@@ -70,4 +93,4 @@ dateTimeEdit.Culture = New CultureInfo("fr-FR")
 
 {% endtabs %} 
 
-![](Culture-Support_images/Culture_FR.png)
+![](globalization-images/culture-fr.png)

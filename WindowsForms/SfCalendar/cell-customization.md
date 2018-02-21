@@ -1,0 +1,416 @@
+---
+layout: post
+title: Customize the Dates of SfCalendar control for Windows Forms
+description: Customize the Dates of SfCalendar control for Windows Forms
+platform: WindowsForms
+control: SfCalendar
+documentation: ug
+---
+
+# Cell customization
+
+`SfCalendar` cells can be customized for mentioning some special or important days. 
+
+## Special Dates 
+
+`SpecialDates` helps to hold the special Dates collection with icon and description for the dates which need to be highlighted. `SpecialDates` contains the following properties to customize the cells. 
+
+* **BackColor** - The Background color for the special date to fill the cell.
+* **Value** - The value for the special date.
+* **ForeColor** - The foreground color for the special date to draw the text.
+* **Image** - Image to display on special date cell.
+* **Font** - The font used to draw the SpecialDate.
+* **IsDateVisible** - A value indicating whether the Date Text will be visible in special date cell.
+* **Description** - The description for special date.
+* **ImageAlign** - The alignment of image in special date. 
+* **TextAlign** -  The alignment of date text in special date. 
+* **TextImageRelation** - The alignment of date text and image relative to each other in special date. 
+
+To customize the dates, use the following code example.
+
+{% tabs %}
+
+{% highlight C# %}
+
+        SpecialDate specialDate1 = new SpecialDate();
+
+        SpecialDate specialDate2 = new SpecialDate();
+
+        SpecialDate specialDate3 = new SpecialDate();
+
+        SpecialDate specialDate4 = new SpecialDate();  
+
+        List<SpecialDate> SpecialDates = new List<SpecialDate>();      
+         
+        specialDate1.BackColor = System.Drawing.Color.White;
+
+        specialDate1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        specialDate1.ForeColor = System.Drawing.Color.Magenta;
+
+        specialDate1.Image = Properties.Resources.icons_Womens_day;
+
+        specialDate1.Description = "International Women’s Day";
+
+        specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+        specialDate1.IsDateVisible = false;
+
+        specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+        specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
+        specialDate1.Value = new System.DateTime(2018, 3, 8, 0, 0, 0, 0);
+            
+        specialDate2.BackColor = System.Drawing.Color.White;
+
+        specialDate2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        specialDate2.ForeColor = System.Drawing.Color.Magenta;
+
+        specialDate2.Description = "World Forestry Day";
+
+        specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day;
+
+        specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+        specialDate2.IsDateVisible = false;
+
+        specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+        specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
+        specialDate2.Value = new System.DateTime(2018, 3, 21, 0, 0, 0, 0);
+            
+        specialDate3.BackColor = System.Drawing.Color.White;
+
+        specialDate3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        specialDate3.ForeColor = System.Drawing.Color.Magenta;
+
+        specialDate3.Image = Properties.Resources.Icon_Water_day;
+
+        specialDate3.Description = "World Day for Water";
+
+        specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+        specialDate3.IsDateVisible = false;
+
+        specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+        specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
+        specialDate3.Value = new System.DateTime(2018, 3, 24, 0, 0, 0, 0);
+        
+        specialDate4.BackColor = System.Drawing.Color.White;
+
+        specialDate4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+        specialDate4.ForeColor = System.Drawing.Color.Magenta;
+
+        specialDate4.Image = Properties.Resources.Icon_Healthy_day;
+
+        specialDate4.Description = "World Health Day";
+
+        specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+        specialDate4.IsDateVisible = false;
+
+        specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+        specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+
+        specialDate4.Value = new System.DateTime(2018, 4, 7, 0, 0, 0, 0);
+
+        SpecialDates.Add(specialDate1);
+
+        SpecialDates.Add(specialDate2);
+
+        SpecialDates.Add(specialDate3);
+
+        SpecialDates.Add(specialDate4);
+
+        this.sfCalendar.SpecialDates = SpecialDates;       
+  
+{% endhighlight  %}
+
+{% highlight VB %}
+
+ Private Sub InitializeComponent()
+
+        Me.components = New System.ComponentModel.Container
+ 
+        Dim specialDate1 As SpecialDate = New SpecialDate
+
+        Dim specialDate2 As SpecialDate = New SpecialDate
+
+        Dim specialDate3 As SpecialDate = New SpecialDate
+
+        Dim specialDate4 As SpecialDate = New SpecialDate
+
+        Dim SpecialDates As List(Of SpecialDate) = New List(Of SpecialDate)
+
+        
+        specialDate1.BackColor = System.Drawing.Color.White
+
+        specialDate1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
+        specialDate1.ForeColor = System.Drawing.Color.Magenta
+
+        specialDate1.Image = Properties.Resources.icons_Womens_day
+
+        specialDate1.Description = "International Womens Day"
+
+        specialDate1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+
+        specialDate1.IsDateVisible = false
+
+        specialDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+
+        specialDate1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+
+        specialDate1.Value = New Date(2018, 3, 8, 0, 0, 0, 0)
+
+        specialDate2.BackColor = System.Drawing.Color.White
+
+        specialDate2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
+        specialDate2.ForeColor = System.Drawing.Color.Magenta
+
+        specialDate2.Description = "World Forestry Day"
+
+        specialDate2.Image = Properties.Resources.Icon_World_Forestry_Day
+
+        specialDate2.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+
+        specialDate2.IsDateVisible = false
+
+        specialDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+
+        specialDate2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+
+        specialDate2.Value = New Date(2018, 3, 21, 0, 0, 0, 0)
+
+        specialDate3.BackColor = System.Drawing.Color.White
+
+        specialDate3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
+        specialDate3.ForeColor = System.Drawing.Color.Magenta
+
+        specialDate3.Image = Properties.Resources.Icon_Water_day
+
+        specialDate3.Description = "World Day for Water"
+
+        specialDate3.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+
+        specialDate3.IsDateVisible = false
+
+        specialDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+
+        specialDate3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+
+        specialDate3.Value = New Date(2018, 3, 24, 0, 0, 0, 0)
+
+        specialDate4.BackColor = System.Drawing.Color.White
+
+        specialDate4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Italic, 
+                                               System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+
+        specialDate4.ForeColor = System.Drawing.Color.Magenta
+
+        specialDate4.Image = Properties.Resources.Icon_Healthy_day
+
+        specialDate4.Description = "World Health Day"
+
+        specialDate4.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+
+        specialDate4.IsDateVisible = false
+
+        specialDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+
+        specialDate4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+
+        specialDate4.Value = New Date(2018, 4, 7, 0, 0, 0, 0)
+        
+        SpecialDates.Add(specialDate1)
+
+        SpecialDates.Add(specialDate2)
+
+        SpecialDates.Add(specialDate3)
+        
+        SpecialDates.Add(specialDate4)
+
+        Me.sfCalendar.SpecialDates = SpecialDates
+
+    End Sub
+
+{% endhighlight  %}
+
+{% endtabs %}  
+
+![](cell-customization-images/specialdates.png)
+
+## Render cell on-demand
+
+This support is used to highlight or customize dates to mention some special date on-demand. `DrawCellEventArgs` provides the following data for the `DrawCell` event of calendar.
+
+
+* BackColor - To change background color of date cell to draw in calendar.
+
+* ForeColor - To change foreground color of date cell to draw in calendar.
+
+* Value - To identify the date value of the cell to draw in calendar
+
+* IsSpecialDate - To indicate whether the date of cell is special date in calendar
+
+* IsTrailingDate - To indicate whether the date of cell is special date in calendar
+
+* IsWeekNumber - To indicate whether the date of cell is trailing date for current month.
+
+* VerticalAlignment - To change the vertical alignment of the date text of the cell in calendar
+
+* HorizontalAlignment - To change the horizontal alignment of the date text of the cell in calendar
+
+* ColumnIndex - To get the column index of cell to draw in calendar
+
+* RowIndex - To get the row index of cell to draw in calendar
+
+* CellBounds - To get the cell bounds of the date cell to draw in calendar
+
+* Image - To change the image for the date cell to draw in calendar
+
+* ImageBounds - To change the image bounds of the date cell to draw in calendar
+
+* Handled - To handle the draw cell event. It will restrict to draw default text and user can draw their own text within the bounds of cell. 
+
+
+The following code example illustrates how to customize the cell on-demand.
+
+{% tabs %}
+
+{% highlight C# %}
+  
+    // Invoking the DrawCell Event.
+
+    this.SfCalendar1.DrawCell += SfCalendar1_DrawCell;
+
+
+   /// To Draw the Cell
+
+   private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
+
+   { 
+
+    SelectionRange range1 = new SelectionRange(new DateTime(2017, 09, 01), new DateTime(2017, 09, 15));
+
+    SelectionRange range2 = new SelectionRange(new DateTime(2017, 09, 16), new DateTime(2017, 09, 30));
+
+    DateTime Christmas = new DateTime(2017, 12, 25);
+
+    if (args.Value != null)
+    {
+
+       if (args.Value == Christmas)
+
+        {
+
+            args.BackColor = Color.Green;
+
+            args.ForeColor = Color.Yellow;
+            
+            args.Image = Resources.Christmas;
+            
+            args.ImageBounds = new Rectangle(25, 13, 30, 30);
+            
+            args.HorizontalAlignment = StringAlignment.Near;
+            
+            args.VerticalAlignment = StringAlignment.Near;
+        }
+
+        if (args.Value.Value.Date == this.dateTimePicker5.Value.Date)
+        
+        {
+             string month = args.Value.Value.ToString("MMM", this.SfCalendar1.Culture);
+
+             args.BackColor = this.colorPickerButton17.SelectedColor;
+
+             args.ForeColor = this.colorPickerButton18.SelectedColor;
+
+             args.Image = Resources.Cell;
+
+             args.ImageBounds = new Rectangle(0, 20, 30, 30);
+
+             args.VerticalAlignment = this.verticalAlignment;
+
+             args.HorizontalAlignment = this.horizontalAlignment;
+
+             args.Text = month + " " + args.Text;
+
+         }
+     }
+ }
+
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+InitializeComponent
+
+' Invoking the DrawCell Event.
+
+Me.SfCalendar1.DrawCell = (Me.SfCalendar1.DrawCell + SfCalendar1_DrawCell)
+    
+' To Draw the Cell
+    
+
+Private Sub SfCalendar1_DrawCell(ByVal sender As SfCalendar, ByVal args As DrawCellEventArgs)
+
+    Dim range1 As SelectionRange = New SelectionRange(New DateTime(2017, 9, 1), New DateTime(2017, 9, 15))
+
+    Dim range2 As SelectionRange = New SelectionRange(New DateTime(2017, 9, 16), New DateTime(2017, 9, 30))
+
+    Dim Christmas As DateTime = New DateTime(2017, 12, 25)
+
+    If (Not (args.Value) Is Nothing) Then
+
+        If (args.Value = Christmas) Then
+
+            args.BackColor = Color.Green
+            args.ForeColor = Color.Yellow
+            args.Image = Resources.Christmas
+            args.ImageBounds = New Rectangle(25, 13, 30, 30)
+            args.HorizontalAlignment = StringAlignment.Near
+            args.VerticalAlignment = StringAlignment.Near
+
+        End If
+            
+    If (args.Value.Value.Date = Me.dateTimePicker5.Value.Date) Then
+
+        Dim month As String = args.Value.Value.ToString("MMM", Me.SfCalendar1.Culture)
+        args.BackColor = Me.colorPickerButton17.SelectedColor
+        args.ForeColor = Me.colorPickerButton18.SelectedColor
+        args.Image = Resources.Cell
+        args.ImageBounds = New Rectangle(0, 20, 30, 30)
+        args.VerticalAlignment = Me.verticalAlignment
+        args.HorizontalAlignment = Me.horizontalAlignment
+        args.Text = (month + (" " + args.Text))
+
+    End If
+            
+End If
+        
+End Sub
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+![](cell-customization-images/customizedates.png)

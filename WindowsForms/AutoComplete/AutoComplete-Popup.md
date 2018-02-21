@@ -175,7 +175,34 @@ Me.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable
 
  ![](AutoComplete-Controls-Images/Overview_img18.png) 
 
+### Styles
 
+Visual Styles for the AutoComplete control can be enabled through Style property.The styles are,
+
+* Office2016Colorful
+* Office2016White
+* Office2016Black
+* Office2016DarkGray
+* Metro
+* Default
+
+
+{%highlight c#%}
+
+this.autoComplete1.Style = AutoCompleteStyle.Office2016Colorful;
+
+{%endhighlight%}
+
+
+
+{%highlight vbnet%}
+
+
+Me.autoComplete1.Style = AutoCompleteStyle.Office2016Colorful
+
+{%endhighlight%}
+
+![](AutoComplete-Controls-Images/Overview_img37.png)
 
 ### Header Settings
 

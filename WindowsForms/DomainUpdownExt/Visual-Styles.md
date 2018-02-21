@@ -86,6 +86,25 @@ Me.domainUpDownExt1.ThemesEnabled =True
 ![](DomainUpdownExt_images/Overview_img429.png)
 
 
+## Office2016 themes
+
+DomainUpDownExt supports Office2016 visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+
+//Sample code for setting "Office2016 Colorful" Visual style for DomainUpDownExt
+
+{% highlight c# %}
+
+this.domainUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight  %}
+
+{% highlight vbnet %}
+
+Me.domainUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight  %}
+
+![](DomainUpdownExt_images/Overview_img433.png)
 
 ## Custom Colors
 

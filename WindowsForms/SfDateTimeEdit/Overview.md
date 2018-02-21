@@ -9,15 +9,18 @@ documentation: ug
 
 # Overview
 
-`SfDateTimeEdit` is a control that allows to edit the `DateTime` in Text or Mask format with support Minimum and Maximum value validation, Watermark, and Globalization support. It provides flexible options to display the DateTime according to the required format. 
+`SfDateTimeEdit` is a control that allows to edit the `DateTime` in Text or Mask format with support minimum and maximum value validation, watermark and globalization support. It provides flexible options to display the date-time according to the required format. 
 
-## Features
+## Key Features
 
-* Provide Default and Mask mode editing of DateTime Value.
-* Provide different types of DateTime patterns to Display the DateTime.
-* Support custom date formats.
-* Provides Maximum and Minimum value for DateTime and Validation on value change.
-* Allows to change the DateTime Vale by keyboard and mouse interaction.
-* Provide Globalization support.
-* Allows to set the Null Value for DateTime.
-* Provides Watermark support.
+* **Editing mode**: Supports default text editing and mask mode which helps to restrict date input in formatted values based on a date-time pattern.
+
+* **Date-range support**: Maximum and minimum date support to prevent users from setting a date or time within a specified range.
+
+* **Globalization**: Support for different date-time formats and patterns based on cultures.
+
+* **Date validation**: Support for date validation and error messages due to invalid dates or when date range constraints are met.
+
+* **Accessibility**: Touch, keyboard and mouse support to make applications available to a wide variety of users.
+
+* **Watermark**: Support to display watermark text when a selected date is null.
