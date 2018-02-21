@@ -9,12 +9,43 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to design a `SfCalendar` control in a Windows Forms Application.
+This section briefly describes how to design a `SfCalendar` control in a Windows Forms Application and overview of its basic functionalities.
 
 * Adding SfCalendar control 
 * Configuring SfCalendar
 
-## Creating simple application with SfCalendar
+## Assembly deployment
+
+The following list of assemblies needs to be added as reference to use SfCalendar in any application,
+
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfInput.WinForms
+</td>
+<td>
+The Syncfusion.WinForms.Input contains the class that handles all UI operations and contains helper class of SfCalendar control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
+<td>
+Syncfusion.Core.WinForms contains NativeMethods which are used in SfCalendar control.
+</td>
+</tr>
+</table>
+
+# Creating simple application with SfCalendar
 
 In this walk through, you will create Windows Forms Application that contains SfCalendar control.
 
@@ -33,13 +64,16 @@ In this walk through, you will create Windows Forms Application that contains Sf
 
 Create new Windows Forms Project in Visual Studio to display SfCalendar with date information.
 
-### Adding control via Designer
+## Adding control via Designer
 
-SfCalendar control can be added to the application by dragging it from Toolbox and dropping it in designer view. The required assembly references will be added automatically.
+SfCalendar control can be added to the application by dragging it from Toolbox and dropping it in designer view. Below required assembly references will be added automatically.
+
+* Syncfusion.Core.WinForms.dll
+* Syncfusion.SfInput.WinForms.dll
 
 ![](getting-started-images/gettingstarted.png) 
 
-### Adding control manually in Code
+## Adding control manually in Code
 
 In order to add control manually in C#, do the below steps,
 
