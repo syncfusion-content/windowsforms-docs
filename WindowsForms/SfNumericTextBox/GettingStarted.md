@@ -66,21 +66,27 @@ SfNumericTextBox can be added through designer by following the below steps.
     *	Syncfusion.SfInput.WinForms.dll
 3.	Initialize a SfNumericTextBox by using the below code in code behind.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 private Syncfusion.WinForms.Input.SfNumericTextBox numericTextBox = new Syncfusion.WinForms.Input.SfNumericTextBox();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private numericTextBox As Syncfusion.WinForms.Input.SfNumericTextBox = New Syncfusion.WinForms.Input.SfNumericTextBox() 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 4.	Use the below code for adding the initialized SfNumericTextBox to the application.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.numericTextBox.Size = new System.Drawing.Size(100, 20);
 
@@ -90,7 +96,7 @@ this.Controls.Add(this.numericTextBox);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.numericTextBox.Size = new System.Drawing.Size(100, 20)
 
@@ -100,23 +106,29 @@ Me.Controls.Add(Me.numericTextBox)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Adding Value to the control
 
 It assigns the value to SfNumericTextBox. It holds the double value which can also hold null value. The “AllowNull” property needs to be set to make the Value nullable. The “Text” property of the control gets formatted from the Value property.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 // To set the Value to the SfNumericTextBox.
 this.numericTextBox.Value = 123.45;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ‘ To set the Value to the SfNumericTextBox.
 Me.numericTextBox.Value = 123.45
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Gettingstarted_images/Value.png)
 
@@ -124,7 +136,9 @@ Me.numericTextBox.Value = 123.45
 
 Formatting functionality allows to format the value based on the FormatMode of the control. By default, the value gets parsed from the application’s CurrentUICulture. Custom formatting can also be done using NumberFormatInfo property, which allow to set decimal separator, group separator, negative symbol, number of decimal digit, currency symbol, percent symbol.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.numericTextBox.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Currency;
 this.numericTextBox.NumberFormatInfo = new System.Globalization.NumberFormatInfo();
@@ -132,7 +146,7 @@ this.numericTextBox.NumberFormatInfo.CurrencySymbol = "€";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.numericTextBox.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Currency
 Me.numericTextBox.NumberFormatInfo = New System.Globalization.NumberFormatInfo()
@@ -140,30 +154,37 @@ Me.numericTextBox.NumberFormatInfo.CurrencySymbol = "€"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Gettingstarted_images/Formatting.png)
 
 ## Different types of format modes
 
 String formatting is the replacement of string in specified sting format. Based on the string formatting, the numbers can be formatted into three different modes. They are
+
 *	Numeric
 *	Percent
 *	Currency
 
 This mode can be applied in SfNumericTextBox by using the FormatMode property. By default, the FormatMode is set as Numeric.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 // To set the format mode as currency.
 this.numericTextBox.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Currency;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
-'To set the format mode as currency.
+' To set the format mode as currency.
 Me.numericTextBox.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Currency
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Gettingstarted_images/Mode.png)
 
@@ -171,19 +192,23 @@ Me.numericTextBox.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Curren
 
 SfNumericTextBox comes with the in-built watermark support. WatermarkText helps to display the details about what value need to enter. WatermarkText property allows to show the watermark for the control when the value of the control is set to null.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 // Sets the watermark text to SfNumericTextBox.
 this.numericTextBox.WatermarkText = "Enter your age";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Sets the watermark text to SfNumericTextBox.
 Me.numericTextBox.WatermarkText = "Enter your age"
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Gettingstarted_images/Watermark.png)
 
@@ -191,7 +216,9 @@ Me.numericTextBox.WatermarkText = "Enter your age"
 
 We can define the range of value which can be accept by the control. To define this range, we need to provide minimum possible value and maximum possible value using the property “MinValue” and “MaxValue” respectively.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 // The below codes assign the minimum value of SfNumericTextBox as 10 and maximum value as 100. i,e the value can accept the range between 10 to 100. 
 this.numericTextBox.MinValue = 10;
@@ -199,31 +226,37 @@ this.numericTextBox.MaxValue = 100;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
-‘The below codes assign the minimum value of SfNumericTextBox as 10 and maximum value as 100. i,e the value can accept the range between 10 to 100.
+‘ The below codes assign the minimum value of SfNumericTextBox as 10 and maximum value as 100. i,e the value can accept the range between 10 to 100.
 Me.numericTextBox.MinValue = 10
 Me.numericTextBox.MaxValue = 100
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Hiding the trail zeros in value
 
 The trailing zeros after the decimal digit can be removed by using the property named “HideTrailingZeros”.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 // Hides the trailing zeros.
 this.numericTextBox.HideTrailingZeros = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Hides the trailing zeros.
 Me.numericTextBox.HideTrailingZeros = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Gettingstarted_images/HideZeros.png)
 
@@ -231,18 +264,22 @@ Me.numericTextBox.HideTrailingZeros = True
 
 Allows to set the units or custom message at front or end of the text. This can be set using the Prefix and Suffix property.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 // Sets the custom unit in SfNumericTextBox.
 this.numericTextBox.Suffix = "inches";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Sets the custom unit in SfNumericTextBox.
 Me.numericTextBox.Suffix = "inches";
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Gettingstarted_images/CustomUnit.png)
