@@ -94,7 +94,7 @@ this.sfScrollFrame1.HorizontalScrollBar.EnableMaximumArrow = false;
 this.sfScrollFrame1.HorizontalScrollBar.EnableMinimumArrow = false;
 {% endhighlight %}
 {% endtabs %}
-The color of the disabled arrow button can also be specified by using **ArrowButtonDisbaledBackColor** and **ArrowButtonDisbaledforeColor** of the corresponding scrollbar.
+The color of the disabled arrow button can also be specified by using `ArrowButtonDisabledBackColor` and `ArrowButtonDisabledForeColor` of the corresponding scrollbar.
 {% tabs %}
 {% highlight c# %}
 //Set the arrow button disabled back color

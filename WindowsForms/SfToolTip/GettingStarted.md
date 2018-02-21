@@ -309,7 +309,7 @@ toolTipInfo1.ToolTipStyle = ToolTipStyle.Balloon;
 
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
-toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nemail : davidc@syncfusion.com";
+toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : david@syncfusion.com";
 
 toolTipItem1.Style.TextAlignment = ContentAlignment.MiddleLeft;
 
@@ -341,7 +341,7 @@ toolTipInfo1.BeakBackColor = Color.LightSkyBlue;
 
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
-toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nemail : davidc@syncfusion.com";
+toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : david@syncfusion.com";
 
 toolTipItem1.Style.TextAlignment = ContentAlignment.MiddleLeft;
 

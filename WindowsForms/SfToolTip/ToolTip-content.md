@@ -115,7 +115,7 @@ The image alignment of the `ToolTipItem` can be changed by using the [ImageAlign
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
-toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nemail : [davidc@syncfusion.com](mailto:davidc@syncfusion.com# "")";
+toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : [david@syncfusion.com](mailto:david@syncfusion.com# "")";
 
 toolTipItem1.Image= global::GettingStarted.Properties.Resources.Image1;
 
@@ -132,7 +132,7 @@ The image size of the `ToolTipItem` can be changed by using the [ImageSize](http
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
-toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nemail : [davidc@syncfusion.com](mailto:davidc@syncfusion.com# "")";
+toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : [david@syncfusion.com](mailto:david@syncfusion.com# "")";
 
 toolTipItem1.Image= global::GettingStarted.Properties.Resources.Image1;
 
@@ -154,7 +154,7 @@ The distance between the [Text](http://172.16.0.145:8080/Syncfusion.Core.WinForm
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
-toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nemail : davidc@syncfusion.com";
+toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : david@syncfusion.com";
 
 toolTipItem1.Style.TextAlignment = ContentAlignment.MiddleLeft;
 

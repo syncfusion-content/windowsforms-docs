@@ -48,7 +48,7 @@ ListView listView1 = new System.Windows.Forms.ListView();
  this.OrderID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 this.CustomerID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-this.Qunatity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+this.Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 this.sfScrollFrame1 = new Syncfusion.WinForms.Scroll.SfScrollFrame();
 this.SuspendLayout();
 // 
@@ -58,7 +58,7 @@ this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
 this.OrderID,
 this.CustomerID,
 this.columnHeader1,
-this.Qunatity});
+this.Quantity});
 this.listView1.Location = new System.Drawing.Point(30, 29);
 this.listView1.Name = "listView1";
 this.listView1.Size = new System.Drawing.Size(379, 285);

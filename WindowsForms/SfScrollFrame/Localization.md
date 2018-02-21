@@ -25,7 +25,7 @@ To add the resx file for the application for localization follow the below steps
 5. The culture name that indicates the name of language and country.<br>
 ![](SfScrollFrame_images/SfScrollFrame_img11.jpg) 
 
-6. Now, select Add ption to add the resource file in **Resources** folder.<br>
+6. Now, select Add option to add the resource file in **Resources** folder.<br>
 ![](SfScrollFrame_images/SfScrollFrame_img12.jpg)
 
 7. Add the Name/Value pair in Resource Designer of **Syncfusion.Core.WinForms.de-DE.resx**file and change its corresponding value to corresponding culture.<br>

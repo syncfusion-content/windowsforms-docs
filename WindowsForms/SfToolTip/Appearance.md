@@ -2,7 +2,7 @@
 
 ## ToolTip control
 
-The border color and its thickness of the `SfToolTip` can be customized by using the [BorderColor](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipInfo.html#Syncfusion_WinForms_ToolTip_ToolTipInfo_BorderColor "") and [BorderThickness](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipInfo.html#Syncfusion_WinForms_ToolTip_ToolTipInfo_BorderThickness "") properties.
+The border color and its thickness of the `SfToolTip` can be customized by using the `BorderColor` and `BorderThickness` properties.
 
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
@@ -197,7 +197,7 @@ toolTipInfo1.RightToLeft = RightToLeft.Yes;
 
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
-toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nemail : davidc@syncfusion.com";
+toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : david@syncfusion.com";
 
 toolTipItem1.Style.TextAlignment = ContentAlignment.MiddleLeft;
 
