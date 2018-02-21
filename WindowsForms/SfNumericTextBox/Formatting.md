@@ -150,13 +150,13 @@ Addition details about the value will always improve the meaning of the value. T
 
 {% highlight C# %}
 
-this.numericTextBox.Prefix = "Pass percent";
+this.numericTextBox.Prefix = "Pass percent :";
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Me.numericTextBox.Prefix = "Pass percent"
+Me.numericTextBox.Prefix = "Pass percent :"
 
 {% endhighlight %}
 
