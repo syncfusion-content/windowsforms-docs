@@ -72,11 +72,6 @@ The Calculator control supports the below button styles. UseVisualStyle property
 * Office2003
 * Office2007
 * Metro
-* Office2016White
-* Office2016Colorful
-* Office2016Black
-* Office2016DarkGray
-
 
 {% highlight c# %}
 
@@ -155,27 +150,3 @@ Office2007Colors.ApplyManagedColors(Me, Color.Navy)
 {% endhighlight %}
 
 ![](Overview_images/Overview_img125.jpeg) 
-
-
-
-### Office2016 Themes
-
-Calculator control supports Office2016 Visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
-
-//Sample code for setting "Office2016 Colorful" style for Calculator
-
-{% highlight c# %}
-
-this.calculatorControl1.UseVisualStyle = true;
-
-this.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful;
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-Me.calculatorControl1.UseVisualStyle = True
-
-Me.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful;
-
-{% endhighlight %}
