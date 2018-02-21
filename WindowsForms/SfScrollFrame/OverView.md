@@ -10,7 +10,7 @@ documentation: ug
 # SfScrollFrame
 
 ## Overview
-[SfScrollFrame](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Scroll.SfScrollFrame.html) attaches the theme-able scrollbars to any controls which is derived from the Microsoft's [ScrollableControl](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrollablecontrol(v=vs.110).aspx) or container. The theme-able scrollbar can be displayed over the control's default scrollbar position. 
+`SfScrollFrame` attaches the theme-able scrollbars to any controls which is derived from the Microsoft's `ScrollableControl` or container. The theme-able scrollbar can be displayed over the control's default scrollbar position. 
 
 ### Key Features 
 Following are the key features of the `SfScrollFrame`.

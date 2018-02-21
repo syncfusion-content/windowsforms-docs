@@ -144,12 +144,12 @@ e.ToolTipInfo.Items[0].Style.ForeColor = Color.Black;
 
 ## Enabling the shadow
 
-The shadow of the tooltip can be enabled by setting the [ShowShadow](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html#Syncfusion_WinForms_ToolTip_SfToolTip_ShowShadow "") property to `true`.
+The shadow of the tooltip can be enabled by setting the **ShadowVisible** property to `true`.
 
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
 
-sfToolTip1.ShowShadow = true;
+sfToolTip1.ShadowVisible = true;
 
 
 

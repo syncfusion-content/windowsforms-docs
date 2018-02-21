@@ -42,7 +42,7 @@ You can edit default resource file by adding it to Resources folder of your appl
 ![](SfScrollFrame_images/SfScrollFrame_img17.jpg)
 
 ### Localize when the resource file present in different assembly or different namespace?
-If resource (.resx) files are added into different assembly other than start up application, then call the [SetResources](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Core.LocalizationResourceBase.html#Syncfusion_WinForms_Core_LocalizationResourceBase_SetResources_System_Reflection_Assembly_System_String_) method of [LocalizationResource](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Core.LocalizationResourceBase.html) like below.
+If resource (.resx) files are added into different assembly other than start up application, then call the `SetResources` method of `LocalizationResource` like below.
 
 {% tabs %}
 {% highlight c# %}

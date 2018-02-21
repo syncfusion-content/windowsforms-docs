@@ -32,10 +32,10 @@ Syncfusion.Core.WinForms assembly contains the theme related classes for the Syn
 </table>
 
 ### Attaching SfScrollFrame to a control
-This section describes how to attach the `SfScrollFrame` to a [ListView](https://msdn.microsoft.com/en-us/library/system.windows.forms.listview) Control.
+This section describes how to attach the `SfScrollFrame` to a `ListView` Control.
 
 #### Through designer
-The `SfScrollFrame` can be attached to any control through the designer by assigning the [Control](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Scroll.SfScrollFrame.html#Syncfusion_WinForms_Scroll_SfScrollFrame_Control) property.
+The `SfScrollFrame` can be attached to any control through the designer by assigning the `Control` property.
 
 ![](SfScrollFrame_images/SfScrollFrame_img1.jpg)
 
@@ -81,7 +81,7 @@ this.sfScrollFrame1.Control = listView1;
 {% endhighlight %}
 {% endtabs %}
 ### Programmatic Scrolling
-The scroll frame can be programmatically scrolled by setting the [Value](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Scroll.SfScrollBarBase.html#Syncfusion_WinForms_Scroll_SfScrollBarBase_Value) property of the corresponding scrollbar.  
+The scroll frame can be programmatically scrolled by setting the `Value` property of the corresponding scrollbar.  
 {% tabs %}
 {% highlight c# %}
 // To scroll the control to the specific position.
@@ -93,7 +93,7 @@ this.sfScrollFrame1.VerticalScrollBar.Value = 100;
 ![](SfScrollFrame_images/SfScrollFrame_img2.jpg)
 
 ### Changing the SmallChange value
-The scrolling speed of the horizontal and vertical scrollbars of the `SfScrollFrame` can be customized by setting the [SmallChange](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Scroll.SfScrollBarBase.html#Syncfusion_WinForms_Scroll_SfScrollBarBase_Style) property. This is used to increase the scroll speed for the min/max button click of the scrollbar.
+The scrolling speed of the horizontal and vertical scrollbars of the `SfScrollFrame` can be customized by setting the `SmallChange` property. This is used to increase the scroll speed for the min/max button click of the scrollbar.
 
 {% tabs %}
 {% highlight c# %}
