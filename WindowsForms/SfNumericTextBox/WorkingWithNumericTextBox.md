@@ -46,7 +46,9 @@ This property returns the new Value of the SfNumericTextBox
 </tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 // Hooking the value changed event
 this.numericTextBox.ValueChanged += numericTextBox_ValueChanged;
@@ -60,7 +62,7 @@ private void numericTextBox _ValueChanged(object sender, Syncfusion.WinForms.Inp
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Hooking the value changed event
 Private Me.numericTextBox.ValueChanged += AddressOf numericTextBox_ValueChanged
@@ -72,3 +74,5 @@ Private Sub numericTextBox _ValueChanged(ByVal sender As Object, ByVal e As Sync
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

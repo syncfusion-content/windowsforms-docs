@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-## Overview
+# Overview
 
 The numeric text box control is an advanced textbox which allows you to enter numeric values in a specific format such as numeric, currency, and percent. Also, it provides support to display value with custom units.
 
