@@ -15,7 +15,7 @@ The `SfScrollFrame` can be used for the controls which are derived from the **Sc
 * Panel
 * ContainerControl
 * Listbox
-* Listview
+* ListView
 
 `SfScrollFrame` cannot be attached to the controls which defined its scrollbar by own i.e. creating custom scrollbars for both the Horizontal and vertical orientation.
 
