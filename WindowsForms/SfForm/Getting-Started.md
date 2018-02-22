@@ -1,0 +1,126 @@
+---
+layout: post
+title: Getting Started| WindowsForms | Syncfusion
+description: Getting Started
+platform: WindowsForms
+control: SfForm
+documentation: ug
+---
+
+# Getting Started
+
+## Assembly deployment
+
+The following list of assemblies needs to be added as reference to use `SfForm` in any application,
+
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
+<td>
+Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm, SfToolTip, SfScrollControl and SfSkinManager.
+</td>
+</tr>
+</table>
+
+## Converting a standard form to SfForm
+
+
+A default Form can be changed into an SfForm by following the below given steps.
+
+1) Create a new Windows Forms Application in Visual Studio and refer to the `Syncfusion.Core.WinForms` assembly.
+
+2) Include the following namespace to the directives list.
+
+{% highlight c# %}
+using Syncfusion.WinForms.Controls;
+{% endhighlight %}
+
+
+3) Change the base class of your form from `System.Windows.Forms.Form` to `SfForm`.
+
+
+{% highlight c# %}
+public partial class Form1 : SfForm
+{
+    public Form1()
+    {
+        InitializeComponent();
+    }
+}
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
+## TitleBar customization
+
+By default, the SfForm loads with the default appearance. The default title bar appearance of the form can be customized by using the [TitleBarStyleInfo](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html) property. It contains all the settings that controls the appearance of the form.
+
+
+{% highlight c# %}
+//Sets the back color and fore color of the title bar.
+this.Style.TitleBar.BackColor = Color.Black;
+this.Style.TitleBar.ForeColor = Color.White;
+
+//Sets the fore color of the title bar buttons
+this.Style.TitleBar.CloseButtonForeColor = Color.White;
+this.Style.TitleBar.MinimizeButtonForeColor = Color.White;
+this.Style.TitleBar.MaximizeButtonForeColor = Color.White;
+
+//Sets the hover state back color of the title bar buttons
+this.Style.TitleBar.CloseButtonHoverBackColor = Color.DarkGray;
+this.Style.TitleBar.MinimizeButtonHoverBackColor = Color.DarkGray;
+this.Style.TitleBar.MaximizeButtonHoverBackColor = Color.DarkGray;
+
+//Sets the pressed state back color of the title bar buttons
+this.Style.TitleBar.CloseButtonPressedBackColor = Color.Gray;
+this.Style.TitleBar.MaximizeButtonPressedBackColor = Color.Gray;
+this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img2.jpeg)
+
+## Border customization
+
+The borders of the form can be customized by using the [Style.Border](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_Border)  and [Style.InactiveBorder](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_InactiveBorder) properties.
+
+
+{% highlight c# %}
+this.Style.Border = new Pen(Color.Black, 5);
+this.Style.InactiveBorder = new Pen(Color.Gray, 5);
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img3.jpeg)
+
+## Loading user control to the TitleBar
+
+You can load any user control to the title bar of the SfForm instead of the title bar text by using the [TitleBarTextControl](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl) property.
+
+
+{% highlight c# %}
+FlowLayoutPanel searchPanel = new FlowLayoutPanel();
+Label searchingLabel = new Label();
+searchingLabel.Text = "Searching";
+TextBox searchBox = new TextBox();
+searchPanel.Controls.Add(searchingLabel);
+searchPanel.Controls.Add(searchBox);
+
+//Loads the searchPanel to the title bar.
+this.TitleBarTextControl = searchPanel;
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img4.jpeg)
+
