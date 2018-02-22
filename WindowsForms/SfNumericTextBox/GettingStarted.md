@@ -29,7 +29,7 @@ The following list of assemblies needs to be added as reference to use SfNumeric
 Syncfusion.SfInput.WinForms
 </td>
 <td>
-The Syncfusion.WinForms.Input contains the class that handles all UI operations, fundamentals and base class of SfNumericTextBox control.
+Syncfusion.SfInput.WinForms contains the class that handles all UI operations, fundamentals and base class of SfNumericTextBox control.
 </td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ Me.numericTextBox.NumberFormatInfo.CurrencySymbol = "€"
 
 ## Different types of format modes
 
-String formatting is the replacement of string in specified sting format. Based on the string formatting, the numbers can be formatted into three different modes. They are
+String formatting is the replacement of string in specified string format. Based on the string formatting, the numbers can be formatted into three different modes. They are
 
 *	Numeric
 *	Percent
