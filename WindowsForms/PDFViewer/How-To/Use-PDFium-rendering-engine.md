@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-## Use PDFium rendering engine?
+## Use PDFium rendering engine
 
 From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering of PDF document using PDFium rendering engine. Please follow the below steps to use PDFium PDF rendering in Syncfusion PDF viewer.
 
@@ -51,3 +51,6 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 	pdfViewerControl1.Load("Sample.pdf")
 
 {%endhighlight%}
+
+Please find the demo from the following link.
+http://www.syncfusion.com/downloads/support/directtrac/general/ze/WF1539355307
