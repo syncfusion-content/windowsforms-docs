@@ -152,11 +152,11 @@ The **SfButton** does not allow to animate the image if set the animated image t
 
 ## Show or hide focus rectangle
 
-A thin dotted rectangular frame can be drawn inside the **SfButton** when it got focus, this feature can be enabled by setting the **DrawFocusedRectangle** property to true.
+A thin dotted rectangular frame can be drawn inside the **SfButton** when it got focus, this feature can be enabled by setting the **FocusRectangleVisible** property to true.
 
 {% highlight c# %}
 //Enable the focus rectangle for SfButton
-sfButton1.DrawFocusedRectangle = true;
+sfButton1.FocusRectangleVisible = true;
 
 {% endhighlight %}
 
