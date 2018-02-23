@@ -161,33 +161,6 @@ tabBarSplitterControl1.Style = TabBarSplitterStyle.Metro
 
 ![](TabBarSplitterControl_images/TabBarSplitterControl_img10.png)
 
-##Custom Styles
-
-It is possible to apply custom color to the TabBarSplitterControl by setting `Office2007ColorScheme` property as `Managed`. The desired color can be chosen by using the [ApplyManagedColors](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Colors~ApplyManagedColors.html) method.
-
-{% tabs %}
-{% highlight c# %}
-//Custom Color for TabBarSplitterControl.
-this.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2007;
-this.tabBarSplitterControl1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Aquamarine);
-{% endhighlight %}
-
-{% highlight vb %}
-'Custom Color for TabBarSplitterControl.
-Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2007
-Me.tabBarSplitterControl1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Aquamarine)
-{% endhighlight %}
-
-{% endtabs %}
-
-![](TabBarSplitterControl_images/TabBarSplitterControl_img11.png)
-
-## Office 2016 Styles
-
-TabBarSplitterControl control supports Office2016 Visual styles such as Office2016Colorful, Office2016White, Office2016Black and Office2016DarkGray.
-
 **Office2016Colorful**
 
 This option helps to set the Office2016Colorful style.
@@ -299,3 +272,26 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 {% endtabs %}
 
 ![](TabBarSplitterControl_images/TabBarSplitterControl_img15.png)
+
+##Custom Styles
+
+It is possible to apply custom color to the TabBarSplitterControl by setting `Office2007ColorScheme` property as `Managed`. The desired color can be chosen by using the [ApplyManagedColors](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Colors~ApplyManagedColors.html) method.
+
+{% tabs %}
+{% highlight c# %}
+//Custom Color for TabBarSplitterControl.
+this.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2007;
+this.tabBarSplitterControl1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Aquamarine);
+{% endhighlight %}
+
+{% highlight vb %}
+'Custom Color for TabBarSplitterControl.
+Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Office2007
+Me.tabBarSplitterControl1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
+Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Aquamarine)
+{% endhighlight %}
+
+{% endtabs %}
+
+![](TabBarSplitterControl_images/TabBarSplitterControl_img11.png)
