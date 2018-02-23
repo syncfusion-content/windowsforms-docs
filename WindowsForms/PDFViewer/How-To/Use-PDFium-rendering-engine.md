@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Get-page-count | Windows Forms | Syncfusion
-description: get page count?
+title: Use-PDFium-rendering-engine | Windows Forms | Syncfusion
+description: use PDFium rendering engine
 platform: windowsforms
 control: PDF Viewer
 documentation: ug
