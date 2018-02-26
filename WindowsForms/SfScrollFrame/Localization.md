@@ -1,7 +1,7 @@
 ---
 layout: post
-title:SfScrollFrame/ContextMenu
-description: This section explains how to customize the context menu of the SfScrollFrame.
+title: Localization | Windows Forms | Syncfusion
+description: This section explains how to localize the SfScrollFrame.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug

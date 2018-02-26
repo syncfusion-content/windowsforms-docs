@@ -1,6 +1,6 @@
 ---
 layout: post
-title:SfScrollFrame/ContextMenu
+title: ContextMenu | Windows Forms | Syncfusion
 description: This section explains how to customize the context menu of the SfScrollFrame.
 platform: WindowsForms
 control: SfScrollFrame
