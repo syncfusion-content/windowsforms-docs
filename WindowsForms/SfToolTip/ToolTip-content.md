@@ -1,3 +1,12 @@
+---
+layout: post
+title: ToolTipItems in SfToolTip for syncfusion Essential Windows Forms
+description: This section explains on how to add the ToolTipItems in SfToolTip.
+platform: windowsforms
+control: SfToolTip
+documentation: ug
+
+---
 # ToolTip content
 
 ## Setting ToolTipItem
