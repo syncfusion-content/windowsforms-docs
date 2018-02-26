@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started with SfToolTip for syncfusion Essential Windows Forms
+description: This section explains on how to add a SfToolTip in an application and some of the basic functionalities of it.
+platform: windowsforms
+control: SfToolTip
+documentation: ug
+
+---
 # Getting Started
 
 ## Assembly deployment

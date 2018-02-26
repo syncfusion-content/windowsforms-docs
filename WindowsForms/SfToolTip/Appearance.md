@@ -1,3 +1,12 @@
+---
+layout: post
+title: Appearance of SfToolTip for syncfusion Essential Windows Forms
+description: This section explains the Appearance of the SfToolTip.
+platform: windowsforms
+control: SfToolTip
+documentation: ug
+
+---
 # Appearance
 
 ## ToolTip control

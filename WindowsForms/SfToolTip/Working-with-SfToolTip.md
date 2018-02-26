@@ -1,3 +1,12 @@
+---
+layout: post
+title: Customization of SfToolTip for syncfusion Essential Windows Forms
+description: This section explains on how to customize the settings of SfToolTip.
+platform: windowsforms
+control: SfToolTip
+documentation: ug
+
+---
 # Working with SfToolTip
 
 ## Getting the ToolTip text of a control
