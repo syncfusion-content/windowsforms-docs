@@ -1,7 +1,7 @@
 ---
 layout: post
-title:SfScrollFrame/ContextMenu
-description: This section explains how to customize the context menu of the SfScrollFrame.
+title: Limitation | Windows Forms | Syncfusion
+description: This section explains the limitations of the SfScrollFrame.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
