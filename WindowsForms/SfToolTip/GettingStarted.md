@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started with SfToolTip for syncfusion Essential Windows Forms
+description: This section explains on how to add a SfToolTip in an application and some of the basic functionalities of it.
+platform: windowsforms
+control: SfToolTip
+documentation: ug
+
+---
 # Getting Started
 
 ## Assembly deployment
@@ -69,13 +78,13 @@ The provided ToolTip text will be configured for the control and will be shown w
 #### Setting using ToolTipInfo
 
 1) Drag and drop the `SfToolTip` to the form.
-2) When the `SfToolTip` component is added to a form, an extended property will be added to the properties of the controls in the form. Clicking the … Ellipse button in the [ToolTipInfo](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipInfo.html# "") on sfToolTip1 extended property will show the `SfToolTip` Editor dialog box. 
+2) When the `SfToolTip` component is added to a form, an extended property will be added to the properties of the controls in the form. Clicking the … Ellipse button in the `ToolTipInfo` on sfToolTip1 extended property will show the `SfToolTip` Editor dialog box. 
 
 ![](SfToolTip_images/SfToolTip_img3.jpeg)
 
 
 3) The `SfToolTip` editor lets you customize the `ToolTipInfo` for the control.
-4) Click the … Ellipse button in the Items property and you can view the [ToolTipItem](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html# "") collection editor.
+4) Click the … Ellipse button in the Items property and you can view the `ToolTipItem` collection editor.
 
 ![](SfToolTip_images/SfToolTip_img4.jpeg)
 
@@ -141,7 +150,7 @@ The provided `ToolTipInfo` will be configured for the control and will be shown 
 
 #### Setting using Text
 
-The `SfToolTip` can be set to the control with tooltip text by using the [SetToolTip](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html#Syncfusion_WinForms_ToolTip_SfToolTip_SetToolTip_System_Windows_Forms_Control_System_String_ "") method. 
+The `SfToolTip` can be set to the control with tooltip text by using the `SetToolTip` method. 
 
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
@@ -157,7 +166,7 @@ sfToolTip1.SetToolTip(this.button1, " The ToolTip information of the Button cont
 
 #### Setting using ToolTipInfo
 
-The `SfToolTip` can be set to the control with set of tooltip information by using the [SetToolTipInfo](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html#Syncfusion_WinForms_ToolTip_SfToolTip_SetToolTipInfo_System_Windows_Forms_Control_Syncfusion_WinForms_ToolTip_ToolTipInfo_ "") method.
+The `SfToolTip` can be set to the control with set of tooltip information by using the `SetToolTipInfo` method.
 
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
@@ -187,7 +196,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 ### Show tooltip
 
-The SfToolTip can be shown programmatically using the [Show](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html#Syncfusion_WinForms_ToolTip_SfToolTip_Show_System_String_ "") method. The various overloads provided to show tooltip are documented in [Show](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html#Syncfusion_WinForms_ToolTip_SfToolTip_Show_System_String_ "").
+The SfToolTip can be shown programmatically using the `Show` method. The various overloads provided to show tooltip are documented in `Show`.
 
 **Note******
 
@@ -256,7 +265,7 @@ this.sfToolTip1.Show(toolTipInfo);
 
 ### Hide tooltip
 
-The `SfToolTip` can be hidden using the [Hide](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html#Syncfusion_WinForms_ToolTip_SfToolTip_Hide "") method. 
+The `SfToolTip` can be hidden using the `Hide` method. 
 
 {% highlight c# %}
 this.sfToolTip1.Hide();
@@ -274,7 +283,7 @@ The below properties can be used to set the ToolTip delay time.
 ### InitialDelay
 
 
-The [InitialDelay](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html#Syncfusion_WinForms_ToolTip_SfToolTip_InitialDelay "") property enables you to shorten or lengthen the time that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
+The `InitialDelay` property enables you to shorten or lengthen the time that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
 
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
@@ -287,7 +296,7 @@ sfToolTip1.InitialDelay = 1000;
 
 ### AutoPopDelay
 
-The [AutoPopDelay](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html#Syncfusion_WinForms_ToolTip_SfToolTip_AutoPopDelay "") property enables you to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
+The `AutoPopDelay` property enables you to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
 
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
@@ -300,7 +309,7 @@ sfToolTip1.AutoPopDelay = 10000;
 
 ## Showing ToolTip with Beak
 
-The `SfToolTip` can be shown with the beak by using the [ToolTipStyle](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipStyle.html# "") property.
+The `SfToolTip` can be shown with the beak by using the `ToolTipStyle` property.
 
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
@@ -330,7 +339,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ### Setting the beak back color
 
-The back color of the balloon beak can be set using the [BeakBackColor](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipInfo.html#Syncfusion_WinForms_ToolTip_ToolTipInfo_BeakBackColor "") property of the `ToolTipInfo`.
+The back color of the balloon beak can be set using the `BeakBackColor` property of the `ToolTipInfo`.
 
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();

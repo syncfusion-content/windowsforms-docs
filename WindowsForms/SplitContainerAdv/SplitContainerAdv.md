@@ -518,6 +518,10 @@ Visual Styles for the SplitContainerAdv control is set through Style property. T
 * Mozilla and 
 * Default.
 * Metro
+* Office2016Colorful
+* Office2016White
+* Office2016DarkGray
+* Office2016Black
 
 {% highlight C# %}
 
@@ -529,9 +533,6 @@ this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Offic
 
 {% endhighlight %}
 
-
-
-
 {% highlight vbnet %}
 
 'Sets Office2007 Black color scheme for the control.
@@ -541,10 +542,6 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 {% endhighlight %}
 
  ![](SplitContainerAdv-Images/Overview_img402.png) 
-
-## Office 2016 Styles
-
-SplitContainerAdv control supports Office2016 Visual styles such as Office2016Colorful, Office2016White, Office2016Black and Office2016DarkGray.
 
 **Office2016Colorful**
 
