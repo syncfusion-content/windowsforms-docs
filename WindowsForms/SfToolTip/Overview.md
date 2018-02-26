@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Overview
 
-[SfToolTip](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.SfToolTip.html# "") appears automatically as a pop up and shows the information of a control’s purpose, when user rests the pointer on the control. `SfToolTip` control includes the Control adding feature that allows an end user to add the user control to the SfToolTip. An end user can customize any ToolTip item in the `SfToolTip`.
+`SfToolTip` appears automatically as a pop up and shows the information of a control’s purpose, when user rests the pointer on the control. `SfToolTip` control includes the Control adding feature that allows an end user to add the user control to the SfToolTip. An end user can customize any ToolTip item in the `SfToolTip`.
 
 ## Key Features
 
