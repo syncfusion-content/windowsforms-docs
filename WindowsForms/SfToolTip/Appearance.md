@@ -13,6 +13,7 @@ documentation: ug
 
 The border color and its thickness of the `SfToolTip` can be customized by using the `BorderColor` and `BorderThickness` properties.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -31,6 +32,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img15.jpeg)
 
@@ -39,6 +41,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 The appearance of `ToolTipItem` can be customized by setting the `ToolTipStyleInfo` property. The ` ToolTipStyleInfo` property contains all the settings that are needed for the `ToolTipItem` appearance customization.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -61,6 +64,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img16.jpeg)
 
@@ -69,6 +73,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 Gradient background drawing for the `ToolTipItem` can be done by enabling the `EnableGradientBackground` property and initializing a `GradientBrush` property for the `ToolTipItem`. 
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -85,6 +90,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img17.jpeg)
 
@@ -95,6 +101,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 The separator of the `ToolTipItem` can be customized using the `SeparatorColor` and `SeparatorStyle` properties.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -117,6 +124,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img18.jpeg)
 
@@ -125,6 +133,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 The appearance of the `ToolTipItem` can be customized before showing the tooltip based on the control in which it is configured using the `ToolTipShowing` event.
 
+{% tabs %}
 {% highlight c# %}
 this.sfToolTip1.ToolTipShowing += SfToolTip1_ToolTipShowing;
 
@@ -147,6 +156,7 @@ e.ToolTipInfo.Items[0].Style.ForeColor = Color.Black;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img19.jpeg)
 
@@ -155,6 +165,7 @@ e.ToolTipInfo.Items[0].Style.ForeColor = Color.Black;
 
 The shadow of the tooltip can be enabled by setting the **ShadowVisible** property to `true`.
 
+{% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
 
@@ -163,6 +174,7 @@ sfToolTip1.ShadowVisible = true;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img20.jpeg)
 
@@ -171,6 +183,7 @@ sfToolTip1.ShadowVisible = true;
 
 The separator of the `ToolTipItem` can be enabled by setting the `EnableSeparator` property to `true`.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -189,6 +202,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img21.jpeg)
 
@@ -199,6 +213,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 The elements of the tooltip can be aligned from right to left and vice versa using the `RightToLeft` property. 
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -221,6 +236,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img22.jpeg)
 

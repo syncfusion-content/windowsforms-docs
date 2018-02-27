@@ -41,6 +41,7 @@ This section describes how to add the `SfToolTip` to a Control.
 
 **Designer** **generated** **code******
 
+{% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip(this.components);
 
@@ -69,6 +70,7 @@ this.button1.UseVisualStyleBackColor = true;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 The provided ToolTip text will be configured for the control and will be shown when the user pauses the mouse cursor on the control.
 
@@ -96,6 +98,7 @@ The provided ToolTip text will be configured for the control and will be shown w
 
 **Designer** **generated** **code******
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -140,6 +143,7 @@ this.button1.UseVisualStyleBackColor = true;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 The provided `ToolTipInfo` will be configured for the control and will be shown when the user pauses the mouse cursor on the control.
 
@@ -152,6 +156,7 @@ The provided `ToolTipInfo` will be configured for the control and will be shown 
 
 The `SfToolTip` can be set to the control with tooltip text by using the `SetToolTip` method. 
 
+{% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
 
@@ -160,6 +165,7 @@ sfToolTip1.SetToolTip(this.button1, " The ToolTip information of the Button cont
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img7.jpeg)
 
@@ -168,6 +174,7 @@ sfToolTip1.SetToolTip(this.button1, " The ToolTip information of the Button cont
 
 The `SfToolTip` can be set to the control with set of tooltip information by using the `SetToolTipInfo` method.
 
+{% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
 
@@ -188,6 +195,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img8.jpeg)
 
@@ -202,6 +210,7 @@ The SfToolTip can be shown programmatically using the `Show` method. The various
 
 If the position in which the tooltip to be shown is not mentioned, then the tooltip will be shown in mouse cursor position.
 
+{% tabs %}
 {% highlight c# %}
 Button button1 = new Button();
 
@@ -262,17 +271,20 @@ this.sfToolTip1.Show(toolTipInfo);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Hide tooltip
 
 The `SfToolTip` can be hidden using the `Hide` method. 
 
+{% tabs %}
 {% highlight c# %}
 this.sfToolTip1.Hide();
 
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Setting the ToolTip delay
 
@@ -285,6 +297,7 @@ The below properties can be used to set the ToolTip delay time.
 
 The `InitialDelay` property enables you to shorten or lengthen the time that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
 
+{% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
 
@@ -293,11 +306,13 @@ sfToolTip1.InitialDelay = 1000;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### AutoPopDelay
 
 The `AutoPopDelay` property enables you to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
 
+{% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
 
@@ -306,11 +321,13 @@ sfToolTip1.AutoPopDelay = 10000;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Showing ToolTip with Beak
 
 The `SfToolTip` can be shown with the beak by using the `ToolTipStyle` property.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -333,6 +350,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img9.jpeg)
 
@@ -341,6 +359,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 The back color of the balloon beak can be set using the `BeakBackColor` property of the `ToolTipInfo`.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -365,6 +384,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img10.jpeg)
 
