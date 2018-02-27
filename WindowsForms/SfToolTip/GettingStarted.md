@@ -78,13 +78,13 @@ The provided ToolTip text will be configured for the control and will be shown w
 #### Setting using ToolTipInfo
 
 1) Drag and drop the `SfToolTip` to the form.
-2) When the `SfToolTip` component is added to a form, an extended property will be added to the properties of the controls in the form. Clicking the … Ellipse button in the `ToolTipInfo` on sfToolTip1 extended property will show the `SfToolTip` Editor dialog box. 
+2) When the `SfToolTip` component is added to a form, an extended property will be added to the properties of the controls in the form. Clicking the Ellipse button in the `ToolTipInfo` on sfToolTip1 extended property will show the `SfToolTip` Editor dialog box. 
 
 ![](SfToolTip_images/SfToolTip_img3.jpeg)
 
 
 3) The `SfToolTip` editor lets you customize the `ToolTipInfo` for the control.
-4) Click the … Ellipse button in the Items property and you can view the `ToolTipItem` collection editor.
+4) Click the Ellipse button in the Items property and you can view the `ToolTipItem` collection editor.
 
 ![](SfToolTip_images/SfToolTip_img4.jpeg)
 
