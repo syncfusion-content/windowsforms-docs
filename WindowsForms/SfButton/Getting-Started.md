@@ -47,6 +47,7 @@ To add a **SfButton** to form, drag and drop a **SfButton** from the toolbox ont
 To programmatically add the **SfButton** to form, create a new instance of the SfButton and add it to the form **Controls** collection.
 
 
+{% tabs %}
 {% highlight c# %}
 //Create a new instance of the SfButton control
 SfButton sfButton1 = new Syncfusion.WinForms.Buttons.SfButton();
@@ -62,6 +63,7 @@ sfButton1.Text = "sfButton1";
 this.Controls.Add(sfButton1);
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Performing action on SfButton click
 
@@ -71,6 +73,7 @@ this.Controls.Add(sfButton1);
 
 Please find the code to show message box while perform the click action,
 
+{% tabs %}
 {% highlight c# %}
 //Raises the click event of SfButton
 sfButton1.Click += sfButton1_Click;
@@ -81,3 +84,4 @@ private void sfButton1_Click(object sender, EventArgs e)
     MessageBox.Show("SfButton was clicked");    
 }
 {% endhighlight %}
+{% endtabs %}

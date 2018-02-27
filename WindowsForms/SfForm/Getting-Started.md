@@ -41,14 +41,17 @@ A default Form can be changed into an SfForm by following the below given steps.
 
 2) Include the following namespace to the directives list.
 
+{% tabs %}
 {% highlight c# %}
 using Syncfusion.WinForms.Controls;
 {% endhighlight %}
+{% endtabs %}
 
 
 3) Change the base class of your form from `System.Windows.Forms.Form` to `SfForm`.
 
 
+{% tabs %}
 {% highlight c# %}
 public partial class Form1 : SfForm
 {
@@ -58,6 +61,7 @@ public partial class Form1 : SfForm
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
@@ -67,6 +71,7 @@ public partial class Form1 : SfForm
 By default, the SfForm loads with the default appearance. The default title bar appearance of the form can be customized by using the `TitleBarStyleInfo` property. It contains all the settings that controls the appearance of the form.
 
 
+{% tabs %}
 {% highlight c# %}
 //Sets the back color and fore color of the title bar.
 this.Style.TitleBar.BackColor = Color.Black;
@@ -87,6 +92,7 @@ this.Style.TitleBar.CloseButtonPressedBackColor = Color.Gray;
 this.Style.TitleBar.MaximizeButtonPressedBackColor = Color.Gray;
 this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
@@ -96,10 +102,12 @@ this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 The borders of the form can be customized by using the `Style.Border`  and `Style.InactiveBorder` properties.
 
 
+{% tabs %}
 {% highlight c# %}
 this.Style.Border = new Pen(Color.Black, 5);
 this.Style.InactiveBorder = new Pen(Color.Gray, 5);
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
@@ -109,6 +117,7 @@ this.Style.InactiveBorder = new Pen(Color.Gray, 5);
 You can load any user control to the title bar of the SfForm instead of the title bar text by using the `TitleBarTextControl` property.
 
 
+{% tabs %}
 {% highlight c# %}
 FlowLayoutPanel searchPanel = new FlowLayoutPanel();
 Label searchingLabel = new Label();
@@ -120,6 +129,7 @@ searchPanel.Controls.Add(searchBox);
 //Loads the searchPanel to the title bar.
 this.TitleBarTextControl = searchPanel;
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img4.jpeg)
