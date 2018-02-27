@@ -154,7 +154,7 @@ toolTipItem1.Style.ImageSize = new Size(100, 100);
 ![](SfToolTip_images/SfToolTip_img13.jpeg)
 
 
-**Note****:** If `ImageSize` property is initialized rather than its default value of Size (32, 32), then it will be taken as the image size for the image and won’t consider the Image.Size and ImageList.Size for image size.
+**Note****:** If `ImageSize` property is initialized rather than its default value of Size (32, 32), then it will be taken as the image size for the image and won't consider the Image.Size and ImageList.Size for image size.
 
 ### Setting spacing between Image and Text
 
