@@ -13,6 +13,7 @@ documentation: ug
 
 `ToolTipItem` can be set to the SfToolTip by adding the `ToolTipItem` to the `Items` collection through `Add` method.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -25,11 +26,13 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Adding Multiple Items into a ToolTip
 
 Multiple `ToolTipItem` also can be added to the `SfToolTip` by adding the multiple items to the Items collection using either `Add` method or `AddRange` method.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -46,11 +49,13 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Spacing between items
 
 The spacing or padding of the `ToolTipItem` can be changed by using the `Padding` property of the ToolTip item.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -71,6 +76,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img11.jpeg)
 
@@ -79,6 +85,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 The tooltip image of the `ToolTipItem` can be initialized using the `Image` or the `ImageList` property.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -111,6 +118,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img12.jpeg)
 
@@ -121,6 +129,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 The image alignment of the `ToolTipItem` can be changed by using the `ImageAlignment` property. 
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -133,11 +142,13 @@ toolTipItem1.Style.ImageAlignment = ToolTipImageAlignment.Left;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Setting ImageSize of the ToolTipItem
 
 The image size of the `ToolTipItem` can be changed by using the `ImageSize` property.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -150,6 +161,7 @@ toolTipItem1.Style.ImageSize = new Size(100, 100);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img13.jpeg)
 
@@ -160,6 +172,7 @@ toolTipItem1.Style.ImageSize = new Size(100, 100);
 
 The distance between the `Text` and `Image` of the `ToolTipItem` can be changed by using the `ImageToTextOffset`.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -180,6 +193,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img14.jpeg)
 
@@ -188,6 +202,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 Controls can be added to the `ToolTipItem` using the `Control` property.
 
+{% tabs %}
 {% highlight c# %}
 PictureBox pictureBox1 = new PictureBox();
 
@@ -210,4 +225,5 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
