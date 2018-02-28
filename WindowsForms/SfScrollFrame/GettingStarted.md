@@ -1,7 +1,7 @@
 ---
 layout: post
-title:SfScrollFrame/Getting started
-description: This section explains how to worm with SfScrollFrame.
+title: Getting-Started | Windows Forms | Syncfusion
+description: This section explains how to work with SfScrollFrame.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug

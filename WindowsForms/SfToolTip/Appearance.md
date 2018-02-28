@@ -1,9 +1,19 @@
+---
+layout: post
+title: Appearance of SfToolTip for syncfusion Essential Windows Forms
+description: This section explains the Appearance of the SfToolTip.
+platform: windowsforms
+control: SfToolTip
+documentation: ug
+
+---
 # Appearance
 
 ## ToolTip control
 
 The border color and its thickness of the `SfToolTip` can be customized by using the `BorderColor` and `BorderThickness` properties.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -22,14 +32,16 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img15.jpeg)
 
 
 ## ToolTip Item
 
-The appearance of `ToolTipItem` can be customized by setting the [ToolTipStyleInfo](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipStyleInfo.html# "") property. The ` ToolTipStyleInfo` property contains all the settings that are needed for the `ToolTipItem` appearance customization.
+The appearance of `ToolTipItem` can be customized by setting the `ToolTipStyleInfo` property. The ` ToolTipStyleInfo` property contains all the settings that are needed for the `ToolTipItem` appearance customization.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -52,14 +64,16 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img16.jpeg)
 
 
 ### Gradient Color
 
-Gradient background drawing for the `ToolTipItem` can be done by enabling the [EnableGradientBackground](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html#Syncfusion_WinForms_ToolTip_ToolTipItem_EnableGradientBackground "") property and initializing a [GradientBrush](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipStyleInfo.html#Syncfusion_WinForms_ToolTip_ToolTipStyleInfo_GradientBrush "") property for the `ToolTipItem`. 
+Gradient background drawing for the `ToolTipItem` can be done by enabling the `EnableGradientBackground` property and initializing a `GradientBrush` property for the `ToolTipItem`. 
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -76,6 +90,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img17.jpeg)
 
@@ -84,8 +99,9 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ### ToolTipItem Separator
 
-The separator of the `ToolTipItem` can be customized using the [SeparatorColor](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipStyleInfo.html#Syncfusion_WinForms_ToolTip_ToolTipStyleInfo_SeparatorColor "") and [SeparatorStyle](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipStyleInfo.html#Syncfusion_WinForms_ToolTip_ToolTipStyleInfo_SeparatorStyle "") properties.
+The separator of the `ToolTipItem` can be customized using the `SeparatorColor` and `SeparatorStyle` properties.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -108,6 +124,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img18.jpeg)
 
@@ -116,6 +133,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 The appearance of the `ToolTipItem` can be customized before showing the tooltip based on the control in which it is configured using the `ToolTipShowing` event.
 
+{% tabs %}
 {% highlight c# %}
 this.sfToolTip1.ToolTipShowing += SfToolTip1_ToolTipShowing;
 
@@ -138,6 +156,7 @@ e.ToolTipInfo.Items[0].Style.ForeColor = Color.Black;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img19.jpeg)
 
@@ -146,6 +165,7 @@ e.ToolTipInfo.Items[0].Style.ForeColor = Color.Black;
 
 The shadow of the tooltip can be enabled by setting the **ShadowVisible** property to `true`.
 
+{% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
 
@@ -154,14 +174,16 @@ sfToolTip1.ShadowVisible = true;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img20.jpeg)
 
 
 ## ToolTipItem Separator
 
-The separator of the `ToolTipItem` can be enabled by setting the [EnableSeparator](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html#Syncfusion_WinForms_ToolTip_ToolTipItem_EnableSeparator "") property to `true`.
+The separator of the `ToolTipItem` can be enabled by setting the `EnableSeparator` property to `true`.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -180,6 +202,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img21.jpeg)
 
@@ -188,8 +211,9 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ## Right to Left
 
-The elements of the tooltip can be aligned from right to left and vice versa using the [RightToLeft](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipInfo.html#Syncfusion_WinForms_ToolTip_ToolTipInfo_RightToLeft "") property. 
+The elements of the tooltip can be aligned from right to left and vice versa using the `RightToLeft` property. 
 
+{% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
 
@@ -212,6 +236,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img22.jpeg)
 

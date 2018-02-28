@@ -14,6 +14,7 @@ This section describes about various types supported by the **SfButton**.
 
 The text and image can be displayed inside the **SfButton** by initializing the **Text** and **Image** properties.
 
+{% tabs %}
 {% highlight c# %}
 //Adding the text value.
 this.sfButton1.Text = Print;
@@ -22,6 +23,7 @@ this.sfButton1.Text = Print;
 this.sfButton1.Image = Image.FromFile(@"..\..\Data\Image1.png");
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfButton_images/SfButton_img2.jpeg)
 
@@ -29,11 +31,13 @@ this.sfButton1.Image = Image.FromFile(@"..\..\Data\Image1.png");
 
 The text and image positions can be adjusted by using the **TextImageRelation** property.
 
+{% tabs %}
 {% highlight c# %}
 //Initializing the text and image positions.
 sfButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfButton_images/SfButton_img3.jpeg)
 
@@ -41,6 +45,7 @@ sfButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
 
 The space between the text and image can be adjusted by using the **TextMargin** and **ImageMargin** properties.
 
+{% tabs %}
 {% highlight c# %}
 //Adjust the text margin of the SfButton
 sfButton1.TextMargin = new Padding(3, 3, 3, 3);
@@ -49,6 +54,7 @@ sfButton1.TextMargin = new Padding(3, 3, 3, 3);
 sfButton1.ImageMargin = new Padding(3, 3, 3, 3);
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Image Button
 
@@ -60,6 +66,7 @@ sfButton1.ImageMargin = new Padding(3, 3, 3, 3);
 
 **SfButton** can be displayed only with icon, by setting the empty string value to the **Text** property and initialize the icon value to **Image** property. You can able to show the icon alone button, by setting the borders to null and setting the back color of button which is same as the background area.
 
+{% tabs %}
 {% highlight c# %}
 //To show the icon button, initialize the background color same as the screen or background area color.
 this.IconButton2.Style.BackColor = System.Drawing.Color.White;
@@ -75,4 +82,5 @@ IconButton2.Style.FocusedBorder = null;
 IconButton2.Style.PressedBorder = null;
 
 {% endhighlight %}
+{% endtabs %}
 ![](SfButton_images/SfButton_img5.jpeg)
