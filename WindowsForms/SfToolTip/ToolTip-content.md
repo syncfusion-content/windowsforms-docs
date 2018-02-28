@@ -1,9 +1,19 @@
+---
+layout: post
+title: ToolTipItems in SfToolTip for syncfusion Essential Windows Forms
+description: This section explains on how to add the ToolTipItems in SfToolTip.
+platform: windowsforms
+control: SfToolTip
+documentation: ug
+
+---
 # ToolTip content
 
 ## Setting ToolTipItem
 
-[ToolTipItem](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html# "") can be set to the SfToolTip by adding the `ToolTipItem` to the [Items](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipInfo.html#Syncfusion_WinForms_ToolTip_ToolTipInfo_Items "") collection through [Add](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItemCollection.html#Syncfusion_WinForms_ToolTip_ToolTipItemCollection_Add_Syncfusion_WinForms_ToolTip_ToolTipItem_ "") method.
+`ToolTipItem` can be set to the SfToolTip by adding the `ToolTipItem` to the `Items` collection through `Add` method.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -16,11 +26,13 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Adding Multiple Items into a ToolTip
 
-Multiple `ToolTipItem` also can be added to the `SfToolTip` by adding the multiple items to the Items collection using either `Add` method or [AddRange](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItemCollection.html#Syncfusion_WinForms_ToolTip_ToolTipItemCollection_AddRange_Syncfusion_WinForms_ToolTip_ToolTipItem___ "") method.
+Multiple `ToolTipItem` also can be added to the `SfToolTip` by adding the multiple items to the Items collection using either `Add` method or `AddRange` method.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -37,11 +49,13 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Spacing between items
 
-The spacing or padding of the `ToolTipItem` can be changed by using the [Padding](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html#Syncfusion_WinForms_ToolTip_ToolTipItem_Padding "") property of the ToolTip item.
+The spacing or padding of the `ToolTipItem` can be changed by using the `Padding` property of the ToolTip item.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -62,14 +76,16 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img11.jpeg)
 
 
 ## Adding Image into a ToolTip
 
-The tooltip image of the `ToolTipItem` can be initialized using the [Image](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html#Syncfusion_WinForms_ToolTip_ToolTipItem_Image "") or the [ImageList](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html#Syncfusion_WinForms_ToolTip_ToolTipItem_ImageList "") property.
+The tooltip image of the `ToolTipItem` can be initialized using the `Image` or the `ImageList` property.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -102,6 +118,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img12.jpeg)
 
@@ -110,8 +127,9 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 ### Changing ImageAlignment of the ToolTipItem
 
-The image alignment of the `ToolTipItem` can be changed by using the [ImageAlignment](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipStyleInfo.html#Syncfusion_WinForms_ToolTip_ToolTipStyleInfo_ImageAlignment "") property. 
+The image alignment of the `ToolTipItem` can be changed by using the `ImageAlignment` property. 
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -124,11 +142,13 @@ toolTipItem1.Style.ImageAlignment = ToolTipImageAlignment.Left;
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Setting ImageSize of the ToolTipItem
 
-The image size of the `ToolTipItem` can be changed by using the [ImageSize](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipStyleInfo.html#Syncfusion_WinForms_ToolTip_ToolTipStyleInfo_ImageSize "") property.
+The image size of the `ToolTipItem` can be changed by using the `ImageSize` property.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -141,16 +161,18 @@ toolTipItem1.Style.ImageSize = new Size(100, 100);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img13.jpeg)
 
 
-**Note****:** If `ImageSize` property is initialized rather than its default value of Size (32, 32), then it will be taken as the image size for the image and won’t consider the Image.Size and ImageList.Size for image size.
+**Note****:** If `ImageSize` property is initialized rather than its default value of Size (32, 32), then it will be taken as the image size for the image and won't consider the Image.Size and ImageList.Size for image size.
 
 ### Setting spacing between Image and Text
 
-The distance between the [Text](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html#Syncfusion_WinForms_ToolTip_ToolTipItem_Text "") and `Image` of the `ToolTipItem` can be changed by using the [ImageToTextOffset](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipStyleInfo.html#Syncfusion_WinForms_ToolTip_ToolTipStyleInfo_ImageToTextOffset "").
+The distance between the `Text` and `Image` of the `ToolTipItem` can be changed by using the `ImageToTextOffset`.
 
+{% tabs %}
 {% highlight c# %}
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
@@ -171,14 +193,16 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img14.jpeg)
 
 
 ## Adding custom user control into a ToolTip
 
-Controls can be added to the `ToolTipItem` using the [Control](http://172.16.0.145:8080/Syncfusion.Core.WinForms/api/Syncfusion.WinForms.ToolTip.ToolTipItem.html#Syncfusion_WinForms_ToolTip_ToolTipItem_Control "") property.
+Controls can be added to the `ToolTipItem` using the `Control` property.
 
+{% tabs %}
 {% highlight c# %}
 PictureBox pictureBox1 = new PictureBox();
 
@@ -201,4 +225,5 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 
 {% endhighlight %}
+{% endtabs %}
 

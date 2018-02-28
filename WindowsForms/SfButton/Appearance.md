@@ -17,22 +17,26 @@ The background of the **SfButton** can be filled with solid color, gradient colo
 The background of the **SfButton** can be filled with solid color by initializing the **BackColor** property.
 
 
+{% tabs %}
 {% highlight c# %}
 //Initialize the Gray color to the background of SfButton
 sfButton1.BackColor = Color.Gray;
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Gradient BackColor
 
 The background of the **SfButton** can be filled with gradient colors by initializing the **GradientBrush** property.
 
 
+{% tabs %}
 {% highlight c# %}
 //Initialize the gradient background brush to SfButton.
 sfButton1.Style.GradientBrush = new BrushInfo(GradientStyle.ForwardDiagonal, Color.Green, Color.Yellow);
 
 {% endhighlight %}
+{% endtabs %}
 
 Please find the **SfButton** with gradient background below,
 
@@ -41,6 +45,7 @@ Please find the **SfButton** with gradient background below,
 ### Background Image
 The background of the **SfButton** can be filled with image by initialize the **BackgroundImage** property. The background image layout can be changing by initializing any one of **ImageLayout** enumeration value to **BackgroundImageLayout** property.
 
+{% tabs %}
 {% highlight c# %}
 
 //Initializing the image value to BackgroundImage property.
@@ -50,6 +55,7 @@ this.sfButton1.BackgroundImage = Image.FromFile(@"..\..\Data\BackgroundImage.png
 this.sfButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 
 {% endhighlight %}
+{% endtabs %}
 
 Please find the **SfButton** with background image with center layout below,
 
@@ -62,6 +68,7 @@ Please find the **SfButton** with background image with center layout below,
 ### BackColor and ForeColor
 The backcolor and fore color of the **SfButton** in hover state can be changed by using the **HoverBackColor** and **HoverForeColor** properties. Like the hover state, you can able to customize in pressed state, focused state, normal state and disable state of the SfButton.
 
+{% tabs %}
 {% highlight c# %}
 //Initializing the back color.
 sfButton1.Style.BackColor = Color.Gray;
@@ -82,6 +89,7 @@ sfButton1.Style.FocusedBackColor = Color.LightGray;
 sfButton1.Style.FocusedForeColor = Color.Black;
  
 {% endhighlight %}
+{% endtabs %}
 
 Please find the SfButton on hover state below,
 
@@ -91,6 +99,7 @@ Please find the SfButton on hover state below,
 
 **SfButton** allow to change the image in hover state by using to **HoverImage** property. Like hover state can able to change the image in focused, disabled and pressed states by using the**FocusedImage**, **DisabledImage** and **PressedImage** properties.
 
+{% tabs %}
 {% highlight c# %}
 //Initializing the image for SfButton default state
 sfButton1.Style.Image = Image.FromFile(@"..\..\Data\DefaultImage.png");
@@ -108,6 +117,7 @@ sfButton1.Style.FocusedImage = Image.FromFile(@"..\..\Data\FocusedImage.png");
 sfButton1.Style.DisabledImage = Image.FromFile(@"..\..\Data\DisabledImage.png");
 
 {% endhighlight %}
+{% endtabs %}
 
 Please find the SfButton in normal state below,
 
@@ -122,10 +132,12 @@ Find the SfButton in hover state below,
 The border can be changed based on the button state by using the **Border**, **HoverBorder**, **FocusedBorder**, **PressedBorder** and **DisabledBorder** properties.
 Please find the below code with hover border customization,
 
+{% tabs %}
 {% highlight c# %}
 //Initialize the hover border
 sfButton6.Style.HoverBorder = new Pen(Color.DarkGray, 2);
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](SfButton_images/SfButton_img14.jpeg)
@@ -134,6 +146,7 @@ sfButton6.Style.HoverBorder = new Pen(Color.DarkGray, 2);
 
 The animation image (.gif image) can be displayed in **SfButton**, by enable the **AllowImageAnimation** property and initialize the animation image to **Image** property.
 
+{% tabs %}
 {% highlight c# %}
 //Enable the Image animation
 sfButton1.AllowImageAnimation = true;
@@ -142,6 +155,7 @@ sfButton1.AllowImageAnimation = true;
 sfButton1.Style.Image = Image.FromFile(@"..\..\Data\animationImage.gif");
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](SfButton_images/SfButton_img15.jpeg)
@@ -154,11 +168,12 @@ The **SfButton** does not allow to animate the image if set the animated image t
 
 A thin dotted rectangular frame can be drawn inside the **SfButton** when it got focus, this feature can be enabled by setting the **FocusRectangleVisible** property to true.
 
-{% highlight c# %}
+{% tabs %}{% highlight c# %}
 //Enable the focus rectangle for SfButton
 sfButton1.FocusRectangleVisible = true;
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![](SfButton_images/SfButton_img16.jpeg)
@@ -170,13 +185,16 @@ sfButton1.FocusRectangleVisible = true;
 To draw the rounded rectangle shape for **SfButton** follow the below steps,
 1. Raise the Paint event of the SfButton,
 
+{% tabs %}
 {% highlight c# %}
 //Raises the paint event of the SfButton
 sfButton1.Paint += sfButton1_Paint;
 {% endhighlight %}
+{% endtabs %}
 
 2. Calculate the rounded rectangle area for the client area of the button and set to the region of **SfButton**. And draw the border with calculated rounded rectangle area. Please find the paint event method below,
 
+{% tabs %}
 {% highlight c# %}
 private void sfButton1_Paint(object sender, PaintEventArgs e)
 {
@@ -194,6 +212,7 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
     e.Graphics.DrawPath(new Pen(Color.Red), GetRoundedRect(rect, radius));
 }
 {% endhighlight %}
+{% endtabs %}
 
 Please find the **SfButton** with rounded rectangle below,
 
