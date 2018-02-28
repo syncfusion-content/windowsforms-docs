@@ -22,7 +22,7 @@ Chart series is the visual representation of given data. The following APIs are 
 
 LineSeries series = new LineSeries();
 
-series.DataSource = vm.Trace1;
+series.DataSource = model.Trace1;
 
 series.ResistanceMember = "Resistance";
 
@@ -36,7 +36,7 @@ sfSmithChart1.Series.Add(series);
 
 Dim series As New LineSeries()
 
-series.DataSource = vm.Trace1
+series.DataSource = model.Trace1
 
 series.ResistanceMember = "Resistance"
 
@@ -90,7 +90,7 @@ LineSeries series = new LineSeries();
 
 series.MarkerVisible = true;            
 
-series.DataSource = vm.Trace1;
+series.DataSource = model.Trace1;
 
 series.ResistanceMember = "Resistance";
 
@@ -102,7 +102,7 @@ LineSeries series1 = new LineSeries();
 
 series1.MarkerVisible = true;
 
-series1.DataSource = vm.Trace2;
+series1.DataSource = model.Trace2;
 
 series1.ResistanceMember = "Resistance";
 
@@ -120,7 +120,7 @@ Dim series As New LineSeries()
 
 series.MarkerVisible = True
 
-series.DataSource = vm.Trace1
+series.DataSource = model.Trace1
 
 series.ResistanceMember = "Resistance"
 
@@ -132,7 +132,7 @@ Dim series1 As New LineSeries()
 
 series1.MarkerVisible = True
 
-series1.DataSource = vm.Trace2
+series1.DataSource = model.Trace2
 
 series1.ResistanceMember = "Resistance"
 
