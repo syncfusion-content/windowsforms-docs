@@ -7,16 +7,16 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-This section briefly describes how to design a `SfCalendar` control in a Windows Forms Application and overview of its basic functionalities.
+This section describes how to design a `SfCalendar` control in a Windows Forms application and overview of its basic functionalities.
 
 * Adding SfCalendar control 
 * Configuring SfCalendar
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use SfCalendar in any application,
+The following list of assemblies should be added as reference to use the SfCalendar in any application:
 
 <table>
 <tr>
@@ -47,7 +47,7 @@ Syncfusion.Core.WinForms contains NativeMethods which are used in SfCalendar con
 
 # Creating simple application with SfCalendar
 
-In this walk through, you will create Windows Forms Application that contains SfCalendar control.
+You can create the Windows Forms application with SfCalendar control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
@@ -62,26 +62,26 @@ In this walk through, you will create Windows Forms Application that contains Sf
 
 ### Creating the project
 
-Create new Windows Forms Project in Visual Studio to display SfCalendar with date information.
+Create a new Windows Forms project in the Visual Studio to display the SfCalendar with date information.
 
-## Adding control via Designer
+## Adding control via designer
 
-SfCalendar control can be added to the application by dragging it from Toolbox and dropping it in designer view. Below required assembly references will be added automatically.
+The SfCalendar control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Core.WinForms.dll
 * Syncfusion.SfInput.WinForms.dll
 
 ![](getting-started-images/gettingstarted.png) 
 
-## Adding control manually in Code
+## Adding control manually in code
 
-In order to add control manually in C#, do the below steps,
+To add control manually in C#, follow the given steps:
 
-1. Add the below required assembly references to the project,
+1. Add the following required assembly references to the project:
 	* Syncfusion.Core.WinForms.dll
 	* Syncfusion.SfInput.WinForms.dll
 
-2. Include the namespaces **Syncfusion.WinForms.Input**
+2. Include the namespaces **Syncfusion.WinForms.Input**.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ Imports Syncfusion.WinForms.Input
 
 {% endtabs %} 
 
-2. Create `SfCalendar` control instance and add it to the Form.
+2. Create `SfCalendar` control instance and add it to the form.
 
 {% tabs %}
 
@@ -123,7 +123,7 @@ Me.Controls.Add(sfCalendar)
 
 ## Configure date range
 
-`SfCalendar` prevent users from selecting dates within a specified minimum and maximum range. To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
+The `SfCalendar` prevent users from selecting dates within a specified minimum and maximum range. To specify the range, set the start date and end date to `MinDate` and `MaxDate` properties respectively.
 
 {% tabs %}
 
@@ -163,9 +163,9 @@ calendar.MaxDate = New DateTime(2018, 1, 25)
 
 ![](appearance-images/minmax.png)
 
-## Configure BlackoutDates
+## Configure blackout dates
 
-`BlackoutDates` refers the disabled dates that restrict the user from selecting it. A date collection can be provided to set the `BlackoutDates` for this control. Below code example illustrates how to add blackout dates to calendar.
+`BlackoutDates` refers the disabled dates that restrict the user from selecting it. A date collection can be provided to set the `BlackoutDates` for this control. The following code example illustrates how to add blackout dates to the calendar:
 
 {% tabs %}
 
@@ -203,10 +203,10 @@ Me.sfCalendar.BlackoutDates = time
 
 ![](getting-started-images/blackoutdates.png)
 
-## Configure SpecialDates
+## Configure special dates
 
-`SfCalendar` allows to highlight special dates with icons and descriptions. Special dates to calendar can be added through `SpecialDates`collection.
-Below code illustrates how to add the special dates in calendar.
+The `SfCalendar` allows you to highlight special dates with icons and descriptions. Special dates can be added to the calendar through the `SpecialDates`collection.
+Following code illustrates how to add the special dates to the calendar:
 
 {% tabs %}
 
@@ -439,7 +439,7 @@ Below code illustrates how to add the special dates in calendar.
 
 ## Configure to allow multiple selection
 
-SfCalendar control allows to select multiple dates by setting the `AllowMultipleSelection` property to true. The following code example illustrates the same.
+The SfCalendar control allows you to select multiple dates by setting the `AllowMultipleSelection` property to true. The following code example illustrates this process:
 
 {% tabs %}
 
@@ -465,7 +465,7 @@ Me.SfCalendar1.AllowMultipleSelection = true
 
 ## Configure number of weeks in view
 
-The number of weeks shown in the month view can be changed by setting the `NumberOfWeeksInView` property as follows.
+The number of weeks shown in the month view can be changed by setting the `NumberOfWeeksInView` property as follows:
 
 {% tabs %}
 
@@ -491,7 +491,7 @@ Me.sfCalendar.NumberOfWeeksInView = 8
 
 ## Configure first day of week
 
-The first day of a week can be changed by setting `FirstDayOfWeek` property. The following code example shows how to set `FirstDayofWeek` property.
+The first day of a week can be changed by setting the `FirstDayOfWeek` property. The following code example shows how to set the `FirstDayofWeek` property:
 
 {% tabs %}
 
@@ -517,7 +517,7 @@ Me.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday
 
 ## Configure to show week number
 
-The week number of current week in a year can be shown in the calendar control by setting `ShowWeekNumber` property to true as follows.
+The week number of current week in a year can be shown in the calendar control by setting the `ShowWeekNumber` property to true as follows:
 
 {% tabs %}
 

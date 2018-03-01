@@ -9,17 +9,17 @@ documentation: ug
 
 # Navigation
 
-By default, Calendar displays the month view. Users can move from current month to previous or next month in the Calendar control by clicking navigation buttons in the header and also can move from month view to other views (Year, Decade, Century) to select the dates from other year or decade by click the header text of Calendar. 
+By default, the calendar displays the month view. You can move from current month to previous or next month in the calendar control by clicking navigation buttons in the header, and also you can move from month view to other views (year, decade, century) to select the dates from other year or decade by click the header text of the calendar.
 
 ## Different views 
 
-Calendar supports month, year, decade, century views and provides intuitive interface through which user can navigate and quickly select dates.
+Calendar supports month, year, decade, and century views and provides intuitive interface through which you can navigate and quickly select dates.
 
 ![](navigation-images/allview.png)
 
 ![](navigation-images/allview1.png)
 
-User can choose the required view options in calendar by `ViewMode` property. the below code illustrates how to show only year and decade views in calendar.
+You can choose the required view options in the calendar by the `ViewMode` property. The following code illustrates how to show year and decade views in the calendar.
 
 {% tabs %}
 
@@ -43,19 +43,19 @@ Me.sfCalendar.ViewMode = (Syncfusion.WinForms.Input.Enums.CalendarViewType.Year 
 
 ## Navigation through mouse
 
-Navigation between next or previous range of dates for the current view in the calendar can be done by clicking up and down navigation buttons in calendar header. `SfCalendar` control allows to navigate from one view to other views through mouse which is done by clicking the header text of the calendar and selecting cell from the view navigate back to next available view in `ViewMode`.
+The navigation between next or previous range of dates for the current view in the calendar can be done by clicking up and down navigation buttons in the calendar header. The `SfCalendar` control allows you to navigate from one view to other view by clicking the header text of the calendar and selecting the cell from the view to navigate back to the next available view in the `ViewMode`.
 
 ## Navigation through keyboard
 
-`SfCalendar` control allows to navigate from one view to other views through keyboard by pressing the `CTRL + UP` in backward direction or `CTRL + DOWN` keys in forward direction. SfCalendar allows to navigate between different cells in the same view by pressing navigation arrows. `CTRL + LEFT` and `CTRL + RIGHT` arrow keys to navigate to previous or next month of calendar.
+The `SfCalendar` control allows you to navigate from one view to other view by pressing the `CTRL + UP` keys in backward direction or `CTRL + DOWN` keys in forward direction. The SfCalendar allows you to navigate between different cells in the same view by pressing navigation arrows. `CTRL + LEFT` and `CTRL + RIGHT` arrow keys are pressed to navigate to previous or next month of the calendar respectively.
 
 ## Navigation through touch
 
-Navigation between next or previous range of dates for the current view in the calendar can be done by panning on the calendar view. `SfCalendar` control allows to navigate from one view to other view by tap the header of calendar. Tapping cell from the view navigate back to next available view in `ViewMode`. 
+The navigation between next or previous range of dates for the current view in the calendar can be done by panning on the calendar view. The `SfCalendar` control allows you to navigate from one view to other view by tapping the header of the calendar. Tapping the cell in view navigates back to the next available view in the `ViewMode`.
 
 ## Handle view change
 
-`ViewChanging` event occurs when click on the Calendar Header text to change the view from one view to another view. Change of view can be restricted on-demand by handling the `ViewChanging` event. `ViewChangingEventArgs` provides the information about the old and new `ViewType`. This helps to restrict view change in specific scenarios only. The following code example illustrates the same.
+The `ViewChanging` event occurs when the calendar header text is clicked to change the view from one view to another view. The change of view can be restricted on-demand by handling the `ViewChanging` event. The `ViewChangingEventArgs` provides information about the old and new `ViewType`. This helps to restrict the view change in specific scenarios only. The following code example illustrates this process:
 
 {% tabs %}
 
@@ -103,9 +103,9 @@ Me.sfCalendar.ViewChanging = (Me.sfCalendar.ViewChanging + SfCalendar_ViewChangi
 {% endtabs %}
 
 
-## Handle Navigation
+## Handle navigation
 
-`Navigating` event occurs when navigating between current range of dates to next or previous range of dates in calendar. Navigating between the same view can be restricted by handling the `Navigating` event. `NavigatingEventArgs` provides the information about the old and new range of dates. This helps to restrict navigation in specific scenarios only. The following code example illustrates the same.
+The `Navigating` event occurs when navigating between current range of dates to next or previous range of dates in the calendar. The navigation between the same views can be restricted by handling the `Navigating` event. The `NavigatingEventArgs` provides information about the old and new ranges of dates. This helps to restrict navigation in specific scenarios only. The following code example illustrates this process:
 
 {% tabs %}
 
@@ -155,7 +155,7 @@ End Sub
 
 ## Disable animation on navigation
 
-SfCalendar animate the content while navigate between different set of date range or move from one view to another view. This animation can be disabled by `EnableAnimation` as false. The following code example illustrates the same.
+The SfCalendar animates the content while navigating between different sets of date ranges or move from one view to another view. This animation can be disabled by setting the `EnableAnimation` to false. The following code example illustrates this process:
 
 {% tabs %}
 
