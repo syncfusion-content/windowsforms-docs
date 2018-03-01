@@ -71,7 +71,7 @@ The data for the smith chart can be added through code. To add data, switch to c
 
 {% tabs %}
 
-{% highlight vb.net %}
+{% highlight c# %}
 
 public class TransmissionData
 
