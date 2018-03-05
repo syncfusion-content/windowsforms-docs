@@ -65,9 +65,9 @@ The steps to configure the Syncfusion Windows Forms NuGet Packages in Visual Stu
 
    **Name**: Name of the package that listed in Available package sources  
    **Source**: Syncfusion Windows Forms NuGet Package feed URL 
-   [http://nuget.syncfusion.com/windows-forms](http://nuget.syncfusion.com/windows-forms)
+   [http://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms](http://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms)
     
-   ![](Installation-And-Deployment_images/NuGetConfig2.jpeg)
+   ![](Installation-And-Deployment_images/NuGetConfig2.png)
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
     

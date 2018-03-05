@@ -36,7 +36,7 @@ GridRangeInfoList rangeList = null;
 
             		{
 
-            		for (int col = range.Top; col <= range.Bottom; ++col)
+            		for (int col = range.Left; col <= range.Right; ++col)
 
             				  {
 
