@@ -18,6 +18,9 @@ The chart provides a PrintDocument that can be sent to the .NET PrintPreviewDial
 
 PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
 
+//Customizing the icon of print preview dialog
+(printPreviewDialog1 as Form).Icon = new Icon(@"..\..\App.ico");
+
 printPreviewDialog1.Document = this.chartControl1.PrintDocument;
 
 printPreviewDialog1.ShowDialog();
@@ -27,6 +30,9 @@ printPreviewDialog1.ShowDialog();
 {% highlight vbnet %}
 
 Me.printPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog
+
+'Customizing the icon of print preview dialog
+CType(printPreviewDialog1,Form).Icon = New Icon("..\..\App.ico")
 
 printPreviewDialog1.Document = Me.chartControl1.PrintDocument
 
