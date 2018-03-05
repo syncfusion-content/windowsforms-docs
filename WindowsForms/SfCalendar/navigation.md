@@ -55,7 +55,7 @@ The navigation between next or previous range of dates for the current view in t
 
 ## Handle view change
 
-The `ViewChanging` event occurs when the calendar header text is clicked to change the view from one view to another view. The change of view can be restricted on-demand by handling the `ViewChanging` event. The `ViewChangingEventArgs` provides information about the old and new `ViewType`. This helps to restrict the view change in specific scenarios only. The following code example illustrates this process:
+The `ViewChanging` event occurs when the calendar header text is clicked to change the view from one view to another view. The change of view can be restricted on-demand by handling the `ViewChanging` event. The `ViewChangingEventArgs` provides information about the old and new `ViewType`. This helps to restrict the view change in specific scenarios only. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -105,7 +105,7 @@ Me.sfCalendar.ViewChanging = (Me.sfCalendar.ViewChanging + SfCalendar_ViewChangi
 
 ## Handle navigation
 
-The `Navigating` event occurs when navigating between current range of dates to next or previous range of dates in the calendar. The navigation between the same views can be restricted by handling the `Navigating` event. The `NavigatingEventArgs` provides information about the old and new ranges of dates. This helps to restrict navigation in specific scenarios only. The following code example illustrates this process:
+The `Navigating` event occurs when navigating between current range of dates to next or previous range of dates in the calendar. The navigation between the same views can be restricted by handling the `Navigating` event. The `NavigatingEventArgs` provides information about the old and new ranges of dates. This helps to restrict navigation in specific scenarios only. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -155,7 +155,7 @@ End Sub
 
 ## Disable animation on navigation
 
-The SfCalendar animates the content while navigating between different sets of date ranges or move from one view to another view. This animation can be disabled by setting the `EnableAnimation` to false. The following code example illustrates this process:
+The SfCalendar animates the content while navigating between different sets of date ranges or move from one view to another view. This animation can be disabled by setting the `EnableAnimation` to false. The following code example illustrates the same:
 
 {% tabs %}
 

@@ -439,7 +439,7 @@ Following code illustrates how to add the special dates to the calendar:
 
 ## Configure to allow multiple selection
 
-The SfCalendar control allows you to select multiple dates by setting the `AllowMultipleSelection` property to true. The following code example illustrates this process:
+The SfCalendar control allows you to select multiple dates by setting the `AllowMultipleSelection` property to true. The following code example illustrates the same:
 
 {% tabs %}
 

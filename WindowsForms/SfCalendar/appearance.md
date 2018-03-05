@@ -100,7 +100,7 @@ Navigation buttons in the calendar header can be customized by changing the up a
 * NavigationButtonHoverForeColor: Changes the foreground color of up and down navigation buttons on mouse hover.
 * NavigationButtonDisabledForeColor: Changes the foreground color of up and down navigation buttons in disabled state.
 
-The following code example illustrates this process:
+The following code example illustrates the same:
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ The visibility and alignment of navigation buttons can also be customized.
 
 ### Visibility of navigation buttons
 
-Navigation buttons are used to move between views in the `SfCalendar`. The visibility of navigation buttons can be customized by the `ShowNavigationButton` property. The following code example illustrates this process:
+Navigation buttons are used to move between views in the `SfCalendar`. The visibility of navigation buttons can be customized by the `ShowNavigationButton` property. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -170,7 +170,7 @@ Me.sfCalendar.ShowNavigationButton = false
 
 ### Navigation buttons alignment
 
-Navigation buttons can be aligned in different sides relative to the calendar header. The alignment of navigation buttons can be customized by the `NavigationButtonAlignment`. The following code example illustrates this process:
+Navigation buttons can be aligned in different sides relative to the calendar header. The alignment of navigation buttons can be customized by the `NavigationButtonAlignment`. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -470,7 +470,7 @@ Me.sfCalendar.ShowAbbreviatedDayNames = false
 
 ## Right-to-left
 
-`SfCalendar` control elements can be aligned in right-to-left layout. The `SfCalendar` control is laid out from the right to left when the `RightToLeft` value is set to `Yes`. The following code example illustrates this process:
+`SfCalendar` control elements can be aligned in right-to-left layout. The `SfCalendar` control is laid out from the right to left when the `RightToLeft` value is set to `Yes`. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -496,7 +496,7 @@ Me.sfCalendar.RightToLeft = RightToLeft.Yes
 
 ## Highlight today cell 
 
-The today cell will be highlighted even the selected date differs from today in the `SfCalendar`. The highlight of today cell can be changed by the `HighlightTodayCell` property. The today date cell can also be customized by using the following style properties. The following code snippets illustrates this process:
+The today cell will be highlighted even the selected date differs from today in the `SfCalendar`. The highlight of today cell can be changed by the `HighlightTodayCell` property. The today date cell can also be customized by using the following style properties. The following code snippets illustrates the same:
 
 {% tabs %}
 
@@ -531,7 +531,7 @@ The BackColor, ForeColor, and BorderColor of the today cell in the calendar can 
 
 ## Change visibility of the footer
 
-The visibility of the calendar footer can be customized by using the `ShowFooter` property which contains today and none buttons. The visibility of today and none buttons can be represented separately by `ShowToday` and `ShowNone` properties respectively. The following code example illustrates this process:
+The visibility of the calendar footer can be customized by using the `ShowFooter` property which contains today and none buttons. The visibility of today and none buttons can be represented separately by `ShowToday` and `ShowNone` properties respectively. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -587,7 +587,7 @@ Me.sfCalendar.ShowToday = false
 
 ## Customize splitter appearance
 
-The visibility of splitters in the calendar control can be customized by setting the `ShowHorizontalSplitter` and `ShowVerticalSplitter` properties. The splitters color for horizontal and vertical splitters can be customized by the `HorizontalSplitterColor` and `VerticalSplitterColor` respectively. The following code example illustrates this process:
+The visibility of splitters in the calendar control can be customized by setting the `ShowHorizontalSplitter` and `ShowVerticalSplitter` properties. The splitters color for horizontal and vertical splitters can be customized by the `HorizontalSplitterColor` and `VerticalSplitterColor` respectively. The following code example illustrates the same:
 
 {% tabs %}
 

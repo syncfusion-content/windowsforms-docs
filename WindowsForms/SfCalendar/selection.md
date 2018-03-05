@@ -21,7 +21,7 @@ The selected date of the `SfCalendar` control can be changed by the keyboard. `U
 
 ### Change selection programmatically
 
-The selection of the calendar control can be changed programmatically by setting the `SelectedDate` property. The `GoToDate` method is used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. If the date value is not fall between minimum and maximum ranges or blackout dates contains the date, it returns `false`. The following code example illustrates this process:
+The selection of the calendar control can be changed programmatically by setting the `SelectedDate` property. The `GoToDate` method is used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. If the date value is not fall between minimum and maximum ranges or blackout dates contains the date, it returns `false`. The following code example illustrates the same:
 
 {% tabs %}
 

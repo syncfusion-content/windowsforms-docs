@@ -13,7 +13,7 @@ documentation: ug
 
 ## Special dates
 
-The `SpecialDates` helps you to hold the special dates collection with icon and description for dates which need to be highlighted. The `SpecialDates` contains the following properties to customize the cells.
+The `SpecialDates` helps you to hold the special dates collection with icon and description for dates which need to be highlighted. The `SpecialDates` contains the following properties to customize the cells:
 
 * **BackColor**: The background color for the special date to fill the cell.
 * **Value**: The value for the special date.
