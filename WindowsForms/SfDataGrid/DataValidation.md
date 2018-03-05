@@ -194,7 +194,7 @@ public class OrderInfo : INotifyDataErrorInfo
 
 ![](DataValidation_images/DataValidation_img4.png)
 
-N> The `INotifyDataErrorInfo` is available from the .net framework 4.5.
+N> The `INotifyDataErrorInfo` is available from the .NET framework 4.5.
 
 ### Using Data Annotation
 The SfDataGrid allows to validate the data using data annotation attributes by setting `SfDataGrid.ValidationMode` or `GridColumn.ValidationMode` property to `InEdit` or `InView`.

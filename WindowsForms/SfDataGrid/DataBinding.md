@@ -298,7 +298,7 @@ SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this 
 [https://msdn.microsoft.com/en-us/library/jj682076(v=vs.113).aspx](https://msdn.microsoft.com/en-us/library/jj682076(v=vs.113).aspx) 
 
 ### Defining Data Model using Entity Framework 4.0
-To create Data Model using Entity Framework in Windows forms application, follow the below steps.
+To create Data Model using Entity Framework in Windows Forms application, follow the below steps.
 
 1) Right click your project, select **Add** option and then click **New Item**. 
 
@@ -325,7 +325,7 @@ To create Data Model using Entity Framework in Windows forms application, follow
 ![](DataBinding_images/DataBinding_img7.jpeg)
 
 ### Loading data from Entity Framework data service
-The data from the defined entity model can be loaded as a data source to the `SfDataGrid` by loading the **Order Details** table by the created entity for the **Northwnd** data base.
+The data from the defined entity model can be loaded as a data source to the `SfDataGrid` by loading the **Order Details** table by the created entity for the **Northwnd** database.
 
 {% tabs %}
 {% highlight c# %}
@@ -372,7 +372,7 @@ To create data model using LINQ to SQL in WF project follow the below steps.
 
 10) Drag **Shippers** table in to design view of **Northwind.dbml**. The Entity model diagram for **Shippers** table is generated once it is dropped in to design view.
 ### Loading data from LINQ to SQL classes
-The data from the defined data model of the LINQ to SQL classes can be loaded as a data source to the `SfDataGrid` by loading the **Shippers** table by the created data context for the **Northwnd** data base.
+The data from the defined data model of the LINQ to SQL classes can be loaded as a data source to the `SfDataGrid` by loading the **Shippers** table by the created data context for the **Northwnd** database.
 
 {% tabs %}
 {% highlight c# %}
@@ -414,7 +414,7 @@ To access the data from data source using `ADO.NET`, follow the below steps.
 
 1) Create a connection through any of the [.NET Framework data provider](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source that you have owned.
 
-2) Fill the data from the data base to a data set using the data adapter.
+2) Fill the data from the database to a data set using the data adapter.
 
 3) Set the `DataSource` as **Suppliers** table from the data set.
 
@@ -470,7 +470,7 @@ To access the Microsoft Access database, follow the below steps.
 
 1) Create a **OleDbConnection** with the Microsoft Access database.
 
-2) Fill the data from the data base to a data set using the **OleDbDataAdapter**.
+2) Fill the data from the database to a data set using the **OleDbDataAdapter**.
 
 3) Set the `DataSource` as **Employees** table from the data set.
 

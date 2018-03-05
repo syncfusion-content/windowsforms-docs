@@ -212,7 +212,7 @@ private void SfDataGrid1_SortColumnsChanging(object sender, SortColumnsChangingE
 ## Customization using Events
 
 ### Canceling scrolling after sorting
-The scrolling after the sorting to bring SelectedItem in view can be cancelled by using the `SortColumnsChanging` event through [CancelScroll](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.SortColumnsChangingEventArgs~CancelScroll.html) property.
+The scrolling after the sorting to bring SelectedItem in view can be canceled by using the `SortColumnsChanging` event through [CancelScroll](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.SortColumnsChangingEventArgs~CancelScroll.html) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SortColumnsChanging += SfDataGrid1_SortColumnsChanging;

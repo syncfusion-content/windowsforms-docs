@@ -283,7 +283,7 @@ Download sample from below location,
 ##Events
 
 ### Cancel expanding of groups
-The expanding of the groups can be cancelled by setting `Cancel` property of the [GroupChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GroupChangingEventArgs.html# "") to `true` in the [GroupExpanding](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupExpanding_EV.html# "") event.
+The expanding of the groups can be canceled by setting `Cancel` property of the [GroupChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GroupChangingEventArgs.html# "") to `true` in the [GroupExpanding](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupExpanding_EV.html# "") event.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.GroupExpanding += SfDataGrid1_GroupExpanding;
@@ -297,7 +297,7 @@ private void SfDataGrid1_GroupExpanding(object sender, GroupChangingEventArgs e)
 {% endtabs %}
 
 ### Cancel collapsing of groups
-The collapsing of the groups can be cancelled by setting the `Cancel` property of the [GroupChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GroupChangingEventArgs.html# "") to `true` in the [GroupCollapsing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupCollapsing_EV.html# "") event.
+The collapsing of the groups can be canceled by setting the `Cancel` property of the [GroupChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GroupChangingEventArgs.html# "") to `true` in the [GroupCollapsing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupCollapsing_EV.html# "") event.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.GroupCollapsing += SfDataGrid1_GroupCollapsing;

@@ -215,7 +215,7 @@ void sfDataGrid_QueryUnboundColumnInfo(object sender, QueryUnboundColumnInfoArgs
 ## Editing unbound column
 
 ### Cancel the editing for unbound column cell
-The editing of unbound column cell can cancelled by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event.
+The editing of unbound column cell can canceled by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.CurrentCellBeginEdit += dataGrid_CurrentCellBeginEdit;

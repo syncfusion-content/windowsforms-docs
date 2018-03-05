@@ -67,7 +67,7 @@ this.sfDataGrid.SearchController.Search("SEVES");
 ![](Search_images/Search_img5.png)
 
 ## Search only In Selected Columns
-By default the searching is applied for all the columns in the SfDataGrid. This can be changed to search only in the specified columns by using the [SeachColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColumns.html) collection. The column names added to the SearchColumns list is only consider for the search operations.
+By default the searching is applied for all the columns in the SfDataGrid. This can be changed to search only in the specified columns by using the [SearchColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColumns.html) collection. The column names added to the SearchColumns list is only consider for the search operations.
 
 {% tabs %}
 {% highlight c# %}
