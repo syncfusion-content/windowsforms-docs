@@ -9,11 +9,11 @@ documentation: ug
 
 # Globalization
 
-`SfCalendar` control provides globalization support that helps to designing and developing a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, you should determine which cultures your application will support. 
+The `SfCalendar` control provides globalization support to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, determine the cultures that your application supports.
 
 ## Change culture
 
-The culture information can be applied to the calendar using the `Culture` property. The following code example illustrates how to change the culture for calendar.
+The culture information can be applied to the calendar by using the `Culture` property. The following code example illustrates how to change the culture for the calendar:
 
 {% tabs %}
 
@@ -39,15 +39,15 @@ Me.sfCalendar.Culture = New CultureInfo("he-IL")
 
 ## Localization
 
-`SfCalendar` control allows to localize the static text used in calendar footer such as today button and none button contents based on application requirement. The following steps are used to override the default resource files from the application resource files and change the static text,
+The `SfCalendar` control allows you to localize the static text used in the calendar footer such as today button and none button contents based on application requirement. The following steps are used to override the default resource files from the application resource files and change the static text:
 
-* **Step 1**: Add the Resource folder to the application.                                                         
+* **Step 1**: Add the resource folder to the application.                                                         
 
-* **Step 2**: Add the fallback resource file with the assembly name of the control.
+* **Step 2**: Add the fallback resource file with assembly name of the control.
 
 ![](globalization-images/resource.png)
 
-* **Step 3**: Add the required text in the `NoneButtonText` and `TodayButtonText`. 
+* **Step 3**: Add the required text to the `NoneButtonText` and `TodayButtonText`.
 
 ![](globalization-images/resxfile.png)
 
