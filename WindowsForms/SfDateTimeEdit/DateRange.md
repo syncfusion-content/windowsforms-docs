@@ -7,29 +7,29 @@ control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Date Range
+# Date range
 
-Prevent user from setting a date and time within a specified range can be achieved by `MinDateTime` and `MaxDateTime` property of SfDateTimeEdit.
+Prevents user from setting a date and time within a specified range can be achieved by using `MinDateTime` and `MaxDateTime` properties of the SfDateTimeEdit.
 
-## Change the Value
+## Change the value
 
-Date and time of SfDateTimeEdit can be changed by `Value` property. Value can be set as null when `AllowNull` is true. Default mode of DateTimeEditing only allows to change the selected value as null. Mask mode will not allow to change the value as null. Value can also be edited by selecting  `DateTimeField` and edit the value. Value will be validated when control lost its focus or press enter key.
+The date and time of the SfDateTimeEdit can be changed by the `Value` property. The value can be set to null when the `AllowNull` is true. The default mode of the DateTimeEditing only allows you to change the selected value to null; the mask mode will not allow you to change the value to null. The value can also be edited by selecting the `DateTimeField` and editing the value. This value will be validated when the control lost its focus or the enter key is pressed.
 
-`ValueChanged` event will be invoke when change on `Value` property of SfDateTimeEdit. If any custom actions need to do while value changed, that can be done in ValueChanged event.
+The `ValueChanged` event will be invoked when the change is occurred in the `Value` property of the SfDateTimeEdit. If you need to do any custom actions while value changed, that can be done at the ValueChanged event.
 
-### Change Value by DateTimeText
+### Change value by DateTimeText
 
-Value of SfDateTimeEdit can also be changed by `DateTimeText`. DateTimeText should be provided in the same pattern as `DateTimePattern`.
+The value of the SfDateTimeEdit can also be changed by the `DateTimeText`. The DateTimeText should be provided in the same pattern as `DateTimePattern`.
 
 ## Minimum DateTime
 
-`MinDateTime` can help to restrict the DateTime value set lesser than specific DateTime Value. If the `Value` of SfDateTimeEdit is less than `MinDateTime`, then the Value property reset to MinDateTime. `MinDateTime` should be lesser than `MaxDateTime` of SfDateTimeEdit. When the MinDateTime is set, if the new `MinDateTime` value is greater than the `MaxDateTime`, then the MaxDateTime reset to the MinDateTime.
+The `MinDateTime` helps you to restrict the DateTime value which is lesser than the specific DateTime value. If the `Value` of SfDateTimeEdit is less than `MinDateTime`, then the value property will be reset to MinDateTime. The `MinDateTime` should be lesser than the `MaxDateTime` of the SfDateTimeEdit. When the MinDateTime is set, if the new `MinDateTime` value is greater than the `MaxDateTime`, then the MaxDateTime will be reset to the MinDateTime.
 
 ## Maximum DateTime
 
-`MaxDateTime` can help to restrict the DateTime value set greater than specific DateTime Value. If the `Value` of SfDateTimeEdit is greater than `MaxDateTime`, then the Value property reset to MaxDateTime. `MaxDateTime` should be greater than `MinDateTime` of SfDateTimeEdit. When the MaxDateTime is set, if the `MinDateTime` property is greater than the new `MaxDateTime`, then the MinDateTime reset to the MaxDateTime. 
+The `MaxDateTime` helps you to restrict the DateTime value that is set greater than the specific DateTime value. If the `Value` of SfDateTimeEdit is greater than `MaxDateTime`, then the value property will be reset to MaxDateTime. The `MaxDateTime` should be greater than `MinDateTime` of the SfDateTimeEdit. When the MaxDateTime is set, if the `MinDateTime` property is greater than the new `MaxDateTime`, then the MinDateTime will be reset to the MaxDateTime.
 
-Sometimes, the value needs to be restricted in between some particular date range. Let's Consider a project for hotel reservation system. The “In DateTime” has to be lesser than the “Out DateTime” and vice versa. So “In DateTime” has to be set as minimum DateTime and “Out DateTime” has to be set as maximum DateTime in the `SfDateTimeEdit` control.
+Sometimes, the value should be restricted in between some particular date range. For example, consider a project for the hotel reservation system. The “In DateTime” has to be lesser than the “Out DateTime” and vice versa. So “In DateTime” has to be set as minimum DateTime and “Out DateTime” has to be set as maximum DateTime in the `SfDateTimeEdit` control.
 
 {% tabs %}
 
@@ -65,9 +65,9 @@ dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 22)
 
 ![](daterange-images/minmax.png)
 
-## Detect the Value change
+## Detect the value change
 
-`Value` property is used to set the current selected DateTime of `SfDateTimeEdit`. The value change can be detected by handling the `ValueChanged` event.
+The `Value` property is used to set the current selected DateTime of the `SfDateTimeEdit`. The value change can be detected by handling the `ValueChanged` event.
 
 {% tabs %}
 

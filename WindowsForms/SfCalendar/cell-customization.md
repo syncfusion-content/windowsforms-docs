@@ -270,9 +270,9 @@ This support is used to highlight or customize dates to mention some special dat
 
 * IsSpecialDate - To indicate whether the date of cell is special date in calendar
 
-* IsTrailingDate - To indicate whether the date of cell is special date in calendar
+* IsTrailingDate - To indicate whether the date of cell is Trailing date for current month.
 
-* IsWeekNumber - To indicate whether the date of cell is trailing date for current month.
+* IsWeekNumber - To indicate whether the value of cell is week number in SfCalendar.
 
 * VerticalAlignment - To change the vertical alignment of the date text of the cell in calendar
 

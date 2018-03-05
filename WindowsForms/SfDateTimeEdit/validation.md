@@ -9,20 +9,20 @@ documentation: ug
 
 # Validation
 
-`SfDateTimeEdit` control validate the DateTime Value on pressing the Enter key, control lost its focus or pick the date from the DropDown Calendar. 
+The `SfDateTimeEdit` control validates the DateTime value when the enter key is pressed, so that the control losts its focus or pick the date from the drop-down calendar.
 
 
 ## Validation reset option
 
-`ValidationOption` that helps to decides how the value will be changed when validation failed. If the validation failed, Value reset with previous date time `Value` or `MinValue` or `MaxValue`. If the validating event is not handled then the validation will be done based on the `ValidationOption` of SfDateTimeEdit.
+The `ValidationOption` that helps you to decide how the value will be changed when the validation is failed. If the validation is failed, the value will reset with previous date-time `Value` or `MinValue` or `MaxValue`. If the validating event is not handled then the validation will be done based on the `ValidationOption` of the SfDateTimeEdit.
 
-Validation results based on the input provided to `Value` or `DateTimeText` of SfDateTimeEdit. If the provided input is invalid datetime format or value met minimum or maximum value constraint, validation results will be fail. 
+The validation results can be obtained based on the input provided to `Value` or `DateTimeText` of the SfDateTimeEdit. If the provided input has invalid date-time format or value that meets minimum or maximum value constraint, then the validation results will be failed.
 
-* **Reset** - The control maintain the previous Value before validating. If the validation failed then the value will be reset with that previous Value.
+* **Reset**: A control that maintains the previous value before validating. If the validation is failed then the value will be reset with the previous value.
 
-* **MinValue** - On Validation failed the value will be reset with `MinValue`.
+* **MinValue**: Resets value with the `MinValue`, when the validation is failed.
 
-* **MaxValue** - On Validation failed the value will be reset with `MaxValue`.
+* **MaxValue**: Resets value with the `MaxValue`, when the validation is failed.
 
 {% tabs %}
 
@@ -59,17 +59,17 @@ dateTimeEdit.ValidationOption = ValidationResetOption.MinValue
 
 {% endtabs %} 
 
-The given value can be treated as a date/time value. It can be validated based on the DateTime format with culture. There is an error indicating image will be shown, when the validation test gets failed. 
+The given value can be treated as a date/time value. It can be validated based on the DateTime format with culture. The following error indicating image will be shown, when the validation test is failed.
 
 ![](validation-images/errorsymbol.png)
 
-## Handle Validation
+## Handle validation
 
-`ValidatingEventArgs` provides data for the `Validating` event of the SfDateTimeEdit control. By handling the `Validating` event, it is possible to find the cause of the validation failed with the error message in the `ValidatingEventArgs`.
+The `ValidatingEventArgs` provides data for the `Validating` event of the SfDateTimeEdit control. By handling the `Validating` event, it is possible to find the cause for validation failure with error message in the `ValidatingEventArgs`.
 
-* **IsError** - To indicate whether the entered date and time is valid or in-valid.
+* **IsError**: Indicates whether the entered date and time is valid or in-valid.
 
-* **ErrorMessage** - Update the cause of the Error. The error may be caused due to minimum or maximum value constraint met or incorrect date time format.
+* **ErrorMessage**: Updates the cause of the error. The error may be caused due to minimum or maximum value constraint met or incorrect date time format.
 
 {% tabs %}
 
