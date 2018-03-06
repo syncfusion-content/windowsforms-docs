@@ -9,19 +9,19 @@ documentation: ug
 
 # Selection
 
-SfCalendar allows to select one or more dates. Selected date in calendar can be changed by mouse, keyboard and touch interaction.
+The SfCalendar allows you to select one or more dates. The selected date in the calendar can be changed by the mouse, keyboard, and touch interaction.
 
 ## Change selection
 
-`SfCalendar` control allows to change the selection by click on specific date. 
+The `SfCalendar` control allows you to change the selection by clicking the specific date. 
 
 ### Change selection through keyboard
 
-Selected date of `SfCalendar` control can be changed by keyboard. `Up/Down` and `Left/Right` arrow keys can helps to change the selection according to the key board interaction. 
+The selected date of the `SfCalendar` control can be changed by the keyboard. `Up/Down` and `Left/Right` arrow keys help you to change the selection according to the key board interaction. 
 
 ### Change selection programmatically
 
-Selection of the calendar control can be changed through programmatically by set the `SelectedDate` property. `GoToDate` method used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. It returns `false`, If the date value is not fall between minimum and maximum range or blackout dates contains the date. The following code example illustrates the same.
+The selection of the calendar control can be changed programmatically by setting the `SelectedDate` property. The `GoToDate` method is used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. If the date value is not fall between minimum and maximum ranges or blackout dates contains the date, it returns `false`. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ End If
 
 ## Multiple selection
 
-`SfCalendar` control allows to select multiple dates when `AllowMultipleSelection` property is true. The following code example illustrates how to configure calendar control to allow multiple date selection.
+The `SfCalendar` control allows you to select multiple dates when the `AllowMultipleSelection` property is true. The following code example illustrates how to configure the calendar control to allow multiple date selection:
 
 {% tabs %}
 
@@ -77,30 +77,30 @@ Me.SfCalendar1.AllowMultipleSelection = true
 
 ### Multiple selection through mouse
 
-`SfCalendar` allows to select the multiple dates through mouse interaction by selecting the separate cells while pressing `Ctrl` key. 
+The `SfCalendar` allows you to select multiple dates through the mouse interaction by selecting separate cells while pressing the `Ctrl`.
 
-Specific range of dates can be selected by pressing the `Shift`. Select a date to set the start date of the range selection and select the end date when pressing the `Shift` Key. 
+The specific range of dates can be selected by pressing the `Shift`. Select a date to set the start date of the range selection and select an end date when pressing the `Shift`.
 
 ### Multiple selection through keyboard 
 
-`SfCalendar` allows to select the multiple dates through keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT` and `Shift + HOME/END` arrow keys.
+The `SfCalendar` allows you to select multiple dates through the keyboard by selecting the cells while pressing `Shift + UP/DOWN/LEFT/RIGHT` and `Shift + HOME/END` arrow keys.
 
-* Shift + UP -  It selects the previous week dates from selected date.
+* Shift + UP: Selects previous week dates from the selected date.
 
-* Shift + DOWN -  It selects the next week dates from selected date.
+* Shift + DOWN: Selects next week dates from the selected date.
 
-* Shift + RIGHT -  It selects the next date from selected date.
+* Shift + RIGHT: Selects next date from the selected date.
 
-* Shift + LEFT -  It selects the previous date from selected date.
+* Shift + LEFT: Selects previous date from the selected date.
 
-*  Shift + HOME - It selects the date range from first day of month to current selected date.
+*  Shift + HOME: Selects the date range from first day of month to the current selected date.
 
-*  Shift + END - It selects the date range from current selected date to last date of month.
+*  Shift + END: Selects the date range from current selected date to the last date of a month.
 
 
 ### Multiple selection programmatically
 
-Multiple dates in the calendar control can be selected through programmatically by adding dates to the `SelectedDates` collection. If the date which passed for adding with selected dates is not fall within minimum or maximum range or contains in blackout dates, it will not be added to selected dates. The following code example illustrates how to add the selected dates programmatically. In the below code example blackout dates contains the first date which is added to selected dates. So except that firstly added date, other dates ar added to selected dates.
+Multiple dates in the calendar control can be selected programmatically by adding dates to the `SelectedDates` collection. If the date which passed for adding with selected dates is not fall within minimum or maximum ranges or present in blackout dates, it will not be added to selected dates. The following code example illustrates how to add the selected dates programmatically. In the below code example, blackout dates contain the first date that is added to selected dates. So, except that first added date, other dates are added to selected dates.
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 18));
 
 ## Disable selection
 
-`BlackoutDates` refers the disabled dates that restrict the user from selecting it. List of dates can be provided to set the `BlackoutDates` for SfCalendar.  The following code example illustrates how to set the `BlackoutDates`.
+The `BlackoutDates` refers the disabled dates that restrict the user from selecting it. List of dates can be provided to set the `BlackoutDates` for the SfCalendar. The following code example illustrates how to set the `BlackoutDates`:
 
 {% tabs %}
 
@@ -170,15 +170,15 @@ this.sfCalendar.BlackoutDates = time;
 
 ![](getting-started-images/blackoutdates.png)
 
-## Minimum DateTime
+## Minimum datetime
 
-`MinDate` can help to restrict the `SelectedDate` of calendar falls lesser than specific date. If the `SelectedDate` of calendar is less than `MinDate`, then the `SelectedDate` property reset to `MinDate`. When the `MinDate` is set, if the new `MinDate` value is greater than the `MaxDate`, then the `MaxDate` reset to the `MinDate`. 
+`MinDate` helps you to restrict the `SelectedDate` of calendar falling lesser than the specific date. If the `SelectedDate` of calendar is less than the `MinDate`, then the `SelectedDate` property will be reset to `MinDate`. If the new `MinDate` value is greater than the `MaxDate`, then the `MaxDate` will be reset to the `MinDate`.
 
-## Maximum DateTime
+## Maximum datetime
 
-`MaxDate` can help to restrict the `SelectedDate` of calendar falls greater than specific date. If the `SelectedDate` of calendar is greater than `MaxDate`, then the `SelectedDate` property reset to `MaxDate`. When the `MaxDate` is set, if the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` reset to the `MaxDate`. 
+`MaxDate` helps you to restrict the `SelectedDate` of calendar falling greater than the specific date. If the `SelectedDate` of calendar is greater than `MaxDate`, then the `SelectedDate` property will be reset to `MaxDate`. When the `MaxDate` is set, if the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` will be reset to the `MaxDate`. 
 
-Sometimes, the value needs to be restricted between some date range. In that scenario `MinDate` and `MaxDate` helps to select only the dates between these range and dates other than this range will not be displayed calendar.
+Sometimes, the value should be restricted between some date ranges. In that scenario, the `MinDate` and `MaxDate` help you to select only the dates between these range, and dates other than this range will not be displayed in the calendar.
 
 {% tabs %}
 
@@ -214,22 +214,22 @@ calendar.MaxDate = new DateTime(2018, 1, 25)
 
 ![](appearance-images/minmax.png)
 
-## Handle Selection change
+## Handle selection change
  
- Restrict to set selected date can also be handled on-demand. While changing selection, based on the new selected date user can restrict selection change by handle the `SelectionChanging` event. 
+ Restricts setting the selected date to handle on-demand. While changing the selection, user can restrict the selection change based on the new selected date by handling the `SelectionChanging` event.
  
- `SelectionChanging` event invoked before the selected date changed in Calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event.
+ The `SelectionChanging` event is invoked before the selected date is changed in the calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event:
 
-* OldValue - Old SelectedDate of SfCalendar.
-* NewValue - New SelectedDate of SfCalendar.
+* OldValue: Old selected date of the SfCalendar.
+* NewValue: New selected date of the SfCalendar.
 
-`SelectionChanged` event invoked after the selected date changed in Calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event.
+The `SelectionChanged` event is invoked after the selected date is changed in the calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event:
 
-* OldValue - Old selected date of SfCalendar.
-* NewValue - New selected date of SfCalendar.
-* IsMultipleDatesSelected - Indicates whether multiples dates are selected in calendar or not. 
+* OldValue: Old selected date of the SfCalendar.
+* NewValue: New selected date of the SfCalendar.
+* IsMultipleDatesSelected: Indicates whether multiples dates are selected in the calendar or not.
 
-The following code example illustrates how to restrict selection change on-demand.
+The following code example illustrates how to restrict the selection change on-demand:
 
 {% tabs %}
 
@@ -298,11 +298,11 @@ End Sub
 
 ## Clear Selection
 
-Selected dates of the calendar control will be cleared when select the single date. Calendar control also provides support to remove single date from the selected dates by selecting the already selected date while press the `CTRL` key.
+Selected dates of the calendar control will be cleared when the single date is selected. The calendar control also provides support to remove single date from the selected dates by selecting the already selected date while pressing the `CTRL` key.
 
 ### Clear selected dates programmatically
 
-Selected dates of the calendar control can be removed from selection by programmatically. SfCalendar provides `ClearSelection` method that helps to remove already selected dates and also provide options to select the new date. The following code example illustrates how to remove the selected dates and select new date.
+Selected dates of the calendar control can be removed from the selection by programmatically. The SfCalendar provides `ClearSelection` method that helps to remove already selected dates and also provides options to select the new date. The following code example illustrates how to remove the selected dates and select new date:
 
 {% tabs %}
 

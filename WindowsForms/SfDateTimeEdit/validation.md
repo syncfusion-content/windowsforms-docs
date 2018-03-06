@@ -9,7 +9,7 @@ documentation: ug
 
 # Validation
 
-The `SfDateTimeEdit` control validates the DateTime value when the enter key is pressed, so that the control losts its focus or pick the date from the drop-down calendar.
+The `SfDateTimeEdit` control validates the DateTime value when the enter key is pressed, so that the control lost its focus or the date is picked from the drop-down calendar.
 
 
 ## Validation reset option
