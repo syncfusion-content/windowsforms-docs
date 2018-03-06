@@ -93,7 +93,7 @@ this.sfDataGrid1.Columns["OrderID"].AllowFiltering = true;
 
 N>`GridColumn.AllowFiltering` has higher priority than `SfDataGrid.AllowFiltering` property.
 
-### Build-in UI Views
+### Built-in UI Views
 The SfDataGrid provides the following types of Filter popup modes, 
 
 * Checkbox Filter - Provides excel like filter interface with list of check box’s.
@@ -229,21 +229,20 @@ Below are the built-in filter types supported.
 
 <table>
 <tr>
-<td>
-{{'**Text Filter**'| markdownify }}
-</td>
-<td>
-{{'**Number Filter**'| markdownify }}
-</td>
-<td>
-{{'**Date Filter**'| markdownify }}
-</td>
+<th>
+Text Filter
+</th>
+<th>
+Number Filter
+</th>
+<th>
+Date Filter
+</th>
 </tr>
 <tr>
 <td>
 When the string value is bounded to the 
 GridColumn or the items source is dynamic, then `TextFilter` are loaded in advanced filter.
-
 </td>
 <td>
 When integer, double, short, decimal, byte or long are bound to the GridColumn then `Number Filters` are loaded in advanced filter.
@@ -254,59 +253,62 @@ When the DateTime type value is bound to the GridColumn, then `Date Filter` is l
 </tr>
 <tr>
 <td>
-![](Filtering_images/Filtering_img11.png)
-
-
+<img src="Filtering_images/Filtering_img11.png"/>
 </td>
 <td>
-![](Filtering_images/Filtering_img12.png)
-
+<img src="Filtering_images/Filtering_img12.png"/>
 </td>
 <td>
-![](Filtering_images/Filtering_img13.png)
-
+<img src="Filtering_images/Filtering_img13.png"/>
 </td>
 </tr>
 <tr>
 <td>
-{{'**Filter Menu Options**'| markdownify }}
-1. Equals
-2. Not Equal
-3. Begins With
-4. Ends With
-5. Contains
-6. Empty
-7. Not Empty
-8. Null
-9.	Not Null
+<b>Filter Menu Options</b>
+<ol>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Begins With</li>
+<li>Ends With</li>
+<li>Contains</li>
+<li>Empty</li>
+<li>Not Empty</li>
+<li>Null</li>
+<li>Not Null</li>
+</ol>
 </td>
 <td>
-{{'**Filter Menu Options**'| markdownify }}
-1. Equals
-2. Not Equal
-3. Null
-4. Not Null
-5. Less Than
-6. Less Than or Equal
-7. Greater Than
-8.	Greater Than or Equal
+<b>Filter Menu Options</b>
+<ol>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+<li>Less Than</li>
+<li>Less Than or Equal</li>
+<li>Greater Than</li>
+<li>Greater Than or Equal</li>
+</ol>
 </td>
 <td>
-{{'**Filter Menu Options**'| markdownify }}
-1. Equals
-2. Not Equal
-3. Before
-4. Before Or Equal
-5. After
-6. After Or Equal
-7. Null
-8. Not Null
+<b>Filter Menu Options</b>
+<ol>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Before</li>
+<li>Before Or Equal</li>
+<li>After</li>
+<li>After Or Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+</ol>
 </td>
 </tr>
 </table>
 
-N> 1. Null and Not Null options are available only when `AllowBlankFilters` is set to `true`.
-   2. If the column is `GridUnboundColumn`, then Text Filter will be loaded.
+N> 
+1. Null and Not Null options are available only when `AllowBlankFilters` is set to `true`.
+2. If the column is `GridUnboundColumn`, then Text Filter will be loaded.
 
 ### Instant Filtering
 By default the advanced filtering will be applied while clicking the OK button after specifying the suitable filter value. This can be changed to update filtering immediately on updating the filter popup by setting the [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) property to `true` for the column.
