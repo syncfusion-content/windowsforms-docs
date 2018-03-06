@@ -8,8 +8,6 @@ documentation: ug
 ---
 
 # Data Binding
-
-## Overview
 SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property.
 
 {% tabs %}
@@ -249,7 +247,7 @@ The following events are associated with `View`.
 [PropertyName](https://msdn.microsoft.com/en-us/library/system.componentmodel.propertychangedeventargs.propertyname) – It denotes the PropertyName of the changed value.
 
 #### SourceCollectionChanged
-[SourceCollectionChanged ](SourceCollectionChanged# "")event is raised when you make changes in source collection for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://msdn.microsoft.com/en-us/library/system.collections.specialized.notifycollectionchangedeventargs(v=vs.110).aspx) as object.
+[SourceCollectionChanged ](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html)event is raised when you make changes in source collection for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://msdn.microsoft.com/en-us/library/system.collections.specialized.notifycollectionchangedeventargs(v=vs.110).aspx) as object.
 `NotifyCollectionChangedEventArgs` has below properties,
 
 [Action](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)&rd=true) - It contains the current action. (i.e.) Add, Remove, Move, Replace and Reset.
@@ -289,8 +287,8 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </td>
 </tr>
 </table>
-**NOTE**
-`View` has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
+
+N>`View` has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
 
 ## Binding data from ADO .NET Entity Framework
 SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database.

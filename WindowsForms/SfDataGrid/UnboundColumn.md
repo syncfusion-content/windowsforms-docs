@@ -16,7 +16,7 @@ this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Total Price"
 
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img1.png)
+![](UnboundColumn_images/UnboundColumn_img1.png)
 
 N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -176,7 +176,7 @@ unboundColumn.Expression = "UnitPrice * Quantity < 5000" + (char)135 + "UnitPric
 this.sfDataGrid.Columns.Add(unboundColumn);
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img2.png)
+![](UnboundColumn_images/UnboundColumn_img2.png)
 
 ### Using Format
 Format the values of other columns and display the formatted value in unbound column using `Format` property.
@@ -185,7 +185,7 @@ Format the values of other columns and display the formatted value in unbound co
 unboundColumn.Format = "{UnitPrice}% for {OrderID}";
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img3.png)
+![](UnboundColumn_images/UnboundColumn_img3.png)
 
 ### Using QueryUnboundColumnInfo event
 The data for unbound column can populated by handling the [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryUnboundColumnInfo_EV.html) event.[QueryUnboundColumnInfoArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html) of the `QueryUnboundColumnInfo` event provides the information about the cell triggered this event. 
@@ -210,7 +210,7 @@ void sfDataGrid_QueryUnboundColumnInfo(object sender, QueryUnboundColumnInfoArgs
 
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img4.png)
+![](UnboundColumn_images/UnboundColumn_img4.png)
 
 ## Editing unbound column
 
@@ -267,7 +267,7 @@ unboundColumn.Expression = "UnitPrice * Quantity";
 this.sfDataGrid.Columns.Add(unboundColumn);
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img5.png)
+![](UnboundColumn_images/UnboundColumn_img5.png)
 
 ## Customize the unbound column behavior
 
@@ -300,5 +300,5 @@ public class CustomUnboundCellRenderer : GridUnboundCellRenderer
 }
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img6.png)
+![](UnboundColumn_images/UnboundColumn_img6.png)
 
