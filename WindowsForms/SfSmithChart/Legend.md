@@ -10,7 +10,7 @@ documentation: ug
 
 Legend contains a list of chart series that appears in Smith chart. It can be defined by using the following code example.
 
-To enable the legend for the Smith chart, set the [Visible](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_Visible) property of legend to true.
+To enable the legend for the Smith chart, set the [Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~Visible.html) property of legend to true.
 
 {% tabs %}
 
@@ -28,7 +28,7 @@ chart.Legend.Visible = True
 
 {% endtabs %}
 
-Add name to the [LegendText](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_LegendText) property of series, which in turn mapped to the legend.
+Add name to the [LegendText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~LegendText.html) property of series, which in turn mapped to the legend.
 
 {% tabs %}
 
@@ -50,9 +50,9 @@ series.LegendText = "Transmission1"
 
 ## Positioning the legend
 
-Legends can be docked at the left, right, and top or bottom around the chart area by using the [DockPosition](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_DockPosition) property.
+Legends can be docked at the left, right, and top or bottom around the chart area by using the [DockPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~DockPosition.html) property.
 
-By default, the Smith chart’s legend is docked at the top of the chart. To display the legend at the bottom, set the [DockPosition](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_DockPosition) property to Bottom as shown in the following code snippet.
+By default, the Smith chart’s legend is docked at the top of the chart. To display the legend at the bottom, set the [DockPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~DockPosition.html) property to Bottom as shown in the following code snippet.
 
 ![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/Dockbottom.png](Legend_images/Legend_img3.PNG)
 
@@ -61,7 +61,7 @@ By default, the Smith chart’s legend is docked at the top of the chart. To dis
 
 Represents the symbol associated with each legend item. By default, the legend icon is circle.
 
-Legend icon can be customized by using the [IconType](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_IconType) property in Smith chart’s legend as shown in the following code snippet.
+Legend icon can be customized by using the [IconType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~IconType.html) property in Smith chart’s legend as shown in the following code snippet.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ sfSmithChart1.Legend.IconType = SmithChartLegendIconType.Rectangle
 
 ## Legend alignment
 
-The alignment of a legend can be changed to near, far, or center using the [Alignment](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_Alignment) property.
+The alignment of a legend can be changed to near, far, or center using the [Alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~Alignment.html) property.
 
 By default, the legend is aligned to the center.
 
@@ -93,7 +93,7 @@ By default, the legend is aligned to the center.
 
 ## Customizing legend
 
-Legend icon and text can be customized using the [IconType](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_IconType), [IconHeight](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_IconHeight), [IconWidth](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_IconWidth) and [ForeColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.LegendStyle.html#Syncfusion_WinForms_SmithChart_LegendStyle_ForeColor) properties.
+Legend icon and text can be customized using the [IconType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~IconType.html), [IconHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~IconHeight.html), [IconWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~IconWidth.html) and [ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.LegendStyle~ForeColor.html) properties.
 
 The following code example illustrates the customization of legend icon and text.
 
@@ -130,7 +130,7 @@ sfSmithChart1.Legend.Style.ForeColor = Color.BlueViolet
 
 ## Toggle series visibility
 
-Visibility of the series can be controlled by clicking the legend item. This can be done using the [ToggleSeriesVisible](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_ToggleSeriesVisible) property.
+Visibility of the series can be controlled by clicking the legend item. This can be done using the [ToggleSeriesVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~ToggleSeriesVisible.html) property.
 
 {% tabs %}
 
@@ -163,7 +163,7 @@ In the  following screenshot, around 7 series are added, and some of the series 
 
 ### Wrap items
 
-Legend items can also be wrapped one by one as shown in the following screenshot by setting the [WrapItems](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartLegend.html#Syncfusion_WinForms_SmithChart_ChartLegend_WrapItemsS) property to true. Nearly, 20% of chart area is used for legend. If the items go beyond the view, the vertical scroll bar will be enabled. Based on the dock position, the vertical or horizontal scroll bar will be enabled.
+Legend items can also be wrapped one by one as shown in the following screenshot by setting the [WrapItems](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartLegend~WrapItems.html) property to true. Nearly, 20% of chart area is used for legend. If the items go beyond the view, the vertical scroll bar will be enabled. Based on the dock position, the vertical or horizontal scroll bar will be enabled.
 
 ![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/LegendWrap.png](Legend_images/Legend_img2.PNG)
 
