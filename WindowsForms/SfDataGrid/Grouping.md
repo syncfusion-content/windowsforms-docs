@@ -26,7 +26,9 @@ this.sfDataGrid1.Columns["OrderID"].AllowGrouping = true;
 this.sfDataGrid1.Columns["CustomerID"].AllowGrouping = true;
 {% endhighlight %}
 {% endtabs %}
+
 N> [GridColumn.AllowGrouping](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowGrouping.html#) takes higher priority than [SfDataGrid.AllowGrouping.](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowGrouping.html#)
+
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img1.png)
 
 The data can be grouped by an unlimited number of columns. To group more than one columns, drag-and-drop the desired columns in to `GroupDropArea`.
@@ -36,7 +38,9 @@ The data can be grouped by an unlimited number of columns. To group more than on
 Each group is identified by its CaptionSummaryRows and it is used to organize the data into a hierarchical tree structure based on identical values of that column. The underlying records in each caption summary row can be expanded or collapsed by clicking its group caption.
 Each `CaptionSummaryRow` carries information about a particular group like group name, number of items (records) in the group, etc. Refer the `Caption Summaries` section, for more information about `CaptionSummaryRow`.
 
+
 ##Programmatic Grouping
+
 ### Adding groups
 
 SfDataGrid allows to group the data programmatically by adding or removing [GroupColumnDescription](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupColumnDescription.html# "") to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupColumnDescriptions.html# "") collection.
@@ -280,7 +284,6 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
 Download sample from below location,
 **Sample** - [Custom Grouping](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Grouping640245417.zip#)
 
-##Events
 
 ### Cancel expanding of groups
 The expanding of the groups can be canceled by setting `Cancel` property of the [GroupChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GroupChangingEventArgs.html# "") to `true` in the [GroupExpanding](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupExpanding_EV.html# "") event.
