@@ -171,7 +171,7 @@ SfDataGrid will scrolls rows and columns automatically while performing the drag
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;DownArrow&lt;/kbd&gt;
+<kbd>DownArrow</kbd>
 </td>
 <td>
 Moves CurrentCell directly below the active current cell. If the CurrentCell is in last row, pressing Down arrow does nothing.
@@ -179,7 +179,7 @@ Moves CurrentCell directly below the active current cell. If the CurrentCell is 
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;UpArrow&lt;/kbd&gt;        
+<kbd>UpArrow</kbd>        
 </td>
 <td>
 Moves the CurrentCell directly above the active current cell. If the CurrentCell is in first row, pressing Up arrow does nothing.
@@ -187,7 +187,7 @@ Moves the CurrentCell directly above the active current cell. If the CurrentCell
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;LeftArrow&lt;/kbd&gt;        
+<kbd>LeftArrow</kbd>        
 </td>
 <td>
 Moves the current cell previous to the active current cell. If the CurrentCell is in first cell, pressing Left arrow does nothing. If the focused row is group header, the group will be collapsed when it is in expanded state.
@@ -195,7 +195,7 @@ Moves the current cell previous to the active current cell. If the CurrentCell i
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;RightArrow&lt;/kbd&gt;
+<kbd>RightArrow</kbd>
 </td>
 <td>
 Moves the current cell to next to the active current cell. If the CurrentCell is in last cell, pressing Right arrow does nothing. If the focused row is group header, the group will be expanded when it is in collapsed state.
@@ -203,7 +203,7 @@ Moves the current cell to next to the active current cell. If the CurrentCell is
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Home&lt;/kbd&gt; / &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;LeftArrow&lt;/kbd&gt;        
+<kbd>Home</kbd> / <kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd>        
 </td>
 <td>
 Moves the current cell to the first cell of the current row.
@@ -211,7 +211,7 @@ Moves the current cell to the first cell of the current row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;End&lt;/kbd&gt; / &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;RightArrow&lt;/kbd&gt;
+<kbd>End</kbd> / <kbd>Ctrl</kbd> + <kbd>RightArrow</kbd>
 </td>
 <td>
 Moves the current cell to the last cell of the current row.
@@ -219,7 +219,7 @@ Moves the current cell to the last cell of the current row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;PageDown&lt;/kbd&gt;        
+<kbd>PageDown</kbd>        
 </td>
 <td>
 The SfDataGrid will be scrolled to next set of rows that are not displayed in view, including the row that are partially displayed and the current cell is set to last row.
@@ -227,7 +227,7 @@ The SfDataGrid will be scrolled to next set of rows that are not displayed in vi
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;PageUp&lt;/kbd&gt;        
+<kbd>PageUp</kbd>        
 </td>
 <td>
 The SfDataGrid will be scrolled to previous set of rows that are not displayed in view, including the row that are partially displayed and the current cell is set to the first row.
@@ -235,7 +235,7 @@ The SfDataGrid will be scrolled to previous set of rows that are not displayed i
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Tab&lt;/kbd&gt;
+<kbd>Tab</kbd>
 </td>
 <td>
 Moves the current cell to next to the active current cell. If the active current cell is the last cell of the current row, the focus will moved to first cell of the row next to the current row.If the active current cell is the last cell of the last row, the focus will be moved to next control in the tab order of the parent container.
@@ -243,7 +243,7 @@ Moves the current cell to next to the active current cell. If the active current
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Tab</kbd>
 </td>
 <td>
 Moves the current cell previous to the active current cell. If the active current cell is the first cell of the current row, the current cell will moved to last cell of the row previous to the current row.If the active current cell is the first cell of the first row, the focus will be moved to previous control in the tab order of the parent container.
@@ -251,7 +251,7 @@ Moves the current cell previous to the active current cell. If the active curren
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;DownArrow&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>DownArrow</kbd>
 </td>
 <td>
 Moves the current cell to the current column of the last row.
@@ -259,7 +259,7 @@ Moves the current cell to the current column of the last row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;UpArrow&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>UpArrow</kbd>
 </td>
 <td>
 Moves the current cell to the current column of the first row.
@@ -267,7 +267,7 @@ Moves the current cell to the current column of the first row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Home&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>Home</kbd>
 </td>
 <td>
 Moves the current cell to the first cell of the first row.
@@ -275,7 +275,7 @@ Moves the current cell to the first cell of the first row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;End&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>End</kbd>
 </td>
 <td>
 Moves the current cell to the last cell of the last row.
@@ -283,7 +283,7 @@ Moves the current cell to the last cell of the last row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Enter&lt;/kbd&gt;
+<kbd>Enter</kbd>
 </td>
 <td>
 If the active current cell is in edit mode, the changes will committed and moves the current cell to below the active current cell. If the active current cell is in last row, commits changes only and retains in the same cell.
@@ -291,7 +291,7 @@ If the active current cell is in edit mode, the changes will committed and moves
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Enter&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>Enter</kbd>
 </td>
 <td>
 Commits only the changes when the current cell in edit mode and retains the focus in same cell.
@@ -299,7 +299,7 @@ Commits only the changes when the current cell in edit mode and retains the focu
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;F2&lt;/kbd&gt;
+<kbd>F2</kbd>
 </td>
 <td>
 If the DataGrid.AllowEditing property is true and the GridColumn.AllowEditing property is true for the current column, the current cell enters into edit mode.
@@ -307,7 +307,7 @@ If the DataGrid.AllowEditing property is true and the GridColumn.AllowEditing pr
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Esc&lt;/kbd&gt;
+<kbd>Esc</kbd>
 </td>
 <td>
 If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the IEditableObject.
@@ -315,7 +315,7 @@ If the current cell is in edit mode, reverts the changes that had been done in t
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Delete&lt;/kbd&gt;        
+<kbd>Delete</kbd>        
 </td>
 <td>
 If the current cell is not in edit mode, the current row will be deleted.
@@ -323,7 +323,7 @@ If the current cell is not in edit mode, the current row will be deleted.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;A&lt;/kbd&gt;        
+<kbd>Ctrl</kbd> + <kbd>A</kbd>        
 </td>
 <td>
 All rows or cells will be selected.
@@ -343,82 +343,82 @@ When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;DownArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>DownArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;UpArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>UpArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;RightArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>RightArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;LeftArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>LeftArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Home&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Home</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;End&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>End</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;PageDown&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>PageDown</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;PageUp&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>PageUp</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;DownArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;UpArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;RightArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>RightArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;LeftArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Home&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Home</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;End&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>End</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;PageDown&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>PageDown</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;PageUp&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>PageUp</kbd>
 </td>
 </tr>
 </table>
