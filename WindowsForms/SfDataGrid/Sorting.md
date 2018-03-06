@@ -27,6 +27,7 @@ this.sfDataGrid1.Columns["CustomerID"].AllowSorting = false;
 
 N>The `GridColumn.AllowSorting` takes higher priority than `SfDataGrid.AllowSorting` property.
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
+
 ![](Sorting_images/Sorting_Image1.png)
 
 ### Adding sort columns
@@ -41,6 +42,7 @@ scd.SortDirection = ListSortDirection.Ascending;
 this.sfDataGrid1.SortColumnDescriptions.Add(scd);
 {% endhighlight %}
 {% endtabs %}
+
 ![](Sorting_images/Sorting_Image5.png)
 
 ### Removing sort columns
