@@ -81,6 +81,7 @@ this.sfDataGrid.SearchController.Search("2");
 
 ## Search Condition
 By default the searching will be performed based on the `Contains` condition. This can be changed by using the [SearchType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchType.html) property. The `SearchType` enumeration has the following conditions,
+
 * StartsWith – Used to find the text which starts with the SearchText.
 * EndsWith – Used to find the text which ends with the SearchText.
 * Contains – Used to find the text which contains the SearchText.

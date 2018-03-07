@@ -50,18 +50,18 @@ this.sfDataGrid1.Columns[1].FilterRowEditorType = "TextBox";
 There are following types of the default filter row editors available in the SfDataGrid,
 <table>
 <tr>
-<td>
+<th>
 FilterRowEditorType
-</td>
-<td>
+</th>
+<th>
 Editor Control
-</td>
-<td>
+</th>
+<th>
 Renderer
-</td>
-<td>
+</th>
+<th>
 Description
-</td>
+</th>
 </tr>
 <tr>
 <td>
@@ -136,18 +136,18 @@ this.sfDataGrid1.Columns[2].ShowFilterRowOptions = false;
 Below are the filter conditions supported by different filter row editors in SfDataGrid.
 <table>
 <tr>
-<td>
-{{'**Numeric Editor**'| markdownify }}
-</td>
-<td>
-{{'**TextBox Editor**'| markdownify }}
-</td>
-<td>
-{{'**DateTime Editor**'| markdownify }}
-</td>
-<td>
-{{'**CheckBox Editor**'| markdownify }}
-</td>
+<th>
+Numeric Editor
+</th>
+<th>
+TextBox Editor
+</th>
+<th>
+DateTime Editor
+</th>
+<th>
+CheckBox Editor
+</th>
 </tr>
 <tr>
 <td>
@@ -170,37 +170,43 @@ GridColumn , then CheckBoxEditor is loaded in FilterRowCell
 <tr>
 <td>
 The default filter condition is Equals, the below filter conditions are available in numeric filter.
-1. Equals
-2. Not Equal
-3. Null
-4. Not Null
-5. Less Than
-6. Less Than or Equal
-7. Greater Than
-8. Greater Than or Equal
+<ol>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+<li>Less Than</li>
+<li>Less Than or Equal</li>
+<li>Greater Than</li>
+<li>Greater Than or Equal</li>
+</ol>
 </td>
 <td>
 The default filter condition is Begins With, the below filter conditions are available in text filter.
-1. Equals
-2. Not Equal
-3. Null
-4. Not Null
-5. Begins With
-6. Ends With
-7. Contains
-8. Empty
-9. Not Empty
+<ol>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+<li>Begins With</li>
+<li>Ends With</li>
+<li>Contains</li>
+<li>Empty</li>
+<li>Not Empty</li>
+</ol>
 </td>
 <td>
 The default filter condition is Equals, the below filter conditions are available in date time filter.
-1. Equals
-2. Not Equal
-3. Null
-4. Not Null
-5. Before
-6. Before or Equal
-7. After
-8. After or Equal
+<oi>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+<li>Before</li>
+<li>Before or Equal</li>
+<li>After</li>
+<li>After or Equal</li>
+</oi>
 </td>
 <td>
 Always equals filter condition will be applied for filtering the CheckBox value.

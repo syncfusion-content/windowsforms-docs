@@ -15,7 +15,7 @@ this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() { Position = VerticalPositi
 
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img1.png)
+![](UnboundRow_images/UnboundRow_img1.png)
 
 ## Positioning unbound rows
 Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnboundRow.Position](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridUnboundRow~Position.html) and [GridUnboundRow.ShowBelowSummary](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridUnboundRow~ShowBelowSummary.html) properties.
@@ -97,7 +97,7 @@ this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() { Position = VerticalPositi
 {% endhighlight %}
 {% endtabs %}
 Below screen shot shows different unbound rows placed in all possible positions,
-![](images/UnboundRow_images/UnboundRow_img2.png)
+![](UnboundRow_images/UnboundRow_img2.png)
 
 ## Populating data for unbound rows
 The data for the unbound row can populated by handling [QueryUnboundRowInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryUnboundRowInfo_EV.html) event of SfDataGrid. This event occurs for each cell in unbound row whenever the row gets refreshed. [QueryUnboundRowInfoArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html) of the `QueryUnboundRowInfo` event provides information about the cell triggered this event.
@@ -132,7 +132,7 @@ void sfDataGrid_QueryUnboundRowInfo(object sender, QueryUnboundRowInfoArgs e)
 
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img3.png)
+![](UnboundRow_images/UnboundRow_img3.png)
 
 ## Refreshing the unbound rows at runtime
 The unbound rows can be add or remove using `UnboundRows` property which reflects in UI immediately. The `QueryUnboundRowInfo` event for the unbound row cells at runtime by invalidating the unbound row by calling [SfDataGrid.InValidateUnboundRow](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~InValidateUnboundRow.html) method.
@@ -185,7 +185,7 @@ sfDataGrid.Style.UnboundRowStyle.TextColor = Color.Red;
 
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img4.png)
+![](UnboundRow_images/UnboundRow_img4.png)
 
 ## Customizing the unbound row's behavior
 SfDataGrid allows to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell. Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
@@ -218,7 +218,7 @@ sfDataGrid.UnboundRowCellRenderers.Remove("UnboundRowCell");
 sfDataGrid.UnboundRowCellRenderers.Add("UnboundRowCell", new GridUnboundRowCellTextBoxRendererExt());
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img5.png)
+![](UnboundRow_images/UnboundRow_img5.png)
 
 ### Custom Renderer
 SfDataGrid allows to customize the unbound row cell by creating new renderer, deriving from `GridUnboundRowCellRenderer` and setting the `QueryUnboundRowInfoArgs.CellType` property.
@@ -407,7 +407,7 @@ void sfDataGrid_QueryUnboundRowInfo(object sender, QueryUnboundRowInfoArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img6.png)
+![](UnboundRow_images/UnboundRow_img6.png)
 
 ## Changing unbound row height
 The height of unbound row can changed by using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowHeight_EV.html) event,
@@ -426,7 +426,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img7.png)
+![](UnboundRow_images/UnboundRow_img7.png)
 
 ## Exporting unbound rows
 
