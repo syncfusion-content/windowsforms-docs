@@ -10,7 +10,7 @@ documentation: ug
 
 ## Tooltip
 
-Tooltip for the data points can be enabled by setting the [TooltipVisible](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_TooltipVisible) property value to true in the series.
+Tooltip for the data points can be enabled by setting the [TooltipVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~TooltipVisible.html) property value to true in the series.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ sfSmithChart1.Series.Add(series)
 
 ## Tooltip format
 
-Tooltip’s format can be specified by using the [TooltipFormat](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_TooltipFormat) property in the series.
+Tooltip’s format can be specified by using the [TooltipFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~TooltipFormat.html) property in the series.
 
 ### Format details
 
@@ -49,7 +49,7 @@ Tooltip’s format can be specified by using the [TooltipFormat](http://172.16.0
 
 {1} : Takes the reactance value in impedance chart and susceptance value in admittance chart.
 
-{2} : Takes the series name, i.e., the [LegendText](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_LegendText) property of the series.
+{2} : Takes the series name, i.e., the [LegendText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~LegendText.html) property of the series.
 
 By default, the tooltip shows only resistance or conductance and reactance or susceptance values. It can be customized as shown in the following code snippet.
 
@@ -74,7 +74,7 @@ series.TooltipFormat = "Resistance : {0}" & Environment.NewLine & "Reactance : {
 
 ## Tooltip customization
 
-The appearance of the tooltip can be customized using the [BackColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.TooltipOptions.html#Syncfusion_WinForms_SmithChart_TooltipOptions_BackColor), [BorderColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.TooltipOptions.html#Syncfusion_WinForms_SmithChart_TooltipOptions_BorderColor), [ForeColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.TooltipOptions.html#Syncfusion_WinForms_SmithChart_TooltipOptions_ForeColor), [Font](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.TooltipOptions.html#Syncfusion_WinForms_SmithChart_TooltipOptions_Font), [BorderWidth](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.TooltipOptions.html#Syncfusion_WinForms_SmithChart_TooltipOptions_BorderWidth) and [ShadowVisible](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.TooltipOptions.html#Syncfusion_WinForms_SmithChart_TooltipOptions_ShadowVisible) in [TooltipOptions](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.TooltipOptions.html#) class.
+The appearance of the tooltip can be customized using the [BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.TooltipOptions~BackColor.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.TooltipOptions~BorderColor.html), [ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.TooltipOptions~ForeColor.html), [Font](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.TooltipOptions~Font.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.TooltipOptions~BorderWidth.html) and [ShadowVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.TooltipOptions~ShadowVisible.html) in TooltipOptions class.
 
 {% tabs %}
 
