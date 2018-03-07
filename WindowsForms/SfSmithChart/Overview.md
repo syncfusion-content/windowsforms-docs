@@ -21,4 +21,4 @@ Smith chart provides a perfect way to visualize the data with a high level of us
 * Interactive legend.
 * Customizable colors.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/GettingStarted.png](Overview_images/Overview_img1.jpeg)
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/GettingStarted.png](Overview_images/Overview_img1.png)
