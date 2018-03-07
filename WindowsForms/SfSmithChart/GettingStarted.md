@@ -265,7 +265,7 @@ Me.Controls.Add(chart)
 
 As a result of above steps, the following output will be reproduced.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Chart.png](GettingStarted_images/GettingStarted_img5.jpeg)
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Chart.png](GettingStarted_images/GettingStarted_img5.PNG)
 
 
 ### Adding header to the smith chart
@@ -316,7 +316,7 @@ chart.RadialAxis.MinorGridlinesVisible = True
 
 As a result of adding text and axes to the control, the following output is produced.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Axis.png](GettingStarted_images/GettingStarted_img6.jpeg)
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Axis.png](GettingStarted_images/GettingStarted_img6.PNG)
 
 ### Adding Series
 
@@ -384,7 +384,7 @@ chart.Series.Add(series)
 
 After adding the series, the following output is produced.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Series1.png](GettingStarted_images/GettingStarted_img7.jpeg)
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Series1.png](GettingStarted_images/GettingStarted_img7.PNG)
 
 
 ### Adding legends to the chart
@@ -425,7 +425,7 @@ series.LegendText = "Transmission1"
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Full.png](GettingStarted_images/GettingStarted_img9.jpeg)
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Full.png](GettingStarted_images/GettingStarted_img9.PNG)
 
 The following code example demonstrates the complete code for creating a smith chart.
 
@@ -503,6 +503,6 @@ Me.Controls.Add(chart)
 
 Now, run the application to produce the following output.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Full.png](GettingStarted_images/GettingStarted_img8.jpeg)
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Full.png](GettingStarted_images/GettingStarted_img8.PNG)
 
 
