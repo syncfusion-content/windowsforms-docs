@@ -26,7 +26,7 @@ using (var file = File.Create("DataGrid.xml"))
 
 ### Serialize as Stream
 
-The SfDataGrid settings can be stored as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).htmlhttps:/help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).html) method by passing the stream.
+The SfDataGrid settings can be stored as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).html method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}

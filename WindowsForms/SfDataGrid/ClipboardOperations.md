@@ -364,14 +364,14 @@ public class CustomClipboardController : DataGridClipboardController
     {
         this.dataGrid = dataGrid;
     }
-    protected override void PasteToRows(object clipboardrows)
+    protected override void PasteToRows(object clipboardRows)
     {
-        var copiedRecord = (string[])clipboardrows;
-        int copiedrecordscount = copiedRecord.Count();
+        var copiedRecord = (string[])clipboardRows;
+        int copiedRecordsCount = copiedRecord.Count();
         //Based on the clipboard count added the new record to be pasted.
         if (copiedrecordscount > 0)
         {
-            for (int i = 0; i < copiedrecordscount; i++)
+            for (int i = 0; i < copiedRecordsCount; i++)
             {
                 // Creates new record.
                 this.dataGrid.View.AddNew();
@@ -405,14 +405,14 @@ public class CustomClipboardController : DataGridClipboardController
     {
         this.dataGrid = dataGrid;
     }
-    protected override void PasteToRow(object clipboardcontent, object selectedRecords)
+    protected override void PasteToRow(object clipboardContent, object selectedRecords)
     {
         //Splits the row into number of cells by using \t.
-        clipboardcontent = Regex.Split(clipboardcontent.ToString(), @"\t");
-        var copyValue = (string[])clipboardcontent;
+        clipboardContent = Regex.Split(clipboardContent.ToString(), @"\t");
+        var copyValue = (string[])clipboardContent;
         //For Row selection
-        int columnindex = 0;
-        //Gets the currentcell column index.
+        int columnIndex = 0;
+        //Gets the current cell column index.
         var index = this.dataGrid.CurrentCell.ColumnIndex;
         foreach (var column in dataGrid.Columns)
         {
@@ -423,7 +423,7 @@ public class CustomClipboardController : DataGridClipboardController
             // Calls the PasteToCell method and passes the copied data and pastes the column index.
             PasteToCell(selectedRecords, this.dataGrid.Columns[index], copyValue[columnindex]);
             index++;
-            columnindex++;
+            columnIndex++;
         }
     }
 }

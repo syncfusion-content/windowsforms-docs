@@ -280,7 +280,7 @@ The below properties of `NumberFormatInfo` can be used to specify the format for
 
 * `PercentGroupSeparator` - By default, the comma (,) operator separates the group of digits left to the decimal point on currency value. Any operator can be used as group separator through `PercentGroupSeparator` property.
 
-* `PercenGroupSizes` - The number of digits in each group before the decimal point can be changed through `PercentGroupSizes` property.
+* `PercentGroupSizes` - The number of digits in each group before the decimal point can be changed through `PercentGroupSizes` property.
 
 * `Pattern` - The pattern for both positive and negative percent values can be formatted through `PercentPositivePattern` and `PercentNegativePattern`.
 
@@ -564,7 +564,7 @@ this.sfDataGrid1.Style.CheckBoxStyle.CheckedTickColor = Color.Red;
 this.sfDataGrid1.Style.CheckBoxStyle.IndeterminateBorderColor = Color.DarkSlateGray;
 this.sfDataGrid1.Style.CheckBoxStyle.IndeterminateColor = Color.Brown;
 
-//Change the apearance of the unchecked box
+//Change the appearance of the unchecked box
 this.sfDataGrid1.Style.CheckBoxStyle.UncheckedBackColor = Color.Moccasin;
 this.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.DarkSlateGray;
 {% endhighlight %}
@@ -736,7 +736,7 @@ void SfDataGrid1_HyperlinkOpening(object sender, CellHyperlinkOpeningEventArgs e
 
 By default, [GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html) opens the hyperlink in system default browser. This can be changed by handling the [HyperlinkOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HyperlinkOpening_EV.html) event.
 
-The below code shows how to open the hyperlink in Internet explorer.
+The below code shows how to open the hyperlink in Internet Explorer.
 
 {% tabs %}
 {% highlight c# %}
@@ -842,7 +842,7 @@ In the below code snippet, `GridCurrencyColumn` column created from `GridNumeric
 
 {% tabs %}
 {% highlight c# %}
-public class GridCurrencyCOlumn : GridNumericColumn
+public class GridCurrencyColumn : GridNumericColumn
     {
         protected override object GetFormattedValue(object record, object value)
         {
@@ -877,7 +877,7 @@ In the below code snippet, created `GridCurrencyColumn` added to [SfDataGrid.Col
 
 {% tabs %}
 {% highlight c# %}
-   this.sfDataGrid1.Columns.Add(new GridCurrencyCOlumn()
+   this.sfDataGrid1.Columns.Add(new GridCurrencyColumn()
             {
                 MappingName = "UnitPrice",
                 HeaderText = "Unit Price",
@@ -981,7 +981,7 @@ Button
 </tr>
 </table>
 
-Below code, creates the `GridlTextBoxCellRendererExt` to change the fore ground of CustomerID column and replacing created renderer to `CellRenderers`.
+Below code, creates the `GridTextBoxCellRendererExt` to change the fore ground of CustomerID column and replacing created renderer to `CellRenderers`.
 
 {% tabs %}
 {% highlight c# %}
