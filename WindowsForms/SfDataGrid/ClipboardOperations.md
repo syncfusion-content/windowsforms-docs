@@ -369,7 +369,7 @@ public class CustomClipboardController : DataGridClipboardController
         var copiedRecord = (string[])clipboardRows;
         int copiedRecordsCount = copiedRecord.Count();
         //Based on the clipboard count added the new record to be pasted.
-        if (copiedrecordscount > 0)
+        if (copiedRecordsCount > 0)
         {
             for (int i = 0; i < copiedRecordsCount; i++)
             {
