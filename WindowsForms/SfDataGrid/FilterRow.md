@@ -197,7 +197,7 @@ The default filter condition is Begins With, the below filter conditions are ava
 </td>
 <td>
 The default filter condition is Equals, the below filter conditions are available in date time filter.
-<oi>
+<ol>
 <li>Equals</li>
 <li>Not Equal</li>
 <li>Null</li>
@@ -206,7 +206,7 @@ The default filter condition is Equals, the below filter conditions are availabl
 <li>Before or Equal</li>
 <li>After</li>
 <li>After or Equal</li>
-</oi>
+</ol>
 </td>
 <td>
 Always equals filter condition will be applied for filtering the CheckBox value.
