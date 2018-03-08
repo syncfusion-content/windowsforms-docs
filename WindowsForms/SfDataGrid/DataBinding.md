@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: DataBinding
 description: This section explains about the DataBinding support in SfDataGrid.
@@ -21,7 +21,7 @@ If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.
 When you add, remove item in [ObservableCollection](https://msdn.microsoft.com/library/ms668604), `SfDataGrid` automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19), `SfDataGrid` will not refresh the UI automatically.
 
 ## Binding to IEnumerable
-`SfDataGrid` control supports to bind any collection that implements the[IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from `IEnumerable`.
+`SfDataGrid` control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
 `SfDataGrid` control supports to bind the DataTable. `SfDataGrid` control automatically refresh the UI when you are binding DataTable as `DataSource` when rows are added, removed or cleared.
