@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Grouping
 description: This section explains about the grouping support in SfDataGrid.

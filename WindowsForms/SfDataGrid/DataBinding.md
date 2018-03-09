@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: DataBinding
 description: This section explains about the DataBinding support in SfDataGrid.
