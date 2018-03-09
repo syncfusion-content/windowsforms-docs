@@ -39,7 +39,7 @@ Each group is identified by its CaptionSummaryRows and it is used to organize th
 Each `CaptionSummaryRow` carries information about a particular group like group name, number of items (records) in the group, etc. Refer the `Caption Summaries` section, for more information about `CaptionSummaryRow`.
 
 
-##Programmatic Grouping
+## Programmatic Grouping
 
 ### Adding groups
 
