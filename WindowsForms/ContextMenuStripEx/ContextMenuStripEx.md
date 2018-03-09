@@ -144,6 +144,26 @@ Various Features and Customization options are discussed in the following topics
 
 ## Style Settings
 
+###Visual Style
+
+ContextMenuStripEx supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
+
+This Style can be set using Style property
+
+{% highlight c# %}
+
+this.contextMenuStrip1.Style=Syncfusion.Windows.Forms.Tools.ContextMenuStyle.Office2016Colorful
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.contextMenuStrip1.Style=Syncfusion.Windows.Forms.Tools.ContextMenuStyle.Office2016Colorful
+
+{% endhighlight %}
+
+![](ContextMenuStripEx_images/ContextMenuStripEx-Colorful.png)
+
 ### Office12ToolStripRenderer Class
 
 Using the Office12ToolStripRenderer Class, the appearance of the ContextMenuStripEx can be changed. 

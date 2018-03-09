@@ -164,7 +164,7 @@ Description</th></tr>
 <tr>
 <td>
 Appearance</td><td>
-Sets the visual styles for the control when UseVisualStyle property is true. The styles are,<ul><li>Classic</li><li>Office2000</li><li> WindowsXP</li><li>OfficeXP</li><li> Office2003</li><li>Office2007</li></ul></td></tr>
+Sets the visual styles for the control when UseVisualStyle property is true. The styles are,<ul><li>Classic</li><li>Office2000</li><li> WindowsXP</li><li>OfficeXP</li><li> Office2003</li><li>Office2007</li><li>Metro</li><li>Office2016Colorful</li><li>Office2016White</li><li>Office2016DarkGray</li><li>Office2016Black</li></ul></td></tr>
 <tr>
 <td>
 <br>UseVisualStyle</td><td>
@@ -172,107 +172,27 @@ Indicates whether Visual Styles must be enabled for the button. Set value to Tru
 <tr>
 <td>
 MetroColor</td><td>
-Gets or sets the Metro color of the control.</td></tr>
+Gets or sets the metro color of the control.(Applicable for metro style only)</td></tr>
 </table>
-
-
-{%highlight c#%}
-
-
-
-this.buttonAdv1.UseVisualStyle = true;
-
-//Sample code for setting "OfficeXP" style for ButtonAdv
-
-this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.OfficeXP;
-
-{%endhighlight%}
-
-{%highlight vbnet%}
-
-Me.buttonAdv1.UseVisualStyle = True
-
-'Sample code for setting "OfficeXP" style for ButtonAdv
-
-Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.OfficeXP
-
-
-{%endhighlight%}
-
-
-![](Overview_images/Overview_img64.jpeg) 
-
-
-
-
-N> While mouse hovering over the OfficeXP, Office2003 and WindowsXP at run time, the button will be painted with some standard colors. This is an built-in feature in the ButtonControlAdv.
-
-
- 
-## Metro Style Appearance.
-
-
-{%highlight c#%}
-
-
-//To enable the Visual Style of the ButtonAdv
-
-this.buttonAdv1.UseVisualStyle = true;
-
-//To set the Metro style appearance for ButtonAdv
-
-this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-
-//To set the MetroColor
-
-this.buttonAdv1.MetroColor = Color.FromArgb(22, 165, 220);
-
-{%endhighlight%}
-
-{%highlight vbnet%}
-
-
-
-'To enable the Visual Style of the ButtonAdv
-
-Me.buttonAdv1.UseVisualStyle = True
-'To set the Metro style appearance for ButtonAdv
-Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro
-
-'To set the MetroColor
-Me.buttonAdv1.MetroColor = Color.FromArgb(22, 165, 220)
-
-{%endhighlight%}
-
-![](Overview_images/Overview_img66.png) 
-
-
 
 
 ### Office Color Themes
 
-ButtonControlAdv supports all the three OfficeColor Schemes when ButtonAdv.Appearance is set to Office2007. Similarly you can set Blue and Black color schemes also. Default value is Blue.
+//Sample code for setting "Office2016 Colorful" color scheme for ButtonAdv
 
 {%highlight c#%}
 
-
-
-//Sample code for setting "Silver" color scheme for ButtonAdv
-
-this.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-
+this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful;
 
 {%endhighlight%}
 
 {%highlight vbnet%}
 
-'Sample code for setting "Silver" color scheme for ButtonAdv
-
-Me.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver
+Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful
 
 {%endhighlight%}
 
-![](Overview_images/Overview_img67.jpeg)
+![](Overview_images/Office_2016.png)
 
 
 ### Custom Colors

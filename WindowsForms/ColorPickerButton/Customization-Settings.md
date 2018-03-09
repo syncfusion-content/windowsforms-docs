@@ -74,6 +74,25 @@ Me.colorPickerButton1.SelectedAsText = True
 
 ![](ColorPickerButton_images/Overview_img250.jpeg) 
 
+##Visual Style
+
+ColorPickerButton supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
+
+This style can be set using Appearance property
+
+{% highlight c# %}
+
+this.colorPickerButton1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Colorful;
+
+{% endhighlight  %}
+
+{% highlight vbnet %}
+
+Me.colorPickerButton1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Colorful;
+
+{% endhighlight  %}
+
+![](ColorPickerButton_images/colorpickerbutton_office2016colorful.png) 
 
 
  {% seealso %}

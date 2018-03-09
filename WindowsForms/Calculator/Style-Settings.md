@@ -71,8 +71,7 @@ The Calculator control supports the below button styles. UseVisualStyle property
 * OfficeXP
 * Office2003
 * Office2007
-
-
+* Metro
 
 {% highlight c# %}
 
@@ -94,7 +93,7 @@ Me.calculatorControl1.UseVisualStyle = True
 
 'Setting Office2007 button style for the calculator control
 
-this.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2007;
+Me.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2007;
 
 {% endhighlight %}
 

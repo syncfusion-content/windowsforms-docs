@@ -11,8 +11,14 @@ documentation: ug
 
 Visual Styles for the ComboBoxAutoComplete control can be set using VisualStyle property. The styles are,
 
-* Default and 
-* Office2007. 
+* Office2016Colorful
+* Office2016White
+* Office2016Black
+* Office2016DarkGray
+* Metro
+* Office2010
+* Office2007 
+* Default
 
 
 
@@ -20,9 +26,8 @@ Visual Styles for the ComboBoxAutoComplete control can be set using VisualStyle 
 
 
 
-this.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2007;
+this.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2016Colorful;
 
-this.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
 {% endhighlight %}
 
 
@@ -31,9 +36,8 @@ this.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Offic
 
 
 
-Me.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2007
+Me.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2016Colorful
 
-Me.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
 
 {% endhighlight %}
 

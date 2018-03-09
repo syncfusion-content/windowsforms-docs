@@ -117,3 +117,43 @@ Me.treeColumnAdv1.HighlightBorderColor = Color.Brown;
 
 Column Header Highlight Border Color changed
 {:.caption}
+
+## Visual Style
+
+VisualStyles provides rich and professional look and feel UI for the TreeViewAdv control. Some of the available VisualStyles are as follows:
+
+* Default
+* Office2007
+* Office2010
+* Metro
+* Office2016Colorful
+* Office2016White
+* Office2016Black
+* Office2016DarkGray
+
+## Visual Style
+
+The visual style can be applied for the MultiColumnTreeViewAdv using `Style` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Set the visual Style of the MultiColumnTreeViewAdv control.
+
+this.multiColumnTreeView1.Style = MultiColumnVisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+'Set the visual Style of the MultiColumnTreeViewAdv control.
+
+Me.multiColumnTreeViewAdv1.Style = MultiColumnVisualStyle.Office2016Colorful
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/Office2016Colorful.jpeg) 

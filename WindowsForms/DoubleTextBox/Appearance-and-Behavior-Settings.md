@@ -18,6 +18,10 @@ This section discusses the complete Appearance and behavior settings of Double T
 
 Colors can be applied for Double textbox when its value is positive, negative or zero. Refer [Color Settings](/windowsforms/currencytextbox/appearance#color-settings) of Currency textbox for details.
 
+#### Visual Style
+
+Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for DoubleTextBox.
+
 #### Keyboard Support
 
 Double TextBox supports keyboard support. Refer [Clipboard Support](/windowsforms/currencytextbox/advanced-features#clipboard-support ) of Currency textbox in detail.
