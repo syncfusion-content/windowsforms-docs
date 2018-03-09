@@ -570,7 +570,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ToolTip5.png
+![](InteractiveFeatures_Images/ToolTip5.png)
 
 ### Cancel ToolTip opening
 
