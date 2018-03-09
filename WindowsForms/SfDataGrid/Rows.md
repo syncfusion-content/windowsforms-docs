@@ -7,6 +7,161 @@ control: SfDataGrid
 documentation: ug
 ---
 
+# Rows
+
+## Row Header
+
+Row Header is a special column which is placed as first cell of each row. Row header can be shown or hidden by setting [ShowRowHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowRowHeader.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.ShowRowHeader = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.ShowRowHeader = True
+{% endhighlight %}
+{% endtabs %}
+
+![](Rows_images/img1.png)
+
+### Appearance
+
+The appearance of row header can be customized by setting the [SfDataGrid.RowHeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~RowHeaderStyle.html) property. The `RowHeaderStyle` property contains all the settings that are needed for the row header appearance customization.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.RowHeaderStyle.BackColor = Color.CadetBlue;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.RowHeaderStyle.BackColor = Color.CadetBlue
+{% endhighlight %}
+{% endtabs %}
+
+![](Rows_images/img2.png)
+
+### Row indicators and its description
+
+<table>
+<tr>
+<td>
+{{'**Row Indicator **'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+<img src= "Rows_images/AddNewRowIcon.png"/>
+</td>
+<td>
+Denotes row is AddNewRow.
+</td>
+</tr>
+<tr>
+<td>
+<img src= "Rows_images/rowError.png"/>
+</td>
+<td>
+Denotes that the current row which has errors.
+</td>
+</tr>
+</table>
+
+### Showing the numbered row header
+
+RowHeader cell can be customized by using [DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event which is raised for each cell. The default column index of the row header cell is zero, the  style settings for a row header can be applied by using column index when it is enabled in SfDataGrid. 
+By default, the row header does not have the cell values. The numbers or any text can be set in the row header by setting the [DisplayText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs~DisplayText.html) which is available in the [DrawCellEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html) of `DrawCell` event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.DrawCell += SfDataGrid1_DrawCell;
+
+private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
+{
+    if (sfDataGrid1.ShowRowHeader && e.RowIndex != 0)
+    {
+        if (e.ColumnIndex == 0)
+        {
+            e.DisplayText = e.RowIndex.ToString();
+        }
+
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.DrawCell, AddressOf SfDataGrid1_DrawCell
+
+Private Sub SfDataGrid1_DrawCell(ByVal sender As Object, ByVal e As DrawCellEventArgs)
+	If sfDataGrid1.ShowRowHeader AndAlso e.RowIndex <> 0 Then
+		If e.ColumnIndex = 0 Then
+			e.DisplayText = e.RowIndex.ToString()
+		End If
+
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](Rows_images/img3.png)
+
+## Header Row
+
+Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
+
+![](Rows_images/img4.png)
+
+### Appearance
+
+The Appearance of the header row can be customized by using [SfDataGrid.Style.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HeaderStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.HeaderStyle.BackColor = Color.AliceBlue;
+this.sfDataGrid1.Style.HeaderStyle.TextColor = Color.DarkSlateBlue;
+this.sfDataGrid1.Style.HeaderStyle.Font.Bold = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.HeaderStyle.BackColor = Color.AliceBlue
+Me.sfDataGrid1.Style.HeaderStyle.TextColor = Color.DarkSlateBlue
+Me.sfDataGrid1.Style.HeaderStyle.Font.Bold = True
+{% endhighlight %}
+{% endtabs %}
+
+![](Rows_images/img5.png)
+
+The appearance of any particular column header can be customized by using 
+[GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns["OrderID"].HeaderStyle.BackColor = Color.LightCoral;
+this.sfDataGrid1.Columns["OrderID"].HeaderStyle.TextColor = Color.DarkRed;
+this.sfDataGrid1.Columns["OrderID"].HeaderStyle.Font.Bold = true;
+{% endhighlight %}
+{% highlight vb %}
+this.sfDataGrid1.Columns["OrderID"].HeaderStyle.BackColor = Color.LightCoral;
+this.sfDataGrid1.Columns["OrderID"].HeaderStyle.TextColor = Color.DarkRed;
+this.sfDataGrid1.Columns["OrderID"].HeaderStyle.Font.Bold = true;
+{% endhighlight %}
+{% endtabs %}
+
+![](Rows_images/img6.png)
+
+### Hiding Header row
+
+The header row can be hide by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HeaderRowHeight.html) property as `0` (zero).
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.HeaderRowHeight = 0;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.HeaderRowHeight = 0
+{% endhighlight %}
+{% endtabs %}
+
+![](Rows_images/img7.png)
+
 ## Freeze Panes 
 The rows and column can freeze in view like excel. The rows and columns can be freeze by setting following properties,
 
