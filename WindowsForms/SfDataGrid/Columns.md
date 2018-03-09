@@ -778,3 +778,382 @@ private void SfDataGrid_DrawCell(object sender, DrawCellEventArgs e)
 {% endtabs %}
 
 ![](Columns_images/StackedHeader_img9.png)
+![](StackedHeader/StackedHeader_img9.png)
+
+## Column Sizing
+SfDataGrid allows to set the column widths based on certain logic using [SfDataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) or [GridColumnBase.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AutoSizeColumnsMode.html) property. Below is the list of predefined column sizing options available.
+
+<table>
+<tr>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+AllCells
+</td>
+<td>
+Calculates the width of column based on header and cell contents. So, header and cell contents are not truncated.
+</td>
+</tr>
+<tr>
+<td>
+AllCellsExceptHeader
+</td>
+<td>
+Calculates the width of column based on cell contents. So, cell contents are not truncated.
+</td>
+</tr>
+<tr>
+<td>
+AllCellsWithLastColumnFill
+</td>
+<td>
+Applies `AutoSizeColumnsMode.AllCells` width to all the columns except last column which is visible and sets the maximum between last column auto spacing width and remaining width to last column.
+</td>
+</tr>
+<tr>
+<td>
+ColumnHeader
+</td>
+<td>
+Calculates the width of column based on header content. So, header content is not truncated.
+</td>
+</tr>
+<tr>
+<td>
+Fill
+</td>
+<td>
+Divides the total width equally for columns.
+</td>
+</tr>
+<tr>
+<td>
+LastColumnFill
+</td>
+<td>
+Applies `AutoSizeColumnsMode.AllCells` width to all the columns except last column which is visible and the remaining width from total width of SfDataGrid is set to last column.
+</td>
+</tr>
+<tr>
+<td>
+None
+</td>
+<td>
+No sizing. Default column width or defined width set to column.
+</td>
+</tr>
+</table>
+
+N> `AutoSizeColumnsMode` will not work when the column width defined explicitly. AutoSizeCalculationMode calculates column width based on [MinimumWidth ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MinimumWidth.html)and [MaximumWidth ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MaximumWidth.html) properties of the column.
+
+Below code, applies `AutoSizeColumnsMode.Fill` to equally set width for [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Columns.html).
+
+{% tabs %}
+{% highlight c# %}
+OrderInfoCollection collection = new OrderInfoCollection();
+sfDataGrid.DataSource = collection.OrdersListDetails;
+sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.Fill;
+{% endhighlight %}
+{% highlight vb %}
+Dim collection As New OrderInfoCollection()
+sfDataGrid.DataSource = collection.OrdersListDetails
+sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.Fill
+{% endhighlight %}
+{% endtabs %}
+![](ColumnSizing_images/ColumnSizing_img1.png)
+
+N> The `GridColumnBase.AutoSizeColumnsMode` takes higher priority than the `SfDataGrid.AutoSizeColumnsMode`.
+
+### Fill remaining width for any column
+While setting [SfDataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) as `LastColumnFill` or `AllCellsWithLastColumnFill` remaining width is applied to last column. You can apply the remaining width to specific column by setting `GridColumnBase.AutoSizeColumnsMode` property as like below,
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.LastColumnFill;
+this.sfDataGrid.Columns["ProductName"].AutoSizeColumnsMode = AutoSizeColumnsMode.LastColumnFill;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.LastColumnFill
+Me.sfDataGrid.Columns("ProductName").AutoSizeColumnsMode = AutoSizeColumnsMode.LastColumnFill
+{% endhighlight %}
+{% endtabs %}
+
+![](ColumnSizing_images/ColumnSizing_img2.png)
+
+### Auto size based on string length
+By default, the auto size of the column is calculated based on the string width. To improve the performance of the column auto sizing, the column auto size calculation logic can be calculated based on the length of the values by using [SfDataGrid.AutoSizeController.AutoSizeCalculationMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~AutoSizeCalculationMode.html) property.
+The default is `AutoSizeCalculationMode.Default` which calculates size for all the cell’s formatted text. The columns can also be auto sized based on string length of the cell using the `AutoSizeCalculationMode.SmartFit` which calculates the size for the cell which has longest string.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid. AutoSizeController.AutoSizeCalculationMode = AutoSizeCalculationMode.SmartFit;
+this.sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.AllCells;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.AutoSizeController.AutoSizeCalculationMode = AutoSizeCalculationMode.SmartFit
+Me.sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.AllCells
+{% endhighlight %}
+{% endtabs %}
+
+### Column auto sizing for visible rows
+By default, the column auto size is calculated for the whole rows. The column auto size can be calculated for the visible rows only by using the  [AutoSizeController.AutoSizeRange](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~AutoSizeRange.html) property.
+The default is `AutoSizeRange.Table` which considers all the records in the table for auto sizing. The columns can be auto sized considering only the visible rows using the `AutoSizeRange.VisibleRows` mode as like below.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.AutoSizeController.AutoSizeRange = AutoSizeRange.VisibleRows;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.AutoSizeController.AutoSizeRange = AutoSizeRange.VisibleRows
+{% endhighlight %}
+{% endtabs %}
+
+### Refreshing ColumnSizer at runtime
+The auto column sizing can be refreshed at by calling [SfDataGrid.AutoSizeController.Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~Refresh.html) method. The column auto width can be recalculated by calling the reset methods of `AutoSizeController`. The[ResetAutoSizeWidthForAllColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidthForAllColumns.html) method reset widths to all columns. [ResetAutoSizeWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidth.html) method reset the width to specific column.
+
+N> The column does not auto size its width automatically when the data of that column get changed. 
+For example, you can refresh all the column’s width based on the cell contents of newly added records at runtime.
+
+{% tabs %}
+{% highlight c# %}
+var orderInfoCollection = this.sfDataGrid.DataSource as OrderInfoCollection;
+orderInfoCollection.Orders.Add(new OrderInfo() { OrderID = 11, CustomerID = "BLFKI", ProductName = "Boston Crab Meat" });
+
+this.sfDataGrid1.AutoSizeController.ResetAutoSizeWidthForAllColumns();
+this.sfDataGrid1.AutoSizeController.Refresh();
+{% endhighlight %}
+{% highlight vb %}
+Dim orderInfoCollection = TryCast(Me.sfDataGrid.DataSource, OrderInfoCollection)
+orderInfoCollection.Orders.Add(New OrderInfo() With {.OrderID = 11, .CustomerID = "BLFKI", .ProductName = "Boston Crab Meat"})
+
+Me.sfDataGrid1.AutoSizeController.ResetAutoSizeWidthForAllColumns()
+Me.sfDataGrid1.AutoSizeController.Refresh()
+{% endhighlight %}
+{% endtabs %}
+
+### Resetting column width to apply AutoSizeColumnsMode
+When the width of the column is explicitly defined or column is resized, column width is not changed based on `AutoSizeColumnsMode`. You can reset [GridColumnBase.Width](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_Width) by setting 0 to apply column width based on column sizer.
+
+{% tabs %}
+{% highlight c# %}
+foreach (var column in this.sfDataGrid.Columns)
+{
+    if (column.Width != 0)
+        column.Width = 0;
+}
+this.sfDataGrid1.ColumnSizer.Refresh();
+{% endhighlight %}
+{% highlight vb %}
+For Each column In Me.sfDataGrid.Columns
+	If column.Width <> 0 Then
+		column.Width = 0
+	End If
+Next column
+Me.sfDataGrid1.ColumnSizer.Refresh()
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing built-in column sizing logic
+The column auto sizing operations of the SfDataGrid is processed in the [AutoSizeController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController.html) class. The column sizing operations can be customized by overriding  `AutoSizeController` and set it to `SfDataGrid.AutoSizeController` property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.AutoSizeController = new CustomGridColumnSizer(this.sfDataGrid);
+
+public class CustomGridColumnSizer : AutoSizeController
+{
+    public CustomGridColumnSizer(SfDataGrid sfDataGrid)
+        : base(sfDataGrid)
+    { }
+
+    // Calculate width for column when AutoSizeColumnsMode is AllCells.     
+    protected override double CalculateAllCellsWidth(GridColumn column, bool isAllCells = false)
+    {
+        return base.CalculateAllCellsWidth(column, isAllCells);
+    }
+
+    // Calculate width for column when AutoSizeColumnsMode is ColumnHeader.     
+    protected override int CalculateColumnHeaderWidth(GridColumn column, bool setWidth = true)
+    {
+        return base.CalculateColumnHeaderWidth(column, setWidth);
+    }
+
+    // Calculate width for column when AutoSizeColumnsMode is AllCellsExceptHeaderWidth.     
+    protected override double CalculateAllCellsExceptHeaderWidth(GridColumn column, bool setWidth = true)
+    {
+        return base.CalculateAllCellsExceptHeaderWidth(column, setWidth);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Custom column sizer with ratio support
+
+The `AutoSizeColumnsMode.Fill` width calculation logic can be customized by overriding [SetFillWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~SetFillWidth.html) method of `AutoSizeController`.
+For example, you can calculate the column width with specified ratios instead of dividing equal width for all columns in `AutoSizeColumnsMode.Fill` calculation using the logic in below `FillRatio` class.
+
+{% tabs %}
+{% highlight c# %}
+public static class FillRatio
+{
+    // Returns the fill ratio for the column.
+    public static int GetColumnRatio(GridColumn column)
+    {
+        int i = 0;
+        switch (column.MappingName)
+        {
+            case "OrderID":
+            case "CustomerID":
+            case "Quantity":
+            case "ShipCountry":
+                i = 1;
+                break;
+
+            case "ProductName":
+                i = 3;
+                break;
+
+            case "OrderDate":
+                i = 2;
+                break;
+        }
+
+        return i;
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+Public NotInheritable Class FillRatio
+	' Returns the fill ratio for the column.
+	Private Sub New()
+	End Sub
+	Public Shared Function GetColumnRatio(ByVal column As GridColumn) As Integer
+		Dim i As Integer = 0
+		Select Case column.MappingName
+			Case "OrderID", "CustomerID", "Quantity", "ShipCountry"
+				i = 1
+
+			Case "ProductName"
+				i = 3
+
+			Case "OrderDate"
+				i = 2
+		End Select
+
+		Return i
+	End Function
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+Below code to define the fill width calculation based on the `FillRatio`.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomGridColumnSizer : AutoSizeController
+{
+    public CustomGridColumnSizer(SfDataGrid sfDataGrid)
+        : base(sfDataGrid)
+    {    }
+
+    // Overridden to customize the AutoSizeColumnsMode.Fill logic.
+    protected override void SetFillWidth(double remainingColumnWidth, IEnumerable<GridColumn> remainingColumns)
+    {
+        var removedColumn = new List<GridColumn>();
+        var columns = remainingColumns.ToList();
+        var totalRemainingFillValue = remainingColumnWidth;
+        double removedWidth = 0;
+        bool isRemoved;
+
+        while (columns.Count > 0)
+        {
+            isRemoved = false;
+            removedWidth = 0;
+            var columnsCount = 0;
+
+            columns.ForEach((col) =>
+            {
+                columnsCount += FillRatio.GetColumnRatio(col);
+            });
+
+            double fillWidth = Math.Floor((totalRemainingFillValue / columnsCount));
+            var column = columns.First();
+            fillWidth *= FillRatio.GetColumnRatio(column);
+            double computedWidth = SetColumnWidth(column, (int)fillWidth);
+
+            if (fillWidth != computedWidth && fillWidth > 0)
+            {
+                isRemoved = true;
+                columns.Remove(column);
+                foreach (var remColumn in removedColumn)
+                {
+                    if (!columns.Contains(remColumn))
+                    {
+                        removedWidth += remColumn.ActualWidth;
+                        columns.Add(remColumn);
+                    }
+                }
+                removedColumn.Clear();
+                totalRemainingFillValue += removedWidth;
+            }
+
+            totalRemainingFillValue = totalRemainingFillValue - computedWidth;
+
+            if (!isRemoved)
+            {
+                columns.Remove(column);
+                if (!removedColumn.Contains(column))
+                    removedColumn.Add(column);
+            }
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+Below code to set the `SfDataGrid.AutoSizeController` to apply the custom logic for fill mode.
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.AutoGenerateColumns = false;
+OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
+this.sfDataGrid.DataSource = orderInfoCollection.OrdersListDetails;
+
+this.sfDataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
+this.sfDataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID" });
+this.sfDataGrid.Columns.Add(new GridTextColumn() { MappingName = "ProductName" });
+this.sfDataGrid.Columns.Add(new GridDateTimeColumn() { MappingName = "OrderDate" });
+this.sfDataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity" });
+this.sfDataGrid.Columns.Add(new GridTextColumn() { MappingName = "ShipCountry" });
+
+// Assigns the CustomGridColumnSizer to SfDataGrid.
+this.sfDataGrid.AutoSizeController = new CustomGridColumnSizer(this.sfDataGrid);
+
+this.sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.Fill;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.AutoGenerateColumns = False
+Dim orderInfoCollection As New OrderInfoCollection()
+Me.sfDataGrid.DataSource = orderInfoCollection.OrdersListDetails
+
+Me.sfDataGrid.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID"})
+Me.sfDataGrid.Columns.Add(New GridTextColumn() With {.MappingName = "CustomerID"})
+Me.sfDataGrid.Columns.Add(New GridTextColumn() With {.MappingName = "ProductName"})
+Me.sfDataGrid.Columns.Add(New GridDateTimeColumn() With {.MappingName = "OrderDate"})
+Me.sfDataGrid.Columns.Add(New GridNumericColumn() With {.MappingName = "Quantity"})
+Me.sfDataGrid.Columns.Add(New GridTextColumn() With {.MappingName = "ShipCountry"})
+
+' Assigns the CustomGridColumnSizer to SfDataGrid.
+Me.sfDataGrid.AutoSizeController = New CustomGridColumnSizer(Me.sfDataGrid)
+
+Me.sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.Fill
+{% endhighlight %}
+{% endtabs %}
+
+![](ColumnSizing_images/ColumnSizing_img3.png)
+
