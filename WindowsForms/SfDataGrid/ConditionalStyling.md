@@ -23,7 +23,7 @@ private void SfDataGrid1_QueryCellStyle(object sender, QueryCellStyleEventArgs e
 {
     if (e.Column.MappingName == "ProductName" )
     {
-        if (e.DisplayText == "NuNuCa Nuß-Nougat-Creme")
+        if (e.DisplayText == "NuNuCa Nub-Nougat-Creme")
         {
             e.Style.BackColor = Color.Coral;
             e.Style.TextColor = Color.White;
@@ -41,7 +41,7 @@ AddHandler sfDataGrid1.QueryCellStyle, AddressOf SfDataGrid1_QueryCellStyle
 
 Private Sub SfDataGrid1_QueryCellStyle(ByVal sender As Object, ByVal e As QueryCellStyleEventArgs)
 	If e.Column.MappingName = "ProductName" Then
-		If e.DisplayText = "NuNuCa Nuß-Nougat-Creme" Then
+		If e.DisplayText = "NuNuCa Nub-Nougat-Creme" Then
 			e.Style.BackColor = Color.Coral
 			e.Style.TextColor = Color.White
 		ElseIf e.DisplayText = "Alice Mutton" Then
@@ -391,7 +391,7 @@ this.sfDataGrid1.CellRenderers.Add("StackedHeader", new CustomStackedHeaderCellR
 
 
 
-public class CustomstackedHeaderCellRenderer : GridStackedHeaderCellRenderer
+public class CustomStackedHeaderCellRenderer : GridStackedHeaderCellRenderer
 {
     protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
     {
@@ -412,7 +412,7 @@ public class CustomstackedHeaderCellRenderer : GridStackedHeaderCellRenderer
 Me.sfDataGrid1.CellRenderers.Remove("StackedHeader")
 Me.sfDataGrid1.CellRenderers.Add("StackedHeader", New CustomStackedHeaderCellRenderer())
 
-Public Class CustomstackedHeaderCellRenderer
+Public Class CustomStackedHeaderCellRenderer
 	Inherits GridStackedHeaderCellRenderer
 	Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
 		If column.ColumnIndex = 0 Then
