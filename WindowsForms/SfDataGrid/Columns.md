@@ -915,7 +915,7 @@ Me.sfDataGrid.AutoSizeController.AutoSizeRange = AutoSizeRange.VisibleRows
 {% endtabs %}
 
 ### Refreshing ColumnSizer at runtime
-The auto column sizing can be refreshed at by calling [SfDataGrid.AutoSizeController.Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~Refresh.html) method. The column auto width can be recalculated by calling the reset methods of `AutoSizeController`. The[ResetAutoSizeWidthforAllColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidthForAllColumns.html) method reset widths to all columns. [ResetAutoSizeWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidth.html) method reset the width to specific column.
+The auto column sizing can be refreshed at by calling [SfDataGrid.AutoSizeController.Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~Refresh.html) method. The column auto width can be recalculated by calling the reset methods of `AutoSizeController`. The[ResetAutoSizeWidthForAllColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidthForAllColumns.html) method reset widths to all columns. [ResetAutoSizeWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidth.html) method reset the width to specific column.
 
 N> The column does not auto size its width automatically when the data of that column get changed. 
 For example, you can refresh all the column’s width based on the cell contents of newly added records at runtime.
@@ -925,15 +925,15 @@ For example, you can refresh all the column’s width based on the cell contents
 var orderInfoCollection = this.sfDataGrid.DataSource as OrderInfoCollection;
 orderInfoCollection.Orders.Add(new OrderInfo() { OrderID = 11, CustomerID = "BLFKI", ProductName = "Boston Crab Meat" });
 
-this.sfDataGrid1.ColumnSizer.ResetAutoSizeWidthforAllColumns();
-this.sfDataGrid1.ColumnSizer.Refresh();
+this.sfDataGrid1.AutoSizeController.ResetAutoSizeWidthForAllColumns();
+this.sfDataGrid1.AutoSizeController.Refresh();
 {% endhighlight %}
 {% highlight vb %}
 Dim orderInfoCollection = TryCast(Me.sfDataGrid.DataSource, OrderInfoCollection)
 orderInfoCollection.Orders.Add(New OrderInfo() With {.OrderID = 11, .CustomerID = "BLFKI", .ProductName = "Boston Crab Meat"})
 
-Me.sfDataGrid1.ColumnSizer.ResetAutoSizeWidthforAllColumns()
-Me.sfDataGrid1.ColumnSizer.Refresh()
+Me.sfDataGrid1.AutoSizeController.ResetAutoSizeWidthForAllColumns()
+Me.sfDataGrid1.AutoSizeController.Refresh()
 {% endhighlight %}
 {% endtabs %}
 
@@ -1117,7 +1117,7 @@ public class CustomGridColumnSizer : AutoSizeController
 {% endhighlight %}
 {% endtabs %}
 
-Below code to set the `SfDataGrid.AutoSizeContoller` to apply the custom logic for fill mode.
+Below code to set the `SfDataGrid.AutoSizeController` to apply the custom logic for fill mode.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.AutoGenerateColumns = false;

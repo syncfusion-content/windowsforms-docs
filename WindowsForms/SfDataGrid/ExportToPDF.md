@@ -450,7 +450,7 @@ private void OnPdfExporting(object sender, DataGridPdfExportingEventArgs e)
     if (e.CellType != ExportCellType.RecordCell)
         return;
     //creates a new font from the font file.                
-    var font = new PdfTrueTypeFont(@"..\..\Resources\segoeui.ttf", 9f, PdfFontStyle.Regular);
+    var font = new PdfTrueTypeFont(@"..\..\Resources\SegoeUI.ttf", 9f, PdfFontStyle.Regular);
     e.CellStyle.Font = font;
 }
 {% endhighlight %}
@@ -466,7 +466,7 @@ Private Sub OnPdfExporting(ByVal sender As Object, ByVal e As DataGridPdfExporti
 	End If
 
 	'creates a new font from the font file.                
-	Dim font = New PdfTrueTypeFont("..\..\Resources\segoeui.ttf", 9f, PdfFontStyle.Regular)
+	Dim font = New PdfTrueTypeFont("..\..\Resources\SegoeUI.ttf", 9f, PdfFontStyle.Regular)
 	e.CellStyle.Font = font
 End Sub
 {% endhighlight %}

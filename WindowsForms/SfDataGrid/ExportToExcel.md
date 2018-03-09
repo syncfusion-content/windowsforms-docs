@@ -397,7 +397,7 @@ while (count < 3)
     catch (Exception ex)
     {
         Console.WriteLine(ex.Message);
-        Console.WriteLine(String.Format("Sending Mail Attemp - {0}", count.ToString()));
+        Console.WriteLine(String.Format("Sending Mail Attempt - {0}", count.ToString()));
         Thread.Sleep(60000);
         count++;
     }
@@ -439,7 +439,7 @@ Do While count < 3
 
 	Catch ex As Exception
 		Console.WriteLine(ex.Message)
-		Console.WriteLine(String.Format("Sending Mail Attemp - {0}", count.ToString()))
+		Console.WriteLine(String.Format("Sending Mail Attempt - {0}", count.ToString()))
 		Thread.Sleep(60000)
 		count += 1
 	End Try

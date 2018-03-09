@@ -370,7 +370,7 @@ End Sub
 
 ![](RowHeightCustomization_images/RowHeightCustomization_img5.jpeg)
 
-## Change TableSummarRow Height 
+## Change TableSummaryRow Height 
 The row height of the table summary row can be changed in the `QueryRowHeight` event by using the [IsTableSummaryIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsTableSummaryIndex.html) method. This method will check and return `true`, if the given row index is the table summary row otherwise return false.
 
 {% tabs %}
