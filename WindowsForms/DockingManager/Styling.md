@@ -24,6 +24,10 @@ VisualStyles provides rich and professional look and feel UI for the Dock window
 * OfficeXP
 * VS2003
 * VS2005
+* Office2016Colorful
+* Office2016White
+* Office2016DarkGray
+* Office2016Black
 
 The visual style can be applied for the DockingManager using `VisualStyle` property.
 
@@ -94,6 +98,117 @@ Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003;
 
 ![](Styling_images/Styling_img9.jpeg)
 
+**Office2016Colorful**
+
+This option helps to set the Office2016Colorful style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+this.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Colorful
+
+Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
+
+{%endhighlight %}
+
+{% endtabs %}
+
+ ![](Styling_images/Styling_img16.png)
+
+**Office2016White**
+
+This option helps to set the Office2016White style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016White
+
+this.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016White
+
+Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016White
+
+{%endhighlight %}
+
+{% endtabs %}
+
+ ![](Styling_images/Styling_img17.png)
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016DarkGray
+
+this.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016DarkGray
+
+Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
+
+{%endhighlight %}
+
+{% endtabs %}
+
+ ![](Styling_images/Styling_img18.png)
+
+**Office2016Black**
+
+This option helps to set the Office2016Black style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Black
+
+this.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Black
+
+Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
+
+{%endhighlight %}
+
+{% endtabs %}
+
+ ![](Styling_images/Styling_img19.png)
 
 ## Office2007 Color Schemes
 
@@ -104,7 +219,7 @@ DockingManager supports all the three color schemes in Office2007 visual style. 
 {% highlight C# %}
 
 
-this.dockingManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+this.dockingManager.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
 {% endhighlight %}
 
@@ -112,7 +227,7 @@ this.dockingManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.
 {% highlight VB %}
 
 
-Me.dockingManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
+Me.dockingManager.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
 {% endhighlight %}
 
@@ -130,7 +245,7 @@ Custom colors can also be applied for Office2007 style, using the below code sni
 {% highlight C# %}
 
 
-dockingManager1.Office2007Theme = Office2007Theme.Managed;
+dockingManager.Office2007Theme = Office2007Theme.Managed;
 
 Office2007Colors.ApplyManagedColors(this, Color.Red);
 
@@ -139,7 +254,7 @@ Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 {% highlight VB %}
 
-dockingManager1.Office2007Theme = Office2007Theme.Managed;
+dockingManager.Office2007Theme = Office2007Theme.Managed;
 
 Office2007Colors.ApplyManagedColors(Me, Color.Red);
 
@@ -148,13 +263,3 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red);
 {% endtabs %}
 
  ![](Styling_images/Styling_img15.png)
-
-
-
-
-
-
-
-
-
-

@@ -63,15 +63,10 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Specifies the visual style of the CommandBar. It includes the options given below.OfficeXP,Office2003,Office2007,VS2005 andOffice2007Outlook.</td></tr>
+Specifies the visual style of the CommandBar. It includes the options given below.OfficeXP,Office2003,Office2007,VS2005, Office2007Outlook, Office2016Colorful, Office2016White, Office2016DarkGray and Office2016Black.</td></tr>
 </table>
 
 {% highlight C# %}
-
-
-
-
-
 
 this.commandBarController1.ThemesEnabled = true;
 
@@ -81,10 +76,6 @@ this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
 
 {% highlight vbnet %}
 
-
-
-
-
 Me.commandBarController1.ThemesEnabled=True
 
 Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
@@ -93,8 +84,117 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
 
 ![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img2.jpeg) 
 
+**Office2016Colorful**
 
+This option helps to set the Office2016Colorful style.
 
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Colorful
+
+Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img6.png) 
+
+**Office2016White**
+
+This option helps to set the Office2016White style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016White
+
+this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016White
+
+Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016White
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img7.png) 
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016DarkGray
+
+this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016DarkGray
+
+Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img8.png) 
+
+**Office2016Black**
+
+This option helps to set the Office2016Black style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Black
+
+this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Black
+
+Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img9.png) 
 
 N> For the Office2003 and VS2005 styles to take effect, the ThemesEnabled property should be set to 'False'.
 
@@ -350,6 +450,7 @@ XPTaskPane</td></tr>
 39</td><td>
 XPToolBar</td></tr>
 </table>
+
 
 ## Skin Manager Compatibility
 

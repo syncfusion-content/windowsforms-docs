@@ -59,7 +59,16 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.{{ '_Default and_' | markdownify }}{{ '_Office2007._' | markdownify }}</td></tr>
+Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.
+
+* {{ '_Default_' | markdownify }}
+* {{ '_Office2007_' | markdownify }}
+* {{ '_Metro_' | markdownify }}
+* {{ '_Office2016Colorful_' | markdownify }}
+* {{ '_Office2016White_' | markdownify }}
+* {{ '_Office2016Black_' | markdownify }}
+* {{ '_Office2016DarkGray_' | markdownify }}
+</td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
@@ -70,27 +79,18 @@ Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Ma
 {% highlight c# %}
 
 
-
-this.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office2007;
-
-this.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue;
+this.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office2016Colorful;
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-
-
-Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office2007
-
-Me.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
+Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office2016Colorful
 
 {% endhighlight %}
 
-![](Overview_images/Overview_img624.jpeg) 
+![](Overview_images/CheckBoxStyles.jpeg) 
 
-
-![](Overview_images/Overview_img625.jpeg)
 
 
 When the Office2007ColorScheme property is set to 'Managed', the CheckBox in the CheckBoxAdv can be displayed using custom colors supported by the control.
@@ -122,8 +122,3 @@ Office2007Colors.ApplyManagedColors(Me, Color.Pink)
 {% endhighlight %}
 
 ![](Overview_images/Overview_img626.jpeg)
-
-
-A sample which demonstrates the Themes and Visual Styles of CheckBoxAdv is available in the below sample installation path.
-
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo

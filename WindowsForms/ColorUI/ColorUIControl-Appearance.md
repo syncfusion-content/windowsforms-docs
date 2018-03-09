@@ -91,4 +91,42 @@ Me.colorUIControl1.UserColorsStretchOnResize = True
 
 {% endhighlight  %}
 
-![](ColorUI_images/Overview_img237.jpeg) 
+![](ColorUI_images/Overview_img237.jpeg)
+
+## VisualStyle
+
+VisualStyles provides rich and professional look and feel UI for the ColorUIControl. Some of the available VisualStyles are as follows:
+
+* Default
+* Office2010
+* Metro
+* Office2016Colorful
+* Office2016White
+* Office2016Black
+* Office2016DarkGray
+
+
+The visual style can be applied for the ColorUIControl using `VisualStyle` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Set the visual Style of the ColorUIControl control.
+
+this.colorUIControl1.VisualStyle = Syncfusion.Windows.Forms.ColorUIStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+'Set the visual Style of the ColorUI control.
+
+Me.colorUIControl1.VisualStyle = Syncfusion.Windows.Forms.ColorUIStyle.Office2016Colorful
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](ColorUI_images/Office2016Colorful.jpeg)

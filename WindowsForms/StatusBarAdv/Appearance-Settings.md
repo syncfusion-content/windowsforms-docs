@@ -11,6 +11,28 @@ documentation: ug
 
 You can enhance the appearance of the StatusBarAdv control by using the following properties.
 
+## Style
+
+StatusBarAdv supports Office2016 styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
+
+//Sample code for setting "Office2016 Colorful" style for StatusBarAdv
+
+{% highlight c# %}
+
+this.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Office2016White;
+
+{% endhighlight  %}
+
+{%highlight vbnet%}
+
+Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Office2016White;
+
+{% endhighlight  %}
+
+
+![](Overview_images/Overview_img117.png)
+
+
 ## Background Settings
 
 You can customize the StatusBarAdv control's background by using the various options provided in the BackgroundColor property as follows.

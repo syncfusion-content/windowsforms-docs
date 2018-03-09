@@ -9,7 +9,27 @@ documentation: ug
 
 # Appearance Customization
 
-* Customization of SplitButton
+## Visual Style
+
+SplitButton supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
+
+This style can be set using Style property
+
+{% highlight c# %}
+
+this.splitButton1.Style=Syncfusion.Windows.Forms.Tools.SplitButtonVisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.splitButton1.Style = Syncfusion.Windows.Forms.Tools.SplitButtonVisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+![](Appearance-Customization_images/splitbutton-colorfultheme.png)
+
+## Customization of SplitButton
 
 You can customize appearance of the SplitButton using the ISplitButtonRenderer. This interface provides few methods to controlling painting borders, arrow and so on. To customize the appearance, create new custom renderer class and implement each of the members declared in ISplitButtonRenderer. And assign instance of your custom renderer to the Renderer property of SplitButton. By default, SplitButton will be painted using its default renderer.
 

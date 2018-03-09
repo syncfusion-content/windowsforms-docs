@@ -518,9 +518,10 @@ Visual Styles for the SplitContainerAdv control is set through Style property. T
 * Mozilla and 
 * Default.
 * Metro
-
-
-
+* Office2016Colorful
+* Office2016White
+* Office2016DarkGray
+* Office2016Black
 
 {% highlight C# %}
 
@@ -528,22 +529,128 @@ Visual Styles for the SplitContainerAdv control is set through Style property. T
 
 //Sets Office2007 Black color scheme for the control.
 
-this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Style.Office2007Black;
+this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2007Black;
 
 {% endhighlight %}
-
-
-
 
 {% highlight vbnet %}
 
 'Sets Office2007 Black color scheme for the control.
 
-Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Style.Office2007Black
+Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2007Black
 
 {% endhighlight %}
 
  ![](SplitContainerAdv-Images/Overview_img402.png) 
 
+**Office2016Colorful**
 
+This option helps to set the Office2016Colorful style.
 
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Colorful
+
+Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2016Colorful
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](SplitContainerAdv-Images/Overview_img405.png) 
+
+**Office2016White**
+
+This option helps to set the Office2016White style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016White
+
+this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016White
+
+Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2016White
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](SplitContainerAdv-Images/Overview_img406.png) 
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016DarkGray
+
+this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016DarkGray
+
+Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2016DarkGray
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](SplitContainerAdv-Images/Overview_img407.png) 
+
+**Office2016Black**
+
+This option helps to set the Office2016Black style.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Black
+
+this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2016Black
+
+Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2016Black
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](SplitContainerAdv-Images/Overview_img408.png) 

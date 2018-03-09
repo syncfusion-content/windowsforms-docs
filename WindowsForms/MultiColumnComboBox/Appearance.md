@@ -15,6 +15,11 @@ Visual styles for the MultiColumnComboBox control can be specified using MultiCo
 * OfficeXP
 * VS2005
 * Office2007 (with all the three color schemes).
+* Metro
+* Office2016Colorful
+* Office2016White
+* Office2016Black
+* Office2016DarkGray
 
 {% highlight c# %}
 
@@ -41,7 +46,23 @@ Me.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office20
 
 ![](Overview_images/Overview_img329.jpeg) 
 
+//Sample code for setting "Office2016 Colorful" style for MultiColumnComboBox
 
+{% highlight c# %}
+
+
+
+this.multiColumnComboBox1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+Me.multiColumnComboBox1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
+
+{% endhighlight %}
 
 ## Custom Colors
 
