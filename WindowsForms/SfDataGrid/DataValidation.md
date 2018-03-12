@@ -56,6 +56,38 @@ public partial class OrderInfo : IDataErrorInfo
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Partial Public Class OrderInfo
+	Implements IDataErrorInfo
+	''' <summary>
+	''' Initializes a new instance of the <see cref="OrderInfo"/> class.
+	''' </summary>
+	Public Sub New()
+	End Sub
+
+	''' <summary>
+	''' Gets or sets quantity
+	''' </summary>
+	''' <value>the quantity</value>     
+	Public Property Quantity() As Integer
+
+	Public ReadOnly Property [Error]() As String
+		Get
+			Return String.Empty
+		End Get
+	End Property
+
+	Default Public ReadOnly Property Item(ByVal columnName As String) As String
+		Get
+			If columnName = "Quantity" AndAlso Me.Quantity < 30 Then
+				Return "The quantity is less than minimum"
+			End If
+
+			Return String.Empty
+		End Get
+	End Property
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 Enable the validation for the SfDataGrid,
@@ -69,6 +101,15 @@ this.sfDataGrid.ValidationMode = GridValidationMode.InEdit;
 
 // Set the validation mode only for the particular column.
 this.sfDataGrid.Columns["Quantity"].ValidationMode = GridValidationMode.InEdit;
+{% endhighlight %}]
+{% highlight vb %}
+' Set the validation mode for the grid.
+Me.sfDataGrid.ValidationMode = GridValidationMode.InEdit
+
+'Or
+
+' Set the validation mode only for the particular column.
+Me.sfDataGrid.Columns("Quantity").ValidationMode = GridValidationMode.InEdit
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,6 +147,32 @@ public partial class OrderInfo : IDataErrorInfo
         }
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+Partial Public Class OrderInfo
+	Implements IDataErrorInfo
+	''' <summary>
+	''' Initializes a new instance of the <see cref="OrderInfo"/> class.
+	''' </summary>
+	Public Sub New()
+	End Sub
+
+		  <Display(AutoGenerateField := False)>
+		  Public ReadOnly Property [Error]() As String
+				  Get
+						   If Me.Country.Contains("Germany") OrElse Me.Country.Contains("UK") Then
+									Return "Delivery not available for the country " & Me.Country
+						   End If
+						   Return String.Empty
+				  End Get
+		  End Property
+
+	Default Public ReadOnly Property Item(ByVal columnName As String) As String
+		Get
+			Return String.Empty
+		End Get
+	End Property
+End Class
 {% endhighlight %}
 {% endtabs %}
 
@@ -154,6 +221,45 @@ public class OrderInfo : INotifyDataErrorInfo
     public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class OrderInfo
+	Implements INotifyDataErrorInfo
+	Private errors As New List(Of String)()
+
+	Private _shipCountry As String
+
+	<Display(Name := "Ship Address")>
+	Public Property ShipCountry() As String
+		Get
+			Return _shipCountry
+		End Get
+		Set(ByVal value As String)
+			_shipCountry = value
+		End Set
+	End Property
+
+	Public Function GetErrors(ByVal propertyName As String) As System.Collections.IEnumerable
+		If Not propertyName.Equals("ShipCountry ") Then
+			Return Nothing
+		End If
+
+		If Me.ShipCity.Contains("Mexico") Then
+			errors.Add("Delivery not available for the city " & ShipCountry)
+		End If
+
+		Return errors
+	End Function
+
+	<Display(AutoGenerateField := False)>
+	Public ReadOnly Property HasErrors() As Boolean
+		Get
+			Return False
+		End Get
+	End Property
+
+	Public Event ErrorsChanged As EventHandler(Of DataErrorsChangedEventArgs)
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 ![](DataValidation_images/DataValidation_img3.png)
@@ -165,7 +271,7 @@ The error message can be shown in a row header by setting [INotifyDataErrorInfo.
 {% highlight c# %}
 public class OrderInfo : INotifyDataErrorInfo
 {
-    private List&lt;string&gt; errors = new List&lt;string&gt;();    
+    private List<string> errors = new List<string>();    
     private string shipCountry;
     [Display(Name = "Ship Address")]
     public string ShipCountry
@@ -187,8 +293,37 @@ public class OrderInfo : INotifyDataErrorInfo
             return false;
         }
     }
-    public event EventHandler&lt;DataErrorsChangedEventArgs&gt; ErrorsChanged;
+    public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
 }
+{% endhighlight %}
+{% highlight vb %}
+Public Class OrderInfo
+	Implements INotifyDataErrorInfo
+	Private errors As New List(Of String)()
+	Private _shipCountry As String
+	<Display(Name := "Ship Address")>
+	Public Property ShipCountry() As String
+		Get
+			Return _shipCountry
+		End Get
+		Set(ByVal value As String)
+			_shipCountry = value
+		End Set
+	End Property
+	Public Function GetErrors(ByVal propertyName As String) As System.Collections.IEnumerable
+		Return Nothing
+	End Function
+	<Display(AutoGenerateField := False)>
+	Public ReadOnly Property HasErrors() As Boolean
+		Get
+		   If Me.ShipCountry.Contains("Mexico") Then
+			   Return True
+		   End If
+			Return False
+		End Get
+	End Property
+	Public Event ErrorsChanged As EventHandler(Of DataErrorsChangedEventArgs)
+End Class
 {% endhighlight %}
 {% endtabs %}
 
@@ -220,6 +355,29 @@ public decimal Price
     set { price = value; }
 }
 {% endhighlight %}
+{% highlight vb %}
+Private _orderID As Integer
+<Range(10001, 10005, ErrorMessage := "OrderID between 10001 and 10005 alone processed")>
+Public Property OrderID() As Integer
+	Get
+		Return _orderID
+	End Get
+	Set(ByVal value As Integer)
+		_orderID = value
+	End Set
+End Property
+
+Private _price As Decimal
+<Range(GetType(Decimal),"12","20")>
+Public Property Price() As Decimal
+	Get
+		Return _price
+	End Get
+	Set(ByVal value As Decimal)
+		_price = value
+	End Set
+End Property
+{% endhighlight %}
 {% endtabs %}
 
 ![](DataValidation_images/DataValidation_img5.png)
@@ -245,6 +403,29 @@ public string ProductName
     set { productName = value; }
 }
 {% endhighlight %}
+{% highlight vb %}
+Private shippingCity As String
+<Required>
+Public Property ShipCity() As String
+	Get
+		Return shippingCity
+	End Get
+	Set(ByVal value As String)
+		shippingCity = value
+	End Set
+End Property
+
+Private _productName As String
+<StringLength(17)>
+Public Property ProductName() As String
+	Get
+		Return _productName
+	End Get
+	Set(ByVal value As String)
+		_productName = value
+	End Set
+End Property
+{% endhighlight %}
 {% endtabs %}
 
 ![](DataValidation_images/DataValidation_img6.png)
@@ -266,6 +447,17 @@ public string CustomerID
         this.customerID = value;
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+<RegularExpressionAttribute("^[a-zA-Z]{1,40}$", ErrorMessage := "Numbers and special characters not allowed")>
+Public Property CustomerID() As String
+	Get
+		Return Me.customerID
+	End Get
+	Set(ByVal value As String)
+		Me.customerID = value
+	End Set
+End Property
 {% endhighlight %}
 {% endtabs %}
 
@@ -289,6 +481,15 @@ void sfDataGrid_CurrentCellValidating(object sender, CurrentCellValidatingEventA
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.CurrentCellValidating, AddressOf sfDataGrid_CurrentCellValidating
+Private Sub sfDataGrid_CurrentCellValidating(ByVal sender As Object, ByVal e As CurrentCellValidatingEventArgs)
+	If e.NewValue.ToString().Equals("10004") Then
+		e.IsValid = False
+		e.ErrorMessage = "OrderID 10004 cannot be passed"
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ![](DataValidation_images/DataValidation_img8.png)
@@ -304,6 +505,13 @@ void sfDataGrid_CurrentCellValidated(object sender, CurrentCellValidatedEventArg
 {
     MessageBox.Show("Cell validation is passed.");
 }
+{% endhighlight %}
+{% highlight vb %}
+Private Me.sfDataGrid.CurrentCellValidated += AddressOf sfDataGrid_CurrentCellValidated
+
+Private Sub sfDataGrid_CurrentCellValidated(ByVal sender As Object, ByVal e As CurrentCellValidatedEventArgs)
+	MessageBox.Show("Cell validation is passed.")
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -324,6 +532,18 @@ void sfDataGrid_RowValidating(object sender, RowValidatingEventArgs e)
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+
+AddHandler sfDataGrid.RowValidating, AddressOf sfDataGrid_RowValidating
+Private Sub sfDataGrid_RowValidating(ByVal sender As Object, ByVal e As RowValidatingEventArgs)
+	Dim data = TryCast(e.DataRow.RowData, OrderInfo)
+
+	If data.CustomerID.Equals("AROUT") Then
+		e.IsValid = False
+		e.ErrorMessage ="Customer AROUT cannot be passed"
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ![](DataValidation_images/DataValidation_img9.png)
@@ -338,6 +558,12 @@ void sfDataGrid1_RowValidated(object sender, RowValidatedEventArgs e)
     MessageBox.Show("Row validation is completed");
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.RowValidated, AddressOf sfDataGrid1_RowValidated
+Private Sub sfDataGrid1_RowValidated(ByVal sender As Object, ByVal e As RowValidatedEventArgs)
+	MessageBox.Show("Row validation is completed")
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ## Customizing Error Icon and ToolTip
@@ -349,6 +575,10 @@ The custom error icon can be set by using the [ErrorIcon](https://help.syncfusio
 {% highlight c# %}
 //Setting the custom error icon
 this.sfDataGrid.Style.ErrorIcon = SystemIcons.Error.ToBitmap();
+{% endhighlight %}
+{% highlight vb %}
+'Setting the custom error icon
+Me.sfDataGrid.Style.ErrorIcon = SystemIcons.Error.ToBitmap()
 {% endhighlight %}
 {% endtabs %}
 
@@ -363,6 +593,13 @@ this.sfDataGrid.ShowErrorIcon = false;
 
 // Disables the error icon in row header
 this.sfDataGrid.ShowRowHeaderErrorIcon = false;
+{% endhighlight %}
+{% highlight vb %}
+' Disable the Error Icon in Cell level
+Me.sfDataGrid.ShowErrorIcon = False
+
+' Disables the error icon in row header
+Me.sfDataGrid.ShowRowHeaderErrorIcon = False
 {% endhighlight %}
 {% endtabs %}
 
@@ -382,6 +619,16 @@ void sfDataGrid_ValidationErrorToolTipOpening(object sender, ValidationErrorTool
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.ValidationErrorToolTipOpening, AddressOf sfDataGrid_ValidationErrorToolTipOpening
+
+Private Sub sfDataGrid_ValidationErrorToolTipOpening(ByVal sender As Object, ByVal e As ValidationErrorToolTipOpeningEventArgs)
+	If e.Column IsNot Nothing AndAlso e.Column.MappingName = "OrderID" Then
+		e.ToolTipInfo.Items(0).Style.BackColor = Color.Green
+		e.ToolTipInfo.Items(0).Style.ForeColor = Color.White
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ![](DataValidation_images/DataValidation_img11.png)
@@ -392,6 +639,10 @@ The validation error tool tip can be disabled by setting the [ShowValidationErro
 {% highlight c# %}
 // Disable the validation tool tip.
 this.sfDataGrid.ShowValidationErrorToolTip = false;
+{% endhighlight %}
+{% highlight vb %}
+' Disable the validation tool tip.
+Me.sfDataGrid.ShowValidationErrorToolTip = False
 {% endhighlight %}
 {% endtabs %}
 

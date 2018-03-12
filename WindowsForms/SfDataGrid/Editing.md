@@ -15,6 +15,10 @@ SfDataGrid provides support for editing and it can be enabled or disabled by set
 //Enable Editing for the whole grid. 
 this.sfDataGrid.AllowEditing = true;
 {% endhighlight %}
+{% highlight vb %}
+'Enable Editing for the whole grid. 
+Me.sfDataGrid.AllowEditing = True
+{% endhighlight %}
 {% endtabs %}
 
 The editing can be enabled only for the particular columns by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowEditing.html) property to `true`. 
@@ -23,6 +27,10 @@ The editing can be enabled only for the particular columns by setting the [GridC
 {% highlight c# %}
 // Enable editing for particular column.
 this.sfDataGrid.Columns[0].AllowEditing = true;
+{% endhighlight %}
+{% highlight vb %}
+' Enable editing for particular column.
+Me.sfDataGrid.Columns(0).AllowEditing = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,6 +44,10 @@ The current cell can be enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&g
 {% highlight c# %}
 // Enters to the edit mode of the cell using double click
 this.sfDataGrid.EditMode = EditMode.DoubleClick;
+{% endhighlight %}
+{% highlight vb %}
+' Enters to the edit mode of the cell using double click
+Me.sfDataGrid.EditMode = EditMode.DoubleClick
 {% endhighlight %}
 {%endtabs%}
 
@@ -51,6 +63,10 @@ The following types of [EditorSelectionBehavior](https://help.syncfusion.com/cr/
 {% highlight  c# %}
 // Select all the text while entering to the edit mode.
 this.sfDataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
+{% endhighlight %}
+{% highlight  vb %}
+' Select all the text while entering to the edit mode.
+Me.sfDataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,6 +88,16 @@ void sfDataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
         e.Cancel = true;
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Me.sfDataGrid.CurrentCellBeginEdit += AddressOf sfDataGrid_CurrentCellBeginEdit
+
+Private Sub sfDataGrid_CurrentCellBeginEdit(ByVal sender As Object, ByVal e As CurrentCellBeginEditEventArgs)
+	'Cancel the editing of the particular column.
+	If e.DataColumn.GridColumn.MappingName = "ProductName" Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Display Message Box on current cell Editing Complete
@@ -85,6 +111,13 @@ void sfDataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs e)
 {
     MessageBox.Show("The editing is completed for the cell (" + e.DataRow.RowIndex + "," + e.DataColumn.ColumnIndex + ")");
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.CurrentCellEndEdit, AddressOf sfDataGrid_CurrentCellEndEdit
+
+Private Sub sfDataGrid_CurrentCellEndEdit(ByVal sender As Object, ByVal e As CurrentCellEndEditEventArgs)
+	MessageBox.Show("The editing is completed for the cell (" & e.DataRow.RowIndex & "," & e.DataColumn.ColumnIndex & ")")
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -105,6 +138,13 @@ private void button1_Click(object sender, System.EventArgs e)
     this.sfDataGrid.CurrentCell.BeginEdit();
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+	Dim rowColumnIndex As New RowColumnIndex(3, 2)
+	Me.sfDataGrid.MoveToCurrentCell(rowColumnIndex)
+	Me.sfDataGrid.CurrentCell.BeginEdit()
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### End Editing
@@ -115,6 +155,10 @@ The editing can be end programmatically by using the [EndEdit](https://help.sync
 // End the editing of the current cell
 this.sfDataGrid.CurrentCell.EndEdit();
 {% endhighlight %}
+{% highlight vb %}
+' End the editing of the current cell
+Me.sfDataGrid.CurrentCell.EndEdit()
+{% endhighlight %}
 {% endtabs %}
 
 ### Cancel Editing
@@ -124,5 +168,9 @@ The editing can be canceled by calling the [CancelEdit](https://help.syncfusion.
 {% highlight c# %}
 // Cancel the editing of the current cell.
 this.sfDataGrid.CurrentCell.CancelEdit();
+{% endhighlight %}
+{% highlight vb %}
+' Cancel the editing of the current cell.
+Me.sfDataGrid.CurrentCell.CancelEdit()
 {% endhighlight %}
 {% endtabs %}

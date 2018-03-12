@@ -15,6 +15,10 @@ SfDataGrid control is designed to display the bounded data in a tabular format. 
 OrderInfoCollection collection = new OrderInfoCollection();
 this.sfDataGrid1.DataSource = collection.OrdersListDetails;
 {% endhighlight %}
+{% highlight vb %}
+Dim collection As New OrderInfoCollection()
+Me.sfDataGrid1.DataSource = collection.OrdersListDetails
+{% endhighlight %}
 {% endtabs %}
 
 If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged) interface, then `SfDataGrid` control will automatically refresh the UI when item is added, removed or while list cleared.
@@ -30,6 +34,10 @@ When you add, remove item in [ObservableCollection](https://msdn.microsoft.com/l
 {% highlight c# %}
 DataTable dataTable = this.GetDataTable();
 this.sfDataGrid1.DataSource = dataTable;
+{% endhighlight %}
+{% highlight vb %}
+Dim dataTable As DataTable = Me.GetDataTable()
+Me.sfDataGrid1.DataSource = dataTable
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,6 +60,11 @@ DataSet dataSet = new DataSet();
 dataSet.ReadXml(@"..\\..\\Data\\Datasource.xml");
 this.sfDataGrid1.DataSource = dataSet.Tables[0];
 {% endhighlight %}
+{% highlight vb %}
+Dim dataSet As New DataSet()
+dataSet.ReadXml("..\\..\\Data\\Datasource.xml")
+Me.sfDataGrid1.DataSource = dataSet.Tables(0)
+{% endhighlight %}
 {% endtabs %}
 ![](DataBinding_images/DataBinding_img2.jpeg)
 
@@ -59,7 +72,10 @@ this.sfDataGrid1.DataSource = dataSet.Tables[0];
 SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html).
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "Empcomplexmodel.EmpName", HeaderText = "Employee Name" });
+this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeComplexModel.EmployeeName", HeaderText = "Employee Name" });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeComplexModel.EmployeeName", .HeaderText = "Employee Name"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,7 +88,10 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
 SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to `GridColumn`, set the indexer property path to `MappingName`.
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmpDetails[0].Title", HeaderText = "Title" });
+this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeDetails[0].Title", HeaderText = "Title" });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeDetails[0].Title", .HeaderText = "Title"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -330,6 +349,10 @@ The data from the defined entity model can be loaded as a data source to the `Sf
 NORTHWNDEntities northWind = new NORTHWNDEntities();
 this.sfDataGrid1.DataSource = northWind.Order_Details;
 {% endhighlight %}
+{% highlight vb %}
+Dim northWind As New NORTHWNDEntities()
+Me.sfDataGrid1.DataSource = northWind.Order_Details
+{% endhighlight %}
 {% endtabs %}
 
 Now, run the application and you can see the following screenshot shows the `SfDataGrid` control populated with data from Entity Framework data service.
@@ -374,8 +397,12 @@ The data from the defined data model of the LINQ to SQL classes can be loaded as
 
 {% tabs %}
 {% highlight c# %}
-NorthwindDataContext nordthWinddataContext = new NorthwindDataContext();
-this.sfDataGrid1.DataSource = nordthWinddataContext.Shippers;
+NorthwindDataContext northWindDataContext = new NorthwindDataContext();
+this.sfDataGrid1.DataSource = northWindDataContext.Shippers;
+{% endhighlight %}
+{% highlight vb %}
+Dim northWindDataContext As New NorthwindDataContext()
+Me.sfDataGrid1.DataSource = northWindDataContext.Shippers
 {% endhighlight %}
 {% endtabs %}
 ![](DataBinding_images/DataBinding_img15.jpeg)
@@ -424,6 +451,14 @@ sqlConnection.Open();
 SqlDataAdapter sqlAdapter = new SqlDataAdapter("Select * from Suppliers", sqlConnection);
 sqlAdapter.Fill(dataSet, "Suppliers");
 this.sfDataGrid1.DataSource = dataSet.Tables["Suppliers"];
+{% endhighlight %}
+{% highlight vb %}
+Dim dataSet As New DataSet()
+Dim sqlConnection As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=NORTHWND.MDF;Integrated Security=True;Connect Timeout=30")
+sqlConnection.Open()
+Dim sqlAdapter As New SqlDataAdapter("Select * from Suppliers", sqlConnection)
+sqlAdapter.Fill(dataSet, "Suppliers")
+Me.sfDataGrid1.DataSource = dataSet.Tables("Suppliers")
 {% endhighlight %}
 {% endtabs %}
 
@@ -481,6 +516,15 @@ oleConnection.Open();
 oleDataAdapter.Fill(employeeDataSet, "Employees");
 oleConnection.Close();
 this.sfDataGrid1.DataSource = employeeDataSet.Tables[“Employees”];
+{% endhighlight %}
+{% highlight vb %}
+Dim oleConnection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\SfWinforms\SfDataGrid_UserGuide\Sample\DataBinding\Data\Employees.accdb;Persist Security Info=True")
+Dim oleDataAdapter As New OleDbDataAdapter("SELECT * FROM Employees", oleConnection)
+Dim employeeDataSet As New EmployeesDataSet()
+oleConnection.Open()
+oleDataAdapter.Fill(employeeDataSet, "Employees")
+oleConnection.Close()
+Me.sfDataGrid1.DataSource = employeeDataSet.Tables(“Employees”)
 {% endhighlight %}
 {% endtabs %}
 
