@@ -136,6 +136,22 @@ namespace WindowsFormsApplication1
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Imports Syncfusion.WinForms.DataGrid
+
+Namespace WindowsFormsApplication1
+	Partial Public Class Form1
+		Inherits Form
+		Public Sub New()
+			InitializeComponent()
+			Dim sfDataGrid1 As New SfDataGrid()
+			sfDataGrid1.Location = New System.Drawing.Point(85, 108)
+			sfDataGrid1.Size = New System.Drawing.Size(240, 150)
+			Me.Controls.Add(Me.sfDataGrid1)
+		End Sub
+	End Class
+End Namespace
+{% endhighlight %}
 {% endtabs %}
 
 ### Creating Data for sample application
@@ -194,6 +210,68 @@ public class OrderInfo
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class OrderInfo
+	Private _orderID As Integer
+	Private _customerId As String
+	Private _country As String
+	Private _customerName As String
+	Private _shippingCity As String
+
+	Public Property OrderID() As Integer
+		Get
+			Return _orderID
+		End Get
+		Set(ByVal value As Integer)
+			_orderID = value
+		End Set
+	End Property
+
+	Public Property CustomerID() As String
+		Get
+			Return _customerId
+		End Get
+		Set(ByVal value As String)
+			_customerId = value
+		End Set
+	End Property
+
+	Public Property CustomerName() As String
+		Get
+			Return _customerName
+		End Get
+		Set(ByVal value As String)
+			_customerName = value
+		End Set
+	End Property
+
+	Public Property Country() As String
+		Get
+			Return _country
+		End Get
+		Set(ByVal value As String)
+			_country = value
+		End Set
+	End Property
+
+	Public Property ShipCity() As String
+		Get
+			Return _shippingCity
+		End Get
+		Set(ByVal value As String)
+			_shippingCity = value
+		End Set
+	End Property
+
+	Public Sub New(ByVal orderId As Integer, ByVal customerName As String, ByVal country As String, ByVal customerId As String, ByVal shipCity As String)
+		Me.OrderID = orderId
+		Me.CustomerName = customerName
+		Me.Country = country
+		Me.CustomerID = customerId
+		Me.ShipCity = shipCity
+	End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 2. Create an **OrderInfoCollection** class with Orders property and Orders property is initialized with several data objects in constructor.
@@ -229,6 +307,37 @@ public class OrderInfoCollection
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class OrderInfoCollection
+	Private _orders As ObservableCollection(Of OrderInfo)
+	Public Property Orders() As ObservableCollection(Of OrderInfo)
+		Get
+			Return _orders
+		End Get
+		Set(ByVal value As ObservableCollection(Of OrderInfo))
+			_orders = value
+		End Set
+	End Property
+
+	Public Sub New()
+		_orders = New ObservableCollection(Of OrderInfo)()
+		Me.GenerateOrders()
+	End Sub
+
+	Private Sub GenerateOrders()
+		_orders.Add(New OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"))
+		_orders.Add(New OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."))
+		_orders.Add(New OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."))
+		_orders.Add(New OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"))
+		_orders.Add(New OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"))
+		_orders.Add(New OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"))
+		_orders.Add(New OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"))
+		_orders.Add(New OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"))
+		_orders.Add(New OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"))
+		_orders.Add(New OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"))
+	End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 ### Binding to Data
@@ -237,6 +346,10 @@ To bind the SfDataGrid to data, set the `SfDataGrid.DataSource` property to an I
 {% highlight c# %}
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
 sfDataGrid1.DataSource = orderInfoCollection.Orders;
+{% endhighlight %}
+{% highlight vb %}
+Dim orderInfoCollection As New OrderInfoCollection()
+sfDataGrid1.DataSource = orderInfoCollection.Orders
 {% endhighlight %}
 {% endtabs %}
 Now, run the application and you can expect the see the below output,
@@ -310,6 +423,11 @@ You can prevent the automatic column generation by setting `SfDataGrid.AutoGene
 sfDataGrid1.AutoGenerateColumns = false;
 sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
 sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "CustomerID" });
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid1.AutoGenerateColumns = False
+sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID"})
+sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "CustomerID"})
 {% endhighlight %}
 {% endtabs %}
 Below is the list of column types provided in SfDataGrid.
@@ -390,13 +508,14 @@ Represents SfDataGrid column that hosts textual content which are not actually b
 
 ## Selection
 By default, the entire row is selected when a user clicks a cell in a SfDataGrid. You can set the `SfDataGrid.SelectionMode` property to specify whether a user can select single row, or multiple rows. You can get information about the rows that are selected using `SfDataGrid.SelectedItem` and `SfDataGrid.SelectedItems` properties.
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight c# %}
 sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Extended;
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Extended
+{% endhighlight %}
+{% endtabs %}
 ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
 You can handle the selection operations with the help of `SfDataGrid.SelectionChanging` and `SfDataGrid.SelectionChanged` events of SfDataGrid.
@@ -411,6 +530,11 @@ OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
 sfDataGrid1.DataSource = orderInfoCollection.Orders;
 sfDataGrid1.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "Country" });
 {% endhighlight %}
+{% highlight vb %}
+Dim orderInfoCollection As New OrderInfoCollection()
+sfDataGrid1.DataSource = orderInfoCollection.Orders
+sfDataGrid1.SortColumnDescriptions.Add(New SortColumnDescription() With {.ColumnName = "Country"})
+{% endhighlight %}
 {% endtabs %}
 ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
@@ -424,7 +548,15 @@ void sfDataGrid1_SortColumnsChanging(object sender, Syncfusion.WinForms.DataGrid
     if (e.AddedItems[0].ColumnName == "CustomerName")
         e.Cancel = true;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.SortColumnsChanging, AddressOf sfDataGrid1_SortColumnsChanging
 
+Private Sub sfDataGrid1_SortColumnsChanging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.SortColumnsChangingEventArgs)
+	If e.AddedItems(0).ColumnName = "CustomerName" Then
+		e.Cancel = True
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -436,6 +568,11 @@ OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
 sfDataGrid1.DataSource = orderInfoCollection.Orders;
 sfDataGrid1.GroupColumnDescriptions.Add(new GroupColumnDescription() { ColumnName = "CustomerName" });
 {% endhighlight %}
+{% highlight vb %}
+Dim orderInfoCollection As New OrderInfoCollection()
+sfDataGrid1.DataSource = orderInfoCollection.Orders
+sfDataGrid1.GroupColumnDescriptions.Add(New GroupColumnDescription() With {.ColumnName = "CustomerName"})
+{% endhighlight %}
 {% endtabs %}
 ![](GettingStarted_images/GettingStarted_img5.jpeg)
 
@@ -446,6 +583,11 @@ Filtering can be enabled by setting `SfDataGrid.AllowFiltering` property to tru
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
 sfDataGrid1.DataSource = orderInfoCollection.Orders;
 sfDataGrid1.AllowFiltering = true;
+{% endhighlight %}
+{% highlight vb %}
+Dim orderInfoCollection As New OrderInfoCollection()
+sfDataGrid1.DataSource = orderInfoCollection.Orders
+sfDataGrid1.AllowFiltering = True
 {% endhighlight %}
 {% endtabs %}
 ![](GettingStarted_images/GettingStarted_img6.jpeg)

@@ -15,6 +15,10 @@ SfDataGrid provides built-in row (called FilterRow) to filter the records. This 
 //Adding FilterRow at the top
 this.sfDataGrid1.FilterRowPosition = RowPosition.Top;
 {% endhighlight %}
+{% highlight vb %}
+'Adding FilterRow at the top
+Me.sfDataGrid1.FilterRowPosition = RowPosition.Top
+{% endhighlight %}
 {% endtabs %}
 
 ![](FilterRow_images/FilterRow_Image1.png)
@@ -26,6 +30,10 @@ The index of the filter row can be get by using the [GetFilterRowIndex](https://
 //Gets the filter row index.
 int filterRowIndex = this.sfDataGrid1.GetFilterRowIndex();
 {% endhighlight %}
+{% highlight vb %}
+'Gets the filter row index.
+Dim filterRowIndex As Integer = Me.sfDataGrid1.GetFilterRowIndex()
+{% endhighlight %}
 {% endtabs %}
 
 You can also check whether the given row index is the filter row index or not by using the [IsFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsFilterRowIndex.html) helper method.
@@ -34,6 +42,10 @@ You can also check whether the given row index is the filter row index or not by
 {% highlight c# %}
 //To check whether the given row index is the filter row or not.
 bool isFilterRow = this.sfDataGrid1.IsFilterRowIndex(filterRowIndex);
+{% endhighlight %}
+{% highlight vb %}
+'To check whether the given row index is the filter row or not.
+Dim isFilterRow As Boolean = Me.sfDataGrid1.IsFilterRowIndex(filterRowIndex)
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,6 +56,10 @@ By default, FilterRow loads the editors based on underlying property type to fil
 {% highlight c# %}
 //To load the text box filter for the particular column.
 this.sfDataGrid1.Columns[1].FilterRowEditorType = "TextBox";
+{% endhighlight %}
+{% highlight vb %}
+'To load the text box filter for the particular column.
+Me.sfDataGrid1.Columns(1).FilterRowEditorType = "TextBox"
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,7 +126,7 @@ Used to filter the Boolean values.
 DateTime
 </td>
 <td>
-SfDataTiemEdit
+SfDataTimeEdit
 </td>
 <td>
 FilterRowDateTimeCellRenderer
@@ -128,6 +144,10 @@ Based on the editor type, FilterRowCell displays the filter conditions in dropdo
 {% highlight c# %}
 // Collapse the visibility of the FilterRow options
 this.sfDataGrid1.Columns[2].ShowFilterRowOptions = false;
+{% endhighlight %}
+{% highlight vb %}
+' Collapse the visibility of the FilterRow options
+Me.sfDataGrid1.Columns(2).ShowFilterRowOptions = False
 {% endhighlight %}
 {% endtabs %}
 
@@ -224,6 +244,10 @@ The null values of the columns can be filtered by using the filter row options s
 // To remove the null filter conditions from the FilterRow options.
 this.sfDataGrid1.Columns[1].AllowBlankFilters = false;
 {% endhighlight %}
+{% highlight vb %}
+' To remove the null filter conditions from the FilterRow options.
+Me.sfDataGrid1.Columns(1).AllowBlankFilters = False
+{% endhighlight %}
 {% endtabs %}
 
 ![](FilterRow_images/FilterRow_Image4.png)
@@ -235,6 +259,10 @@ By default, filters are applied to the columns when moving to other cells or pre
 {% highlight c# %}
 // Enable the immediate filtering for the column.
 this.sfDataGrid1.Columns[0].ImmediateUpdateColumnFilter = true;
+{% endhighlight %}
+{% highlight vb %}
+' Enable the immediate filtering for the column.
+Me.sfDataGrid1.Columns(0).ImmediateUpdateColumnFilter = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -250,6 +278,13 @@ this.sfDataGrid.Columns[0].ImmediateUpdateColumnFilter = true;
 
 // Set the filter delay for the SfDataGrid.
 this.sfDataGrid.FilterDelay = 1000;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.FilterRowPosition = RowPosition.Top
+Me.sfDataGrid.Columns(0).ImmediateUpdateColumnFilter = True
+
+' Set the filter delay for the SfDataGrid.
+Me.sfDataGrid.FilterDelay = 1000
 {% endhighlight %}
 {% endtabs %}
 
@@ -268,6 +303,15 @@ void sfDataGrid1_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventAr
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.CurrentCellBeginEdit, AddressOf sfDataGrid1_CurrentCellBeginEdit
+Private Sub sfDataGrid1_CurrentCellBeginEdit(ByVal sender As Object, ByVal e As CurrentCellBeginEditEventArgs)
+	'Cancel the editing for filter row cell in OrderID Column
+	If e.DataColumn.GridColumn.MappingName = "OrderID" AndAlso Me.sfDataGrid1.IsFilterRowIndex(e.DataRow.RowIndex) Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ## Appearance
@@ -278,6 +322,11 @@ The fore color and back color of the filter row can be customized by using the [
 this.sfDataGrid1.Style.FilterRowStyle.BackColor = Color.RosyBrown;
 this.sfDataGrid1.Style.FilterRowStyle.TextColor = Color.White;
 this.sfDataGrid1.Style.FilterRowStyle.Font = new GridFontInfo(new Font("Segoe UI", 12f, FontStyle.Bold));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.FilterRowStyle.BackColor = Color.RosyBrown
+Me.sfDataGrid1.Style.FilterRowStyle.TextColor = Color.White
+Me.sfDataGrid1.Style.FilterRowStyle.Font = New GridFontInfo(New Font("Segoe UI", 12f, FontStyle.Bold))
 {% endhighlight %}
 {% endtabs %}
 
@@ -303,6 +352,20 @@ public class FilterRowTextBoxRendererExt : FilterRowTextBoxCellRenderer
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class FilterRowTextBoxRendererExt
+	Inherits FilterRowTextBoxCellRenderer
+	Public Sub New()
+		MyBase.New()
+	End Sub
+
+	Protected Overrides Sub DrawDropDownButton(ByVal g As Graphics, ByVal rect As Rectangle, ByVal backColor As Color)
+		'Modify the back color for the drop down button.
+		backColor = Color.Gray
+		MyBase.DrawDropDownButton(g, rect, backColor)
+	End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 Adding custom filter row cell renderer to the `FilterRowCellRenderers` collection on the button click,
@@ -318,6 +381,16 @@ private void btnApplyFilter_Click(object sender, System.EventArgs e)
     sfDataGrid.Columns[2].FilterRowEditorType = "CustomEditor";
     sfDataGrid.FilterRowPosition = RowPosition.Top;            
 }
+{% endhighlight %}
+{% highlight vb %}
+Private Sub btnApplyFilter_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+	'Add the custom renderer to the FilterRowCellRenderers collection.
+	Me.sfDataGrid.FilterRowCellRenderers.Add("CustomEditor", New FilterRowTextBoxRendererExt())
+
+	'Set the Custom filter row renderer for the column.
+	sfDataGrid.Columns(2).FilterRowEditorType = "CustomEditor"
+	sfDataGrid.FilterRowPosition = RowPosition.Top
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
