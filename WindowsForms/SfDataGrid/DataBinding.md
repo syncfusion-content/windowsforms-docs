@@ -72,10 +72,10 @@ Me.sfDataGrid1.DataSource = dataSet.Tables(0)
 SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html).
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "Empcomplexmodel.EmpName", HeaderText = "Employee Name" });
+this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeComplexModel.EmployeeName", HeaderText = "Employee Name" });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "Empcomplexmodel.EmpName", .HeaderText = "Employee Name"})
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeComplexModel.EmployeeName", .HeaderText = "Employee Name"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,10 +88,10 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
 SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to `GridColumn`, set the indexer property path to `MappingName`.
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmpDetails[0].Title", HeaderText = "Title" });
+this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeDetails[0].Title", HeaderText = "Title" });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmpDetails[0].Title", .HeaderText = "Title"})
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeDetails[0].Title", .HeaderText = "Title"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -397,12 +397,12 @@ The data from the defined data model of the LINQ to SQL classes can be loaded as
 
 {% tabs %}
 {% highlight c# %}
-NorthwindDataContext nordthWinddataContext = new NorthwindDataContext();
-this.sfDataGrid1.DataSource = nordthWinddataContext.Shippers;
+NorthwindDataContext northWindDataContext = new NorthwindDataContext();
+this.sfDataGrid1.DataSource = northWindDataContext.Shippers;
 {% endhighlight %}
 {% highlight vb %}
-Dim nordthWinddataContext As New NorthwindDataContext()
-Me.sfDataGrid1.DataSource = nordthWinddataContext.Shippers
+Dim northWindDataContext As New NorthwindDataContext()
+Me.sfDataGrid1.DataSource = northWindDataContext.Shippers
 {% endhighlight %}
 {% endtabs %}
 ![](DataBinding_images/DataBinding_img15.jpeg)
