@@ -50,7 +50,7 @@ Syncfusion.Data.WinForms assembly contains fundamental and base classes for `Co
 Syncfusion.SfDataGrid.WinForms
 </td>
 <td>
-Syncfusion.DataGrid.WinForms assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present Syncfusion.WinForms.DataGrid namespace.
+Syncfusion.DataGrid.WinForms assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present in Syncfusion.WinForms.DataGrid namespace.
 </td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@ Syncfusion.SfInput.WinForms contains various editor controls (such as SfNumericT
 </td>
 </tr>
 </table>
-In order to use export to Excel and export to Pdf functionalities of SfDataGrid control, add the reference to following assemblies,
+In order to use export to Excel and export to PDF functionalities of SfDataGrid control, add the reference to following assemblies,
 <table>
 <tr>
 <td>

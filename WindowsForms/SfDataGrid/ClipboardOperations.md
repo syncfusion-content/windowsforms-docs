@@ -195,7 +195,7 @@ void SfDataGrid1_PasteCellContent(object sender, CellCutCopyPasteEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHanlder sfDataGrid1.PasteCellContent, AddressOf SfDataGrid1_PasteCellContent
+AddHandler sfDataGrid1.PasteCellContent, AddressOf SfDataGrid1_PasteCellContent
 
 Private Sub SfDataGrid1_PasteCellContent(ByVal sender As Object, ByVal e As CellCutCopyPasteEventArgs)
 	If e.Column.MappingName = "CustomerID" Then
