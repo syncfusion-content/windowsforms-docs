@@ -17,6 +17,9 @@ When the column is grouped, records that have an identical value in the column a
 {% highlight c# %}
 this.sfDataGrid1.AllowGrouping = true;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.AllowGrouping = True
+{% endhighlight %}
 {% endtabs %}
 
 Grouping for particular column can  be enables or disabled by setting the [GridColumnBase.AllowGrouping](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowGrouping.html#) property.
@@ -24,6 +27,10 @@ Grouping for particular column can  be enables or disabled by setting the [GridC
 {% highlight c# %}
 this.sfDataGrid1.Columns["OrderID"].AllowGrouping = true;
 this.sfDataGrid1.Columns["CustomerID"].AllowGrouping = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns("OrderID").AllowGrouping = True
+Me.sfDataGrid1.Columns("CustomerID").AllowGrouping = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -49,6 +56,9 @@ If OrderID column need to be grouped programmatically, define its [MappingName](
 {% highlight c# %}
 this.sfDataGrid1.GroupColumnDescriptions.Add(new GroupColumnDescription() { ColumnName = "OrderID" });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.GroupColumnDescriptions.Add(New GroupColumnDescription() With {.ColumnName = "OrderID"})
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -62,7 +72,11 @@ this.sfDataGrid1.GroupColumnDescriptions.Remove(new GroupColumnDescription() { C
 // OR
 this.sfDataGrid1.GroupColumnDescriptions.RemoveAt(1);
 {% endhighlight %}
-
+{% highlight vb %}
+Me.sfDataGrid1.GroupColumnDescriptions.Remove(New GroupColumnDescription() With {.ColumnName = "OrderID"})
+' OR
+Me.sfDataGrid1.GroupColumnDescriptions.RemoveAt(1)
+{% endhighlight %}
 {% endtabs %}
 
 To ungroup the column in UI, click the close button on column header or drag the column header from the GroupDropArea and drop it on the header row.
@@ -74,6 +88,9 @@ All the groups of the `SfDataGrid` can be removed by using `Clear` method.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.GroupColumnDescriptions.Clear();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.GroupColumnDescriptions.Clear()
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,6 +111,9 @@ The group caption format can be changed to Key and ItemsCount alone by setting [
 {% highlight c# %}
 this.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}";
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}"
+{% endhighlight %}
 {% endtabs %}
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img8.png)
 
@@ -111,6 +131,9 @@ All the groups can be expanded while grouping by setting [SfDataGrid.View.AutoEx
 {% highlight c# %}
 this.sfDataGrid1.View.AutoExpandGroups = true;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.View.AutoExpandGroups = True
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -124,6 +147,10 @@ All the groups can be expanded or collapsed programmatically at runtime by using
 this.sfDataGrid1.ExpandAllGroup();
 this.sfDataGrid1.CollapseAllGroup();
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ExpandAllGroup()
+Me.sfDataGrid1.CollapseAllGroup()
+{% endhighlight %}
 {% endtabs %}
 
 #### Expand or collapse the group based on its level
@@ -132,6 +159,10 @@ Groups can be expanded or collapsed based on its level by using [SfDataGrid.Expa
 {% highlight c# %}
 this.sfDataGrid1.ExpandGroupsAtLevel(2);
 this.sfDataGrid1.CollapseGroupsAtLevel(2);
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ExpandGroupsAtLevel(2)
+Me.sfDataGrid1.CollapseGroupsAtLevel(2)
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,6 +173,10 @@ Specific group can be expanded or collapsed  by using [SfDataGrid.ExpandGroup](h
 this.sfDataGrid1.ExpandGroup(this.sfDataGrid1.View.TopLevelGroup);
 this.sfDataGrid1.CollapseGroup(this.sfDataGrid1.View.TopLevelGroup);
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ExpandGroup(Me.sfDataGrid1.View.TopLevelGroup)
+Me.sfDataGrid1.CollapseGroup(Me.sfDataGrid1.View.TopLevelGroup)
+{% endhighlight %}
 {% endtabs %}
 
 ## Changing the indent column width
@@ -149,6 +184,9 @@ The width of IndentColumn in SfDataGrid can be customized by using [IndentColumn
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.IndentColumnWidth = 100;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.IndentColumnWidth = 100
 {% endhighlight %}
 {% endtabs %}
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img9.png)
@@ -162,6 +200,9 @@ The GroupDropArea’ s text can be changed by setting [SfDataGrid.GroupPanel.Gro
 {% highlight c# %}
 this.sfDataGrid1.GroupPanel.GroupDropAreaText = "Drag columns here";
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.GroupPanel.GroupDropAreaText = "Drag columns here"
+{% endhighlight %}
 {% endtabs %}
 
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img10.png)
@@ -172,6 +213,9 @@ The height of the GroupDropArea can be customized by `GroupPanel.Height` propert
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.GroupPanel.Height = 100;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.GroupPanel.Height = 100
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,6 +228,10 @@ The appearance of the GroupDropArea can be customized using the [GroupDropAreaSt
 this.sfDataGrid1.Style.GroupDropAreaStyle.BackColor = Color.LightSkyBlue;
 this.sfDataGrid1.Style.GroupDropAreaStyle.TextColor = Color.Red;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.GroupDropAreaStyle.BackColor = Color.LightSkyBlue
+Me.sfDataGrid1.Style.GroupDropAreaStyle.TextColor = Color.Red
+{% endhighlight %}
 {% endtabs %}
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img12.png)
 
@@ -193,6 +241,10 @@ The appearance of the grouped items in the GroupDropArea can be customized using
 {% highlight c# %}
 this.sfDataGrid1.Style.GroupDropAreaItemStyle.TextColor = Color.DarkBlue;
 this.sfDataGrid1.Style.GroupDropAreaItemStyle.BackColor = Color.LightSkyBlue;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.GroupDropAreaItemStyle.TextColor = Color.DarkBlue
+Me.sfDataGrid1.Style.GroupDropAreaItemStyle.BackColor = Color.LightSkyBlue
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,6 +290,42 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
 
 });
 {% endhighlight %}
+{% highlight vb %}
+Private Sub New()
+	Dim dt = DateTime.Now
+	Dim item = (TryCast(o, SalesByDate)).Date
+	Dim days = CInt(Fix(Math.Floor((dt - item).TotalDays)))
+	Dim dayofweek = CInt(Fix(dt.DayOfWeek))
+	Dim diff = days - dayofweek
+	If days <= dayofweek Then
+		If days = 0 Then
+			Return "TODAY"
+		End If
+			If days = 1 Then
+				Return "YESTERDAY"
+			End If
+				Return item.Date.DayOfWeek.ToString().ToUpper()
+	End If
+	If diff > 0 AndAlso diff <= 7 Then
+		Return "LAST WEEK"
+	End If
+		If diff > 7 AndAlso diff <= 14 Then
+			Return "TWO WEEKS AGO"
+		End If
+			If diff > 14 AndAlso diff <= 21 Then
+				Return "THREE WEEKS AGO"
+			End If
+				If dt.Year = item.Date.Year AndAlso dt.Month = item.Date.Month Then
+					Return "EARLIER THIS MONTH"
+				End If
+					If DateTime.Now.AddMonths(-1).Month = item.Date.Month Then
+						Return "LAST MONTH"
+					End If
+						Return "OLDER"
+End Sub
+End Function
+Private )
+{% endhighlight %}
 {% endtabs %}
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img14.png)
 
@@ -279,6 +367,42 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
 
 });
 {% endhighlight %}
+{% highlight vb %}
+Private Sub New()
+	Dim dt = DateTime.Now
+	Dim item = (TryCast(o, SalesByDate)).Date
+	Dim days = CInt(Fix(Math.Floor((dt - item).TotalDays)))
+	Dim dayofweek = CInt(Fix(dt.DayOfWeek))
+	Dim diff = days - dayofweek
+	If days <= dayofweek Then
+		If days = 0 Then
+			Return "TODAY"
+		End If
+			If days = 1 Then
+				Return "YESTERDAY"
+			End If
+				Return item.Date.DayOfWeek.ToString().ToUpper()
+	End If
+	If diff > 0 AndAlso diff <= 7 Then
+		Return "LAST WEEK"
+	End If
+		If diff > 7 AndAlso diff <= 14 Then
+			Return "TWO WEEKS AGO"
+		End If
+			If diff > 14 AndAlso diff <= 21 Then
+				Return "THREE WEEKS AGO"
+			End If
+				If dt.Year = item.Date.Year AndAlso dt.Month = item.Date.Month Then
+					Return "EARLIER THIS MONTH"
+				End If
+					If DateTime.Now.AddMonths(-1).Month = item.Date.Month Then
+						Return "LAST MONTH"
+					End If
+						Return "OLDER"
+End Sub
+End Function
+Private )
+{% endhighlight %}
 {% endtabs %}
 
 Download sample from below location,
@@ -297,6 +421,15 @@ private void SfDataGrid1_GroupExpanding(object sender, GroupChangingEventArgs e)
         e.Cancel = true;
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.GroupExpanding, AddressOf SfDataGrid1_GroupExpanding
+
+Private Sub SfDataGrid1_GroupExpanding(ByVal sender As Object, ByVal e As GroupChangingEventArgs)
+	If e.Group.Key.Equals(1001) Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Cancel collapsing of groups
@@ -310,5 +443,14 @@ private void SfDataGrid1_GroupCollapsing(object sender, GroupChangingEventArgs e
     if (e.Group.Key.Equals(1001))
         e.Cancel = true;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.GroupCollapsing, AddressOf SfDataGrid1_GroupCollapsing
+
+Private Sub SfDataGrid1_GroupCollapsing(ByVal sender As Object, ByVal e As GroupChangingEventArgs)
+	If e.Group.Key.Equals(1001) Then
+		e.Cancel = True
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
