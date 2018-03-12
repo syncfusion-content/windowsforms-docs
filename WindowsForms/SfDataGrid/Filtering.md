@@ -563,10 +563,10 @@ void sfDataGrid_FilterPopupShowing(object sender, FilterPopupShowingEventArgs e)
         items.Add("MEREP");
         items.Add("FOLKO");
         items.Add("ALFKI");
-        var customFiltercontrol = new CustomFilterControl(this.sfDataGrid);
-        customFiltercontrol.DataSource = items;
-        customFiltercontrol.MappingName = e.Column.MappingName;
-        customFiltercontrol.Show(this.sfDataGrid, e.Location);
+        var customFilterControl = new CustomFilterControl(this.sfDataGrid);
+        customFilterControl.DataSource = items;
+        customFilterControl.MappingName = e.Column.MappingName;
+        customFilterControl.Show(this.sfDataGrid, e.Location);
     }
 }
 {% endhighlight %}
@@ -578,10 +578,10 @@ Private Sub sfDataGrid_FilterPopupShowing(ByVal sender As Object, ByVal e As Fil
 		items.Add("MEREP")
 		items.Add("FOLKO")
 		items.Add("ALFKI")
-		Dim customFiltercontrol = New CustomFilterControl(Me.sfDataGrid)
-		customFiltercontrol.DataSource = items
-		customFiltercontrol.MappingName = e.Column.MappingName
-		customFiltercontrol.Show(Me.sfDataGrid, e.Location)
+		Dim customFilterControl = New CustomFilterControl(Me.sfDataGrid)
+		customFilterControl.DataSource = items
+		customFilterControl.MappingName = e.Column.MappingName
+		customFilterControl.Show(Me.sfDataGrid, e.Location)
 	End If
 End Sub
 {% endhighlight %}

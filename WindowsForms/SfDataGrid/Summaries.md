@@ -938,7 +938,7 @@ public static class LinqExtensions
 {
     public static double StdDev<T>(this IEnumerable<T> values, Func<T, double?> selector)
     {
-        double ret = 0;
+        double result = 0;
         var count = values.Count();
         if (count > 0)
         {
@@ -952,9 +952,9 @@ public static class LinqExtensions
                 }
                 return 0.0;
             });
-            ret = Math.Sqrt((sum) / (count - 1));
+            result = Math.Sqrt((sum) / (count - 1));
         }
-        return ret;
+        return result;
     }
 }
 {% endhighlight %}
@@ -978,7 +978,7 @@ End Class
 Public Module LinqExtensions
 	<System.Runtime.CompilerServices.Extension> _
 	Public Function StdDev(Of T)(ByVal values As IEnumerable(Of T), ByVal selector As Func(Of T, Double?)) As Double
-		Dim ret As Double = 0
+		Dim result As Double = 0
 		Dim count = values.Count()
 		If count > 0 Then
 			Dim avg? As Double = values.Average(selector)
@@ -989,9 +989,9 @@ Public Module LinqExtensions
 				End If
 				Return 0.0
 			End Function)
-			ret = Math.Sqrt((sum) / (count - 1))
+			result = Math.Sqrt((sum) / (count - 1))
 		End If
-		Return ret
+		Return result
 	End Function
 End Module
 {% endhighlight %}
