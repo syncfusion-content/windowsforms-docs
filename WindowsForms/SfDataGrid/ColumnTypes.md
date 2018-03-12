@@ -929,9 +929,9 @@ public class OrderInfo : INotifyPropertyChanged
         {
             OrdersListDetails = new OrderInfoRepository().GetListOrdersDetails(200);            
         }
-  public BindingList&lt;OrderInfo&gt; GetListOrdersDetails(int count)
+  public BindingList<OrderInfo> GetListOrdersDetails(int count)
         {
-            BindingList&lt;OrderInfo&gt; ordersDetails = new BindingList&lt;OrderInfo&gt;();
+            BindingList<OrderInfo> ordersDetails = new BindingList<OrderInfo>();
             for (int i = 10000; i < count + 10000; i++)
             {
                 ordersDetails.Add(GetOrder(i));
@@ -966,14 +966,8 @@ End Class
 		Public Sub New()
 			OrdersListDetails = New OrderInfoRepository().GetListOrdersDetails(200)
 		End Sub
-  Public BindingList And lt
-  Private OrderInfo And gt
-  Private Function GetListOrdersDetails(ByVal count As Integer) As [Private]
-			BindingList And lt
-			OrderInfo And gt
-			ordersDetails = New BindingList And lt
-			OrderInfo And gt
-			()
+  Public Function GetListOrdersDetails(ByVal count As Integer) As BindingList(Of OrderInfo)
+			Dim ordersDetails As New BindingList(Of OrderInfo)()
 			For i As Integer = 10000 To count + 10000 - 1
 				ordersDetails.Add(GetOrder(i))
 			Next i
