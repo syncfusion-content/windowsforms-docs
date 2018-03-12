@@ -42,18 +42,18 @@ End users can sort the column by clicking column header cell. Once the columns g
 The sorting can be applied programmatically by adding or removing the `SortColumnDescription` in [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnDescriptions.html) collection.
 {% tabs %}
 {% highlight c# %}
-SortColumnDescription scd = new SortColumnDescription();
-scd.ColumnName = "CustomerID";
-scd.SortDirection = ListSortDirection.Ascending;
+SortColumnDescription sortColumnDescription = new SortColumnDescription();
+sortColumnDescription.ColumnName = "CustomerID";
+sortColumnDescription.SortDirection = ListSortDirection.Ascending;
 
-this.sfDataGrid1.SortColumnDescriptions.Add(scd);
+this.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription);
 {% endhighlight %}
 {% highlight vb %}
-Dim scd As New SortColumnDescription()
-scd.ColumnName = "CustomerID"
-scd.SortDirection = ListSortDirection.Ascending
+Dim sortColumnDescription As New SortColumnDescription()
+sortColumnDescription.ColumnName = "CustomerID"
+sortColumnDescription.SortDirection = ListSortDirection.Ascending
 
-Me.sfDataGrid1.SortColumnDescriptions.Add(scd)
+Me.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription)
 {% endhighlight %}
 {% endtabs %}
 

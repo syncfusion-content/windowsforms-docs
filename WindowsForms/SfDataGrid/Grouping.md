@@ -265,9 +265,9 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
             var dt = DateTime.Now;
             var item = (o as SalesByDate).Date;
             var days = (int)Math.Floor((dt - item).TotalDays);
-            var dayofweek = (int)dt.DayOfWeek;
-            var diff = days - dayofweek;
-            if (days <= dayofweek)
+            var dayOfWeek = (int)dt.DayOfWeek;
+            var difference = days - dayOfWeek;
+            if (days <= dayOfWeek)
             {
                 if (days == 0)
                     return "TODAY";
@@ -275,11 +275,11 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
                     return "YESTERDAY";
                 return item.Date.DayOfWeek.ToString().ToUpper();
             }
-            if (diff > 0 && diff <= 7)
+            if (difference > 0 && difference <= 7)
                 return "LAST WEEK";
-            if (diff > 7 && diff <= 14)
+            if (difference > 7 && difference <= 14)
                 return "TWO WEEKS AGO";
-            if (diff > 14 && diff <= 21)
+            if (difference > 14 && difference <= 21)
                 return "THREE WEEKS AGO";
             if (dt.Year == item.Date.Year && dt.Month == item.Date.Month)
                 return "EARLIER THIS MONTH";
@@ -295,9 +295,9 @@ Private Sub New()
 	Dim dt = DateTime.Now
 	Dim item = (TryCast(o, SalesByDate)).Date
 	Dim days = CInt(Fix(Math.Floor((dt - item).TotalDays)))
-	Dim dayofweek = CInt(Fix(dt.DayOfWeek))
-	Dim diff = days - dayofweek
-	If days <= dayofweek Then
+	Dim dayOfWeek = CInt(Fix(dt.DayOfWeek))
+	Dim difference = days - dayOfWeek
+	If days <= dayOfWeek Then
 		If days = 0 Then
 			Return "TODAY"
 		End If
@@ -306,13 +306,13 @@ Private Sub New()
 			End If
 				Return item.Date.DayOfWeek.ToString().ToUpper()
 	End If
-	If diff > 0 AndAlso diff <= 7 Then
+	If difference > 0 AndAlso difference <= 7 Then
 		Return "LAST WEEK"
 	End If
-		If diff > 7 AndAlso diff <= 14 Then
+		If difference > 7 AndAlso difference <= 14 Then
 			Return "TWO WEEKS AGO"
 		End If
-			If diff > 14 AndAlso diff <= 21 Then
+			If difference > 14 AndAlso difference <= 21 Then
 				Return "THREE WEEKS AGO"
 			End If
 				If dt.Year = item.Date.Year AndAlso dt.Month = item.Date.Month Then
@@ -342,9 +342,9 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
             var dt = DateTime.Now;
             var item = (o as SalesByDate).Date;
             var days = (int)Math.Floor((dt - item).TotalDays);
-            var dayofweek = (int)dt.DayOfWeek;
-            var diff = days - dayofweek;
-            if (days <= dayofweek)
+            var dayOfWeek = (int)dt.DayOfWeek;
+            var difference = days - dayOfWeek;
+            if (days <= dayOfWeek)
             {
                 if (days == 0)
                     return "TODAY";
@@ -352,11 +352,11 @@ this.sfDataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
                     return "YESTERDAY";
                 return item.Date.DayOfWeek.ToString().ToUpper();
             }
-            if (diff > 0 && diff <= 7)
+            if (difference > 0 && difference <= 7)
                 return "LAST WEEK";
-            if (diff > 7 && diff <= 14)
+            if (difference > 7 && difference <= 14)
                 return "TWO WEEKS AGO";
-            if (diff > 14 && diff <= 21)
+            if (difference > 14 && difference <= 21)
                 return "THREE WEEKS AGO";
             if (dt.Year == item.Date.Year && dt.Month == item.Date.Month)
                 return "EARLIER THIS MONTH";
@@ -372,9 +372,9 @@ Private Sub New()
 	Dim dt = DateTime.Now
 	Dim item = (TryCast(o, SalesByDate)).Date
 	Dim days = CInt(Fix(Math.Floor((dt - item).TotalDays)))
-	Dim dayofweek = CInt(Fix(dt.DayOfWeek))
-	Dim diff = days - dayofweek
-	If days <= dayofweek Then
+	Dim dayOfWeek = CInt(Fix(dt.DayOfWeek))
+	Dim difference = days - dayOfWeek
+	If days <= dayOfWeek Then
 		If days = 0 Then
 			Return "TODAY"
 		End If
@@ -383,13 +383,13 @@ Private Sub New()
 			End If
 				Return item.Date.DayOfWeek.ToString().ToUpper()
 	End If
-	If diff > 0 AndAlso diff <= 7 Then
+	If difference > 0 AndAlso difference <= 7 Then
 		Return "LAST WEEK"
 	End If
-		If diff > 7 AndAlso diff <= 14 Then
+		If difference > 7 AndAlso difference <= 14 Then
 			Return "TWO WEEKS AGO"
 		End If
-			If diff > 14 AndAlso diff <= 21 Then
+			If difference > 14 AndAlso difference <= 21 Then
 				Return "THREE WEEKS AGO"
 			End If
 				If dt.Year = item.Date.Year AndAlso dt.Month = item.Date.Month Then
