@@ -111,11 +111,17 @@ SfDataGrid control can be added to the application by dragging it from Toolbox a
 ### Adding control in Code
 In order to add control manually, do the below steps,
 1. Add the below required assembly references to the project,
-Syncfusion.Core.WinForms
-Syncfusion.Data.WinForms
-Syncfusion.GridCommon.WinForms
-Syncfusion.SfDataGrid.WinForms
-Syncfusion.SfInput.WinForms
+
+* Syncfusion.Core.WinForms
+
+* Syncfusion.Data.WinForms
+
+* Syncfusion.GridCommon.WinForms
+
+* Syncfusion.SfDataGrid.WinForms
+
+* Syncfusion.SfInput.WinForms
+
 2. Create the SfDataGrid control instance and add it to the Form
 {% tabs %}
 {% highlight c# %}
@@ -275,6 +281,7 @@ End Class
 {% endtabs %}
 
 2. Create an **OrderInfoCollection** class with Orders property and Orders property is initialized with several data objects in constructor.
+
 {% tabs %}
 {% highlight c# %}
 public class OrderInfoCollection
