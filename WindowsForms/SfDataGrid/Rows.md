@@ -219,6 +219,13 @@ this.sfDataGrid.FrozenRowCount = 3;
 // Freeze rows at bottom
 this.sfDataGrid.FooterRowCount = 2;
 {% endhighlight %}
+{% highlight vb %}
+' Freeze rows at top
+Me.sfDataGrid.FrozenRowCount = 3
+
+' Freeze rows at bottom
+Me.sfDataGrid.FooterRowCount = 2
+{% endhighlight %}
 {% endtabs %}
 
 ![](Rows_images/FreezePanes_img1.png)
@@ -233,6 +240,13 @@ this.sfDataGrid.FooterColumnCount = 2;
 // Freeze columns at right
 this.sfDataGrid.FrozenColumnCount = 2;
 {% endhighlight %}
+{% highlight vb %}
+' Freeze columns at left
+Me.sfDataGrid.FooterColumnCount = 2
+
+' Freeze columns at right
+Me.sfDataGrid.FrozenColumnCount = 2
+{% endhighlight %}
 {% endtabs %}
 
 ![](Rows_images/FreezePanes_img2.png)
@@ -246,6 +260,9 @@ The appearance of freeze pane line can be customized by setting the [FreezePaneL
 {% highlight c# %}
 this.sfDataGrid.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet
+{% endhighlight %}
 {% endtabs %}
 
 ![](Rows_images/FreezePanes_img3.png)
@@ -255,6 +272,9 @@ Freeze line weight or thickness can be changed by setting the [FreezePaneLineSty
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.Style.FreezePaneLineStyle.Weight = 3;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.FreezePaneLineStyle.Weight = 3
 {% endhighlight %}
 {% endtabs %}
 
@@ -278,6 +298,19 @@ private void SfDataGrid_DrawFreezePaneLine(object sender, DrawFreezePaneLineArgs
         e.Handled = true;
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.DrawFreezePaneLine, AddressOf SfDataGrid_DrawFreezePaneLine
+
+Private Sub SfDataGrid_DrawFreezePaneLine(ByVal sender As Object, ByVal e As DrawFreezePaneLineArgs)
+	Dim pen As New Pen(Color.Red, 2)
+	pen.DashStyle = DashStyle.Dash
+
+	If e.LineType = LineType.FrozenRow OrElse e.LineType Is LineType.FooterRow OrElse e.LineType = LineType.FooterColumn Then
+		e.Graphics.DrawLine(pen, e.Point1, e.Point2)
+		e.Handled = True
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -313,6 +346,28 @@ private void SfDataGrid_DrawFreezePaneLine(object sender, DrawFreezePaneLineArgs
         e.Handled = true;
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.DrawFreezePaneLine, AddressOf SfDataGrid_DrawFreezePaneLine
+
+Private Sub SfDataGrid_DrawFreezePaneLine(ByVal sender As Object, ByVal e As DrawFreezePaneLineArgs)
+	If e.LineType = LineType.FrozenRow Then
+		e.Graphics.DrawLine(New Pen(Color.DeepSkyBlue, 2), e.Point1, e.Point2)
+		e.Handled = True
+	End If
+	If e.LineType Is LineType.FooterRow Then
+		e.Graphics.DrawLine(New Pen(Color.BlueViolet, 2), e.Point1, e.Point2)
+		e.Handled = True
+	End If
+	If e.LineType = LineType.FrozenColumn Then
+		e.Graphics.DrawLine(New Pen(Color.Magenta, 2), e.Point1, e.Point2)
+		e.Handled = True
+	End If
+	If e.LineType = LineType.FooterColumn Then
+		e.Graphics.DrawLine(New Pen(Color.Red, 2), e.Point1, e.Point2)
+		e.Handled = True
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
