@@ -507,7 +507,7 @@ Represents SfDataGrid column that hosts textual content which are not actually b
 </table>
 
 ## Selection
-By default, the entire row is selected when a user clicks a cell in a SfDataGrid. You can set the `SfDataGrid.SelectionMode` property to specify whether a user can select single row, or multiple rows. You can get information about the rows that are selected using `SfDataGrid.SelectedItem` and `SfDataGrid.SelectedItems` properties.
+By default, the entire row is selected when a user clicks a cell in SfDataGrid. You can set the `SfDataGrid.SelectionMode` property to specify whether a user can select single row, or multiple rows. You can get information about the rows that are selected using `SfDataGrid.SelectedItem` and `SfDataGrid.SelectedItems` properties.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Extended;
