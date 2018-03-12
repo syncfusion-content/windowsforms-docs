@@ -264,7 +264,7 @@ End Sub
 
 #### Changing column type
 
-The type of column adding to SfDataGrid can be changed by setting the instance of column you want to add in [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event.
+The type of column adding to SfDataGrid can be changed by setting the instance of column that has to be added in [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event.
 In the below code, column type for `UnitPrice` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property.
 {% tabs %}
 {% highlight c# %}
@@ -570,7 +570,7 @@ The columns (added or auto-generated) can be retrieved from [SfDataGrid.Columns]
 
 ### Adding column
 
-The column can be added to the `SfDataGrid` by adding the instance of the column to `SfDataGrid.Columns` property.
+The column can be added to the SfDataGrid by adding the instance of the column to `SfDataGrid.Columns` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -658,7 +658,7 @@ Me.sfDataGrid1.AllowResizingColumns = True
 {% endhighlight %}
 {% endtabs %}
 
-You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the line exists between two columns.
+The column width can be changed by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the line exists between two columns.
 ![](Columns_images/Resizing1.png)
 
 ### Hidden column resizing 
@@ -891,8 +891,8 @@ N> `FrozenColumnCount` and `FooterColumnCount` should be lesser than the number 
 
 
 ## Stacked Headers
-SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.StackedHeaderRows.html). SfDataGrid allows to group one or more columns under each stacked header. Each StackedHeaderRow contains the StackedColumns where each StackedColumn contains a number of child columns.
-StackedColumn.ChildColumns property returns the columns which are grouped under the stacked header row. StackedColumn.HeaderText returns the text that displays in stacked header row.
+SfDataGrid supports additional unbound header rows known as [StackedHeaderRows](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.StackedHeaderRows.html) that span across the DataGrid columns using `StackedHeaderRows`. SfDataGrid allows to group one or more columns under each stacked header. Each `StackedHeaderRow` contains the [StackedColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.StackedColumns.html) where each [StackedColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.StackedColumn.html) contains a number of child columns.
+[StackedColumn.ChildColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.StackedColumn~ChildColumns.html) property returns the columns which are grouped under the stacked header row. [StackedColumn.HeaderText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.StackedColumn~HeaderText.html) returns the text that displays in stacked header row.
 
 ### Adding Stacked header
 The stacked headers can be added by using the below steps,
@@ -903,7 +903,7 @@ The stacked headers can be added by using the below steps,
 
 3. Add the `StackedColumn` to `StackedColumns` collection.
 
-4. Finally add the `StackedHeaderRow` to `StackedHeaderRows` collection of the grid. 
+4. Finally add the `StackedHeaderRow` to `StackedHeaderRows` collection of the SfDataGrid. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1037,7 +1037,7 @@ Me.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2)
 
 ### Stacked header row appearance
 
-The appearance of stacked header row can be customized by setting property. The [StackedHeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~StackedHeaderStyle.html"") property contains all the settings that are needed for the stacked header row appearance customization. 
+The appearance of stacked header row can be customized by setting the [StackedHeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~StackedHeaderStyle.html"") property. The `StackedHeaderStyle` property contains all the settings that are needed for the stacked header row appearance customization. 
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.Style.StackedHeaderStyle.BackColor = Color.DarkCyan;
@@ -1051,7 +1051,7 @@ Me.sfDataGrid.Style.StackedHeaderStyle.TextColor = Color.White
 ![](Columns_images/StackedHeader_img8.png)
 
 ### Changing the stacked header appearance based on column
-An appearance of the stacked header row can be customized by using [DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event. SfDataGrid allow to check the row type for stacked header row by getting the property from `(e.DataRow as DataRowBase).RowType` of[DrawCellEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html). 
+An appearance of the stacked header row can be customized by using [DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event. SfDataGrid allow to check the row type for stacked header row by getting the property from `(e.DataRow as DataRowBase).RowType` of [DrawCellEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html). 
  SfDataGrid allows to check the stacked column by its cell value which is available in `DrawCellEventArgs `​and apply styling using ‘e.Style’ property of `DrawCellEventArgs` 
 {% tabs %}
 {% highlight c# %}
@@ -1100,7 +1100,6 @@ End Sub
 {% endtabs %}
 
 ![](Columns_images/StackedHeader_img9.png)
-![](StackedHeader/StackedHeader_img9.png)
 
 ## Column Sizing
 SfDataGrid allows to set the column widths based on certain logic using [SfDataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) or [GridColumnBase.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AutoSizeColumnsMode.html) property. Below is the list of predefined column sizing options available.
@@ -1135,7 +1134,7 @@ Calculates the width of column based on cell contents. So, cell contents are not
 AllCellsWithLastColumnFill
 </td>
 <td>
-Applies `AutoSizeColumnsMode.AllCells` width to all the columns except last column which is visible and sets the maximum between last column auto spacing width and remaining width to last column.
+Applies {{'[AutoSizeColumnsMode.AllCells](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html)'| markdownify }} width to all the columns except last column which is visible and sets the maximum between last column auto spacing width and remaining width to last column.
 </td>
 </tr>
 <tr>
@@ -1159,7 +1158,7 @@ Divides the total width equally for columns.
 LastColumnFill
 </td>
 <td>
-Applies `AutoSizeColumnsMode.AllCells` width to all the columns except last column which is visible and the remaining width from total width of SfDataGrid is set to last column.
+Applies {{'[AutoSizeColumnsMode.AllCells](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html)'| markdownify }} width to all the columns except last column which is visible and the remaining width from total width of SfDataGrid is set to last column.
 </td>
 </tr>
 <tr>
@@ -1193,7 +1192,7 @@ sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.Fill
 N> The `GridColumnBase.AutoSizeColumnsMode` takes higher priority than the `SfDataGrid.AutoSizeColumnsMode`.
 
 ### Fill remaining width for any column
-While setting [SfDataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) as `LastColumnFill` or `AllCellsWithLastColumnFill` remaining width is applied to last column. You can apply the remaining width to specific column by setting `GridColumnBase.AutoSizeColumnsMode` property as like below,
+While setting [SfDataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) as `LastColumnFill` or `AllCellsWithLastColumnFill` remaining width is applied to last column. The remaining width to specific column can be applied by setting `GridColumnBase.AutoSizeColumnsMode` property as like below,
 
 {% tabs %}
 {% highlight c# %}
@@ -1237,7 +1236,7 @@ Me.sfDataGrid.AutoSizeController.AutoSizeRange = AutoSizeRange.VisibleRows
 {% endtabs %}
 
 ### Refreshing ColumnSizer at runtime
-The auto column sizing can be refreshed at by calling [SfDataGrid.AutoSizeController.Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~Refresh.html) method. The column auto width can be recalculated by calling the reset methods of `AutoSizeController`. The[ResetAutoSizeWidthForAllColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidthForAllColumns.html) method reset widths to all columns. [ResetAutoSizeWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidth.html) method reset the width to specific column.
+The auto column sizing can be refreshed at by calling [SfDataGrid.AutoSizeController.Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~Refresh.html) method. The column auto width can be recalculated by calling the reset methods of `AutoSizeController`. The [ResetAutoSizeWidthForAllColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidthForAllColumns.html) method reset widths to all columns. [ResetAutoSizeWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidth.html) method reset the width to specific column.
 
 N> The column does not auto size its width automatically when the data of that column get changed. 
 For example, you can refresh all the column’s width based on the cell contents of newly added records at runtime.
@@ -1337,7 +1336,7 @@ public class CustomGridColumnSizer : AutoSizeController
 ### Custom column sizer with ratio support
 
 The `AutoSizeColumnsMode.Fill` width calculation logic can be customized by overriding [SetFillWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~SetFillWidth.html) method of `AutoSizeController`.
-For example, you can calculate the column width with specified ratios instead of dividing equal width for all columns in `AutoSizeColumnsMode.Fill` calculation using the logic in below `FillRatio` class.
+For example, the column width can be calculated with specified ratios instead of dividing equal width for all columns in `AutoSizeColumnsMode.Fill` calculation using the logic in below `FillRatio` class.
 
 {% tabs %}
 {% highlight c# %}
