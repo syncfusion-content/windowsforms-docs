@@ -116,6 +116,9 @@ Column can be bound to a property in data object using [GridColumnBase.MappingNa
 {% highlight c# %}
 this.sfDataGrid1.Columns["OrderDate"].Format = "yyyy/mm/dd";
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns("OrderDate").Format = "yyyy/mm/dd"
+{% endhighlight %}
 {% endtabs %}
 ![](ColumnTypes_images/ColumnTypes_img1.png)
 
@@ -139,6 +142,18 @@ this.sfDataGrid.Columns["ProductName"].HeaderStyle.BackColor = Color.MediumSlate
 //Change the header cell text color for product name column.
 this.sfDataGrid.Columns["ProductName"].HeaderStyle.TextColor = Color.White;
 {% endhighlight %}
+{% highlight vb %}
+'Change the record cell back color for product name column.
+Me.sfDataGrid.Columns("ProductName").CellStyle.BackColor = Color.SlateGray
+
+'Change the record cell text color for product name column.
+'Change the header cell back color for product name column.
+Color.White Me.sfDataGrid.Columns("ProductName").HeaderStyle.BackColor = Color.MediumSlateBlue
+Me.sfDataGrid.Columns("ProductName").CellStyle.TextColor = Color.White Me.sfDataGrid.Columns("ProductName").HeaderStyle.BackColor
+
+'Change the header cell text color for product name column.
+Me.sfDataGrid.Columns("ProductName").HeaderStyle.TextColor = Color.White
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img2.png)
@@ -155,6 +170,9 @@ this.sfDataGrid1.Columns.Add(new GridTextColumn()
     HeaderText = "Product Name" 
 });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name"})
+{% endhighlight %}
 {% endtabs %}
 
 ### Multiline support
@@ -165,6 +183,9 @@ SfDataGrid allows to edit multiline text in `GridTextColumn` by setting [GridTex
 {% highlight c# %}
 (this.sfDataGrid1.Columns["ProductName"] as GridTextColumn).AllowMultiline= true;
 {% endhighlight %}
+{% highlight vb %}
+TryCast(Me.sfDataGrid1.Columns("ProductName"), GridTextColumn).AllowMultiline= True
+{% endhighlight %}
 {% endtabs %}
 
 ### Vertical Scroll Bar 
@@ -173,6 +194,9 @@ Vertical scroll bar can be enabled for multiline textbox cell while editing by s
 {% tabs %}
 {% highlight c# %}
 (this.sfDataGrid1.Columns["ProductName"] as GridTextColumn).AllowVerticalScrollbar = true;
+{% endhighlight %}
+{% highlight vb %}
+TryCast(Me.sfDataGrid1.Columns("ProductName"), GridTextColumn).AllowVerticalScrollbar = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -187,6 +211,9 @@ this.sfDataGrid1.Columns.Add(new GridNumericColumn()
     MappingName = "UnitPrice", 
     HeaderText = "Unit Price" 
 });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPrice", .HeaderText = "Unit Price"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -209,6 +236,9 @@ this.sfDataGrid1.Columns.Add(new GridNumericColumn()
     FormatMode = FormatMode.Percent 
 });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "Discount", .HeaderText = "Discount", .FormatMode = FormatMode.Percent})
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img3.png)
@@ -225,6 +255,9 @@ MappingName = "UnitPrice",
 HeaderText = "Unit Price",
 FormatMode = FormatMode.Currency,
 });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPrice", .HeaderText = "Unit Price", .FormatMode = FormatMode.Currency})
 {% endhighlight %}
 {% endtabs %}
 
@@ -264,6 +297,13 @@ this.sfDataGrid1.Columns.Add(new GridNumericColumn()
     NumberFormatInfo = numberFormat
 });
 {% endhighlight %}
+{% highlight vb %}
+Dim numberFormat As NumberFormatInfo = TryCast(Application.CurrentCulture.NumberFormat.Clone(), NumberFormatInfo)
+numberFormat.NumberDecimalDigits = 2
+numberFormat.NumberDecimalSeparator = "*"
+numberFormat.NumberGroupSizes = New Integer() { }
+Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.HeaderText = "Quantity", .MappingName = "Quantity", .FormatMode = FormatMode.Numeric, .NumberFormatInfo = numberFormat})
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img5.png)
@@ -297,6 +337,13 @@ this.sfDataGrid1.Columns.Add(new GridNumericColumn()
     FormatMode = FormatMode.Percent , 
     NumberFormatInfo = numberFormat
 });
+{% endhighlight %}
+{% highlight vb %}
+Dim numberFormat As NumberFormatInfo = TryCast(Application.CurrentCulture.NumberFormat.Clone(), NumberFormatInfo)
+numberFormat.PercentDecimalDigits = 2
+numberFormat.PercentDecimalSeparator = "*"
+numberFormat.PercentSymbol = "/-"
+Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "Discount", .HeaderText = "Discount", .FormatMode = FormatMode.Percent, .NumberFormatInfo = numberFormat})
 {% endhighlight %}
 {% endtabs %}
 
@@ -332,6 +379,13 @@ FormatMode = FormatMode.Currency,
 NumberFormatInfo = numberFormat
 });
 {% endhighlight %}
+{% highlight vb %}
+Dim numberFormat As NumberFormatInfo = TryCast(Application.CurrentCulture.NumberFormat.Clone(), NumberFormatInfo)
+numberFormat.CurrencyDecimalDigits = 2
+"*" numberFormat.CurrencySymbol = "#"
+numberFormat.CurrencyDecimalSeparator = "*" numberFormat.CurrencySymbol
+Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPrice", .HeaderText = "Unit Price", .FormatMode = FormatMode.Currency, .NumberFormatInfo = numberFormat})
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img7.png)
@@ -355,6 +409,9 @@ this.sfDataGrid1.Columns.Add(new GridDateTimeColumn()
   MappingName = "OrderDate", 
   HeaderText = "Order Date" 
 });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridDateTimeColumn() With {.MappingName = "OrderDate", .HeaderText = "Order Date"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -491,6 +548,9 @@ this.sfDataGrid1.Columns.Add(new GridCheckBoxColumn()
     AllowThreeState = true 
 });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridCheckBoxColumn() With {.MappingName = "PaidStatus", .HeaderText = "Paid Status", .AllowThreeState = True})
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img8.png)
@@ -503,6 +563,9 @@ this.sfDataGrid1.Columns.Add(new GridCheckBoxColumn()
 {% highlight c# %}
 (this.sfDataGrid1.Columns["IsClosed"] as GridCheckBoxColumn).AllowText = true;
 {% endhighlight %}
+{% highlight vb %}
+TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowText = True
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img9.png)
@@ -514,6 +577,9 @@ By default, CheckBox displays only in record cell. By enabling the [AllowCheckBo
 {% tabs %}
 {% highlight c# %}
 (this.sfDataGrid1.Columns["IsClosed"] as GridCheckBoxColumn).AllowText = true;
+{% endhighlight %}
+{% highlight vb %}
+TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowText = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -543,6 +609,9 @@ this.sfDataGrid1.Columns.Add(new GridCheckBoxColumn()
     AllowText = true
 });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridCheckBoxColumn() With {.MappingName = "PaidStatus", .HeaderText = "Paid Status", .TrueValue = PaidStatus.Paid, .FalseValue = PaidStatus.NotPaid, .IndeterminateValue = PaidStatus.UnKnown, .AllowThreeState = True, .AllowText = True})
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img11.png)
@@ -568,6 +637,20 @@ this.sfDataGrid1.Style.CheckBoxStyle.IndeterminateColor = Color.Brown;
 this.sfDataGrid1.Style.CheckBoxStyle.UncheckedBackColor = Color.Moccasin;
 this.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.DarkSlateGray;
 {% endhighlight %}
+{% highlight vb %}
+'Change the appearance of the checked box.
+Me.sfDataGrid1.Style.CheckBoxStyle.CheckedBackColor = Color.LawnGreen
+Me.sfDataGrid1.Style.CheckBoxStyle.CheckedBorderColor = Color.DarkViolet
+Me.sfDataGrid1.Style.CheckBoxStyle.CheckedTickColor = Color.Red
+
+'Change the appearance of the intermediate state checkbox
+Me.sfDataGrid1.Style.CheckBoxStyle.IndeterminateBorderColor = Color.DarkSlateGray
+Me.sfDataGrid1.Style.CheckBoxStyle.IndeterminateColor = Color.Brown
+
+'Change the appearance of the unchecked box
+Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBackColor = Color.Moccasin
+Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.DarkSlateGray
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img12.png)
@@ -590,6 +673,17 @@ void SfDataGrid1_QueryCheckBoxCellStyle(object sender, QueryCheckBoxCellStyleEve
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.QueryCheckBoxCellStyle, AddressOf SfDataGrid1_QueryCheckBoxCellStyle
+
+Private Sub SfDataGrid1_QueryCheckBoxCellStyle(ByVal sender As Object, ByVal e As QueryCheckBoxCellStyleEventArgs)
+	If e.RowIndex Mod 2 = 0 Then
+		e.Style.CheckedBackColor = Color.LawnGreen
+		e.Style.CheckedBorderColor = Color.DarkViolet
+		e.Style.CheckedTickColor = Color.Red
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img13.png)
@@ -606,6 +700,9 @@ this.sfDataGrid1.Columns.Add(new GridButtonColumn()
     HeaderText = "Product Name"
 });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName ", .HeaderText = "Product Name"})
+{% endhighlight %}
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img14.png)
@@ -617,7 +714,11 @@ By default, [GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windows
 {% tabs %}
 {% highlight c# %}
 (this.sfDataGrid1.Columns["ProductName"] as GridButtonColumn).AllowDefaultButtonText = true;
- (this.sfDataGrid1.Columns["ProductName"] as GridButtonColumn).DefaultButtonText = "Submit";
+(this.sfDataGrid1.Columns["ProductName"] as GridButtonColumn).DefaultButtonText = "Submit";
+{% endhighlight %}
+{% highlight vb %}
+TryCast(Me.sfDataGrid1.Columns("ProductName"), GridButtonColumn).AllowDefaultButtonText = True
+TryCast(Me.sfDataGrid1.Columns("ProductName"), GridButtonColumn).DefaultButtonText = "Submit"
 {% endhighlight %}
 {% endtabs %}
 
@@ -636,6 +737,9 @@ SfDataGrid allows to display image within the button by using the [GridButtonCol
                 Image = SystemIcons.Information.ToBitmap(),
             });
 {% endhighlight %}
+{% highlight vb %}
+  Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name", .Image = SystemIcons.Information.ToBitmap()})
+{% endhighlight %}
 {% endtabs %}
 
 #### Positioning the text and image 
@@ -653,6 +757,9 @@ The text and image within the [GridButtonColumn](https://help.syncfusion.com/cr/
                 TextImageRelation = TextImageRelation.ImageBeforeText,
             });
 {% endhighlight %}
+{% highlight vb %}
+  Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name", .Image = SystemIcons.Information.ToBitmap(), .ImageSize = New Size(16, 16), .TextImageRelation = TextImageRelation.ImageBeforeText})
+{% endhighlight %}
 {% endtabs %}
 ![](ColumnTypes_images/ColumnTypes_img16.png)
 
@@ -666,6 +773,12 @@ SfDataGrid allows to customize the appearance of the button column through [SfDa
 this.sfDataGrid1.Style.ButtonStyle.BackColor = Color.LightPink;
 this.sfDataGrid1.Style.ButtonStyle.TextColor = Color.DarkBlue;
 this.sfDataGrid1.Style.ButtonStyle.BorderColor = Pens.DarkRed;
+{% endhighlight %}
+{% highlight vb %}
+'Change the appearance of the button column
+Me.sfDataGrid1.Style.ButtonStyle.BackColor = Color.LightPink
+Me.sfDataGrid1.Style.ButtonStyle.TextColor = Color.DarkBlue
+Me.sfDataGrid1.Style.ButtonStyle.BorderColor = Pens.DarkRed
 {% endhighlight %}
 {% endtabs %}
 
@@ -683,6 +796,9 @@ this.sfDataGrid1.Columns.Add(new GridHyperlinkColumn()
    HeaderText = "Order URI" 
 });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridHyperlinkColumn() With {.MappingName = " OrderURI ", .HeaderText = "Order URI"})
+{% endhighlight %}
 {% endtabs %}
 
 ### Behavior customization
@@ -694,6 +810,10 @@ The [HyperlinkOpenArea](https://help.syncfusion.com/cr/cref_files/windowsforms/s
 {% highlight c# %}
 (this.sfDataGrid1.Columns["OrderURI"] as GridHyperlinkColumn).HyperlinkOpenArea = HyperlinkOpenArea.Cell;
 (this.sfDataGrid1.Columns["OrderURI"] as GridHyperlinkColumn).HyperlinkOpenBehavior = HyperlinkOpenBehavior.DoubleClick;
+{% endhighlight %}
+{% highlight vb %}
+TryCast(Me.sfDataGrid1.Columns("OrderURI"), GridHyperlinkColumn).HyperlinkOpenArea = HyperlinkOpenArea.Cell
+TryCast(Me.sfDataGrid1.Columns("OrderURI"), GridHyperlinkColumn).HyperlinkOpenBehavior = HyperlinkOpenBehavior.DoubleClick
 {% endhighlight %}
 {% endtabs %}
 
@@ -709,6 +829,11 @@ SfDataGrid allows to customize the appearance of the hyperlink column through [S
 //Change the appearance of the hyperlink.
 this.sfDataGrid1.Style.HyperlinkStyle.DefaultLinkColor = Color.DarkGreen;
 this.sfDataGrid1.Style.HyperlinkStyle.HoveredLinkColor = Color.Red;
+{% endhighlight %}
+{% highlight vb %}
+'Change the appearance of the hyperlink.
+Me.sfDataGrid1.Style.HyperlinkStyle.DefaultLinkColor = Color.DarkGreen
+Me.sfDataGrid1.Style.HyperlinkStyle.HoveredLinkColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
@@ -728,6 +853,15 @@ void SfDataGrid1_HyperlinkOpening(object sender, CellHyperlinkOpeningEventArgs e
         e.Cancel = true;
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.HyperlinkOpening, AddressOf SfDataGrid1_HyperlinkOpening
+
+Private Sub SfDataGrid1_HyperlinkOpening(ByVal sender As Object, ByVal e As CellHyperlinkOpeningEventArgs)
+	If e.NavigateText = "https://www.google.com/" Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 [HyperlinkOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HyperlinkOpened_EV.html) event occurs after the hyperlink is opened. It does not occur if the `HyperlinkOpening` event is canceled.
@@ -741,6 +875,7 @@ The below code shows how to open the hyperlink in Internet Explorer.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.HyperlinkOpening += SfDataGrid1_HyperlinkOpening;
+
 void SfDataGrid1_HyperlinkOpening(object sender, CellHyperlinkOpeningEventArgs e)
 {
     e.Cancel = true;
@@ -749,6 +884,17 @@ void SfDataGrid1_HyperlinkOpening(object sender, CellHyperlinkOpeningEventArgs e
     process.StartInfo.Arguments = e.NavigateText;
     process.Start();
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.HyperlinkOpening, AddressOf SfDataGrid1_HyperlinkOpening
+
+Private Sub SfDataGrid1_HyperlinkOpening(ByVal sender As Object, ByVal e As CellHyperlinkOpeningEventArgs)
+	e.Cancel = True
+	Dim process As New System.Diagnostics.Process()
+	process.StartInfo.FileName = "iexplore"
+	process.StartInfo.Arguments = e.NavigateText
+	process.Start()
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -764,6 +910,9 @@ this.sfDataGrid1.Columns.Add(new GridImageColumn()
     MappingName = "Images", 
     HeaderText = "Country" 
 });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridImageColumn() With {.MappingName = "Images", .HeaderText = "Country"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -807,6 +956,46 @@ public class OrderInfo : INotifyPropertyChanged
         }
    }
 {% endhighlight %}
+{% highlight vb %}
+Public Class OrderInfo
+	Implements INotifyPropertyChanged
+		Public Property Images() As Byte()
+End Class
+  Public Class OrderInfoCollection
+	  Implements IDisposable
+		Public Sub New()
+			OrdersListDetails = New OrderInfoRepository().GetListOrdersDetails(200)
+		End Sub
+  Public BindingList And lt
+  Private OrderInfo And gt
+  Private Function GetListOrdersDetails(ByVal count As Integer) As [Private]
+			BindingList And lt
+			OrderInfo And gt
+			ordersDetails = New BindingList And lt
+			OrderInfo And gt
+			()
+			For i As Integer = 10000 To count + 10000 - 1
+				ordersDetails.Add(GetOrder(i))
+			Next i
+			Return ordersDetails
+  End Function
+  Private Function GetOrder(ByVal i As Integer) As OrderInfo
+			If order.OrderID Mod 2 = 0 Then
+				order.Images = ImageToByteArray(Image.FromFile("..\..\Images\US.jpg"))
+			ElseIf order.OrderID Mod 3 = 0 Then
+				order.Images = ImageToByteArray(Image.FromFile("..\..\Images\Japan.jpg"))
+			Else
+				order.Images = ImageToByteArray(Image.FromFile("..\..\Images\UK.jpg"))
+			End If
+			Return order
+  End Function
+  Public Function ImageToByteArray(ByVal imageIn As System.Drawing.Image) As Byte()
+			Dim ms As New MemoryStream()
+			imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp)
+			Return ms.ToArray()
+  End Function
+  End Class
+{% endhighlight %}
 {% endtabs %}
 
 ### Positioning text and image
@@ -826,7 +1015,15 @@ void SfDataGrid1_QueryImageCellStyle(object sender, QueryImageCellStyleEventArgs
 	if (e.RowIndex == 3)
 		e.ImageLayout = ImageLayout.Tile;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.QueryImageCellStyle, AddressOf SfDataGrid1_QueryImageCellStyle
 
+Private Sub SfDataGrid1_QueryImageCellStyle(ByVal sender As Object, ByVal e As QueryImageCellStyleEventArgs)
+	If e.RowIndex = 3 Then
+		e.ImageLayout = ImageLayout.Tile
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 ![](ColumnTypes_images/ColumnTypes_img19.png)
@@ -871,6 +1068,36 @@ public class GridCurrencyColumn : GridNumericColumn
         }
     }
 {% endhighlight %}
+{% highlight vb %}
+Public Class GridCurrencyColumn
+	Inherits GridNumericColumn
+		Protected Overrides Function GetFormattedValue(ByVal record As Object, ByVal value As Object) As Object
+			Dim formatInfo = If(Me.NumberFormatInfo, CultureInfo.CurrentUICulture.NumberFormat)
+
+			If value Is Nothing OrElse DBNull.Value.Equals(value) Then
+				If AllowNull Then
+					Return value
+				End If
+				value = CDbl(Me.MinValue)
+			End If
+
+			Dim originalValue As Double
+			If Double.TryParse(value.ToString(), originalValue) Then
+				If originalValue < MinValue Then
+					originalValue = MinValue
+				End If
+
+				If originalValue > MaxValue Then
+					originalValue = MaxValue
+				End If
+
+				Return String.Format(formatInfo, "{0:c}", originalValue)
+			End If
+
+			Return value
+		End Function
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 In the below code snippet, created `GridCurrencyColumn` added to [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Columns.html) collection to specify the value as currency without setting the format mode.
@@ -882,6 +1109,9 @@ In the below code snippet, created `GridCurrencyColumn` added to [SfDataGrid.Col
                 MappingName = "UnitPrice",
                 HeaderText = "Unit Price",
             });
+{% endhighlight %}
+{% highlight vb %}
+   Me.sfDataGrid1.Columns.Add(New GridCurrencyColumn() With {.MappingName = "UnitPrice", .HeaderText = "Unit Price"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -998,6 +1228,17 @@ public class GridTextBoxCellRendererExt : GridTextBoxCellRenderer
 	}
 }
 
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CellRenderers.Remove("TextBox")
+Me.sfDataGrid1.CellRenderers.Add("TextBox", New GridTextBoxCellRendererExt())
+
+public class GridTextBoxCellRendererExt : GridTextBoxCellRenderer
+	protected override void OnRender(Graphics paint, Rectangle cellRect, String cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
+		If column.GridColumn.MappingName = "CustomerID" Then
+			style.TextColor = Color.DarkBlue
+		End If
+		MyBase.OnRender(paint, cellRect, cellValue, style, column, rowColumnIndex)
 {% endhighlight %}
 {% endtabs %}
 
