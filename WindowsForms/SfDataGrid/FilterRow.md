@@ -126,7 +126,7 @@ Used to filter the Boolean values.
 DateTime
 </td>
 <td>
-SfDataTiemEdit
+SfDataTimeEdit
 </td>
 <td>
 FilterRowDateTimeCellRenderer
