@@ -37,6 +37,9 @@ CopyOption provides the following options,
 {% highlight c# %}
 this.sfDataGrid1.CopyOption = CopyOptions.CopyData | CopyOptions.IncludeHeaders;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CopyOption = CopyOptions.CopyData Or CopyOptions.IncludeHeaders
+{% endhighlight %}
 {% endtabs %}
 
 ![](Clipboard_Operations_images/Clipboard_Operations_img1.png)
@@ -59,6 +62,9 @@ PasteOption provides the following options,
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.PasteOption = PasteOptions.PasteData | PasteOptions.ExcludeFirstLine;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.PasteOption = PasteOptions.PasteData Or PasteOptions.ExcludeFirstLine
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,6 +92,9 @@ Cut operation works based on [CopyOption](https://help.syncfusion.com/cr/cref_fi
 {% highlight c# %}
 this.sfDataGrid1.CopyOption = CopyOptions.CutData | CopyOptions.IncludeHeaders;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CopyOption = CopyOptions.CutData Or CopyOptions.IncludeHeaders
+{% endhighlight %}
 {% endtabs %}
 
 ![](Clipboard_Operations_images/Clipboard_Operations_img3.png)
@@ -107,6 +116,16 @@ void SfDataGrid1_CopyContent(object sender, CutCopyPasteEventArgs e)
 
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.CopyContent, AddressOf SfDataGrid1_CopyContent
+
+Private Sub SfDataGrid1_CopyContent(ByVal sender As Object, ByVal e As CutCopyPasteEventArgs)
+	If (TryCast((TryCast(e.OriginalSender, SfDataGrid)).SelectedItem, OrderInfo)).OrderID = 10004 Then
+		e.Cancel = True
+	End If
+
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Columns
@@ -121,6 +140,14 @@ void SfDataGrid1_CopyCellContent(object sender, CellCutCopyPasteEventArgs e)
     if (e.Column.MappingName == "CustomerID")
         e.Cancel = true;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.CopyCellContent, AddressOf SfDataGrid1_CopyCellContent
+Private Sub SfDataGrid1_CopyCellContent(ByVal sender As Object, ByVal e As CellCutCopyPasteEventArgs)
+	If e.Column.MappingName = "CustomerID" Then
+		e.Cancel = True
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,6 +169,15 @@ void SfDataGrid1_PasteContent(object sender, CutCopyPasteEventArgs e)
         e.Cancel = true;
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.PasteContent, AddressOf SfDataGrid1_PasteContent
+
+Private Sub SfDataGrid1_PasteContent(ByVal sender As Object, ByVal e As CutCopyPasteEventArgs)
+	If (TryCast((TryCast(e.OriginalSender, SfDataGrid)).SelectedItem, OrderInfo)).OrderID = 10004 Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Columns
@@ -157,6 +193,15 @@ void SfDataGrid1_PasteCellContent(object sender, CellCutCopyPasteEventArgs e)
     if (e.Column.MappingName == "CustomerID")
         e.Cancel = true;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHanlder sfDataGrid1.PasteCellContent, AddressOf SfDataGrid1_PasteCellContent
+
+Private Sub SfDataGrid1_PasteCellContent(ByVal sender As Object, ByVal e As CellCutCopyPasteEventArgs)
+	If e.Column.MappingName = "CustomerID" Then
+		e.Cancel = True
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -179,6 +224,13 @@ void SfDataGrid1_CopyCellContent(object sender, CellCutCopyPasteEventArgs e)
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub SfDataGrid1_CopyCellContent(ByVal sender As Object, ByVal e As CellCutCopyPasteEventArgs)
+	If e.Column.MappingName = "OrderID" AndAlso (TryCast((TryCast(e.OriginalSender, SfDataGrid)).SelectedItem, OrderInfo)).OrderID = 10003 Then
+		e.ClipboardValue = "100"
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ![](Clipboard_Operations_images/Clipboard_Operations_img6.png)
@@ -199,6 +251,13 @@ void SfDataGrid_PasteCellContent(object sender, CellCutCopyPasteEventArgs e)
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub SfDataGrid_PasteCellContent(ByVal sender As Object, ByVal e As CellCutCopyPasteEventArgs)
+	If e.Column.MappingName = "OrderID" AndAlso (TryCast((TryCast(e.OriginalSender, SfDataGrid)).SelectedItem, OrderInfo)).OrderID = 10003 Then
+		e.ClipboardValue = "100"
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ![](Clipboard_Operations_images/Clipboard_Operations_img7.png)
@@ -212,6 +271,9 @@ Copy the selected records in SfDataGrid by using [Copy](https://help.syncfusion
 {% highlight c# %}
 this.sfDataGrid1.ClipboardController.Copy();
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ClipboardController.Copy()
+{% endhighlight %}
 {% endtabs %}
 
 Copy a record by selecting the record using [MoveToCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~MoveToCurrentCell.html) method and `Copy` method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
@@ -224,6 +286,13 @@ rowColumnIndex.ColumnIndex = 2;
 this.sfDataGrid1.MoveToCurrentCell(rowColumnIndex);
 this.sfDataGrid1.ClipboardController.Copy();
 {% endhighlight %}
+{% highlight vb %}
+Dim rowColumnIndex As New RowColumnIndex()
+rowColumnIndex.RowIndex = 2
+rowColumnIndex.ColumnIndex = 2
+Me.sfDataGrid1.MoveToCurrentCell(rowColumnIndex)
+Me.sfDataGrid1.ClipboardController.Copy()
+{% endhighlight %}
 {% endtabs %}
 
 Copy the multiple records by selecting group of records using [SelectRows](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectRows.html) method and `Copy`method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
@@ -232,6 +301,10 @@ Copy the multiple records by selecting group of records using [SelectRows](http
 {% highlight c# %}
 this.sfDataGrid1.SelectRows(1, 3);
 this.sfDataGrid1.ClipboardController.Copy();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectRows(1, 3)
+Me.sfDataGrid1.ClipboardController.Copy()
 {% endhighlight %}
 {% endtabs %}
 
@@ -243,6 +316,9 @@ The records can be copied without selection by using [CopyRowsToClipboard](http
 {% highlight c# %}
 this.sfDataGrid1.ClipboardController.CopyRowsToClipboard(3,5);
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ClipboardController.CopyRowsToClipboard(3,5)
+{% endhighlight %}
 {% endtabs %}
 
 ### Cut programmatically
@@ -253,6 +329,9 @@ Cut the selected records in SfDataGrid by using [Cut](https://help.syncfusion.c
 {% highlight c# %}
 this.sfDataGrid1.ClipboardController.Cut();
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ClipboardController.Cut()
+{% endhighlight %}
 {% endtabs %}
 
 Cut the entire record in SfDataGrid by selecting whole SfDataGrid using [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method and `Cut` method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
@@ -261,6 +340,10 @@ Cut the entire record in SfDataGrid by selecting whole SfDataGrid using [Select
 {% highlight c# %}
 this.sfDataGrid1.SelectAll();
 this.sfDataGrid1.ClipboardController.Cut();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectAll()
+Me.sfDataGrid1.ClipboardController.Cut()
 {% endhighlight %}
 {% endtabs %}
 
@@ -271,6 +354,9 @@ Paste the clipboard value into SfDataGrid by using [Paste](https://help.syncfus
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.ClipboardController.Paste();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ClipboardController.Paste()
 {% endhighlight %}
 {% endtabs %}
 
@@ -283,6 +369,13 @@ rowColumnIndex.RowIndex = 2;
 rowColumnIndex.ColumnIndex = 2;
 this.sfDataGrid1.MoveToCurrentCell(rowColumnIndex);
 this.sfDataGrid1.ClipboardController.Paste();
+{% endhighlight %}
+{% highlight vb %}
+Dim rowColumnIndex As New RowColumnIndex()
+rowColumnIndex.RowIndex = 2
+rowColumnIndex.ColumnIndex = 2
+Me.sfDataGrid1.MoveToCurrentCell(rowColumnIndex)
+Me.sfDataGrid1.ClipboardController.Paste()
 {% endhighlight %}
 {% endtabs %}
 
@@ -299,11 +392,22 @@ public class CustomClipboardController : DataGridClipboardController
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class CustomClipboardController
+	Inherits DataGridClipboardController
+	Public Sub New(ByVal dataGrid As SfDataGrid)
+		MyBase.New(dataGrid)
+	End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.ClipboardController = new CustomClipboardController(this.sfDataGrid);
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.ClipboardController = New CustomClipboardController(Me.sfDataGrid)
 {% endhighlight %}
 {% endtabs %}
 
@@ -349,6 +453,40 @@ public class CustomClipboardController : DataGridClipboardController
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class CustomClipboardController
+	Inherits DataGridClipboardController
+	Private dataGrid As SfDataGrid
+	Public Sub New(ByVal dataGrid As SfDataGrid)
+		MyBase.New(dataGrid)
+		Me.dataGrid = dataGrid
+	End Sub
+
+	Protected Overrides Sub PasteToRow(ByVal clipBoardContent As Object, ByVal selectedRecords As Object)
+		Dim text = Clipboard.GetText()
+		Dim clipBoardText() As String = Regex.Split(text, "\r\n")
+
+		'Get the clipBoardText and check if the clipBoardText is more than one row
+
+		'means call the base.
+
+		If clipBoardText.Count() > 1 Then
+			MyBase.PasteToRow(clipBoardContent, selectedRecords)
+			Return
+		End If
+
+		Dim selectedRecord = Me.dataGrid.SelectedItems
+
+		For i As Integer = 0 To selectedRecord.Count - 1
+			'Get the selected records for paste the copied row.
+			selectedRecords = selectedRecord(i)
+
+			'Call the PasteToRow method with clipBoardContent and selectedRecords
+			MyBase.PasteToRow(clipBoardContent, selectedRecords)
+		Next i
+	End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 ### Create new records while pasting
@@ -388,7 +526,35 @@ public class CustomClipboardController : DataGridClipboardController
         }
     }
 }
-
+{% endhighlight %}
+{% highlight vb %}
+Public Class CustomClipboardController
+	Inherits DataGridClipboardController
+	Private dataGrid As SfDataGrid
+	Public Sub New(ByVal dataGrid As SfDataGrid)
+		MyBase.New(dataGrid)
+		Me.dataGrid = dataGrid
+	End Sub
+	Protected Overrides Sub PasteToRows(ByVal clipboardRows As Object)
+		Dim copiedRecord = CType(clipboardRows, String())
+		Dim copiedRecordsCount As Integer = copiedRecord.Count()
+		'Based on the clipboard count added the new record to be pasted.
+		If copiedRecordsCount > 0 Then
+			For i As Integer = 0 To copiedRecordsCount - 1
+				' Creates new record.
+				Me.dataGrid.View.AddNew()
+				For j As Integer = 0 To Me.dataGrid.Columns.Count - 1
+					Dim record = copiedRecord(i)
+					Dim splitRecord() As String = Regex.Split(record, "\t")
+					'Adds the new record by using the PasteToCell method, by passing       the created data, particular column, and clipboard value.
+					Me.PasteToCell(Me.dataGrid.View.CurrentAddItem, Me.dataGrid.Columns(j), splitRecord(j))
+				Next j
+				' Commits the pasted record.
+				Me.dataGrid.View.CommitNew()
+			Next i
+		End If
+	End Sub
+End Class
 {% endhighlight %}
 {% endtabs %}
 
@@ -421,11 +587,42 @@ public class CustomClipboardController : DataGridClipboardController
             if (copyValue.Count() <= this.dataGrid.Columns.IndexOf(column))
                 break;
             // Calls the PasteToCell method and passes the copied data and pastes the column index.
-            PasteToCell(selectedRecords, this.dataGrid.Columns[index], copyValue[columnindex]);
+            PasteToCell(selectedRecords, this.dataGrid.Columns[index], copyValue[columnIndex]);
             index++;
             columnIndex++;
         }
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+Public Class CustomClipboardController
+	Inherits DataGridClipboardController
+	Private dataGrid As SfDataGrid
+	Public Sub New(ByVal dataGrid As SfDataGrid)
+		MyBase.New(dataGrid)
+		Me.dataGrid = dataGrid
+	End Sub
+	Protected Overrides Sub PasteToRow(ByVal clipboardContent As Object, ByVal selectedRecords As Object)
+		'Splits the row into number of cells by using \t.
+		clipboardContent = Regex.Split(clipboardContent.ToString(), "\t")
+		Dim copyValue = CType(clipboardContent, String())
+		'For Row selection
+		Dim columnIndex As Integer = 0
+		'Gets the current cell column index.
+		Dim index = Me.dataGrid.CurrentCell.ColumnIndex
+		For Each column In dataGrid.Columns
+			If index >= dataGrid.Columns.Count Then
+				Return
+			End If
+			If copyValue.Count() <= Me.dataGrid.Columns.IndexOf(column) Then
+				Exit For
+			End If
+			' Calls the PasteToCell method and passes the copied data and pastes the column index.
+			PasteToCell(selectedRecords, Me.dataGrid.Columns(index), copyValue(columnIndex))
+			index += 1
+			columnIndex += 1
+		Next column
+	End Sub
+End Class
 {% endhighlight %}
 {% endtabs %}
