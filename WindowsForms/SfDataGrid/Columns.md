@@ -524,6 +524,17 @@ public string Country
     set { country = value; }
 }
 {% endhighlight %}
+{% highlight vb %}
+<ReadOnly(True)>
+Public Property Country() As String
+	Get
+		Return country
+	End Get
+	Set(ByVal value As String)
+		country = value
+	End Set
+End Property
+{% endhighlight %}
 {% endtabs %}
 
 ### Manually defining columns
@@ -540,6 +551,16 @@ this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "CustomerName"
 this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "Country", HeaderText = "Country" });
 this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "ProductName", HeaderText = "Product Name" });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.AutoGenerateColumns = False
+Me.sfDataGrid1.DataSource = collection.OrdersListDetails
+
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID", .HeaderText = "Order ID"})
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "CustomerID", .HeaderText = "Customer ID"})
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "CustomerName", .HeaderText = "Customer Name"})
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "Country", .HeaderText = "Country"})
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name"})
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -555,6 +576,9 @@ The column can be added to the `SfDataGrid` by adding the instance of the column
 {% highlight c# %}
 this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "OrderID", HeaderText = "Order ID" });
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID", .HeaderText = "Order ID"})
+{% endhighlight %}
 {% endtabs %}
 
 ### Accessing column
@@ -566,6 +590,11 @@ GridColumn column = this.sfDataGrid1.Columns[1];
 // Or
 GridColumn column = this.sfDataGrid1.Columns["OrderID"];
 {% endhighlight %}
+{% highlight vb %}
+Dim column As GridColumn = Me.sfDataGrid1.Columns(1)
+' Or
+Dim column As GridColumn = Me.sfDataGrid1.Columns("OrderID")
+{% endhighlight %}
 {% endtabs %}
 
 ### Clearing or Removing column
@@ -575,6 +604,9 @@ All the columns can be removed by clearing the `SfDataGrid.Columns` collection.
 {% highlight c# %}
 this.sfDataGrid1.Columns.Clear();
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Clear()
+{% endhighlight %}
 {% endtabs %}
 A column can be removed using the Remove and RemoveAt methods.
 {% tabs %}
@@ -582,6 +614,11 @@ A column can be removed using the Remove and RemoveAt methods.
 this.sfDataGrid1.Columns.Remove(gridColumn);
 // Or
 this.sfDataGrid1.Columns.RemoveAt(1);
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Remove(gridColumn)
+' Or
+Me.sfDataGrid1.Columns.RemoveAt(1)
 {% endhighlight %}
 {% endtabs %}
 Column under a stacked column can be removed from StackedHeaderRow.
@@ -593,6 +630,13 @@ foreach(var name in childColumns)
     var column = this.sfDataGrid1.Columns[name];
     this.sfDataGrid1.Columns.Remove(column);
 }
+{% endhighlight %}
+{% highlight vb %}
+Dim childColumns = Me.sfDataGrid1.StackedHeaderRows(0).StackedColumns(0).ChildColumns.Split(","c)
+For Each name In childColumns
+	Dim column = Me.sfDataGrid1.Columns(name)
+	Me.sfDataGrid1.Columns.Remove(column)
+Next name
 {% endhighlight %}
 {% endtabs %}
 
@@ -608,6 +652,9 @@ N> Resizing considers MinimumWidth and MaximumWidth of column.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.AllowResizingColumns = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.AllowResizingColumns = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -634,6 +681,16 @@ void SfDataGrid_ColumnResizing(object sender, ColumnResizingEventArgs e)
             
         }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.ColumnResizing, AddressOf SfDataGrid_ColumnResizing
+
+Private Sub SfDataGrid_ColumnResizing(ByVal sender As Object, ByVal e As ColumnResizingEventArgs)
+			If e.ColumnIndex = 1 Then
+				e.Cancel = True
+			End If
+
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -643,6 +700,9 @@ SfDataGrid allow end-users to rearrange the columns by drag and drop the column 
 {% highlight c# %}
 sfDataGrid.AllowDraggingColumns = true;
 {% endhighlight %}
+{% highlight vb %}
+sfDataGrid.AllowDraggingColumns = True
+{% endhighlight %}
 {% endtabs %}
 ![](Columns_images/ColumnDragAndDrop_img1.png)
 
@@ -650,6 +710,9 @@ The drag and drop operation for particular column can be enabled or disabled usi
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.Columns[0].AllowDragging = false;
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns(0).AllowDragging = False
 {% endhighlight %}
 {% endtabs %}
 
@@ -672,6 +735,17 @@ void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Event
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.ColumnDragging, AddressOf sfDataGrid_ColumnDragging
+
+Private Sub sfDataGrid_ColumnDragging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs)
+	Dim column = sfDataGrid.Columns(e.From)
+
+	If column.MappingName = "OrderID" AndAlso e.Reason = ColumnDraggingAction.DragStarting Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 #### Cancel column reordering
@@ -692,6 +766,19 @@ void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Event
         }
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.ColumnDragging, AddressOf sfDataGrid_ColumnDragging
+
+Private Sub sfDataGrid_ColumnDragging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs)
+	If e.Reason = ColumnDraggingAction.Dropping Then
+		Dim column = sfDataGrid.Columns(e.To)
+
+		If column.MappingName = "ProductName" Then
+			e.Cancel = True
+		End If
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 ### Drag and drop Customization
@@ -731,8 +818,36 @@ public class CustomDragAndDropController : ColumnDragDropController
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+sfDataGrid.ColumnDragDropController = New CustomDragAndDropController(sfDataGrid.TableControl, sfDataGrid.GroupPanel)
+
+public class CustomDragAndDropController : ColumnDragDropController
+	public CustomDragAndDropController(TableControl tableControl, GroupPanel groupPanel)
+		MyBase.New(tableControl, groupPanel)
+
+
+	protected override Boolean CanShowPopup(GridColumn column)
+		If column.MappingName = "UnitPrice" Then
+			Return False
+		End If
+		Return MyBase.CanShowPopup(column)
+
+	protected override void PopupDroppedOnHeaderRow(Integer oldIndex, Integer newIndex)
+		If newIndex = 0 Then
+			Return
+		End If
+		MyBase.PopupDroppedOnHeaderRow(oldIndex, newIndex)
+
+	protected override void PopupDroppedOnGroupDropArea(GridColumn draggingColumn, MouseEventArgs e)
+		If draggingColumn.MappingName = "OrderID" Then
+			Return
+		End If
+		MyBase.PopupDroppedOnGroupDropArea(draggingColumn, e)
+{% endhighlight %}
 {% endtabs %}
+
 ### Disabling drag & drop between frozen and non-frozen columns
+
 By default, the columns re-ordering performed between any column regions of columns. The dropping action can cancel between the frozen and non-frozen columns by handling `SfDataGrid.ColumnDragging` event.
 {% tabs %}
 {% highlight c# %}
@@ -751,6 +866,23 @@ void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Event
             e.Cancel = true;
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.ColumnDragging, AddressOf sfDataGrid_ColumnDragging
+
+Private Sub sfDataGrid_ColumnDragging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs)
+	If e.Reason = ColumnDraggingAction.Dropping Then
+		Dim frozenColIndex = Me.sfDataGrid.FrozenColumnCount + Me.sfDataGrid.TableControl.ResolveToStartColumnIndex()
+
+		If e.From < frozenColIndex AndAlso e.To > frozenColIndex - 1 Then
+			e.Cancel = True
+		End If
+
+		If e.From > frozenColIndex AndAlso e.To < frozenColIndex OrElse (e.From Is frozenColIndex AndAlso e.To < frozenColIndex) Then
+			e.Cancel = True
+		End If
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -786,6 +918,18 @@ stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "Produ
 //Adding stacked header row object to stacked header row collection available in SfDataGrid.
 sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
+{% highlight vb %}
+'Creating object for a stacked header row.
+Dim stackedHeaderRow1 = New StackedHeaderRow()
+
+'Adding stacked column to stacked columns collection available in stacked header row object.
+stackedHeaderRow1.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "OrderID,OrderDate", .HeaderText = "Order Details"})
+stackedHeaderRow1.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "CustomerID,ContactNumber,", .HeaderText = "Customer Details"})
+stackedHeaderRow1.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "ProductName,Quantity,UnitPrice,ShipCountry", .HeaderText = "Product Details"})
+
+'Adding stacked header row object to stacked header row collection available in SfDataGrid.
+sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1)
+{% endhighlight %}
 {% endtabs %}
 
 ![](Columns_images/StackedHeader_img4.png)
@@ -800,6 +944,13 @@ string previousChild = this.sfDataGrid.StackedHeaderRows[0].StackedColumns[0].Ch
 
 //Adding ChildColumns to stacked header rows with additional child column. 
 this.sfDataGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = previousChild + ",CustomerID";
+{% endhighlight %}
+{% highlight vb %}
+'Previous Child columns.
+Dim previousChild As String = Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(0).ChildColumns
+
+'Adding ChildColumns to stacked header rows with additional child column. 
+Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(0).ChildColumns = previousChild & ",CustomerID"
 {% endhighlight %}
 {% endtabs %}
 ![](Columns_images/StackedHeader_img5.png)
@@ -822,6 +973,19 @@ foreach (var stackedColumnName in removingColumns.ToList())
         childColumns = childColumns + stackedColumnName + ",";
 }
 this.sfDataGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns;
+{% endhighlight %}
+{% highlight vb %}
+'Removing ChildColumns from the stacked header row.
+ Dim removingColumns = Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(0).ChildColumns.Split(","c).ToList(Of String)()
+Dim childColumns As String = String.Empty
+For Each stackedColumnName In removingColumns.ToList()
+	If stackedColumnName.Equals("OrderID") Then
+		removingColumns.Remove(stackedColumnName)
+	Else
+		childColumns = childColumns & stackedColumnName & ","
+	End If
+Next stackedColumnName
+Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(0).ChildColumns = childColumns
 {% endhighlight %}
 {% endtabs %}
 
@@ -848,6 +1012,23 @@ stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "Order
 this.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 this.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2);
 {% endhighlight %}
+{% highlight vb %}
+'Creating instance for StackedHeaderRow
+Dim stackedHeaderRow1 As New StackedHeaderRow()
+Dim stackedHeaderRow2 As New StackedHeaderRow()
+
+'Adding columns to StackedColumns collection to StackedHeaderRow object.
+stackedHeaderRow1.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "OrderID,CustomerID,ContactNumber,OrderDate,ProductName,Quantity", .HeaderText = "Sales Details"})
+
+stackedHeaderRow2.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "OrderID", .HeaderText = "Order Details"})
+stackedHeaderRow2.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "CustomerID,ContactNumber", .HeaderText = "Customer Details"})
+stackedHeaderRow2.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "OrderDate,ProductName,Quantity", .HeaderText = "Product Details"})
+
+
+'Adding StackedHeaderRow object to StackedHeaderRows collection of SfDatagrid.
+Me.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1)
+Me.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2)
+{% endhighlight %}
 {% endtabs %}
 
 ![](Columns_images/StackedHeader_img7.png)
@@ -861,6 +1042,10 @@ The appearance of stacked header row can be customized by setting property. The 
 {% highlight c# %}
 this.sfDataGrid.Style.StackedHeaderStyle.BackColor = Color.DarkCyan;
 this.sfDataGrid.Style.StackedHeaderStyle.TextColor = Color.White;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.StackedHeaderStyle.BackColor = Color.DarkCyan
+Me.sfDataGrid.Style.StackedHeaderStyle.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 ![](Columns_images/StackedHeader_img8.png)
@@ -892,6 +1077,25 @@ private void SfDataGrid_DrawCell(object sender, DrawCellEventArgs e)
         }
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.DrawCell, AddressOf SfDataGrid_DrawCell
+
+Private Sub SfDataGrid_DrawCell(ByVal sender As Object, ByVal e As DrawCellEventArgs)
+	If (TryCast(e.DataRow, DataRowBase)).RowType = RowType.StackedHeaderRow Then
+		If e.CellValue = "Order Details" Then
+			e.Style.BackColor = Color.DarkCyan
+			e.Style.TextColor = Color.White
+		End If
+		If e.CellValue = "Customer Details" Then
+			e.Style.BackColor = Color.LightCyan
+		End If
+		If e.CellValue = "Product Details" Then
+			e.Style.BackColor = Color.DarkGray
+			e.Style.TextColor = Color.White
+		End If
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -1109,6 +1313,25 @@ public class CustomGridColumnSizer : AutoSizeController
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.AutoSizeController = New CustomGridColumnSizer(Me.sfDataGrid)
+
+public class CustomGridColumnSizer : AutoSizeController
+	public CustomGridColumnSizer(SfDataGrid sfDataGrid)
+		MyBase.New(sfDataGrid)
+
+	' Calculate width for column when AutoSizeColumnsMode is AllCells.     
+	protected override Double CalculateAllCellsWidth(GridColumn column, Boolean isAllCells = False)
+		Return MyBase.CalculateAllCellsWidth(column, isAllCells)
+
+	' Calculate width for column when AutoSizeColumnsMode is ColumnHeader.     
+	protected override Integer CalculateColumnHeaderWidth(GridColumn column, Boolean setWidth = True)
+		Return MyBase.CalculateColumnHeaderWidth(column, setWidth)
+
+	' Calculate width for column when AutoSizeColumnsMode is AllCellsExceptHeaderWidth.     
+	protected override Double CalculateAllCellsExceptHeaderWidth(GridColumn column, Boolean setWidth = True)
+		Return MyBase.CalculateAllCellsExceptHeaderWidth(column, setWidth)
+{% endhighlight %}
 {% endtabs %}
 
 ### Custom column sizer with ratio support
@@ -1232,6 +1455,60 @@ public class CustomGridColumnSizer : AutoSizeController
         }
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+Public Class CustomGridColumnSizer
+	Inherits AutoSizeController
+	Public Sub New(ByVal sfDataGrid As SfDataGrid)
+		MyBase.New(sfDataGrid)
+	End Sub
+
+	' Overridden to customize the AutoSizeColumnsMode.Fill logic.
+	Protected Overrides Sub SetFillWidth(ByVal remainingColumnWidth As Double, ByVal remainingColumns As IEnumerable(Of GridColumn))
+		Dim removedColumn = New List(Of GridColumn)()
+		Dim columns = remainingColumns.ToList()
+		Dim totalRemainingFillValue = remainingColumnWidth
+		Dim removedWidth As Double = 0
+		Dim isRemoved As Boolean
+
+		Do While columns.Count > 0
+			isRemoved = False
+			removedWidth = 0
+			Dim columnsCount = 0
+
+			For Each col As GridColumn In columns
+				AddHandler columnsCount, AddressOf FillRatio.GetColumnRatio(col)
+			Next
+
+			Dim fillWidth As Double = Math.Floor((totalRemainingFillValue / columnsCount))
+			Dim column = columns.First()
+			fillWidth *= FillRatio.GetColumnRatio(column)
+			Dim computedWidth As Double = SetColumnWidth(column, CInt(Fix(fillWidth)))
+
+			If fillWidth <> computedWidth AndAlso fillWidth > 0 Then
+				isRemoved = True
+				columns.Remove(column)
+				For Each remColumn In removedColumn
+					If Not columns.Contains(remColumn) Then
+						removedWidth += remColumn.ActualWidth
+						columns.Add(remColumn)
+					End If
+				Next remColumn
+				removedColumn.Clear()
+				totalRemainingFillValue += removedWidth
+			End If
+
+			totalRemainingFillValue = totalRemainingFillValue - computedWidth
+
+			If Not isRemoved Then
+				columns.Remove(column)
+				If Not removedColumn.Contains(column) Then
+					removedColumn.Add(column)
+				End If
+			End If
+		Loop
+	End Sub
+End Class
 {% endhighlight %}
 {% endtabs %}
 
