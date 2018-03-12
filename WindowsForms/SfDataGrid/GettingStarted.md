@@ -77,7 +77,7 @@ In order to use export to Excel and export to Pdf functionalities of SfDataGrid 
 Syncfusion.SfDataGridConverter.WinForms
 </td>
 <td>
-Syncfusion.SfDataGridConverter.WinForms contains static extension classes for exporting SfDataGrid to excel and PDF in using Syncfusion.WinForms.DataGridConverter namespace.
+Syncfusion.SfDataGridConverter.WinForms contains static extension classes for exporting SfDataGrid to excel and PDF using Syncfusion.WinForms.DataGridConverter namespace.
 </td>
 </tr>
 <tr>
