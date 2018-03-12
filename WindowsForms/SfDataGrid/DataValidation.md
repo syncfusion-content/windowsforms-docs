@@ -293,22 +293,21 @@ public class OrderInfo : INotifyDataErrorInfo
             return false;
         }
     }
-    public event EventHandler&lt;DataErrorsChangedEventArgs&gt; ErrorsChanged;
+    public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
 }
 {% endhighlight %}
 {% highlight vb %}
 Public Class OrderInfo
 	Implements INotifyDataErrorInfo
 	Private errors As New List(Of String)()
-'INSTANT VB NOTE: The variable shipCountry was renamed since Visual Basic does not allow class members with the same name:
-	Private shipCountry_Renamed As String
+	Private _shipCountry As String
 	<Display(Name := "Ship Address")>
 	Public Property ShipCountry() As String
 		Get
-			Return shipCountry_Renamed
+			Return _shipCountry
 		End Get
 		Set(ByVal value As String)
-			shipCountry_Renamed = value
+			_shipCountry = value
 		End Set
 	End Property
 	Public Function GetErrors(ByVal propertyName As String) As System.Collections.IEnumerable
@@ -323,9 +322,7 @@ Public Class OrderInfo
 			Return False
 		End Get
 	End Property
-	Public Event EventHandler And lt
-	Private DataErrorsChangedEventArgs And gt
-	Private ErrorsChanged
+	Public Event ErrorsChanged As EventHandler(Of DataErrorsChangedEventArgs)
 End Class
 {% endhighlight %}
 {% endtabs %}
@@ -370,15 +367,14 @@ Public Property OrderID() As Integer
 	End Set
 End Property
 
-'INSTANT VB NOTE: The variable price was renamed since Visual Basic does not allow class members with the same name:
-Private price_Renamed As Decimal
+Private _price As Decimal
 <Range(GetType(Decimal),"12","20")>
 Public Property Price() As Decimal
 	Get
-		Return price_Renamed
+		Return _price
 	End Get
 	Set(ByVal value As Decimal)
-		price_Renamed = value
+		_price = value
 	End Set
 End Property
 {% endhighlight %}
@@ -419,7 +415,6 @@ Public Property ShipCity() As String
 	End Set
 End Property
 
-'INSTANT VB NOTE: The variable productName was renamed since Visual Basic does not allow class members with the same name:
 Private _productName As String
 <StringLength(17)>
 Public Property ProductName() As String
@@ -539,7 +534,7 @@ void sfDataGrid_RowValidating(object sender, RowValidatingEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 
-AddHandler sfDataGrid.RowValidatin, AddressOf sfDataGrid_RowValidating
+AddHandler sfDataGrid.RowValidating, AddressOf sfDataGrid_RowValidating
 Private Sub sfDataGrid_RowValidating(ByVal sender As Object, ByVal e As RowValidatingEventArgs)
 	Dim data = TryCast(e.DataRow.RowData, OrderInfo)
 
