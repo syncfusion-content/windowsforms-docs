@@ -63,7 +63,7 @@ this.sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo);
 
 ## Disabling tooltip from showing
 
-The `ToolTipShowing` event can be used to avoid displaying the tooltip window by setting the `e.Cancel` to `true`.
+The `ToolTipShowing` event can be used to disable the tooltip window by setting the `e.Cancel` to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +86,7 @@ e.Cancel = true;
 
 ## Changing location of the ToolTip
 
-The location of the tooltip to be shown can be customized in `ToolTipShowing` event using the `e.Location` property.
+The location of the tooltip to be shown can be customized in the `ToolTipShowing` event using the `e.Location` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -108,7 +108,7 @@ e.Location = new Point(e.Location.X + 20, e.Location.Y - 25);
 ![](SfToolTip_images/SfToolTip_img23.jpeg)
 
 
-## Setting Minimum and Maximum width
+## Setting minimum and maximum widths
 
 The minimum width and the maximum width of the tooltip can be changed using the `MinWidth` and `MaxWidth` properties. 
 
@@ -125,11 +125,11 @@ toolTipInfo1.MaxWidth = 500;
 {% endhighlight %}
 {% endtabs %}
 
-**Note****:** The width of the tooltip will be initialized to `MinWidth`, if the width is lesser than `MinWidth`. The width of the tooltip will be initialized to `MaxWidth`, if the width exceeds the `MaxWidth`.
+**Note**: The width of the tooltip will be initialized to `MinWidth`, if the width is lesser than `MinWidth`. The width of the tooltip will be initialized to `MaxWidth`, if the width exceeds the `MaxWidth`.
 
 ## Custom drawing of ToolTip
 
-`DrawToolTipItem` event can be used to handle the drawing of the `ToolTipItem` appearance. To cancel the default drawing of the `ToolTipItem`, `e.Cancel` property can be used.
+The `DrawToolTipItem` event can be used to draw the `ToolTipItem` appearance. To cancel the default drawing of the `ToolTipItem`, `e.Cancel` property can be used.
 
 {% tabs %}
 {% highlight c# %}
