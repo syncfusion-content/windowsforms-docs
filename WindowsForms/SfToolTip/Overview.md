@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Overview
 
-The `SfToolTip` appears automatically as a pop-up and shows the information of purpose of the control: when restting the pointer on the control. The control includes the control adding feature that allows an end user to add the user control to the SfToolTip so, end user can customize any ToolTip item in the `SfToolTip`.
+The `SfToolTip` appears automatically as a pop-up and shows the information of purpose of the control: when resetting the pointer on the control. The control includes the control adding feature that allows an end user to add the user control to the SfToolTip so, end user can customize any ToolTip item in the `SfToolTip`.
 
 ## Key features
 
