@@ -179,7 +179,7 @@ sfToolTip1.ShadowVisible = true;
 ![](SfToolTip_images/SfToolTip_img20.jpeg)
 
 
-## ToolTipItem eparator
+## ToolTipItem separator
 
 The enabled separator of the `ToolTipItem` can be customized by setting the `EnableSeparator` property to `true`.
 
