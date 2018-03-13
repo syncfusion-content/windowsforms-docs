@@ -10,12 +10,14 @@ documentation: ug
 # SfScrollFrame
 
 ## Overview
-`SfScrollFrame` attaches the theme-able scrollbars to any controls which is derived from the Microsoft's `ScrollableControl` or container. The theme-able scrollbar can be displayed over the control's default scrollbar position. 
 
-### Key Features 
-Following are the key features of the `SfScrollFrame`.
+The `SfScrollFrame` attaches the theme-able scrollbars to any controls derived from the Microsoft `ScrollableControl` or container. The theme-able scrollbar can be displayed over the default scrollbar position of the control. 
 
-* **ScrollBar Appearance customization** - Support to customize each element of the both the Horizontal and vertical scrollbars.
-* **Scroll amount** - Support to change the Scrollbar value and `SmallChange` value for both the Horizontal and vertical scrollbars.
-* **ScrollBar Context Menu customization ** - Support to customize the default context menu of horizontal and vertical scrollbar.
-* **Localization ** - Support to localize the default strings of the horizontal and vertical scrollbar's context menu.
+### Key features 
+
+Following are the key features of the `SfScrollFrame`:
+
+* ScrollBar Appearance customization: Supports customizing each element of the both the horizontal and vertical scrollbars.
+* Scroll amount: Supports changing the scrollbar value and `SmallChange` value for both the horizontal and vertical scrollbars.
+* ScrollBar context menu customization: Supports customizing the default context menu of horizontal and vertical scrollbars.
+* Localization: Supports localizing the default strings of the horizontal and vertical scrollbar context menu.
