@@ -27,7 +27,7 @@ The following list of assembly should be added as reference to use `SfForm` in a
 Syncfusion.Core.WinForms
 </td>
 <td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm, SfToolTip, SfScrollControl, and SfSkinManager.
+Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm, SfToolTip and SfScrollControl.
 </td>
 </tr>
 </table>
