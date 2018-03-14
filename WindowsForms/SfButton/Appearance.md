@@ -39,8 +39,6 @@ sfButton1.Style.GradientBrush = new BrushInfo(GradientStyle.ForwardDiagonal, Col
 {% endhighlight %}
 {% endtabs %}
 
-The SfButton with gradient background is as follows.
-
 ![](SfButton_images/SfButton_img9.jpeg)
 
 ### Background image
@@ -58,8 +56,6 @@ this.sfButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 
 {% endhighlight %}
 {% endtabs %}
-
-The SfButton with background image with center layout as follows.
 
 ![](SfButton_images/SfButton_img10.jpeg)
 
@@ -94,8 +90,6 @@ sfButton1.Style.FocusedForeColor = Color.Black;
 {% endhighlight %}
 {% endtabs %}
 
-Please find the SfButton on hover state below,
-
 ![](SfButton_images/SfButton_img11.jpeg)
 
 ### Image
@@ -122,11 +116,7 @@ sfButton1.Style.DisabledImage = Image.FromFile(@"..\..\Data\DisabledImage.png");
 {% endhighlight %}
 {% endtabs %}
 
-The SfButton in normal state is as follows.
-
 ![](SfButton_images/SfButton_img12.jpeg)
-
-The SfButton in hover state is as follows.
 
 ![](SfButton_images/SfButton_img13.jpeg)
 
@@ -134,15 +124,12 @@ The SfButton in hover state is as follows.
 
 The border can be changed based on the button state by using the Border, HoverBorder, FocusedBorder, PressedBorder, and DisabledBorder properties.
 
-Follow the code sample for hover border customization.
-
 {% tabs %}
 {% highlight c# %}
 //Initialize the hover border
 sfButton6.Style.HoverBorder = new Pen(Color.DarkGray, 2);
 {% endhighlight %}
 {% endtabs %}
-
 
 ![](SfButton_images/SfButton_img14.jpeg)
 
@@ -216,8 +203,6 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
-
-The SfButton with rounded rectangle is as follows.
 
 ![](SfButton_images/SfButton_img17.jpeg)
 
