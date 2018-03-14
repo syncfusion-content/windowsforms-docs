@@ -72,8 +72,6 @@ The SfButton allows adding the click event in two ways:
 1. Adding the click event by double clicking the SfButton in designer.
 2. Programmatically raises the clicking event of the SfButton.
 
-The code sample to show the message box while performing the click action.
-
 {% tabs %}
 {% highlight c# %}
 //Raises the click event of SfButton
