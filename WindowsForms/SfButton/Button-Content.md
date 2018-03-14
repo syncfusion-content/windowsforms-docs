@@ -25,8 +25,6 @@ this.sfButton1.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red0\\green0\\blue0;\\r
 {% endhighlight %}
 {% endtabs %}
 
-The SfButton with rich text is as follows.
-
 ![](SfButton_images/SfButton_img6.jpeg)
 
 **Note**: When the AllowRichText property is false, even if you add the rich text to the Text property, it will draw as normal text inside the button.
@@ -46,8 +44,6 @@ sfButton1.AllowWrapText = true;
 {% endhighlight %}
 {% endtabs %}
 
-The SfButton with wrapped text is as follows.
-
 ![](SfButton_images/SfButton_img7.jpeg)
 
 **Note**: If the AutoSize property is enabled, the SfButton does not allow you to wrap the text.
@@ -63,8 +59,6 @@ sfButton1.AutoEllipsis = true;
 
 {% endhighlight %}
 {% endtabs %}
-
-The SfButton with ellipsis character and showing tooltip when mouse hovering is as follows.
 
 ![](SfButton_images/SfButton_img8.jpeg)
 
