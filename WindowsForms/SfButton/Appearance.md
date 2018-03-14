@@ -67,9 +67,9 @@ The SfButton with background image with center layout as follows.
 
 The SfButton provide options to customize the appearance based on the button state.
 
-### Backcolor and forecolor
+### Backcolor and fore color
 
-The backcolor and forecolor of the SfButton in hover state can be changed by using the HoverBackColor and HoverForeColor properties. Like the hover state, you can customize in pressed state, focused state, normal state, and disable state of the SfButton.
+The backcolor and fore color of the SfButton in hover state can be changed by using the HoverBackColor and HoverForeColor properties. Like the hover state, you can customize in pressed state, focused state, normal state, and disable state of the SfButton.
 
 {% tabs %}
 {% highlight c# %}
