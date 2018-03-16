@@ -7,18 +7,19 @@ control: SfScrollFrame
 documentation: ug
 ---
 
-## Getting Started
+# Getting Started
 
-### Assembly deployment
-The following list of assemblies needs to be added as reference to use `SfScrollFrame` component in any application,
+## Assembly deployment
+
+The following list of assembly should be added as reference to use `SfScrollFrame` component in any application:
 
 <table>
 <tr>
 <td>
-{{'**Required Assemblies**'| markdownify }}
+{{'Required Assembly'| markdownify }}
 </td>
 <td>
-{{'**Description**'| markdownify }}
+{{'Description'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -26,20 +27,22 @@ The following list of assemblies needs to be added as reference to use `SfScroll
 Syncfusion.Core.WinForms
 </td>
 <td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfToolTip, SfButton, SfForm and SfSkinManager.
+Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfToolTip, SfButton, SfForm, and SfSkinManager.
 </td>
 </tr>
 </table>
 
-### Attaching SfScrollFrame to a control
+## Attaching SfScrollFrame to a control
+
 This section describes how to attach the `SfScrollFrame` to a `ListView` Control.
 
-#### Through designer
-The `SfScrollFrame` can be attached to any control through the designer by assigning the `Control` property.
+### Through designer
+
+The `SfScrollFrame` can be attached to any control through designer by assigning the `Control` property.
 
 ![](SfScrollFrame_images/SfScrollFrame_img1.jpg)
 
-**Designer generated code**
+#### Designer generated code
 
 {% tabs %}
 {% highlight c# %}
@@ -72,16 +75,21 @@ this.sfScrollFrame1.Control = this.listView1;
 {% endhighlight %}
 {% endtabs %}
 
-#### Through code
+### Through code
+
 To programmatically attach the `SfScrollFrame` to a control, set the `Control` property to the appropriate value. 
+
 {% tabs %}
 {% highlight c# %}
 //Attach SfScrollFrame to the list view control.
 this.sfScrollFrame1.Control = listView1;
 {% endhighlight %}
 {% endtabs %}
-### Programmatic Scrolling
+
+## Programmatic scrolling
+
 The scroll frame can be programmatically scrolled by setting the `Value` property of the corresponding scrollbar.  
+
 {% tabs %}
 {% highlight c# %}
 // To scroll the control to the specific position.
@@ -93,7 +101,8 @@ this.sfScrollFrame1.VerticalScrollBar.Value = 100;
 ![](SfScrollFrame_images/SfScrollFrame_img2.jpg)
 
 ### Changing the SmallChange value
-The scrolling speed of the horizontal and vertical scrollbars of the `SfScrollFrame` can be customized by setting the `SmallChange` property. This is used to increase the scroll speed for the min/max button click of the scrollbar.
+
+The scrolling speed of the horizontal and vertical scrollbars of the `SfScrollFrame` can be customized by setting the `SmallChange` property to increase the scroll speed for the min or max button click of the scrollbar.
 
 {% tabs %}
 {% highlight c# %}
