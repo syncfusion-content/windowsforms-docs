@@ -2,6 +2,7 @@
 layout: post
 title: Overview  | WindowsForms | Syncfusion
 description: overview 
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---
