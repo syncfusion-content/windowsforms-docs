@@ -11,35 +11,34 @@ documentation: ug
 
 ## Assembly deployment
 
-
-The following list of assemblies needs to be added as reference to use `SfToolTip` component in any application,
+The following list of assemblies should be added as reference to use the `SfToolTip` component in any application:
 
 <table>
 <tr>
 <td>
-**Required** **Assemblies******<br/><br/></td><td>
-**Description******<br/><br/></td></tr>
+Required Assemblies<br/><br/></td><td>
+Description<br/><br/></td></tr>
 <tr>
 <td>
 Syncfusion.Core.WinForms<br/><br/></td><td>
 Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm and SfSkinManager.<br/><br/></td></tr>
 </table>
+
 ## Setting the SfToolTip to a control
 
 This section describes how to add the `SfToolTip` to a Control.
 
 ### Through designer
 
-#### Setting using Text
+#### Setting using text
 
 1) Drag and drop the `SfToolTip` to the form.
 2) When the `SfToolTip` component is added to a form, an extended property will be added to the properties of the controls in the form.
-3) Provide the ToolTip text in the extended property for Text. (ToolTip on SfToolTip1)
+3) Provide the ToolTip text in the extended property for text. (ToolTip on SfToolTip1)
 
 ![](SfToolTip_images/SfToolTip_img1.jpeg)
 
-
-**Designer** **generated** **code******
+##### Designer generated code
 
 {% tabs %}
 {% highlight c# %}
@@ -72,10 +71,9 @@ this.button1.UseVisualStyleBackColor = true;
 {% endhighlight %}
 {% endtabs %}
 
-The provided ToolTip text will be configured for the control and will be shown when the user pauses the mouse cursor on the control.
+The provided ToolTip text will be configured for the control and will be shown when pausing the mouse cursor on the control.
 
 ![](SfToolTip_images/SfToolTip_img2.jpeg)
-
 
 #### Setting using ToolTipInfo
 
@@ -84,19 +82,16 @@ The provided ToolTip text will be configured for the control and will be shown w
 
 ![](SfToolTip_images/SfToolTip_img3.jpeg)
 
-
-3) The `SfToolTip` editor lets you customize the `ToolTipInfo` for the control.
+3) The `SfToolTip` editor lets customizing the `ToolTipInfo` for the control.
 4) Click the Ellipse button in the Items property and you can view the `ToolTipItem` collection editor.
 
 ![](SfToolTip_images/SfToolTip_img4.jpeg)
-
 
 5) Add one or more `ToolTipItem` to the collection and customize the `ToolTipItem` if needed. 
 
 ![](SfToolTip_images/SfToolTip_img5.jpeg)
 
-
-**Designer** **generated** **code******
+##### Designer generated code
 
 {% tabs %}
 {% highlight c# %}
@@ -145,14 +140,13 @@ this.button1.UseVisualStyleBackColor = true;
 {% endhighlight %}
 {% endtabs %}
 
-The provided `ToolTipInfo` will be configured for the control and will be shown when the user pauses the mouse cursor on the control.
+The provided `ToolTipInfo` will be configured for the control and will be shown when pausing the mouse cursor on the control.
 
 ![](SfToolTip_images/SfToolTip_img6.jpeg)
 
-
 ### Through code
 
-#### Setting using Text
+#### Setting using text
 
 The `SfToolTip` can be set to the control with tooltip text by using the `SetToolTip` method. 
 
@@ -204,11 +198,9 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 ### Show tooltip
 
-The SfToolTip can be shown programmatically using the `Show` method. The various overloads provided to show tooltip are documented in `Show`.
+The SfToolTip can be shown programmatically using the `Show` method. The various overloads provided to show the tooltip are documented in `Show`.
 
-**Note******
-
-If the position in which the tooltip to be shown is not mentioned, then the tooltip will be shown in mouse cursor position.
+**Note**: If the position of tooltip to be shown is not mentioned, the tooltip will be shown in mouse cursor position.
 
 {% tabs %}
 {% highlight c# %}
@@ -288,12 +280,12 @@ this.sfToolTip1.Hide();
 
 ## Setting the ToolTip delay
 
-The below properties can be used to set the ToolTip delay time.
+The following properties can be used to set the ToolTip delay time:
 
 * InitialDelay
 * AutoPopDelay.
-### InitialDelay
 
+### InitialDelay
 
 The `InitialDelay` property enables you to shorten or lengthen the time that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
 
@@ -323,7 +315,7 @@ sfToolTip1.AutoPopDelay = 10000;
 {% endhighlight %}
 {% endtabs %}
 
-## Showing ToolTip with Beak
+## Showing ToolTip with beak
 
 The `SfToolTip` can be shown with the beak by using the `ToolTipStyle` property.
 
@@ -357,7 +349,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ### Setting the beak back color
 
-The back color of the balloon beak can be set using the `BeakBackColor` property of the `ToolTipInfo`.
+The back color of the balloon beak can be set using the `BeakBackColor` of `ToolTipInfo` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -387,5 +379,3 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endtabs %}
 
 ![](SfToolTip_images/SfToolTip_img10.jpeg)
-
-

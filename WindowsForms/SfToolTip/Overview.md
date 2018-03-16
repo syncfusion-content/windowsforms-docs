@@ -9,12 +9,12 @@ documentation: ug
 ---
 # Overview
 
-`SfToolTip` appears automatically as a pop up and shows the information of a control's purpose, when user rests the pointer on the control. `SfToolTip` control includes the Control adding feature that allows an end user to add the user control to the SfToolTip. An end user can customize any ToolTip item in the `SfToolTip`.
+The `SfToolTip` appears automatically as a pop-up and shows the information of purpose of the control: when resetting the pointer on the control. The control includes the control adding feature that allows an end user to add the user control to the SfToolTip so, end user can customize any ToolTip item in the `SfToolTip`.
 
-## Key Features
+## Key features
 
-Following are the key features of the `SfToolTip`.
+Following are the key features of the `SfToolTip`:
 
-* **Multiple** **Items** - Support to add more tooltip items.
-* **Adding** **controls** - Support to load a control in the tooltip item.
-* **ToolTip** **content** **Customization** - Support to customize the appearance of the tooltip item.
+* Multiple items: Supports adding more tooltip items.
+* Adding controls: Supports loading a control in the tooltip item.
+* ToolTip content customization: Supports customizing the appearance of the tooltip item.
