@@ -37,9 +37,9 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 ![](SfToolTip_images/SfToolTip_img15.jpeg)
 
 
-## ToolTip Item
+## ToolTip item
 
-The appearance of `ToolTipItem` can be customized by setting the `ToolTipStyleInfo` property. The ` ToolTipStyleInfo` property contains all the settings that are needed for the `ToolTipItem` appearance customization.
+The appearance of `ToolTipItem` can be customized by setting the `ToolTipStyleInfo` property. The `ToolTipStyleInfo` property contains all the settings for the `ToolTipItem` appearance customization.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,7 +69,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 ![](SfToolTip_images/SfToolTip_img16.jpeg)
 
 
-### Gradient Color
+### Gradient color
 
 Gradient background drawing for the `ToolTipItem` can be done by enabling the `EnableGradientBackground` property and initializing a `GradientBrush` property for the `ToolTipItem`. 
 
@@ -95,9 +95,9 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 ![](SfToolTip_images/SfToolTip_img17.jpeg)
 
 
-**Note****:** The `GradientBrush` property will be only considered when the `EnableGradientBackground` property is set to true.
+**Note**: The `GradientBrush` property will be considered only when the `EnableGradientBackground` property is set to true.
 
-### ToolTipItem Separator
+### ToolTipItem separator
 
 The separator of the `ToolTipItem` can be customized using the `SeparatorColor` and `SeparatorStyle` properties.
 
@@ -163,7 +163,7 @@ e.ToolTipInfo.Items[0].Style.ForeColor = Color.Black;
 
 ## Enabling the shadow
 
-The shadow of the tooltip can be enabled by setting the **ShadowVisible** property to `true`.
+The shadow of the tooltip can be enabled by setting the ShadowVisible property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,9 +179,9 @@ sfToolTip1.ShadowVisible = true;
 ![](SfToolTip_images/SfToolTip_img20.jpeg)
 
 
-## ToolTipItem Separator
+## ToolTipItem separator
 
-The separator of the `ToolTipItem` can be enabled by setting the `EnableSeparator` property to `true`.
+The enabled separator of the `ToolTipItem` can be customized by setting the `EnableSeparator` property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -207,9 +207,9 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 ![](SfToolTip_images/SfToolTip_img21.jpeg)
 
 
-**Note****:** Separator line cannot be drawn for the last `ToolTipItem` in the collection even it has separator enabled.
+**Note**: The separator line cannot be drawn for the last `ToolTipItem` in the collection, even the separator is enabled.
 
-## Right to Left
+## Right to left
 
 The elements of the tooltip can be aligned from right to left and vice versa using the `RightToLeft` property. 
 

@@ -11,15 +11,15 @@ documentation: ug
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use `SfForm` in any application,
+The following list of assembly should be added as reference to use `SfForm` in any application:
 
 <table>
 <tr>
 <td>
-{{'**Required assemblies**'| markdownify }}
+{{'Required assembly'| markdownify }}
 </td>
 <td>
-{{'**Description**'| markdownify }}
+{{'Description'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -27,15 +27,14 @@ The following list of assemblies needs to be added as reference to use `SfForm` 
 Syncfusion.Core.WinForms
 </td>
 <td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm, SfToolTip, SfScrollControl and SfSkinManager.
+Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm, SfToolTip and SfScrollControl.
 </td>
 </tr>
 </table>
 
-## Converting a standard form to SfForm
+## Converting standard form into SfForm
 
-
-A default Form can be changed into an SfForm by following the below given steps.
+The default form can be changed into SfForm by the following steps:
 
 1) Create a new Windows Forms Application in Visual Studio and refer to the `Syncfusion.Core.WinForms` assembly.
 
@@ -66,9 +65,9 @@ public partial class Form1 : SfForm
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-## TitleBar customization
+## Title bar customization
 
-By default, the SfForm loads with the default appearance. The default title bar appearance of the form can be customized by using the `TitleBarStyleInfo` property. It contains all the settings that controls the appearance of the form.
+By default, the SfForm loads with the default appearance, that  can be customized by using the `TitleBarStyleInfo` property. It contains all the settings for the appearance of the form.
 
 
 {% tabs %}
@@ -99,7 +98,7 @@ this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 
 ## Border customization
 
-The borders of the form can be customized by using the `Style.Border`  and `Style.InactiveBorder` properties.
+The borders of the form can be customized by using the `Style.Border` and `Style.InactiveBorder` properties.
 
 
 {% tabs %}
@@ -112,7 +111,7 @@ this.Style.InactiveBorder = new Pen(Color.Gray, 5);
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
-## Loading user control to the TitleBar
+## Loading user control to the title bar
 
 You can load any user control to the title bar of the SfForm instead of the title bar text by using the `TitleBarTextControl` property.
 
