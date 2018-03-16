@@ -2,7 +2,7 @@
 layout: post
 title: Wizard-Control-Appearance | WindowsForms | Syncfusion
 description: wizard control appearance
-platform: windowsform
+platform: windowsforms
 control: Wizard Package 
 documentation: ug
 ---
