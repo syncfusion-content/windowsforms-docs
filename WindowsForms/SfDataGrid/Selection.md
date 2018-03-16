@@ -22,6 +22,9 @@ If the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sf
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.Single;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectionMode = GridSelectionMode.Single
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection1.png)
 
@@ -36,6 +39,9 @@ While using Extended, multiple rows can be selected by pressing the key modifier
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.Extended;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectionMode = GridSelectionMode.Extended
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection2.png)
 
@@ -45,6 +51,9 @@ N>  When the[SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsfor
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.Multiple;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectionMode = GridSelectionMode.Multiple
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection3.png)
 
@@ -53,6 +62,9 @@ The selection can be disabled by setting `SelectionMode` property as `None`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.None;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectionMode = GridSelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,9 +93,20 @@ A single row can be selected by setting [SelectedItem](https://help.syncfusion.c
 var record = SelectionHelper.GetRecordAtRowIndex(this.sfDataGrid, 3);
 this.sfDataGrid1.SelectedItem = record;
 {% endhighlight %}
+{% highlight vb %}
+Dim record = SelectionHelper.GetRecordAtRowIndex(Me.sfDataGrid, 3)
+Me.sfDataGrid1.SelectedItem = record
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight c# %}
 var recordIndex = this.sfDataGrid.TableControl.ResolveToRecordIndex(5);
 this.sfDataGrid1.SelectedIndex = recordIndex;
+{% endhighlight %}
+{% highlight vb %}
+Dim recordIndex = Me.sfDataGrid.TableControl.ResolveToRecordIndex(5)
+Me.sfDataGrid1.SelectedIndex = recordIndex
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,6 +123,16 @@ foreach(var record in records)
       this.sfDataGrid1.SelectedItems.Add(obj);
 }
 {% endhighlight %}
+{% highlight vb %}
+Dim records = Me.sfDataGrid.View.Records
+
+For Each record In records
+	Dim obj = TryCast(record.Data, OrderInfo)
+	If obj.ProductName = "Raclette Courdavault" Then
+	  Me.sfDataGrid1.SelectedItems.Add(obj)
+	End If
+Next record
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection4.png)
 
@@ -110,6 +143,9 @@ SfDataGrid Allows to select a range of rows through [SelectRows](https://help.sy
 {% highlight c# %}
 this.sfDataGrid1.SelectRows(3, 6);
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectRows(3, 6)
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection5.png)
 
@@ -118,6 +154,9 @@ All the rows can be selected by using [SelectAll](https://help.syncfusion.com/cr
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SelectAll();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectAll()
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,6 +168,9 @@ When a particular record is assigned to the [CurrentItem](https://help.syncfusio
 {% highlight c# %}
 this.sfDataGrid1.CurrentItem = SelectionHelper.GetRecordAtRowIndex(this.sfDataGrid, 2);
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CurrentItem = SelectionHelper.GetRecordAtRowIndex(Me.sfDataGrid, 2)
+{% endhighlight %}
 {% endtabs %}
 
 The `CurrentCell` can be moved to a particular RowColumnIndex by using the  [MoveToCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~MoveToCurrentCell.html) method.
@@ -136,6 +178,9 @@ The `CurrentCell` can be moved to a particular RowColumnIndex by using the  [Mov
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.MoveToCurrentCell(new RowColumnIndex(3, 3));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.MoveToCurrentCell(New RowColumnIndex(3, 3))
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,6 +190,9 @@ The Selection can be cleared by using the [ClearSelection](https://help.syncfusi
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.ClearSelection();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ClearSelection()
 {% endhighlight %}
 {% endtabs %}
 
@@ -443,6 +491,13 @@ void SfDataGrid1_CurrentCellActivating(object sender, CurrentCellActivatingEvent
   }
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub SfDataGrid1_CurrentCellActivating(ByVal sender As Object, ByVal e As CurrentCellActivatingEventArgs)
+  If (TryCast(e.DataRow.RowData, OrderInfo)).CustomerID = "FRANS" Then
+	 e.Cancel = True
+  End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Displaying Message Box on current cell activated
@@ -458,6 +513,13 @@ void SfDataGrid1_CurrentCellActivated(object sender, CurrentCellActivatedEventAr
     MessageBox.Show("The current cell is moved to the (" + e.DataRow.RowIndex + "," + e.DataColumn.ColumnIndex + ")");
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.CurrentCellActivated, AddressOf SfDataGrid1_CurrentCellActivated
+
+Private Sub SfDataGrid1_CurrentCellActivated(ByVal sender As Object, ByVal e As CurrentCellActivatedEventArgs)
+	MessageBox.Show("The current cell is moved to the (" & e.DataRow.RowIndex & "," & e.DataColumn.ColumnIndex & ")")
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Cancel Selection 
@@ -472,6 +534,13 @@ void SfDataGrid1_SelectionChanging(object sender, SelectionChangingEventArgs e)
        e.Cancel = true;
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub SfDataGrid1_SelectionChanging(ByVal sender As Object, ByVal e As SelectionChangingEventArgs)
+   If e.RemovedItems.Count <> 0 Then
+	   e.Cancel = True
+   End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Displaying Message Box on selection changed
@@ -484,6 +553,12 @@ void SfDataGrid1_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
     MessageBox.Show("Selection has been changed");
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.SelectionChanged, AddressOf SfDataGrid1_SelectionChanged
+Private Sub SfDataGrid1_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+	MessageBox.Show("Selection has been changed")
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -503,6 +578,10 @@ The selection background and foreground color can be changed  of by [SfDataGrid.
 this.sfDataGrid1.Style.SelectionStyle.BackColor = Color.LightSeaGreen;
 this.sfDataGrid1.Style.SelectionStyle.TextColor = Color.DarkBlue;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.SelectionStyle.BackColor = Color.LightSeaGreen
+Me.sfDataGrid1.Style.SelectionStyle.TextColor = Color.DarkBlue
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection6.png)
 
@@ -518,6 +597,12 @@ this.sfDataGrid1.Style.CurrentCellStyle.BackColor = SystemColors.Highlight;
 this.sfDataGrid1.Style.CurrentCellStyle.TextColor = Color.White;
 this.sfDataGrid1.Style.CurrentCellStyle.BorderColor = Color.Red;
 this.sfDataGrid1.Style.CurrentCellStyle.BorderThickness = GridBorderWeight.Thick;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.CurrentCellStyle.BackColor = SystemColors.Highlight
+Me.sfDataGrid1.Style.CurrentCellStyle.TextColor = Color.White
+Me.sfDataGrid1.Style.CurrentCellStyle.BorderColor = Color.Red
+Me.sfDataGrid1.Style.CurrentCellStyle.BorderThickness = GridBorderWeight.Thick
 {% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection7.png)

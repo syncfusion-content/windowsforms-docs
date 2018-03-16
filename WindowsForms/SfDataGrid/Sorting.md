@@ -16,12 +16,19 @@ The sorting can be performed by touching or clicking the column header. This can
 {% highlight c# %}
 this.sfDataGrid1.AllowSorting = true;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.AllowSorting = True
+{% endhighlight %}
 {% endtabs %}
 Sorting can be enabled or disabled for the particular column by setting the [GridColumnBase.AllowSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowSorting.html) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Columns["OrderID"].AllowSorting = true;
 this.sfDataGrid1.Columns["CustomerID"].AllowSorting = false;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns("OrderID").AllowSorting = True
+Me.sfDataGrid1.Columns("CustomerID").AllowSorting = False
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,11 +42,18 @@ End users can sort the column by clicking column header cell. Once the columns g
 The sorting can be applied programmatically by adding or removing the `SortColumnDescription` in [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnDescriptions.html) collection.
 {% tabs %}
 {% highlight c# %}
-SortColumnDescription scd = new SortColumnDescription();
-scd.ColumnName = "CustomerID";
-scd.SortDirection = ListSortDirection.Ascending;
+SortColumnDescription sortColumnDescription = new SortColumnDescription();
+sortColumnDescription.ColumnName = "CustomerID";
+sortColumnDescription.SortDirection = ListSortDirection.Ascending;
 
-this.sfDataGrid1.SortColumnDescriptions.Add(scd);
+this.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription);
+{% endhighlight %}
+{% highlight vb %}
+Dim sortColumnDescription As New SortColumnDescription()
+sortColumnDescription.ColumnName = "CustomerID"
+sortColumnDescription.SortDirection = ListSortDirection.Ascending
+
+Me.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription)
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,6 +70,12 @@ if (sortColumnDescription != null)
     this.sfDataGrid1.SortColumnDescriptions.Remove(sortColumnDescription);
 }
 {% endhighlight %}
+{% highlight vb %}
+Dim sortColumnDescription = Me.sfDataGrid1.SortColumnDescriptions.FirstOrDefault(Function(col) col.ColumnName = "OrderID")
+If sortColumnDescription IsNot Nothing Then
+	Me.sfDataGrid1.SortColumnDescriptions.Remove(sortColumnDescription)
+End If
+{% endhighlight %}
 {% endtabs %}
 
 ### Clear sorting
@@ -64,6 +84,9 @@ The sorting can be cleared by clearing the `SfDataGrid.SortColumnDescriptions`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SortColumnDescriptions.Clear();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SortColumnDescriptions.Clear()
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,6 +97,9 @@ The sorting functionality of the SfDataGrid can be disabled by setting the `Allo
 {% highlight c# %}
 this.sfDataGrid1.AllowSorting = false;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.AllowSorting = False
+{% endhighlight %}
 {% endtabs %}
 
 ## Sorting column in double click
@@ -82,6 +108,9 @@ By default, column gets sorted when column header clicked. This behavior can be 
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SortClickAction = SortClickAction.DoubleClick;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SortClickAction = SortClickAction.DoubleClick
 {% endhighlight %}
 {% endtabs %}
 
@@ -105,6 +134,9 @@ It is also possible to display sorted order of columns in header by setting [SfD
 {% highlight c# %}
 this.sfDataGrid1.ShowSortNumbers = true;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ShowSortNumbers = True
+{% endhighlight %}
 {% endtabs %}
 ![](Sorting_images/Sorting_Image7.png)
 
@@ -114,6 +146,9 @@ The default sort icon can be changed by using the [SortIcon](https://help.syncfu
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Columns[0].HeaderStyle.SortIcon = global::GettingStarted.Properties.Resources.SortIcon;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns(0).HeaderStyle.SortIcon = Global.GettingStarted.Properties.Resources.SortIcon
 {% endhighlight %}
 {% endtabs %}
 ![](Sorting_images/Sorting_Image8.png)
@@ -182,6 +217,60 @@ public class CustomComparer:IComparer<object>,ISortDirection
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class CustomComparer
+	Implements IComparer(Of Object), ISortDirection
+	Public Function Compare(ByVal x As Object, ByVal y As Object) As Integer
+		Dim nameX As Integer
+		Dim nameY As Integer
+
+		'While data object passed to comparer
+		If x.GetType() Is GetType(OrderInfo) Then
+			nameX = (CType(x, OrderInfo)).ProductName.Length
+			nameY = (CType(y, OrderInfo)).ProductName.Length
+
+		'While sorting groups
+		ElseIf x.GetType() Is GetType(Group) Then
+			'Calculating the group key length
+			nameX = (CType(x, Group)).Key.ToString().Length
+			nameY = (CType(y, Group)).Key.ToString().Length
+
+		Else
+			nameX = x.ToString().Length
+			nameY = y.ToString().Length
+		End If
+
+		'returns the comparison result based in SortDirection.
+		If nameX.CompareTo(nameY) > 0 Then
+			Return If(SortDirection = ListSortDirection.Ascending, 1, -1)
+
+		ElseIf nameX.CompareTo(nameY) = -1 Then
+			Return If(SortDirection = ListSortDirection.Ascending, -1, 1)
+
+		Else
+			Return 0
+		End If
+	End Function
+
+
+	Private _SortDirection As ListSortDirection
+
+	''' <summary>
+	''' Gets or sets the property that denotes the sort direction.
+	''' </summary>
+	''' <remarks>
+	''' SortDirection gets updated only when sorting the groups. For other cases, SortDirection is always ascending.
+	''' </remarks>
+	Public Property SortDirection() As ListSortDirection
+		Get
+			Return _SortDirection
+		End Get
+		Set(ByVal value As ListSortDirection)
+			_SortDirection = value
+		End Set
+	End Property
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 ### Adding custom comparer
@@ -189,6 +278,9 @@ Custom comparer can be added to `SfDataGrid.SortComparers` property. `SortCompar
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SortComparers.Add(new Syncfusion.Data.SortComparer() { Comparer = new CustomComparer(), PropertyName = "ProductName" });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SortComparers.Add(New Syncfusion.Data.SortComparer() With {.Comparer = New CustomComparer(), .PropertyName = "ProductName"})
 {% endhighlight %}
 {% endtabs %}
 While performing the Sorting, the ProductName column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
@@ -209,6 +301,15 @@ private void SfDataGrid1_SortColumnsChanging(object sender, SortColumnsChangingE
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.SortColumnsChanging, AddressOf SfDataGrid1_SortColumnsChanging
+
+Private Sub SfDataGrid1_SortColumnsChanging(ByVal sender As Object, ByVal e As SortColumnsChangingEventArgs)
+	If e.AddedItems(0).ColumnName = "OrderID" Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ## Customization using Events
@@ -223,6 +324,13 @@ private void SfDataGrid1_SortColumnsChanging(object sender, SortColumnsChangingE
 {
     e.CancelScroll = true;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.SortColumnsChanging, AddressOf SfDataGrid1_SortColumnsChanging
+
+Private Sub SfDataGrid1_SortColumnsChanging(ByVal sender As Object, ByVal e As SortColumnsChangingEventArgs)
+	e.CancelScroll = True
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -264,5 +372,37 @@ private object GetOrderSource(OrderInfo source, string name)
         
     return null;
 }
+{% endhighlight %}
+{% highlight vb %}
+Private Me.dataGrid.SortColumnsChanged += AddressOf dataGrid_SortColumnsChanged
+
+Private Sub dataGrid_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
+	Dim viewModel = TryCast(Me.DataContext, ViewModel)
+
+	Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
+
+	For Each sortColumn In Me.dataGrid.View.SortDescriptions
+		Dim columnName = sortColumn.PropertyName
+
+		If sortColumn.Direction = ListSortDirection.Ascending Then
+			OrderedSource = OrderedSource.OrderBy(Function(source) GetOrderSource(source, columnName))
+
+		Else
+			OrderedSource = OrderedSource.OrderByDescending(Function(source) GetOrderSource(source, columnName))
+		End If
+	Next sortColumn
+End Sub
+
+Private Function GetOrderSource(ByVal source As OrderInfo, ByVal name As String) As Object
+	Dim propInfo = source.GetType().GetRuntimeProperty(name)
+
+	If propInfo IsNot Nothing Then
+
+		' get the current sort column value
+		Return propInfo.GetValue(source)
+	End If
+
+	Return Nothing
+End Function
 {% endhighlight %}
 {% endtabs %}
