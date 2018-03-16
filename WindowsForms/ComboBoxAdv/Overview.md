@@ -2,7 +2,7 @@
 layout: post
 title: ComboBoxAdv | WindowsForms | Syncfusion
 description: comboboxadv-Overview
-platform: WindowsForms overview
+platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---
