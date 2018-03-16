@@ -46,6 +46,13 @@ public Form1()
     InitializeComponent();
 }        
 {% endhighlight %}
+{% highlight vb %}
+Public Sub New()
+	System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("de-DE")
+	System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de-DE")
+	InitializeComponent()
+End Sub  
+{% endhighlight %}
 {% endtabs %}
 
 ![](Localization_images/Localization_img5.png)
@@ -68,6 +75,17 @@ By default, SfDataGrid try to read the resource file from executing assembly and
 
 {% tabs %}
 {% highlight c# %}
+public Form1()
+{
+    System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de-DE");
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
+
+    // Set the Custom assembly and namespace for the localization.
+    SR.SetResources(typeof(CustomSfDataGrid).Assembly, "SfDataGridExt");
+    InitializeComponent();
+}        
+{% endhighlight %}
+{% highlight vb %}
 public Form1()
 {
     System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de-DE");

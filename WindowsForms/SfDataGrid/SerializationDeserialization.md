@@ -22,16 +22,25 @@ using (var file = File.Create("DataGrid.xml"))
     this.sfDataGrid1.Serialize(file);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Me.sfDataGrid1.Serialize(file)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Serialize as Stream
 
-The SfDataGrid settings can be stored as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).html method by passing the stream.
+The SfDataGrid settings can be stored as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).html) method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}
 FileStream stream = new FileStream("DataGrid", FileMode.Create);
 this.sfDataGrid1.Serialize(stream);
+{% endhighlight %}
+{% highlight vb %}
+Dim stream As New FileStream("DataGrid", FileMode.Create)
+Me.sfDataGrid1.Serialize(stream)
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,6 +61,13 @@ using (var file = File.Create("DataGrid.xml"))
     this.sfDataGrid1.Serialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Dim options As New SerializationOptions()
+	options.SerializeSorting = False
+	Me.sfDataGrid1.Serialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Serialize grouping
@@ -66,6 +82,13 @@ using (var file = File.Create("DataGrid.xml"))
     options.SerializeGrouping = false;
     this.sfDataGrid1.Serialize(file, options);
 }
+{% endhighlight %}
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Dim options As New SerializationOptions()
+	options.SerializeGrouping = False
+	Me.sfDataGrid1.Serialize(file, options)
+End Using
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,6 +105,13 @@ using (var file = File.Create("DataGrid.xml"))
     this.sfDataGrid1.Serialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Dim options As New SerializationOptions()
+	options.SerializeFiltering = False
+	Me.sfDataGrid1.Serialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Serialize columns
@@ -95,6 +125,13 @@ using (var file = File.Create("DataGrid.xml"))
     options.SerializeColumns = false;
     this.sfDataGrid1.Serialize(file, options);
 }
+{% endhighlight %}
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Dim options As New SerializationOptions()
+	options.SerializeColumns = False
+	Me.sfDataGrid1.Serialize(file, options)
+End Using
 {% endhighlight %}
 {% endtabs %}
 
@@ -113,6 +150,15 @@ using (var file = File.Create("DataGrid.xml"))
     this.sfDataGrid1.Serialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Dim options As New SerializationOptions()
+	options.SerializeCaptionSummaries = False
+	options.SerializeTableSummaries = False
+	options.SerializeGroupSummaries = False
+	Me.sfDataGrid1.Serialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Serialize stacked headers
@@ -128,7 +174,13 @@ using (var file = File.Create("DataGrid.xml"))
     this.sfDataGrid1.Serialize(file, options);
 }
 {% endhighlight %}
-
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Dim options As New SerializationOptions()
+	options.SerializeStackedHeaders = False
+	Me.sfDataGrid1.Serialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Serialize unbound row
@@ -142,6 +194,13 @@ using (var file = File.Create("DataGrid.xml"))
     options.SerializeUnboundRows = false;
     this.sfDataGrid1.Serialize(file, options);
 }
+{% endhighlight %}
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Dim options As New SerializationOptions()
+	options.SerializeUnboundRows = False
+	Me.sfDataGrid1.Serialize(file, options)
+End Using
 {% endhighlight %}
 {% endtabs %}
 
@@ -157,6 +216,13 @@ using (var file = File.Create("DataGrid.xml"))
     this.sfDataGrid1.Serialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Create("DataGrid.xml")
+	Dim options As New SerializationOptions()
+	options.SerializeStyle = False
+	Me.sfDataGrid1.Serialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ## Deserialization
@@ -170,6 +236,11 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     this.sfDataGrid1.Deserialize(file);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Me.sfDataGrid1.Deserialize(file)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Deserialize from Stream
@@ -180,6 +251,10 @@ The SfDataGrid settings can be deserialized from [Stream](https://msdn.microsof
 {% highlight c# %}
 FileStream fileStream = new FileStream("DataGrid", FileMode.Open);
 this.sfDataGrid1.Deserialize(fileStream);
+{% endhighlight %}
+{% highlight vb %}
+Dim fileStream As New FileStream("DataGrid", FileMode.Open)
+Me.sfDataGrid1.Deserialize(fileStream)
 {% endhighlight %}
 {% endtabs %}
 
@@ -200,6 +275,13 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     this.sfDataGrid1.Deserialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Dim options As New DeserializationOptions()
+	options.DeserializeSorting = False
+	Me.sfDataGrid1.Deserialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Deserialize grouping
@@ -213,6 +295,13 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     options.DeserializeGrouping = false;
     this.sfDataGrid1.Deserialize(file, options);
 }
+{% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Dim options As New DeserializationOptions()
+	options.DeserializeGrouping = False
+	Me.sfDataGrid1.Deserialize(file, options)
+End Using
 {% endhighlight %}
 {% endtabs %}
 
@@ -229,6 +318,13 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     this.sfDataGrid1.Deserialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Dim options As New DeserializationOptions()
+	options.DeserializeFiltering = False
+	Me.sfDataGrid1.Deserialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Deserialize columns
@@ -242,6 +338,13 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     options.DeserializeColumns = false;
     this.sfDataGrid1.Deserialize(file, options);
 }
+{% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Dim options As New DeserializationOptions()
+	options.DeserializeColumns = False
+	Me.sfDataGrid1.Deserialize(file, options)
+End Using
 {% endhighlight %}
 {% endtabs %}
 ### Deserialize summaries
@@ -259,6 +362,15 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     this.sfDataGrid1.Deserialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Dim options As New DeserializationOptions()
+	options.DeserializeCaptionSummary = False
+	options.DeserializeGroupSummaries = False
+	options.DeserializeTableSummaries = False
+	Me.sfDataGrid1.Deserialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Deserialize stacked headers
@@ -274,6 +386,13 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     this.sfDataGrid1.Deserialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Dim options As New DeserializationOptions()
+	options.DeserializeStackedHeaders = False
+	Me.sfDataGrid1.Deserialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Deserialize unbound row
@@ -288,6 +407,13 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     this.sfDataGrid1.Deserialize(file, options);
 }
 {% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Dim options As New DeserializationOptions()
+	options.DeserializeUnboundRows = False
+	Me.sfDataGrid1.Deserialize(file, options)
+End Using
+{% endhighlight %}
 {% endtabs %}
 
 ### Deserialize style
@@ -301,5 +427,12 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
     options.DeserializeStyle = false;
     this.sfDataGrid1.Deserialize(file, options);
 }
+{% endhighlight %}
+{% highlight vb %}
+Using file = File.Open("DataGrid.xml", FileMode.Open)
+	Dim options As New DeserializationOptions()
+	options.DeserializeStyle = False
+	Me.sfDataGrid1.Deserialize(file, options)
+End Using
 {% endhighlight %}
 {% endtabs %}
