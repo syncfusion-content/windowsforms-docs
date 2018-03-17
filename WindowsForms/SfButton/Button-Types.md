@@ -8,11 +8,12 @@ documentation: ug
 ---
 
 # Button Types
-This section describes about various types supported by the **SfButton**.
 
-## Text and Image Button
+This section describes various types of button supported by the SfButton.
 
-The text and image can be displayed inside the **SfButton** by initializing the **Text** and **Image** properties.
+## Text and image button
+
+The text and image can be displayed inside the SfButton by initializing the Text and Image properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,9 +28,9 @@ this.sfButton1.Image = Image.FromFile(@"..\..\Data\Image1.png");
 
 ![](SfButton_images/SfButton_img2.jpeg)
 
-### Positioning Text and Image
+### Positioning text and image
 
-The text and image positions can be adjusted by using the **TextImageRelation** property.
+The text and image positions can be adjusted by using the TextImageRelation property.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,9 +42,9 @@ sfButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
 
 ![](SfButton_images/SfButton_img3.jpeg)
 
-### Spacing between Text and Image
+### Spacing between text and image
 
-The space between the text and image can be adjusted by using the **TextMargin** and **ImageMargin** properties.
+The space between the text and image can be adjusted by using the TextMargin and ImageMargin properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,15 +57,15 @@ sfButton1.ImageMargin = new Padding(3, 3, 3, 3);
 {% endhighlight %}
 {% endtabs %}
 
-## Image Button
+## Image button
 
-**SfButton** can be displayed only with image, by setting the empty string value to **Text** property and initialize the image value to **Image** property. The size of the image can be changed by using the **ImageSize** property.
+The SfButton can be displayed only with the image by setting the empty string value to the Text property and initialize the image value to the Image property. The size of the image can be changed by using the ImageSize property.
 
 ![](SfButton_images/SfButton_img4.jpeg)
 
-## Icon Button
+## Icon button
 
-**SfButton** can be displayed only with icon, by setting the empty string value to the **Text** property and initialize the icon value to **Image** property. You can able to show the icon alone button, by setting the borders to null and setting the back color of button which is same as the background area.
+The SfButton can be displayed only with an icon by setting the empty string value to the Text property and initialize the icon value to Image property. You can show the icon button alone by setting the borders to null, and setting the back color of the button same as the background area.
 
 {% tabs %}
 {% highlight c# %}
