@@ -16,7 +16,7 @@ ToolStripRadioButton control is used to select an option like normal RadioButton
 
 The below properties controls the appearance and behavior of the ToolStripRadioButton item.
 
-### Foreground Settings
+## Foreground Settings
 
 <table>
 <tr>
@@ -37,7 +37,7 @@ TextAlign<br/><br/></td><td>
 Specifies the alignment of the text in the item. The options are,<br/><br/>TopLeft, <br/><br/>TopCenter, <br/><br/>TopRight,<br/><br/>MiddleLeft, <br/><br/>MiddleCenter, <br/><br/>MiddleRight,<br/><br/>BottomLeft, <br/><br/>BottomCenter and<br/><br/>BottomRight.<br/><br/></td></tr>
 </table>
 
-### Style Settings
+## Style Settings
 
 <table>
 <tr>
@@ -74,7 +74,7 @@ GroupID<br/><br/></td><td>
 Gets or Sets Group indicator which is used to create groups of ToolStripRadioButton controls on the same parent.<br/><br/></td></tr>
 </table>
 
-### ToolTip Settings
+## ToolTip Settings
 
 <table>
 <tr>
@@ -91,7 +91,7 @@ ToolTipText<br/><br/></td><td>
 Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></tr>
 </table>
 
-### RTL Support
+## RTL Support
 
 <table>
 <tr>
