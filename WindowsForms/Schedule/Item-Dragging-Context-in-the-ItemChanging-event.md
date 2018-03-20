@@ -59,80 +59,55 @@ The following steps help you to get the target part in the Schedule control whil
 2. Add appointments in that schedule grid
 3. Hook the ‘ItemChanging’ event
 
+{% tabs %}
 {% highlight c# %}
-
 this.scheduleControl1.ItemChanging += new ScheduleAppointmentChangingEventHandler(scheduleControl1_ItemChanging);
-
 {% endhighlight %}
-
 {% highlight vbnet %}
-
 AddHandler scheduleControl1.ItemChanging, AddressOf scheduleControl1_ItemChanging
-
 {% endhighlight %}
-
+{% endtabs %}
 
 Get the drag hit context with the below code.
 
+{% tabs %}
 {% highlight c# %}
-
 void scheduleControl1_ItemChanging(object sender, ScheduleAppointmentCancelEventArgs e)
-
 {
 
     if (e.Action == ItemAction.ItemDrag)
-
     {
-
          Console.WriteLine("Dropped Area :" + e.ItemDragHitContext);
-
     }
-
 }
-
 {% endhighlight %}
-
 {% highlight vbnet %}
-
 Private Sub scheduleControl1_ItemChanging(ByVal sender As Object, ByVal e As ScheduleAppointmentCancelEventArgs)
 
      If e.Action = ItemAction.ItemDrag Then
-
-          Console.WriteLine("Dropped Area :" + e.ItemDragHitContext.ToString())
-
+         Console.WriteLine("Dropped Area :" + e.ItemDragHitContext.ToString())
      End If
-
 End Sub
-
 {% endhighlight %}
-
+{% endtabs %}
 
 You can cancel the dropped item using the ItemDragHitContext property as shown below in the following code.
 
+{% tabs %}
 {% highlight c# %}
-
 void scheduleControl1_ItemChanging(object sender, ScheduleAppointmentCancelEventArgs e)
-
 {
 
-       if (e.ItemDragHitContext == ItemDragHitContext.Calendar)
-
-                e.Cancel = true;
-
+   if (e.ItemDragHitContext == ItemDragHitContext.Calendar)
+        e.Cancel = true;
 }
-
 {% endhighlight %}
-
 {% highlight vbnet %}
-
 Private Sub scheduleControl1_ItemChanging(ByVal sender As Object, ByVal e As ScheduleAppointmentCancelEventArgs)
 
-     If e.ItemDragHitContext = ItemDragHitContext.Calendar Then
-
-          e.Cancel = True
-
-     End If
-
+    If e.ItemDragHitContext = ItemDragHitContext.Calendar Then
+        e.Cancel = True
+    End If
 End Sub
-
 {% endhighlight %}
+{% endtabs %}
