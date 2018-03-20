@@ -104,7 +104,7 @@ series.MarkerImage = My.Resources.Marker
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/MarkerImage.png](DataMarkers_images/DataMarkers_img3.PNG)
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/MarkerImage.png](DataMarkers_images/DataMarkers_img3.png)
 
 
 ## Data labels 
