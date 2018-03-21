@@ -54,7 +54,7 @@ N> Editing can also be done in Virtual Grid, please check the detailed descripti
 
 This section will explain on how to begin, commit and cancel the editing process through code wise.
 
-### Start Editing on Current Cell
+### Start Editing on current cell
 
 The [CurrentCell.BeginEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~BeginEdit.html#) method is used to start editing for a current cell and it also allows to set the focus for the cell editor.
 
@@ -71,7 +71,7 @@ Me.gridControl1.CurrentCell.BeginEdit()
 
 N> To check whether the current cell is in editing mode, make use of the [CurrentCell.IsEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~IsEditing.html#) property.
 
-### Committing the Changes
+### Committing the changes
 
 The [CurrentCell.EndEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~EndEdit.html#) method is used to complete the editing process of the current cell. After completing the `EndEdit` method the cell style will be saved for the current cell.
 
@@ -107,7 +107,7 @@ Me.gridControl1.CurrentCell.CancelEdit()
 
 Editing can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. Default value for this property is `false`. This section explains about the usage of `ReadOnly` property in GridControl.
 
-### Enabling Read Only for Entire Grid
+### Enabling Read Only for entire Grid
 
 To enable/disable the editing for the entire GridControl, make use of the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property.
 
@@ -151,7 +151,7 @@ Me.gridControl1(2, 2).ReadOnly = False
 {% endhighlight %}
 {% endtabs %}
 
-### Changing the Content of a Read Only Cell
+### Changing the content of a Read Only Cell
 
 If a cell is in ReadOnly mode then it is not possible to make any changes in that cell programmatically. So to make changes to Read-Only cells, make use of the [IgnoreReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~IgnoreReadOnly.html#) property, which allows to change the ReadOnly cell.
 
@@ -217,11 +217,11 @@ this.gridControl1.CurrentCellEditingComplete += new EventHandler(gridControl1_Cu
 
 void gridControl1_CurrentCellStartEditing(object sender, CancelEventArgs e)
 {
-GridCurrentCell currentCell = this.gridControl1.CurrentCell;
+    GridCurrentCell currentCell = this.gridControl1.CurrentCell;
 
-// Editing for the rows in-between 2 and 6 will be canceled.
-if (currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)))
-e.Cancel = true;
+    // Editing for the rows in-between 2 and 6 will be canceled.
+    if (currentCell.RangeInfo.IntersectsWith(GridRangeInfo.Rows(2, 6)))
+    e.Cancel = true;
 }
 {% endhighlight %}
 
@@ -257,6 +257,7 @@ void gridControl1_CurrentCellActivating(object sender, GridCurrentCellActivating
 
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellActivating, AddressOf gridControl1_CurrentCellActivating
+
 Private Sub gridControl1_CurrentCellActivating(ByVal sender As Object, ByVal e As GridCurrentCellActivatingEventArgs)
 
 'Desired Code can be added.
@@ -312,6 +313,7 @@ e.Cancel = true;
 
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellStartEditing, AddressOf gridControl1_CurrentCellStartEditing 
+
 Private Sub gridControl1_CurrentCellStartEditing(ByVal sender As Object, ByVal e As CancelEventArgs)
 
 'Cancels the Editing.
@@ -321,14 +323,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### CurrentCell Changing/Changed
+### CurrentCell Changing or Changed
 
 While changing contents in the current cell, [CurrentCellChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanging_EV.html#) and [CurrentCellChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanged_EV.html#) events will be triggered respectively for each cells.
 
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.CurrentCellChanging += new CancelEventHandler(gridControl1_CurrentCellChanging);
-
 this.gridControl1.CurrentCellChanged += new EventHandler(gridControl1_CurrentCellChanged);
 
 void gridControl1_CurrentCellChanging(object sender, CancelEventArgs e)
@@ -347,6 +348,7 @@ void gridControl1_CurrentCellChanged(object sender, EventArgs e)
 {% highlight vb %}
 AddHandler gridControl1.CurrentCellChanged , AddressOf gridControl1_CurrentCellChanged
 AddHandler gridControl1.CurrentCellChanging, AddressOf gridControl1_CurrentCellChanging
+
 Private Sub gridControl1_CurrentCellChanging(ByVal sender As Object, ByVal e As CancelEventArgs)
 
 'Desired Code can be added.
@@ -399,17 +401,16 @@ GridTextBoxCellRenderer textBoxCellRenderer = (GridTextBoxCellRenderer)this.grid
 
 //Invokes the Events of the TextBox renderer.
 textBoxCellRenderer.TextBox.KeyUp += TextBox_KeyUp;
-
 textBoxCellRenderer.TextBox.MouseDown += TextBox_MouseDown;
 
 void TextBox_MouseDown(object sender, MouseEventArgs e)
 {
-Console.WriteLine("textBox_MouseDown");
+    Console.WriteLine("textBox_MouseDown");
 }
 
 void TextBox_KeyUp(object sender, KeyEventArgs e)
 {
-Console.WriteLine("textBox_KeyUp");
+    Console.WriteLine("textBox_KeyUp");
 }
 {% endhighlight %}
 
@@ -417,7 +418,6 @@ Console.WriteLine("textBox_KeyUp");
 
 'Creates TextBoxCellRenderer object.
 Dim textBoxCellRenderer As GridTextBoxCellRenderer = CType(Me.gridControl1.CellRenderers("TextBox"), GridTextBoxCellRenderer)
-
 
 'Invokes the Events of the TextBox renderer.
 AddHandler textBoxCellRenderer.TextBox.KeyUp, AddressOf TextBox_KeyUp
@@ -433,7 +433,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Capturing Function Keys on Current Cell Editing
+### Capturing Function keys on current cell Editing
 
 When the current cell is actively being edited, the grid does not automatically catch the Function keys in the current cell. In this case, make use of the [CurrentCellControlKeyMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellControlKeyMessage_EV.html#) to catch the function keys. 
 
@@ -464,7 +464,7 @@ End Sub
 
 N> This event may be hit multiple times for each keystroke i.e., it can be fired for both `KeyDown`, `KeyUp` and other related events.
 
-### Displaying Placeholders for the Exceeded Cell Content
+### Displaying Placeholders for the exceeded cell content
 
 The placeholder is used to display the character instead of the alphabet, numeric or alphanumeric while the text is exceeds the cells width. By default the number sign (#) is used as the placeholder character.
 
@@ -516,7 +516,7 @@ Me.gridControl1.ColStyles[2].AutoFitChar = '#’
 ![](Editing_images/Editing_img1.jpeg)
 
 
-### Applying Trimming when cell content exceed its size	
+### Applying trimming when cell content exceed its size	
 
 While the content of the cell exceeds to the cells size then the text is automatically wrapped in to the next line. To show the Ellipsis word like the '…’ at the end of the text, set the [Trimming](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Trimming.html#) option for the cell as EllipsisWord.
 
@@ -537,7 +537,7 @@ Me.gridControl1.ColStyles[2].Trimming = StringTrimming.EllipsisWord
 
 N> For applying the trimming functionality, make sure that the `WrapText` property is set to `false`.
 
-### Enabling Insert Mode on Editing
+### Enabling Insert mode on Editing
 
 To edit the contents of the cell in insert mode (Replace the existing character with the new one) while inserting the text on a cell, set the selection length of the current cell renderer as one in the [CurrentCellKeyPress](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellKeyPress_EV.html#) event. 
 
@@ -545,20 +545,19 @@ To edit the contents of the cell in insert mode (Replace the existing character 
 {% highlight c# %}
 //Invoke this event to enable Over strike edit mode.
 this.gridControl1.CurrentCellKeyPress += gridControl1_CurrentCellKeyPress;
-
 this.gridControl1.CurrentCellKeyDown += gridControl1_CurrentCellKeyDown;
 
 void gridControl1_CurrentCellKeyPress(object sender, KeyPressEventArgs e)
 {
+    //Create object for current cell renderer
+    GridTextBoxCellRenderer cellRenderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
-//Create object for current cell renderer
-GridTextBoxCellRenderer cellRenderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
-if (e.KeyChar != Convert.ToChar(Keys.Back) && cellRenderer.TextBox.SelectionLength == 0)
-{
+    if (e.KeyChar != Convert.ToChar(Keys.Back) && cellRenderer.TextBox.SelectionLength == 0)
+    {
 
-//Programmatically selects One char.
-cellRenderer.TextBox.SelectionLength = 1;
-}
+        //Programmatically selects One char.
+        cellRenderer.TextBox.SelectionLength = 1;
+    }
 }
 
 void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
@@ -567,8 +566,8 @@ void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
 //Translates the Backspace key to a left arrow key.
 if (e.KeyCode == Keys.Back)
 {
-SendKeys.Send("{LEFT}");
-e.Handled = true;
+    SendKeys.Send("{LEFT}");
+    e.Handled = true;
 }
 }
 {% endhighlight %}
@@ -580,6 +579,7 @@ Private Sub gridControl1_CurrentCellKeyPress(ByVal sender As Object, ByVal e As 
 
 'Create object for current cell renderer.
 Dim cellRenderer As GridTextBoxCellRenderer = TryCast(Me.gridControl1.CurrentCell.Renderer, GridTextBoxCellRenderer)
+
 If e.KeyChar <> Convert.ToChar(Keys.Back) AndAlso cellRenderer.TextBox.SelectionLength = 0 Then
 
 'Programmatically selects One char.
@@ -590,6 +590,7 @@ End Sub
 Private Sub gridControl1_CurrentCellKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 
 'Translates the Backspace key to a left arrow key.
+
 If e.KeyCode = Keys.Back Then
 SendKeys.Send("{LEFT}")
 e.Handled = True
