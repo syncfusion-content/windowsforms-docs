@@ -239,7 +239,7 @@ Base styles that used in GridControl are,
 
 4. [Column Header](#column-header)
 
-### BaseStyles Editor
+### BaseStyles editor
 
 To work with `BaseStyles` from within the Visual Studio designer, make use of the Edit base styles verb that appears at the bottom of the GridControl’s property grid.
 
@@ -344,7 +344,7 @@ gridControl1(3, 2).BaseStyle = "BaseStyleTest"
 
 In this section let’s discuss on some of the ways that can be used to assign the `GridStyleInfo` object.
 
-### ChangeCells Method
+### ChangeCells method
 
 For assigning the `GridStyleInfo` objects for a range of cells, make use of the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ChangeCells.html)()method. This overloaded method accepts `GridRangeInfo` and `GridStyleInfo` objects. [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class specifies a range of cells in GridControl.
 The ChangeCells method depends on the [StyleModifyType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Styles.StyleModifyType.html) parameter. This modify type defines the style operations. Default modify type is `StyleModifyType.Override`.
@@ -527,7 +527,7 @@ Me.gridControl1.ColStyles(4) = style
 
 {% endtabs %}![](CellStyles_images/CellStyles_img21.png)
 
-## Removing Styles
+## Removing styles
 
 For removing the `GridStyleInfo` object from the grid cells, make use of the [ModifyStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ModifyStyle.html) method. This method can remove the styles for whole grid or a particular range of cells.
 
@@ -538,6 +538,7 @@ this.gridControl1.TableStyle.ModifyStyle(null, StyleModifyType.Remove);
 
 // Removes cell styles for the particular cell (2, 2).
 this.gridControl1[2, 2].ModifyStyle(null, StyleModifyType.Remove);
+
 // Removes styles for the column 3.
 this.gridControl1.ColStyles[3].ModifyStyle(null, StyleModifyType.Remove);
 
