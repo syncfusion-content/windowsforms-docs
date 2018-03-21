@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains about the Editing behavior, Data Validation and Hyperlinks in Spreadsheet.
 
-## Cell editing
+## Cell Editing
 
 The Spreadsheet control provides support for editing, you can modify and commit the cell values in the workbook.
 
