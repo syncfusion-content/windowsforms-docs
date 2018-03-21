@@ -80,7 +80,7 @@ spreadsheet.ActiveGrid.SelectionController.ClearSelection();
 {% endhighlight %}
 {% endtabs %}
 
-## Move current cell
+## Moving current cell
 
 Spreadsheet allows the user to move the current cell to the mentioned cell in `SpreadsheetGrid`.
 
@@ -111,7 +111,7 @@ var excelRange = GridExcelHelper.ConvertGridRangeToExcelRange(GridRangeInfo.Cell
 
 T> Users can also convert the `IRange` into equivalent `GridRangeInfo` by using [ConvertExcelRangeToGridRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper~ConvertExcelRangeToGridRange.html) method of  [GridExcelHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper.html) class.
 
-## Properties, Methods and Events
+## Properties, methods, and events
 
 Below table lists the events associated with selection behavior,
 
@@ -237,7 +237,7 @@ Clears the Selection.</td></tr>
 Move the Current cell to mentioned row and column index.</td></tr>
 </table>
 
-## Key Navigation
+## Key navigation
 
 Below table lists the key combinations associated with selection,
 
