@@ -25,7 +25,7 @@ spreadsheet.ActiveGrid.InvalidateCell(2,1);
 {% endhighlight %}
 {% endtabs %}
 
-## Named ranges
+## Named Ranges
 
 Named Ranges are the defined names that represents a cell, range of cells, formula, or constant value or table. Each name have a scope of either to a specific worksheet or to the entire workbook.
 
@@ -41,7 +41,7 @@ spreadsheet.AddNamedRange("SampleName", "A3:B3", "Sheet1");
 {% endhighlight %}
 {% endtabs %}
 
-### Edit or remove named ranges at runtime
+### Editing or removing named ranges at runtime
 
 Spreadsheet allows the user to edit the named ranges at runtime by [EditNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~EditNamedRange.html) method and remove the named ranges at runtime by [DeleteNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~DeleteNamedRange.html) method
 
