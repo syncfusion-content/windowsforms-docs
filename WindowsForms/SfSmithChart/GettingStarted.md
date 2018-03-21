@@ -30,7 +30,7 @@ Smith chart control can be added through designer by following the below steps.
 
 Appearance and behavior related aspects of the smith chart can be controlled by setting the appropriate properties through the properties grid.
 
-For example, in the below image [MinorGridlinesVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesVisible.html) property of radial axis is modified via property grid.
+For example, in the below image [`MinorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesVisible.html) property of radial axis is modified via property grid.
 
 ![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/PropertyGrid.png](GettingStarted_images/GettingStarted_img3.jpeg)
 
@@ -270,7 +270,7 @@ As a result of above steps, the following output will be reproduced.
 
 ### Adding header to the smith chart
 
-[Text](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.SfSmithChart.html#Syncfusion_WinForms_SmithChart_SfSmithChart_Text) property of the smith chart is used to add title to the smith chart control. 
+[`Text`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.SfSmithChart~Text.html) property of the smith chart is used to add title to the smith chart control. 
 
 {% tabs %}
 
@@ -322,7 +322,7 @@ As a result of adding text and axes to the control, the following output is prod
 
 You can plot a line on the smith chart by adding line series.
 
-Initialize the series for representing the data. Marker can be made visible using the [MarkerVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerVisible.html) property for indicating the data point.
+Initialize the series for representing the data. Marker can be made visible using the [`MarkerVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerVisible.html) property for indicating the data point.
 
 {% tabs %}
 
@@ -378,9 +378,9 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-* [DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~DataSource.html)—Used to hold the data source. The data source or data collection can be bound with DataSource.
-* [ResistanceMember](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ResistanceMember.html)—It is a string property that needs to be bound with resistance axis (or HorizontalAxis). 
-* [ReactanceMember](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ReactanceMember.html) - It is a string property that needs to be bound with reactance axis (Or RadialAxis).
+* `DataSource` : Used to hold the data source. The data source or data collection can be bound with DataSource.
+* [`ResistanceMember`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ResistanceMember.html) : It is a string property that needs to be bound with resistance axis (or HorizontalAxis). 
+* [`ReactanceMember`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ReactanceMember.html) : It is a string property that needs to be bound with reactance axis (Or RadialAxis).
 
 After adding the series, the following output is produced.
 
@@ -407,7 +407,7 @@ chart.Legend.Visible = True
 
 {% endtabs %}
 
-Text for the legend can be described in the series itself using the [LegendText](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_LegendText)  property.
+Text for the legend can be described in the series itself using the [`LegendText`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~LegendText.html)  property.
 
 {% tabs %}
 

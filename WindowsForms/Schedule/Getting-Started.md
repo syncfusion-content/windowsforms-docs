@@ -30,23 +30,16 @@ CaptionPanel: This is a Panel that displays a caption at the top of the Schedule
 
 NavigationPanel: This is a Panel where you can place additional controls and make them appear adjacent to the ScheduleControl. This can be optionally docked to the left or right side of the ScheduleControl. You can also hide this panel. The ScheduleControl.Calendar which is a NavigationCalendar object is docked at the top of this panel. There is also a Splitter docked under the NavigationCalendar that allows you to display more or fewer calendars in the NavigationCalendar. The default setting displays two such calendars. The picture below displays three. You can easily put your own controls under the NavigationCalendar using code similar to these snippets.  
 
+{% tabs %}
 {% highlight c# %}
-
 Panel p = new Panel();
-
 p.BackColor = Color.Blue;
-
 p.Dock = DockStyle.Fill;
-
 p.BackgroundImage = Image.FromFile("..\\..\\sync.png");
-
 p.BackgroundImageLayout = ImageLayout.Tile;
-
-
-
 this.ScheduleControl1.AddControlToNavigationPanel(p);
-
 {% endhighlight %}
+{% endtabs %}
 
 NavigationCalendar: This is a GridControl-derived object that displays multiple calendars allowing you to select the dates displayed in the ScheduleControl. The NavigationCalendar is docked at the top of the NavigationPanel. The number of calendars displayed in the NavigationCalendar is determined by its client height. Enlarging the height of the NavigationCalendar, will display more calendars. This can be facilitated by using the Splitter docked under the NavigationCalendar.
 
@@ -159,67 +152,41 @@ The following section explains in detail:
 
     Copy this code to your Form1.cs file. (If you are not using the 2.0 Framework, remove the partial keyword.)
 
-    ~~~ cs
+{% tabs %}
+{% highlight c# %}
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Schedule;
+using GridScheduleSample;
+namespace ScheduleSample
+{
+    public partial class Form1 : Form
+    {
+	 	public Form1()
+	 	{
+			InitializeComponent();
+		}
 
-		 using System;
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			SimpleScheduleDataProvider data = new SimpleScheduleDataProvider();
+			data.MasterList = new SimpleScheduleItemList();
+			data.FileName = "default.schedule";
+			this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
+			this.scheduleControl1.DataSource = data;
+		}
 
-		 using System.Collections.Generic;
+	 }
 
-		 using System.ComponentModel;
+}
+{% endhighlight %}
+{% endtabs %}
 
-		 using System.Data;
-
-		 using System.Drawing;
-
-		 using System.Text;
-
-		 using System.Windows.Forms;
-
-		 using Syncfusion.Windows.Forms.Schedule;
- 
-		 using GridScheduleSample;
-
-
-
-		 namespace ScheduleSample
-
-		 {
-
-		 	public partial class Form1 : Form
-
-			 {
-
-			 	public Form1()
-
-			 	{
-
-					InitializeComponent();
-
-				}
-
-
-
-				private void Form1_Load(object sender, EventArgs e)
-
-				{
-
-					SimpleScheduleDataProvider data = new SimpleScheduleDataProvider();
-
-					data.MasterList = new SimpleScheduleItemList();
-
-					data.FileName = "default.schedule";
-
-					this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
-
-					this.scheduleControl1.DataSource = data;
-
-				}
-
-			 }
-
-		 }
-
-    ~~~
 	{:.prettyprint }
 
 8.  Now press F5 key to compile and run your application. A screen similar to this one should appear.
@@ -248,85 +215,52 @@ The following section explains in detail:
 	
 14. Next modify our Form_Load code to conditionally reload the saved data if the file is present on the disk. Here is the new code. Copy this code to your Form1.cs file. Notice that you have added a "using" statement to reference the System.IO namespace in addition to the new code in the Form1_Load. (If you are not using the 2.0 Framework, remove the partial keyword)
 
-    ~~~ cs
+{% tabs %}
+{% highlight %}
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Schedule;
+using GridScheduleSample;
+using System.IO;
+namespace ScheduleSample
+{
+	public partial class Form1 : Form
+	{
+	    public Form1()
+		{
+			InitializeComponent();
+		}
+		
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			SimpleScheduleDataProvider data;
 
-			using System;
-
-			using System.Collections.Generic;
-
-			using System.ComponentModel;
-
-			using System.Data;
-
-			using System.Drawing;
-
-			using System.Text;
-
-			using System.Windows.Forms;
-
-			using Syncfusion.Windows.Forms.Schedule;
-
-			using GridScheduleSample;
-
-			using System.IO;
-
-
-
-			namespace ScheduleSample
-
+			if (File.Exists("default.schedule"))
 			{
-
-				public partial class Form1 : Form
-
-				{
-
-					public Form1()
-
-					{
-
-						InitializeComponent();
-
-					}
-
-				private void Form1_Load(object sender, EventArgs e)
-
-				{
-
-					SimpleScheduleDataProvider data;
-
-					if (File.Exists("default.schedule"))
-
-					{
-
-						data = SimpleScheduleDataProvider.LoadBinary("default.schedule");
-
-						data.FileName = "default.schedule";
-
-					}
-
-					else
-
-					{
-
-						data = new SimpleScheduleDataProvider();
-
-						data.MasterList = new SimpleScheduleItemList();
-
-						data.FileName = "default.schedule";
-
-					}
-
-					this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
-
-					this.scheduleControl1.DataSource = data;
-
-				}
-
-				}
-
+				data = SimpleScheduleDataProvider.LoadBinary("default.schedule");
+				data.FileName = "default.schedule";
 			}
 
-    ~~~
+			else
+			{
+    			data = new SimpleScheduleDataProvider();
+				data.MasterList = new SimpleScheduleItemList();
+				data.FileName = "default.schedule";
+			}
+				this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
+				this.scheduleControl1.DataSource = data;
+		}
+
+	}
+
+}
+{% endhighlight %}
+{% endtabs %}
 	{:.prettyprint }
 
 15. As our last step, compile and run the application again. The Month view should reappear but, this time the appointment you added earlier should appear.
@@ -424,33 +358,24 @@ IgnoreChanges: gets or sets whether changes to this item affect the Dirty proper
 
 ScheduleAppointmentList is a collection of IScheduleAppointments that serves as the data for the Schedule Control. This class is a wrapper class for an ArrayList and implements IComparer to order this list by the item's StartTime. If two items start at the same time, then the EndTime is used as well to determine the order. Longer appointments rank higher. Here are the properties and methods exposed in ScheduleAppointmentList.
 
+{% tabs %}
 {% highlight c# %}
-
 /// Gets or sets the i-th IScheduleAppointment in this list.
-
 public virtual IScheduleAppointment this[int i];
-
-
 
 /// Gets the number of IScheduleAppointments in this list.
 
 public virtual int Count
 
-
-
 /// Sorts this list on the IScheduleAppointment.StartTime property.
 
 public virtual void SortStartTime()
-
-
 
 /// Adds an IScheduleAppointment to this list.
 
 /// item - The IScheduleAppointment to be added.
 
 public virtual void Add(IScheduleAppointment item)
-
-
 
 /// Inserts an IScheduleAppointment into this list.
 
@@ -460,15 +385,11 @@ public virtual void Add(IScheduleAppointment item)
 
 public virtual void Insert(int index, IScheduleAppointment item)
 
-
-
 /// Removes an IScheduleAppointment from this list.
 
 /// item - The IScheduleAppointment to be removed. 
 
 public virtual void Remove(IScheduleAppointment item)
-
-
 
 /// Removes an IScheduleAppointment from this list.
 
@@ -476,21 +397,17 @@ public virtual void Remove(IScheduleAppointment item)
 
 public virtual void RemoveAt(int index)
 
-
-
 /// Returns the position of the specified item within this list.
 
 /// item - The search item. 
 
 public virtual int IndexOf(IScheduleAppointment item)
 
-
-
 /// Returns a new ScheduleAppointment populated with default values.
 
 public virtual IScheduleAppointment NewScheduleAppointment() 
-
 {% endhighlight %}
+{% endtabs %}
 
 #### ScheduleDataProvider Class
 
@@ -500,291 +417,173 @@ One is to implement IScheduleDataProvider in a virtual manner so that derived cl
 
 The second role is to provide the DropList data. For this second role, the ScheduleDataProvider does provide concrete implementations for the virtual methods it exposes. So, in your derived class, you would have populated drop lists without doing further work, though you can choose to customize these drop lists through virtual overrides. Here is a list of the stub methods exposed by ScheduleDataProvider in its first role.
 
+{% tabs %}
 {% highlight c# %}
-
 /// Return an IScheduleAppointmentList holding the schedule items for the given date. 
 
 public virtual IScheduleAppointmentList GetScheduleForDay(DateTime day)
-
-
 
 //// Return an IScheduleAppointmentList holding the schedule items between the given dates.
 
 public virtual IScheduleAppointmentList GetSchedule(DateTime startDate, DateTime endDate)
 
-
-
 /// Return an IScheduleAppointmentList holding the schedule items for a particular owner on the given date. 
 
 public virtual IScheduleAppointmentList GetScheduleForDay(DateTime day, int owner)
-
-
 
 /// Return an IScheduleAppointmentList holding the schedule items for a particular owner between the given dates.
 
 public virtual IScheduleAppointmentList GetSchedule(DateTime startDate, DateTime endDate, int owner)
 
-
-
 /// Saves any modified ScheduleAppointments.
 
 public virtual void CommitChanges()
-
-
 
 /// Gets or sets whether CommitChanges is called when the ScheduleControl is disposed.
 
 public SaveOnCloseBehavior SaveOnCloseBehaviorAction
 
-
-
 /// Gets or sets whether data source is modified or not.
 
 public virtual bool IsDirty
-
-
 
 /// Returns a new ScheduleAppointment populated with default values.
 
 public virtual IScheduleAppointment NewScheduleAppointment()
 
-
-
 /// Adds a ScheduleAppointment to the list.
 
 public virtual void AddItem(IScheduleAppointment item)
-
-
 
 /// Removes a ScheduleAppointment from the list. 
 
 public virtual void RemoveItem(IScheduleAppointment item)
 
 {% endhighlight %}
-
-
-
+{% endtabs %}
 
 Here are the methods and properties used as part of the ScheduleDataProvider's second role, providing the DropList data. The following is the actual implementation code which gives an indication of the exposed functionality.
 
+{% tabs %}
 {% highlight c# %}
-
 /// Provides default drop lists for entering IScheduleAppointment data. 
 
 /// You can override this method to provide customized drop lists.
 
 public virtual void InitLists()
-
 {
-
 labelList = new ListObjectList();
-
 labelList.Add(new ListObject(0,"None", Color.White)); 
-
 labelList.Add(new ListObject(1,"Important", Color.FromArgb(255,128,64)));
-
 labelList.Add(new ListObject(2,"Business",  Color.FromArgb(86,152,233)));
-
 labelList.Add(new ListObject(3,"Personal",  Color.FromArgb(57,210,53)));
-
 labelList.Add(new ListObject(4,"Vacation",  Color.FromArgb(199,198,182)));
-
 labelList.Add(new ListObject(5,"Must Attend",  Color.FromArgb(255,128,0)));
-
 labelList.Add(new ListObject(6,"Travel Required",  Color.FromArgb(0,255,255)));
-
 labelList.Add(new ListObject(7,"Needs Preparation",  Color.FromArgb(171,171,88)));
-
 labelList.Add(new ListObject(8,"Birthday",  Color.FromArgb(186,117,255)));
-
 labelList.Add(new ListObject(9,"Anniversary",  Color.FromArgb(255,128,64)));
-
 labelList.Add(new ListObject(10,"Phone Call",  Color.FromArgb(255,128,64)));
-
-
-
 markerList = new ListObjectList();
 
 //same as no Mark Color
-
 markerList.Add(new ListObject(0,"Free", Color.FromArgb(50, Color.RoyalBlue)));
-
 markerList.Add(new ListObject(1,"Tentative", Color.FromArgb(255, 206, 206)));
-
 markerList.Add(new ListObject(2,"Busy",  Color.FromArgb(0,0,242)));
-
 markerList.Add(new ListObject(3,"Out of Office",  Color.FromArgb(128, 0 ,64)));
-
-
-
 reminderList = new ListObjectList();
-
 reminderList.Add(new ListObject(0,"0 minutes", Color.White)); 
-
 reminderList.Add(new ListObject(1,"5 minutes", Color.White)); 
-
 reminderList.Add(new ListObject(2,"10 minutes", Color.White)); 
-
 reminderList.Add(new ListObject(3,"15 minutes", Color.White)); 
-
 reminderList.Add(new ListObject(4,"30 minutes", Color.White)); 
-
 reminderList.Add(new ListObject(5,"1 hour", Color.White)); 
-
 reminderList.Add(new ListObject(6,"2 hours", Color.White)); 
-
 reminderList.Add(new ListObject(7,"3 hours", Color.White)); 
-
 reminderList.Add(new ListObject(8,"4 hours", Color.White)); 
-
-
-
 this.locationList = new ListObjectList();
-
 locationList.Add(new ListObject(0,"", Color.White)); 
-
 locationList.Add(new ListObject(1,"RoomB", Color.White)); 
-
 locationList.Add(new ListObject(2,"RoomC", Color.White)); 
-
 locationList.Add(new ListObject(3,"RoomD", Color.White)); 
-
 locationList.Add(new ListObject(4,"RoomE", Color.White)); 
-
 }
-
-
 
 /// Returns the list for the LabelValue options.
 
 public virtual ILookUpObjectList GetLabels()
-
 {
-
    return LabelList;
-
 }
-
-
 
 /// Gets or sets the list for the LabelList options.
-
 protected ListObjectList LabelList
-
 {
-
    get{return labelList;}
-
    set{labelList = value;}
-
 }
-
-
 
 /// Returns the list for the ReminderValue options.
 
 public virtual ILookUpObjectList GetReminders()
-
 {
-
    return ReminderList;
-
 }
-
-
 
 /// Gets or sets the list for the ReminderValue options.
 
 protected ListObjectList ReminderList
-
 {
-
    get{return reminderList;}
-
    set{reminderList = value;}
-
 }
-
-
 
 /// Returns the list for the MarkerValue options.
 
 public virtual ILookUpObjectList GetMarkers()
-
 {
-
    return MarkerList;
-
 }
-
-
 
 /// Gets or sets the list for the MarkerValue options.
 
 protected ListObjectList MarkerList
-
 {
-
    get{return markerList;}
-
    set{markerList = value;}
-
 }
-
-
 
 /// Returns the list for the LocationValue options.
 
 public virtual ILookUpObjectList GetLocations()
-
 {
-
    return LocationList;
-
 }
-
-
 
 /// Gets or sets the list for the LocationValue options.
 
 protected ListObjectList LocationList
-
 {
-
    get{return locationList;}
-
    set{locationList = value;}
-
 }
-
-
 
 /// Returns the list for the Owner options.
 
 public virtual ILookUpObjectList GetOwners()
-
 {
-
 return OwnerList;
-
 }
-
-
 
 /// Gets or sets the list for the Owner options.
 
 protected ListObjectList OwnerList
-
 {
-
    get{return ownerList;}
-
    set{ownerList = value;}
-
 }
-
 {% endhighlight %}
-
+{% endtabs %}
 
 ### The DropLists
 
@@ -792,35 +591,29 @@ The second type of data required of the ScheduleControl is the DropList data. Yo
 
 ListObjectClass - The ListObject is a wrapper class for list choices that can have a ValueMember, DisplayMember and ColorMember associated with them. The class is an implementation of the IListObject that exposes the IListObject functionality as virtual members. This allows you to implement the IListObject by deriving the ListObject and overriding virtual properties. Here are the properties exposed by this class.
 
+{% tabs %}
 {% highlight c# %}
-
 /// An integer that is stored in the data objects to represent this object.
 
 public virtual int ValueMember
-
-
 
 /// A string that is used when this object is displayed.
 
 public virtual string DisplayMember
 
-
-
 /// A color associated with this object.
 
 public virtual Color ColorMember
-
 {% endhighlight %}
+{% endtabs %}
 
 ListObjectList - The ListObjectList is a strongly-typed ArrayList that holds a collection of ListObjects. The class is derived from ArrayList and implements both ITypedList and IListObjectList. Here are the properties and methods exposed in this class.
 
+{% tabs %}
 {% highlight c# %}
-
 /// Returns the property descriptors for each property in ListObject.</returns>
 
 public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
-
-
 
 /// Returns a list name</returns>
 
@@ -829,8 +622,8 @@ public string GetListName(PropertyDescriptor[] listAccessors)
 /// Gets or sets the i-th item in the list.
 
 public new ILookUpObject this[int i]
-
 {% endhighlight %}
+{% endtabs %}
 
 ### IScheduleData Interfaces
 
@@ -864,305 +657,168 @@ Three of the five data interfaces work directly with the Appointment data. Here 
 
 IScheduleAppointmentInterface - IScheduleAppointment defines the objects that represent appointments in the ScheduleControl.  
 
+{% tabs %}
 {% highlight c# %}
-
 public interface IScheduleAppointment : IComparable, ICloneable 
-
 {
 
 /// A unique identifier for this schedule item.
-
 int UniqueID {get; set;}
 
-
-
 /// Identifies the owner of this schedule item.
-
 int Owner {get; set;}
 
-
-
 /// The start time of this item.
-
 DateTime StartTime {get; set;}
 
-
-
 /// The end time for this item.
-
 DateTime EndTime {get; set;}
 
-
-
 /// The subject or topic title for this schedule item.
-
 string Subject {get; set;}
 
-
-
 /// The text displayed as the main content of this schedule item.
-
 string Content {get; set;}
 
-
-
 /// Whether or not this item is to appear as an all day item.
-
 bool AllDay {get; set;}
 
-
-
 /// A categorizer value for this item. 
-
 int LabelValue {get; set;}
 
-
-
 /// A categorizer value for this item. 
-
 int MarkerValue {get; set;}
 
-
-
 /// Whether or not some reminder action should be taken as this item becomes current. 
-
 bool Reminder {get; set;}
 
-
-
 /// Indicates when the reminder action should be taken.
-
 int ReminderValue {get; set;}
 
-
-
 /// Some item dependent string-like the location of a meeting.
-
 string LocationValue {get; set;}
 
-
-
 /// Whether or not this item has been modified.
-
 bool Dirty {get; set;}
 
-
-
 /// Whether or not changes to this item should be ignored.
-
 bool IgnoreChanges {get; set;}
 
-
-
 /// An arbitrary object associated with this item.
-
 object Tag {get; set;}
 
-
-
 /// A version associated with the data schema for this item.
-
 int Version {get;}
-
 }
-
 {% endhighlight %}
+{% endtabs %}
 
 IScheduleAppointmentListInterface - IScheduleAppointmentList represents a collection of IScheduleAppointments that serve as the data for the ScheduleControl. 
 
+{% tabs %}
 {% highlight c# %}
-
 /// A collection of ISchedule objects.
 
 public interface IScheduleAppointmentList
-
 {
 
 /// An IScheduleAppointment referenced through an indexer.
-
 IScheduleAppointment this[int i]{get; set;}
 
-
-
 /// The number of IScheduleAppointments in this list.
-
 int Count {get;}
 
-
-
 /// Arranges the IScheduleAppointments in this list according to IScheduleAppointment.StartTime.
-
 void SortStartTime();
 
-
-
 /// Adds an IScheduleAppointment at the end of this collection.
-
 void Add(IScheduleAppointment item);
 
-
-
 /// Inserts the given IScheduleAppointment at a particular position in this collection.
-
 void Insert(int index, IScheduleAppointment item);
 
-
-
 /// Removes a given IScheduleAppointment from this collection.
-
 void Remove(IScheduleAppointment item);
 
-
-
 /// Removes an IScheduleAppointment at the given index from this collection.
-
 void RemoveAt(int index);
 
-
-
 /// Locates the index of a particular IScheduleAppointment in this collection.
-
 int IndexOf(IScheduleAppointment item);
 
-
-
 /// Finds an IScheduleAppointment in the collection using its IScheduleAppointment.UniqueID.
-
 IScheduleAppointment Find(object uniqueID);
 
-
-
 /// Returns an instance of a new schedule item. 
-
 IScheduleAppointment NewScheduleAppointment();
 
-
-
 /// Returns an IEnumerator that iterates through this list.
-
 IEnumerator GetEnumerator();
-
 }
-
-
 {% endhighlight %}
-
-
-
+{% endtabs %}
 
 IScheduleDataProvider Interface - IScheduleDataProvider has two functional roles. One is to manage the list of Appointment data needed by the ScheduleControl. The second role is to provide the DropList data.
 
+{% tabs %}
 {% highlight c# %}
-
 public interface IScheduleDataProvider
-
 {
 
 /// Provides a list of schedule items for a particular day.
-
 IScheduleAppointmentList GetScheduleForDay(DateTime day);
 
-
-
 /// Provides a list of schedule items for a range of dates.
-
 IScheduleAppointmentList GetSchedule(DateTime startDate, DateTime endDate);
 
-
-
 /// Provides a list of schedule items for a particular day and owner.
-
 IScheduleAppointmentList GetScheduleForDay(DateTime day, int owner);
 
-
-
 /// Provides a list of schedule items for a range of dates and a specified owner.
-
 IScheduleAppointmentList GetSchedule(DateTime startDate, DateTime endDate, int owner);
 
-
-
 /// Called when the ScheduleControl needs to save modifications to the schedule items back to the data store.
-
 void CommitChanges();
 
-
-
 /// Determines whether CommitChanges is called when the top-level Form holding the ScheduleControl is closed.
-
 SaveOnCloseBehavior SaveOnCloseBehaviorAction
 
-
-
 /// Gets or sets whether the data store is modified.
-
 bool IsDirty
 
-
-
 /// Returns an instance of a new schedule item. 
-
 IScheduleAppointment NewScheduleAppointment();
 
-
-
 /// Adds a schedule item to this list.
-
 void AddItem(IScheduleAppointment item);
 
-
-
 /// Removes a schedule item from this list.
-
 void RemoveItem(IScheduleAppointment item);
 
-
-
 /// Initializes the contents of the ILookUpObjectList lists.
-
 void InitLists();
 
-
-
 /// Returns a list holding the possible values for the <see cref="IScheduleAppointment.LocationValue"/> property.
-
 ILookUpObjectList GetLocations();
 
-
-
 /// Returns a list holding the possible values for the <see cref="IScheduleAppointment.MarkerValue"/> property.
-
 ILookUpObjectList GetMarkers();
 
-
-
 /// Returns a list holding the possible values for the <see cref="IScheduleAppointment.LabelValue"/> property.
-
 ILookUpObjectList GetLabels();
-
-
 
 /// Returns a list holding the possible values for the <see cref="IScheduleAppointment.ReminderValue"/> property.
 
-/// </summary>
-
+/// <summary>
 ILookUpObjectList GetReminders();
-
-
 
 /// Returns a list holding the possible values for the <see cref="IScheduleAppointment.Owner"/> property.
 
 /// </summary>
-
 ILookUpObjectList GetOwners();
-
 }
-
 {% endhighlight %}
-
-
-
-
+{% endtabs %}
 
 #### The DropLists
 
@@ -1170,8 +826,8 @@ Two of the five data interfaces work directly with the DropList data. Here are t
 
 ILookUpObject Interface - ILookUpObject is part of the data support to provide the DropList data. This interface defines the object that may appear in a drop list.
 
+{% tabs %}
 {% highlight c# %}
-
 /// Defines items that can be included in a ILookUpObjectList.
 
 /// Choice lists within the ScheduleControl are used to provide possible 
@@ -1185,47 +841,31 @@ ILookUpObject Interface - ILookUpObject is part of the data support to provide t
 /// lists. Value members are normally the values serialized to data stores.
 
 public interface ILookUpObject 
-
 {
 
 /// The value member associated with this item.
-
 int ValueMember {get; set;}
 
-
-
 /// The display member associated with this item.
-
 string DisplayMember {get; set;}
 
-
-
 /// A color associated with this item.
-
 Color ColorMember {get; set;}
-
 }
-
 {% endhighlight %}
-
-
-
-
+{% endtabs %}
 
 ILookUpObjectListInterface - ILookUpObjectList is the wrapper for this list of objects that may appear in a drop list.
 
+{% tabs %}
 {% highlight c# %}
-
 /// Collection of <see cref="ILookUpObject"/> items.
 
 public interface ILookUpObjectList
-
 {
 
 /// Indexer that returns a ILookUpObject object.
-
 ILookUpObject this[int i] {get; set;}
-
 }
-
 {% endhighlight %}
+{% endtabs %}

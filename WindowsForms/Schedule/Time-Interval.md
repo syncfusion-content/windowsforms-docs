@@ -82,17 +82,14 @@ Maintains the repeat type value for every year.Syntax:{StartDate};{EndDate};Ever
 
 The Schedule control, by default, allows you to set the time interval for scheduling appointments only in hours and minutes format. Now, you can also include seconds in the time interval by enabling the AllowSecondsInAppointment property.
 
+{% tabs %}
 {% highlight c# %}
-
 this.scheduleControl1.AllowSecondsInAppointment = true;
-
 {% endhighlight %}
-
 {% highlight vbnet %}
-
 Me.scheduleControl1.AllowSecondsInAppointment = True
-
 {% endhighlight %}
+{% endtabs %}
 
 ![](Time-Interval_images/Time-Interval_img1.png)
 
@@ -127,56 +124,35 @@ Recurrence appointments can also be added by using the RecurrenceRule property. 
 
 In order to use the recurring appointments data provider of the Schedule control, the IRecurringScheduleAppointment interface should be implemented. Refer to the following code to achieve this.
 
+{% tabs %}
 {% highlight c# %}
-
 IRecurringScheduleDataProvider dataProvider = scheduleProvider as IRecurringScheduleDataProvider;
-
 IScheduleAppointment app = scheduleProvider.NewScheduleAppointment();
-
 IRecurringScheduleAppointment item = app as IRecurringScheduleAppointment;
 
 if (item != null)
-
 {
-
-item.StartTime = new DateTime(2015, 05, 06, 1, 0, 0);
-
-item.EndTime = new DateTime(2015, 05, 06, 2, 0, 0);
-
-item.Subject = "Call Joe";
-
-item.RecurrenceRule = "05/06/2015 ;05/07/2015 ;Every DAY;EVERY MIN 10";
-
-dataProvider.AddNewRecurringAppointments(item, new DateTime(2015, 09, 09));
-
+    item.StartTime = new DateTime(2015, 05, 06, 1, 0, 0);
+    item.EndTime = new DateTime(2015, 05, 06, 2, 0, 0);
+    item.Subject = "Call Joe";
+    item.RecurrenceRule = "05/06/2015 ;05/07/2015 ;Every DAY;EVERY MIN 10";
+    dataProvider.AddNewRecurringAppointments(item, new DateTime(2015, 09, 09));
 }
-
-
 {% endhighlight %}
-
 {% highlight vbnet %}
-
 Dim dataProvider As IRecurringScheduleDataProvider = TryCast(scheduleProvider, IRecurringScheduleDataProvider)
-
 Dim app As IScheduleAppointment = scheduleProvider.NewScheduleAppointment()
-
 Dim item As IRecurringScheduleAppointment = TryCast(app, IRecurringScheduleAppointment)
 
 If item IsNot Nothing Then
-
 item.StartTime = New DateTime(2015, 05, 06, 1, 0, 0)
-
 item.EndTime = New DateTime(2015, 5, 6, 2, 0, 0)
-
 item.Subject = "Call Joe"
-
 item.RecurrenceRule = "05/06/2015 ;05/07/2015 ;Every DAY;EVERY MIN 10"
-
 dataProvider.AddNewRecurringAppointments(item, New DateTime(2015, 09, 09))
-
 End If
-
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays appointments shown in the day view every 10 minutes from 1:00 AM to 2:00 AM.
 
