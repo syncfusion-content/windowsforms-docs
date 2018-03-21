@@ -35,7 +35,7 @@ For more information regarding working with worksheets, you can refer the [XlsIO
 
 N> `ActiveGrid` and `ActiveSheet` property can be accessed only after the `WorkbookLoaded` Event of `Spreadsheet` is triggered
 
-## Accessing the grid
+## Accessing the Grid
 
 Each worksheet in the workbook is loaded into the view as [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) in  `Spreadsheet`.
 
@@ -72,7 +72,7 @@ void spreadsheet_WorksheetRemoved(object sender, WorksheetRemovedEventArgs args)
 
 You can also access the each `SpreadsheetGrid` in the Spreadsheet either by passing the particular sheet name in the [GridCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~GridCollection.html) or by invoking `WorkbookLoaded` Event of Spreadsheet. 
 
-### By using Sheet Name
+### By using sheet name
 
 For your reference, setting the row and column count dynamically for the second sheet in the Workbook
 
@@ -86,7 +86,7 @@ spreadsheet.GridCollection[sheet.Name].ColumnCount = 12;
 {% endhighlight %}
 {% endtabs %} 
 
-### By using Event
+### By using event
 
 {% tabs %}
 {% highlight c# %}
