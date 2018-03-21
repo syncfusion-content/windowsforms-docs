@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains about the Editing behavior, Data Validation and Hyperlinks in Spreadsheet.
 
-## Editing
+## Cell editing
 
 The Spreadsheet control provides support for editing, you can modify and commit the cell values in the workbook.
 
@@ -30,19 +30,19 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 ### Editing a cell programmatically
 
-#### Start Editing
+#### Start editing
     
 User can edit a cell programmatically by using [BeginEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCurrentCell~BeginEdit.html) method.
 
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.ActiveGrid.CurrentCell.BeginEdit(true);
+spreadsheet.ActiveGrid.CurrentCell.BeginEdit(true);
 
 {% endhighlight %}
 {% endtabs %}
 
-#### End Editing
+#### End editing
 
 User can end the editing of a cell programmatically in any of the following way,
 
@@ -54,17 +54,15 @@ User can end the editing of a cell programmatically in any of the following way,
 {% highlight c# %}
 
 //Validates and end the edit operation,
-
 spreadsheet.ActiveGrid.CurrentCell.ValidateAndEndEdit();
 
 //Commits the value and end the edit operation,
-
 spreadsheet.ActiveGrid.CurrentCell.EndEdit(true);
 
 {% endhighlight %}
 {% endtabs %}
 
-### Locking or Unlocking a cell
+### Locking or unlocking a cell
 
 Locking cells allows you to disable editing and formatting the cells when the sheet is protected. By default, every cells are locked in the worksheet.
 But while in protect mode, if you want to edit or format a cell, you can unlock the cells.
@@ -73,7 +71,6 @@ But while in protect mode, if you want to edit or format a cell, you can unlock 
 {% highlight c# %}
 
 var worksheet = spreadsheet.ActiveSheet;
-
 var excelStyle = worksheet.Range["A2"].CellStyle;
 
 //To unlock a cell,           
@@ -178,67 +175,38 @@ Spreadsheet allows the user to apply the data validation rules at runtime for pa
 {% highlight c# %}
 
 //Number Validation
-
 IDataValidation validation = spreadsheet.ActiveSheet.Range["A5"].DataValidation;
-
 validation.AllowType = ExcelDataType.Integer;
-
 validation.CompareOperator = ExcelDataValidationComparisonOperator.Between;
-
 validation.FirstFormula = "4";
-
 validation.SecondFormula = "15";
-
 validation.ShowErrorBox = true;
-
 validation.ErrorBoxText = "Accepts values only between 4 to 15";
 
-
 //Date Validation
-
 IDataValidation validation = spreadsheet.ActiveSheet.Range["B4"].DataValidation;
-
 validation.AllowType = ExcelDataType.Date;
-
 validation.CompareOperator = ExcelDataValidationComparisonOperator.Greater;
-
 validation.FirstDateTime = new DateTime(2016,5,5);
-
 validation.ShowErrorBox = true;
-
 validation.ErrorBoxText = "Enter the date value which is greater than 05/05/2016";
 
-
 //TextLength Validation
-
 IDataValidation validation = spreadsheet.ActiveSheet.Range["A3:B3"].DataValidation;
-
 validation.AllowType = ExcelDataType.TextLength;
-
 validation.CompareOperator = ExcelDataValidationComparisonOperator.LessOrEqual;
-
 validation.FirstFormula = "4";
-
 validation.ShowErrorBox = true;
-
 validation.ErrorBoxText = "Text length should be lesser than or equal 4 characters";
 
-
 //List Validation
-
 IDataValidation validation = spreadsheet.ActiveSheet.Range["D4"].DataValidation;
-
 validation.ListOfValues = new string[] { "10", "20", "30" };
 
-
 //Custom Validation
-
 IDataValidation validation = spreadsheet.ActiveSheet.Range["D4"].DataValidation;
-
 validation.AllowType = ExcelDataType.Formula;
-
 validation.FirstFormula = "=A1+A2>0";
-
 validation.ErrorBoxText = "Sum of the values in A1 and A2 should be greater than zero";
 
 {% endhighlight %}
@@ -267,47 +235,27 @@ Spreadsheet allows you to add below types of the hyperlink.
 {% highlight c# %}
 
 // Creating a Hyperlink for e-mail,
-
 var range = spreadsheet.ActiveSheet.Range["A5"];
-
 IHyperLink hyperlink1 = spreadsheet.ActiveSheet.HyperLinks.Add(range);
-
 hyperlink1.Type = ExcelHyperLinkType.Url;
-
 hyperlink1.Address = "mailto:Username@syncfusion.com";
-
 hyperlink1.TextToDisplay="Send Mail";
-
 spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(5, 1));
 
-
 // Creating a Hyperlink for Opening Files,
-
 var range1 = spreadsheet.ActiveSheet.Range["D5"];
-
 IHyperLink hyperlink2 = spreadsheet.ActiveSheet.HyperLinks.Add(range1);
-
 hyperlink2.Type = ExcelHyperLinkType.File;
-
 hyperlink2.Address = @"C:\Samples\Local";
-
 hyperlink2.TextToDisplay = "File Location";
-
 spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(5, 4));
 
-
 //Creating a Hyperlink to refer another cell in the workbook,
-
 var range2 = spreadsheet.ActiveSheet.Range["C13"];
-
 IHyperLink hyperlink3 = spreadsheet.ActiveSheet.HyperLinks.Add(range);
-
 hyperlink3.Type = ExcelHyperLinkType.Workbook;
-
 hyperlink3.Address = "Sheet2!C23";
-
 hyperlink3.TextToDisplay = "Sample";
-
 spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(13, 3));
 
 {% endhighlight %}
@@ -321,20 +269,13 @@ Spreadsheet provides support to edit or remove the hyperlinks from the range by 
 {% highlight c# %}
 
 //To Edit a hyperlink in a cell,
-
 var hyperlink = spreadsheet.ActiveSheet.Range["A5"].Hyperlinks[0];
-
 hyperlink.TextToDisplay = "Sample";
-
 hyperlink.Address = "http://help.syncfusion.com";
-
 spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(5,1));
 
-
 //To remove a hyperlink in a cell,
-
 var hyperlink = spreadsheet.ActiveSheet.Range["A5"].Hyperlinks.RemoveAt(0);
-
 spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(5,1));
 
 {% endhighlight %}
