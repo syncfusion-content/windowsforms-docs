@@ -31,7 +31,7 @@ System.Diagnostics.Process.Start("Sample.png");
 {% endhighlight %}
 {% endtabs %}
 
-## Convert to PDF
+## Convert into PDF
 
 Spreadsheet provides support to export the Excel workbook to PDF using ExcelToPdfConverter. 
 
@@ -65,7 +65,7 @@ System.Diagnostics.Process.Start("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-## Convert to HTML
+## Convert into HTML
 
 Spreadsheet provides support to convert the excel workbook into HTML page.
 
