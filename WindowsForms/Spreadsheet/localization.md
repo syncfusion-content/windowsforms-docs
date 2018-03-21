@@ -25,7 +25,6 @@ Setting of the culture information,
 public MainWindow()
 {
     System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
-
     InitializeComponent();
 }
 
