@@ -23,7 +23,7 @@ IConditionalFormat condition1 = condition.AddCondition();
 {% endhighlight %}
 {% endtabs %}
 
-## Highlight cell rules
+## Highlight Cell Rules
 
 ### Based on CellValue
 
