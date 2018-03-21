@@ -11,7 +11,7 @@ documentation: ug
 
  This section explains about the interactive operations with Spreadsheet
 
-## Clipboard operations
+## Clipboard Operations
 
 Spreadsheet provides support for all the clipboard operations to with all the format settings when copied within a workbook.  
 
@@ -118,7 +118,7 @@ copyPaste.Paste(range, PasteOptions.Paste);
 
 T> Users can also set their default [PasteOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.PasteOptions.html) while pasting in Spreadsheet, by using [DefaultPasteOption](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste~DefaultPasteOption.html) property.
 
-## Undo/Redo
+## Undo or Redo
 
 Spreadsheet provides support for Undo/Redo functionality like Microsoft Excel.
 
