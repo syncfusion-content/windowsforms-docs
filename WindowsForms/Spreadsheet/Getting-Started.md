@@ -70,11 +70,11 @@ Syncfusion.Pdf.Base.dll</td><td>
 Contains the base and fundamental classes for creating PDF.</td></tr>
 </table>
 
-## Create a Simple Application with Spreadsheet
+## Create a simple application with Spreadsheet
 
 Spreadsheet control can be added into the application either via designer or via coding. 
 
-### Adding a Control via Designer
+### Adding a control via designer
 
 1.Create new Windows Forms application in Visual Studio.
 
@@ -88,7 +88,7 @@ Spreadsheet control can be added into the application either via designer or via
 
 5.To make an interaction between Ribbon items and `Spreadsheet`, bind the Spreadsheet as DataContext to the `SpreadsheetRibbon`.
 
-### Adding Control via Coding
+### Adding control via coding
 
 Spreadsheet is available in the following namespace `Syncfusion.Windows.Forms.Spreadsheet` and it can be created programmatically by using below code. 
 
@@ -160,7 +160,7 @@ spreadsheet.Open (@"..\..\Data\Outline.xlsx");
 Opening Excel File in Spreadsheet
    {:.caption}
 
-## Saving the Excel Workbook
+## Saving the Excel workbook
 
 The Excel workbook can be saved in Spreadsheet using [Save](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Save.html) method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location. 
 
@@ -191,7 +191,7 @@ spreadsheet.SaveAs();
 {% endhighlight %}
 {% endtabs %}
 
-## Displaying Charts and Sparklines
+## Displaying charts and sparklines
 
 For importing charts and sparklines in Spreadsheet, add the following assembly as reference into the application.
  
