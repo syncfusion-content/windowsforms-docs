@@ -35,7 +35,7 @@ public Form1()
 {% endtabs %}
 
 
-### Adding the charts at runtime
+### Adding charts at runtime
 
 For adding the Charts in Spreadsheet at runtime, use [AddChart](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddChart.html) method, also you can resize and reposition the chart.
 
@@ -158,7 +158,7 @@ spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicVisual();
 {% endhighlight %}
 {% endtabs %}
 
-## Select a shape programmatically
+## Selecting a shape programmatically
 
 Users can select a shape programmatically by using [AddSelectedShapes](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~AddSelectedShapes.html) method of [GraphicModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel.html) class.
 
@@ -171,7 +171,7 @@ spreadsheet.ActiveGrid.GraphicModel.AddSelectedShapes(shape);
 {% endhighlight %}
 {% endtabs %}
 
-## Clear selection
+## Clearing selection
 
 Users can clear the selection from the shapes and move the selection to the grid using [ClearSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~ClearSelection.html) method of `GraphicModel` class.
 
