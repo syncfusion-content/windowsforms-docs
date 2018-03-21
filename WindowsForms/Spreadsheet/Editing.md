@@ -82,7 +82,7 @@ excelStyle.Locked = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Properties, methods, and events
+### Properties, Methods, and Events
 
 The order of events when editing and committing a cell value in Spreadsheet,
 
