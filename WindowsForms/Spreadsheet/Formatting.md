@@ -22,7 +22,7 @@ Styles and formats defined in an Excel file are automatically imported. Users ca
 * Built-in Styles
 * Table Formats
 
-## Cell background
+## Cell Background
 
 For applying background color for the cells at runtime in Spreadsheet, set the color index for the particular XlsIO range and invalidate the range in order to update the view in `SpreadsheetGrid`.
 
@@ -90,7 +90,7 @@ spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 {% endhighlight %}
 {% endtabs %}
 
-## Cell borders
+## Cell Borders
 
 Spreadsheet allows the user to apply the borders at runtime for particular cell or range of cells,
 
@@ -115,7 +115,7 @@ spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 {% endhighlight %}
 {% endtabs %}
 
-## Cell alignment
+## Cell Alignment
 
 Spreadsheet allows the user to align the content of the cell. The alignment options includes Horizontal Alignment, Vertical Alignment, Indentation, Orientation etc.,
 
@@ -147,7 +147,7 @@ spreadsheet.FormatIndentLevel(3);
 {% endhighlight %}
 {% endtabs %}
 
-## Wrap text
+## Wrap Text
 
 Spreadsheet allows the user to wrap the text in the cell, if the text is too large.
 
@@ -204,7 +204,7 @@ spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 {% endhighlight %}
 {% endtabs %}
 
-## Number format
+## Number Format
 
 Spreadsheet allows the user to view the numbers in the cells with different formats which includes currency, percentage, datetime, scientific etc.,
 
@@ -275,7 +275,7 @@ m/d/yyyy</td></tr>
 0.00E+00</td></tr>
 </table>
 
-## Built-in styles
+## Built-in Styles
 
 Spreadsheet supports some predefined built in styles of XlsIO. [BuiltInStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.BuiltInStyles.html) is an enum which contains different styles for formatting a cell or range of cells.
 
@@ -288,7 +288,7 @@ spreadsheet.ActiveGrid.InvalidateCell(3, 1);
 {% endhighlight %}
 {% endtabs %}
 
-## Format as table
+## Format as Table
 
 Spreadsheet allows the users to format a table with built in styles of table (i.e.) [TableBuiltInStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.TableBuiltInStyles.html) of XlsIO
 
