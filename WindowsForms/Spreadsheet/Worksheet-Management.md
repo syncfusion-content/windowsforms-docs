@@ -10,7 +10,7 @@ documentation: ug
 # Worksheet Management
 This section explains about the operations that are performed with the worksheet.
 
-## Insert and delete
+## Insert and Delete
 
 Spreadsheet provides support to insert and delete the worksheets in a workbook.
 
@@ -29,7 +29,7 @@ spreadsheet.RemoveSheet("Sheet2");
 {% endhighlight %}
 {% endtabs %}
 
-## Hide and unhide
+## Hide and Unhide
 
 Spreadsheet provides support to hide and unhide the worksheets in a workbook.
 
