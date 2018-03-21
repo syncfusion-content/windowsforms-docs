@@ -115,7 +115,7 @@ _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application
 
 ![](Getting-Started_images/Getting-Started_img2.PNG)
 
-## Creating a new Excel workbook
+## Creating a new Excel Workbook
 
 A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Create.html) method with specified number of worksheets. By default, a workbook will be created with single worksheet.
 
@@ -160,7 +160,7 @@ spreadsheet.Open (@"..\..\Data\Outline.xlsx");
 Opening Excel File in Spreadsheet
    {:.caption}
 
-## Saving the Excel workbook
+## Saving the Excel Workbook
 
 The Excel workbook can be saved in Spreadsheet using [Save](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Save.html) method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location. 
 
