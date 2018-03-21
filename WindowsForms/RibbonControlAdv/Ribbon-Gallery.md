@@ -143,6 +143,7 @@ Description<br/><br/></th></tr>
 ItemBackColor<br/><br/></td><td>
 Sets the back color for the items.<br/><br/></td></tr>
 </table>
+
 ### Style Settings
 
 <table>

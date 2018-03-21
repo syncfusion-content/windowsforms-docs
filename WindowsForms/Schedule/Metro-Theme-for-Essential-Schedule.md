@@ -47,17 +47,14 @@ Occurs when the ThemesEnabled property is changed.</td></tr>
 
 You can apply the Metro theme to the Schedule control by setting the GridVisualStyles property as Metro. The following code example illustrates this.
 
+{% tabs %}
 {% highlight c# %}
-
 this.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusion.Windows.Forms.GridVisualStyles.Metro;
-
 {% endhighlight %}
-
 {% highlight vbnet %}
-
 Me.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusion.Windows.Forms.GridVisualStyles.Metro
-
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot is a sample output for the previous code.
 
