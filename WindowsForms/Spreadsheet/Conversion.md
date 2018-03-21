@@ -10,7 +10,7 @@ documentation: ug
 # Conversion
 This section explains about the conversion of workbook in Spreadsheet into image, PDF and HTML
 
-## Convert into image
+## Convert into Image
 
 Spreadsheet provides support to convert a worksheet in to an image of type Bitmap or Metafile based on the input range of rows and columns with all basic formats preserved, By using the [ConvertToImage](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ConvertToImage.html) method,worksheet can be converted into an image.
 
