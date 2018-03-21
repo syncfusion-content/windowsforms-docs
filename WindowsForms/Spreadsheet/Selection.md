@@ -26,7 +26,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-## Accessing the Current cell
+## Accessing the current cell
 
 Spreadsheet allows the user to access the active cell by using the `CurrentCell` property of [SelectionController](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController.html) Class.
 
@@ -38,7 +38,7 @@ var cell= spreadsheet.ActiveGrid.SelectionController.CurrentCell;
 {% endhighlight %}
 {% endtabs %}
 
-## Accessing the Selected ranges
+## Accessing the selected ranges
 
 Spreadsheet allows the user to access the selected ranges of the `SpreadsheetGrid` using [SelectedRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectedRanges.html) property of `SpreadsheetGrid`.
 
@@ -52,7 +52,7 @@ var rangeList = spreadsheet.ActiveGrid.SelectedRanges;
 
 N> To get the active range in the selected ranges list, use [ActiveRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridRangeInfoList~ActiveRange.html) property of [GridRangeInfoList](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridRangeInfoList.html) class.
 
-## Adding or Clearing the Selection
+## Adding or clearing the selection
 
 Spreadsheet allows the user to add and clear the selection in the Active `SpreadsheetGrid` for the given range.
 
@@ -80,7 +80,7 @@ spreadsheet.ActiveGrid.SelectionController.ClearSelection();
 {% endhighlight %}
 {% endtabs %}
 
-## Move Current Cell
+## Move current cell
 
 Spreadsheet allows the user to move the current cell to the mentioned cell in `SpreadsheetGrid`.
 
@@ -91,7 +91,6 @@ Spreadsheet allows the user to move the current cell to the mentioned cell in `S
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(5, 5);
 
 For moving the current cell to a different sheet,
-
 spreadsheet.SetActiveSheet("Sheet2");
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(6, 5);
 
@@ -352,8 +351,3 @@ Extends the selection down in a worksheet.</td></tr>
 SHIFT+PAGE UP</td><td>
 Extends the selection up in a worksheet.</td></tr>
 </table>
-
-
-
-
-
