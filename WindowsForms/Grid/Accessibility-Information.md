@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Accessibility Information
 
-## Technical Standards
+## Technical standards
 
-### Software Applications and Operating Systems – Detailed Voluntary Product Accessibility Template
+### Software applications and operating systems – detailed voluntary product accessibility template
 
 <table>
 <tr>
@@ -117,7 +117,7 @@ Essential Grid controls provide functionality that conform to the criteria.<br/>
 Can be achieved through existing cell-related APIs.<br/><br/></td></tr>
 </table>
 
-### Functional Performance Criteria
+### Functional performance criteria
 
 <table>
 <tr>
