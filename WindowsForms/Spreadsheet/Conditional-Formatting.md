@@ -110,7 +110,7 @@ Sample Output
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img1.PNG)
 
-## Data bars
+## Data Bars
 
 To apply the conditional format based on data bars,define the conditional format type as a **DataBar** and specify the properties associated with DataBars such as bar color, MinPoint, MaxPoint etc.,.to the specified cell or range. Finally, invalidate that cells to update the view.
 
@@ -135,7 +135,7 @@ Sample Output
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img2.PNG)
 
-## Color scales
+## Color Scales
 
 To apply the conditional format based on color scales, define the conditional format type as a **ColorScale** and specify the other properties associated with ColorScale such as condition count,color criteria etc.,to the specified cell or range. Finally,invalidate that cells to update the view.
 
@@ -161,7 +161,7 @@ Sample Output
 ![](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
 
 
-## Icon sets
+## Icon Sets
 
 To apply the conditional format for Icon sets, define the conditional format type as **IconSet** and  the properties associated with IconSet such as the type of the icon,criteria etc., to the specified cell or range. Finally, invalidate that cells to update the view.
 
