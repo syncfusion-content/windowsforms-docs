@@ -204,7 +204,7 @@ spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 {% endhighlight %}
 {% endtabs %}
 
-## Number Format
+## Number format
 
 Spreadsheet allows the user to view the numbers in the cells with different formats which includes currency, percentage, datetime, scientific etc.,
 
@@ -275,7 +275,7 @@ m/d/yyyy</td></tr>
 0.00E+00</td></tr>
 </table>
 
-## Built-in Styles
+## Built-in styles
 
 Spreadsheet supports some predefined built in styles of XlsIO. [BuiltInStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.BuiltInStyles.html) is an enum which contains different styles for formatting a cell or range of cells.
 
@@ -288,7 +288,7 @@ spreadsheet.ActiveGrid.InvalidateCell(3, 1);
 {% endhighlight %}
 {% endtabs %}
 
-## Format as Table
+## Format as table
 
 Spreadsheet allows the users to format a table with built in styles of table (i.e.) [TableBuiltInStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.TableBuiltInStyles.html) of XlsIO
 
