@@ -82,7 +82,7 @@ spreadsheet.RefreshOutlines(false,true);
 
 N> [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RefreshOutlines.html) method is invoked to refresh/update the Outlines of the Group in Spreadsheet.
 
-## Change Outline Settings
+## Changing Outline settings
 
 In Spreadsheet, users can change the outline settings by changing the display of summary rows to either below or above the details and summary columns to  either left or right of the details in Outlines Group.
 
@@ -96,7 +96,7 @@ spreadsheet.RefreshOutlines(true, true);
 {% endhighlight %}
 {% endtabs %}
            
-## Clear Outlines
+## Clearing Outlines
 Spreadsheet provides support to clear all the Outlines of the Grouped range.
 
 {% tabs %}
