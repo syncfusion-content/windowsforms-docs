@@ -11,7 +11,7 @@ documentation: ug
 
 Spreadsheet calculation engine offers automated calculation over a formula, expression, or cross sheet references. Spreadsheet calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 
-## Adding Formula into cell
+## Adding formula into cell
 
 To add formulas into a cell programmatically, use [SetCellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
 
@@ -19,15 +19,13 @@ To add formulas into a cell programmatically, use [SetCellValue](http://help.syn
 {% highlight c# %}
 
 var range = spreadsheet.ActiveSheet.Range["A2"];
-
 spreadsheet.ActiveGrid.SetCellValue(range, "=SUM(B1:B2)");
-
 spreadsheet.ActiveGrid.InvalidateCell(2,1);
 
 {% endhighlight %}
 {% endtabs %}
 
-## Named Ranges
+## Named ranges
 
 Named Ranges are the defined names that represents a cell, range of cells, formula, or constant value or table. Each name have a scope of either to a specific worksheet or to the entire workbook.
 
@@ -51,12 +49,10 @@ Spreadsheet allows the user to edit the named ranges at runtime by [EditNamedRan
 {% highlight c# %}
 
 //To Edit the named ranges,
-
 IName name = spreadsheet.Workbook.Names["Sample"];
 spreadsheet.EditNamedRange("Test", "A3:B3", name);
 
 //To remove the named ranges,
-
 IName name = spreadsheet.Workbook.Names["Sample"];
 spreadsheet.DeleteNamedRange(name);
 
