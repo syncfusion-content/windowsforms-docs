@@ -11,7 +11,7 @@ documentation: ug
 
  This section explains about the interactive operations with Spreadsheet
 
-## Clipboard Operations
+## Clipboard operations
 
 Spreadsheet provides support for all the clipboard operations to with all the format settings when copied within a workbook.  
 
@@ -76,14 +76,11 @@ For [Cut](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Sync
 {% highlight c# %}
 			
 //To perform cut operation for selected ranges
-
- var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
- spreadsheet.ActiveGrid.CopyPaste.Copy(range, true);
+var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+spreadsheet.ActiveGrid.CopyPaste.Copy(range, true);
 
 //To perform cut operation
-
- spreadsheet.ActiveGrid.CopyPaste.Cut();
+spreadsheet.ActiveGrid.CopyPaste.Cut();
 
 {% endhighlight %}
 {% endtabs %}
@@ -94,14 +91,11 @@ For [Copy](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syn
 {% highlight c# %}
 
 //To perform copy operation for selected ranges
-
- var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
- spreadsheet.ActiveGrid.CopyPaste.Copy(range, false);
+var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
+spreadsheet.ActiveGrid.CopyPaste.Copy(range, false);
 
 //To perform Copy operation
-
- spreadsheet.ActiveGrid.CopyPaste.Copy();
+spreadsheet.ActiveGrid.CopyPaste.Copy();
 
 {% endhighlight %}
 {% endtabs %}
@@ -112,15 +106,11 @@ For [Paste](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Sy
 {% highlight c# %}
 
 //To perform paste operation
-
 spreadsheet.ActiveGrid.CopyPaste.Paste();
 
 //To perform paste operation with range and Paste Options
-
 var copyPaste = spreadsheet.ActiveGrid.CopyPaste as SpreadsheetCopyPaste;
-
 copyPaste.Paste(range);
-
 copyPaste.Paste(range, PasteOptions.Paste);
 
 {% endhighlight %}
@@ -167,9 +157,7 @@ To programmatically, invoke the Undo/Redo operations,
 {% highlight c# %}
 
 spreadsheet.HistoryManager.Enabled = true;
-
 spreadsheet.HistoryManager.Undo();
-
 spreadsheet.HistoryManager.Redo();
 
 {% endhighlight %}
@@ -203,8 +191,8 @@ spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
 
 //Custom TabItem ContextMenus
 
- public ContextMenu CustomTabItemContextMenu()
- {
+public ContextMenu CustomTabItemContextMenu()
+{
     var contextMenu = new ContextMenuStrip();
     contextMenu.BackColor = Color.White;
     contextMenu.RenderMode = ToolStripRenderMode.System;
@@ -212,16 +200,14 @@ spreadsheet.TabItemContextMenu = CustomTabItemContextMenu();
     var insertRow = new ToolStripMenuItem() { BackColor = Color.White, Text = "InsertRow" };           
     insertRow.Image = insertRowIcon;
     insertRow.Click += insertRow_Click;
-
     var deleteRowIcon = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\deleteRow.png", UriKind.Relative)) };
     var deleteRow = new ToolStripMenuItem() { BackColor = Color.White, Text = "DeleteRow"};
     deleteRow.Image = deleteRowIcon;
     deleteRow.Click += deleteRow_Click;
-    
     contextMenu.Items.Add(insertRow);
     contextMenu.Items.Add(deleteRow);
     return contextMenu;
- }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -252,7 +238,6 @@ spreadsheet.ActiveGrid.CellContextMenuOpening += ActiveGrid_CellContextMenuOpeni
 void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEventArgs e)
 {
     //Adding Customized Menu item
-        
     var PasteSpecial = new ToolStripMenuItem(){ BackColor = Color.White, Name = "PasteSpecial"};
     PasteSpecial.Text = "PasteSpecial";
     Image paste = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\paste.png", UriKind.Relative)) };
@@ -276,7 +261,7 @@ To enable the comment in Spreadsheet, set the [ShowComment](http://help.syncfusi
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.ActiveGrid.ShowComment = true;
+spreadsheet.ActiveGrid.ShowComment = true;
 
 {% endhighlight %}
 {% endtabs %}
