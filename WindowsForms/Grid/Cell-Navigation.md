@@ -120,7 +120,7 @@ Me.gridControl.TabIndex = 4
 
 N> The Changing of `TabIndex` in GridControl can be notified by using the [TabIndexChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~TabIndex.html) event.
 
-### Avoid setting focus using TAB key for particular control
+### Avoid setting focus using TAB key for a particular control
 The focus for particular control using <kbd>TAB</kbd> key can be restricted by using [TabStop](https://msdn.microsoft.com/en-in/library/system.windows.forms.control.tabstop%28v=vs.110%29.aspx) property.
 
 {% tabs %}
@@ -134,7 +134,7 @@ Me.gridControl.TabStop = False
 {% endhighlight %}
 {% endtabs %}
 
-### Releasing TAB focus from grid
+### Releasing TAB focus from Grid
 When setting the [ActiveControl](https://msdn.microsoft.com/en-us/library/system.windows.forms.icontainercontrol.activecontrol.aspx) of the form as GridControl, the focus will not move from the grid to other controls in the form using the <kbd>TAB</kbd> key. This difficulty can be overcome by setting `WantTabKey` property to `false` after setting the `ActiveControl`. This helps to navigate other controls in the form.
 
 {% tabs %}
@@ -258,7 +258,7 @@ Me.gridControl1.CurrentCell.MoveRight()
 {% endhighlight %}
 {% endtabs %}
 
-### Navigate to particular cell
+### Navigate to a particular cell
 The current cell can be moved to particular cell by using [MoveTo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDragWindow~MoveTo.html) method.
 
 {% tabs %}
