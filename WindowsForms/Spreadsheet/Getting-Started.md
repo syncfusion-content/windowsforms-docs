@@ -11,7 +11,7 @@ documentation: ug
 
 This section helps you to get started with the Spreadsheet
 
-## Assemblies Deployment
+## Assemblies deployment
 
 Below table describes, list of assemblies required to be added in project when the Spreadsheet control is used in your application.
 
@@ -99,17 +99,12 @@ _For_ _Spreadsheet_
 {% highlight c# %}
 
 private Spreadsheet spreadsheet;
-
 spreadsheet = new Spreadsheet();
-            
 SpreadsheetRibbon ribbon = new SpreadsheetRibbon() { Spreadsheet = spreadsheet };
-
 spreadsheet.Dock = DockStyle.Fill;
-
 spreadsheet.Anchor = AnchorStyles.Left | AnchorStyles.Top;
           
 this.Controls.Add(spreadsheet);
-            
 this.Controls.Add(ribbon);
 
 {% endhighlight %}
@@ -120,14 +115,14 @@ _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application
 
 ![](Getting-Started_images/Getting-Started_img2.PNG)
 
-## Creating a new Excel Workbook
+## Creating a new Excel workbook
 
 A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Create.html) method with specified number of worksheets. By default, a workbook will be created with single worksheet.
 
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.Create(2);
+spreadsheet.Create(2);
 
 {% endhighlight %}
 {% endtabs %}
@@ -140,16 +135,13 @@ The Excel Workbook can be opened in Spreadsheet using the [Open](http://help.syn
 {% highlight c# %}
 
 //Using Stream,
-
- spreadsheet.Open (Stream file);
+spreadsheet.Open (Stream file);
 
 //Using String,
-
- spreadsheet.Open (string file);
+spreadsheet.Open (string file);
 
 //Using Workbook,
-
- spreadsheet.Open(IWorkbook workbook);
+spreadsheet.Open(IWorkbook workbook);
       
 {% endhighlight %}
 {% endtabs %}
@@ -157,7 +149,7 @@ The Excel Workbook can be opened in Spreadsheet using the [Open](http://help.syn
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.Open (@"..\..\Data\Outline.xlsx");
+spreadsheet.Open (@"..\..\Data\Outline.xlsx");
 
 {% endhighlight %}
 {% endtabs %}
@@ -175,7 +167,7 @@ The Excel workbook can be saved in Spreadsheet using [Save](http://help.syncfusi
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.Save();
+spreadsheet.Save();
 
 {% endhighlight %}
 {% endtabs %}
@@ -188,16 +180,13 @@ The `SaveAs` method in Spreadsheet can be used in various ways,
 {% highlight c# %}
 
 //Using Stream,
-
- spreadsheet.SaveAs (Stream file);
+spreadsheet.SaveAs (Stream file);
 
 //Using String,
-
- spreadsheet.SaveAs (string file);
+spreadsheet.SaveAs (string file);
 
 //For Dialog box,
-
- spreadsheet.SaveAs();
+spreadsheet.SaveAs();
       
 {% endhighlight %}
 {% endtabs %}
@@ -217,10 +206,10 @@ Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[GraphicChartCe
 
 public Form1()
 {
-  InitializeComponent();
+    InitializeComponent();
   
-  //For importing charts,
-  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+    //For importing charts,
+    this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
 }
 
 {% endhighlight %}
@@ -235,10 +224,10 @@ Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellR
 
 public Form1()
 {
-  InitializeComponent();
+    InitializeComponent();
       
-  //For importing sparklines,
-  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+    //For importing sparklines,
+    this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
 }
 
 {% endhighlight %}
