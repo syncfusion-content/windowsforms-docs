@@ -31,7 +31,7 @@ The common parameters to be passed in Find functions are,
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.
 * For matching the entire cell content with the search text, pass the parameter as true otherwise you can pass the parameter as false.
 
-### Find all
+### Find All
 
 Searches every occurrence of specific data based on the criteria that you are searching for and returns an `IRange` list representing the cells in `Spreadsheet`
 
@@ -61,7 +61,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find next
+### Find Next
 
 Searches the first occurrence of specific data which matches the conditions and returns the matched `IRange` from the current range that represents the cell.
 
@@ -83,7 +83,7 @@ spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);
 {% endhighlight %}
 {% endtabs %}
 
-### Find conditional formatting
+### Finding conditional formatting
 
 Searches and returns the `IRange` list which have conditional formatting within the specified worksheet.
 
@@ -103,7 +103,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find constants
+### Finding constants
 
 Searches and returns the `IRange` list which have constants within the specified worksheet.
 
@@ -123,7 +123,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find formulas
+### Finding formulas
 
 Searches and returns the `IRange` list which have formulas within the specified worksheet.
 
@@ -143,7 +143,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find data validation
+### Finding data validation
 
 Searches and returns the `IRange` list which have data validation within the specified worksheet.
 
@@ -163,7 +163,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-## Replace all
+## Replace All
 
 Searches and replaces all the texts either in the workbook or worksheet based on the given option.
 
