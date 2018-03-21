@@ -31,7 +31,7 @@ The common parameters to be passed in Find functions are,
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.
 * For matching the entire cell content with the search text, pass the parameter as true otherwise you can pass the parameter as false.
 
-### Find All
+### Find all
 
 Searches every occurrence of specific data based on the criteria that you are searching for and returns an `IRange` list representing the cells in `Spreadsheet`
 
@@ -61,7 +61,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find Next
+### Find next
 
 Searches the first occurrence of specific data which matches the conditions and returns the matched `IRange` from the current range that represents the cell.
 
@@ -69,25 +69,21 @@ Searches the first occurrence of specific data which matches the conditions and 
 {% highlight c# %}
 
 //Search the text in entire workbook in column wise,
-
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook, "sample", SearchBy.ByColumns, ExcelFindType.Text, false, true);
 
 // To move the current cell to matched cell content range,
-
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);          
 
 //Search the formula in particular worksheet in row wise,
-
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook.Worksheets[0], "sum", SearchBy.ByRows, ExcelFindType.Text, false, false);
 
 // To move the current cell to matched cell content range,
-
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);          
 
 {% endhighlight %}
 {% endtabs %}
 
-### Find Conditional Formatting
+### Find conditional formatting
 
 Searches and returns the `IRange` list which have conditional formatting within the specified worksheet.
 
@@ -95,7 +91,6 @@ Searches and returns the `IRange` list which have conditional formatting within 
 {% highlight c# %}
 
 //Searches the conditional formatting within the worksheet,
-
 var list = spreadsheet.SearchManager.FindConditionalFormatting(spreadsheet.Workbook.Worksheets[0]);
 
 // To select the matched cell content ranges,
@@ -108,7 +103,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find Constants
+### Find constants
 
 Searches and returns the `IRange` list which have constants within the specified worksheet.
 
@@ -116,7 +111,6 @@ Searches and returns the `IRange` list which have constants within the specified
 {% highlight c# %}
 
 //Searches the constants within the worksheet,
-
 var list = spreadsheet.SearchManager.FindConstants(spreadsheet.Workbook.Worksheets[0]);
 
 // To select the matched cell content ranges,
@@ -129,7 +123,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find Formulas
+### Find formulas
 
 Searches and returns the `IRange` list which have formulas within the specified worksheet.
 
@@ -137,7 +131,6 @@ Searches and returns the `IRange` list which have formulas within the specified 
 {% highlight c# %}
 
 //Searches the formulas within the worksheet,
-
 var list = spreadsheet.SearchManager.FindFormulas(spreadsheet.Workbook.Worksheets[0]);
 
 // To select the matched cell content ranges,
@@ -150,7 +143,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find Data Validation
+### Find data validation
 
 Searches and returns the `IRange` list which have data validation within the specified worksheet.
 
@@ -158,7 +151,6 @@ Searches and returns the `IRange` list which have data validation within the spe
 {% highlight c# %}
 
 //Searches the data validation within the worksheet,
-
 var list = spreadsheet.SearchManager.FindDataValidation(spreadsheet.Workbook.Worksheets[0]);
 
 // To select the matched cell content ranges,
@@ -171,7 +163,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-## Replace All
+## Replace all
 
 Searches and replaces all the texts either in the workbook or worksheet based on the given option.
 
@@ -203,7 +195,6 @@ Searches for the text or numbers that you want to change using `FindNext` method
 {% highlight c# %}
 
 //Searches the given text and replaces it with specified text
-
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook, "sample", SearchBy.ByColumns, ExcelFindType.Text, false, true);
 spreadsheet.ActiveGrid.SetCellValue(cell, "sync");
 
