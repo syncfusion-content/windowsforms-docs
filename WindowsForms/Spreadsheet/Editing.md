@@ -82,7 +82,7 @@ excelStyle.Locked = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Properties, Methods and Events
+### Properties, methods, and events
 
 The order of events when editing and committing a cell value in Spreadsheet,
 
@@ -167,7 +167,7 @@ Validates the current cell in the SpreadsheetGrid.</td></tr>
 
 Data Validation is a list of rules to limit the type of data or the values that can be entered in the cell.
 
-### Applying Data Validation at runtime
+### Applying data validation at runtime
 
 Spreadsheet allows the user to apply the data validation rules at runtime for particular cell or range using `IDataValidation` interface.
 
@@ -220,7 +220,7 @@ T> If you want to load ComboBox to a cell in Spreadsheet, you can apply List Val
 
 The Hyperlink is a convenient way to access the web pages, files and browse the data within a worksheet or other worksheets in a workbook. Spreadsheet provides support to add, edit and remove the Hyperlinks in the workbook.
 
-### Add a Hyperlink to a cell
+### Adding hyperlink to a cell
 
 Spreadsheet provides support to add hyperlink to a cell and it can be added in the hyperlinks collection using `IHyperlinks` interface. 
 
@@ -261,7 +261,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Cell(13, 3));
 {% endhighlight %}
 {% endtabs %}
 
-### Edit or Remove a Hyperlink
+### Editing or removing hyperlink
 
 Spreadsheet provides support to edit or remove the hyperlinks from the range by accessing Hyperlinks collection.
 
