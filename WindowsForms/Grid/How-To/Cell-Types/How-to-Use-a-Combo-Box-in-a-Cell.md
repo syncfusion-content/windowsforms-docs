@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Use a Combo Box in a Cell
-
-## Introduction
+# How to use a combo box in a cell
 
 The control type of a cell is part of the cell style and is determined by GridStyleInfo.CellType property. The items shown in the dropdown list can be provided in two ways.
 
