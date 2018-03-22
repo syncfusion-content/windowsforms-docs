@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Control the Way Grid Handles Exceptions
-
-### Introduction
+# How to control the way Grid handles exceptions
 
 Syncfusion.Windows.Forms.ExceptionManager has static members that you can use to control how the grid handles exceptions. 
 
