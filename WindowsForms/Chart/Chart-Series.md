@@ -7583,7 +7583,7 @@ Series Wide Setting
 
 {% tabs %}  
 
-% highlight c# %}
+{% highlight c# %}
 
 // Text Orientation of chart series
 
