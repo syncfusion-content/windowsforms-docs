@@ -18,16 +18,13 @@ Spreadsheet provides support to insert and delete the worksheets in a workbook.
 {% highlight c# %}
 
 //Insert Sheet
-
- spreadsheet.AddSheet();
+spreadsheet.AddSheet();
 	
 //Insert sheet with name
-
- spreadsheet.AddSheet("Sheet4", 3);
+spreadsheet.AddSheet("Sheet4", 3);
 
 //Delete Sheet
-
- spreadsheet.RemoveSheet("Sheet2");
+spreadsheet.RemoveSheet("Sheet2");
 
 {% endhighlight %}
 {% endtabs %}
@@ -40,12 +37,10 @@ Spreadsheet provides support to hide and unhide the worksheets in a workbook.
 {% highlight c# %}
 
 //Hide Sheet
-
- spreadsheet.HideSheet("Sheet 2");
+spreadsheet.HideSheet("Sheet 2");
 
 //Unhide Sheet
-
- spreadsheet.UnhideSheet("Sheet 2");
+spreadsheet.UnhideSheet("Sheet 2");
 
 {% endhighlight %}
 {% endtabs %}
@@ -98,15 +93,12 @@ The Protect sheet options are
 {% highlight c# %}
 
 //Protect the sheet with password
-
 spreadsheet.ProtectSheet(spreadsheet.ActiveSheet, "123");
 
 //Protect the sheet with Protection options
-
 spreadsheet.ProtectSheet(spreadsheet.ActiveSheet, "123", ExcelSheetProtection.FormattingCells);
 
 //Unprotect the sheet
-
 spreadsheet.UnProtectSheet(spreadsheet.ActiveSheet, "123");
 
 {% endhighlight %}
@@ -120,11 +112,9 @@ Spreadsheet provides support to protect the structure and windows of a workbook.
 {% highlight c# %}
 
 // To Protect the Workbook 
-
 spreadsheet.Protect(true, true, "123");
 
 //To Unprotect the Workbook
-
 spreadsheet.Unprotect("123");
 
 {% endhighlight %}
@@ -138,11 +128,9 @@ Spreadsheet provides support to control the visibility and color of the Gridline
 {% highlight c# %}
 
 //To show GridLines
-
 spreadsheet.SetGridLinesVisibility(true);
 
 //To hide GridLines
-
 spreadsheet.SetGridLinesVisibility(false);
 
 {% endhighlight %}
@@ -156,7 +144,6 @@ Spreadsheet provides support to control the visibility of row and column headers
 {% highlight c# %}
 
 //To hide the Header cells visibility
-
 spreadsheet.SetRowColumnHeadersVisibility(false);
 
 {% endhighlight %}
@@ -170,7 +157,7 @@ Spreadsheet provides support to zoom in and zoom out of a worksheet view. The pr
 {% highlight c# %}
 
 //zoom factor
- spreadsheet.SetZoomFactor("Sheet1", 200);
+spreadsheet.SetZoomFactor("Sheet1", 200);
 
 {% endhighlight %}
 {% endtabs %}

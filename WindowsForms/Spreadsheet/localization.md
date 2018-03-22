@@ -13,7 +13,7 @@ Localization is the process of configuring the application to a specific languag
 
 Spreadsheet allows you to set custom resource using Resx file. You can define your string values in resource file for a specific culture and set the culture in your application.
 
-## Set Current UI Culture to the Application
+## Set current UI culture to the application
 
 To set the CultureInformation in the Application, set the `CurrentUICulture` before the InitializeComponent() method is called. 
 
@@ -25,7 +25,6 @@ Setting of the culture information,
 public MainWindow()
 {
     System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
-
     InitializeComponent();
 }
 
@@ -34,7 +33,7 @@ public MainWindow()
 
 Now, the Application is set to the Japanese Culture info. 
 
-## Localization using Resource file
+## Localization using resource file
 
 The following steps show how to implement the localization in Spreadsheet,
 
@@ -56,7 +55,7 @@ The following screenshot shows you the localization in Spreadsheet,
 
 ![](localization_images/localization_img1.jpg)
 
-## Modifying the localized strings in Resource file
+## Modifying the localized strings in resource file
 
 Users can modify the default localized strings in Resource file by adding the default [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474) (resource) file of `Spreadsheet` in the 'Resources' folder of your application and name it as Syncfusion.Spreadsheet.Windows.resx.
 
