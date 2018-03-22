@@ -307,7 +307,7 @@ N>  Only when LineRoutingEnabled property is set to true, LineRouter properties 
 
 
 
-### Distance and Routing mode settings
+### Distance and Routing Mode Settings
 
 To customize the distance between the connectors and the obstacles, and the type of routing to use, the LineRouter collection property should be handled. The below properties are available for the LineRouter Collection property.
 
@@ -349,7 +349,7 @@ Me.diagram1.Model.LineRouter.RoutingMode = RoutingMode.Automatic
 
 The LineBridgingEnabled, LineRoutingEnabled properties can be set for the diagram, in which case it will be automatically applied to all the links added to the model. Else it can be enabled only for the required links individually.
 
-### Node settings
+### Node Settings
 
 When line routing is enabled make sure to set the TreatAsObstacle property of the objects to true, to avoid the links running over them. If not set for an object, then that node will not be considered as an obstacle and the link will pass over it.
 

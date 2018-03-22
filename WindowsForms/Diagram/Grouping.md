@@ -62,7 +62,7 @@ There are two ways available to add a Group in diagram control:
 {% endhighlight %}
 {% endtabs %}
 
-### How to access the child nodes in a Group, and how to delete / remove the node?
+### Access, Delete or Remove the child nodes in a Group
 
 The first step is to check whether the node is a Group.
 
@@ -118,9 +118,9 @@ Also, Group has an int ChildCount property, which returns the child count in a G
 
 ![](Grouping_images/Grouping_img1.jpeg)
 
-### Positioning nodes in Group
+### Positioning Nodes in Group
 
-#### Positioning support
+#### Positioning Support
 
 Diagram Group node supports absolute and relative positioning.
 
