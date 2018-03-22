@@ -7,11 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Avoid A, B, C and / or 1, 2, 3 in the Headers
-
-
-
-## Introduction
+# How to avoid A, B, C and / or 1, 2, 3 in the headers
 
 In a GridControl, whether the headers contain the default A, B, C, ... or 1, 2, 3, ... values is controlled by the properties in the Model.Options property. 
 
@@ -24,7 +20,6 @@ this.gridControl1.Model.Options.NumberedColHeaders = false;
 this.gridControl1.Model.Options.NumberedRowHeaders = false;
 {% endhighlight  %}
 {% highlight vb %}
-
 'Hides A, B, C in the column headers.
 Me.GridControl1.Model.Options.NumberedColHeaders = False
 
