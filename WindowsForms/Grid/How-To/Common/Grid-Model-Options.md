@@ -28,6 +28,12 @@ The following code illustrates how to activate current cell behavior:
 this.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+Me.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll
+
+{% endhighlight %}
 {% endtabs %}
 
 ## Allow scroll for current cell view
@@ -38,6 +44,12 @@ The following code illustrates how to allow scroll for current cell view:
 {% highlight c# %}
 
 this.gridGroupingControl1.AllowScrollCurrentCellInView = GridScrollCurrentCellReason.Activate;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.gridGroupingControl1.AllowScrollCurrentCellInView = GridScrollCurrentCellReason.Activate
 
 {% endhighlight %}
 {% endtabs %}
@@ -52,6 +64,12 @@ The following code illustrates how to select alpha blend selection color:
 this.gridGroupingControl1.AlphaBlendSelectionColor = Color.Red;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+Me.gridGroupingControl1.AlphaBlendSelectionColor = Color.Red
+
+{% endhighlight %}
 {% endtabs %}
 
 ## ClickedOnDisabledCellBehavior
@@ -62,6 +80,12 @@ The following code illustrates how to define the current cell behavior when disa
 {% highlight c# %}
 
 this.gridGroupingControl1.ClickedOnDisabledCellBehavior = GridClickedOnDisabledCellBehavior.Default;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.gridGroupingControl1.ClickedOnDisabledCellBehavior = GridClickedOnDisabledCellBehavior.Default
 
 {% endhighlight %}
 {% endtabs %}
@@ -76,6 +100,12 @@ The following code illustrates how to show current cell border behavior:
 this.gridGroupingControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.HideAlways;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+Me.gridGroupingControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.HideAlways
+
+{% endhighlight %}
 {% endtabs %}
 
 ## Default Grid border style
@@ -86,6 +116,12 @@ The following code illustrates how to set default grid border style:
 {% highlight c# %}
 
 this.gridGroupingControl1.DefaultGridBorderStyle = GridBorderStyle.None;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.gridGroupingControl1.DefaultGridBorderStyle = GridBorderStyle.None
 
 {% endhighlight %}
 {% endtabs %}
