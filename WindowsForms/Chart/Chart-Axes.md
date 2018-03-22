@@ -35,7 +35,7 @@ this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set axis type as Category
 Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
@@ -54,9 +54,7 @@ In the figure below, the first chart shows a line chart that is not-indexed whil
 
 ![](Chart-Axes_images/Chart-Axes_img1.jpeg)
 
-
 ![](Chart-Axes_images/Chart-Axes_img2.jpeg)
-
 
 N> Indexing is supported only on the x-axis in Essential Chart.
 
@@ -69,7 +67,7 @@ this.chartControl1.Indexed = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.Indexed = True
 
@@ -83,8 +81,6 @@ You can also optionally customize the labels of the points in such an indexed se
 ## Inverted Axis
 
 EssentialChart provides support for inverting the values in an axis. Data on an inverted axis is plotted in the opposite direction - top to bottom for y-axis and right to left for x-axis. To enable this behavior, set the ChartAxis.Inversed to true.
-
-
 
 <table>
 <tr>
@@ -100,7 +96,7 @@ Indicates whether the axis should be reversed.</td></tr>
 {% tabs %}  
 {% highlight c# %}
 
-   // This inverts the specified chart axis.
+// This inverts the specified chart axis.
 
 this.chartControl1.PrimaryXAxis.Inversed = true;
 
@@ -108,9 +104,9 @@ this.chartControl1.PrimaryYAxis.Inversed = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-   ' This inverts the specified chart axis.
+' This inverts the specified chart axis.
 
 Me.chartControl1.PrimaryXAxis.Inversed = True
 
@@ -123,12 +119,13 @@ The following image shows a chart whose x and y axes have been reversed.
 
 ![](Chart-Axes_images/Chart-Axes_img4.jpeg)
 
-
 ## Opposed Axis
 
 For every chart type there is an implied x-axis and y-axis position and by default all the x-axes and y-axes will be rendered in that corresponding position. You can override this default behavior by setting the OpposedPosition property to true for an axis which will cause it to be rendered in a side opposite to that of the implied position.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Will cause the X axis to be rendered on top instead of the default bottom position
 
@@ -140,7 +137,7 @@ this.chartControl1.PrimaryYAxis.OpposedPosition = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Will cause the X axis to be rendered on top instead of the default bottom position
 
@@ -157,7 +154,6 @@ The above code snippet will place both the x and y-axes in the position opposite
 
 ![](Chart-Axes_images/Chart-Axes_img5.jpeg)
 
-
 You can similarly set this property on any custom ChartAxis that you might add to the chart. Using multiple axes in a chart is described in this topic: Multiple Axes.
 
 The OpposedPosition along with Inversed setting could be useful for implementing charts for right-to-left cultures. 
@@ -168,40 +164,33 @@ Often you will have to plot multiple series on a single chart, each in it's own 
 
 The following are the steps to include a new axis to the chart.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Create a new instance of the chart axis.
 
 private ChartAxis secXAxis = new ChartAxis();
 
-
-
 // Add the secondary axis to the chart axis collection.
 
 this.chartControl1.Axes.Add(this.secXAxis);
-
-
 
 // Specify this axis to be the axis for an existing series
 
 this.chartControl1.Series[1].XAxis = this.secXAxis;
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Create a new instance of the chart axis.
 
 Private secXAxis As ChartAxis = New ChartAxis()
 
-
-
 ' Add the secondary axis to the chart axis collection.
 
 Me.chartControl1.Axes.Add(Me.secXAxis)
-
-
 
 ' Specify this axis to be the axis for an existing series
 
@@ -212,13 +201,11 @@ Me.chartControl1.Series(1).XAxis = Me.secXAxis
 
 ![](Chart-Axes_images/Chart-Axes_img6.jpeg)
 
-
 ### Opposed Position
 
 By default, this additional axis will be rendered right next to the corresponding primary axis as seen above. This might be undesirable and you would instead want it to be rendered at the opposite side of the primary axis. This is done by setting the OpposedPosition property to true. Read more on Opposed Axis here.
 
 ![](Chart-Axes_images/Chart-Axes_img7.jpeg)
-
 
 ### Stacked or SideBySide Position
 
@@ -228,13 +215,15 @@ However, you might want the secondary axis to be rendered in-line, side-by-side 
 
 Here is a code sample.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.ChartControl1.ChartArea.XAxesLayoutMode = ChartAxesLayoutMode.SideBySide;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ChartControl1.ChartArea.XAxesLayoutMode = ChartAxesLayoutMode.SideBySide;
 
@@ -243,22 +232,17 @@ Me.ChartControl1.ChartArea.XAxesLayoutMode = ChartAxesLayoutMode.SideBySide;
 
 ![](Chart-Axes_images/Chart-Axes_img8.jpeg)
 
-
-
-
 ### ChartAxesLayouts
 
 You can now combine the stacking and side-by-side chart axes layouts when multiple Axes are used, as shown in the below image. Using this feature, it is possible to position the three Y axis, as one on right side and the second one on the same side and third one on the opposite side. 
 
 ![](Chart-Axes_images/Chart-Axes_img9.jpeg)
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Created chart axes:
-
-
 
 ChartAxis axis = this.chartControl1.PrimaryYAxis;
 
@@ -266,29 +250,17 @@ ChartAxis axis0 = new ChartAxis(ChartOrientation.Vertical);
 
 ChartAxis axis1 = new ChartAxis(ChartOrientation.Vertical);
 
-
-
 //Added chart axes into the chart:
-
-
 
 chartControl1.Axes.Add(axis0);
 
 chartControl1.Axes.Add(axis1);
 
-
-
 //Created chart axis layout using ChartAxisLayout class:(New class)
-
-
 
 ChartAxisLayout layout1 = new ChartAxisLayout();
 
-
-
 //Added the axes to this layout including the primary axis:
-
-
 
 layout1.Axes.Add(axis);
 
@@ -296,21 +268,15 @@ layout1.Axes.Add(axis0);
 
 layout1.Axes.Add(axis1);
 
-
-
 //Added the layout into ChartArea.
-
-
 
 chartControl1.ChartArea.YLayouts.Add(layout1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Created chart axes:
-
-
 
 Dim axis As ChartAxis = Me.chartControl1.PrimaryYAxis
 
@@ -318,29 +284,17 @@ Dim axis0 As New ChartAxis(ChartOrientation.Vertical)
 
 Dim axis1 As New ChartAxis(ChartOrientation.Vertical)
 
-
-
 'Added chart axes into the chart:
-
-
 
 chartControl1.Axes.Add(axis0)
 
 chartControl1.Axes.Add(axis1)
 
-
-
 'Created chart axis layout using ChartAxisLayout class:(New class)
-
-
 
 Dim layout1 As New ChartAxisLayout()
 
-
-
 'Added the axes to this layout including the primary axis:
-
-
 
 layout1.Axes.Add(axis)
 
@@ -348,11 +302,7 @@ layout1.Axes.Add(axis0)
 
 layout1.Axes.Add(axis1)
 
-
-
 'Added the layout into ChartArea.
-
-
 
 chartControl1.ChartArea.YLayouts.Add(layout1)
 
@@ -371,7 +321,9 @@ You can set the value type for an axis using Axes.ValueType property. You can se
 
 If you set the ValueType to 'Logarithmic', then you need to specify the log base for the axis using Axes.LogBase property. The default value of LogBase is 10.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Logarithmic;
 
@@ -398,8 +350,6 @@ This default behavior is controlled by the ChartAxis.RangeType property which is
 
 Sometimes the automatic range generation might not be good enough for you, in which case you can specify a custom range on the axis. You should start by setting the ChartAxis.RangeType property to set. Then use one of the following properties to specify a custom range.
 
-
-
 _Properties_
 
 <table>
@@ -423,10 +373,11 @@ DateTime</td><td>
 Specifies the start and end dates and interval time for the axis. Use this if the data points are of datetime type.</td></tr>
 </table>
 
-
 Here is some sample code that shows how this is done.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Customize the X axis range and interval which has points of type DateTime
 
@@ -436,15 +387,11 @@ this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime;
 
 this.chartControl1.PrimaryXAxis.DateTimeRange = new ChartDateTimeRange(baseDate.AddMonths(-1), baseDate.AddMonths(6), 1, ChartDateTimeIntervalType.Months);
 
-
-
 // Customize the Y axis range and interval which has points of type double
 
 this.chartControl1.PrimaryYAxis.RangeType = ChartAxisRangeType.Set;
 
 this.chartControl1.PrimaryYAxis.Range = new MinMaxInfo(1, 20, 2);
-
-
 
 // Customize the Y axis range and interval which has points of type double
 
@@ -454,7 +401,7 @@ this.chartControl1.PrimaryXAxis.Range = new MinMaxInfo(0, 6, 1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Customize the X axis range and interval which has points of type DateTime
 
@@ -464,15 +411,11 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.DateTime
 
 Me.chartControl1.PrimaryXAxis.DateTimeRange = New ChartDateTimeRange(baseDate.AddMonths(-1), baseDate.AddMonths(6), 1, ChartDateTimeIntervalType.Months)
 
-
-
 ' Customize the Y axis range and interval which has points of type double
 
 Me.chartControl1.PrimaryYAxis.RangeType = ChartAxisRangeType.Set
 
 Me.chartControl1.PrimaryYAxis.Range = New MinMaxInfo(1, 20, 2)
-
-
 
 ' Customize the x axis range and interval which has points of type double
 
@@ -511,7 +454,6 @@ Auto</td><td>
 DateTime</td><td>
 Specifies whether the interval that gets calculated should be in Years, Months, Weeks, Days, Hours, Minutes, Seconds or Milliseconds. This setting is used only if the ValueType of the axis is set to DateTime. Default value is Auto.</td></tr>
 </table>
-
 
 ### Changing Origin
 
@@ -590,7 +532,6 @@ Specifies if there should be any padding applied between the points and the axes
 
 The axis' starting point, length and the whole rectangle (comprising the axis and it's labels) can be customized using the following properties.
 
-
 <table>
 <tr>
 <th>
@@ -618,13 +559,13 @@ Rect</td><td>
 Specifies the rectangle that includes the axis and it's labels. This provides great flexibility in letting you customize the position and size of the axes.</td></tr>
 </table>
 
-
 ### Illustrating Custom Axis Location
 
 ![](Chart-Axes_images/Chart-Axes_img11.jpeg)
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.PrimaryYAxis.LocationType = Syncfusion.Windows.Forms.Chart.ChartAxisLocationType.Set;
 
@@ -632,7 +573,7 @@ this.chartControl1.PrimaryYAxis.Location = new PointF(15, 200);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ChartControl1.PrimaryYAxis.LocationType = Syncfusion.Windows.Forms.Chart.ChartAxisLocationType.Set
 
@@ -645,12 +586,11 @@ Me.ChartControl1.PrimaryYAxis.Location = New PointF(15, 200)
 
 ![](Chart-Axes_images/Chart-Axes_img12.jpeg)
 
-
-
 ![](Chart-Axes_images/Chart-Axes_img13.jpeg)
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.AutoSize = false;
 
@@ -658,7 +598,7 @@ this.chartControl1.PrimaryXAxis.Size = new Size(50, 20);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ChartControl1.PrimaryXAxis.AutoSize = False
 
@@ -714,26 +654,21 @@ LabelRotateAngle</td><td>
 If LabelRotate is true, this property specifies the angle of rotation.</td></tr>
 </table>
 
-
 ![](Chart-Axes_images/Chart-Axes_img14.jpeg)
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Settings datetime format to X axis
 
 this.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM";
-
-
 
 //Settings format to Y axis
 
 this.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Double;
 
 this.chartControl1.PrimaryYAxis.Format = "C";
-
-
 
 //setting ForeColor and Font to axes labels
 
@@ -745,8 +680,6 @@ this.chartControl1.PrimaryYAxis.ForeColor = System.Drawing.Color.Navy;
 
 this.chartControl1.PrimaryYAxis.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
 
-
-
 //Label property settings for X-Axis
 
 this.chartControl1.PrimaryXAxis.LabelAlignment = System.Drawing.StringAlignment.Center;
@@ -755,29 +688,23 @@ this.chartControl1.PrimaryXAxis.LabelRotate = true;
 
 this.chartControl1.PrimaryXAxis.LabelRotateAngle = 45;
 
-
-
 //Label property settings for Y-Axis
 
 this.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Far;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Settings datetime format to X axis
 
 Me.chartControl1.PrimaryXAxis.DateTimeFormat = "MMM"
-
-
 
 Settings format to Y axis
 
 Me.chartControl1.PrimaryYAxis.ValueType = ChartValueType.Double
 
 Me.chartControl1.PrimaryYAxis.Format = "D"
-
-
 
 'Setting ForeColor and Font to axes labels
 
@@ -789,8 +716,6 @@ Me.chartControl1.PrimaryYAxis.ForeColor = System.Drawing.Color.Navy
 
 Me.chartControl1.PrimaryYAxis.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold)
 
-
-
 'Label property settings for X-Axis
 
 Me.chartControl1.PrimaryXAxis.LabelAlignment = System.Drawing.StringAlignment.Center
@@ -798,8 +723,6 @@ Me.chartControl1.PrimaryXAxis.LabelAlignment = System.Drawing.StringAlignment.Ce
 Me.chartControl1.PrimaryXAxis.LabelRotate = true
 
 Me.chartControl1.PrimaryXAxis.LabelRotateAngle = 45
-
-
 
 'Label property settings for Y-Axis
 
@@ -813,7 +736,6 @@ Me.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Fa
 The formatting options above will usually satisfy the label text requirements. However, there are many other scenarios where this might not be sufficient. Here are some ways to customize the text rendered in the label.
 
 Customizing the label text for the automatically generated intervals
-
 
 <table>
 <tr>
@@ -865,8 +787,9 @@ Tooltip </td><td>
 Specifies the content of the tooltip. </td></tr>
 </table>
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 private void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
 
@@ -908,7 +831,7 @@ private void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLa
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub chartControl1_ChartFormatAxisLabel(ByVal sender As Object, ByVal e As ChartFormatAxisLabelEventArgs)
 
@@ -951,8 +874,6 @@ End Sub
 
 ![](Chart-Axes_images/Chart-Axes_img15.jpeg)
 
-
-
 Specify a set of custom labels thereby dictating the intervals as well
 
 1. Using Custom Text
@@ -974,85 +895,79 @@ Specify a set of custom labels thereby dictating the intervals as well
    A custom collection that lets you fully customize the labels that gets generated. The TickLabelsDrawingMode should be set to UserMode or BothUserAndAutomaticMode.</td></tr>
    </table>
    
-   {% tabs %}
-   ~~~ cs
+{% tabs %}
 
-		//Setting drawing mode
+{% highlight c# %}
 
-		this.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode;
+//Setting drawing mode
 
-		//Adding new labels
+this.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode;
 
-		this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("Q1 Mid Point", Color.OrangeRed, new Font("Arial", 8F, System.Drawing.FontStyle.Bold), new DateTime(2007, 2, 15), "", "", ChartValueType.Custom));
+//Adding new labels
 
-		this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("Q2 Mid Point", Color.OrangeRed, new Font("Arial", 8F, System.Drawing.FontStyle.Bold), new DateTime(2007, 5, 15), "", "", ChartValueType.Custom));
+this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("Q1 Mid Point", Color.OrangeRed, new Font("Arial", 8F, System.Drawing.FontStyle.Bold), new DateTime(2007, 2, 15), "", "", ChartValueType.Custom));
 
-   ~~~
-   {:.prettyprint }
+this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("Q2 Mid Point", Color.OrangeRed, new Font("Arial", 8F, System.Drawing.FontStyle.Bold), new DateTime(2007, 5, 15), "", "", ChartValueType.Custom));
 
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-		'Setting drawing mode
+'Setting drawing mode
 
-		Me.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode
+Me.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode
 
-		'Adding new labels
+'Adding new labels
 
-		Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q1 Mid Point", Color.OrangeRed, New Font("Arial", 8F, System.Drawing.FontStyle.Bold), New DateTime(2007, 2, 15), "", "", ChartValueType.Custom))
+Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q1 Mid Point", Color.OrangeRed, New Font("Arial", 8F, System.Drawing.FontStyle.Bold), New DateTime(2007, 2, 15), "", "", ChartValueType.Custom))
 
-		Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q2 Mid Point", Color.OrangeRed, New Font("Arial", 8F, System.Drawing.FontStyle.Bold), New DateTime(2007, 5, 15), "", "", ChartValueType.Custom))
+Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q2 Mid Point", Color.OrangeRed, New Font("Arial", 8F, System.Drawing.FontStyle.Bold), New DateTime(2007, 5, 15), "", "", ChartValueType.Custom))
 
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
-   {% endtabs %}
+{% endtabs %}
 
-   ![](Chart-Axes_images/Chart-Axes_img16.jpeg)
-	
-   
+![](Chart-Axes_images/Chart-Axes_img16.jpeg)
 
 2. Using Formatted Text
 
-    {% tabs %}
-   ~~~ cs
+{% tabs %}
+  
+{% highlight c# %}
 
-		//Setting drawing mode
+//Setting drawing mode
 
-		this.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode;
+this.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode;
 
-		'Adding new labels
+'Adding new labels
 
-		this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("", Color.Maroon, new Font("Arial", 9F, System.Drawing.FontStyle.Bold), new DateTime(2007, 2, 15), "", "M", ChartValueType.DateTime));
+this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("", Color.Maroon, new Font("Arial", 9F, System.Drawing.FontStyle.Bold), new DateTime(2007, 2, 15), "", "M", ChartValueType.DateTime));
 
-		this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("", Color.Maroon, new Font("Arial", 9F, System.Drawing.FontStyle.Bold), new DateTime(2007, 05, 15), "", "M", ChartValueType.DateTime));
+this.chartControl1.PrimaryXAxis.Labels.Add(new ChartAxisLabel("", Color.Maroon, new Font("Arial", 9F, System.Drawing.FontStyle.Bold), new DateTime(2007, 05, 15), "", "M", ChartValueType.DateTime));
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-		'Setting drawing mode
+'Setting drawing mode
 
-		Me.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode
+Me.chartControl1.PrimaryXAxis.TickLabelsDrawingMode = ChartAxisTickLabelDrawingMode.UserMode
 
-		'Clearing all the default labels
+'Clearing all the default labels
 
-		this.chartControl1.PrimaryXAxis.Labels.Clear()
+this.chartControl1.PrimaryXAxis.Labels.Clear()
 
-		'Adding new labels
+'Adding new labels
 
-		Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, New Font("Arial", 9F, System.Drawing.FontStyle.Bold), New DateTime(2007, 2, 15), "", "M", ChartValueType.DateTime))
+Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, New Font("Arial", 9F, System.Drawing.FontStyle.Bold), New DateTime(2007, 2, 15), "", "M", ChartValueType.DateTime))
 
-		Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, New Font("Arial", 9F, System.Drawing.FontStyle.Bold), New DateTime(2007, 05, 15), "", "M", ChartValueType.DateTime))
+Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, New Font("Arial", 9F, System.Drawing.FontStyle.Bold), New DateTime(2007, 05, 15), "", "M", ChartValueType.DateTime))
 
-   ~~~
-   {:.prettyprint }
-   {% endtabs %}
+{% endhighlight %}
 
-   ![](Chart-Axes_images/Chart-Axes_img17.jpeg)
+{% endtabs %}
 
-   
+![](Chart-Axes_images/Chart-Axes_img17.jpeg)   
 
 ### Intersecting Labels
 
@@ -1079,8 +994,9 @@ Affects the labels that get rendered at the edges of the axis. Possible values:<
 When this property is set to true and when label overlap occurs, the chart will selectively hide certain labels (usually the min and max labels to begin with) to keep the rest of labels readable. Default value is false.</td></tr>
 </table>
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.ChartWebControl1.PrimaryXAxis.HidePartialLabels = true;
 
@@ -1088,7 +1004,7 @@ this.ChartWebControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectAct
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ChartWebControl1.PrimaryXAxis.HidePartialLabels = True
 
@@ -1098,8 +1014,6 @@ Me.ChartWebControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectActio
 {% endtabs %}
 
 ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/IntersectingLabels.png](Chart-Axes_images/Chart-Axes_img18.png)
-
-
 
 ### Grouping Labels
 
@@ -1120,7 +1034,9 @@ DrawTickLabelGrid</td><td>
 Puts the labels within a grid. Though commonly used when in grouping mode, this feature can be used even otherwise.</td></tr>
 </table>
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 ChartAxisGroupingLabel Q1 = new ChartAxisGroupingLabel(new DoubleRange(1, 3), "Q1");
 
@@ -1130,8 +1046,6 @@ Q1.Font = new Font("Arial", 10F, FontStyle.Bold);
 
 this.chartControl1.PrimaryXAxis.GroupingLabels.Add(Q1);
 
-
-
 ChartAxisGroupingLabel Q2 = new ChartAxisGroupingLabel(new DoubleRange(4, 6), "Q2");
 
 Q2.BorderStyle = ChartAxisGroupingLabelBorderStyle.Rectangle;
@@ -1140,13 +1054,11 @@ Q2.Font = new Font("Arial", 10F, FontStyle.Bold);
 
 this.chartControl1.PrimaryXAxis.GroupingLabels.Add(Q2);
 
-
-
 this.chartControl1.PrimaryXAxis.DrawTickLabelGrid = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim Q1 As New ChartAxisGroupingLabel(New DoubleRange(1, 3), "Q1")
 
@@ -1156,8 +1068,6 @@ Q1.Font = New Font("Arial", 10.0F, FontStyle.Bold)
 
 Me.chartControl1.PrimaryXAxis.GroupingLabels.Add(Q1)
 
-
-
 Dim Q2 As New ChartAxisGroupingLabel(New DoubleRange(4, 6), "Q2")
 
 Q2.BorderStyle = ChartAxisGroupingLabelBorderStyle.Rectangle
@@ -1166,17 +1076,12 @@ Q2.Font = New Font("Arial", 10.0F, FontStyle.Bold)
 
 Me.chartControl1.PrimaryXAxis.GroupingLabels.Add(Q2)
 
-
-
 Me.chartControl1.PrimaryXAxis.DrawTickLabelGrid = True
 
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](Chart-Axes_images/Chart-Axes_img19.jpeg)
-
-
 
 ### Tooltip Support for ChartAxisLabels
 
@@ -1192,85 +1097,85 @@ To add a tooltip for chart, set the ShowToolTips__property to true. By default C
 
 The following code illustrates how to add a customized tooltip for ChartAxisLabel:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.ChartFormatAxisLabel += new ChartFormatAxisLabelEventHandler(chartControl1_ChartFormatAxisLabel);
 
 ChartSeries series = new ChartSeries("Series");
 
-            series.Points.Add(0,120);
+series.Points.Add(0,120);
 
-            series.Points.Add(1,220);
+series.Points.Add(1,220);
 
-            series.Points.Add(2, 150);
+series.Points.Add(2, 150);
 
-            series.Points.Add(3, 240);
+series.Points.Add(3, 240);
 
+this.chartControl1.Series.Add(series);
 
+//Set label text
 
-            this.chartControl1.Series.Add(series);
+arrLabel.Add("India");
 
-			//Set label text
+arrLabel.Add("Pakistan");
 
-            arrLabel.Add("India");
+arrLabel.Add("China");
 
-            arrLabel.Add("Pakistan");
+arrLabel.Add("Japan");
 
-            arrLabel.Add("China");
+//Set tooltip content 
 
-            arrLabel.Add("Japan");
+arrTooltip.Add("IND");
 
-			//Set tooltip content 
+arrTooltip.Add("PAK");
 
-            arrTooltip.Add("IND");
+arrTooltip.Add("CHN");
 
-            arrTooltip.Add("PAK");
+arrTooltip.Add("JPN");
 
-            arrTooltip.Add("CHN");
+this.chartControl1.ShowToolTips = true;
 
-            arrTooltip.Add("JPN");
+this.chartControl1.Series3D = true;
 
-            this.chartControl1.ShowToolTips = true;
+this.chartControl1.PrimaryYAxis.Title = "Product sold (Millions)";
 
-            this.chartControl1.Series3D = true;
+this.chartControl1.PrimaryXAxis.Title = "Country";
 
-           this.chartControl1.PrimaryYAxis.Title = "Product sold (Millions)";
+this.chartControl1.Title.Text = "Product Sales";
 
-           this.chartControl1.PrimaryXAxis.Title = "Country";
+void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
 
-           this.chartControl1.Title.Text = "Product Sales";
+{
 
-		void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLabelEventArgs e)
+        int index = (int)e.Value;
+
+        if (e.AxisOrientation == ChartOrientation.Horizontal)
 
         {
 
-            int index = (int)e.Value;
-
-            if (e.AxisOrientation == ChartOrientation.Horizontal)
+            if (index >= 0 && index < arrLabel.Count)
 
             {
 
-                if (index >= 0 && index < arrLabel.Count)
+                e.Label = arrLabel[index].ToString();
 
-                {
+				//Specify arrTooltip content as chartAxisLabel Tooltip 
 
-                    e.Label = arrLabel[index].ToString();
-
-					//Specify arrTooltip content as chartAxisLabel Tooltip 
-
-                    e.ToolTip = arrTooltip[index].ToString();
-
-                }
+                e.ToolTip = arrTooltip[index].ToString();
 
             }
 
-            e.Handled = true;   
-
         }
+
+        e.Handled = true;   
+
+    }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 AddHandler chartControl1.ChartFormatAxisLabel, AddressOf chartControl1_ChartFormatAxisLabel
 
@@ -1284,11 +1189,7 @@ series.Points.Add(2, 150)
 
 series.Points.Add(3, 240)
 
-
-
 Me.chartControl1.Series.Add(series)
-
-
 
 ' Set label text
 
@@ -1320,10 +1221,6 @@ Me.chartControl1.PrimaryXAxis.Title = "Country"
 
 Me.chartControl1.Title.Text = "Product Sales"
 
-
-
-
-
 Private Sub chartControl1_ChartFormatAxisLabel(ByVal sender As Object, ByVal e As ChartFormatAxisLabelEventArgs)
 
 Dim index As Integer = CInt(Fix(e.Value))
@@ -1333,8 +1230,6 @@ If e.AxisOrientation = ChartOrientation.Horizontal Then
 If index >= 0 AndAlso index < arrLabel.Count Then
 
 e.Label = arrLabel(index).ToString()
-
-
 
 ' Specify arrTooltip content as chartAxisLabel Tooltip
 
@@ -1353,8 +1248,6 @@ End Sub
 
 ![C:/Users/sivakumard/Desktop/Tooltip.png](Chart-Axes_images/Chart-Axes_img20.png)
 
-
-
 {% seealso %}
 
 [Customizing Label Text](#Customizing Label Text) and [ToolTip](/windowsforms/chart/chart-series#tooltip)
@@ -1364,7 +1257,6 @@ End Sub
 ## Axis Title
 
 EssentialChart provides properties to set custom titles for the axes. Set the title text for an axis using Title property. Customize this text using TitleColor and TitleFont properties.
-
 
 <table>
 <tr>
@@ -1381,8 +1273,9 @@ TitleFont</td><td>
 Sets the font style for the title text.</td></tr>
 </table>
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Sets custom title for x- axis. 
 
@@ -1396,7 +1289,7 @@ this.chartControl1.PrimaryXAxis.TitleFont = new Font("Arial", 10);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets custom title for x- axis. 
 
@@ -1411,25 +1304,19 @@ Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 {% endhighlight %}
 {% endtabs %}
 
-
 ### Multiline Chart Axes Title
 
 You can now wrap the axes titles and display them as multiline text. Set multiline title text in Axis.Title property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
 
 ![](Chart-Axes_images/Chart-Axes_img21.jpeg)
 
-
-
 The below screenshot illustrates a chart with multiline axes titles.
 
 ![](Chart-Axes_images/Chart-Axes_img22.jpeg)
 
-
-
 ### Drawing Mode of Title Text
 
 You can now display partial axis title with an ellipsis at the end of text, whose text length exceeds the axis length. There is also an option to wrap the title text, in addition to the multiline axes title feature, which is discussed above. The Axes.TitleDrawMode property is used to control this behavior.
-
 
 <table>
 <tr>
@@ -1442,7 +1329,9 @@ TitleDrawMode</td><td>
 Sets the drawing mode of the axis title. It can be Ellipse, Wrap or None. By default it is set to None.</td></tr>
 </table>
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 //Setting drawing mode of y-axis title
 
@@ -1454,7 +1343,7 @@ this.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Setting drawing mode of y-axis title
 
@@ -1469,14 +1358,11 @@ Me.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap
 
 ![](Chart-Axes_images/Chart-Axes_img23.png)
 
-
-
 ## Axis Ticks
 
 ### Major Ticks
 
 Major Ticks are rendered automatically at the intersection of an axis with the interval grid lines. Here are some properties that will let you customize the look and feel, and behavior of the ticks.
-
 
 <table>
 <tr>
@@ -1503,9 +1389,9 @@ Defines the number of ticks to render while zooming.* NumberOfIntervalsFixed - W
 
 ![](Chart-Axes_images/Chart-Axes_img24.jpeg)
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.TickSize = new Size(3,3);
 
@@ -1515,7 +1401,7 @@ this.chartControl1.PrimaryXAxis.TickLabelGridPadding = 8F;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrimaryXAxis.TickSize = new Size(3,3)
 
@@ -1545,12 +1431,11 @@ SmallTickSize</td><td>
 Specifies the size of the tick rectangle.</td></tr>
 </table>
 
-
 ![](Chart-Axes_images/Chart-Axes_img25.jpeg)
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.SmallTickSize = new System.Drawing.Size(2, 2);
 
@@ -1558,7 +1443,7 @@ this.chartControl1.PrimaryXAxis.SmallTicksPerInterval = 1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 this.chartControl1.PrimaryXAxis.SmallTickSize = new System.Drawing.Size(2, 2)
 
@@ -1570,8 +1455,6 @@ this.chartControl1.PrimaryXAxis.SmallTicksPerInterval = 1
 ## 3-D Related
 
 Here are some properties that affect the rendering of an axis when in 3-D mode, which is set using the Series3D property. 
-
-
 
 _3-D Related_
 
@@ -1610,10 +1493,11 @@ Specifies the mode of column drawing when in 3-D.<ul><li> PlaneMode—Columns fr
 Enables rotation of the chart at runtime using middle/right mouse button.</td></tr>
 </table>
 
-
 ### 3D Mode Sample
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.Series3D = true;
 
@@ -1625,7 +1509,7 @@ this.chartControl1.Rotation = 60;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.Series3D = True
 Me.chartControl1.Depth = 55F
@@ -1639,11 +1523,11 @@ Me.chartControl1.Rotation = 60
 
 ![](Chart-Axes_images/Chart-Axes_img26.jpeg)
 
-
-
 ### Real 3D Mode sample
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.ChartArea.Series3D = true;
 
@@ -1657,7 +1541,7 @@ this.chartControl1.RealMode3D = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.ChartArea.Series3D = True
 
@@ -1669,13 +1553,10 @@ Me.chartControl1.Rotation = 10
 
 Me.chartControl1.RealMode3D = True
 
-
 {% endhighlight %}
 {% endtabs %}
 
 ![](Chart-Axes_images/Chart-Axes_img27.jpeg)
-
-
 
 ### Rotating Chart
 
@@ -1683,7 +1564,9 @@ The end-users can be allowed to rotate the chart at run-time, using the mouse (m
 
 N> Rotation will not be possible with the LEFT-MOUSE button by enabling this property.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.RealMode3D = true;
 
@@ -1691,7 +1574,7 @@ this.chartControl1.EnableMouseRotation = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.RealMode3D = True
 
@@ -1701,7 +1584,6 @@ Me.chartControl1.EnableMouseRotation = True
 {% endtabs %}
 
 ![](Chart-Axes_images/Chart-Axes_img29.jpeg)
-
 
 ### Rendering Chart in 3-D Style
 
@@ -1718,25 +1600,24 @@ Style3D</td><td>
 Specifies whether the chart should be rendered in 3-D style.</td></tr>
 </table>
 
+The following code example shows how to enable rendering the chart in 3-D style.
 
- The following code example shows how to enable rendering the chart in 3-D style.
+{% tabs %}  
 
+{% highlight c# %}
 
-{% tabs %}  {% highlight c# %}
-
- this.chartControl1.Style3D = true;
+this.chartControl1.Style3D = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
- Me.chartControl1.Style3D=True
+Me.chartControl1.Style3D=True
 
 {% endhighlight %}
 {% endtabs %}
 
 ![http://www.syncfusion.com/downloads/Support/DirectTrac/93985/clip_image001105907764.png](Chart-Axes_images/Chart-Axes_img30.png)
-
 
 ## Chart Grid Lines
 
@@ -1777,12 +1658,13 @@ The thickness of the lines.</td></tr>
 
 ![](Chart-Axes_images/Chart-Axes_img31.jpeg)
 
-
 Using the GridLineType property, BackColor, DashStyle, ForeColor, PenType and the Width can be specified.
 
 The following code snippet illustrates how to show the gridlines on both axes and how to customize them.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 //Customizing X-Axis Gridlines
 
@@ -1795,8 +1677,6 @@ this.chartControl1.PrimaryXAxis.GridLineType.DashStyle = System.Drawing.Drawing2
 this.chartControl1.PrimaryXAxis.GridLineType.ForeColor = System.Drawing.Color.DarkBlue;
 
 this.chartControl1.PrimaryXAxis.GridLineType.Width = 2F;
-
-
 
 //Customizing Y-Axis Gridlines
 
@@ -1812,7 +1692,7 @@ this.chartControl1.PrimaryYAxis.GridLineType.Width = 2F;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Customizing X-Axis Gridlines
 
@@ -1825,8 +1705,6 @@ Me.chartControl1.PrimaryXAxis.GridLineType.DashStyle = System.Drawing.Drawing2D.
 Me.chartControl1.PrimaryXAxis.GridLineType.ForeColor = System.Drawing.Color.DarkBlue
 
 Me.chartControl1.PrimaryXAxis.GridLineType.Width = 2F
-
-
 
 'Customizing Y-Axis Gridlines
 
@@ -1848,7 +1726,6 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 Strip-lines are bands that are drawn at the background of the chart. They can be used to highlight areas of interest. They can be either vertical or horizontal and may be specified with a variety of options to precisely control where they are placed and how they are repeated. The strip-lines are stored in the ChartAxis.StripLines collection, which holds objects of class ChartStripLine. 
 
 A strip-line is configurable by setting its start, end, period and width in the same value type as the axis that holds it. The interior of the strip-lines support gradients, images and different text positions and orientations.
-
 
 <table>
 <tr>
@@ -1937,17 +1814,15 @@ WidthDate</td><td>
 Gets / sets the width of the stripline in a Time span.</td></tr>
 </table>
 
-
 The following is the code to draw a stripline from x-axis with DateTime values.
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Declaring 
 
 ChartStripLine stripLine = new ChartStripLine();
-
-
 
 //Customizing the Stripline
 
@@ -1973,21 +1848,17 @@ stripLine.Font = new Font("Arial", 10, FontStyle.Bold);
 
 stripLine.Interior = new BrushInfo(230, new BrushInfo(GradientStyle.Vertical, Color.OrangeRed, Color.DarkKhaki));
 
-
-
 //Adding stripline to the X-axis
 
 this.chartControl1.PrimaryYAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Declaring 
 
 Private stripLine As ChartStripLine = New ChartStripLine()
-
-
 
 'Customizing the Stripline
 
@@ -2013,8 +1884,6 @@ stripLine.Font = New Font("Arial",10,FontStyle.Bold)
 
 stripLine.Interior = New BrushInfo(230, new BrushInfo(GradientStyle.Vertical,Color.OrangeRed, Color.DarkKhaki)))
 
-
-
 'Adding stripline to the X-axis
 
 Me.chartControl1.PrimaryXAxis.StripLines.Add(stripLine)
@@ -2024,11 +1893,9 @@ Me.chartControl1.PrimaryXAxis.StripLines.Add(stripLine)
 
 ![](Chart-Axes_images/Chart-Axes_img32.jpeg)
 
-
 Use an image as StripLine by setting through StripLine.BackImage property.
 
 ![](Chart-Axes_images/Chart-Axes_img33.jpeg)
-
 
 ## Chart Breaks
 
@@ -2049,26 +1916,17 @@ There are three possible modes. They are,
 
 All breaks work only with Cartesian axes.
 
-
-
 ![](Chart-Axes_images/Chart-Axes_img34.png)
-
-
-
 
 {% tabs %}  {% highlight c# %}
 
 this.chartControl1.PrimaryYAxis.MakeBreaks = true;
-
-
 
 this.chartControl1.PrimaryYAxis.BreakRanges.BreaksMode = ChartBreaksMode.Manual;
 
 this.chartControl1.PrimaryYAxis.BreakRanges.Union(new DoubleRange(500, 600));
 
 this.chartControl1.PrimaryYAxis.BreakRanges.Union(new DoubleRange(950, 3000));
-
-
 
 this.chartControl1.PrimaryYAxis.BreakInfo.LineType = ChartBreakLineType.Wave;
 
@@ -2086,19 +1944,15 @@ this.chartControl1.PrimaryYAxis.BreakRanges.BreakAmount = 0.5;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrimaryYAxis.MakeBreaks = True 
-
-
 
 Me.chartControl1.PrimaryYAxis.BreakRanges.BreaksMode = ChartBreaksMode.Manual 
 
 Me.chartControl1.PrimaryYAxis.BreakRanges.Union(New DoubleRange(500, 600)) 
 
 Me.chartControl1.PrimaryYAxis.BreakRanges.Union(New DoubleRange(950, 3000)) 
-
-
 
 Me.chartControl1.PrimaryYAxis.BreakInfo.LineType = ChartBreakLineType.Wave 
 
@@ -2118,8 +1972,6 @@ Me.chartControl1.PrimaryYAxis.BreakRanges.BreakAmount = 0.5
 {% endtabs %}
 
 ![](Chart-Axes_images/Chart-Axes_img35.jpeg)
-
-
 
 ## Axis Crossing Support 	
 
@@ -2148,7 +2000,6 @@ Double</td><td>
 NA </td></tr>
 </table>
 
-
 ### Sample Link
 
 To view a sample:
@@ -2161,7 +2012,9 @@ To view a sample:
 
 To enable crossing X and Y axis, specify the Y axis data point value, where you want the X axis to cross, in the X axisCrossing property.  Similarly specify the X axis data point value, where you want the Y axis to cross, in the Y axisCrossing property. The following code illustrates this:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.Crossing=150;
 this.chartControl1.PrimaryYAxis.Crossing = 6;
@@ -2169,7 +2022,7 @@ this.chartControl1.Series3D = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrimaryXAxis.Crossing = 150
 
@@ -2181,8 +2034,6 @@ Me.chartControl1.Series3D = True
 {% endtabs %}
 
 ![](Chart-Axes_images/Chart-Axes_img36.png)
-
-
 
 ## Axis Label Placement
 
@@ -2224,13 +2075,15 @@ You can position the chart axis label using the Axes.AxisLabelPlacement property
 
 The following code illustrates how to place the chart axis label inside the plotted chart area: 
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 
@@ -2239,15 +2092,15 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 
 ![](Chart-Axes_images/Chart-Axes_img37.png)
 
-
-
 ### Positioning Individual Axis Labels
 
 Essential Chart supports customizing the individual axis label position to the right or left side of the axis for a horizontal axis and to the top or bottom for a vertical axis based on the user's needs.
 
 This feature can be achieved by using the[ChartFormatAxisLabel](/windowsforms/chart/chart-control-events#chartformataxislabel-event) event of the chart axis. The following code illustrates customizing the individual label position by using AxisLabelPlacement in the ChartFormatAxisLabel event.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %} 
+ 
+{% highlight c# %}
 
 this.chartControl1.PrimaryYAxis.AxisLabelPlacement = ChartPlacement.Inside;
 
@@ -2329,7 +2182,7 @@ private void chartControl1_ChartFormatAxisLabel(object sender, ChartFormatAxisLa
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrimaryYAxis.AxisLabelPlacement = ChartPlacement.Inside
 
