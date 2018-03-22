@@ -18,20 +18,21 @@ private void button2_Click(object sender, EventArgs e)
 {
 this.gridControl1.Model.Properties.PrintRowHeader = false;
 this.gridControl1.Model.Properties.PrintColHeader = false;
+
 if (this.gridControl1 != null)
 {
-try
-{
-GridPrintDocument pd = new GridPrintDocument(this.gridControl1, true);
-PrintDialog dlg = new PrintDialog();
-dlg.Document = pd;
-if (dlg.ShowDialog() == DialogResult.OK)
-pd.Print();
-}
-catch (Exception ex)
-{
-MessageBox.Show("An error occurred attempting to print the grid - " + ex.Message);
-}
+    try
+    {
+        GridPrintDocument pd = new GridPrintDocument(this.gridControl1, true);
+        PrintDialog dlg = new PrintDialog();
+        dlg.Document = pd;
+        if (dlg.ShowDialog() == DialogResult.OK)
+        pd.Print();
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show("An error occurred attempting to print the grid - " + ex.Message);
+    }
 }
 }
 
