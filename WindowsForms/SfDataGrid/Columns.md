@@ -1037,7 +1037,7 @@ Me.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2)
 
 ### Stacked header row appearance
 
-The appearance of stacked header row can be customized by setting the [StackedHeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~StackedHeaderStyle.html"") property. The `StackedHeaderStyle` property contains all the settings that are needed for the stacked header row appearance customization. 
+The appearance of stacked header row can be customized by setting the [StackedHeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~StackedHeaderStyle.html) property. The `StackedHeaderStyle` property contains all the settings that are needed for the stacked header row appearance customization. 
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.Style.StackedHeaderStyle.BackColor = Color.DarkCyan;
