@@ -9,22 +9,114 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to implement a similar UI as Visual Studio by using the DockingManager.
+This section explains how to implement a similar UI as Visual Studio using the DockingManager control in a Windows Forms application.
 
-## Add Docking Manager
+## Assembly deployment
 
-There are several ways to add Syncfusion control in to the Visual Studio Windows Forms project. The following steps help to add a DockingManager control through Code.
+The following list of assemblies should be added as reference to use the DockingManager in any application:
 
-1) Create a Windows Forms project in Visual Studio and refer to the following assemblies.
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base.dll
+</td>
+<td>
+Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Windows.dll
+</td>
+<td>
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the DockingManager control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base.dll
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of DockingManager and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Windows.dll
+</td>
+<td>
+Syncfusion.Shared.Windows contains style related properties of DockingManager and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Base.dll
+</td>
+<td>
+Syncfusion.Tools.Base contains base class which used for DockingManager control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows.dll
+</td>
+<td>
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of DockingManager control.
+</td>
+</tr>
+</table>
 
-   * Syncfusion.Grid.Windows.dll
+## Creating simple application with DockingManager
+
+You can create the Windows Forms application with DockingManager control as follows:
+
+1. [Creating the project](#creating-the-project )
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+4. [Add Dock child window ](#add-dock-child-window )
+5. [Add Label for Dock child window](#add-label-for-dock-child-window)
+6. [Apply DockStates for Dock child window](#apply-dockstates-for-dock-child-window)
+7. [Apply Docking style for Dock child window](#apply-docking-style-for-dock-child-window )
+8. [Apply serialization for Dock child window ](#apply-serialization-for-dock-child-window )
+
+### Creating simple project 
+
+Create a new Windows Forms project in the Visual Studio to dock panels as like Visual Studio using DockingManager.
+
+### Adding control via designer
+
+The DockingManager control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
    * Syncfusion.Grid.Base.dll
+   * Syncfusion.Grid.Windows.dll
    * Syncfusion.Shared.Base.dll
    * Syncfusion.Shared.Windows.dll
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
-2) Now add the DockingManager control with a required optimal name by using the included namespace.
+   ![](GettingStarted_images/gettingstarted.png)
+
+### Adding control manually in code
+
+To add control manually in C#, follow the given steps:
+
+1. Add the following required assembly references to the project:
+   * Syncfusion.Grid.Base.dll
+   * Syncfusion.Grid.Windows.dll
+   * Syncfusion.Shared.Base.dll
+   * Syncfusion.Shared.Windows.dll
+   * Syncfusion.Tools.Base.dll
+   * Syncfusion.Tools.Windows.dll
+
+2. Create `DockingManager` control instance and add it to the component list.
 
 {% tabs %}
 
@@ -42,7 +134,6 @@ this.dockingManager.HostControl = this;
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
 'Create the DockingManager instance and add it the component list. 
@@ -59,10 +150,9 @@ Me.dockingManager.HostControl = Me
 
 {% endtabs %}
 
+### Add Dock child window 
 
-## Add Controls to the Form
-
-Docking can be enabled to any controls by using the property named `EnableDocking on dockingManager`. Here five Panels are added to the form and transformed into a docking window.
+Docking can be enabled to any controls by invoke `EnableDocking` with corresponding DockingManager. Here five Panels are added to the form and transformed into a docking window.
 
 {% tabs %}
 
@@ -143,11 +233,29 @@ Me.dockingManager.SetEnableDocking(panel5, True)
 
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
+**Identify whether the panel is docking or not**
 
-## Set Label for Each Child Window
+DockingManger provides with an attached method `GetEnableDocking` which helps to determine whether the child window is docking or not. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+Console.Write("DockWindow Header:" + this.dockingManager.GetEnableDocking(panel1));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Console.Write("DockWindow Header:" + Me.dockingManager.GetEnableDocking(panel1))
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Add Label for Dock child window  
 
 DockingManger provides with an attached method `SetDockLabel` which helps to set the label for a child window. 
-
 
 {% tabs %}
 
@@ -187,14 +295,37 @@ Me.dockingManager.SetDockLabel(panel5, "Start Page");
 
 {% endtabs %}
 
-![](GettingStarted_images/DockLabel.png)
+![](GettingStarted_images/GettingStarted_img2.jpeg)
 
-## Set States for Each Child Window
+**Get Label of the dock panel**
+
+ DockingManger provides with an attached method `GetDockLabel` which helps to get the label for a child window. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Get the label for the docked control
+
+Console.Write("DockWindow Header:" + this.dockingManager.GetDockLabel(panel1));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Get the label for the docked control
+
+Console.Write("DockWindow Header:" + Me.dockingManager.GetDockLabel(panel1))
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Apply DockStates for Dock child window
 
 DockingManager provides an option to dock or float the controls.
 
 To dock the child window use below code snippet.
-
 
 {% tabs %}
 
@@ -247,13 +378,13 @@ Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rec
 ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
 
-## Set DockingStyle for Children
+### Apply Docking style for Dock child window 
 
-DockingManager provides an attached method `DockControl` that helps to dock a window at the required side using `DockingStyle` argument.
+DockingManager provides an attached method `DockControl` that helps to dock a panel at the required side using `DockingStyle` argument.
 
-Set the DockingStyle value as Right for “Solution Explorer” window to dock it on the right side.
+Set the DockingStyle value as Right for “Solution Explorer” panel to dock it on the right side.
 
-The DockingStyle’s Tabbed option is used to tab a window on another window. The tabbing windows need to be aware of the parent control’s name. Set “Output” window’s parent as “SolutionExplorer” to tab it on the “SolutionExplorer” window.
+The DockingStyle’s Tabbed option is used to tab a panel with another panel. The tabbing windows need to be aware of the parent control’s name. Set “Output” window’s parent as “SolutionExplorer” to tab it on the “SolutionExplorer” window.
 
 
 {% tabs %}
@@ -297,9 +428,9 @@ Me.dockingManager.DockControl(Me.panel5, Me, Syncfusion.Windows.Forms.Tools.Dock
 ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
 
-## Save / Load
+### Apply serialization for Dock child window 
 
-The PersistState feature of the DockingManager helps to save the current layout of the DockingManager automatically, while closing the window. The dock state can also be saved by calling the `SaveDockState` method.
+The PersistState feature of the DockingManager helps to save the current layout of the DockingManager automatically to isolated storage while closing the form. The dock state can also be saved by calling the `SaveDockState` method.
 
 {% tabs %}
 
