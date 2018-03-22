@@ -69,7 +69,7 @@ The EditControl can be added to the application by dragging it from the toolbox 
 
    * Syncfusion.Shared.Base.dll
    * Syncfusion.Tools.Windows.dll
-   * Syncfusion.Edit.Windows.dl
+   * Syncfusion.Edit.Windows.dll
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
@@ -81,7 +81,7 @@ To add control manually in C#, follow the given steps:
 
    * Syncfusion.Shared.Base.dll
    * Syncfusion.Tools.Windows.dll
-   * Syncfusion.Edit.Windows.dl
+   * Syncfusion.Edit.Windows.dll
 
 2. Create `EditControl` control instance and add it to the form.
 
@@ -179,8 +179,7 @@ The Edit Control provides built-in support for a procedural, markup and SQL lang
 
 The EditControl has a built-in syntax highlighting support for the following languages.
 
-  * C
-  * CSharp
+  * C#
   * Delphi
   * XML
   * HTML
@@ -223,7 +222,7 @@ Edit Control provides supports for custom language configuration. You can plug-i
 
 The following example illustrates the same as follows:
 
-**Step 1** : Creating a Configuraton file
+**Step 1** : Creating a Configuration file
 
 The following code snippet illustrates a sample configuration file that can be used for syntax highlighting a LISP-like code.
 

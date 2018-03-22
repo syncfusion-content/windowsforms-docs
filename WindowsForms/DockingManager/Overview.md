@@ -27,3 +27,4 @@ The DockingManager control implements an architecture that allows panels to be d
 * **Custom Caption** -  Supports to add custom controls in caption of dock panels.
 * **Customization** - Supports for customizing appearance of Dock, Float, AutoHide and Tabbed windows.
 * **Design-time** - Supports for Design time drag, drop and floating the windows.
+* **Localization** - Supports complete localization to any desired language of header and context menus of docking child windows.
