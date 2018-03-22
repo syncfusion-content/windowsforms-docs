@@ -187,8 +187,6 @@ namespace ScheduleSample
 {% endhighlight %}
 {% endtabs %}
 
-	{:.prettyprint }
-
 8.  Now press F5 key to compile and run your application. A screen similar to this one should appear.
 
     ![](Getting-Started_images/Getting-Started_img14.jpeg)
@@ -216,7 +214,7 @@ namespace ScheduleSample
 14. Next modify our Form_Load code to conditionally reload the saved data if the file is present on the disk. Here is the new code. Copy this code to your Form1.cs file. Notice that you have added a "using" statement to reference the System.IO namespace in addition to the new code in the Form1_Load. (If you are not using the 2.0 Framework, remove the partial keyword)
 
 {% tabs %}
-{% highlight %}
+{% highlight c# %}
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -261,7 +259,6 @@ namespace ScheduleSample
 }
 {% endhighlight %}
 {% endtabs %}
-	{:.prettyprint }
 
 15. As our last step, compile and run the application again. The Month view should reappear but, this time the appointment you added earlier should appear.
 
