@@ -123,13 +123,13 @@ Sample diagrams are as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img37.jpeg)
+![](Event-Handlers_images/Event-Handlers_img1.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img38.jpeg)
+![](Event-Handlers_images/Event-Handlers_img2.jpeg)
 
 
 
@@ -309,13 +309,13 @@ Sample diagrams are as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img39.jpeg)
+![](Event-Handlers_images/Event-Handlers_img3.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img40.jpeg)
+![](Event-Handlers_images/Event-Handlers_img4.jpeg)
 
 
 
@@ -449,11 +449,11 @@ Sample diagrams are as follows.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img41.jpeg)
+![](Event-Handlers_images/Event-Handlers_img5.jpeg)
 
 
 
-![](Advanced-Features_images/Advanced-Features_img42.jpeg)
+![](Event-Handlers_images/Event-Handlers_img6.jpeg)
 
 
 #### Magnification Event 
@@ -530,13 +530,13 @@ Sample diagrams are as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img43.jpeg)
+![](Event-Handlers_images/Event-Handlers_img7.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img44.jpeg)
+![](Event-Handlers_images/Event-Handlers_img8.jpeg)
 
 
 
@@ -755,13 +755,13 @@ Sample diagrams are as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img45.jpeg)
+![](Event-Handlers_images/Event-Handlers_img9.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img46.jpeg)
+![](Event-Handlers_images/Event-Handlers_img10.jpeg)
 
 
 
@@ -906,13 +906,13 @@ Sample diagrams are as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img47.jpeg)
+![](Event-Handlers_images/Event-Handlers_img11.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img48.jpeg)
+![](Event-Handlers_images/Event-Handlers_img12.jpeg)
 
 
 
@@ -1076,25 +1076,25 @@ Sample diagrams are as follows:
 
 
 
-![](Advanced-Features_images/Advanced-Features_img49.jpeg)
+![](Event-Handlers_images/Event-Handlers_img13.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img50.jpeg)
+![](Event-Handlers_images/Event-Handlers_img14.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img51.jpeg)
+![](Event-Handlers_images/Event-Handlers_img15.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img52.jpeg)
+![](Event-Handlers_images/Event-Handlers_img16.jpeg)
 
 
 
@@ -1199,13 +1199,13 @@ Sample diagram are as follows:
 
 
 
-![](Advanced-Features_images/Advanced-Features_img53.jpeg)
+![](Event-Handlers_images/Event-Handlers_img17.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img54.jpeg)
+![](Event-Handlers_images/Event-Handlers_img18.jpeg)
 
 
 
@@ -1319,7 +1319,7 @@ Sample diagram is as follows.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img55.jpeg)
+![](Event-Handlers_images/Event-Handlers_img19.jpeg)
 
 
 
@@ -1363,7 +1363,7 @@ Sample diagram is as follows.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img56.jpeg)
+![](Event-Handlers_images/Event-Handlers_img20.jpeg)
 
 
 
@@ -1487,13 +1487,13 @@ Sample diagrams are as follows.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img57.jpeg)
+![](Event-Handlers_images/Event-Handlers_img21.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img58.jpeg)
+![](Event-Handlers_images/Event-Handlers_img22.jpeg)
 
 
 
@@ -1634,5 +1634,5 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img59.jpeg)
+![](Event-Handlers_images/Event-Handlers_img23.jpeg)
 

@@ -130,7 +130,7 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img69.jpg)
+![](Diagram-Data-Binding_images/Diagram-Data-Binding_img1.jpg)
 
 
 ### DataBase Binding
@@ -212,4 +212,4 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img70.jpg)
+![](Diagram-Data-Binding_images/Diagram-Data-Binding_img2.jpg)

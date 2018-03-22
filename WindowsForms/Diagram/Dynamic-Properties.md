@@ -58,6 +58,6 @@ The following code shows how to add additional data to a node by using the Prope
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/amsathm/Desktop/dynamic - Copy.png](Advanced-Features_images/Advanced-Features_img68.png)
+![](Dynamic-Properties_images/Dynamic-Properties_img1.png)
 
 

@@ -53,7 +53,7 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img21.jpeg)
+![](Rulers_images/Rulers_img1.jpeg)
 
 
 
@@ -137,7 +137,7 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img22.jpeg)
+![](Rulers_images/Rulers_img2.jpeg)
 
 
 
@@ -183,4 +183,4 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img23.jpeg)
+![](Rulers_images/Rulers_img3.jpeg)

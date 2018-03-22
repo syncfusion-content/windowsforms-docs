@@ -63,4 +63,4 @@ Programmatically, the properties can be set as follows.
 {% endhighlight %}
 {% endtabs %}
 
-![](Supported-Controls_images/Supported-Controls_img6.jpeg)
+![](Property-Editor_images/Property-Editor_img1.jpeg)

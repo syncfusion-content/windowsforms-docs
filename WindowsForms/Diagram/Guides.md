@@ -87,4 +87,4 @@ The following code example illustrates how to turn on Guides for Diagram Nodes w
 {% endtabs %}
 
 
-![](Advanced-Features_images/Advanced-Features_img65.png)
+![](Guides_images/Guides_img1.png)

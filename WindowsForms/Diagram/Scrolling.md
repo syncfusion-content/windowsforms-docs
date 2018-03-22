@@ -56,7 +56,7 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img27.jpeg)
+![](Scrolling_images/Scrolling_img1.jpeg)
 
 
 ScrollGranularity determines the level of granularity for scrolling. The value of this property must be greater than 0. This value is multiplied by virtual size of the view in order to get the scroll range. For example, if the virtual size of the view is 100x50 and this property is set to 0.5f, then the horizontal scroll range is set to 0.50 and the vertical scroll range is set to 0.25.
@@ -114,7 +114,7 @@ Me.diagram1.HScrollBar.SmallChange = 200
 {% endtabs %}
 
 
-![](Advanced-Features_images/Advanced-Features_img28.jpeg)
+![](Scrolling_images/Scrolling_img2.jpeg)
 
 
 
@@ -138,7 +138,7 @@ Diagram has ScrollVirtualBounds property, which determines the bounds of the scr
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img29.jpeg)
+![](Scrolling_images/Scrolling_img3.jpeg)
 
 
 
@@ -310,4 +310,4 @@ Programmatically these properties can be set as follows.
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img30.png)
+![](Scrolling_images/Scrolling_img4.png)

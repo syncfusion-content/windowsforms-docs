@@ -150,7 +150,7 @@ The following code sample demonstrates how to use the zoom to center feature in 
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/amsathm/Desktop/diagram_centerzoom.png](Advanced-Features_images/Advanced-Features_img31.png)
+![](Zoom-And-Pan_images/Zoom-And-Pan_img1.png)
 
 
 
@@ -176,7 +176,7 @@ The following code shows how to use the zoom to top-left feature:
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/amsathm/Desktop/diagram_leftzoom.png](Advanced-Features_images/Advanced-Features_img32.png)
+![](Zoom-And-Pan_images/Zoom-And-Pan_img2.png)
 
 
 
@@ -186,7 +186,7 @@ Essential Diagram supports zooming the diagram document to the pointer position 
 
 
 
-![C:/Users/amsathm/Desktop/diagram_mousezoom.png](Advanced-Features_images/Advanced-Features_img33.png)
+![](Zoom-And-Pan_images/Zoom-And-Pan_img3.png)
 
 
 
@@ -245,13 +245,13 @@ The following code demonstrates how to activate the zoom tool:
 {% endtabs %}
 
 
-![C:/Users/amsathm/Desktop/IMG_05122012_062203.png](Advanced-Features_images/Advanced-Features_img34.png)
+![](Zoom-And-Pan_images/Zoom-And-Pan_img4.png)
 
 
 
 
 
-![C:/Users/amsathm/Desktop/IMG_05122012_062341.png](Advanced-Features_images/Advanced-Features_img35.png)
+![](Zoom-And-Pan_images/Zoom-And-Pan_img5.png)
 
 ## Panning Support
 
@@ -277,4 +277,4 @@ Sample diagram is as follows.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img36.jpeg)
+![](Zoom-And-Pan_images/Zoom-And-Pan_img6.jpeg)

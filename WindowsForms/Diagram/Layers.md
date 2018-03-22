@@ -13,7 +13,7 @@ Layers are transparent sheets that can be added to the model and the objects are
 
 
 
-![](Advanced-Features_images/Advanced-Features_img19.png)
+![](Layers_images/Layers_img1.png)
 
 
 ### Sample Layers
@@ -87,7 +87,7 @@ Programmatically layers can be implemented as follows.
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img20.jpeg)
+![](Layers_images/Layers_img2.jpeg)
 
 
 

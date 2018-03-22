@@ -56,7 +56,7 @@ You can enable drawing shapes by clicking the diagram page using the _Diagram_ p
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img61.png)
+![](Adding-Shapes_images/Adding-Shapes_img.png)
 
 
 N> Click the Diagram page to add the selected node. Click and drag to get the required size. 

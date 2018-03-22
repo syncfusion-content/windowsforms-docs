@@ -236,7 +236,7 @@ Programmatically, the properties can be set as follows.
 {% endhighlight %}
 {% endtabs %}
 
-![](Supported-Controls_images/Supported-Controls_img4.jpeg)
+![](Document-Explorer_images/Document-Explorer_img1.jpeg)
 
 Sample code snippet for documentExplorer1.AfterSelect Event
 
@@ -268,4 +268,4 @@ Sample code snippet for documentExplorer1.AfterSelect Event
 {% endhighlight %}
 {% endtabs %}
 
-![](Supported-Controls_images/Supported-Controls_img5.jpeg)
+![](Document-Explorer_images/Document-Explorer_img2.jpeg)

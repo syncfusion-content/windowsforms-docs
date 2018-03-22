@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-## Built-In Context Menu
+### Built-In Context Menu
 
 Essential Diagram for Windows Forms provides Built-in Context Menu support for Diagram.
 
@@ -60,8 +60,7 @@ The following code illustrates how to enable the default context menu:
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img60.png)
-
+![](Context-Menu_images/Context-Menu_img1.png)
 
 
 The following code illustrates how to disable the default context menu:

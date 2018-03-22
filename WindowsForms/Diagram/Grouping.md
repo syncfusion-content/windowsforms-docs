@@ -116,7 +116,7 @@ Also, Group has an int ChildCount property, which returns the child count in a G
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img24.jpeg)
+![](Grouping_images/Grouping_img1.jpeg)
 
 ### Positioning nodes in Group
 
@@ -148,13 +148,13 @@ Group Node has an enum property called GroupNodePosition of type GroupNodePositi
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/pandimurugana/Desktop/Image.PNG](Advanced-Features_images/Advanced-Features_img25.png)
+![](Grouping_images/Grouping_img2.png)
 
 
 
 
 
-![C:/Users/pandimurugana/Desktop/Image1.PNG](Advanced-Features_images/Advanced-Features_img26.png)
+![](Grouping_images/Grouping_img3.png)
 
 
 

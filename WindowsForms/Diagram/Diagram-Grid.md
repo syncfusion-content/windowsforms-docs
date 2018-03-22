@@ -86,7 +86,7 @@ Specifies whether the grid is visible. It accepts Boolean value (true or false).
 {% endhighlight %}
 {% endtabs %}
 
-![](Supported-Controls_images/Supported-Controls_img7.jpeg)
+![](Diagram-Grid_images/Diagram-Grid_img1.jpeg)
 
 
 

@@ -388,4 +388,4 @@ Follow the steps given below for saving current symbol palette.
 {% endhighlight %}
 {% endtabs %}
 
-![](Supported-Controls_images/Supported-Controls_img3.jpeg)
+![](Palette-Groupbar-And-GroupView_images/Palette-Groupbar-And-GroupView_img1.jpeg)

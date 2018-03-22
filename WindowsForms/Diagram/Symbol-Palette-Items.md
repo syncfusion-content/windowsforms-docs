@@ -75,7 +75,7 @@ Following code example illustrates how to enable preview support:
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img63.png)
+![](Symbol-Palette-Items_images/Symbol-Palette-Items_img1.png)
 
 The following code illustrates how to disable preview support: 
 
@@ -166,4 +166,4 @@ The following code example illustrates how to apply styles to the rendering help
 
 
 
-![](Advanced-Features_images/Advanced-Features_img64.png)
+![](Symbol-Palette-Items_images/Symbol-Palette-Items_img2.png)

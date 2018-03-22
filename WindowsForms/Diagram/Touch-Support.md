@@ -49,8 +49,8 @@ The following code example illustrates how to turn on touch support for Diagram 
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img66.png)
+![](Touch-Support_images/Touch-Support_img1.png)
 
 
 
-![](Advanced-Features_images/Advanced-Features_img67.png)
+![](Touch-Support_images/Touch-Support_img2.png)

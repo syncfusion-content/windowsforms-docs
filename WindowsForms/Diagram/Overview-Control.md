@@ -115,4 +115,4 @@ Programmatically, the properties can be set as follows.
 {% endhighlight %}
 {% endtabs %}
 
-![](Supported-Controls_images/Supported-Controls_img2.jpeg)
+![](Overview-Control_images/Overview-Control_img1.jpeg)

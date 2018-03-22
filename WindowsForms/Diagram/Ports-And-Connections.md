@@ -58,7 +58,7 @@ Sample diagram is as follows:
 
 
 
-![](Advanced-Features_images/Advanced-Features_img5.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img1.jpeg)
 
 
 ### Custom ports
@@ -109,7 +109,7 @@ Sample diagram is as follows.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img7.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img2.jpeg)
 
 
 
@@ -157,7 +157,7 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img8.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img3.jpeg)
 
 
 ## Connection Point Properties
@@ -213,7 +213,7 @@ The following code snippet demonstrates their usage.
 {% endhighlight %}
 {% endtabs %}
 
-![](Advanced-Features_images/Advanced-Features_img9.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img4.jpeg)
 
 
 
@@ -222,7 +222,7 @@ Sample diagram  is as follows:
 
 
 
-![](Advanced-Features_images/Advanced-Features_img10.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img5.jpeg)
 
 
 
@@ -257,7 +257,7 @@ The following image illustrates the above settings.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img11.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img6.jpeg)
 
 
 
@@ -267,7 +267,7 @@ This property in turn has customization properties to set the style for the Conn
 
 
 
-![](Advanced-Features_images/Advanced-Features_img12.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img7.jpeg)
 
 
 
@@ -295,7 +295,7 @@ The below images illustrates the above settings.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img13.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img8.jpeg)
 
 
 
@@ -362,21 +362,21 @@ Sample diagram is as follows,
 
 
 
-![](Advanced-Features_images/Advanced-Features_img14.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img9.jpeg)
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img15.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img10.jpeg)
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img16.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img11.jpeg)
 
 
 
-![](Advanced-Features_images/Advanced-Features_img17.jpeg)
+![](Ports-And-Connections_images/Ports-And-Connections_img12.jpeg)
 
 
 ### Reject Connections
@@ -410,4 +410,4 @@ rect1.Ports.Add(port)
 {% endtabs %}
 
 
-![](Advanced-Features_images/Advanced-Features_img18.png)
+![](Ports-And-Connections_images/Ports-And-Connections_img13.png)
