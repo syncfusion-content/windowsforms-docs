@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Move to the Next Row from the Last Cell of a Row
-
-### Introduction
+# How to move to the next row from the last cell of a row
 
 Set the WrapCellBehavior property to wrap a row when the Tab or Enter key is pressed.
 
