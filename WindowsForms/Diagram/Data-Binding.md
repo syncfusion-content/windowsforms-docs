@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diagram-Data-Binding | Windows Forms | Syncfusion
-description: Diagram Data Binding
+title: Data-Binding | Windows Forms | Syncfusion
+description: Data Binding
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # Diagram Data Binding
 
-## Populating the Data
+### Populating the Data
 
 *	Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 *	Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
 To explore those properties, see [Data source settings](http://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Binding_properties.html)
 
-### XML Data Binding
+## XML Data Binding
 
 Diagram can be populated based on the user defined XML data by mapping the relevant data source fields.
 To map the user defined XML data with Diagram, you have to configure the fields of DataSource. The following code example illustrates how to bind XML data with the Diagram.
@@ -133,7 +133,7 @@ Sample diagram is as follows,
 ![](Diagram-Data-Binding_images/Diagram-Data-Binding_img1.jpg)
 
 
-### DataBase Binding
+## DataBase Binding
 
 You can bind the Diagram with DataBase data by using SqlConnection.
 The following code illustrates how to bind the data to the Diagram.

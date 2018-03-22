@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diagram-Grid | Windows Forms | Syncfusion
+title: Gridlines | Windows Forms | Syncfusion
 description: Diagram Grid  
 platform: windowsforms
 control: Diagram
