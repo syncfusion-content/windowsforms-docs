@@ -19,9 +19,10 @@ excelConverter.QueryImportExportCellInfo += new Syncfusion.GridExcelConverter.Gr
 
 void excelConverter_QueryImportExportCellInfo(object sender, Syncfusion.GridExcelConverter.GridImportExportCellInfoEventArgs e)
 {
-ExcelTip.GridExcelTipStyleProperties style = new ExcelTip.GridExcelTipStyleProperties(e.GridCell);
-if (style.HasExcelTipText)
-e.ExcelCell.AddComment().Text = style.ExcelTipText;
+    ExcelTip.GridExcelTipStyleProperties style = new ExcelTip.GridExcelTipStyleProperties(e.GridCell);
+    
+    if (style.HasExcelTipText)
+    e.ExcelCell.AddComment().Text = style.ExcelTipText;
 }
 
 {% endhighlight %}
