@@ -31,6 +31,12 @@ Me.Grid.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll
 {% highlight c# %}
 this.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll;
 {% endhighlight %}
+
+{% highlight vb %}
+
+this.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll
+
+{% endhighlight %}
 {% endtabs %}
 
 N> Other options range from None (no activation at all) to ClickOnCell, DblClickOnCell or SetCurrent.
