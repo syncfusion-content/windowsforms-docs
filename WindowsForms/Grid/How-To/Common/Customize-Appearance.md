@@ -11,13 +11,13 @@ documentation: ug
 
 Essential Grid provides support to display horizontal and vertical lines and customize the grid line color. 
 
-## Displaying Horizontal Lines
+## Displaying horizontal lines
 
 You can display horizontal lined using DisplayHorizontalLines property. 
 
 The following code illustrates how to display horizontal lines in GridControl: 
 
-
+{% tabs %}
 {% highlight c# %}
 
 //The following code illustrates how to customize grid line color in GridControl:
@@ -30,6 +30,7 @@ gridDataBoundGrid.DisplayHorizontalLines = true;
 gridGroupingControl1.DisplayHorizontalLines = true;
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Displaying Vertical Lines
 
@@ -37,6 +38,7 @@ You can display vertical lined using the DisplayVerticalLines__property.
 
 The following code illustrates how to display vertical lines in GridControl: 
 
+{% tabs %}
 {% highlight c# %}
 
 //The following code illustrates how to customize grid line color in GridControl:
@@ -49,14 +51,15 @@ gridDataBoundGrid.DisplayVerticalLines = true;
 gridGroupingControl1.DisplayVerticalLines = true;
 
 {% endhighlight %}
+{% endtabs %}
 
-## Customizing Grid Line Color
+## Customizing Grid line color
 
 You can customize grid line color using _GridLineColor_ property. 
 
 The following code illustrates how to display vertical lines in GridControl: 
 
-
+{% tabs %}
 {% highlight c# %}
 
 //The following code illustrates how to customize grid line color in GridControl:
@@ -69,5 +72,5 @@ gridDataBoundGrid.GridLineColor = Color.Red;
 gridGroupingControl1.GridLineColor = Color.Red;
 
 {% endhighlight %}
-
+{% endtabs %}
 
