@@ -23,6 +23,12 @@ The following code illustrates how to print column header in GridControl:
 gridControl1.PrintColumnHeader = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.PrintColumnHeader = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to print column header in GridDataBoundGrid: 
@@ -33,6 +39,12 @@ The following code illustrates how to print column header in GridDataBoundGrid:
 gridDataBoundGrid.PrintColumnHeader = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.PrintColumnHeader = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to print the column header GridGrouping control: 
@@ -41,6 +53,12 @@ The following code illustrates how to print the column header GridGrouping contr
 {% highlight c# %}
 
 gridGroupingControl1.PrintColumnHeader = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridGroupingControl1.PrintColumnHeader = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -57,6 +75,12 @@ The following code illustrates how to print row header in GridControl:
 gridControl1.PrintRowHeader = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.PrintRowHeader = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to print the row header in GridDataBoundGrid: 
@@ -67,6 +91,12 @@ The following code illustrates how to print the row header in GridDataBoundGrid:
 gridDataBoundGrid.PrintRowHeader = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.PrintRowHeader = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to print row header GridGrouping control: 
@@ -75,6 +105,12 @@ The following code illustrates how to print row header GridGrouping control:
 {% highlight c# %}
 
 gridGroupingControl1.PrintRowHeader = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridGroupingControl1.PrintRowHeader = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,6 +127,12 @@ The following code illustrates how to print horizontal lines in GridControl:
 gridControl1.PrintHorizontalLines = true; 
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.PrintHorizontalLines = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to print horizontal lines in GridDataBoundGrid: 
@@ -101,6 +143,12 @@ The following code illustrates how to print horizontal lines in GridDataBoundGri
 gridDataBoundGrid.PrintHorizontalLines = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.PrintHorizontalLines = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to print horizontal lines GridGrouping control: 
@@ -109,6 +157,12 @@ The following code illustrates how to print horizontal lines GridGrouping contro
 {% highlight c# %}
 
 gridGroupingControl1.PrintHorizontalLines = true;
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+gridGroupingControl1.PrintHorizontalLines = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -125,6 +179,12 @@ The following code illustrates how to print vertical lines in GridControl:
 gridControl1.PrintVerticalLines = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.PrintVerticalLines = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to print vertical lines in GridDataBoundGrid: 
@@ -135,6 +195,12 @@ The following code illustrates how to print vertical lines in GridDataBoundGrid:
 gridDataBoundGrid.PrintVerticalLines = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.PrintVerticalLines = True
+
+{% endhighlight %}
 {% endtabs %}
 
  The following code illustrates how to print vertical lines GridGrouping control: 
@@ -143,6 +209,12 @@ gridDataBoundGrid.PrintVerticalLines = true;
 {% highlight c# %}
 
 gridGroupingControl1.PrintVerticalLines = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridGroupingControl1.PrintVerticalLines = True
 
 {% endhighlight %}
 {% endtabs %}
