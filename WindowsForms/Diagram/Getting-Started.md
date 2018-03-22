@@ -126,94 +126,141 @@ To create a Diagram control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a Diagram control using the following code.
 
-{% tabs %}
-{% highlight c# %}
+
+   ~~~ cs
 
             //Imports the Diagram control’s namespaces
+
             using Syncfusion.Windows.Forms.Diagram.Controls;
+
             using Syncfusion.Windows.Forms.Diagram;
 
 
+
             //Create an instance
+
             Diagram diagram = new Diagram();
 
+
+
             //Enable scroll bars
+
             diagram.HScroll = true;
+
             diagram.VScroll = true;
 
+
+
             //Sizing the diagram
+
             diagram.Size = new Size(400, 400);
 
             //Positioning the diagram
+
             diagram.Location = new Point(20, 5);
 
-{% endhighlight %}
-{% highlight vbnet %}
+
+   ~~~
+   {:.prettyprint }
+
+
+   ~~~ vbnet
 
             'Imports the Diagram control’s namespaces
+
             Imports Syncfusion.Windows.Forms.Diagram
+
             Imports Syncfusion.Windows.Forms.Diagram.Controls
 
+
+
             'Create an instance
+
             Dim diagram As New Diagram()
 
+
+
             'Enable Scrollbars
+
             diagram.HScroll = True
+
             diagram.VScroll = True
 
+
+
             'Sizing the diagram
+
             diagram.Size = New Size(400, 400)
 
             'Positioning the diagram
+
             diagram.Location = New Point(20, 5)
 
-{% endhighlight %}
-{% endtabs %}
+   ~~~
+   {:.prettyprint }
 
 
 
 4. Add a model to the Diagram control.
 
-{% tabs %}
-{% highlight c# %}
+
+   ~~~ cs
 
             //Create a model
+
             Model model = new Model();
 
+
+
             //Add the model to the Diagram control
+
             diagram.Model = model;
 
-{% endhighlight %}
-{% highlight vbnet %}
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
             'Create a model
+
             Dim model As New Model()
 
+
+
             'Add the model to the Diagram control
+
             diagram.Model = model
-            
-{% endhighlight %}
-{% endtabs %}
+
+   ~~~
+   {:.prettyprint }
 
 
 
 5. Add the Diagram control to the Diagram Form window.
 
 
-{% tabs %}
-{% highlight c# %}
+   ~~~ cs
 
             //Add the Diagram control to Diagram Form
+
             this.Controls.Add(diagram);
 
-{% endhighlight %}
-{% highlight vbnet %}
+
+
+   ~~~
+   {:.prettyprint }
+
+   ~~~ vbnet
 
             'Add the Diagram control to the Diagram Form
+
             Me.Controls.Add(diagram)
-            
-{% endhighlight %}
-{% endtabs %}
+
+
+   ~~~
+   {:.prettyprint }
+
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
@@ -226,71 +273,123 @@ The Diagram control has a list of predefined basic shapes (nodes) which help you
 The following code creates a rectangular node and adds it to the model.
 
 
-{% tabs %}
 {% highlight c# %}
 
             //Enable diagram rulers
+
             diagram.ShowRulers = true;
 
+
+
             //Create a rectangular node
-            Syncfusion.Windows.Forms.Diagram.Rectangle rectangle
+
+            Syncfusion.Windows.Forms.Diagram.Rectangle rectangle 
+
                 = new Syncfusion.Windows.Forms.Diagram.Rectangle(120, 120, 100, 70);
 
+
+
             //Style the rectangular node
+
             rectangle.FillStyle.Type = FillStyleType.LinearGradient;
+
             rectangle.FillStyle.Color = Color.FromArgb(128, 0, 0);
+
             rectangle.FillStyle.ForeColor = Color.FromArgb(225, 0, 0);
 
             rectangle.ShadowStyle.Visible = true;
 
+
+
             //Border style
+
             rectangle.LineStyle.LineColor = Color.RosyBrown;
+
             rectangle.LineStyle.LineWidth = 2.0f;
+
             rectangle.LineStyle.LineJoin = LineJoin.Miter;
 
+
+
             //Add a label to the rectangular node
-             Syncfusion.Windows.Forms.Diagram.Label label
+
+             Syncfusion.Windows.Forms.Diagram.Label label 
+
                 = new Syncfusion.Windows.Forms.Diagram.Label();
+
             label.Text = "Hello!";
+
             label.FontStyle.Family = "Arial";
+
             label.FontColorStyle.Color = Color.White;
+
             rectangle.Labels.Add(label);
 
+
+
             //Add the rectangular node to the model
+
             diagram.Model.AppendChild(rectangle);
 
+
 {% endhighlight %}
+
+
 {% highlight vbnet %}
 
             'Enable diagram rulers
+
             diagram.ShowRulers = True
 
+
+
             'Create a rectangular node
+
             Dim rectangle As New Rectangle(120, 120, 100, 70)
 
+
+
             'Style the rectangular node
+
             rectangle.FillStyle.Type = FillStyleType.LinearGradient
+
             rectangle.FillStyle.Color = Color.FromArgb(128, 0, 0)
+
             rectangle.FillStyle.ForeColor = Color.FromArgb(225, 0, 0)
+
             rectangle.ShadowStyle.Visible = True
 
+
+
             'Border style
+
             rectangle.LineStyle.LineColor = Color.RosyBrown
+
             rectangle.LineStyle.LineWidth = 2.0F
+
             rectangle.LineStyle.LineJoin = Drawing2D.LineJoin.Miter
 
+
+
             'Add a label to the rectangular node
+
             Dim label As New Syncfusion.Windows.Forms.Diagram.Label()
+
             label.Text = "Hello!"
+
             label.FontStyle.Family = "Arial"
+
             label.FontColorStyle.Color = Color.White
+
             rectangle.Labels.Add(label)
 
+
+
             'Add the rectangular node to the model
+
             diagram.Model.AppendChild(rectangle)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img9.png)
@@ -305,165 +404,310 @@ The Diagram control has a set of predefined links (connectors) which help you to
 
 The following code illustrates how to connect a process node to a decision node by OrthogonalConnector.
 
-{% tabs %}
 {% highlight c# %}
 
-            //Create a process node
-            Syncfusion.Windows.Forms.Diagram.Rectangle process
+             //Create a process node
+
+            Syncfusion.Windows.Forms.Diagram.Rectangle process 
+
                 = new Syncfusion.Windows.Forms.Diagram.Rectangle(50, 50, 100, 70);
 
+
+
             //Style the process node
+
             process.FillStyle.Type = FillStyleType.LinearGradient;
+
             process.FillStyle.Color = Color.FromArgb(128, 0, 0);
+
             process.FillStyle.ForeColor = Color.FromArgb(225, 0, 0);
 
+
+
             //Border style
+
             process.LineStyle.LineColor = Color.RosyBrown;
+
             process.LineStyle.LineWidth = 2.0f;
+
             process.LineStyle.LineJoin = LineJoin.Miter;
 
+
+
             //Add a label to the process node
-            Syncfusion.Windows.Forms.Diagram.Label label
+
+            Syncfusion.Windows.Forms.Diagram.Label label 
+
                 = new Syncfusion.Windows.Forms.Diagram.Label();
+
             label.Text = "Process";
+
             label.FontStyle.Family = "Arial";
+
             label.FontColorStyle.Color = Color.White;
+
             process.Labels.Add(label);
 
+
+
             //Add the process node to the model
+
             diagram.Model.AppendChild(process);
 
+
+
             //Create a decision node
+
             Polygon decision = new Polygon(new PointF[] {
+
                               new PointF(0,50), new PointF(50,0),
+
                               new PointF(100,50), new PointF(50,100),
+
                               new PointF(0,50)});
 
+
+
             //Style the decision node
+
             decision.FillStyle.Type = FillStyleType.LinearGradient;
+
             decision.FillStyle.Color = Color.FromArgb(128, 0, 0);
-            decision.FillStyle.ForeColor = Color.FromArgb(225, 0, 0);
+
+            decision.FillStyle.ForeColor = Color.FromArgb(225, 0, 0);            
+
+
 
             //Border style
+
             decision.LineStyle.LineColor = Color.RosyBrown;
+
             decision.LineStyle.LineWidth = 2.0f;
+
             decision.LineStyle.LineJoin = LineJoin.Miter;
 
+
+
             //Add a label to the decision node
+
             label = new Syncfusion.Windows.Forms.Diagram.Label();
+
             label.Text = "Decision";
+
             label.FontStyle.Family = "Arial";
+
             label.FontColorStyle.Color = Color.White;
+
             decision.Labels.Add(label);
 
+
+
             //Position the decision node
+
             decision.PinPoint = new PointF(250, 250);
-            
+
             //Add decision node to the Model
+
             diagram.Model.AppendChild(decision);
 
+
+
             //Create an orthogonal connector
+
             OrthogonalConnector link = 
+
                 new OrthogonalConnector(process.PinPoint, decision.PinPoint);
 
+
+
             //Style the link
+
             link.LineStyle.LineColor = Color.RosyBrown;
+
             link.LineStyle.LineWidth = 2f;
 
+
+
             //Head decorator style
+
             link.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
             link.HeadDecorator.Size = new SizeF(8, 8);
+
             link.HeadDecorator.FillStyle.Color = Color.RosyBrown;
+
             link.HeadDecorator.LineStyle.LineColor = Color.RosyBrown;
 
+
+
             //Connect a tail node to a head node
+
             process.CentralPort.TryConnect(link.TailEndPoint); //process is tail node
+
             decision.CentralPort.TryConnect(link.HeadEndPoint); //decision is head node
 
+
+
             //Add a link to the model
+
             diagram.Model.AppendChild(link);
 
 
 {% endhighlight %}
+
+
 {% highlight vbnet %}
 
             'Create a process node
+
             Dim process As New Rectangle(50, 50, 100, 70)
 
+
+
             'Style the process node
+
             process.FillStyle.Type = FillStyleType.LinearGradient
+
             process.FillStyle.Color = Color.FromArgb(128, 0, 0)
+
             process.FillStyle.ForeColor = Color.FromArgb(225, 0, 0)
 
+
+
             'Border style
+
             process.LineStyle.LineColor = Color.RosyBrown
+
             process.LineStyle.LineWidth = 2.0F
+
             process.LineStyle.LineJoin = Drawing2D.LineJoin.Miter
 
+
+
             'Add a label to the process node
+
             Dim label As New Syncfusion.Windows.Forms.Diagram.Label()
+
             label.Text = "Process"
+
             label.FontStyle.Family = "Arial"
+
             label.FontColorStyle.Color = Color.White
+
             process.Labels.Add(label)
 
+
+
             'Add process node to the model
+
             diagram.Model.AppendChild(process)
 
+
+
             'Create a decision node
+
             Dim decision As New Polygon(
+
                 New PointF() {
+
                 New PointF(0, 50),
+
                 New PointF(50, 0),
+
                 New PointF(100, 50),
+
                 New PointF(50, 100),
+
                 New PointF(0, 50)
+
                })
 
+
+
             'Style the decision node
+
             decision.FillStyle.Type = FillStyleType.LinearGradient
+
             decision.FillStyle.Color = Color.FromArgb(128, 0, 0)
+
             decision.FillStyle.ForeColor = Color.FromArgb(225, 0, 0)
 
+
+
             'Border style
+
             decision.LineStyle.LineColor = Color.RosyBrown
+
             decision.LineStyle.LineWidth = 2.0F
+
             decision.LineStyle.LineJoin = Drawing2D.LineJoin.Miter
 
+
+
             'Add a label to the decision node
+
             label = New Syncfusion.Windows.Forms.Diagram.Label()
+
             label.Text = "Decision"
+
             label.FontStyle.Family = "Arial"
+
             label.FontColorStyle.Color = Color.White
+
             decision.Labels.Add(label)
 
+
+
             'Position the decision node
+
             decision.PinPoint = New PointF(250, 250)
+
             'Add decision node to the model
+
             diagram.Model.AppendChild(decision)
 
+
+
             'Create an orthogonal connector
+
             Dim link As New OrthogonalConnector(process.PinPoint, decision.PinPoint)
 
+
+
             'Style the link
+
             link.LineStyle.LineColor = Color.RosyBrown
+
             link.LineStyle.LineWidth = 2.0F
 
+
+
             'Head decorator style
+
             link.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow
+
             link.HeadDecorator.Size = New SizeF(8, 8)
+
             link.HeadDecorator.FillStyle.Color = Color.RosyBrown
+
             link.HeadDecorator.LineStyle.LineColor = Color.RosyBrown
 
+
+
             'Connect a tail node to a head node
+
             process.CentralPort.TryConnect(link.TailEndPoint) 'process is tail node
+
             decision.CentralPort.TryConnect(link.HeadEndPoint) 'decision is head node
 
+
+
             'Add a link to the model
+
             diagram.Model.AppendChild(link)
 
+
 {% endhighlight %}
-{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img10.png)
@@ -514,54 +758,91 @@ To create a PaletteGroupBar control using code:
 
 
 
-{% tabs %}
 {% highlight c# %}
 
             //Imports the Diagram control’s namespace
-            using Syncfusion.Windows.Forms.Diagram.Controls;
+
+            using Syncfusion.Windows.Forms.Diagram.Controls;            
+
+
 
             //Creates a PaletteGroupBar instance
+
             PaletteGroupBar paletteBar = new PaletteGroupBar();
+
             paletteBar.Dock = DockStyle.Fill;
+
             paletteBar.Font = new Font("Arial", 9);
+
             paletteBar.BorderStyle = BorderStyle.None;
 
-            //Apply visual styles
+
+
+            //Apply visual styles 
+
             paletteBar.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007;
+
             paletteBar.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left;
 
+
+
             //Load palettes to paletteBar
+
             paletteBar.LoadPalette("..//..//Basic Shapes.edp");
-            paletteBar.LoadPalette("..//..//Flowchart Symbols.edp");
+
+            paletteBar.LoadPalette("..//..//Flowchart Symbols.edp");            
+
+
 
             //Add paletteBar to the form
+
             this.Controls.Add(paletteBar);
 
 {% endhighlight %}
+
+
+
 {% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
+
             Imports Syncfusion.Windows.Forms.Diagram.Controls
 
+
+
             'Creates a PaletteGroupBar instance
+
             Dim paletteBar As New PaletteGroupBar()
+
             paletteBar.Dock = DockStyle.Fill
+
             paletteBar.Font = New Font("Arial", 9)
+
             paletteBar.BorderStyle = BorderStyle.None
 
+
+
             'Apply visual styles
+
             paletteBar.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
+
             paletteBar.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
 
+
+
             'Load palettes to paletteBar
+
             paletteBar.LoadPalette("..//..//Basic Shapes.edp")
+
             paletteBar.LoadPalette("..//..//Flowchart Symbols.edp")
 
+
+
             'Add paletteBar to the form
+
             Me.Controls.Add(paletteBar)
 
 {% endhighlight %}
-{% endtabs %}
 
 
 
@@ -612,50 +893,84 @@ To create a PaletteGroupView control using code:
 3. Create a PaletteGroupView control using the following code.
 
 
-{% tabs %}
+
 {% highlight c# %}
 
             //Imports the Diagram control’s namespace
-            using Syncfusion.Windows.Forms.Diagram.Controls;
+
+            using Syncfusion.Windows.Forms.Diagram.Controls;            
+
+
 
             //Creates a PaletteGroupView instance
+
             PaletteGroupView paletteView = new PaletteGroupView();
 
+
+
             //paletteView settings
+
             paletteView.Dock = DockStyle.Fill;
+
             paletteView.FlatLook = true;
+
             paletteView.BackColor = Color.White;
+
             paletteView.Font = new System.Drawing.Font("Arial", 9);
 
+
+
             //Load palette to paletteView
+
             paletteView.LoadPalette("..//..//Basic Shapes.edp");
 
+
+
             //Add the paletteView to the form
+
             this.Controls.Add(paletteView);
 
 {% endhighlight %}
+
 {% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
+
             Imports Syncfusion.Windows.Forms.Diagram.Controls
 
+
+
             'Creates a PaletteGroupView instance
+
             Dim paletteView As New PaletteGroupView()
 
+
+
             'paletteView settings
+
             paletteView.Dock = DockStyle.Fill
+
             paletteView.FlatLook = True
+
             paletteView.BackColor = Color.White
+
             paletteView.Font = New System.Drawing.Font("Arial", 9)
 
+
+
             'Load palette to paletteView
+
             paletteView.LoadPalette("..//..//Basic Shapes.edp")
 
+
+
             'Add the paletteView to the form
+
             Me.Controls.Add(paletteView)
 
+
 {% endhighlight %}
-{% endtabs %}
+
 
 ![](Getting-Started_images/Getting-Started_img16.png)
 
@@ -704,40 +1019,66 @@ To create an Overview control using code:
 3. Create an Overview control using the following code.
 
 
-{% tabs %}
+
 {% highlight c# %}
 
             //Imports the Diagram control’s namespace
-            using Syncfusion.Windows.Forms.Diagram.Controls;
+
+            using Syncfusion.Windows.Forms.Diagram.Controls;            
+
+
 
             //Creates an OverviewControl instance
+
             OverviewControl overviewControl = new OverviewControl();
+
             overviewControl.Dock = DockStyle.Left;
 
+
+
             //Set the diagram reference to overviewControl
+
             overviewControl.Diagram = diagram1;
 
+
+
             //Add overviewControl to the form
+
             this.Controls.Add(overviewControl);
 
 {% endhighlight %}
+
+
+
 {% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
+
             Imports Syncfusion.Windows.Forms.Diagram.Controls
 
+
+
             'Creates an OverviewControl instance
+
             Dim overviewControl As New OverviewControl()
+
             overviewControl.Dock = DockStyle.Left
 
+
+
             'Set the diagram reference to overviewControl
+
             overviewControl.Diagram = Diagram1
-            
+
+
+
             'Add overviewControl to the form
+
             Me.Controls.Add(overviewControl)
 
+
 {% endhighlight %}
-{% endtabs %}
+
 
 ![](Getting-Started_images/Getting-Started_img19.png)
 
@@ -786,42 +1127,70 @@ To create a PropertyEditor control using code:
 3. Create a PropertyEditor control using the following code.
 
 
-{% tabs %}
+
 {% highlight c# %}
 
             //Imports the Diagram control’s namespace
-            using Syncfusion.Windows.Forms.Diagram.Controls;      
+
+            using Syncfusion.Windows.Forms.Diagram.Controls;            
+
+
 
             //Creates a PropertyEditor instance
+
             PropertyEditor propertyEditor = new PropertyEditor();
+
             propertyEditor.Dock = DockStyle.Left;
+
             propertyEditor.ShowCombo = true;
 
+
+
             //Set the diagram reference to propertyEditor
+
             propertyEditor.Diagram = diagram1;
 
+
+
             //Add propertyEditor to the form
+
             this.Controls.Add(propertyEditor);
 
+
 {% endhighlight %}
+
+
 {% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
+
             Imports Syncfusion.Windows.Forms.Diagram.Controls
 
+
+
             'Creates a PropertyEditor instance
+
             Dim propertyEditor As New PropertyEditor()
+
             propertyEditor.Dock = DockStyle.Left
+
             propertyEditor.ShowCombo = True
 
+
+
             'Set the diagram reference to propertyEditor
+
             propertyEditor.Diagram = Diagram1
 
+
+
             'Add propertyEditor to the form
+
             Me.Controls.Add(propertyEditor)
 
+
 {% endhighlight %}
-{% endtabs %}
+
 
 ![](Getting-Started_images/Getting-Started_img22.png)
 
@@ -870,40 +1239,64 @@ To create a DocumentExplorer control using code:
 3. Create a DocumentExplorer control using the following code.
 
 
-{% tabs %}
+
 {% highlight c# %}
 
             //Imports the Diagram control’s namespace
-            using Syncfusion.Windows.Forms.Diagram.Controls;
+
+            using Syncfusion.Windows.Forms.Diagram.Controls;            
+
+
 
             //Creates a DocumentExplorer instance
-            DocumentExplorer documentExplorer = new DocumentExplorer();           
+
+            DocumentExplorer documentExplorer = new DocumentExplorer();            
+
             documentExplorer.Dock = DockStyle.Left;
 
+
+
             //Attach a diagram model to documentExplorer
+
             documentExplorer.AttachModel(diagram1.Model);
 
+
+
             //Add documentExplorer to the form
+
             this.Controls.Add(documentExplorer);
-            
+
 {% endhighlight %}
+
+
+
 {% highlight vbnet %}
 
             'Imports the Diagram control’s namespace
+
             Imports Syncfusion.Windows.Forms.Diagram.Controls
 
+
+
             'Creates a DocumentExplorer instance
+
             Dim documentExplorer As New DocumentExplorer()
+
             documentExplorer.Dock = DockStyle.Left
 
+
+
             'Attach a diagram model to documentExplorer
+
             documentExplorer.AttachModel(Diagram1.Model)
 
+
+
             'Add documentExplorer to the form
+
             Me.Controls.Add(documentExplorer)
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img25.png)
 
@@ -958,19 +1351,26 @@ Follow the below steps in order to open an existing diagram document
 3.  Add the below code snippet in your button click event.
 
 
-{% tabs %}
+
 {% highlight c# %}
 
-    // Checking whether "OK" button is clicked in OpenFileDialog
-    if (this.openFileDialog1.ShowDialog(this) == DialogResult.OK)
-    {
-        string FileName = this.openFileDialog1.FileName;
-        this.diagram1.LoadBinary(FileName);
-        this.diagram1.Refresh();
-    }
+
+
+// Checking whether "OK" button is clicked in OpenFileDialog
+
+if (this.openFileDialog1.ShowDialog(this) == DialogResult.OK)
+
+{
+
+    string FileName = this.openFileDialog1.FileName;
+
+    this.diagram1.LoadBinary(FileName);
+
+    this.diagram1.Refresh();
+
+}
 
 {% endhighlight %}
-{% endtabs %}
 
 The diagram1.LoadBinary() method loads the selected diagram file into diagram document.
 
@@ -992,18 +1392,24 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
 
 
 
-{% tabs %}
-{% highlight c# %}
+   ~~~ cs
+
+
 
 		// Checking whether "OK" button is clicked in SaveFileDialog
+
 		if (this.saveFileDialog1.ShowDialog(this) == DialogResult.OK)
+
 		{
+
 			this.FileName = this.saveFileDialog1.FileName;
+
 			this.diagram1.SaveBinary(this.FileName);
+
 		}
 
-{% endhighlight %}
-{% endtabs %}
+   ~~~
+   {:.prettyprint }
 
    The diagram1.SaveBinary() method saves the diagram file in the given filename.
 
@@ -1027,23 +1433,32 @@ Following are the steps to print a diagram document:
 
 
 
-{% tabs %}
-{% highlight c# %}
+   ~~~ cs
+
+
 
 		if (diagram1 == null || diagram1.Model == null)
+
 			return;
-            
+
 		using (PageSetupDialog dlgPageSetup = new
+
 				PageSetupDialog(diagram1.View))
+
 		{
+
 			if (dlgPageSetup.ShowDialog() == DialogResult.OK)
+
 			{
+
 				diagram1.UpdateView();
+
 			}
+
 		}
 
-{% endhighlight %}
-{% endtabs %}
+   ~~~
+   {:.prettyprint }
 
    ![](Getting-Started_images/Getting-Started_img28.jpeg)
 
@@ -1056,23 +1471,34 @@ Following are the steps to print a diagram document:
 
 
 
-{% tabs %}
-{% highlight c# %}
+   ~~~ cs
+
+
 
 		if (diagram1 != null && diagram1.Model != null)
+
 		{
+
 			PageBorderDialog borderDialog = new PageBorderDialog();
+
 			borderDialog.PageBorderStyle = diagram1.View.PageBorderStyle; // It will show existing border set up
+
 			if (borderDialog.ShowDialog() == DialogResult.OK)
+
 			{
+
 				diagram1.View.PageBorderStyle = borderDialog.PageBorderStyle; // It will update the modified set up.
+
 				diagram1.View.RefreshPageSettings();
+
 				diagram1.UpdateView();
+
 			}
+
 		}
-        
-{% endhighlight %}
-{% endtabs %}
+
+   ~~~
+   {:.prettyprint }
 
    ![](Getting-Started_images/Getting-Started_img29.jpeg)
 
@@ -1086,24 +1512,36 @@ Following are the steps to print a diagram document:
 
 
 
-{% tabs %}
-{% highlight c# %}
+   ~~~ cs
+
+
 
 			if (diagram1 != null && diagram1.Model != null)
+
 			{
+
 				HeaderFooterDialog dlgHF = new HeaderFooterDialog();
+
 				dlgHF.Header = diagram1.Model.HeaderFooterData.Header;
+
 				dlgHF.Footer = diagram1.Model.HeaderFooterData.Footer;
+
 				dlgHF.MeasurementUnits = diagram1.Model.MeasurementUnits;
+
 				if (dlgHF.ShowDialog() == DialogResult.OK)
+
 				{
+
 					diagram1.Model.HeaderFooterData.Header = dlgHF.Header;
+
 					diagram1.Model.HeaderFooterData.Footer = dlgHF.Footer;
+
 				}
+
 			}
-            
-{% endhighlight %}
-{% endtabs %}
+
+   ~~~
+   {:.prettyprint }
 
 
    ![](Getting-Started_images/Getting-Started_img30.jpeg)
@@ -1121,23 +1559,38 @@ Following are the steps to print a diagram document:
 
 
 
-{% tabs %}
-{% highlight c# %}
+   ~~~ cs
+
+
 
 		if (diagram1 != null)
+
 		{
+
 			PrintDocument printDoc = diagram1.CreatePrintDocument();
+
 			PrintPreviewDialog printPreviewDlg = new PrintPreviewDialog();
+
 			printPreviewDlg.StartPosition = FormStartPosition.CenterScreen;
+
+
+
 			printDoc.PrinterSettings.FromPage = 0;
+
 			printDoc.PrinterSettings.ToPage = 0;
+
 			printDoc.PrinterSettings.PrintRange = PrintRange.AllPages;
+
+
+
 			printPreviewDlg.Document = printDoc;
+
 			printPreviewDlg.ShowDialog(this);
+
 		}
 
-{% endhighlight %}
-{% endtabs %}
+   ~~~
+   {:.prettyprint }
 
    ![](Getting-Started_images/Getting-Started_img31.jpeg)
 
@@ -1154,24 +1607,39 @@ Following are the steps to print a diagram document:
 
 
 
-{% tabs %}
 {% highlight c# %}
 
-    if (diagram1 != null)
+
+
+if (diagram1 != null)
+
+{
+
+    PrintDocument printDoc = diagram1.CreatePrintDocument();
+
+    PrintDialog printDlg = new PrintDialog();
+
+    printDlg.Document = printDoc;
+
+
+
+    printDlg.AllowSomePages = true;
+
+
+
+    if (printDlg.ShowDialog(this) == DialogResult.OK)
+
     {
-        PrintDocument printDoc = diagram1.CreatePrintDocument();
-        PrintDialog printDlg = new PrintDialog();
-        printDlg.Document = printDoc;
-        printDlg.AllowSomePages = true;
-        if (printDlg.ShowDialog(this) == DialogResult.OK)
-        {
-            printDoc.PrinterSettings = printDlg.PrinterSettings;
-            printDoc.Print();
-        }
+
+        printDoc.PrinterSettings = printDlg.PrinterSettings;
+
+        printDoc.Print();
+
     }
 
+}
+
 {% endhighlight %}
-{% endtabs %}
 
 Diagram Builder Tools
 
@@ -1725,22 +2193,30 @@ Gets the Preceding Tool.</td></tr>
 
 
 
-{% tabs %}
+
 {% highlight c# %}
 
-    diagram1.Controller.ActivateTool("LineLinkTool");
-    
-    Tool t = diagram1.Controller.ActiveTool;
-    
-    if (t is Syncfusion.Windows.Forms.Diagram.LineConnectorTool)
-    {
-        LineConnectorTool l = (LineConnectorTool)t;
-        l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-        l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-    }
+
+
+diagram1.Controller.ActivateTool("LineLinkTool");
+
+
+
+Tool t = diagram1.Controller.ActiveTool;
+
+if (t is Syncfusion.Windows.Forms.Diagram.LineConnectorTool)
+
+{
+
+    LineConnectorTool l = (LineConnectorTool)t;
+
+    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
+    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
+}
 
 {% endhighlight %}
-{% endtabs %}
 
 #### Orthogonal Connector Tool
 
@@ -1776,22 +2252,27 @@ Gets the Preceding Tool.</td></tr>
 </table>
 
 
-{% tabs %}
 {% highlight c# %}
 
-    diagram1.Controller.ActivateTool("OrthogonalLinkTool");
-    
-    Tool t = diagram1.Controller.ActiveTool;
-    
-    if (t is Syncfusion.Windows.Forms.Diagram.OrthogonalConnectorTool)
-    {
-        OrthogonalConnectorTool l = (OrthogonalConnectorTool)t;
-        l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-        l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-    }
-    
+
+
+diagram1.Controller.ActivateTool("OrthogonalLinkTool");
+
+Tool t = diagram1.Controller.ActiveTool;
+
+if (t is Syncfusion.Windows.Forms.Diagram.OrthogonalConnectorTool)
+
+{
+
+    OrthogonalConnectorTool l = (OrthogonalConnectorTool)t;
+
+    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
+    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
+}
+
 {% endhighlight %}
-{% endtabs %}
 
 #### DirectedLineConnector Tool
 
@@ -1826,22 +2307,27 @@ Gets the Preceding Tool.</td></tr>
 </table>
 
 
-{% tabs %}
 {% highlight c# %}
 
-    diagram1.Controller.ActivateTool("DirectedLineLinkTool");
-    
-    Tool t = diagram1.Controller.ActiveTool;
-    
-    if (t is Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool)
-    {
-        DirectedLineConnectorTool l = (DirectedLineConnectorTool)t;
-        l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-        l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-    }
+
+
+diagram1.Controller.ActivateTool("DirectedLineLinkTool");
+
+Tool t = diagram1.Controller.ActiveTool;
+
+if (t is Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool)
+
+{
+
+    DirectedLineConnectorTool l = (DirectedLineConnectorTool)t;
+
+    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
+    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
+}
 
 {% endhighlight %}
-{% endtabs %}
 
 #### PolyLineConnector Tool
 
@@ -1878,22 +2364,28 @@ Gets the Preceding Tool.</td></tr>
 
 
 
-{% tabs %}
+
 {% highlight c# %}
 
-    diagram1.Controller.ActivateTool("PolyLineLinkTool");
-    
-    Tool t = diagram1.Controller.ActiveTool;
-    
-    if (t is Syncfusion.Windows.Forms.Diagram.PolyLineConnectorTool)
-    {
-        PolyLineConnectorTool l = (PolyLineConnectorTool)t;
-        l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-        l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-    }
+
+
+diagram1.Controller.ActivateTool("PolyLineLinkTool");
+
+Tool t = diagram1.Controller.ActiveTool;
+
+if (t is Syncfusion.Windows.Forms.Diagram.PolyLineConnectorTool)
+
+{
+
+    PolyLineConnectorTool l = (PolyLineConnectorTool)t;
+
+    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
+    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+
+}
 
 {% endhighlight %}
-{% endtabs %}
 
 Creating a Diagram using Diagram Builder
 
@@ -2066,114 +2558,158 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-{% tabs %}
-{% highlight c# %}
+   ~~~ cs
 
 		//Imports the Diagram control’s namespaces
-        
-		using Syncfusion.Windows.Forms.Diagram.Controls;
-		using Syncfusion.Windows.Forms.Diagram;
+
+					using Syncfusion.Windows.Forms.Diagram.Controls;
+
+					using Syncfusion.Windows.Forms.Diagram;
+
+
 
 		//Create an instance
-		Diagram diagram = new Diagram();
+
+					Diagram diagram = new Diagram();
+
+
 
 		//Enable scroll bars            
-		diagram.HScroll = true;
-		diagram.VScroll = true;
+
+					diagram.HScroll = true;
+
+					diagram.VScroll = true;
+
+
 
 		//Sizing the diagram
-		diagram.Size = new Size(400, 400);
+
+					diagram.Size = new Size(400, 400);
 
 		//Positioning the diagram
-		diagram.Location = new Point(20, 5);
 
-{% endhighlight %}
-{% endtabs %}
+					diagram.Location = new Point(20, 5);
+
+   ~~~
+   {:.prettyprint }
 
    #### Establishing Database Connectivity
 
 2. You can populate Nodes and Connectors in diagram automatically based on content from database by using binding APIs. To achieve this, you need a table in a database that have 2 columns, one representing ‘Id’ to uniquely identify objects, and one ‘ParentId’ representing relationship with the parent object. The following code example explains how to bind diagram with data from database by initializing the binding properties.
 
-{% tabs %}
-{% highlight c# %}
+   ~~~ cs
 
         //Windows Form Load
 
         private void Form1_Load(object sender, EventArgs e)
+
         {
+
             diagram1.BeginUpdate();
+
             this.diagram1.Model.BoundaryConstraintsEnabled = false;
-            
+
             //Binding the Node column Name
+
             diagram1.Binding.Id = "Name";
-            
+
             //Binding the Parents Nodes column Name
+
             diagram1.Binding.ParentId = "ParentName";
-            
+
             //Binding the Label
+
             diagram1.Binding.Label.Add("Name");
 
             //Binding connector type
+
             diagram1.Binding.DefaultConnector = new OrgLineConnector(new PointF(10, 10), new PointF(20, 20));
 
             //Binding Node type
+
             diagram1.Binding.DefaultNode = DefaultNode();
 
             // Binding the DataTable to the DataSource
+
             diagram1.Binding.DataSource = DataSource();
 
+
+
             //Applying Layout to the diagram
+
             LayoutNode();
 
+
+
             DiagramAppearance();
+
             diagram1.EndUpdate();
+
         }
 
 
-{% endhighlight %}
-{% endtabs %}
+   ~~~
+   {:.prettyprint }
 
 
 3. Use the following code example to establish the connection with the Database and retrieve the data in the form of DataTable.
 
+   ~~~ vbnet
 
-{% tabs %}
-{% highlight vbnet %}
+
 
 		private DataTable DataSource()
+
         {
+
             DataTable dataTable = new DataTable();
-            
+
             //Querying from DB
+
             SqlConnection sqlConnection = new SqlConnection(connectionString);
+
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(new                SqlCommand("select * from Employees", sqlConnection));
+
             sqlConnection.Open();
+
             sqlDataAdapter.Fill(dataTable);
+
             sqlConnection.Close();
+
             return dataTable;
+
         }
 
-{% endhighlight %}
-{% endtabs %}
+
+   ~~~
+   {:.prettyprint }
 
 
 The following code example explains how to apply the layout for the data retrieved from the Database.
 
 
-{% tabs %}
+
 {% highlight c# %}
 
-    private void LayoutNode()
-    {
-        HierarchicLayoutManager hierarchicalLayout = new HierarchicLayoutManager(this.diagram1.Model, 0, 70, 40);
-        hierarchicalLayout.LeftMargin = 50;
-        hierarchicalLayout.TopMargin = 50;
-        this.diagram1.LayoutManager = hierarchicalLayout;
-        this.diagram1.LayoutManager.UpdateLayout(null);
-    }
+private void LayoutNode()
+
+        {
+
+            HierarchicLayoutManager hierarchicalLayout = new HierarchicLayoutManager(this.diagram1.Model, 0, 70, 40);
+
+            hierarchicalLayout.LeftMargin = 50;
+
+            hierarchicalLayout.TopMargin = 50;
+
+            this.diagram1.LayoutManager = hierarchicalLayout;
+
+            this.diagram1.LayoutManager.UpdateLayout(null);
+
+        }
+
 
 {% endhighlight %}
-{% endtabs %}
+
 
 The following screenshot displays the organizational flow of diagram.
 
