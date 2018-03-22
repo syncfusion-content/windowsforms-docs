@@ -7,13 +7,9 @@ control: Grid
 documentation: ug
 ---
 
-# How to Select All Text in a Grid After Clicking a Cell
-
-### Introduction
+# How to select all text in a Grid after clicking a cell
 
 ActivateCurrentCellBehavior property controls the activation behavior as a cell becomes current by being clicked or through the cursor keys. If you want the cell text to be fully selected when a cell becomes the current cell, then use the following property.
-
-The following code illustrates how to set Cell Activation behavior to SelectAll in GridControl:
 
 {% tabs %}
 {% highlight c# %}
@@ -30,8 +26,6 @@ Me.Grid.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll
 
 {% endhighlight %}
 {% endtabs %}
-
-The following code illustrates how to set Cell Activation behavior to SelectAll in GridGrouping control:
 
 {% tabs %}
 {% highlight c# %}
