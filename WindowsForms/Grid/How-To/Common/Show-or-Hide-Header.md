@@ -23,6 +23,12 @@ The following code illustrates how to show column header in GridControl:
 gridControl1.ShowColumnHeaders = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.ShowColumnHeaders = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to show column header in GridDataBoundGrid: 
@@ -33,6 +39,12 @@ The following code illustrates how to show column header in GridDataBoundGrid:
 gridDataBoundGrid.ShowColumnHeaders = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.ShowColumnHeaders = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to show column header in GridGrouping control: 
@@ -41,6 +53,12 @@ The following code illustrates how to show column header in GridGrouping control
 {% highlight c# %}
 
 gridGroupingControl1.ShowColumnHeaders = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridGroupingControl1.ShowColumnHeaders = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -57,6 +75,12 @@ The following code illustrates how to show row header in GridControl:
 gridControl1.ShowRowHeaders = true;
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+gridControl1.ShowRowHeaders = True
+
+{% endhighlight %}
 {% endtabs %}
 
 The following code illustrates how to show row header in GridDataBoundGrid: 
@@ -65,6 +89,12 @@ The following code illustrates how to show row header in GridDataBoundGrid:
 {% highlight c# %}
 
 gridDataBoundGrid.ShowRowHeaders = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+gridDataBoundGrid.ShowRowHeaders = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -76,6 +106,12 @@ The following code illustrates how to show the row header in GridGrouping contro
 {% highlight c# %} 
 
 gridGroupingControl1.ShowRowHeaders = true;
+
+{% endhighlight %}
+
+{% highlight vb %} 
+
+gridGroupingControl1.ShowRowHeaders = True
 
 {% endhighlight %}
 {% endtabs %}
