@@ -14,7 +14,7 @@ Line bridging provides the visual effect such that the links jump over other lin
 
 
 
-![](Customizing-Nodes_images/Customizing-Nodes_img1.jpeg)
+![](Line-Bridging_images/Line-Bridging_img1.jpeg)
 
 
 

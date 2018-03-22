@@ -157,20 +157,20 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 
 
 
-![](Advanced-Features_images/Advanced-Features_img1.jpeg)
+![](Node-Selections_images/Node-Selections_img1.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img2.jpeg)
+![](Node-Selections_images/Node-Selections_img2.jpeg)
 
 
 
-![](Advanced-Features_images/Advanced-Features_img3.jpeg)
+![](Node-Selections_images/Node-Selections_img3.jpeg)
 
 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img4.jpeg)
+![](Node-Selections_images/Node-Selections_img4.jpeg)

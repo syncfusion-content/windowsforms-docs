@@ -370,4 +370,4 @@ You can create label as illustrated in the following code example:
 
 
 
-![](Customizing-Nodes_images/Customizing-Nodes_img5.png)
+![](Label_images/Label_img1.png)

@@ -51,13 +51,13 @@ The following code shows how to set the orientation of the label to horizontal:
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/amsathm/Desktop/Horizontal orientation.png](Customizing-Nodes_images/Customizing-Nodes_img6.png)
+![](Label-Orientation_images/Label-Orientation_img1.png)
 
 
 
 
 
-![C:/Users/amsathm/Desktop/Automatic Orientation.png](Customizing-Nodes_images/Customizing-Nodes_img7.png)
+![](Label-Orientation_images/Label-Orientation_img2.png)
 
 
 
