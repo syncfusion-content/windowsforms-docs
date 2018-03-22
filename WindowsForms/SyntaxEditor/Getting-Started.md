@@ -191,7 +191,7 @@ The EditControl has a built-in syntax highlighting support for the following lan
   * PowerShell
   * Text
 
-The following code example illustrates the c# configuration settings in Edit Control.
+The following code example illustrates the C# configuration settings in Edit Control.
 
 {% tabs %}
 
