@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Change the Look of a Cell's Border
-
-## Introduction
+# How to change the look of a cell's border
 
 Use the Borders property of [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) to change the style and the appearance of the grid cells border. Each border side of the cell can be configured individually with GridBorder value. There is a BorderMargins property to control margins on all four sides. 
 
