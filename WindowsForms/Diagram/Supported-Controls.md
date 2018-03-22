@@ -655,9 +655,164 @@ if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
 
 ![](Supported-Controls_images/Supported-Controls_img3.jpeg)
 
+### Adding Shapes by Clicking the Diagram Page
 
 
+Essential Diagram enables you to draw the selected node by clicking the Diagram page instead of dragging from the Symbol Palette. 
 
+Property Table
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
+<tr>
+<td>
+Diagram</td><td>
+Reference to enable drawing the selected node by clicking on the diagram page.</td><td>
+NA </td><td>
+Diagram</td><td>
+NA. </td></tr>
+</table>
+
+
+Enabling Adding Shapes by Clicking Support
+
+You can enable drawing shapes by clicking the diagram page using the _Diagram_ property. 
+
+
+{% tabs %}
+{% highlight c# %}
+
+    //Palette group view
+    paletteGroupView1.Diagram = diagram1;
+    // Platte group bar
+    paletteGroupBar1.Diagram = diagram1;
+	
+{% endhighlight %}
+{% highlight vbnet %}
+
+	'Palette group view	
+	paletteGroupView1.Diagram = diagram1;	
+	'Palette group bar	
+	paletteGroupBar1.Diagram = diagram1;
+		
+{% endhighlight %}
+{% endtabs %}
+
+![](Supported-Controls_images/Adding-Shapes_img.png)
+
+
+N> Click the Diagram page to add the selected node. Click and drag to get the required size. 
+
+Sample Link
+
+To view a sample:
+
+1. Open the Syncfusion Dashboard.
+2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
+3. Navigate to Diagram Samples > Product Showcase > Diagram Builder.
+
+### Preview for Symbol Palette Item
+
+Essential Diagram for Windows Forms provides preview support for Symbol Palette. When you drag an item from Symbol Palette to Diagram View, Preview of the dragged item will be displayed. You can enable or disable the preview support. 
+
+### Use Case Scenario
+
+This feature displays a preview of the item you drag from Symbol Palette, thus enables you to identify the item you are dragging from the symbol palette to Diagram view.
+
+Property Table
+
+<table>
+<tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
+<tr>
+<td>
+ShowDragNodeCue</td><td>
+Gets or sets a value indicating whether preview is visible.The default value is true.</td><td>
+NA</td><td>
+Boolean </td><td>
+NA</td></tr>
+<tr>
+<td>
+DragNodeCueEnabled</td><td>
+Gets or sets a value indicating whether preview is enabled.The default value is true.</td><td>
+NA</td><td>
+Boolean</td><td>
+NA</td></tr>
+</table>
+
+
+### Enabling Preview Support
+
+To enable preview for the dragged item from Symbol Palette, set the _DragNodeCueEnabled_ property of _PaletteGroupBar/PaletteGroupView_ to true. To disable preview set this to false. By default this is set to true.  
+
+Following code example illustrates how to enable preview support:  
+
+
+{% tabs %}
+{% highlight c# %}
+
+      //enable dragged node cue
+      paletteGroupBar1.DragNodeCueEnabled = true;
+      paletteGroupView1.DragNodeCueEnabled = true
+      
+      //show dragged node cue
+      paletteGroupBar1.ShowDragNodeCue = true;
+      paletteGroupView1.ShowDragNodeCue = true;
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+      'enable dragged node cue
+      paletteGroupBar1.DragNodeCueEnabled = True	
+      paletteGroupView1.DragNodeCueEnabled = True
+      
+      'show dragged node cue
+      paletteGroupBar1.ShowDragNodeCue = True
+      paletteGroupView1.ShowDragNodeCue = True
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Supported-Controls_images/Symbol-Palette-Items_img1.png)
+
+The following code illustrates how to disable preview support: 
+
+
+{% tabs %}
+{% highlight c# %}
+
+      //hide dragged node cue
+      paletteGroupBar1.ShowDragNodeCue = false;
+      paletteGroupView1.ShowDragNodeCue = false;
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+      //hide dragged node cue
+      paletteGroupBar1.ShowDragNodeCue = False;
+      paletteGroupView1.ShowDragNodeCue = False;
+
+{% endhighlight %}
+{% endtabs %}
+
+Sample Link
+
+To view a sample:
+
+1. Open the Syncfusion Dashboard.
+2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
+3. Navigate to Diagram Samples > Product Showcase > Diagram Builder.
 
 ## Document Explorer
 
@@ -1037,94 +1192,6 @@ this.propertyEditor.Diagram = diagram1;
 ![](Supported-Controls_images/Supported-Controls_img6.jpeg)
 
 
-
-## Diagram Grid
-
-Diagram Grid is drawn with evenly spaced points that provides a visual guidance to the user.  
-
-#### Behavior
-
-Draws a matrix of evenly spaced points in the view, and provides snap to the grid calculations.
-
-#### Class Reference
-
-It is a property of Diagram.View class and its return type is _Syncfusion.Windows.Forms.Diagram.LayoutGrid_.
-
-
-
-_Diagram Grid Properties_
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-Color</td><td>
-Color used for drawing the grid. It accepts System.Color value.</td></tr>
-<tr>
-<td>
-ContainerView</td><td>
-Gets or sets the view that this grid is attached to.</td></tr>
-<tr>
-<td>
-DashOffset</td><td>
-Distance from the start of the line to the dash pattern. It accepts Float value.</td></tr>
-<tr>
-<td>
-DashStyle</td><td>
-Style used for dashed lines. It accepts System.Drawing.Drawing2D.DashStyle value.</td></tr>
-<tr>
-<td>
-GridStyle</td><td>
-Gets or sets the appearance of the grid. It is GridStyle enumerator type value.</td></tr>
-<tr>
-<td>
-HorizontalSpacing</td><td>
-Determines the horizontal distance between grid points. It accepts float value.</td></tr>
-<tr>
-<td>
-MinPixelSpacing</td><td>
-Indicates minimum spacing between grid points in device units. It accepts Float value.</td></tr>
-<tr>
-<td>
-SnapToGrid</td><td>
-Adjust the node with nearest grid point. Specifies whether the snap to grid feature is enabled. It accepts Boolean value (true or false).</td></tr>
-<tr>
-<td>
-VerticalSpacing</td><td>
-Determines the vertical distance between grid points. It accepts Float value.</td></tr>
-<tr>
-<td>
-Visible</td><td>
-Specifies whether the grid is visible. It accepts Boolean value (true or false).</td></tr>
-</table>
-
-
-
-
-{% highlight c# %}
-
-
-
-diagram1.View.Grid.GridStyle = GridStyle.Line;
-
-diagram1.View.Grid.DashStyle=System.Drawing.Drawing2D.DashStyle.Dot;
-
-diagram1.View.Grid.Color = Color.LightGray            
-
-diagram1.View.Grid.VerticalSpacing = 15;
-
-diagram1.View.Grid.HorizontalSpacing = 15;
-
-diagram1.View.Grid.Visible = false;
-
-diagram1.View.Grid.SnapToGrid = true;
-
-{% endhighlight %}
-
-![](Supported-Controls_images/Supported-Controls_img7.jpeg)
 
 
 

@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-# ComboBoxAdv appearance
+# ComboBoxAdv Appearance
 
 This section discusses the below topics. 
 
