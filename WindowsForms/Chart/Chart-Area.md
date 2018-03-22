@@ -20,13 +20,14 @@ By enabling this property, the following are possible.
 GetSeriesBounds() method can be used to get the bounds of the DividedArea when ChartArea.DivideArea is set to true. 
 
 {% tabs %}  
+
 {% highlight c# %}
 
 this.chartControl1.ChartArea.GetSeriesBounds(series);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.ChartArea.GetSeriesBounds(series)
 
@@ -44,7 +45,7 @@ ChartSeries.ConfigItems.PyramidItem.ShowSeriesTitle = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ChartSeries.ConfigItems.PieItem.ShowSeriesTitle = True
 ChartSeries.ConfigItems.FunnelItem.ShowSeriesTitle = True

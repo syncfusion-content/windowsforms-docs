@@ -86,18 +86,15 @@ ToolTip</td><td>
 Specifies the tooltip for this region.</td></tr>
 </table>
 
-
 ChartRegionDoubleClick and ChartRegionMouseDown Events
 
+{% tabs %} 
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //ChartRegionDoubleClick Event
 
 this.chartControl1.ChartRegionDoubleClick += new Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventHandler(this.chartControl1_ChartRegionDoubleClick);
-
-
 
 private void chartControl1_ChartRegionDoubleClick(object sender, ChartRegionMouseEventArgs e)
 
@@ -127,13 +124,9 @@ private void chartControl1_ChartRegionDoubleClick(object sender, ChartRegionMous
 
         }
 
-
-
     }
 
 }
-
-
 
 //Usage of Button property in ChartRegionMouseDown Event
 
@@ -149,14 +142,11 @@ void chartControl1_ChartRegionMouseDown(object sender, ChartRegionMouseEventArgs
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 'ChartRegionDoubleClick Event
 
 AddHandler Me.chartControl1.ChartRegionDoubleClick, AddressOf Me.chartControl1_ChartRegionDoubleClick
-
-
 
 Private Sub chartControl1_ChartRegionDoubleClick(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
 
@@ -176,13 +166,9 @@ Private Sub chartControl1_ChartRegionDoubleClick(ByVal sender As Object, ByVal e
 
         End If
 
-
-
     End If
 
 End Sub
-
-
 
 'Usage of Button property in ChartRegionMouseDown Event
 
@@ -203,8 +189,9 @@ End Sub
 
 ChartControl provides various zooming options for the user while interacting with the Chart. The VisibleRangeChanged event will be raised when the visible range changes during the zooming operation.
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 private static void chartControl1_VisibleRangeChanged(object sender, EventArgs e)
 
@@ -216,7 +203,7 @@ Console.WriteLine("Visible Range Changed event is raised");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub chartControl1_VisibleRangeChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -235,13 +222,13 @@ This event is discussed in detail in this topic: Customizing Label Text.
 
 When a series point is about to be rendered by the chart, it will raise this event and allow event subscribers to change the style used. 
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 //Listen to the prepare style event for the series.
 
 series.PrepareStyle += new ChartPrepareStyleInfoHandler(series_PrepareStyle);
-
-
 
 private void series_PrepareStyle(object sender, ChartPrepareStyleInfoEventArgs args)
 
@@ -269,13 +256,11 @@ private void series_PrepareStyle(object sender, ChartPrepareStyleInfoEventArgs a
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Listen to the prepare style event for the series.
 
 AddHandler series.PrepareStyle, AddressOf Me.ChartControlSeries_PrepareStyle
-
-
 
 Private Sub series_PrepareStyle(ByVal sender As Object, ByVal args As ChartPrepareStyleInfoEventArgs)
 
@@ -300,13 +285,13 @@ End Sub
 
 ![](Chart-control-events_images/Chart-control-events_img1.jpeg)
 
-
-
 ## SeriesInCompatible Event
 
 When the Chart has completed updating the series and finds out that series are incompatible, this event will be raised.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 private static void chartControl1_SeriesInCompatible(object sender, EventArgs e)
 
@@ -318,7 +303,7 @@ Console.WriteLine("SeriesInCompatible event is raised");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub chartControl1_SeriesInCompatible(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -333,7 +318,9 @@ End Sub
 
 This event is handled every time, a resizing of chart is caused and when the chart re-renders itself. Listening to this event helps in cases where you render custom images over the chart or position custom controls over the chart.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 private static void chartControl1_LayoutCompleted(object sender, EventArgs e)
 
@@ -345,7 +332,7 @@ Console.WriteLine("Layout Completed event is raised");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub chartControl1_LayoutCompleted(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -374,18 +361,15 @@ This event is discussed in detail in this topic: Chart Legend.
 
 PreChartAreaPaint event is raised before the chart area is painted.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.PreChartAreaPaint += new System.Windows.Forms.PaintEventHandler(this.chartControl1_PreChartAreaPaint);
 
-
-
 private void chartControl1_PreChartAreaPaint(object sender, PaintEventArgs e)
-
 {
-
        this.chartControl1.BackColor = Color.Yellow;       
-
 }
 
 {% endhighlight %}

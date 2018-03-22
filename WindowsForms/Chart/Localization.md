@@ -36,7 +36,6 @@ NA</td><td>
 NA</td></tr>
 </table>
 
-
 Adding Localization to an application
 
 1. Create your localization resource file (.resx) in the  bin > Debug folder with the following naming convention:
@@ -46,21 +45,13 @@ Adding Localization to an application
 
    ![](Localization_images/Localization_img2.png)
 
-
-
-
 2. Enter the UI name in the Name column and the equivalent term you want in the Value column of the resource file.
 
-
-
    ![D:/Feature2011_VOL4/English.PNG](Localization_images/Localization_img3.png)
-
-
 
     N> It is mandatory to specify equivalent terms for all static element to localize the chart.
 
 3. Specify the culture using the Localize property as given in the following code:
-
 
 {% highlight c# %}
 
@@ -68,7 +59,7 @@ this.chartControl1.Localize=”de-DE”;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.Localize=”de-DE”
 

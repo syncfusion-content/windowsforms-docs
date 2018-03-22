@@ -37,24 +37,19 @@ The following sample code illustrates how a custom DataSet can be bound to a Cha
 
 ![](Chart-Data_images/Chart-Data_img2.jpeg)
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartDataBindModel model = null;
 
 ChartDataBindAxisLabelModel xAxisLabelModel = null;
 
-
-
-// A custom DataSet bound to the Demographics table
+// A custom DataSet bound to the Demographics table.
 
 private ChartAccessDataBind.DataSet1 dataSet11;
 
-
-
 this.oleDbDataAdapter1.Fill(this.dataSet11.Demographics);
-
-
 
 model = new ChartDataBindModel(this.dataSet11,"Demographics");
 
@@ -66,25 +61,17 @@ model.XName = "ID";
 
 model.YNames = new string[]{"Population"};
 
-
-
 ChartSeries series = new ChartSeries ("Data Bound Series");
 
 series.Text = series.Name;
 
 series.SeriesModelImpl = model;
 
-
-
-series.Style.TextColor = Color.White ;
+series.Style.TextColor = Color.White;
 
 series.Style.Font.Bold = true;
 
-
-
 this.chartControl1.Series.Add(series);
-
-
 
 this.xAxisLabelModel = new ChartDataBindAxisLabelModel(this.dataSet11,"Demographics");
 
@@ -92,31 +79,23 @@ this.xAxisLabelModel = new ChartDataBindAxisLabelModel(this.dataSet11,"Demograph
 
 this.xAxisLabelModel.LabelName = "City";
 
-
-
 this.chartControl1.PrimaryXAxis.LabelsImpl = this.xAxisLabelModel;
 
 this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim model As ChartDataBindModel = Nothing
 
 Dim xAxisLabelModel As ChartDataBindAxisLabelModel = Nothing
 
-
-
 ' A custom DataSet bound to the Demographics table
 
 Private dataSet11 As ChartAccessDataBind.DataSet1
 
-
-
 Me.oleDbDataAdapter1.Fill(Me.dataSet11.Demographics)
-
-
 
 model = New ChartDataBindModel(Me.dataSet11,"Demographics")
 
@@ -128,33 +107,23 @@ model.XName = "ID"
 
 model.YNames = New String(){"Population"}
 
-
-
 Dim series As New ChartSeries("Data Bound Series")
 
 series.Text = series.Name
 
 series.SeriesModelImpl = model
 
-
-
 series.Style.TextColor = Color.White
 
 series.Style.Font.Bold = True
 
-
-
 Me.chartControl1.Series.Add(series)
-
-
 
 Me.xAxisLabelModel = New ChartDataBindAxisLabelModel(Me.dataSet11,"Demographics")
 
 ' The columns that has the label values for the corresponding X values.
 
 Me.xAxisLabelModel.LabelName = "City"
-
-
 
 Me.chartControl1.PrimaryXAxis.LabelsImpl = Me.xAxisLabelModel
 
@@ -165,100 +134,67 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom
 
 ![](Chart-Data_images/Chart-Data_img3.jpeg)
 
-
-
 ## Implementing Custom Data Binding Interfaces
 
 Note that the ChartDataBindModel type in the previous topic implements a simple interface called IChartSeriesModel. This interface requires the implementation of one property, two methods and one optional event. So, you can easily provide a custom implementation of this interface instead of using the ChartDataBindModel.
 
 Shown below is some sample code that implements IChartSeriesModel interface for use with the chart.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Custom Model
 
 public class ArrayModel : IChartSeriesModel
-
 {
-
    private double[] data;
 
-
-
    public ArrayModel(double[] data)
-
    {
-
       this.data = data;
-
    }        
-
-
 
    // Returns the number of points in this series.
 
    public int Count
-
    { 
-
       get
-
       {
-
            return this.data.GetLength(0);
-
       }
-
    }
-
-
 
    // Returns the Y value of the series at the specified point index.
 
    public double[] GetY(int xIndex)
-
    {
-
       return new double[]{data[xIndex]};
-
    }
-
-
 
    // Returns the X value of the series at the specified point index.
 
    public double GetX(int xIndex)
-
    {
-
       return xIndex;
-
    }
-
-
 
    // Indicates whether a specified point index has a value which can be plotted.
 
    public bool GetEmpty(int index)
-
    {
-
       return false;
-
    }
-
-
 
 // Event that should be raised by any implementation of this interface if data that it holds changes. This will cause the chart to be updated accordingly. We don't raise this event in our implementation as our data will be static.  
 
    public event ListChangedEventHandler Changed;
 
-}
-
+}   
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Custom Model
 
@@ -266,15 +202,11 @@ Public Class ArrayModel Implements IChartSeriesModel
 
    Private data() As Double
 
-
-
    Public  Sub New(ByVal data() As Double)
 
          Me.data = data
 
    End Sub
-
-
 
    ' Returns the number of points in this series.
 
@@ -288,8 +220,6 @@ Public Class ArrayModel Implements IChartSeriesModel
 
    End Property
 
-
-
    ' Returns the Y value of the series at the specified point index.
 
    Public Double() GetY(Integer xIndex)
@@ -297,8 +227,6 @@ Public Class ArrayModel Implements IChartSeriesModel
       Return New Double(){data(xIndex)}
 
    End Function
-
-
 
  ' Returns the X value of the series at the specified point index.
 
@@ -308,8 +236,6 @@ Public Class ArrayModel Implements IChartSeriesModel
 
    End Function
 
-
-
    ' Indicates whether a specified point index has a value which can be plotted.
 
    Public Function GetEmpty(ByVal index As Integer) As Boolean
@@ -318,21 +244,20 @@ Public Class ArrayModel Implements IChartSeriesModel
 
    End Function
 
-
-
    ' Event that should be raised by any implementation of this interface if data that it holds changes. This will cause the chart to be updated accordingly. We don't raise this event in our implementation as our data will be static.
 
    Public event ListChangedEventHandler Changed
 
 End Class
 
-
 {% endhighlight %}
 {% endtabs %}
 
 ## Bind the above model to the chart series.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 //Creating series data and binding to the array model
 
@@ -346,7 +271,7 @@ this.chartControl1.Series.Add(series1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Creating series data and binding to the array model
 
@@ -363,8 +288,6 @@ Me.chartControl1.Series.Add(series1)
 
 ![](Chart-Data_images/Chart-Data_img4.jpeg)
 
-
-
 ### Indexed data
 
 Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can instead implement the IChartSeriesIndexedModel interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
@@ -376,91 +299,45 @@ Syncfusion chart provides an option of binding the Chart with IEnumerable, like 
 {% tabs %}  {% highlight c# %}
 
 class PopulationData
-
 {
-
-
-
     private string city;
 
-
-
     public string City
-
     {
-
-
-
         get { return city; }
-
-
-
         set { city = value; }
-
     }
-
-
 
     private double population;
 
-
-
     public double Population
-
     {
-
-
-
         get { return population; }
-
-
-
         set { population = value; }
-
-
-
     }
-
-
 
     public PopulationData(string city, double population)
-
     {
-
         this.city = city;
-
         this.population = population;
-
     }
-
-
-
 }
-
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Class PopulationData
 
-
-
     Private m_city As String
 
-
-
     Public Property City() As String
-
-
 
         Get
 
             Return m_city
 
         End Get
-
-
 
         Set(ByVal value As String)
 
@@ -470,23 +347,15 @@ Class PopulationData
 
     End Property
 
-
-
     Private m_population As Double
 
-
-
     Public Property Population() As Double
-
-
 
         Get
 
             Return m_population
 
         End Get
-
-
 
         Set(ByVal value As Double)
 
@@ -503,7 +372,9 @@ If you have a class like above, you will have a collection of this class instanc
 
 In this example, we are binding with a Non Indexed data, with YNames alone and the chart will not be rendered with x-axis values. We need to assign the x-axis values through ChartDataBindAxisLabelModel class. ChartDataBindAxisLabelModel class provides a facility to bind the axis label values through the data source like ChartDataBindModel. 
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 ArrayList populations = new ArrayList();
 
@@ -517,13 +388,9 @@ populations.Add(new PopulationData("London", 15));
 
 populations.Add(new PopulationData("Los Angels", 11));
 
-
-
 ChartSeries series = new ChartSeries("Populations");
 
 ChartDataBindModel dataSeriesModel = new ChartDataBindModel(populations);
-
-
 
 // If ChartDataBindModel.XName is empty or null, X value is index of point.
 
@@ -531,25 +398,15 @@ ChartDataBindModel dataSeriesModel = new ChartDataBindModel(populations);
 
 dataSeriesModel.YNames = new string[] { "Population" };
 
-
-
-
-
 //Binding the ChartDataBindModel with the Series. This is the best practice for binding with the large amount of data since it will reduce the performance issue of Chart rendering and manipulating data.
 
 series.SeriesModel = dataSeriesModel;
-
-
 
 //Since we have specified YNames only for the DataBind model, it will take the data source is non indexed model and it will ignore the X axis values. We need to assign the X axis values what we need to show on X axis by ChartDataBindAxisLabelModel separately. 
 
 ChartDataBindAxisLabelModel dataLabelsModel = new ChartDataBindAxisLabelModel(populations);
 
-
-
 dataLabelsModel.LabelName = "City";
-
-
 
 chartControl1.Series.Add(series);
 
@@ -557,7 +414,7 @@ chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim populations As New ArrayList()
 
@@ -571,13 +428,9 @@ populations.Add(New PopulationData("London", 15))
 
 populations.Add(New PopulationData("Los Angeles", 11)) 
 
-
-
 Dim series As New ChartSeries("Populations")
 
 Dim dataSeriesModel As New ChartDataBindModel(populations)
-
-
 
 ‘If ChartDataBindModel.XName is empty or null, X value is index of point. 
 
@@ -585,25 +438,15 @@ Dim dataSeriesModel As New ChartDataBindModel(populations)
 
 dataSeriesModel.YNames = New String() {"Population"} 
 
-
-
-
-
 'Binding the ChartDataBindModel with the Series. This is the best practice for binding with the large amount of data since it will reduce the performance issue of Chart rendering and manipulating data. 
 
 series.SeriesModel = dataSeriesModel 
-
-
 
 'Since we have specified YNames only for the DataBind model, it will take the data source is non indexed model and it will ignore the X axis values. We need to assign the X axis values what we need to show on X axis by ChartDataBindAxisLabelModel separately. 
 
 Dim dataLabelsModel As New ChartDataBindAxisLabelModel(populations)
 
-
-
 dataLabelsModel.LabelName = "City" 
-
-
 
 chartControl1.Series.Add(series) 
 
@@ -614,104 +457,67 @@ chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel
 
 ![](Chart-Data_images/Chart-Data_img5.jpeg)
 
-
-
 ## Data Binding in Chart Through Chart Wizard
 
 You can easily implement data binding technique at design-time, using Chart Wizard. 
 
 The below steps lets you bind a database table with the ChartControl.
 
-
-
 1. Open the Chart Wizard tool, Click Series button and go to the Data Source tab as shown in the image below.
 
-   ![](Chart-Data_images/Chart-Data_img6.png)
-
-   
+![](Chart-Data_images/Chart-Data_img6.png)
 
 2. First step is to select the chart data source from the drop-down list. All data sources available with the form will be shown in the list. If there is no data source in the list, click the new BindingSource option from the drop-down list.
    
-   ![](Chart-Data_images/Chart-Data_img7.png)
-
-   
+![](Chart-Data_images/Chart-Data_img7.png)
 
 3. This opens a Data Source Configuration Wizard.Choose the Data source Type as Database, and click Next.
 
-   ![](Chart-Data_images/Chart-Data_img8.jpeg)
-
-   
+![](Chart-Data_images/Chart-Data_img8.jpeg)
 
 4. Then click New Connection.
 
-   ![](Chart-Data_images/Chart-Data_img9.jpeg)
-
-   
+![](Chart-Data_images/Chart-Data_img9.jpeg)
 
 5. In the Choose Data Source dialog box, select the data source as MS SQL server database or Microsoft Access database, and then click Continue button.
    
-   ![](Chart-Data_images/Chart-Data_img10.jpeg)
-
-   
-
-
+![](Chart-Data_images/Chart-Data_img10.jpeg)
 
 6. This opens the Add Connection dialog box. Click the Browse button and select the database file from any location. Click OK to make this connection available to the Data source Configuration Wizard.
 
-   ![](Chart-Data_images/Chart-Data_img11.jpeg)
-
-  
+![](Chart-Data_images/Chart-Data_img11.jpeg)
 
 7. You will be directed to the Data Source Configuration Wizard after completing the above steps. Click Next.
    
-   ![](Chart-Data_images/Chart-Data_img12.jpeg)
-
-  
+![](Chart-Data_images/Chart-Data_img12.jpeg)
 
 8. Tables and Views that are available in the selected database will be listed in the Wizard. Select the appropriate table, required columns and then click Finish.
    
-   ![](Chart-Data_images/Chart-Data_img13.jpeg)
+![](Chart-Data_images/Chart-Data_img13.jpeg)
    
-
-
 9. You will be directed back to the Chart Wizard now. Select the database from the Data Source list as shown in the image below.
 
-   ![](Chart-Data_images/Chart-Data_img14.png)
+![](Chart-Data_images/Chart-Data_img14.png)
    
- 
-
 10. Once the source is selected, the selected table will be visible as in the below image.
 
-    ![](Chart-Data_images/Chart-Data_img15.png)
-
-   
-
+![](Chart-Data_images/Chart-Data_img15.png)
 
 ## Binding the Table Data with Chart Series
 
 1. Click the 'Series Data' option in the wizard to select the series to which the data is to be bound. In 'Series Data' page, select the series using the Series Data box.
 
-   ![](Chart-Data_images/Chart-Data_img16.png)
-
-  
-
-
+![](Chart-Data_images/Chart-Data_img16.png)
 
 2. To assign the retrieved database column to X and Y values of the series, use X Value box and Y Value box as shown in the below screen shots.
 
-   ![](Chart-Data_images/Chart-Data_img17.png)
-   
-  
-   
-   ![](Chart-Data_images/Chart-Data_img18.png)
-   
+![](Chart-Data_images/Chart-Data_img17.png)
 
+![](Chart-Data_images/Chart-Data_img18.png)
 
 3. Click Finish to apply these data binding settings to the Chart. The below image illustrates the Chart bound with custom data.
 
-   ![](Chart-Data_images/Chart-Data_img19.jpeg)
-
-  
+![](Chart-Data_images/Chart-Data_img19.jpeg)
 
 ## Binding Chart with a BindingSource
 
@@ -771,15 +577,17 @@ Step-1
 
 Create a ChartDataBindModel object with BindingSource as data source
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 //Using BindingSource as data source to the ChartDataBindModel
 
-      ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
+ ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Using BindingSource as data source to the ChartDataBindModel
 
@@ -792,29 +600,27 @@ Step-2:
 
 Provide a field name in binding source as value to the XName property of the ChartDataBindModel object. 
 
-{% tabs %}  {% highlight c# %}
+{% tabs %} 
+
+{% highlight c# %}
 
 //Using BindingSource as data source to the ChartDataBindModel
 
-      ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
+ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
 
+//Mapping XName to a field in BindingSource object
 
-
-      //Mapping XName to a field in BindingSource object
-
-      model.XName = "Field1";
+model.XName = "Field1";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Using BindingSource as data source to the ChartDataBindModel
 
       Dim model As New ChartDataBindModel(MyBindingSource)
 
-
-
-      'Mapping XName and YNames to the fields in BindingSource object
+'Mapping XName and YNames to the fields in BindingSource object
 
       model.XName = "Field1"
 
@@ -827,41 +633,35 @@ Similarly, provide a field name in binding source as value to the YNames propert
 
 As pie chart is used in this example, it is enough to use one field name for the YNames property of the ChartDataBindModel object.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
 
-      //Using BindingSource as data source to the ChartDataBindModel
+{% highlight c# %}
 
-      ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
+//Using BindingSource as data source to the ChartDataBindModel
 
+ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
 
+//Mapping XName to a field in BindingSource object
 
-      //Mapping XName to a field in BindingSource object
+model.XName = "Field1";
 
-      model.XName = "Field1";
+//Mapping YNames to a field in BindingSource object
 
-
-
-      //Mapping YNames to a field in BindingSource object
-
-      model.YNames = new string[] { "Field2" };
+model.YNames = new string[] { "Field2" };
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-      'Using BindingSource as data source to the ChartDataBindModel
+'Using BindingSource as data source to the ChartDataBindModel
 
-      Dim model As New ChartDataBindModel(MyBindingSource)
+     Dim model As New ChartDataBindModel(MyBindingSource)
 
-
-
-      'Mapping XName and YNames to the fields in BindingSource object
+'Mapping XName and YNames to the fields in BindingSource object
 
       model.XName = "Field1"
 
-
-
-      'Mapping YNames to a field in BindingSource object
+'Mapping YNames to a field in BindingSource object
 
       model.YNames = New String() {"Field2"}
 
@@ -872,47 +672,39 @@ Step-4:
 
 Set ChartDataBindModel object as value to the ChartSeries object. This binds the Series with BindingSource.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
 
-      //Using BindingSource as data source to the ChartDataBindModel
+{% highlight c# %}
 
-      ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
+//Using BindingSource as data source to the ChartDataBindModel
 
+ChartDataBindModel model = new ChartDataBindModel(MyBindingSource);
 
+//Mapping XName to a field in BindingSource object
 
-      //Mapping XName to a field in BindingSource object
+model.XName = "Field1";
 
-      model.XName = "Field1";
+//Mapping YNames to a field in BindingSource object
 
-
-
-      //Mapping YNames to a field in BindingSource object
-
-      model.YNames = new string[] { "Field2" };
+model.YNames = new string[] { "Field2" };
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-      'Using BindingSource as data source to the ChartDataBindModel
+'Using BindingSource as data source to the ChartDataBindModel
 
       Dim model As New ChartDataBindModel(MyBindingSource)
 
-
-
-      'Mapping XName to a field in BindingSource object
+'Mapping XName to a field in BindingSource object
 
       model.XName = "Field1"
 
-
-
-      'Mapping YNames to a field in BindingSource object
+'Mapping YNames to a field in BindingSource object
 
       model.YNames = New String() {"Field2"}
 
-
-
-      'Bind ChartDataBindModel object with Series
+'Bind ChartDataBindModel object with Series
 
       series.SeriesModel = model
 

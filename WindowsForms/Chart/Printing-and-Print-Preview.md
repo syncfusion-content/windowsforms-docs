@@ -13,12 +13,14 @@ documentation: ug
 
 The chart provides a PrintDocument that can be sent to the .NET PrintPreviewDialog to get a preview of the chart that gets printed. Here is some code that shows how this is done.
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
 
 //Customizing the icon of print preview dialog
+
 (printPreviewDialog1 as Form).Icon = new Icon(@"..\..\App.ico");
 
 printPreviewDialog1.Document = this.chartControl1.PrintDocument;
@@ -27,11 +29,12 @@ printPreviewDialog1.ShowDialog();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.printPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog
 
 'Customizing the icon of print preview dialog
+
 CType(printPreviewDialog1,Form).Icon = New Icon("..\..\App.ico")
 
 printPreviewDialog1.Document = Me.chartControl1.PrintDocument
@@ -43,29 +46,26 @@ printPreviewDialog1.ShowDialog()
 
 ![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img1.jpeg)
 
-
-
 ## Printing
+
 Print a chart control using the PrintDocument exposed by the chart control as follows:
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.PrintDocument.Print();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrintDocument.Print()
 
 {% endhighlight %}
 {% endtabs %}
 
-
 You can also specify if you want to print the chart in Color or GrayScale using this property.
-
 
 <table>
 <tr>
@@ -78,30 +78,26 @@ PrintColorMode</td><td>
 Indicates the color mode during printing. Possible Values:* Color - Always Print in Color.* GrayScale - Always Print using GrayScale.* CheckPrinter - If printer allows color print in color, otherwise use gray scale (default setting).</td></tr>
 </table>
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale
 
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Automatic GrayScale Handling
 
 Setting GrayScale print mode for the chart lets you print the chart in a gray scale and when multiple series are printed in this case, chart data points are automatically rendered with a patterned brush to differentiate the different series as shown in the image below.
 
-
-
 ![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img2.jpeg)
-
-
 
 A sample illustrating the printing features is available in the below location.
 
@@ -111,8 +107,6 @@ A sample illustrating the printing features is available in the below location.
 
 ShowToolBar property should be set to true to display a toolbar in the Chart. You can show or hide the toolbar while printing a Chart using PrintToolBar property. 
 
-
-
 {% tabs %}  {% highlight c# %}
 
 chartControl1.ShowToolbar = true;
@@ -121,7 +115,7 @@ chartControl1.PrintDocument.PrintToolBar = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 chartControl1.ShowToolbar = True
 

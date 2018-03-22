@@ -101,7 +101,7 @@ End Sub
 {% endtabs %}
 
 ### Display Message Box on current cell Editing Complete
-The editing completion of the current cell can be notified by using the [CurrentCellEndEdit](CurrentCellEndEdit) event.
+The editing completion of the current cell can be notified by using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
