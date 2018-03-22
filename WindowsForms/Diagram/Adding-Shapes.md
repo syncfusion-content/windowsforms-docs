@@ -50,7 +50,7 @@ You can enable drawing shapes by clicking the diagram page using the _Diagram_ p
 
 	'Palette group view	
 	paletteGroupView1.Diagram = diagram1;	
-	'Palatte group bar	
+	'Palette group bar	
 	paletteGroupBar1.Diagram = diagram1;
 		
 {% endhighlight %}
