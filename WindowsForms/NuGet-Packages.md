@@ -1,4 +1,4 @@
----
+f---
 layout: post
 title: NuGet Packages | Windows Forms | Syncfusion
 description: NuGet Packages
@@ -36,7 +36,7 @@ You should get the private Syncfusion Windows Forms NuGet feed URL to install or
 
 3.	Expand the **NuGet Package Manager** and select **Package Sources**.
 
-4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion Winodws Forms NuGet packages.
+4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion Windows Forms NuGet packages.
 
     **Name:** Name of the package listed in the available package sources.
     **Source:** Syncfusion Windows Forms NuGet Feed URL      
@@ -200,7 +200,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Windows Froms NuGet packages.
+2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Windows Forms NuGet packages.
 
     ~~~ 
     #update all NuGet packages from config file
