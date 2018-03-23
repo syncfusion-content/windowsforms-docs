@@ -54,7 +54,7 @@ Me.chartControl1.DisplayWizard()
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 The wizard provides six different categories whose settings can be customized.
 
