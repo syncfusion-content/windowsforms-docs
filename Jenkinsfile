@@ -2,7 +2,7 @@ node('content')
 { 
 timestamps
   {
-  
+   
   def Content="";
 		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
 
