@@ -1,4 +1,4 @@
----
+f---
 layout: post
 title: NuGet Packages | Windows Forms | Syncfusion
 description: NuGet Packages
@@ -11,7 +11,7 @@ documentation: ug
 
 NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
 
-> Note: You can use the Syncfusion Windows Forms NuGet packages without installing the Essential Studio or Windows Forms platform installation to implement the Syncfusion Windows Forms controls.
+N> You can use the Syncfusion Windows Forms NuGet packages without installing the Essential Studio or Windows Forms platform installation to implement the Syncfusion Windows Forms controls.
 
 
 ## Get the Syncfusion NuGet feed URL
@@ -36,7 +36,7 @@ You should get the private Syncfusion Windows Forms NuGet feed URL to install or
 
 3.	Expand the **NuGet Package Manager** and select **Package Sources**.
 
-4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion Winodws Forms NuGet packages.
+4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion Windows Forms NuGet packages.
 
     **Name:** Name of the package listed in the available package sources.
     **Source:** Syncfusion Windows Forms NuGet Feed URL      
@@ -51,10 +51,8 @@ You should get the private Syncfusion Windows Forms NuGet feed URL to install or
 ### Using NuGet Package Manager
 
 The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
-1.	On the **Tools**, menu, NuGet **Package Manager | Manage NuGet Packages for Solution...**
-
+1.	On the **Tools**, menu, NuGet `Package Manager | Manage NuGet Packages for Solution...`
     ![](NuGet_Packages_Images/img3.png)
-
     Alternatively, right-click on the project/solution in Solution Explorer tab, and choose **Manage NuGet Packages…**
 
 2.	By default, the NuGet.org package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured. 
@@ -85,7 +83,7 @@ To reference the Syncfusion Windows Forms component using the Package Manager Co
     **For example:**
 
     ~~~
-    # install specified package in default project
+    #install specified package in default project
     Install-Package Syncfusion.Chart.Windows46
 
     #install specified package in default project with specified Package Source
@@ -102,7 +100,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 ### Configure NuGet feed URL 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-    > Note: To update the existing nuget.exe to latest version use the following command:
+    N> To update the existing nuget.exe to latest version use the following command:
 
     ~~~
     nuget update -self
@@ -116,21 +114,24 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     ~~~
 
     **For example:**
+
     ~~~
     nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms”
     ~~~
 
 ### NuGet installation
 
-Download and install the required NuGet packages to a project specified in the package.config. 
+Download and install the required NuGet packages to a project specified in the package.config.
+
 ~~~
 #install specified package in default project from specified Package Source 
 nuget.exe install <Package name | ConfigFilePath > [Options]
 ~~~
 
-> Note: <configFilePath> is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
+N> configPath is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
 
 **For example:**
+
 ~~~
 #install specific package 
 nuget.exe install “Syncfusion.Chart.Windows46”
@@ -138,7 +139,7 @@ nuget.exe install “Syncfusion.Chart.Windows46”
 #install all package which mention in package.config path 
 nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
-# install specific Syncfusion NuGet package with specific Syncfusion Package Source
+#install specific Syncfusion NuGet package with specific Syncfusion Package Source
 nuget.exe install “Syncfusion.Chart.Windows46”  –Source “http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms”
 ~~~
 
@@ -148,7 +149,7 @@ nuget.exe install “Syncfusion.Chart.Windows46”  –Source “http://nuget.sy
 
 NuGet packages can be updated to their specific version or latest version available in the Visual Studio solution or project:
 
-1. On the **Tools** menu, **NuGet Package Manager | Manage NuGet Packages for Solution...**
+1. On the **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 Alternatively, right-click on project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
 
 2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
@@ -193,12 +194,13 @@ To update the installed Syncfusion Windows Forms NuGet packages using the Packag
 Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version: 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-    > Note: To update the existing nuget.exe to latest version use the following command: 
+    N> To update the existing nuget.exe to latest version use the following command: 
+
     ~~~
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Windows Froms NuGet packages.
+2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Windows Forms NuGet packages.
 
     ~~~ 
     #update all NuGet packages from config file
@@ -208,9 +210,10 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -Source <Source Location> [optional]
     ~~~      
 
-    > Note: <configFilePath> is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
+    N> configPath is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
 	
     **For example:**
+    
     ~~~          
     #Update all NuGet packages from config file
     nuget update “C:\Users\SyncfusionApplication\package.config”
