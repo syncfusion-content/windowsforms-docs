@@ -2,7 +2,7 @@
 layout: post
 title: NuGet Packages | Windows Forms | Syncfusion
 description: NuGet Packages
-platform: Windows Forms
+platform: windowsforms
 control: NuGet Packages
 documentation: ug
 ---
