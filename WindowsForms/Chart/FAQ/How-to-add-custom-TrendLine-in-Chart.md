@@ -13,11 +13,9 @@ TrendLines are used to draw lines in the ChartArea. They can be added to the cha
 
 TrendLines can also be drawn using the Mouse Events. In this case, you will have to make use of the Utility class to listen to mouse events and convert them into trendlines. You can draw any number of trendlines, and can set different colors to differentiate them.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 // Creating Custom Points
 
@@ -35,17 +33,13 @@ this.chart.Series.Add(series);
 
 series.LegendItem.Visible = false;
 
-
-
 // Specify the color for the lines.
 
 series.Style.Interior = new Syncfusion.Drawing.BrushInfo(ptStart.YValues[0] < ptEnd.YValues[0] ? Color.DarkGreen : Color.Red); 
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' Creating Custom Points
 
@@ -65,8 +59,6 @@ Me.chart.Series.Add(series)
 
 series.LegendItem.Visible = False
 
-
-
 ' Specify the color for the lines.
 
 If ptStart.YValues(0) < ptEnd.YValues(0) Then
@@ -80,6 +72,8 @@ series.Style.Interior = New Syncfusion.Drawing.BrushInfo(Color.Red)
 End If
 
 {% endhighlight %}
+
+{% endtabs %}	
 
 ![](How-to-add-custom-TrendLine-in-Chart_images/How-to-add-custom-TrendLine-in-Chart_img1.jpeg)
 

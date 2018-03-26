@@ -11,11 +11,9 @@ documentation: ug
 
 Creating a CSV (comma separated values) of the chart points simply involves parsing through the chart series and writing out the chart points into the FileStream. The code for this is provided below for your convenience.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 foreach(ChartSeries series in this.chartControl1.Series)
 
@@ -61,13 +59,9 @@ foreach(ChartSeries series in this.chartControl1.Series)
 
 }
 
-
-
 // Using stream writer class the chart points are exported. Create an instance of the stream writer class.
 
 System.IO.StreamWriter file = new System.IO.StreamWriter(fileName);
-
-
 
 // Write the datapoints into the file.
 
@@ -77,9 +71,7 @@ file.Close();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 For Each series In Me.chartControl1.Series
 
@@ -121,13 +113,9 @@ Next p
 
 Next series
 
-
-
 ' Using stream write class the chart points are exported. Create an instance of the stream writer class.
 
 Dim file As New System.IO.StreamWriter(fileName)
-
-
 
 ' Write the datapoints into the file.
 
@@ -136,4 +124,6 @@ file.WriteLine(csvContent)
 file.Close()
 
 {% endhighlight %}
+
+{% endtabs %}
 

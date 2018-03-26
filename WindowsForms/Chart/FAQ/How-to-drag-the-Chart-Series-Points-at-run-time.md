@@ -13,11 +13,9 @@ You can drag the chart series points by calculating new x and y values while han
 
 The following code snippet must be given under the mouse event handler of the ChartRegionMouse event.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 private void chartControl1_ChartRegionMouseUp(object sender, Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs e)
 
@@ -67,9 +65,7 @@ this.chartControl1.Refresh();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub chartControl1_ChartRegionMouseUp(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs) Handles chartControl1.ChartRegionMouseUp
 
@@ -113,3 +109,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}	
