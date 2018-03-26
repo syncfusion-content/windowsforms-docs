@@ -11,11 +11,9 @@ documentation: ug
 
 On Setting ShowTooltip property to true, the series name will be displayed as tooltip on the histogram chart columns by default. You can also set custom tooltip by handling ChartRegionMouseMove event as follows.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 private void chartControl1_ChartRegionMouseMove(object sender, ChartRegionMouseEventArgs e)
 
@@ -43,9 +41,7 @@ private void chartControl1_ChartRegionMouseMove(object sender, ChartRegionMouseE
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub chartControl1_ChartRegionMouseMove(ByVal sender As Object, ByVal e As ChartRegionMouseEventArgs)
 
@@ -65,9 +61,9 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}	
+
 ![](How-to-display-custom-tooltip-over-Histogram-Chart_images/How-to-display-custom-tooltip-over-Histogram-Chart_img1.jpeg)
-
-
 
 {% seealso %}
 

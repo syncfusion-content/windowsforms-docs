@@ -41,10 +41,9 @@ FindValue(Double, String, Index, Index )<br></td><td>
 It should return the first chart point with the specified X or Y-value, and should start and end the search at the specified index.</td></tr>
 </table>
 
+{% tabs %}
 
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 dbl = Int64.Parse(textBoxValue.Text);
 
@@ -52,9 +51,7 @@ ChartPoint dp1 = this.chartControl1.Series[0].Summary.FindValue(dbl);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 dbl = Int64.Parse(textBoxValue.Text)
 
@@ -62,9 +59,9 @@ Dim dp1 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### FindMaximumValue
-
-
 
 _Properties_
 
@@ -91,12 +88,9 @@ FindMaxValue(String, Index , Index)<br></td><td>
 It should return the first chart point with a maximum value. The search should start and end at the specified index. </td></tr>
 </table>
 
+{% tabs %}
 
-
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 String str = textBoxString.Text;
 
@@ -108,9 +102,7 @@ ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMinValue(str, ref star
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Dim str As String = textBoxString.Text
 
@@ -122,9 +114,9 @@ Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMinValue(str, ref
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### FindMinimumValue
-
-
 
 _Properties_
 
@@ -151,10 +143,9 @@ FindMinValue(String, Index , Index)<br></td><td>
 It should return the first Chart point with a minimum value. The search should start and end at the specified index.</td></tr>
 </table>
 
+{% tabs %}
 
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 String str = textBoxString.Text;
 
@@ -166,9 +157,7 @@ ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMaxValue(str, ref star
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Dim str As String = textBoxString.Text
 
@@ -179,4 +168,6 @@ endIndex = Int32.Parse(textBox1.Text)
 Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMaxValue(str, startIndex, endIndex)
 
 {% endhighlight %}
+
+{% endtabs %}
 

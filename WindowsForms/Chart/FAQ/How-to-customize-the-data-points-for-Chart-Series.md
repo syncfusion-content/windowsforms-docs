@@ -13,11 +13,9 @@ You can customize the data points by exposing the IChartSeriesIndexedModel inter
 
 Using the SeriesModelImpl property, you can set an instance of the IChartSeriesModel, underlying the series. Use this property to replace the instance with our own implementation.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 // Customize data points using IChartSeriesModel interface.
 
@@ -25,13 +23,12 @@ series1.SeriesModelImpl = new NonIndexedModel(new double[] { 2, 5, 3, 4, 6 }, ne
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' Customize data points using IChartSeriesModel interface.
 
 series1.SeriesModelImpl = New NonIndexedModel(New Double() {2, 5, 3, 4, 6}, New Double() {10, 33,20, 43, 12})
 
-
 {% endhighlight %}
+
+{% endtabs %}	

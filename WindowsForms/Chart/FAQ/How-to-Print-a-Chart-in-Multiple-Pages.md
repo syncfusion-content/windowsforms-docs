@@ -11,13 +11,13 @@ documentation: ug
 
 To print a Chart in multiple page, use the PrintPage event to specify the range of X and Y axis. Specify the minimum and maximum value in the _Range_ property of the axis you want to divide. Set the HasMorePages__property to true in the events before specifying the range values and set this to false after chart default maximum value. The following code illustrates this: 
 
- {% highlight c# %}
+{% tabs %}
+
+{% highlight c# %}
 
 this.chartControl1.PrintDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(PrintDocument_PrintPage);
 
 //PrintPage Event
-
-
 
 void PrintDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
 
@@ -45,8 +45,6 @@ mi = 0;
 
 //Get the Color mode
 
-
-
 bool grayScale = this.chartControl1.PrintDocument.ColorMode == ChartPrintColorMode.GrayScale;
 
 bool toolBatVisibility = this.chartControl1.ShowToolbar;
@@ -59,9 +57,7 @@ this.chartControl1.ShowToolbar = false;
 
 }
 
-if (m_currentAction.Value == PrintAction.PrintToPrinter
-
-                && this.chartControl1.PrintDocument.ColorMode == ChartPrintColorMode.CheckPrinter)
+if (m_currentAction.Value == PrintAction.PrintToPrinter && this.chartControl1.PrintDocument.ColorMode == ChartPrintColorMode.CheckPrinter)
 
 {
 
@@ -117,7 +113,9 @@ for (int i = 0; i < this.chartControl1.Series.Count; i++)
 
 {
 
-tempStyles[i] = new ChartStyleInfo();                tempStyles[i].CopyFrom(this.chartControl1.Series[i].StylesImpl.Style);
+tempStyles[i] = new ChartStyleInfo();               
+
+tempStyles[i].CopyFrom(this.chartControl1.Series[i].StylesImpl.Style);
 
 this.chartControl1.Series[i].Style.Interior = new BrushInfo((PatternStyle)pattern.GetValue(i % pattern.Length), Color.Black, Color.White);                  this.chartControl1.Series[i].Style.Border.MakeCopy(tempStyles[i], this.chartControl1.Series[i].Style.Border.Sip);
 
@@ -161,8 +159,6 @@ using (Graphics g = Graphics.FromImage(image))
 
 //Assigning the initial values of max and min to chart control maximum and minimum values
 
-
-
 this.chartControl1.ChartArea.PrimaryXAxis.Range.Min = mi;
 
 this.chartControl1.ChartArea.PrimaryXAxis.Range.Max = max;
@@ -201,7 +197,12 @@ EndTransform(e.Graphics, container);
 
 for (int i = 0; i < this.chartControl1.Series.Count; i++)
 
-{                 this.chartControl1.Series[i].StylesImpl.Style.ResetInterior();                 this.chartControl1.Series[i].StylesImpl.Style.ResetBorder();                   this.chartControl1.Series[i].StylesImpl.Style.CopyFrom(tempStyles[i]);
+{                 
+    this.chartControl1.Series[i].StylesImpl.Style.ResetInterior(); 
+
+    this.chartControl1.Series[i].StylesImpl.Style.ResetBorder();
+
+    this.chartControl1.Series[i].StylesImpl.Style.CopyFrom(tempStyles[i]);
 
 }
 
@@ -227,8 +228,6 @@ if (max > end)
 
 e.HasMorePages = false;
 
-
-
 //Finally resets the maximum and minimum value for default chart control
 
 this.chartControl1.ChartArea.PrimaryXAxis.Range.Min = start;
@@ -241,15 +240,11 @@ this.chartControl1.ChartArea.PrimaryXAxis.Range.Interval = Interval;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrintDocument.PrintPage += New System.Drawing.Printing.PrintPageEventHandler(PrintDocument_PrintPage)
 
-
-
 ‘’’/ PrintPage Event
-
-
 
 Private Sub PrintDocument_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs)
 
@@ -261,8 +256,6 @@ End If
 
 ‘’’/ Set the HasMorePages property to true for dividing the chart into Multiple pages
 
-
-
 e.HasMorePages = True  
 
 Me.chartControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectAction.Wrap
@@ -271,15 +264,11 @@ If max = 0.0 AndAlso mi = 0.0 Then
 
 ‘’’/Initializing max and min range values
 
-
-
 max = Convert.ToDouble(textBox1.Text)
 
 mi = 0
 
 End If
-
-
 
 ‘’’/Get the Color mode
 
@@ -300,14 +289,11 @@ grayScale = Me.chartControl1.PrintDocument.PrinterSettings.SupportsColor
 End If
 
 
-
 ‘’’/Check the color mode of print
 
 If Not grayScale Then
 
 ‘’’/Assigning the initial values of max and min to chart control maximum and ‘’’/minimum values
-
-
 
 Me.chartControl1.ChartArea.PrimaryXAxis.Range.Min = mi
 
@@ -327,8 +313,6 @@ e.Graphics.ResetTransform()
 
 ‘’’/Call the Draw method to draw the chart
 
-
-
 Me.chartControl1.Draw(e.Graphics, e.MarginBounds)
 
 EndTransform(e.Graphics, container)
@@ -345,7 +329,9 @@ Dim dash As Array = System.[Enum].GetValues(GetType(DashStyle))
 
 For i As Integer = 0 To Me.chartControl1.Series.Count - 1
 
-                tempStyles(i) = New ChartStyleInfo()              tempStyles(i).CopyFrom(Me.chartControl1.Series(i).StylesImpl.Style)
+tempStyles(i) = New ChartStyleInfo()              
+
+tempStyles(i).CopyFrom(Me.chartControl1.Series(i).StylesImpl.Style)
 
 Me.chartControl1.Series(i).Style.Interior = New BrushInfo(DirectCast(pattern.GetValue(i Mod pattern.Length), PatternStyle), Color.Black, Color.White)
 
@@ -383,8 +369,6 @@ Using g As Graphics = Graphics.FromImage(image)
 
 ‘’’/Assigning the initial values of max and min to chart control maximum and ‘’’/minimum values
 
-
-
 Me.chartControl1.ChartArea.PrimaryXAxis.Range.Min = mi
 
 Me.chartControl1.ChartArea.PrimaryXAxis.Range.Max = max
@@ -392,8 +376,6 @@ Me.chartControl1.ChartArea.PrimaryXAxis.Range.Max = max
 Me.chartControl1.ChartArea.PrimaryXAxis.Range.Interval = (Me.chartControl1.ChartArea.PrimaryXAxis.Range.Max - Me.chartControl1.ChartArea.PrimaryXAxis.Range.Min) / Me.chartControl1.ChartArea.PrimaryXAxis.Range.NumberOfIntervals
 
 ‘’’/Modifying the maximum and minimum values
-
-
 
 mi = max
 
@@ -404,8 +386,6 @@ Dim hdc As IntPtr = g.GetHdc()
 Dim stream As Stream = New MemoryStream()
 
 Dim file As New Metafile(stream, hdc)
-
-
 
 ‘’’/Call the Draw method to draw the chart
 
@@ -427,19 +407,17 @@ EndTransform(e.Graphics, container)
 
 For i As Integer = 0 To Me.chartControl1.Series.Count - 1
 
-                Me.chartControl1.Series(i).StylesImpl.Style.ResetInterior()
+Me.chartControl1.Series(i).StylesImpl.Style.ResetInterior()
 
-                Me.chartControl1.Series(i).StylesImpl.Style.ResetBorder()
+Me.chartControl1.Series(i).StylesImpl.Style.ResetBorder()
 
-                Me.chartControl1.Series(i).StylesImpl.Style.CopyFrom(tempStyles(i))
+Me.chartControl1.Series(i).StylesImpl.Style.CopyFrom(tempStyles(i))
 
 Next
 
 End If
 
 ‘’’/Checking Toolbar functionality of print
-
-
 
 If Not Me.chartControl1.PrintDocument.PrintToolBar Then
 
@@ -461,8 +439,6 @@ End If
 
 //Finally resets the maximum and minimum value for default chart control
 
-
-
 Me.chartControl1.ChartArea.PrimaryXAxis.Range.Min = start
 
 Me.chartControl1.ChartArea.PrimaryXAxis.Range.Max = [end]
@@ -473,8 +449,9 @@ End Sub
 
 {% endhighlight %}
 
-N> Note: The initial page will be printed based on the specified minimum and maximum value. In further pages minimum value will be the maximum value of previous page and maximum will be the sum of current page minimum value and the specified maximum value in the Range.
+{% endtabs %}
 
+N> Note: The initial page will be printed based on the specified minimum and maximum value. In further pages minimum value will be the maximum value of previous page and maximum will be the sum of current page minimum value and the specified maximum value in the Range.
 
 Events
 
@@ -494,6 +471,7 @@ PrintPageEventArgs</th><th>
 Server side </th><th>
 NA</th></tr>
 </table>
+
 Sample Link
 
 #### To view a sample:
