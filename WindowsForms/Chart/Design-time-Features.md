@@ -31,15 +31,9 @@ Essential Chart is now associated with the creation and loading of chart templat
 * The user can save the existing structure of the chart control to an .xml file format.
 * All the charts in your applications can be created with consistent look and feel.
 
-
-
 ![](Design-time-Features_images/Design-time-Features_img1.jpeg)
 
-
-
 ![](Design-time-Features_images/Design-time-Features_img2.jpeg)
-
-
 
 ### Save Template
 
@@ -55,13 +49,15 @@ These Charts can be saved as templates in the below two ways.
 * By clicking the Save Template designer verb in the Visual Studio property browser as shown above.
 * ChartTemplate has a static method to save the data programmatically. We need to pass ChartControl instance and a file name(it can accept stream file also.), through this save method.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 ChartTemplate.Save(this.chartControl1, "TemplateName.xml");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ChartTemplate.Save(Me.chartControl1, "TemplateName.xml")
 
@@ -86,7 +82,9 @@ The ChartControl, which when loaded with a template will be applied with the app
 
 ChartTemplate can be reset using the following simple statements,
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 ChartTemplate ct = new ChartTemplate();
 
@@ -94,7 +92,7 @@ ct.Reset(this.chartControl1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ChartTemplate ct = New ChartTemplate()
 
@@ -102,7 +100,6 @@ ct.Reset(Me.chartControl1)
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ### Sample Link
 
@@ -115,14 +112,9 @@ To view a sample:
 
 ## Tasks Window
 
-
 The tasks window has sufficient properties exposed in the right manner for users to be able to get started intuitively.
 
-
-
 ![](Design-time-Features_images/Design-time-Features_img3.jpeg)
-
-
 
 ### Tasks
 
@@ -133,7 +125,6 @@ Used to add title to the Chart directly from the Tasks Window.
 ##### Title Position
 
 Specifies the position relative to the chart at which to render the chart title panel.
-
 
 <table>
 <tr>
@@ -162,7 +153,6 @@ Floating</td><td>
 Will not be docked to any specific location. Can be docked manually by dragging the title panel.</td></tr>
 </table>
 
-
 ### Back Interior
 
 Specifies background brush of the control.
@@ -186,7 +176,6 @@ Specifies if the legend is to be displayed or not.
 #### Legend Position
 
 Configuration information of the Legend object.
-
 
 <table>
 <tr>
@@ -215,7 +204,6 @@ Floating</td><td>
 Will not be docked to any specific location. Can be docked manually by dragging the Legend panel.</td></tr>
 </table>
 
-
 #### Legend Alignment
 
 Gets or sets the legend alignment. 
@@ -238,7 +226,6 @@ Aligns to Far of chart.</td></tr>
 Near</td><td>
 Aligns to Near of chart.</td></tr>
 </table>
-
 
 ### Show ToolBar
 

@@ -23,11 +23,7 @@ The Wizard neatly categorizes the different portions of the Chart, and lets you 
 6. Customize the chart control's toolbar.
 7. Lets you customize the point labels.
 
-
-
 This section describes about the functionality of the chart wizard. 
-
-
 
 ![](Chart-Wizard_images/Chart-Wizard_img1.png)
 
@@ -44,18 +40,21 @@ To display the chart wizard at design-time, follow the below steps.
 
 Optionally, you can also let your users to invoke this Wizard during run-time to let them customize the Chart's look and feel. To invoke the Chart wizard at runtime, use the below code.
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.chartControl1.DisplayWizard();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.DisplayWizard()
 
 {% endhighlight %}
-  
+
+{% endtabs %}
 
 The wizard provides six different categories whose settings can be customized.
 
@@ -77,14 +76,7 @@ In this view, you can visually see the different chart types that could be used 
 
 3D Style - The chart will be rendered in 3D mode. Corresponds to the Series3D property.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img2.png)
-
-
-
-
-
 
 {% seealso %}
 
@@ -96,11 +88,7 @@ In this view, you can visually see the different chart types that could be used 
 
 A Chart can display multiple series. Properties such as Name, Data source, Series Data can be set or changed for any of the series, easily, through this wizard.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img3.png)
-
-
 
 Below are the three tabs in the Wizard for Series.
 
@@ -110,14 +98,11 @@ Below are the three tabs in the Wizard for Series.
 4. This tab provides options to select any chart type using the Type combobox and series name using Series Name textbox.
 5. Clicking the Edit points button, opens the ChartPoint Collection Editor.
 
-   ![](Chart-Wizard_images/Chart-Wizard_img4.jpeg)
-  
+![](Chart-Wizard_images/Chart-Wizard_img4.jpeg)  
 
 6. Click Add to add points to the series. Give X and Y values. Click OK.
 
-   ![](Chart-Wizard_images/Chart-Wizard_img5.png)
-
-
+![](Chart-Wizard_images/Chart-Wizard_img5.png)
 
 Data source - The data source to connect with, can be selected using the data source page. Once the data source is selected, it will guide you through the connectivity steps. Refer [Data Binding in Chart Through Chart Wizard](http://help.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information. This topic describes data binding techniques at the design-time through Chart Wizard tools.
 
@@ -125,17 +110,13 @@ Series Data - Using this tab, we can change the type of the chart. Whenever an e
 
 Select one column for XValue and another for YValue, between which you wanted to draw the chart. Refer [Data Binding in Chart Through Chart Wizard](http://help.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img6.png)
 
-
-
- {% seealso %}
+{% seealso %}
 
 [Chart Series](http://help.syncfusion.com/windowsforms/chart/chart-series)
 
- {% endseealso %}
+{% endseealso %}
 
 ## Appearance
 
@@ -146,8 +127,6 @@ There are three tabs available in the wizard, for appearance settings.
 * Color Palette -Essential Chart comes with a variety of built-in palettes. You can pick one of the palettes from the list and also get a preview of how the chart would look like. Note that you can also add a custom palette to the chart, but that has to be done in code.
 * Border and Back Color - Under this tab, the back color for the chart control as well as for the chart area can be set. The user can also set the Border color and Border style for the chart area. 
 * Title - This gives options to set the title for the chart control. Also the position, alignment and color of the title can be set.
-
-
 
 ![](Chart-Wizard_images/Chart-Wizard_img7.png)
 
@@ -170,20 +149,11 @@ The below properties can be set separately for x-axis and y-axis.
 * Format - Specifies the label format.
 * Edit Labels - The labels at the axes can be varied by entering the values in the Collection Editor Dialog box, which pops up when the Edit Labels button is clicked.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img8.png)
-
-
-
 
 * Collection Editor Dialog - Click the Add button to add a label to the collection. Select the added label to view its properties on its right side. The color of the label, font, value type and so on can be changed using the properties window. If any label needs to be removed from the collection editor, select the label and click the Remove button. After adding all the values to the collection and making the necessary changes in the properties, click OK. In a similar way the labels can be edited for y-axis also.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img9.jpeg)
-
-
 
 {% seealso %}
 
@@ -201,10 +171,7 @@ This particular section in the wizard comes with the below options. It lets you 
 * Label Alignment - Sets the alignment of the labels on the series points.
 * Apply To - Specifies the series name to which the above settings should be applied.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img10.png)
-
 
 ## Toolbar
 
@@ -214,32 +181,19 @@ The final option in the Chart Wizard is the ChartControl ToolBar. It has two tab
 
 Under this tab, the user can customize the toolbar's back color, button style as well as set width and Height for the buttons through the respective options.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img11.png)
-
-
 
 * Edit Item
 
 Clicking the Edit Items button will invoke the below editor. It provides options to change the image, name and tooltip for individual items.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img12.jpeg)
-
-
-
 
 * Border Style
 
 Toolbar's border, border style, border width and border color can be set through this tab.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img13.png)
-
-
 
 {% seealso %}
 
@@ -251,26 +205,13 @@ Toolbar's border, border style, border width and border color can be set through
 
 The various properties of the chart legend such as position, alignment, orientation etc., can be changed easily using this wizard. It has two tabs.
 
-
-
 * Legend - In this window, the user can customize the legend's visibility, set it's position and alignment using Position and Alignment combo boxes provided. You can also set back interior color using Back Interior combo box.
-
-
 
 ![](Chart-Wizard_images/Chart-Wizard_img14.png)
 
-
-
-
-
 * Border Style - Here the user can set custom borders to the legend. The visibility of the border, border color, its Dash style as well as the Border Width can be set easily by selecting the appropriate options.
 
-
-
 ![](Chart-Wizard_images/Chart-Wizard_img15.png)
-
-
-
 
 {% seealso %}
 

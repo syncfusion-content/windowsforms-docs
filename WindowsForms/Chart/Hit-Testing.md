@@ -21,16 +21,13 @@ Using the GetValueByPoint method, the mouse position in chart client-coordinates
 
 The below figure shows a chart where the tooltip text for each point shows the corresponding x, y value at that position. 
 
-
-
 ![](Hit-Testing_images/Hit-Testing_img1.jpeg)
-
-
-
 
 Code snippet for the above sample
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Chart control mouse move event.
 
@@ -48,7 +45,7 @@ private void chartControl_MouseMove(object sender,System.Windows.Forms.MouseEven
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' ChartControl mouse move event.
 
@@ -65,8 +62,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-
-
 #### GetPointByValue()
 
 The GetPointByValue method does the opposite of the above - given a chart coordinate it returns the client co-ordinate corresponding to that chart point.
@@ -77,14 +72,13 @@ The GetPointByValue method does the opposite of the above - given a chart coordi
 
 The Legend.GetItemBy method will let you get the reference to a legend item at a specific point. Implementing the below code sample, will display a tooltip with legend item name, on which the user mouse hover. 
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 private ToolTip toolTip2;
 
 this.chartControl1.Legend.MouseHover += new MouseEventHandler(legend_MouseHover);
-
-
 
 void legend_MouseHover(object sender, EventArgs e)
 
@@ -102,36 +96,32 @@ void legend_MouseHover(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 private toolTip2 As ToolTip
 
 AddHandler Me.chartControl1.Legend.MouseHover, AddressOf legend_MouseHover
 
-
-
 Private Sub legend_MouseHover(ByVal sender As Object, ByVal e As EventArgs)
 
-    ' Get the item at the specified location..
+' Get the item at the specified location..
 
-    Dim p1 As Point = Me.chartControl1.Legend.PointToClient(New Point(Control.MousePosition.X, Control.MousePosition.Y))
+Dim p1 As Point = Me.chartControl1.Legend.PointToClient(New Point(Control.MousePosition.X, Control.MousePosition.Y))
 
 Dim item As ChartLegendItem = chartControl1.Legend.GetItemBy(p1)    
 
 If item IsNot Nothing Then
 
-        Me.toolTip2.Show(item.Text, this.chartControl1.Legend, p1.X + 10, p1.Y + 20, 3000)
+Me.toolTip2.Show(item.Text, this.chartControl1.Legend, p1.X + 10, p1.Y + 20, 3000)
 
-    End If
+End If
 
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](Hit-Testing_images/Hit-Testing_img2.jpeg)
-
 
 ## Chart Area Bounds
 
@@ -139,13 +129,11 @@ End Sub
 
 Use the Bounds property to get the rectangular area comprising the chart area that includes the axis, axis titles and other sections.
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.ChartAreaPaint += new System.Windows.Forms.PaintEventHandler(chartControl1_ChartAreaPaint);
-
-
 
 void chartControl1_ChartAreaPaint(object sender, System.Windows.Forms.PaintEventArgs e)
 
@@ -162,11 +150,9 @@ void chartControl1_ChartAreaPaint(object sender, System.Windows.Forms.PaintEvent
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 AddHandler Me.chartControl1.ChartAreaPaint, AddressOf chartControl1_ChartAreaPaint
-
-
 
 Private Sub chartControl1_ChartAreaPaint(ByVal sender As Object, ByVal e As System.Windows.Forms.PaintEventArgs)
 
@@ -183,17 +169,15 @@ End Sub
 
 ![](Hit-Testing_images/Hit-Testing_img3.jpeg)
 
-
 ### Chart Plot Area Bounds
 
 Use the RenderBounds property to get the rectangular area comprising just the plot-area, bound by the axes.
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.ChartAreaPaint += new System.Windows.Forms.PaintEventHandler(chartControl1_ChartAreaPaint);
-
-
 
 void chartControl1_ChartAreaPaint(object sender, System.Windows.Forms.PaintEventArgs e)
 
@@ -207,14 +191,11 @@ void chartControl1_ChartAreaPaint(object sender, System.Windows.Forms.PaintEvent
 
 }
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 AddHandler Me.chartControl1.ChartAreaPaint, AddressOf chartControl1_ChartAreaPaint
-
-
 
 Private Sub chartControl1_ChartAreaPaint(ByVal sender As Object, ByVal e As System.Windows.Forms.PaintEventArgs)
 
@@ -228,6 +209,5 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ![](Hit-Testing_images/Hit-Testing_img4.jpeg)
