@@ -274,7 +274,7 @@ End Sub
 
 For more info regarding the Drag Drop related queries please refer our KB articles which can be viewed over [here](https://www.syncfusion.com/kb/windowsforms/gridcontrol?sortId=0&tags=drag-and-drop#).
 
-### Retaining the Dragged cCntents
+### Retaining the Dragged Contents
 
 By default while moving the contents from one grid to another using drag and drop operation, the contents of the first grid will be moved completely to the second grid. To overcome this make use of the [QueryDragDropMoveClearCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryDragDropMoveClearCells_EV.html#) event and set the `Cancel` property as `true`. 
 
