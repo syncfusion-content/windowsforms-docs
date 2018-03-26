@@ -11,11 +11,9 @@ documentation: ug
 
 When the LegendPosition property of the ChartControl is set to ChartDock.Floating, the position of the legend defaults to the top-right corner of the ChartArea. Once this is done, you can specify the coordinates via the Legend.Location property of the ChartLegend.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 this.chartControl1.LegendPosition = ChartDock.Floating;
 
@@ -23,15 +21,15 @@ this.chartControl1.Legend.Location = new Point(20,20);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.ChartControl1.LegendPosition = ChartDock.Floating
 
 Me.ChartControl1.Legend.Location = New Point(20,20)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 {% seealso %}
 

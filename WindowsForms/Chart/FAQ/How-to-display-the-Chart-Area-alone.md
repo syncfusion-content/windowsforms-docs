@@ -11,11 +11,9 @@ documentation: ug
 
 This can be achieved by setting the Legend.Visible property of ChartControl to False, ElementsSpacing property of ChartControl to Zero_,_ and__Text property of ChartControl to an Empty String.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 this.chartControl1.Text = "";
 
@@ -25,9 +23,7 @@ this.chartControl1.ElementsSpacing = 0;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.chartControl1.Text = ""
 
@@ -37,3 +33,4 @@ Me.chartControl1.ElementsSpacing = 0
 
 {% endhighlight %}
 
+{% endtabs %}	
