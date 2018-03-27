@@ -7,7 +7,7 @@ control: Grouping
 documentation: ug
 ---
 
-# How to Clear a Grouping
+# How to Clear Grouping
 To clear all grouping, call the groupingEngine.TableDescriptor.GroupedColumns.Clear method.
 
 {% tabs %}
