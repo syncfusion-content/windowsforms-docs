@@ -7,7 +7,7 @@ control: GridList
 documentation: ug
 ---
 
-# Data binding and Selection Modes
+# Data Binding and Selection Modes
 
 ## Data Binding
 
@@ -26,7 +26,7 @@ array.Add(new MyClass(005,"Bruch"));
 array.Add(new MyClass(006,"Johny"));
 this.gridlistControl1.DataSource = array;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Dim array As ArrayList = New ArrayList()
 array.Add(New [MyClass](1, "John David"))
 array.Add(New [MyClass](2, "Tom"))
@@ -56,7 +56,7 @@ this.gridListControl1.SelectionMode = SelectionMode.One;
 this.gridListControl1.SelectionMode = SelectionMode.MultiSimple;
 this.gridListControl1.SelectionMode = SelectionMode.MultiExtended;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.SelectionMode = SelectionMode.One
 Me.gridListControl1.SelectionMode = SelectionMode.MultiSimple
 Me.gridListControl1.SelectionMode = SelectionMode.MultiExtended
