@@ -55,7 +55,7 @@ private void Form1_Load(object sender, System.EventArgs e)
     this.gridDataBoundGrid1.Model.ColWidths.ResizeToFit(GridRangeInfo.Row(0), GridResizeToFitOptions.NoShrinkSize);
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 Me.gridDataBoundGrid1.DataSource = ReturnATable()
 Me.gridDataBoundGrid1.EnableAddNew = False
@@ -129,7 +129,7 @@ private void Form1_Load(object sender, System.EventArgs e)
     this.gridDataBoundGrid1.Model.ColWidths.ResizeToFit(GridRangeInfo.Row(0), GridResizeToFitOptions.NoShrinkSize);
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 Me.gridDataBoundGrid1.DataSource = ReturnATable()
 Me.gridDataBoundGrid1.EnableAddNew = False
