@@ -76,7 +76,7 @@ private DataTable ForeignKeyTable()
     return dataTable;
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 Me.gridDataBoundGrid1.DataSource = PrimaryTable()
 Me.gridDataBoundGrid1.EnableAddNew = False
