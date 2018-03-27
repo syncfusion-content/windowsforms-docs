@@ -14,7 +14,7 @@ The ScrollersFrame control attaches Office2007 Style scrollbars to any scrollabl
 ![](ScrollersFrame_images/ScrollersFrame_img1.jpeg) 
 
 
-### Attaching Scrollbar to a Control
+## Attaching Scrollbar to a Control
 
 To the Windows form, add a control, which should be attached with the Office2007Style scrollbars. Select the control in the ScrollersFrame.AttachedTo property.
 
@@ -25,7 +25,7 @@ To the Windows form, add a control, which should be attached with the Office2007
 //Attaching Scrolls using AttachedTo property
 this.scrollersFrame1.AttachedTo = this.treeViewAdv1;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Attaching Scrolls using AttachedTo property
 Me.scrollersFrame1.AttachedTo = Me.treeViewAdv1
 {% endhighlight %}
@@ -44,7 +44,7 @@ this.scrollersFrame2.HorizontalScroller.ControlsBefore.Add(buttonAdv3);
 this.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv1);
 this.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv2);
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Adding controls to the scrolls through ControlsAfter or ControlsBefore 
 Me.scrollersFrame2.HorizontalScroller.ControlsBefore.Add(buttonAdv3)
 Me.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv1)
@@ -82,7 +82,7 @@ Gets / sets a value to be added or subtracted from the Value Property, when vert
 this.scrollersFrame2.VerticalSmallChange = 25;
 this.scrollersFrame2.HorizontalSmallChange = 25;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.scrollersFrame2.VerticalSmallChange = 25
 Me.scrollersFrame2.HorizontalSmallChange  = 25
 {% endhighlight %}
@@ -112,7 +112,7 @@ Sets the office color schemes for the scrollbars when VisualStyle is set to Offi
 {% highlight c# %}
 this.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Office2007;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Office2007
 {% endhighlight %}
 {% endtabs %}
@@ -123,7 +123,7 @@ Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawSty
 {% highlight c# %}
 this.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Silver;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Silver
 {% endhighlight %}
 {% endtabs %}
@@ -145,7 +145,7 @@ We can also apply custom colors to the ScrollersFrame by setting OfficeColorSche
 this.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed;
 Office2007Colors.ApplyManagedColors(this, Color.LightSkyBlue);
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed
 Office2007Colors.ApplyManagedColors(Me, Color.LightSkyBlue)
 {% endhighlight %}
