@@ -7,10 +7,11 @@ control: Grouping
 documentation: ug
 ---
 
-# How to Clear a Sort?
+# How to Clear a Sort
 
 To clear all sorts, call the groupingEngine.TableDescriptor.SortedColumns.Clear method.
 
+{% tabs %}
 {% highlight C# %}
 
 // Removes all the sorting associated with the table.
@@ -26,8 +27,7 @@ this.gridGroupingControl1.TableDescriptor.SortedColumns.RemoveAt(index);
 
 {% highlight vbnet %}
 
- 
-' Removes all the sorting associated.
+ ' Removes all the sorting associated.
 Me.gridGroupingControl1.TableDescriptor.SortedColumns.Clear()
  
 ' Removes the sorting of the column mentioned as argument.
@@ -37,5 +37,6 @@ Me.gridGroupingControl1.TableDescriptor.SortedColumns.Remove()
 Me.gridGroupingControl1.TableDescriptor.SortedColumns.RemoveAt()
 
 {% endhighlight %}
+{% endtabs %}
 
 N> To remove a particular sort, use groupingEngine.TableDescriptor.SortedColumns.Remove or groupingEngine.TableDescriptor.SortedColumns.RemoveAt.
