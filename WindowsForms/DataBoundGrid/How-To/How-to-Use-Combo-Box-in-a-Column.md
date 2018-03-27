@@ -9,8 +9,6 @@ documentation: ug
 
 # How to Use Combo Box in a Column
 
-### Introduction
-
 The control type of a cell is part of the cell style and is determined by GridStyleInfo.CellType property. The items shown in the dropdown list can be provided in two ways.
 
 * Create StringCollection object that will hold your choices and then set this StringCollection in GridStyleInfo.ChoiceList property for the cell. 
@@ -18,149 +16,87 @@ The control type of a cell is part of the cell style and is determined by GridSt
 
 In the second case, use GridStyleInfo.DataSource, DisplayMember, and ValueMember properties to set datasource for the drop list. In addition to setting the cell type, ChoiceList, datasource, DisplayMember, and ValueMember, the DropDownStyle property of GridStyleInfo controls editing behavior of the combobox cell. You can also use GridStyleInfo.ShowButton property to control when the combo box button is visible. 
 
-#### Example
-
 Here is the code that sets column 2 to be a combo box with drop down list being set through the styles ChoiceList property. To access a column's style, you must use either GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumn depending upon whether you have explicitly added GridBoundColumns or not.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Requires to access StringCollection.
-
 using System.Collections.Specialized;       
-
-
 
 //...
 
 //Creates the list.
-
 StringCollection items = new StringCollection();
-
 items.AddRange(new string[]{"One", "Two", "Three", "Four", "Five"});
 
-
-
 //Sets the style properties.
-
 GridStyleInfo style = this.gridDataBoundGrid1.GridBoundColumns[1].StyleInfo;
-
 style.CellType = "ComboBox";
-
 style.ChoiceList = items;
-
 style.CellValue = "Five";
 
-
-
 //True drop down list - no editing.
-
 style.DropDownStyle = GridDropDownStyle.Exclusive;
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Requires to access StringCollection.
-
 Imports System.Collections.Specialized 
-
-
 
 '...
 
 'Creates the list.
-
 Dim items As New StringCollection
-
 items.AddRange(New String() {"One", "Two", "Three", "Four", "Five"})
 
-
-
 'Sets the style properties.
-
 Dim style As GridStyleInfo = Me.gridDataBoundGrid1.GridBoundColumns(1).StyleInfo
-
 style.CellType = "ComboBox"
-
 style.ChoiceList = items
-
 style.CellValue = "Five"
 
-
-
 'True drop list - no editing.
-
 style.DropDownStyle = GridDropDownStyle.Exclusive 
-
 {% endhighlight %}
+{% endtabs %}
 
 Here is the code that will set column 2 to a combobox setting items in the combobox through DataTable datasource.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 //Assumes this.dataTable is a DataTable object with at least 2 columns named "id" and "display".
 
-
-
 //Sets the style properties.
-
 GridStyleInfo style = this.gridDataBoundGrid1.GridBoundColumns[1].StyleInfo;
-
 style.CellType = "ComboBox";
-
 style.DataSource = dataTable;
 
-
-
 //Displays in the grid cell.
-
 style.DisplayMember = "display"; 
 
-
-
 //Values in the grid cell.
-
 style.ValueMember = "id"; 
-
 style.DropDownStyle = GridDropDownStyle.AutoComplete;
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Assumes this.dataTable is a DataTable object with at least 2 columns named "id" and "display".
 
-
-
 'Sets the style properties.
-
 Dim style As GridStyleInfo = Me.gridDataBoundGrid1.GridBoundColumns(1).StyleInfo
-
 style.CellType = "ComboBox"
-
 style.DataSource = dataTable
 
-
-
 'Displays in the grid cell.
-
-   style.DisplayMember = "display" 
-
-
+style.DisplayMember = "display" 
 
 'Values in the grid cell.
-
 style.ValueMember = "id" 
-
 style.DropDownStyle = GridDropDownStyle.AutoComplete
 
-
 {% endhighlight %}
+{% endtabs %}
