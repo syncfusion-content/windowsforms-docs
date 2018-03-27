@@ -7,7 +7,7 @@ control: Grouping
 documentation: ug
 ---
 
-# How to Clear a Sort
+# How to Clear Sorting
 
 To clear all sorts, call the groupingEngine.TableDescriptor.SortedColumns.Clear method.
 
