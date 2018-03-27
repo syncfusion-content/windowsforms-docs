@@ -452,7 +452,7 @@ gridControl1(2, 2).Tag = "http://www.syncfusion.com"
 
 ![](Cell-Types_images/Cell-Types_img40.png)
 
-### Changing the color of the link while mouse hover
+### Changing the Color of the Link while Mouse Hover
 It is possible to change the color of the link while mouse hover by using of the [ActiveLinkColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LinkLabelCellRenderer~ActiveLinkColor.html) property. This property can be accessed from the [LinkLabelCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html) class.
 
 {% tabs %}

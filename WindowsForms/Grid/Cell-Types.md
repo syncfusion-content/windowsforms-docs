@@ -13,7 +13,7 @@ GridControl allows the inclusion of some special controls in the grid cells. Thi
 
 In GridControl each cell has been created by [GridCellModelBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellModelBase.html) and [GridCellRendererBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html). `GridCellModelBase` defines the data or model part of a cell type. It holds all the data information of a cell.**Rendering** generally refers to the process of creating a visual representation on a user's screen. `GridCellRendererBase` acts a base class for all the renderer part of the cell type.  
 
-## Setting cell type for a cell
+## Setting Cell Type for a Cell
 This section will explain on how to add a basic cell type into a grid cell. To add the desired cell type in a cell, the [CellType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellType.html) property can be used. There are two ways to assign cell types, by string format or by using the [GridCellTypeName](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellTypeName.html) static class which contains all the built-in cell type names in it. 
 
 {% tabs %}
@@ -512,7 +512,7 @@ Me.gridControl1(2, 2).CellValue = "Aqua"
 
 ![](Cell-Types_images/Cell-Types_img13.png)
 
-### Customizing the tab name of the ColorUIControl
+### Customizing the Tab Name of the ColorUIControl
 As mentioned in the beginning of this topic, each cell type has been created by its own cell model and cell renderer. To customize the tab name custom classes has to be created which derived from the [GridDropDownCellModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridDropDownCellModel.html) and [GridDropDownCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridDropDownCellRenderer.html) built-in classes. In this derived class override the InitializeDropDownContainer method and customize the tab name.
 
 {% tabs %}
@@ -578,7 +578,7 @@ Me.gridControl1(2, 2).CellType = "Control"
 
 ![](Cell-Types_images/Cell-Types_img14.png)
 
-### Inserting an Animated image in cell
+### Inserting an Animated Image in Cell
 It is possible to animate an image in grid cell by setting the cell type as `Control` and assigning it to a picture box control. To display the image as an animated one it is necessary to refresh the picture cell for a given time interval. For more details and sample please check the KB link over [here](https://www.syncfusion.com/kb/4502/how-to-insert-animated-image-to-a-grid-cell).
 
 ## Currency Cell Type
@@ -967,23 +967,23 @@ numericCellType.CellType = GridCellTypeName.NumericUpDown
 
 Dim numeric As New GridNumericUpDownCellInfo()
 
-' Represents the first value of the NumericUpDown cell type.
+'Represents the first value of the NumericUpDown cell type.
 numeric.StartValue = 5
 
-' Represents the maximum value.
+'Represents the maximum value.
 numeric.Maximum = 10
 
-' Represents the minimum value.
+'Represents the minimum value.
 numeric.Minimum = 0
 
-' Represents the step to increase.
+'Represents the step to increase.
 
-' Decrease while clicking up or down arrow.
+'Decrease while clicking up or down arrow.
 numeric.Step = 2
 
-' Indicates whether to start over when the value.
+'Indicates whether to start over when the value.
 
-' Reaches the maximum or minimum.
+'Reaches the maximum or minimum.
 numeric.WrapValue = True
 
 numericCellType.NumericUpDown = numeric
@@ -1055,20 +1055,20 @@ Dim progressBar As New GridProgressBarInfo()
 'It denotes the Background style for the Progress Bar.
 progressBar.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.VerticalGradient
 
-' It checks whether background segment has to be shown.
+'It checks whether background segment has to be shown.
 progressBar.BackSegments = False
 
-' Sets the Font color of the progress bar text.
+'Sets the Font color of the progress bar text.
 progressBar.FontColor = System.Drawing.Color.White
 
-' It denotes the foreground style of the Progress Bar.
+'It denotes the foreground style of the Progress Bar.
 progressBar.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube
 
-' Checks whether the text has to visible or not.
+'Checks whether the text has to visible or not.
 progressBar.TextVisible = True
 
-' Sets the start color and end color of the foreground.
-' If ProgressStyle is in Tube.
+'Sets the start color and end color of the foreground.
+'If ProgressStyle is in Tube.
 progressBar.TubeEndColor = System.Drawing.Color.Honeydew
 progressBar.TubeStartColor = System.Drawing.Color.Green
 progressBar.ProgressValue = 50
@@ -1173,7 +1173,7 @@ Me.gridControl1.TableStyle.CharacterCasing = CharacterCasing.Upper
 
 ![](Cell-Types_images/Cell-Types_img31.png)
 
-## Creating a custom cell type
+## Creating a Custom Cell Type
 Apart from the built in custom cell types given by the GridControl, it is also possible to create an own cell type in GridControl. In GridControl each cell has been created by [GridCellModelBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellModelBase.html) and [GridCellRendererBase](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html)
 
 So every custom cell type also requires a model base class and a renderer base class. The Model class handles the serialization of the control and creates the renderer for the custom control. The renderer class handles the UI requirements of the cell.

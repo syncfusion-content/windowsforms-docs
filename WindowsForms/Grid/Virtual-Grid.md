@@ -15,7 +15,7 @@ Virtual Grid is designed to display very large amount of data extremely fast. I
 
 This section explains about creating data source and how to initialize a virtual grid.
 
-### Creating a data source
+### Creating a Data Source
 
 User can set any external data source that can return value based on the row column parameters that are passed to it. In addition, external data source should have knowledge of the number of rows and columns.
 
@@ -29,44 +29,40 @@ N> The `ExternalData` class is just a model class. Any additional properties or 
 {% highlight c# %}
 class ExternalData
 {
-private int _rowCount;
+    private int _rowCount;
+    private int _colCount;
+    private int[,] _data;
 
-private int _colCount;
+    public ExternalData(int rows, int cols)
+    {
+        //Sets number of rows and columns.
+        _rowCount = rows;
+        _colCount = cols;
 
-private int[,] _data;
+        //Allocates memory to store data values.
+        _data = new int[_rowCount, _colCount];
 
-public ExternalData(int rows, int cols)
-{
-
-//Sets number of rows and columns.
-_rowCount = rows;
-_colCount = cols;
-
-//Allocates memory to store data values.
-_data = new int[_rowCount, _colCount];
-
-// Sets the data. 
-for (int i = 0; i < RowCount; ++i)
-for (int j = 0; j < ColCount; ++j)
-_data[i, j] = 100 * i + j;
-
-}
+        // Sets the data. 
+        for (int i = 0; i < RowCount; ++i)
+        for (int j = 0; j < ColCount; ++j)
+        _data[i, j] = 100 * i + j;
+    }
 
 //Sets Properties.
 public virtual int this[int row, int col]
 {
-get { return _data[row, col]; }
-set { _data[row, col] = value; }
+    get { return _data[row, col]; }
+    set { _data[row, col] = value; }
 }
 
 public virtual int RowCount
 {
-get { return _rowCount; }
+    get { return _rowCount; }
 }
 
 public virtual int ColCount
 {
-get { return _colCount; }
+    get { return _colCount; }
 }
 }
 {% endhighlight %}
@@ -289,15 +285,13 @@ this.gridControl1.QueryRowHeight += gridControl1_QueryRowHeight;
 
 void gridControl1_QueryRowHeight(object sender, GridRowColSizeEventArgs e)
 {
-
-//Set Row Heights for alternative rows.
-if (e.Index % 2 == 0)
-{
-
-//Determines Row Height.
-e.Size = 25;
-e.Handled = true;
-}
+    //Set Row Heights for alternative rows.
+    if (e.Index % 2 == 0)
+    {
+        //Determines Row Height.
+        e.Size = 25;
+        e.Handled = true;
+    }
 }
 {% endhighlight %}
 
@@ -412,7 +406,7 @@ Me.gridControl1.Model.ResetVolatileData()
 {% endhighlight %}
 {% endtabs %}
 
-### Refreshing Grid for particular range
+### Refreshing Grid for Particular Range
 
 It is possible to refresh grid for a particular range by using the [RefreshRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RefreshRange.html#) method. Required range can be passed through this method by using the `GridRangeInfo` class. 
 {% tabs %}

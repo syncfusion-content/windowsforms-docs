@@ -48,7 +48,7 @@ printPreviewDialog.Document = gridPrintDocument;
 printPreviewDialog.ShowDialog();
 {% endhighlight %}
 {% highlight vb %}
-' Converting the grid to printable document
+'Converting the grid to printable document
 Dim gridPrintDocument As New GridPrintDocument(Me.gridControl1, True)
 Dim printPreviewDialog As New PrintPreviewDialog()
 
@@ -72,8 +72,8 @@ void gridControl1_KeyDown(object sender, KeyEventArgs e)
    if(e.Control && e.KeyCode== Keys.P)
    {
 
-//Call the method used to print the grid.
-       PrintGridControl();
+        //Call the method used to print the grid.
+        PrintGridControl();
    }
 }
 
@@ -169,7 +169,7 @@ gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
-### Printing the grid with the Frame
+### Printing the Grid with the Frame
 The contents of the grid can be printed with an outer frame by setting the [PrintFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~PrintFrame.html) property to `true`.
 {% tabs %}
 {% highlight c# %}
@@ -408,7 +408,7 @@ End Sub
 ## Printing Customizations
 The printing options of the grid can be customized by using the following methods.
 
-### Applying Header Colors While Printing
+### Applying Header Colors while Printing
 The cell styles can be changed dynamically on printing the grid by using [PrintingMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrintingMode.html) property. The following code snippet is used to set the header colors for the GridControl only on the printed document,
 {% tabs %}
 {% highlight c# %}
@@ -559,7 +559,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Print the selected range of the cells 
+### Print the Selected Range of the Cells 
 To print only the selected range of cells from the grid, set the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) value as `Selection`. It will print the selected range of cells or the selected page from the GridControl. 
 {% tabs %}
 {% highlight c# %}
@@ -584,7 +584,7 @@ The `PrintRange` enumeration has the following printing options,
 
 N> By default the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) will be pointed to `AllPages`, so that the print method will print all the pages of the grid.
 
-### Printing needed pages alone
+### Printing Needed Pages alone
 The needed pages in the grid can only be printed by setting the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) property value as `SomePages`.
 {% tabs %}
 {% highlight c# %}

@@ -36,17 +36,17 @@ The following code example illustrates how to set the data tor tree view node fr
 {% highlight c# %}
 void GridQueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-if (e.RowIndex > 0 && e.ColIndex > 0)
-{
-e.Style.CellValue = externalData[e.RowIndex - 1].Items[e.ColIndex - 1];
-if (e.ColIndex == 1)
-{
-e.Style.CellType = "TreeCell";
-e.Style.Tag = externalData[e.RowIndex - 1].IndentLevel;
-e.Style.ImageIndex = (int) externalData[e.RowIndex - 1].ExpandState;
-}
-}
-e.Handled = true;
+    if (e.RowIndex > 0 && e.ColIndex > 0)
+    {
+        e.Style.CellValue = externalData[e.RowIndex - 1].Items[e.ColIndex - 1];
+        if (e.ColIndex == 1)
+        {
+            e.Style.CellType = "TreeCell";
+            e.Style.Tag = externalData[e.RowIndex - 1].IndentLevel;
+            e.Style.ImageIndex = (int) externalData[e.RowIndex - 1].ExpandState;
+        }
+    }
+    e.Handled = true;
 }
 
 {% endhighlight %}

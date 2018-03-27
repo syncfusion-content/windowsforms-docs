@@ -68,7 +68,7 @@ Me.gridControl1.RowStyles(2).CellTipText = "Hello"
 ![](ToolTip_images/ToolTip_img4.png)
 
 
-### Adding ToolTip using QueryCellInfo event
+### Adding ToolTip using QueryCellInfo Event
 
 The ToolTip can be added conditionally to the specific cell or row or column by using the [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCellInfo_EV.html) event.
 
@@ -78,16 +78,15 @@ this.gridControl1.QueryCellInfo += gridControl1_QueryCellInfo;
 
 void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-
-// Enabling comment tip for particular cell.
+    // Enabling comment tip for particular cell.
     if (e.RowIndex == 1 && e.ColIndex == 1)
         e.Style.CellTipText = "Cell comment";
 
-// Enabling comment tip for row.
+    // Enabling comment tip for row.
     if (e.ColIndex > 0 && e.RowIndex == 5)
         e.Style.CellTipText = "Row comment";
 
-// Enabling comment tip for column.
+    // Enabling comment tip for column.
     if (e.RowIndex > 0 && e.ColIndex == 4)
         e.Style.CellTipText = "Column comment";
 }
@@ -97,17 +96,17 @@ AddHandler gridControl1.QueryCellInfo, AddressOf gridControl1_QueryCellInfo
 
 Private Sub gridControl1_QueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
 
-' Enabling comment tip for particular cell.
+'Enabling comment tip for particular cell.
     If e.RowIndex = 1 AndAlso e.ColIndex = 1 Then
         e.Style.CellTipText = "Cell comment"
     End If
 
-' Enabling comment tip for row.
+'Enabling comment tip for row.
     If e.ColIndex > 0 AndAlso e.RowIndex = 5 Then
         e.Style.CellTipText = "Row comment"
     End If
 
-' Enabling comment tip for column.
+'Enabling comment tip for column.
     If e.RowIndex > 0 AndAlso e.ColIndex = 4 Then
         e.Style.CellTipText = "Column comment"
     End If
@@ -149,7 +148,7 @@ Me.gridControl1.CellToolTip.Active = False
 {% endhighlight %}
 {% endtabs %}
 
-## Setting ToolTip delay time
+## Setting ToolTip Delay Time
 
 The below properties are used to set the ToolTip delay time.
 
@@ -300,7 +299,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Identify whether cell has ToolTip
+## Identify whether Cell has ToolTip
 
 To identify whether the cell has ToolTip or not, [HasCellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~HasCellTipText.html) property can be used in the `QueryCellStyleInfo` event. 
 
