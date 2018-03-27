@@ -86,7 +86,7 @@ The Schedule control, by default, allows you to set the time interval for schedu
 {% highlight c# %}
 this.scheduleControl1.AllowSecondsInAppointment = true;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.scheduleControl1.AllowSecondsInAppointment = True
 {% endhighlight %}
 {% endtabs %}
@@ -139,7 +139,7 @@ if (item != null)
     dataProvider.AddNewRecurringAppointments(item, new DateTime(2015, 09, 09));
 }
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Dim dataProvider As IRecurringScheduleDataProvider = TryCast(scheduleProvider, IRecurringScheduleDataProvider)
 Dim app As IScheduleAppointment = scheduleProvider.NewScheduleAppointment()
 Dim item As IRecurringScheduleAppointment = TryCast(app, IRecurringScheduleAppointment)
