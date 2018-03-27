@@ -6,7 +6,7 @@ platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
-# How to Clear a Filter
+# How to Clear Filtering
 To clear all filters, call the groupingEngine.TableDescriptor.RecordFilters.Clear method.
 
 {% tabs %}
