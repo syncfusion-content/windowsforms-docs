@@ -87,7 +87,7 @@ A sample of this feature is available in the following location:
 
 You can show an error icon or error message box as an alert for incorrect data. 
 
-### Displaying Error Icon
+### Displaying error icon
 
 You can show the error icon in the cell and row header using the ShowErrorIcon and the ShowRowHeaderErrorIcon properties respectively. 
 
@@ -101,7 +101,7 @@ The following code illustrates how to display the error icon on both the cell as
 this.gridDataBoundGrid1.CurrentCell.ShowErrorIcon = true;
 this.gridDataBoundGrid1.ShowRowHeaderErrorIcon = true; 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridDataBoundGrid1.CurrentCell.ShowErrorIcon = True
 Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
 {% endhighlight %}
@@ -111,7 +111,7 @@ Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
 
 
 
-### Displaying Error Message Box
+### Displaying error message box
 
 You can show an error dialog using ShowErrorMessageBox property and specify the content to be displayed using the ValidationErrorText property. 
 
@@ -122,7 +122,7 @@ The following code illustrates this:
 this.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= false;
 this.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text";
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridDataBoundGrid1.CurrentCell.ShowErrorMessageBox= False
 Me.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text"
 {% endhighlight %}
@@ -141,7 +141,7 @@ The following code illustrates this:
 {% highlight C# %}
 this.gridDataBoundGrid1.CurrentCell.SetError("Please enter valid number");
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridDataBoundGrid1.CurrentCell.SetError("Please enter valid number")
 {% endhighlight %}
 {% endtabs %}
