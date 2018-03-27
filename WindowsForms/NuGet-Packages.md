@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NuGet Packages | Windows Forms | Syncfusion
+title: Windows Forms | NuGet Packages | Syncfusion
 description: NuGet Packages
 platform: windowsforms
 control: NuGet Packages
