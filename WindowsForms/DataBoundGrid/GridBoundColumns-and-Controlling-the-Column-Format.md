@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# GridBoundColumns and Controlling the Column Format
+# Columns
 
 To control properties of a column in your Grid DataBound Grid, you must use GridBoundColumn class object. You can also explicitly add GridBoundColumn object to GridDataBoundGrid.GridBoundColumns collection for each column that you want to see in the grid or you can let GridDataBoundGrid.Binder class generate these columns for you. 
 
@@ -55,7 +55,7 @@ private void Form1_Load(object sender, System.EventArgs e)
     this.gridDataBoundGrid1.Model.ColWidths.ResizeToFit(GridRangeInfo.Row(0), GridResizeToFitOptions.NoShrinkSize);
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 Me.gridDataBoundGrid1.DataSource = ReturnATable()
 Me.gridDataBoundGrid1.EnableAddNew = False
@@ -129,7 +129,7 @@ private void Form1_Load(object sender, System.EventArgs e)
     this.gridDataBoundGrid1.Model.ColWidths.ResizeToFit(GridRangeInfo.Row(0), GridResizeToFitOptions.NoShrinkSize);
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 Me.gridDataBoundGrid1.DataSource = ReturnATable()
 Me.gridDataBoundGrid1.EnableAddNew = False

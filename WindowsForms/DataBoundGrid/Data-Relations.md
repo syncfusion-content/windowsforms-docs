@@ -32,7 +32,7 @@ this.customerGrid1 = new GridHierarchicalDataBoundGrid(this, this.dataSet11.Cust
 this.dataSet11.Orders, this.orderGrid2, new QueryFilterStringEventHandler(ProvideOrdersFilterStrings),
 new QueryFormatGridEventHandler(ProvideOrderFormat), true);
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Parent table to Child table.
 
 'Creates the outermost grid for customers table and uses GridHierarchicalDataBoundGrid class.
@@ -55,7 +55,7 @@ if (this.customerGrid1.Model[e.Row, e.Column + 1].Text != "")
 e.FilterString = string.Format("CustomerID = '{0}'", this.customerGrid1.Model[e.Row, e.Column + 1].Text);
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Parent table to Child table.
 
 Private Sub ProvideOrdersFilterStrings(ByVal sender As Object, ByVal e As QueryFilterStringEventArgs)
@@ -75,13 +75,13 @@ End Sub
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Drop Grid Demo_
+**_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Drop Grid Demo_**
 
 ## Multiple Nested Relations
 
 Grid Data Bound Grid control supports multiple nested relations. A relation can be added in the data source and the data source can be set to GridDataBoundGrid. Then the name of the relation can be passed through Grid.Binder.AddRelation function to show a hierarchical pattern.
 
-### Example:
+### Example
 
 The following code example illustrates the display of a DataSet with multiple nested relations. The sample displays NorthWind's 'Category', 'Products' and the 'Orders_Details' table, and allows you to expand and collapse the order details for each order and products for each category. After adding a relation in the dataset and setting DataSource to the grid, the name of the relation is passed through Grid.Binder.AddRelation function in order to show hierarchical pattern.
 
@@ -90,7 +90,7 @@ The following code example illustrates the display of a DataSet with multiple ne
 GridHierarchyLevel hierarchyLevelCategory_Products = gridBinder.AddRelation("Category_Products");
 GridHierarchyLevel hierarchyLevelProducts_OrderDetails = gridBinder.AddRelation("Products_OrderDetails");
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Dim hierarchyLevelCategory_Products As GridHierarchyLevel = gridBinder.AddRelation("Category_Products")
 Dim hierarchyLevelProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRelation("Products_OrderDetails")
 {% endhighlight  %}
@@ -101,7 +101,7 @@ Dim hierarchyLevelProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRe
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\Expand Grid Demo_
+**_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\Expand Grid Demo_**
 
 ## Hierarchical Grid with Tree Lines
 
@@ -111,7 +111,7 @@ Grid Data Bound Grid supports display of hierarchical grid with tree lines. This
 {% highlight c# %}
 this.gridDataBoundGrid1.ShowTreeLines = true;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridDataBoundGrid1.ShowTreeLines = True
 {% endhighlight  %}
 {% endtabs %}
@@ -124,7 +124,7 @@ With ShowTreeLines property set to true, there is no separate column allotted fo
 
 A sample demonstrating this feature is available under the following sample installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\GDBG Tree Lines Demo_
+**_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Hierarchy\GDBG Tree Lines Demo_**
 
 ## ExpandAll and CollapseAll Methods
 
@@ -137,7 +137,7 @@ _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridData
 {% highlight c# %}
 this.gridDataBoundGrid1.ExpandAll();
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridDataBoundGrid1.ExpandAll()
 {% endhighlight %}
 {% endtabs %}
@@ -155,11 +155,8 @@ Me.gridDataBoundGrid1.ExpandAll()
 {% highlight c# %}
  this.gridDataBoundGrid1.CollapseAll();
 {% endhighlight %}
-{% highlight vbnet %} 
+{% highlight vb %} 
 Me.gridDataBoundGrid1.CollapseAll()
 {% endhighlight %}
 {% endtabs %}
    ![](Data-Relations_images/Data-Relations_img5.jpeg) 
-
-   {:.prettyprint}
-

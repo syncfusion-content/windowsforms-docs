@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Using Master-Details Relation
+# Master-Details Relation
 
 To define simple Master-Details relation, you must have two tables. The first is a Master table that has a column whose values are also included in a second table, referred to as the Details table. You must display these two tables in two grids, which are called Master grid and Details grid. As you click a row in the Master grid, the rows displayed in the Details Grid will be restricted to only those rows whose common value matches the value in the selected Master grid row. 
 
@@ -41,7 +41,7 @@ private void Form1_Load(object sender , System.EventArgs e)
     this.detailsGrid.DataMember = "CustomersToOrders";
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 'Fills Data Set with two tables.
