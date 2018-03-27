@@ -9,10 +9,9 @@ documentation: ug
 # How to Bind a Datasource to the Grouping Engine?
 Essential Grouping can use any IList object holding objects and a common System.Type as its datasource. The public properties of the common type can be used to group, sort and summarize the data in the IList.
 
-## Example
-
 The following code shows how to set an IList object to be the data source of a GroupingEngine object. Within Essential Grouping, the items in your IList datasource are referred to as records.
 
+{% tabs %}
 {% highlight C# %}
  
 using Syncfusion.Grouping;
@@ -24,7 +23,7 @@ Engine groupingEngine = new Engine();
 groupingEngine.SetSourceList(list);
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
  Imports Syncfusion.Grouping
  
@@ -36,4 +35,6 @@ groupingEngine.SetSourceList(list)
  Syncfusion Logo Essential Studio Windows Forms - v. 13.2.0.29 Class Reference Demo Support
  
  {% endhighlight %}
+ {% endtabs %}
+ 
  

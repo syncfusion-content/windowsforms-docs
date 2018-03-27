@@ -41,7 +41,6 @@ groupingEngine.SetSourceList(list);
 }
 {% endhighlight %}
  
-   {:.prettyprint }
 {% highlight vb %}
 Sub Main()
 
@@ -62,7 +61,7 @@ groupingEngine.SetSourceList(list)
 End Sub 
 {% endhighlight %}
 {% endtabs %}
-   {:.prettyprint }
+  
 
 2. You are now ready to apply a filter to the data. Say for example you want to see only those items whose property D has the value d1. You must observe that D is a string that has non-numeric values. So, in this case you will need to use one of the string comparison operators (LIKE or MATCH) in your filter condition.
 3. To add a filter condition, you will need to add a RecordFilterDescriptor to the Engine.TableDescriptor.RecordFilters collection. 
@@ -120,7 +119,6 @@ foreach(Record rec in groupingEngine.Table.FilteredRecords)
 Console.ReadLine(); 
 {% endhighlight %}
  
-   {:.prettyprint }
 {% highlight vb %}
 ' Display the data before filtering.
 Dim rec As Record
@@ -155,7 +153,6 @@ Console.ReadLine()
 {% endhighlight %}
 {% endtabs %}
  
-   {:.prettyprint }
 
 
    ![](Data-Manipulation_images/Data-Manipulation_img2.png)
@@ -183,7 +180,6 @@ foreach(Record rec in groupingEngine.Table.FilteredRecords)
 Console.ReadLine(); 
 {% endhighlight %}
  
-   {:.prettyprint }
 {% highlight vb %}
 groupingEngine.TableDescriptor.RecordFilters.Clear()
 recordFilterDescriptor = New RecordFilterDescriptor("[D] LIKE 'd1' OR [B] = 2")
@@ -203,7 +199,6 @@ Next rec
 Console.ReadLine() 
 {% endhighlight %}
 {% endtabs %}
-   {:.prettyprint }
 
 
    ![](Data-Manipulation_images/Data-Manipulation_img3.png)
@@ -236,7 +231,7 @@ Engine groupingEngine = new Engine();
 // Set its datasource.
 groupingEngine.SetSourceList(list);
 {% endhighlight %}
-   {:.prettyprint }
+
 {% highlight vb %}
 ' Create an array list of random MyObjects.
 Dim list As New ArrayList()
@@ -254,7 +249,7 @@ Dim groupingEngine As New Engine()
 groupingEngine.SetSourceList(list)
 {% endhighlight %}
 {% endtabs %}
-   {:.prettyprint }
+ 
 
 2. Now you must add code to list the data, add an expression property and then display the value of the expression. To retrieve the value, you must use the Record.GetValue method by passing it as the name of the expression that you had assigned when it was created.
 
@@ -290,7 +285,6 @@ foreach(Record rec in groupingEngine.Table.FilteredRecords)
 Console.ReadLine(); 
 {% endhighlight %}  
 
-   {:.prettyprint }
 {% highlight vb %}
 ' Display the data before filtering.
 Dim rec As Record
@@ -317,7 +311,6 @@ Console.WriteLine(rec.GetValue("MultipleOfB"))
 Next rec
 {% endhighlight %}
 {% endtabs %}
-   {:.prettyprint }
 
    ![](Data-Manipulation_images/Data-Manipulation_img4.png)
 
@@ -379,7 +372,7 @@ foreach(Record rec in groupingEngine.Table.FilteredRecords)
 // Pause
 Console.ReadLine(); 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 ' Create an array list of random MyObjects.
 Dim list As New ArrayList()
 Dim r As New Random()
@@ -447,7 +440,7 @@ public int Add(string propertyName);
 public int Add(string propertyName, ListSortDirection direction);
 public int Add(SortColumnDescriptor sdc); 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Overloads Public Function Add(propertyName As String) As Integer
 Overloads Public Function Add(propertyName As String, direction As ListSortDirection) As Integer
 Overloads Public Function Add(sdc As SortColumnDescriptor) As Integer
@@ -502,7 +495,6 @@ public int Compare(object x, object y)
 }
 {% endhighlight %}
 
-   {:.prettyprint }
 {% highlight vb %}
 Public Class AComparer
 Implements IComparer
@@ -545,7 +537,7 @@ End Function
 End Class
 {% endhighlight %}
 {% endtabs %}
-   {:.prettyprint }
+ 
 
 
 3. Add this code to the Main method to use this custom comparer to sort column A.
@@ -604,8 +596,7 @@ foreach(Record rec in groupingEngine.Table.FilteredRecords)
 // Pause
 Console.ReadLine(); 
 {% endhighlight %}
-   ~~~
-   {:.prettyprint }
+
 {% highlight vb %}
 ' Create an array list of random MyObjects.
 Dim list As New ArrayList()
@@ -659,7 +650,6 @@ Next rec
 Console.ReadLine() 
 {% endhighlight %}   
 {% endtabs %}
-   {:.prettyprint }
 
    ![](Data-Manipulation_images/Data-Manipulation_img7.png)
 
