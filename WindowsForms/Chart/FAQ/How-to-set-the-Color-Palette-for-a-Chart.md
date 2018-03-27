@@ -11,11 +11,9 @@ documentation: ug
 
 ChartColorPalette.Color property can be used to specify the color palettes for the Chart.ColorPalette class. Apart from specifying predefined palettes, you can specify your own palette colors using the Custom style in the ChartColorPalette.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 // Specify a custom color.
 
@@ -25,9 +23,7 @@ this.chartControl1.Palette = ChartColorPalette.Custom;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' Specify a custom color.
 
@@ -36,6 +32,8 @@ Me.chartControl1.CustomPalette = New System.Drawing.Color() {System.Drawing.Colo
 Me.chartControl1.Palette = ChartColorPalette.Custom
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](How-to-set-the-Color-Palette-for-a-Chart_images/How-to-set-the-Color-Palette-for-a-Chart_img1.jpeg)
 

@@ -53,6 +53,8 @@ Adding Localization to an application
 
 3. Specify the culture using the Localize property as given in the following code:
 
+{% tabs %}  
+
 {% highlight c# %}
 
 this.chartControl1.Localize=”de-DE”;
@@ -64,6 +66,8 @@ this.chartControl1.Localize=”de-DE”;
 Me.chartControl1.Localize=”de-DE”
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Localization_images/Localization_img5.png)
 

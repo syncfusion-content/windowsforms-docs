@@ -20,7 +20,7 @@ The following code example allows you to set the style for the RecordNavigationC
 {% highlight c# %}
 this.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 {% endhighlight  %}
 {% endtabs %}

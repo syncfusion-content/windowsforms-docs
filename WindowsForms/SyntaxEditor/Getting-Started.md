@@ -38,6 +38,7 @@ Syncfusion.Tools.Windows.dll
 </td>
 <td>
 Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the Edit Control.
+</td>
 </tr>
 <tr>
 <td>
@@ -53,7 +54,7 @@ Syncfusion.Edit.Windows contains the class that handles all UI operations and co
 
 You can create the Windows Forms application with EditControl as follows:
 
-1. [Creating project](#creating-the-project)
+1. [Creating the project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
 4. [Loading file](#loading-file)
@@ -146,7 +147,7 @@ The following illustration shows Edit Control was created.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-## Loading file
+### Loading file
 
 `LoadFile` method of Edit Control helps to loads the content of any desired file into the Edit Control, instead of typing the code in it.
 
@@ -171,7 +172,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-## Syntax Highlighting
+### Syntax Highlighting
 
 The Edit Control provides built-in support for a procedural, markup and SQL languages and facilitates the users to provide custom language configurations. By using the `ApplyConfiguration` method, we can set the Edit Control to use any of the pre-defined configuration settings.
 
