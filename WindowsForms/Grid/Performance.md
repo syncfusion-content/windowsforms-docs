@@ -252,7 +252,7 @@ GridControl provides a property named [UseOldHiddenScrollLogic](http://help.sync
 GridControlBase.UseOldHiddenScrollLogic = true;
 {% endhighlight %}
 {% highlight vb %}
-’Enables the old logic for scrolling while hiding the rows and columns.
+'Enables the old logic for scrolling while hiding the rows and columns.
 GridControlBase.UseOldHiddenScrollLogic = True
 {% endhighlight %}
 {% endtabs %}
@@ -268,7 +268,7 @@ GridControl provides a rich set of options for exporting data to Microsoft Excel
 converter.ExportStyle = false;
 {% endhighlight %}
 {% highlight vb %}
-’ Indicates to stop exporting the styles in GridControl
+'Indicates to stop exporting the styles in GridControl
 converter.ExportStyle = True
 {% endhighlight %}
 {% endtabs %}

@@ -28,10 +28,10 @@ gridControl1.ColCount = 4;
 //Looping through the cells and assigning the values based on row and column index
 for (int row = 1; row <= gridControl1.RowCount; row++)
 {
-for (int col = 1;col <= gridControl1.ColCount; col++)
-{
-gridControl1.Model[row, col].CellValue = string.Format("{0}/{1}", row, col);
-}
+    for (int col = 1;col <= gridControl1.ColCount; col++)
+    {
+        gridControl1.Model[row, col].CellValue = string.Format("{0}/{1}", row, col);
+    }
 }
 {% endhighlight %}
 
@@ -238,5 +238,3 @@ Me.gridControl1.ColStyles(3).CellValue = "Red"
 {% endtabs %}
 
 ![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img10.jpeg)
-
-

@@ -64,7 +64,7 @@ The Grid List control sample that ships with Essential Grid does not use the des
 
 For the complete implementation details, refer to the sample in the below installation path.
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_
+**_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_**
 
 
 {% tabs %}
@@ -83,7 +83,7 @@ gridListBox1.SelectionMode = SelectionMode.One;
 //Makes the last column wide enough to fill client area.
 gridListBox1.FillLastColumn = true; 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Sets to array list of states.
 gridListBox1.DataSource = USStates        
 

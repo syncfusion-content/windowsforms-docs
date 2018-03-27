@@ -93,7 +93,7 @@ Me.gridControl1.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2
 {% endtabs %}
 ![](Excel-Like-Features_images/CellGrid_img4.png)
 
-## Excel-Like Current Cell
+## Excel-like Current Cell
 To have the Excel-Like current cell in the GridControl, set the [ExcelLikeCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ExcelLikeCurrentCell.html) property to `true`. When the current cell moves out of a selected range, then the range will be cleared. Whereas the current cell can be moved inside a selected range, the range will be stayed.
 
 {% tabs %}
@@ -109,7 +109,7 @@ Me.gridControl1.ExcelLikeCurrentCell = True
 {% endtabs %}
 ![](Excel-Like-Features_images/Excel-Like-Features_img2.jpeg)
 
-## Excel-Like Alignments
+## Excel-like Alignments
 In Excel, by default the strings are aligned to left and the integer, double or decimal values are aligned to the right side of the cell. The text alignments in grid cells can be similar to text alignment in Excel cells by setting the [ExcelLikeAlignment](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ExcelLikeAlignment.html) property to `true`. 
 
 {% tabs %}
@@ -161,7 +161,7 @@ Me.tabBarPage3.Controls.Add(gridControl3)
 {% endtabs %}
 ![](Excel-Like-Features_images/Excel-Like-Features_img4.jpeg)
 
-## Excel-like comment tip
+## Excel-like Comment Tip
 Excel-like cell comment tips can be included in the GridControl by implementing the[IMouseController](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.IMouseController.html) interface. The `GridExcelTipStyleProperties` class is used to define the `Excel-Like comment tip` for the cell. To add, delete or modify the comment, right-click on the cell or left-click the red corner.
 
 {% tabs %}
@@ -252,7 +252,7 @@ End Sub
 
 ![](Excel-Like-Features_images/Excel-Like-Features_img6.jpeg)
 
-## Freeze pane
+## Freeze Pane
 The GridControl supports Microsoft Excel-like Freeze Pane feature. In a large worksheet, it is often required that column or row labels remain in view. This feature enables to freeze either columns or rows in the grid, so that they may remain visible while scrolling. The number of rows to be frozen can be specified by using [Model.Rows.FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property and the number of columns to be frozen can be specified by using [Model.Cols.FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property.
 
 {% tabs %}

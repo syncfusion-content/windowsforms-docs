@@ -84,10 +84,10 @@ excelConverter.GridToExcel(this.gridControl1.Model, "FileName.xls", ConverterOpt
 {% highlight vb %}
 Dim excelConverter As New GridExcelConverterControl()
 
-' To export the Grid with applied borders to the Excel file.
+'To export the Grid with applied borders to the Excel file.
 excelConverter.ExportBorders = True
 
-' To export the images to the Excel.  
+'To export the images to the Excel.  
 excelConverter.ExportImage = True
 excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptions.Default)
 {% endhighlight %}
@@ -125,7 +125,7 @@ excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptio
 
 ![](Exporting_images/Exporting_img4.jpeg)
 
-### Setting default row height and column width
+### Setting Default Row Height and Column Width
 By default, the `GridExcelConverterControl` provides support to export the content with its corresponding row height and column width. The default row height and column width can be set by using [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~DefaultColumnWidth.html) and [DefaultRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterControl~DefaultRowHeight.html) property.
 
 To use the `DefaultRowHeight` and `DefaultColumnWidth` properties, the following properties has to be disabled. 
@@ -291,20 +291,20 @@ saveFileDialog.DefaultExt = ".xls";
 
 if(saveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 {
-GridExcelConverterControl excelConverter = new GridExcelConverterControl();
+    GridExcelConverterControl excelConverter = new GridExcelConverterControl();
 
-//Create new workbook with two worksheets named sheet1 and sheet2.
-IWorkbook workbook = ExcelUtils.CreateWorkbook(new string[] { "sheet1", "sheet2" });
+    //Create new workbook with two worksheets named sheet1 and sheet2.
+    IWorkbook workbook = ExcelUtils.CreateWorkbook(new string[] { "sheet1", "sheet2" });
 
-//Export the each grid separately to the worksheets.
-excelConverter.GridToExcel(this.gridControl1.Model, workbook.Worksheets[0]);
-excelConverter.GridToExcel(this.gridControl1.Model, workbook.Worksheets[1]);
+    //Export the each grid separately to the worksheets.
+    excelConverter.GridToExcel(this.gridControl1.Model, workbook.Worksheets[0]);
+    excelConverter.GridToExcel(this.gridControl1.Model, workbook.Worksheets[1]);
 
-//save the workbook with the filename.
-workbook.SaveAs(saveFileDialog.FileName);
+    //save the workbook with the filename.
+    workbook.SaveAs(saveFileDialog.FileName);
 
-//close the workbook object.
-workbook.Close();
+    //close the workbook object.
+    workbook.Close();
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -346,15 +346,15 @@ excelConverter.GridToExcel(this.gridControl1.Model, "Sample.xlsx");
 void excelConverter _QueryImportExportCellInfo(object sender, GridImportExportCellInfoEventArgs e)
 {
 
-// Checking whether it is Exporting action.
+    // Checking whether it is Exporting action.
     if (e.Action == GridConverterAction.Export)
     {
 
-// Setting backcolor for first row cells in Excel sheet.
+    // Setting backcolor for first row cells in Excel sheet.
          if (e.RowIndex == 1)
          {
               e.ExcelCell.CellStyle.Color = Color.Pink;
-// Handled property has to be enabled to confirm the changes.
+    // Handled property has to be enabled to confirm the changes.
               e.Handled = true;
           }
     }
@@ -569,16 +569,16 @@ void pdfConverter_DrawPDFHeader(object sender, PDFHeaderFooterEventArgs e)
     PdfSolidBrush brush = new PdfSolidBrush(Color.FromArgb(44, 71, 120));
     PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 16, PdfFontStyle.Bold);
 
- //Set formatting's for the text.
+    //Set formatting's for the text.
     PdfStringFormat format = new PdfStringFormat();
     format.Alignment = PdfTextAlignment.Center;
     format.LineAlignment = PdfVerticalAlignment.Middle;
 
- //Draw title.
+    //Draw title.
     header.Graphics.DrawString("Syncfusion Essential PDF", font, brush, new RectangleF(0, 0, header.Width, header.Height), format);           
 }
 
-//Displaying Footer with the page number.
+    //Displaying Footer with the page number.
 void pdfConverter_DrawPDFFooter(object sender, PDFHeaderFooterEventArgs e)
 {
     PdfPageTemplateElement footer = e.HeaderFooterTemplate;
@@ -593,10 +593,10 @@ void pdfConverter_DrawPDFFooter(object sender, PDFHeaderFooterEventArgs e)
     format.Alignment = PdfTextAlignment.Right;
     format.LineAlignment = PdfVerticalAlignment.Bottom;
 
-//Create page number field.
+    //Create page number field.
     PdfPageNumberField pageNumber = new PdfPageNumberField(font, brush);
 
-//Create page count field.
+    //Create page count field.
     PdfPageCountField count = new PdfPageCountField(font, brush);
 
     PdfCompositeField compositeField = new PdfCompositeField(font, brush, "Page {0} of {1}", pageNumber, count);
@@ -760,7 +760,7 @@ csvConverter.ExportRange(GridRangeInfo.Rows(4, 8), Me.gridControl1.Model, "Sampl
 {% endhighlight %}
 {% endtabs %}
 
-### Exporting the selected ranges
+### Exporting the Selected Ranges
 The `GridCSVConverter` provides support to export the selected cells in GridControl to CSV format. This can be done by using [ExportRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCSVConverter~ExportRange.html) method.
 
 The following example shows the rows 4 to 8 are exported to CSV,
@@ -813,7 +813,7 @@ StringBuilder ExportAsHTML(GridRangeInfoList rangeList)
                 object o = (object)style.FormattedText;
                 string tag = "td";
 
-//Add a non-breaking space (&nbsp;) to empty cells, to make the borders visible.
+                //Add a non-breaking space (&nbsp;) to empty cells, to make the borders visible.
                 if (!style.HasText)
                     o = (object)"&nbsp;";
 
@@ -850,9 +850,9 @@ StringBuilder ExportAsHTML(GridRangeInfoList rangeList)
                             break;
                         case "PushButton":
 
-//To show button uncomment below.
+                        //To show button uncomment below.
                             
-//html.AppendFormat("<input type=\"button\" value=\"{0}\">",style.Description);
+                        //html.AppendFormat("<input type=\"button\" value=\"{0}\">",style.Description);
                             html.Append(style.Description);
                             break;
                         case "RadioButton":
@@ -907,7 +907,7 @@ Private Function ExportAsHTML(ByVal rangeList As GridRangeInfoList) As StringBui
                 Dim o As Object = CObj(style.FormattedText)
                 Dim tag As String = "td"
 
-'Add a non-breaking space (&nbsp;) to empty cells, to make the borders visible:
+                'Add a non-breaking space (&nbsp;) to empty cells, to make the borders visible:
                 If Not style.HasText Then
                     o = CObj("&nbsp;")
                 End If
@@ -938,9 +938,9 @@ Private Function ExportAsHTML(ByVal rangeList As GridRangeInfoList) As StringBui
                             End If
                         Case "PushButton"
 
-'To show button uncomment below.
+                        'To show button uncomment below.
                            
-'html.AppendFormat("<input type=\"button\" value=\"{0}\">",style.Description);
+                        'html.AppendFormat("<input type=\"button\" value=\"{0}\">",style.Description);
                             html.Append(style.Description)
                         Case "RadioButton"
                             For rc As Integer = 0 To style.ChoiceList.Count - 1
@@ -979,11 +979,11 @@ Convert the string which is formed as HTML tags to the HTML file,
 private void ExportToHTML(object sender, EventArgs e)
 {
 
-//Getting the GridControl table range.
+    //Getting the GridControl table range.
     GridRangeInfoList range = new GridRangeInfoList();
     range.Add(GridRangeInfo.Table());
 
-//Exporting the GridControl content to HTML.
+    //Exporting the GridControl content to HTML.
     System.Diagnostics.Process.Start(CopyHtmlToClipBoard(ExportAsHTML(range).ToString(), true));
 }
 
