@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Accessing Values in the Grid Data Bound Grid and in the Data Source
+# Accessing Values
 
 To access values in the Grid Data Bound Grid, use the indexer and retrieve the value from the GridStyleInfo object. 
 
