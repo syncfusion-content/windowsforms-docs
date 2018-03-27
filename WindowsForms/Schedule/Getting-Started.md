@@ -273,7 +273,7 @@ The second type of data we refer to as the _DropLists data_. This data consists 
 
 The Schedule Control does all its data access through interfaces. To support custom data objects, you would have your data objects implement these particular interfaces that are discussed in the following sections. In addition, included in the Essential Schedule library are base classes that implement these required interfaces. So, you can also create data sources for the ScheduleControl by deriving these base classes. The SimpleScheduleDataProvider classes that were used in the Tutorial are derived from these base classes.
 
-### Base Classes
+### Base classes
 
 ScheduleDataProvider Class: provides an empty implementation of the IScheduleDataProvider. The implementation is done through virtual methods. You can then derive this class and through its overrides, set up an IScheduleDataProvider. See the SimpleScheduleDataProvider class in the ScheduleSample sample.
 
@@ -301,7 +301,7 @@ ILookUpObject Interface: enables Choice lists within the ScheduleControl, that a
 
 Value members are normally the values serialized to data stores.
 
-### ScheduleData Base Classes
+### ScheduleData base classes
 
 The ScheduleControl gets its data through its DataSource property, an IScheduleDataProvider object. So, it is this IScheduleDataProvider interface (and several other associated interfaces) that gives you the ability and facility to provide data to the ScheduleControl. To simplify this process of providing data, Essential Schedule also exposes these interfaces as base classes that include some pre-determine drop list settings that allow you to use the ScheduleControl with less coding work. But, you do have the option of working directly through the interfaces to construct your own data provider for the ScheduleControl.
 
@@ -311,11 +311,11 @@ The following sections discuss these ScheduleData base classes in more detail.
 
 
 
-#### The Appointments Data
+#### The appointments data
 
 Here are the ScheduleData base classes that provide the Appointments data used by ScheduleControl. For code details of deriving these ScheduleData base classes to implement a data provider for the ScheduleControl, please see the SimpleScheduleDataProvider code file that ships as part of the ScheduleSample sample.
 
-#### ScheduleAppointment Class
+#### ScheduleAppointment class
 
 ScheduleAppointment is the class that defines the objects that represent appointments in the Schedule Control. This class implements IScheduleAppointment to provide an object to hold the concrete data associated with appointments. You can either derive this class or implement IScheduleAppointment yourself to extend or modify the information managed by the ScheduleAppointment class. Here are the properties exposed in ScheduleAppointment.
 
@@ -351,7 +351,7 @@ Dirty: gets or sets whether this item has been modified
 
 IgnoreChanges: gets or sets whether changes to this item affect the Dirty property
 
-#### ScheduleAppointmentList Class
+#### ScheduleAppointmentList class
 
 ScheduleAppointmentList is a collection of IScheduleAppointments that serves as the data for the Schedule Control. This class is a wrapper class for an ArrayList and implements IComparer to order this list by the item's StartTime. If two items start at the same time, then the EndTime is used as well to determine the order. Longer appointments rank higher. Here are the properties and methods exposed in ScheduleAppointmentList.
 
@@ -406,7 +406,7 @@ public virtual IScheduleAppointment NewScheduleAppointment()
 {% endhighlight %}
 {% endtabs %}
 
-#### ScheduleDataProvider Class
+#### ScheduleDataProvider class
 
 ScheduleDataProvider has two functional roles. 
 
@@ -622,7 +622,7 @@ public new ILookUpObject this[int i]
 {% endhighlight %}
 {% endtabs %}
 
-### IScheduleData Interfaces
+### IScheduleData interfaces
 
 The ScheduleControl gets its data through its DataSource property, an IScheduleDataProvider object. 
 
@@ -648,7 +648,7 @@ The SimpleScheduleDataProvider classes that were used in the Tutorial are derive
 
 The following sections discuss these required data interfaces in more detail.
 
-#### The Appointments Data
+#### The appointments data
 
 Three of the five data interfaces work directly with the Appointment data. Here are the three interfaces.
 
