@@ -184,7 +184,6 @@ static void Main(string[] args)
 	}
 {% endhighlight %}
  
-   {:.prettyprint }
 {% highlight vb %}
 Sub Main()
 
@@ -203,8 +202,6 @@ Console.ReadLine()
 End Sub
 {% endhighlight %} 
 {% endtabs %} 
-   {:.prettyprint }
-
 
    ![](Data-Binding_images/Data-Binding_img2.png)
 
@@ -228,7 +225,7 @@ Add the following grouping namespace for referring the assemblies deployed in th
 {% highlight c# %}
 using Syncfusion.Grouping;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Imports Syncfusion.Grouping
 {% endhighlight %}
 {% endtabs %}
@@ -249,7 +246,7 @@ Engine groupingEngine = new Engine();
 // Set its data source.
 groupingEngine.SetSourceList(list);
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Imports Syncfusion.Grouping
 
 '....
@@ -294,7 +291,7 @@ foreach(Record rec in groupingEngine.Table.Records)
 // Pause
 Console.ReadLine(); 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 ' Access the data directly from the Engine.
 Dim rec As Record
 
