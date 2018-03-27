@@ -11,7 +11,7 @@ documentation: ug
 
 Localization support allows to set the content according to the language or culture of a specific country or region. 
 
-## ILocalization interface
+## ILocalization Interface
 
 To localize the content, create a class file and inherit [ILocalizationProvider](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface to the class. This interface consists of a method [GetLocalizedString](http://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider~GetLocalizedString.html) which gets the string and localize it. The enum property [GridResourceIdentifiers](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridResourceIdentifiers.html) and [ResourceIdentifiers](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ResourceIdentifiers.html) contains the resource identifiers specific to the GridControl.
 The following code will explain how to localize the **Alert Error MessageBox** which will be displayed at the time of cell content validation,
@@ -20,22 +20,22 @@ The following code will explain how to localize the **Alert Error MessageBox** w
 {% highlight c# %}
 class Localizer : ILocalizationProvider
 {
-public string GetLocalizedString(System.Globalization.CultureInfo culture, string name, object obj)
-{
-switch (name)
-{
+    public string GetLocalizedString(System.Globalization.CultureInfo culture, string name, object obj)
+    {
+        switch (name)
+        {
+            // Returns the localized value for the word "OK"
+            case ResourceIdentifiers.OK:
+            return "D'accord";
 
-// Returns the localized value for the word "OK"
-case ResourceIdentifiers.OK:
-return "D'accord";
-
-// Returns the localized value for the word "Cancel"
-case ResourceIdentifiers.Cancel:
-return "annuler";
-default:
-return string.Empty;
-}
-}
+            // Returns the localized value for the word "Cancel"
+            case ResourceIdentifiers.Cancel:
+            return "annuler";
+            
+            default:
+            return string.Empty;
+        }
+    }
 }
 {% endhighlight %}
 
@@ -79,7 +79,7 @@ Only strings that are been used in GridControl can be localized; other text whic
 this._grid.CurrentCellValidating += new CancelEventHandler(_grid_CurrentCellValidating);
 void _grid_CurrentCellValidating(object sender, CancelEventArgs e)
 {
-this._grid.CurrentCell.SetError("S'il vous plait, entrez un nombre valide");
+    this._grid.CurrentCell.SetError("S'il vous plait, entrez un nombre valide");
 }
 {% endhighlight %}
 

@@ -7,12 +7,12 @@ control: GridControl
 documentation: ug
 ---
 
-#Cell Style Architecture
+# Cell Style Architecture
 
 GridControl can be thought of as a rectangular table of grid cells. Each cell contains distinct information and can be displayed independently of other cells. 
 GridControl uses [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) objects to store state information about the appearance of a grid cell. So attributes like Font, BackColor, CellValue and CellType are all reflected in a single GridStyleInfo object. This section explains how to access and use the GridStyleInfo objects.
 
-## GridStyleInfo properties
+## GridStyleInfo Properties
 
 `GridStyleInfo` provides a lot of properties to control the appearance and behavior of grid cells. This topic explains some of the styling properties.
 
@@ -106,10 +106,10 @@ Dim imageList As New ImageList()
 imageList.Images.Add(New Bitmap(SystemIcons.Error.ToBitmap()))
 imageList.Images.Add(New Bitmap(SystemIcons.Exclamation.ToBitmap()))
 
-' Assigning images to the whole Grid.
+'Assigning images to the whole Grid.
 Me.gridControl1.TableStyle.ImageList = imageList
 
-' Assigning images using the ImageIndex property.
+'Assigning images using the ImageIndex property.
 Me.gridControl1(2, 2).ImageIndex = 0
 Me.gridControl1(3, 2).ImageIndex = 1
 {% endhighlight %}
@@ -170,8 +170,9 @@ gridControl1[2, 2].Borders.All = new GridBorder(GridBorderStyle.Solid, Color.Red
 gridControl1(2, 2).Text = "Essential Grid"
 gridControl1(2, 2).Borders.All = New GridBorder(GridBorderStyle.Solid, Color.Red)
 {% endhighlight %}
+{% endtabs %}
 
-{% endtabs %}![](CellStyles_images/CellStyles_img7.png)
+![](CellStyles_images/CellStyles_img7.png)
 
 ### Orientation
 
@@ -187,7 +188,9 @@ gridControl1(2, 2).Text = "Essential Grid"
 gridControl1(2, 2).Font.Orientation = 180
 {% endhighlight %}
 
-{% endtabs %}![](CellStyles_images/CellStyles_img8.png)
+{% endtabs %}
+
+![](CellStyles_images/CellStyles_img8.png)
 
 ### Format
 
@@ -203,7 +206,9 @@ gridControl1(2, 2).CellValue = 31456
 Me.gridControl1(2, 2).Format = "C"
 {% endhighlight %}
 
-{% endtabs %}![](CellStyles_images/CellStyles_img9.png)
+{% endtabs %}
+
+![](CellStyles_images/CellStyles_img9.png)
 
 ### CellTipText
 
@@ -224,7 +229,9 @@ gridControl1(2, 2).CellValue = 31456
 Me.gridControl1(2, 2).CellTipText = "TipText for cell 2,2"
 {% endhighlight %}
 
-{% endtabs %}![](CellStyles_images/CellStyles_img10.png)
+{% endtabs %}
+
+![](CellStyles_images/CellStyles_img10.png)
 
 ## BaseStyles
 
@@ -265,6 +272,7 @@ gridControl1.BaseStylesMap("Standard").StyleInfo.BackColor = Color.Aqua
 {% endhighlight %}
 
 {% endtabs %}
+
 ![](CellStyles_images/CellStyles_img13.png)
 
 ### Header
@@ -280,9 +288,11 @@ gridControl1.BaseStylesMap["Header"].StyleInfo.TextColor = Color.Red;
 gridControl1.BaseStylesMap("Header").StyleInfo.TextColor = Color.Red
 {% endhighlight %}
 
-{% endtabs %}![](CellStyles_images/CellStyles_img14.png)
+{% endtabs %}
 
-### Column header
+![](CellStyles_images/CellStyles_img14.png)
+
+### Column Header
 
 The Column Header base style can be used to make changes only in the column header cells that are present in the GridControl.
 {% tabs %} 
@@ -294,9 +304,11 @@ gridControl1.BaseStylesMap["Column Header"].StyleInfo.TextColor = Color.Red;
 gridControl1.BaseStylesMap("Column Header").StyleInfo.TextColor = Color.DarkGreen
 {% endhighlight %}
 
-{% endtabs %}![](CellStyles_images/CellStyles_img15.png)
+{% endtabs %}
 
-### Row header
+![](CellStyles_images/CellStyles_img15.png)
+
+### Row Header
 
 The Row Header base style can be used to make changes only in the row header cells that are available in the GridControl.
 {% tabs %}
@@ -308,7 +320,9 @@ gridControl1.BaseStylesMap["Row Header"].StyleInfo.TextColor = Color.Red;
 gridControl1.BaseStylesMap("Row Header").StyleInfo.TextColor = Color.Orange
 {% endhighlight %}
 
-{% endtabs %}![](CellStyles_images/CellStyles_img16.png)
+{% endtabs %}
+
+![](CellStyles_images/CellStyles_img16.png)
 
 ### Custom BaseStyles
 
@@ -338,9 +352,11 @@ gridControl1(2, 2).BaseStyle = "BaseStyleTest"
 gridControl1(3, 2).BaseStyle = "BaseStyleTest"
 {% endhighlight %}
 
-{% endtabs %} ![](CellStyles_images/CellStyles_img17.png)
+{% endtabs %} 
 
-## Assigning styles in cells
+![](CellStyles_images/CellStyles_img17.png)
+
+## Assigning Styles in Cells
 
 In this section let’s discuss on some of the ways that can be used to assign the `GridStyleInfo` object.
 
@@ -373,7 +389,7 @@ this.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style, StyleModif
 'Creates a GridStyleInfo object.
 Dim style As New GridStyleInfo()
 
-' Set values and properties.
+'Set values and properties.
 style.BackColor = Color.LightPink
 style.CellValue = "Grid"
 style.Font.Facename = "Verdana"
@@ -384,13 +400,13 @@ style.Font.Size = 8.2f
 style.Font.Bold = True
 style.Font.Italic = True
 
-' Applies styles to a range of cells.
+'Applies styles to a range of cells.
 Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style, StyleModifyType.Override)
 {% endhighlight %}
 
 {% endtabs %}![](CellStyles_images/CellStyles_img18.png)
 
-### Table styles
+### Table Styles
 
 Changes can be done for the whole grid by using the [TableStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~TableStyle.html) property. TableStyle is a single `GridStyleInfo` object that is associated with the entire grid. 
 
@@ -417,7 +433,7 @@ this.gridControl1.TableStyle = style;
 'Creates a GridStyleInfo object.
 Dim style As New GridStyleInfo()
 
-' Set values and properties.
+'Set values and properties.
 style.BackColor = Color.LightPink
 style.CellValue = "Grid"
 style.Font.Facename = "Verdana"
@@ -428,13 +444,13 @@ style.Font.Size = 8.2f
 style.Font.Bold = True
 style.Font.Italic = True
 
-' Applies the styles for the whole Grid.
+'Applies the styles for the whole Grid.
 Me.gridControl1.TableStyle = style
 {% endhighlight %}
 
 {% endtabs %}![](CellStyles_images/CellStyles_img19.png)
 
-### Row styles
+### Row Styles
 
 Changes can be done for a particular or range of rows by using the [RowStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~RowStyles.html) property. This property is a `GridStyleInfo` object which is associated with each row.
 
@@ -463,7 +479,7 @@ this.gridControl1.RowStyles[4] = style;
 'Creates a GridStyleInfo object.
 Dim style As New GridStyleInfo()
 
-' Set values and properties.
+'Set values and properties.
 style.BackColor = Color.LightPink
 style.CellValue = "Grid"
 style.Font.Facename = "Verdana"
@@ -474,14 +490,16 @@ style.Font.Size = 8.2f
 style.Font.Bold = True
 style.Font.Italic = True
 
-' Applies the styles for the mentioned Rows in Grid.
+'Applies the styles for the mentioned Rows in Grid.
 Me.gridControl1.RowStyles(3) = style
 Me.gridControl1.RowStyles(4) = style
 {% endhighlight %}
 
-{% endtabs %}![](CellStyles_images/CellStyles_img20.png)
+{% endtabs %}
 
-### Column styles
+![](CellStyles_images/CellStyles_img20.png)
+
+### Column Styles
 
 Changes can be done for a particular or range of columns by using the [ColStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColStyles.html) property. This property is a `GridStyleInfo` object which is associated with each column.
 
@@ -509,7 +527,7 @@ this.gridControl1.ColStyles[4] = style;
 'Creates a GridStyleInfo object.
 Dim style As New GridStyleInfo()
 
-' Set values and properties.
+'Set values and properties.
 style.BackColor = Color.LightPink
 style.CellValue = "Grid"
 style.Font.Facename = "Verdana"
@@ -520,7 +538,7 @@ style.Font.Size = 8.2f
 style.Font.Bold = True
 style.Font.Italic = True
 
-' Applies the styles of the columns 3 and 4.
+'Applies the styles of the columns 3 and 4.
 Me.gridControl1.ColStyles(3) = style
 Me.gridControl1.ColStyles(4) = style
 {% endhighlight %}
@@ -561,7 +579,7 @@ Me.gridControl1.RowStyles(3).ModifyStyle(Nothing, StyleModifyType.Remove)
 
 N> Null denotes to add an empty style after removing the existing styles.
 
-### Clearing styles along with data
+### Clearing Styles Along with Data
 
 It is possible to clear styles along with data in a cell by using the [Model.ClearCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClearCells.html) method. In this method mention the range of cells to be cleared and also a boolean value whether to clear the style along with it. If `true`, the styles will be cleared, otherwise only the data will be cleared.
 
@@ -591,7 +609,7 @@ Me.gridControl1.Model.ClearCells(GridRangeInfo.Col(2), True)
 
 N> <kbd>Ctrl</kbd>+<kbd>Delete</kbd> key combination can be used to clear the selected cells' data along with the styles.
 
-### Clearing only the data
+### Clearing Only the Data
 
 For clearing only the selected range of cells, make use of the [Model.Clear](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~Clear.html) method. This method clears only the cells that are selected. 
 

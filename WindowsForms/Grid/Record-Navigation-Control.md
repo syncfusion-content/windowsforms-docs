@@ -188,7 +188,7 @@ Me.recordNavigationControl.NavigationBarWidth = 600
 
 ![](Record-Navigation-Control_images/Record-Navigation-Control_img7.jpeg)
 
-### Changing the back color for the Navigation Bar
+### Changing the Back Color for the Navigation Bar
 To set back color for the record navigation bar, use the [NavigationBarBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarBackColor.html) property as of follows.
 
 {% tabs %}
@@ -204,7 +204,7 @@ Me.recordNavigationControl.NavigationBarBackColor = Color.LightGreen
 
 ![](Record-Navigation-Control_images/Record-Navigation-Control_img8.jpeg)
 
-### Resetting the Arrow color
+### Resetting the Arrow Color
 The disable arrow back color can be reset to default by using the [ResetDisabledArrowColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetDisabledArrowColor.html) method.
 
 {% tabs %}

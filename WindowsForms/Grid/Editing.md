@@ -89,7 +89,7 @@ N> Likewise [ConfirmChanges](http://help.syncfusion.com/cr/cref_files/windowsfor
 
 
 
-### Canceling the changes
+### Canceling the Changes
 
 The [CancelEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~CancelEdit.html#)() method is used to cancel editing for the current cells and discard the changes related to it.
 
@@ -129,7 +129,7 @@ Me.gridControl1.ReadOnly = False
 {% endhighlight %}
 {% endtabs %}
 
-### Enabling Read Only for a particular cell
+### Enabling Read Only for a Particular Cell
 
 For preventing the editing in cell by cell basis, make use of the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) object’s [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. `GridStyleInfo` object will be available for each cell in the GridControl.
 
@@ -207,7 +207,7 @@ Me.gridControl1.BrowseOnly = True
 
 N> On using the `BrowseOnly` property, the edit cursor for that cell will not be shown in editing. 
 
-### Prevent Editing for particular range of Cells
+### Prevent Editing for Particular Range of Cells
 
 It is possible to prevent a particular cell or range of cells by using the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event. The `Cancel` property is used to restrict the editing.
 
@@ -292,7 +292,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Canceling edit for the whole grid cells
+### Canceling Edit for the Whole Grid Cells
 
 The [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event will be fired when the current cell switches to edit mode. So on clicking an editing cell, this event will be called. There is `Cancel` property used in this event so that editing can be canceled whenever required.
 
@@ -516,7 +516,7 @@ Me.gridControl1.ColStyles[2].AutoFitChar = '#’
 ![](Editing_images/Editing_img1.jpeg)
 
 
-### Applying Trimming when cell content exceed its size	
+### Applying Trimming when Cell Content Exceed its Size	
 
 While the content of the cell exceeds to the cells size then the text is automatically wrapped in to the next line. To show the Ellipsis word like the '…’ at the end of the text, set the [Trimming](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Trimming.html#) option for the cell as EllipsisWord.
 
@@ -545,31 +545,28 @@ To edit the contents of the cell in insert mode (Replace the existing character 
 {% highlight c# %}
 //Invoke this event to enable Over strike edit mode.
 this.gridControl1.CurrentCellKeyPress += gridControl1_CurrentCellKeyPress;
-
 this.gridControl1.CurrentCellKeyDown += gridControl1_CurrentCellKeyDown;
 
 void gridControl1_CurrentCellKeyPress(object sender, KeyPressEventArgs e)
 {
-
-//Create object for current cell renderer
-GridTextBoxCellRenderer cellRenderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
-if (e.KeyChar != Convert.ToChar(Keys.Back) && cellRenderer.TextBox.SelectionLength == 0)
-{
-
-//Programmatically selects One char.
-cellRenderer.TextBox.SelectionLength = 1;
-}
+    Create object for current cell renderer
+    GridTextBoxCellRenderer cellRenderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
+    
+    if (e.KeyChar != Convert.ToChar(Keys.Back) && cellRenderer.TextBox.SelectionLength == 0)
+    {
+        //Programmatically selects One char.
+        cellRenderer.TextBox.SelectionLength = 1;
+    }
 }
 
 void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
 {
-
-//Translates the Backspace key to a left arrow key.
-if (e.KeyCode == Keys.Back)
-{
-SendKeys.Send("{LEFT}");
-e.Handled = true;
-}
+    //Translates the Backspace key to a left arrow key.
+    if (e.KeyCode == Keys.Back)
+    {
+        SendKeys.Send("{LEFT}");
+        e.Handled = true;
+    }
 }
 {% endhighlight %}
 {% highlight vb %}

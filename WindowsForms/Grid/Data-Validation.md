@@ -56,7 +56,7 @@ Me.gridControl1.CurrentCell.ShowErrorMessageBox = False
 ![](DataValidation_images/DataValidation_img2.jpeg)
 
 
-### Error tips support
+### Error Tips Support
 
 The Error provider will also show the error message in the comment tips while moving the mouse over the error cell.
 
@@ -75,19 +75,19 @@ this.gridControl1.CurrentCellValidating += new CancelEventHandler(gridControl1_C
 
 void gridControl1_CurrentCellValidating(object sender, CancelEventArgs e)
 {
-if (this.gridControl1.CurrentCell.ColIndex == 3)
-{
-int val;
-GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
+    if (this.gridControl1.CurrentCell.ColIndex == 3)
+    {
+        int val;
+        GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
-if (renderer != null && !int.TryParse(renderer.ControlText, out val))
-{
+        if (renderer != null && !int.TryParse(renderer.ControlText, out val))
+        {
 
-//Display custom error provider.
-this.gridControl1.CurrentCell.SetError("Please enter the valid input");
+        //Display custom error provider.
+        this.gridControl1.CurrentCell.SetError("Please enter the valid input");
 
-}
-}
+        }
+    }
 }
 
 // Set the CellValue for the particular cell in a button click event.
@@ -97,7 +97,6 @@ private void button1_Click(object sender, EventArgs e)
 this.gridControl1[3, 3].CellValue = "Hello";
 
 this.gridControl1.CurrentCell.MoveTo(3, 3);
-
 this.gridControl1.CurrentCell.Validate();
 
 }
@@ -152,7 +151,7 @@ Me.gridControl1.CurrentCell.ValidationErrorText = "This is a String"
 
 The user can validate the data based on their required conditions using some customizations. It’s also possible to handle the display of error message box using the customizations.
 
-### Validating the Current Cell Data Using Event
+### Validating the Current Cell Data using Event
 
 The error provider can be customized by calling the [SetError](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~SetError.html# "") method of the current cell in the [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html# "") event. 
 
@@ -163,18 +162,18 @@ this.gridControl1.CurrentCellValidating += gridControl1_CurrentCellValidating;
 
 void gridControl1_CurrentCellValidating(object sender, CancelEventArgs e)
 {
-if (this.gridControl1.CurrentCell.ColIndex == 3)
-{
-int val;
-GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
+    if (this.gridControl1.CurrentCell.ColIndex == 3)
+    {
+        int val;
+        GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
-if (renderer != null && int.TryParse(renderer.ControlText,out val) && val> 20)
-{
+        if (renderer != null && int.TryParse(renderer.ControlText,out val) && val> 20)
+        {
 
-//Display custom error provider.
-this.gridControl1.CurrentCell.SetError("Please enter the valid input");
-}
-}
+        //Display custom error provider.
+        this.gridControl1.CurrentCell.SetError("Please enter the valid input");
+        }
+    }
 }     
 {% endhighlight %}
 
@@ -202,7 +201,7 @@ When the validation is failed at the `CurrentCellValidating` event, the custom e
 ![](DataValidation_images/DataValidation_img5.jpeg)
 
 
-### Handling Error Message using events
+### Handling Error Message using Events
 
 The [CurrentCellErrorMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellErrorMessage_EV.html#) event will triggered while the error is occurred. It can be used to get the error message by using the `e.Text` and also used to restrict display of error message box by handling this event like `e.Cancel` value as `true`. 
 
@@ -223,7 +222,7 @@ Private Me.gridControl1.CurrentCellErrorMessage += AddressOf gridControl1_Curren
 
 Private Sub gridControl1_CurrentCellErrorMessage(ByVal sender As Object, ByVal e As GridCurrentCellErrorMessageEventArgs)
 
-' Does not show the Message box for error provider.
+'Does not show the Message box for error provider.
 e.Cancel = True
 
 End Sub
