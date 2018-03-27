@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# GridBoundColumns and Controlling the Column Format
+# Columns
 
 To control properties of a column in your Grid DataBound Grid, you must use GridBoundColumn class object. You can also explicitly add GridBoundColumn object to GridDataBoundGrid.GridBoundColumns collection for each column that you want to see in the grid or you can let GridDataBoundGrid.Binder class generate these columns for you. 
 
