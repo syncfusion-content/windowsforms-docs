@@ -76,6 +76,8 @@ Me.CaptionForeColor = Color.Pink
 
 {% endtabs %}
 
+![](Caption-Settings_images/CaptionForeColor.png)
+
 ## Caption Bar Height
 
 This property helps to customize the CaptionBar height.
