@@ -19,23 +19,14 @@ To export user-defined formula library function from Grid to Excel:
 To create an XLA file in Excel:
 
 1. Create a new empty workbook and click Save As from the File menu.
-3. In the Save As dialog box, select the location to save the workbook. Enter the file name for the Add-In workbook, and then select the type as Excel Add-In (*.xla).
-4. Click Save, and then press ALT+ F11 to open the VBA Editor. Now, you can create the custom function through the VBA Editor.
-
-
-
-The following screen shot illustrates how to create the user-defined function through the VBA editor.
+2. In the Save As dialog box, select the location to save the workbook. Enter the file name for the Add-In workbook, and then select the type as Excel Add-In (*.xla).
+3. Click Save, and then press ALT+ F11 to open the VBA Editor. Now, you can create the custom function through the VBA Editor.
 
 ![](How-to-export-user-defined-function-from-Grid-to-E_images/How-to-export-user-defined-function-from-Grid-to-E_img1.png)
 
-
-
 The XLA file will not be visible in Excel because Add-Ins are never visible. All changes must be done to the VBA Editor only.
 
-
-
-The following code illustrates how to export the user-defined function to Excel.
-
+{% tabs %}
 {% highlight c# %}
 
 //Exports the user-defined function.
@@ -45,3 +36,4 @@ excelConverter.AddCustomFunction(xla, "add", saveFileDialog1.FileName);
 excelConverter.GridToExcel(this.gridControl1.Model, saveFileDialog1.FileName);
 
 {% endhighlight %}
+{% endtabs %}

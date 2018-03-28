@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Include an Icon in the Column Header
-
-## Introduction
+# How to include an icon in the column header
 
 The GridControl will allow you to place images in cells by specifying style.ImageIndex and style.ImageList value for the cell, provided style.CellType is either "Static" or "Text Box". So, to make your header cell hold an icon, make it "Static" and set the following properties.
 

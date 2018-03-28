@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# What is the Difference between TextAlign, HorizontalAlignment, and VerticalAlignment?
-
-## Introduction
+# What is the difference between TextAlign, HorizontalAlignment, and VerticalAlignment
 
 TextAlign is set when the description of embedded controls are to be aligned to the left or right. HorizontalAlignment is set when cell value is to be aligned either left or right or center of the cell. VerticalAlignment is set when the cell value is to be aligned either top or bottom or middle of the cell.
 

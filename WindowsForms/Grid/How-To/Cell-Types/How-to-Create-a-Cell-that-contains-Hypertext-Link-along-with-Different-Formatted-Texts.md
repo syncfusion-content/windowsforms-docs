@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Create a Cell that contains Hypertext Link along with Different Formatted Texts
-
-## Introduction
+# How to create a cell that contains Hypertext link along with different formatted texts
 
 To create a cell that contains a hypertext link along with different formatted texts ,you will need to handle the derived class called InPlaceRTB, follow the steps that are given below:
 
@@ -25,7 +23,7 @@ To create a cell that contains a hypertext link along with different formatted t
 	{% endhighlight  %}
 
 	{% highlight vb %}
-	//Adds the cell Model to the specified type Name "InPlaceRTB". 
+	'Adds the cell Model to the specified type Name "InPlaceRTB". 
 	Me.gridControl1.CellModels.Add("InPlaceRTB", New InPlaceRichTextCellModel(Me.gridControl1.Model))
 	{% endhighlight  %}
 	{% endtabs %}
@@ -39,7 +37,7 @@ To create a cell that contains a hypertext link along with different formatted t
 	{% endhighlight  %}
 
 	{% highlight vb %}
-	//Sets the CellType to 'InPlaceRTB'.
+	'Sets the CellType to 'InPlaceRTB'.
 	Me.gridControl1(1,1).CellType = "InPlaceRTB"
 	{% endhighlight  %}
 	{% endtabs %}

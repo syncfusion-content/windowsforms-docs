@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Put a Cell in Overstrike Mode so Characters get Replaced instead of Inserted as you type
-
-### Introduction
+# How to put a cell in overstrike mode so characters get replaced instead of inserted as you type
 
 This can be achieved by using TextBox.SelectionLength property of GridTextBoxCellRenderer in CurrentCellKeyPress event. The idea to achieve this is by selecting one character when a key is pressed, and also neglecting the Backspace key.
 
@@ -19,6 +17,7 @@ This can be achieved by using TextBox.SelectionLength property of GridTextBoxCel
 private void gridControl1_CurrentCellKeyPress(object sender, KeyPressEventArgs e)
 {
    GridTextBoxCellRenderer cellRenderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
+  
    if(e.KeyChar != Convert.ToChar(Keys.Back) 
     && cellRenderer.TextBox.SelectionLength == 0)
    {

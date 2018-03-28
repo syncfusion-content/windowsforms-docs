@@ -32,18 +32,19 @@ The GridControl lets you define the `CoveredRanges` using [QueryCoveredRange](ht
 {% highlight c# %}
 //Triggering the QueryCoveredRange event.
 this.gridControl1.QueryCoveredRange += new GridQueryCoveredRangeEventHandler(gridControl1_QueryCoveredRange);
+
 void gridControl1_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
-  {
+{
      
-// Checking the cell to start covered range.
-      if (e.RowIndex == 2 && e.ColIndex == 2)
-      {
+    // Checking the cell to start covered range.
+    if (e.RowIndex == 2 && e.ColIndex == 2)
+    {
           
-//Setting the range to be covered.
-          e.Range = GridRangeInfo.Cells(e.RowIndex, e.ColIndex, e.RowIndex + 3, e.ColIndex + 5);
+        //Setting the range to be covered.
+        e.Range = GridRangeInfo.Cells(e.RowIndex, e.ColIndex, e.RowIndex + 3, e.ColIndex + 5);
          
-//Handled property has to be enabled to perform this customization.
-          e.Handled = true;
+        //Handled property has to be enabled to perform this customization.
+        e.Handled = true;
       }
  }
 
@@ -51,17 +52,18 @@ void gridControl1_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArg
 {% highlight vb %}
 'Triggering the QueryCoveredRange event.
 Private Me.gridControl1.QueryCoveredRange += New GridQueryCoveredRangeEventHandler(AddressOf gridControl1_QueryCoveredRange)
+
 Private Sub gridControl1_QueryCoveredRange(ByVal sender As Object, ByVal e As GridQueryCoveredRangeEventArgs)
 
-' Checking the cell to start covered range.
-      If e.RowIndex = 2 AndAlso e.ColIndex = 2 Then
+'Checking the cell to start covered range.
+If e.RowIndex = 2 AndAlso e.ColIndex = 2 Then
 
 'Setting the range to be covered.
-          e.Range = GridRangeInfo.Cells(e.RowIndex, e.ColIndex, e.RowIndex + 3, e.ColIndex + 5)
+e.Range = GridRangeInfo.Cells(e.RowIndex, e.ColIndex, e.RowIndex + 3, e.ColIndex + 5)
           
 'Handled property has to be enabled to perform this customization.
-          e.Handled = True
-      End If
+e.Handled = True
+End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -100,10 +102,10 @@ MessageBox.Show("CoveredRange for cell(2,3) is " + coveredRange.Info.ToString()
 'Adding CoveredRanges to GridControl
 Me.gridControl1.CoveredRanges.Add(GridRangeInfo.Cells(2,2,5,7))
 
-' Finding a CoveredRange for cell(2,3).
+'Finding a CoveredRange for cell(2,3).
 Dim coveredRange As GridRangeInfo = Me.gridControl1.CoveredRanges.FindRange(2,3)
 
-' Finding a coveredRange for cell(1,3).
+'Finding a coveredRange for cell(1,3).
 Dim coveredRange2 As GridRangeInfo = Me.gridControl1.CoveredRanges.FindRange(1,3)
 MessageBox.Show("CoveredRange for cell(2,3) is " & coveredRange.Info.ToString() & Constants.vbLf & "CoveredRange for cell(1,3) is " & coveredRange2.RangeType.ToString())
 {% endhighlight %}
@@ -122,7 +124,7 @@ The `CoveredRanges` from the GridControl can be cleared by using the [Clear](htt
 this.gridControl1.CoveredRanges.Clear();
 {% endhighlight %}
 {% highlight vb %}
-' Clearing CoveredRange from GridControl.
+'Clearing CoveredRange from GridControl.
 this.gridControl1.CoveredRanges.Clear();
 {% endhighlight %}
 {% endtabs %}

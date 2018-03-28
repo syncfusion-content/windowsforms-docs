@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Change the Size of the Combo Box Button
-
-### Introduction
+# How to change the size of the combo box Button
 
 Change the size of the combobox button by changing the ButtonBarSize in the CellModel for the control. 
 

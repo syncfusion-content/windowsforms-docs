@@ -300,6 +300,7 @@ This event will be raised after comment tip window is shown. This is used to get
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.CommentTipShown += new CommentTipShownEventHandler(gridControl1_CommentTipShown);
+
 void gridControl1_CommentTipShown(object sender, CommentTipShownEventArgs e)
 {
     Console.WriteLine("Comment tip is shown for the cell [" + e.RowIndex + "," + e.ColIndex + "].");
@@ -307,6 +308,7 @@ void gridControl1_CommentTipShown(object sender, CommentTipShownEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.CommentTipShown, AddressOf gridControl1_CommentTipShown
+
 Private Sub gridControl1_CommentTipShown(ByVal sender As Object, ByVal e As CommentTipShownEventArgs)
 	Console.WriteLine("Comment tip is shown for the cell [" & e.RowIndex & "," & e.ColIndex & "].")
 End Sub
@@ -321,6 +323,7 @@ The color and location of the comment indicator can be customized by using the `
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.DrawCommentIndicator +=new DrawCommentIndicatorEventHandler(gridControl1_DrawCommentIndicator);
+
 void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventArgs e)
 {
     //Set the color for the comment indicator.
@@ -332,6 +335,7 @@ void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.DrawCommentIndicator, AddressOf gridControl1_DrawCommentIndicator
+
 Private Sub gridControl1_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
 	'Set the color for the comment indicator.
 	e.Style.CommentTip.CommentIndicatorColor = Color.Green
@@ -350,8 +354,10 @@ Using the event argument `e.Graphics`, the shape can be filled that you want to 
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.DrawCommentIndicator +=new DrawCommentIndicatorEventHandler(gridControl1_DrawCommentIndicator);
+
 void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventArgs e)
 {
+
   if (e.ColIndex == 2)
   {
      // Cancel the default drawing of Comment indicator.
@@ -364,7 +370,9 @@ void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.DrawCommentIndicator, AddressOf gridControl1_DrawCommentIndicator
+
 Private Sub gridControl1_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
+
 	If e.ColIndex = 2 Then
 		'Cancel the default drawing of Comment indicator.
 		e.Cancel = True
@@ -383,6 +391,7 @@ The `DrawCommentIndicator` event is used to avoid displaying of comment indicato
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.DrawCommentIndicator += new DrawCommentIndicatorEventHandler(gridControl1_DrawCommentIndicator);
+
 void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventArgs e)
 {
      //Cancel the displaying of the comment tip indicator.
@@ -391,6 +400,7 @@ void gridControl1_DrawCommentIndicator(object sender, DrawCommentIndicatorEventA
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.DrawCommentIndicator, AddressOf gridControl1_DrawCommentIndicator
+
 Private Sub gridControl1_DrawCommentIndicator(ByVal sender As Object, ByVal e As DrawCommentIndicatorEventArgs)
 
 'Cancel the displaying of the comment tip indicator.
@@ -406,15 +416,19 @@ The displaying of comment tip window for comment tip cell can be canceled by usi
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.CommentTipShowing += new CommentTipShowingEventHandler(gridControl1_CommentTipShowing);
+
 void gridControl1_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {
+
  //Cancel the displaying of the comment tip window.
      e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.CommentTipShowing, AddressOf gridControl1_CommentTipShowing
+
 Private Sub gridControl1_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
+
 'Cancel the displaying of the comment tip window.
 	e.Cancel = True
 End Sub
@@ -435,8 +449,10 @@ this.gridControl1.CommentTipShowing += new CommentTipShowingEventHandler(gridCon
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.CommentTipShowing, AddressOf gridControl1_CommentTipShowing
+
 Private Sub gridControl1_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
 	Dim pt As Point = e.CommentTipWindow.Location
+
 'Display the comment tip window at the given point.
 	e.CommentTipWindow.Location = New Point(pt.X + 40, pt.Y + 10)
 End Sub
@@ -452,6 +468,7 @@ The text displayed on the comment tip window can be customized on showing by usi
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.CommentTipShowing += new CommentTipShowingEventHandler(gridControl1_CommentTipShowing);
+
 void gridControl1_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {
     string comment = "Population rate is " + e.Style.CellValue.ToString();
@@ -460,6 +477,7 @@ void gridControl1_CommentTipShowing(object sender, CommentTipShowingEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.CommentTipShowing, AddressOf gridControl1_CommentTipShowing
+
 Private Sub gridControl1_CommentTipShowing(ByVal sender As Object, ByVal e As CommentTipShowingEventArgs)
 	Dim comment As String = "Population rate is " & e.Style.CellValue.ToString()
 	e.Style.CommentTip.CommentText = comment
@@ -474,9 +492,12 @@ To highlight the cells or customize the cells if that cell has comment tip, `Has
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(gridControl1_PrepareViewStyleInfo);
+
 void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
 {
+
 //Checking whether the cell has comment tip or not.
+
     if (e.Style.HasCommentTip)
     {
 
@@ -488,7 +509,9 @@ void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEv
 {% endhighlight %}
 {% highlight vb %}
 AddHandler gridControl1.PrepareViewStyleInfo, AddressOf gridControl1_PrepareViewStyleInfo
+
 Private Sub gridControl1_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
+
 'Checking whether the cell has comment tip or not.
 	If e.Style.HasCommentTip Then
 
