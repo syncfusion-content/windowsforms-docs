@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Using CurrencyManager
+# CurrencyManager
 
 Sometimes the grid itself will not contain all the data in the data table. For example, your data table may have 12 columns in it, but you are able to add only three GridBoundColumns to display exactly three of the twelve columns. In this case, the table has nine more columns than the grid. How do you get all the values in the columns that are not in the grid? 
 
@@ -29,7 +29,7 @@ if(dataRowView != null)
     Console.WriteLine(dataRow["FirstName"].ToString());
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Assuming grid is bound to a Data Table.
 Dim cm As CurrencyManager = CType(Me.grid.BindingContext(Me.grid.DataSource, Me.grid.DataMember), CurrencyManager)
 Dim dataRowView As DataRowView = cm.List(1)  

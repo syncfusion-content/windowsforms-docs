@@ -124,7 +124,7 @@ Double click the form on the design surface (not one of the controls, but the fo
 //Loads dataset with records.
 this.sqlDataAdapter1.Fill(this.dataSet11);
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Loads dataset with records.
 Me.sqlDataAdapter1.Fill(Me.dataSet11)
 {% endhighlight  %}
@@ -137,7 +137,7 @@ To support updating data in your database, you will need to call Update command 
 //Saves Changes(if any) back to the database.
 this.sqlDataAdapter1.Update(this.dataSet11);
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Saves Changes (if any) back to the database.
 Me.sqlDataAdapter1.Update(Me.dataSet11);
 {% endhighlight  %}
@@ -145,7 +145,7 @@ Me.sqlDataAdapter1.Update(Me.dataSet11);
 
 Now when you click Update button, it will post the changes made back to your database.
 
-### Applying Special Column Formats
+### Applying special column formats
 
 GridBoundColumn collection property of DataBound Grid is used to set column properties. This collection will let you control columns displayed and their order. For each column that you want displayed, add a Grid Bound Column. In this Grid Bound Column, you must set MappingName property; the other properties such as HeaderText and Style are optional. Under the Style property, you will have access to normal GridStyleInfo properties that you can apply to this column such as BackColor, CellType and Font.
 
@@ -228,7 +228,7 @@ this.GridDataBoundGrid1.DataSource = myDataTable;
 this.GridDataBoundGrid1.Model.ColWidths[1] = 30;
 this.GridDataBoundGrid1.Model.ColWidths[2] = 50;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Dim myDataTable As DataTable = New DataTable("MyDataTable")
 
 'Declares the Data Column and Data Row variables.

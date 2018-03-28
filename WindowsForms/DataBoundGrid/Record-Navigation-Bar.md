@@ -17,9 +17,9 @@ It is possible to display DataBound Grid within Grid Record Navigation control. 
 
 N> For more details, refer to the following browser sample:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Record Navigation Data Bound Grid Demo_
+**_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Record Navigation Data Bound Grid Demo_**
 
-## Example
+### Example
 
 The following sample displays DataBound Grid within Grid Record Navigation control. This sample was created using the designer. 
 
@@ -46,9 +46,6 @@ The following sample displays DataBound Grid within Grid Record Navigation contr
    N> Records can be displayed by typing in the NavigationBar.
 
    ![](Record-Navigation-Bar_images/Record-Navigation-Bar_img7.jpeg) 
-
-   {:.prettyprint}
-
 
 
 DataBound Grid is displayed within Grid Record Navigation control.
