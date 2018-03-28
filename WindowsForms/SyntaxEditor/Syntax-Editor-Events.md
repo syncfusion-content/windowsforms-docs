@@ -9,7 +9,7 @@ documentation: ug
 
 # EditControl Events
 
-`EditControl` is a powerful text editor control to create interactive code editor applications with its unique feature set. It has many efficient features like editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, custom language configuration etc., as like in Microsoft Visual Studio Editor. EditControl also provides programmatic access to the interaction for most of the features like editing, intellisense, expand or collapse a block of code, printing., by raising serval events.
+`EditControl` is a powerful text editor control to create interactive code editor applications with its unique feature set. It has many efficient features like editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, custom language configuration etc., as like in Microsoft Visual Studio Editor. EditControl also provides programmatic access to the interaction for most of the features like editing, intellisense, expand or collapse a block of code, printing., by raising various events.
 
 This section discusses various events handled for the EditControl. The events are listed below:
 

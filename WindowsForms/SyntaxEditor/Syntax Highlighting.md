@@ -252,9 +252,9 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img8.png)
 
-**JAVA** 
+**Java** 
 
-The following code example illustrates the JAVA configuration settings in EditControl.
+The following code example illustrates the Java configuration settings in EditControl.
 
 {% tabs %}
 
@@ -301,7 +301,7 @@ this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLa
 
 // Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
 
-this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vbs");
+this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vb");
 
 {% endhighlight %}
 
@@ -314,7 +314,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 ` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
 
-Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vbs")
+Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vb")
 
 {%endhighlight %}
 
@@ -371,7 +371,7 @@ this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLa
 
 // Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
 
-this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\Powershell.ps1");
+this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\PowerShell.ps1");
 
 {% endhighlight %}
 
@@ -384,7 +384,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 ` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
 
-Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\Powershell.ps1")
+Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\PowerShell.ps1")
 
 {%endhighlight %}
 

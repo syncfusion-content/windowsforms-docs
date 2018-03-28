@@ -293,7 +293,7 @@ The following screenshot shows action grouping in EditControl.
 
 **Comments**
 
-EditControl provides support for commenting and uncommitting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given methods.
+EditControl provides support for commenting and uncommenting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given methods.
 
 <table>
 <tr>

@@ -178,7 +178,7 @@ Dim editText as String = Me.editControl1.SelectedText
 
 {% endtabs %}
 
-**Cancelling or Resetting selection**
+**Cancel or Reset selection**
 
 Text selection can be either cancelled or reset by using the below given methods.
 
@@ -585,7 +585,7 @@ The EditControl supports customization of fonts through the configuration file, 
 
 ## Word wrap
 
-`WordWrap` allows users to view the entire contents of a line, by wrapping text at the edge of the control (or text area) into one or more lines, that normally would have been outside the view in the EditControl. EditControl allows advanced customization by using the Wordwrap functionality. WordWrap functionality in EditControl can be enabled or disabled by using `WordWrap` property. Its default value is false, to enable the wrapping functionality in EditControl turn on its value to true.
+`WordWrap` allows users to view the entire contents of a line, by wrapping text at the edge of the control (or text area) into one or more lines, that normally would have been outside the view in the EditControl. EditControl allows advanced customization by using the WordWrap functionality. WordWrap functionality in EditControl can be enabled or disabled by using `WordWrap` property. Its default value is false, to enable the wrapping functionality in EditControl turn on its value to true.
 
 ### WordWrap types
 
@@ -640,7 +640,7 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 
 {% endtabs %}
 
-### Wordwrap mode
+### WordWrap mode
 
 EditControl provide extensive support for different modes of wrapping. The following are the types of wrapping modes which was available in EditControl:
 
@@ -648,7 +648,7 @@ EditControl provide extensive support for different modes of wrapping. The follo
 * SpecifiedColumn
 * WordWrapMargin
 
-The options provided are wraps text at the boundary between text area and wordwrap margin of the EditControl. The area beyond the text area in the EditControl is referred to as the `WordWrapMargin`. Hence, the width of the wordwrap margin is the difference between EditControls width and the TextArea width. `Column` Mode wraps the text at the edge of the EditControl. SpecifiedColumn mode wraps the text at the specified column that is specified in WordWrapColumn property. The default WordWrapMode is `Control`. The following properties are associated with setting the mode of Word Wrapping.
+The options provided are wraps text at the boundary between text area and word wrap margin of the EditControl. The area beyond the text area in the EditControl is referred to as the `WordWrapMargin`. Hence, the width of the word wrap margin is the difference between EditControls width and the TextArea width. `Column` Mode wraps the text at the edge of the EditControl. SpecifiedColumn mode wraps the text at the specified column that is specified in WordWrapColumn property. The default WordWrapMode is `Control`. The following properties are associated with setting the mode of Word Wrapping.
 
 <table>
 <tr>
@@ -734,9 +734,9 @@ The following illustration shows the EditControl with the WordWrappingMode and W
 
 ![](Text-Visualization_images/Text-Visualization_img28.jpeg)
 
-### Wordwrap margin customization
+### WordWrap margin customization
 
-Wordwrap margin can be enabled or disabled using the `WordWrapMarginVisible` property of EditControl. Its default value is false. Wordwrap margin of the EditControl can be set and customized by using the below given properties.
+WordWrap margin can be enabled or disabled using the `WordWrapMarginVisible` property of EditControl. Its default value is false. WordWrap margin of the EditControl can be set and customized by using the below given properties.
 
 <table>
 <tr>
@@ -746,15 +746,15 @@ Description</th></tr>
 <tr>
 <td>
 WordWrapMarginVisible</td><td>
-Specifies a value indicating whether the wordwrap margin should be visible</td></tr>
+Specifies a value indicating whether the word wrap margin should be visible</td></tr>
 <tr>
 <td>
 WordWrapMarginLineStyle</td><td>
-Specifies style of line that is drawn at the border of the wordwrap margin. The options provided are* Solid* Dash* Dot* DashDot* DashDotDot* Custom<br>The default value is {{ '_Solid_' | markdownify }}</td></tr>
+Specifies style of line that is drawn at the border of the word wrap margin. The options provided are* Solid* Dash* Dot* DashDot* DashDotDot* Custom<br>The default value is {{ '_Solid_' | markdownify }}</td></tr>
 <tr>
 <td>
 WordWrapMarginLineColor</td><td>
-Sets custom color for the line that is drawn at the border of the wordwrap margin</td></tr>
+Sets custom color for the line that is drawn at the border of the word wrap margin</td></tr>
 <tr>
 <td>
 WordWrapMarginBrush</td><td>
@@ -765,15 +765,15 @@ Specifies the BrushInfo object that is used when the area situated after the tex
 
 {% highlight C# %}
 
-// Specifies whether the wordwrap margin should be visible.
+// Specifies whether the word wrap margin should be visible.
 
 this.editControl1.WordWrapMarginVisible = true;
 
-// Specifies the line style of the wordwrap margin.
+// Specifies the line style of the word wrap margin.
 
 this.editControl1.WordWrapMarginLineStyle = DashStyle.Dash;
 
-// Specifies the line color of the wordwrap margin.
+// Specifies the line color of the word wrap margin.
 
 this.editControl1.WordWrapMarginLineColor = Color.Green;
 
@@ -786,15 +786,15 @@ this.editControl1.WordWrapMarginBrush = new Syncfusion.Drawing.BrushInfo(Syncfus
 
 {% highlight VB %}
 
-' Specifies whether the wordwrap margin should be visible.
+' Specifies whether the word wrap margin should be visible.
 
 Me.editControl1.WordWrapMarginVisible = True
 
-// Specifies the line style of the wordwrap margin.
+// Specifies the line style of the word wrap margin.
 
 Me.editControl1.WordWrapMarginLineStyle = System.Drawing.Drawing2D.DashStyle.Dash
 
-// Specifies the line color of the wordwrap margin.
+// Specifies the line color of the word wrap margin.
 
 Me.editControl1.WordWrapMarginLineColor = System.Drawing.Color.Green
 
@@ -1140,7 +1140,7 @@ The Auto Indentation characters can also be specified by setting the Indent fiel
 
 ## Outline
 
-Essential Edit provides Visual Studio-like support for collapsing and expanding blocks of code through the use of Collapsers (plus-minus buttons). Sections of code which form the outlining blocks can be specified by using the configuration settings. The outlining blocks can be specified for code as well as for plain text. By Setting the `ShowOutliningCollapsers` property to true, we can enable or disable automatic outlining in EditControl. 
+Essential Edit provides Visual Studio-like support for collapsing and expanding blocks of code through the use of Collapser (plus-minus buttons). Sections of code which form the outlining blocks can be specified by using the configuration settings. The outlining blocks can be specified for code as well as for plain text. By Setting the `ShowOutliningCollapsers` property to true, we can enable or disable automatic outlining in EditControl. 
 
 Outlining can be performed by having appropriate `lexem`, `split`, and `extension` tag entries in the configuration file. Refer to the Configuration Settings topic for more information regarding the configuration file. EditControl provides the following methods to support Outlining.
 
@@ -1391,7 +1391,7 @@ End Sub
 
 ## Line dividers
 
-EditControl supports content dividers just like VB.NET code in Visual Studio.NET code editor. This helps in logical division and better organization of the contents of the EditControl, which helps to improve the readability of the code. Content Dividers can be enabled or disabled using `ShowContentDividers` property og EditControl. Its default value is true.
+EditControl supports content dividers just like VB.NET code in Visual Studio.NET code editor. This helps in logical division and better organization of the contents of the EditControl, which helps to improve the readability of the code. Content Dividers can be enabled or disabled using `ShowContentDividers` property of EditControl. Its default value is true.
 
 ![](Text-Visualization_images/Text-Visualization_img6.jpeg)
 
@@ -1499,7 +1499,7 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 ## Bookmarks 
 
-Essential Edit enables users to locate a section or a line of a document by using the Bookmarks and Custom Indicators feature like in Visual Studio. This provides quick access to any part of the contents of the EditControl. The EditControl allows any number of custom images or bookmarks to be added to a document. The EditControl provides an indicator margin for the purpose of displaying the custom indicators or bookmarks. This can be enabled or disabled by using the `ShowIndicatorMargin` property. Its default value is true, to hide the indicator margin turn on its value to false. `MarkerAreaWidth` propery of EditControl sets the width of marker area.
+Essential Edit enables users to locate a section or a line of a document by using the Bookmarks and Custom Indicators feature like in Visual Studio. This provides quick access to any part of the contents of the EditControl. The EditControl allows any number of custom images or bookmarks to be added to a document. The EditControl provides an indicator margin for the purpose of displaying the custom indicators or bookmarks. This can be enabled or disabled by using the `ShowIndicatorMargin` property. Its default value is true, to hide the indicator margin turn on its value to false. `MarkerAreaWidth` property of EditControl sets the width of marker area.
 
 <table>
 <tr>
@@ -1929,7 +1929,7 @@ The EditControl status bar supports different visual styles for its appearance. 
 * Office2007
 * Office2010
 
-The visual style can be applied for the StatusBar using `VisualStyle` property. The following code example illustrates how to change the visual style for Stausbar in EditControl.
+The visual style can be applied for the StatusBar using `VisualStyle` property. The following code example illustrates how to change the visual style for StausBar in EditControl.
 
 **Default**
 
