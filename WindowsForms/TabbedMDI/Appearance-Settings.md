@@ -96,3 +96,207 @@ Me.tabbedMDIManager1.ThemesEnabled = True
 {% endhighlight %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
+
+## Customization 
+
+TabbedMDIManager provides completes support for customizing the active and inactive tabs back color, fore color and font.
+
+**ActiveTabBackColor**
+
+This option helps to customize the active tab back color.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.tabbedMDIManager.ActiveTabBackColor = Color.Red;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.tabbedMDIManager.ActiveTabBackColor = Color.Red
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance-Settings_images/Appearance-Settings_img3.png)
+
+**TabBackColor**
+
+This option helps to customize the inactive tab back color.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.tabbedMDIManager.TabBackColor = Color.Green;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.tabbedMDIManager.TabBackColor = Color.Green
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance-Settings_images/Appearance-Settings_img4.png)
+
+**ActiveTabForeColor**
+
+This option helps to customize the active tab fore color.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.tabbedMDIManager.ActiveTabForeColor = Color.Yellow;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.tabbedMDIManager.ActiveTabForeColor = Color.Yellow
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance-Settings_images/Appearance-Settings_img5.png)
+
+**TabForeColor**
+
+This option helps to customize the inactive tab fore color.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.tabbedMDIManager.TabForeColor = Color.Violet;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.tabbedMDIManager.TabForeColor = Color.Violet
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance-Settings_images/Appearance-Settings_img6.png)
+
+**TabPanelBackColor**
+
+This option helps to customize the background color of tab panel. 
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.tabbedMDIManager.TabPanelBackColor = Color.LightGreen;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.tabbedMDIManager.TabPanelBackColor = Color.LightGreen
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance-Settings_images/Appearance-Settings_img7.png)
+
+**ActiveTabFont**
+
+This option helps to customize the active tab font.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10)
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance-Settings_images/Appearance-Settings_img8.png)
+
+**TabFont**
+
+This property helps to customize the inactive tab font.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.tabbedMDIManager.TabFont = new Font("Arial Black", 10);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.tabbedMDIManager.TabFont = new Font("Arial Black", 10)
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance-Settings_images/Appearance-Settings_img9.png)
+
+**TabPanelBorderColor**
+
+This property helps to customize bottom line in tab panel.
+
+#####  Code Sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.tabbedMDIManager.TabPanelBorderColor = Color.Orange;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.tabbedMDIManager.TabPanelBorderColor = Color.Orange
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance-Settings_images/Appearance-Settings_img10.png)
