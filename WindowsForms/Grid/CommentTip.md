@@ -12,7 +12,7 @@ GridControl provides the default support for adding the Excel-like comment tip t
 A user can customize an appearance of the comment tip window and comment indicator of the individual cells. The user can also add the images to the comment tip window.
 ![](CommentTip_images/CommentTip_img1.png)
 
-## Adding comment tip
+## Adding Comment Tip
 The `CommentTip` property provides the various options to customize the comment tip of the cells. The comment tip can be added to the particular cell by setting the `CommentText` property. The comment text will be displayed in the comment tip window.
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ gridControl1(2, 2).CommentTip.CommentText = "Hello"
 
 ![](CommentTip_images/CommentTip_img2.png)
 
-### Adding image to comment tip
+### Adding Image to Comment Tip
 An image can be added to the comment tip window by setting the `CommentImage` property.
 {% tabs %}
 {% highlight c# %}
@@ -44,7 +44,7 @@ Me.gridControl1(2, 2).CommentTip.CommentImage = Image.FromFile("..\..\img1.png")
 
 N> The comment tip can be added to the particular cell by either setting the `CommentText` property or `CommentImage` property.
 
-### Adding comment tip to column
+### Adding Comment Tip to Column
 The comment tip can be added to the specific column by setting the `CommentText` property of the `ColStyles` property . 
 {% tabs %}
 {% highlight c# %}
@@ -58,7 +58,7 @@ Me.gridControl1.ColStyles(2).CommentTip.CommentText = "Hello"
 {% endtabs %}
 ![](CommentTip_images/CommentTip_img4.png)
 
-### Adding comment tip to row
+### Adding Comment Tip to Row
 The comment tip can be added to the specific row by setting the `CommentText` property of the `RowStyles` property. 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,7 @@ Me.gridControl1.RowStyles(2).CommentTip.CommentText = "Hello"
 
 ![](CommentTip_images/CommentTip_img5.png)
 
-### Adding comment tip using QueryCellInfo event
+### Adding Comment Tip using QueryCellInfo Event
 The comment tip can be added conditionally to the specific cell or row or column by using the `QueryCellInfo` event.
 {% tabs %}
 {% highlight c# %}
@@ -117,7 +117,7 @@ End Sub
 
 N> To check whether the cell has the comment tip or not, the `HasCommentTip` property can be used. It will return `true` when the default values of the `CommentTip` properties of the cell is modified.
  
-## Removing comment tip 
+## Removing Comment Tip 
 The comment tip for the cell can be removed by using the `ResetCommentTip` method.  It will reset the comment tip properties to the default values.
 {% tabs %}
 {% highlight c# %}
@@ -162,10 +162,10 @@ Me.gridControl1(2, 2).CommentTip.ResetCommentImage()
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing an appearance of comment tip
+## Customizing an Appearance of Comment Tip
 The `CommentTip` property provides the list of properties that are used to customize an appearance of the comment tip window.
  
-### Comment indicator
+### Comment Indicator
 The size and color of the comment indicator can be customized by using the `CommentIndicatorSize` and `CommentIndicatorColor` properties of the `CommentTip`. By default, it will be displayed as the red color triangle at the top-right corner of the cell.
 {% tabs %}
 {% highlight c# %}
@@ -186,7 +186,7 @@ Me.gridControl1(2, 2).CommentTip.CommentIndicatorSize = New Size(20, 20)
 
 ![](CommentTip_images/CommentTip_img7.png)
 
-### Comment arrow 
+### Comment Arrow 
 The size and color of the comment arrow can be customized by using the `CommentArrowSize` and `CommentArrowColor` property. 
 {% tabs %}
 {% highlight c# %}
@@ -207,7 +207,7 @@ Me.gridControl1(3, 2).CommentTip.CommentArrowColor = Color.Green
 
 ![](CommentTip_images/CommentTip_img8.png)
 
-### Hiding the comment arrow
+### Hiding the Comment Arrow
 The comment arrow can be hidden by setting the width of the `CommentArrowSize` property to zero. 
 {% tabs %}
 {% highlight c# %}
@@ -228,7 +228,7 @@ Me.gridControl1(4, 2).CommentTip.CommentArrowSize = New Size(0, 10)
 
 N> If the height of the `CommentArrowSize` is set to zero, the comment arrow will be hidden and the comment tip window is shown near to the top-right corner of the cell.
 
-### Comment tip window
+### Comment Tip Window
 The size and font of the comment tip window can be customized by using the `CommentWindowSize` and `CommentFont` properties respectively. 
 The foreground and background colors of the comment tip window can be changed by using the `ForeColor` and `BackColor` properties of the `CommentTip`.
 {% tabs %}
@@ -259,7 +259,7 @@ The following events are used to customize an appearance of the comment tip,
 * CommentTipShowing
 * CommentTipShown
 
-### DrawCommentIndicator event
+### DrawCommentIndicator Event
 This event is used to customize an appearance of the comment indicator by changing its shape, color and location through the event arguments.
 {% tabs %}
 {% highlight c# %}
@@ -277,7 +277,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### CommentTipShowing event
+### CommentTipShowing Event
 An appearance of the comment tip window can be customized by using the `CommentTipShowing` event. This can be also used to change the text, size, color and location of the comment tip window. This event will be raised before comment tip window is displayed.
 {% tabs %}
 {% highlight c# %}
@@ -295,7 +295,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### CommentTipShown event
+### CommentTipShown Event
 This event will be raised after comment tip window is shown. This is used to get the notification of the showing of comment tip window on specific cell. 
 {% tabs %}
 {% highlight c# %}
@@ -315,10 +315,10 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Customization using events
+## Customization using Events
 The `CommentTipShowing` and `CommentIndicatorDraw` events are used to customize an appearance of the comment tip window. This section explains about the customization of comment tip using these events.
 
-### Changing the color and location of the comment indicator 
+### Changing the Color and Location of the Comment Indicator 
 The color and location of the comment indicator can be customized by using the `DrawCommentIndicator` event. 
 {% tabs %}
 {% highlight c# %}
@@ -348,7 +348,7 @@ End Sub
 
 ![](CommentTip_images/CommentTip_img11.png)
 
-### Changing the shape of the comment indicator
+### Changing the Shape of the Comment Indicator
 By default, the comment indicator will be drawn in a triangle shape at the top right corner of the cell. the default shape of the comment indicator can be changed by using the `DrawCommentIndicator` event. 
 Using the event argument `e.Graphics`, the shape can be filled that you want to display as the comment indicator. The default location of the comment indicator can be get by using the `e.IndicatorBounds` property. 
 {% tabs %}
@@ -386,7 +386,7 @@ End Sub
 
 ![](CommentTip_images/CommentTip_img12.png)
 
-### Disabling the comment indicator
+### Disabling the Comment Indicator
 The `DrawCommentIndicator` event is used to avoid displaying of comment indicator by setting the `e.Cancel` to `true`.
 {% tabs %}
 {% highlight c# %}
@@ -411,7 +411,7 @@ End Sub
 
 ![](CommentTip_images/CommentTip_img13.png)
 
-### Disabling the comment tip window 
+### Disabling the Comment Tip Window 
 The displaying of comment tip window for comment tip cell can be canceled by using the `CommentTipShowing` event.  The `e.cancel` can be used to cancel the comment tip window display.
 {% tabs %}
 {% highlight c# %}
@@ -435,7 +435,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Changing the location of comment tip window
+### Changing the Location of Comment Tip Window
 The location of the comment tip window can be modified dynamically by handling the `CommentTipShowing` event. In this event, the location of the comment tip window can be set through the `CommentTipWindow.Location` property.
 {% tabs %}
 {% highlight c# %}
@@ -463,7 +463,7 @@ End Sub
 
 N> When the custom location is set by an end user, the default comment arrow for indicating the comment window will not be drawn.
 
-### Setting the custom comment text 
+### Setting the Custom Comment Text 
 The text displayed on the comment tip window can be customized on showing by using the `CommentTipShowing` event.
 {% tabs %}
 {% highlight c# %}
@@ -487,7 +487,7 @@ End Sub
 
 ![](CommentTip_images/CommentTip_img15.png)
 
-## Highlighting the comment tip cell
+## Highlighting the Comment Tip Cell
 To highlight the cells or customize the cells if that cell has comment tip, `HasCommentTip` property can used in the `PrepareViewStyleInfo` event. 
 {% tabs %}
 {% highlight c# %}

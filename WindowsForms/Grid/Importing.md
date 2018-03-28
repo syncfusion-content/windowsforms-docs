@@ -165,7 +165,7 @@ public void Model_QueryCellInfo(object sender, Syncfusion.Windows.Forms.Grid.Gri
             {
                 IRange rangeToConvert = sheet.Range[e.RowIndex, e.ColIndex];
 
-//Used to set the styles of the Excel cell to grid.  
+                //Used to set the styles of the Excel cell to grid.  
                 excelConverter.ConvertExcelStyleToVirtualGridStyle(e.Style, sheet, rangeToConvert);
                 
             }
@@ -177,7 +177,7 @@ void gridModel_SaveCellInfo(object sender, GridSaveCellInfoEventArgs e)
       int index = this.tabBarSplitterControl.ActivePageIndex;
       IWorksheet Worksheet = workbook.Worksheets[index];
 
-//Used to save the changes made in grid to Excel sheet which is currently in view. 
+    //Used to save the changes made in grid to Excel sheet which is currently in view. 
        excelConverter.SaveCellInfoToExcelsheet(Worksheet, sender as GridModel, e.Style);
 }
 

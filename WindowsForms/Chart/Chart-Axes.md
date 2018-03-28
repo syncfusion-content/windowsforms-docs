@@ -1512,6 +1512,7 @@ this.chartControl1.Rotation = 60;
 {% highlight vb %}
 
 Me.chartControl1.Series3D = True
+
 Me.chartControl1.Depth = 55F
 
 Me.chartControl1.Tilt = 55F

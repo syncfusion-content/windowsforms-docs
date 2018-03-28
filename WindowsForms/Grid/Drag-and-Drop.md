@@ -28,7 +28,7 @@ Me.gridControl1.AllowDrop = True
 ![](DragandDrop_images/DragandDrop_img2.jpeg)
 
 
-## Drag and Drop between multiple grids
+## Drag and Drop between Multiple Grids
 
 It is also possible to drag and drop between the two or more GridControls by enabling the `AllowDrop` property for both of the GridControls.
 
@@ -51,8 +51,6 @@ Me.gridControl2.AllowDrop = True
 {% endtabs %}
 
 ![](DragandDrop_images/DragandDrop_img3.jpeg)
-
-
 
 
 ![](DragandDrop_images/DragandDrop_img4.jpeg)
@@ -92,7 +90,7 @@ Me.gridControl1.ControllerOptions ~= GridControllerOptions.DragColumnHeader
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling drag and drop for a particular column header
+### Disabling Drag and Drop for a Particular Column Header
 
 There is an event named [QueryAllowDragColumnHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBaseImp~QueryAllowDragColumnHeader_EV.html#) which gets fired while dragging the header. This event can be used to prevent drag drop operation between particular headers by setting the [AllowDrag](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryDragColumnHeaderEventArgs~AllowDrag.html#) property to `false`.
 
@@ -155,7 +153,7 @@ gridControl2.Model.Options.DragDropDropTargetFlags = GridDragDropFlags.Text Or G
 ![](DragandDrop_images/DragandDrop_img8.jpeg)
 
 
-## Drag Drop Events
+## Drag-Drop Events
 
 It is also possible to move or copy the contents from one grid to another by using events. There are three events related to Drag and Drop.
 
@@ -172,9 +170,8 @@ this.gridControl2.DragOver += new DragEventHandler(gridControl2_DragOver);
 
 void gridControl2_DragOver(object sender, DragEventArgs e)
 {
-
-// Contents that are been dragged over gridControl2 will be copied.
-e.Effect = DragDropEffects.Copy;
+    // Contents that are been dragged over gridControl2 will be copied.
+    e.Effect = DragDropEffects.Copy;
 }
 {% endhighlight %}
 
@@ -201,9 +198,8 @@ this.gridControl2.DragOver += new DragEventHandler(gridControl2_DragOver);
 
 void gridControl2_DragOver(object sender, DragEventArgs e)
 {
-
-// Contents that are been dragged over gridControl2 will not be moved or copied.
-e.Effect = DragDropEffects.None;
+    // Contents that are been dragged over gridControl2 will not be moved or copied.
+    e.Effect = DragDropEffects.None;
 }
 {% endhighlight %}
 
@@ -220,7 +216,7 @@ End Sub
 ![](DragandDrop_images/DragandDrop_img10.jpeg)
 
 
-### Blocking the data before dragging
+### Blocking the Data before Dragging
 
 [QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#) event can be used to identify in which range the contents are been moved. It is also possible to cancel the process of Drag and drop operations by using the `Cancel` property.
 
@@ -230,9 +226,8 @@ this.gridControl1.QueryCanOleDragRange += new GridQueryCanOleDragRangeEventHandl
 
 void gridControl1_QueryCanOleDragRange(object sender, GridQueryCanOleDragRangeEventArgs e)
 {
-
-// Drag Drop process will be canceled.
-e.Cancel = true;
+    // Drag Drop process will be canceled.
+    e.Cancel = true;
 }
 {% endhighlight %}
 
@@ -266,7 +261,6 @@ void gridControl1_QueryCanOleDragRange(object sender, GridQueryCanOleDragRangeEv
 Private Sub gridControl1_QueryCanOleDragRange(ByVal sender As Object, ByVal e As GridQueryCanOleDragRangeEventArgs)
 
 If e.Range.Left <> e.Range.Right OrElse e.Range.Top<>e.Range.Bottom Then
-
 Me.gridControl1.Selections.Add(e.Range)
 End If
 End Sub
@@ -281,7 +275,7 @@ End Sub
 
 For more info regarding the Drag Drop related queries please refer our KB articles which can be viewed over [here](https://www.syncfusion.com/kb/windowsforms/gridcontrol?sortId=0&tags=drag-and-drop#).
 
-### Retaining the dragged contents
+### Retaining the Dragged Contents
 
 By default while moving the contents from one grid to another using drag and drop operation, the contents of the first grid will be moved completely to the second grid. To overcome this make use of the [QueryDragDropMoveClearCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryDragDropMoveClearCells_EV.html#) event and set the `Cancel` property as `true`. 
 
@@ -306,7 +300,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Obtaining the dragging range
+### Obtaining the Dragging Range
 
 [QueryOleDataSourceData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryOleDataSourceData_EV.html#) is another event which is used to get the range of cells that is being copied by using OLE Drag Drop operations.
 
@@ -335,7 +329,7 @@ End Sub
 ![](DragandDrop_images/DragandDrop_img13.jpeg)
 
 
-### Finding the row index and column index of the dropped grid
+### Finding the Row Index and Column Index of the Dropped Grid
 
 It is possible to get the row index and column index while drag and drop the contents to the exact location by using the [Model.OleDropAtRowCol](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~OleDropAtRowCol_EV.html#) event.
 
@@ -359,5 +353,3 @@ End Sub
 {% endtabs %}
 
 ![](DragandDrop_images/DragandDrop_img14.jpeg)
-
-

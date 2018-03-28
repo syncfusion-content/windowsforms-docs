@@ -24,10 +24,10 @@ this.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid;
 {% endhighlight %}
 {% highlight vb %}
 
-' Set MergeCells direction for the GridControl.
+'Set MergeCells direction for the GridControl.
 Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.Both
 
-' Set merge cells behavior for the Grid.
+'Set merge cells behavior for the Grid.
 Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation Or GridMergeCellsMode.MergeColumnsInRow Or GridMergeCellsMode.MergeRowsInColumn
 Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
 {% endhighlight %}
@@ -52,7 +52,7 @@ this.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.ColumnsInRow | G
 {% endhighlight %}
 {% highlight vb %}
 
-' Set MergeCells direction for the GridControl.
+'Set MergeCells direction for the GridControl.
 Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.ColumnsInRow Or GridMergeCellDirection.RowsInColumn
 {% endhighlight %}
 {% endtabs %}
@@ -88,7 +88,7 @@ Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
 {% endhighlight %}
 {% endtabs %}
 
-## Finding a merged range of a cell
+## Finding a Merged Range of a Cell
 The [MergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html) collection maintains the all the merged ranges of a GridControl. To find a merged range of a cell, [FindRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~FindRange.html) method can be used. If the specified cell with row index and column index is inside a ` MergedRange `, a range will be returned. Otherwise it will return the empty range.
 
 {% tabs %}
@@ -118,7 +118,7 @@ MessageBox.Show("MergedRange for cell(4,3) is " & mergedRange.Info.ToString() & 
 
 N> The merged range of a cell can also be determined by using [GetSpannedRangeInfo](/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method instead of using `FindRange` method. 
 
-## Delaying and evaluating merge cells
+## Delaying and Evaluating Merge Cells
 The cells which are all having same content will be merged. The merging can be delayed for specified range of cells to be re-evaluate later using [DelayMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~DelayMergeCells.html) and those delayed merged cells can be re-evaluated later by using [EvaluateMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~EvaluateMergeCells.html) methods. So merged cells which are delayed will not be re-evaluated until `EvaluateMergeCells` method is called for that specified range.
 
 {% tabs %}
@@ -131,10 +131,10 @@ this.gridControl1.Model.MergeCells.EvaluateMergeCells(GridRangeInfo.Rows(1, 3));
 
 {% endhighlight %}
 {% highlight vb %}
-' Delaying the merging of cells for specified range.
+'Delaying the merging of cells for specified range.
 Me.gridControl1.Model.MergeCells.DelayMergeCells(GridRangeInfo.Rows(1, 3))
 
-' Re-evaluating of merged cells.
+'Re-evaluating of merged cells.
 Me.gridControl1.Model.MergeCells.EvaluateMergeCells(GridRangeInfo.Rows(1, 3))
 {% endhighlight %}
 {% endtabs %}

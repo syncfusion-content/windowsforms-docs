@@ -17,9 +17,9 @@ DataBound Grid has support for displaying a single record in multiple rows.
 
 N> For more details, refer to the following browser sample:
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Multi Row Record Demo_
+**_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Customization\Multi Row Record Demo_**
 
-## Example
+### Example
 
 Using the following code example, you can switch display of records from NorthWind's Customers table between displaying a single row per record and multiple rows per record. The Binder.LayoutColumns function can be used to break records into multiple rows. The record can be broken by inserting a "." in the LayoutColumns() function of GridHierarchyLevel class.
 
@@ -31,7 +31,7 @@ GridModelDataBinder binder = gridDataBoundGrid1.Binder;
 // "." indicates a new row.
 binder.LayoutColumns(new string[] {"CustomerID", "CompanyName", "ContactTitle", "ContactName", ".", "Address", "City", ".", "PostalCode", "Country", "Phone", "Fax", "Region"});
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Dim gridModel As GridModel = gridDataBoundGrid1.Model
 Dim binder As GridModelDataBinder = gridDataBoundGrid1.Binder
 

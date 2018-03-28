@@ -232,7 +232,7 @@ The below example shows the checkbox is asserted and the checked state of the ch
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img16.jpeg)
 
-### Finding a cell and getting the cell value
+### Finding a Cell and Getting the Cell Value
 To find a cell in the GridControl, `SearchProperties` property can be used and to get the cell value, `GetPropertyValue` method can be used. The corresponding cell name has to be given for searching the control. 
 {% tabs %}
 {% highlight c# %}
@@ -264,7 +264,7 @@ The below example shows the getting of a cell value from grid,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img17.jpeg)
 
-### Highlighting a cell
+### Highlighting a Cell
 To highlight a cell in GridControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
@@ -296,7 +296,7 @@ The below example shows the highlighting of a cell,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img18.jpeg)
 
-### Highlighting a grid
+### Highlighting a Grid
 To highlight a GridControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
@@ -324,7 +324,7 @@ The below example shows the highlighting of grid,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img19.jpeg)
 
-## External plugin
+## External Plugin
 The GridControl also provides Coded UI support via external plugin. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
 
 ### System Requirements
@@ -352,7 +352,7 @@ Premium, Ultimate, Enterprise editions of
 </tr>
 </table>
 
-### Enabling Coded UI support
+### Enabling Coded UI Support
 To enable the Coded UI support for grid, the following steps has to be implemented,
 
 * Deploying Extensions Assemblies
@@ -621,7 +621,7 @@ Indicates the dropdown style behavior of a cell if it is combobox cell.
 </tr>
 </table>
 
-### Finding a cell and getting the cell value
+### Finding a Cell and Getting the Cell Value
 To find a cell in the GridControl, `SearchProperties` property can be used and to get a cell value, the `GetPropertyValue` method can be used. The corresponding control type, RowIndex and columnIndex has to be given for searching the control.
 
 {% tabs %}
@@ -659,7 +659,7 @@ The below example shows the getting of a cell value from grid,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img21.jpeg)
 
-### Highlighting a cell
+### Highlighting a Cell
 To highlight a cell in GridControl, the GridControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
@@ -696,7 +696,7 @@ The below example shows the highlighting of a cell,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img22.jpeg)
 
-### Highlighting a grid
+### Highlighting a Grid
 To highlight a GridControl, the GridControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used. 
 {% tabs %}
 {% highlight c# %}

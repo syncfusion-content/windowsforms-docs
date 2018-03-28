@@ -11,7 +11,7 @@ documentation: ug
 
 This feature enables you to apply new Metro styles to the Schedule control. 
 
-### Use Case Scenario
+### Use case scenario
 
 The Metro theme support is useful for commercial applications in order to attract end users with inspiring UI look and feel.
 
@@ -51,7 +51,7 @@ You can apply the Metro theme to the Schedule control by setting the GridVisualS
 {% highlight c# %}
 this.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusion.Windows.Forms.GridVisualStyles.Metro;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusion.Windows.Forms.GridVisualStyles.Metro
 {% endhighlight %}
 {% endtabs %}

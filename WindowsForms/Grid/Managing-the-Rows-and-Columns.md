@@ -89,7 +89,7 @@ The grid after hiding the column will be looks as follows,
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img5.png)
 
-## Unhide Columns Using Double Click
+## Unhide Columns using Double Click
 The hidden columns can be shown by double clicking on the column headers as like Excel. This behavior can be determined by using the UnHideColsOnDblClick property. The default value of this property is `true`. So the unhide behavior can be disabled by setting this property as `false`.
 
 {% tabs %}
@@ -111,7 +111,7 @@ The following example shows the column `C` is returned to view while double clic
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img7.png)
 
-### Prevent Hiding of Rows and Column Using Events
+### Prevent Hiding of Rows and Column using Events
 To avoid hiding the particular row or column in GridControl, set the `e.Cancel` to `true` in the [RowsHiding](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~RowsHiding_EV.html) and [ColsHiding](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ColsHiding_EV.html)  event.
 
 {% tabs %}
@@ -124,7 +124,7 @@ void gridControl1_RowsHiding(object sender, Syncfusion.Windows.Forms.Grid.GridRo
     if (e.From <= rowIndex && e.To >= rowIndex)
     {
 
-//Restrict the particular row from hiding. 
+        //Restrict the particular row from hiding. 
         e.Cancel = true;
     }
 }

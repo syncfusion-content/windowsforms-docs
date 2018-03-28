@@ -56,7 +56,7 @@ Me.gridControl1.CurrentCell.ShowErrorMessageBox = False
 ![](DataValidation_images/DataValidation_img2.jpeg)
 
 
-### Error tips support
+### Error Tips Support
 
 The Error provider will also show the error message in the comment tips while moving the mouse over the error cell.
 
@@ -75,6 +75,10 @@ this.gridControl1.CurrentCellValidating += new CancelEventHandler(gridControl1_C
 
 void gridControl1_CurrentCellValidating(object sender, CancelEventArgs e)
 {
+    if (this.gridControl1.CurrentCell.ColIndex == 3)
+    {
+        int val;
+        GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
     if (this.gridControl1.CurrentCell.ColIndex == 3)
     {
@@ -96,6 +100,9 @@ private void button1_Click(object sender, EventArgs e)
     this.gridControl1[3, 3].CellValue = "Hello";
     this.gridControl1.CurrentCell.MoveTo(3, 3);
     this.gridControl1.CurrentCell.Validate();
+
+this.gridControl1.CurrentCell.MoveTo(3, 3);
+this.gridControl1.CurrentCell.Validate();
 
 }
 {% endhighlight %}
@@ -161,7 +168,6 @@ this.gridControl1.CurrentCellValidating += gridControl1_CurrentCellValidating;
 
 void gridControl1_CurrentCellValidating(object sender, CancelEventArgs e)
 {
-
     if (this.gridControl1.CurrentCell.ColIndex == 3)
     {
         int val;
@@ -170,8 +176,8 @@ void gridControl1_CurrentCellValidating(object sender, CancelEventArgs e)
         if (renderer != null && int.TryParse(renderer.ControlText,out val) && val> 20)
         {
 
-            //Display custom error provider.
-           this.gridControl1.CurrentCell.SetError("Please enter the valid input");
+        //Display custom error provider.
+        this.gridControl1.CurrentCell.SetError("Please enter the valid input");
         }
     }
 }     
@@ -223,7 +229,7 @@ Private Me.gridControl1.CurrentCellErrorMessage += AddressOf gridControl1_Curren
 
 Private Sub gridControl1_CurrentCellErrorMessage(ByVal sender As Object, ByVal e As GridCurrentCellErrorMessageEventArgs)
 
-' Does not show the Message box for error provider.
+'Does not show the Message box for error provider.
 e.Cancel = True
 
 End Sub

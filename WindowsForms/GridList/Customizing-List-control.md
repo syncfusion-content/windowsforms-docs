@@ -19,7 +19,7 @@ The following code example illustrates setting of a transparent background for g
 {% highlight c# %}
 this.gridListControl1.TransparentBackground = true;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.TransparentBackground = True
 {% endhighlight  %}
 {% endtabs %}
@@ -39,7 +39,7 @@ The following code example illustrates usage of the properties to display grid l
 this.gridListControl1.Properties.DisplayHorzLines = true;
 this.gridListControl1.Properties.DisplayVertLines = true;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.Properties.DisplayHorzLines = True
 Me.gridListControl1.Properties.DisplayVertLines = True
 {% endhighlight  %}
@@ -65,7 +65,7 @@ The following code example illustrates the usage of the property to render a 3D 
 {% highlight c# %}
 this.gridListControl1.Properties.Buttons3D = true;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.Properties.Buttons3D = True
 {% endhighlight  %}
 {% endtabs %}
@@ -82,7 +82,7 @@ The following code example illustrates the usage of this property to render blue
 {% highlight c# %}
 this.gridListControl1.Grid.Properties.GridLineColor = Color.Blue;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
 {% endhighlight  %}
 {% endtabs %}
@@ -101,7 +101,7 @@ The following code example illustrates the usage of this property to render Beig
 {% highlight c# %}
 this.gridListControl1.BackColor = Color.Beige;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.BackColor = Color.Beige
 {% endhighlight  %}
 {% endtabs %}
@@ -118,7 +118,7 @@ The following code example illustrates usage of this property to render a red ba
 {% highlight c# %}
 this.gridListControl1.HeaderBackColor = Color.Red;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.HeaderBackColor = Color.Red
 {% endhighlight  %}
 {% endtabs %}
@@ -131,7 +131,7 @@ The following code example illustrates usage of this property to render a blue h
 {% highlight c# %}
 this.gridListControl1.HeaderTextColor = Color.Blue;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.HeaderTextColor = Color.Blue;
 {% endhighlight  %}
 {% endtabs %}
@@ -144,7 +144,7 @@ The following code example illustrates usage of this property to set the require
 {% highlight c# %}
 this.gridListControl1.BackgroundImage = Image.FromFile("Cloud.jpg");
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.gridListControl1.BackgroundImage = Image.FromFile("Cloud.jpg")
 {% endhighlight  %}
 {% endtabs %}

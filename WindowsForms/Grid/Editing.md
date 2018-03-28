@@ -89,7 +89,7 @@ N> Likewise [ConfirmChanges](http://help.syncfusion.com/cr/cref_files/windowsfor
 
 
 
-### Canceling the changes
+### Canceling the Changes
 
 The [CancelEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~CancelEdit.html#)() method is used to cancel editing for the current cells and discard the changes related to it.
 
@@ -129,7 +129,7 @@ Me.gridControl1.ReadOnly = False
 {% endhighlight %}
 {% endtabs %}
 
-### Enabling Read Only for a particular cell
+### Enabling Read Only for a Particular Cell
 
 For preventing the editing in cell by cell basis, make use of the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) object’s [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. `GridStyleInfo` object will be available for each cell in the GridControl.
 
@@ -207,7 +207,7 @@ Me.gridControl1.BrowseOnly = True
 
 N> On using the `BrowseOnly` property, the edit cursor for that cell will not be shown in editing. 
 
-### Prevent Editing for particular range of Cells
+### Prevent Editing for Particular Range of Cells
 
 It is possible to prevent a particular cell or range of cells by using the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event. The `Cancel` property is used to restrict the editing.
 
@@ -293,7 +293,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Canceling edit for the whole grid cells
+### Canceling Edit for the Whole Grid Cells
 
 The [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event will be fired when the current cell switches to edit mode. So on clicking an editing cell, this event will be called. There is `Cancel` property used in this event so that editing can be canceled whenever required.
 
@@ -562,13 +562,12 @@ void gridControl1_CurrentCellKeyPress(object sender, KeyPressEventArgs e)
 
 void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
 {
-
-//Translates the Backspace key to a left arrow key.
-if (e.KeyCode == Keys.Back)
-{
-    SendKeys.Send("{LEFT}");
-    e.Handled = true;
-}
+    //Translates the Backspace key to a left arrow key.
+    if (e.KeyCode == Keys.Back)
+    {
+        SendKeys.Send("{LEFT}");
+        e.Handled = true;
+    }
 }
 {% endhighlight %}
 {% highlight vb %}

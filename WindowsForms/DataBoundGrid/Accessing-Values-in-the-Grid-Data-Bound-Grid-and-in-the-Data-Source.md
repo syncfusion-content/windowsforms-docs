@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Accessing Values in the Grid Data Bound Grid and in the Data Source
+# Accessing Values
 
 To access values in the Grid Data Bound Grid, use the indexer and retrieve the value from the GridStyleInfo object. 
 
@@ -16,7 +16,7 @@ To access values in the Grid Data Bound Grid, use the indexer and retrieve the v
 //Gets value at (row, col).
 object myValue = this.gridDataBoundGrid1[row, col].CellValue; 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Gets Value at (row, col).
 Dim myValue as Object = Me.GridDataBoundGrid1(row, col).CellValue
 {% endhighlight  %}
@@ -35,7 +35,7 @@ int col = this.gridDataBoundGrid1.Binder.FieldToColIndex(nField);
 //Gets Value at (row, col).
 object myValue = this.gridDataBoundGrid1[row, col].CellValue;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Specifies the field name.
 Dim nField As Integer = Me.gridDataBoundGrid1.Binder.NameToField("FirstName")

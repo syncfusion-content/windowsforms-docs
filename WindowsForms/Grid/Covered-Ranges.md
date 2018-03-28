@@ -70,7 +70,7 @@ End Sub
 
 ![](Covered-Ranges_images/Covered-Ranges_img2.jpeg)
 
-## Removing a particular range from CoveredRanges
+## Removing Particular Range from CoveredRanges
 To remove the particular covered range from the GridControl, [CoveredRanges.Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCoveredRanges~Remove.html) method can be used. 
 
 {% tabs %}
@@ -83,7 +83,7 @@ this.gridControl1.CoveredRanges.Remove(GridRangeInfo.Cells(2,2,5,7));
 Me.gridControl1.CoveredRanges.Remove(GridRangeInfo.Cells(2,2,5,7))
 {% endhighlight %}
 {% endtabs %}
-## Finding a CoveredRange of a cell 
+## Finding a CoveredRange of a Cell 
 To find a `CoveredRange` of a cell, [FindRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCoveredRanges~FindRange.html) method can be used. If the specified cell with row index and column index is inside a `CoveredRange`, a range will be returned. Otherwise it will return the empty range.
 {% tabs %}
 {% highlight c# %}

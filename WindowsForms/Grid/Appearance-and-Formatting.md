@@ -130,7 +130,7 @@ Me.gridControl.BackgroundImage = Image.FromFile("sync.jpg")
 this.gridControl.TransparentBackground = true;
 {% endhighlight %}
 {% highlight vb %}
-‘Background image or color was displayed.
+'Background image or color was displayed.
 Me.gridControl.TransparentBackground = True
 {% endhighlight %}
 {% endtabs %}
@@ -152,7 +152,7 @@ void gridControl_BackgroundImageChanged(object sender, EventArgs e)
 Private Me.gridControl.BackgroundImageChanged += AddressOf gridControl_BackgroundImageChanged
 
 Private Sub gridControl_BackgroundImageChanged(ByVal sender As Object, ByVal e As EventArgs)
- ‘Add the required code over here.
+'Add the required code over here.
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -181,7 +181,7 @@ To recover the background color to its default value, use the [ResetBackgroundCo
 this.gridControl.Properties.ResetBackgroundColor();
 {% endhighlight %}
 {% highlight vb %}
-' To recover the background color.
+'To recover the background color.
 Me.gridControl.Properties.ResetBackgroundColor()
 {% endhighlight %}
 {% endtabs %}
@@ -195,7 +195,7 @@ The [ColHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Sync
 this.gridControl.Properties.ColHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' To remove column header.
+'To remove column header.
 Me.gridControl.Properties.ColHeaders = False
 {% endhighlight %}
 {% endtabs %}
@@ -210,7 +210,7 @@ The visibility of the row headers in the grid can be set by using the [RowHeader
 this.gridControl.Properties.RowHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' To remove Row header.
+'To remove Row header.
 Me.gridControl.Properties.RowHeaders = False
 {% endhighlight %}
 {% endtabs %}
@@ -225,7 +225,7 @@ The [NumberedColHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/g
 this.gridControl.Model.Options.NumberedColHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' Remove the Column header name.
+'Remove the Column header name.
 Me.gridControl.Model.Options.NumberedColHeaders = False
 {% endhighlight %}
 {% endtabs %}
@@ -240,7 +240,7 @@ The [NumberedRowHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/g
 this.gridControl.Model.Options.NumberedRowHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' Remove the Row header numbers.
+'Remove the Row header numbers.
 Me.gridControl.Model.Options.NumberedRowHeaders = False
 {% endhighlight %}
 {% endtabs %}
@@ -270,7 +270,7 @@ To recover the `FixedLinesColor` to its default value, you can use [ResetFixedLi
 this.gridControl.Properties.ResetFixedLinesColor();
 {% endhighlight %}
 {% highlight vb %}
-' To recover the FixedLinesColor.
+'To recover the FixedLinesColor.
 Me.gridControl.Properties.ResetFixedLinesColor()
 {% endhighlight %}
 {% endtabs %}

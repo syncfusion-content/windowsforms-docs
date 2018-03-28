@@ -153,14 +153,14 @@ public class MyCustomCommand : GridModelCommand
 {
 
 // Constructor for MyCustomCommand class.
-public MyCustomCommand()
-{
-}
+    public MyCustomCommand()
+    {
+    }
 
 // Overrides the Execute method.
-public override void Execute()
-{
-}
+    public override void Execute()
+    {
+    }
 }
 {% endhighlight %}
 
@@ -181,7 +181,7 @@ End Class
 
 After creating the `GridModelCommand` derived class, create a proper instance of your derived `GridModelCommand` class and add it to [CommandStack.UndoStack](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCommandManager~UndoStack.html#) whenever the action is taken.
 
-### Creating Custom Commands for covered cells
+### Creating Custom Commands for Covered Cells
 
 To create a custom command on making the undo/redo operations for covered ranges cells, make use of the below code which explains a simple way on achieving it.
 
@@ -193,37 +193,32 @@ public class GridModelSetCoveredRangesCommand
 
 : GridModelCommand
 {
-GridRangeInfoList ranges;
-bool setOrReset;
-private GridModelCoveredRanges coveredRange;
-public GridModelSetCoveredRangesCommand(GridModelCoveredRanges coveredRange, GridRangeInfoList ranges, bool setOrReset)
+    GridRangeInfoList ranges;
+    bool setOrReset;
+    private GridModelCoveredRanges coveredRange;
+    public GridModelSetCoveredRangesCommand(GridModelCoveredRanges coveredRange, GridRangeInfoList ranges, bool setOrReset)
 
-: base(coveredRange.Model)
-{
-if (setOrReset)
-{
-SetDescription("CommandAddCoveredRanges");
-}
-else
-{
-SetDescription("CommandRemoveCoveredRanges");
-}
-
-this.coveredRange = coveredRange;
-
-this.ranges = ranges;
-
-this.setOrReset = setOrReset;
-}
+    : base(coveredRange.Model)
+    {
+        if (setOrReset)
+        {
+            SetDescription("CommandAddCoveredRanges");
+        }
+        else
+        {
+            SetDescription("CommandRemoveCoveredRanges");
+        }
+        this.coveredRange = coveredRange;
+        this.ranges = ranges;
+        this.setOrReset = setOrReset;
+    }
 
 // Executes the command.
 
 public override void Execute()
 {
-coveredRange.SetCoveredRanges(ranges, setOrReset);
-
-Grid.ScrollCellInView(ranges.ActiveRange, GridScrollCurrentCellReason.Command);
-
+    coveredRange.SetCoveredRanges(ranges, setOrReset);
+    Grid.ScrollCellInView(ranges.ActiveRange, GridScrollCurrentCellReason.Command);
 }
 
 }

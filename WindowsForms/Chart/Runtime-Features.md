@@ -13,8 +13,6 @@ The following topics under this section elaborates on the runtime features of Ch
 
 ## Zooming and Scrolling
 
-### Interactive Zooming
-
 ### Zooming via Mouse
 
 EssentialChart supports interactive zooming features along the x and y axis. During runtime, the user can simply select the range he wants to zoom with the mouse and the chart will accordingly zoom-in. Scrollbars will be activated to browse the areas that become hidden on zooming in.
@@ -41,7 +39,7 @@ You can also programmatically specify the scrollbar position of the zoomed in ax
 
 To restrict the zoom-in factor to a certain level on the x and y axis use the MinZoomFactorX and MinZoomFactorY properties. The value can be in between 0 and 1. 1 means not zoomed.
 
-###Zooming via Keyboard
+### Zooming via Keyboard
 
 EssentialChart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the KeyZoom property.
 
@@ -150,6 +148,8 @@ The Chart is zoomed according to the spread/pinch gestures </td></tr>
 
 In selection zoom type, the user can select the required range to be zoomed and the chart will be zoomed in accordingly. The chart is restored to its original position on Double click.
 
+{% tabs %} 
+
 {% highlight c# %}
 
 this.chartControl1.ZoomType = ZoomType.Selection;
@@ -162,9 +162,10 @@ Me.chartControl1.ZoomType= ZoomType.Selection
 
 {% endhighlight %}
 
+{% endtabs %}
+
 **Illustrates the Selection of Chart Region for Zooming** 
 ![](Runtime-Features_images/Runtime-Features_img30.png)
-
 
 **Displays the Zoomed Region of the chart**
 ![](Runtime-Features_images/Runtime-Features_img31.png)
@@ -172,6 +173,8 @@ Me.chartControl1.ZoomType= ZoomType.Selection
 ### Zooming via Mouse Wheel
 
 When the ZoomType is set as **ZoomType.MouseWheelZooming** then the chart is zoomed in and out based on the mouse wheel movement. Double clicking on the chart will restore the chart to its original position
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -185,6 +188,8 @@ Me.chartControl1.ZoomType= ZoomType.MouseWheelZooming
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Zooming in Touch devices 
 
 In touch enabled devices, the user can zoom  the chart using the spread or pinch gestures.
@@ -196,6 +201,8 @@ In touch enabled devices, the user can zoom  the chart using the spread or pinch
 ![](Runtime-Features_images/Runtime-Features_img33.png)
 
 The spread action  will result in zoom- in of the chart and pinch action will result in zoom-out of the chart. Double tapping on the chart area restores the chart to its original position.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -209,9 +216,13 @@ Me.chartControl1.ZoomType= ZoomType.PinchZooming
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### ResetOnDoubleClick
 
 When the **ResetOnDoubleClick** option is enabled, the chart is reset to its original position on **Double click or Double Tap**. The default value of this property is **False**.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -224,6 +235,8 @@ this.chartControl1.ResetOnDoubleClick = true;
 Me.chartControl1.ResetOnDoubleClick= true
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Formatted Axes Labels
 
