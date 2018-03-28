@@ -260,7 +260,7 @@ The following code example illustrates the Java configuration settings in EditCo
 
 {% highlight C# %}
 
-// Considering configuration settings for JAVA as an example. Using the KnownLanguages enumerator.
+// Considering configuration settings for Java as an example. Using the KnownLanguages enumerator.
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Java);
 

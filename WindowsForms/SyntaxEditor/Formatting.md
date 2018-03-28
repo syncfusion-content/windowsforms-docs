@@ -180,7 +180,7 @@ Dim editText as String = Me.editControl1.SelectedText
 
 **Cancel or Reset selection**
 
-Text selection can be either cancelled or reset by using the below given methods.
+Text selection can be either cancel or reset by using the below given methods.
 
 <table>
 <tr>
@@ -1929,7 +1929,7 @@ The EditControl status bar supports different visual styles for its appearance. 
 * Office2007
 * Office2010
 
-The visual style can be applied for the StatusBar using `VisualStyle` property. The following code example illustrates how to change the visual style for StausBar in EditControl.
+The visual style can be applied for the StatusBar using `VisualStyle` property. The following code example illustrates how to change the visual style for StatusBar in EditControl.
 
 **Default**
 
