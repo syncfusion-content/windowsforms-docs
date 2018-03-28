@@ -76,7 +76,23 @@ Me.CaptionForeColor = Color.Pink
 
 {% endtabs %}
 
-![](Caption-Settings_images/CaptionForeColor.png)
+## Caption Bar Height
+
+This property helps to customize the CaptionBar height.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.CaptionBarHeight = 50;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me. CaptionBarHeight = 50
+
+![](Caption-Settings_images/CaptionBarHeight.png)
 
 ## Help Button Support
 
