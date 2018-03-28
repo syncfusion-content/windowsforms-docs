@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to QueryCellFormattedText and SaveCellFormattedText
+# How to Format the Text
 
 The purpose of QueryCellFormattedText is to take data, which is present in the Total Marks and convert it to Percentage for display. The SaveCellFormattedText takes the units that are entered by the user in Percentage and converts them to Total Marks so that they can be saved as Total Marks.
 
