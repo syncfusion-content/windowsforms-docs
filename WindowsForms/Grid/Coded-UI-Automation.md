@@ -19,7 +19,7 @@ Levels of Microsoft Coded UI Test (CUIT) support,
 
 N> All these levels are supported in GridControl.
 
-## Getting Started
+## Getting started
 A `Coded UI Test Project` needs to be created for testing the application. The following steps are used to test the user application with Coded UI test,
 
 1. Create Coded UI Test Project ,
@@ -41,7 +41,7 @@ The GridControl supports Coded UI as the two ways,
 * In-built support
 * External plugin
 
-## Control Assertion
+## Control assertion
 The **Coded UI Test** performs action on the user interface (UI) controls and verifies that the `UIElement` properties are displayed with the correct values. The assertion of the UI element can be done by the following steps,
 
 1. Create the **Coded UI Test Project** as explained in the [Getting Started](#_Getting_Started) section.
@@ -105,10 +105,10 @@ The recorded automation codes can be played back. The following steps are used t
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
 
-## In-built Support
+## In-built support
 The GridControl supports automated UI testing with Coded UI technology without any external plugin. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
 
-### System Requirements
+### System requirements
 The following IDEs and .NET frameworks are supported for automating the GridControl.
 <table>
 <tr>
@@ -225,7 +225,7 @@ The below example shows the properties that are displayed in the Coded UI test b
 
 N> The properties will be displayed based on the respective **MSAA** control properties. 
 
-### Getting Cell Values
+### Getting cell values
 As GridControl and cell are asserted like **MSAA** control, a value of a cell will be displayed in the `HelpText` property. 
 
 The below example shows the checkbox is asserted and the checked state of the check box is displayed in `HelpText` property,
@@ -387,7 +387,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies
 C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies
 
 
-### Modifying the Sample Application for Communication
+### Modifying the sample application for communication
 The grid application host runs with .NET Remoting channel hosted internally to communicate with test plugin through an interface. Data is then channeled across the Visual Studio Test Framework to identify the Cells and GridControl. The following steps helps the users to prepare the grid sample application to support Coded UI plugin.
 
 * Add the Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll which contains implementation to easily change an existing application to the test application that the plugin would require.
@@ -474,7 +474,7 @@ The following example shows the property that displayed in the Coded UI test bui
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img20.jpeg)
 
-#### Asserting a Cell
+#### Asserting a cell
 <table>
 <tr>
 <th>

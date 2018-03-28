@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Retrieve the Text From a Cell
-
-## Introduction
+# How to retrieve the text from a cell
 
 To retrieve text from a cell, simply use [Text](/windowsforms/grid/cell-style-architecture#text-and-cellvalue) property of the cells style object, which is obtained through an indexer in the GridControl.
 

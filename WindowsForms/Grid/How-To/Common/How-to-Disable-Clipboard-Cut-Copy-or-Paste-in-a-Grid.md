@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Disable Clipboard Cut, Copy, or Paste in a Grid
-
-### Introduction
+# How to disable clipboard Cut, Copy, or Paste in a Grid
 
 If you want to conditionally disable support, handle ClipboardCanCut, ClipboardCanCopy, or ClipboardCanPaste events and cancel the events by setting e.Handled to True and e.Result to False under the desired conditions. 
 
@@ -60,8 +58,8 @@ private void gridControl1_ClipboardCanPaste(object sender, GridCutPasteEventArgs
 If someCondition Then
     e.Handled = True
 
-    'Sets Result Property to False to disable the process.
-    e.Result = False
+'Sets Result Property to False to disable the process.
+e.Result = False
 End If
 
 'GridControl1_ClipboardCanPaste.

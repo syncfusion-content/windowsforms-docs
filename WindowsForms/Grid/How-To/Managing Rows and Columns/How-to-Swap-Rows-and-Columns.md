@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Swap Rows and Columns
-
-## Introduction
+# How to swap rows and columns
 
 This can be done in GridControl by handling virtual events QueryCellInfo, SaveCellInfo, QueryRowCount, QueryColCount. Here GridControl.Data property is used.
 

@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Make a Cell Display '...' if it is Not Wide Enough
-
-### Introduction
+# How to make a cell display '...' if it is not wide enough
 
 You must set GridStyleInfo'sTrimming property to achieve this. To enable trimming for the whole grid, set this property in TableStyle. To enable trimming on a column, row, or cell basis, set this style property using techniques that are appropriate for the grid that you are using as discussed in the topics on changing BackColor.
 

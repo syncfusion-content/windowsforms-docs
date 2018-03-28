@@ -9,8 +9,6 @@ documentation: ug
 
 # How to Print Preview a Grid
 
-### Introduction
-
 GridPrintDocument class will allow you to [print](/windowsforms/gridgrouping/printing) preview your grids. Here is a button click event handler that will show you how to use this class.
 
 {% tabs %}
@@ -23,6 +21,7 @@ private void menuItem13_Click(object sender, System.EventArgs e)
         try
         {
             GridPrintDocument pd = new GridPrintDocument(this.grid, true);
+	
 			//Creates a PrintPreviewDialog object.
              PrintPreviewDialog dlg = new PrintPreviewDialog();
 

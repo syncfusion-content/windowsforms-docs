@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Control Whether OLE Drag-and-Drop is Supported in the Grid
-
-### Introduction
+# How to control whether OLE Drag-and-Drop is supported in the Grid
 
 Whether a grid is an OLE drop target, which is controlled by DragDropTargetFlags in the grids Model.Options class. These flags control things like clipboard format, the type of data, whether columns or rows can be appended to accommodate the dropped data, and whether auto scrolling is supported. Check the enums for GridDragDropFlags to see the full set of options.
 
