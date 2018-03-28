@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Put a ComboBox in a Header Cell in GridControl or GridDataBoundGrid
-
-### Introduction
+# How to put a ComboBox in a header cell in GridControl or GridDataBoundGrid
 
 ### GridControl
 
@@ -54,22 +52,23 @@ string choice;
 //Handles QueryCellInfo to set datasource for combobox.
 private void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-if(e.ColIndex > 0 && e.RowIndex == 0)
-{
-    int colIndex2 = this.gridDataBoundGrid1.Binder.NameToColIndex("Column4");
-    if(colIndex2 == e.ColIndex)
+    if(e.ColIndex > 0 && e.RowIndex == 0)
     {
-          e.Style.Borders.All = gridBorder;
-          e.Style.BackColor = Color.White;
-          e.Style.CellType = "ComboBox";
+        int colIndex2 = this.gridDataBoundGrid1.Binder.NameToColIndex("Column4");
+        
+        if(colIndex2 == e.ColIndex)
+        {
+            e.Style.Borders.All = gridBorder;
+            e.Style.BackColor = Color.White;
+            e.Style.CellType = "ComboBox";
 
 			//Sets Datasource for combobox.
-          e.Style.ChoiceList = items;
-          e.Style.CellValue = choice;
-          e.Style.CellAppearance = GridCellAppearance.Raised;
-          e.Style.Enabled = true;
+            e.Style.ChoiceList = items;
+            e.Style.CellValue = choice;
+            e.Style.CellAppearance = GridCellAppearance.Raised;
+            e.Style.Enabled = true;
+        }
     }
-}
 }
 
 //Handles SaveCellInfo to save the edited values back to the datasource.
@@ -78,10 +77,12 @@ private void Model_SaveCellInfo(object sender, GridSaveCellInfoEventArgs e)
    if(e.ColIndex > 0 && e.RowIndex == 0)
    {
        int colIndex2 = this.gridDataBoundGrid1.Binder.NameToColIndex("Column4");
+       
        if(colIndex2 == e.ColIndex)
        {
-              if(e.Style.CellValue != null )
-              choice = (string)e.Style.CellValue;
+             
+            if(e.Style.CellValue != null )
+            choice = (string)e.Style.CellValue;
        }
    }
 }

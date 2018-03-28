@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Prevent Resizing a Specific Column in GridControl
-
-### Introduction
+# How to prevent resizing a specific column in GridControl
 
 Handle ResizingColumns event and cancel the resizing for specific columns.
 

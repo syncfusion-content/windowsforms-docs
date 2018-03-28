@@ -139,7 +139,7 @@ Me.gridControl1.Model.MergeCells.EvaluateMergeCells(GridRangeInfo.Rows(1, 3))
 {% endhighlight %}
 {% endtabs %}
 
-## Custom Cell Merging 
+## Custom cell merging 
 The GridControl lets you define the merged cells using [QueryCanMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCanMergeCells_EV.html) event. This event will be raised when grid compares the content of the two cells to determine if they should be merged.
 
 Any of the cells can be merged using this event. The [Handled](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.ComponentModel.SyncfusionHandledEventArgs~Handled.html) and [Result](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryCanMergeCellsEventArgs~Result.html) properties have to be enabled to perform the customization in this event. 
@@ -154,9 +154,11 @@ this.gridControl1.QueryCanMergeCells += new GridQueryCanMergeCellsEventHandler(g
 
 void gridControl1_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventArgs e)
  {
+
       // Checking whether it is already merged cells.
       if (!e.Result)
       {
+
             // Sets merging for two cells with different data.
             if (e.Style1.CellValue.ToString() == "381" && e.Style2.CellValue.ToString() == "794")
                 {
@@ -173,8 +175,10 @@ void gridControl1_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventA
 Private Me.gridControl1.QueryCanMergeCells += New GridQueryCanMergeCellsEventHandler(AddressOf gridControl1_QueryCanMergeCells)
 
 Private Sub gridControl1_QueryCanMergeCells(ByVal sender As Object, ByVal e As GridQueryCanMergeCellsEventArgs)
+
       ' Checking whether it is already merged cells.
       If Not e.Result Then
+
             ' Sets merging for two cells with different data.
             If e.Style1.CellValue.ToString() = "381" AndAlso e.Style2.CellValue.ToString() = "794" Then
                   e.Result = True

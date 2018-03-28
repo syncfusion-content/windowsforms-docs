@@ -9,8 +9,6 @@ documentation: ug
 
 # How to make resizing possible in additional row headers of a GridControl and GridDataBoundGrid
 
-
-
 The resizing of additional row headers on the grid can be made possible by setting ResizeColsBehavior flag to Grid.GridResizeCellsBehavior.InsideGrid.
 
 {% tabs %}

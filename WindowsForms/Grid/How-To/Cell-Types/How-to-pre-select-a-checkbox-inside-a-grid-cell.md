@@ -11,8 +11,6 @@ documentation: ug
 
 You need to set a style member called CheckBoxOptions for a particular grid cell, for this purpose. CheckBoxOptions.CheckedValue is used to specify what value should be given in the CellValue to make the checkbox checked. 
 
-## Example
-
 If you want "true" to be checked and "false" to be unchecked state then use the below code.
 
 {% tabs %}

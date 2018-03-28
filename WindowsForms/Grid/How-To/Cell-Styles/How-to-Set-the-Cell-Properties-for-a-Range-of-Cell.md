@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Set the Cell Properties for a Range of Cells
-
-## Introduction
+# How to set the cell properties for a range of cells
 
 Use the GridControl's ChangeCells method by passing it a [GridRangeInfo](/windowsforms/Grid/Cell-Style-Architecture#gridrangeinfo) object to change the appearance of a range of cells. 
 
