@@ -66,7 +66,7 @@ Next rec
 
 
 
-### The Grouping.TableDescriptor Class
+### The Grouping.TableDescriptor class
 
 As noted previously, the grouping.TableDescriptor is the property that maintains the schema information for the data source. Here is a table showing some collections in the TableDescriptor that you will be using as the lessons continue.
 
@@ -190,8 +190,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-   {:.prettyprint }
-
 5. Once you have your ShowRecordsUnderGroup method, you only have to retrieve a particular group from the Groups collection and then call the method. So, after grouping on property C, you can view all the records whose Category is "c1" using the code like the one given below the Main method.
 
 {% tabs %}
@@ -251,7 +249,7 @@ SummaryDescriptor sdBInt32Agg = new SummaryDescriptor("BInt32Agg", "B", SummaryT
 // Add this summary to the Summaries collection.
 groupingEngine.TableDescriptor.Summaries.Add(sdBInt32Agg);
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 ' Create a summary that computes the Int32Aggregate calculations on property B.
 Dim sdBInt32Agg As New SummaryDescriptor("BInt32Agg", "B", SummaryType.Int32Aggregate)
 
@@ -290,7 +288,7 @@ Console.WriteLine("c1-group {0}, {1}, {2}", int32Summary.Sum, int32Summary.Avera
 // Pause
 Console.ReadLine(); 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 ' At the bottom of the Main method, add these lines.
 
 ' Now go through the group to get the Summary value for the group.

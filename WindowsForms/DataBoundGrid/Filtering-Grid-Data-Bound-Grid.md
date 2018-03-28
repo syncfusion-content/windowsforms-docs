@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Filtering Grid Data Bound Grid
+# Filtering 
 
 We will use an example to illustrate filtering procedure for the grid.
 
@@ -55,7 +55,7 @@ The filtered grid is created by setting RowFilter property of it to default view
 DataView dataView = ((DataTable)this.gridDataBoundGrid1.DataSource).DefaultView;
 dataView.RowFilter = "FirstName LIKE 's*'";
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 ' Assuming the grid is bound to a Data Table.
 Dim dataView As DataView = CType(Me.gridDataBoundGrid1.DataSource, DataTable).DefaultView
 dataView.RowFilter = "FirstName LIKE 's*'"
@@ -94,7 +94,7 @@ Following code example illustrates how to enable this filter.
 GridDataBoundGridFilterBarExt filterBar = new GridDataBoundGridFilterBarExt();
 filterBar.WireGrid(gridDataBoundGrid1);
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Dim filterBar As GridDataBoundGridFilterBarExt = New GridDataBoundGridFilterBarExt()
 filterBar.WireGrid(gridDataBoundGrid1)
 {% endhighlight  %}
@@ -104,6 +104,5 @@ filterBar.WireGrid(gridDataBoundGrid1)
 
 
 
-N> For more details, refer to the following browser sample:
-   <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Filter By DisplayMember Demo
+N> For more details, refer to the following browser sample: <Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Filter By DisplayMember Demo
 

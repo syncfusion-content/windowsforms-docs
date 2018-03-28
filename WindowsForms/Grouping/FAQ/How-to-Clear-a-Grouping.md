@@ -7,9 +7,10 @@ control: Grouping
 documentation: ug
 ---
 
-# How to Clear a Grouping?
+# How to Clear Grouping
 To clear all grouping, call the groupingEngine.TableDescriptor.GroupedColumns.Clear method.
 
+{% tabs %}
 {% highlight C# %}
 
 // Removes the grouping of all the grouped columns.
@@ -22,7 +23,7 @@ this.gridGroupingControl1.TableDescriptor.GroupedColumns.Remove(Name);
 this.gridGroupingControl1.TableDescriptor.GroupedColumns.RemoveAt(index);
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Removes the grouping of all the grouped columns.
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Clear() 
@@ -34,5 +35,6 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Remove();
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.RemoveAt()
 
 {% endhighlight %}
+{% endtabs %}
 
 N> To remove a particular grouping, use groupingEngine.TableDescriptor.GroupedColumns.Remove or groupingEngine.TableDescriptor.SortedColumns.RemoveAt.

@@ -7,12 +7,13 @@ control: Grouping
 documentation: ug
 ---
 
-# How to Retrieve Summary Item Values?
+# How to Retrieve Summary Item Values
 
 Summaries are calculated on groups of records. The TopLevelGroup is the collection of all records in the IList data source. If you have added additional grouping through the groupingEngine.TableDescriptor.GroupedColumns.Add, then in addition to the top level group, there will be additional groups available to you. Each group will have an associated summary value. So to retrieve a summary value, you need to specify the group associated with the summary.
 
 For example, the code below assumes that you have grouped the table on field "C" and are looking for the summary associated with the group whose records have field "C" equal to the value "c1". It also shows the same summary value for the TopLevelGroup.
 
+{% tabs %}
 {% highlight C# %}
  
 // To simplify notation, set this using the statement at the top of your code file.
@@ -32,10 +33,9 @@ Console.WriteLine("c1-group {0}, {1}, {2}", int32Summary.Sum, int32Summary.Avera
  
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
- 
-' To simplify notation, set this using the statement at the top of your code file.
+ ' To simplify notation, set this using the statement at the top of your code file.
 Imports ISummary = Syncfusion.Collections.BinaryTree.ITreeTableSummary
  
 ' Now get the Summary value for the TopLevelGroup group.
@@ -50,3 +50,4 @@ Private int32Summary = CType(groupSummary, Int32AggregateSummary)
  
 Console.WriteLine("c1-group {0}, {1}, {2}", int32Summary.Sum, int32Summary.Average, int32Summary.Maximum)
 {% endhighlight %}
+{% endtabs %}
