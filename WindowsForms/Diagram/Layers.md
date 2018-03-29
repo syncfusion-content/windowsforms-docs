@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Layers | Windows Forms | Syncfusion
 description: Layers
@@ -30,59 +30,59 @@ Programmatically layers can be implemented as follows.
 {% tabs %}
 {% highlight c# %}
 
-	// Layer 1
-	PointF[] pts1 = { new PointF(50, 25), new PointF(75, 75), new PointF(100, 25), new PointF(125, 75), new PointF(150, 25), new PointF(175, 75), new PointF(200, 25) };
-	CurveNode cn = new CurveNode(pts1);
-	diagram1.Model.AppendChild(cn);
-	Layer layer1 = new Layer();
-	cn.Layers.Add(layer1);
-	
-	// Layer 2
-	PointF[] pts = { new PointF(10, 100), new PointF(50, 25), new PointF(34, 78), new PointF(100, 78) };
-	ClosedCurveNode ccn = new ClosedCurveNode(pts);
-	diagram1.Model.AppendChild(ccn);
-	Layer layer2 = new Layer();
-	ccn.Layers.Add(layer2);
-	
-	// Layer 3
-	PointF pt = new PointF(50F, 200F);
-	PointF pt1 = new PointF(200F, 100F);
-	BezierCurve bc = new BezierCurve(pt, pt1);
-	diagram1.Model.AppendChild(bc);
-	SplineNode sp = new SplineNode(new PointF(130, 200), new PointF(200, 200), new PointF(120, 40));
-	diagram1.Model.AppendChild(sp);
-	Layer layer3 = new Layer();
-	bc.Layers.Add(layer3);
-	sp.Layers.Add(layer3);
+// Layer 1
+PointF[] pts1 = { new PointF(50, 25), new PointF(75, 75), new PointF(100, 25), new PointF(125, 75), new PointF(150, 25), new PointF(175, 75), new PointF(200, 25) };
+CurveNode cn = new CurveNode(pts1);
+diagram1.Model.AppendChild(cn);
+Layer layer1 = new Layer();
+cn.Layers.Add(layer1);
+
+// Layer 2
+PointF[] pts = { new PointF(10, 100), new PointF(50, 25), new PointF(34, 78), new PointF(100, 78) };
+ClosedCurveNode ccn = new ClosedCurveNode(pts);
+diagram1.Model.AppendChild(ccn);
+Layer layer2 = new Layer();
+ccn.Layers.Add(layer2);
+
+// Layer 3
+PointF pt = new PointF(50F, 200F);
+PointF pt1 = new PointF(200F, 100F);
+BezierCurve bc = new BezierCurve(pt, pt1);
+diagram1.Model.AppendChild(bc);
+SplineNode sp = new SplineNode(new PointF(130, 200), new PointF(200, 200), new PointF(120, 40));
+diagram1.Model.AppendChild(sp);
+Layer layer3 = new Layer();
+bc.Layers.Add(layer3);
+sp.Layers.Add(layer3);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	' Layer 1
-	Dim pts1 As PointF() = {New PointF(50, 25), New PointF(75, 75), New PointF(100, 25), New PointF(125, 75), New PointF(150, 25), New PointF(175, 75),
-	 New PointF(200, 25)}
-	Dim cn As New CurveNode(pts1)
-	diagram1.Model.AppendChild(cn)
-	Dim layer1 As New Layer()
-	cn.Layers.Add(layer1)
-	
-	' Layer 2
-	Dim pts As PointF() = {New PointF(10, 100), New PointF(50, 25), New PointF(34, 78), New PointF(100, 78)}
-	Dim ccn As New ClosedCurveNode(pts)
-	diagram1.Model.AppendChild(ccn)
-	Dim layer2 As New Layer()
-	ccn.Layers.Add(layer2)
-	
-	' Layer 3
-	Dim pt As New PointF(50.0F, 200.0F)
-	Dim pt1 As New PointF(200.0F, 100.0F)
-	Dim bc As New BezierCurve(pt, pt1)
-	diagram1.Model.AppendChild(bc)
-	Dim sp As New SplineNode(New PointF(130, 200), New PointF(200, 200), New PointF(120, 40))
-	diagram1.Model.AppendChild(sp)
-	Dim layer3 As New Layer()
-	bc.Layers.Add(layer3)
-	sp.Layers.Add(layer3)
+' Layer 1
+Dim pts1 As PointF() = {New PointF(50, 25), New PointF(75, 75), New PointF(100, 25), New PointF(125, 75), New PointF(150, 25), New PointF(175, 75),
+ New PointF(200, 25)}
+Dim cn As New CurveNode(pts1)
+diagram1.Model.AppendChild(cn)
+Dim layer1 As New Layer()
+cn.Layers.Add(layer1)
+
+' Layer 2
+Dim pts As PointF() = {New PointF(10, 100), New PointF(50, 25), New PointF(34, 78), New PointF(100, 78)}
+Dim ccn As New ClosedCurveNode(pts)
+diagram1.Model.AppendChild(ccn)
+Dim layer2 As New Layer()
+ccn.Layers.Add(layer2)
+
+' Layer 3
+Dim pt As New PointF(50.0F, 200.0F)
+Dim pt1 As New PointF(200.0F, 100.0F)
+Dim bc As New BezierCurve(pt, pt1)
+diagram1.Model.AppendChild(bc)
+Dim sp As New SplineNode(New PointF(130, 200), New PointF(200, 200), New PointF(120, 40))
+diagram1.Model.AppendChild(sp)
+Dim layer3 As New Layer()
+bc.Layers.Add(layer3)
+sp.Layers.Add(layer3)
 
 {% endhighlight %}
 {% endtabs %}
@@ -139,20 +139,20 @@ The visibility of the layer can be handled to control the visibility of all the 
 {% tabs %}
 {% highlight c# %}
 
-	Layer layer0 = new Layer();
-	this.diagram1.Model.Layers.Add(layer0);
-	layer0.Enabled = true;
-	layer0.Visible = true;
-	layer1.Visible = true;
+Layer layer0 = new Layer();
+this.diagram1.Model.Layers.Add(layer0);
+layer0.Enabled = true;
+layer0.Visible = true;
+layer1.Visible = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Dim layer0 As New Layer()
-	Me.diagram1.Model.Layers.Add(layer0)
-	layer0.Enabled = True
-	layer0.Visible = True
-	layer1.Visible = True
+Dim layer0 As New Layer()
+Me.diagram1.Model.Layers.Add(layer0)
+layer0.Enabled = True
+layer0.Visible = True
+layer1.Visible = True
 
 {% endhighlight %}
 {% endtabs %}
