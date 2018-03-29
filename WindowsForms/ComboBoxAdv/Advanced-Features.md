@@ -31,33 +31,27 @@ MatchFirstCharacterOnly</td><td>
 It specifies the AutoComplete behavior in the dropdown mode. When set to true, it matches the first character in the drop list and returns the matching result.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight c# %}
 
 //ComboBoxAdv AutoComplete properties
-
 this.comboBoxAdv1.AutoComplete = true;
-
 this.comboBoxAdv1.CaseSensitiveAutocomplete = true;
-
 this.comboBoxAdv1.MatchFirstCharacterOnly = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'ComboBoxAdv AutoComplete properties
-
 Me.comboBoxAdv1.AutoComplete = True
-
 Me.comboBoxAdv1.CaseSensitiveAutocomplete = True
-
 Me.comboBoxAdv1.MatchFirstCharacterOnly = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/Autocomplete true.png](Overview_images/Overview_img305.png)
-
-
 
 ## Data Binding
 
@@ -75,99 +69,69 @@ When you set DataSource to a null reference, DisplayMember is set to an empty st
 
 ComboBoxAdv can be bound to DataView using the following code example.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 DataTable dt = new DataTable("Table1");
 
 // Adding Columns.
-
 dt.Columns.Add("FirstName");
-
 dt.Columns.Add("LastName");
-
 dt.Columns.Add("occupation");
-
 dt.Columns.Add("place");
 
 // Create a Data Set.
-
 DataSet ds = new DataSet();
-
 ds.Tables.Add(dt);
-
 dt.Rows.Add(new string[] { "John", "Tina", "Doctor", "Italy" });
-
 dt.Rows.Add(new string[] { "Mary", "anu", "Teacher", "America" });
-
 dt.Rows.Add(new string[] { "asha", "roy", "Staff", "London" });
-
 dt.Rows.Add(new string[] { "George", "Gaskin", "Nurse", "germany" });
-
 dt.Rows.Add(new string[] { "sam", "jens", "Engineer", "Russia" });
-
 dt.Rows.Add(new string[] { "Ben", "Geo", "Developer", "India" });
 
 // Create a DataView.
-
 DataView view = new DataView(dt);
 
 // Set DataSource.
-
 this.comboBoxAdv1.DataSource = view;
 
 // Set DisplayMember.
-
 this.comboBoxAdv1.DisplayMember = "place";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim dt As DataTable = New DataTable("Table1")
 
 ' Adding Columns.
-
- dt.Columns.Add("FirstName")
-
+dt.Columns.Add("FirstName")
 dt.Columns.Add("LastName")
-
 dt.Columns.Add("occupation")
-
 dt.Columns.Add("place")
 
 ' Create a Data Set.
-
 Dim ds As DataSet = New DataSet
-
 ds.Tables.Add(dt)
-
 dt.Rows.Add(New String() {"John", "Tina", "Doctor", "Italy"})
-
 dt.Rows.Add(New String() {"Mary", "anu", "Teacher", "America"})
-
 dt.Rows.Add(New String() {"asha", "roy", "Staff", "London"})
-
 dt.Rows.Add(New String() {"George", "Gaskin", "Nurse", "germany"})
-
 dt.Rows.Add(New String() {"sam", "jens", "Engineer", "Russia"})
-
 dt.Rows.Add(New String() {"Ben", "Geo", "Developer", "India"})
 
 ' Create a DataView.
-
 Dim view As DataView = New DataView(dt)
 
 ' Set DataSource. 
-
 Me.comboBoxAdv1.DataSource = view
 
 ' Set DisplayMember.
-
 Me.comboBoxAdv1.DisplayMember = "place"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img306.png) 
 
