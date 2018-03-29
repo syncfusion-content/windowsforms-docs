@@ -7,27 +7,22 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to retrieve a summary item
+# How to Rtrieve a Summary Item
 
 The following code shows how to retrieve a summary item.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //summaryColumnDescriptor is GridSummaryColumnDescriptor. 
-
 string item=GridEngine.GetSummaryText(this.gridGroupingControl1.Table.TopLevelGroup,summaryColumnDescriptor)
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'summaryColumnDescriptor is GridSummaryColumnDescriptor. 
-
 Dim item As String = GridEngine.GetSummaryText(Me.gridGroupingControl1.Table.TopLevelGroup, summaryColumnDescriptor)
 
-
 {% endhighlight  %}
+{% endtabs %}
