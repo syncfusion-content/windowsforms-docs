@@ -7,27 +7,21 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to access a particular DisplayElement if Row Index is provided
+# How to Access a Particular DisplayElement if Row Index is Provided
 
 You can access DisplayElements with row index by using the following code.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 // Accesses a particular display element.
-
 Element el=this.gridGroupingControl1.Table.DisplayElements[rowIndex].ParentElement;
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' Accesses a particular display element.
-
 Dim el As Element = Me.gridGroupingControl1.Table.DisplayElements(rowIndex).ParentElement
 
-
 {% endhighlight %}
+{% endtabs %}

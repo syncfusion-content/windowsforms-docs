@@ -15,8 +15,10 @@ availableArea = groupingGrid.ClientSize.Width - gridModel.ColWidths.GetTotal(0, 
 
 and the proportional columns width can be calculated as follows,
 
+{% tabs %}
 {% highlight c# %}
 
 Size = (int) availableArea / (grid.TableDescriptor.VisibleColumns.Count);
 
 {% endhighlight %}
+{% endtabs %}
