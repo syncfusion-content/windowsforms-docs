@@ -607,7 +607,7 @@ Me.editControl1.SaveAsRTF("testRTF.rtf")
 
 Me.editControl1.SaveAsHTML("testHTML.html")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -694,7 +694,7 @@ Me.editControl1.GetTextAsHTML()
 
 Me.editControl1.GetTextAsHTML(coordinatePoint1, coordinatePoint2)
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
