@@ -15,7 +15,7 @@ EditControl provides Intellisense pop-up capabilities to add content easily, as 
 
 In EditControl, `ContextChoice` support allows you to create pop-ups for displaying a list of options that are used to complete what the user is typing. This feature is modeled based on the List Members intellisense feature of Visual Studio, and is very convenient when editing programming languages. For example, in C# or VB.NET, when the . (period) character is typed after a class instance, a pop-up containing all the members of the class gets displayed. As you type in the editor, the list automatically changes selection to synchronize with the text that has been entered. You can also autocomplete the word by using the UP/DOWN ARROW keys to choose the Context Choice item and pressing the TAB key. The ContextChoice pop-up can be dismissed by pressing the ESC key.
 
-![](Runtime-Features_images/Runtime-Features_img15.jpeg)
+![](Intellisense-images/Intellisense_img1.png)
 
 The ContextChoice displaying characters are specified in the configuration file by using the `DropContextChoiceList` field in the lexem for the corresponding character. If you wish to display the ContextChoice dropdown in response to the period (".") or comma (",") being typed, use the following XML code.
 
@@ -174,7 +174,7 @@ controller.Items.Add("LoadFile", "Use this method to open a file in EditControl.
 
 **ContextChoice operations**
 
-The EditControl provides the following set of events for performing Context Choice operations:
+EditControl provides the following set of events for performing Context Choice operations:
 
     * ContextChoiceBeforeOpen
     * ContextChoiceClose
@@ -391,7 +391,7 @@ Gets / sets value indicating whether Context Choice items should be filtered whi
 
 FilterAutoCompleteItems property when set to True, filters the item in the AutoComplete Context Choice, and the filtered item alone will be visible. When set to False, all the items will be visible, and the selection will be navigated to the item.
 
-![](Runtime-Features_images/Runtime-Features_img16.jpeg)
+![](Intellisense-images/Intellisense_img2.png)
 
 **Showing / Hiding ContextChoice pop-up**
 
@@ -424,7 +424,7 @@ End Sub
 
 {% endtabs %}
 
-## Customization
+### Customization
 
 The border color of the ContextChoice form is set by using the `ContextChoiceBorderColor` property.
 
@@ -514,4 +514,598 @@ We can also customize the ContextChoice font, fore color and back color by using
 
 {% endtabs %}
 
-![](Code-Completion_images/custom.jpeg)
+![](Intellisense-images/Intellisense_img3.png)
+
+## Context Prompt
+
+`ContextPrompt` allows you to create pop-ups for displaying variations of syntax for the text input by using the Context Choice. This feature is modeled on the Parameter Info intellisense feature of Visual Studio. Each of the context prompt items can have a syntax specifier string and text message providing additional information on each item. The user is able to scroll through the syntax variations either by using the UP/DOWN ARROW keys or clicking on the UP/DOWN buttons on the pop-up.
+
+![](Intellisense-images/Intellisense_img4.png)
+
+The Context Prompt displaying characters are specified in the configuration file by using the DropContextPrompt field in the lexem for the corresponding character. If you wish to display the ContextPrompt pop-up in response to the opening brace - "(" or opening curly brace -"{" being typed, use the following XML code.
+
+{% highlight xaml %}
+
+<lexem BeginBlock="(" Type="Operator" IsComplex="true" DropContextPrompt="true" />
+
+<lexem BeginBlock="{" Type="Operator" IsComplex="true" DropContextPrompt="true"/>
+
+{% endhighlight %}
+
+The preceding code has to be placed within the <lexems> section of the configuration file. 
+
+**Populating ContextPrompt popup**
+
+The Context Prompt is populated by handling the `ContextPromptOpen` event of EditControl, and adding new prompts using the AddPrompt method.
+
+<table>
+<tr>
+<th>
+Event</th><th>
+Description</th></tr>
+<tr>
+<td>
+ContextPromptOpen</td><td>
+This event occurs when the Context Prompt has been opened</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void editControl1_ContextPromptOpen(object sender, Syncfusion.Windows.Forms.Edit.ContextPromptUpdateEventArgs e)
+{
+
+// Populate the Context Prompt.
+
+e.AddPrompt( "Control.Items.Add(string text, string tooltipText, int imageIndex, int selectedImageIndex)", "Specify the text of the item, its tooltip text, image index and selected image index" );
+
+e.AddPrompt( "Control.Items.Add(string text, string tooltipText, int imageIndex)", "Specify the text of the item, its tooltip text, and image index" );
+
+e.AddPrompt( "Control.Items.Add(string text, string tooltipText)", "Specify the text of the item, and its tooltip text" );
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub editControl1_ContextPromptOpen(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.ContextPromptUpdateEventArgs) Handles EditControl1.ContextPromptOpen
+
+' Populate the Context Prompt.
+
+e.AddPrompt("Control.Items.Add(string text, string tooltipText, int imageIndex, int selectedImageIndex)", "Specify the text of the item, its tooltip text, image index and selected image index")
+
+e.AddPrompt("Control.Items.Add(string text, string tooltipText, int imageIndex)", "Specify the text of the item, its tooltip text, and image index")
+
+e.AddPrompt("Control.Items.Add(string text, string tooltipText)", "Specify the text of the item, and its tooltip text")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**ContextPrompt operations**
+
+The EditControl provides the following set of events for performing Context Prompt operations.
+
+<table>
+<tr>
+<th>
+Events</th><th>
+Description</th></tr>
+<tr>
+<td>
+ContextPromptBeforeOpen</td><td>
+This event occurs when the Context Prompt window is about to open. User can cancel it</td></tr>
+<tr>
+<td>
+ContextPromptClose</td><td>
+This event occurs when the Context Prompt window has been closed</td></tr>
+<tr>
+<td>
+ContextPromptSelectionChanged</td><td>
+This event occurs when a Context Prompt item has been selected</td></tr>
+</table>
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Store the lexem name invoking the ContextPrompt popup.
+
+string contextPromptLexem = "";
+
+private void editControl1_ContextPromptBeforeOpen(object sender, System.ComponentModel.CancelEventArgs e)
+{
+
+ILexem lex;
+
+ILexemLine lexemLine = this.editControl1.GetLine(this.editControl1.CurrentLine);
+
+// Gets the index of the current word in that line.
+
+int ind = GetContextPromptCharIndex(lexemLine);
+
+if (ind<=0)
+{
+
+e.Cancel = true;
+
+return;
+
+}
+
+lex = lexemLine.LineLexems[ind-1] as ILexem;
+
+// If the count is less than '2', do not show the Context Prompt popup.
+
+if (lexemLine.LineLexems.Count<2)
+
+e.Cancel = true;
+
+else
+
+{
+
+// Display Context Choice popup if the lexem used to invoke them is "this" or "me" only.
+
+if ((lex.Text == "Chat") || (lex.Text == "Database") || (lex.Text == "NewFile") || (lex.Text == "Find") || (lex.Text == "Home") || (lex.Text == "PieChart") || (lex.Text == "Tools"))
+
+{
+
+this.contextPromptLexem = lex.Text;
+
+e.Cancel = false;
+
+}
+
+else
+
+e.Cancel = true;
+
+}
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Store the lexem name invoking the Context Prompt popup.
+
+Dim contextPromptLexem As String = ""
+
+Private Sub editControl1_ContextPromptBeforeOpen(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles editControl1.ContextPromptBeforeOpen
+
+Dim lex As ILexem
+
+Dim lexemLine As ILexemLine = Me.editControl1.GetLine(Me.editControl1.CurrentLine)
+
+' Gets the index of the current word in that line.
+
+Dim ind As Integer = GetContextPromptCharIndex(lexemLine)
+
+
+If ind <= 0 Then
+
+e.Cancel = True
+
+Return
+
+End If
+
+
+lex = lexemLine.LineLexems(ind - 1) 
+
+' If the count is less than '2', do not show the Context Prompt popup.
+
+If lexemLine.LineLexems.Count < 2 Then
+
+e.Cancel = True
+
+Else
+
+' Display Context Choice popup if the lexem used to invoke them is "this" or "me" only.
+
+
+If lex.Text = "Chat" OrElse lex.Text = "Database" OrElse lex.Text = "NewFile" OrElse lex.Text = "Find" OrElse lex.Text = "Home" OrElse lex.Text = "PieChart" OrElse lex.Text = "Tools" Then
+
+Me.contextPromptLexem = lex.Text
+
+e.Cancel = False
+
+Else
+
+e.Cancel = True
+
+End If
+
+End If
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Clear the Context Prompt lexem name on close.
+
+private void editControl1_ContextPromptClose(object sender, Syncfusion.Windows.Forms.Edit.ContextPromptCloseEventArgs e)
+
+{
+
+this.contextPromptLexem = "";
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Clear the Context Prompt lexem name on close.
+
+Private Sub editControl1_ContextPromptClose(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.ContextPromptCloseEventArgs)
+
+Me.contextPromptLexem = ""
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Display the selected Context Prompt item's index.
+
+private void editControl1_ContextPromptSelectionChanged(Syncfusion.Windows.Forms.Edit.Forms.Popup.ContextPrompt sender, Syncfusion.Windows.Forms.Edit.ContextPromptSelectionChangedEventArgs e)
+{
+
+Console.WriteLine("SelectedIndex : " + e.SelectedIndex.ToString());
+
+Console.WriteLine("ContextPromptSelectionChanged");
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Display the selected Context Prompt item's index.
+
+Private Sub editControl1_ContextPromptSelectionChanged(ByVal sender As Syncfusion.Windows.Forms.Edit.Forms.Popup.ContextPrompt, ByVal e As Syncfusion.Windows.Forms.Edit.ContextPromptSelectionChangedEventArgs)
+
+Console.WriteLine("SelectedIndex : " + e.SelectedIndex.ToString())
+
+Console.WriteLine("ContextPromptSelectionChanged")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Showing or hiding ContextPrompt pop-up**
+
+You can also programmatically show / hide the Context Prompt pop-up using the ShowContextPrompt and CloseContextPrompt methods.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Shows the Context Prompt pop-up window.
+this.editControl1.ShowContextPrompt();
+
+// Closes the Context Prompt pop-up window.
+this.editControl1.CloseContextPrompt();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Shows the Context Prompt pop-up window.
+Me.editControl1.ShowContextPrompt()
+
+' Closes the Context Prompt pop-up window.
+Me.editControl1.CloseContextPrompt();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customization
+
+The brush for the Context Prompt background is set by using the ContextPromptBackgroundBrush property of the EditControl.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.ContextPromptBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PapayaWhip, System.Drawing.Color.LemonChiffon);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.ContextPromptBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PapayaWhip, System.Drawing.Color.LemonChiffon)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The border color of the Context Prompt form is set by using the `ContextPromptBorderColor` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The size of the Context Prompt form can be set by using the below given properties.
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Description</th></tr>
+<tr>
+<td>
+ContextPromptSize</td><td>
+Specifies the size of the Context Prompt form</td></tr>
+<tr>
+<td>
+UseCustomSizeContextPrompt</td><td>
+Specifies a value indicating whether custom Context Prompt size should be used</td></tr>
+</table>
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.ContextPromptSize = new System.Drawing.Size(125, 75);
+
+this.editControl1.UseCustomSizeContextPrompt = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.ContextPromptSize = New System.Drawing.Size(125, 75)
+
+Me.editControl1.UseCustomSizeContextPrompt = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+If you wish to do some advanced customization in the Context Prompt feature, like highlighting the current parameter to be input in bold, you can use the ContextPromptOpen and ContextPromptUpdate events.
+
+For example, add the bold items in the ContextPromptOpen event handler. The indices for the exact position of the text that needs to be bold has to be manually calculated and specified along with some text information associated with that particular argument. The following code snippet illustrates this.
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+// To display some text in bold within the prompt.
+
+private void editControl1_ContextPromptOpen(object sender, Syncfusion.Windows.Forms.Edit.ContextPromptUpdateEventArgs e)
+{
+
+Console.WriteLine("ContextPromptOpen");
+
+// Bolded Items should be added in this handler.
+
+ContextPromptItem item = null;      
+
+item = e.AddPrompt( "Control.Items.Add(string text, string tooltipText, int imageIndex, int selectedImageIndex)", "Specify the text of the item, its tooltip text, image index and selected image index" );
+
+// Specify the text to be displayed in bold in the Context Prompt.
+
+item.BoldedItems.Add( 18, 11, "Text to be added" );
+
+item.BoldedItems.Add( 31, 18, "Text of the tooltip" );
+
+item.BoldedItems.Add( 51, 14, "Zero-based index of the image or -1 if no image should be used." );
+
+item.BoldedItems.Add( 67, 14, "Zero-based index of the image for selection or -1 if no image should be used." );
+
+
+
+item = e.AddPrompt( "Control.Items.Add(string text, string tooltipText, int imageIndex)", "Specify the text of the item, its tooltip text, and image index" );
+
+item.BoldedItems.Add( 18, 11, "Text to be added" );
+
+item.BoldedItems.Add( 31, 18, "Text of the tooltip" );
+
+item.BoldedItems.Add( 51, 14, "Zero-based index of the image or -1 if no image should be used." );
+
+
+
+item = e.AddPrompt( "Control.Items.Add(string text, string tooltipText)", "Specify the text of the item, and its tooltip text" );
+
+item.BoldedItems.Add( 18, 11, "Text to be added" );
+
+item.BoldedItems.Add( 31, 18, "Text of the tooltip" );
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' To display some text in bold within the prompt.
+
+Private Sub editControl1_ContextPromptOpen(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.ContextPromptUpdateEventArgs) Handles EditControl1.ContextPromptOpen
+
+Console.WriteLine("ContextPromptOpen")
+
+' Bolded Items should be added in this handler.
+
+Dim item As ContextPromptItem
+
+item = e.AddPrompt("Control.Items.Add(string text, string tooltipText, int imageIndex, int selectedImageIndex)", "Specify the text of the item, its tooltip text, image index and selected image index")
+
+
+' Specify the text to be displayed in bold in the Context Prompt.
+
+item.BoldedItems.Add(18, 11, "Text to be added")
+
+item.BoldedItems.Add(31, 18, "Text of the tooltip")
+
+item.BoldedItems.Add(51, 14, "Zero-based index of the image or -1 if no image should be used.")
+
+item.BoldedItems.Add(67, 14, "Zero-based index of the image for selection or -1 if no image should be used.")
+
+
+item = e.AddPrompt("Control.Items.Add(string text, string tooltipText, int imageIndex)", "Specify the text of the item, its tooltip text, and image index")
+
+item.BoldedItems.Add(18, 11, "Text to be added")
+
+item.BoldedItems.Add(31, 18, "Text of the tooltip")
+
+item.BoldedItems.Add(51, 14, "Zero-based index of the image or -1 if no image should be used.")
+
+
+
+item = e.AddPrompt("Control.Items.Add(string text, string tooltipText)", "Specify the•_
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+Select the items that should be bold in the `ContextPromptUpdate` event handler. The following code snippet illustrates this.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void editControl1_ContextPromptUpdate(object sender, Syncfusion.Windows.Forms.Edit.ContextPromptUpdateEventArgs e)
+{
+
+// Select the items that should be bolded.
+
+if( e.List.SelectedItem != null )
+{
+
+// Get list of the lexems that are inside the current stack.
+
+IList list = editControl1.GetLexemsInsideCurrentStack( false );
+
+if( list == null ) return;
+
+
+
+int iBoldedIndex = 0;
+
+foreach( ILexem lexem in list )
+
+{
+
+if( lexem.Text == "," )
+
+iBoldedIndex++;
+
+}
+
+if( iBoldedIndex >= e.List.SelectedItem.BoldedItems.Count )
+
+e.List.SelectedItem.BoldedItems.SelectedItem = null;
+
+else
+
+// Gets or sets selected item.
+
+e.List.SelectedItem.BoldedItems.SelectedItem = e.List.SelectedItem.BoldedItems[iBoldedIndex];
+
+}
+
+}         
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub editControl1_ContextPromptUpdate(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.ContextPromptUpdateEventArgs) Handles EditControl1.ContextPromptUpdate
+
+' Select the items that should be bolded.
+
+If Not (e.List.SelectedItem Is Nothing) Then
+
+
+' Get list of the lexems that are inside the current stack.
+
+Dim list As IList = editControl1.GetLexemsInsideCurrentStack(False)
+
+If list Is Nothing Then
+
+Return
+
+End If
+
+Dim iBoldedIndex As Integer = 0
+
+Dim lexem As ILexem
+
+For Each lexem In list
+
+If lexem.Text = "," Then
+
+iBoldedIndex += 1
+
+End If
+
+Next lexem
+
+If iBoldedIndex >= e.List.SelectedItem.BoldedItems.Count Then
+
+e.List.SelectedItem.BoldedItems.SelectedItem = Nothing
+
+Else
+
+' Gets or sets selected item.
+
+e.List.SelectedItem.BoldedItems.SelectedItem = e.List.SelectedItem.BoldedItems(iBoldedIndex)
+
+End If
+
+End If
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}

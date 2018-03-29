@@ -15,11 +15,11 @@ EditControl provides an extensive support for highlighting the text color while 
 
 EditControl supports highlighting the selected text by using the `TransparentSelection` property. By Setting the `TransparentSelection` property to True, we can highlight the selected text range with a transparent blue background (which will let you view the syntax highlighting in the text within the selected region), as shown in the following screenshot.
 
-![](Text-Visualization_images/Text-Visualization_img33.jpeg)
+![](Formatting_images/Formatting_img1.png)
 
 By Setting the `TransparentSelection` property to False, will highlight the selected text range with a dark background (which will not let you view the syntax highlighting in the text within the selected region), as shown in the following screenshot.
 
-![](Text-Visualization_images/Text-Visualization_img34.jpeg)
+![](Formatting_images/Formatting_img2.png)
 
 ## Selecting the text programmatically 
 
@@ -299,7 +299,7 @@ Me.editControl1.RemoveTextBorder(New Point(1, 13), New Point(15, 13))
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img32.png)
+![](Formatting_images/Formatting_img17.png)
 
 EditControl also provides an options to change the back color of selected range of text. The `SetBackgroundColor` method of EditControl is used to set the background color for a specified range of text.
 
@@ -362,7 +362,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img7.jpeg)
+![](Formatting_images/Appearance_img7.jpeg)
 
 By using `RemoveLineBackColor` and `RemoveSelectionBackColor` method of EditControl we were able to remove the background color for individual lines or selected blocks of text. The following table explains the same:
 
@@ -514,7 +514,7 @@ You can also set the underlining from the configuration file, as shown in the be
 
 LineColor, Weight and Underline parameters are used to specify the type of underlining to be used.
 
-![](Text-Visualization_images/Text-Visualization_img7.jpeg)
+![](Formatting_images/Formatting_img15.jpeg)
 
 The `StrikeThrough` method allows you to perform strikethrough operation on the text contained in the EditControl. This is a very useful feature in denoting text that was deleted from the original document or highlighting offending code. You can also specify any custom color for the strikethrough line.
 
@@ -557,31 +557,7 @@ Me.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.Aq
 
 To remove the strikethrough line, just call one of the above mentioned methods and specify the Color parameter as Color.Empty.
 
-![](Text-Visualization_images/Text-Visualization_img8.jpeg)
-
-## Font customization
-
-The font customization in the EditControl works slightly different from the regular text processing the control. The font customization is done only at the Formats level not at a word level or selected text level. EditControl is more of a text parsing / syntax highlighting control, and less of a text editing control. EditControl supports customization of fonts both through the configuration file and dynamically through a run-time Formats Editor dialog.
-
-The EditControl supports customization of fonts through the configuration file, as shown in the below code snippet.
-
-{% highlight xaml %}
-
-<format name="Text" Font="Courier New, 10pt" FontColor="Black" />
-
-<format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" />
-
-<format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
-
-<format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" />
-
-<format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
-
-<format name="Number" Font="Courier New, 10pt, style=Bold" FontColor="Navy" /> 
-
-{% endhighlight %}
-
-![](Appearance_images/Appearance_img9.jpeg)
+![](Formatting_images/Formatting_img3.png)
 
 ## Word wrap
 
@@ -732,7 +708,7 @@ Me.editControl1.WrappedLinesOffset = 10
 
 The following illustration shows the EditControl with the WordWrappingMode and WordWrapType properties set.
 
-![](Text-Visualization_images/Text-Visualization_img28.jpeg)
+![](Formatting_images/Formatting_img4.png)
 
 ### WordWrap margin customization
 
@@ -806,7 +782,7 @@ Me.editControl1.WordWrapMarginBrush = New Syncfusion.Drawing.BrushInfo(Syncfusio
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img29.jpeg)
+![](Formatting_images/Formatting_img5.png)
 
 ### Line wrapping images
 
@@ -885,7 +861,7 @@ Me.editControl1.MarkWrappedLines = True
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img30.jpeg)
+![](Formatting_images/Formatting_img6.jpeg)
 
 ## Indentation 
 
@@ -1000,7 +976,7 @@ Me.editControl1.ShowIndentationBlockBorders = True
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img19.jpeg)
+![](Formatting_images/Formatting_img7.png)
 
 **Positioning**
 
@@ -1084,15 +1060,15 @@ Me.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoIndentM
 
 If Enter is pressed when the AutoIndentMode is set to None, the text is not indented.
 
-![](Text-Visualization_images/Text-Visualization_img20.jpeg)
+![](Formatting_images/Formatting_img10.png)
 
 When the AutoIndentMode is set to Smart, the next line is indented by one TabSize from the first column of the previous line on pressing Enter.
 
-![](Text-Visualization_images/Text-Visualization_img21.jpeg)
+![](Formatting_images/Formatting_img11.png)
 
 When the AutoIndentMode is set to Block, the next line begins at the same column as the previous line on pressing the ENTER key.
 
-![](Text-Visualization_images/Text-Visualization_img22.jpeg)
+![](Formatting_images/Formatting_img12.png)
 
 **Lexem support for AutoIndent block mode**
 
@@ -1324,7 +1300,7 @@ Me.editControl1.ShowOutliningTooltip = True
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img27.png)
+![](Formatting_images/Formatting_img8.png)
 
 EditControl supports the following Outlining Tooltip events.
 
@@ -1393,7 +1369,7 @@ End Sub
 
 EditControl supports content dividers just like VB.NET code in Visual Studio.NET code editor. This helps in logical division and better organization of the contents of the EditControl, which helps to improve the readability of the code. Content Dividers can be enabled or disabled using `ShowContentDividers` property of EditControl. Its default value is true.
 
-![](Text-Visualization_images/Text-Visualization_img6.jpeg)
+![](Formatting_images/Formatting_img13.png)
 
 This feature can be enabled for sections of the EditControl contents, by setting the `ContentDivider` field to True, within its lexem definition in the configuration file. 
 
@@ -1435,15 +1411,15 @@ Description</th></tr>
 <tr>
 <td>
 ShowColumnGuides</td><td>
-Gets / sets value that indicates whether column guides should be drawn</td></tr>
+Specifies a value that indicates whether column guides should be drawn</td></tr>
 <tr>
 <td>
 ColumnGuideItems</td><td>
-Gets / sets array of ColumnGuideItem objects</td></tr>
+Specifies array of ColumnGuideItem objects</td></tr>
 <tr>
 <td>
 ColumnGuidesMeasuringFont</td><td>
-Gets / sets font that is used while measuring the position of the column guides</td></tr>
+Specifies font that is used while measuring the position of the column guides</td></tr>
 </table>
 
 {% tabs %}
@@ -1456,11 +1432,17 @@ this.editControl1.ShowColumnGuides = true;
 
 // Specify the color and the location of the Column Guides.
 
-ColumnGuideItem[] columnGuideItem = new ColumnGuideItem[2];
+ColumnGuideItem[] columnGuideItem = new ColumnGuideItem[5];
 
-columnGuideItem[0] = new ColumnGuideItem(20, Color.Yellow);
+columnGuideItem[0] = new ColumnGuideItem(5, Color.Red);
 
-columnGuideItem[1] = new ColumnGuideItem(40, Color.IndianRed);
+columnGuideItem[1] = new ColumnGuideItem(10, Color.Red);
+
+columnGuideItem[2] = new ColumnGuideItem(15, Color.Red);
+
+columnGuideItem[3] = new ColumnGuideItem(20, Color.Red);
+
+columnGuideItem[4] = new ColumnGuideItem(25, Color.Red);
 
 this.editControl1.ColumnGuideItems = columnGuideItem;
 
@@ -1479,11 +1461,17 @@ Me.editControl1.ShowColumnGuides = True
 
 ' Specify the color and the location of the Column Guides.
 
-Dim columnGuideItem As ColumnGuideItem() = New ColumnGuideItem(1) {}
+Dim columnGuideItem As ColumnGuideItem() = New ColumnGuideItem(5) {}
 
-columnGuideItem(0) = New ColumnGuideItem(20, Color.Yellow)
+columnGuideItem(0) = New ColumnGuideItem(5, Color.Red)
 
-columnGuideItem(1) = New ColumnGuideItem(40, Color.IndianRed) 
+columnGuideItem(1) = New ColumnGuideItem(10, Color.Red) 
+
+columnGuideItem(2) = New ColumnGuideItem(15, Color.Red)
+
+columnGuideItem(3) = New ColumnGuideItem(20, Color.Red) 
+
+columnGuideItem(4) = New ColumnGuideItem(25, Color.Red)
 
 Me.editControl1.ColumnGuideItems = columnGuideItem
 
@@ -1495,7 +1483,7 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img5.jpeg)
+![](Formatting_images/Formatting_img14.png)
 
 ## Bookmarks 
 
@@ -1645,8 +1633,7 @@ End Sub
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img16.jpeg)
-
+![](Formatting_images/Formatting_img9.png)
 
 **Setting tooltips for bookmarks**
 
@@ -1708,7 +1695,7 @@ Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Crimson
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img15.jpeg)
+![](Formatting_images/Formatting_img16.jpeg)
 
 ### Customizing bookmarks
 
@@ -1809,8 +1796,6 @@ EditControl provides support to include a built-in status bar at the bottom of t
 * CoordinatePanel
 * InsertPanel
 
-![](Status-Bar_images/Status-Bar_img1.png)
-
 The `StatusBarSettings` property contains many sub properties, which can be used to customize the appearance and visibility of the status bar and its panels. The following table represents some of sub properties in StatusBarSettings.
 
 <table>
@@ -1877,7 +1862,7 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img2.png)
+![](Formatting_images/Status-Bar_img2.png)
 
 ### Visibility settings 
 
@@ -1957,7 +1942,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img3.png)
+![](Formatting_images/Status-Bar_img3.png)
 
 **Metro**
 
@@ -1985,7 +1970,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img4.png)
+![](Formatting_images/Status-Bar_img4.png)
 
 **Office2007Blue**
 
@@ -2017,7 +2002,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Blue
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img5.png)
+![](Formatting_images/Status-Bar_img5.png)
 
 **Office2007Black**
 
@@ -2049,7 +2034,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Black
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img6.png)
+![](Formatting_images/Status-Bar_img6.png)
 
 **Office2007Silver**
 
@@ -2081,7 +2066,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Silver
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img7.png)
+![](Formatting_images/Status-Bar_img7.png)
 
 **Office2007Managed**
 
@@ -2113,7 +2098,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Manage
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img8.png)
+![](Formatting_images/Status-Bar_img8.png)
 
 **Office2010Blue**
 
@@ -2145,7 +2130,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Blue
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img9.png)
+![](Formatting_images/Status-Bar_img9.png)
 
 **Office2010Black**
 
@@ -2177,7 +2162,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Black
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img10.png)
+![](Formatting_images/Status-Bar_img10.png)
 
 **Office2010Silver**
 
@@ -2209,7 +2194,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Silver
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img11.png)
+![](Formatting_images/Status-Bar_img11.png)
 
 **Office2010Managed**
 
@@ -2241,4 +2226,4 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Manage
 
 {% endtabs %}
 
-![](Status-Bar_images/Status-Bar_img12.png)
+![](Formatting_images/Status-Bar_img12.png)

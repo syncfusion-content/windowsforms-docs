@@ -29,7 +29,7 @@ The following list of assemblies should be added as reference to use the EditCon
 Syncfusion.Shared.Base.dll
 </td>
 <td>
-Syncfusion.Shared.Base contains style related properties of Edit Control and various editor controls.
+Syncfusion.Shared.Base contains style related properties of Edit Control and various editor controls
 </td>
 </tr>
 <tr>
@@ -37,7 +37,7 @@ Syncfusion.Shared.Base contains style related properties of Edit Control and var
 Syncfusion.Tools.Windows.dll
 </td>
 <td>
-Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the Edit Control.
+Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the Edit Control
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Syncfusion.Tools.Windows contains classes that handles all UI operations, fundam
 Syncfusion.Edit.Windows.dll
 </td>
 <td>
-Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of Edit control.
+Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of Edit control
 </td>
 </tr>
 </table>
@@ -181,7 +181,7 @@ The Edit Control provides built-in support for a procedural, markup and SQL lang
 The EditControl has a built-in syntax highlighting support for the following languages.
 
   * C
-  * CSharp
+  * C#
   * Delphi
   * XML
   * HTML
