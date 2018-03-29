@@ -78,6 +78,26 @@ Me.CaptionForeColor = Color.Pink
 
 ![](Caption-Settings_images/CaptionForeColor.png)
 
+## Caption Bar Height
+
+This property helps to customize the CaptionBar height.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.CaptionBarHeight = 50;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me. CaptionBarHeight = 50
+
+{% endhighlight %}
+
+![](Caption-Settings_images/CaptionBarHeight.png)
+
 ## Help Button Support
 
 Help Button property is used to show the `HelpButton` in the caption box of the form. 

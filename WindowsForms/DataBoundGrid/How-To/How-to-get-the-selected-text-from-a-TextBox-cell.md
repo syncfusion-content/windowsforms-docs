@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to get the selected text from a TextBox cell?
+# How to Get the Selected Text from a TextBox Cell
 
 To get the selected text from a TextBox cell, the TextBox renderer should be acquired inside the CurrentCellStartEditing event. MouseUp event should be hooked to get the selected text from the TextBox cell.
 
@@ -18,21 +18,21 @@ this.gridDataBoundGrid1.CurrentCellStartEditing += new CancelEventHandler(gridDa
 
 void gridDataBoundGrid1_CurrentCellStartEditing(object sender, CancelEventArgs e)
 {
-  GridCurrentCell cc = this.gridDataBoundGrid1.CurrentCell;
-  if (cc.Renderer is GridTextBoxCellRenderer)
-  {
-   GridTextBoxCellRenderer rend = cc.Renderer as GridTextBoxCellRenderer;
-   rend.TextBox.MouseUp += new MouseEventHandler(TextBox_MouseUp);
-  }
+    GridCurrentCell cc = this.gridDataBoundGrid1.CurrentCell;
+    if (cc.Renderer is GridTextBoxCellRenderer)
+    {
+        GridTextBoxCellRenderer rend = cc.Renderer as GridTextBoxCellRenderer;
+        rend.TextBox.MouseUp += new MouseEventHandler(TextBox_MouseUp);
+    }
 }
 
 void TextBox_MouseUp(object sender, MouseEventArgs e)
 {
-  TextBox text = sender as TextBox;
-  if (text.SelectionLength > 0)
-  {
-   Console.WriteLine(text.SelectedText);
-  }
+    TextBox text = sender as TextBox;
+    if (text.SelectionLength > 0)
+    {
+        Console.WriteLine(text.SelectedText);
+    }
 }
 
 {% endhighlight %}

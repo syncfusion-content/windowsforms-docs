@@ -9,8 +9,6 @@ documentation: ug
 
 # How to Change the Mouse Cursor for a GridControl
 
-### Introduction
-
 The simplest way is to derive the grid and override OnSetCursor. You can add additional checks to narrow down where to set the cursor.
 
 {% tabs %}
