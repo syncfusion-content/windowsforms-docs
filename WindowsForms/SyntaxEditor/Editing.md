@@ -119,6 +119,8 @@ Me.editControl1.ClearClipboard()
 
 {% endtabs %}
 
+![](Editing-Features_images/Editing-Features_img1.png)
+
 **FIPS**
 
 The system’s cryptography is based on the FIPS compliant algorithms for encryption, hashing and security. By doing the following steps, we can enable FIPS in our machine:
@@ -289,9 +291,9 @@ Me.editControl1.GroupUndo = True
 
 The following screenshot shows action grouping in EditControl. 
 
-![](Editing-Features_images/Editing-Features_img2.jpeg)
+![](Editing-Features_images/Editing-Features_img2.png)
 
-**Comments**
+## Comments
 
 EditControl provides support for commenting and uncommenting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given methods.
 
@@ -384,6 +386,31 @@ Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
 {% endhighlight %}
 
 {% endtabs %}
+
+## Highlight modified lines 
+
+EditControl provides the extensive supports for highlighting the changed lines and the saved lines with different colors. Lines that are modified after the file load or after the last file save operations are marked in yellow color, by default. Once they are saved, they will be changed to green, by default.
+
+The changed lines marking feature can be enabled by setting the `MarkChangedLines` property to True. To enable this functionality in the EditControl, the `SelectionMargin` property should also be enabled.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.MarkChangedLines = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.MarkChangedLines = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img.jpg)
 
 ## Keep tabs
 
@@ -579,7 +606,7 @@ Me.editControl1.RemoveTabsFromSelection()
 
    {% endtabs %}
    
-   ![](Text-Visualization_images/SelectionModes_img3.jpg)
+   ![](Editing-Features_images/Editing-Features_img4.png)
      
 * Block   
 
@@ -606,7 +633,7 @@ Me.editControl1.RemoveTabsFromSelection()
 
    {% endtabs %}
 
-   ![](Text-Visualization_images/SelectionModes_img1.jpeg)
+   ![](Editing-Features_images/Editing-Features_img3.png)
 
 ## Highlighting current line 
 
@@ -648,7 +675,7 @@ Me.editControl1.CurrentLineHighlightColor = Color.Orange
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img12.jpeg)
+![](Editing-Features_images/Editing-Features_img5.png)
 
 ## Binding shortcut keys to command 
 
@@ -829,7 +856,7 @@ The `KeyBinder` property is used to get the key binder, and the `KeyBindingProce
 
 The following illustration shows the Keys Binding dialog box.
 
-![](Editing-Features_images/Editing-Features_img5.jpeg)
+![](Editing-Features_images/Editing-Features_img6.png)
 
 You can also make use the `RegisteringKeyCommands` and `RegisteringDefaultKeyBindings` events to specify user-defined commands and bind the desired custom keystroke combinations to them.
 
@@ -913,7 +940,7 @@ EditControl has a built-in context menu which is enabled, by default. This conte
 
 The context menu has the standard VS.NET-like appearance, and can optionally be provided with the Office 2003 appearance.
 
-![](Runtime-Features_images/Runtime-Features_img11.png)
+![](Editing-Features_images/Editing-Features_img7.png)
 
 Set the appearance of the context menu by specifying the desired ContextMenuProvider.
 
@@ -1060,7 +1087,7 @@ End Sub
 
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img12.jpeg)
+![](Editing-Features_images/Editing-Features_img8.png)
 
 ## Find and replace
 
@@ -1170,18 +1197,18 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img2.png)
+![](Editing-Features_images/Editing-Features_img9.png)
 
 **Find and Replace dialog boxes**
 
 EditControl also supports advanced and customizable Find and Replace dialog boxes. The Find dialog box is invoked by using the ShowFindDialog method. The keyboard shortcut to this dialog box is Ctrl+F.
 
-![](Runtime-Features_images/Runtime-Features_img3.jpeg)
+![](Editing-Features_images/Editing-Features_img10.png)
 
 The Replace dialog box is invoked by using the ShowReplaceDialog method. The keyboard shortcut to this dialog box is Ctrl+H. The Replace dialog box also allows you to find and replace words 
 within the selected text.
 
-![](Runtime-Features_images/Runtime-Features_img4.jpeg)
+![](Editing-Features_images/Editing-Features_img11.png)
 
 {% tabs %}
 
@@ -1304,7 +1331,7 @@ End Sub
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img12.jpeg)
+![](Editing-Features_images/Appearance_img12.jpeg)
 
 Default key bindings to these dialogs can be changed as explained in the Keystroke - Action Combinations Binding topic.
 
@@ -1442,13 +1469,13 @@ Me.editControl1.ShowGoToDialog()
 
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img5.jpeg)
+![](Editing-Features_images/Editing-Features_img12.png)
 
 ## Context ToolTip
 
 EditControl provides the extensive tooltip support, it is modeled on the Quick Info intellisense feature of Visual Studio. Context ToolTip is displayed when the mouse is hovered over a content or text in the EditControl. Whenever the mouse hovers over a token, the `UpdateContextTooltip` event is fired for quick information on the lexem. If some text information is provided, it is displayed in a tooltip.
 
-![](Runtime-Features_images/Runtime-Features_img18.jpeg)
+![](Editing-Features_images/Editing-Features_img13.png)
 
 The Context ToolTip can be populated with additional information on the corresponding lexem by handling the `UpdateContextTooltip` event of EditControl.
 
@@ -1692,10 +1719,10 @@ EditControl comes with the AutoReplace triggers feature which allows the control
 
 The AutoReplace Trigger keys are defined within the language definitions. This means that different keys can be defined as triggers for different languages.
 
-![](Code-Completion_images/Code-Completion_img1.jpeg)
+![](Editing-Features_images/Editing-Features_img16.jpeg)
 
 
-![](Code-Completion_images/Code-Completion_img2.jpeg)
+![](Editing-Features_images/Editing-Features_img17.jpg)
 
 Auto Replace Triggers can be enabled or disabled by using the `UseAutoreplaceTriggers` property as shown below.
 
@@ -1760,12 +1787,6 @@ The words to be replaced can also be defined within the language definition in t
 </AutoReplaceTriggers>
  
 {% endhighlight %}
-
-{% seealso %}
-
-[AutoComplete Support](/windowsforms/edit/code-completion#autocomplete-support)
-
-{% endseealso %}
 
 ## Text navigation
 
@@ -1987,7 +2008,7 @@ Me.editControl1.MoveToEnd()
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img1.jpeg)
+![](Editing-Features_images/Editing-Features_img18.png)
 
 ## Text handling
 
@@ -2282,4 +2303,4 @@ Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Select
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img9.jpeg)
+![](Editing-Features_images/Editing-Features_img15.jpeg)

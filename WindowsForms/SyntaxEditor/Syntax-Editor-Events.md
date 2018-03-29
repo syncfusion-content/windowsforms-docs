@@ -490,23 +490,13 @@ End Sub
 
 ## ContextChoice Events
 
-This section discusses the below given context choice events.
+EditControl provides the following set of events for performing ContextChoice operations:
 
-### ContextChoiceBeforeOpen Event
-
- This event is discussed in the Context Choice topic.
-
-### ContextChoiceSelectedTextInsert Event
-
-This event is discussed in the Context Choice topic.
-
-### ContextChoiceClose Event
-
-This event is discussed in the Context Choice topic.
-
-### ContextChoiceItemSelected Event
-
-This event is discussed in the Context Choice topic.
+    * ContextChoiceBeforeOpen
+    * ContextChoiceSelectedTextInsert
+    * ContextChoiceClose
+    * ContextChoiceItemSelected
+    * ContextChoiceUpdate
 
 ### ContextChoiceUpdate Event
 
@@ -687,27 +677,15 @@ End Sub
 
 ## ContextPrompt Events
 
-This section discusses the below given context prompt events.
+EditControl provides the following set of events for performing ContextPrompt operations:
 
-### ContextPromptBeforeOpen Event
+      * ContextPromptBeforeOpen 
+      * ContextPromptClose 
+      * ContextPromptOpen 
+      * ContextPromptSelectionChanged
+      * ContextPromptUpdate
 
-This event is discussed in the Context Prompt topic.
-
-### ContextPromptClose Event
-
-This event is discussed in the Context Prompt topic.
-
-### ContextPromptOpen Event
-
-This event is discussed in the Context Prompt topic.
-
-### ContextPromptSelectionChanged Event
-
-This event is discussed in the Context Prompt topic.
-
-### ContextPromptUpdate Event
-
-This event is discussed in the Context Prompt topic.
+These event are discussed in the Context Prompt topic.
 
 ## CursorPositionChanged Event
 

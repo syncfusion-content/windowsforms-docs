@@ -129,7 +129,7 @@ Me.editControl1.SelectOnLineNumberClick = True
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img11.jpeg)
+![](Appearance_images/Appearance_img1.jpeg)
 
 ## Single line mode
 
@@ -158,7 +158,7 @@ Me.editControl1.SingleLineMode = true
 
 N> The SingleLineMode is intended for use, only when the EditControl contains small amounts of text data in it. Using it in a scenario where the EditControl has a huge file loaded into it, may lead to poor performance.
 
-![](Appearance_images/Appearance_img11.jpeg)
+![](Appearance_images/Appearance_img2.jpg)
 
 ## Split views
 
@@ -243,7 +243,7 @@ Me.editControl1.SplitVertically()
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img13.png)
+![](Appearance_images/Appearance_img3.jpg)
 
 **Positioning**
 
@@ -312,7 +312,31 @@ Me.editControl1.SplitFourQuadrants()
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.jpeg)
+![](Appearance_images/Appearance_img4.jpg)
+
+## Font customization
+
+The font customization in the EditControl works slightly different from the regular text processing the control. The font customization is done only at the Formats level not at a word level or selected text level. EditControl is more of a text parsing / syntax highlighting control, and less of a text editing control. EditControl supports customization of fonts both through the configuration file and dynamically through a run-time Formats Editor dialog.
+
+EditControl supports customization of fonts through the configuration file, as shown in the below code snippet.
+
+{% highlight xaml %}
+
+<format name="Text" Font="Courier New, 10pt" FontColor="Black" />
+
+<format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" />
+
+<format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
+
+<format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" />
+
+<format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
+
+<format name="Number" Font="Courier New, 10pt, style=Bold" FontColor="Navy" /> 
+
+{% endhighlight %}
+
+![](Appearance_images/Appearance_img11.jpg)
 
 ## Right-To-Left (RTL) support 
 
@@ -346,7 +370,7 @@ Me.editControl1.RenderRightToLeft = True
 
 With RTL support, you can use EditControl, to render content in Right-To-left layout for languages such as Arabic. This is depicted in the screenshot below:
 
-![](Editing-Features_images/Editing-Features_img6.png)
+![](Appearance_images/Appearance_img5.jpg)
 
 ## Margin
 
@@ -362,11 +386,11 @@ Description</th></tr>
 <tr>
 <td>
 SelectionMarginForegroundColor</td><td>
-Gets / sets foreground color of the selection margin</td></tr>
+Specifies foreground color of the selection margin</td></tr>
 <tr>
 <td>
 SelectionMarginBackgroundColor</td><td>
-Gets / sets background color of the selection margin</td></tr>
+Specifies background color of the selection margin</td></tr>
 <tr>
 <td>
 SelectionMarginWidth</td><td>
@@ -399,32 +423,7 @@ Me.editControl1.SelectionMarginWidth = 100
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.jpeg)
-
-**Differentiating the lines based on actions**
-
-EditControl provides the extensive supports for marking the changed lines and the saved lines with different colors. Lines that are modified after the file load or after the last file save operations are marked in yellow color, by default. Once they are saved, they will be changed to green, by default.
-
-The changed lines marking feature can be enabled by setting the `MarkChangedLines` property to True. To enable this functionality in the EditControl, the `SelectionMargin` property should also be enabled.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.MarkChangedLines = true;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.MarkChangedLines = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Appearance_images/Appearance_img4.jpeg)
+![](Appearance_images/Appearance_img6.jpg)
 
 **User Margin**
 
@@ -516,8 +515,6 @@ Me.editControl1.UserMarginTextColor = Color.Green
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img5.jpeg)
-
 It is also possible to set custom text in the User Margin on a line-by-line basis by handling the `DrawUserMarginText` event of the EditControl. Moreover, it is also possible to customize the font settings for the text of the User Margin.
 
 {% tabs %}
@@ -573,6 +570,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Appearance_images/Appearance_img8.jpg)
 
 ## Scrolling support
 
@@ -632,9 +631,9 @@ Me.editControl1.AlwaysShowScrollers = True
 
 {% endtabs %}
 
-The EditControl supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple EditControls.
+EditControl supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple EditControls.
 
-![](Runtime-Features_images/Runtime-Features_img9.jpeg)
+![](Appearance_images/Appearance_img9.jpg)
 
 ### ScrollBar buttons
 
@@ -693,7 +692,7 @@ Me.editControl1.ScrollbarTopButtons.AddRange(New System.Windows.Forms.Control() 
 
 {% endtabs %}
 
-### Scroll Position and Offsets
+### Scroll position and offsets
 
 The scroll position and offsets of the EditControl are set by using the below given properties.
 
@@ -759,7 +758,7 @@ Me.editControl1.ScrollOffsetTop = 10
 
 ### ScrollBar style
 
-EditControl enables to provide Office 2007 appearance to scroll bars by setting the ScrollVisualStyle property to Office2007. It supports all the three Office 2007 Color Schemes (Black, Blue and Silver), which can be set by using the ScrollColorScheme property. Also, custom colors can be applied to the scroll bars of the EditControl. This can be done by setting the ScrollColorScheme property to Managed.
+EditControl enables to provide Office 2007 appearance to scroll bars by setting the `ScrollVisualStyle` property to Office2007. It supports all the three Office 2007 Color Schemes (Black, Blue and Silver), which can be set by using the `ScrollColorScheme` property. Also, custom colors can be applied to the scroll bars of the EditControl. This can be done by setting the ScrollColorScheme property to Managed.
 
 <table>
 <tr>
@@ -816,5 +815,4 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
 The following illustration shows the EditControl with custom color (green) set for the scroll bars.
 
-![](Runtime-Features_images/Runtime-Features_img10.jpeg)
-
+![](Appearance_images/Appearance_img10.jpg)
