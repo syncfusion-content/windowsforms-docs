@@ -21,49 +21,27 @@ False - If you want to treat single range selection as a full row selection.
 
 True - If current cell should be returned as selected range.
 
-#### Example
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 GridRangeInfoList ranges = this .gridDataBoundGrid1 .Selections. GetSelectedRows(true, false);
-
- foreach (GridRangeInfo range in ranges)
-
+foreach (GridRangeInfo range in ranges)
 {
-
- for (int i = range.Top; i <= range.Bottom; ++i)
-
- 	                    {
-
- Console.WriteLine(string.Format("Row {0} selected", i));
-
- 	                    }
-
-            		}
+    for (int i = range.Top; i <= range.Bottom; ++i)
+    {
+        Console.WriteLine(string.Format("Row {0} selected", i));
+    }
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-
-
- Dim ranges As GridRangeInfoList = Me.gridDataBoundGrid1 .Selections. GetSelectedRows(True, False)
-
-
-
+Dim ranges As GridRangeInfoList = Me.gridDataBoundGrid1 .Selections. GetSelectedRows(True, False)
 For Each range As GridRangeInfo In ranges
-
-
-
 For i As Integer = range.Top To range.Bottom								
-
 Console.WriteLine(String.Format("Row {0} selected", i))						Next i
-
 Next range
 
 {% endhighlight %}
-
-
-
+{% endtabs %}
