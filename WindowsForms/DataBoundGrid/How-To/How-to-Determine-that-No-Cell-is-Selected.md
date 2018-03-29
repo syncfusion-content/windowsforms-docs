@@ -16,51 +16,27 @@ To determine whether the cell is selected or not, use GetSelectedRange method. I
 
 True - If the current cell should be treated as selected range.
 
-#### Example
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 GridRangeInfoList rangeList = null;
+this.gridDataBoundGrid1.Selections.GetSelectedRanges(out rangeList, false);
 
-
-
-   this.gridDataBoundGrid1.Selections.GetSelectedRanges(out rangeList, false);
-
-
-
-   if (rangeList.Count == 0)
-
-
-
-     	     {
-
-
-
-     	Console.WriteLine("no selection");
-
-
-
-           }
+if (rangeList.Count == 0)
+{
+    Console.WriteLine("no selection");
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-
-
-        Dim rangeList As GridRangeInfoList = Nothing
-
-   Me.gridDataBoundGrid1.Selections.GetSelectedRanges(rangeList,False)
-
-   If rangeList.Count = 0 Then
-
-    		 Console.WriteLine("no Selection")
-
-   End If
-
+Dim rangeList As GridRangeInfoList = Nothing
+Me.gridDataBoundGrid1.Selections.GetSelectedRanges(rangeList,False)
+If rangeList.Count = 0 Then
+Console.WriteLine("no Selection")
+End If
 
 {% endhighlight %}
-
+{% endtabs %}
 

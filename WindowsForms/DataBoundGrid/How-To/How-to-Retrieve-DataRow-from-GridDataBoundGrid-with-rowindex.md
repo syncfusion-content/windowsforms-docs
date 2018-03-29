@@ -9,51 +9,27 @@ documentation: ug
 
 # How to Retrieve DataRow from GridDataBoundGrid with RowIndex
 
-### Introduction
-
-GridDataBoundGrid has to be bound to the datasource using CurrencyManager. Using CurrencyManager, the record corresponding to the row index can be retrieved. 
-
-#### Example
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 CurrencyManager cm=(CurrencyManager)BindingContext[gridDataBoundGrid1.DataSource, gridDataBoundGrid1.DataMember]; 
-
 DataRow row;
-
 DataView dataView=(DataView)cm.List;
 
-
-
 //The 2 is the row index.
-
 int position = this.gridDataBoundGrid1.Binder.RowIndexToPosition(2);
-
 row=dataView[position].Row;
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 Dim cm As CurrencyManager= CType(BindingContext(gridDataBoundGrid1.DataSource, gridDataBoundGrid1.DataMember), CurrencyManager)
-
 Dim row As DataRow
-
 Dim dataView As DataView= CType(cm.List, DataView)
 
-
-
 'The 2 is the row index.
-
 Dim position As Integer = Me.gridDataBoundGrid1.Binder.RowIndexToPosition(2)
-
 row=dataView(position).Row
 
-
 {% endhighlight %}
-
+{% endtabs %}

@@ -16,71 +16,41 @@ To get selected range of cells, use GetSelectedRanges method. It returns the lis
 
 True -  If current cell should be treated as selected range.
 
-#### Example
-
+{% tabs %}
 {% highlight c# %}
 
 GridRangeInfoList rangeList = null;
+this.gridDataBoundGrid1.Selections.GetSelectedRanges(out  	 	 	rangeList, false);
+if (rangeList.Count > 0)
+{
+    foreach (GridRangeInfo range in rangeList)
+	{
+    	for (int row = range.Top; row <= range.Bottom; ++row)
+		{
+    		for (int col = range.Left; col <= range.Right; ++col)
+		    {
+    			Console.WriteLine(String.Format("Cell {0}, {1} selected", row, col));
+            }
 
-      this.gridDataBoundGrid1.Selections.GetSelectedRanges(out  	 	 	rangeList, false);
+         }
 
-      if (rangeList.Count > 0)
-
-            {
-
-            foreach (GridRangeInfo range in rangeList)
-
-            	{
-
-            	for (int row = range.Top; row <= range.Bottom; ++row)
-
-            		{
-
-            		for (int col = range.Left; col <= range.Right; ++col)
-
-            				  {
-
-             				Console.WriteLine(String.Format("Cell {0}, {1} selected", row, col));
-
-           				  }
-
-           		}
-
-           	 }
-
-     		    }
-
-
-
+ 	 }
+}
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Dim rangeList As GridRangeInfoList = Nothing
-
 Me.gridDataBoundGrid1.Selections.GetSelectedRanges(rangeList,False)
-
 If rangeList.Count > 0 Then
-
 For Each range As GridRangeInfo In rangeList								For row As Integer = range.Top To range.Bottom
-
 For col As Integer = range.Left To range.Right
-
 Console.WriteLine(String.Format("Cell {0}, {1} selected", row, col))
-
 Next col
-
 Next row
-
 Next range
-
 End If
 
 {% endhighlight %}
-
-
-
+{% endtabs %}
