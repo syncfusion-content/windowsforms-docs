@@ -7,7 +7,7 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to Acess a Particular Group
+# How to Access a Particular Group
 
 To access a particular group and the records categorized under it, use the following code.
 
