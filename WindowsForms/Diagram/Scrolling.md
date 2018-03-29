@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Scrolling | Windows Forms | Syncfusion
 description: Scrolling
@@ -40,8 +40,8 @@ Programmatically, these properties can be set as follows.
 {% tabs %}
 {% highlight c# %}
 
-	this.diagram1.HScroll = true;
-	this.diagram1.VScroll = true;
+this.diagram1.HScroll = true;
+this.diagram1.VScroll = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
@@ -70,7 +70,7 @@ Properties
 <table>
 <tr>
 <th>
-Property</th><th>
+Property</th><th
 Description</th></tr>
 <tr>
 <td>
@@ -214,14 +214,14 @@ Programmatically, these properties can be set as follows.
 {% tabs %}
 {% highlight c# %}
 
-	this.diagram1.HorizontalThumbTrack = true;
-	this.diagram1.VerticalThumbTrack = true;
+this.diagram1.HorizontalThumbTrack = true;
+this.diagram1.VerticalThumbTrack = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Me.diagram1.HorizontalThumbTrack = True
-	Me.diagram1.VerticalThumbTrack = True
+Me.diagram1.HorizontalThumbTrack = True
+Me.diagram1.VerticalThumbTrack = True
 
 {% endhighlight %}
 {% endtabs %}

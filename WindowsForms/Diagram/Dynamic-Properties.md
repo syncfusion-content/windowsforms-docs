@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Dynamic-Properties | Windows Forms | Syncfusion
 description: Dynamic Properties
@@ -12,7 +12,7 @@ documentation: ug
 
 This feature lets the user add additional properties or data to the nodes and connectors. Any type of data can be added as additional data or properties.
 
-The node’s PropertyBag property, which is a key value pair, is used to add, edit, and remove the additional properties or data and can be serialized when saving the diagram.
+The node’s [PropertyBag](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Node~PropertyBag.html) property, which is a key value pair, is used to add, edit, and remove the additional properties or data and can be serialized when saving the diagram.
 
 The diagram has built-in UI dialogs to add, edit, and remove the dynamic properties. 
 
@@ -38,22 +38,22 @@ Dictionary<string, object></td></tr>
 </table>
 
 
-The following code shows how to add additional data to a node by using the PropertyBag property.
+The following code shows how to add additional data to a node by using the [PropertyBag](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Node~PropertyBag.html) property.
 
 
 {% tabs %}
 {% highlight c# %}
 
-	node.PropertyBag.Add("Name", employee.EmployeeName);
-	node.PropertyBag.Add("ID", employee.EmployeeID);
-	node.PropertyBag.Add("Designation", employee.Designation);
+node.PropertyBag.Add("Name", employee.EmployeeName);
+node.PropertyBag.Add("ID", employee.EmployeeID);
+node.PropertyBag.Add("Designation", employee.Designation);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	node.PropertyBag.Add("Name", employee.EmployeeName)
-	node.PropertyBag.Add("ID", employee.EmployeeID)
-	node.PropertyBag.Add("Designation", employee.Designation)
+node.PropertyBag.Add("Name", employee.EmployeeName)
+node.PropertyBag.Add("ID", employee.EmployeeID)
+node.PropertyBag.Add("Designation", employee.Designation)
 
 {% endhighlight %}
 {% endtabs %}
