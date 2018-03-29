@@ -7,55 +7,37 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to access the group from the Record
+# How to Access the Group from the Record
 
 To access the group from the record, use the following code snippet.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //For all the display elements in the Table.
-
 foreach(Element el in gridGroupingControl1.Table.DisplayElements)
-
 {
-
 //DisplayElementKind.Record or DisplayElementKind.Summary.
-
-if(el.Kind==DisplayElementKind.Record || DisplayElementKind.Summary)
-
-{
-
-Group g = el.ParentGroup;
-
-System.Diagnostics.Trace.WriteLine(g.Info);
-
-}
-
+    if(el.Kind==DisplayElementKind.Record || DisplayElementKind.Summary)
+    {
+        Group g = el.ParentGroup;
+        System.Diagnostics.Trace.WriteLine(g.Info);
+    }
 }
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'For all the display elements in the Table.
-
 For Each el As Element In gridGroupingControl1.Table.DisplayElements
 
 'DisplayElementKind.Record or DisplayElementKind.Summary.
-
-    If el.Kind=DisplayElementKind.Record OrElse el.Kind=DisplayElementKind.Summary Then
-
-    Dim g As Group = el.ParentGroup
-
-         System.Diagnostics.Trace.WriteLine(g.Info)
-
-     End If
-
+If el.Kind=DisplayElementKind.Record OrElse el.Kind=DisplayElementKind.Summary Then
+Dim g As Group = el.ParentGroup
+System.Diagnostics.Trace.WriteLine(g.Info)
+End If
 Next el
 
 {% endhighlight  %}
-
+{% endtabs %}

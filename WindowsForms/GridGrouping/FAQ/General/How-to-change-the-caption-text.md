@@ -7,15 +7,12 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to change the caption text
+# How to Change the Caption Text
 
 This can be done using the code below.
 
-
+{% tabs %}
 {% highlight C# %}
-
-
-
 
 // Sets the caption text.
 
@@ -26,15 +23,11 @@ This can be done using the code below.
 //{Category} - Displays the CaptionSection.ParentGroup.Category
 
 //{RecordCount} - Displays the CaptionSection.ParentGroup.GetFilteredRecordCount()
-
 this.gridGroupingControl1.TopLevelGroupOptions.CaptionText = "TableName is {TableName} : {Category} : {RecordCount}";
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 'Sets the caption text.
 
@@ -45,8 +38,7 @@ this.gridGroupingControl1.TopLevelGroupOptions.CaptionText = "TableName is {Tabl
 '{Category} - Displays the CaptionSection.ParentGroup.Category
 
 '{RecordCount} - Displays the CaptionSection.ParentGroup.GetFilteredRecordCount()
-
 Me.gridGroupingControl1.TopLevelGroupOptions.CaptionText = "TableName is {TableName} : {Category} : {RecordCount}"
 
 {% endhighlight %}
-
+{% endtabs %}

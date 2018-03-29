@@ -96,7 +96,11 @@ Me. CaptionBarHeight = 50
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Caption-Settings_images/CaptionBarHeight.png)
+
+
 
 ## Help Button Support
 
