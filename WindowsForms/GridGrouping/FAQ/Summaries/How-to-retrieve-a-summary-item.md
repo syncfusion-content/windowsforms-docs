@@ -7,7 +7,7 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to Rtrieve a Summary Item
+# How to Retrieve a Summary Item
 
 The following code shows how to retrieve a summary item.
 
