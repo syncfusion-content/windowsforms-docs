@@ -40,14 +40,14 @@ The central port for a diagram node can be enabled by using the following code s
 {% tabs %}
 {% highlight c# %}
 
-	Ellipse ellipse = new Ellipse(100, 100, 200, 100);
-	ellipse.EnableCentralPort = true;
+Ellipse ellipse = new Ellipse(100, 100, 200, 100);
+ellipse.EnableCentralPort = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Dim ellipse As New Ellipse(100, 100, 200, 100)
-	ellipse.EnableCentralPort = True
+Dim ellipse As New Ellipse(100, 100, 200, 100)
+ellipse.EnableCentralPort = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -89,18 +89,18 @@ The following code snippet illustrate the Custom Ports,
 {% tabs %}
 {% highlight c# %}
 
-	Syncfusion.Windows.Forms.Diagram.Rectangle rect = new Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50);
-	rect.DrawPorts = true;
-	Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
-	rect.Ports.Add(cp);
+Syncfusion.Windows.Forms.Diagram.Rectangle rect = new Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50);
+rect.DrawPorts = true;
+Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
+rect.Ports.Add(cp);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50)
-	rect.DrawPorts = True
-	Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
-	rect.Ports.Add(cp)
+Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50)
+rect.DrawPorts = True
+Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
+rect.Ports.Add(cp)
 
 {% endhighlight %}
 {% endtabs %}
@@ -143,12 +143,12 @@ The visual types for a port can be defined using the following code snippet.
 {% tabs %}
 {% highlight c# %}
 
-	port.VisualType = PortVisualType.RhombPort;
+port.VisualType = PortVisualType.RhombPort;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	port.VisualType = PortVisualType.RhombPort
+port.VisualType = PortVisualType.RhombPort
 
 {% endhighlight %}
 {% endtabs %}
@@ -197,18 +197,18 @@ The following code snippet demonstrates their usage.
 {% tabs %}
 {% highlight c# %}
 
-	Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
-	cp.ConnectionPointType = ConnectionPointType.Incoming;
-	cp.ConnectionsLimit = 12;
-	cp.AllowConnectOnDrag = true;
+Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
+cp.ConnectionPointType = ConnectionPointType.Incoming;
+cp.ConnectionsLimit = 12;
+cp.AllowConnectOnDrag = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
-	cp.ConnectionPointType = ConnectionPointType.Incoming
-	cp.ConnectionsLimit = 12
-	cp.AllowConnectOnDrag = True
+Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
+cp.ConnectionPointType = ConnectionPointType.Incoming
+cp.ConnectionsLimit = 12
+cp.AllowConnectOnDrag = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -237,18 +237,18 @@ FillStyle property is used to create brushes for filling the interior region of 
 {% tabs %}
 {% highlight c# %}
 
-	FillStyle m_styleFill = new FillStyle();
-	m_styleFill.Color = Color.Transparent;
-	m_styleFill.Type = FillStyleType.Solid;
-	m_styleFill.ColorAlphaFactor = 60;
+FillStyle m_styleFill = new FillStyle();
+m_styleFill.Color = Color.Transparent;
+m_styleFill.Type = FillStyleType.Solid;
+m_styleFill.ColorAlphaFactor = 60;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Dim m_styleFill As New FillStyle()
-	m_styleFill.Color = Color.Transparent
-	m_styleFill.Type = FillStyleType.Solid
-	m_styleFill.ColorAlphaFactor = 60
+Dim m_styleFill As New FillStyle()
+m_styleFill.Color = Color.Transparent
+m_styleFill.Type = FillStyleType.Solid
+m_styleFill.ColorAlphaFactor = 60
 
 {% endhighlight %}
 {% endtabs %}
@@ -275,18 +275,18 @@ This property in turn has customization properties to set the style for the Conn
 {% tabs %}
 {% highlight c# %}
 
-	m_styleLine = new LineStyle();
-	m_styleLine.LineColor = Color.Blue;
-	m_styleLine.LineWidth = 0;
-	m_styleLine.DashStyle = DashStyle.Dash;
+m_styleLine = new LineStyle();
+m_styleLine.LineColor = Color.Blue;
+m_styleLine.LineWidth = 0;
+m_styleLine.DashStyle = DashStyle.Dash;
 
 {% endhighlight %}
 {% highlight vbnet%}
 
-	m_styleLine = New LineStyle()
-	m_styleLine.LineColor = Color.Blue
-	m_styleLine.LineWidth = 0
-	m_styleLine.DashStyle = DashStyle.Dash
+m_styleLine = New LineStyle()
+m_styleLine.LineColor = Color.Blue
+m_styleLine.LineWidth = 0
+m_styleLine.DashStyle = DashStyle.Dash
 
 {% endhighlight %}
 {% endtabs %}
@@ -342,18 +342,18 @@ The following code snippet defines the setting of the position values for a node
 {% tabs %}
 {% highlight c# %}
 
-	Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
-	cp.Position = Position.BottomLeft;
-	cp.OffsetX = 50;
-	cp.OffsetY = 10;
+Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.Forms.Diagram.ConnectionPoint();
+cp.Position = Position.BottomLeft;
+cp.OffsetX = 50;
+cp.OffsetY = 10;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
-	cp.Position = Position.BottomLeft
-	cp.OffsetX = 50
-	cp.OffsetY = 10
+Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
+cp.Position = Position.BottomLeft
+cp.OffsetX = 50
+cp.OffsetY = 10
 
 {% endhighlight %}
 {% endtabs %}

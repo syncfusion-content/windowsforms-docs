@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Zoom-and-Pan | Windows Forms | Syncfusion
 description: Zoom and Pan
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-#Zoom and Pan
+# Zoom and Pan
 
 ## Zooming Support
 
@@ -93,38 +93,38 @@ The following code samples explain how to use the zoom methods to zoom in the di
 {% tabs %}
 {% highlight c# %}
 
-	//Sets the zoom increment value.
-	this.diagram1.View.ZoomIncrement = 20;
-	
-	// Zoom in on the document.
-	this.diagram1.View.ZoomIn();
-	
-	// Zoom out of the document.
-	this.diagram1.View.ZoomOut();  
-	
-	// Zoom the document to its actual size.
-	this.diagram1.View.ZoomToActual();  
-	
-	// Zoom the document to the selection.
-	this.diagram1.View.ZoomToSelection(new RectangleF(100,100,100,100));   
+//Sets the zoom increment value.
+this.diagram1.View.ZoomIncrement = 20;
+
+// Zoom in on the document.
+this.diagram1.View.ZoomIn();
+
+// Zoom out of the document.
+this.diagram1.View.ZoomOut();  
+
+// Zoom the document to its actual size.
+this.diagram1.View.ZoomToActual();  
+
+// Zoom the document to the selection.
+this.diagram1.View.ZoomToSelection(new RectangleF(100,100,100,100));   
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	‘Sets the zoom increment value.
-	Me.diagram1.View.ZoomIncrement = 20
-	
-	‘Zoom in on the document.
-	Me.diagram1.View.ZoomIn() 
-	
-	‘Zoom out of the document.
-	Me.diagram1.View.ZoomOut() 
-	
-	‘Zoom the document to its actual size.
-	Me.diagram1.View.ZoomToActual()    
-	
-	‘Zoom the document to the selection.
-	Me.diagram1.View.ZoomToSelection(New RectangleF(100,100,100,100))
+‘Sets the zoom increment value.
+Me.diagram1.View.ZoomIncrement = 20
+
+‘Zoom in on the document.
+Me.diagram1.View.ZoomIn() 
+
+‘Zoom out of the document.
+Me.diagram1.View.ZoomOut() 
+
+‘Zoom the document to its actual size.
+Me.diagram1.View.ZoomToActual()    
+
+‘Zoom the document to the selection.
+Me.diagram1.View.ZoomToSelection(New RectangleF(100,100,100,100))
 
 {% endhighlight %}
 {% endtabs %}
@@ -138,14 +138,14 @@ The following code sample demonstrates how to use the zoom to center feature in 
 {% tabs %}
 {% highlight c# %}
 
-	// Sets the ZoomType as ‘center’. 
-	this.diagram1.View.ZoomType = ZoomType.Center;  
+// Sets the ZoomType as ‘center’. 
+this.diagram1.View.ZoomType = ZoomType.Center;  
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	'Sets the ZoomType as ‘center’. 
-	Me.diagram1.View.ZoomType = ZoomType.Center
+'Sets the ZoomType as ‘center’. 
+Me.diagram1.View.ZoomType = ZoomType.Center
 
 {% endhighlight %}
 {% endtabs %}
@@ -164,14 +164,14 @@ The following code shows how to use the zoom to top-left feature:
 {% tabs %}
 {% highlight c# %}
 
-	// Sets the ZoomType as TopLeft. 
-	this.diagram1.View.ZoomType = ZoomType.TopLeft;  
+// Sets the ZoomType as TopLeft. 
+this.diagram1.View.ZoomType = ZoomType.TopLeft;  
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	' Sets the ZoomType as TopLeft. 
-	Me.diagram1.View.ZoomType = ZoomType.TopLeft
+' Sets the ZoomType as TopLeft. 
+Me.diagram1.View.ZoomType = ZoomType.TopLeft
 
 {% endhighlight %}
 {% endtabs %}
@@ -226,20 +226,20 @@ The following code demonstrates how to activate the zoom tool:
 {% tabs %}
 {% highlight c# %}
 
-	diagram1.Controller.ActivateTool("ZoomTool");
-	ZoomTool zoomTool = (ZoomTool)diagram1.Controller.ActiveTool;
-	zoomTool.MaximumMagnification = 100;
-	zoomTool.MinimumMagnification = 50;
-	zoomTool.ZoomIncrement = 10;
+diagram1.Controller.ActivateTool("ZoomTool");
+ZoomTool zoomTool = (ZoomTool)diagram1.Controller.ActiveTool;
+zoomTool.MaximumMagnification = 100;
+zoomTool.MinimumMagnification = 50;
+zoomTool.ZoomIncrement = 10;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	diagram1.Controller.ActivateTool("ZoomTool")
-	Dim zoomTool As ZoomTool = CType(diagram1.Controller.ActiveTool, ZoomTool)
-	zoomTool.MaximumMagnification = 100
-	zoomTool.MinimumMagnification = 50
-	zoomTool.ZoomIncrement = 10
+diagram1.Controller.ActivateTool("ZoomTool")
+Dim zoomTool As ZoomTool = CType(diagram1.Controller.ActiveTool, ZoomTool)
+zoomTool.MaximumMagnification = 100
+zoomTool.MinimumMagnification = 50
+zoomTool.ZoomIncrement = 10
 
 {% endhighlight %}
 {% endtabs %}
@@ -263,12 +263,12 @@ Programmatically, it is implemented as follows.
 {% tabs %}
 {% highlight c# %}
 
-	this.diagram1.Controller.ActivateTool("PanTool");
+this.diagram1.Controller.ActivateTool("PanTool");
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Me.diagram1.Controller.ActivateTool("PanTool")
+Me.diagram1.Controller.ActivateTool("PanTool")
 
 {% endhighlight %}
 {% endtabs %}

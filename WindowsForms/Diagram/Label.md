@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Label | Windows Forms | Syncfusion
 description: Label
@@ -277,92 +277,92 @@ You can create label as illustrated in the following code example:
 {% tabs %}
 {% highlight c# %}
 
-    RoundRect node = new RoundRect(0, 0, 170, 100,MeasureUnits.Pixel);
-    
-    //Create a label with predefined position
-    Syncfusion.Windows.Forms.Diagram.Label lbl_TopCenter = new Syncfusion.Windows.Forms.Diagram.Label(node, "Label_TopCenter");           
-    
-    //Position the label
-    lbl_TopCenter.Position = Position.TopCenter;
-    
-    /* Position enum has the values Center, TopLeft, TopCenter, TopRight, MiddleLeft, MiddleRight, BottomLeft, BottomCenter, BottomRight and Custom */
-    
-    //Apply font style
-    lbl_TopCenter.FontStyle.Bold = true;
-    lbl_TopCenter.FontStyle.Family = "Corbel";
-    lbl_TopCenter.FontStyle.Size = 9;
-    
-    //Add the label to node's label collection
-    node.Labels.Add(lbl_TopCenter);
-    
-    //Create a label with custom position
-    Syncfusion.Windows.Forms.Diagram.Label lbl_Custom = new Syncfusion.Windows.Forms.Diagram.Label(node, "Label_Custom");
-    
-    //Position the label
-    lbl_Custom.Position = Position.Custom;
-    lbl_Custom.OffsetX = 0;
-    lbl_Custom.OffsetY = 0;
-    
-    //Apply font style
-    lbl_Custom.FontStyle.Bold = true;
-    lbl_Custom.FontStyle.Family = "Corbel";
-    lbl_Custom.FontStyle.Size = 9;
-    
-    //Format the label text
-    lbl_Custom.HorizontalAlignment = StringAlignment.Center;
-    lbl_Custom.VerticalAlignment = StringAlignment.Far;
-    
-    //WrapText is set to true by default
-    
-    //Add the label to node's label collection
-    node.Labels.Add(lbl_Custom);
-    
-    //Add the node to diagram model
-    diagram1.Model.AppendChild(node);  
+RoundRect node = new RoundRect(0, 0, 170, 100,MeasureUnits.Pixel);
+
+//Create a label with predefined position
+Syncfusion.Windows.Forms.Diagram.Label lbl_TopCenter = new Syncfusion.Windows.Forms.Diagram.Label(node, "Label_TopCenter");           
+
+//Position the label
+lbl_TopCenter.Position = Position.TopCenter;
+
+/* Position enum has the values Center, TopLeft, TopCenter, TopRight, MiddleLeft, MiddleRight, BottomLeft, BottomCenter, BottomRight and Custom */
+
+//Apply font style
+lbl_TopCenter.FontStyle.Bold = true;
+lbl_TopCenter.FontStyle.Family = "Corbel";
+lbl_TopCenter.FontStyle.Size = 9;
+
+//Add the label to node's label collection
+node.Labels.Add(lbl_TopCenter);
+
+//Create a label with custom position
+Syncfusion.Windows.Forms.Diagram.Label lbl_Custom = new Syncfusion.Windows.Forms.Diagram.Label(node, "Label_Custom");
+
+//Position the label
+lbl_Custom.Position = Position.Custom;
+lbl_Custom.OffsetX = 0;
+lbl_Custom.OffsetY = 0;
+
+//Apply font style
+lbl_Custom.FontStyle.Bold = true;
+lbl_Custom.FontStyle.Family = "Corbel";
+lbl_Custom.FontStyle.Size = 9;
+
+//Format the label text
+lbl_Custom.HorizontalAlignment = StringAlignment.Center;
+lbl_Custom.VerticalAlignment = StringAlignment.Far;
+
+//WrapText is set to true by default
+
+//Add the label to node's label collection
+node.Labels.Add(lbl_Custom);
+
+//Add the node to diagram model
+diagram1.Model.AppendChild(node);  
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim node As New RoundRect(0, 0, 170, 100,MeasureUnits.Pixel)
-    
-    'Create a label with predefined position
-    Dim lbl_TopCenter As New Syncfusion.Windows.Forms.Diagram.Label(node, "Label_TopCenter")
-    
-    'Position the label
-    lbl_TopCenter.Position = Position.TopCenter
-    
-    ' Position enum has the values Center, TopLeft, TopCenter, TopRight, MiddleLeft, MiddleRight, BottomLeft, BottomCenter, BottomRight and Custom
-    'Apply font style
-    lbl_TopCenter.FontStyle.Bold = True
-    lbl_TopCenter.FontStyle.Family = "Corbel"
-    lbl_TopCenter.FontStyle.Size = 9
-     
-    'Add the label to node's label collection
-    node.Labels.Add(lbl_TopCenter)
-    
-    'Create a label with custom position
-    Dim lbl_Custom As New Syncfusion.Windows.Forms.Diagram.Label(node, "Label_Custom")
-    
-    'Position the label
-    lbl_Custom.Position = Position.Custom
-    lbl_Custom.OffsetX = 0
-    lbl_Custom.OffsetY = 0
-    
-    'Apply font style
-    lbl_Custom.FontStyle.Bold = True
-    lbl_Custom.FontStyle.Family = "Corbel"
-    lbl_Custom.FontStyle.Size = 9
-    
-    'Format the label text
-    lbl_Custom.HorizontalAlignment = StringAlignment.Center
-    lbl_Custom.VerticalAlignment = StringAlignment.Far
-    
-    'WrapText is true by default
-    'Add the label to node's label collection
-    node.Labels.Add(lbl_Custom)
-    
-    'Add the node to diagram model
-    diagram1.Model.AppendChild(node)
+Dim node As New RoundRect(0, 0, 170, 100,MeasureUnits.Pixel)
+
+'Create a label with predefined position
+Dim lbl_TopCenter As New Syncfusion.Windows.Forms.Diagram.Label(node, "Label_TopCenter")
+
+'Position the label
+lbl_TopCenter.Position = Position.TopCenter
+
+' Position enum has the values Center, TopLeft, TopCenter, TopRight, MiddleLeft, MiddleRight, BottomLeft, BottomCenter, BottomRight and Custom
+'Apply font style
+lbl_TopCenter.FontStyle.Bold = True
+lbl_TopCenter.FontStyle.Family = "Corbel"
+lbl_TopCenter.FontStyle.Size = 9
+ 
+'Add the label to node's label collection
+node.Labels.Add(lbl_TopCenter)
+
+'Create a label with custom position
+Dim lbl_Custom As New Syncfusion.Windows.Forms.Diagram.Label(node, "Label_Custom")
+
+'Position the label
+lbl_Custom.Position = Position.Custom
+lbl_Custom.OffsetX = 0
+lbl_Custom.OffsetY = 0
+
+'Apply font style
+lbl_Custom.FontStyle.Bold = True
+lbl_Custom.FontStyle.Family = "Corbel"
+lbl_Custom.FontStyle.Size = 9
+
+'Format the label text
+lbl_Custom.HorizontalAlignment = StringAlignment.Center
+lbl_Custom.VerticalAlignment = StringAlignment.Far
+
+'WrapText is true by default
+'Add the label to node's label collection
+node.Labels.Add(lbl_Custom)
+
+'Add the node to diagram model
+diagram1.Model.AppendChild(node)
 
 
 {% endhighlight %}
@@ -397,20 +397,20 @@ The following code shows how to set the orientation of the label to horizontal:
 {% tabs %}
 {% highlight c# %}
 
-	Syncfusion.Windows.Forms.Diagram.Label label = new Syncfusion.Windows.Forms.Diagram.Label(node, "Orientation");
-	
-	//Sets the orientation of the label as horizontal.
-	label.Orientation = LabelOrientation.Horizontal;
-	node.Labels.Add(label);
+Syncfusion.Windows.Forms.Diagram.Label label = new Syncfusion.Windows.Forms.Diagram.Label(node, "Orientation");
+
+//Sets the orientation of the label as horizontal.
+label.Orientation = LabelOrientation.Horizontal;
+node.Labels.Add(label);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Dim label As New Syncfusion.Windows.Forms.Diagram.Label(node, "Orientation")
-	
-	'Sets the orientation of the label as horizontal.
-	label.Orientation = LabelOrientation.Horizontal
-	node.Labels.Add(label)
+Dim label As New Syncfusion.Windows.Forms.Diagram.Label(node, "Orientation")
+
+'Sets the orientation of the label as horizontal.
+label.Orientation = LabelOrientation.Horizontal
+node.Labels.Add(label)
 
 {% endhighlight %}
 {% endtabs %}

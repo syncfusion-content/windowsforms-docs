@@ -9,8 +9,6 @@ documentation: ug
 
 # How to Get the New Value and Old Value when an Item is Selected in a Combobox Cell
 
-### Introduction
-
 CurrentCellCloseDropDown event gets triggered when a dropdown is closed in a grid cell. The new value of ComboBox can be obtained from CurrentCell's Renderer property and old value can be obtained from the grid.
 
 {% tabs %}
