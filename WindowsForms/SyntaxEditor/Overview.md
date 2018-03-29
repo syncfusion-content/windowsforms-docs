@@ -28,7 +28,6 @@ Some of the key features are listed below.
 * **Intellisense** - Provides Intellisense pop-up capabilities to add content easily, as like in Microsoft Visual Studio code editor.
 * **Indentation Support** - Essential Edit offers multiple types of indentation support. You may use Block, Smart, or None indentation types based on your requirements.  
 * **Text Navigation** - Provides extensive support for text navigation. User can perform navigation at character, word, line, page or entire document levels.	
-* **Scrollbar** - Provides multiple scrollbar visibility settings which is used for scrolling the loaded content in EditControl.
 * **Search or Replace Dialog** - Provides pre-built Find or Replace dialog that allows the user to search the desired text and also replace it as like in Visual Studio Editor. You can also programmatically perform this search and replace operation in EditControl. 
 * **Single-Line Edit Mode** - Supports a single-line mode that renders just like a regular TextBox. This enables you to have a simple TextBox but with all the syntax-highlighting, selection, IntelliPrompt and other features that make SyntaxEditor great for editing code.
 * **Status Bar** - Provide built-in status bar at the bottom of the control with different panels that display different information. It helps to track the line number, column number and char number of the caret. 
