@@ -478,6 +478,8 @@ ShowFileDropNotification</td><td>
 Specifies whether the Notification message is to be displayed when the outer file is dragged and dropped onto the EditControl</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
 //To set the EditControl that allows to Drag and Dropping files
