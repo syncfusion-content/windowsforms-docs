@@ -7,23 +7,25 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to use OLD Metro Style in Grid?
+# How to Use OLD Metro Style in Grid?
 
 Starting from Essential Studio, Volume 4, 2013(V11.40.26), Metro Theme is available with newer styles.  For any version earlier than Volume 4, 2013, you can use old metro style in your grid using new class OldMetroStyle. Using the new class, you can apply all the controls in form with static method “ApplyStyle”. You can also pass GridControl, GridGroupingControl, or GridDataBoundGrid control in this method.
 
 The following code example illustrates how to add the Old Metro Style in Grid control.
 
+{% tabs %}
 {% highlight c# %}
 
  OldMetroStyle.ApplyStyle(this. gridControl1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
  OldMetroStyle.ApplyStyle(Me.gridControl1)
  
  {% endhighlight %}
+{% endtabs %}
 
  You can download the sample that uses a Old metro style in the Grid from the following location.
 
