@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Undo-or-Redo | Windows Forms | Syncfusion
 description: Undo or Redo
@@ -45,18 +45,18 @@ Programmatically, it is implemented as follows:
 {% tabs %}
 {% highlight c# %}
 
-	this.diagram1.Model.HistoryManager.Undo();
-	this.diagram1.Model.HistoryManager.Redo();
-	this.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action");
-	this.diagram1.Model.HistoryManager.EndAtomicAction();
+this.diagram1.Model.HistoryManager.Undo();
+this.diagram1.Model.HistoryManager.Redo();
+this.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action");
+this.diagram1.Model.HistoryManager.EndAtomicAction();
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Me.diagram1.Model.HistoryManager.Undo()
-	Me.diagram1.Model.HistoryManager.Redo()
-	Me.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action")
-	Me.diagram1.Model.HistoryManager.EndAtomicAction()
+Me.diagram1.Model.HistoryManager.Undo()
+Me.diagram1.Model.HistoryManager.Redo()
+Me.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action")
+Me.diagram1.Model.HistoryManager.EndAtomicAction()
 
 {% endhighlight %}
 {% endtabs %}

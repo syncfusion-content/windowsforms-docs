@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Guides | Windows Forms | Syncfusion
 description: Guides
@@ -56,32 +56,32 @@ The following code example illustrates how to turn on Guides for Diagram Nodes w
 {% tabs %}
 {% highlight c# %}
 
-	// Turns on Guides in Diagram.
-	diagram1.Controller.Guides.Enable = true;
-	
-	// Shows All Types of Guides.
-	diagram1.Controller.Guides.Type = GuideTypes.All;
-	
-	// Specifies Line Color for Guides.
-	diagram1.Controller.Guides.LineStyle.LineColor = Color.FromArgb(255, 153, 51);
-	
-	// Sets the Margin between Nodes.
-	diagram1.Controller.Guides.Margin = 50;
+// Turns on Guides in Diagram.
+diagram1.Controller.Guides.Enable = true;
+
+// Shows All Types of Guides.
+diagram1.Controller.Guides.Type = GuideTypes.All;
+
+// Specifies Line Color for Guides.
+diagram1.Controller.Guides.LineStyle.LineColor = Color.FromArgb(255, 153, 51);
+
+// Sets the Margin between Nodes.
+diagram1.Controller.Guides.Margin = 50;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	'Turns on Guides in Diagram.
-	diagram1.Controller.Guides.Enable = True
-	
-	'Shows All Types of Guides.
-	diagram1.Controller.Guides.Type = GuideTypes.All
-	
-	'Specifies Line Color for Guides.
-	diagram1.Controller.Guides.LineStyle.LineColor = Color.FromArgb(255, 153, 51)
-	
-	'Sets the Margin between Nodes.
-	diagram1.Controller.Guides.Margin = 50
+'Turns on Guides in Diagram.
+diagram1.Controller.Guides.Enable = True
+
+'Shows All Types of Guides.
+diagram1.Controller.Guides.Type = GuideTypes.All
+
+'Specifies Line Color for Guides.
+diagram1.Controller.Guides.LineStyle.LineColor = Color.FromArgb(255, 153, 51)
+
+'Sets the Margin between Nodes.
+diagram1.Controller.Guides.Margin = 50
 
 {% endhighlight %}
 {% endtabs %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Layout-Management | Windows Forms | Syncfusion
 description: layout management
@@ -71,42 +71,42 @@ Programmatically, the table layout manager instance should be created with the r
 {% tabs %}
 {% highlight c# %}
 
-    TableLayoutManager lLayout=new TableLayoutManager(this.diagram1.Model, 7, 7);
-    tlLayout.VerticalSpacing = 20;
-    tlLayout.HorizontalSpacing = 20;
-    tlLayout.CellSizeMode = CellSizeMode.EqualToMaxNode;
-    tlLayout.Orientation = Orientation.Horizontal;
-    tlLayout.MaxSize = new SizeF(500, 600);
-    
-    this.diagram1.LayoutManager = tlLayout;
-    this.diagram1.LayoutManager.UpdateLayout(null);.AttachModel(model1);
-    
-    documentExplorer1.Dock = DockStyle.Right;
-    documentExplorer1.BackColor = System.Drawing.SystemColors.Window;
-    documentExplorer1.Location = new System.Drawing.Point(0, 377);
-    documentExplorer1.Size = new System.Drawing.Size(200, 100);
-    documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-    documentExplorer1.ShowNodeToolTips = true;
+TableLayoutManager lLayout=new TableLayoutManager(this.diagram1.Model, 7, 7);
+tlLayout.VerticalSpacing = 20;
+tlLayout.HorizontalSpacing = 20;
+tlLayout.CellSizeMode = CellSizeMode.EqualToMaxNode;
+tlLayout.Orientation = Orientation.Horizontal;
+tlLayout.MaxSize = new SizeF(500, 600);
+
+this.diagram1.LayoutManager = tlLayout;
+this.diagram1.LayoutManager.UpdateLayout(null);.AttachModel(model1);
+
+documentExplorer1.Dock = DockStyle.Right;
+documentExplorer1.BackColor = System.Drawing.SystemColors.Window;
+documentExplorer1.Location = new System.Drawing.Point(0, 377);
+documentExplorer1.Size = new System.Drawing.Size(200, 100);
+documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+documentExplorer1.ShowNodeToolTips = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim lLayout As TableLayoutManager = New TableLayoutManager(Me.diagram1.Model, 7, 7)
-    tlLayout.VerticalSpacing = 20
-    tlLayout.HorizontalSpacing = 20
-    tlLayout.CellSizeMode = CellSizeMode.EqualToMaxNode
-    tlLayout.Orientation = Orientation.Horizontal
-    tlLayout.MaxSize = New SizeF(500, 600)
-    
-    Me.diagram1.LayoutManager = tlLayout
-    Me.diagram1.LayoutManager.UpdateLayout(Nothing).AttachModel(model1)
-    
-    documentExplorer1.Dock = DockStyle.Right
-    documentExplorer1.BackColor = System.Drawing.SystemColors.Window
-    documentExplorer1.Location = New System.Drawing.Point(0, 377)
-    documentExplorer1.Size = New System.Drawing.Size(200, 100)
-    documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-    documentExplorer1.ShowNodeToolTips = True
+Dim lLayout As TableLayoutManager = New TableLayoutManager(Me.diagram1.Model, 7, 7)
+tlLayout.VerticalSpacing = 20
+tlLayout.HorizontalSpacing = 20
+tlLayout.CellSizeMode = CellSizeMode.EqualToMaxNode
+tlLayout.Orientation = Orientation.Horizontal
+tlLayout.MaxSize = New SizeF(500, 600)
+
+Me.diagram1.LayoutManager = tlLayout
+Me.diagram1.LayoutManager.UpdateLayout(Nothing).AttachModel(model1)
+
+documentExplorer1.Dock = DockStyle.Right
+documentExplorer1.BackColor = System.Drawing.SystemColors.Window
+documentExplorer1.Location = New System.Drawing.Point(0, 377)
+documentExplorer1.Size = New System.Drawing.Size(200, 100)
+documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+documentExplorer1.ShowNodeToolTips = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -123,7 +123,7 @@ Programmatically, the table layout manager instance should be created with the r
 
 
 
-### Directed Tree Layout Manager
+## Directed Tree Layout Manager
 
 The Directed Tree Layout Manager implements a layout manager for arranging nodes in a tree-like structure. This Layout manager can be applied to any diagram that is composed of a directed tree graph with unique root and child nodes. The layout manager lets you orient the tree in any direction around the root and can be used for creating arrangements such as top-to-bottom vertical trees, bottom-to-top vertical trees, right-to-left horizontal trees, left-to-right horizontal trees, angular trees etc. 
 
@@ -164,16 +164,16 @@ Programmatically, the directed tree layout manager instance is created with the 
 {% tabs %}
 {% highlight c# %}
 
-    DirectedTreeLayoutManager directedLayout = new  DirectedTreeLayoutManager(diagram1.Model,0, 20, 20);
-    diagram1.LayoutManager = directedLayout;
-    diagram1.LayoutManager.UpdateLayout(null);
+DirectedTreeLayoutManager directedLayout = new  DirectedTreeLayoutManager(diagram1.Model,0, 20, 20);
+diagram1.LayoutManager = directedLayout;
+diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    DirectedTreeLayoutManager directedLayout = new  DirectedTreeLayoutManager(diagram1.Model,0, 20, 20);
-    diagram1.LayoutManager = directedLayout;
-    diagram1.LayoutManager.UpdateLayout(null);
+DirectedTreeLayoutManager directedLayout = new  DirectedTreeLayoutManager(diagram1.Model,0, 20, 20);
+diagram1.LayoutManager = directedLayout;
+diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
 {% endtabs %}
@@ -205,7 +205,7 @@ Sample Diagrams are as follows.
 
 
 
-### Radial Tree Layout Manager
+## Radial Tree Layout Manager
 
 The Radial Tree Layout Manager is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The RadialTreeLayoutManager arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. 
 
@@ -244,16 +244,16 @@ Programmatically, the radial tree layout manager instance is created with the re
 {% tabs %}
 {% highlight c# %}
 
-    RadialTreeLayoutManager radialLayout= new RadialTreeLayoutManager(model1, 0, 20, 20);
-    this.diagram1.LayoutManager=radialLayout; 
-    this.diagram1.LayoutManager.UpdateLayout(null);
+RadialTreeLayoutManager radialLayout= new RadialTreeLayoutManager(model1, 0, 20, 20);
+this.diagram1.LayoutManager=radialLayout; 
+this.diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim radialLayout As New RadialTreeLayoutManager(model1, 0, 20, 20)
-    Me.diagram1.LayoutManager = radialLayout
-    Me.diagram1.LayoutManager.UpdateLayout(Nothing)
+Dim radialLayout As New RadialTreeLayoutManager(model1, 0, 20, 20)
+Me.diagram1.LayoutManager = radialLayout
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
 {% endhighlight %}
 {% endtabs %}
@@ -272,7 +272,7 @@ Sample Diagram is as follows.
 
 
 
-### Symmetric Layout Manager
+## Symmetric Layout Manager
 
 The Symmetric layout manager arranges all the nodes in a symmetric fashion using the vertical input distance, which specifies the distance between the nodes.
 
@@ -313,22 +313,22 @@ Programmatically, the symmetric layout manager instance is created with the resp
 {% tabs %}
 {% highlight c# %}
 
-    SymmetricLayoutManager symmetricLayout = new SymmetricLayoutManager(diagram1.Model,100);
-    symmetricLayout.SpringFactor = 0.442;
-    symmetricLayout.SpringLength = 100;
-    symmetricLayout.MaxIteration = 500;
-    this.diagram1.LayoutManager = symmetricLayout;
-    this.diagram1.LayoutManager.UpdateLayout(null);
+SymmetricLayoutManager symmetricLayout = new SymmetricLayoutManager(diagram1.Model,100);
+symmetricLayout.SpringFactor = 0.442;
+symmetricLayout.SpringLength = 100;
+symmetricLayout.MaxIteration = 500;
+this.diagram1.LayoutManager = symmetricLayout;
+this.diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim symmetricLayout As New SymmetricLayoutManager(diagram1.Model, 100)
-    symmetricLayout.SpringFactor = 0.442
-    symmetricLayout.SpringLength = 100
-    symmetricLayout.MaxIteration = 500
-    Me.diagram1.LayoutManager = symmetricLayout
-    Me.diagram1.LayoutManager.UpdateLayout(Nothing)
+Dim symmetricLayout As New SymmetricLayoutManager(diagram1.Model, 100)
+symmetricLayout.SpringFactor = 0.442
+symmetricLayout.SpringLength = 100
+symmetricLayout.MaxIteration = 500
+Me.diagram1.LayoutManager = symmetricLayout
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
 {% endhighlight %}
 {% endtabs %}
@@ -347,7 +347,7 @@ Sample Diagrams are as follows.
 
 
 
-### Hierarchical Layout Manager
+## Hierarchical Layout Manager
 
 Hierarchical layout manager arranges the nodes in a hierarchical fashion depending on the parent-child relationship. Unlike the directed layout, more than one parent item can be defined for a child.
 
@@ -412,7 +412,7 @@ Sample diagrams are as follows:
 
 
 
-### Graph Layout Manager 
+## Graph Layout Manager 
 
 The GraphLayoutManager is an abstract base class that can be used for implementing layout managers for diagrams composed primarily of nodes forming connected graphs. The GraphLayoutManager implements the infrastructure for initializing, validating and creating the diagram graph by enumerating the diagram model's child nodes. It also enables positioning diagram nodes using the layout strategies provided by specialized directed tree layout managers that derive from it.
 
@@ -438,38 +438,38 @@ Programmatically, it is implemented as follows.
 {% tabs %}
 {% highlight c# %}
 
-    RadialTreeLayoutManager dtlm = new RadialTreeLayoutManager(this.diagram1.Model, 0, 20, 20);
-    dtlm.PreferredLayout += new PreferredLayoutEventHandler(dtlm_PreferredLayout);
-    this.diagram1.LayoutManager = dtlm;
-    this.diagram1.LayoutManager.UpdateLayout(null);
-    this.diagram1.UpdateView();
-    
-    private void dtlm_PreferredLayout(object sender, PreferredLayoutEventArgs evtArgs)
-    {
-       if (evtArgs.IsGraphUnderLayout)
-       {
-            evtArgs.ResizeGraphNodes = false;
-            evtArgs.Location = new PointF(150,150);
-            evtArgs.Size = new SizeF(100, 100);
-       }
-    }
+RadialTreeLayoutManager dtlm = new RadialTreeLayoutManager(this.diagram1.Model, 0, 20, 20);
+dtlm.PreferredLayout += new PreferredLayoutEventHandler(dtlm_PreferredLayout);
+this.diagram1.LayoutManager = dtlm;
+this.diagram1.LayoutManager.UpdateLayout(null);
+this.diagram1.UpdateView();
+
+private void dtlm_PreferredLayout(object sender, PreferredLayoutEventArgs evtArgs)
+{
+if (evtArgs.IsGraphUnderLayout)
+{
+evtArgs.ResizeGraphNodes = false;
+evtArgs.Location = new PointF(150,150);
+evtArgs.Size = new SizeF(100, 100);
+}
+}
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim dtlm As New RadialTreeLayoutManager(Me.diagram1.Model, 0, 20, 20)
-    AddHandler dtlm.PreferredLayout, AddressOf dtlm_PreferredLayout
-    Me.diagram1.LayoutManager = dtlm
-    Me.diagram1.LayoutManager.UpdateLayout(Nothing)
-    Me.diagram1.UpdateView()
-    
-    Private Sub dtlm_PreferredLayout(ByVal sender As Object, ByVal evtArgs As PreferredLayoutEventArgs)
-        If evtArgs.IsGraphUnderLayout Then
-            evtArgs.ResizeGraphNodes = False
-            evtArgs.Location = New PointF(150, 150)
-            evtArgs.Size = New SizeF(100, 100)
-        End If
-    End Sub
+Dim dtlm As New RadialTreeLayoutManager(Me.diagram1.Model, 0, 20, 20)
+AddHandler dtlm.PreferredLayout, AddressOf dtlm_PreferredLayout
+Me.diagram1.LayoutManager = dtlm
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
+Me.diagram1.UpdateView()
+
+Private Sub dtlm_PreferredLayout(ByVal sender As Object, ByVal evtArgs As PreferredLayoutEventArgs)
+If evtArgs.IsGraphUnderLayout Then
+evtArgs.ResizeGraphNodes = False
+evtArgs.Location = New PointF(150, 150)
+evtArgs.Size = New SizeF(100, 100)
+End If
+End Sub
 
 {% endhighlight %}
 {% endtabs %}
@@ -481,7 +481,7 @@ The following is a sample Diagram showing GraphLayoutManager:
 ![](Layout-Management_images/Layout-Management_img13.jpeg)
 
 
-### Subgraph Layout Manager 
+## Subgraph Layout Manager 
 
 The SubgraphTreeLayoutManager enables the sub nodes of a diagram layout tree to have an orientation that is distinct from the parent node. The subgraph orientation is specified using a SubgraphPreferredLayout event that the layout manager raises before positioning each set of sub nodes in the graph.
 
@@ -508,31 +508,31 @@ Programmatically, it is implemented as follows.
 {% tabs %}
 {% highlight c# %}
 
-    SubgraphTreeLayoutManager st = new SubgraphTreeLayoutManager(this.diagram1.Model,0, 20, 20);
-    st.SubgraphPreferredLayout += new SubgraphPreferredLayoutEventHandler(st_SubgraphPreferredLayout);
-    this.diagram1.LayoutManager = st;
-    this.diagram1.LayoutManager.UpdateLayout(null);
-    this.diagram1.UpdateView();
-    
-    private void st_SubgraphPreferredLayout(object sender, SubgraphPreferredLayoutEventArgs evtArgs)
-    {
-          evtArgs.ResizeSubgraphNodes=false;
-          evtArgs.RotationDegree=0;
-    }
+SubgraphTreeLayoutManager st = new SubgraphTreeLayoutManager(this.diagram1.Model,0, 20, 20);
+st.SubgraphPreferredLayout += new SubgraphPreferredLayoutEventHandler(st_SubgraphPreferredLayout);
+this.diagram1.LayoutManager = st;
+this.diagram1.LayoutManager.UpdateLayout(null);
+this.diagram1.UpdateView();
+
+private void st_SubgraphPreferredLayout(object sender, SubgraphPreferredLayoutEventArgs evtArgs)
+{
+evtArgs.ResizeSubgraphNodes=false;
+evtArgs.RotationDegree=0;
+}
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim st As New SubgraphTreeLayoutManager(Me.diagram1.Model, 0, 20, 20)
-    AddHandler st.SubgraphPreferredLayout, AddressOf st_SubgraphPreferredLayout
-    Me.diagram1.LayoutManager = st
-    Me.diagram1.LayoutManager.UpdateLayout(Nothing)
-    Me.diagram1.UpdateView()
-    
-    Private Sub st_SubgraphPreferredLayout(ByVal sender As Object, ByVal evtArgs As SubgraphPreferredLayoutEventArgs)
-        evtArgs.ResizeSubgraphNodes = False
-        evtArgs.RotationDegree = 0
-    End Sub
+Dim st As New SubgraphTreeLayoutManager(Me.diagram1.Model, 0, 20, 20)
+AddHandler st.SubgraphPreferredLayout, AddressOf st_SubgraphPreferredLayout
+Me.diagram1.LayoutManager = st
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
+Me.diagram1.UpdateView()
+
+Private Sub st_SubgraphPreferredLayout(ByVal sender As Object, ByVal evtArgs As SubgraphPreferredLayoutEventArgs)
+evtArgs.ResizeSubgraphNodes = False
+evtArgs.RotationDegree = 0
+End Sub
 
 {% endhighlight %}
 {% endtabs %}
@@ -541,7 +541,7 @@ Programmatically, it is implemented as follows.
 
 
 
-### OrgChart Layout Manager  
+## OrgChart Layout Manager  
 
 Event arranges all the nodes in parent-child relationship with the new OrgLineConnector that connects the nodes to get the OrgLayout appearance. The OrgLineConnector is specially designed for connecting the nodes in OrgChartLayoutManager.
 
@@ -576,16 +576,16 @@ Programmatically, the organization layout manager instance should be created wit
 {% tabs %}
 {% highlight c# %}
 
-    OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model,RotateDirection.TopToBottom, 20, 50);
-    this.diagram1.LayoutManager = manager;
-    this.diagram1.LayoutManager.UpdateLayout(null);
+OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model,RotateDirection.TopToBottom, 20, 50);
+this.diagram1.LayoutManager = manager;
+this.diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim manager As New OrgChartLayoutManager(Me.diagram.Model, RotateDirection.TopToBottom, 20, 50)
-    Me.diagram1.LayoutManager = manager
-    Me.diagram1.LayoutManager.UpdateLayout(Nothing)
+Dim manager As New OrgChartLayoutManager(Me.diagram.Model, RotateDirection.TopToBottom, 20, 50)
+Me.diagram1.LayoutManager = manager
+Me.diagram1.LayoutManager.UpdateLayout(Nothing)
 
 {% endhighlight %}
 {% endtabs %}
@@ -614,12 +614,12 @@ As the OrgChartLayout follows a Waterfall model, whenever there is only one chil
 {% tabs %}
 {% highlight c# %}
 
-    OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model, RotateDirection.TopToBottom, 20, 50, LayoutType.Waterfall, 1, true);
+OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model, RotateDirection.TopToBottom, 20, 50, LayoutType.Waterfall, 1, true);
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToBottom, 20, 50,LayoutType.Waterfall, 1, True)
+Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToBottom, 20, 50,LayoutType.Waterfall, 1, True)
 
 {% endhighlight %}
 {% endtabs %}
@@ -634,16 +634,16 @@ For all the Layout Managers supported by Essential Diagram, except _Symmetric an
 {% tabs %}
 {% highlight c# %}
 
-    OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model, RotateDirection.TopToBottom, 20, 50);
-    manager.LeftMargin = 50;
-    manager.TopMargin = 50;
+OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model, RotateDirection.TopToBottom, 20, 50);
+manager.LeftMargin = 50;
+manager.TopMargin = 50;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToBottom, 20, 50)
-    manager.LeftMargin = 50
-    manager.TopMargin = 50
+Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToBottom, 20, 50)
+manager.LeftMargin = 50
+manager.TopMargin = 50
 
 {% endhighlight %}
 {% endtabs %}
