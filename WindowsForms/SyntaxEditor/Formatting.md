@@ -612,7 +612,7 @@ Me.editControl1.WordWrap = True
 
 Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.WrapByChar
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -702,7 +702,7 @@ Me.editControl1.TextAreaWidth = 300
 
 Me.editControl1.WrappedLinesOffset = 10
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -1058,6 +1058,8 @@ Me.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoIndentM
 
 {% endhighlight %}
 
+{% endtabs %}
+
 If Enter is pressed when the AutoIndentMode is set to None, the text is not indented.
 
 ![](Formatting_images/Formatting_img10.png)
@@ -1105,6 +1107,8 @@ this.editcontrol1.EnableSmartInBlockIndent = true;
 Me.editcontrol1.EnableSmartInBlockIndent = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The Auto Indentation characters can also be specified by setting the Indent field to True in the lexem definition of the configuration file, as shown below.
 
@@ -1938,7 +1942,7 @@ this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.
 
 Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Default
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -1966,7 +1970,7 @@ this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.
 
 Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Metro
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -1998,7 +2002,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Blue
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -2030,7 +2034,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Black
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -2062,7 +2066,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Silver
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -2094,7 +2098,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Managed
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -2126,7 +2130,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Blue
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -2158,7 +2162,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Black
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -2190,7 +2194,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Silver
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -2222,7 +2226,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Managed
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 

@@ -47,7 +47,7 @@ this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLa
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.CSharp)
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -106,7 +106,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\DelphiSource.pas")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -141,7 +141,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\XMLSource.xml")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -176,7 +176,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\HTMLSource.html")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -211,7 +211,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBSource.vb")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -246,7 +246,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\SQLSource.sql")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -281,7 +281,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JavaSource.Java")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -316,7 +316,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vb")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -351,7 +351,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JScriptSource.js")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -386,7 +386,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\PowerShell.ps1")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
