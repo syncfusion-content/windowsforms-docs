@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Get the Top, Bottom / Left, or Right Viewable Row and Column Indexes
-
-### Introduction
+# How to get the top, bottom or left, or right viewable row and column indexes
 
 Use the following variables to get the viewable row and column indexes.
 

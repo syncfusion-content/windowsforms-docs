@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Use ColorEdit Control in a Cell and Retrieve its Value
-
-## Introduction
+# How to use ColorEdit control in a cell and retrieve its value
 
 It is simple to use the ColorEdit control to specify a cell's value. Just set the [CellType](/windowsforms/grid/feature-summary#cell-types) property in the cell style to "ColorEdit" and set the text property to an appropriate value.
 

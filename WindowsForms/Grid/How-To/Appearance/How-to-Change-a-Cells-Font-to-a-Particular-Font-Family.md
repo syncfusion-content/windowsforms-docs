@@ -7,18 +7,16 @@ control: Grid
 documentation: ug
 ---
 
-# How to Change a Cell's Font to a Particular Font Family
-
-
-
-## Introduction
+# How to change a cell's font to a particular font family
 
 Use the FaceName property of the font property on the style object for the cell.
 
-
+{% tabs %}
 {% highlight c# %}
 gridControl1[rowIndex, colIndex].Font.Facename = "Arial";
 {% endhighlight  %}
+{% endtabs %}
+
 You can also change several font properties in one statement by using font class’s SetXXX method which, will return a reference to the font object. 
 
 {% tabs %}

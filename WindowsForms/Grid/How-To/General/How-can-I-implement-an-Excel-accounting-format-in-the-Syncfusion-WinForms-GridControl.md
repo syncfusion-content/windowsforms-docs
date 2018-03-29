@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How can I implement an Excel accounting format in the Syncfusion WinForms GridControl?
+# How can i implement an Excel accounting format in the Syncfusion WinForms GridControl
 
 We can achieve this behavior by setting the cell type to Currency. The currency symbol is removed from the cell data with the following code:
 
@@ -32,15 +32,11 @@ The CurrencyDecimalDigits property is used and the digits after the decimal poin
 
 this.gridControl1[i, j].CurrencyEdit.CurrencyDecimalDigits = 2;
 
-
 {% endhighlight %}
-
-
 
 {% highlight vb %}
 
 Me.gridControl1[i, j].CurrencyEdit.CurrencyDecimalDigits = 2;
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -52,13 +48,11 @@ By default the contents are left-aligned, so the horizontal alignment is set to 
 
 this.gridControl1.ColStyles[j].HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
 
-
 {% endhighlight %}
 
 {% highlight vb %}
 
 Me.gridControl1.ColStyles[j].HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-
 
 {% endhighlight %}
 {% endtabs %}

@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Set the Height of a Row
-
-## Introduction
+# How to set the height of a row
 
 Changing a row's height is simple whether you are using the designer or code. From the designer, use RowHeightEntries collection. To explicitly set height of the particular row from code, use GridControl.RowHeights collection.
 

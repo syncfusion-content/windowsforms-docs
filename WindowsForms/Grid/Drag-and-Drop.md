@@ -61,7 +61,7 @@ Me.gridControl2.AllowDrop = True
 
 N> OLE Drag Drop operation is also possible between GridControl and any other text editors.
 
-## Column Ordering
+## Column ordering
 
 In GridControl, the drag drop functionality is available in between the columns of the Grid. This can be achieved by setting the [ControllerOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControllerOptions.html#) property as `DragColumnHeader`.
 
@@ -102,6 +102,7 @@ void gridControl1_QueryAllowDragColumnHeader(object sender, GridQueryDragColumnH
 {
 
 // Prevents dragging in 2nd column.
+
 if (e.Column == 2)
 e.AllowDrag = false;
 
@@ -118,7 +119,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing Drag and Drop
+## Customizing drag and drop
 
 It is possible to control the clipboard format of the data that is being be dragged by using the [Model.Options.DragDropDropTargetFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~DragDropDropTargetFlags.html#). Check the enumeration [GridDragDropFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridDragDropFlags_members.html#) to see the full set of options that are supported.
 
@@ -178,7 +179,7 @@ void gridControl2_DragOver(object sender, DragEventArgs e)
 AddHandler gridControl2.DragOver, AddressOf gridControl2_DragOver
 Private Sub gridControl2_DragOver(ByVal sender As Object, ByVal e As DragEventArgs)
 
-' Contents that are been dragged over gridControl2 will be copied.
+'Contents that are been dragged over gridControl2 will be copied.
 e.Effect = DragDropEffects.Copy
 End Sub
 {% endhighlight %}
@@ -187,7 +188,7 @@ End Sub
 ![](DragandDrop_images/DragandDrop_img9.jpeg)
 
 
-### Prevent Drag and Drop
+### Preventing drag and drop
 
 The contents alone can be prevented while dropping by setting the [Effect](https://msdn.microsoft.com/en-us/library/system.windows.forms.drageventargs.effect.aspx#) property as `None`.
 
@@ -241,7 +242,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Drag and Drop for Merged Cells
+### Dragging and dropping for merged cells
 
 Drag Drop can also be done for merged cells but while dropping the contents to another location, the merging of cells operation will be canceled. To overcome this problem make use of the [QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#)  event and add the merged range in the selection property.
 
@@ -252,13 +253,13 @@ void gridControl1_QueryCanOleDragRange(object sender, GridQueryCanOleDragRangeEv
 {
     if (e.Range.Left != e.Range.Right || e.Range.Top!=e.Range.Bottom)
     this.gridControl1.Selections.Add(e.Range);
-
 }
 {% endhighlight %}
 
 {% highlight vb %}
 'QueryCanOleDragRange event.
 Private Sub gridControl1_QueryCanOleDragRange(ByVal sender As Object, ByVal e As GridQueryCanOleDragRangeEventArgs)
+
 If e.Range.Left <> e.Range.Right OrElse e.Range.Top<>e.Range.Bottom Then
 Me.gridControl1.Selections.Add(e.Range)
 End If
@@ -293,7 +294,7 @@ void Model_QueryDragDropMoveClearCells(object sender, CancelEventArgs e)
 AddHandler gridControl1.Model.QueryDragDropMoveClearCells, AddressOf Model_QueryDragDropMoveClearCells
 Private Sub Model_QueryDragDropMoveClearCells(ByVal sender As Object, ByVal e As CancelEventArgs)
 
-' Cancels the Clearing of Cells in the Grid.
+'Cancels the Clearing of Cells in the Grid.
 e.Cancel = True
 End Sub
 {% endhighlight %}
