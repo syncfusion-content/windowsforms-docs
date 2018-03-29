@@ -94,6 +94,8 @@ this.CaptionBarHeight = 50;
 
 Me. CaptionBarHeight = 50
 
+{% endhighlight %}
+
 ![](Caption-Settings_images/CaptionBarHeight.png)
 
 ## Help Button Support
