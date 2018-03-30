@@ -7,7 +7,7 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to Efficiently Customize Child Table/Group using Custom Engine.
+# How to Efficiently Customize Child Table/Group using Custom Engine
 
 When customizing GridChildTable/GridGroup by deriving GridChildTable/GridGroup in the custom engine, OnInitializeVisibleCounters method and OnEnsureInitialized method must also be overridden along with other overrides. Otherwise, GridGroup calls into GridGroup extend methods and sometimes bypasses methods like IsChildVisible that you have overridden.
 

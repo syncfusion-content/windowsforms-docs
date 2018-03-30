@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to trigger an event when the ComBox DropDownList has null value or has no datasource bound to it?
+# How to Trigger an Event when the ComBox DropDownList has Null Value or has no Datasource Bound to it
 
 If a ComboBox is neither bound to any datasource nor has list items, it can be notified to the user by clicking on it. The notification message that the user wants to display can be given as shown in the following TableControlCurrentCellShowingDropDown event.  
 

@@ -7,13 +7,12 @@ control: GridGrouping
 documentation: ug
 ---
 
-# What are the various ExpressionColumn options
+# What are the Various ExpressionColumn Options
 
 The following code illustrates various expression column options.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 //1. Sets the operators in the expression.
 
@@ -24,22 +23,16 @@ The following code illustrates various expression column options.
 // *, / ,+, - ,&lt;, &gt;, =, &lt;=, &gt;=,match, like, in, between ,or, and 
 
 // * operator used here.
-
 ExpressionFieldDescriptor exp= new ExpressionFieldDescriptor("Expr1","[ColumnName] *2", "System.Int32");
-
-
 
 //2. Sets the output/view type.
 
 //Output in double type.
-
 ExpressionFieldDescriptor exp= new ExpressionFieldDescriptor("Expr1","[ColumnName] *2", "System.Double");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' 1. Sets the operators in the expression. 
 
@@ -52,14 +45,10 @@ ExpressionFieldDescriptor exp= new ExpressionFieldDescriptor("Expr1","[ColumnNam
 ' *, / ,+, - ,&lt;, &gt;, =, &lt;=, &gt;=,match, like, in, between ,or, and 
 
 ' * operator used here.
-
 Dim exp As ExpressionFieldDescriptor = New ExpressionFieldDescriptor("Expr1", "[Id] *2", "System.Int32")
 
-
-
 ' 2. Sets the output in double type.
-
 Dim exp2 As ExpressionFieldDescriptor = New ExpressionFieldDescriptor("Expr2", "[Expr1] *2", "System.Double")
 
 {% endhighlight %}
-
+{% endtabs %}
