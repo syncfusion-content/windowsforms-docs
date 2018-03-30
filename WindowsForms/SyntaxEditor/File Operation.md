@@ -469,6 +469,7 @@ Description</th></tr>
 <td>
 AllowDrop</td><td>
 Specifies whether drag and drop operations are allowed for control</td></tr>
+<tr>
 <td>
 InsertDroppedFileIntoText</td><td>
 Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content. When this property is set to 'False', the current file is closed, and the dropped outer file is opened.</td></tr>
@@ -477,6 +478,8 @@ Specifies whether the outer file dragged and dropped onto the EditControl should
 ShowFileDropNotification</td><td>
 Specifies whether the Notification message is to be displayed when the outer file is dragged and dropped onto the EditControl</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -605,7 +608,7 @@ Me.editControl1.SaveAsRTF("testRTF.rtf")
 
 Me.editControl1.SaveAsHTML("testHTML.html")
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -692,7 +695,7 @@ Me.editControl1.GetTextAsHTML()
 
 Me.editControl1.GetTextAsHTML(coordinatePoint1, coordinatePoint2)
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
