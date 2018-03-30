@@ -469,6 +469,7 @@ Description</th></tr>
 <td>
 AllowDrop</td><td>
 Specifies whether drag and drop operations are allowed for control</td></tr>
+<tr>
 <td>
 InsertDroppedFileIntoText</td><td>
 Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content. When this property is set to 'False', the current file is closed, and the dropped outer file is opened.</td></tr>

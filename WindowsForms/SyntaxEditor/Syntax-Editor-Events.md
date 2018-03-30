@@ -791,7 +791,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets a value indicating whether the event should be canceled</td></tr>
+Specifies a value indicating whether the event should be canceled</td></tr>
 </table>
 
 {% tabs %}
@@ -2279,7 +2279,7 @@ Rectangle that represents an object which has this tooltip</td></tr>
 <tr>
 <td>
 Image</td><td>
-Gets / sets image associated with the tooltip</td></tr>
+Specifies image associated with the tooltip</td></tr>
 <tr>
 <td>
 Line</td><td>
