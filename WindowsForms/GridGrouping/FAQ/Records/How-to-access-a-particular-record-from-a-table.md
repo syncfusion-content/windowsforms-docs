@@ -19,7 +19,7 @@ Record r=this.gridGroupingControl1.Table.Records[RecordIndex];
 
 {% endhighlight %}
 
-{% highlight vbn %}
+{% highlight vb %}
 
 'Uses the record Index to access a particular record from a table.
 Dim r As Record = Me.gridGroupingControl1.Table.Records(RecordIndex)
