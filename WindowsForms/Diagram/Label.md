@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Label | Windows Forms | Syncfusion
 description: Label

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Connectors-or-Links | Windows Forms | Syncfusion
 description: connectors or links

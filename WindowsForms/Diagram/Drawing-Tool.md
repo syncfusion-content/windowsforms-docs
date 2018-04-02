@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Drawing-Tool | Windows Forms | Syncfusion
 description: Drawing Tool

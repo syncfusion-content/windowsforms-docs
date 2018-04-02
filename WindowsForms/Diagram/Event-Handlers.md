@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Event-Handlers | Windows Forms | Syncfusion
 description: Event Handlers

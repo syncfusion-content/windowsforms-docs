@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Guides | Windows Forms | Syncfusion
 description: Guides

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Undo-or-Redo | Windows Forms | Syncfusion
 description: Undo or Redo
