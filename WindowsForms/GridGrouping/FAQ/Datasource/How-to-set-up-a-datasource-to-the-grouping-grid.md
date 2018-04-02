@@ -19,7 +19,7 @@ this.gridGroupingControl1.DataSource = dataTable;
 
 {% endhighlight %}
 
-{% highlight vbn %}
+{% highlight vb %}
 
 'Assigns a datasource to the GroupingGrid.
 Me.gridGroupingControl1.DataSource = dataTable
