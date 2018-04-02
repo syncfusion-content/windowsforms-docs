@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Touch-Support | Windows Forms | Syncfusion
 description: Touch Support

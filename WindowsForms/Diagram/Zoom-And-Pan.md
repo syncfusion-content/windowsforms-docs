@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Zoom-and-Pan | Windows Forms | Syncfusion
 description: Zoom and Pan

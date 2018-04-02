@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scrolling | Windows Forms | Syncfusion
 description: Scrolling

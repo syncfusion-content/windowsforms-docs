@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Layout-Management | Windows Forms | Syncfusion
 description: layout management
