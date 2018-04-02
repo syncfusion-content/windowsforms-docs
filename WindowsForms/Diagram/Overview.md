@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Overview | Windows Forms | Syncfusion
 description: overview

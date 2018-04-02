@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Rulers | Windows Forms | Syncfusion
 description: Rulers

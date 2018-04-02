@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Context-Menu | Windows Forms | Syncfusion
 description: Context Menu
