@@ -25,7 +25,7 @@ this.gridGroupingControl1.TableDescriptor.SortedColumns.RemoveAt(index);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
  ' Removes all the sorting associated.
 Me.gridGroupingControl1.TableDescriptor.SortedColumns.Clear()
