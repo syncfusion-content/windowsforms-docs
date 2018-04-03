@@ -17,19 +17,19 @@ The following list of assemblies should be added as reference to use the EditCon
 
 <table>
 <tr>
-<td>
+<th>
 {{'**Required assemblies**'| markdownify }}
-</td>
-<td>
+</th>
+<th>
 {{'**Description**'| markdownify }}
-</td>
+</th>
 </tr>
 <tr>
 <td>
 Syncfusion.Shared.Base.dll
 </td>
 <td>
-Syncfusion.Shared.Base contains style related properties of Edit Control and various editor controls.
+Syncfusion.Shared.Base contains style related properties of Edit Control and various editor controls
 </td>
 </tr>
 <tr>
@@ -37,7 +37,7 @@ Syncfusion.Shared.Base contains style related properties of Edit Control and var
 Syncfusion.Tools.Windows.dll
 </td>
 <td>
-Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the Edit Control.
+Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the Edit Control
 </td>
 </tr>
 <tr>
@@ -45,26 +45,26 @@ Syncfusion.Tools.Windows contains classes that handles all UI operations, fundam
 Syncfusion.Edit.Windows.dll
 </td>
 <td>
-Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of Edit control.
+Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of Edit control
 </td>
 </tr>
 </table>
 
-## Creating simple application with EditControl
+# Creating simple application with EditControl
 
 You can create the Windows Forms application with EditControl as follows:
 
 1. [Creating the project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Loading file](#loading-file)
+4. [Loading a file into Document](#loading-a-file-into-document)
 5. [Syntax Highlighting](#syntax-highlighting)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the EditControl.
 
-### Adding control via designer
+## Adding control via designer
 
 The EditControl can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -74,7 +74,7 @@ The EditControl can be added to the application by dragging it from the toolbox 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-### Adding control manually in code
+## Adding control manually in code
 
 To add control manually in C#, follow the given steps:
 
@@ -147,7 +147,7 @@ The following illustration shows Edit Control was created.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-### Loading file
+## Loading a file into Document
 
 `LoadFile` method of Edit Control helps to loads the content of any desired file into the Edit Control, instead of typing the code in it.
 
@@ -172,14 +172,15 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-### Syntax Highlighting
+## Syntax highlighting
 
 The Edit Control provides built-in support for a procedural, markup and SQL languages and facilitates the users to provide custom language configurations. By using the `ApplyConfiguration` method, we can set the Edit Control to use any of the pre-defined configuration settings.
 
-**Built in Syntax Highlighting languages**
+**Built-in syntax highlighting languages**
 
 The EditControl has a built-in syntax highlighting support for the following languages.
 
+  * C
   * C#
   * Delphi
   * XML
@@ -200,7 +201,7 @@ The following code example illustrates the C# configuration settings in Edit Con
 
 // Considering configuration settings for C# as an example. Using the KnownLanguages enumerator.
 
-this.editControl1.ApplyConfiguration("C#");
+this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
 {% endhighlight %}
 
@@ -209,7 +210,7 @@ this.editControl1.ApplyConfiguration("C#");
 
 ' Considering configuration settings for C# as an example. Using the KnownLanguages enumerator.
 
-Me.editControl1.ApplyConfiguration("C#")
+Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 {% endhighlight %}
 
@@ -217,7 +218,7 @@ Me.editControl1.ApplyConfiguration("C#")
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-**Custom Language Configuration**
+**Custom language configuration**
 
 Edit Control provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the Edit Control by using the `Configurator.Open` and `ApplyConfiguration` methods, as shown in the below code snippet.
 
