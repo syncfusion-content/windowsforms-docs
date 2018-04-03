@@ -70,7 +70,7 @@ Properties
 <table>
 <tr>
 <th>
-Property</th><th
+Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -174,14 +174,14 @@ Here, setting the AccelerateScrolling to Fast, will increase the scroll speed wh
 {% tabs %}
 {% highlight c# %}
 
-	this.diagram1.AccelerateScrolling = Syncfusion.Windows.Forms.AccelerateScrollingBehavior.Fast;
-	this.diagram1.AllowIncreaseSmallChange = true;
+this.diagram1.AccelerateScrolling = Syncfusion.Windows.Forms.AccelerateScrollingBehavior.Fast;
+this.diagram1.AllowIncreaseSmallChange = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	Me.diagram1.AccelerateScrolling = Syncfusion.Windows.Forms.AccelerateScrollingBehavior.Fast
-	Me.diagram1.AllowIncreaseSmallChange = True
+Me.diagram1.AccelerateScrolling = Syncfusion.Windows.Forms.AccelerateScrollingBehavior.Fast
+Me.diagram1.AllowIncreaseSmallChange = True
 
 {% endhighlight %}
 {% endtabs %}
