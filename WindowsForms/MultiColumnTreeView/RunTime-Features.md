@@ -18,192 +18,118 @@ MultiColumnTreeViewAdv control provides option for displaying context menu on ri
 
 1.  Declare and initialize a context menu.
 
-    ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+// Create and initialize a context Menu required
+private System.Windows.Forms.ContextMenu contextMenu1;
+this.contextMenu1 = new System.Windows.Forms.ContextMenu();
 
+//Associate the context menu with the TreeView control
+this.multiColumnTreeView1.ContextMenu = this.contextMenu1;
 
-		// Create and initialize a context Menu required
+{% endhighlight %}
 
-		private System.Windows.Forms.ContextMenu contextMenu1;
+{% highlight vb %}
 
-		this.contextMenu1 = new System.Windows.Forms.ContextMenu();
+' Create and initialize a context Menu required
+Private WithEvents contextMenu1 As System.Windows.Forms.ContextMenu
+Me.contextMenu1 = New System.Windows.Forms.ContextMenu()
 
+'Associate the context menu with the TreeView control
+Me.multiColumnTreeView1.ContextMenu = Me.contextMenu1
 
-
-		//Associate the context menu with the TreeView control
-
-		this.multiColumnTreeView1.ContextMenu = this.contextMenu1;
-
-    ~~~
-    {:.prettyprint }
-
-    ~~~ vbnet
-
-		' Create and initialize a context Menu required
-
-		Private WithEvents contextMenu1 As System.Windows.Forms.ContextMenu
-
-		Me.contextMenu1 = New System.Windows.Forms.ContextMenu()
-
-
-
-		'Associate the context menu with the TreeView control
-
-		Me.multiColumnTreeView1.ContextMenu = Me.contextMenu1
-
-    ~~~
-    {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 2. Add the context menu items.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-		private System.Windows.Forms.MenuItem editItem;
+private System.Windows.Forms.MenuItem editItem;
+this.editItem = new System.Windows.Forms.MenuItem();
 
-		this.editItem = new System.Windows.Forms.MenuItem();
+//Add context Menu items
+this.contextMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.editItem});
 
+//Pop the context Menu
+this.contextMenu1.Popup += new System.EventHandler(this.contextMenu1_Popup);
 
+//Set the context menu items
+this.editItem.Index = 0;
+this.editItem.Text = "&Edit";
+this.editItem.Click += new System.EventHandler(this.editItem_Click);
 
-		//Add context Menu items
+{% endhighlight %}
 
-		this.contextMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.editItem});
+{% highlight vb %}
 
+Private WithEvents editItem As System.Windows.Forms.MenuItem
+Me.editItem = New System.Windows.Forms.MenuItem()
 
+'Add context Menu items
+Me.contextMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.editItem})
 
-		//Pop the context Menu
+'Set the context Menu items
+Me.editItem.Index = 0
+Me.editItem.Text = "&Edit"
 
-		this.contextMenu1.Popup += new System.EventHandler(this.contextMenu1_Popup);
-
-
-
-		//Set the context menu items
-
-		this.editItem.Index = 0;
-
-		this.editItem.Text = "&Edit";
-
-		this.editItem.Click += new System.EventHandler(this.editItem_Click);
-
-   ~~~
-   {:.prettyprint }
- 
-   ~~~ vbnet
-
-
-		Private WithEvents editItem As System.Windows.Forms.MenuItem
-
-		Me.editItem = New System.Windows.Forms.MenuItem()
-
-
-
-		'Add context Menu items
-
-		Me.contextMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.editItem})
-
-
-
-		'Set the context Menu items
-
-		Me.editItem.Index = 0
-
-		Me.editItem.Text = "&Edit"
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 3. Defining context menu pop-up.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+// Declared to NULL if the right click is outside the node area .
+private TreeNodeAdv rightMouseDownNodeCached = null;
 
-
-		// Declared to NULL if the right click is outside the node area .
-
-		private TreeNodeAdv rightMouseDownNodeCached = null;
-
-
-
-		// Context menu pop up
-
-		private void contextMenu1_Popup(object sender, System.EventArgs e)
-
-		{
-
-		this.rightMouseDownNodeCached = this.multiColumnTreeView1.RMouseDownNode;
-
-		// This will be null if the user clicked in the empty portion of the tree.
-
-		if(this.multiColumnTreeView1.RMouseDownNode == null)
-
-		{
-
+// Context menu pop up
+private void contextMenu1_Popup(object sender, System.EventArgs e)
+{
+	this.rightMouseDownNodeCached = this.multiColumnTreeView1.RMouseDownNode;
+// This will be null if the user clicked in the empty portion of the tree.
+	if(this.multiColumnTreeView1.RMouseDownNode == null)
+	{
 		this.copyItem.Visible = false;
-
 		this.cutItem.Visible = false;
-
 		this.editItem.Visible = false;
-
-		}
-
-		else
-
-		{
-
+    }
+    else
+	{
 		this.copyItem.Visible = true;
-
-		this.cutItem.Visible = true;
-
+    	this.cutItem.Visible = true;
 		this.editItem.Visible = true;
+	}
+}
 
-		}
+{% endhighlight %}
 
-		}
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+' Declared to NULL if the right click is outside the node area .
+Private rightMouseDownNodeCached As TreeNodeAdv =  Nothing
 
-   ~~~ vbnet
+' Context menu Popup
+Private Sub contextMenu1_Popup(ByVal sender As Object, ByVal e As System.EventArgs) Handles contextMenu1.Popup
+Me.rightMouseDownNodeCached = Me.multiColumnTreeView1.RMouseDownNode
 
+' This will be null if the user clicked in the empty portion of the tree.
+If Me.multiColumnTreeView1.RMouseDownNode Is Nothing Then
+Me.copyItem.Visible = False
+Me.cutItem.Visible = False
+Me.editItem.Visible = False
+Else
+Me.copyItem.Visible = True
+Me.cutItem.Visible = True
+Me.editItem.Visible = True
+End If
+End Sub
 
-
-		' Declared to NULL if the right click is outside the node area .
-
-		Private rightMouseDownNodeCached As TreeNodeAdv =  Nothing
-
-
-
-		' Context menu Popup
-
-		Private Sub contextMenu1_Popup(ByVal sender As Object, ByVal e As System.EventArgs) Handles contextMenu1.Popup
-
-		Me.rightMouseDownNodeCached = Me.multiColumnTreeView1.RMouseDownNode
-
-		' This will be null if the user clicked in the empty portion of the tree.
-
-		If Me.multiColumnTreeView1.RMouseDownNode Is Nothing Then
-
-		Me.copyItem.Visible = False
-
-		Me.cutItem.Visible = False
-
-		Me.editItem.Visible = False
-
-		Else
-
-		Me.copyItem.Visible = True
-
-		Me.cutItem.Visible = True
-
-		Me.editItem.Visible = True
-
-		End If
-
-		End Sub
-
-   ~~~
-   {:.prettyprint }
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](RunTime-Features_images/RunTime-Features_img2.png)
 
@@ -232,68 +158,45 @@ EndEdit</td><td>
 Forces to end the editing of the selected node. It saves or cancels the editing of the selected node based on the bool value passed as parameter.true - Cancels the editing without saving.false - Saves the changes.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Edits the Selected node
-
 this.multiColumnTreeView1.BeginEdit();
-
-
 
 //Edits the Specified node
 
 //Context menu item's click events
-
 private void editItem_Click(object sender, System.EventArgs e)
-
 {
-
-if(this.rightMouseDownNodeCached != null)
-
+    if(this.rightMouseDownNodeCached != null)
 // You can also alternatively turn on F2 label editing for all nodes using the LabelEdit property of the tree.
-
-this.multiColumnTreeView1.BeginEdit(this.rightMouseDownNodeCached);
-
+    this.multiColumnTreeView1.BeginEdit(this.rightMouseDownNodeCached);
 }
-
-
 
 this.multiColumnTreeView1.EndEdit(false);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Edits the Selected node
-
 Me.multiColumnTreeView1.BeginEdit()
-
-
 
 'Edits the Specified node
 
 'Context menu item's click events
-
 Private  Sub editItem_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
 If Not Me.rightMouseDownNodeCached Is Nothing Then
 
 'You can also alternatively turn on F2 label editing for all nodes using the LabelEdit property of the tree.
-
 Me.multiColumnTreeView1.BeginEdit(Me.rightMouseDownNodeCached)
-
 End If
-
 End Sub
-
 Me.multiColumnTreeView1.EndEdit(False)
 
 {% endhighlight %}
+{% endtabs %}
 
 A sample which includes the Context Menu feature is available in the below installation path.
 
@@ -338,19 +241,19 @@ VerticalThumbTrack</td><td>
 Specifies if the control should scroll together with the scrollbar, when the user is dragging a vertical scrollbar thumb.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.multiColumnTreeView1.ScrollTipFormat = "Position {0}";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.multiColumnTreeView1.ScrollTipFormat = "Position {0}"
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ### Scrolling using Mouse
 
@@ -415,23 +318,21 @@ FillSplitterPane</td><td>
 Provides support for using the control inside dynamic splitter window and sharing the scrollbars with the parent window.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.multiColumnTreeView1.AllowIncreaseSmallChange = true;
-
 this.multiColumnTreeView1.FillSplitterPane = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.multiColumnTreeView1.AllowIncreaseSmallChange = True
-
 Me.multiColumnTreeView1.FillSplitterPane = True
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 Scrolling Events
@@ -469,19 +370,19 @@ HelpText</td><td>
 Indicates the help text of the node.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 treeNodeAdv9.HelpText = "ToolTip for TreeView";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 TreeNodeAdv9.HelpText = "ToolTip for TreeView"
 
 {% endhighlight %}
-
+{% endtabs %}
 
 N> Context Menu, Hot Tracking and Tooltip features can be applied only to the nodes in the first column.
 
