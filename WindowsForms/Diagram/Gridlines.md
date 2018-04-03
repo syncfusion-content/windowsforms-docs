@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gridlines | Windows Forms | Syncfusion
-description: Diagram Grid  
+description: Gridlines  
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -75,13 +75,13 @@ Specifies whether the grid is visible. It accepts Boolean value (true or false).
 {% tabs %}
 {% highlight c# %}
 
-	diagram1.View.Grid.GridStyle = GridStyle.Line;
-	diagram1.View.Grid.DashStyle=System.Drawing.Drawing2D.DashStyle.Dot;
-	diagram1.View.Grid.Color = Color.LightGray            
-	diagram1.View.Grid.VerticalSpacing = 15;
-	diagram1.View.Grid.HorizontalSpacing = 15;
-	diagram1.View.Grid.Visible = false;
-	diagram1.View.Grid.SnapToGrid = true;
+diagram1.View.Grid.GridStyle = GridStyle.Line;
+diagram1.View.Grid.DashStyle=System.Drawing.Drawing2D.DashStyle.Dot;
+diagram1.View.Grid.Color = Color.LightGray            
+diagram1.View.Grid.VerticalSpacing = 15;
+diagram1.View.Grid.HorizontalSpacing = 15;
+diagram1.View.Grid.Visible = false;
+diagram1.View.Grid.SnapToGrid = true;
 
 {% endhighlight %}
 {% endtabs %}

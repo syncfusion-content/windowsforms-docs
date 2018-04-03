@@ -10,26 +10,26 @@ documentation: ug
 
 # Drawing Tool
 
-Diagram control now provides a drawing tool to draw the Org line connector dynamically during run time.
+Diagram control now provides a drawing tool to draw the [OrgLineConnector](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.OrgLineConnector.html) dynamically during run time.
 
 ### Use Case Scenario
 
-The OrgLineConnectorTool is used to draw the Org line connector dynamically.
+The [OrgLineConnectorTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.OrgLineConnectorTool.html) is used to draw the Org line connector dynamically.
 
-The following code illustrates how to activate the Org line connector tool:
+The following code illustrates how to activate the [OrgLineConnector](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.OrgLineConnector.html) tool:
 
 
 {% tabs %}
 {% highlight c# %}
 
-	// Activates the Org line connector tool.
-	diagram1.Controller.ActivateTool("OrgLineConnectorTool");
+// Activates the Org line connector tool.
+diagram1.Controller.ActivateTool("OrgLineConnectorTool");
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	'Activates the Org line connector tool.
-	diagram1.Controller.ActivateTool("OrgLineConnectorTool")
+'Activates the Org line connector tool.
+diagram1.Controller.ActivateTool("OrgLineConnectorTool")
 
 {% endhighlight %}
 {% endtabs %}

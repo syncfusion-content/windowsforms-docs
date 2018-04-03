@@ -532,75 +532,75 @@ if (openPaletteDialog.ShowDialog(this) == DialogResult.OK)
 
 {
 
-    SymbolPalette curSymbolPalette;
+SymbolPalette curSymbolPalette;
 
-    FileStream iStream;
+FileStream iStream;
 
-    string strFileName = openPaletteDialog.FileName;
+string strFileName = openPaletteDialog.FileName;
 
-    RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.RightToLeft;
+RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.RightToLeft;
 
-    Match match = Regex.Match(strFileName, ".vss|.vsx|.vsd|.vdx", options);
+Match match = Regex.Match(strFileName, ".vss|.vsx|.vsd|.vdx", options);
 
-    if (match.Success)
+if (match.Success)
 
-    {
+{
 
-        VisioStencilConverter converter = new VisioStencilConverter(strFileName, this);
+VisioStencilConverter converter = new VisioStencilConverter(strFileName, this);
 
-        converter.ShowProgressDialog = true;
+converter.ShowProgressDialog = true;
 
-        curSymbolPalette = converter.Convert();
+curSymbolPalette = converter.Convert();
 
-        if (curSymbolPalette != null)
+if (curSymbolPalette != null)
 
-            PaletteGroupBar1.AddPalette(curSymbolPalette);
+PaletteGroupBar1.AddPalette(curSymbolPalette);
 
-    }
+}
 
-    else
+else
 
-    {
+{
 
-        try
+try
 
-        {
+{
 
-            iStream = new FileStream(strFileName, FileMode.Open, FileAccess.Read);
+iStream = new FileStream(strFileName, FileMode.Open, FileAccess.Read);
 
 
 
-            // Deserialize  the Binary format
+// Deserialize  the Binary format
 
-            IFormatter formatter = new BinaryFormatter();
+IFormatter formatter = new BinaryFormatter();
 
-            AppDomain.CurrentDomain.AssemblyResolve +=
+AppDomain.CurrentDomain.AssemblyResolve +=
 
-                      new ResolveEventHandler(DiagramBaseAssembly.AssemblyResolver);
+          new ResolveEventHandler(DiagramBaseAssembly.AssemblyResolver);
 
-            curSymbolPalette = (SymbolPalette)formatter.Deserialize(iStream);
+curSymbolPalette = (SymbolPalette)formatter.Deserialize(iStream);
 
-            PaletteGroupBar1.AddPalette(curSymbolPalette);
+PaletteGroupBar1.AddPalette(curSymbolPalette);
 
-        }
+}
 
-        catch (Exception se)
+catch (Exception se)
 
-        {
+{
 
-            MessageBox.Show(this, se.Message);
+MessageBox.Show(this, se.Message);
 
-        }
+}
 
-        finally
+finally
 
-        {
+{
 
-            iStream.Close();
+iStream.Close();
 
-        }
+}
 
-    }
+}
 
 }
 
@@ -629,25 +629,25 @@ if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
 
 {
 
-    SymbolPalette symbolPalette = PaletteGroupBar1.CurrentSymbolPalette;
+SymbolPalette symbolPalette = PaletteGroupBar1.CurrentSymbolPalette;
 
-    string strSavePath = savePaletteDialog.FileName;
+string strSavePath = savePaletteDialog.FileName;
 
 
 
-    if (symbolPalette != null)
+if (symbolPalette != null)
 
-    {
+{
 
-        FileStream fStream = new FileStream(strSavePath, FileMode.OpenOrCreate, FileAccess.Write);
+FileStream fStream = new FileStream(strSavePath, FileMode.OpenOrCreate, FileAccess.Write);
 
-        BinaryFormatter formatter = new BinaryFormatter();
+BinaryFormatter formatter = new BinaryFormatter();
 
-        formatter.Serialize(fStream, symbolPalette);
+formatter.Serialize(fStream, symbolPalette);
 
-        fStream.Close();
+fStream.Close();
 
-    }
+}
 
 }
 
@@ -688,18 +688,18 @@ You can enable drawing shapes by clicking the diagram page using the _Diagram_ p
 {% tabs %}
 {% highlight c# %}
 
-    //Palette group view
-    paletteGroupView1.Diagram = diagram1;
-    // Platte group bar
-    paletteGroupBar1.Diagram = diagram1;
+//Palette group view
+paletteGroupView1.Diagram = diagram1;
+// Platte group bar
+paletteGroupBar1.Diagram = diagram1;
 	
 {% endhighlight %}
 {% highlight vbnet %}
 
-	'Palette group view	
-	paletteGroupView1.Diagram = diagram1;	
-	'Palette group bar	
-	paletteGroupBar1.Diagram = diagram1;
+'Palette group view	
+paletteGroupView1.Diagram = diagram1;	
+'Palette group bar	
+paletteGroupBar1.Diagram = diagram1;
 		
 {% endhighlight %}
 {% endtabs %}
@@ -762,24 +762,24 @@ Following code example illustrates how to enable preview support:
 {% tabs %}
 {% highlight c# %}
 
-      //enable dragged node cue
-      paletteGroupBar1.DragNodeCueEnabled = true;
-      paletteGroupView1.DragNodeCueEnabled = true
-      
-      //show dragged node cue
-      paletteGroupBar1.ShowDragNodeCue = true;
-      paletteGroupView1.ShowDragNodeCue = true;
+//enable dragged node cue
+paletteGroupBar1.DragNodeCueEnabled = true;
+paletteGroupView1.DragNodeCueEnabled = true
+
+//show dragged node cue
+paletteGroupBar1.ShowDragNodeCue = true;
+paletteGroupView1.ShowDragNodeCue = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-      'enable dragged node cue
-      paletteGroupBar1.DragNodeCueEnabled = True	
-      paletteGroupView1.DragNodeCueEnabled = True
-      
-      'show dragged node cue
-      paletteGroupBar1.ShowDragNodeCue = True
-      paletteGroupView1.ShowDragNodeCue = True
+'enable dragged node cue
+paletteGroupBar1.DragNodeCueEnabled = True	
+paletteGroupView1.DragNodeCueEnabled = True
+
+'show dragged node cue
+paletteGroupBar1.ShowDragNodeCue = True
+paletteGroupView1.ShowDragNodeCue = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -792,16 +792,16 @@ The following code illustrates how to disable preview support:
 {% tabs %}
 {% highlight c# %}
 
-      //hide dragged node cue
-      paletteGroupBar1.ShowDragNodeCue = false;
-      paletteGroupView1.ShowDragNodeCue = false;
+//hide dragged node cue
+paletteGroupBar1.ShowDragNodeCue = false;
+paletteGroupView1.ShowDragNodeCue = false;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-      //hide dragged node cue
-      paletteGroupBar1.ShowDragNodeCue = False;
-      paletteGroupView1.ShowDragNodeCue = False;
+//hide dragged node cue
+paletteGroupBar1.ShowDragNodeCue = False;
+paletteGroupView1.ShowDragNodeCue = False;
 
 {% endhighlight %}
 {% endtabs %}
@@ -1080,39 +1080,39 @@ private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e)
 
 {
 
-  // Update diagram's selection list depending on TreeNode Tag
+// Update diagram's selection list depending on TreeNode Tag
 
-   if ( e.Node.Tag is Node )
+if ( e.Node.Tag is Node )
 
-   {
+{
 
-      Node nodeTemp = e.Node.Tag as Node;
+Node nodeTemp = e.Node.Tag as Node;
 
-      if ( nodeTemp != null )
+if ( nodeTemp != null )
 
-      {
+{
 
-        if (nodeTemp.Visible && nodeTemp.Root.Equals(this.diagram1.Model))
+if (nodeTemp.Visible && nodeTemp.Root.Equals(this.diagram1.Model))
 
-        {
+{
 
-            diagram1.View.SelectionList.Clear();
+diagram1.View.SelectionList.Clear();
 
-            diagram1.View.SelectionList.Add(e.Node.Tag as Node);
+diagram1.View.SelectionList.Add(e.Node.Tag as Node);
 
-        }
+}
 
-        else
+else
 
-        {
+{
 
-            propertyEditor.PropertyGrid.SelectedObject = nodeTemp;
+propertyEditor.PropertyGrid.SelectedObject = nodeTemp;
 
-        }
+}
 
-      }
+}
 
-    }
+}
 
 }
 

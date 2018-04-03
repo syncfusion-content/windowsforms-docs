@@ -21,30 +21,30 @@ There are two ways available to add a Group in diagram control:
 {% tabs %}
 {% highlight c# %}
 
-		//Node 1
-		Syncfusion.Windows.Forms.Diagram.Rectangle nodeRect = new Syncfusion.Windows.Forms.Diagram.Rectangle(50, 100, 125, 75);
-		nodeRect.FillStyle.Color = Color.FromArgb(255, 223, 189);
-		nodeRect.LineStyle.LineColor = Color.Orange;
-		Syncfusion.Windows.Forms.Diagram.Label lbl = new Syncfusion.Windows.Forms.Diagram.Label(nodeRect, "Rectangle");
-		lbl.FontStyle.Size = 12;
-		lbl.FontStyle.Bold = true;
-		nodeRect.Labels.Add(lbl);
+//Node 1
+Syncfusion.Windows.Forms.Diagram.Rectangle nodeRect = new Syncfusion.Windows.Forms.Diagram.Rectangle(50, 100, 125, 75);
+nodeRect.FillStyle.Color = Color.FromArgb(255, 223, 189);
+nodeRect.LineStyle.LineColor = Color.Orange;
+Syncfusion.Windows.Forms.Diagram.Label lbl = new Syncfusion.Windows.Forms.Diagram.Label(nodeRect, "Rectangle");
+lbl.FontStyle.Size = 12;
+lbl.FontStyle.Bold = true;
+nodeRect.Labels.Add(lbl);
 
-		//Node 2
-		Syncfusion.Windows.Forms.Diagram.Rectangle nodeRect1 = new Syncfusion.Windows.Forms.Diagram.Rectangle(150, 100, 125, 75);
-		nodeRect1.FillStyle.Color = Color.FromArgb(255, 223, 189);
-		nodeRect1.LineStyle.LineColor = Color.Orange;
-		Syncfusion.Windows.Forms.Diagram.Label lbl1 = new Syncfusion.Windows.Forms.Diagram.Label(nodeRect1, "Rectangle1");
-		lbl1.FontStyle.Size = 12;
-		lbl1.FontStyle.Bold = true;
-		nodeRect1.Labels.Add(lbl1);
+//Node 2
+Syncfusion.Windows.Forms.Diagram.Rectangle nodeRect1 = new Syncfusion.Windows.Forms.Diagram.Rectangle(150, 100, 125, 75);
+nodeRect1.FillStyle.Color = Color.FromArgb(255, 223, 189);
+nodeRect1.LineStyle.LineColor = Color.Orange;
+Syncfusion.Windows.Forms.Diagram.Label lbl1 = new Syncfusion.Windows.Forms.Diagram.Label(nodeRect1, "Rectangle1");
+lbl1.FontStyle.Size = 12;
+lbl1.FontStyle.Bold = true;
+nodeRect1.Labels.Add(lbl1);
 
-		//Grouping Nodes
-		Syncfusion.Windows.Forms.Diagram.Group grp = new Group();
-		grp.AppendChild(nodeRect);
-		grp.AppendChild(nodeRect1);
-		this.DiagramWebControl1.Model.AppendChild(grp);
-		
+//Grouping Nodes
+Syncfusion.Windows.Forms.Diagram.Group grp = new Group();
+grp.AppendChild(nodeRect);
+grp.AppendChild(nodeRect1);
+this.DiagramWebControl1.Model.AppendChild(grp);
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,8 +56,8 @@ There are two ways available to add a Group in diagram control:
 {% tabs %}
 {% highlight c# %}
 
-		this.diagram1.Controller.Group();     //Method to Group the nodes
-		this.diagram1.Controller.UnGroup();   //Method to UnGroup the nodes
+this.diagram1.Controller.Group();     //Method to Group the nodes
+this.diagram1.Controller.UnGroup();   //Method to UnGroup the nodes
 
 {% endhighlight %}
 {% endtabs %}
@@ -70,10 +70,10 @@ The first step is to check whether the node is a Group.
 {% tabs %}
 {% highlight c# %}
 
-	if (node is Group)
-	{
-	    // Your code here
-	}
+if (node is Group)
+{
+// Your code here
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -84,12 +84,12 @@ If the node is a Group, then following are some special methods.
 {% tabs %}
 {% highlight c# %}
 
-	public Node GetChild(int childIndex);
-	public Node GetChildByName(string childName);
-	public void RemoveAllChildren();
-	public bool RemoveChild(int childIndex);
-	public bool RemoveChild(Node nodeToRemove);
-	public void InsertChild(Node child, int childIndex);
+public Node GetChild(int childIndex);
+public Node GetChildByName(string childName);
+public void RemoveAllChildren();
+public bool RemoveChild(int childIndex);
+public bool RemoveChild(Node nodeToRemove);
+public void InsertChild(Node child, int childIndex);
 
 {% endhighlight %}
 {% endtabs %}
@@ -100,18 +100,18 @@ Also, Group has an int ChildCount property, which returns the child count in a G
 {% tabs %}
 {% highlight c# %}
 
-	foreach (Node node in Diagram1.Model.Nodes)
-	{
-	    if (node is Group) // Check for Group
-	    {
-	        Group groupNode = (Group)node;
-	        if (groupNode.ChildCount > 0) // Group has sub nodes
-	        {
-	            Node nodeToRemove = groupNode.GetChild(0);
-	            groupNode.RemoveChild(nodeToRemove);
-	        }
-	    }
-	}
+foreach (Node node in Diagram1.Model.Nodes)
+{
+if (node is Group) // Check for Group
+{
+Group groupNode = (Group)node;
+if (groupNode.ChildCount > 0) // Group has sub nodes
+{
+Node nodeToRemove = groupNode.GetChild(0);
+groupNode.RemoveChild(nodeToRemove);
+}
+}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -132,18 +132,18 @@ Group Node has an enum property called GroupNodePosition of type GroupNodePositi
 {% tabs %}
 {% highlight c# %}
 
-	//Group
-	Group group = new Group();
-	//Absolute positioning
-	group.GroupNodePosition = GroupNodePositions.Absolute;
+//Group
+Group group = new Group();
+//Absolute positioning
+group.GroupNodePosition = GroupNodePositions.Absolute;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	'Group	
-	Dim group As Group = New Group ()	
-	'Absolute positioning	
-	group.GroupNodePosition = GroupNodePositions.Absolute
+'Group	
+Dim group As Group = New Group ()	
+'Absolute positioning	
+group.GroupNodePosition = GroupNodePositions.Absolute
 
 {% endhighlight %}
 {% endtabs %}

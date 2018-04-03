@@ -37,14 +37,14 @@ The following code example illustrates how to turn on touch support for Diagram 
 {% tabs %}
 {% highlight c# %}
 
-	// Specifies whether to turn on/off touch mode in Diagram.
-	diagram1.TouchMode = true;
+// Specifies whether to turn on/off touch mode in Diagram.
+diagram1.TouchMode = true;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-	' Specifies whether to turn on/off touch mode in Diagram.
-	diagram1.TouchMode = True
+' Specifies whether to turn on/off touch mode in Diagram.
+diagram1.TouchMode = True
 
 {% endhighlight %}
 {% endtabs %}

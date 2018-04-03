@@ -31,7 +31,7 @@ Data Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-DefaultContextMenuEnabled</td><td>
+[DefaultContextMenuEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DiagramProperties~DefaultContextMenuEnabled.html)</td><td>
 Used to enable default context menu. </td><td>
 NA </td><td>
 Boolean  </td><td>
@@ -41,7 +41,7 @@ NA </td></tr>
 
 Enabling Default Context Menu
 
-You can enable the default context menu using the _DefaultContextMenuEnabled_ property.
+You can enable the default context menu using the [_DefaultContextMenuEnabled_](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DiagramProperties~DefaultContextMenuEnabled.html) property.
 
 The following code illustrates how to enable the default context menu:
 
@@ -49,13 +49,13 @@ The following code illustrates how to enable the default context menu:
 {% tabs %}
 {% highlight c# %}
 
-    //show default context menu
-    diagram1.DefaultContextMenuEnabled = true;
+//show default context menu
+diagram1.DefaultContextMenuEnabled = true;
 {% endhighlight %}
 {% highlight vbnet %}
 
-    'show default context menu
-    diagram1.DefaultContextMenuEnabled = True
+'show default context menu
+diagram1.DefaultContextMenuEnabled = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -68,14 +68,14 @@ The following code illustrates how to disable the default context menu:
 {% tabs %}
 {% highlight c# %}
 
-    //hide default context menu
-    diagram1.DefaultContextMenuEnabled = false;
+//hide default context menu
+diagram1.DefaultContextMenuEnabled = false;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-    'hide default context menu
-    diagram1.DefaultContextMenuEnabled = False
+'hide default context menu
+diagram1.DefaultContextMenuEnabled = False
 
 {% endhighlight %}
 {% endtabs %}
