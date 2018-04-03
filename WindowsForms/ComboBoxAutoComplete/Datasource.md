@@ -21,7 +21,7 @@ The following steps sets a DataView as the DataSource of ComboBoxAutoComplete.
    ![](ComboBoxAutoComplete-Images/Overview_img48.jpeg)
 
 {% tabs %}
-{% highlight c#}
+{% highlight c# %}
 
 // Fills the DataSet with data from the database.
 this.oleDbDataAdapter1.Fill(this.dataSet11);
