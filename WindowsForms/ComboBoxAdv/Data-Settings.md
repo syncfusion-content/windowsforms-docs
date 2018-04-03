@@ -13,6 +13,7 @@ Data for the ComboBoxAdv is added through String Collection Editor, invoked thro
 
 ![](Overview_images/Overview_img302.png) 
 
+{% tabs %}
 {% highlight c# %}
 
 //Adding data to ComboBoxAdv
@@ -21,7 +22,7 @@ this.comboBoxAdv1.Items.AddRange(new object[] { "Currency", "DateTimePicker", "C
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Adding data to ComboBoxAdv
 
@@ -30,6 +31,7 @@ Me.comboBoxAdv1.Items.AddRange(New Object() {"Currency", "DateTimePicker", "Comb
 "CurrencyEdit"})
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img303.png)
 

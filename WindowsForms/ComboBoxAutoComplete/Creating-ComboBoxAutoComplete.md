@@ -52,85 +52,61 @@ At runtime, type 'C' in the display area of ComboBoxAutoComplete, you will see t
 The embedded AutoComplete control in a ComboBoxAutoComplete control is exposed through the AutoCompleteControl property. The Datasource property of the AutoCompleteControl specifies the data that will be used for the auto completion of the combo box. It can be created programmatically as follows.
 
 1. Include the required namespace.
-   
-   ~~~ cs
+ 
 
+{% tabs %}
+{% highlight c# %}
 
+using Syncfusion.Windows.Forms.Tools;
 
-		using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint}
+{% highlight vb %}
 
-   ~~~ vbnet
+Imports Syncfusion.Windows.Forms.Tools
 
-
-
-		Imports Syncfusion.Windows.Forms.Tools
-   ~~~
-   {:.prettyprint}
-
+{% endhighlight %}
+{% endtabs %} 
 
 2. Create an instance of the ComboBoxAutoComplete control class.
 
+{% tabs %}
+{% highlight c# %}
 
-   ~~~ cs
+private Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete comboBoxAutoComplete1;
+this.comboBoxAutoComplete1=new Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete();
 
+{% endhighlight %}
 
+{% highlight vb %}
 
-		private Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete comboBoxAutoComplete1;
+Private comboBoxAutoComplete1 As Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete
+Me.comboBoxAutoComplete1 = New Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete()
 
-		this.comboBoxAutoComplete1=new Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete();
-
-   ~~~
-   {:.prettyprint}
-
-   ~~~ vbnet
-
-
-
-		Private comboBoxAutoComplete1 As Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete
-
-		Me.comboBoxAutoComplete1 = New Syncfusion.Windows.Forms.Tools.ComboBoxAutoComplete()
-   ~~~
-   {:.prettyprint}
-
+{% endhighlight %}
+{% endtabs %}
 
 3. Set data source and add the control to the form.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+this.comboBoxAutoComplete1.AutoCompleteCustomSource.AddRange(new string[] { "Custom", "Customizing", "Customizable"});
+this.comboBoxAutoComplete1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+this.comboBoxAutoComplete1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+this.Controls.Add(this.comboBoxAutoComplete1);
 
+{% endhighlight %}
 
-		this.comboBoxAutoComplete1.AutoCompleteCustomSource.AddRange(new string[] { "Custom", "Customizing", "Customizable"});
+{% highlight vb %}
+ 
+Me.comboBoxAutoComplete1.AutoCompleteCustomSource.AddRange(New String() {"Custom", "Customizing", "Customizable"}) 
+Me.comboBoxAutoComplete1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend 
+Me.comboBoxAutoComplete1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource 
+Me.Controls.Add(Me.comboBoxAutoComplete1)
 
-		this.comboBoxAutoComplete1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-
-		this.comboBoxAutoComplete1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-
-
-
-		this.Controls.Add(this.comboBoxAutoComplete1);
-
-   ~~~ 
-   {:.prettyprint}
-
-   ~~~ vbnet
-
-
-
-		Me.comboBoxAutoComplete1.AutoCompleteCustomSource.AddRange(New String() {"Custom", "Customizing", "Customizable"}) 
-
-		Me.comboBoxAutoComplete1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend 
-
-		Me.comboBoxAutoComplete1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource 
-
-
-
-		Me.Controls.Add(Me.comboBoxAutoComplete1)
-   ~~~ 
-   {:.prettyprint}
-
+{% endhighlight %}
+{% endtabs %}
 
 4. Run the application.
 

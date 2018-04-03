@@ -14,61 +14,43 @@ The appearance of the MultiColumnTreeView can be customized using background, fo
 
 The background, foreground and border settings of a sub item can be specified using SubItem Style Editor. Refer to SubItem Styles for all the style settings.
 
+{% tabs %}
 {% highlight c# %}  
 
 treeNodeAdvSubItem1.Background = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.SandyBrown);
-
 treeNodeAdvSubItem1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
-
 treeNodeAdvSubItem1.BorderColor = System.Drawing.Color.SteelBlue;
-
 treeNodeAdvSubItem1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted;
-
 treeNodeAdvSubItem1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
 treeNodeAdvSubItem1.TextColor = System.Drawing.Color.Navy;
 
 treeNodeAdvSubItem2.Background = new Syncfusion.Drawing.BrushInfo(System.Drawing.Color.SandyBrown);
-
 treeNodeAdvSubItem2.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
-
 treeNodeAdvSubItem2.BorderColor = System.Drawing.Color.SteelBlue;
-
 treeNodeAdvSubItem2.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted;
-
 treeNodeAdvSubItem2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
 treeNodeAdvSubItem2.TextColor = System.Drawing.Color.Navy;
 
 {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight vb %} 
 
 treeNodeAdvSubItem1.Background = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.SandyBrown) 
-
 treeNodeAdvSubItem1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner 
-
 treeNodeAdvSubItem1.BorderColor = System.Drawing.Color.SteelBlue 
-
 treeNodeAdvSubItem1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted 
-
 treeNodeAdvSubItem1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle 
-
 treeNodeAdvSubItem1.TextColor = System.Drawing.Color.Navy 
 
 treeNodeAdvSubItem2.Background = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.SandyBrown) 
-
 treeNodeAdvSubItem2.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenOuter 
-
 treeNodeAdvSubItem2.BorderColor = System.Drawing.Color.SteelBlue 
-
 treeNodeAdvSubItem2.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted 
-
 treeNodeAdvSubItem2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle 
-
 treeNodeAdvSubItem2.TextColor = System.Drawing.Color.Navy 
 
 {% endhighlight %}
+{% endtabs %}
 
 A MultiColumnTreeView with above settings is displayed below.
 
@@ -94,24 +76,25 @@ ColumnsHeaderBackground property in the Properties Grid
 Gradient colors set for Header Background
 {:.caption}
 
-### Adding HighlightBorderColor property
+### Adding HighlightBorderColor Property
 
 Essential tool is now enhanced with HighlightBorderColor property to set the highlight color of the column header in MultiColumnTreeView.
 
 The following code illustrates how to set HighlightBorderColor property.
 
+{% tabs %}
 {% highlight C# %}  
 
 this.treeColumnAdv1.HighlightBorderColor = Color.Brown;
 
 {% endhighlight %} 
  
-{% highlight vbnet %} 
+{% highlight vb %} 
 
 Me.treeColumnAdv1.HighlightBorderColor = Color.Brown;
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Column-Appearance-images/Column-Appearance-img3.jpg)
 
@@ -140,16 +123,13 @@ The visual style can be applied for the MultiColumnTreeViewAdv using `Style` pr
 {% highlight C# %}
 
 //Set the visual Style of the MultiColumnTreeViewAdv control.
-
 this.multiColumnTreeView1.Style = MultiColumnVisualStyle.Office2016Colorful;
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
 'Set the visual Style of the MultiColumnTreeViewAdv control.
-
 Me.multiColumnTreeViewAdv1.Style = MultiColumnVisualStyle.Office2016Colorful
  
 {% endhighlight %}

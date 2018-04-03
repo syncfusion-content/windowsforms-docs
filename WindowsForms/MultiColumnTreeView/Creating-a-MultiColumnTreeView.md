@@ -38,21 +38,20 @@ To create a MultiColumnTreeView control, follow the steps that are given below.
    
 8. Namespace to be added while creating programmatically.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-		using Syncfusion.Windows.Forms.Tools.MultiColumnTreeView;
+using Syncfusion.Windows.Forms.Tools.MultiColumnTreeView;
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-		Imports Syncfusion.Windows.Forms.Tools.MultiColumnTreeView
+Imports Syncfusion.Windows.Forms.Tools.MultiColumnTreeView
 
-   ~~~
-   {:.prettyprint }
-   
-   
+{% endhighlight %}
+{% endtabs %}
+
 {% seealso %}
 [Adding Multiple Columns and SubItems](/windowsforms/multicolumntreeview/adding-multiple-columns-and-subitems)
 {% endseealso %}

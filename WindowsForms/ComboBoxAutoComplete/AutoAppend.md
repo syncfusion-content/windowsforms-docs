@@ -24,59 +24,47 @@ The following screen shot illustrates the usage of the AutoAppend class to persi
 
 
 
-## Associating AutoAppend with a control
+## Associating AutoAppend with a Control
 
 
 We can associate AutoAppend class to a ComboBox control by following the below steps. 
 
 1. Open a Visual Studio project and include the required namespace. 
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-		using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}		
+
+{% highlight vb %}
+ 
+Imports Syncfusion.Windows.Forms.Tools
 		
-   ~~~
-   {:.prettyprint}
-
-
-   ~~~ vbnet
-
-		Imports Syncfusion.Windows.Forms.Tools
-		
-   ~~~
-   {:.prettyprint}
-
+{% endhighlight %}
+{% endtabs %}
 
 2. Drag and drop a ComboBox control from the Toolbox onto the form. 
 3. Create and instance of the AutoAppend class as follows.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+// Creating an instance of the AutoAppend Class.
+private AutoAppend autoAppend1;
+autoappend1 = new AutoAppend();
 
+{% endhighlight %}
 
-		// Creating an instance of the AutoAppend Class.
+{% highlight vb %}
 
-		private AutoAppend autoAppend1;
+' Creating an instance of the AutoAppend Class.
+Private autoAppend1 As AutoAppend
+Private autoappend1 = New AutoAppend()
 
-		autoappend1 = new AutoAppend();
-		
-   ~~~
-   {:.prettyprint}
-
-
-   ~~~ vbnet
-
-
-
-		' Creating an instance of the AutoAppend Class.
-
-		Private autoAppend1 As AutoAppend
-
-		Private autoappend1 = New AutoAppend()
-		
-   ~~~
-   {:.prettyprint}
-
+{% endhighlight %}
+{% endtabs %}
 
 4. After creating the AutoAppend instance we need to associate it with an edit control. To achieve this use the AutoAppend.SetAutoAppend method. This method takes an object of AutoAppendInfo class which is used to hold the details of the data associated. 
 
@@ -96,31 +84,23 @@ GetAutoAppend</td><td>
 Returns the AutoAppend info associated with the control. The parameter is control.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 // Calling this will enable AutoAppend behavior in the control.
-
 autoappend1.SetAutoAppend(cmbBox,new AutoAppendInfo(true,"category name", al, 10)); //al is an IList object
+
 {% endhighlight %}
 
-
-
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' Calling this will enable AutoAppend behavior in the control.
-
 autoappend1.SetAutoAppend(cmbBox,New AutoAppendInfo(True, "category name", al, 10)) ' al is an IList object
-{% endhighlight %}
 
- {% seealso %}
+{% endhighlight %}
+{% endtabs %}
+
+{% seealso %}
 [Adding New Entries Programmatically](#adding-new-entries-programmatically)
 {% endseealso %}
  
@@ -130,18 +110,20 @@ autoappend1.SetAutoAppend(cmbBox,New AutoAppendInfo(True, "category name", al, 1
 
 1. To add or move an item to the top of controls' AutoAppend list, call the method InsertOrMoveToTop. If the item is already present, it will be moved to the first place otherwise it will be added.
 2. It takes 2 arguments. First one is the associated control and the second is the value in string.
-   
+
+{% tabs %}   
 {% highlight c# %}
    
-		this.autoAppend1.InsertOrMoveToTop(this.comboBox1,"www.syncfusion.com");
+this.autoAppend1.InsertOrMoveToTop(this.comboBox1,"www.syncfusion.com");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-		Me.autoAppend1.InsertOrMoveToTop(Me.comboBox1,"www.syncfusion.com")
+Me.autoAppend1.InsertOrMoveToTop(Me.comboBox1,"www.syncfusion.com")
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](ComboBoxAutoComplete-Images/Overview_img55.jpeg) 
 
