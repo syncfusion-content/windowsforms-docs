@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Nodes-or-Shapes | Windows Forms | Syncfusion
 description: nodes or shapes
