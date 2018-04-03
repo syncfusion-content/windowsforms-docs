@@ -7,19 +7,17 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Appearance Settings
+# Appearance settings
 
 The various appearance settings for TabControlAdv are discussed in this section. 
 
-## Background Settings
+## Background settings
 
 This section discusses the various Background Settings available in TabControlAdv.
 
-### BackgroundImage Settings
+### BackgroundImage settings
 
-Essential TabControlAdv provides a set of options to customize the images. 
-
-The TabControlAdv can have,
+The Essential TabControlAdv provides the following options to customize the images:
 
 * Images inside the TabItems.
 * Images outside the TabBounds.
@@ -27,17 +25,17 @@ The TabControlAdv can have,
 
 #### Images in TabItems
 
-To set images to the TabItems, add an `ImageListControl` and populate it with the required images. Then set the `ImageIndex` property of the TabPage to one of the indices, to display the corresponding image to the left of the text by default.
+To set images to the TabItems, add an `ImageListControl` and populate it with the required images. Then, set the `ImageIndex` property of the TabPage to one of the indices, to display the corresponding image to the left of the text, by default.
 
 ![](Appearance-Settings_images/Appearance-Settings_img1.jpeg)
 
 
-`ImageAlignmentR` property allows you to set the Tab's text and image relation. By default the image appears to the left and the text appears to the right. This setting can be changed using one of the below given options.
+The `ImageAlignmentR` property allows you to set the Tab's text and image relation. By default, the image appears to the left and the text appears to the right. This setting can be changed using one of the below given options.
 
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -46,13 +44,13 @@ Specifies the alignment of the image relative to the text. The options include,L
 <tr>
 <td>
 ImageIndex</td><td>
-Gets / sets the image for the tab item.</td></tr>
+Gets/sets the image for the tab item.</td></tr>
 </table>
 Code snippets showing the Image Settings
 
 {% tabs %} 
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.tabControlAdv1.ImageAlignmentR = Syncfusion.Windows.Forms.Tools.RelativeImageAlignment.RightOfText;
@@ -61,7 +59,7 @@ this.tabPageAdv1.ImageIndex = 0;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.tabControlAdv1.ImageAlignmentR = Syncfusion.Windows.Forms.Tools.RelativeImageAlignment.RightOfText
 
@@ -73,7 +71,7 @@ Me.tabPageAdv1.ImageIndex = 0
 
 #### Images outside the TabBounds
 
-TabControlAdv can have images set outside the TabBounds.
+TabControlAdv has images that are set outside the TabBounds.
 
 ![](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
 
@@ -82,7 +80,7 @@ To move the image outside the TabBounds, set the below given properties.
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -102,14 +100,14 @@ ItemSize</td><td>
 Sets the size of the tabs.</td></tr>
 </table>
 
-#### Background Image for TabPages
+#### Background image for TabPages
 
-The below properties sets the background image for the TabPages.
+The below properties set the background image for the TabPages.
 
 <table>
 <tr>
 <th>
-TabPageAdv Property</th><th>
+TabPageAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -123,7 +121,7 @@ Specifies the layout for the background image when set. The options include:None
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.tabPageAdv1.BackgroundImage = imageList1.Images[0];
@@ -132,7 +130,7 @@ this.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Right;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -151,24 +149,24 @@ The `DisableInactivePageImage` property specifies the value which determines whe
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
 DisableInactivePageImage</td><td>
-Gets / sets the value which determines whether the image should be disabled when the TabPage is not selected.</td></tr>
+Gets/sets the value which determines whether the image should be disabled when the TabPage is not selected.</td></tr>
 </table>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabPageAdv1.DisableInactivePageImage = imageList1.Images[0];
 
 {% endhighlight %}
 
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Me.tabPageAdv1.DisableInactivePageImage = imageList1.Images(0)
 
@@ -176,14 +174,14 @@ Private Me.tabPageAdv1.DisableInactivePageImage = imageList1.Images(0)
 
 {% endtabs %}
 
-### Color Customization
+### Color customization
 
-The look and feel of the TabControlAdv can be customized using the below Tab and Panel properties. 
+The look and feel of the TabControlAdv can be customized using the below Tab and Panel properties.
 
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -202,14 +200,14 @@ Specifies the back color to be used for the InActive tabs.</td></tr>
 TabPanelBackColor</td><td>
 Specifies the color for the tab panel over which the tab items are laid.</td></tr>
 </table>
-BackColor Settings for the TabItems
+BackColor settings for the TabItems
 
 The BackColor of the individual tab items can be customized by setting the `TabBackColor` property of the corresponding tab pages.
 
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -219,7 +217,7 @@ Specifies the back color for the tab item.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.tabControlAdv1.ActiveTabColor = System.Drawing.Color.Ivory;
@@ -234,7 +232,7 @@ this.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 Private Me.tabControlAdv1.ActiveTabColor = System.Drawing.Color.Ivory
@@ -257,18 +255,18 @@ Private Me.tabPageAdv1.TabBackColor = System.Drawing.Color.Pink
 
  
 
-## Foreground Settings
+## Foreground settings
 
 This section discusses the various Foreground Settings available in TabControlAdv.
 
-### Font Settings
+### Font settings
 
 The font settings for the TabControlAdv can be controlled through `Font` and `ActiveTabFont` properties.
 
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -282,7 +280,7 @@ Specifies the font for all the tab item's text.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.tabControlAdv1.ActiveTabFont = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -291,7 +289,7 @@ this.tabControlAdv1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Draw
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -306,7 +304,7 @@ Private Me.tabControlAdv1.Font = New System.Drawing.Font("Verdana", 8.25F, Syste
 <table>
 <tr>
 <th>
-TabPageAdv Property</th><th>
+TabPageAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -316,13 +314,13 @@ Specifies the Font for the tab item.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabPageAdv1.TabFont = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.tabPageAdv1.TabFont = New System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType((0), Byte))
 
@@ -337,14 +335,14 @@ Me.tabPageAdv1.TabFont = New System.Drawing.Font("Trebuchet MS", 8.25F, System.D
 
 To set image for tab items, see [BackgroundImage Settings](#backgroundimage-settings).
 
-### ForeColor Settings
+### ForeColor settings
 
 The text color of the tab items can be customized by setting the `TabForeColor` property of the corresponding TabPages.
 
 <table>
 <tr>
 <th>
-TabPageAdv Property</th><th>
+TabPageAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -354,13 +352,13 @@ Specifies the color for the text of the tab item.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 
@@ -371,19 +369,19 @@ Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 ![](Appearance-Settings_images/Appearance-Settings_img6.jpeg)
 
 
-## Border Settings
+## Border settings
 
-This section discusses the border settings available for the TabControlAdv. Set `BorderVisible` property to true to display the control border. Default value is false.
+This section discusses the border settings available for the TabControlAdv. Set the `BorderVisible` property to true to display the control border. Default value is false.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.BorderVisible = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.tabControlAdv1.BorderVisible = True
 
@@ -399,7 +397,7 @@ We can set width for the border using `BorderWidth` property. Default value is 5
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -408,7 +406,7 @@ this.tabControlAdv1.BorderWidth = 10;
 {% endhighlight %}
 
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 

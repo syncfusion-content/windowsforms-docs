@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Gridlines | Windows Forms | Syncfusion
 description: Gridlines  

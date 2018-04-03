@@ -15,7 +15,7 @@ TabControlAdv is an advanced form of standard TabControl that enables a develope
 
 * Supports various Appearance customization. 
 * Supports easy Tab Navigation. 
-* Supports to position TabHeader to the Left, Right, Top or Bottom of the TabControlAdv.
+* Supports to position TabHeader to the Left, Right, Top, or Bottom of the       TabControlAdv.
 * Supports to edit TabHeader text in run-time.
 * Supports to add TabHeader images.
 * Supports to rearrange Tab via Drag and Drop. 

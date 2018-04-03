@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dynamic-Properties | Windows Forms | Syncfusion
 description: Dynamic Properties

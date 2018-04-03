@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Style Settings
+# Style settings
 
 This section discusses the various Style Settings available in TabControlAdv.
 
@@ -18,7 +18,7 @@ TabControlAdv provides options to customize the TabStyle settings. Styles can be
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -30,7 +30,7 @@ Specifies the look and feel of the TabControlAdv. The options include,2D,3D,Work
 
 This option helps to set the 2D theme.
 
-#####  Code Sample
+###  Code sample
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRenderer2D
 
 This option helps to set the 3D theme.
 
-#####  Code Sample
+###  Code sample
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRenderer3D
 
 This option helps to set the Workbook theme.
 
-#####  Code Sample
+###  Code sample
 
 {% tabs %}
 
@@ -115,7 +115,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWo
 
 This option helps to set the InternetExplorer7 theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererIE
 
 This option helps to set the OneNoteStyle theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -171,7 +171,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.OneNoteStyleR
 
 This option helps to set the VS2005DockingStyle.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -199,7 +199,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererDo
 
 This option helps to set the Office2007Blue theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -229,7 +229,7 @@ Me.tabControlAdv1.Office2007ColorScheme = Office2007Theme.Blue
 
 This option helps to set the Office2007Black theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -259,7 +259,7 @@ Me.tabControlAdv1.Office2007ColorScheme = Office2007Theme.Black
 
 This option helps to set the Office2007Silver theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -289,7 +289,7 @@ Me.tabControlAdv1.Office2007ColorScheme = Office2007Theme.Silver
 
 This option helps to set the VS2005Style.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -317,7 +317,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWh
 
 This option helps to set the VS2005DockingBetaStyle.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -346,7 +346,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererDo
 
 This option helps to set the Office2003 theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -374,7 +374,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 This option helps to set the VS2008 theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -402,7 +402,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererVS
 
 This option helps to set the VS2010 theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -430,7 +430,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererVS
 
 This option helps to set the Metro theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -458,7 +458,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererMe
 
 This option helps to set the Office2016Colorful theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -486,7 +486,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 This option helps to set the Office2016White theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -514,7 +514,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 This option helps to set the Office2016DarkGray theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -542,7 +542,7 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 This option helps to set the Office2016Black theme.
 
-#####  Code Sample
+### Code sample
 
 {% tabs %}
 
@@ -566,13 +566,13 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 ![](Styles-Settings_images/Styles-Settings_img14.png)
 
-## Custom Color Schemes
+## Custom color schemes
 
 Custom colors can also be applied to the TabControlAdv. 
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Set the below code for applying the managed color scheme.
 
@@ -584,7 +584,7 @@ Office2007Colors.ApplyManagedColors(this, Color.Green);
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 'Set the below code for applying the managed color scheme.
@@ -625,7 +625,7 @@ Specifies how the tabs should be sized and aligned. The options include:Normal,F
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.Normal;
 
@@ -637,7 +637,7 @@ this.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillTo
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.Normal
 

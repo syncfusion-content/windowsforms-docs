@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Layers | Windows Forms | Syncfusion
 description: Layers
