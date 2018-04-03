@@ -7,49 +7,48 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# Appearance Settings
+# Appearance settings
 
-The variousAppearance Settings for TabbedMDIManager are discussed in this section. 
+The variousAppearance Settings for TabbedMDIManager are discussed in this section.
 
-It includes the below topics.
-
-## Foreground Settings
+## Foreground settings
 
 This section guides you in setting the text and icons for the tabs.
 
-#### Tab Text
+### Tab text
 
 The text of the tabs can be set by directly setting the Text property of the form, if the tabbed window is going to be a normal form.
 
 
 
-#### Icon Settings
+#### Icon settings
 
 The below properties controls the appearance and behavior of the icon settings.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
- TabbedMDIManager Property</th><th>
+ TabbedMDIManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
 Icon</td><td>
-Gets / sets icons for tabs. When the Icon property is clicked, the browse page will be displayed, through which the user can select the icon to be displayed.</td></tr>
+Gets/sets icons for tabs. When the Icon property is clicked, the browse page will be displayed, through which the user can select the icon to be displayed.</td></tr>
 <tr>
 <td>
 UseIconsInTabs</td><td>
-Gets / sets the value which determines whether icons should be added to the MDIChild.</td></tr>
+Gets/sets the value which determines whether icons should be added to the MDIChild.</td></tr>
 <tr>
 <td>
 ImageSize</td><td>
 The size of the image or icon that you want to add to the tabs can be set using this property.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -63,7 +62,7 @@ this.tabbedMDIManager1.ImageSize = new System.Drawing.Size(16, 16);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.Text = "Tabbed MDI Demo (Syncfusion Inc.)" 
 
@@ -75,37 +74,43 @@ Me.TabbedMDIManager1.ImageSize = New System.Drawing.Size(20, 20)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Appearance-Settings_images/Appearance-Settings_img1.jpeg)
 
 
 
-## Applying Themes
+## Applying themes
 
 The TabbedMDIManager Control can be themed by enabling the ThemesEnabled property.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.tabbedMDIManager1.ThemesEnabled = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.tabbedMDIManager1.ThemesEnabled = True
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
 
-## Customization 
+## Customization
 
-TabbedMDIManager provides completes support for customizing the active and inactive tabs back color, fore color and font.
+TabbedMDIManager provides complete support for customizing the active and inactive tabs back color, fore color, and font.
 
-**ActiveTabBackColor**
+#### ActiveTabBackColor
 
 This option helps to customize the active tab back color.
 
-#####  Code Sample
+#####  Code sample
 
 {% tabs %}
 
@@ -120,17 +125,17 @@ this.tabbedMDIManager.ActiveTabBackColor = Color.Red;
 
 Me.tabbedMDIManager.ActiveTabBackColor = Color.Red
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img3.png)
 
-**TabBackColor**
+#### TabBackColor
 
 This option helps to customize the inactive tab back color.
 
-#####  Code Sample
+#####  Code sample
 
 {% tabs %}
 
@@ -145,17 +150,17 @@ this.tabbedMDIManager.TabBackColor = Color.Green;
 
 Me.tabbedMDIManager.TabBackColor = Color.Green
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img4.png)
 
-**ActiveTabForeColor**
+#### ActiveTabForeColor
 
 This option helps to customize the active tab fore color.
 
-#####  Code Sample
+#####  Code sample
 
 {% tabs %}
 
@@ -170,17 +175,17 @@ this.tabbedMDIManager.ActiveTabForeColor = Color.Yellow;
 
 Me.tabbedMDIManager.ActiveTabForeColor = Color.Yellow
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img5.png)
 
-**TabForeColor**
+#### TabForeColor
 
 This option helps to customize the inactive tab fore color.
 
-#####  Code Sample
+#####  Code sample
 
 {% tabs %}
 
@@ -195,17 +200,17 @@ this.tabbedMDIManager.TabForeColor = Color.Violet;
 
 Me.tabbedMDIManager.TabForeColor = Color.Violet
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img6.png)
 
-**TabPanelBackColor**
+#### TabPanelBackColor
 
 This option helps to customize the background color of tab panel. 
 
-#####  Code Sample
+#####  Code sample
 
 {% tabs %}
 
@@ -220,17 +225,17 @@ this.tabbedMDIManager.TabPanelBackColor = Color.LightGreen;
 
 Me.tabbedMDIManager.TabPanelBackColor = Color.LightGreen
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img7.png)
 
-**ActiveTabFont**
+#### ActiveTabFont
 
 This option helps to customize the active tab font.
 
-#####  Code Sample
+#####  Code sample
 
 {% tabs %}
 
@@ -245,17 +250,17 @@ this.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10);
 
 Me.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10)
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img8.png)
 
-**TabFont**
+#### TabFont
 
 This property helps to customize the inactive tab font.
 
-#####  Code Sample
+#####  Code sample
 
 {% tabs %}
 
@@ -270,17 +275,17 @@ this.tabbedMDIManager.TabFont = new Font("Arial Black", 10);
 
 Me.tabbedMDIManager.TabFont = new Font("Arial Black", 10)
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img9.png)
 
-**TabPanelBorderColor**
+#### TabPanelBorderColor
 
 This property helps to customize bottom line in tab panel.
 
-#####  Code Sample
+#####  Code sample
 
 {% tabs %}
 
@@ -295,7 +300,7 @@ this.tabbedMDIManager.TabPanelBorderColor = Color.Orange;
 
 Me.tabbedMDIManager.TabPanelBorderColor = Color.Orange
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
