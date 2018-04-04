@@ -7,7 +7,6 @@ control: AutoLabel
 documentation: ug
 ---
 
-
 # Labeling a Control
 
 The following steps allow you to label a control.
@@ -20,42 +19,25 @@ The following steps allow you to label a control.
 
    ![](AutoLabel-Images/Overview_img3.jpg) 
 
-
-
+{% tabs %}
 {% highlight c# %}
 
-
-
-		private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
-
-		this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-
-		this.autoLabel1.LabeledControl = this.textBox1;
-
-
-
-		this.Controls.Add(this.autoLabel1);
+private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
+this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+this.autoLabel1.LabeledControl = this.textBox1;
+this.Controls.Add(this.autoLabel1);
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vb %}
    
-
-
-
-		Private autoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
-
-		Me.autoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
-
-		Me.autoLabel1.LabeledControl = Me.textBox1
-
-
-
-		Me.Controls.Add(Me.autoLabel1)
+Private autoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
+Me.autoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+Me.autoLabel1.LabeledControl = Me.textBox1
+Me.Controls.Add(Me.autoLabel1)
 
 {% endhighlight %}
-
+{% endtabs %}
 
 *  Run the application.
 
