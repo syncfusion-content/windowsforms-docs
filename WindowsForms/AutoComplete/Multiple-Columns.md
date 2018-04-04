@@ -7,8 +7,6 @@ control: AutoComplete
 documentation: ug
 ---
 
-
-
 # Multiple Columns
 
 The AutoComplete control allows you to display multiple columns of information for each matching entry in the AutoSuggest mode of operation. Columns can be configured through AutoComplete.Columns property. 
@@ -30,11 +28,7 @@ MatchMode</td><td>
 Specifies the modes where the AutoCompleteControl fills the history list for the current text in the current edit control.The values are, {{ 'Manual and'  | markdownify }}{{ ';Automatic (default).'| markdownify }}</td></tr>
 </table>
 
-
- ![](AutoComplete-Controls-Images/Overview_img32.jpeg) 
-
-
-
+![](AutoComplete-Controls-Images/Overview_img32.jpeg) 
 
 <table>
 <tr>
@@ -63,53 +57,33 @@ Visible</td><td>
 Shows or hides the column at runtime.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 this.autoComplete2.Columns.Add(this.autoCompleteDataColumnInfo1);
-
 this.autoComplete2.Columns.Add(this.autoCompleteDataColumnInfo2);
-
 this.autoComplete2.ShowColumnHeader = true;
-
 this.autoComplete2.MatchMode = AutoCompleteMatchModes.Automatic;
 
-
-
 this.autoCompleteDataColumnInfo1.ColumnHeaderText = "Title";
-
 this.autoCompleteDataColumnInfo1.MatchingColumn = true;
-
 this.autoCompleteDataColumnInfo1.Visible = true;
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
-
-
+{% highlight vb %}
 
 Me.autoComplete2.Columns.Add(Me.autoCompleteDataColumnInfo1)
-
 Me.autoComplete2.Columns.Add(Me.autoCompleteDataColumnInfo2)
-
 Me.autoComplete2.ShowColumnHeader = True
-
 Me.autoComplete2.MatchMode = AutoCompleteMatchModes.Automatic
 
-
-
 Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Title"
-
 Me.autoCompleteDataColumnInfo1.MatchingColumn = True
-
 Me.autoCompleteDataColumnInfo1.Visible = True
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
  ![](AutoComplete-Controls-Images/Overview_img33.jpeg) 
 
@@ -119,8 +93,6 @@ Column can be added and matched using external sources also. A sample that demon
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 While using an external datasource, the Columns property can be initially refreshed by clicking on the RefreshColumns verb visible in the Designer.
-
-
 
 N> You can also add images to the dropdown items using internal source and external source. See Image Settings for details.
 
