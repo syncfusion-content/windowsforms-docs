@@ -71,7 +71,7 @@ The below properties deals with alignment of the text in the TabControlAdv:
 <table>
 <tr>
 <th>
-TabPageAdv Property</th><th>
+TabPageAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>

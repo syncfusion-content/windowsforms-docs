@@ -83,7 +83,7 @@ Me.tabPageAdv1.ToolTipText = "Tooltips for tab page 1"
 ![](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
-## SuperTooltip Support
+## SuperTooltip support
 
 Now, the TabControlAdv displays `SuperToolTip` on the Tabs when hovering the mouse.
 
