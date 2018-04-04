@@ -74,7 +74,7 @@ Me.sfDataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll
 
 ## Customization Using Events
 
-### Cancel the Editing of the current cell
+### Cancel the Editing of the Current Cell
 The current cell editing can be canceled by using the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event. This event will be raised when the current cell enters to the edit mode.
 
 {% tabs %}
@@ -100,7 +100,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Display Message Box on current cell Editing Complete
+### Display Message Box on Current Cell Editing Complete
 The editing completion of the current cell can be notified by using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) event.
 
 {% tabs %}

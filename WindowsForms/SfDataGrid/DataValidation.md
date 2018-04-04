@@ -127,18 +127,16 @@ public partial class OrderInfo : IDataErrorInfo
     /// </summary>
     public OrderInfo()
     { }
-
-          [Display(AutoGenerateField = false)]
-          public string Error
-          {
-                  get
-                  { 
-                           if (this.Country.Contains("Germany") || this.Country.Contains("UK"))
-                                    return "Delivery not available for the country " + this.Country;
-                           return string.Empty;
-                   }
-           }
-
+    [Display(AutoGenerateField = false)]
+    public string Error
+    {
+        get
+        { 
+           if (this.Country.Contains("Germany") || this.Country.Contains("UK"))
+                return "Delivery not available for the country " + this.Country;
+               return string.Empty;
+        }
+    }
     public string this[string columnName]
     {
         get
@@ -430,7 +428,7 @@ End Property
 
 ![](DataValidation_images/DataValidation_img6.png)
 
-#### RegularExpression validation
+#### RegularExpression Validation
 The data that has heterogeneous type (combination of number, special character) can be validated using RegularExpressions.
 
 {% tabs %}
@@ -524,7 +522,6 @@ this.sfDataGrid.RowValidating += sfDataGrid_RowValidating;
 void sfDataGrid_RowValidating(object sender, RowValidatingEventArgs e)
 {
     var data = e.DataRow.RowData as OrderInfo;
-
     if (data.CustomerID.Equals("AROUT"))
     {
         e.IsValid = false;

@@ -48,7 +48,7 @@ Each `CaptionSummaryRow` carries information about a particular group like group
 
 ## Programmatic Grouping
 
-### Adding groups
+### Adding Groups
 
 SfDataGrid allows to group the data programmatically by adding or removing [GroupColumnDescription](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupColumnDescription.html# "") to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupColumnDescriptions.html# "") collection.
 If OrderID column need to be grouped programmatically, define its [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html# "") to [ColumnName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupColumnDescription~ColumnName.html# "") property of `GroupColumnDescription`. Then add the `GroupColumnDescription` to the `SfDataGrid.GroupColumnDescriptions` collection.
@@ -63,7 +63,7 @@ Me.sfDataGrid1.GroupColumnDescriptions.Add(New GroupColumnDescription() With {.C
 
 
 
-### Removing groups
+### Removing Groups
 
 The groups can be removed by removing [GroupColumnDescription](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupColumnDescription.html# "") from [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupColumnDescriptions.html# "") collection or by specifying the index using the `RemoveAt` method.
 {% tabs %}
@@ -83,7 +83,7 @@ To ungroup the column in UI, click the close button on column header or drag the
 
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img6.png)
 
-### Clearing groups
+### Clearing Groups
 All the groups of the `SfDataGrid` can be removed by using `Clear` method.
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +95,7 @@ Me.sfDataGrid1.GroupColumnDescriptions.Clear()
 {% endtabs %}
 
 
-## Formatting built-in group caption
+## Formatting Built-in Group Caption
 
 The group caption text can be formatted using the [SfDataGrid.GroupCaptionTextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupCaptionTextFormat.html#) property.
 The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
@@ -118,13 +118,13 @@ Me.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}"
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img8.png)
 
 
-## Expanding or collapsing the groups
+## Expanding or Collapsing the Groups
 
 By default, the records in each group can be viewed by expanding its group caption. 
 The end-user can expand or collapse the groups programmatically at runtime.
 
 
-### Expand groups while grouping
+### Expand Groups while Grouping
 
 All the groups can be expanded while grouping by setting [SfDataGrid.View.AutoExpandGroups](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoExpandGroups.html#) to `true`. So, when user group any column, all groups will be in expanded state.
 {% tabs %}
@@ -137,9 +137,9 @@ Me.sfDataGrid1.View.AutoExpandGroups = True
 {% endtabs %}
 
 
-### Programmatically expanding or collapsing the groups
+### Programmatically Expanding or Collapsing the Groups
 
-#### Expand or collapse all the groups
+#### Expand or Collapse All the Groups
 
 All the groups can be expanded or collapsed programmatically at runtime by using [SfDataGrid.ExpandAllGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpandAllGroup.html# "") and [SfDataGrid.CollapseAllGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CollapseAllGroup.html# "") methods.
 {% tabs %}
@@ -153,7 +153,7 @@ Me.sfDataGrid1.CollapseAllGroup()
 {% endhighlight %}
 {% endtabs %}
 
-#### Expand or collapse the group based on its level
+#### Expand or Collapse the Group based on its Level
 Groups can be expanded or collapsed based on its level by using [SfDataGrid.ExpandGroupsAtLevel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpandGroupsAtLevel.html# "") and [SfDataGrid.CollapseGroupsAtLevel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CollapseGroupsAtLevel.html# "") methods.
 {% tabs %}
 {% highlight c# %}
@@ -166,7 +166,7 @@ Me.sfDataGrid1.CollapseGroupsAtLevel(2)
 {% endhighlight %}
 {% endtabs %}
 
-#### Expand or collapse the specific group
+#### Expand or Collapse the Specific Group
 Specific group can be expanded or collapsed  by using [SfDataGrid.ExpandGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpandGroup.html# "") and [SfDataGrid.CollapseGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CollapseGroup.html# "") methods.
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ Me.sfDataGrid1.CollapseGroup(Me.sfDataGrid1.View.TopLevelGroup)
 {% endhighlight %}
 {% endtabs %}
 
-## Changing the indent column width
+## Changing the Indent Column Width
 The width of IndentColumn in SfDataGrid can be customized by using [IndentColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~IndentColumnWidth.html#) property as like below.
 {% tabs %}
 {% highlight c# %}
@@ -191,9 +191,9 @@ Me.sfDataGrid1.IndentColumnWidth = 100
 {% endtabs %}
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img9.png)
 
-## GroupDropArea customization
+## GroupDropArea Customization
 
-### Customizing GroupDropArea text
+### Customizing GroupDropArea Text
 
 The GroupDropArea’ s text can be changed by setting [SfDataGrid.GroupPanel.GroupDropAreaText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupPanel~GroupDropAreaText.html#) property.
 {% tabs %}
@@ -250,7 +250,7 @@ Me.sfDataGrid1.Style.GroupDropAreaItemStyle.BackColor = Color.LightSkyBlue
 
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img13.png)
 
-## Custom grouping
+## Custom Grouping
 SfDataGrid allows to group the data based on custom logic when the built-in grouping functionality doesn’t meet your requirement.
 To perform custom grouping on a particular column, specify the custom logic through [GroupColumnDescription.KeySelector](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupColumnDescription~KeySelector.html# "") property and the column name to [GroupColumnDescription.ColumnName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupColumnDescription~ColumnName.html# "") property.
 For an example, the Date column is grouped based on the week basis in the following example.
@@ -329,7 +329,7 @@ Private )
 {% endtabs %}
 ![](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img14.png)
 
-### Sorting inner records
+### Sorting Inner Records
 In custom grouping, all the inner records of each group can be sort by setting [GroupColumnDescription.SortGroupRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupColumnDescription~SortGroupRecords.html#) sorted based on the column name described in `GroupColumnDescription`.
 {% tabs %}
 {% highlight c# %}
@@ -409,7 +409,7 @@ Download sample from below location,
 **Sample** - [Custom Grouping](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Grouping640245417.zip#)
 
 
-### Cancel expanding of groups
+### Cancel Expanding of Groups
 The expanding of the groups can be canceled by setting `Cancel` property of the [GroupChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GroupChangingEventArgs.html# "") to `true` in the [GroupExpanding](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupExpanding_EV.html# "") event.
 {% tabs %}
 {% highlight c# %}
@@ -432,7 +432,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Cancel collapsing of groups
+### Cancel Collapsing of Groups
 The collapsing of the groups can be canceled by setting the `Cancel` property of the [GroupChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GroupChangingEventArgs.html# "") to `true` in the [GroupCollapsing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupCollapsing_EV.html# "") event.
 {% tabs %}
 {% highlight c# %}

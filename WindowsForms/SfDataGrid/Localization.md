@@ -10,7 +10,7 @@ documentation: ug
 # Localization
 Localization is the process of translating the application resources into different language for the specific cultures. The SfDataGrid can be localized by adding [resource](https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture ](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture(v=vs.110).aspx)before `InitializeComponent` method.
 
-## Localize at sample level
+## Localize at Sample Level
 To localize the SfDataGrid based on `CurrentUICulture` using resource files, follow the below steps.
 
 
@@ -70,7 +70,7 @@ Now run the sample,
 
 ![](Localization_images/Localization_img8.png)
 
-## Localize resource file with different assembly or name space
+## Localize Resource File with Different Assembly or Namespace
 By default, SfDataGrid try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.getexecutingassembly.aspx) method. When the resource file is located at different assembly or namespace, then it can be set to the SfDataGrid by using[SR.SetResources](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SR~SetResources.html) method.
 
 {% tabs %}
