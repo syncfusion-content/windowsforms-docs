@@ -1499,7 +1499,7 @@ Type
 {{'[AxisTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~AxisTooltipRendering_EV.html)'| markdownify }} 
 </td>
 <td>
-This event is triggered once for each axis. The appearnce of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} can be customized using this event.
+This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} can be customized using this event.
 </td> 
 <td>
 {{'[AxisTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.AxisTooltipRenderingEventHandler.html)'| markdownify }}
