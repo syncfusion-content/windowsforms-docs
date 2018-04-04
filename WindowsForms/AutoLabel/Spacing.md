@@ -7,7 +7,6 @@ control: AutoLabel
 documentation: ug
 ---
 
-
 # Spacing
 
 The space between the AutoLabel control and the labeled control can be customized using the following properties. When using relative positioning, you can also specify the gap between the label and the control.
@@ -31,37 +30,23 @@ Gap</td><td>
 Specifies the horizontal and vertical gap to use when computing the relative position.</td></tr>
 </table>
 
-
-
-
+{% tabs %}
 {% highlight c# %}
 
-
-
-
 this.autoLabel1.DX = -80;
-
 this.autoLabel1.DY = 3;
-
 this.autoLabel1.Gap = 10;
 
 {% endhighlight %}
 
-
-
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.autoLabel1.DX = -80
-
 Me.autoLabel1.DY = 3
-
 Me.autoLabel1.Gap = 10
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](AutoLabel-Images/Overview_img8.jpg) 
 
