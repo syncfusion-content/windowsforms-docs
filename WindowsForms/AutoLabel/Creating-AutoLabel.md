@@ -20,13 +20,10 @@ The following steps illustrate how to create an AutoLabel control through Design
 
   ![](AutoLabel-Images/Overview_img5.jpg) 
 
-
-
 * Set the desired properties for the control through the Property grid.
 * Run the application.
 
   ![](AutoLabel-Images/Overview_img6.jpg) 
-
 
 ## Through Code
 
@@ -36,103 +33,81 @@ The following steps illustrate how to create an AutoLabel control programmatical
 *  Add the required assembly references.
 *  Include the required namespace.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
-		using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 		
 {% endhighlight %}
 
+{% highlight vb %}
 
-{% highlight vbnet %}
-
-
-
-		Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
+{% endtabs %}
 
 *  Declare the AutoLabel control.
 
+{% tabs %}
 {% highlight c# %}
 
-		private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
+private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
 
 {% endhighlight %}
 
+{% highlight vb %}
 
-{% highlight vbnet %}
-
-
-
-		Private autoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
+Private autoLabel1 As Syncfusion.Windows.Forms.Tools.AutoLabel
    
 {% endhighlight %}
-
+{% endtabs %}
 
 *  Initialize the control.
 
+{% tabs %}
 {% highlight c# %}
 
-
-		this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-
-		Me.autoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+Me.autoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
+
+{% endhighlight %}
+{% endtabs %}
 
 *  Set the properties for the AutoLabel control and add it to your form.
 
+{% tabs %}
 {% highlight c# %}
 
+this.autoLabel1.Text = "autoLabel1";
+this.autoLabel1.BackColor = System.Drawing.Color.BurlyWood;
+this.autoLabel1.ForeColor = System.Drawing.Color.SaddleBrown;
+this.autoLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+this.autoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-
-		this.autoLabel1.Text = "autoLabel1";
-
-		this.autoLabel1.BackColor = System.Drawing.Color.BurlyWood;
-
-		this.autoLabel1.ForeColor = System.Drawing.Color.SaddleBrown;
-
-		this.autoLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-		this.autoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
-
-
-		// Add the AutoLabel control to the Form.
-
-		this.Controls.Add(this.autoLabel1);
+// Add the AutoLabel control to the Form.
+this.Controls.Add(this.autoLabel1);
   
 {% endhighlight %}
 
+{% highlight vb %}
 
-{% highlight vbnet %}
+Me.autoLabel1.Text = "autoLabel1"
+Me.autoLabel1.BackColor = System.Drawing.Color.BurlyWood
+Me.autoLabel1.ForeColor = System.Drawing.Color.SaddleBrown
+Me.autoLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte((0)))
+Me.autoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-
-
-		Me.autoLabel1.Text = "autoLabel1"
-
-		Me.autoLabel1.BackColor = System.Drawing.Color.BurlyWood
-
-		Me.autoLabel1.ForeColor = System.Drawing.Color.SaddleBrown
-
-		Me.autoLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte((0)))
-
-		Me.autoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-
-
-
-		' Add the AutoLabel control to the Form.
-
-		Me.Controls.Add(Me.autoLabel1)
+' Add the AutoLabel control to the Form.
+Me.Controls.Add(Me.autoLabel1)
 
 {% endhighlight %}
+{% endtabs %}
 
 *  Run the application.
 
