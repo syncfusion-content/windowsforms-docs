@@ -3,10 +3,10 @@ layout: post
 title: Run Time Interactive Features | WindowsForms | Syncfusion
 description: run time interactive features
 platform: WindowsForms
-control: Menus Package 
+control: Menus Package
 documentation: ug
 ---
-# Run Time Interactive Features
+# Run time interactive features
 
 This section discusses the following interactive features at run time.
 
@@ -14,11 +14,11 @@ This section discusses the following interactive features at run time.
 
 The BarItems in XPMenus provides SuperToolTip support. Other than the usual tooltip, XPMenus now allows users to associate a SuperToolTip to the BarItems.
 
-To associate a SuperTooltip to the BarItem (Menu Items), Drag and drop a SuperToolTip control on to the form in which the Menus are placed. Select the BarItem to which the SuperTooltip is to be added. 
+To associate a SuperTooltip to the BarItem (Menu Items), Drag and drop a SuperToolTip control on to the form in which the Menus are placed. Select the BarItem to which the SuperTooltip is to be added.
 
 In the properties window, of the BarItem, we can see an extender property ToolTip on superToolTip. Click this to open the Tooltip Editor.
 
-![](Overview_images/Overview_img151.jpeg) 
+![](Overview_images/Overview_img151.jpeg)
 
 
 
@@ -29,18 +29,17 @@ Customize the Tooltip using the Tooltip Editor.
 
 
 
+{% tabs %}
 
+{% highlight C# %}
 
-{% highlight c# %}
 toolTipInfo1.Body.Text = "Save";
 
 this.superToolTip1.SetToolTip(this.barItem2, toolTipInfo1);
 
 {% endhighlight  %}
-{% highlight vbnet %}
 
-
-
+{% highlight VB %}
 
 
 toolTipInfo1.Body.Text = "Save"
@@ -49,7 +48,9 @@ Me.superToolTip1.SetToolTip(Me.barItem2, toolTipInfo1)
 
 {% endhighlight  %}
 
-![](Overview_images/Overview_img153.jpeg) 
+{% endtabs %}
+
+![](Overview_images/Overview_img153.jpeg)
 
 
 
@@ -58,7 +59,7 @@ A sample illustrating the super tooltip feature is available in the below sample
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 
-## Context Menu for XPMenus
+## Context menu for XPMenus
 
 {% seealso %}
 [PopUp Menu](/windowsforms/popupmenu/overview)
