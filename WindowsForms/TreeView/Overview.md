@@ -18,18 +18,17 @@ The Essential Tools' TreeViewAdv control implements a classical tree structure w
 ![](Overview_images/Overview_img1.jpeg)
 
 
-
 The TreeView package provides an advanced TreeViewAdv control with numerous styles and extensive customization capabilities. The features of the control are  listed below.
 
 ### Features
 
 Look and Feel - The control can be applied with impressive look and feel by providing different options for the users to customize the appearance of the control. 
 
-### Enhanced performance 
+### Enhanced Performance 
 
 TreeViewAdv control can be populated with large number of nodes on node expand / collapse. The performance while populating the TreeViewAdv with large number of nodes can be improved by the SuspendExpandRecalculate property.
 
-### CheckBox support 
+### CheckBox Support 
 
 Interactive check boxes that could be checked or unchecked, which will indicate the check state of the child node's check boxes. 
 
@@ -37,11 +36,11 @@ Interactive check boxes that could be checked or unchecked, which will indicate 
 
 Tree nodes can hold left images, right images and images for different state of the nodes like expand and collapse.
 
-### Load on demand 
+### Load On Demand 
 
 Enhances the performance by reducing the loading time of the nodes by displaying the nodes only on demand by the user. This provides the user to delay the loading of nodes in Trees, until the user initiates the nodes to expand.
 
-### Customizing nodes
+### Customizing Nodes
 
 Allows you to edit and customize the nodes at all levels.
 
@@ -52,7 +51,7 @@ Allows you to edit and customize the nodes at all levels.
 * Font - option to change the node's font.
 * HelpText - can be enabled for each and every nodes. Each nodes can display its own information.
 
-### Scroll support 
+### Scroll Support 
 
 Provides automatic scrolling support for the treeview controls as well as hidden nodes when the mouse is near the borders. 
 
@@ -87,6 +86,3 @@ Supports a flexible style architecture to let users define the styles for nodes 
 ### Custom Control
 
 Support for custom control feature allows to add custom controls to the tree structure that can be embedded to the required tree node. See [custom control](/windowsforms/treeview/treenode-features#custom-controls) for details.
-
-
-
