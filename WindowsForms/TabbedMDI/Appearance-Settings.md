@@ -50,8 +50,6 @@ The size of the image or icon that you want to add to the tabs can be set using 
 
 {% highlight C# %}
 
-
-
 this.Text = "Tabbed MDI Demo (Syncfusion Inc.)";
 
 this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -110,8 +108,6 @@ TabbedMDIManager provides complete support for customizing the active and inacti
 
 This option helps to customize the active tab back color.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -134,8 +130,6 @@ Me.tabbedMDIManager.ActiveTabBackColor = Color.Red
 #### TabBackColor
 
 This option helps to customize the inactive tab back color.
-
-#####  Code sample
 
 {% tabs %}
 
@@ -160,8 +154,6 @@ Me.tabbedMDIManager.TabBackColor = Color.Green
 
 This option helps to customize the active tab fore color.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -185,8 +177,6 @@ Me.tabbedMDIManager.ActiveTabForeColor = Color.Yellow
 
 This option helps to customize the inactive tab fore color.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -208,9 +198,7 @@ Me.tabbedMDIManager.TabForeColor = Color.Violet
 
 #### TabPanelBackColor
 
-This option helps to customize the background color of tab panel. 
-
-#####  Code sample
+This option helps to customize the background color of tab panel.
 
 {% tabs %}
 
@@ -235,8 +223,6 @@ Me.tabbedMDIManager.TabPanelBackColor = Color.LightGreen
 
 This option helps to customize the active tab font.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -260,8 +246,6 @@ Me.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10)
 
 This property helps to customize the inactive tab font.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -284,8 +268,6 @@ Me.tabbedMDIManager.TabFont = new Font("Arial Black", 10)
 #### TabPanelBorderColor
 
 This property helps to customize bottom line in tab panel.
-
-#####  Code sample
 
 {% tabs %}
 

@@ -32,8 +32,6 @@ Specifies the style for the tabs of the TabbedMDIManager Control. The options in
 
 This option helps to set the 2D theme.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -61,8 +59,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 This option helps to set the 3D theme.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -88,8 +84,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 #### Workbook
 
 This option helps to set the Workbook theme.
-
-#####  Code sample
 
 {% tabs %}
 
@@ -117,8 +111,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 This option helps to set the WhidbeyStyle.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -144,8 +136,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 #### DockingWhidbeyStyle
 
 This option helps to set the DockingWhidbeyStyle.
-
-#####  Code sample
 
 {% tabs %}
 
@@ -173,8 +163,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 This option helps to set the DockingWhidbeyBetaStyle.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -201,8 +189,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 This option helps to set the Office2003 theme.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -228,8 +214,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 #### Office2007Blue
 
 This option helps to set the Office2007Blue theme.
-
-#####  Code sample
 
 {% tabs %}
 
@@ -259,8 +243,6 @@ Me.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Blue
 
 This option helps to set the Office2007Black theme.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -288,8 +270,6 @@ Me.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Black
 #### Office2007Silver
 
 This option helps to set the Office2007Silver theme.
-
-#####  Code sample
 
 {% tabs %}
 
@@ -319,8 +299,6 @@ Me.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Silver
 
 This option helps to set the OneNoteStyle theme.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -346,8 +324,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.OneNoteSty
 #### OneNoteStyleFlatTabsStyle
 
 This option helps to set the OneNoteStyleFlatTabsStyle.
-
-#####  Code sample
 
 {% tabs %}
 
@@ -375,8 +351,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.OneNoteSty
 
 This option helps to set the InternetExplorer7 theme.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -402,8 +376,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 #### Metro
 
 This option helps to set the Metro theme.
-
-#####  Code sample
 
 {% tabs %}
 
@@ -431,8 +403,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 This option helps to set the Office2016Colorful theme.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -458,8 +428,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 #### Office2016White
 
 This option helps to set the Office2016White theme.
-
-#####  Code sample
 
 {% tabs %}
 
@@ -487,8 +455,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 
 This option helps to set the Office2016DarkGray theme.
 
-#####  Code sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -514,8 +480,6 @@ Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendere
 #### Office2016Black
 
 This option helps to set the Office2016Black theme.
-
-#####  Code sample
 
 {% tabs %}
 
