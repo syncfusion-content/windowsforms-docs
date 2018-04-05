@@ -575,14 +575,14 @@ Me.editControl1.ApplyConfiguration("C++")
 
 {% endtabs %}
 
-N> We can customize the EditControl Back color according to the particular language UI Appearance. Customization of EditControl is discussed under Appearance topic.
+We can customize the EditControl Back color according to the particular language UI Appearance. Customization of EditControl is discussed under Appearance topic.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img13.png)
 
 
 EditControl also offers extensive support to create configuration settings programmatically. This provides greater flexibility so that users can dynamically modify configuration settings of the currently loaded configuration as per their requirements. The following procedure will walk you through the entire process of creating configuration settings programmatically.
 
-1. A new configuration language can be added to the EditControl by using the `CreateLanguageConfiguration` method. Once the new configuration language is created, apply it to the contents of the EditControl by using the ApplyConfiguration method.
+**Step 1** : A new configuration language can be added to the EditControl by using the `CreateLanguageConfiguration` method. Once the new configuration language is created, apply it to the contents of the EditControl by using the ApplyConfiguration method.
 
 {% tabs %}
 
@@ -609,7 +609,7 @@ Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 
 {% endtabs %}
 
-2. Create a custom format object by using the Language.Add method of the EditControl and define its attributes.
+**Step 2** : Create a custom format object by using the Language.Add method of the EditControl and define its attributes.
 
 {% tabs %}
 
@@ -648,7 +648,7 @@ formatMethod.BackColor = Color.Yellow
 
 {% endtabs %}
 
-3. Create a `ConfigLexem` object that belongs to the above defined format and define its attributes.
+**Step 3** : Create a `ConfigLexem` object that belongs to the above defined format and define its attributes.
 
 {% tabs %}
 
@@ -695,7 +695,7 @@ configLex.FormatName = "CodeBehind"
 
 {% endtabs %}
    
-4. Add the `ConfigLexem` object to the `Lexems` collection of the current language.
+**Step 4** : Add the `ConfigLexem` object to the `Lexems` collection of the current language.
 
 {% tabs %}
 
@@ -714,7 +714,7 @@ Me.editControl1.Language.Lexems.Add(configLex)
 
 {% endtabs %}
 
-5. Add the appropriate splits and extensions to the Language.Splits and Language.Extensions collections.
+**Step 5** : Add the appropriate splits and extensions to the Language.Splits and Language.Extensions collections.
 
 {% tabs %}
 
@@ -749,7 +749,7 @@ Me.EditControl1.Language.Extensions.Add("aspx")
 
 {% endtabs %}
   
-6. Invoke the `ResetCaches` method to apply these newly added configuration settings.
+**Step 6** : Invoke the `ResetCaches` method to apply these newly added configuration settings.
 
 {% tabs %}
 
