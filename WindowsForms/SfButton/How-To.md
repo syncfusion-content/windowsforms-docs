@@ -9,11 +9,11 @@ documentation: ug
 
 # How To
 
-## Set the SfButton as Accept or Cancel button to the form
+## Set the SfButton as Accept or Cancel Button to the Form
 
 This section describes how to set the SfButton as Accept or Cancel button to the form.
 
-### Accept button
+### Accept Button
 
 The SfButton can be set as Accept button to a form by setting the AcceptButton property of the form.
 
@@ -27,7 +27,7 @@ this.AcceptButton = sfButton1;
 
 **Note**: The Accept button might not be activated if the currently selected control on the form intercepts the ENTER key and processes it.
 
-### Cancel button
+### Cancel Button
 
 The SfButton can be set as Cancel button to a form by setting the CancelButton property of the form.
 
@@ -41,7 +41,7 @@ this.CancelButton = sfButton2;
 
 **Note**: The Cancel button may not work if another control on the form intercepts the ESC key.
 
-## Show the tooltip on mouse hover
+## Show the Tooltip on Mouse Hover
 
 The SfToolTip can be shown on the SfButton when the mouse hovering. Follow the steps to perform this feature:
 
