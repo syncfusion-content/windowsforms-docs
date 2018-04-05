@@ -40,6 +40,7 @@ To bring the text of the TabItem to the edit mode, the following can be done.
 3. Programmatically the `LabelEdit` property can be set as follows.
 
 {% tabs %}
+
 {% highlight C# %}
 
 

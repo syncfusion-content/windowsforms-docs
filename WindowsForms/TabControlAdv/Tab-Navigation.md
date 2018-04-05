@@ -19,9 +19,9 @@ The various TabPrimitives are,
 * NextTab - Goes to the next tab of the active tab.
 * PreviousPage - Goes to the previous page of the active page.
 * NextPage - Goes to the next page of the active page.
-* DropDown - This pops-up a list of the available tab pages in the control       from which the user can select the page to be traversed.
-* Close - This button is used to close the TabControlAdv. It can be set to       appear for the whole control or individual tab pages. 
-* Custom - User can add more buttons through Custom TabPrimitive. This helps     the user to create/add more buttons and handle their own click events.
+* DropDown - This pops-up a list of the available tab pages in the control from which the user can select the page to be traversed.
+* Close - This button is used to close the TabControlAdv. It can be set to appear for the whole control or individual tab pages. 
+* Custom - User can add more buttons through Custom TabPrimitive. This helps the user to create/add more buttons and handle their own click events.
 
 ![](TabPrimitives_images/TabPrimitives_img1.png)
 

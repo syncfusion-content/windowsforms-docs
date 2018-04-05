@@ -672,9 +672,9 @@ AddHandler Me.tabControlAdv1.LabelEditChanged, AddressOf tabControlAdv1_LabelEdi
 
 Private Sub tabControlAdv1_LabelEditChanged(ByVal sender As Object, ByVal e As EventArgs)
 
-   ' Below line will be displayed in the output window at runtime, when this event is fired. 
+' Below line will be displayed in the output window at runtime, when this event is fired. 
 
-   Console.Write("LabelEditChanged event is raised")
+Console.Write("LabelEditChanged event is raised")
 
 End Sub
 

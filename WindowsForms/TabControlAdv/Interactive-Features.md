@@ -141,7 +141,6 @@ For VS like scroll button-look, the `VSLikeScrollButton` property has to be set 
 
 {% highlight C# %}
 
-
 this.tabControlAdv1.ShowScroll = true;
 
 this.tabControlAdv1.VSLikeScrollButton = true;
@@ -149,8 +148,6 @@ this.tabControlAdv1.VSLikeScrollButton = true;
 {% endhighlight %}
 
 {% highlight VB %}
-
-
 
 Me.tabControlAdv1.ShowScroll = True
 
