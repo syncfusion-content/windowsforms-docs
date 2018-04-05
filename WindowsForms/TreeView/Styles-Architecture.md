@@ -6,7 +6,6 @@ platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-
 # Styles Architecture
 
 The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a TreeNodeAdvStyleInfo. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree's BaseStyles hatch table. 
@@ -14,7 +13,6 @@ The tree control employs an extensive Styles Architecture, that let users specif
 As illustrated below, implicit style inheritance is enforced by the Framework while explicit style inheritance can be setup by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img47.jpeg)
-
 
 
 ### Implicit Style Inheritance
@@ -51,7 +49,6 @@ StandardStyle is the default style for the nodes. It can be edited using Standar
 ![](Concepts-and--Features_images/Concepts-and--Features_img48.jpeg)
 
 
-
 ## Standard Style
 
 Setting a Common Style for All the Nodes in the TreeViewAdv
@@ -61,12 +58,9 @@ We can modify the background for all the children of a parent node by editing th
 ![](Concepts-and--Features_images/Concepts-and--Features_img49.jpeg)
 
 
-
 The below image displays a gradient style for all the nodes of the TreeView control.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img50.jpeg)
-
-
 
 ## Node Specific Style
 
@@ -76,19 +70,13 @@ Make a Node's Style Inherit from Another Base Style
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img51.jpeg)
 
-
-
 This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img52.jpeg)
 
-
-
 This overrides the [Standard Style](#standard-style) settings for the specified nodes and displays the image as follows.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img53.jpeg)
-
-
 
 ## Child Style
 
@@ -100,11 +88,7 @@ In the Node Collection Editor, modify the settings in the TreeNodeAdv.ChildStyle
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img54.jpeg)
 
-
-
 ![](Concepts-and--Features_images/Concepts-and--Features_img55.jpeg)
-
-
 
 ## Node Level Style
 
@@ -114,13 +98,9 @@ TreeView lets you add node level styles using the BaseStyles Collection Editor.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img56.jpeg)
 
-
-
 By default this style will be applied to the first level nodes as shown in the image below.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img57.jpeg)
-
-
 
 You can also apply this style to any of the node by using TreeNodeAdv.BaseStyle property for a particular node.
 

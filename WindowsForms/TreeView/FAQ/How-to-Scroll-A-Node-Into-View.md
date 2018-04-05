@@ -32,36 +32,20 @@ EnsureVisible</td><td>
 To bring an already visible node into viewable area when scrolled, and also make it the top-most visible node, use this overload of the TreeViewAdv.EnsureVisible method. </td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 treeNodeAdv.BringIntoView();
-
-
-
 this.treeViewAdv1.EnsureVisible(treeNodeAdv);
-
-
-
 this.treeViewAdv1.EnsureVisible(treeNodeAdv, true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 treeNodeAdv.BringIntoView()
-
-
-
 Me.TreeViewAdv1.EnsureVisible(treeNodeAdv)
-
-
-
 Me.TreeViewAdv1.EnsureVisible(treeNodeAdv, True)
 
 {% endhighlight %}
-
+{% endtabs %}

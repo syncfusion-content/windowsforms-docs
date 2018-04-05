@@ -7,8 +7,6 @@ control: AutoComplete
 documentation: ug
 ---
 
-
-
 # Support to Set Maximum Limit for Suggestion List 
 
 The AutoComplete control displays a filtered suggestion list from a mapped data source in a drop-down as you type the text into the text box. This feature provides support to set the maximum number for the filtered suggestion. 
@@ -51,18 +49,16 @@ To view a sample:
 
 You can set the maximum number of suggestions to be displayed in the AutoComplete using the MaxNumberofSuggestion property: The following code illustrates this: 
 
+{% tabs %}
 {% highlight C# %}
 
-
-
 this.autoComplete1.MaxNumberofSuggestion = 5; 
+
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.autoComplete1.MaxNumberofSuggestion = 5
 
 {% endhighlight %}
+{% endtabs %}

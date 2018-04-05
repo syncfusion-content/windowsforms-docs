@@ -86,38 +86,26 @@ It is the System.Data.DataRow object that contains the value that is to be added
 </table>
 
 
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 private void autoComplete1_BeforeAddItem(object sender, AutoCompleteAddItemCancelEventArgs e)
-
 {
-
 //Cancels the item that is going to be added.
-
     e.Cancel = true;
-
 }
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub autoComplete1_BeforeAddItem(ByVal sender As Object, ByVal e As AutoCompleteAddItemCancelEventArgs)
 
 'Cancels the item that is going to be added.   
-
    e.Cancel = True
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## AutoCompleteItemBrowsed Event
 
@@ -150,42 +138,28 @@ Returns the index of the item that was used for matching.</td></tr>
 
 When you select an item from the list of possible matches when AutoComplete is set to AutoSuggest, you can display the selected URL in a separate TextBox. The following code illustrates this.
 
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
 private void autoComplete1_AutoCompleteItemBrowsed(object sender, Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs args)
-
 {
-
-string itemText = args.ItemArray[0].ToString();
-
-string eventlogmessage = String.Format("Event: {0} Item: {1}\r\n", "AutoCompleteItemSelected", itemText);
-
-textBox1.Text = textBox1.Text + eventlogmessage;
-
+    string itemText = args.ItemArray[0].ToString();
+    string eventlogmessage = String.Format("Event: {0} Item: {1}\r\n", "AutoCompleteItemSelected", itemText);
+    textBox1.Text = textBox1.Text + eventlogmessage;
 }
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub autoComplete1_AutoCompleteItemBrowsed(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs)
-
     Dim itemText As String = args.ItemArray(0).ToString()
-
     Dim eventlogmessage As String = [String].Format("Event: {0} Item: {1}" & Chr(13) & "" & Chr(10) & "", "AutoCompleteItemSelected", itemText)
-
     textBox1.Text = textBox1.Text + eventlogmessage
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## MatchItem Event
 
@@ -210,36 +184,24 @@ PossibleMatch</td><td>
 Returns the possible match value that needs to be compared against AutoCompleteMatchItemEventArgs.CurrentText by the event handler.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
-
 private void autoComplete1_MatchItem(object sender, AutoCompleteMatchItemEventArgs args)
-
 {
-
-   //Cancels the match operation
-
+//Cancels the match operation
    e.Cancel = true;
-
 }
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub autoComplete1_MatchItem(ByVal sender As Object, ByVal args As AutoCompleteMatchItemEventArgs)
-
-   //Cancels the match operation
-
+//Cancels the match operation
    e.Cancel = true;
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}

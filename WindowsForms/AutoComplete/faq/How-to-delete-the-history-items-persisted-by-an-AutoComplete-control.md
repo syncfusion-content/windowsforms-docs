@@ -7,24 +7,20 @@ control: Tools
 documentation: ug
 ---
 
-
-
-# How to delete the history items persisted by AutoComplete?
+# How to Delete the History Items Persisted by AutoComplete
 
 You can delete the history items persisted by the AutoComplete control by calling the AutoComplete.ResetHistory() method.
 
-
-
+{% tabs %}
 {% highlight C# %}
-
 
 this.autoComplete1.ResetHistory();
 
-
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.autoComplete1.ResetHistory()
+
 {% endhighlight %}
+{% endtabs %}

@@ -7,29 +7,24 @@ control: TreeView
 documentation: ug
 ---
 
-# How to programmatically select a node in a TreeViewAdv control
+# How to Programmatically Select a Node in a TreeViewAdv Control
 
 Set the HideSelection property of the TreeViewAdv control to false and use the code snippet shown below.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Select the first node under node 1.
-
 this.treeViewAdv1.SelectedNode = this.treeViewAdv1.Nodes[1];
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Select the first node under node 1.
-
 Me.treeViewAdv1.SelectedNode = Me.treeViewAdv1.Nodes(1)
 
 {% endhighlight %}
+{% endtabs %}
 
 Setting the HideSelection property to false, ensures that the node remains selected, even when the TreeViewAdv control loses focus or does not have focus. 
-
