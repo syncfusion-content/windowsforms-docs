@@ -46,38 +46,28 @@ Resumes the painting of the control suspended by BeginUpdate method.</td></tr>
 
 N> While adding more than one node to the treeViewAdv control, calling the BeginUpdate and EndUpdate method will improve performance of the control.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.treeViewAdv1.SuspendExpandRecalculate=true; 
-
-
-
 this.treeViewAdv1.BeginUpdate();
 
 //add more number of nodes
 
-'...
-
+//...
 this.treeViewAdv1.EndUpdate();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.treeViewAdv1.SuspendExpandRecalculate=True
-
-
-
 Me.treeViewAdv1.BeginUpdate()
 
 'add more number of nodes
 
 '...
-
 Me.treeViewAdv1.EndUpdate()
 
 {% endhighlight %}
+{% endtabs %}

@@ -7,7 +7,6 @@ control: AutoLabel
 documentation: ug
 ---
 
-
 # Size
 
 This section illustrates the size settings of the AutoLabel control.
@@ -27,17 +26,16 @@ Enables automatic resizing based on font size.</td></tr>
 
 N> This is valid only for label controls that do not wrap text.
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.autoLabel1.AutoSize = true;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.autoLabel1.AutoSize = True
 
 {% endhighlight %}
+{% endtabs %}
