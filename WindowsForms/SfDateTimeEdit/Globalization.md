@@ -9,7 +9,7 @@ documentation: ug
 
 # Globalization
 
-`SfDateTimeEdit` control provides globalization support that helps to designing and developing a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, you should determine which cultures your application will support. 
+The `SfDateTimeEdit` control provides globalization support that allows you to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, determine the cultures that your application supports.
 
 {% tabs %}
 
@@ -31,9 +31,9 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalizatio
 
 {% endtabs %} 
 
-## Change Culture
+## Change culture
 
-By default, `SfDateTimeEdit` supports system's current culture. Based on the usage, culture of `SfDateTimeEdit` can be changed through `Culture` property. Date and time information displayed in `SfDateTimeEdit` changed based on Culture changes.
+By default, the `SfDateTimeEdit` supports system's current culture. Based on the usage, the culture of `SfDateTimeEdit` can be changed by using the `Culture` property. The date and time information displayed in the `SfDateTimeEdit` can be changed based on culture changes.
 
 {% tabs %}
 
@@ -91,6 +91,6 @@ dateTimeEdit.Culture = New CultureInfo("fr-FR")
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![](globalization-images/culture-fr.png)
