@@ -14,7 +14,6 @@ This section discusses the appearance, border styles and size settings of the Co
 
 The border styles for the ColorUIControl can be set through BorderStyle property.
 
-
 <table>
 <tr>
 <th>
@@ -26,33 +25,25 @@ BorderStyle</td><td>
 Sets border style for the control. The options are,{{ 'FixedSingle,' | markdownify }}{{ 'Fixed3D (default) and'  | markdownify }}{{ 'None.' | markdownify }}</td></tr>
 </table>
 
-
-
-
+{% tabs %}
 {% highlight c# %}
 
 this.colorUIControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 {% endhighlight  %}
-{% highlight vbnet %}
 
-
-
-
+{% highlight vb %}
 
 Me.colorUIControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](ColorUI_images/Overview_img236.jpeg) 
-
-
 
 ## Panel Sizing
 
 The Custom and User color panels can be stretched according to the size of the control using the below properties respectively.
-
 
 <table>
 <tr>
@@ -69,27 +60,21 @@ UserColorStretchOnResize</td><td>
 Gets or Sets enable stretch User colors panel on resize.</td></tr>
 </table>
 
-
-
-
-
+{% tabs %}
 {% highlight c# %}
-this.colorUIControl1.CustomColorsStretchOnResize = true;
 
+this.colorUIControl1.CustomColorsStretchOnResize = true;
 this.colorUIControl1.UserColorsStretchOnResize = true;
 
-
 {% endhighlight  %}
-{% highlight vbnet %}
 
-
-
+{% highlight vb %}
 
 Me.colorUIControl1.CustomColorsStretchOnResize = True
-
 Me.colorUIControl1.UserColorsStretchOnResize = True
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](ColorUI_images/Overview_img237.jpeg)
 
@@ -105,28 +90,22 @@ VisualStyles provides rich and professional look and feel UI for the ColorUICont
 * Office2016Black
 * Office2016DarkGray
 
-
 The visual style can be applied for the ColorUIControl using `VisualStyle` property.
 
 {% tabs %}
-
 {% highlight C# %}
 
 //Set the visual Style of the ColorUIControl control.
-
 this.colorUIControl1.VisualStyle = Syncfusion.Windows.Forms.ColorUIStyle.Office2016Colorful;
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
 'Set the visual Style of the ColorUI control.
-
 Me.colorUIControl1.VisualStyle = Syncfusion.Windows.Forms.ColorUIStyle.Office2016Colorful
  
 {% endhighlight %}
-
 {% endtabs %}
 
 ![](ColorUI_images/Office2016Colorful.jpeg)
