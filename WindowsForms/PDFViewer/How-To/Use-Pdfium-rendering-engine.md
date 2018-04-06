@@ -22,7 +22,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 	
 	![](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img2.png)
 	
-2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the &#34:Pdfium&#34: folder. 
+2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the &#34;Pdfium&#34; folder. 
 
 	The following code snippet illustrates the same, you can also find the project sample in the below link.
 
