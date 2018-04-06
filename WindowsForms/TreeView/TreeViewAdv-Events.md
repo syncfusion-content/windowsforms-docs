@@ -594,6 +594,7 @@ Console.Write("Gradient Background Changed Event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
