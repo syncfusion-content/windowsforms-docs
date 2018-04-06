@@ -9,11 +9,11 @@ documentation: ug
 
 # Watermark
 
-`SfDateTimeEdit` control allows to set the `Value` as null in default mode of `DateTimeEditingMode` and watermark can be shown on null value.
+The `SfDateTimeEdit` control allows you to set the `Value` to null in the default mode of the `DateTimeEditingMode`. The watermark can be shown on null value.
 
-## Null Value
+## Null value
 
-`SfDateTimeEdit` control accepts null values only when the `DateTimeEditingMode` is default. NullValue support in the `SfDateTimeEdit` control can be enabled by setting the `AllowNull` property to true. If the value is null and the editing text box is empty then the `Watermark` will be displayed as the text in `SfDateTimeEdit` control.
+The `SfDateTimeEdit` control accepts null values only when the `DateTimeEditingMode` is default. The NullValue support in the `SfDateTimeEdit` control can be enabled by setting the `AllowNull` property to true. If the value is null and the editing text box is empty then the `Watermark` will be displayed as the text in the `SfDateTimeEdit` control.
 
 {% tabs %}
 
@@ -41,13 +41,13 @@ dateTimeEdit.Value = Nothing
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![](watermark-images/nullvalue.png)
 
-## Change Watermark
+## Change watermark
 
-Watermark is the help content to display in the `SfDateTimeEdit` control when `AllowNull` property is true and the `Value` property is set to null. `Watermark` text will be displayed only when the control lost its focus. The context of the watermark text can be assigned by set the `Watermark` of SfDateTimeEdit.
+The watermark is a help content that is used to display in the `SfDateTimeEdit` control when the `AllowNull` property is true and the `Value` property is set to null. The `Watermark` text will be displayed only when the control lost its focus. The context of the watermark text can be assigned by setting the `Watermark` of the SfDateTimeEdit.
 
 {% tabs %}
 
@@ -79,6 +79,6 @@ dateTimeEdit.Watermark = "Choose a date"
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![](watermark-images/watermark.png)
