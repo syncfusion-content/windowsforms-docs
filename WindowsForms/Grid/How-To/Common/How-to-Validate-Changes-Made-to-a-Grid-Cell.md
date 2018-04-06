@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Validate Changes Made to a Grid Cell
-
-### Introduction
+# How to validate changes made to a Grid cell
 
 There are two events that can be used to validate the changes that are made to a grid cell: CurrentCellValidateString and CurrentCellValidating. CurrentCellValidateString is fired every time a key is pressed and the current text is passed as part of EventArgs. CurrentCellValidating is only fired once when the user tries to leave the current cell. 
 
@@ -42,18 +40,20 @@ In either event, if you want the validation to fail, set e.Cancel = True. Here i
 
 private void grid_CurrentCellValidating(object sender, CancelEventArgs e)
 {
-        GridCurrentCell cc = this.grid.CurrentCell;
-		//Prevents user from blanking out cells in column 2.
-        if (cc.ColIndex == 2)
+    GridCurrentCell cc = this.grid.CurrentCell;
+
+	//Prevents user from blanking out cells in column 2.
+    if (cc.ColIndex == 2)
+    {
+        string val = cc.Renderer.ControlText;
+
+        if (val.Length == 0)
         {
-                string val = cc.Renderer.ControlText;
-                if (val.Length == 0)
-                {
-						//No empty string in col 2.
-                        e.Cancel = true;
-                }
+			//No empty string in col 2.
+            e.Cancel = true;
         }
-// Grid_CurrentCellValidating
+    }
+    // Grid_CurrentCellValidating
 } 
 
 {% endhighlight %}
@@ -61,16 +61,18 @@ private void grid_CurrentCellValidating(object sender, CancelEventArgs e)
 {% highlight vb %}
 
 Private Sub grid_CurrentCellValidating(ByVal sender As Object, ByVal e As CancelEventArgs)
-     Dim cc As GridCurrentCell = Me.grid.CurrentCell
-	'Prevents user from blanking out cells in column 2.
-     If cc.ColIndex = 2 Then
-          Dim val As String = cc.Renderer.ControlText
-          If val.Length = 0 Then
+ Dim cc As GridCurrentCell = Me.grid.CurrentCell
+
+'Prevents user from blanking out cells in column 2.
+If cc.ColIndex = 2 Then
+Dim val As String = cc.Renderer.ControlText
+If val.Length = 0 Then
 		  
-			'No empty string in col 2.
-            e.Cancel = True 
-          End If
-     End If
+'No empty string in col 2.
+e.Cancel = True 
+End If
+End If
+
 'Grid_CurrentCellValidating
 End Sub 
 

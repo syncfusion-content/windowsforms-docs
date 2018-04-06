@@ -8,19 +8,21 @@ documentation: ug
 ---
 
 # Overview
-**SfButton** is an advanced button control capable of displaying text and image with various customizations. It provides options to customize the text, image, border and appearance in all state of the button.
 
-## Key Features
-Following are the key features of the **SfButton**.
+The SfButton is an advanced button control capable of displaying text and image with various customizations. It provide options to customize the text, image, border, and appearance in all states of the button.
 
-* Appearance - Supports to customize the appearance in all button states (hover, pressed, focused and disabled states)
+## Key features
 
-* Image - Supports to customize the image in all button states.
+Following are the key features of the SfButton:
 
-* Background Image - Support display the image in background of the button.
+* Appearance: Supports customizing the appearance in all button states (hover, pressed, focused, and disabled states).
 
-* Rich text -  Supports to display the rich text inside the SfButton.
+* Image: Supports customizing the image in all button states.
 
-* Wrap Text -  and Trimming Support to wrapping and trimming the button text.
+* Background image: Supports displaying the image in the background of the button.
 
-* AutoSize -  Support to adjust the size of the button based on the content.
+* Rich text:  Supports displaying the rich text inside the SfButton.
+
+* Wrap text and trimming: Supports wrapping and trimming the button text.
+
+* AutoSize: Supports adjusting the size of the button based on the content.

@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How Does the Helper class Support Percentage Sizing in GridControl / GridDataBoundGrid
-
-### Introduction
+# How Does the Helper class Support Percentage Sizing in GridControl/GridDataBoundGrid
 
 The example given below has a helper class that supports automatic sizing in both GridControl or GridDataBoundGrid in two ways. One way, referred as proportional sizing is where all the columns in the grid are equally sized. The other technique used is referred as the percentage sizing, which allows you to specify that certain columns should occupy certain percentages of the available space for these columns.
 

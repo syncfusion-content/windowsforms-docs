@@ -11,22 +11,22 @@ documentation: ug
 
 `SfCalendar` cells can be customized for mentioning some special or important days. 
 
-## Special Dates 
+## Special dates
 
-`SpecialDates` helps to hold the special Dates collection with icon and description for the dates which need to be highlighted. `SpecialDates` contains the following properties to customize the cells. 
+The `SpecialDates` helps you to hold the special dates collection with icon and description for dates which need to be highlighted. The `SpecialDates` contains the following properties to customize the cells:
 
-* **BackColor** - The Background color for the special date to fill the cell.
-* **Value** - The value for the special date.
-* **ForeColor** - The foreground color for the special date to draw the text.
-* **Image** - Image to display on special date cell.
-* **Font** - The font used to draw the SpecialDate.
-* **IsDateVisible** - A value indicating whether the Date Text will be visible in special date cell.
-* **Description** - The description for special date.
-* **ImageAlign** - The alignment of image in special date. 
-* **TextAlign** -  The alignment of date text in special date. 
-* **TextImageRelation** - The alignment of date text and image relative to each other in special date. 
+* **BackColor**: The background color for the special date to fill the cell.
+* **Value**: The value for the special date.
+* **ForeColor**: The foreground color for the special date to draw the text.
+* **Image**: Image to display on special date cell.
+* **Font**: The font that is used to draw the special date.
+* **IsDateVisible**: A value indicates whether the date text will be visible in the special date cell or not.
+* **Description**: The description for special date.
+* **ImageAlign**: Aligns an image in the special date. 
+* **TextAlign**: Aligns the date text in the special date. 
+* **TextImageRelation**: Aligns the date text and the image relative to each other in the special date.
 
-To customize the dates, use the following code example.
+To customize the dates, use the following code example:
 
 {% tabs %}
 
@@ -259,39 +259,39 @@ To customize the dates, use the following code example.
 
 ## Render cell on-demand
 
-This support is used to highlight or customize dates to mention some special date on-demand. `DrawCellEventArgs` provides the following data for the `DrawCell` event of calendar.
+This support is used to highlight or customize dates to mention some special date on-demand. The `DrawCellEventArgs` provides the following data for the `DrawCell` event of the calendar.
 
 
-* BackColor - To change background color of date cell to draw in calendar.
+* BackColor: Changes the background color of the date cell to draw in the calendar.
 
-* ForeColor - To change foreground color of date cell to draw in calendar.
+* ForeColor: Changes the foreground color of the date cell to draw in the calendar.
 
-* Value - To identify the date value of the cell to draw in calendar
+* Value: Identifies the date value of the cell to draw in the calendar.
 
-* IsSpecialDate - To indicate whether the date of cell is special date in calendar
+* IsSpecialDate: Indicates whether the date of the cell is special date in the calendar.
 
-* IsTrailingDate - To indicate whether the date of cell is special date in calendar
+* IsTrailingDate: Indicates whether the date of cell is trailing date for the current month.
 
-* IsWeekNumber - To indicate whether the date of cell is trailing date for current month.
+* IsWeekNumber: Indicates whether the value of cell is week number in the SfCalendar.
 
-* VerticalAlignment - To change the vertical alignment of the date text of the cell in calendar
+* VerticalAlignment: Changes the vertical alignment of date text of the cell in the calendar.
 
-* HorizontalAlignment - To change the horizontal alignment of the date text of the cell in calendar
+* HorizontalAlignment: Changes the horizontal alignment of the date text of the cell in the calendar.
 
-* ColumnIndex - To get the column index of cell to draw in calendar
+* ColumnIndex: Gets the column index of cell to draw in the calendar.
 
-* RowIndex - To get the row index of cell to draw in calendar
+* RowIndex: Gets the row index of cell to draw in the calendar.
 
-* CellBounds - To get the cell bounds of the date cell to draw in calendar
+* CellBounds: Gets the cell bounds of the date cell to draw in the calendar.
 
-* Image - To change the image for the date cell to draw in calendar
+* Image: Changes the image for the date cell to draw in the calendar.
 
-* ImageBounds - To change the image bounds of the date cell to draw in calendar
+* ImageBounds: Changes the image bounds of the date cell to draw in the calendar.
 
-* Handled - To handle the draw cell event. It will restrict to draw default text and user can draw their own text within the bounds of cell. 
+* Handled: This option is used to handle the draw cell event. It will restrict to draw default text, and you can draw own text within the bounds of the cell.
 
 
-The following code example illustrates how to customize the cell on-demand.
+The following code example illustrates how to customize the cell on-demand:
 
 {% tabs %}
 

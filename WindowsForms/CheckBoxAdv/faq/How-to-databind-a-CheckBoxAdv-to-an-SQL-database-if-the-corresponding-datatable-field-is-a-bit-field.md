@@ -7,45 +7,34 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# How to data bind a CheckBoxAdv to an SQL database if the corresponding data table field is a bit field
+# How to Databind a CheckBoxAdv to an SQL Database if the Corresponding DataTable Field is a Bit Field
 
 The CheckBoxAdv's IntValue property can be used to data bind bit values as illustrated below.
 
+{% tabs %}
 {% highlight c# %}
 
 private void Form1_Load(object sender, System.EventArgs e)
-
 {
 
 // Using CheckBoxAdv's IntValue property for Data binding.
-
 this.oleDbDataAdapter1.Fill(this.dataSet11.Table1);
-
 }
-
-
-
 this.checkBoxAdv1.DataBindings.Add("IntValue", this.dataSet11.Table1, "BitField");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
 ' Using CheckBoxAdv's IntValue property for Data binding.
-
 Me.oleDbDataAdapter1.Fill(Me.dataSet11.Table1)
-
 End Sub
-
-
-
 Me.checkBoxAdv1.DataBindings.Add("IntValue", Me.dataSet11.Table1, "BitField")
 
 {% endhighlight %}
+{% endtabs %}
 
 A sample which demonstrates how bit values are used to set the state of the CheckBoxAdv is available in the below sample installation path.
 

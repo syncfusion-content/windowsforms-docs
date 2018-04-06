@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Performance of DataBound Grid 
+# Performance
 
 Essential DataBound Grid can handle large amount of data without a performance hit.
 
@@ -17,9 +17,9 @@ Essential DataBound Grid can handle large amount of data without a performance h
 
 
 
-For more details, refer to the sample: _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Grid Performance Demo_
+For more details, refer to the sample:** _<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\2.0\Data Bound\Grid Performance Demo_**
 
-## Example
+### Example
 
 The Grid can be loaded by specifying the number of records and using the following options, Use OptimizedListChangeEvent, Use ResizeToFit on ColWidths and Use DataTableList.
 

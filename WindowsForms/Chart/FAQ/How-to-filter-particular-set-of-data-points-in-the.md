@@ -13,11 +13,9 @@ Data is filtered on a series-by-series basis. When series data points are filter
 
 Also, you can reflect changes in data by filtering a particular set of data points using the Grouping Engine. While using the grouping engine, the main data source for the whole engine can be set. The TableDescriptor will pick up the ItemProperties from the SourceList, and table will be initialized at run time with records from the list. Using the RecordFilterDescriptor class, you can filter the chart point values by comparing it against a given constant value. The filtered points will be added to the series.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 // Generating Series
 
@@ -41,8 +39,6 @@ list.Add(new Data(i, a[i]));
 
 this.chartControl1.Series.Add(series);
 
-
-
 // Bind it to the model
 
 Engine group=new Engine();
@@ -60,8 +56,6 @@ group.TableDescriptor.RecordFilters.Add (record);
 System.Diagnostics.Trace.WriteLine("Filtered Record Count:" + group.Table.FilteredRecords.Count);
 
 System.Diagnostics.Trace.WriteLine("Values greater than 30:");
-
-
 
 // Filtering Data
 
@@ -87,9 +81,7 @@ this.label2.Text = "Number of Filtered points: "+group.Table.FilteredRecords.Cou
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' Generating Series
 
@@ -111,8 +103,6 @@ Next i
 
 Me.chartControl1.Series.Add(series)
 
-
-
 ' Bind it to the model
 
 Dim group As Engine = New Engine()
@@ -130,8 +120,6 @@ group.TableDescriptor.RecordFilters.Add (record)
 System.Diagnostics.Trace.WriteLine("Filtered Record Count:" & group.Table.FilteredRecords.Count)
 
 System.Diagnostics.Trace.WriteLine("Values greater than 30:")
-
-
 
 ' Filtering Data
 
@@ -154,4 +142,6 @@ Next rec
 Me.label2.Text = "Number of Filtered points: " & group.Table.FilteredRecords.Count.ToString()
 
 {% endhighlight %}
+
+{% endtabs %}
 

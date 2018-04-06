@@ -13,68 +13,38 @@ A CheckBox can be placed in a header cell of the GridGroupingControl by handling
 
 In the TableControl.MouseUp event handler, CellRenderer's MouseUp has to be raised. By default, SelectCells MouseController calls CellRenderer's MouseUp, which in turn raises CheckBoxClick. DragGroupHeader MouseController, which is for the header cells and does not call Renderer's MouseUp. So you have to explicitly call Renderer's MouseUp from TableControl's MouseUp checking for MouseController type. Refer to the attached sample for more details.
 
-## Example
-
-
-
-
+{% tabs %}
 {% highlight C# %}
 
-
- this.gridGroupingControl1.TableControl.MouseUp += new MouseEventHandler(TableControl_MouseUp);
-
+this.gridGroupingControl1.TableControl.MouseUp += new MouseEventHandler(TableControl_MouseUp);
 private void TableControl_MouseUp(object sender, MouseEventArgs e)
-
 {
-
-      int row, col;
-
-      this.gridGroupingControl1.TableControl.PointToRowCol(new Point(e.X, e.Y), out row, out col);
-
-      GridTableCellStyleInfo style = this.gridGroupingControl1.TableControl.Model[row, col];
-
-      IMouseController controller;
-
-      this.gridGroupingControl1.TableControl.MouseControllerDispatcher.HitTest(new Point(e.X, e.Y), e.Button, e.Clicks, out controller);
-
-      if(controller.Name == "DragGroupHeader")
-
-      {
-
-           this.gridGroupingControl1.TableControl.GetCellRenderer(row, col).RaiseMouseUp(row, col, e);
-
-      }
+  int row, col;
+  this.gridGroupingControl1.TableControl.PointToRowCol(new Point(e.X, e.Y), out row, out col);
+  GridTableCellStyleInfo style = this.gridGroupingControl1.TableControl.Model[row, col];
+  IMouseController controller;
+  this.gridGroupingControl1.TableControl.MouseControllerDispatcher.HitTest(new Point(e.X, e.Y), e.Button, e.Clicks, out controller);
+  if(controller.Name == "DragGroupHeader")
+  {
+       this.gridGroupingControl1.TableControl.GetCellRenderer(row, col).RaiseMouseUp(row, col, e);
+  }
 
 }
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 AddHandler gridGroupingControl1.TableControl.MouseUp, AddressOf TableControl_MouseUp
-
 Private Sub TableControl_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs)
-
-       Dim row, col As Integer
-
-       Me.gridGroupingControl1.TableControl.PointToRowCol(New Point(e.X, e.Y), row, col)
-
-       Dim style As GridTableCellStyleInfo = Me.gridGroupingControl1.TableControl.Model(row, col)
-
-       Dim controller As IMouseController
-
-       Me.gridGroupingControl1.TableControl.MouseControllerDispatcher.HitTest(New Point(e.X, e.Y), e.Button, e.Clicks, controller)
-
-       If controller.Name = "DragGroupHeader" Then
-
-             Me.gridGroupingControl1.TableControl.GetCellRenderer(row, col).RaiseMouseUp(row, col, e)
-
-       End If
-
+   Dim row, col As Integer
+   Me.gridGroupingControl1.TableControl.PointToRowCol(New Point(e.X, e.Y), row, col)
+   Dim style As GridTableCellStyleInfo = Me.gridGroupingControl1.TableControl.Model(row, col)
+   Dim controller As IMouseController
+   Me.gridGroupingControl1.TableControl.MouseControllerDispatcher.HitTest(New Point(e.X, e.Y), e.Button, e.Clicks, controller)
+   If controller.Name = "DragGroupHeader" Then
+   Me.gridGroupingControl1.TableControl.GetCellRenderer(row, col).RaiseMouseUp(row, col, e)
+   End If
 End Sub
 {% endhighlight %}
-
+{% endtabs %}
 

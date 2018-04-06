@@ -13,126 +13,85 @@ To suppress the TableControlCurrentCellKeyDown event, enable the SuppressKeyPres
 
 1. Suppress the KeyDown event as given in the following code:
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-		void gridGroupingControl1_TableControlCurrentCellKeyDown(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlKeyEventArgs e)
+void gridGroupingControl1_TableControlCurrentCellKeyDown(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlKeyEventArgs e)
+{
+	e.Inner.SuppressKeyPress = true;
+}
+{% endhighlight %}
 
-				{
+{% highlight vb %}
 
-					e.Inner.SuppressKeyPress = true;
-
-				}
-
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vb
-
-		Private Sub gridGroupingControl1_TableControlCurrentCellKeyDown(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlKeyEventArgs)
-
-					e.Inner.SuppressKeyPress = True
-
-				End Sub
-
-   ~~~
-   {:.prettyprint }
+Private Sub gridGroupingControl1_TableControlCurrentCellKeyDown(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlKeyEventArgs)
+e.Inner.SuppressKeyPress = True
+End Sub
+{% endhighlight %}
+{% endtabs %}
 
 2. Handle the ProcessCmdKey() method to get the keys data as given in the following code: 
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-		protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+{
+	Keys keyCode = keyData & Keys.KeyCode;
+	switch (keyCode)
+	{
+		case Keys.Down: Console.WriteLine("down");                 
+			break;
 
-				{
+		case Keys.Up: Console.WriteLine("Up");
+			break;
 
-					Keys keyCode = keyData & Keys.KeyCode;
+		case Keys.Right: Console.WriteLine("Right");
+			break;
 
-					switch (keyCode)
+		case Keys.Left: Console.WriteLine("Left");
+			break;
 
-					{
+		case Keys.PageUp: Console.WriteLine("PageUp");
+			break;
 
-						case Keys.Down: Console.WriteLine("down");                 
+		case Keys.PageDown: Console.WriteLine("PageDown");
+			break;
+	}            
+		return base.ProcessCmdKey(ref msg, keyData);
+}
+{% endhighlight %}
 
-							break;
+{% highlight vb %}
 
-						case Keys.Up: Console.WriteLine("Up");
+Protected Overrides Function ProcessCmdKey(ByRef msg As Message, ByVal keyData As Keys) As Boolean
+Dim keyCode As Keys = keyData And Keys.KeyCode
+Select Case keyCode
+Case Keys.Down
+Console.WriteLine("down")
+Exit Select
 
-							break;
+Case Keys.Up
+Console.WriteLine("Up")
+Exit Select
 
-						case Keys.Right: Console.WriteLine("Right");
+Case Keys.Right
+Console.WriteLine("Right")
+Exit Select
 
-							break;
+Case Keys.Left
+Console.WriteLine("Left")
+Exit Select
 
-						case Keys.Left: Console.WriteLine("Left");
+Case Keys.PageUp
+Console.WriteLine("PageUp")
+Exit Select
 
-							break;
-
-						case Keys.PageUp: Console.WriteLine("PageUp");
-
-							break;
-
-						case Keys.PageDown: Console.WriteLine("PageDown");
-
-							break;
-
-					}            
-
-					return base.ProcessCmdKey(ref msg, keyData);
-
-				}
-
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vb
-
-		Protected Overrides Function ProcessCmdKey(ByRef msg As Message, ByVal keyData As Keys) As Boolean
-
-					Dim keyCode As Keys = keyData And Keys.KeyCode
-
-					Select Case keyCode
-
-						Case Keys.Down
-
-							Console.WriteLine("down")
-
-							Exit Select
-
-						Case Keys.Up
-
-							Console.WriteLine("Up")
-
-							Exit Select
-
-						Case Keys.Right
-
-							Console.WriteLine("Right")
-
-							Exit Select
-
-						Case Keys.Left
-
-							Console.WriteLine("Left")
-
-							Exit Select
-
-						Case Keys.PageUp
-
-							Console.WriteLine("PageUp")
-
-							Exit Select
-
-						Case Keys.PageDown
-
-							Console.WriteLine("PageDown")
-
-							Exit Select
-
-					End Select
-
-					Return MyBase.ProcessCmdKey(msg, keyData)
-
-				End Function
-
-   ~~~
-   {:.prettyprint }
+Case Keys.PageDown
+Console.WriteLine("PageDown")
+Exit Select
+End Select
+Return MyBase.ProcessCmdKey(msg, keyData)
+End Function
+{% endhighlight %}
+{% endtabs %}

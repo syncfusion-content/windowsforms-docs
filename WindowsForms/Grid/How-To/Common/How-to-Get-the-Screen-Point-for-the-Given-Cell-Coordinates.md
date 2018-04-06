@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Get the Screen Point for the Given Cell Coordinates
-
-### Introduction
+# How to get the screen point for the given cell coordinates
 
 You can get the cell's rectangle in grid coordinates from RangeInfoToRectangle method. Then with the rectangle's coordinates, you can get the screen point using PointToScreen method.
 

@@ -215,7 +215,7 @@ Event</td></tr>
 
 ## Sample Link
 
-_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Card View Demo_
+**_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\Card View Demo_**
 
 ## Enable the Card View Layout
 
@@ -227,7 +227,7 @@ GridCardView card = new GridCardView();
 card.CaptionField = "ProductName";
 card.WireGrid(this.gridDataBoundGrid1);
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Private card As New GridCardView()
 card.CaptionField = "ProductName"
 card.WireGrid(Me.gridDataBoundGrid1)

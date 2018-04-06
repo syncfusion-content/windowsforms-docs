@@ -16,7 +16,7 @@ The simplest way to change the column order in a Grid Data Bound Grid is to use 
 //Moves columns 4 and 5, to column 1.
 this.gridDataBoundGrid1.Model.Cols.MoveRange(4, 2, 1);
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Moves columns 4 and 5, to column 1.
 Me.GridDataBoundGrid1.Model.Cols.MoveRange(4, 2, 1)
 {% endhighlight  %}

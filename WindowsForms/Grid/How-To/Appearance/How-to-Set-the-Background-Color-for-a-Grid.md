@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Set the Background Color for a Grid
-
-### Introduction
+# How to set the Background color for a Grid
 
 To set the BackColor for the area of the grid populated by cells, you must set the grid.BackColor property to the color. The grid display may also have regions where there are no cells. These regions will be the grid's client area where there are no cells or scrollbars. 
 
@@ -34,7 +32,5 @@ grid.Properties.BackgroundColor = Color.Orange
 
 {% endhighlight %}
 {% endtabs %}
+
 ![](How-to-Set-the-Background-Color-for-a-Grid_images/How-to-Set-the-Background-Color-for-a-Grid_img1.jpeg)
-
-
-

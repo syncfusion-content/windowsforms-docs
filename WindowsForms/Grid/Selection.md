@@ -10,7 +10,7 @@ documentation: ug
 
 The selection is the process of highlighting. This section will explain about the types of selection available for GridControl and its usability’s. 
 
-## Range selection
+## Range Selection
 
 The particular range of cells/rows/columns/table in the grid can be selected by setting the [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AllowSelection.html#) property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
 
@@ -162,18 +162,14 @@ When the selection is added to the grid, it will be notified by using the [Selec
 this.gridControl1.SelectionChanging +=gridControl1_SelectionChanging;
 
 void gridControl1_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
-
 {
-
-//Prevent cell from selection
-if (e.Range.Contains(GridRangeInfo.Cell(2, 2)))
-
-e.Cancel = true;
+    //Prevent cell from selection
+    if (e.Range.Contains(GridRangeInfo.Cell(2, 2)))
+    e.Cancel = true;
 
 //Prevent column from selection
-if (e.Range.IntersectsWith(GridRangeInfo.Col(3)))
-
-e.Cancel = true;
+    if (e.Range.IntersectsWith(GridRangeInfo.Col(3)))
+    e.Cancel = true;
 
 }
 {% endhighlight %}
@@ -202,7 +198,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Selection colors
+## Selection Colors
 
 The range selection color of the grid can be changed by setting the required color to the [AlphaBlendSelectionColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AlphaBlendSelectionColor.html#) property. The default Alpha blend selection color is blue.
 
@@ -235,7 +231,7 @@ gridControl.ResetAlphaBlendSelectionColor()
 {% endhighlight %}
 {% endtabs %}
 
-### Setting the CurrentCell back color similar to the back color of the remaining selected cells
+### Setting the CurrentCell Back Color Similar to the Back Color of the Remaining Selected Cells
 
 When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CellDrawn_EV.html#) event.
 
@@ -246,18 +242,16 @@ this.gridControl1.CellDrawn += gridControl1_CellDrawn;
 
 void gridControl1_CellDrawn(object sender, GridDrawCellEventArgs e)
 {
-
-//Get the current cell
-GridCurrentCell cc = this.gridControl1.CurrentCell;
-if (e.RowIndex == cc.RowIndex && e.ColIndex == cc.ColIndex)
-{
-
+    //Get the current cell
+    GridCurrentCell cc = this.gridControl1.CurrentCell;
+    if (e.RowIndex == cc.RowIndex && e.ColIndex == cc.ColIndex)
+    {
 //Fill the selection color to the cells background
-using (SolidBrush br = new SolidBrush(this.gridControl1.AlphaBlendSelectionColor))
-{
-e.Graphics.FillRectangle(br, e.Bounds);
-}
-}
+        using (SolidBrush br = new SolidBrush(this.gridControl1.AlphaBlendSelectionColor))
+        {
+            e.Graphics.FillRectangle(br, e.Bounds);
+        }
+    }
 }
 {% endhighlight %}
 
@@ -294,16 +288,16 @@ GridRangeInfoList list = this.gridControl1.Model.SelectedRanges;
 
 foreach (GridRangeInfo range in list)
 {
-for (int i = range.Top; i <= range.Bottom; i++)
-{
-for (int j = range.Left; j <= range.Right; j++)
-{
+    for (int i = range.Top; i <= range.Bottom; i++)
+    {
+        for (int j = range.Left; j <= range.Right; j++)
+        {
 
 //Prints the text in the output screen.
-Trace.Write(this.gridControl1[i, j].Text + "\t");    
-}
-Trace.WriteLine("");
-}
+            Trace.Write(this.gridControl1[i, j].Text + "\t");    
+        }
+        Trace.WriteLine("");
+    }
 }
 {% endhighlight %}
 

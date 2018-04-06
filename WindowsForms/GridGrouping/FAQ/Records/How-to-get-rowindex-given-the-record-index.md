@@ -7,23 +7,20 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to get row index given the record index
+# How to Get Row Index Given the Record Index
 
 This can be done using the following code snippet.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 int position = gridGroupingControl1.Table.DisplayElements.IndexOf(record);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Dim position As Integer = gridGroupingControl1.Table.DisplayElements.IndexOf(record)
 
 {% endhighlight %}
-
+{% endtabs %}

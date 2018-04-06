@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Show ContextMenu in the Center of CurrentCell or Selected Cells Irrespective of the Mouse Click
+# How to show ContextMenu in the center of CurrentCell or Selected Cells Irrespective of the Mouse click
 
 This can be achieved by handling Grid's MouseDown event. In the event handler, the center location of the current cell or the selected range is calculated and the context menu is shown after moving the cursor to the center point. Below is the code snippet.
 
@@ -20,11 +20,13 @@ private void gridControl1_MouseDown(object sender, MouseEventArgs e)
     {
         GridCurrentCell cc = this.gridControl1.CurrentCell;
         Point pt = new Point(e.X, e.Y); //Retrieves mouse position
+     
         if(this.gridControl1.Selections.Ranges.Count > 0) //Selects more than one Cell.
         {
               pt = GridUtil.CenterPoint(this.gridControl1.RangeInfoToRectangle(this.gridControl1.Selections.Ranges.ActiveRange));
               Cursor.Position = this.gridControl1.PointToScreen(pt);
         }
+   
         else if(cc.HasCurrentCell) //Single Cell.
         {
              pt = GridUtil.CenterPoint(this.gridControl1.RangeInfoToRectangle(cc.RangeInfo));

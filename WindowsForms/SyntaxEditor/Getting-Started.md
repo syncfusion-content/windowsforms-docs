@@ -9,183 +9,308 @@ documentation: ug
 
 # Getting Started
 
-This section guides you on getting started with Windows application, controls etc. It comprises the following topics:
+This section explains how to create an interactive code editor application like Microsoft Visual Studio Editor by using the EditControl.
 
+## Assembly deployment
 
+The following list of assemblies should be added as reference to use the EditControl in any application:
 
-## Control Structure
+<table>
+<tr>
+<th>
+{{'**Required assemblies**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base.dll
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of Edit Control and various editor controls
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows.dll
+</td>
+<td>
+Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the Edit Control
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Edit.Windows.dll
+</td>
+<td>
+Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of Edit control
+</td>
+</tr>
+</table>
 
-The following screen shot illustrates the structure of the Edit Control.
+# Creating simple application with EditControl
 
+You can create the Windows Forms application with EditControl as follows:
 
+1. [Creating the project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+4. [Loading a file into Document](#loading-a-file-into-document)
+5. [Syntax Highlighting](#syntax-highlighting)
 
-![](Getting-Started_images/Getting-Started_img1.png)
+### Creating the project
 
+Create a new Windows Forms project in the Visual Studio to display the EditControl.
 
+## Adding control via designer
 
+The EditControl can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
-## Creating an Edit Control
+   * Syncfusion.Shared.Base.dll
+   * Syncfusion.Tools.Windows.dll
+   * Syncfusion.Edit.Windows.dll
 
-Essential Edit provides users with a powerful editing control, modeled after the VS.NET code editor. When complete, Edit will have almost all the code editing features available in VS.NET.
+![](Getting-Started_images/Getting-Started_img2.png)
 
-In the following sections, you will learn how to create an Edit Control and use it in windows application.
+## Adding control manually in code
 
+To add control manually in C#, follow the given steps:
 
+1. Add the following required assembly references to the project:
 
-### Through Designer
+   * Syncfusion.Shared.Base.dll
+   * Syncfusion.Tools.Windows.dll
+   * Syncfusion.Edit.Windows.dll
 
-The following steps illustrate how to create an Edit Control through designer.
+2. Create `EditControl` control instance and add it to the form.
 
-1. Open the host form (or user control) within the Visual Studio.NET designer, and drag the Edit Control from the VS.NET toolbox onto the form. This will create an instance of the Edit Control and add it to the form at the desired location.
+{% tabs %}
 
+{% highlight C# %}
 
+// Create the EditControl instance.
 
-   The following image shows Edit Control in the toolbox.
+private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
 
+editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
 
+// Set an appropriate size for the Edit Control.
 
-   ![](Getting-Started_images/Getting-Started_img2.jpeg)
+editControl1.Size = new Size(50, 50);
 
+// Set the Dock property to the appropriate DockStyle enumeration value if desired.
 
+editControl1.Dock = DockStyle.Fill;
 
+// Set an appropriate BorderStyle to the Edit Control instance.
 
-2. Customize the Edit Control as per your requirements by setting the properties of the control through the Properties grid.
-3. Run the application.
+editControl1.BorderStyle = BorderStyle.Fixed3D;
 
+// Adding the edit control to the form.
 
+this.Controls.Add(editControl1);
 
-The following illustration shows Edit Control created through designer.
+{% endhighlight %}
 
 
+{% highlight VB %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+'Create the EditControl instance.
 
+private editControl1 As Syncfusion.Windows.Forms.Edit.EditControl
 
+editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
 
+'Set an appropriate size for the Edit Control.
 
-### Through Code
+editControl1.Size = new Size(50, 50)
 
-The following steps illustrate how to create an Edit Control programmatically.
+' Set the Dock property to the appropriate DockStyle enumeration value if desired.
 
-1. Import the Edit Control package in your application for easier coding experience.
+editControl1.Dock = DockStyle.Fill
 
-   ~~~ cs
+'Set an appropriate BorderStyle to the Edit Control instance.
 
-		using Syncfusion.Windows.Forms.Edit;
+editControl1.BorderStyle = BorderStyle.Fixed3D
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
+' Adding the edit control to the form.
 
+Me.Controls.Add(editControl1)
 
-		Imports Syncfusion.Windows.Forms.Edit
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% endtabs %}
 
-2. Create an instance of the Edit Control.
+The following illustration shows Edit Control was created.
 
-   ~~~ cs
+![](Getting-Started_images/Getting-Started_img3.png)
 
-		private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
+## Loading a file into Document
 
-		editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
+`LoadFile` method of Edit Control helps to loads the content of any desired file into the Edit Control, instead of typing the code in it.
 
-   ~~~ 
-   {:.prettyprint }
-   
-   ~~~ vbnet
+{% tabs %}
 
-		Private editControl1 As Syncfusion.Windows.Forms.Edit.EditControl
+{% highlight C# %}
 
-		editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
+// Loading the files into edit control by passing the file name as parameter to the LoadFile method.
 
-   ~~~
-   {:.prettyprint }
+this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs");
 
-3. Set an appropriate size for the Edit Control.
+{% endhighlight %}
 
-   ~~~ cs
 
-		editControl1.Size = new Size(50, 50);
+{% highlight VB %}
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
+` Loading the files into edit control by passing the file name as parameter to the LoadFile method.
 
-		editControl1.Size = New Size(50, 50)
+Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs")
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-4. Set the Dock property to the appropriate DockStyle enumeration value if desired.
+{% endtabs %}
 
-   ~~~ cs
+## Syntax highlighting
 
-		editControl1.Dock = DockStyle.Fill;
+The Edit Control provides built-in support for a procedural, markup and SQL languages and facilitates the users to provide custom language configurations. By using the `ApplyConfiguration` method, we can set the Edit Control to use any of the pre-defined configuration settings.
 
-   ~~~ 
-   {:.prettyprint }
+**Built-in syntax highlighting languages**
 
-   ~~~ vbnet
+The EditControl has a built-in syntax highlighting support for the following languages.
 
-		editControl1.Dock = DockStyle.Fill
-   ~~~
-   {:.prettyprint }
+  * C
+  * C#
+  * Delphi
+  * XML
+  * HTML
+  * VB.NET
+  * SQL
+  * Java
+  * VBScript
+  * JScript
+  * PowerShell
+  * Text
 
+The following code example illustrates the C# configuration settings in Edit Control.
 
-5. Set an appropriate BorderStyle to the Edit Control instance.
+{% tabs %}
 
+{% highlight C# %}
 
-   ~~~ cs
+// Considering configuration settings for C# as an example. Using the KnownLanguages enumerator.
 
-		editControl1.BorderStyle = BorderStyle.Fixed3D;
+this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
 
-		editControl1.BorderStyle = BorderStyle.Fixed3D
+{% highlight VB %}
 
-   ~~~
-   {:.prettyprint }
+' Considering configuration settings for C# as an example. Using the KnownLanguages enumerator.
 
-6. Add this instance of the Edit Control to the Host Form or an UserControl.
+Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
-   ~~~ cs
+{% endhighlight %}
 
-		// Adding instance of the EditControl to the Host Form.
+{% endtabs %}
 
-		this.Controls.Add(editControl1);
+![](Getting-Started_images/Getting-Started_img4.png)
 
-   ~~~
-   {:.prettyprint }  
+**Custom language configuration**
 
-   ~~~ vbnet
+Edit Control provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the Edit Control by using the `Configurator.Open` and `ApplyConfiguration` methods, as shown in the below code snippet.
 
-		' Adding instance of the EditControl to the Host Form.
+The following example illustrates the same as follows:
 
-		Me.Controls.Add(editControl1)
+**Step 1** : Creating a Configuration file
 
-   ~~~
-   {:.prettyprint }
+The following code snippet illustrates a sample configuration file that can be used for syntax highlighting a LISP-like code.
 
-7. Run the application.
+{% highlight xaml %}
 
+<ConfigLanguage name="LISP">
 
+        <formats>
 
-The following illustration shows Edit Control created through code.
+                <format name="Text" Font="Courier New, 10pt" FontColor="Salmon" />
 
+                <format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
 
+                <format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+                <format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
 
+        </formats>
 
-{% seealso %}
+        <extensions>
 
-[Through Designer](#through-designer)
+                <extension>lsp</extension>
 
-{% endseealso %}
+        </extensions>
+
+        <lexems>
+
+                <lexem BeginBlock="(" Type="Operator" />
+
+                <lexem BeginBlock=")" Type="Operator" />
+
+                <lexem BeginBlock="'" Type="Operator" />
+
+                <lexem BeginBlock="car" Type="KeyWord" />
+
+                <lexem BeginBlock="cdr" Type="KeyWord" />
+
+                <lexem BeginBlock="cons" Type="KeyWord" />
+
+        </lexems>
+
+        <splits>
+
+                <split>#Region</split>
+
+                <split>#End Region</split>
+
+        </splits>
+
+</ConfigLanguage>
+
+{% endhighlight %}
+
+**Step 2** : How to Configure the created configuration file in Edit Control
+
+{% tabs %}
+
+{% highlight C# %}
+
+private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
+
+// Plug-in an external configuration file.
+
+this.editControl1.Configurator.Open(configFile);
+
+// Apply the configuration defined in the configuration file.
+
+this.editControl1.ApplyConfiguration("LISP");
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
+
+' Plug-in an external configuration file.
+
+Me.editControl1.Configurator.Open(configFile)
+
+' Apply the configuration defined in the configuration file.
+
+Me.editControl1.ApplyConfiguration("LISP")
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/Getting-Started_img5.png)

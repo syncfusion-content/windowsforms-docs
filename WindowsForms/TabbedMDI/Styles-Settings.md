@@ -50,7 +50,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 '2D
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRenderer2D)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRenderer2D)
 
 {%endhighlight %}
 
@@ -79,7 +79,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 '3D
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRenderer3D)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRenderer3D)
 
 {%endhighlight %}
 
@@ -107,7 +107,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'Workbook
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode)
 
 {%endhighlight %}
 
@@ -135,7 +135,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'WhidbeyStyle
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWhidbey)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererWhidbey)
 
 {%endhighlight %}
 
@@ -163,7 +163,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'DockingWhidbeyStyle
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererDockingWhidbey)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererDockingWhidbey)
 
 {%endhighlight %}
 
@@ -191,7 +191,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'DockingWhidbeyBetaStyle
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererDockingWhidbeyBeta)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererDockingWhidbeyBeta)
 
 {%endhighlight %}
 
@@ -219,7 +219,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'Office2003
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2003)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2003)
 
 {%endhighlight %}
 
@@ -248,7 +248,7 @@ this.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Blue;
 
 'Office2007Blue
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2007)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2007)
 Me.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Blue
 
 {%endhighlight %}
@@ -278,7 +278,7 @@ this.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Black;
 
 'Office2007Black
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2007)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2007)
 Me.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Black
 
 {%endhighlight %}
@@ -308,7 +308,7 @@ this.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Silver;
 
 'Office2007Silver
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2007)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2007)
 Me.tabbedMDIManager.Office2007ColorScheme = Office2007Theme.Silver
 
 {%endhighlight %}
@@ -337,7 +337,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.OneNoteSt
 
 'OneNoteStyle
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.OneNoteStyleRenderer)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.OneNoteStyleRenderer)
 
 {%endhighlight %}
 
@@ -365,7 +365,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.OneNoteSt
 
 'OneNoteStyleFlatTabsStyle
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.OneNoteStyleFlatTabsRenderer)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.OneNoteStyleFlatTabsRenderer)
 
 {%endhighlight %}
 
@@ -393,7 +393,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'InternetExplorer7
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererIE7)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererIE7)
 
 {%endhighlight %}
 
@@ -421,7 +421,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'Metro
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererMetro)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererMetro)
 
 {%endhighlight %}
 
@@ -449,7 +449,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'Office2016Colorful
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
 
 {%endhighlight %}
 
@@ -477,7 +477,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'Office2016White
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016White)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016White)
 
 {%endhighlight %}
 
@@ -505,7 +505,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'Office2016DarkGray
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016DarkGray)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016DarkGray)
 
 {%endhighlight %}
 
@@ -533,7 +533,7 @@ this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRender
 
 'Office2016Black
 
-Me.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Black)
+Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Black)
 
 {%endhighlight %}
 

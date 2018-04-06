@@ -7,11 +7,9 @@ control: Grid
 documentation: ug
 ---
 
-# How to Overcome SendKey Exception in Currency Cell
+# How to overcome SendKey exception in currency cell
 
 CurrentCellKeyDown event cannot be handled for CurrencyTextbox when Windows Forms application is hosted into Internet Explorer. It will throw an error message as,“SendKeys cannot run inside this application.” To overcome this exemption, set ActivateSendKey property to false. 
-
-The following code illustrates this: 
 
 {% tabs %}
 {% highlight c# %}

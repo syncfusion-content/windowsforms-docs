@@ -9,8 +9,6 @@ documentation: ug
 
 # How to Print a Grid
 
-### Introduction
-
 GridPrintDocument class will allow you to [print](http://help.syncfusion.com/windowsforms/grid/virtual-grid#print-preview-and-printing) your grids. Here is a button click event handler that will show you how to use this class.
 
 {% tabs %}
@@ -56,6 +54,7 @@ private void menuItem13_Click(object sender, System.EventArgs e)
 Private Sub menuItem13_Click(ByVal sender As Object, ByVal e As System.EventArgs)
     If Not (Me.grid Is Nothing) Then
         Try
+	
 			'Creates a print document for the grid.
             Dim pd As New GridPrintDocument(Me.grid)
 

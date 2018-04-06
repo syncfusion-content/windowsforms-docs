@@ -1,0 +1,25 @@
+---
+layout: post
+title: Limitation | Windows Forms | Syncfusion
+description: This section explains the limitations of the SfScrollFrame.
+platform: WindowsForms
+control: SfScrollFrame
+documentation: ug
+---
+
+# Limitation
+
+## Applicable controls for setting the ScrollFrame
+
+The `SfScrollFrame` can be used for the controls derived from the Microsoft ScrollableControl such as:
+
+* Panel
+* ContainerControl
+* Listbox
+* ListView
+
+The `SfScrollFrame` cannot be attached to the controls defined its scrollbar by own i.e. creating custom scrollbars for both the horizontal and vertical orientations.
+
+## ScrollBar LargeChange 
+
+The `LargeChange` cannot be changed for the attached controls. As `LargeChange` is differed for every controls based on its available items (may be controls and inner controls), and `LargeChange` cannot be decided at application level. 

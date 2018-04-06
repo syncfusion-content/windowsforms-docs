@@ -18,72 +18,110 @@ This section provides information on how to write syntax for the following GridM
 * ShowCurrentCellBorderBehavior
 * DefaultGridBorderStyle
 
-## Activating Current Cell Behavior
+## Activating current cell behavior
 
 The following code illustrates how to activate current cell behavior:
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 this.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll;
 
 {% endhighlight %}
 
-## Allow scroll for Current cell view
+{% highlight vb %}
+
+Me.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll
+
+{% endhighlight %}
+{% endtabs %}
+
+## Allow scroll for current cell view
 
 The following code illustrates how to allow scroll for current cell view:
 
+{% tabs %}
 {% highlight c# %}
+
 this.gridGroupingControl1.AllowScrollCurrentCellInView = GridScrollCurrentCellReason.Activate;
 
 {% endhighlight %}
 
-## Alpha Blend Selection Color
+{% highlight vb %}
+
+Me.gridGroupingControl1.AllowScrollCurrentCellInView = GridScrollCurrentCellReason.Activate
+
+{% endhighlight %}
+{% endtabs %}
+
+## Alpha blend selection color
 
 The following code illustrates how to select alpha blend selection color: 
 
+{% tabs %}
 {% highlight c# %}
 
 this.gridGroupingControl1.AlphaBlendSelectionColor = Color.Red;
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Me.gridGroupingControl1.AlphaBlendSelectionColor = Color.Red
+
+{% endhighlight %}
+{% endtabs %}
+
 ## ClickedOnDisabledCellBehavior
 
 The following code illustrates how to define the current cell behavior when disabled cell is clicked: 
 
+{% tabs %}
 {% highlight c# %}
 
 this.gridGroupingControl1.ClickedOnDisabledCellBehavior = GridClickedOnDisabledCellBehavior.Default;
 
 {% endhighlight %}
 
+{% highlight vb %}
 
-## Show Current Cell Border Behavior
+Me.gridGroupingControl1.ClickedOnDisabledCellBehavior = GridClickedOnDisabledCellBehavior.Default
+
+{% endhighlight %}
+{% endtabs %}
+
+## Show current cell border behavior
 
 The following code illustrates how to show current cell border behavior: 
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.gridGroupingControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.HideAlways;
 
 {% endhighlight %}
 
+{% highlight vb %}
 
+Me.gridGroupingControl1.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.HideAlways
 
-## Default Grid Border Style
+{% endhighlight %}
+{% endtabs %}
+
+## Default Grid border style
 
 The following code illustrates how to set default grid border style: 
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.gridGroupingControl1.DefaultGridBorderStyle = GridBorderStyle.None;
 
 {% endhighlight %}
 
+{% highlight vb %}
 
+Me.gridGroupingControl1.DefaultGridBorderStyle = GridBorderStyle.None
 
-
+{% endhighlight %}
+{% endtabs %}

@@ -165,11 +165,11 @@ this.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerR
 
 {% endhighlight %}
 
+{% highlight vb %}
+
 Me.toolStripEx1.Office12Mode = True
 
 Me.toolStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode
-
-{% highlight vb %}
 
 {% endhighlight %}
 

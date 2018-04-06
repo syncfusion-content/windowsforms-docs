@@ -7,27 +7,22 @@ control: GridGrouping
 documentation: ug
 ---
 
-# How to find DisplayElement Type
+# How To Find DisplayElement Type
 
 You can find the type of particular DisplayElement using the code below.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Accesses the type of display element.
-
 Console.WriteLine(this.gridGroupingControl1.Table.DisplayElements[rowIndex].Kind);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Accesses the type of display element.
-
 Console.WriteLine(Me.gridGroupingControl1.Table.DisplayElements(rowIndex).Kind)
 
-
 {% endhighlight %}
+{% endtabs %}

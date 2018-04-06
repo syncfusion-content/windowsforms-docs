@@ -17,7 +17,6 @@ This section discusses the appearance and behavior settings of the CheckBoxAdv c
 
 The focus rectangle can be hidden or made visible using the below given property.
 
-
 <table>
 <tr>
 <th>
@@ -29,20 +28,19 @@ DrawFocusRectangle</td><td>
 Determines if the focus rectangle is visible when it gets the focus. The default value is set to 'True'.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.checkBoxAdv1.DrawFocusRectangle = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.checkBoxAdv1.DrawFocusRectangle = True
 
 {% endhighlight %}
+{% endtabs %}
 
 Behavior Settings
 
@@ -68,30 +66,23 @@ Tristate</td><td>
 Specifies whether the indeterminate state can be accessed through clicking.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.checkBoxAdv1.AutoHeight = true;
-
 this.checkBoxAdv1.ReadOnlyMode = true;
-
 this.checkBoxAdv1.Tristate= false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.checkBoxAdv1.AutoHeight = True
-
 Me.checkBoxAdv1.ReadOnlyMode = True
-
 Me.checkBoxAdv1.Tristate= False
 
 {% endhighlight %}
+{% endtabs %}
 
 A sample which demonstrates the ReadOnlyMode and Tristate properties of CheckBoxAdv is available in the below sample installation path.
 

@@ -6,9 +6,10 @@ platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
-# How to Clear a Filter?
+# How to Clear Filtering
 To clear all filters, call the groupingEngine.TableDescriptor.RecordFilters.Clear method.
 
+{% tabs %}
 {% highlight C# %}
 
 // Removes all the filters associated with the table.
@@ -21,7 +22,7 @@ this.gridGroupingControl1.TableDescriptor.RecordFilters.Remove(RecordFilterDescr
 this.gridGroupingControl1.TableDescriptor.RecordFilters.RemoveAt();
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Removes all the filters associated with the table.
 Me.gridGroupingControl1.TableDescriptor.RecordFilters.Clear()
@@ -33,5 +34,6 @@ Me.gridGroupingControl1.TableDescriptor.RecordFilters.Remove()
 Me.gridGroupingControl1.TableDescriptor.RecordFilters.RemoveAt()
 
 {% endhighlight %}
+{% endtabs %}
 
 N> To remove a particular filter, use the groupingEngine.TableDescriptor.RecordFilters.Remove or groupingEngine.TableDescriptor.RecordFilters.RemoveAt. To use Remove, you will need a reference to the RecordFilterDescriptor object that you want to delete or your RecordFilterDescriptor object would have to be named (setting the RecordFilterDescriptor.Name property or by passing a name string into its overloaded constructor).

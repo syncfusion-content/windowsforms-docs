@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Set the Text Color that Appears in a Cell
-
-## Introduction
+# How to set the text color that appears in a cell
 
 Harnessing the ability to customize text color to your application allows you endless possibilities. Use the TextColor property of cells style and set it to color value.
 
