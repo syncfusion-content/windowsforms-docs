@@ -17,7 +17,6 @@ It includes the below given topics.
 
 The CheckBoxAdv can be displayed in three different states which have been described below.
 
-
 <table>
 <tr>
 <th>
@@ -33,30 +32,23 @@ Checked</td><td>
 Gets / sets the checked state of the CheckBox.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.checkBoxAdv1.CheckState = System.Windows.Forms.CheckState.Checked;
-
 this.checkBoxAdv1.Checked = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.checkBoxAdv1.CheckState = System.Windows.Forms.CheckState.Checked
-
 Me.checkBoxAdv1.Checked = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img610.jpeg)
-
-
 
 ![](Overview_images/Overview_img611.jpeg)
 
@@ -118,54 +110,37 @@ IntValue</td><td>
 Gets / sets the int value. Refer Frequently Asked Questions section.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.checkBoxAdv1.CheckedInt = 3;
-
 this.checkBoxAdv1.CheckedString = "CheckBoxAdv is Checked";
-
 this.checkBoxAdv1.IndeterminateInt = 5;
-
 this.checkBoxAdv1.IndeterminateString = "CheckBoxAdv is Indeterminate";
 
 this.checkBoxAdv1.UncheckedInt = 3;
-
 this.checkBoxAdv1.UncheckedString = "CheckBoxAdv is Unchecked";
-
 this.checkBoxAdv1.StringValue = "String";
-
 this.checkBoxAdv1.IntValue = 5;
-
 this.checkBoxAdv1.BoolValue = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.checkBoxAdv1.CheckedInt = 3
-
 Me.checkBoxAdv1.CheckedString = "CheckBoxAdv is Checked"
-
 Me.checkBoxAdv1.IndeterminateInt = 5
-
 Me.checkBoxAdv1.IndeterminateString = "CheckBoxAdv is Indeterminate"
 
 Me.checkBoxAdv1.UncheckedInt = 3
-
 Me.checkBoxAdv1.UncheckedString = "CheckBoxAdv is Unchecked"
-
 Me.checkBoxAdv1.StringValue = "String"
-
 Me.checkBoxAdv1.IntValue = 5
-
 Me.checkBoxAdv1.BoolValue = True
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 

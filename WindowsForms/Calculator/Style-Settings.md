@@ -15,25 +15,21 @@ This section discusses on the following styles:
 
 The flat styles for the button objects in a Calculator control is set using CalculatorControl.FlatStyle property. The styles are Flat, Popup, Standard (default) and System.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img121.jpeg) 
-
-
 
 ## Themes and Button Styles
 
@@ -41,25 +37,21 @@ Me.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 
 Essential Tools Calculator control is themed by default. To disable, set ThemesEnabled property to false.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.calculatorControl1.ThemesEnabled = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.calculatorControl1.ThemesEnabled = False
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img122.jpeg) 
-
-
 
 ### Button Styles
 
@@ -73,80 +65,66 @@ The Calculator control supports the below button styles. UseVisualStyle property
 * Office2007
 * Metro
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.calculatorControl1.UseVisualStyle = true;
 
 //Setting Office2007 button style for the calculator control
-
 this.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2007;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.calculatorControl1.UseVisualStyle = True
 
 'Setting Office2007 button style for the calculator control
-
 Me.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2007;
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img123.jpeg) 
-
-
 
 ### OfficeColor Schemes
 
 Essential Tools Calculator control supports all the three OfficeColorSchemes. When the ButtonStyle is set to Office2007 style, the color schemes will be blue by default. It can be modified using Office2007Theme property.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vbn %}
 
 Me.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img124.png) 
-
-
 
 ### Custom Colors
 
 We can also apply custom colors to the Calculator control by setting Office2007Theme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(this, Color.Navy);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(Me, Color.Navy)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img125.jpeg) 
