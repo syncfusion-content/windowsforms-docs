@@ -48,51 +48,27 @@ Child Node: Specifies whether the search can be performed only on the child node
 
 The find and replace feature can be enabled for the TreeViewAdv control by using the following code:
 
+{% tabs %}
 {% highlight c# %}
 
-
-
- TreeViewAdvFindReplaceDialog dialog = new TreeViewAdvFindReplaceDialog(this.TreeView);
-
-
-
- dialog.Find("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
-
-
-
- dialog.FindAll("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
-
-
-
- dialog.Replace("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
-
-
-
- dialog.ReplaceAll ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+TreeViewAdvFindReplaceDialog dialog = new TreeViewAdvFindReplaceDialog(this.TreeView);
+dialog.Find("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+dialog.FindAll("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+dialog.Replace("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+dialog.ReplaceAll ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim dialog As New TreeViewAdvFindReplaceDialog(Me.TreeView)
-
-
-
 dialog.Find("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
-
-
-
 dialog.FindAll("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
-
-
-
 dialog.Replace ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
-
-
-
 dialog.ReplaceAll ("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
 
 {% endhighlight %}
+{% endtabs %}
 
 ##### Events
 
@@ -125,52 +101,41 @@ Cancel</td><td>
 This enables users to disable highlighting matched TreeNodeAdv.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
+Void treeViewAdv1_OnNodeBeforeFind(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeFindArgs e)
+{
 
+// This will return the matched TreeNodeAdv.
+    TreeNodeAdv matchedNode = e.Node;
 
-      Void treeViewAdv1_OnNodeBeforeFind(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeFindArgs e)
+// This will return the searched string.
+    string matchedString = e.SearchText;
 
-        {
-
-            // This will return the matched TreeNodeAdv.
-
-            TreeNodeAdv matchedNode = e.Node;
-
-            // This will return the searched string.
-
-            string matchedString = e.SearchText;
-
-            // Cancel arguments.
-
-            bool cancelFind = e.Cancel;
-
-        }
+// Cancel arguments.
+    bool cancelFind = e.Cancel;
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_OnNodeBeforeFind(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvBeforeFindArgs)
 
 ' This will return the matched TreeNodeAdv.
-
 Dim matchedNode As TreeNodeAdv = e.Node
 
 ' This will return the searched string.
-
 Dim matchedString As string = e.SearchText
 
 ' Cancel arguments.
-
 Dim cancelFind As Boolean = e.Cancel
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 OnNodeAfterFound Event
 
@@ -197,44 +162,34 @@ SearchText</td><td>
 This will return the search string to be highlighted in TreeNodeAdv.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
- void treeViewAdv1_OnNodeAfterFound(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs e)
+void treeViewAdv1_OnNodeAfterFound(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvAfterFindArgs e)
+{
 
-        {
+// This will return matched TreeNodeAdv.
+    TreeNodeAdv matchedNode = e.Node;
 
-            // This will return matched TreeNodeAdv.
-
-            TreeNodeAdv matchedNode = e.Node;
-
-            // This will return the searched string.
-
-            string searchedString = e.SearchText;
-
-        }
-
+// This will return the searched string.
+    string searchedString = e.SearchText;
+}
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_OnNodeAfterFound(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvAfterFindArgs)
 
-‘ This will return the matched TreeNodeAdv.
-
+' This will return the matched TreeNodeAdv.
 Dim matchedNode As TreeNodeAdv = e.Node
 
-‘ This will return the searched string.
-
+' This will return the searched string.
 Dim searchedString As string = e.SearchText
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 OnNodeReplacing Event
 
@@ -277,72 +232,58 @@ Cancel</td><td>
 This will enable users to disable replacing matched TreeNodeAdv text.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 void treeViewAdv1_OnNodeReplacing(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacingArgs e)
+{
 
-        {
+// This will return the replaced TreeNodeAdv.
+    TreeNodeAdv replaceNode = e.Node;
 
-            // This will return the replaced TreeNodeAdv.
+// This will return the searched string.
+    string matchedString = e.SearchText;
 
-            TreeNodeAdv replaceNode = e.Node;
+// This will return the replaced string.
+    string ReplacedString = e.ReplaceText;
 
-            // This will return the searched string.
+// TreeViewAdv search options.
+    TreeViewSearchOption searchOption = e.TreeViewSearchOption;
 
-            string matchedString = e.SearchText;
+// This will return the TreeViewAdv search range.
+    TreeViewSearchRange searchRange = e.TreeViewSearchRange;
 
-            // This will return the replaced string.
-
-            string ReplacedString = e.ReplaceText;
-
-            // TreeViewAdv search options.
-
-            TreeViewSearchOption searchOption = e.TreeViewSearchOption;
-
-            // This will return the TreeViewAdv search range.
-
-            TreeViewSearchRange searchRange = e.TreeViewSearchRange;
-
-            // Cancel arguments.
-
-            bool cancelReplace = e.Cancel;
-
-        }
+// Cancel arguments.
+    bool cancelReplace = e.Cancel;
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub treeViewAdv1_OnNodeReplacing(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacingArgs)
 
 ' This will return the replaced TreeNodeAdv.
-
 Dim replaceNode As TreeNodeAdv = e.Node
 
 ' This will return the searched string.
-
 Dim matchedString As string = e.SearchText
 
 ' This will return the replaced string.
-
 Dim ReplacedString As string = e.ReplaceText
 
 ' TreeViewAdv search options.
-
 Dim searchOption As TreeViewSearchOption = e.TreeViewSearchOption
 
 ' This will return the TreeViewAdv search range.
-
 Dim searchRange As TreeViewSearchRange = e.TreeViewSearchRange
 
 ' Cancel arguments.
-
 Dim cancelReplace As Boolean = e.Cancel
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 OnNodeReplaced Event
 
@@ -373,52 +314,39 @@ ReplaceText</td><td>
 This will return TreeNodeAdv text that has been replaced.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
+void treeViewAdv1_OnNodeReplaced(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacedArgs e)
+{
 
+// This will return the replaced TreeNodeAdv.
+    TreeNodeAdv replacedNode = e.Node;
 
-        void treeViewAdv1_OnNodeReplaced(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvOnReplacedArgs e)
+// This will return the searched string.
+    string matchedString = e.SearchText;
 
-        {
-
-            // This will return the replaced TreeNodeAdv.
-
-            TreeNodeAdv replacedNode = e.Node;
-
-            // This will return the searched string.
-
-            string matchedString = e.SearchText;
-
-            // This will return the replaced string.
-
-            string ReplacedString = e.ReplaceText;
-
-        }
+// This will return the replaced string.
+    string ReplacedString = e.ReplaceText;
+}
 
 {% endhighlight %}
 
+{% highlight vb %}
 
-
-{% highlight vbnet %}
-
- Private Sub treeViewAdv1_OnNodeReplaced(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacedArgs)
+Private Sub treeViewAdv1_OnNodeReplaced(sender As Object, e As Syncfusion.Windows.Forms.Tools. TreeNodeAdvOnReplacedArgs)
 
 ' This will return Replaced TreeNodeAdv
-
 Dim replacedNode As TreeNodeAdv = e.Node
 
 ' This will return Searched String
-
 Dim matchedString As String = e.SearchText
 
 ' This will return Replaced String
-
 Dim ReplacedString As String = e.ReplaceText
-
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img63.png)

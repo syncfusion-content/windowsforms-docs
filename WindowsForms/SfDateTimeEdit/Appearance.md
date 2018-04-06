@@ -9,21 +9,20 @@ documentation: ug
 
 # Customization
 
-Appearance of each and every part in the DateTimeEdit can be customized. SfDateTimeEdit allows to customize the DropDown icon, calendar, updown buttons through `style` properties.
+The appearance of each and every part in the DateTimeEdit can be customized. The SfDateTimeEdit allows you to customize the drop-down icon, calendar, and up-down buttons by using `style` properties.
 
-## Customize DateTimeEdit Appearance
+## Customize DateTimeEdit appearance
 
-BackColor, ForeColor and BorderColor of control can be customized through following `Style` properties of SfDateTimeEdit. UpDown and Dropdown button of SfDateTimeEdit control also can be customized through `Style`. 
+The BackColor, ForeColor, and BorderColor of the control can be customized by using the following `Style` properties of the SfDateTimeEdit. The up-down and drop-down buttons of the SfDateTimeEdit control can also be customized using the `Style`.
 
-* BackColor - To change the background color of DateTimeEdit.
-* ForeColor - To change the foreground color of date-time text in DateTimeEdit.
-* BorderColor - To change the border color of DateTimeEdit.
-* DisabledBackColor - To change the border color of DateTimeEdit in disabled or readonly state.
-* DisabledForeColor - To change the foreground color of date-time text in disabled or readonly state.
-* FocusedBorderColor - To change the border color of DateTimeEdit in focused state.
-* HoverBorderColor - To change the border color of DateTimeEdit in mouse hover state.
+* BackColor: Changes the background color of the DateTimeEdit.
+* ForeColor: Changes the foreground color of date-time text in the DateTimeEdit.
+* BorderColor: Changes the border color of the DateTimeEdit.
+* DisabledBackColor: Changes the border color of DateTimeEdit in disabled or readonly state.
+* DisabledForeColor: Changes the foreground color of date-time text in disabled or readonly state.
+* FocusedBorderColor: Changes the border color of DateTimeEdit in focused state.
+* HoverBorderColor: Changes the border color of DateTimeEdit on mouse hover.
 
-The following code snippets illustrates the customization.
 
 {% tabs %}
 
@@ -43,18 +42,18 @@ sfDateTimeEdit1.Style.BorderColor = Color.Red
 
 ![](appearance-images/bordercolor.png)
 
-## Customize dropdown appearance
+## Customize drop-down appearance
 
-BackColor and ForeColor of drop down icon to open the calendar can be customized by following `DropDown` style properties. The following `style` properties of `DropDown` used to change the color of dropdown icon in different states.
+The BackColor and ForeColor of drop-down icon to open the calendar can be customized by the following `DropDown` style properties. The following `style` properties of `DropDown` are used to change the color of drop-down icon in different states.
 
-* BackColor - To change the background color of dropdown icon in DateTimeEdit.
-* ForeColor - To change the foreground color of dropdown icon in DateTimeEdit.
-* HoverForeColor - To change the foreground color of dropdown icon in mouse hover state.
-* PressedForeColor - To change the foreground color of dropdown icon in pressed state.
+* BackColor: Changes the background color of drop-down icon in the DateTimeEdit.
+* ForeColor: Changes the foreground color of drop-down icon in the DateTimeEdit.
+* HoverForeColor: Changes the foreground color of drop-down icon on mouse hover.
+* PressedForeColor: Changes the foreground color of drop-down icon in pressed state.
 
-### Change visibility of dropdown button
+### Change visibility of drop-down button
 
-DropDown button in SfDateTimeEdit allows to open the popup calendar by mouse interaction. Visibility of DropDown button can be changed by `ShowDropDown` property. The following code snippets illustrates the same.
+The drop-down button in the SfDateTimeEdit allows you to open the pop-up calendar by using the mouse interaction. The visibility of drop-down button can be changed by the `ShowDropDown` property.
 
 {% tabs %}
 
@@ -86,14 +85,12 @@ Me.dateTimeEdit.ShowDropDown = false
 
 ![](appearance-images/showdropdown.png)
 
-## Customize updown appearance
+## Customize up-down appearance
 
-ForeColor of updown icon in the `SfDateTimeEdit` can be customized by following `Style` properties. The following `style` properties of SfDateTimeEdit used to change the color of updown icon in different states.
+The ForeColor of up-down icon in the `SfDateTimeEdit` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
 
-* UpDownForeColor - To change the foreground color of updown icon in DateTimeEdit.
-* UpDownHoverForeColor - To change the foreground color of updown icon in mouse hover state.
-
-The following code snippets illustrates the same.
+* UpDownForeColor: Changes the foreground color of up-down icon in the DateTimeEdit.
+* UpDownHoverForeColor: Changes the foreground color of up-down icon on mouse hover.
 
 {% tabs %}
 
@@ -121,9 +118,9 @@ Me.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue
 
 ![](appearance-images/updowncolor.png)
 
-### Change visibility of UpDown
+### Change visibility of up-down
 
-UpDown allows to change the value by increment or decrement the values of date, month and year based on the selected field. This value change by Up and Down buttons are only applicable when `DateTimeEditingMode` is Mask. Visibility of UpDown buttons can be changed by `ShowUpDown` property. The following code snippets illustrates the same.
+The up-down allows you to change the value by increment or decrement of values of the date, month, and year based on the selected field. The value change by up and down buttons are only applicable when the `DateTimeEditingMode` is mask. The visibility of up-down buttons can be changed by the `ShowUpDown` property.
 
 {% tabs %}
 
@@ -155,9 +152,9 @@ Me.dateTimeEdit.ShowUpDown = false
 
 ![](appearance-images/showupdown.png)
 
-## Customize Dropdown calendar Appearance
+## Customize drop-down calendar appearance
 
-DropDown Calendar of SfDateTimeEdit can be get from `MonthCalendar` property. All the [customization with calendar](/windowsforms/sfcalendar/appearance) will be reflected in dropdown calendar of SfDateTimeEdit. The below code snippets illustrates how to change the visibility of footer in dropdown calendar of SfDateTimeEdit.
+The drop-down calendar of the SfDateTimeEdit can be obtained from the `MonthCalendar` property. All the [customization with calendar](/windowsforms/sfcalendar/appearance) will be reflected in drop-down calendar of the SfDateTimeEdit. The following code snippets illustrates how to change the visibility of footer in the drop-down calendar of the SfDateTimeEdit:
 
 {% tabs %}
 
@@ -177,9 +174,9 @@ dateTimeEdit.MonthCalendar.ShowFooter = false
 
 ![](appearance-images/footer.png)
 
-## DropDown calendar Size customization
+## Drop-down calendar size customization
 
-Size of the dropdown calendar can be customized by `DropDownSize` property. The following code snippets illustrates the same.
+The size of the drop-down calendar can be customized by using the `DropDownSize` property.
 
 {% tabs %}
 

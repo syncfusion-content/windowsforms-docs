@@ -76,22 +76,21 @@ TransparentControls</td><td>
 Indicates if the control will have a transparent background.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.treeViewAdv1.TransparentControls = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.treeViewAdv1.TransparentControls = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img34.jpeg)
-
 
 
 ### Themed TreeView Control
@@ -154,59 +153,42 @@ NodeBackgroundPaint</td><td>
 This event when fired, paints the background of the node, when OwnerDrawNodes property is set to true.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.treeViewAdv1.OwnerDrawNodesBackground = true;
 
 // Background Paint Event
-
 private void treeViewAdv1_NodeBackgroundPaint(object sender, TreeNodeAdvPaintBackgroundEventArgs e)
-
 {
-
     if (e.Node.Index == 2 | e.Node.Index == 4)
-
     {
-
         Syncfusion.Drawing.BrushInfo br = new Syncfusion.Drawing.BrushInfo(Color.Orange);
-
         e.BrushInfo = br;
-
     }
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.treeViewAdv1.OwnerDrawNodesBackground = True
 
 ' Background Pain Event
-
 Private Sub treeViewAdv1_NodeBackgroundPaint(ByVal sender As Object, ByVal e As TreeNodeAdvPaintBackgroundEventArgs)
-
     If e.Node.Index = 2 Or e.Node.Index = 4 Then
-
 Dim br As Syncfusion.Drawing.BrushInfo = New Syncfusion.Drawing.BrushInfo(Color.Orange)
-
 e.BrushInfo = br
-
     End If
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img35.jpeg)
 
 
-## Painting the active and inactive nodes
+## Painting the Active and Inactive Nodes
 
 Background for the selected node can be set using SelectedNodeBackground property. The selection rectangle gets grayed out when the TreeViewAdv loses focus. If the user still wishes to maintain the node's active colors, then the InactiveSelectedNodeBackground and InactiveSelectedNodeForeColor properties can be set. 
 
@@ -231,31 +213,23 @@ InactiveSelectedNodeForeColor</td><td>
 Indicates the text color of the selected node when not focused.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.treeViewAdv1.InactiveSelectedNodeBackground = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.Ivory, System.Drawing.Color.DarkOrange);
-
 this.treeViewAdv1.InactiveSelectedNodeForeColor = System.Drawing.Color.SteelBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.treeViewAdv1.InactiveSelectedNodeBackground = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.Ivory, System.Drawing.Color.DarkOrange)
-
 Me.treeViewAdv1.InactiveSelectedNodeForeColor = System.Drawing.Color.SteelBlue
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img37.png)
-
-
 
 ## Foreground Settings
 
@@ -304,8 +278,6 @@ N> When you set the ForeColor property for TreeViewAdv control, it will get refl
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img45.jpeg)
 
-
-
 ## Drawing Selected Node Foreground
 
 Painting the foreground of the Specified Nodes
@@ -338,55 +310,37 @@ OwnerDrawNodes</td><td>
 Indicates if the BeforeNodePaint event will be fired before drawing a node.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.treeViewAdv1.OwnerDrawNodes = true;
 
 // Enabling Node's Foreground
-
 private void treeViewAdv1_BeforeNodePaint(object sender, TreeNodeAdvPaintEventArgs e)
-
 {
-
- if (e.Node.Index == 2 | e.Node.Index == 4)
-
- {
-
-     e.ForeColor=Color.Red;
-
- }
-
+    if (e.Node.Index == 2 | e.Node.Index == 4)
+    {
+        e.ForeColor=Color.Red;
+    }
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.treeViewAdv1.OwnerDrawNodes = True
 
 ' Enabling Node's Foreground
-
 Private Sub treeViewAdv1_BeforeNodePaint(ByVal sender As Object, ByVal e As TreeNodeAdvPaintEventArgs)
-
-   If e.Node.Index = 2 Or e.Node.Index = 4 Then
-
-             e.ForeColor = Color.Red
-
-   End If
-
+If e.Node.Index = 2 Or e.Node.Index = 4 Then
+e.ForeColor = Color.Red
+End If
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img42.jpeg)
-
-
 
 Active Node Foreground Settings
 
@@ -405,18 +359,19 @@ SelectedNodeForeColor</td><td>
 Indicates the fore color of the node that is selected.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.treeViewAdv1.SelectedNodeForeColor = System.Drawing.Color.Gray;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.treeViewAdv1.SelectedNodeForeColor = System.Drawing.Color.Gray
 
 {% endhighlight %}
+{% endtabs %}
 
 Post Default Drawing
 
@@ -434,11 +389,12 @@ Description</th></tr>
 AfterNodePaint</td><td>
 Handled after a node is painted.</td></tr>
 </table>
+
 {% seealso %}
+
 Image Overlaying
+
 {% endseealso %}
-
-
 
 ## Border Settings
 
@@ -463,10 +419,7 @@ Border3DStyle</td><td>
 Indicates the style of the 3D border when BorderStyle is set to Fixed3D.RaisedOuter<br>SunkenOuterRaisedInnerSunkenInnerRaisedEtchedBumpSunken (Default)Adjust Flat</td></tr>
 </table>
 
-
 ![](Concepts-and--Features_images/Concepts-and--Features_img43.jpeg)
-
-
 
 ## 2D Border for TreeView
 
@@ -493,30 +446,23 @@ BorderSingle</td><td>
 Indicates the 2D border style. The options are,Solid (Default),Dotted,Dashed,Inset,Outset,None.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.treeViewAdv1.BorderColor = System.Drawing.Color.SteelBlue;
-
 this.treeViewAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed;
-
 this.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.treeViewAdv1.BorderColor = System.Drawing.Color.SteelBlue
-
 Me.treeViewAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed
-
 Me.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img45.jpeg)
 
@@ -529,34 +475,37 @@ GutterSpace
 
 The space on the left side of a TreeViewAdv control is the gutter space which acts as a left margin to the control. It can be modified using GutterSpace property. By default it is 3.
 
+{% tabs %}
 {% highlight c# %}
 
 this.treeViewAdv1.GutterSpace = 7;
 
 {% endhighlight %}
 
- {% highlight vbnet %}
+ {% highlight vb %}
 
 Me.treeViewAdv1.GutterSpace = 5
 
 {% endhighlight %}
+{% endtabs %}
 
 Indentation
 
 The space between the parent node and the child node is the Indentation. It indicates the indent of the child nodes from the parent node. By providing value to the Indent property of the TreeViewAdv control, Indentation can be altered. Default value is 19.
 
+{% tabs %}
 {% highlight c# %}
 
 this.treeViewAdv1.Indent = 21
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.treeViewAdv1.Indent = 21
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img46.jpeg)
 
@@ -581,16 +530,13 @@ The visual style can be applied for the TreeViewAdv using `Style` property.
 {% highlight C# %}
 
 //Set the visual Style of the TreeViewAdv control.
-
 this.treeViewAdv1.Style = Syncfusion.Windows.Forms.Tools.TreeStyle.Office2016Colorful;
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
 'Set the visual Style of the TreeViewAdv control.
-
 Me.treeViewAdv1.Style = Syncfusion.Windows.Forms.Tools.TreeStyle.Office2016Colorful
  
 {% endhighlight %}

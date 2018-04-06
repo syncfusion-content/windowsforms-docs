@@ -11,7 +11,6 @@ documentation: ug
 
 Color and Styles can be applied to the border of the CheckBoxAdv as discussed below.
 
-
 <table>
 <tr>
 <th>
@@ -39,53 +38,35 @@ HotBorderColor</td><td>
 Specifies the color of the FixedSingle border when MouseOver.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.checkBoxAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump;
-
 this.checkBoxAdv1.BorderColor = System.Drawing.Color.Red;
-
 this.checkBoxAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted;
-
 this.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-
-
 // BorderStyle must be set to 'FixedSingle'.
-
 this.checkBoxAdv1.HotBorderColor = System.Drawing.Color.Blue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.checkBoxAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
-
 Me.checkBoxAdv1.BorderColor = System.Drawing.Color.Red
-
 Me.checkBoxAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted
-
 Me.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-
-
 ' BorderStyle must be set to 'FixedSingle'.
-
 Me.checkBoxAdv1.HotBorderColor = System.Drawing.Color.Blue
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img618.jpeg)
 
-
-
 ![](Overview_images/Overview_img619.jpeg)
-
 
 A Sample which demonstrates the Border Settings of CheckBoxAdv is available in the below sample installation path.
 
