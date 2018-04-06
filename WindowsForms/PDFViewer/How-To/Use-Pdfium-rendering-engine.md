@@ -11,7 +11,7 @@ documentation: ug
 
 From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering of PDF document using Pdfium rendering engine. Please follow the below steps to use Pdfium PDF rendering in Syncfusion PDF viewer.
 
-1.	Copy the Pdfium assembly’s folder to a local folder from the installation path. The folder name must be “Pdfium”.
+1.	Copy the Pdfium assembly&#39;s folder to a local folder from the installation path. The folder name must be “Pdfium”.
 
 	The Pdfium assemblies will be available in 
     {$SystemDrive}:\Program Files (x86)\Syncfusion\Essential Studio\{Essential Studio version}\Pdfium 
