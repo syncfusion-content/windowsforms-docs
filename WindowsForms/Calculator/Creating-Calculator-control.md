@@ -13,75 +13,64 @@ The Calculator control can be available to the designer by just dragging-and-dro
 
 ![](Overview_images/Overview_img111.jpeg) 
 
-
-
 It can be created programmatically using the below steps.
 
 1. Include the required namespace.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-        Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 2. Declare and create an instance of the Calculator control class.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        private Syncfusion.Windows.Forms.Tools.CalculatorControl calculatorControl1;
+private Syncfusion.Windows.Forms.Tools.CalculatorControl calculatorControl1;
 
-		// Create an instance of the Calculator control
-		
-		this.calculatorControl1 = new CalculatorControl();
+// Create an instance of the Calculator control
+this.calculatorControl1 = new CalculatorControl();
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-        Private calculatorControl1 As Syncfusion.Windows.Forms.Tools.CalculatorControl
+Private calculatorControl1 As Syncfusion.Windows.Forms.Tools.CalculatorControl
 
-		' Create an instance of the Calculator control
+' Create an instance of the Calculator control
+Me.calculatorControl1 = New CalculatorControl()
 
-		Me.calculatorControl1 = New CalculatorControl()
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 3. As the final step, add the Calculator control to the form as follows.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        // Add the CalculatorControl control to the form.
+// Add the CalculatorControl control to the form.
+this.Controls.Add(this.calculatorControl1);
+this.calculatorControl1.Visible=true;
 
-		this.Controls.Add(this.calculatorControl1);
+{% endhighlight %}
 
-		this.calculatorControl1.Visible=true;
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+' Add the CalculatorControl control to the form.
+Me.Controls.Add(Me.calculatorControl1)
+Me.calculatorControl1.Visible=True
 
-   ~~~ vbnet
-
-        ' Add the CalculatorControl control to the form.
-
-		Me.Controls.Add(Me.calculatorControl1)
-
-		Me.calculatorControl1.Visible=True
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img112.jpeg) 
-
-
-

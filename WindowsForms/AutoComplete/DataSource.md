@@ -15,7 +15,6 @@ This section explains to you all about the data settings for the AutoComplete co
 
 The data for the autocompletion is maintained by the AutoComplete control itself. This is referred to as History Data List mode. The following properties deal with data settings.
 
-
 <table>
 <tr>
 <th>
@@ -31,30 +30,21 @@ DataSource</td><td>
 Sets the Datasource to the Autocomplete control. The AutoComplete control automatically picks the "History Data List" mode or "Data source" mode based on the values set for the DataSource property. When the datasource property is set to NULL (default value is NULL), the control defaults to History Data List mode. It is to be remembered that the properties CategoryName, AutoAddItem and AutoSerialize have to be set appropriately for the History Data List mode to work properly.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 this.autoComplete1.CategoryName = "FTP";
-
 this.autoComplete1.DataSource = DataTable1;
 
-
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.autoComplete1.CategoryName = "FTP"
-
 Me.autoComplete1.DataSource = DataTable1
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 N> You can set External datasource for the autocompletion. See External DataSource topic.
 
@@ -74,7 +64,6 @@ Enabling the AutoComplete.AutoAddItem property allows you to save your entries a
 
 The different sources available for auto completion are specified using the Control.AutoCompleteSource property. When the end user enters a letter in the TextBox for example, the letter is matched with the source available and displays the dropdown item accordingly.
 
-
 <table>
 <tr>
 <th>
@@ -86,25 +75,19 @@ AutoCompleteSource</td><td>
 Auto completion source for the control. The different sources are,{{ 'FileSystem' | markdownify }} - Files system as source,{{ 'HistoryList' | markdownify }} - Includes all the URLs in the history list,{{ 'RecentlyUsedList' | markdownify }} - Includes the list of most recently used URLs,{{ 'AllUrl' | markdownify }} - Equivalent source of HistoryList and RecentlyUsedList as the source,{{ 'AllSystemSources' | markdownify }} - Equivalent source of AllUrls and FileSystem as the source (Default value of AutoCompleteSource when AutoCompleteMode is set to values other than default value),{{ 'ListItems' | markdownify }} - Specifies the items in the control, {{ 'FileSystemDirectories' | markdownify }} - Specifies directory names alone without file names,{{ 'CustomSource' | markdownify }} - Uses the string values entered in AutoCompleteCustomSource property and{{ 'None' | markdownify }} - There is no source for the auto completion.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
 this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](AutoComplete-Controls-Images/Overview_img26.jpeg) 
 
@@ -115,51 +98,33 @@ AutoComplete control lets you specify a set of auto completion text using String
 
 ![](AutoComplete-Controls-Images/Overview_img27.jpeg) 
 
-
 At runtime when you type the first letter, it automatically displays the auto completion list added through this editor.
-
 
 N> Control.AutoCompleteSource property should be set to "CustomSource" for this setting to be effective.
 
-
-
+{% tabs %}
 {% highlight C# %}
-
-
 
 this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
 
-
-
-this.textBox1.AutoCompleteCustomSource.AddRange(new string[] {"Customization Settings", "Customization Properties",
-
-"Customizing the items", "Custom Collections"});
+this.textBox1.AutoCompleteCustomSource.AddRange(new string[] {"Customization Settings", "Customization Properties", "Customizing the items", "Custom Collections"});
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
 
-
-
-Me.textBox1.AutoCompleteCustomSource.AddRange(New String[] {"Customization Settings", "Customization Properties",
-
-"Customizing the items", "Custom Collections"})
+Me.textBox1.AutoCompleteCustomSource.AddRange(New String[] {"Customization Settings", "Customization Properties", "Customizing the items", "Custom Collections"})
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](AutoComplete-Controls-Images/Overview_img29.jpeg) 
-
-
 
 ### Mode of AutoCompletion
 
 AutoCompletion modes can be specified using AutoCompleteMode property.
-
 
 <table>
 <tr>
@@ -172,28 +137,19 @@ AutoCompleteMode</td><td>
 Gets or sets an option that controls how automatic completion, works for the control. The available modes are,{{ 'None' | markdownify }} - No autocompletion is provided for this target edit control,{{ 'Suggest' | markdownify }} - The autocompletion is presented as a list of probable matches in the form of a drop-down window,{{ 'Append' | markdownify }} - The closest match is added to the partial string in the edit control and{{ 'SuggestAppend' | markdownify }} - A list of probable matches are displayed and the entry is completed in the edit control with the closest match.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight C# %}
-
-
-
-
-
 
 this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
-
-
+{% highlight vb %}
 
 Me.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](AutoComplete-Controls-Images/Overview_img30.jpeg) 
 
@@ -205,80 +161,53 @@ You can specify an external datasource for the AutoComplete control to use as th
 1. Set AutoComplete mode to AutoSuggest.
 2. Set the DataSource in the form's Load event as follows.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+private void Form1_Load(object sender, System.EventArgs e)
+{
+// Set up the datasource on the Autocomplete control. 
+	this.oleDbDataAdapter1.Fill(this.dataSet11.organization);
+	this.autoComplete1.DataSource = this.dataSet11.organization;
+}
 
+{% endhighlight %}
 
-		private void Form1_Load(object sender, System.EventArgs e)
+{% highlight vb %}
 
-		{
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
-			// Set up the datasource on the Autocomplete control. 
+' Set up the datasource on the Autocomplete control  .
+Me.oleDbDataAdapter1.Fill(Me.dataSet11.organization)
+Me.autoComplete1.DataSource = Me.dataSet11.organization
+End Sub
 
-		this.oleDbDataAdapter1.Fill(this.dataSet11.organization);
-
-		this.autoComplete1.DataSource = this.dataSet11.organization;
-
-		}
-   ~~~
-   {:.prettyprint}
-
-
-
-
-   ~~~ vbnet
-
-
-
-		Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
-
-
-
-			 ' Set up the datasource on the Autocomplete control  .
-
-		Me.oleDbDataAdapter1.Fill(Me.dataSet11.organization)
-
-		Me.autoComplete1.DataSource = Me.dataSet11.organization
-
-		End Sub
-
-   ~~~
-   {:.prettprint}
+{% endhighlight %}
+{% endtabs %}
 
 3. AutoCompleteItemSelected event is raised when you select a new item has, when the AutoComplete dropdown list is displayed. In this event, for example, the code to display corresponding OrgID of the OrganizationName on the label is included. The following code retrieves the corresponding item from the datasource, for the selected item in the AutoComplete control.
 
+{% tabs %}
+{% highlight c# %}
 
+private void autoComplete1_AutoCompleteItemSelected(object sender,Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs args)
+{
+// Displays corresponding OrgID of the OrganizationName on the label.
+	this.label1.Text = args.ItemArray[0].ToString();
+}
 
-   ~~~ cs
+{% endhighlight %}
 
-		private void autoComplete1_AutoCompleteItemSelected(object sender,Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs args)
+{% highlight vb %}
 
-		{
+Private Sub autoComplete1_AutoCompleteItemSelected(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs)
 
-		  // Displays corresponding OrgID of the OrganizationName on the label.
+' Displays corresponding OrgID of the OrganizationName on the label.
+	Me.label1.Text = args.ItemArray(0).ToString()
+	End Sub
 
-		this.label1.Text = args.ItemArray[0].ToString();
-
-		}
-   ~~~
-   {:.prettyprint}
-
-   ~~~ vbnet
-
-
-
-		Private Sub autoComplete1_AutoCompleteItemSelected(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs)
-
-
-
-		  ' Displays corresponding OrgID of the OrganizationName on the label.
-
-		Me.label1.Text = args.ItemArray(0).ToString()
-
-		End Sub
-
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+{% endtabs %}
 
  ![](AutoComplete-Controls-Images/Overview_img31.jpeg) 
 

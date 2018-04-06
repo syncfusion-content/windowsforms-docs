@@ -1015,7 +1015,7 @@ Me.ChartWebControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectActio
 
 ![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/IntersectingLabels.png](Chart-Axes_images/Chart-Axes_img18.png)
 
-### Grouping Labels
+## Grouping Labels
 
 Another interesting feature that is available is to be able to group a set of adjoining labels and mark them with a new label. For example, grouping the first three months of the year and marking them as Q1 and so on. The following properties will let you do that.
 
