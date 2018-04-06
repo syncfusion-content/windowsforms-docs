@@ -12,7 +12,6 @@ documentation: ug
 
 This event is raised every time a color is picked in the ColorPickerUIAdv control. The event handler receives an argument of type ColorPickedEventArgs. The event property provided by ColorPickedEventArgs argument is as follows.
 
-
 <table>
 <tr>
 <th>
@@ -24,32 +23,24 @@ Color</td><td>
 Specifies System.Drawing.Color structure.</td></tr>
 </table>
 
-
-
-
-
+{% tabs %}
 {% highlight c# %}
+
 private void colorPickerUIAdv1_Picked(object sender, ColorPickerUIAdv.ColorPickedEventArgs args)
-
 {
-
      BackColor = colorPickerUIAdv1.SelectedItem.Color;
-
 }
 
-
-
 {% endhighlight  %}
-{% highlight vbnet %}
 
-
+{% highlight vb %}
 
 Private Sub colorPickerUIAdv1_Picked(ByVal sender As Object, ByVal args As ColorPickerUIadv.ColorPickedEventArgs)
-
 BackColor = colorPickerUIAdv1.SelectedItem.Color
+End Sub
 
- End Sub
 {% endhighlight  %}
+{% endtabs %}
 
 ## Item Selection 
 
@@ -66,32 +57,25 @@ Color</td><td>
 Specifies System.Drawing.Color structure.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight c# %}
 
-
 private void colorPickerUIAdv1_ItemSelection(object sender, ColorPickerUIAdv.ColorPickedEventArgs args)
-
 {
 
 //Gets the name of the color item that is selected.     
-
 Console.WriteLine("Color Name is " + e.Color.Name.ToString());  
-
 }
-
-
 
 {% endhighlight  %}
 
+{% highlight vb %}
 
-{% highlight vbnet %}
 Private Sub colorPickerUIAdv1_ItemSelection(ByVal sender As Object, ByVal args As ColorPickerUIadv.ColorPickedEventArgs)
 
-  'Gets the name of the color item that is selected.  
-
-  Console.WriteLine("Color Name is " + e.Color.Name.ToString())
-
+'Gets the name of the color item that is selected.  
+Console.WriteLine("Color Name is " + e.Color.Name.ToString())
 End Sub
+
 {% endhighlight %}
+{% endtabs %}
