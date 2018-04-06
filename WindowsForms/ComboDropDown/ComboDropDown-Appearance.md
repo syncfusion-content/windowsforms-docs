@@ -39,26 +39,21 @@ FlatBorderColor</td><td>
 Specifies the border color for the control, when FlatStyle is set to "Flat". </td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.comboDropDown1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-
 this.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.comboDropDown1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner
-
 Me.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img286.jpeg) 
 

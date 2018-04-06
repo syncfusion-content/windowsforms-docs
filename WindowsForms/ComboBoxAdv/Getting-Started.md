@@ -16,7 +16,7 @@ This section briefly describes how to design a ComboBoxAdv Control in a Windows 
 * Configuring the ComboBoxAdv Control
 
 
-## Adding ComboBoxAdv control
+## Adding ComboBoxAdv Control
 
 * Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 * Drag and drop the ComboBoxAdv control in the Form from Toolbox.
@@ -27,7 +27,7 @@ This section briefly describes how to design a ComboBoxAdv Control in a Windows 
 
 
 
-## Configuring ComboBoxAdv control
+## Configuring ComboBoxAdv Control
 
 The most commonly used settings of the ComboBoxAdv control can be configured either through Designer using the Smart tag or through the Properties window or through code.
 
@@ -46,19 +46,15 @@ To add ComboBoxAdv Control to a Windows Forms Application through code behind, f
 {% highlight c# %}
 
 //Namespaces.
-
 using Syncfusion.Windows.Forms.Tools;
-
 using Syncfusion.Windows.Forms;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-‘Namespaces.
-
+'Namespaces.
 Imports Syncfusion.Windows.Forms
-
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
@@ -72,9 +68,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% highlight c# %}
   
 //Creates ComboBoxAdv instance.
-
 private Syncfusion.Windows.Forms.Tools.ComboBoxAdv comboBoxAdv1;
-
 this.comboBoxAdv1 = new ComboBoxAdv();
 
 {% endhighlight %}
@@ -82,9 +76,7 @@ this.comboBoxAdv1 = new ComboBoxAdv();
 {% highlight vb %}
 
 'Creates ComboBoxAdv instance.
-
 Private comboBoxAdv1 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
-
 Me.comboBoxAdv1 = New ComboBoxAdv()
 
 {% endhighlight %}
@@ -98,11 +90,8 @@ Me.comboBoxAdv1 = New ComboBoxAdv()
 {% highlight c# %}
 
 //Adding items to ComboBoxAdv
-
 this.comboBoxAdv1.Items.Add(100);
-
 this.comboBoxAdv1.Items.Add(200);
-
 this.comboBoxAdv1.Items.Add(300);
 
 {% endhighlight %}
@@ -110,11 +99,8 @@ this.comboBoxAdv1.Items.Add(300);
 {% highlight vb %}
 
 'Adding items to ComboBoxAdv
-
 Me.comboBoxAdv1.Items.Add(100)
-
 Me.comboBoxAdv1.Items.Add(200)
-
 Me.comboBoxAdv1.Items.Add(300)
 
 {% endhighlight %}

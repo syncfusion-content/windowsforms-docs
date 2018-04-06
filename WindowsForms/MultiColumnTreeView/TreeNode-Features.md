@@ -46,29 +46,23 @@ Specifies if the node text is drawn as multiple text or single line.</td></tr>
 
 The node text should be provided through code as shown in the code snippet below.
 
+{% tabs %}
 {% highlight c# %} 
 
 treeNodeAdv1.Multiline = true;
-
 treeNodeAdv1.Height = 100;
-
 treeNodeAdv1.Text = "ICC \n World \n Cup \n 2007";
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight vb %} 
 
 treeNodeAdv1.Multiline = True
-
 treeNodeAdv1.Height = 100
-
 treeNodeAdv1.Text = "ICC \n World \n Cup \n 2007"
 
 {% endhighlight %}
-
-
+{% endtabs %}
 
 The below image displays a node with multiline property set.
 
