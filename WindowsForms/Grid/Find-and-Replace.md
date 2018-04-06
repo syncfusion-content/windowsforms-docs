@@ -96,15 +96,15 @@ void gridControl1_CurrentCellKeyDown(object sender, KeyEventArgs e)
      if (e.Control && e.KeyCode == Keys.F)
      {
 
-// Setting the Dialog sink.
-         GridFindReplaceDialogSink findReplaceSink = new GridFindReplaceDialogSink(this.gridControl1);
+    // Setting the Dialog sink.
+     GridFindReplaceDialogSink findReplaceSink = new GridFindReplaceDialogSink(this.gridControl1);
 
-// Setting the Dialog.
-        GridFindReplaceDialog findReplaceDialog = GridFindReplaceDialog.Instance;
+    // Setting the Dialog.
+    GridFindReplaceDialog findReplaceDialog = GridFindReplaceDialog.Instance;
         
-// Setting the sink to dialog.
-         findReplaceDialog.ActiveSink = findReplaceSink;
-         findReplaceDialog.ShowDialog();
+    // Setting the sink to dialog.
+     findReplaceDialog.ActiveSink = findReplaceSink;
+     findReplaceDialog.ShowDialog();
     }
 }
 {% endhighlight %}

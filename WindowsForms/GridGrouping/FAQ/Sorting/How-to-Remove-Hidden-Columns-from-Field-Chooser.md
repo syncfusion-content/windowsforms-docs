@@ -17,62 +17,38 @@ To remove hidden columns from Grid Grouping Field Chooser, you need to bypass or
 
 The following code example illustrates this.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 //Removes Visible Columns.
-
 this.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("Name3");
 
-
 //Creates GridColumnDescriptorCollection column collection.
-
 GridColumnDescriptorCollection collection = 
-
 this.gridGroupingControl1.TableDescriptor.Columns.Clone();
 
-
-
 //Detaches visible column, which is likely to be removed from this cloned collection also.
-
 collection.Remove("Name3");
 
-
-
 //Passes the collection as an argument to the Field Chooser object.
-
 FieldChooser fChooser = new FieldChooser(this.gridGroupingControl1, collection);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Removes Visible Columns.
-
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("Name3")
 
-
-
 'Creates a GridColumnDescriptorCollection column collection.
-
 Dim collection As GridColumnDescriptorCollection = 
-
 Me.gridGroupingControl1.TableDescriptor.Columns.Clone()
 
-
-
 'Detaches the visible column, which is likely to be removed from this cloned collection also.
-
 collection.Remove("Name3")
 
-
-
 'Passes the collection as an argument to the Field Chooser object.
-
 Dim fChooser As New FieldChooser(Me.gridGroupingControl1, collection)
 
 {% endhighlight %}
-
+{% endtabs %}

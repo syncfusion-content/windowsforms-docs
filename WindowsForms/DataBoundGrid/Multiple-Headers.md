@@ -22,7 +22,7 @@ int extraColHeaders = 1;
 this.gridDataBoundGrid1.Model.Rows.HeaderCount = extraRowHeaders;
 this.gridDataBoundGrid1.Model.Cols.HeaderCount = extraColHeaders;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Dim extraRowHeaders As Integer = 1
 Dim extraColHeaders As Integer = 1
 

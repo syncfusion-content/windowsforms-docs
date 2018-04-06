@@ -15,6 +15,10 @@ SfDataGrid provides the support for search the specific string in the SfDataGrid
 //Search and highlight the text in SfDataGrid.
 this.sfDataGrid.SearchController.Search("a");
 {% endhighlight %}
+{% highlight vb %}
+'Search and highlight the text in SfDataGrid.
+Me.sfDataGrid.SearchController.Search("a")
+{% endhighlight %}
 {% endtabs %}
 
 ![](Search_images/Search_img1.png)
@@ -29,6 +33,13 @@ this.sfDataGrid.SearchController.AllowFiltering = true;
 
 //Search and highlight the text in SfDataGrid.
 this.sfDataGrid.SearchController.Search("Alice");
+{% endhighlight %}
+{% highlight vb %}
+' Enable the filtering using the search text
+Me.sfDataGrid.SearchController.AllowFiltering = True
+
+'Search and highlight the text in SfDataGrid.
+Me.sfDataGrid.SearchController.Search("Alice")
 {% endhighlight %}
 {% endtabs %}
 
@@ -46,6 +57,10 @@ The highlighting color of the search text can be changed by using the [SearchCol
 //Set the color for highlighting the search text
 this.sfDataGrid.SearchController.SearchColor = Color.LightGreen;
 {% endhighlight %}
+{% highlight vb %}
+'Set the color for highlighting the search text
+Me.sfDataGrid.SearchController.SearchColor = Color.LightGreen
+{% endhighlight %}
 {% endtabs %}
 
 ![](Search_images/Search_img4.png)
@@ -62,6 +77,14 @@ this.sfDataGrid.SearchController.AllowHighlightSearchText = false;
 this.sfDataGrid.SearchController.AllowFiltering = true;
 this.sfDataGrid.SearchController.Search("SEVES");
 {% endhighlight %}
+{% highlight vb %}
+'Disable the highlighting of the search text
+Me.sfDataGrid.SearchController.AllowHighlightSearchText = False
+
+'Search and filter without highlighting the search text.
+Me.sfDataGrid.SearchController.AllowFiltering = True
+Me.sfDataGrid.SearchController.Search("SEVES")
+{% endhighlight %}
 {% endtabs %}
 
 ![](Search_images/Search_img5.png)
@@ -75,12 +98,18 @@ By default the searching is applied for all the columns in the SfDataGrid. This 
 this.sfDataGrid.SearchController.SearchColumns.Add("Quantity");
 this.sfDataGrid.SearchController.Search("2");
 {% endhighlight %}
+{% highlight vb %}
+' Search only in Quantity column
+Me.sfDataGrid.SearchController.SearchColumns.Add("Quantity")
+Me.sfDataGrid.SearchController.Search("2")
+{% endhighlight %}
 {% endtabs %}
 
 ![](Search_images/Search_img6.png)
 
 ## Search Condition
 By default the searching will be performed based on the `Contains` condition. This can be changed by using the [SearchType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchType.html) property. The `SearchType` enumeration has the following conditions,
+
 * StartsWith – Used to find the text which starts with the SearchText.
 * EndsWith – Used to find the text which ends with the SearchText.
 * Contains – Used to find the text which contains the SearchText.
@@ -98,6 +127,13 @@ this.sfDataGrid.SearchController.FindNext("Alice");
 // Find the previous match and highlight using the HighlightSearchColor.
 this.sfDataGrid.SearchController.FindPrevious("Alice");
 {% endhighlight %}
+{% highlight vb %}
+' Find the next match and highlight using the HighlightSearchColor.
+Me.sfDataGrid.SearchController.FindNext("Alice")
+
+' Find the previous match and highlight using the HighlightSearchColor.
+Me.sfDataGrid.SearchController.FindPrevious("Alice")
+{% endhighlight %}
 {% endtabs %}
 
 ![](Search_images/Search_img8.png)
@@ -109,6 +145,11 @@ By default the currently navigated search text will be highlighted with the defa
 this.sfDataGrid.SearchController.SearchHighlightColor = Color.Red;
 // Find the next match and highlight using the HighlightSearchColor.
 this.sfDataGrid.SearchController.FindNext("MEREP");
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.SearchController.SearchHighlightColor = Color.Red
+' Find the next match and highlight using the HighlightSearchColor.
+Me.sfDataGrid.SearchController.FindNext("MEREP")
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,6 +166,13 @@ this.sfDataGrid.SearchController.FindNext("MEREP");
 // Moves the current cell to the next possible match.
 this.sfDataGrid.MoveToCurrentCell(this.sfDataGrid.SearchController.CurrentRowColumnIndex);
 {% endhighlight %}
+{% highlight vb %}
+' Find the next match and highlight using the HighlightSearchColor.
+Me.sfDataGrid.SearchController.FindNext("MEREP")
+
+' Moves the current cell to the next possible match.
+Me.sfDataGrid.MoveToCurrentCell(Me.sfDataGrid.SearchController.CurrentRowColumnIndex)
+{% endhighlight %}
 {% endtabs %}
 
 ![](Search_images/Search_img10.png)
@@ -136,6 +184,10 @@ The search can be cleared by using the [ClearSearch](https://help.syncfusion.com
 {% highlight c# %}
 // Clears the search applied by using the search controller.
 this.sfDataGrid.SearchController.ClearSearch();
+{% endhighlight %}
+{% highlight vb %}
+' Clears the search applied by using the search controller.
+Me.sfDataGrid.SearchController.ClearSearch()
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,6 +211,23 @@ public class SearchControllerExt : SearchController
         base.HighlightSearchText(paint, column, style, bounds, cellValue, rowColumnIndex);
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+Public Class SearchControllerExt
+	Inherits SearchController
+	Public Sub New(ByVal grid As SfDataGrid)
+		MyBase.New(grid)
+	End Sub
+
+	Protected Overrides Sub HighlightSearchText(ByVal paint As Graphics, ByVal column As DataColumnBase, ByVal style As CellStyleInfo, ByVal bounds As Rectangle, ByVal cellValue As String, ByVal rowColumnIndex As RowColumnIndex)
+		'Does not highlight the search text the specific column
+		If column.GridColumn.MappingName = "ProductName" Then
+			Return
+		End If
+
+		MyBase.HighlightSearchText(paint, column, style, bounds, cellValue, rowColumnIndex)
+	End Sub
+End Class
 {% endhighlight %}
 {% endtabs %}
 

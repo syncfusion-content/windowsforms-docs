@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Change the BackColor of a Single Row
-
-## Introduction
+# How to change the BackColor of a single row
 
 GridControl.RowStyles collection contains [GridStyleInfo](/windowsforms/Grid/Cell-Style-Architecture#gridstyleinfo-class-overview) objects that provide row style settings for the GridControl. Changing the properties on a particular RowStyle will affect all the cells in that row (unless a particular cell has a more specific style setting, like a [CellStyle](/windowsforms/Grid/Cell-Style-Architecture#properties), applied).
 

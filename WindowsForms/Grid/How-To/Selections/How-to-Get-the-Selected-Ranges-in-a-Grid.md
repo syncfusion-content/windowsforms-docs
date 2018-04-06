@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Get the Selected Ranges in a Grid
-
-### Introduction
+# How to get the selected ranges in a Grid
 
 The grid.Selections.Ranges is GridRangeInfoList object, which holds the currently selected ranges. 
 

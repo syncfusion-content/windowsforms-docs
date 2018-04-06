@@ -13,7 +13,7 @@ Look-up table that Enables Migration of .NET Grid to Essential Grid
 
 The following section contains document that enables users to migrate .NET Grid to Essential Grid. Most of the properties, events, methods have common names in both grids. So it is not included in the following table. Since the API of both the grids is different, following document contains only common features that can be implemented with single line of code.
 
-## Equivalent Properties available
+## Equivalent Properties Available
 
 
 
@@ -110,7 +110,7 @@ RightToLeft</td><td>
 Gets or sets a value indicating whether control's elements are aligned to support locales using right-to-left fonts.</td></tr>
 </table>
 
-## Equivalent Events available
+## Equivalent Events Available
 
 
 

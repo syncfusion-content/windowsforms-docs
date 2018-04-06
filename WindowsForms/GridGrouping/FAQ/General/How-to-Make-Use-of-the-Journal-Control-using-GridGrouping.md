@@ -29,85 +29,44 @@ Indicates whether the nested table has preview row.</td></tr>
 </table>
 The following code example illustrates how to make use of Journal control using GridGrouping controls.
 
-
-
-
+{% tabs %}
 {% highlight C# %}
-
 
 this.gridGroupingControl1.ShowNavigationBar = true;
 
-
-
 // Button control
-
-
-
 this.gridGroupingControl1.TableOptions.ShowRecordPreviewRow = !this.gridGroupingControl1.TableOptions.ShowRecordPreviewRow;
 
-
-
 // Event Handler 
-
-
-
 this.gridGroupingControl1.QueryCellStyleInfo += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
 
-
-
 void gridGroupingControl1_QueryCellStyleInfo(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs e)
-
-        {
-
-            if (e.TableCellIdentity.TableCellType == GridTableCellType.RecordPreviewCell)
-
-            {
-
-                Element el = e.TableCellIdentity.DisplayElement;
-
-                e.Style.CellValue = richTextBox1.Text;
-
-            }
-
-        }
+{
+    if (e.TableCellIdentity.TableCellType == GridTableCellType.RecordPreviewCell)
+    {
+        Element el = e.TableCellIdentity.DisplayElement;
+        e.Style.CellValue = richTextBox1.Text;
+    }
+}
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Private Me.gridGroupingControl1.ShowNavigationBar = True
 
-
-
 // Button control
-
-
-
 Me.gridGroupingControl1.TableOptions.ShowRecordPreviewRow = Not Me.gridGroupingControl1.TableOptions.ShowRecordPreviewRow
 
-
-
 // Event Handler 
-
-
-
 Private Me.gridGroupingControl1.QueryCellStyleInfo += New Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventHandler(AddressOf gridGroupingControl1_QueryCellStyleInfo)
-
-
-
 Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventArgs)
-
 If e.TableCellIdentity.TableCellType = GridTableCellType.RecordPreviewCell Then
-
 Dim el As Element = e.TableCellIdentity.DisplayElement
-
 e.Style.CellValue = richTextBox1.Text
-
 End If
-
 End Sub
 {% endhighlight %}
+{% endtabs %}
+
 ![](How-to-Make-Use-of-the-Journal-Control-using-GridG_images/How-to-Make-Use-of-the-Journal-Control-using-GridG_img1.png)

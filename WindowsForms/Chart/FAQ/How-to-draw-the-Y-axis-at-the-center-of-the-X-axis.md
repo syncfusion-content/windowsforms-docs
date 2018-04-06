@@ -11,11 +11,9 @@ documentation: ug
 
 The y-axis can be drawn at any custom position using the ChartAxisLocationType class. This can be achieved by setting the value of the LocationType property of the PrimaryYAxis to Set.
 
+{% tabs %}
 
-
- {% highlight c# %}
-
-
+{% highlight c# %}
 
 // Drawing Y-axis at the center of the X-axis.
 
@@ -25,9 +23,7 @@ this.chartControl1.PrimaryYAxis.Location = new PointF(300, 352);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 // Drawing Y-axis at the center of the X-axis.
 
@@ -35,5 +31,6 @@ Me.chartControl1.PrimaryYAxis.LocationType=ChartAxisLocationType.Set
 
 Me.chartControl1.PrimaryYAxis.Location = New PointF(300, 352)
 
-
 {% endhighlight %}
+
+{% endtabs %}	

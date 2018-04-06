@@ -61,7 +61,7 @@ private void Form1_Load(object sender, System.EventArgs e)
     this.gridDataBoundGrid1.DataSource = al;
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 'Creates the Person object class.
 
 Public Class Person

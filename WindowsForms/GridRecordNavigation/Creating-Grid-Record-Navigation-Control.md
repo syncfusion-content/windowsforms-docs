@@ -72,7 +72,7 @@ this.recordNavigationControl1.Controls.Add(this.gridControl1);
 //Adds the Record Navigation control to the form.
 this.Controls.Add(this.recordNavigationControl1);
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.recordNavigationControl1 = New Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl()
 Me.recordNavigationControl1.Location = New System.Drawing.Point(32, 48)
 Me.recordNavigationControl1.MaxLabel = "of 1000"

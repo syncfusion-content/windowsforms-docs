@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Hide a Row or Column
-
-### Introduction
+# How to hide a row or column
 
 You can hide rows and columns using grid.Model.Rows.Hidden collection and grid.Model.Cols.Hidden collection. You can hide or show a range of columns or rows using grid.Model.HideCols.SetRange or grid.Model.HideRows.SetRange.
 

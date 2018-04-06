@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Show Multiple Images in a Cell
-
-## Introduction
+# How to show multiple images in a cell
 
 To show multiple Images in a cell, you need to handle CellDrawn Event. Follow the steps that are given below to achieve this.
 
@@ -38,6 +36,7 @@ Me.gridControl1(3,3).CellType = GridCellTypeName.Image
 
 private void gridControl1_CellDrawn(object sender, Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs e)
 {
+
 	if( e.RowIndex == 3 && e.ColIndex == 3)
 	{
 		//Draws the image to the Cell.
@@ -51,6 +50,7 @@ private void gridControl1_CellDrawn(object sender, Syncfusion.Windows.Forms.Grid
 
 Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridDrawCellEventArgs)
 	If e.RowIndex = 3 And e.ColIndex = 3 Then
+ 
     'Draws the image to the Cell.
 	e.Graphics.DrawImage(bitmap,e.Bounds.X,e.Bounds.Y)
 	End If

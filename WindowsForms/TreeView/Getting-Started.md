@@ -23,13 +23,10 @@ Tree nodes can be added to the control at design time as follows.
    ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
-
 5. Click "Add Node". This will add a new top-level node.
 6. The node's properties will be displayed in the property grid to the right. Specify a custom label for the node by changing its text property as shown in the below image.
 
    ![](Getting-Started_images/Getting-Started_img2.jpeg)
-
-
 
 7. Click "Add Node" to add another sibling to the selected node.
 8. Click "Add Child" to add a child node to the selected node.
@@ -40,128 +37,113 @@ Tree nodes can be added to the control at design time as follows.
 
 ## Through Code
 
-
 Tree nodes can be added to the control programmatically as follows.
 
 1. Add the namespace Syncfusion.Windows.Forms.Tools in your project.
 
-   ~~~ cs
+{% tabs %}
 
-		using Syncfusion.Windows.Forms.Tools;
+{% highlight C# %}
 
-   ~~~
-   {:.prettyprint}
+using Syncfusion.Windows.Forms.Tools;
 
-   ~~~ vbnet
+{% endhighlight %}
 
-		Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint}
+{% highlight VB %}
+
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+
+{% endtabs %}
 
 2. Add theTreeViewAdv control to your form in the designer.
 3. A TreeViewAdv control can be created programmatically using the below code snippet.
 
-   ~~~ cs
+{% tabs %}
 
+{% highlight C# %}
 
+private Syncfusion.Windows.Forms.Tools.TreeViewAdv treeViewAdv1;
+treeViewAdv1 = new Syncfusion.Windows.Forms.Tools.TreeViewAdv();
+treeViewAdv1.Name = "NewTreeViewAdv";
+this.Controls.Add(this.treeViewAdv1);
 
-		private Syncfusion.Windows.Forms.Tools.TreeViewAdv treeViewAdv1;
+{% endhighlight %}
 
-		treeViewAdv1 = new Syncfusion.Windows.Forms.Tools.TreeViewAdv();
+{% highlight VB %}
 
-		treeViewAdv1.Name = "NewTreeViewAdv";
+Private treeViewAdv1 As Syncfusion.Windows.Forms.Tools.TreeViewAdv
+treeViewAdv1 = New Syncfusion.Windows.Forms.Tools.TreeViewAdv 
+treeViewAdv1.Name = "NewTreeViewAdv" 
+Me.Controls.Add(Me.treeViewAdv1)
 
-		this.Controls.Add(this.treeViewAdv1);
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint}
-
-   ~~~ vbnet
-
-
-
-		Private treeViewAdv1 As Syncfusion.Windows.Forms.Tools.TreeViewAdv
-
-		treeViewAdv1 = New Syncfusion.Windows.Forms.Tools.TreeViewAdv 
-
-		treeViewAdv1.Name = "NewTreeViewAdv" 
-
-		Me.Controls.Add(Me.treeViewAdv1)
-
-   ~~~
-   {:.prettyprint}
+{% endtabs %}
 
 4. Create a new instance of a node.
 
-   ~~~ cs
+{% tabs %}
 
+{% highlight C# %}
 
+//Creating new instance of node.
+TreeNodeAdv node = new TreeNodeAdv("Top1");
 
-		//Creating new instance of node.
+{% endhighlight %}
 
-		TreeNodeAdv node = new TreeNodeAdv("Top1");
+{% highlight VB %}
+  
+'Creating new instance of node.
+Dim node As New TreeNodeAdv("Top1")
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
-
-
-
-		'Creating new instance of node.
-
-		Dim node As New TreeNodeAdv("Top1")
-
-   ~~~
-   {:.prettyprint}
+{% endtabs %}
 
 5. Add the created node to the tree control. This will add as a top-level node.
 
-   ~~~ cs
+{% tabs %}
 
+{% highlight C# %}
 
+//Add the created nodes to the TreeViewAdv.
+this.treeViewAdv1.Nodes.Add(node);
 
-		//Add the created nodes to the TreeViewAdv.
+{% endhighlight %}
 
-		this.treeViewAdv1.Nodes.Add(node);
+{% highlight VB %}
 
-   ~~~
-   {:.prettyprint}
+'Add the created nodes to the TreeViewAdv.
+ Me.TreeViewAdv1.Nodes.Add(node)
 
-   ~~~ vbnet
+{% endhighlight %}
 
-		'Add the created nodes to the TreeViewAdv.
-
-		Me.TreeViewAdv1.Nodes.Add(node)
-  
-   ~~~
-   {:.prettyprint}
+{% endtabs %}
 
 
 6. If you want to add a node to an existing node, use the code snippet shown below.
 
-   ~~~ cs
+{% tabs %}
 
+{% highlight C# %}
 
+//Add nodes to the existing nodes.
+node.Nodes.Add(new TreeNodeAdv("Child 1"));
 
-		//Add nodes to the existing nodes.
+{% endhighlight %}
 
-		node.Nodes.Add(new TreeNodeAdv("Child 1"));
+{% highlight VB %}
 
-   ~~~
-   {:.prettyprint}
+'Add nodes to the existing nodes.
+node.Nodes.Add(New TreeNodeAdv("Child 1"))
 
-   ~~~ vbnet
+{% endhighlight %}
 
-
-
-		'Add nodes to the existing nodes.
-
-		node.Nodes.Add(New TreeNodeAdv("Child 1"))
-
-   ~~~
-   {:.prettyprint}
+{% endtabs %}
 
 7. Repeat steps 3 to 5 to continue adding more top-level nodes and child nodes.
 8. Run the application.

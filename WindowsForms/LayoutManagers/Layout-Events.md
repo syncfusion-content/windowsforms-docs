@@ -2,6 +2,7 @@
 layout: post
 title: Layout Events | WindowsForms | Syncfusion
 description: layout events
+platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---

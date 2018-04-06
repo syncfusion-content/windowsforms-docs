@@ -68,7 +68,7 @@ private DataTable ReturnATable()
    return table;
 }
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 Me.GridDataBoundGrid1.DataSource = ReturnATable()
 End Sub

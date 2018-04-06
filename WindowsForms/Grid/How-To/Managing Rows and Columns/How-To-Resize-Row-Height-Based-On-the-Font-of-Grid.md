@@ -7,13 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-# How to Resize Row Height Based On the Font of Grid Cell Content
+# How to resize row height based on the font of Grid cell content
 
 You can resize the row height based on the cell content height using ResizingRows event. Calculate the content height using MeasuringString() method. This considers the text, font style and font size to calculate the content size. Assign the calculated value to RowHeights property.
 
 You can resize the rows individually using AllowResizingIndividualRows() method of GridHelperClasses. This method will be effective only when used before InitializeComponent().
-
-The following code illustrates resizing rows based on the grid cell content: 
 
 {% tabs %}
 {% highlight c# %}
@@ -28,6 +26,7 @@ Size stringSize;
 
 void TableControl_ResizingRows(object sender, GridResizingRowsEventArgs e)
 {
+
     //Resize the row on double click on the row header resizing cursor
     if (e.Reason == GridResizeCellsReason.DoubleClick)
     {
@@ -37,6 +36,7 @@ void TableControl_ResizingRows(object sender, GridResizingRowsEventArgs e)
         // Get the style info of the particular cell value
         GridStyleInfo style = this.gridGroupingControl1.TableControl.GetViewStyleInfo(e.Rows.Bottom, 2);
         stringSize = graphics.MeasureString(style.Text, style.GdipFont, this.gridGroupingControl1.TableModel.ColWidths[2]).ToSize();
+     
         if (maxHeight < stringSize.Height)
         {
             maxHeight = (long)stringSize.Height;
@@ -47,7 +47,7 @@ void TableControl_ResizingRows(object sender, GridResizingRowsEventArgs e)
 }
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 Public Sub New()
   'Used to Customizes the row height for individual row 
   GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndividualRows()

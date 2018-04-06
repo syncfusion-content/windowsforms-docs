@@ -19,22 +19,11 @@ The following image displays stock data that is grouped by symbol to calculate t
 
 The following image displays the same data with data from transactions that occurred in the morning filtered out. Filtering is done entirely in the grouping engine and the data changes are reflected in the chart. You will never be looking at data that is a filtered and grouped copy. Instead, you are always working with live data with the grouping layer provided by the grouping engine. Any changes made in the underlying data will be immediately reflected in the chart. 
 
-
-
-
-
 ![](Data-Manipulation_images/Data-Manipulation_img1.png)
-
-
-
 
 ## Essential Grid Interaction
 
 Essential Chart offers great interaction capabilities with Essential Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it takes, is a few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
-
-
-
-
 
 ![](Data-Manipulation_images/Data-Manipulation_img2.png)
 

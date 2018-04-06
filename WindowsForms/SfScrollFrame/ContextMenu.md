@@ -7,13 +7,17 @@ control: SfScrollFrame
 documentation: ug
 ---
 
-## Context Menu
-The `SfScrollFrame` supports the UI scrolling through the context menu like the Microsoft scrollbars. It appears when the right click on both the horizontal and vertical scrollbar. You can scroll left, right, top and bottom of the control by clicking the corresponding context menu options. <br>
+# Context Menu
+
+The `SfScrollFrame` supports UI scrolling through the context menu like the Microsoft scrollbars. It appears when right clicking on both the horizontal and vertical scrollbars. You can scroll left, right, top, and bottom of the control by clicking the corresponding context menu options. 
 ![](SfScrollFrame_images/SfScrollFrame_img7.jpg)
 
-### Disabling the default context menu for ScrollBar
+## Disabling the default context menu for ScrollBar
+
 The default context menu of the `SfScrollFrame` can be restricted by setting the `Cancel` property of the `ContextMenuShowingEventArgs` to `true` using the `ContextMenuShowing` event.
-**Note:**This is applicable for both the horizontal and vertical scrollbars.
+
+**Note**: This is applicable for both the horizontal and vertical scrollbars.
+
 {% tabs %}
 {% highlight c# %}
 this.sfScrollFrame1.VerticalScrollBar.ContextMenuShowing += VerticalScrollBar_ContextMenuShowing;
@@ -35,9 +39,10 @@ void VerticalScrollBar_ContextMenuShowing(object sender, Syncfusion.WinForms.Scr
 {% endtabs %}
 
 ### Showing the custom context menu in ScrollBar
+
 The custom context menu can be shown by setting the `ContextMenu` property of the ContextMenuShowingEventArgs with custom `ContextMenu` using the `ContextMenuShowing` event.
 
-**Note:**This is applicable for both the horizontal and vertical scrollbars.
+**Note**: This is applicable for both the horizontal and vertical scrollbars.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,10 +71,12 @@ void HorizontalScrollBar_ContextMenuShowing(object sender, Syncfusion.WinForms.S
 
 ![](SfScrollFrame_images/SfScrollFrame_img8.jpg)
 
-### Adding an additional menu item in default ContextMenu
-The custom menu item can be added to the default context menu of the ScrollBars by adding the custom menu items using the ContextMenu` property of the ContextMenuShowingEventArgs with custom `ContextMenu` using the `ContextMenuShowing` event.
+### Adding an additional menu item in default context menu
 
-**Note:**This is applicable for both the horizontal and vertical scrollbars.
+The custom menu item can be added to the default context menu of the ScrollBars by adding the custom menu items using the ContextMenu property of the ContextMenuShowingEventArgs with custom `ContextMenu` using the `ContextMenuShowing` event.
+
+**Note**: This is applicable for both the horizontal and vertical scrollbars.
+
 {% tabs %}
 {% highlight c# %}
 this.sfScrollFrame1.VerticalScrollBar.ContextMenuShowing += VerticalScrollBar_ContextMenuShowing;

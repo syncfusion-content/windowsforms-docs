@@ -7,9 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Set the Text in a Header Cell
-
-## Introduction
+# How to set the text in a header cell
 
 In GridControl, values in header cells are set just as in any other cell. 
 

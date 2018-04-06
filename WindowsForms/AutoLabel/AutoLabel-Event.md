@@ -27,31 +27,21 @@ This event is fired when the LabeledControl, Gap or Position properties of this 
 
 The event handler receives an argument of type SyncfusionPropertyChangedEventArgs containing data related to this event.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void autoLabel1_PropertyChanged(object sender, Syncfusion.ComponentModel.SyncfusionPropertyChangedEventArgs e)
-
 {
-
-Console.WriteLine(" PropertyChanged event is raised");
-
+    Console.WriteLine(" PropertyChanged event is raised");
 }
 
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Private Sub autoLabel1_PropertyChanged(ByVal sender As Object, ByVal e As Syncfusion.ComponentModel.SyncfusionPropertyChangedEventArgs)
-
 Console.WriteLine(" PropertyChanged event is raised")
 
 End Sub
 {% endhighlight %}
+{% endtabs %}

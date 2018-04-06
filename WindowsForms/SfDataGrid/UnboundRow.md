@@ -12,10 +12,12 @@ SfDataGrid allows to add **additional rows** at top and also bottom of the SfDat
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() { Position = VerticalPosition.Top });
-
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPosition.Top})
 {% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img1.png)
+![](UnboundRow_images/UnboundRow_img1.png)
 
 ## Positioning unbound rows
 Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnboundRow.Position](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridUnboundRow~Position.html) and [GridUnboundRow.ShowBelowSummary](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridUnboundRow~ShowBelowSummary.html) properties.
@@ -95,9 +97,22 @@ this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() { Position = VerticalPositi
 this.sfDataGrid.UnboundRows.Add(new GridUnboundRow() { Position = VerticalPosition.Bottom, ShowBelowSummary = false });
 
 {% endhighlight %}
+{% highlight vb %}
+' Add the unbound row at top and above the summary row.
+Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPosition.Top, .ShowBelowSummary = False})
+
+' Add the unbound row at top and below the summary row.
+Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPosition.Top, .ShowBelowSummary = True})
+
+' Add the unbound row at bottom and below the summary row.
+Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPosition.Bottom, .ShowBelowSummary = True})
+
+' Add the unbound row at bottom and above the summary row.
+Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPosition.Bottom, .ShowBelowSummary = False})
+{% endhighlight %}
 {% endtabs %}
 Below screen shot shows different unbound rows placed in all possible positions,
-![](images/UnboundRow_images/UnboundRow_img2.png)
+![](UnboundRow_images/UnboundRow_img2.png)
 
 ## Populating data for unbound rows
 The data for the unbound row can populated by handling [QueryUnboundRowInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryUnboundRowInfo_EV.html) event of SfDataGrid. This event occurs for each cell in unbound row whenever the row gets refreshed. [QueryUnboundRowInfoArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html) of the `QueryUnboundRowInfo` event provides information about the cell triggered this event.
@@ -131,13 +146,39 @@ void sfDataGrid_QueryUnboundRowInfo(object sender, QueryUnboundRowInfoArgs e)
 }
 
 {% endhighlight %}
+{% highlight vb %}
+'Select some records in SfDataGrid.
+Me.sfDataGrid.SelectedItems.Add(data.OrdersListDetails(2))
+Me.sfDataGrid.SelectedItems.Add(data.OrdersListDetails(3))
+Me.sfDataGrid.SelectedItems.Add(data.OrdersListDetails(4))
+
+'Raise the QueryUnboundRowInfo event
+AddHandler Me.sfDataGrid.QueryUnboundRowInfo, AddressOf sfDataGrid_QueryUnboundRowInfo
+
+void sfDataGrid_QueryUnboundRowInfo(Object sender, QueryUnboundRowInfoArgs e)
+	If e.UnboundAction = UnboundActions.QueryData Then
+		If e.RowColumnIndex.ColumnIndex = 0 Then
+			e.Value = (TryCast(sfDataGrid.SelectedItems.OrderBy(Function(item) (TryCast(item, OrderInfo)).OrderID).Last(), OrderInfo)).OrderID
+			e.Handled = True
+
+		ElseIf e.RowColumnIndex.ColumnIndex = 2 Then
+			e.Value = (TryCast(sfDataGrid.SelectedItems.First(Function(item) (TryCast(item, OrderInfo)).ProductName.Contains("R")), OrderInfo)).ProductName
+			e.Handled = True
+		End If
+	End If
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img3.png)
+![](UnboundRow_images/UnboundRow_img3.png)
 
 ## Refreshing the unbound rows at runtime
 The unbound rows can be add or remove using `UnboundRows` property which reflects in UI immediately. The `QueryUnboundRowInfo` event for the unbound row cells at runtime by invalidating the unbound row by calling [SfDataGrid.InValidateUnboundRow](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~InValidateUnboundRow.html) method.
 {% tabs %}
 {% highlight c# %}
+this.sfDataGrid.InValidateUnboundRow(sfDataGrid.UnboundRows[0], true);
+this.sfDataGrid.TableControl.Invalidate();
+
+{% endhighlight %}
+{% highlight vb %}
 this.sfDataGrid.InValidateUnboundRow(sfDataGrid.UnboundRows[0], true);
 this.sfDataGrid.TableControl.Invalidate();
 
@@ -161,6 +202,18 @@ void dataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs 
     args.Cancel = true;
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.CurrentCellBeginEdit, AddressOf dataGrid_CurrentCellBeginEdit
+
+Private Sub dataGrid_CurrentCellBeginEdit(ByVal sender As Object, ByVal args As CurrentCellBeginEditEventArgs)
+	Dim unboundRow = sfDataGrid.GetUnboundRow(args.DataRow.Index)
+
+	If unboundRow Is Nothing Then
+		Return
+	End If
+	args.Cancel = True
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Saving edited unbound row cell value to external source
@@ -175,6 +228,13 @@ void sfDataGrid_QueryUnboundRowInfo(object sender, QueryUnboundRowInfoArgs e)
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub sfDataGrid_QueryUnboundRowInfo(ByVal sender As Object, ByVal e As QueryUnboundRowInfoArgs)
+	If e.UnboundAction = UnboundActions.CommitData Then
+		Dim editedValue = e.Value
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 ## Appearance
 The appearance of the unbound row can be customized by using the [UnboundRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~UnboundRowStyle.html) property.
@@ -184,8 +244,13 @@ sfDataGrid.Style.UnboundRowStyle.BackColor = Color.LightGray;
 sfDataGrid.Style.UnboundRowStyle.TextColor = Color.Red;
 
 {% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Style.UnboundRowStyle.BackColor = Color.LightGray
+sfDataGrid.Style.UnboundRowStyle.TextColor = Color.Red
+
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img4.png)
+![](UnboundRow_images/UnboundRow_img4.png)
 
 ## Customizing the unbound row's behavior
 SfDataGrid allows to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell. Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
@@ -209,6 +274,19 @@ public class GridUnboundRowCellTextBoxRendererExt : GridUnboundRowCellRenderer
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class GridUnboundRowCellTextBoxRendererExt
+	Inherits GridUnboundRowCellRenderer
+	Protected Overrides Sub OnEditingComplete(ByVal dataColumn As DataColumnBase, ByVal currentRendererElement As TextBox)
+		MyBase.OnEditingComplete(dataColumn, currentRendererElement)
+	End Sub
+
+	Protected Overrides Sub OnInitializeEditElement(ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex, ByVal uiElement As TextBox)
+		MyBase.OnInitializeEditElement(column, rowColumnIndex, uiElement)
+		uiElement.ForeColor = Color.Red
+	End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 In the below code default renderer replaced using the above custom renderer in `SfDataGrid.UnboundRowCellRenderers`.
 {% tabs %}
@@ -217,8 +295,13 @@ sfDataGrid.UnboundRowCellRenderers.Remove("UnboundRowCell");
 
 sfDataGrid.UnboundRowCellRenderers.Add("UnboundRowCell", new GridUnboundRowCellTextBoxRendererExt());
 {% endhighlight %}
+{% highlight vb %}
+sfDataGrid.UnboundRowCellRenderers.Remove("UnboundRowCell")
+
+sfDataGrid.UnboundRowCellRenderers.Add("UnboundRowCell", New GridUnboundRowCellTextBoxRendererExt())
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img5.png)
+![](UnboundRow_images/UnboundRow_img5.png)
 
 ### Custom Renderer
 SfDataGrid allows to customize the unbound row cell by creating new renderer, deriving from `GridUnboundRowCellRenderer` and setting the `QueryUnboundRowInfoArgs.CellType` property.
@@ -383,11 +466,141 @@ public class DatePickerRenderer : GridVirtualizingCellRendererBase<DateTimePicke
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+' The custom unbound row cell renderer.
+Public Class DatePickerRenderer
+	Inherits GridVirtualizingCellRendererBase(Of DateTimePicker)
+	Public Sub New()
+
+	End Sub
+
+	Protected Overrides Function OnCreateEditUIElement() As DateTimePicker
+		Return New DateTimePicker()
+	End Function
+
+	Protected Overrides Sub OnInitializeEditElement(ByVal dataColumn As DataColumnBase, ByVal rowColIndex As RowColumnIndex, ByVal uiElement As DateTimePicker)
+		Dim DataGrid As SfDataGrid = TryCast(dataColumn.UnboundRowInfo.OriginalSender, SfDataGrid)
+		Dim time As DateTime = DateTime.Now
+		If dataColumn.UnboundRowInfo.Value IsNot Nothing Then
+		DateTime.TryParse(dataColumn.UnboundRowInfo.Value.ToString(), time)
+		End If
+		TryCast(uiElement, DateTimePicker).Value = time
+		uiElement.Tag = dataColumn
+
+		Dim editorRectangle As Rectangle = Me.TableControl.GetCellRectangle(DataGrid.CurrentCell.RowIndex, DataGrid.CurrentCell.ColumnIndex, True)
+		Dim borderWeight = DataGrid.Style.CurrentCellStyle.BorderThickness
+		Dim weight = GetWidthForWeight(borderWeight)
+
+		' Adjusts with border thickness for the editing control bounds.
+		editorRectangle = New Rectangle(editorRectangle.X + weight, editorRectangle.Y + weight, editorRectangle.Width - (2 * weight), editorRectangle.Height - (2 * weight))
+
+		uiElement.Size = editorRectangle.Size
+		uiElement.Location = editorRectangle.Location
+		uiElement.AutoSize = False
+		uiElement.MinimumSize = editorRectangle.Size
+		uiElement.Format = DateTimePickerFormat.Long
+		Me.TableControl.Controls.Add(uiElement)
+		uiElement.Focus()
+	End Sub
+
+	Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+		Dim DataGrid As SfDataGrid = TryCast(column.UnboundRowInfo.OriginalSender, SfDataGrid)
+		Dim isEditing As Boolean = DataGrid.CurrentCell IsNot Nothing AndAlso DataGrid.CurrentCell.RowIndex = rowColumnIndex.RowIndex AndAlso DataGrid.CurrentCell.ColumnIndex = rowColumnIndex.ColumnIndex AndAlso DataGrid.CurrentCell.IsEditing
+
+		Dim backColor As New SolidBrush(style.BackColor)
+		Dim fillRect = If((style.HasBorders), cellRect, If(cellRect.X = 0, New Rectangle(cellRect.X, cellRect.Y + 1, cellRect.Width, cellRect.Height - 1), New Rectangle(cellRect.X + 1, cellRect.Y + 1, cellRect.Width - 1, cellRect.Height - 1)))
+		Dim textColor As New SolidBrush(style.TextColor)
+		Dim font As GridFontInfo = column.GridColumn.CellStyle.Font
+
+		Dim format As New StringFormat()
+		format.LineAlignment = StringAlignment.Center
+		If isEditing Then
+			paint.FillRectangle(New SolidBrush(style.BackColor), fillRect)
+			Me.UpdateEditElement(column, Me.CurrentCellRendererElement, cellRect)
+			Me.CurrentCellRendererElement.Update()
+			If isEditing Then
+				Return
+			End If
+
+			cellValue = Me.CurrentCellRendererElement.Text
+			textColor = New SolidBrush(style.TextColor)
+			font = column.GridColumn.CellStyle.Font
+
+			cellRect.X = If(style.HorizontalAlignment = HorizontalAlignment.Left, cellRect.X + 2, If(column.GridColumn.CellStyle.HorizontalAlignment = HorizontalAlignment.Right, cellRect.X - 2, cellRect.X))
+		End If
+
+		'//Filling BackColor
+		If backColor IsNot SystemBrushes.Window Then
+			paint.FillRectangle(backColor, fillRect)
+		End If
+
+		If Not String.IsNullOrEmpty(cellValue) Then
+			'Draw String
+			paint.DrawString(cellValue, font.GetFont(), textColor, cellRect, format)
+		End If
+
+		format.Dispose()
+		MyBase.OnRender(paint, cellRect, cellValue, style, column, rowColumnIndex)
+	End Sub
+
+	Public Overrides Function CanValidate() As Boolean
+		Return False
+	End Function
+
+	Protected Overrides Sub OnWireEditUIElement(ByVal uiElement As DateTimePicker)
+		MyBase.OnWireEditUIElement(uiElement)
+		AddHandler uiElement.ValueChanged, AddressOf uiElement_ValueChanged
+	End Sub
+
+	Protected Overrides Sub OnUnwireEditUIElement(ByVal uiElement As DateTimePicker)
+		MyBase.OnUnwireEditUIElement(uiElement)
+		RemoveHandler uiElement.ValueChanged, AddressOf uiElement_ValueChanged
+	End Sub
+
+	Private Sub uiElement_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+		Dim datePicker = TryCast(sender, DateTimePicker)
+		If TypeOf datePicker.Tag Is DataColumn Then
+			Dim dataColumn = TryCast(datePicker.Tag, DataColumnBase)
+			dataColumn.UnboundRowInfo.Value = (TryCast(sender, DateTimePicker)).Value
+		End If
+	End Sub
+
+	Private Shared Function GetWidthForWeight(ByVal weight As GridBorderWeight) As Integer
+		Dim width As Integer = 1
+		Select Case weight
+			Case GridBorderWeight.ExtraThin
+				width = 1
+			Case GridBorderWeight.Thin
+				width = 1
+			Case GridBorderWeight.Medium
+				width = 2
+			Case GridBorderWeight.Thick
+				width = 3
+			Case GridBorderWeight.ExtraThick
+				width = 4
+			Case GridBorderWeight.ExtraExtraThick
+				width = 4
+		End Select
+		Return width
+	End Function
+
+	Protected Overrides Sub OnEditingComplete(ByVal dataColumn As DataColumnBase, ByVal currentRendererElement As DateTimePicker)
+		dataColumn.UnboundRowInfo.Value = (TryCast(Me.CurrentCellRendererElement, DateTimePicker)).Text
+		TryCast(dataColumn.UnboundRowInfo.OriginalSender, SfDataGrid).RaiseQueryUnboundRowInfo(dataColumn.UnboundRowInfo.UnboundRow, dataColumn.UnboundRowInfo.UnboundAction, dataColumn.UnboundRowInfo.Value, dataColumn.UnboundRowInfo.Column, dataColumn.UnboundRowInfo.CellType, dataColumn.UnboundRowInfo.RowColumnIndex)
+
+		MyBase.OnEditingComplete(dataColumn, currentRendererElement)
+	End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 In the below code newly created renderer added in `SfDataGrid.UnboundRowCellRenderers`
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.UnboundRowCellRenderers.Add("DateTimeRenderer", new DatePickerRenderer());
+
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.UnboundRowCellRenderers.Add("DateTimeRenderer", New DatePickerRenderer())
 
 {% endhighlight %}
 {% endtabs %}
@@ -406,8 +619,18 @@ void sfDataGrid_QueryUnboundRowInfo(object sender, QueryUnboundRowInfoArgs e)
    }
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub sfDataGrid_QueryUnboundRowInfo(ByVal sender As Object, ByVal e As QueryUnboundRowInfoArgs)
+	If e.UnboundAction = UnboundActions.QueryData Then
+		If e.Column.MappingName = "OrderDate" Then
+			e.CellType = "DateTimeRenderer"
+			e.Handled = True
+		End If
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img6.png)
+![](UnboundRow_images/UnboundRow_img6.png)
 
 ## Changing unbound row height
 The height of unbound row can changed by using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowHeight_EV.html) event,
@@ -425,8 +648,19 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.QueryRowHeight, AddressOf dataGrid_QueryRowHeight
+
+Private Sub dataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
+
+	If sfDataGrid.IsUnboundRow(e.RowIndex) Then
+		e.Height = 40
+		e.Handled = True
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundRow_images/UnboundRow_img7.png)
+![](UnboundRow_images/UnboundRow_img7.png)
 
 ## Exporting unbound rows
 
@@ -439,6 +673,12 @@ using Syncfusion.WinForms.DataGridConverter;
 ExcelExportingOptions option = new ExcelExportingOptions();
 option.ExportUnboundRows = true;
 {% endhighlight %}
+{% highlight vb %}
+Imports Syncfusion.WinForms.DataGridConverter
+
+Private [option] As New ExcelExportingOptions()
+[option].ExportUnboundRows = True
+{% endhighlight %}
 {% endtabs %}
 
 ### Export unbound rows to PDF
@@ -450,6 +690,12 @@ using Syncfusion.WinForms.DataGridConverter;
 PdfExportingOptions pdfExportingOption = new PdfExportingOptions();
 pdfExportingOption.ExportUnboundRows = true;
 {% endhighlight %}
+{% highlight vb %}
+Imports Syncfusion.WinForms.DataGridConverter
+
+Private pdfExportingOption As New PdfExportingOptions()
+pdfExportingOption.ExportUnboundRows = True
+{% endhighlight %}
 {% endtabs %}
 
 ## Get unbound rows
@@ -457,5 +703,8 @@ The unbound row of specified row index can get by using [GetUnboundRow](https://
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.GetUnboundRow(1);
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.GetUnboundRow(1)
 {% endhighlight %}
 {% endtabs %}

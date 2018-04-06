@@ -24,10 +24,10 @@ this.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid;
 {% endhighlight %}
 {% highlight vb %}
 
-' Set MergeCells direction for the GridControl.
+'Set MergeCells direction for the GridControl.
 Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.Both
 
-' Set merge cells behavior for the Grid.
+'Set merge cells behavior for the Grid.
 Me.gridControl1.Model.Options.MergeCellsMode = GridMergeCellsMode.OnDemandCalculation Or GridMergeCellsMode.MergeColumnsInRow Or GridMergeCellsMode.MergeRowsInColumn
 Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
 {% endhighlight %}
@@ -52,7 +52,7 @@ this.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.ColumnsInRow | G
 {% endhighlight %}
 {% highlight vb %}
 
-' Set MergeCells direction for the GridControl.
+'Set MergeCells direction for the GridControl.
 Me.gridControl1.TableStyle.MergeCell = GridMergeCellDirection.ColumnsInRow Or GridMergeCellDirection.RowsInColumn
 {% endhighlight %}
 {% endtabs %}
@@ -88,7 +88,7 @@ Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
 {% endhighlight %}
 {% endtabs %}
 
-## Finding a Merged Range of a cell
+## Finding a Merged Range of a Cell
 The [MergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html) collection maintains the all the merged ranges of a GridControl. To find a merged range of a cell, [FindRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~FindRange.html) method can be used. If the specified cell with row index and column index is inside a ` MergedRange `, a range will be returned. Otherwise it will return the empty range.
 
 {% tabs %}
@@ -118,7 +118,7 @@ MessageBox.Show("MergedRange for cell(4,3) is " & mergedRange.Info.ToString() & 
 
 N> The merged range of a cell can also be determined by using [GetSpannedRangeInfo](/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method instead of using `FindRange` method. 
 
-## Delaying and Evaluating merge cells
+## Delaying and Evaluating Merge Cells
 The cells which are all having same content will be merged. The merging can be delayed for specified range of cells to be re-evaluate later using [DelayMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~DelayMergeCells.html) and those delayed merged cells can be re-evaluated later by using [EvaluateMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~EvaluateMergeCells.html) methods. So merged cells which are delayed will not be re-evaluated until `EvaluateMergeCells` method is called for that specified range.
 
 {% tabs %}
@@ -131,15 +131,15 @@ this.gridControl1.Model.MergeCells.EvaluateMergeCells(GridRangeInfo.Rows(1, 3));
 
 {% endhighlight %}
 {% highlight vb %}
-' Delaying the merging of cells for specified range.
+'Delaying the merging of cells for specified range.
 Me.gridControl1.Model.MergeCells.DelayMergeCells(GridRangeInfo.Rows(1, 3))
 
-' Re-evaluating of merged cells.
+'Re-evaluating of merged cells.
 Me.gridControl1.Model.MergeCells.EvaluateMergeCells(GridRangeInfo.Rows(1, 3))
 {% endhighlight %}
 {% endtabs %}
 
-## Custom Cell Merging 
+## Custom cell merging 
 The GridControl lets you define the merged cells using [QueryCanMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCanMergeCells_EV.html) event. This event will be raised when grid compares the content of the two cells to determine if they should be merged.
 
 Any of the cells can be merged using this event. The [Handled](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.ComponentModel.SyncfusionHandledEventArgs~Handled.html) and [Result](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryCanMergeCellsEventArgs~Result.html) properties have to be enabled to perform the customization in this event. 
@@ -154,9 +154,11 @@ this.gridControl1.QueryCanMergeCells += new GridQueryCanMergeCellsEventHandler(g
 
 void gridControl1_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventArgs e)
  {
+
       // Checking whether it is already merged cells.
       if (!e.Result)
       {
+
             // Sets merging for two cells with different data.
             if (e.Style1.CellValue.ToString() == "381" && e.Style2.CellValue.ToString() == "794")
                 {
@@ -173,8 +175,10 @@ void gridControl1_QueryCanMergeCells(object sender, GridQueryCanMergeCellsEventA
 Private Me.gridControl1.QueryCanMergeCells += New GridQueryCanMergeCellsEventHandler(AddressOf gridControl1_QueryCanMergeCells)
 
 Private Sub gridControl1_QueryCanMergeCells(ByVal sender As Object, ByVal e As GridQueryCanMergeCellsEventArgs)
+
       ' Checking whether it is already merged cells.
       If Not e.Result Then
+
             ' Sets merging for two cells with different data.
             If e.Style1.CellValue.ToString() = "381" AndAlso e.Style2.CellValue.ToString() = "794" Then
                   e.Result = True

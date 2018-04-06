@@ -18,7 +18,7 @@ The following code example illustrates usage of Grid List control as a drop-down
 {% highlight c# %}
 this.comboBoxBase1.ListControl = this.gridListControl1;
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 Me.comboBoxBase1.ListControl = Me.gridListControl1
 {% endhighlight  %}
 {% endtabs %}

@@ -15,8 +15,12 @@ SfDataGrid allows to add additional columns which are **not bound with data obje
 this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Total Price", MappingName = "TotalPrice", Expression = "UnitPrice*Quantity" });
 
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Columns.Add(New GridUnboundColumn() With {.HeaderText = "Total Price", .MappingName = "TotalPrice", .Expression = "UnitPrice*Quantity"})
+
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img1.png)
+![](UnboundColumn_images/UnboundColumn_img1.png)
 
 N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -175,8 +179,16 @@ unboundColumn.Expression = "UnitPrice * Quantity < 5000" + (char)135 + "UnitPric
 
 this.sfDataGrid.Columns.Add(unboundColumn);
 {% endhighlight %}
+{% highlight vb %}
+Dim unboundColumn As New GridUnboundColumn()
+unboundColumn.MappingName = "UnboundColumn"
+unboundColumn.HeaderText = "Unbound Column"
+unboundColumn.Expression = "UnitPrice * Quantity < 5000" & ChrW(135) & "UnitPrice < 100"
+
+Me.sfDataGrid.Columns.Add(unboundColumn)
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img2.png)
+![](UnboundColumn_images/UnboundColumn_img2.png)
 
 ### Using Format
 Format the values of other columns and display the formatted value in unbound column using `Format` property.
@@ -184,8 +196,11 @@ Format the values of other columns and display the formatted value in unbound co
 {% highlight c# %}
 unboundColumn.Format = "{UnitPrice}% for {OrderID}";
 {% endhighlight %}
+{% highlight vb %}
+unboundColumn.Format = "{UnitPrice}% for {OrderID}"
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img3.png)
+![](UnboundColumn_images/UnboundColumn_img3.png)
 
 ### Using QueryUnboundColumnInfo event
 The data for unbound column can populated by handling the [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryUnboundColumnInfo_EV.html) event.[QueryUnboundColumnInfoArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html) of the `QueryUnboundColumnInfo` event provides the information about the cell triggered this event. 
@@ -209,8 +224,20 @@ void sfDataGrid_QueryUnboundColumnInfo(object sender, QueryUnboundColumnInfoArgs
 }
 
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.QueryUnboundColumnInfo, AddressOf sfDataGrid_QueryUnboundColumnInfo
+
+Private Sub sfDataGrid_QueryUnboundColumnInfo(ByVal sender As Object, ByVal e As QueryUnboundColumnInfoArgs)
+	If e.UnboundAction = UnboundActions.QueryData Then
+		Dim unitPrice = Convert.ToDouble(e.Record.GetType().GetProperty("UnitPrice").GetValue(e.Record))
+		Dim disCount = Convert.ToDouble(e.Record.GetType().GetProperty("Quantity").GetValue(e.Record))
+		Dim save = unitPrice * disCount
+		e.Value = "$" & save.ToString()
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img4.png)
+![](UnboundColumn_images/UnboundColumn_img4.png)
 
 ## Editing unbound column
 
@@ -224,6 +251,13 @@ void dataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs 
 {
     args.Cancel = args.DataColumn.GridColumn is GridUnboundColumn;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.CurrentCellBeginEdit, AddressOf dataGrid_CurrentCellBeginEdit
+
+Private Sub dataGrid_CurrentCellBeginEdit(ByVal sender As Object, ByVal args As CurrentCellBeginEditEventArgs)
+	args.Cancel = TypeOf args.DataColumn.GridColumn Is GridUnboundColumn
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -241,6 +275,15 @@ void sfDataGrid_QueryUnboundColumnInfo(object sender, QueryUnboundColumnInfoArgs
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.QueryUnboundColumnInfo, AddressOf sfDataGrid_QueryUnboundColumnInfo
+
+Private Sub sfDataGrid_QueryUnboundColumnInfo(ByVal sender As Object, ByVal e As QueryUnboundColumnInfoArgs)
+	If e.UnboundAction = UnboundActions.CommitData Then
+		Dim editedValue = e.Value
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Read unbound column values
@@ -248,6 +291,10 @@ The value of `GridUnboundColumn` can get by using [GetUnboundCellValue](https://
 {% tabs %}
 {% highlight c# %}
 var value = sfDataGrid.GetUnboundCellValue(sfDataGrid.Columns[8], data.OrdersListDetails[10]);
+
+{% endhighlight %}
+{% highlight vb %}
+Dim value = sfDataGrid.GetUnboundCellValue(sfDataGrid.Columns(8), data.OrdersListDetails(10))
 
 {% endhighlight %}
 {% endtabs %}
@@ -266,8 +313,19 @@ unboundColumn.Expression = "UnitPrice * Quantity";
 
 this.sfDataGrid.Columns.Add(unboundColumn);
 {% endhighlight %}
+{% highlight vb %}
+Dim unboundColumn As New GridUnboundColumn()
+unboundColumn.MappingName = "UnboundColumn"
+unboundColumn.HeaderText = "Grand Total"
+
+unboundColumn.CellStyle = New CellStyleInfo() With {.BackColor = Color.DarkCyan, .TextColor = Color.White, .HorizontalAlignment = HorizontalAlignment.Right}
+
+unboundColumn.Expression = "UnitPrice * Quantity"
+
+Me.sfDataGrid.Columns.Add(unboundColumn)
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img5.png)
+![](UnboundColumn_images/UnboundColumn_img5.png)
 
 ## Customize the unbound column behavior
 
@@ -299,6 +357,22 @@ public class CustomUnboundCellRenderer : GridUnboundCellRenderer
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+sfDataGrid.CellRenderers.Remove("Unbound")
+sfDataGrid.CellRenderers.Add("Unbound", New CustomUnboundCellRenderer())
+
+
+public class CustomUnboundCellRenderer : GridUnboundCellRenderer
+	protected override void OnEditingComplete(DataColumnBase dataColumn, TextBox currentRendererElement)
+		MyBase.OnEditingComplete(dataColumn, currentRendererElement)
+
+	protected override void OnInitializeEditElement(DataColumnBase column, RowColumnIndex rowColumnIndex, TextBox uiElement)
+		MyBase.OnInitializeEditElement(column, rowColumnIndex, uiElement)
+
+	protected override void OnRender(Graphics paint, Rectangle cellRect, String cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
+		style.TextColor = Color.DarkBlue
+		MyBase.OnRender(paint, cellRect, cellValue, style, column, rowColumnIndex)
+{% endhighlight %}
 {% endtabs %}
-![](images/UnboundColumn_images/UnboundColumn_img6.png)
+![](UnboundColumn_images/UnboundColumn_img6.png)
 

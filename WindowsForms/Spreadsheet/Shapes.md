@@ -25,17 +25,17 @@ Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[GraphicChartCe
 
 public Form1()
 {
-  InitializeComponent();
+    InitializeComponent();
   
-  //For importing charts,
-  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+    //For importing charts,
+    this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
 }
 
 {% endhighlight %}
 {% endtabs %}
 
 
-### Adding the Charts at Runtime
+### Adding charts at runtime
 
 For adding the Charts in Spreadsheet at runtime, use [AddChart](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddChart.html) method, also you can resize and reposition the chart.
 
@@ -78,10 +78,10 @@ Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellR
 
 public Form1()
 {
-  InitializeComponent();
+    InitializeComponent();
       
-  //For importing sparklines,
-  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+    //For importing sparklines,
+    this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
 }
 
 {% endhighlight %}
@@ -102,7 +102,7 @@ var shape = spreadsheet.AddImage(worksheet, new RowColumnIndex(5, 5), stream);
 shape.Top = 200;
 shape.Left = 200;
 
- //Re-sizing a Picture
+//Re-sizing a Picture
 shape.Height = 200;
 shape.Width = 200;
 
@@ -117,7 +117,6 @@ Spreadsheet provides support to import RichText Box in `SpreadsheetGrid` and to 
 {% highlight c# %}
 
 var rtfText = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset1 Calibri;}{\\f1\\fnil\\fcharset1 Calibri;}}{\\colortbl;\\red0\\green0\\blue0;\\red255\\green0\\blue0;}{\\f0\\fs22\\b\\cf1\\u83*\\u121*\\u110*\\u99*\\u102*\\u117*\\u115*\\u105*\\u111*\\u110*\\u32*\\b0}                           {\\f1\\fs22\\cf2\\u83*\\u111*\\u102*\\u116*\\u119*\\u97*\\u114*\\u101*\\u32*}{\\f1\\fs22\\cf1\\u80*\\u118*\\u116*\\u46*\\u32*\\u76*\\u116*\\u100*}}";
-  
 var textBox = spreadsheet.AddTextBox(spreadsheet.ActiveSheet, new RowColumnIndex(5, 5), new Size(200, 200), rtfText) as TextBoxShapeImpl;
 
 // Re-positioning RichTextBox
@@ -127,7 +126,7 @@ textBox.Top = 200;
 {% endhighlight %}
 {% endtabs %}
 
-## Accessing the selected Shapes
+## Accessing the selected shapes
 
 Spreadsheet allows the user to access the selected shapes and modify the properties associated with it in `SpreadsheetGrid`.
 
@@ -135,14 +134,17 @@ Spreadsheet allows the user to access the selected shapes and modify the propert
 {% highlight c# %}
 
 var selectedShape = spreadsheet.ActiveGrid.GraphicModel.SelectedShapes;
+
 for(int i = 0; i < selectedShape.Count ; i++)
 {
+
     if(ExcelShapeType.Chart == selectedShape[i].ShapeType)
     {
         var chart = selectedShape[i] as IChart;
         chart.ChartArea.Fill.FillType = ExcelFillType.Gradient;
         chart.ChartArea.Fill.ForeColor = Color.Blue;
     }
+
     else if(ExcelShapeType.Picture == selectedShape[i].ShapeType)
     {
         var picture = selectedShape[i] as ShapeImpl;
@@ -156,7 +158,7 @@ spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicVisual();
 {% endhighlight %}
 {% endtabs %}
 
-## Select a Shape Programmatically
+## Selecting a shape programmatically
 
 Users can select a shape programmatically by using [AddSelectedShapes](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~AddSelectedShapes.html) method of [GraphicModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel.html) class.
 
@@ -169,7 +171,7 @@ spreadsheet.ActiveGrid.GraphicModel.AddSelectedShapes(shape);
 {% endhighlight %}
 {% endtabs %}
 
-## Clear a Selection
+## Clearing selection
 
 Users can clear the selection from the shapes and move the selection to the grid using [ClearSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~ClearSelection.html) method of `GraphicModel` class.
 

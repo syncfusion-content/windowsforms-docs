@@ -6,13 +6,14 @@ platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
-# How to Add Custom Calculations to Expression Fields?
+# How to Add Custom Calculations to Expression Fields
 
 Essential Grouping lets you add your own functions to a function library which can be used in an expression field. In this manner, you can do custom calculations in expressions. This is a two-step process which is given below:
 1. Register the function name and a delegate with the grouping engine.
 2. Implement a method that does your calculation.
    In the code given below, we add a method named 'New_Function' that takes two arguments and performs a certain calculation on those arguments.
 
+{% tabs %}
 {% highlight C# %}
  
 // Step 1
@@ -47,7 +48,7 @@ return "";
  
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
  
 ' Step 1
 ' Add function named New_Function that uses a delegate named ComputeFunction to define a custom calculation.
@@ -79,3 +80,4 @@ Return ""
 End Function  
 
 {% endhighlight %}
+{% endtabs %}
