@@ -29,15 +29,35 @@ Description</th></tr>
 <tr>
 <td>
 DockTabFont </td><td>
-Gets or sets the font for the tab control used in the  tabbed docking group.</td></tr>
+This property helps to customize the font for the tab control used in the  tabbed docking group.</td></tr>
 <tr>
 <td>
 DockTabHeight</td><td>
-Gets or sets the height for the tab control used in the tabbed docking group.</td></tr>
+This property helps to customize the tab control used in the tabbed docking group.</td></tr>
 <tr>
 <td>
 DockTabForeColor</td><td>
-Gets or sets the fore color of the Docked tab control. This property is not applicable when the visual style is set to Metro.</td></tr>
+This property helps to customize header foreground color of inactive tab item in dock window.</td></tr>
+<tr>
+<td>
+ActiveDockTabForeColor</td><td>
+This property helps to customize header foreground color of active tab item in dock window.</td></tr>
+<tr>
+<td>
+DockTabBackColor</td><td>
+This property helps to customize header background color of inactive tab item in dock window.</td></tr>
+<tr>
+<td>
+ActiveDockTabBackColor</td><td>
+This property helps to customize header background color of active tab item in dock window.</td></tr>
+<tr>
+<td>
+DockTabPanelBackColor</td><td>
+This property helps to customize tab panel background color of tabbed dock window.</td></tr>
+<tr>
+<td>
+DockTabSeparatorColor</td><td>
+This property helps to customize separator between the tabs in dock window.</td></tr>
 </table>
 
 {% tabs %}
@@ -67,8 +87,6 @@ Me.DockingManager1.DockTabHeight = 30
 ![](Dealing-with-Windows_images/Appearance1.png) 
 
 
-N> ResetDockTabFont and ResetDockTabHeight methods lets you reset the above settings.
-
 
 {% tabs %}
 
@@ -92,6 +110,101 @@ Me.dockingManager1.DockTabForeColor = System.Drawing.Color.Red
 {% endtabs %}
 
 ![](Dealing-with-Windows_images/DockTabForeColor.png) 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.dockingManager1.ActiveDockTabForeColor = System.Drawing.Color.Purple;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.dockingManager1.ActiveDockTabForeColor = System.Drawing.Color.Purple
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows_images/ActiveDockTabForeColor.png) 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.dockingManager1.DockTabBackColor = System.Drawing.Color.Yellow;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.dockingManager1.DockTabBackColor = System.Drawing.Color.Yellow
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows_images/DockTabBackcolor.png) 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.dockingManager1.ActiveDockTabBackColor = System.Drawing.Color.Green;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.dockingManager1.ActiveDockTabBackColor = System.Drawing.Color.Green
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows_images/ActiveDockTabBackColor.png) 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.dockingManager1.DockTabPanelBackColor = System.Drawing.Color.Purple;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.dockingManager1.DockTabPanelBackColor = System.Drawing.Color.Purple
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows_images/DockTabPanelBackcolor.png) 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.dockingManager1.DockTabSeparatorColor = System.Drawing.Color.Red;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.dockingManager1.DockTabSeparatorColor = System.Drawing.Color.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows_images/DockTabSeparator.png) 
  
 
 N> ResetDockTabFont, ResetDockTabHeight and ResetDockTabForeColor methods allows you to reset the above settings.

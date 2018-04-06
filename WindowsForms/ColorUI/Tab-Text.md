@@ -10,7 +10,6 @@ documentation: ug
 
 The default tab text of the ColorGroups can be set using the below properties.
 
-
 <table>
 <tr>
 <th>
@@ -34,38 +33,26 @@ UserTabName</td><td>
 Set the text displayed on the User colors tab.The tab name can be reset using ResetUserTabName() method.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight c# %}
 
-
 this.colorUIControl1.StandardTabName = "Web Layout";
-
 this.colorUIControl1.SystemTabName = "System Colors";
-
 this.colorUIControl1.UserTabName = "User Defined";
-
 this.colorUIControl1.CustomTabName = "Palettes";
 
-
 {% endhighlight  %}
-{% highlight vbnet %}
 
-
-
+{% highlight vb %}
 
 Me.colorUIControl1.StandardTabName = "Web Layout"
-
 Me.colorUIControl1.SystemTabName = "System Colors"
-
 Me.colorUIControl1.UserTabName = "User Defined"
-
 Me.colorUIControl1.CustomTabName = "Palettes"
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](ColorUI_images/Overview_img234.jpeg)
-
-
 
 N> We can also change the font style of the tab text using ColorUIControl.Font property.

@@ -12,8 +12,6 @@ The Essential Tools ColorUIControl allows .NET developers to provide a standar
 
 ![](ColorUI_images/Overview_img225.jpeg) 
 
-
-
 The .NET framework provides a color dialog control which, allows applications to collect color information from users. However, the color dialog control does not provide any way to place a control within the layout of the application in order to collect color information. The Essential Tools ColorUIControl provides an easy to use color palette control that can be placed inline in applications.  
 
 The ColorUIControl implements a palette type visual interface for selecting colors at run-time. The ColorUIControl class offers a selection of colors that are divided into four color groupings that are arranged as tabs. The four color groupings are:
@@ -24,6 +22,7 @@ The ColorUIControl implements a palette type visual interface for selecting colo
 * UserColors providing different shades of user defined Colors 
 
 {% seealso %}
-[Creating ColorUIControl](/windowsforms/colorui/creating-coloruicontrol)
-{% endseealso %}
 
+[Creating ColorUIControl](/windowsforms/colorui/creating-coloruicontrol)
+
+{% endseealso %}

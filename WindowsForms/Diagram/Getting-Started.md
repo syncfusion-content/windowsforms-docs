@@ -221,7 +221,7 @@ Me.Controls.Add(diagram)
 
 #### Adding Nodes to the Model
 
-The Diagram control has a list of predefined basic shapes ([nodes](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Model~Nodes.html)) which help you to draw diagrams according to your requirement. You can create your own shapes by inheriting the existing shape’s class and the Symbol Designer utility tool which is shipped with the Essential Diagram package. 
+The Diagram control has a list of predefined basic shapes ([nodes](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Model~Nodes.html#)) which help you to draw diagrams according to your requirement. You can create your own shapes by inheriting the existing shape’s class and the Symbol Designer utility tool which is shipped with the Essential Diagram package. 
 
 The following code creates a rectangular node and adds it to the model.
 
@@ -474,13 +474,13 @@ diagram.Model.AppendChild(link)
 
 #### Creating a PaletteGroupBar Control through Designer
 
-This section depicts the step-by-step procedure to create a [PaletteGroupBar](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html) control through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create a [PaletteGroupBar](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) control through the Visual Studio designer in a .NET Windows Forms application.
 
-To create a [PaletteGroupBar](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html) control through the designer:
+To create a [PaletteGroupBar](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) control through the designer:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [PaletteGroupBar](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html) from Toolbox and drop it to the Designer Form window.
+3. Drag [PaletteGroupBar](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -573,13 +573,13 @@ Me.Controls.Add(paletteBar)
 
 #### Creating a PaletteGroupView Control through Designer
 
-This section depicts the step-by-step procedure to create a [PaletteGroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html) control through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create a [PaletteGroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) control through the Visual Studio designer in a .NET Windows Forms application.
 
-To create a [PaletteGroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html) control using the designer:
+To create a [PaletteGroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) control using the designer:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [PaletteGroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html) from Toolbox and drop it to the Designer Form window.
+3. Drag [PaletteGroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -665,13 +665,13 @@ Me.Controls.Add(paletteView)
 
 #### Creating an Overview Control through Designer
 
-This section depicts the step-by-step procedure to create an [Overview control](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html) through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create an [Overview control](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html#) through the Visual Studio designer in a .NET Windows Forms application.
 
 To create an Overview control using the designer:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [OverviewControl](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html) from Toolbox and drop it to the Designer Form window.
+3. Drag [OverviewControl](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -747,13 +747,13 @@ Me.Controls.Add(overviewControl)
 
 #### Creating a PropertyEditor Control through Designer
 
-This section depicts the step-by-step procedure to create a [PropertyEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html) control through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create a [PropertyEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) control through the Visual Studio designer in a .NET Windows Forms application.
 
-To create a [PropertyEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html) control using code:
+To create a [PropertyEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) control using code:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [PropertyEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html) from Toolbox and drop it to the Designer Form window.
+3. Drag [PropertyEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -831,13 +831,13 @@ Me.Controls.Add(propertyEditor)
 
 #### Creating a DocumentExplorer Control through Designer
 
-This section depicts the step-by-step procedure to create a [DocumentExplorer](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html) control through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create a [DocumentExplorer](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) control through the Visual Studio designer in a .NET Windows Forms application.
 
-To create a [DocumentExplorer](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html) control using the designer:
+To create a [DocumentExplorer](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) control using the designer:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [DocumentExplorer](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html) from Toolbox and drop it to the Designer Form window.
+3. Drag [DocumentExplorer](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -864,8 +864,8 @@ To create a DocumentExplorer control using code:
 1. Create a new Windows Forms application.
 2. Add the following basic dependent Syncfusion assemblies to the project:
    * Syncfusion.Core.dll
-   * [Syncfusion.Diagram.Base.dll](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base.html)
-   * [Syncfusion.Diagram.Windows.dll](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows.html)
+   * [Syncfusion.Diagram.Base.dll](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base.html#)
+   * [Syncfusion.Diagram.Windows.dll](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows.html#)
    * Syncfusion.Shared.Base.dll
 3. Create a DocumentExplorer control using the following code.
 
@@ -920,30 +920,30 @@ The main difference between the diagram builder and symbol palette is as follows
 
 Software Path
 
-[drive:]\Program Files\Syncfusion\Essential Studio\<Version Number>\Utilities\Diagram\Windows Forms\DiagramBuilder
+"[Installed Drive]:\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Utilities\Diagram\Windows Forms\DiagramBuilder"
 
 1. Overview Control
 
-	Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagrams. The control features a view port window that can be moved and / or resized using the mouse to modify the diagrams' origin and magnification properties at run-time. The properties of this control is discussed in the Overview Control topic.
+Overview Control provides a perspective view of a diagram model, and allows users to dynamically pan and zoom the diagrams. The control features a view port window that can be moved and / or resized using the mouse to modify the diagrams' origin and magnification properties at run-time. The properties of this control is discussed in the Overview Control topic.
 
 2. Palette GroupBar and GroupView
 
-	The PaletteGroupBar control provides a way for users to drag and drop symbols onto a diagram. It is based on the Syncfusion Essential Tools GroupBar control. Each symbol palette loaded in thePaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols.
+The PaletteGroupBar control provides a way for users to drag and drop symbols onto a diagram. It is based on the Syncfusion Essential Tools GroupBar control. Each symbol palette loaded in thePaletteGroupBar occupies a panel that can be selected by a bar button. The bar button is labeled with the name of the symbol palette. The symbols in the palette are shown as icons that can be dragged and dropped onto the diagram. This control allows users to add symbols to a palette, and save or load the palette whenever necessary. It provides a way to classify and maintain symbols.
 
 The PaletteGroupView control provides an easy way to serialize a symbol palette to and from the resource file of a form. At design-time, users can attach a symbol palette to a PaletteGroupView control in the form. Selecting the PaletteGroupView and clicking the Palette property in the Visual Studio .NET Properties window will open a standard Open File dialog, which allows the user to select a symbol palette file that has been created with the Symbol Designer.
 For more details about these diagram controls, refer to the Palette GroupBar and GroupView topic.
 
 3. Property Editor
 
-	The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET Toolbox. It also allows users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface to set and view the various property settings. To know about the control's properties see Property Editor topic.
+The Property Editor in Essential Diagram displays properties of the currently selected object(s) in the diagram. It is a Windows Forms control that can be added to the Visual Studio .NET Toolbox. It also allows users to set or modify various properties of the objects or the model. The Property Editor provides an easy interface to set and view the various property settings. To know about the control's properties see Property Editor topic.
 
 4. Document Explorer
 
-	Document Explorer allows you to visualize the details of the various objects that are added onto the diagram control at run-time. The layers will be listed under the _Layers_ node and other objects like shapes, links, lines and text editor will be listed under _Nodes_ node.
+Document Explorer allows you to visualize the details of the various objects that are added onto the diagram control at run-time. The layers will be listed under the _Layers_ node and other objects like shapes, links, lines and text editor will be listed under _Nodes_ node.
 
 5. Diagram Document
 
-	The [DiagramDocument](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DiagramDocument.html) is a serializable document type that encapsulates the model and view data for the diagram. The grid area of the diagram document is the diagram view object area. The nodes dragged from the PaletteGroupBar will be dropped here.
+The [DiagramDocument](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DiagramDocument.html#) is a serializable document type that encapsulates the model and view data for the diagram. The grid area of the diagram document is the diagram view object area. The nodes dragged from the PaletteGroupBar will be dropped here.
 
 For more details, see Diagram Grid topic.
 
@@ -964,9 +964,9 @@ Follow the below steps in order to open an existing diagram document
 // Checking whether "OK" button is clicked in OpenFileDialog
 if (this.openFileDialog1.ShowDialog(this) == DialogResult.OK)
 {
-    string FileName = this.openFileDialog1.FileName;
-    this.diagram1.LoadBinary(FileName);
-    this.diagram1.Refresh();
+string FileName = this.openFileDialog1.FileName;
+this.diagram1.LoadBinary(FileName);
+this.diagram1.Refresh();
 }
 
 {% endhighlight %}
@@ -998,8 +998,8 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
 // Checking whether "OK" button is clicked in SaveFileDialog
 if (this.saveFileDialog1.ShowDialog(this) == DialogResult.OK)
 {
-	this.FileName = this.saveFileDialog1.FileName;
-	this.diagram1.SaveBinary(this.FileName);
+this.FileName = this.saveFileDialog1.FileName;
+this.diagram1.SaveBinary(this.FileName);
 }
 
 {% endhighlight %}
@@ -1021,7 +1021,7 @@ Following are the steps to print a diagram document:
 
 1. Page Setup
 
-   The Page Setup dialog modifies the [Page Settings](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~PageSettings.html) and [Printer Settings](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.PageSizeControl~PrinterSettings.html) information for a given document. The user can enable sections of the dialog to manipulate printing, margins, paper orientation, size, source and to show help and network buttons. MinMargins defines the minimum margins a user can select.
+   The Page Setup dialog modifies the [Page Settings](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~PageSettings.html#) and [Printer Settings](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.PageSizeControl~PrinterSettings.html#) information for a given document. The user can enable sections of the dialog to manipulate printing, margins, paper orientation, size, source and to show help and network buttons. MinMargins defines the minimum margins a user can select.
 
    The following code snippet can be used for setting the page set up for diagram document.
 
@@ -1031,15 +1031,15 @@ Following are the steps to print a diagram document:
 {% highlight c# %}
 
 if (diagram1 == null || diagram1.Model == null)
-	return;
-    
+return;
+
 using (PageSetupDialog dlgPageSetup = new
-		PageSetupDialog(diagram1.View))
+    PageSetupDialog(diagram1.View))
 {
-	if (dlgPageSetup.ShowDialog() == DialogResult.OK)
-	{
-		diagram1.UpdateView();
-	}
+if (dlgPageSetup.ShowDialog() == DialogResult.OK)
+{
+diagram1.UpdateView();
+}
 }
 
 {% endhighlight %}
@@ -1061,14 +1061,14 @@ using (PageSetupDialog dlgPageSetup = new
 
 if (diagram1 != null && diagram1.Model != null)
 {
-	PageBorderDialog borderDialog = new PageBorderDialog();
-	borderDialog.PageBorderStyle = diagram1.View.PageBorderStyle; // It will show existing border set up
-	if (borderDialog.ShowDialog() == DialogResult.OK)
-	{
-		diagram1.View.PageBorderStyle = borderDialog.PageBorderStyle; // It will update the modified set up.
-		diagram1.View.RefreshPageSettings();
-		diagram1.UpdateView();
-	}
+PageBorderDialog borderDialog = new PageBorderDialog();
+borderDialog.PageBorderStyle = diagram1.View.PageBorderStyle; // It will show existing border set up
+if (borderDialog.ShowDialog() == DialogResult.OK)
+{
+diagram1.View.PageBorderStyle = borderDialog.PageBorderStyle; // It will update the modified set up.
+diagram1.View.RefreshPageSettings();
+diagram1.UpdateView();
+}
 }
         
 {% endhighlight %}
@@ -1080,9 +1080,9 @@ if (diagram1 != null && diagram1.Model != null)
 
 3. Header and Footers
 
-   The [Header](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Header.html) and [Footer](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Footer.html) dialog provides an interactive form-based interface for initializing the Header and Footer settings of a diagram. 
+   The [Header](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Header.html#) and [Footer](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Footer.html#) dialog provides an interactive form-based interface for initializing the Header and Footer settings of a diagram. 
 
-   The following code snippet can be used for creating the [Header and Footer dialog](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.HeaderFooterDialog.html). 
+   The following code snippet can be used for creating the [Header and Footer dialog](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.HeaderFooterDialog.html#). 
 
 
 
@@ -1091,15 +1091,15 @@ if (diagram1 != null && diagram1.Model != null)
 
 if (diagram1 != null && diagram1.Model != null)
 {
-	HeaderFooterDialog dlgHF = new HeaderFooterDialog();
-	dlgHF.Header = diagram1.Model.HeaderFooterData.Header;
-	dlgHF.Footer = diagram1.Model.HeaderFooterData.Footer;
-	dlgHF.MeasurementUnits = diagram1.Model.MeasurementUnits;
-	if (dlgHF.ShowDialog() == DialogResult.OK)
-	{
-		diagram1.Model.HeaderFooterData.Header = dlgHF.Header;
-		diagram1.Model.HeaderFooterData.Footer = dlgHF.Footer;
-	}
+HeaderFooterDialog dlgHF = new HeaderFooterDialog();
+dlgHF.Header = diagram1.Model.HeaderFooterData.Header;
+dlgHF.Footer = diagram1.Model.HeaderFooterData.Footer;
+dlgHF.MeasurementUnits = diagram1.Model.MeasurementUnits;
+if (dlgHF.ShowDialog() == DialogResult.OK)
+{
+diagram1.Model.HeaderFooterData.Header = dlgHF.Header;
+diagram1.Model.HeaderFooterData.Footer = dlgHF.Footer;
+}
 }
             
 {% endhighlight %}
@@ -1126,14 +1126,14 @@ if (diagram1 != null && diagram1.Model != null)
 
 if (diagram1 != null)
 {
-	PrintDocument printDoc = diagram1.CreatePrintDocument();
-	PrintPreviewDialog printPreviewDlg = new PrintPreviewDialog();
-	printPreviewDlg.StartPosition = FormStartPosition.CenterScreen;
-	printDoc.PrinterSettings.FromPage = 0;
-	printDoc.PrinterSettings.ToPage = 0;
-	printDoc.PrinterSettings.PrintRange = PrintRange.AllPages;
-	printPreviewDlg.Document = printDoc;
-	printPreviewDlg.ShowDialog(this);
+PrintDocument printDoc = diagram1.CreatePrintDocument();
+PrintPreviewDialog printPreviewDlg = new PrintPreviewDialog();
+printPreviewDlg.StartPosition = FormStartPosition.CenterScreen;
+printDoc.PrinterSettings.FromPage = 0;
+printDoc.PrinterSettings.ToPage = 0;
+printDoc.PrinterSettings.PrintRange = PrintRange.AllPages;
+printPreviewDlg.Document = printDoc;
+printPreviewDlg.ShowDialog(this);
 }
 
 {% endhighlight %}
@@ -1159,15 +1159,15 @@ if (diagram1 != null)
 
 if (diagram1 != null)
 {
-    PrintDocument printDoc = diagram1.CreatePrintDocument();
-    PrintDialog printDlg = new PrintDialog();
-    printDlg.Document = printDoc;
-    printDlg.AllowSomePages = true;
-    if (printDlg.ShowDialog(this) == DialogResult.OK)
-    {
-        printDoc.PrinterSettings = printDlg.PrinterSettings;
-        printDoc.Print();
-    }
+PrintDocument printDoc = diagram1.CreatePrintDocument();
+PrintDialog printDlg = new PrintDialog();
+printDlg.Document = printDoc;
+printDlg.AllowSomePages = true;
+if (printDlg.ShowDialog(this) == DialogResult.OK)
+{
+printDoc.PrinterSettings = printDlg.PrinterSettings;
+printDoc.Print();
+}
 }
 
 {% endhighlight %}
@@ -1235,18 +1235,18 @@ Code Snippet</th>
 </tr>
 <tr>
 <td>
-[Pan Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PanTool.html)</td><td>
+{{'[Pan Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PanTool.html#"")'| markdownify }}</td><td>
 Pan tool allows the user to drag the diagram and hence scroll it in any direction.</td><td>
 diagram1.Controller.ActivateTool("PanTool");</td>
 </tr>
 <tr>
 <td>
-[Zoom Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.ZoomTool.html)</td><td>
-Zoom tool allows the user to zoom the diagram with minimum and maximum [magnification](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~Magnification.html).</td><td>
+{{'[Zoom Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.ZoomTool.html#"")'| markdownify }}</td><td>
+Zoom tool allows the user to zoom the diagram with minimum and maximum [magnification](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~Magnification.html#"")'| markdownify }}.</td><td>
 diagram1.Controller.ActivateTool("ZoomTool");</td></tr>
 <tr>
 <td>
-[Magnification](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~Magnification.html)</td><td>
+{{'[Magnification](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~Magnification.html#"")'| markdownify }}</td><td>
 This value is used to zoom the view in and out. The x and y axes can be scaled independently. Normally, the x and y axes will have the same magnification value.</td><td>
 int magVal = 30;diagram1.View.Magnification= magVal;</td></tr>
 <tr>
@@ -1256,12 +1256,12 @@ This will show / hide the diagram view grid.</td><td>
 Diagram1.View.Grid.Visible = true;</td></tr>
 <tr>
 <td>
-[SnapToGrid<](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LayoutGrid~SnapToGrid.html)/td><td>
+{{'[SnapToGrid](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LayoutGrid~SnapToGrid.html#"")'| markdownify }}</td><td>
 Specifies whether the snap to grid feature is enabled.</td><td>
 Diagram1.View.Grid.SnapToGrid =true; </td></tr>
 <tr>
 <td>
-[Rulers](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Ruler.html)</td><td>
+{{'[Rulers](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Ruler.html#"")'| markdownify }}</td><td>
 Diagram control supports rulers similar to that in Microsoft Word. For details see Rulers</td><td>
 Diagram1.ShowRulers=true;</td></tr>
 </table>
@@ -1288,32 +1288,32 @@ Description</th><th>
 Code Snippet</th></tr>
 <tr>
 <td>
-[AlignLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignLeft.html)</td><td>
+{{'[AlignLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignLeft.html#"")'| markdownify }}</td><td>
 Aligns the selected nodes along the left edge of the first node.</td><td>
 diagram1.AlignLeft();</td></tr>
 <tr>
 <td>
-[AlignCenter](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignCenter.html)</td><td>
+{{'[AlignCenter](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignCenter.html#"")'| markdownify }}</td><td>
 Aligns the selected nodes along the vertical center of the first node.</td><td>
 diagram1.AlignCenter();</td></tr>
 <tr>
 <td>
-[AlignRight](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignRight.html)</td><td>
+{{'[AlignRight](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignRight.html#"")'| markdownify }}</td><td>
 Aligns the selected nodes along the right edge of the first node.</td><td>
 diagram1.AlignRight();</td></tr>
 <tr>
 <td>
-[AlignTop](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignTop.html)</td><td>
+{{'[AlignTop](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignTop.html#"")'| markdownify }}</td><td>
 Aligns the selected nodes along the top edge of the first node.</td><td>
 diagram1.AlignTop();</td></tr>
 <tr>
 <td>
-[AlignMiddle](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignMiddle.html)</td><td>
+{{'[AlignMiddle](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignMiddle.html#"")'| markdownify }}</td><td>
 Aligns the selected nodes along the horizontal center of the first node.</td><td>
 diagram1.AlignMiddle();</td></tr>
 <tr>
 <td>
-[AlignBottom](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignBottom.html)</td><td>
+{{'[AlignBottom](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~AlignBottom.html#"")'| markdownify }}</td><td>
 Aligns the selected nodes along the bottom edge of the first node.</td><td>
 diagram1.AlignBottom();</td></tr>
 </table>
@@ -1337,22 +1337,22 @@ Description</th><th>
 Code Snippet</th></tr>
 <tr>
 <td>
-[RotateLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~Rotate.html)</td><td>
+{{'[RotateLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~Rotate.html#"")'| markdownify }}</td><td>
 Rotates the selected nodes about their local origin by -90 degrees.</td><td>
 diagram1.Rotate(-90);</td></tr>
 <tr>
 <td>
-[RotateRight](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~Rotate.html)</td><td>
+{{'[RotateRight](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~Rotate.html#"")'| markdownify }}</td><td>
 Rotates the selected nodes about their local origin by 90 degrees.</td><td>
 diagram1.Rotate(90);</td></tr>
 <tr>
 <td>
-[FlipVertical](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~FlipVertical.html)</td><td>
+{{'[FlipVertical](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~FlipVertical.html#"")'| markdownify }}</td><td>
 Flips the selected nodes about their vertical (Y) axis.</td><td>
 diagram1.FlipVertical();</td></tr>
 <tr>
 <td>
-[FlipHorizontal](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~FlipHorizontal.html)</td><td>
+{{'[FlipHorizontal](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~FlipHorizontal.html#"")'| markdownify }}</td><td>
 Flips the selected nodes about their horizontal (X) axis.</td><td>
 diagram1.FlipHorizontal();</td></tr>
 </table>
@@ -1377,27 +1377,27 @@ Description</th><th>
 Code Snippet</th></tr>
 <tr>
 <td>
-[SpaceAcross](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SpaceAcross.html)</td><td>
+{{'[SpaceAcross](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SpaceAcross.html#"")'| markdownify }}</td><td>
 Positions the selected nodes for equal horizontal spacing</td><td>
 diagram1.SpaceAcross();</td></tr>
 <tr>
 <td>
-[SpaceDown](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SpaceDown.html)</td><td>
+{{'[SpaceDown](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SpaceDown.html#"")'| markdownify }}</td><td>
 Positions the selected nodes for equal vertical spacing</td><td>
 diagram1.SpaceDown();</td></tr>
 <tr>
 <td>
-[SameSize](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SameSize.html)</td><td>
+{{'[SameSize](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SameSize.html#"")'| markdownify }}</td><td>
 Sets the width and height of the selected nodes to be equal.</td><td>
 diagram1.SameSize();</td></tr>
 <tr>
 <td>
-[SameHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SameHeight.html)</td><td>
+{{'[SameHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SameHeight.html#"")'| markdownify }}</td><td>
 Sets the height of the selected nodes to be equal.</td><td>
 diagram1.SameHeight();</td></tr>
 <tr>
 <td>
-[SameWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SameWidth.html)</td><td>
+{{'[SameWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~SameWidth.html#"")'| markdownify }}</td><td>
 Sets the width of the selected nodes to be equal.</td><td>
 diagram1.SameWidth();</td></tr>
 </table>
@@ -1421,22 +1421,22 @@ Description</th><th>
 Code Snippet</th></tr>
 <tr>
 <td>
-[NudgeUp](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~NudgeUp.html)</td><td>
+{{'[NudgeUp](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~NudgeUp.html#"")'| markdownify }}</td><td>
 Nudge the selected components up by Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement units.</td><td>
 diagram1.NudgeUp();</td></tr>
 <tr>
 <td>
-[NudgeDown](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~NudgeDown.html)</td><td>
+{{'[NudgeDown](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~NudgeDown.html#"")'| markdownify }}</td><td>
 Nudge the selected components down by Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement units.</td><td>
 diagram1.NudgeDown();</td></tr>
 <tr>
 <td>
-[NudgeLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~NudgeLeft.html)</td><td>
+{{'[NudgeLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~NudgeLeft.html#"")'| markdownify }}</td><td>
 Nudge the selected components to the left by Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement units.</td><td>
 diagram1.NudgeLeft();</td></tr>
 <tr>
 <td>
-[NudgeRight](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~NudgeRight.html)</td><td>
+{{'[NudgeRight](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Controls.Diagram~NudgeRight.html#"")'| markdownify }}</td><td>
 Nudge the selected components to the right by Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement units.</td><td>
 diagram1.NudgeRight();</td></tr>
 </table>
@@ -1460,7 +1460,7 @@ Description</th><th>
 Code Snippet</th></tr>
 <tr>
 <td>
-[Font Family](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEdit~FontFamily.html)</td><td>
+{{'[Font Family](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEdit~FontFamily.html#"")'| markdownify }}</td><td>
 The FamilyName property is used to  get or set the font family name.</td><td>
 string name = this.comboBoxBarItemFontFamily.ListBox.SelectedItem.ToString();if(this.diagram1.Controller.TextEditor.FamilyName != name )this.diagram1.Controller.TextEditor.FamilyName = name;</td></tr>
 <tr>
@@ -1470,33 +1470,33 @@ Gets or sets the size of the point.</td><td>
 int ptSize = 10; this.diagram1.Controller.TextEditor.PointSize = ptSize;</td></tr>
 <tr>
 <td>
-[Bold](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Bold.html)</td><td>
+{{'[Bold](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Bold.html#"")'| markdownify }}</td><td>
 Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is bold.</td><td>
 bool newValue = !( this.diagram1.Controller.TextEditor.Bold );this.diagram1.Controller.TextEditor.Bold = newValue; </td></tr>
 <tr>
 <td>
-[Italic](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEdit~Italic.html)</td><td>
+{{'[Italic](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEdit~Italic.html#"")'| markdownify }}</td><td>
 Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is italic.</td><td>
 bool newValue = !( this.diagram1.Controller.TextEditor.Italic );this.diagram1.Controller.TextEditor.Italic = newValue;</td></tr>
 <tr>
 <td>
-[Underline](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Underline.html)</td><td>
+{{'[Underline](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Underline.html#"")'| markdownify }}</td><td>
 Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is underline.</td><td>
 bool newValue = !( this.diagram1.Controller.TextEditor.Underline );this.diagram1.Controller.TextEditor.Underline = newValue;</td></tr>
 <tr>
 <td>
-[StrikeOut](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Strikeout.html)</td><td>
+{{'[StrikeOut](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Strikeout.html#"")'| markdownify }}</td><td>
 Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is strikeout.</td><td>
 bool newValue = !( this.diagram1.Controller.TextEditor.Strikeout );this.diagram1.Controller.TextEditor.Strikeout = newValue;</td></tr>
 <tr>
 <td>
-[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~TextColor.html)</td><td>
+{{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~TextColor.html#"")'| markdownify }}</td><td>
 Gets or sets the color of the text.</td><td>
 ColorDialog dialog = new ColorDialog( );dialog.Color = this.diagram1.Controller.TextEditor.TextColor; if ( dialog.ShowDialog( this ) == DialogResult.OK ){this.diagram1.Controller.TextEditor.TextColor = dialog.Color; }</td></tr>
 <tr>
 <td>
 Align Text Left</td><td>
-Gets or sets the [horizontal alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~HorizontalAlignment.html) to Near.</td><td>
+Gets or sets the {{'[horizontal alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~HorizontalAlignment.html#"")'| markdownify }} to Near.</td><td>
 this.diagram1.Controller.TextEditor.HorizontalAlignment = StringAlignment.Near;</td></tr>
 <tr>
 <td>
@@ -1506,17 +1506,17 @@ this.diagram1.Controller.TextEditor.HorizontalAlignment= StringAlignment.Far;</t
 <tr>
 <td>
 Align Text Center</td><td>
-Gets or sets the [horizontal alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~HorizontalAlignment.html) to Center</td><td>
+Gets or sets the {{'[horizontal alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~HorizontalAlignment.html#"")'| markdownify }} to Center</td><td>
 this.diagram1.Controller.TextEditor.HorizontalAlignment = StringAlignment.Center;</td></tr>
 <tr>
 <td>
-[Subscript](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Subscript.html)</td><td>
-Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is [subscript](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Subscript.html).</td><td>
+{{'[Subscript](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Subscript.html#"")'| markdownify }}</td><td>
+Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is {{'[subscript](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Subscript.html#"")'| markdownify }}.</td><td>
 bool newValue = !( this.diagram1.Controller.TextEditor.Subscript );this.diagram1.Controller.TextEditor.Subscript = newValue;</td></tr>
 <tr>
 <td>
-[Superscript](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Superscript.html)</td><td>
-Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is [superscript](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Superscript.html).</td><td>
+{{'[Superscript](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Superscript.html#"")'| markdownify }}</td><td>
+Gets or sets a value indicating whether the Syncfusion.Windows.Forms.Diagram.TextEditor is {{'[superscript](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~Superscript.html#"")'| markdownify }}.</td><td>
 bool nValue = !( this.diagramComponent.Controller.TextEditor.Superscript );this.diagramComponent.Controller.TextEditor.Superscript = newValue;</td></tr>
 <tr>
 <td>
@@ -1551,32 +1551,32 @@ Description</th><th>
 Code Snippet</th></tr>
 <tr>
 <td>
-[Group](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~Group.html)</td><td>
+{{'[Group](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~Group.html#"")'| markdownify }}</td><td>
 Groups the currently selected nodes in a diagram Group.</td><td>
 diagram1.Controller.Group();</td></tr>
 <tr>
 <td>
-[UnGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~UnGroup.html)</td><td>
+{{'[UnGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~UnGroup.html#"")'| markdownify }}</td><td>
 Ungroup the currently selected group in a diagram.</td><td>
 diagram1.Controller.UnGroup();</td></tr>
 <tr>
 <td>
-[BringToFront](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~BringToFront.html)</td><td>
+{{'[BringToFront](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~BringToFront.html#"")'| markdownify }}</td><td>
 Brings the selected nodes to the front of the Z-order.</td><td>
 diagram1.Controller.BringToFront();</td></tr>
 <tr>
 <td>
-[SendToBack](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~SendToBack.html)</td><td>
+{{'[SendToBack](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~SendToBack.html#"")'| markdownify }}</td><td>
 Sends the selected nodes to the back of the Z-order.</td><td>
 diagram1.Controller.SendToBack();</td></tr>
 <tr>
 <td>
-[BringForward](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~BringForward.html)</td><td>
+{{'[BringForward](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~BringForward.html#"")'| markdownify }}</td><td>
 Brings the selected nodes forward in the Z-order.</td><td>
 Diagram1.Controller.BringForward();</td></tr>
 <tr>
 <td>
-[SendBackward](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~SendBackward.html)</td><td>
+{{'[SendBackward](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Controller~SendBackward.html#"")'| markdownify }}</td><td>
 Sends the selected nodes backward in the Z-order.</td><td>
 Diagram1.Controller.SendBackward();</td></tr>
 </table>
@@ -1599,82 +1599,82 @@ Description</th><th>
 Code Snippet</th></tr>
 <tr>
 <td>
-[SelectTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.SelectTool.html)</td><td>
+{{'[SelectTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.SelectTool.html#"")'| markdownify }}</td><td>
 Specifies the selection mode.</td><td>
 diagram1.Controller.ActivateTool("SelectTool");</td></tr>
 <tr>
 <td>
-[LineTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.LineTool.html)</td><td>
+{{'[LineTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.LineTool.html#"")'| markdownify }}</td><td>
 Draws straight line with start and end point.</td><td>
 diagram1.Controller.ActivateTool("LineTool");</td></tr>
 <tr>
 <td>
-[PolyLineTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PolyLineTool.html)</td><td>
+{{'[PolyLineTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PolyLineTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing polylines.</td><td>
 diagram1.Controller.ActivateTool("PolyLineTool");</td></tr>
 <tr>
 <td>
-[RectangleTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.RectangleTool.html)</td><td>
+{{'[RectangleTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.RectangleTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing rectangles.</td><td>
 diagram1.Controller.ActivateTool("RectangleTool");</td></tr>
 <tr>
 <td>
-[RoundRectTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.RoundRectTool.html)</td><td>
+{{'[RoundRectTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.RoundRectTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing   rounded rectangles.</td><td>
 diagram1.Controller.ActivateTool("RoundRectTool");</td></tr>
 <tr>
 <td>
-[EllipseTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.EllipseTool.html)</td><td>
+{{'[EllipseTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.EllipseTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing ellipses.</td><td>
 diagram1.Controller.ActivateTool("EllipseTool");</td></tr>
 <tr>
 <td>
-[PolygonTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PolygonTool.html)</td><td>
+{{'[PolygonTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PolygonTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing polygons.</td><td>
 diagram1.Controller.ActivateTool("PolygonTool");</td></tr>
 <tr>
 <td>
-[CurveTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.CurveTool.html)</td><td>
+{{'[CurveTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.CurveTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing curves.</td><td>
 diagram1.Controller.ActivateTool("CurveTool");</td></tr>
 <tr>
 <td>
-[ClosedCurveTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.ClosedCurveTool.html)</td><td>
+{{'[ClosedCurveTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.ClosedCurveTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing closed curves.</td><td>
 diagram1.Controller.ActivateTool("ClosedCurveTool");</td></tr>
 <tr>
 <td>
-[PencilTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PencilTool.html)</td><td>
+{{'[PencilTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PencilTool.html#"")'| markdownify }}</td><td>
 Draws the user defined shape similar to Microsoft Paint.</td><td>
 diagram1.Controller.ActivateTool("PencilTool");</td></tr>
 <tr>
 <td>
-[SplineTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.SplineTool.html)</td><td>
+{{'[SplineTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.SplineTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing spline.</td><td>
 diagram1.Controller.ActivateTool("SplineTool");</td></tr>
 <tr>
 <td>
-[BezierTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.BezierTool.html)</td><td>
+{{'[BezierTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.BezierTool.html#"")'| markdownify }}</td><td>
 Interactive tool for drawing bezier.</td><td>
 diagram1.Controller.ActivateTool("BezierTool");</td></tr>
 <tr>
 <td>
-[TextTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextTool.html)</td><td>
+{{'[TextTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextTool.html#"")'| markdownify }}</td><td>
 Interactive tool for inserting text nodes into a diagram and editing existing text nodes.This tool manages the insertion of new text nodes into a diagram and editing existing ones. Activating this tool causes it to track mouse-down, mouse-move, and mouse-up events and draw a tracking rectangle.The rectangle drawn is used as the bounds of a new text node, which is inserted into the diagram using an InsertNodesCmd.This tool also listens to the double-click events. If the user double-clicks a text node, this tool opens a text editor allowing the user to edit the text.</td><td>
 diagram1.Controller.ActivateTool("TextTool");</td></tr>
 <tr>
 <td>
-[RichTextTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.RichTextTool.html)</td><td>
+{{'[RichTextTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.RichTextTool.html#"")'| markdownify }}</td><td>
 Interactive tool for inserting and editing rich text objects.This tool manages the insertion of new rich text nodes into a diagram and editing of existing rich text nodes. Activating this tool causes it to track mouse-down, mouse-move, and mouse-up events and draw a tracking rectangle. The rectangle drawn is used as the bounds of a new rich text node, which is inserted into the diagram using an InsertNodesCmd command.This tool also listens to the double-click events. If the user double-clicks a rich text node, this tool opens a text editor allowing the user to edit the text.</td><td>
   diagram1.Controller.ActivateTool("RichTextTool");</td></tr>
 <tr>
 <td>
-[BitmapTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.BitmapTool.html)</td><td>
+{{'[BitmapTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.BitmapTool.html#"")'| markdownify }}</td><td>
 Interactive tool for inserting bitmaps into a diagram.</td><td>
 diagram1.Controller.ActivateTool("BitmapTool");</td></tr>
 <tr>
 <td>
-[ConnectionPointTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.ConnectionPointTool.html)</td><td>
+{{'[ConnectionPointTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.ConnectionPointTool.html#"")'| markdownify }}</td><td>
 The connection point tool is an interactive tool for inserting and deleting connection points on diagram nodes. You can insert a connection point by clicking the node and delete a connection point by holding CTRL and clicking the node.</td><td>
 diagram1.Controller.ActivateTool("ConnectionPointTool");</td></tr>
 </table>
@@ -1691,7 +1691,7 @@ The following screen shot illustrates the Diagram Connector tools.
 #### LineConnectorTool  
 
 
-Line Connector Tool is used to connect nodes in a straight line. It creates line shape nodes. The name of the [LineConnectorTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.LineConnectorTool.html) is LineLinkTool.
+Line Connector Tool is used to connect nodes in a straight line. It creates line shape nodes. The name of the [LineConnectorTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.LineConnectorTool.html#) is LineLinkTool.
 
 The below table lists the properties of the tool.
 
@@ -1703,23 +1703,23 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-[HeadDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~HeadDecorator.html)</td><td>
+{{'[HeadDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~HeadDecorator.html#"")'| markdownify }}</td><td>
 Sets the Head Decorator applied to the created node.</td></tr>
 <tr>
 <td>
-[TailDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~TailDecorator.html)</td><td>
+{{'[TailDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~TailDecorator.html#"")'| markdownify }}</td><td>
 Sets the Tail Decorator applied to the created node.</td></tr>
 <tr>
 <td>
-[InAction](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~InAction.html)</td><td>
+{{'[InAction](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~InAction.html#"")'| markdownify }}</td><td>
 Sets the distance from the start of the line to the dash pattern. It accepts Float value.</td></tr>
 <tr>
 <td>
-[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~Name.html)</td><td>
+{{'[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~Name.html#"")'| markdownify }}</td><td>
 Sets the Name for the Tool.</td></tr>
 <tr>
 <td>
-[Preceding Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~PrecedingTool.html)</td><td>
+{{'[Preceding Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~PrecedingTool.html#"")'| markdownify }}</td><td>
 Gets the Preceding Tool.</td></tr>
 </table>
 
@@ -1734,9 +1734,9 @@ Tool t = diagram1.Controller.ActiveTool;
 
 if (t is Syncfusion.Windows.Forms.Diagram.LineConnectorTool)
 {
-    LineConnectorTool l = (LineConnectorTool)t;
-    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+LineConnectorTool l = (LineConnectorTool)t;
+l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 }
 
 {% endhighlight %}
@@ -1744,7 +1744,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.LineConnectorTool)
 
 #### Orthogonal Connector Tool
 
-Orthogonal Connector Tool is used to connect nodes in an orthogonal manner by providing its start point and end point. It creates the Orthogonal Line Shape node. The name of the Orthogonal Connector Tool is [OrthogonalLinkTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.OrthogonalLinkTool.html). The below table lists the properties of the tool.
+Orthogonal Connector Tool is used to connect nodes in an orthogonal manner by providing its start point and end point. It creates the Orthogonal Line Shape node. The name of the Orthogonal Connector Tool is [OrthogonalLinkTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.OrthogonalLinkTool.html#). The below table lists the properties of the tool.
 
 
 
@@ -1755,23 +1755,23 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-[HeadDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~HeadDecorator.html)</td><td>
+{{'[HeadDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~HeadDecorator.html#"")'| markdownify }}</td><td>
 Sets the Head Decorator applied to the created node.</td></tr>
 <tr>
 <td>
-[TailDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~TailDecorator.html)</td><td>
+{{'[TailDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~TailDecorator.html#"")'| markdownify }}</td><td>
 Sets the Tail Decorator applied to the created node.</td></tr>
 <tr>
 <td>
-[InAction](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~InAction.html)</td><td>
+{{'[InAction](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~InAction.html#"")'| markdownify }}</td><td>
 Sets the distance from the start of the line to the dash pattern. It accepts Float value.</td></tr>
 <tr>
 <td>
-[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~Name.html)</td><td>
+{{'[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~Name.html#"")'| markdownify }}</td><td>
 Sets the Name for the Tool.</td></tr>
 <tr>
 <td>
-[Preceding Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~PrecedingTool.html)</td><td>
+{{'[Preceding Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~PrecedingTool.html#"")'| markdownify }}</td><td>
 Gets the Preceding Tool.</td></tr>
 </table>
 
@@ -1785,9 +1785,9 @@ Tool t = diagram1.Controller.ActiveTool;
 
 if (t is Syncfusion.Windows.Forms.Diagram.OrthogonalConnectorTool)
 {
-    OrthogonalConnectorTool l = (OrthogonalConnectorTool)t;
-    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+OrthogonalConnectorTool l = (OrthogonalConnectorTool)t;
+l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 }
     
 {% endhighlight %}
@@ -1795,7 +1795,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.OrthogonalConnectorTool)
 
 #### DirectedLineConnector Tool
 
-DirectedLineConnector Tool is used to connect the nodes in a directed line. It creates the directed line shape node. The name of the (DirectedLineConnectorTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool.html) is [DirectedLineLinkTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DirectedLineLinkTool.html). The below table lists the properties of the tool.
+DirectedLineConnector Tool is used to connect the nodes in a directed line. It creates the directed line shape node. The name of the [DirectedLineConnectorTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool.html#) is [DirectedLineLinkTool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DirectedLineLinkTool.html#). The below table lists the properties of the tool.
 
 
 <table>
@@ -1805,23 +1805,23 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-[HeadDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~HeadDecorator.html)</td><td>
+{{'[HeadDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~HeadDecorator.html#"")'| markdownify }}</td><td>
 Sets the Head Decorator applied to the created node.</td></tr>
 <tr>
 <td>
-[TailDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~TailDecorator.html)</td><td>
+{{'[TailDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~TailDecorator.html#"")'| markdownify }}</td><td>
 Sets the Tail Decorator applied to the created node.</td></tr>
 <tr>
 <td>
-[InAction](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~InAction.html)</td><td>
+{{'[InAction](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~InAction.html#"")'| markdownify }}</td><td>
 Sets the distance from the start of the line to the dash pattern. It accepts Float value.</td></tr>
 <tr>
 <td>
-[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~Name.html)</td><td>
+{{'[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~Name.html#"")'| markdownify }}</td><td>
 Sets the Name for the Tool.</td></tr>
 <tr>
 <td>
-[Preceding Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~PrecedingTool.html)</td><td>
+{{'[Preceding Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~PrecedingTool.html#"")'| markdownify }}</td><td>
 Gets the Preceding Tool.</td></tr>
 </table>
 
@@ -1835,9 +1835,9 @@ Tool t = diagram1.Controller.ActiveTool;
 
 if (t is Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool)
 {
-    DirectedLineConnectorTool l = (DirectedLineConnectorTool)t;
-    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+DirectedLineConnectorTool l = (DirectedLineConnectorTool)t;
+l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 }
 
 {% endhighlight %}
@@ -1845,7 +1845,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool)
 
 #### PolyLineConnector Tool
 
-This is an interactive tool for drawing Polyline Connector. The name of the tool is "PolyLineLinkTool". The below table lists the properties of the [PolyLine tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PolyLineTool.html).
+This is an interactive tool for drawing Polyline Connector. The name of the tool is "PolyLineLinkTool". The below table lists the properties of the [PolyLine tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PolyLineTool.html#).
 
 
 
@@ -1856,23 +1856,23 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-[HeadDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~HeadDecorator.html)</td><td>
+{{'[HeadDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~HeadDecorator.html#"")'| markdownify }}</td><td>
 Sets the Head Decorator applied to the created node.</td></tr>
 <tr>
 <td>
-[TailDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~TailDecorator.html)</td><td>
+{{'[TailDecorator](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.LineBase~TailDecorator.html#"")'| markdownify }}</td><td>
 Sets the Tail Decorator applied to the created node.</td></tr>
 <tr>
 <td>
-[InAction](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~InAction.html)</td><td>
+{{'[InAction](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~InAction.html#"")'| markdownify }}</td><td>
 Sets the distance from the start of the line to the dash pattern. It accepts Float value.</td></tr>
 <tr>
 <td>
-[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~Name.html)</td><td>
+{{'[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~Name.html#"")'| markdownify }}</td><td>
 Sets the Name for the Tool.</td></tr>
 <tr>
 <td>
-[Preceding Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~PrecedingTool.html)</td><td>
+{{'[Preceding Tool](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Tool~PrecedingTool.html#"")'| markdownify }}</td><td>
 Gets the Preceding Tool.</td></tr>
 </table>
 
@@ -1887,9 +1887,9 @@ Tool t = diagram1.Controller.ActiveTool;
 
 if (t is Syncfusion.Windows.Forms.Diagram.PolyLineConnectorTool)
 {
-    PolyLineConnectorTool l = (PolyLineConnectorTool)t;
-    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+PolyLineConnectorTool l = (PolyLineConnectorTool)t;
+l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 }
 
 {% endhighlight %}
@@ -1938,7 +1938,7 @@ Symbol Designer application allows you to create new palettes with symbols, and 
 
 Software Path
 
-[drive:]\Program Files\Syncfusion\Essential Studio\<Version Number>\Utilities\Diagram\Windows Forms\ Symbol Designer
+"[Installed Drive:]\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Utilities\Diagram\Windows Forms\ Symbol Designer"
 
 #### Creating EDP File
 
@@ -1948,7 +1948,8 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 * Symbol designer contains below three sections,
 1. Symbol palette
 2. Object model
-3.  Properties Window
+3. Properties Window
+
 * If you want to create a new palette, select New option in the File menu. Type a name for the palette as shown in the below sample and click OK.
 
 
@@ -2101,32 +2102,32 @@ diagram.Location = new Point(20, 5);
 
 private void Form1_Load(object sender, EventArgs e)
 {
-    diagram1.BeginUpdate();
-    this.diagram1.Model.BoundaryConstraintsEnabled = false;
-    
-    //Binding the Node column Name
-    diagram1.Binding.Id = "Name";
-    
-    //Binding the Parents Nodes column Name
-    diagram1.Binding.ParentId = "ParentName";
-    
-    //Binding the Label
-    diagram1.Binding.Label.Add("Name");
+diagram1.BeginUpdate();
+this.diagram1.Model.BoundaryConstraintsEnabled = false;
 
-    //Binding connector type
-    diagram1.Binding.DefaultConnector = new OrgLineConnector(new PointF(10, 10), new PointF(20, 20));
+//Binding the Node column Name
+diagram1.Binding.Id = "Name";
 
-    //Binding Node type
-    diagram1.Binding.DefaultNode = DefaultNode();
+//Binding the Parents Nodes column Name
+diagram1.Binding.ParentId = "ParentName";
 
-    // Binding the DataTable to the DataSource
-    diagram1.Binding.DataSource = DataSource();
+//Binding the Label
+diagram1.Binding.Label.Add("Name");
 
-    //Applying Layout to the diagram
-    LayoutNode();
+//Binding connector type
+diagram1.Binding.DefaultConnector = new OrgLineConnector(new PointF(10, 10), new PointF(20, 20));
 
-    DiagramAppearance();
-    diagram1.EndUpdate();
+//Binding Node type
+diagram1.Binding.DefaultNode = DefaultNode();
+
+// Binding the DataTable to the DataSource
+diagram1.Binding.DataSource = DataSource();
+
+//Applying Layout to the diagram
+LayoutNode();
+
+DiagramAppearance();
+diagram1.EndUpdate();
 }
 
 
@@ -2142,15 +2143,15 @@ private void Form1_Load(object sender, EventArgs e)
 
 private DataTable DataSource()
 {
-    DataTable dataTable = new DataTable();
-    
-    //Querying from DB
-    SqlConnection sqlConnection = new SqlConnection(connectionString);
-    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(new                SqlCommand("select * from Employees", sqlConnection));
-    sqlConnection.Open();
-    sqlDataAdapter.Fill(dataTable);
-    sqlConnection.Close();
-    return dataTable;
+DataTable dataTable = new DataTable();
+
+//Querying from DB
+SqlConnection sqlConnection = new SqlConnection(connectionString);
+SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(new                SqlCommand("select * from Employees", sqlConnection));
+sqlConnection.Open();
+sqlDataAdapter.Fill(dataTable);
+sqlConnection.Close();
+return dataTable;
 }
 
 {% endhighlight %}
@@ -2165,11 +2166,11 @@ The following code example explains how to apply the layout for the data retriev
 
 private void LayoutNode()
 {
-    HierarchicLayoutManager hierarchicalLayout = new HierarchicLayoutManager(this.diagram1.Model, 0, 70, 40);
-    hierarchicalLayout.LeftMargin = 50;
-    hierarchicalLayout.TopMargin = 50;
-    this.diagram1.LayoutManager = hierarchicalLayout;
-    this.diagram1.LayoutManager.UpdateLayout(null);
+HierarchicLayoutManager hierarchicalLayout = new HierarchicLayoutManager(this.diagram1.Model, 0, 70, 40);
+hierarchicalLayout.LeftMargin = 50;
+hierarchicalLayout.TopMargin = 50;
+this.diagram1.LayoutManager = hierarchicalLayout;
+this.diagram1.LayoutManager.UpdateLayout(null);
 }
 
 {% endhighlight %}

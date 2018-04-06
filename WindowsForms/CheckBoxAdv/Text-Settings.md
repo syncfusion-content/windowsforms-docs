@@ -37,34 +37,25 @@ WrapText</td><td>
 Determines if the text in the CheckBoxAdv is wrapped.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.checkBoxAdv1.TextShadow = true;
-
 this.checkBoxAdv1.ShadowColor = System.Drawing.Color.BurlyWood;
-
 this.checkBoxAdv1.ShadowOffset = new System.Drawing.Point(8, 8);
-
 this.checkBoxAdv1.WrapText = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.checkBoxAdv1.TextShadow = True
-
 Me.checkBoxAdv1.ShadowColor = System.Drawing.Color.BurlyWood
-
 Me.checkBoxAdv1.ShadowOffset = New System.Drawing.Point(8, 8)
-
 Me.checkBoxAdv1.WrapText = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img612.jpeg)
 

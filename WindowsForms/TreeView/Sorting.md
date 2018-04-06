@@ -30,26 +30,21 @@ SortType</td><td>
 The SortType property indicates the field. Nodes will be sorted based on the type of sorting.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 treeNodeAdv9.SortOrder = System.Windows.Forms.SortOrder.Ascending;
-
 treeNodeAdv9.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 TreeNodeAdv9.SortOrder = System.Windows.Forms.SortOrder.Ascending
-
 TreeNodeAdv9.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox
 
 {% endhighlight %}
+{% endtabs %}
 
 Comparing Options for Sorting
 
@@ -73,31 +68,23 @@ Comparer</td><td>
 Indicates the  object which compares two nodes.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 treeNodeAdv9.CompareOptions = System.Globalization.CompareOptions.IgnoreCase;
-
 treeNodeAdv9.Comparer = null;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 TreeNodeAdv9.CompareOptions = System.Globalization.CompareOptions.IgnoreCase;
-
 TreeNodeAdv9.Comparer = Null
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img61.png)
-
-
 
 {% seealso %}
 How to Sort all the nodes in the TreeViewAdv control?
