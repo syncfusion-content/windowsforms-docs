@@ -22,7 +22,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 	
 	![](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img2.png)
 	
-2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the &#34Pdfium&#34 folder. 
+2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the &#34:Pdfium&#34: folder. 
 
 	The following code snippet illustrates the same, you can also find the project sample in the below link.
 
@@ -31,7 +31,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 
 	PdfViewerControl pdfViewerControl1 = new PdfViewerControl ();
 	//Specify the path for Pdfium assembly. 
-	pdfViewerControl1.ReferencePath = @"D:\Reference path";
+	pdfViewerControl1.ReferencePath = @"D:\Pdfium";
 	//Specify the PDF rendering engine as Pdfium.
 	pdfViewerControl1.RenderingEngine =PdfRenderingEngine.Pdfium; 
 	//Load the PDF document 
