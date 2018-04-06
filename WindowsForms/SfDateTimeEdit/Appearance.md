@@ -53,7 +53,7 @@ The BackColor and ForeColor of drop-down icon to open the calendar can be custom
 
 ### Change visibility of drop-down button
 
-The drop-down button in the SfDateTimeEdit allows you to open the pop-up calendar by using the mouse interaction. The visibility of drop-down button can be changed by the `ShowDropDown` property. The following code snippets illustrates the same:
+The drop-down button in the SfDateTimeEdit allows you to open the pop-up calendar by using the mouse interaction. The visibility of drop-down button can be changed by the `ShowDropDown` property.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ Me.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue
 
 ### Change visibility of up-down
 
-The up-down allows you to change the value by increment or decrement of values of the date, month, and year based on the selected field. The value change by up and down buttons are only applicable when the `DateTimeEditingMode` is mask. The visibility of up-down buttons can be changed by the `ShowUpDown` property. The following code snippets illustrates the same:
+The up-down allows you to change the value by increment or decrement of values of the date, month, and year based on the selected field. The value change by up and down buttons are only applicable when the `DateTimeEditingMode` is mask. The visibility of up-down buttons can be changed by the `ShowUpDown` property.
 
 {% tabs %}
 

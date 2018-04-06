@@ -9,7 +9,7 @@ documentation: ug
 
 # Watermark
 
-The `SfDateTimeEdit` control allows you to set the `Value` to null in the default mode of the `DateTimeEditingMode`; the watermark can be shown on null value.
+The `SfDateTimeEdit` control allows you to set the `Value` to null in the default mode of the `DateTimeEditingMode`. The watermark can be shown on null value.
 
 ## Null value
 
