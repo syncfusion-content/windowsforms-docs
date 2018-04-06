@@ -48,7 +48,7 @@ The following methods are need to be override in the derived GridControl for Opt
 * [RowIndexToVScrollPixelPos](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~RowIndexToVScrollPixelPos.html)(int rowIndex)
 * [VScrollPixelPosToRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~VScrollPixelPosToRowIndex.html)(int pixelPos, out int rowIndex, out int pixelDelta)
 * [GetVScrollPixelHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~GetVScrollPixelHeight.html)()
- 
+
 {% tabs %}
 {% highlight c# %}
 public class DerivedGridControl : GridControl
@@ -127,7 +127,9 @@ Public Class DerivedGridControl
 End Class
 {% endhighlight %}
 {% endtabs %}
+
 2.Assign the New custom control to the GridControl.
+
 {% tabs %}
 {% highlight c# %}
 //Sets the derived GridControl to the grid.
@@ -138,7 +140,9 @@ this.gridControl1 = new VerticalScrollOptimization.DerivedGridControl();
 Me.gridControl1 = New VerticalScrollOptimization.DerivedGridControl()
 {% endhighlight %}
 {% endtabs %}
+
 3. Set the `VScrollPixel` property to true.
+
 {% tabs %}
 {% highlight c# %}
 //Enables pixel scrolling.
@@ -267,7 +271,7 @@ Me.gridControl1.ScrollFrozen = True
 {% endhighlight %}
 {% endtabs %}
 
-### Scroll Current Cell into View When its Activated
+### Scroll Current Cell into View when its Activated
 The current cell can be scrolled to the view when it is activated by setting the [AllowScrollCurrentCellInView](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AllowScrollCurrentCellInView.html) property to desired [GridScrollCurrentCellReason](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridScrollCurrentCellReason.html) enumeration.
 {% tabs %}
 {% highlight c# %}
@@ -382,7 +386,7 @@ N> There is no color scheme available for metro theme.
 Scrollbars have the default context menu strip for setting the scrolling options. It will popup when right click on the scrollbar. The grid will scroll the contents based on the options selected in the context menu.
 ![](Scrolling_images/Scrolling_img8.jpeg)
 
-### Disabling the scrollbar Context menu
+### Disabling the Scrollbar Context Menu
 The scrollbar context menu can be disabled by handling the [ShowContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ShowContextMenu_EV.html) event of the GridControl as follows,
 {% tabs %}
 {% highlight c# %}
@@ -447,7 +451,7 @@ Me.gridControl1.VScrollBar.InnerScrollBar = vScrollBar1
 
 ![](Scrolling_images/Scrolling_img9.jpeg)
 
-### Indicating the last Row/Column while scrolling
+### Indicating the Last Row/Column while Scrolling
 To notify the last row/column reached while scrolling the grid, invoke the [Scroll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollBarWrapper~Scroll_EV.html) event of the scroll bars as of follows, 
 {% tabs %}
 {% highlight c# %}
@@ -481,7 +485,7 @@ End Sub
 ## Scrolling Events
 This section will explain about the events used for the scrolling in GridControl.
 
-### Disable the Pixel Scrolling using events
+### Disable the Pixel Scrolling using Events
 The pixel scrolling of the GridControl can be restricted by handling the [HScrollPixelPosChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollPixelPosChanging_EV.html) and [VScrollPixelPosChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixelPosChanging_EV.html) events. This events will be raised while scrolling the grid through the scrollbar when[pixel scrolling](#_Pixel_scrolling "") is enabled. 
 {% tabs %}
 {% highlight c# %}

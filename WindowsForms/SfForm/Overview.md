@@ -8,11 +8,13 @@ documentation: ug
 ---
 
 # Overview
-`SfForm` is a window control that provides support for complete customization of the appearance and loading of the custom user interface in the title bar.
 
-## Key Features
+The `SfForm` is a window control for completing customization of the appearance and loading of custom user interface in the Title bar.
+
+## Key features
+
 Following are the key features of the SfForm:
 
-* **Title bar customization** - Customize the appearance of the title bar and load a user control as a title bar.
+* Title bar customization: Customizes the appearance of the title bar and load the user control as a title bar.
 
-* **MDI customization** - Add the MDI child forms and customize the appearance of the MDI child forms.
+* MDI(Multiple Document Interface) customization: Adds MDI child forms and customizes the appearance of MDI child forms.

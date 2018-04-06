@@ -84,7 +84,7 @@ In the below code snippet, table summary is defined for `OrderID` column.
 GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow();
 tableSummaryRow1.Name = "TableSummary";
 tableSummaryRow1.ShowSummaryInRow = false;
-tableSummaryRow1.Position = TableSummaryRowPosition.Bottom;
+tableSummaryRow1.Position = VerticalPosition.Bottom;
 
 GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
 summaryColumn1.Name = "TotalProduct";
@@ -95,6 +95,22 @@ summaryColumn1.MappingName = "ProductName";
 tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
 
 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
+{% endhighlight %}
+{% highlight vb %}
+Dim tableSummaryRow1 As New GridTableSummaryRow()
+tableSummaryRow1.Name = "TableSummary"
+tableSummaryRow1.ShowSummaryInRow = False
+tableSummaryRow1.Position = VerticalPosition.Bottom
+
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "TotalProduct"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "Total Product Count : {Sum:c}"
+summaryColumn1.MappingName = "ProductName"
+
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +124,7 @@ GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow();
 tableSummaryRow1.Name = "TableSummary";
 tableSummaryRow1.ShowSummaryInRow = true;
 tableSummaryRow1.Title = " Total Product Count: {ProductName}";
-tableSummaryRow1.Position = TableSummaryRowPosition.Bottom;
+tableSummaryRow1.Position = VerticalPosition.Bottom;
 
 GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
 summaryColumn1.Name = "TotalProduct";
@@ -119,6 +135,23 @@ summaryColumn1.MappingName = "ProductName";
 tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
 
 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
+{% endhighlight %}
+{% highlight vb %}
+Dim tableSummaryRow1 As New GridTableSummaryRow()
+tableSummaryRow1.Name = "TableSummary"
+tableSummaryRow1.ShowSummaryInRow = True
+tableSummaryRow1.Title = " Total Product Count: {ProductName}"
+tableSummaryRow1.Position = VerticalPosition.Bottom
+
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "TotalProduct"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "{Count}"
+summaryColumn1.MappingName = "ProductName"
+
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
@@ -137,13 +170,13 @@ GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow();
 tableSummaryRow1.Name = "TableSummary1";
 tableSummaryRow1.ShowSummaryInRow = true;
 tableSummaryRow1.Title = " Total Product Count: {ProductName}";
-tableSummaryRow1.Position = TableSummaryRowPosition.Top;
+tableSummaryRow1.Position = VerticalPosition.Top;
 
 GridTableSummaryRow tableSummaryRow2 = new GridTableSummaryRow();
 tableSummaryRow2.Name = "TableSummary2";
 tableSummaryRow2.ShowSummaryInRow = true;
 tableSummaryRow2.Title = " Total Product Count: {ProductName}";
-tableSummaryRow2.Position = TableSummaryRowPosition.Bottom;
+tableSummaryRow2.Position = VerticalPosition.Bottom;
 
 // Creates the GridSummaryColumn.
 GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
@@ -160,6 +193,35 @@ tableSummaryRow2.SummaryColumns.Add(summaryColumn1);
 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2);
 {% endhighlight %}
+{% highlight vb %}
+' Creates the TableSummaryRow.
+Dim tableSummaryRow1 As New GridTableSummaryRow()
+tableSummaryRow1.Name = "TableSummary1"
+tableSummaryRow1.ShowSummaryInRow = True
+tableSummaryRow1.Title = " Total Product Count: {ProductName}"
+tableSummaryRow1.Position = VerticalPosition.Top
+
+Dim tableSummaryRow2 As New GridTableSummaryRow()
+tableSummaryRow2.Name = "TableSummary2"
+tableSummaryRow2.ShowSummaryInRow = True
+tableSummaryRow2.Title = " Total Product Count: {ProductName}"
+tableSummaryRow2.Position = VerticalPosition.Bottom
+
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "TotalProduct"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "{Count:c}"
+summaryColumn1.MappingName = "ProductName"
+
+' Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+tableSummaryRow2.SummaryColumns.Add(summaryColumn1)
+
+' Adds the GridTableSummaryRow in the TableSummaryRows collection.
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2)
+{% endhighlight %}
 {% endtabs %}
 
 ![](SfDataGrid_Summaries_UG_images/summaries4.png)
@@ -172,6 +234,11 @@ The appearance of the table summary can be customized by [SfDataGrid.Style.Table
 this.sfDataGrid1.Style.TableSummaryRowStyle.BackColor = Color.LightSkyBlue;
 this.sfDataGrid1.Style.TableSummaryRowStyle.Borders.All = new GridBorder(Color.Black, GridBorderWeight.Medium);
 this.sfDataGrid1.Style.TableSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.TableSummaryRowStyle.BackColor = Color.LightSkyBlue
+Me.sfDataGrid1.Style.TableSummaryRowStyle.Borders.All = New GridBorder(Color.Black, GridBorderWeight.Medium)
+Me.sfDataGrid1.Style.TableSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
 {% endhighlight %}
 {% endtabs %}
 
@@ -206,6 +273,27 @@ The number format for numeric values displayed on [GridTableSummaryRow](https://
         }
     }
 {% endhighlight %}
+{% highlight vb %}
+  Public Class CustomGridTableSummaryRenderer
+	  Inherits GridTableSummaryCellRenderer
+		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+			If String.IsNullOrEmpty(cellValue) Then
+				Return
+			End If
+			' Creates new number format and apply it to summary value. 
+			Dim format As New NumberFormatInfo()
+			format.NumberDecimalDigits = 3
+			format.NumberDecimalSeparator = " * "
+			format.NumberGroupSeparator = ","
+			'Number format is applied to summary value.
+			cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
+			Dim stringFormat As New StringFormat()
+			stringFormat.LineAlignment = StringAlignment.Center
+			stringFormat.Alignment = StringAlignment.Center
+			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
+		End Sub
+  End Class
+{% endhighlight %}
 {% endtabs %}
 
 #### Replacing custom renderer
@@ -215,6 +303,10 @@ The overridden custom table summary renderer can be replaced with default render
 {% highlight c# %}
 this.sfDataGrid1.CellRenderers.Remove("TableSummary");
 this.sfDataGrid1.CellRenderers.Add("TableSummary", new CustomGridTableSummaryRenderer());
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CellRenderers.Remove("TableSummary")
+Me.sfDataGrid1.CellRenderers.Add("TableSummary", New CustomGridTableSummaryRenderer())
 {% endhighlight %}
 {% endtabs %}
 
@@ -253,6 +345,25 @@ groupSummaryRow1.SummaryColumns.Add(summaryColumn1);
 // Adds the summary row in the GroupSummaryRows collection.
 this.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1);
 {% endhighlight %}
+{% highlight vb %}
+' Creates the GridSummaryRow.
+Dim groupSummaryRow1 As New GridSummaryRow()
+groupSummaryRow1.Name = "GroupSummary"
+groupSummaryRow1.ShowSummaryInRow = False
+
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "UnitPrice"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "Total Price : {Sum:c}"
+summaryColumn1.MappingName = "UnitPrice"
+
+' Adds the GridSummaryColumn in SummaryColumns collection.
+groupSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+' Adds the summary row in the GroupSummaryRows collection.
+Me.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1)
+{% endhighlight %}
 {% endtabs %}
 
 ![](SfDataGrid_Summaries_UG_images/summaries7.png)
@@ -281,6 +392,26 @@ groupSummaryRow1.SummaryColumns.Add(summaryColumn1);
 // Adds the summary row in the GroupSummaryRows collection.
 this.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1);
 {% endhighlight %}
+{% highlight vb %}
+' Creates the GridSummaryRow.
+Dim groupSummaryRow1 As New GridSummaryRow()
+groupSummaryRow1.Name = "GroupSummary"
+groupSummaryRow1.ShowSummaryInRow = True
+groupSummaryRow1.Title = "Total Price $: { UnitPrice }"
+
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "UnitPrice"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "{Sum:c}"
+summaryColumn1.MappingName = " UnitPrice "
+
+' Adds the GridSummaryColumn in SummaryColumns collection.
+groupSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+' Adds the summary row in the GroupSummaryRows collection.
+Me.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1)
+{% endhighlight %}
 {% endtabs %}
 
 ![](SfDataGrid_Summaries_UG_images/summaries8.png)
@@ -294,6 +425,10 @@ The appearance of the group summary can be customized by [SfDataGrid.Style.Group
 {% highlight c# %}
 this.sfDataGrid1.Style.GroupSummaryRowStyle.BackColor = Color.LightSkyBlue;
 this.sfDataGrid1.Style.GroupSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.GroupSummaryRowStyle.BackColor = Color.LightSkyBlue
+Me.sfDataGrid1.Style.GroupSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
 {% endhighlight %}
 {% endtabs %}
 
@@ -328,6 +463,27 @@ public class CustomGridGroupSummaryRenderer : GridGroupSummaryCellRenderer
         }
     }
 {% endhighlight %}
+{% highlight vb %}
+Public Class CustomGridGroupSummaryRenderer
+	Inherits GridGroupSummaryCellRenderer
+		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+			If String.IsNullOrEmpty(cellValue) Then
+				Return
+			End If
+			' Creates new number format and apply it to summary value. 
+			Dim format As New NumberFormatInfo()
+			format.NumberDecimalDigits = 3
+			format.NumberDecimalSeparator = "*"
+			format.NumberGroupSeparator = ","
+			'Number format is applied to summary value.
+			cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
+			Dim stringFormat As New StringFormat()
+			stringFormat.LineAlignment = StringAlignment.Center
+			stringFormat.Alignment = StringAlignment.Center
+			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
+		End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 #### Replacing custom renderer
@@ -337,6 +493,10 @@ The overridden custom group summary renderer can be replaced with default render
 {% highlight c# %}
 this.sfDataGrid1.CellRenderers.Remove("GroupSummary");
 this.sfDataGrid1.CellRenderers.Add("GroupSummary", new CustomGridGroupSummaryRenderer());
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CellRenderers.Remove("GroupSummary")
+Me.sfDataGrid1.CellRenderers.Add("GroupSummary", New CustomGridGroupSummaryRenderer())
 {% endhighlight %}
 {% endtabs %}
 
@@ -360,6 +520,9 @@ The group caption format can be changed to Key and ItemsCount alone by setting `
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}";
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}"
 {% endhighlight %}
 {% endtabs %}
 ![](SfDataGrid_Summaries_UG_images/summaries12.png)
@@ -399,6 +562,32 @@ captionSummaryRow.SummaryColumns.Add(summaryColumn2);
 // Initializes the caption summary row.
 this.sfDataGrid1.CaptionSummaryRow = captionSummaryRow;
 {% endhighlight %}
+{% highlight vb %}
+' Creates the GridSummaryRow.
+Dim captionSummaryRow As New GridSummaryRow()
+captionSummaryRow.Name = "CaptionSummary"
+captionSummaryRow.ShowSummaryInRow = False
+
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "Column1"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "{Sum:c}"
+summaryColumn1.MappingName = "UnitPrice"
+
+Dim summaryColumn2 As New GridSummaryColumn()
+summaryColumn2.Name = "Column2"
+summaryColumn2.SummaryType = SummaryType.Int32Aggregate
+summaryColumn2.Format = "{Count}"
+summaryColumn2.MappingName = "OrderID"
+
+' Adds the summary column in the SummaryColumns collection.
+captionSummaryRow.SummaryColumns.Add(summaryColumn1)
+captionSummaryRow.SummaryColumns.Add(summaryColumn2)
+
+' Initializes the caption summary row.
+Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
+{% endhighlight %}
 {% endtabs %}
 
 ![](SfDataGrid_Summaries_UG_images/summaries13.png)
@@ -426,6 +615,26 @@ captionSummaryRow.SummaryColumns.Add(summaryColumn1);
 // Initializes the caption summary row.
 this.sfDataGrid1.CaptionSummaryRow = captionSummaryRow;
 {% endhighlight %}
+{% highlight vb %}
+' Creates the GridSummaryRow.
+Dim captionSummaryRow As New GridSummaryRow()
+captionSummaryRow.Name = "CaptionSummary"
+captionSummaryRow.ShowSummaryInRow = True
+captionSummaryRow.Title = " Total Quantity of {Key} : {Quantity}"
+
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "Quantity"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "{Sum:c}"
+summaryColumn1.MappingName = "Quantity"
+
+' Adds the summary column in the SummaryColumns collection.
+captionSummaryRow.SummaryColumns.Add(summaryColumn1)
+
+' Initializes the caption summary row.
+Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
+{% endhighlight %}
 {% endtabs %}
 
 ![](SfDataGrid_Summaries_UG_images/summaries14.png)
@@ -436,6 +645,10 @@ The appearance of the caption summary can be customized by [SfDataGrid.Style.Cap
 {% highlight c# %}
 this.sfDataGrid1.Style.CaptionSummaryRowStyle.BackColor = Color.LightSkyBlue;
 this.sfDataGrid1.Style.CaptionSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.CaptionSummaryRowStyle.BackColor = Color.LightSkyBlue
+Me.sfDataGrid1.Style.CaptionSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
 {% endhighlight %}
 {% endtabs %}
 
@@ -474,6 +687,29 @@ public class CustomGridCaptionSummaryRenderer : GridCaptionSummaryCellRenderer
         }
     }
 {% endhighlight %}
+{% highlight vb %}
+Public Class CustomGridCaptionSummaryRenderer
+	Inherits GridCaptionSummaryCellRenderer
+		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+			If String.IsNullOrEmpty(cellValue) Then
+				Return
+			End If
+			Dim stringFormat As New StringFormat()
+			stringFormat.LineAlignment = StringAlignment.Center
+			stringFormat.Alignment = StringAlignment.Center
+			If column.GridColumn.MappingName = "UnitPrice" Then
+				' Creates new number format and apply it to summary value. 
+				Dim format As New NumberFormatInfo()
+				format.NumberDecimalDigits = 3
+				format.NumberDecimalSeparator = "*"
+				format.NumberGroupSeparator = ","
+				'Number format is applied to summary value.
+				cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
+			End If
+			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
+		End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 #### Replacing custom renderer
@@ -484,6 +720,11 @@ The overridden custom caption summary renderer can be replaced with default rend
 this.sfDataGrid1.CellRenderers.Remove("CaptionSummary");
 this.sfDataGrid1.CellRenderers.Add("CaptionSummary", new CustomGridCaptionSummaryRenderer());
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CellRenderers.Remove("CaptionSummary")
+Me.sfDataGrid1.CellRenderers.Add("CaptionSummary", New CustomGridCaptionSummaryRenderer())
+{% endhighlight %}
+
 {% endtabs %}
 ![](SfDataGrid_Summaries_UG_images/summaries16.png)
 
@@ -516,13 +757,33 @@ tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
 // Adds the GridTableSummaryRow in the TableSummaryRows collection.
 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
 {% endhighlight %}
+{% highlight vb %}
+' Creates the TableSummaryRow.
+Dim tableSummaryRow1 As New GridTableSummaryRow()
+tableSummaryRow1.Name = "TableSummary"
+tableSummaryRow1.ShowSummaryInRow = False
+tableSummaryRow1.Position = TableSummaryRowPosition.Bottom
+
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "UnitPrice"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "{Sum}"
+summaryColumn1.MappingName = " UnitPrice "
+
+' Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+' Adds the GridTableSummaryRow in the TableSummaryRows collection.
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
+{% endhighlight %}
 {% endtabs %}
 ![](SfDataGrid_Summaries_UG_images/summaries17.png)
 
 ### Formatting summary value
 
 The summary value can be formatted by setting the appropriate format after the aggregate function followed by colon(:) in [GridSummaryColumn.Format](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryColumn~Format.html) property.
-In the below code snippet ` UnitPrice ` column summary is formatted using `c` format specifier. Refer [here](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to know about how to set different format.
+In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to know about how to set different format.
 
 {% tabs %}
 {% highlight c# %}
@@ -538,6 +799,20 @@ tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
 
 // Adds the GridTableSummaryRow in the TableSummaryRows collection.
 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
+{% endhighlight %}
+{% highlight vb %}
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "UnitPrice"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "{Sum:c}"
+summaryColumn1.MappingName = " UnitPrice "
+
+' Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+' Adds the GridTableSummaryRow in the TableSummaryRows collection.
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 ![](SfDataGrid_Summaries_UG_images/summaries18.png)
@@ -558,6 +833,20 @@ tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
 
 // Adds the GridTableSummaryRow in the TableSummaryRows collection.
 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
+{% endhighlight %}
+{% highlight vb %}
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "TotalPrice"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "Total Price : {Sum:c}"
+summaryColumn1.MappingName = "UnitPrice"
+
+' Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+' Adds the GridTableSummaryRow in the TableSummaryRows collection.
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
@@ -587,6 +876,27 @@ tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
 
 // Adds the GridTableSummaryRow in the TableSummaryRows collection.
 this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
+{% endhighlight %}
+{% highlight vb %}
+' Creates the TableSummaryRow.
+Dim tableSummaryRow1 As New GridTableSummaryRow()
+tableSummaryRow1.Name = "TableSummary"
+tableSummaryRow1.ShowSummaryInRow = True
+tableSummaryRow1.Title = " Total Unit Price: {UnitPrice} "
+tableSummaryRow1.Position = TableSummaryRowPosition.Top
+
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "TotalPrice"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+summaryColumn1.Format = "{Sum:c}"
+summaryColumn1.MappingName = " UnitPrice "
+
+' Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+' Adds the GridTableSummaryRow in the TableSummaryRows collection.
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 
@@ -628,7 +938,7 @@ public static class LinqExtensions
 {
     public static double StdDev<T>(this IEnumerable<T> values, Func<T, double?> selector)
     {
-        double ret = 0;
+        double result = 0;
         var count = values.Count();
         if (count > 0)
         {
@@ -642,11 +952,48 @@ public static class LinqExtensions
                 }
                 return 0.0;
             });
-            ret = Math.Sqrt((sum) / (count - 1));
+            result = Math.Sqrt((sum) / (count - 1));
         }
-        return ret;
+        return result;
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+Public Class CustomAggregate
+	Implements ISummaryAggregate
+	Public Sub New()
+	End Sub
+	Public Property StdDev() As Double
+
+	Private Function CalculateAggregateFunc() As Action(Of IEnumerable, String, PropertyDescriptor) Implements ISummaryAggregate.CalculateAggregateFunc
+		Return Sub(items, property, pd)
+			Dim enumerableItems = TryCast(items, IEnumerable(Of SalesByYear))
+			If pd.Name = "StdDev" Then
+				Me.StdDev = enumerableItems.StdDev(Of SalesByYear)(Function(q) q.Total)
+			End If
+		End Sub
+	End Function
+End Class
+
+Public Module LinqExtensions
+	<System.Runtime.CompilerServices.Extension> _
+	Public Function StdDev(Of T)(ByVal values As IEnumerable(Of T), ByVal selector As Func(Of T, Double?)) As Double
+		Dim result As Double = 0
+		Dim count = values.Count()
+		If count > 0 Then
+			Dim avg? As Double = values.Average(selector)
+
+			Dim sum As Double = values.Select(selector).Sum(Function(d)
+				If d.HasValue Then
+					Return Math.Pow(d.Value - avg.Value, 2)
+				End If
+				Return 0.0
+			End Function)
+			result = Math.Sqrt((sum) / (count - 1))
+		End If
+		Return result
+	End Function
+End Module
 {% endhighlight %}
 {% endtabs %}
 
@@ -674,6 +1021,28 @@ tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
 
 // Adds the GridTableSummaryRow in the TableSummaryRows collection.
 this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1);
+{% endhighlight %}
+{% highlight vb %}
+' Creates the TableSummaryRow.
+Dim tableSummaryRow1 As New GridTableSummaryRow()
+tableSummaryRow1.Name = "TableSummary"
+tableSummaryRow1.ShowSummaryInRow = True
+tableSummaryRow1.Title = "Standard Deviation for Total Sales : {TotalSales}"
+tableSummaryRow1.Position = TableSummaryRowPosition.Top
+
+' Creates the GridSummaryColumn.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "TotalSales"
+summaryColumn1.SummaryType = SummaryType.Custom
+' Initialize the CustomAggregate.
+summaryColumn1.CustomAggregate = New CustomAggregate()
+summaryColumn1.Format = "{StdDev}"
+
+' Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+
+' Adds the GridTableSummaryRow in the TableSummaryRows collection.
+Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1)
 {% endhighlight %}
 {% endtabs %}
 

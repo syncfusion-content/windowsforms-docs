@@ -7,7 +7,8 @@ control: Grid
 documentation: ug
 ---
 
-# How to Synchronize the Selection of Multiple Grids
+# How to synchronize the selection of multiple Grids
+
 This can be achieved by using SelectionChanged Event. In this event, the selection range of the source grids can be copied into the target grid in order to have synchronization between grids. The TopRowChanged event and the LeftColChanged event can be used to synchronize the top row index and the left column index changes, when the grid is scrolled. Refer to the sample for more details. Here is the code snippet, which explains how selection change in one grid affects the other grid.
 
 {% tabs  %}
@@ -32,15 +33,15 @@ void Synchronize_SelectionChanged(GridControl targetGrid, GridControl sourceGrid
 	//Invalidates any range that was changed.
     for (int n = 0; n < maxCount; n++)
 	{
-     GridRangeInfo newRange = n < sourceCount ? sourceGrid.Selections.Ranges[n] : GridRangeInfo.Empty;
-     GridRangeInfo oldRange = n < targetCount ? targetGrid.Selections.Ranges[n] : GridRangeInfo.Empty;
-     if (!oldRange.Equals(newRange))
-     {
-          Console.WriteLine("{0} - {1}", oldRange, newRange);
-          targetGrid.InvalidateRange(oldRange);
-          targetGrid.InvalidateRange(newRange);
-      }
-}
+        GridRangeInfo newRange = n < sourceCount ? sourceGrid.Selections.Ranges[n] : GridRangeInfo.Empty;
+        GridRangeInfo oldRange = n < targetCount ? targetGrid.Selections.Ranges[n] : GridRangeInfo.Empty;
+        if (!oldRange.Equals(newRange))
+        {
+            Console.WriteLine("{0} - {1}", oldRange, newRange);
+            targetGrid.InvalidateRange(oldRange);
+            targetGrid.InvalidateRange(newRange);
+        }
+    }
 
 //Updates underlying data structure - does not cause invalidate / paint ...
 targetGrid.Selections.Ranges.Clear();
@@ -64,7 +65,8 @@ Sub Synchronize_SelectionChanged(ByVal targetGrid As GridControl, ByVal sourceGr
 	Dim sourceCount As Integer = sourceGrid.Selections.Ranges.Count
 	Dim targetCount As Integer = targetGrid.Selections.Ranges.Count
 	Dim maxCount As Integer = Math.Max(sourceCount, targetCount)
-	'Invalidates any range that was changed.
+ 
+ 	'Invalidates any range that was changed.
 	Dim n As Integer
 	For n = 0 To maxCount - 1
 	Dim newRange As GridRangeInfo

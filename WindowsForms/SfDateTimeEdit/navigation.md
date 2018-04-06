@@ -9,13 +9,13 @@ documentation: ug
 
 # Navigation
 
-The `SfDateTimeEdit` provides navigation and `Value` changes through the keyboard and mouse interaction in mask mode of the `DateTimeEditMode`, and also provides free style text editing support for date and time information. The `SfDateTimeEdit` allows you to change the `SelectedField` by using right and left arrow keys through keyboard interaction. The change of `SelectedField` in the `SfDateTimeEdit` using right and left arrow keys can be restricted by setting the `InterceptArrowKeys` to `false`.
+The `SfDateTimeEdit` provides navigation and `Value` changes through the keyboard and mouse interaction in mask mode of the `DateTimeEditMode`, and also provides free style text editing support for date and time information. The `SfDateTimeEdit` allows you to change the `SelectedField` by using <kbd>Right</kbd> and <kbd>Left</kbd> arrows through keyboard interaction and this can be restricted by setting the `InterceptArrowKeys` to `false`.
 
 ## Navigate to drop-down calendar
 
-The drop-down calendar control to pick the date `Value` for `SfDateTimeEdit` can be opened by `ALT + DOWN` arrow combinations. The drop-down calendar can be closed by `ALT + UP` and `ALT + DOWN` key combinations if the drop-down calendar is already opened. The state of drop-down calendar can be obtained from `ShowDropDown` of the SfDateTimeEdit.
+The drop-down calendar control to pick the date `Value` for `SfDateTimeEdit` can be opened by <kbd>Alt+Down</kbd> arrow combinations. The drop-down calendar can be closed by <kbd>Alt+Up</kbd> and <kbd>Alt+Down</kbd> key combinations if the drop-down calendar is already opened. The state of drop-down calendar can be obtained from `ShowDropDown` of the SfDateTimeEdit.
 
-The drop-down calendar provides key board support to change the selected date by using the keyboard. The date from different month, year, or decade can be selected by navigating to next view on pressing `CTRL + UP` and navigate back to the old view on pressing `CTRL + DOWN` key combinations. The selection in views can be changed by right and left arrow keys.
+The drop-down calendar provides key board support to change the selected date by using the keyboard. The date from different month, year, or decade can be selected by navigating to next view on pressing <kbd>Ctrl+Up</kbd> and navigate back to the old view on pressing <kbd>Ctrl+Down</kbd> key combinations. The selection in views can be changed by <kbd>Right</kbd> and <kbd>Left</kbd> arrows.
 
 ### Handle drop-down calendar programmatically
 
@@ -37,7 +37,7 @@ dateTimeEdit.ShowPopup()
 
 {% endtabs %}
 
-The drop-down calendar can be closed by the `ClosePopup` method of the SfDateTimeEdit. The following code illustrates how to open the drop-down calendar programmatically:
+The drop-down calendar can be closed by the `ClosePopup` method of the SfDateTimeEdit. The following code illustrates how to close the drop-down calendar programmatically:
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ dateTimeEdit.ClosePopup()
 
 ## Change value by keyboard
 
-In `Mask` edit mode, the `Value` of `SfDateTimeEdit` can be changed through up and down arrow keys. The `SfDateTimeEdit` spins the value of `SelectedField` (month, day, year, hour, second, and minute) to one step up or down based on the arrow keys press. Changing the value by up and down arrow keys can be applicable for `Mask` mode only, because the control does not aware of `SelectedField` of the SfDateTimeEdit in `Default` editing mode. This value change by up and down arrow keys can be restricted by setting the `InterceptArrowKeys` to `false`.
+In `Mask` edit mode, the `Value` of `SfDateTimeEdit` can be changed through <kbd>Up</kbd> and <kbd>Down</kbd> arrows. The `SfDateTimeEdit` spins the value of `SelectedField` (month, day, year, hour, second, and minute) to one step up or down based on the pressed arrows. Changing the value by <kbd>Up</kbd> and <kbd>Down</kbd> arrows can be applicable for `Mask` mode only, because the control does not aware of `SelectedField` of the SfDateTimeEdit in `Default` editing mode. This value change by <kbd>Up</kbd> and <kbd>Down</kbd> arrows can be restricted by setting the `InterceptArrowKeys` to `false`.
 
 ## Change value by mouse
 
@@ -97,6 +97,6 @@ dateTimeEdit.AllowValueChangeOnMouseWheel = True
 
 {% endtabs %}
 
-After selecting any part in the DateTime value by pressing the up or down arrows (or scrolling the mouse up or down), the selected value will change automatically.
+After selecting any part in the DateTime value by pressing the <kbd>Up</kbd> and <kbd>Down</kbd> arrows (or scrolling the mouse up or down), the selected value will change automatically.
 
 ![](navigation-images/Mask.png)

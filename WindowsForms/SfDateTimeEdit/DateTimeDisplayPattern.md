@@ -15,17 +15,17 @@ The `DateTimePattern` helps you to specify the date-time display pattern for the
 
 The `SfDateTimeEdit` control supports the following DateTime format: 
 
-* LongDate 
-* LongTime 
-* ShortDate 
+* LongDate
+* LongTime
+* ShortDate
 * ShortTime
 * FullDateTime
-* MonthDay 
-* Custom 
-* ShortableDateTime 
-* UniversalShortableDateTime 
-* RFC1123 
-* YearMonth 
+* MonthDay
+* Custom
+* ShortableDateTime
+* UniversalShortableDateTime
+* RFC1123
+* YearMonth
 
 ![](datetimepattern-images/allpattern.png)
 

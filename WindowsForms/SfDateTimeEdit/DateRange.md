@@ -84,7 +84,7 @@ private void DateTimeEdit_ValueChanged(object sender, EventArgs e)
 
 Private Sub DateTimeEdit_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 
-        MessageBox.Show("SfDateTimeEdit value has been changed")
+MessageBox.Show("SfDateTimeEdit value has been changed")
 
 End Sub
 

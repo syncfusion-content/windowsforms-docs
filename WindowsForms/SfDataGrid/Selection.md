@@ -22,6 +22,9 @@ If the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sf
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.Single;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectionMode = GridSelectionMode.Single
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection1.png)
 
@@ -36,6 +39,9 @@ While using Extended, multiple rows can be selected by pressing the key modifier
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.Extended;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectionMode = GridSelectionMode.Extended
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection2.png)
 
@@ -45,6 +51,9 @@ N>  When the[SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsfor
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.Multiple;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectionMode = GridSelectionMode.Multiple
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection3.png)
 
@@ -53,6 +62,9 @@ The selection can be disabled by setting `SelectionMode` property as `None`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.None;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectionMode = GridSelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,9 +93,20 @@ A single row can be selected by setting [SelectedItem](https://help.syncfusion.c
 var record = SelectionHelper.GetRecordAtRowIndex(this.sfDataGrid, 3);
 this.sfDataGrid1.SelectedItem = record;
 {% endhighlight %}
+{% highlight vb %}
+Dim record = SelectionHelper.GetRecordAtRowIndex(Me.sfDataGrid, 3)
+Me.sfDataGrid1.SelectedItem = record
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight c# %}
 var recordIndex = this.sfDataGrid.TableControl.ResolveToRecordIndex(5);
 this.sfDataGrid1.SelectedIndex = recordIndex;
+{% endhighlight %}
+{% highlight vb %}
+Dim recordIndex = Me.sfDataGrid.TableControl.ResolveToRecordIndex(5)
+Me.sfDataGrid1.SelectedIndex = recordIndex
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,6 +123,16 @@ foreach(var record in records)
       this.sfDataGrid1.SelectedItems.Add(obj);
 }
 {% endhighlight %}
+{% highlight vb %}
+Dim records = Me.sfDataGrid.View.Records
+
+For Each record In records
+	Dim obj = TryCast(record.Data, OrderInfo)
+	If obj.ProductName = "Raclette Courdavault" Then
+	  Me.sfDataGrid1.SelectedItems.Add(obj)
+	End If
+Next record
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection4.png)
 
@@ -110,6 +143,9 @@ SfDataGrid Allows to select a range of rows through [SelectRows](https://help.sy
 {% highlight c# %}
 this.sfDataGrid1.SelectRows(3, 6);
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectRows(3, 6)
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection5.png)
 
@@ -118,6 +154,9 @@ All the rows can be selected by using [SelectAll](https://help.syncfusion.com/cr
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SelectAll();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.SelectAll()
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,6 +168,9 @@ When a particular record is assigned to the [CurrentItem](https://help.syncfusio
 {% highlight c# %}
 this.sfDataGrid1.CurrentItem = SelectionHelper.GetRecordAtRowIndex(this.sfDataGrid, 2);
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CurrentItem = SelectionHelper.GetRecordAtRowIndex(Me.sfDataGrid, 2)
+{% endhighlight %}
 {% endtabs %}
 
 The `CurrentCell` can be moved to a particular RowColumnIndex by using the  [MoveToCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~MoveToCurrentCell.html) method.
@@ -136,6 +178,9 @@ The `CurrentCell` can be moved to a particular RowColumnIndex by using the  [Mov
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.MoveToCurrentCell(new RowColumnIndex(3, 3));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.MoveToCurrentCell(New RowColumnIndex(3, 3))
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,6 +190,9 @@ The Selection can be cleared by using the [ClearSelection](https://help.syncfusi
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.ClearSelection();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.ClearSelection()
 {% endhighlight %}
 {% endtabs %}
 
@@ -171,7 +219,7 @@ SfDataGrid will scrolls rows and columns automatically while performing the drag
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;DownArrow&lt;/kbd&gt;
+<kbd>DownArrow</kbd>
 </td>
 <td>
 Moves CurrentCell directly below the active current cell. If the CurrentCell is in last row, pressing Down arrow does nothing.
@@ -179,7 +227,7 @@ Moves CurrentCell directly below the active current cell. If the CurrentCell is 
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;UpArrow&lt;/kbd&gt;        
+<kbd>UpArrow</kbd>        
 </td>
 <td>
 Moves the CurrentCell directly above the active current cell. If the CurrentCell is in first row, pressing Up arrow does nothing.
@@ -187,7 +235,7 @@ Moves the CurrentCell directly above the active current cell. If the CurrentCell
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;LeftArrow&lt;/kbd&gt;        
+<kbd>LeftArrow</kbd>        
 </td>
 <td>
 Moves the current cell previous to the active current cell. If the CurrentCell is in first cell, pressing Left arrow does nothing. If the focused row is group header, the group will be collapsed when it is in expanded state.
@@ -195,7 +243,7 @@ Moves the current cell previous to the active current cell. If the CurrentCell i
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;RightArrow&lt;/kbd&gt;
+<kbd>RightArrow</kbd>
 </td>
 <td>
 Moves the current cell to next to the active current cell. If the CurrentCell is in last cell, pressing Right arrow does nothing. If the focused row is group header, the group will be expanded when it is in collapsed state.
@@ -203,7 +251,7 @@ Moves the current cell to next to the active current cell. If the CurrentCell is
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Home&lt;/kbd&gt; / &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;LeftArrow&lt;/kbd&gt;        
+<kbd>Home</kbd> / <kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd>        
 </td>
 <td>
 Moves the current cell to the first cell of the current row.
@@ -211,7 +259,7 @@ Moves the current cell to the first cell of the current row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;End&lt;/kbd&gt; / &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;RightArrow&lt;/kbd&gt;
+<kbd>End</kbd> / <kbd>Ctrl</kbd> + <kbd>RightArrow</kbd>
 </td>
 <td>
 Moves the current cell to the last cell of the current row.
@@ -219,7 +267,7 @@ Moves the current cell to the last cell of the current row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;PageDown&lt;/kbd&gt;        
+<kbd>PageDown</kbd>        
 </td>
 <td>
 The SfDataGrid will be scrolled to next set of rows that are not displayed in view, including the row that are partially displayed and the current cell is set to last row.
@@ -227,7 +275,7 @@ The SfDataGrid will be scrolled to next set of rows that are not displayed in vi
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;PageUp&lt;/kbd&gt;        
+<kbd>PageUp</kbd>        
 </td>
 <td>
 The SfDataGrid will be scrolled to previous set of rows that are not displayed in view, including the row that are partially displayed and the current cell is set to the first row.
@@ -235,7 +283,7 @@ The SfDataGrid will be scrolled to previous set of rows that are not displayed i
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Tab&lt;/kbd&gt;
+<kbd>Tab</kbd>
 </td>
 <td>
 Moves the current cell to next to the active current cell. If the active current cell is the last cell of the current row, the focus will moved to first cell of the row next to the current row.If the active current cell is the last cell of the last row, the focus will be moved to next control in the tab order of the parent container.
@@ -243,7 +291,7 @@ Moves the current cell to next to the active current cell. If the active current
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Tab</kbd>
 </td>
 <td>
 Moves the current cell previous to the active current cell. If the active current cell is the first cell of the current row, the current cell will moved to last cell of the row previous to the current row.If the active current cell is the first cell of the first row, the focus will be moved to previous control in the tab order of the parent container.
@@ -251,7 +299,7 @@ Moves the current cell previous to the active current cell. If the active curren
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;DownArrow&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>DownArrow</kbd>
 </td>
 <td>
 Moves the current cell to the current column of the last row.
@@ -259,7 +307,7 @@ Moves the current cell to the current column of the last row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;UpArrow&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>UpArrow</kbd>
 </td>
 <td>
 Moves the current cell to the current column of the first row.
@@ -267,7 +315,7 @@ Moves the current cell to the current column of the first row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Home&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>Home</kbd>
 </td>
 <td>
 Moves the current cell to the first cell of the first row.
@@ -275,7 +323,7 @@ Moves the current cell to the first cell of the first row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;End&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>End</kbd>
 </td>
 <td>
 Moves the current cell to the last cell of the last row.
@@ -283,7 +331,7 @@ Moves the current cell to the last cell of the last row.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Enter&lt;/kbd&gt;
+<kbd>Enter</kbd>
 </td>
 <td>
 If the active current cell is in edit mode, the changes will committed and moves the current cell to below the active current cell. If the active current cell is in last row, commits changes only and retains in the same cell.
@@ -291,7 +339,7 @@ If the active current cell is in edit mode, the changes will committed and moves
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Enter&lt;/kbd&gt;
+<kbd>Ctrl</kbd> + <kbd>Enter</kbd>
 </td>
 <td>
 Commits only the changes when the current cell in edit mode and retains the focus in same cell.
@@ -299,7 +347,7 @@ Commits only the changes when the current cell in edit mode and retains the focu
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;F2&lt;/kbd&gt;
+<kbd>F2</kbd>
 </td>
 <td>
 If the DataGrid.AllowEditing property is true and the GridColumn.AllowEditing property is true for the current column, the current cell enters into edit mode.
@@ -307,7 +355,7 @@ If the DataGrid.AllowEditing property is true and the GridColumn.AllowEditing pr
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Esc&lt;/kbd&gt;
+<kbd>Esc</kbd>
 </td>
 <td>
 If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the IEditableObject.
@@ -315,7 +363,7 @@ If the current cell is in edit mode, reverts the changes that had been done in t
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Delete&lt;/kbd&gt;        
+<kbd>Delete</kbd>        
 </td>
 <td>
 If the current cell is not in edit mode, the current row will be deleted.
@@ -323,7 +371,7 @@ If the current cell is not in edit mode, the current row will be deleted.
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;A&lt;/kbd&gt;        
+<kbd>Ctrl</kbd> + <kbd>A</kbd>        
 </td>
 <td>
 All rows or cells will be selected.
@@ -343,82 +391,82 @@ When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;DownArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>DownArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;UpArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>UpArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;RightArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>RightArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;LeftArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>LeftArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Home&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Home</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;End&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>End</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;PageDown&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>PageDown</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;PageUp&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>PageUp</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;DownArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;UpArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;RightArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>RightArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;LeftArrow&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Home&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Home</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;End&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>End</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;PageDown&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>PageDown</kbd>
 </td>
 </tr>
 <tr>
 <td>
-&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;PageUp&lt;/kbd&gt;
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>PageUp</kbd>
 </td>
 </tr>
 </table>
@@ -443,6 +491,13 @@ void SfDataGrid1_CurrentCellActivating(object sender, CurrentCellActivatingEvent
   }
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub SfDataGrid1_CurrentCellActivating(ByVal sender As Object, ByVal e As CurrentCellActivatingEventArgs)
+  If (TryCast(e.DataRow.RowData, OrderInfo)).CustomerID = "FRANS" Then
+	 e.Cancel = True
+  End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Displaying Message Box on current cell activated
@@ -458,6 +513,13 @@ void SfDataGrid1_CurrentCellActivated(object sender, CurrentCellActivatedEventAr
     MessageBox.Show("The current cell is moved to the (" + e.DataRow.RowIndex + "," + e.DataColumn.ColumnIndex + ")");
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.CurrentCellActivated, AddressOf SfDataGrid1_CurrentCellActivated
+
+Private Sub SfDataGrid1_CurrentCellActivated(ByVal sender As Object, ByVal e As CurrentCellActivatedEventArgs)
+	MessageBox.Show("The current cell is moved to the (" & e.DataRow.RowIndex & "," & e.DataColumn.ColumnIndex & ")")
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Cancel Selection 
@@ -472,6 +534,13 @@ void SfDataGrid1_SelectionChanging(object sender, SelectionChangingEventArgs e)
        e.Cancel = true;
 }
 {% endhighlight %}
+{% highlight vb %}
+Private Sub SfDataGrid1_SelectionChanging(ByVal sender As Object, ByVal e As SelectionChangingEventArgs)
+   If e.RemovedItems.Count <> 0 Then
+	   e.Cancel = True
+   End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Displaying Message Box on selection changed
@@ -484,6 +553,12 @@ void SfDataGrid1_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
     MessageBox.Show("Selection has been changed");
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.SelectionChanged, AddressOf SfDataGrid1_SelectionChanged
+Private Sub SfDataGrid1_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+	MessageBox.Show("Selection has been changed")
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -503,6 +578,10 @@ The selection background and foreground color can be changed  of by [SfDataGrid.
 this.sfDataGrid1.Style.SelectionStyle.BackColor = Color.LightSeaGreen;
 this.sfDataGrid1.Style.SelectionStyle.TextColor = Color.DarkBlue;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.SelectionStyle.BackColor = Color.LightSeaGreen
+Me.sfDataGrid1.Style.SelectionStyle.TextColor = Color.DarkBlue
+{% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection6.png)
 
@@ -518,6 +597,12 @@ this.sfDataGrid1.Style.CurrentCellStyle.BackColor = SystemColors.Highlight;
 this.sfDataGrid1.Style.CurrentCellStyle.TextColor = Color.White;
 this.sfDataGrid1.Style.CurrentCellStyle.BorderColor = Color.Red;
 this.sfDataGrid1.Style.CurrentCellStyle.BorderThickness = GridBorderWeight.Thick;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.CurrentCellStyle.BackColor = SystemColors.Highlight
+Me.sfDataGrid1.Style.CurrentCellStyle.TextColor = Color.White
+Me.sfDataGrid1.Style.CurrentCellStyle.BorderColor = Color.Red
+Me.sfDataGrid1.Style.CurrentCellStyle.BorderThickness = GridBorderWeight.Thick
 {% endhighlight %}
 {% endtabs %}
 ![](Selection_images/selection7.png)

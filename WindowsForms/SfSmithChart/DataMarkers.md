@@ -12,7 +12,7 @@ Data markers are used to provide information about data point to users. You can 
 
 ## Marker shapes
 
-Shapes can be added to the series to indicate each data point, and it can be enabled by using the [MarkerVisible](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerVisible) property of series. The [MarkerType](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerType) property provides different shapes such as rectangle, circle, diamond, etc. to indicate the data points.
+Shapes can be added to the series to indicate each data point, and it can be enabled by using the [`MarkerVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerVisible.html) property of series. The [`MarkerType`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerType.html) property provides different shapes such as rectangle, circle, diamond, etc. to indicate the data points.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ series.MarkerVisible = True
 
 ## Marker customization
 
-Markers can be customized by using the [MarkerBackColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerBackColor), [MarkerBorderColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerBorderColor), [MarkerHeight](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerHeight), [MarkerWidth](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerWidth), [MarkerVisible](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerVisible) and [MarkerType](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerType) properties as shown in the following code snippet.
+Markers can be customized by using the [`MarkerBackColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerBackColor.html), [`MarkerBorderColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerBorderColor.html), [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerHeight.html), [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerWidth.html), [`MarkerVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerVisible.html) and [`MarkerType`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerType.html) properties as shown in the following code snippet.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ sfSmithChart1.Series.Add(series)
 
 ## Marker image
 
-Images can also be used as data markers to various shapes. This can be done by setting the [MarkerType](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerType) property to Image and providing the image source for [MarkerImage](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_MarkerImage) property. Add the required image in the Resources folder of your sample, and refer that image to the MarkerImage property.
+Images can also be used as data markers to various shapes. This can be done by setting the [`MarkerType`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerType.html) property to Image and providing the image source for [`MarkerImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~MarkerImage.html) property. Add the required image in the Resources folder of your sample, and refer that image to the MarkerImage property.
 
 
 {% tabs %}
@@ -104,7 +104,7 @@ series.MarkerImage = My.Resources.Marker
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/MarkerImage.png](DataMarkers_images/DataMarkers_img3.PNG)
+![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/MarkerImage.png](DataMarkers_images/DataMarkers_img3.png)
 
 
 ## Data labels 

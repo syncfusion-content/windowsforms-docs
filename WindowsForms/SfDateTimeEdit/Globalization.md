@@ -91,6 +91,6 @@ dateTimeEdit.Culture = New CultureInfo("fr-FR")
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![](globalization-images/culture-fr.png)

@@ -16,7 +16,7 @@ This section briefly describes how to design a ComboBoxAdv Control in a Windows 
 * Configuring the ComboBoxAdv Control
 
 
-## Adding a ComboBoxAdv control
+## Adding ComboBoxAdv control
 
 * Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 * Drag and drop the ComboBoxAdv control in the Form from Toolbox.
@@ -27,9 +27,9 @@ This section briefly describes how to design a ComboBoxAdv Control in a Windows 
 
 
 
-## Configuring the ComboBoxAdv control
+## Configuring ComboBoxAdv control
 
-The most commonly used settings of the TreeNavigator control can be configured either through Designer using the Smart tag or through the Properties window or through code.
+The most commonly used settings of the ComboBoxAdv control can be configured either through Designer using the Smart tag or through the Properties window or through code.
 
 
 
@@ -41,105 +41,107 @@ To add ComboBoxAdv Control to a Windows Forms Application through code behind, f
 
 1. Include the namespaces “Syncfusion.Windows.Forms” and “Syncfusion.Windows.Forms.Tools”.
 
-   ~~~ cs
+{% tabs %}
 
-        //Namespaces.
+{% highlight c# %}
 
-		using Syncfusion.Windows.Forms.Tools;
+//Namespaces.
 
-		using Syncfusion.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
 
+using Syncfusion.Windows.Forms;
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
+{% highlight vb %}
 
-   ~~~ vbnet
+‘Namespaces.
 
-        ‘Namespaces.
+Imports Syncfusion.Windows.Forms
 
-		Imports Syncfusion.Windows.Forms
+Imports Syncfusion.Windows.Forms.Tools
 
-		Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% endtabs %}
 
-2. Create an instance of the TreeNavigator control and add it to the Form.
+2. Create an instance of the ComboBoxAdv control and add it to the Form.
 
+{% tabs %}
 
-   ~~~ cs
+{% highlight c# %}
+  
+//Creates ComboBoxAdv instance.
 
-        //Creates ComboBoxAdv instance.
+private Syncfusion.Windows.Forms.Tools.ComboBoxAdv comboBoxAdv1;
 
-		private Syncfusion.Windows.Forms.Tools.ComboBoxAdv comboBoxAdv1;
+this.comboBoxAdv1 = new ComboBoxAdv();
 
-		this.comboBoxAdv1 = new ComboBoxAdv();
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-        'Creates ComboBoxAdv instance.
+'Creates ComboBoxAdv instance.
 
-		Private comboBoxAdv1 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
+Private comboBoxAdv1 As Syncfusion.Windows.Forms.Tools.ComboBoxAdv
 
-		Me.comboBoxAdv1 = New ComboBoxAdv()
+Me.comboBoxAdv1 = New ComboBoxAdv()
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
+{% endtabs %}
 
 3. Items can be added to ComboBoxAdv through String Collection Editor as it was done in Windows ComboBox control.
 
+{% tabs %}
 
-   ~~~ cs
+{% highlight c# %}
 
-        //Adding items to ComboBoxAdv
+//Adding items to ComboBoxAdv
 
-		this.comboBoxAdv1.Items.Add(100);
+this.comboBoxAdv1.Items.Add(100);
 
-		this.comboBoxAdv1.Items.Add(200);
+this.comboBoxAdv1.Items.Add(200);
 
-		this.comboBoxAdv1.Items.Add(300);
+this.comboBoxAdv1.Items.Add(300);
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-        'Adding items to ComboBoxAdv
+'Adding items to ComboBoxAdv
 
-		Me.comboBoxAdv1.Items.Add(100)
+Me.comboBoxAdv1.Items.Add(100)
 
-		Me.comboBoxAdv1.Items.Add(200)
+Me.comboBoxAdv1.Items.Add(200)
 
-		Me.comboBoxAdv1.Items.Add(300)
+Me.comboBoxAdv1.Items.Add(300)
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+
+{% endtabs %}
 
 4. Finally add ComboBoxAdv to the form.
 
+{% tabs %}
 
-   ~~~ cs
+{% highlight c# %}
 
-        //Adding ComboBoxAdv to form
+//Adding ComboBoxAdv to form
 
-		this.Controls.Add(this.comboBoxAdv1);
+this.Controls.Add(this.comboBoxAdv1);
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-        'Adding ComboBoxAdv to form
+'Adding ComboBoxAdv to form
 
-		Me.Controls.Add(Me.comboBoxAdv1)
+Me.Controls.Add(Me.comboBoxAdv1)
 
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% endtabs %}
 
 
 ![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv items.png](Overview_images/Overview_img298.png)

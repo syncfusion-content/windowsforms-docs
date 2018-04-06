@@ -10,7 +10,7 @@ documentation: ug
 # Appearance and Formatting
 GridControl provides lot of properties and events for customizing the appearance of the grid. This section explains the appearance and formatting available in GridControl. GridControl provides different kinds visual styles, which changes the appearance of the whole grid. To know more about the Visual Styles check the link over [here](http://help.syncfusion.com/windowsforms/grid/visual-styles).
 
-## Grid Control Designer
+## Grid control designer
 GridControl has an excellent user friendly design-time support. A GridControl’s edit designer is added to the grid to ease the process of designing GridControl on a cell level. Using the editor, Grid can be modified, saved, and loaded to XML formatted files or to SOAP formatted templates. 
 
 Following is the step-by-step procedure to save the GridControl into an XML format
@@ -32,13 +32,13 @@ The cell styles of the Grid can be changed by using the Grid Properties tab and 
 
 N>  The system prompts you to save the changes to the Grid control in the designer if exited without saving.
 
-## Grid Properties
+## Grid properties
 This section would explain the list of properties that changes the Appearance, Print Styles, and Scroll Bar settings of GridControl.
 
-### Appearance Properties
+### Appearance properties
 The properties that mainly affect the appearance of cells in GridControl are listed below.
 
-#### Hiding VerticalLines
+#### Hiding verticalLines
 To display the grid without the vertical lines, set the [DisplayVerticalLines](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~DisplayVerticalLines.html) property to `false`.
 
 {% tabs %}
@@ -53,7 +53,7 @@ Me.gridControl.DisplayVerticalLines = False
 {% endtabs %}
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img3.jpeg)
 
-#### Hiding HorizontalLines
+#### Hiding horizontalLines
 To display the grid without the horizontal lines, set the [DisplayHorizontalLines](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~DisplayVerticalLines.html) property to `false`.
 
 {% tabs %}
@@ -69,7 +69,7 @@ Me.gridControl.DisplayHorizontalLines = False
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img4.jpeg)
 
-#### Border Line Color
+#### Border line color
 The color of vertical and horizontal lines can be set for GridControl by using the [GridLineColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~GridLineColor.html) property.
 
 {% tabs %}
@@ -85,7 +85,7 @@ Me.gridControl.GridLineColor = Color.Orange
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img5.jpeg)
 
-#### Border Styles
+#### Border styles
 The `BorderStyle` for the GridControl can be set by using [DefaultGridBorderStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~DefaultGridBorderStyle.html) property.[GridBorderStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBorderStyle.html) enumeration has provide the following options to set the border style,
 
 * DashDot
@@ -110,7 +110,7 @@ Me.gridControl.DefaultGridBorderStyle = GridBorderStyle.DashDotDot
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img6.jpeg)
 
-#### Setting Background Image
+#### Setting background image
 The background of the GridControl can be filled with an image by using [BackgroundImage](https://msdn.microsoft.com/en-us/library/system.windows.forms.control.backgroundimage.aspx) property.
 
 {% tabs %}
@@ -130,7 +130,7 @@ Me.gridControl.BackgroundImage = Image.FromFile("sync.jpg")
 this.gridControl.TransparentBackground = true;
 {% endhighlight %}
 {% highlight vb %}
-‘Background image or color was displayed.
+'Background image or color was displayed.
 Me.gridControl.TransparentBackground = True
 {% endhighlight %}
 {% endtabs %}
@@ -152,12 +152,12 @@ void gridControl_BackgroundImageChanged(object sender, EventArgs e)
 Private Me.gridControl.BackgroundImageChanged += AddressOf gridControl_BackgroundImageChanged
 
 Private Sub gridControl_BackgroundImageChanged(ByVal sender As Object, ByVal e As EventArgs)
- ‘Add the required code over here.
+'Add the required code over here.
 End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#### Changing Background Color
+#### Changing background color
 To set the color of the area below the last row and right of the last column (client area) inside the grid, use the [BackgroundColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~BackgroundColor.html) property.
 
 {% tabs %}
@@ -181,12 +181,12 @@ To recover the background color to its default value, use the [ResetBackgroundCo
 this.gridControl.Properties.ResetBackgroundColor();
 {% endhighlight %}
 {% highlight vb %}
-' To recover the background color.
+'To recover the background color.
 Me.gridControl.Properties.ResetBackgroundColor()
 {% endhighlight %}
 {% endtabs %}
 
-#### Hiding Column Headers
+#### Hiding column headers
 The [ColHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~ColHeaders.html) property used to indicate whether the GridControl should display column headers or not. 
 
 {% tabs %}
@@ -195,13 +195,13 @@ The [ColHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Sync
 this.gridControl.Properties.ColHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' To remove column header.
+'To remove column header.
 Me.gridControl.Properties.ColHeaders = False
 {% endhighlight %}
 {% endtabs %}
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img9.jpeg)
 
-#### Hiding Row Headers
+#### Hiding row headers
 The visibility of the row headers in the grid can be set by using the [RowHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~RowHeaders.html) property.
 
 {% tabs %}
@@ -210,13 +210,13 @@ The visibility of the row headers in the grid can be set by using the [RowHeader
 this.gridControl.Properties.RowHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' To remove Row header.
+'To remove Row header.
 Me.gridControl.Properties.RowHeaders = False
 {% endhighlight %}
 {% endtabs %}
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img10.jpeg)
 
-#### Hiding Numbered Column Headers
+#### Hiding numbered column headers
 The [NumberedColHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~NumberedColHeaders.html) property is used to indicate whether to display the default column names (A, B, C) in column headers. 
 
 {% tabs %}
@@ -225,13 +225,13 @@ The [NumberedColHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/g
 this.gridControl.Model.Options.NumberedColHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' Remove the Column header name.
+'Remove the Column header name.
 Me.gridControl.Model.Options.NumberedColHeaders = False
 {% endhighlight %}
 {% endtabs %}
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img11.jpeg)
 
-#### Hiding Numbered Row Headers
+#### Hiding numbered row headers
 The [NumberedRowHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~NumberedRowHeaders.html)  property is used to indicate whether to display the row numbers of row headers. 
 
 {% tabs %}
@@ -240,13 +240,13 @@ The [NumberedRowHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/g
 this.gridControl.Model.Options.NumberedRowHeaders = false;
 {% endhighlight %}
 {% highlight vb %}
-' Remove the Row header numbers.
+'Remove the Row header numbers.
 Me.gridControl.Model.Options.NumberedRowHeaders = False
 {% endhighlight %}
 {% endtabs %}
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img12.jpeg)
 
-#### Changing Frozen Line Color
+#### Changing frozen line color
 The color of the frozen grid lines can be set by using [FixedLinesColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~FixedLinesColor.html) property. This property is applicable for both frozen column and frozen rows grid lines.
 
 {% tabs %}
@@ -270,12 +270,12 @@ To recover the `FixedLinesColor` to its default value, you can use [ResetFixedLi
 this.gridControl.Properties.ResetFixedLinesColor();
 {% endhighlight %}
 {% highlight vb %}
-' To recover the FixedLinesColor.
+'To recover the FixedLinesColor.
 Me.gridControl.Properties.ResetFixedLinesColor()
 {% endhighlight %}
 {% endtabs %}
 
-#### Highlighting Column Headers
+#### Highlighting column headers
 The column header for the current cell can be highlighted by using [MarkColHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~MarkColHeader.html) property. Set this to true for highlight the column header, otherwise false.
 
 {% tabs %}
@@ -291,7 +291,7 @@ Me.gridControl.Properties.MarkColHeader = True
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img14.jpeg)
 
-#### Highlighting Row Headers
+#### Highlighting row headers
 The row header of the current cell can be highlighted by using [MarkRowHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~MarkRowHeader.html) property.
 
 {% tabs %}
@@ -306,7 +306,7 @@ Me.gridControl.Properties.MarkRowHeader = True
 {% endtabs %}
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img15.jpeg)
 
-#### Changing Resize Line Color
+#### Changing resize line color
 While resizing the columns or rows in grid at run time, a virtual marker will be visible on resizing. This virtual line marker color can be changed by using the [ResizingCellsLinesColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~ResizingCellsLinesColor.html) property. By default the color is red.
 
 {% tabs %}
@@ -322,7 +322,7 @@ Me.gridControl.Properties.ResizingCellsLinesColor = Color.Red
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img16.jpeg)
 
-### Print Properties
+### Print properties
 GridControl provides lot properties which specifically relates to printing functionality. For enabling the GridControl to the printing mode make use of the Printing property. 
 
 {% tabs %}
@@ -338,7 +338,7 @@ Me.gridControl1.Properties.Printing = True
 
 The list of print properties available in GridControl can be viewed in the separate topic named Printing. Refer that topic for more detailed explanation on Printing functionality.
 
-### Scroll Bar Properties
+### Scroll bar properties
 GridControl provides support to control functionalities and appearance of grid scroll bars. To enable or disable the scrolling make use of the [HScrollBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollBehavior.html) and [VScrollBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea~VScrollBehavior.html) properties. It specifies the behavior of the horizontal and vertical scroll bar respectively.[GridScrollbarMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridScrollbarMode.html) enumeration provides list of options to control the scroll bar behavior.
 
 {% tabs %}
@@ -381,7 +381,7 @@ formatDialog.ShowDialog()
 
 N> The grid cells which needs to be formatted needs to be selected before activating this dialog.
 
-## Formatting Options
+## Formatting options
 `GridFormatCellDialog` contains four kinds of formatting option in it.
 
 1. [Font Tab](#font-tab)
@@ -389,28 +389,28 @@ N> The grid cells which needs to be formatted needs to be selected before activa
 3. [Background Tab](#background-tab)
 4. [Alignment Tab](#alignment-tab)
 
-### Font Tab
+### Font tab
 This provides options to set the font, font style, font size, font effects, and font color for the desired grid cells.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img18.jpeg)
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img19.jpeg)
 
-### Number Tab
+### Number tab
 This allows you to specify text format for grid cells. The possible options are Number, Currency, Percentage, Date, Time, Scientific and Text.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img20.jpeg)
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img21.jpeg)
 
-### Background Tab
+### Background tab
 This allows you to set background color for grid cells. You can set gradient shades and pattern styles as well.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img22.jpeg)
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img23.jpeg)
 
-### Alignment Tab
+### Alignment tab
 This provides various cell alignment options such as Horizontal Alignment, Vertical Alignment, Merge Cells, Wrap Text, and so on.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img24.jpeg)
@@ -421,7 +421,7 @@ N> A sample demonstrating the `GridFormatCellDialog` is available under the foll
 
 **&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Dynamic Formatting\Format Cells Demo**
 
-## Custom Drawing
+## Custom drawing
 Custom Drawing denotes adding text and drawings such as lines, polygon etc., to the cell. It has the custom drawn event such as [CellDrawn](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~DrawCell_EV.html)  and [DrawCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~DrawCell_EV.html)  events.
 
 ### DrawCell
@@ -435,14 +435,17 @@ this.gridControl1.CellDrawn += new GridDrawCellEventHandler(gridControl1_CellDra
 
 private void gridControl1_DrawCell(object sender, GridDrawCellEventArgs e)
 {
+
     if (e.RowIndex == 0)
     {
         e.Style.Interior = new BrushInfo(GradientStyle.Vertical, Color.FromArgb(255, 229, 201), Color.FromArgb(255, 153, 52));
     }
+
     else if (e.ColIndex == 0)
     {
         e.Style.Interior = new BrushInfo(GradientStyle.Horizontal, Color.White, Color.FromArgb(102, 110, 152));
     }
+
     else if (e.RowIndex % 2 == 0)
     {
         e.Style.Interior = new BrushInfo(GradientStyle.BackwardDiagonal, Color.FromArgb(51, 51, 101), Color.White);
@@ -454,10 +457,13 @@ private void gridControl1_DrawCell(object sender, GridDrawCellEventArgs e)
 AddHandler gridControl1.DrawCell, AddressOf gridControl1_DrawCell
 
 Private Sub gridControl1_DrawCell(ByVal sender As Object, ByVal e As GridDrawCellEventArgs)
+
     If e.RowIndex = 0 Then
         e.Style.Interior = New BrushInfo(GradientStyle.Vertical, Color.FromArgb(255, 229, 201), Color.FromArgb(255, 153, 52))
+
     ElseIf e.ColIndex = 0 Then
         e.Style.Interior = New BrushInfo(GradientStyle.Horizontal, Color.White, Color.FromArgb(102, 110, 152))
+
     ElseIf e.RowIndex Mod 2 = 0 Then
         e.Style.Interior = New BrushInfo(GradientStyle.BackwardDiagonal, Color.FromArgb(51, 51, 101), Color.White)
     End If
@@ -477,14 +483,17 @@ this.gridControl1.CellDrawn += new GridDrawCellEventHandler(gridControl1_CellDra
 
 void gridControl1_CellDrawn(object sender, GridDrawCellEventArgs e)
 {
+
     if (e.ColIndex == 6 && e.RowIndex > 0)
     {
         Rectangle rec = e.Bounds, rect = e.Bounds;
         rec.X = (e.Bounds.Left + e.Bounds.Right) / 2;
+
         if (e.Style.CellValue.ToString() == "1")
         {
             e.Graphics.FillEllipse(Brushes.Gray, rect);
         }
+
         else
         {
             e.Graphics.FillEllipse(Brushes.LightGray, rect);
@@ -497,11 +506,14 @@ void gridControl1_CellDrawn(object sender, GridDrawCellEventArgs e)
 AddHandler gridControl1.CellDrawn, AddressOf gridControl1_CellDrawn
 
 Private Sub gridControl1_CellDrawn(ByVal sender As Object, ByVal e As GridDrawCellEventArgs)
+
     If e.ColIndex = 6 AndAlso e.RowIndex > 0 Then
         Dim rec As Rectangle = e.Bounds, rect As Rectangle = e.Bounds
         rec.X = (e.Bounds.Left + e.Bounds.Right) / 2
+
         If e.Style.CellValue.ToString() = "1" Then
             e.Graphics.FillEllipse(Brushes.Gray, rect)
+
         Else
             e.Graphics.FillEllipse(Brushes.LightGray, rect)
         End If
@@ -515,7 +527,7 @@ The below screenshot shows the grid with ellipse. We can also insert images in c
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img27.jpeg)
 
-## Custom Borders
+## Custom borders
 The custom borders around cells can be drawn by using [DrawCellFrameAppearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~DrawCellFrameAppearance_EV.html) event of the Grid. `DrawCellFrameAppearance` event is triggered for every cell before the grid draws the frame of a specified cell and also after the cell's background is drawn. This event can be used with any cell type such as Textbox, Checkbox, and so on. You can draw texture-brush border and gradient borders.
 
 {% tabs %}
@@ -527,6 +539,7 @@ void gridControl1_DrawCellFrameAppearance(object sender, Syncfusion.Windows.Form
 {
     int rowIndex = e.Style.CellIdentity.RowIndex;
     int colIndex = e.Style.CellIdentity.ColIndex;
+
     if (rowIndex > 0 && colIndex > 0)
     {
         Brush brush;
@@ -536,6 +549,7 @@ void gridControl1_DrawCellFrameAppearance(object sender, Syncfusion.Windows.Form
         brush = new System.Drawing.Drawing2D.LinearGradientBrush(e.TargetBounds, Color.Red, Color.Orange, 45f);
 
         //Draws custom border for the cell.
+
         //Space has been reserved for this area with the TableStyle.BorderMargins property.
         Rectangle rect = e.TargetBounds;
         rect.Inflate(-2, -2);
@@ -560,6 +574,7 @@ Private Custom As Draw
 Private Sub gridControl1_DrawCellFrameAppearance(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Grid.GridDrawCellBackgroundEventArgs)
     Dim rowIndex As Integer = e.Style.CellIdentity.RowIndex
     Dim colIndex As Integer = e.Style.CellIdentity.ColIndex
+
     If rowIndex > 0 AndAlso colIndex > 0 Then
         Dim brush As Brush
         Dim g As Graphics = e.Graphics
@@ -568,6 +583,7 @@ Private Sub gridControl1_DrawCellFrameAppearance(ByVal sender As Object, ByVal e
         brush = New System.Drawing.Drawing2D.LinearGradientBrush(e.TargetBounds, Color.Red, Color.Orange, 45f)
 
         'Draws custom border for the cell.
+
         'Space has been reserved for this area with the TableStyle.BorderMargins property.
         Dim rect As Rectangle = e.TargetBounds
         rect.Inflate(-2, -2)
@@ -585,7 +601,7 @@ End Sub
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img28.jpeg)
 
-## Banner Cells
+## Banner cells
 Banner cells are multiple cells spanning a single background image. An image to be displayed in the cell can be loaded on disk, by changing the [BackgroundImage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BackgroundImage.html) property for a cell. Now apply the Banner cells for the required range of cells around the image by using [BanneredRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~BanneredRanges.html) property.
 
 {% tabs %}
@@ -611,7 +627,7 @@ style.TextColor = Color.Red
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img29.jpeg)
 
-## PrepareViewStyleInfo Event
+## PrepareViewStyleInfo event
 [PrepareViewStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PrepareViewStyleInfo_EV.html) event is raised to allow custom formatting of a cell by changing its style object just before it is drawn. This allows formatting based on the current view state, e.g. current cell context, focused control, and so on. For example, it is possible to draw the current row with a bold text by using this event. Likewise it is also possible to change the style properties for the required range of cells. This event will be fired for each cells and hence the styles for each cells can be changed individually. 
 
 {% tabs %}
@@ -621,6 +637,7 @@ this.gridControl1.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandl
 
 void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs e)
 {
+
     if ((e.RowIndex > 1 && e.RowIndex < 7) && (e.ColIndex > 1 && e.ColIndex < 5))
     {
         e.Style.Font.Bold = true;
@@ -635,6 +652,7 @@ void gridControl1_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEv
 AddHandler gridControl1.PrepareViewStyleInfo, AddressOf gridControl1_PrepareViewStyleInfo
 
 Private Sub gridControl1_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPrepareViewStyleInfoEventArgs)
+
     If (e.RowIndex > 1 AndAlso e.RowIndex < 7) AndAlso (e.ColIndex > 1 AndAlso e.ColIndex < 5) Then
         e.Style.Font.Bold = True
         e.Style.Font.Italic = True
@@ -645,7 +663,7 @@ End Sub
 {% endtabs %}
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img30.jpeg)
 
-## QueryCellInfo Event
+## QueryCellInfo event
 [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryCellInfo_EV.html) event also will be called whenever cells are in need of the style properties. This event will be fired before the cell is been drawn. This event also is same as that of the `PrepareViewStyleInfo` event. All the style properties will be stored in the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) class. This event will be fired for each cells and hence the styles for each cells can be changed individually. It is possible to change the color or any style properties for the required range of cells.
 {% tabs %}
 {% highlight c# %}
@@ -654,6 +672,7 @@ this.gridControl1.QueryCellInfo += new GridQueryCellInfoEventHandler(gridControl
 
 void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
+
     if ((e.RowIndex > 1 && e.RowIndex < 7) && (e.ColIndex > 1 && e.ColIndex < 5))
     {
         e.Style.BackColor = Color.Aquamarine;
@@ -668,6 +687,7 @@ void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 AddHandler gridControl1.QueryCellInfo, AddressOf gridControl1_QueryCellInfo
 
 Private Sub gridControl1_QueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
+
     If (e.RowIndex > 1 AndAlso e.RowIndex < 7) AndAlso (e.ColIndex > 1 AndAlso e.ColIndex < 5) Then
         e.Style.BackColor = Color.Aquamarine
         e.Style.TextColor = Color.HotPink

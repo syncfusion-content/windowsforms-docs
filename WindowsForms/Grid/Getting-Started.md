@@ -104,7 +104,7 @@ Syncfusion.Pdf.Base contains fundamental and base classes for creating PDF.<br/>
 Syncfusion.XlsIO.Base.WPF contains fundamental and base classes for creating and manipulating excel files.<br/><br/></td></tr>
 </table>
 
-## Configuring a simple GridControl
+## Configuring a Simple GridControl
 
 This section explains about creating Simple GridControl with some basic functionalities of it.
 
@@ -189,10 +189,10 @@ gridControl1.ColCount = 4;
 //Looping through the cells and assigning the values based on row and column index
 for (int row = 1; row <= gridControl1.RowCount; row++)
 {
-for (int col = 1; col <= gridControl1.ColCount; col++)
-{
-gridControl1.Model[row, col].CellValue = string.Format("{0}/{1}", row, col);
-}
+    for (int col = 1; col <= gridControl1.ColCount; col++)
+    {
+        gridControl1.Model[row, col].CellValue = string.Format("{0}/{1}", row, col);
+    }
 }
 {% endhighlight %} 
 {% highlight vb %}  

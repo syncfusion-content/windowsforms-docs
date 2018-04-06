@@ -11,7 +11,7 @@ documentation: ug
 
 This section helps you to get started with the Spreadsheet
 
-## Assemblies Deployment
+## Assemblies deployment
 
 Below table describes, list of assemblies required to be added in project when the Spreadsheet control is used in your application.
 
@@ -70,11 +70,11 @@ Syncfusion.Pdf.Base.dll</td><td>
 Contains the base and fundamental classes for creating PDF.</td></tr>
 </table>
 
-## Create a Simple Application with Spreadsheet
+## Create a simple application with Spreadsheet
 
 Spreadsheet control can be added into the application either via designer or via coding. 
 
-### Adding a Control via Designer
+### Adding a control via designer
 
 1.Create new Windows Forms application in Visual Studio.
 
@@ -88,7 +88,7 @@ Spreadsheet control can be added into the application either via designer or via
 
 5.To make an interaction between Ribbon items and `Spreadsheet`, bind the Spreadsheet as DataContext to the `SpreadsheetRibbon`.
 
-### Adding Control via Coding
+### Adding control via coding
 
 Spreadsheet is available in the following namespace `Syncfusion.Windows.Forms.Spreadsheet` and it can be created programmatically by using below code. 
 
@@ -99,17 +99,12 @@ _For_ _Spreadsheet_
 {% highlight c# %}
 
 private Spreadsheet spreadsheet;
-
 spreadsheet = new Spreadsheet();
-            
 SpreadsheetRibbon ribbon = new SpreadsheetRibbon() { Spreadsheet = spreadsheet };
-
 spreadsheet.Dock = DockStyle.Fill;
-
 spreadsheet.Anchor = AnchorStyles.Left | AnchorStyles.Top;
           
 this.Controls.Add(spreadsheet);
-            
 this.Controls.Add(ribbon);
 
 {% endhighlight %}
@@ -127,7 +122,7 @@ A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.Create(2);
+spreadsheet.Create(2);
 
 {% endhighlight %}
 {% endtabs %}
@@ -140,16 +135,13 @@ The Excel Workbook can be opened in Spreadsheet using the [Open](http://help.syn
 {% highlight c# %}
 
 //Using Stream,
-
- spreadsheet.Open (Stream file);
+spreadsheet.Open (Stream file);
 
 //Using String,
-
- spreadsheet.Open (string file);
+spreadsheet.Open (string file);
 
 //Using Workbook,
-
- spreadsheet.Open(IWorkbook workbook);
+spreadsheet.Open(IWorkbook workbook);
       
 {% endhighlight %}
 {% endtabs %}
@@ -157,7 +149,7 @@ The Excel Workbook can be opened in Spreadsheet using the [Open](http://help.syn
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.Open (@"..\..\Data\Outline.xlsx");
+spreadsheet.Open (@"..\..\Data\Outline.xlsx");
 
 {% endhighlight %}
 {% endtabs %}
@@ -175,7 +167,7 @@ The Excel workbook can be saved in Spreadsheet using [Save](http://help.syncfusi
 {% tabs %}
 {% highlight c# %}
 
-    spreadsheet.Save();
+spreadsheet.Save();
 
 {% endhighlight %}
 {% endtabs %}
@@ -188,21 +180,18 @@ The `SaveAs` method in Spreadsheet can be used in various ways,
 {% highlight c# %}
 
 //Using Stream,
-
- spreadsheet.SaveAs (Stream file);
+spreadsheet.SaveAs (Stream file);
 
 //Using String,
-
- spreadsheet.SaveAs (string file);
+spreadsheet.SaveAs (string file);
 
 //For Dialog box,
-
- spreadsheet.SaveAs();
+spreadsheet.SaveAs();
       
 {% endhighlight %}
 {% endtabs %}
 
-## Displaying Charts and Sparklines
+## Displaying charts and sparklines
 
 For importing charts and sparklines in Spreadsheet, add the following assembly as reference into the application.
  
@@ -217,10 +206,10 @@ Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[GraphicChartCe
 
 public Form1()
 {
-  InitializeComponent();
+    InitializeComponent();
   
-  //For importing charts,
-  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+    //For importing charts,
+    this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
 }
 
 {% endhighlight %}
@@ -235,10 +224,10 @@ Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellR
 
 public Form1()
 {
-  InitializeComponent();
+    InitializeComponent();
       
-  //For importing sparklines,
-  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+    //For importing sparklines,
+    this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
 }
 
 {% endhighlight %}

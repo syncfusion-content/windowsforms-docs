@@ -7,11 +7,11 @@ control: Schedule
 documentation: ug
 ---
 
-# Item Dragging Context in the ItemChanging event
+# Item Dragging Context in the ItemChanging Event
 
 This feature provides support to detect the dragging context when an item is dropped in schedule part or calendar part. It also enables to cancel the needed items through ItemChanging event.
 
-### Use Case Scenario
+### Use case scenario
 
 In ItemChanging event, through the ItemDragHitContext enumeration, you can detect the dragging context (Schedule or Calendar) and cancel the needed items.
 
@@ -45,13 +45,13 @@ object sender, ScheduleAppointmentCancelEventArgs e</td><td>
 Occurs after an IScheduleAppointment is modified</td></tr>
 </table>
 
-#### Sample Link
+#### Sample link
 
 You can get the schedule sample from the following online location,
 
 [http://samples.syncfusion.com/windowsforms](http://samples.syncfusion.com/windowsforms)
 
-### Adding this support to an Application
+### Adding this support to an application
 
 The following steps help you to get the target part in the Schedule control while dragging:
 
@@ -59,80 +59,55 @@ The following steps help you to get the target part in the Schedule control whil
 2. Add appointments in that schedule grid
 3. Hook the ‘ItemChanging’ event
 
+{% tabs %}
 {% highlight c# %}
-
 this.scheduleControl1.ItemChanging += new ScheduleAppointmentChangingEventHandler(scheduleControl1_ItemChanging);
-
 {% endhighlight %}
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 AddHandler scheduleControl1.ItemChanging, AddressOf scheduleControl1_ItemChanging
-
 {% endhighlight %}
-
+{% endtabs %}
 
 Get the drag hit context with the below code.
 
+{% tabs %}
 {% highlight c# %}
-
 void scheduleControl1_ItemChanging(object sender, ScheduleAppointmentCancelEventArgs e)
-
 {
 
     if (e.Action == ItemAction.ItemDrag)
-
     {
-
          Console.WriteLine("Dropped Area :" + e.ItemDragHitContext);
-
     }
-
 }
-
 {% endhighlight %}
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 Private Sub scheduleControl1_ItemChanging(ByVal sender As Object, ByVal e As ScheduleAppointmentCancelEventArgs)
 
      If e.Action = ItemAction.ItemDrag Then
-
-          Console.WriteLine("Dropped Area :" + e.ItemDragHitContext.ToString())
-
+         Console.WriteLine("Dropped Area :" + e.ItemDragHitContext.ToString())
      End If
-
 End Sub
-
 {% endhighlight %}
-
+{% endtabs %}
 
 You can cancel the dropped item using the ItemDragHitContext property as shown below in the following code.
 
+{% tabs %}
 {% highlight c# %}
-
 void scheduleControl1_ItemChanging(object sender, ScheduleAppointmentCancelEventArgs e)
-
 {
 
-       if (e.ItemDragHitContext == ItemDragHitContext.Calendar)
-
-                e.Cancel = true;
-
+   if (e.ItemDragHitContext == ItemDragHitContext.Calendar)
+        e.Cancel = true;
 }
-
 {% endhighlight %}
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 Private Sub scheduleControl1_ItemChanging(ByVal sender As Object, ByVal e As ScheduleAppointmentCancelEventArgs)
 
-     If e.ItemDragHitContext = ItemDragHitContext.Calendar Then
-
-          e.Cancel = True
-
-     End If
-
+    If e.ItemDragHitContext = ItemDragHitContext.Calendar Then
+        e.Cancel = True
+    End If
 End Sub
-
 {% endhighlight %}
+{% endtabs %}

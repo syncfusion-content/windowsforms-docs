@@ -19,7 +19,7 @@ Levels of Microsoft Coded UI Test (CUIT) support,
 
 N> All these levels are supported in GridControl.
 
-## Getting Started
+## Getting started
 A `Coded UI Test Project` needs to be created for testing the application. The following steps are used to test the user application with Coded UI test,
 
 1. Create Coded UI Test Project ,
@@ -41,7 +41,7 @@ The GridControl supports Coded UI as the two ways,
 * In-built support
 * External plugin
 
-## Control Assertion
+## Control assertion
 The **Coded UI Test** performs action on the user interface (UI) controls and verifies that the `UIElement` properties are displayed with the correct values. The assertion of the UI element can be done by the following steps,
 
 1. Create the **Coded UI Test Project** as explained in the [Getting Started](#_Getting_Started) section.
@@ -105,10 +105,10 @@ The recorded automation codes can be played back. The following steps are used t
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
 
-## In-built Support
+## In-built support
 The GridControl supports automated UI testing with Coded UI technology without any external plugin. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
 
-### System Requirements
+### System requirements
 The following IDEs and .NET frameworks are supported for automating the GridControl.
 <table>
 <tr>
@@ -225,14 +225,14 @@ The below example shows the properties that are displayed in the Coded UI test b
 
 N> The properties will be displayed based on the respective **MSAA** control properties. 
 
-### Getting Cell Values
+### Getting cell values
 As GridControl and cell are asserted like **MSAA** control, a value of a cell will be displayed in the `HelpText` property. 
 
 The below example shows the checkbox is asserted and the checked state of the check box is displayed in `HelpText` property,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img16.jpeg)
 
-### Finding a cell and getting the cell value
+### Finding a Cell and Getting the Cell Value
 To find a cell in the GridControl, `SearchProperties` property can be used and to get the cell value, `GetPropertyValue` method can be used. The corresponding cell name has to be given for searching the control. 
 {% tabs %}
 {% highlight c# %}
@@ -264,7 +264,7 @@ The below example shows the getting of a cell value from grid,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img17.jpeg)
 
-### Highlighting a cell
+### Highlighting a Cell
 To highlight a cell in GridControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
@@ -296,7 +296,7 @@ The below example shows the highlighting of a cell,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img18.jpeg)
 
-### Highlighting a grid
+### Highlighting a Grid
 To highlight a GridControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
@@ -324,7 +324,7 @@ The below example shows the highlighting of grid,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img19.jpeg)
 
-## External plugin
+## External Plugin
 The GridControl also provides Coded UI support via external plugin. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
 
 ### System Requirements
@@ -352,7 +352,7 @@ Premium, Ultimate, Enterprise editions of
 </tr>
 </table>
 
-### Enabling Coded UI support
+### Enabling Coded UI Support
 To enable the Coded UI support for grid, the following steps has to be implemented,
 
 * Deploying Extensions Assemblies
@@ -387,7 +387,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies
 C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies
 
 
-### Modifying the Sample Application for Communication
+### Modifying the sample application for communication
 The grid application host runs with .NET Remoting channel hosted internally to communicate with test plugin through an interface. Data is then channeled across the Visual Studio Test Framework to identify the Cells and GridControl. The following steps helps the users to prepare the grid sample application to support Coded UI plugin.
 
 * Add the Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll which contains implementation to easily change an existing application to the test application that the plugin would require.
@@ -474,7 +474,7 @@ The following example shows the property that displayed in the Coded UI test bui
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img20.jpeg)
 
-#### Asserting a Cell
+#### Asserting a cell
 <table>
 <tr>
 <th>
@@ -621,7 +621,7 @@ Indicates the dropdown style behavior of a cell if it is combobox cell.
 </tr>
 </table>
 
-### Finding a cell and getting the cell value
+### Finding a Cell and Getting the Cell Value
 To find a cell in the GridControl, `SearchProperties` property can be used and to get a cell value, the `GetPropertyValue` method can be used. The corresponding control type, RowIndex and columnIndex has to be given for searching the control.
 
 {% tabs %}
@@ -659,7 +659,7 @@ The below example shows the getting of a cell value from grid,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img21.jpeg)
 
-### Highlighting a cell
+### Highlighting a Cell
 To highlight a cell in GridControl, the GridControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used.
 {% tabs %}
 {% highlight c# %}
@@ -696,7 +696,7 @@ The below example shows the highlighting of a cell,
 
 ![](Coded-UI-Automation_images/Coded-UI-Automation_img22.jpeg)
 
-### Highlighting a grid
+### Highlighting a Grid
 To highlight a GridControl, the GridControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used. 
 {% tabs %}
 {% highlight c# %}

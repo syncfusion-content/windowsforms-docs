@@ -11,7 +11,7 @@ documentation: ug
 
 This section briefly describes how to design the `SfDateTimeEdit` control in a Windows Forms application and overview of its basic functionalities.
 
-* Adding SfDateTimeEdit Control 
+* Adding SfDateTimeEdit Control
 * Configuring SfDateTimeEdit Values
 
 ## Assembly deployment
@@ -121,7 +121,7 @@ Me.Controls.Add(sfDateTimeEdit)
 
 ## Configure date range
 
-In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by `MinDateTime` and `MaxDateTime` properties that enables the specified date range in the SfDateTimeEdit control. The following code snippets illustrates the same:
+In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by `MinDateTime` and `MaxDateTime` properties that enables the specified date range in the SfDateTimeEdit control.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 ## Configure allow null value
 
-The SfDateTimEdit allows you to set the `Value` to null in the mask mode of DateTimeEditing when `AllowNull` is set to true. The following code snippets illustrates the same:
+The SfDateTimEdit allows you to set the `Value` to null in the mask mode of DateTimeEditing when `AllowNull` is set to true.
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ dateTimeEdit.AllowNull = true
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![](watermark-images/nullvalue.png)
 
@@ -248,7 +248,7 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![](getting-started-images/customformat.png)
 

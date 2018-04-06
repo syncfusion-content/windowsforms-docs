@@ -69,25 +69,21 @@ Searches the first occurrence of specific data which matches the conditions and 
 {% highlight c# %}
 
 //Search the text in entire workbook in column wise,
-
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook, "sample", SearchBy.ByColumns, ExcelFindType.Text, false, true);
 
 // To move the current cell to matched cell content range,
-
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);          
 
 //Search the formula in particular worksheet in row wise,
-
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook.Worksheets[0], "sum", SearchBy.ByRows, ExcelFindType.Text, false, false);
 
 // To move the current cell to matched cell content range,
-
 spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);          
 
 {% endhighlight %}
 {% endtabs %}
 
-### Find Conditional Formatting
+### Finding conditional formatting
 
 Searches and returns the `IRange` list which have conditional formatting within the specified worksheet.
 
@@ -95,7 +91,6 @@ Searches and returns the `IRange` list which have conditional formatting within 
 {% highlight c# %}
 
 //Searches the conditional formatting within the worksheet,
-
 var list = spreadsheet.SearchManager.FindConditionalFormatting(spreadsheet.Workbook.Worksheets[0]);
 
 // To select the matched cell content ranges,
@@ -108,7 +103,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find Constants
+### Finding constants
 
 Searches and returns the `IRange` list which have constants within the specified worksheet.
 
@@ -116,7 +111,6 @@ Searches and returns the `IRange` list which have constants within the specified
 {% highlight c# %}
 
 //Searches the constants within the worksheet,
-
 var list = spreadsheet.SearchManager.FindConstants(spreadsheet.Workbook.Worksheets[0]);
 
 // To select the matched cell content ranges,
@@ -129,7 +123,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find Formulas
+### Finding formulas
 
 Searches and returns the `IRange` list which have formulas within the specified worksheet.
 
@@ -137,7 +131,6 @@ Searches and returns the `IRange` list which have formulas within the specified 
 {% highlight c# %}
 
 //Searches the formulas within the worksheet,
-
 var list = spreadsheet.SearchManager.FindFormulas(spreadsheet.Workbook.Worksheets[0]);
 
 // To select the matched cell content ranges,
@@ -150,7 +143,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find Data Validation
+### Finding data validation
 
 Searches and returns the `IRange` list which have data validation within the specified worksheet.
 
@@ -158,7 +151,6 @@ Searches and returns the `IRange` list which have data validation within the spe
 {% highlight c# %}
 
 //Searches the data validation within the worksheet,
-
 var list = spreadsheet.SearchManager.FindDataValidation(spreadsheet.Workbook.Worksheets[0]);
 
 // To select the matched cell content ranges,
@@ -203,7 +195,6 @@ Searches for the text or numbers that you want to change using `FindNext` method
 {% highlight c# %}
 
 //Searches the given text and replaces it with specified text
-
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook, "sample", SearchBy.ByColumns, ExcelFindType.Text, false, true);
 spreadsheet.ActiveGrid.SetCellValue(cell, "sync");
 

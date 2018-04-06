@@ -19,11 +19,7 @@ EssentialChart for Windows Forms is a perfect solution for developers looking to
 
 Chart is used as a means to show the graphical representation of two values. For Example, a Line Chart can be used in health Statistic reports, in which it can show the rates over time or for a series of values, such as age-specific death rates. Logarithmic charts can be used in Share price charts where we plot between price and time. In logarithmic chart, we can identify the 'Proportional change in price' with respect to the 'Change in time'. We use 'Proportional change in price' to observe market sentiment. Market participants move share prices either up or down proportionally depending on how bullish or bearish they feel.
 
-
-
 ![](Overview_images/Overview_img1.jpeg)
-
-
 
 ### Key Features
 
@@ -53,8 +49,6 @@ The product comes with numerous samples as well as an extensive documentation to
 ### Document Conventions
 
 The conventions listed below will help you to quickly identify the important sections of information, while using the content:
-
-
 
 <table>
 <tr>
@@ -98,8 +92,6 @@ This section covers the requirements mandatory for using EssentialChart control.
 
 The prerequisites details are listed in the following table.
 
-
-
 <table>
 <tr>
 <th>
@@ -129,8 +121,6 @@ Visual Studio 2013</li>
 
 The compatibility details are listed in the following table.
 
-
-
 <table>
 <tr>
 <th>
@@ -150,10 +140,7 @@ Operating Systems</th></tr>
 
 ## Documentation
 
-
 Syncfusion provides the following documentation segments to provide all necessary information for using EssentialChart control in Windows application in an efficient manner.
-
-
 
 <table>
 <tr>

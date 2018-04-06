@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-#  Event handling
+#  Event Handling
 
 ## Selection Events
 

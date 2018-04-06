@@ -9,7 +9,6 @@ documentation: ug
 
 # TreeNode Features
 
-
 This section discusses the following topics.
 
 ## Primitives
@@ -17,8 +16,6 @@ This section discusses the following topics.
 The TreeViewAdv control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the TreeViewAdv controls. 
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img1.jpeg)
-
-
 
 The types of primitives available are LabelPrimitive, LeftImagePrimitive, RightImagePrimitive, CheckBoxPrimitive, OptionButtonPrimitive and CustomControlPrimitive.
 
@@ -42,7 +39,6 @@ CustomControls
 
 {% endseealso %}
 
-
 ## Node Images
 
 TreeViewAdv control can be customized with images for each of its actions for example collapse / expand state, plus / minus of the tree etc., This section discusses about the below topics.
@@ -57,8 +53,7 @@ TreeViewAdv control can be customized with images for each of its actions for ex
 Node Images Events
 {% endseealso %}
 
-
-### Left, Right and State Images
+### Left, Right, and State Images
 
 This section discusses about adding Left, Right and State images to the nodes and various image settings for the TreeViewAdv control.
 
@@ -112,8 +107,6 @@ It is the space provided between the RightImage of the node and node.</td></tr>
 
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img2.jpeg)
-
-
 
 Setting State Images
 
@@ -180,33 +173,25 @@ Customizing the Image Size
 
 The ImageSize property let you enhance the image size for a TreeNodeAdv. By default, the TreeViewAdv control displays the image size depending on the size of the image that is set in the image list.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.leftImageList.ImageSize = new System.Drawing.Size(16, 16);
-
 this.rightImageList.ImageSize = new System.Drawing.Size(16, 16);
-
 this.stateImageList.ImageSize = new System.Drawing.Size(16, 16);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.leftImageList.ImageSize = New System.Drawing.Size(16, 16)
-
 Me.rightImageList.ImageSize = New System.Drawing.Size(16, 16)
-
 Me.stateImageList.ImageSize = New System.Drawing.Size(15, 15)
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img4.jpeg)
-
 
 {% seealso %}
 
@@ -217,8 +202,6 @@ Expand and Collapse Image
 Styles Architecture
 
 {% endseealso %}
-
-
 
 ### Expand and Collapse Image
 
@@ -272,14 +255,9 @@ ExpandImageIndex</td><td>
 It is the image index for expand button.</td></tr>
 </table>
 
-
 ![](Concepts-and--Features_images/Concepts-and--Features_img5.jpeg)
 
-
-
 ![](Concepts-and--Features_images/Concepts-and--Features_img6.jpeg)
-
-
 
 N> You can customize the background of the plus minus control. Click here to know more about this.
 
@@ -288,8 +266,6 @@ N> You can customize the background of the plus minus control. Click here to kno
 Line Images
 
 {% endseealso %}
-
-
 
 ### Line Images
 
@@ -334,38 +310,27 @@ ShowRootLines</td><td>
 Indicates whether lines are displayed between root nodes.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.treeViewAdv1.LineColor = System.Drawing.Color.Black;
-
 this.treeViewAdv1.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-
 this.treeViewAdv1.ShowLines = true;
-
 this.treeViewAdv1.ShowPlusMinus = true;
-
 this.treeViewAdv1.ShowRootLines = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.treeViewAdv1.LineColor = System.Drawing.Color.Black
-
 Me.treeViewAdv1.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash
-
 Me.treeViewAdv1.ShowLines = True
-
 Me.treeViewAdv1.ShowPlusMinus = True
-
 Me.treeViewAdv1.ShowRootLines = True
 
 {% endhighlight %}
+{% endtabs %}
 
 N> ShowPlusMinus properties can also be set for individual nodes.
 
@@ -387,56 +352,42 @@ The steps below will show how you could draw overlay images on the images associ
 * Set the TreeViewAdv's OwnerDrawNodes property to true.
 * Handle the TreeViewAdv's AfterNodePaint event as shown in code below to perform overlaying of images. The below code snippet shows overlaying LeftImages. The same code snippet can be used for overlaying RightImages and StateImages also by replacing LeftImagesX with RightImagesX and StateImagesX respectively.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_AfterNodePaint(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvPaintEventArgs e)
-
 {
-
 // Suppose you wish to draw an overlay image on the image associated with the selected node.
-
-TreeNodeAdv node = this.treeViewAdv1.SelectedNode;
+    TreeNodeAdv node = this.treeViewAdv1.SelectedNode;
 
 // Get the position of the node's image.
-
 Point point = new Point(node.LeftImagesX, node.TextAndImageBounds.Y);
 
 // Perform image drawing.
-
 e.Graphics.DrawImage(overlayImage, point);
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_AfterNodePaint(sender As Object, e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvPaintEventArgs) Handles treeViewAdv1.AfterNodePaint
 
 ' Suppose you wish to draw an overlay image on the image associated with the selected node.
-
 Dim node As TreeNodeAdv = Me.treeViewAdv1.SelectedNode
 
 ' Get the position of the node's image.
-
 Dim point As New Point(node.LeftImagesX, node.TextAndImageBounds.Y)
 
 ' Perform image drawing.
-
 e.Graphics.DrawImage(overlayImage, point)
 
 End Sub 
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img9.jpeg)
-
-
 
 A sample demonstrating this feature is available in the below sample installation location.
 
@@ -463,51 +414,36 @@ ShowPlusOnExpand</td><td>
 Indicates if the plus minus of the node is visible.</td></tr>
 </table>
 
-
 This will effect only if the LoadOnDemand property is set to true.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.treeViewAdv1.LoadOnDemand = true;
-
 private void button1_Click(object sender, System.EventArgs e)
-
 {
-
      TreeNodeAdv node=this.treeViewAdv1.Nodes[2];
 
-     // Setting ShowPlusOnExpand to true for the selected node.
-
+// Setting ShowPlusOnExpand to true for the selected node.
      node.ShowPlusOnExpand=true;
-
      this.treeViewAdv1.SelectedNode=this.treeViewAdv1.Nodes[2];
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.treeViewAdv1.LoadOnDemand = True
-
 Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
     Dim node As TreeNodeAdv=Me.treeViewAdv1.Nodes(2)
 
-   ' Setting ShowPlusOnExpand to true for the selected node.
-
-    node.ShowPlusOnExpand=True
-
-    Me.treeViewAdv1.SelectedNode=Me.treeViewAdv1.Nodes(2)
-
+' Setting ShowPlusOnExpand to true for the selected node.
+node.ShowPlusOnExpand=True
+Me.treeViewAdv1.SelectedNode=Me.treeViewAdv1.Nodes(2)
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}
 
 Given below is a screen shot of this.
 
@@ -515,7 +451,7 @@ Given below is a screen shot of this.
 
 
 
-## Checkbox and Option buttons
+## Checkbox and Option Buttons
 
 ### Adding Checkbox to the Nodes
 
@@ -594,38 +530,27 @@ EnsureDefaultOptionedChild</td><td>
 This specifies if at least one child of the parent node should be selected at all times.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 treeNodeAdv8.CheckColor = System.Drawing.SystemColors.ControlDarkDark;
-
 treeNodeAdv7.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-
 treeNodeAdv8.EnsureDefaultOptionedChild =  true;
-
 treeNodeAdv8.Checked = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 TreeNodeAdv8.CheckColor = System.Drawing.SystemColors.ControlDarkDark
-
 TreeNodeAdv7.CheckState = System.Windows.Forms.CheckState.Indeterminate
-
 TreeNodeAdv8.EnsureDefaultOptionedChild = True
-
 TreeNodeAdv8.Checked = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img12.jpeg)
-
 
 
 ### Adding Option Buttons
@@ -657,33 +582,25 @@ Optioned</td><td>
 This indicates if the node's option button is checked.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 treeNodeAdv9.SelectedOptionButtonColor = System.Drawing.Color.Red;
-
 treeNodeAdv3.OptionButtonColor = System.Drawing.Color.AliceBlue;
-
 treeNodeAdv6.OptionButtonColor = System.Drawing.Color.PowderBlue;
-
 treeNodeAdv8.OptionButtonColor = System.Drawing.Color.MediumAquamarine;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 TreeNodeAdv9.SelectedOptionButtonColor = System.Drawing.Color.Red
-
 treeNodeAdv3.OptionButtonColor = System.Drawing.Color.AliceBlue
-
 treeNodeAdv6.OptionButtonColor = System.Drawing.Color.PowderBlue
-
 treeNodeAdv8.OptionButtonColor = System.Drawing.Color.MediumAquamarine
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img13.jpeg)
 
@@ -705,10 +622,7 @@ EnabledButtons</td><td>
 Indicates if the buttons that are displayed, are enabled for the particular node.</td></tr>
 </table>
 
-
 ![](Concepts-and--Features_images/Concepts-and--Features_img14.jpeg)
-
-
 
 ## Custom Controls
 
@@ -718,19 +632,15 @@ Any custom control can be dragged and dropped to the form and selected using Tre
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img15.jpeg)
 
-
-
 We can also add functionality based on the changes made to the CustomControls.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img16.jpeg)
-
-
 
 A sample which demonstrates Custom Controls feature is available in the below sample installation location. This sample illustrates adding functionality based on the changes to the custom controls.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-## Enabling the control
+## Enabling the Control
 
 The TreeView control can be enabled using the below properties.
 

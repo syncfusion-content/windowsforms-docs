@@ -17,6 +17,9 @@ N> The underlying data object must be defined with default constructor. Otherwis
 {% highlight c# %}
  sfDataGrid.AddNewRowPosition = RowPosition.Top;
 {% endhighlight %}
+{% highlight vb %}
+ sfDataGrid.AddNewRowPosition = RowPosition.Top
+{% endhighlight %}
 {% endtabs %}
 ![](DataManipulation_images/AddNewRow_img1.png)
 
@@ -26,6 +29,9 @@ SfDataGrid allows to add the AddNewRow at either top or fixed top or bottom or f
 {% highlight c# %}
  sfDataGrid.AddNewRowPosition = RowPosition.FixedBottom;
 {% endhighlight %}
+{% highlight vb %}
+ sfDataGrid.AddNewRowPosition = RowPosition.FixedBottom
+{% endhighlight %}
 {% endtabs %}
 ![](DataManipulation_images/AddNewRow_img2.png)
 
@@ -34,6 +40,9 @@ SfDataGrid allows to check whether the specified row index is AddNewRow index, b
 {% highlight c# %}
 sfDataGrid.IsAddNewRowIndex(1);
 {% endhighlight %}
+{% highlight vb %}
+sfDataGrid.IsAddNewRowIndex(1)
+{% endhighlight %}
 {% endtabs %}
 
 ### Customize the newly added row position
@@ -41,6 +50,9 @@ SfDataGrid adds new data item from AddNewRow at the end of collection. When data
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.NewItemPlaceholderPosition = Syncfusion.Data.NewItemPlaceholderPosition.AtBeginning;
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.NewItemPlaceholderPosition = Syncfusion.Data.NewItemPlaceholderPosition.AtBeginning
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,6 +68,14 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
     var data = args.NewObject as OrderInfo;
     data.OrderID = 101;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.AddNewRowInitiating, AddressOf dataGrid_AddNewRowInitiating
+
+Private Sub dataGrid_AddNewRowInitiating(ByVal sender As Object, ByVal args As AddNewRowInitiatingEventArgs)
+	Dim data = TryCast(args.NewObject, OrderInfo)
+	data.OrderID = 101
+End Sub
 {% endhighlight %}
 {% endtabs %}
 ![](DataManipulation_images/AddNewRow_img7.png)
@@ -80,6 +100,20 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.RowValidating, AddressOf dataGrid_RowValidating
+
+Private Sub dataGrid_RowValidating(ByVal sender As Object, ByVal args As RowValidatingEventArgs)
+	If Me.sfDataGrid.IsAddNewRowIndex(args.DataRow.RowIndex) Then
+		Dim data = TryCast(args.DataRow.RowData, OrderInfo)
+
+		If data.OrderID < 10000 Then
+			args.IsValid = False
+			args.ErrorMessage = "OrderID should greater than 10000."
+		End If
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 ![](DataManipulation_images/AddNewRow_img3.png)
 
@@ -99,6 +133,10 @@ The appearance of the AddNewRow can be customized by setting the [AddNewRowStyle
 this.sfDataGrid.Style.AddNewRowStyle.BackColor = Color.DarkCyan;
 this.sfDataGrid.Style.AddNewRowStyle.TextColor = Color.White;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.AddNewRowStyle.BackColor = Color.DarkCyan
+Me.sfDataGrid.Style.AddNewRowStyle.TextColor = Color.White
+{% endhighlight %}
 {% endtabs %}
 
 ![](DataManipulation_images/AddNewRow_img6.png)
@@ -109,6 +147,9 @@ SfDataGrid provides built-in support to delete the selected records in user inte
 {% highlight c# %}
 this.sfDataGrid.AllowDeleting = true;
 {% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.AllowDeleting = True
+{% endhighlight %}
 {% endtabs %}
 
 ### Delete the selected records through code
@@ -116,6 +157,9 @@ The selected records can be deleted by using the [DeleteSelectedRecords](https:/
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.DeleteSelectedRecords();
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.DeleteSelectedRecords()
 {% endhighlight %}
 {% endtabs %}
 
@@ -138,6 +182,17 @@ void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.RecordDeleting, AddressOf dataGrid_RecordDeleting
+
+Private Sub dataGrid_RecordDeleting(ByVal sender As Object, ByVal args As RecordDeletingEventArgs)
+	For Each item In args.Items
+		If (TryCast(item, OrderInfo)).OrderID = 10001 Then
+			args.Cancel = True
+		End If
+	Next item
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -152,6 +207,13 @@ void dataGrid_RecordDeleted(object sender, RecordDeletedEventArgs args)
 {
     args.SelectedIndex = -1;
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.RecordDeleted, AddressOf dataGrid_RecordDeleted
+
+Private Sub dataGrid_RecordDeleted(ByVal sender As Object, ByVal args As RecordDeletedEventArgs)
+	args.SelectedIndex = -1
+End Sub
 {% endhighlight %}
 {% endtabs %}
 

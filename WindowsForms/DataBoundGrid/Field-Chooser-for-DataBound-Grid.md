@@ -7,15 +7,15 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Field Chooser for DataBound Grid 
+# Field Chooser
 
 This feature enables you to customize the view of the grid without modifying the database.The _FieldChooser_ class of _GridDataBoundGrid_ has been implemented to add or remove columns from a grid. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature will be useful when you want to remove certain columns (which cannot be deleted) from the grid.
 
-Methods
+## Methods
 
 
 
@@ -51,7 +51,7 @@ NA</td></tr>
 
 You can find a sample for this feature in the following location: 
 
-_..\..\AppData\Local\Syncfusion\EssentialStudio\[Version_Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\GDBG FieldChooser Demo_
+**_..\..\AppData\Local\Syncfusion\EssentialStudio\[Version_Number]\Windows\GridDataBound.Windows\Samples\Product Showcase\GDBG FieldChooser Demo_**
 
 Adding Field Chooser for GridDataBoundGrid
 
@@ -64,7 +64,7 @@ Adding Field Chooser for GridDataBoundGrid
 GridDataBoundFieldChooser fChooser = new GridDataBoundFieldChooser();
 fChooser.WireGrid(this.GridDataBoundGrid1);
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 Dim fChooser As GridDataBoundFieldChooser = New GridDataBoundFieldChooser()
 fChooser.WireGrid(Me.GridDataBoundGrid1)
 {% endhighlight %}
@@ -89,6 +89,3 @@ fChooser.WireGrid(Me.GridDataBoundGrid1)
 6. The grid will have only the columns which are selected in the _Field Chooser_ dialog.
 
    ![](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img3.png) 
-
-
-   {:.prettyprint}

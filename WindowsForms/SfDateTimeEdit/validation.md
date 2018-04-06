@@ -9,7 +9,7 @@ documentation: ug
 
 # Validation
 
-The `SfDateTimeEdit` control validates the DateTime value when the enter key is pressed, so that the control lost its focus or the date is picked from the drop-down calendar.
+The `SfDateTimeEdit` control validates the DateTime value when the <kbd>Enter</kbd> key is pressed, so that the control lost its focus or the date is picked from the drop-down calendar.
 
 
 ## Validation reset option
@@ -67,7 +67,7 @@ The given value can be treated as a date/time value. It can be validated based o
 
 The `ValidatingEventArgs` provides data for the `Validating` event of the SfDateTimeEdit control. By handling the `Validating` event, it is possible to find the cause for validation failure with error message in the `ValidatingEventArgs`.
 
-* **IsError**: Indicates whether the entered date and time is valid or in-valid.
+* **IsError**: Indicates whether the entered date and time is valid or invalid.
 
 * **ErrorMessage**: Updates the cause of the error. The error may be caused due to minimum or maximum value constraint met or incorrect date time format.
 

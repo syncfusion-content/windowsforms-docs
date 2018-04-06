@@ -40,6 +40,23 @@ private void btnApplyFilter_Click(object sender, EventArgs e)
     sfDataGrid1.View.RefreshFilter();
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Function FilterRecords(ByVal o As Object) As Boolean
+	Dim filterText As String = "FRANS"
+	Dim item = TryCast(o, OrderInfo)
+	If item IsNot Nothing Then
+		If item.CustomerID.Equals(filterText) Then
+			Return True
+		End If
+	End If
+	Return False
+End Function
+
+Private Sub btnApplyFilter_Click(ByVal sender As Object, ByVal e As EventArgs)
+	sfDataGrid1.View.Filter = AddressOf FilterRecords
+	sfDataGrid1.View.RefreshFilter()
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 N>View filters is not supported when the DataSource is DataTable.
@@ -51,6 +68,10 @@ The column filtering can be achieved by adding the [FilterPredicate](https://hel
 {% highlight c# %}
 // Filter the OrderID column with a value of 10005.
 sfDataGrid1.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterType = FilterType.Equals, FilterValue = "10005" });
+{% endhighlight %}
+{% highlight vb %}
+' Filter the OrderID column with a value of 10005.
+sfDataGrid1.Columns("OrderID").FilterPredicates.Add(New FilterPredicate() With {.FilterType = FilterType.Equals, .FilterValue = "10005"})
 {% endhighlight %}
 {% endtabs %}
 
@@ -75,6 +96,11 @@ sfDataGrid1.ClearFilters();
 sfDataGrid1.ClearFilter("OrderID");
 sfDataGrid1.ClearFilter(sfDataGrid1.Columns[0]);
 {% endhighlight %}
+{% highlight vb %}
+sfDataGrid1.ClearFilters()
+sfDataGrid1.ClearFilter("OrderID")
+sfDataGrid1.ClearFilter(sfDataGrid1.Columns(0))
+{% endhighlight %}
 {% endtabs %}
 
 ## UI Filtering 
@@ -89,11 +115,18 @@ this.sfDataGrid1.AllowFiltering = true;
 // Enable the UI filtering for the OrderID column.
 this.sfDataGrid1.Columns["OrderID"].AllowFiltering = true;
 {% endhighlight %}
+{% highlight vb %}
+' Enable the UI filtering for the SfDataGrid.
+Me.sfDataGrid1.AllowFiltering = True
+
+' Enable the UI filtering for the OrderID column.
+Me.sfDataGrid1.Columns("OrderID").AllowFiltering = True
+{% endhighlight %}
 {% endtabs %}
 
 N>`GridColumn.AllowFiltering` has higher priority than `SfDataGrid.AllowFiltering` property.
 
-### Build-in UI Views
+### Built-in UI Views
 The SfDataGrid provides the following types of Filter popup modes, 
 
 * Checkbox Filter - Provides excel like filter interface with list of check box’s.
@@ -123,6 +156,16 @@ this.sfDataGrid1.FilterPopupMode = FilterPopupMode.CheckBoxFilter;
 //Sets the Both filter mode for the SfDataGrid.
 this.sfDataGrid1.FilterPopupMode = FilterPopupMode.Both;
 {% endhighlight %}
+{% highlight vb %}
+' Sets the Advanced filter mode for the SfDataGrid.
+Me.sfDataGrid1.FilterPopupMode = FilterPopupMode.AdvancedFilter
+
+' Sets the CheckBox filter mode for the SfDataGrid.
+Me.sfDataGrid1.FilterPopupMode = FilterPopupMode.CheckBoxFilter
+
+'Sets the Both filter mode for the SfDataGrid.
+Me.sfDataGrid1.FilterPopupMode = FilterPopupMode.Both
+{% endhighlight %}
 {% endtabs %}
 
 ### Changing Filter UI View for Column
@@ -138,6 +181,16 @@ sfDataGrid1.Columns["OrderID"].FilterPopupMode = FilterPopupMode.CheckBoxFilter;
 
 // Sets the Both advanced and checkbox filter popup mode for the column.
 sfDataGrid1.Columns["OrderID"].FilterPopupMode = FilterPopupMode.Both;
+{% endhighlight %}
+{% highlight vb %}
+' Sets the advanced filter popup mode for the column.
+sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.AdvancedFilter
+
+' Sets the checkbox filter popup mode for the column.
+sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.CheckBoxFilter
+
+' Sets the Both advanced and checkbox filter popup mode for the column.
+sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.Both
 {% endhighlight %}
 {% endtabs %}
 
@@ -155,6 +208,15 @@ void sfDataGrid_FilterPopupShowing(object sender, FilterPopupShowingEventArgs e)
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.FilterPopupShowing, AddressOf sfDataGrid_FilterPopupShowing
+
+Private Sub sfDataGrid_FilterPopupShowing(ByVal sender As Object, ByVal e As FilterPopupShowingEventArgs)
+	If e.Column.MappingName = "OrderID" Then
+		e.Control.FilterPopupMode = FilterPopupMode.AdvancedFilter
+	End If
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ## Checkbox Filtering
@@ -168,6 +230,13 @@ this.sfDataGrid1.FilterPopupMode = FilterPopupMode.CheckBoxFilter;
 
 // Sets the checkbox filter popup mode for the column.
 sfDataGrid1.Columns["OrderID"].FilterPopupMode = FilterPopupMode.CheckBoxFilter;
+{% endhighlight %}
+{% highlight vb %}
+' Sets the CheckBox filter mode for the SfDataGrid.
+Me.sfDataGrid1.FilterPopupMode = FilterPopupMode.CheckBoxFilter
+
+' Sets the checkbox filter popup mode for the column.
+sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.CheckBoxFilter
 {% endhighlight %}
 {% endtabs %}
 
@@ -183,6 +252,10 @@ This will loads the Checkbox filter popup with the `Done` button to close the fi
 // Enable immediate filtering for the column.
 this.sfDataGrid1.Columns["CustomerID"].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
+{% highlight vb %}
+' Enable immediate filtering for the column.
+Me.sfDataGrid1.Columns("CustomerID").ImmediateUpdateColumnFilter = True
+{% endhighlight %}
 {% endtabs %}
 
 ![](Filtering_images/Filtering_img5.png)
@@ -194,6 +267,10 @@ The null values of the column can be filtered by using the ` (Blanks) ` option o
 {% highlight c# %}
 // Enable blank filters for the column.
 this.sfDataGrid1.Columns["CustomerID"].AllowBlankFilters = true;
+{% endhighlight %}
+{% highlight vb %}
+' Enable blank filters for the column.
+Me.sfDataGrid1.Columns("CustomerID").AllowBlankFilters = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -229,21 +306,20 @@ Below are the built-in filter types supported.
 
 <table>
 <tr>
-<td>
-{{'**Text Filter**'| markdownify }}
-</td>
-<td>
-{{'**Number Filter**'| markdownify }}
-</td>
-<td>
-{{'**Date Filter**'| markdownify }}
-</td>
+<th>
+Text Filter
+</th>
+<th>
+Number Filter
+</th>
+<th>
+Date Filter
+</th>
 </tr>
 <tr>
 <td>
 When the string value is bounded to the 
 GridColumn or the items source is dynamic, then `TextFilter` are loaded in advanced filter.
-
 </td>
 <td>
 When integer, double, short, decimal, byte or long are bound to the GridColumn then `Number Filters` are loaded in advanced filter.
@@ -254,59 +330,62 @@ When the DateTime type value is bound to the GridColumn, then `Date Filter` is l
 </tr>
 <tr>
 <td>
-![](Filtering_images/Filtering_img11.png)
-
-
+<img src="Filtering_images/Filtering_img11.png"/>
 </td>
 <td>
-![](Filtering_images/Filtering_img12.png)
-
+<img src="Filtering_images/Filtering_img12.png"/>
 </td>
 <td>
-![](Filtering_images/Filtering_img13.png)
-
+<img src="Filtering_images/Filtering_img13.png"/>
 </td>
 </tr>
 <tr>
 <td>
-{{'**Filter Menu Options**'| markdownify }}
-1. Equals
-2. Not Equal
-3. Begins With
-4. Ends With
-5. Contains
-6. Empty
-7. Not Empty
-8. Null
-9.	Not Null
+<b>Filter Menu Options</b>
+<ol>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Begins With</li>
+<li>Ends With</li>
+<li>Contains</li>
+<li>Empty</li>
+<li>Not Empty</li>
+<li>Null</li>
+<li>Not Null</li>
+</ol>
 </td>
 <td>
-{{'**Filter Menu Options**'| markdownify }}
-1. Equals
-2. Not Equal
-3. Null
-4. Not Null
-5. Less Than
-6. Less Than or Equal
-7. Greater Than
-8.	Greater Than or Equal
+<b>Filter Menu Options</b>
+<ol>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+<li>Less Than</li>
+<li>Less Than or Equal</li>
+<li>Greater Than</li>
+<li>Greater Than or Equal</li>
+</ol>
 </td>
 <td>
-{{'**Filter Menu Options**'| markdownify }}
-1. Equals
-2. Not Equal
-3. Before
-4. Before Or Equal
-5. After
-6. After Or Equal
-7. Null
-8. Not Null
+<b>Filter Menu Options</b>
+<ol>
+<li>Equals</li>
+<li>Not Equal</li>
+<li>Before</li>
+<li>Before Or Equal</li>
+<li>After</li>
+<li>After Or Equal</li>
+<li>Null</li>
+<li>Not Null</li>
+</ol>
 </td>
 </tr>
 </table>
 
-N> 1. Null and Not Null options are available only when `AllowBlankFilters` is set to `true`.
-   2. If the column is `GridUnboundColumn`, then Text Filter will be loaded.
+N> 
+1. Null and Not Null options are available only when `AllowBlankFilters` is set to `true`.
+2. If the column is `GridUnboundColumn`, then Text Filter will be loaded.
 
 ### Instant Filtering
 By default the advanced filtering will be applied while clicking the OK button after specifying the suitable filter value. This can be changed to update filtering immediately on updating the filter popup by setting the [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) property to `true` for the column.
@@ -333,6 +412,10 @@ To load the Text Filter for the column that has number or date value as underlyi
 //To load the text filter instead of date filter.
 sfDataGrid.Columns["OrderDate"].FilterBehavior = FilterBehavior.StringTyped;
 {% endhighlight %}
+{% highlight vb %}
+'To load the text filter instead of date filter.
+sfDataGrid.Columns("OrderDate").FilterBehavior = FilterBehavior.StringTyped
+{% endhighlight %}
 {% endtabs %}
 
 ### Customizing Filter Predicates
@@ -348,6 +431,18 @@ void sfDataGrid_FilterChanging(object sender, FilterChangingEventArgs e)
     if (e.FilterPredicates[0].FilterValue.Equals("ALFKI"))
         e.FilterPredicates[0].FilterValue = "MEREP";          
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.FilterChanging, AddressOf sfDataGrid_FilterChanging
+Private Sub sfDataGrid_FilterChanging(ByVal sender As Object, ByVal e As FilterChangingEventArgs)
+	If e.FilterPredicates Is Nothing OrElse e.Column.MappingName <> "CustomerID" OrElse e.FilterPredicates.Count = 0 Then
+		Return
+	End If
+
+	If e.FilterPredicates(0).FilterValue.Equals("ALFKI") Then
+		e.FilterPredicates(0).FilterValue = "MEREP"
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -367,6 +462,20 @@ void sfDataGrid_FilterChanged(object sender, FilterChangedEventArgs e)
     foreach (RecordEntry record in records)
         order.Add(record.Data as OrderInfo);
 }
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.FilterChanged, AddressOf sfDataGrid_FilterChanged
+Private Sub sfDataGrid_FilterChanged(ByVal sender As Object, ByVal e As FilterChangedEventArgs)
+	'OrderInfo is Model Class 
+	Dim order As New ObservableCollection(Of OrderInfo)()
+
+	' Get filtered records
+	Dim records = (TryCast(sender, SfDataGrid)).View.Records
+
+	For Each record As RecordEntry In records
+		order.Add(TryCast(record.Data, OrderInfo))
+	Next record
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -413,6 +522,33 @@ public class CustomFilterControl : FilterControlBase
     }
 }
 {% endhighlight %}
+{% highlight vb %}
+Public Class CustomFilterControl
+	Inherits FilterControlBase
+	Private grid As SfDataGrid
+	Public Property MappingName() As String
+
+	Public Sub New(ByVal grid As SfDataGrid)
+		MyBase.New()
+		Me.grid = grid
+		Me.ShowSortPanel = False
+	End Sub
+
+	Protected Overrides Sub OnOKButtonClicked(ByVal sender As Object, ByVal e As EventArgs)
+		If Not String.IsNullOrEmpty(MappingName) Then
+			Dim column = grid.Columns(MappingName)
+			column.FilterPredicates.Clear()
+			For Each item In Me.CheckListBox.CheckedItems
+				Dim predicate As FilterPredicate = New FilterPredicate With {.FilterBehavior = Syncfusion.Data.FilterBehavior.StringTyped, .PredicateType = PredicateType.Or, .FilterMode = ColumnFilter.DisplayText, .FilterType = FilterType.Contains, .FilterValue = item.ToString(), .IsCaseSensitive = False}
+
+				column.FilterPredicates.Add(predicate)
+			Next item
+		End If
+
+		MyBase.OnOKButtonClicked(sender, e)
+	End Sub
+End Class
+{% endhighlight %}
 {% endtabs %}
 
 The custom filter control can be loaded in the SfDataGrid by using the `FilterPopupShowing` event. 
@@ -427,12 +563,27 @@ void sfDataGrid_FilterPopupShowing(object sender, FilterPopupShowingEventArgs e)
         items.Add("MEREP");
         items.Add("FOLKO");
         items.Add("ALFKI");
-        var customFiltercontrol = new CustomFilterControl(this.sfDataGrid);
-        customFiltercontrol.DataSource = items;
-        customFiltercontrol.MappingName = e.Column.MappingName;
-        customFiltercontrol.Show(this.sfDataGrid, e.Location);
+        var customFilterControl = new CustomFilterControl(this.sfDataGrid);
+        customFilterControl.DataSource = items;
+        customFilterControl.MappingName = e.Column.MappingName;
+        customFilterControl.Show(this.sfDataGrid, e.Location);
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+Private Sub sfDataGrid_FilterPopupShowing(ByVal sender As Object, ByVal e As FilterPopupShowingEventArgs)
+	If e.Column.MappingName = "CustomerID" Then
+		e.Cancel = True
+		Dim items As New List(Of String)()
+		items.Add("MEREP")
+		items.Add("FOLKO")
+		items.Add("ALFKI")
+		Dim customFilterControl = New CustomFilterControl(Me.sfDataGrid)
+		customFilterControl.DataSource = items
+		customFilterControl.MappingName = e.Column.MappingName
+		customFilterControl.Show(Me.sfDataGrid, e.Location)
+	End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -452,6 +603,13 @@ void sfDataGrid_FilterPopupShowing(object sender, FilterPopupShowingEventArgs e)
     e.Control.ShowSortPanel = false;            
 }
 {% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.FilterPopupShowing, AddressOf sfDataGrid_FilterPopupShowing
+Private Sub sfDataGrid_FilterPopupShowing(ByVal sender As Object, ByVal e As FilterPopupShowingEventArgs)
+	'Hide the sorting options of the filter control
+	e.Control.ShowSortPanel = False
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ![](Filtering_images/Filtering_img18.png)
@@ -463,6 +621,10 @@ The custom filter icon or the filtered icons can be set to the column header by 
 {% highlight c# %}
 sfDataGrid.Columns[1].HeaderStyle.FilterIcon = new Bitmap(Image.FromFile(@"..\..\FilterIcon.png"));
 sfDataGrid.Columns[0].HeaderStyle.FilteredIcon = new Bitmap(Image.FromFile(@"..\..\FilteredIcon.png"));
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns(1).HeaderStyle.FilterIcon = New Bitmap(Image.FromFile("..\..\FilterIcon.png"))
+sfDataGrid.Columns(0).HeaderStyle.FilteredIcon = New Bitmap(Image.FromFile("..\..\FilteredIcon.png"))
 {% endhighlight %}
 {% endtabs %}
 

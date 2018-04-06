@@ -7,11 +7,11 @@ control: SfToolTip
 documentation: ug
 
 ---
-# ToolTip content
+# ToolTip Content
 
 ## Setting ToolTipItem
 
-`ToolTipItem` can be set to the SfToolTip by adding the `ToolTipItem` to the `Items` collection through `Add` method.
+The `ToolTipItem` can be set to the SfToolTip by adding the `ToolTipItem` to the `Items` collection through `Add` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -28,9 +28,9 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Multiple Items into a ToolTip
+## Adding multiple items into a ToolTip
 
-Multiple `ToolTipItem` also can be added to the `SfToolTip` by adding the multiple items to the Items collection using either `Add` method or `AddRange` method.
+Multiple `ToolTipItem` can also be added to the `SfToolTip` by adding the multiple items to the items collection using either `Add` or `AddRange` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +53,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ### Spacing between items
 
-The spacing or padding of the `ToolTipItem` can be changed by using the `Padding` property of the ToolTip item.
+The spacing or padding between the `ToolTipItems` can be changed by using the `Padding` property of the ToolTip item.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,9 +81,9 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 ![](SfToolTip_images/SfToolTip_img11.jpeg)
 
 
-## Adding Image into a ToolTip
+## Adding image into a ToolTip
 
-The tooltip image of the `ToolTipItem` can be initialized using the `Image` or the `ImageList` property.
+The tooltip image of the `ToolTipItem` can be initialized using the `Image` or `ImageList` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,9 +123,9 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 ![](SfToolTip_images/SfToolTip_img12.jpeg)
 
 
-**Note**: `Image` property is considered as high priority, if both `Image` and `ImageList` are initialized. 
+**Note**: The `Image` property is considered as high priority, when both `Image` and `ImageList` are initialized. 
 
-### Changing ImageAlignment of the ToolTipItem
+### Changing image alignment of the ToolTipItem
 
 The image alignment of the `ToolTipItem` can be changed by using the `ImageAlignment` property. 
 
@@ -144,7 +144,7 @@ toolTipItem1.Style.ImageAlignment = ToolTipImageAlignment.Left;
 {% endhighlight %}
 {% endtabs %}
 
-### Setting ImageSize of the ToolTipItem
+### Setting image size of the ToolTipItem
 
 The image size of the `ToolTipItem` can be changed by using the `ImageSize` property.
 
@@ -166,11 +166,11 @@ toolTipItem1.Style.ImageSize = new Size(100, 100);
 ![](SfToolTip_images/SfToolTip_img13.jpeg)
 
 
-**Note****:** If `ImageSize` property is initialized rather than its default value of Size (32, 32), then it will be taken as the image size for the image and won't consider the Image.Size and ImageList.Size for image size.
+**Note**: If the `ImageSize` property is initialized, default size value (32, 32) will be taken as the image size, and would not consider the Image.Size and ImageList.Size for image size.
 
-### Setting spacing between Image and Text
+### Setting spacing between image and text
 
-The distance between the `Text` and `Image` of the `ToolTipItem` can be changed by using the `ImageToTextOffset`.
+The distance between the `text` and `image` of the `ToolTipItem` can be changed by using the `ImageToTextOffset`.
 
 {% tabs %}
 {% highlight c# %}

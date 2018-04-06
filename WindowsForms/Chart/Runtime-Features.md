@@ -13,34 +13,21 @@ The following topics under this section elaborates on the runtime features of Ch
 
 ## Zooming and Scrolling
 
-### Interactive Zooming
-
 ### Zooming via Mouse
 
 EssentialChart supports interactive zooming features along the x and y axis. During runtime, the user can simply select the range he wants to zoom with the mouse and the chart will accordingly zoom-in. Scrollbars will be activated to browse the areas that become hidden on zooming in.
 
 Enable Zooming via the EnableXZooming and EnableYZooming properties.
 
-
-
 ![](Runtime-Features_images/Runtime-Features_img1.jpeg)
 
-
-
-
 ![](Runtime-Features_images/Runtime-Features_img2.jpeg)
-
-
 
 The scrollbar will shift by the amount specified in the ScrollPrecision property which is set to 20 by default.
 
 User can zoom out by clicking the "Zoom Out" button in the scrollbar.
 
-
-
 ![](Runtime-Features_images/Runtime-Features_img3.jpeg)
-
-
 
 ZoomOutIncrement property specifies the increment by which to zoom out. The default value is 0.2.
 
@@ -52,7 +39,7 @@ You can also programmatically specify the scrollbar position of the zoomed in ax
 
 To restrict the zoom-in factor to a certain level on the x and y axis use the MinZoomFactorX and MinZoomFactorY properties. The value can be in between 0 and 1. 1 means not zoomed.
 
-###Zooming via Keyboard
+### Zooming via Keyboard
 
 EssentialChart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the KeyZoom property.
 
@@ -93,7 +80,6 @@ ZoomUp</td><td>
 Specifies the keyboard short cut to control Zoom Up. The default value is UP arrow.</td></tr>
 </table>
 
-
 ### Panning Support for Zoomed Chart
 
 Now, you will be able to pan a chart when it is zoomed. Set the ChartControl.MouseAction to 'Panning' to enable this feature. Set the MouseAction to 'None' to disable this feature. The panning action can be controlled using the ZoomActions property that is available for individual axis. 
@@ -110,8 +96,9 @@ ZoomActions</td><td>
 Specifies the zoom action on the corresponding axis. The options are,{{ '_Panning_' | markdownify }} - Enables panning in the zoomed chart.{{ '_None_' | markdownify }} - Disables panning in the zoomed chart.</td></tr>
 </table>
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.MouseAction = ChartMouseAction.Panning;
 
@@ -119,10 +106,9 @@ this.chartControl1.PrimaryXAxis.ZoomActions = ChartZoomingAction.Panning;
 
 this.chartControl1.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning;
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.MouseAction = ChartMouseAction.Panning
 
@@ -132,7 +118,6 @@ Me.chartControl1.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 
 {% endhighlight %}
 {% endtabs %}
-
 
 N> Remember to enable zooming on both the axis using EnableXZooming and EnableYZooming properties, before trying out the above panning feature. You cannot pan a chart without zooming it.
 
@@ -159,10 +144,11 @@ PinchZooming</td><td>
 The Chart is zoomed according to the spread/pinch gestures </td></tr>
 </table>
 
-
 ### Zooming via Mouse Selection
 
 In selection zoom type, the user can select the required range to be zoomed and the chart will be zoomed in accordingly. The chart is restored to its original position on Double click.
+
+{% tabs %} 
 
 {% highlight c# %}
 
@@ -170,24 +156,25 @@ this.chartControl1.ZoomType = ZoomType.Selection;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.ZoomType= ZoomType.Selection
 
 {% endhighlight %}
 
+{% endtabs %}
+
 **Illustrates the Selection of Chart Region for Zooming** 
 ![](Runtime-Features_images/Runtime-Features_img30.png)
-
 
 **Displays the Zoomed Region of the chart**
 ![](Runtime-Features_images/Runtime-Features_img31.png)
 
-
-
 ### Zooming via Mouse Wheel
 
 When the ZoomType is set as **ZoomType.MouseWheelZooming** then the chart is zoomed in and out based on the mouse wheel movement. Double clicking on the chart will restore the chart to its original position
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -195,11 +182,13 @@ this.chartControl1.ZoomType = ZoomType.MouseWheelZooming;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.ZoomType= ZoomType.MouseWheelZooming
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Zooming in Touch devices 
 
@@ -208,12 +197,12 @@ In touch enabled devices, the user can zoom  the chart using the spread or pinch
 **Spread**
 ![](Runtime-Features_images/Runtime-Features_img32.png)
 
-
 **Pinch**
 ![](Runtime-Features_images/Runtime-Features_img33.png)
 
-
 The spread action  will result in zoom- in of the chart and pinch action will result in zoom-out of the chart. Double tapping on the chart area restores the chart to its original position.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -221,15 +210,19 @@ this.chartControl1.ZoomType = ZoomType.PinchZooming;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.ZoomType= ZoomType.PinchZooming
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### ResetOnDoubleClick
 
 When the **ResetOnDoubleClick** option is enabled, the chart is reset to its original position on **Double click or Double Tap**. The default value of this property is **False**.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -237,11 +230,13 @@ this.chartControl1.ResetOnDoubleClick = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.ResetOnDoubleClick= true
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Formatted Axes Labels
 
@@ -255,8 +250,9 @@ It is possible to show formatted axes labels for a zoomed chart. EssentialChart'
 * SmartDateZoomHourLevelLabelFormat
 * SmartDateZoomMinuteLevelLabelFormat
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.SmartDateZoom = true;
 
@@ -264,7 +260,7 @@ this.chartControl1.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.PrimaryXAxis.SmartDateZoom = True
 
@@ -274,8 +270,6 @@ Me.chartControl1.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00
 {% endtabs %}
 
 ![](Runtime-Features_images/Runtime-Features_img5.jpeg)
-
-
 
 N> The value type of the axis should be "DateTime" for setting the above formatted labels.
 
@@ -307,11 +301,7 @@ The toolbar can be made visible through the ChartControl's ShowToolbar property.
 
 The toolbar looks like the below image.
 
-
-
 ![](Runtime-Features_images/Runtime-Features_img7.jpeg)
-
-
 
 The toolbar commands and their functionalities are described below.
 
@@ -373,12 +363,9 @@ ChartToolBarSplitter</td><td>
 This item provides a logical split between the collection of commands.</td></tr>
 </table>
 
-
 ### Custom Toolbar Commands
 
 You can also add custom toolbar items using ChartToolBarCommandItem class. The ChartCommands enum lists the commands that can be added. The following table describes those commands.
-
-
 
 <table>
 <tr>
@@ -415,8 +402,9 @@ TogglePanning</td><td>
 This command enables panning of the zoomed chart.</td></tr>
 </table>
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 ChartToolBarCommandItem x1 = new ChartToolBarCommandItem();
 
@@ -438,7 +426,7 @@ this.chartControl1.ToolBar.Items.Add(x1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim x1 As New ChartToolBarCommandItem()
 
@@ -463,18 +451,13 @@ Me.chartControl1.ToolBar.Items.Add(x1)
   
 ![](Runtime-Features_images/Runtime-Features_img8.jpeg)
 
-
 ![](Runtime-Features_images/Runtime-Features_img9.jpeg)
-
 
 ### Toolbar Properties
 
 The chart control provides complete support for customizing the toolbar appearance. Use the ChartControl.ToolBar property to access the toolbar. At runtime, double-click the toolbar to show the ToolBar Properties dialog box as in the below image, which lists all the properties. For this, you need to set the ToolBar.ShowDialog property to True. If you do not want to display this dialog box, set this property to False.
 
-
-
 ![](Runtime-Features_images/Runtime-Features_img10.jpeg)
-
 
 Below are the toolbar properties and their description.
 
@@ -568,14 +551,9 @@ Click the Styles icon in the toolbar to open the Chart Series Style dialog box. 
 
 The below image shows how to set the interior properties through "Interior" tab in the Chart Series Style Window. This can be invoked by clicking "Styles" command.
 
-
-
 ![](Runtime-Features_images/Runtime-Features_img11.jpeg)
 
-
 ![](Runtime-Features_images/Runtime-Features_img12.jpeg)
-
-
 
 ### Toolbar Appearance
 
@@ -583,15 +561,11 @@ Toolbar provides an option to set different back color, border style, button bac
 
 User can enable or disable the Border line of Toolbar by using ShowBorder property in the Toolbar instance.
 
-
-
 ![](Runtime-Features_images/Runtime-Features_img13.jpeg)
-
 
 ### Toolbar Behavior
 
 The docking behavior of the Toolbar can be controlled using Toolbar.Behavior property. 
-
 
 <table>
 <tr>
@@ -604,15 +578,15 @@ Behavior</td><td>
 Specifies the docking behavior of the toolbar.Docking - It is dockable on all four sides.Movable - It is movable.All - It is movable and dockable.None - It is neither movable nor dockable.</td></tr>
 </table>
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.ToolBar.Behavior = ChartDockingFlags.All;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.ToolBar.Behavior = ChartDockingFlags.All
 
@@ -631,16 +605,15 @@ There are two types of context menus, both of which get shown by default when th
 
 1. Chart Area context menu - This will be displayed when the mouse is over the chart area.
  
-   ![](Runtime-Features_images/Runtime-Features_img15.jpeg)
+![](Runtime-Features_images/Runtime-Features_img15.jpeg)
 
-
-   This context menu can be disabled by setting the DisplayChartContextMenu property to false.
+This context menu can be disabled by setting the DisplayChartContextMenu property to false.
 
 2. Chart Series context menu - This will be displayed when the mouse is over a series.
 
-   ![](Runtime-Features_images/Runtime-Features_img16.jpeg)
+![](Runtime-Features_images/Runtime-Features_img16.jpeg)
 
-    This context menu can be disabled by setting the DisplaySeriesContextMenu property to false.
+This context menu can be disabled by setting the DisplaySeriesContextMenu property to false.
 
 ### Legend Context Menu
 
@@ -656,20 +629,17 @@ This feature lets you position the mouse pointer at a specific data point in a s
 
 Interactive Cursor can be implemented by creating an instance of ChartInteractiveCursor with the ChartSeries as its input. Then add the instance to the InteractiveCursors collection as shown below. 
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 // Create a new instance of the ChartInteractiveCursor class and initialize chart series into it.
 
 ChartInteractiveCursor cursor1 = new ChartInteractiveCursor(this.chartControl1.Series[0]);
 
-
-
 // Add the instance to the ChartInteractive Cursor collection.
 
 this.chartControl1.ChartArea.InteractiveCursors.Add(cursor1));
-
-
 
 //Color of the pointer
 
@@ -677,19 +647,15 @@ cursor1.Color = Color.Red;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Create a new instance of the ChartInteractiveCursor class and initialize chart series into it.
 
 ChartInteractiveCursor cursor1 = New ChartInteractiveCursor(Me.chartControl1.Series(0))
 
-
-
 ' Add the instance to the ChartInteractive Cursor collection.
 
 Me.chartControl1.ChartArea.InteractiveCursors.Add(cursor1))
-
-
 
 'Color of the pointer
 
@@ -700,24 +666,17 @@ cursor1.Color = Color.Red
 
 ![](Runtime-Features_images/Runtime-Features_img18.jpeg)
 
-
 ### Chart AutoHighlight 
 
 The points or the series of the chart can be highlighted when the mouse hovers over them. Use the AutoHighlight property to enable this feature.
 
-
-
 ![](Runtime-Features_images/Runtime-Features_img19.jpeg)
-
-
 
 ### Chart Series Highlighting
 
 You can also highlight a particular chart series alone while mouse hovering, and make the other series transparent. For this, you need to set SeriesHighlight property to _true_. The series can also be highlighted by hovering the mouse over a legend item corresponding to a particular series.
 
 The following table describes properties related to this feature.
-
-
 
 <table>
 <tr>
@@ -738,12 +697,11 @@ SeriesHighlightIndex</td><td>
 If you want to highlight only a particular series alone, you need to set the index value for this property. The default value is {{ '_-1_' | markdownify }}.</td></tr>
 </table>
 
-
 N> The AutoHighlight property should be disabled to enable this chart series highlighting feature.
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 this.chartControl1.SeriesHighlight = true;
 
@@ -755,7 +713,7 @@ this.chartControl1.Series[0].Style.HiddenInterior = new BrushInfo(0, bi);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.SeriesHighlight = True
 
@@ -781,7 +739,6 @@ The purpose of using Chart Interactive Cursor is to indicate the x-axis and y-ax
 The following screen shot shows the Interactive cursor, which is drawn in horizontal orientation:
 
 ![](Runtime-Features_images/Runtime-Features_img22.png)
-
 
 _Properties_
 
@@ -822,8 +779,9 @@ To add Interactive Cursor to the Chart control:
 
 Refer to the following code snippets to draw the interactive cursor separately.
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 cursor1 = new ChartInteractiveCursor(this.chartControl1.Series[0]);
 
@@ -835,104 +793,97 @@ cursor1.HorizontalCursorColor = Color.Red;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 cursor1 = New ChartInteractiveCursor(Me.chartControl1.Series(0))
 
-      Me.chartControl1.ChartArea.InteractiveCursors.Add(cursor1)
+Me.chartControl1.ChartArea.InteractiveCursors.Add(cursor1)
 
-      cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal
+cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal
 
-      cursor1.HorizontalCursorColor = Color.Red
+cursor1.HorizontalCursorColor = Color.Red
 
 {% endhighlight %}
 {% endtabs %}
-
 
 The interactive cursor as described earlier can be set in three different orientations. 
 
 To draw the interactive cursor in horizontal orientation, you need to set the cursor orientation to “Horizontal” as shown in the following code snippets:
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-      cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal
+cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal
 
 {% endhighlight %}
 {% endtabs %}
-
 
 The same step is repeated for “vertical” and “both” cursor orientations except for the naming “Vertical” and “Both” respectively.
 
 You can also add color(s) to individual interactive cursor. The default color (base color) is Red. You can change the default color by using Color, HorizontalCursorColor, and VerticalCursorColor properties. When you use the Color property, the interactive cursor will be drawn based on the color specified by the Color property (assuming this as base/parent color) regardless of the colors specified for Horizontal and Vertical cursor orientations. This is shown in the following code snippets:
 
-
 {% tabs %}  {% highlight c# %}
 
-      cursor1.CursorOrientation = InteractiveCursorOrientation.Both ;
+cursor1.CursorOrientation = InteractiveCursorOrientation.Both ;
 
-      cursor1.Color = Color.Blue;
+cursor1.Color = Color.Blue;
 
-      cursor1.VerticalCursorColor = Color.Green;
+cursor1.VerticalCursorColor = Color.Green;
 
 cursor1.HorizontalCursorColor = Color.Red;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-       cursor1.CursorOrientation = InteractiveCursorOrientation.Both
+cursor1.CursorOrientation = InteractiveCursorOrientation.Both
 
-       cursor1.Color = Color.Blue
+cursor1.Color = Color.Blue
 
-       cursor1.VerticalCursorColor = Color.Green
+cursor1.VerticalCursorColor = Color.Green
 
-       cursor1.HorizontalCursorColor = Color.Red
+cursor1.HorizontalCursorColor = Color.Red
 
 {% endhighlight %}
 {% endtabs %}
-
 
 Now, the default color would be replaced with blue color at both the orientations as it is the parent color.
 
-
-
 ![](Runtime-Features_images/Runtime-Features_img23.png)
-
 
 The following code snippets draw interactive cursor in different colors:
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
-      cursor1.CursorOrientation = InteractiveCursorOrientation.Both ;
+cursor1.CursorOrientation = InteractiveCursorOrientation.Both ;
 
-      cursor1.VerticalCursorColor = Color.Green;
+cursor1.VerticalCursorColor = Color.Green;
 
 cursor1.HorizontalCursorColor = Color.Red;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-       cursor1.CursorOrientation = InteractiveCursorOrientation.Both
+cursor1.CursorOrientation = InteractiveCursorOrientation.Both
 
-       cursor1.VerticalCursorColor = Color.Green
+cursor1.VerticalCursorColor = Color.Green
 
-       cursor1.HorizontalCursorColor = Color.Red
+cursor1.HorizontalCursorColor = Color.Red
 
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](Runtime-Features_images/Runtime-Features_img24.png)
-
 
 ### ChartInteractiveCursor Support for Chart Area
 
@@ -997,7 +948,6 @@ Server Side</td><td>
 Void </td></tr>
 </table>
 
-
 ### Existing Features
 
 We can move the interactive cursor for series points only (i.e., the interactive cursor can be moved from one data point to another by dragging). Users cannot move the interactive cursor over the whole chart area.
@@ -1006,14 +956,15 @@ We can move the interactive cursor for series points only (i.e., the interactive
 
 We can enable this feature by setting the MoveToChartArea property of the interactive cursor to true. The default value is false.
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
- this.chartControl1.ChartArea.InteractiveCursors[0].MoveToChartArea = true;
+this.chartControl1.ChartArea.InteractiveCursors[0].MoveToChartArea = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.ChartArea.InteractiveCursors(0).MoveToChartArea = True
 
@@ -1032,26 +983,26 @@ The cursor on the y-axis can be moved from top to bottom or bottom to top based 
 
 Symbols will be displayed when the interactive cursor meets the series point in the chart area by dragging.
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
- this.chartControl1.ChartArea.InteractiveCursors[0].XInterval = 2;
+this.chartControl1.ChartArea.InteractiveCursors[0].XInterval = 2;
 
- this.chartControl1.ChartArea.InteractiveCursors[0].YInterval = 50;
+this.chartControl1.ChartArea.InteractiveCursors[0].YInterval = 50;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-  Me.chartControl1.ChartArea.InteractiveCursors(0).XInterval = 2
+Me.chartControl1.ChartArea.InteractiveCursors(0).XInterval = 2
 
-  Me.chartControl1.ChartArea.InteractiveCursors(0).YInterval = 50
+Me.chartControl1.ChartArea.InteractiveCursors(0).YInterval = 50
 
 {% endhighlight %}
 {% endtabs %}
 
 ![C:/Users/sivakumard/Desktop/Symbols.PNG](Runtime-Features_images/Runtime-Features_img25.png)
-
 
 ## ToolTips
 
@@ -1065,7 +1016,6 @@ N> The ShowToolTips property in the chart is false by default, so remember to tu
 
 Tooltips can be shown on each data point when the mouse hovers on them. The format of the tooltip is specified by the following property in ChartSeries.
 
-
 <table>
 <tr>
 <th>
@@ -1077,36 +1027,32 @@ PointsToolTipFormat</td><td>
 Specifies the format for the datapoint tooltips. The following place-holders can be used in the value.{0} - Will be replaced by the corresponding ChartSeries.Name.{1} - Will be replaced by the corresponding ChartSeries.Style.ToolTip.{2} - Will be replaced by the corresponding data point's tooltip, for example to set the first point's tooltip, use "series1.Styles[0].ToolTip".{3} - Will be replaced by the corresponding X value of the point.{4} - Will be replaced by the corresponding Y value of the point. Default setting.{5} - Will be replaced by the 2nd Y value, if any.{6} - and so on.</td></tr>
 </table>
 
+{% tabs %}  
 
-
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 series1.PointsToolTipFormat = "Sales:{4}K";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 series1.PointsToolTipFormat = "Sales:{4}K"
 
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](Runtime-Features_images/Runtime-Features_img27.jpeg)
-
-
 
 You can also customize the tooltip for individual data points by setting the ToolTip style for each data point. This is best accomplished by listening to the ChartSeries.PrepareStyle event as shown below.
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Setting the Tooltip Format
 
 series1.PointsToolTipFormat = "{2}"; 
-
-
 
 protected void series1_PrepareStyle(object sender, ChartPrepareStyleInfoEventArgs args)
 
@@ -1130,17 +1076,13 @@ protected void series1_PrepareStyle(object sender, ChartPrepareStyleInfoEventArg
 
 }
 
-
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Setting the Tooltip Format
 
 series1.PointsToolTipFormat = "{2}"
-
-
 
 Protected Sub series1_PrepareStyle(ByVal sender As Object, ByVal args As ChartPrepareStyleInfoEventArgs)
 
@@ -1163,9 +1105,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](Runtime-Features_images/Runtime-Features_img28.jpeg)
-
 
 ### Chart Area Tooltip
 
@@ -1246,8 +1186,9 @@ Visible</td><td>
 Turns on/off fancy tooltips.</td></tr>
 </table>
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 series1.FancyToolTip.Visible = true;
 
@@ -1255,7 +1196,7 @@ series1.FancyToolTip.Alignment = TabAlignment.Top;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 series1.FancyToolTip.Visible = True
 
@@ -1266,10 +1207,362 @@ series1.FancyToolTip.Alignment = TabAlignment.Top
 
 ![](Runtime-Features_images/Runtime-Features_img29.jpeg)
 
-
-
 {% seealso %}
 
 [How to display tooltip over Histogram Chart columns](/windowsforms/chart/faq/How-to-display-custom-tooltip-over-Histogram-Chart)
 
 {% endseealso %}
+
+## Trackball
+
+The [ChartTrackball](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball.html)  displays information about the data point close to the current mouse position. The closest point can also be highlighted with a symbol or marker. The x values of an axis are determined from the position of the vertical line of the axis, and y values are determined from the points touching the vertical line in the series.
+
+### Properties
+
+The following properties are used to customize the appearance of [trackball](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Trackball.html).
+
+<table>
+<tr>
+<th>
+Property 
+</th>
+<th>
+Description
+</th>
+<th>
+Type
+</th>
+</tr>
+<tr>
+<td>
+
+{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html)'| markdownify }}
+
+</td>
+<td>
+Specifies whether the {{'[trackball](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Trackball.html)'| markdownify }} should be visible or not.
+</td> 
+<td>
+bool
+</td>
+</tr>
+<tr>
+<td>
+{{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}
+</td>
+<td>
+You can customize the border, text color, text format, corner radius, font, etc. of a tooltip using the {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties. 
+
+This customization will be applied to all the horizontal {{'[ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html)'| markdownify }}.
+</td>
+<td>
+{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[DisplayMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~DisplayMode.html)'| markdownify }}
+</td>
+<td>
+Specifies whether single trackball tooltip should be displayed for all {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} or each series should have its own trackball tooltip.
+
+The following two options can be set to this property,
+
+•	Float
+•	Group
+</td>
+<td>
+{{'[TrackballTooltipDisplayMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltipDisplayMode.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }}
+</td>
+<td>
+The {{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }} property is used to hold the pen information to draw tracker line. 
+</td>
+<td>
+{{'[ChartLineInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Symbol.html)'| markdownify }}
+</td>
+<td>
+Provides options to customize the trackball symbols, which are used to highlight the data points. 
+
+You can customize the {{'[Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Shape.html)'| markdownify }}, and {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html)'| markdownify }}, and  {{'[Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Color.html)'| markdownify }} of a symbol to be highlighted using this instance.
+</td>
+<td>
+{{'[ChartSymbolInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[ToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Tooltip.html)'| markdownify }}
+</td>
+<td>
+You can customize the border, text color, text format, font, corner radius, etc. of a trackball tooltip using the  {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties. 
+
+This customization will be applied to all the {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} added in {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} 
+</td>
+<td>
+{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
+</td>
+</tr>
+</table>
+
+### Events
+
+The following events are used to customize the appearance of [AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html) and [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) tooltip individually before rendering them.
+
+<table>
+<tr>
+<th>
+Property 
+</th>
+<th>
+Description 
+</th>
+<th>
+Type 
+</th>
+</tr>
+<tr>
+<td>
+
+{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~AxisTooltipRendering_EV.html)'| markdownify }}
+</td>
+<td>
+This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }}  can be customized using this event.
+</td> 
+<td>
+{{'[AxisTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.AxisTooltipRenderingEventHandler.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[TrackballTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~TrackballTooltipRendering_EV.html)'| markdownify }}
+</td>
+<td>
+This event is triggered once for each series. The appearance of individual {{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }} of {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} can be customized using this event.
+</td> 
+<td>
+{{'[TrackballTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltipRenderingEventHandler.html)'| markdownify }}
+</td>
+</tr>
+</table>
+
+{% tabs %}  
+
+{% highlight c# %}
+
+this.chartControl1.Trackball.Visible = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.Trackball.Visible = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Runtime-Features_images/trackball.jpg)
+
+### Customize trackball marker and trackball line
+ 
+Visibility, shape, size, and border of a trackball marker can be customized by using the  [Visibility](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html), [Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Symbol.html), [Size](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Size.html), [Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html) of the trackball marker. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a trackball line can be customized by using the line option in the crosshair.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+this.chartControl1.Trackball.Visible = true;
+
+this.chartControl1.Trackball.Line.Color = Color.FromArgb(128, 0, 0);
+
+this.chartControl1.Trackball.Line.Width = 3;
+
+this.chartControl1.Trackball.Symbol.Shape = ChartSymbolShape.Pentagon;
+
+this.chartControl1.Trackball.Symbol.Border.Width = 5;
+
+this.chartControl1.Trackball.Symbol.Border.Color = Color.White;
+
+this.chartControl1.Trackball.Symbol.Size = new Size(20, 20);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chartControl1.Trackball.Visible = True
+
+chartControl1.Trackball.Line.Color = Color.FromArgb(128, 0, 0)
+
+chartControl1.Trackball.Line.Width = 3
+
+chartControl1.Trackball.Symbol.Shape = ChartSymbolShape.Pentagon
+
+chartControl1.Trackball.Symbol.Border.Width = 5
+
+chartControl1.Trackball.Symbol.Border.Color = Color.White
+
+chartControl1.Trackball.Symbol.Size = New Size(20, 20)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Runtime-Features_images/trackball1.jpg)
+
+## Crosshair
+
+The [ChartCrossHair](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair.html) behavior is used to view the values at mouse point or touch contact point. By hovering the mouse over the chart or taping the chart area, the corresponding value will be displayed as tooltip in the axis.
+
+### Properties
+
+The following properties are used to customize the appearance of [crosshair](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Crosshair.html).
+
+<table>
+<tr>
+<th>
+Property 
+</th>
+<th>
+Description 
+</th>
+<th>
+Type 
+</th>
+</tr>
+<tr>
+<td>
+
+{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html)'| markdownify }}
+</td>
+<td>
+Specifies whether the {{'[crosshair](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Crosshair.html)'| markdownify }} should be visible or not.
+</td> 
+<td>
+bool
+</td>
+</tr>
+<tr>
+<td>
+{{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}
+</td>
+<td>
+Provides options to customize the border, text color, text format, corner radius, font, etc. of an axis tooltip using the {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc of the axis tooltip. 
+
+This customization will be applied to all the {{'[ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html)'| markdownify }}.
+</td>
+<td>
+{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }}
+</td>
+<td>
+This property holds the pen information to draw tracker line. 
+</td>
+<td>
+{{'[ChartLineInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo.html)'| markdownify }}
+</td>
+</tr>
+</table>
+
+### Events
+
+The following event is used to customize the appearance of [AxisTooltip]({{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}).
+
+<table>
+<tr>
+<th>
+Property 
+</th>
+<th>
+Description 
+</th>
+<th>
+Type 
+</th>
+</tr>
+<tr>
+<td>
+
+{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~AxisTooltipRendering_EV.html)'| markdownify }} 
+</td>
+<td>
+This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} can be customized using this event.
+</td> 
+<td>
+{{'[AxisTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.AxisTooltipRenderingEventHandler.html)'| markdownify }}
+</td>
+</tr>
+</table>
+
+{% tabs %}  
+
+{% highlight c# %}
+
+this.chartControl1.Crosshair.Visible = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.Crosshair.Visible = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Runtime-Features_images/crosshair.jpg)
+
+### Customize the crosshair line and crosshair label
+
+The fill and border options of the crosshairLabel are used to customize the background color and border of the crosshair label, respectively. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a crosshair line can be customized by using the line option of the crosshair.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+this.chartControl1.Crosshair.AxisTooltip.Border = new ChartLineInfo();
+
+this.chartControl1.Crosshair.AxisTooltip.Border.Color = Color.Green;
+
+this.chartControl1.Crosshair.AxisTooltip.Border.Width = 3;
+
+this.chartControl1.Crosshair.Line.Color = Color.Gray;
+
+this.chartControl1.Crosshair.Line.Width = 3;
+
+this.chartControl1.Crosshair.AxisTooltip.Interior = new BrushInfo(Color.Red);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chartControl1.Crosshair.AxisTooltip.Border = New ChartLineInfo()
+
+chartControl1.Crosshair.AxisTooltip.Border.Color = Color.Green
+
+chartControl1.Crosshair.AxisTooltip.Border.Width = 3
+
+chartControl1.Crosshair.Line.Color = Color.Gray
+
+chartControl1.Crosshair.Line.Width = 3
+
+chartControl1.Crosshair.AxisTooltip.Interior = New BrushInfo(Color.Red)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Runtime-Features_images/crosshair1.jpg)

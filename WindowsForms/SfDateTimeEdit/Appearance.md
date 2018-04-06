@@ -23,7 +23,6 @@ The BackColor, ForeColor, and BorderColor of the control can be customized by us
 * FocusedBorderColor: Changes the border color of DateTimeEdit in focused state.
 * HoverBorderColor: Changes the border color of DateTimeEdit on mouse hover.
 
-The following code snippets illustrates the customization:
 
 {% tabs %}
 
@@ -86,14 +85,12 @@ Me.dateTimeEdit.ShowDropDown = false
 
 ![](appearance-images/showdropdown.png)
 
-## Customize updown appearance
+## Customize up-down appearance
 
-The ForeColor of updown icon in the `SfDateTimeEdit` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
+The ForeColor of up-down icon in the `SfDateTimeEdit` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
 
 * UpDownForeColor: Changes the foreground color of up-down icon in the DateTimeEdit.
 * UpDownHoverForeColor: Changes the foreground color of up-down icon on mouse hover.
-
-The following code snippets illustrates the same:
 
 {% tabs %}
 
@@ -179,7 +176,7 @@ dateTimeEdit.MonthCalendar.ShowFooter = false
 
 ## Drop-down calendar size customization
 
-The size of the drop-down calendar can be customized by using the `DropDownSize` property. The following code snippets illustrates the same:
+The size of the drop-down calendar can be customized by using the `DropDownSize` property.
 
 {% tabs %}
 

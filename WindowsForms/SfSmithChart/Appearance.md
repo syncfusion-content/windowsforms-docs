@@ -10,7 +10,7 @@ documentation: ug
 
 ## Chart palette
 
-The Smith chart displays different series in different colors by using the [Palette](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartColorModel.html#Syncfusion_WinForms_SmithChart_ChartColorModel_Palette) property of ColorModel. By default, the Metro palette is applied to the chart.
+The Smith chart displays different series in different colors by using the [`Palette`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartColorModel~Palette.html) property of ColorModel. By default, the Metro palette is applied to the chart.
 
 {% tabs %}
 
@@ -33,7 +33,7 @@ sfSmithChart1.ColorModel.Palette = ChartColorPalette.Nature
 
 ## Series palette
 
-The palette color to each data points of specific series can be defined by using [Palette](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartColorModel.html#Syncfusion_WinForms_SmithChart_ChartColorModel_Palette) property of ColorModel in the Series.
+The palette color to each data points of specific series can be defined by using [`Palette`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartColorModel~Palette.html) property of ColorModel in the Series.
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ sfSmithChart1.Series.Add(series)
 
 ## Chart area customization
 
-Chart and chart area (circle plotting area) can be customized by using the [BackColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.SfSmithChart.html#Syncfusion_WinForms_SmithChart_SfSmithChart_BackColor), [ChartAreaBorderColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartStyle.html#Syncfusion_WinForms_SmithChart_ChartStyle_ChartAreaBorderColor), [ChartAreaBackColor](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartStyle.html#Syncfusion_WinForms_SmithChart_ChartStyle_ChartAreaBackColor), [ChartAreaBorderWidth](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.ChartStyle.html#Syncfusion_WinForms_SmithChart_ChartStyle_ChartAreaBorderWidth) properties in Smith chart.
+Chart and chart area (circle plotting area) can be customized by using the [`BackColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartStyle~BackColor.html), [`ChartAreaBorderColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartStyle~ChartAreaBorderColor.html), [`ChartAreaBackColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartStyle~ChartAreaBackColor.html), [`ChartAreaBorderWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartStyle~ChartAreaBorderWidth.html) properties in Smith chart.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ sfSmithChart1.Style.ChartAreaBorderWidth = 2
 
 ## Circle radius
 
-To change the diameter of the Smith chart’s circle with respect to the plot area, use the [Radius](http://172.16.0.145:8124/Syncfusion.SfSmithChart.WinForms/api/Syncfusion.WinForms.SmithChart.SfSmithChart.html#Syncfusion_WinForms_SmithChart_SfSmithChart_Radius) property. It ranges from 0.1 to 1, and the default value is 0.95.
+To change the diameter of the Smith chart’s circle with respect to the plot area, use the [`Radius`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.SfSmithChart~Radius.html) property. It ranges from 0.1 to 1, and the default value is 0.95.
 
 {% tabs %}
 

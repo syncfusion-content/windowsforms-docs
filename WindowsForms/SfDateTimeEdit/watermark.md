@@ -41,7 +41,7 @@ dateTimeEdit.Value = Nothing
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![](watermark-images/nullvalue.png)
 
@@ -79,6 +79,6 @@ dateTimeEdit.Watermark = "Choose a date"
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![](watermark-images/watermark.png)

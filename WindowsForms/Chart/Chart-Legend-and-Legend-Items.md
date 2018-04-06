@@ -11,11 +11,7 @@ documentation: ug
 
 Essential Chart by default displays a legend with information on each series that has been plotted on the chart.
 
-
-
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg)
-
-
 
 1. Legend - The rectangular region that lists one or more legend items.
 2. Legend Item - Represented by an icon or image and a text; this usually gets rendered automatically corresponding to each ChartSeries in the chart. You can also add custom legend items to a Legend.
@@ -31,7 +27,9 @@ The legend is represented by the ChartLegend type.
 
 By default, a custom ChartLegend instance gets added to the Legends list in the control. You can access this default legend as follows. 
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Changing the position of the default legend
 
@@ -39,7 +37,7 @@ this.chartControl1.Legends[0].LegendPosition = Syncfusion.Windows.Forms.Chart.Ch
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Changing the position of the default legend
 
@@ -48,12 +46,13 @@ Me.chartControl1.Legends[0].LegendPosition = Syncfusion.Windows.Forms.Chart.Char
 {% endhighlight %}
 {% endtabs %}
 
-
 ### Adding Custom Legends
 
 You can add custom legends to the chart through the Legends list as follows:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Changing the position of the default legend
 
@@ -65,7 +64,7 @@ chartControl1.Legends.Add(legend2);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim legend2 As New ChartLegend()
 
@@ -80,7 +79,9 @@ You can then add custom legend items into the ChartLegend through the CustomItem
 
 You can also associate a ChartSeries to a custom ChartLegend as follows (then the legend item corresponding to that series will be rendered within the specified legend):
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Associate legend1with series1
 
@@ -92,7 +93,7 @@ series[1].LegendName = "legend2";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Associate legend1with series1
 
@@ -158,7 +159,6 @@ BackgroundImageLayout</td><td>
 Sets the layout for the background image.</td></tr>
 </table>
 
-
 ### Legend Positioning
 
 The legend positioning can be affected in the following ways.
@@ -217,8 +217,6 @@ N> These settings will be lost when the application is closed.
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img4.jpeg)
 
-
-
 {% seealso %}
 
 [ChartLegend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend)
@@ -235,7 +233,9 @@ Every ChartSeries in the chart control has a ChartLegendItem associated with it.
 
 But, if you want to get that associated with a custom ChartLegend, use the LegendName to specify that chart legend as follows:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Specifies the custom ChartLegend with which this series' legend item should be associated with
 
@@ -243,7 +243,7 @@ series1.LegendName = "MyLegend";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Specifies the custom ChartLegend with which this series' legend item should be associated with
 
@@ -256,11 +256,11 @@ series1.LegendName = "MyLegend"
 
 To add your own custom legend items to a legend, use the CustomItems property in the ChartLegend as follows.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Adding some custom items into the 2nd custom Legend
-
-
 
 ChartLegendItem legendItem1 = new ChartLegendItem();
 
@@ -272,17 +272,13 @@ legendItem1.ItemStyle.Symbol.Color = Color.Blue;
 
 legendItem1.Text = "Legend Item";
 
-
-
 this.chartControl1.Legends[1].CustomItems = new ChartLegendItem[] { legendItem1};
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Adding some custom items into the 2nd custom Legend
-
-
 
 Dim legendItem1 As New ChartLegendItem()
 
@@ -294,8 +290,6 @@ legendItem1.ItemStyle.Symbol.Color = Color.Blue
 
 legendItem1.Text = "Legend Item"
 
-
-
 'Adding the custom Legend item to the chart
 
 Me.chartControl1.Legends[1].CustomItems = New ChartLegendItem() {legendItem1}
@@ -305,14 +299,15 @@ Me.chartControl1.Legends[1].CustomItems = New ChartLegendItem() {legendItem1}
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img5.jpeg)
 
-
 ### Customizing items through event
 
 There is also a way to specify custom legend item via events right before they get rendered. 
 
 In this example, we reverse the order in which the legend items are rendered through the FilterItems event.
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 private void Legend_FilterItems(object sender, ChartLegendFilterItemsEventArgs e)
 
@@ -330,10 +325,9 @@ private void Legend_FilterItems(object sender, ChartLegendFilterItemsEventArgs e
 
 }
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Legend_FilterItems(ByVal sender As Object, ByVal e As ChartLegendFilterItemsEventArgs) 
 
@@ -356,13 +350,11 @@ End Sub
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img6.jpeg)
 
-
 ### Legend Item's Look and Feel
 
 The legend item's look and feel can be customized to a good extent using the following properties in ChartLegend. 
 
 These settings affect all the items in the legend.
-
 
 <table>
 <tr>
@@ -418,7 +410,6 @@ Specifies the color of the title text.</td></tr>
 TextAlignment</td><td>
 Specifies the horizontal alignment of the title text. Possible Values:Center (Default value)FarNear</td></tr>
 </table>
-
 
 _Legend Item Properties_
 
@@ -539,16 +530,9 @@ Visible</td><td>
 Lets you show / hide the legend item.</td></tr>
 </table>
 
-
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img7.jpeg)
 
-
-
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg)
-
-
-
-
 
 {% seealso %}
 
@@ -624,20 +608,21 @@ If ShowSymbol is false, you can customize the type of icon that gets rendered in
 If set to false, no icons will be rendered. This overrides most of the other settings including ShowSymbol.</td></tr>
 </table>
 
-
 ### Series Type Icon
 
 An icon representing the series type can be rendered in the legend. 
 
 To do this for all the legend items:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesType;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesType
 
@@ -646,10 +631,11 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Serie
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img9.jpeg)
 
-
 To do this for specific legend items,
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // The general setting affecting all Legend items could be anything
 
@@ -657,7 +643,7 @@ this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Ser
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 // This will force a specific legend item to show a series icon
 
@@ -666,8 +652,6 @@ this.chartControl1.Legend.Items[0].DrawSeriesIcon = true;
 'The general setting affecting all Legend items could be anything
 
 Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.SeriesImage
-
-
 
 'This will force a specific legend item to show a series icon
 
@@ -682,7 +666,9 @@ You can also choose to show the exact same symbol that is shown in the data poin
 
 To do this for all the legend items:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 //Set symbol for first series
 
@@ -692,13 +678,9 @@ this.chartControl1.Series[0].Style.Symbol.Color = Color.Red ;
 
 this.chartControl1.Series[0].Style.Symbol.Size = new Size(7, 7);
 
-
-
 //This will cause the legend to render with the same symbol defined above.
 
 this.chartControl1.Legend.ShowSymbol = true;
-
-
 
 //Setting RepresentationType to None to hide other representations
 
@@ -706,7 +688,7 @@ this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Non
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set symbol for first series
 
@@ -716,13 +698,9 @@ Me.chartControl1.Series(0).Style.Symbol.Color = Color.Red
 
 Me.chartControl1.Series(10).Style.Symbol.Size = New Size(7, 7)
 
-
-
 'This will cause the legend to render with the same symbol defined above.
 
 Me.chartControl1.Legend.ShowSymbol = True
-
-
 
 'Setting RepresentationType to None to hide other representations
 
@@ -733,14 +711,15 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img10.jpeg)
 
-
 ### Custom Representation Icon
 
 You can also choose to use one of the built-in representation icons in the legend items.
 
 To do this for all the legend items:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Diamond;
 // To specify a custom color for the interior of the icon
@@ -749,7 +728,7 @@ this.chartControl1.Legend.Items[0].Interior = new BrushInfo(Color.Violet);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Diamond
 
@@ -762,16 +741,15 @@ Me.chartControl1.Legend.Items(0).Interior = New BrushInfo(Color.Violet)
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img11.jpeg)
 
-
-
 To do the above only on specific legend items, use the ChartLegendItem.Type property.
 
 #### More Symbol Shapes
 
 ChartLegendItem has the Symbol property, using which we can customize the symbols for particular legend items. This setting overrides the Series [0].Style.Symbol settings. 
 
+{% tabs %}  
 
-{% tabs %}  {% highlight c# %}
+{% highlight c# %}
 
 //Series symbol settings
 
@@ -781,8 +759,6 @@ chartControl1.Series[0].Style.Symbol.Shape = ChartSymbolShape.Diamond;
 
 chartControl1.Series[0].Style.Symbol.Color = Color.AliceBlue;
 
-
-
 //the above symbol settings is overridden by the following settings
 
 chartControl1.Legend.Items[0].Symbol.Shape = ChartSymbolShape.Triangle;
@@ -791,7 +767,7 @@ chartControl1.Legend.Items[0].Symbol.Color = Color.Yellow;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Series symbol settings
 
@@ -800,8 +776,6 @@ chartControl1.Legend.ShowSymbol = True
 chartControl1.Series(0).Style.Symbol.Shape = ChartSymbolShape.Diamond
 
 chartControl1.Series(0).Style.Symbol.Color = Color.AliceBlue
-
-
 
 'the above symbol settings is overridden by the following settings
 
@@ -814,13 +788,13 @@ chartControl1.Legend.Items[0].Symbol.Color = Color.Yellow
 
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img12.jpeg)
 
-
-
 ### Custom Images
 
 You can also choose to show custom images in the legend items as follows:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 // Setting the representation type for the Legend items
 
@@ -834,15 +808,13 @@ this.chartControl1.Legend.Items[0].ImageIndex = 0;
 
 series1.Style.Images = new ChartImageCollection(this.imageList1.Images);
 
-
-
 // Or from this collection, if available
 
 this.chartControl1.Legend.Items[0].ImageList = new ChartImageCollection(this.imageList1.Images);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Setting the representation type for the Legend items
 
@@ -852,13 +824,9 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Serie
 
 Me.chartControl1.Legend.Items(0).ImageIndex = 0
 
-
-
 ' The image will be picked up from this collection
 
 series1.Style.Images = New ChartImageCollection(Me.imageList1.Images)
-
-
 
 ' Or from this collection, if available
 
@@ -867,29 +835,23 @@ Me.chartControl1.Legend.Items(0).ImageList = New ChartImageCollection(this.image
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg)
-
 
 ### Hiding Icons
 
 Icons for legend items can be hidden in any of the following ways:
 
-{% tabs %}  {% highlight c# %}
+{% tabs %}  
+
+{% highlight c# %}
 
 this.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None;
 
-
-
 // To do this for a specific legend item:
-
-
 
 // This will not even allocate any space for the icons
 
 this.chartControl1.Legend.Items[0].ShowIcon = false;
-
-
 
 // Or, set this. This will not render the icons, but will allocate some empty space for it
 
@@ -897,21 +859,15 @@ this.chartControl1.Legend.Items[0].Type = ChartLegendItemType.None;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None
 
-
-
 'To do this for a specific legend item
-
-
 
 'This will not even allocate any space for the icons
 
 Me.chartControl1.Legend.Items(0).ShowIcon = False
-
-
 
 'Or, set this. This will not render the icons, but will allocate some empty space for it
 
