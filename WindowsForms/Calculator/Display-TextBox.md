@@ -34,39 +34,29 @@ DoubleValue</td><td>
 Sets the value of the Calculator control as double value. The default value is zero. </td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.calculatorControl1.DisplayTextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-
 this.calculatorControl1.DoubleValue = 5;
-
 this.calculatorControl1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.calculatorControl1.DisplayTextAlign = System.Windows.Forms.HorizontalAlignment.Left
-
 Me.calculatorControl1.DoubleValue = 5
-
 Me.calculatorControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img113.jpeg) 
-
-
 
 ## TextBox Value
 
 The behavior of the TextBox value can be controlled using the below properties.
-
 
 <table>
 <tr>
@@ -87,44 +77,27 @@ UseUserOverride</td><td>
 Indicates whether the NumberFormatInfo used for formatting will use UseUserOverride parameter for CultureInfo.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.calculatorControl1.Culture = new System.Globalization.CultureInfo("en-US");
-
 this.calculatorControl1.RepeatAssignAction = true;
-
 this.calculatorControl1.UseUserOverride = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.calculatorControl1.Culture = New System.Globalization.CultureInfo("en-US")
-
 Me.calculatorControl1.RepeatAssignAction = True
-
 Me.calculatorControl1.UseUserOverride = True
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
 [How to customize the calculator display text area to use NumberGroupSeparator?](http://help.syncfusion.com/windowsforms/calculator/faq/how-to-customize-the-calculator-display-text-area-to-use-numbergroupseparator)
 
 {% endseealso %}
-
-
-
-
-
-
-
-
-
-
  

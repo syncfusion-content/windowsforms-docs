@@ -39,34 +39,27 @@ ForeColor</td><td>
 Sets the fore color for the text entered in the edit portion of the control.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //TextBox appearance properties. 
-
 this.comboBoxAdv1.TextBox.Text = "Simple text in ComboBoxAdv";
-
 this.comboBoxAdv1.TextBox.TextAlign = HorizontalAlignment.Center;
-
 this.comboBoxAdv1.TextBox.ForeColor = Color.Red;
 
 {% endhighlight %}
 
-
-
 {% highlight vbnet %}
 
 'TextBox appearance properties.   
-
 Me.comboBoxAdv1.TextBox.Text = "Simple text in ComboBoxAdv"
-
 Me.comboBoxAdv1.TextBox.TextAlign = HorizontalAlignment.Center
-
 Me.comboBoxAdv1.TextBox.ForeColor = Color.Red
 
 {% endhighlight %}
+{% endtabs %}
 
-### Text selection
+### Text Selection
 
 The selection of text during runtime can be controlled through the following properties.
 
@@ -90,30 +83,25 @@ SelectionStart</td><td>
 Sets the starting point of the text selection.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Text selection properties
-
 this.comboBoxAdv1.TextBox.SelectedText = "Combo";
-
 this.comboBoxAdv1.TextBox.SelectionLength = 5;
-
 this.comboBoxAdv1.TextBox.SelectionStart = 2;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Text selection properties
-
 Me.comboBoxAdv1.TextBox.SelectedText = "Combo"
-
 Me.comboBoxAdv1.TextBox.SelectionLength = 5
-
 Me.comboBoxAdv1.TextBox.SelectionStart = 2
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ReadOnly Settings
 
@@ -135,26 +123,23 @@ DropDownStyle</td><td>
 Specifies the dropdown style of the ComboBoxAdv control. Based on its options, it specifies whether the text in the control is editable or not. The styles are,Simple - The text portion is editable. The list portion is always visible.DropDown (default style) - The text portion is editable. Clicking the arrow button displays the list portion.DropDownList - The text portion is not editable. Clicking the arrow button displays the list portion.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Read only settings
-
 this.comboBoxAdv1.ReadOnly = true;
-
 this.comboBoxAdv1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Read only settings
-
 Me.comboBoxAdv1.ReadOnly = True
-
 Me.comboBoxAdv1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Behavior Settings
 
@@ -192,42 +177,31 @@ MaxLength</td><td>
 Specifies the maximum number of characters allowed in the edit portion of the ComboBoxAdv control. Default (32767).</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //TextBox behavior settings
-
 this.comboBoxAdv1.NumberOnly = true;
-
 this.comboBoxAdv1.CharacterCasing = CharacterCasing.Upper;
-
 this.comboBoxAdv1.TextBox.HideSelection = false;
-
 this.comboBoxAdv1.TextBox.WordWrap = true;
-
 this.comboBoxAdv1.AllowNewText = true;
-
 this.comboBoxAdv1.MaxLength = 32766;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'TextBox behavior settings
-
 Me.comboBoxAdv1.NumberOnly = True
-
 Me.comboBoxAdv1.CharacterCasing = CharacterCasing.Upper
-
 Me.comboBoxAdv1.TextBox.HideSelection = False
-
 Me.comboBoxAdv1.TextBox.WordWrap = True
-
 Me.comboBoxAdv1.AllowNewText = True
-
 Me.comboBoxAdv1.MaxLength = 32766
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Banner Text Support
 
@@ -267,34 +241,27 @@ Sorted</td><td>
 When set to true, it sorts the dropdown items in the alphabetical order.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //DropDown settings
-
 this.comboBoxAdv1.DropDownWidth = 200;
-
 this.comboBoxAdv1.IntegralHeight = true;
-
 this.comboBoxAdv1.MaxDropDownItems = 5;
-
 this.comboBoxAdv1.Sorted = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'DropDown settings
-
 Me.comboBoxAdv1.DropDownWidth = 200
-
 Me.comboBoxAdv1.IntegralHeight = True
-
 Me.comboBoxAdv1.MaxDropDownItems = 5
-
 Me.comboBoxAdv1.Sorted = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img300.png) 
 

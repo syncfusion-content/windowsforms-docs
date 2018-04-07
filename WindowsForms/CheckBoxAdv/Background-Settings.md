@@ -33,30 +33,23 @@ GradientEnd</td><td>
 Sets the end color of the gradient of the background of the CheckboxAdv.</td></tr>
 </table>
 
-
+{%tabs %}
 {% highlight c# %}
 
-
-
 this.checkBoxAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.CheckBoxAdvBackStyle.HorizontalGradient;
-
 this.checkBoxAdv1.GradientStart = System.Drawing.Color.Aqua;
-
 this.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.checkBoxAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.CheckBoxAdvBackStyle.HorizontalGradient
-
 Me.checkBoxAdv1.GradientStart = System.Drawing.Color.Aqua
-
 Me.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/Overview_img616.jpeg)
 
