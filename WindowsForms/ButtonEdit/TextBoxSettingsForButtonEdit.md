@@ -11,7 +11,6 @@ documentation: ug
 
 The default textbox within the ButtonEdit control can be replaced with any custom textbox like PercentTextBox, IntegerTextBox, and so on. The properties of Embedded textbox of a ButtonEdit control are discussed below.
 
-
 <table>
 <tr>
 <th>
@@ -31,30 +30,22 @@ SelectionStart</td><td>
 Sets the SelectionStart property of the ButtonEdit control which is same as the TextBoxBase.SelectionStart of the embedded TextBox. This property setting can be reset to default by calling ResetSelectionStart method.</td></tr>
 </table>
 
-
+{% tabs %}
 {%highlight c#%}
 
-
-
 this.buttonEdit1.SelectionLength = 1;
-
 this.buttonEdit1.SelectionStart = 3;
-
 this.buttonEdit1.ShowTexBox = true;
 
 {%endhighlight%}
 
-{%highlight vbnet%}
-
-
+{%highlight vb%}
 
 Me.buttonEdit1.SelectionLength = 1
-
 Me.buttonEdit1.SelectionStart = 3
-
 Me.buttonEdit1.ShowTexBox = True
 
 {%endhighlight%}
-
+{% endtabs %}
 
  N> To increase the height of the ButtonEdit control, make the text as multiline textbox.
