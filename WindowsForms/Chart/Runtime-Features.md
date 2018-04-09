@@ -1268,8 +1268,7 @@ Specifies whether single trackball tooltip should be displayed for all {{'[Chart
 
 The following two options can be set to this property,
 
-•	Float
-•	Group
+<ul><li>Float</li><li>Group</li></ul>
 </td>
 <td>
 {{'[TrackballTooltipDisplayMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltipDisplayMode.html)'| markdownify }}
@@ -1293,7 +1292,7 @@ The {{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncf
 <td>
 Provides options to customize the trackball symbols, which are used to highlight the data points. 
 
-You can customize the {{'[Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Shape.html)'| markdownify }}, and {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html)'| markdownify }}, and  {{'[Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Color.html)'| markdownify }} of a symbol to be highlighted using this instance.
+You can customize the {{'[Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Shape.html)'| markdownify }}, {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html)'| markdownify }}, and  {{'[Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Color.html)'| markdownify }} of a symbol to be highlighted using this instance.
 </td>
 <td>
 {{'[ChartSymbolInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo.html)'| markdownify }}
@@ -1375,7 +1374,7 @@ Me.chartControl1.Trackball.Visible = True
 
 ### Customize trackball marker and trackball line
  
-Visibility, shape, size, and border of a trackball marker can be customized by using the  [Visibility](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html), [Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Symbol.html), [Size](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Size.html), [Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html) of the trackball marker. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a trackball line can be customized by using the line option in the crosshair.
+Visibility, shape, size, and border of a trackball marker can be customized by using the  [Visibility](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html), [Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Symbol.html), [Size](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Size.html), [Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html) of the trackball marker. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a trackball line can be customized by using the [Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html) option in the crosshair.
 
 {% tabs %}  
 
@@ -1456,7 +1455,7 @@ bool
 {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}
 </td>
 <td>
-Provides options to customize the border, text color, text format, corner radius, font, etc. of an axis tooltip using the {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc of the axis tooltip. 
+Provides options to customize the border, text color, text format, corner radius, font, etc. of an axis tooltip using the {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties.
 
 This customization will be applied to all the {{'[ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html)'| markdownify }}.
 </td>
@@ -1479,7 +1478,7 @@ This property holds the pen information to draw tracker line.
 
 ### Events
 
-The following event is used to customize the appearance of [AxisTooltip]({{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}).
+The following event is used to customize the appearance of [AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html).
 
 <table>
 <tr>
@@ -1527,7 +1526,7 @@ Me.chartControl1.Crosshair.Visible = True
 
 ### Customize the crosshair line and crosshair label
 
-The fill and border options of the crosshairLabel are used to customize the background color and border of the crosshair label, respectively. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a crosshair line can be customized by using the line option of the crosshair.
+The fill and border options of the crosshairLabel are used to customize the background color and border of the crosshair label, respectively. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a crosshair line can be customized by using the [Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html) option of the crosshair.
 
 {% tabs %}  
 
