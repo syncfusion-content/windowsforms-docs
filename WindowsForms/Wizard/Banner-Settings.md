@@ -7,15 +7,15 @@ control: Wizard
 documentation: ug
 ---
 
-# Banner Settings
+# Banner settings
 
 The controls inside the Banner Control include Banner Panel, Title, description and a picture box. The section will walk you through the properties which customizes these controls.
 
-### Banner Panel
+### Banner panel
 
-A Banner Panel is a simple gradient panel which holds a Title label, a Description label and a Picture box controls. 
+A Banner Panel is a simple gradient panel which holds a Title label, a Description label and a Picture box controls.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -38,7 +38,9 @@ Sets the title of the current page.</td></tr>
 
 N> The Title and Description settings can be set for individual Wizard Pages using WizardPage.Title and WizardPage.Description properties respectively. See _Wizard Page Settings.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -56,7 +58,7 @@ this.gradientPanel1.Controls.Add(this.label2);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -74,17 +76,19 @@ Me.gradientPanel1.Controls.Add(Me.label2)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Package_images/Wizard-Package_img9.jpeg)
 
 
 
 N> The appearance of a Banner panel can be customized using the properties of the gradient panel. See_ Border styles _for border settings of a Banner Panel.
 
-### Layout of the Banner Controls
+### Layout of the banner controls
 
-The below properties controls the layout of the respective banner controls.
+The below properties control the layout of the respective banner controls.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -105,8 +109,9 @@ AutoLayoutTitle</td><td>
 When set to true, the title will be automatically laid out at a specific position, in the banner control. Setting false will not layout the title automatically.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -118,7 +123,7 @@ this.wizardControl1.AutoLayoutTitle = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -130,6 +135,8 @@ Me.wizardControl1.AutoLayoutTitle = True
 
 {% endhighlight %}
 
+{% endtabs %}
+
 {% seealso %}
 Border styles
 
@@ -140,11 +147,11 @@ Title and Description Settings
 
 
 
-### Title Text
+### Title text
 
 The font style and the fore color for the Title text can be edited through Label.Font and Label.Font property.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -164,9 +171,9 @@ Sets the fore color for the Page Title in the Wizard Control.</td></tr>
 
 ![](Wizard-Package_images/Wizard-Package_img11.jpeg)
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -178,7 +185,7 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -190,15 +197,17 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Package_images/Wizard-Package_img12.jpeg)
 
 
 
-#### Description Text
+#### Description text
 
 The appearance of the description text for a wizard control can be edited using the description label properties.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -218,9 +227,9 @@ Sets the fore color for the Page description in the Wizard Control.</td></tr>
 
 ![](Wizard-Package_images/Wizard-Package_img13.jpeg)
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -232,7 +241,7 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -244,6 +253,7 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Wizard-Package_images/Wizard-Package_img14.jpeg)
 

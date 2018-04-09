@@ -7,11 +7,11 @@ control: TileLayout
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-The TileLayout can be created through designer or code. The following sections describe this.
+The TileLayout can be created through designer or code.
 
-## Through Designer
+## Through designer
 
 To create TileLayout through designer.
 
@@ -49,7 +49,7 @@ To create TileLayout through designer.
 ![](Getting-Started_images/Getting-Started_img6.jpeg)
 
 
-## Through Code
+## Through code
 
 1) To create the TileLayout through C#, include the following namespace to the directives list.
 

@@ -7,9 +7,9 @@ control: Carousel
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-## Adding through Designer
+## Adding through designer
 
 Follow these steps to add the Carousel control to an application through Visual Studio:
 
@@ -17,18 +17,18 @@ Follow these steps to add the Carousel control to an application through Visual 
 
 2. Drag the Carousel control from the Toolbox tab to the designer. The Carousel control will be added.
   
-  ![](Getting-Started_images/1.png) 
+  ![](Getting-Started_images/1.png)
 
 3. Add items to the Carousel in either the Properties window or in the Smart Tags of the Carousel control.
   
-  ![](Getting-Started_images/2.png) 
+  ![](Getting-Started_images/2.png)
 
 
-## Adding through Code
+## Adding through code
 
-Syncfusion UI for Windows Forms can have added at runtime using C# / VB. The following steps helps to add required Essential Windows Forms control through code.
+Syncfusion UI for Windows Forms can have added at runtime using C#/VB. The following steps helps to add required Essential Windows Forms control through code.
 
-•	Create a Windows Forms project in Visual Studio and refer to the following assemblies. 
+•	Create a Windows Forms project in Visual Studio and refer to the following assemblies.
 
  o	Syncfusion.Tools.Base.dll
 
@@ -42,9 +42,11 @@ Syncfusion UI for Windows Forms can have added at runtime using C# / VB. The fol
 
  o	Syncfusion.Grid.Windows.dll
 
- o	Syncfusion.SpellChecker.Base 
+ o	Syncfusion.SpellChecker.Base
 
 • To add the Carousel control to an application through code, include the Windows Forms Tools namespace:
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -52,16 +54,19 @@ using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
+{% endtabs %}
 
 • Create an instance of the Carousel control and add it to the form as given in the following code:
 
-{% highlight C# %} 
+{% tabs %}
+
+{% highlight C# %}
 
  Syncfusion.Windows.Forms.Tools.Carousel carousel1;
 
@@ -71,7 +76,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Dim carousel1 As Syncfusion.Windows.Forms.Tools.Carousel
 
@@ -81,4 +86,4 @@ Me.Controls.Add(carousel1)
 
 {% endhighlight %}
 
-
+{% endtabs %}
