@@ -36,12 +36,12 @@ See {{ '[ButtonEdit](http://help.syncfusion.com/windowsforms/buttonedit/buttoned
 <td>
 CalculatorLayoutType</td><td>
 Specifies the LayoutType for the Calculator control. The layout types are,
-Financial (default) <br/>and WindowStandard<br/>.</td></tr>
+Financial (default) <br/>and WindowStandard.<br/></td></tr>
 <tr>
 <td>
 PopupCalculatorAlignment</td><td>
 It sets the alignment of the popup calculator with respect to the ButtonEdit control. The options are,
-Right(default) and <br/>Left<br/>.</td></tr>
+Right(default) and <br/>Left.<br/></td></tr>
 <tr>
 <td>
 CloseAction</td><td>
@@ -67,9 +67,9 @@ CalcSpecialBackspace.<br/></td></tr>
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
-
-
 
 this.currencyEdit1.CalculatorLayoutType = Syncfusion.Windows.Forms.Tools.CalculatorLayoutTypes.WindowsStandard;
 
@@ -85,13 +85,7 @@ this.currencyEdit1.TransferToCalculator = true;
 
 {% endhighlight %}
 
-
-
-
-
 {% highlight vbnet %}
-
-
 
 Me.currencyEdit1.CalculatorLayoutType = Syncfusion.Windows.Forms.Tools.CalculatorLayoutTypes.WindowsStandard
 
@@ -106,3 +100,5 @@ Me.currencyEdit1.TransferFromCalculator = True
 Me.currencyEdit1.TransferToCalculator = True
 
 {% endhighlight %}
+
+{% endtabs %}
