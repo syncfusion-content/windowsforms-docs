@@ -25,6 +25,8 @@ Specifies whether the CurrencyTextBox control uses XP themes, when BorderStyle i
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.ThemesEnabled = true;
@@ -36,6 +38,8 @@ this.currencyTextBox1.ThemesEnabled = true;
 Me.currencyTextBox1.ThemesEnabled = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img501.png) 
 
@@ -69,6 +73,8 @@ Specifies the color of the border when BorderStyle is FixedSingle.</td></tr>
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -92,6 +98,8 @@ Me.currencyTextBox1.BorderColor = System.Drawing.Color.Magenta
 Me.currencyTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img502.png) 
 
@@ -126,6 +134,8 @@ Specifies Fore color when the current value is Zero.</td></tr>
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.PositiveColor = System.Drawing.Color.Blue;
@@ -149,6 +159,8 @@ Me.currencyTextBox1.ReadOnlyBackColor = System.Drawing.Color.Linen
 Me.currencyTextBox1.ZeroColor = System.Drawing.Color.DarkOrange
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img503.png) 
 

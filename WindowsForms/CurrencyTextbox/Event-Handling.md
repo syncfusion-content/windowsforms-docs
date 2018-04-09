@@ -46,6 +46,8 @@ It can be handled to raise an alarm to user when invalid text is entered by them
 
 Sometimes there may occur situations for entering large values, like in Mega, Kilo etc., In such situations if we add some sort of keyboard support, it will be very much useful for the users. For example if we want to enter the value as multiples of thousand, we can use the following method.
 
+{% tabs %}
+
 {% highlight c# %}
 
 private void currencyTextBox1_KeyDown(object sender,KeyEventArgs e)
@@ -104,6 +106,8 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 So if the user wants to enter 32000, he just needs to enter 32 and then press  'K'. The value will change to 32000.
 
 ## Error Validation
@@ -112,6 +116,8 @@ When invalid text is entered by the user, we can handle ValidationError event 
 
 * Drag the CurrencyTextBox, ErrorProvider control and TextBox onto the form.
 * Handle ValidationError event of CurrencyTextBox.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -136,6 +142,8 @@ Private textBox1.Text = textBox1.Text & eventlogmessage
 Me.errorProvider1.SetError(CType(sender, Control), eventlogmessage)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img508.png) 
 
