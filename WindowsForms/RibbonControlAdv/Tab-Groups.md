@@ -31,6 +31,8 @@ RibbonControlAdv allows to create TabGroups using the **TabGroups** property ava
 
 ### Through Code
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.ribbonControlAdv1.TabGroups.Add(toolStripTabGroup3);
@@ -43,7 +45,7 @@ this.ribbonControlAdv1.TabGroups.SetTabGroup(pageLayoutTabItem, toolStripTabGrou
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.ribbonControlAdv1.TabGroups.Add(toolStripTabGroup3)
 
@@ -55,13 +57,17 @@ Me.ribbonControlAdv1.TabGroups.SetTabGroup(pageLayoutTabItem, toolStripTabGroup1
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Customization
 
 Using the Color property, the color for the tabs can be set. Text for the tabs can be specified through Name property and the tabs can be shown or hidden using Visible property.
 
 Programmatically these properties can be set using the below code snippets.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 toolStripTabGroup3.Color = System.Drawing.Color.DarkBlue;
 
@@ -72,7 +78,7 @@ toolStripTabGroup3.Visible = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 toolStripTabGroup3.Color = System.Drawing.Color.DarkBlue
 
@@ -81,3 +87,5 @@ toolStripTabGroup3.Name = "New Group"
 toolStripTabGroup3.Visible = True
 
 {% endhighlight %}
+
+{% endtabs %}
