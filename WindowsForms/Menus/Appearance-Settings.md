@@ -73,7 +73,7 @@ this.bar1.BarStyle = ((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle)((((((((S
 | Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.TextBelowImage)));
 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 
@@ -81,7 +81,7 @@ this.bar1.BarStyle = ((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle)((((((((S
 
 Me.bar1.BarStyle = (CType((((((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.AllowQuickCustomizing Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.IsMainMenu) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.MultiLine) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.RotateWhenVertical) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.Visible) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.UseWholeRow) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.DrawDragBorder) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.TextBelowImage), Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle))
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -198,7 +198,7 @@ MenuColors.MenuBGColor = Color.Pink;
 
 MenuColors.DropDownBorderColor = Color.Aqua;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -212,7 +212,7 @@ Private MenuColors.MenuBGColor = Color.Pink
 
 Private MenuColors.DropDownBorderColor = Color.Aqua
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -1314,8 +1314,6 @@ this.mainFrameBarManager1.CustomizationDialog.ClientSize = new Size(600, 700);
 
 {% highlight VB %}
 
-{% endtabs %}
-
 
 
 'to change the size of entire dialog 
@@ -1326,6 +1324,8 @@ Me.mainFrameBarManager1.CustomizationDialog.Size = New Size(700, 800)
 
 Me.mainFrameBarManager1.CustomizationDialog.ClientSize = New Size(600, 700)
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ## Multiline support for ParentBarItem in MainFrameBarManager
