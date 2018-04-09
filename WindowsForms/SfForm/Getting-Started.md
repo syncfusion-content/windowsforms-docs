@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Assembly deployment
+## Assembly Deployment
 
 The following list of assembly should be added as reference to use `SfForm` in any application:
 
@@ -32,7 +32,7 @@ Syncfusion.Core.WinForms assembly contains the theme related classes for the Syn
 </tr>
 </table>
 
-## Converting standard form into SfForm
+## Converting Standard Form into SfForm
 
 The default form can be changed into SfForm by the following steps:
 
@@ -65,7 +65,7 @@ public partial class Form1 : SfForm
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-## Title bar customization
+## Title Bar Customization
 
 By default, the SfForm loads with the default appearance, that  can be customized by using the `TitleBarStyleInfo` property. It contains all the settings for the appearance of the form.
 
@@ -96,7 +96,7 @@ this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-## Border customization
+## Border Customization
 
 The borders of the form can be customized by using the `Style.Border` and `Style.InactiveBorder` properties.
 
@@ -111,7 +111,7 @@ this.Style.InactiveBorder = new Pen(Color.Gray, 5);
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
-## Loading user control to the title bar
+## Loading User Control to the Title Bar
 
 You can load any user control to the title bar of the SfForm instead of the title bar text by using the `TitleBarTextControl` property.
 
