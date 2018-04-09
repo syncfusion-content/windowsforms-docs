@@ -30,17 +30,17 @@ Follow the steps given below to add the Clock control to an application through 
    
     {% tabs %}
 
-    {% hightlight C# %}
+    {% highlight C# %}
 
         using Syncfusion.Windows.Forms.Tools;
 
-    {% endhightlight %}
+    {% endhighlight %}
    
-    {% hightlight VB %}
+    {% highlight VB %}
 
         Imports Syncfusion.Windows.Forms.Tools
 
-    {% endhightlight %}
+    {% endhighlight %}
 
     {% endtabs %}
 
@@ -48,7 +48,7 @@ Follow the steps given below to add the Clock control to an application through 
 
     {% tabs %}
 
-    {% hightlight C# %}
+    {% highlight C# %}
 
         Syncfusion.Windows.Forms.Tools.Clock clock1;
 
@@ -56,9 +56,9 @@ Follow the steps given below to add the Clock control to an application through 
 
 		this.Controls.Add(clock1);
 
-    {% endhightlight %}
+    {% endhighlight %}
    
-    {% hightlight VB %}
+    {% highlight VB %}
 
         Dim clock1 As Syncfusion.Windows.Forms.Tools.clock
 
@@ -66,7 +66,7 @@ Follow the steps given below to add the Clock control to an application through 
 
 		Me.Controls.Add(clock1)
 
-    {% endhightlight %}
+    {% endhighlight %}
 
     {% endtabs %}
 
