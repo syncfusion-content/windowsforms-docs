@@ -7,15 +7,15 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Applying Custom Renderer to the Clock Control
+# Applying custom renderer to the clock control
 
 ## Customization of rendering by overriding the method
 
 Clock control enables you to customize the Clock control by applying the custom renderer.
 
-The following code illustrates how to customize the clock:
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
                 CustomRenderer renderer = new CustomRenderer();
 
@@ -113,7 +113,7 @@ public class CustomRenderer : ClockRenderer
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private renderer As New CustomRenderer()
 
@@ -186,6 +186,8 @@ p.Dispose()
 End If
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img99.png) 
 
