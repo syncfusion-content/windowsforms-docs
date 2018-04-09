@@ -57,7 +57,7 @@ End If
 Me.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done)
 End Sub 
 
-{% enhighlight %}
+{% endhighlight %}
 {% endtabs %}
 
 2. Simply traverses the tree structure recursively to find the matching node using the FindNode method discussed below.
