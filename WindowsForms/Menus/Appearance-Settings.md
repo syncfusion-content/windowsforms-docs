@@ -331,7 +331,7 @@ Gets/sets the left-gradient color of the drop-down menu margin of the expanded m
 <tr>
 <td>
 MenuExpandedItemsMarginColorRight</td><td>
-Gets / sets the right-gradient color of the drop-down menu margin of the expanded menu items.</td></tr>
+Gets/sets the right-gradient color of the drop-down menu margin of the expanded menu items.</td></tr>
 <tr>
 <td>
 MenuItemHotColorDark</td><td>
@@ -1323,6 +1323,7 @@ Me.mainFrameBarManager1.CustomizationDialog.Size = New Size(700, 800)
 'to change the client area 
 
 Me.mainFrameBarManager1.CustomizationDialog.ClientSize = New Size(600, 700)
+
 {% endhighlight %}
 
 {% endtabs %}
