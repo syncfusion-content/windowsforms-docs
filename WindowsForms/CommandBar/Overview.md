@@ -44,7 +44,7 @@ All toolbar icons that do not fit in the space available in the toolbar are disp
 
 * Adding pop-up Menu
 
-Pop-up Menus can be easily associated with the CommandBar which can be displayed on clicking the drop-down button of the CommandBar or on right clicking the CommandBar control itself.
+Pop-up Menus can be easily associated with the CommandBar which can be displayed on clicking the drop-down button of the CommandBar or on right-clicking the CommandBar control itself.
 
 * Adding Custom Child Controls
 
