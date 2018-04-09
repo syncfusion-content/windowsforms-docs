@@ -115,6 +115,8 @@ HideGripper</td><td>
 Draws the CommandBar with/without the drag gripper.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
 
