@@ -9,8 +9,7 @@ documentation: ug
 
 # ButtonEdit Events
 
-
- The below events are discussed in the event section.
+The below events are discussed in the event section.
 
 ## ButtonClicked Event
 
@@ -18,43 +17,33 @@ This event is handled whenever a child button of a ButtonEdit control is clicked
 
 The below code changes the alignment of the button that is clicked at runtime.
 
-{%highlight c#%}
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEdit2.ButtonClicked +=new ButtonClickedEventHandler(buttonEdit2_ButtonClicked);
-
 private void buttonEdit2_ButtonClicked(object sender, ButtonClickedEventArgs e)
-
 {
-
-    //Changing the button alignment of the clicked button
-
+//Changing the button alignment of the clicked button
     e.ClickedButton.ButtonAlign = ButtonAlignment.Left;
-
 }
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 AddHandler Me.buttonEdit2.ButtonClicked, AddressOf buttonEdit2_ButtonClicked 
-
 Private Sub buttonEdit2_ButtonClicked(ByVal sender As Object, ByVal e As ButtonClickedEventArgs)
 
-    'Changing the button alignment of the clicked button 
-
-    e.ClickedButton.ButtonAlign = ButtonAlignment.Left
-
+'Changing the button alignment of the clicked button 
+e.ClickedButton.ButtonAlign = ButtonAlignment.Left
 End Sub
-{%endhighlight%}
 
+{% endhighlight %}
+{% endtabs %}
 
 ## Border Events
 
 The below table list the events that are raised for border changes.
-
 
 <table>
 <tr>
@@ -71,52 +60,35 @@ BorderSidesChanged</td><td>
 Raised when BorderSides property of ButtonEdit control is changed.</td></tr>
 </table>
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 private void buttonEdit1_Border3DStyleChanged(object sender, EventArgs e)
-
 {
-
     Console.WriteLine("3D border styles is changed");            
-
 }
-
-
-
 private void buttonEdit1_BorderSidesChanged(object sender, EventArgs e)
-
 {
-
     Console.WriteLine(" Border sides is changed");           
-
 }
 
+{% endhighlight %}
 
-{%endhighlight%}
-
-{%highlight vbnet%}
+{% highlight vb %}
 
 Private Sub buttonEdit1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-    Console.WriteLine("3D border styles is changed")
-
+Console.WriteLine("3D border styles is changed")
 End Sub
-
-
-
 Private Sub buttonEdit1_BorderSidesChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-    Console.WriteLine(" Border sides is changed")
-
+Console.WriteLine(" Border sides is changed")
 End Sub
-{%endhighlight%}
+
+{% endhighlight %}
+{% endtabs %}
 
 ## ButtonEditChildButton Events
 
 The below table list the events that are available for the ButtonEdit Child Buttons control.
-
 
 <table>
 <tr>
@@ -157,7 +129,6 @@ BackColorChanged</td><td>
 Raised when BackColor property of the ButtonEdit control is changed. This event calls HandleChildButtonBackColorChanged method. Using this method, we can access the corresponding control and customize it.</td></tr>
 </table>
 
-
 ## Click Event
 
 Displaying a Calendar Popup in a ButtonEdit Control
@@ -167,88 +138,97 @@ Using ButtonEdit Child button click event, we can display a CalendarPopup at a s
 Using CalendarPopup
 
 1. Create an instance of CalendarPopup control.
-   
-   ~~~ cs
-   private Syncfusion.Windows.Forms.Tools.CalendarPopup calendarPop1;
-   calendarPop1=new Syncfusion.Windows.Forms.Tools.CalendarPopup ();
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-   Private calendarPop1 As Syncfusion.Windows.Forms.Tools.CalendarPopup
-   Private calendarPop1 = New Syncfusion.Windows.Forms.Tools.CalendarPopup()
-   ~~~
-   {:.prettyprint}
-   
 
 
+{% tabs %}
+{% highlight c# %}
+
+private Syncfusion.Windows.Forms.Tools.CalendarPopup calendarPop1;
+calendarPop1=new Syncfusion.Windows.Forms.Tools.CalendarPopup ();
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Private calendarPop1 As Syncfusion.Windows.Forms.Tools.CalendarPopup
+Private calendarPop1 = New Syncfusion.Windows.Forms.Tools.CalendarPopup()
+
+{% endhighlight %}
+{% endtabs %}
 
 2. Declare an instance of MonthCalendarAdv control and add it to the CalendarPopup.
    
-   ~~~ cs
-   private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv MonthCal;
-   MonthCal=new Syncfusion.Windows.Forms.Tools.MonthCalendarAdv();
-   this.MonthCal.AutoSize = false;
-   calendarPop1.AutoSize = false;
-   calendarPop1.Size = new Size(200, 200);
-   this.MonthCal.Size = new Size(200, 200);
-   this.calendarPop1.Controls.Add(MonthCal);
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-   Private MonthCal As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
-   Private MonthCal = New Syncfusion.Windows.Forms.Tools.MonthCalendarAdv()
-   Me.MonthCal.AutoSize = False
-   calendarPop1.AutoSize = False
-   calendarPop1.Size = New Size(200, 200)
-   Me.MonthCal.Size = New Size(200, 200)
-   Me.calendarPop1.Controls.Add(MonthCal)
-   ~~~
-   {:.prettyprint}
 
+{% tabs %}
+{% highlight c# %}
 
+private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv MonthCal;
+MonthCal=new Syncfusion.Windows.Forms.Tools.MonthCalendarAdv();
+this.MonthCal.AutoSize = false;
+calendarPop1.AutoSize = false;
+calendarPop1.Size = new Size(200, 200);
+this.MonthCal.Size = new Size(200, 200);
+this.calendarPop1.Controls.Add(MonthCal);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Private MonthCal As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
+Private MonthCal = New Syncfusion.Windows.Forms.Tools.MonthCalendarAdv()
+Me.MonthCal.AutoSize = False
+calendarPop1.AutoSize = False
+calendarPop1.Size = New Size(200, 200)
+Me.MonthCal.Size = New Size(200, 200)
+Me.calendarPop1.Controls.Add(MonthCal)
+
+{% endhighlight %}
+{% endtabs %}
 
 3. Handle the Click event of buttonEditChildButton1 to display the Calendar as follows.
    
-   ~~~ cs
-   private void buttonEditChildButton1_Click(object sender, System.EventArgs e)
-   {
+
+{% tabs %}
+{% highlight c# %}
+
+private void buttonEditChildButton1_Click(object sender, System.EventArgs e)
+{
    this.calendarPop1.Visible =true;
    this.calendarPop1.ShowPopup (new Point(200,200));
-   }
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-   Private Sub buttonEditChildButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-   Me.calendarPop1.Visible = True
-   Me.calendarPop1.ShowPopup(New Point(200, 200))
-   End Sub
-   ~~~
-   {:.prettyprint}
+}
 
+{% highlight vb %}
 
+Private Sub buttonEditChildButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+Me.calendarPop1.Visible = True
+Me.calendarPop1.ShowPopup(New Point(200, 200))
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
 
 4. The event DateSelected can also be handled to display the selected date in the textbox of ButtonEdit control.
    
-   ~~~ cs
-   this.MonthCal.DateSelected+=new EventHandler(MonthCal_DateSelected);
-   private void MonthCal_DateSelected(object sender,System.EventArgs e)
-   {
+
+{% tabs %}
+{% highlight c# %}
+
+this.MonthCal.DateSelected+=new EventHandler(MonthCal_DateSelected);
+private void MonthCal_DateSelected(object sender,System.EventArgs e)
+{
    this.buttonEdit1.TextBox.Text= this.MonthCal.Value.ToString();
-   }
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-   Private Me.MonthCal.DateSelected+= New EventHandler(MonthCal_DateSelected)
-   Private Sub MonthCal_DateSelected(ByVal sender As Object, ByVal e As System.EventArgs)
-   Me.buttonEdit1.TextBox.Text = Me.MonthCal.Value.ToString()
-   End Sub
-   ~~~
-   {:.prettyprint}
+}
 
+{% endhighlight %}
 
+{% highlight vb %}
+
+Private Me.MonthCal.DateSelected+= New EventHandler(MonthCal_DateSelected)
+Private Sub MonthCal_DateSelected(ByVal sender As Object, ByVal e As System.EventArgs)
+Me.buttonEdit1.TextBox.Text = Me.MonthCal.Value.ToString()
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img104.jpeg) 
