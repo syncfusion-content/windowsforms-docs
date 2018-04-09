@@ -7,7 +7,7 @@ control: CommandBars
 documentation: ug
 ---
 
-# Behavior Settings
+# Behavior settings
 
 The behavior settings of the CommandBar control are given below.
 
@@ -19,7 +19,7 @@ The cursor settings of the CommandBar can be customized using the property given
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -27,27 +27,25 @@ Cursor</td><td>
 The mouse cursor used for the CommandBar.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
-
-
-
-
-
 this.commandBar1.Cursor = System.Windows.Forms.Cursors.Hand;
+
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 Me.commandBar1.Cursor = System.Windows.Forms.Cursors.Hand
 
 {% endhighlight %}
+
+{% endtabs %}
+
 N> The ResetCursor() method can be used to reset the Cursor property to it's default value.
 
-## Row Index and Offset
+## Row index and offset
 
 The index and offset settings of rows can be customized using the properties given below.
 
@@ -55,23 +53,21 @@ The index and offset settings of rows can be customized using the properties giv
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
 RowIndex</td><td>
-Gets / sets the index of the row or column for the CommandBar.</td></tr>
+Gets/sets the index of the row or column for the CommandBar.</td></tr>
 <tr>
 <td>
 RowOffset</td><td>
-Gets / sets the linear offset of the CommandBar within a row.</td></tr>
+Gets/sets the linear offset of the CommandBar within a row.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
-
 
 this.commandBar1.RowIndex = 1;
 
@@ -79,18 +75,19 @@ this.commandBar1.RowOffset = 1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
-
+{% endtabs %}
 
 
 
 Me.commandBar1.RowIndex = 0
 
 Me.commandBar1.RowOffset = 0
+
 {% endhighlight %}
 
-## Visible / Hidden CommandBar
+## Visible/hidden CommandBar
 
 The CommandBar control can be hidden using the property given below.
 
@@ -98,7 +95,7 @@ The CommandBar control can be hidden using the property given below.
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -106,23 +103,21 @@ Visible</td><td>
 Determines whether the control is visible or hidden. The default value is set to 'True'.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
-
-
-
-
 this.commandBar1.Visible = true;
+
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
-
+{% highlight VB %}
 
 Me.commandBar1.Visible = True
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## RightToLeft
 
@@ -132,7 +127,7 @@ The elements of the CommandBarController can be aligned from right to left and v
 <table>
 <tr>
 <th>
-CommandBarController Property</th><th>
+CommandBarController property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -140,23 +135,20 @@ RightToLeft</td><td>
 Gets a value indicating whether the control's elements are aligned from right to left.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
 
-
-
-
 this.commandBarController1.RightToLeft = true;
+
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
-
+{% highlight VB %}
 
 Me.commandBarController1.RightToLeft = True
+
 {% endhighlight %}
 
-
+{% endtabs %}
 
