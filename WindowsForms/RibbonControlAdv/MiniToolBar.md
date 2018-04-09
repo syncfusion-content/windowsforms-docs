@@ -250,7 +250,7 @@ Me.miniToolBar1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Office20
 
 {% endhighlight %}
 
-{5 endtabs %}
+{% endtabs %}
 
 ![](MiniToolbar_images/minitoolbar_colorful-theme.png)
 
