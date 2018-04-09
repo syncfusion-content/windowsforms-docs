@@ -28,106 +28,71 @@ Items can also be added using ContextMenuStripEx.Items property or Edit Items...
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img4.jpeg)
 
 
-
 ### Through Code
 
 The below code snippets adds a ToolStripItem (Cut) to the menu list.
 
+{% tabs %}
 {% highlight c# %}
 
 //Declaration
-
 private Syncfusion.Windows.Forms.Tools.ContextMenuStripEx EditorContextMenuStripEx;
-
 private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
 
-
-
 //Initializing
-
 this.EditorContextMenuStripEx = new Syncfusion.Windows.Forms.Tools.ContextMenuStripEx();
 
-
-
 //Assigning the ContextMenuStrip created
-
 this.richTextBox1.ContextMenuStrip = this.EditorContextMenuStripEx;
 
-
-
 //Adding a menu item
-
 this.EditorContextMenuStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.toolStripMenuItem1});
-
 this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
-
 this.toolStripMenuItem1.Text = "Cu&t";
-
-
-
 this.EditorContextMenuStripEx.ResumeLayout(false);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Declaration
-
 Private EditorContextMenuStripEx As Syncfusion.Windows.Forms.Tools.ContextMenuStripEx
-
 Private toolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 
-
-
 'Initializing
-
 Me.EditorContextMenuStripEx = New Syncfusion.Windows.Forms.Tools.ContextMenuStripEx
 
-
-
 'Assigning the ContextMenuStrip created
-
 Me.richTextBox1.ContextMenuStrip = Me.EditorContextMenuStripEx
 
-
-
 'Adding a menu item
-
 Me.EditorContextMenuStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripMenuItem1})
-
 Me.toolStripMenuItem1.Image = CType((Resources.GetObject("toolStripMenuItem1.Image")), System.Drawing.Image)
-
 Me.toolStripMenuItem1.Text = "Cu&t"
-
-
-
 Me.EditorContextMenuStripEx.ResumeLayout(False)
 
 {% endhighlight %}
+{% endtabs %}
 
-
-
-### Associating the ContextMenuStrip to a control
+### Associating the ContextMenuStrip to a Control
 
 This can be easily done by assigning the ContextMenuStripEx to the Control.ContextMenuStrip property.
 
-
-
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img5.jpeg)
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 this.richTextBox1.ContextMenuStrip = this.contextMenuStripEx1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.richTextBox1.ContextMenuStrip = Me.contextMenuStripEx1
 
 {% endhighlight %}
+{% endtabs %}
 
 At Run time, when the user right clicks the control, menu items will be displayed like the below image.
 
@@ -150,6 +115,7 @@ ContextMenuStripEx supports visual style such as Office2016White,Office2016Black
 
 This Style can be set using Style property
 
+{% tabs %}
 {% highlight c# %}
 
 this.contextMenuStrip1.Style=Syncfusion.Windows.Forms.Tools.ContextMenuStyle.Office2016Colorful
@@ -161,6 +127,7 @@ this.contextMenuStrip1.Style=Syncfusion.Windows.Forms.Tools.ContextMenuStyle.Off
 Me.contextMenuStrip1.Style=Syncfusion.Windows.Forms.Tools.ContextMenuStyle.Office2016Colorful
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx-Colorful.png)
 
@@ -170,74 +137,65 @@ Using the Office12ToolStripRenderer Class, the appearance of the ContextMenuStri
 
 Use the below code snippet for implementing this feature.
 
+{% tabs %}
 {% highlight c# %}
 
 private Syncfusion.Windows.Forms.Tools.Office12ColorTable ct;
-
 private Syncfusion.Windows.Forms.Tools.Office12ToolStripRenderer m_Office12Renderer;
 
 ct =new Syncfusion.Windows.Forms.Tools.Office12ColorTable();
-
 ct.UseSystemColors = false;
-
 m_Office12Renderer = new Syncfusion.Windows.Forms.Tools.Office12ToolStripRenderer(ct);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private ct As Syncfusion.Windows.Forms.Tools.Office12ColorTable
-
 Private m_Office12Renderer As Syncfusion.Windows.Forms.Tools.Office12ToolStripRenderer
 
 ct = New Syncfusion.Windows.Forms.Tools.Office12ColorTable 
-
 ct.UseSystemColors = False 
-
 m_Office12Renderer = New Syncfusion.Windows.Forms.Tools.Office12ToolStripRenderer(ct)
 
 {% endhighlight %}
+{% endtabs %}
 
 In the form load event, add one of the below code to change the appearance.
 
+{% tabs %}
 {% highlight c# %}
 
 //Sets Office Black Color
-
 this.contextMenuStripEx1.Renderer = new Office12ToolStripRenderer(new OfficeBlack ());
 
 //Sets Office Blue Color
-
 this.contextMenuStripEx1.Renderer = new Office12ToolStripRenderer(new OfficeBlue ());
 
 //Sets Office Silver Color
-
 this.contextMenuStripEx1.Renderer = new Office12ToolStripRenderer(new Office12ColorTable());
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets Office Black Color
-
 Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New OfficeBlack) 
 
 'Sets Office Blue Color
-
 Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New OfficeBlue)
 
 'Sets Office Silver Color
-
 Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12ColorTable())
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img7.jpeg)
 
 ### Rendering Mode
 
 Rendering mode of the ContextMenuStripEx can be controlled using the below property.
-
 
 <table>
 <tr>
@@ -250,19 +208,19 @@ RenderMode</td><td>
 Represents the painting style applied to the control. The different styles supported are,Professional,System and ManagerRenderMode.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img8.jpeg) 
 
@@ -273,17 +231,19 @@ Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Pro
 
 Caption for the context menu can be specified in Text property. 
 
+{% tabs %}
 {% highlight c# %}
 
 this.ContextMenuStripEx.Text = "Context Menu Items";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ContextMenuStripEx.Text = "Context Menu Items"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img9.jpeg)
 
@@ -292,22 +252,21 @@ Me.ContextMenuStripEx.Text = "Context Menu Items"
 
 The font style for the menu items can be controlled using Font property. 
 
+{% tabs %}
 {% highlight c# %}
 
 this.contextMenuStripEx2.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.contextMenuStripEx1.Font = New System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular)
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img10.jpeg)
-
-
 
 N> The font face of the Caption alone changes based on this Font property.
 
@@ -316,7 +275,6 @@ N> The font face of the Caption alone changes based on this Font property.
 ### Shadow Settings
 
 Shadow for the context menu drop down is controlled using the below property.
-
 
 <table>
 <tr>
@@ -329,29 +287,27 @@ DropShadowEnabled</td><td>
 Shows or hides three dimensional shadow for the context menu.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.contextMenuStripEx1.DropShadowEnabled = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.contextMenuStripEx1.DropShadowEnabled = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 The below image displays a shadow for the context menu strip.
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img12.jpeg)
 
-
 ### Margin Settings
 
 We can set margins for the context menu using the below properties.
-
 
 <table>
 <tr>
@@ -372,31 +328,25 @@ ImageScaling</td><td>
 Sets the size of images on items.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.contextMenuStripEx1.ShowCheckMargin = true;
-
 this.contextMenuStripEx1.ShowImageMargin = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.contextMenuStripEx1.ShowCheckMargin = True
-
 Me.contextMenuStripEx1.ShowImageMargin = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img13.jpeg)
 
-
-
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img14.jpeg)
-
-
 
 N> The check functionality can be enabled using the Checked property and check state can be provided using CheckedState property available for individual menu item, through Items Collection Editor.
 
@@ -406,25 +356,25 @@ N> The check functionality can be enabled using the Checked property and check s
 
 The menu items can display tooltips while mouse hovering, by enabling ShowItemToolTips property.
 
+{% tabs %}
 {% highlight c# %}
 
 this.contextMenuStripEx1.ShowItemToolTips = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.contextMenuStripEx1.ShowItemToolTips = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img16.jpeg)
 
 ### Auto Closing At Runtime
 
 AutoClose property of the ContextMenuStrip control, when set to true, will close the context menu dropdown when the user clicks any item. If this is not enabled, the menu items will not be closed even after user actions.
-
 
 <table>
 <tr>
@@ -437,37 +387,39 @@ AutoClose</td><td>
 Specifies whether the context menu closes for any user actions at runtime.{{ '_True_' | markdownify }} - Closes the context menu dropdown, when the user selects or clicks any item.{{ '_False_' | markdownify }} - The context menu drop down will not be closed for any user actions.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.contextMenuStripEx1.AutoClose = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.contextMenuStripEx1.AutoClose = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ## RTL Support
 
 ContextMenuStripEx has RTL support which can be enabled using RightToLeft property.
 
+{% tabs %}
 {% highlight c# %}
 
 this.contextMenuStripEx1.RightToLeft = Yes;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.contextMenuStripEx1.RightToLeft = Yes
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img17.jpeg)
-
 
 ## ToolStripItems
 
@@ -527,30 +479,25 @@ DropDownItems</td><td>
 Invokes the Items Collection Editor and lets you add ToolStripItems to be displayed when the item is clicked.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-
 this.fontToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-
 this.toolStripMenuItem1,
-
 this.toolStripMenuItem2});
-
 this.hyperlinkToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.pasteToolStripMenuItem.ShortcutKeys = DirectCast(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.B)), System.Windows.Forms.Keys) 
-
 Me.fontToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripMenuItem1, Me.toolStripMenuItem2}) 
-
 Me.hyperlinkToolStripMenuItem.ShortcutKeys = DirectCast(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C)), System.Windows.Forms.Keys) 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img18.jpeg)
 
@@ -611,32 +558,29 @@ Indicates text completion behavior of the combo box. The modes are,{{ '_Suggest_
 </table>
 AutoComplete Feature
 
+{% tabs %}
 {% highlight c# %}
 
 this.toolStripComboBox1.AutoCompleteCustomSource.AddRange(new string[] {"Customization", "Custom Properties", "Custom Source", "Custom Items", "Properties", "IssuesList"});
-
 this.toolStripComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-
 this.toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.toolStripComboBox1.AutoCompleteCustomSource.AddRange(New String() {"Customization", "Custom Properties", "Custom Source", "Custom Items", "Properties", "IssuesList"}) 
-
 Me.toolStripComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest 
-
 Me.toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource 
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img19.jpeg)
 
 ### Separator
 
 This section lists the unique properties of a ToolStripSeparator and their description.
-
 
 <table>
 <tr>
@@ -664,7 +608,6 @@ Sets the visibility of the separator.</td></tr>
 ## TextBox
 
 This section lists the unique properties of a ToolStripTextBox item and their description.
-
 
 <table>
 <tr>
