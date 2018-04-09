@@ -41,7 +41,7 @@ sfButton1.Style.GradientBrush = new BrushInfo(GradientStyle.ForwardDiagonal, Col
 
 ![](SfButton_images/SfButton_img9.jpeg)
 
-### Background image
+### Background Image
 
 The background of the SfButton can be filled with image by initialize the BackgroundImage property. The background image layout can be changed by initializing any one of ImageLayout enumeration value to BackgroundImageLayout property.
 
@@ -59,11 +59,11 @@ this.sfButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 
 ![](SfButton_images/SfButton_img10.jpeg)
 
-## Customizing appearance based on button state
+## Customizing Appearance based on Button State
 
 The SfButton provide options to customize the appearance based on the button state.
 
-### Backcolor and fore color
+### Backcolor and Fore Color
 
 The backcolor and fore color of the SfButton in hover state can be changed by using the HoverBackColor and HoverForeColor properties. Like the hover state, you can customize in pressed state, focused state, normal state, and disable state of the SfButton.
 
@@ -133,7 +133,7 @@ sfButton6.Style.HoverBorder = new Pen(Color.DarkGray, 2);
 
 ![](SfButton_images/SfButton_img14.jpeg)
 
-## Animating the image
+## Animating the Image
 
 The animation image (.gif image) can be displayed in the SfButton by enabling the AllowImageAnimation property and initialize the animation image to the Image property.
 
@@ -153,11 +153,12 @@ sfButton1.Style.Image = Image.FromFile(@"..\..\Data\animationImage.gif");
 
 **Note**: The SfButton does not allow you to animate the image, if the animated image set as FocusedImage, HoverImage, or PressedImage so, to show the animation image inside the button, initialize the animation image (gif image) using the Image property.
 
-## Show or hide focus rectangle
+## Show or Hide Focus Rectangle
 
 A thin dotted rectangular frame can be drawn inside the SfButton when it got focus. This feature can be enabled by setting the FocusRectangleVisible property to true.
 
-{% tabs %}{% highlight c# %}
+{% tabs %}
+{% highlight c# %}
 //Enable the focus rectangle for SfButton
 sfButton1.FocusRectangleVisible = true;
 
@@ -167,7 +168,7 @@ sfButton1.FocusRectangleVisible = true;
 
 ![](SfButton_images/SfButton_img16.jpeg)
 
-## Rounded rectangle button
+## Rounded Rectangle Button
 
 The SfButton with rounded rectangle shape can be implemented programmatically by drawing the border using Paint event.
 
@@ -190,13 +191,11 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
 {
     //Rounded rectangle corder radius. The radius must be less than 10.
     int radius = 5;
-
     e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
     Rectangle rect = new Rectangle(this.sfButton1.ClientRectangle.X + 1, 
                                    this.sfButton1.ClientRectangle.Y + 1,
                                    this.sfButton1.ClientRectangle.Width - 2,
                                    this.sfButton1.ClientRectangle.Height - 2);
-
     sfButton1.Region = new Region(GetRoundedRect(rect, radius));
     rect = new Rectangle(rect.X + 1, rect.Y + 1, rect.Width - 2, rect.Height - 2);
     e.Graphics.DrawPath(new Pen(Color.Red), GetRoundedRect(rect, radius));

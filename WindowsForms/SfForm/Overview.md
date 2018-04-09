@@ -11,7 +11,7 @@ documentation: ug
 
 The `SfForm` is a window control for completing customization of the appearance and loading of custom user interface in the Title bar.
 
-## Key features
+## Key Features
 
 Following are the key features of the SfForm:
 

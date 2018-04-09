@@ -11,7 +11,7 @@ documentation: ug
 
 The SfButton is an advanced button control capable of displaying text and image with various customizations. It provide options to customize the text, image, border, and appearance in all states of the button.
 
-## Key features
+## Key Features
 
 Following are the key features of the SfButton:
 
