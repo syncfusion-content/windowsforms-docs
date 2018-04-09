@@ -7,11 +7,9 @@ control: Tools
 documentation: ug
 ---
 
-
 # Child Button Customization
 
 The child buttons in a ButtonEdit control are normal windows button, but supports additional features within our ButtonEdit control. Those features are discussed in the below topics.
-
 
 ## Button Types and Border Styles
 
@@ -54,28 +52,23 @@ SunkenInner and<br/>
 SunkenOuter.<br/></td></tr>
 </table>
 
-
 N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonEdit.ButtonStyle property. See Style Settings. We can also set border style for ButtonEdit controls without enabling visual styles.
 
-{%highlight c# %}
-
-
+{% tabs %}
+{% highlight c# %}
 
 //Sample code for setting "Bump" Border Style for BorderEdit Child Button
-
 this.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet %}
-
-
+{% highlight vb %}
 
 'Sample code for setting "Bump" Border Style for BorderEdit Child Button
-
 Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img95.jpeg)
 
@@ -104,33 +97,27 @@ ButtonAlign</td><td>
 Specifies whether the child button should be aligned to left or right of the ButtonEdit control.</td></tr>
 </table>
 
-
-{%highlight c# %}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAlignment.Left;
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-{%highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAlignment.Left
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/Overview_img96.jpeg)
-
 
 N> There is no support for placing more than one buttons on the same side. We need to add the buttons in the order we require.
 
 ### Image Settings
 
 The below properties can be used to set text and image for the child buttons.
-
 
 <table>
 <tr>
@@ -171,43 +158,31 @@ TextImageRelation</td><td>
 Sets the relative location of the image to the text in the button.</td></tr>
 </table>
 
-
-{%highlight c# %}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEditChildButton2.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditChildButton2.Image")));
-
 this.buttonEditChildButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
 this.buttonEditChildButton2.Text = "Browse";
-
 this.buttonEditChildButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
 this.buttonEditChildButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-
 this.buttonEditChildButton2.PreferredWidth = 64;
 
+{% endhighlight %}
 
-{%endhighlight%}
-
-{%highlight  vbnet %}
+{% highlight vb %}
 
 Me.buttonEditChildButton2.Image = DirectCast((resources.GetObject("buttonEditChildButton2.Image")), System.Drawing.Image)
-
 Me.buttonEditChildButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-
 Me.buttonEditChildButton2.Text = "Browse"
-
 Me.buttonEditChildButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-
 Me.buttonEditChildButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-
 Me.buttonEditChildButton2.PreferredWidth = 64
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
- ![](Overview_images/Overview_img98.jpeg) 
+![](Overview_images/Overview_img98.jpeg) 
 
 ### Flat Style for the Buttons
 
@@ -228,30 +203,23 @@ FlatStyle</td><td>
 Specifies the flat style for the button. The options are Flat, Popup, Standard and System.</td></tr>
 </table>
 
-
-{%highlight c# %}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEditChildButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-
 this.buttonEditChildButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-
 this.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.buttonEditChildButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-
 Me.buttonEditChildButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson
-
 Me.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/Overview_img99.jpeg) 
  
@@ -280,25 +248,21 @@ N> Visual style of a child buttons is inherited from the visual style of it's pa
 
 The Child buttons can be focused based on the order of the ChildButton.TabIndex set for individual buttons. ChildButton.TabStop property should be set to true to make this effective. While focusing the button, we can either display or don't display a focus rectangle, by using the  ButtonEdit.KeepFocusRectangle property. 
 
-{%highlight c# %}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEditChildButton3.KeepFocusRectangle = true;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.buttonEditChildButton3.KeepFocusRectangle = True
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img101.jpeg) 
-
 
 {% seealso %}
 
