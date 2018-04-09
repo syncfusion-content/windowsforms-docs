@@ -19,10 +19,9 @@ The history list of AutoComplete control can be saved in the following formats.
 
 The AutoComplete control has a fully built-in serialization feature that provides automatic serialization of the AutoComplete's history list.  The serialization mechanism is implemented using the standardized Syncfusion.Windows.Forms.AppStateSerializer component that acts as a central coordinator for all the Essential Tools components and provides the option to read or write to different media such as the default Isolated Storage, XML file, XML stream, Binary file, Binary stream and the Windows Registry.
 
-## Persisting AutoComplete's data in default storage 
+## Persisting AutoComplete's Data in Default Storage 
 
 The data of AutoComplete's control can be persisted by setting the AutoSerialize property to true. This information is stored in the Isolated storage.
-
 
 <table>
 <tr>
@@ -35,84 +34,58 @@ AutoSerialize</td><td>
 Specifies whether AutoComplete control can persist its data.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight C# %}
-
-
-
 
 this.autoComplete1.AutoSerialize = true;
 
-
-
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.autoComplete1.AutoSerialize = True
 
 {% endhighlight %}
+{% endtabs %}
 
 The AutoComplete control has built-in support for serialization that can be enabled or disabled using the AutoSerialize property. 
 
 The default serialization option is Isolated storage and the System.IO.IsolatedStorage routines normally store application specific encrypted entries under the 'C:\Documents and Settings\[USER name]\Local Settings\Application Data\IsolatedStorage\’ folder. All of the Essential Tools Framework components use the 'Syncfusion.Runtime.Serialization.AppStateSerializer' class in the Shared library for Read/Write. The AppStateSerializer is fully documented and can be initialized for different persistence mediums such as XML / Binary files, XML / Binary streams, and the Win32 Registry using its API.
 
-## Persisting in XML file
+## Persisting in XML File
 
 To save and load the AutoComplete data in a XML,
 
-
-
+{% tabs %}
 {% highlight C# %}
-
-
 
 using Syncfusion.Runtime.Serialization;
 
-
-
 // To Save
-
 AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, @"C:\info.xml");
-
 this.autoComplete1.SaveCurrentState(aser);
 
-
-
 // To Load
-
 AppStateSerializer aser = new AppStateSerializer(SerializeMode.XMLFile, @"C:\info.xml");
-
 this.autoComplete1.LoadCurrentState(aser);
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 Imports Syncfusion.Runtime.Serialization
 
-
-
 ' To Save
-
 Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "C:\info.xml")
-
 Me.autoComplete1.SaveCurrentState(aser)
 
-
-
 ' To Load
-
 Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "C:\info.xml")
-
 Me.autoComplete1.LoadCurrentState(aser)
-
 End Sub()
+
 {% endhighlight %}
+{% endtabs %}
 
 ## Persisting in Memory Stream
 
@@ -120,168 +93,106 @@ To serialize the data into a memory stream,
 
 ### Storing State
 
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 MemoryStream ms = new MemoryStream();
-
 AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
-
 this.autoComplete1.SaveCurrentState(aser);
-
 aser.PersistNow();
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 Dim ms As MemoryStream = New MemoryStream()
-
 Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
-
 Me.autoComplete1.SaveCurrentState(aser)
-
 aser.PersistNow()
+
 {% endhighlight %}
+{% endtabs %}
 
 ### Retrieving State
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 // Code to retrieve data(stream) from database
-
 MemoryStream ms = new MemoryStream(val);
-
 ms.Position = 0;
-
 AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFmtStream, ms);
-
 this.autoComplete1.LoadCurrentState(aser);
+
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
-
-
+{% highlight vb %}
 
 'Code to retrieve data(stream) from database
-
 Dim ms As MemoryStream = New MemoryStream(value)
-
 ms.Position = 0
-
 Dim aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
-
 this.autoComplete1.LoadCurrentState(aser);
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
  To serialize in Binary Format, use the below code.
 
+{% tabs %}
 {% highlight C# %}
 
-
-
-
-
 // To Save
-
 AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFile,"myfile");
-
 this.autoComplete1.SaveCurrentState(aser);
-
 aser.PersistNow();
 
-
-
 // To Load
-
 AppStateSerializer aser = new AppStateSerializer(SerializeMode.BinaryFile,"myfile");
-
 this.autoComplete1.LoadCurrentState(aser);
 
 {% endhighlight %}
 
-
-
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' To Save
-
 Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFile, "myfile")
-
 Me.autoComplete1.SaveCurrentState(aser)
-
 aser.PersistNow()
 
-
-
 ' To Load
-
 Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFile, "myfile")
-
 Me.autoComplete1.LoadCurrentState(aser)
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 To serialize in Isolated Storage medium, use the below code.
 
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 // To Save
-
 AppStateSerializer aser = new AppStateSerializer(SerializeMode.IsolatedStorage, "myfile");
-
 this.autoComplete1.SaveCurrentState(aser);
-
 aser.PersistNow();
 
-
-
 // To Load
-
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "myfile");
-
 this.autoComplete1.LoadCurrentState(aser);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 ' To Save
-
 Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.IsolatedStorage, "myfile")
-
 Me.autoComplete1.SaveCurrentState(aser)
-
 aser.PersistNow()
 
-
-
 ' To Load
-
 Private serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.IsolatedStorage, "myfile")
-
 Me.autoComplete1.LoadCurrentState(aser)
+
 {% endhighlight %}
+{% endtabs %}

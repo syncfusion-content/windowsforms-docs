@@ -34,42 +34,27 @@ ReadOnly</td><td>
 Specifies whether the text in the edit portion of ComboDropDown should be set to read-only or can be changed. By default it will be set to false.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.comboDropDown1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-
 this.comboDropDown1.NumberOnly = true;
-
 this.comboDropDown1.ReadOnly = true;
-
-
-
 this.comboDropDown1.CaseSensitiveAutocomplete = false;
-
 this.comboDropDown1.MatchFirstCharacterOnly = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.comboDropDown1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-
 Me.comboDropDown1.NumberOnly = True
-
 Me.comboDropDown1.ReadOnly = True
-
-
-
 Me.comboDropDown1.CaseSensitiveAutocomplete = False
-
 Me.comboDropDown1.MatchFirstCharacterOnly = False
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Banner Text Support
 

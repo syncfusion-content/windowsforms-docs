@@ -51,59 +51,55 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
 
 1. Include the required namespace.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-        Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 2. Create an instance of the ComboDropDown control class.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        private Syncfusion.Windows.Forms.Tools.ComboDropDown comboDropDown1;
+private Syncfusion.Windows.Forms.Tools.ComboDropDown comboDropDown1;
+this.comboDropDown1=new Syncfusion.Windows.Forms.Tools.ComboDropDown();
 
-		this.comboDropDown1=new Syncfusion.Windows.Forms.Tools.ComboDropDown();
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% highlight vb %}
 
-   ~~~ vbnet
+Private comboDropDown1 As Syncfusion.Windows.Forms.Tools.ComboDropDown
+Me.comboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
 
-        Private comboDropDown1 As Syncfusion.Windows.Forms.Tools.ComboDropDown
-
-		Me.comboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 3. Add TreeView in the drop-down portion of ComboDropDown. Finally add ComboDropDown to the Form.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        this.comboDropDown1.PopupControl=this.treeView1;
+this.comboDropDown1.PopupControl=this.treeView1;
+this.Controls.Add(this.comboDropDown1);
 
-		this.Controls.Add(this.comboDropDown1);
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% highlight vb %}
 
-   ~~~ vbnet
+Me.comboDropDown1.PopupControl=Me.treeView1
+Me.Controls.Add(Me.comboDropDown1)
 
-        Me.comboDropDown1.PopupControl=Me.treeView1
-
-		Me.Controls.Add(Me.comboDropDown1)
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 N> Refer Setting Interaction between ComboDropDown and TreeView to set the interaction between the ComboDropDown and Treeview.
 

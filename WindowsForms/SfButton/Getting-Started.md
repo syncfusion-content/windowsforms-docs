@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Assembly deployment
+## Assembly Deployment
 
 The following assembly should be added as reference to use the SfButton control in any application.
 
@@ -32,17 +32,17 @@ Syncfusion.Core.WinForms assembly contains the theme related classes for the Syn
 </tr>
 </table>
 
-## Adding SfButton into a form
+## Adding SfButton into a Form
 
 This section describes how to add the SfButton to a form.
 
-### Through designer
+### Through Designer
 
 To add the SfButton to form, drag and drop the SfButton from the toolbox to the surface of the form designer.
 
 ![](SfButton_images/SfButton_img1.jpeg)
 
-### Through code
+### Through Code
 
 To programmatically add the SfButton to form, create a new instance of the SfButton and add it to the form the Controls collection.
 
@@ -65,7 +65,7 @@ this.Controls.Add(sfButton1);
 {% endhighlight %}
 {% endtabs %}
 
-## Performing action on the SfButton click
+## Performing Action on the SfButton Click
 
 The SfButton allows adding the click event in two ways:
 

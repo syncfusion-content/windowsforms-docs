@@ -39,34 +39,27 @@ FlatBorderColor</td><td>
 Specifies the color with which flat border should be drawn. FlatStyle must be set to 'Flat' to get the color effect.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Border appearance settings
-
 this.comboBoxAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat;
-
 this.comboBoxAdv1.BorderSides = System.Windows.Forms.Border3DSide.All;
-
 this.comboBoxAdv1.FlatStyle = Syncfusion.Windows.Forms.Tools.ComboFlatStyle.Flat;
-
 this.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Border appearance settings
-
 Me.comboBoxAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.Flat
-
 Me.comboBoxAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
-
 Me.comboBoxAdv1.FlatStyle = Syncfusion.Windows.Forms.Tools.ComboFlatStyle.Flat
-
 Me.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img307.jpeg) 
 
@@ -76,8 +69,7 @@ Me.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue
 
 ComboBoxAdv supports visual styles such as Office2016Colorful, Office2016White, Office2016Black, Office2016DarkGray, Metro, Office2010, Default, OfficeXP, Office2003, Office2007, Office2007Outlook, , VS2005 , VS2007 with all three color schemes. The style can be set using Style property.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 //To set Visual Style for ComboBox 
@@ -86,13 +78,14 @@ this.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorfu
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'To set Visual Style for ComboBox 
 
 Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img308.png) 
 
@@ -100,39 +93,33 @@ Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
 
 We can set color schemes for Office2007 style.
 
+{% tabs %}
 {% highlight c# %}
 
 //To set Blue Color scheme
-
 this.comboBoxAdv3.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
 //To set Silver Color scheme
-
 this.comboBoxAdv6.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
 //To set Black Color scheme
-
 this.comboBoxAdv9.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'To set Blue Color scheme
-
 Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
 'To set Silver Color scheme
-
 Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
 'To set Black Color scheme
-
 Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
 {% endhighlight %}
-
-
+{% endtabs %}
 
 ![](Overview_images/Overview_img309.png)
 
@@ -142,21 +129,21 @@ Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 You can also apply custom colors to the ComboBoxAdv control by setting Office2007ColorTheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
+{% tabs %}
 {% highlight c# %}
 
 this.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(this, Color.Orchid);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-
 Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img310.png) 
 
@@ -166,25 +153,23 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
 When ComboBoxAdv control is set with some style, theme background is drawn. You can override this background with the BackColor property using the IgnoreThemeBackground property. When IgnoreThemeBackground is set to true, the control ignores the theme background and draws the back color as the background.
 
+{% tabs %}
 {% highlight c# %}
 
 //Background settings
-
 this.comboBoxAdv1.BackColor = System.Drawing.SystemColors.Info;
-
 this.comboBoxAdv1.IgnoreThemeBackground = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Background settings
-
 Me.comboBoxAdv1.BackColor = System.Drawing.SystemColors.Info
-
 Me.comboBoxAdv1.IgnoreThemeBackground = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img311.jpeg) 
 
@@ -214,45 +199,43 @@ ItemsImageIndexes</td><td>
 Invokes an editor and lets you to set image index for individual dropdown items.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight c# %}
 
 //ImageList for the ComboBoxAdv
-
 this.comboBoxAdv1.ImageList = this.imageList1;
-
 this.comboBoxAdv1.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.comboBoxAdv1, "Pointer", 0));
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'ImageList for the ComboBoxAdv
-
 Me.comboBoxAdv1.ImageList = Me.imageList1
-
 Me.comboBoxAdv1.ItemsImageIndexes.Add(New Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(Me.comboBoxAdv1, "Pointer", 0))
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Image in TextBox
 
 The following code example is used to show the images together with the selected text in the TextArea of the ComboBoxAdv control.
 
+{% tabs %}
 {% highlight c# %}
 
 // Show the images in the TextArea.
-
 this.comboBoxAdv1.ShowImageInTextBox = true
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Show the images in the TextArea.
-
 Me.comboBoxAdv1.ShowImageInTextBox = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img312.jpeg)
 
@@ -262,8 +245,7 @@ Me.comboBoxAdv1.ShowImageInTextBox = True
 
 ComboBoxAdv allows you to customize the height of the Display area, making more space to display larger images and text items by setting the TextBoxHeight property of the ComboBox.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 // Sets the height of the ComboBox.
@@ -272,10 +254,11 @@ this.comboBoxAdv1.TextBoxHeight = 80;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets the height of the ComboBox.
 
 Me.comboBoxAdv1.TextBoxHeight = 80
 
 {% endhighlight %}
+{% endtabs %}

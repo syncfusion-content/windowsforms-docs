@@ -9,7 +9,7 @@ documentation: ug
 
 # Button Content
 
-## Adding rich text
+## Adding Rich Text
 
 The rich text can be displayed inside the SfButton by enabling the AllowRichText property and the proper rich text can be added in the Text property.
 
@@ -29,7 +29,7 @@ this.sfButton1.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red0\\green0\\blue0;\\r
 
 **Note**: When the AllowRichText property is false, even if you add the rich text to the Text property, it will draw as normal text inside the button.
 
-## Wrapping the text
+## Wrapping the Text
 
 The text can be wrapped in the SfButton by setting the AllowWrapText property to true.
 
@@ -48,7 +48,7 @@ sfButton1.AllowWrapText = true;
 
 **Note**: If the AutoSize property is enabled, the SfButton does not allow you to wrap the text.
 
-## Trimming and showing ellipsis character
+## Trimming and Showing Ellipsis Character
 
 The ellipsis character can be shown inside the SfButton by enabling the AllowEllipsis property.
 
@@ -64,7 +64,7 @@ sfButton1.AutoEllipsis = true;
 
 **Note**: The SfButton will trim the characters only when disabling the AutoSize property and text length should be greater than the button width.
 
-## Auto fit the SfButton
+## Auto Fit the SfButton
 
 The SfButton allows auto fitting the size based on the content by setting the AutoSize property to true.
 
@@ -75,7 +75,7 @@ sfButton1.AutoSize = true;
 {% endhighlight %}
 {% endtabs %}
 
-## Content alignment
+## Content Alignment
 
 This section describes how to change the text and image alignment inside the SfButton.
 

@@ -52,56 +52,40 @@ Node</td><td>
 Gets or sets the Syncfusion.Windows.Forms.Tools.TreeNodeAdv associated with the event.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_AfterInteractiveChecks(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvEventArgs e)
-
 {
 
 //This prints the treenodeadv action associated with the event in the output window at run time.
-
-Console.Write("Action :" + e.Action.ToString());
-
-
+    Console.Write("Action :" + e.Action.ToString());
 
 //This prints the treenodeadv associated with the event in the output window at run time.
-
-Console.Write("TreeNodeAdv :" + e.Node.ToString());
-
+    Console.Write("TreeNodeAdv :" + e.Node.ToString());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_AfterInteractiveChecks(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvEventArgs)
 
-  'This prints the treenodeadv action associated with the event in the output window at run time.
-
+'This prints the treenodeadv action associated with the event in the output window at run time.
 Console.Write("Action :" + e.Action.ToString())
 
-
-
 'This prints the treenodeadv associated with the event in the output window at run time.
-
 Console.Write("TreeNodeAdv :" + e.Node.ToString())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
 Checkbox and Option buttons
 
 {% endseealso %}
-
-
 
 ## General Events
 
@@ -115,69 +99,55 @@ BeforeExpand event occurs before a node is expanded. It is illustrated in the [L
 
 The Deactivated event is triggered when the TreeViewAdv control is deactivated or lost focus.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_Deactivated(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("Deactivated Event is raised ");
-
+    Console.Write("Deactivated Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_Deactivated(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("Deactivated Event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### FillSplitterPaneChanged Event
 
 The FillSplitterPane property of a TreeViewAdv control is the one that toggles support for using the control inside a dynamic splitter window and sharing scrollbars with the parent window. The FillSplitterPaneChanged event will be raised when this property is changed.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_FillSplitterPaneChanged(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("FillSplitterPaneChanged Event is raised ");
-
+    Console.Write("FillSplitterPaneChanged Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_FillSplitterPaneChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("FillSplitterPaneChanged Event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 This event is triggered when the key is first pressed. An example which uses the KeyDown event is as follows.
 
@@ -236,54 +206,41 @@ The nodes can be added to the TreeViewAdv when any key is pressed, whereby the t
 
 #### Border Settings
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 // Setting the key data to the newly added node.
 
 // Add the nodes to the selected node.
-
 private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e) 
 { 
-
-     // Setting the key data to the newly added node.
+// Setting the key data to the newly added node.
      TreeNodeAdv node=new TreeNodeAdv("Node"+" "+e.KeyData.ToString()); 
 
-
-
-     // Add the nodes to the selected node.
+// Add the nodes to the selected node.
      this.treeViewAdv1.SelectedNode.Nodes.Add(node); 
      Console.WriteLine("The "+node.Text+" "+"is added"); 
 } 
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub treeViewAdv1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
 
+' Setting the key data to the newly added node.
+Dim node As TreeNodeAdv = New TreeNodeAdv("Node" & " " & e.KeyData.ToString())
 
-
-     ' Setting the key data to the newly added node.
-
-     Dim node As TreeNodeAdv = New TreeNodeAdv("Node" & " " & e.KeyData.ToString())
-
-
-
-     ' Add the nodes to the selected node.
-
-     Me.treeViewAdv1.SelectedNode.Nodes.Add(node)
-
-     Console.WriteLine("The " & node.Text & " " & "is added")
+' Add the nodes to the selected node.
+Me.treeViewAdv1.SelectedNode.Nodes.Add(node)
+Console.WriteLine("The " & node.Text & " " & "is added")
 
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
-
 
 ### KeyDown Event
 
@@ -332,42 +289,43 @@ Gets or sets a value indicating whether the key event should be passed on to the
 </tr>
 </table>
 
-#### Adding nodes into the TreeViewAdv using KeyBoard
+#### Adding Nodes into the TreeViewAdv using KeyBoard
 
 The nodes can be added to the TreeViewAdv when any key is pressed, whereby the text of the node reflects the key that has been used for adding the node, by using the following code in the TreeViewAdv KeyDown event handler.
 
 #### Border Settings
 
+{% tabs %}
 {% highlight c# %}
 
 // Setting the key data to the newly added node.
 // Add the nodes to the selected node.
 private void treeViewAdv1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e) 
 { 
-     // Setting the key data to the newly added node.
+ // Setting the key data to the newly added node.
      TreeNodeAdv node=new TreeNodeAdv("Node"+" "+e.KeyData.ToString()); 
 
-     // Add the nodes to the selected node.
+// Add the nodes to the selected node.
      this.treeViewAdv1.SelectedNode.Nodes.Add(node); 
      Console.WriteLine("The "+node.Text+" "+"is added"); 
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub treeViewAdv1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
 
-     ' Setting the key data to the newly added node.
-     Dim node As TreeNodeAdv = New TreeNodeAdv("Node" & " " & e.KeyData.ToString())
+' Setting the key data to the newly added node.
+Dim node As TreeNodeAdv = New TreeNodeAdv("Node" & " " & e.KeyData.ToString())
 
-     ' Add the nodes to the selected node.
-     Me.treeViewAdv1.SelectedNode.Nodes.Add(node)
-     Console.WriteLine("The " & node.Text & " " & "is added")
+' Add the nodes to the selected node.
+Me.treeViewAdv1.SelectedNode.Nodes.Add(node)
+Console.WriteLine("The " & node.Text & " " & "is added")
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}
  
 ![](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
 
@@ -407,57 +365,37 @@ Check or uncheck TreeNodeAdv using the Mouse
 
 This can be done by handling the TreeViewAdv's BeforeCheck event as shown below.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_BeforeCheck(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeCheckEventArgs e)
-
 {
-
    if (Control.MouseButtons == MouseButtons.Left)
-
    {
-
-      // Allow check or uncheck.
-
+// Allow check or uncheck.
    }
-
    else
-
-     // Ignore all other ways to check/uncheck the node.
-
+// Ignore all other ways to check/uncheck the node.
    e.Cancel = true;
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_BeforeCheck(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeCheckEventArgs)
+If Control.MouseButtons = MouseButtons.Left Then
 
-   If Control.MouseButtons = MouseButtons.Left Then
+' Allow check or uncheck.
+Else
 
-
-
-   ' Allow check or uncheck.
-
-   Else
-
-
-
-   ' Ignore all other ways to check/uncheck the node.
-
-   e.Cancel = True
-
-   End If
-
+' Ignore all other ways to check/uncheck the node.
+e.Cancel = True
+End If
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Leave Event
 
@@ -471,65 +409,45 @@ After editing the node by pressing F2, if the Delete key is pressed, to avoid th
 
 Disable the menu shortcut as soon as the editor gets focus and enable the shortcut as soon as the editor loses focus. It can be done by handling the TreeViewAdv's BeforeEdit event, setting the bar item's shortcut to None and listening to the node's edit textbox's Leave event. Within this Leave event handler, set the bar item's shortcut back to Del.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 TextBox editor;
-
-
-
 private void treeViewAdv1_BeforeEdit(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs e)
-
 {
-
-this.editor = e.TextBox;
-
-this.editor.Leave += new EventHandler(editor_Leave);
+    this.editor = e.TextBox;
+    this.editor.Leave += new EventHandler(editor_Leave);
 
 // Disabling  the menu shortcut as soon as the editor gets focused.
-
-this.barItem1.Shortcut = Shortcut.None;
-
+    this.barItem1.Shortcut = Shortcut.None;
 }
 
-  // Enabling the shortcut as soon as the editor loses focus.
-
+// Enabling the shortcut as soon as the editor loses focus.
 private void editor_Leave(object sender, EventArgs args)
-
 {
-
-this.barItem1.Shortcut = Shortcut.Del;
-
+    this.barItem1.Shortcut = Shortcut.Del;
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private editor As TextBox
-
 Private Sub treeViewAdv1_BeforeEdit(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs)
-
 Me.editor = e.TextBox
-
 AddHandler editor.Leave, AddressOf editor_Leave
 
- Disabling the menu shortcut as soon as the editor gets focused.
-
+'Disabling the menu shortcut as soon as the editor gets focused.
 Me.barItem1.Shortcut = Shortcut.None
-
 End Sub
-
 Private Sub editor_Leave(ByVal sender As Object, ByVal args As EventArgs)
 
-     ' Enabling the shortcut as soon as the editor loses focus.
-
+' Enabling the shortcut as soon as the editor loses focus.
 Me.barItem1.Shortcut = Shortcut.Del
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Node Images Events
 
@@ -539,102 +457,84 @@ This section illustrates the events related to the node images.
 
 DefaultCollapseImageIndex property of the TreeViewAdv sets the index of the default image for collapse button. This event is triggered when this property is changed.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_DefaultCollapseImageIndexChanged(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("DefaultCollapseImageIndexChanged Event is raised ");
-
+    Console.Write("DefaultCollapseImageIndexChanged Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_DefaultCollapseImageIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("DefaultCollapseImageIndexChanged Event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### DefaultExpandImageIndexChanged Event
 
 DefaultExpandImageIndex property of the TreeViewAdv sets the index of the default image for Expand button. The DefaultExpandImageIndexChanged event is triggered when this property is changed.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_DefaultExpandImageIndexChanged(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("DefaultExpandImageIndexChanged Event is raised ");
-
+    Console.Write("DefaultExpandImageIndexChanged Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_DefaultExpandImageIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("DefaultExpandImageIndexChanged Event is raised ")
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### NodeStateImageListChanged Event
 
 NodeStateImageList holds the state images for the nodes. When this image list is changed then, the NodeStateImageListChanged event will be triggered.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_NodeStateImageListChanged(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("NodeStateImageListChanged Event is raised ");
-
+    Console.Write("NodeStateImageListChanged Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_NodeStateImageListChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("NodeStateImageListChanged Event is raised ")
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Node Collections
 
@@ -673,34 +573,29 @@ This section discusses those events that are handled on changing some appearance
 
 This event occurs when the GradientBackground of the tree changes.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_GradientBackgroundChanged(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("Gradient Background Changed Event is raised ");
-
+    Console.Write("Gradient Background Changed Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_GradientBackgroundChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("Gradient Background Changed Event is raised ")
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -712,34 +607,28 @@ Background Settings
 
 This event occurs when the GradientColors of the tree changes.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_GradientColorsChanged(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("Gradient Colors Changed Event is raised ");
-
+    Console.Write("Gradient Colors Changed Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_GradientColorsChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("Gradient Colors Changed Event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
@@ -752,43 +641,35 @@ Background Settings
 
 This event occurs when the tree's VerticalGradient is changed.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_VerticalGradientChanged(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("Vertical GradientChanged Event is raised ");
-
+    Console.Write("Vertical GradientChanged Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_VerticalGradientChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("Vertical GradientChanged Event is raised ")
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 {% seealso %}
 
 Background Settings
 
 {% endseealso %}
-
-
 
 ## Node Editing Events
 
@@ -799,8 +680,6 @@ This section will walk through the following node editing events.
 Context Menu
 
 {% endseealso %}
-
-
 
 ### NodeEditorValidating Event
 
@@ -839,55 +718,38 @@ How To Validate Node Label Text
 
 This topic shows how you can validate the text of the label of a node in the TreeViewAdv control. You need to listen to the NodeEditorValidating event of the TreeViewAdv control to validate the node's label text entered by the user. The code sample below demonstrates how you can prevent blank labels in a node. 
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_NodeEditorValidating(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvCancelableEditEventArgs e)
-
 {
-
     if(e.Label.Length == 0)
-
      {
-
-          // Cancel the label edit action, inform the user, and place the node in edit mode again. 
-
+// Cancel the label edit action, inform the user, and place the node in edit mode again. 
           e.Cancel = true;
-
           MessageBox.Show("The label cannot be blank", "Node Label Edit");
 
-          // To end editing mode,call: e.ContinueEditing = False;
-
+// To end editing mode,call: e.ContinueEditing = False;
      }
-
 } 
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private  Sub treeViewAdv1_NodeEditorValidating(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvCancelableEditEventArgs)
-
 If e.Label.Length = 0 Then
 
-
-
 ' Cancel the label edit action, inform the user, and place the node in edit mode again. 
-
 e.Cancel = True
-
 MessageBox.Show("The label cannot be blank", "Node Label Edit")
 
-
-
 ' To end editing mode,call: e.ContinueEditing = False;
-
 End If
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### NodeEditorValidated Event
 
@@ -914,48 +776,35 @@ Node</td><td>
 Returns the TreeNodeAdv that is currently being edited.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_NodeEditorValidated(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvEditEventArgs e)
-
 {
 
 //This prints the label for the node in the output window at run time.
-
-Console.Write("Label :" + e.Label.ToString());
-
-
+    Console.Write("Label :" + e.Label.ToString());
 
 //This prints the treenodeadv associated with the event in the output window at run time.
-
-Console.Write("TreeNodeAdv :" + e.Node.ToString());
-
+    Console.Write("TreeNodeAdv :" + e.Node.ToString());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_NodeEditorValidated(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvEditEventArgs)
 
-  'This prints the treenodeadv action associated with the event in the output window at run time.
-
+'This prints the treenodeadv action associated with the event in the output window at run time.
 Console.Write("Label :" + e.Action.ToString())
 
-
-
 'This prints the treenodeadv associated with the event in the output window at run time.
-
 Console.Write("TreeNodeAdv :" + e.Node.ToString())
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### NodeEditorValidateString Event
 
@@ -990,82 +839,54 @@ Node</td><td>
 Returns the TreeNodeAdv that is currently being edited.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_NodeEditorValidateString(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvCancelableEditEventArgs e)
-
 {
 
 //The below code cancels the event
-
-e.Cancel = true;
-
-
+    e.Cancel = true;
 
 //This property is consulted only when Cancel is set to true. 
 
 //If you Cancel the operation and if this property is set to false,editing mode will end; 
 
 //otherwise editing mode will be preserved. Default is true.
-
-e.ContinueEditing = false;
-
-
+    e.ContinueEditing = false;
 
 //This prints the label for the node in the output window at run time.
-
-Console.Write("Label :" + e.Label.ToString());
-
-
+    Console.Write("Label :" + e.Label.ToString());
 
 //This prints the treenodeadv associated with the event in the output window at run time.
-
-Console.Write("TreeNodeAdv :" + e.Node.ToString());
-
+    Console.Write("TreeNodeAdv :" + e.Node.ToString());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_NodeEditorValidateString(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvCancelableEditEventArgs)
 
-
-
 'The below code cancels the event
-
 e.Cancel = true
-
-
 
 'This property is consulted only when Cancel is set to true. 
 
 'If you Cancel the operation and if this property is set to false,editing mode will end; 
 
 'otherwise editing mode will be preserved. Default is true.
-
 e.ContinueEditing = False
 
-
-
 'This prints the treenodeadv action associated with the event in the output window at run time.
-
 Console.Write("Label :" + e.Action.ToString())
 
-
-
 'This prints the treenodeadv associated with the event in the output window at run time.
-
 Console.Write("TreeNodeAdv :" + e.Node.ToString())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 N> Another use case illustrating this event - [How to limit the characters, that the user type for editing the treeNodeAdv using LabelEdit](/windowsforms/treeview/faq/how-to-limit-the-characters-that-the-user-type-for-editing)
 
@@ -1098,7 +919,7 @@ Cancel</td><td>
 Gets or Sets a value indicating whether the event should be canceled.</td></tr>
 </table>
 
-#### Method to set UnEditable Nodes
+#### Method to Set UnEditable Nodes
 
 Methods to make a node completely un editable even when the,
 
@@ -1109,130 +930,85 @@ BeforeEdit event can be used for this purpose. In this example, the Parent Nodes
 
 The desired condition is checked on that node and based on the result, the TreeNodeAdvBeforeEditEventArgs.Cancel property is set appropriately.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_BeforeEdit(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs e)
-
 {
 
 // Check if they are parent nodes.
-
-if ((e.Node.Text == "Node0") || (e.Node.Text == "Node5")) 
-
-{
-
-e.Cancel = true;
-
-}
-
+    if ((e.Node.Text == "Node0") || (e.Node.Text == "Node5")) 
+    {
+        e.Cancel = true;
+    }
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub treeViewAdv1_BeforeEdit(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs)
 
-
-
 ' Check if they are parent nodes.
-
 If (e.Node.Text = "Node0") OrElse (e.Node.Text = "Node5") Then
-
 e.Cancel = True
-
 End If
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 Cancel Read / Write property for particular user nodes
 
 By canceling the BeforeEdit event for particular nodes of particular users, the Read/Write property can be canceled. 
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_BeforeEdit(object sender, Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs e)
-
 {
 
 // By cancel the BeforeEdit event for particular nodes helps to cancel the Read/Write property of that nodes. 
-
-if(username=="user1")
-
-{
-
-if ((e.Node.Text == "Node0") || (e.Node.Text == "Node5")||(e.Node.Text == "Node3")||(e.Node.Text == "Node8")) 
-
-{
-
-      e.Cancel = true;
-
-  }
-
-  }
-
-else if(username=="user2")
-
-if ((e.Node.Text == "Node2") || (e.Node.Text == "Node4")||(e.Node.Text == "Node6")||(e.Node.Text == "Node10")) 
-
-{
-
-e.Cancel = true;
-
-}
-
+    if(username=="user1")
+    {
+        if ((e.Node.Text == "Node0") || (e.Node.Text == "Node5")||(e.Node.Text == "Node3")||(e.Node.Text == "Node8")) 
+        {
+            e.Cancel = true;
+        }
+    }
+    else if(username=="user2")
+    if ((e.Node.Text == "Node2") || (e.Node.Text == "Node4")||(e.Node.Text == "Node6")||(e.Node.Text == "Node10")) 
+    {
+        e.Cancel = true;
+    }
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_BeforeEdit(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeNodeAdvBeforeEditEventArgs)
 
-
-
-     ' By cancel the BeforeEdit event for particular nodes helps to cancel the Read/Write property of that nodes. 
-
+' By cancel the BeforeEdit event for particular nodes helps to cancel the Read/Write property of that nodes. 
 If username="user1" Then
-
 If (e.Node.Text = "Node0") OrElse (e.Node.Text = "Node5") OrElse (e.Node.Text = "Node3") OrElse (e.Node.Text = "Node8") Then
-
 e.Cancel = True
-
 End If
-
 Else If username="user2" Then
-
 If (e.Node.Text = "Node2") OrElse (e.Node.Text = "Node4") OrElse (e.Node.Text = "Node6") OrElse (e.Node.Text = "Node10") Then
-
 e.Cancel = True
-
 End If
-
 End If
-
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}
 
 The following figure shows the color change for some of the nodes of the user that indicates the canceled Read/Write property for that node.
 
 ![](Concepts-and--Features_images/Concepts-and--Features_img66.jpeg)
 
-
-
 ![](Concepts-and--Features_images/Concepts-and--Features_img67.jpeg)
-
-
 
 ## Node Selection
 
@@ -1267,37 +1043,38 @@ TreeViewAdvNodeEventArgs </td><td>
 This event will be triggered when mouse hover occurs in TreeViewAdv nodes it will return the particular node currently being tracked by mouse pointer from its argument.When TreeView HotTracking is set as False, this event will not return details for the particular node being HotTracked.This event can return entire details of a node as it is tracked by the mouse.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-// Enable hot tracking.
+//Enable hot tracking.
 this.treeViewAdv1.HotTracking = true;
 
-// Hooking a hot tracking event.
+//Hooking a hot tracking event.
 this.treeViewAdv1.NodeHotTrackChanged += new System.EventHandler(this.treeViewAdv1_NodeHotTrackChanged);
 
 
-    // A NodeHotTrackChanged event.
-    private void treeViewAdv1_NodeHotTrackChanged(object sender, Syncfusion.Windows.Forms.Tools.TreeViewAdvNodeEventArgs e) {
-        this.textBox1.Text = e.Node.Text;
-    }
+//A NodeHotTrackChanged event.
+private void treeViewAdv1_NodeHotTrackChanged(object sender, Syncfusion.Windows.Forms.Tools.TreeViewAdvNodeEventArgs e) {
+this.textBox1.Text = e.Node.Text;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Enable hot tracking.
 Me.treeViewAdv1.HotTracking = true
+
 ' Hooking a NodeHotTrackChanged event.
 AddHandler Me.treeViewAdv1.NodeHotTrackChanged, AddressOf Me.treeViewAdv1_NodeHotTrackChanged
 
 
-    ' A NodeHotTrackChanged event.
-    Private Sub treeViewAdv1_NodeHotTrackChanged(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeViewAdvNodeEventArgs)
-        Me.textBox1.Text = e.Node.Text
-    End Sub
+' A NodeHotTrackChanged event.
+Private Sub treeViewAdv1_NodeHotTrackChanged(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.TreeViewAdvNodeEventArgs)
+Me.textBox1.Text = e.Node.Text
+End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Mouse Events
 
@@ -1349,91 +1126,60 @@ Hide Context Menu When user clicks on an Empty Space on the TreeViewAdv
 
 If the user clicks on an empty space on the TreeViewAdv, the appearance of the context menu can be avoided by handling MouseDown and MouseUp event handlers. With the help of this, the user will be able to know which node is being edited currently. Here the Selected node is set to RMouseDownNode. The RMouseDownNode gets / sets the node on which, the user had done a Right-MouseDown.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_MouseDown(object sender, MouseEventArgs e) 
-
 { 
 
 // Suspends the painting of the control.
-
-if(e.Button == MouseButtons.Right)
-
-{
-
-this.treeViewAdv1.BeginUpdate();
-
-if(this.treeViewAdv1.RMouseDownNode!=null) 
-
-if (this.treeViewAdv1.RMouseDownNode.TextBounds.Contains(this .treeViewAdv1.LastMousePositionToClient())) 
-
-{ 
+    if(e.Button == MouseButtons.Right)
+    {
+        this.treeViewAdv1.BeginUpdate();
+        if(this.treeViewAdv1.RMouseDownNode!=null) 
+        if (this.treeViewAdv1.RMouseDownNode.TextBounds.Contains(this .treeViewAdv1.LastMousePositionToClient())) 
+        {
 
 // Selected Node is set to RMouseDownNode.
-
-this.treeViewAdv1.SelectedNode = this.treeViewAdv1.RMouseDownNode; 
-
-}
-
-} 
-
+            this.treeViewAdv1.SelectedNode = this.treeViewAdv1.RMouseDownNode; 
+        }
+    } 
 } 
 
 private void treeViewAdv1_MouseUp(object sender, MouseEventArgs e) 
-
 { 
 
-     // Resumes the painting of the control.
-
+// Resumes the painting of the control.
      this.treeViewAdv1.EndUpdate(true); 
-
 } 
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
 
 ' Suspends the painting of the control.
-
 If e.Button = MouseButtons.Right Then
-
 Me.treeViewAdv1.BeginUpdate(True)
-
 If Not Me.treeViewAdv1.RMouseDownNode Is Nothing Then
-
 If Me.treeViewAdv1.RMouseDownNode.TextBounds.Contains(Me.treeViewAdv1.LastMousePositionToClient()) Then
 
-
-
 ' SelectedNode is set to RMouseDownNode.
-
 Me.treeViewAdv1.SelectedNode = Me.treeViewAdv1.RMouseDownNode
-
 End If
-
 End If
-
 End If
-
 End Sub
-
-
-
 Private Sub treeViewAdv1_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs)
 
 ' Resumes the painting of the control.
-
 Me.treeViewAdv1.EndUpdate(True)
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### MouseWheelZoom Event
 
@@ -1456,39 +1202,32 @@ Delta</td><td>
 Returns the number of rows or columns to scroll.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_MouseWheelZoom(object sender, Syncfusion.Windows.Forms.Tools.MouseWheelZoomEventArgs e)
-
 {
 
 //This code prints the no of rows or columns to scroll
 
 //This will be displayed in the output window at run time.
-
-Console.Write("Delta Value :" + e.Delta.ToString());
-
+    Console.Write("Delta Value :" + e.Delta.ToString());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_MouseWheelZoom(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.MouseWheelZoomEventArgs)
 
 'This code prints the no of rows or columns to scroll
 
 'This will be displayed in the output window at run time.
-
 Console.Write("Delta Value :" + e.Delta.ToString())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### IntellijMouseDragScrolling Event
 
@@ -1523,82 +1262,55 @@ Scrolled</td><td>
 When set to true, indicates you have scrolled and do not want the default scrolling behavior.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_IntelliMouseDragScrolling(object sender, Syncfusion.Windows.Forms.Tools.IntelliMouseDragScrollEventArgs e)
-
 {
 
 //This prints the distance in pixels, the mouse pointer has been moved 
 
 //horizontally in the output window at run time.
-
 Console.Write("Distance Horizontally :" + e.DX.ToString());
-
-
 
 //This prints the distance in pixels, the mouse pointer has been moved 
 
 //vertically in the output window at run time.
-
 Console.Write("distance Vertically :" + e.DY.ToString());
 
-
-
 //This when set to true indicates that you have scrolled and do not want the default scrolling behavior
-
 e.Scrolled = true;
 
-
-
 //The below code cancels the event
-
 e.Cancel = true;
 
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_IntelliMouseDragScrolling(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.IntelliMouseDragScrollEventArgs)
-
-
 
 'This prints the distance in pixels, the mouse pointer has been moved 
 
 'horizontally in the output window at run time.
-
 Console.Write("distance Horizontally :" + e.DY.ToString())
-
-
 
 'This prints the distance in pixels, the mouse pointer has been moved 
 
 'vertically in the output window at run time.
-
 Console.Write("distance Vertically :" + e.DY.ToString())
 
-
-
 'This when set to true indicates that you have scrolled and do not want the default scrolling behavior
-
 e.Scrolled = True
 
-
-
 'The below code cancels the event
-
 e.Cancel = True
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Mouse Selection Events in TreeViewAdv and MultiColumnTreeView
 
@@ -1647,139 +1359,100 @@ Y</td><td>
 Gets the y-coordinate of the mouse during the generating mouse event.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 void treeViewAdv1_NodeMouseClick(object sender, TreeViewAdvMouseClickEventArgs e)
-
 {
 
-    //Gets the number of times the mouse button was pressed and released.
-
+//Gets the number of times the mouse button was pressed and released.
     int clickCount = e.Clicks;
 
-    //Gets which mouse button was pressed.
-
+//Gets which mouse button was pressed.
     MouseButtons clickedButtons = e.Mousebutton;
 
-    //Gets the x-coordinate of the mouse during the generating mouse event.
-
+//Gets the x-coordinate of the mouse during the generating mouse event.
     int xPosition = e.X;
 
-    //Gets the y-coordinate of the mouse during the generating mouse event
-
+//Gets the y-coordinate of the mouse during the generating mouse event
     int yPosition = e.Y;
 
-    //Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detect is one notch of the mouse wheel.
-
+//Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detect is one notch of the mouse wheel.
    int delta = e.Delta;
 
-   //Gets the node that was clicked.
-
+//Gets the node that was clicked.
    TreeNodeAdv clickedNode = e.Node;
-
 }
-
-
-
 void treeViewAdv1_NodeMouseDoubleClick(object sender, TreeViewAdvMouseClickEventArgs e)
-
 {
 
-    //Gets the number of times the mouse button was pressed and released.
-
+//Gets the number of times the mouse button was pressed and released.
     int clickCount = e.Clicks;
 
-    //Gets which mouse button was pressed.
-
+//Gets which mouse button was pressed.
     MouseButtons clickedButtons = e.Mousebutton;
 
-    //Gets the x-coordinate of the mouse during the generating mouse event.
-
+//Gets the x-coordinate of the mouse during the generating mouse event.
     int xPosition = e.X;
 
-    //Gets the y-coordinate of the mouse during the generating mouse event.
-
+//Gets the y-coordinate of the mouse during the generating mouse event.
     int yPosition = e.Y;
 
-    //Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detect is one notch of the mouse wheel.
-
+//Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detect is one notch of the mouse wheel.
    int delta = e.Delta;
 
-   //Gets the node that was clicked.
-
+//Gets the node that was clicked.
    TreeNodeAdv clickedNode = e.Node;
-
 }
 
 {% endhighlight %}
 
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_NodeMouseClick(sender As Object, e As TreeViewAdvMouseClickEventArgs)
 
 'Gets the number of times the mouse button was pressed and released.
-
 Dim clickCount As Integer = e.Clicks
 
 'Gets which mouse button was pressed.
-
 Dim clickedButtons As MouseButtons = e.Mousebutton
 
 'Gets the x-coordinate of the mouse during the generating mouse event.
-
 Dim xPosition As Integer = e.X
 
 'Gets the y-coordinate of the mouse during the generating mouse event.
-
 Dim yPosition As Integer = e.Y
 
-‘Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detect is one notch of the mouse wheel.
-
+'Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detect is one notch of the mouse wheel.
 Dim delta As Integer = e.Delta
 
 'Gets the node that was clicked.
-
 Dim clickedNode As TreeNodeAdv = e.Node
-
 End Sub
-
-
 Private Sub treeViewAdv1_NodeMouseDoubleClick(sender As Object, e As TreeViewAdvMouseClickEventArgs)
 
 'Gets the number of times the mouse button was pressed and released.
-
 Dim clickCount As Integer = e.Clicks
 
 'Gets which mouse button was pressed.
-
 Dim clickedButtons As MouseButtons = e.Mousebutton
 
 'Gets the x-coordinate of the mouse during the generating mouse event.
-
 Dim xPosition As Integer = e.X
 
 'Gets the y-coordinate of the mouse during the generating mouse event.
-
 Dim yPosition As Integer = e.Y
 
-‘Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detect is one notch of the mouse wheel.
-
+'Gets a signed count of the number of detects the mouse wheel has rotated, multiplied by the WHEEL_DELTA constant. A detect is one notch of the mouse wheel.
 Dim delta As Integer = e.Delta
 
 'Gets the node that was clicked.
-
 Dim clickedNode As TreeNodeAdv = e.Node
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Drag and Drop Events
 
@@ -1790,8 +1463,6 @@ Events that are handled during drag and drop operation, using highlight tracker 
 Drag and Drop
 
 {% endseealso %}
-
-
 
 ### QueryDragInsertInfo
 
@@ -1811,7 +1482,6 @@ The drag drop events given below are discussed here.
 
 ### QueryAllowedPositionForNode
 
-
 This event is discussed here.
 
 ## Scrolling Events
@@ -1822,35 +1492,28 @@ This section discusses about the events during scrolling operation.
 
 This event is triggered when the scrollbars are hidden or shown.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_ScrollbarsVisibleChanged(object sender, EventArgs e)
-
 {
 
 //The below line will be printed in the output window at run time.
-
-Console.Write("ScrollbarsVisibleChanged Event is raised ");
-
+    Console.Write("ScrollbarsVisibleChanged Event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_ScrollbarsVisibleChanged(ByVal sender As Object, ByVal e As EventArgs)
 
 'The below line will be printed in the output window at run time.
-
 Console.Write("ScrollbarsVisibleChanged Event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ScrollControlHandledMouseDown Event
 
@@ -1893,98 +1556,59 @@ Y</td><td>
 Gets the Y-coordinates of the mouse during generating mouse events.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_ScrollControlHandledMouseDown(object sender, MouseEventArgs e)
-
 {
 
 //This code prints mouse button that is pressed.
-
-Console.Write("Button :" + e.Button.ToString());
-
-
+    Console.Write("Button :" + e.Button.ToString());
 
 //This returns the no of times the mouse button was pressed.
-
-Console.Write("Clicks :" + e.Clicks.ToString());
-
-
+    Console.Write("Clicks :" + e.Clicks.ToString());
 
 //This print the Delta value.
-
-Console.Write("Delta value :" + e.Delta.ToString());
-
-
+    Console.Write("Delta value :" + e.Delta.ToString());
 
 //This returns the location of the mouse while generating mouse events.
-
-Console.Write("Location :" + e.Location.ToString());
-
-
+    Console.Write("Location :" + e.Location.ToString());
 
 //This returns the X coordinates of the mouse while generating mouse events.
-
-Console.Write("X coordinate :" + e.X.ToString());
-
-
+    Console.Write("X coordinate :" + e.X.ToString());
 
 //This returns the Y coordinates of the mouse while generating mouse events.
-
-Console.Write("Y coordinate :" + e.Y.ToString());
-
+    Console.Write("Y coordinate :" + e.Y.ToString());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_ScrollControlHandledMouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
 
-
-
 'This code prints mouse button that is pressed.
-
 Console.Write("Button :" + e.Button.ToString())
 
-
-
 'This returns the no of times the mouse button was pressed.
-
 Console.Write("Clicks  :" + e.Clicks.ToString())
 
-
-
 'This print the Delta value.
-
 Console.Write("delta Value :" + e.Delta.ToString())
 
-
-
 'This returns the location of the mouse while generating mouse events.
-
 Console.Write("Location :" + e.Location.ToString())
 
-
-
 'This returns the X coordinates of the mouse while generating mouse events.
-
 Console.Write("X coordinate :" + e.X.ToString())
 
-
-
 'This returns the Y coordinates of the mouse while generating mouse events.
-
 Console.Write("Y coordinate :" + e.Y.ToString())
 
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ScrollControlHandledMouseMove Event
 
@@ -2027,98 +1651,58 @@ Y</td><td>
 Gets the Y-coordinates of the mouse during generating mouse events.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_ScrollControlHandledMouseMove(object sender, MouseEventArgs e)
-
 {
 
 //This code prints mouse button that is pressed.
-
-Console.Write("Button :" + e.Button.ToString());
-
-
+    Console.Write("Button :" + e.Button.ToString());
 
 //This returns the no of times the mouse button was pressed.
-
-Console.Write("Clicks :" + e.Clicks.ToString());
-
-
+    Console.Write("Clicks :" + e.Clicks.ToString());
 
 //This print the Delta value.
-
-Console.Write("Delta value :" + e.Delta.ToString());
-
-
+    Console.Write("Delta value :" + e.Delta.ToString());
 
 //This returns the location of the mouse while generating mouse events.
-
-Console.Write("Location :" + e.Location.ToString());
-
-
+    Console.Write("Location :" + e.Location.ToString());
 
 //This returns the X coordinates of the mouse while generating mouse events.
-
-Console.Write("X coordinate :" + e.X.ToString());
-
-
+    Console.Write("X coordinate :" + e.X.ToString());
 
 //This returns the Y coordinates of the mouse while generating mouse events.
-
-Console.Write("Y coordinate :" + e.Y.ToString());
-
+    Console.Write("Y coordinate :" + e.Y.ToString());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_ScrollControlHandledMouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
 
-
-
 'This code prints mouse button that is pressed.
-
 Console.Write("Button :" + e.Button.ToString())
 
-
-
 'This returns the no of times the mouse button was pressed.
-
 Console.Write("Clicks  :" + e.Clicks.ToString())
 
-
-
 'This print the Delta value.
-
 Console.Write("delta Value :" + e.Delta.ToString())
 
-
-
 'This returns the location of the mouse while generating mouse events.
-
 Console.Write("Location :" + e.Location.ToString())
 
-
-
 'This returns the X coordinates of the mouse while generating mouse events.
-
 Console.Write("X coordinate :" + e.X.ToString())
 
-
-
 'This returns the Y coordinates of the mouse while generating mouse events.
-
 Console.Write("Y coordinate :" + e.Y.ToString())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ScrollControlHandledMouseUp Event
 
@@ -2161,98 +1745,58 @@ Y</td><td>
 Gets the Y-coordinates of the mouse during generating mouse events.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_ScrollControlHandledMouseUp(object sender, MouseEventArgs e)
-
 {
 
 //This code prints mouse button that is pressed.
-
-Console.Write("Button :" + e.Button.ToString());
-
-
+    Console.Write("Button :" + e.Button.ToString());
 
 //This returns the no of times the mouse button was pressed.
-
-Console.Write("Clicks :" + e.Clicks.ToString());
-
-
+    Console.Write("Clicks :" + e.Clicks.ToString());
 
 //This print the Delta value.
-
-Console.Write("Delta value :" + e.Delta.ToString());
-
-
+    Console.Write("Delta value :" + e.Delta.ToString());
 
 //This returns the location of the mouse while generating mouse events.
-
-Console.Write("Location :" + e.Location.ToString());
-
-
+    Console.Write("Location :" + e.Location.ToString());
 
 //This returns the X coordinates of the mouse while generating mouse events.
-
-Console.Write("X coordinate :" + e.X.ToString());
-
-
+    Console.Write("X coordinate :" + e.X.ToString());
 
 //This returns the Y coordinates of the mouse while generating mouse events.
-
-Console.Write("Y coordinate :" + e.Y.ToString());
-
+    Console.Write("Y coordinate :" + e.Y.ToString());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_ScrollControlHandledMouseUp(ByVal sender As Object, ByVal e As MouseEventArgs)
 
-
-
 'This code prints mouse button that is pressed.
-
 Console.Write("Button :" + e.Button.ToString())
 
-
-
 'This returns the no of times the mouse button was pressed.
-
 Console.Write("Clicks  :" + e.Clicks.ToString())
 
-
-
 'This print the Delta value.
-
 Console.Write("delta Value :" + e.Delta.ToString())
 
-
-
 'This returns the location of the mouse while generating mouse events.
-
 Console.Write("Location :" + e.Location.ToString())
 
-
-
 'This returns the X coordinates of the mouse while generating mouse events.
-
 Console.Write("X coordinate :" + e.X.ToString())
 
-
-
 'This returns the Y coordinates of the mouse while generating mouse events.
-
 Console.Write("Y coordinate :" + e.Y.ToString())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ScrollControlMouseDown Event
 
@@ -2279,44 +1823,34 @@ MouseEventArgs</td><td>
 Indicates the MouseEventArgs data for this event.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_ScrollControlHandledMouseDown(object sender, Syncfusion.Windows.Forms.CancelMouseEventArgs e)
-
 {
 
 //Returns the MouseEventArgs data for this event
-
-Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()");
+    Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()");
 
 //Cancel the event using the below code.
-
-e.Cancel = true;
-
+    e.Cancel = true;
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_ScrollControlHandledMouseDown(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.CancelMouseEventArgs)
 
 //Returns the MouseEventArgs data for this event
-
 Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()")
 
 //Cancel the event using the below code.
-
 e.Cancel = True
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ScrollControlMouseMove Event
 
@@ -2343,44 +1877,34 @@ MouseEventArgs</td><td>
 Indicates the MouseEventArgs data for this event.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_ScrollControlHandledMouseMove(object sender, Syncfusion.Windows.Forms.CancelMouseEventArgs e)
-
 {
 
 //Returns the MouseEventArgs data for this event
-
-Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()");
+    Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()");
 
 //Cancel the event using the below code.
-
-e.Cancel = true;
-
+    e.Cancel = true;
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_ScrollControlHandledMouseMove(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.CancelMouseEventArgs)
 
 //Returns the MouseEventArgs data for this event
-
 Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks" + e.MouseEventArgs.Clicks.ToString() + "Delta value" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse" + e.MouseEventArgs.Location.ToString() + "X cord" + e.MouseEventArgs.X.ToString() + " Y cord:" + e.MouseEventArgs.Y.ToString()")
 
 //Cancel the event using the below code.
-
 e.Cancel = True
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ScrollControlMouseUp Event
 
@@ -2407,48 +1931,34 @@ MouseEventArgs</td><td>
 Indicates the MouseEventArgs data for this event.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_ScrollControlHandledMouseUp(object sender, Syncfusion.Windows.Forms.CancelMouseEventArgs e)
-
 {
 
 //Returns the MouseEventArgs data for this event
-
-Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks :" + e.MouseEventArgs.Clicks.ToString() + "Delta value :" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse :" + e.MouseEventArgs.Location.ToString() + "X coordinate :" + e.MouseEventArgs.X.ToString() + " Y coordinate :" + e.MouseEventArgs.Y.ToString()");
-
-
+    Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks :" + e.MouseEventArgs.Clicks.ToString() + "Delta value :" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse :" + e.MouseEventArgs.Location.ToString() + "X coordinate :" + e.MouseEventArgs.X.ToString() + " Y coordinate :" + e.MouseEventArgs.Y.ToString()");
 
 //Cancel the event using the below code.
-
-e.Cancel = true;
-
+    e.Cancel = true;
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_ScrollControlHandledMouseUp(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.CancelMouseEventArgs)
 
 //Returns the MouseEventArgs data for this event
-
 Console.Write("Mouse Button :" + e.MouseEventArgs.Button.ToString() + "No of clicks :" + e.MouseEventArgs.Clicks.ToString() + "Delta value :" + e.MouseEventArgs.Delta.ToString() + "Location of the mouse:" + e.MouseEventArgs.Location.ToString() + "X coordinate :" + e.MouseEventArgs.X.ToString() + " Y coordinate :" + e.MouseEventArgs.Y.ToString()")
 
-
-
 //Cancel the event using the below code.
-
 e.Cancel = True
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ScrollTipFeedback Event
 
@@ -2511,155 +2021,85 @@ Value</td><td>
 Returns the new scroll position.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void treeViewAdv1_ScrollTipFeedback(object sender, Syncfusion.Windows.Forms.ScrollTipFeedbackEventArgs e)
-
 {
 
 //Returns the ScrollTipActions value
-
-Console.Write("Action :" + e.Action.ToString());
-
-
+    Console.Write("Action :" + e.Action.ToString());
 
 //This prints the Back Color to be used for the Scroll Tip Text
-
-Console.Write("BackColor:" + e.BackColor.ToString());
-
-
+    Console.Write("BackColor:" + e.BackColor.ToString());
 
 //This prints the Border style to be used for the Scroll Tip Text
-
-Console.Write("Border Style:" + e.BorderStyle.ToString());
-
-
+    Console.Write("Border Style:" + e.BorderStyle.ToString());
 
 //This prints the Font to be used for the Scroll Tip text
-
-Console.Write("Font:" + e.Font.ToString());
-
-
+    Console.Write("Font:" + e.Font.ToString());
 
 //This prints the text color to be used for the Scroll Tip text
-
-Console.Write("Fore Color:" + e.ForeColor.ToString());
-
-
+    Console.Write("Fore Color:" + e.ForeColor.ToString());
 
 //This prints the layout out info to be used for the Scroll Tip text
-
-Console.Write("Format:" + e.Format.ToString());
-
-
+    Console.Write("Format:" + e.Format.ToString());
 
 //This prints the Location of the ScrollTipWindow
-
-Console.Write("Location:" + e.Location.ToString());
-
-
+    Console.Write("Location:" + e.Location.ToString());
 
 //This prints the scrollbar which is the source of this event.
-
-Console.Write("Scrollbar:" + e.ScrollBar.ToString());
-
-
+    Console.Write("Scrollbar:" + e.ScrollBar.ToString());
 
 //This prints the size of the ScrollTipWindow
-
-Console.Write("Size :" + e.Size.ToString());
-
-
+    Console.Write("Size :" + e.Size.ToString());
 
 //This prints the text for the ScrollTip
-
-Console.Write("Scrolltip Text:" + e.Text.ToString());
-
-
+    Console.Write("Scrolltip Text:" + e.Text.ToString());
 
 //This returns the new scroll position
-
-Console.Write("Scroll position:" + e.Value.ToString());
-
+    Console.Write("Scroll position:" + e.Value.ToString());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeViewAdv1_ScrollTipFeedback(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.ScrollTipFeedbackEventArgs)
 
-
-
 'Returns the ScrollTipActions value
-
 Console.Write("Action :" + e.Action.ToString())
 
-
-
 'This prints the Back Color to be used for the Scroll Tip Text
-
 Console.Write("BackColor:" + e.BackColor.ToString())
 
-
-
 'This prints the Border style to be used for the Scroll Tip Text
-
 Console.Write("Border Style:" + e.BorderStyle.ToString())
 
-
-
 'This prints the Font to be used for the Scroll Tip text
-
 Console.Write("Font:" + e.Font.ToString())
 
-
-
 'This prints the text color to be used for the Scroll Tip text
-
 Console.Write("Fore Color:" + e.ForeColor.ToString())
 
-
-
 'This prints the layout out info to be used for the Scroll Tip text
-
 Console.Write("Format:" + e.Format.ToString())
 
-
-
 'This prints the Location of the ScrollTipWindow
-
 Console.Write("Location:" + e.Location.ToString())
 
-
-
 'This prints the scrollbar which is the source of this event.
-
 Console.Write("Scrollbar:" + e.ScrollBar.ToString())
 
-
-
 'This prints the size of the ScrollTipWindow
-
 Console.Write("Size :" + e.Size.ToString())
 
-
-
 'This prints the text for the ScrollTip
-
 Console.Write("Scrolltip Text:" + e.Text.ToString())
 
-
-
 'This returns the new scroll position
-
 Console.Write("Scroll position:" + e.Value.ToString())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}

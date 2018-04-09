@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Getting Started
 
-## Assembly deployment
+## Assembly Deployment
 
 The following list of assemblies should be added as reference to use the `SfToolTip` component in any application:
 
@@ -24,13 +24,13 @@ Syncfusion.Core.WinForms<br/><br/></td><td>
 Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm and SfSkinManager.<br/><br/></td></tr>
 </table>
 
-## Setting the SfToolTip to a control
+## Setting the SfToolTip to a Control
 
 This section describes how to add the `SfToolTip` to a Control.
 
-### Through designer
+### Through Designer
 
-#### Setting using text
+#### Setting using Text
 
 1) Drag and drop the `SfToolTip` to the form.
 2) When the `SfToolTip` component is added to a form, an extended property will be added to the properties of the controls in the form.
@@ -38,12 +38,11 @@ This section describes how to add the `SfToolTip` to a Control.
 
 ![](SfToolTip_images/SfToolTip_img1.jpeg)
 
-##### Designer generated code
+##### Designer Generated Code
 
 {% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip(this.components);
-
 Button button1 = new System.Windows.Forms.Button();
 
 // 
@@ -51,22 +50,13 @@ Button button1 = new System.Windows.Forms.Button();
 // button1
 
 // 
-
 this.button1.Location = new System.Drawing.Point(62, 74);
-
 this.button1.Name = "button1";
-
 this.button1.Size = new System.Drawing.Size(84, 28);
-
 this.button1.TabIndex = 0;
-
 this.button1.Text = "Button";
-
 this.sfToolTip1.SetToolTip(this.button1, "The ToolTip information of the Button control.");
-
 this.button1.UseVisualStyleBackColor = true;
-
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,18 +81,14 @@ The provided ToolTip text will be configured for the control and will be shown w
 
 ![](SfToolTip_images/SfToolTip_img5.jpeg)
 
-##### Designer generated code
+##### Designer Generated Code
 
 {% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
-
 ToolTipItem toolTipItem1 = new ToolTipItem();
-
 ToolTipItem toolTipItem2 = new ToolTipItem();
-
 SfToolTip sfToolTip1 = new SfToolTip(this.components);
-
 Button button1 = new System.Windows.Forms.Button();
 
 // 
@@ -110,32 +96,18 @@ Button button1 = new System.Windows.Forms.Button();
 // button1
 
 // 
-
 this.button1.Location = new System.Drawing.Point(62, 74);
-
 this.button1.Name = "button1";
-
 this.button1.Size = new System.Drawing.Size(84, 28);
-
 this.button1.TabIndex = 0;
-
 this.button1.Text = "Button";
-
 toolTipItem1.Text = "ToolTipItem1 Text";
-
 toolTipItem2.Text = "ToolTipItem2 Text";
-
 toolTipInfo1.Items.AddRange(new ToolTipItem[] {
-
 toolTipItem1,
-
 toolTipItem2});
-
 this.sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
-
 this.button1.UseVisualStyleBackColor = true;
-
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -144,19 +116,16 @@ The provided `ToolTipInfo` will be configured for the control and will be shown 
 
 ![](SfToolTip_images/SfToolTip_img6.jpeg)
 
-### Through code
+### Through Code
 
-#### Setting using text
+#### Setting using Text
 
 The `SfToolTip` can be set to the control with tooltip text by using the `SetToolTip` method. 
 
 {% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
-
 sfToolTip1.SetToolTip(this.button1, " The ToolTip information of the Button control.");
-
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -171,22 +140,15 @@ The `SfToolTip` can be set to the control with set of tooltip information by usi
 {% tabs %}
 {% highlight c# %}
 SfToolTip sfToolTip1 = new SfToolTip();
-
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
-
 ToolTipItem toolTipItem1 = new ToolTipItem();
 
 toolTipItem1.Text = "ToolTipItem 1 Text";
-
 ToolTipItem toolTipItem2 = new ToolTipItem();
 
 toolTipItem2.Text = "ToolTipItem 2 Text";
-
 toolTipInfo1.Items.AddRange(new ToolTipItem[] { toolTipItem1, toolTipItem2 });
-
 sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
-
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -194,9 +156,9 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 ![](SfToolTip_images/SfToolTip_img8.jpeg)
 
 
-## Displaying the SfToolTip programmatically
+## Displaying the SfToolTip Programmatically
 
-### Show tooltip
+### Show Tooltip
 
 The SfToolTip can be shown programmatically using the `Show` method. The various overloads provided to show the tooltip are documented in `Show`.
 
@@ -205,80 +167,55 @@ The SfToolTip can be shown programmatically using the `Show` method. The various
 {% tabs %}
 {% highlight c# %}
 Button button1 = new Button();
-
 this.Controls.Add(button1);
-
 button1.Click += Button1_Click;
 
 Button button2 = new Button();
-
 this.Controls.Add(button2);
-
 button2.Click += Button2_Click;
 
 Button button3 = new Button();
-
 this.Controls.Add(button3);
-
 button3.Click += Button3_Click;
-
 private void Button1_Click(object sender, EventArgs e)
-
 {
 
 // Shows the text in the cursor position.
-
-this.sfToolTip1.Show("Programmatically showing the tooltip text");
-
+    this.sfToolTip1.Show("Programmatically showing the tooltip text");
 }
-
 private void Button2_Click(object sender, EventArgs e)
-
 {
 
 // Shows the text in the specified position.
-
-this.sfToolTip1.Show("Programmatically showing the tooltip in specified position", new Point(300, 300));
-
+    this.sfToolTip1.Show("Programmatically showing the tooltip in specified position", new Point(300, 300));
 }
-
 private void Button3_Click(object sender, EventArgs e)
-
 {
-
-ToolTipInfo toolTipInfo = new ToolTipInfo();
-
-ToolTipItem toolTipItem = new ToolTipItem();
-
-toolTipItem.Text = "ToolTipItem text";
-
-toolTipInfo.Items.Add(toolTipItem);
+    ToolTipInfo toolTipInfo = new ToolTipInfo();
+    ToolTipItem toolTipItem = new ToolTipItem();
+    toolTipItem.Text = "ToolTipItem text";
+    toolTipInfo.Items.Add(toolTipItem);
 
 // Shows the ToolTipInfo in  cursor position.
-
 this.sfToolTip1.Show(toolTipInfo);
-
 }
-
-
 
 {% endhighlight %}
 {% endtabs %}
 
-### Hide tooltip
+### Hide Tooltip
 
 The `SfToolTip` can be hidden using the `Hide` method. 
 
 {% tabs %}
 {% highlight c# %}
+
 this.sfToolTip1.Hide();
-
-
 
 {% endhighlight %}
 {% endtabs %}
 
-## Setting the ToolTip delay
+## Setting the ToolTip Delay
 
 The following properties can be used to set the ToolTip delay time:
 
@@ -291,11 +228,9 @@ The `InitialDelay` property enables you to shorten or lengthen the time that the
 
 {% tabs %}
 {% highlight c# %}
+
 SfToolTip sfToolTip1 = new SfToolTip();
-
 sfToolTip1.InitialDelay = 1000;
-
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -306,40 +241,29 @@ The `AutoPopDelay` property enables you to shorten or lengthen the time duration
 
 {% tabs %}
 {% highlight c# %}
+
 SfToolTip sfToolTip1 = new SfToolTip();
-
 sfToolTip1.AutoPopDelay = 10000;
-
-
 
 {% endhighlight %}
 {% endtabs %}
 
-## Showing ToolTip with beak
+## Showing ToolTip with Beak
 
 The `SfToolTip` can be shown with the beak by using the `ToolTipStyle` property.
 
 {% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
-
 toolTipInfo1.ToolTipStyle = ToolTipStyle.Balloon;
 
 ToolTipItem toolTipItem1 = new ToolTipItem();
-
 toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : david@syncfusion.com";
-
 toolTipItem1.Style.TextAlignment = ContentAlignment.MiddleLeft;
-
 toolTipItem1.Image = global::GettingStarted.Properties.Resources.MORGK;
-
 toolTipItem1.Style.ImageSize = new Size(100, 100);
-
 toolTipInfo1.Items.AddRange(new ToolTipItem[] { toolTipItem1 });
-
 sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
-
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -347,33 +271,22 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 ![](SfToolTip_images/SfToolTip_img9.jpeg)
 
 
-### Setting the beak back color
+### Setting the Beak Back Color
 
 The back color of the balloon beak can be set using the `BeakBackColor` of `ToolTipInfo` property.
 
 {% tabs %}
 {% highlight c# %}
 ToolTipInfo toolTipInfo1 = new ToolTipInfo();
-
 toolTipInfo1.ToolTipStyle = ToolTipStyle.Balloon;
-
 toolTipInfo1.BeakBackColor = Color.LightSkyBlue;
-
 ToolTipItem toolTipItem1 = new ToolTipItem();
-
 toolTipItem1.Text = "David Carter\r\nPhone : +1 919.494.1974\r\nEmail : david@syncfusion.com";
-
 toolTipItem1.Style.TextAlignment = ContentAlignment.MiddleLeft;
-
 toolTipItem1.Image = global::GettingStarted.Properties.Resources.MORGK;
-
 toolTipItem1.Style.ImageSize = new Size(100, 100);
-
 toolTipInfo1.Items.AddRange(new ToolTipItem[] { toolTipItem1 });
-
 sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
-
-
 
 {% endhighlight %}
 {% endtabs %}

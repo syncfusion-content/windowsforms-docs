@@ -23,12 +23,10 @@ Tree nodes can be added to the control at design time as follows.
    ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
-
 5. Click "Add Node". This will add a new top-level node.
 6. The node's properties will be displayed in the property grid to the right. Specify a custom label for the node by changing its text property as shown in the below image.
 
    ![](Getting-Started_images/Getting-Started_img2.jpeg)
-
 
 7. Click "Add Node" to add another sibling to the selected node.
 8. Click "Add Child" to add a child node to the selected node.
@@ -38,7 +36,6 @@ Tree nodes can be added to the control at design time as follows.
 12. Click "OK" to save changes.
 
 ## Through Code
-
 
 Tree nodes can be added to the control programmatically as follows.
 
@@ -94,7 +91,6 @@ Me.Controls.Add(Me.treeViewAdv1)
 {% highlight C# %}
 
 //Creating new instance of node.
-
 TreeNodeAdv node = new TreeNodeAdv("Top1");
 
 {% endhighlight %}
@@ -102,7 +98,6 @@ TreeNodeAdv node = new TreeNodeAdv("Top1");
 {% highlight VB %}
   
 'Creating new instance of node.
-
 Dim node As New TreeNodeAdv("Top1")
 
 {% endhighlight %}
@@ -116,7 +111,6 @@ Dim node As New TreeNodeAdv("Top1")
 {% highlight C# %}
 
 //Add the created nodes to the TreeViewAdv.
-
 this.treeViewAdv1.Nodes.Add(node);
 
 {% endhighlight %}
@@ -145,7 +139,6 @@ node.Nodes.Add(new TreeNodeAdv("Child 1"));
 {% highlight VB %}
 
 'Add nodes to the existing nodes.
-
 node.Nodes.Add(New TreeNodeAdv("Child 1"))
 
 {% endhighlight %}
