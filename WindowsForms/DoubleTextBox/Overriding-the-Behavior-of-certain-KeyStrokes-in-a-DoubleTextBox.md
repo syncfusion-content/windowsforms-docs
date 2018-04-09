@@ -10,6 +10,8 @@ documentation: ug
 
 This can be done by overriding the HandleSubtractKey(). Given below is the code snippet which shows an example of how to clear the text when the NegativeSign is changed.
 
+{% tabs %}
+
 {% highlight C# %}  
 
 public class DoubleTextBoxAdv : Syncfusion.Windows.Forms.Tools.DoubleTextBox
@@ -131,6 +133,8 @@ Public Class DoubleTextBoxAdv
 End Class
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 
