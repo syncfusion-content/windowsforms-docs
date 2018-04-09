@@ -295,6 +295,7 @@ The nodes can be added to the TreeViewAdv when any key is pressed, whereby the t
 
 #### Border Settings
 
+{% tabs %}
 {% highlight c# %}
 
 // Setting the key data to the newly added node.
