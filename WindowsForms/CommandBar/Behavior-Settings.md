@@ -77,7 +77,6 @@ this.commandBar1.RowOffset = 1;
 
 {% highlight VB %}
 
-{% endtabs %}
 
 
 
@@ -86,6 +85,8 @@ Me.commandBar1.RowIndex = 0
 Me.commandBar1.RowOffset = 0
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Visible/hidden CommandBar
 
