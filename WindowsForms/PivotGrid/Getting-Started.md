@@ -122,6 +122,8 @@ Me.Controls.Add(pivotGridControl1)
 
 {% endtabs %}
 
+{% endtabs %}
+
 ### Adding control via Syncfusion reference manager
 
 [Syncfusion reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion controls. PivotGrid control can be added through Syncfusion reference manager by following the below steps.
