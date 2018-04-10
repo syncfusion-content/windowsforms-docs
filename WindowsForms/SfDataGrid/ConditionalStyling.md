@@ -11,7 +11,7 @@ documentation: ug
 
 ## Cells
 
-### Styling based on content
+### Styling based on Content
 
 The appearance of the record cells in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
 
@@ -55,7 +55,7 @@ End Sub
 
 ![](ConditionalStyling_images/ConditonalStyling1.png)
 
-### Styling alternate cells
+### Styling Alternate Cells
 
 The appearance of the alternating cells in a column can be customized conditionally by using the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
 
@@ -92,7 +92,7 @@ End Sub
 
 ## Rows
 
-### Styling based on content
+### Styling based on Content
 
 The appearance of the record rows in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.
 
@@ -123,7 +123,7 @@ End Sub
 
 ![](ConditionalStyling_images/ConditonalStyling3.png)
 
-### Styling alternate rows
+### Styling Alternate Rows
 
 The appearance of the alternating rows in  SfDataGrid can be customized by using the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.
 
@@ -389,8 +389,6 @@ The appearance of the stacked headers in SfDataGrid can be customized conditiona
 this.sfDataGrid1.CellRenderers.Remove("StackedHeader");
 this.sfDataGrid1.CellRenderers.Add("StackedHeader", new CustomStackedHeaderCellRenderer());
 
-
-
 public class CustomStackedHeaderCellRenderer : GridStackedHeaderCellRenderer
 {
     protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
@@ -403,7 +401,6 @@ public class CustomStackedHeaderCellRenderer : GridStackedHeaderCellRenderer
         {
             style.BackColor = Color.BlanchedAlmond;
         }
-
         base.OnRender(paint, cellRect, cellValue, style, column, rowColumnIndex);
     }
 }
@@ -467,7 +464,7 @@ End Sub
 
 ![](ConditionalStyling_images/ConditonalStyling12.png)
 
-## Adding an image for a cell
+## Adding an Image for a Cell
 
 SfDataGrid allows to add image within a cell by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
@@ -502,7 +499,7 @@ End Sub
 
 ![](ConditionalStyling_images/ConditonalStyling13.png)
 
-## Highlighting the newly added row 
+## Highlighting the Newly Added Row 
 
 The newly added records in SfDataGrid can be highlighted by changing its Background or Foreground color. 
 For that add a new Boolean property in underling data source and set it as true for newly added records in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowInitiating_EV.html) event.
@@ -538,7 +535,6 @@ private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
 {% highlight vb %}
 AddHandler sfDataGrid1.DrawCell, AddressOf SfDataGrid1_DrawCell
 
-
 Private Sub SfDataGrid1_DrawCell(ByVal sender As Object, ByVal e As DrawCellEventArgs)
 	If e.DataRow.RowData IsNot Nothing AndAlso (TryCast(e.DataRow.RowData, OrderInfo)).isNewlyAdded Then
 		e.Style.BackColor = Color.LightBlue
@@ -549,7 +545,7 @@ End Sub
 
 ![](ConditionalStyling_images/ConditonalStyling14.png)
 
-## Alignment customization based on column
+## Alignment Customization based on Column
 
 The alignment within the cell can be changed based on the columns using the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
@@ -559,7 +555,6 @@ this.sfDataGrid1.DrawCell += SfDataGrid1_DrawCell;
 
 private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
 {
-
     if (e.Column.MappingName == "ProductName")
     {
         e.Style.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;

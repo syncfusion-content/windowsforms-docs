@@ -51,7 +51,7 @@ Below are the limitations when binding DataTable as `DataSource` to SfDataGrid.
 
 ![](DataBinding_images/DataBinding_img1.jpeg)
 
-## Binding to XML data
+## Binding to XML Data
 SfDataGrid can be bound to data from XML files. This can be achieved by using the [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset(v=vs.110).aspx) object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the SfDataGrid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
 
 {% tabs %}
@@ -68,7 +68,7 @@ Me.sfDataGrid1.DataSource = dataSet.Tables(0)
 {% endtabs %}
 ![](DataBinding_images/DataBinding_img2.jpeg)
 
-## Binding Complex properties
+## Binding Complex Properties
 SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html).
 {% tabs %}
 {% highlight c# %}
@@ -81,10 +81,10 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeCo
 
 All the data operations (sorting, grouping, filtering and etc.) are supported when binding complex property.
 
-### Limitations when binding complex property
+### Limitations when Binding Complex Property
 * SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) – [AllowDataShaping](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html).
 
-## Binding Indexer properties
+## Binding Indexer Properties
 SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to `GridColumn`, set the indexer property path to `MappingName`.
 {% tabs %}
 {% highlight c# %}
@@ -97,7 +97,7 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeDe
 
 All the data operations (sorting, grouping, filtering and etc.) are supported when binding indexer property. 
 
-### Limitations when binding indexer property
+### Limitations when Binding Indexer Property
 * SfDataGrid doesn’t support [LiveDataUpdateMode ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html)– [AllowDataShaping](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html).
 
 ## Events
@@ -309,7 +309,7 @@ When BeginInit method is called it suspends all the updates until EndInit method
 
 N>`View` has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
 
-## Binding data from ADO .NET Entity Framework
+## Binding Data from ADO .NET Entity Framework
 SfDataGrid control supports to bind data from ADO.NET Entity Framework. This walk-through describe about binding data from ADO.NET Entity Framework and save back the changes to the database.
 **References:**
 [https://msdn.microsoft.com/en-us/library/jj682076(v=vs.113).aspx](https://msdn.microsoft.com/en-us/library/jj682076(v=vs.113).aspx) 
@@ -341,7 +341,7 @@ To create Data Model using Entity Framework in Windows Forms application, follow
 
 ![](DataBinding_images/DataBinding_img7.jpeg)
 
-### Loading data from Entity Framework data service
+### Loading Data from Entity Framework Data Service
 The data from the defined entity model can be loaded as a data source to the SfDataGrid by loading the **Order Details** table by the created entity for the **Northwnd** database.
 
 {% tabs %}
@@ -360,10 +360,10 @@ Now, run the application. The following screenshot shows the SfDataGrid control 
 
 ![](DataBinding_images/DataBinding_img8.jpeg)
 
-## Binding data from LINQ to SQL
+## Binding Data from LINQ to SQL
 SfDataGrid control supports to bind data from LINQ to SQL. This walkthrough, describes about binding data from LINQ to SQL and save back the changes to the Database.
 
-### Adding data model using LINQ to SQL
+### Adding Data Model using LINQ to SQL
 To create data model using LINQ to SQL in WF project follow the below steps.
 1) Right click on the project, Select **Add** option and then click **New Item**.
 2) The Add New Item wizard appears, Select **LINQ to SQL Classes** from the **Visual C#**.
@@ -395,7 +395,7 @@ To create data model using LINQ to SQL in WF project follow the below steps.
 
 10) Drag **Shippers** table in to design view of **Northwind.dbml**. The Entity model diagram for **Shippers** table is generated once it is dropped in to design view.
 
-### Loading data from LINQ to SQL classes
+### Loading Data from LINQ to SQL Classes
 
 The data from the defined data model of the LINQ to SQL classes can be loaded as a data source to the SfDataGrid by loading the **Shippers** table by the created data context for the **Northwnd** database.
 
@@ -411,10 +411,10 @@ Me.sfDataGrid1.DataSource = northWindDataContext.Shippers
 {% endtabs %}
 ![](DataBinding_images/DataBinding_img15.jpeg)
 
-## Binding data from ADO.NET
+## Binding Data from ADO.NET
 SfDataGrid control supports to load the data using ADO.NET. This walk-through, describe about binding data from ADO.NET service
 
-### Connecting application to Databases
+### Connecting Application to Databases
 To connect SQL database to WinForms application, refer the below MSDN link or follow the below steps,
 [https://msdn.microsoft.com/en-us/library/s4yys16a.aspx](https://msdn.microsoft.com/en-us/library/s4yys16a.aspx) 
 
@@ -438,7 +438,7 @@ To connect SQL database to WinForms application, refer the below MSDN link or fo
 
 6) To get connection string for the database, right-click on the database and then click **Properties** option.
 
-### Loading data from ADO.NET
+### Loading Data from ADO.NET
 To access the data from data source using `ADO.NET`, follow the below steps.
 
 1) Create a connection through any of the [.NET Framework data provider](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source.
@@ -468,10 +468,10 @@ Me.sfDataGrid1.DataSource = dataSet.Tables("Suppliers")
 
 ![](DataBinding_images/DataBinding_img20.jpeg)
 
-## Binding data from Microsoft Access
+## Binding Data from Microsoft Access
 SfDataGrid control supports to bind data from Microsoft Access database. This section describes about how to bind the data from Microsoft Access database to SfDataGrid.
 
-### Importing Microsoft Access database
+### Importing Microsoft Access Database
 To load the data from Microsoft Access database, follow the below steps.
 
 1) On the **View** menu, select **Other Windows > Data Sources**.
@@ -502,7 +502,7 @@ To load the data from Microsoft Access database, follow the below steps.
 
 9) Select whatever tables or views in the dataset, and then select **Finish**.
 
-### Loading data from Microsoft Access database
+### Loading Data from Microsoft Access Database
 To access the Microsoft Access database, follow the below steps.
 
 1) Create a **OleDbConnection** with the Microsoft Access database.
