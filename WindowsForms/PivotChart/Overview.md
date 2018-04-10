@@ -1,29 +1,28 @@
 ---
 layout: post
-title: Data-Binding | Windows Forms | Syncfusion
-description: data binding
+title: Overview | Windows Forms | Syncfusion
+description: overview
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
-# PivotChart
+# Overview
 
-Essential PivotChart for Windows Forms is easy to use and visually stunning charting component. It includes common PivotChart types ranging from line charts to specialized charts. The PivotChart control for Windows Forms is a lightweight control that reads Pivot information and visualizes it in graphical format with the ability to drill up and down. Essential PivotChart for Windows Forms is a perfect solution for developers looking to add advanced, feature rich, and visually appealing PivotCharts to their applications with pivotal data.
+The PivotChart control for Windows Forms is a lightweight control that reads pivot information and visualizes it in graphical format with the ability to drill up and down. It is easy to use and includes common chart types ranging from line charts to specialized charts. The PivotChart control is a visually stunning charting component that provides a perfect solution for developers to add advanced, rich and visually appealing charts to their applications with pivotal data.
 
+![Overview](Overview_images/Overview.png)
 
-![](Overview_images/overview_img1.jpg)
+## Key Features
 
-## KEY FEATURES
+The important features of PivotChart control are listed below:
 
-* PivotChart Data Source-Populates the PivotChart with IEnumerable list or data table.
-
-* PivotChart Customization-Easy customization options for each and every unit of PivotChart such as PivotChart area, PivotChart series, and PivotChart legend.
-
-* PivotChart DrillDown-PivotChart series is grouped to form highly customizable and interactive PivotChart series based on Pivotal Data.
-
-* PivotTable fieldList- Helps you to group Pivot Items within various fields.
-
-* Interactive Excel Export-Supports PivotChart export to excel with user interaction enabled.
-
-* Zooming and Scrolling-The zooming and scrolling features enable you to zoom into an area of the chart so the data can be viewed more clearly.
+* **Data binding** - Supports to populate the PivotChart with data sources such as IEnumerable list or data table.
+* **Drill support** - Enables to navigate through inner levels of a particular element in the row axis.
+* **Pivot table field list** - Provides a built-in pivot schema designer very similar to Microsoft’s Excel.
+* **Grouping bar** - Interactive support to group the data in the PivotChart.
+* **Legend** - Helps to differentiate between chart series using a color code along with labels to indicate that it applies to information from Series 1, Series 2, and so on.
+* **Customization** - Easy customization options for each and every unit of PivotChart such as chart area, series, and legend.
+* **Exporting** - Allows to export the PivotChart control into excel format.
+* **Printing** - Allows to print the PivotChart control.
+* **Zooming and scrolling** - Interactive support to zoom into an area of the chart so the data can be viewed more clearly.
