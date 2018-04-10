@@ -57,12 +57,12 @@ To create a node in the Diagram control:
 
 private void Form1_Load(object sender, EventArgs e)
 {
-Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
-diagram1.Model.AppendChild(ellipse);
+	Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
+	diagram1.Model.AppendChild(ellipse);
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 Dim ellipse As New Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70)
@@ -88,28 +88,28 @@ The following code example demonstrates how to apply node property settings.
 
 private void Form1_Load(object sender, EventArgs e)
 {
-Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
-diagram1.Model.AppendChild(ellipse);
-ellipse.FillStyle.Color = System.Drawing.Color.AliceBlue;
-ellipse.FillStyle.ColorAlphaFactor = 100;
-ellipse.FillStyle.ForeColor = System.Drawing.Color.Aquamarine;
-ellipse.FillStyle.ForeColorAlphaFactor = 70;
-ellipse.FillStyle.Type = FillStyleType.PathGradient;
-ellipse.FillStyle.PathBrushStyle = PathGradientBrushStyle.RectangleCenter;
-ellipse.FillStyle.Type = FillStyleType.LinearGradient;
-ellipse.FillStyle.GradientAngle = 95;
-ellipse.FillStyle.GradientCenter = 0.5f;
-ellipse.EditStyle.AllowChangeHeight = true;
-ellipse.EditStyle.AllowChangeWidth = true;
-ellipse.EditStyle.AllowDelete = false;
-ellipse.EditStyle.AllowMoveX = true;
-ellipse.EditStyle.AllowMoveY = false;
-ellipse.EditStyle.AllowRotate = false;
-ellipse.EditStyle.AllowSelect = true;
+	Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
+	diagram1.Model.AppendChild(ellipse);
+	ellipse.FillStyle.Color = System.Drawing.Color.AliceBlue;
+	ellipse.FillStyle.ColorAlphaFactor = 100;
+	ellipse.FillStyle.ForeColor = System.Drawing.Color.Aquamarine;
+	ellipse.FillStyle.ForeColorAlphaFactor = 70;
+	ellipse.FillStyle.Type = FillStyleType.PathGradient;
+	ellipse.FillStyle.PathBrushStyle = PathGradientBrushStyle.RectangleCenter;
+	ellipse.FillStyle.Type = FillStyleType.LinearGradient;
+	ellipse.FillStyle.GradientAngle = 95;
+	ellipse.FillStyle.GradientCenter = 0.5f;
+	ellipse.EditStyle.AllowChangeHeight = true;
+	ellipse.EditStyle.AllowChangeWidth = true;
+	ellipse.EditStyle.AllowDelete = false;
+	ellipse.EditStyle.AllowMoveX = true;
+	ellipse.EditStyle.AllowMoveY = false;
+	ellipse.EditStyle.AllowRotate = false;
+	ellipse.EditStyle.AllowSelect = true;
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 Dim ellipse As New Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70)
@@ -151,16 +151,16 @@ The following code example illustrates how to create nodes and links.
 
 protected void Page_Load(object sender, EventArgs e)
 {
-Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
-Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(250, 50, 50, 80);
-Syncfusion.Windows.Forms.Diagram.LineConnector lineconnector = new Syncfusion.Windows.Forms.Diagram.LineConnector(new System.Drawing.PointF(10, 200), new System.Drawing.PointF(300, 250));
-this.diagram1.Model.AppendChild(ellipse);
-this.diagram1.Model.AppendChild(rectangle);
-this.diagram1.Model.AppendChild(lineconnector);
+	Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
+	Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(250, 50, 50, 80);
+	Syncfusion.Windows.Forms.Diagram.LineConnector lineconnector = new Syncfusion.Windows.Forms.Diagram.LineConnector(new System.Drawing.PointF(10, 200), new System.Drawing.PointF(300, 250));
+	this.diagram1.Model.AppendChild(ellipse);
+	this.diagram1.Model.AppendChild(rectangle);
+	this.diagram1.Model.AppendChild(lineconnector);
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 Dim ellipse As New Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70)
@@ -237,7 +237,7 @@ rect.EditStyle.AllowRotate = true;
 rect.EditStyle.AllowSelect = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 rect.EditStyle.AllowChangeHeight = True
 rect.EditStyle.AllowChangeWidth = True
@@ -305,7 +305,7 @@ rect.EditStyle.HidePinPoint = true;
 rect.EditStyle.HideRotationHandle = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 rect.EditStyle.AspectRatio = True
 rect.EditStyle.DefaultHandleEditMode = HandleEditMode.Resize
@@ -389,7 +389,7 @@ diagram1.Controller.ResizingStyle = RenderingHelperStyle.GhostCopy;
 diagram1.Controller.RotatingStyle = RenderingHelperStyle.DashedOutline;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Specify dragging, resizing, and rotation styles to the rendering helper
 diagram1.Controller.DraggingStyle = RenderingHelperStyle.SolidOutline

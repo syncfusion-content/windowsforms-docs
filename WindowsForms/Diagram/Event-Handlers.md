@@ -85,25 +85,25 @@ Inside the [NodeCollectionChanged](https://help.syncfusion.com/cr/cref_files/win
 
 private void Form1_Load(object sender, EventArgs e)
 {
-((DiagramViewerEventSink)diagram1.EventSink).NodeCollectionChanged += new CollectionExEventHandler(Form1_NodeCollectionChanged)((DiagramViewerEventSink)diagram1.EventSink).NodeCollectionChanging += new CollectionExEventHandler(Form1_NodeCollectionChanging);
-RectangleF rect = new RectangleF(100, 100, 100, 100);
-RichTextNode richText = new RichTextNode("", rect);
-richText.Text = "Rich text box";
-NodeCollection nodeStack = new NodeCollection();
-nodeStack.Add(richText);
-MessageBox.Show(nodeStack.Count.ToString());
+	((DiagramViewerEventSink)diagram1.EventSink).NodeCollectionChanged += new CollectionExEventHandler(Form1_NodeCollectionChanged)((DiagramViewerEventSink)diagram1.EventSink).NodeCollectionChanging += new CollectionExEventHandler(Form1_NodeCollectionChanging);
+	RectangleF rect = new RectangleF(100, 100, 100, 100);
+	RichTextNode richText = new RichTextNode("", rect);
+	richText.Text = "Rich text box";
+	NodeCollection nodeStack = new NodeCollection();
+	nodeStack.Add(richText);
+	MessageBox.Show(nodeStack.Count.ToString());
 }
 
 private void Form1_NodeCollectionChanging(CollectionExEventArgs e)
 {
-MessageBox.Show("NodeCollectionChanging event fired");
+	MessageBox.Show("NodeCollectionChanging event fired");
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-    DirectCast(diagram1.EventSink, DiagramViewerEventSink).NodeCollectionChanged += New CollectionExEventHandler(Form1_NodeCollectionChanged)(DirectCast(diagram1.EventSink, DiagramViewerEventSink)).NodeCollectionChanging += New CollectionExEventHandler(Form1_NodeCollectionChanging)
+DirectCast(diagram1.EventSink, DiagramViewerEventSink).NodeCollectionChanged += New CollectionExEventHandler(Form1_NodeCollectionChanged)(DirectCast(diagram1.EventSink, DiagramViewerEventSink)).NodeCollectionChanging += New CollectionExEventHandler(Form1_NodeCollectionChanging)
 Dim rect As New RectangleF(100, 100, 100, 100)
 Dim richText As New RichTextNode("", rect)
 richText.Text = "Rich text box"
@@ -185,22 +185,22 @@ Actual Nodes gets the exact node. If we click a node from group it will retrieve
 
 private void Form1_Load(object sender, EventArgs e)
 {
-this.diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
-this.diagram1.EventSink.NodeMouseLeave += EventSink_NodeMouseLeave;       
+	this.diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
+	this.diagram1.EventSink.NodeMouseLeave += EventSink_NodeMouseLeave;       
 }
 
 void EventSink_NodeMouseEnter(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs evtArgs)
 {    
-MessageBox.Show("Node: " + evtArgs.Node.Name.ToString() +" , "+ "Actual Node: " + evtArgs.ActualNode.Name.ToString());    
+	MessageBox.Show("Node: " + evtArgs.Node.Name.ToString() +" , "+ "Actual Node: " + evtArgs.ActualNode.Name.ToString());    
 }
 
 void EventSink_NodeMouseLeave(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs evtArgs)
 {    
-MessageBox.Show("Node: " + evtArgs.Node.Name.ToString() + " , " + "Actual Node: " + evtArgs.ActualNode.Name.ToString());    
+	MessageBox.Show("Node: " + evtArgs.Node.Name.ToString() + " , " + "Actual Node: " + evtArgs.ActualNode.Name.ToString());    
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler Me.diagram1.EventSink.NodeMouseEnter, AddressOf EventSink_NodeMouseEnter
@@ -270,23 +270,23 @@ In the below code sample, when a tool is activated or deactivated the correspond
 
 private void Form1_Load(object sender, EventArgs e)
 {
-((DiagramViewerEventSink)diagram1.EventSink).ToolActivated += new ToolEventHandler(DiagramForm_ToolActivated);
-((DiagramViewerEventSink)diagram1.EventSink).ToolDeactivated += new ToolEventHandler(Form1_ToolDeactivated);
-diagram1.Controller.ActivateTool("ZoomTool");
+	((DiagramViewerEventSink)diagram1.EventSink).ToolActivated += new ToolEventHandler(DiagramForm_ToolActivated);
+	((DiagramViewerEventSink)diagram1.EventSink).ToolDeactivated += new ToolEventHandler(Form1_ToolDeactivated);
+	diagram1.Controller.ActivateTool("ZoomTool");
 }
 
 void Form1_ToolDeactivated(ToolEventArgs e)
 {
-MessageBox.Show("Deactivated Tool Name: " + e.Tool.Name);
+	MessageBox.Show("Deactivated Tool Name: " + e.Tool.Name);
 }
 
 private void DiagramForm_ToolActivated(ToolEventArgs e)
 {
-MessageBox.Show("Activated Tool Name: " + e.Tool.Name + "\n" + "Status: " + e.Tool.InAction);
+	MessageBox.Show("Activated Tool Name: " + e.Tool.Name + "\n" + "Status: " + e.Tool.InAction);
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(diagram1.EventSink, DiagramViewerEventSink).ToolActivated, AddressOf DiagramForm_ToolActivated
@@ -375,40 +375,40 @@ In the following code sample, when the [OriginChanged](https://help.syncfusion.c
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DiagramViewerEventSink)diagram1.EventSink).OriginChanged += new ViewOriginEventHandler(Form1_OriginChanged);
-NodeCollection nodeStack = new NodeCollection();
-
-// Circle
-Syncfusion.Windows.Forms.Diagram.Ellipse circle = new Syncfusion.Windows.Forms.Diagram.Ellipse(0, 0, 96, 72);
-circle.Name = "Circle";
-circle.FillStyle.Type = FillStyleType.LinearGradient;
-circle.FillStyle.ForeColor = Color.AliceBlue;
-circle.ShadowStyle.Visible = true;
-nodeStack.Add(circle);
-
-// Polygon
-PointF[] pts ={ new Point(6, 36), new Point(48, 6), new Point(90, 36), new Point(48, 66) };
-Polygon polygon = new Polygon(pts);
-polygon.Name = "Polygon";
-polygon.FillStyle.ForeColor = Color.DarkSeaGreen;
-polygon.FillStyle.Color = Color.DarkSeaGreen;
-nodeStack.Add(polygon);
-
-int i = 0;
-this.model4.AppendChildren(nodeStack, out i);
-MessageBox.Show("Node count =" + "\n" + nodeStack.Count.ToString());
-textBox1.Text = model4.Nodes.Last.Name;
-this.diagram1.HScroll = true;
-this.diagram1.VScroll = true;
+	((DiagramViewerEventSink)diagram1.EventSink).OriginChanged += new ViewOriginEventHandler(Form1_OriginChanged);
+	NodeCollection nodeStack = new NodeCollection();
+	
+	// Circle
+	Syncfusion.Windows.Forms.Diagram.Ellipse circle = new Syncfusion.Windows.Forms.Diagram.Ellipse(0, 0, 96, 72);
+	circle.Name = "Circle";
+	circle.FillStyle.Type = FillStyleType.LinearGradient;
+	circle.FillStyle.ForeColor = Color.AliceBlue;
+	circle.ShadowStyle.Visible = true;
+	nodeStack.Add(circle);
+	
+	// Polygon
+	PointF[] pts ={ new Point(6, 36), new Point(48, 6), new Point(90, 36), new Point(48, 66) };
+	Polygon polygon = new Polygon(pts);
+	polygon.Name = "Polygon";
+	polygon.FillStyle.ForeColor = Color.DarkSeaGreen;
+	polygon.FillStyle.Color = Color.DarkSeaGreen;
+	nodeStack.Add(polygon);
+	
+	int i = 0;
+	this.model4.AppendChildren(nodeStack, out i);
+	MessageBox.Show("Node count =" + "\n" + nodeStack.Count.ToString());
+	textBox1.Text = model4.Nodes.Last.Name;
+	this.diagram1.HScroll = true;
+	this.diagram1.VScroll = true;
 }
 
 private void Form1_OriginChanged(ViewOriginEventArgs e)
 {
-textBox1.Text = "X = " + e.OriginalOrigin.X + "," + "Y = " + e.OriginalOrigin.Y + "  " + "New X= " + e.NewOrigin.X + "," + "New 	Y= " + e.NewOrigin.Y;
+	textBox1.Text = "X = " + e.OriginalOrigin.X + "," + "Y = " + e.OriginalOrigin.Y + "  " + "New X= " + e.NewOrigin.X + "," + "New 	Y= " + e.NewOrigin.Y;
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(diagram1.EventSink, DiagramViewerEventSink).OriginChanged, AddressOf Form1_OriginChanged
@@ -512,7 +512,7 @@ MessageBox.Show("Old Factor: " + evtArgs.OriginalMagnification.ToString() + "New
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(diagram1.EventSink, DiagramViewerEventSink).MagnificationChanged, AddressOf Form1_MagnificationChanged
@@ -580,34 +580,34 @@ The following code example illustrates how the [TextChanged](https://help.syncfu
 
 private void Form1_Load(object sender, EventArgs e)
 {
- diagram1.Controller.TextEditor.TextChanged += new EventHandler(TextEditor_TextChanged);
- diagram1.Controller.InPlaceEditor.LabelTextChanged += new EventHandler(InPlaceEditor_LabelTextChanged); 
- diagram1.Controller.TextEditor.KeyDown += TextEditor_KeyDown;
- diagram1.Controller.TextEditor.TextEditingCompleted += TextEditor_TextEditingCompleted;
+	diagram1.Controller.TextEditor.TextChanged += new EventHandler(TextEditor_TextChanged);
+	diagram1.Controller.InPlaceEditor.LabelTextChanged += new EventHandler(InPlaceEditor_LabelTextChanged); 
+	diagram1.Controller.TextEditor.KeyDown += TextEditor_KeyDown;
+	diagram1.Controller.TextEditor.TextEditingCompleted += TextEditor_TextEditingCompleted;
 }
 
 void TextEditor_TextChanged(object sender, EventArgs e)
 {
-MessageBox.Show("Text :" + this.diagram1.Controller.TextEditor.Text);
+	MessageBox.Show("Text :" + this.diagram1.Controller.TextEditor.Text);
 }
 
 void InPlaceEditor_LabelTextChanged(object sender, EventArgs e)
 {
-MessageBox.Show("Text :" + this.diagram1.Controller.InPlaceEditor.Text);
+	MessageBox.Show("Text :" + this.diagram1.Controller.InPlaceEditor.Text);
 }  
 
 void TextEditor_KeyDown(object sender, KeyEventArgs e)
 {
-MessageBox.Show("Key Down:" + e.KeyData);
+	MessageBox.Show("Key Down:" + e.KeyData);
 }
 
 void TextEditor_TextEditingCompleted(object sender, Syncfusion.Windows.Forms.Diagram.LabelEditingCompletedEventArgs evtArgs)
 {
-MessageBox.Show("Text Edit Completed:" + evtArgs.Value.ToString());
+	MessageBox.Show("Text Edit Completed:" + evtArgs.Value.ToString());
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub Form1_Load(sender As Object, e As EventArgs)    
 diagram1.Controller.TextEditor.TextChanged += New EventHandler(AddressOf TextEditor_TextChanged)
@@ -707,27 +707,27 @@ Programmatically the events are written as follows,
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model1.EventSink).VertexChanged += new VertexChangedEventHandler(Form1_VertexChanged);
-((DocumentEventSink)model1.EventSink).VertexChanging += new VertexChangingEventHandler(Form1_VertexChanging);
-LineConnector line = new LineConnector(circle.PinPoint, polygon.PinPoint);
-polygon.CentralPort.TryConnect(line.HeadEndPoint);
-circle.CentralPort.TryConnect(line.TailEndPoint);
-model1.AppendChild(line);
+	((DocumentEventSink)model1.EventSink).VertexChanged += new VertexChangedEventHandler(Form1_VertexChanged);
+	((DocumentEventSink)model1.EventSink).VertexChanging += new VertexChangingEventHandler(Form1_VertexChanging);
+	LineConnector line = new LineConnector(circle.PinPoint, polygon.PinPoint);
+	polygon.CentralPort.TryConnect(line.HeadEndPoint);
+	circle.CentralPort.TryConnect(line.TailEndPoint);
+	model1.AppendChild(line);
 }
 
 private void Form1_VertexChanging(VertexChangingEventArgs vertexChange)
 {
-MessageBox.Show("VertexChanging fired");
-model1.LineStyle.LineWidth = 2;
+	MessageBox.Show("VertexChanging fired");
+	model1.LineStyle.LineWidth = 2;
 }
 
 private void Form1_VertexChanged(VertexChangedEventArgs vertexChange)
 {
-MessageBox.Show("Target Node - " + vertexChange.NodeAffected.FullName + "\n" + vertexChange.VertexLocation.ToString());
+	MessageBox.Show("Target Node - " + vertexChange.NodeAffected.FullName + "\n" + vertexChange.VertexLocation.ToString());
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model1.EventSink, DocumentEventSink).VertexChanged, AddressOf Form1_VertexChanged
@@ -830,42 +830,42 @@ Programmatically the events are written as follows,
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model4.EventSink).PinOffsetChanged += new PinOffsetChangedEventHandler(Form1_PinOffsetChanged);
-((DocumentEventSink)model4.EventSink).PinOffsetChanging += new PinOffsetChangingEventHandler(Form1_PinOffsetChanging);
-((DocumentEventSink)model4.EventSink).PinPointChanged += new PinPointChangedEventHandler(Form1_PinPointChanged);
-((DocumentEventSink)model4.EventSink).PinPointChanging += new PinPointChangingEventHandler(Form1_PinPointChanging);
-
-// Circle
-Syncfusion.Windows.Forms.Diagram.Ellipse circle = new Syncfusion.Windows.Forms.Diagram.Ellipse(0, 0, 96, 72);
-circle.Name = "Circle";
-circle.FillStyle.Type = FillStyleType.LinearGradient;
-circle.FillStyle.ForeColor = Color.AliceBlue;
-circle.ShadowStyle.Visible = true;
-model4.AppendChild(circle);
+	((DocumentEventSink)model4.EventSink).PinOffsetChanged += new PinOffsetChangedEventHandler(Form1_PinOffsetChanged);
+	((DocumentEventSink)model4.EventSink).PinOffsetChanging += new PinOffsetChangingEventHandler(Form1_PinOffsetChanging);
+	((DocumentEventSink)model4.EventSink).PinPointChanged += new PinPointChangedEventHandler(Form1_PinPointChanged);
+	((DocumentEventSink)model4.EventSink).PinPointChanging += new PinPointChangingEventHandler(Form1_PinPointChanging);
+	
+	// Circle
+	Syncfusion.Windows.Forms.Diagram.Ellipse circle = new Syncfusion.Windows.Forms.Diagram.Ellipse(0, 0, 96, 72);
+	circle.Name = "Circle";
+	circle.FillStyle.Type = FillStyleType.LinearGradient;
+	circle.FillStyle.ForeColor = Color.AliceBlue;
+	circle.ShadowStyle.Visible = true;
+	model4.AppendChild(circle);
 }
 
 void Form1_PinPointChanging(PinPointChangingEventArgs evtArgs)
 {
-MessageBox.Show("PinpointChanging event is fired" + "\n" + "Node name: " + evtArgs.NodeAffected.Name.ToString());
+	MessageBox.Show("PinpointChanging event is fired" + "\n" + "Node name: " + evtArgs.NodeAffected.Name.ToString());
 }
 
 void Form1_PinPointChanged(PinPointChangedEventArgs evtArgs)
 {
-MessageBox.Show("PinPointChanged event is fired" + "\n" + "Offset values: " + evtArgs.Offset.ToString());
+	MessageBox.Show("PinPointChanged event is fired" + "\n" + "Offset values: " + evtArgs.Offset.ToString());
 }
 
 void Form1_PinOffsetChanging(PinOffsetChangingEventArgs evtArgs)
 {
-MessageBox.Show("PinOffsetChanging event is fired" + "\n" + "Node name: " + evtArgs.NodeAffected.Name);
+	MessageBox.Show("PinOffsetChanging event is fired" + "\n" + "Node name: " + evtArgs.NodeAffected.Name);
 }
 
 void Form1_PinOffsetChanged(PinOffsetChangedEventArgs evtArgs)
 {
-MessageBox.Show("PinOffsetChanged event is fired" + "\n" + "Offset values: " + evtArgs.Offset.ToString());
+	MessageBox.Show("PinOffsetChanged event is fired" + "\n" + "Offset values: " + evtArgs.Offset.ToString());
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model4.EventSink, DocumentEventSink).PinOffsetChanged, AddressOf Form1_PinOffsetChanged
@@ -1005,39 +1005,39 @@ Programmatically, the events are written as follows:
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model1.EventSink).FlipChanged += new FlipChangedEventHandler(Form1_FlipChanged);
-((DocumentEventSink)model1.EventSink).FlipChanging += new FlipChangingEventHandler(Form1_FlipChanging);
-((DocumentEventSink)model1.EventSink).RotationChanged += new RotationChangedEventHandler(Form1_RotationChanged);
-((DocumentEventSink)model1.EventSink).RotationChanging += new RotationChangingEventHandler(Form1_RotationChanging);
-
-// Circle
-Syncfusion.Windows.Forms.Diagram.Ellipse circle = new Syncfusion.Windows.Forms.Diagram.Ellipse(0, 0, 96, 72);
-circle.Name = "Circle";
-circle.FillStyle.Type = FillStyleType.LinearGradient;
-circle.FillStyle.ForeColor = Color.AliceBlue;
-circle.ShadowStyle.Visible = true;
-model4.AppendChild(circle);
+	((DocumentEventSink)model1.EventSink).FlipChanged += new FlipChangedEventHandler(Form1_FlipChanged);
+	((DocumentEventSink)model1.EventSink).FlipChanging += new FlipChangingEventHandler(Form1_FlipChanging);
+	((DocumentEventSink)model1.EventSink).RotationChanged += new RotationChangedEventHandler(Form1_RotationChanged);
+	((DocumentEventSink)model1.EventSink).RotationChanging += new RotationChangingEventHandler(Form1_RotationChanging);
+	
+	// Circle
+	Syncfusion.Windows.Forms.Diagram.Ellipse circle = new Syncfusion.Windows.Forms.Diagram.Ellipse(0, 0, 96, 72);
+	circle.Name = "Circle";
+	circle.FillStyle.Type = FillStyleType.LinearGradient;
+	circle.FillStyle.ForeColor = Color.AliceBlue;
+	circle.ShadowStyle.Visible = true;
+	model4.AppendChild(circle);
 }
 
 void Form1_RotationChanged(RotationChangedEventArgs evtArgs)
 {
-MessageBox.Show("RotationChanged event is fired" + "\n" + evtArgs.RotationOffset.ToString());
+	MessageBox.Show("RotationChanged event is fired" + "\n" + evtArgs.RotationOffset.ToString());
 }
 
 void Form1_FlipChanging(FlipChangingEventArgs evtArgs)
 {
-MessageBox.Show("FlipChanging event is fired");
-textBox1.Text = evtArgs.NodeAffected.BoundingRectangle.ToString();
+	MessageBox.Show("FlipChanging event is fired");
+	textBox1.Text = evtArgs.NodeAffected.BoundingRectangle.ToString();
 }
 
 void Form1_FlipChanged(FlipChangedEventArgs evtArgs)
 {
-MessageBox.Show("FlipChanged event is fired" + "\n" + "Flip Axis:" + evtArgs.FlipAxis.ToString() + "\n" + "Node: " + evtArgs.NodeAffected.Name.ToString());
-evtArgs.NodeAffected.EditStyle.Enabled = false;
+	MessageBox.Show("FlipChanged event is fired" + "\n" + "Flip Axis:" + evtArgs.FlipAxis.ToString() + "\n" + "Node: " + evtArgs.NodeAffected.Name.ToString());
+	evtArgs.NodeAffected.EditStyle.Enabled = false;
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model1.EventSink, DocumentEventSink).FlipChanged, AddressOf Form1_FlipChanged
@@ -1159,23 +1159,23 @@ Programmatically, the events are written as follows:
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model1.EventSink).ZOrderChanged += new ZOrderChangedEventHandler(Form1_ZOrderChanged);
-((DocumentEventSink)model1.EventSink).ZOrderChanging += new ZOrderChangingEventHandler(Form1_ZOrderChanging);
-diagram1.Controller.BringToFront();
+	((DocumentEventSink)model1.EventSink).ZOrderChanged += new ZOrderChangedEventHandler(Form1_ZOrderChanged);
+	((DocumentEventSink)model1.EventSink).ZOrderChanging += new ZOrderChangingEventHandler(Form1_ZOrderChanging);
+	diagram1.Controller.BringToFront();
 }
 
 void Form1_ZOrderChanging(ZOrderChangingEventArgs evtArgs)
 {
-MessageBox.Show("ZOrderChanging event is fired" + "\n" + "Node: " + evtArgs.NodeAffected.Name.ToString());
+	MessageBox.Show("ZOrderChanging event is fired" + "\n" + "Node: " + evtArgs.NodeAffected.Name.ToString());
 }
 
 void Form1_ZOrderChanged(ZOrderChangedEventArgs evtArgs)
 {
-MessageBox.Show("ZOrderChanged event is fired" + "\n" + "New ZOrder: " + evtArgs.ZOrder.ToString());
+	MessageBox.Show("ZOrderChanged event is fired" + "\n" + "New ZOrder: " + evtArgs.ZOrder.ToString());
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model1.EventSink, DocumentEventSink).ZOrderChanged, AddressOf Form1_ZOrderChanged
@@ -1284,20 +1284,20 @@ Programmatically, the Connection Event is handled as follows.
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model1.EventSink).ConnectionsChanged += new CollectionExEventHandler(Form1_ConnectionsChanged);
-LineConnector line = new LineConnector(circle.PinPoint, polygon.PinPoint);
-polygon.CentralPort.TryConnect(line.HeadEndPoint);
-circle.CentralPort.TryConnect(line.TailEndPoint);
-model1.AppendChild(line);
+	((DocumentEventSink)model1.EventSink).ConnectionsChanged += new CollectionExEventHandler(Form1_ConnectionsChanged);
+	LineConnector line = new LineConnector(circle.PinPoint, polygon.PinPoint);
+	polygon.CentralPort.TryConnect(line.HeadEndPoint);
+	circle.CentralPort.TryConnect(line.TailEndPoint);
+	model1.AppendChild(line);
 }
 
 void Form1_ConnectionsChanged(CollectionExEventArgs evtArgs)
 {
-MessageBox.Show(evtArgs.ChangeType.ToString());
+	MessageBox.Show(evtArgs.ChangeType.ToString());
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model1.EventSink, DocumentEventSink).ConnectionsChanged, AddressOf Form1_ConnectionsChanged
@@ -1334,17 +1334,17 @@ Programmatically, the events are handled as follows.
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model1.EventSink).PortsChanged += new CollectionExEventHandler(Form1_PortsChanged);
-node.EnableCentralPort = false;
+	((DocumentEventSink)model1.EventSink).PortsChanged += new CollectionExEventHandler(Form1_PortsChanged);
+	node.EnableCentralPort = false;
 }
 
 void Form1_PortsChanged(CollectionExEventArgs evtArgs)
 {
-MessageBox.Show("Port is changed");
+	MessageBox.Show("Port is changed");
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model1.EventSink, DocumentEventSink).PortsChanged, AddressOf Form1_PortsChanged
@@ -1448,23 +1448,23 @@ Programmatically the events are written as follows,
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model1.EventSink).PropertyChanged += new Syncfusion.Windows.Forms.Diagram.PropertyChangedEventHandler
-(Form1_PropertyChanged);
-((DocumentEventSink)model1.EventSink).PropertyChanging += new PropertyChangingEventHandler(Form1_PropertyChanging);
+	((DocumentEventSink)model1.EventSink).PropertyChanged += new Syncfusion.Windows.Forms.Diagram.PropertyChangedEventHandler
+	(Form1_PropertyChanged);
+	((DocumentEventSink)model1.EventSink).PropertyChanging += new PropertyChangingEventHandler(Form1_PropertyChanging);
 }
 
 private void Form1_PropertyChanged(Syncfusion.Windows.Forms.Diagram.PropertyChangedEventArgs evtArgs)
 {
-MessageBox.Show("PropertyChanged event is fired" + "\n" + "Property Name: " + evtArgs.PropertyName);
+	MessageBox.Show("PropertyChanged event is fired" + "\n" + "Property Name: " + evtArgs.PropertyName);
 }
 
 private void Form1_PropertyChanging(Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs eprop)
 {
-MessageBox.Show("PropertyChanging event is fired" + "\n" + "Property Name: " + eprop.PropertyName + "\n" + "new 				Value: " + eprop.NewValue);
+	MessageBox.Show("PropertyChanging event is fired" + "\n" + "Property Name: " + eprop.PropertyName + "\n" + "new 				Value: " + eprop.NewValue);
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model1.EventSink, DocumentEventSink).PropertyChanged, AddressOf Form1_PropertyChanged
@@ -1568,16 +1568,16 @@ Programmatically, the events are written as follows:
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model1.EventSink).LabelsChanged += new CollectionExEventHandler(Form1_LabelsChanged);
+	((DocumentEventSink)model1.EventSink).LabelsChanged += new CollectionExEventHandler(Form1_LabelsChanged);
 }
 
 void Form1_LabelsChanged(CollectionExEventArgs evtArgs)
 {
-MessageBox.Show("LabelsChanged event is fired" + evtArgs.ChangeType.ToString() + evtArgs.Owner.ToString());
+	MessageBox.Show("LabelsChanged event is fired" + evtArgs.ChangeType.ToString() + evtArgs.Owner.ToString());
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model1.EventSink, DocumentEventSink).LabelsChanged, AddressOf Form1_LabelsChanged
@@ -1599,20 +1599,20 @@ Programmatically, the events are written as follows:
 
 public void Form1_Load(object sender, EventArgs e)
 {
-((DocumentEventSink)model1.EventSink).LayersChanged += new CollectionExEventHandler(Form1_LayersChanged);
-Layer layer0 = new Layer();
-this.diagram1.Model.Layers.Add(layer0);
-layer0.Enabled = true;
-layer0.Visible = true;
+	((DocumentEventSink)model1.EventSink).LayersChanged += new CollectionExEventHandler(Form1_LayersChanged);
+	Layer layer0 = new Layer();
+	this.diagram1.Model.Layers.Add(layer0);
+	layer0.Enabled = true;
+	layer0.Visible = true;
 }
 
 void Form1_LayersChanged(CollectionExEventArgs evtArgs)
 {
-MessageBox.Show("LayersChanged event is fired." + "\n" + "Owner: " + evtArgs.Owner.ToString());
+	MessageBox.Show("LayersChanged event is fired." + "\n" + "Owner: " + evtArgs.Owner.ToString());
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler DirectCast(model1.EventSink, DocumentEventSink).LayersChanged, AddressOf Form1_LayersChanged
