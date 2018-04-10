@@ -11,7 +11,7 @@ documentation: ug
 
 This section comprises the below events:
 
-## PrimaryPages.SelectedIndexChanged event
+## SelectedIndexChanged event of PrimaryPages
 
 This event is handled whenever primary page selection is changed.
 
@@ -53,7 +53,7 @@ End Sub
 
 {% endtabs %}
 
-## SecondaryPages.SelectedIndexChanged event
+## SelectedIndexChanged event of SecondaryPages
 
 This event is handled whenever secondary page selection is changed.
 
