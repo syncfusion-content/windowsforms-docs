@@ -308,7 +308,7 @@ NegativePointColor</td><td>
 Gets or sets the negative point color to line type sparkline. This property color is set to sparkline marker when enabling the ShowNegativePoint property.</td></tr>
 </table>
 
-### Marker Support for Line
+### Markers Support for Line
 
 This marker feature supports data points of line sparkline. You can choose the marker color for data points.  
 
