@@ -9,7 +9,7 @@ documentation: ug
 
 # Ribbon ProgressBar
 
-ToolStripProgressBar can be used to provide a visual cue that the application is indeed working and the task is being completed.item. It can be added to a ToolStripEx directly or through a panel. 
+ToolStripProgressBar can be used to provide a visual cue that the application is indeed working and the task is being completed item. It can be added to a ToolStripEx directly or through a panel. 
 
 ![](Ribbon-ProgressBar_images/Ribbon-ProgressBar_img1.jpg)
 

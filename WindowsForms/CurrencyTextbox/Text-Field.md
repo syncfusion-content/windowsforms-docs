@@ -17,6 +17,8 @@ The text field of a CurrencyTextBox control can be customized using the properti
 
 The default text in the CurrencyTextBox can be edited through Text property. Default value is $2.00. The text can be aligned to Left, Right or Center using TextAlign property.
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox2.Text = "$25.00";
@@ -32,6 +34,8 @@ Me.currencyTextBox2.Text = "$25.00"
 Me.currencyTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img491.png) 
 
@@ -62,6 +66,8 @@ We can show scrollbars for the control when multiline feature is enabled. The di
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.Multiline = true;
@@ -86,6 +92,8 @@ Me.currencyTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img492.png) 
 
 
@@ -101,6 +109,8 @@ Me.currencyTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
 ### Password Character
 
 We can display password characters instead of the digits in the text field using PasswordChar property. To use the system password character in the text field, set UseSystemPasswordChar property to true.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -118,6 +128,8 @@ Me.currencyTextBox1.PasswordChar = '*'
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img495.png)
 
 
@@ -127,6 +139,8 @@ Me.currencyTextBox1.PasswordChar = '*'
 We can set banner text for the CurrencyTextBox control. Refer BannerTextProvider Component topic for more details.
 
 We need to do the below settings to make Banner text feature available for the control.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -147,6 +161,8 @@ Me.currencyTextBox1.NullString = ""
 Me.currencyTextBox1.Text = ""
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img496.png)
 
@@ -181,6 +197,8 @@ This property specifies the pattern to use when the value is negative. For examp
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.NumberDigits = 10;
@@ -200,6 +218,8 @@ Me.currencyTextBox1.CurrencyPositivePattern = 1
 Me.currencyTextBox1.CurrencyNegativePattern = 2
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Decimal Part
 
@@ -240,6 +260,8 @@ Specifies whether to remove last decimal zeros in the currency value.</td></tr>
 
 ![](Overview_images/Overview_img497.png) 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.CurrencyDecimalDigits = 3;
@@ -268,6 +290,8 @@ Me.currencyTextBox1.RemoveDecimalZeros = True
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img498.png) 
 
 
@@ -284,6 +308,8 @@ For example, if the current value of the TextBox is 1.00 with all the text being
 
 When it is set to false, the current value is changed to negative value immediately. For example, if the current value of the TextBox is 1.00 with all the text being selected and when the user presses the negative key, the value is '-1'.
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.NegativeSign = "-";
@@ -299,6 +325,8 @@ Me.currencyTextBox1.NegativeSign = "-"
 Me.currencyTextBox1.NegativeInputPendingOnSelectAll = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Values
 
@@ -325,6 +353,8 @@ If the minimum and maximum values are not met, the validating event will be hand
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.MaxValue=10;
@@ -344,6 +374,8 @@ Me.currencyTextBox1.MinValue=0
 Me.currencyTextBox1.EnforceMinMaxDuringValidating = True;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Null String
 
@@ -366,6 +398,8 @@ Specifies if the NullString will be used when the value is Null.NullString must
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.NullString = "NULL";
@@ -381,6 +415,8 @@ Me.currencyTextBox1.NullString = "NULL"
 Me.currencyTextBox1.AllowNull = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img500.png) 
 
@@ -403,6 +439,8 @@ This property specifies the currency symbol to be used in the CurrencyTextBox. T
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.currencyTextBox1.CurrencySymbol = "#";
@@ -414,3 +452,5 @@ this.currencyTextBox1.CurrencySymbol = "#";
 Me.currencyTextBox1.CurrencySymbol = "#"
 
 {% endhighlight %}
+
+{% endtabs %}

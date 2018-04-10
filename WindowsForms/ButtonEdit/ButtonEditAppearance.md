@@ -11,13 +11,9 @@ documentation: ug
 
 A ButtonEdit control is a combination of controls with textbox and buttons. The buttons are normal windows buttons which supports all their properties and events. The ButtonEdit control itself supports properties which controls the appearance and behavior of the control. This section will discuss those properties in the below topics.
 
-
-
-
 {% seealso %}
 
 [TextBox Settings for ButtonEdit](/windowsforms/buttonedit/textboxsettingsforbuttonedit), Child Button Customization](http://help.syncfusion.com/windowsforms/buttonedit/textboxsettingsforbuttonedit)
-
 
 {% endseealso %}
 
@@ -68,30 +64,23 @@ UseVisualStyle</td><td>
 Specifies whether the visual styles can be applied using ButtonStyle property or not. This property should be set to true to make the ButtonStyle setting effective.</td></tr>
 </table>
 
-
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEdit3.UseVisualStyle = true;
-
 this.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful;
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.buttonEdit3.UseVisualStyle = True
-
 Me.buttonEdit3.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Office2016.jpeg)
-
 
 N> ButtonEdit control also supports all the three windows color themes, i.e., Blue, Silver and Oliver themes. We need to change the Windows theme color in desktop properties for this.
 
@@ -99,38 +88,27 @@ N> ButtonEdit control also supports all the three windows color themes, i.e., Bl
 
 We can also apply custom colors to the ButtonEditControl by setting Office2007ColorScheme of individual child buttons to "_Managed_" and specifying the custom color through the ApplyManagedColors method as follows.
 
-
-
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEditChildButton1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 this.buttonEditChildButton2.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 this.buttonEditChildButton3.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.buttonEditChildButton1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-
 Me.buttonEditChildButton2.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-
 Me.buttonEditChildButton3.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-
 Office2007Colors.ApplyManagedColors(Me, Color.LightGreen)
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img88.jpeg)
-
 
 ### Border Styles
 
@@ -171,34 +149,25 @@ FlatBorderColor</td><td>
 Specifies the border color for the control, when FlatStyle is set to "Flat". This color setting can be reset by calling ButtonEdit.ResetFlatBorderColor method.</td></tr>
 </table>
 
-
-{%highlight c#%}
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEdit3.UseVisualStyle = false;
-
 this.buttonEdit3.FlatBorderColor = System.Drawing.Color.Red;
-
 this.buttonEdit3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.buttonEdit3.UseVisualStyle = False
-
 this.buttonEdit3.FlatBorderColor = System.Drawing.Color.Red;
-
 this.buttonEdit3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img89.jpeg) 
-
-
-
 
 N> The Border styles of the child buttons can be controlled using ButtonEditChildButton.BorderStyleAdv property. SeeSee Button Types and Border Styles topic for details.
 
@@ -223,8 +192,6 @@ MinimumSize</td><td>
 Sets the minimum size of the ButtonEdit control.</td></tr>
 </table>
 
-
-
 ## Foreground Settings
 
 Foreground Settings
@@ -235,26 +202,21 @@ Font and ForeColor
 
 The font style and the fore color for the ButtonEdit text can be set using Font and ForeColor properties. These property settings can be overridden by TextBox.Font and TextBox.ForeColor respectively.
 
-
-{%highlight c#%}
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEdit3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular);
-
 this.buttonEdit3.ForeColor = Color.SteelBlue;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.buttonEdit3.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular)
-
 Me.buttonEdit3.ForeColor = Color.SteelBlue
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 N> Foreground settings for the child buttons can be specified using ButtonEditChildButton.Font and ButtonEditChildButton.ForeColor properties.
 
@@ -264,26 +226,21 @@ N> Foreground settings for the child buttons can be specified using ButtonEditCh
 
 Using ButtonEdit.CharacterCasing property, we can specify whether the case of the character can be modified as they are typed. The values are Upper, Lower and Normal.
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonEdit3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular);
-
 this.buttonEdit3.ForeColor = Color.SteelBlue;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.buttonEdit3.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular)
-
 Me.buttonEdit3.ForeColor = Color.SteelBlue
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 N> This case setting can be overridden by TextBox.CharacterCasing property.
 

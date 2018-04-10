@@ -26,9 +26,9 @@ Specifies whether to include or exclude literal characters in input mask while d
 </table>
 
 
+{% tabs %}
+
 {% highlight c# %}
-
-
 
 this.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.ExcludeFormatting;
 
@@ -36,11 +36,11 @@ this.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipMode
 
 {% highlight vbnet %}
 
-
-
 Me.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.ExcludeFormatting
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img504.png) 
 
@@ -49,6 +49,8 @@ Me.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.
 ## Overflow Indicator
 
 You can display an indicator in the textbox, when the currency value is displayed, beyond its boundaries. We can also display tooltip for the overflow indicator. The tooltip text is specified in OverflowIndicatorToolTipText.Set ShowOverflowIndicator property to true to enable this feature. Set ShowOverflowIndicatorToolTip property to true to display the tooltip text.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -69,6 +71,8 @@ Me.currencyTextBox1.ShowOverflowIndicator = True
 Me.currencyTextBox1.ShowOverflowIndicatorToolTip = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img505.png) 
 
@@ -101,7 +105,7 @@ It sets the mode for the cultures. The options includes:{{ 'None,' | markdownify
 
 ![](Overview_images/Overview_img506.png) 
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -127,6 +131,8 @@ Me.currencyTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.Special
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### User Override for Culture
 
 
@@ -141,6 +147,8 @@ UseUserOverride</td><td>
 Specifies if the NumberFormatInfo used for formatting will use the User overrides for the culture.</td></tr>
 </table>
 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -161,6 +169,8 @@ Me.currencyTextBox1.UseUserOverride = False
 Me.currencyTextBox1.Culture = New CultureInfo(CultureInfo.CurrentUICulture.LCID,Me.currencyTextBox1.UseUserOverride)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Culture name
 
@@ -194,6 +204,8 @@ Gets the three letter code for the language as specified in the windows API.</td
 
 The following figure illustrates this when the culture is 'en-US'.
 
+{% tabs %}
+
 {% highlight c# %}
 
 
@@ -221,6 +233,8 @@ Me.label13.Text = Me.currencyTextBox1.Culture.NativeName
 Me.label14.Text = Me.currencyTextBox1.Culture.ThreeLetterWindowsLanguageName
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img507.png) 
 

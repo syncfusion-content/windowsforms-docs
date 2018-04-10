@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# How to draw or hide focus rectangle for the ButtonAdv control
+# How to Draw or Hide Focus Rectangle for the ButtonAdv Control
 
 ButtonControl shows some special features which the user interacts with the control. Those properties are discussed in this section.
 
@@ -22,27 +22,18 @@ KeepFocusRectangle</td><td>
 Specifies whether rectangle will be drawn around the control when it is focused at run time.</td></tr>
 </table>
 
-
-{%highlight c#%}
-
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonAdv1.KeepFocusRectangle = true;
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.buttonAdv1.KeepFocusRectangle = True
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](FAQ_images/Overview_img76.jpeg) 
-
-
-
