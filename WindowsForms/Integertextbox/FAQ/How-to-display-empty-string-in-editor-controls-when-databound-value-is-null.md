@@ -13,7 +13,9 @@ We can display empty string when data bound value is null. For this we need to b
 
 Find the code snippet below, which illustrates the same.
 
-{%highlight c#%}
+{% tabs %}
+
+{% highlight C# %}
 
 this.integerTextBox1.NullString = "";
 
@@ -21,11 +23,9 @@ this.integerTextBox1.AllowNull = true;
 
 this.integerTextBox1.DataBindings.Add("BindableValue", boundView, "IntegerField");
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-
-{%highlight vbnet%}
+{% highlight VB %}
 
 Me.integerTextBox1.NullString = ""
 
@@ -33,4 +33,6 @@ Me.integerTextBox1. AllowNull = True
 
 Me.integerTextBox1.DataBindings.Add("BindableValue", boundView, "IntegerField")
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}

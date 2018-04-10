@@ -11,7 +11,7 @@ documentation: ug
 # Creating IntegerTextBox
 
 
-This section will give a step by step procedure to design an IntegerTextBox control through designer and also through programming approach.
+This section will give a step by step procedure to design an IntegerTextBox control through designer and also through programmatic approach.
 
 ## Through Designer
 
@@ -34,68 +34,82 @@ The IntegerTextBox control can be created programming through code as detailed b
 
 1. Include the required namespace.
    
-   ~~~ cs
-		using Syncfusion.Windows.Forms.Tools;
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-		Imports Syncfusion.Windows.Forms.Tools
-   ~~~
-   {:.prettyprint}
+ {% tabs %}
 
+ {% highlight C# %}
 
+ using Syncfusion.Windows.Forms.Tools;
+
+ {% endhighlight %}
+
+ {% highlight VB %}
+
+ Imports Syncfusion.Windows.Forms.Tools
+
+ {% endhighlight %}
+
+ {% endtabs %}
 
 2. Create an instance of the IntegerTextBox control.
    
-   ~~~ cs
-   
+   {% tabs %}
+
+   {% highlight C# %}
+
 	   // Create IntegerTextBox control.
-	   private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;
-	   this.integerTextBox1=new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
+   private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;
+   this.integerTextBox1=new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
    
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-	   ' Create IntegerTextBox control.
+   {% endhighlight %}
+
+   {% highlight VB %}
+
+ ' Create IntegerTextBox control.
+
 	   Private integerTextBox1 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
 	   Me.integerTextBox1 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
-	   ~~~
-   {:.prettyprint}
 
-
+  {% endhighlight %}
+  
+  {% endtabs %}
 
 3. Specify its value and size.
    
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
+
 	   this.integerTextBox1.IntegerValue = ((long)(7));
-	   this.integerTextBox1.Size = new System.Drawing.Size(144, 20);
-   ~~~
-   {:.prettyprint}
+	   this.integerTextBox1.Size = new System.Drawing.Size(144, 20); 
+
+   {% endhighlight %}
    
    
-   ~~~vbnet
-	   Me.integerTextBox1.IntegerValue = (CLng(7))
+   {% highlight VB %}
+
+       Me.integerTextBox1.IntegerValue = (CLng(7))
 	   Me.integerTextBox1.Size = New System.Drawing.Size(144, 20)
-   ~~~
-   {:.prettyprint}
 
+  {% endhighlight %}
 
+   {% endtabs %}
 
 4. Add the IntegerTextBox control to the form.
    
-   ~~~ cs
-		this.Controls.Add(this.integerTextBox1);
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-   
-		Me.Controls.Add(Me.integerTextBox1)
-   ~~~
-   {:.prettyprint}
+   {% tabs %}
 
+   {% highlight C# %}
 
+    this.Controls.Add(this.integerTextBox1);
+
+   {% endhighlight %}
+
+   {% highlight VB %}
+   
+   	Me.Controls.Add(Me.integerTextBox1)
+       
+    {% endhighlight %}
+
+    {% endtabs %}
 
 ![](Overview_images/Overview_img441.png) 

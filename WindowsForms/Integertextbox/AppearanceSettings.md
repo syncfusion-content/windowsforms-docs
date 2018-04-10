@@ -36,31 +36,28 @@ Specifies the back color to be used when the control is in the ReadOnly mode.</t
 </table>
 
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight C# %}
 
 
 this.integerTextBox1.BackColor = System.Drawing.Color.PeachPuff;
-
-
 
 this.integerTextBox1.ReadOnly = true;
 
 this.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush;
 
-{%endhighlight%}
+{% endhighlight %}
 
+{% highlight VB %}
 
-{%highlight vbnet%}
 Me.integerTextBox1.BackColor = System.Drawing.Color.PeachPuff
-
-
-
 Me.integerTextBox1.ReadOnly = True
+Me.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush
 
-=Me.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush
+{% endhighlight %}
 
-{%endhighlight%}
+{% endtabs %}
 
 ![](Overview_images/Overview_img453.png)
 
@@ -120,9 +117,9 @@ ZeroColor</td><td>
 Gets / sets the fore color, when the current value is zero.</td></tr>
 </table>
 
+{% tabs %}
 
-{%highlight c#%}
-
+{% highlight C# %}
 
 
 this.integerTextBox1.PositiveColor = System.Drawing.Color.DarkOrange;
@@ -131,17 +128,19 @@ this.integerTextBox1.NegativeColor = System.Drawing.Color.SteelBlue;
 
 this.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab;
 
-{%endhighlight%}
+{% endhighlight %}
 
+{% highlight VB %}
 
-{%highlight vbnet%}
 Me.integerTextBox1.PositiveColor = System.Drawing.Color.DarkOrange
 
 Me.integerTextBox1.NegativeColor = System.Drawing.Color.SteelBlue
 
 Me.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img456.png) 
 
@@ -195,4 +194,4 @@ Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-S
 
 A sample which demonstrates the Foreground Settings of IntegerTextBox control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS
