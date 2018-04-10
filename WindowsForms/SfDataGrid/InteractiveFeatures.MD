@@ -187,7 +187,7 @@ Me.sfDataGrid1.RecordContextMenu.ForeColor = Color.DarkBlue
 
 ![](InteractiveFeatures_Images/ContextMenu9.png)
 
-### Cancel ContextMenu opening
+### Cancel ContextMenu Opening
 
 The context menu opening can be canceled for any particular cell/row or column through [ContextMenuOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpening_EV.html) event.
 
@@ -214,9 +214,9 @@ End Sub
 
 [ContextMenuOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpened_EV.html) event occurs when any context menu is opened in SfDataGrid. This will not occur if `ContextMenuOpening` event is canceled.
 
-### Customization of context menu
+### Customization of Context Menu
 
-#### Change the menu items when opening the context menu.
+#### Change the Menu Items when Opening the Context Menu.
 
 The menu items for  the context menu can be change when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpening_EV.html) event.
 
@@ -249,7 +249,7 @@ End Sub
 
 ![](InteractiveFeatures_Images/ContextMenu10.png)
 
-#### Create a new column by using ColumnHeaderContextMenu 
+#### Create a New Column by using ColumnHeaderContextMenu 
 
 SfDataGrid allows to copy a column and paste it in a new column. `ColumnHeaderContextMenu` can be used to provide options for copy column and paste column. The below code example shows how to provide this support.
 
@@ -262,10 +262,8 @@ GridColumn copiedColumn = null
 public Form1()
 {
     InitializeComponent();
-
     orderInfo = new OrderInfoCollection();
     this.sfDataGrid1.DataSource = orderInfo.OrdersListDetails;
-
     this.sfDataGrid1.ColumnHeaderContextMenu = new ContextMenuStrip();
     this.sfDataGrid1.ColumnHeaderContextMenu.Items.Add("Copy Column", null, OnCopyColumnClicked);
     this.sfDataGrid1.ColumnHeaderContextMenu.Items.Add("Paste Column", null, OnPasteColumnClicked);
@@ -349,7 +347,7 @@ End Sub
 
 ![](InteractiveFeatures_Images/ContextMenu12.png)
 
-#### Clipboard options by using RecordContextMenu
+#### Clipboard Options by using RecordContextMenu
 
 The below code example shows how to provide clipboard options for the SfDataGrid by using  `RecordContextMenu`.
 
@@ -392,7 +390,7 @@ private void OnPasteClicked(Object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-####  Clear filtering by using ColumnHeaderContextMenu
+####  Clear Filtering by using ColumnHeaderContextMenu
 
 The below code example shows how to provide option to clear filters in all the columns by using `ColumnHeaderContextMenu`.
 
@@ -475,7 +473,7 @@ N>[GridColumnBase.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/w
 
 ![](InteractiveFeatures_Images/ToolTip2.png)
 
-### Displaying ToolTip only for the trimmed cells
+### Displaying ToolTip Only for the Trimmed Cells
 
 By default, ToolTip will be displayed for all the cells. SfDataGrid provides support to display ToolTip only for the cells that contains trimmed text by setting value for [SfDataGrid.ToolTipOption.ToolTipMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~ToolTipMode.html) property as `TrimmedCells`.
 
@@ -490,9 +488,9 @@ Me.sfDataGrid1.ToolTipOption.ToolTipMode = ToolTipMode.TrimmedCells
 
 ![](InteractiveFeatures_Images/ToolTip3.png)
 
-### Setting ToolTip delay	
+### Setting ToolTip Delay	
 
-#### Initial delay
+#### Initial Delay
 
 The [SfDataGrid.ToolTipOption.InitialDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~InitialDelay.html) property provides supports to shorten or lengthen the time before displaying a ToolTip.
 
@@ -505,7 +503,7 @@ Me.sfDataGrid1.ToolTipOption.InitialDelay = 1000
 {% endhighlight %}
 {% endtabs %}
 
-#### Auto pop delay
+#### Auto Pop Delay
 
 The [SfDataGrid.ToolTipOption.AutoPopDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~ToolTipMode.html) property provides support to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a cell.
 
@@ -541,7 +539,7 @@ Me.sfDataGrid1.Style.ToolTipStyle.BorderColor = Color.DarkBlue
 
 ![](InteractiveFeatures_Images/ToolTip4.png)
 
-#### Conditional styling
+#### Conditional Styling
 
 SfDataGrid allows to customize the appearance of the ToolTip based on conditions through [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
 
@@ -572,7 +570,7 @@ End Sub
 
 ![](InteractiveFeatures_Images/ToolTip5.png)
 
-### Cancel ToolTip opening
+### Cancel ToolTip Opening
 
 SfDataGrid allows to cancel displaying the ToolTip for any particular cell/row or column by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
 
@@ -602,7 +600,7 @@ End Sub
 
 ### Customization of ToolTip
 
-#### Change the display text for a cell
+#### Change the Display Text for a Cell
 
 By default, SfDataGrid displays the ToolTip with the cell content as the ToolTip text. The ToolTip text for any particular cell can be changed by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
 
@@ -658,7 +656,7 @@ End Sub
 
 ![](InteractiveFeatures_Images/ToolTip7.png)
 
-#### Display ToolTip with beak
+#### Display ToolTip with Beak
 
 ToolTip can be displayed with beak by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
 

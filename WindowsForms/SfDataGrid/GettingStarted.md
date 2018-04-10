@@ -9,7 +9,7 @@ documentation: ug
 # Getting Started 
 This section provides a quick overview for working with the data grid for WinForms. Walk through the entire process of creating a real world data grid.
 
-## Assembly deployment
+## Assembly Deployment
 The following list of assemblies needs to be added as reference to use SfDataGrid control in any application,
 
 <table>
@@ -98,17 +98,17 @@ Syncfusion.Pdf.Base contains fundamental and base classes for creating PDF.
 </tr>
 </table>
 
-## Creating application with SfDataGrid
+## Creating Application with SfDataGrid
 In this walk through, users will create WinForms application that contains SfDataGrid control.
 
-### Creating the project
+### Creating the Project
 Create new Windows Forms Project in Visual Studio to display SfDataGrid with data objects.
 
-### Adding control via Designer
+### Adding Control via Designer
 SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 ![](GettingStarted_images/GettingStarted_img1.png)
 
-### Adding control in Code
+### Adding Control in Code
 In order to add control manually, do the below steps,
 
 1) 	Add the below required assembly references to the project,
@@ -162,7 +162,7 @@ End Namespace
 {% endhighlight %}
 {% endtabs %}
 
-### Creating Data for sample application
+### Creating Data for Sample Application
 
 SfDataGrid is a data-bound control. So data must be created for application.
 
@@ -177,37 +177,31 @@ public class OrderInfo
     string country;
     string customerName;
     string shippingCity;
-
     public int OrderID
     {
         get { return orderID; }
         set { orderID = value; }
     }
-
     public string CustomerID
     {
         get { return customerId; }
         set { customerId = value; }
     }
-
     public string CustomerName
     {
         get { return customerName; }
         set { customerName = value; }
     }
-
     public string Country
     {
         get { return country; }
         set { country = value; }
     }
-
     public string ShipCity
     {
         get { return shippingCity; }
         set { shippingCity = value; }
     }
-
     public OrderInfo(int orderId, string customerName, string country, string customerId, string shipCity)
     {
         this.OrderID = orderId;
@@ -295,13 +289,11 @@ public class OrderInfoCollection
         get { return _orders; }
         set { _orders = value; }
     }
-
     public OrderInfoCollection()
     {
         _orders = new ObservableCollection<OrderInfo>();
         this.GenerateOrders();
     }
-
     private void GenerateOrders()
     {
         _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
@@ -532,7 +524,7 @@ sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode
 
 The selection operations can be handled with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionChanging_EV.html) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionChanged_EV.html) events of SfDataGrid.
 
-## Sorting, Grouping and Filtering
+## Sorting, Grouping, and Filtering
 
 ### Sorting
 By default, columns in a SfDataGrid can be sorted by clicking the column header. The sorting can be configured by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnDescriptions.html) property as below,
