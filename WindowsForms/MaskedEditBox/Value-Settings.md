@@ -32,8 +32,9 @@ Specifies the maximum value that can be set through the MaskedEditBox.The defaul
 </table>
 
 
-{% highlight C# %}  
+{% tabs %}
 
+{% highlight C# %}  
 
 
 this.maskedEditBox1.MinValue = new decimal(new int[] {50, 0, 0, 0});
@@ -43,11 +44,12 @@ this.maskedEditBox1.MaxValue = new decimal(new int[] {100, 0, 0, 0});
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.MinValue = New Decimal(New Integer() {50, 0, 0, 0})
 
 Me.maskedEditBox1.MaxValue = New Decimal(New Integer() {100, 0, 0, 0})
 
 {% endhighlight %}
+
+{% endtabs %}

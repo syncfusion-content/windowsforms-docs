@@ -52,6 +52,8 @@ Gets / sets the integer version of the PassivePromptCharacter.</td></tr>
 </table>
 
 
+{% tabs %}
+
 {% highlight C# %}  
 
 this.maskedEditBox1.AllowPrompt = true;
@@ -64,9 +66,7 @@ this.maskedEditBox1.PassivePromptCharacterInt = 47;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.AllowPrompt = True
 
@@ -78,15 +78,13 @@ Me.maskedEditBox1.PassivePromptCharacterInt = 47
 
 {% endhighlight %}
 
+{% endtabs %}
 
 N> We can trim the additional spaces present in the mask by setting the PaddingCharacterInt property to '0'.
 
 ### MaxLength
 
 The maximum length of the text can be set using the property given below.
-
-
-
 
 
 <table>
@@ -100,6 +98,7 @@ MaxLength</td><td>
 Specifies the maximum number of characters that can be entered into the edit control. The default value is set to '32767'.</td></tr>
 </table>
 
+{%tabs %}
 
 {% highlight C# %}  
 
@@ -107,19 +106,17 @@ this.maskedEditBox1.MaxLength = 32800;               
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.MaxLength = 32800
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### ReadOnly
 
 The ReadOnly mode can be enabled for the MaskedEditBox control using the below given property.
-
-
 
 <table>
 <tr>
@@ -132,6 +129,7 @@ ReadOnly</td><td>
 Specifies whether the text in the edit control can be changed or not.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -139,11 +137,10 @@ this.maskedEditBox1.ReadOnly = true;
 
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.ReadOnly = True
 
 {% endhighlight %}
+
+{% endtabs %}

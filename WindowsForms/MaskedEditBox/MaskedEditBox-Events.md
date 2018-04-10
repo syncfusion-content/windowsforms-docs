@@ -81,9 +81,9 @@ This event occurs when the Border3DStyle property is changed. The Border3DStyl
 
 The event handler receives an argument of type EventArgs containing data related to this event. 
 
+{% tabs %}
+
 {% highlight C# %}  
-
-
 
 private void maskedEditBox1_Border3DStyleChanged(object sender, EventArgs e)
 
@@ -95,9 +95,7 @@ Console.WriteLine(" Border3DStyleChanged event is raised ");
 
 {% endhighlight %}
 
-{% highlight vbnet %} 
-
-
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -107,12 +105,15 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## BorderColorChanged
 
 This event occurs when the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -129,8 +130,7 @@ Console.WriteLine(" BorderColorChanged event is raised ");
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_BorderColorChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -140,12 +140,15 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## BorderSidesChanged
 
 This event occurs when the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -162,8 +165,7 @@ Console.WriteLine(" BorderSidesChanged event is raised ");
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_BorderSidesChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -174,14 +176,17 @@ End Sub
 {% endhighlight %}
 
 
+{% endtabs %}
+
 ## BorderStyleChanged
 
 This event occurs when the BorderStyle property is changed. The BorderStyle property indicates whether the edit control should have a border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-{% highlight C# %}  
+{% tabs %}
 
+{% highlight C# %}  
 
 
 private void maskedEditBox1_BorderStyleChanged(object sender, EventArgs e)
@@ -195,9 +200,7 @@ Console.WriteLine(" BorderStyleChanged event is raised ");
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_BorderStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -207,12 +210,16 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## CharacterCasingChanged
 
 This event occurs when the CharacterCasing property is changed. The CharacterCasing property gets / sets the case of the characters as they are typed.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -227,8 +234,7 @@ Console.WriteLine(" CharacterCasingChanged event is raised ");
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_CharacterCasingChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -238,12 +244,16 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## HideSelectionChanged
 
 This event occurs when the HideSelection property is changed. The HideSelection property indicates that the selection should be 
 hidden when the edit control loses focus.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -259,7 +269,7 @@ Console.WriteLine(" HideSelectionChanged event is raised ");
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_HideSelectionChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -268,6 +278,8 @@ Console.WriteLine(" HideSelectionChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## MaskCustomValidate
 
@@ -305,9 +317,9 @@ Indicates whether the event has been handled and no further processing of the ev
 </table>
 
 
+{% tabs %}
+
 {% highlight C# %}  
-
-
 
 private void maskedEditBox1_MaskCustomValidate(object sender, Syncfusion.Windows.Forms.Tools.MaskCustomValidateArgs e)
 
@@ -320,8 +332,7 @@ Console.WriteLine(" MaskCustomValidate event is raised ");
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_MaskCustomValidate(ByVal sender As Object, ByVal e AsSyncfusion.Windows.Forms.Tools.MaskCustomValidateArgs)
 
@@ -331,11 +342,16 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
 ## MaskSatisfied
 
 This event is raised when the required fields in a mask have been satisfied after new text has been entered / the text changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -351,9 +367,7 @@ Console.WriteLine(" MaskSatisfied event is raised ");
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_MaskSatisfied(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -361,14 +375,17 @@ Console.WriteLine(" MaskSatisfied event is raised ")
 
 End Sub
 
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ## MaximumSizeChanged
 
 This event occurs when the MaximumSize property is changed. The MaximumSize property gets / sets the maximum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -383,8 +400,7 @@ Console.WriteLine(" MaximumSizeChanged event is raised ");
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_MaximumSizeChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -394,6 +410,7 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## MinimumSizeChanged
 
@@ -401,8 +418,9 @@ This event occurs when the MinimumSize property is changed. The MinimumSize pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-{% highlight C# %} 
+{% tabs %}
 
+{% highlight C# %} 
 
 private void maskedEditBox1_MinimumSizeChanged(object sender, EventArgs e)
 
@@ -415,9 +433,7 @@ Console.WriteLine(" MinimumSizeChanged event is raised ");
  {% endhighlight %}
 
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_MinimumSizeChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -427,11 +443,15 @@ End Sub
  
  {% endhighlight %}
  
+ {% endtabs %}
+
 ## MultilineChanged
 
 This event occurs when the Multiline property is changed. The Multiline property controls whether the text of the edit control can span more than one line or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -447,9 +467,7 @@ Console.WriteLine(" MultilineChanged event is raised ");
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_MultilineChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -459,12 +477,16 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## ReadOnlyChanged
 
 This event occurs when the ReadOnly property is changed. The ReadOnly property controls whether the text in the edit control 
 can be changed or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -478,9 +500,7 @@ Console.WriteLine(" ReadOnlyChanged event is raised ");
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_ReadOnlyChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -490,6 +510,7 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## TextAlignChanged
 
@@ -497,6 +518,8 @@ This event occurs when the TextAlign property is changed. The TextAlign proper
 edit controls.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -510,9 +533,7 @@ Console.WriteLine(" TextAlignChanged event is raised ");
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_TextAlignChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -522,12 +543,16 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## ThemesEnabledChanged
 
 This event occurs when the ThemesEnabled property is changed. The ThemesEnabled property specifies whether or not to
 use XP Themes when the BorderStyle property is set to 'Fixed3D'.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -542,8 +567,7 @@ Console.WriteLine(" ThemesEnabledChanged event is raised ");
  {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub maskedEditBox1_ThemesEnabledChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -552,3 +576,5 @@ Console.WriteLine(" ThemesEnabledChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
