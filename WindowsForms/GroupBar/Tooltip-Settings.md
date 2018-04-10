@@ -6,7 +6,7 @@ platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Tooltip Settings 
+# Tooltip settings
 
 The tooltips for the buttons and the navigation pane are set through the below properties.
 
@@ -15,7 +15,7 @@ The tooltips for the buttons and the navigation pane are set through the below p
 <table>
 <tr>
 <th>
-GroupBar Property</th><th>
+GroupBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -31,6 +31,7 @@ NavigationPaneTooltip</td><td>
 Gets or sets the navigation pane tooltip.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -43,7 +44,7 @@ this.groupBar1.MinimizeButtonToolTip = "Minimize Navigation Pane";
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.groupBar1.ExpandButtonToolTip = "Expand Navigation Pane"
 
@@ -52,3 +53,5 @@ Me.groupBar1.NavigationPaneTooltip = "Expand Navigation Pane"
 Me.groupBar1.MinimizeButtonToolTip = "Minimize Navigation Pane"
 
 {% endhighlight %}
+
+{% endtabs %}
