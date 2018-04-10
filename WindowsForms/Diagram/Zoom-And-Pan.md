@@ -109,7 +109,7 @@ this.diagram1.View.ZoomToActual();
 this.diagram1.View.ZoomToSelection(new RectangleF(100,100,100,100));   
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 ‘Sets the zoom increment value.
 Me.diagram1.View.ZoomIncrement = 20
@@ -142,7 +142,7 @@ The following code sample demonstrates how to use the zoom to center feature in 
 this.diagram1.View.ZoomType = ZoomType.Center;  
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Sets the ZoomType as ‘center’. 
 Me.diagram1.View.ZoomType = ZoomType.Center
@@ -168,7 +168,7 @@ The following code shows how to use the zoom to top-left feature:
 this.diagram1.View.ZoomType = ZoomType.TopLeft;  
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Sets the ZoomType as TopLeft. 
 Me.diagram1.View.ZoomType = ZoomType.TopLeft
@@ -233,7 +233,7 @@ zoomTool.MinimumMagnification = 50;
 zoomTool.ZoomIncrement = 10;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 diagram1.Controller.ActivateTool("ZoomTool")
 Dim zoomTool As ZoomTool = CType(diagram1.Controller.ActiveTool, ZoomTool)
@@ -266,7 +266,7 @@ Programmatically, it is implemented as follows.
 this.diagram1.Controller.ActivateTool("PanTool");
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.Controller.ActivateTool("PanTool")
 
