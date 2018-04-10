@@ -209,10 +209,10 @@ public class ProductSales
     {
         /// Geography
         string[] countries = new string[] { "Australia", "Germany", "Canada", "United States" };
-        string[] ausStates = new string[] { "New South Wales", "Queensland", };
-        string[] canadaStates = new string[] { "Ontario", "Quebec" };
-        string[] germanyStates = new string[] { "Bayern", "Brandenburg" };
-        string[] ussStates = new string[] { "New York", "Colorado", "New Mexico" };
+        string[] states1 = new string[] { "New South Wales", "Queensland", };
+        string[] states2 = new string[] { "Ontario", "Quebec" };
+        string[] states3 = new string[] { "Bayern", "Brandenburg" };
+        string[] states4 = new string[] { "New York", "Colorado", "New Mexico" };
 
         /// Time
         string[] dates = new string[] { "FY 2008", "FY 2009", "FY 2010", "FY 2011", "FY 20012" };
@@ -239,22 +239,22 @@ public class ProductSales
             {
                 case "Australia":
                     {
-                        sales.State = ausStates[r.Next(ausStates.GetLength(0))];
+                        sales.State = states1[r.Next(states1.GetLength(0))];
                         break;
                     }
                 case "Canada":
                     {
-                        sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];
+                        sales.State = states2[r.Next(states2.GetLength(0))];
                         break;
                     }
                 case "Germany":
                     {
-                        sales.State = germanyStates[r.Next(germanyStates.GetLength(0))];
+                        sales.State = states3[r.Next(states3.GetLength(0))];
                         break;
                     }
                 case "United States":
                     {
-                        sales.State = ussStates[r.Next(ussStates.GetLength(0))];
+                        sales.State = states4[r.Next(states4.GetLength(0))];
                         break;
                     }
             }
@@ -298,10 +298,10 @@ Public Class ProductSales
 
     Public Shared Function GetSalesData() As ProductSalesCollection
         Dim countries As String() = New String() {"Australia", "Germany", "Canada", "United States"}
-        Dim ausStates As String() = New String() {"New South Wales", "Queensland"}
-        Dim canadaStates As String() = New String() {"Ontario", "Quebec"}
-        Dim germanyStates As String() = New String() {"Bayern", "Brandenburg"}
-        Dim ussStates As String() = New String() {"New York", "Colorado", "New Mexico"}
+        Dim states1 As String() = New String() {"New South Wales", "Queensland"}
+        Dim states2 As String() = New String() {"Ontario", "Quebec"}
+        Dim states3 As String() = New String() {"Bayern", "Brandenburg"}
+        Dim states4 As String() = New String() {"New York", "Colorado", "New Mexico"}
         Dim dates As String() = New String() {"FY 2008", "FY 2009", "FY 2010", "FY 2011", "FY 20012"}
         Dim products As String() = New String() {"Bike"}
         Dim r As Random = New Random(123345)
@@ -319,16 +319,16 @@ Public Class ProductSales
             sales.Product = products(r.[Next](r.[Next](products.GetLength(0) + 1)))
             Select Case sales.Country
                 Case "Australia"
-                    sales.State = ausStates(r.[Next](ausStates.GetLength(0)))
+                    sales.State = states1(r.[Next](states1.GetLength(0)))
                     Exit Select
                 Case "Canada"
-                    sales.State = canadaStates(r.[Next](canadaStates.GetLength(0)))
+                    sales.State = states2(r.[Next](states2.GetLength(0)))
                     Exit Select
                 Case "Germany"
-                    sales.State = germanyStates(r.[Next](germanyStates.GetLength(0)))
+                    sales.State = states3(r.[Next](states3.GetLength(0)))
                     Exit Select
                 Case "United States"
-                    sales.State = ussStates(r.[Next](ussStates.GetLength(0)))
+                    sales.State = states4(r.[Next](states4.GetLength(0)))
                     Exit Select
             End Select
 
