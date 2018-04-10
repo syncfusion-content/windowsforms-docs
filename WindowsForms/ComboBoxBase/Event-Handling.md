@@ -104,75 +104,55 @@ This section deals with associating a CheckedListBox and handling the events. Af
 
 3. To avoid the closing of dropdown when we are in checking the items, handle the DropDownCloseOnClick event and set args.Cancel=true.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        // Avoids the closing of dropdown.
+// Avoids the closing of dropdown.
+private void comboBoxBase1_DropDownCloseOnClick(object sender, Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs args) 
+{
+	args.Cancel=true;
+}
 
-		private void comboBoxBase1_DropDownCloseOnClick(object sender, Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs args) 
+{% endhighlight %}
 
-		{
+{% highlight vb %}
 
-		args.Cancel=true;
+' Avoids the closing of dropdown.
+Private  Sub comboBoxBase1_DropDownCloseOnClick(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs)
+	args.Cancel=True
+End Sub
 
-		}
-
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
-
-        ' Avoids the closing of dropdown.
-
-		Private  Sub comboBoxBase1_DropDownCloseOnClick(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs)
-
-		args.Cancel=True
-
-		End Sub
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 4. Handle SelectedIndexChanged event of the CheckedListBox and add the following code.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        // Sets the corresponding selected text in the ComboBoxBase TextBox.
+// Sets the corresponding selected text in the ComboBoxBase TextBox.
+private void checkedListBox1_SelectedIndexChanged(object sender, System.EventArgs e) 
+{
+	comboBoxBase1.TextBox.Text="";
+	foreach(object s in checkedListBox1.CheckedItems ) 
+	comboBoxBase1.TextBox.Text  += s.ToString();
+}
 
-		private void checkedListBox1_SelectedIndexChanged(object sender, System.EventArgs e) 
+{% endhighlight %}
 
-		{
-
-		comboBoxBase1.TextBox.Text="";
-
-		foreach(object s in checkedListBox1.CheckedItems ) 
-
-		comboBoxBase1.TextBox.Text  += s.ToString();
-
-		}
-
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
+{% highlight vb %}
         
-		' Sets the corresponding selected text in the ComboBoxBase TextBox.
+' Sets the corresponding selected text in the ComboBoxBase TextBox.
+Private  Sub checkedListBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
+comboBoxBase1.TextBox.Text=""
+Dim s As Object
+For Each s In checkedListBox1.CheckedItems
+comboBoxBase1.TextBox.Text  += s.ToString()
+Next
+End Sub
 
-		Private  Sub checkedListBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
-
-		comboBoxBase1.TextBox.Text=""
-
-		Dim s As Object
-
-		For Each s In checkedListBox1.CheckedItems
-
-		comboBoxBase1.TextBox.Text  += s.ToString()
-
-		Next
-
-		End Sub
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img322.jpeg) 
 
@@ -180,101 +160,70 @@ This section deals with associating a CheckedListBox and handling the events. Af
 
 In order to place ComboBoxBase within a PopupControlContainer, derive from our PopupControlContainer, override the OnPopup method and set the focus to the derived control. This ensures that the derived PopupControlContainer does not lose focus and close prematurely.
 
+{% tabs %}
 {% highlight c# %}
 
 // Derive from PopupControlContainer.
-
 public class CustomPopupControlContainer : Syncfusion.Windows.Forms.PopupControlContainer
-
 {
-
-public CustomPopupControlContainer()
-
-{
-
-}
-
-public CustomPopupControlContainer(IContainer container):this()
-{
-
-container.Add(this);
-
-}
-
-protected override void OnPopup(EventArgs args)
-
-{
+    public CustomPopupControlContainer()
+    {
+    }
+    public CustomPopupControlContainer(IContainer container):this()
+    {
+        container.Add(this);
+    }
+    protected override void OnPopup(EventArgs args)
+    {
 
  // Sets focus to the derived control.
-
-base.OnPopup(args);
-
-this.Focus();
-
-}
-
+    base.OnPopup(args);
+    this.Focus();
+    }
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Derive from PopupControlContainer.
-
 Public Class CustomPopupControlContainer Inherits Syncfusion.Windows.Forms.PopupControlContainer
-
 Public Sub New()
-
 End Sub
-
 Public Sub New(ByVal container As IContainer) : Me()
-
 container.Add(Me)
-
 End Sub
 
 ' Sets focus to the derived control.
-
 Protected Overrides Sub OnPopup(ByVal args As EventArgs)
-
 MyBase.OnPopup(args)
-
 Me.Focus()
-
 End Sub
-
 End Class
 
 {% endhighlight %}
+{% endtabs %}
 
 Here the specification of the parent-child relationship between the ComboBoxBase's popup and the PopupControlContainer is explained with the help of coding.
 
+{% tabs %}
 {% highlight c# %}
-
 private void comboBoxBase1_DropDown(object sender, System.EventArgs e)
-
 {
-
-/* Setup the relationship between the ComboBoxBase's dropdown and it's parent PopupControlContainer, so that the popup will not close when the ComboBoxBase’s dropdown is shown */
-
-this.comboBoxBase1.PopupContainer.PopupParent = this.popupControlContainer1;
-
-this.popupControlContainer1.CurrentPopupChild = this.comboBoxBase1.PopupContainer;
-
+    /* Setup the relationship between the ComboBoxBase's dropdown and it's parent PopupControlContainer, so that the popup will not close when the ComboBoxBase’s dropdown is shown */
+    this.comboBoxBase1.PopupContainer.PopupParent = this.popupControlContainer1;
+    this.popupControlContainer1.CurrentPopupChild = this.comboBoxBase1.PopupContainer;
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 Private Sub comboBoxBase1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs)
 
 'Setup the relationship between the ComboBoxBase's dropdown and it's parent PopupControlContainer, so that the popup will not close when the ComboBoxBase’s  dropdown is shown
-
 Me.comboBoxBase1.PopupContainer.PopupParent = Me.popupControlContainer1
-
 Me.popupControlContainer1.CurrentPopupChild = Me.comboBoxBase1.PopupContainer
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}

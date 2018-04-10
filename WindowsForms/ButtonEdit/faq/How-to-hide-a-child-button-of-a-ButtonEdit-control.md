@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# How to hide a child button of a ButtonEdit control?
+# How to Hide a Child Button of a ButtonEdit Control
 
 By calling the ButtonEdit.HideButton method, we can hide a child button. 
 
@@ -29,21 +29,16 @@ If true, the button will be visible and if false,
 the button will not be visible.</td></tr>
 </table>
 
-
+{% tabs %}
 {%highlight c#%}
-
-
 
 this.buttonEdit1.HideButton(0, false);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
-
-
+{%highlight vb%}
 
 Me.buttonEdit1.HideButton(0, False)
 
 {%endhighlight%}
-
-
+{% endtabs %}

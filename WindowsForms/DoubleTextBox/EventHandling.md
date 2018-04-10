@@ -6,11 +6,13 @@ platform: WindowsForms
 control: DoubleTextBox
 documentation: ug
 ---
-#Event Handling
+# Event Handling
 
 ## DoubleValueChanged Event
 
 This event is handled when the double value in the text field is changed.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -37,9 +39,13 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Enabling Fixed Change using Shortcut Keys
 
 Sometimes there may occur situations for incrementing or decrementing the value in DoubleTextBox. In such situations it is better to use shortcut keys. The following implementation will give you an idea on how to achieve this. Here the Up and Down keys are used for incrementing and decrementing respectively. We cannot use '-' because it is already reserved to enter the minus sign.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -95,3 +101,5 @@ doubleTextBox1.DoubleValue = v
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

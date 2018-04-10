@@ -24,165 +24,113 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 
 1. Create a handler for the ComboDrop-Down's Drop-Down event and the TreeView's DoubleClick event. In the DoubleClick event, set the combo's text based on the selected node as follows.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        private void treeView1_DoubleClick(object sender, System.EventArgs e)
-		
-		{
+private void treeView1_DoubleClick(object sender, System.EventArgs e)
+{
+	if(this.treeView1.SelectedNode != null)
 
-		if(this.treeView1.SelectedNode != null)
+	// Set the ComboDropDown's text to be the TreeNode's text.
+    this.comboDropDown1.Text = this.treeView1.SelectedNode.Text;
+	else
+	this.comboDropDown1.Text = String.Empty;
 
-		// Set the ComboDropDown's text to be the TreeNode's text.
+	// Close the ComboDropDown.
+	this.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done);
+}
 
-		this.comboDropDown1.Text = this.treeView1.SelectedNode.Text;
+{% endhighlight %}
 
-		else
+{% highlight vb %}
 
-		this.comboDropDown1.Text = String.Empty;
+Private Sub treeView1_DoubleClick(sender As Object, e As System.EventArgs) Handles treeView1.DoubleClick
+If Not (Me.treeView1.SelectedNode Is Nothing) Then
 
-		// Close the ComboDropDown.
+' Set the ComboDropDown's text to be the TreeNode's text.
+Me.comboDropDown1.Text = Me.treeView1.SelectedNode.Text
+Else
+Me.comboDropDown1.Text = String.Empty
+End If
 
-		this.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done);
+' Close the ComboDropDown.
+Me.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done)
+End Sub 
 
-		}
-
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
-
-        Private Sub treeView1_DoubleClick(sender As Object, e As System.EventArgs) Handles treeView1.DoubleClick
-
-		If Not (Me.treeView1.SelectedNode Is Nothing) Then
-
-		' Set the ComboDropDown's text to be the TreeNode's text.
-
-		Me.comboDropDown1.Text = Me.treeView1.SelectedNode.Text
-
-		Else
-
-		Me.comboDropDown1.Text = String.Empty
-
-		End If
-
-		' Close the ComboDropDown.
-
-		Me.comboDropDown1.PopupContainer.HidePopup(PopupCloseType.Done)
-
-		End Sub 
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 2. Simply traverses the tree structure recursively to find the matching node using the FindNode method discussed below.
 
-   ~~~ cs
-
-        private TreeNode FindNode(TreeNodeCollection nodes, string text)
-
-		{
-
-		foreach(TreeNode child in nodes)
-
-		if(child.Text == text)
-
-		return child;
-
-		foreach(TreeNode child in nodes)
-
-		{
-
+{% tabs %}
+{% highlight c# %}
+ 
+private TreeNode FindNode(TreeNodeCollection nodes, string text)
+{
+	foreach(TreeNode child in nodes)
+	if(child.Text == text)
+	return child;
+	foreach(TreeNode child in nodes)
+	{
 		TreeNode matched = this.FindNode(child.Nodes, text);
-
 		if(matched != null)
-
 		return matched;
+	}
+	return null;
+}
 
-		}
+{% endhighlight %}
 
-		return null;
+{% highlight vb %}
 
-		}
+Private Function FindNode(ByVal nodes As TreeNodeCollection, ByVal text As String) As TreeNode
+For Each child As TreeNode In nodes
+If child.Text = text Then
+Return child
+End If
+Next child
+For Each child As TreeNode In nodes
+Dim matched As TreeNode = Me.FindNode(child.Nodes, text)
+If Not matched Is Nothing Then
+Return matched
+End If
+Next child
+Return Nothing
+End Function
 
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
-
-        Private Function FindNode(ByVal nodes As TreeNodeCollection, ByVal text As String) As TreeNode
-
-		For Each child As TreeNode In nodes
-
-        If child.Text = text Then
-
-        Return child
-
-        End If
-
-        Next child
-
-        For Each child As TreeNode In nodes
-
-        Dim matched As TreeNode = Me.FindNode(child.Nodes, text)
-
-        If Not matched Is Nothing Then
-
-        Return matched
-
-        End If
-
-        Next child
-
-        Return Nothing
-
-        End Function
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 3. In the drop-down event, find the node whose text matches the text in the combo and make that the selected node, using the following code.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        private void comboDropDown1_DropDown(object sender, System.EventArgs e)
-
-		{
-
-		// Before the drop-down is shown, select a TreeNode based on the text in the combo.
-
-		if(this.comboDropDown1.Text != String.Empty)
-
-		{
-
+private void comboDropDown1_DropDown(object sender, System.EventArgs e)
+{
+// Before the drop-down is shown, select a TreeNode based on the text in the combo.
+	if(this.comboDropDown1.Text != String.Empty)
+	{
 		TreeNode matchedNode = this.FindNode(this.treeView1.Nodes, this.comboDropDown1.Text);
-
 		this.treeView1.SelectedNode = matchedNode;
+    }
+}
 
-		}
+{% endhighlight %}
 
-		}
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+Private Sub comboDropDown1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs) Handles comboDropDown1.DropDown
 
-   ~~~ vbnet
+' Before the drop-down is shown, select a TreeNode based on the text in the combo.
+If Me.comboDropDown1.Text <> String.Empty Then
+Dim matchedNode As TreeNode = Me.FindNode(Me.treeView1.Nodes, Me.comboDropDown1.Text)
+Me.treeView1.SelectedNode = matchedNode
+End If
+End Sub 
 
-        Private Sub comboDropDown1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs) Handles comboDropDown1.DropDown
-
-		' Before the drop-down is shown, select a TreeNode based on the text in the combo.
-
-		If Me.comboDropDown1.Text <> String.Empty Then
-
-		Dim matchedNode As TreeNode = Me.FindNode(Me.treeView1.Nodes, Me.comboDropDown1.Text)
-
-		Me.treeView1.SelectedNode = matchedNode
-
-		End If
-
-		End Sub 
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 4. At run time, when the user double on a node, the node text will appears in the ComboDropDown. 
 5. Also when the user edits the text, the corresponding node will be selected in the tree in the drop down. 
@@ -205,43 +153,29 @@ Drag the ComboDropDown and TreeView control onto the Form. Then add TreeView wit
 
 Listen to the ComboDrop-Down's PopupContainer's Popup event. This event will be fired after the drop-down is shown. In this event, call the drop-down control's Focus method.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.comboDropDown1.PopupContainer.Popup += new EventHandler(this.AfterDropDownPopup);
-
-
-
 private void AfterDropDownPopup(object sender, EventArgs e)
-
 {
-
 // Tree takes focus on dropdown.
-
-this.treeView1.Focus();
-
+    this.treeView1.Focus();
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Me.comboDropDown1.PopupContainer.Popup += New EventHandler(Me.AfterDropDownPopup)
-
-
-
 Private Sub AfterDropDownPopup(ByVal sender As Object, ByVal e As EventArgs)
 
-    ' Tree takes focus on dropdown.
-
-    Me.treeView1.Focus()
-
+' Tree takes focus on dropdown.
+Me.treeView1.Focus()
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img293.jpeg) 
 

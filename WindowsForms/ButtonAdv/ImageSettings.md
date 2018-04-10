@@ -6,9 +6,7 @@ platform: WindowsForms
 control: Tools
 documentation: ug
 ---
-
 # Image Settings
-
 
 ButtonAdv supports two types of images. They are,
 
@@ -28,9 +26,7 @@ Image that will be displayed on the control.
 ![](Overview_images/Overview_img73.jpeg) 
 
 
-
 The Images can be added to the ButtonAdv control in two ways. Either Image property can be used or the below properties.
-
 
 <table>
 <tr>
@@ -86,39 +82,28 @@ ImageAboveText and<br/>
 TextAboveImage.</td></tr>
 </table>
 
-
 ![](Overview_images/Overview_img73.jpeg) 
-
-
 
 N> The Image settings will be effective only when [ButtonType](http://help.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types) is set to Normal.
 
-
-
-{%highlight c#%}
+{% tabs %}
+{% highlight c# %}
 
 this.btnAlignment.Image = ((System.Drawing.Bitmap)(resources.GetObject("btnAlignment.Image")));
-
 this.btnAlignment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
 this.btnAlignment.ImageIndex = 3;
-
 this.btnAlignment.ImageList = this.imageList1;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.btnAlignment.Image = CType((resources.GetObject("btnAlignment.Image")), System.Drawing.Bitmap) 
-
 Me.btnAlignment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft 
-
 Me.btnAlignment.ImageIndex = 3 
-
 Me.btnAlignment.ImageList = Me.imageList1
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img75.jpeg) 

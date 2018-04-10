@@ -33,127 +33,105 @@ It can be created through code by following the below steps.
 
 1. Added Shared.Base to the reference folder through solution explorer and include the below namespace in the code.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight vb %}
 
-        Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 2. Create an instance of the ComboBoxBase control and ListBox.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        private Syncfusion.Windows.Forms.Tools.ComboBoxBase comboBoxBase1;
+private Syncfusion.Windows.Forms.Tools.ComboBoxBase comboBoxBase1;
+private System.Windows.Forms.ListBox listBox1;
+this.comboBoxBase1=new Syncfusion.Windows.Forms.Tools.ComboBoxBase();
+this.listBox1=new ListBox();
 
-		private System.Windows.Forms.ListBox listBox1;
+{% endhighlight %}
 
-		this.comboBoxBase1=new Syncfusion.Windows.Forms.Tools.ComboBoxBase();
+{% highlight vb %}
 
-		this.listBox1=new ListBox();
+Private comboBoxBase1 As Syncfusion.Windows.Forms.Tools.ComboBoxBase
+Private listBox1 As System.Windows.Forms.ListBox
+Me.comboBoxBase1 = New Syncfusion.Windows.Forms.Tools.ComboBoxBase()
+Me.listBox1 = New ListBox()
 
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
-
-        Private comboBoxBase1 As Syncfusion.Windows.Forms.Tools.ComboBoxBase
-
-		Private listBox1 As System.Windows.Forms.ListBox
-
-		Me.comboBoxBase1 = New Syncfusion.Windows.Forms.Tools.ComboBoxBase()
-
-		Me.listBox1 = New ListBox()
-
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
+{% endtabs %}
+ 
 3. Set the ListControl that will be used in the dropdown portion of ComboBoxBase and specify the size of ComboBoxBase. 
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        this.comboBoxBase1.ListControl=this.listBox1;
+this.comboBoxBase1.ListControl=this.listBox1;
+this.comboBoxBase1.Size=new Size(120,20);
 
-		this.comboBoxBase1.Size=new Size(120,20);
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% highlight vb %}
 
-   ~~~ vbnet
+Me.comboBoxBase1.ListControl=Me.listBox1
+Me.comboBoxBase1.Size = New Size(120,20)
 
-        Me.comboBoxBase1.ListControl=Me.listBox1
-
-		Me.comboBoxBase1.Size = New Size(120,20)
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 4. Specify the datasource. 
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        // Sets the datasource.
+// Sets the datasource.
+ArrayList USStates = new ArrayList(); 
+USStates.Add(new USState("Washington", "WA")); 
+USStates.Add(new USState("West Virginia", "WV")); 
+USStates.Add(new USState("Wisconsin", "WI")); 
+USStates.Add(new USState("Wyoming", "WY")); 
+ListBox1.DataSource = USStates; 
 
-		ArrayList USStates = new ArrayList(); 
-		
-		USStates.Add(new USState("Washington", "WA")); 
+{% endhighlight %}
 
-		USStates.Add(new USState("West Virginia", "WV")); 
+{% highlight vb %}
 
-		USStates.Add(new USState("Wisconsin", "WI")); 
+' Sets the datasource.
+Dim USStates As ArrayList = New ArrayList()
+USStates.Add(New USState("Washington", "WA"))
+USStates.Add(New USState("West Virginia", "WV"))
+USStates.Add(New USState("Wisconsin", "WI"))
+USStates.Add(New USState("Wyoming", "WY"))
+ListBox1.DataSource = USStates
 
-		USStates.Add(new USState("Wyoming", "WY")); 
-
-		ListBox1.DataSource = USStates; 
-
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
-
-        ' Sets the datasource.
-
-		Dim USStates As ArrayList = New ArrayList()
-
-		USStates.Add(New USState("Washington", "WA"))
-
-		USStates.Add(New USState("West Virginia", "WV"))
-
-		USStates.Add(New USState("Wisconsin", "WI"))
-
-		USStates.Add(New USState("Wyoming", "WY"))
-
-		ListBox1.DataSource = USStates
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 5. Finally add ComboBoxBase and Listbox to the Form.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        this.Controls.Add(this.listBox1);
+this.Controls.Add(this.listBox1);
+this.Controls.Add(this.comboBoxBase1);
 
-		this.Controls.Add(this.comboBoxBase1);
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% highlight vb %}
 
-   ~~~ vbnet
+Me.Controls.Add(Me.listBox1)
+Me.Controls.Add(Me.comboBoxBase1)
 
-        Me.Controls.Add(Me.listBox1)
-
-		Me.Controls.Add(Me.comboBoxBase1)
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img319.png) 
 

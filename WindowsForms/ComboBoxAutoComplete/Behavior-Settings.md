@@ -7,7 +7,6 @@ control: ComboBoxAutoComplete
 documentation: ug
 ---
 
-
 # Behavior Settings
 
 The behavior settings of a ComboBoxAutoComplete control includes the below properties.
@@ -33,34 +32,23 @@ UpdateComboSelectionProperties</td><td>
 UpdateComboSelectionProperties set to true means the Property SelectedItem will return the AutoCompleteControl's SelectedItem. Else if it is set to false, then SelectedItem property should return the base class SelectedItem that is, the Windows ComboBox SelectedItem value.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
-
 this.comboBoxAutoComplete1.AllowNewText= true;
-
 this.comboBoxAutoComplete1.ReadOnly = true;
-
 this.comboBoxAutoComplete1.UpdateComboSelectionProperties = false;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.comboBoxAutoComplete1.AllowNewText= True
-
 Me.comboBoxAutoComplete1.ReadOnly = True
-
 Me.comboBoxAutoComplete1.UpdateComboSelectionProperties = False
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 <table>
 <tr>
@@ -73,31 +61,21 @@ SetSelectedItem</td><td>
 To set SelectedItem in ComboBoxAutoComplete, when loading AutoComplete control as its DropDown.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
 //To set selected item in ComboBoxAutoComplete AutoComplete Popup
-
 this.comboBoxAutoComplete1.SetSelectedItem("India");
 
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 'To set selected item in ComboBoxAutoComplete AutoComplete Popup
-
 Me.comboBoxAutoComplete1.SetSelectedItem("India")
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 
 N> When DisplayMember is defined, you can assign DisplayMember column value as selected item in ComboBoxAutoComplete. When DisplayMember is not defined or single level data source is assigned to ComboBoxAutoComplete, zeroth index column value needs to be used as argument value of the function named “SetSelectedItem”

@@ -41,6 +41,7 @@ NumberNegativePattern</td><td>
 Gets or sets the pattern to use when the value is negative.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -55,8 +56,6 @@ this.doubleTextBox1.NumberGroupSizes = new int[] {4};
 this.doubleTextBox1.NumberNegativePattern = 2;
 
 {% endhighlight %}
-
-
 
 {% highlight vbnet %} 
 
@@ -78,8 +77,10 @@ Me.doubleTextBox1.NumberNegativePattern = 2
 
 {% endhighlight %} 
 
+{% endtabs %}
 
-### DoubleTextBox Value
+
+## DoubleTextBox Value
 
 The maximum and minimum value of the editable field in DoubleTextBox control can be specified using the below properties.
 
@@ -100,6 +101,8 @@ Specifies the minimum value that can be set for the DoubleTextBox.</td></tr>
 </table>
 
 
+{% tabs %}
+
 {% highlight C# %}  
 
 this.doubleTextBox1.MaxValue = 25;
@@ -118,12 +121,16 @@ Me.doubleTextBox1.MinValue = 4
 
 {% endhighlight %}
 
+{% endtabs %}
 
-### Banner Text Support
+
+## Banner Text Support
 
 We can set banner text for the DoubleTextBox control. Refer [BannerTextProvider Component](/windowsforms/integertextbox/bannertextsupport) topic for more details.
 
 We need to do the below settings to make Banner text feature available for the control.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -146,6 +153,8 @@ Me.doubleTextBox1.NullString = ""
 Me.doubleTextBox1.Text = ""
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

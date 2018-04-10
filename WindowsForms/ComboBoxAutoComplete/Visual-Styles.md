@@ -20,27 +20,19 @@ Visual Styles for the ComboBoxAutoComplete control can be set using VisualStyle 
 * Office2007 
 * Default
 
-
-
+{% tabs %}
 {% highlight C# %}
-
-
 
 this.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2016Colorful;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2016Colorful
 
-
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](ComboBoxAutoComplete-Images/Overview_img51.jpeg)
 
@@ -53,27 +45,20 @@ N> The control supports all the three office color schemes.
 
 We can also apply custom colors to the ComboBoxAutoComplete control by setting Office2007ColorTheme to "_Managed_" and specifying the custom color through the ApplyManagedColors method as follows.
 
-
+{% tabs %}
 {% highlight C# %}
 
-
 this.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen);
 
 {% endhighlight %}
 
-
-
-
-{% highlight C# %}
-
+{% highlight vb %}
 
 Me.comboBoxAutoComplete1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](ComboBoxAutoComplete-Images/Overview_img53.jpeg)

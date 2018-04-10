@@ -20,42 +20,46 @@ It can be created programmatically as follows.
 
 1. Include the required namespace.
    
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight c# %}
    
    using Syncfusion.Windows.Forms.Tools;
    
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
    
-   ~~~vbnet
+   {% highlight vbnet %}
    
    Imports Syncfusion.Windows.Forms.Tools
    
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
+
+   {% endtabs %}
+   
 
 
 
 2. Create an instance of the CurrencyEdit. Add that instance to the Form.
    
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight c# %}
    
    private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit1;
    this.currencyEdit1=new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
    this.Controls.Add(this.currencyEdit1);
    
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
    
-   
-   ~~~vbnet
+   {% highlight vbnet %}
    
    Private currencyEdit1 As Syncfusion.Windows.Forms.Tools.CurrencyEdit
    Me.currencyEdit1 = New Syncfusion.Windows.Forms.Tools.CurrencyEdit()
    Me.Controls.Add(Me.currencyEdit1)
+
+   {% endhighlight %}
    
-   ~~~
-   {:.prettyprint}
+   {% endtabs %}
 
 
 
