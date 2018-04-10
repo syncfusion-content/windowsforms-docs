@@ -18,16 +18,16 @@ Essential Tools TabSplitterContainer control is a VS 2008 control which can have
 The features of the TabSplitterContainer control are listed below.
 
 * Lets you add primary and secondary pages. See [Splitter Components](/windowsforms/tabsplittercontainer/splitter-components) topic.
-* We can swap the tab pages easily by clicking a button. 
-* The splitter orientation can be horizontal and vertical. 
+* We can swap the tab pages easily by clicking a button.
+* The splitter orientation can be horizontal and vertical.
 * Splitter panes can be expanded or collapsed.
 * Splitter pages has properties which can give great look and feel.
 
 
 
-## Creating TabSplitterContainer Control
+## Creating TabSplitterContainer control
 
-TabSplitterContainer control can be easily created through designer by just dragging and dropping onto the form. 
+TabSplitterContainer control can be easily created through designer by just dragging and dropping onto the form.
 
  ![](Overview_images/Overview_img2.jpeg)
 
@@ -45,25 +45,30 @@ It can be created programmatically using the below steps.
 2. Add Syncfusion's Tools.Windows and Shared.Base assemblies to the application.
 3. Add the Syncfusion.Windows.Forms.Tools namespace.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
 		using Syncfusion.Windows.Forms.Tools;
 		
-   ~~~
-   {:.prettyprint }
+	{% endhighlight %}
 
-   ~~~ vbnet
+
+	{% highlight VB %}
 
 
 
 		Imports Syncfusion.Windows.Forms.Tools 
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+    {% endtabs %}
 
 4. Create and initialize the TabSplitterContainer control and TabSplitterPages.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
 
 
@@ -83,10 +88,10 @@ It can be created programmatically using the below steps.
 
 
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-   ~~~ vbnet
+
+	{% highlight VB %}
 
 		Private tabSplitterPage1 As Syncfusion.Windows.Forms.Tools.TabSplitterPage
 
@@ -102,21 +107,24 @@ It can be created programmatically using the below steps.
 
 		Me.tabSplitterContainer1 = New Syncfusion.Windows.Forms.Tools.TabSplitterContainer()
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+    {% endtabs %}
 
 5. Add Splitter pages to the TabSplitterContainer.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
 		this.tabSplitterContainer1.PrimaryPages.AddRange(new Syncfusion.Windows.Forms.Tools.TabSplitterPage[] {this.tabSplitterPage1});
 
 		this.tabSplitterContainer1.SecondaryPages.AddRange(new Syncfusion.Windows.Forms.Tools.TabSplitterPage[] {this.tabSplitterPage2});
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-   ~~~ vbnet
+
+	{% highlight VB %}
 
 
 
@@ -124,12 +132,15 @@ It can be created programmatically using the below steps.
 
 		Me.tabSplitterContainer1.SecondaryPages.AddRange(New Syncfusion.Windows.Forms.Tools.TabSplitterPage() {Me.tabSplitterPage2}) 
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+    {% endtabs %}
 
 6. Set the size and location of the control.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
 
 
@@ -145,10 +156,10 @@ It can be created programmatically using the below steps.
 
 		this.tabSplitterPage4.Text = "Design";
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-   ~~~ vbnet
+
+	{% highlight VB %}
 
 
 
@@ -164,25 +175,29 @@ It can be created programmatically using the below steps.
 
 		Me.tabSplitterPage4.Text = "Design"
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+    {% endtabs %}
 
 7. Add the control to the form.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
 		this.Controls.Add(this.tabSplitterContainer2);
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-   ~~~ vbnet
+
+	{% highlight VB %}
 
 		Me.Controls.Add(Me.tabSplitterContainer2)
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
+    {% endtabs %}
+	
 ![](Overview_images/Overview_img4.jpeg)
 
 
