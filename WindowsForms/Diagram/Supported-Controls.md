@@ -529,79 +529,41 @@ Follow the steps given below for adding symbol palette into PaletteGroupBar:
 
 
 if (openPaletteDialog.ShowDialog(this) == DialogResult.OK)
-
 {
-
-SymbolPalette curSymbolPalette;
-
-FileStream iStream;
-
-string strFileName = openPaletteDialog.FileName;
-
-RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.RightToLeft;
-
-Match match = Regex.Match(strFileName, ".vss|.vsx|.vsd|.vdx", options);
-
-if (match.Success)
-
-{
-
-VisioStencilConverter converter = new VisioStencilConverter(strFileName, this);
-
-converter.ShowProgressDialog = true;
-
-curSymbolPalette = converter.Convert();
-
-if (curSymbolPalette != null)
-
-PaletteGroupBar1.AddPalette(curSymbolPalette);
-
-}
-
-else
-
-{
-
-try
-
-{
-
-iStream = new FileStream(strFileName, FileMode.Open, FileAccess.Read);
-
-
-
-// Deserialize  the Binary format
-
-IFormatter formatter = new BinaryFormatter();
-
-AppDomain.CurrentDomain.AssemblyResolve +=
-
-          new ResolveEventHandler(DiagramBaseAssembly.AssemblyResolver);
-
-curSymbolPalette = (SymbolPalette)formatter.Deserialize(iStream);
-
-PaletteGroupBar1.AddPalette(curSymbolPalette);
-
-}
-
-catch (Exception se)
-
-{
-
-MessageBox.Show(this, se.Message);
-
-}
-
-finally
-
-{
-
-iStream.Close();
-
-}
-
-}
-
+    SymbolPalette curSymbolPalette;
+    FileStream iStream;
+    string strFileName = openPaletteDialog.FileName;
+    RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.RightToLeft;
+    Match match = Regex.Match(strFileName, ".vss|.vsx|.vsd|.vdx", options);
+    if (match.Success)
+    {
+        VisioStencilConverter converter = new VisioStencilConverter(strFileName, this);
+        converter.ShowProgressDialog = true;
+        curSymbolPalette = converter.Convert();
+        if (curSymbolPalette != null)
+        PaletteGroupBar1.AddPalette(curSymbolPalette);
+    }
+    else
+    {
+    try
+    {
+        iStream = new FileStream(strFileName, FileMode.Open, FileAccess.Read);
+        // Deserialize  the Binary format
+        IFormatter formatter = new BinaryFormatter();
+        AppDomain.CurrentDomain.AssemblyResolve +=
+                new ResolveEventHandler(DiagramBaseAssembly.AssemblyResolver);
+        curSymbolPalette = (SymbolPalette)formatter.Deserialize(iStream);
+        PaletteGroupBar1.AddPalette(curSymbolPalette);
+    }
+    catch (Exception se)
+    {
+        MessageBox.Show(this, se.Message);
+    }
+    finally
+    {
+        iStream.Close();
+    }
+    }
 }
 
 {% endhighlight %}
@@ -626,29 +588,16 @@ Follow the steps given below for saving current symbol palette.
 
 
 if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
-
 {
-
-SymbolPalette symbolPalette = PaletteGroupBar1.CurrentSymbolPalette;
-
-string strSavePath = savePaletteDialog.FileName;
-
-
-
-if (symbolPalette != null)
-
-{
-
-FileStream fStream = new FileStream(strSavePath, FileMode.OpenOrCreate, FileAccess.Write);
-
-BinaryFormatter formatter = new BinaryFormatter();
-
-formatter.Serialize(fStream, symbolPalette);
-
-fStream.Close();
-
-}
-
+    SymbolPalette symbolPalette = PaletteGroupBar1.CurrentSymbolPalette;
+    string strSavePath = savePaletteDialog.FileName;
+    if (symbolPalette != null)
+    {
+        FileStream fStream = new FileStream(strSavePath, FileMode.OpenOrCreate, FileAccess.Write);
+        BinaryFormatter formatter = new BinaryFormatter();
+        formatter.Serialize(fStream, symbolPalette);
+        fStream.Close();
+    }
 }
 
 {% endhighlight %}
@@ -1077,43 +1026,24 @@ documentExplorer1.AfterSelect+=new TreeViewEventHandler( documentExplorer1_After
 
 
 private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e) 
-
 {
-
-// Update diagram's selection list depending on TreeNode Tag
-
-if ( e.Node.Tag is Node )
-
-{
-
-Node nodeTemp = e.Node.Tag as Node;
-
-if ( nodeTemp != null )
-
-{
-
-if (nodeTemp.Visible && nodeTemp.Root.Equals(this.diagram1.Model))
-
-{
-
-diagram1.View.SelectionList.Clear();
-
-diagram1.View.SelectionList.Add(e.Node.Tag as Node);
-
-}
-
-else
-
-{
-
-propertyEditor.PropertyGrid.SelectedObject = nodeTemp;
-
-}
-
-}
-
-}
-
+    // Update diagram's selection list depending on TreeNode Tag
+    if ( e.Node.Tag is Node )
+        {
+        Node nodeTemp = e.Node.Tag as Node;
+        if ( nodeTemp != null )
+            {
+            if (nodeTemp.Visible && nodeTemp.Root.Equals(this.diagram1.Model))
+            {
+                diagram1.View.SelectionList.Clear();
+                diagram1.View.SelectionList.Add(e.Node.Tag as Node);
+            }
+            else
+            {
+                propertyEditor.PropertyGrid.SelectedObject = nodeTemp;
+            }
+        }
+    }
 }
 
 {% endhighlight %}

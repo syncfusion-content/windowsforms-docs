@@ -44,7 +44,7 @@ Ellipse ellipse = new Ellipse(100, 100, 200, 100);
 ellipse.EnableCentralPort = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim ellipse As New Ellipse(100, 100, 200, 100)
 ellipse.EnableCentralPort = True
@@ -95,7 +95,7 @@ Syncfusion.Windows.Forms.Diagram.ConnectionPoint cp = new Syncfusion.Windows.For
 rect.Ports.Add(cp);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 50)
 rect.DrawPorts = True
@@ -146,7 +146,7 @@ The visual types for a port can be defined using the following code snippet.
 port.VisualType = PortVisualType.RhombPort;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 port.VisualType = PortVisualType.RhombPort
 
@@ -203,7 +203,7 @@ cp.ConnectionsLimit = 12;
 cp.AllowConnectOnDrag = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
 cp.ConnectionPointType = ConnectionPointType.Incoming
@@ -243,7 +243,7 @@ m_styleFill.Type = FillStyleType.Solid;
 m_styleFill.ColorAlphaFactor = 60;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim m_styleFill As New FillStyle()
 m_styleFill.Color = Color.Transparent
@@ -281,7 +281,7 @@ m_styleLine.LineWidth = 0;
 m_styleLine.DashStyle = DashStyle.Dash;
 
 {% endhighlight %}
-{% highlight vbnet%}
+{% highlight vb%}
 
 m_styleLine = New LineStyle()
 m_styleLine.LineColor = Color.Blue
@@ -348,7 +348,7 @@ cp.OffsetX = 50;
 cp.OffsetY = 10;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim cp As New Syncfusion.Windows.Forms.Diagram.ConnectionPoint()
 cp.Position = Position.BottomLeft
@@ -397,7 +397,7 @@ port.ConnectionPointType = ConnectionPointType.Reject;
 rect1.Ports.Add(port);  
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim port As New ConnectionPoint()
 port.Position = Position.MiddleLeft

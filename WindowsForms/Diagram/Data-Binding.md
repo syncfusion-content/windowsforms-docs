@@ -102,7 +102,7 @@ diagram1.Binding.Id = "EmployeeID";
 diagram1.Binding.DataSource = diagram1.GetDataSourceFromXML("..\\..\\XML Binding1.xml"); 
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Binds the XML(local data) with node
 Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 40, MeasureUnits.Pixel)
@@ -161,19 +161,19 @@ string command = "SELECT * FROM databind ";
 diagramDataSetTableAdapters.databindTableAdapter cbn = new diagramDataSetTableAdapters.databindTableAdapter();
 using (SqlConnection conn = new SqlConnection(cbn.Connection.ConnectionString))
 {
-using (SqlCommand cmd = new SqlCommand(command, conn))
-{
-SqlDataAdapter adapt = new SqlDataAdapter(cmd);
-conn.Open();
-adapt.Fill(table);
-//Passing the table data to DataSource
-diagram1.Binding.DataSource = table;
-conn.Close();
-}
+  using (SqlCommand cmd = new SqlCommand(command, conn))
+  {
+    SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+    conn.Open();
+    adapt.Fill(table);
+    //Passing the table data to DataSource
+    diagram1.Binding.DataSource = table;
+    conn.Close();
+  }
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim rect As New Syncfusion.Windows.Forms.Diagram.Rectangle(100, 100, 100, 40, MeasureUnits.Pixel)
 rect.LineStyle.LineWidth = 0
