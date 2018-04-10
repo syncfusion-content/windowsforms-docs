@@ -19,8 +19,6 @@ The following screenshot shows three types of sparklines, which are drawn inside
 
 ![](Overview_images/Overview_img1.png)
 
-
-
 ### Tables for Properties, Methods, and Events
 
 #### Properties
@@ -78,7 +76,6 @@ NA</td><td>
 NA</td><td>
 NA</td></tr>
 </table>
-
 
 #### Methods
 
@@ -144,14 +141,13 @@ Presently, SyncfusionSparkLine control supports three types of Sparklines and th
 * Column
 * WinLoss 
 
-
-
 ### Drawing Line Sparkline in an Application
 
 The line type of spark line represents a set of data points, connected by a line. 
 
 Refer to the following code samples to draw  the line sparkline.
 
+{% tabs %}  
 
 {% highlight c# %}
 
@@ -165,17 +161,11 @@ this.sparkLine1.Type = SparkLine.SparkLineType.Line;
 
 {% endhighlight %}
 
-
-
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set Sparkline points to source property
 
 Me.sparkLine1.Source = New Double() {30, -20, 80, 20, 40, -50,-30, 70, -40, 50}
-
-
 
 'Set line type sparkline
 
@@ -183,21 +173,16 @@ Me.sparkLine1.Type = SparkLine.SparkLineType.Line
 
 {% endhighlight %}
 
-
-
-
-
-
+{% endtabs %}
 
 ![](Overview_images/Overview_img2.png)
-
-
 
 ### Drawing Column Sparkline in an Application
 
 The column type of spark line represents each data point by a column. The vertical column direction represents the negative or positive value.
 Refer to the following code samples to draw the column sparkline:
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -211,13 +196,11 @@ this.sparkLine1.Type = SparkLine.SparkLineType.Column;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set Sparkline points to source property
 
 Me.sparkLine1.Source = New Double() {30, -20, 80, 20, 40, -50,-30, 70, -40, 50}
-
-
 
 'Set line type sparkline
 
@@ -225,16 +208,16 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. Column
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img3.png)
-
-
 
 ### Drawing WinLoss Sparkline in an Application
 
 The WinLoss type of spark line is similar to column type but all columns have equal length for data points.   The vertical column direction represents the negative or positive value.
 Refer to the following code samples to draw the WinLoss sparkline:
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -248,13 +231,11 @@ this.sparkLine1.Type = SparkLine.SparkLineType.WinLoss;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set Sparkline points to source property
 
 Me.sparkLine1.Source = New Double() {30, -20, 80, 20, 40, -50,-30, 70, -40, 50}
-
-
 
 'Set line type sparkline
 
@@ -262,9 +243,9 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. WinLoss
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img4.png)
-
-
 
 ### Marker Support
 
@@ -326,12 +307,14 @@ Gets or sets the end point color to line type sparkline. This property color is 
 NegativePointColor</td><td>
 Gets or sets the negative point color to line type sparkline. This property color is set to sparkline marker when enabling the ShowNegativePoint property.</td></tr>
 </table>
-Markers Support for Line
+
+### Marker Support for Line
 
 This marker feature supports data points of line sparkline. You can choose the marker color for data points.  
 
 Refer to the following code snippets to enable the marker in line sparkline.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -341,7 +324,7 @@ this.sparkLine1.Markers.ShowMarker  =true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'To enable marker to sparkline for all data points
 
@@ -349,14 +332,16 @@ Me.sparkLine1.Markers.ShowMarker  =True
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img5.png)
-
-
 
 ### Markers Support for Column
 
 This marker feature supports High Points, Low Points, Start Point and Negative Point of column sparkline.  You can choose the marker color for data points.
 Refer to the following code sample to enable the marker in column sparkline.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -372,15 +357,13 @@ this.sparkLine1.Markers.ShowEndPoint = true;
 
 this.sparkLine1.Markers.ShowNegativePoint= true;
 
-
-
 //To customize the marker color to low points
 
 this.sparkLine1.Markers.LowPointColor = new BrushInfo(GradientStyle.BackwardDiagonal, Color.Blue, Color.Wheat);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 //To enable marker to sparkline high,low,start,end,negative data points
 
@@ -394,17 +377,15 @@ Me.sparkLine1.Markers.ShowEndPoint = True
 
 Me.sparkLine1.Markers.ShowNegativePoint= True
 
-
-
 //To customize the marker color to low points
 
 Me.sparkLine1.Markers.LowPointColor = new BrushInfo(GradientStyle.BackwardDiagonal, Color.Blue, Color.Wheat)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img6.png)
-
-
 
 ### Markers Support for WinLoss
 
@@ -412,6 +393,8 @@ This marker feature supports High Points, Low Points, Start Point and Negative P
 
 Refer to the following code snippets to enable the marker in column sparkline.
 
+{% tabs %}
+
 {% highlight c# %}
 
 //To enable marker to sparkline high,low,start,end,negative data points
@@ -426,15 +409,13 @@ this.sparkLine1.Markers.ShowEndPoint = true;
 
 this.sparkLine1.Markers.ShowNegativePoint= true;
 
-
-
 //To customize the marker color to low points
 
 this.sparkLine1.Markers.LowPointColor = new BrushInfo(GradientStyle.BackwardDiagonal, Color.Blue, Color.Wheat);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 //To enable marker to sparkline high,low,start,end,negative data points
 
@@ -448,12 +429,12 @@ Me.sparkLine1.Markers.ShowEndPoint = True
 
 Me.sparkLine1.Markers.ShowNegativePoint= True
 
-
-
 //To customize the marker color to low points
 
 Me.sparkLine1.Markers.LowPointColor = new BrushInfo(GradientStyle.BackwardDiagonal, Color.Blue, Color.Wheat)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img7.png)
