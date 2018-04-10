@@ -19,7 +19,7 @@ Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPos
 {% endtabs %}
 ![](UnboundRow_images/UnboundRow_img1.png)
 
-## Positioning unbound rows
+## Positioning Unbound Rows
 Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnboundRow.Position](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridUnboundRow~Position.html) and [GridUnboundRow.ShowBelowSummary](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridUnboundRow~ShowBelowSummary.html) properties.
 Below table shows the unbound row positioning based on property settings of Position and ShowBelowSummary.
 <table>
@@ -114,7 +114,7 @@ Me.sfDataGrid.UnboundRows.Add(New GridUnboundRow() With {.Position = VerticalPos
 Below screen shot shows different unbound rows placed in all possible positions,
 ![](UnboundRow_images/UnboundRow_img2.png)
 
-## Populating data for unbound rows
+## Populating Data for Unbound Rows
 The data for the unbound row can populated by handling [QueryUnboundRowInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryUnboundRowInfo_EV.html) event of SfDataGrid. This event occurs for each cell in unbound row whenever the row gets refreshed. [QueryUnboundRowInfoArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs.html) of the `QueryUnboundRowInfo` event provides information about the cell triggered this event.
 The [QueryUnboundRowInfoArgs.Value](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs~Value.html) property can be get or set based on the [UnboundAction](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs~UnboundAction.html). If `UnboundAction` is `QueryData` then the value can set for display. If the `UnboundAction` is `CommitData` then able to get the edited value.
 {% tabs %}
@@ -136,7 +136,6 @@ void sfDataGrid_QueryUnboundRowInfo(object sender, QueryUnboundRowInfoArgs e)
             e.Value = (sfDataGrid.SelectedItems.OrderBy(item => (item as OrderInfo).OrderID).Last() as OrderInfo).OrderID;
             e.Handled = true;
         }
-
         else if (e.RowColumnIndex.ColumnIndex == 2)
         {
             e.Value = (sfDataGrid.SelectedItems.First(item => (item as OrderInfo).ProductName.Contains("R")) as OrderInfo).ProductName;
@@ -170,7 +169,7 @@ void sfDataGrid_QueryUnboundRowInfo(Object sender, QueryUnboundRowInfoArgs e)
 {% endtabs %}
 ![](UnboundRow_images/UnboundRow_img3.png)
 
-## Refreshing the unbound rows at runtime
+## Refreshing the Unbound Rows at Runtime
 The unbound rows can be add or remove using `UnboundRows` property which reflects in UI immediately. The `QueryUnboundRowInfo` event for the unbound row cells at runtime by invalidating the unbound row by calling [SfDataGrid.InValidateUnboundRow](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~InValidateUnboundRow.html) method.
 {% tabs %}
 {% highlight c# %}
@@ -185,9 +184,9 @@ this.sfDataGrid.TableControl.Invalidate();
 {% endhighlight %}
 {% endtabs %}
 
-## Editing in unbound rows
+## Editing in Unbound Rows
 
-### Cancel the editing for unbound row cell
+### Cancel the Editing for Unbound Row Cell
 The editing of unbound row cell can cancel by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event with the help of [SfDataGrid.GetUnboundRow](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~GetUnboundRow.html) method and row index.
 {% tabs %}
 {% highlight c# %}
@@ -216,7 +215,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Saving edited unbound row cell value to external source
+### Saving Edited Unbound Row Cell Value to External Source
 The edited value of unbound row cell can get from `QueryUnboundRowInfoArgs.Value` property of QueryUnboundRowInfo event when `UnboundAction` is `CommitData`.
 {% tabs %}
 {% highlight c# %}
@@ -252,11 +251,11 @@ sfDataGrid.Style.UnboundRowStyle.TextColor = Color.Red
 {% endtabs %}
 ![](UnboundRow_images/UnboundRow_img4.png)
 
-## Customizing the unbound row's behavior
+## Customizing the Unbound Row's Behavior
 SfDataGrid allows to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell. Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
 The renderer of unbound row cell defined by [QueryUnboundRowInfoArgs.CellType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryUnboundRowInfoArgs~CellType.html) property in the `QueryUnboundRowInfo` event. If the `QueryUnboundRowInfoArgs.CellType` not defined then the UnboundRowCell set as default cell type.
 
-### Overriding existing CellType
+### Overriding Existing CellType
 SfDataGrid allows to customize the unbound row cell behavior by overriding existing renderer and replace the default one in [UnboundRowCellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~UnboundRowCellRenderers.html).
 {% tabs %}
 {% highlight c# %}
@@ -313,14 +312,11 @@ public class DatePickerRenderer : GridVirtualizingCellRendererBase<DateTimePicke
 {    
     public DatePickerRenderer()
     {
-
     }
-
     protected override DateTimePicker OnCreateEditUIElement()
     {
         return new DateTimePicker();
     }
-
     protected override void OnInitializeEditElement(DataColumnBase dataColumn, RowColumnIndex rowColIndex,
         DateTimePicker uiElement)
     {
@@ -330,7 +326,6 @@ public class DatePickerRenderer : GridVirtualizingCellRendererBase<DateTimePicke
         DateTime.TryParse(dataColumn.UnboundRowInfo.Value.ToString(), out time);
         (uiElement as DateTimePicker).Value = time;
         uiElement.Tag = dataColumn;
-
         Rectangle editorRectangle = this.TableControl.GetCellRectangle(DataGrid.CurrentCell.RowIndex,
             DataGrid.CurrentCell.ColumnIndex, true);
         var borderWeight = DataGrid.Style.CurrentCellStyle.BorderThickness;
@@ -360,7 +355,6 @@ public class DatePickerRenderer : GridVirtualizingCellRendererBase<DateTimePicke
         SfDataGrid DataGrid = column.UnboundRowInfo.OriginalSender as SfDataGrid;
         bool isEditing = DataGrid.CurrentCell != null && DataGrid.CurrentCell.RowIndex == rowColumnIndex.RowIndex
             && DataGrid.CurrentCell.ColumnIndex == rowColumnIndex.ColumnIndex && DataGrid.CurrentCell.IsEditing;
-
         SolidBrush backColor = new SolidBrush(style.BackColor);
         var fillRect = (style.HasBorders) ? cellRect : cellRect.X == 0 ? new Rectangle(cellRect.X, cellRect.Y + 1, 
             cellRect.Width, cellRect.Height - 1) : new Rectangle(cellRect.X + 1, cellRect.Y + 1, cellRect.Width - 1, cellRect.Height - 1);
@@ -375,11 +369,9 @@ public class DatePickerRenderer : GridVirtualizingCellRendererBase<DateTimePicke
             this.CurrentCellRendererElement.Update();
             if (isEditing)
                 return;
-
-            cellValue = this.CurrentCellRendererElement.Text;
+           cellValue = this.CurrentCellRendererElement.Text;
             textColor = new SolidBrush(style.TextColor);
             font = column.GridColumn.CellStyle.Font;
-
             cellRect.X = style.HorizontalAlignment == HorizontalAlignment.Left
              ? cellRect.X + 2
              : column.GridColumn.CellStyle.HorizontalAlignment == HorizontalAlignment.Right
@@ -632,7 +624,7 @@ End Sub
 {% endtabs %}
 ![](UnboundRow_images/UnboundRow_img6.png)
 
-## Changing unbound row height
+## Changing Unbound Row Height
 The height of unbound row can changed by using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowHeight_EV.html) event,
 {% tabs %}
 {% highlight c# %}
@@ -640,7 +632,6 @@ sfDataGrid.QueryRowHeight += dataGrid_QueryRowHeight;
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
-
     if (sfDataGrid.IsUnboundRow(e.RowIndex))
     {
         e.Height = 40;
@@ -662,9 +653,9 @@ End Sub
 {% endtabs %}
 ![](UnboundRow_images/UnboundRow_img7.png)
 
-## Exporting unbound rows
+## Exporting Unbound Rows
 
-### Export unbound rows to Excel
+### Export Unbound Rows to Excel
 The unbound rows can export to excel by setting the [ExcelExportingOptions.ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportUnboundRows.html) property.
 {% tabs %}
 {% highlight c# %}
@@ -681,7 +672,7 @@ Private [option] As New ExcelExportingOptions()
 {% endhighlight %}
 {% endtabs %}
 
-### Export unbound rows to PDF
+### Export Unbound Rows to PDF
 The unbound rows can export to PDF by setting the [PdfExportingOptions.ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions~ExportUnboundRows.html) property.
 {% tabs %}
 {% highlight c# %}
@@ -698,7 +689,7 @@ pdfExportingOption.ExportUnboundRows = True
 {% endhighlight %}
 {% endtabs %}
 
-## Get unbound rows
+## Get Unbound Rows
 The unbound row of specified row index can get by using [GetUnboundRow](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~GetUnboundRow.html) method.
 {% tabs %}
 {% highlight c# %}

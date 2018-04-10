@@ -89,7 +89,7 @@ Me.sfDataGrid.SearchController.Search("SEVES")
 
 ![](Search_images/Search_img5.png)
 
-## Search only In Selected Columns
+## Search only in Selected Columns
 By default the searching is applied for all the columns in the SfDataGrid. This can be changed to search only in the specified columns by using the [SearchColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColumns.html) collection. The column names added to the SearchColumns list is only consider for the search operations.
 
 {% tabs %}
@@ -116,7 +116,7 @@ By default the searching will be performed based on the `Contains` condition. Th
 
 ![](Search_images/Search_img7.png)
 
-## Navigating based on search text
+## Navigating based on Search Text
 The cells which contains the SearchText can be navigated by using the [SearchController.FindNext](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~FindNext.html) and [SearchController.FindPrevious](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~FindPrevious.html) methods.
 
 {% tabs %}
@@ -155,7 +155,7 @@ Me.sfDataGrid.SearchController.FindNext("MEREP")
 
 ![](Search_images/Search_img9.png)
 
-### Move current cell to the next match
+### Move Current Cell to the Next Match
 The current cell can be moved to the next possible match by using the [SearchController.CurrentRowColumnIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~CurrentRowColumnIndex.html) property.
 
 {% tabs %}
@@ -201,13 +201,11 @@ public class SearchControllerExt : SearchController
     public SearchControllerExt(SfDataGrid grid) :
         base(grid)
     { }
-
     protected override void HighlightSearchText(Graphics paint, DataColumnBase column, CellStyleInfo style, Rectangle bounds, string cellValue, RowColumnIndex rowColumnIndex)
     {
         //Does not highlight the search text the specific column
         if (column.GridColumn.MappingName == "ProductName")
             return;
-
         base.HighlightSearchText(paint, column, style, bounds, cellValue, rowColumnIndex);
     }
 }

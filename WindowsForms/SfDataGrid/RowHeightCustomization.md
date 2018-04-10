@@ -72,7 +72,7 @@ End Sub
 
 ![](RowHeightCustomization_images/RowHeightCustomization_img2.jpeg)
 
-## Fit Row Height based on its content
+## Fit Row Height based on its Content
 The row height can be fit based on its content in [QueryRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowHeight_EV.html) event using [GetAutoRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~GetAutoRowHeight.html) method. This improves the readability of the content and it does not affect the loading performance of the SfDataGrid as the `QueryRowHeight` event triggered for rows in on-demand.
 `GetAutoRowHeight` method returns true when the row height is calculated for record & header rows and returns false for other rows. Calculated height based on content set to the out parameter and you can assign the calculated height to the Height property of[QueryRowHeightEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryRowHeightEventArgs.html).
 
@@ -116,14 +116,14 @@ End Sub
 
 Here, row heights are customized based on the large text content.
 
-### Auto fit row height options
+### Auto-Fit Row Height Options
 [RowAutoFitOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowAutoFitOptions.html) have the following properties,
 
 1. [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowAutoFitOptions~ExcludeColumns.html) – By default, `GetAutoRowHeight` method calculates the row height based on all columns. To skip the specific columns from the row height calculation, add that columns to the `ExcludeColumns` property. 
 
 2. [CanIncludeHiddenColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowAutoFitOptions~CanIncludeHiddenColumns.html) – The hidden columns can also be consider for the row height calculation by setting the `CanIncludeHiddenColumns` as `true`.
 
-## Calculate Height based on certain columns
+## Calculate Height based on Certain Columns
 The row height can be calculated based on the particular columns by using the `ExcludeColumns` of the `RowAutoFitOptions` in the `QueryRowHeight` event.
 
 {% tabs %}
@@ -171,7 +171,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Reset the RowHeight at RunTime
+## Reset the RowHeight at Runtime
 The row height of particular or all rows in View can be reset at runtime to get the updated height from `QueryRowHeight` event handler by using the [InvalidateRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~InvalidateRowHeight.html) and [Reset](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowHeightManager~Reset.html) methods.
 
 `InvalidateRowHeight` – Resets the height of particular row.
