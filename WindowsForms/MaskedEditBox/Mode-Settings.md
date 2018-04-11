@@ -63,6 +63,8 @@ The first group will contain the value for the first 3 ### characters of the mas
 
 The MaxValue and MinValue properties are enforced only when the UsageMode is set to 'Numeric'.
 
+{% tabs %}
+
 {% highlight C# %}  
 
 this.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals;
@@ -73,9 +75,7 @@ this.maskedEditBox1.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.N
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals
 
@@ -84,3 +84,5 @@ Me.maskedEditBox1.InputMode = Syncfusion.Windows.Forms.Tools.MaskInputMode.Norma
 Me.maskedEditBox1.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric
 
 {% endhighlight %}
+
+{% endtabs %}

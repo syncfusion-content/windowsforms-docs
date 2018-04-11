@@ -7,7 +7,7 @@ control: TileLayout
 documentation: ug
 ---
 
-# Hosting ImageStreamer as Tile Items
+# Hosting ImageStreamer as tile items
 
 In TileLayout, ImageStreamer control is used as an Item in LayoutGroup. To add the Images into the ImageStreamer, ImagesCollection property is used.
 
@@ -73,7 +73,7 @@ this.imageStreamer1.SliderSpeed = 100;
 
 ## ShowNavigator
 
-Navigator which is used to navigate the slide show direction is shown when the `ShowNavigator` property is True. To enable this property SlideShow must be true. 
+Navigator which is used to navigate the slide show direction is shown when the `ShowNavigator` property is True. To enable this property SlideShow must be true.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ Me.imageStreamer1.SlideShow = true
 
 ## ImageStreamDirection
 
-This property gives the ImageStream direction in the SlideShow
+This property gives the ImageStream direction in the SlideShow.
 
 * LeftToRight
 * RightToLeft

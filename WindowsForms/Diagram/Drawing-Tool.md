@@ -26,7 +26,7 @@ The following code illustrates how to activate the [OrgLineConnector](https://he
 diagram1.Controller.ActivateTool("OrgLineConnectorTool");
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Activates the Org line connector tool.
 diagram1.Controller.ActivateTool("OrgLineConnectorTool")

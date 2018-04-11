@@ -7,19 +7,17 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive features
 
 This section discusses the Interactive Features of TabControlAdv.
 
-It includes the below topics.
-
 ## Tooltips
 
-Tooltip can be enabled for child windows or tabs using the below code snippet, where doc is the new child form that is created. 
+Tooltip can be enabled for child windows or tabs using the below code snippet, where doc is the new child form that is created.
 
 The GetTooltip method is used to set the Tooltips for the tabs.
 
-Methods Table
+Methods table
 
 <table>
 <tr>
@@ -36,8 +34,9 @@ SetTooltip</td><td>
 Sets the tooltips for the tabs associated with a form.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -45,13 +44,15 @@ this.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
 Me.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
@@ -65,9 +66,9 @@ Me.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text)
 
 
 
-## Context Menu
+## Context menu
 
-The TabbedMDI Layout mode enables the default Context Menu that pops-up whenever the user right clicks on any of the tabs. 
+The TabbedMDI Layout mode enables the default Context Menu that pops-up whenever the user right-clicks on any of the tabs.
 
 The ContextMenuItem property is used to select the context menu that should be used along with the default tab context menu when the user right-clicks on a tab.
 
@@ -77,17 +78,17 @@ Below image will reproduce the Context Menu feature available in an MDI applicat
 
 
 
-## Customize Context Menu
+## Customize context menu
 
-On right clicking the tabs in the TabbedMDI layout, a default context menu will appear. This context menu can be customized programmatically, to add custom bar items.
+On right-clicking the tabs in the TabbedMDI layout, a default context menu will appear. This context menu can be customized programmatically to add custom bar items.
 
 * Create a TabbedMDI Layout.
 * Add the below code snippets in the respective places as directed.
-* The below given code will add two bar items to the default context menu. The same is shown in the image below.
+* The below given code will add two bar items to the default context menu.
 
-{% highlight c# %}
+{% tabs %}
 
-
+{% highlight C# %}
 
 //Add Namespace
 
@@ -133,7 +134,7 @@ tabbedMDIManager.ContextMenuItem = contextMenuItem;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -184,6 +185,8 @@ contextMenuItem.BeginGroupAt(newDocItem)
 tabbedMDIManager.ContextMenuItem = contextMenuItem
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Interactive-Features_images/Interactive-Features_img3.jpeg)
 

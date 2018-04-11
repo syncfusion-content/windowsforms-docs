@@ -7,17 +7,17 @@ control: Wizard Package
 documentation: ug
 ---
 
-# Wizard Control Appearance
+# Wizard control appearance
 
 This section discusses the various appearance settings of the Wizard controls.
 
-## Foreground Settings
+## Foreground settings
 
-### Wizard Control Foreground
+### Wizard control foreground
 
-The appearance of the text in the Wizard control can be controlled using the Font and ForeColor properties. 
+The appearance of the text in the Wizard control can be controlled using the Font and ForeColor properties.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -35,7 +35,9 @@ Sets the fore color for the display text in the control.</td></tr>
 </table>
 N> These WizardControl.Font property will be applied only to the Description text and the Button texts of the Wizard Page. WizardControl.ForeColor property will be applied to the Page Title and description text alone. To set Font style for Title and description, see Title and Description Settings topic.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -47,17 +49,19 @@ this.wizardControl1.ForeColor = System.Drawing.Color.DarkBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
 'Foreground Settings for the display text 
 
-Me.wizardControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular) 
+Me.wizardControl1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular)
 
 Me.wizardControl1.ForeColor = System.Drawing.Color.DarkBlue
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img2.jpeg) 
 
@@ -66,11 +70,11 @@ N> These settings can be overridden by the individual WizardPage.Font and Wizard
 
 The foreground settings for the Button text can be overridden by the WizardPage.Button.Font and WizardPage.Button.ForeColor settings also. See Button Appearance topic.
 
-### Wizard Page Foreground
+### Wizard page foreground
 
 The font and fore color for the display text in a Wizard page can be controlled through below properties.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -87,7 +91,9 @@ ForeColor</td><td>
 Sets the fore color for the display text in the wizard page.</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -97,7 +103,7 @@ this.wizardControl1.ForeColor = System.Drawing.Color.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -107,16 +113,18 @@ Me.wizardControl1.ForeColor = System.Drawing.Color.Black
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img4.jpeg) 
 
 
-## Background Settings
+## Background settings
 
-### Wizard Control Background
+### Wizard control background
 
 The background of the Wizard control can be customized through the below properties.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -137,8 +145,9 @@ BackgroundImageLayout</td><td>
 Sets the layout for the background image in the Wizard Control.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -146,7 +155,7 @@ this.wizardControl1.BackColor = System.Drawing.Color.LightSteelBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -154,16 +163,18 @@ Me.wizardControl1.BackColor = System.Drawing.Color.LightSteelBlue
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img5.jpeg)
 
 
 N> By default the background settings of the Wizard control will be overridden by the Wizard Container background settings.
 
-### Banner Panel Background
+### Banner panel background
 
 The below properties lets you customize the banner panel in a Wizard Control.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -188,15 +199,16 @@ BackgroundImageLayout</td><td>
 Sets the layout for the background image in the banner panel.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.gradientPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.AliceBlue, System.Drawing.Color.LightSteelBlue);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -204,14 +216,16 @@ Me.gradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img7.jpeg) 
 
 
-### Wizard Page Background
+### Wizard page background
 
 The below properties lets you customize the Wizard page in a Wizard Control.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -236,8 +250,9 @@ BackgroundImageLayout</td><td>
 Sets the layout for the background image in the banner panel.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -245,7 +260,7 @@ this.wizardControlPage2.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncf
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -253,20 +268,24 @@ Me.wizardControlPage2.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img8.jpeg) 
 
 
-## Border Styles 
+## Border styles
 
-### Wizard Control
+### Wizard control
 
 The various border styles for a Wizard control are as follows.
 
 * None
-* FixedSingle and 
+* FixedSingle and
 * Fixed3D
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -274,7 +293,7 @@ this.wizardControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -282,12 +301,14 @@ Me.wizardControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img9.jpeg) 
 
 
-### Banner Panel
+### Banner panel
 
-Banner Panel is a simple gradient panel whose 3D border styles are as follows. 
+Banner Panel is a simple gradient panel whose 3D border styles are as follows.
 
 * RaisedOuter
 * SunkenOuter
@@ -302,7 +323,9 @@ Banner Panel is a simple gradient panel whose 3D border styles are as follows.
 
 N> The GradientPanel.BorderStyle property should be set to "Fixed3D" to make this setting effective.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -312,7 +335,7 @@ this.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -322,17 +345,19 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img11.jpeg) 
 
 
 You can use the below properties to set 2D border style for the Banner Control when GradientPanel.BorderStyle property is set to "FixedSingle".
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-Banner Panel Property</th><th>
+Banner panel property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -348,16 +373,16 @@ BorderSingle</td><td>
 Specifies the 2D Border style for the panel when BorderStyle property is set to FixedSingle.</td></tr>
 </table>
 
-### Wizard Page Border
+### Wizard page border
 
 The below properties controls the border settings for a Wizard control page.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-Wizard Page Property</th><th>
+Wizard page property</th><th>
 Description</th></tr>
 <tr>
 <td>

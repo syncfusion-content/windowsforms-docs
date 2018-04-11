@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting Started | Windows Forms | Syncfusion
 description: getting started
 platform: windowsforms
 control: PivotGrid
@@ -9,466 +9,514 @@ documentation: ug
 
 # Getting Started
 
-This section will explain about creating simple PivotGridControl and the overview of its basic functionalities.
+This section provides a quick overview for working with the pivot grid for WinForms. Walk through the entire process of creating a simple PivotGrid.
 
-## Assembly Deployment
+## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use PivotGridControl in any application,
+The following list of assemblies need to be added as reference to use PivotGrid control in the application.
 
-<table>
-<tr>
-<th>
-Required assemblies<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-{{'[Syncfusion.PivotAnalysis.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis_namespace.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.PivotAnalysis.Windows assembly contains classes that handles UI operations and other fundamentals of PivotGridControl.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridControl.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.PivotAnalysis.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Base.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.PivotAnalysis.Base allows you to easily access, manipulate, and display your data in a variety of configurations.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
-</table>
-In addition to these assemblies, there are also other optional assemblies.
+    <table>
+    <tr>
+    <th>
+    Required assemblies<br/><br/></th><th>
+    Description<br/><br/></th></tr>
+    <tr>
+    <td>
+    {{'[Syncfusion.PivotAnalysis.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis_namespace.html)'| markdownify }}<br/><br/></td><td>
+    Syncfusion.PivotAnalysis.Windows assembly contains classes that handles UI operations and other fundamentals of PivotGrid control.<br/><br/></td></tr>
+    <tr>
+    <td>
+    {{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html)'| markdownify }}<br/><br/></td><td>
+    Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridControl.<br/><br/></td></tr>
+    <tr>
+    <td>
+    {{'[Syncfusion.PivotAnalysis.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Base.html)'| markdownify }}<br/><br/></td><td>
+    Syncfusion.PivotAnalysis.Base allows you to easily access, manipulate, and display your data in a variety of configurations.<br/><br/></td></tr>
+    <tr>
+    <td>
+    {{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html)'| markdownify }}<br/><br/></td><td>
+    Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
+    </table>
 
-<table>
-<tr>
-<th>
-Optional assemblies<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-{{'[Syncfusion.Tools.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.Tools.Windows assembly contains classes that implements all the tools and its events and event handlers, interfaces, attributes and processing the exceptions.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.Linq.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.Linq.Base.html)'| markdownify }} <br/><br/></td><td>
-Syncfusion.LinQ.Base contains fundamental and base classes for creating and manipulating LINQ queries.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.XlsIO.Base. contains fundamental and base classes for creating and manipulating excel files.<br/><br/></td></tr>
-</table>
+In order to export PivotGrid control into Excel, Word and PDF, the following assemblies need to be referred.
 
-## Configuring a simple PivotGridControl
+    <table>
+    <tr>
+    <th>
+    Optional assemblies<br/><br/></th><th>
+    Description<br/><br/></th></tr>
+    <tr>
+    <td>
+    {{'[Syncfusion.PivotConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotConverter.Windows.html)'| markdownify }} <br/><br/></td><td>
+    Syncfusion.PivotConverter.Windows contains classes that provides the functionality of exporting the PivotGrid Control to an Excel sheet, a PDF or to a Word document. <br/><br/></td></tr>
+    <tr>
+    <td>
+    {{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base.html)'| markdownify }}<br/><br/></td><td>
+    Syncfusion.XlsIO.Base. contains fundamental and base classes for creating and manipulating excel files.<br/><br/></td></tr>
+    <tr>
+    <td>
+    {{'[Syncfusion.Pdf.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pdf/Syncfusion.Pdf.Base.html)'| markdownify }}<br/><br/></td><td>
+    Syncfusion.Pdf.Base. contains fundamental and base classes for creating and manipulating Pdf files.<br/><br/></td></tr>
+    <tr>
+    <td>
+    {{'[Syncfusion.DocIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/docio/Syncfusion.DocIO.Base.html)'| markdownify }}<br/><br/></td><td>
+    Syncfusion.DocIO.Base. contains fundamental and base classes for creating and manipulating Word files.<br/><br/></td></tr>
+    </table>
 
-This section explains how to add the PivotGridControl through designer and also through code.
+## Creating application with PivotGrid
 
-### Adding PivotGridControl through Designer
+This section explains how to add the PivotGrid control in Windows Forms application.
 
-PivotGridControl can be added through designer by following the below steps.
+### Adding control via designer
 
-1.Create a new **Windows** **Form** **Application**.
+The PivotGrid control can be added through designer by following the below steps.
 
-2.Drag and Drop PivotGridControl from the toolbox into the designer page.
+1.Create a new **Windows Forms Application** in Visual Studio.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+2.Drag and drop the PivotGrid control from the toolbox into the designer page.
 
+![GettingStarted_img1](Getting-Started_images/GettingStarted_img1.png)
 
-3.Once you drag drop the PivotGridControl into the designer page, the PivotGridControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
+3.Then, the PivotGrid control will be successfully added into the application along with the required libraries.
 
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Linq.Base.dll
-* Syncfusion.PivotAnalysis.Base.dll
-* Syncfusion.PivotAnalysis.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Tools.Windows.dll
+![GettingStarted_img2](Getting-Started_images/GettingStarted_img2.png)
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+### Adding control via code
 
-### Adding PivotGridControl through Code
+The PivotGrid control can be added through code-behind by following the below steps.
 
-PivotGridControl can be added through code-behind by following the below steps.
+1.Create a new **Windows Forms Application** in Visual Studio.
 
-1.Create a new **Windows** **Form** **Application**.
+2.Add the following assembly references to the project.
 
-2.Add the below assemblies into the project file.
 * Syncfusion.Grid.Windows.dll
 * Syncfusion.PivotAnalysis.Base.dll
 * Syncfusion.PivotAnalysis.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
-
-
-3.Initialize a PivotGridControl by using the below code in code behind.
+3.Then initialize the PivotGrid control by creating an instance and add it to the Form using the code specified below.
 
 {% tabs %}
+
 {% highlight c# %}
 
 //Initialize a new PivotGrid.
 private Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl pivotGridControl1 = new Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl();
-
-{% endhighlight %}
-
-{% highlight vb %}
-'Initialize a new PivotGrid.
-Private pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
-
-{% endhighlight %}
-{% endtabs %}
-
-4.Use the below code for adding the initialized GridControl to the application.
-
-{% tabs %}
-{% highlight c# %}
-
-// Add required size for the PivotGridControl
+// Add required size for the PivotGrid control
 pivotGridControl1.Size = new System.Drawing.Size(344, 250);
-
-// Add the PivotGridControl to the parent control.
+// Add the PivotGrid control to the parent control.
 this.Controls.Add(pivotGridControl1);
 
 {% endhighlight %}
 
 {% highlight vb %}
-' Add required size for the PivotGridControl
-pivotGridControl1.Size = New System.Drawing.Size(344, 250)
 
-' Add the PivotGridControl to the parent control.
+'Initialize a new PivotGrid.
+Private pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
+' Add required size for the PivotGrid control
+pivotGridControl1.Size = New System.Drawing.Size(344, 250)
+' Add the PivotGrid control to the parent control.
 Me.Controls.Add(pivotGridControl1)
 
 {% endhighlight %}
+
 {% endtabs %}
 
-## Populating Data
+### Adding control via Syncfusion reference manager
 
-This section will guide you on how to bind data source and its appropriate fields in a PivotGridControl. The data source assigned to PivotGridControl should either be an [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataView](https://msdn.microsoft.com/en-us/library/system.data.dataview.aspx). In this example, you will learn how to assign an `IEnumerable` list data source to a PivotGridControl.
+[Syncfusion reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion controls. PivotGrid control can be added through Syncfusion reference manager by following the below steps.
 
-You can refer the below code which is a sample data source having the properties Product, Date, Country, State, Quantity, Amount, UnitPrice and TotalPrice.
+1.Create a new **Windows Forms Application** in Visual Studio.
+
+2.Then right-click on the project and select Syncfusion Reference Manager.
+
+![GettingStarted_img7](Getting-Started_images/GettingStarted_img7.png)
+
+3.The Syncfusion Reference Manager wizard will be opened as shown below.
+
+![GettingStarted_img8](Getting-Started_images/GettingStarted_img8.png)
+
+4.Select PivotGrid control by searching it using search box. Then click on done button to add selected PivotGrid control.
+
+![GettingStarted_img9](Getting-Started_images/GettingStarted_img9.png)
+
+5.The required assemblies will be automatically added to the project by clicking ok button.
+
+![GettingStarted_img10](Getting-Started_images/GettingStarted_img10.png)
+
+6.Add the following code snippet in code behind to create a simple PivotGrid control.
 
 {% tabs %}
+
 {% highlight c# %}
-public class ProductSales
 
-{
-public string Product { get; set; }
-
-public string Date { get; set; }
-
-public string Country { get; set; }
-
-public string State { get; set; }
-
-public int Quantity { get; set; }
-
-public double Amount { get; set; }
-
-public double UnitPrice { get; set; }
-
-public double TotalPrice { get; set; }
-
-public static ProductSalesCollection GetSalesData()
-{
-
-/// Geography
-string[] countries = new string[] { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" };
-
-string[] states1 = new string[] { "New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria" };
-
-string[] states2 = new string[] { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
-
-string[] states3 = new string[] { "Charente Maritime", "Essonne", "Garonne (Haute)", "Gers", };
-
-string[] states4 = new string[] { "Munich", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland" };
-
-string[] states5 = new string[] { "England" };
-
-string[] states6 = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
-
-/// Time
-string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
-
-/// Products
-string[] products = new string[] { "Bike", "Car" };
-
-Random r = new Random(123345345);
-int numberOfRecords = 2000;
-ProductSalesCollection listOfProductSales = new ProductSalesCollection();
-for (int i = 0; i < numberOfRecords; i++)
-{
-ProductSales sales = new ProductSales();
-sales.Country = countries[r.Next(1, countries.GetLength(0))];
-sales.Quantity = r.Next(1, 12);
-
-/// 1 percent discount for 1 quantity
-double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
-sales.Amount = (30000 * sales.Quantity) - discount;
-sales.TotalPrice = sales.Amount * sales.Quantity;
-sales.UnitPrice = sales.Amount / sales.Quantity;
-sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
-sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
-switch (sales.Country)
-{
-case "Australia":
-{
-sales.State = states1[r.Next(states1.GetLength(0))];
-break;
-}
-case "Canada":
-{
-sales.State = states2[r.Next(states2.GetLength(0))];
-break;
-}
-case "France":
-{
-sales.State = states3[r.Next(states3.GetLength(0))];
-break;
-}
-case "Germany":
-{
-sales.State = states4[r.Next(states4.GetLength(0))];
-break;
-}
-case "United Kingdom":
-{
-sales.State = states5[r.Next(states5.GetLength(0))];
-break;
-}
-case "United States":
-{
-sales.State = states6[r.Next(states6.GetLength(0))];
-break;
-}
-}
-listOfProductSales.Add(sales);
-}
-return listOfProductSales;
-}
-
-//Retrieve the item source from the ProductSalesCollection
-public class ProductSalesCollection : List<ProductSales>
-{
-}
-}
+//Initialize a new PivotGrid.
+private Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl pivotGridControl1 = new Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl();
+// Add required size for the PivotGrid control
+pivotGridControl1.Size = new System.Drawing.Size(344, 250);
+// Add the PivotGrid control to the parent control.
+this.Controls.Add(pivotGridControl1);
 
 {% endhighlight %}
 
 {% highlight vb %}
-Public Class ProductSales
-Public Property Product() As String
-Public Property [Date]() As String
-Public Property Country() As String
-Public Property State() As String
-Public Property Quantity() As Integer
-Public Property Amount() As Double
-Public Property UnitPrice() As Double
-Public Property TotalPrice() As Double
-Public Shared Function GetSalesData() As ProductSalesCollection
 
-''' Geography
-Dim countries() As String = {"Australia", "Canada", "France", "Germany", "United Kingdom", "United States"}
-Dim states1() As String = {"New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria"}
-Dim states2() As String = {"Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec"}
-Dim states3() As String = {"Charente Maritime", "Essonne", "Garonne (Haute)", "Gers"}
-Dim states4() As String = {"Bayern Munich", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland"}
-Dim states5() As String = {"England"}
-Dim states6() As String = {"New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina"}
-
-''' Time
-Dim dates() As String = {"FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009"}
-
-''' Products
-Dim products() As String = {"Bike", "Car"}
-Dim r As New Random(123345345)
-Dim numberOfRecords As Integer = 2000
-Dim listOfProductSales As New ProductSalesCollection()
-For i As Integer = 0 To numberOfRecords - 1
-Dim sales As New ProductSales()
-sales.Country = countries(r.Next(1, countries.GetLength(0)))
-sales.Quantity = r.Next(1, 12)
-
-''' 1 percent discount for 1 quantity
-Dim discount As Double = (30000 * sales.Quantity) * (Double.Parse(sales.Quantity.ToString()) / 100)
-sales.Amount = (30000 * sales.Quantity) - discount
-sales.TotalPrice = sales.Amount * sales.Quantity
-sales.UnitPrice = sales.Amount / sales.Quantity
-sales.Date = dates(r.Next(r.Next(dates.GetLength(0) + 1)))
-sales.Product = products(r.Next(r.Next(products.GetLength(0) + 1)))
-Select Case sales.Country
-Case "Australia"
-sales.State = states1(r.Next(states1.GetLength(0)))
-Exit Select
-Case "Canada"
-sales.State = states2(r.Next(states2.GetLength(0)))
-Exit Select
-Case "France"
-sales.State = states3(r.Next(states3.GetLength(0)))
-Exit Select
-Case "Germany"
-sales.State = states4(r.Next(states4.GetLength(0)))
-Exit Select
-Case "United Kingdom"
-sales.State = states5(r.Next(states5.GetLength(0)))
-Exit Select
-Case "United States"
-sales.State = states6(r.Next(states6.GetLength(0)))
-Exit Select
-End Select
-listOfProductSales.Add(sales)
-Next i
-Return listOfProductSales
-End Function
-
-Public Class ProductSalesCollection
-Inherits List(Of ProductSales)
-End Class
-End Class
+'Initialize a new PivotGrid.
+Private pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
+' Add required size for the PivotGrid control
+pivotGridControl1.Size = New System.Drawing.Size(344, 250)
+' Add the PivotGrid control to the parent control.
+Me.Controls.Add(pivotGridControl1)
 
 {% endhighlight %}
+
 {% endtabs %}
 
 N>
-The `ProductSales` is a class which consists of the `IList` data. For more information, refer the Pivot Grid Demo sample which is located in this path <Installed_Location>\EssentialStudio\<Installed_Version>\Windows\PivotGrid.Windows\Samples\Appearance\Pivot Grid Demo
+Syncfusion reference manager supports for specific framework which is shipped (assemblies) in our Syncfusion Essential Studio setup. So, if you try to add Syncfusion assemblies in project and framework which is not supported with selected Syncfusion version assemblies, then the dialog will be appeared by specifying that “Current build v{version} is not supported this framework v{Framework Version}”.
 
-The PivotGridControl requires the following information in order to populate data from the data source
+## Binding data
 
-* [ItemSource](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ItemSource.html) - The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
-* [PivotRows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotRows.html) - Elements that need to be added in PivotGridControl rows.
-* [PivotColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotColumns.html) - Elements that need to be added in PivotGridControl columns.
-* [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotCalculations.html) - Calculation values that appear as value cells in PivotGridControl.
+This section guides you on how to bind data source and its appropriate fields to a PivotGrid control. The data source assigned to PivotGrid control should either be an [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataView](https://msdn.microsoft.com/en-us/library/system.data.dataview.aspx).
 
-The data source can be assigned to PivotGridControl by using the [ItemSource](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ItemSource.html) property.
+In this example, `IEnumerable` list is used as data source for the PivotGrid control and the sample data source contains properties like Product, Date, Country, State, Quantity, Amount, UnitPrice and TotalPrice for demonstration purpose.
 
 {% tabs %}
+
 {% highlight c# %}
-// Specifying the Item Source for Pivot Grid  
-this.pivotGridControl1.ItemSource = ProductSales.GetSalesData();
+
+public class ProductSales
+{
+    public string Product { get; set; }
+
+    public string Date { get; set; }
+
+    public string Country { get; set; }
+
+    public string State { get; set; }
+
+    public int Quantity { get; set; }
+
+    public double Amount { get; set; }
+
+    public double UnitPrice { get; set; }
+
+    public double TotalPrice { get; set; }
+
+    public static ProductSalesCollection GetSalesData()
+    {
+        // Geography
+        string[] countries = new string[] { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" };
+
+        string[] states1 = new string[] { "New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria" };
+
+        string[] states2 = new string[] { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
+
+        string[] states3 = new string[] { "Charente Maritime", "Essonne", "Garonne (Haute)", "Gers", };
+
+        string[] states4 = new string[] { "Munich", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland" };
+
+        string[] states5 = new string[] { "England" };
+
+        string[] states6 = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
+
+        // Time
+        string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
+
+        // Products
+        string[] products = new string[] { "Bike", "Car" };
+
+        Random r = new Random(123345345);
+        int numberOfRecords = 2000;
+        ProductSalesCollection listOfProductSales = new ProductSalesCollection();
+        for (int i = 0; i < numberOfRecords; i++)
+        {
+            ProductSales sales = new ProductSales();
+            sales.Country = countries[r.Next(1, countries.GetLength(0))];
+            sales.Quantity = r.Next(1, 12);
+
+            /// 1 percent discount for 1 quantity
+            double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
+            sales.Amount = (30000 * sales.Quantity) - discount;
+            sales.TotalPrice = sales.Amount * sales.Quantity;
+            sales.UnitPrice = sales.Amount / sales.Quantity;
+            sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
+            sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
+            switch (sales.Country)
+            {
+                case "Australia":
+                    {
+                        sales.State = states1[r.Next(states1.GetLength(0))];
+                        break;
+                    }
+                case "Canada":
+                    {
+                        sales.State = states2[r.Next(states2.GetLength(0))];
+                        break;
+                    }
+                case "France":
+                    {
+                        sales.State = states3[r.Next(states3.GetLength(0))];
+                        break;
+                    }
+                case "Germany":
+                    {
+                        sales.State = states4[r.Next(states4.GetLength(0))];
+                        break;
+                    }
+                case "United Kingdom":
+                    {
+                        sales.State = states5[r.Next(states5.GetLength(0))];
+                        break;
+                    }
+                case "United States":
+                    {
+                        sales.State = states6[r.Next(states6.GetLength(0))];
+                        break;
+                    }
+            }
+            listOfProductSales.Add(sales);
+        }
+        return listOfProductSales;
+    }
+
+    //Retrieve the item source from the ProductSalesCollection
+    public class ProductSalesCollection : List<ProductSales>
+    {
+    }
+}
 
 {% endhighlight %}
 
 {% highlight vb %}
-' Specifying the Item Source for Pivot Grid  
-Me.pivotGridControl1.ItemSource = ProductSales.GetSalesData()
+
+Public Class ProductSales
+
+    Public Property Product As String
+
+    Public Property Date As String
+
+    Public Property Country As String
+
+    Public Property State As String
+
+    Public Property Quantity As Integer
+
+    Public Property Amount As Double
+
+    Public Property UnitPrice As Double
+
+    Public Property TotalPrice As Double
+
+    Public Shared Function GetSalesData() As ProductSalesCollection
+        Dim countries As String() = New String() {"Australia", "Canada", "France", "Germany", "United Kingdom", "United States"}
+        Dim states1 As String() = New String() {"New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria"}
+        Dim states2 As String() = New String() {"Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec"}
+        Dim states3 As String() = New String() {"Charente Maritime", "Essonne", "Garonne (Haute)", "Gers"}
+        Dim states4 As String() = New String() {"Munich", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland"}
+        Dim states5 As String() = New String() {"England"}
+        Dim states6 As String() = New String() {"New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina"}
+        Dim dates As String() = New String() {"FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009"}
+        Dim products As String() = New String() {"Bike", "Car"}
+        Dim r As Random = New Random(123345345)
+        Dim numberOfRecords As Integer = 2000
+        Dim listOfProductSales As ProductSalesCollection = New ProductSalesCollection()
+        For i As Integer = 0 To numberOfRecords - 1
+            Dim sales As ProductSales = New ProductSales()
+            sales.Country = countries(r.[Next](1, countries.GetLength(0)))
+            sales.Quantity = r.[Next](1, 12)
+            Dim discount As Double =(30000 * sales.Quantity) * (Double.Parse(sales.Quantity.ToString()) / 100)
+            sales.Amount =(30000 * sales.Quantity) - discount
+            sales.TotalPrice = sales.Amount * sales.Quantity
+            sales.UnitPrice = sales.Amount / sales.Quantity
+            sales.Date = dates(r.[Next](r.[Next](dates.GetLength(0) + 1)))
+            sales.Product = products(r.[Next](r.[Next](products.GetLength(0) + 1)))
+            Select Case sales.Country
+                Case "Australia"
+                    sales.State = states1(r.[Next](states1.GetLength(0)))
+                    Exit Select
+                Case "Canada"
+                    sales.State = states2(r.[Next](states2.GetLength(0)))
+                    Exit Select
+                Case "France"
+                    sales.State = states3(r.[Next](states3.GetLength(0)))
+                    Exit Select
+                Case "Germany"
+                    sales.State = states4(r.[Next](states4.GetLength(0)))
+                    Exit Select
+                Case "United Kingdom"
+                    sales.State = states5(r.[Next](states5.GetLength(0)))
+                    Exit Select
+                Case "United States"
+                    sales.State = states6(r.[Next](states6.GetLength(0)))
+                    Exit Select
+            End Select
+
+            listOfProductSales.Add(sales)
+        Next
+
+        Return listOfProductSales
+    End Function
+
+    Public Class ProductSalesCollection
+        Inherits List(Of ProductSales)
+
+    End Class
+End Class
 
 {% endhighlight %}
+
 {% endtabs %}
 
-After assigning the data source, the rows and columns that needs to be displayed in PivotGridControl has to be added. Make use of the [PivotRows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotRows.html) and [PivotColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotColumns.html) properties to achieve this.
+N>
+`ProductSales` is a class which consists of the `IList` data. For more information, refer the *Getting Started* demo sample which is located in the following location.
+<Installed_Location>\EssentialStudio\<Installed_Version>\Windows\PivotGrid.Windows\Samples\Getting Started\Getting Started Demo\
+
+The PivotGrid control requires the following information in order to populate the data from the data source.
+
+* [ItemSource](<http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ItemSource.html>) - The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
+* [PivotRows](<http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotRows.html>) - Elements that need to be added in rows of PivotGrid control.
+* [PivotColumns](<http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotColumns.html>) - Elements that need to be added in columns of PivotGrid control.
+* [PivotCalculations](<http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotCalculations.html>) - Calculation values that need to be added as value cells in PivotGrid control.
+
+The below code snippet illustrates how to add the required information to the PivotGrid control.
 
 {% tabs %}
+
 {% highlight c# %}
-// Adding Pivot Rows to Grid
+
+// Specifying the data source for PivotGrid
+this.pivotGridControl1.ItemSource = ProductSales.GetSalesData();
+// Adding PivotRows data to PivotGrid
 this.pivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
 this.pivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Year", TotalHeader = "Total" });
-
-// Adding Pivot Columns to Grid 
+// Adding PivotColumns data to PivotGrid
 this.pivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
 this.pivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
-
-{% endhighlight %}
-
-{% highlight vb %}
-' Adding Pivot Rows to Grid
-Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
-Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
-
-' Adding Pivot Columns to Grid           
-Me.pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
-Me.pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
-
-{% endhighlight %}
-{% endtabs %}
-
-After adding the rows and columns, the PivotGridControl needs to know the information for the calculations that appear in it. This can be achieved by using the [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~PivotCalculations.html) property.
-
-{% tabs %}
-{% highlight c# %}
-// Adding Pivot Calculations to Grid          
+// Adding PivotCalculations data to PivotGrid
 this.pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum });
 this.pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format = "#,##0" });
 
 {% endhighlight %}
 
 {% highlight vb %}
-' Adding Pivot Calculations to Grid          
+
+' Specifying the data source for PivotGrid
+Me.pivotGridControl1.ItemSource = ProductSales.GetSalesData()
+' Adding PivotRows data to PivotGrid
+Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
+' Adding PivotColumns data to PivotGrid
+Me.pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+Me.pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
+' Adding PivotCalculations data to PivotGrid
 Me.pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format = "C", .SummaryType = SummaryType.DoubleTotalSum})
 Me.pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format = "#,##0"})
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+Finally, run the application to obtain the following output.
 
-## Pivot Schema Designer
+![GettingStarted_img4](Getting-Started_images/PivotGrid.jpeg)
 
-Pivot Schema Designer is a layout which is supported in PivotGridControl that can be presented like as Microsoft Excel pivot table field list. It enables the drag-and-drop feature for fields between different areas, including column, row, value, and filter. By using PivotTableFieldList, you can add, rearrange, or remove fields to show data in a PivotGridControl in the exact way you want. For more information, refer [Pivot Schema Designer](http://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) topic. This Pivot Schema Designer can be enabled in PivotGridControl by setting the [ShowPivotTableFieldList](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html) property to `true`.
+## Pivot schema designer
+
+Pivot schema designer is a layout which is designed to perform like as Microsoft Excel's pivot table field list. It allows you to drag-and-drop fields between different areas, including column, row, value and filter. This pivot schema designer can be enabled in PivotGrid control by setting the [ShowPivotTableFieldList](<http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html>) property to `true`.
 
 {% tabs %}
+
 {% highlight c# %}
-// Shows the Pivot Schema Designer.
+
+// Shows the pivot schema designer.
 this.pivotGridControl1.ShowPivotTableFieldList = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
-' Shows the Pivot Schema Designer.
+
+' Shows the pivot schema designer.
 Me.pivotGridControl1.ShowPivotTableFieldList = True
 
 {% endhighlight %}
+
 {% endtabs %}
-![](Getting-Started_images/Getting-Started_img5.jpeg)
 
-## Grouping
+For more information, refer the [pivot schema designer](http://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) topic.
 
-PivotGridControl contains a Grouping Bar which enables the drag and drop feature of fields between different areas such as column, row, value and filter. This Grouping Bar will be visible at the top of the PivotGridControl. By using the Grouping Bar, you can add, rearrange, or remove fields to show data in the PivotGridControl exactly the way you want. For enabling this option, you have to make use of the [ShowGroupBar](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowGroupBar.html) property. For more information, refer [Grouping](http://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar) topic.
+![PivotTableFieldList](Getting-Started_images/PivotTableFieldList.jpeg)
+
+## Grouping bar
+
+Grouping bar which allows you  to drag and drop fields between different areas such as column, row, value and filter. For enabling the grouping bar, you have to make use of the [ShowGroupBar](<http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowGroupBar.html>) property.
 
 {% tabs %}
+
 {% highlight c# %}
-// Enables Grouping Bar.
+
+// Enables grouping bar.
 this.pivotGridControl1.ShowGroupBar = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
-' Enables Grouping Bar.
+
+' Enables grouping bar.
 Me.pivotGridControl1.ShowGroupBar = True
 
 {% endhighlight %}
+
 {% endtabs %}
 
-## Sorting
+![GroupingBar](Getting-Started_images/GroupingBar.png)
 
-Sorting can be enabled or disabled by using the [AllowSorting](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowSorting.html) property. By default, the PivotGridControl will populate the data in ascending order. For more information, refer [Sorting](http://help.syncfusion.com/windowsforms/pivotgrid/sorting) topic.
-
-{% tabs %}
-{% highlight c# %}
-// Enables Sorting in PivotGridControl.
-this.pivotGridControl1.AllowSorting = true;
-
-{% endhighlight %}
-
-{% highlight vb %}
-' Enables Sorting in PivotGridControl.
-Me.pivotGridControl1.AllowSorting = True
-
-{% endhighlight %}
-{% endtabs %}
+For more information, refer the [grouping bar](http://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar) topic.
 
 ## Filtering
 
-Filtering can be enabled or disabled in PivotGridControl by using the [AllowFiltering](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowFiltering.html) property. You can apply filters to one or more columns. For more information, refer [Filtering](http://help.syncfusion.com/windowsforms/pivotgrid/filtering-support-for-calculation-columns) topic.
+Filtering can be enabled or disabled in PivotGrid control by using the [AllowFiltering](<http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowFiltering.html>) property. You can apply filters to one or more columns.
 
 {% tabs %}
+
 {% highlight c# %}
-// Enables Filtering in PivotGridControl.
+
+// Enables filtering in PivotGrid control.
 this.pivotGridControl1.AllowFiltering = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
-' Enables Filtering in PivotGridControl.
 
+' Enables filtering in PivotGrid control.
 Me.pivotGridControl1.AllowFiltering = True
 
 {% endhighlight %}
+
 {% endtabs %}
 
+![Filtering](Getting-Started_images/Filtering.png)
+
+## Sorting
+
+Sorting can be enabled or disabled by using the [AllowSorting](<http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowSorting.html>) property. By default, the PivotGrid control populates the data in ascending order.
+
+{% tabs %}
+
+{% highlight c# %}
+
+// Enables sorting in PivotGrid control.
+this.pivotGridControl1.AllowSorting = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+' Enables sorting in PivotGrid control.
+Me.pivotGridControl1.AllowSorting = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Sorting](Getting-Started_images/Sorting.png)

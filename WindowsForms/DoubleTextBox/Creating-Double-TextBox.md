@@ -19,44 +19,44 @@ It can be created programmatically as follows.
 
 1. Add Shared.Base, Shared.Windows, Tools.Base and Tools.Windows assembly references and include the required namespace.
 
-   ~~~ cs    
+    {% tabs %}
 
-		using Syncfusion.Windows.Forms.Tools;
+    {% highlight c# %}
 
-   ~~~
-   {:.prettyprint }
+	using Syncfusion.Windows.Forms.Tools;
 
+    {% endhighlight %}
 
+    {% highlight vbnet %}
 
+	Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~ vbnet
+    {% endhighlight %}
 
-		Imports Syncfusion.Windows.Forms.Tools
-
-   ~~~
-   {:.prettyprint }
-
+    {% endtabs %}
 
  
 2. Create an instance of the DoubleTextBox. Add that instance to the Form.
 
-   ~~~ cs 
+    {% tabs %}
 
-		this.doubleTextBox1=new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+    {% highlight c# %}
 
-		this.Controls.Add(this.doubleTextBox1);
- 
-   ~~~
-   {:.prettyprint }
+	this.doubleTextBox1=new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
 
-   ~~~ vbnet
+	this.Controls.Add(this.doubleTextBox1);
 
-		Me.doubleTextBox1 = New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
+    {% endhighlight %}
 
-		Me.Controls.Add(Me.doubleTextBox1)
+    {% highlight vbnet %}
 
-   ~~~
-   {:.prettyprint }
+	Me.doubleTextBox1 = New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
+
+	Me.Controls.Add(Me.doubleTextBox1)
+
+    {% endhighlight %}
+
+    {% endtabs %}
 
 
  

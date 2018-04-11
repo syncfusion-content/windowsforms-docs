@@ -7,43 +7,43 @@ control: Wizard
 documentation: ug
 ---
 
-# DesignTime Features
+# DesignTime features
 
 The below topics are discussed in this particular section.
 
-## Options to Add Page, Remove Page, Previous page and Next Page
+## Options to add page, remove page, previous page, and next page
 
 This section will guide you with various options available in the designer to add page, remove page, go to previous page and next page.
 
-### Using Property Grid
+### Using property grid
 
 ![](Wizard-Package_images/Wizard-Package_img29.jpeg)
 
 
 
-### Using Smart Tag
+### Using smart tag
 
 ![](Wizard-Package_images/Wizard-Package_img30.jpeg)
 
 
 
-### Using Context menu
+### Using context menu
 
 ![](Wizard-Package_images/Wizard-Package_img31.jpeg)
 
 
 
-### Property Grid Commands
+### Property grid commands
 
 ![](Wizard-Package_images/Wizard-Package_img32.jpeg)
 
 
 
-### Page Selection at Design time
+### Page selection at design time
 
 This section will guide you with page selection options at design time.
 
-* We can easily navigate between the Wizard pages using the Next and Back buttons in the designer. These buttons are selectable at design time. 
+* We can easily navigate between the Wizard pages using the Next and Back buttons in the designer. These buttons are selectable at design time.
 
 ![](Wizard-Package_images/Wizard-Package_img33.jpeg)
 

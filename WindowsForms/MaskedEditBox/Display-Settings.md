@@ -15,8 +15,6 @@ This section discusses the display settings of the MaskedEditBox control.
 The user data can be displayed along with separators at run time for specifying date, time, decimals and thousands. It is not 
 required to type separators at run time. Separators can be specified in the mask character itself.
 
-
-
 <table>
 <tr>
 <th>
@@ -47,6 +45,8 @@ We can change the default separators used. If you want to display the date time 
 
 Similarly other separators can be used.
 
+{% tabs %}
+
 {% highlight C# %}  
 
 this.maskedEditBox1.DateSeparator = '-';
@@ -59,9 +59,7 @@ this.maskedEditBox1.TimeSeparator = ':';
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.DateSeparator = "-"C
 
@@ -72,6 +70,8 @@ Me.maskedEditBox1.ThousandSeparator = ","C
 Me.maskedEditBox1.TimeSeparator = ":"C
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img6.png)
 
@@ -87,13 +87,9 @@ Me.maskedEditBox1.TimeSeparator = ":"C
 
 
 
-
-
 ## Cursor Position
 
 The cursor position of the MaskedEditBox control can be specified using the options provided by the following properties.
-
-
 
 <table>
 <tr>
@@ -110,6 +106,7 @@ PositionAtDecimal</td><td>
 Indicates whether the cursor is to be positioned at the decimal separator (if any) when the control receives focus.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -119,9 +116,7 @@ this.maskedEditBox1.PositionAtDecimal = true;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosition.Decimal
 
@@ -129,8 +124,9 @@ Me.maskedEditBox1.PositionAtDecimal = true;
 
 {% endhighlight %} 
 
+{% endtabs %}
 
-### DataGroups
+## DataGroups
 
 Text can be split up and aligned using the options provided by the below given property.
 
@@ -188,9 +184,9 @@ The value of Group 1 will be the area code, Group 2 will be the phone number, an
 
 The following code snippet uses two groups.
 
+{% tabs %}
+
 {% highlight C# %}  
-
-
 
 // Adding DataGroups.
 
@@ -220,16 +216,13 @@ this.maskedEditDataGroupInfo2.DataGroupSize = 4;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 ' Adding DataGroups.
 
 Me.maskedEditBox1.DataGroups.Add(Me.maskedEditDataGroupInfo1)
 
 Me.maskedEditBox1.DataGroups.Add(Me.maskedEditDataGroupInfo2)
-
 
 
 ' Defining maskedEditDataGroupInfo1.
@@ -241,7 +234,6 @@ Me.maskedEditDataGroupInfo1.DataGroupName = "One"
 Me.maskedEditDataGroupInfo1.DataGroupSize = 3
 
 
-
 ' Defining maskedEditDataGroupInfo2.
 
 Me.maskedEditDataGroupInfo2.DataGroupAlignment = Syncfusion.Windows.Forms.Tools.MaskGroupAlignment.None
@@ -251,6 +243,8 @@ Me.maskedEditDataGroupInfo2.DataGroupName = "Two"
 Me.maskedEditDataGroupInfo2.DataGroupSize = 4
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ## Displaying Characters as Substitutes for User Input
@@ -277,8 +271,9 @@ Indicates the character to display for password input for single-line edit contr
 
 The MaskedEditBox.Sequentially property indicates whether the control can sequentially display mask characters. After setting the Sequentially property to 'True', you can use the PasswordChar property in order to set the character, that is to be displayed as a substitute for the user input.
 
-{% highlight C# %}  
+{% tabs %}
 
+{% highlight C# %}  
 
 
 private void Form1_Load(object sender, System.EventArgs e)
@@ -294,8 +289,7 @@ this.maskedEditBox1.PasswordChar = '$';
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -307,10 +301,12 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](MaskedEditBox-images/MarkedEditBox-img10.png)
 
 
 A Sample which demonstrates the PasswordChar property of MaskedEditBox control is available in the below sample installation 
 path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

@@ -23,7 +23,7 @@ N> The underlying data object must be defined with default constructor. Otherwis
 {% endtabs %}
 ![](DataManipulation_images/AddNewRow_img1.png)
 
-### Placing AddNewRow at various positions
+### Placing AddNewRow at Various Positions
 SfDataGrid allows to add the AddNewRow at either top or fixed top or bottom or fixed bottom by setting the `AddNewRowPosition` property.
 {% tabs %}
 {% highlight c# %}
@@ -45,7 +45,7 @@ sfDataGrid.IsAddNewRowIndex(1)
 {% endhighlight %}
 {% endtabs %}
 
-### Customize the newly added row position
+### Customize the Newly Added Row Position
 SfDataGrid adds new data item from AddNewRow at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. The newly added data item position can be customized by setting [NewItemPlaceholderPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~NewItemPlaceholderPosition.html) property.
 {% tabs %}
 {% highlight c# %}
@@ -56,7 +56,7 @@ sfDataGrid.NewItemPlaceholderPosition = Syncfusion.Data.NewItemPlaceholderPositi
 {% endhighlight %}
 {% endtabs %}
 
-### Initializing default values for AddNewRow
+### Initializing Default Values for AddNewRow
 SfDataGrid allows to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.AddNewRowInitiatingEventArgs~NewObject.html) property in `AddNewRowInitiating` event.
 
 {% tabs %}
@@ -91,7 +91,6 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
     if (this.sfDataGrid.IsAddNewRowIndex(args.DataRow.RowIndex))
     {
         var data = args.DataRow.RowData as OrderInfo;
-
         if (data.OrderID < 10000)
         {
             args.IsValid = false;
@@ -119,7 +118,7 @@ End Sub
 
 Similarly, the cells can validate in AddNewRow by using the[CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellValidating_EV.html) event.
 
-### Customizing AddNewRow text using default resource file
+### Customizing AddNewRow Text using Default Resource File
 SfDataGrid allows to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WinForms.resx` file in **Resources** folder and then customize the value of AddNewRowText.
 
 ![](DataManipulation_images/AddNewRow_img4.png)
@@ -152,7 +151,7 @@ Me.sfDataGrid.AllowDeleting = True
 {% endhighlight %}
 {% endtabs %}
 
-### Delete the selected records through code
+### Delete the Selected Records through Code
 The selected records can be deleted by using the [DeleteSelectedRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DeleteSelectedRecords.html) method in SfDataGrid.
 {% tabs %}
 {% highlight c# %}
@@ -163,9 +162,9 @@ Me.sfDataGrid.DeleteSelectedRecords()
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing the delete operations
+### Customizing the Delete Operations
 
-#### Conditionally deleting records
+#### Conditionally Deleting Records
 [RecordDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RecordDeleting_EV.html) event occurs when the record is being deleted from SfDataGrid. The record deletion can be cancel by using the [RecordDeletingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `RecordDeleting` event. The certain records can be skipped when deleting more than one record by removing items from [RecordDeletingEventArgs.Items](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.RecordDeletingEventArgs~Items.html).
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +195,7 @@ End Sub
 {% endtabs %}
 
 
-#### Handling selection after deleting the record
+#### Handling Selection after Deleting the Record
 
 [RecordDeleted](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RecordDeleted_EV.html) event occurs after the record is deleted. The selection can be changed after remove the records through [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.RecordDeletedEventArgs~SelectedIndex.html) property of `RecordDeleted` event.
 {% tabs %}

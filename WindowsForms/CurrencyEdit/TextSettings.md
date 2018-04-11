@@ -48,9 +48,9 @@ Specifies the decimal value of the currency control.</td></tr>
 </table>
 
 
-{%highlight c#%}
+{% tabs %}
 
-
+{% highlight c# %}
 
 this.currencyEdit1.ShowTextBox = true;
 
@@ -65,9 +65,9 @@ this.currencyEdit1.TransferToCalculator= false;
 this.currencyEdit1.TextBox.DecimalValue = new decimal(new int[] {40000, 0, 0, 131072});
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight vbnet %}
 
 Me.currencyEdit1.ShowTextBox = True
 
@@ -81,7 +81,9 @@ Me.currencyEdit1.TransferToCalculator = False
 
 Me.currencyEdit1.TextBox.DecimalValue = New Decimal(New Integer() {40000, 0, 0, 131072})
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img417.png) 
 

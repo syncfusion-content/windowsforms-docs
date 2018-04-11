@@ -13,9 +13,9 @@ documentation: ug
 
 CalculatorClosing event is handled when the calculator is closing after the specified button is clicked.
 
-{%highlight c#%}
+{% tabs %}
 
-
+{% highlight c# %}
 
 private void currencyEdit1_CalculatorClosing(object sender, CalculatorClosingEventArgs e)
 
@@ -27,9 +27,9 @@ private void currencyEdit1_CalculatorClosing(object sender, CalculatorClosin
 
 }
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight vbnet %}
 
 Private Sub currencyEdit1_CalculatorClosing(ByVal sender As Object, ByVal e AsCalculatorClosingEventArgs)
 
@@ -39,16 +39,18 @@ Private Sub currencyEdit1_CalculatorClosing(ByVal sender As Object, ByVal�
 
 End Sub
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ## CalculatorShowing Event
 
 This event is raised before the calculator popup is displayed. The Cancel property of this CancelEventArgs lets  you to cancel the popup display as follows.
 
-{%highlight c#%}
+{% tabs %}
 
-
+{% highlight c# %}
 
 private void currencyEdit1_CalculatorShowing(object sender, CancelEventArgs e)
 
@@ -60,11 +62,9 @@ private void currencyEdit1_CalculatorShowing(object sender, CancelEventArgs�
 
 }
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vbnet %}
 
 Private Sub currencyEdit1_CalculatorShowing(ByVal sender As Object, ByVal e As CancelEventArgs)
 
@@ -74,15 +74,17 @@ Private Sub currencyEdit1_CalculatorShowing(ByVal sender As Object, ByVal�
 
 End Sub
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ## DecimalValueChanged Event
 
 This event is raised when DecimalValue property is changed.
 
+{% tabs %}
 
-
-{%highlight c#%}
+{% highlight c# %}
 
 private void currencyEdit1_DecimalValueChanged(object sender, EventArgs e)
 
@@ -92,9 +94,9 @@ private void currencyEdit1_DecimalValueChanged(object sender, EventArgs e)
 
 }
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight vbnet %}
 
 
 Private Sub currencyEdit1_DecimalValueChanged(ByVal sender As Object, ByVal e As EventArgs)
@@ -103,4 +105,6 @@ Private Sub currencyEdit1_DecimalValueChanged(ByVal sender As Object, ByVa
 
 End Sub
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}

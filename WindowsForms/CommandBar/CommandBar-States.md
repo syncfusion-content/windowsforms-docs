@@ -7,7 +7,7 @@ control: CommandBars
 documentation: ug
 ---
 
-# CommandBar States
+# CommandBar states
 
 The CommandBar control of the CommandBarController can be floated or docked to the form as per the requirements of the user.
 
@@ -27,7 +27,7 @@ By default, CommandBars can be floated on the form by dragging the gripper on th
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -40,23 +40,21 @@ Indicates whether the CommandBar should wrap when floating.</td></tr>
 <tr>
 <td>
 FloatBounds</td><td>
-Gets / sets the bounds of a floating CommandBar.</td></tr>
+Gets/sets the bounds of a floating CommandBar.</td></tr>
 <tr>
 <td>
 Floating</td><td>
-Returns the current dock / float state of the CommandBar.</td></tr>
+Returns the current dock/float state of the CommandBar.</td></tr>
 </table>
 
 
-The float state of the CommandBar can be disabled by setting the DisableFloating property to 'True'. 
+The float state of the CommandBar can be disabled by setting the DisableFloating property to 'True'.
 
 Setting FloatModeWrapping property to 'True', wraps a floating CommandBar when it is resized to less than it's maximum length. The DisableFloating property must be set to 'False' for this.
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
 
 
 this.commandBar1.DisableFloating = false;
@@ -66,18 +64,17 @@ this.commandBar1.FloatModeWrapping = true;
 this.commandBar1.FloatBounds = new System.Drawing.Rectangle(419, 303, 183, 47);
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
-
+{% highlight VB %}
 
 Me.commandBar1.DisableFloating = False
 
 Me.commandBar1.FloatModeWrapping = True
 
 Me.commandBar1.FloatBounds = New System.Drawing.Rectangle(419, 303, 183, 47)
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ![](CommandBar-States_images/CommandBar-States_img1.jpeg) 
@@ -102,12 +99,12 @@ CommandBar can be docked to all the edges of the form such as Top, Bottom, Right
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
 AllowedDockBorders</td><td>
-Gets / sets the edges of the form along which the CommandBar may be docked. The options included are given below.Bottom,Left,Right,Top andNone.When set to 'None', the CommandBar cannot be docked to the form.</td></tr>
+Gets/sets the edges of the form along which the CommandBar may be docked. The options included are given below.Bottom,Left,Right,Top andNone.When set to 'None', the CommandBar cannot be docked to the form.</td></tr>
 <tr>
 <td>
 AlwaysLeadingEdge</td><td>
@@ -127,7 +124,7 @@ Wraps the CommandBar when the bounds are less than the maximum length. </td></tr
 <tr>
 <td>
 DockState</td><td>
-Gets / sets the current dock or float state for the CommandBar.</td></tr>
+Gets/sets the current dock or float state for the CommandBar.</td></tr>
 <tr>
 <td>
 ShowDockModeText</td><td>
@@ -148,20 +145,17 @@ This CommandBarController property allows you to dock the CommandBar to the edge
 <table>
 <tr>
 <th>
-CommandBarController Property</th><th>
+CommandBarController property</th><th>
 Description</th></tr>
 <tr>
 <td>
 EnabledDockBorders</td><td>
-Gets / sets the edges of the form along which the CommandBars are allowed to dock. The options included are given below.Bottom,Left,Right,Top andNone.</td></tr>
+Gets/sets the edges of the form along which the CommandBars are allowed to dock. The options included are Bottom, Left, Right, Top, and None.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
-
 
 
 this.commandBar1.AllowedDockBorders = ((Syncfusion.Windows.Forms.Tools.CommandBarDockBorder)(((Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Top | Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Bottom) | Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Left)));
@@ -183,7 +177,7 @@ this.commandBar1.DockModeWrapping = true;
 this.commandBarController1.EnabledDockBorders = ((Syncfusion.Windows.Forms.Tools.CommandBarDockBorder)(((Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Bottom | Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Left) | Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Right)));
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -208,8 +202,9 @@ Me.commandBar1.DockModeWrapping = True
 Me.commandBarController1.EnabledDockBorders = (CType(((Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Bottom Or Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Left) Or Syncfusion.Windows.Forms.Tools.CommandBarDockBorder.Right), Syncfusion.Windows.Forms.Tools.CommandBarDockBorder))
 {% endhighlight %}
 
+{% endtabs %}
 
-The following figure illustrates the above settings.
+
 
  ![](CommandBar-States_images/CommandBar-States_img3.jpeg) 
 
@@ -232,6 +227,9 @@ The following step by step procedure helps you to dock the CommandBar to the tar
 
 
 3. Specify the docking state of the CommandBar in the button click event using the following code snippet.
+
+{% tabs %}
+
 {% highlight C# %}
 
 
@@ -277,11 +275,7 @@ this.commandBar1.DockState = CommandBarDockState.Float;
 }
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
-
+{% highlight VB %}
 
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles top.Click, right.Click, left.Click, bottom.Click, float_btn.Click
@@ -330,6 +324,8 @@ End If
 
 End Sub
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Output
 
