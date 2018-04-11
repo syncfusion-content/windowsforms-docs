@@ -21,18 +21,16 @@ InterceptArrowKeys</td><td>
 Specifies whether the up down control will increment and decrement when Up Arrow and Down Arrow keys are pressed.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight c# %}
-
 
 this.domainUpDownExt1.InterceptArrowKeys =true;
 
-
 {% endhighlight  %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 PrivateMe.domainUpDownExt1.InterceptArrowKeys =True
+
 {% endhighlight %}
+{% endtabs %}

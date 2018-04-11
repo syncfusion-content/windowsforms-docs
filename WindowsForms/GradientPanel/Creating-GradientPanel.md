@@ -7,8 +7,6 @@ control: Editors Package
 documentation: ug
 ---
 
-
-
 # Creating GradientPanel
 
 This section will guide you to create a Gradient Panel through designer and also through programming approach.
@@ -26,12 +24,9 @@ This section will guide you to create a GradientPanel control.
 
    ![](GradientPanel-Images/Overview_img364.jpeg) 
 
-
-
 4. Build and run the application.
 
    ![](GradientPanel-Images/Overview_img365.jpeg) 
-
 
 {% seealso %}
 
@@ -47,95 +42,67 @@ The following steps will guide you to create a gradient panel programmatically.
 2. Add the Syncfusion.Shared.Base and Syncfusion.Shared.Windows assembly references.
 3. Declare a gradient panel as below.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
 
+{% endhighlight %}
 
-		private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint}
+Friend WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
 
-   ~~~ vbnet
-
-
-
-		Friend WithEvents GradientPanel1 As Syncfusion.Windows.Forms.Tools.GradientPanel
-
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+{% endtabs %}
 
 4. In the Initialize function, include the below code to initialize the gradient panel.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
+((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).BeginInit();
 
+{% endhighlight %}
+{% highlight vb %}
 
-		this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
+Me.GradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel 
+CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
 
-		((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).BeginInit();
-
-   ~~~
-   {:.prettyprint}
-
-   ~~~ vbnet
-
-
-		Me.GradientPanel1 = New Syncfusion.Windows.Forms.Tools.GradientPanel 
-
-		CType(Me.GradientPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
-
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+{% endtabs %}
 
 5. Set the properties as follows for the gradient panel and the form.
 
+{% tabs %}
+{% highlight c# %}
 
-   ~~~ cs
+// gradientPanel1
+this.gradientPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.DiagonalCross, System.Drawing.Color.LightBlue, System.Drawing.SystemColors.InactiveCaption);
+this.gradientPanel1.BorderColor = System.Drawing.Color.White;
+this.gradientPanel1.Location = new System.Drawing.Point(37, 32);
+this.gradientPanel1.Name = "gradientPanel1";
+this.gradientPanel1.Size = new System.Drawing.Size(350, 202);
+this.gradientPanel1.TabIndex = 0;
+this.Controls.Add(this.gradientPanel1);
 
+{% endhighlight %}
 
-		// gradientPanel1
+{% highlight vb %}
 
-		this.gradientPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.DiagonalCross, System.Drawing.Color.LightBlue, System.Drawing.SystemColors.InactiveCaption);
+'GradientPanel1
+Me.GradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.DiagonalCross, System.Drawing.Color.LightSkyBlue, System.Drawing.SystemColors.Window)
+Me.GradientPanel1.BorderColor = System.Drawing.Color.Black
+Me.GradientPanel1.Location = New System.Drawing.Point(64, 48)
+Me.GradientPanel1.Name = "GradientPanel1"
+Me.GradientPanel1.Size = New System.Drawing.Size(296, 208)
+Me.GradientPanel1.TabIndex = 0
+Me.Controls.Add(Me.GradientPanel1)
 
-		this.gradientPanel1.BorderColor = System.Drawing.Color.White;
-
-		this.gradientPanel1.Location = new System.Drawing.Point(37, 32);
-
-		this.gradientPanel1.Name = "gradientPanel1";
-
-		this.gradientPanel1.Size = new System.Drawing.Size(350, 202);
-
-		this.gradientPanel1.TabIndex = 0;
-
-		this.Controls.Add(this.gradientPanel1);
-
-   ~~~
-   {:.prettyprint}
-
-   ~~~ vbnet
-
-
-		'GradientPanel1
-
-		Me.GradientPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.DiagonalCross, System.Drawing.Color.LightSkyBlue, System.Drawing.SystemColors.Window)
-
-		Me.GradientPanel1.BorderColor = System.Drawing.Color.Black
-
-		Me.GradientPanel1.Location = New System.Drawing.Point(64, 48)
-
-		Me.GradientPanel1.Name = "GradientPanel1"
-
-		Me.GradientPanel1.Size = New System.Drawing.Size(296, 208)
-
-		Me.GradientPanel1.TabIndex = 0
-
-		Me.Controls.Add(Me.GradientPanel1)
-
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+{% endtabs %}
 
 6. Run the application.
 
    ![](GradientPanel-Images/Overview_img366.jpeg) 
-

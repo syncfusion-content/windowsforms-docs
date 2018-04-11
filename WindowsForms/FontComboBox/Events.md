@@ -7,7 +7,6 @@ control: Editors Package
 documentation: ug
 ---
 
-
 # Events
 
 This section comprises the below events:
@@ -18,82 +17,69 @@ SelectedIndexChanged event - This event is raised when the ComboBox.SelectedInde
 
 The below code snippet, lets you set the selected font style, for a label, on selecting through a FontComboBox, using SelectedIndexChanged event.
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 private void fontComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-
 {
-
     this.label1.Font = new Font(this.fontComboBox2.SelectedItem.ToString(), 11, FontStyle.Regular);
-
 }
 
+{% endhighlight %}
 
-{%endhighlight%}
-
-{%highlight vbnet%}
-
+{% highlight vb %}
 
 Private Sub fontComboBox2_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
-
     Me.label1.Font = New Font(Me.fontComboBox2.SelectedItem.ToString(), 11, FontStyle.Regular)
-
 End Sub
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ## FontSelected Event
 
 To add FontSelected event, derive the classes as shown below.
 
 1. Add an event in the derived class.
-   
-   ~~~ cs
-   
-	   // Adding event.
-	   public event System.EventHandler FontSelected;
-   
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-   
-	   ' Adding event.
-	   Public Event FontSelected As System.EventHandler
-   ~~~
-   {:.prettyprint}
 
+{% tabs %}
+{% highlight c# %}
 
+// Adding event.
+public event System.EventHandler FontSelected;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+' Adding event.
+Public Event FontSelected As System.EventHandler
+
+{% endhighlight %}
+{% endtabs %}
 
 2. Override the OnSelectedIndexChanged method and fire the event there.
-   
-   ~~~ cs
-	   protected override void OnSelectedIndexChanged(EventArgs e) 
-	   {
-	   // FontSelected event fires here.
-	   if(FontSelected!=null) FontSelected(this,e);
-			base.OnSelectedIndexChanged (e);
-	   }
-   ~~~
-   {:.prettyprint}
-   
-   
-   ~~~vbnet
-   
-	   Protected Overrides Sub OnSelectedIndexChanged(ByVal e As EventArgs)
-	   ' FontSelected event fires here.
-	   RaiseEvent FontSelected(Me, e)
-	   MyBase.OnSelectedIndexChanged(e)
-	   End Sub
-   
-   ~~~
-   {:.prettyprint}
 
+{% tabs %}
+{% highlight c# %}
 
+protected override void OnSelectedIndexChanged(EventArgs e) 
+{
+// FontSelected event fires here.
+if(FontSelected!=null) FontSelected(this,e);
+	base.OnSelectedIndexChanged (e);
+}
 
+{% endhighlight %}
 
+{% highlight vb %}
 
+Protected Overrides Sub OnSelectedIndexChanged(ByVal e As EventArgs)
 
+' FontSelected event fires here.
+RaiseEvent FontSelected(Me, e)
+MyBase.OnSelectedIndexChanged(e)
+End Sub
+
+{% endhighlight %}
+{% endtabs %}

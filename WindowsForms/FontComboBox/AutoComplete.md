@@ -11,7 +11,6 @@ documentation: ug
 
 The AutoComplete feature of the FontComboBox can be turned on\off depending upon the type of behavior that is required for the FontComboBox control. The below properties enables the auto complete feature.
 
-
 <table>
 <tr>
 <th>
@@ -31,39 +30,29 @@ AutoCompleteCustomSource</td><td>
 Represents the collection of string for the custom source, when AutoCompleteSource is set to CustomSource.</td></tr>
 </table>
 
-
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 // Enables AutoComplete feature.
-
 this.fontComboBox1.UseAutoComplete =true;
-
 this.fontComboBox2.AutoCompleteCustomSource.AddRange(new string[] { "Calibri", "Cambria", "Candara"});
-
 this.fontComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-
 this.fontComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight vb %}
 
 ' Enables AutoComplete feature.
-
 Me.fontComboBox1.UseAutoComplete = True
-
 Me.fontComboBox2.AutoCompleteCustomSource.AddRange(New String() {"Calibri", "Cambria", "Candara"}) 
-
 Me.fontComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-
 Me.fontComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img585.jpeg)
-
 
 {% seealso %}
 
