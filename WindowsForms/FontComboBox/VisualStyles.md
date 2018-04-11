@@ -26,52 +26,40 @@ Office2007ColorScheme</td><td>
 Specifies the office color schemes for Office2007 style. The color schemes are,Blue,Silver and Black.</td></tr>
 </table>
 
-{%highlight c#%}
-
+{% tabs %}
+{% highlight c# %}
 
 this.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2016Colorful;
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyles.Office2016Colorful
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img582.jpeg) 
-
-
 
 ## Custom Colors
 
 We can also apply custom colors to the FontComboBox control by setting Office2007ColorTheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(this, Color.Orchid);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.fontComboBox2.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 
-{%endhighlight%}
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img587.jpeg) 
-

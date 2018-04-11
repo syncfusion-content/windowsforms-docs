@@ -7,11 +7,9 @@ control: Editors Package
 documentation: ug
 ---
 
-
 # DropDown Settings
 
 FontComboBox has properties to control the appearance and behavior of the dropdown.
-
 
 <table>
 <tr>
@@ -41,51 +39,42 @@ MaxDropDownItems</td><td>
 Indicates the maximum number of entries to display in the drop down list.</td></tr>
 </table>
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.fontComboBox2.DropDownHeight = 107;
-
 this.fontComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-
 this.fontComboBox2.DropDownWidth = 154;
-
 this.fontComboBox2.MaxDropDownItems = 10;
 
-{%endhighlight%}
+{% endhighlight %}
 
+{% highlight vb %}
 
-{%highlight vbnet%}
 Me.fontComboBox2.DropDownHeight = 107
-
 Me.fontComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-
 Me.fontComboBox2.DropDownWidth = 154
-
 Me.fontComboBox2.MaxDropDownItems = 10
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ## Customizing DropDown Items
 
 The height of the FontComboBox items is specified in ItemHeight property and sorting of the items is enabled through Sorted property.
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.fontComboBox2.ItemHeight = 17;
-
 this.fontComboBox2.Sorted = true;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight vb %}
 
 Me.fontComboBox2.ItemHeight = 17
-
 Me.fontComboBox2.Sorted = True
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}

@@ -10,7 +10,6 @@ documentation: ug
 
 The text for the DomainUpDownExt control can be specified in String Collection Editor. This section discusses the properties which deals with this text.
 
-
 <table>
 <tr>
 <th>
@@ -30,34 +29,22 @@ MaxLength</td><td>
 Indicates the maximum length of the text that can be entered into the editable portion of the control. Default value is 32767.</td></tr>
 </table>
 
-
-
-
+{% tabs %}
 {% highlight c# %}
 
 this.domainUpDownExt2.Items.Add("Six");
-
 this.domainUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-
 this.domainUpDownExt2.MaxLength = 32768;
-
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
-
-
-
-
+{% highlight vb %}
 
 Me.domainUpDownExt2.Items.Add("Six")
-
 Me.domainUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-
 Me.domainUpDownExt2.MaxLength = 32768
 
-
 {% endhighlight %}
+{% endtabs %}
 
 ![](DomainUpdownExt_images/Overview_img423.png) 
-
