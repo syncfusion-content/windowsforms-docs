@@ -45,7 +45,7 @@ DrawActiveWhenDisabled</td><td>
 Specifies if the text should be drawn active, even when disabled.</td></tr>
 </table>
 
-{% tabs % }
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -148,8 +148,7 @@ this.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeL
 
 {% endhighlight %}
 
-
-{% highlight vb %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeLiterals
 
@@ -191,7 +190,7 @@ this.maskedEditBox1.ShowOverflowIndicator = true;
 
 this.maskedEditBox1.ShowOverflowIndicatorToolTip = true;
 
- {% endhighlight %}
+{% endhighlight %}
 
 {% highlight VB %} 
 
