@@ -44,7 +44,7 @@ this.diagram1.HScroll = true;
 this.diagram1.VScroll = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.HScroll = True
 Me.diagram1.VScroll = True
@@ -103,7 +103,7 @@ this.diagram1.SmoothMouseWheelScrolling = false;
 this.diagram1.HScrollBar.SmallChange = 200;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.EnableIntelliMouse = True
 Me.diagram1.ScrollGranularity = .9F
@@ -131,7 +131,7 @@ Diagram has ScrollVirtualBounds property, which determines the bounds of the scr
 	this.diagram1.ScrollVirtualBounds = new RectangleF(0, 0, 0, 0);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 	Me.diagram1.ScrollVirtualBounds = New RectangleF(0, 0, 0, 0)
 
@@ -178,7 +178,7 @@ this.diagram1.AccelerateScrolling = Syncfusion.Windows.Forms.AccelerateScrolling
 this.diagram1.AllowIncreaseSmallChange = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.AccelerateScrolling = Syncfusion.Windows.Forms.AccelerateScrollingBehavior.Fast
 Me.diagram1.AllowIncreaseSmallChange = True
@@ -218,7 +218,7 @@ this.diagram1.HorizontalThumbTrack = true;
 this.diagram1.VerticalThumbTrack = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.HorizontalThumbTrack = True
 Me.diagram1.VerticalThumbTrack = True
@@ -267,7 +267,7 @@ Programmatically these properties can be set as follows.
 	this.diagram1.ScrollTipFormat = "Offset{0}";
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 	Me.diagram1.HorizontalScrollTips = True
 	Me.diagram1.VerticalScrollTips = True
@@ -303,7 +303,7 @@ Programmatically these properties can be set as follows.
 	this.diagram1.FillSplitterPane = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 	Me.diagram1.FillSplitterPane = True
 

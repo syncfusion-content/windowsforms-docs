@@ -52,7 +52,7 @@ The following code illustrates how to enable the default context menu:
 //show default context menu
 diagram1.DefaultContextMenuEnabled = true;
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'show default context menu
 diagram1.DefaultContextMenuEnabled = True
@@ -72,7 +72,7 @@ The following code illustrates how to disable the default context menu:
 diagram1.DefaultContextMenuEnabled = false;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'hide default context menu
 diagram1.DefaultContextMenuEnabled = False

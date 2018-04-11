@@ -321,7 +321,7 @@ node.Labels.Add(lbl_Custom);
 diagram1.Model.AppendChild(node);  
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim node As New RoundRect(0, 0, 170, 100,MeasureUnits.Pixel)
 
@@ -404,7 +404,7 @@ label.Orientation = LabelOrientation.Horizontal;
 node.Labels.Add(label);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim label As New Syncfusion.Windows.Forms.Diagram.Label(node, "Orientation")
 
