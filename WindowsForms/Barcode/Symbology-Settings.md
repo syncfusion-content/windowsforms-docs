@@ -11,41 +11,70 @@ documentation: ug
 
 Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a code39 Barcode.
 
+{% tabs %}
 {% highlight c# %}
 
-            Code39Setting code39Settings = new Code39Setting();
-            code39Settings.BarHeight = 100;
-            this.sfBarcode1.SymbologySettings = code39Settings;
+Code39Setting code39Settings = new Code39Setting();
+code39Settings.BarHeight = 100;
+this.sfBarcode1.SymbologySettings = code39Settings;
 
 {% endhighlight  %}
+{% highlight VB %}
+
+Dim code39Settings As New Code39Setting()
+code39Settings.BarHeight = 100
+sfBarcode1.SymbologySettings = code39Settings
+
+{% endhighlight  %}
+{% endtabs %}
 
 ## 1D Barcode settings
 
 The one dimensional barcodes have some of the settings in common, such as BarHeight which modifies the height of the bars and NarrowBarWidth which modifies the width ratio of the wide and narrow bars.
 
+{% tabs %}
 {% highlight c# %}
 
-            Code39Setting code39Settings = new Code39Setting();
-            code39Settings.BarHeight = 100;
-            code39Settings.NarrowBarWidth = 1;
-            this.sfBarcode1.SymbologySettings = code39Settings;
-
+Code39Setting code39Settings = new Code39Setting();
+code39Settings.BarHeight = 100;
+code39Settings.NarrowBarWidth = 1;
+this.sfBarcode1.SymbologySettings = code39Settings;
 
 {% endhighlight  %}
+{% highlight VB %}
+
+Dim code39Settings As New Code39Setting()
+code39Settings.BarHeight = 100
+code39Settings.NarrowBarWidth = 1
+sfBarcode1.SymbologySettings = code39Settings
+
+{% endhighlight  %}
+{% endtabs %}
 
 The one dimensional barcodes also has the error detection settings. The EnableCheckDigit property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the ShowCheckDigit property.
 
 The EncodeStartStopSymbols property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
 
+{% tabs %}
 {% highlight c# %}
 
-            Code39Setting code39Settings = new Code39Setting();
-            code39Settings.EnableCheckDigit = false;
-            code39Settings.ShowCheckDigit = false;
-            code39Settings.EncodeStartStopSymbols = true;
-            this.sfBarcode1.SymbologySettings = code39Settings;
+Code39Setting code39Settings = new Code39Setting();
+code39Settings.EnableCheckDigit = false;
+code39Settings.ShowCheckDigit = false;
+code39Settings.EncodeStartStopSymbols = true;
+this.sfBarcode1.SymbologySettings = code39Settings;
 
 {% endhighlight %}
+{% highlight VB %}
+
+Dim code39Settings As New Code39Setting()
+code39Settings.EnableCheckDigit = false
+code39Settings.ShowCheckDigit = false
+code39Settings.EncodeStartStopSymbols = true
+sfBarcode1.SymbologySettings = code39Settings
+
+{% endhighlight %}
+{% endtabs %}
 
 ## 2D Barcode Settings
 
@@ -55,15 +84,26 @@ The two dimensional barcodes have a common XDimension property which modifies th
 
 The DataMatrix barcode settings has the properties to modify the encoding and size of the DataMatrix barcode.
 
+{% tabs %}
 {% highlight c# %}
 
-            DataMatrixSetting datamatrixSettings = new DataMatrixSetting();
-            datamatrixSettings.XDimension = 8;
-            datamatrixSettings.Encoding = DataMatrixEncoding.ASCII;
-            datamatrixSettings.Size = DataMatrixSize.Size10x10;
-            this.sfBarcode1.SymbologySettings = datamatrixSettings;
+DataMatrixSetting datamatrixSettings = new DataMatrixSetting();
+datamatrixSettings.XDimension = 8;
+datamatrixSettings.Encoding = DataMatrixEncoding.ASCII;
+datamatrixSettings.Size = DataMatrixSize.Size10x10;
+this.sfBarcode1.SymbologySettings = datamatrixSettings;
 
 {% endhighlight  %}
+{% highlight VB %}
+
+Dim datamatrixSettings As New DataMatrixSetting()
+datamatrixSettings.XDimension = 8
+datamatrixSettings.Encoding = DataMatrixEncoding.ASCII
+datamatrixSettings.Size = DataMatrixSize.Size10x10
+sfBarcode1.SymbologySettings = datamatrixSettings
+
+{% endhighlight  %}
+{% endtabs %}
 
 ### Encoding
 
@@ -216,16 +256,28 @@ Rectangular matrix with 16 rows and 48 columns.</td></tr>
 
 The QRBarcode settings has properties to modify the version, error correction level and Input mode of the QRBarcode.
 
+{% tabs %}
 {% highlight c# %}
 
-            QRBarcodeSetting qrSettings = new QRBarcodeSetting();
-            qrSettings.XDimension = 8;
-            qrSettings.ErrorCorrectionLevel = ErrorCorrectionLevel.High;
-            qrSettings.InputMode = QRInputMode.BinaryMode;
-            qrSettings.Version = QRBarcodeVersion.Version04;
-            this.sfBarcode1.SymbologySettings = qrSettings;
+QRBarcodeSetting qrSettings = new QRBarcodeSetting();
+qrSettings.XDimension = 8;
+qrSettings.ErrorCorrectionLevel = ErrorCorrectionLevel.High;
+qrSettings.InputMode = QRInputMode.BinaryMode;
+qrSettings.Version = QRBarcodeVersion.Version04;
+this.sfBarcode1.SymbologySettings = qrSettings;
 
 {% endhighlight  %}
+{% highlight VB %}
+
+Dim qrSettings As New QRBarcodeSetting()
+qrSettings.XDimension = 8
+qrSettings.ErrorCorrectionLevel = ErrorCorrectionLevel.High
+qrSettings.InputMode = QRInputMode.BinaryMode
+qrSettings.Version = QRBarcodeVersion.Version04
+sfBarcode1.SymbologySettings = qrSettings
+
+{% endhighlight  %}
+{% endtabs %}
 
 
 ## Version

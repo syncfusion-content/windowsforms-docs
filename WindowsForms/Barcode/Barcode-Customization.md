@@ -11,13 +11,20 @@ documentation: ug
 
 The color of the barcode can be customized by modifying the DarkBarBrush and LightBarBrush properties of the barcode control. 
 
+{% tabs %}
 {% highlight c# %}
 
 this.sfBarcode1.DarkBarColor = System.Drawing.Color.FromArgb(255, 0, 0);
 this.sfBarcode1.LightBarColor = System.Drawing.Color.FromArgb(255, 0, 0);
 
 {% endhighlight  %}
+{% highlight VB %}
 
+Me.SfBarcode1.DarkBarColor = System.Drawing.Color.FromArgb(255, 0, 0)
+Me.SfBarcode1.LightBarColor = System.Drawing.Color.FromArgb(255, 0, 0)
+
+{% endhighlight  %}
+{% endtabs %}
 
 The DarkBarBrush represents the color of the dark bar (Black color usually) and the LightBarBrush represents the color of the gap between two adjacent black bars (White color usually).
 
