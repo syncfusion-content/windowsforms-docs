@@ -3,14 +3,15 @@ layout: post
 title: Load-a-specific-page | Windows Forms | Syncfusion
 description: load a specific page?
 platform: windowsforms
-control: PDF Viewer
+control: PdfViewerControl
 documentation: ug
 ---
 
-## Load a specific page?
+## Navigating to a specific page
 
 Navigation to a specific page, through code, is possible using GoToPageAtIndex method.
 
+{% tabs %}
 {%highlight c#%}
 
 pdfViewer1.GoToPageAtIndex(2);
@@ -23,4 +24,5 @@ pdfViewer1.GoToPageAtIndex(2);
 pdfViewer1.GoToPageAtIndex(2)
 
 {%endhighlight%}
+{% endtabs %}
 

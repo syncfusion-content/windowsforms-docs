@@ -3,359 +3,18 @@ layout: post
 title: Getting-Started | Windows Forms | Syncfusion
 description: getting started
 platform: windowsforms
-control: PDF Viewer
+control: PdfViewerControl
 documentation: ug
 ---
 
 # Getting Started
 
-## Feature Summary
+## Adding PdfViewerControl to an Application
 
-Supported features include:
-
-* Support for viewing and printing PDF files.
-* Support for various PDF objects such as text, lines, curves, color spaces, and JPEG images with DCTDecode, CCITTFaxDecode, and FlateDecode filters.
-* Support for exporting PDF pages as raster images.
-
-Supported and non-supported elements of Essential PDF Viewer for Windows Forms, WPF and ASP.NET MVC are listed in the following table.
+### Adding in designer
 
 
-
-<table>
-<tr>
-<th>
-{{ '**Features**' | markdownify }}</th><th>
-{{ '**Windows**' | markdownify }}</th><th>
-{{ '**WPF**' | markdownify }}</th><th>
-{{ '**ASP.NET MVC**' | markdownify }}</th></tr>
-<tr>
-<td>
-Text</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Graphical Elements (Line, Curve etc.)</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td colspan = "4">
-{{ '**Image Formats**' | markdownify }}</td></tr>
-<tr>
-<td>
-JPEG</td><td>
-Yes </td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-PNG</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-TIFF</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Inline Images</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td colspan = "4">
-{{ '**Encoding Techniques**' | markdownify }}</td></tr>
-<tr>
-<td>
-Soft mask</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Image mask</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td colspan = "4">
-{{ '**Fonts**' | markdownify }}</td></tr>
-<tr>
-<td>
-Standard Fonts</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-TrueType Fonts****</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Type 0, Type 1,Type 3</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Embedded Fonts</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td colspan = "4">
-{{ '**Color Space**' | markdownify }}</td></tr>
-<tr>
-<td>
-RGB</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-CMYK</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Gray</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-ICC</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Indexed </td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-CalRGB* </td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-CalGray*</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Lab*</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Separation* </td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-DeviceN*</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Pattern*</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td colspan = "4">
-{{ '**Compression Filters**' | markdownify }}</td></tr>
-<tr>
-<td>
-DCTDecode (Image, Content)</td><td>
-Yes </td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-CCITTFaxDecode (Image)</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-FlateDecode (Image, Content)</td><td>
-Yes </td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-LZWDecode (Content only)</td><td>
-Yes </td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-ASCII85Decode (Content only)</td><td>
-Yes </td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-ASCIIHexDecode (Image)</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-JBIG2Decode (Image)</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td colspan = "4">
-{{ '**Interactive Features**' | markdownify }}</td></tr>
-<tr>
-<td>
-Actions</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td>
-Annotations</td><td>
-Yes**</td><td>
-Yes**</td><td>
-No</td></tr>
-<tr>
-<td>
-Attachments</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td>
-Bookmarks</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td>
-Form</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td>
-Page Navigation</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Zoom</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Navigation Pane</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td>
-Selection (Keyboard & Mouse)</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td>
-Search</td><td>
-Yes</td><td>
-Yes</td><td>
-No</td></tr>
-<tr>
-<td>
-Document Information</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td>
-Conformance</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Encrypted Documents</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Edit</td><td>
-No</td><td>
-No</td><td>
-No</td></tr>
-<tr>
-<td>
-Touch Support</td><td>
-No</td><td>
-Yes***</td><td>
-No</td></tr>
-<tr>
-<td colspan = "4">
-{{ '**Print**' | markdownify }}</td></tr>
-<tr>
-<td>
-Silent Printing</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td>
-Send to Printer</td><td>
-Yes</td><td>
-Yes</td><td>
-Yes</td></tr>
-<tr>
-<td colspan = "4">
-{{ '**Export**' | markdownify }}</td></tr>
-<tr>
-<td>
-Image </td><td>
-Yes (raster and vector formats)</td><td>
-Yes (raster format only)</td><td>
-No</td></tr>
-</table>
-*Supports only Brushes (text and shapes).
-
-**Supports only URI annotation.
-
-***Supported in 4.0 and higher Framework.
-
-*\*\*\*When the document contains texts that uses TrueType System Fonts to be rendered, then the content in the PDF document is rendered using the font installed in the system/machine in the PDF Viewer control. If the required font is not installed in the system, then the contents would be rendered using **Arial** font.
-
-## Adding PDF Viewer to an Application
-
-To add a PDF Viewer control to your application:
-
-
-
-1. Open your form in the designer. Add the Syncfusion controls to yourVS.NET toolbox if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
+1. Open your form in the designer. Add the Syncfusion controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
    
    ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -363,63 +22,101 @@ To add a PDF Viewer control to your application:
 
 
 
-2. Drag a PDF Viewer control onto the form.
+2. Drag the PdfViewerControl from the toolbox onto the form.
 
 
 
-   Appearance and behavior-related aspects of the PDF Viewer can be controlled by setting the appropriate properties through the properties grid. 
+   Appearance and behavior-related aspects of the PdfViewerControl can be controlled by setting the appropriate properties through the properties grid. 
 
    ![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-3. Add Syncfusion.PdfViewer.Windows namespace.
    
-   ~~~ cs
-	   using Syncfusion.PdfViewer.Windows;
-	   
-	   //Initializing the PDF Viewer
-	   PdfViewer viewer = new PdfViewer();
-	   
-	   //Loading the document in the PDF Viewer
-	   viewer.Load(@"c:/documents/myPDF.pdf");
-   ~~~
-   {:.prettyprint}
-   
-   ~~~ vbnet
-   
-	   Imports Syncfusion.PdfViewer.Windows
-	  
-	  'Initializing the PDF viewer
-	   Dim viewer As PdfViewer = New PdfViewer()
-	   
-	   'Loading the document in the PDF viewer
-	   viewer.Load("c:/documents/myPDF.pdf")
-   ~~~
-   {:.prettyprint}
+
+3. This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the code snippet below. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Loading the document in the PdfViewerControl
+pdfViewerControl1.Load(@"c:/documents/myPDF.pdf");
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+'Loading the document in the PdfViewerControl
+pdfViewerControl1.Load("c:/documents/myPDF.pdf")
+
+{% endhighlight %}
+{% endtabs %}
+	
+###Adding manually in code
+
+1. Add Syncfusion.PdfViewer.Windows namespace.
+
+{% tabs %}
+{% highlight c# %}
+
+using Syncfusion.PdfViewer.Windows;
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+Imports Syncfusion.PdfViewer.Windows
+
+{% endhighlight %}
+{% endtabs %}
+		
+		
+2. Create PdfViewerControl instance and load the PDF
+
+{% tabs %}
+{% highlight c# %}
+
+//Initializing the PdfViewerControl
+PdfViewer viewer = new PdfViewer();
+
+//Loading the document in the PdfViewerControl
+viewer.Load(@"c:/documents/myPDF.pdf");
+
+//Add PdfViewerControl to the Form
+Controls.Add(viewer);
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+'Initializing the PdfViewerControl
+Dim viewer As PdfViewer = New PdfViewer()
+
+'Loading the document in the PdfViewerControl
+viewer.Load("c:/documents/myPDF.pdf")
+
+'Add PdfViewerControl to the Form
+Controls.Add(viewer)
+
+{% endhighlight %}
+{% endtabs %}
    
    Refer to [Viewing PDF files](/windowsforms/pdfviewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
 
 ## Appearance and Structure of the Control
 
-The following screenshot is a pictorial representation of PDF Viewer. 
+The following screenshot depicts different sections of the PdfViewerControl.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-### ToolStrip
+### Toolbar
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-1. File Open Dialog
+1. Open file
 2. Bookmark 
 3. Save document
-4. Show Print Dialog
+4. Print PDF
 5. Go to first page
 6. Go to previous page
-7. Page Indicator
+7. Page indicator
 8. Go to next page
 9. Go to last page
 10. Preset magnification

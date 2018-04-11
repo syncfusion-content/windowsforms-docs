@@ -3,13 +3,13 @@ layout: post
 title: Working-with-PDF-Viewer | Windows Forms | Syncfusion
 description: working with pdf viewer
 platform: windowsforms
-control: PDF Viewer
+control: PdfViewerControl
 documentation: ug
 ---
 
-# Working with PDF Viewer
+# Working with PdfViewerControl
 
-Essential PDF Viewer can display PDF files, and print and export the pages as raster images. All this can be done within a .NET application.
+Essential PdfViewerControl can display and print PDF files and export the pages as raster images.
 
 ## Properties, Methods, and Events Tables
 
@@ -31,7 +31,7 @@ bool</td></tr>
 <tr>
 <td>
 PageCount </td><td>
-Returns the number of pages as viewed in the PDF Viewer.</td><td>
+Returns the number of pages as viewed in the PdfViewerControl.</td><td>
 N/A</td><td>
 Integer</td></tr>
 <tr>
@@ -134,11 +134,12 @@ N/A</td></tr>
 
 ## Viewing PDF Files 
 
-A PDF can be loaded into the PDF Viewer either through the File Open dialog available in the toolbar or through the Load method. It also requests passwords to open encrypted documents.
+A PDF can be loaded into the PdfViewerControl either through the open file button available in the toolbar or through the Load method. It also requests passwords to open encrypted documents.
 
+{% tabs %}
 {%highlight c#%}
 
-//Initialize PDF Viewer.
+//Initialize PdfViewerControl.
 
 PdfViewerControl pdfViewer1 = new PdfViewerControl();
 
@@ -151,7 +152,7 @@ pdfViewer1.Load("Template.pdf");
 
 {%highlight vbnet%}
 
-'Initialize PDF Viewer.
+'Initialize PdfViewerControl.
 
 Private pdfViewer1 As New PdfViewerControl()
 
@@ -160,12 +161,14 @@ Private pdfViewer1 As New PdfViewerControl()
 pdfViewer1.Load("Template.pdf")
 
 {%endhighlight%}
+{% endtabs %}
 
 You can load an encrypted document by using the overload in the Load method.
 
+{% tabs %}
 {%highlight c#%}
 
-//Initialize PDF Viewer.
+//Initialize PdfViewerControl.
 
 PdfViewerControl pdfViewer1 = new PdfViewerControl();
 
@@ -177,7 +180,7 @@ pdfViewer1.Load("Template.pdf", "password");
 
 {%highlight vbnet%}
 
-'Initialize PDF Viewer.
+'Initialize PdfViewerControl.
 
 Private pdfViewer1 As New PdfViewerControl()
 
@@ -186,10 +189,11 @@ Private pdfViewer1 As New PdfViewerControl()
 pdfViewer1.Load("Template.pdf", "password")
 
 {%endhighlight%}
+{% endtabs %}
 
 ## Printing PDF Files 
 
-PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon triggering the Print button.
+PdfViewerControl allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon triggering the Print button.
 
 ![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
 
@@ -225,7 +229,7 @@ dialog.Document.Print()
 
 ## Customizing print size
 
-PDF viewer printer settings allows scaling PDF pages to shrink or enlarge while printing.
+PdfViewerControl printer settings allows scaling PDF pages to shrink or enlarge while printing.
 
 ### Actual Size
 
@@ -303,7 +307,7 @@ pdfviewer1.PrinterSettings.ScalePercentage = 120
 
 ## Printing PDF document with orientation settings
 
-PDF Viewer printer settings allows the user to print the document with a custom orientation.
+PdfViewerControl printer settings allows the user to print the document with a custom orientation.
 
 ### Auto Portrait/Landscape
 
@@ -373,10 +377,11 @@ pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape
 
 ## Exporting PDF
 
-### Exporting pages of PDF document as Raster Images
+### Exporting pages of PDF document as raster images
 
-Essential PDF Viewer allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
+Essential PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
 
+{% tabs %}
 {%highlight c#%}
 
 
@@ -397,9 +402,11 @@ Dim image As Bitmap = pdfViewer1.ExportAsImage(0)
 image.Save("Sample.png", ImageFormat.Png)
 
 {%endhighlight%}
+{% endtabs %}
 
 You can also specify the page range instead of converting each page.
 
+{% tabs %}
 {%highlight c#%}
 
 Bitmap[] image = pdfViewer1.ExportAsImage(0, 3);
@@ -415,7 +422,11 @@ Exporting pages of PDF document as Vector Images
 Exporting pages of PDF document as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
 
 {%endhighlight%}
+{% endtabs %}
 
+### Exporting pages of PDF document as meta files
+
+{% tabs %}
 {%highlight c#%}
 
 Metafile image = pdfViewer1.ExportAsMetafile(0);
@@ -435,9 +446,11 @@ Dim image As Metafile = pdfViewer1.ExportAsMetafile(0)
 image.Save("Sample.emf", ImageFormat.Emf)
 
 {%endhighlight%}
+{% endtabs %}
 
 You can also specify the page range instead of converting each page individually.
 
+{% tabs %}
 {%highlight c#%}
 
 Metafile[] image = pdfViewer1.ExportAsMetafile(0, 3);
@@ -449,15 +462,17 @@ Metafile[] image = pdfViewer1.ExportAsMetafile(0, 3);
 Dim image() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
 {%endhighlight%}
+{% endtabs %}
 
 ## Text Search
 
-Essential PDF Viewer allows end users to search and highlight the text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
+Essential PdfViewerControl allows end users to search and highlight the text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
 
 ![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
 
-The PDF Viewer control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the PDF Viewer control.
+The PdfViewerControl control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the PdfViewerControl control.
 
+{% tabs %}
 {%highlight c#%}
 
 bool IsMatchFound;
@@ -487,8 +502,9 @@ Dim textSearch As New Dictionary(Of Integer, List(Of RectangleF))()
 IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 
 {%endhighlight%}
+{% endtabs %}
 
-## Annotation
+## Annotations
  
-Essential PDF Viewer provides support for URI annotations in the PDF document, which enables the URI available in the PDF document to be opened in the browser just by clicking it. This also supports a few events which are listed in the previous table.
+Essential PdfViewerControl provides support for URI annotations in the PDF document, which enables the URI available in the PDF document to be opened in the browser just by clicking it. This also supports a few events which are listed in the events table.
 
