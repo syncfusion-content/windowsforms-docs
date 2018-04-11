@@ -35,6 +35,7 @@ The primary function of the GroupBar is to serve as a container for a group of f
 * Provides Flat look and feel of the GroupBar.
 * Provides Localization support.
 * Link Selection Support:
+
 You can either have a single selected link or several selected links in each individual GroupBar Item.
 * Text Settings:
 Provides options to align the text of the GroupBar Items to the Left , Right, or Center. GroupBar control provides options for renaming the GroupBar Items at run-time. This is described as the In place Renaming feature of the GroupBar control.
