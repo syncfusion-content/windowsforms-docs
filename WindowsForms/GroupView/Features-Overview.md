@@ -6,7 +6,7 @@ platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Features Overview
+# Features overview
 
 This section discusses the feature list of GroupView.
 
@@ -16,11 +16,11 @@ This section discusses the feature list of GroupView.
     
 	Flat look can be enabled for the control. The border style of the control can be customized.
 
-    Drag-and-drop settings provides options to drag-and-drop GroupView Items. Spacing can be provided between the Items, and the GroupView control and Items. 
+    Drag-and-drop settings provides options to drag-and-drop GroupView Items. Spacing can be provided between the Items, and the GroupView control and Items.
 
     Integrated Scrolling is supported.
 
-    Allows the user to clone Microsoft OutlookBar and Microsoft VS.NET toolbox window. 
+    Allows the user to clone Microsoft OutlookBar and Microsoft VS.NET toolbox window.
 	
  * Text Settings
 
@@ -30,7 +30,7 @@ This section discusses the feature list of GroupView.
 
  * Color Settings
 
-    Colors can be applied to highlight the GroupView Items and text. 
+    Colors can be applied to highlight the GroupView Items and text.
 
  * Image Settings
 
@@ -44,7 +44,7 @@ This section discusses the feature list of GroupView.
 
  * ToolTip Support
 
-    ToolTips can be enabled for individual GroupView Items.                                         
+    ToolTips can be enabled for individual GroupView Items.
 
  * Built-in Context Menu
 
@@ -52,4 +52,4 @@ This section discusses the feature list of GroupView.
 
  * Themes Support
 
-    Using the ThemesEnabled property, themed appearance can be provided for the GroupView control. 
+    Using the ThemesEnabled property, themed appearance can be provided for the GroupView control.

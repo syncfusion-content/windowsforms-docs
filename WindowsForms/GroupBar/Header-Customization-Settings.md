@@ -6,9 +6,9 @@ platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Header Customization Settings
+# Header customization settings
 
-## Header Height and Font Settings
+## Header height and font settings
 
 The following properties can be used to change the height and font of the header of the GroupBar Items.
 
@@ -16,7 +16,7 @@ The following properties can be used to change the height and font of the header
 <table>
 <tr>
 <th>
-GroupBar Property</th><th>
+GroupBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -28,8 +28,9 @@ Font</td><td>
 Specifies the font of the text displayed in the GroupBar header.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 this.groupBar1.GroupBarItemHeight = 30;
 
@@ -39,7 +40,7 @@ this.groupBar1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.Font
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBar1.GroupBarItemHeight = 30 
 
@@ -47,7 +48,7 @@ Me.groupBar1.Font = New System.Drawing.Font("Verdana", 9F, System.Drawing.FontSt
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Overview_images/Overview_img29.jpeg) 
 
@@ -57,7 +58,7 @@ Me.groupBar1.Font = New System.Drawing.Font("Verdana", 9F, System.Drawing.FontSt
 
 
 
-## Header BackColor and ForeColor Settings
+## Header BackColor and ForeColor settings
 
 Different colors can be applied to the header and header text of the GroupBar Items. This can be done using the below given properties.
 
@@ -66,7 +67,7 @@ Different colors can be applied to the header and header text of the GroupBar It
 <table>
 <tr>
 <th>
-GroupBar Property</th><th>
+GroupBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -78,6 +79,7 @@ HeaderForeColor</td><td>
 Specifies the Foreground color for the GroupBar Item.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -88,13 +90,15 @@ this.groupBar1.HeaderForeColor = System.Drawing.Color.Silver;
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.groupBar1.HeaderBackColor = System.Drawing.Color.Red
 
 Me.groupBar1.HeaderForeColor = System.Drawing.Color.Maroon
 
 {% endhighlight %}
+
+{% endtabs %}
 
  ![](Overview_images/Overview_img31.jpeg)
  

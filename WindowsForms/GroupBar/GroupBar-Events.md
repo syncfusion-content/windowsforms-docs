@@ -6,7 +6,7 @@ platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# GroupBar Events
+# GroupBar events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -15,7 +15,7 @@ The list of events and a detailed explanation about each of them is given in the
 <table>
 <tr>
 <th>
-GroupBar Events</th><th>
+GroupBar events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -52,13 +52,15 @@ This event occurs when a GroupBar Item is about to be drawn.</td></tr>
 </table>
 
 
-## GroupBarItemAdded Event
+## GroupBarItemAdded event
 
 This event is handled after a GroupBar Item is added to the GroupBar Items Collection. It is handled to create client controls when new GroupBar Items are added at runtime.
 
 The event handler of this event receives an argument of type GroupBarItemEventArgs.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // The GroupBarItemAdded event occurs when a GroupBar Item is added to the GroupBar Items Collection.
 
@@ -76,7 +78,7 @@ this.listView1.Items.Add(listViewItem1);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 // The GroupBarItemAdded event occurs when a GroupBar Item is added to the GroupBar Items Collection.
 
@@ -89,16 +91,19 @@ Me.listView1.Items.Add(listViewItem1)
 End Sub
 
 {% endhighlight %}
+		
+{% endtabs %}
 
 
-## GroupBarItemRemoved Event
+## GroupBarItemRemoved event
 
-This event is handled after a GroupBar Item is removed from the GroupBar Items Collection. It is handled to dispose client 
-controls when GroupBar Items are removed at runtime.
+This event is handled after a GroupBar Item is removed from the GroupBar Items Collection. It is handled to dispose client controls when GroupBar Items are removed at runtime.
 
 The event handler of this event receives an argument of type GroupBarItemEventArgs.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // The GroupBarItemRemoved event occurs when a GroupBar Item is removed from the GroupBar Items Collection.
 
@@ -115,7 +120,7 @@ this.listView1.Items.Add(listViewItem1);
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 // The GroupBarItemRemoved event occurs when a GroupBar Item is removed from the GroupBar Items Collection.
 
@@ -129,14 +134,17 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## GroupBarItemRenamed Event
+## GroupBarItemRenamed event
 
 This event is handled after a GroupBar Item is renamed by an in-place edit operation. It is handled when a GroupBar Item is renamed at runtime.
 
 The event handler of this event receives an argument of type GroupItemRenamedEventArgs.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // The GroupBarItemRenamed event occurs when a GroupBar Item is renamed by an in-place edit operation.
 
@@ -153,7 +161,7 @@ this.listView1.Items.Add(listViewItem1);
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 // The GroupBarItemRenamed event occurs when a GroupBar Item is renamed by an inplace edit operation.
 
@@ -167,15 +175,17 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## GroupBarItemSelectionChanging Event
+## GroupBarItemSelectionChanging event
 
-This event occurs when a GroupBar Item is selected in the GroupBar control. It is handled when a GroupBar Item is selected at 
-runtime.
+This event occurs when a GroupBar Item is selected in the GroupBar control. It is handled when a GroupBar Item is selected at runtime.
 
 The event handler of this event receives an argument of type GroupItemSelectionChangingEventArgs.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // The GroupBarItemSelected event occurs when a GroupBar Item is selected in the GroupBar control. 
 
@@ -191,7 +201,7 @@ this.listView1.Items.Add(listViewItem1);
 
 {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 
 
@@ -207,14 +217,17 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## GroupBarItemSelected Event
+## GroupBarItemSelected event
 
-It occurs when a GroupBar Item of the GroupBar control is selected. Accessing the GroupBar.SelectedItem property from within the GroupBarItemSelected event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked. 
+It occurs when a GroupBar Item of the GroupBar control is selected. Accessing the GroupBar.SelectedItem property from within the GroupBarItemSelected event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked.
 
 The event handler of this event receives an argument of type EventArgs.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // Provide a handler for the GroupBar.GroupBarItemSelected event.
 
@@ -236,7 +249,7 @@ Trace.WriteLine(String.Concat("Selected Item = ", this.groupBar1.GroupBarItems[t
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 ' Provide a handler for the GroupBar.GroupBarItemSelected event.
 
@@ -254,14 +267,17 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## ShowContextMenu Event
+## ShowContextMenu event
 
 It occurs on right-clicking the mouse button over the GroupBar control. It is handled when the mouse is right-clicked over the GroupBar control at runtime.
 
 The event handler receives an argument of type EventArgs.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 private void groupBar1_ShowContextMenu(object sender, EventArgs e)
 
@@ -277,7 +293,7 @@ Console.Write(" ShowContextMenu Event is raised ");
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Private Sub groupBar1_ShowContextMenu(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -289,12 +305,11 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## NavigationPaneDropDownClick Event
+## NavigationPaneDropDownClick event
 
-It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the 
-Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to True. The event handler receives an argument of 
-type NavigationPaneDropDownClickEventArgs containing data related to this event.
+It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to True. The event handler receives an argument of type NavigationPaneDropDownClickEventArgs containing data related to this event.
 
 The following event property is associated with the NavigationPaneDropDownClickEventArgs.
 
@@ -311,8 +326,9 @@ ContextMenuProvider</td><td>
 Returns the menu provider object used by the GroupBar for creating it's context menu.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 private void groupBar1_NavigationPaneDropDownClick(object sender, NavigationPaneDropDownClickEventArgs e)
 
@@ -332,7 +348,7 @@ Console.Write("ContextMenuProvider :" + e.ContextMenuProvider.ToString());
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Private Sub groupBar1_NavigationPaneDropDownClick(ByVal sender As Object, ByVal e As NavigationPaneDropDownClickEventArgs)
 
@@ -348,9 +364,11 @@ End Sub
 
 {% endhighlight %}
 
-## ProvideGroupBarItemBrush Event
+{% endtabs %}
 
-It occurs when a GroupBar Item is about to be drawn. The event handler receives an argument of type ProvideGroupBarItemBrushEventArgs. 
+## ProvideGroupBarItemBrush event
+
+It occurs when a GroupBar Item is about to be drawn. The event handler receives an argument of type ProvideGroupBarItemBrushEventArgs.
 
 The event properties associated with the ProvideGroupBarItemBrushEventArgs are given below.
 
@@ -364,7 +382,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundBrush</td><td>
-Gets / sets the brush that will be used to draw the specified bounds.</td></tr>
+Gets/sets the brush that will be used to draw the specified bounds.</td></tr>
 <tr>
 <td>
 Bounds</td><td>
@@ -375,8 +393,9 @@ Item</td><td>
 Returns the index of the GroupBar Item being drawn.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 private void groupOutlook_ProvideGroupBarItemBrush (object sender, Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs args)
  
@@ -406,7 +425,7 @@ args.BackgroundBrush = brush;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Private Sub groupOutlook_ProvideGroupBarItemBrush(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs)
 
@@ -431,3 +450,5 @@ args.BackgroundBrush = brush
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

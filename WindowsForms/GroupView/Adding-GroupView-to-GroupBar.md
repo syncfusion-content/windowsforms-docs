@@ -8,7 +8,9 @@ documentation: ug
 ---
 # Adding GroupView to GroupBar
 
-GroupView controls can be created for each of the groups in the GroupBar and initialized with the appropriate set of property values that endow the control with the VS.NET toolbox list type of interface. The GroupView control can be added to the GroupBar by activating each GroupBar Item in turn and dropping the GroupView onto the GroupBar Item's client surface. This will add the GroupView control to the GroupBar Parent and associate it with the particular GroupBar Item. 
+GroupView controls can be created for each of the groups in the GroupBar and initialized with the appropriate set of property values that endow the control with the VS.NET toolbox list type of interface. The GroupView control can be added to the GroupBar by activating each GroupBar Item in turn and dropping the GroupView onto the GroupBar Item's client surface. This will add the GroupView control to the GroupBar Parent and associate it with the particular GroupBar Item.
+
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -44,11 +46,11 @@ this.groupViewItem3.Text = "CD Drive";
 
 this.groupViewItem3.Text = "Desktop";
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBar1 = New Syncfusion.Windows.Forms.Tools.GroupBar()
 
@@ -80,6 +82,7 @@ Me.groupViewItem3.Text = "Desktop"
 
 {% endhighlight %}
 
+{% endtabs %}
 
  ![](Overview_images/Overview_img87.jpeg) 
 

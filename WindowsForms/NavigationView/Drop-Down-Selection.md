@@ -7,21 +7,23 @@ control: Navigation View
 documentation: ug
 ---
 
-# Drop-Down Selection
+# Drop-down selection
 
 NavigationView control provides drop-down selection support.
 
 Each folder that is navigated through, is shown in the Address Bar, separated by a Forward Arrow. Clicking on this arrow, will show a drop-down list, displaying all the folders directly below the one you have opened.
 
-![](Drop-Down-Selection_images/Drop-Down-Selection_img1.jpeg) 
+![](Drop-Down-Selection_images/Drop-Down-Selection_img1.jpeg)
 
 
 
-## Images Support
+## Images support
 
 NavigationView control provides support for adding images to both Parent Bars and Child Bars. It displays the image of the Selected Bar to the left of the control.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -35,7 +37,7 @@ ChildBar2.ImageIndex = 1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -49,31 +51,27 @@ ChildBar2.ImageIndex = 1
 
 {% endhighlight %}
 
-The following illustration shows the NavigationView with Bar Images.
+{% endtabs %}
 
 ![](Drop-Down-Selection_images/Drop-Down-Selection_img2.jpeg) 
 
 
 
-## Tracking the Previously Selected Items using DropDown Button
+## Tracking the previously selected items using drop-down button
 
 You can trace the previously selected locations by clicking on the Drop-Down button of the NavigationView.
-
-The following illustration shows the NavigationView displaying Previously Selected Items.
 
 ![](Drop-Down-Selection_images/Drop-Down-Selection_img3.jpeg) 
 
 
 
-## Custom Button Collection
+## Custom button collection
 
-You can add one or more custom buttons to the NavigationView through designer and code. This is illustrated below.
+You can add one or more custom buttons to the NavigationView through designer and code.
 
 * Adding Custom Button Through Designer
 
   You can add custom buttons to the NavigationView using the CustomButton Collection Editor.
-
-  The following illustration shows the CustomButton Collection Editor.
 
   ![](Drop-Down-Selection_images/Drop-Down-Selection_img4.jpeg)
 
@@ -81,9 +79,9 @@ You can add one or more custom buttons to the NavigationView through designer an
 
 * Adding Custom Button Through Code
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -101,7 +99,7 @@ navigationView4.Controls.Add(customButton);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -119,7 +117,7 @@ navigationView4.Controls.Add(customButton)
 
 {% endhighlight %}
 
-The following illustration shows the NavigationView with Custom Button.
+{% endtabs %}
 
 ![](Drop-Down-Selection_images/Drop-Down-Selection_img5.jpeg) 
 

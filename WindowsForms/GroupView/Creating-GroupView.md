@@ -8,56 +8,59 @@ documentation: ug
 ---
 # Creating GroupView
 
-This section provides a step-by-step procedure to create a GroupView control through designer and through programmatic approach
-in a .NET application. 
+This section provides a step-by-step procedure to create a GroupView control through designer and through programmatic approach in a .NET application.
 
-## Through Designer
+## Through designer
 
 To create a GroupView control and add GroupView Items to it,
 
 1. Drag-and-drop a GroupView control from the VS.NET toolbox onto the form. This will create an instance of the GroupView control on the form.
 
-   ![](Overview_images/Overview_img51.jpeg) 
+   ![](Overview_images/Overview_img51.jpeg)
 
 
 2. In the Properties window, select the GroupViewItems property. The GroupViewItemCollectionEditor will be opened. Click Add, a GroupView Item will be added to the GroupView control.
 
    The text of the GroupView Items is also set using the Collection Editor.
 
-   ![](Overview_images/Overview_img52.jpeg) 
+   ![](Overview_images/Overview_img52.jpeg)
   
 
-   ![](Overview_images/Overview_img53.jpeg) 
+   ![](Overview_images/Overview_img53.jpeg)
  
 
-   ![](Overview_images/Overview_img54.jpeg) 
+   ![](Overview_images/Overview_img54.jpeg)
 
 
-## Through Code
+## Through code
 
-GroupView control can be created using the GroupView class. GroupView Items can be added to the GroupView control using the GroupView.GroupViewItems collection property. 
+GroupView control can be created using the GroupView class. GroupView Items can be added to the GroupView control using the GroupView.GroupViewItems collection property.
 
 1. Include the required namespace.
 
-   ~~~ cs
+    {% tabs %}
+
+	{% highlight C# %}
 
 		using Syncfusion.Windows.Forms.Tools;
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+	{% highlight VB %}
 
 
-
-   ~~~ vbnet
 
 		Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+	{% endtabs %}
 
 2. Create instances of the GroupView control and GroupView Items.
 
-   ~~~ cs
+    {% tabs %}
+
+	{% highlight C# %}
 
 		private Syncfusion.Windows.Forms.Tools.GroupView groupView1;
 
@@ -75,11 +78,9 @@ GroupView control can be created using the GroupView class. GroupView Items can 
 
 		this.groupViewItem3=new GroupViewItem();
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-
-   ~~~ vbnet
+	{% highlight VB %}
 
 		Private groupView1 As Syncfusion.Windows.Forms.Tools.GroupView
 
@@ -98,12 +99,15 @@ GroupView control can be created using the GroupView class. GroupView Items can 
 
 		Me.groupViewItem3 = New GroupViewItem()
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+	{% endtabs %}
 
 3. Add GroupView Items to the GroupView control and specify the size of the GroupView control. Finally add a GroupView control to the Form.
 
-   ~~~ cs
+    {% tabs %}
+
+	{% highlight C# %}
 
 
 		this.groupView2.GroupViewItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupViewItem[] {
@@ -118,12 +122,9 @@ GroupView control can be created using the GroupView class. GroupView Items can 
 
 		this.Controls.Add(this.groupView1);
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-
-
-   ~~~ vbnet
+	{% highlight VB %}
 
 		Me.groupView2.GroupViewItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupViewItem() {New Syncfusion.Windows.Forms.Tools.GroupViewItem("Windows Forms", 0, True, Nothing, "GroupViewItem0"), New Syncfusion.Windows.Forms.Tools.GroupViewItem("Components", 1, True, Nothing, "GroupViewItem1"), New Syncfusion.Windows.Forms.Tools.GroupViewItem("General", 2, True, Nothing, "GroupViewItem2")})
 
@@ -131,7 +132,8 @@ GroupView control can be created using the GroupView class. GroupView Items can 
 
 		Me.Controls.Add(Me.groupView1)
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+	{% endtabs %}
 
    ![](Overview_images/Overview_img55.jpeg) 
