@@ -6,12 +6,11 @@ platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# GroupView Settings
+# GroupView settings
 
-This section discusses the various settings that can be applied to define the look and behavior of the GroupView 
-control.
+This section discusses the various settings that can be applied to define the look and behavior of the GroupView control.
 
-## Appearance Settings
+## Appearance settings
 
 The following table describes the properties that enhance the appearance of the GroupView control.
 
@@ -19,7 +18,7 @@ The following table describes the properties that enhance the appearance of the 
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -28,12 +27,12 @@ Specifies whether the control is displayed with a flat look.</td></tr>
 <tr>
 <td>
 BorderStyle</td><td>
-Gets / sets the border style for the GroupView control. It includes the following options:* None,* FixedSingle and* Fixed3D.</td></tr>
+Gets/sets the border style for the GroupView control. It includes the following options:* None,* FixedSingle and* Fixed3D.</td></tr>
 </table>
 
+{% tabs %}
 
-
-{% highlight C# %}  
+{% highlight C# %}
 
 this.groupView1.FlatLook = true;
 
@@ -43,7 +42,7 @@ this.groupView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.groupView1.FlatLook = True
 
@@ -51,9 +50,11 @@ Me.groupView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
-The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook property to 'True'. 
+{% endtabs %}
 
-![](Overview_images/Overview_img56.jpeg) 
+The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook property to 'True'.
+
+![](Overview_images/Overview_img56.jpeg)
 
 
 We can specify the border style for the GroupView control using the BorderStyle property.
@@ -61,11 +62,11 @@ We can specify the border style for the GroupView control using the BorderStyle 
  ![](Overview_images/Overview_img57.jpeg) 
 
 
-## Behavior Settings 
+## Behavior settings
 
 This section discusses the properties that determine the behavior of the GroupView control.
 
-### Drag-and-Drop Effect
+### Drag-and-drop effect
 
 This explains the drag-and-drop settings supported by the GroupView control.
 
@@ -74,7 +75,7 @@ This explains the drag-and-drop settings supported by the GroupView control.
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -86,6 +87,7 @@ AllowDragAnyObject</td><td>
 Setting this property permits the user to drag any object inside the GroupView control, provided AllowDragDrop property is set to 'True'.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -96,13 +98,15 @@ this.groupView1.AllowDragAnyObject = true;
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.groupView1.AllowDragDrop = True
 
 Me.groupView1.AllowDragAnyObject = True
 
-{% endhighlight %} 
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Spacing
 
@@ -113,7 +117,7 @@ Spacing can be provided between the GroupView Items, and between the GroupView c
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -125,6 +129,7 @@ ItemYSpacing</td><td>
 It sets the height between adjacent GroupView Items.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -136,7 +141,7 @@ this.groupView1.ItemYSpacing = 10;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupView1.ItemXSpacing = 5
 
@@ -144,12 +149,14 @@ Me.groupView1.ItemYSpacing = 10
 
 {% endhighlight %}
 
+{% endtabs %}
+
  ![](Overview_images/Overview_img58.jpeg) 
  
  GroupBar with ItemXSpacing = "5" and ItemYSpacing = '"10"
  {:.caption}
  
-## Scroll Settings
+## Scroll settings
 
 We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling property to 'True'.
 
@@ -158,14 +165,15 @@ We can specify scrolling for the GroupBar control to view the set of GroupView I
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Integrated Scrolling</td><td>
+Integrated scrolling</td><td>
 Setting this property will delegate the GroupView's scrolling to the Parent GroupBar control. This mode is exclusive to the VS .NET toolbox type interface where the GroupBar provides the scrolling support for it's GroupView Child controls.On disabling this property, scrollbars are set inside the GroupView control to scroll through the GroupView Items.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -175,11 +183,13 @@ this.groupView2.IntegratedScrolling = False;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupView1.IntegratedScrolling = False
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img59.jpeg) 
 

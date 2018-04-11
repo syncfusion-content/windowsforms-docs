@@ -18,11 +18,11 @@ The below four events are implemented in Transition.
 
 ## Opening
 
-Occurs when expand Transition begins. 
+Occurs when expand Transition begins.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Raises when expand Transition begins.
 
@@ -42,7 +42,7 @@ public void navigationDrawer1_Opening(object sender, OpeningEventArgs e)
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Raises when expand Transition begins.
 
@@ -64,11 +64,11 @@ End Sub
 
 ## Closing
 
-Occurs when collapse Transition begins. 
+Occurs when collapse Transition begins.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Raises when collapse Transition begins.
 
@@ -87,7 +87,7 @@ MessageBox.Show(“Collapses begins”);
 }
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Raises when collapse Transition begins.
 
@@ -114,7 +114,7 @@ Occurs when expand Transition ends.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Raises when expand Transition ends.
 
@@ -134,7 +134,7 @@ MessageBox.Show(“Transition Ends”);
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Raises when expand Transition ends.
 
@@ -160,7 +160,7 @@ Occurs when collapse Transition ends.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Raises when collapse Transition ends.
 
@@ -180,7 +180,7 @@ MessageBox.Show(“Collapses ends”);
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Raises when collapse Transition ends.
 

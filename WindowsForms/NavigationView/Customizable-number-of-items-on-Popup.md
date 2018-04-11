@@ -7,11 +7,13 @@ control: Navigation View
 documentation: ug
 ---
 
-# Customizable number of items on Popup
+# Customizable number of items on pop-up
 
-Navigation View now allows setting the maximum number of items to be displayed on its popup and has an option to cancel the popup. BarPopUp event can be used to achieve this.
+Navigation View now allows setting the maximum number of items to be displayed on its pop-up and has an option to cancel the pop-up. BarPopUp event can be used to achieve this.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 // Sets the maximum items to be displayed.
 
@@ -49,7 +51,7 @@ e.MaximumItemsToDisplay = 5;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ‘Sets the maximum Items to be displayed.
 
@@ -77,4 +79,4 @@ End Sub
 
 {% endhighlight %}
 
-
+{% endtabs %}

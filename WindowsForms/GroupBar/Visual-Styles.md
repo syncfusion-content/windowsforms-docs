@@ -6,7 +6,7 @@ platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Visual Styles
+# Visual styles
 
 The GroupBar control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the built-in visual styles.
 
@@ -34,8 +34,6 @@ The styles are built in for GroupBar.
 
 This option helps to set the Default theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -44,7 +42,7 @@ This option helps to set the Default theme.
 
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Default; 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -63,8 +61,6 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Default
 
 This option helps to set the Office2007 theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -73,7 +69,7 @@ This option helps to set the Office2007 theme.
 
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007; 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -87,7 +83,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 ![](Overview_images/Overview_img118.jpeg) 
 
-You can also specify the color schemes for Office 2007 visual styles. They can be Blue, Silver, Black and Managed..
+You can also specify the color schemes for Office 2007 visual styles. They can be Blue, Silver, Black and Managed.
 
 •	Blue
 
@@ -110,7 +106,7 @@ This option is used to set the Office2007 Blue theme.
 this.groupBar1.VisualStyle =Syncfusion.Windows.Forms.VisualStyle.Office2007;
 this. groupBar1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.Blue;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -129,8 +125,6 @@ Me.groupBar1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.Blue
 
 This option helps to set the Black theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -140,7 +134,7 @@ This option helps to set the Black theme.
 this.groupBar1.VisualStyle =Syncfusion.Windows.Forms.VisualStyle.Office2007;
 this.groupBar1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.Black;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -159,8 +153,6 @@ Me.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
 This option helps to set the Silver theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -170,7 +162,7 @@ This option helps to set the Silver theme.
 this.groupBar1.VisualStyle =Syncfusion.Windows.Forms.VisualStyle.Office2007;
 this.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -189,8 +181,6 @@ Me.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
 This option helps to apply the custom colors to the GroupBar by setting Office2007Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -202,7 +192,7 @@ this.groupbarVisualStudio.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -220,8 +210,6 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 **Office2010**
 
-#####  Code Sample
-
 This option helps to set the Office2010 theme.
 
 {% tabs %}
@@ -232,7 +220,8 @@ This option helps to set the Office2010 theme.
 
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010; 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 {% highlight VB %}
 
 ' Office2010
@@ -240,6 +229,7 @@ this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010;
 Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Overview_images/Overview_img123.jpeg) 
@@ -256,8 +246,6 @@ It also specifies the color schemes for Office 2010 visual styles. They can be B
 
 **Blue**
 
-#####  Code Sample
-
 This option is used to set the Office2010 Blue theme.
 
 {% tabs %}
@@ -269,7 +257,7 @@ This option is used to set the Office2010 Blue theme.
 this.groupBar1.VisualStyle =Syncfusion.Windows.Forms.VisualStyle.Office2010;
 this.groupBar1.Office2010Theme =Syncfusion.Windows.Forms.Office2010Theme.Blue;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -280,14 +268,13 @@ Me.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Blue
 
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Overview_images/Overview_img124.jpeg) 
 
 
 **Black**
-
-#####  Code Sample
 
 This option is used to set the Office2010 Black theme.
 
@@ -300,7 +287,7 @@ This option is used to set the Office2010 Black theme.
 this.groupBar1.VisualStyle =Syncfusion.Windows.Forms.VisualStyle.Office2010;
 this.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Black;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -310,13 +297,12 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
 Me.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Black
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Overview_images/Overview_img125.jpeg) 
 
 **Silver**
-
-#####  Code Sample
 
 This option is used to set the Office2010 Silver theme.
 
@@ -329,7 +315,7 @@ This option is used to set the Office2010 Silver theme.
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010;
 this.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -346,8 +332,6 @@ Me.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver
 
 **Managed**
 
-#####  Code Sample
-
 This option helps to apply the custom colors to the GroupBar by setting Office2010Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
 
 {% tabs %}
@@ -360,7 +344,7 @@ this.groupbarVisualStudio.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Off
 this.groupbarVisualStudio.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Managed;
 Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -371,13 +355,12 @@ Me.groupbarVisualStudio.Office2010Theme = Syncfusion.Windows.Forms.Office2010The
 Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Overview_images/Overview_img127.jpeg) 
 
 **Metro**
-
-#####  Code Sample
 
 This option helps to set the Metro theme.
 
@@ -390,7 +373,7 @@ This option helps to set the Metro theme.
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro; 
 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -406,8 +389,6 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
 
 **Office2016Colorful**
 
-#####  Code Sample
-
 This option helps to set the Office2016Colorful theme.
 
 {% tabs %}
@@ -419,7 +400,7 @@ This option helps to set the Office2016Colorful theme.
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful; 
 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -435,8 +416,6 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorf
 
 **Office2016DarkGray**
 
-#####  Code Sample
-
 This option helps to set the Office2016DarkGray theme.
 
 {% tabs %}
@@ -447,7 +426,7 @@ This option helps to set the Office2016DarkGray theme.
 
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray; 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -464,8 +443,6 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGr
 
 **Office2016Black**
 
-#####  Code Sample
-
 This option helps to set the Office2016Black theme.
 
 {% tabs %}
@@ -476,7 +453,7 @@ This option helps to set the Office2016Black theme.
 
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Black; 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -492,8 +469,6 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
 
 **Office2016White**
 
-#####  Code Sample
-
 This option helps to set the Office2016White theme.
 
 {% tabs %}
@@ -504,7 +479,7 @@ This option helps to set the Office2016White theme.
 
 this.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016White; 
  
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
