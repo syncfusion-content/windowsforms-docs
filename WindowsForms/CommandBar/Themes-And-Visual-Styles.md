@@ -7,7 +7,7 @@ control: CommandBars
 documentation: ug
 ---
 
-# Themes And Visual Styles
+# Themes and visual styles
 
 This section discusses the themes and visual styles settings of the CommandBar control.
 
@@ -19,7 +19,7 @@ Themes define the look and feel of the CommandBar control. They can be set using
 <table>
 <tr>
 <th>
-CommandBarController Property</th><th>
+CommandBarController property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -27,38 +27,40 @@ ThemesEnabled</td><td>
 Specifies whether XP themes should be used for the CommandBars.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
 
-
-
-
-
 this.commandBarController1.ThemesEnabled=true;
+
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
 
 
 Me.commandBarController1.ThemesEnabled=True
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img1.jpeg) 
 
 
 
-## Visual Styles
+## Visual styles
 
-Visual Styles enhance the appearance of the CommandBar control and can be set using the property given below.
+Visual styles enhance the appearance of the CommandBar control and can be set using the property given below.
 
 
 <table>
 <tr>
 <th>
-CommandBarController Property</th><th>
+CommandBarController property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -66,20 +68,26 @@ Style</td><td>
 Specifies the visual style of the CommandBar. It includes the options given below.OfficeXP,Office2003,Office2007,VS2005, Office2007Outlook, Office2016Colorful, Office2016White, Office2016DarkGray and Office2016Black.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
 this.commandBarController1.ThemesEnabled = true;
 
 this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP;
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.commandBarController1.ThemesEnabled=True
 
 Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img2.jpeg) 
@@ -87,8 +95,6 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
 **Office2016Colorful**
 
 This option helps to set the Office2016Colorful style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -106,7 +112,7 @@ this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -116,7 +122,6 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 This option helps to set the Office2016White style.
 
-#####  Code Sample
 
 {% tabs %}
 
@@ -134,7 +139,7 @@ this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016White
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -144,7 +149,6 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 This option helps to set the Office2016DarkGray style.
 
-#####  Code Sample
 
 {% tabs %}
 
@@ -162,7 +166,7 @@ this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -172,7 +176,6 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 This option helps to set the Office2016Black style.
 
-#####  Code Sample
 
 {% tabs %}
 
@@ -190,7 +193,7 @@ this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -198,7 +201,7 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 N> For the Office2003 and VS2005 styles to take effect, the ThemesEnabled property should be set to 'False'.
 
-## Office 2007 Theme
+## Office 2007 theme
 
 CommandBarController provides the new Microsoft Office 2007 style in different color schemes, to enhance the appearance of the CommandBar control. Office 2007 color schemes can be enabled using the Office2007Theme property.
 
@@ -206,7 +209,7 @@ CommandBarController provides the new Microsoft Office 2007 style in different c
 <table>
 <tr>
 <th>
-CommandBarController Property</th><th>
+CommandBarController property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -214,20 +217,20 @@ Office2007Theme</td><td>
 Specifies the color scheme for the Office 2007 visual style. It includes the options given below.Blue,Silver,Black andManaged.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 
 this.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook;
 
 this.commandBarController1.Office2007Theme = Syncfusion.Windows.Forms.Office2007ColorScheme.Blue;
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -236,7 +239,10 @@ this.commandBarController1.Office2007Theme = Syncfusion.Windows.Forms.Office2007
 Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook
 
 Me.commandBarController1.Office2007Theme = Syncfusion.Windows.Forms.Office2007ColorScheme.Blue
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
  ![](Themes-And-Visual-Styles_images/Themes-And-Visual-Styles_img4.jpeg) 
@@ -246,9 +252,9 @@ Me.commandBarController1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Co
 
 N> The Style property must be set to 'Office2007' or 'Office2007Outlook' to get the Office 2007 theme effect.
 
-## Office 2010 Styles
+## Office 2010 styles
 
-This feature provides Office 2010-like themes for Windows Forms UI controls. These themes add the Office 2010-like look and feel to your application. This feature enables you to easily apply uniform style to all of the child controls in the application. Windows Forms UI controls support three themes found in Office 2010. They are:  
+This feature provides Office 2010-like themes for Windows Forms UI controls. These themes add the Office 2010-like look and feel to your application. This feature enables you to easily apply uniform style to all of the child controls in the application. Windows Forms UI controls support three themes found in Office 2010. They are:
 
 * Blue
 * Black 
@@ -256,11 +262,14 @@ This feature provides Office 2010-like themes for Windows Forms UI controls. The
 
 There is also a user-managed theme called Managed.
 
-### Supported Controls
+### Supported controls
 
 Controls that support Office 2007 themes will also support the Office 2010 themes. The API used to set the style will also be the same as Office 2007.
 
 The following code samples can be used to apply Office 2010 themes to the DockingManager.
+
+{% tabs %}
+
 {% highlight C# %}
 
 
@@ -272,10 +281,11 @@ The following code samples can be used to apply Office 2010 themes to the Dockin
 this.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010;
 
 this.dockingManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver;
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -286,7 +296,10 @@ this.dockingManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.
 Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
 
 Me.dockingManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
 The list of controls that support Office 2010 styles is displayed in the following table:
@@ -452,7 +465,7 @@ XPToolBar</td></tr>
 </table>
 
 
-## Skin Manager Compatibility
+## Skin manager compatibility
 
 Previously, the SkinManager supported only Office 2007 themes. Now the SkinManager will support Office 2010 themes for the following color schemes:
 

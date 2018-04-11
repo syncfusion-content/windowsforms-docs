@@ -6,62 +6,62 @@ platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---
-# Getting Started
+# Getting started
 
-## Creating Menus 
+## Creating menus 
 
-This section will provide a step by step procedure to create a toolbar with menu items added by using the designer and by using programming approach in .NET application. 
+This section will provide a step by step procedure to create a toolbar with menu items added by using the designer and by using programming approach in .NET application.
 
-### Through Designer
+### Through designer
 
 This section deals with creating bar items and adding them to the toolbar which are demonstrated in the following topics.
 
-### Adding Bar Items to a BarManager
+### Adding bar items to a BarManager
 
 To add BarItems (menu items) to the menu Bar (note that this step will NOT automatically populate menus and toolbars) during design-time:
 
 * Drag-and-drop one of the BarManagers, MainFrameBarManager (if this is the top-level form) or a ChildFrameBarManager if this is an MDIChild form, onto the form, which will be added to the component tray.
-* To invoke the Customize dialog, right click the component and select the Customize... option, or choose the 'Customize...' option from the smart tag.
+* To invoke the Customize dialog, right-click the component and select the Customize... option, or choose the 'Customize...' option from the smart tag.
 
-![](Overview_images/Overview_img8.jpeg) 
+![](Overview_images/Overview_img8.jpeg)
 
 
 
-![](Overview_images/Overview_img9.jpeg) 
+![](Overview_images/Overview_img9.jpeg)
 
 
 
 * In the customization dialog, go to the Commands tab.
-* To add new categories, right click on the Categories' area and select Add.
+* To add new categories, right-click on the Categories' area and select Add.
 
-![](Overview_images/Overview_img10.jpeg) 
+![](Overview_images/Overview_img10.jpeg)
 
 
 
-* This will open up a dialog where you can enter the name of a new category. The category name should be unique within this BarManager. 
+* This will open up a dialog where you can enter the name of a new category. The category name should be unique within this BarManager.
 
 N> The categories do not correspond to any menu entries in the main menu or toolbars, they just provide you a logical grouping of different BarItems.
 
-![](Overview_images/Overview_img12.jpeg) 
+![](Overview_images/Overview_img12.jpeg)
 
 
 
 * Now to add bar items into this category, select the category and click the Modify... button (top right corner of the Commands tab) select Add to invoke the Add New BarItem dialog.
 * Select the type of BarItem you would like to add, from the list and name it (the BarItem's text property). Take a look at the topic [Bar Items](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) for more information on the different types of BarItems.
 
-![](Overview_images/Overview_img13.jpeg) 
+![](Overview_images/Overview_img13.jpeg)
 
 
 
 * Once you insert the BarItems, you can select them in the Commands list and modify their properties in the VS .NET design-time property grid.
 
-![](Overview_images/Overview_img14.png) 
+![](Overview_images/Overview_img14.png)
 
 
-N> Remember that you haven't filled your menus and toolbars yet. To display the items refer to [Adding Toolbars](#adding-toolbars-and-populating-the-bar-items)
+N> Remember that you haven't filled your menus and toolbars yet. To display the items refer to [Adding Toolbars].(#adding-toolbars-and-populating-the-bar-items)
 
 
-### Adding Toolbars and Populating the Bar Items
+### Adding toolbars and populating the bar items
 
 To add a toolbar and populate it with the bar items follow the below steps.
 
@@ -73,279 +73,280 @@ To add a toolbar and populate it with the bar items follow the below steps.
 
 * This will create a new bar component in the designer as shown in the image below. Name this component as 'MainMenu'. This will also make a corresponding entry in the Toolbars list.
 
-![](Overview_images/Overview_img17.jpeg) 
+![](Overview_images/Overview_img17.jpeg)
 
 
 
 * Set the toolbar as a main menu, by selecting the IsMainMenu option in the [BarStyle](/windowsforms/menus/appearance-settings#bar-styles) property of the mainMenuBar component.
 
-![](Overview_images/Overview_img18.png) 
+![](Overview_images/Overview_img18.png)
 
 
 
 * Fill your toolbars with items by simply dragging-and-dropping the items from the Command tab into the toolbars and submenu. To fill the sub menu of the parent bar items, again drag the required bar items inside it.
 
-![](Overview_images/Overview_img19.jpeg) 
+![](Overview_images/Overview_img19.jpeg)
 
 
 
 * You can drag and dock the toolbars on all four sides of the designer by dragging through the gripper on the left of the toolbar and moving them to any desired position. The toolbars can also be floated. See [Toolbar Properties](/windowsforms/xptoolbar/xptoolbar-properties) for more details.
-N> If a toolbar from the mainFrameBarManager and one (or more) from the child forms gets merged (the rules for merging are discussed in the [MDI Merging](/windowsforms/mdichildforms/mdi-merging) topic), the BarItems in the toolbar will be ordered based on their MergeOrder property
+N> If a toolbar from the mainFrameBarManager and one (or more) from the child forms gets merged (the rules for merging are discussed in the [MDI Merging](/windowsforms/mdichildforms/mdi-merging) topic), the BarItems in the toolbar will be ordered based on their MergeOrder property.
 
 If this is a ChildFrameBarManager, all the toolbars (including the main menu) will be floating at design-time. This is because the child toolbars will be docked to the main form rather than to your child form during run-time, and hence, floating avoids polluting your child forms during design-time.
 
-![](Overview_images/Overview_img21.jpeg) 
+![](Overview_images/Overview_img21.jpeg)
 
 
-
-
-
-### Through Code
+### Through code
 
 This section deals with the programmatic approach of creating and populating the toolbar with menus.
 
-#### Adding Bar Items to a BarManager
+#### Adding bar items to a BarManager
 
 To programmatically add bar items to a BarManager, perform the below steps.
 
 1. Include the required namespaces.
 
 
+{% tabs %}
 
-   ~~~ cs
+{% highlight C# %}
 
-		using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 
-		using Syncfusion.Windows.Forms.Tools.XPMenus;
+using Syncfusion.Windows.Forms.Tools.XPMenus;
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-
-
-   ~~~ vbnet
+{% highlight VB %}
 
 		Imports Syncfusion.Windows.Forms.Tools
 
 		Imports Syncfusion.Windows.Forms.Tools.XPMenus
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+
+{% endtabs %}
 
 2. Create an instance of MainFrameBarManager.
 
 
 
-   ~~~ cs
+{% tabs %}
 
-		private Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager mainFrameBarManager1;
+{% highlight C# %}
 
-		this.mainFrameBarManager1 = new Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager(this.components, this);
+private Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager mainFrameBarManager1;
 
-   ~~~
-   {:.prettyprint }
+this.mainFrameBarManager1 = new Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager(this.components, this);
 
+{% endhighlight %}
 
+{% highlight VB %}
 
-   ~~~ vbnet
+Private mainFrameBarManager1 As Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager
 
-		Private mainFrameBarManager1 As Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager
+Private Me.mainFrameBarManager1 = New Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager(Me.components, Me)
 
-		Private Me.mainFrameBarManager1 = New Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager(Me.components, Me)
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% endtabs %}
 
 3. Add category to the MainFrameBarManager.
 
 
 
-   ~~~ cs
+{% tabs %}
 
-		this.mainFrameBarManager1.Categories.Add("MainMenu");
+{% highlight C# %}
 
-   ~~~
-   {:.prettyprint }
+this.mainFrameBarManager1.Categories.Add("MainMenu");
 
-   ~~~ vbnet
+{% endhighlight %}
 
-		Me.mainFrameBarManager1.Categories.Add("MainMenu")
+{% highlight VB %}
 
-   ~~~
-   {:.prettyprint }
+Me.mainFrameBarManager1.Categories.Add("MainMenu")
+
+{% endhighlight %}
+
+{% endtabs %}
 
 4. Create an instances for ParentBarItem(File) and BarItems(New,Open and Close).
 
 
-   ~~~ cs
+{% tabs %}
+
+{% highlight C# %}
 
 
-					private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem parentBarItem1;
+private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem parentBarItem1;
 
-					private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem1;
+private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem1;
 
-					private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem2;
+private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem2;
 
-					private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem3;
-
-
-			this.parentBarItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
-
-			this.barItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
-
-			this.barItem2 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
-
-			this.barItem3 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
-
-   ~~~
-   {:.prettyprint }
+private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem3;
 
 
+this.parentBarItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
 
-   ~~~ vbnet
+this.barItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
 
-					Private parentBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
+this.barItem2 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
 
-					Private barItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
+this.barItem3 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
 
-					Private barItem2 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
+{% endhighlight %}
 
-					Private barItem3 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
+{% highlight VB %}
+
+Private parentBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
+
+Private barItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
+
+Private barItem2 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
+
+Private barItem3 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 
 
 
-					Me.parentBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
+Me.parentBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
 
-					Me.barItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
+Me.barItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
 
-					Me.barItem2 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
+Me.barItem2 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
 
-					Me.barItem3 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
+Me.barItem3 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+
+{% endtabs %}
 
 5. Add BarItems to the MainFrameBarManager.
 
 
 
-   ~~~ cs
+{% tabs %}
 
-		this.mainFrameBarManager1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {
+{% highlight C# %}
 
-		this.parentBarItem1,this.barItem1,this.barItem2,this.barItem3});
+this.mainFrameBarManager1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {
 
-   ~~~
-   {:.prettyprint }
+this.parentBarItem1,this.barItem1,this.barItem2,this.barItem3});
 
+{% endhighlight %}
 
+{% highlight VB %}
 
-   ~~~ vbnet
+Me.mainFrameBarManager1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() {
+Me.parentBarItem1,Me.barItem1,Me.barItem2,Me.barItem3})
 
-		Me.mainFrameBarManager1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() {
-		Me.parentBarItem1,Me.barItem1,Me.barItem2,Me.barItem3})
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% endtabs %}
 
-				 Refer Adding Toolbars and Populating the Bar Items to add toolbar and populate menus.
+Refer Adding Toolbars and Populating the Bar Items to add toolbar and populate menus.
    
 
-### Adding Toolbars and Populating the Bar Items
+### Adding toolbars and populating the bar items
 
 Follow the steps below to create and populate the toolbar with menus.
 
 1. Create an instance of Toolbar and associate it with MainFrameBarManager.
 
-   ~~~ cs
-			private Syncfusion.Windows.Forms.Tools.XPMenus.Bar bar1;
+{% tabs %}
 
-			this.bar1 = new Syncfusion.Windows.Forms.Tools.XPMenus.Bar(this.mainFrameBarManager1, "MyMenu");
+{% highlight C# %}
 
-			this.mainFrameBarManager1.Bars.Add(this.bar1);
+private Syncfusion.Windows.Forms.Tools.XPMenus.Bar bar1;
 
-			this.bar1.Manager = this.mainFrameBarManager1;
+this.bar1 = new Syncfusion.Windows.Forms.Tools.XPMenus.Bar(this.mainFrameBarManager1, "MyMenu");
 
-   ~~~
-   {:.prettyprint }
+this.mainFrameBarManager1.Bars.Add(this.bar1);
+
+this.bar1.Manager = this.mainFrameBarManager1;
+
+{% endhighlight %}
+
+{% highlight VB %}
 
 
+Private bar1 As Syncfusion.Windows.Forms.Tools.XPMenus.Bar
 
-   ~~~ vbnet
+Private Me.bar1 = New Syncfusion.Windows.Forms.Tools.XPMenus.Bar(Me.mainFrameBarManager1, "MyMenu")
 
-			Private bar1 As Syncfusion.Windows.Forms.Tools.XPMenus.Bar
+Me.mainFrameBarManager1.Bars.Add(Me.bar1)
 
-			Private Me.bar1 = New Syncfusion.Windows.Forms.Tools.XPMenus.Bar(Me.mainFrameBarManager1, "MyMenu")
+Private Me.bar1.Manager = Me.mainFrameBarManager1
 
-			Me.mainFrameBarManager1.Bars.Add(Me.bar1)
+{% endhighlight %}
 
-			Private Me.bar1.Manager = Me.mainFrameBarManager1
-
-   ~~~
-   {:.prettyprint }
+{% endtabs %}
 
 2. Add bar items to the ParentBarItem.
 
-   ~~~ cs
+{% tabs %}
 
-			this.parentBarItem1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {this.barItem1,this.barItem2,
+{% highlight C# %}
 
-			this.barItem3});
+this.parentBarItem1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {this.barItem1,this.barItem2,
+
+this.barItem3});
+
+{% endhighlight %}
+
+{% highlight VB %}
 
 
-   ~~~
-   {:.prettyprint }
 
-   ~~~ vbnet
+Me.parentBarItem1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() {Me.barItem1,Me.barItem2, Me.barItem3})
 
+{% endhighlight %}
 
-			Me.parentBarItem1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() {Me.barItem1,Me.barItem2, Me.barItem3})
-
-   ~~~
-   {:.prettyprint }
+{% endtabs %}
 
 
 3. Finally add ParentBarItem to the toolbar.
 
-   ~~~ cs
+{% tabs %}
 
-		this.bar1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {this.parentBarItem1});
+{% highlight C# %}
 
+this.bar1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {this.parentBarItem1});
 
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
+{% highlight VB %}
 
 		Me.bar1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() {Me.parentBarItem1})
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+
+{% endtabs %}
 
 4. You can make the toolbar to occupy the entire row in the form by setting BarStyle property to following values.
 
 
-   ~~~ cs
+{% tabs %}
+
+{% highlight C# %}
 
 
-		this.bar1.BarStyle = ((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle) ((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.AllowQuickCustomizing | Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.IsMainMenu)| Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.Visible) 
+this.bar1.BarStyle = ((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle) ((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.AllowQuickCustomizing | Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.IsMainMenu)| Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.Visible)
 
-		| Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.DrawDragBorder)));
+| Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.DrawDragBorder)));
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-
-   ~~~ vbnet
+{% highlight VB %}
 
 
 		Me.bar1.BarStyle = (CType((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.AllowQuickCustomizing Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.IsMainMenu) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.Visible) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.DrawDragBorder), Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle))
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
-   The resulting form will look like the below image.
+{% endtabs %}
 
    ![](Overview_images/Overview_img22.jpeg) 
 

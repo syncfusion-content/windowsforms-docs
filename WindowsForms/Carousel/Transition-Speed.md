@@ -7,19 +7,21 @@ control: Carousel
 documentation: ug
 ---
 
-# Transition Speed
+# Transition speed
 
-The TransitionSpeed property enables the items in the control to be rotated at a user defined speed. 
+The TransitionSpeed property enables the items in the control to be rotated at a user defined speed.
+
+{% tabs %}
 {% highlight C# %}
 
 
 this.carousel1.TransitionSpeed = 2f;
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.carousel1.TransitionSpeed = 2f
 {% endhighlight %}
 
-
+{% endtabs %}

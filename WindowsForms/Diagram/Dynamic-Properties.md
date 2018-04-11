@@ -49,7 +49,7 @@ node.PropertyBag.Add("ID", employee.EmployeeID);
 node.PropertyBag.Add("Designation", employee.Designation);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 node.PropertyBag.Add("Name", employee.EmployeeName)
 node.PropertyBag.Add("ID", employee.EmployeeID)

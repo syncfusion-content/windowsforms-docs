@@ -7,14 +7,14 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-The TabControlAdv can be added to Windows Forms application by using either of the following ways,
+The TabControlAdv can be added to Windows Forms application by using either of the following ways:
 
-* Through Designer
-* Through Code-Behind
+* Through designer
+* Through code-behind
 
-## Through Designer
+## Through designer
 
 Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add TabControlAdv through drag and drop from Toolbox.
 
@@ -30,7 +30,7 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
    
 4. Add TabPages to the control in the designer in the following ways.
 
-5. Right click on the TabControlAdv and select the Add Tab option. This adds a TabPage to the TabControlAdv.
+5. Right-click on the TabControlAdv and select the Add Tab option. This adds a TabPage to the TabControlAdv.
 
    ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
@@ -49,9 +49,9 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 
 
 
-## Through Code
+## Through code
 
-The following steps helps to add TabControlAdv through code. 
+The following steps help to add TabControlAdv through code. 
 
 1. Create a Windows Forms project in Visual Studio and include following assemblies.
 
@@ -66,7 +66,7 @@ The following steps helps to add TabControlAdv through code.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv1 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
 
@@ -75,7 +75,7 @@ Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv1 = new Syncfusion.Windows.F
 {% endhighlight %}
 
 
-{% highlight vb %}
+{% highlight VB %}
 
 Dim tabControlAdv1 As New Syncfusion.Windows.Forms.Tools.TabControlAdv()
 
@@ -90,7 +90,7 @@ Dim tabPageAdv1 As New Syncfusion.Windows.Forms.Tools.TabPageAdv()
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void Form1_Load(object sender, System.EventArgs e)
 {
@@ -129,7 +129,7 @@ this.Controls.AddRange(new Control[] { this.tabControlAdv1});
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
 

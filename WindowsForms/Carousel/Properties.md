@@ -7,7 +7,7 @@ control: Carousel
 documentation: ug
 ---
 
-# Properties 
+# Properties
 
 
 <table>
@@ -29,7 +29,7 @@ bool</td></tr>
 <tr>
 <td>
 Image Highlight Color</td><td>
-Apply the desired color for highlighting the selected image.</td><td>
+Applies the desired color for highlighting the selected image.</td><td>
 Color</td></tr>
 <tr>
 <td>
