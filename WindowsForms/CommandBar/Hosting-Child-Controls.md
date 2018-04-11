@@ -7,22 +7,22 @@ control: CommandBars
 documentation: ug
 ---
 
-# Hosting Child Controls
+# Hosting child controls
 
-Child controls can be easily hosted by the CommandBar through designer as well as through code. This can be done by selecting the client controls from the toolbox and dropping it onto the particular CommandBar. The control will be resized to fit the CommandBar's client bounds. 
+Child controls can be easily hosted by the CommandBar through designer as well as through code. This can be done by selecting the client controls from the toolbox and dropping it onto the particular CommandBar. The control will be resized to fit the CommandBar's client bounds.
 
-A CommandBar can host a single control / multiple controls. This can be done as follows.
+A CommandBar can host a single control/multiple controls.
 
-## Single Control
+## Single control
 
 You can drag-and-drop the single client control onto the CommandBar.
 
-## Multiple Controls
+## Multiple controls
 
 To accommodate multiple controls, place the controls within a Panel control and set it to be the CommandBar's client.
 
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -33,13 +33,16 @@ this.commandBar1.Controls.Add(this.panel1);
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.commandBar1.Controls.Add(Me.panel1)
+
 {% endhighlight %}
 
+{% endtabs %}
 
- ![](Hosting-Child-Controls_images/Hosting-Child-Controls_img1.jpeg) 
+
+ ![](Hosting-Child-Controls_images/Hosting-Child-Controls_img1.jpeg)
 
 
 

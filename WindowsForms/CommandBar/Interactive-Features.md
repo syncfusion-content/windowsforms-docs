@@ -7,7 +7,7 @@ control: CommandBars
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive features
 
 This section discusses the interactive features available in the CommandBar control.
 
@@ -19,12 +19,12 @@ The term "chevron" is used for a menu that contains the toolbar icons that do no
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
 ChevronColor</td><td>
-Gets / sets the color of the chevron.</td></tr>
+Gets/sets the color of the chevron.</td></tr>
 <tr>
 <td>
 HideChevron</td><td>
@@ -35,11 +35,9 @@ IsChevronVisible</td><td>
 Indicates whether the chevron is currently visible.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 this.commandBar1.ChevronColor = System.Drawing.Color.Black;
@@ -50,9 +48,7 @@ this.CommandBar1.IsChevronVisible = true
 {% endhighlight %}
 
 
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -61,10 +57,13 @@ Me.commandBar1.ChevronColor = System.Drawing.Color.Black
 Me.commandBar1.HideChevron = False
 
 Me.CommandBar1.IsChevronVisible = True
+
 {% endhighlight %}
 
+{% endtabs %}
 
-The following screen shot displays the chevron in the CommandBar.
+
+The following screenshot displays the chevron in the CommandBar.
 
  ![](Interactive-Features_images/Interactive-Features_img1.jpeg) 
 

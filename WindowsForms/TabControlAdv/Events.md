@@ -14,87 +14,87 @@ The list of events and a detailed explanation about each of them is given in the
 <table>
 <tr>
 <th>
-TabControlAdv Events</th><th>
+TabControlAdv events</th><th>
 Description</th></tr>
 <tr>
 <td>
-AfterEdit Event</td><td>
+AfterEdit event</td><td>
 This event occurs after text editing is complete. It is fired even if no changes are made.</td></tr>
 <tr>
 <td>
-BeforeEdit Event</td><td>
+BeforeEdit event</td><td>
 This event occurs when the text enters into Edit mode.</td></tr>
 <tr>
 <td>
-BackgroundImageChanged Event</td><td>
+BackgroundImageChanged event</td><td>
 This event is fired when the value of the BackgroundImage property is changed.</td></tr>
 <tr>
 <td>
-BackgroundImageLayoutChanged Event</td><td>
+BackgroundImageLayoutChanged event</td><td>
 This event is fired when the value of the BackgroundImageLayout property is changed.</td></tr>
 <tr>
 <td>
-BackColorChanged Event</td><td>
+BackColorChanged event</td><td>
 This event is fired when the value of the BackColor property is changed.</td></tr>
 <tr>
 <td>
-ControlAdded Event</td><td>
+ControlAdded event</td><td>
 This event occurs when a new control is added to the TabControlAdv.</td></tr>
 <tr>
 <td>
-ControlRemoved Event</td><td>
+ControlRemoved event</td><td>
 This event occurs when a new control is removed from TabControlAdv.</td></tr>
 <tr>
 <td>
-DrawItem Event</td><td>
+DrawItem event</td><td>
 This event is triggered whenever a particular item or area needs to be painted. Below is an example which draws the background and the interior by handling this event.</td></tr>
 <tr>
 <td>
-ForeColorChanged Event</td><td>
+ForeColorChanged event</td><td>
 This event is raised when the value of the ForeColor property is changed.</td></tr>
 <tr>
 <td>
-LabelEditChanged Event</td><td>
+LabelEditChanged event</td><td>
 This event is triggered when the LabelEdit property is changed.</td></tr>
 <tr>
 <td>
-LabelEditTextChanged Event</td><td>
+LabelEditTextChanged event</td><td>
 This event is triggered when the original text of the tab is changed.</td></tr>
 <tr>
 <td>
-PaddingChanged Event</td><td>
+PaddingChanged event</td><td>
 This event occurs when the Padding property is changed.</td></tr>
 <tr>
 <td>
-Paint Event</td><td>
+Paint event</td><td>
 This event occurs when a TabControlAdv needs re-painting.</td></tr>
 <tr>
 <td>
-PreviewKeyDown Event</td><td>
+PreviewKeyDown event</td><td>
 This event occurs before the KeyDown event when a key is pressed, while focus is on the TabControlAdv.</td></tr>
 <tr>
 <td>
-RegionChanged Event</td><td>
+RegionChanged event</td><td>
 This event is raised when the value of the Region property is changed.</td></tr>
 <tr>
 <td>
-TabPrimitiveClick Event</td><td>
+TabPrimitiveClick event</td><td>
 This event occurs before the NavigationButton click.</td></tr>
 <tr>
 <td>
-SelectedIndexChanging Event</td><td>
-This event occurs when the SelectedIndex of the TabControlAdv is changing.</td></tr>
-<tr>
-<td>
-SelectedIndexChanged Event</td><td>
+SelectedIndexChanging event</td><td>
 This event occurs when the SelectedIndex of the TabControlAdv is changed.</td></tr>
 <tr>
 <td>
-TabsOrderChanged Event</td><td>
+SelectedIndexChanged event</td><td>
+This event occurs when the SelectedIndex of the TabControlAdv is changed.</td></tr>
+<tr>
+<td>
+TabsOrderChanged event</td><td>
 This event occurs when the order of the tabs is changed.</td></tr>
 <tr>
 <td>
-TextChanged Event</td><td>
+TextChanged event</td><td>
 This event occurs when value of the Text property is changed.</td></tr>
 <tr>
 <td>
@@ -107,11 +107,11 @@ Handled when the TabPage is closing.</td></tr>
 </table>
 
 
-## AfterEdit Event
+## AfterEdit event
 
-This event occurs after text editing is complete. It is fired even if no changes are made.
+This event occurs after text editing is completed. It is fired even if no changes are made.
 
-### Event Data
+### Event data
 
 The Edit Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following `EditEventArgs` property provides information specific to this event.
 
@@ -129,7 +129,7 @@ Gets the edited text.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private void tabControlAdv1_AfterEdit(object sender, Syncfusion.Windows.Forms.Tools.EditEventArgs e)
@@ -148,7 +148,7 @@ Console.Write("Edit text :" + e.EditText.ToString());
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 Private Sub tabControlAdv1_AfterEditEvent(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.EditEventArgs)
@@ -167,11 +167,11 @@ End Sub
 
 {% endtabs %}
 
-## BeforeEdit Event
+## BeforeEdit event
 
 This event occurs when the text enters into Edit mode.
 
-### Event Data
+### Event data
 
 This Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following `EditEventArgs` property provides information specific to this event.
 
@@ -189,7 +189,7 @@ Gets the edited text.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private void tabControlAdv1_BeforeEditEvent(object sender, Syncfusion.Windows.Forms.Tools.EditEventArgs e)
@@ -208,7 +208,7 @@ Console.Write("Edit text :" + e.EditText.ToString());
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 Private Sub tabControlAdv1_BeforeEditEvent(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.EditEventArgs)
@@ -227,13 +227,13 @@ End Sub
 
 {% endtabs %}
 
-## BackgroundImageChanged Event
+## BackgroundImageChanged event
 
 This event is fired when the value of the `BackgroundImage` property is changed in the TabControlAdv.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private void tabControlAdv1_BackgroundImageChanged(object sender, System.Windows.Forms.EventArgs e)
@@ -248,7 +248,7 @@ Console.Write("Background Image event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 Private Sub tabControlAdv1_BackgroundImageChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.EventArgs)
@@ -263,13 +263,13 @@ End Sub
 
 {% endtabs %}
 
-## BackgroundImageLayoutChanged Event
+## BackgroundImageLayoutChanged event
 
 This event is fired when the value of the `BackgroundImageLayout` property is changed in the TabControlAdv.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void tabControlAdv1_BackgroundImageLayoutChanged(object sender, System.Windows.Forms.EventArgs e)
 
@@ -283,7 +283,7 @@ Console.Write("BackgroundImageLayoutChanged event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Sub tabControlAdv1_BackgroundImageLayout(ByVal sender As Object, ByVal e As System.Windows.Forms.EventArgs)
 
@@ -297,13 +297,13 @@ End Sub
 
 {% endtabs %}
 
-## BackColorChanged Event
+## BackColorChanged event
 
 This event is fired when the value of the `BackColor` property is changed in the TabControlAdv.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 // Set the new back color.
 
@@ -329,7 +329,7 @@ Console.Write("BackColorChanged event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 ' Set the new back color. 
@@ -356,11 +356,11 @@ End Sub
 
 {% endtabs %}
 
-## ControlAdded Event
+## ControlAdded event
 
 This event occurs when a new control is added to the TabControlAdv.
 
-Event Data
+### Event data
 
 This Event Handler receives an argument of type `ControlEventArgs` containing data related to this event. The following `ControlEventArgs` property provides information specific to this event.
 
@@ -378,7 +378,7 @@ Gets the control object used by this event.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void tabControlAdv1_ControlAdded(object sender, System.Windows.Forms.ControlEventArgs e)
 
@@ -396,7 +396,7 @@ Console.Write("Control Name :" + e.Control.ToString());
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 Private Sub tabControlAdv1_ControlAdded(ByVal sender As Object, ByVal e As System.Windows.Forms.ControlEventArgs)
@@ -415,11 +415,11 @@ End Sub
 
 {% endtabs %}
 
-## ControlRemoved Event
+## ControlRemoved event
 
 This event occurs when a new control is removed from this TabControlAdv.
 
-### Event Data
+### Event data
 
 This Event Handler receives an argument of type `ControlEventArgs` containing data related to this event. The following `ControlEventArgs` property provides information specific to this event.
 
@@ -438,7 +438,7 @@ N> The TabControlAdv.RemoveAll() method removes all the TabPages and additional 
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void tabControlAdv1_ControlRemoved(object sender, System.Windows.Forms.ControlEventArgs e)
 
@@ -456,7 +456,7 @@ Console.Write("Control Name :" + e.Control.ToString());
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 Private Sub tabControlAdv1_ControlRemoved(ByVal sender As Object, ByVal e As System.Windows.Forms.ControlEventArgs)
@@ -475,11 +475,11 @@ End Sub
 
 {% endtabs %}
 
-## DrawItem Event
+## DrawItem event
 
 This event is triggered whenever a particular item or area needs to be painted. Below is an example which draws the background and the interior by handling this event.
 
-### Event Data
+### Event data
 
 This Event Handler receives an argument of type `DrawTabEventArgs` containing data related to this event. The following `DrawTabEventArgs` properties provide information specific to this event.
 
@@ -503,11 +503,11 @@ Represents the interior of the tab minus the borders.</td></tr>
 <tr>
 <td>
 Font</td><td>
-Gets / sets the font assigned to the tab that is being drawn.</td></tr>
+Gets/sets the font assigned to the tab that is being drawn.</td></tr>
 <tr>
 <td>
 ForeColor</td><td>
-Gets / Sets the color of the text.</td></tr>
+Gets/sets the color of the text.</td></tr>
 <tr>
 <td>
 Graphics</td><td>
@@ -519,18 +519,18 @@ Returns the index value of the item that is being drawn.</td></tr>
 <tr>
 <td>
 State</td><td>
-Gets / sets the state of the item that is being drawn.</td></tr>
+Gets/sets the state of the item that is being drawn.</td></tr>
 <tr>
 <td>
 TextBrush</td><td>
-Gets / sets the text brush to draw text in the tabs.</td></tr>
+Gets/sets the text brush to draw text in the tabs.</td></tr>
 </table>
 
 N> The TabControlAdv.OnDrawItem() method raises the DrawItem event.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -560,7 +560,7 @@ break;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -592,13 +592,13 @@ End Sub
 
 {% endtabs %}
 
-## ForeColorChanged Event
+## ForeColorChanged event
 
 This event is raised when the value of the `ForeColor` property is changed on the TabControlAdv.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void tabControlAdv1_ForeColorChanged(object sender, System.Windows.Forms.EventArgs e)
 
@@ -612,7 +612,7 @@ Console.Write("ForeColor Changed event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -628,13 +628,13 @@ End Sub
 
 {% endtabs %}
 
-## LabelEditChanged Event
+## LabelEditChanged event
 
 This event is triggered when the `LabelEdit` property is changed in the TabControlAdv.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 // Set the LabelEdit property.
 
@@ -656,7 +656,7 @@ Console.Write("LabelEditChanged event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -672,9 +672,9 @@ AddHandler Me.tabControlAdv1.LabelEditChanged, AddressOf tabControlAdv1_LabelEdi
 
 Private Sub tabControlAdv1_LabelEditChanged(ByVal sender As Object, ByVal e As EventArgs)
 
-   ' Below line will be displayed in the output window at runtime, when this event is fired. 
+' Below line will be displayed in the output window at runtime, when this event is fired. 
 
-   Console.Write("LabelEditChanged event is raised")
+Console.Write("LabelEditChanged event is raised")
 
 End Sub
 
@@ -682,13 +682,13 @@ End Sub
 
 {% endtabs %}
 
-## LabelEditTextChanged Event
+## LabelEditTextChanged event
 
 This event is triggered when the original text of the Tab is changed.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 // Set the LabelEdit property to True, to enable editing of the TabPage's captions.
@@ -723,7 +723,7 @@ Console.Write("LabelEditTextChanged event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -759,13 +759,13 @@ End Sub
 
 {% endtabs %}
 
-## PaddingChanged Event
+## PaddingChanged event
 
 This event occurs when the `Padding` property is changed in the TabControlAdv.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private void tabControlAdv1_PaddingChanged(object sender, System.Windows.Forms.EventArgs e)
@@ -780,7 +780,7 @@ Console.Write("Padding Changed event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -796,11 +796,11 @@ End Sub
 
 {% endtabs %}
 
-## Paint Event
+## Paint event
 
 This event occurs when a TabControlAdv needs re-painting.
 
-### Event Data
+### Event data
 
 This Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following `EditEventArgs` property provides information specific to this event.
 
@@ -822,7 +822,7 @@ Gets the graphics used to paint.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void tabControlAdv1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
 
@@ -842,7 +842,7 @@ e.Graphics.FillRectangle(linearBrush, this.ClientRectangle);
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Sub tabControlAdv1_Paint(ByVal sender As Object, ByVal e As System.Windows.Forms.PaintEventArgs)
 
@@ -860,11 +860,11 @@ End Sub
 
 {% endtabs %}
 
-## PreviewKeyDown Event
+## PreviewKeyDown event
 
 This event occurs before the `KeyDown` event when a key is pressed, while focus is on the TabControlAdv.
 
-### Event Data
+### Event data
 
 This Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following `EditEventArgs` properties provide information specific to this event.
 
@@ -884,7 +884,7 @@ Gets a value indicating whether CTRL key was pressed.</td></tr>
 <tr>
 <td>
 IsInputKey</td><td>
-Gets / sets a value indicating whether a key is a regular input key.</td></tr>
+Gets/sets a value indicating whether a key is a regular input key.</td></tr>
 <tr>
 <td>
 KeyCode</td><td>
@@ -909,7 +909,7 @@ Gets a value indicating whether SHIFT key was pressed.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void tabControlAdv1_PreviewKeyDown(object sender, System.Windows.Forms.PreviewKeyDownEventArgs e)
 
@@ -927,7 +927,7 @@ Console.Write("Key code :" + e.KeyCode.ToString() + "\n" + "Key Value :" + e.Key
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -947,13 +947,13 @@ End Sub
 
 {% endtabs %}
 
-## RegionChanged Event
+## RegionChanged event
 
 This event is raised when the value of the `Region` property is changed in the TabControlAdv.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private void tabControlAdv1_RegionChanged(object sender, System.Windows.Forms.EventArgs e)
@@ -968,7 +968,7 @@ Console.Write("Region Changed event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -984,11 +984,11 @@ End Sub
 
 {% endtabs %}
 
-## TabPrimitiveClick Event
+## TabPrimitiveClick event
 
 This event occurs before the `NavigationButton` click.
 
-### Event Data
+### Event data
 
 This Event Handler receives an argument of type `TabPrimitiveClickEventArgs` containing data related to this event. The following `TabPrimitiveClickEventArgs` properties provide information specific to this event.
 
@@ -1001,7 +1001,7 @@ Description</td></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets a value indicating whether the event should be canceled.</td></tr>
+Gets/sets a value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
 TabPrimitive</td><td>
@@ -1010,7 +1010,7 @@ Gets the primitive that gets clicked.</td></tr>
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private void tabControlAdv4_TabPrimitiveClick(object sender, Syncfusion.Windows.Forms.Tools.TabPrimitiveClickEventArgs e)
@@ -1039,7 +1039,7 @@ Console.Write("TabPrimitiveClick:" + e.TabPrimitive.ToString());
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -1067,14 +1067,14 @@ End Sub
 
 {% endtabs %}
 
-## SelectedIndexChanging Event
+## SelectedIndexChanging event
 
 
-SelectedIndexChanging event occurs while changing the SelectedIndex or SelectedTab of the TabControlAdv. Tab Selection can be restricted by setting args.Cancel to true. 
+SelectedIndexChanging event occurs while changing the SelectedIndex or SelectedTab of the TabControlAdv. Tab Selection can be restricted by setting args.Cancel to true.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void TabControlAdv1_SelectedIndexChanging(object sender, SelectedIndexChangingEventArgs args)
 
@@ -1092,7 +1092,7 @@ args.Cancel = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Sub TabControlAdv1_SelectedIndexChanging(ByVal sender As Object, ByVal args As SelectedIndexChangingEventArgs)
 
@@ -1108,13 +1108,13 @@ End Sub
 
 {% endtabs %}
 
-## SelectedIndexChanged Event
+## SelectedIndexChanged event
 
 SelectedIndexChanged event occurs when the SelectedIndex or SelectedTab of the TabControlAdv is changed. 
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void TabControlAdv1_SelectedIndexChanged(object sender, EventArgs e)
 
@@ -1138,7 +1138,7 @@ Console.WriteLine("Selected Tab:" + item.Text);
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Sub TabControlAdv1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -1158,13 +1158,13 @@ End Sub
 
 {% endtabs %}
 
-## TabsOrderChanged Event
+## TabsOrderChanged event
 
 This event occurs when the order of the tabs are changed in the TabControlAdv.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -1194,7 +1194,7 @@ Console.Write("TabsOrderChanged event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -1222,13 +1222,13 @@ End Sub
 
 N> The TabControlAdv.OnTabsOrderChanged() method raises the OnTabsOrderChanged event.
 
-## TextChanged Event
+## TextChanged event
 
 This event occurs when the value of the `Text` property is changed.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -1244,7 +1244,7 @@ Console.Write("TextChanged event is raised");
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -1264,7 +1264,7 @@ The TabPageAdv.Closed event is raised when a TapPage is closed using close butto
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -1282,7 +1282,7 @@ private void tabPageAdv1_Closed(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 
@@ -1304,13 +1304,13 @@ End Sub
 
 
 
-## Closing Event
+## Closing event
 
-The TabPageAdv.Closing event is raised when a Tab page is closing.
+The TabPageAdv.Closing event is raised when a Tab page is closed.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -1330,7 +1330,7 @@ private void tabPageAdv1_Closing(object sender, TabPageAdvClosingEventArgs args)
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Sub tabPageAdv1_Closing(ByVal sender As Object, ByVal args As TabPageAdvClosingEventArgs)
 

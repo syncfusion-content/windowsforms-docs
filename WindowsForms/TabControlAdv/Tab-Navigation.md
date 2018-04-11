@@ -7,7 +7,7 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Tab Navigation
+# Tab navigation
 
 TabPrimitives is a collection of NavigationControls used to navigate through the TabPages of the TabControlAdv. 
 
@@ -21,15 +21,15 @@ The various TabPrimitives are,
 * NextPage - Goes to the next page of the active page.
 * DropDown - This pops-up a list of the available tab pages in the control from which the user can select the page to be traversed.
 * Close - This button is used to close the TabControlAdv. It can be set to appear for the whole control or individual tab pages. 
-* Custom - User can add more buttons through Custom TabPrimitive. This helps the user to create / add more buttons and handle their own click events.
+* Custom - User can add more buttons through Custom TabPrimitive. This helps the user to create/add more buttons and handle their own click events.
 
 ![](TabPrimitives_images/TabPrimitives_img1.png)
 
 N> The TabControlAdv.HitTestTabs() method can be used to return the tab at the specified location.
 
-## TabPrimitives Features
+## TabPrimitives features
 
-Apart from doing the defined task of Navigation, TabPrimitivesHost comes with options for adding Images, ToolTips and enabling the Visible property for each TabPrimitive.
+Apart from doing the defined task of Navigation, TabPrimitivesHost provides options to add Images, ToolTips, and to enable the Visible property for each TabPrimitive.
 
 
 N> You can set the other properties for adding Images and ToolTips for the TabPrimitives using the TabPrimitives Collection Editor.
@@ -38,12 +38,12 @@ N> You can set the other properties for adding Images and ToolTips for the TabPr
 
 The TabPrimitives can be added to the TabControlAdv by using either of the following ways,
 
-* Through Designer
-* Through Code-Behind
+* Through designer
+* Through code-behind
 
-### Through Designer
+### Through designer
 
-To create TabPrimitives through designer, follow the steps given below.
+To create TabPrimitives through designer, follow the given steps:
 
 1. After adding a TabControlAdv with a set of TabPages in it, select the TabPrimitivesHost.TabPrimitives property in the Properties window.
 
@@ -62,11 +62,11 @@ To create TabPrimitives through designer, follow the steps given below.
    ![](TabPrimitives_images/TabPrimitives_img7.jpeg)
 
 
-### Through Code
+### Through code
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 //Adds a TabPrimitive of type DropDown.
@@ -90,7 +90,7 @@ this.tabControlAdv1.TabPrimitivesHost.Visible = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 'Adds a TabPrimitive of type DropDown.
@@ -121,6 +121,6 @@ N> After adding TabPrimitives, set the TabPrimitiveHost.Visible property to True
 
 `SwitchPagesForDialogKeys` property available for the TabControlAdv specifies if the control should switch TabPages on pressing Ctrl+Tab or Ctrl+Shift+Tab.
 
-The `TabPrimitiveHost` property allows to customize the navigation and close buttons by defining it through the `TabPrimitives` Property Collection. The TabPrimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First / Previous / Next / LastTab, Next / PreviousPage and Close / DropDown options.
+The `TabPrimitiveHost` property allows to customize the navigation and close buttons by defining it through the `TabPrimitives` property Collection. The TabPrimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First/Previous/Next/LastTab, Next/PreviousPage, and Close/DropDown options.
 
 ![](TabPrimitives_images/TabPrimitives_img10.png)
