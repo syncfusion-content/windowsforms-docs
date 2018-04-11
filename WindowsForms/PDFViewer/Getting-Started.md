@@ -31,7 +31,7 @@ documentation: ug
    ![](Getting-Started_images/Getting-Started_img2.png)
    
 
-3. This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the code snippet below. 
+3. This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/pdf%20viewer/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String).html) method. 
 
 {% tabs %}
 {% highlight c# %}
