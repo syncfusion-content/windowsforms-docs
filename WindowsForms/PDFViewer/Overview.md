@@ -18,9 +18,9 @@ Essential PdfViewerControl for .NET is a 100% managed .NET component that will h
 
 * Support for viewing and printing PDF files.
 * Support for various PDF objects such as text, lines, curves, color spaces, and JPEG images with DCTDecode, CCITTFaxDecode, and FlateDecode filters.
-* Support for exporting PDF pages as raster images.
+* Support for exporting PDF pages as raster images and meta files.
 
-Supported and non-supported elements of Essential PDF Viewer for Windows Forms, WPF and ASP.NET MVC are listed in the following table.
+Supported and non-supported elements of Essential PdfViewerControl for Windows Forms, WPF and ASP.NET MVC are listed in the following table.
 
 
 
@@ -350,7 +350,7 @@ No</td></tr>
 
 ***Supported in 4.0 and higher Framework.
 
-*\*\*\*When the document contains texts that uses TrueType System Fonts to be rendered, then the content in the PDF document is rendered using the font installed in the system/machine in the PDF Viewer control. If the required font is not installed in the system, then the contents would be rendered using **Arial** font.
+*\*\*\*When the document contains texts that uses TrueType System Fonts, then the content in the PDF document is rendered using the font installed in the system/machine. If the required font is not installed in the system, then the contents would be rendered using **Arial** font.
 
 
 

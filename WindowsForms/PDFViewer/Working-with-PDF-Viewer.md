@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with PdfViewerControl
 
-Essential PdfViewerControl can display and print PDF files and export the pages as raster images.
+Essential PdfViewerControl can display and print PDF files and export the pages as raster images and meta files.
 
 ## Properties, Methods, and Events Tables
 
@@ -55,7 +55,7 @@ Return Type</th></tr>
 <tr>
 <td>
 Load</td><td>
-this method is used to load the PDF to the viewer.</td><td>
+loads the PDF to the viewer.</td><td>
 Overloads: (string filePath) (string filePath, string password)(PdfLoadedDocument doc)(Stream file)</td><td>
 N/A </td><td>
 Void </td></tr>
@@ -90,7 +90,7 @@ bool</td></tr>
 <tr>
 <td>
 GoToPageAtIndex</td><td>
-Navigates to the mentioned page</td><td>
+Navigates to the specified page</td><td>
 (int index)</td><td>
 N/A</td><td>
 Void</td></tr>
@@ -115,19 +115,19 @@ Type</th></tr>
 <tr>
 <td>
 DocumentLoaded</td><td>
-this event is triggered after the PDF is successfully loaded.</td><td>
+triggered after the PDF is successfully loaded.</td><td>
 N/A</td><td>
 N/A</td></tr>
 <tr>
 <td>
 HyperLinkMouseHover</td><td>
-this event is triggered when the mouse pointer is placed over the URL.</td><td>
+triggered when the mouse pointer is placed over the URL.</td><td>
 N/A</td><td>
 N/A</td></tr>
 <tr>
 <td>
 HyperLinkMouseClicked</td><td>
-this event is triggered when the URL in the PDF document is clicked.</td><td>
+triggered when the URL in the PDF document is clicked.</td><td>
 N/A</td><td>
 N/A</td></tr>
 </table>
@@ -193,7 +193,7 @@ pdfViewer1.Load("Template.pdf", "password")
 
 ## Printing PDF Files 
 
-PdfViewerControl allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon triggering the Print button.
+PdfViewerControl allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon clicking the Print button.
 
 ![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
 
@@ -466,11 +466,11 @@ Dim image() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
 ## Text Search
 
-Essential PdfViewerControl allows end users to search and highlight the text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
+Essential PdfViewerControl allows end users to search a given text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
 
 ![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
 
-The PdfViewerControl control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the PdfViewerControl control.
+The PdfViewerControl control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page indices and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the PdfViewerControl control.
 
 {% tabs %}
 {%highlight c#%}

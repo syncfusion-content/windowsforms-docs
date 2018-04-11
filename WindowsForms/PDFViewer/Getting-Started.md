@@ -26,7 +26,7 @@ documentation: ug
 
 
 
-   Appearance and behavior-related aspects of the PdfViewerControl can be controlled by setting the appropriate properties through the properties grid. 
+   Appearance and behavior related aspects of the PdfViewerControl can be controlled by setting the appropriate properties through the properties grid. 
 
    ![](Getting-Started_images/Getting-Started_img2.png)
    
@@ -50,17 +50,17 @@ pdfViewerControl1.Load("c:/documents/myPDF.pdf")
 	
 ###Adding manually in code
 
-1. Add Syncfusion.PdfViewer.Windows namespace.
+1. Add Syncfusion.Windows.Forms.PdfViewer namespace.
 
 {% tabs %}
 {% highlight c# %}
 
-using Syncfusion.PdfViewer.Windows;
+using Syncfusion.Windows.Forms.PdfViewer;
 
 {% endhighlight %}
 {% highlight vbnet %}
 
-Imports Syncfusion.PdfViewer.Windows
+Imports Syncfusion.Windows.Forms.PdfViewer
 
 {% endhighlight %}
 {% endtabs %}
