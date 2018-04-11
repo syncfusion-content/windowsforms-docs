@@ -7,11 +7,11 @@ control: CommandBars
 documentation: ug
 ---
 
-# Appearance Settings
+# Appearance settings
 
 The appearance settings that play a vital role in enhancing the appearance of the CommandBar control are listed below.
 
-## Background Settings
+## Background settings
 
 The background settings of the CommandBar control are discussed below.
 
@@ -25,7 +25,7 @@ The back color of the CommandBarController can be set using the property given b
 <table>
 <tr>
 <th>
-CommandBarController Property</th><th>
+CommandBarController property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -33,24 +33,23 @@ BackColor</td><td>
 The background color used to draw the host form's dockable regions.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
-
-
-
-
 this.commandBarController1.BackColor = System.Drawing.Color.RosyBrown;
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 
 Me.CommandBarController1.BackColor = System.Drawing.Color.RosyBrown
+
 {% endhighlight %}
+
+{% endtabs %}
 
 #### CommandBar
 
@@ -60,7 +59,7 @@ The back color of the CommandBar can be set using the property given below.
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -68,10 +67,9 @@ BackColor</td><td>
 The background color used to draw the component.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 this.commandBar1.BackColor = System.Drawing.Color.Wheat;
@@ -79,14 +77,15 @@ this.commandBar1.BackColor = System.Drawing.Color.Wheat;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 
 
 Me.commandBar1.BackColor = System.Drawing.Color.Wheat
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
  ![](Appearance-Settings_images/Appearance-Settings_img1.jpeg) 
@@ -96,43 +95,43 @@ Me.commandBar1.BackColor = System.Drawing.Color.Wheat
 
 N> The ResetBackColor() method of the CommandBarController can be used to reset it's BackColor property to the default value. Similarly, the ResetBackColor() method of the CommandBar can be used to reset it's BackColor property to the default value.
 
-## Foreground Settings
+## Foreground settings
 
 The foreground settings of the CommandBar control are discussed below.
 
 ### Gripper
 
-The gripper plays a major role in the CommandBar package. It allows the user to dock / float the CommandBar at runtime.
+The gripper plays a major role in the CommandBar package. It allows the user to dock/float the CommandBar at runtime.
 
 
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
 HideGripper</td><td>
-Draws the CommandBar with / without the drag gripper.</td></tr>
+Draws the CommandBar with/without the drag gripper.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight C# %}
 
 
-
-
-
 this.commandBar1.HideGripper=true;
+
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 
 Me.commandBar1.HideGripper=True
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ![](Appearance-Settings_images/Appearance-Settings_img3.jpeg) 
@@ -147,7 +146,7 @@ The font of the text displayed in the CommandBar can be customized using the pro
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -155,25 +154,28 @@ Font</td><td>
 The font used to display text in the control.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
 
 
 
-
-
 this.commandBar3.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
 
 
 Me.commandBar3.Font = New System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CByte((0)))
+
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img4.jpeg)
 
@@ -182,7 +184,7 @@ Me.commandBar3.Font = New System.Drawing.Font("Comic Sans MS", 8.25F, System.Dra
 
 N> The ResetFont() method can be used to reset the Font property to it's default value.
 
-## Length and Height Settings
+## Length and height settings
 
 The properties that define the dimensions for the CommandBar are given below. During design time, the control's size can be changed by editing these property values.
 
@@ -190,16 +192,16 @@ The properties that define the dimensions for the CommandBar are given below. Du
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
 MaxLength</td><td>
-Gets / sets the maximum linear dimension of the CommandBar.</td></tr>
+Gets/sets the maximum linear dimension of the CommandBar.</td></tr>
 <tr>
 <td>
 MinLength</td><td>
-Gets / sets the minimum linear dimension of the CommandBar.</td></tr>
+Gets/sets the minimum linear dimension of the CommandBar.</td></tr>
 <tr>
 <td>
 OccupyFullRow</td><td>
@@ -207,18 +209,16 @@ Indicates whether the CommandBar should occupy the entire row when docked.</td><
 <tr>
 <td>
 MinHeight</td><td>
-Gets / sets the ideal lateral dimension of the CommandBar.</td></tr>
+Gets/sets the ideal lateral dimension of the CommandBar.</td></tr>
 <tr>
 <td>
 IntegralHeight</td><td>
-Gets / sets the incremental step by which the CommandBar's lateral dimension increases when wrapped.</td></tr>
+Gets/sets the incremental step by which the CommandBar's lateral dimension increases when wrapped.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
-
 
 this.commandBar1.MaxLength = 201;
 
@@ -229,14 +229,11 @@ this.commandBar1.OccupyFullRow = true;
 this.commandBar1.MinHeight = 27;
 
 this.commandBar1.IntegralHeight = 2;
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
-
-
+{% highlight VB %}
 
 
 Me.commandBar1.MaxLength = 201
@@ -250,6 +247,8 @@ Me.commandBar1.MinHeight = 27
 Me.commandBar1.IntegralHeight = 2
 
 {% endhighlight %}
+
+{% endtabs %}
 
  ![](Appearance-Settings_images/Appearance-Settings_img6.jpeg) 
 

@@ -7,20 +7,20 @@ control: Wizard
 documentation: ug
 ---
 
-# Event Handling 
+# Event handling
 
 This section comprises the below events:
 
-#### Wizard Control Events
+#### Wizard control events
 
 The events available for Wizard control and the methods which raises these events are listed in the below tables.
 
-Events Table
+Events table
 
 <table>
 <tr>
 <th>
-Wizard Control Events</th><th>
+Wizard control events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -64,12 +64,12 @@ BeforeNext</td><td>
 Handled before the Next button is clicked.</td></tr>
 </table>
 
-Methods Table
+Methods table
 
 <table>
 <tr>
 <th>
-Wizard Control Methods</th><th>
+Wizard control methods</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -80,20 +80,20 @@ Selects the previous page.</td></tr>
 NextPage</td><td>
 Selects the next page.</td></tr>
 </table>
-BannerControlLocationChanging Event
+BannerControlLocationChanging event
 
 This event is discussed in How to Cancel the AutoLayout of the Banner panel controls.
 
-#### Wizard Page Events
+#### Wizard page events
 
 The events available for the Wizard Page and the methods which raises these events are listed in the below tables.
 
-Events Table
+Events table
 
 <table>
 <tr>
 <th>
-Wizard Page Events</th><th>
+Wizard page events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -129,12 +129,12 @@ SettingChanged</td><td>
 Handled when the title and description of a page is changed.</td></tr>
 </table>
 
-Methods Table
+Methods table
 
 <table>
 <tr>
 <th>
-Wizard Page Methods</th><th>
+Wizard page methods</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -165,13 +165,15 @@ Raises the WizardPage.PageLoad event.</td></tr>
 RaiseValidatePage</td><td>
 Raises the WizardPage.ValidatePage event.</td></tr>
 </table>
-ValidatePage Event
+ValidatePage event
 
-WizardControl Pages can be validated using ValidatePage event. In this event, data validation can be performed and traversing to the next page can be canceled, if the validation fails. 
+WizardControl Pages can be validated using ValidatePage event. In this event, data validation can be performed and traversing to the next page can be canceled, if the validation fails.
 
 If the user does not want to validate a page while moving back (pressing BackButton), then it can be done by setting BackButtonCausesValidation property to false.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -213,7 +215,7 @@ this.textBox1.Focus();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -247,4 +249,4 @@ End Sub
 
 {% endhighlight %}
 
-
+{% endtabs %}

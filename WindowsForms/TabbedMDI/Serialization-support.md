@@ -21,7 +21,7 @@ The TabGroupStates can be serialized in,
 
 The TabbedMDIManager class uses the SaveTabGroupState and LoadTabGroupState methods to save and load TabGroupState respectively.
 
-Methods Table
+Methods table
 
 <table>
 <tr>
@@ -45,9 +45,11 @@ Clears the state of the saved tab group.</td></tr>
 
 Make sure to call PersistNow method when you are done with writing into the serializer.
 
-N> The LoadTabGroupStates and SaveTabGroupStates methods get called automatically when you enable / disable TabbedMDI.
+N> The LoadTabGroupStates and SaveTabGroupStates methods get called automatically when you enable/disable TabbedMDI.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -69,7 +71,7 @@ this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -89,13 +91,18 @@ Dim serializer As New AppStateSerializer(SerializeMode.XMLFile, "MyFile")
 
 Me.tabbedMdiManager.LoadTabGroupStates(serializer)
 
-Singleton method
-
-The AppStateSerializer is set to use the IsolatedStorage format by default. When the user does not need the states to store in the Isolated Storage area, it could be changed by initializing the AppStateSerializer's Singleton at the beginning of an application.
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
+
+#### Singleton method
+
+The AppStateSerializer is set to use the IsolatedStorage format by default. When the user does not need the states to store in the Isolated Storage area, it could be changed by initializing the AppStateSerializer's Singleton at the beginning of an application.
+
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -105,7 +112,7 @@ AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile, "MyFile");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -113,15 +120,20 @@ AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile, "MyFile");
 
 AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile, "MyFile")
 
+{% endhighlight %}
+
+{% endtabs %}
 
 
 Below are the code snippets for different storage mediums. 
 
 To serialize in Binary Format, use the below code.
 
-{% endhighlight %}
 
-{% highlight c# %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -143,7 +155,7 @@ this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -164,12 +176,14 @@ Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "MyFile")
 Me.tabbedMdiManager.LoadTabGroupStates(serializer)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 To serialize in Isolated Storage, use the below code.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -191,7 +205,7 @@ this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -213,9 +227,13 @@ Me.tabbedMdiManager.LoadTabGroupStates(serializer)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 To serialize in Memory Stream, use the below code.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -241,7 +259,7 @@ this.tabbedMdiManager.LoadTabGroupStates(serializer);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -267,4 +285,4 @@ Me.tabbedMdiManager.LoadTabGroupStates(serializer)
 
 {% endhighlight %}
 
-
+{% endtabs %}

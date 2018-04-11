@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Layout Customization
+# Layout customization
 
 ## Alignment
 
@@ -45,7 +45,7 @@ Me.tileLayout1.MainLayout.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignme
 
 ### HorzNearMargin
 
-It indicates the left margin between the client rectangle and layout rectangle
+It indicates the left margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ Me.tileLayout1.MainLayout.HorzNearMargin = 100
 
 ### HorzFarMargin
 
-It indicates the right margin between the client rectangle and the layout rectangle
+It indicates the right margin between the client rectangle and the layout rectangle.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ Me.tileLayout1.MainLayout.HorzFarMargin = 100
 
 ### TopMargin
 
-Indicates the Top margin between the client rectangle and layout rectangle
+Indicates the Top margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ Me.tileLayout1.MainLayout.TopMargin = 20
 
 ### BottomMargin
 
-Indicates the Bottom margin between the client rectangle and layout rectangle
+Indicates the Bottom margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
