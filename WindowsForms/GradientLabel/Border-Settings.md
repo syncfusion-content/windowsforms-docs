@@ -12,7 +12,6 @@ This section discusses the border settings of the GradientLabel control.
 
 The border style and sides of the GradientLabel can be customized using the properties given below.
 
-
 <table>
 <tr>
 <th>
@@ -32,37 +31,28 @@ BorderColor</td><td>
 Sets the color for the 2D border. The BorderColor will be effective only when the BorderStyle property is set to FixedSingle.</td></tr>
 </table>
 
-
 We can set the border sides for the GradientLabel using the BorderSides property.If BorderSides is set to 'Left', only the left border of GradientLabel will be shown.
 
 The GradientLabel replaces the default border style provided for Label classes with the Border3DStyle type in this property. This property uses the Border3DStyle enumeration.
 
 In 3D mode, the border styles can be Raised, Sunken, Flat and so on. Setting the value to 'Adjust' shows no border.
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 this.gradientLabel1.BorderSides = System.Windows.Forms.Border3DSide.Top;
-
 this.gradientLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Flat;
-
 this.gradientLabel1.BorderColor = Color.Red;
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.gradientLabel1.BorderSides = System.Windows.Forms.Border3DSide.Top
-
 Me.gradientLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Flat
-
 Me.gradientLabel1.BorderColor = Color.Red
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
  ![](GradientLabel-Images/Overview_img603.jpeg)
