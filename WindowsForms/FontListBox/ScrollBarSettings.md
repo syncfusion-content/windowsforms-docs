@@ -6,7 +6,6 @@ platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
-
 # ScrollBar Settings
 
 FontListBox control by default has a vertical scrollbar. It can also have a horizontal scrollbar. This section will discuss the properties which sets the scrollbar for the control.
@@ -14,7 +13,6 @@ FontListBox control by default has a vertical scrollbar. It can also have a hori
 ## Horizontal Scrollbar
 
 Horizontal scrollbar can be displayed if the items are beyond the right edge of the FontListBox. The below properties lets you do that.
-
 
 <table>
 <tr>
@@ -31,25 +29,21 @@ HorizontalExtent</td><td>
 Specifies the width of the control, when HorizontalScrollBar property is set to true.</td></tr>
 </table>
 
-
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.fontListBox1.HorizontalExtent = 150;
-
 this.fontListBox1.HorizontalScrollbar = true;
 
+{% endhighlight %}
 
-{%endhighlight%}
-
-{%highlight vbnet%}
+{% highlight vb %}
 
 Me.fontListBox1.HorizontalExtent = 150
-
 Me.fontListBox1.HorizontalScrollbar = True
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/Overview_img580.jpeg) 
 
@@ -65,63 +59,54 @@ Me.fontListBox1.HorizontalScrollbar = True
 
 We can set the height of the item inside the listbox through ItemHeight property. Default value is 15. 
 
-
-
-{%highlight c#%}
+{% tabs %}
+{% highlight c# %}
 
 this.fontListBox1.ItemHeight = 20;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.fontListBox1.ItemHeight = 20
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %} 
 
  ![](Overview_images/Overview_img581.jpeg) 
-
 
 ### Sorting the Items
 
 Sorting of the items can be enabled using Sorted property. By default it is false.
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.fontListBox1.Sorted = true;
 
+{% endhighlight %}
 
-{%endhighlight%}
-
-{%highlight vbnet%}
+{% highlight vb %}
 
 Me.fontListBox1.Sorted = True
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ### AutoCompleting the Items
 
 FontListBox control has the ability to auto complete the items as we type in the listbox. This feature is enabled using UseAutoComplete property to true.
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.fontListBox1.UseAutoComplete = true;
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 Me.fontListBox1.UseAutoComplete = True
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
