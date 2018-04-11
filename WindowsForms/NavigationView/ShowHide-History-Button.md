@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-### Show/Hide History Button
+### Show/hide history button
 
 History Button used to access the "History" page. If enable ShowHistoryButtons, it will be appeared on NavigationView Control.
 

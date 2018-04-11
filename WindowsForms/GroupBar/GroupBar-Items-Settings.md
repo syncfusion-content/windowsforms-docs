@@ -6,24 +6,26 @@ platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# GroupBar Items Settings
+# GroupBar items settings
 
-This section discusses the various settings that can be applied to the GroupBar Items of the GroupBar control. 
+This section discusses the various settings that can be applied to the GroupBar Items of the GroupBar control.
 
-## Text Settings 
+## Text settings
 
 This section describes how text alignment can be done for the GroupBar Items.
 
-### Through Designer 
+### Through designer
 
 The TextAlign property specifies the horizontal alignment of the GroupBar Item text. The text can be aligned to the Center, Left and Right. The default alignment is set to Center.
 
-![](Overview_images/Overview_img17.jpeg) 
+![](Overview_images/Overview_img17.jpeg)
 
 
-### Through Code
+### Through code
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 this.groupBar1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left;
 
@@ -31,18 +33,21 @@ this.groupBar1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBar1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
 
 {% endhighlight %} 
 
+{% endtabs %}
 
-### In-Place Renaming
+### In-place renaming
 
 Users are allowed to rename GroupBar Items at run-time using the code snippet given below.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // index: index of the GroupBar Item to be renamed.
 
@@ -52,7 +57,7 @@ this.groupBar1.InplaceRenameItem(index);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 ' index: index of the GroupBar Item to be renamed.
 
@@ -60,6 +65,7 @@ Me.groupBar1.InplaceRenameItem(index)
 
 {% endhighlight %}
 
+{% endtabs %}
 
 The method associated with this property is given below.
 
@@ -76,7 +82,7 @@ Cancels an in-place edit that is in progress.</td></tr>
 </table>
 
 
-## Image Settings
+## Image settings
 
 This section describes the image settings available for GroupBar Items.
 
@@ -87,7 +93,7 @@ Large images can be set for GroupBar Items using the following properties.
 <table>
 <tr>
 <th>
-GroupBarItem Property</th><th>
+GroupBarItem property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -99,9 +105,9 @@ Image</td><td>
 Specifies the image for the GroupBar Item's client control. </td></tr>
 </table>
 
+{% tabs %}
 
-
-{% highlight C# %}  
+{% highlight C# %}
 
 this.groupBarItem1.LargeImageMode = true;
 
@@ -110,7 +116,7 @@ this.groupBarItem1.Image = ((System.Drawing.Image)(resources.GetObject("groupBar
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBarItem1.LargeImageMode = True
 
@@ -118,15 +124,16 @@ Me.groupBarItem1.Image = (CType(resources.GetObject("groupBarItem1.Image"), Syst
 
 {% endhighlight %}
 
-![](Overview_images/Overview_img18.jpeg) 
+{% endtabs %}
+
+![](Overview_images/Overview_img18.jpeg)
 
 
-Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by 
-setting the ShowItemImageInHeader property to 'True'. 
+Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by setting the ShowItemImageInHeader property to 'True'.
 
+{% tabs %}
 
-
-{% highlight C# %}  
+{% highlight C# %} 
 
 this.groupBar1.ShowItemImageInHeader = true;
 
@@ -134,18 +141,19 @@ this.groupBar1.ShowItemImageInHeader = true;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBar1.ShowItemImageInHeader = True
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Overview_images/Overview_img19.jpeg) 
 
 
 
-## GroupBar Items Customization
+## GroupBar items customization
 
 The following table lists the properties related to the GroupBar Items.
 
@@ -154,7 +162,7 @@ The following table lists the properties related to the GroupBar Items.
 <table>
 <tr>
 <th>
-GroupBar Property</th><th>
+GroupBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -166,8 +174,9 @@ FlatLook</td><td>
 Specifies whether to draw GroupBar Items with the control's borders without a 3-dimensional edge.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 this.groupBar1.BarHighlight = true;
 
@@ -177,13 +186,16 @@ this.groupBar1.FlatLook = true;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBar1.BarHighlight = True
 
 Me.groupBar1.FlatLook = True
 
 {% endhighlight %}
+
+{% endtabs %}
+
 
 The control provides highlighting effect for the GroupBar Item when the mouse is hovered over it by setting the BarHighlight 
 property to 'True'.
@@ -197,20 +209,21 @@ setting the FlatLook property to 'True'.
 ![](Overview_images/Overview_img21.jpeg)
 
 
-## Integrating Child Controls to the GroupBar Items 
+## Integrating child controls to the GroupBar items
 
-GroupBar Item can host any control in it's client area. To host more than one control, place the controls in the panel and then 
-drop the panel inside the GroupBar Item container.
+GroupBar Item can host any control in it's client area. To host more than one control, place the controls in the panel and then drop the panel inside the GroupBar Item container.
 
-### TreeView as Child Control 
+### TreeView as child control
 
-You can add a TreeView control to the GroupBar by clicking on a particular group say GroupBarItem1 by activating it and then dragging-and-dropping the TreeView control onto the GroupBar's client region. You can repeat this process for all groups in the control. 
+You can add a TreeView control to the GroupBar by clicking on a particular group say GroupBarItem1 by activating it and then dragging-and-dropping the TreeView control onto the GroupBar's client region. You can repeat this process for all groups in the control.
 
-Individual GroupBar Item properties such as Text, Image and ForeColor can be set using the GroupBar Item Collection Editor. To do this, first select the GroupBar.GroupBarItems to bring up the collection editor and select each item to assign the property values. 
+Individual GroupBar Item properties such as Text, Image and ForeColor can be set using the GroupBar Item Collection Editor. To do this, first select the GroupBar.GroupBarItems to bring up the collection editor and select each item to assign the property values.
 
-The default GroupBar properties will display the control in the regular mode using the standard visual style. You can now use the property browser to set the appropriate Appearance and Behavior settings to tailor the GroupBar's interface to suit the application's requirement. 
+The default GroupBar properties will display the control in the regular mode using the standard visual style. You can now use the property browser to set the appropriate Appearance and Behavior settings to tailor the GroupBar's interface to suit the application's requirement.
 
-{% highlight C# %} 
+{% tabs %}
+
+{% highlight C# %}
 
 this.groupBar1 = new Syncfusion.Windows.Forms.Tools.GroupBar();
 
@@ -238,9 +251,9 @@ this.groupBarItem2.Client = this.treeView1;
 
 this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[]{treeNode2});
 
- {% endhighlight %}
+{% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 
 
@@ -272,16 +285,20 @@ Me.treeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {treeNode2})
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
  ![](Overview_images/Overview_img22.jpeg) 
 
 
 ![](Overview_images/Overview_img23.jpeg) 
 
 
-### GroupView as Child Control 
+### GroupView as child control
 
-GroupView control can be added as a Child control to the GroupBar Item by dragging-and-dropping the control onto the
-GroupBar's client region and adding GroupView Items using the GroupView Item Collection Editor. 
+GroupView control can be added as a Child control to the GroupBar Item by dragging-and-dropping the control onto the GroupBar's client region and adding GroupView Items using the GroupView Item Collection Editor.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -318,7 +335,7 @@ new Syncfusion.Windows.Forms.Tools.GroupViewItem("GroupViewItem1", -1, true, nul
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBar1 = New Syncfusion.Windows.Forms.Tools.GroupBar()
 
@@ -348,11 +365,13 @@ Me.groupView1.GroupViewItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupVi
 
 {% endhighlight %}
 
+{% endtabs %}
+
  ![](Overview_images/Overview_img24.jpeg)
 
 
 
-### GroupBar as Child Control
+### GroupBar as child control
 
 GroupBar control itself can be placed in the client region of the GroupBar Item. This is called Nested GroupBar.
 
@@ -361,12 +380,12 @@ The following step-by-step procedure helps you to create Nested GroupBars.
 1. Drag and drop the GroupBar1 control from the toolbox onto the form, add GroupBar Items using the GroupBar Item Collection Editor, drag and drop the GroupView control and add GroupView Items using the GroupView Item Collection Editor. Associate the GroupView control inside the client area of the GroupBar Item.
 2. The below screen shot shows the GroupBar with four GroupBar Items named as Windows Forms, Components, General and Nested GroupBar.
 
- ![](Overview_images/Overview_img25.jpeg) 
+ ![](Overview_images/Overview_img25.jpeg)
 
 
 3. Drag and drop another GroupBar2 control from the toolbox and add the GroupBar Items (Personal, Work and Contacts) using the GroupBar Item Collection Editor and add the GroupView control with GroupView Items (Vendors, Metrics, Trend, Sales and Sales 2 for the GroupBar Item Work) to each GroupBar Item using the GroupView Item Collection Editor.
 
- ![](Overview_images/Overview_img26.jpeg) 
+ ![](Overview_images/Overview_img26.jpeg)
 
 
 4. Add GroupBar2 as child control to the GroupBar1 by doing a drag and drop operation.
@@ -374,12 +393,13 @@ The following step-by-step procedure helps you to create Nested GroupBars.
  ![](Overview_images/Overview_img27.jpeg) 
 
 
-The following screen shot shows the Nested GroupBars.
+The following screenshot shows the Nested GroupBars.
 
  ![](Overview_images/Overview_img28.jpeg) 
 
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 this.groupBar1 = new Syncfusion.Windows.Forms.Tools.GroupBar();
 
@@ -416,7 +436,7 @@ this.groupBarItem4});
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBar1 = New Syncfusion.Windows.Forms.Tools.GroupBar()
 
@@ -444,17 +464,18 @@ Me.groupBar2.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarI
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## GroupBarItem Popup
+## GroupBarItem pop-up
 
-The below properties controls the appearance and behavior of the GroupBarItem popup.
+The below properties controls the appearance and behavior of the GroupBarItem pop-up.
 
 
 
 <table>
 <tr>
 <th>
-GroupBar Property</th><th>
+GroupBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -479,7 +500,7 @@ Specifies whether to show or hide the popup gripper.</td></tr>
 <table>
 <tr>
 <th>
-GroupBar Property</th><th>
+GroupBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -487,8 +508,9 @@ HidePopup</td><td>
 Calling this method will hide the popup.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 this.groupBar1.PopupClientSize = new System.Drawing.Size(5, 6);
 
@@ -503,7 +525,7 @@ this.groupBar1.HidePopup();
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupBar1.PopupClientSize = New System.Drawing.Size(5, 6) 
 
@@ -516,3 +538,5 @@ Me.groupBar1.ShowPopupGripper = True
 Me.groupBar1.HidePopup()
 
 {% endhighlight %}
+
+{% endtabs %}

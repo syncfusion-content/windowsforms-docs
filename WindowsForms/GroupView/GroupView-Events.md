@@ -6,7 +6,7 @@ platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# GroupView Events
+# GroupView events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -15,7 +15,7 @@ The list of events and a detailed explanation about each of them is given in the
 <table>
 <tr>
 <th>
-GroupView Events</th><th>
+GroupView events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -43,13 +43,15 @@ GroupViewItemDoubleClick</td><td>
 This event occurs when the GroupViewItem is double clicked.</td></tr>
 </table>
 
-## GroupViewItemHighlighted Event
+## GroupViewItemHighlighted event
 
 It occurs when a GroupView Item in the GroupView control is highlighted.
 
 The event handler receives an argument of type EventArgs.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 //Handle the GroupViewItemHighlighted event.
 
@@ -71,7 +73,7 @@ this.groupView1.HighlightItemColor = System.Drawing.Color.AliceBlue;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 'Handle the GroupViewItemHighlighted event. 
 
@@ -89,12 +91,14 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img88.jpeg) 
 
 
-## GroupViewItemRenamed Event
+## GroupViewItemRenamed event
 
-It occurs when a GroupView Item has been renamed by an in-place edit operation. 
+It occurs when a GroupView Item has been renamed by an in-place edit operation.
 
 The event handler receives an argument of type GroupItemRenamedEventArgs. The event properties associated with the GroupItemRenamedEventArgs are as follows.
 
@@ -108,7 +112,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundBrush</td><td>
-Gets / sets the brush that will be used to draw the specified bounds.</td></tr>
+Gets/sets the brush that will be used to draw the specified bounds.</td></tr>
 <tr>
 <td>
 Bounds</td><td>
@@ -119,6 +123,7 @@ Item</td><td>
 Returns the index of the GroupBar Item being drawn.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -138,7 +143,7 @@ this.listView1.Items.Add(listViewItem1);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 // This event occurs when a GroupView Item in the GroupView is renamed.
 
@@ -153,11 +158,15 @@ End Sub
 
 {% endhighlight %}
 
-## GroupViewItemReordered Event
+{% endtabs %}
+
+## GroupViewItemReordered event
 
 It occurs when a GroupView Item in the GroupView control is reordered.
 
-The event handler receives an argument of type GroupItemRenamedEventArgs. 
+The event handler receives an argument of type GroupItemRenamedEventArgs.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -177,7 +186,7 @@ this.listView1.Items.Add(listViewItem1);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 // This event occurs when a GroupView Item in the GroupView is reordered.
 
@@ -191,13 +200,18 @@ End Sub
 
 {% endhighlight %}
 
-## GroupViewItemSelected Event
+{% endtabs %}
+
+
+## GroupViewItemSelected event
 
 It occurs when a GroupView Item in the GroupView control is selected.
 
-Accessing the GroupView.SelectedItem property from within the GroupViewItemSelected event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked. 
+Accessing the GroupView.SelectedItem property from within the GroupViewItemSelected event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked.
 
-The GroupView.SelectedItem property is accessed from within the handler to determine the selected item. 
+The GroupView.SelectedItem property is accessed from within the handler to determine the selected item.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -221,7 +235,7 @@ Trace.WriteLine(String.Concat("Selected Item = ", this.groupWinForms.GroupViewIt
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 ' Provide a handler for the GroupView.GroupViewItemSelected event.
 
@@ -239,13 +253,17 @@ End Sub
 
 {% endhighlight %}
 
-## ShowContextMenu Event
+{% endtabs %}
 
-The GroupBar and the GroupView control implement a ShowContextMenu event that is generated when the user right-clicks on the control. Applications can handle this event to create and display a Context Menu for the control. Both controls provide a ContextMenuItem property that returns the index of the GroupBar Item or the GroupView Item over which the mouse click occurred and this can be used to populate the menu with accurate item-specific contextual information. 
+## ShowContextMenu event
+
+The GroupBar and the GroupView control implement a ShowContextMenu event that is generated when the user right-clicks on the control. Applications can handle this event to create and display a Context Menu for the control. Both controls provide a ContextMenuItem property that returns the index of the GroupBar Item or the GroupView Item over which the mouse click occurred and this can be used to populate the menu with accurate item-specific contextual information.
 
 The following code from the GroupBar Demo shows a sample handler for the GroupBar.ShowContextMenu event that uses the EssentialToolsXPMenus.PopupMenu class for the context menu. The handler accesses the control's GroupBar.ContextMenuItem property to ascertain whether the mouse click occurred over a GroupBar Item, and if so, to determine the identity of the particular item.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // Handler for the GroupBar.ShowContextMenu event.
 
@@ -309,7 +327,7 @@ menu.Show(this.grp, this.grp.PointToClient(Cursor.Position));
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 // Handler for the GroupBar.ShowContextMenu event.
 
@@ -367,9 +385,13 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following code from the GroupView Demo shows a sample handler for the GroupView.ShowContextMenu event. The handler accesses the GroupView.HighlightedItem property to ascertain whether the mouse click occurred over a GroupView Item and populates the menu accordingly.
 
-{% highlight C# %} 
+{% tabs %}
+
+{% highlight C# %}
 
 // Handler for the GroupView.ShowContextMenu event.
 
@@ -413,7 +435,7 @@ menu.Show(this.groupWinForms, this.groupWinForms.PointToClient(Cursor.Position))
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 ' Handler for the GroupView.ShowContextMenu event.
 
@@ -457,9 +479,11 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img89.jpeg) 
 
-## GroupViewItemDoubleClick Event
+## GroupViewItemDoubleClick event
 
 It occurs when a GroupView Item in the GroupView control is double clicked.
 
@@ -476,7 +500,9 @@ SelectedItem</td><td>
 Gets/Sets the currently selected GroupView item</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 //This event occurs when the GroupView item is double clicked.
 
@@ -488,7 +514,7 @@ void groupView1_GroupViewItemDoubleClick(Syncfusion.Windows.Forms.Tools.GroupVie
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'This event occurs when the GroupView item is double clicked.
 
@@ -500,4 +526,4 @@ End Sub
 
 {% endhighlight %}
 
-
+{% endtabs %}

@@ -6,7 +6,7 @@ platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Interactive Features
+# Interactive features
 
 User can determine whether the particular GroupView Item is selected or not using the ButtonView and ClipSelectionBounds properties. ButtonView displays the selected GroupView Item in the pressed state.
 
@@ -17,7 +17,7 @@ ButtonView can be enabled in the GroupView control at design-time by setting the
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -29,6 +29,7 @@ ClipSelectionBounds</td><td>
 Specifies whether the selection bounds of the GroupView Item are clipped around it's image and text.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -40,7 +41,7 @@ this.groupView1.ClipSelectionBounds = true;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.groupView1.ButtonView = True
 
@@ -48,7 +49,7 @@ Me.groupView1.ClipSelectionBounds = True
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
  ![](Overview_images/Overview_img85.png)
  
@@ -57,26 +58,26 @@ Me.groupView1.ClipSelectionBounds = True
  
 ## ToolTips
 
-The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips 
-property must be set to 'True' in order to make the tooltip visible.
+The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips property must be set to 'True' in order to make the tooltip visible.
 
 
 
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
 ToolTipText</td><td>
-Gets / sets the text of the tooltip.</td></tr>
+Gets/sets the text of the tooltip.</td></tr>
 <tr>
 <td>
 ShowToolTips</td><td>
 Sets the visibility of the tooltip. The default value is set to 'False'.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -90,7 +91,7 @@ this.groupView1.ShowToolTips = true;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 ' Set the tooltip text for the GroupView Item. 
 
@@ -100,5 +101,6 @@ Me.groupView1.ShowToolTips = True
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Overview_images/Overview_img86.jpeg) 
