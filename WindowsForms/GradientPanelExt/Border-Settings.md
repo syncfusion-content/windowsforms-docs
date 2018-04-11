@@ -25,49 +25,38 @@ CornerRadius</td><td>
 Used to set or get the radius truncation for the control's corners.</td></tr>
 </table>
 
-
-
-
-
+{% tabs %}
 {% highlight c# %}
+
 gradientPanelExt1.CornerRadius = 14;
 
 {% endhighlight  %}
 
-
-{% highlight c# %}
-
+{% highlight vb %}
 
 Private gradientPanelExt1.CornerRadius = 14
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](GradientPanelExt_images/Overview_img388.jpeg)
 
-
-
 The CornerRadius can be turned off by giving a value of zero for it.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 gradientPanelExt1.CornerRadius = 0;
 
-
 {% endhighlight  %}
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 Private gradientPanelExt1.CornerRadius = 0
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](GradientPanelExt_images/Overview_img389.jpeg)
-
-
 
 ## Border Gap
 
@@ -86,22 +75,19 @@ BorderGap</td><td>
 Used to get or set the gap between the border and the margins.</td></tr>
 </table>
 
-
 The border gap for the GradientPanelExt can be set programmatically as given below.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 gradientPanelExt1.BorderGap = 40;
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private gradientPanelExt1.BorderGap = 40
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](GradientPanelExt_images/Overview_img390.jpeg)
-
-
