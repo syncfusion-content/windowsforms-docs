@@ -9,6 +9,18 @@ documentation: ug
 
 # Getting Started
 
+## Adding reference to PdfViewerControl and dependent assemblies
+
+### Installing Nuget packages
+
+Adding reference to Syncfusion assemblies through NuGet packages is illustrated in the [NuGet Packages](https://help.syncfusion.com/windowsforms/nuget-packages) section. 
+
+### Adding from the installed location
+
+The PdfViewerControl and dependent assembly dlls can be found from the below location in your machine. 
+
+system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}\
+
 ## Adding PdfViewerControl to an Application
 
 ### Adding in designer
