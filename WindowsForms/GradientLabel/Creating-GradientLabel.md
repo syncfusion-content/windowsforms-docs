@@ -7,9 +7,6 @@ control: Editors Package
 documentation: ug
 ---
 
-
-
-
 # Creating GradientLabel
 
 The GradientLabel control can be created in the following ways.
@@ -23,14 +20,10 @@ To create a GradientLabel control through designer,
 
   ![](GradientLabel-Images/Overview_img600.jpeg) 
 
-
-
 * Set the desired properties for the control through theProperty grid.
 * Run the application.
 
   ![](GradientLabel-Images/Overview_img601.jpeg) 
-
-
 
 {% seealso %}
 
@@ -46,95 +39,77 @@ GradientLabel can be created programmatically as detailed below.
 *  Add the required assembly references.
 *  Include the required namespace.
 
+{% tabs %}
 {% highlight c# %}
 
-	 using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-
-
-		Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
+{% endtabs %}
 
 *  Declare the GradientLabel control.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
-		private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel1;
+private Syncfusion.Windows.Forms.Tools.GradientLabel gradientLabel1;
 		
 {% endhighlight %}
 
+{% highlight vb %}
 
-{% highlight vbnet %}
-
-
-		Private gradientLabel1 As Syncfusion.Windows.Forms.Tools.GradientLabel
+Private gradientLabel1 As Syncfusion.Windows.Forms.Tools.GradientLabel
 
 {% endhighlight %}
+{% endtabs %}
 
 *  Initialize the control.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
-		this.gradientLabel1 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
+this.gradientLabel1 = new Syncfusion.Windows.Forms.Tools.GradientLabel();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-
-
-		Me.gradientLabel1 = New Syncfusion.Windows.Forms.Tools.GradientLabel()
+Me.gradientLabel1 = New Syncfusion.Windows.Forms.Tools.GradientLabel()
 
 {% endhighlight %}
-
+{% endtabs %}
 
 *  Set the properties for the GradientLabel control and add it to your form.
 
+{% tabs %}
 {% highlight c# %}
 
+this.gradientLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
+this.gradientLabel1.ForeColor = System.Drawing.SystemColors.Info;
+this.gradientLabel1.Text = "Syncfusion Control";
 
-
-		this.gradientLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
-
-		this.gradientLabel1.ForeColor = System.Drawing.SystemColors.Info;
-
-		this.gradientLabel1.Text = "Syncfusion Control";
-
-
-
-		// Add the GradientLabel control to the Form.
-
-		this.Controls.Add(this.gradientLabel1);
+// Add the GradientLabel control to the Form.
+this.Controls.Add(this.gradientLabel1);
 		
 {% endhighlight %}
 
+{% highlight vb %}
 
-{% highlight vbnet %}
+Me.gradientLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken
+Me.gradientLabel1.ForeColor = System.Drawing.SystemColors.Info
+Me.gradientLabel1.Text = "Syncfusion Control"
 
-
-
-		Me.gradientLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken
-
-		Me.gradientLabel1.ForeColor = System.Drawing.SystemColors.Info
-
-		Me.gradientLabel1.Text = "Syncfusion Control"
-
-
-
-		' Add the GradientLabel control to the Form.
-
-		Me.Controls.Add(Me.gradientLabel1)
+' Add the GradientLabel control to the Form.
+Me.Controls.Add(Me.gradientLabel1)
 
 {% endhighlight %}
+{% endtabs %}
 
 * Run the application.
 
