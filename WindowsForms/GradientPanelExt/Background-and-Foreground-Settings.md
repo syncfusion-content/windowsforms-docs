@@ -16,27 +16,21 @@ BackColor represents the background color used to display the text or the graphi
 
 ![](GradientPanelExt_images/Overview_img382.jpeg)
 
-
-
-
-
-
+{% tabs %}
 {% highlight c# %}
- gradientPanelExt1.BackColor = System.Drawing.Color.Transparent;
 
-{% endhighlight  %}
+gradientPanelExt1.BackColor = System.Drawing.Color.Transparent;
 
+{% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private gradientPanelExt1.BackColor = System.Drawing.Color.Transparent
-{% endhighlight  %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](GradientPanelExt_images/Overview_img383.jpeg)
-
-
 
 The colors and styles of the GradientPanelExt control can be set using the BackgroundColor properties, which have been explained below:
 
@@ -77,98 +71,70 @@ BackgroundImage</td><td>
 Specifies the background image for the control.</td></tr>
 </table>
 
-
 ![](GradientPanelExt_images/Overview_img384.jpeg)
-
-
 
 Alternatively, the BackgroundColor for the control can also be set using the following code snippet.
 
-
-
-
+{% tabs %}
 {% highlight c# %}
+
 gradientPanelExt1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, new     System.Drawing.Color[] {
-
-  System.Drawing.Color.Bisque,
-
-  System.Drawing.Color.LightSalmon,
-
-  System.Drawing.Color.LightCoral});
+System.Drawing.Color.Bisque,
+System.Drawing.Color.LightSalmon,
+System.Drawing.Color.LightCoral});
 
 {% endhighlight  %}
 
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private gradientPanelExt1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New System.Drawing.Color() {
-                  System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
-
+System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](GradientPanelExt_images/Overview_img385.jpeg)
-
-
 
 ## Image Settings
 
 A background image can be set for the gradient panel using the BackgroundImage property. User can set the layout for the background image using the BackgroundImageLayout property. These properties can be set programmatically using the below code snippets.
 
-
-
-
+{% tabs %}
 {% highlight c# %}
-gradientPanelExt1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gradientPanelExt1.BackgroundImage")));                
 
+gradientPanelExt1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gradientPanelExt1.BackgroundImage")));                
 gradientPanelExt1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 
-
 {% endhighlight  %}
 
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Me.gradientPanelExt1.BackgroundImage = (CType(resources.GetObject("gradientPanelExt1.BackgroundImage"),System.Drawing.Image))   
-
 Private Me.gradientPanelExt1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 
-
 {% endhighlight  %}
+{% endtabs %}
 
 ![](GradientPanelExt_images/Overview_img386.jpeg)
-
-
 
 ## Foreground
 
 The control's text can be customized by altering its Font properties. The ForeColor property represents the GradientPanelExt's text color. Using the following code snippet customizes the foreground of the GradientPanelExt.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 this.gradientPanelExt1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, ((System.Drawing.FontStyle)                                   (((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)
-
-  | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
+| System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 this.gradientPanelExt1.ForeColor = System.Drawing.Color.DarkGreen;
 
-
 {% endhighlight  %}
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 Private Me.gradientPanelExt1.Font = New System.Drawing.Font("Comic Sans MS", 9.75F, (CType                                                  (((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) Or System.Drawing.FontStyle.Underline),                              System.Drawing.FontStyle)), System.Drawing.GraphicsUnit.Point, (CByte(0)))
-
 Private Me.gradientPanelExt1.ForeColor = System.Drawing.Color.DarkGreen
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](GradientPanelExt_images/Overview_img387.jpeg)
-
-
