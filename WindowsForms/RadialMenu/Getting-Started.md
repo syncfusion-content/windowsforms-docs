@@ -3,18 +3,18 @@ layout: post
 title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
 platform: WindowsForms
-control: RadialMenu 
+control: RadialMenu
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 This section briefly describes how to design a Radial Menu control in a Windows Forms application.
 
-* Adding a Radial Menu Control
-* Configuring the Radial Menu Control
+* Adding a Radial Menu Control.
+* Configuring the Radial Menu Control.
 
-## Adding a Radial Menu Control
+## Adding a radial menu control
 
 1. Create a new Windows Forms Application Project in VS IDE through New ProjectWizard.
 2. Drop a Radial Menu Control in the Form.
@@ -23,7 +23,7 @@ This section briefly describes how to design a Radial Menu control in a Windows 
 
 
 
-##  Configuring the Radial Menu Control
+##  Configuring the radial menu control
 
 The most commonly used settings of the Radial Menu Control are configured either through Designer using the Smart tag or through the Properties window or through code.
 
@@ -35,20 +35,26 @@ The following screenshot displays the Radial Menu Control customization through 
 
 To add Radial Menu control to a Windows Forms Application through code, you can include the following Windows Forms Tools namespace:
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
-Create an instance of the Radial Menu control and add it to the form as given in the following code:
+{% endtabs %}
 
- {% highlight c# %}
+Create an instance of the Radial Menu control and add it to the form as given in the following code:
+ 
+ {% tabs %}
+
+ {% highlight C# %}
 
 Syncfusion.Windows.Forms.Tools.RadialMenu radialMenu1;
 
@@ -58,7 +64,7 @@ this.Controls.Add(radialMenu1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Dim radialMenu1 As Syncfusion.Windows.Forms.Tools.RadialMenu
 
@@ -68,7 +74,7 @@ Me.Controls.Add(radialMenu1)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 

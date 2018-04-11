@@ -13,7 +13,9 @@ documentation: ug
 
 We can get the current slider value by using the value changed event.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
     this.radialSlider1.ValueChanged += new Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventHandler(radialSlider1_ValueChanged);
 
@@ -33,7 +35,7 @@ We can get the current slider value by using the value changed event.
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
     AddHandler Me.radialSlider1.ValueChanged, AddressOf Me.radialSlider1_ValueChanged
 
@@ -44,5 +46,5 @@ We can get the current slider value by using the value changed event.
 
 {% endhighlight %}
 
-
+{% endtabs %}
 

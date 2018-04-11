@@ -10,29 +10,29 @@ documentation: ug
 
 # Customization
 
-## Caption Label
+## Caption label
 
 Caption label can be added to the MetroForm through designer or code.
 
-### Through Designer
+### Through designer
 
 1) Labels can be added to the CaptionBar using `CaptionLabels` collection property.
 
 ![](Customization_images/customization_img2.png)
 
-2) Add Labels through collection editor window
+2) Add Labels through collection editor window.
 
 ![](Customization_images/customization_img3.png)
 
 ![](Customization_images/CaptionLabel.png)
 
-### Through Code
+### Through code
 
-The following code sample shows how to add an Label to the MetroForm.
+The following code sample shows how to add a Label to the MetroForm.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 Syncfusion.Windows.Forms.CaptionLabel captionLabel1 = new Syncfusion.Windows.Forms.CaptionLabel();
 
@@ -70,34 +70,34 @@ Me.CaptionLabels.Add(captionLabel1)
 
 {% endtabs %}
 
-## Caption Images
+## Caption images
 
-Caption images can be added to the MetroForm through designer or code. 
+Caption images can be added to the MetroForm through designer or code.
 
-### Through Designer 
+### Through designer
 
 1) Images can be added to the CaptionBar using CaptionImages collection property.
 
 ![](Customization_images/Caption-Image-Customization_img1.jpeg)
 
 
-2) Add images through collection editor window
+2) Add images through collection editor window.
 
 ![](Customization_images/Caption-Image-Customization_img2.jpeg)
 
 
-3) Image can be added to the CaptionImage using Image property in Collection Editor
+3) Image can be added to the CaptionImage using Image property in Collection Editor.
 
 ![](Customization_images/Caption-Image-Customization_img3.jpeg)
 
 
-### Through Code
+### Through code
 
 The following code sample shows how to add an image to the caption bar of the Metro form.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 Syncfusion.Windows.Forms.CaptionImage captionImage1 = new Syncfusion.Windows.Forms.CaptionImage();
 
@@ -138,7 +138,7 @@ Me.CaptionImages.Add(captionImage1)
 ![](Customization_images/Place-an-Image-in-the-Caption-Bar_img1.png)
 
 
-## Caption Fore Color
+## Caption fore color
 
 Caption fore color can be customized using `CaptionForeColor` property.
 
@@ -162,7 +162,7 @@ Caption fore color can be customized using `CaptionForeColor` property.
 ![](Customization_images/Caption-Bar-Customization_img3.jpeg)
 
 
-## Caption Font
+## Caption font
 
 Font of the caption can be customized using `CaptionFont` property.
 
@@ -186,7 +186,7 @@ Me.CaptionFont = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.Fo
 ![](Customization_images/Caption-Bar-Customization_img4.jpeg)
 
 
-## Caption Button Color
+## Caption button color
 
 Caption button color can be customized using `CaptionButtonColor` property.
 
@@ -210,7 +210,7 @@ Me.CaptionButtonColor = System.Drawing.Color.Red
 ![](Customization_images/Caption-Bar-Customization_img5.jpeg)
 
 
-## Caption Button Hover Color
+## Caption button hover color
 
 Caption button hover color can be customized using `CaptionButtonHoverColor` property.
 
@@ -234,15 +234,15 @@ Me.CaptionButtonHoverColor = System.Drawing.Color.Lime
 ![](Customization_images/Caption-Bar-Customization_img6.png)
 
 
-## Caption Bar Background
+## Caption bar background
 
-User can customize the Brush effects in Caption Bar using the event CaptionBarPaint and the property CaptionBarBrush. 
+User can customize the Brush effects in Caption Bar using the event CaptionBarPaint and the property CaptionBarBrush.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Applied Gradient effects in Caption Bar. 
+// Applied Gradient effects in Caption Bar.
 this.CaptionBarBrush = new LinearGradientBrush(new Rectangle(0, 0, this.Width, this.CaptionBarHeight), Color.DarkRed, Color.Yellow, LinearGradientMode.BackwardDiagonal);
 
 // Event to customize the Caption Bar
@@ -278,29 +278,29 @@ End Sub
 
 ![](Customization_images/Caption-Bar-Customization_img7.png)
 
-## Mouse Events for Caption Image
+## Mouse events for caption image
 
-### ImageMouseDown Event
+### ImageMouseDown event
 
-The ImageMouseDown event is raised when the mouse pointer is over the caption image and a mouse button is pressed. 
+The ImageMouseDown event is raised when the mouse pointer is over the caption image and a mouse button is pressed.
 
-### ImageMouseUp Event
+### ImageMouseUp event
 
-The ImageMouseUp event is raised when the mouse pointer is over the caption image and a mouse button is released. 
+The ImageMouseUp event is raised when the mouse pointer is over the caption image and a mouse button is released.
 
-### ImageMouseEnter Event
+### ImageMouseEnter event
 
-The ImageMouseEnter event is raised when the mouse pointer enters the caption image.  
+The ImageMouseEnter event is raised when the mouse pointer enters the caption image.
 
-### ImageMouseLeave Event
+### ImageMouseLeave event
 
-The ImageMouseLeave event is raised when the mouse pointer leaves the caption image. 
+The ImageMouseLeave event is raised when the mouse pointer leaves the caption image.
 
-### ImageMouseMove Event
+### ImageMouseMove event
 
 The ImageMouseMove event is raised when the mouse pointer moves within the caption image.
 
-#### Event Data
+#### Event data
 
 The MouseEventHandler receives an argument of type MouseEventArgs that contains data related to this event. The following MouseEventArgs members provide information specific to this event.
 
@@ -348,7 +348,9 @@ Image</td><td>
 Gets or sets the image for the caption image.</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 foreach (CaptionImage image in this.CaptionImages)
 {
@@ -432,3 +434,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
