@@ -9,11 +9,11 @@ documentation: ug
 
 # Overview
 
-Essential Tools for Windows Forms supports Clock control in an application. This feature enables you to add customizable analog clocks in the application.  
+Essential Tools for Windows Forms supports Clock control in an application. This feature enables you to add customizable analog clocks in the application.
 
-## Use Case Scenarios
+## Use case scenarios
 
-You can create an application with a control that indicates time, using this feature. 
+You can create an application with a control that indicates time, using this feature.
 
 ## Properties
 
@@ -120,9 +120,10 @@ VisualStyle</td><td>
 Specifies office visual style.</td><td>
 enum</td></tr>
 </table>
-Events
 
-Events Table
+## Events
+
+Events table
 
 <table>
 <tr>

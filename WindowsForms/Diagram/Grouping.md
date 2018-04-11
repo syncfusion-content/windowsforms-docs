@@ -138,7 +138,7 @@ Group group = new Group();
 group.GroupNodePosition = GroupNodePositions.Absolute;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Group	
 Dim group As Group = New Group ()	

@@ -7,31 +7,29 @@ control: CommandBars
 documentation: ug
 ---
 
-# Popup Menu
+# Pop-up menu
 
-The .NET Context Menu cannot be added to the CommandBars created by the CommandBarController. This is substituted by the Syncfusion Popup Menu in the CommandBars.
+The .NET Context Menu cannot be added to the CommandBars created by the CommandBarController. This is substituted by the Syncfusion Pop-up Menu in the CommandBars.
 
-There are two ways of associating Popup Menus with the CommandBar.
+There are two ways of associating pop-up menus with the CommandBar. They are discussed in the following topics.
 
-They are discussed in the following topics.
+## Pop-up menu on clicking the drop-down button
 
-## Popup Menu on Clicking the DropDown Button
+To display the pop-up menu on the drop-down button of the CommandBar, follow the steps given below.
 
-To display the popup menu on the dropdown button of the CommandBar, follow the steps given below.
-
-1. Drag and drop the CommandBarController onto the form, then add a CommandBar to the form by right clicking on CommandBarController.
+1. Drag and drop the CommandBarController onto the form, then add a CommandBar to the form by right-clicking on CommandBarController.
 2. Add client controls to the CommandBar by just dragging and dropping the controls from the toolbox.
-3. Add the Syncfusion PopupMenu control to the form.
-4. Add Items to the PopupMenu control. This can be done as follows.
-5. Add a ParentBarItem to the PopupMenu control through the Add Default ParentBarItem design time verb.
+3. Add the Syncfusion Pop-up Menu control to the form.
+4. Add Items to the pop-up menu control. This can be done as follows.
+5. Add a ParentBarItem to the pop-up menu control through the Add Default ParentBarItem design time verb.
 
-   ![](Popup-Menu_images/Popup-Menu_img1.jpeg)  
+   ![](Popup-Menu_images/Popup-Menu_img1.jpeg)
 
 
 
 6. In the properties window, select the Items property. The BarItem Collection Editor will be opened. Click Add, to add the required number of Items.
 
-   ![](Popup-Menu_images/Popup-Menu_img2.jpeg) 
+   ![](Popup-Menu_images/Popup-Menu_img2.jpeg)
 
 
 
@@ -39,7 +37,7 @@ To display the popup menu on the dropdown button of the CommandBar, follow the s
 
 
 
-This can be done through code as follows.
+{% tabs %}
 
 {% highlight C# %}
 
@@ -132,7 +130,7 @@ this.barItem2.Text = "Windows Forms FAQ";
 this.barItem3.Text = "Syncfusion Sales";
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -215,7 +213,10 @@ Me.barItem2.Text = "Windows Forms FAQ"
 ' barItem3 
 
 Me.barItem3.Text = "Syncfusion Sales"
+
 {% endhighlight %}
+
+{% endtabs %}
 
 
  ![](Popup-Menu_images/Popup-Menu_img3.jpeg) 
@@ -228,20 +229,18 @@ Me.barItem3.Text = "Syncfusion Sales"
 
 {% seealso %}
 
-[Popup Menu on Right Clicking the CommandBar](#popup-menu-on-right-clicking-the-commandbar)
+[Pop-up menu on right-clicking the CommandBar](#popup-menu-on-right-clicking-the-commandbar)
 
 {% endseealso %}
 
-## Popup Menu on Right Clicking the CommandBar
+## Pop-up menu on right-clicking the CommandBar
 
-To show the Popup Menu on right-clicking on the CommandBar, follow the steps given below.
+To show the pop-up menu on right-clicking on the CommandBar, follow the steps given below.
 
-* Drag the CommandBarController onto the form, then add a CommandBar to the form by right clicking on CommandBarController.
-* Add a PopupMenusManager along with the PopupMenu component. This will add an extended property on the CommandBar properties window as XPContextMenu on popupMenusManager. You can set the required Popup Menu from the dropdown list.
+* Drag the CommandBarController onto the form, then add a CommandBar to the form by right-clicking on CommandBarController.
+* Add a PopupMenusManager along with the pop-up menu component. This will add an extended property on the CommandBar properties window as XPContextMenu on PopupMenusManager. You can set the required pop-up menu from the drop-down list.
 
-This can be done through code as follows.
-
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -338,7 +337,7 @@ this.barItem2.Text = "Windows Forms FAQ";
 this.barItem3.Text = "Syncfusion Sales";
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -431,6 +430,8 @@ Me.barItem3.Text = "Syncfusion Sales"
 
 {% endhighlight %}
 
+{% endtabs %}
+
  ![](Popup-Menu_images/Popup-Menu_img5.jpeg) 
 
 
@@ -441,6 +442,6 @@ Me.barItem3.Text = "Syncfusion Sales"
 
 {% seealso %}
 
-[Popup Menu on Clicking the DropDown Button](#popup-menu-on-clicking-the-dropdown-button)
+[Pop-up menu on clicking the drop-down button](#popup-menu-on-clicking-the-dropdown-button)
 
 {% endseealso %}

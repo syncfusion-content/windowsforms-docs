@@ -89,7 +89,7 @@ documentExplorer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 documentExplorer1.ShowNodeToolTips = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim lLayout As TableLayoutManager = New TableLayoutManager(Me.diagram1.Model, 7, 7)
 tlLayout.VerticalSpacing = 20
@@ -169,7 +169,7 @@ diagram1.LayoutManager = directedLayout;
 diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 DirectedTreeLayoutManager directedLayout = new  DirectedTreeLayoutManager(diagram1.Model,0, 20, 20);
 diagram1.LayoutManager = directedLayout;
@@ -249,7 +249,7 @@ this.diagram1.LayoutManager=radialLayout;
 this.diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim radialLayout As New RadialTreeLayoutManager(model1, 0, 20, 20)
 Me.diagram1.LayoutManager = radialLayout
@@ -321,7 +321,7 @@ this.diagram1.LayoutManager = symmetricLayout;
 this.diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim symmetricLayout As New SymmetricLayoutManager(diagram1.Model, 100)
 symmetricLayout.SpringFactor = 0.442
@@ -389,7 +389,7 @@ this.diagram1.LayoutManager = hierarchyLayout;
 this.diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim hierarchyLayout As New HierarchicLayoutManager(diagram1.Model, 0, 10, 20)
 Me.diagram1.LayoutManager = hierarchyLayout
@@ -455,7 +455,7 @@ evtArgs.Size = new SizeF(100, 100);
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim dtlm As New RadialTreeLayoutManager(Me.diagram1.Model, 0, 20, 20)
 AddHandler dtlm.PreferredLayout, AddressOf dtlm_PreferredLayout
@@ -516,12 +516,12 @@ this.diagram1.UpdateView();
 
 private void st_SubgraphPreferredLayout(object sender, SubgraphPreferredLayoutEventArgs evtArgs)
 {
-evtArgs.ResizeSubgraphNodes=false;
-evtArgs.RotationDegree=0;
+	evtArgs.ResizeSubgraphNodes=false;
+	evtArgs.RotationDegree=0;
 }
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim st As New SubgraphTreeLayoutManager(Me.diagram1.Model, 0, 20, 20)
 AddHandler st.SubgraphPreferredLayout, AddressOf st_SubgraphPreferredLayout
@@ -581,7 +581,7 @@ this.diagram1.LayoutManager = manager;
 this.diagram1.LayoutManager.UpdateLayout(null);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim manager As New OrgChartLayoutManager(Me.diagram.Model, RotateDirection.TopToBottom, 20, 50)
 Me.diagram1.LayoutManager = manager
@@ -617,7 +617,7 @@ As the OrgChartLayout follows a Waterfall model, whenever there is only one chil
 OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model, RotateDirection.TopToBottom, 20, 50, LayoutType.Waterfall, 1, true);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToBottom, 20, 50,LayoutType.Waterfall, 1, True)
 
@@ -639,7 +639,7 @@ manager.LeftMargin = 50;
 manager.TopMargin = 50;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToBottom, 20, 50)
 manager.LeftMargin = 50
@@ -661,7 +661,7 @@ OrgChartLayoutManager manager = new OrgChartLayoutManager(this.diagram.Model, Ro
 manager.ImprovePerformance = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim manager as New OrgChartLayoutManager(Me.diagram.Model,RotateDirection.TopToBottom, 20, 50)
 manager.ImprovePerformance = True

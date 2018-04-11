@@ -29,6 +29,7 @@ BackColor</td><td>
 Specifies the background color of the component.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -37,12 +38,13 @@ this.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img15.png)
 
@@ -91,6 +93,8 @@ Specifies the foreground color of this component, which is used to display text.
 </table>
 
 
+{% tabs %}
+
 {% highlight C# %}  
 
 this.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta;
@@ -98,13 +102,13 @@ this.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta;
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img16.png)
 
@@ -114,4 +118,4 @@ Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-S
 
 A Sample which demonstrates the Foreground Settings of MaskedEditBox control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

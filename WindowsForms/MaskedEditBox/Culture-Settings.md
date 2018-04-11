@@ -31,6 +31,7 @@ UseUserOverride</td><td>
 Specifies if the NumberFormatInfo used for formatting will use the User Overrides for the culture. The default value is set to 'True'.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -43,8 +44,7 @@ this.maskedEditBox1.UseUserOverride = true;
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.Culture = New System.Globalization.CultureInfo("ar-SA")
 
@@ -53,6 +53,8 @@ Me.maskedEditBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCu
 Me.maskedEditBox1.UseUserOverride = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img11.png)
 

@@ -51,7 +51,7 @@ this.diagram1.Model.HistoryManager.StartAtomicAction("Custom Action");
 this.diagram1.Model.HistoryManager.EndAtomicAction();
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.Model.HistoryManager.Undo()
 Me.diagram1.Model.HistoryManager.Redo()

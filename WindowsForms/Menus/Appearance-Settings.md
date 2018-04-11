@@ -3,14 +3,14 @@ layout: post
 title: Appearance Settings | WindowsForms | Syncfusion
 description: appearance settings
 platform: WindowsForms
-control: Menus Package 
+control: Menus Package
 documentation: ug
 ---
-# Appearance Settings
+# Appearance settings
 
-This section discusses the below appearance related topics.
+This section discusses about appearance related topics.
 
-## Bar Styles
+## Bar styles
 
 The BarStyle property of the bar object lets users customize certain behavior and look-and-feel of the toolbar, such as visibility, whether it should be drawn in multi-line mode or whether the toolbar should be treated like a status bar that always gets shown at the bottom of the form.
 
@@ -19,12 +19,12 @@ The BarStyle property of the bar object lets users customize certain behavior an
 <table>
 <tr>
 <th>
-Bar.BarStyle Property</th><th>
+Bar.BarStyle property</th><th>
 Description</th></tr>
 <tr>
 <td>
 AllowQuickCustomizing</td><td>
-This will draw an arrow button to the right side of the toolbar that will allow the user to drop down a menu from which they can select hidden items, add or remove buttons and invoke Customize dialog. {{ '_Note:_' | markdownify }} This is effective only with IsMainMenu unchecked.</td></tr>
+This will draw an arrow button to the right side of the toolbar that will allow the user to drop-down a menu from which they can select hidden items, add or remove buttons and invoke Customize dialog. {{ '_Note:_' | markdownify }} This is effective only with IsMainMenu unchecked.</td></tr>
 <tr>
 <td>
 DrawDragBorder</td><td>
@@ -52,16 +52,16 @@ Forces the bar to occupy the full row when docked to Form's border.</td></tr>
 <tr>
 <td>
 Visible</td><td>
-Hides / shows a bar.</td></tr>
+Hides/shows a bar.</td></tr>
 </table>
 
 
 ![](Overview_images/Overview_img154.jpeg)
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.bar1.BarStyle = ((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle)((((((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.AllowQuickCustomizing | Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.IsMainMenu)| Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.MultiLine) 
@@ -73,16 +73,20 @@ this.bar1.BarStyle = ((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle)((((((((S
 | Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.TextBelowImage)));
 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
+
 Me.bar1.BarStyle = (CType((((((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.AllowQuickCustomizing Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.IsMainMenu) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.MultiLine) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.RotateWhenVertical) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.Visible) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.UseWholeRow) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.DrawDragBorder) Or Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle.TextBelowImage), Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle))
-{% endhighlight  %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
-## Colors for Menus and Toolbars
+## Colors for menus and toolbars
 
 Essential Studio comes with three classes to provide custom colors for the Menus. 
 
@@ -94,7 +98,7 @@ Essential Studio comes with three classes to provide custom colors for the Menus
 ### MenuColors
 
 
-The Syncfusion.Windows.Forms.Tools.XPMenus.MenuColors class includes static properties that allow you to change them to get custom background colors for the different portions of the menus and toolbars. Some of the properties include MainMenuBackColor, CommandBarBackColor and StatusBarBackColor.
+The Syncfusion.Windows.Forms.Tools.XPMenus.MenuColors class includes static properties that allow you to change them to get custom background colors for the different portions of the menus and toolbars. Some of the properties include MainMenuBackColor, CommandBarBackColor, and StatusBarBackColor.
 
 The following methods of MenuColors class can be invoked to set the custom color.
 
@@ -108,7 +112,7 @@ Description</th></tr>
 <tr>
 <td>
 CommandBarBackColor</td><td>
-Gets / sets the background color for a toolbar / command bar.</td></tr>
+Gets/sets the background color for a toolbar/command bar.</td></tr>
 <tr>
 <td>
 CheckedSelColor</td><td>
@@ -116,100 +120,101 @@ Sets the selected color for a checked menu item.</td></tr>
 <tr>
 <td>
 DisabledMenuTextColorBase</td><td>
-Gets / sets the text color base for the text in the disabled menu items.</td></tr>
+Gets/sets the text color base for the text in the disabled menu items.</td></tr>
 <tr>
 <td>
 DisabledToolbarItemTextColorBase</td><td>
-Gets / sets the text color base for the text in the disabled toolbar items.</td></tr>
+Gets/sets the text color base for the text in the disabled toolbar items.</td></tr>
 <tr>
 <td>
 DropDownBorderColor</td><td>
-Gets / sets the border color for a drop-down menu.</td></tr>
+Gets/sets the border color for a drop-down menu.</td></tr>
 <tr>
 <td>
 ExpandedMenuStripBackColor</td><td>
-Gets / sets the Back color for the expanded, left-aligned menu strip region. This is the region you see when a partial menu gets expanded to show all the menu items.</td></tr>
+Gets/sets the Back color for the expanded, left-aligned menu strip region. This is the region you see when a partial menu gets expanded to show all the menu items.</td></tr>
 <tr>
 <td>
 FloatingCommandBarCaptionColor</td><td>
-Gets / sets the Caption background color for a floating toolbar / command bar.</td></tr>
+Gets/sets the Caption background color for a floating toolbar/command bar.</td></tr>
 <tr>
 <td>
 InactiveItemAlphaBlendFactor</td><td>
-Gets / sets the alpha-blend factor to use to shade the inactive menu item's icons. (255 for no alpha-blending; 0 will completely hide the item).</td></tr>
+Gets/sets the alpha-blend factor to use to shade the inactive menu item's icons. (255 for no alpha-blending; 0 will completely hide the item).</td></tr>
 <tr>
 <td>
 MainMenuBackColor</td><td>
-Gets / sets the background color for the main-menu bar.</td></tr>
+Gets/sets the background color for the main-menu bar.</td></tr>
 <tr>
 <td>
 MenuActiveTextColor</td><td>
-Gets / sets the active text color of the menu and toolbar items.</td></tr>
+Gets/sets the active text color of the menu and toolbar items.</td></tr>
 <tr>
 <td>
 MenuBGColor</td><td>
-Sets the background color for a drop down menu.</td></tr>
+Sets the background color for a drop-down menu.</td></tr>
 <tr>
 <td>
 MenuLeftStripColor</td><td>
-Gets / sets the color for the left aligned strip in a drop-down menu where images and check boxes are shown.</td></tr>
+Gets/sets the color for the left aligned strip in a drop-down menu where images and check boxes are shown.</td></tr>
 <tr>
 <td>
 MenuTextColor</td><td>
-Gets / sets the text color of the menu and toolbar items.</td></tr>
+Gets/sets the text color of the menu and toolbar items.</td></tr>
 <tr>
 <td>
 PressedSelColor</td><td>
-Gets / sets the selected-pressed color for a menu item in a toolbar.</td></tr>
+Gets/sets the selected-pressed color for a menu item in a toolbar.</td></tr>
 <tr>
 <td>
 SelBorderColor</td><td>
-Gets / sets the border color for a selected menu item in a toolbar.</td></tr>
+Gets/sets the border color for a selected menu item in a toolbar.</td></tr>
 <tr>
 <td>
 SelColor</td><td>
-Gets / sets the selected color for a menu item in a toolbar.</td></tr>
+Gets/sets the selected color for a menu item in a toolbar.</td></tr>
 <tr>
 <td>
 SelTextColor</td><td>
-Gets / sets the selected text color for an item in a toolbar.</td></tr>
+Gets/sets the selected text color for an item in a toolbar.</td></tr>
 <tr>
 <td>
 StatusBarBackColor</td><td>
-Gets / sets the background color for the Status Bar.</td></tr>
+Gets/sets the background color for the Status Bar.</td></tr>
 </table>
 
 
 Add the following code snippet to get Custom colors for the menu bar items.
 
+{% tabs %}
 
+{% highlight C# %}
 
-{% highlight c# %}
-
-//Set the background color for a drop down menu
+//Set the background color for a drop-down menu
 
 MenuColors.MenuBGColor = Color.Pink;
 
-//Set border color for a drop down menu
+//Set border color for a drop-down menu
 
 MenuColors.DropDownBorderColor = Color.Aqua;
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
-
-
-'Set the background color for a drop down menu
+'Set the background color for a drop-down menu
 
 Private MenuColors.MenuBGColor = Color.Pink
 
-'Set border color for a drop down menu
+'Set border color for a drop-down menu
 
 Private MenuColors.DropDownBorderColor = Color.Aqua
-{% endhighlight  %}
 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img155.jpeg) 
 
@@ -234,19 +239,19 @@ Description</th></tr>
 <tr>
 <td>
 CheckedColor</td><td>
-Gets / sets the background color of a check box in the drop-down menu margin or a checked item in the toolbar.</td></tr>
+Gets/sets the background color of a check box in the drop-down menu margin or a checked item in the toolbar.</td></tr>
 <tr>
 <td>
 CheckedSelColor</td><td>
-Gets / sets the background color of a selected check box in the drop-down menu margin or a checked item in the toolbar.</td></tr>
+Gets/sets the background color of a selected check box in the drop-down menu margin or a checked item in the toolbar.</td></tr>
 <tr>
 <td>
 CommandBarDropDownColorDark</td><td>
-Gets or sets the dark-gradient color of quick customize dropdown button.</td></tr>
+Gets or sets the dark-gradient color of quick customize drop-down button.</td></tr>
 <tr>
 <td>
 CommandBarDropDownColorLight</td><td>
-Gets or sets the light-gradient color of quick customize dropdown button.</td></tr>
+Gets or sets the light-gradient color of quick customize drop-down button.</td></tr>
 <tr>
 <td>
 ControlBorderColorDark</td><td>
@@ -270,7 +275,7 @@ Gets or sets the right-gradient color of docked bars.</td></tr>
 <tr>
 <td>
 DropDownBorderColor</td><td>
-Gets / sets the border color of a drop-down menu.</td></tr>
+Gets/sets the border color of a drop-down menu.</td></tr>
 <tr>
 <td>
 FloatingCommandBarCaptionColor</td><td>
@@ -298,11 +303,11 @@ Gets or sets the light-gradient highlight color of groupBarItem.</td></tr>
 <tr>
 <td>
 GroupBarItemTextColor</td><td>
-Gets / sets the color of the text in a GroupBar item.</td></tr>
+Gets/sets the color of the text in a GroupBar item.</td></tr>
 <tr>
 <td>
 GroupBarItemTextSelectedHighlightColor</td><td>
-Gets / sets the highlight color to be used for the selected text of the GroupBar item.</td></tr>
+Gets/sets the highlight color to be used for the selected text of the GroupBar item.</td></tr>
 <tr>
 <td>
 GroupBarSelectedColorDark</td><td>
@@ -322,11 +327,11 @@ Gets or sets the light-gradient highlight color of selected groupBarItem.</td></
 <tr>
 <td>
 MenuExpandedItemsMarginColorLeft</td><td>
-Gets / sets the left-gradient color of the drop-down menu margin of the expanded menu items.</td></tr>
+Gets/sets the left-gradient color of the drop-down menu margin of the expanded menu items.</td></tr>
 <tr>
 <td>
 MenuExpandedItemsMarginColorRight</td><td>
-Gets / sets the right-gradient color of the drop-down menu margin of the expanded menu items.</td></tr>
+Gets/sets the right-gradient color of the drop-down menu margin of the expanded menu items.</td></tr>
 <tr>
 <td>
 MenuItemHotColorDark</td><td>
@@ -346,31 +351,31 @@ Gets or sets the light-gradient color of quick customize button when it is press
 <tr>
 <td>
 MenuMarginColorDark</td><td>
-Gets / sets the right-gradient color of the drop-down menu margin.</td></tr>
+Gets/sets the right-gradient color of the drop-down menu margin.</td></tr>
 <tr>
 <td>
 MenuMarginColorLight</td><td>
-Gets / sets the left-gradient color of the drop-down menu margin.</td></tr>
+Gets/sets the left-gradient color of the drop-down menu margin.</td></tr>
 <tr>
 <td>
 PressedSelColor</td><td>
-Gets / sets the pressed-selected color for a menu item in a toolbar.</td></tr>
+Gets/sets the pressed-selected color for a menu item in a toolbar.</td></tr>
 <tr>
 <td>
 SelBorderColor</td><td>
-Gets / sets the border color of a menu item selection in the drop-down menus and toolbars.</td></tr>
+Gets/sets the border color of a menu item selection in the drop-down menus and toolbars.</td></tr>
 <tr>
 <td>
 SelColor</td><td>
-Gets / sets the selected color for a menu item in a drop-down menu.</td></tr>
+Gets/sets the selected color for a menu item in a drop-down menu.</td></tr>
 <tr>
 <td>
 SeparatorColor</td><td>
-Gets / sets the color of the separator line between the bar items.</td></tr>
+Gets/sets the color of the separator line between the bar items.</td></tr>
 </table>
 
 
-### Office2007 Colors
+### Office2007 colors
 
 The following table lists the members exposed by Office2007Colors class.
 
@@ -384,27 +389,27 @@ Description</th></tr>
 <tr>
 <td>
 BarItemCheckBorderColor</td><td>
-Gets / sets color for the checked bar item.</td></tr>
+Gets/sets color for the checked bar item.</td></tr>
 <tr>
 <td>
 BarItemCheckDarkColor </td><td>
-Gets / sets dark color for background of the checked bar item.</td></tr>
+Gets/sets dark color for background of the checked bar item.</td></tr>
 <tr>
 <td>
 BarItemCheckFlashColor </td><td>
-Gets / sets color for flash of the checked bar item.</td></tr>
+Gets/sets color for flash of the checked bar item.</td></tr>
 <tr>
 <td>
 BarItemCheckLightColor </td><td>
-Gets / sets light color for background of the checked bar item.</td></tr>
+Gets/sets light color for background of the checked bar item.</td></tr>
 <tr>
 <td>
 Bar itemHighlightBorderColor </td><td>
-Gets / sets color for highlighted border of the BarItem.</td></tr>
+Gets/sets color for highlighted border of the BarItem.</td></tr>
 <tr>
 <td>
 BarItemPressBorderColor </td><td>
-Gets / sets color for pressed border of the BarItem.</td></tr>
+Gets/sets color for pressed border of the BarItem.</td></tr>
 <tr>
 <td>
 BarItemPressFlashColor</td><td>
@@ -492,11 +497,11 @@ Gets or sets light color for background of the DropDownBarItem.</td></tr>
 <tr>
 <td>
 DropDownDarkColor</td><td>
-Gets or sets dark color for dropdown button of the CommandBar.</td></tr>
+Gets or sets dark color for drop-down button of the CommandBar.</td></tr>
 <tr>
 <td>
 DropDownHighlightDarkColor</td><td>
-Gets or sets dark color for highlight dropdown button of the CommandBar.</td></tr>
+Gets or sets dark color for highlight drop-down button of the CommandBar.</td></tr>
 <tr>
 <td>
 DropDownHighlightLightColor</td><td>
@@ -504,15 +509,15 @@ Gets or sets light color for highlight dropdown button of the CommandBar.</td></
 <tr>
 <td>
 DropDownLightColor</td><td>
-Gets or sets light color for dropdown button of the CommandBar.</td></tr>
+Gets or sets light color for drop-down button of the CommandBar.</td></tr>
 <tr>
 <td>
 DropDownPressedDarkColor</td><td>
-Gets or sets dark color for pressed dropdown button of the CommandBar.  </td></tr>
+Gets or sets dark color for pressed drop-down button of the CommandBar.  </td></tr>
 <tr>
 <td>
 DropDownPressedLightColor</td><td>
-Gets or sets light color for pressed dropdown button of the CommandBar. </td></tr>
+Gets or sets light color for pressed drop-down button of the CommandBar. </td></tr>
 <tr>
 <td>
 FloatBackgroundColor</td><td>
@@ -536,11 +541,11 @@ Gets or sets light color of the floating CommandBar.</td></tr>
 <tr>
 <td>
 FloatHighlightButtonBorderColor</td><td>
-Gets or sets border color for highlighted dropdown button of the floating CommandBar.</td></tr>
+Gets or sets border color for highlighted drop-down button of the floating CommandBar.</td></tr>
 <tr>
 <td>
 FloatHighlightButtonColor</td><td>
-Gets or sets color for highlighted dropdown button of the floating CommandBar.</td></tr>
+Gets or sets color for highlighted drop-down button of the floating CommandBar.</td></tr>
 <tr>
 <td>
 FloatLightBorderColor</td><td>
@@ -548,11 +553,11 @@ Gets or sets color for light border of the floating CommandBar.</td></tr>
 <tr>
 <td>
 FloatPressButtonBorderColor</td><td>
-Gets or sets border color for pressed dropdown button of the floating CommandBar.</td></tr>
+Gets or sets border color for pressed drop-down button of the floating CommandBar.</td></tr>
 <tr>
 <td>
 FloatPressButtonColor</td><td>
-Gets or sets color for pressed dropdown button of the floating CommandBar.</td></tr>
+Gets or sets color for pressed drop-down button of the floating CommandBar.</td></tr>
 <tr>
 <td>
 FloatPressCloseButtonButtonColor </td><td>
@@ -664,27 +669,27 @@ Gets or sets the light color for highlighted ComboButton of the menu.</td></tr>
 <tr>
 <td>
 MenuComboButtonPushed1Color </td><td>
-Pressed color of combo button in menu dropdown.</td></tr>
+Pressed color of combo button in menu drop-down.</td></tr>
 <tr>
 <td>
 MenuComboButtonPushed2Color </td><td>
-Color of combo button in menu dropdown (Top half).</td></tr>
+Color of combo button in menu drop-down (Top half).</td></tr>
 <tr>
 <td>
 MenuComboButtonPushed3Color </td><td>
-Color of combo button in menu dropdown (Middle).</td></tr>
+Color of combo button in menu drop-down (Middle).</td></tr>
 <tr>
 <td>
 MenuComboButtonPushed4Color </td><td>
-Color of combo button in menu dropdown (Bottom half).</td></tr>
+Color of combo button in menu drop-down (Bottom half).</td></tr>
 <tr>
 <td>
 MenuItemArrowDarkColor </td><td>
-Arrow button dark color of submenu parent / dropdown barItem.</td></tr>
+Arrow button dark color of submenu parent/drop-down barItem.</td></tr>
 <tr>
 <td>
 MenuItemArrowLightColor </td><td>
-Arrow button light color of submenu parent / dropdown barItem.</td></tr>
+Arrow button light color of submenu parent/drop-down barItem.</td></tr>
 <tr>
 <td>
 MenuItemBorderColor </td><td>
@@ -729,7 +734,7 @@ A sample which demonstrates setting colors for Menus using Office2007Colors clas
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 
-## Visual Styles
+## Visual styles
 
 The MainFrameBarManager control for Windows Forms Supports for below listed Visual Styles. It can easily modify the look using the built-in visual styles.
 
@@ -755,8 +760,6 @@ The MainFrameBarManager control for Windows Forms Supports for below listed Visu
 
 This option is used to set the Default theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -767,7 +770,7 @@ this.MainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Default;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Default
 
@@ -783,8 +786,6 @@ Me.MainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Default
 
 This option helps to set the Office2007 theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -795,7 +796,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office200
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' office2007
 
@@ -808,13 +809,11 @@ Me.MainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.office2007
 
 ![](Overview_images/Overview_img174.png) 
 
-Office2007 Theme also allows to specify the different color schemes. They can be Blue, Silver, Black and Managed.
+Office2007 Theme also allows to specify the different color schemes. They can be Blue, Silver, Black, and Managed.
 
 **Blue**
 
 This option helps to set the Blue color scheme of Office2007 Theme.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -828,7 +827,7 @@ this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2007Theme.Blue
 
@@ -846,8 +845,6 @@ Me.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007The
 
 This option helps to set the Black color scheme of Office2007 Theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -860,7 +857,7 @@ this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2007Theme.Black
 
@@ -878,8 +875,6 @@ Me.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007The
 
 This option helps to set the silver color scheme of Office2007 Theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -892,7 +887,7 @@ this.mainFrameBarManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ‘ Office2007ThemeSilver
 
@@ -910,8 +905,6 @@ Me.mainFrameBarManager1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Them
 
 This option helps to apply the custom colors to the MainFrameBarManager by setting Office2007Theme to **Managed** and specifying the custom color through the ApplyManagedColors method as follows.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -927,7 +920,7 @@ Office2007Colors.ApplyManagedColors(this, Color.Crimson);;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Managed
 
@@ -947,8 +940,6 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Crimson)
 
 This option helps to set the Office2007 Outlook theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -959,7 +950,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office200
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Outlook2007
 
@@ -975,8 +966,6 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007O
 
 This option helps to set the Office2010 theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -987,7 +976,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2010
 
@@ -999,13 +988,11 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 ![](Overview_images/Overview_img180.png) 
 
-You can also specify the different color schemes for Office 2010 visual styles. They can be Blue, Silver, Black and managed.
+You can also specify the different color schemes for Office 2010 visual styles. They can be Blue, Silver, Black, and managed.
 
 **Blue**
 
 This option helps to set the Blue color scheme of Office2010 Theme.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -1018,7 +1005,7 @@ this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010T
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2010Theme.Blue
 
@@ -1035,8 +1022,6 @@ Me.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010The
 
 This option helps to set the Black color scheme of Office2010 Theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -1048,7 +1033,7 @@ this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010T
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2010Theme.Black
 
@@ -1065,8 +1050,6 @@ Me.mainFrameBarManager1.Office2010Theme .= Syncfusion.Windows.Forms.Office2010Th
 
 This option helps to set the silver color scheme of Office2010 Theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -1078,7 +1061,7 @@ this.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010T
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2007ThemeSilver
 
@@ -1095,8 +1078,6 @@ Me.mainFrameBarManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010The
 
 This option helps to apply the custom colors to the MainFrameBarManager by setting Office2010Theme to **Managed** and specifying the custom color through the ApplyManagedColors method as follows.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -1109,7 +1090,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Managed
 
@@ -1127,8 +1108,6 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
 
 This option helps to set the Metro theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -1139,7 +1118,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Metro
 
@@ -1155,8 +1134,6 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
 
 This option helps to set the Office2016Colorful theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -1167,7 +1144,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' office2016Colorful
 
@@ -1183,8 +1160,6 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016C
 
 This option helps to set the Office2016DarkGray theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -1195,7 +1170,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' office2016DarkGray
 
@@ -1221,7 +1196,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'office2016Black
 
@@ -1247,7 +1222,7 @@ this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' office2016White
 
@@ -1259,12 +1234,13 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016W
 
 ![](Overview_images/Overview_img189.png)
 
-## Customize Dialog Appearance
+## Customize dialog appearance
 
-Foreground and Background Settings
+Foreground and background settings
 
-Fore color, back color and the Font style can be set for the Customize Dialog using ForeColor, BackColor and Font properties respectively.
+Fore color, back color, and the Font style can be set for the Customize Dialog using ForeColor, BackColor, and Font properties respectively.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -1288,7 +1264,7 @@ mainFrameBarManager1.CustomizationDialog.Font = new Font("Arial", 8, System.Draw
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -1310,18 +1286,21 @@ mainFrameBarManager1.CustomizationDialog.Font = New Font("Arial", 8, System.Draw
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img168.jpeg) 
 
 
 
-### Size Settings
+### Size settings
 
-Size and the client size of the Customize Dialog can be controlled using the Size property as follows.
+Size and the client size of the Customize Dialog can be controlled using the Size property as follows:
 
 
-
+{% tabs %}
 
 {% highlight C# %}
+
 //to change the size of entire dialog
 
 this.mainFrameBarManager1.CustomizationDialog.Size = new Size(700, 800);
@@ -1332,7 +1311,8 @@ this.mainFrameBarManager1.CustomizationDialog.ClientSize = new Size(600, 700);
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
@@ -1343,14 +1323,17 @@ Me.mainFrameBarManager1.CustomizationDialog.Size = New Size(700, 800)
 'to change the client area 
 
 Me.mainFrameBarManager1.CustomizationDialog.ClientSize = New Size(600, 700)
+
 {% endhighlight %}
 
+{% endtabs %}
 
-## Multiline Support for ParentBarItem in MainFrameBarManager
 
-You can customize and display the ParentBarItem text in Multiline format by using “MultiLine” property. 
+## Multiline support for ParentBarItem in MainFrameBarManager
 
-API Details:
+You can customize and display the ParentBarItem text in Multiline format by using “MultiLine” property.
+
+API details:
 
 
 
@@ -1370,6 +1353,8 @@ Enables MultiLine in MainFrameBarManager</td></tr>
 
 The following code example illustrates how to set MultiLine property in C# and VB language.
 
+{% tabs %}
+
 {% highlight C# %}
 
   this.parentBarItem1.MultiLine = true;
@@ -1378,25 +1363,27 @@ The following code example illustrates how to set MultiLine property in C# and V
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
     Me.parentBarItem1.MultiLine = true
 
 {% endhighlight %}
 
+{% endtabs %}
 
 
 The following screenshot shows how the ParentBarItem is displayed in Multiline.
 
 ![](Overview_images/Overview_img169.png)
 
-## Text Orientation in ParentBarItem of MainFrameBarManager
+## Text orientation in ParentBarItem of MainFrameBarManager
 
 You can align the ParentBarItem text in vertical or horizontal manner by using “Orientation” property.
  
 
-### Horizontal Alignment:
+### Horizontal alignment
 
 The following image illustrates how the parent bar items are displayed in horizontal alignment.
 
@@ -1407,7 +1394,7 @@ The following image illustrates how the parent bar items are displayed in horizo
 ![Horizontal](Overview_images/Overview_img171.png) 
 
 
-### Vertical Alignment:
+### Vertical alignment
 
 The following image illustrates how the parent bar items are displayed in vertical alignment.
 
@@ -1415,7 +1402,7 @@ The following image illustrates how the parent bar items are displayed in vertic
 
 
 
-### API Details:
+### API details
 
 
 
@@ -1436,9 +1423,10 @@ Gets or sets the text alignment of ParentBarItem in MainframeBarManager.</td></t
 The following code example shows how to set the vertical and horizontal text alignment.
 
 
-
+{% tabs %}
 
 {% highlight C# %}
+
 // To set Vertical text alignment.
 
 this.parentBarItem1.Orientation= Syncfusion.Windows.Forms.Tools.XPMenus.Orientation.Vertical;
@@ -1453,7 +1441,7 @@ this.parentBarItem1. Orientation=Syncfusion.Windows.Forms.Tools.XPMenus.Orientat
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -1469,3 +1457,5 @@ Me.parentBarItem1. Orientation= Syncfusion.Windows.Forms.Tools.XPMenus. Orientat
 
 
 {% endhighlight %}
+
+{% endtabs %}

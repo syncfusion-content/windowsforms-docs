@@ -7,23 +7,27 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Digital Clock
+# Digital clock
 
 The DigitalClock is implemented as an extension to the existing Clock control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
 
 You can use the DigitalClock in your application by simply switching the ClockType of the existing ClockControl as described in the following sample code:
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Appearance
 
@@ -31,11 +35,13 @@ The DigitalClock offers a wide range of options to customize its appearance. It 
 
 ### Frames
 
-To enable the background frames, the DigitalClock should be enabled with the property ShowClockFrame set to true. 
+To enable the background frames, the DigitalClock should be enabled with the property ShowClockFrame set to true.
 
 #### Rectangular frame
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
     this.clock1.ShowClockFrame = true;
 
@@ -43,18 +49,22 @@ To enable the background frames, the DigitalClock should be enabled with the pro
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
     Me.clock1.ShowClockFrame = true
     Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.RectangularFrame
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img100.png) 
 
 #### Circular frame
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
     this.clock1.ShowClockFrame = true;
 
@@ -62,12 +72,14 @@ To enable the background frames, the DigitalClock should be enabled with the pro
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ShowClockFrame = true
 Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img101.png) 
 
@@ -75,7 +87,9 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFram
 
 #### Square frame
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
     this.clock1.ShowClockFrame = true;
 
@@ -83,22 +97,26 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFram
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ShowClockFrame = true
 Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img102.png) 
 
 ### Shapes
 
-To enable background shapes in the Clock control, the “ShowClockFrame” property should be disabled so that the control can support rendering the background shapes. 
+To enable background shapes in the Clock control, the “ShowClockFrame” property should be disabled so that the control can support rendering the background shapes.
 
 #### Rectangular shape
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
     this.clock1.ShowClockFrame = false;
 
@@ -106,14 +124,14 @@ To enable background shapes in the Clock control, the “ShowClockFrame” prope
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ShowClockFrame = False
 Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFrame
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Overview_images/Overview_img103.png) 
 
@@ -121,7 +139,9 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFram
 
 #### RoundedRectangular shape
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
     this.clock1.ShowClockFrame = false;
 
@@ -129,12 +149,14 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.CircularFram
 
  {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ShowClockFrame = False
 Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockShapes.CircularFrame
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img104.png) 
 
@@ -142,7 +164,9 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockShapes.CircularFram
 
 #### Circular shape
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
   this.clock1.ShowClockFrame = false;
 
@@ -150,12 +174,14 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockShapes.CircularFram
 
 {% endhighlight %}
  
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ShowClockFrame = false
 Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img105.png)
 
@@ -163,7 +189,9 @@ Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle
 
 #### Square shape
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
   this.clock1.ShowClockFrame = false;
 
@@ -171,20 +199,24 @@ Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Circle
 
  {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ShowClockFrame = false
 Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square
 
  {% endhighlight %}
 
-![](Overview_images/Overview_img106.png) 
+ {% endtabs %}
+
+![](Overview_images/Overview_img106.png)
 
 
 
 #### RoundedSquare shape
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
   this.clock1.ShowClockFrame = false;
 
@@ -192,12 +224,14 @@ Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Square
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ShowClockFrame = false
 Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquare
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img107.png) 
 
@@ -207,7 +241,9 @@ Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquar
 
 The foreground color for the DigitalClock can be changed using the ForeColor property. This color will be reflected in the text of the control.
 
-{% highlight c# %}            
+{% tabs %}
+
+{% highlight C# %}
 
     this.clock1.ForeColor = System.Drawing.Color.Yellow;
 
@@ -215,11 +251,13 @@ The foreground color for the DigitalClock can be changed using the ForeColor pro
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
    Me.clock1.ForeColor = System.Drawing.Color.Yellow
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img108.png) 
 
@@ -228,7 +266,9 @@ The foreground color for the DigitalClock can be changed using the ForeColor pro
 
 The background color for the DigitalClock can be changed using the BackgroundColor property. This color will be reflected in the background of the control.
 
-{% highlight c# %}         
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -240,7 +280,7 @@ The background color for the DigitalClock can be changed using the BackgroundCol
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
    Me.clock1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
 
@@ -248,13 +288,17 @@ The background color for the DigitalClock can be changed using the BackgroundCol
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img109.png) 
 
 #### Border color
 
 The border color for the control will be reflected only when the control is assigned with the background shapes as follows:
 
-{% highlight c# %}    
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -268,7 +312,7 @@ The border color for the control will be reflected only when the control is assi
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
    Me.clock1.BorderColor = System.Drawing.Color.Yellow
 
@@ -278,7 +322,7 @@ The border color for the control will be reflected only when the control is assi
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Overview_images/Overview_img110.png)
 
@@ -288,7 +332,9 @@ The border color for the control will be reflected only when the control is assi
 
 To display or hide the week days and current date in the DigitalClock, the DisplayDates property can be used.
 
- {% highlight c# %}         
+{% tabs %}
+
+{% highlight C# %}
 
           this.clock1.DisplayDates = true;
 
@@ -296,15 +342,14 @@ To display or hide the week days and current date in the DigitalClock, the Displ
 
 
 
-{% highlight vbnet %}           
+{% highlight VB %}
 
         Me.clock1.DisplayDates = True
 
 {% endhighlight %}
 
+{% endtabs %}
 
-
-The following images illustrate the DigitalClock with and without the week days and dates:
 
 ![](Overview_images/Overview_img111.png) 
 
@@ -317,7 +362,9 @@ The following images illustrate the DigitalClock with and without the week days 
 
 To display or hide the hour designator (AM and PM) in the DigitalClock, the ShowHourDesignator property can be used.
 
-{% highlight c# %}        
+{% tabs %}
+
+{% highlight C# %}     
 
           this.clock1.ShowHourDesignator = false;
 
@@ -325,16 +372,15 @@ To display or hide the hour designator (AM and PM) in the DigitalClock, the Show
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
           Me.clock1.ShowHourDesignator = false
 
 {% endhighlight %}
 
+{% endtabs %}
 
 
-
-The following images illustrate the DigitalClock with and without the hour designator:
 
 ![](Overview_images/Overview_img113.png) 
 
@@ -343,15 +389,17 @@ The following images illustrate the DigitalClock with and without the hour desig
 ![](Overview_images/Overview_img114.png) 
 
 
-### Custom Time Clock
+### Custom time clock
 
-To enable the custom time, the DigitalClock should be enabled with the property ShowCustomTimeClock set as true. 
+To enable the custom time, the DigitalClock should be enabled with the property ShowCustomTimeClock set as true.
 
-#### Input Formats
+#### Input formats
 
 To enable the custom time, the clock control should be enabled with the ShowCustomTimeClock property set as true, and the custom time should be in DateTime format.
 
-{% highlight c# %}           
+{% tabs %}
+
+{% highlight C# %}
 
           this.clock1.ShowCustomTimeClock = true;
 
@@ -363,7 +411,7 @@ To enable the custom time, the clock control should be enabled with the ShowCust
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
           Me.clock1.ShowCustomTimeClock = true
 
@@ -371,19 +419,19 @@ To enable the custom time, the clock control should be enabled with the ShowCust
 
 {% endhighlight %}
 
-
-
-The following image illustrates the DigitalClock with a custom date and time.
+{% endtabs %}
 
 ![](Overview_images/Overview_img115.png) 
 
 
 
-#### Applying Custom Renderer to the DigitalClock Control
+#### Applying custom renderer to the DigitalClock control
 
 The following code sample can be utilized for applying a custom renderer to the DigitalClock.
 
-{% highlight c# %} 
+{% tabs %}
+
+{% highlight C# %}
 
   DigitalRenderer render = new DigitalRenderer();
 
@@ -413,7 +461,7 @@ The following code sample can be utilized for applying a custom renderer to the 
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Dim render As DigitalRenderer = New DigitalRenderer
 Me.clock1.DigitalRenderer = render
@@ -429,5 +477,6 @@ End Class
 
 {% endhighlight %}
 
+{% endtabs %}
 
-![](Overview_images/Overview_img116.png) 
+![](Overview_images/Overview_img116.png)

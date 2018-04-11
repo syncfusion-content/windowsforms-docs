@@ -7,11 +7,11 @@ control: Wizard Package
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 This section will guide you to create a basic wizard using the Wizard control.
 
-To create a basic wizard, follow the below steps.
+To create a basic wizard, follow the given steps.
 
 * Add the WizardControl from the Toolbox to the form, in the designer.
 
@@ -26,9 +26,9 @@ To create a basic wizard, follow the below steps.
 
 
 * Wizard Control lets you add multiple pages in a single wizard. You can add pages to the wizard container by four different ways. They are, 
-* "Add Page" option in the smart tag. 
-* Accessing Add Page command in properties grid. 
-* Context menu of the Wizard control. 
+* "Add Page" option in the smart tag.
+* Accessing Add Page command in properties grid.
+* Context menu of the Wizard control.
 
 See Options to Add Page, Remove Page, Previous page and Next Page topic for more details.
 
@@ -40,7 +40,9 @@ See Options to Add Page, Remove Page, Previous page and Next Page topic for more
 
 Programmatically, the pages can be added to the wizard container as follows.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -52,7 +54,7 @@ this.wizardControl1.SelectedWizardPage = this.wizardControlPage2;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -62,7 +64,9 @@ Me.wizardControl1.SelectedWizardPage = Me.wizardControlPage2
 
 {% endhighlight %}
 
-* Wizard Control comes with properties which controls its appearance and behavior. Set FullPage property of WizardControlPage1 to True if you wish to hide the header portion in the first page. Put a label control on this wizard page with introductory text. Also set BackVisible property of wizard page to False to hide the back button since this is the first page. 
+{% endtabs %}
+
+* Wizard Control comes with properties which controls its appearance and behavior. Set FullPage property of WizardControlPage1 to True if you wish to hide the header portion in the first page. Put a label control on this wizard page with introductory text. Also set BackVisible property of wizard page to False to hide the back button since this is the first page.
 
 ![](Wizard-Package_images/Wizard-Package_img6.jpeg)
 

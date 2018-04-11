@@ -10,7 +10,7 @@ documentation: ug
 # Overview
 
 
-The following screen shot displays the menus controls in toolbox.
+The following screenshot displays the menus controls in toolbox.
 
 ![](Overview_images/Overview_img5.jpeg) 
 
@@ -26,11 +26,11 @@ The XP Menus Framework is controlled by the BarManagers. The [BarManagers](/wind
 
 ## Bar
 
-A Bar is a data structure that represents a toolbar in the XP Menus Framework. A BarManager lets users to add or remove bars to their forms during design-time. These bars get logically contained within the BarManager. See [Bar Types](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-types) topic to know about the types of toolbars available.
+A bar is a data structure that represents a toolbar in the XP Menus Framework. A BarManager lets users to add or remove bars to their forms during design-time. These bars get logically contained within the BarManager. See [Bar Types](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-types) topic to know about the types of toolbars available.
 
 ## BarItem
 
-A BarItem is a data structure that represents a click able item that can be used in toolbars, drop-down menus and context menus. This is analogous to a MenuItem in the .NET Framework. To learn more about BarItems, [click here](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items).
+A BarItem is a data structure that represents a click able item that can be used in toolbars, drop-down menus, and context menus. This is analogous to a MenuItem in the .NET Framework. To learn more about BarItems, [click here](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items).
 
 ![](Overview_images/Overview_img7.jpeg)
 

@@ -7,19 +7,22 @@ control: Carousel
 documentation: ug
 ---
 
-# Rotate Always
+# Rotate always
 
 The RotateAlways property enables the items in the control to rotate continuously.
+
+{% tabs %}
 {% highlight C# %}
 
 
 this.carousel1.RotateAlways = true;
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.carousel1.RotateAlways = True
 {% endhighlight %}
 
+{% endtabs %}
 

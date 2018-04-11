@@ -26,19 +26,21 @@ Specifies whether or not to use XP themes when BorderStyle property is set to '
 
 N> Refer_ [Border Settings](/windowsforms/maskededitbox/border-settings) _topic to know about the BorderStyle property.
 
+{% tabs %}
+
 {% highlight C# %} 
 
 this.maskedEditBox1.ThemesEnabled = true;
 
- {% endhighlight %}
+{% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.ThemesEnabled = true
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img19.png)
 

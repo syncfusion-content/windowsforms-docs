@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Path Support 
+# Path support
 
 The Carousel control supports arranging items in the following paths:
 
@@ -17,10 +17,13 @@ The Carousel control supports arranging items in the following paths:
 * Oval
 * Linear
 
-## Default 
+## Default
 
 
 Items will be arranged in a normal elliptical path.
+
+{% tabs %}
+
 {% highlight C# %}
 
 
@@ -30,53 +33,70 @@ this.carousel1.CarouselPath = CarouselPath.Default;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.carousel1.CarouselPath = CarouselPath.Default
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Orbital
 
 Items will be arranged like an orbital curve.
+
+{% tabs %}
+
 {% highlight C# %}
 
 
 this.carousel1.CarouselPath = CarouselPath.Orbital;
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.carousel1.CarouselPath = CarouselPath.Orbital
 {% endhighlight %}
+
+{% endtabs %}
+
 ## Oval
 
 Items will be arranged in an oval structure.
+
+{% tabs %}
+
 {% highlight C# %}
 
 
 this.carousel1.CarouselPath = CarouselPath.Oval;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.carousel1.CarouselPath = CarouselPath.Oval
 {% endhighlight %}
+
+{% endtabs %}
+
 ## Linear
 
 Items will be arranged in a linear structure.
+
+{% tabs %}
+
 {% highlight C# %}
 
 
 this.carousel1.CarouselPath = CarouselPath.Linear;
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.carousel1.CarouselPath = CarouselPath.Linear
 {% endhighlight %}
 
-
+{% endtabs %}

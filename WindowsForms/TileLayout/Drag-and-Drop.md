@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Drag and Drop
+# Drag and drop
 
 TileLayout supports easy drag and drop of items within the LayoutGroup or with other LayoutGroups at runtime.
 

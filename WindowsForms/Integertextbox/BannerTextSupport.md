@@ -11,9 +11,9 @@ documentation: ug
 
 The IntegerTextBox control can display banner text in the text field, at run time. A [BannerTextProvider](/windowsforms/bannertextprovider/overview) should be available for this purpose. Also, we need to set AllowNull, NullString and Text properties as below, to make this feature effective.
 
-{%highlight c#%}
+{% tabs %}
 
-
+{% highlight C# %}
 
 this.integerTextBox1.AllowNull = true;
 
@@ -21,11 +21,9 @@ this.integerTextBox1.NullString = "";
 
 this.integerTextBox1.Text = "";
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight VB %}
 
 Me.integerTextBox1.AllowNull = True
 
@@ -33,4 +31,6 @@ Me.integerTextBox1.NullString = ""
 
 Me.integerTextBox1.Text = ""
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
