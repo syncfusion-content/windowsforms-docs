@@ -15,12 +15,12 @@ The `PersistTabState` property specifies the value which determines whether the 
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
 PersistTabState</td><td>
-Gets / sets the value which determines whether the TabState should be automatically persisted or not.</td></tr>
+Gets/sets the value which determines whether the TabState should be automatically persisted or not.</td></tr>
 </table>
 
 
@@ -32,9 +32,9 @@ Description</th></tr>
 <tr>
 <td>
 TabControlAdv.SaveState()</td><td>
-Persists the TabState (ActivePage, TabOrder and Text).</td></tr>
+Persists the TabState (ActivePage, TabOrder, and Text).</td></tr>
 <tr>
 <td>
 TabControlAdv.LoadState()</td><td>
-Gets / sets the previously serialized TabState using the 'AppStateSerializer' object. </td></tr>
+Gets/sets the previously serialized TabState using the 'AppStateSerializer' object. </td></tr>
 </table>

@@ -7,21 +7,21 @@ control: CommandBars
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 ## Creating CommandBar
 
 This section will give a step by step procedure to design a CommandBar control through designer, through programmatically approach and also through the XP Menus Framework.
 
-### Through Designer
+### Through designer
 
-The CommandBar Framework makes it an effortless process to add, remove and design the CommandBars in an application. With the WYSIWYG designer that it provides, all that is involved in setting up the CommandBar layout is to drag and drop the various CommandBars to the target location. The layout state is then serialized by the designer along with the form's resources and is used when the form is loaded at run time.
+The CommandBar Framework makes it an effortless process to add, remove, and design the CommandBars in an application. With the WYSIWYG designer that it provides, all that is involved in setting up the CommandBar layout is to drag and drop the various CommandBars to the target location. The layout state is then serialized by the designer along with the form's resources and is used when the form is loaded at run time.
 
 The following steps are involved in creating and setting up a simple CommandBar layout.
 
 * Drag the CommandBarController component from the toolbox onto the form. The CommandBarController will be created in the components area of the form.
 
- ![](Getting-Started_images/Getting-Started_img1.jpeg) 
+ ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -33,15 +33,15 @@ The CommandBars can also be added or removed using the Add CommandBar design tim
 
 New CommandBars will be initially docked to the top border of the form. The command bars can then be dragged, redone or floated to the desired location.
 
- ![](Getting-Started_images/Getting-Started_img2.jpeg) 
+ ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
- ![](Getting-Started_images/Getting-Started_img3.jpeg) 
+ ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
 
- ![](Getting-Started_images/Getting-Started_img4.jpeg) 
+ ![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
 
@@ -51,32 +51,38 @@ New CommandBars will be initially docked to the top border of the form. The comm
 
 {% endseealso %}
 
-### Through Code
+### Through code
 
-In addition to using the designer for designing the CommandBar layout, it is also feasible to use the CommandBar's programmatic API for creating and setting up the application's CommandBars.
+In addition to use the designer for designing the CommandBar layout, it is also feasible to use the CommandBar's programmatic API for creating and setting up the application's CommandBars.
 
-The following section covers the steps involved in creating, initializing and setting up CommandBars in a Windows Forms application programmatically.
+The following section covers the steps involved in creating, initializing, and setting up CommandBars in a Windows Forms application programmatically.
 
 1. Include the required namespace.
 
-   ~~~ cs
+{% tabs %}
+
+{% highlight C# %}
 
 		using Syncfusion.Windows.Forms.Tools;
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight VB %}
+
 
 		Imports Syncfusion.Windows.Forms.Tools
-   ~~~
-   {:.prettyprint}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 2. Create instances of the Essential Tools CommandBarController class and CommandBar control within the application's main form.
 3. Call the CommandBarController's BeginInit method to signal the start of initialization.
    
-   ~~~ cs
+{% tabs %}
+
+{% highlight C# %}
 
 		private Syncfusion.Windows.Forms.Tools.CommandBarController commandBarController1;
 
@@ -94,11 +100,9 @@ The following section covers the steps involved in creating, initializing and se
 
 		this.panel1 = new System.Windows.Forms.Panel();
 		
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-
-   ~~~ vbnet
+{% highlight VB %}
 
 
 		Private commandBarController1 As Syncfusion.Windows.Forms.Tools.CommandBarController
@@ -117,58 +121,64 @@ The following section covers the steps involved in creating, initializing and se
 
 		Me.panel1 = New System.Windows.Forms.Panel()
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
+{% endtabs %}
 
 4. Set the form to be the host for all the CommandBars using the CommandBarController's HostForm property.
 
-   ~~~ cs
+{% tabs %}
+
+{% highlight C# %}
 		
 		// Set the CommandBarController.HostForm property.
 
 		this.commandBarController1.HostForm = this;
 		
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
+{% highlight VB %}
 
-
-   ~~~ vbnet
 
 
 		' Set the CommandBarController.HostForm property.
 
 		Me.commandBarController1.HostForm = Me
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+
+{% endtabs %}
 
 
 5. Assign a client control to the CommandBar by adding it to the CommandBar's Controls collection property.
 
-   ~~~ cs
+{% tabs %}
+
+{% highlight C# %}
 
 		// Add the panel control containing the toolbar to the CommandBar.
 
 		this.commandBar1.Controls.AddRange(new System.Windows.Forms.Control[] {this.panel1});
 		
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight VB %}
+
 
 		' Add the panel control containing the toolbar to the CommandBar.
 
 		Me.commandBar1.Controls.AddRange(New System.Windows.Forms.Control() {Me.panel1})
 		
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+
+{% endtabs %}
 
 
 6. Add the CommandBar to the CommandBarController through the CommandBarController's CommandBars collection property.
 
-   ~~~ cs
+{% tabs %}
+
+{% highlight C# %}
 
 		this.commandBarController1.CommandBars.Add(this.commandBar1);
 
@@ -176,10 +186,10 @@ The following section covers the steps involved in creating, initializing and se
 
 		this.commandBar1.Text = "commandBar1";
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight VB %}
+
 
 		Me.commandBarController1.CommandBars.Add(Me.commandBar1)
 
@@ -187,8 +197,9 @@ The following section covers the steps involved in creating, initializing and se
 
 		Me.commandBar1.Text = "commandBar1"
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+
+{% endtabs %}
 
 7. Call the CommandBarController's EndInit method to signal the end of initialization.
 
@@ -224,10 +235,12 @@ The following section covers the steps involved in creating, initializing and se
 
 The XP Menus Framework provides the flexibility to add detached toolbars that can host any .NET control. These toolbars are detached from the Framework, i.e., they cannot participate in user customization. Otherwise, they are seamless in look and feel.
 
-1. Right click on the MainFrameBarManager component and choose the Add Detached CommandBar option to add a detached toolbar.
+1. Right-click on the MainFrameBarManager component and choose the Add Detached CommandBar option to add a detached toolbar.
 2. Add that control by dragging and dropping to any .NET control. If you need to host multiple controls, you will need to first add a panel to the CommandBar and then add the controls to this panel.
 
-   ~~~ cs
+{% tabs %}
+
+{% highlight C# %}
 
 		// Declare the controls.
 
@@ -253,10 +266,10 @@ The XP Menus Framework provides the flexibility to add detached toolbars that ca
 
 		this.commandBar1.Text = "commandBar1";
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
+{% highlight VB %}
+
 
 
 		' Declare the controls.
@@ -283,10 +296,11 @@ The XP Menus Framework provides the flexibility to add detached toolbars that ca
 
 		Me.commandBar1.Text = "commandBar1"
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
- ![](Getting-Started_images/Getting-Started_img6.jpeg) 
+{% endtabs %}
+
+ ![](Getting-Started_images/Getting-Started_img6.jpeg)
 
 
 

@@ -7,19 +7,19 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-#  Appearance and Structure of the Clock Control
+#  Appearance and structure of the clock control
 
 ## Color setting
 
-Clock control allows you to customize its gradient back color, hands color, minute line color and border color.
+Clock control allows you to customize its gradient back color, hands color, minute line color, and border color.
 
-### Customizing color to the clock:
+### Customizing color to the clock
 
-Clock control has individual property to set color for gradient back color, hands color, minutes color and border color.
+Clock control has individual property to set color for gradient back color, hands color, minutes color, and border color.
 
-The following code illustrates how to apply color to Clock control:
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.clock1.BorderColor = Color.Violet;
 
@@ -37,7 +37,7 @@ this.clock1.StartGradientBackColor = Color.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.BorderColor = Color.Violet
 
@@ -55,20 +55,22 @@ Me.clock1.StartGradientBackColor
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img95.png) 
 
 
 ## Appearance setting
 
-Clock control allows you to customize the thickness of the hands and minute line. It also allows you to enable or disable the AM/PM, borders, minute and second hand. The Clock control gives a transparent appearance.
+Clock control allows you to customize the thickness of the hands and minute line. It also allows you to enable or disable the AM/PM, borders, minute, and second hand. The Clock control gives a transparent appearance.
 
 ### Customization of hands thickness
 
 Clock control allows you to adjust the thickness of hands and minute line.
 
-The following code illustrates how to adjust the thickness of the hands and minute line:
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.clock1.HourHandThickness = 7;
 
@@ -80,7 +82,7 @@ this.clock1.MinuteThickness = 4;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.HourHandThickness = 7
 
@@ -92,17 +94,19 @@ Me.clock1.MinuteThickness = 4
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img96.png) 
 
 
 
-### Enable and Disable properties
+### Enable and disable properties
 
-Clock control allows you to enable or disable AM/PM, second hand, minute line and border.
+Clock control allows you to enable or disable AM/PM, second hand, minute line, and border.
 
-The following code illustrates how to enable AM/PM and or disable second hand, minute line and border:
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.clock1.ShowAMorPM = true;
 
@@ -114,7 +118,7 @@ this.clock1.ShowSecondHand = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.ShowAMorPM = True
 
@@ -126,25 +130,29 @@ Me.clock1.ShowSecondHand = False
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img97.png) 
 
 ## Transparent support
 
 Clock control supports transparent back ground.
 
-The following code illustrates how to apply transparent back ground:
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.clock1.IsTransparent = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.clock1.IsTransparent = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img98.png)
 
@@ -167,7 +175,9 @@ Gets or sets the value to freeze or unfreeze time in the clock.</td></tr>
 </table>
 
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 //Gets or sets the value to freeze or unfreeze time in the clock.
 
@@ -175,11 +185,13 @@ this.clock1.StopTimer = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 //Gets or sets the value to freeze or unfreeze time in the clock.
 
 Me.clock1.StopTimer = True
 
 {% endhighlight %}
+
+{% endtabs %}
 

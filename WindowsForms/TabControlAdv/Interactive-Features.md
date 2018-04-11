@@ -7,25 +7,25 @@ control: TabControlAdv
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive features
 
-## CloseButton Settings
+## CloseButton settings
 
-TabControlAdv can have CloseButtons for all the TabPages to close the corresponding TabPages irrespective of the Style set.
+TabControlAdv has CloseButtons for all the TabPages to close the corresponding TabPages irrespective of the Style set.
 
 ![](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
-Close Button on all the TabItems can be made visible by setting the `ShowTabCloseButton` property to True.
+Close button on all the TabItems can be made visible by setting the `ShowTabCloseButton` property to True.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.ShowTabCloseButton = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.tabControlAdv1.ShowTabCloseButton = True
 
@@ -33,17 +33,17 @@ Me.tabControlAdv1.ShowTabCloseButton = True
 
 {% endtabs %}
 
-Also the Tab Close Button can be restricted to be shown only for ActiveTabPage. This can be done by setting the `ShowCloseButtonForActiveTabOnly` property to True.
+Also the Tab Close button can be restricted to be shown only for ActiveTabPage. This can be done by setting the `ShowCloseButtonForActiveTabOnly` property to True.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.ShowCloseButtonForActiveTabOnly = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 
@@ -56,13 +56,13 @@ Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 
 N> Close Button can be set for the whole TabControlAdv by using [Tab Navigation](/windowsforms/tabcontroladv/tab-navigation).
 
-## ToolTip Support
+## Tooltip support
 
-ToolTip for the TabControlAdv can be enabled using the `ShowToolTip` property and the tooltip text for the TabPages can be specified using the `ToolTipText` property of individual pages which allows to provide a unique ToolTip for each page.
+Tooltip for the TabControlAdv can be enabled using the `ShowToolTip` property and the tooltip text for the TabPages can be specified using the `ToolTipText` property of individual pages which allows to provide a unique Tooltip for each page.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.ShowToolTips = true;
 
@@ -70,7 +70,7 @@ this.tabPageAdv1.ToolTipText = "Tooltips for tab page 1";
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.tabControlAdv1.ShowToolTips = True
 
@@ -83,13 +83,13 @@ Me.tabPageAdv1.ToolTipText = "Tooltips for tab page 1"
 ![](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
-## SuperTooltip Support
+## SuperTooltip support
 
-TabControlAdv can now display `SuperToolTip` on the Tabs when mouse hovered.
+Now, the TabControlAdv displays `SuperToolTip` on the Tabs when hovering the mouse.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.ShowSuperToolTips  = true;
 
@@ -97,7 +97,7 @@ this.tabPageAdv1.SuperToolTips  = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 
 Me.tabControlAdv1.ShowSuperToolTips  = True
@@ -109,7 +109,7 @@ Me.tabPageAdv1.SuperToolTips  = True
 {% endtabs %}
 
 
-## Scroll Settings
+## Scroll settings
 
 This section discusses about the Scrolling properties available in the TabControlAdv.
 
@@ -120,7 +120,7 @@ TabControlAdv has the ability to add ScrollButtons on the TabPanel when the numb
 <table>
 <tr>
 <th>
-TabControlAdv Property</th><th>
+TabControlAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -139,8 +139,7 @@ For VS like scroll button-look, the `VSLikeScrollButton` property has to be set 
 
 {% tabs %}
 
-{% highlight c# %}
-
+{% highlight C# %}
 
 this.tabControlAdv1.ShowScroll = true;
 
@@ -148,9 +147,7 @@ this.tabControlAdv1.VSLikeScrollButton = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
-
-
+{% highlight VB %}
 
 Me.tabControlAdv1.ShowScroll = True
 
@@ -169,7 +166,7 @@ ScrollBars can be set for the TabPages for which the `AutoScroll` property has t
 <table>
 <tr>
 <th>
-TabPageAdv Property</th><th>
+TabPageAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -182,7 +179,7 @@ Specifies the distance to be maintained between any control that is placed insid
 <tr>
 <td>
 AutoScrollMinSize</td><td>
-Specifies the size of the tab page, which if exceeded, would  enable scrollbars to be added.</td></tr>
+Specifies the size of the tab page, and enables the scrollbars when the size exceeds.</td></tr>
 </table>
 
 
@@ -193,7 +190,7 @@ N> The TabControlAdv.BringSelectedTabToView() method is used to bring the select
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabPageAdv1.AutoScroll = true;
 
@@ -207,7 +204,7 @@ this.tabControlAdv1.BringSelectedTabToView();
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private Me.tabPageAdv1.AutoScroll = True
 

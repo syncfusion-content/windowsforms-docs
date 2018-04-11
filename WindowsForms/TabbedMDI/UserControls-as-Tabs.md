@@ -7,15 +7,15 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# UserControls as Tabs
+# UserControls as tabs
 
 Normally TabbedMDI is used in MDI applications where the Child forms are the children that get tabbed. But, we can also use TabbedMDI with User Controls as children that are dockable.
 
 Add a UserControl to the form and initialize it inside the parent form. Add a DockingManager and a TabbedMDIManager Control. Dock the User Control and set it as an MDIChild using the below code snippet.
 
-{% highlight c# %}
+{% tabs %}
 
-
+{% highlight C# %}
 
 UserControl userControl = new UserControl();
 
@@ -32,7 +32,7 @@ this.dockingManager1.SetAsMDIChild(userControl, true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -49,6 +49,8 @@ Me.dockingManager1.DockControl(userControl, Me, Syncfusion.Windows.Forms.Tools.D
 Me.dockingManager1.SetAsMDIChild(userControl, True) 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ![](UserControls-as-Tabs_images/UserControls-as-Tabs_img1.jpeg)

@@ -7,9 +7,9 @@ control: TabSplitterContainer
 documentation: ug
 ---
 
-# Splitter Components
+# Splitter components
 
-The splitter in the TabSplitterContainer control has in-built options for changing the orientation of the splitter and also to collapse or expand the splitter panes. Those options are illustrated below.
+The splitter in the TabSplitterContainer control has in-built options for changing the orientation of the splitter and also to collapse or expand the splitter panes.
 
 ![](Splitter-Components_images/Splitter-Components_img1.jpeg)
 
@@ -20,19 +20,19 @@ The splitter in the TabSplitterContainer control has in-built options for changi
 * Swap Button - This button lets you to swap between the primary and secondary pages.
 * Vertical Orientation - Sets the orientation of the splitter to be vertical.
 * Horizontal Orientation - Sets the orientation of the splitter to be horizontal.
-* Expand / Collapse Button - Clicking this button can collapse the secondary pane and place at the bottom of the control. Clicking this button again will expand the pane and place in its original position. 
+* Expand/Collapse Button - Clicking this button can collapse the secondary pane and place at the bottom of the control. Clicking this button again will expand the pane and place in its original position.
 
 ## SplitterPage
 
 
 The properties which customizes the Splitter page are as follows.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-TabSplitterContainer Property</th><th>
+TabSplitterContainer property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -68,8 +68,9 @@ Visible</td><td>
 Sets the visibility of the tab.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.tabSplitterPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -88,7 +89,7 @@ this.tabSplitterPage1.Visible = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -107,6 +108,8 @@ Me.tabSplitterPage1.Tooltip = "Designer"
 Me.tabSplitterPage1.Visible = True 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Splitter-Components_images/Splitter-Components_img2.jpeg)
 
