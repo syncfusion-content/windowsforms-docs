@@ -47,19 +47,19 @@ The following code example illustrates how to create links between two nodes.
 
 protected void Page_Load(object sender, EventArgs e)
 {
-Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
-Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(300, 50, 50, 80);
-Syncfusion.Windows.Forms.Diagram.LineConnector lineconnector = new Syncfusion.Windows.Forms.Diagram.LineConnector(new System.Drawing.PointF(10, 200), new System.Drawing.PointF(300, 250));
-this.DiagramWebControl1.Model.AppendChild(ellipse);
-this.DiagramWebControl1.Model.AppendChild(rectangle);
-ellipse.CentralPort.TryConnect(lineconnector.HeadEndPoint);
-rectangle.CentralPort.TryConnect(lineconnector.TailEndPoint);
-this.DiagramWebControl1.Model.AppendChild(lineconnector);
+	Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70);
+	Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(300, 50, 50, 80);
+	Syncfusion.Windows.Forms.Diagram.LineConnector lineconnector = new Syncfusion.Windows.Forms.Diagram.LineConnector(new System.Drawing.PointF(10, 200), new System.Drawing.PointF(300, 250));
+	this.DiagramWebControl1.Model.AppendChild(ellipse);
+	this.DiagramWebControl1.Model.AppendChild(rectangle);
+	ellipse.CentralPort.TryConnect(lineconnector.HeadEndPoint);
+	rectangle.CentralPort.TryConnect(lineconnector.TailEndPoint);
+	this.DiagramWebControl1.Model.AppendChild(lineconnector);
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 Dim ellipse As New Syncfusion.Windows.Forms.Diagram.Ellipse(10, 10, 110, 70)
@@ -89,23 +89,23 @@ You can change the appearance of the connectors using its properties through cod
 
 protected void Page_Load(object sender, EventArgs e)
 {
-Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(160, 60, 100, 60);
-Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(150, 250, 120, 100);
-Syncfusion.Windows.Forms.Diagram.LineConnector lineconnector = new Syncfusion.Windows.Forms.Diagram.LineConnector(new System.Drawing.PointF(10, 200), new System.Drawing.PointF(300, 250));
-this.diagram1.Model.AppendChild(ellipse);
-this.diagram1.Model.AppendChild(rectangle);
-ellipse.CentralPort.TryConnect(lineconnector.TailEndPoint);
-rectangle.CentralPort.TryConnect(lineconnector.HeadEndPoint);
-this.diagram1.Model.AppendChild(lineconnector);
-lineconnector.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-lineconnector.LineStyle.LineColor = Color.MidnightBlue;
-lineconnector.HeadDecorator.FillStyle.Color = Color.MidnightBlue;
-lineconnector.HeadDecorator.Size = new SizeF(10, 5);
+	Syncfusion.Windows.Forms.Diagram.Ellipse ellipse = new Syncfusion.Windows.Forms.Diagram.Ellipse(160, 60, 100, 60);
+	Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(150, 250, 120, 100);
+	Syncfusion.Windows.Forms.Diagram.LineConnector lineconnector = new Syncfusion.Windows.Forms.Diagram.LineConnector(new System.Drawing.PointF(10, 200), new System.Drawing.PointF(300, 250));
+	this.diagram1.Model.AppendChild(ellipse);
+	this.diagram1.Model.AppendChild(rectangle);
+	ellipse.CentralPort.TryConnect(lineconnector.TailEndPoint);
+	rectangle.CentralPort.TryConnect(lineconnector.HeadEndPoint);
+	this.diagram1.Model.AppendChild(lineconnector);
+	lineconnector.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+	lineconnector.LineStyle.LineColor = Color.MidnightBlue;
+	lineconnector.HeadDecorator.FillStyle.Color = Color.MidnightBlue;
+	lineconnector.HeadDecorator.Size = new SizeF(10, 5);
 }
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 Dim ellipse As New Syncfusion.Windows.Forms.Diagram.Ellipse(160, 60, 100, 60)
@@ -175,7 +175,7 @@ orthogonal.CurveRadius = 10;
 diagram1.Model.AppendChild(orthogonal);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim orthogonal As New OrthogonalConnector(New PointF(100, 100), New PointF(300, 300))
 
@@ -243,7 +243,7 @@ link.LineBridgingEnabled = true;
 this.diagram1.Model.BridgeStyle = BridgeStyle.Square;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.Model.LineBridgeSize = 5
 
@@ -290,7 +290,7 @@ this.diagram1.Model.LineRoutingEnabled = true;
 link.LineRoutingEnabled = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'enabling for model
 Me.diagram1.Model.LineRoutingEnabled = True
@@ -339,7 +339,7 @@ this.diagram1.Model.LineRouter.DistanceToObstacles = 20;
 this.diagram1.Model.LineRouter.RoutingMode = RoutingMode.Automatic;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.Model.LineRouter.DistanceToObstacles = 20
 Me.diagram1.Model.LineRouter.RoutingMode = RoutingMode.Automatic
@@ -361,7 +361,7 @@ Programmatically it can be set as follows:
 circle.TreatAsObstacle = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 circle.TreatAsObstacle = True
 

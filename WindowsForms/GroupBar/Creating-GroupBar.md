@@ -10,19 +10,19 @@ documentation: ug
 
 This tutorial will show you how a GroupBar is created through the following ways.
 
-## Through Designer
+## Through designer
 
-The GroupBar's designer allows you to add new groups using it's design-time verbs or the property browser, while adding a Child control to a group involves merely activating the particular group and dropping the control onto the GroupBar. 
+The GroupBar's designer allows you to add new groups using it's design-time verbs or the property browser, while adding a Child control to a group involves merely activating the particular group and dropping the control onto the GroupBar.
 
 To create a GroupBar through designer,
 
 * Drag-and-drop a GroupBar object from the controls toolbox onto your form.
 
- ![](Overview_images/Overview_img5.jpeg) 
+ ![](Overview_images/Overview_img5.jpeg)
  
 
 
-* To add a GroupBar Item using design-time verbs, follow the procedure given below.
+* To add a GroupBar Item using design-time verbs, follow the given procedure.
 * To add a GroupBar Item using the design-time verbs, right-click on the GroupBar and select the Add Group option. This adds a GroupBar Item to the GroupBar control.
 
  ![](Overview_images/Overview_img6.jpeg)
@@ -32,11 +32,11 @@ To create a GroupBar through designer,
 * To add a GroupBar Item using the property browser, follow the procedure given below.
 * In the Properties window, select the GroupBarItems property. The GroupBarItem Collection Editor will be opened. Click Add, a GroupBar Item will be added to the GroupBar control.
 
-![](Overview_images/Overview_img7.jpeg) 
+![](Overview_images/Overview_img7.jpeg)
 
 
 
-![](Overview_images/Overview_img8.jpeg) 
+![](Overview_images/Overview_img8.jpeg)
 
 
 
@@ -44,35 +44,37 @@ To create a GroupBar through designer,
  
 
 
-You can also add child controls to the GroupBar. Refer Integrating Child Controls to the GroupBarItem topic, for 
-information on this topic.
+You can also add child controls to the GroupBar. Refer Integrating Child Controls to the GroupBarItem topic, for information on this topic.
 
 
-## Through Code
+## Through code
 
 The following code shows how to create a GroupBar control and add GroupBar Items to the control.
 
 1. Include the required namespace.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
      using Syncfusion.Windows.Forms.Tools;
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
 
-
-   ~~~ vbnet
+	{% highlight VB %}
+    
 
 		Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint}
-
+    {% endhighlight %}
+		
+	{% endtabs %}
 
 2. Create instances of GroupBar and GroupBar Items.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
 
 		private Syncfusion.Windows.Forms.Tools.GroupBar groupBar1;
@@ -83,10 +85,10 @@ The following code shows how to create a GroupBar control and add GroupBar Items
 
 		private Syncfusion.Windows.Forms.Tools.GroupBarItem groupBarItem3;
 
-   ~~~
-   {:.prettyprint}
-   
-   ~~~ vbnet
+    {% endhighlight %}
+
+	{% highlight VB %}
+    
 		this.groupBar1 = new GroupBar();
 
 		this.groupBarItem1 = new GroupBarItem();
@@ -94,11 +96,15 @@ The following code shows how to create a GroupBar control and add GroupBar Items
 		this.groupBarItem2 = new GroupBarItem();
 
 		this.groupBarItem3 = new GroupBarItem();
-   ~~~
-   {:.prettyprint}
+    
+	{% endhighlight %}
+		
+	{% endtabs %}
 
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
 
 
@@ -110,10 +116,10 @@ The following code shows how to create a GroupBar control and add GroupBar Items
 
 		Private groupBarItem3 As Syncfusion.Windows.Forms.Tools.GroupBarItem
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
+
 		Me.groupBar1 = New GroupBar()
 
 		Me.groupBarItem1 = New GroupBarItem()
@@ -122,12 +128,15 @@ The following code shows how to create a GroupBar control and add GroupBar Items
 
 		Me.groupBarItem3 = New GroupBarItem()
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
+		
+	{% endtabs %}
 
 3. Add GroupBar Items to the GroupBar and specify the size of the GroupBar. Finally add a GroupBar control to the Form.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
 
 
 		this.groupBar1.GroupBarItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupBarItem[]{this.groupBarItem1, this.groupBarItem2, this.groupBarItem3});
@@ -142,10 +151,9 @@ The following code shows how to create a GroupBar control and add GroupBar Items
 
 		this.groupBarItem3.Text = "GroupBarItem2";
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
 
 
 		Me.groupBar1.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarItem(){Me.groupBarItem1, Me.groupBarItem2, Me.groupBarItem3})
@@ -160,8 +168,9 @@ The following code shows how to create a GroupBar control and add GroupBar Items
 
 		Me.groupBarItem3.Text = "GroupBarItem2"
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
+		
+	{% endtabs %}
 
  ![](Overview_images/Overview_img10.jpeg) 
  

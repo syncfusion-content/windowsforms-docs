@@ -11,44 +11,48 @@ documentation: ug
 
 Navigation View can be created in the following ways:
 
-## Through Designer
+## Through designer
 
-To create a NavigationView control, follow the steps given below.
+To create a NavigationView control, follow the given steps.
 
 1. Drag the NavigationView control from the controls toolbox onto your form.
 
-   ![](Getting-Started_images/Getting-Started_img1.jpeg) 
+   ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 2. Add Parent Bars and Child Bars to the NavigationView control using the BarCollection Editor.
 
-   ![](Getting-Started_images/Getting-Started_img2.jpeg) 
+   ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
-## Through Code
+## Through code
 
-To create a NavigationView control programmatically, follow the below given steps.
+To create a NavigationView control programmatically, follow the given steps.
 
-3. Include the Tools Windows namespace to the .cs / .vb file.
+3. Include the Tools Windows namespace to the .cs/.vb file.
 
-   ~~~ cs
+    {% tabs %}
+
+	{% highlight C# %}
 
         using Syncfusion.Windows.Forms.Tools;
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
 
         Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
+
+	 {% endtabs %}
 
 4. Create an instance of the NavigationView control and add Parent Bars and Child Bars to it.
 
-   ~~~ cs
+  	{% tabs %}
+
+	{% highlight C# %}
 
         //Creating instance of NavigationView
 
@@ -108,10 +112,9 @@ To create a NavigationView control programmatically, follow the below given step
 
 		this.Controls.Add(navigationView4);
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
 
         'Creating instance of NavigationView
 
@@ -165,9 +168,10 @@ To create a NavigationView control programmatically, follow the below given step
 
 		Me.Controls.Add(navigationView4)
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-   ![](Getting-Started_images/Getting-Started_img3.jpeg) 
+	{% endtabs %}
+
+   ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 

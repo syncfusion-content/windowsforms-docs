@@ -6,37 +6,41 @@ platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# GroupView Items Settings
+# GroupView items settings
 
-This section discusses the various settings that can be applied to the GroupView Items of the GroupView control. 
+This section discusses the various settings that can be applied to the GroupView Items of the GroupView control.
 
-## Text Settings
+## Text settings
 
 This section describes the text alignment options available for GroupView.
 
-### Text Highlighting
+### Text highlighting
 
 The GroupView control provides highlighting of text when the mouse is over the GroupView Item. This can be activated by setting the HighlightText property to 'True'.
 
-{% highlight C# %} 
+{% tabs %}
+
+{% highlight C# %}
 
 this.groupView1.HighlightText = true;
 
  {% endhighlight %}
 
  
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupView1.HighlightText = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
  ![](Overview_images/Overview_img60.jpeg)
  
  "My Computer" Item is Highlighted in the GroupView Control
  {:.caption} 
 
-### Text Offset
+### Text offset
 
 The following properties are used to set the text offset for the GroupView Items.
 
@@ -45,7 +49,7 @@ The following properties are used to set the text offset for the GroupView Items
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -68,7 +72,9 @@ Sets the text offset for the selected GroupView Item.</td></tr>
 
 N> HighlightText property must be set to 'True' in all the cases.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 this.groupView1.HighlightTextOffset = new System.Drawing.Point(10, 5);
 
@@ -82,7 +88,7 @@ this.groupView1.SelectingTextOffset = new System.Drawing.Point(40, 8);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupView1.HighlightTextOffset = New System.Drawing.Point(10, 5)
 
@@ -94,6 +100,7 @@ Me.groupView1.SelectingTextOffset = New System.Drawing.Point(40, 8)
 
 {% endhighlight %}
 
+{% endtabs %}
 
  ![](Overview_images/Overview_img62.jpeg) 
 
@@ -134,7 +141,7 @@ ResetSelectedTextOffset</td><td>
 Resets the SelectedTextOffset property to it's default value.</td></tr>
 </table> 
 
-### Text Formatting
+### Text formatting
 
 The following table lists the text formatting properties of GroupView Control.
 
@@ -143,7 +150,7 @@ The following table lists the text formatting properties of GroupView Control.
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -165,6 +172,7 @@ Specifies whether the GroupView Item's text should be wrapped when the control w
 
  ![](Overview_images/Overview_img67.jpeg) 
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -178,7 +186,7 @@ this.groupView1.TextWrap = true;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupView1.TextSpacing = 15
 
@@ -188,12 +196,15 @@ Me.groupView1.TextWrap = True
 
 {% endhighlight %}
 
+{% endtabs %}
 
-### In-Place Renaming
+### In-place renaming
 
 It is possible to rename the specified GroupView Item at run-time using the InplaceRenameItem() method.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // index: index of the GroupView Item to be renamed.
 
@@ -203,7 +214,7 @@ this.groupView1.InplaceRenameItem(index);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 ' index: index of the GroupView Item to be renamed.
 
@@ -211,7 +222,7 @@ Me.groupView1.InplaceRenameItem(index)
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 <table>
 <tr>
@@ -224,11 +235,11 @@ CancelInplaceRenameItemAt</td><td>
 Cancels an in-place edit that is in progress.</td></tr>
 </table>
 
-## Color Settings
+## Color settings
 
 This section describes the color settings available for GroupView.
 
-### Highlighting Items and Text
+### Highlighting items and text
 
 The color for highlighting Items and text during mouse hover can be specified using the properties given below.
 
@@ -237,7 +248,7 @@ The color for highlighting Items and text during mouse hover can be specified us
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -251,7 +262,9 @@ Specifies the color for highlighting the text of the GroupView Items when the mo
 
 N> HighlightText property must be set to 'True' in both the cases.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 this.groupView1.HighlightItemColor = System.Drawing.Color.LavendarBlush;
 
@@ -261,7 +274,7 @@ this.groupView1.HighlightTextColor = System.Drawing.Color.Purple;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupView1.HighlightItemColor = System.Drawing.Color.LavendarBlush
 
@@ -269,6 +282,7 @@ Me.groupView1.HighlightTextColor = System.Drawing.Color.Purple
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Overview_images/Overview_img69.jpeg) 
 
@@ -293,7 +307,7 @@ ResetHighlightTextColor</td><td>
 Resets the HighlightTextColor property to it's default value.</td></tr>
 </table>
 
-### Highlighting Selected Items and Text
+### Highlighting selected items and text
 
 The color for highlighting selected Items and text can be specified using the properties given below.
 
@@ -302,7 +316,7 @@ The color for highlighting selected Items and text can be specified using the pr
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -332,7 +346,9 @@ Specifies the color used to draw the text of the GroupView Item being selected.<
 
 N> HighlightText property must be set to 'True' in all the cases.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 this.groupView1.SelectedHighlightItemColor = System.Drawing.Color.LightBlue;
 
@@ -349,7 +365,7 @@ this.groupView1.SelectingTextColor = System.Drawing.Color.Red;
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.groupView1.SelectedHighlightItemColor = System.Drawing.Color.LightBlue
 
@@ -365,7 +381,7 @@ Me.groupView1.SelectingTextColor = System.Drawing.Color.Red
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](Overview_images/Overview_img71.jpeg) 
 
@@ -411,7 +427,7 @@ ResetSelectingTextColor</td><td>
 Resets the SelectingTextColor property to the default value.</td></tr>
 </table>
 
-## Orientation Settings for GroupView Item
+## Orientation settings for GroupView item
 
 The following table lists the properties related to the orientation of GroupView Items.
 
@@ -420,7 +436,7 @@ The following table lists the properties related to the orientation of GroupView
 <table>
 <tr>
 <th>
-GroupView Property</th><th>
+GroupView property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -429,7 +445,7 @@ This is a non-text, image-only display mode where items are arranged in a horizo
 <tr>
 <td>
 FlowViewItemTextLength</td><td>
-Gets / sets the GroupView Item's text length in FlowView mode.</td></tr>
+Gets/sets the GroupView Item's text length in FlowView mode.</td></tr>
 <tr>
 <td>
 ShowFlowViewItemText</td><td>
@@ -440,6 +456,7 @@ Orientation</td><td>
 Specifies the orientation for the GroupView Items. The options included are as follows.* Horizontal and* Vertical.<br>The default value is 'Vertical'.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -455,7 +472,7 @@ this.groupView1.Orientation = Syncfusion.Windows.Forms.Tools.GroupViewOrientatio
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.groupView1.FlowView = True
 
@@ -467,7 +484,9 @@ Me.groupView1.Orientation = Syncfusion.Windows.Forms.Tools.GroupViewOrientation.
 
 {% endhighlight %}
 
-The GroupView Items in the GroupView control can be arranged in the horizontal and vertical direction, with or without displaying text. FlowView property displays the GroupView Items with images and without text. 
+{% endtabs %}
+
+The GroupView Items in the GroupView control can be arranged in the horizontal and vertical direction, with or without displaying text. FlowView property displays the GroupView Items with images and without text.
 
 If you want to show the GroupView Item's text in the FlowView mode then set the ShowFlowViewItemText property to 'True'. You can also control the length of the GroupView Item's text in the FlowView mode using the FlowViewItemTextLength property.
 
@@ -477,6 +496,6 @@ If you want to show the GroupView Item's text in the FlowView mode then set the 
  ![](Overview_images/Overview_img75.jpeg) 
 
 
-The Orientation property determines the direction of display for the GroupView Items. 
+The Orientation property determines the direction of display for the GroupView Items.
 
-![](Overview_images/Overview_img76.jpeg) 
+![](Overview_images/Overview_img76.jpeg)

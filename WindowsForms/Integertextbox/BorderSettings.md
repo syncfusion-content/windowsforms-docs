@@ -22,7 +22,9 @@ Description</th></tr>
 <tr>
 <td>
 Border3DStyle</td><td>
-Indicates the style of the 3D border. The options included are as follows:
+Indicates the style of the 3D border. 
+
+The options included are as follows:
 RaisedOuter,
 SunkenOuter,
 RaisedInner,
@@ -56,7 +58,9 @@ Fixed3D and None.</td></tr>
 </table>
 
 
-{%highlight c#%}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -68,12 +72,11 @@ this.integerTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
 this.integerTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
-{%endhighlight%}
+{% endhighlight %}
 
 
+{% highlight VB %}
 
-
-{%highlight vbnet%}
 Me.integerTextBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
 
 Me.integerTextBox1.BorderColor = System.Drawing.Color.Red
@@ -82,11 +85,13 @@ Me.integerTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 Me.integerTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img458.png) 
 
 
 A sample which demonstrates the Border Settings of IntegerTextBox control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

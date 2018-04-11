@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart control events
+# Events
 
 The following events are discussed in this section:
 

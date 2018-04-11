@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Concepts and Features
+# Concepts and features
 
 ## ContentView
 
@@ -15,7 +15,7 @@ documentation: ug
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creates RichTextBox instance.
 
@@ -31,7 +31,7 @@ this.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox);
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Creates RichTextBox instance.
 
@@ -67,13 +67,13 @@ This support specifies the animations for the DrawerView panel. Transition needs
 * Push
 * Reveal
 
-### SlideOnTop 
+### SlideOnTop
 
-That draws the Drawer Content on top of the Content view content. 
+That draws the Drawer Content on top of the Content view content.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Adds Transition property into NavigationDrawer
 
@@ -81,7 +81,7 @@ this.navigationDrawer1.Transition = Transition.SlideOnTop;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 ‘Adds Transition property into NavigationDrawer
 
@@ -101,7 +101,7 @@ This Transition moves the Drawer and content view section simultaneously.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Adds Transition property into NavigationDrawer
 
@@ -109,7 +109,7 @@ this.navigationDrawer1.Transition = Transition.Push;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Adds Transition property into NavigationDrawer
 
@@ -129,7 +129,7 @@ In this transition, the Drawer content section will be stable and the content vi
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Adds Transition property into NavigationDrawer
 
@@ -137,7 +137,7 @@ this.navigationDrawer1.Transition = Transition.Push;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Adds Transition property into NavigationDrawer
 
@@ -156,14 +156,14 @@ Me.navigationDrawer1.Transition = Transition.Push
 
 This support helps user to specify the sliding position of the DrawerView and it will have the following four options.
 
-* Left – Slides from left direction. 
-* Right – Slides from right direction. 
-* Top – Slides from Top direction. 
-* Bottom – Slides from Bottom direction. 
+* Left – Slides from left direction.
+* Right – Slides from right direction.
+* Top – Slides from Top direction.
+* Bottom – Slides from Bottom direction.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Adds Position property into the NavigationDrawer
 
@@ -171,7 +171,7 @@ this.navigationDrawer1.Position = Position.Left;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Adds Transition property into NavigationDrawer
 
@@ -181,30 +181,30 @@ Me.navigationDrawer1.Transition = Transition.Push
 
 {% endtabs %}
 
-* Left 
+* Left
 
 ![](Concepts-And-Features_images/navigationdrawer_img5.png)
 
-* Right 
+* Right
 
 ![](Concepts-And-Features_images/navigationdrawer_img6.png)
 
-* Top 
+* Top
 
 ![](Concepts-And-Features_images/navigationdrawer_img7.png)
 
-* Bottom 
+* Bottom
 
 ![](Concepts-And-Features_images/navigationdrawer_img8.png)
 
 
-## Animation Duration
+## Animation duration
 
 This support will help to specify TimeSpan value, by which the DrawerContent can be brought to view.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Sets AnimationDuration for the NavigationDrawer
 
@@ -212,7 +212,7 @@ This support will help to specify TimeSpan value, by which the DrawerContent can
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Sets AnimationDuration for the NavigationDrawer
 
@@ -222,13 +222,13 @@ Me.navigationDrawer1.AnimationDuration = 100
 
 {% endtabs %}
 
-## Toggle Drawer
+## Toggle drawer
 
- This support helps to toggle between Sliding Panel visibility. 
+ This support helps to toggle between Sliding Panel visibility.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Calls the ToggleDrawer function
 
@@ -236,7 +236,7 @@ this.navigationDrawer1.ToggleDrawer();
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Calls the ToggleDrawer function
 

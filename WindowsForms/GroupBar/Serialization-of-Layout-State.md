@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Serialization of Layout State  | WindowsForms | Syncfusion
-description: Serialization of Layout State 
+description: Serialization of Layout State
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Serialization of Layout State 
+# Serialization of layout state
 
-The Layout state of GroupBar can be saved and loaded using the AppStateSerializer class.
-
-The following step-by-step procedure helps you to achieve the same.
+The Layout state of GroupBar can be saved and loaded using the AppStateSerializer class. To achieve this, follow the step-by-step procedure.
 
 1. Include the required namespaces.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		using Syncfusion.Windows.Forms;
 
@@ -22,12 +22,9 @@ The following step-by-step procedure helps you to achieve the same.
 
 		using Syncfusion.Runtime.Serialization;
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
 
-
-
-   ~~~ vbnet
+	{% highlight VB %}
 
 		Imports Syncfusion.Windows.Forms
 
@@ -35,17 +32,20 @@ The following step-by-step procedure helps you to achieve the same.
 
 		Imports Syncfusion.Runtime.Serialization
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
+
+	{% endtabs %}
 
 2. Drag and drop a GroupBar control from the toolbox onto the form, add GroupBar Items using the GroupBar Item CollectionEditor and add two buttons to the form for 'Load' and 'Save' as shown below.
 
-   ![](Overview_images/Overview_img43.jpeg) 
+   ![](Overview_images/Overview_img43.jpeg)
 
 
 3. Store the layout information of the selected GroupBar Item in an XML file using the AppStateSerializer class. In the Form_Closing and Save_Button click, call the following method,
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		private void SaveState ()
 
@@ -81,12 +81,9 @@ The following step-by-step procedure helps you to achieve the same.
 
 		}
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
 
-
-
-   ~~~ vbnet
+	{% highlight VB %}
 
 		Private Sub SaveState()
 
@@ -120,12 +117,15 @@ The following step-by-step procedure helps you to achieve the same.
 
 		End Sub
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
+
+	{% endtabs %}
 
 4. Retrieve the persisted layout information from the XML file using the AppStateSerializer class. In the Form_Load event and Load_Button click, call the following method,
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		private void LoadState ()
 
@@ -167,11 +167,9 @@ The following step-by-step procedure helps you to achieve the same.
 
 		}
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
 
- 
-   ~~~ vbnet
+	{% highlight VB %}
 
 		Private Sub LoadState()
 
@@ -212,13 +210,14 @@ The following step-by-step procedure helps you to achieve the same.
 
 		End Sub
 
-   ~~~
-   {:.prettyprint}
+    {% endhighlight %}
+
+	{% endtabs %}
 
 
 #### Output
 
-At run-time, select any GroupBar Item and save it's state using the Save_Button click and close the form. 
+At run-time, select any GroupBar Item and save it's state using the Save_Button click and close the form.
 
 Select GroupBarItem3 and close the form.
 

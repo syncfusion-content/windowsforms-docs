@@ -11,11 +11,13 @@ documentation: ug
 
 This section comprises the below events:
 
-## PrimaryPages.SelectedIndexChanged Event
+## SelectedIndexChanged event of PrimaryPages
 
 This event is handled whenever primary page selection is changed.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -33,7 +35,7 @@ private void PrimaryPages_SelectedIndexChanged(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -49,11 +51,15 @@ End Sub
 
 {% endhighlight %}
 
-## SecondaryPages.SelectedIndexChanged Event
+{% endtabs %}
+
+## SelectedIndexChanged event of SecondaryPages
 
 This event is handled whenever secondary page selection is changed.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -71,7 +77,7 @@ private void SecondaryPages_SelectedIndexChanged(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -86,4 +92,6 @@ Private Sub SecondaryPages_SelectedIndexChanged(ByVal sender As Object, ByVal e 
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 

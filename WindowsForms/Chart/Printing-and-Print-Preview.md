@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Printing and Print Preview 
+# Printing
 
 ## Print Preview
 

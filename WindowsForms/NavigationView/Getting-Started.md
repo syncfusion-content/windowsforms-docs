@@ -7,11 +7,11 @@ control: NavigationView
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-## Through Designer
+## Through designer
 
-Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential Windows Forms control through drag and drop from Toolbox. 
+Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential Windows Forms control through drag and drop from Toolbox.
 
 * Create a Windows Forms project in Visual Studio.
 
@@ -30,11 +30,11 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 ![](Getting-Started_images/NavigationView4.png)
 
 
-## Through Code-Behind
+## Through code-behind
 
-Syncfusion UI for Windows Forms can added at runtime using C# / VB. The following steps helps to add required Essential Windows Forms control through code. 
+Syncfusion UI for Windows Forms can added at runtime using C#/VB. The following steps helps to add required Essential Windows Forms control through code.
 
-* Create a Windows Forms project in Visual Studio and refer to the following assemblies .
+* Create a Windows Forms project in Visual Studio and refer to the following assemblies.
 	* Syncfusion.Tools.Base.dll
 	* Syncfusion.Tools.Windows.dll
 	* Syncfusion.Shared.Base.dll
@@ -46,15 +46,15 @@ Syncfusion UI for Windows Forms can added at runtime using C# / VB. The followin
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creates NavigationDrawer instance
 
 this.navigationView1 = new Syncfusion.Windows.Forms.Tools.NavigationView();
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 ‘Creates NavigationDrawer instance
 
@@ -68,7 +68,7 @@ Me.navigationView1 = New Syncfusion.Windows.Forms.Tools.NavigationView()
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 Syncfusion.Windows.Forms.Tools.Navigation.Bar bar1 = new Syncfusion.Windows.Forms.Tools.Navigation.Bar();
 
@@ -111,7 +111,7 @@ this.Controls.Add(this.navigationView1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Dim bar1 As New Syncfusion.Windows.Forms.Tools.Navigation.Bar()
 

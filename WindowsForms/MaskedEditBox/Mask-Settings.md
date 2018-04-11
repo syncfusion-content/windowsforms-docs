@@ -105,6 +105,7 @@ Literal</td><td>
 All other symbols are displayed as literals; that is, as themselves.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -112,13 +113,13 @@ this.maskedEditBox1.Mask = "##-##-####";
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.Mask = "##-##-####"
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img5.png)
 
@@ -126,4 +127,4 @@ Me.maskedEditBox1.Mask = "##-##-####"
 
 A Sample which demonstrates the Mask Settings of MaskedEditBox control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

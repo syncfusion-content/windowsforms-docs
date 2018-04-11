@@ -10,7 +10,7 @@ documentation: ug
 # Overview
 
 The Syncfusion TileLayout control acts as a container that holds a set of LayoutGroups, in which you can host rich information.
-You can drag the items of the TileLayout in a matrix position to achieve the best layout. 
+You can drag the items of the TileLayout in a matrix position to achieve the best layout.
 
 ![](Overview_images/Overviewimg1.png)
 

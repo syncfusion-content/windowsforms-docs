@@ -41,7 +41,7 @@ this.diagram1.ShowRulers = true;
 this.diagram1.RulersHeight = 25;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 	
 Me.diagram1.ShowRulers = True
 Me.diagram1.RulersHeight = 25
@@ -115,7 +115,7 @@ this.diagram1.VerticalRuler.TextStyle.Underline = true;
 this.diagram1.VerticalRuler.TextStyle.Unit = MeasureUnits.Point;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 	
 Me.diagram1.VerticalRuler.BackgroundColor = System.Drawing.Color.Beige
 Me.diagram1.VerticalRuler.HighlightColor = System.Drawing.Color.Yellow
@@ -161,7 +161,7 @@ this.diagram1.HorizontalRuler.TextStyle.Underline = true;
 this.diagram1.HorizontalRuler.TextStyle.Unit = MeasureUnits.Point;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.diagram1.HorizontalRuler.BackgroundColor = System.Drawing.Color.Beige
 Me.diagram1.HorizontalRuler.HighlightColor = System.Drawing.Color.Yellow

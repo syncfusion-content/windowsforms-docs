@@ -7,9 +7,9 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-#  Tab Groups
+#  Tab groups
 
-TabbedMDIManager supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the TabbedMDI application. The MDI Children can arranged horizontally or vertically. 
+TabbedMDIManager supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the TabbedMDI application. The MDI Children can arranged horizontally or vertically.
 
 ![](Tab-Groups_images/Tab-Groups_img1.jpeg)
 
@@ -17,44 +17,52 @@ TabbedMDIManager supports multiple TabGroups which can be resizable. It allows u
 
 The below topics will guide you on how to create tab groups and set borders for the tab groups.
 
-## Creating Tab Groups
-
-The below given steps will guide you to create and control tab groups.
+## Creating tab groups
 
 * To the application add Tools.Windows and Shared.Base Syncfusion assemblies.
 * Add 2 more forms and rename them as TabGroup1_Form and TabGroup2_Form. (The application now contains three forms (i.e.) Form1, TabGroup1_Form and TabGroup2_Form).
 * In Form1, add the namespace Syncfusion.Windows.Forms.Tools.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 Using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Imports Syncfusion.Windows.Forms.Tools 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Declare the TabbedMDIManager in your form.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 Private TabbedGroupedMDIManager tabbedMDIManager;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private TabbedGroupedMDIManager As TabbedMDIManager 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Set the form's IsMdiContainer property to True.
 * Initialize the TabbedMDIManager and set the required properties.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 public Form1()
 
@@ -79,7 +87,7 @@ this.tabbedMDIManager.Horizontal = true;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -91,7 +99,7 @@ InitializeComponent()
 
 Me.tabbedMDIManager = New TabbedGroupedMDIManager()
 
-' Indicates whether the user can drag and drop tabs(child forms) from one tab group to another. 
+' Indicates whether the user can drag and drop tabs(child forms) from one tab group to another.
 
 Me.tabbedMDIManager.AllowTabGroupCustomizing = False
 
@@ -103,9 +111,13 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Attach the TabbedMDIManager to your form and specify the Tab Groups.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -125,7 +137,7 @@ this.tabbedMDIManager.TabbedGroups.Add(new TabbedGroup("TabGroup2"));
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -143,9 +155,13 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Add 2 bar items (or buttons can also be used) to add the tab groups. In the barItem_click event, add the below given code.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -183,7 +199,7 @@ this.tabbedMDIManager.TabbedGroups["TabGroup2"].AddForm(form);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -217,6 +233,8 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ![](Tab-Groups_images/Tab-Groups_img2.jpeg)
 
@@ -225,7 +243,7 @@ The AllowTabGroupCustomizing property indicates whether the user can drag and dr
 
 The below methods can be used for specific functionalities in TabGroups.
 
-Methods Table
+Methods table
 
 <table>
 <tr>
@@ -258,13 +276,15 @@ CreateNewVerticalGroup</td><td>
 Creates a new vertical tab group, moving the active child form to that group.</td></tr>
 </table>
 
-## Border Settings
+## Border settings
 
-### Border Color
+### Border color
 
 To set the Border Color of the borders that appear under the MDI tabs, we can use the BottomBorderColor property of TabGroupHosts.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -274,7 +294,7 @@ tabbedMDIManager.TabGroupHosts[1].BottomBorderColor = Color.Green;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -284,15 +304,19 @@ tabbedMDIManager.TabGroupHosts(1).BottomBorderColor = Color.Green
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ![](Tab-Groups_images/Tab-Groups_img3.jpeg)
 
 
-Border Height
+### Border height
 
 To set the Border Height of the borders, we can use the BottomBorderHeight property of TabGroupHosts.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -310,7 +334,7 @@ tabbedMDIManager.TabGroupHosts[1].BottomBorderColor = Color.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -328,6 +352,7 @@ tabbedMDIManager.TabGroupHosts(1).BottomBorderColor = Color.Black
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Tab-Groups_images/Tab-Groups_img4.jpeg)
 

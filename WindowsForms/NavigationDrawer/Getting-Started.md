@@ -3,15 +3,15 @@ layout: post
 title: Getting-Started| WindowsForms | Syncfusion
 description:  getting started
 platform: WindowsForms
-control: NavigationDrawer 
+control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-## Through Designer
+## Through designer
 
-Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential Windows Forms control through drag and drop from Toolbox. 
+Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential Windows Forms control through drag and drop from Toolbox.
 
 * Create a Windows Forms project in Visual Studio.
 
@@ -30,11 +30,11 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 ![](Getting-Started_images/items.png)
 
 
-## Through Code-Behind
+## Through code-behind
 
-Syncfusion UI for Windows Forms can added at runtime using C# / VB. The following steps helps to add required Essential Windows Forms control through code. 
+Syncfusion UI for Windows Forms can added at runtime using C# / VB. The following steps helps to add required Essential Windows Forms control through code.
 
-* Create a Windows Forms project in Visual Studio and refer to the following assemblies .
+* Create a Windows Forms project in Visual Studio and refer to the following assemblies.
 	* Syncfusion.Tools.Base.dll
 	* Syncfusion.Tools.Windows.dll
 	* Syncfusion.Shared.Base.dll
@@ -46,21 +46,21 @@ Syncfusion UI for Windows Forms can added at runtime using C# / VB. The followin
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creates NavigationDrawer instance.
 
 NavigationDrawer navigationDrawer1 = new NavigationDrawer();
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Creates NavigationDrawer instance. 
 
 Dim navigationDrawer1 As New NavigationDrawer()
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -68,7 +68,7 @@ Dim navigationDrawer1 As New NavigationDrawer()
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Adds items to the TreeNavigator.
 
@@ -142,7 +142,7 @@ this.drawerMenuItem2.TextColor = System.Drawing.Color.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Adds items to the TreeNavigator.
 

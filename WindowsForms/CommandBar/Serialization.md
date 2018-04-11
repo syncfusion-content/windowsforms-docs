@@ -16,7 +16,7 @@ The layout state of a CommandBar object can be saved and loaded in the formats g
 * Isolated Storage
 * Windows Registry
 
-## Persistence Support
+## Persistence support
 
 The CommandBarController provides support to save the persisted state of the CommandBar.
 
@@ -24,13 +24,15 @@ The CommandBarController provides support to save the persisted state of the Com
 <table>
 <tr>
 <th>
-CommandBarController Property</th><th>
+CommandBarController property</th><th>
 Description</th></tr>
 <tr>
 <td>
 PersistState</td><td>
 Specifies whether the application's CommandBar state should be persisted.</td></tr>
 </table>
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -39,10 +41,11 @@ Specifies whether the application's CommandBar state should be persisted.</td></
 
 
 this.commandBarController1.PersistState = true;
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -50,7 +53,11 @@ this.commandBarController1.PersistState = true;
 
 
 Me.commandBarController1.PersistState = True
+
 {% endhighlight %}
+
+{% endtabs %}
+
 
 ## AppStateSerializer class
 
@@ -71,7 +78,9 @@ The following step by step procedure helps you to save and load the layout state
 
 
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 
 
@@ -85,10 +94,10 @@ The following step by step procedure helps you to save and load the layout state
 
 		using Syncfusion.Windows.Forms.Tools;
 		
-   ~~~
-   {:.prettyprint}
 
-   ~~~ vbnet
+   {% endhighlight %}
+
+   {% highlight VB %}
 		
 
 
@@ -103,12 +112,17 @@ The following step by step procedure helps you to save and load the layout state
 
 		Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint}
+
+
+   {% endhighlight %}
+
+   {% endtabs %}
 
 4. Declare instances of RegistryKey and MemoryStream classes.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		RegistryKey rootKey;
 
@@ -116,11 +130,9 @@ The following step by step procedure helps you to save and load the layout state
 
 		private MemoryStream memory;
 		
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-
-   ~~~ vbnet
+   {% highlight VB %}
 
 
 
@@ -130,13 +142,15 @@ The following step by step procedure helps you to save and load the layout state
 
 		Private memory As MemoryStream
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
+
+   {% endtabs %}
 
 5. In the Form Load event, use the following code snippet.
 
-   ~~~  cs
+{% tabs %}
 
+{% highlight C# %}
 
 
 		private void Form1_Load(object sender, System.EventArgs e)
@@ -163,11 +177,9 @@ The following step by step procedure helps you to save and load the layout state
 
 		}
 		
-   ~~~ 
-   {:.prettyprint}
+	{% endhighlight %}
 
-
-   ~~~ vbnet
+	{% highlight VB %}
 
 
 		Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
@@ -198,14 +210,17 @@ The following step by step procedure helps you to save and load the layout state
 
 		End Sub
 		
-   ~~~
-   {:.prettyprint}
+	{% endhighlight %}
+
+	{% endtabs %}
 
 
 6. Serialization can be accomplished using the AppStateSerializer class.
 
 
-   ~~~ cs
+	{% tabs %}
+
+	{% highlight C# %}
 
 
 		private AppStateSerializer GetSerializer(string str)
@@ -272,10 +287,9 @@ The following step by step procedure helps you to save and load the layout state
 
 		}
 
-   ~~~ 
-   {:.prettyprint}
+	{% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
 		   
 		Private Function GetSerializer(ByVal str As String) As AppStateSerializer
 
@@ -326,14 +340,18 @@ The following step by step procedure helps you to save and load the layout state
 		 Return (state)
 
 		End Function
-		
-   ~~~
-   {:.prettyprint}
+
+
+	{% endhighlight %}
+
+	{% endtabs %}
 
 
 7. In the Form Closing event, use the following code snippet.
 
-   ~~~ cs
+	{% tabs %}
+
+	{% highlight C# %}
 
 		private void Form1_Closing(object sender, System.ComponentModel.CancelEventArgs e)
 
@@ -383,11 +401,10 @@ The following step by step procedure helps you to save and load the layout state
 
 		}
 		
-   ~~~
-   {:.prettyprint}
 
+	{% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
 
 		Private Sub Form1_Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
 
@@ -432,14 +449,17 @@ The following step by step procedure helps you to save and load the layout state
 		Return (radReturn.Text)
 
 		End Function
-		
-   ~~~
-   {:.prettyprint}
+
+	{% endhighlight %}
+
+	{% endtabs %}
 
 
 8. Add the following code for each CheckedChanged event of the Radio Button.
 
-   ~~~ cs
+	{% tabs %}
+
+	{% highlight C# %}
 
 		private void radXML_CheckedChanged(object sender, System.EventArgs e)
 
@@ -499,10 +519,10 @@ The following step by step procedure helps you to save and load the layout state
 
 		}
 
-   ~~~
-   {:.prettyprint}
 
-   ~~~ vbnet
+	{% endhighlight %}
+
+	{% highlight VB %}
 
 		Private Sub radXML_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -549,16 +569,16 @@ The following step by step procedure helps you to save and load the layout state
 		selRad = "XML Fmt Format"
 
 		End Sub
-		
-   ~~~
-   {:.prettyprint}
 
+	{% endhighlight %}
+
+	{% endtabs %}
 
 Run the sample, dock the CommandBars to any target location and save it's state using any storage technique before closing the application.
 
-The following screen shot shows the saved layout state of the CommandBar object after closing the application.
+The following screenshot shows the saved layout state of the CommandBar object after closing the application.
 
- ![](Serialization_images/Serialization_img2.jpeg) 
+ ![](Serialization_images/Serialization_img2.jpeg)
 
 
 
