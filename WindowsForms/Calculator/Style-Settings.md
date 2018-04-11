@@ -98,7 +98,7 @@ this.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007The
 
 {% endhighlight %}
 
-{% highlight vbn %}
+{% highlight vb %}
 
 Me.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 

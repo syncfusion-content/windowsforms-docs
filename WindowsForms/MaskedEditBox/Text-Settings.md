@@ -45,6 +45,7 @@ DrawActiveWhenDisabled</td><td>
 Specifies if the text should be drawn active, even when disabled.</td></tr>
 </table>
 
+{% tabs % }
 
 {% highlight C# %}  
 
@@ -62,9 +63,7 @@ this.maskedEditBox1.DrawActiveWhenDisabled = true;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
 
@@ -79,6 +78,8 @@ Me.maskedEditBox1.ClipText = "34"
 Me.maskedEditBox1.DrawActiveWhenDisabled = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img12.png)
 
@@ -122,7 +123,7 @@ Select</td><td>
 Selects a range of text in the TextBox.</td></tr>
 </table>
 
-#### Clip Mode
+## Clip Mode
 
 The formatting for the text can be enabled or disabled using the property given below.
 
@@ -139,6 +140,7 @@ ClipMode</td><td>
 Specifies the format of the text that will be returned by the MaskedEditBox control.It includes the below given options:{{ '_IncludeLiterals and_' | markdownify }}{{ '_ExcludeLiterals._' | markdownify }}</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -147,14 +149,15 @@ this.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeL
 {% endhighlight %}
 
 
-
-{% highlight vbnet %} 
+{% highlight vb %} 
 
 Me.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeLiterals
 
 {% endhighlight %}
 
-#### OverflowIndicatorToolTipText
+{% endtabs %}
+
+## OverflowIndicatorToolTipText
 
 The tooltip that should be displayed when an overflow of text occurs can be set using the below given properties.
 
@@ -178,6 +181,7 @@ ShowOverflowIndicatorToolTip</td><td>
 Gets / sets can show overflow indicator tooltip.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -189,9 +193,7 @@ this.maskedEditBox1.ShowOverflowIndicatorToolTip = true;
 
  {% endhighlight %}
 
-
-
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.OverflowIndicatorToolTipText = " Text Overflow"
 
@@ -201,7 +203,7 @@ Me.maskedEditBox1.ShowOverflowIndicatorToolTip = True
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img14.png)
 
@@ -209,5 +211,5 @@ Me.maskedEditBox1.ShowOverflowIndicatorToolTip = True
 
 A Sample which demonstrates the Text Align and Character Casing features of MaskedEditBox control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS
 

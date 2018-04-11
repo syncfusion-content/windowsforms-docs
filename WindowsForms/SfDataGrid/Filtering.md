@@ -260,7 +260,7 @@ Me.sfDataGrid1.Columns("CustomerID").ImmediateUpdateColumnFilter = True
 
 ![](Filtering_images/Filtering_img5.png)
 
-### Filtering null values 
+### Filtering Null Values 
 The null values of the column can be filtered by using the ` (Blanks) ` option of the checked list box. This can be enabled for the column by setting the [AllowBlankFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowBlankFilters.html) property to `true`.
 
 {% tabs %}
@@ -392,7 +392,7 @@ By default the advanced filtering will be applied while clicking the OK button a
 
 ![](Filtering_images/Filtering_img14.png)
 
-### Filtering null values 
+### Filtering Null Values 
 The null values can be filtered by using the `Null` and `Not Null` filter conditions from the advanced filter. 
 
 ![](Filtering_images/Filtering_img15.png)
@@ -404,7 +404,7 @@ The case sensitive filtering can be enabled for the column by using the casing b
 
 ## Customization using Events
 
-### Loading Text Filter for number or date column
+### Loading Text Filter for Number or Date Column
 To load the Text Filter for the column that has number or date value as underlying type, set the `FilterBehavior` property of the GridColumn as `StringTyped`. This loads the Text Filters instead of Number or Date Filters.
 
 {% tabs %}
@@ -458,7 +458,6 @@ void sfDataGrid_FilterChanged(object sender, FilterChangedEventArgs e)
 
     // Get filtered records
     var records = (sender as SfDataGrid).View.Records;
-
     foreach (RecordEntry record in records)
         order.Add(record.Data as OrderInfo);
 }
@@ -479,7 +478,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Displaying Custom filter control for filtering
+### Displaying Custom Filter Control for Filtering
 The custom filter control can be loaded instead of the default filter control by handling the [FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShowing_EV.html) event.
 {% tabs %}
 {% highlight c# %}
@@ -487,14 +486,12 @@ public class CustomFilterControl : FilterControlBase
 {
     SfDataGrid grid;
     public string MappingName { get; set; }
-
     public CustomFilterControl(SfDataGrid grid)
         : base()
     {
         this.grid = grid;
         this.ShowSortPanel = false;
     }
-
     protected override void OnOKButtonClicked(object sender, EventArgs e)
     {
         if (!string.IsNullOrEmpty(MappingName))
@@ -511,13 +508,10 @@ public class CustomFilterControl : FilterControlBase
                     FilterType = FilterType.Contains,
                     FilterValue = item.ToString(),
                     IsCaseSensitive = false
-
                 };
-
                 column.FilterPredicates.Add(predicate);
             }
         }
-
         base.OnOKButtonClicked(sender, e);
     }
 }
@@ -591,7 +585,7 @@ End Sub
 
 ## Appearance
 
-### Hiding sort options 
+### Hiding Sort Options 
 The sort options of the filter control can be hidden by setting the [ShowSortPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridFiltering.DataGridFilterControl~ShowSortPanel.html) property to `false` in the [FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShowing_EV.html) event.
 
 {% tabs %}
@@ -614,7 +608,7 @@ End Sub
 
 ![](Filtering_images/Filtering_img18.png)
 
-### Setting custom filter/filtered Icons in column header
+### Setting Custom Filter/Filtered Icons in Column Header
 The custom filter icon or the filtered icons can be set to the column header by using the [HeaderStyle.FilterIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~FilterIcon.html) and [HeaderStyle.FilteredIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~FilteredIcon.html) property.
 
 {% tabs %}

@@ -56,7 +56,7 @@ bc.Layers.Add(layer3);
 sp.Layers.Add(layer3);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Layer 1
 Dim pts1 As PointF() = {New PointF(50, 25), New PointF(75, 75), New PointF(100, 25), New PointF(125, 75), New PointF(150, 25), New PointF(175, 75),
@@ -146,7 +146,7 @@ layer0.Visible = true;
 layer1.Visible = true;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim layer0 As New Layer()
 Me.diagram1.Model.Layers.Add(layer0)

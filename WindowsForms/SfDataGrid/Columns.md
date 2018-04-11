@@ -85,7 +85,7 @@ SfDataGrid provides support for generating
 1. Automatically generating columns
 2. Manually defining columns
 
-### Automatically generating columns
+### Automatically Generating Columns
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html). Default value is `true`. The columns will be automatically generated based on its column type from the underlying data source.
 <table>
@@ -141,7 +141,7 @@ GridCheckBoxColumn
 
 N> The order of columns in the collection will determine the order of that they will appear in SfDataGrid.
 
-#### AutoGenerateColumns with different modes
+#### AutoGenerateColumns with Different Modes
 
 The column auto generation is controlled using the [SfDataGrid.AutoGenerateColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumnsMode.html) property. Default value is `AutoGenerateColumnsMode.Reset`.
 The `SfDataGrid.AutoGenerateColumnsMode` includes the following modes.
@@ -214,7 +214,7 @@ Keeps the columns which matches in the current data source and the data operatio
 </tr>
 </table>
 
-#### Customize auto-generated columns
+#### Customize Auto-generated Columns
 
 The auto generated column can be customized by handling the [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event. `AutoGeneratingColumn` event occurs when the column is auto generated.
 [AutoGeneratingColumnArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.AutoGeneratingColumnArgs~Column.html) property returns the auto-generated column.
@@ -239,7 +239,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#### Cancel column generation for particular property
+#### Cancel Column Generation for Particular Property
 
 The auto generation of the specific column can be canceled by handling the [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event. The column generation can be canceled by setting the `Cancel` property to `true`.
 {% tabs %}
@@ -262,49 +262,42 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#### Changing column type
+#### Changing Column Type
 
 The type of column adding to SfDataGrid can be changed by setting the instance of column that has to be added in [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event.
 In the below code, column type for `UnitPrice` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.AutoGeneratingColumn += SfDataGrid1_AutoGeneratingColumn;
-
-
 private void SfDataGrid1_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
+{
+    if (e.Column.MappingName == "UnitPrice")
+    {
+        if (e.Column is GridNumericColumn)
         {
-            if (e.Column.MappingName == "UnitPrice")
-            {
-
-                if (e.Column is GridNumericColumn)
-                {
-                    e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit    Price" };
-                }
-            }
+            e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit    Price" };
         }
+    }
+}
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid1.AutoGeneratingColumn, AddressOf SfDataGrid1_AutoGeneratingColumn
-
-
 Private Sub SfDataGrid1_AutoGeneratingColumn(ByVal sender As Object, ByVal e As AutoGeneratingColumnArgs)
-			If e.Column.MappingName = "UnitPrice" Then
-
-				If TypeOf e.Column Is GridNumericColumn Then
-					e.Column = New GridTextColumn() With {.MappingName = "UnitPrice", .HeaderText = "Unit    Price"}
-				End If
-			End If
+If e.Column.MappingName = "UnitPrice" Then
+If TypeOf e.Column Is GridNumericColumn Then
+e.Column = New GridTextColumn() With {.MappingName = "UnitPrice", .HeaderText = "Unit    Price"}
+End If
+End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#### Changing property settings
+#### Changing Property Settings
 
 The properties of the auto generating column can be changed by handling the [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.AutoGeneratingColumn += SfDataGrid1_AutoGeneratingColumn;
-
 private void SfDataGrid1_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
     if (e.Column.MappingName == "OrderID")
@@ -334,7 +327,7 @@ End Sub
 
 SfDataGrid support to generate the columns based on built-in [Data Annotation Attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations(v=vs.95).aspx). Data Annotations ignored, when the [AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html) is set to `false`.
 
-#### Exclude column
+#### Exclude Column
 
 The column generation can be skipped by using `AutoGenerateField` property or by setting the `Bindable` attribute to `false`.
 
@@ -413,7 +406,7 @@ End Property
 {% endhighlight %}
 {% endtabs %}
 
-#### Change the HeaderText of column
+#### Change the HeaderText of Column
 
 The Header text of column can be customized by using `Display.Name` property.
 {% tabs %}
@@ -439,7 +432,7 @@ End Property
 {% endhighlight %}
 {% endtabs %}
 
-#### Change the order of the columns
+#### Change the Order of the Columns
 
 The columns order can be changed by using `DisplayAttribute.Order` property.
 {% tabs %}
@@ -485,7 +478,7 @@ End Property
 The OrderID and CustomerID column rearranged based on specified order.
 ![](Columns_images/columns1.png)
 
-#### Customizing data format
+#### Customizing Data Format
 
 The data format can  be customized using `DataTypeAttribute.DataType` property.
 {% tabs %}
@@ -511,7 +504,7 @@ End Property
 {% endhighlight %}
 {% endtabs %}
 
-#### Setting read-only column
+#### Setting Read-only Column
 
 The editing for a column can be disabled by using `ReadOnly` attribute..
 {% tabs %}
@@ -537,7 +530,7 @@ End Property
 {% endhighlight %}
 {% endtabs %}
 
-### Manually defining columns
+### Manually Defining Columns
 
 The SfDataGrid allows to define the columns manually by adding the desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Columns.html) collection.
 {% tabs %}
@@ -564,11 +557,11 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "ProductNam
 {% endtabs %}
 
 
-## Column manipulation
+## Column Manipulation
 
 The columns (added or auto-generated) can be retrieved from [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Columns.html) property.
 
-### Adding column
+### Adding Column
 
 The column can be added to the SfDataGrid by adding the instance of the column to `SfDataGrid.Columns` property.
 
@@ -581,7 +574,7 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID", 
 {% endhighlight %}
 {% endtabs %}
 
-### Accessing column
+### Accessing Column
 
 The column can be accessed through its column index or [GridColumnBase.MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) property from the `SfDataGrid.Columns` collection.
 {% tabs %}
@@ -597,7 +590,7 @@ Dim column As GridColumn = Me.sfDataGrid1.Columns("OrderID")
 {% endhighlight %}
 {% endtabs %}
 
-### Clearing or Removing column
+### Clearing or Removing Column
 
 All the columns can be removed by clearing the `SfDataGrid.Columns` collection.
 {% tabs %}
@@ -661,11 +654,11 @@ Me.sfDataGrid1.AllowResizingColumns = True
 The column width can be changed by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the line exists between two columns.
 ![](Columns_images/Resizing1.png)
 
-### Hidden column resizing 
+### Hidden Column Resizing 
 SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowResizingHiddenColumns.html) property to true.
 ![](Columns_images/Resizing2.png)
 
-### Disable resizing
+### Disable Resizing
 Resizing of particular column can be canceled by setting [GridColumnBase.AllowResizing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowResizing.html) property to false. 
 
 In another way, the resizing can be canceled by handling [SfDataGrid.ColumnResizing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ColumnResizing_EV.html) event. The `ColumnResizing` event occurs when start dragging by resizing cursor on headers.
@@ -675,26 +668,24 @@ In another way, the resizing can be canceled by handling [SfDataGrid.ColumnResiz
 this.sfDataGrid.ColumnResizing += SfDataGrid_ColumnResizing;
 
 void SfDataGrid_ColumnResizing(object sender, ColumnResizingEventArgs e)
-        {
-            if (e.ColumnIndex == 1)
-                e.Cancel = true;
-            
-        }
+{
+    if (e.ColumnIndex == 1)
+        e.Cancel = true;
+}
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid.ColumnResizing, AddressOf SfDataGrid_ColumnResizing
 
 Private Sub SfDataGrid_ColumnResizing(ByVal sender As Object, ByVal e As ColumnResizingEventArgs)
-			If e.ColumnIndex = 1 Then
-				e.Cancel = True
-			End If
-
+	If e.ColumnIndex = 1 Then
+		e.Cancel = True
+	End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
 
 
-## Column drag and drop
+## Column Drag and Drop
 SfDataGrid allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDraggingColumns.html) to true.
 {% tabs %}
 {% highlight c# %}
@@ -719,7 +710,7 @@ sfDataGrid.Columns(0).AllowDragging = False
 ### Disable Column Reordering
 The [ColumnDragging](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ColumnDragging_EV.html) event occurs when start dragging the column header. The dragging operation of the particular column can canceled by handling the `ColumnDragging` event. [ColumnDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs.html) of `ColumnDragging` event provides information about the column triggered this event.
 
-#### Cancel dragging operation
+#### Cancel Dragging Operation
 SfDataGrid allow to cancel dragging operation for particular column by handling the `ColumnDragging` event when the `e.Reason` is `ColumnDraggingAction.DragStarting`.
 {% tabs %}
 {% highlight c# %}
@@ -728,7 +719,6 @@ sfDataGrid.ColumnDragging += sfDataGrid_ColumnDragging;
 void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs e)
 {
     var column = sfDataGrid.Columns[e.From];
-
     if (column.MappingName == "OrderID" && e.Reason == ColumnDraggingAction.DragStarting)
     {
         e.Cancel = true;
@@ -748,7 +738,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#### Cancel column reordering
+#### Cancel Column Reordering
 SfDataGrid allow to cancel dropping a column at particular column by handling the `ColumnDragging` event with `e.Reason` is `ColumnDraggingAction.Dropping`.
 {% tabs %}
 {% highlight c# %}
@@ -759,7 +749,6 @@ void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Event
     if (e.Reason == ColumnDraggingAction.Dropping)
     {
         var column = sfDataGrid.Columns[e.To];
-
         if (column.MappingName == "ProductName")
         {
             e.Cancel = true;
@@ -781,7 +770,7 @@ Private Sub sfDataGrid_ColumnDragging(ByVal sender As Object, ByVal e As Syncfus
 End Sub
 {% endhighlight %}
 {% endtabs %}
-### Drag and drop Customization
+### Drag and Drop Customization
 The drag-and-drop operations can be changed by overriding the virtual methods of [ColumnDragDropController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ColumnDragDropController.html) class and assigning it to [SfDataGrid.ColumnDragDropController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ColumnDragDropController.html).
 {% tabs %}
 {% highlight c# %}
@@ -793,7 +782,6 @@ public class CustomDragAndDropController : ColumnDragDropController
     public CustomDragAndDropController(TableControl tableControl, GroupPanel groupPanel)
         : base(tableControl, groupPanel)
     {
-
     }
 
     protected override bool CanShowPopup(GridColumn column)
@@ -846,7 +834,7 @@ public class CustomDragAndDropController : ColumnDragDropController
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling drag & drop between frozen and non-frozen columns
+### Disabling Drag and Drop between Frozen and Non-frozen Columns
 
 By default, the columns re-ordering performed between any column regions of columns. The dropping action can cancel between the frozen and non-frozen columns by handling `SfDataGrid.ColumnDragging` event.
 {% tabs %}
@@ -858,10 +846,8 @@ void sfDataGrid_ColumnDragging(object sender, Syncfusion.WinForms.DataGrid.Event
     if (e.Reason == ColumnDraggingAction.Dropping)
     {
         var frozenColIndex = this.sfDataGrid.FrozenColumnCount + this.sfDataGrid.TableControl.ResolveToStartColumnIndex();
-
         if (e.From < frozenColIndex && e.To > frozenColIndex - 1)
             e.Cancel = true;
-
         if (e.From > frozenColIndex && e.To < frozenColIndex || (e.From == frozenColIndex && e.To < frozenColIndex))
             e.Cancel = true;
     }
@@ -873,11 +859,9 @@ AddHandler sfDataGrid.ColumnDragging, AddressOf sfDataGrid_ColumnDragging
 Private Sub sfDataGrid_ColumnDragging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs)
 	If e.Reason = ColumnDraggingAction.Dropping Then
 		Dim frozenColIndex = Me.sfDataGrid.FrozenColumnCount + Me.sfDataGrid.TableControl.ResolveToStartColumnIndex()
-
 		If e.From < frozenColIndex AndAlso e.To > frozenColIndex - 1 Then
 			e.Cancel = True
 		End If
-
 		If e.From > frozenColIndex AndAlso e.To < frozenColIndex OrElse (e.From Is frozenColIndex AndAlso e.To < frozenColIndex) Then
 			e.Cancel = True
 		End If
@@ -934,7 +918,7 @@ sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1)
 
 ![](Columns_images/StackedHeader_img4.png)
 
-### Adding child columns	
+### Adding Child Columns	
 SfDataGrid allows to add the child columns in a particular stacked header directly.
 
 {% tabs %}
@@ -955,7 +939,7 @@ Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(0).ChildColumns = previousChil
 {% endtabs %}
 ![](Columns_images/StackedHeader_img5.png)
 
-### Removing child columns
+### Removing Child Columns
 SfDataGrid allows to remove the child columns from particular stacked header directly.
 
 {% tabs %}
@@ -991,7 +975,7 @@ Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(0).ChildColumns = childColumns
 
 ![](Columns_images/StackedHeader_img6.png)
 
-### Multi stacked headers
+### Multi Stacked Headers
 Multiple stacked headers can be added to `SfDataGrid` by adding the required number of `StackedHeaderRow` to `SfDataGrid.StackedHeaderRows`property.
 
 {% tabs %}
@@ -1035,7 +1019,7 @@ Me.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2)
 
 ### Appearance 
 
-### Stacked header row appearance
+### Stacked Header Row Appearance
 
 The appearance of stacked header row can be customized by setting the [StackedHeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~StackedHeaderStyle.html) property. The `StackedHeaderStyle` property contains all the settings that are needed for the stacked header row appearance customization. 
 {% tabs %}
@@ -1050,7 +1034,7 @@ Me.sfDataGrid.Style.StackedHeaderStyle.TextColor = Color.White
 {% endtabs %}
 ![](Columns_images/StackedHeader_img8.png)
 
-### Changing the stacked header appearance based on column
+### Changing the Stacked Header Appearance based on Column
 An appearance of the stacked header row can be customized by using [DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event. SfDataGrid allow to check the row type for stacked header row by getting the property from `(e.DataRow as DataRowBase).RowType` of [DrawCellEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html). 
  SfDataGrid allows to check the stacked column by its cell value which is available in `DrawCellEventArgs `​and apply styling using ‘e.Style’ property of `DrawCellEventArgs` 
 {% tabs %}
@@ -1191,7 +1175,7 @@ sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.Fill
 
 N> The `GridColumnBase.AutoSizeColumnsMode` takes higher priority than the `SfDataGrid.AutoSizeColumnsMode`.
 
-### Fill remaining width for any column
+### Fill Remaining Width for any Column
 While setting [SfDataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) as `LastColumnFill` or `AllCellsWithLastColumnFill` remaining width is applied to last column. The remaining width to specific column can be applied by setting `GridColumnBase.AutoSizeColumnsMode` property as like below,
 
 {% tabs %}
@@ -1207,7 +1191,7 @@ Me.sfDataGrid.Columns("ProductName").AutoSizeColumnsMode = AutoSizeColumnsMode.L
 
 ![](ColumnSizing_images/ColumnSizing_img2.png)
 
-### Auto size based on string length
+### Auto Size based on String Length
 By default, the auto size of the column is calculated based on the string width. To improve the performance of the column auto sizing, the column auto size calculation logic can be calculated based on the length of the values by using [SfDataGrid.AutoSizeController.AutoSizeCalculationMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~AutoSizeCalculationMode.html) property.
 The default is `AutoSizeCalculationMode.Default` which calculates size for all the cell’s formatted text. The columns can also be auto sized based on string length of the cell using the `AutoSizeCalculationMode.SmartFit` which calculates the size for the cell which has longest string.
 
@@ -1222,7 +1206,7 @@ Me.sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.AllCells
 {% endhighlight %}
 {% endtabs %}
 
-### Column auto sizing for visible rows
+### Column Auto Sizing for Visible Rows
 By default, the column auto size is calculated for the whole rows. The column auto size can be calculated for the visible rows only by using the  [AutoSizeController.AutoSizeRange](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~AutoSizeRange.html) property.
 The default is `AutoSizeRange.Table` which considers all the records in the table for auto sizing. The columns can be auto sized considering only the visible rows using the `AutoSizeRange.VisibleRows` mode as like below.
 
@@ -1235,7 +1219,7 @@ Me.sfDataGrid.AutoSizeController.AutoSizeRange = AutoSizeRange.VisibleRows
 {% endhighlight %}
 {% endtabs %}
 
-### Refreshing ColumnSizer at runtime
+### Refreshing ColumnSizer at Runtime
 The auto column sizing can be refreshed at by calling [SfDataGrid.AutoSizeController.Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~Refresh.html) method. The column auto width can be recalculated by calling the reset methods of `AutoSizeController`. The [ResetAutoSizeWidthForAllColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidthForAllColumns.html) method reset widths to all columns. [ResetAutoSizeWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~ResetAutoSizeWidth.html) method reset the width to specific column.
 
 N> The column does not auto size its width automatically when the data of that column get changed. 
@@ -1258,7 +1242,7 @@ Me.sfDataGrid1.AutoSizeController.Refresh()
 {% endhighlight %}
 {% endtabs %}
 
-### Resetting column width to apply AutoSizeColumnsMode
+### Resetting Column Width to Apply AutoSizeColumnsMode
 When the width of the column is explicitly defined or column is resized, column width is not changed based on `AutoSizeColumnsMode`. You can reset [GridColumnBase.Width](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_Width) by setting 0 to apply column width based on column sizer.
 
 {% tabs %}
@@ -1280,7 +1264,7 @@ Me.sfDataGrid1.ColumnSizer.Refresh()
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing built-in column sizing logic
+### Customizing Built-in Column Sizing Logic
 The column auto sizing operations of the SfDataGrid is processed in the [AutoSizeController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController.html) class. The column sizing operations can be customized by overriding  `AutoSizeController` and set it to `SfDataGrid.AutoSizeController` property.
 
 {% tabs %}
@@ -1333,7 +1317,7 @@ public class CustomGridColumnSizer : AutoSizeController
 {% endhighlight %}
 {% endtabs %}
 
-### Custom column sizer with ratio support
+### Custom Column Sizer with Ratio Support
 
 The `AutoSizeColumnsMode.Fill` width calculation logic can be customized by overriding [SetFillWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~SetFillWidth.html) method of `AutoSizeController`.
 For example, the column width can be calculated with specified ratios instead of dividing equal width for all columns in `AutoSizeColumnsMode.Fill` calculation using the logic in below `FillRatio` class.

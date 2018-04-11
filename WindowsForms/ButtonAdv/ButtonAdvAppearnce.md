@@ -11,11 +11,9 @@ documentation: ug
 
 This section will walk you through the below topics which discusses the properties that controls the appearance of the ButtonAdv.
 
-
 ## Button Types
 
 ButtonAdv control supports different button types in terms of its appearance. It is specified using the ButtonType property.
-
 
 <table>
 <tr>
@@ -42,51 +40,35 @@ LeftEnd - Left end image is used.<br/>
 RightEnd - Right end image is used.</td></tr>
 </table>
 
-
-
-
-
 N> You can also specify your own image for the ButtonAdv using Image property and this will effect only when ButtonType is set to Normal. See [Image Settings](http://help.syncfusion.com/windowsforms/buttonadv/imagesettings) to know more.
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 //Setting Calculator button type
-
 this.ButtonAdvControl.ButtonType=Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
-
-
+{% highlight vb %}
 
 'Setting Calculator button type
-
 Me.ButtonAdvControl.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img59.jpeg) 
 
-
-
-
-
- 
 N> The ButtonTypes are only provided for ease of use and do not in any way change the functionality of the buttons.
 
 Example - A sample image which uses most of the button types in a single application is as follows. User will have to add respective functionalities for each button type.
 
 ![](Overview_images/Overview_img61.jpeg) 
 
-
 ## Border Styles
 
 Border style for the ButtonAdv control is specified in the below property.
-
 
 <table>
 <tr>
@@ -115,35 +97,25 @@ SunkenInner and<br/>
 SunkenOuter</td></tr>
 </table>
 
-
-
-
 N> This setting will be effective only for Office2003, OfficeXP and WindowsXP styles set through ButtonAdv.Appearance property. See [Visual Styles](http://help.syncfusion.com/windowsforms/buttonadvappearnce#visual-styles).
 
-
- 
- {%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 //Sample code for setting "SunkenOuter" Border Style using BorderStyleAdv
-
 this.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.SunkenOuter;
 
+{% endhighlight %}
 
-{%endhighlight%}
-
-{%highlight vbnet%}
+{% highlight vb %}
 
 //Sample code for setting "SunkenOuter" Border Style using BorderStyleAdv
-
 Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.SunkenOuter
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img63.jpeg) 
-
-
 
 {% seealso %}
 
@@ -154,7 +126,6 @@ Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Su
 ## Visual Styles
 
 Visual Styles for the ButtonAdv control can be enabled by using the UseVisualStyle property. The different visual style are specified through Appearance.
-
 
 <table>
 <tr>
@@ -175,52 +146,49 @@ MetroColor</td><td>
 Gets or sets the metro color of the control.(Applicable for metro style only)</td></tr>
 </table>
 
-
 ### Office Color Themes
 
 //Sample code for setting "Office2016 Colorful" color scheme for ButtonAdv
 
-{%highlight c#%}
+{% tabs %}
+{% highlight c# %}
 
 this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight vb %}
 
 Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016Colorful
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Office_2016.png)
-
 
 ### Custom Colors
 
 We can also apply custom colors to the ButtonAdv control by setting Office2007ColorScheme to "_Managed"_ and specifying the custom color through the ApplyManagedColors method as follows.
 
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen);
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight vb %}
+
 Me.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-
 Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img68.jpeg) 
 
-
- {% seealso %}
+{% seealso %}
 
 [Button Types](#button-types), [Image Settings](http://help.syncfusion.com/windowsforms/buttonadv/imagesettings)
 
@@ -229,7 +197,6 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 ## Foreground Settings
 
 Text for the ButtonAdv can be customized using the below properties.
-
 
 <table>
 <tr>
@@ -272,42 +239,27 @@ ForeColor</td><td>
 Sets the fore color for the control's text.</td></tr>
 </table>
 
-
-{%highlight c#%}
-
-
+{% tabs %}
+{% highlight c# %}
 
 this.buttonAdv1.Text = "Image above Text";
-
 this.buttonAdv4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-
 this.buttonAdv4.TextImageRelation = TextImageRelation.ImageAboveText;
 
-
-
 this.buttonAdv1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular);
-
 this.buttonAdv1.ForeColor = System.Drawing.Color.White;
 
+{% endhighlight %}
 
-{%endhighlight%}
-
-{%highlight vbnet%}
+{% highlight vb %}
 
 Me.buttonAdv4.Text =  "Image above Text"
-
 Me.buttonAdv4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-
 Me.buttonAdv4.TextImageRelation = TextImageRelation.ImageAboveText
-
-
-
 Me.buttonAdv1.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular)
-
 Me.buttonAdv1.ForeColor = System.Drawing.Color.White
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img69.jpeg) 
-
-

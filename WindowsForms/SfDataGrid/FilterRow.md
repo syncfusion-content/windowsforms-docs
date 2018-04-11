@@ -236,7 +236,7 @@ Always equals filter condition will be applied for filtering the CheckBox value.
 
 ![](FilterRow_images/FilterRow_Image3.png)
 
-## Filtering null values 
+## Filtering nNll Values 
 The null values of the columns can be filtered by using the filter row options such as Null and Not Null. This options is enabled by default for all the filter row editors. To disable the null filter options from the filter options list, use the [AllowBlankFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowBlankFilters.html) property of the GridColumn. The default value of this property is `true`.
 
 {% tabs %}
@@ -288,7 +288,7 @@ Me.sfDataGrid.FilterDelay = 1000
 {% endhighlight %}
 {% endtabs %}
 
-## Disable the Filtering for Particular FilterRow cell
+## Disable the Filtering for Particular FilterRow Cell
 By default the filtering will be applied based on the edited value of the filter row cell. To avoid the filtering through the filter row cell, cancel the editing of the cell using the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event.
 
 {% tabs %}

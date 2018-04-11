@@ -7,22 +7,22 @@ control: Wizard
 documentation: ug
 ---
 
-# Browse Buttons
+# Browse buttons
 
-The default buttons which are available for the Wizard control are Back, Next, Cancel and Help. The Next and the Back buttons facilitates users to navigate between wizard pages. 
+The default buttons which are available for the Wizard control are Back, Next, Cancel, and Help. The Next and the Back buttons facilitate users to navigate between wizard pages.
 
 N> You can navigate between the pages at Design Time also. See Page Navigation at Design time topic for more details.
 
-### Button Visibility
+### Button visibility
 
 By default, all the buttons are visible for all the Wizard pages. To change their visibility, use the below properties in individual pages.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-Wizard Page Property</th><th>
+Wizard Page property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -48,7 +48,9 @@ Specifies whether to display the 'Next' button.</td></tr>
 
 N> When you use more than one wizard page, you may set the BackVisible property of the first page to true to hide the back button.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -64,7 +66,7 @@ this.wizardControlPage1.FinishVisible = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -80,14 +82,16 @@ Me.wizardControlPage1.FinishVisible = True
 
 {% endhighlight %}
 
+{% endtabs %}
+
 You can enable or disable the buttons using the respective button enabled properties.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-WizardControlPage Property</th><th>
+WizardControlPage property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -111,21 +115,25 @@ NextEnabled</td><td>
 Specifies whether the state of 'Next' button should be enabled or disabled.</td></tr>
 </table>
 
-###Adding Finish Button
+### Adding finish button
 
-In order to display the 'Finish' button in the last wizard page, user should set CancelOverFinish property in the WizardControlPage Collection Editor to false. This property determines if the Cancel button is positioned over the Finish button. If this property is set to true, it will override the FinishVisible property. 
+In order to display the 'Finish' button in the last wizard page, user should set CancelOverFinish property in the WizardControlPage Collection Editor to false. This property determines if the Cancel button is positioned over the Finish button. If this property is set to true, it will override the FinishVisible property.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.finishPage.CancelOverFinish = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.finishPage.CancelOverFinish = False
 
 {% endhighlight %}
+
+{% endtabs %}
 
 A sample which includes button settings is available in the below sample installation location.
 
@@ -137,13 +145,15 @@ How to set spacing between the browsing buttons?
 
 {% endseealso %}
 
-### Adding and Reordering Buttons
+### Adding and reordering buttons
 
-#### Adding new Button to a Page
+#### Adding new button to a page
 
 The following code snippet shows how to add a button to the wizard control browse buttons.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -165,7 +175,7 @@ this.wizardControl1.GridBagLayout.GetConstraintsRef(button).GridPosY = 5;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -187,17 +197,21 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(button).GridPosY = 5
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Package_images/Wizard-Package_img23.jpeg)
 
 
 
-#### Reordering the Button Sequence
+#### Reordering the button sequence
 
 In order to change the position of the buttons, user should handle the GridPostX property and change the position programmatically.
 
 N> Wizard control automatically sets position for some buttons after page change. Setting the position for controls manually, is not supported in those cases.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -215,7 +229,7 @@ this.wizardControl1.GridBagLayout.GetConstraintsRef(this.wizardControl1.HelpButt
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -233,20 +247,22 @@ Me.wizardControl1.GridBagLayout.GetConstraintsRef(Me.wizardControl1.HelpButton).
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Package_images/Wizard-Package_img25.jpeg)
 
 
 
-#### Button Appearance
+#### Button appearance
 
 The default browse buttons are the normal windows button controls. Appearance of the buttons can be controlled using the properties available. Some appearance properties are listed below.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-Button Property</th><th>
+Button property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -294,8 +310,9 @@ TextImageRelation</td><td>
 Specifies the relative location of the image to the text on the button.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -313,7 +330,7 @@ this.wizardControl1.CancelButton.FlatAppearance.MouseOverBackColor = System.Draw
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -330,6 +347,8 @@ this.wizardControl1.CancelButton.FlatAppearance.BorderColor = System.Drawing.Col
 this.wizardControl1.CancelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Wizard-Package_images/Wizard-Package_img26.jpeg)
 

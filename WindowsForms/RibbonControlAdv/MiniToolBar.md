@@ -230,11 +230,13 @@ Me.MiniToolBar.AssociatedControl = Me.richTextBox1
 
 * Right-click on the RichTextBox to view the MiniToolBar.
 
-##Visual Style
+## Visual Style
 
 MiniToolbar supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
 
 This style can be set using Style property
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -247,6 +249,8 @@ this.miniToolBar1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Office
 Me.miniToolBar1.Style = Syncfusion.Windows.Forms.Tools.ToolStripExStyle.Office2016Colorful;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](MiniToolbar_images/minitoolbar_colorful-theme.png)
 
@@ -465,7 +469,7 @@ Console.Write("BeginDrag Event is raised");
 
 Private Sub miniToolBar1_BeginDrag(ByVal sender As Object, ByVal e As System.EventArgs)
 
-/You can see the below line in output window during runtime.
+'You can see the below line in output window during runtime.
 
 Console.Write("BeginDrag Event is raised");
 
@@ -515,9 +519,9 @@ e.Cancel=true;
 
 Private Sub miniToolBar1_Opening(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
 
-//EventArgs can give the options to Allow or Cancel the event by this method.
+'EventArgs can give the options to Allow or Cancel the event by this method.
 
-//Cancel is the boolean property which can prevent docking event when it is true.
+'Cancel is the boolean property which can prevent docking event when it is true.
 
 e.Cancel=true;
 

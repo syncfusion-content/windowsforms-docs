@@ -20,40 +20,46 @@ It can be created programmatically as follows.
 
 1. Include the required namespace.
 
-   ~~~ cs
+   {% tabs %}
 
-        using Syncfusion.Windows.Forms.Tools;
+   {% highlight c# %}
 
-   ~~~
-   {:.prettyprint }
+   using Syncfusion.Windows.Forms.Tools;
 
-   ~~~ vbnet
+   {% endhighlight %}
+   
+   {% highlight vbnet %}
 
-        Imports Syncfusion.Windows.Forms.Tools
+   Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
+
+   {% endtabs %}
+   
+   
 
 2. Create an instance of the CurrencyTextBox. Add that instance to the Form.
 
-   ~~~ cs
+   {% tabs %}
 
-        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox1;
+   {% highlight c# %}
 
-		this.currencyTextBox2=new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+    private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox1;
 
-		this.Controls.Add(this.currencyTextBox1);
+	this.currencyTextBox2=new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
 
-   ~~~
-   {:.prettyprint }
+	this.Controls.Add(this.currencyTextBox1);
 
-   ~~~ vbnet
+   {% endhighlight %}
+   
+    {% highlight vbnet %}  
 
-        Private currencyTextBox1 As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
+    Private currencyTextBox1 As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
 
-		Me.currencyTextBox2 = New Syncfusion.Windows.Forms.Tools.CurrencyTextBox()
+	Me.currencyTextBox2 = New Syncfusion.Windows.Forms.Tools.CurrencyTextBox()
 
-		Me.Controls.Add(Me.currencyTextBox1)
+	Me.Controls.Add(Me.currencyTextBox1)
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
+   
+   {% endtabs %}

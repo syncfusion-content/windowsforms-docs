@@ -7,12 +7,9 @@ control: Tools
 documentation: ug
 ---
 
-
-
-# How to hide a child button of a ButtonEdit control?
+# How to Hide a Child Button of a ButtonEdit Control
 
 By calling the ButtonEdit.HideButton method, we can hide a child button. 
-
 
 <table>
 <tr>
@@ -30,24 +27,21 @@ If true, the button will be visible and if false,
 the button will not be visible.</td></tr>
 </table>
 
-
+{% tabs %}
 {%highlight c#%}
-
-
 
 this.buttonEdit1.HideButton(0, false);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
-
-
+{%highlight vb%}
 
 Me.buttonEdit1.HideButton(0, False)
 
 {%endhighlight%}
+{% endtabs %}
 
-## How to replace the default TextBox in a ButtonEdit control?
+## How to Replace the Default TextBox in a ButtonEdit Control
 
 We can replace the default TextBox of the ButtonEdit control with other TextBox by doing the following steps.
 
@@ -55,20 +49,16 @@ We can replace the default TextBox of the ButtonEdit control with other TextBox 
 
    ![](FAQ_images/Overview_img105.jpeg)
 
-
-
 2. From the property window of ButtonEdit, select the PercentTextBox to be the TextBox control of the ButtonEdit control as shown below. 
 
    ![](FAQ_images/Overview_img106.jpeg) 
-
-
 
 3. From the same properties window, you can set the percent properties for the ButtonEdit control.
 
    ![](FAQ_images/Overview_img107.jpeg) 
 
 
-## How to set tooltip for ButtonEdit Child buttons?
+## How to Set tooltip for ButtonEdit Child Buttons
 
  To set tooltip for a child button in a ButtonEdit control, drag and drop a ToolTip control from the toolbox. Text for tooltip is set using the extender property of the particular child button.
 
@@ -77,20 +67,18 @@ We can replace the default TextBox of the ButtonEdit control with other TextBox 
 
 We can also set the Tooltip for ButtonEdit control programmatically using its SetToolTip() method.
 
+{% tabs %}
 {%highlight c#%}
-
-
 
 this.toolTip1.SetToolTip(this.buttonEdit1, "Click here to search");
 
 {%endhighlight%}
 
-{%highlight vbnet%}
-
-
+{%highlight vb%}
 
 Me.toolTip1.SetToolTip(Me.buttonEdit1, "Click here to search")
 
 {%endhighlight%}
+{% endtabs %}
 
  ![](FAQ_images/Overview_img109.jpeg) 

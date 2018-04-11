@@ -148,7 +148,7 @@ diagram.Size = new Size(400, 400);
 diagram.Location = new Point(20, 5);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Imports the Diagram control’s namespaces
 Imports Syncfusion.Windows.Forms.Diagram
@@ -184,7 +184,7 @@ Model model = new Model();
 diagram.Model = model;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Create a model
 Dim model As New Model()
@@ -207,7 +207,7 @@ diagram.Model = model
 this.Controls.Add(diagram);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Add the Diagram control to the Diagram Form
 Me.Controls.Add(diagram)
@@ -260,7 +260,7 @@ rectangle.Labels.Add(label);
 diagram.Model.AppendChild(rectangle);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Enable diagram rulers
 diagram.ShowRulers = True
@@ -385,7 +385,7 @@ diagram.Model.AppendChild(link);
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Create a process node
 Dim process As New Rectangle(50, 50, 100, 70)
@@ -538,7 +538,7 @@ paletteBar.LoadPalette("..//..//Flowchart Symbols.edp");
 this.Controls.Add(paletteBar);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Imports the Diagram control’s namespace
 Imports Syncfusion.Windows.Forms.Diagram.Controls
@@ -634,7 +634,7 @@ paletteView.LoadPalette("..//..//Basic Shapes.edp");
 this.Controls.Add(paletteView);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Imports the Diagram control’s namespace
 Imports Syncfusion.Windows.Forms.Diagram.Controls
@@ -721,7 +721,7 @@ overviewControl.Diagram = diagram1;
 this.Controls.Add(overviewControl);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Imports the Diagram control’s namespace
 Imports Syncfusion.Windows.Forms.Diagram.Controls
@@ -804,7 +804,7 @@ propertyEditor.Diagram = diagram1;
 this.Controls.Add(propertyEditor);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Imports the Diagram control’s namespace
 Imports Syncfusion.Windows.Forms.Diagram.Controls
@@ -887,7 +887,7 @@ documentExplorer.AttachModel(diagram1.Model);
 this.Controls.Add(documentExplorer);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Imports the Diagram control’s namespace
 Imports Syncfusion.Windows.Forms.Diagram.Controls
@@ -1037,9 +1037,9 @@ using (PageSetupDialog dlgPageSetup = new
     PageSetupDialog(diagram1.View))
 {
 if (dlgPageSetup.ShowDialog() == DialogResult.OK)
-{
-diagram1.UpdateView();
-}
+    {
+        diagram1.UpdateView();
+    }
 }
 
 {% endhighlight %}
@@ -1061,14 +1061,14 @@ diagram1.UpdateView();
 
 if (diagram1 != null && diagram1.Model != null)
 {
-PageBorderDialog borderDialog = new PageBorderDialog();
-borderDialog.PageBorderStyle = diagram1.View.PageBorderStyle; // It will show existing border set up
-if (borderDialog.ShowDialog() == DialogResult.OK)
-{
-diagram1.View.PageBorderStyle = borderDialog.PageBorderStyle; // It will update the modified set up.
-diagram1.View.RefreshPageSettings();
-diagram1.UpdateView();
-}
+    PageBorderDialog borderDialog = new PageBorderDialog();
+    borderDialog.PageBorderStyle = diagram1.View.PageBorderStyle; // It will show existing border set up
+    if (borderDialog.ShowDialog() == DialogResult.OK)
+    {
+        diagram1.View.PageBorderStyle = borderDialog.PageBorderStyle; // It will update the modified set up.
+        diagram1.View.RefreshPageSettings();
+        diagram1.UpdateView();
+    }
 }
         
 {% endhighlight %}
@@ -1091,15 +1091,15 @@ diagram1.UpdateView();
 
 if (diagram1 != null && diagram1.Model != null)
 {
-HeaderFooterDialog dlgHF = new HeaderFooterDialog();
-dlgHF.Header = diagram1.Model.HeaderFooterData.Header;
-dlgHF.Footer = diagram1.Model.HeaderFooterData.Footer;
-dlgHF.MeasurementUnits = diagram1.Model.MeasurementUnits;
-if (dlgHF.ShowDialog() == DialogResult.OK)
-{
-diagram1.Model.HeaderFooterData.Header = dlgHF.Header;
-diagram1.Model.HeaderFooterData.Footer = dlgHF.Footer;
-}
+    HeaderFooterDialog dlgHF = new HeaderFooterDialog();
+    dlgHF.Header = diagram1.Model.HeaderFooterData.Header;
+    dlgHF.Footer = diagram1.Model.HeaderFooterData.Footer;
+    dlgHF.MeasurementUnits = diagram1.Model.MeasurementUnits;
+    if (dlgHF.ShowDialog() == DialogResult.OK)
+    {
+        diagram1.Model.HeaderFooterData.Header = dlgHF.Header;
+        diagram1.Model.HeaderFooterData.Footer = dlgHF.Footer;
+    }
 }
             
 {% endhighlight %}
@@ -1126,14 +1126,14 @@ diagram1.Model.HeaderFooterData.Footer = dlgHF.Footer;
 
 if (diagram1 != null)
 {
-PrintDocument printDoc = diagram1.CreatePrintDocument();
-PrintPreviewDialog printPreviewDlg = new PrintPreviewDialog();
-printPreviewDlg.StartPosition = FormStartPosition.CenterScreen;
-printDoc.PrinterSettings.FromPage = 0;
-printDoc.PrinterSettings.ToPage = 0;
-printDoc.PrinterSettings.PrintRange = PrintRange.AllPages;
-printPreviewDlg.Document = printDoc;
-printPreviewDlg.ShowDialog(this);
+    PrintDocument printDoc = diagram1.CreatePrintDocument();
+    PrintPreviewDialog printPreviewDlg = new PrintPreviewDialog();
+    printPreviewDlg.StartPosition = FormStartPosition.CenterScreen;
+    printDoc.PrinterSettings.FromPage = 0;
+    printDoc.PrinterSettings.ToPage = 0;
+    printDoc.PrinterSettings.PrintRange = PrintRange.AllPages;
+    printPreviewDlg.Document = printDoc;
+    printPreviewDlg.ShowDialog(this);
 }
 
 {% endhighlight %}
@@ -1159,15 +1159,15 @@ printPreviewDlg.ShowDialog(this);
 
 if (diagram1 != null)
 {
-PrintDocument printDoc = diagram1.CreatePrintDocument();
-PrintDialog printDlg = new PrintDialog();
-printDlg.Document = printDoc;
-printDlg.AllowSomePages = true;
-if (printDlg.ShowDialog(this) == DialogResult.OK)
-{
-printDoc.PrinterSettings = printDlg.PrinterSettings;
-printDoc.Print();
-}
+    PrintDocument printDoc = diagram1.CreatePrintDocument();
+    PrintDialog printDlg = new PrintDialog();
+    printDlg.Document = printDoc;
+    printDlg.AllowSomePages = true;
+    if (printDlg.ShowDialog(this) == DialogResult.OK)
+    {
+        printDoc.PrinterSettings = printDlg.PrinterSettings;
+        printDoc.Print();
+    }
 }
 
 {% endhighlight %}
@@ -1175,7 +1175,7 @@ printDoc.Print();
 
 Diagram Builder Tools
 
-_Editing Options
+Editing Options
 
 <table>
 <tr>
@@ -1224,7 +1224,7 @@ The following screenshot illustrates the pan and zoom tools.
 
 ![](Getting-Started_images/Getting-Started_img32.jpeg)
 
-_Pan & Zoom Tool
+Pan & Zoom Tool
 
 <table>
 <tr>
@@ -1278,7 +1278,7 @@ The following screen shot illustrates the Alignment tools.
 
 
 
-_Alignment Tool
+Alignment Tool
 
 <table>
 <tr>
@@ -1327,7 +1327,7 @@ The following screen shot illustrates the Rotate tools.
 
 ![](Getting-Started_images/Getting-Started_img34.jpeg)
 
-_Rotate Tools
+Rotate Tools
 
 <table>
 <tr>
@@ -1367,7 +1367,7 @@ The following screen shot illustrates the Resize tools.
 ![](Getting-Started_images/Getting-Started_img35.jpeg)
 
 
-_Resize Tools
+Resize Tools
 
 <table>
 <tr>
@@ -1411,7 +1411,7 @@ The following screen shot illustrates the Nudge tools.
 
 ![](Getting-Started_images/Getting-Started_img36.jpeg)
 
-_Nudge Tools_
+Nudge Tools
 
 <table>
 <tr>
@@ -1450,7 +1450,7 @@ The following screen shot illustrates the Text Formatting tools.
 
 ![](Getting-Started_images/Getting-Started_img37.jpeg)
 
- _Text Formatting Tools_
+ Text Formatting Tools
 
 <table>
 <tr>
@@ -1541,7 +1541,7 @@ The following screen shot illustrates the Group and Order tools.
 
 
 
-_Group & Order Tools_
+Group & Order Tools
 
 <table>
 <tr>
@@ -1729,14 +1729,12 @@ Gets the Preceding Tool.</td></tr>
 {% highlight c# %}
 
 diagram1.Controller.ActivateTool("LineLinkTool");
-
 Tool t = diagram1.Controller.ActiveTool;
-
 if (t is Syncfusion.Windows.Forms.Diagram.LineConnectorTool)
 {
-LineConnectorTool l = (LineConnectorTool)t;
-l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+    LineConnectorTool l = (LineConnectorTool)t;
+    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 }
 
 {% endhighlight %}
@@ -1780,14 +1778,12 @@ Gets the Preceding Tool.</td></tr>
 {% highlight c# %}
 
 diagram1.Controller.ActivateTool("OrthogonalLinkTool");
-
 Tool t = diagram1.Controller.ActiveTool;
-
 if (t is Syncfusion.Windows.Forms.Diagram.OrthogonalConnectorTool)
 {
-OrthogonalConnectorTool l = (OrthogonalConnectorTool)t;
-l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+    OrthogonalConnectorTool l = (OrthogonalConnectorTool)t;
+    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 }
     
 {% endhighlight %}
@@ -1830,14 +1826,12 @@ Gets the Preceding Tool.</td></tr>
 {% highlight c# %}
 
 diagram1.Controller.ActivateTool("DirectedLineLinkTool");
-
 Tool t = diagram1.Controller.ActiveTool;
-
 if (t is Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool)
 {
-DirectedLineConnectorTool l = (DirectedLineConnectorTool)t;
-l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+    DirectedLineConnectorTool l = (DirectedLineConnectorTool)t;
+    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 }
 
 {% endhighlight %}
@@ -1882,14 +1876,12 @@ Gets the Preceding Tool.</td></tr>
 {% highlight c# %}
 
 diagram1.Controller.ActivateTool("PolyLineLinkTool");
-
 Tool t = diagram1.Controller.ActiveTool;
-
 if (t is Syncfusion.Windows.Forms.Diagram.PolyLineConnectorTool)
 {
-PolyLineConnectorTool l = (PolyLineConnectorTool)t;
-l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
-l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+    PolyLineConnectorTool l = (PolyLineConnectorTool)t;
+    l.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
+    l.TailDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 }
 
 {% endhighlight %}
@@ -2139,12 +2131,11 @@ diagram1.EndUpdate();
 
 
 {% tabs %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 private DataTable DataSource()
 {
 DataTable dataTable = new DataTable();
-
 //Querying from DB
 SqlConnection sqlConnection = new SqlConnection(connectionString);
 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(new                SqlCommand("select * from Employees", sqlConnection));
@@ -2166,11 +2157,11 @@ The following code example explains how to apply the layout for the data retriev
 
 private void LayoutNode()
 {
-HierarchicLayoutManager hierarchicalLayout = new HierarchicLayoutManager(this.diagram1.Model, 0, 70, 40);
-hierarchicalLayout.LeftMargin = 50;
-hierarchicalLayout.TopMargin = 50;
-this.diagram1.LayoutManager = hierarchicalLayout;
-this.diagram1.LayoutManager.UpdateLayout(null);
+    HierarchicLayoutManager hierarchicalLayout = new HierarchicLayoutManager(this.diagram1.Model, 0, 70, 40);
+    hierarchicalLayout.LeftMargin = 50;
+    hierarchicalLayout.TopMargin = 50;
+    this.diagram1.LayoutManager = hierarchicalLayout;
+    this.diagram1.LayoutManager.UpdateLayout(null);
 }
 
 {% endhighlight %}
