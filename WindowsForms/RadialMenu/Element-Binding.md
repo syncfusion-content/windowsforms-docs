@@ -269,7 +269,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 
 
-## Populating radial menu slider
+## Populating Radial Menu Slider
 
 Radial Menu Slider is configured in Radial Menu with minimum and maximum value.
 

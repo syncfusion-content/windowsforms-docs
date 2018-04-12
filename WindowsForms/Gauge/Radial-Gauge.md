@@ -7,7 +7,7 @@ control: Gauge
 documentation: ug
 ---
 
-# Radial gauge
+# Radial Gauge
 
 The RadialGauge control can be used for representing a range of values in circular form. It can be used to create sophisticated dashboards, clocks, industrial equipment, medical equipment, more.
 
@@ -29,7 +29,7 @@ This section provides information about radial gauges for developers who are new
 
 The Gauge control is built on Windows Forms programming, which is extended to support a broad set of dashboard development features including resources, controls, graphics, layout, and data binding.
 
-### Creating a radial gauge
+### Creating a Radial Gauge
 
 Radial gauges can be enhanced with a circle frame or semi-circle frame. This section covers how to include a radial gauge in an application.
 
@@ -114,7 +114,7 @@ This section illustrates the features of Radial Gauge with images and sample cod
 * Ranges
 * Scaling Divisions
 
-#### Radial gauge frame
+#### Radial Gauge frame
 
 
 The frame defines the frame types of radial gauges. Frames can be applied using the FrameType property. The RadialGauge control contains two frame types:
@@ -1001,9 +1001,9 @@ radialGauge1.Renderer = custom
 
 ## Frequently asked questions
 
-### How to enable multiple needles to radial gauge
+### How to enable multiple needles to Radial Gauge
 
-#### Adding multiple needles to radial gauge
+#### Adding multiple needles to Radial Gauge
 
 The Radial Gauge control can be used for representing a range of values in circular form. In Radial Gauge, you can represent the range of values using multiple needles.
 
@@ -1047,7 +1047,7 @@ Me.RadialGauge1.NeedleCollection.Add(needle2)
 
 {% endtabs %}
 
-#### Customization of needles in radial gauge
+#### Customization of needles in Radial Gauge
 
 You can customize the Radial gauge needles using the Needles property.
 
@@ -1094,7 +1094,7 @@ Me.RadialGauge1.NeedleCollection(0).Value = 5
 
 {% endtabs %}
 
-### How to customize radial gauge appearance
+### How to customize Radial Gauge appearance
 
 You can customize the appearance of the Radial Gauge by using the `IRadialGaugeRenderer`.
 
@@ -1768,7 +1768,7 @@ Public Class CustomRenderer
 
 ![](Radial-Gauge_images/custom.jpeg)
 
-### How to customize the start angle and sweep angle of the arc in radial gauge
+### How to customize the start angle and sweep angle of the arc in Radial Gauge
 
 It can be customized by using its properties named `StartAngle` and `SweepAngle`.
 

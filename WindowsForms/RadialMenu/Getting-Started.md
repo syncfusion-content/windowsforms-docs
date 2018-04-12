@@ -14,7 +14,7 @@ This section briefly describes how to design a Radial Menu control in a Windows 
 * Adding a Radial Menu Control.
 * Configuring the Radial Menu Control.
 
-## Adding a radial menu control
+## Adding a Radial Menu control
 
 1. Create a new Windows Forms Application Project in VS IDE through New ProjectWizard.
 2. Drop a Radial Menu Control in the Form.
@@ -23,7 +23,7 @@ This section briefly describes how to design a Radial Menu control in a Windows 
 
 
 
-##  Configuring the radial menu control
+##  Configuring the Radial Menu control
 
 The most commonly used settings of the Radial Menu Control are configured either through Designer using the Smart tag or through the Properties window or through code.
 

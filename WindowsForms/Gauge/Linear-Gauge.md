@@ -7,7 +7,7 @@ control: Gauge
 documentation: ug
 ---
 
-# Linear gauge
+# Linear Gauge
 
 Linear gauges are perfect for displaying values graphically along a linear scale. All the elements in a linear gauge, including scales, labels, ticks, and pointers, can be fully customized with data-binding support.
 
@@ -34,7 +34,7 @@ This section illustrates the features of the linear gauge with images and sample
 * Ranges
 * Scaling Divisions
 
-### Linear gauge frame
+### Linear Gauge frame
 
 
 The frame defines the frame types of linear gauges. Frames can be applied using the FrameType property. The LinearGauge control contains two frame types:
@@ -804,7 +804,7 @@ linearGauge1.Renderer = custom
 
 ## Frequently asked questions
 
-### How to customize linear gauge appearance
+### How to customize Linear Gauge appearance
 
 You can customize the appearance of the Linear Gauge by using its interface named `ILinearGaugeRenderer` and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
 

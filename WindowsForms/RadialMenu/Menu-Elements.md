@@ -9,7 +9,7 @@ documentation: ug
 
 # Menu elements
 
-## Radial menu items
+## Radial Menu items
 
 Radial Menu items are populated with the business object collection. Each menu item can be checked.
 
@@ -93,7 +93,7 @@ Radial Font List Box is formed in Radial Menu with installed font family and it 
 
 
 
-## Radial menu slider
+## Radial Menu Slider
 
 Radial Menu Slider is formed in Radial Menu with minimum and maximum value and it is used to update the size.
 

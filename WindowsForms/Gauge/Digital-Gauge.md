@@ -7,7 +7,7 @@ control: Gauge
 documentation: ug
 ---
 
-# Digital gauge
+# Digital Gauge
 
 Digital gauges are perfect for displaying alphanumeric values. All the elements in a digital gauge, including the CharacterCount, CharacterType, RoundCornerRadius, and ShowInvisibleSegments, can be fully customized with data-binding support.
 

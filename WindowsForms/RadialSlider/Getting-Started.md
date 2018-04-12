@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-## Creating radial slider
+## Creating Radial Slider
 
 ### Through code
 

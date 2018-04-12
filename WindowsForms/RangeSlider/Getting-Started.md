@@ -19,7 +19,7 @@ The following image highlights the different sections of the Range Slider.
 
 
 
-## Creating range slider
+## Creating Range Slider
 
 Range Slider can be created in two ways:
 
