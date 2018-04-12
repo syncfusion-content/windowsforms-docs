@@ -3,7 +3,7 @@ layout: post
 title: Orientation | WindowsForms | Syncfusion
 description: orientation
 platform: WindowsForms
-control: TabSplitterContainer 
+control: TabSplitterContainer
 documentation: ug
 ---
 
@@ -11,7 +11,9 @@ documentation: ug
 
 Orientation of the splitter in the TabSplitterContainer control is set using Orientation property. Default value is horizontal.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -19,13 +21,15 @@ this.tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertic
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
 Me.tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Orientation_images/Orientation_img1.jpeg)
 

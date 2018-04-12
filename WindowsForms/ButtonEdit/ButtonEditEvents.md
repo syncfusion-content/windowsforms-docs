@@ -197,6 +197,7 @@ private void buttonEditChildButton1_Click(object sender, System.EventArgs e)
    this.calendarPop1.ShowPopup (new Point(200,200));
 }
 
+{% endhighlight %}
 {% highlight vb %}
 
 Private Sub buttonEditChildButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs)

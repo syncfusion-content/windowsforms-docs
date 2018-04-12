@@ -6,38 +6,38 @@ platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---
-# Menus Framework
+# Menus framework
 
 This section will demonstrate the addition and customization of detached CommandBars and ControlBars.
 
 ## Detached CommandBar
 
-The XP Menus Framework provides the flexibility to add detached toolbars through CommandBar that can host any .NET control. These toolbars are detached from the Framework in the sense that they cannot participate in user customization. Otherwise, they are seamless in look-and-feel. 
+The XP Menus Framework provides the flexibility to add detached toolbars through CommandBar that can host any .NET control. These toolbars are detached from the Framework in the sense that they cannot participate in user customization. Otherwise, they are seamless in look-and-feel.
 
-### Through Designer
+### Through designer
 
-Right click on the MainFrameBarManager in the designer and choose the "Add Detached CommandBar" option, to add a detached command bar. 
+Right-click on the MainFrameBarManager in the designer and choose the "Add Detached CommandBar" option, to add a detached command bar.
 
-![](Overview_images/Overview_img102.jpeg) 
+![](Overview_images/Overview_img102.jpeg)
 
 N> Command Bar can also be added by clicking the command in the properties window.
 
-![](Overview_images/Overview_img104.jpeg) 
+![](Overview_images/Overview_img104.jpeg)
 
-The following screen shot shows the CommandBar in the designer.
+The following screenshot shows the CommandBar in the designer.
 
-![](Overview_images/Overview_img105.jpeg) 
+![](Overview_images/Overview_img105.jpeg)
 
 
 
-* Drag and drop [XPToolBar](/windowsforms/xptoolbar/overview) control on to the CommandBar and add bar items to the XPToolBar through BarItem Collection Editor. 
-* The following screen shot shows the XPToolBar with bar items hosted on CommandBar. This command Bar can be hosted to any target within the form by just dragging and dropping.
+* Drag and drop [XPToolBar](/windowsforms/xptoolbar/overview) control on to the CommandBar and add bar items to the XPToolBar through BarItem Collection Editor.
+* The following screenshot shows the XPToolBar with bar items hosted on CommandBar. This CommandBar can be hosted to any target within the form by just dragging and dropping.
 
-![](Overview_images/Overview_img106.jpeg) 
+![](Overview_images/Overview_img106.jpeg)
 
-To associate a bar with the Command Bar use the below code snippet.
+To associate a bar with the CommandBar use the below code snippet.
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Associate the created Bar with CommandBar.
 
@@ -61,18 +61,13 @@ XPMenus lets you add custom controls to the CommandBar for example TrackBarEx by
 this.commandBar2.Controls.Add(this.trackBarEx1);
 
 
-
-
-
-
-
 'Adding the control to CommandBar
 
 Me.commandBar2.Controls.Add(Me.trackBarEx1)
 
 {% endhighlight  %}
 
-![](Overview_images/Overview_img107.jpeg) 
+![](Overview_images/Overview_img107.jpeg)
 
 
 
@@ -82,16 +77,16 @@ Me.commandBar2.Controls.Add(Me.trackBarEx1)
 
 {% endseealso %}
 
-### CommandBar Properties
+### CommandBar properties
 
-#### Appearance Properties
+#### Appearance properties
 
 
 
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -124,18 +119,18 @@ Sets the control's text.</td></tr>
 </table>
 
 
-![](Overview_images/Overview_img108.jpeg) 
+![](Overview_images/Overview_img108.jpeg)
 
 
 
-#### Behavior Properties
+#### Behavior properties
 
 
 
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -175,14 +170,14 @@ ShowDockModeText</td><td>
 Specifies whether the command bar should display the text that is set through CommandBar.Text property when the command bar is in docked position.</td></tr>
 </table>
 
-#### Hide / Show
+#### Hide/show
 
 
 
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -195,11 +190,11 @@ Hides Close button for the floating CommandBar, when set to true.</td></tr>
 <tr>
 <td>
 HideDropDownButton</td><td>
-Shows / Hides the dropdown button.</td></tr>
+Shows/hides the drop-down button.</td></tr>
 <tr>
 <td>
 HideGripper</td><td>
-Shows / Hides the drag gripper.</td></tr>
+Shows/hides the drag gripper.</td></tr>
 </table>
 
 
@@ -207,29 +202,29 @@ Shows / Hides the drag gripper.</td></tr>
 
 
 
-#### Popup for the DropDown
+#### Pop-up for the drop-down
 
 
 
 <table>
 <tr>
 <th>
-CommandBar Property</th><th>
+CommandBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
 PopupContainer</td><td>
-Indicates the PopupContainer control that is displayed when the dropdown button is clicked.</td></tr>
+Indicates the PopupContainer control that is displayed when the drop-down button is clicked.</td></tr>
 <tr>
 <td>
 PopupMenu</td><td>
-Indicates the Popup menu on clicking the dropdown button.</td></tr>
+Indicates the pop-up menu on clicking the drop-down button.</td></tr>
 </table>
 
 
 ## Detached ControlBars
 
-ControlBars inEssential Tools XP Menus Framework enables application developers to add dockable / floatable controls to their form's toolbar layout. A common example of a ControlBar is the task pane window found in the Microsoft Office 2003 product suite. 
+ControlBars inEssential Tools XP Menus Framework enables application developers to add dockable/floatable controls to their form's toolbar layout. A common example of a ControlBar is the task pane window found in the Microsoft Office 2003 product suite.
 
 A ControlBar is a full-featured docking container that can host any control and be docked along the border of the host form or floated as a top-level window. ControlBars, however, differ from traditional docking windows by adopting the characteristic layout behavior of a toolbar rather than that of a classic dockable control.
 
@@ -243,16 +238,16 @@ How to dock the ControlBars to any edge of the host form?
 
 {% endseealso %}
 
-### ControlBar Client Controls
+### ControlBar client controls
 
 A ControlBar is capable of hosting two controls.
 
 * A main control that occupies the ControlBar's client region.
 * A CaptionControl that is displayed within the ControlBar's caption region. 
 
-While just about any System.Windows.Forms.Control instance can be used as the ControlBar's main client, the caption control position is normally occupied by single line controls such as a toolbar, text box or combo box. 
+While just about any System.Windows.Forms.Control instance can be used as the ControlBar's main client, the caption control position is normally occupied by single line controls such as a toolbar, text box, or combo box.
 
-![](Overview_images/Overview_img111.jpeg) 
+![](Overview_images/Overview_img111.jpeg)
 
 
 
@@ -262,8 +257,9 @@ While just about any System.Windows.Forms.Control instance can be used as the Co
 
 Dropping a control onto the ControlBar automatically sets it as the ControlBar's main client. To assign the caption control, drop the control onto the ControlBar and using the Properties window, set the bar's CaptionControl property to refer that control. Doing so will reposition and resize the control to occupy the bar's caption region. Height of the ControlBar caption bar can be specified in ControlBarCaptionHeight property. Default height is 25.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.controlBar1.CaptionControl = this.xpToolBar1;
@@ -273,14 +269,18 @@ this.controlBar1.ControlBarCaptionHeight = 30;
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
 Me.controlBar1.CaptionControl = Me.xpToolBar1
 
 Me.controlBar1.ControlBarCaptionHeight = 30
+
 {% endhighlight  %}
+
+{% endtabs %}
 
 {% seealso %}
 
@@ -292,16 +292,16 @@ How to dock the ControlBars to any edge of the host form?
 
 {% endseealso %}
 
-### ControlBar Properties
+### ControlBar properties
 
-#### Appearance Properties
+#### Appearance properties
 
 
 
 <table>
 <tr>
 <th>
-ControlBar Property</th><th>
+ControlBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -333,14 +333,14 @@ Text</td><td>
 Sets the control's text.</td></tr>
 </table>
 
-#### Behavior Properties
+#### Behavior properties
 
 
 
 <table>
 <tr>
 <th>
-ControlBar Property</th><th>
+ControlBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -368,14 +368,14 @@ DisableFloating</td><td>
 Disables floating ability of the CommandBar.</td></tr>
 </table>
 
-#### Hide / Show
+#### Hide/show
 
 
 
 <table>
 <tr>
 <th>
-ControlBar Property</th><th>
+ControlBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -384,21 +384,21 @@ Hides Close button for the floating CommandBar, when set to true.</td></tr>
 <tr>
 <td>
 HideDropDownButton</td><td>
-Shows / Hides the dropdown button.</td></tr>
+Shows/hides the drop-down button.</td></tr>
 <tr>
 <td>
 HideGripper</td><td>
-Shows / Hides the drag gripper.</td></tr>
+Shows/hides the drag gripper.</td></tr>
 </table>
 
-#### Popup for the DropDown
+#### Pop-up for the drop-down
 
 
 
 <table>
 <tr>
 <th>
-ControlBar Property</th><th>
+ControlBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -407,7 +407,7 @@ Indicates the PopupContainer control that is displayed when the dropdown button 
 <tr>
 <td>
 PopupMenu</td><td>
-Indicates the Popup menu on clicking the dropdown button.</td></tr>
+Indicates the pop-up menu on clicking the drop-down button.</td></tr>
 </table>
 {% seealso %}
 
@@ -419,25 +419,25 @@ How to dock the ControlBars to any edge of the host form?
 
 {% endseealso %}
 
-### Adding Different Pages To Control Bar
+### Adding different pages to control bar
 
-#### Adding and Removing ControlBars 
+#### Adding and removing ControlBars
 
 The MainFrameBarManager's Add Detached ControlBar design-time verb, available through the Properties window, facilitates the addition of ControlBars to the design form. The XP Menus design-time is fully WYSIWYG and the bar layout can be designed by simply dragging and docking or floating each ControlBar at the desired location. Upon saving the design form, the ControlBar state information is serialized by the BarManager as a part of the form's resource file along with the rest of the menu/toolbar layout.
 
-Follow the steps below to add different pages to the control bar.
+Follow the given steps to add different pages to the control bar.
 
-![](Overview_images/Overview_img113.jpeg) 
-
-
-
-N> Control Bar can also be added by clicking the verb in the properties window.
-
-![](Overview_images/Overview_img115.jpeg) 
+![](Overview_images/Overview_img113.jpeg)
 
 
 
- The resulted screen shot displays control bar in the designer.
+N> ControlBar can also be added by clicking the verb in the properties window.
+
+![](Overview_images/Overview_img115.jpeg)
+
+
+
+ The resulted screenshot displays control bar in the designer.
 
 ![](Overview_images/Overview_img116.jpeg)
 
@@ -449,14 +449,14 @@ N> Control Bar can also be added by clicking the verb in the properties window.
 
 While dropping out CardLayout onto the panel, the layout designer window will open, asking whether to make panel1 as container control. Click 'Yes' and continue.
 
-![](Overview_images/Overview_img117.jpeg) 
+![](Overview_images/Overview_img117.jpeg)
 
 
 
 * You can add multiple panels to the control bar.
 * Select the card using the SelectedCard property in the CardLayout Property window.
 
-![](Overview_images/Overview_img118.jpeg) 
+![](Overview_images/Overview_img118.jpeg)
 
 
 
@@ -472,25 +472,26 @@ The resultant form is as follows.
 
 
 
-* Inside XPTaskbarBox, you can insert link labels, ComboBoxAdv controls like in the following screen shot.
+* Inside XPTaskbarBox, you can insert link labels, ComboBoxAdv controls like in the following screenshot.
 
 ![](Overview_images/Overview_img121.jpeg) 
 
 
 
-#### At Run Time
+#### At run time
 
 Include the following code snippet in the Click event of a BarItem to view the next page of a card.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.cardlayoutmanager1.next();
 
 
 {% endhighlight  %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
@@ -498,6 +499,8 @@ this.cardlayoutmanager1.next();
 Me.cardlayoutmanager1.next()
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 A sample which demonstrates adding control bar is available in the below sample installation location.
 

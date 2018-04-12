@@ -63,47 +63,52 @@ The MaskedEditBox control can be used programmatically through code as detailed 
 
 1. Include the required namespace.
 
-   ~~~ cs 
+{% tabs %}
 
-		using Syncfusion.Windows.Forms.Tools;
+{% highlight C# %}
 
-   ~~~ 
-   {:.prettyprint}
+using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}
+
+{% highlight VB %}
 
 
+Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~  vbnet
+{% endhighlight %}
 
-		Imports Syncfusion.Windows.Forms.Tools
+{% endtabs %}
 
-   ~~~
-   {:.prettyprint}
 
 2. Create an instance of the MaskedEditBox control.
 
-   ~~~ cs
+  {% tabs %}
 
+  {% highlight C# %}
+  
 		private Syncfusion.Windows.Forms.Tools.MaskedEditBox maskedEditBox1;
 
 		this.maskedEditBox1=new MaskedEditBox();
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-
-
-   ~~~ vbnet
+{% highlight VB %}
 
 		Private maskedEditBox1 As Syncfusion.Windows.Forms.Tools.MaskedEditBox
 
 		Me.maskedEditBox1 = New MaskedEditBox()
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+
+{% endtabs %}
    
 3. Set MaskedEditBox.Mask property.
 
-   ~~~ cs
+  
+{% tabs %}
+
+{% highlight C# %}
 
 		// The mask string.
 
@@ -111,12 +116,9 @@ The MaskedEditBox control can be used programmatically through code as detailed 
 
 		this.maskedEditBox1.Location = new System.Drawing.Point(70, 29);
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-
-
-   ~~~ vbnet
+{% highlight Vb %}
 
 		' The mask string.
 
@@ -124,26 +126,27 @@ The MaskedEditBox control can be used programmatically through code as detailed 
 
 		Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29);
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+
+{% endtabs %}
 
 4. Add the MaskedEditBox control to the form.
 
-   ~~~ cs
+   {% tabs %}
 
-		this.Controls.Add(this.maskedEditBox1);
+   {% highlight C# %}
 
-   ~~~
-   {:.prettyprint}
+	this.Controls.Add(this.maskedEditBox1);
 
+  {% endhighlight %}
 
+ {% highlight VB %}
 
-   ~~~ vbnet
+	Me.Controls.Add(Me.maskedEditBox1)
 
-			Me.Controls.Add(Me.maskedEditBox1)
-
-   ~~~
-   {:.prettyprint}
+  {% endhighlight %}
+  
+  {% endtabs %}
 
 
 ![](MaskedEditBox-images/MarkedEditBox-img4.png)

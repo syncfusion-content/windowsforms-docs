@@ -37,9 +37,9 @@ BorderStyle</td><td>
 Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._ '| markdownify }}</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
-
 
 
 this.maskedEditBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump;
@@ -52,9 +52,7 @@ this.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 {% endhighlight %}
 
-{% highlight vbnet %} 
-
-
+{% highlight VB %} 
 
 Me.maskedEditBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
 
@@ -66,10 +64,12 @@ Me.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](MaskedEditBox-images/MarkedEditBox-img17.png)
 
 
 
 A Sample which demonstrates the Border Settings of MaskedEditBox control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

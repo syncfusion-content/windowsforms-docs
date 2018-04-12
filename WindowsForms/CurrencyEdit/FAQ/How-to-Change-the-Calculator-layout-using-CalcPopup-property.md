@@ -12,9 +12,9 @@ documentation: ug
 
 Sometimes we may be in need of a calculator with Windows standard layout. By changing the CalcPopup property, we can do the same. Include this code fragment in the FormLoad event.
 
-{%highlight c#%}
+{% tabs %}
 
-
+{% highlight c# %}
 
 // Changes the layout of the calculator.
 
@@ -27,10 +27,9 @@ pc.ParentControl=currencyEdit1;
 currencyEdit1.CalcPopup=pc;
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-{%highlight vbnet%}
+{% highlight vbnet %}
 
 ' Changes the layout of the calculator.
 
@@ -42,4 +41,6 @@ pc.ParentControl=currencyEdit1
 
 currencyEdit1.CalcPopup=pc
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}

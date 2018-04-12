@@ -82,9 +82,9 @@ All the selected records can be retrieved through [SelectedItems](https://help.
 
 Both [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentItem.html) returns the same data object when there is single row is selected in SfDataGrid. When more than one rows are selected, the record that had been selected initially is maintained in `SelectedItem` and the record that currently have focus is maintained in `CurrentItem`.
 
-## Programmatic selection
+## Programmatic Selection
 
-### Process selection using properties
+### Process Selection using Properties
 
 A single row can be selected by setting [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) property or [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedIndex.html) property.
 
@@ -136,7 +136,7 @@ Next record
 {% endtabs %}
 ![](Selection_images/selection4.png)
 
-### Process selection using methods
+### Process Selection using Methods
 
 SfDataGrid Allows to select a range of rows through [SelectRows](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectRows.html) method.
 {% tabs %}
@@ -198,7 +198,7 @@ Me.sfDataGrid1.ClearSelection()
 
 ## Scrolling Rows
 
-### Automatic scrolling on Drag Selection
+### Automatic Scrolling on Drag Selection
 
 SfDataGrid will scrolls rows and columns automatically while performing the drag selection like excel. 
 
@@ -478,7 +478,7 @@ When a row is clicked along with Shift key, all the rows between the pressed cel
 
 ## Customization Using Events
 
-### Cancel CurrentCell moving 
+### Cancel CurrentCell Moving 
 
 The current cell moving process can be canceled within [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivating_EV.html#) event by setting [CurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CurrentCellActivatingEventArgs_members.html) as true. 
 {% tabs %}
@@ -500,7 +500,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Displaying Message Box on current cell activated
+### Displaying Message Box on Current Cell Activated
 
 The [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivated_EV.html) event provides notification when the current cell is moved from one cell to another.
 
@@ -543,7 +543,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Displaying Message Box on selection changed
+### Displaying Message Box on Selection Changed
 
 The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionChanged_EV.html) event provides notification when the selection is changed from one row to another.
 {% tabs %}
@@ -569,7 +569,7 @@ SfDataGrid allows to customize the appearance of the selected rows and current c
 
 ### Selection
 
-#### Change the Background and Foreground color for Selection
+#### Change the Background and Foreground Color for Selection
 
 The selection background and foreground color can be changed  of by [SfDataGrid.Style.SelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~SelectionStyle.html) property.
 

@@ -69,7 +69,7 @@ diagram1.Controller.Guides.LineStyle.LineColor = Color.FromArgb(255, 153, 51);
 diagram1.Controller.Guides.Margin = 50;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Turns on Guides in Diagram.
 diagram1.Controller.Guides.Enable = True

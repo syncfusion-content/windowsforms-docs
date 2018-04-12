@@ -56,7 +56,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-### Export groups with outlines
+### Export Groups with Outlines
 By default, all the groups in SfDataGrid will be exported in expanded state. The outlines can be enabled in excel based on groups by setting the [AllowOutlining](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~AllowOutlining.html) property as `true` in [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
 
 {% tabs %}
@@ -78,7 +78,7 @@ workBook.SaveAs("Sample.xlsx")
 
 ![](ExportToExcel_images/ExportToExcel_img1.jpeg)
 
-### Exclude columns while exporting
+### Exclude Columns while Exporting
 By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. In order  to exclude some columns from exporting, use the [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExcludeColumns.html) field of the [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
 
 {% tabs %}
@@ -122,7 +122,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-### Exporting stacked headers
+### Exporting Stacked Headers
 The stacked headers can also be exported to excel by setting the [ExportStackedHeaders](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportStackedHeaders.html) property to `true`.
 
 {% tabs %}
@@ -162,7 +162,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-### Changing start row and column index while exporting
+### Changing Start Row and Column Index while Exporting
 The data can be exported to the specified row and column index in worksheet, by setting [StartRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~StartRowIndex.html) and [StartColumnIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~StartColumnIndex.html) properties.
 
 {% tabs %}
@@ -187,7 +187,7 @@ workBook.SaveAs("Sample.xlsx")
 ![](ExportToExcel_images/ExportToExcel_img2.jpeg)
 
 ## Saving Options
-### Save directly to file
+### Save Directly to File
 After exporting to excel the exported workbook can be saved directly to the file system by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
 
 {% tabs %}
@@ -205,7 +205,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-### Save as stream
+### Save as Stream
 After exporting to excel the exported workbook can be saved to a stream by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
 
 {% tabs %}
@@ -251,13 +251,10 @@ if (saveFilterDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 {
     using (Stream stream = saveFilterDialog.OpenFile())
     {
-
         if (saveFilterDialog.FilterIndex == 1)
             workBook.Version = ExcelVersion.Excel97to2003;
-
         else if (saveFilterDialog.FilterIndex == 2)
             workBook.Version = ExcelVersion.Excel2010;
-
         else
             workBook.Version = ExcelVersion.Excel2013;
         workBook.SaveAs(stream);
@@ -387,13 +384,11 @@ int count = 0;
 
 while (count < 3)
 {
-
     try
     {
         client.Send(myMessage);
         count = 3;
     }
-
     catch (Exception ex)
     {
         Console.WriteLine(ex.Message);
@@ -599,13 +594,11 @@ void options_Exporting(object sender, Syncfusion.WinForms.DataGridConverter.Even
         e.CellStyle.ForeGroundColor = Color.White;
         e.Handled = true;
     }
-
     else if (e.CellType == ExportCellType.RecordCell)
     {
         e.CellStyle.BackGroundColor = Color.LightSkyBlue;
         e.Handled = true;
     }
-
     else if (e.CellType == ExportCellType.GroupCaptionCell)
     {
         e.CellStyle.BackGroundColor =Color.Wheat;
@@ -638,10 +631,10 @@ End Sub
 
 ![](ExportToExcel_images/ExportToExcel_img4.jpeg)
 
-## Cell customization in Excel while exporting
+## Cell Customization in Excel while Exporting
 The cells can be customized on exporting by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the `ExcelExportingOptions`.
 
-### Customize cell value while exporting
+### Customize Cell Value while Exporting
 The cell value can be customized while exporting to excel by using the `CellExporting` event of the `ExcelExportingOption`.
 {% tabs %}
 {% highlight c# %}
@@ -689,7 +682,7 @@ End Sub
 
 ![](ExportToExcel_images/ExportToExcel_img5.jpeg)
 
-### Changing Row style in Excel based on data
+### Changing Row style in Excel based on Data
 The rows of the exported excel sheet can be customized based on the record value by using the `CellExporting` event. 
 {% tabs %}
 {% highlight c# %}
@@ -704,7 +697,6 @@ private void options_CellExporting(object sender, Syncfusion.WinForms.DataGridCo
     if (!(e.NodeEntry is OrderInfo))
         return;
     var record = e.NodeEntry as OrderInfo;
-
     if (record.CustomerID == "FRANS")
     {
         e.Range.CellStyle.ColorIndex = ExcelKnownColors.Green;
@@ -749,10 +741,9 @@ private void Options_CellExporting(object sender, Syncfusion.WinForms.DataGridCo
 {
     if (e.ColumnName != "OrderID")
         return;
-
-    e.Range.CellStyle.Font.Size = 12;
-    e.Range.CellStyle.Font.Color = ExcelKnownColors.Pink;
-    e.Range.CellStyle.Font.FontName = "Segoe UI";
+        e.Range.CellStyle.Font.Size = 12;
+        e.Range.CellStyle.Font.Color = ExcelKnownColors.Pink;
+        e.Range.CellStyle.Font.FontName = "Segoe UI";
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -778,7 +769,7 @@ End Sub
 
 Here, `OrderID` column cells are customized while exporting.
 
-## Customize exported workbook and worksheet
+## Customize Exported Workbook and Worksheet
 SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). The [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) can also referred for manipulating workbook and sheet after exporting.
 
 ### Workbook
@@ -799,7 +790,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-### Worksheet customization
+### Worksheet Customization
 SfDataGrid provides support to export to already existing file or worksheet. In the below code snippet, worksheet is created and passed to `ExportToExcel` method. In the same way, it can open the already existing excel also using XlsIO.
 
 {% tabs %}
@@ -823,7 +814,7 @@ workBook.SaveAs("Sample.xlsx")
 
 Before saving workbook, set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~Version.html) property. Here, you can directly manipulate the data in the worksheet. Also, refer[here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information about the worksheet customization.
 
-#### Setting borders
+#### Setting Borders
 The borders of the excel cells can be set by directly accessing worksheet after exporting data.
 {% tabs %}
 {% highlight c# %}
@@ -920,7 +911,7 @@ workBook.SaveAs("Sample.xlsx")
 
 ![](ExportToExcel_images/ExportToExcel_img9.jpeg)
 
-#### Exporting multiple SfDataGrid to single excel sheet
+#### Exporting Multiple SfDataGrid to Single Excel Sheet
 The multiple grids can also be exported to the same worksheet by using the `UsedRange.CopyTo` method.
 {% tabs %}
 {% highlight c# %}

@@ -7,7 +7,7 @@ control: CommandBars
 documentation: ug
 ---
 
-# CommandBar Events
+# CommandBar events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -15,20 +15,20 @@ The list of events and a detailed explanation about each of them is given in the
 <table>
 <tr>
 <th>
-CommandBar Event</th><th>
+CommandBar event</th><th>
 Description</th></tr>
 <tr>
 <td>
 CommandBarDropDownClicked</td><td>
-This event occurs when the dropdown button on a CommandBar is clicked.</td></tr>
+This event occurs when the drop-down button on a CommandBar is clicked.</td></tr>
 <tr>
 <td>
 CommandBarStateChanging</td><td>
-This event occurs when a CommandBar's dock / float state is about to change.</td></tr>
+This event occurs when a CommandBar's dock/float state is about to change.</td></tr>
 <tr>
 <td>
 CommandBarStateChanged</td><td>
-This event occurs after a CommandBar's dock / float state changes.</td></tr>
+This event occurs after a CommandBar's dock/float state changes.</td></tr>
 <tr>
 <td>
 CommandBarUserClosed</td><td>
@@ -39,16 +39,15 @@ CommandBarWrapping</td><td>
 This event occurs when the CommandBar is being wrapped.</td></tr>
 </table>
 
-## CommandBarDropDownClicked Event
+## CommandBarDropDownClicked event
 
-This event is raised when the dropdown button of a CommandBar is clicked.
+This event is raised when the drop-down button of a CommandBar is clicked.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
+
 {% highlight C# %}
-
-
-
-
 
 
 // Add a PopupMenu control and assign it to the PopupMenu property of the CommandBar.
@@ -95,10 +94,7 @@ Console.WriteLine(" CommandBarDropDownClicked event is raised ");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 
 ' Add a PopupMenu control and assign it to the PopupMenu property of the CommandBar. 
@@ -130,11 +126,14 @@ Private Sub commandBar1_CommandBarDropDownClicked(ByVal sender As Object, ByVal 
     Console.WriteLine(" CommandBarDropDownClicked event is raised ")
 
 End Sub
+
 {% endhighlight %}
 
-## CommandBarStateChanging Event
+{% endtabs %}
 
-This event is raised when a CommandBar's dock / float state is about to change.
+## CommandBarStateChanging event
+
+This event is raised when a CommandBar's dock/float state is about to change.
 
 The event handler receives an argument of type CommandBarStateChangingEventArgs containing data related to this event. The following CommandBarStateChangingEventArgs members provide information specific to this event.
 
@@ -147,18 +146,16 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets a value indicating whether the event should be canceled.</td></tr>
+Gets/sets a value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
 NewDockState</td><td>
-Gets / sets the CommandBar's new position.</td></tr>
+Gets/sets the CommandBar's new position.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
-
 
 
 // Handler for the CommandBar.CommandBarStateChanging event.
@@ -240,7 +237,7 @@ this.fontSizeComboBox.Visible = true;
 }
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -297,17 +294,20 @@ Me.fontSizeComboBox.Visible = True
 End If
 
 End Sub
+
 {% endhighlight %}
 
-## CommandBarStateChanged Event
+{% endtabs %}
 
-This event is raised after a CommandBar's dock / float state changes.
+## CommandBarStateChanged event
+
+This event is raised after a CommandBar's dock/float state changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 // Handler for the CommandBar.CommandBarStateChanged event.
@@ -352,9 +352,7 @@ this.polFontsTB.Size = this.FontToolBarPanel;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 
 
@@ -383,17 +381,20 @@ End If
 End If
 
 End Sub
+
 {% endhighlight %}
 
-## CommandBarUserClosed Event
+{% endtabs %}
+
+## CommandBarUserClosed event
 
 This event is raised when a floating CommandBar is hidden by the user, i.e., when the user presses the close button of the CommandBar that exists in the float state.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
+
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 // Set the CommandBar control to its Floating state.
@@ -419,10 +420,7 @@ private void commandBar1_CommandBarUserClosed(object sender, EventArgs e)
 }
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 
 ' Set the CommandBar control to its Floating state. 
@@ -444,9 +442,12 @@ Private Sub commandBar1_CommandBarUserClosed(ByVal sender As Object, ByVal e As 
     MessageBox.Show(" CommandBarUserClosed Event is raised ")
 
 End Sub
+
 {% endhighlight %}
 
-## CommandBarWrapping Event
+{% endtabs %}
+
+## CommandBarWrapping event
 
 This event is raised when the CommandBar is resized with either the DockModeWrapping or the FloatModeWrapping properties set to 'True'. This event can be handled to suggest suitable wrap size hints for the CommandBar.
 
@@ -468,10 +469,9 @@ CommandBarResizeType</td><td>
 Returns the type of resizing taking place.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
-
-
-
 
 
 private void commandBarAlign_CommandBarWrapping(object obj, Syncfusion.Windows.Forms.Tools.CommandBarWrappingEventArgs arg)
@@ -685,7 +685,7 @@ arg.ClientSize = toolbar.Size;
 }
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -852,4 +852,5 @@ End If
 End Sub
 {% endhighlight %}
 
+{% endtabs %}
 

@@ -41,8 +41,9 @@ Specifies if the NumberFormatInfo used for formatting will use the User Override
 </table>
 
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight C# %}
 
 
 this.integerTextBox1.Culture = new System.Globalization.CultureInfo("ar-SA");
@@ -53,12 +54,9 @@ this.integerTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.Specia
 
 this.integerTextBox1.UseUserOverride = true;
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-{%highlight vbnet%}
-
-
+{% highlight VB %}
 
 Me.integerTextBox1.Culture = New System.Globalization.CultureInfo("ar-SA")
 
@@ -68,7 +66,9 @@ Me.integerTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialC
 
 Me.integerTextBox1.UseUserOverride = True
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img445.png) 
 
@@ -77,4 +77,4 @@ N> The RefreshCulture() method can be used to refresh and reapply the culture
 
 A Sample which demonstrates the Culture Settings of the IntegerTextBox control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

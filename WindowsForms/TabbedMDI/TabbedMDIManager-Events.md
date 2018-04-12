@@ -7,48 +7,50 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# TabbedMDIManager Events
+# TabbedMDIManager events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Events Table
+Events table
 
 <table>
 <tr>
 <th>
- TabbedMDIManager Events</th><th>
+ TabbedMDIManager events</th><th>
 Description</th></tr>
 <tr>
 <td>
-BeforeMDIChildAdded Event</td><td>
+BeforeMDIChildAdded event</td><td>
 This event is handled before an MDI child is added to the TabbedMDIManager.</td></tr>
 <tr>
 <td>
-BeforeDropDownPopup Event</td><td>
-This event is handled to set the visual dropdown styles for the dropdown button. </td></tr>
+BeforeDropDownPopup event</td><td>
+This event is handled to set the visual drop-down styles for the drop-down button. </td></tr>
 <tr>
 <td>
-TabControlAdded Event</td><td>
+TabControlAdded event</td><td>
 Using this event, the fonts of active and inactive tabs can be customized.</td></tr>
 <tr>
 <td>
-TabControlAdding Event</td><td>
+TabControlAdding event</td><td>
 This event is handled when a tab control is added.</td></tr>
 <tr>
 <td>
-TabControlRemoved Event</td><td>
+TabControlRemoved event</td><td>
 This event is handled after a tab control is removed from a tab group.</td></tr>
 <tr>
 <td>
-UnLockingMdIClient Event</td><td>
+UnLockingMdIClient event</td><td>
 This event is handled to notify that the locked MDI client area is being unlocked.</td></tr>
 </table>
 
-## BeforeMDIChildAdded Event
+## BeforeMDIChildAdded event
 
 This events occurs before an MDIChild is added to the TabbedMDIManager.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -62,7 +64,7 @@ MessageBox.Show(args.NewControl.ToString() + "is added!");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -74,19 +76,23 @@ End Sub
 
 {% endhighlight %}
 
-### BeforeDropDownPopup Event
+{% endtabs %}
+
+### BeforeDropDownPopup event
 
 This events is discussed in DropDown Button topic.
 
-## TabControlAdded Event
+## TabControlAdded event
 
-This event is explained in detail in the How to customize the fonts of Active and Inactive Tabs? topic under Frequently Asked Questions. 
+This event is explained in how to customize the fonts of Active and Inactive Tabs topic under Frequently Asked Questions. 
 
-## TabControlAdding Event
+## TabControlAdding event
 
 This event is handled when a tab control is added and it provides options to customize tab controls.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -100,7 +106,7 @@ MessageBox.Show(e.TabControl.Text.ToString());
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -112,11 +118,15 @@ End Sub
 
 {% endhighlight %}
 
-### TabControlRemoved Event
+{% endtabs %}
+
+### TabControlRemoved event
 
 This event is handled after a tab control is removed from a tab group.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -130,7 +140,7 @@ MessageBox.Show(e.TabControl.Text.ToString());
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -142,11 +152,17 @@ End Sub
 
 {% endhighlight %}
 
-## UnLockingMdIClient Event
+{% endtabs %}
+
+
+
+## UnLockingMdIClient event
 
 This event is handled to notify that the locked MDI client area is being unlocked.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -160,7 +176,7 @@ Console.Write("UnlockingMDIClient event is Raised");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -172,4 +188,4 @@ End Sub
 
 {% endhighlight %}
 
-
+{% endtabs %}

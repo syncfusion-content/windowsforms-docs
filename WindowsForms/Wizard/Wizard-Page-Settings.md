@@ -7,17 +7,17 @@ control: Wizard Package
 documentation: ug
 ---
 
-# Wizard Page Settings 
+# Wizard page settings
 
-A Wizard Page can include a collection of controls implementing an interactive Wizard interface. The Wizard pages are added to the Wizard Container. You can drag and drop any control into a wizard page. Wizard Control lets you to customize the individual Wizard pages to give a unique functionality for each page. 
+A Wizard Page can include a collection of controls implementing an interactive Wizard interface. The Wizard pages are added to the Wizard Container. You can drag and drop any control into a wizard page. Wizard Control lets you to customize the individual Wizard pages to give a unique functionality for each page.
 
-Creating a Basic Wizard topic discussed how to add Wizard Pages. Let us see how to customize the Wizard pages. 
+Creating a Basic Wizard topic discussed how to add Wizard Pages. Let us see how to customize the Wizard pages.
 
-## Setting Title and Description
+## Setting title and description
 
 You can specify the title and description in the Banner Panel, for a particular Wizard Page using the WizardPage.Title and WizardPage.Description properties. The appearance of the title and description can be controlled through Label properties. See Title and Description Settings for details.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -34,8 +34,9 @@ Description</td><td>
 Specifies the description for the page.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -45,7 +46,7 @@ this.wizardControlPage1.Description = "Please enter your Details:";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -55,15 +56,17 @@ Me.wizardControlPage1.Description = "Please enter your Details:"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Wizard-Package_images/Wizard-Package_img16.jpeg)
 
 
 
-### Accessing Wizard Pages
+### Accessing wizard pages
 
 We can also access the properties of a Wizard Page using SelectedWizardPage property of the WizardControl in the Designer.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -87,7 +90,7 @@ The individual Wizard page is identified using its LayoutName in the SelectedWiz
 
 The header section (GradientPanel and its child controls) can be hidden by setting FullPage property to true. This makes the page occupy the entire space without the header.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -100,18 +103,21 @@ FullPage</td><td>
 Gets/sets the boolean value whether the Banner Panel should  be shown for that page. Default value is false.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.wizardControlPage1.FullPage = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.wizardControlPage1.FullPage = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Wizard-Package_images/Wizard-Package_img18.jpeg)
 
@@ -134,11 +140,11 @@ How to Programmatically control the Page Sequence?
 
 {% endseealso %}
 
-### Reordering Wizard Pages
+### Reordering wizard pages
 
-By default, the WizardControl will use the order in which the pages are added to determine the next/previous pages. To reorder the pages, use any one of the following methods. 
+By default, the WizardControl will use the order in which the pages are added to determine the next/previous pages. To reorder the pages, use any one of the following methods.
 
-* Select the WizardControl and choose WizardPages property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys. 
+* Select the WizardControl and choose WizardPages property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys.
 
 ![](Wizard-Package_images/Wizard-Package_img19.jpeg)
 
@@ -152,12 +158,12 @@ By default, the WizardControl will use the order in which the pages are added to
 
 * The WizardControlPage has the NextPage and PreviousPage properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-WizardControlPage Property</th><th>
+WizardControlPage property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -169,8 +175,9 @@ PreviousPage</td><td>
 It sets the previous page of the wizard.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -181,7 +188,7 @@ this.wizardControlPage2.PreviousPage = this.wizardControlPage1;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -190,6 +197,8 @@ Me.wizardControlPage2.NextPage = Me.wizardControlPage3
 Me.wizardControlPage2.PreviousPage = Me.wizardControlPage1
 
 {% endhighlight %}
+
+{% endtabs %}
 
 {% seealso %}
 Page Selection at Design time

@@ -43,8 +43,9 @@ Returns the clipped text without the formatting.</td></tr>
 </table>
 
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight C# %}
 
 
 this.integerTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -55,9 +56,9 @@ this.integerTextBox1.SelectAllOnFocus = true;
 
 this.integerTextBox1.ClipText = "12";
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight VB %}
 
 Me.integerTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 
@@ -67,7 +68,9 @@ Me.integerTextBox1.SelectAllOnFocus = true
 
 Me.integerTextBox1.ClipText = "12"
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 
  ![](Overview_images/Overview_img447.png) 
@@ -110,11 +113,10 @@ Pastes the data in the clipboard into the NumberTextBox control.</td></tr>
 SelectAll</td><td>
 Selects all text in the TextBox.</td></tr>
 </table>
-Clip Mode
+
+## Clip Mode
 
 The formatting for the text can be enabled or disabled by using the property given below.
-
-
 
 <table>
 <tr>
@@ -129,24 +131,26 @@ IncludeFormatting and ExcludeFormatting.</td></tr>
 </table>
 
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight C# %}
 
 
 this.integerTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.IncludeFormatting;
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight VB %}
 
 Me.integerTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.IncludeFormatting
 
-{%endhighlight%}
+{% endhighlight %}
 
-### Formatted Text
+{% endtabs %}
+
+## Formatted Text
 
 Formatted text can be displayed using the below given property.
-
 
 
 <table>
@@ -161,29 +165,27 @@ Returns the formatted text with the formatting.</td></tr>
 </table>
 
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight C# %}
 
 
 this.integerTextBox1.FormattedText = "Hello";
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-
-{%highlight vbnet%}
-
-
+{% highlight VB %}
 
 Me.integerTextBox1.FormattedText = "Hello"
 
-{%endhighlight%}
+{% endhighlight %}
 
-### RightToLeft
+{% endtabs %}
+
+## RightToLeft
 
 The text can be displayed from right to left for RTL languages using this property.
-
-
 
 <table>
 <tr>
@@ -197,33 +199,31 @@ Indicates whether the component should draw right-to-left for RTL languages. The
 </table>
 
 
-
 N> The RightToLeft property will be automatically set to 'True' for RTL languages.
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight C# %}
 
 
 this.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-{%highlight vbnet%}
-
-
-
+{% highlight VB %}
 
 Me.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img450.png) 
 
 
 N> The ResetRightToLeft() method can be used to reset the RightToLeft property to it's default value.
 
-### OverflowIndicatorToolTipText
+## OverflowIndicatorToolTipText
 
 
 
@@ -247,8 +247,9 @@ Indicates whether to show the overflow indicator tooltip.</td></tr>
 </table>
 
 
-{%highlight c#%}
+{% tabs %}
 
+{% highlight C# %}
 
 
 this.integerTextBox1.OverflowIndicatorToolTipText = "Overflow";
@@ -257,20 +258,22 @@ this.integerTextBox1.ShowOverflowIndicator = true;
 
 this.integerTextBox1.ShowOverflowIndicatorToolTip = true;
 
-{%endhighlight%}
+{% endhighlight %}
 
+{% highlight VB %}
 
-{%highlight vbnet%}
 Me.integerTextBox1.OverflowIndicatorToolTipText = "Overflow"
 
 Me.integerTextBox1.ShowOverflowIndicator = True
 
 Me.integerTextBox1.ShowOverflowIndicatorToolTip = True
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img452.png)
 
 A Sample which demonstrates the Text, Text Align and Overflow Indicator features of the IntegerTextBox control is available in the below sample installation path.
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS
