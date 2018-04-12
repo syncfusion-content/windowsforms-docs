@@ -6,7 +6,7 @@ platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
-#Scroll Settings
+# Scroll Settings
 When the contents inside the gradient panel exceeds the visible area, the scroll bars appears. AutoScroll property should be set to true for this purpose. Margin width for the control during auto scroll is set through AutoScrollMargin property. The minimum logical size for the auto scroll region is specified using the AutoScrollMinSize.
 
 {% tabs %}
@@ -26,7 +26,7 @@ Me.gradientPanel1.AutoScrollMinSize = New System.Drawing.Size(20, 20)
 {% endhighlight %}
 {% endtabs %}
 
-##Size Properties
+## Size Properties
 
 The GradientPanel can automatically size itself based on the contents available in the control by enabling the AutoSize property. The mode of this resizing can be specified through AutoSizeMode property. There are two options provided for the AutoSizeMode.
 
