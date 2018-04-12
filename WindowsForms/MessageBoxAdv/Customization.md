@@ -11,7 +11,7 @@ documentation: ug
 
 ## Style
 
-MessageBoxAdv provides the following style and Theme support to customize the control such as.
+MessageBoxAdv provides the following style and Theme support to customize the control.
 
 •	Default
 
@@ -26,7 +26,7 @@ MessageBoxAdv provides the following style and Theme support to customize the co
 •	Office2016
 
 
-**Default:**
+**Default**
 
 This option helps to set the Default theme.
 
@@ -51,7 +51,7 @@ MessageBoxAdv.Show("Metro Theme", "This is Syncfusion MessageBoxAdv Control", Me
 ![](MessageBoxAdv_images/MessageBoxAdv_img2.jpg) 
 
 
-**Metro:**
+**Metro**
 
 This option helps to set the Metro theme.
 
@@ -80,7 +80,7 @@ MessageBoxAdv.Show("Metro Theme", "This is Syncfusion MessageBoxAdv Control", Me
 
 Office2007 Style Message Box is available in Tools Windows. You can replace the .NET MessageBox with new MessageBoxAdv that supports standard color schemes and custom color schemes in Office 2007 style, for consistent look and feel. Custom Icons support is also included in MessageBoxAdv. To display the Message Box, call MessageBoxAdv.Show method.
 
-This option helps to set the various color schemes such as
+This option helps to set the following various color schemes:
 
 •	Black
 
@@ -90,9 +90,9 @@ This option helps to set the various color schemes such as
 
 •	Managed
 
-**Black:**
+**Black**
 
-This option helps to set the Black theme
+This option helps to set the Black theme.
 
 {% tabs %}
 
@@ -117,7 +117,7 @@ MessageBoxAdv.Show("Office 2007Theme", "This is Syncfusion MessageBoxAdv Control
  
 **Blue**
 
-This option helps to set the Blue color scheme in office2007 theme
+This option helps to set the Blue color scheme in office2007 theme.
 
 {% tabs %}
 
@@ -195,7 +195,7 @@ MessageBoxAdv.Show("Office 2007Theme", "This is Syncfusion MessageBoxAdv Control
 
 **Office2010Theme**
 
-This option helps to set the various color schemes such as
+This option helps to set the following various color schemes:
 
 •	Black
 
@@ -287,7 +287,7 @@ MessageBoxAdv.Show("Office 2010 Theme", "This is Syncfusion MessageBoxAdv Contro
 ![](MessageBoxAdv_images/MessageBoxAdv_img9.jpg) 
 
 
-**Office2010 Managed:**
+**Office2010 Managed**
 
 This option helps to set the customized color scheme in Office2010Theme.
 
@@ -317,9 +317,9 @@ MessageBoxAdv.Show("Office 2010 Style with Custom Color Scheme", "This is Syncfu
 ![](MessageBoxAdv_images/MessageBoxAdv_img10.jpg) 
 
 
-**Office2013Theme:**
+**Office2013Theme**
 
-This option helps to set the various color schemes in Office2013Theme such as
+This option helps to set the following various color schemes in Office2013Theme.
 
 •	DarkGray
 
@@ -382,7 +382,7 @@ MessageBoxAdv.Show("Office 2013 Theme", "This is Syncfusion MessageBoxAdv Contro
  ![](MessageBoxAdv_images/MessageBoxAdv_img12.jpg) 
 
 
-**White Theme**
+**White theme**
 
 This option helps to set the white color scheme in office2013Theme.
 
@@ -411,7 +411,7 @@ MessageBoxAdv.Show("Office 2013 Theme", "This is Syncfusion MessageBoxAdv Contro
 
 **Office2016Theme**
 
-This option helps to set the various color schemes in Office2016Themesuch as
+This option helps to set the following various color schemes in Office2016Theme.
 
 •	Colorful
 
@@ -423,7 +423,7 @@ This option helps to set the various color schemes in Office2016Themesuch as
 **Colorful**
 
 
-This scheme helps to set the Colorful scheme in Office2016Theme.
+This scheme helps to set the colorful scheme in Office2016Theme.
 
 {% tabs %}
 
@@ -452,7 +452,7 @@ MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Contro
 **Dark**
 
 
-This option helps to set the Dark color scheme in Office2016Theme.
+This option helps to set the dark color scheme in Office2016Theme.
 
 {% tabs %}
 
@@ -481,7 +481,7 @@ MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Contro
 **White**
 
 
-This option helps to set the White color scheme in Office2016Theme.
+This option helps to set the white color scheme in Office2016Theme.
 
 {% tabs %}
 
@@ -509,13 +509,14 @@ MessageBoxAdv.Show("Office 2016 Theme", "This is Syncfusion MessageBoxAdv Contro
 **Metro**
 
 In MessageBoxAdv, MetroColorTable is implemented for color customization of buttons and caption of metro form.
+
 MetroStyleColorTable
-The MetroStyleColor table helps to customize the buttons, captions and text color in MessageBoxAdv. MessageBoxAdv can be customized by using the following properties.
+The MetroStyleColor table helps to customize the buttons, captions, and text color in MessageBoxAdv. MessageBoxAdv can be customized by using the following properties:
 
 <table>
 <tr>
 <th>
-MetroStyleColorTable Property</th><th>
+MetroStyleColorTable property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -577,7 +578,6 @@ Gets or sets the YesButtonBackColor.</td></tr>
 
 
 
-You can achieve this by using the following code example.
 
 {% tabs %}
 

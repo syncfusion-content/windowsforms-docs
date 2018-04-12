@@ -13,22 +13,22 @@ HTML documents available at various resources can be easily loaded into the HTML
 
 
 
-* HTML files available on the disk
-* HTML files available in the embedded resource
-* As links from one HTML document to the other
-* HTML files available in the URI
-* HTML which is in the form of a text
+* HTML files available on the disk.
+* HTML files available in the embedded resource.
+* As links from one HTML document to the other.
+* HTML files available in the URI.
+* HTML which is in the form of a text.
 
 
 
 An HTML document can be loaded into the HTMLUI control in two ways.
 
-## Loading As a Startup Document
+## Loading as a startup document
 
 There may be situations where the HTML document is to be loaded initially at startup. An HTML document is loaded at startup for the front page applications. It may be an introductory page or a page that contains information regarding forthcoming pages. An HTML document can be loaded at Startup by two ways:
 
-* Using the Properties window
-* Coding
+* Using the Properties window.
+* Coding.
 
 
 
@@ -38,11 +38,11 @@ Using the Properties window involves specifying the location of the Startup HTML
 
 
 
-While coding for the Startup Document, it should be written in the form_load event that is handled before the form is displayed for the first time.  
+While coding for the Startup Document, it should be written in the form_load event that is handled before the form is displayed for the first time.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -58,7 +58,7 @@ this.htmluiControl1.StartupDocument = @"C:\MyProjects\Startup\startup_page.htm";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -72,14 +72,14 @@ End Sub
 
 {% endhighlight %}
 
-The following image illustrates Loading an HTML document as the Startup Document.
+{% endtabs %}
 
 
 ![](Loading-HTML_images/Loading-HTML_img2.png)
 
 
 
-### Startup File Sample
+### Startup file sample
 
 This sample demonstrates the implementation of Startup Document by using HTML file in HTMLUI.
 
@@ -87,11 +87,11 @@ This sample demonstrates the implementation of Startup Document by using HTML fi
 
 
 
-By default, this sample can be found under the following location: 
+By default, this sample can be found under the following location:
 
 _…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-##  Loading At Run Time
+##  Loading at run time
 
  HTML documents can also be loaded during runtime; for example, in a file link where an HTML file may link to another file. In that case a new file is loaded in the control after the one that was initially loaded.
 
@@ -99,25 +99,21 @@ The various ways of loading the document during the runtime from various resourc
 
 
 
-* Loading the file from disk
-* As links from one HTML document to the other
-* Loading the file from URI
-* Loading HTML in the form of text
-* Loading the file from Resource
+* Loading the file from disk.
+* As links from one HTML document to the other.
+* Loading the file from URI.
+* Loading HTML in the form of text.
+* Loading the file from Resource.
 
 
 
-The following sections explains the above concepts in detail.
-
-
-
-### Loading the File From Disk
+### Loading the file from disk
 
 The HTML file that is located in the user's disk can be loaded into the HTMLUIControl. It is loaded by specifying the location of the file in the disk.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -129,7 +125,7 @@ this.htmluiControl1.LoadHTML(path);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -141,13 +137,13 @@ Me.HtmluiControl1.LoadHTML(path)
 
 {% endhighlight %}
 
-The following image shows file loaded from the User's Drive.
+{% endtabs %}
 
 ![](Loading-HTML_images/Loading-HTML_img4.png)
 
 
 
-#### Load File From Disk Sample
+#### Load file drom disk sample
 
 This sample demonstrates the implementation of Loading a file from Disk by using HTMLUI.
 
@@ -161,13 +157,13 @@ By default, this sample can be found under the following location:
 
 _…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### As Links From One HTML Document To Another
+### As links from one HTML document to another
 
 The HTMLUI supports Link property. Links in HTML code are easily invoked in HTMLUI Control. The main document that contains links to other documents is loaded into the HTMLUI control. The linked document is loaded by clicking the respective link in the main document.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -179,7 +175,7 @@ this.htmluiControl1.LoadHTML(path);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -191,13 +187,15 @@ Me.HtmluiControl1.LoadHTML(path)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 HTML Code
 
 An HTML document containing file links is illustrated by the code given below:
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -243,7 +241,7 @@ The following image shows file links that link to another HTML Document.
 
 
 
-#### File Links Sample
+#### File links sample
 
 This sample demonstrates how HTML files can be linked from one document to another by using HTMLUI.
 
@@ -255,17 +253,17 @@ This sample demonstrates how HTML files can be linked from one document to anoth
 
 
 
-By default, this sample can be found under the following location: 
+By default, this sample can be found under the following location:
 
 _…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### Loading the File From URI
+### Loading the file from URI
 
 HTML contents can also be loaded from the URI (Uniform Resource Identifier). This is a great advantage of HTMLUI that it can be used for browsing purposes like popular web browsers.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -277,7 +275,7 @@ htmluiControl1.LoadHTML(uri);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -289,15 +287,17 @@ HtmluiControl1.LoadHTML(uri)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 A new URI has to be declared in the code with the path from which the URI has to be loaded, as shown in the above example. The URI class provides an object representation of a URI and also provides easy access to the parts of the URI.
 
-### Loading HTML Which Is In the Form Of Text
+### Loading HTML which is in the form of text
 
 The HTML code sometimes can be directly written and stored as a string. The HTML code available in the form of string is loaded into the HTMLUI Control by using the LoadFromString method and the HTML contents will be displayed in the HTMLUI control.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -323,7 +323,7 @@ this.htmluiControl1.LoadFromString(htmlCode);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -349,7 +349,9 @@ Me.HtmluiControl1.LoadFromString(htmlCode)
 
 {% endhighlight %}
 
-### Load the File from Resource
+{% endtabs %}
+
+### Load the file from resource
 
 The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The procedure to be followed for making an HTML file as an embedded resource is discussed below.
 
@@ -401,7 +403,9 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 The file can be retrieved from the resource by using the following C# code.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -417,7 +421,7 @@ this.htmluiControl1.LoadHTML(htmlStream);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -433,6 +437,8 @@ Me.HtmluiControl1.LoadHTML(htmlStream)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 It is necessary to invoke the System.IO and System.Reflection namespaces to use the classes and their methods used in the code above.
 
 The System.Reflection.Assembly.GetExecutingAssembly method gets the assembly from which the code is currently running from and the GetManifestResourceStream method of the same class loads the specified manifest resource from the assembly.
@@ -447,7 +453,7 @@ The following image shows file loaded from an embedded resource.
 ![](Loading-HTML_images/Loading-HTML_img12.png)
 
 
-#### Load Resource File Sample
+#### Load resource file sample
 
 This sample demonstrates the implementation of Loading Embedded Resource Files by using HTMLUI.
 
