@@ -87,20 +87,20 @@ The DataMatrix barcode settings has the properties to modify the encoding and si
 {% tabs %}
 {% highlight c# %}
 
-DataMatrixSetting datamatrixSettings = new DataMatrixSetting();
-datamatrixSettings.XDimension = 8;
-datamatrixSettings.Encoding = DataMatrixEncoding.ASCII;
-datamatrixSettings.Size = DataMatrixSize.Size10x10;
-this.sfBarcode1.SymbologySettings = datamatrixSettings;
+DataMatrixSetting barcodeSettings = new DataMatrixSetting();
+barcodeSettings.XDimension = 8;
+barcodeSettings.Encoding = DataMatrixEncoding.ASCII;
+barcodeSettings.Size = DataMatrixSize.Size10x10;
+this.sfBarcode1.SymbologySettings = barcodeSettings;
 
 {% endhighlight  %}
 {% highlight vb %}
 
-Dim datamatrixSettings As New DataMatrixSetting()
-datamatrixSettings.XDimension = 8
-datamatrixSettings.Encoding = DataMatrixEncoding.ASCII
-datamatrixSettings.Size = DataMatrixSize.Size10x10
-sfBarcode1.SymbologySettings = datamatrixSettings
+Dim barcodeSettings As New DataMatrixSetting()
+barcodeSettings.XDimension = 8
+barcodeSettings.Encoding = DataMatrixEncoding.ASCII
+barcodeSettings.Size = DataMatrixSize.Size10x10
+sfBarcode1.SymbologySettings = barcodeSettings
 
 {% endhighlight  %}
 {% endtabs %}
