@@ -19,7 +19,7 @@ code39Settings.BarHeight = 100;
 this.sfBarcode1.SymbologySettings = code39Settings;
 
 {% endhighlight  %}
-{% highlight VB %}
+{% highlight vb %}
 
 Dim code39Settings As New Code39Setting()
 code39Settings.BarHeight = 100
@@ -41,7 +41,7 @@ code39Settings.NarrowBarWidth = 1;
 this.sfBarcode1.SymbologySettings = code39Settings;
 
 {% endhighlight  %}
-{% highlight VB %}
+{% highlight vb %}
 
 Dim code39Settings As New Code39Setting()
 code39Settings.BarHeight = 100
@@ -65,7 +65,7 @@ code39Settings.EncodeStartStopSymbols = true;
 this.sfBarcode1.SymbologySettings = code39Settings;
 
 {% endhighlight %}
-{% highlight VB %}
+{% highlight vb %}
 
 Dim code39Settings As New Code39Setting()
 code39Settings.EnableCheckDigit = false
@@ -94,7 +94,7 @@ datamatrixSettings.Size = DataMatrixSize.Size10x10;
 this.sfBarcode1.SymbologySettings = datamatrixSettings;
 
 {% endhighlight  %}
-{% highlight VB %}
+{% highlight vb %}
 
 Dim datamatrixSettings As New DataMatrixSetting()
 datamatrixSettings.XDimension = 8
@@ -267,7 +267,7 @@ qrSettings.Version = QRBarcodeVersion.Version04;
 this.sfBarcode1.SymbologySettings = qrSettings;
 
 {% endhighlight  %}
-{% highlight VB %}
+{% highlight vb %}
 
 Dim qrSettings As New QRBarcodeSetting()
 qrSettings.XDimension = 8
