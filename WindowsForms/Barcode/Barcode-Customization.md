@@ -18,7 +18,7 @@ this.sfBarcode1.DarkBarColor = System.Drawing.Color.FromArgb(255, 0, 0);
 this.sfBarcode1.LightBarColor = System.Drawing.Color.FromArgb(255, 0, 0);
 
 {% endhighlight  %}
-{% highlight VB %}
+{% highlight vb %}
 
 Me.SfBarcode1.DarkBarColor = System.Drawing.Color.FromArgb(255, 0, 0)
 Me.SfBarcode1.LightBarColor = System.Drawing.Color.FromArgb(255, 0, 0)
