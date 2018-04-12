@@ -33,7 +33,7 @@ Me.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 
 ## Themes and Button Styles
 
-### Themes for the Calculator control
+### Themes for the Calculator Control
 
 Essential Tools Calculator control is themed by default. To disable, set ThemesEnabled property to false.
 
