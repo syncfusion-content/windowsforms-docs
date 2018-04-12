@@ -63,7 +63,7 @@ Me.colorPickerButton1.SelectedAsText = True
 
 ![](ColorPickerButton_images/Overview_img250.jpeg) 
 
-##Visual Style
+## Visual Style
 
 ColorPickerButton supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
 
