@@ -15,7 +15,6 @@ This section illustrates the foreground settings of the GradientLabel control.
 
 Disabled text can be drawn active using the below given property.
 
-
 <table>
 <tr>
 <th>
@@ -27,22 +26,16 @@ DrawActiveWhenDisabled</td><td>
 Gets / sets a value indicating whether the text should be drawn active when the control is disabled. The default value is set to 'False'.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight C# %}
-
-
 
 this.gradientLabel1.DrawActiveWhenDisabled = true;
 
 {% endhighlight %}
 
-
-
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.gradientLabel1.DrawActiveWhenDisabled = True
 
 {% endhighlight %}
+{% endtabs %}

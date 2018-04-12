@@ -7,7 +7,6 @@ control: Editors Package
 documentation: ug
 ---
 
-
 # Background Settings
 
 This section illustrates the background settings of the GradientLabel control.
@@ -49,26 +48,18 @@ GradientColors</td><td>
 Specifies the gradient colors.The first entry in this list will be the same as the BackColor property, the last entry will be the same as the ForeColor property.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
-
-
-
 
 this.gradientLabel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, new System.Drawing.Color[] {System.Drawing.Color.LavenderBlush, System.Drawing.Color.LemonChiffon, System.Drawing.Color.DarkKhaki, System.Drawing.Color.SandyBrown, System.Drawing.Color.LightSeaGreen});
 
-
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.gradientLabel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, New System.Drawing.Color() {System.Drawing.Color.LavenderBlush, System.Drawing.Color.LemonChiffon, System.Drawing.Color.DarkKhaki, System.Drawing.Color.SandyBrown, System.Drawing.Color.LightSeaGreen})
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](GradientLabel-Images/Overview_img604.jpeg)

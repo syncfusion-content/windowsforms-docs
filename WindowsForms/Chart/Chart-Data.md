@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Data
+# Populating Data
 
 ### Built-in Support for data-binding
 
@@ -714,3 +714,38 @@ model.YNames = new string[] { "Field2" };
 The following screenshot displays a Chart bounded with binding source in code behind.
 
 ![](Chart-Data_images/Chart-Data_img29.png)
+
+## Data Manipulation
+
+Essential Chart provides a series model implementation that works directly on top of grouped data. Filters, summaries and computed expressions are all supported in EssentialChart and users can easily add custom summaries and filters and have such data displayed in the chart.
+
+### Grouping Support
+
+The enterprise version of Essential Chart includes Essential Grouping that allows EssentialChart to implement a series model that works directly on top of grouped data. All the key advantages of Essential Grouping carry over into the grouping support in Essential Chart. Filters, summaries and computed expressions are all supported in EssentialChart. With EssentialChart, you are not restricted to predefined summaries or filters. You can easily add custom summaries and filters and have such data displayed in the chart.
+
+The following image displays stock data that is grouped by symbol to calculate the total volume. The data contains discrete transaction details with symbol information, volume, and price. 
+
+The following image displays the same data with data from transactions that occurred in the morning filtered out. Filtering is done entirely in the grouping engine and the data changes are reflected in the chart. You will never be looking at data that is a filtered and grouped copy. Instead, you are always working with live data with the grouping layer provided by the grouping engine. Any changes made in the underlying data will be immediately reflected in the chart. 
+
+![](Data-Manipulation_images/Data-Manipulation_img1.png)
+
+### Essential Grid Interaction
+
+Essential Chart offers great interaction capabilities with Essential Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it takes, is a few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
+
+![](Data-Manipulation_images/Data-Manipulation_img2.png)
+
+## Real time
+
+EssentialChart is optimized to deal with real time data. It can work with both huge and real time data and render a smooth and dynamic chart using any of the several available chart types.
+
+Essentially, this involves updating the chart's data points list and optionally updating the chart axis ranges if the default ranges are not user-friendly.
+
+While you can use the ChartSeries.Points to add new data points to the existing list, for best performance it's recommended to implement your own "model" to store the data points in real-time scenarios.
+
+A sample application that illustrates this is distributed along with the EssentialChart installation and can be found at:
+
+Sample Location: "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Real Time\Chart Recorder"
+
+
+

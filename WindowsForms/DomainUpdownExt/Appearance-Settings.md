@@ -44,43 +44,28 @@ BackColor</td><td>
 Specifies the back color for the control.</td></tr>
 </table>
 
-
-
-
-
+{% tabs %}
 {% highlight c# %}
+
 this.domainUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
 this.domainUpDownExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump;
-
 this.domainUpDownExt1.BorderSides = System.Windows.Forms.DomainUpdownExt_images.Right;
-
 this.domainUpDownExt1.BorderColor = System.Drawing.Color.DodgerBlue; 
-
 this.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite;
 
-{% endhighlight  %}
+{% endhighlight %}
 
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.domainUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-
 Me.domainUpDownExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
-
 Me.domainUpDownExt1.BorderSides = System.Windows.Forms.DomainUpdownExt_images.Right
-
 Me.domainUpDownExt1.BorderColor = System.Drawing.Color.DodgerBlue
-
 Me.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %}
 
 ![](DomainUpdownExt_images/Overview_img431.png) 
 
-
-
 ![](DomainUpdownExt_images/Overview_img432.png) 
-
-

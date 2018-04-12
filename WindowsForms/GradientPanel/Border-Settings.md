@@ -7,11 +7,9 @@ control: Editors Package
 documentation: ug
 ---
 
-
 # Border Settings
 
 GradientPanel can have 2D and 3D borders. The properties which sets the border style are as follows.
-
 
 <table>
 <tr>
@@ -40,57 +38,35 @@ BorderSides</td><td>
 Specifies the sides of the control which should have a border.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 //Sets the 3D border style 
-
 this.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
 this.gradientPanel1.Border3DStyle = System.Windows.Forms.Border3DStyle.Etched;
 
-
-
 //Sets the 2D Border style
-
 this.gradientPanel1.BorderColor = System.Drawing.Color.Blue;
-
 this.gradientPanel1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed;
-
 this.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All;
+
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 'Sets the 3D border style
-
 Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-
 Me.gradientPanel1.Border3DStyle = System.Windows.Forms.Border3DStyle.Etched
-
 Me.gradientPanel1.BorderColor = System.Drawing.Color.Blue
 
-
-
 'Sets the 2D Border style
-
 Me.gradientPanel1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed
-
 Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
  ![](GradientPanel-Images/Overview_img370.jpeg) 
-
-
 
  ![](GradientPanel-Images/Overview_img371.jpeg) 
 
@@ -99,3 +75,4 @@ Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
  [GradientPanel Appearance](/windowsforms/GradientPanel/GradientPanel-Appearance)
  
  {% endseealso %}
+ 
