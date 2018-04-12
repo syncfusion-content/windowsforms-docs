@@ -89,7 +89,7 @@ Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
 
 ![](Overview_images/Overview_img308.png) 
 
-### Office Color schemes
+### Office Color Schemes
 
 We can set color schemes for Office2007 style.
 
@@ -241,7 +241,7 @@ Me.comboBoxAdv1.ShowImageInTextBox = True
 
 
 
-## Customizable ComboBoxAdv height
+## Customizable ComboBoxAdv Height
 
 ComboBoxAdv allows you to customize the height of the Display area, making more space to display larger images and text items by setting the TextBoxHeight property of the ComboBox.
 
