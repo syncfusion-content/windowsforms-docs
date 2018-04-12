@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# How to Set tooltip for ButtonEdit Child Buttons
+# How to Set Tooltip for ButtonEdit Child Buttons
 
  To set tooltip for a child button in a ButtonEdit control, drag and drop a ToolTip control from the toolbox. Text for tooltip is set using the extender property of the particular child button.
 
