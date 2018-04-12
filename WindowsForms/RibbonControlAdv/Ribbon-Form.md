@@ -40,6 +40,7 @@ Font</td><td>
 Gets or sets the RibbonControlAdv Font.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -67,7 +68,7 @@ this.ribbonControlAdv1.EnableHighContrastTheme = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Specifies the appearance of the form.
 Me.Appearance = AppearanceType.Office2007
@@ -86,6 +87,8 @@ Me.EnableAeroTheme = false
 Me.ribbonControlAdv1.EnableHighContrastTheme = true
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Ribbon-Form_images/Ribbon-Form_img3.png)
 
@@ -114,6 +117,7 @@ Borders</td><td>
 Gets/sets the border values of an Office 2007 style form. Sets borders for Left, Top, Right and Bottom sides of the form.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -127,10 +131,13 @@ Me.Borders = New System.Windows.Forms.Padding(10)
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ### Customizing the Top Left Edge
 
 This TopLeftRadius property gets/sets the curved radius of the top left edge of the form. Default is 8.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -144,3 +151,4 @@ Me.TopLeftRadius = 20
 
 {% endhighlight %}
 
+{% endtabs %}
