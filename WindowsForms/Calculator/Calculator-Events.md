@@ -78,7 +78,7 @@ End Sub
 
 ## Closing Event
 
-### Closing Event of the PopupCalculator control
+### Closing Event of the PopupCalculator Control
 
 This will be raised by popupCalculator when closing after "=" button was clicked. We can implement this event to display the final value of the Calculator control as follows.
 
