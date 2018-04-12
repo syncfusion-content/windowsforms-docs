@@ -20,16 +20,16 @@ The below properties controls the appearance and behavior of the ToolStripProgre
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-Font<br/><br/></td><td>
-Sets the font style for the display text.<br/><br/></td></tr>
+Font</td><td>
+Sets the font style for the display text</td></tr>
 <tr>
 <td>
-ForeColor<br/><br/></td><td>
-Sets the fore color for the display text.<br/><br/></td></tr>
+ForeColor</td><td>
+Sets the fore color for the display text.</td></tr>
 </table>
 
 ## Style Settings
@@ -37,59 +37,67 @@ Sets the fore color for the display text.<br/><br/></td></tr>
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-Style<br/><br/></td><td>
-Specifies the style for ProgressBar. The style are,<br/><br/>Blocks - Indicates the progress, by increasing the number of segmented blocks in a ProgressBar,<br/><br/>Continuous - Indicates the progress, by increasing the size of a smooth continuous bar,<br/><br/>Marquee - Indicates the progress, by continuously scrolling a block across the ProgressBar in a Marque fashion.<br/><br/></td></tr>
+Style</td><td>
+Specifies the style for ProgressBar. The style are,
+
+Blocks - Indicates the progress, by increasing the number of segmented blocks in a ProgressBar.
+
+Continuous - Indicates the progress, by increasing the size of a smooth continuous bar.
+
+Marquee - Indicates the progress, by continuously scrolling a block across the ProgressBar in a Marque fashion.
+
+</td></tr>
 <tr>
 <td>
-Enabled<br/><br/></td><td>
-Specifies whether the item is enabled.<br/><br/></td></tr>
+Enabled</td><td>
+Specifies whether the item is enabled.</td></tr>
 <tr>
 <td>
-Visible<br/><br/></td><td>
-Specifies whether the item is visible.<br/><br/></td></tr>
+Visible</td><td>
+Specifies whether the item is visible.</td></tr>
 <tr>
 <td>
-Alignment<br/><br/></td><td>
-Sets the alignment of the item within the ToolStripEx. They can be set to beginning (Left) or end (Right) of the ToolStripEx control.<br/><br/></td></tr>
+Alignment</td><td>
+Sets the alignment of the item within the ToolStripEx. They can be set to beginning (Left) or end (Right) of the ToolStripEx control.</td></tr>
 <tr>
 <td>
-AutoSize<br/><br/></td><td>
-Specifies whether the item should size itself based on its image and text.<br/><br/></td></tr>
+AutoSize</td><td>
+Specifies whether the item should size itself based on its image and text.</td></tr>
 <tr>
 <td>
-MarqueeAnimationSpeed<br/><br/></td><td>
-Specifies the speed of the marquee animation in milliseconds. The default value is 100 Milliseconds.<br/><br/></td></tr>
+MarqueeAnimationSpeed</td><td>
+Specifies the speed of the marquee animation in milliseconds. The default value is 100 Milliseconds.<</td></tr>
 <tr>
 <td>
-Maximum<br/><br/></td><td>
-UpperBound Range of the ProgressBar. Default value is 100.<br/><br/></td></tr>
+Maximum</td><td>
+UpperBound Range of the ProgressBar. Default value is 100.</td></tr>
 <tr>
 <td>
-Minimum<br/><br/></td><td>
-LowerBound Range of the ProgressBar. Default value is 0.<br/><br/></td></tr>
+Minimum</td><td>
+LowerBound Range of the ProgressBar. Default value is 0.</td></tr>
 <tr>
 <td>
-Step<br/><br/></td><td>
-The amount to increment the current value of the control when PerformStep() method is called. Default value is 10.<br/><br/></td></tr>
+Step</td><td>
+The amount to increment the current value of the control when PerformStep() method is called. Default value is 10.</td></tr>
 <tr>
 <td>
-Value<br/><br/></td><td>
-The current value for the ProgressBar, in the range specified by the minimum and maximum properties. Default value is 0.<br/><br/></td></tr>
+Value</td><td>
+The current value for the ProgressBar, in the range specified by the minimum and maximum properties. Default value is 0.</td></tr>
 </table>
 
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-PerformStep()<br/><br/></td><td>
-Advances the current position of the progressbar by the value specified in ToolStripProgressBar.Step property.<br/><br/></td></tr>
+PerformStep()</td><td>
+Advances the current position of the progressbar by the value specified in ToolStripProgressBar.Step property.</td></tr>
 </table>
 
 ## ToolTip Settings
@@ -97,16 +105,16 @@ Advances the current position of the progressbar by the value specified in ToolS
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-AutoToolTip<br/><br/></td><td>
-When set to true, will display the text set in the Text property as the item's tooltip.<br/><br/>When set to false, will display the text set in the ToolTipText property.<br/><br/></td></tr>
+AutoToolTip</td><td>
+When set to true, will display the text set in the Text property as the item's tooltip.When set to false, will display the text set in the ToolTipText property.</td></tr>
 <tr>
 <td>
-ToolTipText<br/><br/></td><td>
-Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></tr>
+ToolTipText</td><td>
+Sets the text for the tooltip when AutoToolTip is set to false.</td></tr>
 </table>
 
 ## RTL Support
@@ -114,14 +122,14 @@ Sets the text for the tooltip when AutoToolTip is set to false.<br/><br/></td></
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-RightToLeft<br/><br/></td><td>
-Indicates whether the item should draw right to left for RTL languages.<br/><br/></td></tr>
+RightToLeft</td><td>
+Indicates whether the item should draw right to left for RTL languages.</td></tr>
 <tr>
 <td>
-RightToLeftLayout<br/><br/></td><td>
-Indicates whether the control layout is right to left.<br/><br/></td></tr>
+RightToLeftLayout</td><td>
+Indicates whether the control layout is right to left.</td></tr>
 </table>

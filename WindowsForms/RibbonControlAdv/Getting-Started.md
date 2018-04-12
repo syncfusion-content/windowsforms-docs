@@ -606,12 +606,12 @@ Each Panel has Items property which invokes the Items Collection Editor. Using t
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-Items<br/><br/></td><td>
-Lets you open Items Collection Editor using which you can add items to the panel.<br/><br/></td></tr>
+Items</td><td>
+Lets you open Items Collection Editor using which you can add items to the panel.</td></tr>
 </table>
 
 ### Adding Items to the Dropdown
@@ -644,12 +644,12 @@ Property Table
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-MenuButtonDropDown<br/><br/></td><td>
-Gets / Sets ToolStripDropDown to be displayed, when the OfficeMenuButton is clicked.<br/><br/></td></tr>
+MenuButtonDropDown<</td><td>
+Gets / Sets ToolStripDropDown to be displayed, when the OfficeMenuButton is clicked.</td></tr>
 </table>
 
 
