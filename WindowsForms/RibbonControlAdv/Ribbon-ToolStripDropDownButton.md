@@ -210,7 +210,7 @@ MiddleCenter
 
 MiddleRight
 
-BottomLef
+BottomLeft
 
 BottomCenter 
 
