@@ -7,18 +7,15 @@ control: Tools
 documentation: ug
 ---
 
-
 # Appearance Settings
 
-## Background Settings
+## Background settings
 
 The background settings of the IntegerTextBox control are discussed below.
 
-### Background Color
+### Background color
 
 The background color of the control can be set using the properties given below.
-
-
 
 <table>
 <tr>
@@ -35,16 +32,12 @@ ReadOnlyBackColor</td><td>
 Specifies the back color to be used when the control is in the ReadOnly mode.</td></tr>
 </table>
 
-
 {% tabs %}
 
 {% highlight C# %}
 
-
 this.integerTextBox1.BackColor = System.Drawing.Color.PeachPuff;
-
 this.integerTextBox1.ReadOnly = true;
-
 this.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush;
 
 {% endhighlight %}
@@ -56,7 +49,6 @@ Me.integerTextBox1.ReadOnly = True
 Me.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![](Overview_images/Overview_img453.png)
@@ -64,13 +56,9 @@ Me.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush
 
  ![](Overview_images/Overview_img454.png) 
 
-
-
 N> The ReadOnly property must be set to 'True' for the above setting to take effect.
 
 The methods associated with the above properties are given below.
-
-
 
 <table>
 <tr>
@@ -87,16 +75,13 @@ ResetReadOnlyBackColor</td><td>
 Resets the ReadOnlyBackColor property to it's default value.</td></tr>
 </table>
 
-
-## Foreground Settings
+## Foreground settings
 
 The foreground settings of the IntegerTextBox control are discussed below.
 
-### Foreground Color
+### Foreground color
 
 The foreground color of the control can be set using the properties given below.
-
-
 
 <table>
 <tr>
@@ -121,11 +106,8 @@ Gets / sets the fore color, when the current value is zero.</td></tr>
 
 {% highlight C# %}
 
-
 this.integerTextBox1.PositiveColor = System.Drawing.Color.DarkOrange;
-
 this.integerTextBox1.NegativeColor = System.Drawing.Color.SteelBlue;
-
 this.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab;
 
 {% endhighlight %}
@@ -139,15 +121,11 @@ Me.integerTextBox1.NegativeColor = System.Drawing.Color.SteelBlue
 Me.integerTextBox1.ZeroColor = System.Drawing.Color.OliveDrab
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![](Overview_images/Overview_img456.png) 
 
-
 The methods associated with the above properties are given below.
-
-
 
 <table>
 <tr>
@@ -188,7 +166,7 @@ ShouldSerializeZeroColor</td><td>
 Serializes the ZeroColor property.</td></tr>
 </table>
 
-## Visual Style
+## Visual style
 
 Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for IntegerTextBox.
 
