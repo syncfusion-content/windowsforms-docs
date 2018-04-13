@@ -15,13 +15,13 @@ The number of pages in the currently loaded PDF can be found by using PageCount 
 {% tabs %}
 {%highlight c#%}
 
-int count = pdfViewer1.PageCount;
+int count = pdfViewerControl1.PageCount;
 
 {%endhighlight%}
 
 
-{%highlight vbnet%}
-Dim count As Integer = pdfViewer1.PageCount
+{%highlight vb%}
+Dim count As Integer = pdfViewerControl1.PageCount
 
 {%endhighlight%}
 {% endtabs %}

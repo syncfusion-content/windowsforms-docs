@@ -16,14 +16,14 @@ In order to view PDF without the toolbar, make use of PdfDocumentView control in
 {%highlight c#%}
 PdfDocumentView pdfDocumentView1 = new PdfDocumentView();
 
-pdfDocumentView1.Load(@"Template.pdf");
+pdfDocumentView1.Load("Sample.pdf");
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 Dim pdfDocumentView1 As New PdfDocumentView()
 
-pdfDocumentView1.Load("Template.pdf")
+pdfDocumentView1.Load("Sample.pdf")
 
 {%endhighlight%}
 {% endtabs %}

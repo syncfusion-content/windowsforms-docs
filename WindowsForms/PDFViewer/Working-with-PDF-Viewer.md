@@ -141,24 +141,24 @@ A PDF can be loaded into the PdfViewerControl either through the open file butto
 
 //Initialize PdfViewerControl.
 
-PdfViewerControl pdfViewer1 = new PdfViewerControl();
+PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 
 //Load the PDF.
 
-pdfViewer1.Load("Template.pdf");
+pdfViewerControl1.Load("Sample.pdf");
 
 {%endhighlight%}
 
 
-{%highlight vbnet%}
+{%highlight vb%}
 
 'Initialize PdfViewerControl.
 
-Private pdfViewer1 As New PdfViewerControl()
+Private pdfViewerControl1 As New PdfViewerControl()
 
 'Load the PDF.
 
-pdfViewer1.Load("Template.pdf")
+pdfViewerControl1.Load("Sample.pdf")
 
 {%endhighlight%}
 {% endtabs %}
@@ -170,23 +170,23 @@ You can load an encrypted document by using the overload in the [Load](https://h
 
 //Initialize PdfViewerControl.
 
-PdfViewerControl pdfViewer1 = new PdfViewerControl();
+PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 
 //Load the PDF.
 
-pdfViewer1.Load("Template.pdf", "password");
+pdfViewerControl1.Load("Sample.pdf", "password");
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
 'Initialize PdfViewerControl.
 
-Private pdfViewer1 As New PdfViewerControl()
+Private pdfViewerControl1 As New PdfViewerControl()
 
 'Load the PDF.
 
-pdfViewer1.Load("Template.pdf", "password")
+pdfViewerControl1.Load("Sample.pdf", "password")
 
 {%endhighlight%}
 {% endtabs %}
@@ -208,19 +208,19 @@ PrintDialog dialog = new PrintDialog();
 
 dialog.AllowPrintToFile = true;         
 
-dialog.Document = viewer.PrintDocument;
+dialog.Document = pdfViewerControl1.PrintDocument;
 
 dialog.Document.Print();
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
 Dim dialog As New PrintDialog()
 
 dialog.AllowPrintToFile = True
 
-dialog.Document = viewer.PrintDocument
+dialog.Document = pdfViewerControl1.PrintDocument
 
 dialog.Document.Print()
 
@@ -240,15 +240,15 @@ Actual size is the default value of print size option in printer settings. This 
 
 // Prints the document in actual size.
 
-pdfviewer1.PrinterSettings.PageSize = PdfViewerPrintSize.ActualSize;
+pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.ActualSize;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Prints the document in actual size.
 
-pdfviewer1.PrinterSettings.PageSize = PdfViewerPrintSize.ActualSize
+pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.ActualSize
 
 {% endhighlight %}
 {% endtabs %}
@@ -262,15 +262,15 @@ Fit option enlarges or reduces each page to fit the printable area of the select
 
 // Prints the document in fit size.
 
-pdfviewer1.PrinterSettings.PageSize = PdfViewerPrintSize.Fit;
+pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.Fit;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Prints the document in fit size.
 
-pdfviewer1.PrinterSettings.PageSize = PdfViewerPrintSize.Fit
+pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.Fit
 
 {% endhighlight %}
 {% endtabs %}
@@ -284,23 +284,23 @@ Custom Scale option resizes the page with the specified scale percentage. The fo
 
 // Prints the document with custom scaling.
 
-pdfviewer1.PrinterSettings.PageSize = PdfViewerPrintSize.CustomScale;
+pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.CustomScale;
 
 // Scale percentage with the page to be resized and it is applicable only for Custom Scale. The default value is 100.
 
-pdfviewer1.PrinterSettings.ScalePercentage = 120;
+pdfViewerControl1.PrinterSettings.ScalePercentage = 120;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Prints the document with custom scaling.
 
-pdfviewer1.PrinterSettings.PageSize = PdfViewerPrintSize.CustomScale
+pdfViewerControl1.PrinterSettings.PageSize = PdfViewerPrintSize.CustomScale
 
 ' Scale percentage with the page to be resized and it is applicable only for Custom Scale. The default value is 100.
 
-pdfviewer1.PrinterSettings.ScalePercentage = 120
+pdfViewerControl1.PrinterSettings.ScalePercentage = 120
 
 {% endhighlight %}
 {% endtabs %}
@@ -318,15 +318,15 @@ Auto Portrait/Landscape is the default option and it automatically selects the b
 
 // Prints the document in auto orientation.
 
-pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Auto;
+pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Auto;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Prints the document in auto orientation.
 
-pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Auto
+pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Auto
 
 {% endhighlight %}
 {% endtabs %}
@@ -340,15 +340,15 @@ Portrait option prints the PDF document in portrait orientation and it overrides
 
 // Prints the document in portrait orientation.
 
-pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Portrait;
+pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Portrait;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Prints the document in portrait orientation.
 
-pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Portrait
+pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Portrait
 
 {% endhighlight %}
 {% endtabs %}
@@ -362,15 +362,15 @@ Landscape option prints the PDF document in landscape orientation and it overrid
 
 // Prints the document in landscape orientation.
 
-pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape;
+pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ' Prints the document in landscape orientation.
 
-pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape
+pdfViewerControl1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape
 
 {% endhighlight %}
 {% endtabs %}
@@ -385,7 +385,7 @@ Essential PdfViewerControl allows selected pages to be exported as raster images
 {%highlight c#%}
 
 
-Bitmap image = pdfViewer1.ExportAsImage(0);
+Bitmap image = pdfViewerControl1.ExportAsImage(0);
 
 // Save the image.
 
@@ -393,9 +393,9 @@ image.Save("Sample.png", ImageFormat.Png);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
-Dim image As Bitmap = pdfViewer1.ExportAsImage(0)
+Dim image As Bitmap = pdfViewerControl1.ExportAsImage(0)
 
 'Save the image.
 
@@ -409,13 +409,13 @@ You can also specify the page range instead of converting each page.
 {% tabs %}
 {%highlight c#%}
 
-Bitmap[] image = pdfViewer1.ExportAsImage(0, 3);
+Bitmap[] image = pdfViewerControl1.ExportAsImage(0, 3);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
-Dim image() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
+Dim image() As Bitmap = pdfViewerControl1.ExportAsImage(0, 3)
 
 {%endhighlight%}
 {% endtabs %}
@@ -427,7 +427,7 @@ Exporting pages of PDF document as vector images can be done using the [ExportAs
 {% tabs %}
 {%highlight c#%}
 
-Metafile image = pdfViewer1.ExportAsMetafile(0);
+Metafile image = pdfViewerControl1.ExportAsMetafile(0);
 
 // Save the image
 
@@ -435,9 +435,9 @@ image.Save("Sample.emf", ImageFormat.Emf);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
-Dim image As Metafile = pdfViewer1.ExportAsMetafile(0)
+Dim image As Metafile = pdfViewerControl1.ExportAsMetafile(0)
 
 ' Save the image
 
@@ -451,13 +451,13 @@ You can also specify the page range instead of converting each page individually
 {% tabs %}
 {%highlight c#%}
 
-Metafile[] image = pdfViewer1.ExportAsMetafile(0, 3);
+Metafile[] image = pdfViewerControl1.ExportAsMetafile(0, 3);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
-Dim image() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
+Dim image() As Metafile = pdfViewerControl1.ExportAsMetafile(0, 3)
 
 {%endhighlight%}
 {% endtabs %}
@@ -475,7 +475,7 @@ The PdfViewerControl control also supports searching text in the PDF document wi
 
 bool IsMatchFound;
 
-pdfViewerControl1.Load("../../Data/Barcode.pdf");
+pdfViewerControl1.Load("Sample.pdf");
 
 //Get the occurrences of the target text and location.
 
@@ -487,11 +487,11 @@ IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
 Dim IsMatchFound As Boolean
 
-pdfViewerControl1.Load("../../Data/Barcode.pdf")
+pdfViewerControl1.Load("Sample.pdf")
 
 'Get the occurrences of the target text and location.
 

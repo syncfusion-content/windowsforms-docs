@@ -15,35 +15,35 @@ PDF files as stream can be viewed in Essential PdfViewerControl using the overlo
 {% tabs %}
 {%highlight c#%}
 
-FileStream stream = new FileStream("Template.pdf", FileMode.Open);
+FileStream stream = new FileStream("Sample.pdf", FileMode.Open);
 
 //Initialize PDF Viewer
 
-PdfViewerControl pdfViewer1 = new PdfViewerControl();
+PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 
 
 
 //Load the PDF
 
-pdfViewer1.Load(stream);
+pdfViewerControl1.Load(stream);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
-Dim stream As New FileStream("Template.pdf", FileMode.Open)
+Dim stream As New FileStream("Sample.pdf", FileMode.Open)
 
 
 
 'Initialize PDF Viewer
 
-Dim pdfViewer1 As New PdfViewerControl()
+Dim pdfViewerControl1 As New PdfViewerControl()
 
 
 
 'Load the PDF
 
-pdfViewer1.Load(stream)
+pdfViewerControl1.Load(stream)
 
 {%endhighlight%}
 {% endtabs %}

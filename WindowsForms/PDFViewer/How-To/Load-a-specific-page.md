@@ -14,14 +14,14 @@ Navigation to a specific page, through code, is possible using GoToPageAtIndex m
 {% tabs %}
 {%highlight c#%}
 
-pdfViewer1.GoToPageAtIndex(2);
+pdfViewerControl1.GoToPageAtIndex(2);
 
 {%endhighlight%}
 
-{%highlight vbnet%}
+{%highlight vb%}
 
 
-pdfViewer1.GoToPageAtIndex(2)
+pdfViewerControl1.GoToPageAtIndex(2)
 
 {%endhighlight%}
 {% endtabs %}

@@ -49,13 +49,13 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
 {% highlight c# %}
 
 //Loading the document in the PdfViewerControl
-pdfViewerControl1.Load(@"c:/documents/myPDF.pdf");
+pdfViewerControl1.Load("Sample.pdf");
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Loading the document in the PdfViewerControl
-pdfViewerControl1.Load("c:/documents/myPDF.pdf")
+pdfViewerControl1.Load("Sample.pdf")
 
 {% endhighlight %}
 {% endtabs %}
@@ -70,7 +70,7 @@ pdfViewerControl1.Load("c:/documents/myPDF.pdf")
 using Syncfusion.Windows.Forms.PdfViewer;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 Imports Syncfusion.Windows.Forms.PdfViewer
 
@@ -84,25 +84,25 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 {% highlight c# %}
 
 //Initializing the PdfViewerControl
-PdfViewer viewer = new PdfViewer();
+PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 
 //Loading the document in the PdfViewerControl
-viewer.Load(@"c:/documents/myPDF.pdf");
+pdfViewerControl1.Load("Sample.pdf");
 
 //Add PdfViewerControl to the Form
-Controls.Add(viewer);
+Controls.Add(pdfViewerControl1);
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Initializing the PdfViewerControl
-Dim viewer As PdfViewer = New PdfViewer()
+Dim pdfViewerControl1 As PdfViewerControl = New PdfViewerControl()
 
 'Loading the document in the PdfViewerControl
-viewer.Load("c:/documents/myPDF.pdf")
+pdfViewerControl1.Load("Sample.pdf")
 
 'Add PdfViewerControl to the Form
-Controls.Add(viewer)
+Controls.Add(pdfViewerControl1)
 
 {% endhighlight %}
 {% endtabs %}
