@@ -7,7 +7,7 @@ control: Editors Package
 documentation: ug
 ---
 
-# How to display multiple members in a MultiColumnComboBox
+# How to Display Multiple Members in a MultiColumnComboBox
 
 This section deals with displaying multiple members in a MultiColumnComboBox. Follow the steps to achieve the same.
 
