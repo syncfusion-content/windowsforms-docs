@@ -7,7 +7,7 @@ control: Editors Package
 documentation: ug
 ---
 
-# How to change the back color and text color of the selected item
+# How to Change the Back Color and Text Color of the Selected Item
 
 Using PrepareViewStyleInfo event of the Grid that is embedded in the MultiColumnComboBox, you can change the back color and text color of the selected item. This is illustrated in the following code.
 
