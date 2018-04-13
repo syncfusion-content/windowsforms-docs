@@ -18,35 +18,39 @@ The MultiColumnComboBox can be created programmatically through code as detailed
 
 1. Include the required namespace.
 
-   ~~~ cs
-		using Syncfusion.Windows.Forms.Tools;
+{% tabs %}
+{% highlight c# %}
 
-   ~~~
-   {:.prettyprint }
+using Syncfusion.Windows.Forms.Tools;
 
-   ~~~ vbnet
-		Imports Syncfusion.Windows.Forms.Tools
- 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+
+{% highlight vb %}
+
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+{% endtabs %}
 
 2. Create an instance of MultiColumnComboBox. Add that instance to the Form.
 
-   ~~~ cs
-	   private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
-	   this.multiColumnComboBox1=new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
-	   this.Controls.Add(this.multiColumnComboBox1);
+{% tabs %}
+{% highlight c# %}
 
-   ~~~
-   {:.prettyprint }
+private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
+this.multiColumnComboBox1=new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
+this.Controls.Add(this.multiColumnComboBox1);
 
-   ~~~ vbnet
-	   Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
-	   Me.multiColumnComboBox1 = New Syncfusion.Windows.Forms.Tools.MultiColumnComboBox()
-	   Me.Controls.Add(Me.multiColumnComboBox1)
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% highlight vb %}
+
+Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
+Me.multiColumnComboBox1 = New Syncfusion.Windows.Forms.Tools.MultiColumnComboBox()
+Me.Controls.Add(Me.multiColumnComboBox1)
+
+{% endhighlight %}
+{% endtabs %}
 
 After creating MultiColumnComboBox, you can bound them using data source. Refer [DataBinding](/windowsforms/multicolumncombobox/data-binding).
 
