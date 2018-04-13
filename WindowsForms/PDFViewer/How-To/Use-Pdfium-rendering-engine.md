@@ -40,7 +40,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 {%endhighlight%}
 
 
-{%highlight vbnet%}
+{%highlight vb%}
 
 	Dim pdfViewerControl1 As New PdfViewerControl()
     'Specify the path for Pdfium assembly
