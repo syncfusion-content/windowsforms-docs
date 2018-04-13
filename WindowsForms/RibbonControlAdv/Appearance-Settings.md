@@ -154,7 +154,7 @@ Me.ribbonControlAdv1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStri
 
 To set custom colors, set the ColorScheme as Managed. Then set the desired color using the  Syncfusion.Windows.Forms.Tools.Office12ColorTable.ApplyManagedColors method. 
 
-[% tabs %}
+{% tabs %}
 
 {% highlight c# %}
 
