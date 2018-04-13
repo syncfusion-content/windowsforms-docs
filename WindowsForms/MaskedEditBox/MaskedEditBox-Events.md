@@ -86,11 +86,8 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}  
 
 private void maskedEditBox1_Border3DStyleChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" Border3DStyleChanged event is raised ");
-
+    Console.WriteLine(" Border3DStyleChanged event is raised ");
 }
 
 {% endhighlight %}
@@ -98,9 +95,7 @@ Console.WriteLine(" Border3DStyleChanged event is raised ");
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" Border3DStyleChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -117,25 +112,17 @@ The event handler receives an argument of type EventArgs containing data relat
 
 {% highlight C# %} 
 
-
-
 private void maskedEditBox1_BorderColorChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" BorderColorChanged event is raised ");
-
+    Console.WriteLine(" BorderColorChanged event is raised ");
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_BorderColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" BorderColorChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -152,29 +139,20 @@ The event handler receives an argument of type EventArgs containing data relat
 
 {% highlight C# %}  
 
-
-
 private void maskedEditBox1_BorderSidesChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" BorderSidesChanged event is raised ");
-
+    Console.WriteLine(" BorderSidesChanged event is raised ");
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_BorderSidesChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" BorderSidesChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
-
 
 {% endtabs %}
 
@@ -188,24 +166,17 @@ The event handler receives an argument of type EventArgs containing data relat
 
 {% highlight C# %}  
 
-
 private void maskedEditBox1_BorderStyleChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" BorderStyleChanged event is raised ");
-
+    Console.WriteLine(" BorderStyleChanged event is raised ");
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_BorderStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" BorderStyleChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -224,22 +195,16 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}  
 
 private void maskedEditBox1_CharacterCasingChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" CharacterCasingChanged event is raised ");
-
+    Console.WriteLine(" CharacterCasingChanged event is raised ");
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_CharacterCasingChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" CharacterCasingChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -258,23 +223,16 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}  
 
 private void maskedEditBox1_HideSelectionChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" HideSelectionChanged event is raised ");
-
+    Console.WriteLine(" HideSelectionChanged event is raised ");
 }
 
 {% endhighlight %}
 
-
-
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_HideSelectionChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" HideSelectionChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -322,22 +280,16 @@ Indicates whether the event has been handled and no further processing of the ev
 {% highlight C# %}  
 
 private void maskedEditBox1_MaskCustomValidate(object sender, Syncfusion.Windows.Forms.Tools.MaskCustomValidateArgs e)
-
 {
-
-Console.WriteLine(" MaskCustomValidate event is raised ");
-
+    Console.WriteLine(" MaskCustomValidate event is raised ");
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_MaskCustomValidate(ByVal sender As Object, ByVal e AsSyncfusion.Windows.Forms.Tools.MaskCustomValidateArgs)
-
 Console.WriteLine(" MaskCustomValidate event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -355,14 +307,9 @@ The event handler receives an argument of type EventArgs containing data relat
 
 {% highlight C# %}  
 
-
-
 private void maskedEditBox1_MaskSatisfied(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" MaskSatisfied event is raised ");
-
+    Console.WriteLine(" MaskSatisfied event is raised ");
 }
 
 {% endhighlight %}
@@ -370,9 +317,7 @@ Console.WriteLine(" MaskSatisfied event is raised ");
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_MaskSatisfied(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" MaskSatisfied event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -390,22 +335,16 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}  
 
 private void maskedEditBox1_MaximumSizeChanged(object sender, EventArgs e)
-
-{
-
-Console.WriteLine(" MaximumSizeChanged event is raised ");
-
+{   
+    Console.WriteLine(" MaximumSizeChanged event is raised ");
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_MaximumSizeChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" MaximumSizeChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -423,27 +362,21 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %} 
 
 private void maskedEditBox1_MinimumSizeChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" MinimumSizeChanged event is raised ");
-
+    Console.WriteLine(" MinimumSizeChanged event is raised ");
 }
 
- {% endhighlight %}
-
+{% endhighlight %}
 
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_MinimumSizeChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" MinimumSizeChanged event is raised ")
-
 End Sub
  
- {% endhighlight %}
+{% endhighlight %}
  
- {% endtabs %}
+{% endtabs %}
 
 ## MultilineChanged
 
@@ -457,22 +390,16 @@ The event handler receives an argument of type EventArgs containing data relat
 
 
 private void maskedEditBox1_MultilineChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" MultilineChanged event is raised ");
-
+    Console.WriteLine(" MultilineChanged event is raised ");
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_MultilineChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" MultilineChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -491,11 +418,8 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}  
 
 private void maskedEditBox1_ReadOnlyChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" ReadOnlyChanged event is raised ");
-
+    Console.WriteLine(" ReadOnlyChanged event is raised ");
 }
 
 {% endhighlight %}
@@ -503,9 +427,7 @@ Console.WriteLine(" ReadOnlyChanged event is raised ");
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_ReadOnlyChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" ReadOnlyChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -524,11 +446,8 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}  
 
 private void maskedEditBox1_TextAlignChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" TextAlignChanged event is raised ");
-
+    Console.WriteLine(" TextAlignChanged event is raised ");
 }
 
 {% endhighlight %}
@@ -536,9 +455,7 @@ Console.WriteLine(" TextAlignChanged event is raised ");
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_TextAlignChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" TextAlignChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -557,22 +474,16 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %} 
 
 private void maskedEditBox1_ThemesEnabledChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" ThemesEnabledChanged event is raised ");
-
+    Console.WriteLine(" ThemesEnabledChanged event is raised ");
 }
 
- {% endhighlight %}
-
+{% endhighlight %}
 
 {% highlight VB %} 
 
 Private Sub maskedEditBox1_ThemesEnabledChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" ThemesEnabledChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
