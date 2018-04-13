@@ -143,7 +143,7 @@ Me.HtmluiControl1.LoadHTML(path)
 
 
 
-#### Load file drom disk sample
+#### Load file from disk sample
 
 This sample demonstrates the implementation of Loading a file from Disk by using HTMLUI.
 
