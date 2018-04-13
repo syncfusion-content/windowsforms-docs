@@ -15,7 +15,7 @@ The MultiSelectionComboBox is a type of ComboBox Control with multiple item sele
 
 
 
-## Key Features
+## Key features
 
 * Display Modes – Three different display types are available for use.
 * Visual Item: Each selected value is displayed in separate box with close button.
