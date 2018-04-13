@@ -9,7 +9,7 @@ documentation: ug
 
 # Display Mode Configuration
 
-## Visual Item
+## Visual item
 
 Each selected item from its drop down list is displayed like a tag with remove button in text area.
 
@@ -18,19 +18,21 @@ Each selected item from its drop down list is displayed like a tag with remove b
 
 The following code example illustrates you on how to set Display Mode as Visual Item.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.DisplayMode = DisplayMode.VisualItem;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.DisplayMode = DisplayMode.VisualItem
 
 {% endhighlight %}
+{% endtabs %}
 
-## Delimiter Mode
+## Delimiter mode
 
 Selected items are displayed in text area each separated with delimiter character.
 
@@ -39,19 +41,21 @@ Selected items are displayed in text area each separated with delimiter characte
 
 The following code example illustrates you on how to set Display Mode as Delimiter Mode.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.DisplayMode = DisplayMode.DelimiterMode;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.DisplayMode = DisplayMode.DelimiterMode
 
 {% endhighlight %}
+{% endtabs %}
 
-## Normal Mode
+## Normal mode
 
 At a time, only one value can be selected from the drop down list and displayed in text area.
 
@@ -59,14 +63,16 @@ At a time, only one value can be selected from the drop down list and displayed 
 
 The following code sample illustrates you on how to set Display Mode as Normal Mode.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.DisplayMode = DisplayMode.NormalMode;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.DisplayMode = DisplayMode.NormalMode
 
 {% endhighlight %}
+{% endtabs %}
