@@ -11,122 +11,88 @@ documentation: ug
 
 This section will give a step-by-step procedure to design a NumericUpDownExt control through designer and also through programming approach.
 
-## Through Designer
+## Through designer
 
 1. Create or open a Windows Forms project.
 2. Click on the NumericUpDownExt Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
 
-
-
    ![](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img1.png)
-
-
 
 3. Run the application. The NumericUpDownExt will allow you to display numeric values by clicking on the up and down buttons.
 
    ![](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img2.png)
 
-
-
-## Through Programming Approach
+## Through programming approach
 
 1. Declare an instance of the NumericUpDownExt control.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+private Syncfusion.Windows.Forms.Tools.NumericUpDownExt numericUpDownExt1;
 
+{% endhighlight %}
 
-		private Syncfusion.Windows.Forms.Tools.NumericUpDownExt numericUpDownExt1;
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+Private numericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
 
-
-   ~~~ vbnet
-
-		Private numericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
+{% endtabs %}
 
 2. Initialize the control.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+this.numericUpDownExt1 = new Syncfusion.Windows.Forms.Tools.NumericUpDownExt();
 
+{% endhighlight %}
 
-		this.numericUpDownExt1 = new Syncfusion.Windows.Forms.Tools.NumericUpDownExt();
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+Me.numericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
 
-   ~~~ vbnet
-
-
-		Me.numericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
+{% endtabs %}
 
 3. Set the properties of the NumericUpDownExt control.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+this.numericUpDownExt1.Location = new System.Drawing.Point(70, 29);
+this.numericUpDownExt1.Name = "numericUpDownExt1";
+this.numericUpDownExt1.Size = new System.Drawing.Size(84, 20);
 
+{% endhighlight %}
 
-		this.numericUpDownExt1.Location = new System.Drawing.Point(70, 29);
+{% highlight vb %}
 
-		this.numericUpDownExt1.Name = "numericUpDownExt1";
+Me.numericUpDownExt1.Location = New System.Drawing.Point(70, 29)
+Me.numericUpDownExt1.Name = "numericUpDownExt1"
+Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
 
-		this.numericUpDownExt1.Size = new System.Drawing.Size(84, 20);
-
-
-   ~~~
-   {:.prettyprint }
-
-
-   ~~~ vbnet
-
-		Me.numericUpDownExt1.Location = New System.Drawing.Point(70, 29)
-
-		Me.numericUpDownExt1.Name = "numericUpDownExt1"
-
-		Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
-
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
+{% endtabs %}
 
 4. Add the control to the form.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+this.Controls.Add(this.numericUpDownExt1);
 
+{% endhighlight %}
 
-		this.Controls.Add(this.numericUpDownExt1);
+{% highlight vb %}
 
+Me.Controls.Add(Me.numericUpDownExt1)
 
-   ~~~
-   {:.prettyprint }
-
-   ~~~ vbnet
-
-
-		Me.Controls.Add(Me.numericUpDownExt1)
-
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
+{% endtabs %}
 
 5. Run the application. You will be able to see the NumericUpDownExt control in your form.
 
 ![](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img3.png)
-
-
-
-
-
-
 
