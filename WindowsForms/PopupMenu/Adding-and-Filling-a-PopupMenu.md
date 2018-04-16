@@ -7,7 +7,7 @@ control: Popup-Menu
 documentation: ug
 ---
 
-# Adding and Filling a PopupMenu
+# Adding and Filling a Pop-upMenu
 
 Adding a PopupMenu
 
@@ -15,11 +15,9 @@ Drag and drop a PopupMenu from the toolbox onto the designer form.
 
 ![](Adding-and-Filling-a-PopupMenu_images/Adding-and-Filling-a-PopupMenu_img1.jpeg)
 
-
-
 Filling the Popup Menu
 
-### Filling the Popup Menu
+### Filling the Pop-up Menu
 
 In the Absence of a BarManager
 
@@ -27,14 +25,9 @@ A PopupMenu needs to be associated with a ParentBarItem in order to fill it with
 
 ![](Adding-and-Filling-a-PopupMenu_images/Adding-and-Filling-a-PopupMenu_img2.jpeg)
 
-
-
 In the absence of a BarManager, use the PopupMenu.ParentBarItem.Items property's collection editor to add items to the popup menu. 
 
 ![](Adding-and-Filling-a-PopupMenu_images/Adding-and-Filling-a-PopupMenu_img3.jpeg)
-
-
-
 
 N> With such a custom ParentBarItem associated with the popup menu, you cannot add items using drag-and-drop from the BarManager.
 
@@ -44,14 +37,9 @@ You can also reuse the ParentBarItem that you have already created for your menu
 
 ![](Adding-and-Filling-a-PopupMenu_images/Adding-and-Filling-a-PopupMenu_img5.jpeg)
 
-
-
 In the presence of a BarManager, the user can just drag BarItems into the popup menu. Right-click on the popupMenu1 and select Customize to invoke this dialog and drag the required menu items.
 
 ![](Adding-and-Filling-a-PopupMenu_images/Adding-and-Filling-a-PopupMenu_img6.jpeg)
-
-
-
 
 N> You can also display the popup menu programmatically by calling PopupMenu.Show method. See_ How to programmatically show a Popup Men
 
@@ -62,4 +50,3 @@ N> You can also display the popup menu programmatically by calling PopupMenu.Sho
 * How to programmatically show a Popup Menu
 
 {% endseealso %}
-
