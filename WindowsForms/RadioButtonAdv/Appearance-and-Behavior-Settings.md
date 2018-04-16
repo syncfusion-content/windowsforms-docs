@@ -7,12 +7,11 @@ control: EditorsPackage
 documentation: ug
 ---
 
-
 # Appearance and Behavior Settings
 
 This section discusses the appearance and behavior settings of the RadioButtonAdv control.
 
-## Appearance Settings
+## Appearance settings
 
 DrawFocusRectangle
 
@@ -31,24 +30,21 @@ DrawFocusRectangle</td><td>
 Determines if the focus rectangle is visible when it gets the focus. The default value is set to 'True'.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.radioButtonAdv1.DrawFocusRectangle = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.DrawFocusRectangle = True
 
 {% endhighlight %}
+{% endtabs %}
 
-## Behavior Settings
+## Behavior settings
 
 ### AutoHeight
 
@@ -67,18 +63,19 @@ AutoHeight</td><td>
 Determines if the RadioButton will automatically calculate its height.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.radioButtonAdv1.AutoHeight = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.radioButtonAdv1.AutoHeight = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ### RaiseEventOnClick
 
@@ -97,17 +94,16 @@ RaiseEventOnClick</td><td>
 Specifies whether the OnClick event should be fired. The default value is set to 'True'.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.radioButtonAdv1.RaiseEventOnClick = true;
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight vb %}
 
 Me.radioButtonAdv1.RaiseEventOnClick = True
 
 {% endhighlight %}
+{% endtabs %}
