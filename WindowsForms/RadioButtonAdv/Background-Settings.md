@@ -34,30 +34,23 @@ GradientEnd</td><td>
 Sets the end color of the gradient of the background of the RadioButtonAdv.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.radioButtonAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.CheckBoxAdvBackStyle.HorizontalGradient;
-
 this.radioButtonAdv1.GradientStart = System.Drawing.Color.LightBlue;
-
 this.radioButtonAdv1.GradientEnd = System.Drawing.Color.DarkSalmon;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.CheckBoxAdvBackStyle.HorizontalGradient
-
 Me.radioButtonAdv1.GradientStart = System.Drawing.Color.LightBlue
-
 Me.radioButtonAdv1.GradientEnd = System.Drawing.Color.DarkSalmon
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img636.jpeg)
 
