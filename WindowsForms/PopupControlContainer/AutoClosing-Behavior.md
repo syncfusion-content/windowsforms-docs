@@ -15,56 +15,35 @@ Example
 
 The Popup of a textbox, on a button click should be closed only when the textbox is not empty. For this purpose, the popup should not be closed on any mouse action. So set IgnoreMouseMessages property to true for this property.
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 this.popupControlContainer1.IgnoreMouseMessages = true;
-
-
-
 private void button1_Click(object sender,EventArgs e)
-
 {
 
-  // Hides the PopupControlContainer under a button click.
-
-if(Textbox.Text!="") 
-
-{
-
-   this.popupControlContainer1.HidePopup(PopupCloseType.Done);
-
+// Hides the PopupControlContainer under a button click.
+    if(Textbox.Text!="") 
+    {
+        this.popupControlContainer1.HidePopup(PopupCloseType.Done);
+    }
 }
-
-}
-
 
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.popupControlContainer1.IgnoreMouseMessages = True
-
-
-
 Private Sub button1_Click(sender as Object,e as EventArgs)
 
 'Hides the PopupControlContainer under a button click.
 
 If Not Textbox.Text = "" Then
-
-      this.popupControlContainer1.HidePopup(PopupCloseTypes.Done)
-
+this.popupControlContainer1.HidePopup(PopupCloseTypes.Done)
 End Sub
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 If you want more control over this behavior, then you will have to implement the IPopupParent interface and set the PopupParent property in the PopupControlContainer.
 
@@ -80,23 +59,21 @@ A sample which illustrates the IPopupParent interface is available in the below 
 
 When the pop-up is visible, the PopupControlContainer will look for Alt, Enter, Tab, Esc, F4, and F2 keys and either cancel or close the pop-up. In order to navigate, the PopupControlContainer's IgnoreDialogKey property must be set to true. 
 
-
-
+{% tabs %}
 {% highlight C# %}
 
 this.popupControlContainer1.IgnoreDialogKey = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 Me.popupControlContainer1.IgnoreDialogKey = True
-{% endhighlight %}
 
-## Hiding popup with PopupCloseType mode
+{% endhighlight %}
+{% endtabs %}
+
+## Hiding pop-up with PopupCloseType mode
 
 We can hide the popup using HidePopup method in PopupCloseType mode.
 
