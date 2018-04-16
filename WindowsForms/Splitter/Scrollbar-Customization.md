@@ -16,9 +16,9 @@ The appearance of the SplitterControl scrollbar can be customized by using the G
 * Metro
 * None
 
-The following code example illustrates this.
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Customizes the Scrollbar.
 
@@ -26,10 +26,12 @@ this.splitterControl1.GridOfficeScrollBars= OfficeScrollBars.Office2007;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Customizes the Scrollbar
 
 Me.splitterControl1.GridOfficeScrollBars= OfficeScrollBars.Office2007
 
 {% endhighlight %}
+
+{% endtabs %}

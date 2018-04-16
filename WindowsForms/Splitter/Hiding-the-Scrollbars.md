@@ -7,13 +7,13 @@ control: Splitter
 documentation: ug
 ---
 
-# Hiding the Scrollbars
+# Hiding the scrollbars
 
 The Horizontal and Vertical scrollbars in SplitterControl can be hidden by using the ShowHorizontalScrollBar and ShowVerticalScrollBar properties.
 
-The following code example illustrates this.
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.splitterControl1.ShowHorizontalScrollBar = false;
 
@@ -21,7 +21,7 @@ this.splitterControl1.ShowVerticalScrollBar = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.splitterControl1.ShowHorizontalScrollBar = False
 
@@ -29,3 +29,4 @@ Me.splitterControl1.ShowVerticalScrollBar = False
 
 {% endhighlight %}
 
+{% endtabs %}

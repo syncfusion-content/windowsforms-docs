@@ -7,16 +7,16 @@ control: Wizard
 documentation: ug
 ---
 
-# Scroll Settings
+# Scroll settings
 
 XPTaskPane Enables vertical scrolling for the pages using VerticalScroll property. On mouse hovering over the scroll bar, the task page automatically moves and show the hidden contents. Scrolling speed can be fixed using ScrollSpeed property.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPTaskPane Property</th><th>
+XPTaskPane property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -28,8 +28,9 @@ VerticalScroll</td><td>
 Enables scroll buttons that occupy vertical space instead of default horizontal space.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -39,7 +40,7 @@ this.xpTaskPane1.VerticalScroll = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -48,6 +49,8 @@ Me.xpTaskPane1.ScrollSpeed = 20
 Me.xpTaskPane1.VerticalScroll = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Scroll-Settings_images/Scroll-Settings_img1.jpeg)
 

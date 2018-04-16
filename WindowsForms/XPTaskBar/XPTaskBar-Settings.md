@@ -6,20 +6,20 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# XPTaskBar Settings 
+# XPTaskBar settings
 
 The behavior of the XPTaskBar can be controlled using the properties given below.
 
-## Behavior Settings 
+## Behavior settings
 
 This section discusses the behavior settings of the XPTaskBar.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPTaskBar Property</th><th>
+XPTaskBar property</th><th>
 Description</th><th>
 Type of Property</th><th>
 Value It Accepts</th><th>
@@ -29,7 +29,7 @@ More Information</th></tr>
 <tr>
 <td>
 AllowDrop</td><td>
-Gets / sets a value indicating whether the control can accept data that the user drags on it.</td><td>
+Gets/sets a value indicating whether the control can accept data that the user drags on it.</td><td>
 Normal</td><td>
 Boolean[true/false]</td><td>
 Public Property AllowDrop As Boolean this.xpTaskBar1.AllowDrop = true;</td><td>
@@ -47,7 +47,7 @@ The expanded states of the child task bar boxes are cached as the users expands/
 <tr>
 <td>
 VerticalLayout</td><td>
-Gets / sets the value which determines whether the TaskBar Boxes should be aligned vertically or horizontally in the XPTaskBar control. The default layout is Vertical.</td><td>
+Gets/sets the value which determines whether the TaskBar Boxes should be aligned vertically or horizontally in the XPTaskBar control. The default layout is Vertical.</td><td>
 Normal</td><td>
 Boolean[true/false]</td><td>
 Public Property VerticalLayout As Boolean this.xpTaskBar1.VerticalLayout = true;</td><td>
@@ -64,6 +64,7 @@ Yes. Set this property as false to make changes on Horizontal alignment. this.xp
 </td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -79,7 +80,7 @@ this.xpTaskBar1.VerticalLayout = true;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.xpTaskBar1.AllowDrop = True
 
@@ -91,25 +92,25 @@ Me.xpTaskBar1.VerticalLayout = True
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img103.jpeg) 
 
 ![](Overview_images/Overview_img104.jpeg)
 
 
-## Scroll Settings 
+## Scroll settings
 
-Vertical scrollbar will be automatically added to the XPTaskBar when the TaskBar Boxes are placed outside the TaskBar's client 
-area, provided the XPTaskBar is in the Vertical Layout mode. 
+Vertical scrollbar will be automatically added to the XPTaskBar when the TaskBar Boxes are placed outside the TaskBar's client area, provided the XPTaskBar is in the Vertical Layout mode.
 
-In the Horizontal Layout mode, the horizontal scrollbar appears on setting the ColWidthOnHorizontalLayout property to large 
-values.
+In the Horizontal Layout mode, the horizontal scrollbar appears on setting the ColWidthOnHorizontalLayout property to large values.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPTaskBar Property</th><th>
+XPTaskBar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -119,13 +120,14 @@ boundaries.</td></tr>
 <tr>
 <td>
 AutoScrollMargin</td><td>
-Gets / sets the size of the AutoScroll margin.</td></tr>
+Gets/sets the size of the AutoScroll margin.</td></tr>
 <tr>
 <td>
 AutoScrollMinSize</td><td>
-Gets /sets the minimum size of the AutoScroll.</td></tr>
+Gets/sets the minimum size of the AutoScroll.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -139,7 +141,7 @@ this.xpTaskBar1.AutoScrollMinSize = new System.Drawing.Size(3, 3);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.xpTaskBar1.AutoScroll = True
 
@@ -149,7 +151,6 @@ Me.xpTaskBar1.AutoScrollMinSize = New System.Drawing.Size(3, 3)
 
 {% endhighlight %}
 
-
-The following screen shot illustrates the above settings.
+{% endtabs %}
 
  ![](Overview_images/Overview_img105.jpeg) 

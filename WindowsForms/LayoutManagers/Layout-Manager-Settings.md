@@ -6,13 +6,11 @@ platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---
-# Layout Manager Settings
+# Layout Manager settings
 
 The settings that are common to all the Layout Manager's have been discussed in this section.
 
-It includes the below given topics.
-
-## Behavior Settings
+## Behavior settings
 
 The behavior settings that are common to all the Layout Managers are discussed below.
 
@@ -25,7 +23,7 @@ The Layout Manager, by default, listens to the Container'sLayout events and perf
 <table>
 <tr>
 <th>
-LayoutManager Property</th><th>
+LayoutManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -34,19 +32,21 @@ Indicates whether the Layout Manager should layout automatically on Layout event
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.borderLayout1.AutoLayout = true;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.borderLayout1.AutoLayout = True
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 N> The above process can be prevented by setting the AutoLayout property to 'False' and invoking the layout explicitly through a call to the LayoutContainer() method.
 
@@ -59,7 +59,7 @@ The Container control to be laid out by the Layout Manager can be specified usin
 <table>
 <tr>
 <th>
-LayoutManager Property</th><th>
+LayoutManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -68,21 +68,23 @@ Specifies the Container control that the Layout Manager will layout.</td></tr>
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.borderLayout1.ContainerControl = this;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.borderLayout1.ContainerControl = Me
 
 {% endhighlight  %}
 
-## Custom Layout Bounds
+{% endtabs %}
+
+## Custom layout bounds
 
 The Layout Manager will, by default, layout the Child components within the Container control's client rectangle. However, you can specify any custom layout bounds using the property given below.
 
@@ -91,7 +93,7 @@ The Layout Manager will, by default, layout the Child components within the Cont
 <table>
 <tr>
 <th>
-LayoutManager Property</th><th>
+LayoutManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -99,9 +101,9 @@ CustomLayoutBounds</td><td>
 Specifies the custom layout bounds, if any, to be used for layout calculation instead of the Container control's client rectangle.</td></tr>
 </table>
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.borderLayout1.CustomLayoutBounds = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -109,16 +111,18 @@ this.borderLayout1.CustomLayoutBounds = new System.Drawing.Rectangle(0, 0, 0, 0)
 {% endhighlight  %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.borderLayout1.CustomLayoutBounds = New System.Drawing.Rectangle(0, 0, 0, 0)
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 N> When you specify the custom layout bounds and the Container is resizable, you should also set the AutoLayout property to 'False' and set a new custom layout Note: The layout is done within the Container's client rectangle, even if the Container has a scrollable display rectangle.
 
-## Margin Settings
+## Margin settings
 
 The margin settings that are common to all the Layout Managers are discussed below.
 
@@ -129,28 +133,29 @@ The layout bounds will also be adjusted to include some margin space along the b
 <table>
 <tr>
 <th>
-LayoutManager Properties</th><th>
+LayoutManager properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 TopMargin</td><td>
-Gets / sets the top margin between the client rectangle and the layout rectangle.</td></tr>
+Gets/sets the top margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
 HortNearMargin</td><td>
-Gets / sets the left margin between the client rectangle and the layout rectangle.</td></tr>
+Gets/sets the left margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
 HortFarMargin</td><td>
-Gets / sets the right margin between the client rectangle and the layout rectangle.</td></tr>
+Gets/sets the right margin between the client rectangle and the layout rectangle.</td></tr>
 <tr>
 <td>
 BottomMargin</td><td>
-Gets / sets the bottom margin between the client rectangle and the layout rectangle.</td></tr>
+Gets/sets the bottom margin between the client rectangle and the layout rectangle.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -164,7 +169,7 @@ this.borderLayout1.BottomMargin = 20;
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -178,23 +183,25 @@ Me.borderLayout1.BottomMargin = 20
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img11.jpeg)
 
 
 
 {% seealso %}
 
-[Configuring BorderLayout](/windowsforms/layoutmanagers/borderlayout#configuring-borderlayout), [Configuring FlowLayout](/windowsforms/layoutmanagers/flowlayout#configuring-flowlayout), [Configuring GridLayout](/windowsforms/layoutmanagers/gridlayout#configuring-gridlayout)
+[Configuring BorderLayout](/windowsforms/layoutmanagers/borderlayout#configuring-borderlayout), [Configuring FlowLayout](/windowsforms/layoutmanagers/flowlayout#configuring-flowlayout), [Configuring GridLayout.](/windowsforms/layoutmanagers/gridlayout#configuring-gridlayout)
 
 {% endseealso %}
 
-## Child Control Settings
+## Child control settings
 
 The Child control settings for the Layout Managers are given below.
 
 ### Size
 
-### Preferred Size
+### Preferred size
 
 The Layout Managers usually layout the components based on their preferred sizes. But a .NET control does not provide information regarding it's preferred size. To overcome this, a PreferredSize extended property is provided for each Child control at design time.
 
@@ -217,9 +224,9 @@ GetPreferredSize</td><td>
 Retrieves the preferred size associated with the specified control.</td></tr>
 </table>
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.cardLayout1.SetPreferredSize(this.button1, new System.Drawing.Size(75, 92));
@@ -227,14 +234,16 @@ this.cardLayout1.SetPreferredSize(this.button1, new System.Drawing.Size(75, 92))
 {% endhighlight  %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.cardLayout1.SetPreferredSize(Me.button1, New System.Drawing.Size(75, 92))
 
 {% endhighlight  %}
 
-### Minimum Size
+{% endtabs %}
+
+### Minimum size
 
 You can similarly associate a minimum size for a Child component through the MinimumSize extended property. However, some Layout Managers ignore this setting. Refer to the individual Layout Managers for more information on how the size plays an important part in the layout logic.
 
@@ -258,15 +267,15 @@ Retrieves the minimum size associated with the specified control.</td></tr>
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.cardLayout1.SetMinimumSize(this.button1, new System.Drawing.Size(75, 92));
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -274,14 +283,15 @@ Me.cardLayout1.SetMinimumSize(Me.button1, New System.Drawing.Size(75, 92))
 
 {% endhighlight %}
 
+{% endtabs %}
 
 You can also dynamically provide preferred and minimum size information for a Child component at run time. The manner in which a Layout Manager determines the preferred size for a Child control is illustrated below.
 
-* The layout manager checks if the Child control / component implements the IProvideLayoutInformation interface. If so, it calls into that interface to retrieve the preferred size.
+* The layout manager checks if the Child control/component implements the IProvideLayoutInformation interface. If so, it calls into that interface to retrieve the preferred size.
 * If the above step fails, the Layout Manager fires the ProvideLayoutInformation event, requesting the size information required. If the event is handled and the information provided, that size will be used.
 * If the above step fails, the Layout Manager checks if a preferred size was provided statically during design time using the extended PreferredSize property or in code using the SetPreferredSize() method. If so, that size is used. If not, the current size of the Child control is made the preferred size and that size will be used.
 
-![](Overview_images/Overview_img12.jpeg) 
+![](Overview_images/Overview_img12.jpeg)
 
 
 
