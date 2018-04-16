@@ -28,66 +28,52 @@ GroupCheckChanged</td><td>
 This event is fired when the Checked property of the RadioButtonAdv in the group changes.</td></tr>
 </table>
 
-## CheckChanged Event
+## CheckChanged event
 
 This event is fired when the Checked property of the RadioButtonAdv changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void radioButtonAdv1_CheckChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" CheckChanged event is raised");
-
+    Console.WriteLine(" CheckChanged event is raised");
 }
 
-
 {% endhighlight %}
-{% highlight vbnet %}
 
-
+{% highlight vb %}
 
 Private Sub radioButtonAdv1_CheckChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" CheckChanged event is raised")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
-### GroupCheckChanged Event
+### GroupCheckChanged event
 
 This event is fired when the Checked property of the RadioButtonAdv in the group changes.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void radioButtonAdv1_GroupCheckChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" GroupCheckChanged event is raised");
-
+    Console.WriteLine(" GroupCheckChanged event is raised");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub radioButtonAdv1_GroupCheckChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" GroupCheckChanged event is raised")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}

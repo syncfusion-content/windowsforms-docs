@@ -33,29 +33,20 @@ AutoScrollMinSize</td><td>
 It sets the minimum logical size for the AutoScroll region.</td></tr>
 </table>
 
-
-
-
+{% tabs %}
 {% highlight C# %}
 
-
 this.popupControlContainer1.AutoScroll = true;
-
 this.popupControlContainer1.AutoScrollMargin = new System.Drawing.Size(2, 2);
-
 this.popupControlContainer1.AutoScrollMinSize = new System.Drawing.Size(3, 3);
 
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.popupControlContainer1.AutoScroll = True
-
 Me.popupControlContainer1.AutoScrollMargin = New System.Drawing.Size(2, 2)
-
 Me.popupControlContainer1.AutoScrollMinSize = New System.Drawing.Size(3, 3)
+
 {% endhighlight %}
+{% endtabs %}
