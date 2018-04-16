@@ -11,8 +11,6 @@ documentation: ug
 
 The size of the PercentTextBox control can be set according to the needs of the user using the properties discussed below.
 
-
-
 <table>
 <tr>
 <th>
@@ -28,28 +26,20 @@ MinimumSize</td><td>
 Gets / sets the minimum size for the control.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
 this.percentTextBox1.MaximumSize = new System.Drawing.Size(100, 25);
-
 this.percentTextBox1.MinimumSize = new System.Drawing.Size(100, 25);
+
 {% endhighlight %}
 
-
-
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.percentTextBox1.MaximumSize = New System.Drawing.Size(100, 25)
-
 Me.percentTextBox1.MinimumSize = New System.Drawing.Size(100, 25)
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](PercentTextBox-Images/Overview_img485.png) 
