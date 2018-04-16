@@ -7,29 +7,27 @@ control: Editors Package
 documentation: ug
 ---
 
-# How to display single column in a ListBox?
+# How to Display Single Column in a ListBox
 
 To turn off showing multiple columns in a ListBox, follow the below given steps.
 
 1. Access the GridListControl and set its MultiColumn property to False.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-        // Turns off  multiple columns display.
+// Turns off  multiple columns display.
+this.multiColumnBoundCombo.ListBox.MultiColumn = false;
 
-		this.multiColumnBoundCombo.ListBox.MultiColumn = false;
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% highlight vb %}
 
-   ~~~ vbnet
+' Turns off  multiple columns display.
+Me.multiColumnBoundCombo.ListBox.MultiColumn = False
 
-        ' Turns off  multiple columns display.
-
-		Me.multiColumnBoundCombo.ListBox.MultiColumn = False
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 2. The dropdown will then simply show the first column in the bound datasource (the combo's DisplayMember property will not be consulted here). Make sure that in your SQL query, the desired column to be shown in the drop-down is the first one.
 

@@ -11,8 +11,6 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-
-
 <table>
 <tr>
 <th>
@@ -54,31 +52,24 @@ This event occurs when the Border3DStyle property is changed. The Border3DStyl
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void numericUpDownExt1_Border3DStyleChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" Border3DStyleChanged event is raised ");
-
+    Console.WriteLine(" Border3DStyleChanged event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub numericUpDownExt1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" Border3DStyleChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## BorderColorChanged
 
@@ -86,31 +77,24 @@ This event occurs when the BorderColor property is changed. The BorderColor pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void numericUpDownExt1_BorderColorChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" BorderColorChanged event is raised ");
-
+    Console.WriteLine(" BorderColorChanged event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub numericUpDownExt1_BorderColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" BorderColorChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## BorderSidesChanged
 
@@ -118,32 +102,24 @@ This event occurs when the BorderSides property is changed. The BorderSides pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void numericUpDownExt1_BorderSidesChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" BorderSidesChanged event is raised ");
-
+    Console.WriteLine(" BorderSidesChanged event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub numericUpDownExt1_BorderSidesChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" BorderSidesChanged event is raised ")
-
 End Sub
 
-
 {% endhighlight %}
+{% endtabs %}
 
 ## BorderStyleChanged
 
@@ -151,31 +127,24 @@ This event occurs when the BorderStyle property is changed. The BorderStyle pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void numericUpDownExt1_BorderStyleChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" BorderStyleChanged event is raised ");
-
+    Console.WriteLine(" BorderStyleChanged event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub numericUpDownExt1_BorderStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" BorderStyleChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## ReadOnlyChanged
 
@@ -183,32 +152,24 @@ This event occurs when the ReadOnly property is changed. The ReadOnly property
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void numericUpDownExt1_ReadOnlyChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" ReadOnlyChanged event is raised ");
-
+    Console.WriteLine(" ReadOnlyChanged event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub numericUpDownExt1_ReadOnlyChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" ReadOnlyChanged event is raised ")
-
 End Sub
 
-
 {% endhighlight %}
+{% endtabs %}
 
 ## ThemeChanged
 
@@ -216,32 +177,24 @@ This event occurs when the ThemesEnabled property is changed. The ThemesEnable
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void numericUpDownExt1_ThemeChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" ThemeChanged event is raised ");
-
+    Console.WriteLine(" ThemeChanged event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub numericUpDownExt1_ThemeChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" ThemeChanged event is raised ")
-
 End Sub
 
-
 {% endhighlight %}
+{% endtabs %}
 
 ## ValueChanged
 
@@ -249,28 +202,21 @@ This event occurs when the Value property is changed. The Value property gets 
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void numericUpDownExt1_ValueChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" ValueChanged event is raised ");
-
+    Console.WriteLine(" ValueChanged event is raised ");
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub numericUpDownExt1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" ValueChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}

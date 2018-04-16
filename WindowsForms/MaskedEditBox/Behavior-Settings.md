@@ -10,11 +10,9 @@ documentation: ug
 
 The behavior settings of the MaskedEditBox control are discussed below.
 
-### Prompt and Padding Character Settings
+### Prompt and padding character settings
 
 MaskedEditBox control allows you to add prompt characters in the input.
-
-
 
 <table>
 <tr>
@@ -57,11 +55,8 @@ Gets / sets the integer version of the PassivePromptCharacter.</td></tr>
 {% highlight C# %}  
 
 this.maskedEditBox1.AllowPrompt = true;
-
 this.maskedEditBox.PaddingCharacterInt = 0;
-
 this.maskedEditBox1.PromptCharacterInt = 37;
-
 this.maskedEditBox1.PassivePromptCharacterInt = 47;
 
 {% endhighlight %}
@@ -69,11 +64,8 @@ this.maskedEditBox1.PassivePromptCharacterInt = 47;
 {% highlight VB %} 
 
 Me.maskedEditBox1.AllowPrompt = True
-
 Me.maskedEditBox.PaddingCharacterInt = 0
-
 Me.maskedEditBox1.PromptCharacterInt = 37
-
 Me.maskedEditBox1.PassivePromptCharacterInt = 47
 
 {% endhighlight %}

@@ -9,27 +9,29 @@ documentation: ug
 
 # Styling and Customization
 
-## Drop Down Styling
+## Drop-down styling
 
-### Check Box Selection
+### Check box selection
 
 Checkboxes in drop down list can be enabled for multiple items selection through the ShowCheckBox property. 
 
 ![7](Overview_images/Overview_img344.png) 
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.ShowCheckBox = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.ShowCheckBox = True
 
 {% endhighlight %}
+{% endtabs %}
 
-### Grouping Header Background
+### Grouping header background
 
 Grouping Header background color can be customized using GroupHeaderBackColor property.
 
@@ -37,19 +39,21 @@ Grouping Header background color can be customized using GroupHeaderBackColor pr
 
 The following code sample illustrates you on how to customize Group Header background color.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.GroupHeaderBackColor = Color.White;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.GroupHeaderBackColor = Color.White
 
 {% endhighlight %}
+{% endtabs %}
 
-### Grouping Header ForeColor
+### Grouping header ForeColor
 
 Grouping Header text color can be customized using GroupHeaderForeColor property.
 
@@ -57,19 +61,21 @@ Grouping Header text color can be customized using GroupHeaderForeColor property
 
 The following code sample illustrates you on how to customize Group Header ForeColor.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.GroupHeaderForeColor = Color.White;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.GroupHeaderForeColor = Color.White
 
 {% endhighlight %}
+{% endtabs %}
 
-### Grouping Header Separator Color
+### Grouping header separator color
 
 Grouping Header Separator Color can be customized using GroupHeaderSeparatorColor property.
 
@@ -77,93 +83,103 @@ Grouping Header Separator Color can be customized using GroupHeaderSeparatorColo
 
 The following code sample illustrates you on how to customize Group Header Separator Color.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.GroupHeaderSeperatorColor = Color.White;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.GroupHeaderSeperatorColor = Color.White
 
 {% endhighlight %}
+{% endtabs %}
 
-### Item Height
+### Item height
 
 Drop down item height can be customized by using ItemsHeight property.
 
 The following code sample illustrates you on how to customize drop down items height.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.ItemsHeight = 25;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.ItemsHeight = 25
 
 {% endhighlight %}
+{% endtabs %}
 
-### Drop Down Height
+### Drop-down height
 
 Drop down window height can be customized by using DropDownHeight property.
 
 The following code sample illustrates you on how to customize drop down window height.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.DropDownHeight = 125;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.DropDownHeight = 125
 
 {% endhighlight %}
+{% endtabs %}
 
-### Drop Down Width
+### Drop-down width
 
 Drop down window width can be customized by using DropDownWidth property.
 
 The following code sample illustrates you on how to customize drop down window width.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.DropDownWidth = 125;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.DropDownWidth = 125
 
 {% endhighlight %}
+{% endtabs %}
 
-### Maximum Number of Drop Down Items
+### Maximum number of drop-down items
 
 Maximum number of drop down items to display can be customized by using MaxDropDownItems property.
 
 The following code sample illustrates you on how to customize number of drop down items.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.MaxDropDownItems = 5;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.MaxDropDownItems = 5
 
 {% endhighlight %}
+{% endtabs %}
 
-## Text Block Styling
+## Text block styling
 
-### Visual Item Back Color
+### Visual item back color
 
 Visual Item background color can be customized using VisualItemBackColor property.
 
@@ -171,19 +187,21 @@ Visual Item background color can be customized using VisualItemBackColor propert
 
 The following code sample illustrates you on how to customize Visual Item Back Color.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.VisualItemBackColor = Color.White;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.VisualItemBackColor = Color.White
 
 {% endhighlight %}
+{% endtabs %}
 
-### Visual Item Fore Color
+### Visual item fore color
 
 Visual Item Fore Color can be customized using VisualItemForeColor property.
 
@@ -191,19 +209,21 @@ Visual Item Fore Color can be customized using VisualItemForeColor property.
 
 The following code sample illustrates you on how to customize Visual Item Fore Color.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.VisualItemForeColor = Color.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.VisualItemForeColor = Color.Black
 
 {% endhighlight %}
+{% endtabs %}
 
-### Visual Item Selection Color
+### Visual item selection color
 
 Visual Item Back Color upon selection can be customized using VisualItemSelectionColor property.
 
@@ -211,19 +231,21 @@ Visual Item Back Color upon selection can be customized using VisualItemSelectio
 
 The following code sample illustrates you on how to customize Visual Item Back Color upon selection.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.VisualItemForeColor = Color.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.VisualItemForeColor = Color.Black
 
 {% endhighlight %}
+{% endtabs %}
 
-### Visual Item Border Color
+### Visual item border color
 
 Visual Item Border Color can be customized using VisualItemBorderColor property.
 
@@ -231,19 +253,21 @@ Visual Item Border Color can be customized using VisualItemBorderColor property.
 
 The following code sample illustrates you on how to customize Visual Item Border Color.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.VisualItemBorderColor = Color.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.VisualItemBorderColor = Color.Black
 
 {% endhighlight %}
+{% endtabs %}
 
-### Delimiter Character
+### Delimiter character
 
 Upon selecting multiple items from its drop down list, each selected item is separated by user defined delimiter character.
 
@@ -251,16 +275,18 @@ Upon selecting multiple items from its drop down list, each selected item is sep
 
 The following code sample illustrates you on how to set delimiter character.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.DelimiterChar = ",";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.DelimiterChar = ","
 
 {% endhighlight %}
+{% endtabs %}
 
 N> Delimiter character needs to be single special characters like “,” “.”

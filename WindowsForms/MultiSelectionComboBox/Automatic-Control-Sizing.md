@@ -18,17 +18,19 @@ The control size is increased with respect to its height upon adding Visual Item
 
 The following code sample illustrates you on how to set AutoSizeMode as Vertical.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Vertical;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Vertical 
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Horizontal
 
@@ -39,17 +41,19 @@ The control size is increased with respect to its width upon adding Visual Item,
 
 The following code sample illustrates you on how to set AutoSizeMode as Horizontal.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Horizontal;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Horizontal
 
 {% endhighlight %}
+{% endtabs %}
 
 ## None
 
@@ -60,14 +64,17 @@ The control size is only increased up to pre-defined size and once VisualItem si
 
 The following code sample illustrates you on how to set AutoSizeMode as None.
 
+{% tabs %}
 {% highlight c# %}
 
 this.MultiSelectionComboBox1.AutoSizeMode = AutoSizeMode.None;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.MultiSelectionComboBox1.AutoSizeMode = AutoSizeMode.None
 
 {% endhighlight %}
+{% endtabs %}
+
