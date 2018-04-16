@@ -13,8 +13,6 @@ This section discusses the display settings of the PercentTextBox control.
 
 The PercentTextBox provides a list of properties to set the display characteristics of the percentage.
 
-
-
 <table>
 <tr>
 <th>
@@ -54,61 +52,39 @@ PercentSymbol</td><td>
 Gets / sets the percent symbol which represents the Percentage.</td></tr>
 </table>
 
-
 The grouping size of the percent digits can be set using the Int32 Collection Editor which will be displayed on selecting thePercentGroupSizes property in the property grid.
 
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 this.percentTextBox1.PercentDecimalDigits = 3;
-
 this.percentTextBox1.PercentDecimalSeparator = ".";
-
 this.percentTextBox1.PercentGroupSeparator = ",";
-
 this.percentTextBox1.PercentGroupSizes = new int[] {5};
-
 this.percentTextBox1.PercentNegativePattern = 2;
-
 this.percentTextBox1.NegativeSign = "-";
-
 this.percentTextBox1.PercentPositivePattern = 2;
-
 this.percentTextBox1.PercentSymbol = "%";
+
 {% endhighlight %}
 
-
-
-
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.percentTextBox1.PercentDecimalDigits = 3
-
 Me.percentTextBox1.PercentDecimalSeparator = "."
-
 Me.percentTextBox1.PercentGroupSeparator = ","
-
 Me.percentTextBox1.PercentGroupSizes = New Integer() {5}
-
 Me.percentTextBox1.PercentNegativePattern = 2
-
 Me.percentTextBox1.NegativeSign = "-";
-
 Me.percentTextBox1.PercentPositivePattern = 2
-
 Me.percentTextBox1.PercentSymbol = "%"
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 The following screen shot illustrates the above settings.
 
  ![](PercentTextBox-Images/Overview_img465.png) 
-
-
 
 A sample which demonstrates the Display Settings of PercentTextBox control is available in the below sample installation path.
 

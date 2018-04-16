@@ -11,8 +11,6 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-
-
 <table>
 <tr>
 <th>
@@ -44,7 +42,6 @@ ValidationError</td><td>
 This event occurs when the input text is invalid for the current state of the control.</td></tr>
 </table>
 
-
 ## BindableValueChanged
 
 This event occurs when the BindableValue property is changed. The BindableValue property is a wrapper property that indicates the value. This property can be used to set the value of the control to 'Null'.
@@ -56,11 +53,8 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}
 
 private void integerTextBox1_BindableValueChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" BindableValueChanged event is raised ");
-
+    Console.WriteLine(" BindableValueChanged event is raised ");
 }
 
 {% endhighlight %}
@@ -68,17 +62,12 @@ Console.WriteLine(" BindableValueChanged event is raised ");
 {% highlight VB %}
 
 Private Sub integerTextBox1_BindableValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" BindableValueChanged event is raised ")
-
-
 End Sub
-
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## ClipTextChanged
 
@@ -91,11 +80,8 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}
 
 private void integerTextBox1_ClipTextChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" ClipTextChanged event is raised ");
-
+    Console.WriteLine(" ClipTextChanged event is raised ");
 }
 
 {% endhighlight %}
@@ -103,9 +89,7 @@ Console.WriteLine(" ClipTextChanged event is raised ");
 {% highlight VB %}
 
 Private Sub integerTextBox1_ClipTextChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" ClipTextChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -123,11 +107,8 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}
 
 private void integerTextBox1_FormattedTextChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" FormattedTextChanged event is raised ");
-
+    Console.WriteLine(" FormattedTextChanged event is raised ");
 }
 
 {% endhighlight %}
@@ -135,9 +116,7 @@ Console.WriteLine(" FormattedTextChanged event is raised ");
 {% highlight VB %}
 
 Private Sub integerTextBox1_FormattedTextChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" FormattedTextChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -155,11 +134,8 @@ The event handler receives an argument of type EventArgs containing data relat
 {% highlight C# %}
 
 private void integerTextBox1_IntegerValueChanged(object sender, EventArgs e)
-
 {
-
-Console.WriteLine(" IntegerValueChanged event is raised ");
-
+    Console.WriteLine(" IntegerValueChanged event is raised ");
 }
 
 {% endhighlight %}
@@ -167,9 +143,7 @@ Console.WriteLine(" IntegerValueChanged event is raised ");
 {% highlight VB %}
 
 Private Sub integerTextBox1_IntegerValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 Console.WriteLine(" IntegerValueChanged event is raised ")
-
 End Sub
 
 {% endhighlight %}
@@ -198,17 +172,13 @@ NullValue</td><td>
 Returns the NULL value.</td></tr>
 </table>
 
-
 {% tabs %}
 
 {% highlight C# %}
 
 private void integerTextBox1_SetNull(object sender, Syncfusion.Windows.Forms.Tools.SetNullEventArgs e)
-
 {
-
-Console.WriteLine(" SetNull event is raised ");
-
+    Console.WriteLine(" SetNull event is raised ");
 }
 
 {% endhighlight %}
@@ -216,23 +186,18 @@ Console.WriteLine(" SetNull event is raised ");
 {% highlight VB %}
 
 Private Sub integerTextBox1_SetNull(ByVal sender As Object, ByVal e AsSyncfusion.Windows.Forms.Tools.SetNullEventArgs)
-
 Console.WriteLine(" SetNull event is raised ")
-
 End Sub
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
 ## ValidationError
 
 This event occurs when the input text is invalid for the current state of the control.
 
 The event handler receives an argument of type ValidationErrorArgs containing data related to this event. The following ValidationErrorArgs members provide information specific to this event.
-
-
 
 <table>
 <tr>
@@ -259,11 +224,8 @@ Returns the location of the invalid input in the invalid text.</td></tr>
 {% highlight C# %}
 
 private void integerTextBox1_ValidationError(object sender, Syncfusion.Windows.Forms.Tools.ValidationErrorArgs e)
-
 {
-
-Console.WriteLine(" ValidationError event is raised ");
-
+    Console.WriteLine(" ValidationError event is raised ");
 }
 
 {% endhighlight %}
@@ -271,9 +233,7 @@ Console.WriteLine(" ValidationError event is raised ");
 {% highlight VB %}
 
 Private Sub integerTextBox1_ValidationError(ByVal sender As Object, ByVal e AsSyncfusion.Windows.Forms.Tools.ValidationErrorArgs)
-
 Console.WriteLine(" ValidationError event is raised ")
-
 End Sub
 
 {% endhighlight %}

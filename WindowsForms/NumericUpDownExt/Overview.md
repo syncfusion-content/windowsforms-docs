@@ -13,8 +13,6 @@ The NumericUpDownExt control enables XP Themes look and feel for the UpDown co
 
 ![](NumericUpDownExt_images/NumericUpDownExt_img1.png)
 
-
-
 ## Features
 
 NumericUpDownExt is an advanced NumericUpdown control and has the following features.
@@ -65,7 +63,7 @@ Themed appearance can be provided for the NumericUpDownExt control.
 
 The appearance of the control can be enhanced by applying the Office2007 visual style. It also comes with the new Office 20007 themes in the blue, silver and black colors.
 
-### Key Features
+### Key features
 
 * Provides XP Themes look and feel.
 * Provides themes border.

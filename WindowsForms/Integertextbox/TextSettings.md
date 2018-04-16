@@ -13,8 +13,6 @@ This section discusses the text settings of the IntegerTextBox control.
 
 The text associated with the IntegerTextBox control can be set and customized using the below given settings.
 
-
-
 <table>
 <tr>
 <th>
@@ -47,13 +45,9 @@ Returns the clipped text without the formatting.</td></tr>
 
 {% highlight C# %}
 
-
 this.integerTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
 this.integerTextBox1.SelectedText = "-12345678";
-
 this.integerTextBox1.SelectAllOnFocus = true;
-
 this.integerTextBox1.ClipText = "12";
 
 {% endhighlight %}
@@ -61,11 +55,8 @@ this.integerTextBox1.ClipText = "12";
 {% highlight VB %}
 
 Me.integerTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-
 Me.integerTextBox1.SelectedText = "-12345678"
-
 Me.integerTextBox1.SelectAllOnFocus = true
-
 Me.integerTextBox1.ClipText = "12"
 
 {% endhighlight %}
@@ -80,8 +71,6 @@ Me.integerTextBox1.ClipText = "12"
 
 
 The methods associated with the above properties are given below.
-
-
 
 <table>
 <tr>
@@ -114,7 +103,7 @@ SelectAll</td><td>
 Selects all text in the TextBox.</td></tr>
 </table>
 
-## Clip Mode
+## Clip mode
 
 The formatting for the text can be enabled or disabled by using the property given below.
 
@@ -135,7 +124,6 @@ IncludeFormatting and ExcludeFormatting.</td></tr>
 
 {% highlight C# %}
 
-
 this.integerTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.IncludeFormatting;
 
 {% endhighlight %}
@@ -148,10 +136,9 @@ Me.integerTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.I
 
 {% endtabs %}
 
-## Formatted Text
+## Formatted text
 
 Formatted text can be displayed using the below given property.
-
 
 <table>
 <tr>
@@ -168,7 +155,6 @@ Returns the formatted text with the formatting.</td></tr>
 {% tabs %}
 
 {% highlight C# %}
-
 
 this.integerTextBox1.FormattedText = "Hello";
 
@@ -204,7 +190,6 @@ N> The RightToLeft property will be automatically set to 'True' for RTL langu
 {% tabs %}
 
 {% highlight C# %}
-
 
 this.integerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
@@ -251,11 +236,8 @@ Indicates whether to show the overflow indicator tooltip.</td></tr>
 
 {% highlight C# %}
 
-
 this.integerTextBox1.OverflowIndicatorToolTipText = "Overflow";
-
 this.integerTextBox1.ShowOverflowIndicator = true;
-
 this.integerTextBox1.ShowOverflowIndicatorToolTip = true;
 
 {% endhighlight %}
@@ -263,9 +245,7 @@ this.integerTextBox1.ShowOverflowIndicatorToolTip = true;
 {% highlight VB %}
 
 Me.integerTextBox1.OverflowIndicatorToolTipText = "Overflow"
-
 Me.integerTextBox1.ShowOverflowIndicator = True
-
 Me.integerTextBox1.ShowOverflowIndicatorToolTip = True
 
 {% endhighlight %}

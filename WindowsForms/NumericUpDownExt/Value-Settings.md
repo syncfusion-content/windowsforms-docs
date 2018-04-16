@@ -11,8 +11,6 @@ documentation: ug
 
 The various Values of the NumericUpDownExt control and their settings are given below.
 
-
-
 <table>
 <tr>
 <th>
@@ -40,38 +38,27 @@ Increment</td><td>
 Gets / sets the value to increment or decrement the spin box (also known as an up-down control) when the up or down buttons are clicked. The default value is set to '1'.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.numericUpDownExt1.Value = new decimal(new int[] {25, 0, 0, 0});
-
 this.numericUpDownExt1.Hexadecimal = true;
-
 this.numericUpDownExt1.Minimum = new decimal(new int[] {50, 0, 0, 0});
-
 this.numericUpDownExt1.Increment = new decimal(new int[] {5, 0, 0, 0});
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.numericUpDownExt1.Value = New Decimal(New Integer() {25, 0, 0, 0})
-
 Me.numericUpDownExt1.Hexadecimal = True
-
 Me.numericUpDownExt1.Minimum = New Decimal(New Integer() {50, 0, 0, 0})
-
 Me.numericUpDownExt1.Increment = New Decimal(New Integer() {5, 0, 0, 0})
 
 {% endhighlight %}
+{% endtabs %}
 
 The methods associated with the above properties are given below.
-
-
 
 <table>
 <tr>
@@ -87,5 +74,3 @@ Decrements the value of the spin box (also known as an up-down control).</td></t
 UpButton</td><td>
 Increments the value of the spin box (also known as an up-down control).</td></tr>
 </table>
-
-

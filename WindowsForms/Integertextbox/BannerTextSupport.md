@@ -16,9 +16,7 @@ The IntegerTextBox control can display banner text in the text field, at run tim
 {% highlight C# %}
 
 this.integerTextBox1.AllowNull = true;
-
 this.integerTextBox1.NullString = "";
-
 this.integerTextBox1.Text = "";
 
 {% endhighlight %}
@@ -26,11 +24,8 @@ this.integerTextBox1.Text = "";
 {% highlight VB %}
 
 Me.integerTextBox1.AllowNull = True
-
 Me.integerTextBox1.NullString = ""
-
 Me.integerTextBox1.Text = ""
 
 {% endhighlight %}
-
 {% endtabs %}
