@@ -7,7 +7,7 @@ control: Editors Package
 documentation: ug
 ---
 
-# Creating Simple Popup
+# Creating Simple Pop-up
 
 This section deals with creating a simple popup with the help of PopupControlContainer control.
 
@@ -17,38 +17,28 @@ The PopupControlContainer control provides full support for the Windows Forms de
 
  ![](Container-Control-Images/Overview_img356.jpeg) 
 
-
-
 The PopupControlContainer can be created programmatically as follows.
 
 1. Include the Shared.Base assembly reference to Reference folder.
 2. Create an instance of PopupControlContainer and add to the Form.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+private Syncfusion.Windows.Forms.PopupControlContainer popupControlContainer1;
+this.popupControlContainer1=new Syncfusion.Windows.Forms.PopupControlContainer();
+this.Controls.Add(this.popupControlContainer1);
 
+{% endhighlight %}
 
-		private Syncfusion.Windows.Forms.PopupControlContainer popupControlContainer1;
+{% highlight vb %}
 
-		this.popupControlContainer1=new Syncfusion.Windows.Forms.PopupControlContainer();
+Private popupControlContainer1 As Syncfusion.Windows.Forms.PopupControlContainer
+Me.popupControlContainer1 = New Syncfusion.Windows.Forms.PopupControlContainer()
+Me.Controls.Add(Me.popupControlContainer1)
 
-		this.Controls.Add(this.popupControlContainer1);
-
-   ~~~
-   {:.prettyprint}
-
-   ~~~ vbnet
-
-
-
-		Private popupControlContainer1 As Syncfusion.Windows.Forms.PopupControlContainer
-
-		Me.popupControlContainer1 = New Syncfusion.Windows.Forms.PopupControlContainer()
-
-		Me.Controls.Add(Me.popupControlContainer1)
-
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+{% endtabs %}
 
 3. We can add child controls to the PopupControlContainer and associate it as a popup for other controls like RichTextBox. Refer How to show PopupControlContainer as the popup for a RichTextBox control? topic.
 
