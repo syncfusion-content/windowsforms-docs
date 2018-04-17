@@ -11,8 +11,6 @@ documentation: ug
 
 Themes can be applied to the PercentTextBox control using the property given below.
 
-
-
 <table>
 <tr>
 <th>
@@ -26,27 +24,21 @@ Specifies whether or not to use XP themes when BorderStyle  property is set to 
 
 N> Refer [Border Settings](/windowsforms/percenttextbox/bordersettings) topic to know about the BorderStyle property.
 
-
-
-
+{% tabs %}
 {% highlight C# %}
 
-
 this.percentTextBox1.ThemesEnabled = true;
+
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.percentTextBox1.ThemesEnabled = true
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](PercentTextBox-Images/Overview_img487.png) 
-
 
 A Sample which demonstrates the ThemesEnabled property of the PercentTextBox control is available in the below sample installation path.
 

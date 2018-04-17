@@ -7,7 +7,6 @@ control: Tools
 documentation: ug
 ---
 
-
 # Key Settings
 
 Sometimes there may be some situation for entering large values, like in Mega, Kilo etc., In such situations, if we add some sort of keyboard support, it will be very much useful for the users.
@@ -19,71 +18,50 @@ For example if the user wants to enter 32000, he just needs to enter 32 and then
 {% highlight C# %}
 
 private void integerTextBox1_KeyDown(object sender, KeyEventArgs e)
-
 {
-
-long v = integerTextBox1.IntegerValue;
-
-switch(e.KeyCode)
-
-{
+    long v = integerTextBox1.IntegerValue;
+    switch(e.KeyCode)
+    {
 
 // Enter the value as multiples of thousand.
-
-case Keys.G : v = v * 1000000000;
-
-break;
-
-case Keys.M : v = v * 1000000;
-
-break;
-
-case Keys.K : v = v * 1000;
-
-break;
-
-}
-
-integerTextBox.IntegerValue = v;
-
+        case Keys.G : v = v * 1000000000;
+        break;
+        
+        case Keys.M : v = v * 1000000;
+        break;
+        
+        case Keys.K : v = v * 1000;
+        break;
+    }
+    integerTextBox.IntegerValue = v;
 }
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-
 Private Sub integerTextBox1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-
 Dim v As Long = integerTextBox1.IntegerValue
-
 Select e.KeyCode
 
 ' Enter the value as multiples of thousand.
-
 Case Keys.G
-
 v = v * 1000000000
 
 Case Keys.M
-
 v = v * 1000000
 
 Case Keys.K
-
 v = v * 1000
-
 End Select
-
 integerTextBox1.IntegerValue = v
-
 End Sub
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Shortcut Keys
+## Shortcut keys
 
 Sometimes there may be some situations for incrementing or decrementing the value in the IntegerTextBox. In such situations, it is better to use shortcut keys.
 
@@ -94,29 +72,19 @@ The following implementation will illustrate how this can be achieved. Here we a
 {% highlight C# %}
 
 private void integerTextBox1_KeyDown(object sender, KeyEventArgs e)
-
 {
-
-long v = integerTextBox1.IntegerValue;
-
-switch(e.KeyCode)
-
-{
+    long v = integerTextBox1.IntegerValue;
+    switch(e.KeyCode)
+    {
 
 // Increments and decrements values.
-
-case Keys.Up : v++;
-
-break;
-
-case Keys.Down : v--;
-
-break;
-
-}
-
-integerTextBox1.IntegerValue = v;
-
+        case Keys.Up : v++;
+        break;
+        
+        case Keys.Down : v--;
+        break;
+    }
+    integerTextBox1.IntegerValue = v;
 }
 
 {% endhighlight %}
@@ -124,25 +92,17 @@ integerTextBox1.IntegerValue = v;
 {% highlight VB %}
 
 Private Sub integerTextBox1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-
 Dim v As Long = integerTextBox1.IntegerValue
-
 Select e.KeyCode
 
 ' Increments and decrements values.
-
 Case Keys.Up
-
 v = v+1
 
 Case Keys.Down
-
 v = v-1
-
 End Select
-
 integerTextBox1.IntegerValue = v
-
 End Sub
 
 {% endhighlight %}

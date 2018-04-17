@@ -13,7 +13,7 @@ This section discusses the various states of the RadioButtonAdv control and the 
 
 It includes the below given topics.
 
-## RadioButtonAdv States
+## RadioButtonAdv states
 
 The RadioButtonAdv can be displayed in two different states which have been described below.
 
@@ -30,21 +30,21 @@ Checked</td><td>
 Gets / sets the check state of the RadioButton.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.radioButtonAdv1.Checked = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.radioButtonAdv1.Checked = True
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/Overview_img632.jpeg)
-
 
 {%seealso%}
 
@@ -52,7 +52,7 @@ RadioButtonAdv Values, Image Settings, RadioButtonAdv Events
 
 {%endseealso%}
 
-## RadioButtonAdv Values
+## RadioButtonAdv values
 
 This section discusses how values can be associated with the various check states.
 
@@ -87,38 +87,27 @@ IntValue</td><td>
 Gets / sets checked RadioButtonAdv in current container according to the TabIndex.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.radioButtonAdv1.CheckedInt = 3;
-
 this.radioButtonAdv1.CheckedString = "RadioButtonAdv is Checked";
-
 this.radioButtonAdv1.UncheckedInt = 3;
-
 this.radioButtonAdv1.UncheckedString = "RadioButtonAdv is Unchecked";
-
 this.radioButtonAdv1.IntValue = 5;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.CheckedInt = 3
-
 Me.radioButtonAdv1.CheckedString = "RadioButtonAdv is Checked"
-
 Me.radioButtonAdv1.UncheckedInt = 3
-
 Me.radioButtonAdv1.UncheckedString = "RadioButtonAdv is Unchecked"
-
 Me.radioButtonAdv1.IntValue = 5
 
 {% endhighlight %}
+{% endtabs %}
 
 {%seealso%}
 

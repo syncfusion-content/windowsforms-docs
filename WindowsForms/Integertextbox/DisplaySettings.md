@@ -13,8 +13,6 @@ This section discusses the display settings of the IntegerTextBox control.
 
 The IntegerTextBox provides a list of properties to set the display characteristics associated with the integer value.
 
-
-
 <table>
 <tr>
 <th>
@@ -41,17 +39,13 @@ Gets / sets the sign that is to be used to indicate a negative value.</td></tr>
 
 The grouping size of the number digits can be set using the Int32 Collection Editor which will be displayed on selecting theNumberGroupSizes property in the property grid.
 
-
 {% tabs %}
 
 {% highlight C# %}
 
 this.integerTextBox1.NumberGroupSeparator = "/";
-
 this.integerTextBox1.NumberGroupSizes = new int[] { 5 };
-
 this.integerTextBox1.NumberNegativePattern = 2;
-
 this.integerTextBox1.NegativeSign = "-";
 
 {% endhighlight %}
@@ -59,11 +53,8 @@ this.integerTextBox1.NegativeSign = "-";
 {% highlight VB %}
 
 Me.integerTextBox1.NumberGroupSeparator = "/"
-
 Me.integerTextBox1.NumberGroupSizes = New Integer() {5}
-
 Me.integerTextBox1.NumberNegativePattern = 2
-
 Me.integerTextBox1.NegativeSign = "-"
 
 {% endhighlight %}
@@ -77,10 +68,9 @@ A Sample which demonstrates the Display Settings of IntegerTextBox control is av
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-## Value Settings
+## Value settings
 
 The various values of the IntegerTextBox control and their settings are given below.
-
 
 <table>
 <tr>
@@ -106,9 +96,7 @@ Wrapper property that indicates the value. This property can be used to set the
 {% highlight C# %}
 
 this.integerTextBox1.IntegerValue = ((long)(777));
-
 this.integerTextBox1.DefaultValue = 0;
-
 this.integerTextBox1.BindableValue = 777;
 
 {% endhighlight %}
@@ -116,9 +104,7 @@ this.integerTextBox1.BindableValue = 777;
 {% highlight VB %}
 
 Me.integerTextBox1.IntegerValue = (CLng(777))
-
 Me.integerTextBox1.DefaultValue = 0
-
 Me.integerTextBox1.BindableValue = 777
 
 {% endhighlight %}
@@ -128,10 +114,9 @@ Me.integerTextBox1.BindableValue = 777
 ![](Overview_images/Overview_img443.png) 
 
 
-## Null Value Settings
+## Null value settings
 
 There are various settings that can be applied to the IntegerTextBox control when the value of the control is set to 'Null'. These settings are illustrated below.
-
 
 <table>
 <tr>
@@ -156,13 +141,11 @@ AllowNull</td><td>
 Specifies whether the control can be Nulled,Null String will be set when the control becomes null.</td></tr>
 </table>
 
-
 {% tabs %}
 
 {% highlight C# %}
 
 this.integerTextBox1.NullString = "Null Value";
-
 this.integerTextBox1. AllowNull = true;
 
 {% endhighlight %}
@@ -170,7 +153,6 @@ this.integerTextBox1. AllowNull = true;
 {% highlight VB %}
 
 Me.integerTextBox1.NullString = "Null Value"
-
 Me.integerTextBox1. AllowNull = True
 
 {% endhighlight %}
@@ -180,7 +162,7 @@ Me.integerTextBox1. AllowNull = True
 ![](Overview_images/Overview_img444.png) 
 
 
-## Min and Max Value Settings
+## Min and max value settings
 
 The minimum and maximum values of the IntegerTextBox can be set using the below given properties.
 
@@ -199,24 +181,18 @@ MinValue</td><td>
 Gets / sets the minimum value that can be set through the IntegerTextBox. The default value is set to '-9223372036854775808'.</td></tr>
 </table>
 
-
 {% tabs %}
 
 {% highlight C# %}
 
-
 this.integerTextBox1.MaxValue = 9223372036854775807;
-
 this.integerTextBox1.MinValue = -9223372036854775808;
 
 {% endhighlight %}
 
-
 {% highlight  VB %}
 
-
 Me.integerTextBox1.MaxValue = 9223372036854775807
-
 Me.integerTextBox1.MinValue = -9223372036854775808
 
 {% endhighlight %}

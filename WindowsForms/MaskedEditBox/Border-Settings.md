@@ -12,8 +12,6 @@ The border settings of the MaskedEditBox control are discussed in this section.
 
 The wide variety of border options that are available for the MaskedEditBox control are given below.
 
-
-
 <table>
 <tr>
 <th>
@@ -41,13 +39,9 @@ Indicates whether the edit control should have a border. The options included ar
 
 {% highlight C# %}  
 
-
 this.maskedEditBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump;
-
 this.maskedEditBox1.BorderColor = System.Drawing.Color.Lime;
-
 this.maskedEditBox1.BorderSides = System.Windows.Forms.Border3DSide.All;
-
 this.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 {% endhighlight %}
@@ -55,11 +49,8 @@ this.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 {% highlight VB %} 
 
 Me.maskedEditBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Bump
-
 Me.maskedEditBox1.BorderColor = System.Drawing.Color.Magenta
-
 Me.maskedEditBox1.BorderSides = System.Windows.Forms.Border3DSide.All
-
 Me.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
@@ -67,8 +58,6 @@ Me.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img17.png)
-
-
 
 A Sample which demonstrates the Border Settings of MaskedEditBox control is available in the below sample installation path.
 
