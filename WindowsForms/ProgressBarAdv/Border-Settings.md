@@ -7,16 +7,16 @@ control: ProgressBarAdv
 documentation: ug
 ---
 
-# Border Settings
+# Border settings
 
 This section discusses the border settings of the ProgressBarAdv control.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv Property</th><th>
+ProgressBarAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -36,7 +36,9 @@ BorderStyle</td><td>
 Determines the style of the border. It includes the following options.FixedSingle,Fixed3D andNone.</td></tr>
 </table>
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.progressBarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedOuter;
 
@@ -48,7 +50,7 @@ this.progressBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.progressBarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedOuter 
 
@@ -60,6 +62,8 @@ Me.progressBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
-![](Overview_images/Overview_img23.jpeg) 
+{% endtabs %}
+
+![](Overview_images/Overview_img23.jpeg)
 
 

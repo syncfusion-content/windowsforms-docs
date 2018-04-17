@@ -11,8 +11,6 @@ documentation: ug
 
 The PivotGrid control is a powerful cell-oriented, extensible grid control that simulates the pivot table feature of Excel. The PivotGrid, as the name implies, pivots data to be organized in a cross-tabulated form. The major advantage of PivotGrid is that you can extract the desired information from a large list within seconds. Along with presenting the data, the PivotGrid also enables you to summarize and group the data.
 
-![Overview](Overview_images/Overview.png)
-
 ## Key Features
 
 The important features of the PivotGrid control are listed below:

@@ -6,17 +6,17 @@ platform: WindowsForms
 control: DateTimePicker
 documentation: ug
 ---
-# Child Controls
+# Child controls
 
 DateTimePickerAdv has child controls like DropDown, Updown arrows, checkbox. This section discusses the properties which controls the appearance and behavior of these controls.
 
 ![](DateTimePicker_images/Overview_img183.jpeg)
 
-## UpDown and DropDown Buttons
+## UpDown and DropDown buttons
 
 This section discusses the properties of DateTimePickerAdv control which customizes the UpDown and DropDown buttons.
 
-### UpDown Buttons
+### UpDown buttons
 
 The below properties controls the appearance and behavior of the UpDown buttons.
 
@@ -24,7 +24,7 @@ The below properties controls the appearance and behavior of the UpDown buttons.
 <table>
 <tr>
 <th>
-DateTimePickerAdv Properties</th><th>
+DateTimePickerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -41,17 +41,18 @@ Specifies whether the UpDown button will have VS-like look.</td></tr>
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 this.dateTimePickerAdv2.ShowUpDown = true;
 
 this.dateTimePickerAdv2.ShowUpDownOnFocus = true;
 
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -59,8 +60,9 @@ this.dateTimePickerAdv2.ShowUpDownOnFocus = true;
 Me.dateTimePickerAdv2.ShowUpDown = True
 
 Me.dateTimePickerAdv2.ShowUpDownOnFocus = True
-{% endhighlight   %}
+{% endhighlight %}
 
+{% endtabs %}
 
 In the below image, when focus is on button control, the updown button is hidden. In the second image, DateTimePickerAdv is focused and the UpDown button is shown.
 
@@ -76,19 +78,19 @@ In the below image, when focus is on button control, the updown button is hidden
 
 
 
-### DropDown Button
+### DropDown button
 
 DropDown button in the DateTimePickerAdv is visible by default. To hide the dropdown button set ShowDropDown property to false. The below are the properties available, to change the default appearance of the control.
 
-### Color Settings
+### Color settings
 
-At run time, drop down button can be in normal mode, pressed mode or in selected mode. Different colors can be set for different modes.
+At run time, drop-down button can be in normal mode, pressed mode or in selected mode. Different colors can be set for different modes.
 
 
 <table>
 <tr>
 <th>
-DateTimePickerAdv Properties</th><th>
+DateTimePickerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -106,9 +108,9 @@ Gets or Sets the dropdown back color in Selected mode, i.e, when a date is selec
 
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 this.dateTimePickerAdv2.DropDownNormalColor = System.Drawing.Color.LightBlue;
 
 this.dateTimePickerAdv2.DropDownPressedColor = System.Drawing.Color.Goldenrod;
@@ -116,8 +118,9 @@ this.dateTimePickerAdv2.DropDownPressedColor = System.Drawing.Color.Goldenrod;
 this.dateTimePickerAdv2.DropDownSelectedColor = System.Drawing.Color.SteelBlue;
 
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -127,31 +130,38 @@ Me.dateTimePickerAdv2.DropDownNormalColor = System.Drawing.Color.LightBlue
 Me.dateTimePickerAdv2.DropDownPressedColor = System.Drawing.Color.Goldenrod
 
 Me.dateTimePickerAdv2.DropDownSelectedColor = System.Drawing.Color.SteelBlue
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 N> These settings will be effective only when DateTimePickerAdv.Style is Office2003, OfficeXP and VS2005.
 
 ![](DateTimePicker_images/Overview_img188.jpeg)
 
 
 
-### Flat Appearance
+### Flat appearance
 
 Dropdown can be given flat appearance using FlatDropDown property. By default it is false.
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C#  %}
 this.dateTimePickerAdv2.FlatDropButton = true;
 
-{% endhighlight   %}
+{% endhighlight %}
 
-{% highlight vbnet  %}
+{% highlight VB %}
 
 
 
 this.dateTimePickerAdv2.FlatDropButton = true;
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N> These setting will be effective only when DateTimePickerAdv.Style is Default.
 
@@ -163,21 +173,25 @@ N> These setting will be effective only when DateTimePickerAdv.Style is Default.
 
 When the dropdown button is clicked, the calendar pops up, based on the alignment specified in DropDownAlign property. Default value is Left.
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C#  %}
 
 this.dateTimePickerAdv1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
 
 
 Me.dateTimePickerAdv1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](DateTimePicker_images/Overview_img191.jpeg) 
@@ -192,7 +206,7 @@ The existing dropdown icon can be replaced with a custom image using the below p
 <table>
 <tr>
 <th>
-DateTimePickerAdv Properties</th><th>
+DateTimePickerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -204,9 +218,9 @@ StretchDropDownImage</td><td>
 Specifies whether the image of the dropdown is stretched.</td></tr>
 </table>
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C#  %}
 
 
 this.dateTimePickerAdv1.DropDownImage = ((System.Drawing.Image)(resources.GetObject("dateTimePickerAdv1.DropDownImage")));
@@ -215,15 +229,19 @@ this.dateTimePickerAdv1.StretchDropDownImage = true;
 
 
 
-{% endhighlight   %}
-{% highlight vbnet %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
 Me.dateTimePickerAdv1.DropDownImage = DirectCast((resources.GetObject("dateTimePickerAdv1.DropDownImage")), System.Drawing.Image) 
 
 Me.dateTimePickerAdv1.StretchDropDownImage = True 
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](DateTimePicker_images/Overview_img192.jpeg) 
@@ -247,16 +265,18 @@ Me.dateTimePickerAdv1.StretchDropDownImage = True
 By default the DateTimePicker control has a checkbox in checked state. This checkbox can be hidden using ShowCheckBox property and the state can be unchecked through designer, using Checked property.
 
 
+{% tabs %}
 
+{% highlight C#  %}
 
-{% highlight c#  %}
 this.dateTimePickerAdv1.ShowCheckBox = false;
 
 this.dateTimePickerAdv5.Checked = false;
 
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -264,7 +284,10 @@ this.dateTimePickerAdv5.Checked = false;
 Me.dateTimePickerAdv1.ShowCheckBox = False
 
 Me.dateTimePickerAdv5.Checked = False
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](DateTimePicker_images/Overview_img194.jpeg) 
@@ -278,7 +301,7 @@ Me.dateTimePickerAdv5.Checked = False
  
 
 
-## Text Field
+## Text field
 
 This section discusses the properties related to Checkbox and text field in the DateTimePicker control.
 
@@ -286,16 +309,17 @@ This section discusses the properties related to Checkbox and text field in the 
 
 By default the DateTimePicker control has a checkbox in checked state. This checkbox can be hidden using ShowCheckBox property and the state can be unchecked through designer, using Checked property.
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C#  %}
 
 this.dateTimePickerAdv1.ShowCheckBox = false;
 
 this.dateTimePickerAdv5.Checked = false;
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -305,20 +329,22 @@ Me.dateTimePickerAdv1.ShowCheckBox = False
 
 Me.dateTimePickerAdv5.Checked = False
 
-{% endhighlight  %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](DateTimePicker_images/Overview_img195.jpeg) 
 
 
-### Text Field Formatting
+### Text field formatting
 
-Format and CustomFormat properties are used to format the text field. Below are the details
+Format and CustomFormat properties are used to format the text field.
 
 
 <table>
 <tr>
 <th>
-DateTimePickerAdv Properties</th><th>
+DateTimePickerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -331,9 +357,9 @@ Specifies the custom format, when the Format is set to 'Custom'.  For example, I
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C#  %}
 
 //Sets "Long" format for the text field
 
@@ -362,8 +388,9 @@ this.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy";
 
 
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 'Sets "Long" format for the text field
@@ -390,7 +417,9 @@ Me.dateTimePickerAdv5.Format = System.Windows.Forms.DateTimePickerFormat.Custom
 
 Me.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy"
 
-{% endhighlight   %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](DateTimePicker_images/Overview_img196.jpeg) 
 
@@ -400,21 +429,24 @@ Me.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy"
 
 We can specify spacing for the text field in the control, (ex: between month, year and date) using Spacing property. Default value is 0.
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 this.dateTimePickerAdv1.Spacing = 5;
 
 
 
-{% endhighlight   %}
+{% endhighlight %}
 
-{% highlight c#  %}
+{% highlight C# %}
 Me.dateTimePickerAdv1.Spacing = 5
 
 
-{% endhighlight   %}
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](DateTimePicker_images/Overview_img197.jpeg) 
 
 
@@ -425,9 +457,11 @@ N> The text field can be refreshed programmatically by calling DateTimePickerAdv
   Navigating between Fields, UpDown and DropDown Buttons
 {% endseealso %}
  
-### Navigation to Next field
+### Navigation to next field
 
-By default, we have to move the cursor manually, to next field while giving input value in `Value` field of DateTimePickerAdv. Using the property `AutoForwarding` of DatePickerAdv, the cursor will move automatically to next field without using navigation keys. Following code example illustrate the same,
+By default, we have to move the cursor manually, to next field while giving input value in `Value` field of DateTimePickerAdv. Using the property `AutoForwarding` of DatePickerAdv, the cursor will move automatically to next field without using navigation keys.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -441,12 +475,13 @@ Me.dateTimePickerAdv1.AutoForwarding = True
 
 {% endhighlight %}
 
+{% endtabs %}
 
-###  Null Value Settings
+###  Null value settings
 
-At run time, on clicking the "None" button of the popup calendar, "No date is selected" string will be displayed in the text field like the below image. 
+At run time, on clicking the "None" button of the popup calendar, "No date is selected" string will be displayed in the text field like the below image.
 
-![](DateTimePicker_images/Overview_img199.jpeg) 
+![](DateTimePicker_images/Overview_img199.jpeg)
 
 
 
@@ -456,7 +491,7 @@ This default string can be changed using NullString property. Below table descri
 <table>
 <tr>
 <th>
-DateTimePickerAdv Properties</th><th>
+DateTimePickerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -469,7 +504,7 @@ Specifies Backspace or Delete keys makes the date null.  EnableNullDate must be 
 <tr>
 <td>
 NullString</td><td>
-Specifies the text visible when there is no date selected.  EnableNullDate must be set to true to make this setting effective.</td></tr>
+Specifies the text visible when there is no date selected. EnableNullDate must be set to true to make this setting effective.</td></tr>
 <tr>
 <td>
 NullModeKeyReset</td><td>
@@ -481,9 +516,9 @@ Set this to true, if you want to display null value ({{ 'String specified in Nul
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 this.dateTimePickerAdv1.EnableNullDate = true;
 
@@ -495,8 +530,9 @@ this.dateTimePickerAdv1.NullModeKeyReset = Syncfusion.Windows.Forms.Tools.NullMo
 
 
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -507,7 +543,10 @@ Me.dateTimePickerAdv1.EnableNullKeys = True
 Me.dateTimePickerAdv1.NullString = "Null Value"
 
 Me.dateTimePickerAdv1.NullModeKeyReset = Syncfusion.Windows.Forms.Tools.NullModeKeyReset.NumericKeys
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](DateTimePicker_images/Overview_img200.jpeg) 

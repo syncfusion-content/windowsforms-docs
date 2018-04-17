@@ -12,7 +12,7 @@ documentation: ug
 
 SpellCheckerAdv control offers Microsoft Office style spell checking capabilities to your Windows Application. This component is completely customizable and can be attached to any text-editing controls. End users can also use it together with the standard Microsoft text-editing controls.
 
-Suggested word from the ListBox can be replaced with the error word by double clicking on that word.
+Suggested word from the ListBox can be replaced with the error word by double-clicking on that word.
 
 ![](Overview_images/Overview.png)
 

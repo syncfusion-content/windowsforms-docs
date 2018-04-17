@@ -7,39 +7,39 @@ control: HTML UI
 documentation: ug
 ---
 
-# Control Events
+# Control events
 
 HTMLUI control comes with a rich set of events to help the application developer in keeping track of the execution. These events are programmed based on the Event arguments containing data related to the event.
 
 The events executed by the HTMLUI control are as follows:
 
-* [LinkClicked Event](#linkclicked-event)
-* [LoadStarted Event](#loadstarted-event)
-* [LoadFinished Event](#loadfinished-event)
-* [LoadError Event](#loaderror-event)
-* [PreRenderDocument Event](#prerenderdocument-event)
-* [ShowTitleChanged Event](#showtitlechanged-event)
-* [TitleChanged Event](#titlechanged-event)
-* [Border3DStyleChanged Event](#border3dstylechanged-event)
-* [BorderColorChanged Event](#bordercolorchanged-event)
-* [BorderSingleChanged Event](#bordersinglechanged-event)
-* [BorderSidesChanged Event](#bordersideschanged-event)
-* [BorderStyleChanged Event](#borderstylechanged-event)
+* [LinkClicked event](#linkclicked-event)
+* [LoadStarted event](#loadstarted-event)
+* [LoadFinished event](#loadfinished-event)
+* [LoadError event](#loaderror-event)
+* [PreRenderDocument event](#prerenderdocument-event)
+* [ShowTitleChanged event](#showtitlechanged-event)
+* [TitleChanged event](#titlechanged-event)
+* [Border3DStyleChanged event](#border3dstylechanged-event)
+* [BorderColorChanged event](#bordercolorchanged-event)
+* [BorderSingleChanged event](#bordersinglechanged-event)
+* [BorderSidesChanged event](#bordersideschanged-event)
+* [BorderStyleChanged event](#borderstylechanged-event)
 
 
 
-### LinkClicked Event
+### LinkClicked event
 
 This event is raised after the hyperlink is clicked and before the hyperlink tries to load a new resource. The event properties associated with the Link Forward Event Arguments are as follows.
 
 
 
-* Cancel: A boolean value which indicates whether the default processing of resource loading should be canceled or not
-* Path: Specifies the location of the resource
+* Cancel: A boolean value which indicates whether the default processing of resource loading should be canceled or not.
+* Path: Specifies the location of the resource.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -65,7 +65,8 @@ private void htmluiControl1_LinkClicked(object sender, Syncfusion.Windows.Forms.
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
@@ -89,11 +90,15 @@ End Sub
 
 {% endhighlight %}
 
-### LoadStarted Event
+{% endtabs %}
+
+### LoadStarted event
 
 This event is raised when a new HTML document has started loading into the HTMLUI control from the specified resource.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -113,7 +118,7 @@ private void htmluiControl1_LoadStarted(object sender, System.EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -131,13 +136,15 @@ End Sub
 
 {% endhighlight %}
 
-### LoadFinished Event
+{% endtabs %}
+
+### LoadFinished event
 
 This event is raised after the loading of HTML document inside the HTMLUI control is completed.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -157,7 +164,7 @@ private void htmluiControl1_LoadFinished(object sender, System.EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -175,17 +182,19 @@ End Sub
 
 {% endhighlight %}
 
-### LoadError Event
+{% endtabs %}
 
-This event is raised when an error occurs during loading or rendering an HTML document from the specified resource. The LoadErrorEventArgs contains the following property that defines the data related to the action of this event. 
+### LoadError event
 
-
-
-* Document:Specifies the document whose rendering triggers the execution of the LoadError event
+This event is raised when an error occurs during loading or rendering an HTML document from the specified resource. The LoadErrorEventArgs contains the following property that defines the data related to the action of this event.
 
 
 
-{% highlight c# %}
+* Document:Specifies the document whose rendering triggers the execution of the LoadError event.
+
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -205,7 +214,7 @@ private void htmluiControl1_LoadError(object sender, Syncfusion.Windows.Forms.HT
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -223,13 +232,15 @@ End Sub
 
 {% endhighlight %}
 
-### PreRenderDocument Event
+{% endtabs %}
+
+### PreRenderDocument event
 
 This event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -251,7 +262,7 @@ private void htmluiControl1_PreRenderDocument(object sender, Syncfusion.Windows.
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -271,19 +282,21 @@ End Sub
 
 {% endhighlight %}
 
-### ShowTitleChanged Event
+{% endtabs %}
+
+### ShowTitleChanged event
 
 This event is raised after the ShowTitle property of the HTMLUI control is changed. The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the ShowTitleChanged event handling.
 
 
 
-* Empty-Gets the instance of the class that is found to be empty or having null value
-* newValue-Indicates the current value of the ShowTitle property
-* oldValue-Indicates the old value of the ShowTitle property
+* Empty-Gets the instance of the class that is found to be empty or having null value.
+* newValue-Indicates the current value of the ShowTitle property.
+* oldValue-Indicates the old value of the ShowTitle property.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -303,7 +316,7 @@ private void htmluiControl1_ShowTitleChanged(object sender, ValueChangedEventArg
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -321,7 +334,9 @@ End Sub
 
 {% endhighlight %}
 
-## TitleChanged Event
+{% endtabs %}
+
+## TitleChanged event
 
 The TitleChanged event is raised after the Title property of the HTMLUI control is changed. The Title value can be set explicitly by the user or it can be extracted from the title tag of the HTML document that is to be loaded into the HTMLUI control.
 
@@ -329,12 +344,12 @@ The event handler receives its data from the ValueChangedEventArguments. The fol
 
 
 
-* newValue: Gets the new value for the Title
-* oldValue: Gets the old value that has been changed
+* newValue: Gets the new value for the Title.
+* oldValue: Gets the old value that has been changed.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -352,7 +367,7 @@ MessageBox.Show("Title Changed");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -367,18 +382,20 @@ Private Sub htmluiControl1_TitleChanged(ByVal sender As Object, ByVal e As Value
 MessageBox.Show("Title Changed")
 
 End Sub
+
 {% endhighlight %}
 
+{% endtabs %}
 
-## Border3DStyleChanged Event
+## Border3DStyleChanged event
 
 This event is handled when the value of the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
 
 The event handler receives an argument of type EventArgs.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -410,7 +427,7 @@ private void htmluiControl1_Border3DStyleChanged(object sender, EventArgs e
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -440,13 +457,17 @@ End Sub
 
 {% endhighlight %}
 
-### BorderColorChanged Event
+{% endtabs %}
+
+### BorderColorChanged event
 
 This event is handled when the value of the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -478,7 +499,7 @@ private void htmluiControl1_BorderColorChanged(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -508,13 +529,17 @@ End Sub
 
 {% endhighlight %}
 
-### BorderSingleChanged Event
+{% endtabs %}
+
+### BorderSingleChanged event
 
 This event is handled, when the value of the BorderSingle property is changed. The BorderSingle property indicates the 2D border style.
 
 The event handler receives an argument of type EventArgs.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -546,7 +571,7 @@ private void htmluiControl1_BorderSingleChanged(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -576,13 +601,17 @@ End Sub
 
 {% endhighlight %}
 
-### BorderSidesChanged Event
+{% endtabs %}
+
+### BorderSidesChanged event
 
 This event is fired, when the value of the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -610,7 +639,7 @@ private void htmluiControl1_BorderSidesChanged(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -636,13 +665,17 @@ End Sub
 
 {% endhighlight %}
 
-### BorderStyleChanged Event
+{% endtabs %}
+
+### BorderStyleChanged event
 
 This event is fired when the value of the BorderStyle property is changed. The BorderStyle property indicates whether the panel should have a border.
 
 The event handler receives an argument of type EventArgs.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -670,7 +703,7 @@ private void htmluiControl1_BorderStyleChanged(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
  
@@ -696,7 +729,9 @@ End Sub
 
 {% endhighlight %}
 
-## HTMLUI Control Events Sample
+{% endtabs %}
+
+## HTMLUI control events sample
 
 This sample illustrates the different events executed by the HTMLUI control.
 

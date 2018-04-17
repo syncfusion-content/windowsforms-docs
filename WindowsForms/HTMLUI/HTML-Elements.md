@@ -7,9 +7,9 @@ control: HTML UI
 documentation: ug
 ---
 
-# HTML Elements
+# HTML elements
 
-HTMLUI supports various elements in an HTML document for rendering and presenting them to the user and also allows the user to dynamically access the elements to produce rich, customized user interfaces. Each HTML element defines properties and methods which can be used for customization.  
+HTMLUI supports various elements in an HTML document for rendering and presenting them to the user and also allows the user to dynamically access the elements to produce rich, customized user interfaces. Each HTML element defines properties and methods which can be used for customization.
 
 The property SupportedEvents and the method MergeSupportedEvents are common to most HTML elements.
 
@@ -19,9 +19,9 @@ The property SupportedEvents and the method MergeSupportedEvents are common to m
 
 This property returns an array of events supporting the element.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -35,7 +35,7 @@ this.label1.Text = this.br.SupportedEvents.Length.ToString();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -55,7 +55,11 @@ The MergeSupportedEvents method is used to merge the standard and special events
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -79,7 +83,7 @@ MessageBox.Show("After Merging:" + this.txt.SupportedEvents.Length.ToString());
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -103,7 +107,9 @@ MessageBox.Show("After Merging:" + Me.txt.SupportedEvents.Length.ToString())
 
 {% endhighlight %}
 
-## Element Types
+{% endtabs %}
+
+## Element types
 
 The following are the various HTML elements supported by Essential HTMLUI.
 
@@ -158,7 +164,7 @@ The following are the various HTML elements supported by Essential HTMLUI.
 </table>
 
 
-## A - Anchor Element
+## A - Anchor element
 
 The A element is used in creating links to another document or in creating bookmarks within the same document. This element is defined by the &lt;a&gt; tag in the HTML code. The AElementImpl class contains the properties and methods related to this element. Some of the important properties and methods are listed below:
 
@@ -170,9 +176,9 @@ The A element is used in creating links to another document or in creating bookm
 * HoverFormat:Gets the format of the A element when the user hovers the mouse pointer over the link.
 * VisitedFormat: Gets the format of the A element visited recently.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -188,7 +194,7 @@ this.label1.Text = "\nA(IsVisited and VisitedFormat):" + this.a.IsVisited.ToStri
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -208,33 +214,35 @@ Private Me.label1.Text=Constants.vbLf & "A(IsVisited and VisitedFormat):" & Me.a
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Methods
 
 * ResetVisited: Excludes the element from the list containing the visited links.
 
 
 
-## B - Bold Element
+## B - Bold element
 
 The B element is responsible for formatting the specified text in bold style. The BElementImpl class contains the properties and methods of this element. The SUBElementImpl and SUPElementImpl classes are also responsible to bold elements. They also contain the properties and methods for the element's behavior.
 
-## BODY Element
+## BODY element
 
 The BODY element forms the main section in the HTMLUI because this element contains all the other elements and details regarding their position and properties. The BODYElementImpl class contains the properties and methods for this element.
 
-## BR - Break Element
+## BR - Break element
 
-The BR element is used for inserting a line break after a particular line. This is implemented using the <br> tag in the HTML document. The BRElementImpl class contains the properties and methods for this element's behavior. 
+The BR element is used for inserting a line break after a particular line. This is implemented using the <br> tag in the HTML document. The BRElementImpl class contains the properties and methods for this element's behavior.
 
 
 
 ### Properties
 
-* IsVisible: Gets / sets a Boolean value to indicate whether the control is shown / hidden.
+* IsVisible: Gets/sets a Boolean value to indicate whether the control is shown/hidden.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -248,7 +256,7 @@ this.label1.Text = "\nBR(IsVisible):" + this.br.IsVisible.ToString();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -262,15 +270,17 @@ Me.label1.Text = Constants.vbLf & "BR(IsVisible):" & Me.br.IsVisible.ToString()
 
 {% endhighlight %}
 
-## CODE Element
+{% endtabs %}
+
+## CODE element
 
 The CODE element is used in marking the specified text as a computer code, formatted using mono spaced font. It uses the CODElementImpl class which contains the properties and methods determining the element's behavior.
 
-## CUSTOM Element
+## CUSTOM element
 
 The CUSTOM element is used in creating the custom tags as determined by the user. The CUSTOMElementImpl class is responsible for the custom controls declared by the <custom> tag in the HTML document and contains the element's properties and methods.
 
-## DIV - Division Element
+## DIV - Division element
 
 The DIV element divides the given page into logical sections. The DIVElementImpl class contains the properties and methods that describe the behavior of the DIV element.
 
@@ -280,15 +290,15 @@ The EM element is responsible for emphasizing a specific text, usually in italic
 
 
 
-## FONT Element
+## FONT element
 
 The FONT element is used for changing the font face, size and color of the specified text. The <font> tag is used to specify the FONT element in the HTML code. The FONTElementImpl class determines the properties and methods used by this element.
 
-## FORM Element
+## FORM element
 
 The FORM element creates a form for user input. A form can contain text fields, check boxes, radio buttons and other form fields. The FORMElementImpl class is used to determine the properties and methods of this element.
 
-## H1 - H6 Header Elements
+## H1 - H6 Header elements
 
 * The H1 element is used to define a header. The H1 element produces the largest header. The H1ElementImpl class is used in determining the properties and methods of the H1 element.
 
@@ -314,23 +324,23 @@ The FORM element creates a form for user input. A form can contain text fields, 
 
 
 
-## HEAD Element
+## HEAD element
 
 The HEAD element contains information regarding the document like the title of the document, links to the style sheets, and so on. The HEADElementImpl class is used to specify the properties and methods of the head element.
 
-## HTML Element
+## HTML element
 
 The HTML element is used to specify that the document is an HTML document. It is mentioned by the <html> tag in the HTML document. The properties and methods of this element are defined in the HTMLElementImpl class.
 
-## HR - Horizontal Rule Element
+## HR - Horizontal rule element
 
 The HR element is used in creating horizontal rules. The HRElementImpl class contains the methods and properties for this element.
 
-## I - Italics Element
+## I - Italics element
 
 The I element is used in formatting the specified text in italics. The IElementImpl class is used in determining the properties and methods for the I element.
 
-## IMG - Image Element
+## IMG - Image element
 
 The IMG element is used in defining and applying an image in the document wherever needed. The <img> tag is used for this. The properties and methods of this element is defined in the IMGElementImpl class.
 
@@ -340,9 +350,9 @@ Properties
 
 * Image: Gets the bitmap of the image that represents this element
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -360,7 +370,7 @@ this.label1.Text ="\nIMG(Image)" + this.img.Image.PhysicalDimension.ToString();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -374,7 +384,9 @@ Me.label1.Text =Constants.vbLf & "IMG(Image)" & Me.img.Image.PhysicalDimension.T
 
 {% endhighlight %}
 
-## INPUT Element
+{% endtabs %}
+
+## INPUT element
 
 The INPUT element is used for getting input from the user. It can be a text box, a button element or a check box which is determined by the type attribute of the <input> tag in the HTML document. The INPUTElementImpl class is used in determining the methods and properties for this element.
 
@@ -382,11 +394,11 @@ The INPUT element is used for getting input from the user. It can be a text box,
 
 ### Properties
 
-* UserControl: Gets / sets the user control instance for the particular input element declared by the user
+* UserControl: Gets/sets the user control instance for the particular input element declared by the user.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -400,7 +412,7 @@ this.txt.UserControl.CustomControl.Text = "This is a textBox";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -414,26 +426,28 @@ Me.txt.UserControl.CustomControl.Text = "This is a textBox"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Methods
 
-* InfillFromXMLElement: Detects the type of control from the type attribute and creates that control
+* InfillFromXMLElement: Detects the type of control from the type attribute and creates that control.
 
 
 
-## LI - List Element
+## LI - List element
 
 The LIST element is used to define a list item. The LIElementImpl class is used to determine the properties and methods for this element. There are two types of lists that are supported by HTMLUI.
 
 
 
-* OL Element: Ordered List Element
-* UL Element: Unordered List Element
+* OL Element: Ordered List Element.
+* UL Element: Unordered List Element.
 
 
 
-## LINK Element
+## LINK element
 
-The LINK element is used to define links to other documents, style sheets, and so on. The LinkElementImpl is used to determine the methods and properties for the link element. 
+The LINK element is used to define links to other documents, style sheets, and so on. The LinkElementImpl is used to determine the methods and properties for the link element.
 
 
 
@@ -441,11 +455,11 @@ The LINK element is used to define links to other documents, style sheets, and s
 
 
 
-* IsVisible: Gets / sets a value indicating whether the link is shown / hidden
+* IsVisible: Gets/sets a value indicating whether the link is shown/hidden.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -459,7 +473,7 @@ this.label1.Text = "\nLink(IsVisible):" + this.link.IsVisible.ToString();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ‘Get the value indicating whether the link is visible or not.
 
@@ -471,29 +485,31 @@ Me.label1.Text = Constants.vbLf & "Link(IsVisible):" & Me.link.IsVisible.ToStrin
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Methods
 
 
 
-* GetCssStream:Returns a stream CSS data of the link element
+* GetCssStream:Returns a stream CSS data of the link element.
 
 
 
-## OL - Ordered List Element
+## OL - Ordered list element
 
 The OL element is used in generating an ordered list as specified by the user. The properties and methods of this element are defined in the OLElementImpl class.
 
-## P - Paragraph Element
+## P - Paragraph element
 
 The P element is used to define a paragraph in the document. The user can determine the properties and methods for the P element by invoking the PElementImpl class.
 
-## PRE - Pre formatted Element
+## PRE - Pre formatted element
 
 The PRE element defines pre formatted text. The text enclosed in the pre element usually preserves the spaces and line breaks. The enclosed text appears exactly as in the HTML document. The properties and methods for this element can be determined from the PREElementImpl class.
 
 
 
-## SCRIPT Element
+## SCRIPT element
 
 The SCRIPT element is used to define scripts to the HTML document. This makes the document self-contained. It does not require any other external ways to define the operation of the document's elements. The SCRIPTElementImpl class is used to determine the properties and methods for this element.
 
@@ -503,11 +519,11 @@ The SCRIPT element is used to define scripts to the HTML document. This makes th
 
 
 
-* IsVisible: Gets / sets a value indicating whether the script is shown / hidden
+* IsVisible: Gets/sets a value indicating whether the script is shown/hidden.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -521,7 +537,7 @@ this.label1.Text = "\nScript(IsVisible):" + this.script.IsVisible.ToString();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -535,15 +551,17 @@ Private Me.label1.Text = Constants.vbLf & "Script(IsVisible):" & Me.script.IsVis
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Methods
 
 
 
-* GetScriptCode: Gets the string format of the script code
+* GetScriptCode: Gets the string format of the script code.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -551,7 +569,7 @@ MessageBox.Show("ScriptCode:\n" + this.script.GetScriptCode().ToString());
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -559,7 +577,9 @@ MessageBox.Show("ScriptCode:" & Constants.vbLf+Me.script.GetScriptCode().ToStrin
 
 {% endhighlight %}
 
-## SELECT Element
+{% endtabs %}
+
+## SELECT element
 
 The SELECT element is used to define a drop-down list. The user can specify the number of items to include in the drop-down list. The SELECTElementImpl class defines the properties and methods for this element.
 
@@ -569,11 +589,11 @@ The SELECT element is used to define a drop-down list. The user can specify the 
 
 
 
-* UserControl: Gets / sets the user control instance to the particular element
+* UserControl: Gets/sets the user control instance to the particular element.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -587,7 +607,7 @@ this.label1.Text = "\nSelect(UserControl):" + this.UserControl.DefaultSize.ToStr
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -601,21 +621,23 @@ Me.label1.Text = Constants.vbLf & "Select(UserControl):" & Me.Select.UserControl
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Methods
 
 * InfillFromXMLElement: Detects the type of control and creates the particular control
 
 
 
-## SPAN Element
+## SPAN element
 
 The SPAN element is used to group inline elements in the document and create custom character styles. The SPANElementImpl class is used to determine the properties and methods for the span element.
 
-## STRONG Element
+## STRONG element
 
 The STRONG element is used to emphasize the specified text, usually in bold. The STRONGElementImpl class is used to define the properties and methods for the strong element.
 
-## STYLE Element
+## STYLE element
 
 The STYLE element is used to implement custom style in a document. It occurs inside the head section. An external style sheet is linked by using the <link> tag in a HTML document. The StyleElementImpl class is invoked for defining the properties and methods of the style element.
 
@@ -625,11 +647,11 @@ The STYLE element is used to implement custom style in a document. It occurs ins
 
 
 
-* IsVisible: Gets / sets a value indicating whether the link is shown / hidden
+* IsVisible: Gets/sets a value indicating whether the link is shown/hidden.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -643,7 +665,7 @@ this.label1.Text = "\nLink(IsVisible):" + link.IsVisible.ToString();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -657,15 +679,17 @@ Private Me.label1.Text = Constants.vbLf & "Link(IsVisible):" &  link.IsVisible.T
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Methods
 
 
 
-* GetCssStream: Returns a stream of inner CSS data of the style element
+* GetCssStream: Returns a stream of inner CSS data of the style element.
 
 
 
-## TABLE Element
+## TABLE element
 
 The TABLE element is used to create tables in a document. The table element contains the TR, TD elements within it. The TABLEElementImpl class is used to determine the properties and methods for the table element.
 
@@ -673,12 +697,12 @@ The TABLE element is used to create tables in a document. The table element cont
 
 ### Properties
 
-* ColsCount: Gets / sets the number of columns present in the table
-* RowsCount: Gets / sets the number of rows present in the table
+* ColsCount: Gets/sets the number of columns present in the table.
+* RowsCount: Gets/sets the number of rows present in the table.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -694,7 +718,7 @@ this.label1.Text = "\nTable(ColsCount and RowsCount):" + table.ColsCount.ToStrin
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -708,11 +732,13 @@ Private Me.label1.Text = Constants.vbLf & "Table(ColsCount and RowsCount):" & ta
 
 {% endhighlight %}
 
-## TD - Table cell Element
+{% endtabs %}
+
+## TD - Table cell element
 
 The TD element is used to create regular cells inside a table. The TDElementImpl class contains the properties and methods for the table element.
 
-## TEXTAREA Element
+## TEXTAREA element
 
 The TEXTAREA element is used to define a multiline textbox, allowing the user to enter unlimited characters. The TEXTAREAElementImpl class is invoked to define the properties and methods of the element.
 
@@ -722,11 +748,11 @@ The TEXTAREA element is used to define a multiline textbox, allowing the user to
 
 
 
-* UserControl: Gets / sets the user control instance for the particular input element declared by the user
+* UserControl: Gets/sets the user control instance for the particular input element declared by the user.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -740,7 +766,7 @@ this.txt.UserControl.CustomControl.Text = "This is a multiline textBox";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ‘UserControl property gets the user control instance for the particular input element declared by the      '  user.
 
@@ -752,13 +778,15 @@ Private Me.txt.UserControl.CustomControl.Text= "This is a multiline textBox"
 
 {% endhighlight %}
 
-## TH - Table Head Element
+{% endtabs %}
+
+## TH - Table head element
 
 The TH element is used to create header cells inside a table. The THElementImpl class contains the properties and methods for the table header element. The text inside this element is formatted in bold, by default.
 
-## TR - Table Row Element
+## TR - Table row element
 
-The TR element is used to create rows inside a table. The TRElementImpl class contains the properties and methods for the table cell coding. 
+The TR element is used to create rows inside a table. The TRElementImpl class contains the properties and methods for the table cell coding.
 
 
 
@@ -766,12 +794,12 @@ The TR element is used to create rows inside a table. The TRElementImpl class co
 
 
 
-* CellsCount: Gets the number of cells present in the row
-* VirtualCellsCount: Gets the total number of cells including the Column panel
+* CellsCount: Gets the number of cells present in the row.
+* VirtualCellsCount: Gets the total number of cells including the Column panel.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -785,7 +813,7 @@ this.label1.Text = "TR(CellsCount and VirtualCellsCount):"+ tr.CellsCount.ToStri
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -799,13 +827,15 @@ Private Me.label1.Text = "TR(CellsCount and VirtualCellsCount):"+ tr.CellsCount.
 
 {% endhighlight %}
 
-## UL - Unordered List Element
+{% endtabs %}
+
+## UL - Unordered list element
 
 The UL element is used in generating an unordered list. The properties and methods of this element are defined in the ULElementImpl class.
 
 
 
-## U - Underline Element
+## U - Underline element
 
 The U element is used to underline the specified text. The UElementImpl class contains the properties and methods for the underline element.
 

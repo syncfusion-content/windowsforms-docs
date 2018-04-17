@@ -12,42 +12,46 @@ The Tile will animate by rotating itself in different orientation.
 
 The following code example shows how to enable rotate transition using code behind.
 
+{% tabs %}
+
 {% highlight C# %}  
 
 this.HubTile1.TileType = HubTileType.RotateTile
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.HubTile1.TileType = HubTileType.RotateTile
 
  {% endhighlight %}
  
- 
-## Horizontal Transition
+ {% endtabs %}
+
+## Horizontal transition
 
 Tile is rotated horizontally. The following image illustrates Horizontal rotation.
 
-![](Concept-and-Features_images/Concept-and-Features_img4.png) 
+![](Concept-and-Features_images/Concept-and-Features_img4.png)
 
-The following code sets Rotate Transition horizontally. 
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 this.HubTile1.RotationTransition=  TileFlipDirection.Horizontal;
 
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.HubTile1.RotationTransition = TileFlipDirection.Horizontal
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## Vertical Transition
+## Vertical transition
 
 Tile gets rotated vertically. The following image illustrates the Vertical rotation.
 
@@ -55,8 +59,7 @@ Tile gets rotated vertically. The following image illustrates the Vertical rotat
 
 
 
-
-The following code sets Rotate Transition vertically.
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -65,16 +68,19 @@ this.HubTile1.RotationTransition = TileFlipDirection.Vertical;
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.HubTile1.RotationTransition = TileFlipDirection.Vertical
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## Transition Speed
+## Transition speed
 
 In HubTile, Rotation speed can be increased or decreased by the RotationTransitionSpeed property.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -82,8 +88,10 @@ this.HubTile1.RotationTransitionSpeed = 3;
 
 {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.HubTile1.RotationTransitionSpeed = 3
 
 {% endhighlight %}
+
+{% endtabs %}

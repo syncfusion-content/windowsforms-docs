@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# Location Settings
+# Location settings
 
 This section deals with the location settings of the FolderBrowser control.
 
@@ -16,7 +16,7 @@ The FolderBrowser allows the user to provide the location from which browsing sh
 <table>
 <tr>
 <th>
-FolderBrowser Properties</th><th>
+FolderBrowser properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -65,11 +65,11 @@ FlagMask.</td></tr>
 <tr>
 <td>
 CustomStartLocation</td><td>
-Gets / sets custom start location for showing the dialog.</td></tr>
+Gets/sets custom start location for showing the dialog.</td></tr>
 <tr>
 <td>
 SelectLocation</td><td>
-Gets / sets the selected location for showing the dialog.</td></tr>
+Gets/sets the selected location for showing the dialog.</td></tr>
 <tr>
 <td>
 DirectoryPath</td><td>
@@ -78,7 +78,9 @@ Retrieves the location of the selected folder.</td></tr>
 
 N> For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'.
 
-{%highlight c#%}
+{% tabs %}
+
+{% highlight C# %}
 
 
 // Set the enumeration value FolderBrowserFolder.CustomStartLocation for Folder.StartLocation property.
@@ -95,9 +97,9 @@ this.folderBrowser1.SelectLocation = "C:\\Program Files\\Syncfusion\\Essential S
 
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight VB %}
 
 ' Set the enumeration value FolderBrowserFolder.CustomStartLocation for Folder.StartLocation property.
 
@@ -111,7 +113,9 @@ Me.folderBrowser1.CustomStartLocation = "C:"
 
 Me.folderBrowser1.SelectLocation = "C:\\Program Files\\Syncfusion\\Essential Studio"
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
  ![](Overview_images/Overview_img410.jpeg) 
  

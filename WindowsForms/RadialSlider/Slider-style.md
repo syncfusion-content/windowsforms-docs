@@ -3,18 +3,18 @@ layout: post
 title: Slider-style | WindowsForms | Syncfusion
 description: slider style
 platform: WindowsForms
-control: RadialSlider 
+control: RadialSlider
 documentation: ug
 ---
 
 # Slider style
 
-Radial Slider supports two different visual styles for its appearance through the enumeration SliderStyle: 
+Radial Slider supports two different visual styles for its appearance through the enumeration SliderStyle:
 
 * Default
 * Frame
 
-### Default Slider Style
+### Default slider style
 
 Default slider style will render the slider control with two hollow circles and a small circle as center, with its dividend ticks available as shown in the following image:
 
@@ -24,11 +24,9 @@ Default slider style will render the slider control with two hollow circles and 
 
 ![](Slider-style_images/Slider-style_img2.png)
 
+{% tabs %}
 
-
-Code sample:
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Default;
 
@@ -36,11 +34,13 @@ this.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Def
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Default
+
 {% endhighlight %}
 
+{% endtabs %}
 
 ### Frame style
 
@@ -48,9 +48,9 @@ This style will paint the background of the slider control with an HQ frame as s
 
 ![](Slider-style_images/Slider-style_img3.png)
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
    this.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame;
 
@@ -60,11 +60,11 @@ This style will paint the background of the slider control with an HQ frame as s
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
  Me.radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame
 
 {% endhighlight %}
 
-
+{% endtabs %}
 

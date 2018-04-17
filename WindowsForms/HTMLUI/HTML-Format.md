@@ -7,13 +7,13 @@ control: HTML UI
 documentation: ug
 ---
 
-# HTML Format
+# HTML format
 
 HTMLUI allows the user to apply formats to the elements at run time. The HTMLFormat class creates a format for the HTML elements displayed in the HTMLUI control. The user can apply the format on the execution of some events based on the necessity of the application.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -31,11 +31,11 @@ format.Font = new Font("Verdana", 12);
 
 format.ForeColor = Color.Blue;
 
-div.Format = format; 
+div.Format = format;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -57,11 +57,13 @@ Private div.Format = format
 
 {% endhighlight %}
 
+{% endtabs %}
+
 With HTMLUI, the user can also access the location of the elements in the HTMLUI control.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -77,7 +79,7 @@ endPoint = new Point(beginPoint.X + element.Size.Width, beginPoint.Y + element.S
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -91,7 +93,10 @@ Private endPoint = New Point(beginPoint.X + element.Size.Width, beginPoint.Y + e
 
 {% endhighlight %}
 
-## HTMLFormat Sample
+{% endtabs %}
+
+
+## HTMLFormat sample
 
 This sample shows how the styles are applied by using the HTML Format object.
 

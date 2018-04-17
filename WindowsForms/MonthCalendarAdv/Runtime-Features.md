@@ -6,11 +6,11 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Runtime Features
+# Runtime features
 
-## Selecting a Date
+## Selecting a date
 
-### Range of Selection
+### Range of selection
 
 The minimum and maximum date selectable by the calendar can be specified using MinValue and MaxValue properties. (This is similar to MinDate and MaxDate of windows MonthCalendar control).
 
@@ -19,7 +19,7 @@ The minimum and maximum date selectable by the calendar can be specified using M
 <table>
 <tr>
 <th>
-MonthCalendarAdv  Properties</th><th>
+MonthCalendarAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -36,9 +36,9 @@ Specifies the maximum value selectable by the calendar.</td></tr>
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 this.monthCalendarAdv1.Value = new System.DateTime(2008, 2, 19);
 
@@ -46,8 +46,9 @@ this.monthCalendarAdv1.MinValue = new System.DateTime(2000, 2, 21, 0, 0, 0, 0);
 
 this.monthCalendarAdv1.MaxValue = new System.DateTime(2008, 2, 21, 0, 0, 0, 0);
 
-{% endhighlight   %}
-{% highlight vbnet %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -59,9 +60,11 @@ Me.monthCalendarAdv1.MinValue = New System.DateTime(2000, 2, 21, 0, 0, 0, 0)
 
 Me.monthCalendarAdv1.MaxValue = New System.DateTime(2008, 2, 21, 0, 0, 0, 0)
 
-{% endhighlight  %}
+{% endhighlight %}
 
-When we drag and drop a MonthCalendarAdv control, current system date, i.e, today's date will be selected by default. To change the selected date, DateTime Collection Editor is used, which is invoked using SelectedDates property. 
+{% endtabs %}
+
+When we drag and drop a MonthCalendarAdv control, current system date, i.e, today's date will be selected by default. To change the selected date, DateTime Collection Editor is used, which is invoked using SelectedDates property.
 
 ![](CalendarDateTime_images/Overview_img160.jpeg)
 
@@ -69,16 +72,16 @@ When we drag and drop a MonthCalendarAdv control, current system date, i.e, toda
 
 N> It is possible to set color for the highlighted date. See_ Text Settings _topic for details.
 
-### Multiple Selection at run time
+### Multiple selection at run time
 
-It is possible to enable multiple selection of the dates at run time. The below properties enables multiple selection. 
+It is possible to enable multiple selection of the dates at run time. The below properties enables multiple selection.
 
 
 
 <table>
 <tr>
 <th>
-MonthCalendarAdv  Properties</th><th>
+MonthCalendarAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -91,16 +94,17 @@ Indicates whether selection of dates are allowed using mouse down and dragging a
 </table>
 
 
+{% tabs %}
 
+{% highlight C# %}
 
-
-{% highlight c#  %}
 this.monthCalendarAdv1.AllowMultipleSelection = true;
 
 this.monthCalendarAdv1.MouseDragMultiselect = true;
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -110,27 +114,31 @@ this.monthCalendarAdv1.AllowMultipleSelection = True
 
 Me.monthCalendarAdv1.MouseDragMultiselect = True
 
-{% endhighlight   %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](CalendarDateTime_images/Overview_img162.jpeg) 
 
 
 
-Select Date Range Programmatically
+**Select date range programmatically**
 
-Using the SelectedDates property, range of dates can be selected in the MonthCalendarAdv control. The dates should be given in array format using the DateTime Array list. 
-
-
+Using the SelectedDates property, range of dates can be selected in the MonthCalendarAdv control. The dates should be given in array format using the DateTime Array list.
 
 
-{% highlight c#  %}
+{% tabs %}
+
+{% highlight C# %}
+
 DateTime[] dateTimes = new DateTime[] { new DateTime(2010, 11, 2), new DateTime(2010, 11, 3) };
 
 DateTime[] dateTotal = new DateTime[] { };
 
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -138,49 +146,57 @@ DateTime[] dateTotal = new DateTime[] { };
 Dim dateTimes As DateTime() = New DateTime() {New DateTime(2010, 11, 2), New DateTime(2010, 11, 3)}
 
 Me.monthCalendarAdv1.SelectedDates = dateTimes
-{% endhighlight  %}
 
-Dates should be specified in the DataTime Array List. Then the DateTime Array list should be declared to the SelectedDates Property. This would select the dates that are in the DateTime Array list. 
+{% endhighlight %}
 
-![](CalendarDateTime_images/Overview_img163.png) 
+{% endtabs %}
+
+Dates should be specified in the DataTime Array List. Then the DateTime Array list should be declared to the SelectedDates Property. This would select the dates that are in the DateTime Array list.
+
+![](CalendarDateTime_images/Overview_img163.png)
 
 
 
 N> Date range should be specified manually in the DateTime Array list.
 
 
-## Month Settings
+## Month settings
 
 ### Navigation at RunTime
 
 At run time, you have options to move to the next month or previous month using the left or right scroll buttons and also using the context menu displayed, when you click on the month of the calendar. To specify images for individual months in the menu, use MonthImageList property.
 
-![](CalendarDateTime_images/Overview_img165.jpeg) 
+![](CalendarDateTime_images/Overview_img165.jpeg)
 
 
 
 
+{% tabs %}
 
+{% highlight C# %}
 
-{% highlight c#  %}
 this.monthCalendarAdv1.MonthImageList = this.imageList1;
 
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
 
 Me.monthCalendarAdv1.MonthImageList = Me.imageList1
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
-![](CalendarDateTime_images/Overview_img166.jpeg) 
+![](CalendarDateTime_images/Overview_img166.jpeg)
 
 
 
-### Foreground Color for Inactive Months
+### Foreground color for inactive months
 
 The below property sets the color for the inactive months.
 
@@ -189,7 +205,7 @@ The below property sets the color for the inactive months.
 <table>
 <tr>
 <th>
-MonthCalendarAdv  Properties</th><th>
+MonthCalendarAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -198,68 +214,73 @@ The previous or next month dates of the current month will be inactive in the Mo
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 this.monthCalendarAdv1.InactiveMonthColor = System.Drawing.Color.InactiveCaptionText;
 
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% endhighlight %}
+{% highlight VB %}
 
 
 
 
 Me.monthCalendarAdv1.InactiveMonthColor = System.Drawing.Color.InactiveCaptionText
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](CalendarDateTime_images/Overview_img167.jpeg) 
 
 
 
-### First Day of the Week
+### First day of the week
 
 MonthCalendarAdv lets you specify the first day to be displayed in a week using FirstDayOfWeek property. Default will be Sunday.
 
+{% tabs %}
 
-{% highlight c#  %}
+{% highlight C# %}
 
 
 this.monthCalendarAdv1.FirstDayOfWeek = Day.Monday;
 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.monthCalendarAdv1.FirstDayOfWeek = Day.Monday
 
-{% endhighlight  %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](CalendarDateTime_images/Overview_img168.jpeg) 
 
-## Interactive Features
+## Interactive features
 
 This section covers the below topics:
 
-### Context Menu
+### Context menu
 
 This section deals with replacing MonthCalendarAdv 'Go to Today' ContextMenu with a Custom Context Menu. At run-time, you can right click any calendar date and go to the today date using 'Go to Today' ContextMenu.
 
-![](CalendarDateTime_images/Overview_img169.jpeg) 
+![](CalendarDateTime_images/Overview_img169.jpeg)
 
 
 
 This is the default context menu. To replace this with a custom context menu, you need to derive a Custom MonthCalendarAdv from the existing one and override the InitializeGrid so that the GetInternalGridControl method can be used to access the ContextMenu and replace it with a custom contextMenu.
 
-It can be done programmatically using the below code snippet.
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 //Declaring and Initializing the calendar, Context menu and menu item
 
@@ -344,8 +365,9 @@ public class CustomMonthCalendarAdv : Syncfusion.Windows.Forms.Tools.MonthCalend
 
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 'Declaring and Initializing the calendar, Context menu and menu item 
@@ -418,7 +440,9 @@ Public Class CustomMonthCalendarAdv
 
 End Class
 
-{% endhighlight   %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](CalendarDateTime_images/Overview_img170.jpeg) 
 

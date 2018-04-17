@@ -3,11 +3,11 @@ layout: post
 title: Splitter-Behavior | WindowsForms | Syncfusion
 description: splitter behavior
 platform: WindowsForms
-control: Splitter  
+control: Splitter
 documentation: ug
 ---
 
-# Splitter Behavior
+# Splitter behavior
 
 The splitter in the SplitterControl can be supported with Row splitter and Column splitter or both.
 
@@ -16,17 +16,19 @@ The splitter in the SplitterControl can be supported with Row splitter and Colum
 * SplitRows
 * Both
 
-The following code example illustrates this.
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.splitterControl1.SplitBars = DynamicSplitBars.SplitColumns;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.splitterControl1.SplitBars = DynamicSplitBars.SplitColumns
 
 {% endhighlight %}
+
+{% endtabs %}

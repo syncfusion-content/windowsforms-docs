@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# Text Settings
+# Text settings
 
 The text settings of the FolderBrowser control are described below.
 
@@ -16,29 +16,33 @@ The text for the FolderBrowser can be set using the below given property.
 <table>
 <tr>
 <th>
-FolderBrowser Property</th><th>
+FolderBrowser property</th><th>
 Description</th></tr>
 <tr>
 <td>
 Description</td><td>
-Gets / sets the text displayed above the tree control in the FolderBrowser Dialog.</td></tr>
+Gets/sets the text displayed above the tree control in the FolderBrowser Dialog.</td></tr>
 </table>
 The Description property of the FolderBrowser supports the 'AutoComplete' feature that provides options that can be used to complete text even before it is entered.
 
-{%highlight c#%}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
 this.folderBrowser1.Description = "Recent Documents";
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight VB %}
 
 
 
 Me.folderBrowser1.Description = "Recent Documents"
 
-{%endhighlight%}
+{% endhighlight %}
 
-![](Overview_images/Overview_img412.jpeg) 
+{% endtabs %}
+
+![](Overview_images/Overview_img412.jpeg)
