@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Area
 
-EssentialChart comes with chart divide area support, wherein a single ChartArea can be divided into equal squares to display more than one chart (pie, funnel or pyramid). To enable this ChartArea.DivideArea property should be set to true.
+EssentialChart comes with chart divide area support, wherein a single ChartArea can be divided into equal squares to display more than one chart (pie, funnel or pyramid). To enable this **ChartArea.DivideArea** property should be set to true.
 
 By enabling this property, the following are possible.
 
@@ -17,7 +17,7 @@ By enabling this property, the following are possible.
 * It is possible to show series name as title for individual section of a pie, funnel and pyramid chart types.
 * Draw pie series with the same radius.
 
-GetSeriesBounds() method can be used to get the bounds of the DividedArea when ChartArea.DivideArea is set to true. 
+GetSeriesBounds() method can be used to get the bounds of the DividedArea when **ChartArea.DivideArea** is set to true. 
 
 {% tabs %}  
 

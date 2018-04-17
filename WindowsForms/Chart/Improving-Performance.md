@@ -11,6 +11,8 @@ documentation: ug
 
 _Properties and Methods_
 
+**Properties**
+
 <table>
 <tr>
 <th>
@@ -19,7 +21,7 @@ Description</th></tr>
 <tr>
 <td>
 ChartControl.ImprovePerformance</td><td>
-Instructs the chart to calculate the axes ranges only before painting and not at every series adding or moving. Performance of a Chart with large number of series will be improved significantly, if this property is enabled.By default this property is false.</td></tr>
+Instructs the chart to calculate the axes ranges only before painting and not at every series adding or moving. Performance of a Chart with large number of series will be improved significantly, if this property is enabled. By default this property is false.</td></tr>
 <tr>
 <td>
 CalcRegions</td><td>
@@ -35,7 +37,7 @@ Setting this property to false will not render the series with shadow, which wil
 <tr>
 <td>
 Indexed</td><td>
-The chart renders faster if the series is not indexed. This of course, may or may not be possible in all cases.By default this property is false.</td></tr>
+The chart renders faster if the series is not indexed. This of course, may or may not be possible in all cases. By default this property is false.</td></tr>
 <tr>
 <td>
 BackInterior</td><td>
@@ -48,14 +50,23 @@ This property sets the back color for the chart area. If not set with gradient o
 <td>
 ChartInterior</td><td>
 If this property which fills the chart interior, not set with gradient or pattern style, will improve the performance of the chart.</td></tr>
-<tr>
-<td colspan = "2">
-Method</td></tr>
+</tr>
+</table>
+
+**Methods**
+
+<table>
 <tr>
 <td>
-BeginUpdate and EndUpdate</td><td>
-Encapsulate your "data points adding code" within BeginUpdate and EndUpdate to improve Chart initialization speed. See the example below.</td></tr>
+BeginUpdate and EndUpdate
+</td>
+<td>
+Encapsulate your "data points adding code" within BeginUpdate and EndUpdate to improve Chart initialization speed. 
+</td>
+</tr>
 </table>
+
+See the example code below.
 
 {% tabs %}  
 

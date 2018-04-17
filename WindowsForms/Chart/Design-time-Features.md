@@ -95,15 +95,15 @@ A Chart can display multiple series. Properties such as Name, Data source, Serie
 
 Below are the three tabs in the Wizard for Series.
 
-1. Add points to series 
-2. Click Add button to add a new series. 
-3. Select the series to which you need to add points. 
-4. This tab provides options to select any chart type using the Type combobox and series name using Series Name textbox.
-5. Clicking the Edit points button, opens the ChartPoint Collection Editor.
+1.Add points to series.
+2.Click Add button to add a new series. 
+3.Select the series to which you need to add points. 
+4.This tab provides options to select any chart type using the Type combobox and series name using Series Name textbox.
+5.Clicking the Edit points button, opens the ChartPoint Collection Editor.
 
 ![](Chart-Wizard_images/Chart-Wizard_img4.jpeg)  
 
-6. Click Add to add points to the series. Give X and Y values. Click OK.
+6.Click Add to add points to the series. Give X and Y values. Click OK.
 
 ![](Chart-Wizard_images/Chart-Wizard_img5.png)
 

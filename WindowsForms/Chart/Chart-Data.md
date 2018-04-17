@@ -25,12 +25,6 @@ There is also a more flexible support for implementing custom data models by imp
 
 N> One important reason you might want to use either of the above two approaches is to greatly enhance performance (speed and memory) especially while dealing with a large set of data points.
 
-{% seealso %}
-
-[Implementing Custom Data Binding Interfaces](http://help.syncfusion.com/windowsforms/chart/chart-data#implementing-custom-data-binding-interfaces)
-
-{% endseealso %}
-
 ## Binding a DataSet to the Chart
 
 The following sample code illustrates how a custom DataSet can be bound to a ChartSeries to provide data points and to a ChartAxis to provide label names. Note that the DataSet can easily be replaced with a DataTable or DataView.
@@ -253,7 +247,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-## Bind the above model to the chart series.
+## Bind the above model to the ChartSeries
 
 {% tabs %}  
 
@@ -463,59 +457,59 @@ You can easily implement data binding technique at design-time, using Chart Wiza
 
 The below steps lets you bind a database table with the ChartControl.
 
-1. Open the Chart Wizard tool, Click Series button and go to the Data Source tab as shown in the image below.
+1.Open the Chart Wizard tool, Click Series button and go to the Data Source tab as shown in the image below.
 
 ![](Chart-Data_images/Chart-Data_img6.png)
 
-2. First step is to select the chart data source from the drop-down list. All data sources available with the form will be shown in the list. If there is no data source in the list, click the new BindingSource option from the drop-down list.
+2.First step is to select the chart data source from the drop-down list. All data sources available with the form will be shown in the list. If there is no data source in the list, click the new BindingSource option from the drop-down list.
    
 ![](Chart-Data_images/Chart-Data_img7.png)
 
-3. This opens a Data Source Configuration Wizard.Choose the Data source Type as Database, and click Next.
+3.This opens a Data Source Configuration Wizard.Choose the Data source Type as Database, and click Next.
 
 ![](Chart-Data_images/Chart-Data_img8.jpeg)
 
-4. Then click New Connection.
+4.Then click New Connection.
 
 ![](Chart-Data_images/Chart-Data_img9.jpeg)
 
-5. In the Choose Data Source dialog box, select the data source as MS SQL server database or Microsoft Access database, and then click Continue button.
+5.In the Choose Data Source dialog box, select the data source as MS SQL server database or Microsoft Access database, and then click Continue button.
    
 ![](Chart-Data_images/Chart-Data_img10.jpeg)
 
-6. This opens the Add Connection dialog box. Click the Browse button and select the database file from any location. Click OK to make this connection available to the Data source Configuration Wizard.
+6.This opens the Add Connection dialog box. Click the Browse button and select the database file from any location. Click OK to make this connection available to the Data source Configuration Wizard.
 
 ![](Chart-Data_images/Chart-Data_img11.jpeg)
 
-7. You will be directed to the Data Source Configuration Wizard after completing the above steps. Click Next.
+7.You will be directed to the Data Source Configuration Wizard after completing the above steps. Click Next.
    
 ![](Chart-Data_images/Chart-Data_img12.jpeg)
 
-8. Tables and Views that are available in the selected database will be listed in the Wizard. Select the appropriate table, required columns and then click Finish.
+8.Tables and Views that are available in the selected database will be listed in the Wizard. Select the appropriate table, required columns and then click Finish.
    
 ![](Chart-Data_images/Chart-Data_img13.jpeg)
    
-9. You will be directed back to the Chart Wizard now. Select the database from the Data Source list as shown in the image below.
+9.You will be directed back to the Chart Wizard now. Select the database from the Data Source list as shown in the image below.
 
 ![](Chart-Data_images/Chart-Data_img14.png)
    
-10. Once the source is selected, the selected table will be visible as in the below image.
+10.Once the source is selected, the selected table will be visible as in the below image.
 
 ![](Chart-Data_images/Chart-Data_img15.png)
 
 ## Binding the Table Data with Chart Series
 
-1. Click the 'Series Data' option in the wizard to select the series to which the data is to be bound. In 'Series Data' page, select the series using the Series Data box.
+1.Click the 'Series Data' option in the wizard to select the series to which the data is to be bound. In 'Series Data' page, select the series using the Series Data box.
 
 ![](Chart-Data_images/Chart-Data_img16.png)
 
-2. To assign the retrieved database column to X and Y values of the series, use X Value box and Y Value box as shown in the below screen shots.
+2.To assign the retrieved database column to X and Y values of the series, use X Value box and Y Value box as shown in the below screen shots.
 
 ![](Chart-Data_images/Chart-Data_img17.png)
 
 ![](Chart-Data_images/Chart-Data_img18.png)
 
-3. Click Finish to apply these data binding settings to the Chart. The below image illustrates the Chart bound with custom data.
+3.Click Finish to apply these data binding settings to the Chart. The below image illustrates the Chart bound with custom data.
 
 ![](Chart-Data_images/Chart-Data_img19.jpeg)
 
