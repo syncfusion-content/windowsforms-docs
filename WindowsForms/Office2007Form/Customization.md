@@ -7,13 +7,13 @@ control: Office2007 Form
 documentation: ug
 ---
 
-## Caption Alignment 
+# Caption alignment
 
-The Form caption can be aligned to the left, right, or center by using the `CaptionAlign` property. 
+The Form caption can be aligned to the left, right, or center by using the `CaptionAlign` property.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center;
 
@@ -29,13 +29,13 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 ![](Caption-Settings_images/CaptionAlignment.png)
 
-## Caption Font 
+## Caption font
 
 Office2010Form's caption Font can be customized through `CaptionFont` property.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.CaptionFont = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
@@ -52,13 +52,13 @@ Me.CaptionFont = New System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.Fo
 ![](Caption-Settings_images/CaptionFont.png)
 
 
-## Caption Fore Color
+## Caption fore color
 
 The color of the caption text can be customized using the `CaptionForeColor` property.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 // Applies the color to caption text.
 
@@ -78,13 +78,13 @@ Me.CaptionForeColor = Color.Pink
 
 ![](Caption-Settings_images/CaptionForeColor.png)
 
-## Caption Bar Height
+## Caption bar height
 
 This property helps to customize the CaptionBar height.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.CaptionBarHeight = 50;
 
@@ -100,13 +100,13 @@ Me. CaptionBarHeight = 50
 
 ![](Caption-Settings_images/CaptionBarHeight.png)
 
-## Help Button Support
+## Help button support
 
-Help Button property is used to show the `HelpButton` in the caption box of the Form. 
+Help Button property is used to show the `HelpButton` in the caption box of the Form.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 // Displays the HelpButton in the caption box of the Form.
 
@@ -126,17 +126,17 @@ Help Button property is used to show the `HelpButton` in the caption box of the 
 
 ![](Caption-Settings_images/HelpButton.png)
 
-## Right to Left 
+## Right to left
 
 Right to left support can be enabled using below properties in Office2007Form.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.RightToLeftLayout = true;
  
-this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;          
+this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
 {% endhighlight %}
 

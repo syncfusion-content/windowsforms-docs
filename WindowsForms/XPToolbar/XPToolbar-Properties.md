@@ -7,16 +7,16 @@ control: XPToolbar
 documentation: ug
 ---
 
-# XPToolbar Properties
+# XPToolbar properties
 
-## Appearance Properties
+## Appearance properties
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPToolbar Property</th><th>
+XPToolbar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -64,14 +64,14 @@ ThemesEnabled</td><td>
 Specifies whether XP theme is enabled or not.</td></tr>
 </table>
 
-## Behavior Properties
+## Behavior properties
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPToolbar Property</th><th>
+XPToolbar property</th><th>
 Description</th></tr>
 <tr>
 <td>

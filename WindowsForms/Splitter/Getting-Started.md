@@ -3,15 +3,15 @@ layout: post
 title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
 platform: WindowsForms
-control: Splitter  
+control: Splitter
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 This section briefly describes how to design the SplitterControl in the Windows Forms application.
 
-* Add the SplitterControl control. 
+* Add the SplitterControl control.
 * Configure the SplitterControl control.
 
 ## Add the SplitterControl
@@ -29,7 +29,9 @@ To add SplitterControl to the Windows Forms Application through the following co
 
 1. Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		//Namespaces.
 
@@ -37,11 +39,10 @@ To add SplitterControl to the Windows Forms Application through the following co
 
 		using Syncfusion.Windows.Forms;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
-   ~~~ vbnet
+   {% highlight VB %}
 
 		‘Namespaces.
 
@@ -49,13 +50,16 @@ To add SplitterControl to the Windows Forms Application through the following co
 
 		Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
+
+   {% endtabs %}
 
 
 2. Create an instance of the SplitterControl and add it to the Form.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		//Creates the SplitterControl instance.
 
@@ -63,11 +67,9 @@ To add SplitterControl to the Windows Forms Application through the following co
 
 		this.Controls.Add(splitterControl1);
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
-
-   ~~~ vbnet
+    {% highlight VB %}
 
 		‘Creates the SplitterControl instance.
 
@@ -77,8 +79,9 @@ To add SplitterControl to the Windows Forms Application through the following co
 
 		Me.Controls.Add(splitterControl1)
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
+
+   {% endtabs %}
 
 
 

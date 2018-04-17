@@ -11,7 +11,7 @@ documentation: ug
 
 The Notification and Animation of a HubTile can be frozen.
 
-The following code example shows how to freeze the HubTile.
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -19,9 +19,10 @@ this.HubTile1.IsFrozen = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.HubTile1.IsFrozen = True
 
 {% endhighlight %}
 
+{% endtabs %}

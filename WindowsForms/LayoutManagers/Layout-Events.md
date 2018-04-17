@@ -6,7 +6,7 @@ platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---
-# Layout Events
+# Layout events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -15,7 +15,7 @@ The list of events and a detailed explanation about each of them is given in the
 <table>
 <tr>
 <th>
-Layout Events</th><th>
+Layout events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -28,14 +28,15 @@ This event is triggered to obtain the preferred size information for a Child con
 </table>
 
 
-## ContainerControlChanged Event
+## ContainerControlChanged event
 
 This event is handled, when the ContainerControl property is changed.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 // Initialize the new ContainerControl.
@@ -61,8 +62,8 @@ Console.Write("Container Control is changed to Panel" );
 }
 
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
+{% highlight VB %}
 
 
 
@@ -86,9 +87,11 @@ Private Sub borderLayout1_ContainerControlChanged(ByVal sender As Object, ByVal 
     Console.Write("Container Control is changed to Panel")
 
 End Sub
-{% endhighlight  %}
+{% endhighlight %}
 
-## ProvideLayoutInformation Event
+{% endtabs %}
+
+## ProvideLayoutInformation event
 
 This event is triggered to obtain the preferred size information for a Child control during layout.
 
@@ -116,14 +119,15 @@ Returns the type of information requested.</td></tr>
 <tr>
 <td>
 Size</td><td>
-Gets / sets the size to be returned.</td></tr>
+Gets/sets the size to be returned.</td></tr>
 </table>
 
 
-You can handle this event to auto size the Label control when you increase / decrease the form width.
+You can handle this event to auto size the Label control when you increase/decrease the form width.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private void flowLayout1_ProvideLayoutInformation(object sender, Syncfusion.Windows.Forms.Tools.ProvideLayoutInformationEventArgs e)
@@ -151,7 +155,7 @@ g.Dispose();
 
 
 {% endhighlight  %}
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -173,3 +177,5 @@ End If
 
 End Sub
 {% endhighlight  %}
+
+{% endtabs %}

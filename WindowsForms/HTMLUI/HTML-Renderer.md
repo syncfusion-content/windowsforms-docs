@@ -7,13 +7,13 @@ control: HTML UI
 documentation: ug
 ---
 
-#  HTML Renderer
+#  HTML renderer
 
 As the HTMLUI control supports rendering of web pages, it can be used like a light-weight web browser for compact applications that include links to references.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -27,7 +27,7 @@ htmluiControl1.LoadHTML(uri);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -41,11 +41,13 @@ HtmluiControl1.LoadHTML(uri)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Also the ability of the HTMLUI control to load from strings can be used in creating HTML editors for tutorial applications.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -61,7 +63,7 @@ this.htmluiControl1.LoadFromString(htmlString);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -75,6 +77,8 @@ Me.HtmluiControl1.LoadFromString(htmlString)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following figure shows an HTML Editor rendered using HTMLUI.
 
 
@@ -83,7 +87,7 @@ The following figure shows an HTML Editor rendered using HTMLUI.
 
 
 
-## HTMLUI Browser Sample
+## HTMLUI browser sample
 
 This sample demonstrates the implementation of a Web Browser in HTMLUI.
 
@@ -101,7 +105,7 @@ By default, this sample can be found under the following location:
 
 
 
-## HTMLUI Editor Sample
+## HTMLUI editor sample
 
 This sample demonstrates the implementation of HTML Editors in HTMLUI.
 

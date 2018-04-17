@@ -7,11 +7,11 @@ control: XPTaskPane
 documentation: ug
 ---
 
-# Header Settings
+# Header settings
 
-## Setting Visibility of the ToolBar Items
+## Setting visibility of the ToolBar items
 
-The header section by default has four toolbar items. Left and right navigating buttons at the top left corner of the TaskPane Header and DropDownMenu and Close Button at the top right corner of the TaskPane Header. 
+The header section by default has four toolbar items. Left and right navigating buttons at the top left corner of the TaskPane Header and DropDownMenu and Close Button at the top right corner of the TaskPane Header.
 
 
 
@@ -33,7 +33,9 @@ The header section by default has four toolbar items. Left and right navigating 
 
 The visibility of these items can be controlled using the below code snippets.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -56,9 +58,9 @@ this.xpTaskPane1.HeaderRightToolbar.Items[0].Visible = true;
 this.xpTaskPane1.HeaderRightToolbar.Items[1].Visible = true;
 
 
-
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
@@ -83,11 +85,15 @@ Me.xpTaskPane1.HeaderRightToolbar.Items[1].Visible = True
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Images for Toolbar items
 
 We can change the existing image for the toolbar items using the below code snippets.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -108,7 +114,7 @@ this.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -129,15 +135,17 @@ Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Header-Settings_images/Header-Settings_img3.jpeg)
 
 
 
-## Customizing Header Menu Item Image
+## Customizing header menu item image
 
-The Header Menu Item image can be changed through ImageIndex property which lists a set of pre-defined images, else set the Image property to the custom image you want to set for the dropdown image.
+The Header Menu Item image can be changed through ImageIndex property which lists a set of pre-defined images, else set the Image property to the custom image you want to set for the drop-down image.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -154,8 +162,9 @@ HeaderMenuItem.Image</td><td>
 Sets the image to be displayed in DropDownMenu item.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -166,7 +175,7 @@ this.xpTaskPane1.HeaderMenuItem.ImageIndex = 1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -176,6 +185,8 @@ Me.xpTaskPane1.HeaderMenuItem.ImageIndex = 1
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Header-Settings_images/Header-Settings_img4.jpeg)
 

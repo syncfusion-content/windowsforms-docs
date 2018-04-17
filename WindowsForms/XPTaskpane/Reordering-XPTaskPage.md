@@ -23,24 +23,24 @@ When the end user adds a page to the XPTaskPane control, the order of the page i
 
 
 
-## Going to Next Page or Previous Page
+## Going to next page or previous page
 
-* Right Click a page in the designer and choose the 'Previous Page' or 'Next Page' verb which will show you the page, which is before the current page or the page which is after the current page. These options can also be accessed through smart tag and property grid commands.
+* Right-click a page in the designer and choose the 'Previous Page' or 'Next Page' verb which will show you the page, which is before the current page or the page which is after the current page. These options can also be accessed through smart tag and property grid commands.
 
 ![](XPTaskPane-Control_images/XPTaskPane_img6.jpeg)
 
 
 
-## Page Order at RunTime
+## Page order at RunTime
 
 XPTaskPage allows you to set the next or the previous page to the currently selected page through the NextPage and PreviousPage properties.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPTaskPage Property</th><th>
+XPTaskPage property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -55,7 +55,9 @@ It sets the previous page for XP TaskPane.</td></tr>
 
 N> The TaskPane follows this order at run time.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -65,7 +67,7 @@ this.xpTaskPage2.PreviousPage = this.xpTaskPage1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -74,3 +76,5 @@ Me.xpTaskPage2.NextPage = Me.xpTaskPage3
 Me.xpTaskPage2.PreviousPage = Me.xpTaskPage1
 
 {% endhighlight %}
+
+{% endtabs %}

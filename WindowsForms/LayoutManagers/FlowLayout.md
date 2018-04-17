@@ -12,7 +12,7 @@ FlowLayout is a Layout Manager which allows us to arrange the Child components h
 
 In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as shown below.
 
-![](Overview_images/Overview_img33.jpeg) 
+![](Overview_images/Overview_img33.jpeg)
 
 
 
@@ -32,13 +32,13 @@ A Sample which demonstrates the FlowLayout is available in the below sample inst
 
 {% seealso %}
 
-[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout)
+[Creating a simple Layout.](/windowsforms/layoutmanagers/creating-a-simple-layout)
 
 {% endseealso %}
 
 ## Configuring FlowLayout
 
-### Layout Mode
+### Layout mode
 
 The layout mode dictates the core function of a FlowLayout, whether to layout the Child controls horizontally or vertically. This property will be in effect for both the scenarios.
 
@@ -47,7 +47,7 @@ The layout mode dictates the core function of a FlowLayout, whether to layout th
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+FlowLayout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -56,22 +56,25 @@ Specifies the layout mode of the Child controls. The default value is set to 'Ho
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.flowLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.FlowLayoutMode.Vertical;
 
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
 Me.flowLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.FlowLayoutMode.Vertical
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img34.jpeg) 
 
@@ -102,20 +105,24 @@ Adds or removes the specified control from the layout list.</td></tr>
 The following code can be used to add or remove the Child control from the FlowLayout list programmatically.
 
 
+{% tabs %}
 
+{% highlight C# %}
 
-{% highlight c# %}
 this.flowLayout1.SetParticipateInLayout(this.button1,false);
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
 
 Me.flowLayout1.SetParticipateInLayout(Me.button1,False)
 {% endhighlight  %}
+
+{% endtabs %}
 
 ## HGap and VGap
 
@@ -126,22 +133,22 @@ The horizontal and the vertical gap between the Child controls can be set using 
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+FlowLayout property</th><th>
 Description</th></tr>
 <tr>
 <td>
 HGap</td><td>
-Gets / sets the horizontal spacing between the components.</td></tr>
+Gets/sets the horizontal spacing between the components.</td></tr>
 <tr>
 <td>
 VGap</td><td>
-Gets / sets the vertical spacing between the components.</td></tr>
+Gets/sets the vertical spacing between the components.</td></tr>
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.flowLayout1.HGap = 20;
 
@@ -150,15 +157,18 @@ this.flowLayout1.VGap = 20;
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
 Me.flowLayout1.HGap = 20
 
 Me.flowLayout1.VGap = 20
+
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![](Overview_images/Overview_img35.jpeg) 
 
@@ -173,7 +183,7 @@ The height of the Container control can be automatically increased when there is
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+FlowLayout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -182,23 +192,27 @@ Specifies if the Container's height should be enforced to the minimum when in ho
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.flowLayout1.AutoHeight = true;
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
 
 Me.flowLayout1.AutoHeight = True
+
 {% endhighlight  %}
 
-## Layout Direction
+{% endtabs %}
+
+## Layout direction
 
 FlowLayout allows you to layout the Child controls in the opposite direction (right to left or bottom to top).
 
@@ -207,7 +221,7 @@ FlowLayout allows you to layout the Child controls in the opposite direction (ri
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+FlowLayout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -217,15 +231,17 @@ Specifies to layout the Child controls in the reverse direction.</td></tr>
 
 
 
+{% tabs %}
 
+{% highlight C# %}
 
-{% highlight c# %}
 this.flowLayout1.ReverseRows = true;
 
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 
 
@@ -233,20 +249,22 @@ Me.flowLayout1.ReverseRows = True
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img36.jpeg) 
 
 
 
 ## Alignment
 
-The Alignment property is where you specify whether the current layout logic should be simple or constraint-based. 
+The Alignment property is where you specify whether the current layout logic should be simple or constraint-based.
 
 N> Alignment is applied only along the direction of flow. For example, if the LayoutMode property is set to 'Horizontal' and the Alignment property is set to 'Center', then the rows will be centered horizontally.
 
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+FlowLayout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -255,15 +273,15 @@ Specifies the alignment of layout components in the direction of flow. The optio
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Near;
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -272,6 +290,8 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Near
 
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img38.jpeg) 
 
@@ -284,7 +304,7 @@ Once you specify the alignment of a FlowLayout as 'ChildConstraints', the Layout
 <table>
 <tr>
 <th>
-FlowLayout Property</th><th>
+FlowLayout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -293,9 +313,9 @@ Specifies the alignment of layout components in the direction of flow when the A
 </table>
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildConstraints;
 
@@ -303,12 +323,13 @@ this.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildC
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildConstraints
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![](Overview_images/Overview_img39.jpeg) 
 
@@ -318,17 +339,17 @@ N> Refer[FlowLayout - Configuring Child Controls](#configuring-child-controls) t
 
 {% seealso %}
 
-[FlowLayout - Configuring Child Controls](#configuring-child-controls), [Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Enabling Constrained FlowLayout on a Container](#enabling-constrained-flowlayout-on-a-container), [Rearranging the Controls laid out by FlowLayout](#rearranging-the-controls-laid-out-by-flowlayout)
+[FlowLayout - Configuring Child Controls](#configuring-child-controls), [Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Enabling Constrained FlowLayout on a Container](#enabling-constrained-flowlayout-on-a-container), [Rearranging the Controls laid out by FlowLayout.](#rearranging-the-controls-laid-out-by-flowlayout)
 
 {% endseealso %}
 
-## Configuring Child Controls
+## Configuring Child controls
 
 ### Constraints on FlowLayout
 
 Constrained FlowLayout is typically useful when creating resizable data entry forms filled with textboxes, checkboxes, and so on. During design time, the constraints can be specified for each Child control through its extended Constraints on flowLayout property. The constraints in the FlowLayout are described below in detail.
 
-Setting the Constraints Through Designer
+**Setting the constraints through designer**
 
 ### HAlign and VAlign
 
@@ -338,7 +359,7 @@ The alignment of the Child controls that have been placed within a row can be se
 
 <table>
 <tr>
-<th>Child Control Constraints</th>
+<th>Child control constraints</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -363,14 +384,14 @@ Children with different HAlign Settings
 
 N> In the figure above, the textboxes have auto labels associated with them.
 
-### Layout Participation
+### Layout participation
 
 You can prevent a Child control from participating in the layout using the below given property.
 
 <table>
 <tr>
 <th>
-Child Control Constraint</th><th>
+Child control constraint</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -380,7 +401,7 @@ Specifies whether the Child control should participate in the layout. The defaul
 
 	
 	
-#### Line Beginner
+#### Line beginner
 
 You can force a Child control to always start at a new row by setting the below given property.
 
@@ -390,7 +411,7 @@ You can force a Child control to always start at a new row by setting the below 
 <table>
 <tr>
 <th>
-Child Control Constraint</th><th>
+Child control constraint</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -399,7 +420,7 @@ Specifies whether the Child control should participate in the layout. The defaul
 </table>
 
 	
-#### Row Height and Column Width
+#### Row height and column width
 
 By default, rows are not adjusted to take into account the remaining vertical space in the horizontal layout mode or horizontal space in the vertical layout mode. This can be done using the properties given below.
 
@@ -408,7 +429,7 @@ By default, rows are not adjusted to take into account the remaining vertical sp
 <table>
 <tr>
 <th>
-Child Control Constraint</th><th>
+Child control constraint</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -453,30 +474,35 @@ Specifies the constraints associated with the specified control.</td></tr>
 	
 In code, you can specify constraints through the SetConstraints() method. The FlowLayoutConstraints type defines the constraint that can be specified on a Child component.
 
-Setting the Constraints Programmatically
+**Setting the constraints programmatically**
 
 In the coding given below, the constraints are set to the particular control along with the constraint values like Active, HAlign, VAlign, NewLine, ProportionalColWidth and ProportionalRowHeight.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.flowLayout1.SetConstraints(this.textBox1, new Syncfusion.Windows.Forms.Tools.FlowLayoutConstraints(true, Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Justify, Syncfusion.Windows.Forms.Tools.VertFlowAlign.Center, false, false, false));
 
 {% endhighlight %}
-{% highlight vbnet %}
+
+{% highlight VB %}
 
 Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.FlowLayoutConstraints(True, Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Justify, Syncfusion.Windows.Forms.Tools.VertFlowAlign.Center, False, False, False))
 
 {% endhighlight %}
 
+{% endtabs %}
+
 {% seealso %}
 
-[Configuring FlowLayout](/windowsforms/layoutmanagers/creating-a-simple-layout#configuring-layout-manager), [Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Enabling Constrained FlowLayout on a Container](#enabling-constrained-flowlayout-on-a-container), [Rearranging the Controls laid out by FlowLayout](#rearranging-the-controls-laid-out-by-flowlayout), [Child Control Settings](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings)
+[Configuring FlowLayout](/windowsforms/layoutmanagers/creating-a-simple-layout#configuring-layout-manager), [Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Enabling Constrained FlowLayout on a Container](#enabling-constrained-flowlayout-on-a-container), [Rearranging the Controls laid out by FlowLayout](#rearranging-the-controls-laid-out-by-flowlayout), [Child Control Settings.](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings)
 
 {% endseealso %}
 
-## Centering the Child Controls Horizontally and Vertically
+## Centering the Child controls horizontally and vertically
 
-This topic illustrates how to center the Child controls both vertically and horizontally using the Child constraints. 
+This topic illustrates how to center the Child controls both vertically and horizontally using the Child constraints.
 
 
 
@@ -484,6 +510,7 @@ N> Constraints need to be used because the Child controls will otherwise be cent
 
 When the layout mode is 'Horizontal', set the HAlign property to 'Center' and ProportionalRowHeight property to 'True' in the constraints for all the Child controls. This will center the Child controls vertically and horizontally as shown.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -496,18 +523,20 @@ this.flowLayout1.SetConstraints(this.textBox1, new Syncfusion.Windows.Forms.Tool
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.FlowLayoutConstraints(True, Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Center, Syncfusion.Windows.Forms.Tools.VertFlowAlign.Center, False, False, True))
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](FlowLayout_images/FlowLayout_img14.jpeg)
 
 
 
-When the ProportionalRowHeight property is set to 'True', any extra space at the bottom will be equally distributed among all the available rows, thereby increasing the logical height of the rows. The Child controls within these rows will then vertically align to the center of the row (since VAlign property is set to'Center', by default), thereby resulting in the layout seen above. 
+When the ProportionalRowHeight property is set to 'True', any extra space at the bottom will be equally distributed among all the available rows, thereby increasing the logical height of the rows. The Child controls within these rows will then vertically align to the center of the row (since VAlign property is set to'Center', by default), thereby resulting in the layout seen above.
 
 When resized to a smaller width, two rows are created resulting in the layout shown below.
 
@@ -517,12 +546,12 @@ When resized to a smaller width, two rows are created resulting in the layout sh
 
 
 {% seealso %}
-Configuring FlowLayout, FlowLayout - Configuring Child Controls, Enabling Constrained FlowLayout on a Container
+Configuring FlowLayout, FlowLayout - Configuring Child Controls, Enabling Constrained FlowLayout on a Container.
 {% endseealso %}
 
 
 
-## Enabling Constrained FlowLayout on a Container
+## Enabling constrained FlowLayout on a container
 
 This section will illustrate how Constrained FlowLayout can be used to implement complex form layout logic.
 
@@ -530,9 +559,11 @@ For example, create a 'User Info entry' panel with auto labels, textboxes and co
 
 Steps to achieve the above layout and behavior are described below.
 
-1. Place five textboxes and one combobox to represent the different data input controls in the panel. 
+1. Place five textboxes and one combobox to represent the different data input controls in the panel.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 
 
@@ -586,10 +617,9 @@ Steps to achieve the above layout and behavior are described below.
 
 		this.panel1.Controls.Add(this.comboBox1);
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-   ~~~ vbnet
+   {% highlight VB %}
 
 
 
@@ -643,12 +673,15 @@ Steps to achieve the above layout and behavior are described below.
 
 		Me.panel1.Controls.Add(Me.comboBox1)
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
+
+   {% endtabs %}
 
 2. Add one auto label for each control and set the auto label's LabeledControl property to the corresponding control. Also, change the Text property of the auto label control appropriately and set the AutoSize property to 'True'. 
 
-   ~~~ vbnet
+    {% tabs %}
+
+	{% highlight C# %}
 
 
 
@@ -732,10 +765,9 @@ Steps to achieve the above layout and behavior are described below.
 
 		this.autoLabel6.Text = "Zip";
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-   ~~~ vbnet
+   {% highlight VB %}
 
 
 
@@ -807,16 +839,19 @@ Steps to achieve the above layout and behavior are described below.
 
 		Me.autoLabel6.Text = "Zip"
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-3. Now add theFlowLayout component and set the panel to be its Container control. The FlowLayout will layout the controls in the order in which they were added to the panel. Use the Bring To Front and Send To Back design time verbs to move the controls to the front or back of the layout order. 
+   {% endtabs %}
+
+3. Now add theFlowLayout component and set the panel to be its Container control. The FlowLayout will layout the controls in the order in which they were added to the panel. Use the Bring To Front and Send To Back design time verbs to move the controls to the front or back of the layout order.
 
    N> The FlowLayout will treat each control and it's auto label pair as a single unit during layout.
 
 
  
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		// Declare the FlowLayout.
 
@@ -832,8 +867,9 @@ Steps to achieve the above layout and behavior are described below.
    ~~~
    {:.prettyprint}
 
+	{% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
 
 
 
@@ -848,8 +884,11 @@ Steps to achieve the above layout and behavior are described below.
 		Me.flowLayout1 = New Syncfusion.Windows.Forms.Tools.FlowLayout(Me.components)
 
 		Me.flowLayout1.ContainerControl = Me.panel1
-   ~~~
-   {:.prettyprint}
+   
+   {% endhighlight %}
+
+   {% endtabs %}
+
 4. Now set some appropriate constraints on the input controls as follows.
    * Select the First Name textbox and browse to the extended Constraints on flowLayout property. Set the HAlign property to 'Justify', so that this control's width will be resized to fit any available empty horizontal space in the row. This also requires that you specify an appropriate preferred size for the control, such as (100, 20).
    * The Middle Initial textbox needs to be left aligned and not justified. This is the default constraint setting, so we don't need to make any changes to it's constraints.
@@ -858,7 +897,9 @@ Steps to achieve the above layout and behavior are described below.
    * The State combobox and Zip textbox controls can also be left with the default constraints.
 
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 
 
@@ -880,10 +921,9 @@ Steps to achieve the above layout and behavior are described below.
 
 		this.flowLayout1.SetPreferredSize(this.textBox4, new System.Drawing.Size(100, 20));.Center, false, false, true));
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-   ~~~ vbnet
+   {% highlight VB %}
 
 
 
@@ -905,30 +945,32 @@ Steps to achieve the above layout and behavior are described below.
 
 		Me.flowLayout1.SetPreferredSize(Me.textBox4, New System.Drawing.Size(100, 20))
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
+
+   {% endtabs %}
 
 5. The panel itself should increase or decrease in width when the number of rows in the layout increases or decreases. To get this behavior, set the FlowLayout's AutoHeight property to 'True'.
    
-   ~~~ cs
+   {% tabs %}
 
-
+	{% highlight C# %}
 
 		// Set the AutoHeight property of FlowLayout.
 
 		this.flowLayout1.AutoHeight = true;
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-   ~~~ vbnet
+   {% highlight VB %}
 
 
 		' Set the AutoHeight property of FlowLayout.
 
 		Me.flowLayout1.AutoHeight = True
-   ~~~
-   {:>prettyprint}
+   
+   {% endhighlight %}
+
+   {% endtabs %}
 
 
 N> During run time, the input controls get resized and repositioned appropriately based on the constraints provided.
@@ -940,7 +982,7 @@ N> During run time, the input controls get resized and repositioned appropriatel
 ![](FlowLayout_images/FlowLayout_img19.jpeg)
 
 
-### AutoLabel Control
+### AutoLabel control
 
 The AutoLabel control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel will be automatically repositioned as the labeled control's position changes.
 
@@ -960,11 +1002,11 @@ N> Refer to AutoLabel under Editors Package for more details.
 {% endseealso %}
 
 
-## Rearranging the Controls laid out by FlowLayout
+## Rearranging the controls laid out by FlowLayout
 
 The FlowLayout manager arranges the controls in the way it gets added into the Container collection.
 
-### Through Designer
+### Through designer
 
 * You can rearrange the controls laid out by FlowLayout by right clicking the control and selecting the Bring To Front or Send To Back verbs in the designer.
 
@@ -978,7 +1020,7 @@ The FlowLayout manager arranges the controls in the way it gets added into the C
 
 
 
-### Through Code
+### Through code
 
 We can also programmatically change the order of the controls laid out by the Flow layout. This can be done using the method given below.
 
@@ -998,6 +1040,7 @@ We can also programmatically change the order of the controls laid out by the Fl
 
 * Add a Button control for reordering the Child controls of Panel1 and in the Button_Click event give the following code snippet.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -1043,7 +1086,7 @@ this.panel1.PerformLayout();
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -1079,10 +1122,12 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](FlowLayout_images/FlowLayout_img26.jpeg)
 
 
-* At run time when you click the Reorder button, the Panels 2, 3 and 4 will be rearranged in a different order.
+* At run time when you click the Reorder button, the Panels 2, 3, and 4 will be rearranged in a different order.
 
 ![](FlowLayout_images/FlowLayout_img27.jpeg)
 

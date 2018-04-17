@@ -7,11 +7,11 @@ control: HTML UI
 documentation: ug
 ---
 
-# HTML Forms
+# HTML forms
 
-Forms are the containers for placing the elements in a HTML document. HTMLUI supports the usage of forms for developing advanced and decorative pages in the user's application. 
+Forms are the containers for placing the elements in a HTML document. HTMLUI supports the usage of forms for developing advanced and decorative pages in the user's application.
 
-{% highlight html %}
+{% highlight HTML %}
 
 <html>
 
@@ -41,7 +41,7 @@ Loading the above HTML document into HTMLUI creates a Form with the three contro
 
 
 
-## HTMLUIForms Sample
+## HTMLUIForms sample
 
 This sample illustrates the implementation of Forms by using HTMLUI.
 

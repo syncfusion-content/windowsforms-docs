@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive features
 
 The following are the key interactive features of the Range Slider:
 
@@ -28,13 +28,11 @@ The following are the key interactive features of the Range Slider:
 
 This section discusses the concepts of Range Slider in the below topics:
 
-## Setting Channel Color
+## Setting channel color
 
 You can set the required color for the channel over which the slider moves. It contains the highlight when a range is selected. In the following example, the channel color is set to Gray.
 
-The following code snippet illustrates the same.
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -54,20 +52,21 @@ Output
 
 
 
-## Setting Channel Height
+## Setting channel height
 
 You can set the required height of the channel over which the slider moves. In the following example illustrates the change in height of the channel from 4 to 6. It is measured in pixels.
 
-The following code snippet illustrates the same.
-
 1. When the Channel height is set to 4 pixels.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		rangeSlider.ChannelHeight = 4;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
+
+   {% endtabs %}
 
 
 
@@ -81,14 +80,17 @@ The following code snippet illustrates the same.
 
 2. When the Channel height is set to 6 pixels
 
-   ~~~ cs
+  {% tabs %}
+
+   {% highlight C# %}
 
 
 
 		rangeSlider.ChannelHeight = 6;
 
-   ~~~
-   {:.prettyprint }
+  {% endhighlight %}
+
+   {% endtabs %}
 
 
 ![](Interactive-Features_images/Interactive-Features_img5.jpeg)
@@ -99,13 +101,11 @@ The following code snippet illustrates the same.
 
 
 
-## Setting Range Color
+## Setting range color
 
 You can set the required color for a range in the slider. The selected range is highlighted with color chosen. In the following example, the range color is set to Green.
 
-The following code snippet illustrates the same.
-
-{% highlight c# %}
+{% highlight C# %}
 
 rangeSlider.RangeColor = Color.DarkGreen;
 
@@ -120,18 +120,17 @@ rangeSlider.RangeColor = Color.DarkGreen;
 
 
 
-## Reversing RangeSlider 
+## Reversing RangeSlider
 
-The position of the thumbs on the RangeSlider can be reversed by setting the RighttoLeft property to Yes. The following example illustrates the same.
+The position of the thumbs on the RangeSlider can be reversed by setting the RighttoLeft property to Yes.
 
 1. When the property is set to No.
 
-   ~~~ cs
+   {% highlight C# %}
 
 		rangeSlider.RightToLeft=RightToLeft.No;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
    ![](Interactive-Features_images/Interactive-Features_img9.jpeg)
@@ -146,14 +145,13 @@ The position of the thumbs on the RangeSlider can be reversed by setting the Rig
 
 
 
-   ~~~ cs
+   {% highlight C# %}
 
 
 
 		rangeSlider.RightToLeft=RightToLeft.Yes;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
     ![](Interactive-Features_images/Interactive-Features_img11.jpeg)
@@ -164,22 +162,19 @@ The position of the thumbs on the RangeSlider can be reversed by setting the Rig
 
 
 
-## Setting Slider Size
+## Setting slider size
 
-You can set the required size for the slider. The height and the width of the control can be set. 
-
-The following example illustrates the same. 
+You can set the required size for the slider. The height and the width of the control can be set.
 
 1. When the slider is set to 11, 14.
 
-   ~~~ cs
+   {% highlight C# %}
 
 
 
 		rangeSlider.SliderSize = new Size(11,14);
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
    ![](Interactive-Features_images/Interactive-Features_img13.jpeg)
@@ -192,14 +187,13 @@ The following example illustrates the same.
 
 2. When the slider is set to 11,18.
 
-   ~~~ cs
+   {% highlight C# %}
 
 
 
 		rangeSlider.SliderSize = new Size(11,18);
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
 ![](Interactive-Features_images/Interactive-Features_img15.jpeg)
@@ -210,21 +204,17 @@ The following example illustrates the same.
 
 
 
-## Setting Thumb Color
+## Setting thumb color
 
-You can set the required color for the both the thumbs on the Channel. 
+You can set the required color for the both the thumbs on the Channel.
 
 In the following example, the thumb is set to Teal.
 
-{% highlight c# %}
+{% highlight C# %}
 
 		rangeSlider.ThumbColor = Color.Teal;
 
 {% endhighlight %}
-
-rangeSlider.ThumbColor = Color.Teal;
-
-
 
 Background Settings
 
@@ -236,20 +226,17 @@ Background Settings
 
 
 
-## Displaying Ticks
+## Displaying ticks
 
-Ticks are indicators placed at regular intervals on the slider for a range defined by the maximum and minimum scale. You can display ticks below the channel by setting the ShowTicks property to True. 
-
-In the following example illustrates the same.
+Ticks are indicators placed at regular intervals on the slider for a range defined by the maximum and minimum scale. You can display ticks below the channel by setting the ShowTicks property to True.
 
 1. When the ShowTicks property is set to True.
 
-   ~~~ cs
+   {% highlight C# %}
 
 		rangeSlider.ShowTicks = True;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
 
@@ -265,14 +252,13 @@ In the following example illustrates the same.
 
 2. When the ShowTicks property is set to False.
 
-   ~~~ cs
+   {% highlight C# %}
 
 
 
 		rangeSlider.ShowTicks = False;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
 ![](Interactive-Features_images/Interactive-Features_img21.jpeg)
@@ -283,13 +269,11 @@ In the following example illustrates the same.
 
 
 
-## Setting Tick Frequency
+## Setting tick frequency
 
 The ticks can be placed at required intervals by setting the TickFrequency property to required number. For example, if the range is set from 0-100, where minimum is set to 0 and maximum is set to 100, and the TickFrequency is set to 20, then Ticks will be placed at positions 0,20,40,..,100.
 
-The following example illustrates the same.
-
-{% highlight c# %}
+{% highlight C# %}
 
 rangeSlider.TickFrequency = 3;
 
@@ -304,18 +288,17 @@ rangeSlider.TickFrequency = 3;
 
 
 
-## Setting Orientation
+## Setting orientation
 
 The layout of the range slider can be defined using the Orientation property. The orientation of the control can either be vertical or horizontal.
 
 1. When Orientation is set to Horizontal.
 
-   ~~~ cs
+   {% highlight C# %}
 
 		rangeSlider.Orientation=Orientation.Horizontal;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
 
@@ -332,14 +315,13 @@ The layout of the range slider can be defined using the Orientation property. Th
 
 2. When Orientation is set to vertical.
 
-   ~~~ cs
+   {% highlight C# %}
 
 
 
 		rangeSlider.Orientation=Orientation.Vertical;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
 ![](Interactive-Features_images/Interactive-Features_img27.jpeg)
@@ -356,7 +338,7 @@ This position of the right and left thumb can be set using the SliderMin and Sli
 
 In the following example, the position of the right and left thumbs is set to 7,2.
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -375,13 +357,13 @@ rangeSlider.SliderMin = 2;
 
 
 
-## Setting Minimum and Maximum values
+## Setting minimum and maximum values
 
 These properties specify the Minimum and Maximum bounds of the RangeSlider control till which the channel extends.
 
-In the following example the maximum bound is set to 10. 
+In the following example the maximum bound is set to 10.
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -408,7 +390,7 @@ Occurs when the mouse moves any of the thumb over the channel.
 
 EventHandler for Scroll event
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -432,7 +414,7 @@ EventHandler for ValueChanged event
 
 
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 

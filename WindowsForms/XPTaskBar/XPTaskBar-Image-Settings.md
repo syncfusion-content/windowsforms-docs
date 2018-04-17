@@ -6,33 +6,35 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# XPTaskBar- Image Settings 
+# XPTaskBar-Image settings
 
-This section discusses the image settings available in XPTaskBar. 
+This section discusses the image settings available in XPTaskBar.
 
-## Adding Images to the XPTaskBar Box Header
+## Adding images to the XPTaskBar box header
 
 We can add images to the header of the XPTaskBar Box using the ImageList control and some properties that are discussed below.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPTaskBar Box Property</th><th>
+XPTaskBar box property</th><th>
 Description</th></tr>
 <tr>
 <td>
 HeaderImageList</td><td>
-Gets / sets the ImageList that will be used to draw the header image.</td></tr>
+Gets/sets the ImageList that will be used to draw the header image.</td></tr>
 <tr>
 <td>
 HeaderImageIndex</td><td>
-Gets / sets the index into the HeaderImageList.</td></tr>
+Gets/sets the index into the HeaderImageList.</td></tr>
 </table>
 
 
 Drag and drop the ImageList control onto the form and add images to it using the Image Collection Editor. To include an image in the header, set the HeaderImageList property to an ImageList containing the image and also set the HeaderImageIndex property to refer to a specific image within the above list.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -46,7 +48,7 @@ this.xpTaskBarBox1.HeaderImageIndex = 0;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.xpTaskBarBox1.ImageList = Me.imageList1
 
@@ -56,19 +58,21 @@ Me.xpTaskBarBox1.HeaderImageIndex = 0
 
 {% endhighlight %}
 
+{% endtabs %}
+
  ![](Overview_images/Overview_img115.jpeg) 
 Image added to the TaskBar Box Header
 
-## Adding Images to XPTaskBar Items
+## Adding images to XPTaskBar items
 
 Images can be easily associated with the ImageIndex property of the XPTaskBar Items.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPTaskBar Item Property</th><th>
+XPTaskBar item property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -83,7 +87,9 @@ It sets the image index into the ImageList that contains images for the TaskBar 
 
 The ImageIndex of the XPTaskBar Items can be specified in the XPTaskBarItem Collection Editor.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 this.xpTaskBarBox1.ImageList = this.imageList1;
 
@@ -97,7 +103,7 @@ this.xpTaskBarBox1.Items[2].ImageIndex = 2;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.xpTaskBarBox1.ImageList = Me.imageList1
 
@@ -108,5 +114,7 @@ Me.xpTaskBarBox1.Items(1)ImageIndex = 1
 Me.xpTaskBarBox1.Items(2)ImageIndex = 2
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img116.jpeg) 

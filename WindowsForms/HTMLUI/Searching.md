@@ -13,9 +13,9 @@ Like in popular browsers, the HTMLUI control helps the users to search for a giv
 
 The CTRL+F shortcut can also be used for enabling this feature.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -25,7 +25,7 @@ this.htmluiControl1.DisplayFindForm();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -35,7 +35,9 @@ Me.htmluiControl1.DisplayFindForm()
 
 {% endhighlight %}
 
-## HTMLUISearching Sample
+{% endtabs %}
+
+## HTMLUISearching sample
 
 This sample shows how a text can be searched in a document loaded into the HTMLUI.
 

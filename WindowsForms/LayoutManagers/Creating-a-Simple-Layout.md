@@ -6,7 +6,7 @@ platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-# Creating a Simple Layout
+# Creating a simple layout
 
  This section discusses how a simple layout can be created using Layout Managers, which are discussed in the following topics.
 
@@ -16,11 +16,11 @@ documentation: ug
 
 {% endseealso %}
 
-## Through Designer
+## Through designer
 
 This topic discusses how to create a simple layout for aligning Child controls through designer.
 
-### Adding Child Controls
+### Adding Child controls
 
 * Populate the form with the necessary Child controls (here, we are using Buttons), by dragging and dropping them from the toolbox.
 
@@ -36,22 +36,22 @@ The Layout Manager can be added before or after adding the Child controls to the
 
 
 
-![](Overview_images/Overview_img4.jpeg) 
+![](Overview_images/Overview_img4.jpeg)
 
 
 
-### Setting Container Control
+### Setting Container control
 
 * You can optionally drop the Child controls onto the Container control that you want to layout and the design time will automatically set the ContainerControl property in the Layout Manager.
 * Form, Panel or any control that inherits the Container control can be set as a Container control for the Child controls that are added (here, form is set as the Container control).
 
 N> The FlowLayout, CardLayout and GridLayout controls automatically arrange the Child controls of the Container control in a specific manner. When new controls are added, the Layout Manager will ensure that the old layout is not broken and that the existing controls are not messed up.
 
-### Configuring Child Controls
+### Configuring Child controls
 
 For BorderLayout and GridBagLayout, it is necessary to configure the Child controls by changing their extended properties via the property grid in the designer so that the Child controls can be aligned properly.
 
-![](Overview_images/Overview_img6.jpeg) 
+![](Overview_images/Overview_img6.jpeg)
 
 
 ### Configuring Layout Manager
@@ -60,11 +60,11 @@ You can then configure the Layout Manager by changing its properties via the pro
 
 {% seealso %}
 
-[Through Code](#through-code)
+[Through code](#through-code)
 
 {% endseealso %}
 
-## Through Code
+## Through code
 
 The following steps will help you to create a simple layout for button controls, via code. Here the programmatic creation of the BorderLayout is discussed. Similarly other layouts can also be created.
 
@@ -73,26 +73,29 @@ The following steps will help you to create a simple layout for button controls,
 * Include the required namespace.
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
 * Create variables for the Child controls (Buttons) and Layout Manager (Border Layout).
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 private System.Windows.Forms.Button btn1;
 
@@ -110,7 +113,7 @@ private Syncfusion.Windows.Forms.Tools.BorderLayout layout;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private btn1 As System.Windows.Forms.Button
 
@@ -126,11 +129,13 @@ Private layout As Syncfusion.Windows.Forms.Tools.BorderLayout
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Declare instances for the Child controls (Buttons).
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 btn1 = new Button();
 
@@ -146,7 +151,7 @@ btn5 = new Button();
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 btn1 = New Button()
 
@@ -160,10 +165,13 @@ btn5 = New Button()
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Add the Child controls (Buttons) to the form.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.Controls.AddRange(new Button[] {btn1,btn2,btn3,btn4,btn5});
@@ -172,17 +180,19 @@ this.Controls.AddRange(new Button[] {btn1,btn2,btn3,btn4,btn5});
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.Controls.AddRange(New Button() {btn1,btn2,btn3,btn4,btn5})
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Declare an instance for the Layout Manager (Border Layout).
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 layout = new Syncfusion.Windows.Forms.Tools.BorderLayout();
 
@@ -190,17 +200,19 @@ layout = new Syncfusion.Windows.Forms.Tools.BorderLayout();
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 layout = New Syncfusion.Windows.Forms.Tools.BorderLayout()
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Set the Container control for the Layout Manager (Border Layout).
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.layout.ContainerControl = this;
 
@@ -212,7 +224,7 @@ this.layout.ContainerControl = this;
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.layout.ContainerControl = Me
 
@@ -222,10 +234,13 @@ Me.layout.ContainerControl = Me
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Set the margin between the client rectangle and the layout rectangle.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.layout.BottomMargin = 20;
@@ -239,7 +254,7 @@ this.layout.TopMargin = 20;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.layout.BottomMargin = 20
@@ -252,11 +267,13 @@ Me.layout.TopMargin = 20
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Set the spacing between the layout border and the components.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.layout.HGap = 20;
 
@@ -266,7 +283,7 @@ this.layout.VGap = 20;
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.layout.HGap = 20
 
@@ -274,11 +291,13 @@ Me.layout.VGap = 20
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Set the text and border position for the Child controls (Buttons).
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.btn1.Text = "One";
 
@@ -303,7 +322,7 @@ this.layout.SetPosition(this.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.btn1.Text = "One"
@@ -326,7 +345,9 @@ Me.layout.SetPosition(Me.btn4,Syncfusion.Windows.Forms.Tools.BorderPosition.West
 
 Me.layout.SetPosition(Me.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Center)
 
-{% endhighlight  %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img7.jpeg) 
 
@@ -334,6 +355,6 @@ Me.layout.SetPosition(Me.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Cent
 
 {% seealso %}
 
-[Through Designer](#through-designer)
+[Through designer](#through-designer)
 
 {% endseealso %}
