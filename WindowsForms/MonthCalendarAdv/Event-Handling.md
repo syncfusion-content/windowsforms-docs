@@ -6,7 +6,7 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Event Handling
+# Event handling
 
 MonthCalendarAdv triggers events whenever the date is selected and changed. The most widely used events are discussed as follows.
 
@@ -15,7 +15,7 @@ MonthCalendarAdv triggers events whenever the date is selected and changed. The 
 <table>
 <tr>
 <th>
- MonthCalendarAdv Events</th><th>
+ MonthCalendarAdv events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -73,9 +73,9 @@ This event is triggered when mouse hover on the date and to assign SuperToolTip 
 
 
 
-## DateCellQueryInfo Event
+## DateCellQueryInfo event
 
-This event is handled to provide custom formatting for calendar cells. 
+This event is handled to provide custom formatting for calendar cells.
 
 
 
@@ -122,8 +122,9 @@ Gets or sets the the value to indicate the highlight color of the selected date.
 
 You can use this style parameter to set tooltips for MonthCalendarAdv control as follows. This example uses IsCurrentCell, IsOutsideRange, ColIndex and Handled members.
 
+{% tabs %}
 
-{% highlight c#  %}
+{% highlight C# %}
 
 
 private void monthCalendarAdv1_DateCellQueryInfo(object sender,DateCellQueryInfoEventArgs e)
@@ -179,8 +180,9 @@ private void monthCalendarAdv1_DateCellQueryInfo(object sender,DateCellQueryI
 }
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -231,11 +233,13 @@ Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, By
 
 End Sub
 
-{% endhighlight  %}
+{% endhighlight %}
+
+{% endtabs %}
 
 N> *  In Fig 1, 18th is identified as the current cell and the tooltip is displayed. Also the background of the current cell is painted with LightSteelBlue.*  Edges of the 4th column cells (ColIndex=4), other than the current cell are set to "Raised" and hence shows a raised appearance. *  In Fig 2, user tries to query the cells outside the range, i.e inactive month dates and the respective tooltip is displayed.
 
-![](CalendarDateTime_images/Overview_img174.jpeg) 
+![](CalendarDateTime_images/Overview_img174.jpeg)
 
 
 
@@ -249,7 +253,7 @@ N> *  In Fig 1, 18th is identified as the current cell and the tooltip is displa
 How to customize the appearance of the diagonal columns?
 {% endseealso %}
 
-## DateHover Event
+## DateHover event
 
 This event is handled when mouse hover on the calendar cells and to assign SuperToolTip for calender cells.
 
@@ -294,8 +298,9 @@ Model</td><td>
 Gets the Calendar model.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c#  %}
+{% highlight C# %}
 
 
 
@@ -315,8 +320,9 @@ void monthCalendarAdv1_DateHover(object sender, Syncfusion.Windows.Forms.Tools.D
 
 }
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -338,8 +344,10 @@ e.ToolTipStyle = Syncfusion.Windows.Forms.Tools.ToolTipStyle.Ballon
 
 End Sub
 
-{% endhighlight  %}
+{% endhighlight %}
+
+{% endtabs %}
 
 The following screenshot illustrates the SuperToolTip when mouse hover on the respective date value by using DateHover event.
 
-![](CalendarDateTime_images/Overview_img176.png) 
+![](CalendarDateTime_images/Overview_img176.png)
