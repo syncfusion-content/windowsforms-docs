@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-# HTML Layout
+# HTML layout
 
 HTMLUI can be used as a HTML viewer in two ways.
 
@@ -18,7 +18,7 @@ HTMLUI can be used as a HTML viewer in two ways.
 
 The display purposes involve the functionality similar to Web browsers in displaying the contents of the HTML document. In the Layout purpose, it is used to layout and customize rich user-interactive interfaces.
 
-HTMLUI control can be used in a variety of applications which are common in our day-to-day life. 
+HTMLUI control can be used in a variety of applications which are common in our day-to-day life.
 
 With HTMLUI control's support to images and animated images, Chat applications can be developed. The form based dialog box applications used in the office desks can also be developed at ease by simply changing different HTML documents as per the needs. The other interesting applications that can be developed using HTMLUI include games, animations, user blog, and so on.
 
@@ -30,7 +30,7 @@ The following figure shows a form based dialog that illustrates HTMLUI as a Layo
 
 
 
-## HTMLUI Chat Sample
+## HTMLUI chat sample
 
 This sample illustrates how a Chat application can be implemented using HTMLUI.
 

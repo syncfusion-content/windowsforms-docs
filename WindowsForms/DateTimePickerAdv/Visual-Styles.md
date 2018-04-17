@@ -36,7 +36,7 @@ The styles are built in for DateTimePickerAdv.
 <table>
 <tr>
 <th>
-DateTimePickerAdv Property</th><th>
+DateTimePickerAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -48,8 +48,6 @@ Gets or Sets the visual style of the DateTimePickerAdv. The default value is 'De
 
 This option helps to set the Default theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -60,7 +58,7 @@ this.dateTimePickerAdv1.Style=Syncfusion.Windows.Forms.VisualStyle.default;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 ' Default
@@ -78,8 +76,6 @@ Me.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.default
 
 This option helps to set the Office2007 theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -90,7 +86,7 @@ this.dateTimePickerAdv1.Style=Syncfusion.Windows.Forms.VisualStyle.Office2007;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2007
 
@@ -117,8 +113,6 @@ It also specifies the color schemes for Office 2007 visual styles. They can be B
 
 This option helps to set the Office2007 Blue theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -131,7 +125,7 @@ this.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007The
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2007ThemeBlue
 
@@ -141,14 +135,14 @@ Me.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](DateTimePicker_images/Overview_img203.jpeg) 
 
 
 **Black**
 
 This option helps to set the Office2007 Black theme.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -162,7 +156,7 @@ this.dateTimePickerAdv1.Office2007Theme=Syncfusion.Windows.Forms.Office2007Theme
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2007ThemeBlack
 
@@ -178,8 +172,6 @@ Me.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme
 
 **Silver**
 
-#####  Code Sample
-
 This option helps to set the Office2007 Silver theme.
 
 {% tabs %}
@@ -194,7 +186,7 @@ this.dateTimePickerAdv1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Them
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Office2007ThemeSilver
 
@@ -213,8 +205,6 @@ Me.dateTimePickerAdv1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.
 
 This option helps to apply the custom colors to the DateTimePickerAdv by setting Office2010Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -228,7 +218,7 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Managed
 
@@ -249,8 +239,6 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Red)
 This option is used to set the Office200&Outlook theme.
 
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -261,7 +249,7 @@ this.dateTimePickerAdv1.Style =  Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2007Outlook
 
@@ -287,7 +275,7 @@ this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2010
 Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
@@ -312,8 +300,6 @@ It also allows to specify the color schemes for Office 2010 visual styles. They 
 
 This option helps to set the Office2010 Blue theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -325,7 +311,7 @@ this.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010The
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2010Blue
 
@@ -342,8 +328,6 @@ Me.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme
 
 This option helps to set the Office2010 Black theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -355,7 +339,7 @@ this.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010The
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2007Black
 
@@ -371,8 +355,6 @@ Me.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme
 
 **Silver**
 
-#####  Code Sample
-
 This option helps to set the Office2010 Silver theme.
 
 {% tabs %}
@@ -386,7 +368,7 @@ this.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010The
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Office2007Silver
 
@@ -403,8 +385,6 @@ Me.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme
 
 This option helps to apply the custom colors to the MonthCalendarAdv by setting Office2010Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -418,7 +398,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Managed
 Me.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2010
@@ -444,7 +424,7 @@ this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Metro
 Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
@@ -469,7 +449,7 @@ this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016C
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'office2016Colorful
 
@@ -485,7 +465,7 @@ Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 This option helps to set the Office2016DarkGray theme. theme.
 
-% tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
@@ -496,7 +476,7 @@ this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016D
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' office2016DarkGray
 
@@ -523,7 +503,7 @@ this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016D
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' office2016DarkGray
 
@@ -549,7 +529,7 @@ this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016B
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' office2016Black
 
@@ -575,7 +555,7 @@ this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016W
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'office2016White
 

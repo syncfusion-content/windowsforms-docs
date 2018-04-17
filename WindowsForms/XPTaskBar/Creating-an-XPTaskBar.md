@@ -10,13 +10,13 @@ documentation: ug
 
 This tutorial will show you how a XPTaskBar is created through the following ways.
 
-## Through Designer
+## Through designer
 
 In this tutorial, we will create a simple XPTaskBar.
 
-1. Add an XPTaskBar control from the toolbox onto your form and a new instance will be placed on your form. Dock the control to the left of the form. Set the DockPadding.All property to '5' on the XPTaskBar so that there will be some space between the XPTaskBar Box children and the XPTaskBar. 
+1. Add an XPTaskBar control from the toolbox onto your form and a new instance will be placed on your form. Dock the control to the left of the form. Set the DockPadding.All property to '5' on the XPTaskBar so that there will be some space between the XPTaskBar Box children and the XPTaskBar.
 
-   ![](Overview_images/Overview_img93.jpeg) 
+   ![](Overview_images/Overview_img93.jpeg)
 
 
 
@@ -25,49 +25,50 @@ In this tutorial, we will create a simple XPTaskBar.
 
 2. To add an XPTaskBar Box, right click on the XPTaskBar control and select the Add Task Box verb. This will add an empty XPTaskBar Box instance. You can change it's Header Text property to change the text of the header.
 
-3. You can also add an XPTaskBar Box using the Add Task Box command in the Property Grid. 
+3. You can also add an XPTaskBar Box using the Add Task Box command in the Property Grid.
 
-   ![](Overview_images/Overview_img95.jpeg) 
+   ![](Overview_images/Overview_img95.jpeg)
 
-   ![](Overview_images/Overview_img96.jpeg) 
+   ![](Overview_images/Overview_img96.jpeg)
   
 
 4. Select the newly added XPTaskBar Box and open it's XPTaskBarItem Collection Editor. There you can add one or more XPTaskBar Items specifying the text, image (using the ImageIndex property), etc. for each item. To distinguish one item from the other, you can specify a unique Tag property for each item.
 
-   ![](Overview_images/Overview_img97.jpeg) 
+   ![](Overview_images/Overview_img97.jpeg)
    
 
-   ![](Overview_images/Overview_img98.jpeg) 
+   ![](Overview_images/Overview_img98.jpeg)
    
-   ![](Overview_images/Overview_img99.jpeg) 
+   ![](Overview_images/Overview_img99.jpeg)
 
-   ![](Overview_images/Overview_img100.jpeg) 
+   ![](Overview_images/Overview_img100.jpeg)
 
 
 N> The XPTaskBar Boxes can also host a Panel control within it. During design time, users can simply drag and drop the panel on the box. In code, users can do this  by adding the panel to the Controls collection of XPTaskBarBox. The panel's width will be resized to fit, whereas it's height will be based on the PreferredChildPanelHeight property setting.
 
 
-## Through Code
+## Through code
 
 The following step by step procedure helps you to create XPTaskBar programmatically.
 
 1. Add the namespace Syncfusion.Windows.Forms.Tools.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		using Syncfusion.Windows.Forms.Tools;
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
+   {% highlight VB %}
 
-
-   ~~~ vbnet
 
 		Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
+
+   {% endtabs %}
 
 
 
@@ -75,7 +76,9 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
 3. Create instances for XPTaskBar control, XPTaskBar Box1, XPTaskBar Box2 and ImageList control.
 
-   ~~~ cs 
+   {% tabs %}
+
+   {% highlight C# %}
 
 		private Syncfusion.Windows.Forms.Tools.XPTaskBar xpTaskBar1;
 
@@ -95,12 +98,9 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
 		this.xpTaskBarBox2 = new Syncfusion.Windows.Forms.Tools.XPTaskBarBox();
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
-
-
-   ~~~ vbnet
+   {% highlight VB %}
 
 		Private xpTaskBar1 As Syncfusion.Windows.Forms.Tools.XPTaskBar = New XPTaskBar()
 
@@ -120,39 +120,42 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
 		Me.xpTaskBarBox2 = New Syncfusion.Windows.Forms.Tools.XPTaskBarBox()
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
+
+   {% endtabs %}
 
 4. Add XPTaskBar to the control collection.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		this.Controls.Add(this.xpTaskBar1);
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-
-
-   ~~~ vbnet
+   {% highlight VB %}
 
 		Me.Controls.Add(Me.xpTaskBar1)
+   
+   {% endhighlight %}
 
-   ~~~
-   {:.prettyprint}
+   {% endtabs %}
 
 5. Set the ImageList to XPTaskBar Box1 and XPTaskBar Box2.
 
  
-   ~~~ cs
+  {% tabs %}
+
+  {% highlight C# %}
+
 		this.xpTaskBarBox1.ImageList = this.imageList1;
 
 		this.xpTaskBarBox2.ImageList = this.imageList1;
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-   ~~~ vbnet
+   {% highlight VB %}
 
 
 
@@ -160,12 +163,15 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
 		Me.xpTaskBarBox2.ImageList = Me.imageList1
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
+
+   {% endtabs %}
 
 6. Set Header BackColor, Text and Item BackColor for XPTaskBar Box1 and XPTaskBar Box2.
 
-   ~~~ cs
+   {% tabs %}
+
+  {% highlight C# %}
 
 		this.xpTaskBarBox1.HeaderBackColor = Color.Yellow;
 
@@ -181,12 +187,9 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
 		this.xpTaskBarBox2.ItemBackColor = Color.WhiteSmoke;
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-
-
-   ~~~ vbnet
+   {% highlight VB %}
 
 		Me.xpTaskBarBox1.HeaderBackColor = Color.Yellow 
 
@@ -202,10 +205,13 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
 		Me.xpTaskBarBox2.ItemBackColor = Color.WhiteSmoke
 
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
+
+   {% endtabs %}
 
 7. Add XPTaskBar Items to the XPTaskBar Box1 and XPTaskBar Box2.
+
+   {% tabs %}
 
    {% highlight C# %}  
 
@@ -233,9 +239,7 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
    {% endhighlight %}
 
-
-
-   {% highlight vbnet %} 
+   {% highlight VB %} 
 
 		Me.xpTaskBarBox1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem() {New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, Nothing, "", True, _ 
 
@@ -261,7 +265,11 @@ The following step by step procedure helps you to create XPTaskBar programmatica
 
    {% endhighlight %}
 
+   {% endtabs %}
+
 8.Finally add the created XPTaskBar Boxes to the XPTaskBar control.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -273,13 +281,16 @@ this.xpTaskBar1.Controls.Add(this.xpTaskBarBox2);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox1)
 
 Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox2)
 
 {% endhighlight %}
+
+
+{% endtabs %}
 
 
  ![](Overview_images/Overview_img102.jpeg) 

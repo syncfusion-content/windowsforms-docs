@@ -21,11 +21,9 @@ The support for style sheets is enabled in HTMLUI. This lets the user to define 
 
 External style sheets are linked to the file through the Link tag. While the internal style sheets are applied with the help of the Style tag inside the head section, inline style sheets are applied as the values of the style attributes of the specific HTML element.
 
-The following HTML code illustrates the above concepts.
 
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 <html>
 
@@ -51,9 +49,9 @@ The following HTML code illustrates the above concepts.
 
 HTMLUI also supports updation of styles to the HTML document at run time. This can be done in two modes, either by changing the value of the style attribute for internal style or the class attribute for the inline style sheet.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -66,7 +64,7 @@ this.textBox.Attributes["style"].Value = "background-color:red;";
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -80,7 +78,9 @@ Private Me.textBox.Attributes("style").Value = "background-color:red;"
 
 {% endhighlight %}
 
-## Cascading Style Sheets
+{% endtabs %}
+
+## Cascading style sheets
 
 Cascading style sheets contain the style definitions for various HTML tags that are defined in the document. Style sheets are included in a HTML document to make the document more clearer so that the actual contents will be inside the document while the styles for these contents will be applied from an external resource. This is to improve the readability of the document and also to apply style changes to the existing document at different times when required.
 
@@ -92,9 +92,9 @@ The Inline style sheet will be present inside the HTML tag as an attribute named
 
 The following snippet shows an inline style, which is applied as an attribute inside the tag to a HTML element, which is inside the document.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -116,7 +116,7 @@ Inline style applied to a paragraph.
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -124,7 +124,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\inline.html");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -132,13 +132,15 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\inline.html")
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Internal StyleSheet
 
 The Internal style sheet is used to define the same styles to all the occurrences of a specific tag in the document. The internal style sheet is defined inside the Style tag, in the head section of the document. The user can create another style definition for other HTML tags with a new name inside the same style tag. The following snippet shows how an internal stylesheet is defined for a specific tag in a HTML document.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -172,7 +174,7 @@ File name and location: C:\MyProjects\StyleSheets\internal.html
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -180,7 +182,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\internal.html");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -188,13 +190,15 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\internal.html")
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### External StyleSheet
 
 The External style sheets contain style definitions in a separate .css file, for various HTML tags that are in the document. These styles are applied by linking the CSS file to the HTML document inside the Link tag. The Link tag should be placed in the head section of the HTML document as it contains the information about the cascading style sheet that is to be referred by this document.
 
+{% tabs %}
 
-
-{% highlight css %}
+{% highlight CSS %}
 
 
 
@@ -234,7 +238,7 @@ body
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -262,15 +266,17 @@ File name and location: C:\MyProjects\StyleSheets\external.html
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The HTMLUI control uses two modes of applying styles to the HTML document with the help of the external style sheets.
 
-#### Design Time
+#### Design time
 
 This type of setting is carried out in the document at design time. It is used in circumstances where only a standard style is applied for the documents.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -278,7 +284,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\external.html");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -286,13 +292,15 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\external.html")
 
 {% endhighlight %}
 
-#### Run Time
+{% endtabs %}
+
+#### Run time
 
 HTMLUI is so flexible that the user can define styles for the HTML document at run time. The LoadCSS method of the HTMLUI control helps the user to load another CSS file to the current document at run time.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -302,7 +310,7 @@ htmluiControl.LoadCSS(@"C:\MyProjects\StyleSheets\NewStyleSheet.css");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -312,9 +320,9 @@ htmluiControl.LoadCSS(@"C:\MyProjects\StyleSheets\NewStyleSheet.css")
 
 {% endhighlight %}
 
+{% endtabs %}
 
-
-### Class Selectors 
+### Class selectors
 
 Internal and external styles are not only defined by mentioning the names of the tags, but also by the Style Class Selectors. The class selectors are used to define the styles under a common class name and apply the styles to different tags by specifying the name of the class as the value of the class attribute, for the specific element.
 
@@ -322,13 +330,13 @@ HTMLUI supports two types of styles definitions for the HTML documents with the 
 
 
 
-#### Name Class Selectors
+#### Name class selectors
 
 The Name Class Selectors contain a common name that is given to the style class, which is defined in the internal or external CSS file. The following snippet shows how the name class selectors are defined for HTML elements in the document.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -362,7 +370,7 @@ File name and location: C:\MyProjects\StyleSheets\NameClass.html
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -370,7 +378,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\NameClass.html");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -378,13 +386,15 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\NameClass.html")
 
 {% endhighlight %}
 
-#### ID Class Selectors
+{% endtabs %}
+
+#### ID class selectors
 
 The ID Class Selectors are defined like the name class selectors. Instead of specifying names, a unique identity is specified for the styles while defining them, and these style names are passed as the values of the id attribute to the concerned HTML elements.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -418,7 +428,7 @@ File name and location: C:\MyProjects\StyleSheets\idClass.html
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -426,7 +436,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\idClass.html");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -434,14 +444,14 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\idClass.html")
 
 {% endhighlight %}
 
-### CSS Comments
+{% endtabs %}
+
+### CSS comments
 
 The HTMLUI control supports comments inside the cascading style sheet. The comments helps the developer to explain his ideas behind the styles and also help the user to understand the functionality of the styles. A CSS comment begins with '/*' and ends with '*/' (For eg., /*This is a comment*/). The comments are not visible in the browser at run time.
 
 
-
-
-{% highlight css %}
+{% highlight CSS %}
 
 
 
@@ -457,7 +467,7 @@ div{color: red}
 
 {% endhighlight %}
 
-## Supported CSS Attributes
+## Supported CSS attributes
 
  The following attributes are supported in HTMLUI for the cascading style sheet definition.
 
@@ -469,13 +479,11 @@ The background attribute of CSS helps the user to set the back ground properties
 
 
 
-#### Background Image
+#### Background image
 
 The background-image property is used to set an image as the background of the HTML element.
 
-
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -503,13 +511,13 @@ The background-image property is used to set an image as the background of the H
 
 {% endhighlight %}
 
-#### Background Color
+#### Background color
 
 The background-color property is used to set a background color for a HTML element.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -537,20 +545,20 @@ The background-color property is used to set a background color for a HTML eleme
 
 {% endhighlight %}
 
-#### Background Repeat
+#### Background repeat
 
 The background-repeat property repeats the background that is set for the HTML element, horizontally or vertically.
 
 
 
-* repeat-x: Repeats the background image horizontally
-* repeat-y: Repeats the background image vertically
-* repeat: Repeats the background image both horizontally and vertically
-* no-repeat: Fixes the background image at the top-left corner of the element and does not repeat the image display
+* repeat-x: Repeats the background image horizontally.
+* repeat-y: Repeats the background image vertically.
+* repeat: Repeats the background image both horizontally and vertically.
+* no-repeat: Fixes the background image at the top-left corner of the element and does not repeat the image display.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -582,13 +590,11 @@ body{background-image: url(sync.gif); background-repeat: repeat-x;}
 
 The text attribute in CSS helps the user to set properties for his text display. With these properties the appearance of the text can be modified according to the user’s requirements.
 
-#### Text Color
+#### Text color
 
 The color attribute is used to apply a specific color to the rendered text.
 
-
-
-{% highlight html %}
+{% highlight HTML %}
 
 <html><head>
 
@@ -614,13 +620,13 @@ p {color: blue}
 
 {% endhighlight %}
 
-#### Text Align
+#### Text align
 
 The text-align attribute is used to align the text inside an element to the specified horizontal direction.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -642,13 +648,13 @@ The text-align attribute is used to align the text inside an element to the spec
 
 {% endhighlight %}
 
-#### Text Decoration
+#### Text decoration
 
 The text-decoration attribute is used to decorate a text. The HTMLUI control supports the Underline and the None style values for the text decoration attribute.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -672,13 +678,13 @@ The font attribute is used to define the font specification for a HTML element i
 
 The HTMLUI control supports the following font attributes for the HTML elements.
 
-#### Font Family
+#### Font family
 
 The font-family attribute is used to specify a font for the text that is to be displayed in the specific HTML element.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 <html><head>
@@ -698,13 +704,13 @@ The font-family attribute is used to specify a font for the text that is to be d
 {% endhighlight %}
 
 
-#### Font Size
+#### Font size
 
 The font-size attribute is used to specify a size for the rendered text that is to be displayed in the HTMLUI control.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 <html><head>
@@ -723,13 +729,13 @@ The font-size attribute is used to specify a size for the rendered text that is 
 
 {% endhighlight %}
 
-#### Font Style
+#### Font style
 
 The font-style attribute is used to format the specified text with the given styles. HTMLUI supports the normal and italic styles for the rendered text inside the HTML element.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 <html><head>
 
@@ -747,13 +753,13 @@ The font-style attribute is used to format the specified text with the given sty
 
 {% endhighlight %}
 
-#### Font Weight
+#### Font weight
 
 The font-weight attribute is used to specify the thickness or boldness of the rendered text. HTMLUI supports the normal and bold font-weight that is associated with the CSS text rendering.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -775,19 +781,19 @@ The font-weight attribute is used to specify the thickness or boldness of the re
 
 The border attribute is used to specify the border properties for the rendered table element through CSS. The color and thickness of the border can also be specified through the border attribute. HTMLUI also supports applying border properties to the four sides of the table border independently.
 
-#### Border Color
+#### Border color
 
 
 
-* border-color: Specifies the color for the border of the rendered table
-* border-bottom-color: Specifies the color for the bottom border of the rendered table
-* border-top-color: Specifies the color for the top border of the rendered table
-* border-left-color: Specifies the color for the left border of the rendered table
-* border-right-color: Specifies the color for the right border of the rendered table
+* border-color: Specifies the color for the border of the rendered table.
+* border-bottom-color: Specifies the color for the bottom border of the rendered table.
+* border-top-color: Specifies the color for the top border of the rendered table.
+* border-left-color: Specifies the color for the left border of the rendered table.
+* border-right-color: Specifies the color for the right border of the rendered table.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -813,19 +819,19 @@ table{ border-left-color: blue;  border-right-color: green; border-top-color: re
 
 {% endhighlight %}
 
-#### Border Width
+#### Border width
 
 
 
 * border-width: Specifies the thickness for the border of the rendered table. The user can specify the border-width in units.
-* border-bottom-width: Specifies the thickness for the bottom border of the rendered table
-* border-top-width: Specifies the thickness for the top border of the rendered table
-* border-left-width: Specifies the thickness for the left border of the rendered table
-* border-right-width: Specifies the thickness for the right border of the rendered table
+* border-bottom-width: Specifies the thickness for the bottom border of the rendered table.
+* border-top-width: Specifies the thickness for the top border of the rendered table.
+* border-left-width: Specifies the thickness for the left border of the rendered table.
+* border-right-width: Specifies the thickness for the right border of the rendered table.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -857,7 +863,7 @@ The CSS padding attribute in HTMLUI is used to define a fixed space between the 
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 <html><head>
 
@@ -887,19 +893,19 @@ table{padding-left: 25;  padding-right: 50; padding-top: 25; padding-bottom: 50}
 
 The padding attribute is used to specify a fixed space for all the four sides of the element's contents.
 
-#### Padding Right
+#### Padding right
 
 The padding-right attribute is used to specify the padding property at the right side of the HTML element.
 
-#### Padding Left
+#### Padding left
 
 The padding-left attribute is used to specify the padding for the left side of the element.
 
-#### Padding Top
+#### Padding top
 
 The padding-top attribute specifies the padding on the top edge of the element.
 
-#### Padding Bottom
+#### Padding bottom
 
 The padding-bottom attribute specifies the padding at the bottom of the HTML element from its border.
 
@@ -910,13 +916,13 @@ The Dimension properties are used to specify the size for an HTML element.
 
 
 * height: Specifies the height of an element. The HTMLUI control allows the user to specify the height either in percentage or units.
-* width: Specifies the width of an element
+* width: Specifies the width of an element.
 
 
 
 The width of an element in HTMLUI can be mentioned in terms of units.
 
-{% highlight html %}
+{% highlight HTML %}
 
 <html>
 
@@ -942,11 +948,11 @@ The CSS Classification properties determine the display of an element in the HTM
 
 
 
-* cursor: Specifies the cursor that is to be displayed when the mouse pointer is over the specified HTML element
+* cursor: Specifies the cursor that is to be displayed when the mouse pointer is over the specified HTML element.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 <html>
@@ -965,13 +971,13 @@ The CSS Classification properties determine the display of an element in the HTM
 
 ### Positioning - CSS
 
-The positioning attribute is used to determine the position of the HTML element that is to be displayed in the HTMLUI control. 
+The positioning attribute is used to determine the position of the HTML element that is to be displayed in the HTMLUI control.
 
-* vertical-align: Specifies the vertical alignment of the element during display
+* vertical-align: Specifies the vertical alignment of the element during display.
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -997,8 +1003,8 @@ The HTMLUI control supports the link and the hover classes in order to display t
 
 
 
-* link: Specifies the properties for the display of a hyperlink in the normal state
-* hover: Specifies the CSS properties for the hyperlink when a mouse is moved over the link
+* link: Specifies the properties for the display of a hyperlink in the normal state.
+* hover: Specifies the CSS properties for the hyperlink when a mouse is moved over the link.
 
 
 
@@ -1006,7 +1012,7 @@ The following sample shows how different properties can be set for the hyperlink
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -1054,7 +1060,7 @@ The following sample shows how different properties can be set for the hyperlink
 
 {% endhighlight %}
 
-##  HTMLUIUseCSS Sample
+##  HTMLUIUseCSS sample
 
 This sample demonstrates the implementation of External Style Sheets in HTMLUI.
 
@@ -1068,7 +1074,7 @@ By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-### HTMLUIElementsCSS Sample
+### HTMLUIElementsCSS sample
 
 This sample demonstrates the implementation of Internal Style Sheets on HTML Elements.
 
@@ -1084,7 +1090,7 @@ By default, this sample can be found under the following location:
 
 
 
-## HTMLUI Appearance
+## HTMLUI appearance
 
 With HTMLUI, the application developer can decide the appearance of his application even at run time by setting the style according to his needs. A common application is changing the background color for a particular page based on the user signing in. These interactive applications help in developing user-friendly applications.
 
@@ -1092,8 +1098,8 @@ The HTMLUI control allows the following modes of changing the background color t
 
 
 
-* Inside the HTML document as Attribute
-* Using the Style Sheets
+* Inside the HTML document as Attribute.
+* Using the Style Sheets.
 
 
 
@@ -1101,7 +1107,7 @@ The following HTML coding shows the different methods of changing the background
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -1135,7 +1141,7 @@ The following figure shows the back color of the HTML document customized by usi
 
 
 
-### HTMLUIAppearance Sample
+### HTMLUIAppearance sample
 
 This sample illustrates the customization of HTMLUI Appearance.
 

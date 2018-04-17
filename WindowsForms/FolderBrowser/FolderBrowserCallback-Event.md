@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# FolderBrowserCallback Event
+# FolderBrowserCallback event
 
 The event occurs when an event within the folder browser dialog triggers a call to the validation callback. The event handler receives an argument of type FolderBrowserCallbackEventArgs.
 
@@ -26,11 +26,11 @@ Specifies whether the dialog is either dismissed or retained depending upon this
 <tr>
 <td>
 FolderBrowserCallbackSetState</td><td>
-Gets / sets the Folder Browser dialog's state.</td></tr>
+Gets/sets the Folder Browser dialog's state.</td></tr>
 <tr>
 <td>
 BrowseCallbackText</td><td>
-Gets / sets the contextual string based upon the FolderBrowserCallbackSetState property.</td></tr>
+Gets/sets the contextual string based upon the FolderBrowserCallbackSetState property.</td></tr>
 <tr>
 <td>
 FolderBrowserMessage</td><td>
@@ -50,7 +50,9 @@ It can be handled when browser validation is required.
 
 This handler is functionally equivalent to the Win32 BrowseCallbackProc callback function.
 
-{%highlight c#%}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -74,9 +76,9 @@ e.Dismiss = e.Path != "NONE";
 
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight VB %}
 
 Private Sub folderBrowser1_BrowseCallback(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.FolderBrowserCallbackEventArgs)
 
@@ -92,4 +94,6 @@ End If
 
 End Sub
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}

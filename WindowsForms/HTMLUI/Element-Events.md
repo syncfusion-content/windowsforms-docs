@@ -7,13 +7,13 @@ control: HTML UI
 documentation: ug
 ---
 
-# Element Events
+# Element events
 
-Each HTML element in an HTML document is made to support events, such asClick, DoubleClick, MouseMove, KeyPress, and so on just like the Windows Forms controls. 
+Each HTML element in an HTML document is made to support events, such asClick, DoubleClick, MouseMove, KeyPress, and so on just like the Windows Forms controls.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -29,8 +29,7 @@ Each HTML element in an HTML document is made to support events, such asClick, D
 
 {% endhighlight %}
 
-{% highlight c# %}
-
+{% highlight C# %}
 
 
 // Object declaration for the textarea element in the html document rendered in the control.
@@ -93,7 +92,7 @@ Console.WriteLine("MouseDown Event Handled");
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -149,11 +148,14 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Another important feature of the HTMLUI is its Bubbling Event architecture. With this architecture, a single common event handler defined for a particular event of the parent can be used for all the Child Elements bound to that parent while executing the same event.
 
 
+{% tabs %}
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -173,7 +175,7 @@ Another important feature of the HTMLUI is its Bubbling Event architecture. With
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -233,7 +235,7 @@ else if(elem.ID == "button2")
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -281,7 +283,9 @@ End Sub
 
 {% endhighlight %}
 
-## HTMLUI Bubbling Events Sample
+{% endtabs %}
+
+## HTMLUI bubbling events sample
 
 This sample demonstrates the implementation of Bubbling Event architecture in HTMLUI.
 
@@ -297,7 +301,7 @@ By default, this sample can be found under the following location:
 
 ...\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\HTMLUI.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-## HTMLUI Element Events Sample
+## HTMLUI element events sample
 
 This sample shows how element events are handled for creating effective user interfaces.
 

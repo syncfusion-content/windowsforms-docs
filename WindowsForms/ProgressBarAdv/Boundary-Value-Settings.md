@@ -7,18 +7,18 @@ control: ProgressBarAdv
 documentation: ug
 ---
 
-# Boundary Value Settings
+# Boundary value settings
 
 The ProgressBarAdv during it's progressive operation indicates a minimum value and a maximum value for the process.
 
 It provides the below properties to set the boundary values for the control and also the interval for the progression.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv Property</th><th>
+ProgressBarAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -41,7 +41,9 @@ Determines the amount to increment or decrement the value of the ProgressBarAdv 
 
 Create a ProgressBarAdv and set the below properties to see the changes.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.progressBarAdv1.Maximum = 200;
 
@@ -53,7 +55,7 @@ this.progressBarAdv1.Value = 100;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.progressBarAdv1.Maximum = 200
 
@@ -65,12 +67,14 @@ Me.progressBarAdv1.Value = 100
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Overview_images/Overview_img22.jpeg) 
 
 
 The methods associated with the above properties are given below.
 
-Methods Table
+Methods table
 
 <table>
 <tr>

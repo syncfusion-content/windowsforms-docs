@@ -7,9 +7,9 @@ control: Office2010 Form
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-The default forms can be changed into the Office2010 Form by following the below given steps.
+The default forms can be changed into the Office2010 Form by following the given steps.
 
 1)	Create a Window Forms project in Visual Studio and refer to the following assemblies.
 

@@ -7,9 +7,9 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Custom Dictionary
+# Custom dictionary
 
-SpellCheckerAdv comes with one predefined dictionary for English language and also supports to have Custom dictionary based on Application requirement. Users can use their own dictionaries for the different languages. 
+SpellCheckerAdv comes with one predefined dictionary for English language and also supports to have Custom dictionary based on Application requirement. Users can use their own dictionaries for the different languages.
 
 Words can be added to the custom dictionary with the *Add to dictionary* button in the SpellChecker dialog. Users can add their own custom dictionary by referring to the dictionary file path in the Custom Dictionary Editor dialog.
 

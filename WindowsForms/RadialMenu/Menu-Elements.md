@@ -1,32 +1,34 @@
 ---
 layout: post
 title: Menu-Elements | WindowsForms | Syncfusion
-description: menu elements 
+description: menu elements
 platform: WindowsForms
-control: RadialMenu 
+control: RadialMenu
 documentation: ug
 ---
 
-# Menu Elements 
+# Menu elements
 
-## Radial Menu Items
+## Radial Menu items
 
 Radial Menu items are populated with the business object collection. Each menu item can be checked.
 
-### Check Mode
+### Check mode
 
-The CheckMode of a Radial Menu Item is defined with the following options: 
+The CheckMode of a Radial Menu Item is defined with the following options:
 
-* None - When the CheckMode is set to None, item can not be checked. 
-* CheckBox - When the CheckMode is set to CheckBox, you can check more than one item in the same level. 
-* RadioButton - When the CheckMode is set to RadioButton, you can check only one item in the same level. 
+* None - When the CheckMode is set to None, item can not be checked.
+* CheckBox - When the CheckMode is set to CheckBox, you can check more than one item in the same level.
+* RadioButton - When the CheckMode is set to RadioButton, you can check only one item in the same level.
 
-### Grouping 
+### Grouping
 
 
-Using Grouping functionality, you can group multiple items in the same level. This property is used when the CheckMode property is set to Option. 
+Using Grouping functionality, you can group multiple items in the same level. This property is used when the CheckMode property is set to Option.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.radialMenuItem1.CheckMode = CheckMode.Check;
 
@@ -46,7 +48,7 @@ this.radialMenuItem3.CheckMode = CheckMode.Option;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -66,6 +68,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 {% endhighlight %}
 
+{% endtabs %}
 
 
 
@@ -74,7 +77,7 @@ Me.radialMenuItem3.CheckMode = CheckMode.Option
 
 
 
-## Radial Color Palette
+## Radial color palette
 
 Radial Color Palette is formed in Radial Menu with the Radial Color Items and it is used to update the color.
 
@@ -82,7 +85,7 @@ Radial Color Palette is formed in Radial Menu with the Radial Color Items and it
 
 
 
-## Radial Font List Box
+## Radial font list box
 
 Radial Font List Box is formed in Radial Menu with installed font family and it is used to update the font style.
 

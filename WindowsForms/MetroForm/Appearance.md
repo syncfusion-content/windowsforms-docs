@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-## Border Thickness
+## Border thickness
 
 MetroForm border can be customized using `BorderThickness` property.
 
@@ -29,7 +29,7 @@ Me.BorderThickness = 10
 
 {% endtabs %}
 
-## Border Color
+## Border color
 
 `BorderColor` property is used to change the color of the border.
 
@@ -52,7 +52,7 @@ Me.BorderThickness = 10
 
 ![](Appearance_images/Customization_img1.jpeg)
 
-## Caption Bar Height
+## Caption bar height
 
 Caption bar height can be customized using `CaptionBarHeight` property.
 
@@ -75,7 +75,7 @@ Me.CaptionBarHeight = 40
 
 ![](Appearance_images/Caption-Bar-Customization_img1.jpeg)
 
-## Caption Bar Color
+## Caption bar color
 
 Caption bar color can be customized using `CaptionBarColor` property.
 
@@ -98,7 +98,7 @@ Me.CaptionBarColor = Color.Pink
 
 ![](Appearance_images/Caption-Bar-Customization_img2.jpeg)
 
-## Caption Alignment
+## Caption alignment
 
 MetroForm caption can be aligned vertically using `CaptionAlign` property.
 
@@ -125,7 +125,7 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 ![](Appearance_images/CaptionAlign.png)
 
-## Caption Vertical Alignment
+## Caption vertical alignment
 
 MetroForm caption can be aligned vertically using `CaptionVerticalAlignment` property.
 
@@ -152,9 +152,9 @@ Me.CaptionVerticalAlignment = Syncfusion.Windows.Forms.VerticalAlignment.Top
 
 ![](Appearance_images/CaptionVerticalAlignment.png)
 
-## Icon Alignment Support
+## Icon alignment support
 
-MetroForm supports Left, Right and Center alignment for Icon
+MetroForm supports Left, Right, and Center alignment for Icon.
 
 {% tabs %}
 

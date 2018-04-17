@@ -9,11 +9,13 @@ documentation: ug
 
 # Slider value
 
-## Minimum Value
+## Minimum value
 
 The slider initial value depends on its minimum value, and the default minimum value is ‘0’. The minimum value can be changed by using the MinimumValue API in the control.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
         this.radialSlider1.MinimumValue = 100;
 
@@ -21,11 +23,13 @@ The slider initial value depends on its minimum value, and the default minimum v
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
          Me.radialSlider1.MinimumValue = 100
 
 {% endhighlight %}
+
+{% endtabs %}
 
 N> The Slider’s maximum value should be greater than its minimum value.
 
@@ -33,18 +37,22 @@ N> The Slider’s maximum value should be greater than its minimum value.
 
 Slider divisions for the radial slider can be customized using the properties shown in the following code samples. The default slider division is 10.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
             this.radialSlider1.SliderDivision = 20;
 
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
              Me.radialSlider1.SliderDivision = 20
 
 {% endhighlight %}
+
+{% endtabs %}
 
     N> This property will applicable only for default slider.
 

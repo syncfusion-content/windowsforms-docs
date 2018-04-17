@@ -11,16 +11,16 @@ documentation: ug
 
 This section will give a step-by-step procedure to design a ProgressBarAdv control through designer and also through programming approach.
 
-## Through Designer
+## Through designer
 
 We can create a ProgressBarAdv through designer using the steps given below.
 
 * The ProgressBarAdv control provides full support for the Windows Forms designer. Drag and drop the ProgressBarAdv control from the toolbox onto your form.
 
-  ![](Overview_images/Overview_img2.jpeg) 
+  ![](Overview_images/Overview_img2.jpeg)
 
 
-* Set the desired properties for the control through the Property grid. 
+* Set the desired properties for the control through the Property grid.
 
   ![](Overview_images/Overview_img3.jpeg)
 
@@ -29,14 +29,16 @@ We can create a ProgressBarAdv through designer using the steps given below.
 
 
 
-## Through Code
+## Through code
 
 This step-by-step procedure explains how to create the ProgressBarAdv control programmatically.
 
 * Create a C# or VB.NET application in Visual Studio. Switch to the code view.
 * Declare and initialize a ProgressBarAdv as below.
 
-  ~~~ cs
+  {% tabs %}
+
+  {% highlight C# %}
 
         private Syncfusion.Windows.Forms.Tools.ProgressBarAdv progressBarAdv1;
 
@@ -46,11 +48,9 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
 
         this.SuspendLayout();
 		
-  ~~~
-  {:.prettyprint }
+  {% endhighlight %}
 
-  
-  ~~~ vbnet
+  {% highlight VB %}
 
         Friend WithEvents ProgressBarAdv1 As Syncfusion.Windows.Forms.Tools.ProgressBarAdv
 
@@ -60,28 +60,33 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
 
         Me.SuspendLayout()
 
-  ~~~
-  {:.prettyprint }
+  {% endhighlight %}
 
-* Set the Location property of the control.
+  {% endtabs %}
 
-  ~~~ cs
+* Set the location property of the control.
+
+  {% tabs %}
+
+  {% highlight C# %}
 
         this.progressBarAdv1.Location = new System.Drawing.Point(40, 48);
 		
-  ~~~
-  {:.prettyprint }
+  {% endhighlight %}
 
-  ~~~ vbnet
+  {% highlight VB %}
 
         Me.ProgressBarAdv1.Location = New System.Drawing.Point(40, 48)
 		
-  ~~~
-  {:.prettyprint }
+  {% endhighlight %}
+
+  {% endtabs %}
 
 * Add the control to the form.
 
-  ~~~ cs
+  {% tabs %}
+
+  {% highlight C# %}
 
         this.Controls.Add(this.progressBarAdv1);
 
@@ -91,10 +96,9 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
 
         this.ResumeLayout(false);
 
-  ~~~
-  {:.prettyprint }
+  {% endhighlight %}
 
-  ~~~ vbnet
+  {% highlight VB %}
 
         Me.Controls.Add(Me.ProgressBarAdv1)
 
@@ -104,8 +108,9 @@ This step-by-step procedure explains how to create the ProgressBarAdv control pr
 
         Me.ResumeLayout(False)
 
-  ~~~
-  {:.prettyprint }
+  {% endhighlight %}
+
+  {% endtabs %}
 
 * Run the application.
 

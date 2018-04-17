@@ -7,15 +7,15 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-The SpellCheckerAdv can be added to Windows Forms application by using either of the following ways,
+The SpellCheckerAdv can be added to Windows Forms application by using either of the following ways:
 
 Through Designer
 
 Through Code-Behind
 
-## Through Designer
+## Through designer
 
 Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add SpellCheckerAdv through drag and drop from Toolbox.
 
@@ -30,7 +30,7 @@ Find SpellCheckerAdv by typing the name of the SpellCheckerAdv in the search box
  ![](Getting-Started_images/GettingStarted1.png)
  
 
-## Through Code
+## Through code
 
 The following steps helps to add SpellCheckerAdv through code.
 
