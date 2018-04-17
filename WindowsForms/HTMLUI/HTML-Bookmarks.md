@@ -7,11 +7,11 @@ control: HTML UI
 documentation: ug
 ---
 
-#  HTML Bookmarks
+#  HTML bookmarks
 
 Bookmarks feature is enabled in the HTMLUI control. This allows the user to switch to particular references in the page when the link is clicked. The HTMLUI control has another functionality of referring bookmarks which is, referring them not only in the same page, but also in other pages.
 
-{% highlight html %}
+{% highlight HTML %}
 
 <html>
 
@@ -33,15 +33,13 @@ Bookmarks feature is enabled in the HTMLUI control. This allows the user to swit
 
 {% endhighlight %}
 
-The following image shows the bookmarks implemented using HTMLUI.
-
 
 
 ![](HTML-Bookmarks_images/HTML-Bookmarks_img1.png)
 
 
 
-## HTMLUI Bookmarks Sample
+## HTMLUI bookmarks sample
 
 This sample illustrates the implementation of Bookmarks in HTMLUI.
 

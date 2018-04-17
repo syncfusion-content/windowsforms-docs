@@ -7,19 +7,21 @@ control: XPTaskPane
 documentation: ug
 ---
 
-# XPTaskPane Appearance
+# XPTaskPane appearance
 
 This section comprises the below topics:
 
-## Foreground Settings
+## Foreground settings
 
-### XPTaskPane Foreground
+### XPTaskPane foreground
 
-Font style and fore color of the Task pages can be set using XPTaskPane.Font and XPTaskPane.ForeColor properties. 
+Font style and fore color of the Task pages can be set using XPTaskPane.Font and XPTaskPane.ForeColor properties.
 
 N> These settings can be overridden by individual XPTaskPage.Font and XPTaskPage.ForeColor properties.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 this.xpTaskPane1.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -28,7 +30,7 @@ this.xpTaskPane1.ForeColor = System.Drawing.Color.SteelBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -38,11 +40,15 @@ Me.xpTaskPane1.ForeColor = System.Drawing.Color.SteelBlue
 
 {% endhighlight %}
 
-### Header Foreground
+{% endtabs %}
+
+### Header foreground
 
 The font style and fore color for the Header text is controlled through HeaderLabel.Font and HeaderLabel.ForeColor properties.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 this.xpTaskPane1.HeaderLabel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
@@ -51,7 +57,7 @@ this.xpTaskPane1.HeaderLabel.ForeColor = System.Drawing.Color.Navy;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -61,15 +67,19 @@ Me.xpTaskPane1.HeaderLabel.ForeColor = System.Drawing.Color.Navy
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](XPTaskPane-Appearance_images/XPTaskPane-Appearance_img2.jpeg)
 
 
 
-## Visual Styles
+## Visual styles
 
-The Visual appearance of XP Task Pane can be defined by the XPTaskPane.VisualStyle property. It supports _OfficeXP_ and new _Office2007_ styles which provides you a more polished user interface. 
+The Visual appearance of XP Task Pane can be defined by the XPTaskPane.VisualStyle property. It supports _OfficeXP_ and new _Office2007_ styles which provides you a more polished user interface.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 this.xpTaskPane1.VisualStyle = VisualStyle.Office2007;
@@ -78,7 +88,7 @@ this.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -88,15 +98,19 @@ Me.xpTaskPane1.VisualStyle = VisualStyle.OfficeXP
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](XPTaskPane-Appearance_images/XPTaskPane-Appearance_img3.jpeg)
 
 
 
-### Office Color Schemes
+### Office color schemes
 
 XPTaskPane supports all the three office color schemes.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -114,7 +128,7 @@ this.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Them
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -132,15 +146,19 @@ Me.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](XPTaskPane-Appearance_images/XPTaskPane-Appearance_img4.jpeg)
 
 
 
-### Custom Colors
+### Custom colors
 
 We can also apply custom colors to the XPTaskPane by setting Office2007ColorScheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -150,7 +168,7 @@ Office2007Colors.ApplyManagedColors(this, Color.Lime);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -159,6 +177,8 @@ Me.xpTaskPane1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.
 Office2007Colors.ApplyManagedColors(Me, Color.Lime)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](XPTaskPane-Appearance_images/XPTaskPane-Appearance_img5.jpeg)
 

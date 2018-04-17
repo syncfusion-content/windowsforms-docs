@@ -401,7 +401,7 @@ This event occurs when the Multiline property is changed. The Multiline proper
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
-{% tabs %
+{% tabs %}
 {% highlight C# %}
 
 private void percentTextBox1_MultilineChanged(object sender, EventArgs e)

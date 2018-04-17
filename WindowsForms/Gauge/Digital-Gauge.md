@@ -11,18 +11,18 @@ documentation: ug
 
 Digital gauges are perfect for displaying alphanumeric values. All the elements in a digital gauge, including the CharacterCount, CharacterType, RoundCornerRadius, and ShowInvisibleSegments, can be fully customized with data-binding support.
 
-The digital gauge control includes the following elements: SegmentSpacing, ShowInvisibleSegments, Value, and VisualStyle. All the elements are optional for displaying the value. 
+The digital gauge control includes the following elements: SegmentSpacing, ShowInvisibleSegments, Value, and VisualStyle. All the elements are optional for displaying the value.
 
-### Feature Summary
+### Feature summary
 
 Here is a brief overview of various features of the DigitalGauge control:
 
-* SegmentSpacing - Specifies the space between the gauge segments. 
+* SegmentSpacing - Specifies the space between the gauge segments.
 * VisualStyle - Allows you to specify the visual style for the digital gauge.
 * CharacterType - Provides different segment styles for the digital gauge.
 * CharacterCount - Provides the number of characters that can be displayed.
 
-##  Concepts and Features
+##  Concepts and features
 
 
 This section illustrates the features of the digital gauge with different visual styles and sample code. It contains the following topics:
@@ -34,12 +34,12 @@ This section illustrates the features of the digital gauge with different visual
 * Show Invisible Segments
 * Round Corner Radius
 
-### Visual Styles
+### Visual styles
 
 
 The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
 
-The styles are built in for all of the gauges.
+The styles are built-in for all gauges.
 
 * Black
 * Silver
@@ -67,9 +67,7 @@ Gets or sets the frame type.</td></tr>
 
 **Black**
 
-This option helps to set the Black theme. 
-
-##### Code Sample
+This option helps to set the Black theme.
 
 {% tabs %}
 
@@ -94,8 +92,6 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 This option helps to set the Blue theme.
 
-##### Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -118,8 +114,6 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 **Silver**
 
 This option helps to set the Silver theme.
-
-##### Code Sample
 
 {% tabs %}
 
@@ -144,8 +138,6 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silve
 
 This option helps to set the Metro theme.
 
-##### Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -166,9 +158,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 
 **Office2016White**
 
-This option helps to set the Office2016White theme. 
-
-##### Code Sample
+This option helps to set the Office2016White theme.
 
 {% tabs %}
 
@@ -196,9 +186,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 **Office2016Colorful**
 
-This option helps to set the Office2016Colorful theme. 
-
-##### Code Sample
+This option helps to set the Office2016Colorful theme.
 
 {% tabs %}
 
@@ -224,9 +212,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 **Office2016DarkGray**
 
-This option helps to set the Office2016DarkGray theme. 
-
-##### Code Sample
+This option helps to set the Office2016DarkGray theme.
 
 {% tabs %}
 
@@ -244,7 +230,7 @@ this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Offic
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray
 
-{% endhighlight VB %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -252,9 +238,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 **Office2016Black**
 
-This option helps to set the office2016Black theme. 
-
-##### Code Sample
+This option helps to set the office2016Black theme.
 
 {% tabs %}
 
@@ -272,7 +256,7 @@ this.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Offic
 
 Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black
 
-{% endhighlight VB %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -282,14 +266,14 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
  Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the **VisualStyle** property as **Custom**.
 
- **Steps to Customize the theme in Design time.**
+ **Steps to customize the theme in design time**
 
  **Step 1:**  Need to add DigitalGauge control to Form Designer.
 
 
 ![](Digital-Gauge_images/Digital-Gauge_img17.png)
 
- **Step 2:** Set the VisualStyle as Custom
+ **Step 2:** Set the VisualStyle as Custom.
 
 ![](Digital-Gauge_images/Digital-Gauge_img18.png)
 
@@ -358,11 +342,11 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 
 
 
-### Character Type
+### Character type
 
-Character types are used to customize the digital segments. 
+Character types are used to customize the digital segments.
 
-#### Customizing Scales
+#### Customizing scales
 
 You can customize the segments in the digital gauge using the following property:
 
@@ -387,68 +371,74 @@ Different segments can be applied using the CharacterType property. The digital 
 * Fourteen segments
 * Sixteen segments
 
-#### Dot Matrix
+#### Dot matrix
 
 
 In a digital gauge, the value can be displayed in dot matrix format by setting the character type as DotMatrixSegment.
 
-##### Code Sample
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.DotMatrixSegment;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.DotMatrixSegment
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Digital-Gauge_images/Digital-Gauge_img5.png)
 
 
 
-#### Seven Segments
+#### Seven segments
 
 In a digital gauge, the value can be displayed in a seven-segment format by setting the character type as SevenSegment.
 
-##### Code Sample
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.SevenSegment;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.SevenSegment
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Digital-Gauge_images/Digital-Gauge_img6.png)
 
 
 
-#### Fourteen Segments
+#### Fourteen segments
 
 In a digital gauge, the value can be displayed in a fourteen-segment format by setting the character type as FourteenSegment.
 
-##### Code Sample
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.FourteenSegment;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.FourteenSegment
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Digital-Gauge_images/Digital-Gauge_img7.png)
 
@@ -456,35 +446,37 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 
 
-#### Sixteen Segments
+#### Sixteen segments
 
 In a digital gauge, the value can be displayed in a sixteen-segment format by setting the character type as SixteenSegment.
 
-##### Code Sample
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.SixteenSegment;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.SixteenSegment
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Digital-Gauge_images/Digital-Gauge_img8.png)
 
 
 
-### Character Count
+### Character count
 
 The CharacterCount property can be used to restrict the number of characters that can be displayed in a digital gauge.
 
-##### Code Sample
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.CharacterCount = 4;
 
@@ -492,24 +484,26 @@ this.digitalGauge1.Value = “123456”;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.CharacterCount = 4
 Me.digitalGauge1.Value = 123456
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Digital-Gauge_images/Digital-Gauge_img9.png)
 
 
 
-### Segment Spacing
+### Segment spacing
 
 The SegmentSpacing property is used to determine the spacing between the characters displayed in the digital gauge.
 
-##### Code Sample
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
   this.digitalGauge1.CharacterCount = 2;
 
@@ -519,7 +513,7 @@ The SegmentSpacing property is used to determine the spacing between the charact
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.CharacterCount = 2
 
@@ -528,27 +522,31 @@ Me.digitalGauge1.Value = 123456
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Digital-Gauge_images/Digital-Gauge_img10.png)
 
 
 
-### Show Visible Segments 
+### Show visible segments
 
 The ShowInvisibleSegments property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to false.
 
-##### Code Sample
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.ShowInvisibleSegments = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
  Me.digitalGauge1.ShowInvisibleSegments = true
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Digital-Gauge_images/Digital-Gauge_img11.png)
 
@@ -558,31 +556,31 @@ this.digitalGauge1.ShowInvisibleSegments = true;
 
 The RoundCornerRadius property of the digital gauge is used to draw digital gauge with rounded edges.
 
-##### Code Sample
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.RoundCornerRadius = 50;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.digitalGauge1.RoundCornerRadius = 50
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Digital-Gauge_images/Digital-Gauge_img12.png)
 
 
 
-### Data Binding
+### Data binding
 
 You can bind any data source to the digital gauge and map an index of a record to represent the actual value in the gauge. The DisplayMember and DisplayRecordIndex properties map the DataColumn and DataRow of the bound data source, respectively, to the Gauge control. Data-bound gauges support high frequency data updates.
 
-##### Example
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.digitalGauge1.DataSource = dataTable;
 

@@ -8,57 +8,74 @@ documentation: ug
 ---
 # Creating MonthCalendarAdv
 
-We can just drag and drop the MonthCalendarAdv onto the form through designer and can access their properties through the property grid. 
+We can just drag and drop the MonthCalendarAdv onto the form through designer and can access their properties through the property grid.
 
-![](CalendarDateTime_images/Overview_img133.jpeg) 
+![](CalendarDateTime_images/Overview_img133.jpeg)
 
 
 
-To create the control programmatically, follow the below steps.
+To create the control programmatically, follow the given steps.
 
 1. Include the required namespace.
     
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
+
 		using Syncfusion.Windows.Forms.Tools;
-   ~~~
-   {:.prettyprint}
    
-   ~~~ vbnet
+    {% endhighlight %}
+    
+    {% highlight VB %}
+
 		Imports Syncfusion.Windows.Forms.Tools
-   ~~~
-   {:.prettyprint}
+    
+    {% endhighlight %}
+
+    {% endtabs %}
 
 
 
 2. Create an instance of the MonthCalendarAdv control. 
    
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
+
 	   private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv monthCalendarAdv1;
 	   this.monthCalendarAdv1=new MonthCalendarAdv();
-   ~~~
-   {:.prettyprint}
-   
-   ~~~ vbnet
+    
+    {% endhighlight %}
+    
+    {% highlight VB %}
+
 	   Private monthCalendarAdv1 As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
 	   Me.monthCalendarAdv1 = New MonthCalendarAdv()
-   ~~~
-   {:.prettyprint}
+    
+    {% endhighlight %}
 
+    {% endtabs %}
 
 
 3. Set the visual style for the control. Add that instance to the Form.
 
-   ~~~ cs
+    {% tabs %}
+
+    {% highlight C# %}
+
 	   this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007;
 	   this.Controls.Add(this.monthCalendarAdv1);
-   ~~~
-   {:.prettyprint}
-   
-   ~~~ vbnet
+    
+    {% endhighlight %}
+    
+    {% highlight VB %}
+
 	   Me.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 	   Me.Controls.Add(Me.monthCalendarAdv1)
-   ~~~
-   {:.prettyprint}
+    
+    {% endhighlight %}
+
+    {% endtabs %}
 
 
 

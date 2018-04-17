@@ -10,13 +10,15 @@ documentation: ug
 
 This type provides notification through various transition effects.
 
-## Key Properties
+## Key properties
 
 * Title - The title can be displayed at the top of the hub tile.
 * Footer - The footer can be displayed at the bottom of the hub tile.
 * ImageSource - An image can be displayed in the background of the hub tile.
 
-The following code example shows the usage of the Title, Footer and ImageSource properties.
+The following code example shows the usage of the Title, Footer, and ImageSource properties.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -32,7 +34,7 @@ this.HubTile1.ImageSource  = this.ImageListAdv1.Images[0];
 
 {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.HubTile1.Title.Text = "This is the title area. Display your image here”
 
@@ -46,13 +48,14 @@ Me.HubTile1.ImageSource  = Me.ImageListAdv1.Images(0)
 
 {% endhighlight %}
 
+{% endtabs %}
 
  ![](Concept-and-Features_images/Concept-and-Features_img1.png) 
  
  Default Tile
  {:.caption}
  
-## Transition Effects
+## Transition effects
 
 In HubTile, image transition can be performed at specified intervals and in different directions just like the Windows 8 live tiles. They include the following transition effects.
 
@@ -62,6 +65,9 @@ In HubTile, image transition can be performed at specified intervals and in diff
 * Right-to-Left
 
 HubTile image transition direction can be modified using the following code example.
+
+
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -74,7 +80,7 @@ this.HubTile1.SlideTransition = TransitionDirection.BottomToTop;
  {% endhighlight %}
 
  
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.HubTile1.TileType = HubTileType.DefaultTile
 
@@ -84,14 +90,17 @@ Me.HubTile1.SlideTransition = TransitionDirection.LeftToRight
 
 {% endhighlight %}
 
+{% endtabs %}
 
- ![](Concept-and-Features_images/Concept-and-Features_img2.png) 
+ ![](Concept-and-Features_images/Concept-and-Features_img2.png)
  
 
 
-## Transition Speed
+## Transition speed
 
 In HubTile, image transition speed can be increased or decreased by using ImageTransitionSpeed property.
+
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -99,8 +108,10 @@ this.HubTile1.ImageTransitionSpeed = 3;
 
  {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.HubTile1.ImageTransitionSpeed = 3
 
 {% endhighlight %}
+
+{% endtabs %}

@@ -6,16 +6,16 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# XPTaskBar Events
+# XPTaskBar events
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Events Table
+Events table
 
 <table>
 <tr>
 <th>
-XPTaskBar Events</th><th>
+XPTaskBar events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -48,11 +48,13 @@ This event occurs when the Items portion of the XPTaskBar Box gets drawn.</td></
 </table>
 
 
-## AfterAnimation Event
+## AfterAnimation event
 
 This event gets called after the XPTaskBar Box box expands or collapses.
 
 The event handler receives an argument of the type EventArgs.
+
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -72,7 +74,7 @@ this.listView1.Items.Add(listViewItem);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub taskMenuBox1_AfterAnimation(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -86,12 +88,15 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## BeforeAnimation Event
+## BeforeAnimation event
 
 This event gets called before the XPTaskBar Box expands or collapses.
 
 The event handler receives an argument of the type EventArgs.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -111,7 +116,7 @@ this.listView1.Items.Add(listViewItem);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub taskMenuBox1_BeforeAnimation(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -125,12 +130,15 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## CollapsedStateChanged Event
+## CollapsedStateChanged event
 
 This event occurs after the XPTaskBar Box has been collapsed or expanded.
 
 The event handler receives an argument of the type EventArgs.
+
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -150,7 +158,7 @@ this.listView1.Items.Add(listViewItem);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub taskMenuBox1_CollapsedStateChanged(ByVal sender As Object, ByVal e As System.EventArgs)
 
@@ -164,15 +172,15 @@ End Sub
 
 {% endhighlight %}
 
-## ItemClick Event
+{% endtabs %}
 
-The XPTaskBar Box uses this event to make an XPTaskBar Item do some task when the user clicks on it. For this event, the user 
-should set unique names for the XPTaskBar Items through the Tag property in the Items Collection Editor.
+## ItemClick event
 
-The event handler receives an argument of the type XPTaskBarItemClickArgs. The event property associated with the 
-XPTaskBarItemClickArgs is as follows.
+The XPTaskBar Box uses this event to make an XPTaskBar Item do some task when the user clicks on it. For this event, the user should set unique names for the XPTaskBar Items through the Tag property in the Items Collection Editor.
 
-Member Table
+The event handler receives an argument of the type XPTaskBarItemClickArgs. The event property associated with the XPTaskBarItemClickArgs is as follows.
+
+Member table
 
 <table>
 <tr>
@@ -185,6 +193,7 @@ XPTaskBarItem</td><td>
 Returns the item that was clicked.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -216,7 +225,7 @@ break;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Private Sub xpTaskBarBox_ItemClick(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.XPTaskBarItemClickArgs)
 
@@ -236,15 +245,17 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## MinimumSizeChanged Event
+## MinimumSizeChanged event
 
-This event occurs when the MinimumSize property is changed. The MinimumSize property specifies the minimum size with which  
-the XPTaskBar is to be created.
+This event occurs when the MinimumSize property is changed. The MinimumSize property specifies the minimum size with which the XPTaskBar is to be created.
 
 The event handler receives an argument of type EventArgs. The event properties associated with the EventArgs are as follows.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 // Specify the minimum size with which the XPTaskBar control is to be created.
 
@@ -272,7 +283,7 @@ Console.WriteLine(" MinimumSizeChanged Event is raised ");
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 ' Specify the minimum size with which the XPTaskBar control is to be created. 
 
@@ -296,16 +307,15 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## ProvideHeaderBackgroundBrush Event
+## ProvideHeaderBackgroundBrush event
 
-This event occurs when the header portion of the XPTaskBar Box gets drawn. Users may custom draw the header portion of the 
-XPTaskBar Box with different colors.
+This event occurs when the header portion of the XPTaskBar Box gets drawn. Users may custom draw the header portion of the XPTaskBar Box with different colors.
 
-The event handler receives an argument of type ProvideBrushEventArgs. The event properties associated with the 
-ProvideBrushEventArgs are as follows.
+The event handler receives an argument of type ProvideBrushEventArgs. The event properties associated with the ProvideBrushEventArgs are as follows.
 
-Members Table
+Members table
 
 <table>
 <tr>
@@ -319,7 +329,7 @@ Returns the bounds for which a brush is requested.</td></tr>
 <tr>
 <td>
 Brush</td><td>
-Gets / sets the brush that will be used to draw the specified bounds or path.</td></tr>
+Gets/sets the brush that will be used to draw the specified bounds or path.</td></tr>
 <tr>
 <td>
 Path</td><td>
@@ -328,6 +338,8 @@ Returns the Graphics Path for which a brush is requested.</td></tr>
 
 
 The following example handles the ProvideBrushEventHandler event of a XPTaskBar Box and performs custom background drawing.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -379,7 +391,7 @@ args.Brush = brush;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub taskMenuBox_ProvideHeaderBackgroundBrush(sender As Object, args As Syncfusion.Windows.Forms.Tools.ProvideBrushEventArgs)
 
@@ -421,16 +433,19 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## ProvideItemsBackgroundBrush Event
+## ProvideItemsBackgroundBrush event
 
 This event occurs when the Items portion of the XPTaskBar Box gets drawn. Users may custom draw the Items portion of the XPTaskBar Box with different colors.
 
-The event handler receives an argument of type ProvideBrushEventArgs. 
+The event handler receives an argument of type ProvideBrushEventArgs.
 
 The following example handles the ProvideBrushEventHandler event of a XPTaskBar Box and performs custom background drawing.
 
-{% highlight C# %}  
+{% tabs %}
+
+{% highlight C# %}
 
 private void OnTaskMenuProvideItemsBackgroundBrush(object sender, Syncfusion.Windows.Forms.Tools.ProvideBrushEventArgs args)
 
@@ -460,7 +475,7 @@ args.Brush = brush;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub OnTaskMenuProvideItemsBackgroundBrush(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.ProvideBrushEventArgs)
 
@@ -485,3 +500,5 @@ args.Brush = brush
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

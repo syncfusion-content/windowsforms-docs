@@ -11,13 +11,13 @@ documentation: ug
 
 FolderBrowser control can be created in the following ways.
 
-## Through Designer 
+## Through designer
 
 The designer based approach for creating and initializing the FolderBrowser component is shown below.
 
 1. Select the FolderBrowser control from the Visual Studio .NET toolbox window and drop it onto the design form. An instance of the FolderBrowser component will be added to the design form's component tray.
   
-  ![](Overview_images/Overview_img406.jpeg) 
+  ![](Overview_images/Overview_img406.jpeg)
 
 
 
@@ -27,86 +27,107 @@ The designer based approach for creating and initializing the FolderBrowser comp
 
 This method is a modal function and if the return code indicates success, the FolderBrowser.DirectoryPath property may be used to access the selected folder.
 
-{%highlight c#%}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
 this.folderBrowser1.ShowDialog();
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight vbnet%}
+{% highlight VB %}
 
 
 Me.folderBrowser1.ShowDialog()
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 
-![](Overview_images/Overview_img407.jpeg) 
+![](Overview_images/Overview_img407.jpeg)
 
 
-## Through Code
+## Through code
 
 The programmatic approach for using the FolderBrowser component is shown below.
 
 1. Create an instance of the FolderBrowser component.
    
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
+
+
    // Declare the FolderBrowser component.
    private Syncfusion.Windows.Forms.FolderBrowser folderBrowser1;
    
    // Create an instance of the FolderBrowser component.
    this.folderBrowser1 = new Syncfusion.Windows.Forms.FolderBrowser(this.components);
-   ~~~
-   {:.prettyprint}
    
+   {% endhighlight %}
+
+   {% highlight VB %}
    
-   ~~~vbnet
    ' Declare the FolderBrowser component.
    Private folderBrowser1 As Syncfusion.Windows.Forms.FolderBrowser
    
    ' Create an instance of the FolderBrowser component.
    Me.folderBrowser1 = New Syncfusion.Windows.Forms.FolderBrowser(Me.components)
-   ~~~
-   {:.prettyprint}
+   
+   {% endhighlight %}
+
+   {% endtabs %}
 
 
 
 2. Set the FolderBrowser.StartLocation and FolderBrowser.Style property values.
    
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
+
    // Specify the Start location.
    this.folderBrowser1.StartLocation = Syncfusion.Windows.Forms.FolderBrowserFolder.MyComputer;
    
    // Specify the styles for the FolderBrowser Dialog.
    this.folderBrowser1.Style = (Syncfusion.Windows.Forms.FolderBrowserStyles.RestrictToFilesystem | Syncfusion.Windows.Forms.FolderBrowserStyles.BrowseForComputer);
-   ~~~
-   {:.prettyprint}
    
+   {% endhighlight %}
+
+   {% highlight VB %}
    
-   ~~~vbnet
    ' Specify the Start location.
    Me.folderBrowser1.StartLocation = Syncfusion.Windows.Forms.FolderBrowserFolder.MyComputer
    
    ' Specify the styles for the FolderBrowser Dialog.
    Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.RestrictToFilesystem Or Syncfusion.Windows.Forms.FolderBrowserStyles.BrowseForComputer
-   ~~~
-   {:.prettyprint}
+   
+   {% endhighlight %}
+
+   {% endtabs %}
 
 
 3. Invoke the FolderBrowser.ShowDialog() method to display the FolderBrowser Dialog.
    
-   ~~~ cs
-   this.folderBrowser1.ShowDialog();
-   ~~~
-   {:.prettyprint}
-   
-   ~~~vbnet
-   Me.folderBrowser1.ShowDialog()
-   ~~~
-   {:.prettyprint}
+   {% tabs %}
 
+   {% highlight C# %}
+
+   this.folderBrowser1.ShowDialog();
+   
+   
+   {% endhighlight %}
+
+   {% highlight VB %}
+   
+   Me.folderBrowser1.ShowDialog()
+   
+   {% endhighlight %}
+
+   {% endtabs %}
 
    ![](Overview_images/Overview_img408.jpeg) 
 

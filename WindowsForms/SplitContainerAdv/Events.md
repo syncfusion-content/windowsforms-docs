@@ -13,6 +13,7 @@ The events available for the SplitContainerAdv control are as follows.
 
 * SplitterMoved Event- This event is handled when the splitter is moved to a new position.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -31,7 +32,7 @@ private void splitContainerAdv2_SplitterMoved(object sender, SplitterMoveEventAr
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -44,11 +45,14 @@ End Sub
 
 {% endhighlight %}
 
- ![](SplitContainerAdv-Images/Overview_img403.jpeg) 
+{% endtabs %}
+
+ ![](SplitContainerAdv-Images/Overview_img403.jpeg)
 
 
 * SplitterMoving Event - This event is handled while the splitter is moving.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -67,7 +71,7 @@ private void splitContainerAdv2_SplitterMoving(object sender, SplitterMoveEventA
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Private Sub splitContainerAdv2_SplitterMoving(ByVal sender As Object, ByVal args As SplitterMoveEventArgs)
@@ -77,6 +81,7 @@ Private Sub splitContainerAdv2_SplitterMoving(ByVal sender As Object, ByVal args
 End Sub
 {% endhighlight %}
 
+{% endtabs %}
 
-![](SplitContainerAdv-Images/Overview_img404.jpeg) 
+![](SplitContainerAdv-Images/Overview_img404.jpeg)
 

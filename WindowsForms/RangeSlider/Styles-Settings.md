@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Style Settings
+# Style settings
 
 Range Slider supports different visual styles for its appearance through the enumeration RangeSliderStyle. Some of the available VisualStyles are as follows:
 
@@ -21,8 +21,6 @@ Range Slider supports different visual styles for its appearance through the enu
 **Default**
 
 This option helps to set the Default theme.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -50,8 +48,6 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Default
 
 This option helps to set the Metro theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -77,8 +73,6 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Metro;
 **Office2016Colorful**
 
 This option helps to set the Office2016Colorful theme.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -106,8 +100,6 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Colorful
 
 This option helps to set the Office2016White theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -134,8 +126,6 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016White
 
 This option helps to set the Office2016DarkGray theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -161,8 +151,6 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016DarkGray
 **Office2016Black**
 
 This option helps to set the Office2016Black theme.
-
-#####  Code Sample
 
 {% tabs %}
 

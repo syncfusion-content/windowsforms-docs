@@ -13,7 +13,7 @@ Essential HTMLUI has extensive support to Scripts. Scripting involves creating s
 
 
 
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -99,7 +99,7 @@ script.UserControl.CustomControl.Text = "This is a sample for scripting";
 
 {% endhighlight %}
 
-## HTMLUIScripting Sample
+## HTMLUIScripting sample
 
 This sample illustrates the support of self-contained HTML documents in HTMLUI.
 
