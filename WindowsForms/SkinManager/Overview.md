@@ -18,7 +18,7 @@ The Skin Manager provides support for the following themes:
 * Office 2007 Silver
 * Managed
 
-## IT Scenarios
+## IT scenarios
 
 When you create an application with multiple controls, you can apply uniform color for the entire form using this feature. 
 
@@ -73,5 +73,3 @@ NA </td><td>
 Void </td><td>
 NA </td></tr>
 </table>
-
-
