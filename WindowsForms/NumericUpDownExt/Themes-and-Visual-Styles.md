@@ -15,8 +15,6 @@ This section discusses themes and visual styles settings of the NumericUpDownExt
 
 Themes define the look and feel of the NumericUpDownExt control. They can be set using the property given below.
 
-
-
 <table>
 <tr>
 <th>
@@ -28,30 +26,25 @@ ThemesEnabled</td><td>
 Specifies whether XP Themes (visual styles) should be used for this control when available.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.numericUpDownExt1.ThemesEnabled = true;                          
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.numericUpDownExt1.ThemesEnabled = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img1.png)
 
-
-
-## Visual Styles
+## Visual styles
 
 Visual Styles enhance the appearance of the NumericUpDownExt control and can be set using the property given below.
-
-
 
 <table>
 <tr>
@@ -68,80 +61,69 @@ ColorScheme</td><td>
 Gets / sets Office2007Theme for Office2007 style.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007;
-
 this.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue;    
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
-
 Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 
 {% endhighlight %}
-
+{% endtabs %}
+    
 ![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img2.png)
 
-
-
 ![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img3.png)
-
-
 
 When the ColorScheme property is set to 'Managed', the NumericUpDownExt control can be displayed using custom colors supported by the control.
 
 This can be done programmatically as follows.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007;
-
 this.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(this, Color.Orange);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
-
 Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img4.png)
 
-## Office2016 Theme
+## Office2016 theme
 
 NumericUpDownExt control supports Office2016 Visual styles such as Office2016Colorful,Office2016White,Office2016Black and Office2016DarkGray.
 
 //Sample code for setting "Office2016 Colorful" style for NumericUpDownExt
 
+{% tabs %}
 {% highlight c# %}
 
 this.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Appearance-Settings_images/Appearance-Settings_img4.png)
 

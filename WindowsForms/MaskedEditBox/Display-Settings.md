@@ -50,11 +50,8 @@ Similarly other separators can be used.
 {% highlight C# %}  
 
 this.maskedEditBox1.DateSeparator = '-';
-
 this.maskedEditBox1.DecimalSeparator = '.';
-
 this.maskedEditBox1.ThousandSeparator = ',';
-
 this.maskedEditBox1.TimeSeparator = ':';
 
 {% endhighlight %}
@@ -62,11 +59,8 @@ this.maskedEditBox1.TimeSeparator = ':';
 {% highlight VB %} 
 
 Me.maskedEditBox1.DateSeparator = "-"C
-
 Me.maskedEditBox1.DecimalSeparator = "."C
-
 Me.maskedEditBox1.ThousandSeparator = ","C
-
 Me.maskedEditBox1.TimeSeparator = ":"C
 
 {% endhighlight %}
@@ -87,7 +81,7 @@ Me.maskedEditBox1.TimeSeparator = ":"C
 
 
 
-## Cursor Position
+## Cursor position
 
 The cursor position of the MaskedEditBox control can be specified using the options provided by the following properties.
 
@@ -111,7 +105,6 @@ Indicates whether the cursor is to be positioned at the decimal separator (if an
 {% highlight C# %}  
 
 this.maskedEditBox1.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosition.Decimal;
-
 this.maskedEditBox1.PositionAtDecimal = true;
 
 {% endhighlight %}
@@ -119,7 +112,6 @@ this.maskedEditBox1.PositionAtDecimal = true;
 {% highlight VB %} 
 
 Me.maskedEditBox1.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosition.Decimal
-
 Me.maskedEditBox1.PositionAtDecimal = true;
 
 {% endhighlight %} 
@@ -191,27 +183,17 @@ The following code snippet uses two groups.
 // Adding DataGroups.
 
 this.maskedEditBox1.DataGroups.Add(this.maskedEditDataGroupInfo1);
-
 this.maskedEditBox1.DataGroups.Add(this.maskedEditDataGroupInfo2);
-
-
 
 // Defining maskedEditDataGroupInfo1.
 
 this.maskedEditDataGroupInfo1.DataGroupAlignment = Syncfusion.Windows.Forms.Tools.MaskGroupAlignment.Left;
-
 this.maskedEditDataGroupInfo1.DataGroupName = "One";
-
 this.maskedEditDataGroupInfo1.DataGroupSize = 3;
 
-
-
 // Defining maskedEditDataGroupInfo2.
-
 this.maskedEditDataGroupInfo2.DataGroupAlignment = Syncfusion.Windows.Forms.Tools.MaskGroupAlignment.None;
-
 this.maskedEditDataGroupInfo2.DataGroupName = "Two";
-
 this.maskedEditDataGroupInfo2.DataGroupSize = 4;
 
 {% endhighlight %}
@@ -219,27 +201,17 @@ this.maskedEditDataGroupInfo2.DataGroupSize = 4;
 {% highlight VB %} 
 
 ' Adding DataGroups.
-
 Me.maskedEditBox1.DataGroups.Add(Me.maskedEditDataGroupInfo1)
-
 Me.maskedEditBox1.DataGroups.Add(Me.maskedEditDataGroupInfo2)
 
-
 ' Defining maskedEditDataGroupInfo1.
-
 Me.maskedEditDataGroupInfo1.DataGroupAlignment = Syncfusion.Windows.Forms.Tools.MaskGroupAlignment.Left
-
 Me.maskedEditDataGroupInfo1.DataGroupName = "One"
-
 Me.maskedEditDataGroupInfo1.DataGroupSize = 3
 
-
 ' Defining maskedEditDataGroupInfo2.
-
 Me.maskedEditDataGroupInfo2.DataGroupAlignment = Syncfusion.Windows.Forms.Tools.MaskGroupAlignment.None
-
 Me.maskedEditDataGroupInfo2.DataGroupName = "Two"
-
 Me.maskedEditDataGroupInfo2.DataGroupSize = 4
 
 {% endhighlight %}
@@ -247,7 +219,7 @@ Me.maskedEditDataGroupInfo2.DataGroupSize = 4
 {% endtabs %}
 
 
-## Displaying Characters as Substitutes for User Input
+## Displaying characters as substitutes for user input
 
 We can display different characters as substitutes for the user input. This can be done using the below given properties.
 
@@ -275,28 +247,19 @@ The MaskedEditBox.Sequentially property indicates whether the control can sequ
 
 {% highlight C# %}  
 
-
 private void Form1_Load(object sender, System.EventArgs e)
-
 {
-
-this.maskedEditBox1.Sequentially = true;
-
-this.maskedEditBox1.PasswordChar = '$';
-
+    this.maskedEditBox1.Sequentially = true;
+    this.maskedEditBox1.PasswordChar = '$';
 }
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
-
 Me.maskedEditBox1.Sequentially = True
-
 Me.maskedEditBox1.PasswordChar = "$"c
-
 End Sub
 
 {% endhighlight %}

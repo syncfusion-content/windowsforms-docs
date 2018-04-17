@@ -11,8 +11,6 @@ documentation: ug
 
 Color and Styles can be applied to the Border of the PercentTextBox control as discussed below.
 
-
-
 <table>
 <tr>
 <th>
@@ -36,43 +34,27 @@ BorderStyle</td><td>
 Indicates whether the edit control should have a border. The options included are given below.{{ 'FixedSingle,' | markdownify }}{{ 'Fixed3D and' | markdownify }}{{ 'None.' | markdownify }}</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
-
 this.percentTextBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Etched;
-
 this.percentTextBox1.BorderColor = System.Drawing.Color.Orange;
-
 this.percentTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All;
-
 this.percentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+
 {% endhighlight %}
 
-
-
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.percentTextBox1.Border3DStyle = System.Windows.Forms.Border3DStyle.Etched
-
 Me.percentTextBox1.BorderColor = System.Drawing.Color.Orange
-
 Me.percentTextBox1.BorderSides = System.Windows.Forms.Border3DSide.All
-
 Me.percentTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
  ![](PercentTextBox-Images/Overview_img484.png) 
-
-
 
 A Sample which demonstrates the Border Settings of PercentTextBox control is available in the below sample installation path.
 

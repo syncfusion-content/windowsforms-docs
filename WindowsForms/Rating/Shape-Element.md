@@ -22,49 +22,42 @@ There are six predefined shapes available for customization. All these shapes su
 * Diamond
 * Kite
 
+{% tabs %}
 {% highlight c# %}
 
 this.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.Heart;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.Heart
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Shape-Element_images/Shape-Element_img1.png)
-
-
 
 ## Custom
 
 User-defined shapes can be used in the form of images.
 
+{% tabs %}
 {% highlight c# %}
 
 this.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.CustomImages;
-
 customImageCollection1.NormalImage = global::WindowsFormsApplication20.Properties.Resources.file;
-
-            this.ratingControl1.Images = customImageCollection1;
-
+this.ratingControl1.Images = customImageCollection1;
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ratingControl4.Shape = Syncfusion.Windows.Forms.Tools.Shapes.CustomImages
-
 customImageCollection1.NormalImage = Global.WindowsFormsApplication20.Properties.Resources.file
-
 Me.ratingControl1.Images = customImageCollection1
 
-
 {% endhighlight %}
-
+{% endtabs %}
 
 In Rating control, the working is based on the following criteria for CustomImages.
 

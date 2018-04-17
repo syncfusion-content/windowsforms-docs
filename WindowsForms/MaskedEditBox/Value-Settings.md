@@ -38,16 +38,13 @@ Specifies the maximum value that can be set through the MaskedEditBox.The defaul
 
 
 this.maskedEditBox1.MinValue = new decimal(new int[] {50, 0, 0, 0});
-
 this.maskedEditBox1.MaxValue = new decimal(new int[] {100, 0, 0, 0});
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Me.maskedEditBox1.MinValue = New Decimal(New Integer() {50, 0, 0, 0})
-
 Me.maskedEditBox1.MaxValue = New Decimal(New Integer() {100, 0, 0, 0})
 
 {% endhighlight %}
