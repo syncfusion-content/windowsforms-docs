@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Chart includes a comprehensive set of more than 35 Chart types for all your business needs. Each one is highly and easily configurable with built-in support for creating stunning visual effects.
 
-Chart types are specified on each ChartSeries through the Type property. All the chart types are required to have at least one X and one Y value. Certain chart types need more than one Y value.
+Chart types are specified on each [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) through the [Type](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Type.html) property. All the chart types are required to have at least one X and one Y value. Certain chart types need more than one Y value.
 
 The following table narrates the minimum and maximum number of series and number of Y values required by each type of chart supported by Essential Chart. 
 
@@ -443,7 +443,7 @@ Number of Series - One or More.
 
 Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.        
 
-Step Line series can be added to the chart using the following code.
+StepLine series can be added to the chart using the following code.
 
 {% tabs %}  
 
