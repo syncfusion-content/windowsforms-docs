@@ -277,7 +277,6 @@ This section deals with replacing MonthCalendarAdv 'Go to Today' ContextMenu wit
 
 This is the default context menu. To replace this with a custom context menu, you need to derive a Custom MonthCalendarAdv from the existing one and override the InitializeGrid so that the GetInternalGridControl method can be used to access the ContextMenu and replace it with a custom contextMenu.
 
-It can be done programmatically using the below code snippet.
 
 {% tabs %}
 
