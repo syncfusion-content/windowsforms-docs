@@ -7,7 +7,7 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Digital clock
+# Digital Clock
 
 The DigitalClock is implemented as an extension to the existing Clock control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
 
@@ -389,7 +389,7 @@ To display or hide the hour designator (AM and PM) in the DigitalClock, the Show
 ![](Overview_images/Overview_img114.png) 
 
 
-### Custom time clock
+### Custom time Clock
 
 To enable the custom time, the DigitalClock should be enabled with the property ShowCustomTimeClock set as true.
 
