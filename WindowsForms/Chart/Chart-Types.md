@@ -2824,7 +2824,7 @@ Me.chartControl1.Series.Add(series)
 
 #### DoughnutCoefficient
 
-PieCharts specified with a DoughnutCoefficient will be rendered as the Doughnut chart. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie. The DoughnutCoefficient property specifies the fraction of radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
+PieCharts specified with a [DoughnutCoefficient](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPieConfigItem~DoughnutCoeficient.html) will be rendered as the Doughnut chart. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie. The [DoughnutCoefficient](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPieConfigItem~DoughnutCoeficient.html) property specifies the fraction of radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
 
 {% tabs %}  
 
@@ -2845,7 +2845,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f
 
 #### HeightCoefficient
 
-When in 3D mode, the relative height of the pie chart can be specified via the HeightCoefficient property. Note that the HeightByAreaDepth property should be set as false for this to take effect. The valid values are 0.1f to 0.5f. This property is set to 0.2f by default.
+When in 3D mode, the relative height of the pie chart can be specified via the [HeightCoefficient](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPieConfigItem~HeightCoeficient.html) property. Note that the [HeightByAreaDepth](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPieConfigItem~HeightByAreaDepth.html) property should be set as false for this to take effect. The valid values are 0.1f to 0.5f. This property is set to 0.2f by default.
 
 {% tabs %}  
 
@@ -3182,39 +3182,49 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-HeatMapStyle</td><td>
+
+{{'[HeatMapStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~HeatMapStyle.html)'| markdownify }}
+</td><td>
 Specifies styles of heat maps. The types are Rectangular, Vertical and Horizontal styles.</td></tr>
 <tr>
 <td>
-DisplayColorSwatch</td><td>
+{{'[DisplayColorSwatch](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~DisplayColorSwatch.html)'| markdownify }}
+</td><td>
 Enables the color swatch of the heat map.</td></tr>
 <tr>
 <td>
-DisplayTitle</td><td>
+{{'[DisplayTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~DisplayTitle.html)'| markdownify }}
+</td><td>
 Enables or disables the series title in the left corner of the swatch.</td></tr>
 <tr>
 <td>
-StartText</td><td>
+{{'[StartText](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~StartText.html)'| markdownify }}
+</td><td>
 Sets the text for the left label in the color swatch.</td></tr>
 <tr>
 <td>
-EndText</td><td>
+{{'[EndText](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~EndText.html)'| markdownify }}
+</td><td>
 Sets the text for the right label in the color swatch.</td></tr>
 <tr>
 <td>
-LowestValueColor</td><td>
+{{'[LowestValueColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~LowestValueColor.html)'| markdownify }}
+</td><td>
 Sets the lowest value color of the heat map chart.</td></tr>
 <tr>
 <td>
-HighestValueColor</td><td>
+{{'[HighestValueColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~HighestValueColor.html)'| markdownify }}
+</td><td>
 Sets the highest value color of the heat map chart.</td></tr>
 <tr>
 <td>
-MiddleValueColor</td><td>
+{{'[MiddleValueColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~MiddleValueColor.html)'| markdownify }}
+</td><td>
 Sets the middle value color of the heat map chart.</td></tr>
 <tr>
 <td>
-LabelMargin</td><td>
+{{'[LabelMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartHeatMapConfigItem~LabelMargins.html)'| markdownify }}
+</td><td>
 Sets the margin for the left and right side labels.</td></tr>
 </table>
 
