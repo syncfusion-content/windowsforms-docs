@@ -11,18 +11,21 @@ documentation: ug
 
 ImageSlides is a dedicative property for adding and displaying images in the Carousel control, and it also provides several customization options.
 
+{% tabs %}
+
 {% highlight C# %}
 
 
 this.carousel1.ImageSlides = true;
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight VB %}
 
 
 Me.carousel1.ImageSlides = True
 {% endhighlight %}
 
+{% endtabs %}
 
 ## Adding images to the carousel control
 
