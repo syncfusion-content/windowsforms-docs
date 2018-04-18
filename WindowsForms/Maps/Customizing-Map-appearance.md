@@ -7,20 +7,17 @@ control: Maps
 documentation: ug
 ---
 
-# Customizing Map appearance
+# Color Mapping
 
-The RangeColorMapping is used to differentiate the shape’s fill, based on its underlying value and color ranges. From and To properties defines the value ranges and the Color property defines the equivalent color.
+The RangeColorMapping is used to differentiate the shape’s fill, based on its underlying value and color ranges. `From`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.RangeColorMapping~From.html] and `To`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.RangeColorMapping~To.html] properties defines the value ranges and the `Color`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ColorMapping~Color.html] property defines the equivalent color.
 
-
+{% tabs %}
 
 {% highlight c# %}
 
 partial class Form1
-
-    {
-
+{
          private void InitializeComponent()
-
          {
 
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
@@ -31,28 +28,27 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
 
          }
 
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
+        private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-     }  
+}  
 
 {% endhighlight %}
 
+{% endtabs %}
 
+{% tabs %}
 
 {% highlight c# %}
 
 public partial class Form1 : Form
-
-    {
-
+{
         private void Form1_Load(object sender, EventArgs e)
-
         {
 
             this.mapsControl1.Dock = DockStyle.Fill;
@@ -63,31 +59,25 @@ public partial class Form1 : Form
 
             this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
 
+            MapViewModel model = new MapViewModel();
 
+            ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
-             MapViewModel model = new MapViewModel();
+            shapeLayer.Uri = "world1.shp";
 
+            shapeLayer.ItemSource = model.Countries;
 
+            shapeLayer.ShapeIDPath = "NAME";
 
-             ShapeFileLayer shapeLayer = new ShapeFileLayer();
+            shapeLayer.ShapeIDTableField = "NAME";
 
-             shapeLayer.Uri = "world1.shp";
+            shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
 
-             shapeLayer.ItemSource = model.Countries;
+            shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
 
-             shapeLayer.ShapeIDPath = "NAME";
+            shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
 
-             shapeLayer.ShapeIDTableField = "NAME";
-
-             shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
-
-             shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
-
-             shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
-
-             shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
-
-
+            shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
 
             shapeLayer.ShapeSetting.FillSetting.ColorMappings = new System.Collections.ObjectModel.ObservableCollection<ColorMapping>();
 
@@ -97,15 +87,14 @@ public partial class Form1 : Form
 
             shapeLayer.ShapeSetting.FillSetting.ColorMappings.Add(new RangeColorMapping { From = 0, To = 0, Color = System.Drawing.Color.FromArgb(0xC7, 0xE9, 0xFA) });
 
-
-
-             this.mapsControl1.Layers.Add(shapeLayer);
+            this.mapsControl1.Layers.Add(shapeLayer);
 
          }
-
-     }       
+}       
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Screenshot:
 

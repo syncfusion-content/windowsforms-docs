@@ -9,9 +9,9 @@ documentation: ug
 
 # Bubbles
 
-Bubbles in the Maps control represent the under-bound data values of the map. Bubbles are scattered throughout map shapes, which contain bound values.
+Bubbles in the Maps control represent the under-bound data values of the map. Bubbles are scattered throughout the map shapes which contain bound values.
 
-Bubbles are included when data binding is set as mentioned above and the BubbleSetting is set.
+Bubbles are included when data binding and BubbleSetting is set.
 
 The following properties are available in BubbleSetting:
 
@@ -55,7 +55,7 @@ Gets or sets the name of the under-bound property in ItemsSource.</td></tr>
 <td>
 ColorMapping</td><td>
 ObservableCollection &lt;RangeColorMapping&gt;</td><td>
-Gets or sets the tree map colors.</td></tr>
+Gets or sets colors for the specified range.</td></tr>
 <tr>
 <td>
 Fill</td><td>
@@ -64,17 +64,15 @@ Gets or sets the fill brush of the bubble when auto fill color is set to true.</
 </table>
 
 
-## Adding Bubbles to a Map 
+## Adding Bubbles 
 
-To add bubbles to a map, the BubbleSetting has to be added to the ShapeFileLayer.  Set the AutoFillColors as false and set the Fill property. Also set the MaxSize, MinSize, and ValuePath properties as shown in the code sample below.
+To add bubbles to a map, the BubbleSetting has to be added to the ShapeFileLayer.  Set the `AutoFillColors`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~AutoFillColors.html] as false and set the `Fill`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~Fill.html] property. Also set the `MaxSize`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~MaxSize.html], `MinSize`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~MinSize.html], and `ValuePath`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~ValuePath.html] properties as shown in the code sample below.
 
 When the under-bound value is below any of the given sorted range or above the sorted range, then the fill is set as “Black.” 
 
-“AutoFillColors” must be set as “False” to enable range color mapping.
+`AutoFillColors` must be set as “False” to enable range color mapping.
 
-
-
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -106,16 +104,16 @@ partial class Form1
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
-
-
 public partial class Form1 : Form
-
-    {
+{
 
         private void Form1_Load(object sender, EventArgs e)
-
         {
 
             this.mapsControl1.Dock = DockStyle.Fill;
@@ -126,13 +124,7 @@ public partial class Form1 : Form
 
             this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
 
-
-
              MapViewModel model = new MapViewModel();
-
-
-
-
 
              ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
@@ -145,22 +137,17 @@ public partial class Form1 : Form
              shapeLayer.ShapeIDTableField = "NAME"; 
 
 
-
              shapeLayer.ShapeSetting.ShapeValuePath = "Population";
 
              shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
 
              shapeLayer.ShapeSetting.ShapeDisplayValuePath = "NAME";
 
-
-
              shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
 
              shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
 
              shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
-
-
 
             shapeLayer.BubbleSetting.AutoFillColors = false;
 
@@ -172,20 +159,19 @@ public partial class Form1 : Form
 
             shapeLayer.BubbleSetting.ColorValuePath = "Population";
 
-
-
             this.mapsControl1.Layers.Add(shapeLayer);
 
          }
 
-     }       
+}       
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Screenshot:
 
 ![](Bubbles_images/Bubbles_img1.png)
-
 
 
 ## RangeColorMapping
@@ -213,21 +199,16 @@ Gets or sets the color values for a given From and To value.</td></tr>
 </table>
 
 
-The fill color of a particular bubble fill can be determined by its under-bound value and the color range. For example, consider the following color ranges:
+The fill color of a particular bubble can be determined by its under-bound value and the color range. For example, consider the following color ranges:
 
-
+{% tabs %}
 
 {% highlight c# %}
 
 partial class Form1
-
+{
+    private void InitializeComponent()
     {
-
-
-
- private void InitializeComponent()
-
-         {
 
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
 
@@ -237,26 +218,28 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
 
-         }
+    }
 
             private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-     }  
+}  
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
 public partial class Form1 : Form
-
-    {
+{
 
         private void Form1_Load(object sender, EventArgs e)
-
         {
 
             this.mapsControl1.Dock = DockStyle.Fill;
@@ -267,11 +250,7 @@ public partial class Form1 : Form
 
             this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
 
-
-
              MapViewModel model = new MapViewModel();
-
-
 
              ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
@@ -292,7 +271,6 @@ public partial class Form1 : Form
              shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
 
              shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
-
 
 
             shapeLayer.BubbleSetting.AutoFillColors = false;
@@ -319,15 +297,15 @@ public partial class Form1 : Form
 
             shapeLayer.BubbleSetting.ColorMappings.Add(new RangeColorMapping { From = 50586757, To = 82724090, Color = System.Drawing.Color.FromArgb(0x7F, 0xED, 0x2D, 0x95) });
 
-
-
              this.mapsControl1.Layers.Add(shapeLayer);
 
          }
 
-     }       
+}       
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Screenshot: 
 
