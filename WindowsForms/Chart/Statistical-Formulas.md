@@ -76,7 +76,7 @@ This formula performs a Z Test using Normal distribution.</td></tr>
 
 ### ANOVA Test
 
-ANOVA stands for Analysis Of Variance. It is a technique to test the hypothesis that the means among two or more groups of data are equal and thereby, testing the differences between their variances, under the assumption that the sampled groups are normally distributed. 
+ANOVA stands for Analysis Of Variance. It is a technique to test the hypothesis that means among two or more groups of data are equal and thereby, testing the differences between their variances, under the assumption that the sampled groups are normally distributed. 
 
 The test actually compares the variation between the groups with the variation within the groups and produces the results based on the values of these variations. If the between variation is larger than the within variation, the means of the groups will not be equal. If both these variations are of approximately the same size, then there will not be any significant difference between the means.
 

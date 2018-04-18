@@ -121,6 +121,8 @@ The needle type for the radial slider can be customized using the NeedleType enu
 * Straight Line (Default)
 * Dotted Line
 
+{% tabs %}
+
 {% highlight C# %}
 
    this.radialSlider1.NeedleType = Syncfusion.Windows.Forms.Tools.SliderNeedleType.DottedLine;
