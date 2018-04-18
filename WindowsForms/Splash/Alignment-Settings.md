@@ -26,20 +26,21 @@ DesktopAlignment</td><td>
 Specifies the desktop alignment of the splash image. It includes the following options.SystemTray,Center,LeftTop,LeftBottom,RightTop,RightBottom andCustom.</td></tr>
 </table>
 
-
 This can be done through code using the code snippet below.
 
+{% tabs %}
 {% highlight c# %}
 
 this.splashControl1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.SystemTray;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.SplashControl1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.SystemTray
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img38.jpeg) 
 

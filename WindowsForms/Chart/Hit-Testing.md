@@ -13,17 +13,15 @@ The section covers the below topics:
 
 ## Chart Coordinates by Point
 
-### Chart Coordinates by point
+### GetValueByPoint()
 
-#### GetValueByPoint()
-
-Using the GetValueByPoint method, the mouse position in chart client-coordinates can be converted into a corresponding Chart Coordinate in terms of x, y values.
+Using the [GetValueByPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~GetValueByPoint.html) method, the mouse position in chart client-coordinates can be converted into a corresponding Chart Coordinate in terms of x, y values.
 
 The below figure shows a chart where the tooltip text for each point shows the corresponding x, y value at that position. 
 
 ![](Hit-Testing_images/Hit-Testing_img1.jpeg)
 
-Code snippet for the above sample
+Code snippet for the above sample.
 
 {% tabs %}  
 
@@ -62,15 +60,15 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#### GetPointByValue()
+### GetPointByValue()
 
-The GetPointByValue method does the opposite of the above - given a chart coordinate it returns the client co-ordinate corresponding to that chart point.
+The [GetPointByValue](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~GetPointByValue.html) method does the opposite of the above - given a chart coordinate it returns the client co-ordinate corresponding to that chart.point.
 
 ## LegendItem By Point
 
 ### Get LegendItem By Point
 
-The Legend.GetItemBy method will let you get the reference to a legend item at a specific point. Implementing the below code sample, will display a tooltip with legend item name, on which the user mouse hover. 
+The [Legend.GetItemBy](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~GetItemBy.html) method will let you get the reference to a legend item at a specific point. Implementing the below code sample, will display a tooltip with legend item name, on which the user mouse hover. 
 
 {% tabs %}  
 
@@ -127,7 +125,7 @@ End Sub
 
 ### Full Chart Area Bounds
 
-Use the Bounds property to get the rectangular area comprising the chart area that includes the axis, axis titles and other sections.
+Use the [Bounds](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~Bounds.html) property to get the rectangular area comprising the chart area that includes the axis, axis titles and other sections.
 
 {% tabs %}  
 
@@ -171,7 +169,7 @@ End Sub
 
 ### Chart Plot Area Bounds
 
-Use the RenderBounds property to get the rectangular area comprising just the plot-area, bound by the axes.
+Use the [RenderBounds](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~RenderBounds.html) property to get the rectangular area comprising just the plot-area, bound by the axes.
 
 {% tabs %}  
 
