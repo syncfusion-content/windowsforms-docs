@@ -27,23 +27,18 @@ Indicates the tooltip of the panel.The text to be displayed in the tooltip can b
 
 This can be done through code as follows.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdvPanel1.ToolTip = "Tooltip for StatusBarAdvPanel";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdvPanel1.ToolTip = "Tooltip for StatusBarAdvPanel"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img93.jpeg)
-
-
-
