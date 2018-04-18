@@ -7,7 +7,7 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Applying custom renderer to the clock control
+# Applying custom renderer to the Clock control
 
 ## Customization of rendering by overriding the method
 

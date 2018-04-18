@@ -11,7 +11,7 @@ documentation: ug
 
 This section demonstrates how to set a splash image and how to display it with animation.
 
-## Splash Image
+## Splash image
 
 The splash image can be displayed by setting the property given below.
 
@@ -28,20 +28,21 @@ SplashImage</td><td>
 The image for displaying as the background of the default splash screen.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight c# %}
 
 this.splashControl1.SplashImage = ((System.Drawing.Image)(resources.GetObject("splashControl1.SplashImage")));
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.splashControl1.SplashImage = CType((resources.GetObject("splashControl1.SplashImage")), System.Drawing.Image)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img39.jpeg) 
-
 
 ## Animation
 
@@ -72,27 +73,22 @@ TransparentColor</td><td>
 Gets / sets the color to be used to make the splash image transparent.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight c# %}
 
 this.splashControl1.ShowAnimation = true;
-
 this.splashControl1.ShowAsTopMost = false;
-
 this.splashControl1.SplashImage = ((System.Drawing.Image)(resources.GetObject("splashControl1.SplashImage")));
-
 this.splashControl1.TransparentColor = System.Drawing.Color.White;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.splashControl1.ShowAnimation = True
-
 Me.splashControl1.ShowAsTopMost = False
-
 Me.splashControl1.SplashImage = CType((resources.GetObject("splashControl1.SplashImage")), System.Drawing.Image)
-
 Me.splashControl1.TransparentColor = System.Drawing.Color.White
 
 {% endhighlight %}
-
+{% endtabs %}

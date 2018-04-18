@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Adding SplitButton to an Application
+## Adding SplitButton to an application
 
 ### Adding through Visual Studio 
 
@@ -23,59 +23,51 @@ The following are steps to add the SplitButton control to an Application through
 3. SplitButton control is added.
 4. Now customize the properties of SplitButton in the Properties Window. 
 
-###  Through Code
-
-
+###  Through code
 
 Following are the steps to add the SplitButton control to an application through code:
 
 1. Include the Tools Windows namespace as given in the following code:
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-     using Syncfusion.Windows.Forms.Tools;
-	 
-   ~~~
-   {:.prettyprint }
+using Syncfusion.Windows.Forms.Tools;
 
-   ~~~ vbnet
+{% endhighlight %}
 
-		Imports Syncfusion.Windows.Forms.Tools
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+{% endtabs %}
 
 2. Create an instance of  SplitButton  control and add it to the form as given in the following code:
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-     Syncfusion.Windows.Forms.Tools.SplitButton splitButton;
+Syncfusion.Windows.Forms.Tools.SplitButton splitButton;
+this.splitButton = new Syncfusion.Windows.Forms.Tools.SplitButton();
+this.Controls.Add(splitButton);
 
-     this.splitButton = new Syncfusion.Windows.Forms.Tools.SplitButton();
+{% endhighlight %}
 
-     this.Controls.Add(splitButton);
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+Dim splitButton As Syncfusion.Windows.Forms.Tools.SplitButton
+Me.splitButton = New Syncfusion.Windows.Forms.Tools.SplitButton()
+Me.Controls.Add(splitButton)
 
-   ~~~ vbnet
+{% endhighlight %}
+{% endtabs %}
 
-      Dim splitButton As Syncfusion.Windows.Forms.Tools.SplitButton
-
-      Me.splitButton = New Syncfusion.Windows.Forms.Tools.SplitButton()
-
-      Me.Controls.Add(splitButton)
-
-   ~~~
-   {:.prettyprint }
-
-## Appearance and Structure of the Control
+## Appearance and structure of the control
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-
-
-## Properties and Events Tables for SplitButton Control
+## Properties and events tables for SplitButton control
 
 ### Properties
 
@@ -146,5 +138,3 @@ EventArgs</td><td>
 NA </td><td>
 NA </td></tr>
 </table>
-
-

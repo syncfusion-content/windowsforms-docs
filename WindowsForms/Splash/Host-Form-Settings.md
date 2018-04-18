@@ -32,23 +32,20 @@ HostFormWindowState</td><td>
 Specifies whether the host form should be displayed as normal or minimized or maximized, when the splash screen is displayed.The HideHostForm property should be set to 'True'.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight c# %}
 
 this.splashControl2.HostForm = this;
-
 this.splashControl1.HideHostForm = true;
-
 this.splashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.splashControl2.HostForm = Me
-
 Me.SplashControl1.HideHostForm = True
-
 Me.SplashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal
 
 {% endhighlight %}
-
+{% endtabs %}

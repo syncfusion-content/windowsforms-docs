@@ -7,13 +7,13 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-#  Appearance and structure of the clock control
+#  Appearance and structure of the Clock control
 
 ## Color setting
 
 Clock control allows you to customize its gradient back color, hands color, minute line color, and border color.
 
-### Customizing color to the clock
+### Customizing color to the Clock
 
 Clock control has individual property to set color for gradient back color, hands color, minutes color, and border color.
 

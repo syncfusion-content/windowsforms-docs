@@ -27,8 +27,6 @@ Indicates the StatusBarAdvPanel controls contained in the StatusBarAdv.</td></tr
 
 ![](Overview_images/Overview_img70.jpeg) 
 
-
-
 ## Spacing
 
 The space between the panels can be set using the property given below.
@@ -46,27 +44,23 @@ Spacing</td><td>
 Gets / sets the spacing between the panels.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdv1.Spacing = new System.Drawing.Size(5, 5);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdv1.Spacing = New System.Drawing.Size(5, 5)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img71.jpeg) 
 
-
-## Panel Size
+## Panel size
 
 The rectangle that is used to display the panels can be customized using the property given below.
 
@@ -86,23 +80,18 @@ Indicates a custom rectangle that the layout will use to display the panels.</td
 
 It can be set programmatically through the below code snippet.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdv1.CustomLayoutBounds = new System.Drawing.Rectangle(5, 2, 100, 20);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdv1.CustomLayoutBounds = New System.Drawing.Rectangle(5, 2, 100, 20)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img72.jpeg) 
-
-
-

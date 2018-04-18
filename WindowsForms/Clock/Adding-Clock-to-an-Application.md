@@ -7,7 +7,7 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Adding clock to an application
+# Adding Clock to an application
 
 ## Adding through Visual Studio
 
