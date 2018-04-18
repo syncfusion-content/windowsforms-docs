@@ -20,12 +20,6 @@ A sample which demonstrates the BorderLayout is available in the below sample in
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-{% seealso %}
-
-[Creating a Simple Layout.](/windowsforms/layoutmanagers/creating-a-simple-layout)
-
-{% endseealso %}
-
 ## Configuring BorderLayout
 
 The configuration settings for the BorderLayout have been discussed in this topic.
@@ -77,13 +71,6 @@ Me.borderLayout1.VGap = 10
 
 ![](Overview_images/Overview_img17.jpeg)
 
-
-
-{% seealso %}
-
-[Margin Settings](/windowsforms/layoutmanagers/layout-manager-settings#margin-settings), [Border Layout - Configuring Child Controls](#configuring-child-controls)
-
-{% endseealso %}
 
 ## Configuring Child controls
 
@@ -139,6 +126,7 @@ N> BorderLayout allows only one control to be aligned along a particular layout 
 
 {% seealso %}
 
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Margin Settings](/windowsforms/layoutmanagers/layout-manager-settings#margin-settings), [Border Layout - Configuring Child Controls](#configuring-child-controls), and
 [Configuring BorderLayout.](#configuring-borderlayout)
 
 {% endseealso %}

@@ -10,7 +10,7 @@ documentation: ug
 
 The GroupBar control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the built-in visual styles.
 
-The styles are built in for GroupBar.
+The styles are built-in for GroupBar.
 
 •	Default
 
@@ -83,7 +83,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 ![](Overview_images/Overview_img118.jpeg) 
 
-You can also specify the color schemes for Office 2007 visual styles. They can be Blue, Silver, Black and Managed.
+You can also specify the color schemes for Office 2007 visual styles. They can be Blue, Silver, Black, and Managed.
 
 •	Blue
 
@@ -179,7 +179,7 @@ Me.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
 **Managed**
 
-This option helps to apply the custom colors to the GroupBar by setting Office2007Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
+This option helps to apply the custom colors to the GroupBar by setting Office2007Theme to 'Managed' and specifying the custom color through the ApplyManagedColors method as follows.
 
 {% tabs %}
 
@@ -234,7 +234,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
 
 ![](Overview_images/Overview_img123.jpeg) 
 
-It also specifies the color schemes for Office 2010 visual styles. They can be Blue, Silver, Black and Managed.
+It also specifies the color schemes for Office 2010 visual styles. They can be Blue, Silver, Black, and Managed.
 
 •	Blue
 
@@ -332,7 +332,7 @@ Me.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver
 
 **Managed**
 
-This option helps to apply the custom colors to the GroupBar by setting Office2010Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
+This option helps to apply the custom colors to the GroupBar by setting Office2010Theme to 'Managed' and specifying the custom color through the ApplyManagedColors method as follows.
 
 {% tabs %}
 

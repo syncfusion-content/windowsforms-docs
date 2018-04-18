@@ -22,55 +22,25 @@ N> The CommandBar Framework should be used directly in an application only when 
 
 ReBar controls act as containers for child controls. They contain one or more bands, and each band can have any combination of a gripper bar, a bitmap, a text label, and many more controls. ReBar control is also called as CoolBar. This control is not included in the .NET Framework. It is available only in the VB 6.0 and MFC Framework.
 
-This section lists the features that are available in the CommandBar control.
-
 ## Key features
 
-* CommandBar states
+* CommandBar states - The CommandBar can be floated by setting the DisableFloating property to `false` and it can be docked to the form by setting the DisableDocking property to `false`. The CommandBar can be docked to the Bottom, Left, Right, and Top of the form using the AllowedDockBorders property of the CommandBar. The EnableDockBorders property of the CommandBarController must be set to `true` for the above property to take effect.
 
-The CommandBar can be floated by setting the DisableFloating property to 'False'.
+* Button settings - The CommandBar is usually displayed with the close button and drop-down button which can be enabled or disabled according to the needs of the user.
 
-The CommandBar can be docked to the form by setting the DisableDocking property to 'False'.
+* Interactive featurs - All toolbar icons that do not fit in the space available in the toolbar are displayed by the chevron provided by the CommandBar.
 
-The CommandBar can be docked to the Bottom, Left, Right, and Top of the form using the AllowedDockBorders property of the CommandBar. The EnableDockBorders property of the CommandBarController must be set to 'True' for the above property to take effect.
+* Adding pop-up Menu - Pop-up Menus can be easily associated with the CommandBar which can be displayed on clicking the drop-down button of the CommandBar or on right-clicking the CommandBar control itself.
 
-* Button settings
+* Adding Custom Child Controls - CommandBars allows the user to add custom controls. Single or Multiple controls can be added onto the control.
 
-The CommandBar is usually displayed with the close button and drop-down button which can be enabled or disabled according to the needs of the user.
+* Appearance settings - CommandBars allows you to create a professional, rich appearance, and also enables to achieve the popular look and feel. The back color of the CommandBar and CommandBarController can be changed. The font of the text displayed, length, and height of the CommandBar can also be set as per the needs of the user. The gripper that is provided enables floating/docking the CommandBar at run time.
 
-* Interactive features
+* Behavior settings - The Cursor property allows to set the cursor to be displayed when the mouse is moved over the control. The CommandBar can be hidden by setting the Visible property to 'False'. It's contents can be aligned from right to left or vice versa using the RightToLeft property of the CommandBarController.
 
-All toolbar icons that do not fit in the space available in the toolbar are displayed by the chevron provided by the CommandBar.
+* Themes and visual styles - The appearance of the CommandBar control is enhanced by applying wide range of visual styles such as Office XP, Office 2003, VS 2005, and Office 2007. It also comes with the new Office 20007 themes in the blue, silver, and black colors.
 
-* Adding pop-up Menu
-
-Pop-up Menus can be easily associated with the CommandBar which can be displayed on clicking the drop-down button of the CommandBar or on right-clicking the CommandBar control itself.
-
-* Adding Custom Child Controls
-
-CommandBars allows the user to add custom controls. Single or Multiple controls can be added onto the control.
-
-* Appearance settings
-
-CommandBars allows you to create a professional, rich appearance, and also enables to achieve the popular look and feel.
-
-The back color of the CommandBar and CommandBarController can be changed. The font of the text displayed, length, and height of the CommandBar can also be set as per the needs of the user.
-
-The gripper that is provided enables floating/docking the CommandBar at run time.
-
-* Behavior settings
-
-The Cursor property allows to set the cursor to be displayed when the mouse is moved over the control.
-
-The CommandBar can be hidden by setting the Visible property to 'False'. It's contents can be aligned from right to left or vice versa using the RightToLeft property of the CommandBarController.
-
-* Themes and visual styles
-
-The appearance of the CommandBar control is enhanced by applying wide range of visual styles such as Office XP, Office 2003, VS 2005, and Office 2007. It also comes with the new Office 20007 themes in the blue, silver, and black colors.
-
-* Serialization
-
-It allows the user to save and load the state of the CommandBar objects using different storage techniques.
+* Serialization - It allows the user to save and load the state of the CommandBar objects using different storage techniques.
 
 
 

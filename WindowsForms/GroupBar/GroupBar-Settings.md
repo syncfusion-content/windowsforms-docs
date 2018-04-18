@@ -12,7 +12,7 @@ The look and feel of the GroupBar can be controlled through the appearance prope
 
 ## Integrated scrolling
 
-Scroll buttons can be included for the client controls in the GroupBar by setting the IntegratedScrolling property to 'True'.
+Scroll buttons can be included for the client controls in the GroupBar by setting the IntegratedScrolling property to `true`.
 
 
 
@@ -51,7 +51,7 @@ Me.groupBar1.IntegratedScrolling = True
 
 ## StackedGroupBar
 
-The following are the properties available for GroupBar Items when the GroupBar is in the Stacked Mode. The Stacked Mode can be enabled by setting the StackedMode property to 'True'.
+The following are the properties available for GroupBar Items when the GroupBar is in the Stacked Mode. The Stacked Mode can be enabled by setting the StackedMode property to `true`.
 
 
 
@@ -107,18 +107,18 @@ Me.groupBarItem1.NavigationPaneImage = DirectCast((Resources.GetObject("groupBar
 
 {% endtabs %}
 
-If you want to display an icon or image for the GroupBar Item displayed in the GroupBar's navigation pane, set the InNavigationPane property to 'True' and associate icons or images with the NavigationPaneIcon and NavigationPaneImage 
+If you want to display an icon or image for the GroupBar Item displayed in the GroupBar's navigation pane, set the InNavigationPane property to `true` and associate icons or images with the NavigationPaneIcon and NavigationPaneImage 
 properties respectively.
 
  ![](Overview_images/Overview_img12.jpeg) 
 
 
-Stacked GroupBar Item automatically shows the Chevron, which can be made invisible by setting the ShowChevron property to 'False'.
+Stacked GroupBar Item automatically shows the Chevron, which can be made invisible by setting the ShowChevron property to `false`.
 
 ![](Overview_images/Overview_img13.jpeg)
 
 
-N> You should set LargeImageMode of GroupBarItem to 'True' to display the item images in the GroupBar's navigation pane.
+N> You should set LargeImageMode of GroupBarItem to `true` to display the item images in the GroupBar's navigation pane.
 
 ### Navigation pane
 
@@ -134,11 +134,11 @@ Description</th></tr>
 <tr>
 <td>
 NavigationPaneButtonWidth</td><td>
-Specifies the width of the GroupBar Items displayed in the navigation pane. This property will be available only when StackedMode property is set to 'True'.</td></tr>
+Specifies the width of the GroupBar Items displayed in the navigation pane. This property will be available only when StackedMode property is set to `true`.</td></tr>
 <tr>
 <td>
 NavigationPaneHeight</td><td>
-Specifies the height of the GroupBar Navigation pane. This property will be available only when StackedMode property is set to 'True'.</td></tr>
+Specifies the height of the GroupBar Navigation pane. This property will be available only when StackedMode property is set to `true`.</td></tr>
 </table>
 
 {% tabs %}
@@ -177,7 +177,7 @@ The Navigation Pane is displayed when the GroupBar is in the Stacked Mode. It's 
 
 This section discusses settings of a groupbar in its collapsed state.
 
-N> AllowCollapse property should be set to true to effect the below settings.
+N> AllowCollapse property should be set to `true` to effect the below settings.
  
 
 <table>

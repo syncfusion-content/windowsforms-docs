@@ -18,12 +18,6 @@ A Sample which demonstrates the GridLayout is available in the below sample inst
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-{% seealso %}
-
-[Creating a Simple Layout.](/windowsforms/layoutmanagers/creating-a-simple-layout)
-
-{% endseealso %}
-
 ## Configuring GridLayout
 
 ### Rows and columns
@@ -126,11 +120,6 @@ Me.gridLayout1.VGap=10
 
 N> To include some margin space along the borders, refer_ Margin Settings.
 
-{% seealso %}
-
-[GridLayout - Configuring Child Controls](#configuring-child-controls), [Rearranging the Controls laid out by GridLayout](#rearranging-the-controls-laid-out-by-gridlayout)
-
-{% endseealso %}
 
 ## Configuring Child controls
 
@@ -150,7 +139,7 @@ Description</th></tr>
 <tr>
 <td>
 ParticipateInLayout</td><td>
-Specifies whether the Child control should participate in the GridLayout. The default value is set to 'True'.</td></tr>
+Specifies whether the Child control should participate in the GridLayout. The default value is set to `true`.</td></tr>
 </table>
 
 
@@ -194,12 +183,6 @@ Me.gridLayout1.SetParticipateInLayout(Me.button1,False)
 
 {% endtabs %}
 
-{% seealso %}
-
-Configuring GridLayout, Rearranging the Controls laid out by GridLayout, GridLayout - Configuring Child Controls.
-
-{% endseealso %}
-
 ## Rearranging the controls laid out by GridLayout
 
 The Child controls of the GridLayout can be rearranged by dragging-and-dropping them at design time.
@@ -210,6 +193,6 @@ The Child controls of the GridLayout can be rearranged by dragging-and-dropping 
 
 {% seealso %}
 
-[Rearranging the Controls laid out by FlowLayout](/windowsforms/layoutmanagers/flowlayout#rearranging-the-controls-laid-out-by-flowlayout), [Rearranging the Controls laid out by GridBagLayout.](/windowsforms/layoutmanagers/gridbaglayout#rearranging-the-controls-laid-out-by-gridbaglayout)
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Rearranging the Controls laid out by FlowLayout](/windowsforms/layoutmanagers/flowlayout#rearranging-the-controls-laid-out-by-flowlayout), and [Rearranging the Controls laid out by GridBagLayout](/windowsforms/layoutmanagers/gridbaglayout#rearranging-the-controls-laid-out-by-gridbaglayout).
 
 {% endseealso %}
