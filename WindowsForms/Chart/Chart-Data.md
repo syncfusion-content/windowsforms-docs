@@ -495,7 +495,7 @@ The below steps lets you bind a database table with the [ChartControl](https://h
 
 ![](Chart-Data_images/Chart-Data_img15.png)
 
-## Binding the Table Data with Chart Series
+## Binding the Table Data with ChartSeries
 
 1.Click the 'Series Data' option in the wizard to select the series to which the data is to be bound. In 'Series Data' page, select the series using the Series Data box.
 
@@ -521,7 +521,7 @@ Follow the steps to bind the Chart with a BindingSource by using the Chart Wizar
 
 **Step-1:**
 
-Open the Chart Wizard in designer. Chart wizard can be opened either by right-clicking the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and choosing the Chart Wizard option in context menu or by clicking Chart Wizard option in smart tag of the Chart control. Chart wizard appears as follows.
+Open the Chart Wizard in designer. Chart wizard can be opened either by right-clicking the [Chart control](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and choosing the Chart Wizard option in context menu or by clicking Chart Wizard option in smart tag of the Chart control. Chart wizard appears as follows.
 
 ![](Chart-Data_images/Chart-Data_img20.png)
 

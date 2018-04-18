@@ -49,7 +49,7 @@ The above default chart title is simply the first in the list of titles that can
 
 ## Titles Positioning
 
-Below listed properties will help you to modify the positioning of the [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html).
+Below listed properties will help you to modify the positioning of the [Chart Title](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html).
 
 _Titles Positioning_
 

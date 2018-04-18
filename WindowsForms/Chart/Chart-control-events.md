@@ -218,7 +218,7 @@ End Sub
 
 ## PrepareStyle Event
 
-When a series point is about to be rendered by the chart, it will [PrepareStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PrepareStyle_EV.html) event and allow event subscribers to change the style used. 
+When a series point is about to be rendered by the chart, it will raise [PrepareStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PrepareStyle_EV.html) event and allow event subscribers to change the style used. 
 
 {% tabs %}  
 
@@ -344,6 +344,12 @@ End Sub
 ## ChartAreaPaint Event
 
 [ChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaPaint_EV.html) event is discussed in Custom Drawing.
+
+{% seealso %}
+
+[Chart Area Bounds](/windowsforms/chart/hit-testing#chart-area-bounds)
+
+{% endseealso %}
 
 ## ChartLegendFilterItems Event
 

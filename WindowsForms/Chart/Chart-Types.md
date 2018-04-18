@@ -443,7 +443,7 @@ Number of Series - One or More.
 
 Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.        
 
-StepLine series can be added to the chart using the following code.
+Step Line series can be added to the chart using the following code.
 
 {% tabs %}  
 

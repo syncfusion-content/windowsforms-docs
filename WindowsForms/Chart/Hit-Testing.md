@@ -13,7 +13,7 @@ The section covers the below topics:
 
 ## Chart Coordinates by Point
 
-#### GetValueByPoint()
+### GetValueByPoint()
 
 Using the [GetValueByPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~GetValueByPoint.html) method, the mouse position in chart client-coordinates can be converted into a corresponding Chart Coordinate in terms of x, y values.
 
@@ -60,7 +60,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-#### GetPointByValue()
+### GetPointByValue()
 
 The [GetPointByValue](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~GetPointByValue.html) method does the opposite of the above - given a chart coordinate it returns the client co-ordinate corresponding to that chart.point.
 
