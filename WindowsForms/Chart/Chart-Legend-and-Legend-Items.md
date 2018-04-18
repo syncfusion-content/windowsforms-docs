@@ -14,18 +14,18 @@ Essential Chart by default displays a legend with information on each series tha
 ![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg)
 
 1. Legend - The rectangular region that lists one or more legend items.
-2. Legend Item - Represented by an icon or image and a text; this usually gets rendered automatically corresponding to each ChartSeries in the chart. You can also add custom legend items to a Legend.
+2. Legend Item - Represented by an icon or image and a text; this usually gets rendered automatically corresponding to each [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) in the chart. You can also add custom legend items to a Legend.
 3. Symbols - These refer to the symbols drawn at the data points in a plot. The legend items corresponding to the series can also be rendered with this symbol instead of an icon.
 
-You can turn off the legend by setting the ShowLegend property in the chart to false. The legend instances in the Chart are exposed via the Legends collection. The first entry in this list is considered the "default legend" and is exposed by the Legend property.
+You can turn off the legend by setting the [ShowLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowLegend.html) property in the chart to false. The legend instances in the Chart are exposed via the Legends collection. The first entry in this list is considered the "default legend" and is exposed by the [Legend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Legend.html) property.
 
 ## ChartLegend
 
-The legend is represented by the ChartLegend type.
+The legend is represented by the [ChartLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend.html) type.
 
 ### Default Legend
 
-By default, a custom ChartLegend instance gets added to the Legends list in the control. You can access this default legend as follows. 
+By default, a custom [ChartLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend.html) instance gets added to the Legends list in the control. You can access this default legend as follows. 
 
 {% tabs %}  
 
@@ -48,7 +48,7 @@ Me.chartControl1.Legends[0].LegendPosition = Syncfusion.Windows.Forms.Chart.Char
 
 ### Adding Custom Legends
 
-You can add custom legends to the chart through the Legends list as follows:
+You can add custom legends to the chart through the [Legends](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Legends.html) list as follows:
 
 {% tabs %}  
 
@@ -75,9 +75,9 @@ chartControl1.Legends.Add(legend2)
 {% endhighlight %}
 {% endtabs %}
 
-You can then add custom legend items into the ChartLegend through the CustomItems property as explained in the next topic (ChartLegendItem).
+You can then add custom legend items into the [ChartLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend.html) through the CustomItems property as explained in the next topic (ChartLegendItem).
 
-You can also associate a ChartSeries to a custom ChartLegend as follows (then the legend item corresponding to that series will be rendered within the specified legend):
+You can also associate a [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) to a custom [ChartLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend.html) as follows (then the legend item corresponding to that series will be rendered within the specified legend):
 
 {% tabs %}  
 
@@ -117,11 +117,13 @@ ChartLegend Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-BackColor</td><td>
+
+{{'[BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~BackColor.html)'| markdownify }}
+</td><td>
 Gets / sets the background color of the legend. The default value is Transparent.</td></tr>
 <tr>
 <td>
-VisibleCheckBox</td><td>
+{{'[VisibleCheckBox](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~VisibleCheckBox.html)'| markdownify }}</td><td>
 If set to true, a checkbox will be displayed beside each legend item. And if this checkbox is unchecked the corresponding series will disappear from the chart plot. Default is false.</td></tr>
 </table>
 
@@ -135,23 +137,29 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Border</td><td>
+
+{{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Border.html)'| markdownify }}
+</td><td>
 Gets / sets the border style of the legend. ShowBorder should be true.</td></tr>
 <tr>
 <td>
-ShowBorder</td><td>
+{{'[ShowBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ShowBorder.html)'| markdownify }}
+</td><td>
 Specifies whether a border should be drawn. By default it is set to false.</td></tr>
 <tr>
 <td>
-Font</td><td>
+{{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Font.html)'| markdownify }}
+</td><td>
 Specifies the font that is to be used for the text rendered in the legend items. The default font style is Verdana, 8, Regular.</td></tr>
 <tr>
 <td>
-BackInterior</td><td>
+{{'[BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~BackInterior.html)'| markdownify }}
+</td><td>
 Sets the interior appearance for the legend. This overrides the BackColor property.</td></tr>
 <tr>
 <td>
-BackgroundImage</td><td>
+BackgroundImage
+</td><td>
 Sets the background image for the legend. This setting overrides the BackInterior property settings.</td></tr>
 <tr>
 <td>
@@ -163,7 +171,6 @@ Sets the layout for the background image.</td></tr>
 
 The legend positioning can be affected in the following ways.
 
-
 <table>
 <tr>
 <th>
@@ -171,43 +178,55 @@ ChartLegend Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Position</td><td>
+
+{{'[Position](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Position.html)'| markdownify }}
+</td><td>
 Specifies the position relative to the chart at which to render the legend.* Top - above the chart* Left - left of the chart* Right - right of the chart* Bottom - below the chart* Floating - will not be docked to any specific location(default setting)</td></tr>
 <tr>
 <td>
-<br>LegendAlignment</td><td>
+<br>
+{{'[LegendAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~LegendAlignment.html)'| markdownify }}
+</td><td>
 When docked to a side, this property specifies how the legend should be aligned with respect to the chart boundaries.</td></tr>
 <tr>
 <td>
-LegendPlacement</td><td>
+{{'[LegendPlacement](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~LegendsPlacement.html)'| markdownify }}
+</td><td>
 Specifies the placement of a legend in a chart. It can be placed Inside or Outside the chart area using ChartPlacement enum.</td></tr>
 <tr>
 <td>
-DockingFree</td><td>
+{{'[DockingFree](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDockControl~DockingFree.html)'| markdownify }}
+</td><td>
 If set to true, the legend will be floating and cannot be dragged and docked to the sides.</td></tr>
 <tr>
 <td>
-Behavior</td><td>
+{{'[Behavior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDockControl~Behavior.html)'| markdownify }}
+</td><td>
 Specifies the docking behavior of the Legend.* Docking - It is dockable on all four sides* Movable - It is movable* All - It is movable and dockable* None - It is neither movable nor dockable</td></tr>
 <tr>
 <td>
-<br>FloatingAutoSize</td><td>
+<br>
+{{'[FloatingAutoSize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~FloatingAutoSize.html)'| markdownify }}
+</td><td>
 Specifies whether to determine the size automatically or not, while floating.</td></tr>
 <tr>
 <td>
-OnlyColumnsForFloating</td><td>
+{{'[OnlyColumnsForFloating](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~OnlyColumnsForFloating.html)'| markdownify }}
+</td><td>
 The legend items will be displayed vertically in columns when floating.</td></tr>
 <tr>
 <td>
-RowsCount</td><td>
+{{'[RowsCount](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~RowsCount.html)'| markdownify }}
+</td><td>
 Specifies the number of rows in which the legend items should be rendered.</td></tr>
 <tr>
 <td>
-ColumnsCount</td><td>
+{{'[ColumnsCount](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ColumnsCount.html)'| markdownify }}
+</td><td>
 Specifies the number of columns in which the legend items should be rendered.</td></tr>
 </table>
 
-Note that the user can drag the legend around during run time. He can dock it to the sides if docking is enabled. Docking behavior is controlled by Behavior property which is described in the above table.
+Note that the user can drag the legend around during run time. He can dock it to the sides if docking is enabled. Docking behavior is controlled by [Behavior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDockControl~Behavior.html) property which is described in the above table.
 
 ### Changing Legend Properties at Run Time
 
@@ -229,9 +248,9 @@ The legend item is represented by the ChartLegendItem type.
 
 ### Default Series LegendItems
 
-Every ChartSeries in the chart control has a ChartLegendItem associated with it. This legend item gets automatically added to the default ChartLegend. 
+Every [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) in the chart control has a ChartLegendItem associated with it. This legend item gets automatically added to the default [ChartLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend.html). 
 
-But, if you want to get that associated with a custom ChartLegend, use the LegendName to specify that chart legend as follows:
+But, if you want to get that associated with a custom [ChartLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend.html), use the [LegendName](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~LegendName.html) to specify that chart legend as follows:
 
 {% tabs %}  
 
@@ -254,7 +273,7 @@ series1.LegendName = "MyLegend"
 
 ### Adding Custom Legend Items
 
-To add your own custom legend items to a legend, use the CustomItems property in the ChartLegend as follows.
+To add your own custom legend items to a legend, use the [CustomItems](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~CustomItems.html) property in the [ChartLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend.html) as follows.
 
 {% tabs %}  
 
@@ -303,7 +322,7 @@ Me.chartControl1.Legends[1].CustomItems = New ChartLegendItem() {legendItem1}
 
 There is also a way to specify custom legend item via events right before they get rendered. 
 
-In this example, we reverse the order in which the legend items are rendered through the FilterItems event.
+In this example, we reverse the order in which the legend items are rendered through the [FilterItems](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~FilterItems_EV.html) event.
 
 {% tabs %}  
 
@@ -352,7 +371,7 @@ End Sub
 
 ### Legend Item's Look and Feel
 
-The legend item's look and feel can be customized to a good extent using the following properties in ChartLegend. 
+The legend item's look and feel can be customized to a good extent using the following properties in [ChartLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend.html). 
 
 These settings affect all the items in the legend.
 
@@ -363,51 +382,64 @@ ChartLegend Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-RowCount</td><td>
+
+{{'[RowsCount](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~RowsCount.html)'| markdownify }}
+</td><td>
 Specifies the number of rows to be used in the legend.</td></tr>
 <tr>
 <td>
-ColumnCount</td><td>
+{{'[ColumnsCount](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ColumnsCount.html)'| markdownify }}
+</td><td>
 Specifies the number of columns to be used in the legend.</td></tr>
 <tr>
 <td>
-ItemsAlignment</td><td>
+{{'[ItemsAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ItemsAlignment.html)'| markdownify }}
+</td><td>
 Specifies the horizontal alignment of the items within the legend. Possible values:Near - Default valueCenterFar</td></tr>
 <tr>
 <td>
-ShowItemsShadow</td><td>
+{{'[ShowItemsShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ShowItemsShadow.html)'| markdownify }}
+</td><td>
 Will render a shadow around the item image and text using the ItemsShadowColor. Default is false.</td></tr>
 <tr>
 <td>
-ItemsShadowColor</td><td>
+{{'[ItemsShadowColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ItemsShadowColor.html)'| markdownify }}
+</td><td>
 Specifies the color of the shadow to use. ShowItemsShadow should be set to true. Default is Gray.</td></tr>
 <tr>
 <td>
-ItemsShadowOffset</td><td>
+{{'[ItemsShadowOffset](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ItemsShadowOffset.html)'| markdownify }}
+</td><td>
 Specifies the breadth of the shadow. Default is {2, 2}.</td></tr>
 <tr>
 <td>
-ItemsSize</td><td>
+{{'[ItemsSize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ItemsSize.html)'| markdownify }}
+</td><td>
 Specifies the size of the legend item rectangle. If the specified size is smaller than necessary to render the text, then it's ignored.</td></tr>
 <tr>
 <td>
-ItemsTextAlignment</td><td>
+{{'[ItemsAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ItemsAlignment.html)'| markdownify }}
+</td><td>
 Specifies the vertical alignment of the legend item text within the item bounds. Possible Values:BottomCenter - Default valueTop</td></tr>
 <tr>
 <td>
-Spacing</td><td>
+{{'[Spacing](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Spacing.html)'| markdownify }}
+</td><td>
 Specifies the space between the legend borders and the legend items. Default is 4.</td></tr>
 <tr>
 <td>
-Text</td><td>
+{{'[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Text.html)'| markdownify }}
+</td><td>
 Specifies the title text for the legend. You can set multiline text for the legend; Enter the text in the combobox and press ENTER key to begin a new line and CTRL+ENTER to set the entered multiline text.</td></tr>
 <tr>
 <td>
-TextColor</td><td>
+{{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~TextColor.html)'| markdownify }}
+</td><td>
 Specifies the color of the title text.</td></tr>
 <tr>
 <td>
-TextAlignment</td><td>
+{{'[TextAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~TextAlignment.html)'| markdownify }}
+</td><td>
 Specifies the horizontal alignment of the title text. Possible Values:Center (Default value)FarNear</td></tr>
 </table>
 
@@ -423,28 +455,33 @@ Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-MinSize</td><td>
+
+{{'[MinSize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~MinSize_EV.html)'| markdownify }}
+</td><td>
 Used to specify a minimum rectangular size for the legend item.</td><td>
 object sender, ChartLegendMinSizeEventArgs e</td><td>
 NA </td><td>
 NA</td></tr>
 <tr>
 <td>
-DrawItem</td><td>
+{{'[DrawItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~DrawItem_EV.html)'| markdownify }}
+</td><td>
 Used to customize the rendering of the legend.</td><td>
 object sender, ChartLegendDrawItemEventArgs e</td><td>
 NA</td><td>
 NA</td></tr>
 <tr>
 <td>
-DrawItemText</td><td>
+{{'[DrawItemText](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~DrawItemText_EV.html)'| markdownify }}
+</td><td>
 Used to customize the rendering of the legend item text.</td><td>
 object sender, ChartLegendDrawItemTextEventArgs e</td><td>
 NA</td><td>
 NA</td></tr>
 <tr>
 <td>
-FilterItems</td><td>
+{{'[FilterItems](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~FilterItems_EV.html)'| markdownify }}
+</td><td>
 Used to dynamically provide a list of legend items during runtime. </td><td>
 object sender, ChartLegendFilterItemsEventArgs e</td><td>
 NA</td><td>
@@ -459,13 +496,13 @@ ChartLegend Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-GetItemBy</td><td>
+
+{{'[GetItemBy](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~FilterItems_EV.html)'| markdownify }}
+</td><td>
 Gets the legend item at the specified coordinates.</td></tr>
 </table>
 
-
 You can also reference specific legend items and apply settings on them individually:
-
 
 <table>
 <tr>
@@ -474,59 +511,74 @@ LegendItem Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-BorderColor</td><td>
+
+{{'[BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~BorderColor.html)'| markdownify }}
+</td><td>
 Specifies the color of the border around the legend shape.</td></tr>
 <tr>
 <td>
-Font</td><td>
+{{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Font.html)'| markdownify }}
+</td><td>
 Specifies the font for the text in this legend item.</td></tr>
 <tr>
 <td>
-Spacing</td><td>
+{{'[Spacing](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Spacing.html)'| markdownify }}
+</td><td>
 Specifies the space between this item and it's adjacent items. Default is 20.</td></tr>
 <tr>
 <td>
-Text</td><td>
+{{'[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Text.html)'| markdownify }}
+</td><td>
 Specifies the text of the legend item. By default this will reflect the corresponding series name.</td></tr>
 <tr>
 <td>
-TextColor</td><td>
+{{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~TextColor.html)'| markdownify }}
+</td><td>
 Specifies the text color for this item.</td></tr>
 <tr>
 <td>
-IconAlignment</td><td>
+{{'[IconAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~IconAlignment.html)'| markdownify }}
+</td><td>
 Specifies how the icon should be aligned within the item rectangle.</td></tr>
 <tr>
 <td>
-TextAlignment</td><td>
+{{'[TextAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~TextAligment.html)'| markdownify }}
+</td><td>
 Specifies how the text should be aligned within the item rectangle.</td></tr>
 <tr>
 <td>
-VisibleCheckBox</td><td>
+{{'[VisibleCheckBox](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~VisibleCheckBox.html)'| markdownify }}
+</td><td>
 If this property is set to true, a checkbox will be shown beside the legend item through which the user can show/hide the corresponding series in the chart.</td></tr>
 <tr>
 <td>
-ShowShadow</td><td>
+{{'[ShowShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~ShowShadow.html)'| markdownify }}
+</td><td>
 Will render a shadow around the item image and text using the ItemsShadowColor.</td></tr>
 <tr>
 <td>
-ShadowOffset</td><td>
+{{'[ShadowOffset](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~ShadowOffset.html)'| markdownify }}
+</td><td>
 Specifies the breadth of the shadow.</td></tr>
 <tr>
 <td>
-ShadowColor</td><td>
+{{'[ShadowColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~ShadowColor.html)'| markdownify }}
+</td><td>
 Specifies the color of the shadow to use. ShowItemsShadow should be set to true. Default is Gray.</td></tr>
 <tr>
 <td>
-Children</td><td>
+{{'[Children](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Children.html)'| markdownify }}
+</td><td>
 Returns the child collection of the LegendItem.</td></tr>
 <tr>
 <td>
-IsChecked </td><td>
+{{'[IsChecked](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~IsChecked.html)'| markdownify }}
+</td><td>
 Gets / sets the check state of the ChartLegendItem checkbox. By default it is set to true.</td></tr>
 <tr>
 <td>
-Visible</td><td>
+{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Visible.html)'| markdownify }}
+</td><td>
 Lets you show / hide the legend item.</td></tr>
 </table>
 
@@ -542,7 +594,7 @@ Lets you show / hide the legend item.</td></tr>
 
 ## Customizing LegendItem Image
 
-There are several options to customize the image rendered in the Legend. The following properties let you do so:
+There are several options to customize the image rendered in the [Legend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Legend.html). The following properties let you do so:
 
 
 <table>
@@ -552,18 +604,18 @@ ChartLegend Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-ShowSymbol</td><td>
+
+{{'[ShowSymbol](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~ShowSymbol.html)'| markdownify }}
+</td><td>
 If true, the exact symbol rendered in the series data points will be used to render the icon in the legend as well. This overrides most of the other settings.</td></tr>
 <tr>
 <td>
-RepresentationType</td><td>
-Specifies how each legend item should be represented, as the name implies:None (default setting)SeriesType - An icon representing the series type.SeriesImage - Will use the ImageList associated with the                              Series style.* Rectangle* Line* StraightLine* Circle* Diamond* Hexagon* Pentagon* Triangle* InvertedTriangle* Cross</td></tr>
+{{'[RepresentationType](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~RepresentationType.html)'| markdownify }}
+</td><td>
+Specifies how each legend item should be represented, as the name implies:None (default setting)SeriesType - An icon representing the series type.SeriesImage - Will use the ImageList associated with the series style.<ul><li>Rectangle</li><li>Line</li><li>StraightLine</li><li>Circle</li><li>Diamond</li><li>Hexagon</li><li>Pentagon</li><li>Triangle</li><li>InvertedTriangle</li><li>Cross</li></ul></td></tr>
 </table>
 
-
-
-The following ChartLegendItem properties that can be accessed via the Legend.Items list typically override the above settings set in the Legend.
-
+The following [ChartLegendItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem.html) properties that can be accessed via the legend. Items list typically override the above settings set in the legend.
 
 <table>
 <tr>
@@ -572,39 +624,50 @@ ChartLegendItem Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-DrawSeriesIcon</td><td>
+DrawSeriesIcon
+</td><td>
 Specifies if an icon representing the series type should be rendered for this legend item.</td></tr>
 <tr>
 <td>
-ImageList</td><td>
+
+{{'[ImageList](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~ImageList.html)'| markdownify }}
+</td><td>
 Contains a collection of images and will be referred to, by the ImageList property.</td></tr>
 <tr>
 <td>
-ImageIndex</td><td>
+{{'[ImageIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~ImageIndex.html)'| markdownify }}
+</td><td>
 Specifies the index into the ImageList array which contains the image for this item.</td></tr>
 <tr>
 <td>
-Interior</td><td>
+{{'[Interior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Interior.html)'| markdownify }}
+</td><td>
 Specifies the BrushInfo used to render the interior of a Chart Symbol.</td></tr>
 <tr>
 <td>
-RepresentationSize</td><td>
+{{'[RepresentationSize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~RepresentationSize.html)'| markdownify }}
+</td><td>
 Specifies the size of the rectangle inside which the associated image or symbol will get rendered.</td></tr>
 <tr>
 <td>
-ShowSymbol</td><td>
+{{'[ShowSymbol](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~ShowSymbol.html)'| markdownify }}
+</td><td>
 If true, the exact symbol rendered in the corresponding series data points will be used to render the icon in this legend as well. This overrides most of the other settings.</td></tr>
 <tr>
 <td>
-Symbol</td><td>
+{{'[Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Symbol.html)'| markdownify }}
+</td><td>
 Symbols rendered in the Legend item can be customized using this property.</td></tr>
 <tr>
 <td>
-Type</td><td>
-If ShowSymbol is false, you can customize the type of icon that gets rendered in the legend item. The default value will reflect the ChartLegend.RepresentationType setting.Possible Values:* Area* Circle* Cross* Diamond* Hexagon* Image* InvertedTriangle* Line* None* Pentagon* PieSlice* Rectangle* Spline* SplineArea* StraightLine* Rectangle</td></tr>
+{{'[Type](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Type.html)'| markdownify }}
+</td><td>
+If ShowSymbol is false, you can customize the type of icon that gets rendered in the legend item. The default value will reflect the ChartLegend.RepresentationType setting.Possible Values:<ul><li>Area</li><li>Circle</li><li>Cross</li><li>Diamond</li><li>Hexagon</li><li>Image</li><li>InvertedTriangle</li><li>Line</li><li>None</li><li>Pentagon</li><li>PieSliceRectangle</li><li>Spline</li><li>SplineArea</li><li>StraightLine</li><li>Rectangle</li></ul></td></tr>
 <tr>
 <td>
-<br>ShowIcon</td><td>
+<br>
+{{'[ShowIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~ShowIcon.html)'| markdownify }}
+</td><td>
 If set to false, no icons will be rendered. This overrides most of the other settings including ShowSymbol.</td></tr>
 </table>
 
@@ -745,7 +808,7 @@ To do the above only on specific legend items, use the ChartLegendItem.Type prop
 
 #### More Symbol Shapes
 
-ChartLegendItem has the Symbol property, using which we can customize the symbols for particular legend items. This setting overrides the Series [0].Style.Symbol settings. 
+[ChartLegendItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem.html) has the [Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Symbol.html) property, using which we can customize the symbols for particular legend items. This setting overrides the Series [0].Style.Symbol settings. 
 
 {% tabs %}  
 
@@ -875,9 +938,3 @@ Me.chartControl1.Legend.Items(0).Type = ChartLegendItemType.None
 
 {% endhighlight %}
 {% endtabs %}
-
-{% seealso %}
-
-[ChartLegend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend), [ChartLegendItem](/windowsforms/chart/chart-legend-and-legend-items#chartlegenditem)
-
-{% endseealso %}
