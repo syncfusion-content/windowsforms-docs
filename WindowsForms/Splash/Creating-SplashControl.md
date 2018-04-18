@@ -11,7 +11,7 @@ documentation: ug
 
 This section will give a step by step procedure to design a SplashControl through designer and also through programming approach.
 
-## Through Designer
+## Through designer
 
 The SplashControl provides full support for the Windows Forms designer.
 
@@ -25,19 +25,15 @@ The SplashControl provides full support for the Windows Forms designer.
 
    ![](Overview_images/Overview_img32.jpeg) 
 
-
 5. Now run the application.
 6. If the AutoMode property is set to 'False', the splash screen will have to be invoked explicitly by calling the ShowSplash() method.
 7. Handle the SplashClosed event to do your processing after the splash screen is closed.
 
    ![](Overview_images/Overview_img33.jpeg) 
 
-
 8. You can cancel the SplashControl while it is displaying the splash screen by calling the HideSplash() method.
 
-
-
-## Through Code
+## Through code
 
 A SplashControl can be created through code by following the below steps.
 
@@ -45,60 +41,46 @@ A SplashControl can be created through code by following the below steps.
 2. Add the required assembly references.
 3. Declare and initialize a SplashControl using the below code.
 
-   ~~~ cs
-   
-        private Syncfusion.Windows.Forms.Tools.SplashControl splashControl1;
-		
-		this.splashControl1 = new Syncfusion.Windows.Forms.Tools.SplashControl();
-		
-		this.SuspendLayout();
+{% tabs %}
+{% highlight c# %}
 
-   ~~~
-   {:.prettyprint }
+private Syncfusion.Windows.Forms.Tools.SplashControl splashControl1;
+this.splashControl1 = new Syncfusion.Windows.Forms.Tools.SplashControl();
+this.SuspendLayout();
 
-   ~~~ vbnet
-   
-        Friend WithEvents SplashControl1 As Syncfusion.Windows.Forms.Tools.SplashControl
-		
-		Me.splashControl1 = New Syncfusion.Windows.Forms.Tools.SplashControl() 
-		
-		Me.SuspendLayout()
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
+{% highlight vb %}
+
+Friend WithEvents SplashControl1 As Syncfusion.Windows.Forms.Tools.SplashControl
+Me.splashControl1 = New Syncfusion.Windows.Forms.Tools.SplashControl() 
+Me.SuspendLayout()
+
+{% endhighlight %}
+{% endtabs %}
 
 4. Set the following properties.
 
-   ~~~ cs
-   
-        this.splashControl1.CustomSplashPanel = null;
-		
-		this.splashControl1.HostForm = this;
-		
-		this.splashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal;
-		
-		this.splashControl1.TimerInterval = 3000;
+{% tabs %}
+{% highlight c# %}
 
-   ~~~
-   {:.prettyprint }
+this.splashControl1.CustomSplashPanel = null;
+this.splashControl1.HostForm = this;
+this.splashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal;
+this.splashControl1.TimerInterval = 3000;
 
-   ~~~ vbnet
+{% endhighlight %}
 
-        Me.SplashControl1.CustomSplashPanel = Nothing
+{% highlight vb %}
 
-		Me.SplashControl1.HostForm = Me
+Me.SplashControl1.CustomSplashPanel = Nothing
+Me.SplashControl1.HostForm = Me
+Me.SplashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal
+Me.SplashControl1.TimerInterval = 3000
 
-		Me.SplashControl1.HostFormWindowState = System.Windows.Forms.FormWindowState.Normal
-
-		Me.SplashControl1.TimerInterval = 3000
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
 
 5. Run the application.
 
    ![](Overview_images/Overview_img34.jpeg) 
-
-
-
-

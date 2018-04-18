@@ -72,55 +72,43 @@ When the SplashPanel is getting displayed, the owner form will be disabled when 
 
 The below code snippet will display the SplashPanel at the specified location with the owner form being disabled. The location will be effective only when the DesktopAlignment property is set as 'Custom'.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 Form2 f2 = new Form2();
 
-
-
 // To display the SplashPanel call the ShowSplash() method.
-
 this.splashPanel1.ShowSplash(new Point(100, 100), f2, true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private f2 As Form2 = New Form2
 
-
-
 ' To display the SplashPanel call the ShowSplash() method.
-
 Me.splashPanel1.ShowSplash(New Point(100,100), f2, True)
 
 {% endhighlight %}
+{% endtabs %}
 
 * HideSplash() - The SplashPanel can be hidden by calling this method at run time.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 // To hide the SplashPanel call the HideSplash() method.
-
 this.splashPanel1.HideSplash();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' To hide the SplashPanel call the HideSplash() method.
-
 Me.splashPanel1.HideSplash()
 
 {% endhighlight %}
+{% endtabs %}
 
 * ShowSplashDialog() -The method is used to display the SplashPanel as a modal dialog during run time. 
 
@@ -150,97 +138,72 @@ The SplashPanel will be displayed at the position / location specified in this m
 
 The below example uses a button click event to call this method. This method is overloaded.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void button1_Click(object sender, EventArgs e)
-
 {
-
-this.splashPanel1.ShowDialogSplash(new Point(700, 700), new Form1());
-
+    this.splashPanel1.ShowDialogSplash(new Point(700, 700), new Form1());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
-
 Me.splashPanel1.ShowDialogSplash(New Point(700, 700), New Form1())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 This overloaded method passes the owner form as a parameter to this method.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void button1_Click(object sender, EventArgs e)
-
 {
-
-this.splashPanel1.ShowDialogSplash(new Form1());
-
+    this.splashPanel1.ShowDialogSplash(new Form1());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
-
 Me.splashPanel1.ShowDialogSplash(New Form1())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 * IsShowing() - This method will tell you whether the SplashPanel is currently displayed or not. This method returns 'True' if the SplashPanel is displayed and 'False' if it is not displayed.
 
 You can call this method in a button click event and view the result in the output window as given below.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 // To know whether splash screen is showing
-
 private void button1_Click_1(object sender, EventArgs e)
-
 {
-
-this.splashPanel1.IsShowing();
-
-Console.Write(this.splashPanel1.IsShowing());
-
+    this.splashPanel1.IsShowing();
+    Console.Write(this.splashPanel1.IsShowing());
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' To know whether splash screen is showing
-
 Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
-
 Me.splashPanel1.IsShowing()
-
 Console.Write(Me.splashPanel1.IsShowing())
-
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Location
 
@@ -259,12 +222,9 @@ DiscreetLocation</td><td>
 Gets / sets the location to display the splash window. </td></tr>
 </table>
 
-
 A Sample which demonstrates the ShowSplash() and ShowSplashDialog() methods is available in the below sample installation path.
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
-
-
 
 ## SplashPanel in TaskBar
 
@@ -291,35 +251,28 @@ Text</td><td>
 Specifies the text when displayed in the taskbar.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.splashPanel1.ShowInTaskbar = true;
-
 this.splashControl1.FormIcon = ((System.Drawing.Icon)(resources.GetObject("splashControl1.FormIcon")));
-
 this.splashPanel1.Text = "Splash Panel";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.splashPanel1.ShowInTaskbar = true
-
 Me.splashControl1.FormIcon = DirectCast((resources.GetObject("splashControl1.FormIcon")), System.Drawing.Icon)
-
 Me.splashPanel1.Text = "Splash Panel"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img50.jpeg) 
 
 
-## Time Interval
+## Time interval
 
 The SplashPanel is, by default, a timed display splash screen. The SplashPanel uses internally, a System.Windows.Forms.Timer, to automatically close the splash screen after the set interval is elapsed. This behavior can be changed by setting the TimerInterval property to -1. 
 
@@ -336,26 +289,23 @@ TimerInterval</td><td>
 The time interval for which the splash screen should be displayed (in milliseconds).</td></tr>
 </table>
 
-
 The splash screen will be displayed for a specific time period and will then be closed.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.splashPanel1.TimerInterval = 7000;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.splashPanel1.TimerInterval = 7000
 
 {% endhighlight %}
+{% endtabs %}
 
-## Behavior Settings
+## Behavior settings
 
 The user will not be able to close or resize the splash image, which is displayed during run time, normally. But by setting certain properties of the SplashPanel, the user can alter the SplashPanel. These properties are explained below in detail.
 
@@ -389,27 +339,20 @@ N> In the above cases, the splash panel will not be closed, until the host form 
 
 The user can also close the SplashPanel by a single mouse click. This feature can be enabled by setting the CloseOnClick property to 'True'.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.splashPanel1.AllowMove = true;
-
 this.splashPanel1.AllowResize = true;
-
 this.splashPanel1.CloseOnClick = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.splashPanel1.AllowMove = True
-
 Me.splashPanel1.AllowResize = True
-
 Me.splashPanel1.CloseOnClick = True
 
 {% endhighlight %}
-
+{% endtabs %}
