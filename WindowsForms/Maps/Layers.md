@@ -15,13 +15,130 @@ Map is maintained through Layers, and it can accommodate one or more layers.
 
 The Multilayer support allows you to load multiple shape files in a single container, enabling maps to display more information.
 
-### Loading multiple shape files in a single container 
+### Adding Multiple shape files
 
-This feature allows the map to load multiple types of shape files in a single container.
+This feature enables the map to load multiple types of shape files in a single container. Basically, shape files contain point shapes in a single container.
 
-### Adding Multiple Layers in the Map
+Situations arise where any combination of available shape files needs to be loaded in a single container. In such situations this feature enables the map to load multiple shape layers in a single container.
 
-The ShapeFileLayers is the core layer of the map. Multiple layers can be added in the ShapeFileLayer as SubShapeFileLayer, within the shape Layers.
+### Adding Multiple layers 
+
+ShapeFileLayer is the core layer of the map. Multiple layers can be added in the ShapeFileLayer itself. They have to be added in SubShapeFileLayer within the ShapeFileLayer. 
+
+### SubShapeFileLayers
+
+SubShapeFileLayer is the collection of SubShapeFileLayer. SubShapeFileLayer is also a type of ShapeFileLayer. The following code adds multiple layers into the ShapeFileLayer.
+
+
+### Code sample:
+
+{% tabs %}
+
+{% highlight c# %}
+
+partial class Form1
+{
+
+         private void InitializeComponent()
+         {
+
+            this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
+
+            this.mapsControl1.Name = "mapsControl1";
+
+            this.mapsControl1.Size = new System.Drawing.Size(880, 585); 
+
+            this.Controls.Add(this.mapsControl1);  
+
+            this.ClientSize = new System.Drawing.Size(880, 585);          
+
+            this.Load += new System.EventHandler(this.Form1_Load);
+
+         }
+
+            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
+
+}  
+	 
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+public partial class Form1 : Form
+{
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            this.mapsControl1.Dock = DockStyle.Fill;
+
+            this.mapsControl1.Margin = new Padding(0, 0, 4, 0);
+
+            this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
+
+            this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
+
+            this.mapsControl1.MapItemStroke = new SolidBrush(Color.Black);
+
+            MapViewModel model = new MapViewModel();
+
+            ShapeFileLayer shapeLayer = new ShapeFileLayer();
+
+            shapeLayer.Uri = "world1.shp";
+
+            shapeLayer.ShapeSetting.ShapeFill = "#E5E5E5";
+
+            shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
+
+            shapeLayer.ShapeSetting.ShapeStrokeThickness = 0.5;
+
+
+            SubShapeFileLayer layer1 = new SubShapeFileLayer();
+
+            layer1.Uri = "Africa.shp"; 
+
+            layer1.ShapeSetting.ShapeFill = "#8DCEFF";
+
+            layer1.ShapeSetting.ShapeStrokeThickness = 0.5;
+
+            layer1.ShapeSetting.ShapeStroke = "#2F8CEA";
+            
+
+            SubShapeFileLayer layer2 = new SubShapeFileLayer();
+
+            layer2.Uri = "australia.shp";
+
+            layer2.ShapeSetting.ShapeFill = "#8DCEFF";
+
+            layer2.ShapeSetting.ShapeStrokeThickness = 0.5;
+
+            layer2.ShapeSetting.ShapeStroke = "#2F8CEA";
+
+            shapeLayer.SubShapeFileLayers.Add(layer1);
+
+            shapeLayer.SubShapeFileLayers.Add(layer2);
+
+            this.mapsControl1.Layers.Add(shapeLayer);
+
+         }   
+
+ }       
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Screenshot:
+
+![](Multilayer-Support_images/Multilayer-Support_img1.png)
+
+MultiLayer
+{:.caption}
+
 
 ## LayoutType
 
@@ -32,12 +149,13 @@ The ShapeFileLayers is the core layer of the map. Multiple layers can be added i
 
 ### Default
 
-In `Default` layout type maps will be rendered based on the given points of shapefile without any further manipulation of maps scale. 
+In `Default` layout, maps will be rendered based on the given points of shapefile without any further manipulation of maps scale. 
 
 ### Tile
 
-In `Tile` layout type maps scale value is maintained in every direction around a point. Therefore shapes are represented accurately and without distortion for small areas.
+In `Tile` layout, maps scale value is maintained in every direction around a point. Therefore shapes are represented accurately and without distortion for small areas.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -82,22 +200,23 @@ In `Tile` layout type maps scale value is maintained in every direction around a
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](LayerImage/Tile.png)
 
 ## ItemSource
 
 The ItemSource property accepts collection values as input. For example, the list of objects can be provided as input.
 
+{% tabs %}
+
 {% highlight c# %}
 
 partial class Form1
+{
 
-    {
-
-         private void InitializeComponent()
-
+        private void InitializeComponent()
         {
-
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
 
             this.mapsControl1.Name = "mapsControl1";
@@ -106,47 +225,34 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
 
          }
 
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
-
-     }  
+         private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
+}  
 
 {% endhighlight %}
 
+{% endtabs %}
 
 
-
+{% tabs %}
 
 {% highlight c# %}
 
 public partial class Form1 : Form
-
-    {
-
-
-
+{
         public Form1()
-
         {
-
             InitializeComponent();
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
-
         {
-
-
-
              MapViewModel model = new MapViewModel();
-
-
 
              ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
@@ -156,34 +262,28 @@ public partial class Form1 : Form
 
              this.mapsControl1.Layers.Add(shapeLayer); 
 
-
-
          }
-
-     }       
+}       
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
 public class MapViewModel
-
-    {
-
+{
         public ObservableCollection<Country> Countries { get; set; }
 
         public MapViewModel()
-
-           {
-
+        {
             Countries = new ObservableCollection<Country>();
-
             Countries = GetCountriesAndPopulation();
+        }
 
-            }
-
-private ObservableCollection<Country> GetCountriesAndPopulation()
-
+        private ObservableCollection<Country> GetCountriesAndPopulation()
         {
 
             ObservableCollection<Country> countries = new ObservableCollection<Country>();
@@ -205,83 +305,59 @@ private ObservableCollection<Country> GetCountriesAndPopulation()
             return countries;
 
         }
-
 }
 
-
-
 public class Country : INotifyPropertyChanged
-
-    {
+{
 
         public string NAME { get; set; }
-
-
 
         private double population { get; set; }
 
         public double Population
-
         {
 
             get
-
             {
-
                 return population;
-
             }
 
             set
-
             {
-
                 population = value;
-
                 OnPropertyChanged(new PropertyChangedEventArgs("Population"));
-
             }
-
-
-
         }
-
-
 
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void OnPropertyChanged(PropertyChangedEventArgs e)
-
         {
 
-
-
             if (PropertyChanged != null)
-
             {
-
                 PropertyChanged(this, e);
-
             }
-
         }
 
-    }
+}
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## ShapeIDPath
 
 ShapeIDPath is the string type property that is used to refer to the ID of a shape from the ItemSource. The ItemSource property must have a property with name of the ShapeIDPath. The ShapeIDPath and the ShapeIDTableField properties are related to each other (refer to ShapeIDTableField for more details).
 
+{% tabs %}
+
 {% highlight c# %}
 
 partial class Form1
-
-    {
+{
 
          private void InitializeComponent()
-
          {
 
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
@@ -292,41 +368,35 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
-
          }
 
             private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-     }  
+}  
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
 public partial class Form1 : Form
-
-    {
+{
 
         public Form1()
-
         {
-
             InitializeComponent();
-
         }
 
-
-
         private void Form1_Load(object sender, EventArgs e)
-
         {
 
-              MapViewModel model = new MapViewModel();
-
-
+            MapViewModel model = new MapViewModel();
 
              ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
@@ -337,32 +407,27 @@ public partial class Form1 : Form
              shapeLayer.ShapeIDPath = "NAME";
 
              this.mapsControl1.Layers.Add(shapeLayer); 
-
-
-
          }
 
-     }       
+}       
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## ShapeIDTableField
 
 The ShapeIDTableField property is similar to the ShapeIDPath. It is a string type property that refers to the column name in the dbf file to identify the shape. When the values of the ShapeIDPath property in the ItemSource and the value of ShapeIDTableField in the .dbf file match, then the associated object from the ItemSource are bound to the corresponding shape.
 
 
-
-
+{% tabs %}
 
 {% highlight c# %}
 
 partial class Form1
-
-    {
-
+{
        private void InitializeComponent()
-
-         {
+       {
 
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
 
@@ -372,41 +437,36 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
 
          }
 
-            private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
+        private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-     }  
+}  
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
 public partial class Form1 : Form
-
-    {
+{
 
         public Form1()
-
         {
-
             InitializeComponent();
-
         }
 
-
-
         private void Form1_Load(object sender, EventArgs e)
-
         {
 
-              MapViewModel model = new MapViewModel();
-
-
+            MapViewModel model = new MapViewModel();
 
             ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
@@ -421,7 +481,8 @@ public partial class Form1 : Form
             this.mapsControl1.Layers.Add(shapeLayer); 
         }
 
-     }  
-
+}
 
 {% endhighlight %}
+
+{% endtabs %}
