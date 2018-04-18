@@ -31,11 +31,11 @@ Options such as zooming, panning, and map selection enable the effective interac
 
 
 
-### Map Control
+## Map Control
 
 The MapControl class is a base class which consists of several layers, namely ShapeFileLayer, Sub ShapeFileLayer and latitude/longitude viewer. The ShapeFileLayer is used to load the shape files. The latitude/longitude viewer displays the corresponding coordinates, receives user inputs and translates them into actions and commands on other layers.
 
-### Shape File Layer
+## Shape file layer
 
 The ShapeFileLayer is the most important component of the Maps control. It provides a mechanism to upload the shape files which essentially forms the contents of a map. The shape file is in a digital vector storage format for storing geometric location and associated attribute information. Shape files spatially describe geometries such as points, polylines, and polygons.
 
@@ -125,7 +125,7 @@ public partial class Form1 : Form
     private void Form1_Load(object sender, EventArgs e)
     {
         ShapeFileLayer shapeLayer = new ShapeFileLayer();
-        
+
         shapeLayer.Uri = "world1.shp";
 
         this.mapsControl1.Layers.Add(shapeLayer);
