@@ -11,7 +11,7 @@ documentation: ug
 
 This section discusses the properties that determine the behavior of the StatusBarAdv control.
 
-## AutoSize Settings
+## AutoSize settings
 
 This includes the properties that enable auto sizing of the StatusBarAdv control.
 
@@ -37,31 +37,25 @@ If the 'GrowAndShrink' option is selected, then the control grows and shrinks to
 
 If the 'GrowOnly' option is selected, the control grows as much as necessary to fit it's contents, but doesn't shrink smaller than the value specified in the Size property of the control.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.statusBarAdv1.AutoSize = true;
-
 this.statusBarAdv1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-
 this.statusBarAdv1.AutoHeightControls = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdv1.AutoSize = True
-
 Me.statusBarAdv1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly
-
 Me.statusBarAdv1.AutoHeightControls = True
 
 {% endhighlight %}
+{% endtabs %}
 
-## AutoHeight Settings
+## AutoHeight settings
 
 The height of the panels can be made to change automatically when the height of the StatusBarAdv control changes. This can be accomplished using the property given below.
 
@@ -78,22 +72,19 @@ AutoHeightControls</td><td>
 Determines if the StatusBarAdv will resize the height of the panels according to it's height.The default value will be set to 'True'.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdv1.AutoHeightControls = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdv1.AutoHeightControls = True
 
 {% endhighlight %}
+{% endtabs %}
 
 The methods associated with the above properties are given below.
 
@@ -113,4 +104,3 @@ Returns the preferred size of the specified control.</td></tr>
 SetPreferredSize</td><td>
 Sets the preferred size in the layout of the specified control.</td></tr>
 </table>
-
