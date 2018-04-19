@@ -11,23 +11,19 @@ documentation: ug
 
 ColorPalette is a set of colors that are applied to the shapes.
 
-ColorPalette has to be set in the ShapeSetting’s ColorPalette property. 
+ColorPalette has to be set in the ShapeSetting’s `ColorPalette` property. 
 
 ### Code sample:
 
-
+{% tabs %}
 
 {% highlight c# %}
 
 partial class Form1
-
-    {     
-
-
+{ 
 
     private void InitializeComponent()
-
-         {
+    {
 
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
 
@@ -37,43 +33,33 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
 
-         }
+    }
 
             private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-     }  
+}  
 	 
 {% endhighlight %}
+
+{% tabs %}
 
 {% highlight c# %}
 
 public partial class Form1 : Form
-
-    {
+{
 
         public Form1()
-
         {
-
             InitializeComponent();
-
         }
 
-
-
         private void Form1_Load(object sender, EventArgs e)
-
         {
-
-
-
             MapViewModel model = new MapViewModel();
-
-
 
             ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
@@ -81,12 +67,9 @@ public partial class Form1 : Form
 
             shapeLayer.ItemSource = model.Countries;
 
-
-
             shapeLayer.ShapeIDPath = "NAME";
 
             shapeLayer.ShapeIDTableField = "NAME";  
-
 
 
             shapeLayer.ShapeSetting.ShapeValuePath = "Population";
@@ -108,18 +91,17 @@ public partial class Form1 : Form
             shapeLayer.ShapeSetting.FillSetting.AutoFillColors = true;
 
 
-
             shapeLayer.ShapeSetting.ColorPalette = ColorPalettes.Metro; 
-
-
 
             this.mapsControl1.Layers.Add(shapeLayer); 
 
         }
 
-     }       
+}       
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Screenshot:
 
