@@ -11,75 +11,67 @@ documentation: ug
 
 This section will give a step-by-step procedure to design a TextBoxExt control through designer and also through programming approach.
 
-## Through Designer
+## Through designer
 
 1. Create or open a Windows Forms project.
 2. Click on the TextBoxExt Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
 
    ![](Creating-TextBoxExt_images/Creating-TextBoxExt_img1.png)
 
-
-
 3. Run the application. The TextBoxExt displayed will allow you to enter text.
 
    ![](Creating-TextBoxExt_images/Creating-TextBoxExt_img2.png)
 
-
-
-### Through Programming Approach
+### Through programming approach
 
 1. Declare an instance of the TextBoxExt control.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
 
+{% endhighlight %}
 
-		private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+Private textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
 
-   ~~~ vbnet
-
-
-		Private textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
+{% endtabs %}
 
 2. Initialize the control.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+this.textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
 
+{% endhighlight %}
 
-		this.textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+{% highlight vb %}
 
-		Me.textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+Me.textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
 
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
+{% endtabs %}
 
 3. Add the control to the form.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
+this.Controls.Add(this.textBoxExt1);
 
+{% endhighlight %}
 
-		this.Controls.Add(this.textBoxExt1);
+{% highlight vb %}
 
+Me.Controls.Add(Me.textBoxExt1)
 
-		Me.Controls.Add(Me.textBoxExt1)
-
-   ~~~
-   {:.prettyprint }
-
+{% endhighlight %}
+{% endtabs %}
 
 4. Run the application. You will be able to see the TextBoxExt control in your form. After creating the TextBoxExt you can use it just like using the Windows Forms' TextBox control.
 
 ![](Creating-TextBoxExt_images/Creating-TextBoxExt_img3.png)
-
-
-
