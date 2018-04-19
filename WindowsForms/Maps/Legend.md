@@ -9,15 +9,15 @@ documentation: ug
 
 # Legend
 
-A legend is a key used on a map that contains swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on the data. 
+A legend is a key used on a map that contains swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on data. 
 
 ## Visibility 
 
-Legends are visible only by setting the `ShowLegend`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~ShowLegend.html] property as true in the ShapeFileLayer.
+Legends are visible only by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~ShowLegend.html) property to true in the ShapeFileLayer.
 
 ## Legend position
 
-Map legends can be positioned by setting the `LegendPosition` property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the `PositionX`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionX.html] and `PositionY`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionY.html] properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of “Default”.
+Map legends can be positioned by setting the `LegendPosition` property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x and y axes with the help of the [`PositionX`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionX.html) and [`PositionY`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionY.html) properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set to “Default”.
 
 <table>
 <tr>
@@ -29,17 +29,17 @@ Description</th></tr>
 <td>
 LegendPosition</td><td>
 LegendPosition (enum)</td><td>
-Gets or sets the standard position for the legend.</td></tr>
+Gets or sets the standard position for legend</td></tr>
 <tr>
 <td>
 PositionX</td><td>
 Double</td><td>
-Gets or sets the margin value for the x axis.</td></tr>
+Gets or sets the margin value for x axis</td></tr>
 <tr>
 <td>
 PositionY</td><td>
 Double</td><td>
-Gets or sets the margin value for the y axis.</td></tr>
+Gets or sets the margin value for y axis.</td></tr>
 </table>
 
 
@@ -49,20 +49,19 @@ A header for the legend can be added by setting the `Title` property of string 
 
 ## Categories of Legend 
 
-Legends are categorized as two types:
+Legends are categorized as the following two types:
 
-• Legends for layers.
+* Legends for layers
+* Legends for bubbles
 
-• Legends for bubbles.
-
-These can be set by using `LegendType` property.
+These can be set by using the `LegendType` property.
 
 
-## Shapes for Legend 
+## Shapes for legend 
 
-Bubble type legends are always bubbles with varying sizes.  The size of the bubbles is obtained from the SizeRatio from the BubbleSetting.
+Bubble type legends are always bubbles with varying sizes. The size of the bubbles is obtained from the SizeRatio of the BubbleSetting.
 
-Layer shape type legends can be different shapes for the legend. The shapes can be set using the LegendIcon, of the LegendIcon type.
+Layer shape type legends can be different shapes for the legend. The shapes can be set using the LegendIcon of the LegendIcon type.
 
 ### Code sample:
 

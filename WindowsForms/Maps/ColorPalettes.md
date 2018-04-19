@@ -7,13 +7,12 @@ control: Maps
 documentation: ug
 ---
 
-# ColorPalettes
+# Color Palettes
 
-ColorPalette is a set of colors that are applied to the shapes.
+Color palette is a set of colors applied to the shapes.
 
-ColorPalette has to be set in the ShapeSetting’s `ColorPalette` property. 
+Color palette has to be set in the ShapeSetting’s `ColorPalette` property. 
 
-### Code sample:
 
 {% tabs %}
 

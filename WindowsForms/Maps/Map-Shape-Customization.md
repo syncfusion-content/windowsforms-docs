@@ -9,11 +9,11 @@ documentation: ug
 
 # Shape Customization
 
-Shapes in the Map control can be customized using ShapeSetting properties such as ShapeFill, ShapeStroke and ShapeStrokeThickness.
+Shapes in the map control can be customized using the ShapeSetting properties such as ShapeFill, ShapeStroke, and ShapeStrokeThickness.
 
 ## Shape settings
 
-`ShapeFill`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeFill.html] property will fill the Shape with the respective color. `ShapeStroke`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStroke.html] property will set the border color for the shape in the Map. And `ShapeStrokeThickness`[https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStrokeThickness.html] property will set the thickness for the shape’s border.	
+The [`ShapeFill`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeFill.html) property fills the shape with respective color. The [`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStroke.html) property sets the border color for the shape in the map, and the [`ShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStrokeThickness.html) property sets the thickness for the shape’s border.
 
 {% tabs %}
 
