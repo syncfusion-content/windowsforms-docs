@@ -13,14 +13,16 @@ The selected item of the current hierarchy level is get/set through SelectedItem
 
 The following code examples allow you to set the SelectedItem.
 
+{% tabs %}
 {% highlight c# %}
 
  this.treeNavigator1.SelectedItem = treeMenuItem1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.treeNavigator1.SelectedItem = treeMenuItem1
 
 {% endhighlight %}
+{% endtabs %}
