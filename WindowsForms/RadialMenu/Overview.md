@@ -15,7 +15,7 @@ The Radial Menu comprises a hierarchical menu in a circular layout. It is used a
 
 
 
-### Key Features
+### Key features
 
 * Configurable Menu Items
 * Radial Menu Slider

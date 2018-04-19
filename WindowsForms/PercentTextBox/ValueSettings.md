@@ -7,12 +7,9 @@ control: Editors Package
 documentation: ug
 ---
 
-
 # Value Settings
 
 The various values of the PercentTextBox control and their settings are given below.
-
-
 
 <table>
 <tr>
@@ -41,51 +38,33 @@ DoubleValue</td><td>
 Gets / sets the double value of the control. This will be formatted and displayed.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
-
 this.percentTextBox1.PercentValue = 5;
-
 this.percentTextBox1.DefaultValue = 0;
-
 this.percentTextBox1.BindableValue = 0.05;
-
 this.percentTextBox1.BindablePercentValue = 5;
-
 this.percentTextBox1.DoubleValue = 0.05;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.percentTextBox1.PercentValue = 5
-
 Me.percentTextBox1.DefaultValue = 0
-
 Me.percentTextBox1.BindableValue = 0.05
-
 Me.percentTextBox1.BindablePercentValue = 5
-
 Me.percentTextBox1.DoubleValue = 0.05
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](PercentTextBox-Images/Overview_img466.png) 
 
-
-
-## Null Value Settings
+## Null value settings
 
 There are various settings that can be applied to the PercentTextBox control, when the value of the control is set to 'Null'. These settings are illustrated below.
-
-
 
 <table>
 <tr>
@@ -106,40 +85,27 @@ NullFormat</td><td>
 Returns the NumberFormatInfo object for the null display.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
 this.percentTextBox1.NullString = "Null Value";
-
 this.percentTextBox1.AllowNull = true;
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 Me.percentTextBox1.NullString = "Null Value"
-
 Me.percentTextBox1.AllowNull = True
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
  ![](PercentTextBox-Images/Overview_img467.png) 
 
-
-
-## Min and Max Value Settings
+## Min and max value settings
 
 The minimum and maximum values of the IntegerTextBox can be set using the below given properties.
-
-
 
 <table>
 <tr>
@@ -160,37 +126,25 @@ EnforceMinMaxDuringValidating</td><td>
 If the min and max values are not met, the Validating event will be handled and canceled if this property is set to 'True'.</td></tr>
 </table>
 
-
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 this.percentTextBox1.MaxValue = 6;
-
 this.percentTextBox1.MinValue = -6;
-
 this.percentTextBox1.EnforceMinMaxDuringValidating = true;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.percentTextBox1.MaxValue = 6
-
 Me.percentTextBox1.MinValue = -6
-
 Me.percentTextBox1.EnforceMinMaxDuringValidating = True
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 The methods associated with the above properties are given below.
-
-
 
 <table>
 <tr>

@@ -22,12 +22,18 @@ This section will discuss the style settings available for the ToolStripEx.
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-BorderStyle<br/><br/></td><td>
-Sets the border style for the control. The options are,<br/><br/>None,<br/><br/>Etched and <br/><br/>StaticEdge.<br/><br/></td></tr>
+BorderStyle</td><td>
+Sets the border style for the control. The options are,None,
+
+Etched 
+
+StaticEdge.
+
+</td></tr>
 </table>
 
 {% tabs %}
@@ -56,16 +62,20 @@ The below properties deals with the launcher settings.
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description
+
+</th></tr>
 <tr>
 <td>
-ShowLauncher<br/><br/></td><td>
-Specifies the visibility of the Launcher in the control.<br/><br/></td></tr>
+ShowLauncher</td><td>
+Specifies the visibility of the Launcher in the control.</td></tr>
 <tr>
 <td>
-LauncherStyle<br/><br/></td><td>
-Sets the Style for the launcher. The styles are,<br/><br/>{{ '____' | markdownify }} Office12,<br/><br/>Office2007<br/><br/></td></tr>
+LauncherStyle</td><td>
+Sets the Style for the launcher. The styles are,
+
+{{ '____' | markdownify }} Office12,Office2007</td></tr>
 </table>
 
 {% tabs %}
@@ -98,16 +108,18 @@ The tool strip can hold a grip, which can be visible by setting the GripStyle pr
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-GripStyle<br/><br/></td><td>
-Specifies whether or not to show the Gripper for the control. It can be hidden (default) or visible.<br/><br/></td></tr>
+GripStyle</td><td>
+Specifies whether or not to show the Gripper for the control. It can be hidden (default) or visible.</td></tr>
 <tr>
 <td>
-GripMargin<br/><br/></td><td>
-Specifies the margin for the Gripper. Default is 2.<br/><br/></td></tr>
+GripMargin</td><td>
+Specifies the margin for the Gripper. 
+
+Default is 2.</td></tr>
 </table>
 
 {% tabs %}
@@ -141,16 +153,27 @@ ToolStripEx now supports Office12 modes in Ribbon. The properties which applies 
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-Office12Mode<br/><br/></td><td>
-When set to true, Office12Mode will be applied to the control.<br/><br/>When set to false, Office2007 mode will be applied to the control. (Default)<br/><br/></td></tr>
+Office12Mode</td><td>
+When set to true, Office12Mode will be applied to the control.When set to false, Office2007 mode will be applied to the control. (Default)</td></tr>
 <tr>
 <td>
-RenderMode<br/><br/></td><td>
-Specifies the painting style of the ToolStripEx. Options are,<br/><br/>System,<br/><br/>Professional and<br/><br/>ManagerRenderMode.(Default)<br/><br/></td></tr>
+
+RenderMode
+
+</td><td>
+Specifies the painting style of the ToolStripEx. Options are,
+
+System,
+
+Professional
+
+ManagerRenderMode.(Default)
+
+</td></tr>
 </table>
 
 N> These properties can be easily set through Smart tag of the ToolStripEx. See SmartTag Options in DesignTime Features.
@@ -185,12 +208,12 @@ Disabling the Office12Mode property will automatically give the Ribbon control, 
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-OfficeColorScheme<br/><br/></td><td>
-Sets the office color schemes for the control. Blue, Black and Silver schemes can be applied. <br/><br/></td></tr>
+OfficeColorScheme</td><td>
+Sets the office color schemes for the control. Blue, Black and Silver schemes can be applied. </td></tr>
 </table>
 
 N> This settings will overwrite the Panel.OfficeColorScheme property.
@@ -222,12 +245,16 @@ By enabling the **AutoSize** property of ToolStripEx, the tool strip width will 
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-AutoSize<br/><br/></td><td>
-Setting this to true, will automatically resize the tool strip as the controls gets added.<br/><br/></td></tr>
+AutoSize
+
+</td><td>
+Setting this to true, will automatically resize the tool strip as the controls gets added.
+
+</td></tr>
 </table>
 
 {% tabs %}
@@ -253,28 +280,50 @@ The **ToolStripLayoutStyle** property is used to specify the alignment for the T
 <table>
 <tr>
 <th>
-Constraint<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Constraint</th><th>
+Description</th></tr>
 <tr>
 <td>
-Flow<br/><br/></td><td>
-Specifies that items flow horizontally or vertically as necessary.<br/><br/> The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Flow
+
+</td><td>
+Specifies that items flow horizontally or vertically as necessary.
+
+ The Alignment property is ignored under this Layout Style.
+ 
+ </td></tr>
 <tr>
 <td>
-HorizontalStackWithOverflow<br/><br/></td><td>
-Specifies that items are laid out horizontally and overflow as necessary.<br/><br/></td></tr>
+HorizontalStackWithOverflow
+
+</td><td>
+Specifies that items are laid out horizontally and overflow as necessary.
+
+</td></tr>
 <tr>
 <td>
-StackOverflow<br/><br/></td><td>
-Specifies that items are laid out automatically.<br/><br/></td></tr>
+StackOverflow
+
+</td><td>
+Specifies that items are laid out automatically.
+
+</td></tr>
 <tr>
 <td>
-Table<br/><br/></td><td>
-Specifies that items are laid out flush left.<br/><br/>Note: The Alignment property is ignored under this Layout Style.<br/><br/></td></tr>
+Table
+
+</td><td>
+Specifies that items are laid out flush left.
+
+Note: The Alignment property is ignored under this Layout Style.
+
+</td></tr>
 <tr>
 <td>
-VerticalStackWithOverflow<br/><br/></td><td>
-Specifies that items are laid out vertically, are centered within the control, and overflow as necessary.<br/><br/></td></tr>
+VerticalStackWithOverflow
+
+</td><td>
+Specifies that items are laid out vertically, are centered within the control, and overflow as necessary.</td></tr>
 </table>
 
 The default value for ToolStripLayoutStyle property is HorizontalStackWithOverflow.
@@ -389,28 +438,57 @@ The below properties lets you customize caption for the control.
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-CaptionFont<br/><br/></td><td>
+CaptionFont</td><td>
 Sets the FontStyle for the caption.<br/><br/></td></tr>
 <tr>
 <td>
-CaptionTextStyle<br/><br/></td><td>
-Sets the text style for the caption. The options are, <br/><br/>{{ '____' | markdownify }} Plain, <br/><br/>Etched and <br/><br/>Shadow.<br/><br/></td></tr>
+CaptionTextStyle</td><td>
+Sets the text style for the caption. The options are, 
+{{ '____' | markdownify }} 
+
+Plain,
+
+Etched 
+
+Shadow.
+</td></tr>
 <tr>
 <td>
-CaptionAlignment<br/><br/></td><td>
-Sets the alignment of the caption. The Alignment can be,<br/><br/>Near, <br/><br/>Center and <br/><br/>Far.<br/><br/></td></tr>
+
+CaptionAlignment
+
+</td><td>
+Sets the alignment of the caption. The Alignment can be,
+
+Near
+
+Center
+
+Far.
+
+</td></tr>
 <tr>
 <td>
-CaptionStyle<br/><br/></td><td>
-Specifies whether to align the caption text to the top or bottom of the ToolStripEx.<br/><br/>Default alignment is Top.<br/><br/></td></tr>
+CaptionStyle
+
+</td><td>
+Specifies whether to align the caption text to the top or bottom of the ToolStripEx
+
+Default alignment is Top.
+
+</td></tr>
 <tr>
 <td>
-CaptionMinHeight<br/><br/></td><td>
-Sets the minimum height for the caption.<br/><br/></td></tr>
+CaptionMinHeight
+
+</td><td>
+Sets the minimum height for the caption.
+
+</td></tr>
 </table>
 
 {% tabs %}
@@ -480,16 +558,16 @@ Instead of showing a blank ToolStripEx when collapsed, we can display a text and
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-CollapsedDropDownButtonImage<br/><br/></td><td>
-Gets/sets the image of the collapsed state drop down button.<br/><br/></td></tr>
+CollapsedDropDownButtonImage</td><td>
+Gets/sets the image of the collapsed state drop down button.</td></tr>
 <tr>
 <td>
-CollapsedDropDownButtonText<br/><br/></td><td>
-Gets/sets the text of the collapsed state drop down button.<br/><br/></td></tr>
+CollapsedDropDownButtonText</td><td>
+Gets/sets the text of the collapsed state drop down button.</td></tr>
 </table>
 
 {% tabs %}
@@ -522,16 +600,28 @@ We can set keyboard shortcut keys for RibbonControl components using **SetShortc
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-SetShortcut<br/><br/></td><td>
-Sets shortcut key. The parameters are,<br/><br/>{{ '__Component__ ' | markdownify }} - Component of the RibbonForm.<br/><br/>{{ '__Value__ ' | markdownify }} - Represents the shortcut key for the component specified.<br/><br/></td></tr>
+SetShortcut</td><td>
+Sets shortcut key. The parameters are
+
+{{ '__Component__ ' | markdownify }} - Component of the RibbonForm.
+
+{{ '__Value__ ' | markdownify }} - Represents the shortcut key for the component specified.
+
+</td></tr>
 <tr>
 <td>
-GetShortcut<br/><br/></td><td>
-Gets shortcut key. The parameter is,<br/><br/>{{ '__Component__ ' | markdownify }} - Component of the RibbonForm.<br/><br/></td></tr>
+GetShortcut
+
+</td><td>
+Gets shortcut key. The parameter is,
+
+{{ '__Component__ ' | markdownify }} - Component of the RibbonForm.
+
+</td></tr>
 </table>
 
 {% tabs %}

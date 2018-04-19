@@ -295,12 +295,12 @@ The ToolStripItemEventHandler receives an argument of type ToolStripItemEventArg
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-Item<br/><br/></td><td>
-Gets a System.Windows.Forms.ToolStripItem for which to handle events.<br/><br/></td></tr>
+Item</td><td>
+Gets a System.Windows.Forms.ToolStripItem for which to handle events.</td></tr>
 </table>
 {% tabs %}
 
@@ -355,13 +355,13 @@ The ToolStripItemClickedEventHandler receives an argument of type ToolStripItemE
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description></th></tr>
 
 <tr>
 <td>
-ClickedItem<br/><br/></td><td>
-Gets the item that is clicked on System.Windows.Forms.ToolStrip.<br/><br/></td></tr>
+ClickedItem</td><td>
+Gets the item that is clicked on System.Windows.Forms.ToolStrip.</td></tr>
 </table>
 {% tabs %}
 
@@ -412,12 +412,12 @@ The ToolStripItemEventHandler receives an argument of type ToolStripItemEventArg
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-Item<br/><br/></td><td>
-Gets a System.Windows.Forms.ToolStripItem for which to handle events.<br/><br/></td></tr>
+Item</td><td>
+Gets a System.Windows.Forms.ToolStripItem for which to handle events.</td></tr>
 </table>
 {% tabs %}
 
@@ -490,12 +490,12 @@ The CancelEventHandler receives an argument of type CancelEventArgs containing d
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-Cancel<br/><br/></td><td>
-Gets or Sets a value indicating whether the event should be canceled.<br/><br/></td></tr>
+Cancel</td><td>
+Gets or Sets a value indicating whether the event should be canceled.</td></tr>
 </table>
 {% tabs %}
 

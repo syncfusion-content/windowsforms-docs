@@ -10,7 +10,7 @@ documentation: ug
 
 GridLayout is a Layout Manager that allows us to arrange the Child controls as in a grid containing rows and columns. Deriving from the Layout Manager base, the GridLayout inherits all the functionality that the Layout Manager type exposes. In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as illustrated below.
 
-![](Overview_images/Overview_img60.jpeg) 
+![](Overview_images/Overview_img60.jpeg)
 
 
 
@@ -20,13 +20,13 @@ A Sample which demonstrates the GridLayout is available in the below sample inst
 
 {% seealso %}
 
-[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout)
+[Creating a Simple Layout.](/windowsforms/layoutmanagers/creating-a-simple-layout)
 
 {% endseealso %}
 
 ## Configuring GridLayout
 
-### Rows and Columns
+### Rows and columns
 
 The GridLayout simply divides the available space into a number of rows and columns based on the number of Child controls. The number of rows and columns can be specified using the properties given below.
 
@@ -35,7 +35,7 @@ The GridLayout simply divides the available space into a number of rows and colu
 <table>
 <tr>
 <th>
-GridLayout Property</th><th>
+GridLayout property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -52,8 +52,9 @@ The Rows property usually dictates the number of columns (overriding the Columns
 
 The following code snippet arranges the Child controls in one column and two rows.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.gridLayout1.Rows = 2;
@@ -63,7 +64,7 @@ this.gridLayout1.Columns = 1;
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -71,6 +72,8 @@ Me.gridLayout1.Rows = 2
 
 Me.gridLayout1.Columns = 1
 {% endhighlight  %}
+
+{% endtabs %}
 
 ## HGap and VGap
 
@@ -81,23 +84,23 @@ The horizontal and the vertical gap between the Child controls can be set using 
 <table>
 <tr>
 <th>
-GridLayout Property</th><th>
+GridLayout property</th><th>
 Description</th></tr>
 <tr>
 <td>
 HGap</td><td>
-Gets / sets the horizontal spacing between the components.</td></tr>
+Gets/sets the horizontal spacing between the components.</td></tr>
 <tr>
 <td>
 VGap</td><td>
-Gets / sets the vertical spacing between the components.</td></tr>
+Gets/sets the vertical spacing between the components.</td></tr>
 </table>
 
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 this.gridLayout1.HGap=10;
 
 this.gridLayout1.VGap=10;
@@ -105,7 +108,7 @@ this.gridLayout1.VGap=10;
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -115,11 +118,13 @@ Me.gridLayout1.VGap=10
 
 {% endhighlight  %}
 
+{% endtabs %}
+
  ![](Overview_images/Overview_img61.jpeg)
 
 
 
-N> To include some margin space along the borders, refer_ Margin Settings
+N> To include some margin space along the borders, refer_ Margin Settings.
 
 {% seealso %}
 
@@ -127,7 +132,7 @@ N> To include some margin space along the borders, refer_ Margin Settings
 
 {% endseealso %}
 
-## Configuring Child Controls
+## Configuring Child controls
 
 The following settings can be used to configure the Child controls of the GridLayout Manager.
 
@@ -140,7 +145,7 @@ To prevent a Child control from being laid out using the GridLayout Manager, the
 <table>
 <tr>
 <th>
-Child Control Property</th><th>
+Child control property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -171,37 +176,40 @@ Adds or removes the specified control from the layout list.</td></tr>
 
 The following code can be used to add or remove the control from the GridLayout list programmatically.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.gridLayout1.SetParticipateInLayout(this.button1,false);
 
 
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
 Me.gridLayout1.SetParticipateInLayout(Me.button1,False)
 {% endhighlight  %}
+
+{% endtabs %}
+
 {% seealso %}
 
-Configuring GridLayout, Rearranging the Controls laid out by GridLayout, GridLayout - Configuring Child Controls
+Configuring GridLayout, Rearranging the Controls laid out by GridLayout, GridLayout - Configuring Child Controls.
 
 {% endseealso %}
 
-## Rearranging the Controls laid out by GridLayout
+## Rearranging the controls laid out by GridLayout
 
 The Child controls of the GridLayout can be rearranged by dragging-and-dropping them at design time.
 
-![](Overview_images/Overview_img63.jpeg) 
+![](Overview_images/Overview_img63.jpeg)
 
 
 
 {% seealso %}
 
-[Rearranging the Controls laid out by FlowLayout](/windowsforms/layoutmanagers/flowlayout#rearranging-the-controls-laid-out-by-flowlayout), [Rearranging the Controls laid out by GridBagLayout](/windowsforms/layoutmanagers/gridbaglayout#rearranging-the-controls-laid-out-by-gridbaglayout)
+[Rearranging the Controls laid out by FlowLayout](/windowsforms/layoutmanagers/flowlayout#rearranging-the-controls-laid-out-by-flowlayout), [Rearranging the Controls laid out by GridBagLayout.](/windowsforms/layoutmanagers/gridbaglayout#rearranging-the-controls-laid-out-by-gridbaglayout)
 
 {% endseealso %}

@@ -109,7 +109,7 @@ Various Features and Customization options are discussed in the following topics
 
 ## Style Settings
 
-###Visual Style
+### Visual Style
 
 ContextMenuStripEx supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
 

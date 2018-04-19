@@ -10,18 +10,19 @@ documentation: ug
 
 MonthCalendarAdv supports globalization through MonthCalendarAdv.Culture property.
 
-![](CalendarDateTime_images/Overview_img171.jpeg) 
+![](CalendarDateTime_images/Overview_img171.jpeg)
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 
 this.monthCalendarAdv1.Culture = new System.Globalization.CultureInfo("fr-FR");
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -29,6 +30,8 @@ this.monthCalendarAdv1.Culture = new System.Globalization.CultureInfo("fr-FR");
 
 Me.monthCalendarAdv1.Culture = New System.Globalization.CultureInfo("fr-FR")
 
-{% endhighlight   %}
+{% endhighlight %}
 
-![](CalendarDateTime_images/Overview_img172.jpeg) 
+{% endtabs %}
+
+![](CalendarDateTime_images/Overview_img172.jpeg)

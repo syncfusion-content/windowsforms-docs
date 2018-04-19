@@ -7,7 +7,7 @@ control: XPTaskPane
 documentation: ug
 ---
 
-# Creating a Simple XPTaskPane
+# Creating a simple XPTaskPane
 
 This section demonstrates how to create a simple XPTaskPane.
 
@@ -15,7 +15,7 @@ This section demonstrates how to create a simple XPTaskPane.
 
 
 
-* Add the XPTaskPane control to your empty form in the designer and set its Dock property to right. 
+* Add the XPTaskPane control to your empty form in the designer and set its Dock property to right.
 
 ![](Creating-a-Simple-XPTaskPane_images/Creating-a-Simple-XPTaskPane_img2.jpeg)
 
@@ -46,34 +46,42 @@ This section demonstrates how to create a simple XPTaskPane.
 
 * The pages can be added programmatically as follows.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.xpTaskPane1.TaskPages = new Syncfusion.Windows.Forms.Tools.XPTaskPage[] {this.xpTaskPage1,this.xpTaskPage2, this.xpTaskPage3};
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.xpTaskPane1.TaskPages = New Syncfusion.Windows.Forms.Tools.XPTaskPage() {Me.xpTaskPage1,Me.xpTaskPage2, Me.xpTaskPage3}
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * XPTaskPane control has properties which controls the appearance and behavior of the Task pane sections. You can set Header text for individual pages using XPTaskPage1.Title property of the task page.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 this.xpTaskPage1.Title = "Document";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.xpTaskPage1.Title = "Document"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Change the LayoutName property of a task page to a custom name. This name can be used in the SelectedPage property of the task pane to refer to a particular page. See XPTaskPage topic.
-* Add one or more controls to the task page. 
+* Add one or more controls to the task page.
 
 
 

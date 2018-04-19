@@ -9,10 +9,9 @@ documentation: ug
 
 # Overview
 
-Syncfusion MessageBoxAdv supports an application-defined message and title, plus any combination of predefined icons and buttons.
-MessageBoxAdv provides some of the features such as:
+Syncfusion MessageBoxAdv supports an application-defined message and title, plus any combination of predefined icons and buttons. MessageBoxAdv provides some of the features such as:
 
-**Feature:**
+**Feature**
 
 •	Themes
 
@@ -32,4 +31,4 @@ MessageBoxAdv provides some of the features such as:
 
 •	Localization
  
-![](MessageBoxAdv_images/MessageBoxAdv_img1.jpg) 
+![](MessageBoxAdv_images/MessageBoxAdv_img1.jpg)

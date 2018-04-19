@@ -6,10 +6,11 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Visual Style
+# Visual style
 
-We can give Office2007 look and feel for the XPTaskBarBox control using Style property. It supports all the three Office2007 
-Color Schemes. Specify the color schemes in Office2007ColorScheme property.
+We can give Office2007 look and feel for the XPTaskBarBox control using Style property. It supports all the three Office2007 Color Schemes. Specify the color schemes in Office2007ColorScheme property.
+
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -31,7 +32,7 @@ this.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.xpTaskBar1.Style = Syncfusion.Windows.Forms.Tools.XPTaskBarStyle.Office2007
 
@@ -49,14 +50,17 @@ Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.B
 
 {% endhighlight %}
 
+{% endtabs %}
 
  ![](Overview_images/Overview_img111.jpeg) 
 
 
-### Custom Colors
+### Custom colors
 
 We can also apply custom colors to the XPTaskBar control by setting Office2007ColorScheme to "_Managed_", and specifying the 
 custom color through the ApplyManagedColors method as follows.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -68,7 +72,7 @@ Office2007Colors.ApplyManagedColors(this, Color.DarkGreen);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
 
@@ -76,5 +80,6 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 {% endhighlight %}
 
+{% endtabs %}
 
  ![](Overview_images/Overview_img112.jpeg) 

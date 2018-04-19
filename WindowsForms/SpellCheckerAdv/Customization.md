@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization
 
-SpellCheckerAdv allows customizing options to add misspelled words from the input text to the error list. 
+SpellCheckerAdv allows customizing options to add misspelled words from the input text to the error list.
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ These options are accessible at runtime through the Spell Checker Options dialog
 ![](Customization_images/Options2.png)
 
 
-# Getting Suggestions for Wrong Word
+# Getting suggestions for wrong word
 
 SpellCheckerAdv provides support to get suggestion list by passing the wrong word in the below methods.
 

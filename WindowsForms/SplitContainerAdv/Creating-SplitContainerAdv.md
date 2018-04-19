@@ -11,29 +11,31 @@ documentation: ug
 
 This section will give a step-by-step procedure to design a SplitContainerAdv control through designer and also through programming approach.
 
-## Through Designer
+## Through designer
 
 To create and customize the SplitContainerAdv through designer,
 
 * Open a new Visual C# or VB.NET application in Visual Studio.
-* Drag-and-drop a SplitContainerAdv control object from the toolbox onto the form and resize it to the desired dimension.
+* Drag and drop a SplitContainerAdv control object from the toolbox onto the form and resize it to the desired dimension.
 
-  ![](SplitContainerAdv-Images/Overview_img392.jpeg) 
+  ![](SplitContainerAdv-Images/Overview_img392.jpeg)
 
 
 * Drag and drop the desired controls on to the panels.
-* Run the application. 
+* Run the application.
 
-  ![](SplitContainerAdv-Images/Overview_img393.jpeg) 
+  ![](SplitContainerAdv-Images/Overview_img393.jpeg)
 
 
-## Through Code
+## Through code
 
 To create a SplitContainerAdv control programmatically,
 
 * Open a new Visual C# or VB.NET application in Visual Studio.
 * Add the Syncfusion assemblies Shared.Base and Tool.Windows.
 * Declare the SplitContainerAdv control.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -48,7 +50,7 @@ private Syncfusion.Windows.Forms.Tools.SplitContainerAdv splitContainerAdv1;
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Private splitContainerAdv1 As Syncfusion.Windows.Forms.Tools.SplitContainerAdv
@@ -56,8 +58,11 @@ Private splitContainerAdv1 As Syncfusion.Windows.Forms.Tools.SplitContainerAdv
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Initialize the control and add it in your form.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -74,7 +79,7 @@ this.Controls.Add(this.splitContainerAdv1);
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.splitContainerAdv1 = New Syncfusion.Windows.Forms.Tools.SplitContainerAdv()
 
@@ -82,8 +87,11 @@ Me.Controls.Add(Me.splitContainerAdv1)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * If required customize the control's look and feel.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -101,7 +109,7 @@ this.splitContainerAdv1.SplitterDistance = 47;
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -115,6 +123,8 @@ Me.splitContainerAdv1.SplitterDistance = 47
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Run the application. You will see the SplitContainerAdv with two panels in it as shown below.
 
- ![](SplitContainerAdv-Images/Overview_img394.jpeg) 
+ ![](SplitContainerAdv-Images/Overview_img394.jpeg)

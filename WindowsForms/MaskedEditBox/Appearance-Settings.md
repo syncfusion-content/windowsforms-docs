@@ -8,15 +8,13 @@ documentation: ug
 --- 
 # Appearance Settings
 
-## Background Settings
+## Background settings
 
 The background settings of the MaskedEditBox control are discussed below.
 
-### Background Color
+### Background color
 
 The background color of the control can be set using the properties given below.
-
-
 
 <table>
 <tr>
@@ -37,7 +35,6 @@ this.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Me.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod
@@ -52,8 +49,6 @@ Figure 573: Background Color set for MaskedEditBox
 
 
 The method associated with the above property is given below.
-
-
 
 <table>
 <tr>
@@ -71,15 +66,13 @@ A sample which demonstrates the Background Settings of MaskedEditBox control is 
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-##  Foreground Settings
+##  Foreground settings
 
 The foreground settings of the MaskedEditBox control are discussed below.
 
-### Foreground Color
+### Foreground color
 
 The foreground color of the control can be set using the properties given below.
-
-
 
 <table>
 <tr>
@@ -101,7 +94,6 @@ this.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta;
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
@@ -112,7 +104,7 @@ Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
 ![](MaskedEditBox-images/MarkedEditBox-img16.png)
 
-## Visual Style
+## Visual style
 
 Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for CurrencyTextBox.
 

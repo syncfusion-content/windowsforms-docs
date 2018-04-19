@@ -9,14 +9,14 @@ documentation: ug
 
 # Slide Direction
 
-## Transition Settings
+## Transition settings
 
 The splash panel supports the following transitions over the screen: 
 
 * Slide transition
 * Marquee transition
 
-## Slide Transitions
+## Slide transitions
 
 
 The splash panel supports the following slide transitions:
@@ -43,54 +43,41 @@ AnimationDirection</td><td>
 Gets or sets the slide animation direction.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Set panel slide style.
-
 this.splashPanel1.SlideStyle == SlideStyle.Slide;
 
-
-
 //Set panel location. 
-
 this.splashPanel1.DesktopAlignment = SplashAlignment.LeftBottom;
 
-
-
 //Set animation direction.
-
 this.splashPanel1.AnimationDirection = AnimationDirection.Default;
 
-
-
 //Show panel.
-
 this.splashPanel1.ShowSplash();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.Slide
 
-
 'Set panel location. 
 Me.splashPanel1.DesktopAlignment = SplashAlignment.LeftBottom
 
-
 'Set animation direction.
 Me.splashPanel1.AnimationDirection = AnimationDirection.Default
-
 
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
 {% endhighlight %}
+{% endtabs %}
 
-
-### Left to Right
+### Left to right
 
 If the splash panel DesktopAlignment is set to BottomLeft or TopLeft, support can also be enabled for a left-to-right slide transition using the sample code that follows.
 
@@ -107,42 +94,29 @@ AnimationDirection</td><td>
 Gets or sets the slide animation direction.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Set panel slide style.
-
 this.splashPanel1.SlideStyle == SlideStyle.Slide;
 
-
-
 //Set panel location. 
-
 this.splashPanel1.DesktopAlignment = SplashAlignment.LeftBottom;
 
-
-
 //Set animation direction.
-
 this.splashPanel1.AnimationDirection = AnimationDirection.LeftToRight;
 
-
-
 //Show panel.
-
 this.splashPanel1.ShowSplash();
 
 {% endhighlight %}
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.Slide
 
-
 'Set panel location. 
 Me.splashPanel1.DesktopAlignment = SplashAlignment.LeftBottom
-
 
 'Set animation direction.
 Me.splashPanel1.AnimationDirection = AnimationDirection.LeftToRight
@@ -151,8 +125,9 @@ Me.splashPanel1.AnimationDirection = AnimationDirection.LeftToRight
 Me.splashPanel1.ShowSplash()
 
 {% endhighlight %}
+{% endtabs %}
 
-### Right to Left
+### Right to left
 
 If the splash panel DesktopAlignment is set to BottomRight or TopRight, support can also be enabled for a right-to-left slide transition using the sample code that follows.
 
@@ -169,53 +144,41 @@ AnimationDirection</td><td>
 Gets or sets the slide animation direction.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Set panel slide style.
-
 this.splashPanel1.SlideStyle == SlideStyle.Slide;
 
-
-
 //Set panel location. 
-
-  this.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom;
-
-
+this.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom;
 
 //Set animation direction.
-
 this.splashPanel1.AnimationDirection = AnimationDirection.RightToLeft;
 
-
-
 //Show panel.
-
 this.splashPanel1.ShowSplash();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.Slide
 
-
 'Set panel location. 
 Me.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom
 
-
 'Set animation direction.
 Me.splashPanel1.AnimationDirection = AnimationDirection.RightToLeft
-
 
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
 {% endhighlight %}
+{% endtabs %}
 
-## Marquee Transition
+## Marquee transition
 
 The splash panel supports the following marquee transitions:
 
@@ -225,7 +188,7 @@ The splash panel supports the following marquee transitions:
 * Bottom to top
 
 
-### Left to Right
+### Left to right
 
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as LeftToRight, the marquee will traverse the screen from left to right.
@@ -243,53 +206,41 @@ MarqueeDirection</td><td>
 Gets or sets the marquee direction.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Set panel slide style.
-
 this.splashPanel1.SlideStyle == SlideStyle.marquee;
 
-
-
 //Set panel location. 
-
-  this.splashPanel1.DesktopAlignment = SplashAlignment.LeftBottom;
-
-
+this.splashPanel1.DesktopAlignment = SplashAlignment.LeftBottom;
 
 //Set animation direction.
-
-  this.splashPanel1.MarqueeDirection = MarqueeDirection.LeftToRight;
-
-
+this.splashPanel1.MarqueeDirection = MarqueeDirection.LeftToRight;
 
 //Show panel.
-
 this.splashPanel1.ShowSplash();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.marquee
 
-
 'Set panel location. 
 Me.splashPanel1.DesktopAlignment = SplashAlignment.LeftBottom
 
-
 'Set animation direction.
 Me.splashPanel1.MarqueeDirection = MarqueeDirection.LeftToRight
-
 
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
 {% endhighlight %}
+{% endtabs %}
 
-### Right to Left
+### Right to left
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as RightToLeft, the marquee will traverse the screen from right to left.
 
@@ -306,147 +257,112 @@ MarqueeDirection</td><td>
 Gets or sets the marquee direction.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Set panel slide style.
-
 this.splashPanel1.SlideStyle == SlideStyle.marquee;
 
-
-
 //Set panel location. 
-
-  this.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom;
-
-
+this.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom;
 
 //Set animation direction.
-
-  this.splashPanel1.MarqueeDirection = MarqueeDirection.RightToLeft;
-
-
+this.splashPanel1.MarqueeDirection = MarqueeDirection.RightToLeft;
 
 //Show panel.
-
 this.splashPanel1.ShowSplash();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.marquee
 
-
 'Set panel location. 
 Me.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom
-
 
 'Set animation direction.
 Me.splashPanel1.MarqueeDirection = MarqueeDirection.RightToLeft
 
-
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
 {% endhighlight %}
+{% endtabs %}
 
-### Bottom to Top
+### Bottom to top
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as BottomToTop, the marquee will traverse the screen from the bottom to the top.
 
+{% tabs %}
 {% highlight c# %}
 
 //Set panel slide style.
-
 this.splashPanel1.SlideStyle == SlideStyle.marquee;
 
-
-
 //Set panel location. 
-
-  this.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom;
-
-
+this.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom;
 
 //Set animation direction.
-
-  this.splashPanel1.MarqueeDirection = MarqueDirection.BottomToTop;
-
-
+this.splashPanel1.MarqueeDirection = MarqueDirection.BottomToTop;
 
 //Show panel.
-
 this.splashPanel1.ShowSplash();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.marquee
 
-
 'Set panel location. 
 Me.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom
-
 
 'Set animation direction.
 Me.splashPanel1.MarqueeDirection = MarqueeDirection.BottomToTop
 
-
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
 {% endhighlight %}
+{% endtabs %}
 
-### Top to Bottom
+### Top to bottom
 
 If the splash panel SlideStyle is set as marquee and the MarqueeDirection is set as TopToBottom, the marquee will traverse the screen from the top to the bottom.
 
+{% tabs %}
 {% highlight c# %}
 
 //Set panel slide style.
-
 this.splashPanel1.SlideStyle == SlideStyle.marquee;
 
-
-
 //Set panel location. 
-
-  this.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom;
-
-
+this.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom;
 
 //Set animation direction.
-
-  this.splashPanel1.MarqueeDirection = MarqueeDirection.TopToBottom;
-
-
+this.splashPanel1.MarqueeDirection = MarqueeDirection.TopToBottom;
 
 //Show panel.
-
 this.splashPanel1.ShowSplash();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set panel slide style.
 Me.splashPanel1.SlideStyle = SlideStyle.marquee
 
-
 'Set panel location. 
 Me.splashPanel1.DesktopAlignment = SplashAlignment.RightBottom
 
-
 'Set animation direction.
 Me.splashPanel1.MarqueeDirection = MarqueeDirection.TopToBottom
-
 
 'Show panel.
 Me.splashPanel1.ShowSplash()
 
 {% endhighlight %}
-
+{% endtabs %}

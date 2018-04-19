@@ -7,7 +7,7 @@ control: MetroForm
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 The default Form can be changed into the MetroForm by following the below given steps.
 

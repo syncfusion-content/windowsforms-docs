@@ -38,30 +38,23 @@ WrapText</td><td>
 Determines if the text in the CheckBoxAdv is wrapped.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.radioButtonAdv1.TextShadow = true;
-
 this.radioButtonAdv1.ShadowColor = System.Drawing.Color.Gold;
-
 this.radioButtonAdv1.ShadowOffset = new System.Drawing.Point(8, 8);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.TextShadow = True
-
 Me.radioButtonAdv1.ShadowColor = System.Drawing.Color.Gold
-
 Me.radioButtonAdv1.ShadowOffset = New System.Drawing.Point(8, 8)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img633.jpeg)
 

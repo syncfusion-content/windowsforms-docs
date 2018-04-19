@@ -7,11 +7,13 @@ control: Splitter
 documentation: ug
 ---
 
-# Sizing Grip
+# Sizing grip
 
-The Sizing Grip appearance is customized by using ShowSizeGrip property in SplitterControl. The following code example illustrates this.
+The Sizing Grip appearance is customized by using ShowSizeGrip property in SplitterControl.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -19,8 +21,10 @@ this.splitterControl1.ShowSizeGrip = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.splitterControl1.ShowSizeGrip = False
 
 {% endhighlight %}
+
+{% endtabs %}

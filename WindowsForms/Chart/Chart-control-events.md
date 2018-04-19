@@ -24,7 +24,7 @@ The Chart handles the following mouse related events when the user interacts wit
 * ChartRegionMouseDown Event
 * ChartRegionDoubleClick Event
 
-The above events are raised with a ChartRegionMouseEventArgs that contain the following properties.
+The above events are raised with a [ChartRegionMouseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartRegionMouseDown_EV.html) that contain the following properties.
 
 _Properties_
 
@@ -47,9 +47,7 @@ Button</td><td>
 Returns the right mouse button actions.</td></tr>
 </table>
 
-
-The Region property above includes several useful information about the kind of region the user is currently interacting with:
-
+The Region property above includes several useful information about the kind of region the user is currently interacting with.
 
 <table>
 <tr>
@@ -63,7 +61,7 @@ A text description of this region.</td></tr>
 <tr>
 <td>
 Type</td><td>
-Specifies the type of region. Possible values:* SeriesPoint - interacted on a data point.* HorAxisLabel - interacted on a horizontal axis* VerAxisLabel - interacted on a vertical axis* ChartCustom - interacted with a region that is none of the above.</td></tr>
+Specifies the type of region. Possible values:</br><ul><li>SeriesPoint - interacted on a data point.</li><li>HorAxisLabel - interacted on a horizontal axis</li><li>VerAxisLabel - interacted on a vertical axis</li><li>ChartCustom - interacted with a region that is none of the above.</li></ul></td></tr>
 <tr>
 <td>
 <br>IsChartPoint</td><td>
@@ -86,7 +84,7 @@ ToolTip</td><td>
 Specifies the tooltip for this region.</td></tr>
 </table>
 
-ChartRegionDoubleClick and ChartRegionMouseDown Events
+**ChartRegionDoubleClick and ChartRegionMouseDown Events**
 
 {% tabs %} 
 
@@ -187,7 +185,7 @@ End Sub
 
 ## VisibleRangeChanged Event 
 
-ChartControl provides various zooming options for the user while interacting with the Chart. The VisibleRangeChanged event will be raised when the visible range changes during the zooming operation.
+[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) provides various zooming options for the user while interacting with the Chart. The [VisibleRangeChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~VisibleRangeChanged_EV.html) event will be raised when the visible range changes during the zooming operation.
 
 {% tabs %}  
 
@@ -216,11 +214,11 @@ End Sub
 
 ## ChartFormatAxisLabel Event
 
-This event is discussed in detail in this topic: Customizing Label Text.
+[ChartFormatAxisLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartFormatAxisLabel_EV.html) event is discussed in detail in this topic: Customizing Label Text.
 
 ## PrepareStyle Event
 
-When a series point is about to be rendered by the chart, it will raise this event and allow event subscribers to change the style used. 
+When a series point is about to be rendered by the chart, it will raise [PrepareStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PrepareStyle_EV.html) event and allow event subscribers to change the style used. 
 
 {% tabs %}  
 
@@ -287,7 +285,7 @@ End Sub
 
 ## SeriesInCompatible Event
 
-When the Chart has completed updating the series and finds out that series are incompatible, this event will be raised.
+When the Chart has completed updating the series and finds out that series are incompatible, [SeriesInCompatible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~SeriesIncompatible_EV.html) event will be raised.
 
 {% tabs %}  
 
@@ -316,7 +314,7 @@ End Sub
 
 ## LayoutCompleted Event
 
-This event is handled every time, a resizing of chart is caused and when the chart re-renders itself. Listening to this event helps in cases where you render custom images over the chart or position custom controls over the chart.
+[LayoutCompleted](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~LayoutCompleted_EV.html) event is handled every time, a resizing of chart is caused and when the chart re-renders itself. Listening to this event helps in cases where you render custom images over the chart or position custom controls over the chart.
 
 {% tabs %}  
 
@@ -345,7 +343,7 @@ End Sub
 
 ## ChartAreaPaint Event
 
-ChartAreaPaint event is discussed in Custom Drawing.
+[ChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaPaint_EV.html) event is discussed in Custom Drawing.
 
 {% seealso %}
 
@@ -355,11 +353,11 @@ ChartAreaPaint event is discussed in Custom Drawing.
 
 ## ChartLegendFilterItems Event
 
-This event is discussed in detail in this topic: Chart Legend.
+[ChartLegendFilterItems](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~FilterItems_EV.html) event is discussed in detail in this topic: Chart Legend.
 
 ## PreChartAreaPaint Event
 
-PreChartAreaPaint event is raised before the chart area is painted.
+[PreChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PreChartAreaPaint_EV.html) event is raised before the chart area is painted.
 
 {% tabs %}  
 

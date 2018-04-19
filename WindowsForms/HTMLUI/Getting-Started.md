@@ -7,40 +7,36 @@ control: HTML UI
 documentation: ug
 ---
 
-# Getting Started
-
-What You Will Learn
+# Getting started
 
 This tutorial will show you how easy it is to get started using Essential HTMLUI. It will give you a basic introduction to the concepts you need to know before getting started with the product and some tips and ideas on how to implement HTMLUI into your projects to improve customization and increase efficiency. The lessons in this tutorial are meant to introduce you to HTMLUI with simple step-by-step procedures.
 
 
 
-## Creating an HTML Display Application
+## Creating an HTML display application
 
-Lesson 1 will show you how to load HTML from any source and display it as an HTML display application (like a web browser or an HTML enabled email application). 
+Lesson 1 will show you how to load HTML from any source and display it as an HTML display application (like a web browser or an HTML enabled email application).
 
 
 
-## Creating an HTML Layout
+## Creating an HTML layout
 
 In Lesson 2 you will learn how to lay out your user interfaces using HTMLUI. You will also learn how to let the users interact with the various HTML elements from within your application code.
 
 
 
-## Lesson 1: Creating an HTML Display Application
+## Lesson 1: Creating an HTML display application
 
-The HTMLUI control can be used for displaying HTML documents with standard HTML / CSS formatting. 
+The HTMLUI control can be used for displaying HTML documents with standard HTML/CSS formatting.
 
-In this lesson, you will learn about the following:
-
-### Displaying HTML By Using the HTMLUI Control
+### Displaying HTML By using the HTMLUI control
 
 1. Create a new Windows Forms application and open the main form for the application in the designer. Add the Syncfusion controls to your VS.NET toolbox if you haven't done so already. Drag an HTMLUI control onto the form.
 2. HTML can be loaded into the HTMLUI control from the following sources:
 
-   * From a HTML file
-   * From a URI (Uniform resource Identifier)
-   * From a Stream
+   * From a HTML file.
+   * From a URI (Uniform resource Identifier).
+   * From a Stream.
 
 3. Add a MainMenu component from the toolbox onto the form. Also add a OpenFileDialog component to the form and name it as "openDialog".
 
@@ -49,9 +45,9 @@ In this lesson, you will learn about the following:
 
 4. Add a handler for the Open menu item by double-clicking on the menu.
 
-   ~~~ cs
+   {% tabs %}
 
-
+   {% highlight C# %}
 
 		this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click);
 
@@ -86,10 +82,9 @@ In this lesson, you will learn about the following:
 		}
 
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
-   ~~~ vbnet
+   {% highlight VB %}
 
 
 
@@ -123,10 +118,11 @@ In this lesson, you will learn about the following:
 
 		End Sub
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
-5. Now run the sample and try loading a HTML document into the HTMLUI control.
+   {% endtabs %}
+
+5. Now, run the sample and try loading a HTML document into the HTMLUI control.
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
@@ -134,13 +130,11 @@ Any HTML document can be loaded from a file by using the method shown in this sa
 
 
 
-## Lesson 2: Creating an HTML Layout
+## Lesson 2: Creating an HTML layout
 
 The HTMLUI control can be used for displaying sophisticated user interfaces. HTML provides extensive means to layout and customize display elements. The HTMLUI control adds the ability to create user interfaces using HTML from within Windows Forms applications using managed code.
 
-In this lesson, you will learn about about the following:
-
-### Creating the User Interface
+### Creating the user interface
 
 1. Create a new Windows Forms application and open the main form for the application in the designer. Add Syncfusion controls to your VS .NET toolbox if you haven't done so already. Drag an HTMLUI control onto the form.
 
@@ -166,7 +160,7 @@ In this lesson, you will learn about about the following:
 
 
 
-   ~~~ html
+   {% highlight HTML %}
 
 		<HTML>
 
@@ -228,8 +222,7 @@ In this lesson, you will learn about about the following:
 
 		</HTML>
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 4. As shown in the HTML document above, a textbox, a text area and a button control has been added in the HTML document. The objective is to create an user interface by adding a Click event to the button element and on clicking the button, the text controls are made to display some text.
 
@@ -237,7 +230,7 @@ In this lesson, you will learn about about the following:
 
 5. The LoadFinished event is executed when the HTML document is loaded in the HTMLUI control. Add a handler for the LoadFinished event of the HTMLUI control. Access the HTML elements inside the managed code with objects created for each element as defined in the HTMLUI namespace.
 
-   ~~~ cs
+   {% highlight C# %}
 
 		//Objects declaration made global
 
@@ -295,8 +288,7 @@ In this lesson, you will learn about about the following:
 
 		}
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 
 
@@ -308,13 +300,13 @@ In this lesson, you will learn about about the following:
 
 
 
-### Creating And Displaying Custom Controls
+### Creating and displaying custom controls
 
-To create and display Custom Controls:
+To create and display custom controls:
 
-1. Add the Custom tags in the HTML document to display custom Windows Forms controls. In this case, a MaskedEditBox, MonthCalendar and DataGrid will be displayed in each of the cells in the HTML Table.
+1. Add the Custom tags in the HTML document to display custom Windows Forms controls. In this case, a MaskedEditBox, MonthCalendar, and DataGrid will be displayed in each of the cells in the HTML Table.
 
-   ~~~ html
+   {% highlight HTML %}
 
 		<HTML>
 
@@ -384,12 +376,11 @@ To create and display Custom Controls:
 
 		</HTML>
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
    Note the custom tags masked edit box, month calendar, and datagrid. These tags do not have any relation to the name of the control type they represent. Set the desired size of the custom control by setting the width and height attributes.
 
-   In the previous step, three custom controls were defined as part of the HTMLUI interface. The actual Windows Forms controls that represent these definitions have to be added to the form. 
+   In the previous step, three custom controls were defined as part of the HTMLUI interface. The actual Windows Forms controls that represent these definitions have to be added to the form.
 
 
 
@@ -409,7 +400,7 @@ To create and display Custom Controls:
    This step associates the Windows Forms controls on the form with controls defined in the HTML. This is done in the PreRenderDocument event handler of the HTMLUI control. This event is raised before the control renders the HTML elements (after it has parsed the HTML document into HTML elements).
 
 
-   ~~~ cs
+   {% highlight C# %}
 
 
 
@@ -453,13 +444,12 @@ To create and display Custom Controls:
 
 		}
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 
 5. Add a handler for the Load event and load the HTML document resource into the HTMLUI control.
 
 
-   ~~~ cs
+   {% highlight C# %}
 
 		this.Load += new System.EventHandler(this.Form1_Load);
 
@@ -521,8 +511,7 @@ To create and display Custom Controls:
 
 		}
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
 		
 		
 ![](Getting-Started_images/Getting-Started_img7.jpeg)

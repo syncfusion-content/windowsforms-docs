@@ -15,7 +15,7 @@ The various sections of StatusBarAdv and their descriptions are given below.
 
 
 
-## StatusBarAdv Control
+## StatusBarAdv control
 
 This represents the advanced StatusBar with different border and background styles.
 
@@ -25,7 +25,7 @@ This includes the StatusBarAdvPanel controls that are added onto the StatusBarAd
 
 The StatusBarAdvPanel is a panel derived class that can display status bar information such as the time or key state with several appearance enhancements. It can be displayed either within a StatusBarAdv control or on a form.
 
-## Child Controls
+## Child controls
 
 This includes other user interface controls that are added onto the StatusBarAdv Control.
 

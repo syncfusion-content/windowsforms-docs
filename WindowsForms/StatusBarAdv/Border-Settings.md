@@ -44,41 +44,28 @@ Indicates whether the panel should have a border. The options included are given
 
 N> The BorderColor and BorderSingle properties will have effect only when the BorderStyle property is set to 'FixedSingle'.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.statusBarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-
 this.statusBarAdv1.BorderColor = System.Drawing.Color.DarkRed;
-
 this.statusBarAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed;
-
 this.statusBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
 this.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner
-
 Me.statusBarAdv1.BorderColor = System.Drawing.Color.DarkRed
-
 Me.statusBarAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dashed
-
 Me.statusBarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-
 Me.statusBarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img68.jpeg)
 
-
-
 N> The border of the StatusBarAdvPanels can also be set to enhance the look and feel of the panels. See Border Settings topic under StatusBarAdvPanel.
-

@@ -15,30 +15,27 @@ MultiColumnComboBox control is a [ComboBoxAdv](/windowsforms/comboboxadv/overvie
 
 We can bind external data to the MultiColumnComboBox control. Refer [DataBinding](/windowsforms/multicolumncombobox/data-binding) topic to know more.
 
-## Selection Color
+## Selection color
 
 We can specify the color for the alpha blended selections using AlphaBlendSelectionColor property.
 
+{% tabs %}
 {% highlight c# %}
 
 this.multiColumnBoundCombo.MultiColumn = true;
-
 this.multiColumnBoundCombo.ShowColumnHeader = true;
-
 this.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.multiColumnBoundCombo.MultiColumn = True
-
 Me.multiColumnBoundCombo.ShowColumnHeader = True
-
 Me.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ## DropDowWidth
 
