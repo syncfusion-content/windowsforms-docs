@@ -21,8 +21,6 @@ This section briefly describes how to design a Toggle Button in a .NET applicati
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-
-
 ## Configuring the ToggleButton
 
 The most commonly used settings of the Toggle Button Control is configured either through Designer using the Smart tag or through the Properties window or through code behind.
@@ -31,48 +29,40 @@ The following screenshot illustrates the Toggle Button Control customization thr
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-
-
 To add Toggle Button control to a Windows Forms Application through code behind,
 
 1. Include Syncfusion.Windows.Forms.Tools namespace.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
+ 
+using Syncfusion.Windows.Forms;
 
-		using Syncfusion.Windows.Forms;
+{% endhighlight %}
 
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+{% endtabs %}
    
-   ~~~ vbnet
-
-		Imports Syncfusion.Windows.Forms.Tools
-
-   ~~~
-   {:.prettyprint }
-
 2. Create an instance of the Toggle Button control and add it to the Form.
 
-   ~~~ cs
+{% tabs %}
+{% highlight c# %}
 
-		ToggleButton togglebutton1;
+ToggleButton togglebutton1;
+this.togglebutton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+this.Controls.Add(togglebutton1);
 
-		this.togglebutton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+{% endhighlight %}
 
-		this.Controls.Add(togglebutton1);
+{% highlight vb %}
 
-   ~~~
-   {:.prettyprint }
+Dim togglebutton1 As Syncfusion.Windows.Forms.Tools.ToggleButton
+Me.ToggleButton1 = New Syncfusion.Windows.Forms.Tools.ToggleButton()
+Me.Controls.Add(togglebutton1)
 
-   ~~~ vbnet
-
-		Dim togglebutton1 As Syncfusion.Windows.Forms.Tools.ToggleButton
-
-		Me.ToggleButton1 = New Syncfusion.Windows.Forms.Tools.ToggleButton()
-
-		Me.Controls.Add(togglebutton1)
-
-
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
+{% endtabs %}
