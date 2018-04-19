@@ -30,28 +30,20 @@ MinimumSize</td><td>
 Gets / sets the minimum size for the control.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.textBoxExt1.MaximumSize = new System.Drawing.Size(150, 20);
-
 this.textBoxExt1.MinimumSize = new System.Drawing.Size(150, 20);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.textBoxExt1.MaximumSize = New System.Drawing.Size(150, 20)
-
 Me.textBoxExt1.MinimumSize = New System.Drawing.Size(150, 20)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Layout-Settings_images/Layout-Settings_img1.png)
-
-
-
