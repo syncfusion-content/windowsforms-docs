@@ -737,7 +737,7 @@ While you can use the [ChartSeries.Points](https://help.syncfusion.com/cr/cref_f
 
 A sample application that illustrates real time data usage which is distributed along with the EssentialChart installation and can be found at:
 
-Sample Location: "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Real Time\Chart Recorder"
+**Sample Location:** "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\Real Time\Chart Recorder"
 
 
 
