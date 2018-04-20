@@ -28,20 +28,19 @@ MaxLength</td><td>
 Specifies the maximum number of characters that can be entered into the edit control. The default value is set to '32767'.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.textBoxExt1.MaxLength = 32800;               
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.textBoxExt1.MaxLength = 32800
 
 {% endhighlight %}
+{% endtabs %}
 
 ### ReadOnly
 
@@ -60,20 +59,20 @@ ReadOnly</td><td>
 Specifies whether the text in the edit control can be changed or not.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 this.textBoxExt1.ReadOnly = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.textBoxExt1.ReadOnly = True
 
 {% endhighlight %}
+{% endtabs %}
 
 A sample which demonstrates the ReadOnly mode of TextBoxExt control is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-

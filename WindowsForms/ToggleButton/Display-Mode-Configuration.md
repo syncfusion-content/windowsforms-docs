@@ -11,6 +11,7 @@ documentation: ug
 
 Toggle Button is set to display either text or image through its DisplayMode property.
 
+{% tabs %}
 {% highlight c# %}
 
 this.toggleButton1.DisplayMode = DisplayType.Text;
@@ -19,18 +20,13 @@ this.toggleButton1.DisplayMode = DisplayType.Text;
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.ToggleButton1.DisplayMode = DisplayType.Text
 
 'DisplayType.Image for displaying image
 
-
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Display-Mode-Configuration_images/Display-Mode-Configuration_img1.png)
-
-
-
