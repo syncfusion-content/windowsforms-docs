@@ -9,9 +9,11 @@ documentation: ug
 
 # Headers and Labels
 
-Labels and headers in a tree map can be customized by the various properties available in the TreeMap control, such as LabelFont, LabelBrush, LabelBackgroundBrush, LabelBorderBrush, LabelBorderThickness, and HeaderBrush.
+Labels and headers in a tree map can be customized using the properties available in the TreeMap control, such as [`LabelFont`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~LabelFont.html), [`LabelBrush`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~LabelBrush.html), [`LabelBackgroundBrush`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~LabelBackgroundBrush.html), [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~LabelBorderBrush.html), [`LabelBorderThickness`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~LabelBorderThickness.html), and [`HeaderBrush`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~HeaderBrush.html).
 
 #### Code Sample
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -36,7 +38,6 @@ treeMapFlatLevel1.ShowLabels = true;
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
 
-
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
 
 treeMapFlatLevel2.GroupPath = "Country";
@@ -46,7 +47,6 @@ treeMapFlatLevel2.ShowLabels = true;
 treeMapFlatLevel2.HeaderHeight = 25;
 
 TreeMap1.Levels.Add(treeMapFlatLevel2);
-
 
 
 TreeMap1.HeaderBrush = new SolidBrush(Color.Blue);
@@ -60,8 +60,6 @@ TreeMap1.LabelBackgroundBrush = new SolidBrush(Color.LightSkyBlue);
 TreeMap1.LabelBrush = new SolidBrush(Color.White);
 
 TreeMap1.LabelFont = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-
 
 DesaturationColorMapping desaturationColorMapping = new DesaturationColorMapping();
 
@@ -77,7 +75,8 @@ desaturationColorMapping.RangeMaximum = 80000;
 
 this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img12.png)
