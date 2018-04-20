@@ -7,7 +7,7 @@ control: Frequently Asked Questions
 documentation: ug
 ---
 
-# How to set SuperToolTip for MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl?
+# How to Set SuperToolTip for MenuStrip, ToolStrip or ToolStripEx, and RibbonTabControl
 
 Few Controls like MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl already have the feature of showing Tooltip. 
 
