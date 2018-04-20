@@ -28,24 +28,18 @@ IgnoreThemeBackground</td><td>
 Indicates whether the control will ignore the theme's background color and draw the back color instead.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.statusBarAdvPanel1.IgnoreThemeBackground = true;
-
 this.statusBarAdvPanel1.ThemesEnabled = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdvPanel1.IgnoreThemeBackground = True
-
 Me.statusBarAdvPanel1.ThemesEnabled = True
 
 {% endhighlight %}
-
+{% endtabs %}

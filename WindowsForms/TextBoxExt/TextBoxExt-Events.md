@@ -74,27 +74,24 @@ This event occurs when the Border3DStyle property is changed. The Border3DStyl
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_Border3DStyleChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" Border3DStyleChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-	Private Sub textBoxExt1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" Border3DStyleChanged event is raised ")
-
-	End Sub
+Private Sub textBoxExt1_Border3DStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
+Console.WriteLine(" Border3DStyleChanged event is raised ")
+End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## BorderColorChanged
 
@@ -102,27 +99,24 @@ This event occurs when the BorderColor property is changed. The BorderColor pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
-	private void textBoxExt1_BorderColorChanged(object sender, EventArgs e)
-
-	{
-
+private void textBoxExt1_BorderColorChanged(object sender, EventArgs e)
+{
 	Console.WriteLine(" BorderColorChanged event is raised ");
-
-	}
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_BorderColorChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" BorderColorChanged event is raised ")
-
+Console.WriteLine(" BorderColorChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## BorderSidesChanged
 
@@ -130,27 +124,24 @@ This event occurs when the BorderSides property is changed. The BorderSides pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_BorderSidesChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" BorderSidesChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_BorderSidesChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" BorderSidesChanged event is raised ")
-
+Console.WriteLine(" BorderSidesChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## BorderStyleChanged
 
@@ -158,27 +149,24 @@ This event occurs when the BorderStyle property is changed. The BorderStyle pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_BorderStyleChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" BorderStyleChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_BorderStyleChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" BorderStyleChanged event is raised ")
-
+Console.WriteLine(" BorderStyleChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## CharacterCasingChanged
 
@@ -186,27 +174,24 @@ This event occurs when the CharacterCasing property is changed. The CharacterC
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_CharacterCasingChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" CharacterCasingChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_CharacterCasingChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" CharacterCasingChanged event is raised ")
-
+Console.WriteLine(" CharacterCasingChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## HideSelectionChanged
 
@@ -214,27 +199,24 @@ This event occurs when the HideSelection property is changed. The HideSelectio
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_HideSelectionChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" HideSelectionChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_HideSelectionChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" HideSelectionChanged event is raised ")
-
+Console.WriteLine(" HideSelectionChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## MaximumSizeChanged 
 
@@ -242,27 +224,24 @@ This event occurs when the MaximumSize property is changed. The MaximumSize pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_MaximumSizeChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" MaximumSizeChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_MaximumSizeChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" MaximumSizeChanged event is raised ")
-
+Console.WriteLine(" MaximumSizeChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## MinimumSizeChanged 
 
@@ -270,27 +249,24 @@ This event occurs when the MinimumSize property is changed. The MinimumSize pr
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_MinimumSizeChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" MinimumSizeChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_MinimumSizeChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" MinimumSizeChanged event is raised ")
-
+Console.WriteLine(" MinimumSizeChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## MultilineChanged 
 
@@ -298,27 +274,24 @@ This event occurs when the Multiline property is changed. The Multiline proper
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_MultilineChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" MultilineChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_MultilineChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" MultilineChanged event is raised ")
-
+Console.WriteLine(" MultilineChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## ReadOnlyChanged 
 
@@ -326,27 +299,24 @@ This event occurs when the ReadOnly property is changed. The ReadOnly property
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_ReadOnlyChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" ReadOnlyChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_ReadOnlyChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" ReadOnlyChanged event is raised ")
-
+Console.WriteLine(" ReadOnlyChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## TextAlignChanged 
 
@@ -354,27 +324,24 @@ This event occurs when the TextAlign property is changed. The TextAlign proper
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_TextAlignChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" TextAlignChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_TextAlignChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" TextAlignChanged event is raised ")
-
+Console.WriteLine(" TextAlignChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
 ## ThemesEnabledChanged
 
@@ -382,24 +349,21 @@ This event occurs when the ThemesEnabled property is changed. The ThemesEnable
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
+{% tabs %}
 {% highlight c# %}
 
 private void textBoxExt1_ThemesEnabledChanged(object sender, EventArgs e)
-
 {
-
 	Console.WriteLine(" ThemesEnabledChanged event is raised ");
-
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub textBoxExt1_ThemesEnabledChanged(ByVal sender As Object, ByVal e As EventArgs)
-
-	Console.WriteLine(" ThemesEnabledChanged event is raised ")
-
+Console.WriteLine(" ThemesEnabledChanged event is raised ")
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
