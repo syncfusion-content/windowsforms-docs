@@ -51,7 +51,7 @@ The maximum and minimum size of the control can be set.
 
 Themed appearance can be provided for the TextBoxExt control.
 
-### Key Features
+### Key features
 
 * Provides different border colors and styles.
 * Provides options to show text overflow indicators and overflow indicator tooltips.
