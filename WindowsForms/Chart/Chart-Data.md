@@ -19,7 +19,7 @@ There is however no DESIGN-TIME support for data binding. This has to be setup i
 
 ### Data binding via custom interfaces
 
-There is also a more flexible support for implementing custom data models by implementing specific interfaces. Using this approach you can query and provide data for the chart much more flexibly and from any kind of data store.
+There is also more flexible support for implementing custom data models by implementing specific interfaces. Using this approach you can query and provide data for the chart much more flexibly and from any kind of data store.
 
 N> One important reason you might want to use either of the above two approaches is to greatly enhance performance (speed and memory) especially while dealing with a large set of data points.
 
@@ -282,7 +282,7 @@ Me.chartControl1.Series.Add(series1)
 
 ### Indexed data
 
-Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can instead implement the [IChartSeriesIndexedModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.IChartSeriesIndexedModel.html) interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
+Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can implement the [IChartSeriesIndexedModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.IChartSeriesIndexedModel.html) interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
 
 ## Chart Data Binding with IEnumerable
 
@@ -713,7 +713,7 @@ Essential Chart provides a series model implementation that works directly on to
 
 ### Grouping Support
 
-The enterprise version of Essential Chart includes Essential Grouping that allows EssentialChart to implement a series model that works directly on top of grouped data. All the key advantages of Essential Grouping carry over into the grouping support in Essential Chart. Filters, summaries and computed expressions are all supported in EssentialChart. With EssentialChart, you are not restricted to predefined summaries or filters. You can easily add custom summaries and filters and have such data displayed in the chart.
+The enterprise version of Essential Chart includes Essential Grouping that allows EssentialChart to implement a series model that works directly on top of grouped data. All the key advantages of Essential Grouping carry over into the grouping support in Essential Chart. With EssentialChart, you are not restricted to predefined summaries or filters. You can easily add custom summaries and filters and have such data displayed in the chart.
 
 The following image displays stock data that is grouped by symbol to calculate the total volume. The data contains discrete transaction details with symbol information, volume, and price. 
 
@@ -723,7 +723,7 @@ The following image displays the same data with data from transactions that occu
 
 ### Essential Grid Interaction
 
-Essential Chart offers great interaction capabilities with Essential Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it takes, is a few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
+Essential Chart offers great interaction capabilities with Essential Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it take few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
 
 ![](Data-Manipulation_images/Data-Manipulation_img2.png)
 
@@ -735,7 +735,7 @@ Essentially, this involves updating the chart's data points list and optionally 
 
 While you can use the [ChartSeries.Points](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Points.html) to add new data points to the existing list, for best performance it's recommended to implement your own "model" to store the data points in real-time scenarios.
 
-A sample application that illustrates this is distributed along with the EssentialChart installation and can be found at:
+A sample application that illustrates real time data usage which is distributed along with the EssentialChart installation and can be found at:
 
 Sample Location: "&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Real Time\Chart Recorder"
 
