@@ -7,13 +7,13 @@ control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Layout
+# Tree Map Layout
 
-The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ItemsLayoutMode.html) of the TreeMap control specifies the mode in which the items should be laid out. This layout will be applied for all the tree map levels. It includes four different types of layout.
+The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ItemsLayoutMode.html) of the tree map control specifies the mode in which the items should be laid out. This layout will be applied for all the tree map levels. It includes four different types of layout.
 
-## Squarified Layout
+## Squarified layout
 
-#### Code Sample
+#### Code sample
 
 {% tabs %}
 
@@ -57,9 +57,9 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 ![](Features_images/Features_img3.png)
 
-## SliceAndDiceAuto Layout
+## SliceAndDiceAuto layout
 
-#### Code Sample
+#### Code sample
 
 {% tabs %}
 
@@ -102,9 +102,9 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 ![](Features_images/Features_img4.png)
 
 
-## SliceAndDiceHorizontal Layout
+## SliceAndDiceHorizontal layout
 
-#### Code Sample
+#### Code sample
 
 {% tabs %}
 
@@ -145,9 +145,9 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 ![](Features_images/Features_img5.png)
 
 
-## SliceAndDiceVertical Layout
+## SliceAndDiceVertical layout
 
-#### Code Sample
+#### Code sample
 
 {% tabs %}
 
