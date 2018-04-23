@@ -299,7 +299,7 @@ The steps that are given below will guide you through the process.
 
 3.Drag a grid control onto the Form2.
 
-4.Add the namespace **yncfusion.Windows.forms.Grid** in Form2.
+4.Add the namespace **Syncfusion.Windows.forms.Grid** in Form2.
 
 {% tabs %}
 

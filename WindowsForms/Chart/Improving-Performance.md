@@ -56,7 +56,7 @@ This property sets the back color for the chart area. If not set with gradient o
 <td>
 {{'[ChartInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInterior.html)'| markdownify }}
 </td><td>
-This property fills the chart interior. If this property isnot set with gradient or pattern style, will improve the performance of the chart.</td></tr>
+This property fills the chart interior. If this property isn`t set with gradient or pattern style, will improve the performance of the chart.</td></tr>
 </tr>
 </table>
 
