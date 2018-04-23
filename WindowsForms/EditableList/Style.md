@@ -9,25 +9,47 @@ documentation: ug
 
 # Style   
 
-EditableList supports visual styles such as Default, Metro. The style can be set using Style property. 
-
-* Default
-* Metro
+EditableList supports visual styles such as Default, Metro, Office2016. The style can be set using Style property. 
 
 The following code example allows you to set the style for the EditableList.
 
-{% tabs %}
 {% highlight c# %}
 
-this.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Metro;
+this.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Office2016;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight vbnet %}
 
-Me.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Metro
+Me.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Office2016
 
 {% endhighlight %}
-{% endtabs %}
 
-![](Style_images/Style_img1.png)
+![](Style_images/Style_img3.png)
+
+The Office2016 Style has following Colorschemes
+
+* Colorful
+* White
+* DarkGray
+* Black
+
+The following code example allows you to set the Colorschemes for the Office 2016 Theme.
+
+{% highlight c# %}
+
+this.editableList1.Office2016ColorScheme = ScrollBarOffice2016ColorScheme.Colorful;
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Me.editableList1.Office2016ColorScheme = ScrollBarOffice2016ColorScheme.Colorful
+
+{% endhighlight %}
+
+
+![](Style_images/Style_img2.png)
+
+
+
