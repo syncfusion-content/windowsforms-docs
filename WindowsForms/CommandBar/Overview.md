@@ -28,7 +28,7 @@ ReBar controls act as containers for child controls. They contain one or more ba
 
 * Button settings - The CommandBar is usually displayed with the close button and drop-down button which can be enabled or disabled according to the needs of the user.
 
-* Interactive featurs - All toolbar icons that do not fit in the space available in the toolbar are displayed by the chevron provided by the CommandBar.
+* Interactive features - All toolbar icons that do not fit in the space available in the toolbar are displayed by the chevron provided by the CommandBar.
 
 * Adding pop-up Menu - Pop-up Menus can be easily associated with the CommandBar which can be displayed on clicking the drop-down button of the CommandBar or on right-clicking the CommandBar control itself.
 
