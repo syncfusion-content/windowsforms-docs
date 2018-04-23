@@ -27,14 +27,14 @@ Me.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Office2016
 
 ![](Style_images/Style_img3.png)
 
-The Office2016 Style has following Colorschemes
+The Office2016 Style has following Color Schemes
 
 * Colorful
 * White
 * DarkGray
 * Black
 
-The following code example allows you to set the Colorschemes for the Office 2016 Theme.
+The following code example allows you to set the Color Schemes for the Office 2016 Theme.
 
 {% highlight c# %}
 
