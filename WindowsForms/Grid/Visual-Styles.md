@@ -131,8 +131,9 @@ Me.gridControl1.MetroColorTable.ThumbNormal = Color.Blue
 
 N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling) section.
 
-## Modifying Office2016 Colors
-Custom colors can be applied to the metro theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SetOffice2016ThemeStyle.html) method. It can be used to change the colors of Mouse hover, pressed and clicked colors of the Headers and the embedded cell controls of the GridControl.
+## Modifying Office2016 colors
+
+Custom colors can be applied to the metro theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SetOffice2016ThemeStyle.html) method. It can be used to change the colors of Mouse hover, pressed, and clicked colors of the headers and the embedded cell controls of the GridControl.
 
 {% tabs %}
 {% highlight c# %}
@@ -166,13 +167,15 @@ Me.gridControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Colorful, sty
 {% endtabs %}
 ![](Visual-Syles_images/Visual-Syles_img6.jpeg)
 
-### Modifying Office2016 Scrollbar Colors
-The Scrollbars of the Office2016 visual style can be customized by setting the any one of below respective property based on theme,
+### Modifying Office2016 scrollbar colors
+
+The scrollbars of the Office2016 visual style can be customized by setting any one of the following respective property based on theme:
+
  * Office2016ColorfulColorTable
  * Office2016BlackColorTable
  * Office2016WhiteColorTable
  * Office2016DarkGrayColorTable
- 
+
 {% tabs %}
 {% highlight c# %}
 //Used to set the custom colors to the Office2016 scrollbars
