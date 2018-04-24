@@ -155,8 +155,10 @@ Me.gridGroupingControl1.TableControl.MetroColorTable.ThumbNormal = Color.ForestG
 
 N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/gridgrouping/sorting) section.
 
-## Modifying Office2016 Colors
-Custom colors can be applied to the office2016 theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SetOffice2016ThemeStyle.html) method. It can be used to change the colors of mouse hover, pressed and clicked colors of the Headers and the embedded cell controls of the GridGroupingControl.
+## Modifying Office2016 colors
+
+Custom colors can be applied to the office2016 theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SetOffice2016ThemeStyle.html) method. It can be used to change the colors of Mouse hover, pressed, and clicked colors of the headers and the embedded cell controls of the GridGroupingControl.
+
 {% tabs %}
 {% highlight c# %}
 //Create GridOffice2016ThemeColors object for customizing the Office2016 visual style
@@ -193,13 +195,15 @@ Me.gridGroupingControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Color
 
 ![](Visual-Style_images/Visual-Style_img7.jpeg)
 
-## Modifying Office2016 Scrollbar Colors
-The Scrollbars of the Office2016 visual style can be customized by setting the any one of below respective property based on theme,
+## Modifying Office2016 scrollbar colors
+
+The Scrollbars of the Office2016 visual style can be customized by setting any one of the following respective property based on theme:
+
  * Office2016ColorfulColorTable
  * Office2016BlackColorTable
  * Office2016WhiteColorTable
  * Office2016DarkGrayColorTable
- 
+
 {% tabs %}
 {% highlight c# %}
 //Used to set the custom colors to the Office2016 scrollbars
