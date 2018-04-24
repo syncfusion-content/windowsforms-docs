@@ -264,7 +264,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 **Custom**
 
- Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the **VisualStyle** property as **Custom**.
+ Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the VisualStyle property as Custom.
 
  **Steps to customize the theme in design time**
 
@@ -530,7 +530,7 @@ Me.digitalGauge1.Value = 123456
 
 ### Show visible segments
 
-The ShowInvisibleSegments property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to false.
+The ShowInvisibleSegments property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to `false`.
 
 {% tabs %}
 

@@ -52,7 +52,7 @@ Me.groupView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endtabs %}
 
-The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook property to 'True'.
+The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook property to `true`.
 
 ![](Overview_images/Overview_img56.jpeg)
 
@@ -84,7 +84,7 @@ The property determines whether the control will permit user-interactive drag-an
 <tr>
 <td>
 AllowDragAnyObject</td><td>
-Setting this property permits the user to drag any object inside the GroupView control, provided AllowDragDrop property is set to 'True'.</td></tr>
+Setting this property permits the user to drag any object inside the GroupView control, provided AllowDragDrop property is set to `true`.</td></tr>
 </table>
 
 {% tabs %}
@@ -158,7 +158,7 @@ Me.groupView1.ItemYSpacing = 10
  
 ## Scroll settings
 
-We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling property to 'True'.
+We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling property to `true`.
 
 
 

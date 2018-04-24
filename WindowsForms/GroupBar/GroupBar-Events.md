@@ -309,7 +309,7 @@ End Sub
 
 ## NavigationPaneDropDownClick event
 
-It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to True. The event handler receives an argument of type NavigationPaneDropDownClickEventArgs containing data related to this event.
+It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to`true`. The event handler receives an argument of type NavigationPaneDropDownClickEventArgs containing data related to this event.
 
 The following event property is associated with the NavigationPaneDropDownClickEventArgs.
 

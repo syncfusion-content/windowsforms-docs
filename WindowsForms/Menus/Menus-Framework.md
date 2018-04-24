@@ -37,6 +37,8 @@ The following screenshot shows the CommandBar in the designer.
 
 To associate a bar with the CommandBar use the below code snippet.
 
+{% tabs %}
+
 {% highlight C# %}
 
 //Associate the created Bar with CommandBar.
@@ -66,6 +68,8 @@ this.commandBar2.Controls.Add(this.trackBarEx1);
 Me.commandBar2.Controls.Add(Me.trackBarEx1)
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img107.jpeg)
 
@@ -182,11 +186,11 @@ Description</th></tr>
 <tr>
 <td>
 HideChevron</td><td>
-When set to true hides the chevron for the CommandBar.</td></tr>
+When set to `true` hides the chevron for the CommandBar.</td></tr>
 <tr>
 <td>
 HideCloseButton</td><td>
-Hides Close button for the floating CommandBar, when set to true.</td></tr>
+Hides Close button for the floating CommandBar, when set to `true`.</td></tr>
 <tr>
 <td>
 HideDropDownButton</td><td>
@@ -231,13 +235,6 @@ A ControlBar is a full-featured docking container that can host any control and 
 ![](Overview_images/Overview_img110.jpeg)
 
 
-
-{% seealso %}
-
-How to dock the ControlBars to any edge of the host form?
-
-{% endseealso %}
-
 ### ControlBar client controls
 
 A ControlBar is capable of hosting two controls.
@@ -281,16 +278,6 @@ Me.controlBar1.ControlBarCaptionHeight = 30
 {% endhighlight  %}
 
 {% endtabs %}
-
-{% seealso %}
-
-[ControlBar Properties](#controlbar-properties)
-
-[Adding Different Pages To Control Bar](#adding-different-pages-to-control-bar)
-
-How to dock the ControlBars to any edge of the host form?
-
-{% endseealso %}
 
 ### ControlBar properties
 
@@ -380,7 +367,7 @@ Description</th></tr>
 <tr>
 <td>
 HideCloseButton</td><td>
-Hides Close button for the floating CommandBar, when set to true.</td></tr>
+Hides Close button for the floating CommandBar, when set to `true`.</td></tr>
 <tr>
 <td>
 HideDropDownButton</td><td>
@@ -409,15 +396,6 @@ Indicates the PopupContainer control that is displayed when the dropdown button 
 PopupMenu</td><td>
 Indicates the pop-up menu on clicking the drop-down button.</td></tr>
 </table>
-{% seealso %}
-
-[ControlBar Client Controls](#controlbar-client-controls)
-
-[Adding Different Pages To Control Bar](#adding-different-pages-to-control-bar)
-
-How to dock the ControlBars to any edge of the host form?
-
-{% endseealso %}
 
 ### Adding different pages to control bar
 
@@ -511,7 +489,5 @@ A sample which demonstrates adding control bar is available in the below sample 
 [ControlBar Client Controls](#controlbar-client-controls)
 
 [Adding Different Pages To Control Bar](#adding-different-pages-to-control-bar)
-
-How to dock the ControlBars to any edge of the host form
 
 {% endseealso %}
