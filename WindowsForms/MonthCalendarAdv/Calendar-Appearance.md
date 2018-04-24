@@ -165,15 +165,15 @@ Description</th></tr>
 <tr>
 <td>
 ThemedBorder</td><td>
-Specifies whether the border of the control is themed. By default it is true.</td></tr>
+Specifies whether the border of the control is themed. By default it is `true`.</td></tr>
 <tr>
 <td>
 ThemedEnabledGrid</td><td>
-Specifies whether the grid holding the days is themed or not. By default it is false.</td></tr>
+Specifies whether the grid holding the days is themed or not. By default it is `false`.</td></tr>
 <tr>
 <td>
 ThemedEnabledScrollButtons</td><td>
-Specifies whether the scroll buttons are themed. It is set to true by default.</td></tr>
+Specifies whether the scroll buttons are themed. It is set to `true` by default.</td></tr>
 </table>
 
 
@@ -392,7 +392,7 @@ Me. monthCalendarAdv1.Office2007Theme = Office2007Theme.Silver
 
 **Managed**
 
-This option helps to apply the custom colors to the MonthCalendarAdv by setting Office2007Theme to “Managed” and specifying the custom color through the ApplyManagedColors method as follows.
+This option helps to apply the custom colors to the MonthCalendarAdv by setting Office2007Theme to 'Managed' and specifying the custom color through the ApplyManagedColors method as follows.
 
 {% tabs %}
 

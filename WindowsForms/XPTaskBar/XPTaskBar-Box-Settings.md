@@ -104,15 +104,15 @@ Description</th></tr>
 <tr>
 <td>
 Collapsed</td><td>
-Specifies the collapsed state of the TaskBar Box. The default value is set to 'False'.</td></tr>
+Specifies the collapsed state of the TaskBar Box. The default value is set to `false`.</td></tr>
 <tr>
 <td>
 ShowCollapseButton</td><td>
-Specifies whether to show or hide the collapse button. The default value is set to 'True'.</td></tr>
+Specifies whether to show or hide the collapse button. The default value is set to `true`.</td></tr>
 <tr>
 <td>
 ToggleByButton</td><td>
-Specifies whether the XPTaskBar Box should expand or collapse only when the collapse button is clicked, or always when the header is clicked. The default value is set to 'False'.</td></tr>
+Specifies whether the XPTaskBar Box should expand or collapse only when the collapse button is clicked, or always when the header is clicked. The default value is set to `false`.</td></tr>
 </table>
 
 {% tabs %}
@@ -319,7 +319,7 @@ Gets/sets the text of the tooltip.</td></tr>
 <tr>
 <td>
 ShowToolTip</td><td>
-Sets the visibility of the tooltip. The default value is set to 'False'.</td></tr>
+Sets the visibility of the tooltip. The default value is set to `false`.</td></tr>
 </table>
 
 {% tabs %}

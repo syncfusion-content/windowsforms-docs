@@ -21,7 +21,7 @@ This section demonstrates how to create a simple XPTaskPane.
 
 
 
-* Add pages to the TaskPane using: "Add Page" option in the smart tag.
+* Add pages to the TaskPane using Add Page option in the smart tag.
 
 ![](Creating-a-Simple-XPTaskPane_images/Creating-a-Simple-XPTaskPane_img3.jpeg)
 
@@ -33,7 +33,7 @@ This section demonstrates how to create a simple XPTaskPane.
 
 
 
-* "Add Page" command in Property grid.
+* Add Page command in Property grid.
 * XPTaskPage Collection Editor which can be opened by accessing TaskPages property of the control. You can use Remove page option to remove a page.
 
 ![](Creating-a-Simple-XPTaskPane_images/Creating-a-Simple-XPTaskPane_img5.jpeg)

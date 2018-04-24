@@ -245,13 +245,8 @@ N> *  In Fig 1, 18th is identified as the current cell and the tooltip is displa
 
 
 
-![](CalendarDateTime_images/Overview_img175.jpeg) 
+![](CalendarDateTime_images/Overview_img175.jpeg)
 
-
-
-{% seealso %}
-How to customize the appearance of the diagonal columns?
-{% endseealso %}
 
 ## DateHover event
 

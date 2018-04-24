@@ -21,7 +21,7 @@ Description</th></tr>
 <tr>
 <td>
 DrawWaitingCustomRender</td><td>
-This event can be handled to draw a custom waiting render. WaitingCustomRender must be set to 'True'.</td></tr>
+This event can be handled to draw a custom waiting render. WaitingCustomRender must be set to `true`.td></tr>
 <tr>
 <td>
 ValueChanged</td><td>
@@ -31,7 +31,7 @@ This event is handled to set the text of the ProgressBarAdv when the value chang
 
 ## DrawWaitingCustomRender event
 
-The CustomWaitingRender property indicates whether the waiting gradient will be replaced by another custom waiting render which is defaulted to segments. When this property is set to 'True', it enables the custom waiting render behavior which will fire this DrawWaitingCustomRender event.
+The CustomWaitingRender property indicates whether the waiting gradient will be replaced by another custom waiting render which is defaulted to segments. When this property is set to `true`, it enables the custom waiting render behavior which will fire this DrawWaitingCustomRender event.
 
 This event lets you do the desired drawing. If you perform custom drawing, you should specify that to the ProgressBarAdv (so that it does not perform it's default painting), by setting e.Handled = true. If no custom painting is done, then you do not have to set e.Handled value, and the ProgressBarAdv draws it's default segmented waiting gradient. The type of segments are specified through the ProgressFallBackStyle with the options Continuous, Tube, Gradient and System.
 
