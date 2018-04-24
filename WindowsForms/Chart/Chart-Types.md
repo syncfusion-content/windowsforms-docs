@@ -218,15 +218,15 @@ Unlimited</td><td>
 
 ## Line Charts
 
-Line charts typically use a line to connect the different data points in a series. Such lines are straight, splines or steps. Line charts are simpler and hence also let you visualize multiple series without overlapping like in a bar chart.
+Line charts typically use a line to connect the different data points in a series. Such lines are **straight, splines or steps**. Line charts are simpler and hence also let you visualize multiple series without overlapping like in a bar chart.
 
 Here are the different types of Line Charts.
 
 ### Line Chart
 
-Line Charts join points on a plot using straight lines showing trends in data at equal intervals. Line charts treats the input as non-numeric, categorical information, equally spaced along the x-axis. This is appropriate for categorical data, such as text labels, but can produce unexpected results when the X values consist of numbers.
+Line Charts join points on a plot using straight lines showing trends in data at equal intervals. Line charts treat the input as non-numeric, categorical information, equally spaced along the x-axis. This is appropriate for categorical data, such as text labels, but can produce unexpected results when the X values consist of numbers.
 
-When rendered in 3D, the plot looks like a ribbon and hence such types are also referred to as Ribbon or Strip Charts.
+When rendered in 3D, the plot looks like a ribbon and hence such types are also referred to as **Ribbon or Strip Charts**.
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed. 
 
@@ -289,7 +289,7 @@ Me.chartControl1.Series.Add(series)
 
 Spline Chart is similar to a Line Chart except that it connects the different data points using splines instead of straight lines.
 
-When rendered in 3D, the plot looks like a ribbon and hence such types are also referred to as Ribbon or Strip Charts.
+When rendered in 3D, the plot looks like a ribbon and hence such types are also referred to as **Ribbon or Strip Charts**.
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed. 
 
@@ -364,7 +364,7 @@ Me.chartControl1.Series.Add (series)
 
 ### Rotated Spline Chart
 
-A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
+A Rotated Spline Chart is similar to an ordinary Spline Chart. The only difference is that, it would be rotated. It plots one or several series of data, and joins each series by smooth, rotated spline curves instead of straight lines.
 
 The following image shows a sample Rotated Spline Chart.
 
@@ -437,13 +437,13 @@ Step Line Charts use horizontal and vertical lines to connect data points result
 
 ### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One or More.
 
 Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.        
 
-Step Line series can be added to the chart using the following code.
+StepLine series can be added to the chart using the following code.
 
 {% tabs %}  
 
@@ -514,11 +514,11 @@ The following image shows a multi series Bar Chart.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Any chart type except Bar and Stacked Bar charts.
+Cannot be combined with - Any chart type except Bar and Stacked Bar charts.
 
 Bar series can be added to the chart using the following code.
 
@@ -581,7 +581,7 @@ The following image shows a sample Stacking Bar Chart.
 
 ### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - Two or More (Single series is rendered just as a bar).
 
@@ -665,13 +665,13 @@ This chart type displays multiple series of data as stacked Bars ensuring that t
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - Two or More.
 
-SupportMarker - No.
+MarkerSuppor - No.
 
-Cannot be Combined with - Any other chart types.
+Cannot be combined with - Any other chart types.
 
 {% tabs %}  
 
@@ -737,11 +737,11 @@ You could then use another series to represent the completed portion of the diff
 
 #### Chart Details
 
-Number of Y values per point – 2 (1st is beginning value and the 2nd is the ending value).
+Number of Y values per point - 2 (1st is beginning value and the 2nd is the ending value).
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar.
+Cannot be combined with - Pie, Bar, Polar, Radar.
 
 Gantt series can be added to the chart using the following code. 
 
@@ -803,11 +803,11 @@ The shape of the distribution conveys important information such as the probabil
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One or more.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar.
+Cannot be combined with - Pie, Bar, Polar, Radar.
 
 {% tabs %}  {% highlight c# %}
 
@@ -883,11 +883,11 @@ The Tornado chart is a bar chart which shows the variability of an output to sev
 
 #### Chart Details
 
-Number of Y values per point – 2.
+Number of Y values per point - 2.
 
 Number of Series - One or more.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar.
+Cannot be combined with - Pie, Bar, Polar, Radar.
 
 The Tornado series can be added to the chart using the following code.
 
@@ -976,7 +976,7 @@ Me.chartControl1.Series.Add(series2)
 
 Column Charts are among the most commonly used chart types. Displayed in vertical bars (called columns), they depict the different values of one or more items. Points from adjacent series are drawn as bars next to each other. They are ideal for showing the variations in the value of an item over time.
 
-A very similar bar type is the [Bar Charts](/windowsforms/chart/chart-types#bar-charts) type where the bars are rendered horizontal.
+A very similar to the [Bar Charts](/windowsforms/chart/chart-types#bar-charts) type where the bars are rendered horizontal.
 
 EssentialChart supports these different Column Charts.
 
@@ -992,11 +992,11 @@ The following image shows a multi series Column Chart.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Column series can be added to the chart using the following code.
 
@@ -1056,11 +1056,11 @@ The following figure shows a Column Range Chart.
 
 #### Chart Details
 
-Number of Y values per point – 2.
+Number of Y values per point - 2.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 The following code snippet illustrates this.
 
@@ -1120,11 +1120,11 @@ The following image shows a sample Stacking Column Chart.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - Two or More (A single series will render just like a bar chart).
 
-Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
+Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Stacking column series can be added to the chart using the following code. 
 
@@ -1206,13 +1206,13 @@ This chart type displays multiple series of data as stacked Columns ensuring tha
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - Two or More.
 
 SupportMarker – No.
 
-Cannot be Combined with - Doughnut, Pie, Bar, Stacked Bar charts, Polar, Radar, Pyramid, or Funnel.
+Cannot be combined with - Doughnut, Pie, Bar, Stacked Bar charts, Polar, Radar, Pyramid, or Funnel.
 
 {% tabs %}  
 
@@ -1288,11 +1288,11 @@ The following image shows a multi series Area Chart.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
+Cannot be combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
 
 An Area series can be added to the chart using the following code.
 
@@ -1428,11 +1428,11 @@ The following image shows a sample Stacking Area Chart.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Stacking area series can be added to the chart using the following code.
 
@@ -1517,7 +1517,7 @@ This chart type displays multiple series of data as stacked areas ensuring that 
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series – One.
 
@@ -1642,11 +1642,11 @@ The following image shows a sample Step Area Chart.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Step Area series can be added to the chart using the following code.
 
@@ -1705,17 +1705,19 @@ Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Rotate, 
 
 RangeArea chart is similar to the Area charts; the only difference is, we need to give two y values (Start & End). RangeArea chart will be rendered from the start value of the x axis(Lower bounds), to end value of the y axis(upper bounds) above, on the corresponding x axis values. 
 
-This chart type gives a clear look and it may be used in cases, where we have to display range of values, per single x point. For ex: if we have to display the range of temperature per day in a chart, RangeArea Chart will be the most convenient type of chart.
+This chart type gives a clear look and it may be used in cases, where we have to display range of values, per single x point. 
+
+For ex: if we have to display the range of temperature per day in a chart, RangeArea Chart will be the most convenient type of chart.
 
 ![](Chart-Types_images/Chart-Types_img20.jpeg)
 
 #### Chart Details
 
-Number of Y values per point – 2.
+Number of Y values per point - 2.
 
-Maximum Number of Series – Unlimited.
+Maximum Number of Series - Unlimited.
 
-Minimum Number of Series – 1.
+Minimum Number of Series - 1.
 
 Step Area series can be added to the chart using the following code.
 
@@ -1784,7 +1786,7 @@ Accumulation charts are typically single series charts representing the data as 
 
 ### Funnel Chart
 
-The Funnel chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Funnel chart can be viewed in 2D or 3D mode.
+The Funnel chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Funnel chart can be viewed in **2D or 3D mode**.
 
 Funnel charts are often used to represent stages in a sales process and show the amount of potential revenue for each stage. This type of chart can be useful also in identifying potential problem areas in an organization's sales processes. A funnel chart is similar to a stacked percent bar chart.
 
@@ -1800,11 +1802,11 @@ The following images are some sample Funnel Charts.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One.
 
-Cannot be Combined with - Any other chart types.
+Cannot be combined with - Any other chart types.
 
 {% tabs %}  
 
@@ -1855,7 +1857,7 @@ Border, DisplayText, DrawSeriesNameInDepth, FigureBase, FunnelMode, GapRatio, Hi
 
 ### Pyramid Chart
 
-Pyramid chart is similar to the funnel chart. It's often used for geographical purposes. The Pyramid Chart type displays the data, which when totaled will be 100%. This type of chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Pyramid chart can be viewed as 2D or 3D.
+Pyramid chart is similar to the funnel chart. It's often used for geographical purposes. The Pyramid Chart type displays the data, which when totaled will be 100%. This type of chart is a single series chart representing the data as portions of 100%, and this chart does not use any axes. Pyramid chart can be viewed as **2D or 3D**.
 
 The following images are some sample Pyramid Charts.
 
@@ -1869,11 +1871,11 @@ The following images are some sample Pyramid Charts.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One.
 
-Cannot be Combined with - Any other chart types.
+Cannot be combined with - Any other chart types.
 
 {% tabs %}  
 
@@ -1930,9 +1932,9 @@ More details on the corresponding chart types:
 
 ### Scatter Chart
 
-Scatter Charts, also known as XY Charts, are a plot of y values and x values along the two axes. The points are not joined together and can be customized using shapes or images to make them easily identifiable, usually independent of time.
+Scatter Charts, also known as XY Charts, are a plot of x values and y values along the two axes. The points are not joined together and can be customized using shapes or images to make them easily identifiable, usually independent of time.
 
-The scatter graph lets you plot data points based on two independent variables. The variable that we seek to predict is called the dependent variable or y-variable. The variable on which it depends is called the independent variable or the x-variable. Scatter graphs can chart multiple data sets, each represented by a different symbol and each having any number of data points.
+The scatter graph lets you plot data points based on two independent variables. The variable that we seek to predict is called the **dependent variable or y-variable**. The variable on which it depends is called the independent variable or the x-variable. Scatter graphs can chart multiple data sets, each represented by a different symbol and each having any number of data points.
 
 It is used to display numerical data, either discrete or continuous. Scatter charts are commonly used for visualizing scientific data. 
 
@@ -1942,11 +1944,11 @@ The following image shows a multi series Scatter Chart.
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Scatter series can be added to the chart using the following code.
 
@@ -2046,12 +2048,6 @@ series.Styles (2).Symbol.Shape = ChartSymbolShape.Cross
 
 DisplayText, DrawSeriesNameInDepth, LightAngle, LightColor, PhongAlpha, ScatterConnectType, ScatterSplineTension, ToolTip, ToolTipFormat, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
-{% seealso %}
-
-[Bubble Charts](/windowsforms/chart/chart-types#bubble-chart)
-
-{% endseealso %}
-
 ### Bubble Chart
 
 Bubble Chart is an extension of the Scatter Chart (or XY-chart) where each data marker is represented by a circle whose dimension forms a third variable. Consequently, bubble charts allow three-variable comparisons allowing for easy visualization of complex interdependencies that are not apparent in two-variable charts. Bubble charts are frequently used in market and product comparison studies.
@@ -2064,11 +2060,11 @@ The following image shows a multi series Bubble Chart.
 
 #### Chart Details
 
-Number of Y values per point – 2 (optional second value defines the size of the shape).
+Number of Y values per point - 2 (optional second value defines the size of the shape).
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Bubble series can be added to the chart using the following code.
 
@@ -2123,12 +2119,6 @@ Images, Spacing Between Series, FancyToolTip, Font, Interior, LegendItem, Name, 
 
 Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
-{% seealso %}
-
-[Scatter Chart](/windowsforms/chart/chart-types#scatter-chart)
-
-{% endseealso %}
-
 ## Financial Charts
 
 The following charts are a staple of analytical reports in the financial world. Financial data usually has more than one y value. For example, stock price charts should include high, low, open and close prices for a day. Such data needs to be appropriately rendered in the context of "stock market data". Also, besides actual values, trends in price movement need to be depicted visually.
@@ -2139,7 +2129,7 @@ Financial Chart types are supported in EssentialChart.
 
 ### Candle Chart
 
-A Candle chart displays stock information using the High, Low, Open and Close values. The Hi and Lo values are represented by the wick of a candle. The candle represents open and close values.
+A Candle chart displays stock information using the **High, Low, Open and Close values**. The Hi and Lo values are represented by the wick of a candle. The candle represents open and close values.
 
 The following image shows a CandleChart displaying a single series. 
 
@@ -2147,11 +2137,11 @@ The following image shows a CandleChart displaying a single series.
 
 ### Chart Details
 
-Number of Y values per point – 4 (High, Low, Open and Close respectively).
+Number of Y values per point - 4 (High, Low, Open and Close respectively).
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Candle series can be added to the chart using the following code.
 
@@ -2206,9 +2196,9 @@ ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendI
 
 Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
-### Hi Lo Chart
+### HiLo Chart
 
-Hi Lo Chart is a special kind of chart that is normally used in stock analysis. They are typically used to display error bars or the trading range of a stock for each period. 
+HiLo Chart is a special kind of chart that is normally used in stock analysis. They are typically used to display error bars or the trading range of a stock for each period. 
 
 The Hi Lo Chart expects two y values to be specified in the series. One value should represent the high and the other value should represent the low stock price for the period. This can be specified in any order.
 
@@ -2220,9 +2210,9 @@ Number of Y values per point – 2.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
-Hi Lo series can be added to the chart using the following code.
+HiLo series can be added to the chart using the following code.
 
 {% tabs %} 
 
@@ -2267,21 +2257,21 @@ Me.chartControl1.Series.Add(series)
 
 DisplayText, DrawErrorBars, DrawSeriesNameInDepth, ErrorBarsSymbolShape, PhongAlpha, Rotate, Spacing Between Series, ShadingMode, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
-### Hi Lo Open Close Chart
+### HiLo Open Close Chart
 
-Hi Lo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects four y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
+HiLo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects four y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
 
 ![](Chart-Types_images/Chart-Types_img33.jpeg)
 
 #### Chart Details
 
-Number of Y values per point – 4.
+Number of Y values per point - 4.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
+Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
-Hi Lo Open Close series can be added to the chart using the following code. 
+HiLo Open Close series can be added to the chart using the following code. 
 
 {% tabs %}  
 
@@ -2340,11 +2330,11 @@ The penetration of a prior column's high or low, by the latest closing price, al
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One.
 
-Cannot be Combined with - Pie, Bar.
+Cannot be combined with - Pie, Bar.
 
 Kagi series can be added to the chart using the following code. 
 
@@ -2453,11 +2443,11 @@ This chart requires two y values, the high value and the low value for the speci
 
 #### Chart Details
 
-Number of Y values per point – 2.
+Number of Y values per point - 2.
 
 Number of Series - One.
 
-Cannot be Combined with - Pie, Bar.
+Cannot be combined with - Pie, Bar.
 
 Point and Figure series can be added to the chart using the following code.
 
@@ -2516,9 +2506,9 @@ Me.chartControl1.Series.Add (series)
 
 ### Renko Chart
 
-Renko charting method is thought to have acquired its name from "renga" which is the Japanese word for bricks. Renko Charts were introduced by Steve Nison. Renko (Bricks) are drawn equal in size for a determined amount. A brick is drawn in the direction of the prior move only if prices move by a minimum amount. If prices change by the determined amount or more, a new brick is drawn. If prices change by less than the determined amount (specified by ReversalAmount), the new price is ignored. The default value of ReversalAmount is 1.
+Renko charting method is thought to have acquired its name from **renga** which is the Japanese word for bricks. Renko Charts were introduced by **Steve Nison**. Renko (Bricks) are drawn equal in size for a determined amount. A brick is drawn in the direction of the prior move only if prices move by a minimum amount. If prices change by the determined amount or more, a new brick is drawn. If prices change by less than the determined amount (specified by ReversalAmount), the new price is ignored. The default value of **ReversalAmount** is 1.
 
-If the new closing price penetrates the previous bricks closing price in the opposite direction a trend reversal highlighted by the change in color of the bricks happens. Use the PriceUpColor to indicate bullish trend and PriceDownColor to indicate bearish trend.
+If the new closing price penetrates the previous bricks closing price in the opposite direction a trend reversal highlighted by the change in color of the bricks happens. Use the **PriceUpColor** to indicate bullish trend and **PriceDownColor** to indicate bearish trend.
 
 Since a Renko chart isolates the underlying trends by filtering out the minor ups and downs, Renko charts are excellent in determining support and resistance levels.  
 
@@ -2526,11 +2516,11 @@ Since a Renko chart isolates the underlying trends by filtering out the minor up
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One.
 
-Cannot be Combined with - Pie, Bar.
+Cannot be combined with - Pie, Bar.
 
 Renko series can be added to the chart using the following code.
 
@@ -2594,11 +2584,11 @@ The ReversalAmount specifies the threshold amount by which the price should chan
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One.
 
-Cannot be Combined with - Pie, Bar.
+Cannot be combined with - Pie, Bar.
 
 Three Line Break series can be added to the chart using the following code.
 
@@ -2649,7 +2639,7 @@ Me.chartControl1.Series.Add (series)
 
 ### Box And Whisker Chart
 
-In 1977, John Tukey published an efficient method for displaying a five-number data summary. The graph is called a Box and Whisker plot (also known as BoxPlot) and summarizes the following statistical measures.
+In 1977, John Tukey published an efficient method for displaying a five-number data summary. The graph is called a **Box and Whisker plot (also known as BoxPlot)** and summarizes the following statistical measures.
 
 * median
 * upper and lower quartiles (75 percentile to 25 percentile)
@@ -2667,29 +2657,29 @@ The Box and Whisker plot is interpreted as follows.
 * In Normal Mode, if the median line within the box is not equidistant from the hinges, then the data is skewed. The ends of the vertical lines or "whiskers" indicate the minimum and maximum data values, unless outliers are present, in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range.
 * In Percentile Mode: [Set Series1.ConfigItems.BoxAndWhiskerItem.PercentileMode property to _true_], the ends of the vertical lines or "whiskers" will be decided by the Series1.ConfigItems.BoxAndWhiskerItem.Percentile property value. For example, if the 'Percentile' value is 0.15, then the minimum value will be the 15th percentile of the overall data set and the maximum value will be 85th percentile of the overall data set.
 
-N> 1. The percentile value should lie between 0.0 and 0.25.  
+N>1.The percentile value should lie between 0.0 and 0.25.  
 N>
-N> 2. It is not possible to set upper Percentile value. It is calculated automatically based on the Percentile value.
+N>2.It is not possible to set upper Percentile value. It is calculated automatically based on the Percentile value.
 N>
-N>  For example: Percentile = 0.15
+N>For example: Percentile = 0.15
 N>
-N> Upper Percentile = 1 - Percentile = 0.85.
+N>Upper Percentile = 1 - Percentile = 0.85.
 N>
-N> In Normal mode, Outliers are present in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range. But in Percentile mode, Outliers will be calculated based on the Percentile value.
+N>In Normal mode, Outliers are present in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range. But in Percentile mode, Outliers will be calculated based on the Percentile value.
 N>
-N> For example: Percentile = 0.15
+N>For example: Percentile = 0.15
 N>
-N> Outliers are present in which case the whiskers extend to minimum and maximum of 15th and 85th percentile of overall data set, respectively. If 'Percentile' value is Zero, then, there is no outliers in the Chart.
+N>Outliers are present in which case the whiskers extend to minimum and maximum of 15th and 85th percentile of overall data set, respectively. If 'Percentile' value is Zero, then, there is no outliers in the Chart.
 N>
-N> 3. The width of the Outliers can be adjusted by using this 'Series1.ConfigItems.BoxAndWhiskerItem.OutLierWidth' property. If it is zero, the width of the outlier will be calculated based on the data points range.
+N>3.The width of the Outliers can be adjusted by using this 'Series1.ConfigItems.BoxAndWhiskerItem.OutLierWidth' property. If it is zero, the width of the outlier will be calculated based on the data points range.
 
 #### Chart Details
 
-Number of Y values per point – 5 (minimum, lower quartile, median, upper quartile, maximum).
+Number of Y values per point - 5 (minimum, lower quartile, median, upper quartile, maximum).
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar.
+Cannot be combined with - Pie, Bar, Polar, Radar.
 
 Box and Whisker series can be added to the chart using the following code.
 
@@ -2766,11 +2756,11 @@ A Pie Chart renders y values as slices in a pie. These slices are rendered in pr
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One.
 
-Cannot be Combined with - Any other chart types.
+Cannot be combined with - Any other chart types.
 
 Pie series can be added to the chart using the following code.
 
@@ -2884,7 +2874,7 @@ Essential chart supports the implementation of Polar and Radar charts in the cha
 
 ### Polar Chart
 
-APolar Chart is a circular graph on which data is displayed, in terms of values and angles. The x values define the angles at which the data points will be plotted. The y value defines the distance of the data points from the center of the graph, with the center of the graph usually starting at 0.
+A Polar Chart is a circular graph on which data is displayed, in terms of values and angles. The x values define the angles at which the data points will be plotted. The y value defines the distance of the data points from the center of the graph, with the center of the graph usually starting at 0.
 
 It is a form of graph that allows a visual comparison between several quantitative or qualitative aspects of a situation and also allows a visual comparison between several situations that are drawn using the same axes (poles).
 
@@ -2894,11 +2884,13 @@ Polar charts supports plotting the axis values in the reverse direction / clockw
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One.
 
-Cannot be Combined with - Any other chart types.Polar series can be added to the chart using the following code.
+Cannot be combined with - Any other chart types.
+
+Polar series can be added to the chart using the following code.
 
 {% tabs %}  
 
@@ -2962,11 +2954,11 @@ Some scenarios where this chart type could be used
 
 #### Chart Details
 
-Number of Y values per point – 1.
+Number of Y values per point - 1.
 
 Number of Series - One.
 
-Cannot be Combined with - Any other chart types.
+Cannot be combined with - Any other chart types.
 
 Radar series can be added to the chart using the following code.
 
@@ -3039,7 +3031,7 @@ One can change an existing chart to a combination chart by selecting the data se
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Polar, Radar.
+Cannot be combined with - Pie, Bar, Polar, Radar.
 
 Combination series can be added to the chart using the following code.
 
@@ -3114,9 +3106,9 @@ A heat map chart is a graphical representation of data where the values taken by
 
 #### Chart Details
 
-Number of Y values per point – 2. 
+Number of Y values per point - 2. 
 
-Number of Series – One.
+Number of Series - One.
 
 Cannot be Combined with - Any other chart types.
 
