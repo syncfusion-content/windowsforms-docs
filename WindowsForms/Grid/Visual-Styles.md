@@ -16,6 +16,10 @@ The GridControl can be displayed with the different themes by using the [GridVis
 * Office2010Blue
 * Office2010Black
 * Office2010Silver
+* Office2016Black
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
 * Metro
 * SystemTheme
 
@@ -126,6 +130,65 @@ Me.gridControl1.MetroColorTable.ThumbNormal = Color.Blue
 ![](Visual-Syles_images/Visual-Syles_img3.jpeg)
 
 N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling) section.
+
+## Modifying Office2016 Colors
+Custom colors can be applied to the metro theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SetOffice2016ThemeStyle.html) method. It can be used to change the colors of Mouse hover, pressed and clicked colors of the Headers and the embedded cell controls of the GridControl.
+
+{% tabs %}
+{% highlight c# %}
+//Create GridOffice2016ThemeColors object for customizing the office 2016 visual style
+GridOffice2016ThemeColors style = new GridOffice2016ThemeColors();
+//Set custom colors to Office2016 Headers of the GridControl
+style.HeaderColor.NormalColor = Color.Bisque;
+style.HeaderColor.HoverColor = Color.MediumPurple;
+style.CheckBoxColor.BackColor = Color.Brown;
+//Set the back colors for the CheckBox,ComboBox,PushButton
+style.CheckBoxColor.BackColor = Color.Brown;
+style.ComboboxColor.NormalBackColor = Color.OrangeRed;
+style.PushButtonColor.NormalBackColor = Color.PaleGreen;
+//Apply Custom colors to the Office2016 visual style
+this.gridControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Colorful, style);
+{% endhighlight %}
+{% highlight vb %}
+'Create GridOffice2016ThemeColors object for customizing the office 2016 visual style
+Dim style As New GridOffice2016ThemeColors()
+'Set custom colors to Office2016Headers of the GridControl
+style.HeaderColor.NormalColor = Color.Bisque
+style.HeaderColor.HoverColor = Color.MediumPurple
+style.CheckBoxColor.BackColor = Color.Brown
+'Set the back colors for the CheckBox,ComboBox,PushButton
+style.CheckBoxColor.BackColor = Color.Brown
+style.ComboboxColor.NormalBackColor = Color.OrangeRed
+style.PushButtonColor.NormalBackColor = Color.PaleGreen
+'Apply Custom colors to the Office2016 visual style
+Me.gridControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Colorful, style)
+{% endhighlight %}
+{% endtabs %}
+![](Visual-Syles_images/Visual-Syles_img6.jpeg)
+
+### Modifying Office2016 Scrollbar Colors
+The Scrollbars of the Office2016 visual style can be customized by setting the any one of below respective property based on theme,
+ * Office2016ColorfulColorTable
+ * Office2016BlackColorTable
+ * Office2016WhiteColorTable
+ * Office2016DarkGrayColorTable
+ 
+{% tabs %}
+{% highlight c# %}
+//Used to set the custom colors to the Office2016 scrollbars
+ this.gridControl1.Office2016ColorfulColorTable .ScrollerBackground = Color.Aqua;
+ this.gridControl1.Office2016ColorfulColorTable.ArrowNormalBackGround = Color.Green;
+ this.gridControl1.Office2016ColorfulColorTable.ThumbNormal = Color.Blue;
+{% endhighlight %}
+{% highlight vb %}
+{% endhighlight %}
+'Used to set the custom colors to the Office2016 scrollbars
+ Me.gridControl1.Office2016ColorfulColorTable.ScrollerBackground = Color.Aqua
+ Me.gridControl1.Office2016ColorfulColorTable.ArrowNormalBackGround = Color.Green
+ Me.gridControl1.Office2016ColorfulColorTable.ThumbNormal = Color.Blue
+{% endtabs %}
+
+![](Visual-Syles_images/Visual-Syles_img7.jpeg)
 
 ### Apply Skins to the GridControl
 The more advanced themes along with the basic themes defined by GridVisualStyles can be added to the grid by using the [GridSkins](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins.html). It is available as an add-on feature in the [GridHelperClasses](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows.html) library. `GridSkins` depict the custom skin of `GridVisualStyles`. Currently, it comes with Vista skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the [ApplySkin](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridSkins~ApplySkin.html) method.
