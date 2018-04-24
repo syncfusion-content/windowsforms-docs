@@ -678,7 +678,7 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 **Custom**
 
- Linear Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the **VisualStyle** property as **Custom**.
+ Linear Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the VisualStyle property as Custom.
 
  **Steps to customize the theme in design time**
 
@@ -775,7 +775,7 @@ The appearance of the Linear Gauge can be customized by using the Interface `ILi
 
 To customize the appearance,
 
-1. Create a new custom renderer class and implement each of the members defined in `ILinearGaugeRenderer`.
+1. Create a new custom renderer class and implement each of the members defined in ILinearGaugeRenderer.
 2. Assign instance of your custom renderer to the `Renderer` property of Linear Gauge.
 
 Note: By default, Linear Gauge is painted by using its default renderer.
@@ -806,7 +806,7 @@ linearGauge1.Renderer = custom
 
 ### How to customize Linear Gauge appearance
 
-You can customize the appearance of the Linear Gauge by using its interface named `ILinearGaugeRenderer` and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
+You can customize the appearance of the Linear Gauge by using its interface named ILinearGaugeRenderer and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
 
 {% tabs %}
 

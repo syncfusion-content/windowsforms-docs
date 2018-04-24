@@ -30,12 +30,6 @@ A Sample which demonstrates the FlowLayout is available in the below sample inst
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-{% seealso %}
-
-[Creating a simple Layout.](/windowsforms/layoutmanagers/creating-a-simple-layout)
-
-{% endseealso %}
-
 ## Configuring FlowLayout
 
 ### Layout mode
@@ -337,12 +331,6 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildCon
 
 N> Refer[FlowLayout - Configuring Child Controls](#configuring-child-controls) topic to know about HAlign, VAlign and other options provided by the Constraints on flowLayout property.
 
-{% seealso %}
-
-[FlowLayout - Configuring Child Controls](#configuring-child-controls), [Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Enabling Constrained FlowLayout on a Container](#enabling-constrained-flowlayout-on-a-container), [Rearranging the Controls laid out by FlowLayout.](#rearranging-the-controls-laid-out-by-flowlayout)
-
-{% endseealso %}
-
 ## Configuring Child controls
 
 ### Constraints on FlowLayout
@@ -375,7 +363,7 @@ The alignment of the Child controls that have been placed within a row can be se
 
 When the alignment is set to 'Justify', any extra space will be equally distributed across the other Child controls that have been justified differently within that same row. However, when there is a lack of sufficient space, the justified Child controls are shrunk proportionally based on their minimum size and preferred size settings (specifically, the difference between the two sizes).
 
-N> The Alignment property should be set to 'True' for the above properties to take effect.
+N> The Alignment property should be set to `true` for the above properties to take effect.
 
 ![](FlowLayout_images/FlowLayout_img1.png) 
 
@@ -396,7 +384,7 @@ Description</th></tr>
 <tr>
 <td>
 Active</td><td>
-Specifies whether the Child control should participate in the layout. The default value is set to 'True'.</td></tr>
+Specifies whether the Child control should participate in the layout. The default value is set to `true`.</td></tr>
 </table>
 
 	
@@ -416,7 +404,7 @@ Description</th></tr>
 <tr>
 <td>
 NewLine</td><td>
-Specifies whether the Child control should participate in the layout. The default value is set to 'False'.</td></tr>
+Specifies whether the Child control should participate in the layout. The default value is set to `false`.</td></tr>
 </table>
 
 	
@@ -434,11 +422,11 @@ Description</th></tr>
 <tr>
 <td>
 ProportionalColWidth</td><td>
-Specifies if proportional column widths should be used in the vertical layout. The default value is set to 'False'.</td></tr>
+Specifies if proportional column widths should be used in the vertical layout. The default value is set to `false`.</td></tr>
 <tr>
 <td>
 ProportionalRowHeight</td><td>
-Specifies if proportional row heights should be used in the horizontal layout. The default value is set to 'False'.</td></tr>
+Specifies if proportional row heights should be used in the horizontal layout. The default value is set to `false`.</td></tr>
 </table>
 
 
@@ -494,12 +482,6 @@ Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.Fl
 
 {% endtabs %}
 
-{% seealso %}
-
-[Configuring FlowLayout](/windowsforms/layoutmanagers/creating-a-simple-layout#configuring-layout-manager), [Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Enabling Constrained FlowLayout on a Container](#enabling-constrained-flowlayout-on-a-container), [Rearranging the Controls laid out by FlowLayout](#rearranging-the-controls-laid-out-by-flowlayout), [Child Control Settings.](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings)
-
-{% endseealso %}
-
 ## Centering the Child controls horizontally and vertically
 
 This topic illustrates how to center the Child controls both vertically and horizontally using the Child constraints.
@@ -508,7 +490,7 @@ This topic illustrates how to center the Child controls both vertically and hori
 
 N> Constraints need to be used because the Child controls will otherwise be centered either vertically or horizontally based on whether the layout mode is 'Vertical' or 'Horizontal'.
 
-When the layout mode is 'Horizontal', set the HAlign property to 'Center' and ProportionalRowHeight property to 'True' in the constraints for all the Child controls. This will center the Child controls vertically and horizontally as shown.
+When the layout mode is 'Horizontal', set the HAlign property to 'Center' and ProportionalRowHeight property to `true` in the constraints for all the Child controls. This will center the Child controls vertically and horizontally as shown.
 
 {% tabs %}
 
@@ -536,19 +518,11 @@ Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.Fl
 
 
 
-When the ProportionalRowHeight property is set to 'True', any extra space at the bottom will be equally distributed among all the available rows, thereby increasing the logical height of the rows. The Child controls within these rows will then vertically align to the center of the row (since VAlign property is set to'Center', by default), thereby resulting in the layout seen above.
+When the ProportionalRowHeight property is set to `true`, any extra space at the bottom will be equally distributed among all the available rows, thereby increasing the logical height of the rows. The Child controls within these rows will then vertically align to the center of the row (since VAlign property is set to'Center', by default), thereby resulting in the layout seen above.
 
 When resized to a smaller width, two rows are created resulting in the layout shown below.
 
 ![](FlowLayout_images/FlowLayout_img15.jpeg)
-
-
-
-
-{% seealso %}
-Configuring FlowLayout, FlowLayout - Configuring Child Controls, Enabling Constrained FlowLayout on a Container.
-{% endseealso %}
-
 
 
 ## Enabling constrained FlowLayout on a container
@@ -677,7 +651,7 @@ Steps to achieve the above layout and behavior are described below.
 
    {% endtabs %}
 
-2. Add one auto label for each control and set the auto label's LabeledControl property to the corresponding control. Also, change the Text property of the auto label control appropriately and set the AutoSize property to 'True'. 
+2. Add one auto label for each control and set the auto label's LabeledControl property to the corresponding control. Also, change the Text property of the auto label control appropriately and set the AutoSize property to `true`.
 
     {% tabs %}
 
@@ -893,7 +867,7 @@ Steps to achieve the above layout and behavior are described below.
    * Select the First Name textbox and browse to the extended Constraints on flowLayout property. Set the HAlign property to 'Justify', so that this control's width will be resized to fit any available empty horizontal space in the row. This also requires that you specify an appropriate preferred size for the control, such as (100, 20).
    * The Middle Initial textbox needs to be left aligned and not justified. This is the default constraint setting, so we don't need to make any changes to it's constraints.
    * Select the Last Name textbox and specify the same constraints as the 'First Name'textbox.
-   * The Address textbox should always begin in a new row, so set the NewLine property to 'True' in it's constraints. Also, set the HAlign property to 'Justify' and also provide a preferred size.
+   * The Address textbox should always begin in a new row, so set the NewLine property to `true` in it's constraints. Also, set the HAlign property to 'Justify' and also provide a preferred size.
    * The State combobox and Zip textbox controls can also be left with the default constraints.
 
 
@@ -949,7 +923,7 @@ Steps to achieve the above layout and behavior are described below.
 
    {% endtabs %}
 
-5. The panel itself should increase or decrease in width when the number of rows in the layout increases or decreases. To get this behavior, set the FlowLayout's AutoHeight property to 'True'.
+5. The panel itself should increase or decrease in width when the number of rows in the layout increases or decreases. To get this behavior, set the FlowLayout's AutoHeight property to `true`.
    
    {% tabs %}
 
@@ -996,11 +970,6 @@ The FlowLayout will always treat the 'AutoLabel-LabeledControl' pair as a unit. 
 
 
 N> Refer to AutoLabel under Editors Package for more details.
-
-{% seealso %}
-[Configuring FlowLayout](#configuring-flowlayout), [FlowLayout - Configuring Child Controls](#configuring-child-controls), [Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically)
-{% endseealso %}
-
 
 ## Rearranging the controls laid out by FlowLayout
 
@@ -1135,7 +1104,9 @@ End Sub
 
 
 {% seealso %}
-[Rearranging the Controls laid out by GridLayout](/windowsforms/layoutmanagers/gridlayout#rearranging-the-controls-laid-out-by-gridlayout), [Rearranging the Controls laid out by GridBagLayout](/windowsforms/layoutmanagers/gridbaglayout#rearranging-the-controls-laid-out-by-gridbaglayout)
+
+[Creating a simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Child Control Settings](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings),[Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Rearranging the Controls laid out by GridLayout](/windowsforms/layoutmanagers/gridlayout#rearranging-the-controls-laid-out-by-gridlayout), [Rearranging the Controls laid out by GridBagLayout.](/windowsforms/layoutmanagers/gridbaglayout#rearranging-the-controls-laid-out-by-gridbaglayout)
+
 {% endseealso %}
 
 

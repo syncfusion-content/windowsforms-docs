@@ -158,7 +158,7 @@ The HTMLUI control can be used for displaying sophisticated user interfaces. HTM
 
 3. Add a new HTML document to the Windows Forms project. Edit the HTML document to define the user interface. In this case, you will have an HTML table with 3 rows and 1 column.
 
-
+   {% tabs %}
 
    {% highlight HTML %}
 
@@ -224,11 +224,15 @@ The HTMLUI control can be used for displaying sophisticated user interfaces. HTM
 
    {% endhighlight %}
 
+   {% endtabs %}
+
 4. As shown in the HTML document above, a textbox, a text area and a button control has been added in the HTML document. The objective is to create an user interface by adding a Click event to the button element and on clicking the button, the text controls are made to display some text.
 
 
 
 5. The LoadFinished event is executed when the HTML document is loaded in the HTMLUI control. Add a handler for the LoadFinished event of the HTMLUI control. Access the HTML elements inside the managed code with objects created for each element as defined in the HTMLUI namespace.
+
+   {% tabs %}
 
    {% highlight C# %}
 
@@ -290,6 +294,8 @@ The HTMLUI control can be used for displaying sophisticated user interfaces. HTM
 
    {% endhighlight %}
 
+   {% endtabs %}
+
 
 
 6. Now, run the sample which displays the text on clicking the button as shown below.
@@ -305,6 +311,8 @@ The HTMLUI control can be used for displaying sophisticated user interfaces. HTM
 To create and display custom controls:
 
 1. Add the Custom tags in the HTML document to display custom Windows Forms controls. In this case, a MaskedEditBox, MonthCalendar, and DataGrid will be displayed in each of the cells in the HTML Table.
+
+   {% tabs %}
 
    {% highlight HTML %}
 
@@ -378,6 +386,8 @@ To create and display custom controls:
 
    {% endhighlight %}
 
+   {% endtabs %}
+
    Note the custom tags masked edit box, month calendar, and datagrid. These tags do not have any relation to the name of the control type they represent. Set the desired size of the custom control by setting the width and height attributes.
 
    In the previous step, three custom controls were defined as part of the HTMLUI interface. The actual Windows Forms controls that represent these definitions have to be added to the form.
@@ -399,6 +409,7 @@ To create and display custom controls:
 
    This step associates the Windows Forms controls on the form with controls defined in the HTML. This is done in the PreRenderDocument event handler of the HTMLUI control. This event is raised before the control renders the HTML elements (after it has parsed the HTML document into HTML elements).
 
+   {% tabs %}
 
    {% highlight C# %}
 
@@ -446,8 +457,11 @@ To create and display custom controls:
 
    {% endhighlight %}
 
+   {% endtabs %}
+
 5. Add a handler for the Load event and load the HTML document resource into the HTMLUI control.
 
+   {% tabs %}
 
    {% highlight C# %}
 
@@ -512,6 +526,8 @@ To create and display custom controls:
 		}
 
    {% endhighlight %}
+
+   {% endtabs %}
 		
 		
 ![](Getting-Started_images/Getting-Started_img7.jpeg)

@@ -449,7 +449,7 @@ End Sub
 
 ## CommandBarWrapping event
 
-This event is raised when the CommandBar is resized with either the DockModeWrapping or the FloatModeWrapping properties set to 'True'. This event can be handled to suggest suitable wrap size hints for the CommandBar.
+This event is raised when the CommandBar is resized with either the DockModeWrapping or the FloatModeWrapping properties set to `true`. This event can be handled to suggest suitable wrap size hints for the CommandBar.
 
 The event handler receives an argument of type CommandBarWrappingEventArgs containing data related to this event. The following CommandBarWrappingEventArgs members provide information specific to this event.
 
