@@ -101,7 +101,7 @@ Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Sets the visual style for the scrollbars. The visual styles supported are,Classic,WindowsXP,Office2007,Office2007Generic and Office2016.</td></tr>
+Sets the visual style for the scrollbars. Supported visual styles are Classic, WindowsXP, Office2007, Office2007Generic, and Office2016.</td></tr>
 <tr>
 <td>
 OfficeColorSchemes</td><td>
@@ -111,7 +111,7 @@ Sets the office color schemes for the scrollbars when VisualStyle is set to Offi
 Office2016ColorSchemes
 </td>
 <td>
-Sets the office2016 color schemes for the scrollbars when VisualStyle is set to Office2016 style. The color schemes are Black, White, Colorful and DarkGray.
+Sets the office2016 color schemes for the scrollbars when setting the VisualStyle to Office2016 style. The color schemes are Black, White, Colorful, and DarkGray.
 </td>
 </tr>
 </table>
