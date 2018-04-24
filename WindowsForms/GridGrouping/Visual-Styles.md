@@ -159,7 +159,7 @@ N> The scrollbar customization is briefly discussed in the [Scrolling](http://he
 Custom colors can be applied to the office2016 theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SetOffice2016ThemeStyle.html) method. It can be used to change the colors of mouse hover, pressed and clicked colors of the Headers and the embedded cell controls of the GridGroupingControl.
 {% tabs %}
 {% highlight c# %}
-//Create GridOffice2016ThemeColors object for customizing the office 2016 visual style
+//Create GridOffice2016ThemeColors object for customizing the Office2016 visual style
 GridOffice2016ThemeColors office2016Colors = new GridOffice2016ThemeColors();
 
 //Set custom colors to Office2016 Headers of the GridGroupingControl
@@ -175,7 +175,7 @@ office2016Colors.CheckBoxColor.BackColor = Color.FromArgb(251, 157, 35);
 this.gridGroupingControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Colorful, office2016Colors);
 {% endhighlight %}
 {% highlight vb %}
-'Create GridOffice2016ThemeColors object for customizing the office 2016 visual style
+'Create GridOffice2016ThemeColors object for customizing the Office2016 visual style
 Dim office2016Colors As New GridOffice2016ThemeColors()
 
 'Set custom colors to Headers of the GridGroupingControl
