@@ -669,7 +669,7 @@ Number of Y values per point - 1.
 
 Number of Series - Two or More.
 
-MarkerSuppor - No.
+MarkerSupport - No.
 
 Cannot be combined with - Any other chart types.
 
