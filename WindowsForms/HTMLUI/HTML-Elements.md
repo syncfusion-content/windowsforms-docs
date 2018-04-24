@@ -172,7 +172,7 @@ The A element is used in creating links to another document or in creating bookm
 
 ### Properties
 
-* IsVisited:Gets a bool value (either true / false) indicating whether the link is visited or not. This may be used in changing the color of the links visited.
+* IsVisited:Gets a bool value (either `true`/`false`) indicating whether the link is visited or not. This may be used in changing the color of the links visited.
 * HoverFormat:Gets the format of the A element when the user hovers the mouse pointer over the link.
 * VisitedFormat: Gets the format of the A element visited recently.
 
@@ -346,9 +346,9 @@ The IMG element is used in defining and applying an image in the document wherev
 
 
 
-Properties
+### Properties
 
-* Image: Gets the bitmap of the image that represents this element
+* Image: Gets the bitmap of the image that represents this element.
 
 {% tabs %}
 

@@ -11,6 +11,8 @@ documentation: ug
 
 Forms are the containers for placing the elements in a HTML document. HTMLUI supports the usage of forms for developing advanced and decorative pages in the user's application.
 
+{% tabs %}
+
 {% highlight HTML %}
 
 <html>
@@ -32,6 +34,8 @@ Forms are the containers for placing the elements in a HTML document. HTMLUI sup
 </html>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Loading the above HTML document into HTMLUI creates a Form with the three controls specified as shown below.
 

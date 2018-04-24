@@ -81,6 +81,6 @@ Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextB
 
 
 
-A Sample which demonstrates the Style Settings of FolderBrowser is available in the below sample installation path.
+A sample which demonstrates the Style Settings of FolderBrowser is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_

@@ -227,11 +227,6 @@ Me.barItem3.Text = "Syncfusion Sales"
 
 
 
-{% seealso %}
-
-[Pop-up menu on right-clicking the CommandBar](#popup-menu-on-right-clicking-the-commandbar)
-
-{% endseealso %}
 
 ## Pop-up menu on right-clicking the CommandBar
 
@@ -442,6 +437,7 @@ Me.barItem3.Text = "Syncfusion Sales"
 
 {% seealso %}
 
-[Pop-up menu on clicking the drop-down button](#popup-menu-on-clicking-the-dropdown-button)
+[Pop-up menu on clicking the drop-down button](#popup-menu-on-clicking-the-dropdown-button) and [Pop-up menu on right-clicking the CommandBar](#popup-menu-on-right-clicking-the-commandbar).
+
 
 {% endseealso %}
