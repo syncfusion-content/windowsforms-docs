@@ -12,7 +12,7 @@ documentation: ug
 
 This section will provide a step by step procedure to create a toolbar with menu items added by using the designer and by using programming approach in .NET application.
 
-### Through designer
+## Through designer
 
 This section deals with creating bar items and adding them to the toolbar which are demonstrated in the following topics.
 
@@ -97,7 +97,7 @@ If this is a ChildFrameBarManager, all the toolbars (including the main menu) wi
 ![](Overview_images/Overview_img21.jpeg)
 
 
-### Through code
+## Through code
 
 This section deals with the programmatic approach of creating and populating the toolbar with menus.
 

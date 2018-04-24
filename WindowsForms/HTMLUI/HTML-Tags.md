@@ -879,6 +879,8 @@ The Link tag is used to link another document to the current HTML document. This
 * type: Specifies the type of the document to be linked, either text or image.
 * href: Specifies the location of the document to be linked to the current document.
 
+{% tabs %}
+
 {% highlight HTML %}
 
 
@@ -898,6 +900,8 @@ File Location and Name:  C:\MyProjects\link\link.html
 </html>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 {% tabs %}
 
@@ -1156,6 +1160,8 @@ The Script tag is used to include executable user defined code snippets inside t
 
 HTMLUI supports C#, Visual Basic and JavaScript. The language attribute is used to choose the script language from the supported types.
 
+{% tabs %}
+
 {% highlight HTML %}
 
 
@@ -1253,6 +1259,8 @@ public class Script
 </html>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## SELECT - Select tag
 
@@ -1372,7 +1380,7 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
 1. By specifying the Tag Names: Specifies styles by writing CSS styles with the tag name inside the Style tag.
 
-
+   {% tabs %}
 
    {% highlight VB %}
 
@@ -1382,7 +1390,11 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
    {% endhighlight %}
 
-2. By specifying the Class Names to the Styles: Specifies styles with the help of the class names inside the Style tag
+   {% endtabs %}
+
+2. By specifying the Class Names to the Styles: Specifies styles with the help of the class names inside the Style tag.
+
+   {% tabs %}
 
    {% highlight HTML %}
    
@@ -1392,9 +1404,11 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
    {% endhighlight %}
 
+   {% endtabs %}
+
 3. By specifying ID Class Selectors: Specifies styles by writing styles with the unique id inside the Style tag, and assigning them to the HTML elements by using the id attribute.
 
-
+   {% tabs %}
 
    {% highlight HTML %}
 
@@ -1404,8 +1418,11 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
    {% endhighlight %}
 
+   {% endtabs %}
+
    Style tag in HTMLUI also supports the type attribute. The type attribute is optional and it specifies the type of the content in the HTML document.
 
+   {% tabs %}
 
    {% highlight HTML %}
 
@@ -1442,6 +1459,8 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 		</html>
 
    {% endhighlight %}
+
+   {% endtabs %}
 
    {% tabs %}
 

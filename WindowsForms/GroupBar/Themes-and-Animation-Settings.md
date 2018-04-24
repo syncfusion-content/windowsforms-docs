@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Themes and animation settings
 
-Themes define the look and feel of the whole GroupBar. It also changes the behavior of the GroupBar completely. Themes can be enabled by setting the ThemesEnabled property of GroupBar to True.
+Themes define the look and feel of the whole GroupBar. It also changes the behavior of the GroupBar completely. Themes can be enabled by setting the ThemesEnabled property of GroupBar to `true`.
 
 {% tabs %}
 
@@ -27,14 +27,14 @@ Me.groupBar1.ThemesEnabled = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img37.jpeg) 
+![](Overview_images/Overview_img37.jpeg)
 
 Themed look of Office 2007 Style GroupBar
 {:.caption}
 
 ## Animation settings
 
-Switching between the different GroupBar Items can be animated by setting the AnimatedSelection property to True.
+Switching between the different GroupBar Items can be animated by setting the AnimatedSelection property to `true`.
 
 {% tabs %}
 

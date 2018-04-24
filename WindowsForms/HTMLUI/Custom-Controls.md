@@ -17,7 +17,7 @@ The assembly attribute refers to the namespace where the control is located. The
 
 An HTML document containing custom controls is shown below.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -46,6 +46,8 @@ NumericUpDown:<CUSTOM class="NumericUpDown" assembly="System.Windows.Forms"></CU
 </html>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The custom controls defined in the HTML document are interfaced with their equivalent Windows Forms control with the help of the PreRenderDocument event. The PreRenderDocument event occurs at a time when the HTML document is being loaded into the HTMLUI control, but the elements are not yet positioned.
 

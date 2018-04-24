@@ -21,7 +21,7 @@ The support for style sheets is enabled in HTMLUI. This lets the user to define 
 
 External style sheets are linked to the file through the Link tag. While the internal style sheets are applied with the help of the Style tag inside the head section, inline style sheets are applied as the values of the style attributes of the specific HTML element.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -46,6 +46,8 @@ External style sheets are linked to the file through the Link tag. While the int
 </html>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 HTMLUI also supports updation of styles to the HTML document at run time. This can be done in two modes, either by changing the value of the style attribute for internal style or the class attribute for the inline style sheet.
 
@@ -450,6 +452,7 @@ htmluiControl.LoadHTML(@"C:\MyProjects\StyleSheets\idClass.html")
 
 The HTMLUI control supports comments inside the cascading style sheet. The comments helps the developer to explain his ideas behind the styles and also help the user to understand the functionality of the styles. A CSS comment begins with '/*' and ends with '*/' (For eg., /*This is a comment*/). The comments are not visible in the browser at run time.
 
+{% tabs %}
 
 {% highlight CSS %}
 
@@ -467,6 +470,8 @@ div{color: red}
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Supported CSS attributes
 
  The following attributes are supported in HTMLUI for the cascading style sheet definition.
@@ -482,6 +487,8 @@ The background attribute of CSS helps the user to set the back ground properties
 #### Background image
 
 The background-image property is used to set an image as the background of the HTML element.
+
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -511,11 +518,13 @@ The background-image property is used to set an image as the background of the H
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Background color
 
 The background-color property is used to set a background color for a HTML element.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -545,6 +554,8 @@ The background-color property is used to set a background color for a HTML eleme
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Background repeat
 
 The background-repeat property repeats the background that is set for the HTML element, horizontally or vertically.
@@ -556,7 +567,7 @@ The background-repeat property repeats the background that is set for the HTML e
 * repeat: Repeats the background image both horizontally and vertically.
 * no-repeat: Fixes the background image at the top-left corner of the element and does not repeat the image display.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -586,6 +597,8 @@ body{background-image: url(sync.gif); background-repeat: repeat-x;}
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ###  Text – CSS
 
 The text attribute in CSS helps the user to set properties for his text display. With these properties the appearance of the text can be modified according to the user’s requirements.
@@ -593,6 +606,8 @@ The text attribute in CSS helps the user to set properties for his text display.
 #### Text color
 
 The color attribute is used to apply a specific color to the rendered text.
+
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -620,11 +635,13 @@ p {color: blue}
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Text align
 
 The text-align attribute is used to align the text inside an element to the specified horizontal direction.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -648,11 +665,13 @@ The text-align attribute is used to align the text inside an element to the spec
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Text decoration
 
 The text-decoration attribute is used to decorate a text. The HTMLUI control supports the Underline and the None style values for the text decoration attribute.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -672,6 +691,8 @@ The text-decoration attribute is used to decorate a text. The HTMLUI control sup
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Font – CSS
 
 The font attribute is used to define the font specification for a HTML element in the HTMLUI. With the CSS font specification, the user can create good presentation applications in HTMLUI.
@@ -682,7 +703,7 @@ The HTMLUI control supports the following font attributes for the HTML elements.
 
 The font-family attribute is used to specify a font for the text that is to be displayed in the specific HTML element.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -703,12 +724,14 @@ The font-family attribute is used to specify a font for the text that is to be d
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 #### Font size
 
 The font-size attribute is used to specify a size for the rendered text that is to be displayed in the HTMLUI control.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -729,11 +752,13 @@ The font-size attribute is used to specify a size for the rendered text that is 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Font style
 
 The font-style attribute is used to format the specified text with the given styles. HTMLUI supports the normal and italic styles for the rendered text inside the HTML element.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -753,11 +778,13 @@ The font-style attribute is used to format the specified text with the given sty
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Font weight
 
 The font-weight attribute is used to specify the thickness or boldness of the rendered text. HTMLUI supports the normal and bold font-weight that is associated with the CSS text rendering.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -777,6 +804,8 @@ The font-weight attribute is used to specify the thickness or boldness of the re
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ###  Border – CSS
 
 The border attribute is used to specify the border properties for the rendered table element through CSS. The color and thickness of the border can also be specified through the border attribute. HTMLUI also supports applying border properties to the four sides of the table border independently.
@@ -791,7 +820,7 @@ The border attribute is used to specify the border properties for the rendered t
 * border-left-color: Specifies the color for the left border of the rendered table.
 * border-right-color: Specifies the color for the right border of the rendered table.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -819,6 +848,8 @@ table{ border-left-color: blue;  border-right-color: green; border-top-color: re
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Border width
 
 
@@ -829,7 +860,7 @@ table{ border-left-color: blue;  border-right-color: green; border-top-color: re
 * border-left-width: Specifies the thickness for the left border of the rendered table.
 * border-right-width: Specifies the thickness for the right border of the rendered table.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -857,11 +888,13 @@ table{border-left-width: 3;  border-right-width: 5; border-top-width: 6; border-
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Padding – CSS
 
 The CSS padding attribute in HTMLUI is used to define a fixed space between the element's border and its contents. The top, right, bottom and left padding attributes can be specified independently.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -888,6 +921,8 @@ table{padding-left: 25;  padding-right: 50; padding-top: 25; padding-bottom: 50}
 </html>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 #### Padding
 
@@ -922,6 +957,8 @@ The Dimension properties are used to specify the size for an HTML element.
 
 The width of an element in HTMLUI can be mentioned in terms of units.
 
+{% tabs %}
+
 {% highlight HTML %}
 
 <html>
@@ -942,6 +979,8 @@ The width of an element in HTMLUI can be mentioned in terms of units.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Classification - CSS
 
 The CSS Classification properties determine the display of an element in the HTMLUI control. The HTMLUI control supports the following classification property that determines how and where to display a HTML element.
@@ -950,7 +989,7 @@ The CSS Classification properties determine the display of an element in the HTM
 
 * cursor: Specifies the cursor that is to be displayed when the mouse pointer is over the specified HTML element.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -969,13 +1008,15 @@ The CSS Classification properties determine the display of an element in the HTM
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Positioning - CSS
 
 The positioning attribute is used to determine the position of the HTML element that is to be displayed in the HTMLUI control.
 
 * vertical-align: Specifies the vertical alignment of the element during display.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -995,6 +1036,8 @@ The positioning attribute is used to determine the position of the HTML element 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Pseudo - Classes
 
 The Pseudo-Classes are used to add special effects to the HTML hyperlink element display. For understanding this case clearly in HTMLUI, let us define a general case, where the link should change its appearance when a mouse pointer is moved over it.
@@ -1010,7 +1053,7 @@ The HTMLUI control supports the link and the hover classes in order to display t
 
 The following sample shows how different properties can be set for the hyperlink element by using the pseudo-classes.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -1060,6 +1103,8 @@ The following sample shows how different properties can be set for the hyperlink
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ##  HTMLUIUseCSS sample
 
 This sample demonstrates the implementation of External Style Sheets in HTMLUI.
@@ -1105,7 +1150,7 @@ The HTMLUI control allows the following modes of changing the background color t
 
 The following HTML coding shows the different methods of changing the background color that HTMLUI control supports, leaving it to the user to choose the best among the various options as per the requirements.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -1130,6 +1175,8 @@ The following HTML coding shows the different methods of changing the background
 </html>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following figure shows the back color of the HTML document customized by using HTMLUI.
 
