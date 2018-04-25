@@ -184,11 +184,11 @@ The scrollbars of the Office2016 visual style can be customized by setting any o
  this.gridControl1.Office2016ColorfulColorTable.ThumbNormal = Color.Blue;
 {% endhighlight %}
 {% highlight vb %}
-{% endhighlight %}
 'Used to set the custom colors to the Office2016 scrollbars
  Me.gridControl1.Office2016ColorfulColorTable.ScrollerBackground = Color.Aqua
  Me.gridControl1.Office2016ColorfulColorTable.ArrowNormalBackGround = Color.Green
  Me.gridControl1.Office2016ColorfulColorTable.ThumbNormal = Color.Blue
+{% endhighlight %}
 {% endtabs %}
 
 ![](Visual-Syles_images/Visual-Syles_img7.jpeg)
