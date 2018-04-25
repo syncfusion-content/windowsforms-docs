@@ -15,7 +15,7 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 
 * Create a Windows Forms project in Visual Studio.
 
-* Find NavigationDrawer by typing it in the search box.
+* Find NavigationDrawer by typing the name of the NavigationDrawer in search box..
 
 ![](Getting-Started_images/icon.png)
 
