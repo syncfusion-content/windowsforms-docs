@@ -50,6 +50,29 @@ The data can be searched with the case-sensitivity by setting the [SearchControl
 
 ![](Search_images/Search_img3.png)
 
+### Searching wrap text
+
+The wrap text can be searched by using the [SearchController.Search](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~Search.html) method.
+
+{% tabs %}
+{% highlight c# %}
+//Enable text wrapping for the column.
+this.sfDataGrid1.Columns[2].AllowTextWrapping = true;
+
+//Search and highlight the search text in SfDataGrid.
+this.sfDataGrid1.SearchController.Search("cr");
+{% endhighlight %}
+{% highlight vb %}
+'Enable text wrapping for the column.
+Me.sfDataGrid1.Columns(2).AllowTextWrapping = True
+
+'Search and highlight the search text in SfDataGrid.
+Me.sfDataGrid1.SearchController.Search("cr")
+{% endhighlight %}
+{% endtabs %}
+
+![](Search_images/Search_img12.png)
+
 ### Changing Search Highlight Color
 The highlighting color of the search text can be changed by using the [SearchColor](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColor.html) property.
 {% tabs %}
