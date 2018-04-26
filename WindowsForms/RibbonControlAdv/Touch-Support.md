@@ -18,14 +18,14 @@ You can control touch mode settings of RibbonControlAdv control using the follow
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Type<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
-RibbonTouchModeEnabled<br/><br/></td><td>
-Boolean<br/><br/></td><td>
-Enabling the RibbonTouchModeEnabled property in RibbonControlAdv, increases the size according to Microsoft touch mode size. Disabling the property retains its original size.<br/><br/></td></tr>
+RibbonTouchModeEnabled</td><td>
+Boolean</td><td>
+Enabling the RibbonTouchModeEnabled property in RibbonControlAdv, increases the size according to Microsoft touch mode size. Disabling the property retains its original size</td></tr>
 </table>
 
 

@@ -7,41 +7,28 @@ control: TreeNavigator
 documentation: ug
 ---
 
-# How to prevent a TreeMenuItem from being selected?
+# How to Prevent a TreeMenuItem from being Selected
 
 You can use the following code examples to prevent an item from selecting a TreeMenuItem.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateChangingEventArgs args)
-
 {
-
-     if (args.NewValue.Text == "Windows Forms")
-
-         args.Cancel = true;
-
+    if (args.NewValue.Text == "Windows Forms")
+    args.Cancel = true;
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeNavigator1_SelectionChanging(sender As TreeNavigator, args As SelectionStateChangingEventArgs)
-
-     If (args.NewValue.Text =="Windows Forms")
-
-         args.Cancel = True
-
-     End If
-
+If (args.NewValue.Text =="Windows Forms")
+args.Cancel = True
+End If
 End Sub
 
 {% endhighlight %}
-
-
-
+{% endtabs %}

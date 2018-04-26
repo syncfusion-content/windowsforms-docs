@@ -28,12 +28,19 @@ Using the `Item` property, Items Collection Editor opens, which lets you add ite
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-BorderStyle<br/><br/></td><td>
-Sets the border style for the ToolStripGallery. The options are,<br/><br/>None (default) and<br/><br/>Single.<br/><br/></td></tr>
+BorderStyle</td><td>
+Sets the border style for the ToolStripGallery. The options are
+
+None (default)
+
+Single
+
+</td></tr>
+
 </table>
 
 ### Foreground Settings
@@ -41,16 +48,16 @@ Sets the border style for the ToolStripGallery. The options are,<br/><br/>None (
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-Font<br/><br/></td><td>
-Sets the font style for the display text.<br/><br/></td></tr>
+Font</td><td>
+Sets the font style for the display text.</td></tr>
 <tr>
 <td>
-ForeColor<br/><br/></td><td>
-Sets the fore color for the display text.<br/><br/></td></tr>
+ForeColor</td><td>
+Sets the fore color for the display text.</td></tr>
 </table>
 
 ### Scroller Settings
@@ -58,12 +65,18 @@ Sets the fore color for the display text.<br/><br/></td></tr>
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-ScrollerType<br/><br/></td><td>
-Sets the scroller type for the Gallery. The types available are,<br/><br/>StandardType and<br/><br/>CompactType.<br/><br/></td></tr>
+ScrollerType</td><td>
+Sets the scroller type for the Gallery. The types available are
+
+StandardType 
+
+CompactType
+
+</td></tr>
 </table>
 
 ![](Ribbon-Gallery_images/Ribbon-Gallery_img3.jpeg)
@@ -77,16 +90,16 @@ Sets the scroller type for the Gallery. The types available are,<br/><br/>Standa
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-RightToLeft<br/><br/></td><td>
-Indicates whether the item should right to left for RTL languages.<br/><br/></td></tr>
+RightToLeft</td><td>
+Indicates whether the item should right to left for RTL languages.</td></tr>
 <tr>
 <td>
-RightToLeftAutoMirrorImage<br/><br/></td><td>
-Specifies whether image should mirror when RightToLeft is enabled for the item.<br/><br/></td></tr>
+RightToLeftAutoMirrorImage</td><td>
+Specifies whether image should mirror when RightToLeft is enabled for the item.</td></tr>
 </table>
 
 ## Caption Settings
@@ -96,16 +109,16 @@ Caption for a ToolStripGallery can be visible by settings the `ShowCaption` prop
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-ShowCaption<br/><br/></td><td>
-Sets the visibility of the caption.<br/><br/></td></tr>
+ShowCaption></td><td>
+Sets the visibility of the caption</td></tr>
 <tr>
 <td>
-CaptionText<br/><br/></td><td>
-Sets the caption text.<br/><br/></td></tr>
+CaptionText</td><td>
+Sets the caption text.</td></tr>
 </table>
 {% tabs %}
 
@@ -136,12 +149,12 @@ ToolStripGallery lets you customize the ToolStrip items added to the Gallery usi
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-ItemBackColor<br/><br/></td><td>
-Sets the back color for the items.<br/><br/></td></tr>
+ItemBackColor</td><td>
+Sets the back color for the items</td></tr>
 </table>
 
 ### Style Settings
@@ -149,32 +162,50 @@ Sets the back color for the items.<br/><br/></td></tr>
 <table>
 <tr>
 <th>
-Property<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-ItemDisplayStyle<br/><br/></td><td>
-Sets the display style of the items. The options are,<br/><br/>Text, <br/><br/>Image and <br/><br/>ImageAndText.<br/><br/></td></tr>
+ItemDisplayStyle</td><td>
+Sets the display style of the items. The options are,Text
+
+Image 
+
+ImageAndText.
+
+</td></tr>
 <tr>
 <td>
-ItemTextImageRelation<br/><br/></td><td>
-Sets the text image relation of the items. The options are,<br/><br/>{{'____'| markdownify }}Overlay, <br/><br/>ImageAboveText, <br/><br/>TextAboveImage, <br/><br/>ImageBeforeText and<br/><br/>TextBeforeImage.<br/><br/></td></tr>
+ItemTextImageRelation
+
+</td><td>
+Sets the text image relation of the items. The options are
+
+{{'____'| markdownify }}Overlay, 
+
+ImageAboveText
+
+TextAboveImage
+
+ImageBeforeText 
+
+TextBeforeImage.</td></tr>
 <tr>
 <td>
-ItemImageSize<br/><br/></td><td>
-Sets the image size for the items.<br/><br/></td></tr>
+ItemImageSize</td><td>
+Sets the image size for the items.</td></tr>
 <tr>
 <td>
-ItemMargin<br/><br/></td><td>
-Sets margin for the items.<br/><br/></td></tr>
+ItemMargin</td><td>
+Sets margin for the items.</td></tr>
 <tr>
 <td>
-ItemPadding<br/><br/></td><td>
-Sets padding between the items.<br/><br/></td></tr>
+ItemPadding</td><td>
+Sets padding between the items.</td></tr>
 <tr>
 <td>
-ItemSize<br/><br/></td><td>
-Sets the Item size.<br/><br/></td></tr>
+ItemSize</td><td>
+Sets the Item size.</td></tr>
 </table>
 {% tabs %}
 

@@ -49,7 +49,7 @@ this.comboBoxAdv1.TextBox.ForeColor = Color.Red;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'TextBox appearance properties.   
 Me.comboBoxAdv1.TextBox.Text = "Simple text in ComboBoxAdv"

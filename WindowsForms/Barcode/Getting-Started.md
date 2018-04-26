@@ -1,45 +1,75 @@
 ---
 layout: post
-title: Getting Started | SfBarcode | Windows Forms | Syncfusion
-description: getting started
-platform: wpf
+title: Syncfusion Essential Windows Forms
+description: This section explains about the SfBarcode.
+platform: windowsforms
 control: SfBarcode
 documentation: ug
 ---
+# Getting Started 
+This section provides a quick overview for working with the barcode for WinForms.
 
-# Getting Started
-
-## Add Barcode control to an Application 
-
+## Assembly deployment
 The following assembly reference is required for deploying Barcode.
 
 {% highlight c# %}
 
-Namespace: Syncfusion.Windows.Forms.Barcode.SfBarcode
+Namespace: Syncfusion.Windows.Forms.Barcode
 
 Assembly: Syncfusion.SfBarcode.Windows
 
 {% endhighlight  %}
 
-To create the SfBarcode control in Visual Studio:
+## Creating application with SfBarcode
+In this walk through, users will create WinForms application that contains SfBarcode control.
 
-1. Create a new Windows Forms project. 
+### Creating the project
+Create new Windows Forms Project in Visual Studio to display SfBarcode.
 
-2. Drag the SfBarcode control from the Toolbox window to the Design View. An instance of the SfBarcode control is created in the Design view.
+### Adding control via Designer
+SfBarcode control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+![](Getting-Started_images/Getting-Started_img1.png)
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+### Adding control in Code
+In order to add control manually, do the below steps,
 
-   SfBarcode Control after Dragging to Design View
-   {:.caption}
+1) 	Add the below required assembly references to the project,
 
-## Text
+* 	Syncfusion.SfBarcode.Windows
 
-The text to be encoded can be set using the Text property. By default, this original text will be displayed at the bottom of the bar code. The location of the text can be toggled between top and bottom using TextLocation property. The horizontal alignment of the text can be set using TextAlignment. The text brush and other various font customization can also be done using the built-in font properties. Optionally, the user can hide the barcode text by setting the DisplayText property to false.
+2)	Create the SfBarcode control instance and add it to the Form
 
+{% tabs %}
 {% highlight c# %}
+using Syncfusion.Windows.Forms.Barcode;
 
-            this.sfBarcode1.Text = "http://www.google.com";
-            this.sfBarcode1.DisplayText = true;
-            this.sfBarcode1.Symbology = Syncfusion.Windows.Forms.Barcode.BarcodeSymbolType.QRBarcode;
-
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            SfBarcode sfDataGrid1 = new SfBarcode();
+            sfBarcode1.Text = "http://www.google.com";
+            this.Controls.Add(this.sfBarcode1);
+        }
+    }
+}
 {% endhighlight %}
+{% highlight vb %}
+Imports Syncfusion.Windows.Forms.Barcode
+
+Namespace WindowsFormsApplication1
+	Partial Public Class Form1
+		Inherits Form
+		Public Sub New()
+			InitializeComponent()
+			Dim sfBarcode1 As New SfBarcode()
+			sfBarcode1.Text = "http://www.google.com"
+			Me.Controls.Add(Me.SfBarcode1)
+		End Sub
+	End Class
+End Namespace
+{% endhighlight %}
+{% endtabs %}

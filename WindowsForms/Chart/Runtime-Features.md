@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Runtime Features
+# User Interactions
 
 The following topics under this section elaborates on the runtime features of Chart control.
 

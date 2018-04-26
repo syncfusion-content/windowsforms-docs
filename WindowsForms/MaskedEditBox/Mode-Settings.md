@@ -53,7 +53,7 @@ The UsageMode property modifies the behavior of the MaskedEditBox as detailed 
 
 When the UsageMode is set to 'Normal', there is no change in the behavior. This is the default mode for a MaskedEditBox control.
 
-## Numeric Mode
+## Numeric mode
 
 When the UsageMode is set to 'Numeric', the control creates internally two data groups and one decimal separator character in the mask. These groups are created such that the first group holds the mask value before the decimal separator and the second group holds the mask value after the decimal separator. For example, let us specify the mask as follows:
 
@@ -68,9 +68,7 @@ The MaxValue and MinValue properties are enforced only when the UsageMode is set
 {% highlight C# %}  
 
 this.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals;
-
 this.maskedEditBox1.InputMode = Syncfusion.Windows.Forms.Tools.MaskInputMode.Normal;
-
 this.maskedEditBox1.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric;
 
 {% endhighlight %}
@@ -78,9 +76,7 @@ this.maskedEditBox1.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.N
 {% highlight VB %} 
 
 Me.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals
-
 Me.maskedEditBox1.InputMode = Syncfusion.Windows.Forms.Tools.MaskInputMode.Normal
-
 Me.maskedEditBox1.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric
 
 {% endhighlight %}

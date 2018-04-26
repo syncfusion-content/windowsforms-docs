@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Appearance
 
-The following topics under this section discusses about various properties that are used to customize the appearance of the chart:
+The following topics under this section discusses about various properties that are used to customize the appearance of the chart.
 
 ## Background Colors
 
@@ -17,7 +17,7 @@ EssentialChart lets you customize the background colors of different portions of
 
 ### Outside the Chart Area
 
-Use the BackInterior property of the chart to customize the background of the chart that is outside the chart area. This is usually where the legend and the chart title get rendered. By default it is set to White color.
+Use the [BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BackInterior.html) property of the chart to customize the background of the chart that is outside the chart area. This is usually where the legend and the chart title get rendered. By default it is set to White color.
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ Me.chartControl1.BackInterior = New Syncfusion.Drawing.BrushInfo(System.Drawing.
 
 ### Inside the Plot Area
 
-Use the ChartArea.BackInterior to customize the background of the rectangular region where the points are plotted.
+Use the [ChartArea.BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BackInterior.html) to customize the background of the rectangular region where the points are plotted.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ Me.chartControl1.ChartArea.BackInterior = New Syncfusion.Drawing.BrushInfo(Syste
 
 ### Inside the Chart Area
 
-Use the ChartInterior property of the chart to customize the background of the chart area. By default it is set to White color.
+Use the [ChartInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInterior.html) property of the chart to customize the background of the chart area. By default it is set to White color.
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ this.chartControl1.ChartInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.D
 
 ### Chart Settings
 
-In Windows Forms, use the BackgroundImage property to specify a custom image as the background of the chart. The image layout can also be specified using the property below.
+In Windows Forms, use the [BackgroundImage](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BackgroundImage.html) property to specify a custom image as the background of the chart. The image layout can also be specified using the property below.
 
 <table>
 <tr>
@@ -122,7 +122,7 @@ Me.ChartControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretc
 
 ### ChartArea Background Image
 
-The chart area can also be rendered with a custom background image and this can be set using the ChartAreaBackImage property. 
+The chart area can also be rendered with a custom background image and this can be set using the [ChartAreaBackImage](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaBackImage.html) property. 
 
 _ChartAreaBackImage_
 
@@ -155,7 +155,7 @@ Me.ChartControl1.ChartAreaBackImage = myCustomImage
 
 ### Chart Interior Background Image
 
-Chart Interior can be rendered with a custom background image using the ChartInteriorBackImage property.
+Chart Interior can be rendered with a custom background image using the [ChartInteriorBackImage](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInteriorBackImage.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -274,7 +274,7 @@ Me.chartControl1.BorderAppearance.SkinStyle = Syncfusion.Windows.Forms.Chart.Cha
 
 ### Chart Area Shadow
 
-The chart area can also be rendered with a shadow. Turn this feature on, by enabling the ChartAreaShadow property. 
+The chart area can also be rendered with a shadow. Turn this feature on, by enabling the [ChartAreaShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaShadow.html) property. 
 
 _Properties_
 
@@ -323,8 +323,7 @@ Me.chartControl1.ShadowWidth = 7
 
 ### Chart Area Margins
 
-Margin for the chart area can be controlled using ChartAreaMargins property. It indicates the margin that will be deduced from Chart Area's representation rectangle.
-
+Margin for the chart area can be controlled using [ChartAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaMargins.html) property. It indicates the margin that will be deduced from Chart Area's representation rectangle.
 
 <table>
 <tr>
@@ -353,8 +352,7 @@ Me.ChartControl1.ChartAreaMargins = New Syncfusion.Windows.Forms.Chart.ChartMarg
 
 ### ChartPlot Area Margins
 
-The margins for ChartPlotArea is specified in ChartPlotAreaMargins property. 
-
+The margins for ChartPlotArea is specified in [ChartPlotAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~ChartPlotAreaMargins.html) property. 
 
 <table>
 <tr>
@@ -399,7 +397,7 @@ Me.chartControl1.ChartArea.ChartPlotAreaMargins.Left = 200
 
 ### Spacing between elements
 
-The spacing between elements in the chart is specified using the ElementsSpacing property. For example, the space between the chart right border and legend right border if LegendPosition is set to Right.
+The spacing between elements in the chart is specified using the [ElementsSpacing](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ElementsSpacing.html) property. For example, the space between the chart right border and legend right border if [LegendPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Position.html) is set to Right.
 
  _Properties_
 
@@ -418,9 +416,9 @@ Specifies the spacing between the elements in the chart. Default is 20.</td></tr
 
 ### Chart Title
 
-The ChartControl provides properties to customize and align the text within the control. Below are the text properties.
+The [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) provides properties to customize and align the text within the control. Below are the text properties.
 
-Using the ChartControl.Text property, users can provide the title that appears at the top of the chart. TextPosition and TextAlignment further lets you control the relative positioning of this title.
+Using the [ChartControl.Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Text.html) property, users can provide the title that appears at the top of the chart. [TextPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextPosition.html) and [TextAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextAlignment.html) further lets you control the relative positioning of this title.
 
 Here are some properties that affect the title text in the chart.
 
@@ -512,124 +510,11 @@ Specifies how chart elements should be rendered. Possible values:* AntiAlias * H
 
  {% endseealso %}
 
-## Multiple Chart Titles
-
-### Default Title
-
-EssentialChart'sTitle property lets you edit the default title for a chart as follows. We can set font style for the title using Title.Font property. The default value is Verdana, 14, Regular.
-
-{% tabs %}
-{% highlight c# %}
-
-//Default title
-
-chartControl1.Title.Text = "Essential Chart";
-
-this.chartControl1.Title.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Default title
-
-chartControl1.Title.Text = "Essential Chart"
-
-chartControl1.Title.Font = New System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold)
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Chart-Appearance_images/Chart-Appearance_img9.jpeg)
-
-The above default chart title is simply the first in the list of titles that can be specified for the Chart.
-
-### Multiple Titles
-
-* Multiple custom Chart Titles can be added to Chart.Titles Collection.
-* Supports numerous docking styles (Floating, Left, Right, Bottom or Top) for each title.
-* Each of the custom Titles can be aligned to any position as required.
-
-### Titles Positioning
-
-Below listed properties will help you to modify the positioning of the Chart Title.
-
-_Titles Positioning_
-
-<table>
-<tr>
-<th>
-ChartTitle Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Position</td><td>
-Specifies the position relative to the chart at which to render the chart title panel.<ul><li> Top - above the chart(Default setting)</li><li> Left - left of the chart* Right - right of the chart</li><li>Bottom - below the chart</li><li>Floating - will not be docked to any specific location. Can be docked manually by dragging the title panel.</li></ul></td></tr>
-<tr>
-<td>
-<br>Alignment</td><td>
-When docked to a side, this property specifies how the title panel should be aligned with respect to the chart boundaries.<ul><li> Center - will be aligned to center(default setting).</li><li> Far - will be aligned Far.</li><li> Near - will be aligned Near.</li></ul></td></tr>
-<tr>
-<td>
-<br>Behavior</td><td>
-Specifies the docking behavior of the title.* Docking - It is dockable on all four sides.<ul><li> Movable - It is movable.</li><li> All - It is movable and dockable.</li><li>None - It is neither movable nor dockable.</li></ul></td></tr>
-</table>
-
-### Title Look and Feel
-
-There are several appearance options that can be applied on the ChartTitle instance as illustrated in this ChartTitle Collection Editor.
-
-![](Chart-Appearance_images/Chart-Appearance_img10.jpeg)
-
-In code, you can add more titles to this list as follows.
-
-{% tabs %}
-{% highlight c# %}
-
-//Default title (the first entry in the Titles list)
-
-chartControl1.Title.Text = "Essential Chart";
-
-// Add the title to the Chart control's Titles collection.                
-
-ChartTitle title = new Syncfusion.Windows.Forms.Chart.ChartTitle();
-
-title.Text = "Custom Chart Title";
-
-this.chartControl1.Titles.Add(title);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Default title (the first entry in the Titles list)
-
-chartControl1.Title.Text = "Essential Chart"
-
-' Add the title to the Chart control's Titles collection.                
-
-Dim title As New Syncfusion.Windows.Forms.Chart.ChartTitle
-
-title.Text = "Custom Chart Title"
-
-Me.ChartControl1.Titles.Add(title)
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Chart-Appearance_images/Chart-Appearance_img11.jpeg)
-
-### Multiline Chart Title
-
-You can now wrap the Chart titles and display them as multiline text. Set multiline title text in ChartTitle.Text property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
-
-![](Chart-Appearance_images/Chart-Appearance_img12.jpeg)
-
 ## Custom Drawing
 
 Essential Chart lets you render any data on the chart area. If the built-in features and functionality are not sufficient you can simply draw whatever you want on the chart surface.
 
-You can do so by listening to the ChartAreaPaint event. This event is raised both when a chart is painted as well as when the chart is exported to other image formats, SVG, etc. Remember to do your custom drawing in this event instead of in the Paint event (which will not be called during chart export).
+You can do so by listening to the [ChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaPaint_EV.html) event. This event is raised both when a chart is painted as well as when the chart is exported to other image formats, SVG, etc. Remember to do your custom drawing in this event instead of in the Paint event (which will not be called during chart export).
 
 {% tabs %}
 {% highlight c# %}
@@ -918,59 +803,59 @@ Me.chartControl1.Skins = Skins.Office2007Blue
 {% endhighlight %}
 {% endtabs %}
 
-The following output is displayed when the Skins value is set to Office2007 Black.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Black.
 
 ![](Chart-Appearance_images/Chart-Appearance_img18.png)
 
-The following output is displayed when the Skins value is set to Office2007 Blue.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Blue.
 
 ![](Chart-Appearance_images/Chart-Appearance_img19.png)
 
-The following output is displayed when the Skins value is set to Office2007 Silver.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Silver.
 
 ![](Chart-Appearance_images/Chart-Appearance_img20.png)
 
-The following output is displayed when the Skins value is set to Almond.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Almond.
 
 ![](Chart-Appearance_images/Chart-Appearance_img21.png)
 
-The following output is displayed when the Skins value is set to Blend.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Blend.
 
 ![](Chart-Appearance_images/Chart-Appearance_img22.png)
 
-The following output is displayed when the Skins value is set to Blueberry.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Blueberry.
 
 ![](Chart-Appearance_images/Chart-Appearance_img23.png)
 
-The following output is displayed when the Skins value is set to Marble.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Marble.
 
 ![](Chart-Appearance_images/Chart-Appearance_img24.png)
 
-The following output is displayed when the Skins value is set to Midnight.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Midnight.
 
 ![](Chart-Appearance_images/Chart-Appearance_img25.png)
 
-The following output is displayed when the Skins value is set to Monochrome.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Monochrome.
 
 ![](Chart-Appearance_images/Chart-Appearance_img26.png)
 
-The following output is displayed when the Skins value is set to Olive.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Olive.
 
 ![](Chart-Appearance_images/Chart-Appearance_img27.png)
 
-The following output is displayed when the Skins value is set to Sandune.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Sandune.
 
 ![](Chart-Appearance_images/Chart-Appearance_img28.png)
 
-The following output is displayed when the Skins value is set to Turquoise.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Turquoise.
 
 ![](Chart-Appearance_images/Chart-Appearance_img29.png)
 
-The following output is displayed when the Skins value is set to Vista.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Vista.
 
 ![](Chart-Appearance_images/Chart-Appearance_img30.png)
 
-The following output is displayed when the Skins value is set to VS2010.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to VS2010.
 
 ![](Chart-Appearance_images/Chart-Appearance_img31.png)
 

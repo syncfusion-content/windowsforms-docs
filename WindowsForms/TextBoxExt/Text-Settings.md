@@ -50,58 +50,37 @@ DrawActiveWhenDisabled</td><td>
 Specifies if the text should be drawn active, even when disabled.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.textBoxExt1.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-
 this.textBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
 this.textBoxExt1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-
 this.textBoxExt1.SelectedText = "TextBoxExt";
-
 this.textBoxExt1.HideSelection = true;
-
 this.textBoxExt1.DrawActiveWhenDisabled = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.textBoxExt1.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
-
 Me.textBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-
 Me.textBoxExt1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-
 Me.textBoxExt1.SelectedText = "TextBoxExt"
-
 Me.textBoxExt1.HideSelection = True
-
 Me.textBoxExt1.DrawActiveWhenDisabled = True
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ![](Text-Settings_images/Text-Settings_img1.png)
 
-
-
 ![](Text-Settings_images/Text-Settings_img2.png)
-
-
 
 ![](Text-Settings_images/Text-Settings_img3.png)
 
-
-
 ![](Text-Settings_images/Text-Settings_img4.png)
-
-
 
 The methods associated with the above properties are given below.
 
@@ -150,7 +129,7 @@ SelectAll</td><td>
 Selects all text in the TextBox.</td></tr>
 </table>
 
-### Multiline Text Settings
+### Multiline text settings
 
 The text settings of the TextBoxExt control can be customized to display multiline text using the below given properties.
 
@@ -179,42 +158,29 @@ ScrollBars</td><td>
 Indicates for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical and_' | markdownify }}{{ '_Both._' | markdownify }}</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.textBoxExt1.Multiline = true;
-
 this.textBoxExt1.WordWrap = true;
-
 this.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.textBoxExt1.Multiline = True
-
 Me.textBoxExt1.WordWrap = True
-
 Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Text-Settings_images/Text-Settings_img5.png)
 
-
-
 ![](Text-Settings_images/Text-Settings_img6.png)
 
-
-
 ![](Text-Settings_images/Text-Settings_img7.png)
-
-
 
 N> The ScrollToCaret() method can be used to scroll the contents of the control to the current caret position.
 
@@ -243,38 +209,28 @@ ShowOverflowIndicatorToolTip</td><td>
 Indicates whether to show the overflow indicator tooltip.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.textBoxExt1.ShowOverflowIndicator = true;
-
 this.textBoxExt1.ShowOverflowIndicatorToolTip = true;
-
 this.textBoxExt1.OverflowIndicatorToolTipText = "Overflow";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.textBoxExt1.ShowOverflowIndicator = True
-
 Me.textBoxExt1.ShowOverflowIndicatorToolTip = True
-
 Me.textBoxExt1.OverflowIndicatorToolTipText = "Overflow"
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Text-Settings_images/Text-Settings_img9.png)
-
-
 
 N> there is no value set for the OverflowIndicatorToolTipText property, then the value set for the Text property of the TextBoxExt will be displayed as the tooltip.
 
 A sample which demonstrates the Text, Text Align, Character Casing, RightToLeft, Multiline, Word Wrap, ScrollBars and Overflow Indicator ToolTip features of TextBoxExt control is available in the below sample installation path.
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
-

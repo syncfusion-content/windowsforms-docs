@@ -7,11 +7,11 @@ control: Chart
 documentation: ug
 ---
 
-# Printing and Print Preview 
+# Printing
 
 ## Print Preview
 
-The chart provides a PrintDocument that can be sent to the .NET PrintPreviewDialog to get a preview of the chart that gets printed. Here is some code that shows how this is done.
+The chart provides a [PrintDocument](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrintDocument.html) that can be sent to the .NET PrintPreviewDialog to get a preview of the chart that gets printed. Here is some code that shows how this is done.
 
 {% tabs %}  
 
@@ -48,7 +48,7 @@ printPreviewDialog1.ShowDialog()
 
 ## Printing
 
-Print a chart control using the PrintDocument exposed by the chart control as follows:
+Print a chart control using the [PrintDocument](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrintDocument.html) exposed by the chart control as follows:
 
 {% tabs %}  
 
@@ -70,12 +70,19 @@ You can also specify if you want to print the chart in Color or GrayScale using 
 <table>
 <tr>
 <th>
-Chart control Property</th><th>
-Description</th></tr>
+Chart control Property
+</th>
+<th>
+Description
+</th>
+</tr>
 <tr>
 <td>
-PrintColorMode</td><td>
-Indicates the color mode during printing. Possible Values:* Color - Always Print in Color.* GrayScale - Always Print using GrayScale.* CheckPrinter - If printer allows color print in color, otherwise use gray scale (default setting).</td></tr>
+
+{{'[PrintColorMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrintColorMode.html)'| markdownify }}
+</td>
+<td>
+Indicates the color mode during printing. Possible Values: <ul><li>Color - Always Print in Color.</li><li>GrayScale - Always Print using GrayScale.</li><li>CheckPrinter - If printer allows color print in color, otherwise use gray scale (default setting).</li></ul></td></tr>
 </table>
 
 {% tabs %}  
@@ -105,7 +112,7 @@ A sample illustrating the printing features is available in the below location.
 
 ## Displaying ToolBar while printing
 
-ShowToolBar property should be set to true to display a toolbar in the Chart. You can show or hide the toolbar while printing a Chart using PrintToolBar property. 
+[ShowToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolbar.html) property should be set to true to display a toolbar in the Chart. You can show or hide the toolbar while printing a Chart using [PrintToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartPrintDocument~PrintToolBar.html) property. 
 
 {% tabs %}  {% highlight c# %}
 

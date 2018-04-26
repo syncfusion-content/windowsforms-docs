@@ -11,7 +11,7 @@ documentation: ug
 
 The appearance of the StatusBarAdvPanel control can be enhanced using the properties given below.
 
-## Background Settings
+## Background settings
 
 The StatusBarAdvPanel control's background can be customized using the various options provided in the BackgroundColor property given below.
 
@@ -56,28 +56,23 @@ GradientColors</td><td>
 Specifies the gradient colors.The first entry in this list will be the same as the BackColor property, the last entry will be the same as the ForeColor property.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdvPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.LavenderBlush, System.Drawing.Color.RosyBrown);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdvPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, System.Drawing.Color.LavenderBlush, System.Drawing.Color.RosyBrown)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img83.jpeg) 
 
-
-
-## Icon Settings
+## Icon settings
 
 Icons can be added to the StatusBarAdvPanels using the property given below.
 
@@ -94,24 +89,18 @@ Icon</td><td>
 Indicates the icon of the panel.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.Icon = DirectCast((resources.GetObject("$this.Icon")), System.Drawing.Icon)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img84.jpeg) 
-
-
-

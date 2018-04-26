@@ -13,9 +13,7 @@ Essential Tools Rating control for Windows Forms provides an intuitive rating ex
 
 ![](Overview_images/Overview_img1.png)
 
-
-
-### Key Features
+### Key features
 
 * Shape – Allows the end-user to rate items from a predefined list of shapes.
 * Precision – Rating precision can be customized.

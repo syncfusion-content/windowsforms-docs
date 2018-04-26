@@ -16,29 +16,20 @@ To customize the appearance,
 1. Create a new custom renderer class and implement each of the members defined in IToggleButtonRenderer. 
 2. Assign instance of your custom renderer to the Renderer property of ToggleButton. By default, ToggleButton is painted by using its default renderer.
 
+{% tabs %}
 {% highlight c# %}
 
 CustomRenderer renderer = new CustomRenderer();
-
 toggleButton1.Renderer = renderer;
-
 
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Dim renderer As New CustomRenderer()
-
 toggleButton1.Renderer = renderer
 
 {% endhighlight %}
-
-
+{% endtabs %}
 
 ![](Custom-Styling_images/Custom-Styling_img1.png)
-
-
-

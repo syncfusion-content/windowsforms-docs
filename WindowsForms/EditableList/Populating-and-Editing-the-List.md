@@ -15,25 +15,21 @@ The List can be populated in 2 ways. One is to specify the DataSource and anothe
 
 To populate through DataSource.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 // Specifies the DataSource.
-
 editableList1.ListBox.DataSource=DataSource;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' Specifies the DataSource.
-
 editableList1.ListBox.DataSource=DataSource
 
 {% endhighlight %}
+{% endtabs %}
 
 Otherwise go to the property editor, expand the ListBox property of the EditableList and then select Items. This Items property is editable like any other Items property.
 
@@ -46,6 +42,3 @@ The List can be edited in the following way during runtime:
 3.  After editing change the focus, the list will get updated.
 
 ![](Populating-and-Editing-the-List_images/Populating-and-Editing-the-List_img1.png)
-
-
-

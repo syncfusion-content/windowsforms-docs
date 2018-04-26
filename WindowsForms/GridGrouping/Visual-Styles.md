@@ -17,6 +17,10 @@ The GridGroupingControl can be displayed with the different themes by using the 
 * Office2010Blue
 * Office2010Black
 * Office2010Silver
+* Office2016Black
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
 * Metro
 * SystemTheme
 
@@ -150,6 +154,72 @@ Me.gridGroupingControl1.TableControl.MetroColorTable.ThumbNormal = Color.ForestG
 ![](Visual-Style_images/Visual-Style_img4.jpeg)
 
 N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/gridgrouping/sorting) section.
+
+## Modifying Office2016 colors
+
+Custom colors can be applied to the office2016 theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SetOffice2016ThemeStyle.html) method. It can be used to change the colors of Mouse hover, pressed, and clicked colors of the headers and the embedded cell controls of the GridGroupingControl.
+
+{% tabs %}
+{% highlight c# %}
+//Create GridOffice2016ThemeColors object for customizing the Office2016 visual style
+GridOffice2016ThemeColors office2016Colors = new GridOffice2016ThemeColors();
+
+//Set custom colors to Office2016 Headers of the GridGroupingControl
+office2016Colors.HeaderColor.NormalColor = Color.FromArgb(169, 219, 128);
+office2016Colors.HeaderColor.HoverColor = Color.FromArgb(0, 110, 46);
+office2016Colors.HeaderColor.PressedColor = Color.GhostWhite;
+
+//Set the back colors for the ComboBox         
+office2016Colors.ComboboxColor.NormalBackColor = Color.FromArgb(255, 26, 0);
+office2016Colors.CheckBoxColor.BackColor = Color.FromArgb(251, 157, 35);
+
+//Apply Custom colors to the Office2016 visual style
+this.gridGroupingControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Colorful, office2016Colors);
+{% endhighlight %}
+{% highlight vb %}
+'Create GridOffice2016ThemeColors object for customizing the Office2016 visual style
+Dim office2016Colors As New GridOffice2016ThemeColors()
+
+'Set custom colors to Headers of the GridGroupingControl
+office2016Colors.HeaderColor.NormalColor = Color.FromArgb(169, 219, 128)
+office2016Colors.HeaderColor.HoverColor = Color.FromArgb(0, 110, 46)
+
+'Set the back colors for the ComboBox         
+office2016Colors.ComboboxColor.NormalBackColor = Color.FromArgb(255, 26, 0)
+office2016Colors.CheckBoxColor.BackColor = Color.FromArgb(251, 157, 35)
+
+'Apply Custom colors to the Office2016 visual style
+Me.gridGroupingControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Colorful, office2016Colors)
+{% endhighlight %}
+{% endtabs %}
+
+![](Visual-Style_images/Visual-Style_img7.jpeg)
+
+## Modifying Office2016 scrollbar colors
+
+The Scrollbars of the Office2016 visual style can be customized by setting any one of the following respective property based on theme:
+
+ * Office2016ColorfulColorTable
+ * Office2016BlackColorTable
+ * Office2016WhiteColorTable
+ * Office2016DarkGrayColorTable
+
+{% tabs %}
+{% highlight c# %}
+//Used to set the custom colors to the Office2016 scrollbars
+this.gridGroupingControl1.TableControl.Office2016ColorfulColorTable.ScrollerBackground = Color.NavajoWhite;
+this.gridGroupingControl1.TableControl.Office2016ColorfulColorTable.ArrowNormalBackGround = Color.FromArgb(0, 110, 46);
+this.gridGroupingControl1.TableControl.Office2016ColorfulColorTable.ThumbNormal = Color.ForestGreen;
+{% endhighlight %}
+{% highlight vb %}
+'Used to set the custom colors to the Office2016 scrollbars
+Me.gridGroupingControl1.TableControl.Office2016ColorfulColorTable.ScrollerBackground = Color.NavajoWhite
+Me.gridGroupingControl1.TableControl.Office2016ColorfulColorTable.ArrowNormalBackGround = Color.FromArgb(0, 110, 46)
+Me.gridGroupingControl1.TableControl.Office2016ColorfulColorTable.ThumbNormal = Color.ForestGreen
+{% endhighlight %}
+{% endtabs %}
+
+![](Visual-Style_images/Visual-Style_img8.jpeg)
 
 ## Skin Manager
 Theme can also be applied to the GridGroupingControl by using [SetVisualStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.IContextMenuProvider~SetVisualStyle.html) method of [SkinManager](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager_members.html).

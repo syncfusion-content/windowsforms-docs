@@ -45,20 +45,15 @@ DrawActiveWhenDisabled</td><td>
 Specifies if the text should be drawn active, even when disabled.</td></tr>
 </table>
 
-{% tabs % }
+{% tabs %}
 
 {% highlight C# %}  
 
 this.maskedEditBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-
 this.maskedEditBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
 this.maskedEditBox1.SelectedText = "34";
-
 this.maskedEditBox1.HideSelection = true;
-
 this.maskedEditBox1.ClipText = "34";
-
 this.maskedEditBox1.DrawActiveWhenDisabled = true;
 
 {% endhighlight %}
@@ -66,15 +61,10 @@ this.maskedEditBox1.DrawActiveWhenDisabled = true;
 {% highlight VB %} 
 
 Me.maskedEditBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-
 Me.maskedEditBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-
 Me.maskedEditBox1.SelectedText = "34"
-
 Me.maskedEditBox1.HideSelection = True
-
 Me.maskedEditBox1.ClipText = "34"
-
 Me.maskedEditBox1.DrawActiveWhenDisabled = True
 
 {% endhighlight %}
@@ -82,8 +72,6 @@ Me.maskedEditBox1.DrawActiveWhenDisabled = True
 {% endtabs %}
 
 ![](MaskedEditBox-images/MarkedEditBox-img12.png)
-
-
 
 ![](MaskedEditBox-images/MarkedEditBox-img13.png)
 
@@ -123,7 +111,7 @@ Select</td><td>
 Selects a range of text in the TextBox.</td></tr>
 </table>
 
-## Clip Mode
+## Clip mode
 
 The formatting for the text can be enabled or disabled using the property given below.
 
@@ -148,8 +136,7 @@ this.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeL
 
 {% endhighlight %}
 
-
-{% highlight vb %} 
+{% highlight VB %} 
 
 Me.maskedEditBox1.ClipMode = Syncfusion.Windows.Forms.Tools.ClipModes.IncludeLiterals
 
@@ -186,19 +173,15 @@ Gets / sets can show overflow indicator tooltip.</td></tr>
 {% highlight C# %} 
 
 this.maskedEditBox1.OverflowIndicatorToolTipText = "Text Overflow";
-
 this.maskedEditBox1.ShowOverflowIndicator = true;
-
 this.maskedEditBox1.ShowOverflowIndicatorToolTip = true;
 
- {% endhighlight %}
+{% endhighlight %}
 
 {% highlight VB %} 
 
 Me.maskedEditBox1.OverflowIndicatorToolTipText = " Text Overflow"
-
 Me.maskedEditBox1.ShowOverflowIndicator = True
-
 Me.maskedEditBox1.ShowOverflowIndicatorToolTip = True
 
 {% endhighlight %}

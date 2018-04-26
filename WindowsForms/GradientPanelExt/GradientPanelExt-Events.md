@@ -14,53 +14,43 @@ CornerRadiusChanged Event
 
 This event is raised every time the Corner Radius value is changed.
 
-
-
+{% tabs %}
 {% highlight c# %}
 
 private void gradientPanelExt1_CornerRadiusChanged(object sender, EventArgs e)
-
 {
-
     imagePrimitive1.Position = 100;
-
 }
-
-
 
 {% endhighlight  %}
 
+{% highlight vb %}
 
-{% highlight vbnet %}
 Private Sub gradientPanelExt1_CornerRadiusChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 imagePrimitive1.Position = 100
-
 End Sub
 
- PrimitivesChanged Event
+{% endhighlight %}
+{% endtabs %}
 
- This event is raised when the value of the primitives property is changed.
+## PrimitivesChanged Event
 
+This event is raised when the value of the primitives property is changed.
 
-
-
+{% tabs %}
+{% highlight c# %}
 
 private void gradientPanelExt1_PrimitivesChanged(object sender, EventArgs e)
-
 {
-
     MessageBox.Show("Primitive Value Changed");
-
 }
 
-
-
-
+{% endhighlight %}
+{% highlight vb %}
 
 Private Sub gradientPanelExt1_PrimitivesChanged(ByVal sender As Object, ByVal e As EventArgs)
-
 MessageBox.Show("Primitive Value Changed")
-
 End Sub
+
 {% endhighlight  %}
+{% endtabs %}

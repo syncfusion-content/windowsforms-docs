@@ -7,35 +7,25 @@ control: HubTile
 documentation: ug
 ---
 
-# How to prevent the Toggle Button from changing between active and inactive states?
+# How to Prevent the Toggle Button from changing between Active and Inactive States
 
 You have to subscribe to the ToggleStateChanging event and cancel the change. The following code example explains the same.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 private void toggleButton1_ToggleStateChanging(object sender, CancelEventArgs e)
-
 {
-
    e.Cancel = true;
-
 }
 
-
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vb %}
 
 Private Sub ToggleButton1_ToggleStateChanging(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles ToggleButton1.ToggleStateChanging
-
-            e.Cancel = True
-
+e.Cancel = True
 End Sub
 
-
 {% endhighlight %}
-
-
+{% endtabs %}

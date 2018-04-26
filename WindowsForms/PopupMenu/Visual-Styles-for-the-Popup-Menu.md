@@ -7,29 +7,25 @@ control: Popup-Menu
 documentation: ug
 ---
 
-# Visual Styles for the Popup Menu
+# Visual Styles for the Pop-up Menu
 
 Visual Style for a popup menu can be controlled by using PopupMenu.ParentBarItem.Style property.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.popupMenu1.ParentBarItem.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.popupMenu1.ParentBarItem.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007Outlook
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Visual-Styles-for-the-Popup-Menu_images/Visual-Styles-for-the-Popup-Menu_img1.jpeg)
-
-
 
 {% seealso %}
 

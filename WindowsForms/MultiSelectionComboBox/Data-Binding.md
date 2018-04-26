@@ -38,35 +38,30 @@ ValueMember</td><td>
 Indicates the property to use as the actual value for the items in the control.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Specifies the DataSource to MultiSelectionComboBox.
-
 this.multiSelectionComboBox1.DataSource = dataTable;
 
 //To set Display Member for the MultiSelectionComboBox.
-
 this.multiSelectionComboBox1.DisplayMember = "Name";
 
 //To set value member for the MultiSelectionComboBox.
-
 this.multiSelectionComboBox1.ValueMember = "ID";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Specifies the DataSource to MultiSelectionComboBox.
-
 Me.multiSelectionComboBox1.DataSource = dataTable
 
 'To set Display Member for the MultiSelectionComboBox.
-
 Me.multiSelectionComboBox1.DisplayMember = "Name"
 
 'To set value member for the MultiSelectionComboBox.
-
 Me.multiSelectionComboBox1.ValueMember = "ID"
 
 {% endhighlight %}
+{% endtabs %}

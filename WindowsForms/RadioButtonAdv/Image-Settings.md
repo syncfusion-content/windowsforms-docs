@@ -48,45 +48,33 @@ Indicates whether the state images of the RadioButton are stretched.</td></tr>
 
 N> Before setting the images, make sure the ImageCheckBox property is set to 'True'.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.radioButtonAdv1.ImageCheckBox = true;
-
 this.radioButtonAdv1.ImageCheckBoxSize = new System.Drawing.Size(15, 15);
-
 this.radioButtonAdv1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("checkBoxAdv1.CheckedImage")));
-
 this.radioButtonAdv1.UncheckedImage = ((System.Drawing.Image)(resources.GetObject("checkBoxAdv1.UncheckedImage")));
-
 this.radioButtonAdv1.DisabledImage = ((System.Drawing.Image)(resources.GetObject("checkBoxAdv1.DisabledImage")));
-
 this.radioButtonAdv1.StretchImage = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.ImageCheckBox = True
-
 Me.radioButtonAdv1.ImageCheckBoxSize = New System.Drawing.Size(15, 15)
-
 Me.radioButtonAdv1.CheckedImage = (CType(Resources.GetObject("checkBoxAdv1.CheckedImage"), System.Drawing.Image))
-
 Me.radioButtonAdv1.UncheckedImage = (CType(Resources.GetObject("checkBoxAdv1.UncheckedImage"), System.Drawing.Image))
-
 Me.radioButtonAdv1.DisabledImage = (CType(Resources.GetObject("checkBoxAdv1.DisabledImage"), System.Drawing.Image))
-
 Me.radioButtonAdv1.StretchImage = False
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/Overview_img641.jpeg)
 
-#### Images displayed during Mouse Hover
+#### Images displayed during mouse hover
 
 Images can also be set when the mouse is hovered over the RadioButtonAdv control.
 
@@ -107,25 +95,21 @@ MouseOverUncheckedImage</td><td>
 Gets / sets the image used to draw the RadioButton when unchecked and mouse over.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.radioButtonAdv1.MouseOverCheckedImage = ((System.Drawing.Image)(resources.GetObject("checkBoxAdv1.MouseOverCheckedImage")));
-
 this.radioButtonAdv1.MouseOverUncheckedImage = ((System.Drawing.Image)(resources.GetObject("checkBoxAdv1.MouseOverUncheckedImage")));
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.checkBoxAdv1.MouseOverCheckedImage = (CType(Resources.GetObject("checkBoxAdv1.MouseOverCheckedImage"), System.Drawing.Image))
-
 Me.checkBoxAdv1.MouseOverUncheckedImage = (CType(Resources.GetObject("checkBoxAdv1.MouseOverUncheckedImage"), System.Drawing.Image))
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img642.jpeg)
 
