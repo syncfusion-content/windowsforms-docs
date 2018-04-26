@@ -688,6 +688,31 @@ End Sub
 
 ![](ColumnTypes_images/ColumnTypes_img13.png)
 
+### Canceling the check box state change
+
+Changing the check box state can be canceled by setting the [CellCheckBoxClickEventArgs.Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellCheckBoxClickEventArgs_members.html) to true in the [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellCheckBoxClick_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.CellCheckBoxClick += sfDataGrid1_CellCheckBoxClick;
+
+void sfDataGrid1_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+{
+    if (e.RowIndex == 1)
+        e.Cancel = true;
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.CellCheckBoxClick, AddressOf SfDataGrid1_CellCheckBoxClick
+	
+Private Sub sfDataGrid1_CellCheckBoxClick(ByVal sender As Object, ByVal e As CellCheckBoxClickEventArgs)
+	If e.RowIndex = 1 Then
+		e.Cancel = True
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
 ## GridButtonColumn
 
 [GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html) provides support to display columns data as buttons.
@@ -783,6 +808,28 @@ Me.sfDataGrid1.Style.ButtonStyle.BorderColor = Pens.DarkRed
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img17.png)
+
+### Deleting the selected records by button click
+
+The selected records can be deleted when clicking the cell button by using the [DeleteSelectedRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DeleteSelectedRecords.html) method in the [SfDataGrid.CellButtonClick](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellButtonClick_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.CellButtonClick += sfDataGrid1_CellButtonClick;   
+
+private void sfDataGrid1_CellButtonClick(object sender, CellButtonClickEventArgs e)
+{
+    sfDataGrid1.DeleteSelectedRecords();          
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.CellButtonClick, AddressOf SfDataGrid1_ CellButtonClick
+
+Private Sub sfDataGrid1_CellButtonClick(ByVal sender As Object, ByVal e As CellButtonClickEventArgs)
+	sfDataGrid1.DeleteSelectedRecords()
+End Sub
+{% endhighlight %}
+{% endtabs %}
 
 ## GridHyperlinkColumn
 
