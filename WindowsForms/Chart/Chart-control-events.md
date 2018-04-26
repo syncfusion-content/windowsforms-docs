@@ -356,7 +356,7 @@ End Sub
 
 ## ChartAreaPaint Event
 
-[ChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaPaint_EV.html) event is discussed in [Custom Drawing](https://help.syncfusion.com/windowsforms/chart/chart-appearance#custom-drawing).
+[ChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaPaint_EV.html) event is discussed in [Custom Drawing](/windowsforms/chart/chart-appearance#custom-drawing).
 
 {% seealso %}
 
