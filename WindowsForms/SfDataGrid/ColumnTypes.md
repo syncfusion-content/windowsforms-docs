@@ -576,10 +576,10 @@ By default, CheckBox displays only in record cell. By enabling the [AllowCheckBo
 
 {% tabs %}
 {% highlight c# %}
-(this.sfDataGrid1.Columns["IsClosed"] as GridCheckBoxColumn).AllowText = true;
+(this.sfDataGrid1.Columns["IsClosed"] as GridCheckBoxColumn).AllowCheckBoxOnHeader = true;
 {% endhighlight %}
 {% highlight vb %}
-TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowText = True
+TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowCheckBoxOnHeader = True
 {% endhighlight %}
 {% endtabs %}
 

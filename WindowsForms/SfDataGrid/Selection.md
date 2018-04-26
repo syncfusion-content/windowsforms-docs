@@ -562,6 +562,39 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+### Displaying current item in message box
+
+The current item can be displayed in a message box by using the [CurrentItem](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentItem.html) property in the [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionChanged_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.SelectionChanged += sfDataGrid1_SelectionChanged;
+
+void sfDataGrid1_SelectionChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventArgs e)
+{
+    var orderInfo = this.sfDataGrid.CurrentItem as OrderInfo;
+    MessageBox.Show("\n Order ID \t-  " + orderInfo.OrderID.ToString() +
+                    "\n Customer ID \t-  " + orderInfo.CustomerID +
+                    "\n Product Name \t-  " + orderInfo.ProductName +
+                    "\n Order Date \t-  " + orderInfo.OrderDate +
+                    "\n Quantity \t-  " + orderInfo.Quantity +
+                    "\n Unit Price \t-  " + orderInfo.UnitPrice, "Order Details");
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.SelectionChanged, AddressOf SfDataGrid1_SelectionChanged
+
+Private Sub sfDataGrid1_SelectionChanged(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.SelectionChangedEventArgs)
+	Dim orderInfo = TryCast(Me.sfDataGrid.CurrentItem, OrderInfo)
+    MessageBox.Show(Constants.vbLf & " Order ID " & Constants.vbTab & "-  " & orderInfo.OrderID.ToString() &
+                    Constants.vbLf & " Customer ID " & Constants.vbTab & "-  " & orderInfo.CustomerID +
+                    Constants.vbLf & " Product Name " & Constants.vbTab & "-  " & orderInfo.ProductName +
+                    Constants.vbLf & " Order Date " & Constants.vbTab & "-  " & orderInfo.OrderDate.ToString() &
+                    Constants.vbLf & " Quantity " & Constants.vbTab & "-  " & orderInfo.Quantity.ToString() &
+                    Constants.vbLf & " Unit Price " & Constants.vbTab & "-  " & orderInfo.UnitPrice.ToString(), "Order Details")
+End Sub
+{% endhighlight %}
+{% endtabs %}
 
 ## Appearance
 
