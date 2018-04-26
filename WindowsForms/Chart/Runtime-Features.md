@@ -522,7 +522,7 @@ Indicates if the toolbar can be resized automatically. Default value is true.</t
 Indicates back color of the toolbar.</td></tr>
 <tr>
 <td>
-{{'[BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Border.html)'| markdownify }}
+{{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Border.html)'| markdownify }}
 </td><td>
 Specifies the border style.</td></tr>
 <tr>
@@ -1268,7 +1268,7 @@ Specifies the size of the symbol.</td></tr>
 Specifies the distance between the balloon and the target.</td></tr>
 <tr>
 <td>
-{{'[ToTarget](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Visible.html)'| markdownify }}
+{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Visible.html)'| markdownify }}
 </td><td>
 Turns on/off fancy tooltips.</td></tr>
 </table>

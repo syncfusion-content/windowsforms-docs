@@ -1036,7 +1036,7 @@ The Factorial method returns the Factorial for a given Value.(eg 2!=2).</td></tr
 The Erf method returns the Error Function for a given Value.</td></tr>
 <tr>
 <td>
-{{'[Error Function](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseErf.html)'| markdownify }}
+{{'[Inverse Error Function](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseErf.html)'| markdownify }}
 </td><td>
 The Inverse Erf method returns the Inverse Error Function for a given Value.</td></tr>
 </table>

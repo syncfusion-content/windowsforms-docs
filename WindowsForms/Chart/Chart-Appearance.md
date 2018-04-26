@@ -470,7 +470,7 @@ Specifies the alignment of the title with respect to the chart borders. Possible
 Indicates the font style of the title.</td></tr>
 <tr>
 <td>
-{{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ForeColor.html)'| markdownify }}
+{{'[ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ForeColor.html)'| markdownify }}
 </td><td>
 Indicates the foreground color of the title.</td></tr>
 </table>
