@@ -21,7 +21,7 @@ Description</th></tr>
 <tr>
 <td>
 TextAlignment</td><td>
-The text on the progress bar can be set to left, center and right.</td></tr>
+The text on the progress bar can be set to left, center, and right.</td></tr>
 <tr>
 <td>
 TextOrientation</td><td>

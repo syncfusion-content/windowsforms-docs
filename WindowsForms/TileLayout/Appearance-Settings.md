@@ -67,7 +67,7 @@ this.tileLayout1.ShowGroupTitle = true;
 
 # IgnoreThemeBackground
 
-`IgnoreThemeBackground` indicates whether the control will ignore the theme's background color and draw the BackColor instead. BackColor of the TileLayout will only be applied if the IgnoreThemeBackground property is set to True.
+`IgnoreThemeBackground` indicates whether the control will ignore the theme's background color and draw the BackColor instead. BackColor of the TileLayout will only be applied if the IgnoreThemeBackground property is set to `true`.
 
 
 {% tabs %}

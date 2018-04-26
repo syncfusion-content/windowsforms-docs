@@ -107,7 +107,7 @@ Me.tabControlAdv1.TextLineAlignment = System.Drawing.StringAlignment.Near
 
 ## Multiline support
 
-Multiple level of tabs can be created by setting the `Multiline` property of the TabControlAdv to true, which places the tabs in more than one line. This allows the tabs to be arranged in multiple lines when the tabs exceed the width of the control, with all the TabItems in view.
+Multiple level of tabs can be created by setting the `Multiline` property of the TabControlAdv to `true`, which places the tabs in more than one line. This allows the tabs to be arranged in multiple lines when the tabs exceed the width of the control, with all the TabItems in view.
 
 The TabItem's text can be placed in more than one line by setting the `MultilineText` property.
 
@@ -179,9 +179,9 @@ Specifies to draw the tabs and the text from right to left. The default value is
 
 ### Rotating tabs
 
-The `RotateTabsWhenRTL` property can be used to rotate the tabs which are aligned to the left and right of the TabPages. This specifies whether a tab should be drawn from left to right or from right to left. The default value is False.
+The `RotateTabsWhenRTL` property can be used to rotate the tabs which are aligned to the left and right of the TabPages. This specifies whether a tab should be drawn from left to right or from right to left. The default value is `false`.
 
-When the RightToLeft mode is activated and `RotateTabsWhenRTL` property is enabled, tab rotation is allowed.
+When the RightToLeft mode is activated and RotateTabsWhenRTL property is enabled, tab rotation is allowed.
 
 <table>
 <tr>

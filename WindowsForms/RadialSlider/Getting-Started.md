@@ -11,7 +11,9 @@ documentation: ug
 
 ## Creating Radial Slider
 
-### Through code
+## Through code
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -31,7 +33,9 @@ this.Controls.Add(radialSlider);
 
 {% endhighlight %}
 
-### Through designer
+{% endtabs %}
+
+## Through designer
 
 The following steps illustrate the creation of Radial Slider.
 

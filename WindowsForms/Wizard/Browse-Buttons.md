@@ -46,7 +46,7 @@ NextVisible</td><td>
 Specifies whether to display the 'Next' button.</td></tr>
 </table>
 
-N> When you use more than one wizard page, you may set the BackVisible property of the first page to true to hide the back button.
+N> When you use more than one wizard page, you may set the BackVisible property of the first page to `true` to hide the back button.
 
 {% tabs %}
 
@@ -117,7 +117,7 @@ Specifies whether the state of 'Next' button should be enabled or disabled.</td>
 
 ### Adding finish button
 
-In order to display the 'Finish' button in the last wizard page, user should set CancelOverFinish property in the WizardControlPage Collection Editor to false. This property determines if the Cancel button is positioned over the Finish button. If this property is set to true, it will override the FinishVisible property.
+In order to display the Finish button in the last wizard page, user should set CancelOverFinish property in the WizardControlPage Collection Editor to `false`. This property determines if the Cancel button is positioned over the Finish button. If this property is set to `true`, it will override the FinishVisible property.
 
 {% tabs %}
 
@@ -138,12 +138,6 @@ Me.finishPage.CancelOverFinish = False
 A sample which includes button settings is available in the below sample installation location.
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
-
-{% seealso %}
-How to set spacing between the browsing buttons?
-
-
-{% endseealso %}
 
 ### Adding and reordering buttons
 

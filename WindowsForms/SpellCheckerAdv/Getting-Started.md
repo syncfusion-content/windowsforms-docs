@@ -11,9 +11,9 @@ documentation: ug
 
 The SpellCheckerAdv can be added to Windows Forms application by using either of the following ways:
 
-Through Designer
+* Through Designer
 
-Through Code-Behind
+* Through Code-Behind
 
 ## Through designer
 
@@ -284,6 +284,6 @@ End Sub
 
  ![](Getting-Started_images/GettingStarted2.png)
 
-6) Suggested word can be replaced by double clicking on the word from the ListBox.
+6) Suggested word can be replaced by double-clicking on the word from the ListBox.
 
 

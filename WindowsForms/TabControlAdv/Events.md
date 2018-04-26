@@ -113,7 +113,7 @@ This event occurs after text editing is completed. It is fired even if no change
 
 ### Event data
 
-The Edit Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following `EditEventArgs` property provides information specific to this event.
+The Edit Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following EditEventArgs property provides information specific to this event.
 
 
 <table>
@@ -1070,7 +1070,7 @@ End Sub
 ## SelectedIndexChanging event
 
 
-SelectedIndexChanging event occurs while changing the SelectedIndex or SelectedTab of the TabControlAdv. Tab Selection can be restricted by setting args.Cancel to true.
+SelectedIndexChanging event occurs while changing the SelectedIndex or SelectedTab of the TabControlAdv. Tab Selection can be restricted by setting args.Cancel to `true`.
 
 {% tabs %}
 

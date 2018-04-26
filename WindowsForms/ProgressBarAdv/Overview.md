@@ -23,7 +23,7 @@ The various sections of ProgressBarAdv and their descriptions are given below.
 
 ### ProgressBarAdv
 
-The ProgressBarAdv is an extension to the standard progressbar which will help you to display task completion status with lots of background, border and foreground styles.
+The ProgressBarAdv is an extension to the standard progressbar which will help you to display task completion status with lots of background, border, and foreground styles.
 
 #### Foreground of ProgressBarAdv
 

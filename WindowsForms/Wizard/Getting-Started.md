@@ -26,7 +26,7 @@ To create a basic wizard, follow the given steps.
 
 
 * Wizard Control lets you add multiple pages in a single wizard. You can add pages to the wizard container by four different ways. They are, 
-* "Add Page" option in the smart tag.
+* Add Page option in the smart tag.
 * Accessing Add Page command in properties grid.
 * Context menu of the Wizard control.
 
@@ -66,7 +66,7 @@ Me.wizardControl1.SelectedWizardPage = Me.wizardControlPage2
 
 {% endtabs %}
 
-* Wizard Control comes with properties which controls its appearance and behavior. Set FullPage property of WizardControlPage1 to True if you wish to hide the header portion in the first page. Put a label control on this wizard page with introductory text. Also set BackVisible property of wizard page to False to hide the back button since this is the first page.
+* Wizard Control comes with properties which controls its appearance and behavior. Set FullPage property of WizardControlPage1 to `true` if you wish to hide the header portion in the first page. Put a label control on this wizard page with introductory text. Also set BackVisible property of wizard page to `false` to hide the back button since this is the first page.
 
 ![](Wizard-Package_images/Wizard-Package_img6.jpeg)
 

@@ -88,15 +88,15 @@ Specifies whether the header can show a gradient background. </td></tr>
 <tr>
 <td>
 HeaderStartColor</td><td>
-Sets the start color of the header gradient when HeaderGradient property is true.</td></tr>
+Sets the start color of the header gradient when HeaderGradient property is `true`.</td></tr>
 <tr>
 <td>
 HeaderEndColor</td><td>
-Sets the end color of the header gradient when HeaderGradient property is true.</td></tr>
+Sets the end color of the header gradient when HeaderGradient property is `true`.</td></tr>
 <tr>
 <td>
 HeaderVerticalGradient</td><td>
-When HeadGradient property is set to true, vertical gradient style will be applied to the header, by default. To change it to horizontal gradient style, set this property to false.</td></tr>
+When HeadGradient property is set to `true`, vertical gradient style will be applied to the header, by default. To change it to horizontal gradient style, set this property to `false`.</td></tr>
 </table>
 
 {% tabs %}
@@ -246,15 +246,15 @@ Specifies whether the header can show a gradient background. </td></tr>
 <tr>
 <td>
 HeaderStartColor</td><td>
-Sets the start color of the header gradient when HeaderGradient property is true.</td></tr>
+Sets the start color of the header gradient when HeaderGradient property is `true`.</td></tr>
 <tr>
 <td>
 HeaderEndColor</td><td>
-Sets the end color of the header gradient when HeaderGradient property is true.</td></tr>
+Sets the end color of the header gradient when HeaderGradient property is `true`.</td></tr>
 <tr>
 <td>
 HeaderVerticalGradient</td><td>
-When HeadGradient property is set to true, vertical gradient style will be applied to the header, by default. To change it to horizontal gradient style, set this property to false.</td></tr>
+When HeadGradient property is set to `true`, vertical gradient style will be applied to the header, by default. To change it to horizontal gradient style, set this property to `false`.</td></tr>
 </table>
 
 {% tabs %}
@@ -395,7 +395,7 @@ MonthCalendarAdv control can display unique [week numbers](/windowsforms/monthca
 
 ### Foreground settings
 
-By default, week numbers will not be shown in the calendar. ShowWeekNumbers property should be set to true to display the week numbers. The font and fore color can be set using the below properties.
+By default, week numbers will not be shown in the calendar. ShowWeekNumbers property should be set to `true` to display the week numbers. The font and fore color can be set using the below properties.
 
 
 
@@ -559,7 +559,7 @@ Sets the height of the days header. Default value is 17.</td></tr>
 <tr>
 <td>
 UseShortestDayNames</td><td>
-Specifies whether shortest day names are used or not. by default it is true.</td></tr>
+Specifies whether shortest day names are used or not. by default it is `true`.</td></tr>
 </table>
 
 
@@ -652,7 +652,7 @@ The today's date for the below calendar image is "eighteenth".
 
 This section discusses the properties which controls the appearance and behavior of the dates (contents) inside the grid cells.
 
-Highlighting the dates
+### Highlighting the dates
 
 We can highlight the selected date using HighlightColor property.
 
@@ -708,7 +708,7 @@ The height of the bottom which contains the Today and None buttons are changed u
 
 ### Customizing today and none buttons
 
-The "Today" and "None" buttons are like Essential Tools ButtonAdv controls and they support all the properties of ButtonAdv control. You can access those properties using MonthCalendarAdv.NoneButton.Visible which controls the visibility (for example).
+The 'Today' and 'None' buttons are like Essential Tools ButtonAdv controls and they support all the properties of ButtonAdv control. You can access those properties using MonthCalendarAdv.NoneButton.Visible which controls the visibility (for example).
 
 ![](CalendarDateTime_images/Overview_img157.jpeg)
 

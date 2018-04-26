@@ -33,7 +33,7 @@ Shows or hides the UpDown buttons.</td></tr>
 <tr>
 <td>
 ShowUpDownOnFocus</td><td>
-Shows or hides the UpDown button when focused. By default it is set to false.</td></tr>
+Shows or hides the UpDown button when focused. By default it is set to `false`.</td></tr>
 <tr>
 <td>
 VSLikeUpDown</td><td>
@@ -80,7 +80,7 @@ In the below image, when focus is on button control, the updown button is hidden
 
 ### DropDown button
 
-DropDown button in the DateTimePickerAdv is visible by default. To hide the dropdown button set ShowDropDown property to false. The below are the properties available, to change the default appearance of the control.
+DropDown button in the DateTimePickerAdv is visible by default. To hide the dropdown button set ShowDropDown property to `false`. The below are the properties available, to change the default appearance of the control.
 
 ### Color settings
 
@@ -143,7 +143,7 @@ N> These settings will be effective only when DateTimePickerAdv.Style is Office2
 
 ### Flat appearance
 
-Dropdown can be given flat appearance using FlatDropDown property. By default it is false.
+Dropdown can be given flat appearance using FlatDropDown property. By default it is `false`.
 
 
 {% tabs %}
@@ -479,7 +479,7 @@ Me.dateTimePickerAdv1.AutoForwarding = True
 
 ###  Null value settings
 
-At run time, on clicking the "None" button of the popup calendar, "No date is selected" string will be displayed in the text field like the below image.
+At run time, on clicking the None button of the popup calendar, "No date is selected" string will be displayed in the text field like the below image.
 
 ![](DateTimePicker_images/Overview_img199.jpeg)
 
@@ -496,23 +496,23 @@ Description</th></tr>
 <tr>
 <td>
 EnableNullDate</td><td>
-Specifies whether null date support is enabled. If it is set to false, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text field displays the selected date even when {{ '_None_' | markdownify }} button is selected. By default it is true.</td></tr>
+Specifies whether null date support is enabled. If it is set to `false`, DateTimePickerAdv will always have a selected date instead of null string .i.e,  text field displays the selected date even when {{ '_None_' | markdownify }} button is selected. By default it is `true`.</td></tr>
 <tr>
 <td>
 EnableNullKeys</td><td>
-Specifies Backspace or Delete keys makes the date null.  EnableNullDate must be set to true to make this setting effective.</td></tr>
+Specifies Backspace or Delete keys makes the date null.  EnableNullDate must be set to `true` to make this setting effective.</td></tr>
 <tr>
 <td>
 NullString</td><td>
-Specifies the text visible when there is no date selected. EnableNullDate must be set to true to make this setting effective.</td></tr>
+Specifies the text visible when there is no date selected. EnableNullDate must be set to `true` to make this setting effective.</td></tr>
 <tr>
 <td>
 NullModeKeyReset</td><td>
-Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{ 'ArrowKeys (default),' | markdownify }}{{ 'NumericKeys and'  | markdownify }}{{ 'Any.' | markdownify }}EnableNullDate must be set to true to make this setting effective.</td></tr>
+Specifies what keys will toggle off null date. i.e, when null value is selected, by pressing the keys we can replace the null value with date selected. The keys are,{{ 'ArrowKeys (default),' | markdownify }}{{ 'NumericKeys and'  | markdownify }}{{ 'Any.' | markdownify }}EnableNullDate must be set to `true` to make this setting effective.</td></tr>
 <tr>
 <td>
 IsNullDate</td><td>
-Set this to true, if you want to display null value ({{ 'String specified in NullString' | markdownify }}) instead of current value, specified using DateTimePicker.value property. By default it is set to false.</td></tr>
+Set this to `true`, if you want to display null value ({{ 'String specified in NullString' | markdownify }}) instead of current value, specified using DateTimePicker.value property. By default it is set to `false`.</td></tr>
 </table>
 
 
