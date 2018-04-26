@@ -194,7 +194,7 @@ Description</th></tr>
 <tr>
 <td>
 IsSplitterFixed</td><td>
-Gets/sets whether the user is allowed to move the splitter or not. Default value is false.</td></tr>
+Gets/sets whether the user is allowed to move the splitter or not. Default value is `false`.</td></tr>
 <tr>
 <td>
 SplitterDistance</td><td>

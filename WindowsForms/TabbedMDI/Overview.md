@@ -15,7 +15,7 @@ The TabbedMDI package provides a new TabbedMDI layout mode (as an alternative to
 
 
 
-TabbedMDI Framework will retain the MDI scheme in Tabbed mode. The Child forms will still be MDIChildren of the Parent (they will not be moved into a TabControl; this results in loss of MDI functionality like Merged Menus, switching using CTRL+TAB, etc.), thereby enhancing your application without interfering with the general MDI scheme.
+TabbedMDI Framework will retain the MDI scheme in Tabbed mode. The Child forms will still be MDIChildren of the Parent (they will not be moved into a TabControl; this results in loss of MDI functionality like Merged Menus, switching using <kbd>Ctrl+Tab</kbd>, etc.), thereby enhancing your application without interfering with the general MDI scheme.
 
 The TabbedMDI Framework provides users the exact functionality and look and feel of Visual Studio .NET Tabbed Child windows.
 

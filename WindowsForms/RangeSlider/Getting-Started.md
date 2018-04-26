@@ -23,7 +23,7 @@ The following image highlights the different sections of the Range Slider.
 
 Range Slider can be created in two ways:
 
-### Through code
+## Through code
 
 The following code illustrates the creation of RangeSlider.
 
@@ -71,7 +71,7 @@ Output
 
 
 
-### Through designer
+## Through designer
 
 The following steps illustrate the creation of RangeSlider.
 

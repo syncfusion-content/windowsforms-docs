@@ -9,7 +9,7 @@ documentation: ug
 
 # Slider style
 
-Radial Slider supports two different visual styles for its appearance through the enumeration SliderStyle:
+Radial Slider supports two different visual styles for its appearance through the enumeration SliderStyle. They are:
 
 * Default
 * Frame

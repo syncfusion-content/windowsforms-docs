@@ -31,7 +31,7 @@ Determines if the foreground is segmented.</td></tr>
 </table>
 
 
-By default this property will be set to 'True'. To set it to 'False', use the code snippet given below.
+By default this property will be set to `true`. To set it to `false`, use the code snippet given below.
 
 {% tabs %}
 
@@ -385,7 +385,7 @@ Determines the width of the waiting gradient.</td></tr>
 <tr>
 <td>
 CustomWaitingRender</td><td>
-Indicates whether the waiting gradient will be replaced by another custom waiting render which is defaulted to segments.This property when set to 'True' will display the foreground with segments in the color that has been set for the ForeColor property.This property when set to 'False' will display the foreground in the default waiting gradient style.</td></tr>
+Indicates whether the waiting gradient will be replaced by another custom waiting render which is defaulted to segments.This property when set to `true` will display the foreground with segments in the color that has been set for the ForeColor property.This property when set to `false` will display the foreground in the default waiting gradient style.</td></tr>
 </table>
 
 {% tabs %}
