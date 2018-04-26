@@ -57,15 +57,6 @@ Me.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text)
 ![](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 
-
-{% seealso %}
-
-[Context Menu](/windowsforms/tabbedmdi/interactive-features#context-menu)
-
-{% endseealso %}
-
-
-
 ## Context menu
 
 The TabbedMDI Layout mode enables the default Context Menu that pops-up whenever the user right-clicks on any of the tabs.

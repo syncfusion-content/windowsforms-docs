@@ -27,9 +27,9 @@ The various types of BarItems supported by XPToolBar are:
 * MDIListBarItem
 * ToolbarListBarItem
 
-## Filling the XP Toolbar with Items from the BarManager
+## Filling the XPToolbar with Items from the BarManager
 
-You can drag-and-drop items from the Customize dialog of the BarManager into the XP Toolbar, in the same way you filled the menus and toolbars.
+You can drag-and-drop items from the Customize dialog of the BarManager into the XPToolbar, in the same way you filled the menus and toolbars.
 
 ![](Adding-and-Filling-the-XPToolbar_images/Adding-and-Filling-the-XPToolbar_img1.jpeg)
 
@@ -38,9 +38,9 @@ You can drag-and-drop items from the Customize dialog of the BarManager into the
 
 In the presence of a BarManager, you can also add separators to the items by right-clicking on the items and selecting the Begin A Group option similar to Menus. See Grouping Bar Items.
 
-## Filling the XP ToolBar through the BarItems collection editor
+## Filling the XPToolBar through the BarItems collection editor
 
-During design-time, in the absence of BarManager, the XP Toolbar can be filled through the BarItems collection editor, which is invoked using Items property. In the collection editor, you can add any of the available BarItem types to the XP Toolbar's list. A customized text can be provided for the BarItems using Text property.
+During design-time, in the absence of BarManager, the XPToolbar can be filled through the BarItems collection editor, which is invoked using Items property. In the collection editor, you can add any of the available BarItem types to the XPToolbar's list. A customized text can be provided for the BarItems using Text property.
 
 Property table
 
@@ -135,11 +135,5 @@ Me.xpToolBar1.SeparatorIndices.AddRange(New Integer() {1, 2})
 The XPToolbars sample in the following installation path, shows how an XP toolbar can be used in an application.
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
-
-{% seealso %}
-
-XPToolbar Properties
-
-{% endseealso %}
 
 

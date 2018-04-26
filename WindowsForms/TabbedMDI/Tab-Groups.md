@@ -57,7 +57,7 @@ Private TabbedGroupedMDIManager As TabbedMDIManager
 
 {% endtabs %}
 
-* Set the form's IsMdiContainer property to True.
+* Set the form's IsMdiContainer property to `true`.
 * Initialize the TabbedMDIManager and set the required properties.
 
 {% tabs %}

@@ -72,7 +72,7 @@ Office2007Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
 ## Background color for Office2007Form
 
-The background color of the Office2007Form can be same, as the color scheme applied to the Form. `UseOffice2007SchemeBackColor` property has to be true, to make this effective.
+The background color of the Office2007Form can be same, as the color scheme applied to the Form. `UseOffice2007SchemeBackColor` property has to be `true`, to make this effective.
 
 {% tabs %}
 

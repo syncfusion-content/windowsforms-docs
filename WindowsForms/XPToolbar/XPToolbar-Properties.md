@@ -92,24 +92,12 @@ Indicates whether the control is visible or not.</td></tr>
 <tr>
 <td>
 ShowHighlightRectangle</td><td>
-Highlights the bar items on mouse hovering. By default it is set to true.</td></tr>
+Highlights the bar items on mouse hovering. By default it is set to `true`.</td></tr>
 <tr>
 <td>
 ShowChevron</td><td>
-Indicates whether to show chevron. (Default - true)</td></tr>
+Indicates whether to show chevron. (Default - `true`)</td></tr>
 </table>
-
-{% seealso %}
-
- XPToolbar Control
- 
- Adding and Filling the XPToolbar
- 
- UI Command Update Patterns
- 
-{% endseealso %}
-
-
 
 
 

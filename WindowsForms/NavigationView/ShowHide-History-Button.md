@@ -10,7 +10,7 @@ documentation: ug
 
 ### Show/hide history button
 
-History Button used to access the "History" page. If enable ShowHistoryButtons, it will be appeared on NavigationView Control.
+History Button is used to access the History page. If enable ShowHistoryButtons, it will be appeared on NavigationView Control.
 
 
 <table>

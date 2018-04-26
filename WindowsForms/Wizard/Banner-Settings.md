@@ -98,15 +98,15 @@ Description</th></tr>
 <tr>
 <td>
 AutoLayoutBanner</td><td>
-When set to true, the picture box will be automatically laid out at a specific position, in the banner control. Setting false will not layout the picture box automatically.</td></tr>
+When set to `true`, the picture box will be automatically laid out at a specific position, in the banner control. Setting `false` will not layout the picture box automatically.</td></tr>
 <tr>
 <td>
 AutoLayoutDescription</td><td>
-When set to true, the description text will be automatically laid out at a specific position, in the Description control. Setting false will not layout the text automatically.</td></tr>
+When set to `true`, the description text will be automatically laid out at a specific position, in the Description control. Setting `false` will not layout the text automatically.</td></tr>
 <tr>
 <td>
 AutoLayoutTitle</td><td>
-When set to true, the title will be automatically laid out at a specific position, in the banner control. Setting false will not layout the title automatically.</td></tr>
+When set to `true`, the title will be automatically laid out at a specific position, in the banner control. Setting `false` will not layout the title automatically.</td></tr>
 </table>
 
 {% tabs %}
@@ -136,14 +136,6 @@ Me.wizardControl1.AutoLayoutTitle = True
 {% endhighlight %}
 
 {% endtabs %}
-
-{% seealso %}
-Border styles
-
-Background Settings
-
-Title and Description Settings 
-{% endseealso %}
 
 
 
