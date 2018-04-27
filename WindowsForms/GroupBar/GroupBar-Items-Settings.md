@@ -16,7 +16,7 @@ This section describes how text alignment can be done for the GroupBar Items.
 
 ### Through designer
 
-The TextAlign property specifies the horizontal alignment of the GroupBar Item text. The text can be aligned to the Center, Left and Right. The default alignment is set to Center.
+The TextAlign property specifies the horizontal alignment of the GroupBar Item text. The text can be aligned to the Center, Left, and Right. The default alignment is set to Center.
 
 ![](Overview_images/Overview_img17.jpeg)
 
@@ -129,7 +129,7 @@ Me.groupBarItem1.Image = (CType(resources.GetObject("groupBarItem1.Image"), Syst
 ![](Overview_images/Overview_img18.jpeg)
 
 
-Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by setting the ShowItemImageInHeader property to 'True'.
+Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by setting the ShowItemImageInHeader property to `true`.
 
 {% tabs %}
 
@@ -197,14 +197,12 @@ Me.groupBar1.FlatLook = True
 {% endtabs %}
 
 
-The control provides highlighting effect for the GroupBar Item when the mouse is hovered over it by setting the BarHighlight 
-property to 'True'.
+The control provides highlighting effect for the GroupBar Item when the mouse is hovered over it by setting the BarHighlight property to `true`.
 
-![](Overview_images/Overview_img20.jpeg) 
+![](Overview_images/Overview_img20.jpeg)
 
 
-The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by 
-setting the FlatLook property to 'True'. 
+The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by setting the FlatLook property to `true`.
 
 ![](Overview_images/Overview_img21.jpeg)
 
@@ -300,7 +298,7 @@ GroupView control can be added as a Child control to the GroupBar Item by draggi
 
 {% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 this.groupBar1 = new Syncfusion.Windows.Forms.Tools.GroupBar();
 
@@ -390,12 +388,12 @@ The following step-by-step procedure helps you to create Nested GroupBars.
 
 4. Add GroupBar2 as child control to the GroupBar1 by doing a drag and drop operation.
 
- ![](Overview_images/Overview_img27.jpeg) 
+ ![](Overview_images/Overview_img27.jpeg)
 
 
 The following screenshot shows the Nested GroupBars.
 
- ![](Overview_images/Overview_img28.jpeg) 
+ ![](Overview_images/Overview_img28.jpeg)
 
 {% tabs %}
 

@@ -23,7 +23,7 @@ Description</th></tr>
 Description</td><td>
 Gets/sets the text displayed above the tree control in the FolderBrowser Dialog.</td></tr>
 </table>
-The Description property of the FolderBrowser supports the 'AutoComplete' feature that provides options that can be used to complete text even before it is entered.
+The Description property of the FolderBrowser supports the AutoComplete feature that provides options that can be used to complete text even before it is entered.
 
 {% tabs %}
 

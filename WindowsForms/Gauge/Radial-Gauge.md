@@ -974,7 +974,7 @@ The appearance of the Radial Gauge is customized by using the `IRadialGaugeRende
 
 To customize the appearance,
 
-1. Create a new custom renderer class and implement each of the members defined in `IRadialGaugeRenderer`.
+1. Create a new custom renderer class and implement each of the members defined in IRadialGaugeRenderer.
 2. Assign instance of your custom renderer to the `Renderer` property of Radial Gauge. By default, Radial Gauge is painted by using its default renderer.
 
 {% tabs %}
@@ -1096,7 +1096,7 @@ Me.RadialGauge1.NeedleCollection(0).Value = 5
 
 ### How to customize Radial Gauge appearance
 
-You can customize the appearance of the Radial Gauge by using the `IRadialGaugeRenderer`.
+You can customize the appearance of the Radial Gauge by using the IRadialGaugeRenderer.
 
 {% tabs %}
 

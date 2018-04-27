@@ -9,8 +9,6 @@ documentation: ug
 
 # Improving Performance
 
-_Properties and Methods_
-
 **Properties**
 
 <table>
@@ -29,12 +27,12 @@ Instructs the chart to calculate the axes ranges only before painting and not at
 <tr>
 <td>
 {{'[CalcRegions](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~CalcRegions.html)'| markdownify }}</td><td>
-This property by default is true. This controls the Tooltips, AutoHighlighting properties and RegionHit events. If these properties and events are not used, this property can be set to false for better performance.</td></tr>
+This property controls the Tooltips, AutoHighlighting properties and RegionHit events. If these properties and events are not used, this property can be set to false for better performance. Default value of this property is true.</td></tr>
 <tr>
 <td>
 {{'[ChartSeries.EnableStyles](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~EnableStyles.html)'| markdownify }}
 </td><td>
-Disabling this property will in turn disable the point symbols and point text which speeds up the chart.</td></tr>
+Disabling this property will disable the point symbols and point text which speeds up the chart.</td></tr>
 <tr>
 <td>
 {{'[ChartSeries.Style.DisplayShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStyleInfo~DisplayShadow.html)'| markdownify }}</td><td>
@@ -58,7 +56,7 @@ This property sets the back color for the chart area. If not set with gradient o
 <td>
 {{'[ChartInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInterior.html)'| markdownify }}
 </td><td>
-If this property which fills the chart interior, not set with gradient or pattern style, will improve the performance of the chart.</td></tr>
+This property fills the chart interior. If this property is not set with gradient or pattern style, will improve the performance of the chart.</td></tr>
 </tr>
 </table>
 

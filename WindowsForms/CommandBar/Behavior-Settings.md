@@ -101,7 +101,7 @@ Description</th></tr>
 <tr>
 <td>
 Visible</td><td>
-Determines whether the control is visible or hidden. The default value is set to 'True'.</td></tr>
+Determines whether the control is visible or hidden. The default value is set to `true`.</td></tr>
 </table>
 
 {% tabs %}

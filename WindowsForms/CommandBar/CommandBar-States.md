@@ -13,12 +13,6 @@ The CommandBar control of the CommandBarController can be floated or docked to t
 
 These two states of the CommandBar are explained in detail in the following topics.
 
- {% seealso %}
-
- [Serialization](/windowsforms/commandbar/serialization)
- 
- {% endseealso %}
-
 ## Floating CommandBar
 
 By default, CommandBars can be floated on the form by dragging the gripper on the CommandBar. The properties that enable floating of CommandBars and customization of their settings are discussed below.
@@ -48,9 +42,9 @@ Returns the current dock/float state of the CommandBar.</td></tr>
 </table>
 
 
-The float state of the CommandBar can be disabled by setting the DisableFloating property to 'True'.
+The float state of the CommandBar can be disabled by setting the DisableFloating property to `true`.
 
-Setting FloatModeWrapping property to 'True', wraps a floating CommandBar when it is resized to less than it's maximum length. The DisableFloating property must be set to 'False' for this.
+Setting FloatModeWrapping property to `true`, wraps a floating CommandBar when it is resized to less than it's maximum length. The DisableFloating property must be set to `false` for this.
 
 {% tabs %}
 
@@ -85,15 +79,10 @@ A sample which demonstrates the Floating CommandBar is available in the below sa
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
- {% seealso %}
- 
- [Docking CommandBar](#docking-commandbar)
- 
- {% endseealso %}
 
 ## Docking CommandBar
 
-CommandBar can be docked to all the edges of the form such as Top, Bottom, Right and Left. Docking can be controlled by the CommandBar and CommandBarController properties.
+CommandBar can be docked to all the edges of the form such as Top, Bottom, Right, and Left. Docking can be controlled by the CommandBar and CommandBarController properties.
 
 
 <table>
@@ -104,7 +93,7 @@ Description</th></tr>
 <tr>
 <td>
 AllowedDockBorders</td><td>
-Gets/sets the edges of the form along which the CommandBar may be docked. The options included are given below.Bottom,Left,Right,Top andNone.When set to 'None', the CommandBar cannot be docked to the form.</td></tr>
+Gets/sets the edges of the form along which the CommandBar may be docked. The options included are given below.Bottom,Left,Right,Top, and None. When set to 'None', the CommandBar cannot be docked to the form.</td></tr>
 <tr>
 <td>
 AlwaysLeadingEdge</td><td>
@@ -133,9 +122,9 @@ Indicates whether the text caption should be displayed on a docked CommandBar.</
 
 
 
-N> The DisableDocking property must be set to 'False' for the above settings to take effect.
+N> The DisableDocking property must be set to `false` for the above settings to take effect.
 
-The docked state of the CommandBar can be disabled by setting the DisableDocking property to 'True'.
+The docked state of the CommandBar can be disabled by setting the DisableDocking property to `true`.
 
 ### EnabledDockBorders
 
@@ -341,6 +330,6 @@ A sample which demonstrates the Docked CommandBar is available in the below samp
 
 {% seealso %}
 
-[Floating CommandBar](#floating-commandBar)
+[Floating CommandBar](#floating-commandBar), [Serialization](/windowsforms/commandbar/serialization), and [Docking CommandBar](#docking-commandbar).
 
 {% endseealso %}

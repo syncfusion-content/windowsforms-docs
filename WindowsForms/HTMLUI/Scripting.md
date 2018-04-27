@@ -11,7 +11,7 @@ documentation: ug
 
 Essential HTMLUI has extensive support to Scripts. Scripting involves creating self-contained documents. The concept behind this is to make the interface easier just by loading different HTML documents that contain the logic in themselves.
 
-
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -98,6 +98,8 @@ script.UserControl.CustomControl.Text = "This is a sample for scripting";
 </html>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## HTMLUIScripting sample
 

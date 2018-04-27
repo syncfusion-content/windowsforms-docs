@@ -22,7 +22,7 @@ Description</th></tr>
 <tr>
 <td>
 ButtonView</td><td>
-Setting this property to 'True' will make the GroupView Items behave like button objects with a distinct selection state that is retained between item clicks.</td></tr>
+Setting this property to `true` will make the GroupView Items behave like button objects with a distinct selection state that is retained between item clicks.</td></tr>
 <tr>
 <td>
 ClipSelectionBounds</td><td>
@@ -58,7 +58,7 @@ Me.groupView1.ClipSelectionBounds = True
  
 ## ToolTips
 
-The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips property must be set to 'True' in order to make the tooltip visible.
+The ToolTipText property of the GroupView control can be used to set the text of the tooltip. The ShowToolTips property must be set to `true` in order to make the tooltip visible.
 
 
 
@@ -74,7 +74,7 @@ Gets/sets the text of the tooltip.</td></tr>
 <tr>
 <td>
 ShowToolTips</td><td>
-Sets the visibility of the tooltip. The default value is set to 'False'.</td></tr>
+Sets the visibility of the tooltip. The default value is set to `false`.</td></tr>
 </table>
 
 {% tabs %}
