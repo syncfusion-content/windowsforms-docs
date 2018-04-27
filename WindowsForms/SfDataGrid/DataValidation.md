@@ -643,6 +643,8 @@ Me.sfDataGrid.ShowValidationErrorToolTip = False
 {% endhighlight %}
 {% endtabs %}
 
+N> SfToolTip has used for the validation error  tool tip support in the SfDataGrid. Refer [user guide](https://help.syncfusion.com/windowsforms/sftooltip/overview) of SfToolTip for more customizations options.
+
 ## Limitations
 * Non editable columns will not support custom validation.
 * CurrentCellValidating event will not triggered for the GridUnboundColumn, AddNewRow and FilterRow.

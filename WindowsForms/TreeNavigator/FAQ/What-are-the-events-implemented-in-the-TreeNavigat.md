@@ -14,11 +14,11 @@ Following listed events are available in TreeNavigator for use.
 * SelectionChanging
 * SelectionChanged
 
-SelectionChanging Event
+### SelectionChanging Event
 
 This event is triggered before the TreeMenuItem selection.
 
-Event Data
+#### Event Data
 
 SelectionStateChangingEventArgs contains the following members that provide information specific to this event.
 
@@ -47,10 +47,9 @@ Cancel</td><td>
 This property enables you to avoid particular item from Selection.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight c# %}
-
-
 
 void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateChangingEventArgs args)
 
@@ -70,7 +69,7 @@ void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateCha
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 
@@ -92,6 +91,8 @@ End Sub
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ### SelectionChanged Event
@@ -119,6 +120,7 @@ Expanded</td><td>
 This property returns true when the selected item is expanded.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -136,7 +138,7 @@ void treeNavigator1_SelectionChanged(TreeNavigator sender, SelectionStateChang
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 
 
@@ -153,4 +155,6 @@ Private Sub treeNavigator1_SelectionChanged(sender As TreeNavigator, e As 
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
