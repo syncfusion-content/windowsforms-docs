@@ -137,9 +137,9 @@ Property Table
 
 <table>
 <tr>
-<td>
-TextBoxExt Properties</td><td>
-Description</td></tr>
+<th>
+TextBoxExt Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Multiline</td><td>
