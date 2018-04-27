@@ -46,7 +46,7 @@ Me.splitButton.DropDownItems.Add(toolStripItem2)
 ![](Adding-Item-to-Drop-down_images/Adding-Item-to-Drop-down_img1.png)
 
 
-Removing item from Drop-Down list
+### Removing item from Drop-Down list
 
 You can also remove the added items if required. The following code illustrates how to remove items form drop-down list: 
 
