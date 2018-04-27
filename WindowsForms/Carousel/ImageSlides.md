@@ -29,7 +29,7 @@ Me.carousel1.ImageSlides = True
 
 ## Adding images to the carousel control
 
-You can add images to the Carousel control only when the ImageSlides property is true. You can populate images in three different ways:
+You can add images to the Carousel control only when the ImageSlides property is `true`. You can populate images in three different ways:
 
 * Through a collection named ImageListCollection.
 * Through image lists.

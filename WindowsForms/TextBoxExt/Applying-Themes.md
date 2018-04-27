@@ -24,24 +24,18 @@ ThemesEnabled</td><td>
 Specifies whether or not to use XP themes, when BorderStyle is set to 'Fixed3D'.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.textBoxExt1.ThemesEnabled = true;                          
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.textBoxExt1.ThemesEnabled = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Applying-Themes_images/Applying-Themes_img1.png)
-
-
-

@@ -9,7 +9,7 @@ documentation: ug
 
 # Behavior Settings
 
-## Panel Types
+## Panel types
 
 The format of the data in the panel can be set using the property given below.
 
@@ -31,27 +31,23 @@ The PanelType property can be used to display predefined text representing key s
 
 N> Users can also specify their own text to be displayed in the control by setting the PanelType property to 'Custom'. The text to be displayed is set using the Text property of the StatusBarAdvPanel.
 
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.NumLockState;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdvPanel1.PanelType = Syncfusion.Windows.Forms.Tools.StatusBarAdvPanelType.NumLockState
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img86.jpeg) 
 
-
-
-## Panel Size
+## Panel size
 
 The StatusBarAdvPanel can be automatically resized using the property given below.
 
@@ -72,26 +68,21 @@ PreferredSize</td><td>
 Gets / sets the preferred size of the panel in the FlowLayout.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.statusBarAdvPanel1.SizeToContent = true;
-
 this.statusBarAdvPanel1.PreferredSize = new System.Drawing.Size(99, 21);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdvPanel1.SizeToContent = True
-
 Me.statusBarAdvPanel1.PreferredSize = New System.Drawing.Size(99, 21)
 
 {% endhighlight %}
+{% endtabs %}
 
 A Sample which demonstrates the Panel Types of the StatusBarAdvPanel is available in the below sample installation path.
 

@@ -194,6 +194,7 @@ HTML Code
 An HTML document containing file links is illustrated by the code given below:
 
 
+{% tabs %}
 
 {% highlight HTML %}
 
@@ -232,6 +233,8 @@ An HTML document containing file links is illustrated by the code given below:
 </HTML>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following image shows file links that link to another HTML Document.
 

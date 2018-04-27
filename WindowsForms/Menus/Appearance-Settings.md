@@ -28,7 +28,7 @@ This will draw an arrow button to the right side of the toolbar that will allow 
 <tr>
 <td>
 DrawDragBorder</td><td>
-Allows the user to drag the bar around, to move it within dock border, dock to different border or float. To move the bar within the form set DrawDragBorder to true. If this is not set, user cannot to move the bar.</td></tr>
+Allows the user to drag the bar around, to move it within dock border, dock to different border or float. To move the bar within the form set DrawDragBorder to `true`. If this is not set, user cannot to move the bar.</td></tr>
 <tr>
 <td>
 Multiline</td><td>
@@ -40,7 +40,7 @@ When this option is checked, it treats the bar as the main menu and forces the b
 <tr>
 <td>
 RotateWhenVertical</td><td>
-The text in the bars will always be drawn as horizontal irrespective of docked position of a bar. To change this behavior RotateWhenVertical should be set to true.</td></tr>
+The text in the bars will always be drawn as horizontal irrespective of docked position of a bar. To change this behavior RotateWhenVertical should be set to `true`.</td></tr>
 <tr>
 <td>
 TextBelowImage</td><td>
@@ -1409,12 +1409,12 @@ The following image illustrates how the parent bar items are displayed in vertic
 <table>
 <tr>
 <th>
- Property<br><br></th><th>
- Type<br><br></th><th>
- Description<br><br></th></tr>
+Property<br><br></th><th>
+Type<br><br></th><th>
+Description<br><br></th></tr>
 <tr>
 <td>
- Orientation<br><br></td><td>
+Orientation<br><br></td><td>
 enum</td><td>
 Gets or sets the text alignment of ParentBarItem in MainframeBarManager.</td></tr>
 </table>

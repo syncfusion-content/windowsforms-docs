@@ -14,7 +14,7 @@ Toggle Button control for Windows Forms allows you to toggle between two states 
 ![](Overview_images/Overview_img1.jpeg)
 
 
-## Key Features
+## Key features
 
 * Configurable Toggle States – Two states with contrasting behavior are configured as required like IN/OUT, ON/OFF, etc. 
 * Display Mode – Supported to display either text or image over buttons to represent the states.

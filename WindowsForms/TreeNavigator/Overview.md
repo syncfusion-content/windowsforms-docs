@@ -14,7 +14,7 @@ The TreeNavigator control provides an interface that allows you to navigate thro
 ![](Overview_images/Overview_img1.png)
 
 
-## Key Features
+## Key features
 
 Navigation Modes - There are two modes of Navigation
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## ContentView
 
-**ContentView** is the main view of the **NavigationDrawer** on which the desired items can be placed. For example, RichTextBox can be used in this sample.
+ContentView is the main view of the NavigationDrawer on which the desired items can be placed. For example, RichTextBox can be used in this sample.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ Me.navigationDrawer1.ContentViewContainer.Controls.Add(richTextbox)
 
 ## DrawerView
 
-**DrawerView** is a container, that will be displayed upon selection on top, along and below with the Content view section. This will contain below sections.
+DrawerView is a container, that will be displayed upon selection on top, along and below with the Content view section. This will contain below sections.
 
 ![](Concepts-And-Features_images/navigationdrawer_img2.png)
 

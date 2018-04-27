@@ -24,12 +24,6 @@ A Sample which demonstrates the CardLayout is available in the below sample inst
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
-{% seealso %}
-
-[Creating a Simple Layout.](/windowsforms/layoutmanagers/creating-a-simple-layout)
-
-{% endseealso %}
-
 ## Configuring CardLayout
 
 The configuration settings for the CardLayout have been discussed in this topic.
@@ -144,7 +138,7 @@ Description</th></tr>
 <tr>
 <td>
 MaintainAspectRatio</td><td>
-Indicates if the aspect ratio is to be maintained. The default value is set to 'False'.</td></tr>
+Indicates if the aspect ratio is to be maintained. The default value is set to `false`.</td></tr>
 </table>
 
 {% tabs %}
@@ -262,7 +256,7 @@ The CardLayout provides two modes to layout the Child controls. The mode can be 
 </tr>
 </table>
 
-When the layout mode of CardLayout is set to 'Default', the Child control is simply centered within the Container when the Container's size is bigger than the Child control's preferred size. However, if the Container's size is smaller than the Child controls's preferred size, the Child control's size will shrink down to its minimum size. When shrunk, you have an option to specify whether the preferred width / height aspect ratio should be maintained for that Child control, which is specified using the extended MaintainAspectRatio property of each Child.
+When the layout mode of CardLayout is set to 'Default', the Child control is simply centered within the Container when the Container's size is bigger than the Child control's preferred size. However, if the Container's size is smaller than the Child controls's preferred size, the Child control's size will shrink down to its minimum size. When shrunk, you have an option to specify whether the preferred width/height aspect ratio should be maintained for that Child control, which is specified using the extended MaintainAspectRatio property of each Child.
 
 When the layout mode is set to 'Fill', it simply resizes the Child control to fill the entire Container client area.
 
@@ -425,6 +419,6 @@ At run time, cards can be selected using the items in the ComboBox or by Button 
 
 {% seealso %}
 
-[Configuring CardLayout](#configuring-cardlayout), [Configuring Child Controls](#configuring-child-controls), [Child Control Settings.](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings)
+[Creating a Simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Configuring CardLayout](#configuring-cardlayout), [Configuring Child Controls](#configuring-child-controls), and [Child Control Settings.](/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings)
 
 {% endseealso %}

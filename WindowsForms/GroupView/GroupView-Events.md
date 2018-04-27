@@ -40,7 +40,7 @@ This event occurs when the right mouse button is clicked over the GroupView cont
 <tr>
 <td>
 GroupViewItemDoubleClick</td><td>
-This event occurs when the GroupViewItem is double clicked.</td></tr>
+This event occurs when the GroupViewItem is double-clicked.</td></tr>
 </table>
 
 ## GroupViewItemHighlighted event
@@ -485,7 +485,7 @@ End Sub
 
 ## GroupViewItemDoubleClick event
 
-It occurs when a GroupView Item in the GroupView control is double clicked.
+It occurs when a GroupView Item in the GroupView control is double-clicked.
 
 The event handler receives an argument of type GroupViewItemDoubleClickArgs.
 

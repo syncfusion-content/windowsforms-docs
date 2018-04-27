@@ -7,18 +7,18 @@ control: TreeNavigator
 documentation: ug
 ---
 
-# What are the events implemented in the TreeNavigator?
+# What are the Events Implemented in the TreeNavigator
 
 Following listed events are available in TreeNavigator for use.
 
 * SelectionChanging
 * SelectionChanged
 
-### SelectionChanging Event
+### SelectionChanging event
 
 This event is triggered before the TreeMenuItem selection.
 
-#### Event Data
+#### Event data
 
 SelectionStateChangingEventArgs contains the following members that provide information specific to this event.
 
@@ -47,58 +47,36 @@ Cancel</td><td>
 This property enables you to avoid particular item from Selection.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateChangingEventArgs args)
-
-   {
-
-       args.Cancel = true;
-
-       TreeMenuItem item = args.NewValue;
-
-        TreeMenuItem OldItem = args.OldValue;
-
-       bool temp = args.Expanded;
-
-   }
-
+{
+    args.Cancel = true;
+    TreeMenuItem item = args.NewValue;
+    TreeMenuItem OldItem = args.OldValue;
+    bool temp = args.Expanded;
+}
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeNavigator1_SelectionChanging(sender As TreeNavigator, args As SelectionStateChangingEventArgs)
-
-
-
-        args.Cancel = True
-
-        Dim item As TreeMenuItem = args.NewValue
-
-        Dim OldItem As TreeMenuItem = args.OldValue
-
-        Dim temp As Boolean = args.Expanded
-
-
-
+args.Cancel = True
+Dim item As TreeMenuItem = args.NewValue
+Dim OldItem As TreeMenuItem = args.OldValue
+Dim temp As Boolean = args.Expanded
 End Sub
 
-
 {% endhighlight %}
+{% endtabs %}
 
-
-### SelectionChanged Event
+### SelectionChanged event
 
 This event triggers after the selection of the TreeMenuItem.
 
-#### Event Data
+#### Event data
 
 SelectionStateChangedEventArgs contains the following members that provide information specific to this event.
 
@@ -119,38 +97,23 @@ Expanded</td><td>
 This property returns true when the selected item is expanded.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 void treeNavigator1_SelectionChanged(TreeNavigator sender, SelectionStateChangedEventArgs e)
-
-    {
-
-        TreeMenuItem menu = e.SelectedItem;
-
-        bool temp = e.Expanded;
-
-    }
+{
+    TreeMenuItem menu = e.SelectedItem;
+    bool temp = e.Expanded;
+}
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Private Sub treeNavigator1_SelectionChanged(sender As TreeNavigator, e As SelectionStateChangedEventArgs)
-
-
-
-   Dim menu As TreeMenuItem = e.SelectedItem
-
-   Dim temp As Boolean = e.Expanded
-
-
-
+Dim menu As TreeMenuItem = e.SelectedItem
+Dim temp As Boolean = e.Expanded
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}

@@ -26,28 +26,25 @@ Text</td><td>
 Gets / sets the text of the panel.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdvPanel1.Text = "StatusBarAdvPanel";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdvPanel1.Text = "StatusBarAdvPanel"
 
 {% endhighlight %}
+{% endtabs %}
 
 The method associated with the above property is given below.
 
 N> The GetText() method returns text according to the key state.
 
-## Marquee Settings
+## Marquee settings
 
 The text inside the control can be made to float in the marquee style by enabling the property given below.
 
@@ -64,24 +61,21 @@ IsMarquee</td><td>
 Indicates whether the control uses the marquee style for the displayed text.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdvPanel1.IsMarquee = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdvPanel1.IsMarquee = True
 
 {% endhighlight %}
+{% endtabs %}
 
-## Animation Settings
+## Animation settings
 
 The animation that has been applied to the text of the StatusBarAdvPanel control can be customized using the properties given below.
 
@@ -112,33 +106,25 @@ Specifies the style of animation for the marquee style. The options included are
 
 N> The IsMarquee property must be set to 'True' for the animation settings to be visible.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.statusBarAdvPanel1.AnimationDelay = 2;
-
 this.statusBarAdvPanel1.AnimationDirection = Syncfusion.Windows.Forms.Tools.MarqueeDirection.Right;
-
 this.statusBarAdvPanel1.AnimationSpeed = 6;
-
 this.statusBarAdvPanel1.AnimationStyle = Syncfusion.Windows.Forms.Tools.MarqueeStyle.Alternate;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdvPanel1.AnimationDelay = 2
-
 Me.statusBarAdvPanel1.AnimationDirection = Syncfusion.Windows.Forms.Tools.MarqueeDirection.Right
-
 Me.statusBarAdvPanel1.AnimationSpeed = 6
-
 Me.statusBarAdvPanel1.AnimationStyle = Syncfusion.Windows.Forms.Tools.MarqueeStyle.Alternate
 
 {% endhighlight %}
+{% endtabs %}
 
 The animation for the text can be enabled and disabled using the methods associated with the above properties. These methods are given below.
 
@@ -159,58 +145,36 @@ StopAnimation</td><td>
 Stops the animation for the marquee style. This will restore the text to it's original position.</td></tr>
 </table>
 
-
 These methods can be called within the below events as follows.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 // Starts the animation.
-
 private void Form1_Load(object sender, EventArgs e)
-
 {
-
-this.statusBarAdvPanel1.StartAnimation();
-
+    this.statusBarAdvPanel1.StartAnimation();
 }
-
-
 
 // Stops the animation.
-
 private void button1_Click(object sender, EventArgs e)
-
 {
-
-this.statusBarAdvPanel1.StopAnimation();
-
+    this.statusBarAdvPanel1.StopAnimation();
 }
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 ' Starts the animation.
-
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-
 Me.statusBarAdvPanel1.StartAnimation()
-
 End Sub
 
-
-
 ' Stops the animation.
-
 Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
-
 Me.statusBarAdvPanel1.StopAnimation()
-
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}
