@@ -196,6 +196,95 @@ Me.sfDataGrid1.ClearSelection()
 {% endhighlight %}
 {% endtabs %}
 
+## Get the  Cell Value
+
+### Get the current cell value
+
+The current cell value can be retrieved by using the [GridCellRendererBase.GetControlValue](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCellRendererBase~GetControlValue.html) method when the `CurrentCell` value is not null.
+
+{% tabs %}
+{% highlight c# %}
+if (sfDataGrid1.CurrentCell != null)
+{
+    // Get the CurrentCellValue
+    var currentCellValue = sfDataGrid1.CurrentCell.CellRenderer.GetControlValue();
+    MessageBox.Show(currentCellValue.ToString(), "Current Cell Value");
+}
+{% endhighlight %}
+{% highlight vb %}
+If sfDataGrid1.CurrentCell IsNot Nothing Then
+	' Get the CurrentCellValue
+	Dim currentCellValue = sfDataGrid1.CurrentCell.CellRenderer.GetControlValue()
+	MessageBox.Show(currentCellValue.ToString(), "Current Cell Value")
+End If
+{% endhighlight %}
+{% endtabs %}
+
+![](Selection_images/selection9.png)
+
+### Get the value of a cell
+
+A particular cell value can be retrieved from records in the [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~View.html) by using the row column index of the cell.
+
+{% tabs %}
+{% highlight c# %}
+// Get the cell value for RowIndex = 5 and ColumnIndex = 2
+string cellValue;
+int rowIndex = 5;
+int columnIndex = sfDataGrid1.TableControl.ResolveToGridVisibleColumnIndex(2);
+if (columnIndex < 0)
+    return;
+var mappingName = sfDataGrid1.Columns[columnIndex].MappingName;
+var recordIndex = sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex);
+if (recordIndex < 0)
+    return;
+if (sfDataGrid1.View.TopLevelGroup != null)
+{
+    var record = sfDataGrid1.View.TopLevelGroup.DisplayElements[recordIndex];
+    if (!record.IsRecords)
+        return;
+    var data = (record as RecordEntry).Data;
+    cellValue = (data.GetType().GetProperty(mappingName).GetValue(data, null).ToString());
+}
+else
+{
+    var record1 = sfDataGrid1.View.Records.GetItemAt(recordIndex);
+    cellValue = (record1.GetType().GetProperty(mappingName).GetValue(record1, null).ToString());
+}
+
+MessageBox.Show(cellValue, "Value in cell (" + rowIndex + ", " + columnIndex + ")");
+{% endhighlight %}
+{% highlight vb %}
+Dim cellValue As String
+Dim rowIndex As Integer = 5
+Dim columnIndex As Integer = sfDataGrid1.TableControl.ResolveToGridVisibleColumnIndex(2)
+If columnIndex < 0 Then
+	Return
+End If
+Dim mappingName = sfDataGrid1.Columns(columnIndex).MappingName
+Dim recordIndex = sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex)
+If recordIndex < 0 Then
+	Return
+End If
+If sfDataGrid1.View.TopLevelGroup IsNot Nothing Then
+	Dim record = sfDataGrid1.View.TopLevelGroup.DisplayElements(recordIndex)
+	If Not record.IsRecords Then
+		Return
+	End If
+	Dim data = (TryCast(record, RecordEntry)).Data
+	cellValue = (data.GetType().GetProperty(mappingName).GetValue(data, Nothing).ToString())
+Else
+	Dim record1 = sfDataGrid1.View.Records.GetItemAt(recordIndex)
+	cellValue = (record1.GetType().GetProperty(mappingName).GetValue(record1, Nothing).ToString())
+End If
+
+MessageBox.Show(cellValue, "Value in cell (" & rowIndex & ", " & columnIndex & ")")
+& ")")
+{% endhighlight %}
+{% endtabs %}
+
+![](Selection_images/selection10.png)
+
 ## Scrolling Rows
 
 ### Automatic Scrolling on Drag Selection

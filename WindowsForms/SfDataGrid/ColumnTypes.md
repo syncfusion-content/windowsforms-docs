@@ -124,6 +124,102 @@ Me.sfDataGrid1.Columns("OrderDate").Format = "yyyy/mm/dd"
 
 N> This property works only for `GridDateTimeColumn`, `GridNumericColumn` and `GridButtonColumn`.
 
+### Custom formatting
+
+The SfDataGrid allows creating and assigning custom format for the columns through the [IDataGridFormatProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.IDataGridFormatProvider.html) interface.
+The [GridColumnBase.FormatProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FormatProvider.html) property can be used to set custom format for the columns.
+
+{% tabs %}
+{% highlight c# %}
+public Form1()
+{
+    InitializeComponent();
+    var data = new OrderInfoCollection();
+    sfDataGrid.DataSource = data.OrdersListDetails;
+    
+    sfDataGrid.Columns["OrderDate"].Format = "dd/mm/yyyy";
+    sfDataGrid.Columns["OrderDate"].FormatProvider = new CustomFormatter();
+}
+
+
+public class CustomFormatter : IDataGridFormatProvider
+ {
+     public object Format(string format, GridColumnBase gridColumn, object record, object value)
+     {
+         if (value == null)
+         {
+             throw new ArgumentNullException((value == null) ? "format" : "args");
+         }
+
+         if (gridColumn is GridColumn && (gridColumn as GridColumn).MappingName == "OrderDate")
+         {
+             var orderInfo = record as OrderInfo;
+
+             if (orderInfo.OrderDate.Month == 1)
+                 return "January " + orderInfo.OrderDate.Day + ", " + orderInfo.OrderDate.Year;  
+         }
+
+         return value.ToString();
+     }
+
+
+     public object GetFormat(Type formatType)
+     {
+         return this;
+     }
+
+     public string Format(string format, object arg, IFormatProvider formatProvider)
+     {
+         throw new NotImplementedException();
+     }
+ }
+{% endhighlight %}
+{% highlight vb %}
+Public Sub New()
+	InitializeComponent()
+	Dim data = New OrderInfoCollection()
+	sfDataGrid.DataSource = data.OrdersListDetails
+
+	sfDataGrid.Columns("OrderDate").Format = "dd/mm/yyyy"
+	sfDataGrid.Columns("OrderDate").FormatProvider = New CustomFormatter()
+End Sub
+
+
+Public Class CustomFormatter
+	Implements IDataGridFormatProvider
+		Public Function Format(ByVal _format As String, ByVal gridColumn As GridColumnBase, ByVal record As Object, ByVal value As Object) As Object
+			If value Is Nothing Then
+				Throw New ArgumentNullException(If((value Is Nothing), "format", "args"))
+			End If
+
+			If TypeOf gridColumn Is GridColumn AndAlso (TryCast(gridColumn, GridColumn)).MappingName = "OrderDate" Then
+				Dim orderInfo = TryCast(record, OrderInfo)
+
+				If orderInfo.OrderDate.Month = 1 Then
+					Return "January " & orderInfo.OrderDate.Day & ", " & orderInfo.OrderDate.Year
+				End If
+			End If
+
+			Return value.ToString()
+		End Function
+
+
+		Public Function GetFormat(ByVal formatType As Type) As Object
+			Return Me
+		End Function
+
+		Public Function Format(ByVal _format As String, ByVal arg As Object, ByVal formatProvider As IFormatProvider) As String
+			Throw New NotImplementedException()
+		End Function
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+![](ColumnTypes_images/ColumnTypes_img21.png)
+
+N> The custom format will be applied, only when the [GridColumnBase.Format](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Format.html) property is set for the corresponding column.
+
+
 ### Styling GridColumn
 
 [GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) support to customize the style of particular column using [GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) and [GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderStyle.html) properties. For more information, refer Styling section.
@@ -584,6 +680,10 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowCheckBoxOnH
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img10.png)
+
+All the checkboxes in a column will be checked/unchecked by clicking on the CheckBox in the header.
+
+![](ColumnTypes_images/ColumnTypes_img22.png)
 
 ### Customizing the Check Box Value
 
