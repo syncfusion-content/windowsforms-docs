@@ -9,13 +9,15 @@ documentation: ug
 
 # Tree Map Legend
 
-The tree map legend is used to demonstrate the color value of leaf nodes. This legend may be appropriate only for tree maps whose leaf nodes are colored by using RangeBrushColorMapping. 
+The tree map legend is used to demonstrate the color value of the leaf nodes. This legend may be appropriate only for tree maps whose leaf nodes are colored by using the RangeBrushColorMapping. 
 
-The icon shapes of the legend items can be set by the LegendType property of the TreeMap control. The gap between each legend icon can be specified by the LegendGap property.
+The icon shapes of the legend items can be set using the [`LegendType`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendType.html) property of the tree map control. The gap between each legend icon can be specified using the [`LegendGap`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendGap.html) property.
 
-The legend can be positioned in left, right, top, or bottom of the TreeMap control with the help of the LegendPosition property.
+Legend can be positioned at the left, right, top, or bottom of the tree map control using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendPosition.html) property.
 
-#### Code Sample
+#### Code sample
+
+{% tabs %}
 
 {% highlight c# %} 
 
@@ -71,5 +73,7 @@ Color = System.Drawing.ColorTranslator.FromHtml("#77D8D8"), From = 0, To = 1, Le
 		  this.TreeMap1.LeafColorMapping = rangeBrushColorMapping;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img11.png)
