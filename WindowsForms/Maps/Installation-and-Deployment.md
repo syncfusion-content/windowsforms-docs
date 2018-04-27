@@ -9,35 +9,35 @@ documentation: ug
 
 # Installation and Deployment
 
-This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following sub-sections:
+This section covers information on the install location, samples, licensing, patches update, and updation of the recent version of Essential Studio. It comprises the following subsections:
 
 
 
-### Installation
+## Installation
 
-For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
+For step-by-step installation procedure for installing of Essential Studio, refer to the installation topic under Installation and Deployment in the Common UG.
 
 
 
-See Also
+See also,
 
-For licensing, patches and information on adding or removing selective components refer the following topics in Common UG under Installation and Deployment.
+For licensing, patches, and information on adding or removing selective components, refer to the following topics in Common UG under Installation and Deployment.
 
 
 
 * Licensing
 * Patches
-* Add / Remove Components
+* Add/remove components
 
 
 
-### Sample and Location
+## Sample and location
 
 Use the following steps to view the samples:
 
 
 
-1. 1. Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard
+1. Go to Start > All Programs > Syncfusion > Essential Studio <version number> > Dashboard
 
       The Essential Studio Enterprise Edition window will be displayed.
 
@@ -46,14 +46,14 @@ Use the following steps to view the samples:
 	  Syncfusion Essential Studio Dashboard
       {:.caption}
 	  
-2. 2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
+2. In the Dashboard window, click Run Samples for Windows Forms under UI Edition. The UI Windows Forms Sample Browser window will be displayed.
 
       N> You can view the samples in any of the following three ways:
       > * Run Samples - Click to view the locally installed samples.
       > * Online Samples - Click to view online samples.
       > * Explore Samples - Explore the UI for Windows Forms on disk.
 	  
-      The User Interface Edition panel is displayed by default.
+      The User Interface Edition panel will be displayed by default.
 	  
 	  ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
@@ -69,11 +69,11 @@ Use the following steps to view the samples:
 4. Select any sample and browse through the features. 
 
 
-## Deployment Requirements
+## Deployment requirements
 
 
 
-### Toolbox Entries
+### Toolbox entries
 
 
 
@@ -81,9 +81,9 @@ Use the following steps to view the samples:
 
 
 
-### Assembly List
+### Assembly list
 
-While deploying an application that references SyncfusionEssentialMaps assembly, the following dependencies must be included in the distribution.
+While deploying an application that references SyncfusionEssentialMaps assembly, the following dependencies must be included in the distribution:
 
 
 
