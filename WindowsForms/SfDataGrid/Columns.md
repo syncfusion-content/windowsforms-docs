@@ -633,6 +633,19 @@ Next name
 {% endhighlight %}
 {% endtabs %}
 
+### Changing the order of a column
+
+The order of a column can be changed by using the [SfDataGrid.Columns.Move](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Columns_members.html) method.
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.Columns.Move(0, 5);
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns.Move(0, 5)
+{% endhighlight %}
+{% endtabs %}
+
 ## Resizing Columns
 
 SfDataGrid allows to resize the columns like in excel by resizing column header. 

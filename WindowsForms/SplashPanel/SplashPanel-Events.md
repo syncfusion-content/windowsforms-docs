@@ -15,9 +15,9 @@ Events Table
 
 <table>
 <tr>
-<td>
-SplashPanel Events</td><td>
-Description</td></tr>
+<th>
+SplashPanel Events</th><th>
+Description</th></tr>
 <tr>
 <td>
 BeforeSplash</td><td>
@@ -119,7 +119,7 @@ End Sub
 
 When the application is loaded and before the splash screen is displayed, the BeforeSplash event will be triggered.
 
-## Event data
+### Event data
 
 The event handler receives an argument of type CancelEventArgs containing data related to this event. The following CancelEventArgs member provides information specific to this event.
 
@@ -127,9 +127,9 @@ Member Table
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -173,6 +173,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+
+## SplashDisplayed event
+
+When the application is loaded and when the SplashPanel is displayed, the SplashDisplayed event will be raised. The event handler receives an argument of type EventArgs containing data related to this event.
+
+You can handle this event by including the below code.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -209,28 +216,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-SplashClosed event is raised when the SplashFormDisplayedNotify() method is called. This method is an implementation of the ISplashWrapperFormListener for receiving notification from the SplashWrapperForm when the splash window is displayed.
-
-{% tabs %}
-{% highlight c# %}
-
-this.splashPanel1.SplashFormDisplayedNotify();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.splashPanel1.SplashFormDisplayedNotify()
-
-{% endhighlight %}
-{% endtabs %}
-
-## SplashDisplayed event
-
-When the application is loaded and when the SplashPanel is displayed, the SplashDisplayed event will be raised. The event handler receives an argument of type EventArgs containing data related to this event.
-
-You can handle this event by including the below code.
-
 ## SplashClosing event
 
 At run time, after the splash screen is displayed for a specified time and when it is closing, the SplashClosing event will be triggered.
@@ -243,9 +228,9 @@ Member Table
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
@@ -312,9 +297,9 @@ Member Table
 
 <table>
 <tr>
-<td>
-Member</td><td>
-Description</td></tr>
+<th>
+Member</th><th>
+Description</th></tr>
 <tr>
 <td>
 SplashCloseType</td><td>
