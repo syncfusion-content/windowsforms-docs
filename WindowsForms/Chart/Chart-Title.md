@@ -11,7 +11,7 @@ documentation: ug
 
 ## Default Title
 
-EssentialChart's [Title](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Title.html) property lets you edit the default title for a chart as follows. We can set font style for the title using [Title.Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Font.html) property. The default value is Verdana, 14, Regular.
+EssentialChart's [Title](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Title.html) property lets you edit the default title for a chart. We can set font style for the title using [Title.Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Font.html) property. The default value is **Verdana, 14, Regular**.
 
 {% tabs %}
 
@@ -44,14 +44,12 @@ The above default chart title is simply the first in the list of titles that can
 ## Multiple Titles
 
 * Multiple custom Chart Titles can be added to [Chart.Titles](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Titles.html) Collection.
-* Supports numerous docking styles (Floating, Left, Right, Bottom or Top) for each title.
+* Supports numerous docking styles **(Floating, Left, Right, Bottom or Top)** for each title.
 * Each of the custom Titles can be aligned to any position as required.
 
 ## Titles Positioning
 
 Below listed properties will help you to modify the positioning of the [Chart Title](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html).
-
-_Titles Positioning_
 
 <table>
 <tr>

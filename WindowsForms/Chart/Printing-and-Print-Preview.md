@@ -65,7 +65,7 @@ Me.chartControl1.PrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
-You can also specify if you want to print the chart in Color or GrayScale using this property.
+You can also specify if you want to print the chart in Color or GrayScale using [PrintColorMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrintColorMode.html) property.
 
 <table>
 <tr>
@@ -108,7 +108,7 @@ Setting GrayScale print mode for the chart lets you print the chart in a gray sc
 
 A sample illustrating the printing features is available in the below location.
 
-..\My Documents\Syncfusion\EssentialStudio\_Version Number_\Windows\Chart.Windows\Samples\2.0\Print\Chart Print
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Print\Chart Print
 
 ## Displaying ToolBar while printing
 

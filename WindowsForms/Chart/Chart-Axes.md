@@ -11,11 +11,11 @@ documentation: ug
 
 An axis in EssentialChart is represented by the [ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html) class. The axes are stored in the Chart control's Axes collection.
 
-By default, this collection contains two primary axes. These two axes can also be accessed through the PrimaryXAxis and PrimaryYAxis.
+By default, this collection contains two primary axes. These two axes can also be accessed through the [PrimaryXAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrimaryXAxis.html) and [PrimaryYAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrimaryYAxis.html).
 
 The [PrimaryXAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrimaryXAxis.html) is usually rendered at the bottom, horizontally, while the [PrimaryYAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrimaryYAxis.html) is usually rendered at the left, vertically. There might be exceptions to this rule as in the case of a Bar chart where the above x and y axis positions are reversed.
 
-The title for an axis is set through the Title property, and the [TitleAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~TitleAlignment.html) property lets you align the same.
+The title for an axis is set through the [Title](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~Title.html) property, and the [TitleAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~TitleAlignment.html) property lets you align the same.
 
 Axes features are discussed under the following topics:
 
@@ -23,7 +23,7 @@ Axes features are discussed under the following topics:
 
 Categorical axis displays text instead of number as labels i.e. labels are not linear in categorical axis. To use the categorical axis, you can set the **ValueType** property of the **PrimaryXAxis** to **Category**. Default value of **ValueType** property is **Double**.
 
-N> Categorical axis is supported only for x-axis
+N> Categorical axis is supported only for x-axis.
 
 You can set x-axis to display categorical values using the following code
 
@@ -43,7 +43,8 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 {% endhighlight %}
 {% endtabs %}
 
-Chart displaying categorical values in x-axis
+**Chart displaying categorical values in x-axis**
+
 ![](Chart-Axes_images/Chart-Axes_img39.png)
 
 ## Indexed X Values
@@ -58,7 +59,7 @@ In the figure below, the first chart shows a line chart that is not-indexed whil
 
 N> Indexing is supported only on the x-axis in Essential Chart.
 
-You can enable x-axis indexing or categorizing through the [Indexed](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Indexed.html) property of the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) as shown below:
+You can enable x-axis indexing or categorizing through the [Indexed](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Indexed.html) property of the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) as shown below. This property automatically affects all the x-axes in the chart.
 
 {% tabs %}  
 {% highlight c# %}
@@ -74,8 +75,6 @@ Me.chartControl1.Indexed = True
 {% endhighlight %}
 {% endtabs %}
 
-The above property automatically affects all the x-axes in the chart.
-
 You can also optionally customize the labels of the points in such an indexed series as explained in [Chart Labels Customization](#customizing-label-text).
 
 ## Inverted Axis
@@ -89,11 +88,14 @@ Chart Axis Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Inversed</td><td>
+
+{{'[Inversed](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~Inversed.html)'| markdownify }}
+</td><td>
 Indicates whether the axis should be reversed.</td></tr>
 </table>
 
 {% tabs %}  
+
 {% highlight c# %}
 
 // This inverts the specified chart axis.
@@ -121,7 +123,7 @@ The following image shows a chart whose x and y axes have been reversed.
 
 ## Opposed Axis
 
-For every chart type there is an implied x-axis and y-axis position and by default all the x-axes and y-axes will be rendered in that corresponding position. You can override this default behavior by setting the [OpposedPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~OpposedPosition.html) property to true for an axis which will cause it to be rendered in a side opposite to that of the implied position.
+For every chart type, there is an implied x-axis and y-axis position and by default all the x-axes and y-axes will be rendered in that corresponding position. You can override this default behavior by setting the [OpposedPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~OpposedPosition.html) property to true for an axis which will cause it to be rendered in a side opposite to that of the implied position.
 
 {% tabs %}  
 
@@ -154,7 +156,7 @@ The above code snippet will place both the x and y-axes in the position opposite
 
 ![](Chart-Axes_images/Chart-Axes_img5.jpeg)
 
-You can similarly set this property on any custom ChartAxis that you might add to the chart. Using multiple axes in a chart is described in this topic: Multiple Axes.
+You can similarly set this property on any custom ChartAxis that you might add to the chart. 
 
 The [OpposedPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~OpposedPosition.html) along with [Inversed](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~Inversed.html) setting could be useful for implementing charts for right-to-left cultures. 
 
@@ -309,7 +311,7 @@ chartControl1.ChartArea.YLayouts.Add(layout1)
 {% endhighlight %}
 {% endtabs %}
 
-N> All the axes with the same orientation must be added to ChartAxisLayout (PrimaryAxis as well) as illustrated in the above code snippet.
+N> All the axes with the same orientation must be added to [ChartAxisLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxisLayout.html) (PrimaryAxis as well) as illustrated in the above code snippet.
 
 ## Axis Value Type
 
@@ -319,7 +321,7 @@ You can set the value type for an axis using [Axes.ValueType](https://help.syncf
 * datetime
 * logarithmic
 
-If you set the ValueType to 'Logarithmic', then you need to specify the log base for the axis using [Axes.LogBase](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~LogBase.html) property. The default value of LogBase is 10.
+If you set the ValueType to **Logarithmic**, then you need to specify the log base for the axis using [Axes.LogBase](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~LogBase.html) property. The default value of **LogBase is 10**.
 
 {% tabs %}  
 
@@ -336,7 +338,7 @@ this.chartControl1.PrimaryXAxis.LogBase = 3;
 
 ### Automatic Range Calculation
 
-The range and intervals for an axis are automatically calculated by the built-in "nice range calculation engine", by default. This engine takes a raw data series and comes up with a nice human readable range of numbers in which to represent them. For example, if the data series contains points in the range 1.2 - 3.7, the engine would come up with a scale of 0 - 5 for the axis with 10 intervals of 0.5 each.
+The range and intervals for an axis are automatically calculated by the built-in **nice range calculation engine**, by default. This engine takes a raw data series and comes up with a nice human readable range of numbers in which to represent them. For example, if the data series contains points in the range 1.2 - 3.7, the engine would come up with a scale of 0 - 5 for the axis with 10 intervals of 0.5 each.
 
 This default behavior is controlled by the [ChartAxis.RangeType](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~RangeType.html) property which is set to Auto by default.
 
@@ -344,7 +346,7 @@ This default behavior is controlled by the [ChartAxis.RangeType](https://help.sy
 
 Sometimes the automatic range generation might not be good enough for you, in which case you can specify a custom range on the axis. You should start by setting the [ChartAxis.RangeType](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~RangeType.html) property to set. Then use one of the following properties to specify a custom range.
 
-_Properties_
+**Properties**
 
 <table>
 <tr>
@@ -473,7 +475,7 @@ Description</th></tr>
 </td><td>
 Auto</td><td>
 Double</td><td>
-Indicates whether one boundary of the calculated range should be tweaked to zero. Such tweaking will happen only if zero is within a reasonable distance from the calculated boundary. To ensure that one boundary is always zero, use the "ForceZero" setting instead. Default value is true.</td></tr>
+Indicates whether one boundary of the calculated range should be tweaked to zero. Such tweaking will happen only if zero is within a reasonable distance from the calculated boundary. To ensure that one boundary is always zero, use the ForceZero setting instead. Default value is true.</td></tr>
 <tr>
 <td>
 {{'[ForceZero](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~ForceZero.html)'| markdownify }}
@@ -490,7 +492,6 @@ Double, DateTime</td><td>
 Lets you use the properties Origin and OriginDate below. Default value is false.</td></tr>
 <tr>
 <td>
-Origin
 {{'[Origin](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~Origin.html)'| markdownify }}
 </td><td>
 Auto and Set</td><td>
@@ -542,7 +543,7 @@ Specifies if there should be any padding applied between the points and the axes
 
 ## Axis Dimensions
 
-The axis' starting point, length and the whole rectangle (comprising the axis and it's labels) can be customized using the following properties.
+The axis starting point, length and the whole rectangle (comprising the axis and it's labels) can be customized using the following properties.
 
 <table>
 <tr>
@@ -763,7 +764,7 @@ Me.chartControl1.PrimaryYAxis.LabelAlignment = System.Drawing.StringAlignment.Fa
 
 The formatting options above will usually satisfy the label text requirements. However, there are many other scenarios where this might not be sufficient. Here are some ways to customize the text rendered in the label.
 
-Customizing the label text for the automatically generated intervals
+Customizing the label text for the automatically generated intervals.
 
 <table>
 <tr>
@@ -1010,7 +1011,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, Ne
 
 ### Intersecting Labels
 
-Sometimes the chart dimensions could cause the labels to intersect. The chart will, by default, render those texts one over the other. But, it also has some built-in capabilities to workaround this overlap and lets you dictate the technique to follow. Refer to the properties below.
+Sometimes the chart dimensions could cause the labels to intersect. By default, the chart will render those texts one over the other. But, it also has some built-in capabilities to workaround this overlap and lets you dictate the technique to follow. Refer to the properties below.
 
 **Intersecting Labels**
 
@@ -1144,7 +1145,7 @@ If a [ChartAxisLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/cha
 
 To add a tooltip for chart, set the [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolTips.html) property to true. By default [ChartAxisLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html) content will be taken as tooltip content.  You can also customize the tooltip content using the [ChartFormatAxisLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~FormatLabel_EV.html) event. 
 
-The following code illustrates how to add a customized tooltip for ChartAxisLabel:
+The following code illustrates how to add a customized tooltip for [ChartAxisLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html):
 
 {% tabs %}  
 
@@ -1358,7 +1359,7 @@ Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 
 ### Multiline Chart Axes Title
 
-You can now wrap the axes titles and display them as multiline text. Set multiline title text in Axis.Title property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
+You can now wrap the axes titles and display them as multiline text. Set multiline title text in [Axis.Title](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~Title.html) property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
 
 ![](Chart-Axes_images/Chart-Axes_img21.jpeg)
 
@@ -1556,7 +1557,7 @@ Specifies the angle of rotation relative to the x-axis. Default value is 30f.</t
 <td>
 {{'[ColumnDrawMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ColumnDrawMode.html)'| markdownify }}
 </td><td>
-Specifies the mode of column drawing when in 3-D.<ul><li> PlaneMode—Columns from different series are drawn with the same depth.</li><li> InDepthMode—Columns from different series are drawn with different depths.</li></ul></td></tr>
+Specifies the mode of column drawing when in 3-D.<ul><li> PlaneMode - Columns from different series are drawn with the same depth.</li><li> InDepthMode - Columns from different series are drawn with different depths.</li></ul></td></tr>
 <tr>
 <td>
 <br>
@@ -1633,7 +1634,7 @@ Me.chartControl1.RealMode3D = True
 
 ### Rotating Chart
 
-The end-users can be allowed to rotate the chart at run-time, using the mouse (middle or right mouse button) by setting the [EnableMouseRotation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableMouseRotation.html) property to true. 
+The end-users can be allowed to rotate the chart at run-time by using the mouse (middle or right mouse button) by setting the [EnableMouseRotation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableMouseRotation.html) property to true. 
 
 N> Rotation will not be possible with the LEFT-MOUSE button by enabling this property.
 
@@ -2005,12 +2006,11 @@ Breaks are very useful if you add points with too large difference in values. To
 There are three possible modes. They are,
 
 * ChartBreaksMode.None - If this value is set, breaks are not used.
+* ChartBreaksMode.Auto - If this mode is enabled, chart will compute the breaks ranges automatically. You can use the ChartAxis.BreakRanges.BreakAmount to set the minimal relative difference between values (default value is 0.1, value range is 0.1). The ratio of empty space should be less than the property value to break the range. This mode has several exclusions.
 * ChartBreaksMode.Manual (default) - If this value is set, you can manually set the breaks ranges. To do this, use following methods.
 * ChartAxis.BreakRanges.Union – add a new break range.
 * ChartAxis.BreakRanges.Exclude – remove the break range.
-* ChartAxis.BreakRanges.Clear – remove all break ranges.
-* ChartBreaksMode.Auto - If this mode is enabled, chart will compute the breaks ranges automatically. You can use the ChartAxis.BreakRanges.BreakAmount to set the minimal relative difference between values (default value is 0.1, value range is 0.1). The ratio of empty space should be less than the property value to break the range.
-* This mode has several exclusions.
+* ChartAxis.BreakRanges.Clear – remove all break ranges. 
 * Breaks are computed only for actual y-axis of series.
 * Breaks don't work with zooming.
 * Breaks don't work with stacking.
@@ -2109,7 +2109,7 @@ To view a sample:
 
 1. Open the Syncfusion Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
-3. Navigate to Chart samples Chart Axes Axis Crossing. 
+3. Navigate to Chart samples-> Chart Axes -> Axis Crossing. 
 
 ### Enable crossing X and Y axis 
 
@@ -2120,7 +2120,9 @@ To enable crossing X and Y axis, specify the Y axis data point value, where you 
 {% highlight c# %}
 
 this.chartControl1.PrimaryXAxis.Crossing=150;
+
 this.chartControl1.PrimaryYAxis.Crossing = 6;
+
 this.chartControl1.Series3D = true;
 
 {% endhighlight %}
@@ -2160,7 +2162,7 @@ Data Type </th></tr>
 
 {{'[AxisLabelPlacement](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~AxisLabelPlacement.html)'| markdownify }}
 </td><td>
-Specifies the position of the label in a chart axes. It can be placed inside or outside the plotted chart area using ChartPlacement enum. </td><td>
+Specifies the position of the label in a chart axes. It can be placed inside or outside the plotted chart area using {{'[ChartPlacement](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPlacement.html)'| markdownify }} enum. </td><td>
     NA</td><td>
  NA	</td></tr>
 </table>
@@ -2170,9 +2172,9 @@ Specifies the position of the label in a chart axes. It can be placed inside or 
 To view a sample:
 
 1. Open the Syncfusion Dashboard.
-2. Click the User Interface > Windows Forms. 
+2. Click the User Interface -> Windows Forms. 
 3. Click Run Samples.
-4. Navigate to Chart samples > Chart Axes > ChartAxisCustomization.
+4. Navigate to Chart samples -> Chart Axes -> ChartAxisCustomization.
 
 ### Positioning Axis Label
 
