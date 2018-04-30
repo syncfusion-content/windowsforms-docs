@@ -9,13 +9,13 @@ documentation: ug
 
 # Feature
 
-This section explains all the design time feature of MessageBoxAdv.
+This section explains all the design time features of MessageBoxAdv.
 
-## Details Pane
+## Details pane
 
 This pane helps to view the detail message about the text shown in the MessageBoxAdv.
 
-**Details View**
+**Details view**
 
 {% tabs %}
 
@@ -38,13 +38,13 @@ result = MessageBoxAdv.Show(Me,"Hello World !", CaptionText, MessageBoxButtons.O
 
 Ex: Detail Pane Figure
 
-![](MessageBoxAdv_images/MessageBoxAdv_img18.jpg) 
+![](MessageBoxAdv_images/MessageBoxAdv_img18.jpg)
 
 Eg: Collapsed Pane
 
-![](MessageBoxAdv_images/MessageBoxAdv_img19.jpg) 
+![](MessageBoxAdv_images/MessageBoxAdv_img19.jpg)
 
-## Button Support
+## Button support
 
 By default, the MessageBox only has the one Ok button, but this can be changed, in case you want to ask your user a question and not just show a piece of information. Also notice how I use multiple lines in this message, by using a line break character (\n):
 You control which buttons are displayed by using a value from the **MessageBoxButtons** enumeration - in this case, a Yes, No and Cancel button is included. The following values, which should be self-explanatory, can be used:
@@ -136,7 +136,7 @@ MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAd
 
 **YesNoCancel**
 
-This option helps to show the MessageBoxAdv with combination of Yes,No and Cancel Button.
+This option helps to show the MessageBoxAdv with combination of Yes, No, and Cancel Button.
 
 {% tabs %}
 
@@ -184,7 +184,7 @@ MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAd
 
 **AbortRetryIgnore**
 
-This option helps to show the MessageBoxAdv with combination of Abort, Retry and Ignore Button.
+This option helps to show the MessageBoxAdv with combination of Abort, Retry, and Ignore Button.
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAd
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img25.jpg) 
 
-## Icon Customization
+## Icon customization
 
 MessageBoxAdv control provides support to add the custom image. It can be shown or invoked using the MessageBoxAdv show method.
 
@@ -232,7 +232,7 @@ MessageBoxAdv.Show("Metro Theme Customization", "This is Syncfusion MessageBoxAd
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img26.jpg)
 
-## Right To left Support
+## Right to left support
 
 MessageBoxAdv support the RightToLeft support which aligns the content of the messageboxadv in right to left manner or Left to Right Manner.
 
@@ -256,9 +256,9 @@ MessageBoxAdv.Show("Right To Left support", "This is Syncfusion MessageBoxAdv Co
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img28.jpg) 
 
-## Dialog Result
+## Dialog result
 
-This support helps to display the result of the MessageBoxButton .
+This support helps to display the result of the MessageBoxButton.
 
 {% tabs %}
 
@@ -286,7 +286,7 @@ DlgRtTxtBox.Text = CustomButtons(clickedIndex - 1)
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img30.jpg) 
 
-## Localization Support
+## Localization support
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. MessageBoxAdv control can be localized in any Languages, based on application requirement by following below steps.
 
@@ -296,7 +296,6 @@ Step 2: It will add the GetLocalizedString function in the LocalizationProvider 
 
 For example:
 Here, MessageBoxAdv control is localized in German Language.
-The following code demonstrates the same:
 
 {% tabs %}
 
@@ -403,4 +402,4 @@ End Class
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img31.jpg) 
+![](MessageBoxAdv_images/MessageBoxAdv_img31.jpg)

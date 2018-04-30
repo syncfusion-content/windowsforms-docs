@@ -35,7 +35,7 @@ This section describes about the functionality of the chart wizard.
 
 To display the chart wizard at design-time, follow the below steps.
 
-1. Add a ChartControl to your form.
+1. Add a [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) to your form.
 2. Right-click anywhere in the chart to see a context menu.
 3. Select the chart wizard item from the context menu.
 
@@ -63,21 +63,21 @@ The wizard provides six different categories whose settings can be customized.
 
 1. [Chart type](#chart-type) to let you visualize and select the type of chart to display.
 2. [Series](#series) to let you add custom series to the chart and also setup data binding.
-3. [Appearance](#appearance) to customize the color, font etc. of the ChartControl and ChartArea.
+3. [Appearance](#appearance) to customize the color, font etc. of the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and [ChartArea](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea.html).
 4. [Axes](#axes) to change the chart control's axes settings.
-5. Points] to customize the point labels.
+5. [Points](#points) to customize the point labels.
 6. [Legend](#legend) to set the properties of the legend area.
 7. [Toolbar](#toolbar) to customize the various properties of the toolbar.
 
 There is a preview panel where a Chart is rendered with the latest settings. The sub topics of this section will guide you through these settings.
 
-After making necessary changes, click the Apply to apply those settings in the chart and finally, click the Finish to close the Wizard.
+After making necessary changes, click the Apply button to apply those settings in the chart and finally, click the Finish to close the Wizard.
 
 ## Chart Type
 
 In this view, you can visually see the different chart types that could be used to render your data points. Simply click on the image of the chart type to pick the type you are interested in.
 
-3D Style - The chart will be rendered in 3D mode. Corresponds to the Series3D property.
+3D Style - The chart will be rendered in 3D mode. Corresponds to the [Series3D](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Series3D.html) property.
 
 ![](Chart-Wizard_images/Chart-Wizard_img2.png)
 
@@ -89,27 +89,35 @@ In this view, you can visually see the different chart types that could be used 
 
 ## Series
 
-A Chart can display multiple series. Properties such as Name, Data source, Series Data can be set or changed for any of the series, easily, through this wizard.
+A Chart can display multiple series. Properties such as [Name](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Name.html), Data source, Series Data can be set or changed for any of the series, easily, through this wizard.
 
 ![](Chart-Wizard_images/Chart-Wizard_img3.png)
 
 Below are the three tabs in the Wizard for Series.
 
-1. Add points to series 
-2. Click Add button to add a new series. 
-3. Select the series to which you need to add points. 
-4. This tab provides options to select any chart type using the Type combobox and series name using Series Name textbox.
-5. Clicking the Edit points button, opens the ChartPoint Collection Editor.
+**Add points to series**
+
+1.Click Add button to add a new series.
+
+2.Select the series to which you need to add points.
+
+3.This tab provides options to select any chart type using the Type combobox and series name using Series Name textbox.
+
+4.Clicking the Edit points button, opens the ChartPoint Collection Editor.
 
 ![](Chart-Wizard_images/Chart-Wizard_img4.jpeg)  
 
-6. Click Add to add points to the series. Give X and Y values. Click OK.
+5.Click Add button to add points to the series and give X and Y values. Then, click OK.
 
 ![](Chart-Wizard_images/Chart-Wizard_img5.png)
 
-Data source - The data source to connect with, can be selected using the data source page. Once the data source is selected, it will guide you through the connectivity steps. Refer [Data Binding in Chart Through Chart Wizard](http://help.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information. This topic describes data binding techniques at the design-time through Chart Wizard tools.
+**Data source**
 
-Series Data - Using this tab, we can change the type of the chart. Whenever an external data source is selected using the Data Source tab, XValue and YValue ComboBox will be supplied with all the column names of the external data source.
+The data source to connect with, can be selected using the data source page. Once the data source is selected, it will guide you through the connectivity steps. Refer [Data Binding in Chart Through Chart Wizard](http://help.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information. This topic describes data binding techniques at the design-time through Chart Wizard tools.
+
+**Series Data**
+
+Using this tab, we can change the type of the chart. Whenever an external data source is selected using the Data Source tab, XValue and YValue ComboBox will be supplied with all the column names of the external data source.
 
 Select one column for XValue and another for YValue, between which you wanted to draw the chart. Refer [Data Binding in Chart Through Chart Wizard](http://help.syncfusion.com/windowsforms/chart/chart-data#data-binding-in-chart-through-chart-wizard) topic for detailed information.
 
@@ -123,13 +131,13 @@ Select one column for XValue and another for YValue, between which you wanted to
 
 ## Appearance
 
-Customize the appearance of the ChartControl easily through the Chart Wizard. Here the appearance of the chart control and chart area such as color, font etc. can be set.
+Customize the appearance of the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) easily through the Chart Wizard. Here the appearance of the chart control and chart area such as color, font etc. can be set.
 
 There are three tabs available in the wizard, for appearance settings.
 
-* Color Palette -Essential Chart comes with a variety of built-in palettes. You can pick one of the palettes from the list and also get a preview of how the chart would look like. Note that you can also add a custom palette to the chart, but that has to be done in code.
-* Border and Back Color - Under this tab, the back color for the chart control as well as for the chart area can be set. The user can also set the Border color and Border style for the chart area. 
-* Title - This gives options to set the title for the chart control. Also the position, alignment and color of the title can be set.
+* **Color Palette** -Essential Chart comes with a variety of built-in palettes. You can pick one of the palettes from the list and also get a preview of how the chart would look like. Note that you can also add a custom palette to the chart, but that has to be done in code.
+* **Border and Back Color** - Under this tab, the back color for the chart control as well as for the chart area can be set. The user can also set the Border color and Border style for the chart area. 
+* **Title** - This gives options to set the title for the chart control. Also the position, alignment and color of the title can be set.
 
 ![](Chart-Wizard_images/Chart-Wizard_img7.png)
 
@@ -145,16 +153,16 @@ Various settings like grid line, axis title, value type, formats and other axes 
 
 The below properties can be set separately for x-axis and y-axis. 
 
-* Grid Lines - Lets you show/hide the grid lines for this axis.
-* Axis Title - The title text for the axis can be specified here.
-* Inversed, Opposed - Specifies whether the axes are inversed, opposed.
-* Value Type - If you know the type of data points you will be adding to this axis, specify it using the combo box. Possible value types are double, datetime, custom and logarithmic.
-* Format - Specifies the label format.
-* Edit Labels - The labels at the axes can be varied by entering the values in the Collection Editor Dialog box, which pops up when the Edit Labels button is clicked.
+* **Grid Lines** - Lets you show/hide the grid lines for this axis.
+* **Axis Title** - The title text for the axis can be specified here.
+* **Inversed, Opposed** - Specifies whether the axes are inversed, opposed.
+* **Value Type** - If you know the type of data points you will be adding to this axis, specify it using the combo box. Possible value types are double, datetime, custom and logarithmic.
+* **Format** - Specifies the label format.
+* **Edit Labels** - The labels at the axes can be varied by entering the values in the Collection Editor Dialog box, which pops up when the Edit Labels button is clicked.
 
 ![](Chart-Wizard_images/Chart-Wizard_img8.png)
 
-* Collection Editor Dialog - Click the Add button to add a label to the collection. Select the added label to view its properties on its right side. The color of the label, font, value type and so on can be changed using the properties window. If any label needs to be removed from the collection editor, select the label and click the Remove button. After adding all the values to the collection and making the necessary changes in the properties, click OK. In a similar way the labels can be edited for y-axis also.
+* **Collection Editor Dialog** - Click the Add button to add a label to the collection. Select the added label to view its properties on its right side. The color of the label, font, value type and so on can be changed using the properties window. If any label needs to be removed from the collection editor, select the label and click the Remove button. After adding all the values to the collection and making the necessary changes in the properties, click OK. In a similar way the labels can be edited for y-axis also.
 
 ![](Chart-Wizard_images/Chart-Wizard_img9.jpeg)
 
@@ -166,21 +174,24 @@ The below properties can be set separately for x-axis and y-axis.
 
 ## Points
 
-This particular section in the wizard comes with the below options. It lets you display labels for the data points by simply checking Show labels option. 
+It lets you display labels for the data points by simply checking Show labels option. 
 
-* Labels Font - Sets font style for the labels.
-* Labels Color - Sets color for the labels.
-* Labels Rotate Angle - Sets the angle of rotation of the labels.
-* Label Alignment - Sets the alignment of the labels on the series points.
-* Apply To - Specifies the series name to which the above settings should be applied.
+* **Labels Font** - Sets font style for the labels.
+* **Labels Color** - Sets color for the labels.
+* **Labels Rotate Angle** - Sets the angle of rotation of the labels.
+* **Label Alignment** - Sets the alignment of the labels on the series points.
+* **Apply To** - Specifies the series name to which the above settings should be applied.
 
 ![](Chart-Wizard_images/Chart-Wizard_img10.png)
 
 ## Toolbar
 
-The final option in the Chart Wizard is the ChartControl ToolBar. It has two tabs.
+The final option in the Chart Wizard is the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) ToolBar. It has two tabs.
 
 * ToolBar
+* BorderStyle
+
+**ToolBar**
 
 Under this tab, the user can customize the toolbar's back color, button style as well as set width and Height for the buttons through the respective options.
 
@@ -192,7 +203,7 @@ Clicking the Edit Items button will invoke the below editor. It provides options
 
 ![](Chart-Wizard_images/Chart-Wizard_img12.jpeg)
 
-* Border Style
+**Border Style**
 
 Toolbar's border, border style, border width and border color can be set through this tab.
 
@@ -206,13 +217,20 @@ Toolbar's border, border style, border width and border color can be set through
 
 ## Legend
 
-The various properties of the chart legend such as position, alignment, orientation etc., can be changed easily using this wizard. It has two tabs.
+The various properties of the chart legend such as [Position](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Position.html), [Alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Alignment.html), [Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Orientation.html) etc., can be changed easily using this wizard. It has two tabs.
 
-* Legend - In this window, the user can customize the legend's visibility, set it's position and alignment using Position and Alignment combo boxes provided. You can also set back interior color using Back Interior combo box.
+* Legend
+* BorderStyle
+
+**Legend**
+
+Legend - In this window, the user can customize the legend's visibility, set it's position and alignment using Position and Alignment combo boxes provided. You can also set back interior color using Back Interior combo box.
 
 ![](Chart-Wizard_images/Chart-Wizard_img14.png)
 
-* Border Style - Here the user can set custom borders to the legend. The visibility of the border, border color, its Dash style as well as the Border Width can be set easily by selecting the appropriate options.
+**BorderStyle**
+
+Border Style - Here the user can set custom borders to the legend. The visibility of the border, border color, its Dash style as well as the Border Width can be set easily by selecting the appropriate options.
 
 ![](Chart-Wizard_images/Chart-Wizard_img15.png)
 
@@ -224,7 +242,7 @@ The various properties of the chart legend such as position, alignment, orientat
 
 ## Chart Templates
 
-EssentialChart is provides support to save the series and point properties as XML file. This enables you to save the series and point properties into chart template and load the chart templates into the Chart control when needed. 
+EssentialChart provides support to save the series and point properties as XML file. This enables you to save the series and point properties into chart template and load the chart templates into the [Chart Control](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) when needed. 
 
 ### Use Case Scenarios
 
@@ -232,13 +250,13 @@ When you want to create charts with consistent look and feel, you can utilize th
 
 ### Working with Chart Template
 
-Essential Chart is now associated with the creation and loading of chart templates into the ChartControl. It provides easy methods to save and load the templates. This section will walk you through the saving, loading and resetting of the chart templates and the various benefits of using it.
+Essential Chart is now associated with the creation and loading of chart templates into the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html). It provides easy methods to save and load the templates. This section will walk you through the saving, loading and resetting of the chart templates and the various benefits of using it.
 
 ### Benefits
 
 * Aesthetic items like appearance, positioning etc., of a chart can be saved in the template.
 * Appearance settings saved in a Chart Template is reusable.
-* Also stores any static data, if available in the chart.
+* Stores any static data, if available in the chart.
 * The user can save the existing structure of the chart control to an .xml file format.
 * All the charts in your applications can be created with consistent look and feel.
 
@@ -248,17 +266,18 @@ Essential Chart is now associated with the creation and loading of chart templat
 
 ### Save Template
 
-The appearance settings for various components of a Chart like ChartSeries, ChartArea, Series properties and Point properties can be stored in a template, which can be loaded into new Chart control when needed.
+The appearance settings for various components of a Chart like [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html), [ChartArea](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea.html), Series properties and Point properties can be stored in a template, which can be loaded into new [Chart Control](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) when needed.
 
-A chart template can contain the properties of more than one data series. When such templates are loaded into a destination ChartControl, the appearance settings of the data series will be applied in a sequential order, i.e., the first set of appearance settings of a data series will be applied to the destination Chart's first series and the second set of appearance properties of the data series will be applied to the destination Chart's second series and so on. 
+A chart template can contain the properties of more than one data series. When such templates are loaded into a destination [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html), the appearance settings of the data series will be applied in a sequential order, i.e., the first set of appearance settings of a data series will be applied to the destination Chart's first series and the second set of appearance properties of the data series will be applied to the destination Chart's second series and so on. 
 
 If the destination collection's length is larger than the source collection, then the settings will repeat itself for these additional entries in the destination collection.
 
 These Charts can be saved as templates in the below two ways.
 
-* Selecting the Save Template option from the context menu as shown above.
-* By clicking the Save Template designer verb in the Visual Studio property browser as shown above.
-* ChartTemplate has a static method to save the data programmatically. We need to pass ChartControl instance and a file name(it can accept stream file also.), through this save method.
+* Selecting the **Save Template** option from the context menu as shown above.
+* By clicking the **Save Template** designer verb in the Visual Studio property browser as shown above.
+
+[ChartTemplate](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartTemplate.html) has a static method to save the data programmatically. We need to pass [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) instance and a file name(it can accept stream file also.), through this save method.
 
 {% tabs %}  
 
@@ -277,21 +296,21 @@ ChartTemplate.Save(Me.chartControl1, "TemplateName.xml")
 
 ### Load Template
 
-EssentialChart provides support to load the saved Chart template into a new chart control. This loads the series properties and the point properties, which was saved in a XML file and applies these properties into the new chart control.
+EssentialChart provides support to load the saved [Chart Template](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) into a new chart control. This loads the series properties and the point properties, which was saved in a XML file and applies these properties into the new chart control.
 
-* At the design time, by selecting the Load Template from the context menu.
-* By clicking the Load Template designer verb, in the Visual Studio property browser. 
+* Selecting the **Load Template** from the context menu at the design time.
+* By clicking the **Load Template** designer verb in the Visual Studio property browser. 
 
-ChartTemplate has static method, to load the template data programmatically. We need to pass the ChartControl, which will be applied with the loaded template data.
+[ChartTemplate](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) has static method to load the template data programmatically. We need to pass the ChartControl which will be applied with the loaded template data.
 
 ### Reset Template
 
-The ChartControl, which when loaded with a template will be applied with the appearance and other settings that were stored in the template. These settings can be reset and the Chart can be reverted back to its original appearance by using the below two methods.
+The [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html), which when loaded with a template will be applied with the appearance and other settings that were stored in the template. These settings can be reset and the Chart can be reverted back to its original appearance by using the below two methods.
 
-* At the design time, by selecting the "Reset Template.." from the context menu.
-* By clicking the "Reset Template" link in the Visual Studio property browser.
+* Selecting the **Reset Template** from the context menu at the design time.
+* By clicking the **Reset Template** link in the Visual Studio property browser.
 
-ChartTemplate can be reset using the following simple statements,
+[ChartTemplate](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) can be reset using the following simple statements,
 
 {% tabs %}  
 
@@ -314,12 +333,12 @@ ct.Reset(Me.chartControl1)
 
 ### Sample Link
 
-To view a sample:
+**To view a sample:**
 
 1. Open the Syncfusion Dashboard.
-2. Select User Interface > Windows Forms.
+2. Select User Interface -> Windows Forms.
 3. Click Run Samples.
-4. Navigate to Chart samples > User Interaction > ChartSerialization. 
+4. Navigate to Chart samples -> User Interaction -> ChartSerialization. 
 
 ## Tasks Window
 
@@ -353,11 +372,11 @@ Left of the chart.</td></tr>
 <tr>
 <td>
 Right</td><td>
-Left of the chart.</td></tr>
+Right of the chart.</td></tr>
 <tr>
 <td>
 Bottom</td><td>
-Left of the chart.</td></tr>
+Bottom of the chart.</td></tr>
 <tr>
 <td>
 Floating</td><td>
@@ -370,15 +389,15 @@ Specifies background brush of the control.
 
 #### Area Back Interior
 
-Specifies background brush of Chart Area of the control.
+Specifies background brush of [Chart Area](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea.html) of the control.
 
 #### Chart Back Interior
 
-Specifies background brush of ChartInterior.
+Specifies background brush of [ChartInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInterior.html).
 
 ### Palette
 
-The Palette that is to be used to provide default colors for the chart series and other chart elements. Allow Gradient Palette property is used to enable or disable the gradient values of the palettes.
+The [Palette](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Palette.html) that is to be used to provide default colors for the chart series and other chart elements. [AllowGradientPalette](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~AllowGradientPalette.html) property is used to enable or disable the gradient values of the palettes.
 
 ### ShowLegend
 
@@ -454,6 +473,6 @@ Specifies the Title of Primary x axis.
 
 Specifies the Title of Primary y axis.
 
-### Spacing Between Points
+### Spacing between Points
 
 Specifies the spacing between the series points.

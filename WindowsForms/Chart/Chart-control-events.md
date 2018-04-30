@@ -24,9 +24,9 @@ The Chart handles the following mouse related events when the user interacts wit
 * ChartRegionMouseDown Event
 * ChartRegionDoubleClick Event
 
-The above events are raised with a ChartRegionMouseEventArgs that contain the following properties.
+The above events are raised with a [ChartRegionMouseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartRegionMouseDown_EV.html) that contain the following properties.
 
-_Properties_
+**Properties**
 
 <table>
 <tr>
@@ -35,21 +35,23 @@ ChartRegionMouseEventArgs Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Point</td><td>
+
+{{'[Point](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs~Point.html)'| markdownify }}
+</td><td>
 Represents the client point where the event occurred.</td></tr>
 <tr>
 <td>
-Region (Expanded below)</td><td>
+{{'[Region (Expanded below)](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs~Region.html)'| markdownify }}
+</td><td>
 Returns the region associated with this event.</td></tr>
 <tr>
 <td>
-Button</td><td>
+{{'[Button](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs~Button.html)'| markdownify }}
+</td><td>
 Returns the right mouse button actions.</td></tr>
 </table>
 
-
-The Region property above includes several useful information about the kind of region the user is currently interacting with:
-
+The [Region](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs~Region.html) property above includes several useful information about the kind of region the user is currently interacting with.
 
 <table>
 <tr>
@@ -58,35 +60,44 @@ ChartRegion Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Description</td><td>
+
+{{'[Description](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegion~Description.html)'| markdownify }}
+</td><td>
 A text description of this region.</td></tr>
 <tr>
 <td>
-Type</td><td>
-Specifies the type of region. Possible values:* SeriesPoint - interacted on a data point.* HorAxisLabel - interacted on a horizontal axis* VerAxisLabel - interacted on a vertical axis* ChartCustom - interacted with a region that is none of the above.</td></tr>
+{{'[Type](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegion~Type.html)'| markdownify }}
+</td><td>
+Specifies the type of region. Possible values:</br><ul><li>SeriesPoint - interacted on a data point.</li><li>HorAxisLabel - interacted on a horizontal axis</li><li>VerAxisLabel - interacted on a vertical axis</li><li>ChartCustom - interacted with a region that is none of the above.</li></ul></td></tr>
 <tr>
 <td>
-<br>IsChartPoint</td><td>
+<br>
+{{'[IsChartPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegion~IsChartPoint.html)'| markdownify }}
+</td><td>
 Indicates whether the region is a Chart Point in the ChartSeries. This simply checks if the above mentioned Type is SeriesPoint.</td></tr>
 <tr>
 <td>
-SeriesIndex</td><td>
-The index into the Series array of the Chart in which this point occurs. If the Type is SeriesPoint.</td></tr>
+{{'[SeriesIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegion~SeriesIndex.html)'| markdownify }}
+</td><td>
+The index into the Series array of the Chart in which this point occurs if the Type is SeriesPoint.</td></tr>
 <tr>
 <td>
-PointIndex</td><td>
-The index into the Points array of the ChartSeries in which this point occurs. If the Type is SeriesPoint.</td></tr>
+{{'[PointIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegion~PointIndex.html)'| markdownify }}
+</td><td>
+The index into the Points array of the ChartSeries in which this point occurs if the Type is SeriesPoint.</td></tr>
 <tr>
 <td>
-Region</td><td>
+{{'[Region](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegion~Region.html)'| markdownify }}
+</td><td>
 The client region that represents this logical region.</td></tr>
 <tr>
 <td>
-ToolTip</td><td>
+{{'[ToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartRegion~ToolTip.html)'| markdownify }}
+</td><td>
 Specifies the tooltip for this region.</td></tr>
 </table>
 
-ChartRegionDoubleClick and ChartRegionMouseDown Events
+**ChartRegionDoubleClick and ChartRegionMouseDown Events:**
 
 {% tabs %} 
 
@@ -187,7 +198,7 @@ End Sub
 
 ## VisibleRangeChanged Event 
 
-ChartControl provides various zooming options for the user while interacting with the Chart. The VisibleRangeChanged event will be raised when the visible range changes during the zooming operation.
+[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) provides various zooming options for the user while interacting with the Chart. The [VisibleRangeChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~VisibleRangeChanged_EV.html) event will be raised when the visible range changes during the zooming operation.
 
 {% tabs %}  
 
@@ -216,11 +227,11 @@ End Sub
 
 ## ChartFormatAxisLabel Event
 
-This event is discussed in detail in this topic: Customizing Label Text.
+[ChartFormatAxisLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartFormatAxisLabel_EV.html) event is discussed in detail in this topic: [Customizing Label Text](https://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text).
 
 ## PrepareStyle Event
 
-When a series point is about to be rendered by the chart, it will raise this event and allow event subscribers to change the style used. 
+When a series point is about to be rendered by the chart, it will raise [PrepareStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PrepareStyle_EV.html) event and allow event subscribers to change the style used. 
 
 {% tabs %}  
 
@@ -287,7 +298,7 @@ End Sub
 
 ## SeriesInCompatible Event
 
-When the Chart has completed updating the series and finds out that series are incompatible, this event will be raised.
+When the Chart has completed updating the series and finds out that series are incompatible, [SeriesInCompatible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~SeriesIncompatible_EV.html) event will be raised.
 
 {% tabs %}  
 
@@ -316,7 +327,7 @@ End Sub
 
 ## LayoutCompleted Event
 
-This event is handled every time, a resizing of chart is caused and when the chart re-renders itself. Listening to this event helps in cases where you render custom images over the chart or position custom controls over the chart.
+[LayoutCompleted](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~LayoutCompleted_EV.html) event is handled every time, a resizing of chart is caused and when the chart re-renders itself. Listening to this event helps in cases where you render custom images over the chart or position custom controls over the chart.
 
 {% tabs %}  
 
@@ -345,7 +356,7 @@ End Sub
 
 ## ChartAreaPaint Event
 
-ChartAreaPaint event is discussed in Custom Drawing.
+[ChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaPaint_EV.html) event is discussed in [Custom Drawing](/windowsforms/chart/chart-appearance#custom-drawing).
 
 {% seealso %}
 
@@ -355,11 +366,11 @@ ChartAreaPaint event is discussed in Custom Drawing.
 
 ## ChartLegendFilterItems Event
 
-This event is discussed in detail in this topic: Chart Legend.
+[ChartLegendFilterItems](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~FilterItems_EV.html) event is discussed in detail in this topic: [ChartLegend](https://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items).
 
 ## PreChartAreaPaint Event
 
-PreChartAreaPaint event is raised before the chart area is painted.
+[PreChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PreChartAreaPaint_EV.html) event is raised before the chart area is painted.
 
 {% tabs %}  
 
@@ -373,4 +384,17 @@ private void chartControl1_PreChartAreaPaint(object sender, PaintEventArgs e)
 }
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+AddHandler Me.chartControl1.PreChartAreaPaint, AddressOf Me.chartControl1_PreChartAreaPaint
+    
+Private Sub chartControl1_PreChartAreaPaint(ByVal sender As Object, ByVal e As PaintEventArgs)
+
+    Me.chartControl1.BackColor = Color.Yellow
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}

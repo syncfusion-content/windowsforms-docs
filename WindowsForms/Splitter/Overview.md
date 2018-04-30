@@ -15,7 +15,7 @@ SplitterControl is a container control that enables end user to embed Grid and s
 
 
 
-## Key Features
+## Key features
 
 * Allows multiple views of the same grid.
-* The control also comes with predefined Default and Metro styles. 
+* The control also comes with predefined Default and Metro styles.

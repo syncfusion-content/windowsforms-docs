@@ -11,8 +11,6 @@ documentation: ug
 
 This section discusses the Culture settings of the PercentTextBox control.
 
-
-
 <table>
 <tr>
 <th>
@@ -37,39 +35,27 @@ Specifies if the NumberFormatInfo used for formatting will use the User Override
 </table>
 
 
-
+{% tabs %}
 {% highlight C# %}
 
-
-
 this.percentTextBox1.Culture = new System.Globalization.CultureInfo("ar-JO");
-
 this.percentTextBox1.CurrentCultureRefresh = true;
-
 this.percentTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None;
-
 this.percentTextBox1.UseUserOverride = true;
+
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.percentTextBox1.Culture = New System.Globalization.CultureInfo("ar-JO")
-
 Me.percentTextBox1.CurrentCultureRefresh = True
-
 Me.percentTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None
-
 Me.percentTextBox1.UseUserOverride = True
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](PercentTextBox-Images/Overview_img468.png) 
-
-
-
 
 N> The RefreshCulture() method can be used to refresh and reapply the culture specific settings.
 

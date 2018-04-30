@@ -144,7 +144,7 @@ Private Me.tabPageAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.
 
 ### DisableInActivePageImage
 
-The `DisableInactivePageImage` property specifies the value which determines whether the image should be disabled when the TabPage is not selected. The default value is True.
+The `DisableInactivePageImage` property specifies the value which determines whether the image should be disabled when the TabPage is not selected. The default value is `true`.
 
 <table>
 <tr>
@@ -371,7 +371,7 @@ Private Me.tabPageAdv1.TabForeColor = System.Drawing.Color.Sienna
 
 ## Border settings
 
-This section discusses the border settings available for the TabControlAdv. Set the `BorderVisible` property to true to display the control border. Default value is false.
+This section discusses the border settings available for the TabControlAdv. Set the `BorderVisible` property to `true` to display the control border. Default value is `false`.
 
 {% tabs %}
 

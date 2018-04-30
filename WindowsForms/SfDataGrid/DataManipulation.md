@@ -140,6 +140,27 @@ Me.sfDataGrid.Style.AddNewRowStyle.TextColor = Color.White
 
 ![](DataManipulation_images/AddNewRow_img6.png)
 
+### Adding a new row programmatically
+
+Programmatically, a new row can be added to the SfDataGrid.
+
+{% tabs %}
+{% highlight c# %}
+OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
+sfDataGrid.DataSource = orderInfoCollection.OrdersListDetails;
+
+OrderInfo orderInfo = new OrderInfo() { OrderID = 10111, CustomerID = "FRANS", ProductName = "Alice Mutton", Quantity = 55, UnitPrice = 90, ContactNumber = 999789845, ShipCountry = "Brazil" };
+orderInfoCollection.OrdersListDetails.Add(orderInfo);
+{% endhighlight %}
+{% highlight vb %}
+Dim orderInfoCollection As New OrderInfoCollection()
+sfDataGrid.DataSource = orderInfoCollection.OrdersListDetails
+
+Dim orderInfo As New OrderInfo() With {.OrderID = 10111, .CustomerID = "FRANS", .ProductName = "Alice Mutton", .Quantity = 55, .UnitPrice = 90, .ContactNumber = 999789845, .ShipCountry = "Brazil"}
+orderInfoCollection.OrdersListDetails.Add(orderInfo)
+{% endhighlight %}
+{% endtabs %}
+
 ## Delete Row
 SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing &lt;kbd&gt;Delete&lt;/kbd&gt; key. The deleting support can be enabled by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDeleting.html) property to true.
 {% tabs %}
@@ -216,3 +237,28 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+### Deleting a row programmatically
+
+Programmatically, a row can be deleted from the SfDataGrid. The following code shows how to delete particular row based on the values.
+
+{% tabs %}
+{% highlight c# %}
+var orderInfo = orderInfoCollection.OrdersListDetails.FirstOrDefault(order => order.OrderID == 10000);
+orderInfoCollection.OrdersListDetails.Remove(orderInfo);
+{% endhighlight %}
+{% highlight vb %}
+Dim orderInfo = orderInfoCollection.OrdersListDetails.FirstOrDefault(Function(order) order.OrderID = 10000)
+orderInfoCollection.OrdersListDetails.Remove(orderInfo)
+{% endhighlight %}
+{% endtabs %}
+
+The following code shows how to delete a row using the index of the row.
+
+{% tabs %}
+{% highlight c# %}
+orderInfoCollection.OrdersListDetails.RemoveAt(1);
+{% endhighlight %}
+{% highlight vb %}
+orderInfoCollection.OrdersListDetails.RemoveAt(1)
+{% endhighlight %}
+{% endtabs %}

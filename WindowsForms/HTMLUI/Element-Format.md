@@ -7,14 +7,16 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Element Format
+#  Element format
 
 Essential HTMLUI supports formatting of not only the entire HTML document as a whole, but also the individual elements. With HTMLUI, the user can replace any HTML element into some other format before displaying, in a view to develop advanced user interactivity.
 
 
-The following snippet shows how a text content can be replaced with an image in a text sequence. 
+The following snippet shows how a text content can be replaced with an image in a text sequence.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -45,7 +47,7 @@ this.htmluiControl1.Refresh();
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -75,13 +77,15 @@ End Sub
 
 {% endhighlight %}
 
-The following image shows the text element Time replaced by an image while displayed using HTMLUI.
+{% endtabs %}
+
+The following image shows the text element Time replaced by an image when displayed using HTMLUI.
 
 ![](Element-Format_images/Element-Format_img1.png)
 
 
 
-## ElementFormat Sample
+## ElementFormat sample
 
 This sample illustrates Element Formatting in HTMLUI.
 

@@ -13,7 +13,7 @@ The look and feel of the TabControlAdv can be customized through various propert
 
 ## Renaming TabItems
 
-TabControlAdv comes with the renaming functionality similar to Microsoft Excel. Users can edit TabControlAdv's text at run-time using the `LabelEdit` property which has to be set to True.
+TabControlAdv comes with the renaming functionality similar to Microsoft Excel. Users can edit TabControlAdv's text at run-time using the `LabelEdit` property which has to be set to `true`.
 
 <table>
 <tr>
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 LabelEdit</td><td>
-Specifies whether the text of the tab item is editable. Default value is False.</td></tr>
+Specifies whether the text of the tab item is editable. Default value is `false`.</td></tr>
 </table>
 
 To bring the text of the TabItem to the edit mode, the following can be done.
@@ -115,7 +115,7 @@ Me.tabControlAdv1.Padding = New Point(12, 12)
 
 ## UseMnemonic
 
-This property specifies whether the TabControlAdv interprets the Ampersand character (&) as an Access key prefix character or not. The default value is set to False.
+This property specifies whether the TabControlAdv interprets the Ampersand character (&) as an Access key prefix character or not. The default value is set to `false`.
 
 
 <table>
@@ -215,6 +215,8 @@ Size</td></tr>
 
 The code should be in the following format:
 
+{% tabs %}
+
 {% highlight C# %}
 
 this.tabPageAdv.Image = Image.FromFile(imagePath);
@@ -223,7 +225,11 @@ this.tabPageAdv.ImageSize = new System.Drawing.Size(height,width);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following code illustrates insertion of the required GIF image.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -233,7 +239,7 @@ this.tabPageAdv.ImageSize = new System.Drawing.Size(16,16);
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 N> Only when the ImageIndex property is -1, image from the Image property will be displayed or else image from ImageList will be displayed.
 

@@ -7,19 +7,19 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Custom Controls
+#  Custom controls
 
 The Custom Controls are not standard HTML elements but user-defined controls that are created for improving the application's richness and productivity.
 
 The Custom tag is used to include the custom controls in an HTML document. The custom tag comes with two attributes: assembly and class.
 
-The assembly attribute refers to the namespace where the control is located. The class attribute represents the control. 
+The assembly attribute refers to the namespace where the control is located. The class attribute represents the control.
 
 An HTML document containing custom controls is shown below.
 
+{% tabs %}
 
-
-{% highlight html%}
+{% highlight HTML %}
 
 
 
@@ -47,15 +47,17 @@ NumericUpDown:<CUSTOM class="NumericUpDown" assembly="System.Windows.Forms"></CU
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The custom controls defined in the HTML document are interfaced with their equivalent Windows Forms control with the help of the PreRenderDocument event. The PreRenderDocument event occurs at a time when the HTML document is being loaded into the HTMLUI control, but the elements are not yet positioned.
 
-The HTML elements are loaded into an hash table with an equivalent id as their key. An equivalent Base class object, here BaseElement class, is defined to link the HTML elements stored in the hash table with the help of the key associated with the element. The BaseElement is the Base class for all HTML elements. All HTML tag elements inherit this class. 
+The HTML elements are loaded into an hash table with an equivalent id as their key. An equivalent Base class object, here BaseElement class, is defined to link the HTML elements stored in the hash table with the help of the key associated with the element. The BaseElement is the Base class for all HTML elements. All HTML tag elements inherit this class.
 
 The CustomControlBase implements the base functionality of the Windows Forms control on the HTML tag element.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -87,7 +89,7 @@ new CustomControlBase( NumericUpDownElement, this.NumericUpDown1 );
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -117,6 +119,8 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following image illustrates three custom controls created using HTMLUI.
 
 
@@ -125,7 +129,7 @@ The following image illustrates three custom controls created using HTMLUI.
 
 
 
-## Custom Controls Sample
+## Custom controls sample
 
 This sample demonstrates the implementation of Custom Controls by using HTMLUI.
 

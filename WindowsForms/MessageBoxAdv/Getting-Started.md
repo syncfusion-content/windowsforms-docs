@@ -7,9 +7,9 @@ control: MessageBoxAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-This session explains about how to implement a window popup using the MessageBoxAdv. The Syncfusion control can be added using the following Syncfusion Assemblies as follows:
+This session explains about how to implement a window pop-up using the MessageBoxAdv. The Syncfusion control can be added using the following Syncfusion Assemblies as follows:
 1)	Create a Windows Forms project in Visual Studio and add the following Syncfusion assembly as follows:
 
     * Syncfusion.Shared.Base.dll

@@ -11,18 +11,18 @@ documentation: ug
 
 Linear gauges are perfect for displaying values graphically along a linear scale. All the elements in a linear gauge, including scales, labels, ticks, and pointers, can be fully customized with data-binding support.
 
-The LinearGauge control includes the following elements: scale label, needle, gauge value, and background frame. All the elements can be optionally displayed in the Gauge control. 
+The LinearGauge control includes the following elements: scale label, needle, gauge value, and background frame. All the elements can be optionally displayed in the Gauge control.
 
-## Feature Summary
+## Feature summary
 
 Here is a brief overview of various features of the LinearGauge control.
 
-* Scales - The scale value can be customized to be displayed within defined limits. 
+* Scales - The scale value can be customized to be displayed within defined limits.
 * Frame Types - Allow you to specify the built-in frame style, such as full circle or half circle.
 * Pointers - Provide complete support for pointers to point to the value.
-* Range - Full-fledged range support. 
+* Range - Full-fledged range support.
 
-### Concepts and Features
+### Concepts and features
 
 
 This section illustrates the features of the linear gauge with images and sample code. It contains the following topics:
@@ -34,7 +34,7 @@ This section illustrates the features of the linear gauge with images and sample
 * Ranges
 * Scaling Divisions
 
-### Linear Gauge Frame
+### Linear Gauge frame
 
 
 The frame defines the frame types of linear gauges. Frames can be applied using the FrameType property. The LinearGauge control contains two frame types:
@@ -107,27 +107,28 @@ Gets or sets the value indicator color of the gauge.</td></tr>
 
 
 
-### Code Sample
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.linearGauge1.LinearFrameType = LinearFrameType.Horizontal;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.linearGauge1.LinearFrameType = LinearFrameType.Horizontal
 
 {% endhighlight %}
 
+{% endtabs %}
+
 #### Scales
 
-Scales are used to control element placement and value ranges. 
+Scales are used to control element placement and value ranges.
 
-#### Customizing Scales
+#### Customizing scales
 
 You can customize scales added to the Linear Gauge by using the properties listed in the following table:
 
@@ -197,9 +198,9 @@ Gets or sets the pointer position
 
 The following code sample demonstrates how to add major and minor ticks to the linear scale.
 
+{% tabs %}
 
-
-{% highlight c# %} 
+{% highlight C# %}
 
 this.linearGauge1.MajorTickMarkColor = System.Drawing.Color.White;
 
@@ -211,7 +212,7 @@ this.linearGauge1.MajorTicksHeight = 12;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.linearGauge1.MajorTickMarkColor = System.Drawing.Color.White
 
@@ -223,7 +224,11 @@ Me.linearGauge1.MajorTicksHeight = 12
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
 
 this.linearGauge1.ShowNeedle = true;
 
@@ -233,7 +238,7 @@ this.linearGauge1.NeedleColor = System.Drawing.Color.Black;
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.linearGauge1.ShowNeedle = True
 
@@ -242,22 +247,25 @@ Me.linearGauge1.NeedleColor = System.Drawing.Color.Black
 
 {% endhighlight %}
 
+{% endtabs %}
 
-#### Pointer Placement
+#### Pointer placement
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.linearGauge1.PointerPlacement = Placement.Center;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
       Me.linearGauge1.PointerPlacement = Placement.Center
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Linear-Gauge_images/Linear-Gauge_img3.png)
 
@@ -277,7 +285,7 @@ this.linearGauge1.PointerPlacement = Placement.Center;
 
 #### Ranges
 
-Ranges are objects that highlight a range of values and can display different ranges in different colors. Ranges can be customized using various attributes such as range placement, height, color of the range, and more. All the available attributes are listed in the following table: 
+Ranges are objects that highlight a range of values and can display different ranges in different colors. Ranges can be customized using various attributes such as range placement, height, color of the range, and more. All the available attributes are listed in the following table:
 
 
 <table>
@@ -318,9 +326,9 @@ Gets or sets the color of the range.</td></tr>
 
 The following code sample demonstrates how to add ranges to the linear gauge:
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 Syncfusion.Windows.Forms.Gauge.LinearRange range1 = new Syncfusion.Windows.Forms.Gauge.LinearRange();
 
@@ -342,7 +350,7 @@ range1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((by
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Dim range1 As New Syncfusion.Windows.Forms.Gauge.LinearRange range()
 
@@ -363,12 +371,13 @@ Me.linearGauge1.Ranges.Add(range1)
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Linear-Gauge_images/Linear-Gauge_img6.png)
 
 
 
-#### Scaling Divisions
+#### Scaling divisions
 
 The Gauge control for Windows Forms includes support for customizing the number of major tick lines and minor tick lines using the Major Difference and MinorTickCount properties. It also provides support to customize the number of tick lines using the MaximumValue and MinimumValue properties.
 
@@ -401,8 +410,9 @@ Integer</td><td>
 Gets or sets the minor difference value.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
            this.linearGauge1.MajorDifference = 20F;
 
@@ -416,7 +426,7 @@ Gets or sets the minor difference value.</td></tr>
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.linearGauge1.MajorDifference = 20F
 
@@ -428,12 +438,13 @@ Me.linearGauge1.MinorTickCount = 1
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## Visual Styles 
+## Visual styles
 
 The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
 
-The styles are built-in for all of the gauges. 
+The styles are built-in for all gauges.
 
 * Blue
 * Black
@@ -463,8 +474,6 @@ Gets or sets the frame type.</td></tr>
 
 This option helps to set the Black theme.
 
-##### Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -490,8 +499,6 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 This option helps to set the Blue theme.
 
-##### Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -516,8 +523,6 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
 This option helps to set the Silver theme.
 
-##### Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -541,8 +546,6 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver
 **Metro**
 
 This option helps to set the Metro theme.
-
-##### Code Sample
 
 {% tabs %}
 
@@ -569,8 +572,6 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 **Office2016 White**
 
 This option helps to set the Office2016White theme.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -599,8 +600,6 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 This option helps to set the Office2016Colorful theme.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -617,7 +616,7 @@ this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office
 
 Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Colorful
 
-{%endhighlight %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -626,8 +625,6 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 **Office2016DarkGray**
 
 This option helps to set the Office2016DarkGray theme.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -639,13 +636,13 @@ this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office
 
 {% endhighlight %}
 
-{% highlight VB%}
+{% highlight VB %}
 
 'Office2016DarkGray
 
 Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray
 
-{% endhighlight VB %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -654,8 +651,6 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 **Office2016Black**
 
 This option helps to set the Office2016Black theme.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -673,7 +668,7 @@ this.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office
 
 Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016Black
 
-{% endhighlight VB %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -683,15 +678,15 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 **Custom**
 
- Linear Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the **VisualStyle** property as **Custom**.
+ Linear Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the VisualStyle property as Custom.
 
- **Steps to Customize the theme in Design time.**
+ **Steps to customize the theme in design time**
 
  **Step 1:**  Need to add Linear Gauge control to Form Designer.
 
 ![](Linear-Gauge_images/Linear-Gauge_img15.png)
 
- **Step 2:** Set the VisualStyle as Custom
+ **Step 2:** Set the VisualStyle as Custom.
 
 ![](Linear-Gauge_images/Linear-Gauge_img16.png)
 
@@ -756,13 +751,12 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 ![](Linear-Gauge_images/Linear-Gauge_img17.png)
 
 
-## Data Binding
+## Data binding
 
 You can bind any data source to the LinearGauge control and map an index of a record to represent the actual value in the linear gauge. The DisplayMember and DisplayRecordIndex properties will map the DataColumn and DataRow of the binding source respectively to the LinearGauge control, which will then support high frequency data updates.
 
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -775,20 +769,20 @@ this.linearGauge1.DataSource = dataTable;
 
 {% endhighlight %}
 
-## Custom Renderer 
+## Custom renderer
 
 The appearance of the Linear Gauge can be customized by using the Interface `ILinearGaugeRenderer`. This interface provides few methods to control painting over the Frame, Needle, Major ticks, Minor ticks, Pointers, Ranges etc.
 
 To customize the appearance,
 
-1. Create a new custom renderer class and implement each of the members defined in `ILinearGaugeRenderer`.
-2. Assign instance of your custom renderer to the `Renderer` property of Linear Gauge. 
+1. Create a new custom renderer class and implement each of the members defined in ILinearGaugeRenderer.
+2. Assign instance of your custom renderer to the `Renderer` property of Linear Gauge.
 
-Note: By default, Linear Gauge is painted by using its default renderer. 
+Note: By default, Linear Gauge is painted by using its default renderer.
 
-The following code demonstrates the same.
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 CustomRenderer custom1= new CustomRenderer(this.linearGauge1);
 
@@ -796,7 +790,7 @@ linearGauge1.Renderer = custom;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private custom1 As CustomRenderer  = New CustomRenderer(Me.linearGauge1)
 
@@ -804,17 +798,19 @@ linearGauge1.Renderer = custom
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Linear-Gauge_images/custom.jpeg)
 
-## Frequently Asked Questions
+## Frequently asked questions
 
-### How to customize Linear Gauge appearance ?
+### How to customize Linear Gauge appearance
 
-You can customize the appearance of the Linear Gauge by using its interface named `ILinearGaugeRenderer` and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
+You can customize the appearance of the Linear Gauge by using its interface named ILinearGaugeRenderer and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 CustomRenderer custom1= new CustomRenderer(this.linearGauge1);
 
@@ -1005,7 +1001,7 @@ class CustomRenderer :ILinearGaugeRenderer
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private custom1 As CustomRenderer  = New CustomRenderer(Me. linearGauge1)
 

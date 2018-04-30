@@ -7,11 +7,8 @@ control: Tools
 documentation: ug
 ---
 
-
 # Culture Settings
 This section discusses the culture settings of the IntegerTextBox control.
-
-
 
 <table>
 <tr>
@@ -40,18 +37,13 @@ UseUserOverride</td><td>
 Specifies if the NumberFormatInfo used for formatting will use the User Overrides for the culture. The default value is set to 'True'.</td></tr>
 </table>
 
-
 {% tabs %}
 
 {% highlight C# %}
 
-
 this.integerTextBox1.Culture = new System.Globalization.CultureInfo("ar-SA");
-
 this.integerTextBox1.CurrentCultureRefresh = true;
-
 this.integerTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None;
-
 this.integerTextBox1.UseUserOverride = true;
 
 {% endhighlight %}
@@ -59,11 +51,8 @@ this.integerTextBox1.UseUserOverride = true;
 {% highlight VB %}
 
 Me.integerTextBox1.Culture = New System.Globalization.CultureInfo("ar-SA")
-
 Me.integerTextBox1.CurrentCultureRefresh = True
-
 Me.integerTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None
-
 Me.integerTextBox1.UseUserOverride = True
 
 {% endhighlight %}
@@ -71,7 +60,6 @@ Me.integerTextBox1.UseUserOverride = True
 {% endtabs %}
 
 ![](Overview_images/Overview_img445.png) 
-
 
 N> The RefreshCulture() method can be used to refresh and reapply the culture specific settings.
 

@@ -9,26 +9,20 @@ documentation: ug
 
 
 
-# How to identify whether the popup is currently dropped down
+# How to Identify whether the Pop-up is Currently Dropped Down
 
 PopupControlContainer.IsShowing() method returns whether the popup is currently dropped down or not.
 
-
+{% tabs %}
 {% highlight C# %}
-
-
 
 this.popupControlContainer1.IsShowing();
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
-
+{% highlight vb %}
 
 Me.popupControlContainer1.IsShowing()
 
 {% endhighlight %}
+{% endtabs %}

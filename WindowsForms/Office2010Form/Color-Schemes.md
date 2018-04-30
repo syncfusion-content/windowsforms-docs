@@ -7,7 +7,7 @@ control: Office2010 Form
 documentation: ug
 ---
 
-# Color Schemes
+# Color schemes
 
 Office2010Form supports following office color schemes which can be edited through `ColorScheme` property.
 
@@ -18,7 +18,7 @@ Office2010Form supports following office color schemes which can be edited throu
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //To set Blue color scheme.
 
@@ -42,7 +42,7 @@ To apply the Managed color scheme `ApplyManagedColors` function from Office2010C
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //To set Managed color scheme.
 
@@ -66,13 +66,13 @@ Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
   ![](Color-Schemes_images/ManagedScheme.png)
 
-## Background Color for Office2010 Form
+## Background color for Office2010 Form
 
-The background of the Office2010 Form can be same, as the color scheme applied to the form. `UseOffice2007SchemeBackColor` property has to true, to make this effective.
+The background of the Office2010 Form can be same, as the color scheme applied to the form. `UseOffice2007SchemeBackColor` property has to `true`, to make this effective.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.UseOffice2010SchemeBackColor = true;
 
@@ -89,15 +89,15 @@ Me.UseOffice2010SchemeBackColor = True
 ![](Color-Schemes_images/ColorScheme2.png)
   
   
-## Applying Color Schemes
+## Applying color schemes
 
 Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the `ApplyAeroTheme` property.
 
-Aero theme support is available for Office2010Form when used on Windows Vista machines. Previously, ColorSchemes could not be applied to the Office2010Form when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme on Office2010Form. 
+Aero theme support is available for Office2010Form when used on Windows Vista machines. Previously, ColorSchemes could not be applied to the Office2010Form when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme on Office2010Form.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 // Disables Aero Theme on Office2010 Form.
 

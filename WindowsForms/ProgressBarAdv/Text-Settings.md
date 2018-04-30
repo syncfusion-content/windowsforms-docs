@@ -7,21 +7,21 @@ control: ProgressBarAdv
 documentation: ug
 ---
 
-# Text Settings
+# Text settings
 
 The below are ProgressBarAdv properties to customize the text and its alignment.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-ProgressBarAdv Property</th><th>
+ProgressBarAdv property</th><th>
 Description</th></tr>
 <tr>
 <td>
 TextAlignment</td><td>
-The text on the progress bar can be set to left, center and right.</td></tr>
+The text on the progress bar can be set to left, center, and right.</td></tr>
 <tr>
 <td>
 TextOrientation</td><td>
@@ -40,8 +40,9 @@ TextVisible</td><td>
 Determines if the text of the ProgressBarAdv is visible.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.progressBarAdv1.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
 
@@ -55,7 +56,7 @@ this.progressBarAdv1.TextVisible = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.progressBarAdv1.TextOrientation = System.Windows.Forms.Orientation.Horizontal
 
@@ -69,7 +70,9 @@ Me.progressBarAdv1.TextVisible = True
 
 {% endhighlight %}
 
-![](Overview_images/Overview_img24.jpeg) 
+{% endtabs %}
+
+![](Overview_images/Overview_img24.jpeg)
 
 
 

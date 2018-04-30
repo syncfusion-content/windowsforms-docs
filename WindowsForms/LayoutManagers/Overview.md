@@ -26,23 +26,23 @@ This Layout Manager will layout the Child components horizontally or vertically 
 
 ## GridLayout
 
-This Layout Manager will layout Child controls in the form of a grid containing rows and columns. 
+This Layout Manager will layout Child controls in the form of a grid containing rows and columns.
 
 ## GridBagLayout
 
 This Layout Manager will layout the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns / rows can be varied and the children may span more than one cell.
 
-![](Overview_images/Overview_img1.jpeg) 
+![](Overview_images/Overview_img1.jpeg)
 
 
 
-## Container Control
+## Container control
 
 Container control is a control on which the Layout Manager is dropped or for which the layout is designed. All controls that inherit the System.Windows.Forms.ContainerControl can act as a Container control.
 
 Windows Form and Panel controls are the most widely used Container controls.
 
-## Child Control
+## Child control
 
 Child controls can be added to the Container control by just dragging and dropping the controls from the toolbox.
 

@@ -28,26 +28,23 @@ ThemesEnabled</td><td>
 Specifies whether themes are enabled for RadioButtonAdv.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.radioButtonAdv1.ThemesEnabled = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.ThemesEnabled = True
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/Overview_img643.jpeg)
 
-### Visual Styles
+### Visual styles
 
 The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
 
@@ -78,52 +75,42 @@ Office2007ColorScheme</td><td>
 Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }} {{ '_Blue,_' | markdownify }} {{ '_Silver and_' | markdownify }} {{ '_Black._' | markdownify }} The Style property should be set to "Office2007".</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2016Colorful;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2016Colorful
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/RadioButtonStyle.jpeg) 
-
-
 
 When the Office2007ColorScheme property is set to 'Managed', the RadioButton in the RadioButtonAdv can be displayed using custom colors supported by the control.
 
 This can be done programmatically as follows.
 
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
-
 this.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-
 Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007
-
 Me.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-
 Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img646.jpeg) 

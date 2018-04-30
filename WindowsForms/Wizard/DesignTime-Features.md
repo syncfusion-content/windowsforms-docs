@@ -57,9 +57,3 @@ This section will guide you with page selection options at design time.
 
 
 
-{% seealso %}
-Wizard Page Settings
-{% endseealso %}
-
-
-

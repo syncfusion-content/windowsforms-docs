@@ -25,7 +25,6 @@ The visual style can be applied for the MultiSelectionComboBox using `Style` pr
 {% highlight C# %}
 
 //Set the visual Style of the MultiSelectionComboBox control.
-
 this.multiSelectionComboBox1.Style = Syncfusion.Windows.Forms.Tools.MultiSelectionComboBoxStyle.Office2016Colorful;
 
 {% endhighlight %}
@@ -34,7 +33,6 @@ this.multiSelectionComboBox1.Style = Syncfusion.Windows.Forms.Tools.MultiSelecti
 {% highlight VB %}
 
 'Set the visual Style of the MultiSelectionComboBox control.
-
 Me.multiSelectionComboBox1.Style = Syncfusion.Windows.Forms.Tools.MultiSelectionComboBoxStyle.Office2016Colorful
  
 {% endhighlight %}

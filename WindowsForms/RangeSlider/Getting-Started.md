@@ -7,11 +7,11 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-This section guides you on getting started with Range Slider. It covers information on the following topics:
+This section guides you on getting started with Range Slider.
 
-## Elaborate Structure of the control 
+## Elaborate structure of the control
 
 The following image highlights the different sections of the Range Slider.
 
@@ -23,11 +23,13 @@ The following image highlights the different sections of the Range Slider.
 
 Range Slider can be created in two ways:
 
-### Through Code
+## Through code
 
 The following code illustrates the creation of RangeSlider.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -59,6 +61,8 @@ this.Controls.Add(rangeSlider);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Run the code.
 
 Output
@@ -67,7 +71,7 @@ Output
 
 
 
-### Through Designer
+## Through designer
 
 The following steps illustrate the creation of RangeSlider.
 

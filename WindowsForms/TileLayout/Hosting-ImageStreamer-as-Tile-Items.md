@@ -73,7 +73,7 @@ this.imageStreamer1.SliderSpeed = 100;
 
 ## ShowNavigator
 
-Navigator which is used to navigate the slide show direction is shown when the `ShowNavigator` property is True. To enable this property SlideShow must be true.
+Navigator which is used to navigate the slide show direction is shown when the `ShowNavigator` property is `true`. To enable this property SlideShow must be `true`.
 
 {% tabs %}
 

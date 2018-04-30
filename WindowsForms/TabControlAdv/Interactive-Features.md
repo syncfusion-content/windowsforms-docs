@@ -15,7 +15,7 @@ TabControlAdv has CloseButtons for all the TabPages to close the corresponding T
 
 ![](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
-Close button on all the TabItems can be made visible by setting the `ShowTabCloseButton` property to True.
+Close button on all the TabItems can be made visible by setting the `ShowTabCloseButton` property to`true`.
 
 {% tabs %}
 
@@ -33,7 +33,7 @@ Me.tabControlAdv1.ShowTabCloseButton = True
 
 {% endtabs %}
 
-Also the Tab Close button can be restricted to be shown only for ActiveTabPage. This can be done by setting the `ShowCloseButtonForActiveTabOnly` property to True.
+Also the Tab Close button can be restricted to be shown only for ActiveTabPage. This can be done by setting the `ShowCloseButtonForActiveTabOnly` property to `true`.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ Specifies whether to show the scroll button.</td></tr>
 
 ScrollButtons can have a VS like scroll button-look and normal button look.
 
-For VS like scroll button-look, the `VSLikeScrollButton` property has to be set to true.
+For VS like scroll button-look, the `VSLikeScrollButton` property has to be set to `true`.
 
 ![](Interactive-Features_images/Interactive-Features_img11.png)
 
@@ -159,7 +159,7 @@ Me.tabControlAdv1.VSLikeScrollButton = True
 
 ### ScrollBars
 
-ScrollBars can be set for the TabPages for which the `AutoScroll` property has to be set to true. The `AutoScrollMinSize` is set to a value, which if exceeded, enables the TabControlAdv to automatically add a scrollbar to the TabPage. Setting `AutoScrollMargin`, allows to maintain a minimum distance between the end margin of any control that is placed inside the TabPage and the margin of the TabPage.
+ScrollBars can be set for the TabPages for which the `AutoScroll` property has to be set to `true`. The `AutoScrollMinSize` is set to a value, which if exceeded, enables the TabControlAdv to automatically add a scrollbar to the TabPage. Setting `AutoScrollMargin`, allows to maintain a minimum distance between the end margin of any control that is placed inside the TabPage and the margin of the TabPage.
 
 `ScrollIncrement` property is used to specify whether to scroll through Tabs or Pages.
 
@@ -171,7 +171,7 @@ Description</th></tr>
 <tr>
 <td>
 AutoScroll</td><td>
-Specifies to add a scrollbar to the tab page. Default value is False.</td></tr>
+Specifies to add a scrollbar to the tab page. Default value is `false`.</td></tr>
 <tr>
 <td>
 AutoScrollMargin</td><td>

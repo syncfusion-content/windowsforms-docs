@@ -11,7 +11,7 @@ documentation: ug
 
 The HTMLUI control also supports usage of keyboards for navigating through the links inside a HTML document. Like in popular browsers, HTMLUI control uses the TAB key for shifting the focus on the links.
 
-## HTMLUIKeyboard Sample
+## HTMLUIKeyboard sample
 
 This sample shows how elements in the document can be focused by using the Keyboard support in HTMLUI.
 

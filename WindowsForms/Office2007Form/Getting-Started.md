@@ -7,7 +7,7 @@ control: Office2007 Form
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 The default Form can be changed into the Office2007Form by following the below given steps.
 

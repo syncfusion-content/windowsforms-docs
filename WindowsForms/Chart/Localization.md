@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization 
 
-Localization allows a chart to display data according to the language and culture specific to a particular country or region.
+[Localization](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Localization.html) allows chart to display data according to the language and culture specific to a particular country or region.
 
 EssentialChart now supports localization; built-in resource files for specific languages can be easily added.  Context menu items, exception messages, and some of the toolbar items can be localized.
 
@@ -28,7 +28,9 @@ Reference links </th><th>
 Dependencies</th></tr>
 <tr>
 <td>
-Localize </td><td>
+
+{{'[Localize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Localize.html)'| markdownify }}
+</td><td>
 Get or set the localization culture of Grid.</td><td>
 Server side</td><td>
 A string containing the name of the target System.Globalization.CultureInfo </td><td>
@@ -36,10 +38,10 @@ NA</td><td>
 NA</td></tr>
 </table>
 
-Adding Localization to an application
+**Adding Localization to an Application**
 
-1. Create your localization resource file (.resx) in the  bin > Debug folder with the following naming convention:
-   * ChartControl.<your culture info name>.resx
+1. Create your localization resource file (.resx) in the  bin -> Debug folder with the following naming convention:
+   * ChartControl.< your culture info name >.resx
 
    N> It is mandatory to follow this naming convention.
 
@@ -51,7 +53,7 @@ Adding Localization to an application
 
     N> It is mandatory to specify equivalent terms for all static element to localize the chart.
 
-3. Specify the culture using the Localize property as given in the following code:
+3. Specify the culture using the [Localize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Localize.html) property as given in the following code.
 
 {% tabs %}  
 
@@ -73,13 +75,13 @@ Me.chartControl1.Localize=”de-DE”
 
 ### Sample Link
 
-To view a sample
+To view a sample,
 
 1. Open the Syncfusion Dashboard.
-2. Select User Interface > Windows Forms.
+2. Select User Interface -> Windows Forms.
 3. Click Run Samples.
 4. Navigate to Culture Localization > Localization sample.
 
-You can find the resource file for the localization in English at the following location:
+You can find the resource file for the localization in English at the following location.
 
 [ChartControl_Resource](http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=ChartControl_Resource-1347262360.zip)

@@ -117,9 +117,9 @@ Private Me.tabControlAdv1.TabPrimitivesHost.Visible = True
 
 {% endtabs %}
 
-N> After adding TabPrimitives, set the TabPrimitiveHost.Visible property to True. Now the added TabPrimitives will be visible in the TabControlAdv.
+N> After adding TabPrimitives, set the TabPrimitiveHost.Visible property to `true`. Now the added TabPrimitives will be visible in the TabControlAdv.
 
-`SwitchPagesForDialogKeys` property available for the TabControlAdv specifies if the control should switch TabPages on pressing Ctrl+Tab or Ctrl+Shift+Tab.
+`SwitchPagesForDialogKeys` property available for the TabControlAdv specifies if the control should switch TabPages on pressing <kbd>Ctrl+Tab</kbd> or <kbd>Ctrl+Shift+Tab</kbd>.
 
 The `TabPrimitiveHost` property allows to customize the navigation and close buttons by defining it through the `TabPrimitives` property Collection. The TabPrimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First/Previous/Next/LastTab, Next/PreviousPage, and Close/DropDown options.
 

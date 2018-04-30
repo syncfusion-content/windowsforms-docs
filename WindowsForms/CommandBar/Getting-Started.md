@@ -13,7 +13,7 @@ documentation: ug
 
 This section will give a step by step procedure to design a CommandBar control through designer, through programmatically approach and also through the XP Menus Framework.
 
-### Through designer
+## Through designer
 
 The CommandBar Framework makes it an effortless process to add, remove, and design the CommandBars in an application. With the WYSIWYG designer that it provides, all that is involved in setting up the CommandBar layout is to drag and drop the various CommandBars to the target location. The layout state is then serialized by the designer along with the form's resources and is used when the form is loaded at run time.
 
@@ -31,7 +31,7 @@ To add a CommandBar using the properties window, follow the procedure given belo
 
 The CommandBars can also be added or removed using the Add CommandBar design time verb or smart tag that is found in the property grid.
 
-New CommandBars will be initially docked to the top border of the form. The command bars can then be dragged, redone or floated to the desired location.
+New CommandBars will be initially docked to the top border of the form. The command bars can then be dragged, redone, or floated to the desired location.
 
  ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
@@ -44,14 +44,7 @@ New CommandBars will be initially docked to the top border of the form. The comm
  ![](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
-
-{% seealso %}
-
-[Through Code ](#through-code), [Through XP Menus Framework](#through-xp-menus-framework)
-
-{% endseealso %}
-
-### Through code
+## Through code
 
 In addition to use the designer for designing the CommandBar layout, it is also feasible to use the CommandBar's programmatic API for creating and setting up the application's CommandBars.
 
@@ -204,19 +197,21 @@ The following section covers the steps involved in creating, initializing, and s
 7. Call the CommandBarController's EndInit method to signal the end of initialization.
 
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
 		((System.ComponentModel.ISupportInitialize)(this.commandBarController1)).EndInit();
 		
-   ~~~
-   {:.prettyprint}
+   {% endhighlight %}
 
-   ~~~ cs
+   {% highlight C# %}
 
 		CType(Me.commandBarController1, System.ComponentModel.ISupportInitialize).EndInit()
-
-   ~~~
-   {:.prettyprint}
+	
+	{% endhighlight %}
+    
+	{% endtabs %}
 
 
 8. Run the application.
@@ -224,14 +219,7 @@ The following section covers the steps involved in creating, initializing, and s
    ![](Getting-Started_images/Getting-Started_img5.jpeg) 
 
 
-
-{% seealso %}
-
-[Through Designer](#through-designer), [Through XP Menus Framework](#through-xp-menus-framework)
-
-{% endseealso %}
-
-### Through XP Menus Framework
+## Through XP Menus Framework
 
 The XP Menus Framework provides the flexibility to add detached toolbars that can host any .NET control. These toolbars are detached from the Framework, i.e., they cannot participate in user customization. Otherwise, they are seamless in look and feel.
 
@@ -312,6 +300,6 @@ The XP Menus Framework provides the flexibility to add detached toolbars that ca
 
 {% seealso %}
  
-[Through Designer](#through-designer), [Through Code](#through-code)
+[Through Designer](#through-designer), [Through Code](#through-code), [Through XP Menus Framework](#through-xp-menus-framework).
 
 {% endseealso %}

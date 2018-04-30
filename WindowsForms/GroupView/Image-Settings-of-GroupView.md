@@ -27,11 +27,11 @@ It contains large images (32*32) to associate with the control.</td></tr>
 <tr>
 <td>
 SmallImageView</td><td>
-In SmallImageView mode, the GroupView items are displayed using the small 16x16 images and are right-aligned with the text drawn alongside the image. When the SmallImageView property is set to 'False', items are displayed using the larger 32x32 images and will be center-aligned with the text drawn below the image. </td></tr>
+In SmallImageView mode, the GroupView items are displayed using the small 16x16 images and are right-aligned with the text drawn alongside the image. When the SmallImageView property is set to `false`, items are displayed using the larger 32x32 images and will be center-aligned with the text drawn below the image. </td></tr>
 <tr>
 <td>
 SmallImageList</td><td>
-It contains small images (16*16) to associate with the control. SmallImageView must be set to 'True' to associate small images with the control.</td></tr>
+It contains small images (16*16) to associate with the control. SmallImageView must be set to `true` to associate small images with the control.</td></tr>
 </table>
 
 {% tabs %}
@@ -70,7 +70,7 @@ N> Setting Image list component to the above properties will not actually associ
 
 ## Highlighting images
 
-We can highlight the image of the GroupView Item when the mouse is moved over it by setting the HighlightImage property to 'True'.
+We can highlight the image of the GroupView Item when the mouse is moved over it by setting the HighlightImage property to `true`.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ HighlightImageOffset</td><td>
 Gets/sets the image offset for the highlighted GroupView Item. </td></tr>
 </table>
 
-N> HighlightImage property must be set to 'True' in all the cases.
+N> HighlightImage property must be set to `true` in all the cases.
 
 {% tabs %}
 
@@ -185,7 +185,7 @@ Resets the HighlightImageOffset property to it's default value.</td></tr>
 
 We can provide spacing between the highlighted edge of a GroupView Item and the image by setting the ImageSpacing property to integer values.
 
-HighlightImage property must be set to 'True'.
+HighlightImage property must be set to `true`.
 
 {% tabs %}
 
@@ -205,4 +205,4 @@ Me.groupView1.ImageSpacing = 7
 
 {% endtabs %}
 
-![](Overview_images/Overview_img83.jpeg) 
+![](Overview_images/Overview_img83.jpeg)

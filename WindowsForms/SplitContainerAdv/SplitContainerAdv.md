@@ -13,7 +13,7 @@ The below image illustrates the components of a SplitContainerAdv control. It ha
 
 
 
- ![](SplitContainerAdv-Images/Overview_img395.jpeg) 
+ ![](SplitContainerAdv-Images/Overview_img395.jpeg)
 
 
 
@@ -21,15 +21,15 @@ A sample which demonstrates the SplitContainerAdv control is available in the be
 
 ..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\2.0\Editors Package\Container controls\SplitContainerAdv
 
-## Panel Settings
+## Panel settings
 
 This section discusses about various properties available for the SplitContainerAdv to control the behavior of the panels. The panels has properties and events similar to Window's Panel control, to change its appearance.
 
-### Panel Orientation
+### Panel orientation
 
 The SplitContainerAdv Panels can be oriented horizontally or vertically using the Orientation property. Default value is horizontal.
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -41,22 +41,24 @@ this.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
 Me.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical
 {% endhighlight %}
 
+{% endtabs %}
 
  ![](SplitContainerAdv-Images/Overview_img396.jpeg) 
 
 
 
-### Resizing the Panels
+### Resizing the panels
 
-While resizing the control at design time or at run time, we can make one panel as fixed and resize the other panel alone. Select the panel which needs to be fixed, in FixedPanel property. 
+While resizing the control at design time or at run time, we can make one panel as fixed and resize the other panel alone. Select the panel which needs to be fixed, in FixedPanel property.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -67,7 +69,7 @@ this.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedP
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -75,16 +77,18 @@ this.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedP
 Me.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel1
 {% endhighlight %}
 
-### Collapsing a Panel
+{% endtabs %}
+
+### Collapsing a panel
 
 We can make any of the panels to be collapsed at run time. The below properties helps you to do that.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-SplitContainerAdv Properties</th><th>
+SplitContainerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -112,7 +116,7 @@ TogglePanelOn</td><td>
 A predefined event, which leads to collapsing of the panel specified in PanelToBeCollapsed property. Using TogglePanelOn property, we can decide whether, the panel needs to be collapsed on a single click or a double click.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -129,7 +133,7 @@ this.splitContainerAdv1.TogglePanelOn = Syncfusion.Windows.Forms.Tools.TogglePan
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -143,11 +147,13 @@ Me.splitContainerAdv1.PanelToBeCollapsed = Syncfusion.Windows.Forms.Tools.Collap
 Me.splitContainerAdv1.TogglePanelOn = Syncfusion.Windows.Forms.Tools.TogglePanelOn.DoubleClick
 {% endhighlight %}
 
-### Panel Size 
+{% endtabs %}
+
+### Panel size
 
 We can specify the minimum size for the Panel1 and Panel2 in Panel1MinSize and Panel2MinSize properties. Default value for both the properties is 25.
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -160,7 +166,7 @@ this.splitContainerAdv1.Panel2MinSize = 50;
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.splitContainerAdv1.Panel1MinSize = 50
@@ -168,25 +174,27 @@ Me.splitContainerAdv1.Panel1MinSize = 50
 Me.splitContainerAdv1.Panel2MinSize = 50
 {% endhighlight %}
 
-## Splitter Settings
+{% endtabs %}
+
+## Splitter settings
 
 The properties which changes the behavior of the Splitter in a SplitContainerAdv control are discussed in this section.
 
-### Splitter Settings
+### Splitter settings
 
-The below table describes the properties to control the behavior of the splitter. 
+The below table describes the properties to control the behavior of the splitter.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-SplitContainerAdv Properties</th><th>
+SplitContainerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
 IsSplitterFixed</td><td>
-Gets / sets whether the user is allowed to move the splitter or not. Default value is false.</td></tr>
+Gets/sets whether the user is allowed to move the splitter or not. Default value is `false`.</td></tr>
 <tr>
 <td>
 SplitterDistance</td><td>
@@ -201,7 +209,7 @@ SplitterWidth</td><td>
 Indicates the width of the splitter.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -217,7 +225,7 @@ this.splitContainerAdv1.SplitterWidth = 20
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -233,19 +241,21 @@ Me.splitContainerAdv1.SplitterWidth = 20
 
 {% endhighlight %}
 
+{% endtabs %}
+
  ![](SplitContainerAdv-Images/Overview_img397.jpeg) 
  
  
-### Thumbnail Arrow and Grip Settings
+### Thumbnail arrow and grip settings
 
 SplitContainerAdv control supports various appearance settings for the ThumbnailArrow in the control which are discussed in detail below. The properties which control the appearance of the splitter components are as follows.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-SplitContainerAdv Properties</th><th>
+SplitContainerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -265,7 +275,7 @@ GridLight</td><td>
 Sets the shadow around the grip.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -284,7 +294,7 @@ this.splitContainerAdv2.GripLight = new Syncfusion.Drawing.BrushInfo(System.Draw
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Me.splitContainerAdv2.ExpandFill = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.AliceBlue)
@@ -296,20 +306,21 @@ Me.splitContainerAdv2.GripDark = New Syncfusion.Drawing.BrushInfo(System.Drawing
 Me.splitContainerAdv2.GripLight = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Crimson)
 {% endhighlight %}
 
+{% endtabs %}
 
  ![](SplitContainerAdv-Images/Overview_img398.jpeg)
 
 
-#### RunTime Appearance
+#### RunTime appearance
 
 The properties to control the appearance of the thumbnail arrows, and grip, while mouse hovering at runtime, are as follows.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-SplitContainerAdv Properties</th><th>
+SplitContainerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -333,7 +344,7 @@ HotGridLight</td><td>
 Sets the shadow around the grip while under mouse cursor.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -353,7 +364,7 @@ this.splitContainerAdv2.HotGripLight = new Syncfusion.Drawing.BrushInfo(System.D
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -369,25 +380,26 @@ Me.splitContainerAdv2.HotGripDark = New Syncfusion.Drawing.BrushInfo(System.Draw
 Me.splitContainerAdv2.HotGripLight = New Syncfusion.Drawing.BrushInfo(System.Drawing.Color.Purple)
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](SplitContainerAdv-Images/Overview_img399.jpeg) 
 
 
 
-## Appearance Settings
+## Appearance settings
 
 This section discusses the properties which controls the appearance of the SplitContainerAdv control.
 
-### Background Settings
+### Background settings
 
 The below table describes the background settings.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-SplitContainerAdv Properties</th><th>
+SplitContainerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -409,6 +421,7 @@ Sets the solid, gradient or pattern style background for the control. </td></tr>
 
 > Note: The above properties can be overridden by SplitContainerAdv.Panel properties.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -423,7 +436,7 @@ this.splitContainerAdv1.Panel2.BackColor = System.Drawing.Color.AliceBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -434,16 +447,18 @@ Me.splitContainerAdv1.Panel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(
 Me.splitContainerAdv1.Panel2.BackColor = System.Drawing.Color.AliceBlue
 {% endhighlight %}
 
-### Foreground Settings
+{% endtabs %}
+
+### Foreground settings
 
 The below table describes the foreground settings.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-SplitContainerAdv Properties</th><th>
+SplitContainerAdv properties</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -455,6 +470,7 @@ ForeColor</td><td>
 Sets the color for the display text in the control.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -467,7 +483,7 @@ this.splitContainerAdv1.Panel1.ForeColor = System.Drawing.Color.Black;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -477,15 +493,17 @@ Me.splitContainerAdv1.Panel1.ForeColor = System.Drawing.Color.Black
 
 {% endhighlight %}
 
+{% endtabs %}
 
  ![](SplitContainerAdv-Images/Overview_img401.jpeg) 
 
 
 
-## Border Settings
+## Border settings
 
 BorderStyle property sets 2D or 3D border for the SplitContainerAdv control. The options are FixedSingle or Fixed3D.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -496,7 +514,7 @@ this.splitContainerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSing
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -505,23 +523,27 @@ this.splitContainerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSing
 Me.splitContainerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Styles
 
-Visual Styles for the SplitContainerAdv control is set through Style property. The available styles are, 
+Visual Styles for the SplitContainerAdv control is set through Style property. The available styles are,
 
-* Office2007Black,
-* Office2007Blue, 
-* Office2007Silver, 
-* OfficeXP, 
-* Office2003,
-* VS2005, 
-* Mozilla and 
-* Default.
+* Office2007Black
+* Office2007Blue 
+* Office2007Silver
+* OfficeXP
+* Office2003
+* VS2005
+* Mozilla
+* Default
 * Metro
 * Office2016Colorful
 * Office2016White
 * Office2016DarkGray
 * Office2016Black
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -533,7 +555,7 @@ this.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Offic
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'Sets Office2007 Black color scheme for the control.
 
@@ -541,13 +563,13 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 
 {% endhighlight %}
 
+{% endtabs %}
+
  ![](SplitContainerAdv-Images/Overview_img402.png) 
 
 **Office2016Colorful**
 
 This option helps to set the Office2016Colorful style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -575,8 +597,6 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 
 This option helps to set the Office2016White style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -603,8 +623,6 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 
 This option helps to set the Office2016DarkGray style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -630,8 +648,6 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 **Office2016Black**
 
 This option helps to set the Office2016Black style.
-
-#####  Code Sample
 
 {% tabs %}
 

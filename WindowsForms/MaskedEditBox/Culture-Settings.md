@@ -10,8 +10,6 @@ documentation: ug
 
 This section discusses the culture settings of the MaskedEditBox control.
 
-
-
 <table>
 <tr>
 <th>
@@ -36,20 +34,15 @@ Specifies if the NumberFormatInfo used for formatting will use the User Override
 {% highlight C# %}  
 
 this.maskedEditBox1.Culture = new System.Globalization.CultureInfo("ar-SA");
-
 this.maskedEditBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None;
-
 this.maskedEditBox1.UseUserOverride = true;
 
 {% endhighlight %}
 
-
 {% highlight VB %} 
 
 Me.maskedEditBox1.Culture = New System.Globalization.CultureInfo("ar-SA")
-
 Me.maskedEditBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None
-
 Me.maskedEditBox1.UseUserOverride = True
 
 {% endhighlight %}

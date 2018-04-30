@@ -7,7 +7,7 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Digital clock
+# Digital Clock
 
 The DigitalClock is implemented as an extension to the existing Clock control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
 
@@ -35,7 +35,7 @@ The DigitalClock offers a wide range of options to customize its appearance. It 
 
 ### Frames
 
-To enable the background frames, the DigitalClock should be enabled with the property ShowClockFrame set to true.
+To enable the background frames, the DigitalClock should be enabled with the property ShowClockFrame set to `true`.
 
 #### Rectangular frame
 
@@ -110,7 +110,7 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame
 
 ### Shapes
 
-To enable background shapes in the Clock control, the “ShowClockFrame” property should be disabled so that the control can support rendering the background shapes.
+To enable background shapes in the Clock control, the ShowClockFrame property should be disabled so that the control can support rendering the background shapes.
 
 #### Rectangular shape
 
@@ -389,13 +389,13 @@ To display or hide the hour designator (AM and PM) in the DigitalClock, the Show
 ![](Overview_images/Overview_img114.png) 
 
 
-### Custom time clock
+### Custom time Clock
 
-To enable the custom time, the DigitalClock should be enabled with the property ShowCustomTimeClock set as true.
+To enable the custom time, the DigitalClock should be enabled with the property ShowCustomTimeClock set as `true`.
 
 #### Input formats
 
-To enable the custom time, the clock control should be enabled with the ShowCustomTimeClock property set as true, and the custom time should be in DateTime format.
+To enable the custom time, the clock control should be enabled with the ShowCustomTimeClock property set as `true`, and the custom time should be in DateTime format.
 
 {% tabs %}
 

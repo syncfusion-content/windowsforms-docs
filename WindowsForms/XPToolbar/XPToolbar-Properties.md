@@ -7,16 +7,16 @@ control: XPToolbar
 documentation: ug
 ---
 
-# XPToolbar Properties
+# XPToolbar properties
 
-## Appearance Properties
+## Appearance properties
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPToolbar Property</th><th>
+XPToolbar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -64,14 +64,14 @@ ThemesEnabled</td><td>
 Specifies whether XP theme is enabled or not.</td></tr>
 </table>
 
-## Behavior Properties
+## Behavior properties
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPToolbar Property</th><th>
+XPToolbar property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -92,24 +92,12 @@ Indicates whether the control is visible or not.</td></tr>
 <tr>
 <td>
 ShowHighlightRectangle</td><td>
-Highlights the bar items on mouse hovering. By default it is set to true.</td></tr>
+Highlights the bar items on mouse hovering. By default it is set to `true`.</td></tr>
 <tr>
 <td>
 ShowChevron</td><td>
-Indicates whether to show chevron. (Default - true)</td></tr>
+Indicates whether to show chevron. (Default - `true`)</td></tr>
 </table>
-
-{% seealso %}
-
- XPToolbar Control
- 
- Adding and Filling the XPToolbar
- 
- UI Command Update Patterns
- 
-{% endseealso %}
-
-
 
 
 

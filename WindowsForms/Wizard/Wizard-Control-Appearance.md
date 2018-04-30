@@ -321,7 +321,7 @@ Banner Panel is a simple gradient panel whose 3D border styles are as follows.
 * Adjust
 * Flat
 
-N> The GradientPanel.BorderStyle property should be set to "Fixed3D" to make this setting effective.
+N> The GradientPanel.BorderStyle property should be set to Fixed3D to make this setting effective.
 
 {% tabs %}
 
@@ -350,7 +350,7 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 ![](Wizard-Control-Appearance_images/Wizard-Control-Appearance_img11.jpeg) 
 
 
-You can use the below properties to set 2D border style for the Banner Control when GradientPanel.BorderStyle property is set to "FixedSingle".
+You can use the below properties to set 2D border style for the Banner Control when GradientPanel.BorderStyle property is set to FixedSingle.
 
 Property table
 

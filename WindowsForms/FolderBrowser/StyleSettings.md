@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-# Style Settings
+# Style settings
 
 The style settings that are available for the FolderBrowser Dialog are given below.
 
@@ -15,7 +15,7 @@ The style settings that are available for the FolderBrowser Dialog are given bel
 <table>
 <tr>
 <th>
-FolderBrowser Property</th><th>
+FolderBrowser property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -55,28 +55,32 @@ The various options of the Style property are described below.
 * UAHint - Adds an usage hint to the folder dialog. It can be applied only with 'NewDialogStyle'.
 * Validate - Typing invalid name in the textbox triggers FolderBrowserCallBack event.
 
-{%highlight c#%}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
 this.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextBox;
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-{%highlight vbnet%}
+{% highlight VB %}
 
 
 
 Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextBox
 
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Overview_images/Overview_img411.jpeg) 
 
 
 
-A Sample which demonstrates the Style Settings of FolderBrowser is available in the below sample installation path.
+A sample which demonstrates the Style Settings of FolderBrowser is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_

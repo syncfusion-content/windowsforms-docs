@@ -40,20 +40,13 @@ HotBorderColor</td><td>
 Specifies the color of the FixedSingle border when MouseOver.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.radioButtonAdv1.BorderColor = System.Drawing.Color.Fuchsia;
-
 this.radioButtonAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
 this.radioButtonAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted;
-
 this.radioButtonAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-
-
 
 // BorderStyle must be set to 'FixedSingle'.
 
@@ -61,32 +54,23 @@ this.radioButtonAdv1.HotBorderColor = System.Drawing.Color.DarkOrange;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.radioButtonAdv1.BorderColor = System.Drawing.Color.Fuchsia
-
 Me.radioButtonAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-
 Me.radioButtonAdv1.BorderSingle = System.Windows.Forms.ButtonBorderStyle.Dotted
-
 Me.radioButtonAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.RaisedInner
 
-
-
 ' BorderStyle must be set to 'FixedSingle'.
-
 Me.radioButtonAdv1.HotBorderColor = System.Drawing.Color.DarkOrange
 
 {% endhighlight %}
+{% endtabs %}
 
  ![](Overview_images/Overview_img638.jpeg) 
 
 
  ![](Overview_images/Overview_img639.jpeg) 
-
-
 
 A sample which demonstrates the Border Settings of RadioButtonAdv is available in the below sample installation path.
 

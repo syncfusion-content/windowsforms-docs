@@ -9,15 +9,13 @@ documentation: ug
 
 # Appearance Settings
 
-## Background Settings
+## Background settings
 
 The Background settings of the PercentTextBox control are discussed below.
 
-### Background Color
+### Background color
 
 The background color of the control can be set using the properties given below.
-
-
 
 <table>
 <tr>
@@ -34,54 +32,31 @@ ReadOnlyBackColor</td><td>
 Specifies the back color to be used when the control is in the ReadOnly mode.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
 this.percentTextBox1.BackColor = System.Drawing.Color.LightCyan;
-
-
-
 this.percentTextBox1.ReadOnly = true;
-
 this.percentTextBox1.ReadOnlyBackColor = System.Drawing.Color.Pink;
+
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.percentTextBox1.BackColor = System.Drawing.Color.LightCyan
-
-
-
 Me.percentTextBox1.[ReadOnly] = True
-
 Me.percentTextBox1.ReadOnlyBackColor = System.Drawing.Color.Pink
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](PercentTextBox-Images/Overview_img480.png)
 
-
-
-
-
  ![](PercentTextBox-Images/Overview_img481.png)
-
-
-
 
 N> The ReadOnly property must be set to 'True' for the above setting to take effect.
 
 The methods associated with the above properties are given below.
-
-
 
 <table>
 <tr>
@@ -98,15 +73,13 @@ ResetReadOnlyBackColor</td><td>
 Resets the ReadOnlyBackColor property to it's default value.</td></tr>
 </table>
 
-## Foreground Settings
+## Foreground settings
 
 The Foreground settings of the PercentTextBox control are discussed below.
 
-### Foreground Color
+### Foreground color
 
 The foreground color of the control can be set using the properties given below.
-
-
 
 <table>
 <tr>
@@ -127,42 +100,27 @@ ZeroColor</td><td>
 Gets / sets the fore color when the current value is zero.</td></tr>
 </table>
 
-
-
+{% tabs %}
 {% highlight C# %}
 
-
-
-
-
 this.percentTextBox1.PositiveColor = System.Drawing.Color.ForestGreen;
-
 this.percentTextBox1.NegativeColor = System.Drawing.Color.Orange;
-
 this.percentTextBox1.ZeroColor = System.Drawing.Color.Orchid;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
+{% highlight vb %}
 
 Me.percentTextBox1.PositiveColor = System.Drawing.Color.ForestGreen
-
 Me.percentTextBox1.NegativeColor = System.Drawing.Color.Orange
-
 Me.percentTextBox1.ZeroColor = System.Drawing.Color.Orchid
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
  ![](PercentTextBox-Images/Overview_img483.png) 
 
-
-
 The methods associated with the above properties are given below.
-
-
 
 <table>
 <tr>
@@ -203,10 +161,9 @@ ShouldSerializeZeroColor</td><td>
 Serializes the ZeroColor property.</td></tr>
 </table>
 
-## Visual Style
+## Visual style
 
 Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for PercentTextBox.
-
 
 A sample which demonstrates the Foreground Settings of PercentTextBox control is available in the below sample installation path.
 

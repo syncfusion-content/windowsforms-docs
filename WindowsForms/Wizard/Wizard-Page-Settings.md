@@ -88,7 +88,7 @@ The individual Wizard page is identified using its LayoutName in the SelectedWiz
 
 
 
-The header section (GradientPanel and its child controls) can be hidden by setting FullPage property to true. This makes the page occupy the entire space without the header.
+The header section (GradientPanel and its child controls) can be hidden by setting FullPage property to `true`. This makes the page occupy the entire space without the header.
 
 Property table
 
@@ -100,7 +100,7 @@ Description</th></tr>
 <tr>
 <td>
 FullPage</td><td>
-Gets/sets the boolean value whether the Banner Panel should  be shown for that page. Default value is false.</td></tr>
+Gets/sets the boolean value whether the Banner Panel should  be shown for that page. Default value is `false`.</td></tr>
 </table>
 
 {% tabs %}
@@ -127,19 +127,6 @@ A sample which demonstrates a Wizard Control with interactive Wizard pages is av
 
 …\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
-
-{% seealso %}
-
-Foreground Settings
-
-Background Settings
-
-ValidatePage Event
-
-How to Programmatically control the Page Sequence?
-
-{% endseealso %}
-
 ### Reordering wizard pages
 
 By default, the WizardControl will use the order in which the pages are added to determine the next/previous pages. To reorder the pages, use any one of the following methods.
@@ -150,7 +137,7 @@ By default, the WizardControl will use the order in which the pages are added to
 
 
 
-* In the designer, right click on a page and choose 'Bring To Front' or 'Send To Back' options which will move the page to the beginning or to the end of the collection, respectively.
+* In the designer, right-click on a page and choose 'Bring To Front' or 'Send To Back' options which will move the page to the beginning or to the end of the collection, respectively.
 
 ![](Wizard-Package_images/Wizard-Package_img20.jpeg)
 
@@ -199,13 +186,4 @@ Me.wizardControlPage2.PreviousPage = Me.wizardControlPage1
 {% endhighlight %}
 
 {% endtabs %}
-
-{% seealso %}
-Page Selection at Design time
-
-ValidatePage Event
-
-How to Programmatically control the Page Sequence?
-{% endseealso %}
-
 

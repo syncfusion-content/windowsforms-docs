@@ -7,16 +7,13 @@ control: Tools
 documentation: ug
 ---
 
-
 # Behavior Settings
 
 The behavior settings of the IntegerTextBox control are discussed below.
 
-## Negative Key Settings
+## Negative key settings
 
 The integer value of the IntegerTextBox can be reset or changed to a negative value using the properties given below.
-
-
 
 <table>
 <tr>
@@ -38,7 +35,6 @@ This property defines the behavior when the contents of the IntegerTextBox is fu
 {% highlight C# %}
 
 this.integerTextBox1.DeleteSelectionOnNegative = true;
-
 this.integerTextBox1.NegativeInputPendingOnSelectAll = true;
 
 {% endhighlight %}
@@ -46,7 +42,6 @@ this.integerTextBox1.NegativeInputPendingOnSelectAll = true;
 {% highlight VB %}
 
 Me.integerTextBox1.DeleteSelectionOnNegative = True
-
 Me.integerTextBox1.NegativeInputPendingOnSelectAll = True
 
 {% endhighlight %}

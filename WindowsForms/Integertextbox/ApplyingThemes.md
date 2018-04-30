@@ -11,8 +11,6 @@ documentation: ug
 
 Themes can be applied to the IntegerTextBox control using the property given below.
 
-
-
 <table>
 <tr>
 <th>
@@ -28,7 +26,6 @@ Specifies whether or not to use XP themes, when BorderStyle property is set to '
 N> Refer_ [Border Settings](/windowsforms/integertextbox/bordersettings) _topic to know about the BorderStyle property.
 
 {% tabs %}
-
 {% highlight C# %}
 
 this.integerTextBox1.ThemesEnabled = true;
@@ -40,12 +37,9 @@ this.integerTextBox1.ThemesEnabled = true;
 Me.integerTextBox1.ThemesEnabled = true
 
 {% endhighlight %}
-
 {% endtabs %}
 
-
 ![](Overview_images/Overview_img460.png) 
-
 
 A sample which demonstrates the ThemesEnabled property of the IntegerTextBox control is available in the below sample installation path.
 

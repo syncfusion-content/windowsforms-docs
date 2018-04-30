@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Applying themes
 
-The Themes Enabled property specifies whether XP Themes should be used for drawing the control. Themes can be enabled by setting the ThemesEnabled property of GroupView to 'True'.
+The Themes Enabled property specifies whether XP Themes should be used for drawing the control. Themes can be enabled by setting the ThemesEnabled property of GroupView to `true`.
 
 {% tabs %}
 

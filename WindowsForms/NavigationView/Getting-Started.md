@@ -15,11 +15,11 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 
 * Create a Windows Forms project in Visual Studio.
 
-* Find **NavigationView** by typing the name of the NavigationView in the search box.
+* Find NavigationView by typing the name of the NavigationView in the search box.
 
 ![](Getting-Started_images/NavigationView1.png)
 
-* Drag-and-drop a `NavigationView` control from the VS.NET toolbox onto the form. This will create an instance of the `NavigationView` control on the form.
+* Drag-and-drop a `NavigationView` control from the VS.NET toolbox onto the form. This will create an instance of the NavigationView control on the form.
 
 ![](Getting-Started_images/NavigationView2.png)
 

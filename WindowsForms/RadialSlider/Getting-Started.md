@@ -7,13 +7,15 @@ control: RadialSlider
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 ## Creating Radial Slider
 
-### Through Code
+## Through code
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 RadialSlider radialSlider = new RadialSlider();
 
@@ -31,13 +33,15 @@ this.Controls.Add(radialSlider);
 
 {% endhighlight %}
 
-### Through Designer
+{% endtabs %}
+
+## Through designer
 
 The following steps illustrate the creation of Radial Slider.
 
 1. Select RadialSlider from the toolbox.
 2. Drag the RadialSlider from the toolbox to the form.
-3. The RadialSlider will be created in the form as shown in the following image
+3. The RadialSlider will be created in the form as shown in the following image.
 
 
 

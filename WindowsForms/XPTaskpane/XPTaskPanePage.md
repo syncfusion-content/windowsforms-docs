@@ -11,11 +11,11 @@ documentation: ug
 
 XPTaskPane has a TaskPanePageContainer which hosts the Task pages. Any number of controls can added to the Task pages and can be customized. Properties which controls the appearance of the Task pages are discussed in this section.
 
-## Page Title and Layout Name
+## Page title and layout name
 
 The title text for an XPTaskPage can be edited using XPTaskPage.Title property.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -36,8 +36,9 @@ LayoutName</td><td>
 The individual Task page is identified using its LayoutName in the SelectedPage property. By default the LayoutName is set as Card1, for the first page added, Card2 for the next page and so on. </td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.xpTaskPage1.Title = "XPTaskPane Header";
@@ -46,7 +47,7 @@ this.xpTaskPage1.LayoutName = "Card1";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -56,20 +57,22 @@ Me.xpTaskPage1.LayoutName = "Card1"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](XPTaskPane-Control_images/XPTaskPane_img1.jpeg) 
 
 
 
-## TaskPage Border
+## TaskPage border
 
 The below properties controls the border settings for a Task page.
 
-Property Table
+Property table
 
 <table>
 <tr>
 <th>
-XPTaskPage Property</th><th>
+XPTaskPage property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -93,8 +96,9 @@ BorderSingle</td><td>
 Specifies the 2D Border style for the Task page when BorderStyle property is set to FixedSingle. The available styles are,Dotted,Dashed,Solid,Inset and Outset.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -104,7 +108,7 @@ this.xpTaskPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -114,15 +118,19 @@ Me.xpTaskPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](XPTaskPane-Control_images/XPTaskPane_img2.jpeg)
 
 
 
-## XPTaskPage Foreground
+## XPTaskPage foreground
 
-Font style and fore color of the Task pages can be set using XPTaskPage.Font and XPTaskPage.ForeColor properties. 
+Font style and fore color of the Task pages can be set using XPTaskPage.Font and XPTaskPage.ForeColor properties.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -132,7 +140,7 @@ this.xpTaskPage1.ForeColor = System.Drawing.Color.SteelBlue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -141,6 +149,8 @@ Me.xpTaskPage1.Font = New System.Drawing.Font("Arial", 8.25F)
 Me.xpTaskPage1.ForeColor = System.Drawing.Color.SteelBlue
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](XPTaskPane-Control_images/XPTaskPane_img3.jpeg)
 

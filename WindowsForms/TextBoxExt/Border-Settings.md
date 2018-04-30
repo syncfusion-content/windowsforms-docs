@@ -38,40 +38,28 @@ BorderStyle</td><td>
 Indicates whether the edit control should have a border. The options included are given below:{{ '_FixedSingle,_' | markdownify }}{{ '_Fixed3D and_' | markdownify }}{{ '_None._' | markdownify }}</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
-
-
 this.textBoxExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised;
-
 this.textBoxExt1.BorderColor = System.Drawing.Color.Orchid
-
 this.textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All;
-
 this.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.textBoxExt1.Border3DStyle = System.Windows.Forms.Border3DStyle.Raised
-
 Me.textBoxExt1.BorderColor = System.Drawing.Color.Orchid
-
 Me.textBoxExt1.BorderSides = System.Windows.Forms.Border3DSide.All
-
 Me.textBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Border-Settings_images/Border-Settings_img1.png)
-
-
 
 A sample which demonstrates the Border Settings of TextBoxExt control is available in the below sample installation path.
 
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-

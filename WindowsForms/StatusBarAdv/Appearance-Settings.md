@@ -17,23 +17,23 @@ StatusBarAdv supports Office2016 styles such as Office2016Colorful,Office2016Whi
 
 //Sample code for setting "Office2016 Colorful" style for StatusBarAdv
 
+{% tabs %}
 {% highlight c# %}
 
 this.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Office2016White;
 
 {% endhighlight  %}
 
-{%highlight vbnet%}
+{% highlight vb %}
 
 Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Office2016White;
 
-{% endhighlight  %}
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Overview_images/Overview_img117.png)
 
-
-## Background Settings
+## Background settings
 
 You can customize the StatusBarAdv control's background by using the various options provided in the BackgroundColor property as follows.
 
@@ -90,56 +90,39 @@ UseMetroColorAsBorder</td><td>
 Gets or sets whether to set MetroColor as its Border color.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
+//To set the Background color of the StatusBarAdv
+this.statusBarAdv1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, Color.NavajoWhite, Color.IndianRed);
 
+//To set the MetroColor in StatusBarAdv
+this.statusBarAdv1.MetroColor = ColorTranslator.FromHtml("#16a5dc");
 
-   //To set the Background color of the StatusBarAdv
-
-   this.statusBarAdv1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, Color.NavajoWhite, Color.IndianRed);
-
-   //To set the MetroColor in StatusBarAdv
-
-   this.statusBarAdv1.MetroColor = ColorTranslator.FromHtml("#16a5dc");
-
-   //To set the MetroColor as Border of the StatusBarAdv
-
-   this.statusBarAdv1.UseMetroColorAsBorder = true;
+//To set the MetroColor as Border of the StatusBarAdv
+this.statusBarAdv1.UseMetroColorAsBorder = true;
 
 {% endhighlight %}
 
+{% highlight vb %}
 
+'To set the Background color of the StatusBarAdv
+Me.statusBarAdv1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, Color.NavajoWhite, Color.IndianRed)
 
-{% highlight vbnet %}
+'To set the MetroColor in StatusBarAdv
+Me.statusBarAdv1.MetroColor = ColorTranslator.FromHtml("#16a5dc")
 
-
-
-   'To set the Background color of the StatusBarAdv
-
-   Me.statusBarAdv1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathRectangle, Color.NavajoWhite, Color.IndianRed)
-
-   'To set the MetroColor in StatusBarAdv
-
-   Me.statusBarAdv1.MetroColor = ColorTranslator.FromHtml("#16a5dc")
-
-   'To set the MetroColor as Border of the StatusBarAdv
-
-   Me.statusBarAdv1.UseMetroColorAsBorder = True
-
+'To set the MetroColor as Border of the StatusBarAdv
+Me.statusBarAdv1.UseMetroColorAsBorder = True
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Overview_images/Overview_img64.jpeg) 
 
-
-
 ![](Overview_images/Overview_img65.png) 
 
-
-
-## Sizing Grip
+## Sizing grip
 
 A sizing grip can be displayed for the StatusBarAdv control using the property given below.
 
@@ -156,26 +139,20 @@ SizingGrip</td><td>
 Indicates if the sizing grip is visible.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
-
-
 
 this.statusBarAdv1.SizingGrip = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
-
+{% highlight vb %}
 
 Me.statusBarAdv1.SizingGrip = True
 
 {% endhighlight %}
+{% endtabs %}
 
 SizingGrip property when set will display a grip at the bottom right of the control as displayed in the below image.
 
 ![](Overview_images/Overview_img66.jpeg) 
-
-
-

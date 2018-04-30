@@ -35,7 +35,6 @@ Gets / sets the minimum size for the control.</td></tr>
 {% highlight C# %}  
 
 this.maskedEditBox1.MaximumSize = new System.Drawing.Size(150, 20);
-
 this.maskedEditBox1.MinimumSize = new System.Drawing.Size(150, 20);
 
 {% endhighlight %}
@@ -43,7 +42,6 @@ this.maskedEditBox1.MinimumSize = new System.Drawing.Size(150, 20);
 {% highlight VB %} 
 
 Me.maskedEditBox1.MaximumSize = New System.Drawing.Size(150, 20)
-
 Me.maskedEditBox1.MinimumSize = New System.Drawing.Size(150, 20)
 
 {% endhighlight %}

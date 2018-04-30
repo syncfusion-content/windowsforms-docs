@@ -36,35 +36,30 @@ VisualItemMode</td><td>
 To set custom text input for VisualItem, based on the end-user’s requirement.</td></tr>
 </table>
 
-
+{% tabs %}
 {% highlight c# %}
 
 //Define the Visual items as DisplayMember
-
 this.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.DisplayMemberMode;
 
 //Define the Visual items as ValueMember
-
 this.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.ValueMemberMode;
 
 //To set custom text input for VisualItem, based on end user requirement.
-
 this.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.VisualItemMode;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Define the Visual items as DisplayMember
-
 Me.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.DisplayMemberMode
 
 'Define the Visual items as ValueMember
-
 Me.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.ValueMemberMode
 
 'To set custom text input for VisualItem, based on end user requirement.
-
 Me.multiSelectionComboBox1.VisualItemInputMode = Syncfusion.Windows.Forms.Tools.VisualItemInputMode.VisualItemMode
 
 {% endhighlight %}
+{% endtabs %}

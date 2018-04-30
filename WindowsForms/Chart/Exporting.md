@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting
 
-EssentialChart has built-in support for exporting the chart control into various image formats. Also, using our complementary products like Essential XlsIO, DocIO and PDF you can also export the chart image into Excel, Word Doc and PDF documents.
+EssentialChart has built-in support for exporting the chart control into various image formats. Also, using our complementary products like Essential **XlsIO, DocIO and PDF** you can also export the chart image into **Excel, Word Doc and PDF** documents.
 
 ## Exporting as an Image
 
@@ -51,7 +51,6 @@ System.Diagnostics.Process.Start(exportFileName)
 {% endtabs %}
 
 Based on the filename extension the chart has built-in support to save the image in the following formats.
-
 
 <table>
 <tr>
@@ -96,13 +95,13 @@ SVG (Scalable Vector Graphics)</td></tr>
 Post Script</td></tr>
 </table>
 
-If the specified extension is none of the above, then the chart is exported as a bitmap.
+N> If the specified extension is none of the above, then the chart is exported as a bitmap.
 
 During runtime, the Chart control can be saved as a file using the Chart Toolbar save option.
 
-Editable Text Support for EPS Images
+**Editable Text Support for EPS Images**
 
-The Chart control can export an EPS image with editable text by setting the EditableText property to true. 
+The Chart control can export an EPS image with editable text by setting the [EditableText](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ToPostScript~EditableText.html) property to true. 
 
 {% tabs %}  
 
@@ -160,8 +159,9 @@ The chart control can be exported to a Word doc file as an image using Essential
 
 Given below are the steps that will guide you through this process.
 
-1. Add the Syncfusion.DocIO.Base and Syncfusion.DocIO.Windows assemblies.
-2. Add the namespace Syncfusion.DocIO and Syncfusion.DocIO.DLS in your form.
+1.Add the **Syncfusion.DocIO.Base and Syncfusion.DocIO.Windows** assemblies.
+
+2.Add the namespace **Syncfusion.DocIO and Syncfusion.DocIO.DLS** in your form.
 
 {% tabs %}
    
@@ -183,7 +183,7 @@ Imports Syncfusion.DocIO.DLS
 
 {% endtabs %}
 
-3. Add the code snippet that is given below in your form.
+3.Add the code snippet that is given below in your form.
 
 {% tabs %}
 
@@ -283,7 +283,7 @@ System.Diagnostics.Process.Start(exportFileName)
 
 A sample demonstrating the above is available in our installation at the following location:
 
-"My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Export\Chart Export Data"
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Export\Chart Export Data
 
 ## Exporting to Grid
 
@@ -293,12 +293,16 @@ The chart control can be exported into a grid cell (in Essential Grid) as an ima
 
 The steps that are given below will guide you through the process.
 
-1. Add the Syncfusion.Grid.Base and Syncfusion.Grid.Windows assemblies
-2. Add a form (Form2) to hold the Grid control in which the chart is to be exported.
-3. Drag a grid control onto the Form2.
-4. Add the namespace Syncfusion.Windows.forms.Grid in Form2.
+1.Add the **Syncfusion.Grid.Base and Syncfusion.Grid.Windows** assemblies.
+
+2.Add a form (Form2) to hold the Grid control in which the chart is to be exported.
+
+3.Drag a grid control onto the Form2.
+
+4.Add the namespace **Syncfusion.Windows.forms.Grid** in Form2.
 
 {% tabs %}
+
 {% highlight c# %}
    
 using Syncfusion.Windows.Forms.Grid;	
@@ -313,7 +317,7 @@ Imports Syncfusion.Windows.Forms.Grid
 
 {% endtabs %}
 
-5. Add the code snippet that is given below in Form2 to get the chart data into the grid.
+5.Add the code snippet that is given below in Form2 to get the chart data into the grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -386,7 +390,7 @@ Me.gridControl1(1, 1).ImageSizeMode = GridImageSizeMode.CenterImage
 
 {% endtabs %}
 
-6. Add the code that is given below in the form with the chart control to be exported.
+6.Add the code that is given below in the form with the chart control to be exported.
 
 {% tabs %}
 
@@ -442,9 +446,9 @@ gridForm.ShowDialog()
 
 {% endtabs %}
 
-A sample demonstrating the above is available in our installation at the following location:
+A sample demonstrating the above is available in our installation at the following location.
 
-"My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Export\Chart Export Data"
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Export\Chart Export Data
 
 ## Exporting to Excel
 
@@ -454,8 +458,9 @@ EssentialChart data can be exported into an Excel document and an Excel chart ca
 
 Given below are the steps that will guide you through this process.
 
-1. Add the Syncfusion.XLsIO.Base and Syncfusion.XLsIO.Windows assemblies.
-2. Add the namespace Syncfusion.XLsIO in your form.
+1.Add the **Syncfusion.XLsIO.Base and Syncfusion.XLsIO.Windows** assemblies.
+
+2.Add the namespace **Syncfusion.XLsIO** in your form.
 
 {% tabs %}
   
@@ -473,7 +478,7 @@ Imports Syncfusion.XlsIO
 
 {% endtabs %}
 
-3. Add the code snippet that is given below in your form.
+3.Add the code snippet that is given below in your form.
 
 {% tabs %}
 
@@ -615,9 +620,9 @@ System.Diagnostics.Process.Start(exportFileName)
 
 ### Sample
 
-A sample demonstrating the above functionality is available in our installation at the following location:
+A sample demonstrating the above functionality is available in our installation at the following <location class=""></location>
 
-"My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Export\Chart Export Data"
+&lt;Install Location&gt;\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Export\Chart Export Data
 
 ## Exporting to PDF
 
@@ -625,8 +630,9 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 
 ![](Exporting_images/Exporting_img6.jpeg)
 
-1. Add the Syncfusion.Pdf.Base and Syncfusion.Pdf.Windows assemblies.
-2. Add the namespace Syncfusion.Pdf in your form.
+1.Add the **Syncfusion.Pdf.Base and Syncfusion.Pdf.Windows** assemblies.
+
+2.Add the namespace **Syncfusion.Pdf** in your form.
 
 {% tabs %}
   
@@ -648,7 +654,7 @@ Imports Syncfusion.Pdf.Graphics
 
 {% endtabs %}
 
-3. Add the code snippet that is given below in your form.
+3.Add the code snippet that is given below in your form.
 
 {% tabs %}
 
@@ -718,6 +724,7 @@ System.Diagnostics.Process.Start(exportFileName)
 
 {% endtabs %}
 
-A sample demonstrating the above is available in our installation at the following location:
+A sample demonstrating the above is available in our installation at the following location.
 
-"My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Export\Chart Export Data"
+&lt;Install Location&gt;>\Syncfusion\EssentialStudio\<Install version>\Windows\Chart.Windows\Samples\Export\Chart Export Data
+
