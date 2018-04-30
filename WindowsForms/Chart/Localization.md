@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization 
 
-[Localization](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Localization.html) allows a chart to display data according to the language and culture specific to a particular country or region.
+[Localization](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Localization.html) allows chart to display data according to the language and culture specific to a particular country or region.
 
 EssentialChart now supports localization; built-in resource files for specific languages can be easily added.  Context menu items, exception messages, and some of the toolbar items can be localized.
 
@@ -28,7 +28,9 @@ Reference links </th><th>
 Dependencies</th></tr>
 <tr>
 <td>
-Localize </td><td>
+
+{{'[Localize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Localize.html)'| markdownify }}
+</td><td>
 Get or set the localization culture of Grid.</td><td>
 Server side</td><td>
 A string containing the name of the target System.Globalization.CultureInfo </td><td>
