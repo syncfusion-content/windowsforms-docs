@@ -11,33 +11,33 @@ documentation: ug
 
 This section provides the details that you will need to know about getting started with our Chart control. 
 
-## Creating a Simple Chart
+## Adding chart to form
 
-To create a simple chart control and populate it with simple data, follow the steps that are given below.
+To add chart to your form, follow the given steps:
 
-1. Open your form in the designer. Add the Syncfusion controls to yourVS.NET toolbox if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation). 
+1.Open your form in designer. Add the Syncfusion controls to your VS.NET toolbox if you have not done it already (the install would have automatically done this unless you selected not to complete toolbox integration during installation). 
 
-Add new image.
+![](Getting-Started_images/Toolbox.jpg)
 
-2. Drag a Chart control onto the form.
+2.Drag [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and drop into the form.
 
-Add image
+![](Getting-Started_images/Form.jpg)
 
-3. Once you dropped the chart, the ChartWizard will open to set up the chart during design-time. You can design the chart as per your desire.
+3.After dropping the chart, the **ChartWizard** will be opened. You can set up the chart configuration during design-time.
 
-Add image
+![](Getting-Started_images/ChartWizard.jpg)
 
-4. Appearance and behavior-related aspects of the Chart can be controlled by setting the appropriate properties through the properties grid. 
+4.Appearance and behavior-related aspects of chart can be controlled by setting the appropriate properties using the properties grid. 
 
-For example, change the position of the legend for the control to be top aligned by changing the LegendPosition property.
+For example, change the position of the legend to be aligned at the top by changing the **LegendPosition** property.
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Properties.jpg)
 
-## Populate Chart with Data
+## Populate chart with data
 
-As we are going to visualize the comparison of product sales,
+In this section, the comparison of sales of a product has been visualized by using the **BindingList**.
 
-1. Now, let us define a simple data model that represents a data point. Create a data model class like below.
+1.Now, define a simple data model that represents a data point and create a data model class like as follows.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ End Class
 
 {% endtabs %}	
 
-2. Create an instance for BindingList to add list of data model.
+2.Create an instance for **BindingList** to add list of data model.
 
 {% tabs %}
 
@@ -143,33 +143,33 @@ dataSource.Add(new SalesData("2008", 75));
 
 {% highlight vb %}
 
-BindingList<SalesData> dataSource = new BindingList<SalesData>()
+Dim dataSource As BindingList(Of SalesData) = New BindingList(Of SalesData)
 
-dataSource.Add(new SalesData("1999", 3))
+dataSource.Add(New SalesData("1999", 3))
 
-dataSource.Add(new SalesData("2000", 7))
+dataSource.Add(New SalesData("2000", 7))
 
-dataSource.Add(new SalesData("2001", 12))
+dataSource.Add(New SalesData("2001", 12))
 
-dataSource.Add(new SalesData("2002", 18))
+dataSource.Add(New SalesData("2002", 18))
 
-dataSource.Add(new SalesData("2003", 22))
+dataSource.Add(New SalesData("2003", 22))
 
-dataSource.Add(new SalesData("2004", 30))
+dataSource.Add(New SalesData("2004", 30))
 
-dataSource.Add(new SalesData("2005", 40))
+dataSource.Add(New SalesData("2005", 40))
 
-dataSource.Add(new SalesData("2006", 50))
+dataSource.Add(New SalesData("2006", 50))
 
-dataSource.Add(new SalesData("2007", 65))
+dataSource.Add(New SalesData("2007", 65))
 
-dataSource.Add(new SalesData("2008", 75))
+dataSource.Add(New SalesData("2008", 75))
 
 {% endhighlight %}
 
 {% endtabs %}	
    
-3. Then bind the XValues and YValues to CategoryName and YNames properties of CategoryAxisDataBindModel as shown below.
+3.Create an instance of [CategoryAxisDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel.html) and bind the **XValues** and **YValues** to [CategoryName](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel~CategoryName.html) and [YNames](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel~YNames.html) properties, respectively as follows.
 
 {% tabs %}
 
@@ -179,17 +179,23 @@ CategoryAxisDataBindModel dataSeriesModel = new CategoryAxisDataBindModel(dataSo
 
 dataSeriesModel.CategoryName = "Year";
 
-dataSeriesModel.YNames = new string[] { "Sales" };       
+dataSeriesModel.YNames = new string[] { "Sales" };
 
 {% endhighlight %}
 
 {% highlight vb %}
 
+Dim dataSeriesModel As CategoryAxisDataBindModel = New CategoryAxisDataBindModel(dataSource)
+
+dataSeriesModel.CategoryName = "Year"
+
+dataSeriesModel.YNames = New String() {"Sales"}
+
 {% endhighlight %}
 
 {% endtabs %}	
 
-4. Now, create a ChartSeries to bind the above data bind model to CategoryModel and add it to the ChartControl.
+4.Create a [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) to bind the above data bind model to [CategoryModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~CategoryModel.html) and add it to the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html).
 
 {% tabs %}
 
@@ -203,13 +209,35 @@ chartSeries.CategoryModel = dataSeriesModel;
 
 {% highlight vb %}
 
+Dim chartSeries As ChartSeries = New ChartSeries("Sales")
+
+chartSeries.CategoryModel = dataSeriesModel
+
 {% endhighlight %}
 
-{% endtabs %}	
+{% endtabs %}
 
-## Apply Skins to ChartControl
+5.To use categorical data, set the [ValueType](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~ValueType.html) property of [PrimaryXAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrimaryXAxis.html) to Category.
 
-To make the better appearance of Chart, you need to apply Metro skin to ChartControl as shown below.
+{% tabs %}
+
+{% highlight c# %}
+
+this.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Apply skins to ChartControl
+
+To improve the appearance of chart, apply **Metro skin** to [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl_members.html) as follows.
 
 {% tabs %}
 
@@ -221,141 +249,166 @@ this.chartControl1.Skins = Skins.Metro;
 
 {% highlight vb %}
 
-chartControl1.Skins = Skins.Metro
+Me.chartControl1.Skins = Skins.Metro
 
 {% endhighlight %}
 
 {% endtabs %}	
 
-When you run the project, the following chart is created as a result of the above codes.
+The following screenshot depicts the view when you run the project in your form.
 
-Add output image
+![](Getting-Started_images/Skin.jpg)
 
-## Add Chart Title
+## Add chart title
 
-You need to add a title to the chart to provide quick information to the user about the data being plotted in the chart. You can add it by using the Text property of ChartTitle.
+Title is added to chart to provide quick information to users about the data being plotted in the chart. You can add title to chart by using the [Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Text.html) property of [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html).
 
 {% tabs %}
 
 {% highlight c# %}
   
-chart.Title.Text = "Product Sales";
+this.chartControl1.Title.Text = "Product Sales";
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-chart.Title.Text = "Product Sales"
+Me.chartControl1.Title.Text = "Product Sales"
 
 {% endhighlight %}
 
 {% endtabs %}	
 
-Need to add image
+![](Getting-Started_images/Title.jpg)
 
-## Enable Legend
+## Enable legend
 
-You can enable or disable the legend by using the Visible property. It is enabled in the chart, by default. 
+The [Legend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Legend.html) is enabled or disabled by using the **Visible** property. The legend is enabled in chart, by default. 
 
 {% tabs %}
 
 {% highlight c# %}
   
-chart.Legend.Visible = true;
+ChartSeries chartSeries1 = new ChartSeries("Sales");
+
+this.chartControl1.Legend.Visible = true;
+
+this.chartControl1.LegendAlignment = ChartAlignment.Center;
+
+this.chartControl1.Legend.Position = ChartDock.Top; 
+           
+this.chartControl1.LegendsPlacement = ChartPlacement.Outside;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-chart.Legend.Visible = true
+Dim chartSeries1 As ChartSeries = New ChartSeries("Sales")
+
+Me.chartControl1.Legend.Visible = true
+
+Me.chartControl1.LegendAlignment = ChartAlignment.Center
+
+Me.chartControl1.Legend.Position = ChartDock.Top
+
+Me.chartControl1.LegendsPlacement = ChartPlacement.Outside
 
 {% endhighlight %}
 
 {% endtabs %}	
 
-Need to add image
+![](Getting-Started_images/Legend.jpg)
 
-## Enable Data Labels
+## Enable data labels
 
-You can add data labels to improve the readability of the chart. This can be achieved by enabling the DisplayText property of ChartStyleInfo.
+You can add data labels to chart to improve readability by enabling the [DisplayText](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStyleInfo~DisplayText.html) property of [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Style.html) in [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html).
 
 {% tabs %}
 
 {% highlight c# %}
   
-series.Style.DisplayText = true;
+chartSeries1.Style.DisplayText = true;
+
+chartSeries1.Style.TextOrientation = ChartTextOrientation.Up;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-series.Style.DisplayText = True
+chartSeries1.Style.DisplayText = true
+
+chartSeries1.Style.TextOrientation = ChartTextOrientation.Up
 
 {% endhighlight %}
 
 {% endtabs %}	
 
-Need to add image
+![](Getting-Started_images/DataLabel.jpg)
 
-## Enable Tooltip
+## Enable tooltip
 
-The Tooltip is useful when you cannot display information by using the data labels due to the space constraints. You can enable tooltip by using the ShowToolTips property
+The Tooltip is used to show detailed information about a data point. Using data labels to show detailed information is not pleasant due to space constraints. You can enable tooltip by using the [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolTips.html) property.
 
 {% tabs %}
 
 {% highlight c# %}
   
-chart.ShowToolTips = true;
+this.chartControl1.ShowToolTips = true;
+
+this.chartControl1.Tooltip.BackgroundColor = new BrushInfo(Color.White);
+
+this.chartControl1.Tooltip.BorderStyle = BorderStyle.FixedSingle;
+
+this.chartControl1.Tooltip.Font = new Font("Segoe UI", 10);
+
+chartSeries1.PointsToolTipFormat = "{2}";
+
+chartSeries1.PrepareStyle += ChartSeries1_PrepareStyle;
+
+private void ChartSeries1_PrepareStyle(object sender, ChartPrepareStyleInfoEventArgs args)
+{
+     ChartSeries series = sender as ChartSeries;
+
+     int index = args.Index;
+
+     ChartPoint point = series.Points[index];
+
+     args.Style.ToolTip = "Product : " + point.Category + "\nSales : " + point.YValues[0];
+}
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-chart.ShowToolTips = true
+Me.chartControl1.ShowToolTips = true
+
+Me.chartControl1.Tooltip.BackgroundColor = New BrushInfo(Color.White)
+
+Me.chartControl1.Tooltip.BorderStyle = BorderStyle.FixedSingle
+
+Me.chartControl1.Tooltip.Font = New Font("Segoe UI", 10)
+
+chartSeries1.PointsToolTipFormat = "{2}"
+
+chartSeries1.PrepareStyle = (chartSeries1.PrepareStyle + ChartSeries1_PrepareStyle)
+
+Private Sub ChartSeries1_PrepareStyle(ByVal sender As Object, ByVal args As ChartPrepareStyleInfoEventArgs)
+
+        Dim series As ChartSeries = CType(sender,ChartSeries)
+
+        Dim index As Integer = args.Index
+
+        Dim point As ChartPoint = series.Points(index)
+
+        args.Style.ToolTip = ("Product : " _ + (point.Category + (""& vbLf&"Sales : " + point.YValues(0))))
+
+End Sub
 
 {% endhighlight %}
 
 {% endtabs %}	
 
-Need to add image
-
-## Add Symbols
-
-Symbols can be added to chart data marker by setting the Shape of the Symbol property. There are different shapes you can set to the chart such as Diamond, Circle, Arrow, Cross, Hexagon, etc.
-
-{% tabs %}
-
-{% highlight c# %}
-
-series.Style.Symbol.Shape = ChartSymbolShape.Diamond;
-
-series.Style.Symbol.Color = Color.Green;
-
-series.Style.Symbol.Border.Width = 3;
-
-series.Style.Symbol.Border.Color = Color.Black;           
-
-series.Style.Symbol.Size = new Size(25, 25);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-series.Style.Symbol.Shape = ChartSymbolShape.Diamond
-
-series.Style.Symbol.Color = Color.Green
-
-series.Style.Symbol.Border.Width = 3
-
-series.Style.Symbol.Border.Color = Color.Black
-
-series.Style.Symbol.Size = New Size(25, 25)
-
-{% endhighlight %}
-
-{% endtabs %}	
-
-Need to add image
+![](Getting-Started_images/Tooltip.jpg)
 
 {% seealso %}
 
@@ -363,4 +416,4 @@ Need to add image
 
 {% endseealso %}
 
-You can find the complete getting started sample from this link.
+You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WindowsFormsApplication1216656233).
