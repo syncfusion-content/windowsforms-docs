@@ -30,59 +30,11 @@ Some of the key features of Essential Chart are listed below.
 * Essential Chart features built in support for dates. The data type of any series that is plotted on the chart can be set to DateTime.
 * Essential Chart offers automatic interval calculation capabilities for any range of numbers or dates. This calculation can be overridden by explicit allocation of ranges and intervals to be used and also with settings that control how 'nice' numbers are calculated for display.
 * Essential Chart offers extensive customization possibilities of the legend. The position of the legend on the chart area as well as its representation aspects can all be completely customized. Essential Chart also features modification of legend items using events. It also supports custom legend items that are not tied to series of data.
-* Statistical formula Mean, Standard Deviation, Variance, Distributions, t-test, f-test and Z-test etc., support.
-* Exporting Chart to PDF, to Excel and to Doc etc., are available for the chart control. Importing is also supported.
-* Users can create custom palettes for their Charts using CustomPalette property. Also, create non-gradient palettes for the Charts using this custom palettes feature. 
+* Statistical formula means, Standard Deviation, Variance, Distributions, T-test, F-test and Z-test support etc.
+* Exporting Chart to PDF, Excel and Doc etc., are available for the chart control. Importing is also supported.
+* Users can create custom palettes for their Charts using CustomPalette property. Also, can create non-gradient palettes for the Charts using this custom palettes feature. 
 * Multiple Chart Titles and Multiple Legends can be provided with abilities to format the Title text. 
-* Chart Breaks are introduced in this version. Breaks are very useful when you use series points with large difference. 
-
-### User Guide Structure
-
-The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the Tools controls. It is organized into the following sections:
-
-* Overview - This section gives a brief introduction to our product and its key features.
-* Installation and Deployment - This section elaborates on the install location of the samples, license etc.
-* What's New - This section lists the new features implemented for every release.
-* Getting Started - This section guides you on getting started with Windows application, controls etc.
-* Concepts and Features - The features of Essential Chart are illustrated with use case scenarios, code examples and screen shots under this section.
-
-### Document Conventions
-
-The conventions listed below will help you to quickly identify the important sections of information, while using the content:
-
-<table>
-<tr>
-<th>
-Convention</th><th>
-ICON</th><th>
-Description</th></tr>
-<tr>
-<td>
-Note</td><td>
-{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
-
-Note:</td><td>
-Represents important information</td></tr>
-<tr>
-<td>
-Example</td><td>
-Example</td><td>
-Represents an example</td></tr>
-<tr>
-<td>
-Tip</td><td>
-{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
-
-</td><td>
-Represents useful hints that will help you in using the controls/features</td></tr>
-<tr>
-<td>
-Important Note</td><td>
-{{ '![](Overview_images/Overview_img4.jpeg)' | markdownify }}
-
-</td><td>
-Represents additional information on the topic</td></tr>
-</table>
+* Chart Breaks are very useful when you use series points with large difference. 
 
 ## Prerequisites and Compatibility
 
@@ -100,8 +52,9 @@ Development Environments</th><th>
 <tr>
 <td>
 <ul>
-<li>
-Visual Studio 2013</li>
+<li>Visual Studio 2017</li>
+<li>Visual Studio 2015</li>
+<li>Visual Studio 2013</li>
 <li>Visual Studio 2012</li>
 <li>Visual Studio 2010 (Ultimate and Express)</li>
 <li>Visual Studio 2008 (Team, Professional, Standard, and Express)</li>
@@ -110,10 +63,12 @@ Visual Studio 2013</li>
 <li>SharpCode</li></ul></td>
 <td>
 <ul>
-<li>.NET 4.5 RTM</li>
-<li>.NET 4.0</li>
-<li>.NET 3.5</li>
-<li>.NET 2.0</li>
+<li>.NET 4.6</li>
+<li>.NET 4.5.1</li>
+<li>.NET 4.5 RTM</li>
+<li>.NET 4.0</li>
+<li>.NET 3.5</li>
+<li>.NET 2.0</li>
 </ul></td></tr>
 </table>
 
@@ -128,6 +83,7 @@ Operating Systems</th></tr>
 <tr>
 <td>
 <ul>
+<li> Windows 10 (32 bit and 64 bit)</li>
 <li> Windows 8.1 (32 bit and 64 bit)</li>
 <li> Windows Server 2008 (32 bit and 64 bit)</li>
 <li> Windows 7 (32 bit and 64 bit)</li>
@@ -144,13 +100,17 @@ This section gives you an idea of the different sections of a Chart control. Bel
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
+### Chart Control
+
+The ChartControl is the complete visible display for the Control. All other sections will be inside the ChartControl. 
+
 ### Chart Title
 
 The Chart title is the area at the top of the Chart control that displays the text of the ChartControl.
 
 ### Chart Legend 
 
-The Chart legend is the portion of the display showing an entry for each of the data series added to the ChartControl. The Chart legend is positioned in line within the ChartControl (but outside the ChartArea) by default. However, if the chart legend is set to floating mode, the Chart legend can be positioned any where inside the Chart control.
+The Chart legend is the portion of the display showing an entry for each of the data series added to the ChartControl. The Chart legend is positioned in line within the ChartControl (but outside the ChartArea) by default. However, if the chart legend is set to floating mode, the Chart legend can be positioned anywhere inside the Chart control.
 
 The legend can also contain custom items with custom image and text.
 
@@ -158,9 +118,17 @@ The legend can also contain custom items with custom image and text.
 
 This is the section that holds the plots / graphs that are defined in the Chart. The Chart Area also includes the Chart axes that are defined. A primary X axis and primary Y axis are defined by default.
 
-### Chart Control
+### Axis Title
 
-The ChartControl is the complete visible display for the Control. All other sections will be inside the ChartControl. 
+Indicates the title for individual axis.
+
+### Axis Label
+
+Represents the label texts on the axes data points in a Chart.
+
+### Chart Interior
+
+This section is the interior part of the chart control, within the chart area, which contains the data points plotted against X-axis and Y-axis.
 
 ### Chart Series
 
@@ -173,18 +141,6 @@ Symbol that can be placed on the series points.
 ### Chart Shadow
 
 Chart Area Shadow indicates the shadow of the chart area.
-
-### Chart Interior
-
-This section is the interior part of the chart control, within the chart area, which contains the data points plotted against X-axis and Y-axis.
-
-### Chart Label
-
-Represents the label texts on the axes data points in a Chart.
-
-### Axis Title
-
-Indicates the title for individual axis.
 
 {% seealso %}
 
@@ -199,24 +155,34 @@ Syncfusion provides the following documentation segments to provide all necessar
 <table>
 <tr>
 <th>
-Type of documentation</th><th>
-Location</th></tr>
+Type of documentation
+</th>
+<th>
+Location
+</th>
+</tr>
 <tr>
 <td>
-Readme</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\readme.htm</td></tr>
-<tr>
+Readme
+</td>
 <td>
-Release Notes</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Data\Release Notes\Release Notes.htm</td></tr>
+{{ '<https://help.syncfusion.com/windowsforms/release-notes/v16.1.0.32>' | markdownify }}
+</td>
+</tr>
 <tr>
+<td>Release Notes
+</td>
 <td>
-User Guide (this document)</td><td>
-Online{{ '<http://help.syncfusion.com/windowsforms/chart/overview>' | markdownify }} (Navigate to the Chart for Windows Forms User Guide.)> {{ '![](Overview_images/Overview_img5.jpeg)' | markdownify }}
+{{ '<http://files2.syncfusion.com/Installs/v16.1.0.32/ReadMe/WindowsForms.htmll>' | markdownify }}
+</td>
+</tr>
+<tr>
+<td>Class Reference
+</td>
+<td>
+Click on this {{ '<http://help.syncfusion.com/cr/windowsforms>' | markdownify }} link.
 
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }} Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
-<tr>
-<td>
-Class Reference</td><td>
-Online{{ '<http://help.syncfusion.com/cr/windowsforms>' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Chart_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Select Chart from the second text box. Namespaces will be listed out at the left side of the page.
+</td>
+</tr>
 </table>

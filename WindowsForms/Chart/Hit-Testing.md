@@ -62,7 +62,7 @@ End Sub
 
 ### GetPointByValue()
 
-The [GetPointByValue](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~GetPointByValue.html) method does the opposite of the above - given a chart coordinate it returns the client co-ordinate corresponding to that chart.point.
+The [GetPointByValue](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~GetPointByValue.html) method does the opposite of the above - given a chart coordinate it returns the client co-ordinate corresponding to that chart point.
 
 ## LegendItem By Point
 

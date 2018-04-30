@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Area
 
-EssentialChart comes with chart divide area support, wherein a single [ChartArea](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea.html) can be divided into equal squares to display more than one chart (pie, funnel or pyramid). To enable this [ChartArea.DivideArea](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~DivideArea.html) property should be set to true.
+EssentialChart comes with chart divide area support, wherein a single [ChartArea](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea.html) can be divided into equal squares to display more than one chart **(pie, funnel or pyramid)**. To enable this [ChartArea.DivideArea](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~DivideArea.html) property should be set to true.
 
 By enabling this property, the following are possible.
 
@@ -54,9 +54,11 @@ ChartSeries.ConfigItems.PyramidItem.ShowSeriesTitle = True
 {% endhighlight %}
 {% endtabs %}
 
-A sample which demonstrates the divide area support in chart is available in the following sample installation location.
+A sample which demonstrates the divide area support in chart which is available in the following sample installation location.
 
-&lt;sample installed location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Appearance\Chart Divide Area
+**Location**
+
+&lt;sample installed location&gt;\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\Chart Appearance\Chart Divide Area
 
 {% seealso %}
 
