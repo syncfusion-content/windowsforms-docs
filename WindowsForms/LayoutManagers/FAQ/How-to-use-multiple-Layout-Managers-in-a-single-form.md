@@ -6,13 +6,13 @@ platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-# How to use multiple Layout Managers in a single form
+# How to use multiple Layout Managers in a single form?
 
 It is very simple to use more than one Layout Manager in a single form.
 
 * Drag-and-drop the FlowLayout Manager from the toolbox onto the form setting it as the Container control.
 
-![](Overview_images/Overview_img79.jpeg) 
+![](Overview_images/Overview_img79.jpeg)
 
 
 
@@ -42,7 +42,7 @@ It is very simple to use more than one Layout Manager in a single form.
 
 * The final output of the application with all the Layout Managers arranged in the above said fashion is shown below.
 
-![](Overview_images/Overview_img84.jpeg) 
+![](Overview_images/Overview_img84.jpeg)
 
 
 

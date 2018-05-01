@@ -12,6 +12,7 @@ documentation: ug
 # How to determine whether any two controls are in the same tabbed group?
 
 To determine whether two controls are in same tabbed group `IsSameTabbedGroup` method can be used.
+
 {% tabs %}
 
 {% highlight C# %}

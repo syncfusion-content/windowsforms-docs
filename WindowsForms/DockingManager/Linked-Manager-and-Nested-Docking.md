@@ -8,9 +8,9 @@ documentation: ug
 ---
 
 
-# Linked Manager and Nested Docking
+# Linked manager and nested docking
 
-## Linked Manager
+## Linked manager
 
 The windows DockingManager cannot be dragged and dropped to another DockingManager by default. But Linked Manager support allows to drag and drop the windows from one DockingManager to another by setting `TargetDockingManager` list.
 
@@ -106,7 +106,7 @@ ChildWindow.dockingManager1.AddToTargetManagersList(Me.dockingManager1);
 {% endtabs %}
 
 
-### Removing Target Manager list
+### Removing target manager list
 
 To remove DockingManager from the TargetManagerList, call `RemoveFromTargetManagerList` of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
 
@@ -131,7 +131,7 @@ Me.dockingManager1.RemoveFromTargetManagersList(ChildWindow.dockingManager2);
 {% endtabs %}
 
 
-## Nested Docking
+## Nested docking
 
 DockingManager provides the NestedDockingManager support, which allows to add DockingManager as a child window to another DockingManager.
 

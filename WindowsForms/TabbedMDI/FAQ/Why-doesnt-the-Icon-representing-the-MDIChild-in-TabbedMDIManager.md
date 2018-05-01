@@ -7,11 +7,13 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# Why doesn't the Icon representing the MDIChild in the TabbedMDIManager change when the Form.Icon property is changed?
+# Why doesn't the icon representing the MDIChild in the TabbedMDIManager change when the Form.Icon property is changed?
 
-The form does not throw an event when the Icon gets updated. So, update the Icon in the TabbedMDIManager manually after updating the Icon in the form, as follows: 
+The form does not throw an event when the Icon gets updated. So, update the Icon in the TabbedMDIManager manually after updating the Icon in the form, as follows:
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 // Get the tab control corresponding to your form in the TabbedMDIManager. 
@@ -46,7 +48,7 @@ mdiTabPanel.Update();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -84,3 +86,4 @@ mdiTabPanel.Update()
 
 {% endhighlight %}
 
+{% endtabs %}

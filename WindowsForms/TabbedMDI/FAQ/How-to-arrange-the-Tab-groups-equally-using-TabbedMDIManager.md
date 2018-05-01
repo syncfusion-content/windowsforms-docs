@@ -11,7 +11,7 @@ documentation: ug
 
 TabbedMDIManager has AdjustTabGroupWeightsEqually() method to arrange the Tab groups equally.
 
-Method Table
+Method table
 
 <table>
 <tr>
@@ -24,9 +24,9 @@ AdjustTabGroupWeightsEqually</td><td>
 Adjusts the TabGroups weights equally</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
-
+{% highlight C# %}
 
 
 private void AddGroupButton_click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ private void AddGroupButton_click(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -63,3 +63,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}

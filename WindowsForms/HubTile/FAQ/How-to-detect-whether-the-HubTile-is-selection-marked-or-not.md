@@ -25,6 +25,7 @@ You can achieve it by using HubTile IsSelectionMarked property.
 </tr>
 </Table>
 
+{% tabs %}
 
 {% highlight C# %} 
  
@@ -33,10 +34,10 @@ You can achieve it by using HubTile IsSelectionMarked property.
 
 this.HubTile1.IsSelectionMarked = true;
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
  
 
@@ -45,3 +46,5 @@ this.HubTile1.IsSelectionMarked = true;
 Me.HubTile1.IsSelectionMarked = true
 
 {% endhighlight %}
+
+{% endtabs %}

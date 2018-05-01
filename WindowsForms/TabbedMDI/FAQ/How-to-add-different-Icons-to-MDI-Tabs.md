@@ -11,7 +11,9 @@ documentation: ug
 
 This can be done programmatically using the below code snippet.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -43,7 +45,7 @@ index++;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -75,3 +77,4 @@ Next page
 
 {% endhighlight %}
 
+{% endtabs %}

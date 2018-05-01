@@ -7,15 +7,13 @@ control: Frequently Asked Questions
 documentation: ug
 ---
 
-# How to restrict SlideOnTop collapse Transition for Left Position?
+# How to restrict SlideOnTop collapse transition for left position?
 
 This requirement can be achieved by handling the Closing Event.
 
 **Closing** **Event**
 
 This Event occurs before DrawerPanel Collapsing initialized.
-
-Following code example demonstrates the same. 
 
 {% tabs %}
 
@@ -38,7 +36,7 @@ e.Cancel = true;
 }
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Disables the SlideOnTop in Left when Transition Collapses begins
 

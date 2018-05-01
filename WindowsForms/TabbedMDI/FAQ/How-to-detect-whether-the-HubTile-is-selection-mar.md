@@ -11,7 +11,7 @@ documentation: ug
 
 You can achieve it by using HubTileIsSelectionMarked property.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -24,8 +24,9 @@ IsSelectionMarked</td><td>
 This property decides whether selection marked over HubTile or not.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -37,7 +38,7 @@ this.HubTile1.IsSelectionMarked = true;
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -48,4 +49,4 @@ Me.HubTile1.IsSelectionMarked = true
 
 {% endhighlight %}
 
-
+{% endtabs %}

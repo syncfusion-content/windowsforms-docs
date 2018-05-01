@@ -10,6 +10,8 @@ documentation: ug
 
 You could perform text drag-and-drop operation between a TextEditor control like RichTextBox and GroupView by handling the GroupView's DragEnter and DragLeave events as shown below.
 
+{% tabs %}
+
 {% highlight C# %}  
 
 string dragged = "";
@@ -58,7 +60,7 @@ this.dragged = "";
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Dim dragged As String = ""
 
@@ -95,3 +97,5 @@ Me.dragged = ""
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

@@ -10,6 +10,8 @@ documentation: ug
 
 The XPTaskBar's Paint event can be handled to custom draw the background using the LinearGradientBrush as given below.
 
+{% tabs %}
+
 {% highlight C# %}  
 
  private void xpTaskBar1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -52,7 +54,7 @@ lg.Dispose();
 
 
 
- {% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub xpTaskBar1_Paint(ByVal sender As Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles xpTaskBar1.Paint
 
@@ -90,3 +92,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}

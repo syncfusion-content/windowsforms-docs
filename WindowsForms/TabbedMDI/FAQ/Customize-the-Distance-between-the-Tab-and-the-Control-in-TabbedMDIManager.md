@@ -7,7 +7,7 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# Customize the Distance between the Tab and the Control in TabbedMDIManager
+# Customize the distance between the Tab and the Control in TabbedMDIManager
 
 The height between the Tab and the Control can be set using the BottomBorderHeight property of the TabHost. This property can be accessed by overriding the TabbedMDIManager as shown in the code snippet.
 
@@ -15,9 +15,9 @@ The height between the Tab and the Control can be set using the BottomBorderHeig
 
 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -69,7 +69,7 @@ The height between the Tab and the Control can be set using the BottomBorderHeig
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -125,3 +125,4 @@ End Class
 
 {% endhighlight %}
 
+{% endtabs %}

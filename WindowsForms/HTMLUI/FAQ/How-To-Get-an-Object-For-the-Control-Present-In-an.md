@@ -7,13 +7,13 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Get an Object For the Control Present In an HTML Element In the HTMLUI Control?
+# How to get an object for the control present in an HTML element in the HTMLUI control?
 
 You can make use of the GetControlByElement() method of the InputHTML Interface to get an object for the control present in an HTML element in the HTMLUI control. If the HTML element does not contain any control in it, it returns a null value, by default.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -29,7 +29,7 @@ You can make use of the GetControlByElement() method of the InputHTML Interface 
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -61,7 +61,7 @@ htmlRadioButton = (RadioButton) this.htmluiControl1.Document.GetControlByElement
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -90,3 +90,5 @@ htmlRadioButton = CType(Me.htmluiControl1.Document.GetControlByElement(radioElem
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 This section explains how to implement a similar UI as Visual Studio using the DockingManager control in a Windows Forms application.
 
@@ -87,7 +87,7 @@ You can create the Windows Forms application with DockingManager control as foll
 7. [Apply Docking style for Dock child window](#apply-docking-style-for-dock-child-window )
 8. [Apply serialization for Dock child window ](#apply-serialization-for-dock-child-window )
 
-### Creating simple project 
+### Creating simple project
 
 Create a new Windows Forms project in the Visual Studio to dock panels as like Visual Studio using DockingManager.
 
@@ -150,7 +150,7 @@ Me.dockingManager.HostControl = Me
 
 {% endtabs %}
 
-### Add Dock child window 
+### Add Dock child window
 
 Docking can be enabled to any controls by invoke `EnableDocking` with corresponding DockingManager. Here five Panels are added to the form and transformed into a docking window.
 
@@ -235,7 +235,7 @@ Me.dockingManager.SetEnableDocking(panel5, True)
 
 **Identify whether the panel is docking or not**
 
-DockingManger provides with an attached method `GetEnableDocking` which helps to determine whether the child window is docking or not. 
+DockingManger provides with an attached method `GetEnableDocking` which helps to determine whether the child window is docking or not.
 
 {% tabs %}
 
@@ -253,9 +253,9 @@ Console.Write("DockWindow Header:" + Me.dockingManager.GetEnableDocking(panel1))
 
 {% endtabs %}
 
-### Add Label for Dock child window  
+### Add label for Dock child window  
 
-DockingManger provides with an attached method `SetDockLabel` which helps to set the label for a child window. 
+DockingManger provides with an attached method `SetDockLabel` which helps to set the label for a child window.
 
 {% tabs %}
 
@@ -297,9 +297,9 @@ Me.dockingManager.SetDockLabel(panel5, "Start Page");
 
 ![](GettingStarted_images/GettingStarted_img2.jpeg)
 
-**Get Label of the dock panel**
+**Get label of the dock panel**
 
- DockingManger provides with an attached method `GetDockLabel` which helps to get the label for a child window. 
+ DockingManger provides with an attached method `GetDockLabel` which helps to get the label for a child window.
 
 {% tabs %}
 
@@ -325,8 +325,6 @@ Console.Write("DockWindow Header:" + Me.dockingManager.GetDockLabel(panel1))
 
 DockingManager provides an option to dock or float the controls.
 
-To dock the child window use below code snippet.
-
 {% tabs %}
 
 {% highlight C# %}
@@ -348,7 +346,7 @@ Me.dockingManager.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.Dock
 
 {% endtabs %}
 
-To Float the control use below code snippet.
+To Float the control, use below code snippet.
 
 {% tabs %}
 
@@ -378,7 +376,7 @@ Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rec
 ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
 
-### Apply Docking style for Dock child window 
+### Apply docking style for Dock child window
 
 DockingManager provides an attached method `DockControl` that helps to dock a panel at the required side using `DockingStyle` argument.
 

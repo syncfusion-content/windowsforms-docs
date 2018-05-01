@@ -6,20 +6,21 @@ platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-# How to programmatically nest various layouts
+# How to programmatically nest various layouts?
 
 It is possible to layout the Child controls programmatically using Multiple Layout Managers. The following step by step procedure illustrates this.
 
-* Set up a form with Buttons and Panels as shown in the below screen shot.
+* Set up a form with Buttons and Panels as shown in the below screenshot.
 
-![](Overview_images/Overview_img77.jpeg) 
+![](Overview_images/Overview_img77.jpeg)
 
 
 
 * Include the required namespace.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 using Syncfusion.Windows.Forms.Tools;
@@ -28,17 +29,20 @@ using Syncfusion.Windows.Forms.Tools;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
 * Declare instances for FlowLayout and GridBagLayout Managers. FlowLayout is used for aligning the Child components of Panel2 (which contains button4 to button8) and GridBagLayout for aligning the Child components of Panel1 (which contains button1, button2, button3 and Panel2).
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 private Syncfusion.Windows.Forms.Tools.GridBagLayout gridBagLayout1;
 
@@ -53,7 +57,7 @@ this.gridBagLayout1 = new Syncfusion.Windows.Forms.Tools.GridBagLayout(this.comp
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -71,10 +75,13 @@ Me.gridBagLayout1 = New Syncfusion.Windows.Forms.Tools.GridBagLayout(Me.componen
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Set the Container control and constraints for the GridBagLayout. All the Child controls of this Container control are automatically registered as children with the GridBagLayout Manager.
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 this.gridBagLayout1.ContainerControl = this.panel1;
@@ -91,7 +98,7 @@ this.gridBagLayout1.SetConstraints(this.panel2, new Syncfusion.Windows.Forms.Too
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.gridBagLayout1.ContainerControl = Me.panel1
 
@@ -105,11 +112,13 @@ Me.gridBagLayout1.SetConstraints(Me.button3, New GridBagConstraints(-1, -1, 1, 1
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Set the Container control, horizontal spacing between the components and alignment for the FlowLayout Manager.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 this.flowLayout1.ContainerControl = this.panel2;
 
@@ -121,7 +130,7 @@ this.flowLayout1.Alignment = FlowAlignment.Near;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.flowLayout1.ContainerControl = Me.panel2
 
@@ -131,11 +140,13 @@ Me.flowLayout1.Alignment = FlowAlignment.Near
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Handle the Layout event of the form to reposition it's Child controls (Panels).
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 private void Form1_Layout(object sender, System.Windows.Forms.LayoutEventArgs e)
 
@@ -151,7 +162,7 @@ this.flowLayout1.LayoutContainer();
 
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 Private Sub Form1_Layout(ByVal sender As Object, ByVal e As System.Windows.Forms.LayoutEventArgs)
@@ -161,14 +172,10 @@ Me.gridBagLayout1.LayoutContainer()
 Me.flowLayout1.LayoutContainer()
 
 End Sub
-{% endhighlight  %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
-![](Overview_images/Overview_img78.jpeg) 
-
-
-{% seealso %}
-
-Creating a Simple Layout, How to use multiple Layout Managers in a single form?
-
-{% endseealso %}
+![](Overview_images/Overview_img78.jpeg)

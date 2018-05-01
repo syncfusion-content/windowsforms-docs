@@ -13,6 +13,8 @@ The following section guides you through the steps involved in setting up a simp
 
 Add the following namespace.
 
+{% tabs %}
+
 {% highlight C# %}  
  
 
@@ -22,9 +24,9 @@ using Syncfusion.Windows.Forms.Tools;
 
 using Syncfusion.Windows.Forms;
 
- {% endhighlight %}
+{% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
  
 
@@ -36,7 +38,11 @@ Imports Syncfusion.Windows.Forms.Tools
 
  {% endhighlight %}
 
+ {% endtabs %}
+
 The following code example shows how to create the HubTile via code.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -46,9 +52,9 @@ HubTile HubTile1 = new HubTile();
 
 this.Controls.Add(this.HubTile1);
 
- {% endhighlight %}
+{% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 ‘Create the HubTile instance
 
@@ -56,5 +62,6 @@ Dim HubTile1 As HubTile =  New HubTile()
 
 Me.Controls.Add(Me.HubTile1)
 
- {% endhighlight %}
+{% endhighlight %}
 
+{% endtabs %}

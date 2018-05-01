@@ -11,7 +11,7 @@ documentation: ug
 
 You can set HubTileSlideTransition property to achieve this.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -24,8 +24,9 @@ SlideTransition </td><td>
 This property sets HubTile image transition direction.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -55,7 +56,7 @@ this.HubTile1.SlideTransition= TransitionDirection.BottomToTop;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -83,7 +84,7 @@ Me.HubTile1.SlideTransition= TransitionDirection.BottomToTop
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 

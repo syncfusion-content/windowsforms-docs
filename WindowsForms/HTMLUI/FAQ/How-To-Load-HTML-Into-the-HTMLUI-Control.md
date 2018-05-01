@@ -7,11 +7,13 @@ control: HTML UI
 documentation: ug
 ---
 
-#  How To Load HTML Into the HTMLUI Control?
+#  How to load HTML into the HTMLUI control?
 
 You can make use of the GetControlByElement() method of the InputHTML Interface to get an object for the control present in an HTML element in the HTMLUI control. If the HTML element does not contain any control in it, it returns a null value, by default.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight HTML %}
 
 <html>
 
@@ -25,7 +27,7 @@ You can make use of the GetControlByElement() method of the InputHTML Interface 
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -57,7 +59,7 @@ htmlRadioButton = (RadioButton) this.htmluiControl1.Document.GetControlByElement
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -87,12 +89,14 @@ End Sub
 
 {% endhighlight %}
 
-## Loading As Startup Document
+{% endtabs %}
 
-An HTML document can be loaded at startup by two ways: 
+## Loading as startup document
 
-* Using the Properties window
-* By coding
+An HTML document can be loaded at startup by two ways:
+
+* Using the Properties window.
+* Using coding.
 
 
 
@@ -104,11 +108,11 @@ Using the Properties window, involves specifying the location of the startup HTM
 
 
 
-While using code for the Startup Document, it should be written in the Form_Load event that occurs before the form is displayed for the first time.  
+While using code for the Startup Document, it should be written in the Form_Load event that occurs before the form is displayed for the first time.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -124,7 +128,7 @@ this.htmluiControl1.StartupDocument = @"C:\MyProjects\Startup\startup_page.htm";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -138,7 +142,9 @@ End Sub
 
 {% endhighlight %}
 
-## Loading At Run Time
+{% endtabs %}
+
+## Loading at run time
 
 HTML documents can also be loaded at run time. For example, in a file link where an HTML file may link to another file. In that case, a new file is loaded in the control after the one that was initially loaded.
 
@@ -146,9 +152,9 @@ The various ways of loading the document at run time from various resources are:
 
 To load the file from disk into the HTMLUI, the following code snippet can be used.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -160,7 +166,7 @@ this.htmluiControl1.LoadHTML(path);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -172,13 +178,15 @@ Me.HtmluiControl1.LoadHTML(path)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The above snippet can also be used to load HTML documents which are linked to the specified HTML documents, as links are easily invoked in HTMLUI.
 
 To load a file from the URI, the following code snippet can be used.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -192,7 +200,7 @@ htmluiControl1.LoadHTML( uri );
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -206,11 +214,13 @@ HtmluiControl1.LoadHTML(uri)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Loading HTML in the form of a string can be done as shown below.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -222,7 +232,7 @@ this.htmluiControl1.LoadFromString(htmlCode);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -234,15 +244,17 @@ Me.HtmluiControl1.LoadFromString(htmlCode)
 
 {% endhighlight %}
 
-To load a HTML file as an embedded resource:
+{% endtabs %}
+
+To load an HTML file as an embedded resource, follow the given steps:
 
 1. Add an HTML file as an Embedded Resource to the application.
 2. Set its BuildAction as Embedded Resource.
 3. Include the following code snippet.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -254,7 +266,7 @@ this.htmluiControl1.LoadHTML(htmlStream);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -263,6 +275,8 @@ Private htmlStream As Stream = CType(System.Reflection.Assembly.GetExecutingAsse
 Me.HtmluiControl1.LoadHTML(htmlStream)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 N> The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
 

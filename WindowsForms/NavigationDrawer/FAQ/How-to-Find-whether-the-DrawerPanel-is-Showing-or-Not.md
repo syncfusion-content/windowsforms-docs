@@ -7,15 +7,13 @@ control: Frequently Asked Questions
 documentation: ug
 ---
 
-# How to Find whether the DrawerPanel is Showing or Not?
+# How to find whether the DrawerPanel is showing or not?
 
 This requirement is achieved by using its function named IsDrawerShowing.
 
-Following code example demonstrates the same. 
-
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //To Define if DrawerPanel is Showing or not
 
@@ -29,7 +27,7 @@ if(this.navigationDrawer1.IsDrawerShowing())
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'To Define if DrawerPanel is Showing or not
 

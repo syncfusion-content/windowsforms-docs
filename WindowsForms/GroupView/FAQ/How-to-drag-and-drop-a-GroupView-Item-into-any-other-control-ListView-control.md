@@ -6,13 +6,13 @@ platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# How to drag-and-drop a GroupView Item into any other control (ListView control)
+# How to drag-and-drop a GroupView Item into any other control (ListView control)?
 
 You can handle the GroupView's DragOver Event to get the selected GroupView Item and then handle the ListView control's DragEnter and DragDrop events to drop the selected GroupView Item as a ListView item in the ListView control.
 
-The following code sample shows how this can be done.
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 private String str = String.Empty; 
 
@@ -90,7 +90,7 @@ this.listView1.Items.Add(item);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private str As String = [String].Empty
 
@@ -163,3 +163,5 @@ Me.listView1.Items.Add(item)
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

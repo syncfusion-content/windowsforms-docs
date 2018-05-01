@@ -7,15 +7,15 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Delete an HTML Element From a Document Loaded Into the HTMLUI Control At Run-time?
+# How to delete an HTML element from a document loaded into the HTMLUI control at run-time?
 
 The HTML elements loaded in the HTMLUI control are collected in the IHTMLElementsCollection. You can make use of the Remove method of the IHTMLElementsCollection Interface to remove an element from the current collection, and the Refresh method to redraw the HTMLUI control with changes updated in the current document.
 
 The following HTML document contains a textbox and a button element. The following code snippet shows how the textbox and the button are removed from the HTMLUI control's display at run time.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 <!-- HTML document -->
 
@@ -41,7 +41,7 @@ The following HTML document contains a textbox and a button element. The followi
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -85,7 +85,7 @@ this.htmluiControl1.Refresh();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -125,4 +125,4 @@ End Sub
 
 {% endhighlight %}
 
-
+{% endtabs %}

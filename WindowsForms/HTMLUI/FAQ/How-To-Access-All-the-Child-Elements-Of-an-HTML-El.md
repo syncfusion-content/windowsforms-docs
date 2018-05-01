@@ -7,14 +7,15 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Access All the Child Elements Of an HTML Element In the HTMLUI Control?
+# How to access all the child elements of an HTML element in the HTMLUI control?
 
 The IHTMLElement.Children property of any IHTMLElement, collects all the child elements of a specified HTML element inside an IHTMLElementsCollection. You can access the elements needed for your conditions from this collection.
 
 The following code snippet illustrates how the child elements of the Body element in the given HTML document are searched to access elements containing the OnClick attribute and how a Click event is attached to those elements.
 
+{% tabs %}
 
-{% highlight html %}
+{% highlight HTML %}
 
 <html>
 
@@ -40,7 +41,7 @@ The following code snippet illustrates how the child elements of the Body elemen
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -110,7 +111,7 @@ this.htmluiControl1.ScrollToElement(elem);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -179,5 +180,7 @@ End If
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
 

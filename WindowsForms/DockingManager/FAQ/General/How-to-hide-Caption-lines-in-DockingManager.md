@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to hide Caption lines in DockingManager?
+# How to hide caption lines in DockingManager?
 
 Caption lines which is displayed in Metro style can be hidden by disabling the `ShowMetroCaptionDottedLines` property.
 
