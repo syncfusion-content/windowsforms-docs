@@ -685,6 +685,8 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+![](Selection_images/selection8.png)
+
 ## Appearance
 
 SfDataGrid allows to customize the appearance of the selected rows and current cell through [SfDatagrid.Style](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Style.html) property.
