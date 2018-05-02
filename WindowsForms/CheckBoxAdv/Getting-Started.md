@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-CheckBoxAdv | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating checkboxadv
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Creating CheckBoxAdv
+# Getting Started
 
 The CheckBoxAdv control can be created in the following ways.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating Double TextBox | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating double textbox
 platform: WindowsForms
 control: DoubleTextBox
 documentation: ug
 ---
-# Creating Double TextBox
+# Getting Started
 
 To use a DoubleTextBox control in your application, all you need to do is drag and drop the DoubleTextBox control from the 
 controls toolbox onto your form.

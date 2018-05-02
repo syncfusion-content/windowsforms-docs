@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating ButtonEdit | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating ButtonEdit
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Creating ButtonEdit
+# Getting Started
 
 This section will help you to get started with the ButtonEdit control.
 The below topics will guide you to create ButtonEdit control through designer and programmatically.

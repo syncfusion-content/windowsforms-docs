@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating ColorPickerButton | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating colorpickerbutton
 platform: WindowsForms
 control: ColorPickerButton
 documentation: ug
 ---
-# Creating ColorPickerButton
+# Getting Started
 
 ColorPickerButton is available to the designer by just dragging-and-dropping the ColorPickerButton from the toolbox onto the form. 
 

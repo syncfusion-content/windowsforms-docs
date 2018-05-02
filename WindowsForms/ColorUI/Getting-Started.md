@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating ColorUIControl | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating coloruicontrol
 platform: WindowsForms
 control: ColorUI 
 documentation: ug
 ---
 
-# Creating ColorUIControl
+# Getting Started
 
 ColorUIControl can be added through designer by just dragging-and-dropping it from the toolbox onto the Windows Form Designer. 
 
