@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-Calculator-control | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating calculator control
 platform: WindowsForms
 control: Calculator
 documentation: ug
 ---
 
-# Creating Calculator control
+# Getting Started
 
 The Calculator control can be available to the designer by just dragging-and-dropping the Calculator control from the toolbox onto the form. 
 

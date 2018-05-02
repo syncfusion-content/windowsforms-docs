@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-ComboBoxAutoComplete | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating-ComboBoxAutoComplete
 platform: WindowsForms
 control: ComboBoxAutoComplete
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Creating ComboBoxAutoComplete
+# Getting Started
 
 
 Implementing a simple ComboBoxAutoComplete can be done in the following ways.

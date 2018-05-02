@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating  ButtonAdv | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating  ButtonAdv
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Creating  ButtonAdv
+# Getting Started
 
 The ButtonAdv control can be made available through designer by just dragging and dropping the control from the toolbox onto the form. 
 

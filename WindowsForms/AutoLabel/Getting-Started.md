@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating AutoLabel | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating AutoLabel
 platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---
 
-# Creating AutoLabel
+# Getting Started
 
 The AutoLabel control can be created in the following ways.
 

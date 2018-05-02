@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating CurrencyEdit | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating currencyedit
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug
 ---
 
-# Creating CurrencyEdit
+# Getting Started
 
 
 To use a CurrencyEdit control in your application, all you need to do is drag and drop the CurrencyEdit control from the controls toolbox onto your form. You can then set any of its properties through the property grid.

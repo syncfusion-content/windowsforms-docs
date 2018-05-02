@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-ComboBoxBase | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating comboboxbase
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug
 ---
 
-# Creating ComboBoxBase
+# Getting Started
 
 
 ComboBoxBase can be created easily through designer, by just dragging and dropping the ComboBoxBase control from the Toolbox.

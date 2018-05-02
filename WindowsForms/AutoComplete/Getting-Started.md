@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Create an AutoComplete control | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Create an AutoComplete control
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
 
-# Create an AutoComplete Control
+# Getting Started
 
 This section helps you implement a simple AutoComplete control with a TextBox via designer and programmatically.
 
