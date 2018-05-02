@@ -420,7 +420,7 @@ Dim image() As Bitmap = pdfViewerControl1.ExportAsImage(0, 3)
 {%endhighlight%}
 {% endtabs %}
 
-###Exporting pages of PDF document as Vector Images
+### Exporting pages of PDF document as Vector Images
 
 Exporting pages of PDF document as vector images can be done using the [ExportAsMetafile](https://help.syncfusion.com/cr/cref_files/windowsforms/pdf%20viewer/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~ExportAsMetafile(Int32).html) method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
 
