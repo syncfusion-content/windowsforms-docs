@@ -60,7 +60,7 @@ pdfViewerControl1.Load("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 	
-###Adding manually in code
+### Adding manually in code
 
 1. Add Syncfusion.Windows.Forms.PdfViewer namespace.
 

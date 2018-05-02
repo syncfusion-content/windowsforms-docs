@@ -24,14 +24,14 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 	
 2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the &#34;Pdfium&#34; folder. 
 
-	The following code snippet illustrates the same, you can also find the project sample in the below link.
+	The following code snippet illustrates the same, you can also find the project sample in the below link. Here the &#34;Pdfium&#34; folder is placed inside the D:\ReferencePath\ folder.
 
 	
 {%highlight c#%}
 
 	PdfViewerControl pdfViewerControl1 = new PdfViewerControl ();
 	//Specify the path for Pdfium assembly. 
-	pdfViewerControl1.ReferencePath = @"D:\Pdfium";
+pdfViewerControl1.ReferencePath = @"D:\ReferencePath\";
 	//Specify the PDF rendering engine as Pdfium.
 	pdfViewerControl1.RenderingEngine =PdfRenderingEngine.Pdfium; 
 	//Load the PDF document 
@@ -44,7 +44,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 
 	Dim pdfViewerControl1 As New PdfViewerControl()
     'Specify the path for Pdfium assembly
-	pdfViewerControl1.ReferencePath = @"D:\Pdfium"
+pdfViewerControl1.ReferencePath = @"D:\ReferencePath\"
     'Specify the PDF rendering engine as Pdfium
 	pdfViewerControl1.RenderingEngine =PdfRenderingEngine.Pdfium 
 	'Load the PDF document 
@@ -54,4 +54,4 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 
 Please find the demo from the following link.
 
-http://www.syncfusion.com/downloads/support/directtrac/general/ze/WF1539355307
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/WF-1752199577>
