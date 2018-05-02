@@ -19,7 +19,7 @@ To add chart to your form, follow the given steps:
 
 ![](Getting-Started_images/Toolbox.jpg)
 
-2.Drag [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and drop into the form.
+2.Drag the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and drop into the form.
 
 ![](Getting-Started_images/Form.jpg)
 
