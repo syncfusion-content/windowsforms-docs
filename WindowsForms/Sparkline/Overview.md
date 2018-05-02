@@ -11,7 +11,7 @@ documentation: ug
 
 A Sparkline control is a type of information graphic characterized by its small size, high data density and lightweight. It presents trends and variations in a very condensed fashion. The Sparkline does not contain an axis scale and is intended to give a high level overview of what happened to the data over time.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 A sparkline can display a trend based on adjacent data in a clear and compact graphical representation. The purpose of sparkline is to quickly see the data range difference with high density data and it is represented in lightweight graphical representation. You can use it as per your requirement.
 
@@ -19,9 +19,9 @@ The following screenshot shows three types of sparklines, which are drawn inside
 
 ![](Overview_images/Overview_img1.png)
 
-### Tables for Properties, Methods, and Events
+## Tables for Properties, Methods, and Events
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -75,7 +75,7 @@ NA</td><td>
 NA</td></tr>
 </table>
 
-#### Methods
+### Methods
 
 <table>
 <tr>

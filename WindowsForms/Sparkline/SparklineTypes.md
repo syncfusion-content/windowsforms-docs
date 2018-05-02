@@ -7,7 +7,7 @@ control: Sparkline
 documentation: ug
 ---
 
-### Types of Sparklines
+# Types of Sparklines
 
 SparkLine control supports three types of Sparklines and the sparkline control must be bound to a data source. It supports a variety of datasource such as DataTable and any component that implements the interface IEnumerable, ICollection, IList. 
 
