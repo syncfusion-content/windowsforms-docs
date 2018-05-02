@@ -18,7 +18,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 	
 	![](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img1.png)
 	
-	N> The Pdfium folder will contain two folders namely x86 and x64, both would contain Pdfium.dll assembly for the respective architecture. The Syncfusion PDF viewer is designed to detect the architecture of the target machine in which it is deployed and would pick corresponding Pdfium.dll to use it. 
+	N> The Pdfium folder will contain two folders namely x86 and x64, both would contain pdfium.dll assembly for the respective architecture. The Syncfusion PDF viewer is designed to detect the architecture of the target machine in which it is deployed and would pick corresponding pdfium.dll to use it. 
 	
 	![](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img2.png)
 	
