@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating DomainUpDownExt | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating domainupdownext
 platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Creating DomainUpDownExt
+# Getting Started
 
 To use a DomainUpDownExt control in your application, all you need to do is drag and drop the DomainUpDownExt control from the controls toolbox onto your form.
 

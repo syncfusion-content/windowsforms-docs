@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-Currency-TextBox | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating currency textbox
 platform: WindowsForms
 control: CurrencyTextbox
 documentation: ug
 ---
 
-# Creating Currency TextBox
+# Getting Started
 
 
 CurrencyTextBox provides full support for the Windows Forms designer. Just drag and drop CurrencyTextBox from the toolbox, onto the form.
