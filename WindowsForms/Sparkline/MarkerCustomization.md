@@ -7,7 +7,7 @@ control: Sparkline
 documentation: ug
 ---
 
-### Marker Support
+# Marker Support
 
 The markers are visual indicators to represent the location of data points in the Sparkline graph. The markers can support three types of sparklines.
 
