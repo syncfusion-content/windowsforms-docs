@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-NumericUpDownExt | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating numericupdownext
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Creating NumericUpDownExt
+# Getting Started
 
 This section will give a step-by-step procedure to design a NumericUpDownExt control through designer and also through programming approach.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating MaskedEditBox | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating MaskedEditBox
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
-# Creating MaskedEditBox
+# Getting Started
 
 ## Through designer
 
