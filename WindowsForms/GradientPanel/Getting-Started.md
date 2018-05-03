@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating GradientPanel | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating GradientPanel
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Creating GradientPanel
+# Getting Started
 
 This section will guide you to create a Gradient Panel through designer and also through programming approach.
 

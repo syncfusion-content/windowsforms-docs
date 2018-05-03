@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating FontListBox | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating FontListBox
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Creating FontListBox
+# Getting Started
 
 To use a FontListBox control in your application, all you need to do is drag and drop the FontListBox control from the toolbox onto your form.
 

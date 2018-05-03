@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adding-and-Filling-a-PopupMenu | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: adding and filling a popupmenu
 platform: WindowsForms
 control: Popup-Menu
 documentation: ug
 ---
 
-# Adding and Filling a Pop-upMenu
+# Getting Started
 
 Adding a PopupMenu
 
