@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-MultiColumnComboBox | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating multicolumncombobox
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Creating MultiColumnComboBox
+# Getting Started
 
 The MultiColumnComboBox control provides full support for the Windows Forms designer. To use a MultiColumnComboBox control in your application, all you need to do is drag-and-drop the MultiColumnComboBox control from the toolbox onto your form. You can then set any of its properties through the property grid. 
 

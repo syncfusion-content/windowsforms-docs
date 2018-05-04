@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-Editable-List | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating editable list
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Creating Editable List
+# Getting Started
 
 To use an EditableList control in your application, all you need to do is drag-and-drop the EditableList control from the controls toolbox onto your form. To add items, expand ListBox node and open String Collection Editor.
 
