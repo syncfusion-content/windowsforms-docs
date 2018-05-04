@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-SplashPanel | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating splashpanel
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# Creating SplashPanel
+# Getting Started
 
 This section will give a step by step procedure to design a SplashPanel through designer and also through programming approach.
 
