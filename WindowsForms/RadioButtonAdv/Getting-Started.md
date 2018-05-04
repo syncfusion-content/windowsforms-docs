@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating-RadioButtonAdv | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: creating radiobuttonadv
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Creating RadioButtonAdv
+# Getting Started
 
 The RadioButtonAdv control can be created in the following ways.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating Simple Popup | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating Simple Popup
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Creating Simple Pop-up
+# Getting Started
 
 This section deals with creating a simple popup with the help of PopupControlContainer control.
 

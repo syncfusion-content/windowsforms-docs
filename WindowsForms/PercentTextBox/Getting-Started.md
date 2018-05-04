@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating PercentTextBox | WindowsForms | Syncfusion
+title: Getting Started | WindowsForms | Syncfusion
 description: Creating PercentTextBox
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Creating PercentTextBox
+# Getting Started
 
 
 This section will give a step-by-step procedure to design a PercentTextBox control through designer and also through programming approach.
