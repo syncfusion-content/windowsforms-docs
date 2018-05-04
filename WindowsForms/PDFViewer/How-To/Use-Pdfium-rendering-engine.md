@@ -26,7 +26,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 
 	The following code snippet illustrates the same, you can also find the project sample in the below link. Here the &#34;Pdfium&#34; folder is placed inside the D:\ReferencePath\ folder.
 
-	
+{% tabs %}
 {%highlight c#%}
 
 	PdfViewerControl pdfViewerControl1 = new PdfViewerControl ();
@@ -51,6 +51,7 @@ pdfViewerControl1.ReferencePath = @"D:\ReferencePath\"
 	pdfViewerControl1.Load("Sample.pdf")
 
 {%endhighlight%}
+{% endtabs %}
 
 Please find the demo from the following link.
 
