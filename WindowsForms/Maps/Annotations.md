@@ -9,38 +9,25 @@ documentation: ug
 
 # Annotations
 
-Annotations are notes that are used to leave some message on the map. In Maps, annotations are denoted by the MapAnnotations. MapAnnotation has the below major parts:
+Annotations are used to add some message on map. In Maps control, annotations are denoted using the following major properties:
 
-1. AnnotationLabel
+1. [`AnnotationLabel`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~AnnotationLabel.html): Shows some information in text format.
 
-   AnnotationLabel is a “Text” that shows some information in the text format.
+2. [`AnnotationStroke`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~AnnotationStroke.html): Applies specific color to annotations.
 
-2. AnnotationStroke
-
-   By using AnnotationStroke we can apply specific color for the annotations.
-
-
-
-3. Latitude and Longitude
-
-   MapAnnotation can be positioned anywhere on the map based on latitude and longitude. MapAnnotation has two properties called “Latitude” and “Longitude” which are string types used to set co-ordinates of the MapAnnotation in the form of latitude and longitude.
-
-
-
+3. [`Latitude`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~Latitude.html) and [`Longitude`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~Longitude.html): Position the annotations anywhere on the map based on latitude and longitude, which are string types, used to set coordinates of the MapAnnotation in the form of latitude and longitude.
 
 
 ### Code sample:
 
-
+{% tabs %}
 
 {% highlight c# %}
 
 partial class Form1
-
-    {
+{
 
          private void InitializeComponent()
-
          {
 
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
@@ -51,7 +38,7 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
 
@@ -59,20 +46,20 @@ partial class Form1
 
             private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-     }  
+}  
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
-
-
 public partial class Form1 : Form
-
-    {
+{
 
         private void Form1_Load(object sender, EventArgs e)
-
         {
 
             this.MetroColor = Color.White;
@@ -86,9 +73,7 @@ public partial class Form1 : Form
             this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
 
 
-
             MapViewModel model = new MapViewModel();
-
 
 
              ShapeFileLayer shapeLayer = new ShapeFileLayer();
@@ -104,7 +89,6 @@ public partial class Form1 : Form
              shapeLayer.ShapeSetting.ShapeStroke = "#C1C1C1";
 
 
-
             shapeLayer.Annotations.Add(new Annotation() { AnnotationLabel = "North America", Latitude = 40.4230, Longitude = -112.7372,AnnotationStroke = new SolidBrush(Color.OrangeRed) });
 
             shapeLayer.Annotations.Add(new Annotation() { AnnotationLabel = "Africa", Latitude = 9.1021, Longitude = 18.2812, AnnotationStroke = new SolidBrush(Color.OrangeRed) });
@@ -118,13 +102,14 @@ public partial class Form1 : Form
             shapeLayer.Annotations.Add(new Annotation() { AnnotationLabel = "Oceania", Latitude = -20.3456, Longitude = 120.4346, AnnotationStroke = new SolidBrush(Color.OrangeRed) });
 
 
-
-             this.mapsControl1 .Layers.Add(shapeLayer);
+            this.mapsControl1 .Layers.Add(shapeLayer);
 
          }
 
      }       
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Screenshot:![](Annotations_images/Annotations_img1.png)

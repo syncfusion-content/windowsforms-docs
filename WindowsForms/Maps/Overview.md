@@ -9,34 +9,34 @@ documentation: ug
 
 # Overview
 
-Essential Maps is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on the earth. Using Pan and Zoom features Maps can be navigated.
+Maps is a graphical representation of geographical data. This is used to represent the statistical data of a particular geographical area on the earth. Using pan and zoom features, maps can be navigated.
 
-Essential Maps control is useful for those users who want to build a Windows application which can be used in any .NET environment including C#, VB.NET and C++ to develop the geographical projects.  
-
-
-
-## User Guide Structure
+Maps control is used for users who want to build a Windows application that can be used in any .NET environment including C#, VB.NET, and C++ to develop the geographical projects.  
 
 
 
-The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the Maps control. It is organized into the following sections:
+## User guide structure
 
 
 
-* Overview-This section gives a brief introduction to our product and its key features.
-* Installation and Deployment-This section elaborates on the install location of the samples, license etc.
-* What's New-This section lists the new features implemented for every release.
-* Getting Started-This section guides you on getting started with Windows application, controls etc.
-* Concepts and Features-The features of Essential Maps is illustrated with use case scenarios, code examples and screen shots under this section.
+The product comes with numerous samples as well as an extensive documentation to guide you. This user guide provides detailed information on the features and functionalities of the maps control. It is organized into the following sections:
 
-## Prerequisites and Compatibility
 
-This section covers the requirements mandatory for using Maps control. It also lists operating systems and browsers compatible with the product.
+
+* Overview: Provides a brief introduction to our product and its key features.
+* Installation and Deployment: Elaborates on the install location of the samples, license, and more.
+* What's New: Lists the new features implemented for every release.
+* Getting Started: Guides you on getting started with Windows application, controls, and more.
+* Concepts and Features: Illustrates use case scenarios, code examples, and screenshots under this section.
+
+## Prerequisites and compatibility
+
+This section covers the requirements mandatory for using maps control. It also lists operating systems and browsers compatible with the product.
 
 
 ### Prerequisites
 
-The prerequisites details are listed in the following table.
+The prerequisites details are listed in the following table:
 
 <table>
 <ul>
@@ -66,7 +66,7 @@ Development Environments</td><td>
 
 ### Compatibility
 
-The compatibility details are listed in the following table.
+The compatibility details are listed in the following table:
 
 <table>
 <ul>
@@ -89,7 +89,7 @@ Operating Systems</td><td>
 
 
 
-Syncfusion provides the following documentation segments to provide all necessary information for using Maps control in Windows application in an efficient manner.
+Syncfusion provides the following documentation segments to provide all necessary information for using maps control in Windows application in an efficient manner.
 
 
 
