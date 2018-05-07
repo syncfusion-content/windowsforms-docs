@@ -9,23 +9,25 @@ documentation: ug
 
 # Color Mapping
 
-Color mapping is categorized into four different types:
+Color mapping is categorized into the following four different types:
 
 * UniColorMapping
 * RangeBrushColorMapping
 * DesaturationColorMapping
 * PaletteColorMapping
 
-## UniColorMapping
+## Uni color mapping
 
 
-Tree map leaf nodes can be colored with the help of the Color property specified using UniColorMapping.
+The leaf nodes of the tree map can be colored using the [`Color`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.UniColorMapping~Color.html) property in the UniColorMapping.
 
 
 
-#### Code Sample
+#### Code sample
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 TreeMap TreeMap1 = new TreeMap();
 
@@ -62,17 +64,20 @@ UniColorMapping uniColorMapping = new UniColorMapping();
 uniColorMapping.Color = Color.MediumSlateBlue; 
 
 this.TreeMap1.LeafColorMapping = uniColorMapping;
-
 			
 {% endhighlight %}
+
+{% endtabs %}
 			
 ![](Features_images/Features_img7.png)
 
-## RangeBrushColorMapping
+## Range color mapping
 
-The leaf nodes of the TreeMap control can be colored based upon the range (i.e. From and To) and Brush specified using the RangeBrush collection of RangeBrushColorMapping.
+The leaf nodes of the tree map control can be colored based on the [`From`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.RangeBrush~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.RangeBrush~To.html) ranges. Color can be specified using the [`Color`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.RangeBrush~Color.html) property in the range brush collection of RangeBrushColorMapping.
 
-#### Code Sample
+#### Code sample
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -118,18 +123,20 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
 
 this.TreeMap1.LeafColorMapping = rangeBrushColorMapping;
 
-
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](Features_images/Features_img8.png)
 
 
-## DesaturationColorMapping
+## Desaturation color mapping
 
-The leaf nodes of the TreeMap control can be colored based on the Color specified by using DesaturationColorMapping. The RangeMinimum and RangeMaximum must be specified to determine the opacity for every leaf node. The opacity of leaf nodes is in the range between From and To in DesaturationColorMapping.
+The leaf nodes of the tree map control can be colored based on the [`Color`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.RangeBrush~Color.html) property specified in the DesaturationColorMapping. The [`RangeMinimum`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping~RangeMinimum.html) and [`RangeMaximum`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping~RangeMaximum.html) must be specified to determine opacity for every leaf node. The opacity of leaf nodes lies in the range between [`From`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.DesaturationColorMapping~To.html) properties in DesaturationColorMapping.
 
-#### Code Sample
+#### Code sample
+
+{% tabs %}
 
 {% highlight c# %} 
 
@@ -179,14 +186,18 @@ this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 		   
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Features_images/Features_img9.png)
 
 
-## PaletteColorMapping
+## Palette color mapping
 
-The leaf nodes can be colored by using the brushes listed in the Colors collection of PaletteColorMapping.
+The leaf nodes can be colored using the brushes listed in the [`Colors`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.PaletteColorMapping~Colors.html) collection of PaletteColorMapping.
 
-#### Code Sample
+#### Code sample
+
+{% tabs %}
 
 {% highlight c# %}   
    
@@ -230,5 +241,7 @@ new SolidBrush(Color.MediumSeaGreen), new SolidBrush(Color.PaleVioletRed), new S
 this.TreeMap1.LeafColorMapping = paletteColorMapping; 
  	  
 {% endhighlight %}
+
+{% endtabs %}
 	  
 ![](Features_images/Features_img10.png)
