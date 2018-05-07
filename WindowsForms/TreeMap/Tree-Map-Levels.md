@@ -9,13 +9,13 @@ documentation: ug
 
 # Tree Map Levels
 
-The levels of the TreeMap control can be categorized as two types, such as flat and hierarchical, which are used to define levels of a data collection. 
+The levels of the tree map control can be categorized into two types: flat and hierarchical, which are used to define the levels of a data collection. 
 
-## ItemsSource
+## Items source
 
-The ItemsSource set for TreeMap control must be a flat collection of data. The following code sample shows how to set a data collection as ItemsSource for the TreeMap control.
+The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ItemsSource.html) set to tree map control must be a flat collection of data. The following code sample shows how to set a data collection as ItemsSource for the tree map control.
 
-#### Code Sample
+{% tabs %}
 
 {% highlight c# %}
 
@@ -30,13 +30,10 @@ TreeMap1.WeightValuePath = "Population";
 TreeMap1.ColorValuePath = "Growth";
 
 
-
 public class PopulationViewModel
-
 {
 
 public PopulationViewModel()
-
 {
 
 this.PopulationDetails = new ObservableCollection<PopulationDetail>();
@@ -99,59 +96,15 @@ public string StrPopulation { get; set; }
 
 {% endhighlight %}
 
-## GroupPath
+{% endtabs %}
 
-The GroupPath must be specified for every level of the TreeMap control. It is a path to a field on the source object that serves as the “Group” for the level specified. The data is grouped in the TreeMap control based on the GroupPath. If it is not specified, then the items are not grouped and the data is shown in the order as it is specified in the ItemsSource.
+## Group path
 
+The [`GroupPath`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel~GroupPath.html) must be specified for every level of the tree map control. It is a path to a field on the source object that serves as the “Group” for the level specified. The data is grouped in the tree map control based on the GroupPath. If it is not specified, then the items are not grouped and the data will be shown in the order as it is specified in the ItemsSource.
 
+### Code sample
 
-Code Sample
-
-{% highlight c# %}
-
-TreeMap TreeMap1 = new TreeMap();
-
-PopulationViewModel data = new PopulationViewModel();
-
-TreeMap1.ItemsSource = data.PopulationDetails;
-
-
-
-TreeMap1.WeightValuePath = "Population";
-
-TreeMap1.ColorValuePath = "Growth";
-
-TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
-
-treeMapFlatLevel1.GroupPath = "Continent";
-
-treeMapFlatLevel1.ShowLabels = true;
-
-
-
-TreeMap1.Levels.Add(treeMapFlatLevel1);
-
-
-
-TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
-
-treeMapFlatLevel2.GroupPath = "Country";
-
-treeMapFlatLevel2.ShowLabels = true;
-
-treeMapFlatLevel2.HeaderHeight = 25;
-
-
-
-TreeMap1.Levels.Add(treeMapFlatLevel2);
-
-{% endhighlight %}
-
-## GroupGap
-
-The GroupGap can be specified for separating the items of every level. It is used to differentiate the levels in the TreeMap control.
-
-Code Sample
+{% tabs %}
 
 {% highlight c# %}
 
@@ -173,6 +126,47 @@ treeMapFlatLevel1.ShowLabels = true;
 
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
+TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
+
+treeMapFlatLevel2.GroupPath = "Country";
+
+treeMapFlatLevel2.ShowLabels = true;
+
+treeMapFlatLevel2.HeaderHeight = 25;
+
+TreeMap1.Levels.Add(treeMapFlatLevel2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Group gap
+
+The [`GroupGap`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel~GroupGap.html) can be specified for separating the items of every level. It is used to differentiate the levels in the tree map control.
+
+### Code sample
+
+{% tabs %}
+
+{% highlight c# %}
+
+TreeMap TreeMap1 = new TreeMap();
+
+PopulationViewModel data = new PopulationViewModel();
+
+TreeMap1.ItemsSource = data.PopulationDetails;
+
+TreeMap1.WeightValuePath = "Population";
+
+TreeMap1.ColorValuePath = "Growth";
+
+TreeMapFlatLevel treeMapFlatLevel1 = new TreeMapFlatLevel();
+
+treeMapFlatLevel1.GroupPath = "Continent";
+
+treeMapFlatLevel1.ShowLabels = true;
+
+TreeMap1.Levels.Add(treeMapFlatLevel1);
 
 
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
@@ -186,3 +180,5 @@ treeMapFlatLevel2.HeaderHeight = 25;
 TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 {% endhighlight %}
+
+{% endtabs %}
