@@ -7,24 +7,22 @@ control: Maps
 documentation: ug
 ---
 
-# Map Shape Customization
+# Shape Customization
 
-Shapes in the Map control can be customized using ShapeSetting properties ShapeFill, ShapeStroke and ShapeStrokeThickness.
+Shapes in the map control can be customized using the ShapeSetting properties such as ShapeFill, ShapeStroke, and ShapeStrokeThickness.
 
-## ShapeFill, ShapeStroke and ShapeStrokeThickness
+## Shape settings
 
-ShapeFill property will fill the Shape with the respective color. ShapeStroke property will set the border color of the shape in the Map. And ShapeStrokeThickness property will set the thickness of the shape’s border.	
+The [`ShapeFill`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeFill.html) property fills the shape with respective color. The [`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStroke.html) property sets the border color for the shape in the map, and the [`ShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStrokeThickness.html) property sets the thickness for the shape’s border.
 
-
+{% tabs %}
 
 {% highlight c# %}
 
 partial class Form1
-
-    {
+{
 
          private void InitializeComponent()
-
          {
 
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
@@ -35,7 +33,7 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
 
@@ -43,18 +41,20 @@ partial class Form1
 
             private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-     }  
+}  
 
 {% endhighlight %}
 
- {% highlight c# %}
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
 
 public partial class Form1 : Form
-
-    {
+{
 
         private void Form1_Load(object sender, EventArgs e)
-
         {
 
             this.mapsControl1.Dock = DockStyle.Fill;
@@ -64,8 +64,6 @@ public partial class Form1 : Form
             this.mapsControl1.MapBackgroundBrush = new SolidBrush(Color.White);
 
             this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
-
-
 
              ShapeFileLayer shapeLayer = new ShapeFileLayer();
 
@@ -80,10 +78,11 @@ public partial class Form1 : Form
              this.mapsControl1.Layers.Add(shapeLayer);
 
          }
-
-     }       
+}       
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Screenshot:
 
