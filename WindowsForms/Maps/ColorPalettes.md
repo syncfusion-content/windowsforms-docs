@@ -44,6 +44,8 @@ partial class Form1
 	 
 {% endhighlight %}
 
+{% endtabs %}
+
 {% tabs %}
 
 {% highlight c# %}
