@@ -9,25 +9,28 @@ documentation: ug
 
 # Getting Started
 
-Tree maps are a growing trend in data visualization. They display hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. Tree maps can also use color to represent any number of values, but colors are often used to categorize the various boxes within the tree map.
+Tree maps are a growing trend in data visualization. They display hierarchical information in a series of clustered rectangles, which represent a whole rectangle. The size of each box represents a quantity. Tree maps can also use color to represent any number of values, but colors are often used to categorize the various boxes within the tree map.
 
-Creating Tree Map for Windows Form Applications
+## Creating tree map for Windows Forms applications
 
-The TreeMap control is available in the following assembly and namespace:
+The tree map control is available in the following assembly and namespace:
 
 Assembly: Syncfusion.TreeMap.Windows
 
 Namespace: Syncfusion.Windows.Forms.TreeMap
 
-Refer to the following code to add a TreeMap control to an application:
+Refer to the following code to add a tree map control to an application.
 
-#### Code Sample
+
+{% tabs %}
 
 {% highlight c# %}
 
 TreeMap TreeMap1 = new TreeMap();
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 
