@@ -9,13 +9,15 @@ documentation: ug
 
 # Customizing Leaf Nodes
 
-Leaf nodes can be customized by raising the LeafItemDrawing event of the TreeMap control. 
+Leaf nodes can be customized by raising the [`LeafItemDrawing`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~LeafItemDrawing_EV.html) event of the tree map control. 
 
-#### Code Sample
+#### Code sample
+
+{% tabs %}
 
 {% highlight c# %}
 
- TreeMap TreeMap1 = new TreeMap();
+TreeMap TreeMap1 = new TreeMap();
 
 PopulationViewModel data = new PopulationViewModel();
 
@@ -36,7 +38,6 @@ treeMapFlatLevel1.ShowLabels = true;
 TreeMap1.Levels.Add(treeMapFlatLevel1);
 
 
-
 TreeMapFlatLevel treeMapFlatLevel2 = new TreeMapFlatLevel();
 
 treeMapFlatLevel2.GroupPath = "Country";
@@ -48,12 +49,7 @@ treeMapFlatLevel2.HeaderHeight = 25;
 TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 
-
-
-
-RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();              
-
-
+RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();   
 
 rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.ColorTranslator.FromHtml("#77D8D8"), From = 0, To = 1, LegendLabel = "1% Growth" });
 
@@ -66,13 +62,11 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
 this.TreeMap1.LeafColorMapping = rangeBrushColorMapping;
 
 void treeMap_LeafItemDrawing(object sender, LeafItemDrawingEventArgs e)
-
 {
 
 	e.Cancel = true;
 
 	if (e.Graphics != null && e.Cancel)
-
 	{
 
 		e.Graphics.FillRectangle((e.Color), e.RectSize);
@@ -81,18 +75,11 @@ void treeMap_LeafItemDrawing(object sender, LeafItemDrawingEventArgs e)
 
 		e.Graphics.DrawString(e.Label, new Font("Segoe UI", (float)12), new SolidBrush(Color.White), e.RectSize.X, e.RectSize.Y);
 
-
-
 		Image image = (e.Data as OlympicMedals).GameImage;
 
-
-
 		if (image != null)
-
 		{
-
 			e.Graphics.DrawImage(image, new Point(e.RectSize.X + (e.RectSize.Width / 2) - image.Width / 2, e.RectSize.Y + (e.RectSize.Height / 2) - image.Height / 2));
-
 		}
 
 	}
@@ -102,15 +89,11 @@ void treeMap_LeafItemDrawing(object sender, LeafItemDrawingEventArgs e)
 #region View Model
 
 public class OlympicMedalsViewModel
-
 {
 
 	public ObservableCollection<OlympicMedals> OlympicMedalsDetails { get; set; }
 
-
-
 	public OlympicMedalsViewModel()
-
 	{
 
 		var directoryPath = Application.StartupPath.Replace("bin\\Debug", "Images"); ;
@@ -118,8 +101,6 @@ public class OlympicMedalsViewModel
 		this.OlympicMedalsDetails = new ObservableCollection<OlympicMedals>();
 
 		this.OlympicMedalsDetails.Add(new OlympicMedals { Country = "US", GameName = "Swimming", GoldMedals = 16, SilverMedals = 9, BronzeMedals = 6, TotalMedals = 31, GameImage = this.GetImage("Swimming") });
-
-
 
 		this.OlympicMedalsDetails.Add(new OlympicMedals { Country = "US", GameName = "Track and Field", GoldMedals = 9, SilverMedals = 13, BronzeMedals = 7, TotalMedals = 29, GameImage = this.GetImage("TrackAndField") });
 
@@ -141,25 +122,17 @@ public class OlympicMedalsViewModel
 
 	}
 
-
-
 	public Image GetImage(string image)
-
 	{
 
 		Image _image = null;
 
-
-
-		   try{
-
+		   try
+		   {
 			   _image = Image.FromFile(@"..\..\..\..\..\images\" + image + ".png");
-
 		   }
 
 		catch{}
-
-
 
 		   return _image;
 
@@ -168,9 +141,7 @@ public class OlympicMedalsViewModel
 }
 
 
-
 public class OlympicMedals
-
 {
 
 	public string Country { get; set; }
@@ -192,5 +163,7 @@ public class OlympicMedals
 #endregion
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img14.png)
