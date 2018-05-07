@@ -9,19 +9,15 @@ documentation: ug
 
 # Legend
 
-A legend is a key to symbolism used on a map, usually containing swatches of symbols with descriptions. It provides valuable information for interpreting 
+A legend is a key used on a map that contains swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on data. 
 
-What the map is showing you, and can be represented in various colors and shapes based on the data.
+## Visibility 
 
-## Visibility of Legend 
+Legends are visible only by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~ShowLegend.html) property to true in the ShapeFileLayer.
 
-Legends are visible only by setting the “ShowLegend “property as true in the ShapeFileLayer.
+## Legend position
 
-## Positioning of Legend 
-
-Map legends can be positioned by setting the LegendPosition property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the PositionX and PositionY properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of “Default”.
-
-
+Map legends can be positioned by setting the `LegendPosition` property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x and y axes with the help of the [`PositionX`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionX.html) and [`PositionY`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionY.html) properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set to “Default”.
 
 <table>
 <tr>
@@ -33,57 +29,51 @@ Description</th></tr>
 <td>
 LegendPosition</td><td>
 LegendPosition (enum)</td><td>
-Gets or sets the standard position for the legend.</td></tr>
+Gets or sets the standard position for legend</td></tr>
 <tr>
 <td>
 PositionX</td><td>
 Double</td><td>
-Gets or sets the margin value for the x axis.</td></tr>
+Gets or sets the margin value for x axis</td></tr>
 <tr>
 <td>
 PositionY</td><td>
 Double</td><td>
-Gets or sets the margin value for the y axis.</td></tr>
+Gets or sets the margin value for y axis.</td></tr>
 </table>
 
 
-## Header for Legend 
+## Legend header
 
-A header for the legend can be added by setting the Title property of the string type.
+A header for the legend can be added by setting the `Title` property of string type.
 
 ## Categories of Legend 
 
-Legends are categorized as two types:
+Legends are categorized as the following two types:
 
-• Legends for layers.
+* Legends for layers
+* Legends for bubbles
 
-• Legends for bubbles.
-
-These can be set using the LegendType property of the type LegendType.
-
+These can be set by using the `LegendType` property.
 
 
-## Shapes for Legend 
+## Shapes for legend 
 
-Bubble type legends are always bubbles with varying sizes.  The size of the bubbles is obtained from the SizeRatio from the BubbleSetting.
+Bubble type legends are always bubbles with varying sizes. The size of the bubbles is obtained from the SizeRatio of the BubbleSetting.
 
-Layer shape type legends can be different shapes for the legend. The shapes can be set using the LegendIcon, of the LegendIcon type.
+Layer shape type legends can be different shapes for the legend. The shapes can be set using the LegendIcon of the LegendIcon type.
 
 ### Code sample:
 
-
+{% tabs %}
 
 {% highlight c# %}
 
 partial class Form1
-
-    {
-
-
+{
 
   private void InitializeComponent()
-
-         {
+  {
 
             this.mapsControl1 = new Syncfusion.Windows.Forms.Maps.Maps();
 
@@ -93,26 +83,27 @@ partial class Form1
 
             this.Controls.Add(this.mapsControl1);  
 
-             this.ClientSize = new System.Drawing.Size(880, 585);          
+            this.ClientSize = new System.Drawing.Size(880, 585);          
 
             this.Load += new System.EventHandler(this.Form1_Load);
-
-         }
+}
 
             private Syncfusion.Windows.Forms.Maps.Maps mapsControl1;
 
-     }  
+}  
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
 public partial class Form1 : Form
-
-    {
+{
 
         private void Form1_Load(object sender, EventArgs e)
-
         {
 
             this.mapsControl1.Dock = DockStyle.Fill;
@@ -124,9 +115,7 @@ public partial class Form1 : Form
             this.mapsControl1.MapItemsShape = Syncfusion.Windows.Forms.Maps.MapItemShapes.None;
 
 
-
             MapViewModel model = new MapViewModel();
-
 
 
             ShapeFileLayer shapeLayer = new ShapeFileLayer();
@@ -141,7 +130,7 @@ public partial class Form1 : Form
 
             shapeLayer.ShapeSetting.ShapeValuePath = "Population";
 
-shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
+            shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
 
             shapeLayer.ShapeSetting.ShapeDisplayValuePath = "NAME";
 
@@ -179,9 +168,11 @@ shapeLayer.ShapeSetting.ShapeColorValuePath = "Population";
 
          }
 
-     }       
+}       
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following screenshot illustrate a map displaying default legend
 
