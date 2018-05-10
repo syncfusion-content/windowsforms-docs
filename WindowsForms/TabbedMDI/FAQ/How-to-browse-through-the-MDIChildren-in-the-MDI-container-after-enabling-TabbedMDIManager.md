@@ -13,7 +13,9 @@ You should not use the MDIContainer form’s MDIChildren property to browse thro
 
 You should instead use the TabbedMDIManager's MDIChildren property to get a list of the MDIChildren, as follows:
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -39,7 +41,7 @@ MessageBox.Show(children);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' In your MDIContainer Form.
 
@@ -61,3 +63,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}

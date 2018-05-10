@@ -10,6 +10,8 @@ documentation: ug
 
 For this, you need to derive XPTaskBarBox class, and override DetermineHeaderHeight method as follows.
 
+{% tabs %}
+
 {% highlight C# %} 
 
 public class CustomTaskBar: XPTaskBarBox
@@ -44,7 +46,7 @@ public class CustomTaskBar: XPTaskBarBox
 
 
 
- {% highlight vbnet %} 
+{% highlight VB %}
 
 Public Class CustomTaskBar : Inherits XPTaskBarBox
 
@@ -65,3 +67,5 @@ Public Class CustomTaskBar : Inherits XPTaskBarBox
 End Class
 
 {% endhighlight %}
+
+{% endtabs %}

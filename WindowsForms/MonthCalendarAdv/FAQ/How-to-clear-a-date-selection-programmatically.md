@@ -6,21 +6,25 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# How to clear a date selection programmatically? 
+# How to clear a date selection programmatically?
 
 This can be done by calling ClearSelection() method.
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 this.monthCalendarAdv1.ClearSelection();
 
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 Me.monthCalendarAdv1.ClearSelection()
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}

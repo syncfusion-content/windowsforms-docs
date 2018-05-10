@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to Enable the Tabbed Style Dockable Window using TabbedMDI manager?
+# How to enable the Tabbed Style Dockable Window using TabbedMDI manager?
 
 The Tabbed MDI Package provides a new Tabbed MDI layout mode (as an alternative to the default Cascade and Tiled modes), popularized by VS .NET. 
 
@@ -35,7 +35,7 @@ Private tabbedMDIManager As Syncfusion.Windows.Forms.Tools.TabbedMDIManager
 {% endtabs %}
 
 
-* Set the form's IsMDIContainer property to true. Add a form, form2 to the project.
+* Set the form's IsMDIContainer property to `true`. Add a form, form2 to the project.
 * In the form constructor, you have to enable the dockable window into an MDIChild by calling the SetAsMDIChild method. This has to be done before calling the AttachToMdIContainer method. It will give the look and feel of the VS. NET editor with dockable tabbed window appearance.
 
 {% tabs %}

@@ -8,14 +8,13 @@ documentation: ug
 ---
 # Is it possible to restrict the dates that are selected?
 
-Yes, we can restrict the dates that are selected. If you want to allow the user to select only Mondays on the calendar, you can set Click able property to false for other days except Monday using DateCellQueryInfo event handler.
-
-The following code snippet can be used for this.
+Yes, we can restrict the dates that are selected. If you want to allow the user to select only Mondays on the calendar, you can set Clickable property to `false` for other days except Monday using DateCellQueryInfo event handler.
 
 
+{% tabs %}
 
+{% highlight C# %}
 
-{% highlight c#  %}
 void monthCalendarAdv1_DateCellQueryInfo(object sender, DateCellQueryInfoEventArgs e)
 
 {
@@ -37,8 +36,9 @@ void monthCalendarAdv1_DateCellQueryInfo(object sender, DateCellQueryInfoEventAr
 
 
 
-{% endhighlight  %}
-{% highlight vbnet %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, ByVal e As DateCellQueryInfoEventArgs)
@@ -54,4 +54,8 @@ Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, ByVal e 
     End If
 
 End Sub
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
+

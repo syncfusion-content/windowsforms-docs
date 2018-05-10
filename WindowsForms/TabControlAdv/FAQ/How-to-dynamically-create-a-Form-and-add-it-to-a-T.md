@@ -13,7 +13,7 @@ Here is a code sample which demonstrates how you could dynamically create a Form
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 //Form2 is the dynamically created form in your project that needs to be added to a Tab.
@@ -38,7 +38,7 @@ frm2.Dock = DockStyle.Fill;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 

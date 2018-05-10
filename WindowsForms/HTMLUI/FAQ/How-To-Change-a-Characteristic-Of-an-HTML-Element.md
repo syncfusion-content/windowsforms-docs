@@ -7,14 +7,15 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Change a Characteristic Of an HTML Element Before It Is Displayed?
+# How to change a characteristic of an HTML element before it is displayed?
 
 The characteristic of an element can be easily changed in the PreRenderDocument event of the HTMLUI control.
 
 The PreRenderDocument event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
 
+{% tabs %}
 
-{% highlight html %}
+{% highlight HTML %}
 
 <html>
 
@@ -42,11 +43,13 @@ Essential Studio includes ten component libraries in one great package. Each of 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following snippet shows how an image reference is changed for a page in the HTMLUI at run time, by using the PrerenderDocument event. 
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -98,7 +101,7 @@ Console.WriteLine(elem.Attributes["src"].Value);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -147,6 +150,8 @@ Next elem
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The following figure illustrates this behavior where the oldImage has been replaced by newImage.
 

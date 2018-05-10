@@ -7,15 +7,15 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Access the Name Of an HTML Element At Run-time?
+# How to access the name of an HTML element at run-time?
 
 The element.Name property gets the name of the tag that defines the element as an attribute, and not the name of the element defined by the user. You can access the name of the element with the help of the element.Attributes property.
 
 The following HTML document illustrates how an input element with a name is declared and accessed in HTMLUI.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -35,7 +35,7 @@ The following HTML document illustrates how an input element with a name is decl
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -63,7 +63,7 @@ Console.WriteLine("Name given for TextBox1:\n"+ textBox1.Attributes["name"].Valu
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -93,3 +93,5 @@ Console.WriteLine("Name given for TextBox1:" & Constants.vbLf+ textBox1.Attribut
 
 
 {% endhighlight %}
+
+{% endtabs %}

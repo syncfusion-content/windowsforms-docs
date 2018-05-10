@@ -7,11 +7,11 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-#  How to Freeze HubTile functionality in runtime?
+#  How to freeze HubTile functionality in runtime?
 
-You can achieve it by setting HubTileFreeze property to ‘true’.
+You can achieve it by setting HubTileFreeze property to `true`.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -24,8 +24,9 @@ IsFrozen</td><td>
 This property disables HubTile notification functionality.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.HubTile1.IsFrozen = true;
 
@@ -33,11 +34,12 @@ this.HubTile1.IsFrozen = true;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.HubTile1.IsFrozen = True
 
 {% endhighlight %}
 
+{% endtabs %}
 
 

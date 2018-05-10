@@ -7,7 +7,7 @@ control: Notification Package
 documentation: ug
 ---
 
-# How to activate a ProgressBarAdv
+# How to activate a ProgressBarAdv?
 
 This section will give you a brief description on how to use the ProgressBarAdv control.
 
@@ -19,7 +19,9 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 
 3. Double-click the timer and add the below given code in the timer_Tick event.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
 
         private void timer1_Tick(object sender, EventArgs e)
 		
@@ -35,10 +37,9 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 			
 		}
 
-   ~~~
-   {:.prettyprint }
+	{% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
         
 		Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
 		
@@ -54,12 +55,16 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 		
 		End Sub
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
+
+   {% endtabs %}
 
 4. Enable the timer in the button_Click event.
 
-   ~~~ cs
+   {% tabs %}
+
+   {% highlight C# %}
+
 
         private void button1_Click(object sender, EventArgs e)
 		
@@ -69,10 +74,9 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 		
 		}
 
-   ~~~
-   {:.prettyprint }
+    {% endhighlight %}
 
-   ~~~ vbnet
+	{% highlight VB %}
    
         Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
 		
@@ -80,8 +84,9 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 		
 		End Sub
 
-   ~~~
-   {:.prettyprint }
+   {% endhighlight %}
+
+   {% endtabs %}
 
 5. Run the application.
 

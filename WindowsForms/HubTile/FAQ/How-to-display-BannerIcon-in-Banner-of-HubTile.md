@@ -8,7 +8,7 @@ documentation: ug
 --- 
 
 
-# How to display BannerIcon in Banner of HubTile?
+# How to display BannerIcon in banner of HubTile?
 
 You can achieve this by using HubTile ShowBannerTileIcon and BannerIcon property.
 
@@ -30,8 +30,9 @@ You can achieve this by using HubTile ShowBannerTileIcon and BannerIcon property
 </tr>
 </Table>
 
+{% tabs %}
 
- {% highlight C# %} 
+{% highlight C# %} 
 
 /// Sets whether BannerIcon needs to be displayed in BannerTile
 
@@ -43,9 +44,9 @@ this.HubTile1.ShowBannerIcon = true;
 
 this.HubTile1.BannerIcon = this.ImageListAdv.Images[0];
 
-  {% endhighlight %}
+{% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
  
 
 ‘Sets whether BannerIcon needs to be displayed in BannerTile
@@ -60,3 +61,5 @@ Me.HubTile1.BannerIcon = Me.ImageListAdv.Images[0]
 
 
 {% endhighlight %}
+
+{% endtabs %}

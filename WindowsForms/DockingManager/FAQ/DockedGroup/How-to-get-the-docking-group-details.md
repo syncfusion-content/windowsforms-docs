@@ -15,8 +15,8 @@ There is no concept of 'group' in Docking Manager and a tabbed group is just an
 
 Follow the given steps to get the docking group.
 
-1. Add three listbox, a button and a docking manager to the form.
-2. Set the EnableDocking on Docking Manager property to true.
+1. Add three listbox, a button, and a docking manager to the form.
+2. Set the EnableDocking on Docking Manager property to `true`.
 3. Add the namespace Syncfusion.Windows.Forms.Tools in your application.
    
  {% tabs %}

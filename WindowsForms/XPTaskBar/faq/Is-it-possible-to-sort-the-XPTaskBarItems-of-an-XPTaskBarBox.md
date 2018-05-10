@@ -10,6 +10,8 @@ documentation: ug
 
 Yes. It is possible to sort the XPTaskBarItems of an XPTaskBarBox control, by calling the Sort() method as follows.
 
+{% tabs %}
+
 {% highlight C# %}  
 
  this.xpTaskBarBox1.Items.Sort();
@@ -18,8 +20,10 @@ Yes. It is possible to sort the XPTaskBarItems of an XPTaskBarBox control, by ca
 
  
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.xpTaskBarBox1.Items.Sort()
 
 {% endhighlight %}
+
+{% endtabs %}

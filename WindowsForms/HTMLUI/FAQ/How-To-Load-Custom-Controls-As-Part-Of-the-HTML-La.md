@@ -7,13 +7,13 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Load Custom Controls As Part Of the HTML Layout?
+# How to load custom controls as part of the HTML layout?
 
 An HTML document containing custom controls is shown below.
 
+{% tabs %}
 
-
-{% highlight html%}
+{% highlight HTML %}
 
 
 
@@ -91,7 +91,7 @@ The CustomControlBase implements the base functionality of the Windows Forms con
 
 
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -145,7 +145,7 @@ new CustomControlBase( dataGridElement1, this.dataGrid1  );
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -176,3 +176,5 @@ Dim oTemp3 As CustomControlBase = New CustomControlBase(dataGridElement1, Me.dat
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

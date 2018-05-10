@@ -7,19 +7,17 @@ control: Frequently Asked Questions
 documentation: ug
 ---
 
-# How to restrict SlideOnTop expand Transition for Left Position?
+# How to restrict SlideOnTop expand transition for left position?
 
 This requirement can be achieved by handling the Opening event.
 
 **Opening** **Event**
 
-This Event occurs before expand Transition initializes. 
-
-Following code example demonstrates the same. 
+This Event occurs before expand Transition initializes.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Disables the SlideOnTop on Left position when Transition begins.
 
@@ -39,7 +37,7 @@ e.Cancel = false;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 'Disables the SlideOnTop on Left position when Transition begins.
 

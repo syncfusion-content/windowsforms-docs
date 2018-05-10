@@ -11,7 +11,9 @@ documentation: ug
 
 You can change the tab back color for active tabs and inactive tabs using ActiveTabColor and InactiveTabColor properties. The following code snippet illustrates this.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -29,7 +31,7 @@ private void tabbedMDIManager_TabControlAdded(object sender, TabbedMDITabControl
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -42,6 +44,8 @@ Private Sub tabbedMDIManager_TabControlAdded(ByVal sender As Object, ByVal args 
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
 N> ActiveTabColor property work only for 2D, 3D, Workbook Mode, OneNoteStyle and not for other tabStyles.
 

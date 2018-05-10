@@ -7,30 +7,30 @@ control: DockingManager
 documentation: ug
 ---
 
-# Tabbed Window
+# Tabbed window
 
 Child window can be arranged as Tabbed windows by using either of the following ways.
 
-* At Design Time
-* At Run Time
+* At Design Time.
+* At Run Time.
 
-## At Design Time
+## At design time
 
 The docked controls can be tabbed in the designer, by just dragging and dropping into one another. DockingManager helps you in doing this using different `DragProviderStyle`.
 
 ![](Images/TabbedWindow_img1.jpeg)
 
 
-## At Run Time 
+## At run time
 
 DockingManager helps you in dragging and dropping the docked controls at run time, using different DragProviderStyle. This styles display a prediction Bands, which lets you decide whether you can drop the control in that location.
 
 ![](Images/TabbedWindow_img2.jpeg)
 
 
-## Tab Alignments
+## Tab alignments
 
-The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property `DockTabAlignment` with desired values such as Top, Bottom, Left and Right.
+The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property `DockTabAlignment` with desired values such as Top, Bottom, Left, and Right.
 
 {% tabs %}
 

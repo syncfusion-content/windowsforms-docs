@@ -7,14 +7,15 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Toggle the Visibility Of an HTML Element In the HTMLUI control At Run-time?
+# How to toggle the visibility of an HTML element in the HTMLUI control at run-time?
 
-Each HTML element in the HTMLUI has an xVisible attribute by default that helps the user to toggle the visibility of a particular element. Since the xVisible is a bool property, the value to be set is either True or False, as string.
+Each HTML element in the HTMLUI has an xVisible attribute by default that helps the user to toggle the visibility of a particular element. Since the xVisible is a bool property, the value to be set is either `true` or `false`, as string.
 
 The following code snippet shows how the visibility of an element is toggled on the execution of an event.
 
+{% tabs %}
 
-{% highlight html %}
+{% highlight HTML %}
 
 <html>
 
@@ -48,7 +49,7 @@ The following code snippet shows how the visibility of an element is toggled on 
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -96,7 +97,7 @@ this.htmluiControl1.Refresh();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -144,3 +145,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
