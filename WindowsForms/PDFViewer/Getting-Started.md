@@ -26,7 +26,7 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
 ### Adding in designer
 
 
-1. Open your form in the designer. Add the Syncfusion controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
+1) Open your form in the designer. Add the Syncfusion controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
    
    ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -34,7 +34,7 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
 
 
 
-2. Drag the PdfViewerControl from the toolbox onto the form.
+2) Drag the PdfViewerControl from the toolbox onto the form.
 
 
 
@@ -43,7 +43,7 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
    ![](Getting-Started_images/Getting-Started_img2.png)
    
 
-3. This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/pdf%20viewer/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String).html) method. 
+3) This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/pdf%20viewer/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String).html) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -60,9 +60,9 @@ pdfViewerControl1.Load("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 	
-###Adding manually in code
+### Adding manually in code
 
-1. Add Syncfusion.Windows.Forms.PdfViewer namespace.
+1) Add Syncfusion.Windows.Forms.PdfViewer namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,7 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 {% endtabs %}
 		
 		
-2. Create PdfViewerControl instance and load the PDF
+2) Create PdfViewerControl instance and load the PDF
 
 {% tabs %}
 {% highlight c# %}
