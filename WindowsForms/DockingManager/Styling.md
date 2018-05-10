@@ -7,11 +7,11 @@ control: DockingManager
 documentation: ug
 ---
 
-# Styling 
+# Styling
 
-The UI for Dock, Float and AutoHide windows of DockingManager can be changed using different Style.
+The UI for Dock, Float, and AutoHide windows of DockingManager can be changed using different Style.
 
-## Visual Styles
+## Visual styles
 
 VisualStyles provides rich and professional look and feel UI for the Dock windows. Some of the available VisualStyles are as follows:
 
@@ -102,8 +102,6 @@ Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003;
 
 This option helps to set the Office2016Colorful style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -129,8 +127,6 @@ Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016C
 **Office2016White**
 
 This option helps to set the Office2016White style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -158,8 +154,6 @@ Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016W
 
 This option helps to set the Office2016DarkGray style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -186,8 +180,6 @@ Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016D
 
 This option helps to set the Office2016Black style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -210,9 +202,9 @@ Me.dockingManager.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016B
 
  ![](Styling_images/Styling_img19.png)
 
-## Office2007 Color Schemes
+## Office2007 color schemes
 
-DockingManager supports all the three color schemes in Office2007 visual style. This can be controlled using `Office2007Theme` property. 
+DockingManager supports all the three color schemes in Office2007 visual style. This can be controlled using `Office2007Theme` property.
 
 {% tabs %}
 
@@ -236,7 +228,7 @@ Me.dockingManager.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Sil
 
  ![](Styling_images/Styling_img10.png)
 
-## Custom Color Schemes
+## Custom color schemes
 
 Custom colors can also be applied for Office2007 style, using the below code snippet.
 

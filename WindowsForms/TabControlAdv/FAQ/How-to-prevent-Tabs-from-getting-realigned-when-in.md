@@ -7,15 +7,15 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to prevent Tabs from getting realigned when in Multiline mode?
+# How to prevent tabs from getting realigned when in Multiline mode?
 
-We will be making this a property based feature in a future version. For now, derive from our base TabControlExt class and do the following. 
+We will be making this a property based feature in a future version. For now, derive from our base TabControlExt class and do the following.
 
 This code will not move the selected Tab to the front row when in Multiline mode.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -77,7 +77,7 @@ protected override void ValidateSelectedTabsPosition()
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 

@@ -11,7 +11,9 @@ documentation: ug
 
 This can be done programmatically using Collapsed property.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -19,13 +21,15 @@ this.tabSplitterContainer1.Collapsed = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
 Me.tabSplitterContainer1.Collapsed = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](How-to-collapse-the-splitter-pane-programmatically_images/How-to-collapse-the-splitter-pane-programmatically_img1.jpeg)
 

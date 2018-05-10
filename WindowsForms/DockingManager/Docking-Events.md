@@ -7,11 +7,11 @@ control: DockingManager
 documentation: ug
 ---
 
-# Docking Events
+# Docking events
 
-The Essential Tools DockingManager provides the functionality for creating and working with enhanced docking windows that support attaching to a host form's border, dragging around and docking to different edges within the form and also be dragged off the host form and floated as an individual top-level window. 
+The Essential Tools DockingManager provides the functionality for creating and working with enhanced docking windows that support attaching to a host form's border, dragging around and docking to different edges within the form and also be dragged off the host form and floated as an individual top-level window.
 
-The Essential Tools docking Framework allows just about any child control on a form to be made into a fully qualified docking window. The DockingManager provides programmatic access to the interaction between these dockable windows and other complex features like multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events. 
+The Essential Tools docking Framework allows just about any child control on a form to be made into a fully qualified docking window. The DockingManager provides programmatic access to the interaction between these dockable windows and other complex features like multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events.
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
@@ -19,7 +19,7 @@ The list of events and a detailed explanation about each of them is given in the
 <table>
 <tr>
 <th>
-Docking Events</th><th>
+Docking events</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -139,15 +139,15 @@ The TransferringFromManager event occurs when a dockable control hosted by this 
 
 This section covers the following events:
 
-### DockAllow Event
+### DockAllow event
 
 This event is illustrated in How to Prevent tabbed docking.
 
-### DockControlActivated Event
+### DockControlActivated event
 
 The DockControlActivated event occurs when a dockable control gets activated. When the user clicks on the dockable control or the docked control, this event will be triggered. It can display the control name which has been activated currently.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type DockActivationChangedEventArgs containing data related to this event. The following DockActivationChangedEventArgs properties provide information specific to this event.
 
@@ -220,11 +220,11 @@ End Sub
 
 {% endtabs %}
 
-### DockControlDeactivated Event
+### DockControlDeactivated event
 
 Whenever a dockable control or the docked control loses focus, DockControlDeactivated event will be raised. In other words, when a dockable control gets deactivated, this event will be fired. This event can display the control name that is deactivated.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type DockedActivationChangedEventArgs containing data related to this event. The following DockActivationChangedEventArgs property provide information specific to this event.
 
@@ -284,15 +284,15 @@ End Sub
 
 {% endtabs %}
 
-## AutoHide Animation
+## AutoHide animation
 
 This section discusses the below events that are raised at the start and end of auto hide animation.
 
-### AutoHideAnimationStart Event
+### AutoHideAnimationStart event
 
 The AutoHideAnimationStart event occurs just before the start of an auto hide animation. When the user tries to click the auto hide button to hide the docked control, this event will be triggered.
 
-#### Event Data
+#### Event data
 
 The AutoHideAnimationEventHandler receives an argument of type AutoHideAnimationEventArgs containing data related to this event. The following AutoHideAnimationEventArgs properties provide information specific to this event.
 
@@ -382,11 +382,11 @@ End Sub
 
 {% endtabs %}
 
-### AutoHideAnimationStop Event
+### AutoHideAnimationStop event
 
 The AutoHideAnimationStop event occurs immediately after the end of an auto hide animation. When the user click the auto hide button, the docked control will be hidden, and once this happens, the AutoHideAnimationStop event will be triggered.
 
-#### Event Data
+#### Event data
 
 The AutoHideAnimationEventHandler receives an argument of type AutoHideAnimationEventArgs containing data related to this event. The following AutoHideAnimationEventArgs properties provide information specific to this event.
 
@@ -476,7 +476,7 @@ End Sub
 
 {% endtabs %}
 
-## Context Menu
+## Context menu
 
 This section covers the following events:
 
@@ -485,11 +485,11 @@ This section covers the following events:
 * [DocMenuClick Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#docmenuclick-event)
 
 
-### AutoHideTabContextMenu Event
+### AutoHideTabContextMenu event
 
 This event occurs when the right mouse button is clicked over a auto hidden tab control.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type AutoHideTabContextMenuEventArgs containing data related to this event. The following AutoHideTabContextMenuEventArgs properties provide information specific to this event.
 
@@ -502,7 +502,7 @@ Description</th></tr>
 <tr>
 <td>
 ContextMenu</td><td>
-Gets / sets the context menu to be displayed.</td></tr>
+Gets/sets the context menu to be displayed.</td></tr>
 <tr>
 <td>
 DockBorder</td><td>
@@ -541,13 +541,13 @@ End Sub
 
 {% endtabs %}
 
-### DockContextMenu Event
+### DockContextMenu event
 
 The DockContextMenu event is fired when the mouse is right-clicked over a docking window's caption.
 
-#### Event Data
+#### Event data
 
-The event handler receives an argument of type DockContextMenuEventArgs containing data related to this event. The following DockContextMenuEventArgs properties provide information specific to this event. 
+The event handler receives an argument of type DockContextMenuEventArgs containing data related to this event. The following DockContextMenuEventArgs properties provide information specific to this event.
 
 <table>
 <tr>
@@ -662,18 +662,11 @@ End Sub
  ![](Docking-Events_images/Docking-Events_img1.jpeg) 
 
 
+### DocMenuClick event
 
-{% seealso %}
- 
-[Context Menu](/windowsforms/dockingmanager/dealing-with-windows#applying-context-menu )
+DockMenuClick event is fired, when the redo context menu item has been clicked. The menu button available for the docked controls, provides options for changing the docking position. Whenever the user tries to redo the control to some other position, DockMenuClick event will be triggered. The options provided are left, top, right, and bottom. The redo style can be displayed using the below code.
 
-{% endseealso %}
-
-### DocMenuClick Event
-
-DockMenuClick event is fired, when the redo context menu item has been clicked. The menu button available for the docked controls, provides options for changing the docking position. Whenever the user tries to redo the control to some other position, DockMenuClick event will be triggered. The options provided are left, top, right and bottom. The redo style can be displayed using the below code.
-
-#### Event Data
+#### Event data
 
 The DockMenuClickEventHandler receives an argument of type DockMenuClickEventArgs containing data related to this event. The following DockMenuClickEventArgs properties provide information specific to this event.
 
@@ -731,15 +724,15 @@ End Sub
 
 {% endtabs %}
 
-## Docked Control
+## Docked control
 
 This section covers the following events:
 
-### ControlMaximized Event
+### ControlMaximized event
 
 The docked control gets maximized, when the maximized button of the docked control is clicked. ControlMaximized event will be triggered after the control is maximized.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type ControlMaximizedEventArgs containing data related to this event. The following  ControlMaximizedEventArgs properties provide information specific to this event.
 
@@ -752,7 +745,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets value that indicates whether to cancel the operation or not.</td></tr>
+Gets/sets value that indicates whether to cancel the operation or not.</td></tr>
 </table>
 
 {% tabs %}
@@ -802,11 +795,11 @@ End Sub
 
 {% endtabs %}
 
-### ControlMaximizing Event
+### ControlMaximizing event
 
 When the user clicks on the maximize button, and when the control is going to be maximized, the ControlMaximizing event will be raised.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type ControlMaximizeEventArgs containing data related to this event. The following ControlMaximizeEventArgs properties provide information specific to this event.
 
@@ -819,7 +812,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets / sets value that indicates whether to cancel the operation or not.</td></tr>
+Gets/sets value that indicates whether to cancel the operation or not.</td></tr>
 </table>
  
 
@@ -870,7 +863,7 @@ End Sub
 
 {% endtabs %}
 
-### ControlMinimized Event
+### ControlMinimized event
 
 This event is fired after the control is minimized using the minimize option available for the docked control. This event can display the control name using the Control parameter available for the ControlMinimizedEventHandler.
 
@@ -924,11 +917,11 @@ End Sub
 
 {% endtabs %}
 
-### ControlRestored Event
+### ControlRestored event
 
 This event occurs after the control is restored to its original position. This event can give the previous state of the control using the PreviousSizeState property available for the handler.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type ControlRestoredEventArgs containing data related to this event. The following ControlRestoredEventArgs properties provide information specific to this event.
 
@@ -985,7 +978,7 @@ End Sub
 
 {% endtabs %}
 
-## Dock State
+## Dock state
 
 This section covers the following events:
 
@@ -995,12 +988,12 @@ This section covers the following events:
 * [NewDockStateBeginLoad Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstatebeginload-event)
 * [NewDockStateEndLoad Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstateendload-event)
 
-### DockStateChanged Event
+### DockStateChanged event
 
 
 When the user changes the dock state of the control, DockStateChanged event will be raised immediately after this dock state change operation.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type DockStateChangeEventArgs containing data related to this event. The following DockStateChangeEventArgs property provides information specific to this event.
 
@@ -1089,11 +1082,11 @@ End Sub
 
 
 
-### DockStateChanging Event
+### DockStateChanging event
 
 DockStateChanging event will be triggered just before a dock operation takes place.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type DockStateChangeEventArgs containing data related to this event. The following DockStateChangeEventArgs property provides information specific to this event.
 
@@ -1179,11 +1172,11 @@ End Sub
 
 {% endtabs %}
 
-### DockStateUnavailable Event
+### DockStateUnavailable event
 
 The DockStateUnavailable event occurs if serialized information is not available for a dockable control when loading a persisted dock state.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type DockStateUnavailableEventArgs containing data related to this event. The following DockStateUnavailableEventArgs property provides information specific to this event.
 
@@ -1243,7 +1236,7 @@ End Sub
 
 {% endtabs %}
 
-### NewDockStateBeginLoad Event
+### NewDockStateBeginLoad event
 
 The NewDockStateBeginLoad event occurs just before a new dock state is loaded. Whenever an application with one or more docked controls is going to be loaded, this event will be triggered.
 
@@ -1301,7 +1294,7 @@ End Sub
 
 {% endtabs %}
 
-### NewDockStateEndLoad Event
+### NewDockStateEndLoad event
 
 The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded. Whenever an application with one or more docked controls is loaded, this event will be triggered.
 
@@ -1360,19 +1353,19 @@ End Sub
 
 {% endtabs %}
 
-## Dock Visibility State 
+## Dock visibility state
 
  This section covers the following events:
 
 * [DockVisibilityChanged Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanged-event)
 * [DockVisibilityChanging Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockvisibilitychanging-event)
 
-### DockVisibilityChanged Event
+### DockVisibilityChanged event
 
 
-This event occurs after a control's DockVisibility state has changed. When the user clicks on the close button, the control's visibility changes and at this moment DockVisibilityChanged event will be handled. We can also use dockingManager.GetDockVisibility(control) method to know the current status of the docking window. 
+This event occurs after a control's DockVisibility state has changed. When the user clicks on the close button, the control's visibility changes and at this moment DockVisibilityChanged event will be handled. We can also use dockingManager.GetDockVisibility(control) method to know the current status of the docking window.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type DockVisibilityChangedEventArgs containing data related to this event. The following DockVisibilityChangedEventArgs properties provide information specific to this event.
 
@@ -1446,11 +1439,11 @@ private void dockingManager1_DockVisibilityChanged(object sender, Syncfusion.Win
 
 {% endtabs %}
 
-### DockVisibilityChanging Event
+### DockVisibilityChanging event
 
 An use case demonstrating this event is available at How to prevent closing of docked window?.
 
-## Drag Events
+## Drag events
 
 This section covers the following events:
 
@@ -1458,12 +1451,12 @@ This section covers the following events:
 * [DragFeedbackStart Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstart-event)
 * [DragFeedbackStop Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dragfeedbackstop-event)
 
-### DragAllow Event
+### DragAllow event
 
 
 The DragAllow event is triggered when a docking window is about to be dragged. Whenever the user wants to dock a control, he will try to drag the control, to dock it to a particular target. This event will be raised, when this dragging process starts.
 
-#### Event Data
+#### Event data
 
 DragAllowEventHandler receives an argument of type DragAllowEventArgs containing data related to this event. The following DragAllowEventArgs properties provides information specific to this event.
 
@@ -1476,7 +1469,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-This property gets / sets the value indicating whether the event should be canceled.</td></tr>
+This property gets/sets the value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
 Control</td><td>
@@ -1538,7 +1531,7 @@ End Sub
 
 {% endtabs %}
 
-### DragFeedbackStart Event
+### DragFeedbackStart event
 
 The DragFeedbackStart event is fired just before the start of the feedback of a drag operation. When the docked control is dragged from its position to locate some position, this event will be raised.
 
@@ -1626,7 +1619,7 @@ End Sub
 
 {% endtabs %}
 
-### DragFeedbackStop Event
+### DragFeedbackStop event
 
 The DragFeedbackStop event occurs immediately after the end of the feedback of a drag operation. When the docked control is dragged from its position and locates another position, this event will be raised. Whenever the mouse click is released from dragging, the drag feedback is stopped and DragFeedbackStop event will be triggered.
 
@@ -1674,7 +1667,7 @@ End Sub
 
 {% endtabs %}
 
-## Linked Managers
+## Linked managers
 
 This section covers the following events:
 
@@ -1685,12 +1678,12 @@ This section covers the following events:
 * [ProvideGraphicsItems Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#providegraphicsitems-event)
 * [ProvidePersistenceID Event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#providepersistenceid-event)
 
-### TransferredToManager Event
+### TransferredToManager event
 
 
 The TransferredToManager event occurs after a dockable control that previously belonged to some other DockingManager has been transferred to the docking layout hosted by the current DockingManager.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type TransferManagerEventArgs containing data related to this event. The following TransferManagerEventArgs properties provide information specific to this event.
 
@@ -1752,11 +1745,11 @@ End Sub
 
 {% endtabs %}
 
-### TransferringFromManager Event
+### TransferringFromManager event
 
 The TransferringFromManager event occurs when a dockable control hosted by a DockingManager is about to be transferred to the docking layout hosted by some other DockingManager.
 
-#### Event Data
+#### Event data
 
 The event handler receives an argument of type TransferManagerEventArgs containing data related to this event. The following TransferManagerEventArgs property provide information specific to this event.
 
@@ -1819,7 +1812,7 @@ End Sub
 
 {% endtabs %}
 
-## ImageListChanged Event
+## ImageListChanged event
 
 When the image list property is changed, ImageListChanged event will be raised. Every docked control will have SetDockIcon property to set the icons for the control. When this property is changed, the above event will be triggered.
 
@@ -1879,11 +1872,11 @@ End Sub
 {% endtabs %}
 
 
-## InitializeControlOnLoad Event
+### InitializeControlOnLoad event
 
 The InitializeControlOnLoad event occurs when the DockingManager is not able to locate a control during a LoadDockState call.
 
-### Event Data
+#### Event data
 
 The event handler receives an argument of type InitializeControlOnLoadEventArgs containing data related to this event. The following InitializeControlOnLoadEventArgs property provides information specific to this event.
 
@@ -2016,11 +2009,11 @@ End Sub
 
 {% endtabs %}
 
-## ProvideGraphicsItems Event
+### ProvideGraphicsItems event
 
 The ProvideGraphicsItems event occurs whenever a dockable control's caption needs to be painted. The background, foreground etc of the control's caption, when needs to be painted, this event will be raised. The docked control name, which is to be painted can be displayed using the control property.
 
-### Event Data
+#### Event data
 
 The event handler receives an argument of type ProvideGraphicsItemsEventArgs containing data related to this event. The following ProvideGraphicsItemsEventArgs properties provide information specific to this event.
 
@@ -2053,7 +2046,7 @@ Gets the dockable control for which the caption is being drawn.</td></tr>
 <tr>
 <td>
 IsActiveCaption</td><td>
-Gets the active / inactive state of the docking window.</td></tr>
+Gets the active/inactive state of the docking window.</td></tr>
 </table>
 
 
@@ -2138,11 +2131,11 @@ End Sub
 
 {% endtabs %}
 
-## ProvidePersistenceID Event
+### ProvidePersistenceID event
 
 This event lets you specify a unique ID to distinguish the persistence information of different instances of the Form type.
 
-### Event Data
+#### Event data
 
 The event handler receives an argument of type ProvidePersistenceIDEventArgs containing data related to this event. The following ProvidePersistenceIDEventArgs property provides information specific to this event.
 
@@ -2214,9 +2207,9 @@ End Sub
 
 The current behavior of DockingManager is based on Visual Studio 2008. This behavior can be changed to the dock behavior of  Visual Studio 2010 by using DockBehavior property.
 
-### Caption Button Collection:
+### Caption button collection
 
-In Visual Studio 2010, if you double-click on the docked window, the _caption control_ moves to _floating_ state and displays the _Caption Button_ collections as shown in the following screen shot. 
+In Visual Studio 2010, if you double-click on the docked window, the _caption control_ moves to _floating_ state and displays the _Caption Button_ collections as shown in the following screen shot.
 
  ![](Docking-Events_images/Docking-Events_img3.png)
 
@@ -2224,11 +2217,11 @@ In Visual Studio 2010, if you double-click on the docked window, the _caption co
 
 ### Interactive features
 
-When you double-click on DockingManager caption bar, the control state changes to _Maximized_ state. 
+When you double-click on DockingManager caption bar, the control state changes to _Maximized_ state.
 
-#### Maximize and Restore Options: 
+#### Maximize and restore options
 
-You can maximize/restore the dock panel to the earlier floating window position by double-clicking on the caption bar or on the restore button. 
+You can maximize/restore the dock panel to the earlier floating window position by double-clicking on the caption bar or on the restore button.
 
 The following screen shot shows how to restore a dock panel using _maximize_ and _restore_ buttons.
 
@@ -2236,25 +2229,23 @@ The following screen shot shows how to restore a dock panel using _maximize_ and
 
 
 
-#### Auto Hide:
+#### Auto hide
 
-You can auto-hide a dock panel by selecting the “Auto-Hide” menu item in the caption bar. 
-
-The following screen shot shows how to auto-hide a dock panel.
+You can auto-hide a dock panel by selecting the “Auto-Hide” menu item in the caption bar.
 
  ![](Docking-Events_images/Docking-Events_img5.png)
 
 
 
-#### Auto Hide State:
+#### Auto hide state
 
-The following screen shot shows a dock panel in auto-hide state.
+The following screenshot shows a dock panel in auto-hide state.
 
  ![](Docking-Events_images/Docking-Events_img6.png) 
 
 
 
-#### API Details:
+#### API details
 
 
 <table>
@@ -2291,11 +2282,11 @@ Me.dockingManager1.DockBehavior = Syncfusion.Windows.Forms.Tools.DockBehavior.VS
 {% endtabs %}
 
 
-## OnCaptionDoubleClick Event:
+### OnCaptionDoubleClick event
 
 The OnCaptionDoubleClick event occurs when you double-click on a dockable control or a docked control caption. This event is triggered when DockingManager EnableDoubleClickOnCaption property is set to _“false”_. It displays the control name which is currently active.
 
-### Event Data
+#### Event data
 
 The event handler receives an argument of type DockMouseSelectionEventHandler that contains data related to this event. The following DockMouseSelectionEventHandler properties provide information specific to this event.
 
@@ -2365,3 +2356,8 @@ End Sub
 
 {% endtabs %}
 
+{% seealso %}
+ 
+[Context menu](/windowsforms/dockingmanager/dealing-with-windows#applying-context-menu )
+
+{% endseealso %}

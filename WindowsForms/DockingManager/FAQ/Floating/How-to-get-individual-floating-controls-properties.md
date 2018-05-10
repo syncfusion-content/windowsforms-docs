@@ -51,8 +51,8 @@ Me.dockingManager1.SetFloatOnly(Me.listView1,True)
   
 
 4. Determine whether the control is floating using the `IsFloating()` method. 
-* If true, then the control is being hosted in a subclass of the Form type and this host form can be retrieved through the control’s `TopLevelControl` property. 
-* Once we have the top level form,  x and y co-ordinates can be retrieved using Control.Location property of that form.
+* If `true`, then the control is being hosted in a subclass of the Form type and this host form can be retrieved through the control’s `TopLevelControl` property.
+* Once, we have the top level form,  x and y co-ordinates can be retrieved using Control.Location property of that form.
 
  {% tabs %}
  

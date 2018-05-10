@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Docking Window
+# Docking window
 
 DockingManager lets you dock the control on any of the four sides of the container control.
 
@@ -16,7 +16,7 @@ DockingManager lets you dock the control on any of the four sides of the contain
 ![](Images/DockingWindow_img1.jpeg)
 
 
-## Configuring Window in Different Sides
+## Configuring window in different sides
 
 DockingManager lets you specify the type of docking and the bounds of the docked control using the `DockControl` method.
 
@@ -52,9 +52,9 @@ Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 ![](Images/DockingWindow_img2.jpeg)
 
-## Enabling or Disabling the Dock Functionality
+## Enabling or disabling the dock functionality
 
-Docking functionality can be enabled or disabled by setting the Boolean value as true or false in the **SetEnableDocking** method.
+Docking functionality can be enabled or disabled by setting the Boolean value as `true` or `false` in the **SetEnableDocking** method.
 
 {% tabs %}
 
@@ -77,9 +77,9 @@ Docking functionality can be enabled or disabled by setting the Boolean value as
 
 {% endtabs %}
 
-## Enabling or Disabling the Caption Visibility
+## Enabling or disabling the caption visibility
 
-**ShowCaption** is an attached property, which is used to hide the Caption of the DockWindow. Default value of **ShowCaption** is true, to hide the Caption turn its value to false.
+**ShowCaption** is an attached property, which is used to hide the Caption of the DockWindow. Default value of **ShowCaption** is `true`, to hide the Caption turn its value to `false`.
 
 {% tabs %}
 

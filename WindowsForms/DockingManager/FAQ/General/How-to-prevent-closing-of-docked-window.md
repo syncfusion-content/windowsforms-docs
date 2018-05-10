@@ -19,7 +19,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-This property gets / sets the value indicating whether the event should be canceled.</td></tr>
+This property gets/sets the value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
 Control</td><td>

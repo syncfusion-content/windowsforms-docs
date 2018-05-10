@@ -11,7 +11,9 @@ documentation: ug
 
 You can add a Wizard page to the Wizard Control using AddPage Method.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -27,7 +29,7 @@ NewPage.Description = "Give a Finish Text";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -42,6 +44,8 @@ NewPage.Title = "Finishing Page"
 NewPage.Description = "Give a Finish Text" 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically_images/How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically_img1.jpeg)
 

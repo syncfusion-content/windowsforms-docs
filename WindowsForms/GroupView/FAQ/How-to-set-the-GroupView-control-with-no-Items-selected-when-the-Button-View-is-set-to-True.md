@@ -6,11 +6,11 @@ platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# How to set the GroupView control with no Items selected when the Button View is set to True
+# How to set the GroupView control with no items selected when the button view is set to true?
 
-When ButtonView is set to 'True', the user cannot set the selected index to -1 to make it as not selected. As an alternative, set the Button View to 'False' as a default and in the GroupView's MouseDown event or GroupViewItemSelected event, set the Button View to 'True'.
+When ButtonView is set to `true`, the user cannot set the selected index to -1 to make it as not selected. As an alternative, set the Button View to `false` as a default and in the GroupView's MouseDown event or GroupViewItemSelected event, set the Button View to `true`.
 
-The following code snippet illustrates this.
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -28,7 +28,7 @@ this.groupView1.ButtonView = true;
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 ' Set Button View in the MouseDown event. 
 
@@ -39,3 +39,5 @@ Me.groupView1.ButtonView = True
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

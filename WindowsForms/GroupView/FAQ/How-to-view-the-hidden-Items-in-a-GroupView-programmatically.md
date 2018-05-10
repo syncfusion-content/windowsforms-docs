@@ -6,11 +6,11 @@ platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# How to view the hidden Items in a GroupView programmatically
+# How to view the hidden items in a GroupView programmatically?
 
 GroupView's BringItemIntoView method can be used to scroll down to a hidden item and bring that item into view.
 
-The following code snippet illustrates this.
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -24,7 +24,7 @@ this.groupView1.BringItemIntoView(20);
 
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Me.groupView1.SelectedItem = 20
 
@@ -33,3 +33,5 @@ Me.groupView1.SelectedItem = 20
 Me.groupView1.BringItemIntoView(20)
 
 {% endhighlight %}
+
+{% endtabs %}

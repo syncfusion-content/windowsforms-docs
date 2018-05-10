@@ -7,16 +7,16 @@ control: Notification Package
 documentation: ug
 ---
 
-# How to display custom text on the ProgressBarAdv to indicate the status of the task instead of the percentage completed
+# How to display custom text on the ProgressBarAdv to indicate the status of the task instead of the percentage completed?
 
 This can be done using the steps given below.
 
 1. Set the ProgressBarAdv's TextStyle property to 'Custom'.
 2. Handle the ProgressBarAdv's ValueChanged event and set e.Text = "your desired text" and e.Handled = True.
 
-The following code demonstrates the above steps.
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 // Declare and initialize count.
 
@@ -82,7 +82,7 @@ e.Handled = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Declare and initialize count.
 
@@ -145,3 +145,5 @@ e.Handled = True
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

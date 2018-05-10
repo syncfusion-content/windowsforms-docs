@@ -7,15 +7,15 @@ control: DockingManager
 documentation: ug
 ---
 
-# State Persistence 
+# State persistence
 
 State persistence is the combined process of serialization and deserialization.
 
-DockingManager provides built-in state persistence functionality to save and load at different states and sides. 
+DockingManager provides built-in state persistence functionality to save and load at different states and sides.
 
-## Persisting Dock State in default storage 
+## Persisting Dock state in default storage
 
-DockingManager supports AutoSave which allows to persist its state automatically. To enable this functionality, set the PersistState property as True. The default value of the PersistState property is False. It saves the state of the DockingManager in an isolated storage format while WindowClosing.
+DockingManager supports AutoSave which allows to persist its state automatically. To enable this functionality, set the PersistState property as `true`. The default value of the PersistState property is `false`. It saves the state of the DockingManager in an isolated storage format while WindowClosing.
 
 {% tabs %}
 
@@ -33,9 +33,9 @@ Me.dockingManager1.PersistState = True
 
 {% endtabs %}
 
-## Auto Save / Load functionalities
+## Auto save/load functionalities
 
-### Load State
+### Load state
 
 To load the AutoPersist state of the DockingManager, call the LoadDockState() method of the DockingManager in its loaded event.
 
@@ -85,7 +85,7 @@ Me.dockingManager1.LoadDockState(serializer, this.listBox1)
 
 {% endtabs %}
 
-### Save State
+### Save state
 
 To save the AutoPersist state of the DockingManager, call the SaveDockState() method of the DockingManager in its closing event.
 
@@ -141,7 +141,7 @@ By default, DockingManager cannot deserialize its Saved Layout properly, when it
 
 Since the DockingManager state persistence feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
 
-## Various formats to Save / Load states
+## Various formats to save/load states
 
 DockingManager allows to save and load the DockStates of windows in DockingManager in different format.
 
@@ -194,7 +194,7 @@ End Sub()
 
 {% endtabs %}
 
-### Persisting Dock State in Memory Stream
+### Persisting Dock state in memory stream
 
 To persist docking information in a database, we need to serialize the state into a memory stream. After which the stream is written into the database. The field to where the dock state is saved is binary.
 
@@ -275,7 +275,7 @@ Me.dockingManager1.LoadDockState(serializer)
 
 {% endtabs %}
 
-### Serialization in Binary Format
+### Serialization in binary format
 
 
 {% tabs %}
@@ -391,7 +391,7 @@ Me.dockingManager1.LoadDesignerDockState()
 
 {% endtabs %}
 
-GetSerializedControls - Calling the GetSerializedControls method will return the serialized control collection enumerator in the specified serializer. This can be done through code as follows.
+GetSerializedControls - Calling the GetSerializedControls method will return the serialized control collection enumerator in the specified serializer.
 
 
 <table>

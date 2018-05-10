@@ -15,7 +15,7 @@ This can be done programmatically using the code snippet given below.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private void tabControlAdv1_DrawItem(object sender, Syncfusion.Windows.Forms.Tools.DrawTabEventArgs drawItemInfo)
@@ -82,7 +82,7 @@ private void tabControlAdv1_DrawItem(object sender, Syncfusion.Windows.Forms.Too
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub tabControlAdv1_DrawItem(sender As Object, drawItemInfo As Syncfusion.Windows.Forms.Tools.DrawTabEventArgs)
 

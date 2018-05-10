@@ -8,11 +8,11 @@ documentation: ug
 ---
 # How to identify the current selected date at run time?
 
-The MonthCalendarAdv gives an array of selected dates. So if u want to get only one date choose the first element from that array. Also set AllowMultipleSelection property to false. The DateSelected Event is fired after the user had completed the selection.
+The MonthCalendarAdv gives an array of selected dates. If you want to get only one date, choose the first element from that array. Also, set AllowMultipleSelection property to `false`. The DateSelected Event is fired after the user had completed the selection.
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 private void monthCalendarAdv1_DateSelected(object sender,EventArgs e)
 
@@ -27,8 +27,9 @@ private void monthCalendarAdv1_DateSelected(object sender,EventArgs e)
 
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 Private Sub monthCalendarAdv1_DateSelected(ByVal sender As Object, ByVal e As EventArgs)
@@ -42,5 +43,8 @@ MessageBox.Show("Selected Date: " + monthCalendarAdv1.SelectedDates[0].ToString(
 End Sub
 
 
-{% endhighlight  %}
-![](FAQ_images/Overview_img179.jpeg) 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](FAQ_images/Overview_img179.jpeg)

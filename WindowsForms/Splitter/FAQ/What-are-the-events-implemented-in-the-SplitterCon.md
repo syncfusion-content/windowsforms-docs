@@ -11,7 +11,7 @@ documentation: ug
 
 The following listed events are implemented in the SplitterControl.
 
-Events Table
+Events table
 
 <table>
 <tr>
