@@ -47,9 +47,10 @@ Gets or sets the Office2007 theme.</td></tr>
 </table>
 
 
-The following code example is to demonstrate the same.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 //To disable the Aero theme
 
@@ -79,9 +80,9 @@ MessageBoxAdv.MetroColorTable = new MetroStyleColorTable();
 
 MessageBoxAdv.Office2007Theme = Office2007Theme.Blue;
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 'To disable the Aero theme
 
@@ -111,5 +112,7 @@ MessageBoxAdv.MetroColorTable = New MetroStyleColorTable
 
 MessageBoxAdv.Office2007Theme = Office2007Theme.Blue
 
-{% endhighlight  %}
+{% endhighlight %}
+
+{% endtabs %}
 

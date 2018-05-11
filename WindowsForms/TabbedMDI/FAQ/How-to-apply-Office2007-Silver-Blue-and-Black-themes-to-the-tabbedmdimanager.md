@@ -11,7 +11,9 @@ documentation: ug
 
 You can apply Office2007ColorScheme when TabControl is added as follows.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -25,7 +27,7 @@ private void tabbedMDIManager_TabControlAdded(object sender, TabbedMDITabControl
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -39,3 +41,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}

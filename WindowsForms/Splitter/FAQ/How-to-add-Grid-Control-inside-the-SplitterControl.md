@@ -7,11 +7,13 @@ control: Splitter
 documentation: ug
 ---
 
-# How to add Grid Control inside the SplitterControl
+# How to add Grid control inside the SplitterControl
 
 The SplitterControl can be embedded with Grid control and the following code example allows addition of a Grid inside the SplitterControl.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -27,7 +29,7 @@ this.splitterControl1.Controls.Add(this.gridControl1);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -43,3 +45,4 @@ Me.splitterControl1.Controls.Add(Me.gridControl1)
 
 {% endhighlight %}
 
+{% endtabs %}

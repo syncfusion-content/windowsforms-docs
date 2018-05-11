@@ -21,7 +21,7 @@ Lesson 1 will show you how to load HTML from any source and display it as an HTM
 
 ## Creating an HTML layout
 
-In Lesson 2 you will learn how to lay out your user interfaces using HTMLUI. You will also learn how to let the users interact with the various HTML elements from within your application code.
+In Lesson 2 you will learn how to lay out your user interfaces using HTMLUI. You can also learn how to let users interact with the various HTML elements from your application code.
 
 
 

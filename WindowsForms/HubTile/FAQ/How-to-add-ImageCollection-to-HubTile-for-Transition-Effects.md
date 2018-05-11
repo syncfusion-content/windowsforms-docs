@@ -7,7 +7,7 @@ control: HubTile
 documentation: ug
 ---
 
-# How to add ImageCollection to HubTile for Transition Effects?
+# How to add ImageCollection to HubTile for transition effects?
 
 
 
@@ -33,7 +33,9 @@ You can achieve this requirement using HubTile ImageList and ImageListAdv proper
 
 This is configured either through code or form designer.
 
-#### Through Code
+#### Through code
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -47,7 +49,7 @@ this.HubTile1.ImageList = this.ImageList;
 
  {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
  
 
 Me.HubTile1.ImageListAdv = Me.ImageListAdv
@@ -58,7 +60,9 @@ Me.HubTile1.ImageList = Me.ImageList
 
 {% endhighlight %}
 
-#### Through Designer
+{% endtabs %}
+
+#### Through designer
 
 The following screenshot displays the ImageListAdv property.
 

@@ -7,7 +7,7 @@ control: HubTile
 documentation: ug
 ---
 
-# What are the Events available in HubTile and purpose of the Events?
+# What are the events available in HubTile and purpose of the events?
 
 The Events available in HubTile are as follows,
 
@@ -21,11 +21,11 @@ The Events available in HubTile are as follows,
 
 *TextChanged Event
 
-## BeforeTransition Event
+## BeforeTransition event
 
 This Event is triggered before the Image and Rotation Transition occur in HubTile.
 
-### Event Data
+### Event data
 
 BeforeTransitionEventArgs contain the following members that provide information specific to this Event.
 
@@ -59,7 +59,7 @@ This property returns the Rotate transition direction of the HubTile.</td>
 </tr>
 </Table>
 
-
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -81,7 +81,7 @@ This property returns the Rotate transition direction of the HubTile.</td>
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub HubTile1_BeforeTransition(sender As System.Object, e As BeforeTransitionEventArgs) Handles HubTile1.BeforeTransition
 
@@ -97,12 +97,13 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## TransitionCompleted Event
+## TransitionCompleted event
 
 This Event is triggered after the image Transition and Rotation Transition are completed in HubTile.
 
-### Event Data
+### Event data
 
 TransitionCompletedEventArgs contain the following members that provide information specific to this Event.
 
@@ -131,7 +132,7 @@ TransitionCompletedEventArgs contain the following members that provide informat
 </tr>
 </Table>
 
-
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -149,9 +150,9 @@ e.RotateTransition = TileFlipDirection.Horizontal;
 
    }
 
- {% endhighlight %}
+{% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub HubTile1_TransitionCompleted(sender As System.Object, e As TransitionCompletedEventArgs) Handles HubTile1.TransitionCompleted
 
@@ -167,12 +168,13 @@ Private Sub HubTile1_TransitionCompleted(sender As System.Object, e As Transitio
 	
 {% endhighlight %}
 
+{% endtabs %}
 
-## SelectionMarked Event
+## SelectionMarked event
 
 This Event is triggered once the HubTile is Selection marked.
 
-### Event Data
+### Event data
 
 SelectionMarker contains the following members that provide information specific to this Event.
 
@@ -190,7 +192,7 @@ SelectionMarker contains the following members that provide information specific
 </tr>
 </Table>
 
-	
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -204,7 +206,7 @@ private void HubTile1_HubTileSelectionMarked(object sender, SelectionMarkedEvent
 
  {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
 Private Sub HubTile1_SelectionMarked(sender As System.Object, e As SelectionMarkedEventArgs) Handles HubTile1.SelectionMarked
 
@@ -216,13 +218,16 @@ Private Sub HubTile1_SelectionMarked(sender As System.Object, e As SelectionMark
 
 End Sub
 
- {% endhighlight %}
+{% endhighlight %}
 
-## ZoomCompleted Event
+
+{% endtabs %}
+
+## ZoomCompleted event
 
 This Event is triggered after the HubTile image content is Zoomed In and Out.
 
-### Event Data
+### Event data
 
 ZoomCompleted contains the following members that provide information specific to this Event:
 
@@ -244,7 +249,7 @@ ZoomCompleted contains the following members that provide information specific t
 </tr>
 </Table> 
 	
- 
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -258,9 +263,9 @@ ZoomCompleted contains the following members that provide information specific t
 
         }
 
- {% endhighlight %}
+{% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
  
 
@@ -274,9 +279,13 @@ End Sub
 
 {% endhighlight %}
 
-#### TextChanged Event
+{% endtabs %}
+
+#### TextChanged event
 
 This Event raises when HubTile Title, Body, Footer, Banner Text are changed.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -292,7 +301,7 @@ private void  HubTile1_TextChanged(object sender, EventArgs e)
 
  {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
 
  
 
@@ -307,3 +316,5 @@ Private Sub HubTile1_TextChanged(sender As System.Object, e As System.EventArgs)
  End Sub
  
 {% endhighlight %}
+
+{% endtabs %}

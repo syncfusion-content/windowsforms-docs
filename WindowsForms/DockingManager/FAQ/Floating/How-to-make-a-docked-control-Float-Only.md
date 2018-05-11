@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to make a docked control Float Only?
+# How to make a docked control float only?
 
 The docked control can also be only floating and cannot be docked, by calling the `SetFloatOnly` method.
 
@@ -20,7 +20,7 @@ Description</th></tr>
 <tr>
 <td>
 SetFloatOnly</td><td>
-Make the docked control a float only control.{{ 'Ctrl' | markdownify }} - The control for which docking is enabled.{{ 'bFloating' | markdownify }} - Represents a boolean value, TRUE, to disabled docking.</td></tr>
+Make the docked control a float only control.{{ 'Ctrl' | markdownify }} - The control for which docking is enabled.{{ 'bFloating' | markdownify }} - Represents a Boolean value, `true`, to disabled docking.</td></tr>
 </table>
 
 {% tabs %}

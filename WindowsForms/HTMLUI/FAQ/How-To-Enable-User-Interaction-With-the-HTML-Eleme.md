@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Enable User Interaction With the HTML Elements
+# How to enable user interaction with the HTML elements
 
 The HTMLUI control supports a rich set of interactivity with the elements displayed. The HTML elements in the HTML document are accessed with the object variables of the respective classes.
 
@@ -15,9 +15,9 @@ HTMLUI control gives a free hand to the user in deciding each and every factor o
 
 The following snippet shows how the elements interact with each other on the execution of their respective events.
 
+{% tabs %}
 
-
-{% highlight html %}
+{% highlight HTML %}
 
 
 
@@ -41,7 +41,7 @@ The following snippet shows how the elements interact with each other on the exe
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -111,7 +111,7 @@ this.div.Children.Parent.Parent.InnerHTML = this.div.OuterHTML + "<p/><img src='
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -174,6 +174,8 @@ Me.div.Children.Parent.Parent.InnerHTML = Me.div.OuterHTML & "<p/><img src='HTML
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The button and the div elements are obtained. Events are declared for both the elements, and on clicking the button, the text inside the div element changes. When the text inside the div element is changed, an image element is appended to the div element. This shows how interactivity can be handled in HTMLUI.
 

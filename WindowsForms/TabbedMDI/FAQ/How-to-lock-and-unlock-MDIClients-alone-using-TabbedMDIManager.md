@@ -11,7 +11,7 @@ documentation: ug
 
 TabbedMDIManager has LockMDIClientUpdate() and UnLockMDIClientUpdate() methods to lock and unlock the MDIClients from updating.
 
-Methods Table
+Methods table
 
 <table>
 <tr>
@@ -28,8 +28,9 @@ UnlockMDIClientUpdate()</td><td>
 Unlocks the MDIClients alone</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -53,7 +54,7 @@ private void lockToolStripMenuItem_Click(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -75,3 +76,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}

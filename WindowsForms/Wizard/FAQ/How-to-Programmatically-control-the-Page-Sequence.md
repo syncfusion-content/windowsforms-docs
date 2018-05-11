@@ -7,21 +7,23 @@ control: Wizard
 documentation: ug
 ---
 
-# How to Programmatically control the Page Sequence?
+# How to programmatically control the page sequence?
 
 In many cases, the user will need to customize the order in which pages display. The Wizard control provides events for doing this.
 
 There are two ways to programmatically control the page sequence.
 
-## Example Scenario
+## Example scenario
 
 Say you have a three page wizard and there is a checkbox on the first page. If the checkbox is checked, you are on the first page, and you press the Next button, you require the wizard to skip the middle page and go directly to the last page. Likewise, if the checkbox is checked, you are on the last page, and you press the Back button, you need to skip the middle page and go back to the first page. If the checkbox is left unchecked, navigation using the buttons will move through all three pages.
 
-### Controlling Page Sequence with the Wizard Control
+### Controlling page sequence with the Wizard control
 
 * In the BeforeNext event handler, implement the below code, which will control the page sequence with the wizard control.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -49,7 +51,7 @@ private void wizardControl1_BeforeNext(object sender, CancelEventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -69,9 +71,13 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * In the Back button click event handler, implement this code. 
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -87,7 +93,7 @@ this.wizardControl1.SelectedPage.NextPage=this.wizardControlPage1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -103,16 +109,20 @@ End Sub
 
 {% endhighlight %}
 
-With those two events in place on the wizard, the wizard can now skip the middle page based on whether the checkbox is checked. 
+{% endtabs %}
 
-### Controlling Page Sequence with a Wizard Page 
+With those two events in place on the wizard, the wizard can now skip the middle page based on whether the checkbox is checked.
 
-Page sequencing may also be controlled in the NextClick and BackClick events of Wizard Control Page. 
+### Controlling page sequence with a Wizard page
 
-* When one of the above events is implemented for a Wizard Control Page, the associated event in the Wizard control will not fire if the WizardPage is currently selected. 
+Page sequencing may also be controlled in the NextClick and BackClick events of Wizard Control Page.
+
+* When one of the above events is implemented for a Wizard Control Page, the associated event in the Wizard control will not fire if the WizardPage is currently selected.
 * In the NextClick event handler, you implement this code:
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -132,7 +142,7 @@ this.wizardControlPage1.NextPage=this.wizardControlPage3;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -148,9 +158,13 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * In the BackClick event handler, implement this code.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -170,7 +184,7 @@ private void wizardControlPage3_BackClick(object sender, System.EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -185,6 +199,8 @@ Private Sub wizardControlPage3_BackClick(ByVal sender As Object, ByVal e As Syst
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
 With those two events in place on the wizard page, the wizard can now skip the middle page based on whether the checkbox is checked.
 

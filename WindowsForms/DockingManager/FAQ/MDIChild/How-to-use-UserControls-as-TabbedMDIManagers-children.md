@@ -16,7 +16,7 @@ documentation: ug
 
 
 
-N> Set the `IsMdIContainer` property of the form to true. Otherwise this will not work.
+N> Set the `IsMdIContainer` property of the form to `true`. Otherwise this will not work.
 
 {% tabs %}
 

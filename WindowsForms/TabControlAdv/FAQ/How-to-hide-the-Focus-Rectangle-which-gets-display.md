@@ -7,19 +7,19 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to hide the Focus Rectangle which gets displayed on the selected Tab?
+# How to hide the focus rectangle which gets displayed on the selected tab?
 
-The focus rectangle can be hidden by setting the `FocusOnTabClick` property to False. This can be done programmatically using the code snippet given below.
+The focus rectangle can be hidden by setting the `FocusOnTabClick` property to `false`. This can be done programmatically using the code snippet given below.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.FocusOnTabClick = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.tabControlAdv1.FocusOnTabClick = False
 

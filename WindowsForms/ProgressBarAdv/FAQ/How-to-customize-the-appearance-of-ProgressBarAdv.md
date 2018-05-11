@@ -11,7 +11,9 @@ documentation: ug
 
 The ProgressBarAdv control appearance can be customized as like in Win 8 application. You can achieve this using the following code example.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
             this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Metro;
 
@@ -27,7 +29,7 @@ The ProgressBarAdv control appearance can be customized as like in Win 8 applica
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
  
              Me.ProgressBarAdv1.ProgressStyle = ProgressBarStyles.Metro
 
@@ -44,5 +46,6 @@ The ProgressBarAdv control appearance can be customized as like in Win 8 applica
 
 {% endhighlight %}
 
+{% endtabs %}
 
-![](Overview_images/Overview_img29.png) 
+![](Overview_images/Overview_img29.png)

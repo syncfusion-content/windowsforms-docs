@@ -11,7 +11,9 @@ documentation: ug
 
 You should handle theTabControlAdded event handler and use ItemSize property to change the tab size.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -31,7 +33,7 @@ args.TabControl.ItemSize = new Size(40, 40);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -49,3 +51,5 @@ End Sub
 
 
 {% endhighlight %}
+
+{% endtabs %}

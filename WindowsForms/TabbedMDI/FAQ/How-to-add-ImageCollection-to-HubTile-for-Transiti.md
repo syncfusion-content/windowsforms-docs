@@ -7,11 +7,11 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to add ImageCollection to HubTile for Transition Effects?
+# How to add ImageCollection to HubTile for transition effects?
 
 You can achieve this requirement using HubTileImageList and ImageListAdv properties.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -29,9 +29,11 @@ This property holds to ImageList instance that holds image collection for HubTil
 </table>
 This is configured either through code or form designer. 
 
-Through Code
+## Through code
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -45,7 +47,7 @@ this.HubTile1.ImageList = this.ImageList;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -57,7 +59,9 @@ Me.HubTile1.ImageList = Me.ImageList
 
 {% endhighlight %}
 
-## Through Designer
+{% endtabs %}
+
+## Through designer
 
 The following screenshot displays the ImageListAdv property.
 

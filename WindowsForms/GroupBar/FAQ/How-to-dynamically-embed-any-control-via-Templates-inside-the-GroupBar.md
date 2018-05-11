@@ -6,9 +6,11 @@ platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# How to dynamically embed any control via Templates inside the GroupBar
+# How to dynamically embed any control via Templates inside the GroupBar?
 
 The following code snippet shows how to dynamically add a Label control to the Groupbar Item using Templates.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -37,7 +39,7 @@ item.TemplateID="templateId";
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 
 ' Create a label or any control that you want to add as a template. 
@@ -63,3 +65,5 @@ Private item As GroupBarItem = CType(Groupbar1.FindGroupItemByID("child1"), Grou
 Private item.TemplateID="templateId" 
 
 {% endhighlight %}
+
+{% endtabs %}

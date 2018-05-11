@@ -7,15 +7,15 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Enable the HTMLUI Control To Load HTML Documents That Have Been Dragged Onto the Control?
+# How to enable the HTMLUI control to load HTML documents that have been dragged onto the control?
 
-In order to enable the HTMLUI control to load HTML documents that have been dragged onto the control, you have to set the AllowDrop property of the HTMLUI control to True. This property helps in supporting the drag-and-drop operation in the HTMLUI control.
+In order to enable the HTMLUI control to load HTML documents that have been dragged onto the control, you have to set the AllowDrop property of the HTMLUI control to `true`. This property helps in supporting the drag-and-drop operation in the HTMLUI control.
 
 During the drag-and-drop operation, the file name of the document along with the location is collected, and when the mouse button is released, the specified document is loaded from the mentioned location through the LoadHTML method of the HTMLUI control.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -73,7 +73,7 @@ this.htmluiControl1.LoadHTML(fileName);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -126,3 +126,5 @@ Next fileName
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

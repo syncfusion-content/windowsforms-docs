@@ -7,13 +7,15 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Access the Inner HTML Text Of the Current HTML Element In the HTMLUI Control?
+# How to access the inner HTML text of the current HTML element in the HTMLUI control?
 
 You can access the inner HTML text of the current HTML element in the HTMLUI control by using the InnerHTML property of the HTMLUI control. This property also allows access to the child elements of the HTML elements.
 
 The following HTML document contains a div element. The code snippet shows how the inner text of the element is accessed and displayed in the output at run time.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight HTML %}
 
 
 <!-- HTML Document -->
@@ -36,7 +38,7 @@ system - Direct-Trac.
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -48,7 +50,7 @@ MessageBox.Show(div1.InnerHTML.ToString());
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -61,4 +63,6 @@ Me.tab("div1"), Nothing), DIVElementImpl)
 MessageBox.Show(div1.InnerHTML.ToString())
 
 {% endhighlight %}
+
+{% endtabs %}
 

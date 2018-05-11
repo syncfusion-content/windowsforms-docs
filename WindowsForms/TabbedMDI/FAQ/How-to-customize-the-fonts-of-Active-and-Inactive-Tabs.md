@@ -7,11 +7,13 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to customize the fonts of Active and Inactive tabs
+# How to customize the fonts of active and inactive tabs
 
 Using the TabControlAdded event, the fonts of active and inactive tabs can be customized.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -33,7 +35,7 @@ args.TabControl.Font = new Font ("Italic", 12);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -53,3 +55,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}

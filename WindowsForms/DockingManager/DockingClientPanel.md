@@ -11,11 +11,11 @@ documentation: ug
 
 # DockingClientPanel
 
-A premise of any docking windows implementation is the existence of a client window the bounds of which vary at run-time as windows get docked or undone. This paradigm is extremely well suited for MDI type forms where the MDIClient window gets resized / relocated in synchronization with changes in the docking windows layout. 
+A premise of any docking windows implementation is the existence of a client window the bounds of which vary at run-time as windows get docked or undone. This paradigm is extremely well suited for MDI type forms where the MDIClient window gets resized/relocated in synchronization with changes in the docking windows layout.
 
-Child controls located within the MDIClient window are thus always assured of a static spatial relationship with the parent container. 
+Child controls located within the MDIClient window are thus always assured of a static spatial relationship with the parent container.
 
-Non-MDI forms, however, do not have any such client window and all non-dockable statically positioned controls risk being clipped by windows that are docked in their proximity. 
+Non-MDI forms, however, do not have any such client window and all non-dockable statically positioned controls risk being clipped by windows that are docked in their proximity.
 
 The Essential Tools DockingClientPanel control helps overcome this limitation by providing an auto-resized client surface on which a form's non-dockable controls may be located.
 
@@ -23,22 +23,22 @@ The Essential Tools DockingClientPanel control helps overcome this limitation by
 
 N> The DockingClientPanel control is intended only for use with forms that do not have the MDIContainer style set.
 
-## Using the DockingClientPanel Control
+## Using the DockingClientPanel control
 
-The following sequence lists the steps involved in setting up a docking layout on a non-MDIContainer form using the DockingClientPanel. The DockingClientPanel is used here because in addition to the docking windows, the host form also contains several non-dockable controls that require a container with static relative bounds for implementing positioning and layout management. 
+The following sequence lists the steps involved in setting up a docking layout on a non-MDIContainer form using the DockingClientPanel. The DockingClientPanel is used here because in addition to the docking windows, the host form also contains several non-dockable controls that require a container with static relative bounds for implementing positioning and layout management.
 
 1. Add the DockingManager to the form and apply the `EnableDocking on dockingManager` property for those controls that need to be set as docking windows.
 2. Select the DockingClientPanel control from the designer tool box and drop it onto the form hosting the DockingManager. Size the control so that its bounds are sufficient to accommodate any non-dockable child controls that may already be present on the form.
 3. If any non-dockable controls are present on the form, then drag-and-drop these controls onto the DockingClientPanel instance.
-4. Set the DockingClientPanel.SizeToFit property to be true. Turning on the SizeToFit property will force the DockingClientPanel to start interacting with the Essential Tools docking architecture and the control will automatically be resized / repositioned to occupy the form's client bounds, left unoccupied by the docking windows. 
+4. Set the DockingClientPanel.SizeToFit property to be `true`. Turning on the SizeToFit property will force the DockingClientPanel to start interacting with the Essential Tools docking architecture and the control will automatically be resized/repositioned to occupy the form's client bounds, left unoccupied by the docking windows.
 5. Set the `BorderStyle` property to get the 3D or fixed single effect to the docking client panel control.
-6. The DockingClientPanel will now function as a proxy for the form's client surface and all controls originally intended to be placed on the form should henceforth be located on the DockingClientPanel; any anchoring / layout features for the child controls should be set relative to the DockingClientPanel. 
-7. To add controls directly to the form, the `SizeToFit` property can temporarily be turned off within the designer and the form resized to expose its surface. At run-time, the `SizeToFit` property is always enabled. 
+6. The DockingClientPanel will now function as a proxy for the form's client surface and all controls originally intended to be placed on the form should henceforth be located on the DockingClientPanel; any anchoring/layout features for the child controls should be set relative to the DockingClientPanel.
+7. To add controls directly to the form, the `SizeToFit` property can temporarily be turned off within the designer and the form resized to expose its surface. At run-time, the `SizeToFit` property is always enabled.
 
 <table>
 <tr>
 <th>
-DockingClientPanel Property</th><th>
+DockingClientPanel property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -153,14 +153,14 @@ Me.dockingClientPanel1.ResumeLayout(False)
 
 The DockingClientPanel can be given an attractive look and feel using the appearance and size properties. These properties are discussed in detail below. This section also gives an idea about the scrolling feature available for the DockingClientPanel.
 
-### Background and Foreground Settings
+### Background and foreground settings
 
 Background color of the control can be set using the `BackColor` property. Background image for the control can be specified using `BackgroundImage` property and image layout is set through `BackgroundImageLayout` property. Below are the code snippets to set these properties programmatically.
 
 <table>
 <tr>
 <th>
-DockingClientPanel Property</th><th>
+DockingClientPanel property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -207,7 +207,7 @@ The font used to display the text in the control is set through Font property an
 <table>
 <tr>
 <th>
-DockingClientPanel Property</th><th>
+DockingClientPanel property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -256,7 +256,7 @@ When the control contents are larger than its visible area, the scroll bars will
 <table>
 <tr>
 <th>
-DockingClientPanel Property</th><th>
+DockingClientPanel property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -301,14 +301,14 @@ Me.dockingClientPanel1.AutoScrollMinSize = New System.Drawing.Size(1, 1)
 
 
 
-## Sizing Properties
+## Sizing properties
 
 AutoSize property will allow the control to automatically size itself to fit its contents. The resize mode can be specified using `AutoSizeMode` property.
 
 <table>
 <tr>
 <th>
-DockingClientPanel Property</th><th>
+DockingClientPanel property</th><th>
 Description</th></tr>
 <tr>
 <td>
