@@ -262,7 +262,7 @@ To customize the dates, use the following code example:
 This support is used to display additional information such as text or image about a cell in calendar in form of tooltip.The `ToolTipOpeningEventArgs` provides the following data for the `ToolTipOpening` event of the calendar. All the [customization with tooltip](/windowsforms/SfToolTip/Appearance) will be reflected in tooltip of cell in SfCalendar.
 
 
-* ToolTipinfo: This option helps to set more information such as text or image about cell in calendar.
+* ToolTipInfo: This option helps to set more information such as text or image about cell in calendar.
 
 * Value: Identifies the date value of the cell to handle tooltip in the calendar.
 
@@ -278,7 +278,7 @@ This support is used to display additional information such as text or image abo
 
 * Handled: This option is used to handle the tooltip opening event. It will restrict to visibility of tooltip, and you can set own text or image as tooltip.
 
-* ViewType: This option helps to represents the viewtype of calendar, whether it is month view or year view or decade view or century view.
+* ViewType: This option helps to represents the ViewType of calendar, whether it is month view or year view or decade view or century view.
 
 
 {% tabs %}
@@ -384,7 +384,7 @@ This support is used to highlight or customize dates to mention some special dat
 
 * Handled: This option is used to handle the draw cell event. It will restrict to draw default text, and you can draw own text within the bounds of the cell.
 
-* ViewType: This option helps to represents the viewtype of calendar, whether it is month view or year view or decade view or century view.
+* ViewType: This option helps to represents the ViewType of calendar, whether it is month view or year view or decade view or century view.
 
 
 The following code example illustrates how to customize the cell on-demand:
