@@ -1609,7 +1609,7 @@ Me.editControl1.ShowCodeSnippets()
 
 **Border settings**
 
-Border can be set for the active code snippets by using the `DrawCodeSnippetBorder` property of the EditControl. And also we can set the size of CodeSnippet popup window by using the `CodeSnipptSize ` property of EditControl.
+Border can be set for the active code snippets by using the `DrawCodeSnippetBorder` property of the EditControl. And also we can set the size of CodeSnippet popup window by using the `CodeSnipptSize` property of EditControl.
 
 {% tabs %}
 
