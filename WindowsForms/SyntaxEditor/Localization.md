@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | WindowsForms | Syncfusion
-description: localization
+title: Localization 
+description: This section explains about the localization support in EditControl.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -230,3 +230,7 @@ End Function
 {% endtabs %}
 
 ![](Localization-and-Globalization_images\Localization-and-Globalization_img5.png)
+
+A sample which demonstrates the above features is available in the below sample installation path.
+
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Localization
