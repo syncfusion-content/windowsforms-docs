@@ -556,6 +556,8 @@ Error lexems can be added to the language by declaring a format names Error and 
 <lexem BeginBlock="#else" Type="Error" Priority="-10" />
 </lexems>
 
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
+
 {% endhighlight %}
 
 ### Splits
@@ -1032,7 +1034,7 @@ Font color of newly created format in the specified language can be customized u
 
 {% highlight C# %}
 
- formatMethod.Font = new Font("Garamond", 14);
+ formatMethod.Font = new Font("Garamond", 17);
 
  formatMethod.FontColor = Color.Red;
 
@@ -1041,7 +1043,7 @@ Font color of newly created format in the specified language can be customized u
 
 {% highlight VB %}
 
-formatMethod.Font = new Font("Garamond", 14)
+formatMethod.Font = new Font("Garamond", 17)
 
  formatMethod.FontColor = Color.Red
 
@@ -1049,38 +1051,7 @@ formatMethod.Font = new Font("Garamond", 14)
 
 {% endtabs %}
 
-### Color configuration
-
-Color configuration for custom formats can be defined using built-in color properties such as FontColor, BackColor, ForeColor, LineColor and BorderColor.
-
-{% tabs %}
-
-{% highlight C# %}
-
- formatMethod.FontColor = Color.IndianRed;
-
-formatMethod.BackColor = Color.Yellow;
-
-formatMethod.LineColor = Color.Yellow;
-
-formatMethod.BorderColor = Color.Red;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-formatMethod.FontColor = Color.IndianRed
-
-formatMethod.BackColor = Color.Yellow
-
-formatMethod.LineColor = Color.Yellow
-
-formatMethod.BorderColor = Color.Red
-
-{% endhighlight %}
-
-{% endtabs %}
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
 
 ### Lexem configuration
 
@@ -1092,42 +1063,22 @@ Below code is an example for creating a lexem and adding it to language of editc
 
 {% highlight C# %}
 
-ConfigLexem configLex = new ConfigLexem("<%", "%>", FormatType.Custom, false);
+ConfigLexem stuff = new ConfigLexem("stuff", "", FormatType.Custom, false);
 
- // Defining lexem attributes.
+stuff.FormatName = "CodeBehind";
 
- configLex.IsBeginRegex = false;
-
- configLex.IsEndRegex = false;
-
- configLex.ContinueBlock = ".+";
-
- configLex.IsContinueRegex = true;
-
- configLex.FormatName = "CodeBehind";
-
- this.editControl1.Language.Lexems.Add(configLex);
+this.editControl1.Language.Lexems.Add(stuff);
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Dim configLex As ConfigLexem  = new ConfigLexem("<%", "%>", FormatType.Custom, false)
+Dim stuff As ConfigLexem  = new ConfigLexem("stuff", "", FormatType.Custom, false)
 
- // Defining lexem attributes.
+stuff.FormatName = "CodeBehind"
 
- configLex.IsBeginRegex = false
-
- configLex.IsEndRegex = false
-
- configLex.ContinueBlock = ".+"
-
- configLex.IsContinueRegex = true
-
- configLex.FormatName = "CodeBehind"
-
- Me.editControl1.Language.Lexems.Add(configLex)
+Me.editControl1.Language.Lexems.Add(stuff)
 
 {% endhighlight %}
 
@@ -1147,11 +1098,23 @@ keyword.FontColor = Color.Blue;
 
 keyword.Font = new Font("Garamond", 12);
 
-ConfigLexem Class = new ConfigLexem("Class", "",FormatType.Custom,false);
+ ConfigLexem car = new ConfigLexem("car", "", FormatType.Custom, false);
+            
+car.FormatName = "keyword";
 
-Class.FormatName = "keyword";
+ this.editControl1.Language.Lexems.Add(car);
 
-this.editControl1.Language.Lexems.Add(Class);
+ ConfigLexem cdr = new ConfigLexem("cdr", "", FormatType.Custom, false);
+
+cdr.FormatName = "keyword";
+
+this.editControl1.Language.Lexems.Add(cdr);
+
+ConfigLexem cons = new ConfigLexem("cons", "", FormatType.Custom, false);
+
+cons.FormatName = "keyword";
+
+this.editControl1.Language.Lexems.Add(cons);
 
 {% endhighlight %}
 
@@ -1164,19 +1127,33 @@ keyword.FontColor = Color.Blue
 
 keyword.Font = new Font("Garamond", 12)
 
-Dim Class As ConfigLexem  = new ConfigLexem("Class", "",FormatType.Custom,false)
+Dim car As ConfigLexem  = new ConfigLexem("car", "",FormatType.Custom,false)
 
-Class.FormatName = "keyword"
+car.FormatName = "keyword"
 
-Me.editControl1.Language.Lexems.Add(Class)
+Me.editControl1.Language.Lexems.Add(car)
+
+Dim cdr As ConfigLexem  = new ConfigLexem("cdr", "",FormatType.Custom,false)
+
+cdr.FormatName = "keyword"
+
+Me.editControl1.Language.Lexems.Add(cdr)
+
+Dim cons As ConfigLexem  = new ConfigLexem("cons", "",FormatType.Custom,false)
+
+cons.FormatName = "keyword"
+
+Me.editControl1.Language.Lexems.Add(cons)
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img19.png)
+
 ### Operators configuration
 
-Creating operators for custom language is similar to that of keyword. Below code is an example for creating a new format object named Operators is created using ISnippetFormat Interface, as lexems "+" and "=" created with ConfigLexem class with formatName as Operators.
+Creating operators for custom language is similar to that of keyword. Below code is an example for creating a new format object named Operators is created using ISnippetFormat Interface, as lexems "#" and "(" created with ConfigLexem class with formatName as Operators.
 
 {% tabs %}
 
@@ -1184,19 +1161,25 @@ Creating operators for custom language is similar to that of keyword. Below code
 
 ISnippetFormat Operators = this.editControl1.Language.Add("Operators");
 
- Operators.FontColor = Color.Red;
+Operators.FontColor = Color.Red;
 
- ConfigLexem equalTo = new ConfigLexem("=","",FormatType.Custom,false);
+ConfigLexem open = new ConfigLexem("(","",FormatType.Custom,false);
 
- equalTo.FormatName = "Operators";
+open.FormatName = "Operators";
 
- this.editControl1.Language.Lexems.Add(equalTo);
+this.editControl1.Language.Lexems.Add(open);
 
- ConfigLexem Add = new ConfigLexem("+", "", FormatType.Custom, false);
+ConfigLexem close = new ConfigLexem("", ")", FormatType.Custom, false);
 
- Add.FormatName = "Operators";
+close.FormatName = "Operators";
 
- this.editControl1.Language.Lexems.Add(Add);
+this.editControl1.Language.Lexems.Add(close);
+
+ConfigLexem Symbol = new ConfigLexem("#", "", FormatType.Custom, false);
+
+Symbol.FormatName = "Operators";
+
+this.editControl1.Language.Lexems.Add(Symbol);
 
 {% endhighlight %}
 
@@ -1207,28 +1190,70 @@ Dim Operators As ISnippetFormat  = this.editControl1.Language.Add("Operators");
 
 Operators.FontColor = Color.Red
 
-Dim equalTo As ConfigLexem  = new ConfigLexem("=","",FormatType.Custom,false)
+Dim open As ConfigLexem  = new ConfigLexem("(","",FormatType.Custom,false)
 
-equalTo.FormatName = "Operators"
+open.FormatName = "Operators"
 
-Me.editControl1.Language.Lexems.Add(equalTo)
+Me.editControl1.Language.Lexems.Add(open)
 
-Dim Add As ConfigLexem  = new ConfigLexem("+", "", FormatType.Custom, false)
+Dim close As ConfigLexem  = new ConfigLexem(")", "", FormatType.Custom, false)
 
-Add.FormatName = "Operators"
+close.FormatName = "Operators"
 
-Me.editControl1.Language.Lexems.Add(Add)
+Me.editControl1.Language.Lexems.Add(close)
+
+Dim Symbol As ConfigLexem  = new ConfigLexem("$", "", FormatType.Custom, false)
+
+Symbol.FormatName = "Operators"
+
+Me.editControl1.Language.Lexems.Add(Symbol)
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img20.png)
+
+### Color configuration
+
+Color configuration for custom formats can be defined using built-in color properties such as FontColor, BackColor, ForeColor, LineColor and BorderColor.
+
+{% tabs %}
+
 {% highlight C# %}
 
- 
+formatMethod.Font = new Font("Garamond", 10);
+
+formatMethod.FontColor = Color.Red;
+
+formatMethod.BorderStyle = FrameBorderStyle.Solid;
+
+formatMethod.BackColor = Color.Yellow;
+
+formatMethod.BorderColor = Color.Green;
+
 {% endhighlight %}
 
-### Error words highlighting
+
+{% highlight VB %}
+
+formatMethod.Font = new Font("Garamond", 10)
+
+formatMethod.FontColor = Color.Red
+
+formatMethod.BorderStyle = FrameBorderStyle.Solid
+
+formatMethod.BackColor = Color.Yellow
+
+formatMethod.BorderColor = Color.Green
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img18.png)
+
+#### Error words highlighting
 
 Error lexems can be added to the language by declaring a format names Error and it can be highlighted using underlines. Below code is an simple example for declaring a misspelled lexem as error and highlight them.
 
@@ -1283,7 +1308,7 @@ Splits contain a list of expressions that must be treated as one word. “=” a
 
 You can combine multiple keywords as a single keyword. To configure the splits, specify the required word in the split section.
 
-For example: `Class` is Keyword in the EditControl. By using the Splits concept in the EditControl, you can ignore this Keyword when it is preceded with a Dot. When .Class is loaded in the EditControl, Class is not highlighted as keyword. 
+For example: `car` is Keyword in the EditControl. By using the Splits concept in the EditControl, you can ignore this Keyword when it is preceded with a Dot. When .car is loaded in the EditControl, car is not highlighted as keyword. 
 
 {% tabs %}
 
@@ -1293,7 +1318,7 @@ For example: `Class` is Keyword in the EditControl. By using the Splits concept 
 
 Split split = new Split();
 
-split.Text = "Class";
+split.Text = "car";
 
 this.editControl1.Language.Splits.Add(split);
 
@@ -1306,7 +1331,7 @@ this.editControl1.Language.Splits.Add(split);
 
 Dim split As  Split  = new Split();
 
-split.Text = "Class";
+split.Text = "car";
 
 Me.editControl1.Language.Splits.Add(split)
 
@@ -1349,7 +1374,7 @@ File extension associated with the custom language can be added with the help of
 
 // Adding the necessary extension definitions to the current language's Extensions collection.
 
-this.editControl1.Language.Extensions.Add("aspx");
+this.editControl1.Language.Extensions.Add("lisp");
 
 {% endhighlight %}
 
@@ -1358,7 +1383,7 @@ this.editControl1.Language.Extensions.Add("aspx");
 
 ' Adding the necessary extension definitions to the current language's Extensions collection.
 
-Me.editControl1.Language.Extensions.Add("aspx")
+Me.editControl1.Language.Extensions.Add("lisp")
 
 {% endhighlight %}
 
