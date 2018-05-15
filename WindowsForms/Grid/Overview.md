@@ -1,3 +1,12 @@
+---
+layout: post
+title: Syncfusion Essential Windows Forms
+description: This section explains the GridControl.
+platform: windowsforms
+control: GridControl
+documentation: ug
+---
+
 ## Overview
 
 The GridControl is a cell-oriented grid that contains own data and does not need to be bound to the data source. It can be easily customized down to the cell level.   It can be used in a virtual manner where the data is provided on-demand in real time, or it can be used in a way that the Grid control maintains the data with its own internal structures. The grid control supports frozen rows and columns, Excel-like formulas, covered cells, various cell-control types, copy and paste, both row selections and cell-range selections, hidden rows and columns, and virtually an unlimited number of rows and columns.
