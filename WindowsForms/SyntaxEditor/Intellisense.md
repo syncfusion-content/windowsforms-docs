@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Intellisense | WindowsForms | Syncfusion
-description: intellisense
+title: Intellisense 
+description: This section explains about the intellisense functionalities in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -9,11 +9,13 @@ documentation: ug
 
 # Intellisense
 
-EditControl provides Intellisense pop-up capabilities to add content easily, as like in Microsoft Visual Studio Code Editor. 
+EditControl provides Intellisense pop-up capabilities to add content easily, as like in Microsoft Visual Studio Code Editor. Intellisense pop-up that displays a list of code completion options to speed up the process of coding applications by reducing typos and other common mistakes.
 
-## Configure Intellisense 
+## Configure intellisence popup
 
-In EditControl, `ContextChoice` support allows you to create pop-ups for displaying a list of options that are used to complete what the user is typing. This feature is modeled based on the List Members intellisense feature of Visual Studio, and is very convenient when editing programming languages. For example, in C# or VB.NET, when the . (period) character is typed after a class instance, a pop-up containing all the members of the class gets displayed. As you type in the editor, the list automatically changes selection to synchronize with the text that has been entered. You can also autocomplete the word by using the UP/DOWN ARROW keys to choose the Context Choice item and pressing the TAB key. The ContextChoice pop-up can be dismissed by pressing the ESC key.
+In EditControl, `ContextChoice` support allows you to create pop-ups for displaying a list of options that are used to complete what the user is typing. When the . (period) character is typed after a class instance, a pop-up containing all the members of the class gets displayed. 
+
+You can also autocomplete the word by using the UP/DOWN ARROW keys to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
 
 ![](Intellisense-images/Intellisense_img1.png)
 
@@ -29,7 +31,7 @@ The ContextChoice displaying characters are specified in the configuration file 
 
 The preceding code has to be placed within the <lexems> section of the configuration file.
 
-The `AutoCompleteSingleLexem` property indicates whether the ContextChoice list gets auto completed when a single lexem remains in the list.
+`AutoCompleteSingleLexem` property indicates whether the ContextChoice list gets auto completed when a single lexem remains in the list.
 
 {% tabs %}
 
@@ -48,9 +50,9 @@ Me.editControl1.AutoCompleteSingleLexem = True
 
 {% endtabs %}
 
-**Populating the ContextChoice list items**
+### Populate intellisence popup
 
-The ContextChoice list is populated by handling the `ContextChoiceOpen` event of the EditControl, and adding items to the Items collection associated with the `IContextChoiceController` object.
+ContextChoice list is populated by handling the `ContextChoiceOpen` event of the EditControl, and adding items to the Items collection associated with the `IContextChoiceController` object.
 
 <table>
 <tr>
@@ -72,13 +74,12 @@ private void editControl1_ContextChoiceOpen(Syncfusion.Windows.Forms.Edit.Interf
 
 // Add items to the Items collection associated with the IContextChoiceController object.
 
-controller.Items.Add("Method", "Method", this.editControl1.ContextChoiceController.Images["Image0"]);
-controller.Items.Add("FindText", "FindText", this.editControl1.ContextChoiceController.Images["Image1"]);    
-controller.Items.Add("GetTextAsHTML", "GetTextAsHTML", this.editControl1.ContextChoiceController.Images["Image2"]);
-controller.Items.Add("LoadFile", "LoadFile", this.editControl1.ContextChoiceController.Images["Image3"]);
-controller.Items.Add("ToString", "ToString", this.editControl1.ContextChoiceController.Images["Image4"]);
-controller.Items.Add("Event", "Event", this.editControl1.ContextChoiceController.Images["Image5"]);                      
-
+controller.Items.Add("Activate", "Activate the form and give it focus", this.editControl1.ContextChoiceController.Images["Image0"]);
+controller.Items.Add("ActiveControl", "Gets or sets the Active Control", this.editControl1.ContextChoiceController.Images["Image1"]);
+controller.Items.Add("ActiceMDIChild", "Activates the MDIChild of form", this.editControl1.ContextChoiceController.Images["Image2"]);
+controller.Items.Add("AutoScroll", "Gets or sets the value indicating Autoscroll", this.editControl1.ContextChoiceController.Images["Image3"]);
+controller.Items.Add("bar1", "Gets or sets the button on the form that is clicked when the user presses the ENTER key", this.editControl1.ContextChoiceController.Images["Image4"]);controller.Items.Add("Focus", "Specifies the back color of the form.", this.editControl1.ContextChoiceController.Images["Image5"]);
+                           
 }
 
 {% endhighlight %}
@@ -90,13 +91,12 @@ Private Sub editControl1_ContextChoiceOpen(ByVal controller As Syncfusion.Window
 
 ' Add items to the Items collection associated with the IContextChoiceController object.
 
-controller.Items.Add("Method", "Method", Me.editControl1.ContextChoiceController.Images("Image0"))
-controller.Items.Add("FindText", "FindText", Me.editControl1.ContextChoiceController.Images("Image1"))
-controller.Items.Add("GetTextAsHTML", "GetTextAsHTML", Me.editControl1.ContextChoiceController.Images("Image2"))
-controller.Items.Add("LoadFile", "LoadFile", Me.editControl1.ContextChoiceController.Images("Image3"))
-controller.Items.Add("ToString", "ToString", Me.editControl1.ContextChoiceController.Images("Image4"))
-controller.Items.Add("Event", "Event", Me.editControl1.ContextChoiceController.Images("Image5"))
-
+controller.Items.Add("Activate", "Activate the form and give it focus", this.editControl1.ContextChoiceController.Images["Image0"]);
+controller.Items.Add("ActiveControl", "Gets or sets the Active Control", this.editControl1.ContextChoiceController.Images["Image1"]);
+controller.Items.Add("ActiceMDIChild", "Activates the MDIChild of form", this.editControl1.ContextChoiceController.Images["Image2"]);
+controller.Items.Add("AutoScroll", "Gets or sets the value indicating Autoscroll", this.editControl1.ContextChoiceController.Images["Image3"]);
+controller.Items.Add("bar1", "Gets or sets the button on the form that is clicked when the user presses the ENTER key", this.editControl1.ContextChoiceController.Images["Image4"]);controller.Items.Add("Focus", "Specifies the back color of the form.", this.editControl1.ContextChoiceController.Images["Image5"]);
+                           
 End Sub
 
 {% endhighlight %}
@@ -389,11 +389,11 @@ FilterAutoCompleteItems</td><td>
 Gets / sets value indicating whether Context Choice items should be filtered while typing</td></tr>
 </table>
 
-FilterAutoCompleteItems property when set to True, filters the item in the AutoComplete Context Choice, and the filtered item alone will be visible. When set to False, all the items will be visible, and the selection will be navigated to the item.
+FilterAutoCompleteItems property when set to `true`, filters the item in the AutoComplete Context Choice, and the filtered item alone will be visible. When set to `false`, all the items will be visible, and the selection will be navigated to the item.
 
 ![](Intellisense-images/Intellisense_img2.png)
 
-**Showing / Hiding ContextChoice pop-up**
+**Showing or hiding ContextChoice pop-up**
 
 You can also programmatically show / hide the Context Choice pop-up by calling the `ShowContextChoice` and `CloseContextChoice` methods.
 
@@ -424,7 +424,36 @@ End Sub
 
 {% endtabs %}
 
-### Customization
+## Display intellisence by custom key combination
+
+You can use the KeyBinder and assign a new key to the `ContextChoice` string command.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Displays the context choice when Ctrl+L keys are pressed.
+
+this.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Editor.ContextChoice");
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Displays the context choice when Ctrl+L keys are pressed.
+
+this.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Editor.ContextChoice")
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Customize intellisence popup appearance
+
+In EditControl, we can customize the size, border, background, font and foreground color of ContextChoice popup window. The following topic explains the same: 
+
+### Border color
 
 The border color of the ContextChoice form is set by using the `ContextChoiceBorderColor` property.
 
@@ -436,7 +465,7 @@ Description</th></tr>
 <tr>
 <td>
 ContextChoiceBorderColor</td><td>
-Specifies the color of the ContextChoice form border. Used when UseXPStyle property is set to 'False'. Otherwise 3D border is drawn</td></tr>
+Specifies the color of the ContextChoice form border. Used when UseXPStyle property is set to `false`. Otherwise 3D border is drawn</td></tr>
 </table>
 
 {% tabs %}
@@ -456,26 +485,88 @@ Me.editControl1.ContextChoiceBorderColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
+![](Intellisense-images/Intellisense_img6.png)
+
+### Size
+
 The size of the ContextChoice form can be set by using the `ContextChoiceSize` property.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.ContextChoiceSize = new System.Drawing.Size(100, 50);
+this.editControl1.ContextChoiceSize = new System.Drawing.Size(100, 100);
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 50)
+Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 100)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-We can also customize the ContextChoice font, fore color and back color by using the following code snippet.
+![](Intellisense-images/Intellisense_img7.png)
+
+### Background
+
+We can customize the background color of ContextChoice by using the `ContextChoiceBackColor` property of EditControl. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+ // To set the ContextChoice back color.
+ 
+ this.editControl1.ContextChoiceBackColor = Color.DodgerBlue;
+ 
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+ ' To set the ContextChoice back color.
+ 
+ Me.editControl1.ContextChoiceBackColor = Color.DodgerBlue
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Intellisense-images/Intellisense_img8.png)
+
+### Foreground
+
+We can customize the foreground color of ContextChoice by using the `ContextChoiceForeColor` property of EditControl. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+ // To set the Context Choice fore color.
+ 
+ this.editControl1.ContextChoiceForeColor = Color.Green;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+ ' To set the ContextChoice fore color.
+ 
+ Me.editControl1.ContextChoiceForeColor = Color.Green
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Intellisense-images/Intellisense_img9.png)
+
+### Font
+
+We can customize the font in ContextChoice popup window by using the `ContextChoiceFont` property of EditControl. 
 
 {% tabs %}
 
@@ -485,14 +576,6 @@ We can also customize the ContextChoice font, fore color and back color by using
 
  this.editControl1.ContextChoiceFont = new Font("Monotype Corsiva", 12F, FontStyle.Bold);
  
- // To set the ContextChoice back color.
- 
- this.editControl1.ContextChoiceBackColor = Color.DodgerBlue;
- 
- // To set the Context Choice fore color.
- 
- this.editControl1.ContextChoiceForeColor = Color.White;
-
 {% endhighlight %}
 
 
@@ -502,27 +585,23 @@ We can also customize the ContextChoice font, fore color and back color by using
 
  Me.editControl1.ContextChoiceFont = New Font("Monotype Corsiva", 12F, FontStyle.Bold)
  
- ' To set the ContextChoice back color.
- 
- Me.editControl1.ContextChoiceBackColor = Color.DodgerBlue
- 
- ' To set the ContextChoice fore color.
- 
- Me.editControl1.ContextChoiceForeColor = Color.White
-
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Intellisense-images/Intellisense_img3.png)
+![](Intellisense-images/Intellisense_img10.png)
 
-## Context Prompt
+A sample which demonstrates the above features is available in the below sample installation path.
 
-`ContextPrompt` allows you to create pop-ups for displaying variations of syntax for the text input by using the Context Choice. This feature is modeled on the Parameter Info intellisense feature of Visual Studio. Each of the context prompt items can have a syntax specifier string and text message providing additional information on each item. The user is able to scroll through the syntax variations either by using the UP/DOWN ARROW keys or clicking on the UP/DOWN buttons on the pop-up.
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Choices
+
+## Configure context prompt popup
+
+Display helpful pop-up hints about alternate syntax for invoking what is being typed and its parameters. User can choose their invocation overload with the Up Arrow and Down Arrow keys or by clicking the arrow buttons in the pop-up.
 
 ![](Intellisense-images/Intellisense_img4.png)
 
-The Context Prompt displaying characters are specified in the configuration file by using the DropContextPrompt field in the lexem for the corresponding character. If you wish to display the ContextPrompt pop-up in response to the opening brace - "(" or opening curly brace -"{" being typed, use the following XML code.
+The following code snippets demonstrates context prompt displaying characters are specified in the configuration file by using the DropContextPrompt field in the lexem for the corresponding character. If you wish to display the ContextPrompt pop-up in response to the opening brace - "(" or opening curly brace -"{" being typed, use the following XML code.
 
 {% highlight xaml %}
 
@@ -534,9 +613,9 @@ The Context Prompt displaying characters are specified in the configuration file
 
 The preceding code has to be placed within the <lexems> section of the configuration file. 
 
-**Populating ContextPrompt popup**
+### Populate context prompt 
 
-The Context Prompt is populated by handling the `ContextPromptOpen` event of EditControl, and adding new prompts using the AddPrompt method.
+Context Prompt is populated by handling the `ContextPromptOpen` event of EditControl, and adding new prompts using the AddPrompt method.
 
 <table>
 <tr>
@@ -589,7 +668,7 @@ End Sub
 
 **ContextPrompt operations**
 
-The EditControl provides the following set of events for performing Context Prompt operations.
+EditControl provides the following set of events for performing Context Prompt operations.
 
 <table>
 <tr>
@@ -802,7 +881,7 @@ End Sub
 
 **Showing or hiding ContextPrompt pop-up**
 
-You can also programmatically show / hide the Context Prompt pop-up using the ShowContextPrompt and CloseContextPrompt methods.
+You can also programmatically show / hide the Context Prompt pop-up using the `ShowContextPrompt` and `CloseContextPrompt` methods.
 
 {% tabs %}
 
@@ -829,7 +908,11 @@ Me.editControl1.CloseContextPrompt();
 
 {% endtabs %}
 
-### Customization
+## Customize context prompt appearance
+
+In EditControl, we can customize the size, background, font and border color of ContextPrompt popup window. The following topic explains the same: 
+
+### Background
 
 The brush for the Context Prompt background is set by using the ContextPromptBackgroundBrush property of the EditControl.
 
@@ -850,6 +933,8 @@ Me.editControl1.ContextPromptBackgroundBrush = New Syncfusion.Drawing.BrushInfo(
 
 {% endtabs %}
 
+### Border
+
 The border color of the Context Prompt form is set by using the `ContextPromptBorderColor` property.
 
 {% tabs %}
@@ -868,6 +953,8 @@ Me.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink
 {% endhighlight %}
 
 {% endtabs %}
+
+### Size
 
 The size of the Context Prompt form can be set by using the below given properties.
 
@@ -891,7 +978,7 @@ Specifies a value indicating whether custom Context Prompt size should be used</
 
 {% highlight C# %}
 
-this.editControl1.ContextPromptSize = new System.Drawing.Size(125, 75);
+this.editControl1.ContextPromptCustomSize = new System.Drawing.Size(125, 75);
 
 this.editControl1.UseCustomSizeContextPrompt = true;
 
@@ -900,13 +987,15 @@ this.editControl1.UseCustomSizeContextPrompt = true;
 
 {% highlight VB %}
 
-Me.editControl1.ContextPromptSize = New System.Drawing.Size(125, 75)
+Me.editControl1.ContextPromptCustomSize = New System.Drawing.Size(125, 75)
 
 Me.editControl1.UseCustomSizeContextPrompt = True
 
 {% endhighlight %}
 
 {% endtabs %}
+
+### Advanced customizations
 
 If you wish to do some advanced customization in the Context Prompt feature, like highlighting the current parameter to be input in bold, you can use the ContextPromptOpen and ContextPromptUpdate events.
 
@@ -1109,3 +1198,307 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+A sample which demonstrates the above features is available in the below sample installation path.
+
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Advanced Intellisense
+
+## Configure context tooltip
+
+EditControl provides built-in interactive tooltips that appear automatically when the pointer is placed over a collapsed block of text. Whenever the mouse hovers over a token, the `UpdateContextTooltip` event is fired for quick information on the lexem. If some text information is provided, it is displayed in a tooltip.
+
+![](Intellisense-images/Intellisense_img5.png)
+
+Context ToolTip can be populated with additional information on the corresponding lexem by handling the `UpdateContextTooltip` event of EditControl.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void editControl1_UpdateContextToolTip(object sender, Syncfusion.Windows.Forms.Edit.Dialogs.UpdateTooltipEventArgs e)
+{
+   if( e.Text == string.Empty )
+   {
+
+     Point pointVirtual = editControl1.PointToVirtualPosition( new Point( e.X, e.Y ) );
+
+     if( pointVirtual.Y > 0 )
+     {
+        // Get the current line
+        ILexemLine line = editControl1.GetLine( pointVirtual.Y );
+
+        if( line != null )
+        {
+            // Get tokens from the current line
+            ILexem lexem = line.FindLexemByColumn( pointVirtual.X );
+            if( lexem != null )
+            {
+                // Set the desired information tooltip
+                e.Text = "This is additional information on " + lexem.Text;
+            }
+         }
+      }
+
+    }
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub editControl1_UpdateContextToolTip(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.Dialogs.UpdateTooltipEventArgs) Handles EditControl1.UpdateContextToolTip
+
+   If e.Text = String.Empty Then
+
+      Dim pointVirtual As Point = editControl1.PointToVirtualPosition(New Point(e.X, e.Y))
+
+      If pointVirtual.Y > 0 Then
+
+         ' Get the current line
+
+          Dim line As ILexemLine = editControl1.GetLine(pointVirtual.Y)
+
+          If Not (line Is Nothing) Then
+
+             ' Get tokens from the current line
+
+              Dim lexem As ILexem = line.FindLexemByColumn(pointVirtual.X)
+
+              If Not (lexem Is Nothing) Then
+
+                ' Set the desired information tooltip
+
+                 e.Text = "This is additional information on " + lexem.Text;
+
+              End If
+
+          End If
+
+        End If
+
+   End If
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customization
+
+The brush for the Context ToolTip background can be set by using the `ContextTooltipBackgroundBrush` property. And also the border color of the Context ToolTip form can be customized by using the `ContextTooltipBorderColor` property. The Context ToolTip window can be shown or hidden by setting the `ShowContextTooltip` property to `true`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.ShowContextTooltip = true;
+
+this.editControl1.ContextTooltipBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.LavenderBlush, System.Drawing.Color.Khaki);
+
+this.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.ShowContextTooltip = True
+
+Me.editControl1.ContextTooltipBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.LavenderBlush, System.Drawing.Color.Khaki)
+
+Me.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+It is also possible to specify the time delay after which the tooltip should be displayed by using the `ToolTipDelay` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Displays the tooltip pop-up after 1000 milliseconds( 1 sec )
+
+this.editControl1.ToolTipDelay = 1000;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Displays the tooltip pop-up after 1000 milliseconds( 1 sec )
+
+Me.edtiControl1.ToolTipDelay = 1000
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The Context ToolTip window is also closed by using the `CloseContextTooltip` method.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Closes the Context ToolTip pop-up window.
+
+this.editControl1.CloseContextTooltip();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Closes the Context ToolTip pop-up window.
+
+Me.editControl1.CloseContextTooltip();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+A sample which demonstrates the above features is available in the below sample installation path.
+
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Tooltip
+
+## Auto complete
+
+Completes the rest of a word the user is typing by selecting from a list of choices displayed as a context menu. Type the first few letters of the member name, and then press ALT+RIGHT ARROW or <kbd>CTRL+SPACEBAR</kbd> keys to see this functionality.
+
+### Example
+
+When the following text is typed - "this.editControl1.", it displays a Context Choice list with members in the following order
+
+* New
+* Word
+* WordLeft
+* WordRight
+
+**Case 1**
+
+If you type "w" after "this.editControl1.", such that it looks like - "this.editControl1.w", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, it will be auto completed as "this.editControl1.Word".
+
+**Case 2**
+
+If you type "word" after "this.editControl1.", such that it looks like - "this.editControl1.word", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, it will be auto completed as "this.editControl1.WordRight".
+
+**Case 3**
+
+If you type "move" after "this.editControl1.", such that it looks like - "this.editControl1.move", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, there is no matching member name to autocomplete, and hence nothing will happen.
+
+**Case 4**
+
+If you type nothing after "this.editControl1.", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first member name in the Context Choice list. In this case, it should be auto completed as "this.editControl1.New".
+
+Note that the searching process for the first matching member is not case sensitive. For example, "word" and "Word" will be treated in the same way.
+
+Set the `UseAutocomplete` property associated with the IContextChoiceController to `true`, to enable this functionality while using Context Choice.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void editControl1_ContextChoiceOpen(Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController controller)
+
+{
+
+   controller.UseAutocomplete = true;
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub editControl1_ContextChoiceOpen(ByVal controller As Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController) Handles editControl1.ContextChoiceOpen
+
+   controller.UseAutocomplete = True
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Auto correct
+
+EditControl comes with the AutoReplace triggers feature which allows the control to automatically correct some of the known predefined typing errors. AutoReplace triggers are fired when certain keys are pressed. 
+
+![](Intellisense-images/Intellisense_img6.jpeg)
+
+![](Intellisense-images/Intellisense_img7.jpg)
+
+Auto Replace Triggers can be enabled or disabled by using the `UseAutoreplaceTriggers` property as shown below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Enables AutoReplace Triggers.
+
+this.editControl1.UseAutoreplaceTriggers = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Enables AutoReplace Triggers.
+
+Me.editControl1.UseAutoreplaceTriggers = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The keys used as AutoReplace Triggers are defined by using the TriggersActivators attribute of the language in the configuration file, as shown below.
+
+<ConfigLanguage name ="C#" Known ="Csharp" StartComment ="//" TriggersActivators =" ;.=()">
+
+Triggers can be flagged as valid only within the specific lexical states. For example, you can set a trigger not to fire, if it is in a comment within a language, by using the AllowTriggers attribute, as shown below.
+
+{% highlight xaml %}
+
+<lexem BeginBlock="/* EndBlock="*/" Type="Comment" OnlyLocalSublexems="true" IsComplex="true" IsCollapsable="true" CollapseName="/*...*/" AllowTriggers="false">
+
+</lexem>
+
+{% endhighlight %}
+
+The words to be replaced when the AutoReplace Triggers key is pressed can be defined by using the code given below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.Language.AutoReplaceTriggers.AddRange(new AutoReplaceTrigger[]{new AutoReplaceTrigger("tis","this"),new AutoReplaceTrigger("fro","for")});
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.Language.AutoReplaceTriggers.AddRange(New AutoReplaceTrigger(){New AutoReplaceTrigger("tis","this"),New AutoReplaceTrigger("fro","for")})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The words to be replaced can also be defined within the language definition in the configuration file, as shown below.
+
+{% highlight xaml %}
+
+<AutoReplaceTriggers>
+
+   <AutoReplaceTrigger From ="tis" To ="this" />
+
+   <AutoReplaceTrigger From ="itn" To ="int" />
+
+</AutoReplaceTriggers>
+ 
+{% endhighlight %}

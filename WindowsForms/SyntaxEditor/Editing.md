@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing | WindowsForms | Syncfusion
-description: editing
+title: Editing 
+description: This section explains about the editing support in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -9,11 +9,41 @@ documentation: ug
 
 # Editing
 
-EditControl allows the end users to modify, edit text documents and source code files. This includes clipboard support, Unlimited undo and redo, highlighting current line, binding shortcut keys to command and so on.
+EditControl allows the end users to modify, edit text documents and source code files. This includes clipboard support, Unlimited undo and redo, binding shortcut keys to command and so on.
 
-## Clipboard options
+## Clipboard operations
 
-EditControl uses the clipboard to cut, copy or paste the text data. It stores the data in the clipboard for cut and copy operations and retrieves data from the clipboard for paste operations. The following APIs in the EditControl facilitates these clipboard operations.
+EditControl provides keyboard and context menu support to cut, copy, and paste. It stores the data in the clipboard for cut and copy operations and retrieves data from the clipboard for paste operations.
+
+### Keyboard and mouse actions
+
+The keyboard shortcuts for the performing cut, copy or paste operations in the EditControl are done by using respective commands mentioned in the below table:
+
+<table>
+<tr>
+<th>
+Command</th><th>
+Shortcut</th></tr>
+<tr>
+<td colspan = "2">
+Clipboard</td></tr>
+<tr>
+<td>
+Copy</td><td>
+CTRL+C, CTRL+INSERT</td></tr>
+<tr>
+<td>
+Paste</td><td>
+CTRL+V, SHIFT+INSERT</td></tr>
+<tr>
+<td>
+Cut</td><td>
+CTRL+X, SHIFT+DEL</td></tr>
+</table>
+
+### Programmatic clipboard options
+
+EditControl provides extensive support to cut, copy or paste the text data programmatically. The following methods in the EditControl facilitates these clipboard operations.
 
 <table>
 <tr>
@@ -43,7 +73,7 @@ Indicates whether it is possible to perform cut operations in EditControl</td></
 <tr>
 <td>
 CanPaste</td><td>
-Indicates whether it is possible to perform copy, cut and paste operations in EditControl</td></tr>
+Indicates whether it is possible to perform copy, cut, and paste operations in EditControl</td></tr>
 <tr>
 <td>
 ClearClipboard</td><td>
@@ -121,17 +151,23 @@ Me.editControl1.ClearClipboard()
 
 ![](Editing-Features_images/Editing-Features_img1.png)
 
-**FIPS**
+### Cryptography 
 
-The system’s cryptography is based on the FIPS compliant algorithms for encryption, hashing and security. By doing the following steps, we can enable FIPS in our machine:
+The system’s cryptography is based on the FIPS compliant algorithms for encryption, hashing and security.
 
-    1. Click Start, click Control Panel, and the click on Administrative Tools.
+#### FIPS mode enabled
+
+ By doing the given steps, we can enable FIPS in our machine:
+
+    1. Click Start, open Control Panel, and then click on Administrative Tools.
     2. Double-click Local Security Policy.
     3. Double-click Local Policies.
     4. Click Security Options. Under Policies listed in the right pane, double-click System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing.
     5. Select Enabled to enable FIPS on your machine.
 
-When FIPS is enabled, the Clipboard Operations of EditControl are affected due to EditControl uses the MD5 algorithm. To avoid this, before enabling FIPS, you must disable the EditControl MD5 algorithm by setting the `EnableMD5` property to false.
+#### Purpose of EnableMD5 in Clipboard operations
+
+When FIPS is enabled, the Clipboard Operations of EditControl are affected due to EditControl uses the MD5 algorithm. To avoid this, before enabling FIPS, you must disable the EditControl MD5 algorithm by setting the `EnableMD5` property to `false`.
 
 <table>
 <tr>
@@ -161,26 +197,15 @@ Me.editControl1.EnableMD5 = True
 
 {% endtabs %}
 
-**Undo or Redo operation**
+## Undo and redo
 
-Action Grouping allows you to specify a set of actions as groups for Undo or Redo purposes. When an action group is created, and a set of actions is added to it, the entire set is considered as one entity. This implies that the set of actions can be performed or undone using the `Redo` or `Undo` method call. You can use the UndoGroupOpen, UndoGroupClose and UndoGroupCancel methods to programmatically manipulate the undo or redo action grouping.
-
-To undo/redo an action group, do the following steps:
-
-  1. Invoke the `UndoGroupOpen` method to begin a new action group.
-  2. Perform any desired set of actions, and invoke the `UndoGroupClose` method to close the action group. All the actions performed between the UndoGroupOpen() and UndoGroupClose() method calls get grouped as one entity.
-  3. Now, when the Undo / Redo methods are invoked, the newly created group (or set of actions) gets undone / redone appropriately.
-  4. To cancel an already open action group, you have to invoke the `UndoGroupCancel` method.
-  5. The `CanUndo` property gets a flag that determines whether the undo operation can be performed in the EditControl.
-  6. The `CanRedo` property gets a flag that determines whether the redo operation can be performed in the EditControl.
-
-Essential Edit allows the following methods to be invoked any number of times.
+EditControl provides keyboard and context menu support for undo and redo operations that erase the last change in a document and reinsert it. `CanUndo` and `CanRedo` property gets a flag that determines whether the undo and redo operation can be performed in the EditControl. The keyboard shortcuts for the performing undo and redo operations in the EditControl are done by using respective commands mentioned in the below table:
 
 <table>
 <tr>
 <th>
-Methods</th><th>
-Description</th></tr>
+Command</th><th>
+Shortcut</th></tr>
 <tr>
 <td>
 Undo</td><td>
@@ -189,23 +214,44 @@ Performs an undo (CTRL+Z) operation.</td></tr>
 <td>
 Redo</td><td>
 Performs a redo (CTRL+Y) operation.</td></tr>
-<tr>
-<td>
-CanUndo</td><td>
-Indicates whether it is possible to undo the actions in the EditControl</td></tr>
-<tr>
-<td>
-CanRedo</td><td>
-Indicates whether it is possible to redo the actions in the EditControl</td></tr>
-<tr>
-<td>
-ResetUndoInfo</td><td>
-Clear the undo buffer. Hence undo operation is not allowed on contents/actions previously added/performed up to that point</td></tr>
 </table>
 
-N> The undo or redo buffer is cleared after the 'Save' operation.
+{% tabs %}
 
-Grouping is enabled using the `GroupUndo` property of EditControl. It Specifies whether grouping should be enabled or disabled for undo/redo actions.
+{% highlight C# %}
+
+// Indicates whether it is possible to Undo in the EditControl. 
+
+bool canUndo = this.editControl1.CanUndo;
+
+
+// Indicates whether it is possible to Redo in the EditControl. 
+
+bool canRedo = this.editControl1.CanRedo;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Indicates whether it is possible to Undo in the EditControl.
+
+Dim canUndo as bool = Me.editControl1.CanUndo
+
+
+' Indicates whether it is possible to Redo in the EditControl.
+
+Dim canRedo as bool = Me.editControl1.CanRedo
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img2.png)
+
+### Grouping actions
+
+Grouping actions allows you to specify a set of actions as groups for Undo or Redo purposes. When an action group is created, and a set of actions is added to it, the entire set is considered as one entity. This implies that the set of actions can be performed or undone using the `Redo` or `Undo` method call. You can use the UndoGroupOpen, UndoGroupClose and UndoGroupCancel methods to programmatically manipulate the undo or redo action grouping. Grouping is enabled using the `GroupUndo` property of EditControl. It Specifies whether grouping should be enabled or disabled for undo/redo actions.
 
 <table>
 <tr>
@@ -218,84 +264,85 @@ GroupUndo</td><td>
 Specifies whether grouping should be enabled for undo/redo actions</td></tr>
 </table>
 
+<table>
+<tr>
+<th>
+Methods</th><th>
+Description</th></tr>
+<tr>
+<td>
+UndoGroupOpen</td><td>
+Begins a new action group</td></tr>
+<tr>
+<td>
+Undo</td><td>
+Performs an undo operation</td></tr>
+<tr>
+<td>
+Redo</td><td>
+Performs a redo operation</td></tr>
+<tr>
+<td>
+UndoGroupClose</td><td>
+Helps to close the action group.</td></tr>
+</table>
+
 {% tabs %}
 
 {% highlight C# %}
-
-// Accomplish Undo operation.
-
-this.editControl1.Undo();
-
-
-// Accomplish Redo operation. 
-
-this.editControl1.Redo();
-
-
-// Indicates whether it is possible to Undo in the EditControl. 
-
-bool canUndo = this.editControl1.CanUndo;
-
-
-// Indicates whether it is possible to Redo in the EditControl. 
-
-bool canRedo = this.editControl1.CanRedo;
-
-
-// Clears the Undo buffer. 
-
-this.editControl1.ResetUndoInfo();
-
 
 // Enable grouping for Undo or Redo actions.
 
 this.editControl1.GroupUndo = true;
 
+// Invoke the UndoGroupOpen method to begin a new action group.
+
+this.editControl1.UndoGroupOpen();
+
+// Accomplish Undo operation.
+
+this.editControl1.Undo();
+
+// Accomplish Redo operation. 
+
+this.editControl1.Redo();
+
+// Invoke the UndoGroupClose method to close the action group
+
+this.editControl1.UndoGroupClose();
+
 {% endhighlight %}
 
 
 {% highlight VB %}
-
-' Accomplish Undo operation.
-
-Me.editControl1.Undo()
-
-
-' Accomplish Redo operation.
-
-Me.editControl1.Redo()
-
-
-' Indicates whether it is possible to Undo in the EditControl.
-
-Dim canUndo as bool = Me.editControl1.CanUndo
-
-
-' Indicates whether it is possible to Redo in the EditControl.
-
-Dim canRedo as bool = Me.editControl1.CanRedo
-
-
-' Clears the Undo buffer.
-
-Me.editControl1.ResetUndoInfo()
-
 
 ' Enable grouping for Undo or Redo actions.
 
 Me.editControl1.GroupUndo = True
 
+' Invoke the UndoGroupOpen method to begin a new action group.
+
+Me.editControl1.UndoGroupOpen()
+
+' Accomplish Undo operation.
+
+Me.editControl1.Undo()
+
+' Accomplish Redo operation.
+
+Me.editControl1.Redo()
+
+' Invoke the UndoGroupClose method to close the action group
+
+Me.editControl1.UndoGroupClose()
+
 {% endhighlight %}
 
 {% endtabs %}
 
-The following screenshot shows action grouping in EditControl. 
+### Reset undo redo buffer
 
-![](Editing-Features_images/Editing-Features_img2.png)
-
-## Comments
-
-EditControl provides support for commenting and uncommenting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given methods.
+We can reset the undo and redo operation by invoking the `ResetUndoInfo` method of EditControl.
 
 <table>
 <tr>
@@ -304,44 +351,200 @@ Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-CommentLine</td><td>
-Comments single line</td></tr>
-<tr>
-<td>
-CommentSelection</td><td>
-Comments selected text</td></tr>
-<tr>
-<td>
-CommentText</td><td>
-Comments text in the specified range</td></tr>
+ResetUndoInfo</td><td>
+Clear the undo buffer. Hence undo operation is not allowed on contents/actions previously added/performed up to that point</td></tr>
 </table>
+
+N> The undo or redo buffer is cleared after the 'Save' operation.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.CommentLine(1);
+// Clears the Undo buffer. 
 
-this.editControl1.CommentSelection();
-
-this.editControl1.CommentText(new Point(1, 1), new Point(7, 7));
+this.editControl1.ResetUndoInfo();
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.CommentLine(1)
+' Clears the Undo buffer.
 
-Me.editControl1.CommentSelection()
-
-Me.editControl1.CommentText(New Point(1, 1), New Point(7, 7))
+Me.editControl1.ResetUndoInfo()
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Comments can be removed by using the below given methods.
+### Discard undo redo buffer
+
+We can discard an already open action group, by invoking `UndoGroupCancel` method of EditControl.
+
+{% tabs %}
+   
+{% highlight C# %}
+   
+// Helps to cancel an already open action group.
+
+this.editControl1.UndoGroupCancel();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+   
+' Helps to cancel an already open action group.
+
+Me.editControl1.UndoGroupCancel()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+A sample which demonstrates the above features is available in the below sample installation path.
+
+Installation Location\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Text Operations\Clipboard Operations
+
+## Selection modes 
+
+ EditControl supports rectangular block selection to select lines from specific columns like Visual Studio, plus normal selection.
+
+### Default  
+
+This mode enable user to select Whole line. 
+
+{% tabs %}
+   
+{% highlight C# %}
+   
+//To Enable Default mode.
+
+this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+   
+'To Enable Default mode.
+
+Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default
+
+{% endhighlight %}
+
+{% endtabs %}   
+   
+![](Editing-Features_images/Editing-Features_img3.png)
+
+### Programmatic selection
+
+We can also select the text in EditControl programmatically by using the `SelectAll`, `SetSelectionStart` and `SetSelectionEnd` method.
+
+The following code snippet demonstrates how to select all the text in EditControl.
+
+{% tabs %}
+   
+{% highlight C# %}
+
+// Selects all text in EditControl.
+
+this.editControl1.SelectAll();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Selects all text in EditControl.
+
+Me.editControl1.SelectAll()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img20.png)
+     
+### Block   
+
+This mode enable user to select, certain rectangle portion instead of whole line. The selection includes all characters captured within the rectangle defined by the first and last character in the selection. Anything typed or pasted into the selected area is inserted at the same point on each line. 
+
+{% tabs %}
+   
+{% highlight C# %}
+
+//To Enable Block selection mode.
+
+this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+'To Enable Block selection mode.
+
+Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img4.png)
+
+## Text handling
+
+EditControl offers support for text manipulation operations like append, delete and insertion of multiple lines of text, which is elaborated in the below topic:
+
+![](Editing-Features_images/Editing-Features_img5.jpeg)
+
+### Total number of lines
+
+EditControl has the built in functionality to find the total number of lines by using `PhysicalLineCount` property. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+Console.WriteLine(this.editControl1.PhysicalLineCount);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Console.WriteLine(Me.editControl1.PhysicalLineCount)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Visible number of lines 
+
+EditControl has the built in functionality to find the visible number of lines by using `VisibleLineCount` property. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+Console.WriteLine(this.editControl1.VisibleLineCount);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Console.WriteLine(Me.editControl1.VisibleLineCount)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Append text
+
+Text can be appended to the EditControl by using the following method.
 
 <table>
 <tr>
@@ -350,119 +553,78 @@ Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-UnCommentLine</td><td>
-UnComments single line</td></tr>
-<tr>
-<td>
-UnCommentSelection</td><td>
-UnComments selected text</td></tr>
-<tr>
-<td>
-UnCommentText</td><td>
-UnComments text in the specified range</td></tr>
+AppendText</td><td>
+Appends the specified text to the end of the existing contents of the EditControl</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.UnCommentLine();
+// Appends the given string to the end of the text in EditControl.
 
-this.editControl1.UncommentSelection();
-
-this.editControl1.UncommentText(new Point(1, 1), new Point(7, 7));
+this.editControl1.AppendText(" text to be appended ");
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.UnCommentLine()
+' Appends the given string to the end of the text in the EditControl.
 
-Me.editControl1.UncommentSelection()
-
-Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
+Me.editControl1.AppendText(" text to be appended ")
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Highlight modified lines 
+### Insert text
 
-EditControl provides the extensive supports for highlighting the changed lines and the saved lines with different colors. Lines that are modified after the file load or after the last file save operations are marked in yellow color, by default. Once they are saved, they will be changed to green, by default.
-
-The changed lines marking feature can be enabled by setting the `MarkChangedLines` property to True. To enable this functionality in the EditControl, the `SelectionMargin` property should also be enabled.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.MarkChangedLines = true;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.MarkChangedLines = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Editing-Features_images/Editing-Features_img.jpg)
-
-## Keep tabs
-
-EditControl supports text operations with tabs Keys. Essential Edit controls the insertion of tabs using the `UseTabs` property, which lets you specify whether a tab (or an equivalent number of spaces) needs to be inserted, when the TAB key is pressed in the EditControl. Similarly, tab stops can also be inserted. 
+The Insert mode can be enabled in the EditControl by setting the `InsertMode` property. Its default value is `true`. Text can be inserted anywhere inside the EditControl by using the `InsertText` method as follows. The mode of the INSERT key can also be toggled by using the ToggleInsertMode method of the EditControl.
 
 <table>
 <tr>
 <th>
-Properties</th><th>
+Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-UseTabs</td><td>
-Specifies whether tab symbol is allowed or spaces should be used instead. Setting this property to True, allows you to insert tabs, whereas setting it to False, allows you to insert spaces</td></tr>
-<tr>
-<td>
-UseTabStops</td><td>
-Specifies a value that indicates whether tab stops should be used</td></tr>
-<tr>
-<td>
-TabStopsArray</td><td>
-Specifies an array of tab stops</td></tr>
+InsertText</td><td>
+Inserts a piece of text at any desired position in the EditControl</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.UseTabs = true;
+this.editControl1.InsertMode = true;
 
-this.editControl1.UseTabStops = true;
+this.editControl1.InsertText(7, 5, "Inserting Text");
 
-this.editControl1.TabStopsArray = new int[] { 8, 16, 24, 32, 40};
+// Toggle the insert mode.
+
+this.editControl1.ToggleInsertMode();
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.UseTabs = True
+Me.editControl1.InsertMode = True
 
-Me.editControl1.UseTabStops = True;
+Me.editControl1.InsertText(7, 5, "Inserting Text")
 
-Me.EditControl1.TabStopsArray = New Integer() {8, 16, 24, 32, 40}
+' Toggle the insert mode.
+
+Me.editControl1.ToggleInsertMode()
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Specifying tab size
+**Insert multiple lines**
 
-The size of the tab can be specified by using the below given property.
+Collection of text lines can be inserted by using the `Lines` property.
 
 <table>
 <tr>
@@ -471,173 +633,34 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-TabSize</td><td>
-Specifies tab size in spaces</td></tr>
+Lines</td><td>
+Lets you to specify multiple lines of text to the EditControl in the form of a string array. This feature is similar to the one in .NET RichTextBox control</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Size of the tab in terms of space.
+// Specifies multiple lines of text to the EditControl in the form of a string array.
 
-this.editControl1.TabSize = 8;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Size of the tab in terms of space.
-
-Me.editControl1.TabSize = 8
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### TAB key functionality
-
-The `TransferFocusOnTab` property allows you to specify, whether the EditControl should process the TAB key as a text input, or transfer the focus to the next control (by the order of TabIndex property value) on the Form or the User Control hosting the EditControl.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Insert tabs into the EditControl as text input. 
-
-this.editControl1.TransferFocusOnTab = false;
-
-// Transfer focus to the next control.
-
-this.editControl1.TransferFocusOnTab = true;
+this.editControl1.Lines = new string[] {" first line ", " second line ", " third line "};
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-' Insert tabs into the EditControl as text input.
+// Specifies multiple lines of text to the EditControl in the form of a string array.
 
-this.editControl1.TransferFocusOnTab = False
-
-' Transfer focus to the next control.
-
-this.editControl1.TransferFocusOnTab = True
+Me.editControl1.Lines = new string[] {" first line ", " second line ", " third line "}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### TAB key functionality on selected text
+**Insert text based on conditions**
 
-The following methods can be used convert the spaces in a selected region into tabs and vice versa. Tab symbols can also be added, inserted or removed from selected text.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-AddTabsToSelection</td><td>
-Adds leading tab symbol to the selected lines, or just inserts the tab symbol</td></tr>
-<tr>
-<td>
-RemoveTabsFromSelection</td><td>
-Removes leading tab symbol (or its spaces equivalent) from selected lines</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Add or insert leading tab symbol to selected lines.
-
-this.editControl1.AddTabsToSelection();
-
-// Remove leading tab symbol from selected lines.
-
-this.editControl1.RemoveTabsFromSelection();
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Add or insert leading tab symbol to selected lines.
-
-Me.editControl1.AddTabsToSelection()
-
-' Remove leading tab symbol from selected lines.
-
-Me.editControl1.RemoveTabsFromSelection()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Selection mode
-
- EditControl has two type of selection modes as like Visual Studio Code Editor.
-
-* Default  
-
-   This mode enable user to select Whole line. 
-
-   {% tabs %}
-   
-   {% highlight C# %}
-   
-   //To Enable Default mode.
-
-   this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default;
-
-   {% endhighlight %}
-
-
-   {% highlight VB %}
-   
-   'To Enable Default mode.
-
-   Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Default
-
-   {% endhighlight %}
-
-   {% endtabs %}
-   
-   ![](Editing-Features_images/Editing-Features_img4.png)
-     
-* Block   
-
-   This mode enable user to select, certain rectangle portion instead of whole line. The selection includes all characters captured within the rectangle defined by the first and last character in the selection. Anything typed or pasted into the selected area is inserted at the same point on each line. 
-
-   {% tabs %}
-   
-   {% highlight C# %}
-
-   //To Enable Block selection mode.
-
-   this.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block;
-
-   {% endhighlight %}
-
-
-   {% highlight VB %}
-
-   'To Enable Block selection mode.
-
-    Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Block
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-   ![](Editing-Features_images/Editing-Features_img3.png)
-
-## Highlighting current line 
-
-You can highlight the current line where the mouse pointer is present by setting the `HighlightCurrentLine` property of the EditControl to True. Its default value is false. By using the `CurrentLineHighlightColor` property, we can set the color for the highlighted line. 
+Text can also be inserted based on condition. The following properties can be used to insert text based on conditions that are described as follows.
 
 <table>
 <tr>
@@ -646,38 +669,527 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-HighlightCurrentLine</td><td>
-Specifies a value indicating whether current line should be highlighted</td></tr>
+AllowDrop</td><td>
+Specifies whether drag and drop operations are allowed for control</td></tr>
 <tr>
 <td>
-CurrentLineHighlightColor</td><td>
-Specifies color of current line highlight</td></tr>
+AllowInsertBeforeReadOnlyNewLine</td><td>
+Specifies whether inserting text should be allowed at the beginning of readonly region at the start of new line</td></tr>
+<tr>
+<td>
+InsertDroppedFileIntoText</td><td>
+Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.When this property is set to `false`, the current file is closed, and the dropped outer file is opened</td></tr>
+<tr>
+<td>
+RespectTabStopsOnInsertingText</td><td>
+Specifies whether the tab stops should be valued on inserting blocks of text</td></tr>
+<tr>
+<td>
+ShowFileDropNotification</td><td>
+Specifies whether the Notification message is to be displayed when the outer file is dragged and dropped onto the EditControl</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.HighlightCurrentLine = true;
+// Allows text insertion only at the beginning of the ReadOnly region at the start of a new line.
 
-this.editControl1.CurrentLineHighlightColor = Color.Orange;
+this.editControl1.AllowInsertBeforeReadonlyNewLine = true;
+
+//To set the EditControl that allows to Drag and Dropping files
+
+this.editControl1.AllowDrop = true; 
+
+// Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.
+
+this.editControl1.InsertDroppedFileIntoText = true;
+
+// To hide the notification message displayed when the outer file is dragged and dropped onto the EditControl.
+
+this.editControl1.ShowFileDropNotification = false;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.HighlightCurrentLine = true
+' Allows text insertion only at the beginning of the ReadOnly region at the start of a new line.
 
-Me.editControl1.CurrentLineHighlightColor = Color.Orange
+Me.editControl1.AllowInsertBeforeReadonlyNewLine = True
+
+'To set the EditControl that allows to Drag and Dropping files
+
+Me.editControl1.AllowDrop = True
+
+‘Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.
+
+Me.editControl1.InsertDroppedFileIntoText = True
+
+' To hide the notification message displayed when the outer file is dragged and dropped onto the EditControl.
+
+Me.editControl1.ShowFileDropNotification = False
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img5.png)
+### Delete text
 
-## Binding shortcut keys to command 
+Text can be deleted in the EditControl by using the below given methods.
+
+<table>
+<tr>
+<th>
+Methods</th><th>
+Description</th></tr>
+<tr>
+<td>
+DeleteChar</td><td>
+Deletes a character to the right of the current cursor position</td></tr>
+<tr>
+<td>
+DeleteCharLeft</td><td>
+Deletes a character to the left of the current cursor position</td></tr>
+<tr>
+<td>
+DeleteWord</td><td>
+Deletes a word to the right of the current cursor position</td></tr>
+<tr>
+<td>
+DeleteWordLeft</td><td>
+Deletes a word to the left of the current cursor position</td></tr>
+<tr>
+<td>
+DeleteAll</td><td>
+Deletes all text in the document</td></tr>
+<tr>
+<td>
+DeleteText</td><td>
+Deletes the specified text</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Deletes the character to the right of the cursor.
+
+this.editControl1.DeleteChar();
+
+// Deletes the character to the left of the cursor.
+
+this.editControl1.DeleteCharLeft();
+
+// Deletes a word to the right of the current cursor position.
+
+this.editControl1.DeleteWord();
+
+// Deletes a word to the left of the current cursor position.
+
+this.editControl1.DeleteWordLeft();
+
+// To delete all the text.
+
+this.editControl1.DeleteAll();
+
+// To delete a selection.
+
+this.editControl1.DeleteText(this.editControl1.Selection.Top, this.editControl1.Selection.Bottom);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Deletes the character to the right of the cursor.
+
+Me.editControl1.DeleteChar()
+
+' Deletes the character to the left of the cursor.
+
+Me.editControl1.DeleteCharLeft()
+
+' Deletes a word to the right of the current cursor position.
+
+Me.editControl1.DeleteWord()
+
+' Deletes a word to the left of the current cursor position.
+
+Me.editControl1.DeleteWordLeft()
+
+' Deletes all the text.
+
+Me.editControl1.DeleteAll()
+
+' Deletes a selection.
+
+Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Selection.Bottom)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+A sample which demonstrates the above features is available in the below sample installation path.
+
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\TextInteractions
+
+## Indent or outdent
+
+Indentation support helps format source code to improve readability. By pressing `TAB` or `SPACE` keys, appropriate number of tabs or spaces are added to the beginning of each line in the selected block. Similarly, when the <kbd>SHIFT+TAB</kbd> keys combination is pressed, the tabs or spaces added gets removed.
+
+You can also set the tab size to the desired number of spaces using the `TabSize` property of the EditControl as shown below. By default, the TabSize property value is set to 2.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// "n" is the integer value specifying the number of spaces.
+
+this.editControl1.TabSize = n;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' "n" is the integer value specifying the number of spaces.
+
+Me.editControl1.TabSize = n
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following methods are used to indent and outdent text in the EditControl.
+
+<table>
+<tr>
+<th>
+Methods</th><th>
+Description</th></tr>
+<tr>
+<td>
+IndentText</td><td>
+Indents text in the specified range</td></tr>
+<tr>
+<td>
+IndentSelection</td><td>
+Indents selected text</td></tr>
+<tr>
+<td>
+OutdentText</td><td>
+Outdent text in the specified range</td></tr>
+<tr>
+<td>
+OutdentSelection</td><td>
+Outdent selected text</td></tr>
+</table>
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Indents text in the specified range.
+
+this.editControl1.IndentText(new Point(5, 5), new Point(10, 10));
+
+// Indents selected text.
+
+this.editControl1.IndentSelection();
+
+// Outdent text in the specified range.
+
+this.editControl1.OutdentText(new Point(5, 5), new Point(10, 10));
+
+// Outdent selected text.
+
+this.editControl1.OutdentSelection();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Indents text in the specified range.
+
+Me.editControl1.IndentText(New Point(5, 5), New Point(10, 10))
+
+' Indents selected text.
+
+Me.editControl1.IndentSelection()
+
+' Outdent text in the specified range.
+
+Me.editControl1.OutdentText(New Point(5, 5), New Point(10, 10))
+
+' Outdent selected text.
+
+Me.editControl1.OutdentSelection()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Default indentation
+
+The indentation guidelines are vertical lines that is used to connect the matching brackets. This feature enhances the readability of code. The indentation guidelines can be enabled or disabled  by setting the `ShowIndentationGuidelines` property. Its default value is `true`, to hide the indentation guidelines in EditControl turned off it value to `false`, or by invoking the `HideIndentGuideline` method. Also, the indent guideline for the current region can be set by using the `ShowIndentGuideline` method.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Indentation Guidelines are displayed.
+
+this.editControl1.ShowIndentationGuidelines = true;
+
+// Hide Indentation Guideline.
+
+this.editControl1.HideIndentGuideline();
+
+// Show Indentation Guideline.
+
+this.editControl1.ShowIndentGuideline();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Indentation Guidelines are displayed.
+
+Me.editControl1.ShowIndentationGuidelines = True
+
+' Hide Indentation Guideline.
+
+Me.editControl1.HideIndentGuideline()
+
+' Show Indentation Guideline.
+
+Me.editControl1.ShowIndentGuideline()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Positioning**
+
+It is also possible to position the caret to the beginning or end of the indentation block by using the JumpToIndentBlockStart and JumpToIndentBlockEnd methods respectively.
+
+<table>
+<tr>
+<th>
+Methods</th><th>
+Description</th></tr>
+<tr>
+<td>
+JumpToIndentBlockStart</td><td>
+Jumps to the start of the block</td></tr>
+<tr>
+<td>
+JumpToIndentBlockEnd</td><td>
+Jumps to the end of the block</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.JumpToIndentBlockStart();
+
+this.editControl1.JumpToIndentBlockEnd();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.JumpToIndentBlockStart()
+
+Me.editControl1.JumpToIndentBlockEnd()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Auto Indentation
+
+The EditControl offers advanced text indentation support to suit the requirements of the user. The properties given in the following table can be used to customize the auto indentation settings of the EditControl.
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Description</th></tr>
+<tr>
+<td>
+AutoIndentMode</td><td>
+Specifies mode of auto indentation. The options provided are None, Block and Smart</td></tr>
+<tr>
+<td>
+<br>AutoIndentGuideline</td><td>
+Specifies a value that specifies whether indent guideline should be shown automatically after cursor repositioning</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Sets the AutoIntentMode.
+
+this.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoIndentMode.None;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Sets the AutoIntentMode.
+
+Me.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoIndentMode.None
+
+{% endhighlight %}
+
+{% endtabs %}
+
+If Enter is pressed when the AutoIndentMode is set to None, the text is not indented.
+
+![](Editing-Features_images/Editing-Features_img6.png)
+
+When the AutoIndentMode is set to Smart, the next line is indented by one TabSize from the first column of the previous line on pressing Enter.
+
+![](Editing-Features_images/Editing-Features_img7.png)
+
+When the AutoIndentMode is set to Block, the next line begins at the same column as the previous line on pressing the ENTER key.
+
+![](Editing-Features_images/Editing-Features_img8.png)
+
+**Lexem support for AutoIndent block mode**
+
+In the EditControl, the `EnableSmartInBlockIndent` property ensures the AutoIndent Block mode with respect to the lexem’s config.indent. With this property, the Block mode will work like Smart mode for conditional statements.
+
+When this property is enabled, the lines will be aligned to the position of the previous indented line. The lines will begin at the original start position if disabled.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+EnableSmartInBlockIndent</td><td>
+Specifies a value to make the Block mode work like Smart mode for conditional statements</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Specifies a value to make the Block mode work like Smart mode for conditional statements.
+
+this.editcontrol1.EnableSmartInBlockIndent = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+// Specifies a value to make the Block mode work like Smart mode for conditional statements.
+
+Me.editcontrol1.EnableSmartInBlockIndent = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The Auto Indentation characters can also be specified by setting the Indent field to True in the lexem definition of the configuration file, as shown below.
+
+{% highlight xaml %}
+
+<lexem BeginBlock="{" EndBlock="}" Type="Operator" IsComplex="true" IsCollapsable="true" Indent="true"  CollapseName="{...}" IndentationGuideline="true">
+
+{% endhighlight %}
+
+### Customize indent appearence
+
+Indentation guidelines and bracket highlighting blocks can be customized by using the below given properties.
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Description</th></tr>
+<tr>
+<td>
+IndentLineColor</td><td>
+Specifies color of the indent line</td></tr>
+<tr>
+<td>
+IndentBlockHighlightingColor</td><td>
+Specifies color of the indent block start and end</td></tr>
+<tr>
+<td>
+IndentationBlockBackgroundBrush</td><td>
+Specifies brush for indentation block background</td></tr>
+<tr>
+<td>
+IndentationBlockBorderColor</td><td>
+Specifies color of indentation block border line</td></tr>
+<tr>
+<td>
+IndentationBlockBorderStyle</td><td>
+Specifies style of indentation block border line</td></tr>
+<tr>
+<td>
+ShowIndentationBlockBorders</td><td>
+Specifies whether indentation block borders should be drawn</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.IndentLineColor = Color.OrangeRed;
+
+this.editControl1.IndentBlockHighlightingColor = Color.IndianRed;
+
+this.editControl1.IndentationBlockBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.SystemColors.Info, System.Drawing.Color.Khaki);
+
+this.editControl1.IndentationBlockBorderColor = System.Drawing.Color.Crimson;
+
+this.editControl1.IndentationBlockBorderStyle = Syncfusion.Windows.Forms.Edit.Enums.FrameBorderStyle.DashDot;
+
+this.editControl1.ShowIndentationBlockBorders = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.IndentLineColor = Color.OrangeRed
+
+Me.editControl1.IndentBlockHighlightingColor = Color.IndianRed
+
+Me.editControl1.IndentationBlockBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.SystemColors.Info, System.Drawing.Color.Khaki)
+
+Me.editControl1.IndentationBlockBorderColor = System.Drawing.Color.Crimson
+
+Me.editControl1.IndentationBlockBorderStyle = Syncfusion.Windows.Forms.Edit.Enums.FrameBorderStyle.DashDot
+
+Me.editControl1.ShowIndentationBlockBorders = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img9.png)
+
+## Commands
+
+EditControl provides extensive support for various commands same as like Visual Studio Code Editor.
+
+### Default Key commands
 
 The keyboard shortcuts for the commands in the EditControl are listed below.
 
@@ -845,22 +1357,13 @@ Show context choice</td><td>
 CTRL+SPACEBAR</td></tr>
 </table>
 
-EditControl offers support for the action-keystroke binding functionality, providing you the ability to perform advanced customization of action-keystroke bindings to suit your preferences. You can bind any desired keystroke combination to a standard (or custom) command like Copy, Cut, Paste or Find in the designer using the Keys Binding dialog as illustrated in the following procedure:
+The parent form of EditControl can be closed while pressing escape key when setting the `AcceptsEscape` property as `false`. Its default is `true`. This operation is performed only when parent form contains `Cancel` button.
 
-   1. In the Editor Keys Binding dialog box, select the desired standard command. The default shortcuts assigned for a particular command are listed in the combobox under the Shortcut(s) for selected command: label.
-   2. Set the focus to the Edit Box. Press TAB to navigate to the shortcuts drop-down list.
-   3. Press the desired key or key combination.
-   4. Now, click the Assign button, to assign this keystroke combination as the shortcut for that particular standard command. Click OK.
+### Custom command binding
 
-The `KeyBinder` property is used to get the key binder, and the `KeyBindingProcessor` property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked using the `ShowKeysBindingEditor` method of the EditControl.
+By using the `RegisteringKeyCommands` and `RegisteringDefaultKeyBindings` events we can add the user-defined commands and bind the desired custom keystroke combinations to them.
 
-The following illustration shows the Keys Binding dialog box.
-
-![](Editing-Features_images/Editing-Features_img6.png)
-
-You can also make use the `RegisteringKeyCommands` and `RegisteringDefaultKeyBindings` events to specify user-defined commands and bind the desired custom keystroke combinations to them.
-
-This following code example registers the "File.Open" command and binds a Ctrl+O keystroke combination to it.
+This following code example registers the "File.Open" command and binds a <kbd>Ctrl+O</kbd> keystroke combination to it.
 
 {% tabs %}
 
@@ -934,13 +1437,180 @@ End Sub
 
 {% endtabs %}
 
+## Accept tab 
+
+EditControl supports text operations with tabs Keys. Essential Edit controls the insertion of tabs using the `UseTabs` property, which lets you specify whether a tab (or an equivalent number of spaces) needs to be inserted, when the TAB key is pressed in the EditControl. Similarly, tab stops can also be inserted. 
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Description</th></tr>
+<tr>
+<td>
+UseTabs</td><td>
+Specifies whether tab symbol is allowed or spaces should be used instead. Setting this property to `true`, allows you to insert tabs, whereas setting it to `false`, allows you to insert spaces</td></tr>
+<tr>
+<td>
+UseTabStops</td><td>
+Specifies a value that indicates whether tab stops should be used</td></tr>
+<tr>
+<td>
+TabStopsArray</td><td>
+Specifies an array of tab stops</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.UseTabs = true;
+
+this.editControl1.UseTabStops = true;
+
+this.editControl1.TabStopsArray = new int[] { 8, 16, 24, 32, 40};
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.UseTabs = True
+
+Me.editControl1.UseTabStops = True
+
+Me.EditControl1.TabStopsArray = New Integer() {8, 16, 24, 32, 40}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Insert space/ keep tabs
+
+The following methods can be used convert the spaces in a selected region into tabs and vice versa. Tab symbols can also be added, inserted or removed from selected text.
+
+<table>
+<tr>
+<th>
+Methods</th><th>
+Description</th></tr>
+<tr>
+<td>
+AddTabsToSelection</td><td>
+Adds leading tab symbol to the selected lines, or just inserts the tab symbol</td></tr>
+<tr>
+<td>
+RemoveTabsFromSelection</td><td>
+Removes leading tab symbol (or its spaces equivalent) from selected lines</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Add or insert leading tab symbol to selected lines.
+
+this.editControl1.AddTabsToSelection();
+
+// Remove leading tab symbol from selected lines.
+
+this.editControl1.RemoveTabsFromSelection();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Add or insert leading tab symbol to selected lines.
+
+Me.editControl1.AddTabsToSelection()
+
+' Remove leading tab symbol from selected lines.
+
+Me.editControl1.RemoveTabsFromSelection()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Keep tab character
+
+The `TransferFocusOnTab` property allows you to specify, whether the EditControl should process the TAB key as a text input, or transfer the focus to the next control (by the order of TabIndex property value) on the Form or the User Control hosting the EditControl.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Insert tabs into the EditControl as text input. 
+
+this.editControl1.TransferFocusOnTab = false;
+
+// Transfer focus to the next control.
+
+this.editControl1.TransferFocusOnTab = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Insert tabs into the EditControl as text input.
+
+this.editControl1.TransferFocusOnTab = False
+
+' Transfer focus to the next control.
+
+this.editControl1.TransferFocusOnTab = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Change tab character size
+
+The size of the tab can be specified by using the below given property.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+TabSize</td><td>
+Specifies tab size in spaces</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Size of the tab in terms of space.
+
+this.editControl1.TabSize = 8;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Size of the tab in terms of space.
+
+Me.editControl1.TabSize = 8
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Context menu options
 
-EditControl has a built-in context menu which is enabled, by default. This context menu allows you to edit the contents, and open or create a new file. It includes some advanced features like indent selection, comment selection, adding bookmarks and much more. This is enabled by using the `editControl1.ContextMenuManager.Enabled` property.
+EditControl has a built-in context menu which is enabled, by default. This context menu allows you to edit the contents, and open or create a new file. It includes some advanced features like indent selection, comment selection, adding bookmarks and much more. 
 
-The context menu has the standard VS.NET-like appearance, and can optionally be provided with the Office 2003 appearance.
+### Default context menu options 
 
-![](Editing-Features_images/Editing-Features_img7.png)
+Context menu is enabled by using the `editControl1.ContextMenuManager.Enabled` property. ContextMenu can be enabled or disabled by using the `ContextMenuEnabled` property of EditControl. Its default value is `true`. 
+
+![](Editing-Features_images/Editing-Features_img10.png)
 
 Set the appearance of the context menu by specifying the desired ContextMenuProvider.
 
@@ -973,9 +1643,9 @@ Me.editControl1.ContextMenuManager.ContextMenuProvider = New Syncfusion.Windows.
 
 {% endtabs %}
 
-### Adding customized menu items
+### Remove default context menu
 
-EditControl also provide an extensive support to add the custom context menu items. You can handle the `MenuFill` event to add Menu Items to the context menu. This is illustrated in the below code snippet. 
+By using `MenuFill` event of EditControl, we can remove the default context menu items. 
 
 {% tabs %}
 
@@ -993,6 +1663,107 @@ ContextMenuManager cm = (ContextMenuManager) sender;
 // To clear default context menu items.
 
 cm.ClearMenu();
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Handle the MenuFill event which is called each time the context menu is displayed.
+
+AddHandler Me.editControl1.MenuFill, AddressOf cm_FillMenu
+
+Private Sub cm_FillMenu(ByVal sender As Object, ByVal e As EventArgs)
+
+Dim cm As ContextMenuManager = CType(sender, ContextMenuManager)
+
+' To clear default context menu items.
+
+cm.ClearMenu();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Disable particular item from context menu
+
+Context menu item can be set as disabled using `SetContextMenuItemEnabled` method by setting the bool value to be false.
+
+{% tabs %}
+
+{% highlight C# %}
+
+  private void EditControl1_MenuFill(object sender, EventArgs e)
+  {
+      ContextMenuManager contextMenu = (ContextMenuManager)sender;
+            
+      contextMenu.ContextMenuProvider.SetContextMenuItemEnabled("&Edit", false);
+      
+  }     
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+    Private Sub EditControl1_MenuFill(ByVal sender As Object, ByVal e As EventArgs)
+    {
+         Dim contextMenu As ContextMenuManager = CType(sender, ContextMenuManager)
+            
+         contextMenu.ContextMenuProvider.SetContextMenuItemEnabled("&Edit", False)
+        
+     }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img21.png)
+
+## Change shortcut key for context menu options
+
+You can use the KeyBinder and assign a new key to the `ContextMenu` string command.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Displays the context choice when Ctrl+L keys are pressed.
+
+this.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Editor.ContextChoice");
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Displays the context choice when Ctrl+L keys are pressed.
+
+this.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Editor.ContextChoice")
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Add custom context menu item
+
+EditControl also provide an extensive support to add the custom context menu items. You can handle the `MenuFill` event to add Menu Items to the context menu. This is illustrated in the below code snippet. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Handle the MenuFill event which is called each time the context menu is displayed.
+
+this.editControl1.MenuFill += new EventHandler(cm_FillMenu);
+
+private void cm_FillMenu(object sender, EventArgs e)
+{
+
+ContextMenuManager cm = (ContextMenuManager) sender;
 
 // Add a separator.
 
@@ -1040,10 +1811,6 @@ Private Sub cm_FillMenu(ByVal sender As Object, ByVal e As EventArgs)
 
 Dim cm As ContextMenuManager = CType(sender, ContextMenuManager)
 
-' To clear default context menu items.
-
-cm.ClearMenu();
-
 ' Add a separator.
 
 cm.AddSeparator()
@@ -1087,787 +1854,51 @@ End Sub
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img8.png)
-
-## Find and replace
-
-The EditControl supports text search and replace functionalities through the use of the FindText and ReplaceText methods. There are also other useful methods like FindCurrentText, FindNext and ReplaceAll that assist in this purpose.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-FindText</td><td>
-Finds the first occurrence of the specified text as per the conditions specified like match case, match whole word, search hidden text and search up</td></tr>
-<tr>
-<td>
-FindRange</td><td>
-Searches for given string in the text of control and returns text range of first found occurrence</td></tr>
-<tr>
-<td>
-FindRegex</td><td>
-Looks for specified expression in text</td></tr>
-<tr>
-<td>
-ReplaceText</td><td>
-Replaces the first occurrence of the specified text with the replacement text as per the conditions specified like match case, match whole word, search hidden text and search up</td></tr>
-<tr>
-<td>
-FindCurrentText</td><td>
-Finds the next occurrence of the word on which the cursor is presently on</td></tr>
-<tr>
-<td>
-FindNext</td><td>
-Finds the next occurrence of the current search text</td></tr>
-<tr>
-<td>
-ReplaceAll</td><td>
-Replaces all occurrences of the search text with the replacement text as per the conditions specified like match case, match whole word, search hidden text and search up</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Finds the first occurrence of the specified text as per the conditions specified.
-
-this.editControl1.FindText("Essential Edit", true, true, true, true, null);
-
-// Searches for given string in the text of control and returns text range of first found occurrence.
-
-this.editControl1.FindRange(searchString, startLocation, endLocation, matchWholeWord, searchHiddenText, searchUp, useRegex);
-
-// Looks for specified expression in text.
-
-this.editControl1.FindRegex(startLine, startColumn, expression, bSearchInCollapsed, searchUp);
-
-// Replaces the first occurrence of the specified text with the replacement text as per the conditions specified.
-
-this.editControl1.ReplaceText("ShowVerticalScrollbar", "ShowVerticalScroller");
-
-// Finds the next occurrence of the word on which the cursor is presently on.
-
-this.editControl1.FindCurrentText();
-
-// Finds the next occurrence of the current search text.
-
-this.editControl1.FindNext();
-
-// Replaces all occurrences of the search text with the replacement text as per the conditions specified.
-
-this.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop");
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Finds the first occurrence of the specified text as per the conditions specified.
-
-Me.editControl1.FindText("Essential Edit", True, True, True, True, Nothing)
-
-' Searches for given string in the text of control and returns text range of first found occurrence.
-
-Me.editControl1.FindRange(searchString, startLocation, endLocation, matchWholeWord, searchHiddenText, searchUp, useRegex)
-
-' Looks for specified expression in text.
-
-Me.editControl1.FindRegex(startLine, startColumn, expression, bSearchInCollapsed, searchUp)
-
-' Replaces the first occurrence of the specified text with the replacement text as per the conditions specified.
-
-Me.editControl1.ReplaceText("ShowVerticalScrollbar", "ShowVerticalScroller") 
-
-' Finds the next occurrence of the word on which the cursor is presently on.
-
-Me.editControl1.FindCurrentText()
-
-' Finds the next occurrence of the current search text.
-
-Me.editControl1.FindNext()
-
-' Replaces all occurrences of the search text with the replacement text as per the conditions specified.
-
-Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Editing-Features_images/Editing-Features_img9.png)
-
-**Find and Replace dialog boxes**
-
-EditControl also supports advanced and customizable Find and Replace dialog boxes. The Find dialog box is invoked by using the ShowFindDialog method. The keyboard shortcut to this dialog box is Ctrl+F.
-
-![](Editing-Features_images/Editing-Features_img10.png)
-
-The Replace dialog box is invoked by using the ShowReplaceDialog method. The keyboard shortcut to this dialog box is Ctrl+H. The Replace dialog box also allows you to find and replace words 
-within the selected text.
-
 ![](Editing-Features_images/Editing-Features_img11.png)
 
+## Line modification marker
+
+EditControl tracks changed lines by displaying markers at the start of lines that have been modified after the file has been loaded or after the last file save operation. Changed lines marking feature can be enabled by setting the `MarkChangedLines` property to `true`. To enable this functionality in the EditControl, the `SelectionMargin` property should also be enabled.
+
 {% tabs %}
 
 {% highlight C# %}
 
-// Invoke the Find Dialog.
+this.editControl1.MarkChangedLines = true;
 
-this.editControl1.ShowFindDialog();
-
-// Invoke the Replace Dialog.
-
-this.editControl1.ShowReplaceDialog();
+this.editControl1.ShowSelectionMargin = true;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-' Invoke the Find Dialog.
+Me.editControl1.MarkChangedLines = True
 
-Me.editControl1.ShowFindDialog()
-
-' Invoke the Replace Dialog.
-
-Me.editControl1.ShowReplaceDialog()
+Me.editControl1.ShowSelectionMargin = true
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Essential Edit now enables you to create a new find dialog by inheriting Essential Edit’s find dialog. You can customize the Find Dialog by changing the properties and triggers the events of the buttons such as Find, Mark All and Close. You can also easily localize the captions of the controls in the Find dialog.
+![](Editing-Features_images/Editing-Features_img12.jpg)
 
-**Creating a class for own find dialog**
+### Modified line marker color
 
-Create a class for own find dialog that inherits the frmFindDialog class.
-
-The following code illustrates this.
+We can also set the color for the changing lines by using `ChangedLinesMarkingLineColor` property of EditControl.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Inherits the frmFindDialog
-
-public class FindDialogExt : Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog
+this.editControl1.ChangedLinesMarkingLineColor = Color.Red;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-‘Inherits the frmFindDialog.
-
-Public Class FindDialogExt
-
-Inherits Syncfusion.Windows.Forms.Edit.Dialogs.frmFindDialog
-
-End Class
-
-{% endhighlight %}
-
-{% endtabs %}
-
-This event occurs in FindNext() when search reaches the starting point of the search before the message box displays.
-
-The event handler receives an argument of FindCompleteEventArgs . This argument class sets the text for message box. Users can localize this text.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Handle the FindComplete event.
-
- this.FindComplete += new EventHandler<FindCompleteEventArgs>(FindDialogExt_FindComplete);
-
-//Set the value for message box for when search reaches the starting point of search
-
-Private void FindDialogExt_FindComplete(object sender, frmFindDialog.FindCompleteEventArgs e)
-{
-     //Arabic text as message(localize)
-
-     if (messageString != string.Empty)
-
-         e.Message = "انتهى";
-
-     else
-
-          e.Message = "Find reached the starting point of the search.";
-
-}
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Handle the FindComplete event.
-
-Private Me.editControl1.FindComplete += New EventHandler(Of FindCompleteEventArgs)(AddressOf FindDialogExt_FindComplete)
-
-'Set the value for message box for when search reaches the starting point of search
-
-Private Sub FindDialogExt_FindComplete(ByVal sender As Object, ByVal e As frmFindDialog.FindCompleteEventArgs)
-
-     'Arabic text as message (localize)
-
-     If messageString <> String.Empty Then
-
-        e.Message = "انتهى"
-
-     Else
-
-        e.Message = "Find reached the starting point of the search."
-
-     End If
-
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Editing-Features_images/Appearance_img12.jpeg)
-
-Default key bindings to these dialogs can be changed as explained in the Keystroke - Action Combinations Binding topic.
-
-### History properties
-
-The FindHistory property is used to add/remove items from the find history in the Find dialog box. The ReplaceHistory property is used to add/remove items from the replace history in the Replace dialog box. Similarly, the ReplaceSearchHistory property is used to add / remove items from the find history in the Replace dialog box.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-FindHistory</td><td>
-Specifies history of Find dialog</td></tr>
-<tr>
-<td>
-ReplaceHistory</td><td>
-Gets history of Replace dialog</td></tr>
-<tr>
-<td>
-ReplaceSearchHistory</td><td>
-Gets search history of Replace dialog</td></tr>
-</table>
-
-The methods associated with the FindHistory property are used to perform the following operations.
-
-<table>
-<tr>
-<th>
-FindHistory method</th><th>
-Description</th></tr>
-<tr>
-<td>
-Insert</td><td>
-Inserts an element into the System.Collections.ArrayList at the specified index</td></tr>
-<tr>
-<td>
-Remove</td><td>
-Removes an element or the first occurrence from the System.Collections.ArrayList of the specified index</td></tr>
-<tr>
-<td>
-Sort</td><td>
-Sorts all the elements in the System.Collections.ArrayList</td></tr>
-<tr>
-<td>
-Clear</td><td>
-Clears all the items in the FindHistory</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.FindHistory.Insert(0,(object)ATH.addedItem);
-
-this.editControl1.FindHistory.Remove(o);
-
-this.editControl1.FindHistory.Sort();
-
-this.editControl1.FindHistory.Clear();
-
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.FindHistory.Insert(0,CType(ATH.addedItem, Object))
-
-Me.editControl1.FindHistory.Remove(o)
-
-Me.editControl1.FindHistory.Sort()
-
-Me.editControl1.FindHistory.Clear()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> The above methods can also be set for the ReplaceHistory and ReplaceSearchHistory properties.
-
-## GoTo line
-
-The EditControl supports the `GoTo` functionality both through the use of a run time dialog box and through programmatic APIs. The `GoTo` method is used to position the mouse pointer on any specified line that the user wish to go. The GoTo method not only positions the pointer on the appropriate line, but it also scrolls the concerned line into the view. 
-
-The `linesAbove` argument can be used to specify the number of lines to be displayed above the pointer.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Places the cursor at the beginning of the given line number.
-
-this.editControl1.GoTo(lineNumber);
-
-this.editControl1.GoTo(lineNumber, linesAbove);
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Places the cursor at the beginning of the given line number.
-
-Me.editControl1.GoTo(lineNumber)
-
-Me.editControl1.GoTo(lineNumber, linesAbove);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The CurrentLine property explained in the Positions and Offsets section, also does the same task as the GoTo method. The Goto dialog box is invoked using the ShowGoToDialog method. The keyboard shortcut to this dialog box is Ctrl+G.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Invoke the GoTo Dialog.
-
-this.editControl1.ShowGoToDialog();
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Invoke the GoTo Dialog.
-
-Me.editControl1.ShowGoToDialog()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Editing-Features_images/Editing-Features_img12.png)
-
-## Context ToolTip
-
-EditControl provides the extensive tooltip support, it is modeled on the Quick Info intellisense feature of Visual Studio. Context ToolTip is displayed when the mouse is hovered over a content or text in the EditControl. Whenever the mouse hovers over a token, the `UpdateContextTooltip` event is fired for quick information on the lexem. If some text information is provided, it is displayed in a tooltip.
-
-![](Editing-Features_images/Editing-Features_img13.png)
-
-The Context ToolTip can be populated with additional information on the corresponding lexem by handling the `UpdateContextTooltip` event of EditControl.
-
-{% tabs %}
-
-{% highlight C# %}
-
-private void editControl1_UpdateContextToolTip(object sender, Syncfusion.Windows.Forms.Edit.Dialogs.UpdateTooltipEventArgs e)
-{
-   if( e.Text == string.Empty )
-   {
-
-     Point pointVirtual = editControl1.PointToVirtualPosition( new Point( e.X, e.Y ) );
-
-     if( pointVirtual.Y > 0 )
-     {
-        // Get the current line
-        ILexemLine line = editControl1.GetLine( pointVirtual.Y );
-
-        if( line != null )
-        {
-            // Get tokens from the current line
-            ILexem lexem = line.FindLexemByColumn( pointVirtual.X );
-            if( lexem != null )
-            {
-                // Set the desired information tooltip
-                e.Text = "This is additional information on " + lexem.Text;
-            }
-         }
-      }
-
-    }
-}
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Private Sub editControl1_UpdateContextToolTip(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.Dialogs.UpdateTooltipEventArgs) Handles EditControl1.UpdateContextToolTip
-
-   If e.Text = String.Empty Then
-
-      Dim pointVirtual As Point = editControl1.PointToVirtualPosition(New Point(e.X, e.Y))
-
-      If pointVirtual.Y > 0 Then
-
-         ' Get the current line
-
-          Dim line As ILexemLine = editControl1.GetLine(pointVirtual.Y)
-
-          If Not (line Is Nothing) Then
-
-             ' Get tokens from the current line
-
-              Dim lexem As ILexem = line.FindLexemByColumn(pointVirtual.X)
-
-              If Not (lexem Is Nothing) Then
-
-                ' Set the desired information tooltip
-
-                 e.Text = "This is additional information on " + lexem.Text;
-
-              End If
-
-          End If
-
-        End If
-
-   End If
-
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Customization
-
-The brush for the Context ToolTip background can be set by using the `ContextTooltipBackgroundBrush` property. And also the border color of the Context ToolTip form can be customized by using the `ContextTooltipBorderColor` property.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.ContextTooltipBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.LavenderBlush, System.Drawing.Color.Khaki);
-
-this.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.ContextTooltipBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.LavenderBlush, System.Drawing.Color.Khaki)
-
-Me.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Showing the ToolTip
-
-The Context ToolTip window can be shown or hidden by setting the `ShowContextTooltip` property to True.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Shows the Context ToolTip pop-up window.
-
-this.editControl1.ShowContextTooltip = true;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Shows the Context ToolTip pop-up window.
-
-Me.editControl1.ShowContextTooltip = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**ToolTip delay**
-
-It is also possible to specify the time delay after which the tooltip should be displayed by using the `ToolTipDelay` property.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Displays the tooltip pop-up after 1000 milliseconds( 1 sec )
-
-this.editControl1.ToolTipDelay = 1000;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Displays the tooltip pop-up after 1000 milliseconds( 1 sec )
-
-Me.edtiControl1.ToolTipDelay = 1000
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**Closing the ToolTip**
-
-The Context ToolTip window is closed by using the CloseContextTooltip method.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Closes the Context ToolTip pop-up window.
-
-this.editControl1.CloseContextTooltip();
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Closes the Context ToolTip pop-up window.
-
-Me.editControl1.CloseContextTooltip();
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Text navigation
-
-EditControl offers extensive support for text navigation. You can perform navigation at character, word, line, page or entire document levels. This section briefly explains the navigation of text in EditControl.
-
-### Character level navigation
-
-The following methods enable text navigation in the EditControl, in terms of characters or columns.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-MoveUp</td><td>
-Moves cursor up, if possible</td></tr>
-<tr>
-<td>
-MoveDown</td><td>
-Moves cursor down, if possible</td></tr>
-<tr>
-<td>
-MoveLeft</td><td>
-Moves cursor left, if possible</td></tr>
-<tr>
-<td>
-MoveRight</td><td>
-Moves cursor right, if possible</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.MoveUp();
-
-this.editControl1.MoveDown();
-
-this.editControl1.MoveLeft();
-
-this.editControl1.MoveRight();
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.MoveUp()
-
-Me.editControl1.MoveDown()
-
-Me.editControl1.MoveLeft()
-
-Me.editControl1.MoveRight()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Word level navigation
-
-The following methods enable text navigation in the EditControl, in terms of words.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-MoveLeftWord</td><td>
-Moves caret to the left by one word</td></tr>
-<tr>
-<td>
-MoveRightWord</td><td>
-Moves caret to the right by one word</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.MoveLeftWord();
-
-this.editControl1.MoveRightWord();
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.MoveLeftWord()
-
-Me.editControl1.MoveRightWord()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Line level navigation
-
-The following methods enable text navigation in the EditControl, in terms of lines.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-MoveToLineStart</td><td>
-Moves caret to the beginning of the line. First whitespace will be skipped</td></tr>
-<tr>
-<td>
-MoveToLineEnd</td><td>
-Moves caret to the end of the line</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.MoveToLineStart();
-
-this.editControl1.MoveToLineEnd();
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.MoveToLineStart()
-
-Me.editControl1.MoveToLineEnd()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Page level navigation
-
-The following methods enable text navigation in the EditControl, in terms of pages.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-MovePageUp</td><td>
-Moves caret one page up</td></tr>
-<tr>
-<td>
-MovePageDown</td><td>
-Moves caret one page down</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.MovePageUp();
-
-this.editControl1.MovePageDown();
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.MovePageUp()
-
-Me.editControl1.MovePageDown()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Document level navigation
-
-The following methods enable text navigation in the EditControl, in terms of documents.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-MoveToBeginning</td><td>
-Moves caret to the beginning of the file</td></tr>
-<tr>
-<td>
-MoveToEnd</td><td>
-Moves caret to the end of the file</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.MoveToBeginning();
-
-this.editControl1.MoveToEnd();
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.MoveToBeginning()
-
-Me.editControl1.MoveToEnd()
+Me.editControl1.ChangedLinesMarkingLineColor = Color.Red
 
 {% endhighlight %}
 
@@ -1875,13 +1906,32 @@ Me.editControl1.MoveToEnd()
 
 ![](Editing-Features_images/Editing-Features_img18.png)
 
-## Text handling
+### Saved line marker color
 
-EditControl offers support for text manipulation operations like append, delete and insertion of multiple lines of text.
+We can also set the color for the changing lines by using `SavedLinesMarkingLineColor` property of EditControl.
 
-### Appending text
+{% tabs %}
 
-Text can be appended to the EditControl by using the following method.
+{% highlight C# %}
+
+this.editControl1.SavedLinesMarkingLineColor = Color.Orange;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.SavedLinesMarkingLineColor = Color.Orange
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img19.png)
+
+## Comment out lines
+
+EditControl provides support for commenting and uncommenting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given methods.
 
 <table>
 <tr>
@@ -1890,115 +1940,198 @@ Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-AppendText</td><td>
-Appends the specified text to the end of the existing contents of the EditControl</td></tr>
+CommentLine</td><td>
+Comments single line</td></tr>
+<tr>
+<td>
+CommentSelection</td><td>
+Comments selected text</td></tr>
+<tr>
+<td>
+CommentText</td><td>
+Comments text in the specified range</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Appends the given string to the end of the text in EditControl.
+this.editControl1.CommentLine(1);
 
-this.editControl1.AppendText(" text to be appended ");
+this.editControl1.CommentSelection();
+
+this.editControl1.CommentText(new Point(1, 1), new Point(7, 7));
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-' Appends the given string to the end of the text in the EditControl.
+Me.editControl1.CommentLine(1)
 
-Me.editControl1.AppendText(" text to be appended ")
+Me.editControl1.CommentSelection()
+
+Me.editControl1.CommentText(New Point(1, 1), New Point(7, 7))
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Inserting text
-
-The Insert mode can be enabled in the EditControl by setting the `InsertMode` property. Its default value is true. Text can be inserted anywhere inside the EditControl by using the `InsertText` method as follows. The mode of the INSERT key can also be toggled by using the ToggleInsertMode method of the EditControl.
-
+Comments can be removed by using the below given methods.
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-InsertText</td><td>
-Inserts a piece of text at any desired position in the EditControl</td></tr>
+UnCommentLine</td><td>
+UnComments single line</td></tr>
+<tr>
+<td>
+UnCommentSelection</td><td>
+UnComments selected text</td></tr>
+<tr>
+<td>
+UnCommentText</td><td>
+UnComments text in the specified range</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.InsertMode = true;
+this.editControl1.UnCommentLine();
 
-this.editControl1.InsertText(7, 5, "Inserting Text");
+this.editControl1.UncommentSelection();
 
-// Toggle the insert mode.
-
-this.editControl1.ToggleInsertMode();
+this.editControl1.UncommentText(new Point(1, 1), new Point(7, 7));
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.InsertMode = true
+Me.editControl1.UnCommentLine()
 
-Me.editControl1.InsertText(7, 5, "Inserting Text")
+Me.editControl1.UncommentSelection()
 
-' Toggle the insert mode.
-
-Me.editControl1.ToggleInsertMode()
+Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
 
 {% endhighlight %}
 
 {% endtabs %}
 
-**Inserting multiple lines**
+## New line styles
 
-Collection of text lines can be inserted by using the `Lines` property.
+EditControl allows you to specify a new line style, or get the currently used new line style in the text. `SetNewLineStyle` method sets the current new line style in the EditControl. SetNewLineStyle method accepts values from the NewLineStyle enumerator which has values like Windows, Mac, Unix and Control. Similarly, the `GetNewLineStyle` method returns a NewLineStyle enumerator value which indicates the currently used new line style in the EditControl.
+
+The default new line style value is set to 'Control'. This value can be changed according to the needs of the user using the DefaultNewLineStyle property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Change the current new line style in the EditControl.
+
+this.editControl1.SetNewLineStyle(Syncfusion.IO.NewLineStyle.Control);
+
+this.editControl1.GetNewLineStyle();
+
+// Specify the default new line style.
+
+this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Change the current new line style in the EditControl.
+
+Me.editControl1.SetNewLineStyle(Syncfusion.IO.NewLineStyle.Control)
+
+Me.editControl1.GetNewLineStyle()
+
+' Specify the default new line style.
+
+Me.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Space indicators
+
+EditControl has the ability to indicate whitespace in its contents with default indicators, explained as follows.
+
+1. Single Spaces are indicated by using Dots.
+2. Tabs are indicated by using Right Arrows.
+3. Line Feeds are indicated by using a special Line Feed Symbol.
+
+![](Editing-Features_images/Editing-Features_img13.png)
+
+### Configure the space indicator
+
+We can configure the whitespace indicators by setting the `ShowWhiteSpaces` property to `true`. By default, this property is set to `false`.
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th></tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-Lines</td><td>
-Lets you to specify multiple lines of text to the EditControl in the form of a string array. This feature is similar to the one in .NET RichTextBox control</td></tr>
+<td>ShowWhiteSpaces</td>
+<td>Specifies value indicating whether whitespace should be shown as special symbols</td>
+</tr>
+</table>
+
+You can also toggle the visibility of the whitespace indicators by using the `ToggleShowingWhiteSpaces` method.
+
+<table>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>ToggleShowingWhiteSpaces</td>
+<td>Toggles showing of whitespace</td>
+</tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Specifies multiple lines of text to the EditControl in the form of a string array.
+// Enabling white space indicators.
 
-this.editControl1.Lines = new string[] {" first line ", " second line ", " third line "};
+this.editControl1.ShowWhitespaces = true;
+
+// Toggle the visibility of the white space indicators.
+
+this.editControl1.ToggleShowingWhiteSpaces();
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-// Specifies multiple lines of text to the EditControl in the form of a string array.
+' Enabling white space indicators.
 
-Me.editControl1.Lines = new string[] {" first line ", " second line ", " third line "}
+Me.editControl1.ShowWhitespaces = True
+
+' Toggle the visibility of the white space indicators.
+
+Me.editControl1.ToggleShowingWhiteSpaces()
 
 {% endhighlight %}
 
 {% endtabs %}
 
-**Inserting text based on conditions**
+**Showing or hiding indicators**
 
-Text can also be inserted based on condition. The following properties can be used to insert text based on conditions that are described as follows.
+You can selectively show or hide the whitespace indicators by using the following sub properties of the WhiteSpaceIndicators property - ShowSpaces, ShowTabs and ShowNewLines.
 
 <table>
 <tr>
@@ -2007,306 +2140,123 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-AllowDrop</td><td>
-Specifies whether drag and drop operations are allowed for control</td></tr>
+ShowSpaces</td><td>
+Indicates whether spaces should be replaced with symbols</td></tr>
 <tr>
 <td>
-AllowInsertBeforeReadOnlyNewLine</td><td>
-Specifies whether inserting text should be allowed at the beginning of readonly region at the start of new line</td></tr>
+ShowTabs</td><td>
+Indicates whether tabs should be replaced with symbols</td></tr>
 <tr>
 <td>
-InsertDroppedFileIntoText</td><td>
-Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.When this property is set to 'False', the current file is closed, and the dropped outer file is opened</td></tr>
-<tr>
-<td>
-RespectTabStopsOnInsertingText</td><td>
-Specifies whether the tab stops should be valued on inserting blocks of text</td></tr>
-<tr>
-<td>
-ShowFileDropNotification</td><td>
-Specifies whether the Notification message is to be displayed when the outer file is dragged and dropped onto the EditControl</td></tr>
+ShowNewLines</td><td>
+Indicates whether new lines should be replaced with symbols</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Allows text insertion only at the beginning of the ReadOnly region at the start of a new line.
+// Custom indicator for Line Feed.
 
-this.editControl1.AllowInsertBeforeReadonlyNewLine = true;
+this.editControl1.WhiteSpaceIndicators.ShowSpaces = true;
 
-//To set the EditControl that allows to Drag and Dropping files
+// Custom indicator for Tab.
 
-this.editControl1.AllowDrop = true; 
+this.editControl1.WhiteSpaceIndicators.ShowTabs = true;
 
-// Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.
+// Custom indicator for Space Character.
 
-this.editControl1.InsertDroppedFileIntoText = true;
-
-// To hide the notification message displayed when the outer file is dragged and dropped onto the EditControl.
-
-this.editControl1.ShowFileDropNotification = false;
+this.editControl1.WhiteSpaceIndicators.SpaceNewLines = true;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-' Allows text insertion only at the beginning of the ReadOnly region at the start of a new line.
+' Custom indicator for Line Feed. 
 
-Me.editControl1.AllowInsertBeforeReadonlyNewLine = True
+Me.editControl1.WhiteSpaceIndicators.ShowSpaces = True 
 
-'To set the EditControl that allows to Drag and Dropping files
+' Custom indicator for Tab.
 
-Me.editControl1.AllowDrop = true
+Me.editControl1.WhiteSpaceIndicators.ShowTabs = True 
 
-‘Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content.
+' Custom indicator for Space Character. 
 
-Me.editControl1.InsertDroppedFileIntoText = True
-
-' To hide the notification message displayed when the outer file is dragged and dropped onto the EditControl.
-
-Me.editControl1.ShowFileDropNotification = false
+Me.editControl1.WhiteSpaceIndicators.SpaceNewLines = True
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Deleting text
+### Space indicator character
 
-Text can be deleted in the EditControl by using the below given methods.
+You can also set the indicators to indicate single spaces, tabs and line feeds by using the NewLineString, TabString and SpaceChar sub properties of the WhiteSpaceIndicators property, as shown below.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-DeleteChar</td><td>
-Deletes a character to the right of the current cursor position</td></tr>
+NewLineString</td><td>
+Specifies the string that represents line feed in WhiteSpace mode</td></tr>
 <tr>
 <td>
-DeleteCharLeft</td><td>
-Deletes a character to the left of the current cursor position</td></tr>
+TabString</td><td>
+Specifies the string that represents Tab in WhiteSpace mode</td></tr>
 <tr>
 <td>
-DeleteWord</td><td>
-Deletes a word to the right of the current cursor position</td></tr>
-<tr>
-<td>
-DeleteWordLeft</td><td>
-Deletes a word to the left of the current cursor position</td></tr>
-<tr>
-<td>
-DeleteAll</td><td>
-Deletes all text in the document</td></tr>
-<tr>
-<td>
-DeleteText</td><td>
-Deletes the specified text</td></tr>
+SpaceChar</td><td>
+Specifies the character that represents line feed in WhiteSpace mode</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Deletes the character to the right of the cursor.
+// Custom indicator for Line Feed.
 
-this.editControl1.DeleteChar();
+this.editControl1.WhiteSpaceIndicators.NewLineString = "LF";
 
-// Deletes the character to the left of the cursor.
+// Custom indicator for Tab.
 
-this.editControl1.DeleteCharLeft();
+this.editControl1.WhiteSpaceIndicators.TabString = "TAB";
 
-// Deletes a word to the right of the current cursor position.
+// Custom indicator for Space Character.
 
-this.editControl1.DeleteWord();
-
-// Deletes a word to the left of the current cursor position.
-
-this.editControl1.DeleteWordLeft();
-
-// To delete all the text.
-
-this.editControl1.DeleteAll();
-
-// To delete a selection.
-
-this.editControl1.DeleteText(this.editControl1.Selection.Top, this.editControl1.Selection.Bottom);
+this.editControl1.WhiteSpaceIndicators.SpaceChar = "s";
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-' Deletes the character to the right of the cursor.
+' Custom indicator for Line Feed.
 
-Me.editControl1.DeleteChar()
+Me.editControl1.WhiteSpaceIndicators.NewLineString = "LF"
 
-' Deletes the character to the left of the cursor.
+' Custom indicator for Tab.
 
-Me.editControl1.DeleteCharLeft()
+Me.editControl1.WhiteSpaceIndicators.TabString = "TAB"
 
-' Deletes a word to the right of the current cursor position.
+' Custom indicator for Space Character.
 
-Me.editControl1.DeleteWord()
-
-' Deletes a word to the left of the current cursor position.
-
-Me.editControl1.DeleteWordLeft()
-
-' Deletes all the text.
-
-Me.editControl1.DeleteAll()
-
-' Deletes a selection.
-
-Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Selection.Bottom)
+Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img15.jpeg)
+## Unicode
 
-## AutoComplete support
+Unicode is a standard used to encode all the languages of the world in computers. EditControl fully supports serializing and displaying Unicode characters. All Unicode text is saved in UTF-8 format, by default. Moving Unicode text between EditControl and other Word Processing software programs is also straightforward through Copy or Paste clipboard functions. Essential Edit also supports handling of all other text encoding formats specified in the System.Text.Encoding class like ASCII, UTF7, UTF8 and BigEndianUnicode.
 
-Complete word feature is a user-friendly functionality that can be used in conjunction with the Context Choice, and is analogous to the Complete word feature in Visual Studio. This feature auto completes the rest of the member name once you have entered enough characters to distinguish it. Type the first few letters of the member name, and then press ALT+RIGHT ARROW or CTRL+SPACEBAR keys to see this functionality.
+The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian and Greek text in the EditControl.
 
-### Example
+![](Editing-Features_images/Editing-Features_img14.jpeg)
 
-When the following text is typed - "this.editControl1.", it displays a Context Choice list with members in the following order
+A sample which demonstrates the above features is available in the below sample installation path.
 
-* New
-* Word
-* WordLeft
-* WordRight
-
-**Case 1**
-
-If you type "w" after "this.editControl1.", such that it looks like - "this.editControl1.w", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, it will be auto completed as "this.editControl1.Word".
-
-**Case 2**
-
-If you type "word" after "this.editControl1.", such that it looks like - "this.editControl1.word", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, it will be auto completed as "this.editControl1.WordRight".
-
-**Case 3**
-
-If you type "move" after "this.editControl1.", such that it looks like - "this.editControl1.move", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first matching member name. In this case, there is no matching member name to autocomplete, and hence nothing will happen.
-
-**Case 4**
-
-If you type nothing after "this.editControl1.", and press the ALT+RIGHT ARROW (or CTRL+SPACEBAR) keys, it will auto complete it with the first member name in the Context Choice list. In this case, it should be auto completed as "this.editControl1.New".
-
-Note that the searching process for the first matching member is not case sensitive. For example, "word" and "Word" will be treated in the same way.
-
-Set the `UseAutocomplete` property associated with the IContextChoiceController to True, to enable this functionality while using Context Choice.
-
-{% tabs %}
-
-{% highlight C# %}
-
-private void editControl1_ContextChoiceOpen(Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController controller)
-
-{
-
-   controller.UseAutocomplete = true;
-
-}
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Private Sub editControl1_ContextChoiceOpen(ByVal controller As Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController) Handles editControl1.ContextChoiceOpen
-
-   controller.UseAutocomplete = True
-
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### AutoReplace triggers
-
-EditControl comes with the AutoReplace triggers feature which allows the control to automatically correct some of the known predefined typing errors. AutoReplace triggers are fired when certain keys are pressed. These keys are defined within the language definition. When the AutoReplace trigger key is pressed, the editor checks the word before the AutoReplace trigger, to see if it is in the AutoReplace table. If it is present, then the word is automatically replaced with its replacement word.
-
-The AutoReplace Trigger keys are defined within the language definitions. This means that different keys can be defined as triggers for different languages.
-
-![](Editing-Features_images/Editing-Features_img16.jpeg)
-
-
-![](Editing-Features_images/Editing-Features_img17.jpg)
-
-Auto Replace Triggers can be enabled or disabled by using the `UseAutoreplaceTriggers` property as shown below.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Enables AutoReplace Triggers.
-
-this.editControl1.UseAutoreplaceTriggers = true;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Enables AutoReplace Triggers.
-
-Me.editControl1.UseAutoreplaceTriggers = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The keys used as AutoReplace Triggers are defined by using the TriggersActivators attribute of the language in the configuration file, as shown below.
-
-<ConfigLanguage name ="C#" Known ="Csharp" StartComment ="//" TriggersActivators =" ;.=()">
-
-Triggers can be flagged as valid only within the specific lexical states. For example, you can set a trigger not to fire, if it is in a comment within a language, by using the AllowTriggers attribute, as shown below.
-
-{% highlight xaml %}
-
-<lexem BeginBlock="/* EndBlock="*/" Type="Comment" OnlyLocalSublexems="true" IsComplex="true" IsCollapsable="true" CollapseName="/*...*/" AllowTriggers="false">
-
-</lexem>
-
-{% endhighlight %}
-
-The words to be replaced when the AutoReplace Triggers key is pressed can be defined by using the code given below.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.Language.AutoReplaceTriggers.AddRange(new AutoReplaceTrigger[]{new AutoReplaceTrigger("tis","this"),new AutoReplaceTrigger("fro","for")});
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.Language.AutoReplaceTriggers.AddRange(New AutoReplaceTrigger(){New AutoReplaceTrigger("tis","this"),New AutoReplaceTrigger("fro","for")})
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The words to be replaced can also be defined within the language definition in the configuration file, as shown below.
-
-{% highlight xaml %}
-
-<AutoReplaceTriggers>
-
-   <AutoReplaceTrigger From ="tis" To ="this" />
-
-   <AutoReplaceTrigger From ="itn" To ="int" />
-
-</AutoReplaceTriggers>
- 
-{% endhighlight %}
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Unicode

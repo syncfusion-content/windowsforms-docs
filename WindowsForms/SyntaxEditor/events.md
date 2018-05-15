@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syntax-Editor-Events | WindowsForms | Syncfusion
-description: Syntax Editor events
+title: events
+description: This section explains about the events in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -12,6 +12,55 @@ documentation: ug
 `EditControl` is a powerful text editor control to create interactive code editor applications with its unique feature set. It has many efficient features like editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, custom language configuration etc., as like in Microsoft Visual Studio Editor. EditControl also provides programmatic access to the interaction for most of the features like editing, intellisense, expand or collapse a block of code, printing., by raising various events.
 
 This section discusses various events handled for the EditControl. The events are listed below:
+
+## BeforeLineNumberPaint Event
+
+This event will be triggered before LineNumber gets painted. The LineNumber can be enabled or disabled by using the `ShowLineNumbers` property of EditControl. Its default is true, to hide the LineNumber turn on its value to false.
+
+The event handler receives an argument of type LineNumberPaintEventArgs. The following LineNumberPaintEventArgs member provides information, specific to this event.
+
+<table>
+<tr>
+<th>
+Member</th><th>
+Description</th></tr>
+<tr>
+<td>
+ForeColor</td><td>
+Specifies a value for fore color of LineNumber</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Handle before LineNumber is painted.
+
+private void EditControl1_BeforeLineNumberPaint(object sender, Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs e)
+{
+   // Sets the fore color of LineNumber in EditControl. 
+
+    e.ForeColor = Color.Pink;
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Handle before LineNumber is painted.
+
+Private Sub EditControl1_BeforeLineNumberPaint(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs)
+
+   'Sets the fore color of LineNumber in EditControl. 
+
+   e.ForeColor = Color.Pink
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## CanUndoRedoChanged Event
 
@@ -842,6 +891,38 @@ Private Sub editControl1_ExpandingAll(ByVal sender As Object, ByVal e As CancelE
    ' Cancels the event.
 
    e.Cancel = True
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Find Event
+
+This event will be triggered  once new match is found in FindAndReplaceDialogBox through the Find Next Button.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void EditControl1_Find(object sender, EventArgs e)
+{
+   // You can see the below line in output window during runtime.
+
+   Console.WriteLine("Find event is raised")
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub EditControl1_Find(ByVal sender As Object, ByVal e As EventArgs)
+
+   ' You can see the below line in output window during runtime.
+
+   Console.WriteLine("Find event is raised")   
 
 End Sub
 
@@ -2460,87 +2541,6 @@ Private Sub editControl1_WordWrapChanged(ByVal sender As Object, ByVal e As Even
    ' The below line will be displayed in the output window at runtime.
 
    Console.WriteLine(" WordWrapChanged event is raised ")
-
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### BeforeLineNumberPaint Event
-
-This event will be triggered before LineNumber gets painted. The LineNumber can be enabled or disabled by using the `ShowLineNumbers` property of EditControl. Its default is true, to hide the LineNumber turn on its value to false.
-
-The event handler receives an argument of type LineNumberPaintEventArgs. The following LineNumberPaintEventArgs member provides information, specific to this event.
-
-<table>
-<tr>
-<th>
-Member</th><th>
-Description</th></tr>
-<tr>
-<td>
-ForeColor</td><td>
-Specifies a value for fore color of LineNumber</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Handle before LineNumber is painted.
-
-private void EditControl1_BeforeLineNumberPaint(object sender, Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs e)
-{
-   // Sets the fore color of LineNumber in EditControl. 
-
-    e.ForeColor = Color.Pink;
-}
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Handle before LineNumber is painted.
-
-Private Sub EditControl1_BeforeLineNumberPaint(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs)
-
-   'Sets the fore color of LineNumber in EditControl. 
-
-   e.ForeColor = Color.Pink;
-
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Find Event
-
-This event will be triggered  once new match is found in FindAndReplaceDialogBox through the Find Next Button.
-
-{% tabs %}
-
-{% highlight C# %}
-
-private void EditControl1_Find(object sender, EventArgs e)
-{
-   // You can see the below line in output window during runtime.
-
-   Console.WriteLine("Find event is raised")
-}
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Private Sub EditControl1_Find(ByVal sender As Object, ByVal e As EventArgs)
-
-   ' You can see the below line in output window during runtime.
-
-   Console.WriteLine("Find event is raised")   
 
 End Sub
 
