@@ -14,13 +14,13 @@ N> On setting this property, all the TabPages will be themed. This can be disabl
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.ThemesEnabled = true;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.tabControlAdv1.ThemesEnabled = True
 

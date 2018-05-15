@@ -8,8 +8,10 @@ documentation: ug
 ---
 # How to align the XPTaskBarItems in XPTaskBar
 
-We can arrange the XPTaskBarItems horizontally or vertically using BoxItemsAlignment property. The following code snippet can be 
+You can arrange the XPTaskBarItems horizontally or vertically using BoxItemsAlignment property. The following code snippet can be 
 used.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -19,8 +21,10 @@ this.xpTaskBar1.BoxItemsAlignment = Syncfusion.Windows.Forms.Tools.XPTaskBar.Ite
 
 
 
- {% highlight vbnet %} 
+ {% highlight VB %}
 
 Me.xpTaskBar1.BoxItemsAlignment = Syncfusion.Windows.Forms.Tools.XPTaskBar.ItemsAlignment.Horizontal
 
 {% endhighlight %}
+
+{% endtabs %}

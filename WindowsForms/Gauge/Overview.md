@@ -13,7 +13,7 @@ The Gauge control for Windows Forms is a data visualization tool that can be use
 
 The Gauge control is intended for developers who want to use gauges in their Windows Forms applications. It is a very useful control to indicate the current value in a range of values.
 
-## Prerequisites and Compatibility
+## Prerequisites and compatibility
 
 This section covers the requirements for using Gauge control. It also lists operating systems and browsers compatible with the product.
 

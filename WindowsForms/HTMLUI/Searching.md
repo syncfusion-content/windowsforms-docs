@@ -11,7 +11,7 @@ documentation: ug
 
 Like in popular browsers, the HTMLUI control helps the users to search for a given text in the document displayed in the HTMLUI control. The HTMLUI control uses the DisplayFindForm method for this purpose. This feature comes with an Updown search and also the Match case search that helps the user to easily find the required text from the displayed document.
 
-The CTRL+F shortcut can also be used for enabling this feature.
+The <kbd>Ctrl+F</kbd> shortcut can also be used for enabling this feature.
 
 {% tabs %}
 

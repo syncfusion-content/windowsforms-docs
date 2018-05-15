@@ -10,7 +10,7 @@ documentation: ug
 
 # How to activate a particular docked control?
 
-To activate particular docked control call the `ActivateControl` method inside NewDockStateEndLoad event.
+To activate particular docked control, call the `ActivateControl` method inside NewDockStateEndLoad event.
 
 <table>
 <tr>

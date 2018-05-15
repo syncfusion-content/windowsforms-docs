@@ -7,13 +7,13 @@ control: DockingManager
 documentation: ug
 ---
 
-# MDI Functionality
+# MDI functionality
 
 Docked control can be converted to an MDI child form and vice versa by referring the following steps and code example.
 
 1. Add the required Syncfusion assembly references.
-2. Declare and initialize the DockingManager and other controls. 
-3. Set the properties required and add the controls to the form. Set the IsMdIContainer property of the form to true.
+2. Declare and initialize the DockingManager and other controls.
+3. Set the properties required and add the controls to the form. Set the IsMdIContainer property of the form to `true`.
 4. Call the `SetAsMDIChild` method. This method sets the specified docked control as an MDI child.
 
    <table>
@@ -24,11 +24,11 @@ Docked control can be converted to an MDI child form and vice versa by referring
    <tr>
    <td>
    SetAsMDIChild </td><td>
-   Sets the control specified in Ctrl parameter as MDI child when bsetMDI is set to true. The parameter are, Ctrl - Indicates the docked control.bsetMDI - Represents a Boolean value indicating true or false.</td></tr>
+   Sets the control specified in Ctrl parameter as MDI child when bsetMDI is set to `true`. The parameter are, Ctrl - Indicates the docked control.bsetMDI - Represents a Boolean value indicating `true` or `false`.</td></tr>
    <tr>
    <td>
    SetAsMDIChild(Overloaded)</td><td>
-   Sets the specified docked control as MDI child with the new size provided by using the Layout parameter.Ctrl - Indicates the docked control.bsetMDI - Represents a Boolean value indicating true or false.Layout - Stores a set of four integers that represents the location and size of a rectangle.</td></tr>
+   Sets the specified docked control as MDI child with the new size provided by using the Layout parameter.Ctrl - Indicates the docked control.bsetMDI - Represents a Boolean value indicating `true` or `false`. Layout - Stores a set of four integers that represents the location and size of a rectangle.</td></tr>
    </table>
 
 
@@ -141,7 +141,7 @@ N> A sample that demonstrates MDI child transition is available in the following
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\MDI\CS
 
 
-### Office 2007 Style for MDI Child Form
+### Office 2007 style for MDI child form
 
 The MDI child forms can have Office2007 look and feel. It can be enabled through `Office2007MdiChildForm` property. Color schemes are also supported that can be specified by using `Office2007MdiColorScheme` property.
 

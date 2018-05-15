@@ -7,11 +7,11 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-#  How to enable / disable HubTile rotation transition in runtime?
+#  How to enable/disable HubTile rotation transition in runtime?
 
 You can achieve it by setting HubTileTileType property as DefaultType, so that rotation transition will be disabled.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -24,8 +24,9 @@ TileType</td><td>
 This property decides TileType of HubTile</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -36,7 +37,7 @@ this.RotateTile.TileType = HubTileType.DefaultTile;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -47,4 +48,4 @@ Me.RotateTile.TileType = HubTileType.DefaultTile
 
 {% endhighlight %}
 
-
+{% endtabs %}

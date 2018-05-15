@@ -7,11 +7,11 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# How to display BannerIcon in Banner of HubTile?
+# How to display BannerIcon in banner of HubTile?
 
 You can achieve this by using HubTileShowBannerTileIcon and BannerIcon property.
 
-Property Table
+Property table
 
 <table>
 <tr>
@@ -28,8 +28,9 @@ BannerIcon</td><td>
 This property sets BannerIcon in DefaultTile Banner of HubTile.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -47,7 +48,7 @@ this.HubTile1.BannerIcon = this.ImageListAdv.Images[0];
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -64,4 +65,4 @@ Me.HubTile1.BannerIcon = Me.ImageListAdv.Images[0]
 
 {% endhighlight %}
 
-
+{% endtabs %}

@@ -9,22 +9,22 @@ documentation: ug
 
 # Customizing a Window
 
-## Foreground Settings
+## Foreground settings
 
 This section will walk you through the foreground settings of the Dock tabs, caption area and AutoHidden tabs.
 
-### Dock Tab and Label Settings
+### Dock tab and label settings
 
 The DockingManager provides tab and label settings for the docked windows. These settings allows you to control the appearance of the dock tabs.
 
-#### Foreground Settings for the Dock Tabs
+#### Foreground settings for the dock tabs
 
 The font style and the height of the tab controls in a tabbed docking group can be controlled by using the following properties respectively.
 
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -238,14 +238,14 @@ Me.dockingManager1.ResetDockTabForeColor()
 
 {% endtabs %}
 
-### AutoHidden Tabs
+### AutoHidden tabs
 
 The font style for the auto hidden tabs can be specified in `AutoHideTabFont` property.
 
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -289,7 +289,7 @@ The height for the auto hidden tabs can be specified in `AutoHideTabHeight` prop
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -326,9 +326,9 @@ Me.DockingManager1.AutoHideTabHeight = 35
 ![](Dealing-with-Windows_images/Appearance4.png) 
 
 
-### Active and Inactive Caption
+### Active and inactive caption
 
-#### Active Caption Settings
+#### Active caption settings
 
 Caption FontStyle and foreground settings for an active docked control, can be controlled by `ActiveCaptionFont` and `ActiveCaptionForeGround` properties.
 
@@ -336,7 +336,7 @@ Caption FontStyle and foreground settings for an active docked control, can be c
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -372,7 +372,7 @@ Me.DockingManager1.ActiveCaptionForeGround = System.Drawing.Color.Red
 {% endtabs %}
 
 
-#### Inactive Caption settings
+#### Inactive caption settings
 
 By setting the `InactiveCaptionFont` and `InactiveCaptionForeGround` properties, the caption foreground appearance of the inactive controls among the docked controls can be customized.
 
@@ -380,7 +380,7 @@ By setting the `InactiveCaptionFont` and `InactiveCaptionForeGround` properties,
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -473,20 +473,20 @@ Me.dockingMgr.MetroButtonColor = Color.Red
 
 {% endseealso %}
 
-## Background Settings
+## Background settings
 
 This section will discuss the background settings for the caption area of the docked controls.
 
-### Active and Inactive Caption
+### Active and inactive caption
 
-#### Active Caption Settings
+#### Active caption settings
 
 Caption background appearance for the active docked control can be controlled through `ActiveCaptionBackground` property.
 
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -523,7 +523,7 @@ By setting the `InactiveCaptionBackground` properties, the caption appearance of
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -532,7 +532,7 @@ Sets caption background of the inactive docked control using BrushInfo object.</
 </table>
 
 
-N> This setting will effect only with DockingManager.VisualStyle property set as Default. 
+N> This setting will effect only with DockingManager.VisualStyle property set as Default.
 
 {% tabs %}
 
@@ -551,9 +551,9 @@ Me.DockingManager1.InActiveCaptionBackground = New Syncfusion.Drawing.BrushInfo(
 
 {% endtabs %}
 
-### Border for the Docked Control
+### Border for the Docked control
 
-Border color of the docked controls can be specified in the `BorderColor` property. 
+Border color of the docked controls can be specified in the `BorderColor` property.
 
 N> `PaintBorders` property must be enabled to effect this setting.
 
@@ -561,7 +561,7 @@ N> `PaintBorders` property must be enabled to effect this setting.
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -569,7 +569,7 @@ BorderColor</td><td>
 Used to set the border color for the docked control.</td></tr>
 <tr>
 <td>
-Paint Borders</td><td>
+Paint borders</td><td>
 Determines whether to paint the docked control's borders.</td></tr>
 </table>
 
@@ -609,7 +609,7 @@ Me.DockingManager1.PaintBorders = True
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -641,13 +641,13 @@ Me.DockingManager1.HostFormClientBorder = False
 
 # Caption Bar
 
- Caption for the docked controls can be enabled using `ShowCaption` property. By default this property is true. 
+ Caption for the docked controls can be enabled using `ShowCaption` property. By default this property is `true`.
 
-![](Dealing-with-Windows_images/SuperToolTipText.png) 
+![](Dealing-with-Windows_images/SuperToolTipText.png)
 
-## Label and Image for CaptionBar
+## Label and image for CaptionBar
 
-### Caption Label
+### Caption label
 
 DockingManager allows you to set the caption label by using the `DockLabel` property of that particular control through designer and programmatically by using the `SetDockLabel` method. Alignment of these labels can be specified by using the `DockLabelAlignment` property. Caption font of the docked controls can be specified by using the `DockedCaptionFont` property in the DockingManager.
 
@@ -655,7 +655,7 @@ DockingManager allows you to set the caption label by using the `DockLabel` prop
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -698,16 +698,16 @@ Me.dockingManager1.DockedCaptionFont = New System.Drawing.Font("Segoe WP Light",
 
 {% endtabs %}
 
- ![](Dealing-with-Windows_images/CaptionLabel1.png) 
+ ![](Dealing-with-Windows_images/CaptionLabel1.png)
  
- ![](Dealing-with-Windows_images/CaptionLabel2.png) 
+ ![](Dealing-with-Windows_images/CaptionLabel2.png)
  
- ![](Dealing-with-Windows_images/CaptionLabel3.png) 
+ ![](Dealing-with-Windows_images/CaptionLabel3.png)
  
- ![](Dealing-with-Windows_images/CaptionLabel4.png) 
+ ![](Dealing-with-Windows_images/CaptionLabel4.png)
 
 
-### Images for the Caption
+### Images for the caption
 
 The captions can also hold images which can be enabled using `ShowCaptionImages` property.
 
@@ -730,22 +730,22 @@ Me.dockingManager1.ShowCaptionImages = True
 
 {% endtabs %}
 
-The caption icons / the images can be set using this `DockIcon` property of the docked control.To achieve this through designer, follow the below steps.
+The caption icons/the images can be set using this `DockIcon` property of the docked control. To achieve this through designer, follow the below steps.
 
-* Create a docked window. 
+* Create a docked window.
 * Add ImageList and add the images to it.
 * Select the image list through the ImageList property of the DockingManager. 
-* Now go to the property of the docked control to which you have to set the dock icon. 
+* Now, go to the property of the docked control to which you have to set the dock icon.
 * Give the image index value to the DockIcon property.
-* Run the application. 
-* The corresponding control will be displayed with the icon which is set. 
+* Run the application.
+* The corresponding control will be displayed with the icon which is set.
 * To disable displaying the icon, set the value as -1.
 
 
 <table>
 <tr>
 <th>
-DockedControl Property</th><th>
+DockedControl property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -776,7 +776,7 @@ Me.DockingManager1.SetDockIcon(Me.ListBox1, 2)
 
 
 
-### Caption Label with DockIcon
+### Caption label with DockIcon
 
 Methods for setting Caption icons and labels are as follows.
 
@@ -799,49 +799,48 @@ SetDockLabel</td><td>
 Sets the text to be displayed in the docking window caption.</td></tr>
 </table>
 
-## Caption Buttons
+## Caption buttons
 
 The buttons available for the docked control and the properties which controls the visibility of the button are discussed in this section.
 
-### Menu Button
+### Menu button
 
-The menu button in a docked control can be made visible or hidden by setting the `MenuButtonEnabled` property to true. Clicking this button will display the context menu items.
+The menu button in a docked control can be made visible or hidden by setting the `MenuButtonEnabled` property to `true`. Clicking this button will display the context menu items.
 
-### Maximize Button
+### Maximize button
 
-Maximize button can be enabled by using the `MaximizeButtonEnabled` property. This maximize button allows users to maximize / restore a docking window, so that a clear view of the contents can be made visible.
+Maximize button can be enabled by using the `MaximizeButtonEnabled` property. This maximize button allows users to maximize/restore a docking window, so that a clear view of the contents can be made visible.
 
 N> The Maximize button will be visible only if any other control is docked to the bottom of the former control.
 
-### Close Button
+### Close button
 
 The visibility of the Close button can be controlled using the `CloseEnabled` property.
 
-### AutoHide Button
+### AutoHide button
 
 Setting `AutoHideEnabled` property shows or hides the auto hide button in the docked control. Clicking this button will auto hide the docked controls.
 
-![](Dealing-with-Windows_images/CaptionLabel6.png) 
+![](Dealing-with-Windows_images/CaptionLabel6.png)
 
-N> DockingManager let you customize the above default buttons and also add custom caption buttons. 
-
-
-## Custom Caption Buttons
-
-The Custom Caption Collection Editor can be accessed by using the DockingManager. `CaptionButtons` property allows you to customize the default buttons and also to add new custom caption buttons. 
-
-![](Dealing-with-Windows_images/CaptionLabel7.png) 
+N> DockingManager let you customize the above default buttons and also add custom caption buttons.
 
 
+## Custom caption buttons
 
-### Add and Customize the Caption Buttons
+The Custom Caption Collection Editor can be accessed by using the DockingManager. `CaptionButtons` property allows you to customize the default buttons and also to add new custom caption buttons.
+
+![](Dealing-with-Windows_images/CaptionLabel7.png)
+
+
+
+### Add and customize the caption buttons
 
 In the Caption Button Collection Editor, click "Add" button to add a new caption button. To customize the caption button, modify the properties of the members in the editor.
 
-![](Dealing-with-Windows_images/CaptionLabel8.png) 
+![](Dealing-with-Windows_images/CaptionLabel8.png)
 
 
-This can be done programmatically by using the following code examples.
 
 {% tabs %}
 
@@ -892,9 +891,9 @@ Me.dockingManager1.CaptionButtons.Add(captionButton)
 N> Refer to the following sample link that demonstrates how to add the Custom Caption Buttons.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\Custom Captions\CS
 
-### Custom Button for Caption Bar in Floating State
+### Custom button for caption bar in floating state
 
-This feature enables you to add custom buttons to the caption bar when an item is in its floating state. It is not required to dock the item to use the custom buttons. 
+This feature enables you to add custom buttons to the caption bar when an item is in its floating state. It is not required to dock the item to use the custom buttons.
 
 
 <table>
@@ -914,9 +913,9 @@ Boolean </td><td>
 NA </td></tr>
 </table>
 
-### Enable Custom Button for Caption Bar While Floating
+### Enable custom button for caption bar while floating
 
-To enable custom button for caption bar while floating, set the `ShowCustomButtonsInFloating` property to true. This is set to false, by default. 
+To enable custom button for caption bar while floating, set the `ShowCustomButtonsInFloating` property to `true`. This is set to `false`, by default.
 
 {% tabs %}
 
@@ -941,14 +940,14 @@ me.dockingManager1.ShowCustomButtonsInFloating = True
 N> This feature is not applicable for VS2005 (default) visual style.
 
 
-# Occupy Whole Window
+# Occupy whole window
 
 The `DockToFill` property allows users to implement a very unique docking layout where a non-MDIContainer form or ContainerControl's entire client region is occupied by the dockable controls.
 
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -977,7 +976,7 @@ Me.dockingManager1.DockToFill = True;
 ![](Dealing-with-Windows_images/DocktoFill.png)  
 
  
-# Dock Arrow Settings
+# Dock arrow settings
 
 While dragging and dropping a docked control, DockingManager guides you through the process, using `DragProviderStyle` property.
 
@@ -988,9 +987,9 @@ There are six docking provider Styles. They are,
 * Standard (Default value - no arrows appears for this option), 
 * VS2005
 * VS2008
-* VS2010 
+* VS2010
 * VS2012
-* Whidbey 
+* Whidbey
  
 
 {% tabs %}
@@ -1033,14 +1032,14 @@ Me.dockingManager1.DragProviderStyle = Syncfusion.Windows.Forms.Tools.DragProvid
 
 
 
-## Visibility of the Arrows
+## Visibility of the arrows
 
 The docking arrows visibility, while dropping a control inside the form or into another docked control, can be set using the below properties.
 
 <table>
 <tr>
 <th>
-DockedControl Property</th><th>
+DockedControl property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1053,14 +1052,14 @@ Indicates where the user can dock the controls in a form using the drag provider
 </table>
 
 
- ![](Dealing-with-Windows_images/DockAbility.png) 
+ ![](Dealing-with-Windows_images/DockAbility.png)
  
- ![](Dealing-with-Windows_images/DockAbility1.png) 
+ ![](Dealing-with-Windows_images/DockAbility1.png)
  
  ![](Dealing-with-Windows_images/DockAbility2.png) 
 
 
-# Freeze Resizing
+# Freeze resizing
 
 The FreezeResizing property has been implemented for each control by which, the end users can freeze any particular control. Also, the property value can be persisted. A global `FreezeResizing` property is also available using which all the controls can be frozen.
 
@@ -1102,9 +1101,9 @@ Me.dockingManager1.SetFreezeResize(Me.panel1, True)
 
 # Configuring window sizing
 
-DockingManager allows to set the desired width for the dock windows. 
+DockingManager allows to set the desired width for the dock windows.
 
-## Desire Width
+## Desire width
 
 The desired width can be set for the Dock windows through the `DockControl` method as in the below code snippets.
 
@@ -1125,7 +1124,7 @@ Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 {% endtabs %}
 
-## Customizing the Splitter appearance
+## Customizing the splitter appearance
 
 The Splitter of the dock window can be customized using the `SplitterWidth` and `MetroSplitterBackColor` properties depends upon its values respectively.
 
@@ -1152,11 +1151,11 @@ The Splitter of the dock window can be customized using the `SplitterWidth` and 
 
 ![](Dealing-with-Windows_images/SplitterCustomization.png) 
 
-# Applying Context Menu  
+# Applying context menu
 
-A context menu will be displayed whenever the user right clicks the caption bar or clicks the menu button in the caption bar. `EnableContextMenu` property should be true for displaying the context menu. By default it is true.
+A context menu will be displayed whenever the user right clicks the caption bar or clicks the menu button in the caption bar. `EnableContextMenu` property should be `true` for displaying the context menu. By default it is `true`.
 
-When the docked control is in auto hide mode and when the auto hide tab is right-clicked, an unique context menu will be displayed, similar to Visual Studio. `EnableAutoHideTabContextMenu` property should be true for this. By default this value is true.
+When the docked control is in auto hide mode and when the auto hide tab is right-clicked, an unique context menu will be displayed, similar to Visual Studio. `EnableAutoHideTabContextMenu` property should be `true` for this. By default this value is `true`.
 
 
 {% tabs %}
@@ -1189,17 +1188,17 @@ The below images illustrates context menu features.
 
 
 
-N> If MDIContainer property of the form is set to true, then the context menu will include MDI child option. 
+N> If MDIContainer property of the form is set to `true`, then the context menu will include MDI child option.
 
-![](Dealing-with-Windows_images/ContextMenu2.png) 
+![](Dealing-with-Windows_images/ContextMenu2.png)
 
-### Context Menu for TabbedControls
+### Context menu for TabbedControls
 
 Context menu for the tabbed controls is similar to the default context menu like the above image. When TabbedMDIManager component is used, context menu will include TabbedDocument instead of MDI child.
 
  ![](Dealing-with-Windows_images/ContextMenu3.png) 
 
-# Browsing Key
+# Browsing key
 
 DockingManager lets you specify the keyboard key combinations, to tab through the docked controls. The property `BrowsingKey` of the docking manager, provides modifiers like CTRL, SHIFT, ALT Keys and keys like A, B, C, 0, 1 etc., User can also provide a combination of modifiers and the keys. Example "CTRL + 2", as shown in the image below.
 
@@ -1207,12 +1206,12 @@ DockingManager lets you specify the keyboard key combinations, to tab through th
 
 
 
-N> Before we set this property for DockingManager, we have to set `TabStop` property to true and `TabIndex` property with the appropriate value. Otherwise its BrowsingKey property will not work.
+N> Before we set this property for DockingManager, we have to set `TabStop` property to `true` and `TabIndex` property with the appropriate value. Otherwise its BrowsingKey property will not work.
 
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1223,7 +1222,7 @@ Determines the value of the key which can be used to tab through the docked cont
 <table>
 <tr>
 <th>
-DockedControl Property</th><th>
+DockedControl property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1265,7 +1264,7 @@ Me.TreeViewAdv1.TabIndex = 0
 
 {% endtabs %}
 
-# Setting ToolTip
+# Setting tooltip
 
 By default, ToolTip will be displayed for the caption buttons in a docked control when the mouse is moved over it.
 
@@ -1283,7 +1282,7 @@ Docking manager can display a SuperToolTip by enabling the DockingManager.Enable
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+DockingManager property</th><th>
 Description</th></tr>
 <tr>
 <td>

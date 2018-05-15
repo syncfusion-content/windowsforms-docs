@@ -7,9 +7,9 @@ control: HubTile
 documentation: ug
 --- 
 
-# How to Freeze HubTile functionality in runtime?
+# How to freeze HubTile functionality in runtime?
 
-You can achieve it by setting HubTile Freeze property to ‘true’.
+You can achieve it by setting HubTile Freeze property to `true`.
 
 
 
@@ -25,16 +25,19 @@ You can achieve it by setting HubTile Freeze property to ‘true’.
 </tr>
 </Table>
 
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 
 this.HubTile1.IsFrozen = true;
 
- {% endhighlight %}
+{% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %} 
  
 Me.HubTile1.IsFrozen = True
 
 {% endhighlight %}
+
+{% endtabs %}

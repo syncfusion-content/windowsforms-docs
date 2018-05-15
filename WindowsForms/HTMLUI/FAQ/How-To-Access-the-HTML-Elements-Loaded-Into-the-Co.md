@@ -7,17 +7,17 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Access the HTML Elements Loaded Into the Control?
+# How to access the HTML elements loaded into the control?
 
 The HTML elements are accessed in HTMLUI for developing advanced UIs. The HTML elements are collected in a collection class. When the Hashtable is used as a collection class, it stores the HTML elements with a key, specific for each element.
 
-These elements are then assigned to the code variables. The Code Variables are the objects of the classes that are responsible for the functionality of the tag elements. These classes contain the definitions for the properties, methods and events for the tag elements. These variables will be used in accessing the HTML elements inside the code. 
+These elements are then assigned to the code variables. The Code Variables are the objects of the classes that are responsible for the functionality of the tag elements. These classes contain the definitions for the properties, methods and events for the tag elements. These variables will be used in accessing the HTML elements inside the code.
 
 The following HTML document shows an input tag textbox element with an id as the key for accessing it in the Hashtable.
 
+{% tabs %}
 
-
-{% highlight html%} 
+{% highlight HTML %} 
 
 
 
@@ -33,11 +33,13 @@ The following HTML document shows an input tag textbox element with an id as the
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following code snippet illustrates accessing the HTML elements from the above document.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -68,7 +70,7 @@ this.text.UserControl.CustomControl.Text = "HTML Elements in HTMLUI";
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -97,5 +99,7 @@ Me.Text = CType(IIf(TypeOf tab("txt") Is INPUTElementImpl, tab("txt"), Nothing),
 Me.Text.UserControl.CustomControl.Text = "HTML Elements in HTMLUI"
 
 {% endhighlight %}
+
+{% endtabs %}
 
 

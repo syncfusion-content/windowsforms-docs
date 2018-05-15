@@ -9,14 +9,14 @@ documentation: ug
 
 # How to Customize TabRendering?
 
-The simplest way to customize TabDrawing is to handle the `DrawItem` event. A departure from the normal is the TabControlAdv's ability to let you selectively draw portions of the tab. For this purpose, TabDrawing is classified into three portions:Background,Border and Interior (text and image). The event args lets you delegate drawing of one or more portions of the tab to the default drawing code while custom drawing the other portions of the tab. 
+The simplest way to customize TabDrawing is to handle the `DrawItem` event. A departure from the normal is the TabControlAdv's ability to let you selectively draw portions of the tab. For this purpose, TabDrawing is classified into three portions:Background,Border and Interior (text and image). The event args lets you delegate drawing of one or more portions of the tab to the default drawing code while custom drawing the other portions of the tab.
 
 
 * The following code sample demonstrates how to create Yahoo Messenger-like tabs.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void Tab_DrawItemYahooMessengerLike(object sender, DrawTabEventArgs drawItemInfo)
 
@@ -48,7 +48,7 @@ drawItemInfo.DrawBorders();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -82,7 +82,7 @@ End Sub
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void Tab_DrawItemMSNMessengerLike(object sender, DrawTabEventArgs drawItemInfo)
 
@@ -150,7 +150,7 @@ g.FillPath(new SolidBrush(Color.FromArgb(128, this.tabControlExt1.ActiveTabColor
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 

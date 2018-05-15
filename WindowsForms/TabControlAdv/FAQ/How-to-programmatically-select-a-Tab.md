@@ -7,13 +7,13 @@ control: TabsPackage
 documentation: ug
 ---
 
-# How to programmatically select a Tab?
+# How to programmatically select a tab?
 
 The following code snippet illustrates the ways to select a Tab programmatically.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 //Select Second Tab.
@@ -28,7 +28,7 @@ this.tabControlAdv1.SelectedIndex= 1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 

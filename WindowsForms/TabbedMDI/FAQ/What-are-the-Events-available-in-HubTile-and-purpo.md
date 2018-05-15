@@ -7,7 +7,7 @@ control: TabbedMDIPackage
 documentation: ug
 ---
 
-# What are the Events available in HubTile and purpose of the Events?
+# What are the events available in HubTile and purpose of the events?
 
 The Events available in HubTile are as follows,
 
@@ -17,15 +17,15 @@ The Events available in HubTile are as follows,
 * ZoomCompleted Event
 * TextChanged Event
 
-BeforeTransition Event
+BeforeTransition event
 
 This Event is triggered before the Image and Rotation Transition occur in HubTile.
 
-Event Data
+Event data
 
 BeforeTransitionEventArgs contain the following members that provide information specific to this Event.
 
-Members Table
+Members table
 
 <table>
 <tr>
@@ -54,8 +54,9 @@ SlideTransition</td><td>
 This property returns the image transition direction of HubTile.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
     private void HubTile1_BeforeTransition(object sender, BeforeTransitionEventArgs e)
 
@@ -73,7 +74,7 @@ This property returns the image transition direction of HubTile.</td></tr>
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub HubTile1_BeforeTransition(sender As System.Object, e As BeforeTransitionEventArgs) Handles HubTile1.BeforeTransition
 
@@ -89,15 +90,17 @@ End Sub
 
 {% endhighlight %}
 
-## TransitionCompleted Event
+{% endtabs %}
+
+## TransitionCompleted event
 
 This Event is triggered after the image Transition and Rotation Transition are completed in HubTile.
 
-### Event Data
+### Event data
 
 TransitionCompletedEventArgs contain the following members that provide information specific to this Event.
 
-Members Table
+Members table
 
 <table>
 <tr>
@@ -126,8 +129,9 @@ SlideTransition</td><td>
 This property returns the image transition direction of HubTile.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
    private void HubTile1_TransitionCompleted (object sender, TransitionCompletedEventArgs e)
 
@@ -145,7 +149,7 @@ This property returns the image transition direction of HubTile.</td></tr>
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub HubTile1_TransitionCompleted(sender As System.Object, e As TransitionCompletedEventArgs) Handles HubTile1.TransitionCompleted
 
@@ -161,15 +165,17 @@ Private Sub HubTile1_TransitionCompleted(sender As System.Object, e As Transitio
 	
 {% endhighlight %}
 
-### SelectionMarked Event
+{% endtabs %}
+
+### SelectionMarked event
 
 This Event is triggered once the HubTile is Selection marked.
 
-#### Event Data
+#### Event data
 
 SelectionMarker contains the following members that provide information specific to this Event.
 
-Members Table
+Members table
 
 <table>
 <tr>
@@ -182,8 +188,9 @@ IsSelected</td><td>
 This returns whether HubTile is selection marked or not.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void HubTile1_HubTileSelectionMarked(object sender, SelectionMarkedEventArgs e)
 
@@ -195,7 +202,7 @@ private void HubTile1_HubTileSelectionMarked(object sender, SelectionMarkedEvent
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub HubTile1_SelectionMarked(sender As System.Object, e As SelectionMarkedEventArgs) Handles HubTile1.SelectionMarked
 
@@ -209,15 +216,17 @@ End Sub
 
 {% endhighlight %}
 
-### ZoomCompleted Event
+{% endtabs %}
+
+### ZoomCompleted event
 
 This Event is triggered after the HubTile image content is Zoomed In and Out.
 
-#### Event Data
+#### Event data
 
 ZoomCompleted contains the following members that provide information specific to this Event:
 
-Members Table
+Members table
 
 <table>
 <tr>
@@ -234,8 +243,9 @@ PulseDuration</td><td>
 This returns the HubTile  PulseDuration.</td></tr>
 </table>
 
+{% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
      private void HubTile1_ZoomCompleted(object sender, ZoomCompletedEventArgs e)
 
@@ -249,7 +259,7 @@ This returns the HubTile  PulseDuration.</td></tr>
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -263,11 +273,15 @@ End Sub
 
 {% endhighlight %}
 
-TextChanged Event
+{% endtabs %}
+
+TextChanged event
 
 This Event raises when HubTile Title, Body, Footer, Banner Text are changed.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -281,7 +295,7 @@ private void  HubTile1_TextChanged(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -297,3 +311,4 @@ Private Sub HubTile1_TextChanged(sender As System.Object, e As System.EventArgs)
 
 {% endhighlight %}
 
+{% endtabs %}

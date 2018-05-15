@@ -13,13 +13,13 @@ The TabPage text can be highlighted using the `HotTrack` property of the TabCont
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 this.tabControlAdv1.HotTrack = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.tabControlAdv1.HotTrack = True
 

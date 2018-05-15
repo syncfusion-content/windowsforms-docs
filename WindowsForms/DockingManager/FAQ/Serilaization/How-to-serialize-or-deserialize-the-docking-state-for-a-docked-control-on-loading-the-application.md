@@ -12,7 +12,7 @@ documentation: ug
 
 To serialize or deserialize the docking state, follow the below steps.
 
-Before closing the docked / floating control, access the control's parent and cast this to type Syncfusion.Windows.Forms.Tools.DockHost. 
+Before closing the docked/floating control, access the control's parent and cast this to type Syncfusion.Windows.Forms.Tools.DockHost.
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ Dim dockHostController As Syncfusion.Windows.Forms.Tools.DockHostController = do
 
 {% endtabs %}
 
-* This returns an object of type Syncfusion.Windows.Forms.Tools.DockInfo. The DockInfo.DockingStyle member gives the dock position of the control with respect to the host form and the DockInfo.rcDockArea 
+* This returns an object of type Syncfusion.Windows.Forms.Tools.DockInfo. The DockInfo.DockingStyle member gives the dock position of the control with respect to the host form and the DockInfo.rcDockArea.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ Dim dockInfo As Syncfusion.Windows.Forms.Tools.DockInfo = dockHostController.Get
 
 {% endtabs %}
 
-* You can serialize this information against the control’s name, and later upon loading, appropriately use either the DockingManager.DockControl() /  FloatControl() method based on the serialized DockingStyle and control's bounds values, to set the control’s dock state. 
+* You can serialize this information against the control’s name, and later upon loading, appropriately use either the DockingManager.DockControl() /  FloatControl() method based on the serialized DockingStyle and control's bounds values, to set the control’s dock state.
 
 
 

@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# Floating Window
+# Floating window
 
 The `FloatControl` method enables the end users to float a particular control. Using this method, we can float a single control even if it is tabbed with many controls.
 
@@ -40,9 +40,9 @@ Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rec
 ![](Images/FloatingWindow_img1.jpeg)
 
 
-## Enabling or Disabling the Float Functionality 
+## Enabling or disabling the float functionality
 
-The `DisallowFloating` property helps to enable or disable the floating functionality. By default its value is True, to disable this functionality turn its value to False.
+The `DisallowFloating` property helps to enable or disable the floating functionality. By default its value is `true`, to disable this functionality turn its value to `false`.
 
 {% tabs %}
 
@@ -66,9 +66,9 @@ Me.dockingManager1.DisallowFloating = true
 {% endtabs %}
 
 
-## Enabling or Disabling the Float Functionality Operation on Double Click
+## Enabling or disabling the float functionality operation on double-click
 
-The float window changes to its Dock state when double clicking on its caption by default. To disable this functionality, set `EnableDoubleClickOnCaption` property as false.
+The float window changes to its Dock state when double clicking on its caption by default. To disable this functionality, set `EnableDoubleClickOnCaption` property as `false`.
 
 {% tabs %}
 
@@ -92,7 +92,7 @@ Me.dockingManager1.EnableDoubleClickOnCaption = false
 {% endtabs %}
 
 
-## Positioning on Desire Location
+## Positioning on desire location
 
 The FloatWindow can be placed at any desired location. To position the FloatWindow at the desired location with the required rectangle Bounds, call `FloatControl` method of the DockingManager.
 

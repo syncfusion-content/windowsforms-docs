@@ -7,44 +7,38 @@ control: Gauge
 documentation: ug
 ---
 
-# Installation and Deployment
+# Installation and deployment
 
-This section covers information on installation, the process of viewing samples through the sample browser, and the locations of samples and source code. 
+This section covers information on installation, the process of viewing samples through the sample browser, and the locations of samples and source code.
 
 ## Installation
 
 For step-by-step installation procedure for the installation of Essential Studio, refer to the Installation topic under Installation and Deployment in the Common UG.
 
-{% seealso %}
-
-For licensing, patches, and information on adding or removing selective components, refer to the following topics in Common UG under Installation and Deployment:
-
-{% endseealso %}
-
 * Licensing
-* Patches 
+* Patches
 * Add/Remove Components
 
-## Samples and Location
+## Samples and location
 
 
 This section covers the location of the installed samples and describes the procedure to run the samples through the Sample Browser and online. It also provides the location of the source code.
 
-### Samples Installation Location
+### Samples installation location
 
 The Gauge samples are installed in the following location locally on the disk:
 
-#### Windows XP:
+#### Windows XP
 
 C:\Syncfusion\Essential Studio<version number>\Windows\Gauge.Windows\Samples
 
-#### Windows 7/Vista:
+#### Windows 7/Vista
 
 C:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\Windows\Gauge.Windows\Samples 
 
-#### Viewing Samples
+#### Viewing samples
 
-Use the following steps to view the samples:
+Use the following steps to view the samples
 
 1. Click Start > All Programs > Syncfusion > Essential Studio <version number> >Dashboard.
 
@@ -84,18 +78,18 @@ Use the following steps to view the samples:
 
 
 
-4. Select any sample and browse through the features. 
+4. Select any sample and browse through the features.
 
-### Source Code Location
+### Source code location
 
 
  The default location of the Windows Forms Gauge control source code is:
 
 C:\Program Files\Syncfusion\Essential Studio\[VersionNumber]\Windows\Gauge.Windows\Src
 
-## Deployment Requirements
+## Deployment requirements
 
-### Assembly List
+### Assembly list
 
 While deploying an application that references a Syncfusion Windows Forms Gauge control assembly, the following dependencies must be included in the distribution:
 

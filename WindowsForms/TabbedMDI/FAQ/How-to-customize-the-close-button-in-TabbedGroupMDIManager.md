@@ -11,7 +11,9 @@ documentation: ug
 
 This can be achieved by deriving TabbedGroupMDIManager class and overriding GetCloseButtonBounds method as follows.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -59,7 +61,7 @@ public class CustomMDITabPanel : MDITabPanel
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -105,3 +107,4 @@ End Class
 
 {% endhighlight %}
 
+{% endtabs %}

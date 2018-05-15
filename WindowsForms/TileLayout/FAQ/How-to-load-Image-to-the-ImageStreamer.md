@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to load Image to the ImageStreamer?
+# How to load image to the ImageStreamer?
 
 Image can be loaded to the ImageStreamer using the Images property in the ImageCollection.
 

@@ -6,14 +6,14 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# How to change the days displayed in the calendar
+# How to change the days displayed in the calendar?
 
 To change the days displayed in the calendar, you need to handle the PrepareViewStyleInfo event of the Grid control, which is embedded in the MonthCalendarAdv control and change its cell value as follows.
 
 
+{% tabs %}
 
-
-{% highlight c#  %}
+{% highlight C# %}
 
 
 private void Form1_Load(object sender, EventArgs e)
@@ -60,8 +60,9 @@ void grid_PrepareViewStyleInfo(object sender, GridPrepareViewStyleInfoEventArgs 
 
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -94,4 +95,7 @@ Private Sub grid_PrepareViewStyleInfo(ByVal sender As Object, ByVal e As GridPre
     End If
 
 End Sub
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}

@@ -6,13 +6,13 @@ platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# How to apply Gradient Rendering for the GroupBar
+# How to apply Gradient Rendering for the GroupBar?
 
 The correct way to apply gradient rendering for the GroupBar is to handle the ProvideGroupBarItemBrush Event of GroupBar.
 
-The following code snippet illustrate this.
+{% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
 private void groupBar1_ProvideGroupBarItemBrush(object sender, ProvideGroupBarItemBrushEventArgs args)
 
@@ -49,7 +49,7 @@ args.BackgroundBrush = brush;
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 Private Sub groupBar1_ProvideGroupBarItemBrush(ByVal sender As Object, ByVal args As ProvideGroupBarItemBrushEventArgs)
 
@@ -82,3 +82,5 @@ args.BackgroundBrush = brush
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

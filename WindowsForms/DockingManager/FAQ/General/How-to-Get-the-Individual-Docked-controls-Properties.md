@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# How to Get the Individual Docked control's Properties?
+# How to get the individual Docked control's properties?
 
 To check whether a control is floating or docked, you could use the code snippet given below.
 
