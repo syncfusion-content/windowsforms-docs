@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
-description: appearance
+title: Customization of EditControl for Windows Forms
+description: Customize the Text, Margin, Scrollbar and Splitters
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -9,188 +9,62 @@ documentation: ug
 
 # Appearance
 
+EditControl provides exclusive support to customize the background color, text, margin, split views, ScrollBar etc., Users can change the background color of the control, and even supports gradient effects by using the `BackgroundColor` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, new System.Drawing.Color[] { System.Drawing.Color.LavenderBlush, System.Drawing.Color.AliceBlue, System.Drawing.Color.BlanchedAlmond });
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, new System.Drawing.Color[] { System.Drawing.Color.LavenderBlush, System.Drawing.Color.AliceBlue, System.Drawing.Color.BlanchedAlmond })
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img1.jpg)
+
 The customization features of the EditControl are discussed under the following topics:
-
-## Show line numbers
-
-Line numbers can be automatically assigned to the contents of the EditControl by enabling the `ShowLineNumbers` property. Its default value is true. The number of lines in the EditControl can be obtained by using the `PhysicalLineCount` property. This property returns the actual number of lines in the EditControl, without considering the lines that maybe hidden because of a collapsed outlining block or new lines that maybe added because of word wrap.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowLineNumbers</td><td>
-Specifies a value indicating whether line numbers should be shown</td></tr>
-<tr>
-<td>
-PhysicalLineCount</td><td>
-Specifies the count of lines in the files</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Assigning Line Numbers to the contents of the EditControl.
-
-this.editControl1.ShowLineNumbers = true;
-
-// Specifies the number of lines in the EditControl.
-
-int actualLineCount = this.editControl1.PhysicalLineCount;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Assigning Line Numbers to the contents of the EditControl.
-
-Me.editControl1.ShowLineNumbers = True
-
-' Specifies the number of lines in the EditControl.
-
-Dim actualLineCount As Integer = Me.editControl1.PhysicalLineCount
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Line numbers can be customized by using the below given EditControl properties.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-LineNumbersAlignment</td><td>
-Specifies the alignment of line numbers</td></tr>
-<tr>
-<td>
-LineNumbersColor</td><td>
-Specifies the color of line numbers</td></tr>
-<tr>
-<td>
-LineNumbersFont</td><td>
-Specifies the font of line numbers</td></tr>
-<tr>
-<td>
-SelectOnLineNumberClick </td><td>
-Specifies a value indicating whether click on line numbers performs selection</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Specify the alignment of line numbers.
-
-this.editControl1.LineNumbersAlignment = Syncfusion.Windows.Forms.Edit.Enums.LineNumberAlignment.Right;
-
-// Assign any color to the line numbers.
-
-this.editControl1.LineNumbersColor = Color.IndianRed;
-
-// Assign any font to the line numbers.
-
-this.editControl1.LineNumbersFont = new Font("Verdana", 9);
-
-// Enabling SelectOnLineNumberClick property to perform selection on clicking the line numbers. 
-
-this.editControl1.SelectOnLineNumberClick = true;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Specify the alignment of line numbers.
-
-Me.editControl1.LineNumbersAlignment = Syncfusion.Windows.Forms.Edit.Enums.LineNumberAlignment.Right
-
-' Assign any color to the line numbers.
-
-Me.editControl1.LineNumbersColor = Color.IndianRed
-
-' Assign any font to the line numbers.
-
-Me.editControl1.LineNumbersFont = new Font("Verdana", 9)
-
-' Enabling SelectOnLineNumberClick property to perform selection on clicking the line numbers. 
-
-Me.editControl1.SelectOnLineNumberClick = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Appearance_images/Appearance_img1.jpeg)
-
-## Single line mode
-
-EditControl can be operated in a single line mode much like a Windows Forms Text Box, by setting its `Multiline` property to False. This enables you to have a simple TextBox-like control, but with all the powerful features of EditControl like syntax highlighting, selection, underlining, and so on. You can turn on the single line mode of the EditControl by setting the `SingleLineMode` property to True. Its default value is false.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.editControl1.Multiline = false;
-
-this.editControl1.SingleLineMode = true;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.editControl1.Multiline = false
-
-Me.editControl1.SingleLineMode = true
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> The SingleLineMode is intended for use, only when the EditControl contains small amounts of text data in it. Using it in a scenario where the EditControl has a huge file loaded into it, may lead to poor performance.
-
-![](Appearance_images/Appearance_img2.jpg)
 
 ## Split views
 
-EditControl provides in-built support for horizontal and vertical splitters, which facilitates the splitting of a single document in the EditControl into several split views so that you can work with multiple different areas of a document at the same time. A maximum of four split views are supported. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four.
+EditControl provides in-built support for horizontal and vertical splitters, which display a single document in several views with horizontal and vertical orientations, allowing users to work on different areas of a document at the same time. 
 
-The vertical and horizontal splitters are always visible, by default. They can be enabled or disabled by setting `ShowHorizontalSplitters` and `ShowVerticalSplitters` properties. User can customize the Splitter Background color using `SplitterBackgroundBrush` property. The following tables explain these properties in detailed:
+A maximum of four split views are supported. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four. The `SplitFourQuadrants` method is used to split the EditControl into four equal parts.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.SplitFourQuadrants();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.SplitFourQuadrants()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img2.jpg)
+
+### Orientation
+
+Split view can be oriented in both horizontal and vertical direction by using the following methods `SplitHorizontally` and `SplitVertically` of  EditControl. The following methods can be used to split the EditControl into two equal horizontal and vertical halves.
 
 <table>
 <tr>
 <th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowHorizontalSplitters</td><td>
-Specifies a value that indicates whether horizontal splitters are visible</td></tr>
-<tr>
-<td>
-ShowVerticalSplitters</td><td>
-Specifies a value that indicates whether vertical splitters are visible</td></tr>
-<tr>
-<td>
-SplitterBackgroundBrush</td><td>
-Specifies the Background Brush of Horizontal / Vertical splitters</td></tr>
-</table>
-
-The following methods can be used to split the EditControl into two equal horizontal or vertical halves.
-
-<table>
-<tr>
-<th>
-Methods</th><th>
+Method</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -206,16 +80,6 @@ Splits the EditControl into two equal vertical halves</td></tr>
 
 {% highlight C# %}
 
-// To enable the Splitters
-
-this.editControl1.ShowHorizontalSplitters = true;
-
-this.editControl1.ShowVerticalSplitters = true;
-
-// To customize Splitter Background
-
-this.editControl1.SplitterBackgroundBrush = Brushes.Red;
-
 this.editControl1.SplitHorizontally();
 
 this.editControl1.SplitVertically();
@@ -225,16 +89,6 @@ this.editControl1.SplitVertically();
 
 {% highlight VB %}
 
-// To enable the Splitters
-
-Me.editControl1.ShowHorizontalSplitters = True
-
-Me.editControl1.ShowVerticalSplitters = True
-
-// To customize Splitter Background
-
-Me.editControl1.SplitterBackgroundBrush = Brushes.Red
-
 Me.editControl1.SplitHorizontally()
 
 Me.editControl1.SplitVertically()
@@ -243,9 +97,121 @@ Me.editControl1.SplitVertically()
 
 {% endtabs %}
 
+## Customize split views
+
+In EditControl, user can customize the splitter background color and also disables the splitter. 
+
+### Show horizontal splitter
+
+The horizontal splitters can be enabled or disabled by setting `ShowHorizontalSplitters` property of EditControl.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+ShowHorizontalSplitters</td><td>
+Specifies a value that indicates whether horizontal splitters are visible</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// To enable the Splitters
+
+this.editControl1.ShowHorizontalSplitters = false;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+// To enable the Splitters
+
+Me.editControl1.ShowHorizontalSplitters = False
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Show vertical splitter
+
+The vertical splitters can be enabled or disabled by setting `ShowVerticalSplitters` property of EditControl.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+ShowVerticalSplitters</td><td>
+Specifies a value that indicates whether vertical splitters are visible</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// To enable the Splitters
+
+this.editControl1.ShowVerticalSplitters = false;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+// To enable the Splitters
+
+Me.editControl1.ShowVerticalSplitters = False
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Splitter background color 
+
+User can customize the splitter background color using `SplitterBackgroundBrush` property of EditControl.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+SplitterBackgroundBrush</td><td>
+Specifies the Background Brush of Horizontal / Vertical splitters</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// To customize Splitter Background
+
+this.editControl1.SplitterBackgroundBrush = Brushes.Red;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+// To customize Splitter Background
+
+Me.editControl1.SplitterBackgroundBrush = Brushes.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Appearance_images/Appearance_img3.jpg)
 
-**Positioning**
+### Splitter position
 
 In EditControl, Horizontal and Vertical splitters can be positioned at top, bottom and horizontal by using the following properties.
 
@@ -293,61 +259,46 @@ Me.editControl1.BottomVerticalSplitterPosition = 260
 
 {% endtabs %}
 
-The `SplitFourQuadrants` method is used to split the EditControl into four equal parts.
+A sample which demonstrates the above features is available in the below sample installation path.
+
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Split Views
+
+## Single line mode
+
+EditControl can be operated in a simple text box with syntax highlighting, editing, and clipboard operations., by setting `Multiline` property to `false`. You can also turn on the single line mode of the EditControl by setting the `SingleLineMode` property to `true`. Its default value is `false`.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.SplitFourQuadrants();
+this.editControl1.Multiline = false;
+
+this.editControl1.SingleLineMode = true;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.SplitFourQuadrants()
+Me.editControl1.Multiline = False
+
+Me.editControl1.SingleLineMode = True
 
 {% endhighlight %}
 
 {% endtabs %}
 
+N> The SingleLineMode is intended for use, only when the EditControl contains small amounts of text data in it. Using it in a scenario where the EditControl has a huge file loaded into it, may lead to poor performance.
+
 ![](Appearance_images/Appearance_img4.jpg)
 
-## Font customization
+A sample which demonstrates the above features is available in the below sample installation path.
 
-The font customization in the EditControl works slightly different from the regular text processing the control. The font customization is done only at the Formats level not at a word level or selected text level. EditControl is more of a text parsing / syntax highlighting control, and less of a text editing control. EditControl supports customization of fonts both through the configuration file and dynamically through a run-time Formats Editor dialog.
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Single Line Mode
 
-EditControl supports customization of fonts through the configuration file, as shown in the below code snippet.
+## Right-to-left (RTL) support 
 
-{% highlight xaml %}
-
-<format name="Text" Font="Courier New, 10pt" FontColor="Black" />
-
-<format name="SelectedText" Font="Courier New, 10pt" BackColor="Highlight" FontColor="HighlightText" />
-
-<format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
-
-<format name="Whitespace" Font="Courier New, 10pt" FontColor="Black" />
-
-<format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
-
-<format name="Number" Font="Courier New, 10pt, style=Bold" FontColor="Navy" /> 
-
-{% endhighlight %}
-
-![](Appearance_images/Appearance_img11.jpg)
-
-## Right-To-Left (RTL) support 
-
-EditControl supports rendering content in Right-To-Left (RTL) layout. The following features that are present in Left-To-Right layout are also supported in Right-To-Left layout:
-
-* Line numbers, Book Marks and Selection margins. 
-* Context Menus, ToolTips and Dialogs. 
-* Printing and Print Preview. 
-* Line borders, Underline and Text Range customization. 
-
-RTL can be enabled in EditControl using `RenderRightToLeft` property. Its default value is false.  
+Supports laying out text in a left-to-right fashion, allowing the control be used to develop forms for worldwide audiences. RTL can be enabled in EditControl using `RenderRightToLeft` property. Its default value is `false`.  
 
 {% tabs %}
 
@@ -368,66 +319,142 @@ Me.editControl1.RenderRightToLeft = True
 
 **Use-case scenarios**
 
-With RTL support, you can use EditControl, to render content in Right-To-left layout for languages such as Arabic. This is depicted in the screenshot below:
+With RTL support, you can use EditControl, to render content in Right-To-left layout for languages such as Arabic.
 
 ![](Appearance_images/Appearance_img5.jpg)
 
-## Margin
+### Change Right-to-Left layout by keyboard
 
-Selection Margin is a thin vertical strip along the left side of the EditControl that enables you to select the contents of the entire line on the EditControl, by simply clicking on the corresponding selection margin area of the line. 
+EditControl supports rendering content in Right-To-Left (RTL) layout by pressing <kbd>Shift + ctrl</kbd>.
 
-The `ShowSelectionMargin` property allows you to show or hide this selection margin. Its default value is true. The following are the properties used to customize the margin.
+## Customize Text appearance
+
+In EditControl, we are able to customize the text color and its border. The following topics explains the same.
+
+### Text Color
+
+In EditControl, we are able to customize the appearance of the text color in a specific range of lines by using the `SetTextColor` method. 
 
 <table>
 <tr>
 <th>
-Properties</th><th>
+Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-SelectionMarginForegroundColor</td><td>
-Specifies foreground color of the selection margin</td></tr>
-<tr>
-<td>
-SelectionMarginBackgroundColor</td><td>
-Specifies background color of the selection margin</td></tr>
-<tr>
-<td>
-SelectionMarginWidth</td><td>
-Sets the width of the selection margin</td></tr>
+SetTextColor</td><td>
+Sets the color of the text for the EditControl</td></tr>
 </table>
-
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.SelectionMarginForegroundColor = Color.Gray;
+// Set the color of the text for the EditControl.
 
-this.editControl1.SelectionMarginBackgroundColor = Color.IndianRed;
-
-this.editControl1.SelectionMarginWidth = 100;
+this.editControl1.SetTextColor(new Point(1, 1), new Point(8, 8), Color.Orange);
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.SelectionMarginForegroundColor = Color.Gray
+' Set the color of the text for the EditControl.
 
-Me.editControl1.SelectionMarginBackgroundColor = Color.IndianRed
-
-Me.editControl1.SelectionMarginWidth = 100
+Me.editControl1.SetTextColor(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img6.jpg)
+![](Appearance_images/Appearance_img24.png)
 
-**User Margin**
+### Text border color
 
-EditControl supports the User Margin feature, which can be used to display additional information regarding the contents in the EditControl. Information can also be displayed on a line-by-line basis. The User Margin feature can be turned on by setting the `ShowUserMargin` property to True. Its default value is false. The user margin can be customized using the following properties.
+In EditControl, we are able to set the border for its text using the `SetTextBorder` method and simultaneously we can remove the border of the text using the `RemoveTextBorder` method. The following table explain regarding this methods and also the parameter value used in these methods.
+
+<table>
+<tr>
+<th>
+Methods</th><th>
+Description</th></tr>
+<tr>
+<td>
+SetTextBorder</td><td>
+Sets border around text</td></tr>
+<tr>
+<td>
+RemoveTextBorder</td><td>
+Removes border around text with given coordinates</td></tr>
+</table>
+
+
+<table>
+<tr>
+<th>
+EditControl border enumerator</th><th>
+Description</th></tr>
+<tr>
+<td>
+FrameBorderStyle</td><td>
+Specifies the style of border line. The options provided are * Dash* DashDot* Dot* None* Solid* Wave</td></tr>
+<tr>
+<td>
+<br>BorderWeight</td><td>
+Specifies the weight of the border line. The options provided are * Bold* Double* Thin</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Set borders for the specified text range.
+
+this.editControl1.SetTextBorder(new Point(1, 1), new Point(8, 8), Color.Red, FrameBorderStyle.Wave, BorderWeight.Double);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Set borders for the specified text range.
+
+Me.editControl1.SetTextBorder(New Point(1, 1), New Point(3, 3), Color.Red, FrameBorderStyle.Wave, BorderWeight.Double)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img23.png)
+
+## User Margin
+
+Displays additional information regarding the contents in the EditControl. Information can also be displayed on a line-by-line basis. 
+
+### user margin visibility
+
+The User Margin feature can be turned on by setting the `ShowUserMargin` property to `true`. Its default value is `false`. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.ShowUserMargin = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.ShowUserMargin = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customize appearance of user margin
+
+User margin width and placement can be customized using the following properties.
 
 <table>
 <tr>
@@ -469,7 +496,7 @@ Me.editControl1.UserMarginPlacement = Syncfusion.Windows.Forms.Edit.Enums.Margin
 
 {% endtabs %}
 
-The following properties can be used to set the background color, text color and border color of the user margin in the EditControl.
+The following properties can be used to set the background color, text color, and border color of the user margin in the EditControl.
 
 <table>
 <tr>
@@ -515,7 +542,9 @@ Me.editControl1.UserMarginTextColor = Color.Green
 
 {% endtabs %}
 
-It is also possible to set custom text in the User Margin on a line-by-line basis by handling the `DrawUserMarginText` event of the EditControl. Moreover, it is also possible to customize the font settings for the text of the User Margin.
+#### How to add custom text in user margin
+
+It is possible to set custom text in the user margin on a line-by-line basis by handling the `DrawUserMarginText` event of the EditControl. Moreover, it is also possible to customize the font settings for the text of the user margin.
 
 {% tabs %}
 
@@ -571,13 +600,36 @@ End Sub
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img8.jpg)
+![](Appearance_images/Appearance_img6.jpg)
 
-## Scrolling support
+## Selection margin
 
-EditControl offers extremely smooth scrolling behavior using idle-time processing and dynamic scroll area expansion techniques. The scrolling behavior is smooth even when large files are loaded,though the EditControl scrolls by several hundred lines for a small movement of the scroller.
+Selection margin is a thin vertical strip along the left side of the EditControl that enables you to select the contents of the entire line in the EditControl, by simply clicking on the corresponding selection margin area of the line. 
 
-The scrollers in the EditControl can be optionally shown / hidden by using the below given properties.
+### Selection margin visibility
+
+`ShowSelectionMargin` property allows you to show or hide this selection margin. Its default value is `true`. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.ShowSelectionMargin = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.ShowSelectionMargin = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customize appearance of selection margin
+
+Selection margin background, foreground and width can be customized using the following properties.
 
 <table>
 <tr>
@@ -586,58 +638,53 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-ShowVerticalScroller</td><td>
-Specifies a value indicating whether the vertical scroller can be shown</td></tr>
+SelectionMarginForegroundColor</td><td>
+Specifies foreground color of the selection margin</td></tr>
 <tr>
 <td>
-ShowHorizontalScroller</td><td>
-Specifies a value indicating whether the horizontal scroller can be shown</td></tr>
+SelectionMarginBackgroundColor</td><td>
+Specifies background color of the selection margin</td></tr>
 <tr>
 <td>
-AlwaysShowScrollers</td><td>
-Specifies a value indicating whether scrollers should be always visible</td></tr>
+SelectionMarginWidth</td><td>
+Sets the width of the selection margin</td></tr>
 </table>
+
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Display the Horizontal Scroller.
+this.editControl1.SelectionMarginForegroundColor = Color.Gray;
 
-this.editControl1.ShowHorizontalScroller = true;
+this.editControl1.SelectionMarginBackgroundColor = Color.IndianRed;
 
-// Display the Vertical Scroller.
-
-this.editControl1.ShowVerticalScroller = true;
-
-this.editControl1.AlwaysShowScrollers = true;
+this.editControl1.SelectionMarginWidth = 100;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-// Display the Horizontal Scroller.
+Me.editControl1.SelectionMarginForegroundColor = Color.Gray
 
-Me.editControl1.ShowHorizontalScroller = True
+Me.editControl1.SelectionMarginBackgroundColor = Color.IndianRed
 
-// Display the Vertical Scroller.
-
-Me.editControl1.ShowVerticalScroller = True
-
-Me.editControl1.AlwaysShowScrollers = True
+Me.editControl1.SelectionMarginWidth = 100
 
 {% endhighlight %}
 
 {% endtabs %}
 
-EditControl supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple EditControls.
+![](Appearance_images/Appearance_img7.jpg)
 
-![](Appearance_images/Appearance_img9.jpg)
+## Indicator margin
 
-### ScrollBar buttons
+EditControl provides an extensive support of indicator margin for the purpose of displaying the custom indicators or bookmarks. 
 
-Buttons can be displayed at the top, bottom, left or right of the scroll bars by using the below given properties.
+### Indicator margin visibility
+
+Indicator margin can be enabled or disabled by using the `ShowIndicatorMargin` property. Its default value is `true`, to hide the indicator margin turn on its value to `false`. `MarkerAreaWidth` property of EditControl sets the width of marker area.
 
 <table>
 <tr>
@@ -646,117 +693,687 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-ScrollbarBottomButtons</td><td>
-Gets buttons at the bottom of vertical scrollbar</td></tr>
+ShowIndicatorMargin</td><td>
+Specifies a value indicating whether bookmarks and indicator margins should be visible</td></tr>
 <tr>
 <td>
-ScrollbarLeftButtons</td><td>
-Gets buttons on the left of vertical scrollbar</td></tr>
-<tr>
-<td>
-ScrollbarRightButtons</td><td>
-Gets buttons on the right of vertical scrollbar</td></tr>
-<tr>
-<td>
-ScrollbarTopButtons</td><td>
-Gets buttons at the top of vertical scrollbar</td></tr>
+MarkerAreaWidth</td><td>
+Specifies width of marker area</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.ScrollbarBottomButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton1 });
+// Displays the Indicator margin.
 
-this.editControl1.ScrollbarLeftButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton2 });
+this.editControl1.ShowIndicatorMargin = true;
 
-this.editControl1.ScrollbarRightButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton3 });
+// Sets the width of the Indicator margin.
 
-this.editControl1.ScrollbarTopButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton4 });
-
+this.editControl1.MarkerAreaWidth = 50;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.ScrollbarBottomButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton1}) 
+' Displays the Indicator margin.
 
-Me.editControl1.ScrollbarLeftButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton2}) 
+Me.editControl1.ShowIndicatorMargin = True
 
-Me.editControl1.ScrollbarRightButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton3}) 
+' Sets the width of the Indicator margin.
 
-Me.editControl1.ScrollbarTopButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton4}) 
+Me.editControl1.MarkerAreaWidth = 50
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Scroll position and offsets
+![](Appearance_images/Appearance_img8.png)
 
-The scroll position and offsets of the EditControl are set by using the below given properties.
+### Customize the appearance of indicator margin
+
+The background color of indicator margin can be customized by using the `IndicatorMarginBackColor` property of EditControl.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.IndicatorMarginBackColor = Color.Red;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.IndicatorMarginBackColor = Color.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img9.png)
+
+## Selection color customization
+
+EditControl also provides an options to change the back color of selected range of text. `SetBackgroundColor` method of EditControl is used to set the background color for a specified range of text.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.SetBackgroundColor(new Point(1, 1), new Point(9, 9), Color.AliceBlue);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.SetBackgroundColor(New Point(1, 1), New Point(9, 9), Color.AliceBlue)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Set up background for individual line or selected block of text
+
+EditControl also allows setting custom background color for individual lines as well as for selected block of text. You can set any desired background to a particular line or block of selection,as explained below.
+
+* Register a back color format with the EditControl by using its `RegisterBackColorFormat` method, with appropriate values for BackgroundColor, ForegroundColor and HatchStyle parameters.
+* Set the background color to the entire line or just the selected text by using the `SetLineBackColor` and `SetSelectionBackColor` methods respectively.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Register a backcolor format with EditControl.
+
+IBackgroundFormat format = this.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, true);
+
+// Set the background for the entire line of text.
+
+this.editControl1.SetLineBackColor(editControl1.CurrentLine, true, format);
+
+// Set the background for the selected block of text.        
+
+this.editControl1.SetSelectionBackColor(format);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Register a backcolor format with EditControl.
+
+Dim IBackgroundFormat As format = Me.editControl1.RegisterBackColorFormat(Color.Aquamarine, Color.Beige, System.Drawing.Drawing2D.HatchStyle.Cross, True)
+
+' Set the background for the entire line of text. 
+
+Me.editControl1.SetLineBackColor(editControl1.CurrentLine, True, format)
+
+' Set the background for the selected block of text.        
+
+Me.editControl1.SetSelectionBackColor(format)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img25.jpeg)
+
+#### Remove applied background for individual line or selected block of text
+
+By using `RemoveLineBackColor` and `RemoveSelectionBackColor` method of EditControl we were able to remove the background color for individual lines or selected blocks of text. 
 
 <table>
 <tr>
 <th>
-Properties</th><th>
+Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-ScrollPosition</td><td>
-Specifies scroll position of EditControl</td></tr>
+RemoveLineBackColor</td><td>
+Removes line back color</td></tr>
 <tr>
 <td>
-ScrollOffsetBottom</td><td>
-Specifies the bottom scroll offset</td></tr>
-<tr>
-<td>
-ScrollOffsetLeft</td><td>
-Specifies the left scroll offset</td></tr>
-<tr>
-<td>
-ScrollOffsetRight</td><td>
-Specifies the right scroll offset.</td></tr>
-<tr>
-<td>
-ScrollOffsetTop</td><td>
-Specifies the top scroll offset.</td></tr>
+RemoveSelectionBackColor</td><td>
+Removes background coloring from the selected text</td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.ScrollPosition = new Point(1, 5);
+// Removes line back color.
 
-this.editControl1.ScrollOffsetBottom = 5;
+this.editControl1.RemoveLineBackColor(4);
 
-this.editControl1.ScrollOffsetLeft = 10;
+// Removes background coloring from the selected text.
 
-this.editControl1.ScrollOffsetTop = 5;
-
-this.editControl1.ScrollOffsetTop = 10;
+this.editControl1.RemoveSelectionBackColor();
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.ScrollPosition = New Point(1, 5) 
+' Removes line back color.
 
-Me.editControl1.ScrollOffsetBottom = 5 
+Me.editControl1.RemoveLineBackColor(4)
 
-Me.editControl1.ScrollOffsetLeft = 10 
+' Removes background coloring from the selected text.
 
-Me.editControl1.ScrollOffsetTop = 5 
-
-Me.editControl1.ScrollOffsetTop = 10
+Me.editControl1.RemoveSelectionBackColor()
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### ScrollBar style
+## StatusBar
+
+EditControl provide support to display information about the current state of the control such as the current file name, line number, and column number. The built-in panels are as follows:
+
+* TextPanel
+* StatusPanel
+* EncodingPanel
+* FileNamePanel
+* CoordinatePanel
+* InsertPanel
+
+### Status bar settings
+
+The `StatusBarSettings` property contains many sub properties, which can be used to customize the appearance and visibility of the status bar and its panels. The following table represents some of sub properties in StatusBarSettings.
+
+<table>
+<tr>
+<th>
+StatusBarSettings property</th><th>
+Description</th></tr>
+<tr>
+<td>
+TextPanel</td><td>
+Specifies StatusBarPanelSettings object for text panel</td></tr>
+<tr>
+<td>
+StatusPanel</td><td>
+Specifies StatusBarPanelSettings object for status panel</td></tr>
+<tr>
+<td>
+EncodingPanel</td><td>
+Specifies StatusBarPanelSettings object for encoding panel</td></tr>
+<tr>
+<td>
+FileNamePanel</td><td>
+Specifies StatusBarPanelSettings object for fileName panel</td></tr>
+<tr>
+<td>
+CoordinatePanel</td><td>
+Specifies StatusBarPanelSettings object for coordinate panel</td></tr>
+<tr>
+<td>
+InsertPanel</td><td>
+Specifies StatusBarPanelSettings object for insert panel</td></tr>
+<tr>
+<td>
+Panels</td><td>
+Gets the list of status bar panel settings</td></tr>
+<tr>
+<td>
+StatusBar</td><td>
+Gets underlying status bar</td></tr>
+<tr>
+<td>
+GripVisibility</td><td>
+Gets or sets the visibility of the status bar sizing grip. The options provided are as follows:* Visible* Hidden</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Set the visibility of the status bar sizing grip.
+
+this.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit.Enums.SizingGripVisibility.Visible;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Set the visibility of the status bar sizing grip.
+
+Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit.Enums.SizingGripVisibility.Visible
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img12.png)
+
+#### Visibility settings
+
+StatusBar feature can be turned on by setting the StatusBarSettings.Visible property to `true`. Its default value is `false`. The individual StatusBar panels can be optionally shown or hidden by using the Visible property corresponding to the respective panel.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ // Shows the built-in status bar.
+
+this.editControl1.StatusBarSettings.Visible = true;
+
+ // Enable the TextPanel in the StatusBar.
+
+this.editControl1.StatusBarSettings.TextPanel.Visible = true;
+
+// Set the visibility of the status bar sizing grip.
+
+this.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit.Enums.SizingGripVisibility.Visible;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+// Shows the built-in status bar.
+
+Me.editControl1.StatusBarSettings.Visible = True
+
+' Enable the TextPanel in the status bar.
+
+Me.editControl1.StatusBarSettings.TextPanel.Visible = True
+
+' Set the visibility of the status bar sizing grip.
+
+Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit.Enums.SizingGripVisibility.Visible
+
+{% endhighlight %}
+
+{% endtabs %}
+
+#### Visual styles
+
+EditControl status bar supports different visual styles for its appearance. Some of the available Visual styles are as follows:
+
+* Default
+* Metro
+* Office2007
+* Office2010
+
+The visual style can be applied for the StatusBar using `VisualStyle` property. The following code example illustrates how to change the visual style for StatusBar in EditControl.
+
+**Default**
+
+This option helps to set the Default style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Default
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Default; 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Default
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Default
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img13.png)
+
+**Metro**
+
+This option helps to set the Metro style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Metro
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Metro; 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Metro
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Metro
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img14.png)
+
+**Office2007Blue**
+
+This option helps to set the Office2007Blue style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007Blue
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007; 
+
+this.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Blue;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Blue
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007
+
+Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Blue
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img15.png)
+
+**Office2007Black**
+
+This option helps to set the Office2007Black style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007Black
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007; 
+
+this.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Black
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007
+
+Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Black
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img16.png)
+
+**Office2007Silver**
+
+This option helps to set the Office2007Silver style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007Silver
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007; 
+
+this.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Silver;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Silver
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007
+
+Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img17.png)
+
+**Office2007Managed**
+
+This option helps to set the Office2007Managed style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2007Managed
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007; 
+
+this.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Managed;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2007Managed
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2007
+
+Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Managed
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img18.png)
+
+**Office2010Blue**
+
+This option helps to set the Office2010Blue style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2010Blue
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2010; 
+
+this.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Blue;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010Blue
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2010
+
+Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Blue
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img19.png)
+
+**Office2010Black**
+
+This option helps to set the Office2010Black style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2010Black
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2010; 
+
+this.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010Black
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2010
+
+Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Black
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img20.png)
+
+**Office2010Silver**
+
+This option helps to set the Office2010Silver style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2010Silver
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2010; 
+
+this.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Silver;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010Silver
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2010
+
+Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img21.png)
+
+**Office2010Managed**
+
+This option helps to set the Office2010Managed style.
+
+##### Code sample
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2010Managed
+
+this.editControl1.StatusBarSettings.VisualStyle= Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2010; 
+
+this.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Managed;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Office2010Managed
+
+Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Office2010
+
+Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Managed
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img22.png)
+
+A sample which demonstrates the above features is available in the below sample installation path.
+
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\StatusBar
+
+## ScrollBar 
+
+EditControl can display a data object, such as a document or a bitmap, that is larger than the window's client area. With the help of scroll bar, the user can scroll a data object in the client area to bring into view the portions of the object that extend beyond the borders of the window.
+
+### Customize the scrollbar visibility
+
+By using the `AlwaysShowScrollers` property of EditControl, we can enable or disable the scroll bar.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.AlwaysShowScrollers = false;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.AlwaysShowScrollers = False
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Types of scrolling mode
+
+There are various types of scrolling mode in EditControl as follows:
+
+* Immediate - Scrolls the control to the new value immediately.
+* Deferred - Scrolls the control when thumb track is completed.
+* Pixel - Scrolls line by line.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Scrolls the vertical scroll bar line by line.
+
+this.editControl1.VScrollMode = Syncfusion.Windows.Forms.Edit.ScrollMode.Pixel;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Scrolls the vertical scroll bar line by line.
+
+Me.editControl1.VScrollMode = Syncfusion.Windows.Forms.Edit.ScrollMode.Pixel
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customize the appearance of scrollbar
 
 EditControl enables to provide Office 2007 appearance to scroll bars by setting the `ScrollVisualStyle` property to Office2007. It supports all the three Office 2007 Color Schemes (Black, Blue and Silver), which can be set by using the `ScrollColorScheme` property. Also, custom colors can be applied to the scroll bars of the EditControl. This can be done by setting the ScrollColorScheme property to Managed.
 
@@ -800,7 +1417,6 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Green);
 {% highlight VB %}
 
 Me.editControl1.ScrollVisualStyle = ScrollBarCustomDrawStyles.Office2007
-
 Me.editControl1.ScrollColorScheme = Office2007ColorScheme.Blue
 
 ' Set custom color for the scroll bar.
@@ -815,4 +1431,253 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
 The following illustration shows the EditControl with custom color (green) set for the scroll bars.
 
-![](Appearance_images/Appearance_img10.jpg)
+![](Appearance_images/Appearance_img23.jpg)
+
+## Append code snippets
+
+Essential Edit supports an advanced feature of VS 2005 like Code Snippets. It is also used to load or save VS.NET 2005-compatible XML snippets. Code Snippets are inserted into the EditControl by following the procedure given below:
+
+1. Type the snippet name. For example "do".
+2. Pressing the CTRL + ' combination.
+3. Select an item from the list as shown in the image below.
+
+![](Appearance_images/Appearance_img25.png)
+
+The code snippets allow you to input data to the highlighted fields.
+
+Code Snippets can also be inserted into the EditControl by using the static `Extract` method of the `CodeSnippetsExtractor` class. Extract method takes the following two parameters:
+
+1. Path of the folder containing the code snippets.
+2. Instance of the EditControl into which the extracted code snippet should be inserted.
+
+This is illustrated in the code given below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+CodeSnippetsExtractor.Extract(Path, editControl1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+CodeSnippetsExtractor.Extract(Path, editControl1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Code Snippets are added to the current language of the EditControl by using the below given method.
+
+<table>
+<tr>
+<th>
+Method</th><th>
+Description</th></tr>
+<tr>
+<td>
+AddCodeSnippet</td><td>
+Adds new code snippet to current language</td></tr>
+</table>
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.AddCodeSnippet(string title, ArrayList literals, string code);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.AddCodeSnippet(String title, ArrayList literals, String code)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static Extract method of the CodeSnippetsExtractor class is used to extract and fill the container object. The container object can be added to the SnippetsContainer of the EditControl by using the AddContainer method. This is illustrated in the code given below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private CodeSnippetsContainer container = new Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer(); 
+
+container = CodeSnippetsExtractor.Extract(Path@"\Loops");
+
+container.Name = "Loops";
+
+this.editControl1.Language.SnippetsContainer.AddContainer(container);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+container As CodeSnippetsContainer = New Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer()
+
+container = CodeSnippetsExtractor.Extract(Path "\Loops")
+
+container.Name = "Loops"
+
+Me.editControl1.Language.SnippetsContainer.AddContainer(container)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Code snippets can also be created by using the `configuration` file. For example, the code snippet for a structure in C# can be created as shown below.
+
+{% highlight html %}
+
+<CodeSnippetsContainer Name ="Container 2">
+
+<CodeSnippet Format ="1.0.0">
+
+       <Header>
+
+        <Title>struct</Title>
+
+         <Shortcut>struct</Shortcut>
+
+ <Description>Code snippet for Struct</Description>
+
+     </Header>
+
+     <Snippet>
+
+          <Declarations>
+
+        <Literal>
+
+         <ID>name</ID>
+
+         <ToolTip>Struct name</ToolTip>
+
+        <Default>Struct</Default>
+
+      </Literal>
+
+         </Declarations>
+
+       <Code Language ="csharp"><![CDATA[struct $name$
+
+       {
+
+
+
+       }]]>
+
+       </Code>
+
+</Snippet>
+
+</CodeSnippet>
+
+</CodeSnippetsContainer>
+
+{% endhighlight %}
+
+The Literal element is used to identify a replacement for a piece of code that is entirely contained within the snippet, but one that will likely be customized after it is inserted into the code. For example, literal strings, numeric values, and some variable names should be declared as literals. The symbol $ is placed at the beginning and end of the literal ID element value. For example, if a literal has an ID element that contains the value MyID, you must reference that literal in the code element as $MyID$. All code snippets must be placed between &lt;![CDATA[ and ]]&gt; brackets.
+
+**Showing code snippets**
+
+You can also programmatically show the choice list of code snippets by calling `ShowCodeSnippets` method given below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Shows the code snippets choice list.
+this.editControl1.ShowCodeSnippets();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Shows the code snippets choice list.
+Me.editControl1.ShowCodeSnippets()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Border settings**
+
+Border can be set for the active code snippets by using the `DrawCodeSnippetBorder` property of the EditControl. And also we can set the size of CodeSnippet popup window by using the `CodeSnipptSize` property of EditControl.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.DrawCodeSnippetBorder = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.DrawCodeSnippetBorder = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+A sample which demonstrates the above features is available in the below sample installation path.
+
+Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Code Snippets
+
+## Customize cursor appearance
+
+In EditControl, cursor appearance can be customized by using the `Cursor` property. The cursor appearance can be modified to arrow, cross, hand etc.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private Cursor currentCursor = Cursors.Arrow;
+
+this.editControl1.Cursor = this.currentCursor;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+currentCursor as Cursor = Cursors.Arrow
+
+Me.editControl1.Cursor = Me.currentCursor
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Suspend and resume painting
+
+Painting of the EditControl can be suspended using the `Suspend` method call. Painting can be resumed using `Resume` method call. Suspend and Resume methods internally call the interop method and LockWindowUpdate method to suspend and resume painting of the EditControl.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.SuspendPainting();
+
+this.editControl1.ResumePainting();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.SuspendPainting()
+
+Me.editControl1.ResumePainting()
+
+{% endhighlight %}
+
+{% endtabs %}
