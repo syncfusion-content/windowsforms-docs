@@ -120,7 +120,7 @@ Drill down to this folder and add this file to your project by using the Solutio
 
 ![](Getting-Started_images/Getting-Started_img12.jpeg)
 
-2.You can find the `SimpleScheduleDataProvider.cs` file in the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framwork_version&gt;\ScheduleSample\CS_ folder. Drill down to this folder and add this file to our project.
+2.You can find the `SimpleScheduleDataProvider.cs` file in the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample\CS_ folder. Drill down to this folder and add this file to our project.
 
 ![](Getting-Started_images/Getting-Started_img13.jpeg)
 
