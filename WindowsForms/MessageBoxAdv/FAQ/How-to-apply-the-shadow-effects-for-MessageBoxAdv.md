@@ -11,7 +11,9 @@ documentation: ug
 
 In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShadow property. Refer to the following code examples.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
  //To set the shadow effect
 
@@ -19,7 +21,7 @@ In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShad
 
 {% endhighlight  %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
  'To set the shadow effect 
 
@@ -27,6 +29,7 @@ In MessageBoxAdv, you can enable/disable the shadow effect by using the DropShad
 
 {% endhighlight  %}
 
+{% endtabs %}
 
 N> The default value of the DropShadow property is false. So, it is needed to enable the property to achieve the shadow effect.
 

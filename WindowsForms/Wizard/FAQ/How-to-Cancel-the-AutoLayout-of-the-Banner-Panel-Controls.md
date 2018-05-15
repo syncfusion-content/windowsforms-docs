@@ -7,11 +7,13 @@ control: Wizard
 documentation: ug
 ---
 
-# How to Cancel the AutoLayout of the Banner panel controls
+# How to cancel the AutoLayout of the banner panel controls
 
 Wizard Control automatically repositions child controls parts by itself. The AutoLayout of controls in the banner (gradient panel) can be canceled using BannerControlLocationChanging event. You could change the title and description label control to a desired location and handle this event to cancel the auto layout of those controls as follows.
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -29,7 +31,7 @@ e.Cancel = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -45,3 +47,4 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}

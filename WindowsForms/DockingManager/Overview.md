@@ -13,7 +13,7 @@ The DockingManager control implements an architecture that allows panels to be d
 
 ![](Images/GettingStarted.png)
 
-## Key Features 
+## Key features
 
 * **DockState** - Supports different dock states such as Docking, Floating, AutoHide and Tabbed.
 * **Dock Ability** - Extensive Support for docking the elements at any side relative to form or other dock panels and also allow user to restrict only dock at specific side.

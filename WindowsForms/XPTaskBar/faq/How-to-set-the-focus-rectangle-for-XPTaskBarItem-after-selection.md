@@ -8,18 +8,22 @@ documentation: ug
 ---
 # How to set the focus rectangle for XPTaskBarItem after selection
 
-This can be achieved by setting DrawFocusRect property to true. The following code snippet illustrates this.
+This can be achieved by setting the DrawFocusRect property to `true`.
+
+{% tabs %}
 
 {% highlight C# %}   
 
 this.xpTaskBarBox1.DrawFocusRect = true;
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 
- {% highlight vbnet %} 
+{% highlight VB %} 
 
 Me.xpTaskBarBox1.DrawFocusRect = True
 
 {% endhighlight %}
+
+{% endtabs %}

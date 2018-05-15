@@ -9,13 +9,15 @@ documentation: ug
 
 # How to remove the Context Menu for a particular tab
 
-This can be achieved by handling the BeforePopup event of TabbedMDIManager.ContextMenuItem. Before that we should know which tab is currently active. To keep track of this, SelectedIndexChanged event of MDITabPanel can be used. 
+This can be achieved by handling the BeforePopup event of TabbedMDIManager.ContextMenuItem. Before that we should know which tab is currently active. To keep track of this, SelectedIndexChanged event of MDITabPanel can be used.
 
-First handle the TabControlAdded event of TabbedMDIManager. Then subscribe to the args.TabControl.SelectedIndexChanged event (where args is the argument passed into this event). In the SelectedIndexChanged event handler, store the SelectedTab in a variable which is accessible by all the methods inside that class. In the BeforePopup event, check for the TabPageAdv and cancel the context menu by setting e.Cancel = true.
+First handle the TabControlAdded event of TabbedMDIManager. Then subscribe to the args.TabControl.SelectedIndexChanged event (where args is the argument passed into this event). In the SelectedIndexChanged event handler, store the SelectedTab in a variable which is accessible by all the methods inside that class. In the BeforePopup event, check for the TabPageAdv and cancel the context menu by setting e.Cancel = `true`.
 
-In this example, we are going to remove context menu for the pages which are having the text as 'New Document'. 
+In this example, we are going to remove context menu for the pages which are having the text as 'New Document'.
 
-{% highlight c# %} 
+{% tabs %}
+
+{% highlight C# %}
 
 
 
@@ -63,7 +65,7 @@ if (st.Text == "New Document") e.Cancel = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -109,3 +111,5 @@ End Sub
 
 
 {% endhighlight %}
+
+{% endtabs %}

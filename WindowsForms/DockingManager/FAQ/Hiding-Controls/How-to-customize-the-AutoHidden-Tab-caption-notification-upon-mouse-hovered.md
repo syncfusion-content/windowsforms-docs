@@ -10,7 +10,7 @@ documentation: ug
 
 # How to customize the AutoHidden Tab caption notification upon mouse hovered?
 
-In DockingManager, by default the width of the AutoHidden Tab can be adjusted for notification purpose upon mouse hovered on it. 
+In DockingManager, by default the width of the AutoHidden Tab can be adjusted for notification purpose upon mouse hovered on it.
 
 This can be achieved by using the `EnableAutoAdjustCaption` property.
 

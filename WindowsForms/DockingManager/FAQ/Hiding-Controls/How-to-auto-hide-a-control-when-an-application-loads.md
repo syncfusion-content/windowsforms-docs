@@ -20,7 +20,7 @@ Description</th></tr>
 <tr>
 <td>
 SetAutoHideOnLoad</td><td>
-AutoHides the docked control when the application loads. The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the docked control.{{ 'bautohide' | markdownify }} - Value indicating true or false.</td></tr>
+AutoHides the docked control when the application loads. The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the docked control.{{ 'bautohide' | markdownify }} - Value indicating `true` or `false`.</td></tr>
 </table>
 
 {% tabs %}
@@ -31,7 +31,7 @@ this.dockingManager1.SetAutoHideOnLoad(this.listBox1, true);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.DockingManager1.SetAutoHideOnLoad(Me.ListBox1, True)
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # How to hide a control when an application loads?
 
-This is done programmatically, by calling `SetHiddenOnLoad` method or through Designer, by setting `HiddenOnLoad` property to true. 
+This is done programmatically, by calling `SetHiddenOnLoad` method or through Designer, by setting `HiddenOnLoad` property to `true`.
 
 
 <table>
@@ -20,7 +20,7 @@ Description</th></tr>
 <tr>
 <td>
 SetHiddenOnLoad</td><td>
-Hides the docked control when the application loads. The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the docked control.{{ 'bhidden' | markdownify }} - Value indicating true or false.</td></tr>
+Hides the docked control when the application loads. The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the docked control.{{ 'bhidden' | markdownify }} - Value indicating `true` or `false`.</td></tr>
 </table>
 
 

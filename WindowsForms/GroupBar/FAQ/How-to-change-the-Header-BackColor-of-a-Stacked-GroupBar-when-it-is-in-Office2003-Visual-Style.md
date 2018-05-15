@@ -6,11 +6,13 @@ platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# How to change the Header BackColor of a Stacked GroupBar when it is in Office 2003 Visual Style
+# How to change the Header BackColor of a Stacked GroupBar when it is in Office 2003 Visual Style?
 
 The following code examples are used to change the GroupBar Item's Header BackColor.
 
-{% highlight C# %} 
+{% tabs %}
+
+{% highlight C# %}
 
 //To set the Office2003 visual style
 
@@ -28,7 +30,7 @@ Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorLight = Color.White
 
  {% endhighlight %}
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 'To set the Office2003 visual style
 
@@ -46,10 +48,10 @@ Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorLight = Color.White
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 N> In GroupBar, StackedMode property should be enabled to customize the appearance of the GroupBar header.
 
-![](Overview_images/Overview_img47.png) 
+![](Overview_images/Overview_img47.png)
 

@@ -7,13 +7,13 @@ control: HTML UI
 documentation: ug
 ---
 
-# How To Print the Contents Of the HTMLUI Control?
+# How to print the contents of the HTMLUI control?
 
 The document available in the HTMLUI control can be printed with the help of the HTMLUIPrintDocument class. The Print method of this class is used to start the document printing process.
 
+{% tabs %}
 
-
-{% highlight c# %}
+{% highlight C# %}
 
 
 
@@ -31,7 +31,7 @@ pd.Print();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -49,5 +49,5 @@ pd.Print()
 
 {% endhighlight %}
 
-
+{% endtabs %}
 

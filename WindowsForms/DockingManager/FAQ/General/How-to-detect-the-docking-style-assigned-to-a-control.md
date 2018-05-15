@@ -21,7 +21,7 @@ Description</th></tr>
 <tr>
 <td>
 GetDockingStyle</td><td>
-Returns the current docking style of the control. The return value for this method would be docking style value, that specifies the dock type / position. The docked control for which the dock style is to be identified should be passed as a parameter to this method. The parameter is,{{ 'Ctrl' | markdownify }} - Indicates the docked control for which the DockStyle needs to be retrieved.</td></tr>
+Returns the current docking style of the control. The return value for this method would be docking style value, that specifies the dock type/position. The docked control for which the dock style is to be identified should be passed as a parameter to this method. The parameter is,{{ 'Ctrl' | markdownify }} - Indicates the docked control for which the DockStyle needs to be retrieved.</td></tr>
 </table>
 
 {% tabs %}

@@ -8,7 +8,9 @@ documentation: ug
 ---
 # How do I paint the GroupBarItem image without scaling the image?
 
-You can draw the image of GroupBarItem (without scaling it), by overriding the DrawGroupBarImage method of the GroupBar. 
+You can draw the image of GroupBarItem (without scaling it), by overriding the DrawGroupBarImage method of the GroupBar.
+
+{% tabs %}
 
 {% highlight C# %}  
 
@@ -24,7 +26,7 @@ g.DrawImage(this.VisibleGroupBarItems[index].Image, new Rectangle(location, new 
 {% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
 ' For this callback to occur LargeImageMode must be set to true.
 
@@ -39,3 +41,5 @@ g.DrawImage(Me.VisibleGroupBarItems(index).Image, New Rectangle(location, New Si
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}

@@ -7,7 +7,7 @@ control: HubTile
 documentation: ug
 --- 
 
-# How to enable / disable HubTile rotation transition in runtime?
+# How to enable/disable HubTile rotation transition in runtime?
 
 You can achieve it by setting HubTile TileType property as DefaultType, so that rotation transition will be disabled.
 
@@ -24,9 +24,9 @@ You can achieve it by setting HubTile TileType property as DefaultType, so that 
 </tr>
 </Table>
 
+{% tabs %}
 
-
-{% highlight C# %} 
+{% highlight C# %}
 
  
 
@@ -35,10 +35,10 @@ You can achieve it by setting HubTile TileType property as DefaultType, so that 
 this.RotateTile.TileType = HubTileType.DefaultTile;
 
  
-  {% endhighlight %}
+{% endhighlight %}
  
 
-{% highlight vbnet %} 
+{% highlight VB %} 
  
 
 'Sets HubTile as Default Tile and Rotation will be disabled
@@ -46,3 +46,5 @@ this.RotateTile.TileType = HubTileType.DefaultTile;
 Me.RotateTile.TileType = HubTileType.DefaultTile
 
 {% endhighlight %}
+
+{% endtabs %}

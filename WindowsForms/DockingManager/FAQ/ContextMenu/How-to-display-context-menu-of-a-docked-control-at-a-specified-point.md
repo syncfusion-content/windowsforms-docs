@@ -19,7 +19,7 @@ Description</th></tr>
 <tr>
 <td>
 ShowMenu</td><td>
-Show's the docking caption context menu at the specified point (Pt). The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the control for which dock / floating state is been queried.{{ 'Pt' | markdownify }} - Indicates the location of the menu to be displayed.</td></tr>
+Show's the docking caption context menu at the specified point (Pt). The parameters are,{{ 'Ctrl' | markdownify }} - Indicates the control for which docking/floating state is been queried.{{ 'Pt' | markdownify }} - Indicates the location of the menu to be displayed.</td></tr>
 </table>
 
 {% tabs %}

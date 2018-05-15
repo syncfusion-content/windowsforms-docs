@@ -10,8 +10,9 @@ documentation: ug
 
 The appearance of diagonal columns can be customized using the below code.
 
+{% tabs %}
 
-{% highlight c#  %}
+{% highlight C# %}
 
 
 private void monthCalendarAdv1_DateCellQueryInfo(object sender,Syncfusion.Windows.Forms.Tools.DateCellQueryInfoEventArgs e)
@@ -43,8 +44,9 @@ monthCalendarAdv1.SetInfo(e.RowIndex,e.ColIndex,gs);
 
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 Private Sub monthCalendarAdv1_DateCellQueryInfo(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.DateCellQueryInfoEventArgs) 
@@ -73,7 +75,9 @@ End If
 
 End Sub
 
-{% endhighlight  %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](FAQ_images/Overview_img177.jpeg) 
 
@@ -83,8 +87,9 @@ Setting Icons for the Data Cells
 
 Using DateCellQueryInfo event, we can add icons to the data cells.
 
+{% tabs %}
 
-{% highlight c#  %}
+{% highlight C# %}
 
 
 private void monthCalendarAdv1_DateCellQueryInfo(object sender,Syncfusion.Windows.Forms.Tools.DateCellQueryInfoEventArgs e)
@@ -107,8 +112,9 @@ if(e.RowIndex==3)
 
 
 
-{% endhighlight  %}
-{% highlight vbnet  %}
+{% endhighlight %}
+
+{% highlight VB %}
 
 
 
@@ -132,6 +138,8 @@ End If
 
 End Sub
 
-{% endhighlight  %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](FAQ_images/Overview_img178.jpeg) 

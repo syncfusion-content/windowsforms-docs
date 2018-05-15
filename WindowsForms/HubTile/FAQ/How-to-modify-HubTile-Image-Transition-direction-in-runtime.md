@@ -5,10 +5,10 @@ description: How to modify HubTile Image Transition direction in runtime
 platform: WindowsForms
 control: HubTile
 documentation: ug
---- 
+---
 
 
-# How to modify HubTile Image Transition direction in runtime?
+# How to modify HubTile image transition direction in runtime?
 
 You can set HubTile SlideTransition property to achieve this.
 
@@ -25,6 +25,7 @@ You can set HubTile SlideTransition property to achieve this.
 </tr>
 </Table>
 
+{% tabs %}
 
 {% highlight C# %} 
 
@@ -52,10 +53,10 @@ this.HubTile1.SlideTransition = TransitionDirection.TopToBottom;
 
 this.HubTile1.SlideTransition= TransitionDirection.BottomToTop;
 
-  {% endhighlight %}
+{% endhighlight %}
 
 
-{% highlight vbnet %} 
+{% highlight VB %}
 
  
 
@@ -81,4 +82,6 @@ Me.HubTile1.SlideTransition = TransitionDirection.TopToBottom
 
 Me.HubTile1.SlideTransition= TransitionDirection.BottomToTop
 
- {% endhighlight %}
+{% endhighlight %}
+
+{% endtabs %}

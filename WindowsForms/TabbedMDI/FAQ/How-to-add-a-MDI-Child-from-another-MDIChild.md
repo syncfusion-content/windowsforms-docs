@@ -11,7 +11,9 @@ documentation: ug
 
 You should set the MDIParent of the new child form as follows:
 
-{% highlight c# %} 
+{% tabs %}
+
+{% highlight C# %} 
 
 
 
@@ -33,7 +35,7 @@ child1.Show();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
 
@@ -52,4 +54,6 @@ f1.Show()
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
 
