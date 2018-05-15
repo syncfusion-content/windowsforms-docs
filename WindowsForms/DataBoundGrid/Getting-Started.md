@@ -11,11 +11,32 @@ documentation: ug
 
 This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatic approach in a .NET application.
 
-## Through Designer
+## Assembly Deployment
+
+The following list of assemblies needs to be added as reference to use GridDataBoundGrid in any application,
+
+<table>
+<tr>
+<th>
+Required assemblies<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
+Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridDataBoundGrid.<br/><br/></td></tr>
+<tr>
+<td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridDataBoundGrid.<br/><br/></td></tr>
+</table>
+
+## Configuring a simple GridDataBoundGrid
+
+### Through Designer
 
 In this lesson, you will learn how to use Forms Designer to create an Essential DataBound Grid. You can rely on the designer to generate all the codes necessary except for two lines: one that fills the ADO.NET adapter and one that updates the database when you are done.
 
-### Basic DataBound Grid
+#### Basic DataBound Grid
 
 In this part, you will learn how to use the designer to place DataBound Grid on a form. 
 
@@ -145,7 +166,7 @@ Me.sqlDataAdapter1.Update(Me.dataSet11);
 
 Now when you click Update button, it will post the changes made back to your database.
 
-### Applying special column formats
+#### Applying special column formats
 
 GridBoundColumn collection property of DataBound Grid is used to set column properties. This collection will let you control columns displayed and their order. For each column that you want displayed, add a Grid Bound Column. In this Grid Bound Column, you must set MappingName property; the other properties such as HeaderText and Style are optional. Under the Style property, you will have access to normal GridStyleInfo properties that you can apply to this column such as BackColor, CellType and Font.
 
@@ -189,7 +210,7 @@ Compile and run the project to see formatted Grid Data Bound Grid. In the follow
 
 
 
-## Through Code
+### Through Code
 
 Here are some code samples that will create a DataTable and bind it a to Grid Data Bound Grid. Once you have a DataTable object populated you can use the GridDataBoundGrid.DataSource property to implement the binding.
 
@@ -263,3 +284,83 @@ Me.gridDataBoundGrid1.Model.ColWidths(1) = 30
 Me.gridDataBoundGrid1.Model.ColWidths(2) = 50
 {% endhighlight  %}
 {% endtabs %}
+
+## Editing
+
+By default, the GridDataBoundGrid is in editable state. Editing can be enabled or disabled by using the [ReadOnly] (http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ReadOnly.html) property. It can be used for entire grid or particular cells. Moreover, editing can be customized by using the [CurrentCellStartEditing] (http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html#) and [CurrentCellEditingComplete] (http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellEditingComplete_EV.html#) events.
+
+{% tabs %}
+{% highlight c# %}
+// Disabling Edit mode for the whole Grid.
+this.gridDataBoundGrid1.ReadOnly = false.
+
+// Disabling edit mode for a particular cell.
+GridStyleInfo style = gridDataBoundGrid1.Model[2, 2];
+
+style.ReadOnly = false;
+{% endhighlight %}
+
+{% highlight vb %}
+'Disabling Edit mode for the whole Grid.
+Me.gridDataBoundGrid1.ReadOnly = False.
+
+'Disabling edit mode for a particular cell.
+Dim style As GridStyleInfo = gridDataBoundGrid1.Model(2, 2)
+
+style.ReadOnly = False
+{% endhighlight %}
+{% endtabs %}
+
+## Selection
+
+The GridDataBoundGrid supports two types of selections. They are [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSelection.html#) and [ListBoxSelectionMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ListBoxSelectionMode.html#. 
+
+### AllowSelection
+
+A particular range of cells, rows, columns, or table in the grid can be selected by setting the `AllowSelection` property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration.
+
+{% tabs %}
+{% highlight c# %}
+//To select any range of cells
+this.GridDataBoundGrid1.AllowSelection = Syncfusion.Windows.Forms.Grid.GridSelectionFlags.Any;
+{% endhighlight %}
+
+{% highlight vb %}
+'To select any range of cells
+Me.GridDataBoundGrid1.AllowSelection = Syncfusion.Windows.Forms.Grid.GridSelectionFlags.Any
+{% endhighlight %}
+{% endtabs %}
+
+### ListBoxSelectionMode
+
+The `ListBoxSelectionMode` allows the user to select the rows on cell click. This enables the `CurrentCell` when selecting the rows whereas, the `AllowSelection` selects the entire row. Multiple rows can be selected based on the SelectionMode option.
+
+{% tabs %}
+{% highlight c# %}
+//To select multiple rows
+this.GridDataBoundGrid1.ListBoxSelectionMode = SelectionMode.MultiSimple;
+{% endhighlight %}
+
+{% highlight vb %}
+'To select multiple rows
+Me.GridDataBoundGrid1.ListBoxSelectionMode = SelectionMode.MultiSimple
+{% endhighlight %}
+{% endtabs %}
+
+## Sorting
+
+Column sorting can be enabled in GridDataBoundGrid by using the `SortBehavior` property. The records can be sorted on single click or double click on the column header cell based on the `GridSortBehavior` enumeration.
+
+{% tabs %}
+{% highlight c# %}
+//enables the sorting. 
+this.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick;
+{% endhighlight %}
+
+{% highlight vb %}
+' enables the sorting.
+ Me.gridDataBoundGrid1.SortBehavior = GridSortBehavior.SingleClick;
+{% endhighlight %}
+{% endtabs %}
+
+N> Sorting for the GridDataBoundGrid will be applied only when the DataSource for the grid is DataTable.
