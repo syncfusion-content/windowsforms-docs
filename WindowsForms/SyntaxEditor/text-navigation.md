@@ -256,7 +256,7 @@ Me.editControl1.MoveToEnd()
 
 ### Retrieve current word
 
-We can retreive the current word in EditControl by using the `GetCurrentWord` method.
+We can retrieve the current word in EditControl by using the `GetCurrentWord` method.
 
 {% tabs %}
 
@@ -277,7 +277,7 @@ Me.WriteLine(this.editControl1.GetCurrentWord().ToString())
 
 ### Retrieve current column index in line
 
-We can retreive the current word column index in EditControl by using the `GetCurrentWordColumn` method and `CurrentColumn` property.
+We can retrieve the current word column index in EditControl by using the `GetCurrentWordColumn` method and `CurrentColumn` property.
 
 {% tabs %}
 
@@ -302,7 +302,7 @@ Me.WriteLine(this.editControl1.CurrentColumn)
 
 ### Retrieve current line index
 
-We can retreive the current word column index in EditControl by using the `CurrentLine` property.
+We can retrieve the current word column index in EditControl by using the `CurrentLine` property.
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 EditControl provides Intellisense pop-up capabilities to add content easily, as like in Microsoft Visual Studio Code Editor. Intellisense pop-up that displays a list of code completion options to speed up the process of coding applications by reducing typos and other common mistakes.
 
-## Configure intellisence popup
+## Configure intellisense popup
 
 In EditControl, `ContextChoice` support allows you to create pop-ups for displaying a list of options that are used to complete what the user is typing. When the . (period) character is typed after a class instance, a pop-up containing all the members of the class gets displayed. 
 
@@ -50,7 +50,7 @@ Me.editControl1.AutoCompleteSingleLexem = True
 
 {% endtabs %}
 
-### Populate intellisence popup
+### Populate intellisense popup
 
 ContextChoice list is populated by handling the `ContextChoiceOpen` event of the EditControl, and adding items to the Items collection associated with the `IContextChoiceController` object.
 
@@ -76,7 +76,7 @@ private void editControl1_ContextChoiceOpen(Syncfusion.Windows.Forms.Edit.Interf
 
 controller.Items.Add("Activate", "Activate the form and give it focus", this.editControl1.ContextChoiceController.Images["Image0"]);
 controller.Items.Add("ActiveControl", "Gets or sets the Active Control", this.editControl1.ContextChoiceController.Images["Image1"]);
-controller.Items.Add("ActiceMDIChild", "Activates the MDIChild of form", this.editControl1.ContextChoiceController.Images["Image2"]);
+controller.Items.Add("ActiveMDIChild", "Activates the MDIChild of form", this.editControl1.ContextChoiceController.Images["Image2"]);
 controller.Items.Add("AutoScroll", "Gets or sets the value indicating Autoscroll", this.editControl1.ContextChoiceController.Images["Image3"]);
 controller.Items.Add("bar1", "Gets or sets the button on the form that is clicked when the user presses the ENTER key", this.editControl1.ContextChoiceController.Images["Image4"]);controller.Items.Add("Focus", "Specifies the back color of the form.", this.editControl1.ContextChoiceController.Images["Image5"]);
                            
@@ -93,7 +93,7 @@ Private Sub editControl1_ContextChoiceOpen(ByVal controller As Syncfusion.Window
 
 controller.Items.Add("Activate", "Activate the form and give it focus", this.editControl1.ContextChoiceController.Images["Image0"]);
 controller.Items.Add("ActiveControl", "Gets or sets the Active Control", this.editControl1.ContextChoiceController.Images["Image1"]);
-controller.Items.Add("ActiceMDIChild", "Activates the MDIChild of form", this.editControl1.ContextChoiceController.Images["Image2"]);
+controller.Items.Add("ActiveMDIChild", "Activates the MDIChild of form", this.editControl1.ContextChoiceController.Images["Image2"]);
 controller.Items.Add("AutoScroll", "Gets or sets the value indicating Autoscroll", this.editControl1.ContextChoiceController.Images["Image3"]);
 controller.Items.Add("bar1", "Gets or sets the button on the form that is clicked when the user presses the ENTER key", this.editControl1.ContextChoiceController.Images["Image4"]);controller.Items.Add("Focus", "Specifies the back color of the form.", this.editControl1.ContextChoiceController.Images["Image5"]);
                            
@@ -424,7 +424,7 @@ End Sub
 
 {% endtabs %}
 
-## Display intellisence by custom key combination
+## Display intellisense by custom key combination
 
 You can use the KeyBinder and assign a new key to the `ContextChoice` string command.
 
@@ -449,7 +449,7 @@ this.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Editor.Context
 
 {% endtabs %}
 
-## Customize intellisence popup appearance
+## Customize intellisense popup appearance
 
 In EditControl, we can customize the size, border, background, font and foreground color of ContextChoice popup window. The following topic explains the same: 
 

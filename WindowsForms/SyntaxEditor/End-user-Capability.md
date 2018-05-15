@@ -13,7 +13,7 @@ EditControl provides an extensive support like font customization, binding short
 
 ## Key binding
 
-EditControl provides shortcut key support for all editing and navigation operations. Also provides a built-in window for modifying the key mapping of shortcut operations. This can be done in the designer using the Keys Binding dialog as illustrated in the fiven procedure:
+EditControl provides shortcut key support for all editing and navigation operations. Also provides a built-in window for modifying the key mapping of shortcut operations. This can be done in the designer using the Keys Binding dialog as illustrated in the given procedure:
 
    1. In the Editor Keys Binding dialog box, select the desired standard command. The default shortcuts assigned for a particular command are listed in the combobox under the Shortcut(s) for selected command: label.
    2. Set the focus to the Edit Box. Press TAB to navigate to the shortcuts drop-down list.

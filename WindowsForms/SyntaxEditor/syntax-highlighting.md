@@ -462,7 +462,7 @@ Sublexems that must be skipped if they are found after BeginBlock string before 
 
 #### Collapsible region
 
-Collapsible region can be customized by adding the desired lexem with attributes such as IsCollapsable and CollapseName, as given below. 
+Collapsible region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`, as given below. 
 
 {% highlight xaml %}
 
@@ -562,7 +562,7 @@ Error lexems can be added to the language by declaring a format names Error and 
 
 ### Splits
 
-Splits contain a list of expressions that must be treated as one word. “=” and “+” are splitters, by default. So, each of them are returned by the tokenizer as a single char. For example, when you want to specify a configuration for “+=”, you should specify “+=” in the splits section.
+Splits contain a list of expressions that must be treated as one word. “=” and “+” are splitters, by default. So, each of them are returned by the tokenizer as a single char. For example, when you want to specify a configuration for “+=” in the splits section.
 
 You can combine multiple keywords as a single keyword. To configure the splits, specify the required word in the split section.
 
@@ -581,7 +581,7 @@ For example: `Class` and `public` are keywords in the EditControl. By using the 
 
 ### Auto replace triggers
 
-Auto Replace Trigger which helps in autocorrect the incorrect spelling of lexems, this can be customized using a `AutoReplaceTriggers` attribute, below code is an example for autocorrect int and the, if they misspelled as itn and teh respectively.
+Auto Replace Trigger which helps in auto correctS the incorrect spelling of lexems, this can be customized using a `AutoReplaceTriggers` attribute, below code is an example for auto correctS int and the, if they misspelled as itn and teh respectively.
 
 {% highlight xaml %}
 
@@ -744,7 +744,7 @@ Sublexems that must be skipped if they are found after BeginBlock string before 
 
 #### Collapsible region
 
-Collapsible region can be customized by adding the desired lexem with attributes such as IsCollapsable and CollapseName, as given below.
+Collapsible region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`, as given below.
 
 {% highlight xaml %}
 
@@ -864,7 +864,7 @@ For example: `int` and `using` are keywords in the EditControl. By using the Spl
 
 ### Auto replace triggers
 
-Auto Replace Trigger which helps in autocorrect the incorrect spelling of lexems, this can be customized using a `AutoReplaceTriggers` attribute, below code is an example for autocorrect int and the, if they misspelled as itn and teh respectively.
+Auto Replace Trigger which helps in auto correctS the incorrect spelling of lexems, this can be customized using a `AutoReplaceTriggers` attribute, below code is an example for auto correctS int and the, if they misspelled as itn and teh respectively.
 
 {% highlight xaml %}
 
@@ -885,7 +885,7 @@ N> To enable this feature, we must set the `TriggersActivators` property of Conf
 
 ## Multiple language configuration
 
-Editcontrol supports multiple language configuration, which helps to configurate one or more language in single language configuration. Below code is an example for configurate HTML with embedded JScript.
+EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration. Below code is an example for configure HTML with embedded JScript.
 
 {% highlight C# %}
  <ConfigLanguage name="HTML (Light)" CaseInsensitive="true" Known="HTML" StartComment="&lt;!--" EndComment="--&gt;">
@@ -1055,9 +1055,9 @@ formatMethod.Font = new Font("Garamond", 17)
 
 ### Lexem configuration
 
-Lexems for the custom language can be added by creating a lexem object using ConfigLexem class and its attributes can be declared using built-in properties such as IsBeginRegex, IsEndRegex, FormatName etc.
+Lexems for the custom language can be added by creating a lexem object using `ConfigLexem` class and its attributes can be declared using built-in properties such as `IsBeginRegex`, `IsEndRegex`, `FormatName` etc.
 
-Below code is an example for creating a lexem and adding it to language of editcontrol.
+Below code is an example for creating a lexem and adding it to language of EditControl.
 
 {% tabs %}
 
@@ -1086,7 +1086,7 @@ Me.editControl1.Language.Lexems.Add(stuff)
 
 ### Keywords configuration
 
-Creating keywords for custom language can be achieved by adding a format named `keyword` and declare a lexem in format as keyword using `FormatName` property. Keyword format can be configurated by the built-in customization properties such as Font, FontColor etc. Below code is an example for define lexem "Class" as a keyword.
+Creating keywords for custom language can be achieved by adding a format named `keyword` and declare a lexem in format as keyword using `FormatName` property. Keyword format can be configurable by the built-in customization properties such as Font, FontColor etc. Below code is an example for define lexem "Class" as a keyword.
 
 {% tabs %}
 

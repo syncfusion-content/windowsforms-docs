@@ -26,7 +26,7 @@ Some of the key features are listed below.
 * **Indentation Support** - Provides multiple types of indentation support. User can use Block, Smart, or None indentation types based on your requirements.
 * **Word Wrap** - Offers text wrapping, based on control bounds.
 * **Autocomplete** - Support to complete the rest of a word the user is typing by selecting from a list of choices displayed as a context menu.
-* **AutoCorrect** - Interactive support to autocorrects predefined typing errors when pressing certain keys. Includes an option to let users change their autoreplace trigger key.
+* **AutoCorrect** - Interactive support to auto corrects predefined typing errors when pressing certain keys. Includes an option to let users change their autoreplace trigger key.
 * **Fully functional Context menu** - Provides a built-in context menu with options to perform editing operations like Undo, Redo, Cut, Copy, Paste, Select All and so on. EditControl also have option enable or disable the built-in context menu.
 * **Content dividers** - Clearly distinguish content sections with line dividers, similar to Visual Basic, to improve code readability.
 * **Intellisense** - Provides Intellisense pop-up capabilities to add content easily, as like in Microsoft Visual Studio code editor.

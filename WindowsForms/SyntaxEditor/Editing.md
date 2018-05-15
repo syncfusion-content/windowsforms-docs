@@ -1111,7 +1111,7 @@ The Auto Indentation characters can also be specified by setting the Indent fiel
 
 {% endhighlight %}
 
-### Customize indent appearence
+### Customize indent appearance
 
 Indentation guidelines and bracket highlighting blocks can be customized by using the below given properties.
 
@@ -1722,31 +1722,6 @@ Context menu item can be set as disabled using `SetContextMenuItemEnabled` metho
 {% endtabs %}
 
 ![](Editing-Features_images/Editing-Features_img21.png)
-
-## Change shortcut key for context menu options
-
-You can use the KeyBinder and assign a new key to the `ContextMenu` string command.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Displays the context choice when Ctrl+L keys are pressed.
-
-this.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Editor.ContextChoice");
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Displays the context choice when Ctrl+L keys are pressed.
-
-this.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Editor.ContextChoice")
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ### Add custom context menu item
 

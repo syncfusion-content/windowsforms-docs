@@ -43,7 +43,7 @@ Me.editControl1.ShowOutliningCollapsers = True
 
 ### Toggle outline visibility
 
-We can toogle the outline visibility in EditControl by using the following methods.
+We can toggle the outline visibility in EditControl by using the following methods.
 
 <table>
 <tr>
@@ -738,7 +738,7 @@ Me.editControl1.SelectOnLineNumberClick = True
 
 ### Custom draw line number
 
-Line number can be drawn using `BeforeLineNumberPaint` event. This event comprises with built-in properties to customize bounds, forecolor, graphics, line number, line numbers alignment and linenumbersfont.
+Line number can be drawn using `BeforeLineNumberPaint` event. This event comprises with built-in properties to customize bounds, foreground color, graphics, line number, line numbers alignment and font.
 
 {% tabs %}
 
@@ -796,7 +796,7 @@ private Sub EditControl1_BeforeLineNumberPaint(ByVal sender As Object, ByVal e A
 
 #### Line backcolor
 
-Background format of a line can be customized using `SetLineBackColor` method, where line number, fill complete line or text area and format can be specified. Below code is an simple example for setting backcolor and bordercolor for a line.
+Background format of a line can be customized using `SetLineBackColor` method, where line number, fill complete line or text area and format can be specified. Below code is an simple example for setting backcolor and border color for a line.
 
 {% tabs %}
 
@@ -1194,14 +1194,14 @@ Bookmarks can be set by using the `SetCustomBookmark` method, do not respond to 
 
 {% highlight C# %}
 
-Color breakpointbordercolor;
+Color borderColor;
 
  private void CustomBookmarkPainter(object sender, BookmarkPaintEventArgs e)
  {
-      breakpointbordercolor = ColorTranslator.FromHtml("#f6f6f6");
+      borderColor = ColorTranslator.FromHtml("#f6f6f6");
       SolidBrush brush = new SolidBrush(Color.Red); 
       e.Graphics.FillEllipse(brush, e.ClipRectangle.X,e.ClipRectangle.Y,e.ClipRectangle.Width-2,e.ClipRectangle.Height-2);
-      e.Graphics.DrawEllipse(new Pen(breakpointbordercolor,3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2);
+      e.Graphics.DrawEllipse(new Pen(borderColor,3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2);
 }
 
 // Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious methods.
@@ -1221,10 +1221,10 @@ ICustomBookmark customBookmark = this.editControl1.RemoveCustomBookmark(this.edi
 
 Private Sub CustomBookmarkPainter(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.BookmarkPaintEventArgs)
 
-   breakpointbordercolor = ColorTranslator.FromHtml("#f6f6f6")
+   borderColor = ColorTranslator.FromHtml("#f6f6f6")
    SolidBrush brush = new SolidBrush(Color.Red) 
    e.Graphics.FillEllipse(brush, e.ClipRectangle.X,e.ClipRectangle.Y,e.ClipRectangle.Width-2,e.ClipRectangle.Height-2)
-   e.Graphics.DrawEllipse(new Pen(breakpointbordercolor,3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2)
+   e.Graphics.DrawEllipse(new Pen(borderColor, 3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2)
 
 End Sub
 
