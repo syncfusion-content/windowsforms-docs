@@ -1,20 +1,23 @@
----
-layout: post
-title: ScrollersFrame | WindowsForms | Syncfusion
-description: scrollersframe
-platform: WindowsForms
-control: RibbonControlAdv 
-documentation: ug
----
+# Getting started
 
-# ScrollersFrame
+This section will explain to attach the ScrollersFrame to controls and its basic functionalities.
 
-The ScrollersFrame control attaches Office2007 Style scrollbars to any scrollable control or container. 
+## Assembly deployment
 
-![](ScrollersFrame_images/ScrollersFrame_img1.jpeg) 
+The following list of assemblies needs to be added as reference to use the ScrollersFrame in any application:
 
+<table>
+<tr>
+<th>
+Required assemblies<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+Syncfusion.Shared.Base contains style related properties and functionalities for the ScrollersFrame. <br/><br/></td></tr>
+</table>
 
-## Attaching Scrollbar to a Control
+## Attach ScrollersFrame to control
 
 To the Windows form, add a control, which should be attached with the Office2007Style scrollbars. Select the control in the ScrollersFrame.AttachedTo property.
 
@@ -56,8 +59,7 @@ The below images illustrates the controls that are added, before and after the s
 
 ![](ScrollersFrame_images/ScrollersFrame_img4.jpeg)
 
-
-## Scroll Settings in ScrollersFrame
+## Programmatic Scrolling
 
 The horizontal and vertical scrollers has Value property, which represents the current position of the scroll box on the scroll bar control at runtime. This value can be changed using the HorizontalSmallChange and VerticalSmallChange properties.
 
@@ -88,7 +90,7 @@ Me.scrollersFrame2.HorizontalSmallChange  = 25
 {% endhighlight %}
 {% endtabs %}
 
-## Visual Styles 
+# VisualStyles
 
 Visual Styles for the ScrollersFrame Control can be edited through VisualStyle property.	
 
@@ -144,7 +146,7 @@ Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorS
 
 
 
-### Custom Colors
+## Custom Colors
 
 We can also apply custom colors to the ScrollersFrame by setting OfficeColorScheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 

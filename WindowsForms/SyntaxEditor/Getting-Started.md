@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting-Started 
+description: How to add EditControl and and enable its basic features.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -49,6 +49,18 @@ Syncfusion.Edit.Windows contains the class that handles all UI operations and co
 </td>
 </tr>
 </table>
+
+## Installing NuGet Packages
+
+To create the Windows Forms application with EditControl, the following nuget packages should be installed.
+
+* Syncfusion.Edit.Windows
+* Syncfusion.Tools.Windows
+* Syncfusion.Shared.Base
+
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 # Creating simple application with EditControl
 
@@ -147,7 +159,7 @@ The following illustration shows Edit Control was created.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-## Loading a file into Document
+## Loading a file into document
 
 `LoadFile` method of Edit Control helps to loads the content of any desired file into the Edit Control, instead of typing the code in it.
 
