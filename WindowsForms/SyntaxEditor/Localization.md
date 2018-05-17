@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-Localization is the process of translating the application resources into different language for the specific cultures. `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using `ILocalizationProvider`. 
+Localization is the process of translating the application resources into different language for the specific cultures. `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using `ILocalizationProvider`.
 
 The following steps helps to localize the `FindDialogBox` in the EditControl:
 
