@@ -372,7 +372,7 @@ EditControl provides support to customize the built in language configuration se
 
 In EditControl, languages need to be configured in XML file named Config.xml. 
 
-Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to true.
+Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
 
 {% highlight xaml %}
 
@@ -469,7 +469,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-The above code example works only when `ShowOutliningCollapsers` property of EditControl is true.
+The above code example works only when `ShowOutliningCollapsers` property of EditControl is `true`.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img30.png)
 
@@ -512,7 +512,7 @@ Custom operators can be added or existing operators can be customized in built-i
 
 A regular expression is a pattern that could be matched against any input text. 
 
-For example, if you like to customize the particular string that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as true based on the expression given in the lexem.
+For example, if you like to customize the particular string that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as `true` based on the expression given in the lexem.
 
 {% highlight xaml %}
 
@@ -660,7 +660,7 @@ EditControl provides supports for custom language configuration. You can plug-in
 
 In EditControl, languages need to be configured in XML file named Config.xml. 
 
-Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to true.
+Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
 
 The following code example demonstrates the same.
 
@@ -764,7 +764,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-The above code example works only when `ShowOutliningCollapsers` property of EditControl is true.
+The above code example works only when `ShowOutliningCollapsers` property of EditControl is `true`.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img39.png)
 
@@ -1079,7 +1079,7 @@ this.editControl1.Language.Lexems.Add(stuff);
 
 {% highlight VB %}
 
-Dim stuff As ConfigLexem  = new ConfigLexem("stuff", "", FormatType.Custom, false)
+Dim stuff As ConfigLexem  = new ConfigLexem("stuff", "", FormatType.Custom, False)
 
 stuff.FormatName = "CodeBehind"
 
@@ -1132,19 +1132,19 @@ keyword.FontColor = Color.Blue
 
 keyword.Font = new Font("Garamond", 12)
 
-Dim car As ConfigLexem  = new ConfigLexem("car", "",FormatType.Custom,false)
+Dim car As ConfigLexem  = new ConfigLexem("car", "",FormatType.Custom, False)
 
 car.FormatName = "keyword"
 
 Me.editControl1.Language.Lexems.Add(car)
 
-Dim cdr As ConfigLexem  = new ConfigLexem("cdr", "",FormatType.Custom,false)
+Dim cdr As ConfigLexem  = new ConfigLexem("cdr", "",FormatType.Custom, False)
 
 cdr.FormatName = "keyword"
 
 Me.editControl1.Language.Lexems.Add(cdr)
 
-Dim cons As ConfigLexem  = new ConfigLexem("cons", "",FormatType.Custom,false)
+Dim cons As ConfigLexem  = new ConfigLexem("cons", "",FormatType.Custom, False)
 
 cons.FormatName = "keyword"
 
@@ -1191,23 +1191,23 @@ this.editControl1.Language.Lexems.Add(Symbol);
 
 {% highlight VB %}
 
-Dim Operators As ISnippetFormat  = this.editControl1.Language.Add("Operators");
+Dim Operators As ISnippetFormat  = this.editControl1.Language.Add("Operators")
 
 Operators.FontColor = Color.Red
 
-Dim open As ConfigLexem  = new ConfigLexem("(","",FormatType.Custom,false)
+Dim open As ConfigLexem  = new ConfigLexem("(","",FormatType.Custom, False)
 
 open.FormatName = "Operators"
 
 Me.editControl1.Language.Lexems.Add(open)
 
-Dim close As ConfigLexem  = new ConfigLexem(")", "", FormatType.Custom, false)
+Dim close As ConfigLexem  = new ConfigLexem(")", "", FormatType.Custom, False)
 
 close.FormatName = "Operators"
 
 Me.editControl1.Language.Lexems.Add(close)
 
-Dim Symbol As ConfigLexem  = new ConfigLexem("$", "", FormatType.Custom, false)
+Dim Symbol As ConfigLexem  = new ConfigLexem("$", "", FormatType.Custom, False)
 
 Symbol.FormatName = "Operators"
 
@@ -1301,7 +1301,7 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
  Error.LineColor = Color.Red
 
- Dim err As ConfigLexem = new ConfigLexem("pubblic", "", FormatType.Custom, false)
+ Dim err As ConfigLexem = new ConfigLexem("pubblic", "", FormatType.Custom, False)
 
  misspell.FormatName = "Error"
 
@@ -1354,7 +1354,7 @@ keyword.FontColor = Color.Orange
 keyword.Font = new Font("Garamond", 14)
 
 
-Dim region As ConfigLexem  = new ConfigLexem("#region", "",FormatType.Custom,false)
+Dim region As ConfigLexem  = new ConfigLexem("#region", "",FormatType.Custom, False)
 
 region.FormatName = "keyword"
 
@@ -1362,9 +1362,9 @@ Me.editControl1.Language.Lexems.Add(region)
 
 ' Adding the necessary split definitions to the current language's Splits collection.
 
-Dim split As  Split  = new Split();
+Dim split As  Split  = new Split()
 
-split.Text = "#region";
+split.Text = "#region"
 
 Me.editControl1.Language.Splits.Add(split)
 
@@ -1391,7 +1391,7 @@ Below code is an example for replace "the" if it is misspelled as "teh" in AutoR
 
 {% highlight VB %}
 
- Dim trigger1 As AutoReplaceTrigger = new AutoReplaceTrigger("teh","the");
+ Dim trigger1 As AutoReplaceTrigger = new AutoReplaceTrigger("teh","the")
 
  Me.editControl1.Language.AutoReplaceTriggers.Add(trigger1)
 
