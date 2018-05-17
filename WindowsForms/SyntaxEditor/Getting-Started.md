@@ -186,7 +186,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ## Syntax highlighting
 
-EditControl offers mostly used languages like C#, VB, XML, HTML, Jscript, Powershell, SQL as built-in and also provides support to configure new custom language based on requirement.
+EditControl offers mostly used languages like C#, VB, XML, HTML, JScript, PowerShell, SQL as built-in and also provides support to configure new custom language based on requirement.
 
 **Built-in syntax highlighting languages**
 

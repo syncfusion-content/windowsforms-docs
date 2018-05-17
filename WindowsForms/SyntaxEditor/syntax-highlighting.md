@@ -9,7 +9,7 @@ documentation: ug
 
 # Syntax Highlighting 
 
-Provides built-in syntax highlighting support for popular languages like SQL, Delphi or Pascal, HTML, VB.NET, XML, Java, VBScript, Jscript, PowerShell and C#.
+Provides built-in syntax highlighting support for popular languages like SQL, Delphi or Pascal, HTML, VB.NET, XML, Java, VBScript, JScript, PowerShell and C#.
 
 ## Configure built in language
 
@@ -849,18 +849,22 @@ Error lexems can be added to the language by declaring a format names Error and 
 
 ### Splits
 
-Splits helps to configure two different words as a single. For example, consider . and using that can be treated as single word by using `Split` configuration.
-
-For example: `int` and `using` are keywords in the EditControl. By using the Splits concept in the EditControl, you can ignore this keyword when it is preceded with a Dot. When .public is loaded in the EditControl, public is not highlighted as keyword. 
+Splits helps to configure two different words as a single. For example, consider # and include that can be treated as single word by using `Split` configuration.
 
 {% highlight xaml %}
 
+<formats>
+  <format name="KeyWord" Font="Courier New, 14pt" FontColor="Orange" />
+</formats>
+
+<lexems>
+   <lexem BeginBlock="#include" Type="KeyWord" />
+</lexems>
+
 <splits>
-  <split>.int</split>
-  <split>.using</split>
+  <split>#include</split>
 </splits>
 
-{% endhighlight %}
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img38.png)
 
@@ -992,6 +996,33 @@ Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 
 {% endtabs %}
 
+### Font configuration
+
+Font color of newly created format in the specified language can be customized using `FontColor` property of Format tag. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+ formatMethod.Font = new Font("Garamond", 17);
+
+ formatMethod.FontColor = Color.Red;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+formatMethod.Font = new Font("Garamond", 17)
+
+ formatMethod.FontColor = Color.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
+
 ### Format configuration
 
 Create a custom format object by using the `Language.Add` method of the Edit Control and define its attributes.
@@ -1028,33 +1059,6 @@ formatMethod.BackColor = Color.Yellow
 {% endhighlight %}
 
 {% endtabs %}
-
-### Font configuration
-
-Font color of newly created format in the specified language can be customized using `FontColor` property of Format tag. 
-
-{% tabs %}
-
-{% highlight C# %}
-
- formatMethod.Font = new Font("Garamond", 17);
-
- formatMethod.FontColor = Color.Red;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-formatMethod.Font = new Font("Garamond", 17)
-
- formatMethod.FontColor = Color.Red
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
 
 ### Lexem configuration
 
@@ -1215,7 +1219,11 @@ Me.editControl1.Language.Lexems.Add(Symbol)
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img20.png)
 
-### Color configuration
+### Regex configuration
+
+A regular expression is a pattern that could be matched against any input text. 
+
+#### Color configuration
 
 Color configuration for custom formats can be defined using built-in color properties such as FontColor, BackColor, ForeColor, LineColor and BorderColor.
 
@@ -1303,21 +1311,34 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
 {% endtabs %}
 
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img18.png)
+
 ### Splits configuration
 
-Splits contain a list of expressions that must be treated as one word.
-
-For example: `car` is Keyword in the EditControl. By using the Splits concept in the EditControl, you can ignore this Keyword when it is preceded with a Dot. When .car is loaded in the EditControl, car is not highlighted as keyword. 
+Splits helps to configure two different words as a single. For example, consider # and region that can be treated as single word by using `Split` configuration.
 
 {% tabs %}
 
 {% highlight C# %}
 
+ISnippetFormat keyword = this.editControl1.Language.Add("keyword");
+
+keyword.FontColor = Color.Orange;
+
+keyword.Font = new Font("Garamond", 14);
+
+
+ConfigLexem region = new ConfigLexem("#region", "", FormatType.Custom, false);
+
+region.FormatName = "keyword";
+
+this.editControl1.Language.Lexems.Add(region);
+
 // Adding the necessary split definitions to the current language's Splits collection.
 
 Split split = new Split();
 
-split.Text = "car";
+split.Text = "#region";
 
 this.editControl1.Language.Splits.Add(split);
 
@@ -1326,11 +1347,24 @@ this.editControl1.Language.Splits.Add(split);
 
 {% highlight VB %}
 
+Dim keyword As ISnippetFormat = Me.editControl1.Language.Add("keyword")
+
+keyword.FontColor = Color.Orange
+
+keyword.Font = new Font("Garamond", 14)
+
+
+Dim region As ConfigLexem  = new ConfigLexem("#region", "",FormatType.Custom,false)
+
+region.FormatName = "keyword"
+
+Me.editControl1.Language.Lexems.Add(region)
+
 ' Adding the necessary split definitions to the current language's Splits collection.
 
 Dim split As  Split  = new Split();
 
-split.Text = "car";
+split.Text = "#region";
 
 Me.editControl1.Language.Splits.Add(split)
 

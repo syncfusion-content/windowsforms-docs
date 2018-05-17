@@ -917,18 +917,20 @@ Support provided to customize the size, background, font and border color of `Co
 
 {% highlight C# %}
 
-this.editControl1.ContextPromptBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PapayaWhip, System.Drawing.Color.LemonChiffon);
+this.editControl1.ContextPromptBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PapayaWhip, System.Drawing.Color.SkyBlue);
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.ContextPromptBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PapayaWhip, System.Drawing.Color.LemonChiffon)
+Me.editControl1.ContextPromptBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.BackwardDiagonal, System.Drawing.Color.PapayaWhip, System.Drawing.Color.SkyBlue)
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Intellisense-images/Intellisense_img11.png)
 
 ### Border
 
@@ -951,9 +953,11 @@ Me.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink
 
 {% endtabs %}
 
+![](Intellisense-images/Intellisense_img12.png)
+
 ### Size
 
-`ContextPromptSize` helps to customize the size of `ContextPrompt` popup window. 
+`ContextPromptCustomSize` helps to customize the size of `ContextPrompt` popup window. 
 
 <table>
 <tr>
@@ -962,7 +966,7 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-ContextPromptSize</td><td>
+ContextPromptCustomSize</td><td>
 Specifies the size of the Context Prompt form</td></tr>
 <tr>
 <td>
@@ -991,6 +995,8 @@ Me.editControl1.UseCustomSizeContextPrompt = True
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Intellisense-images/Intellisense_img13.png)
 
 ### Advanced customizations
 
@@ -1196,7 +1202,7 @@ End Sub
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the `ContextPrompt` functionalities of EditContol.
+N> Refer to the following sample link that demonstrates the `ContextPrompt` functionalities of EditControl.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Advanced Intellisense
 
 ## Configure context tooltip
@@ -1357,7 +1363,7 @@ Me.editControl1.CloseContextTooltip();
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the `ContextTooltip` behaviour in EditControl.
+N> Refer to the following sample link that demonstrates the `ContextTooltip` behavior in EditControl.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Tooltip
 
 ## Auto complete

@@ -291,7 +291,7 @@ N> The SingleLineMode is intended for use, only when the EditControl contains sm
 
 ![](Appearance_images/Appearance_img4.jpg)
 
-N> Refer to the following sample link that demonstrates the `SingleLineMode` behaviour of EditControl.
+N> Refer to the following sample link that demonstrates the `SingleLineMode` behavior of EditControl.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Single Line Mode
 
 ## Right-to-left (RTL) support 
