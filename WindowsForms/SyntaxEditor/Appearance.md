@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-EditControl provides exclusive support to customize the background color, text, margin, split views, ScrollBar etc., Users can change the background color of the control, and even supports gradient effects by using the `BackgroundColor` property.
+Provides exclusive support to customize the background color, text, margin, split views, ScrollBar etc., Users can change the background color of the control, and even supports gradient effects by using the `BackgroundColor` property.
 
 {% tabs %}
 
@@ -30,11 +30,11 @@ Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Dr
 
 ![](Appearance_images/Appearance_img1.jpg)
 
-The customization features of the EditControl are discussed under the following topics:
+The customization features of the `EditControl` are discussed under the following topics:
 
 ## Split views
 
-EditControl provides in-built support for horizontal and vertical splitters, which display a single document in several views with horizontal and vertical orientations, allowing users to work on different areas of a document at the same time. 
+Provides in-built support for horizontal and vertical splitters, which display a single document in several views with horizontal and vertical orientations, allowing users to work on different areas of a document at the same time. 
 
 A maximum of four split views are supported. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four. The `SplitFourQuadrants` method is used to split the EditControl into four equal parts.
 
@@ -175,7 +175,7 @@ Me.editControl1.ShowVerticalSplitters = False
 
 ### Splitter background color 
 
-User can customize the splitter background color using `SplitterBackgroundBrush` property of EditControl.
+`SplitterBackgroundBrush` property helps to customize the background color of splitter in EditControl.
 
 <table>
 <tr>
@@ -259,13 +259,12 @@ Me.editControl1.BottomVerticalSplitterPosition = 260
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Split Views
+N> Refer to the following sample link that demonstrates the `SplitView` functionalities of EditControl.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Split Views
 
 ## Single line mode
 
-EditControl can be operated in a simple text box with syntax highlighting, editing, and clipboard operations., by setting `Multiline` property to `false`. You can also turn on the single line mode of the EditControl by setting the `SingleLineMode` property to `true`. Its default value is `false`.
+Supports a single-line mode that renders just like a regular TextBox. EditControl can be operated in a simple text box with syntax highlighting, editing, and clipboard operations., by setting `Multiline` property to `false`. You can also turn on the single line mode of the EditControl by setting the `SingleLineMode` property to `true`. Its default value is `false`.
 
 {% tabs %}
 
@@ -292,13 +291,12 @@ N> The SingleLineMode is intended for use, only when the EditControl contains sm
 
 ![](Appearance_images/Appearance_img4.jpg)
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Single Line Mode
+N> Refer to the following sample link that demonstrates the `SingleLineMode` behavior of EditControl.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Single Line Mode
 
 ## Right-to-left (RTL) support 
 
-Supports laying out text in a left-to-right fashion, allowing the control be used to develop forms for worldwide audiences. RTL can be enabled in EditControl using `RenderRightToLeft` property. Its default value is `false`.  
+`EditControl` elements can be aligned in right-to-left layout. `EditControl` is laid out from the right to left when `RenderRightToLeft` property is set to `true`. Its default value is `false`.  
 
 {% tabs %}
 
@@ -325,7 +323,7 @@ With RTL support, you can use EditControl, to render content in Right-To-left la
 
 ### Change Right-to-Left layout by keyboard
 
-EditControl supports rendering content in Right-To-Left (RTL) layout by pressing <kbd>Shift + ctrl</kbd>.
+Supports rendering content in Right-To-Left (RTL) layout by pressing <kbd>Shift + ctrl</kbd>.
 
 ## Customize Text appearance
 
@@ -333,7 +331,7 @@ In EditControl, we are able to customize the text color and its border. The foll
 
 ### Text Color
 
-In EditControl, we are able to customize the appearance of the text color in a specific range of lines by using the `SetTextColor` method. 
+`SetTextColor` method helps to customize the appearance of the text color in a specific range of lines. 
 
 <table>
 <tr>
@@ -371,7 +369,7 @@ Me.editControl1.SetTextColor(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 ### Text border color
 
-In EditControl, we are able to set the border for its text using the `SetTextBorder` method and simultaneously we can remove the border of the text using the `RemoveTextBorder` method. The following table explain regarding this methods and also the parameter value used in these methods.
+`SetTextBorder` method of EditControl helps to set the border and simultaneously we can remove the border of the text using the `RemoveTextBorder` method. The following table explain regarding this methods and also the parameter value used in these methods.
 
 <table>
 <tr>
@@ -680,7 +678,7 @@ Me.editControl1.SelectionMarginWidth = 100
 
 ## Indicator margin
 
-EditControl provides an extensive support of indicator margin for the purpose of displaying the custom indicators or bookmarks. 
+Provides an extensive support of indicator margin for the purpose of displaying the custom indicators or bookmarks. 
 
 ### Indicator margin visibility
 
@@ -734,7 +732,7 @@ Me.editControl1.MarkerAreaWidth = 50
 
 ### Customize the appearance of indicator margin
 
-The background color of indicator margin can be customized by using the `IndicatorMarginBackColor` property of EditControl.
+`IndicatorMarginBackColor` property helps to customize the background color of indicator margin in EditControl.
 
 {% tabs %}
 
@@ -872,7 +870,7 @@ Me.editControl1.RemoveSelectionBackColor()
 
 ## StatusBar
 
-EditControl provide support to display information about the current state of the control such as the current file name, line number, and column number. The built-in panels are as follows:
+Provides support to display information about the current state of the control such as the current file name, line number, and column number. The built-in panels are as follows:
 
 * TextPanel
 * StatusPanel
@@ -883,7 +881,7 @@ EditControl provide support to display information about the current state of th
 
 ### Status bar settings
 
-The `StatusBarSettings` property contains many sub properties, which can be used to customize the appearance and visibility of the status bar and its panels. The following table represents some of sub properties in StatusBarSettings.
+`StatusBarSettings` property contains many sub properties, which can be used to customize the appearance and visibility of the status bar and its panels. The following table represents some of sub properties in StatusBarSettings.
 
 <table>
 <tr>
@@ -953,7 +951,7 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 #### Visibility settings
 
-StatusBar feature can be turned on by setting the StatusBarSettings.Visible property to `true`. Its default value is `false`. The individual StatusBar panels can be optionally shown or hidden by using the Visible property corresponding to the respective panel.
+StatusBar feature can be turned on by setting the `StatusBarSettings.Visible` property to `true`. Its default value is `false`. The individual StatusBar panels can be optionally shown or hidden by using the `Visible` property corresponding to the respective panel.
 
 {% tabs %}
 
@@ -1315,9 +1313,8 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Manage
 
 ![](Appearance_images/Appearance_img22.png)
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\StatusBar
+N> Refer to the following sample link that demonstrates the `StatusBar` functionalities of EditControl.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\StatusBar
 
 ## ScrollBar 
 
@@ -1375,7 +1372,7 @@ Me.editControl1.VScrollMode = Syncfusion.Windows.Forms.Edit.ScrollMode.Pixel
 
 ### Customize the appearance of scrollbar
 
-EditControl enables to provide Office 2007 appearance to scroll bars by setting the `ScrollVisualStyle` property to Office2007. It supports all the three Office 2007 Color Schemes (Black, Blue and Silver), which can be set by using the `ScrollColorScheme` property. Also, custom colors can be applied to the scroll bars of the EditControl. This can be done by setting the ScrollColorScheme property to Managed.
+Provide Office 2007 appearance to scroll bars by setting the `ScrollVisualStyle` property to Office2007. It supports all the three Office 2007 Color Schemes (Black, Blue and Silver), which can be set by using the `ScrollColorScheme` property. Also, custom colors can be applied to the scroll bars of the EditControl. This can be done by setting the ScrollColorScheme property to Managed.
 
 <table>
 <tr>
@@ -1435,7 +1432,7 @@ The following illustration shows the EditControl with custom color (green) set f
 
 ## Append code snippets
 
-Essential Edit supports an advanced feature of VS 2005 like Code Snippets. It is also used to load or save VS.NET 2005-compatible XML snippets. Code Snippets are inserted into the EditControl by following the procedure given below:
+Supports an advanced feature of VS 2005 like Code Snippets. It is also used to load or save VS.NET 2005-compatible XML snippets. Code Snippets are inserted into the EditControl by following the procedure given below:
 
 1. Type the snippet name. For example "do".
 2. Pressing the CTRL + ' combination.
@@ -1499,7 +1496,7 @@ Me.editControl1.AddCodeSnippet(String title, ArrayList literals, String code)
 
 {% endtabs %}
 
-The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static Extract method of the CodeSnippetsExtractor class is used to extract and fill the container object. The container object can be added to the SnippetsContainer of the EditControl by using the AddContainer method. This is illustrated in the code given below.
+The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static `Extract` method of the `CodeSnippetsExtractor` class is used to extract and fill the container object. The container object can be added to the SnippetsContainer of the EditControl by using the `AddContainer` method. 
 
 {% tabs %}
 
@@ -1582,7 +1579,7 @@ Code snippets can also be created by using the `configuration` file. For example
 
 {% endhighlight %}
 
-The Literal element is used to identify a replacement for a piece of code that is entirely contained within the snippet, but one that will likely be customized after it is inserted into the code. For example, literal strings, numeric values, and some variable names should be declared as literals. The symbol $ is placed at the beginning and end of the literal ID element value. For example, if a literal has an ID element that contains the value MyID, you must reference that literal in the code element as $MyID$. All code snippets must be placed between &lt;![CDATA[ and ]]&gt; brackets.
+The Literal element is used to identify a replacement for a piece of code that is entirely contained within the snippet, but one that will likely be customized after it is inserted into the code. 
 
 **Showing code snippets**
 
@@ -1628,13 +1625,12 @@ Me.editControl1.DrawCodeSnippetBorder = True
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Code Snippets
+N> Refer to the following sample link that demonstrates the `CodeSnippets` functionalities of EditControl.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Code Snippets
 
 ## Customize cursor appearance
 
-In EditControl, cursor appearance can be customized by using the `Cursor` property. The cursor appearance can be modified to arrow, cross, hand etc.
+Cursor appearance can be customized by using the `Cursor` property. The cursor appearance can be modified to arrow, cross, hand etc.
 
 {% tabs %}
 
