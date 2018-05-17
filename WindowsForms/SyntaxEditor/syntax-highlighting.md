@@ -549,9 +549,9 @@ Error lexems can be added to the language by declaring a format names Error and 
 <lexem BeginBlock="#else" Type="Error" Priority="-10" />
 </lexems>
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
-
 {% endhighlight %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
 
 ### Splits
 
@@ -865,6 +865,7 @@ Splits helps to configure two different words as a single. For example, consider
   <split>#include</split>
 </splits>
 
+{% endhighlight %}
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img38.png)
 
@@ -895,7 +896,8 @@ N> To enable this feature, we must set the `TriggersActivators` property of Conf
 
 EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration.
 
-{% highlight C# %}
+{% highlight xaml %}
+
  <ConfigLanguage name="HTML (Light)" CaseInsensitive="true" Known="HTML" StartComment="&lt;!--" EndComment="--&gt;">
   <formats>
    <format name="Text" Font="Courier New, 10pt" FontColor="Black" />
@@ -908,6 +910,7 @@ EditControl supports multiple language configuration, which helps to configure o
   <lexem BeginBlock="escape" Type="KeyWord" />
   <lexem BeginBlock="script" EndBlock="(&gt;)|(/&gt;)" IsEndRegex="true" IsPseudoEnd="true" IsComplex="true" Type="Custom" FormatName="TagName">
 </ConfigLanguage>
+
 {% endhighlight %}
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
