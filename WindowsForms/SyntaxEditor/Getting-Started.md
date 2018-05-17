@@ -29,7 +29,7 @@ The following list of assemblies should be added as reference to use the EditCon
 Syncfusion.Shared.Base.dll
 </td>
 <td>
-Syncfusion.Shared.Base contains style related properties of Edit Control and various editor controls
+Syncfusion.Shared.Base contains style related properties of EditControl and various editor controls
 </td>
 </tr>
 <tr>
@@ -37,7 +37,7 @@ Syncfusion.Shared.Base contains style related properties of Edit Control and var
 Syncfusion.Tools.Windows.dll
 </td>
 <td>
-Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the Edit Control
+Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the EditControl
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Syncfusion.Tools.Windows contains classes that handles all UI operations, fundam
 Syncfusion.Edit.Windows.dll
 </td>
 <td>
-Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of Edit control
+Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of EditControl
 </td>
 </tr>
 </table>
@@ -108,7 +108,7 @@ private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
 
 editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
 
-// Set an appropriate size for the Edit Control.
+// Set an appropriate size for the EditControl.
 
 editControl1.Size = new Size(50, 50);
 
@@ -116,7 +116,7 @@ editControl1.Size = new Size(50, 50);
 
 editControl1.Dock = DockStyle.Fill;
 
-// Set an appropriate BorderStyle to the Edit Control instance.
+// Set an appropriate BorderStyle to the EditControl instance.
 
 editControl1.BorderStyle = BorderStyle.Fixed3D;
 
@@ -135,15 +135,15 @@ private editControl1 As Syncfusion.Windows.Forms.Edit.EditControl
 
 editControl1 = New Syncfusion.Windows.Forms.Edit.EditControl()
 
-'Set an appropriate size for the Edit Control.
+'Set an appropriate size for the EditControl.
 
-editControl1.Size = new Size(50, 50)
+editControl1.Size = New Size(50, 50)
 
 ' Set the Dock property to the appropriate DockStyle enumeration value if desired.
 
 editControl1.Dock = DockStyle.Fill
 
-'Set an appropriate BorderStyle to the Edit Control instance.
+'Set an appropriate BorderStyle to the EditControl instance.
 
 editControl1.BorderStyle = BorderStyle.Fixed3D
 
@@ -155,13 +155,13 @@ Me.Controls.Add(editControl1)
 
 {% endtabs %}
 
-The following illustration shows Edit Control was created.
+The following illustration shows EditControl was created.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 ## Loading a file into document
 
-`LoadFile` method of Edit Control helps to loads the content of any desired file into the Edit Control, instead of typing the code in it.
+This option helps to load file into EditControl.
 
 {% tabs %}
 
@@ -186,11 +186,11 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ## Syntax highlighting
 
-The Edit Control provides built-in support for a procedural, markup and SQL languages and facilitates the users to provide custom language configurations. By using the `ApplyConfiguration` method, we can set the Edit Control to use any of the pre-defined configuration settings.
+EditControl offers mostly used languages like C#, VB, XML, HTML, Jscript, Powershell, SQL as built-in and also provides support to configure new custom language based on requirement.
 
 **Built-in syntax highlighting languages**
 
-The EditControl has a built-in syntax highlighting support for the following languages.
+EditControl has a built-in syntax highlighting support for the following languages.
 
   * C
   * C#
@@ -205,13 +205,13 @@ The EditControl has a built-in syntax highlighting support for the following lan
   * PowerShell
   * Text
 
-The following code example illustrates the C# configuration settings in Edit Control.
+The following code example illustrates the C# configuration settings in EditControl.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Considering configuration settings for C# as an example. Using the KnownLanguages enumerator.
+// Considering configuration settings for C# as an example. Using the `KnownLanguages` enumerator.
 
 this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
@@ -220,7 +220,7 @@ this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
 {% highlight VB %}
 
-' Considering configuration settings for C# as an example. Using the KnownLanguages enumerator.
+' Considering configuration settings for C# as an example. Using the `KnownLanguages` enumerator.
 
 Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
@@ -232,7 +232,7 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 **Custom language configuration**
 
-Edit Control provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the Edit Control by using the `Configurator.Open` and `ApplyConfiguration` methods, as shown in the below code snippet.
+EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the `Configurator.Open` and `ApplyConfiguration` methods, as shown in the below code snippet.
 
 The following example illustrates the same as follows:
 
@@ -290,7 +290,7 @@ The following code snippet illustrates a sample configuration file that can be u
 
 {% endhighlight %}
 
-**Step 2** : How to Configure the created configuration file in Edit Control
+**Step 2** : How to Configure the created configuration file in EditControl
 
 {% tabs %}
 

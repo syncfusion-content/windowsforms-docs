@@ -9,26 +9,26 @@ documentation: ug
 
 # End-user Capability
 
-EditControl provides an extensive support like font customization, binding shortcut keys to command, find and replacing the particular words at run time with the help of dialog boxes.
+Supports various built-in dialog windows alike Microsoft Visual Studio text editor.
 
 ## Key binding
 
-EditControl provides shortcut key support for all editing and navigation operations. Also provides a built-in window for modifying the key mapping of shortcut operations. This can be done in the designer using the Keys Binding dialog as illustrated in the given procedure:
+Provides built in support for all necessary shortcut key combination required for text editing and navigation functionalities and offers built-in dialog window, to map new short cut key combination based on user requirements.
+
+This can be done in the designer using the Keys Binding dialog as illustrated in the given procedure:
 
    1. In the Editor Keys Binding dialog box, select the desired standard command. The default shortcuts assigned for a particular command are listed in the combobox under the Shortcut(s) for selected command: label.
    2. Set the focus to the Edit Box. Press TAB to navigate to the shortcuts drop-down list.
    3. Press the desired key or key combination.
    4. Now, click the Assign button, to assign this keystroke combination as the shortcut for that particular standard command. Click OK.
 
-The `KeyBinder` property is used to get the key binder, and the `KeyBindingProcessor` property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked using the `ShowKeysBindingEditor` method of the EditControl.
-
-The following illustration shows the Keys Binding dialog box.
+`KeyBinder` property is used to get the key binder, and the `KeyBindingProcessor` property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked using the `ShowKeysBindingEditor` method of the EditControl.
 
 ![](End-user-Capability_images/End-user-Capability_img1.png)
 
 ## Find
 
-Find occurrences of specified text with constraints such as case matching, matching whole words, and search directions. Also allows users to search text with regular expressions. Find dialog box is invoked by using the `ShowFindDialog` method. The keyboard shortcut to this dialog box is <kbd>Ctrl+F</kbd>.
+Provides Microsoft Visual Studio text editor like `FindDialog` window with similar options, for text search and highlighting.  
 
 ![](End-user-Capability_images/End-user-Capability_img2.png)
 
@@ -65,8 +65,6 @@ Essential Edit control Find Dialog is now enhanced with an alert message box. Th
 
 Create a class for own find dialog that inherits the frmFindDialog class.
 
-The following code illustrates this.
-
 {% tabs %}
 
 {% highlight C# %}
@@ -94,7 +92,7 @@ End Class
 
 This event occurs in FindNext() when search reaches the starting point of the search before the message box displays.
 
-The event handler receives an argument of FindCompleteEventArgs . This argument class sets the text for message box. Users can localize this text.
+The event handler receives an argument of `FindCompleteEventArgs` . This argument class sets the text for message box. Users can localize this text.
 
 {% tabs %}
 
@@ -155,7 +153,7 @@ Default key bindings to these dialogs can be changed as explained in the Keystro
 
 ### Find by programmatic
 
-The EditControl supports text search functionalities through the use of the `FindText` method. There are also other useful methods like FindCurrentText and FindNext that assist in this purpose.
+Supports many useful functions for text search and highlight like `FindText`, `FindCurrentText` and `FindNext` programmatically.
 
 <table>
 <tr>
@@ -241,7 +239,7 @@ Me.editControl1.FindNext()
 
 **History properties**
 
-The FindHistory property is used to add or remove items from the find history in the Find dialog box. 
+`FindHistory` property is used to add or remove items from the find history in the `FindDialog` box. 
 
 <table>
 <tr>
@@ -310,7 +308,7 @@ Me.editControl1.FindHistory.Clear()
 
 ## Find and replace 
 
-EditControl supports searching and replacing specified text with replacement text as per the conditions specified. Includes options to replace the first occurrence or all occurrences of the search text. The keyboard shortcut to this dialog box is <kbd>Ctrl+H</kbd>.
+Provides Microsoft Visual Studio text editor like Find and Replace dialog window with similar options, for text search, highlighting and replace.
 
 ![](End-user-Capability_images/End-user-Capability_img5.png)
 
@@ -337,7 +335,7 @@ Me.editControl1.ShowReplaceDialog()
 
 ### Replace by programmatic
 
-EditControl supports replacing the text functionalities programmatically through the use of the `ReplaceText` method. There are also other useful methods like `ReplaceAll` that assist in this purpose.
+Supports many useful functions for text search and replace like `ReplaceText`, `ReplaceAll` programmatically.
 
 <table>
 <tr>
@@ -385,13 +383,12 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
 `ReplaceHistory` property is used to add or remove items from the replace history in the Replace dialog box. Similarly, the `ReplaceSearchHistory` property is used to add or remove items from the find history in the Replace dialog box.
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Find and Replace
+N> Refer to the following sample link that demonstrates the Find and Replace functionalities of EditControl.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Find and Replace
 
 ## GoTo line
 
-`GoTo` line dialog box allows you to move to a specific line in the active document that the user wish to go. The keyboard shortcut to this dialog box is <kbd>Ctrl+G</kbd>.
+Provides `GoToLine` dialog window that helps navigate to required line number.
 
 {% tabs %}
 
@@ -418,7 +415,7 @@ Me.editControl1.ShowGoToDialog()
 
 ### Go to line by programmatic
 
-EditControl supports the `GoTo` functionality through programmatically. `GoTo` method is used to position the mouse pointer on any specified line that the user wish to go. GoTo method not only positions the pointer on the appropriate line, but it also scrolls the concerned line into the view. 
+Offer function named `GoTo` to navigate to any line programmatically.
 
 `linesAbove` argument can be used to specify the number of lines to be displayed above the pointer.
 
@@ -451,9 +448,9 @@ Me.editControl1.GoTo(lineNumber, linesAbove);
 
 ## Font configuration
 
-Font customization in the EditControl works slightly different from the regular text processing the control. The font customization is done only at the formats level not at a word level or selected text level. EditControl supports customization of fonts both through the configuration file and dynamically through a run-time Formats Editor dialog.
+Supports customization of fonts through the configuration file and `FormatsCustomization` dialog. 
 
-EditControl supports customization of fonts through the configuration file, as shown in the below code snippet.
+The following code example shows customization of fonts through the configuration file, as shown in the below code snippet.
 
 {% highlight xaml %}
 
@@ -516,6 +513,5 @@ this.editControl1.ShowFormatsCustomizationDialog();
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Font Customization
+N> Refer to the following sample link that demonstrates the customization of font in EditControl.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Font Customization

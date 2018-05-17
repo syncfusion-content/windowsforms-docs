@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing
 
-EditControl allows the end users to modify, edit text documents and source code files. This includes clipboard support, Unlimited undo and redo, binding shortcut keys to command and so on.
+EditControl allows the end users to modify, edit text documents and source code files. This includes clipboard support, Unlimited undo and redo, binding shortcut keys to command and much more.
 
 ## Clipboard operations
 
@@ -43,7 +43,7 @@ CTRL+X, SHIFT+DEL</td></tr>
 
 ### Programmatic clipboard options
 
-EditControl provides extensive support to cut, copy or paste the text data programmatically. The following methods in the EditControl facilitates these clipboard operations.
+Provides extensive support to cut, copy or paste the text data programmatically. The following methods in the EditControl facilitates these clipboard operations.
 
 <table>
 <tr>
@@ -199,7 +199,7 @@ Me.editControl1.EnableMD5 = True
 
 ## Undo and redo
 
-EditControl provides keyboard and context menu support for undo and redo operations that erase the last change in a document and reinsert it. `CanUndo` and `CanRedo` property gets a flag that determines whether the undo and redo operation can be performed in the EditControl. The keyboard shortcuts for the performing undo and redo operations in the EditControl are done by using respective commands mentioned in the below table:
+Provides keyboard and context menu support for undo and redo operations that erase the last change in a document and reinsert it. `CanUndo` and `CanRedo` property gets a flag that determines whether the undo and redo operation can be performed in the EditControl. 
 
 <table>
 <tr>
@@ -342,7 +342,7 @@ Me.editControl1.UndoGroupClose()
 
 ### Reset undo redo buffer
 
-We can reset the undo and redo operation by invoking the `ResetUndoInfo` method of EditControl.
+`ResetUndoInfo` method of EditControl is used to reset the undo and redo operation.
 
 <table>
 <tr>
@@ -403,13 +403,12 @@ Me.editControl1.UndoGroupCancel()
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Text Operations\Clipboard Operations
+N> Refer to the following sample link that demonstrates the Clipboard operations functionalities of EditControl.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Text Operations\Clipboard Operations
 
 ## Selection modes 
 
- EditControl supports rectangular block selection to select lines from specific columns like Visual Studio, plus normal selection.
+EditControl supports normal selection and rectangular block selection to select lines from specific columns like Visual Studio code editor.
 
 ### Default  
 
@@ -440,7 +439,7 @@ Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Def
 
 ### Programmatic selection
 
-We can also select the text in EditControl programmatically by using the `SelectAll`, `SetSelectionStart` and `SetSelectionEnd` method.
+`SelectAll`, `SetSelectionStart` and `SetSelectionEnd` method helps to select the text in EditControl programmatically.
 
 The following code snippet demonstrates how to select all the text in EditControl.
 
@@ -502,7 +501,7 @@ EditControl offers support for text manipulation operations like append, delete 
 
 ### Total number of lines
 
-EditControl has the built in functionality to find the total number of lines by using `PhysicalLineCount` property. 
+`PhysicalLineCount` property helps to find the total number of lines in EditControl.
 
 {% tabs %}
 
@@ -523,7 +522,7 @@ Console.WriteLine(Me.editControl1.PhysicalLineCount)
 
 ### Visible number of lines 
 
-EditControl has the built in functionality to find the visible number of lines by using `VisibleLineCount` property. 
+`VisibleLineCount` property.helps to find the visible number of lines in EditControl. 
 
 {% tabs %}
 
@@ -580,7 +579,7 @@ Me.editControl1.AppendText(" text to be appended ")
 
 ### Insert text
 
-The Insert mode can be enabled in the EditControl by setting the `InsertMode` property. Its default value is `true`. Text can be inserted anywhere inside the EditControl by using the `InsertText` method as follows. The mode of the INSERT key can also be toggled by using the ToggleInsertMode method of the EditControl.
+Insert mode can be enabled in the EditControl by setting the `InsertMode` property. Its default value is `true`. Text can be inserted anywhere inside the EditControl by using the `InsertText` method as follows. The mode of the INSERT key can also be toggled by using the ToggleInsertMode method of the EditControl.
 
 <table>
 <tr>
@@ -830,9 +829,8 @@ Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Select
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\TextInteractions
+N> Refer to the following sample link that demonstrates the above `Text Handling` functionalities of EditControl. 
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\TextInteractions
 
 ## Indent or outdent
 
@@ -934,7 +932,7 @@ Me.editControl1.OutdentSelection()
 
 ### Default indentation
 
-The indentation guidelines are vertical lines that is used to connect the matching brackets. This feature enhances the readability of code. The indentation guidelines can be enabled or disabled  by setting the `ShowIndentationGuidelines` property. Its default value is `true`, to hide the indentation guidelines in EditControl turned off it value to `false`, or by invoking the `HideIndentGuideline` method. Also, the indent guideline for the current region can be set by using the `ShowIndentGuideline` method.
+Indentation guidelines are vertical lines that is used to connect the matching brackets. This feature can be enabled or disabled  by setting the `ShowIndentationGuidelines` property. Its default value is `true`, to hide the indentation guidelines in EditControl turned off it value to `false`. Also, the indent guideline for the current region can be set by using the `ShowIndentGuideline` method.
 
 {% tabs %}
 
@@ -975,7 +973,7 @@ Me.editControl1.ShowIndentGuideline()
 
 **Positioning**
 
-It is also possible to position the caret to the beginning or end of the indentation block by using the JumpToIndentBlockStart and JumpToIndentBlockEnd methods respectively.
+It is also possible to position the caret to the beginning or end of the indentation block by using the `JumpToIndentBlockStart` and `JumpToIndentBlockEnd` methods respectively.
 
 <table>
 <tr>
@@ -1015,7 +1013,7 @@ Me.editControl1.JumpToIndentBlockEnd()
 
 ### Auto Indentation
 
-The EditControl offers advanced text indentation support to suit the requirements of the user. The properties given in the following table can be used to customize the auto indentation settings of the EditControl.
+Provides advanced text indentation support to suit the requirements of the user. The properties given in the following table can be used to customize the auto indentation settings of the EditControl.
 
 <table>
 <tr>
@@ -1187,7 +1185,7 @@ Me.editControl1.ShowIndentationBlockBorders = True
 
 ## Commands
 
-EditControl provides extensive support for various commands same as like Visual Studio Code Editor.
+Provides extensive support for various commands same as like Visual Studio Code Editor.
 
 ### Default Key commands
 
@@ -1439,7 +1437,7 @@ End Sub
 
 ## Accept tab 
 
-EditControl supports text operations with tabs Keys. Essential Edit controls the insertion of tabs using the `UseTabs` property, which lets you specify whether a tab (or an equivalent number of spaces) needs to be inserted, when the TAB key is pressed in the EditControl. Similarly, tab stops can also be inserted. 
+Supports text operations with tabs Keys. Essential Edit controls the insertion of tabs using the `UseTabs` property, which lets you specify whether a tab (or an equivalent number of spaces) needs to be inserted, when the TAB key is pressed in the EditControl. Similarly, tab stops can also be inserted. 
 
 <table>
 <tr>
@@ -1568,7 +1566,7 @@ this.editControl1.TransferFocusOnTab = True
 
 ### Change tab character size
 
-The size of the tab can be specified by using the below given property.
+`TabSize` property helps to customize the size of the tab character in EditControl.
 
 <table>
 <tr>
@@ -1604,7 +1602,7 @@ Me.editControl1.TabSize = 8
 
 ## Context menu options
 
-EditControl has a built-in context menu which is enabled, by default. This context menu allows you to edit the contents, and open or create a new file. It includes some advanced features like indent selection, comment selection, adding bookmarks and much more. 
+Provides a built-in context menu that allows you to edit the contents, and open or create a new file. It includes some advanced features like indent selection, comment selection, adding bookmarks and much more. 
 
 ### Default context menu options 
 
@@ -1688,7 +1686,7 @@ cm.ClearMenu();
 {% endtabs %}
 
 
-## Disable particular item from context menu
+### Disable particular item from context menu
 
 Context menu item can be set as disabled using `SetContextMenuItemEnabled` method by setting the bool value to be false.
 
@@ -1833,7 +1831,7 @@ End Sub
 
 ## Line modification marker
 
-EditControl tracks changed lines by displaying markers at the start of lines that have been modified after the file has been loaded or after the last file save operation. Changed lines marking feature can be enabled by setting the `MarkChangedLines` property to `true`. To enable this functionality in the EditControl, the `SelectionMargin` property should also be enabled.
+EditControl tracks changed lines by displaying markers at the start of lines that have been modified or inserted after the last file save operation. Changed lines marking feature can be enabled by setting the `MarkChangedLines` property to `true`. To enable this functionality in the EditControl, the `SelectionMargin` property should also be enabled.
 
 {% tabs %}
 
@@ -1860,7 +1858,7 @@ Me.editControl1.ShowSelectionMargin = true
 
 ### Modified line marker color
 
-We can also set the color for the changing lines by using `ChangedLinesMarkingLineColor` property of EditControl.
+`ChangedLinesMarkingLineColor` property helps to customize the color for the changing lines in EditControl.
 
 {% tabs %}
 
@@ -1883,7 +1881,7 @@ Me.editControl1.ChangedLinesMarkingLineColor = Color.Red
 
 ### Saved line marker color
 
-We can also set the color for the changing lines by using `SavedLinesMarkingLineColor` property of EditControl.
+`SavedLinesMarkingLineColor` property helps to customize the color for the changing lines after performing save operation in EditControl.
 
 {% tabs %}
 
@@ -1906,7 +1904,7 @@ Me.editControl1.SavedLinesMarkingLineColor = Color.Orange
 
 ## Comment out lines
 
-EditControl provides support for commenting and uncommenting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given methods.
+Provides support for commenting and uncommenting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given methods.
 
 <table>
 <tr>
@@ -2226,12 +2224,11 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
 ## Unicode
 
-Unicode is a standard used to encode all the languages of the world in computers. EditControl fully supports serializing and displaying Unicode characters. All Unicode text is saved in UTF-8 format, by default. Moving Unicode text between EditControl and other Word Processing software programs is also straightforward through Copy or Paste clipboard functions. Essential Edit also supports handling of all other text encoding formats specified in the System.Text.Encoding class like ASCII, UTF7, UTF8 and BigEndianUnicode.
+`Unicode` is a standard used to encode all the languages of the world in computers. All Unicode text is saved in UTF-8 format, by default. Essential Edit also supports handling of all other text encoding formats specified in the System.Text.Encoding class like ASCII, UTF7, UTF8 and BigEndianUnicode.
 
 The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian and Greek text in the EditControl.
 
 ![](Editing-Features_images/Editing-Features_img14.jpeg)
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Unicode
+N> Refer to the following sample link that demonstrates the `Unicode` support in EditControl.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Unicode
