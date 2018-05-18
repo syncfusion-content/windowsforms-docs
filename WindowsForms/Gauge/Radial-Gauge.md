@@ -7,117 +7,171 @@ control: Gauge
 documentation: ug
 ---
 
-# Radial Gauge
+# RadialGauge
 
 The RadialGauge control can be used for representing a range of values in circular form. It can be used to create sophisticated dashboards, clocks, industrial equipment, medical equipment, more.
 
-## Real world scenarios
+# Overview
 
-A radial gauge evaluates the values of scales and presents them in a radial manner. Radial Gauge enables you to quickly build high quality dashboard, process control, gadget and clocks. Radial gauges consist of important internal domains to present data in a more sophisticated way.
+A RadialGauge evaluates the values of scales and presents them in a radial manner. RadialGauge enables you to quickly build high quality dashboard, process control, gadget and clocks. RadialGauge consist of important internal domains to present data in a more sophisticated way.
 
-The best example of a radial gauge is a speedometer. The speedometer can be designed to be placed in a racing game application, denoting the speed of a vehicle.
-
+The best example of a RadialGauge is a speedometer. The speedometer can be designed to be placed in a racing game application, denoting the speed of a vehicle.
 
 
 ![](Radial-Gauge_images/Radial-Gauge_img1.png)
 
+# Key features
 
 
-## Getting started
+* **Scales** - Provides support to customize orientation and appearance of the associated scales.
 
-This section provides information about radial gauges for developers who are new to the Gauge control.
+* **Frame types** - Provides options to specify the radial built-in frame style, such as full circle or half circle.
 
-The Gauge control is built on Windows Forms programming, which is extended to support a broad set of dashboard development features including resources, controls, graphics, layout, and data binding.
+* **Needle** - Provides support for customize visibility, style and color of the needle.
 
-### Creating a Radial Gauge
+* **Range** - Provides options to display different ranges in different colors
 
-Radial gauges can be enhanced with a circle frame or semi-circle frame. This section covers how to include a radial gauge in an application.
-
-#### Through designer
-
-Drag the RadialGauge control from the toolbox onto the form.
+* **Labels** - Provides support to customize the appearance of gauge values with user-specified colors and alignment.
 
 
 
-![C:/Users/Arun/Desktop/Gauge_img/ToolBox.png](Radial-Gauge_images/Radial-Gauge_img2.png)
+# Getting started
+
+This section describes how to add `RadialGauge` control in a Windows Forms application and overview of its basic functionalities.
+
+## Assembly deployment
+
+The following list of assemblies should be added as reference to use the RadialGauge in any application:
+
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Gauge.Windows
+</td>
+<td>
+The Syncfusion.Gauge.Windows contains the class that handles all UI operations and contains helper class of RadialGauge control.
+</td>
+</tr>
+</table>
 
 
+# Installing Nuget Packages
+
+To create the Windows Forms application with RadialGauge, the following nuget packages should be installed.
+ 
+* Syncfusion.Gauge.Windows
+* Syncfusion.Shared.Base
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+https://help.syncfusion.com/windowsforms/nuget-packages
 
 
+# Creating simple application with RadialGauge
 
-![](Radial-Gauge_images/Radial-Gauge_img3.png)
+You can create the Windows Forms application with RadialGauge control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the RadialGauge with range information.
+
+## Adding control via designer
+
+The RadialGauge control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Gauge.Windows.dll
+* Syncfusion.Shared.Base.dll
+
+![](Radial-Gauge_images/RadialGauge_img1.png) 
 
 
+## Adding control manually in code
 
-As soon as the control is dropped, it will be loaded with its default style. 
+To add control manually in C#, follow the given steps:
 
-#### Through code
+1. Add the following required assembly references to the project:
+
+	* Syncfusion.Gauge.Windows.dll
+	* Syncfusion.Shared.Base.dll
+
+2. Include the namespaces **Syncfusion.Gauge.Windows**.
 
 {% tabs %}
 
 {% highlight C# %}
 
- private Syncfusion.Windows.Forms.Gauge.RadialGauge radialGauge1;
+using Syncfusion.Gauge.Windows;
 
- this.radialGauge1 = new Syncfusion.Windows.Forms.Gauge.RadialGauge();
-
- this.radialGauge1.Name = "radialGauge1";
-
- this.radialGauge1.Size = new System.Drawing.Size(230, 230);                 this.Controls.Add(this.radialGauge1);
-
-{% endhighlight %}
-
-
+{% endhighlight  %}
 
 {% highlight VB %}
 
+Imports Syncfusion.Gauge.Windows
 
+{% endhighlight  %}
 
-Private radialGauge1 As Syncfusion.Windows.Forms.Gauge.RadialGauge
+{% endtabs %} 
 
-Me.radialGauge1 = New Syncfusion.Windows.Forms.Gauge.RadialGauge()
+2. Create `RadialGauge` control instance and add it to the form.
 
-Me.radialGauge1.Name = "radialGauge1"
+{% tabs %}
 
-Me.radialGauge1.Size = New System.Drawing.Size(230, 230)
+{% highlight C# %}
 
-Me.Controls.Add(Me.radialGauge1)
+RadialGauge radialGauge1 = new RadialGauge();
 
+this.radialGauge1.MinorDifference = 5;
+
+this.Controls.Add(radialGauge1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim radialGauge1 As RadialGauge = New RadialGauge
+
+Me.radialGauge1.MinorDifference = 5;
+
+Me.Controls.Add(radialGauge1)
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![](Radial-Gauge_images/RadialGauge_img2.png)
+
 ### Elaborate structure of the control
 
 The RadialGauge control includes the following elements: Scale Label, Needle, Gauge Value, and Background Frame. All the elements are optional for displaying the Gauge control.
 
-#### Feature summary
-
-Here is a brief overview of various features of the RadialGauge control.
-
-* Scales - The scale value can be customized to be displayed within defined limits.
-* Frame types - Allows you to specify the radial built-in frame style, such as full circle or half circle.
-* Pointers - Provide complete support for pointers to point the value.
-* Range - Full-fledged range support.
-* Image and Labels - Used to customize the appearance of gauge pointer values with user-specified colors and alignment.
-
 ### Concepts and features
 
 
-This section illustrates the features of Radial Gauge with images and sample code. It contains the following topics:
+This section illustrates the features of RadialGauge with images and sample code. It contains the following topics:
 
-* Radial Gauge Frames
+* RadialGauge Frames
 * Scales
 * Ticks
 * Needles
 * Ranges
 * Scaling Divisions
 
-#### Radial Gauge frame
+#### RadialGauge frame
 
 
-The frame defines the frame types of radial gauges. Frames can be applied using the FrameType property. The RadialGauge control contains two frame types:
+The frame defines the frame types of RadialGauge. Frames can be applied using the FrameType property. The RadialGauge control contains two frame types:
 
 * Full Circle
 * Half Circle
@@ -246,7 +300,7 @@ Scales are used to control element placement and value ranges.
 
 #### Customizing scales
 
-You can customize scales added to the Radial Gauge using the properties listed in the following table:
+You can customize scales added to the RadialGauge using the properties listed in the following table:
 
 
 <table>
@@ -512,7 +566,7 @@ Gets or sets the color of the range.</td></tr>
 </table>
 
 
-The following code sample illustrates how to add ranges to the radial gauge:
+The following code sample illustrates how to add ranges to the RadialGauge:
 
 {% tabs %}
 
@@ -970,12 +1024,12 @@ this.radialGauge1.DisplayMember = [column name];
 
 ## Custom renderer
 
-The appearance of the Radial Gauge is customized by using the `IRadialGaugeRenderer`. This interface provides few methods to control painting over the OuterArc, Needle, Major ticks, Minor ticks, Label, Ranges etc.
+The appearance of the RadialGauge is customized by using the `IRadialGaugeRenderer`. This interface provides few methods to control painting over the OuterArc, Needle, Major ticks, Minor ticks, Label, Ranges etc.
 
 To customize the appearance,
 
 1. Create a new custom renderer class and implement each of the members defined in IRadialGaugeRenderer.
-2. Assign instance of your custom renderer to the `Renderer` property of Radial Gauge. By default, Radial Gauge is painted by using its default renderer.
+2. Assign instance of your custom renderer to the `Renderer` property of RadialGauge. By default, RadialGauge is painted by using its default renderer.
 
 {% tabs %}
 
@@ -1001,11 +1055,11 @@ radialGauge1.Renderer = custom
 
 ## Frequently asked questions
 
-### How to enable multiple needles to Radial Gauge
+### How to enable multiple needles to RadialGauge
 
-#### Adding multiple needles to Radial Gauge
+#### Adding multiple needles to RadialGauge
 
-The Radial Gauge control can be used for representing a range of values in circular form. In Radial Gauge, you can represent the range of values using multiple needles.
+The RadialGauge control can be used for representing a range of values in circular form. In RadialGauge, you can represent the range of values using multiple needles.
 
 
 
@@ -1013,7 +1067,7 @@ The Radial Gauge control can be used for representing a range of values in cir
 
 
 
-The following code example illustrates you on how to add multiple needles in Radial Gauge.
+The following code example illustrates you on how to add multiple needles in RadialGauge.
 
 {% tabs %}
 
@@ -1047,9 +1101,9 @@ Me.RadialGauge1.NeedleCollection.Add(needle2)
 
 {% endtabs %}
 
-#### Customization of needles in Radial Gauge
+#### Customization of needles in RadialGauge
 
-You can customize the Radial gauge needles using the Needles property.
+You can customize the RadialGauge needles using the Needles property.
 
 ##### Needle style
 
@@ -1067,7 +1121,7 @@ You can customize the needle color by using the NeedleColor property.
 
 The Needle values can be assigned using Values property in Needle.
 
-You can customize the needles in Radial Gauge by using the following code example.
+You can customize the needles in RadialGauge by using the following code example.
 
 {% tabs %}
 
@@ -1094,9 +1148,9 @@ Me.RadialGauge1.NeedleCollection(0).Value = 5
 
 {% endtabs %}
 
-### How to customize Radial Gauge appearance
+### How to customize RadialGauge appearance
 
-You can customize the appearance of the Radial Gauge by using the IRadialGaugeRenderer.
+You can customize the appearance of the RadialGauge by using the IRadialGaugeRenderer.
 
 {% tabs %}
 
@@ -1768,7 +1822,7 @@ Public Class CustomRenderer
 
 ![](Radial-Gauge_images/custom.jpeg)
 
-### How to customize the start angle and sweep angle of the arc in Radial Gauge
+### How to customize the start angle and sweep angle of the arc in RadialGauge
 
 It can be customized by using its properties named `StartAngle` and `SweepAngle`.
 
