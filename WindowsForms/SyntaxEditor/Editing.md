@@ -1579,7 +1579,7 @@ this.editControl1.TransferFocusOnTab = True
 
 ### Change tab character size
 
-`TabSize` property helps to customize the size of the tab character in EditControl.
+`TabSize` property helps to insert the number of spaces when pressing the TAB key. This functionality is enabled only when `UseTabs` property in EditControl is `true`.
 
 <table>
 <tr>
