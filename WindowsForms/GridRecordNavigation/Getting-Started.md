@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started for Syncfusion Essential WindowsForms
+description: This section explains on how to add a GridRecordNavigationControl in an application and some of the basic functionalities of it.
+platform: WindowsForms
+control: GridRecordNavigationControl
+documentation: ug
+---
+
 # Getting started
 
 This section will explain to create a simple application with GridRecordNavigationControl and its functionalities.

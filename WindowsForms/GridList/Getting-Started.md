@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started for Syncfusion Essential WindowsForms
+description: This section explains on how to add a GridListControl in an application and some of the basic functionalities of it.
+platform: WindowsForms
+control: GridListControl
+documentation: ug
+---
+
 # Getting started
 
 This section will explain to create a simple application with GridListControl and its functionalities.
