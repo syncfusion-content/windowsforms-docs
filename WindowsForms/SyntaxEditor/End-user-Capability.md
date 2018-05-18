@@ -22,7 +22,7 @@ This can be done in the designer using the Keys Binding dialog as illustrated in
    3. Press the desired key or key combination.
    4. Now, click the Assign button, to assign this keystroke combination as the shortcut for that particular standard command. Click OK.
 
-`KeyBinder` property is used to get the key binder, and the `KeyBindingProcessor` property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked using the `ShowKeysBindingEditor` method of the EditControl.
+`KeyBinder` property is used to get the key binder, and the `KeyBindingProcessor` property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked using the `ShowKeysBindingEditor` function of the EditControl.
 
 ![](End-user-Capability_images/End-user-Capability_img1.png)
 
@@ -53,11 +53,11 @@ Me.editControl1.ShowFindDialog()
 
 {% endtabs %}
 
-Essential Edit now enables you to create a new find dialog by inheriting Essential Edit’s find dialog. You can customize the Find Dialog by changing the properties and triggers the events of the buttons such as Find, Mark All and Close. You can also easily localize the captions of the controls in the Find dialog.
+EditControl now enables you to create a new find dialog by inheriting find dialog. You can customize the Find Dialog by changing the properties and triggers the events of the buttons such as Find, Mark All and Close. You can also easily localize the captions of the controls in the Find dialog.
 
 **Enhanced find dialog**
 
-Essential Edit control Find Dialog is now enhanced with an alert message box. This displays the alert message box when find reaches the starting point of the search again. In search option Current Selection, click OK in alert message box, then the search area is selected again automatically as in VS editor.
+EditControl Find Dialog is now enhanced with an alert message box. This displays the alert message box when find reaches the starting point of the search again. In search option Current Selection, click OK in alert message box, then the search area is selected again automatically as in VS editor.
 
 ![](End-user-Capability_images/End-user-Capability_img3.jpeg)
 
@@ -158,7 +158,7 @@ Supports many useful functions for text search and highlight like `FindText`, `F
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -252,12 +252,12 @@ FindHistory</td><td>
 Specifies history of Find dialog</td></tr>
 </table>
 
-The methods associated with the FindHistory property are used to perform the following operations.
+The functions associated with the FindHistory property are used to perform the following operations.
 
 <table>
 <tr>
 <th>
-FindHistory method</th><th>
+FindHistory functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -340,7 +340,7 @@ Supports many useful functions for text search and replace like `ReplaceText`, `
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -444,7 +444,7 @@ Me.editControl1.GoTo(lineNumber, linesAbove);
 
 {% endtabs %}
 
-`CurrentLine` property explained in the Positions and Offsets section, also does the same task as the GoTo method. 
+`CurrentLine` property explained in the Positions and Offsets section, also does the same task as the `GoTo` function. 
 
 ## Font configuration
 

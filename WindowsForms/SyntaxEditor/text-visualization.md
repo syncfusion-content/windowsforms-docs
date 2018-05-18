@@ -42,12 +42,12 @@ Me.editControl1.ShowOutliningCollapsers = True
 
 ### Toggle outline visibility
 
-We can toggle the outline visibility in EditControl by using the following methods.
+We can toggle the outline visibility in EditControl by using the following functions.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -107,7 +107,7 @@ Provides Visual Studio-like support for collapsing and expanding blocks of code 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -198,26 +198,26 @@ Occurs when the region expands</td></tr>
 <tr>
 <td>
 CollapsedAll</td><td>
-Occurs when CollapseAll method was called</td></tr>
+Occurs when CollapseAll function was called</td></tr>
 <tr>
 <td>
 ExpandedAll</td><td>
-Occurs when ExpandedAll method was called</td></tr>
+Occurs when ExpandedAll function was called</td></tr>
 <tr>
 <td>
 CollapsingAll</td><td>
-Occurs when CollapseAll method is called</td></tr>
+Occurs when CollapseAll function is called</td></tr>
 <tr>
 <td>
 ExpandingAll</td><td>
-Occurs when ExpandAll method is called</td></tr>
+Occurs when ExpandAll function is called</td></tr>
 </table>
 
 The above events can be canceled, and can be used to optionally cancel the Outlining Collapse and Expand operations respectively. They are discussed in detail in the EditControl Events section.
 
 **Outlining tooltip**
 
-EditControl provides the `ToolTip` support for Outlining. Outlining Tooltip is displayed for each collapsed outlining block and it shows the contents of the collapsed block. The Outlining Tooltip can be optionally shown or hidden by using the `ShowOutliningTooltip` property in the EditControl. Its default value is `true`.
+EditControl provides the `ToolTip` support for Outlining. Outlining Tooltip is displayed for each collapsed outlining block and it shows the contents of the collapsed block. The Outlining Tooltip can be optionally shown or hidden by using the `ShowOutliningTooltip` property in EditControl. Its default value is `true`.
 
 {% tabs %}
 
@@ -458,7 +458,7 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 
 **WordWrap margin customization**
 
-WordWrap margin can be enabled or disabled using the `WordWrapMarginVisible` property of EditControl. Its default value is `false`. WordWrap margin of the EditControl can be set and customized by using the below given properties.
+WordWrap margin can be enabled or disabled using the `WordWrapMarginVisible` property in EditControl. Its default value is `false`. WordWrap margin of the EditControl can be set and customized by using the below given properties.
 
 <table>
 <tr>
@@ -532,12 +532,12 @@ Me.editControl1.WordWrapMarginBrush = New Syncfusion.Drawing.BrushInfo(Syncfusio
 
 **Line wrapping images**
 
-In EditControl, it is possible to associate images to indicate line wrapping. This feature can be turned on by setting the `MarkLineWrapping` property to True. There are two types of image indicators:
+In EditControl, it is possible to associate images to indicate line wrapping. This feature can be turned on by setting the `MarkLineWrapping` property to `true`. There are two types of image indicators:
 
 * Images that indicate the line that is being wrapped. These are displayed at the beginning of the line being wrapped. This can be set by using the `CustomWrappedLinesMarkingImage` property.
 * Images that indicate the point at which the line is being wrapped. This can be set by using the `CustomLineWrappingMarkingImage` property.
 
-`MarkWrappedLines` property of EditControl is used to indicate whether wrapped lines should be marked.
+`MarkWrappedLines` property in EditControl is used to indicate whether wrapped lines should be marked.
 
 <table>
 <tr>
@@ -614,7 +614,7 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows
 
 ## Line number
 
-Displays the line number at the start of a line. Line numbers can be automatically assigned to the contents of the EditControl by enabling the `ShowLineNumbers` property. Its default value is `true`. The number of lines in the EditControl can be obtained by using the `PhysicalLineCount` property.
+Displays the line number at the start position of line. Line numbers can be automatically assigned to the contents of the EditControl by enabling the `ShowLineNumbers` property. Its default value is `true`. The number of lines in the EditControl can be obtained by using the `PhysicalLineCount` property.
 
 <table>
 <tr>
@@ -794,7 +794,7 @@ private Sub EditControl1_BeforeLineNumberPaint(ByVal sender As Object, ByVal e A
 
 #### Line backcolor
 
-Background format of a line can be customized using `SetLineBackColor` method, where line number, fill complete line or text area and format can be specified. Below code is an simple example for setting backcolor and border color for a line.
+Background format of a line can be customized using `SetLineBackColor` function, where line number, fill complete line or text area and format can be specified. Below code is an simple example for setting backcolor and border color for a line.
 
 {% tabs %}
 
@@ -827,7 +827,7 @@ Me.editControl1.SetLineBackColor(5, True, format)
 
 #### Background fill formats
 
-Background formats for a line can be defined using `IBackgroundFormat` interface and RegisterBackColorFormat method where format attributes can be specified. 
+Background formats for a line can be defined using `IBackgroundFormat` interface and RegisterBackColorFormat function where format attributes can be specified. 
 
 {% tabs %}
 
@@ -852,7 +852,7 @@ Dim IBackgroundFormat As format = Me.editControl1.RegisterBackColorFormat(Color.
 
 #### Set line background for current line
 
-Background format can be customized for the current line using `SetSelectionBackColor` method, where format for the line can be specified.
+Background format can be customized for the current line using `SetSelectionBackColor` function, where format for the line can be specified.
 
 {% tabs %}
 
@@ -895,7 +895,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 ## Remove applied line background color
 
-Background format for a line can be removed using `RemoveLineBackColor` method, where the line, whose format need to be removed will be specified. 
+Background format for a line can be removed using `RemoveLineBackColor` function, where the line, whose format need to be removed will be specified. 
 
 {% tabs %}
 
@@ -916,7 +916,7 @@ Me.editControl1.RemoveLineBackColor(5)
 
 ## Highlighting current line 
 
-You can highlight the current line where the mouse pointer is present by setting the `HighlightCurrentLine` property of the EditControl to `true`. Its default value is `false`. By using the `CurrentLineHighlightColor` property, we can set the color for the highlighted line. 
+You can highlight the current line where the mouse pointer is present by setting the `HighlightCurrentLine` property to `true`. Its default value is `false`. By using the `CurrentLineHighlightColor` property, we can set the color for the highlighted line. 
 
 <table>
 <tr>
@@ -970,7 +970,7 @@ The underlines can be of different styles, colors and weights, with each of them
 * Wave
 * DashDot
 
-Before the underlining can be applied to the selected text, a custom underlining format has to be defined. The RegisterUnderlineFormat method of ISnippetFormat, registers the custom underline format to be used while underlining a region. The following are the parameters which was passed in RegisterUnderlineFormat method:
+Before the underlining can be applied to the selected text, a custom underlining format has to be defined. The RegisterUnderlineFormat function of ISnippetFormat, registers the custom underline format to be used while underlining a region. The following are the parameters which was passed in RegisterUnderlineFormat function:
 
 The `SelectedColor` value can be set to any desired color. The `SelectedStyle` value is specified by using the UnderlineStyle enumerator. The `SelectedWeight` value is specified by using the UnderlineWeight enumerator.
 
@@ -1012,7 +1012,7 @@ Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(SelectedColo
 
 ### Set up underline for current line
 
-`SetUnderline` method is used to set underlining of the selected text region. 
+`SetUnderline` function is used to set underlining of the selected text region. 
 
 {% tabs %}
 
@@ -1037,7 +1037,7 @@ Me.editControl1.SetUnderline(this.editControl1.CurrentLine, this.editControl1.Cu
 
 ### Remove applied underline
 
-We can remove the underlining which had been set by using the `RemoveUnderline` method of EditControl.
+We can remove the underlining which had been set by using the `RemoveUnderline` function in EditControl.
 
 {% tabs %}
 
@@ -1076,7 +1076,7 @@ LineColor, Weight and Underline parameters are used to specify the type of under
 
 ### Strike out
 
-`StrikeThrough` method allows you to perform strikethrough operation on the text contained in the EditControl. This is a very useful feature in denoting text that was deleted from the original document or highlighting offending code. You can also specify any custom color for the strikethrough line.
+`StrikeThrough` function helps to draw horizontal line through the vertical center of text. This is a very useful feature in denoting text that was deleted from the original document or highlighting offending code. You can also specify any custom color for the strikethrough line.
 
 {% tabs %}
 
@@ -1115,13 +1115,13 @@ Me.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.Aq
 
 {% endtabs %}
 
-To remove the strikethrough line, just call one of the above mentioned methods and specify the Color parameter as Color.Empty.
+To remove the strikethrough line, just call one of the above mentioned functions and specify the Color parameter as Color.Empty.
 
 ![](Text-Visualization_images/Text-Visualization_img8.png)
 
 ## Bookmark indicators 
 
-Essential Edit enables users to locate a section or a line of a document for quick access to any part of the contents. This can be enabled or disabled by using the `ShowIndicatorMargin` property. Its default value is `true`, to hide the indicator margin turn on its value to `false`. `MarkerAreaWidth` property of EditControl sets the width of marker area.
+EditControl enables users to locate a section or a line of a document for quick access to any part of the contents. This can be enabled or disabled by using the `ShowIndicatorMargin` property. Its default value is `true`, to hide the indicator margin turn on its value to `false`. `MarkerAreaWidth` property in EditControl sets the width of marker area.
 
 <table>
 <tr>
@@ -1169,12 +1169,12 @@ Me.editControl1.MarkerAreaWidth = 20
 
 ### Custom bookmark indicator
 
-`SetCustomBookmark` method is used to set Bookmarks and also it can removed by `RemoveCustomBookmark` method of EditControl.
+`SetCustomBookmark` function is used to set Bookmarks and also it can removed by `RemoveCustomBookmark` function of EditControl.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1186,7 +1186,7 @@ RemoveCustomBookmark</td><td>
 Removes the custom bookmark from the desired line</td></tr>
 </table>
 
-Bookmarks can be set by using the `SetCustomBookmark` method, do not respond to the BookmarkNext and BookmarkPrevious methods automatically. In order to enable this, you have to set the `UseInBookmarkSearch` property of the custom bookmark to `true`.
+Bookmarks can be set by using the `SetCustomBookmark` function, do not respond to the `BookmarkNext` and `BookmarkPrevious` functions automatically. In order to enable this, you have to set the `UseInBookmarkSearch` property of the custom bookmark to `true`.
 
 {% tabs %}
 
@@ -1202,7 +1202,7 @@ Color borderColor;
       e.Graphics.DrawEllipse(new Pen(borderColor,3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2);
 }
 
-// Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious methods.
+// Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious functions.
 
 ICustomBookmark customBookmark = this.editControl1.SetCustomBookmark(this.editControl1.CurrentLine, new BookmarkPaintEventHandler(CustomBookmarkPainter));
 
@@ -1226,7 +1226,7 @@ Private Sub CustomBookmarkPainter(ByVal sender As Object, ByVal e As Syncfusion.
 
 End Sub
 
-' Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious methods.
+' Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious functions.
 
 Dim customBookmark As ICustomBookmark = Me.editControl1.SetCustomBookmark(Me.editControl1.CurrentLine, New BookmarkPaintEventHandler(CustomBookmarkPainter))
 
@@ -1240,7 +1240,7 @@ Dim customBookmark As ICustomBookmark = Me.editControl1.RemoveCustomBookmark(Me.
 
 {% endtabs %}
 
-Essential Edit allows you to set a pause at some specified location in the EditControl by using the Break Points feature. This is done by combining the Line Background and Custom Indicator features. IndicatorMarginClick event can be handled to insert a break point.
+Allows you to set a pause at some specified location in the EditControl by using the `BreakPoint` feature. This is done by combining the Line Background and Custom Indicator features. IndicatorMarginClick event can be handled to insert a break point.
 
 {% tabs %}
 
@@ -1351,12 +1351,12 @@ Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Crimson
 
 **Customizing bookmarks**
 
-You can either display the default bookmark image (like in Visual Studio.NET) or display custom images as indicators. This can be done by making use of the following methods of the EditControl.
+You can either display the default bookmark image (like in Visual Studio.NET) or display custom images as indicators. This can be done by making use of the following functions of the EditControl.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1442,7 +1442,7 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows
 
 ## Content dividers
 
-Supports content dividers similar to Visual Studio code editor, that clearly distinguish content sections with line dividers, to improve code readability. Content Dividers can be enabled or disabled using `ShowContentDividers` property of EditControl. Its default value is `true`.
+Supports content dividers similar to Visual Studio code editor, that clearly distinguish content sections with line dividers, to improve code readability. Content Dividers can be enabled or disabled using `ShowContentDividers` property in EditControl. Its default value is `true`.
 
 ![](Text-Visualization_images/Text-Visualization_img11.png)
 
@@ -1479,12 +1479,12 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows
 
 ## Column Guides
 
-Column Guides are used to highlight columns with special meaning. Essential Edit supports unlimited number of column guides. Each column guide can be provided with a custom color and location. This can be done by setting the `ShowColumnGuides` property of the EditControl. Its default value is `true`, to hide the column guides turn on its value to `false`. By using `ColumnGuideItem` Collection Editor, specifies the color and the location of the Column Guides. The font used to calculate the column location is customized by `usingColumnGuidesMeasuringFont` property.
+Provides support to draw a vertical lines based on the specified column positions that helps to ensure whether the lines don't go beyond a certain length. This can be enabled or hidden by setting the `ShowColumnGuides` property. Its default value is `true`, to hide the column guides turn on its value to `false`. By using `ColumnGuideItem` Collection Editor, specifies the color and the location of the Column Guides. The font used to calculate the column location is customized by `usingColumnGuidesMeasuringFont` property.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1565,7 +1565,7 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 ## Bracket highlighting 
 
-EditControl has one of the most powerful and intelligent Bracket Highlighting features. If the cursor is positioned on the end curly brace, most editors will match to the open curly brace in the string. On the contrary, EditControl matches to the open curly brace for the method. The bracket highlighting feature can be turned on by enabling the `ShowIndentationGuidelines` or `OnlyHighlightMatchingBraces` properties. Setting the OnlyHighlightMatchingBraces property to `true`, enables bracket highlighting whereas the indentation guidelines are not displayed.
+EditControl has one of the most powerful and intelligent Bracket Highlighting features. If the cursor is positioned on the end curly brace, most editors will match to the open curly brace in the string. On the contrary, EditControl matches to the open curly brace for the function. The bracket highlighting feature can be turned on by enabling the `ShowIndentationGuidelines` or `OnlyHighlightMatchingBraces` properties. Setting the OnlyHighlightMatchingBraces property to `true`, enables bracket highlighting whereas the indentation guidelines are not displayed.
 
 {% tabs %}
 
