@@ -289,28 +289,28 @@ Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureI
 
 Select Case name
 
-Case Localizer.EditResourceIdentifiers.FRTitle:
+Case Localizer.EditResourceIdentifiers.FRTitle
 Return "更换"
 
-Case Localizer.EditResourceIdentifiers.FRrdbSelection:
+Case Localizer.EditResourceIdentifiers.FRrdbSelection
 Return "全部替换"
                 
-Case Localizer.EditResourceIdentifiers.FRbtnReplace:
+Case Localizer.EditResourceIdentifiers.FRbtnReplace
 Return "更换"
                 
-Case Localizer.EditResourceIdentifiers.FRbtnReplaceAll:
+Case Localizer.EditResourceIdentifiers.FRbtnReplaceAll
 Return "全部替换"
 
-Case Localizer.EditResourceIdentifiers.FRGroupTitle:
+Case Localizer.EditResourceIdentifiers.FRGroupTitle
 Return "全部替换"
 
-Case Localizer.EditResourceIdentifiers.FRbtnClose:
+Case Localizer.EditResourceIdentifiers.FRbtnClose
 Return "全部替换
 
-Case Localizer.EditResourceIdentifiers.FRlblFind:
+Case Localizer.EditResourceIdentifiers.FRlblFind
 Return "全部替换"
 
-Case Localizer.EditResourceIdentifiers.FRlblReplace:
+Case Localizer.EditResourceIdentifiers.FRlblReplace
 Return "全部替换"
 
 End Select
@@ -363,16 +363,16 @@ Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureI
 
 Select Case name
 
-Case Localizer.EditResourceIdentifiers.FGoTitle:
+Case Localizer.EditResourceIdentifiers.FGoTitle
 Return "去线"
 
-Case Localizer.EditResourceIdentifiers.FGoNumber:
+Case Localizer.EditResourceIdentifiers.FGoNumber
 Return "电话号码{0}-{1}"
 
-Case Localizer.EditResourceIdentifiers.FGobtnOK:
+Case Localizer.EditResourceIdentifiers.FGobtnOK
 Return "好"
 
-Case Localizer.EditResourceIdentifiers.FGobtnCancel:
+Case Localizer.EditResourceIdentifiers.FGobtnCancel
 Return "取消"
 
 End Select
@@ -511,103 +511,103 @@ Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureI
 
       Select Case name
 
-               Case Localizer.EditResourceIdentifiers.DEF_MENU_BOOKMARKS:
+               Case Localizer.EditResourceIdentifiers.DEF_MENU_BOOKMARKS
                     Return "上下文菜单书签"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_CLEARBOOKMARKS:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_CLEARBOOKMARKS
                     Return "清除书签"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_CLOSE:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_CLOSE
                     Return "上下文菜单关"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_COLLAPSEALL:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_COLLAPSEALL
                     Return "上下文菜单坍方"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_COMMENTSELECTION:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_COMMENTSELECTION
                     Return "上下文菜单评论选择"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_COPY:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_COPY
                     Return "上文菜单评论"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_CUT:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_CUT
                     Return "切"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_DELETE:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_DELETE
                     Return "删除"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_DELETEALL:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_DELETEALL
                     Return "删除所有"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_EDIT:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_EDIT
                     Return "编辑"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_FILE:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_FILE
                     Return "文件"
                     
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_EXPANDALL:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_EXPANDALL
                     Return "展开全部"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_FIND:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_FIND
                     Return "找"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_GOTO:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_GOTO
                     Return "去"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_INDENTSELECTION:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_INDENTSELECTION
                     Return "缩进选择"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_NEW:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_NEW
                     Return "新"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_OPEN:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_OPEN
                     Return "打开打开"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_OPTIONS:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_OPTIONS
                     Return "打开"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_PREVBOOKMARK:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_PREVBOOKMARK
                     Return "上一个书签"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_PRINT:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_PRINT
                     Return "打印"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_PRINTPREVIEW:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_PRINTPREVIEW
                     Return "打印预览"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_REDO:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_REDO
                     Return "重做"
 
-                case Localizer.EditResourceIdentifiers.DEF_MENU_REPLACE:
+                case Localizer.EditResourceIdentifiers.DEF_MENU_REPLACE
                     Return "更换"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_SAVE:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_SAVE
                     Return "保存"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_SAVEAS:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_SAVEAS
                     Return "另存为"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_SELECTALL:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_SELECTALL
                     Return "全选"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_TABIFYSELECTION:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_TABIFYSELECTION
                     Return "主题"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_TOGGLEBOOKMARK:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_TOGGLEBOOKMARK
                     Return "切换书签"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_UNCOMMENTSELECTION:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_UNCOMMENTSELECTION
                     Return "取消注释选择"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_UNDO:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_UNDO
                     Return "解开"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_UNTABIFYSELECTION:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_UNTABIFYSELECTION
                     Return "未选择"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_UNINDENTSELECTION:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_UNINDENTSELECTION
                     Return "取消缩进"
 
-                Case Localizer.EditResourceIdentifiers.DEF_MENU_ADVANCED:
+                Case Localizer.EditResourceIdentifiers.DEF_MENU_ADVANCED
                     Return "高级"
 
 
