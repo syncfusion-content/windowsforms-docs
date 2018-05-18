@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started for Syncfusion Essential WindowsForms
+description: This section explains on how to add a ScrollersFrame in an application and some of the basic functionalities of it.
+platform: WindowsForms
+control: ScrollersFrame
+documentation: ug
+---
+
 # Getting started
 
 This section will explain to attach the ScrollersFrame to controls and its basic functionalities.
