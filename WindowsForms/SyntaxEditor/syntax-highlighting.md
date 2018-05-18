@@ -9,22 +9,11 @@ documentation: ug
 
 # Syntax Highlighting 
 
-Provides syntax highlighting for programming, scripting, and markup languages. Syntax highlighting greatly improves the readability of any text and has found its way into many commercial applications. It provides pre-defined configuration files for languages like SQL, Delphi or Pascal, HTML, VB.NET, XML, Java, VBScript, JScript and C#.
+Provides built-in syntax highlighting support for popular languages like SQL, Delphi or Pascal, HTML, VB.NET, XML, Java, VBScript, JScript, PowerShell and C#.
 
 ## Configure built in language
 
-EditControl provides built-in support for a procedural, markup, SQL languages and also facilitates the users to provide custom language configurations. These configuration settings are made available in the `EditControl.Configurator.KnownLanguages` collection. By using the `ApplyConfiguration` method, we can set the EditControl to use any of the pre-defined configuration settings.  The EditControl has a built-in syntax highlighting support for the following languages.
-
-  * CSharp
-  * Delphi
-  * XML
-  * HTML
-  * VB.NET
-  * SQL
-  * Java
-  * VBScript
-  * JScript
-  * PowerShell
+Syntax highlighting of built-in languages can be applied using property named KnownLanguages and function named ApplyConfiguration.   
 
 **CSharp** 
 
@@ -339,7 +328,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img11.png)
 
-**JScript** 
+**PowerShell** 
 
 {% tabs %}
 
@@ -372,9 +361,8 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img12.png)
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
+N> Refer to the following sample link that demonstrates the `SyntaxHighlighting` functionalities of EditControl.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
 
 ## Customize built in language settings
 
@@ -382,9 +370,9 @@ EditControl provides support to customize the built in language configuration se
 
 ### Initialize the configuration language.
 
-Syntax Highlighting is accomplished in Essential Edit through the use of XML-based configuration files. The language-specific configuration is stored in XML files. Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to true.
+In EditControl, languages need to be configured in XML file named Config.xml. 
 
-The following code example demonstrates the same.
+Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
 
 {% highlight xaml %}
 
@@ -408,7 +396,7 @@ The following code example demonstrates the same.
 
 ### Font Color
 
-Font color of any format in the specified language can be customized using `FontColor` property of Format tag. The following code snippet explains how to customize the font color of the Text format for the defined language. 
+Font color of any format in the specified language can be customized using `FontColor` property of Format tag. 
 
 {% highlight xaml %}
 
@@ -424,7 +412,7 @@ Font color of any format in the specified language can be customized using `Font
 
 ### Format 
 
-It contains a list of definitions of the formats that can be used later in lexem configuration. Every format is specified by a format tag. Every format contains the attributes such as name, font,foreground color, font color, back color, style, weight, underline and line color.
+It contains a list of definitions of the formats that can be used later in lexem configuration. Every format contains the attributes such as name, font,foreground color, font color, background color, style, weight, underline and line color.
 
 {% highlight xaml %}
 
@@ -437,7 +425,10 @@ It contains a list of definitions of the formats that can be used later in lexem
 
 ### lexem
 
-Lexem contains rules for parsing the text. Lexem contains various attributes such as BeginBlock, EndBlock, Type, FormatName etc., Type and FormatName attributes of lexems helps to specify the format of the lexem. `Type` is used for standard predefined types of the lexems. `FormatName` is used only when the type is Custom.
+Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of lexems helps to specify the format of the lexem. 
+
+* **Type** - Used for Standard predefined types of the lexems. 
+* **FormatName** - It is used only when the type is Custom.
 
 {% highlight xaml %}
 
@@ -478,13 +469,13 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-The above code example works only when `ShowOutliningCollapsers` property of EditControl is true.
+The above code example works only when `ShowOutliningCollapsers` property of EditControl is `true`.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img30.png)
 
 ### Keyword 
 
-Custom keywords can be added or existing keywords can be customized in built-in languages. Here the below code gives the example for creating a format named keyword and assigning a lexem as keyword.
+Custom keywords can be added or existing keywords can be customized in built-in languages. 
 
 {% highlight xaml %}
   <formats>
@@ -501,7 +492,7 @@ Custom keywords can be added or existing keywords can be customized in built-in 
 
 ### Operator
 
-Custom operators can be added or existing operators can be customized in built-in languages. The following code examples explains the same:
+Custom operators can be added or existing operators can be customized in built-in languages by using `Lexem` configuration. 
 
 {% highlight xaml %}
 
@@ -519,7 +510,9 @@ Custom operators can be added or existing operators can be customized in built-i
  
 ### Regex
 
-A regular expression is a pattern that could be matched against any input text. For example, if you like to customize the particular string that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as true based on the expression given in the lexem.
+A regular expression is a pattern that could be matched against any input text. 
+
+For example, if you like to customize the particular string that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as `true` based on the expression given in the lexem.
 
 {% highlight xaml %}
 
@@ -556,23 +549,28 @@ Error lexems can be added to the language by declaring a format names Error and 
 <lexem BeginBlock="#else" Type="Error" Priority="-10" />
 </lexems>
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
-
 {% endhighlight %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
 
 ### Splits
 
-Splits contain a list of expressions that must be treated as one word. “=” and “+” are splitters, by default. So, each of them are returned by the tokenizer as a single char. For example, when you want to specify a configuration for “+=” in the splits section.
-
-You can combine multiple keywords as a single keyword. To configure the splits, specify the required word in the split section.
-
-For example: `Class` and `public` are keywords in the EditControl. By using the Splits concept in the EditControl, you can ignore this keyword when it is preceded with a Dot. When .public is loaded in the EditControl, public is not highlighted as keyword. 
+Splits helps to configure two different words as a single. For example, consider # and region that can be treated as single word by using `Split` configuration.
 
 {% highlight xaml %}
 
+<formats>
+  <format name="KeyWord" Font="Courier New, 14pt" FontColor="Orange" />
+</formats>
+
+<lexems>
+   <lexem BeginBlock="#region" Type="KeyWord" />
+   <lexem BeginBlock="#endregion" Type="KeyWord" />
+</lexems>
+
 <splits>
-  <split>.public</split>
-  <split>.class</split>
+  <split>#region</split>
+  <split>#endregion</split>
 </splits>
 
 {% endhighlight %}
@@ -581,18 +579,20 @@ For example: `Class` and `public` are keywords in the EditControl. By using the 
 
 ### Auto replace triggers
 
-Auto Replace Trigger which helps in auto correctS the incorrect spelling of lexems, this can be customized using a `AutoReplaceTriggers` attribute, below code is an example for auto correctS int and the, if they misspelled as itn and teh respectively.
+`AutoReplaceTriggers` attribute helps to auto corrects the incorrect spelling of lexems.
+
+The following code demonstrates auto corrects int and the, if they misspelled as itn and teh respectively.
 
 {% highlight xaml %}
 
 <ConfigLanguage name="C#" TriggersActivators=".">
 
- <AutoReplaceTriggers>
+<AutoReplaceTriggers>
 
-			<AutoReplaceTrigger From="teh" To="the" />
-			<AutoReplaceTrigger From="itn" To="int" />
+   <AutoReplaceTrigger From="teh" To="the" />
+	 <AutoReplaceTrigger From="itn" To="int" />
 
- </AutoReplaceTriggers>
+</AutoReplaceTriggers>
 
  </ConfigLanguage>
 
@@ -604,7 +604,7 @@ N> To enable this feature, we must set the `TriggersActivators` property of Conf
 
 ### File extension
 
-Extensions contain a list of extensions that are associated with that particular language. The following code example demonstrates the CSharp language extension.
+Extensions contain a list of extensions that are associated with that particular language.
 
 {% highlight xaml %}
 <extensions>
@@ -649,9 +649,8 @@ Me.editControl1.ApplyConfiguration("C#")
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
+N> Refer to the following sample link that demonstrates how to customize the built-in language.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
 
 ## Custom language using XML
 
@@ -659,7 +658,9 @@ EditControl provides supports for custom language configuration. You can plug-in
 
 ### Initialize the configuration language.
 
-Syntax Highlighting is accomplished in Essential Edit through the use of XML-based configuration files. The language-specific configuration is stored in XML files. Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to true.
+In EditControl, languages need to be configured in XML file named Config.xml. 
+
+Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
 
 The following code example demonstrates the same.
 
@@ -685,7 +686,7 @@ The following code example demonstrates the same.
 
 ### Font Color
 
-Font color of any format in the specified language can be customized using `FontColor` property of Format tag. The following code snippet explains how to customize the font color of the Text format for the defined language. 
+Font color of any format in the specified language can be customized using `FontColor` property of Format tag. 
 
 {% highlight xaml %}
 
@@ -699,7 +700,7 @@ Font color of any format in the specified language can be customized using `Font
 
 ### Format 
 
-It contains a list of definitions of the formats that can be used later in lexem configuration. Every format is specified by a tag <format>. Every format contains the attributes such as name, font, fore color, font color, back color, style, weight, underline and line color.
+It contains a list of definitions of the formats that can be used later in lexem configuration. Every format is specified by a tag <format>.
 
 {% highlight xaml %}
 
@@ -713,7 +714,10 @@ It contains a list of definitions of the formats that can be used later in lexem
 
 ### Lexem
 
-Lexem contains rules for parsing the text. Lexem contains various attributes such as BeginBlock, EndBlock, Type, FormatName etc., Type and FormatName attributes of lexems helps to specify the format of the lexem. `Type` is used for standard predefined types of the lexems. `FormatName` is used only when the type is Custom.
+Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of lexems helps to specify the format of the lexem. 
+
+* **Type** - Used for Standard predefined types of the lexems. 
+* **FormatName** - It is used only when the type is Custom.
 
 {% highlight xaml %}
 
@@ -760,14 +764,14 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-The above code example works only when `ShowOutliningCollapsers` property of EditControl is true.
+The above code example works only when `ShowOutliningCollapsers` property of EditControl is `true`.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img39.png)
 
 
 ### Keyword 
 
-Custom keywords can be added or existing keywords can be customized in built-in languages. Here the below code gives the example for creating a format named keyword and assigning a lexem as keyword.
+Custom keywords can be added or existing keywords can be customized in built-in languages by using `Lexem` configuration. 
 
 {% highlight xaml %}
   <formats>
@@ -784,7 +788,7 @@ Custom keywords can be added or existing keywords can be customized in built-in 
 
 ### Operator
 
-Custom operators can be added or existing operators can be customized in built-in languages. The following code examples explains the same:
+Custom operators can be added or existing operators can be customized in built-in languages. 
 
 {% highlight xaml %}
 
@@ -825,7 +829,7 @@ A regular expression is a pattern that could be matched against any input text. 
 
 #### Error words highlighting
 
-Error lexems can be added to the language by declaring a format names Error and it can be highlighted using underlines. Below code is an example of declaring "#endregion" as error if #region is not BeginBlock, priority values assigned to order the interrupt.
+Error lexems can be added to the language by declaring a format names Error and it can be highlighted using underlines.
 
 {% highlight xaml %}
 
@@ -845,17 +849,20 @@ Error lexems can be added to the language by declaring a format names Error and 
 
 ### Splits
 
-Splits contain a list of expressions that must be treated as one word. “=” and “+” are splitters, by default. So, each of them are returned by the tokenizer as a single char. For example, when you want to specify a configuration for “+=”, you should specify “+=” in the splits section.
-
-You can combine multiple keywords as a single keyword. To configure the splits, specify the required word in the split section.
-
-For example: `int` and `using` are keywords in the EditControl. By using the Splits concept in the EditControl, you can ignore this keyword when it is preceded with a Dot. When .public is loaded in the EditControl, public is not highlighted as keyword. 
+Splits helps to configure two different words as a single. For example, consider # and include that can be treated as single word by using `Split` configuration.
 
 {% highlight xaml %}
 
+<formats>
+  <format name="KeyWord" Font="Courier New, 14pt" FontColor="Orange" />
+</formats>
+
+<lexems>
+   <lexem BeginBlock="#include" Type="KeyWord" />
+</lexems>
+
 <splits>
-  <split>.int</split>
-  <split>.using</split>
+  <split>#include</split>
 </splits>
 
 {% endhighlight %}
@@ -864,7 +871,9 @@ For example: `int` and `using` are keywords in the EditControl. By using the Spl
 
 ### Auto replace triggers
 
-Auto Replace Trigger which helps in auto correctS the incorrect spelling of lexems, this can be customized using a `AutoReplaceTriggers` attribute, below code is an example for auto correctS int and the, if they misspelled as itn and teh respectively.
+`AutoReplaceTriggers` attribute helps to auto corrects the incorrect spelling of lexems.
+
+The following code demonstrates auto corrects int and the, if they misspelled as itn and teh respectively.
 
 {% highlight xaml %}
 
@@ -883,11 +892,12 @@ Auto Replace Trigger which helps in auto correctS the incorrect spelling of lexe
 
 N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute.
 
-## Multiple language configuration
+### Multiple language configuration
 
-EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration. Below code is an example for configure HTML with embedded JScript.
+EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration.
 
-{% highlight C# %}
+{% highlight xaml %}
+
  <ConfigLanguage name="HTML (Light)" CaseInsensitive="true" Known="HTML" StartComment="&lt;!--" EndComment="--&gt;">
   <formats>
    <format name="Text" Font="Courier New, 10pt" FontColor="Black" />
@@ -900,6 +910,7 @@ EditControl supports multiple language configuration, which helps to configure o
   <lexem BeginBlock="escape" Type="KeyWord" />
   <lexem BeginBlock="script" EndBlock="(&gt;)|(/&gt;)" IsEndRegex="true" IsPseudoEnd="true" IsComplex="true" Type="Custom" FormatName="TagName">
 </ConfigLanguage>
+
 {% endhighlight %}
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
@@ -907,7 +918,7 @@ EditControl supports multiple language configuration, which helps to configure o
 
 ### File extension
 
- Extensions contain a list of extensions that are associated with that particular language. The following code example demonstrates the CSharp language extension.
+Extensions contain a list of extensions that are associated with that particular language.
 
 {% highlight xaml %}
 
@@ -952,9 +963,8 @@ Me.editControl1.ApplyConfiguration("C++")
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Custom Config
+N> Refer to the following sample link that demonstrates the Custom language configuration in EditControl.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Custom Config
 
 ## Configure custom language using code
 
@@ -988,6 +998,33 @@ Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 {% endhighlight %}
 
 {% endtabs %}
+
+### Font configuration
+
+Font color of newly created format in the specified language can be customized using `FontColor` property of Format tag. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+ formatMethod.Font = new Font("Garamond", 17);
+
+ formatMethod.FontColor = Color.Red;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+formatMethod.Font = new Font("Garamond", 17)
+
+ formatMethod.FontColor = Color.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
 
 ### Format configuration
 
@@ -1026,38 +1063,9 @@ formatMethod.BackColor = Color.Yellow
 
 {% endtabs %}
 
-### Font configuration
-
-Font color of newly created format in the specified language can be customized using `FontColor` property of Format tag. The following code snippet explains how to customize the font color of the Text format for the defined language. 
-
-{% tabs %}
-
-{% highlight C# %}
-
- formatMethod.Font = new Font("Garamond", 17);
-
- formatMethod.FontColor = Color.Red;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-formatMethod.Font = new Font("Garamond", 17)
-
- formatMethod.FontColor = Color.Red
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
-
 ### Lexem configuration
 
 Lexems for the custom language can be added by creating a lexem object using `ConfigLexem` class and its attributes can be declared using built-in properties such as `IsBeginRegex`, `IsEndRegex`, `FormatName` etc.
-
-Below code is an example for creating a lexem and adding it to language of EditControl.
 
 {% tabs %}
 
@@ -1074,7 +1082,7 @@ this.editControl1.Language.Lexems.Add(stuff);
 
 {% highlight VB %}
 
-Dim stuff As ConfigLexem  = new ConfigLexem("stuff", "", FormatType.Custom, false)
+Dim stuff As ConfigLexem  = new ConfigLexem("stuff", "", FormatType.Custom, False)
 
 stuff.FormatName = "CodeBehind"
 
@@ -1086,7 +1094,7 @@ Me.editControl1.Language.Lexems.Add(stuff)
 
 ### Keywords configuration
 
-Creating keywords for custom language can be achieved by adding a format named `keyword` and declare a lexem in format as keyword using `FormatName` property. Keyword format can be configurable by the built-in customization properties such as Font, FontColor etc. Below code is an example for define lexem "Class" as a keyword.
+Creating keywords for custom language can be achieved by adding a format named `keyword` and declare a lexem in format as keyword using `FormatName` property. 
 
 {% tabs %}
 
@@ -1127,19 +1135,19 @@ keyword.FontColor = Color.Blue
 
 keyword.Font = new Font("Garamond", 12)
 
-Dim car As ConfigLexem  = new ConfigLexem("car", "",FormatType.Custom,false)
+Dim car As ConfigLexem  = new ConfigLexem("car", "",FormatType.Custom, False)
 
 car.FormatName = "keyword"
 
 Me.editControl1.Language.Lexems.Add(car)
 
-Dim cdr As ConfigLexem  = new ConfigLexem("cdr", "",FormatType.Custom,false)
+Dim cdr As ConfigLexem  = new ConfigLexem("cdr", "",FormatType.Custom, False)
 
 cdr.FormatName = "keyword"
 
 Me.editControl1.Language.Lexems.Add(cdr)
 
-Dim cons As ConfigLexem  = new ConfigLexem("cons", "",FormatType.Custom,false)
+Dim cons As ConfigLexem  = new ConfigLexem("cons", "",FormatType.Custom, False)
 
 cons.FormatName = "keyword"
 
@@ -1153,7 +1161,7 @@ Me.editControl1.Language.Lexems.Add(cons)
 
 ### Operators configuration
 
-Creating operators for custom language is similar to that of keyword. Below code is an example for creating a new format object named Operators is created using ISnippetFormat Interface, as lexems "#" and "(" created with ConfigLexem class with formatName as Operators.
+Creating operators for custom language is similar to that of keyword, a new format object named Operators is created using `ISnippetFormat` Interface.
 
 {% tabs %}
 
@@ -1186,23 +1194,23 @@ this.editControl1.Language.Lexems.Add(Symbol);
 
 {% highlight VB %}
 
-Dim Operators As ISnippetFormat  = this.editControl1.Language.Add("Operators");
+Dim Operators As ISnippetFormat  = this.editControl1.Language.Add("Operators")
 
 Operators.FontColor = Color.Red
 
-Dim open As ConfigLexem  = new ConfigLexem("(","",FormatType.Custom,false)
+Dim open As ConfigLexem  = new ConfigLexem("(","",FormatType.Custom, False)
 
 open.FormatName = "Operators"
 
 Me.editControl1.Language.Lexems.Add(open)
 
-Dim close As ConfigLexem  = new ConfigLexem(")", "", FormatType.Custom, false)
+Dim close As ConfigLexem  = new ConfigLexem(")", "", FormatType.Custom, False)
 
 close.FormatName = "Operators"
 
 Me.editControl1.Language.Lexems.Add(close)
 
-Dim Symbol As ConfigLexem  = new ConfigLexem("$", "", FormatType.Custom, false)
+Dim Symbol As ConfigLexem  = new ConfigLexem("$", "", FormatType.Custom, False)
 
 Symbol.FormatName = "Operators"
 
@@ -1214,7 +1222,11 @@ Me.editControl1.Language.Lexems.Add(Symbol)
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img20.png)
 
-### Color configuration
+### Regex configuration
+
+A regular expression is a pattern that could be matched against any input text. 
+
+#### Color configuration
 
 Color configuration for custom formats can be defined using built-in color properties such as FontColor, BackColor, ForeColor, LineColor and BorderColor.
 
@@ -1292,7 +1304,7 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
  Error.LineColor = Color.Red
 
- Dim err As ConfigLexem = new ConfigLexem("pubblic", "", FormatType.Custom, false)
+ Dim err As ConfigLexem = new ConfigLexem("pubblic", "", FormatType.Custom, False)
 
  misspell.FormatName = "Error"
 
@@ -1302,23 +1314,34 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
 {% endtabs %}
 
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img18.png)
+
 ### Splits configuration
 
-Splits contain a list of expressions that must be treated as one word. “=” and “+” are splitters, by default. So, each of them are returned by the tokenizer as a single char. For example, when you want to specify a configuration for “+=”, you should specify “+=” in the splits section.
-
-You can combine multiple keywords as a single keyword. To configure the splits, specify the required word in the split section.
-
-For example: `car` is Keyword in the EditControl. By using the Splits concept in the EditControl, you can ignore this Keyword when it is preceded with a Dot. When .car is loaded in the EditControl, car is not highlighted as keyword. 
+Splits helps to configure two different words as a single. For example, consider # and region that can be treated as single word by using `Split` configuration.
 
 {% tabs %}
 
 {% highlight C# %}
 
+ISnippetFormat keyword = this.editControl1.Language.Add("keyword");
+
+keyword.FontColor = Color.Orange;
+
+keyword.Font = new Font("Garamond", 14);
+
+
+ConfigLexem region = new ConfigLexem("#region", "", FormatType.Custom, false);
+
+region.FormatName = "keyword";
+
+this.editControl1.Language.Lexems.Add(region);
+
 // Adding the necessary split definitions to the current language's Splits collection.
 
 Split split = new Split();
 
-split.Text = "car";
+split.Text = "#region";
 
 this.editControl1.Language.Splits.Add(split);
 
@@ -1327,11 +1350,24 @@ this.editControl1.Language.Splits.Add(split);
 
 {% highlight VB %}
 
+Dim keyword As ISnippetFormat = Me.editControl1.Language.Add("keyword")
+
+keyword.FontColor = Color.Orange
+
+keyword.Font = new Font("Garamond", 14)
+
+
+Dim region As ConfigLexem  = new ConfigLexem("#region", "",FormatType.Custom, False)
+
+region.FormatName = "keyword"
+
+Me.editControl1.Language.Lexems.Add(region)
+
 ' Adding the necessary split definitions to the current language's Splits collection.
 
-Dim split As  Split  = new Split();
+Dim split As  Split  = new Split()
 
-split.Text = "car";
+split.Text = "#region"
 
 Me.editControl1.Language.Splits.Add(split)
 
@@ -1341,7 +1377,9 @@ Me.editControl1.Language.Splits.Add(split)
 
 ### Auto replace triggers
 
-Auto Replace Trigger can be added to custom language, create a AutoReplaceTrigger object using AutoReplaceTrigger class, where those "from" and "to" can be passed while initializing. Below code is an example for replace "the" if it is misspelled as "teh" in AutoReplaceTrigger.  
+Auto Replace Trigger can be added to custom language, create a AutoReplaceTrigger object using `AutoReplaceTrigger` class, where those "from" and "to" can be passed while initializing. 
+
+Below code is an example for replace "the" if it is misspelled as "teh" in AutoReplaceTrigger.  
 
 {% tabs %}
 
@@ -1356,7 +1394,7 @@ Auto Replace Trigger can be added to custom language, create a AutoReplaceTrigge
 
 {% highlight VB %}
 
- Dim trigger1 As AutoReplaceTrigger = new AutoReplaceTrigger("teh","the");
+ Dim trigger1 As AutoReplaceTrigger = new AutoReplaceTrigger("teh","the")
 
  Me.editControl1.Language.AutoReplaceTriggers.Add(trigger1)
 
@@ -1364,9 +1402,9 @@ Auto Replace Trigger can be added to custom language, create a AutoReplaceTrigge
 
 {% endtabs %}
 
-## File extension
+### File extension
 
-File extension associated with the custom language can be added with the help of Extensions.Add method in the language as given below.
+File extension associated with the custom language can be added with the help of `Extensions.Add` method in the language as given below.
 
 {% tabs %}
 

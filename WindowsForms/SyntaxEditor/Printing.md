@@ -9,26 +9,7 @@ documentation: ug
 
 # Printing
 
-EditControl provides complete support for printing its contents either by using the Print option from the print preview or programmatically. The print preview window lets users choose to print an entire document or the current page, and specify the number of copies to print.
-
-In brief, the printing functionality of the EditControl supports the following features.
-
-* Print Preview
-* Custom Header and Footer Text
-* Document Name
-* Page Numbers
-* Color Printing to preserve Syntax Highlighting
-* Selected Text Printing
-* Line Numbers
-* Printing a Specific Page or Set of Pages
-* Printing Entire Document
-* Creating a Printer Document
-* Current Page Printing
-* Printer Dialog
-
-## Print preview and printing contents
-
-You can invoke the Print dialog box by using the `Print` method of the EditControl, as shown in the below code snippet.
+support to print the data displayed in the EditControl using `Print` method. It also provides support to display print preview window by calling `PrintPreview` method.
 
 {% tabs %}
 
@@ -52,6 +33,23 @@ Me.editControl1.Print()
 {% endtabs %}
 
 ![](Printing_images/Printing_img1.jpeg)
+
+In brief, the printing functionality of the EditControl supports the following features.
+
+* Print Preview
+* Custom Header and Footer Text
+* Document Name
+* Page Numbers
+* Color Printing to preserve Syntax Highlighting
+* Selected Text Printing
+* Line Numbers
+* Printing a Specific Page or Set of Pages
+* Printing Entire Document
+* Creating a Printer Document
+* Current Page Printing
+* Printer Dialog
+
+## Print Preview
 
 Use the `PrintPreview` method to view the contents of the EditControl before they are printed.
 
@@ -78,9 +76,9 @@ Me.editControl1.PrintPreview()
 
 ![](Printing_images/Printing_img2.jpeg)
 
-**Specifying printing options**
+## Specifying printing options
 
-EditControl provides various printing option as like Visual Studio Code Editor. By using the `PrintCurrentPage` method, we can print the current page in the EditControl. The following methods allow you to specify the options for printing.
+EditControl provides various printing option as like Visual Studio Code Editor. By using the `PrintCurrentPage` method, we can print the current page in the EditControl.
 
 <table>
 <tr>
@@ -150,32 +148,13 @@ Me.editControl1.PrintSelection()
 
 {% endtabs %}
 
-## Customize printing options
+## Setting Header and Footer
 
-Header and Footer can be enabled while printing the document by using the `PageHeaderAndFooterVisible` property. Its default value is `true`, to hide the header and footer while printing turn on its value to `false`. `PrintDocumentName` and `PrintPageNumber` property is used to enable or disable the name of the document and page number while printing.
+ Provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This functionalities can be enabled or disabled by setting `PageHeaderAndFooterVisible` property. 
 
-The following properties are used to print the contents of the editor, the document name as the header, and the page number as footer.
+### Printing Document name and Page number
 
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-PrintDocument</td><td>
-Helps to print the contents of the editor</td></tr>
-<tr>
-<td>
-PrintDocumentName</td><td>
-Specifies a value indicating whether the document name should be printed</td></tr>
-<tr>
-<td>
-PrintPageNumber</td><td>
-Specifies a value indicating whether the page number should be printed</td></tr>
-</table>
-
-Users can also specify their desired text in the header and footer by handling the `PrintHeader` and `PrintFooter` events. The default text in the header and footer is the fully qualified path of the file including the file name and page number respectively.
+EditControl allows you to specify the desired text in the header and footer by handling the `PrintHeader` and `PrintFooter` events. The default text in the header and footer is the fully qualified path of the file including the file name and page number respectively. `PrintDocumentName` and `PrintPageNumber` property is used to enable or disable the name of the document and page number while printing.
 
 <table>
 <tr>
@@ -245,6 +224,8 @@ The following image shows a typical page with a header and footer in Print Previ
 
 ![](Printing_images/Printing_img3.jpeg)
 
+### Show / Hide page border
+
 PageBorder can also be shown or removed while printing the document. `SetPageBorder` method is used to display page borders for the EditControl. And also we can remove the page borders by using `RemovePageBorder` of EditControl.
 
 <table>
@@ -291,6 +272,5 @@ Me.editControl1.RemovePageBorder()
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Printing
+N> Refer to the following sample link that demonstrates the `Printing` functionalities in EditControl.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Printing

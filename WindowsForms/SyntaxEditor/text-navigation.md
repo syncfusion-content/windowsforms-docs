@@ -321,9 +321,8 @@ Me.WriteLine(this.editControl1.CurrentLine)
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Navigation\Text Navigation
+N> Refer to the following sample link that demonstrates the text navigation functionalities in EditControl.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Navigation\Text Navigation
 
 ## Scrolling
 
@@ -383,7 +382,7 @@ Me.editControl1.AlwaysShowScrollers = True
 
 {% endtabs %}
 
-EditControl supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple EditControls.
+Supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple EditControls.
 
 ![](Text-Navigation_images/Text-Navigation_img2.jpg)
 

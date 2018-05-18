@@ -9,12 +9,11 @@ documentation: ug
 
 # Text Visualization
 
-The various text visualization features of Edit control is elaborated under the following topics:
+The various text visualization features of EditControl is elaborated under the following topics:
 
 ## Outlining
 
-Essential provides support to collapse each block into a single line. The syntax editor can automatically choose where to create outlines for built-in languages. Users can also choose to create outlining for their own syntax highlighting.
-
+Sections of code which form the outlining blocks can be specified using the Configuration Settings. EditControl defines different brackets for highlighting different languages.
 
 ### Configure outline
 
@@ -103,7 +102,7 @@ Me.editControl1.ToggleLineCollapsing()
 
 ### Programmatically expand / collapse outline state 
 
-Essential Edit provides Visual Studio-like support for collapsing and expanding blocks of code can be done programmatically.
+Provides Visual Studio-like support for collapsing and expanding blocks of code can be done programmatically.
 
 <table>
 <tr>
@@ -308,11 +307,11 @@ End Sub
 
 ## Word wrap
 
-`WordWrap` allows users to view the entire contents of a line, by wrapping text at the edge of the control (or text area) into one or more lines, that normally would have been outside the view in the EditControl. EditControl allows advanced customization by using the WordWrap functionality. WordWrap functionality in EditControl can be enabled or disabled by using `WordWrap` property. Its default value is `false`, to enable the wrapping functionality in EditControl turn on its value to `true`.
+Supports text wrapping to next line, when it exceeds the control bounds. WordWrap functionality in EditControl can be enabled or disabled by using `WordWrap` property. Its default value is `false`, to enable the wrapping functionality in EditControl turn on its value to `true`.
 
 ### Word wrap by bounds
 
-EditControl provide extensive support for different modes of wrapping. The following are the types of wrapping modes which was available in EditControl:
+Provide extensive support for different modes of wrapping. The following are the types of wrapping modes which was available in EditControl:
 
 * Control
 * SpecifiedColumn
@@ -610,13 +609,12 @@ Me.editControl1.MarkWrappedLines = True
 
 ![](Text-Visualization_images/Text-Visualization_img4.jpeg)
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Word Wrap
+N> Refer to the following sample link that demonstrates the `WordWrap` functionalities in EditControl.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Word Wrap
 
 ## Line number
 
- Displays the line number at the start of a line. Line numbers can be automatically assigned to the contents of the EditControl by enabling the `ShowLineNumbers` property. Its default value is `true`. The number of lines in the EditControl can be obtained by using the `PhysicalLineCount` property.
+Displays the line number at the start of a line. Line numbers can be automatically assigned to the contents of the EditControl by enabling the `ShowLineNumbers` property. Its default value is `true`. The number of lines in the EditControl can be obtained by using the `PhysicalLineCount` property.
 
 <table>
 <tr>
@@ -664,7 +662,7 @@ Dim actualLineCount As Integer = Me.editControl1.PhysicalLineCount
 
 ### Customize line number appearance
 
-In EditControl, we can customize the foreground, background and font of line number. The following topic explains the same:
+Provides options to customize the foreground, background and font of line number. 
 
 <table>
 <tr>
@@ -1039,7 +1037,7 @@ Me.editControl1.SetUnderline(this.editControl1.CurrentLine, this.editControl1.Cu
 
 ### Remove applied underline
 
-And also we can remove the underlining which had been set by using the `RemoveUnderline` method of EditControl.
+We can remove the underlining which had been set by using the `RemoveUnderline` method of EditControl.
 
 {% tabs %}
 
@@ -1078,7 +1076,7 @@ LineColor, Weight and Underline parameters are used to specify the type of under
 
 ### Strike out
 
-The `StrikeThrough` method allows you to perform strikethrough operation on the text contained in the EditControl. This is a very useful feature in denoting text that was deleted from the original document or highlighting offending code. You can also specify any custom color for the strikethrough line.
+`StrikeThrough` method allows you to perform strikethrough operation on the text contained in the EditControl. This is a very useful feature in denoting text that was deleted from the original document or highlighting offending code. You can also specify any custom color for the strikethrough line.
 
 {% tabs %}
 
@@ -1439,13 +1437,12 @@ Dim bookmark As IBookmark = Me.EditControl1.BookmarkGet(Me.EditControl1.CurrentL
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
+N> Refer to the following sample link that demonstrates the bookmark functionalities in EditControl.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
 
 ## Content dividers
 
-EditControl supports content dividers similar to Visual Basic, that clearly distinguish content sections with line dividers, to improve code readability. Content Dividers can be enabled or disabled using `ShowContentDividers` property of EditControl. Its default value is `true`.
+Supports content dividers similar to Visual Studio code editor, that clearly distinguish content sections with line dividers, to improve code readability. Content Dividers can be enabled or disabled using `ShowContentDividers` property of EditControl. Its default value is `true`.
 
 ![](Text-Visualization_images/Text-Visualization_img11.png)
 
@@ -1477,9 +1474,8 @@ This feature can be enabled for sections of the EditControl contents, by setting
 
 {% endhighlight %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Interactive operations
+N> Refer to the following sample link that demonstrates the Content dividers functionalities in EditControl.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Interactive operations
 
 ## Column Guides
 

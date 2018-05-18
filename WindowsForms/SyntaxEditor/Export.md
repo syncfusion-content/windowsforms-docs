@@ -9,11 +9,11 @@ documentation: ug
 
 # Export
 
-EditControl has the ability to export its content with associated syntax highlighting information to XML, HTML, and RTF file formats. The following topics elaborates on the exporting feature of Essential Edit:
+EditControl has the ability to export its content with associated syntax highlighting information to XML, HTML, and RTF file formats.
 
 ## Export as XML file
 
-EditControl provides support to export the contents and its associated syntax highlighting information into XML format and save it into desired file by using the following method.
+Supports to export the contents along with syntax highlighting appearance into `XML` format.
 
 <table>
 <tr>
@@ -91,7 +91,7 @@ Me.editControl1.GetTextAsXML(coordinatePoint1, coordinatePoint2)
 
 ## Export as HTML file
 
-EditControl provides support to export the contents and its associated syntax highlighting information into HTML format and save it into desired file by using the following methods.
+Supports to export the contents along with syntax highlighting appearance into `HTML` format.
 
 <table>
 <tr>
@@ -169,7 +169,7 @@ Me.editControl1.GetTextAsHTML(coordinatePoint1, coordinatePoint2)
 
 ## Export as RTF file
 
-You can export the EditControl contents and its associated syntax highlighting information into RTF format and save it into desired file by using the following methods.
+Supports to export the contents along with syntax highlighting appearance into RTF format.
 
 <table>
 <tr>
@@ -245,13 +245,12 @@ Me.editControl1.GetTextAsRTF(coordinatePoint1, coordinatePoint2)
 
 {% endtabs %}
 
-A sample which demonstrates the above features is available in the below sample installation path.
-
-Installation Location\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Export
+N> Refer to the following sample link that demonstrates the `Export` functionalities.
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Export
 
 ## Bitmap Generation
 
-EditControl has the ability to generate a bitmap image of itself. The bitmap image looks exactly like an actual snapshot of a live instance of EditControl. This is achieved through the use of the CreateBitmap method.
+Support to save EditControl as image. This is achieved through the use of the `CreateBitmap` method.
 
 {% tabs %}
 

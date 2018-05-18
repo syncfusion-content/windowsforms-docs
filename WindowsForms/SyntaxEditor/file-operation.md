@@ -9,11 +9,11 @@ documentation: ug
 
 # File Operation
 
-EditControl provides extensive support to perform file operations like create new, open or save files.
+Supports all file operations like create new, open or save files.
 
 ## Load file
 
-The `LoadFile` method loads the content of any desired file into the EditControl.
+`LoadFile` method loads the content of any desired file into the EditControl.
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ Me.editControl1.LoadFile("Temp.txt", Encoding.ASCII)
 
 ### Retrieve loaded file path
 
-The name of the stream that is currently loaded in the Edit Control can be get or set by using the FileOpened property.
+The name of the stream that is currently loaded in the Edit Control can be get or set by using the `FileOpened` property.
 
 {% tabs %}
 
@@ -269,7 +269,7 @@ Console.WriteLine(Me.editControl1.IsModified)
 
 ## Create file
 
-The `New` and `NewFile` methods are used to create a new stream or file and optionally allows you to set the language to be used by specifying the appropriate configuration settings.
+`New` and `NewFile` methods are used to create a new stream or file and optionally allows you to set the language to be used by specifying the appropriate configuration settings.
 
 <table>
 <tr>
@@ -654,7 +654,7 @@ Me.editControl1.InsertFile(@"..\\..\\Form2.cs")
 
 ## Close file
 
-This method closes the currently open file or stream and displays the EditControl in the read-only mode, until a new file or stream is opened.
+`Close` method helps to closes the currently open file or stream and displays the EditControl in the read-only mode, until a new file or stream is opened.
 
 <table>
 <tr>
