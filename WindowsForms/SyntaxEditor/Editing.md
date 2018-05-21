@@ -9,7 +9,20 @@ documentation: ug
 
 # Editing
 
-EditControl allows the end users to modify, edit text documents and source code files. This includes clipboard support, Unlimited undo and redo, binding shortcut keys to command and much more.
+EditControl allows the end users to modify, edit text documents and source code files. Some of the important features include:
+
+* Clipboard operations perform cut, copy and paste operation.
+* Undo and redo with grouping actions.
+* Selection modes. 
+* Provides Fully functional Context menu. 
+* Indent/ outdent functionality.
+* Changes tracking.
+* Provides extensive styling support for new line.
+* Comment out lines.
+* Space indicator.
+* Provides complete Unicode support.
+
+The following section explains the above listed feature in elaborate:
 
 ## Clipboard operations
 
@@ -43,12 +56,12 @@ CTRL+X, SHIFT+DEL</td></tr>
 
 ### Programmatic clipboard options
 
-Provides extensive support to cut, copy or paste the text data programmatically. The following methods in the EditControl facilitates these clipboard operations.
+Provides extensive support to cut, copy or paste the text data programmatically. The following functions in EditControl facilitates these clipboard operations.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -77,7 +90,7 @@ Indicates whether it is possible to perform copy, cut, and paste operations in E
 <tr>
 <td>
 ClearClipboard</td><td>
-Clears all contents in the clipboard associated with Essential Edit. This is generally used immediately after the application loads, to clear any junk from previous clipboard operations</td></tr>
+Clears all contents in the clipboard associated with EditControl. This is generally used immediately after the application loads, to clear any junk from previous clipboard operations</td></tr>
 </table>
 
 {% tabs %}
@@ -108,7 +121,7 @@ bool canCut = this.editControl1.CanCut;
 
 bool canPaste = this.editControl1.CanPaste;
 
-// Clears all contents in the clipboard associated with Essential Edit.
+// Clears all contents in the clipboard associated with EditControl.
 
 this.editControl1.ClearClipboard();
 
@@ -141,7 +154,7 @@ Dim canCut as bool = Me.editControl1.CanCut
 
 Dim canPaste as bool = Me.editControl1.CanPaste
 
-' Clears all contents in the clipboard associated with Essential Edit.
+' Clears all contents in the clipboard associated with EditControl.
 
 Me.editControl1.ClearClipboard()
 
@@ -251,7 +264,7 @@ Dim canRedo as bool = Me.editControl1.CanRedo
 
 ### Grouping actions
 
-Grouping actions allows you to specify a set of actions as groups for Undo or Redo purposes. When an action group is created, and a set of actions is added to it, the entire set is considered as one entity. This implies that the set of actions can be performed or undone using the `Redo` or `Undo` method call. You can use the UndoGroupOpen, UndoGroupClose and UndoGroupCancel methods to programmatically manipulate the undo or redo action grouping. Grouping is enabled using the `GroupUndo` property of EditControl. It Specifies whether grouping should be enabled or disabled for undo/redo actions.
+Grouping actions allows you to specify a set of actions as groups for Undo or Redo purposes. When an action group is created, and a set of actions is added to it, the entire set is considered as one entity. This implies that the set of actions can be performed or undone using the `Redo` or `Undo` functions call. You can use the UndoGroupOpen, UndoGroupClose and UndoGroupCancel functions to programmatically manipulate the undo or redo action grouping. Grouping is enabled using the `GroupUndo` property of EditControl. It Specifies whether grouping should be enabled or disabled for undo/redo actions.
 
 <table>
 <tr>
@@ -267,7 +280,7 @@ Specifies whether grouping should be enabled for undo/redo actions</td></tr>
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -295,7 +308,7 @@ Helps to close the action group.</td></tr>
 
 this.editControl1.GroupUndo = true;
 
-// Invoke the UndoGroupOpen method to begin a new action group.
+// Invoke the UndoGroupOpen function to begin a new action group.
 
 this.editControl1.UndoGroupOpen();
 
@@ -307,7 +320,7 @@ this.editControl1.Undo();
 
 this.editControl1.Redo();
 
-// Invoke the UndoGroupClose method to close the action group
+// Invoke the UndoGroupClose function to close the action group
 
 this.editControl1.UndoGroupClose();
 
@@ -320,7 +333,7 @@ this.editControl1.UndoGroupClose();
 
 Me.editControl1.GroupUndo = True
 
-' Invoke the UndoGroupOpen method to begin a new action group.
+' Invoke the UndoGroupOpen function to begin a new action group.
 
 Me.editControl1.UndoGroupOpen()
 
@@ -332,7 +345,7 @@ Me.editControl1.Undo()
 
 Me.editControl1.Redo()
 
-' Invoke the UndoGroupClose method to close the action group
+' Invoke the UndoGroupClose function to close the action group
 
 Me.editControl1.UndoGroupClose()
 
@@ -342,12 +355,12 @@ Me.editControl1.UndoGroupClose()
 
 ### Reset undo redo buffer
 
-`ResetUndoInfo` method of EditControl is used to reset the undo and redo operation.
+`ResetUndoInfo` function in EditControl helps to reset the undo and redo operation.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -380,7 +393,7 @@ Me.editControl1.ResetUndoInfo()
 
 ### Discard undo redo buffer
 
-We can discard an already open action group, by invoking `UndoGroupCancel` method of EditControl.
+We can discard an already open action group, by invoking `UndoGroupCancel` function in EditControl.
 
 {% tabs %}
    
@@ -408,7 +421,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\\
 
 ## Selection modes 
 
-EditControl supports normal selection and rectangular block selection to select lines from specific columns like Visual Studio code editor.
+EditControl supports normal selection and rectangular block selection allows the user to select the rectangular portion of text instead of the whole lines like Visual Studio code editor.
 
 ### Default  
 
@@ -439,7 +452,7 @@ Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Def
 
 ### Programmatic selection
 
-`SelectAll`, `SetSelectionStart` and `SetSelectionEnd` method helps to select the text in EditControl programmatically.
+`SelectAll`, `SetSelectionStart` and `SetSelectionEnd` function helps to select the text in EditControl programmatically.
 
 The following code snippet demonstrates how to select all the text in EditControl.
 
@@ -501,7 +514,7 @@ EditControl offers support for text manipulation operations like append, delete 
 
 ### Total number of lines
 
-`PhysicalLineCount` property helps to find the total number of lines in EditControl.
+`PhysicalLineCount` property helps to find the total number of lines which was loaded in EditControl.
 
 {% tabs %}
 
@@ -522,7 +535,7 @@ Console.WriteLine(Me.editControl1.PhysicalLineCount)
 
 ### Visible number of lines 
 
-`VisibleLineCount` property.helps to find the visible number of lines in EditControl. 
+`VisibleLineCount` property helps to find the visible number of lines in EditControl, it excludes the lines contained in the collapsed block region. 
 
 {% tabs %}
 
@@ -543,12 +556,12 @@ Console.WriteLine(Me.editControl1.VisibleLineCount)
 
 ### Append text
 
-Text can be appended to the EditControl by using the following method.
+Text can be appended to the EditControl by using the following function.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -579,12 +592,12 @@ Me.editControl1.AppendText(" text to be appended ")
 
 ### Insert text
 
-Insert mode can be enabled in the EditControl by setting the `InsertMode` property. Its default value is `true`. Text can be inserted anywhere inside the EditControl by using the `InsertText` method as follows. The mode of the INSERT key can also be toggled by using the ToggleInsertMode method of the EditControl.
+Insert mode can be enabled in the EditControl by setting the `InsertMode` property. Its default value is `true`. Text can be inserted anywhere inside the EditControl by using the `InsertText` function as follows. The mode of the INSERT key can also be toggled by using the ToggleInsertMode function in EditControl.
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -735,12 +748,12 @@ Me.editControl1.ShowFileDropNotification = False
 
 ### Delete text
 
-Text can be deleted in the EditControl by using the below given methods.
+Text can be deleted in EditControl by using the below given functions.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -859,12 +872,12 @@ Me.editControl1.TabSize = n
 
 {% endtabs %}
 
-The following methods are used to indent and outdent text in the EditControl.
+The following functions are used to indent and outdent text in the EditControl.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -932,7 +945,7 @@ Me.editControl1.OutdentSelection()
 
 ### Default indentation
 
-Indentation guidelines are vertical lines that is used to connect the matching brackets. This feature can be enabled or disabled  by setting the `ShowIndentationGuidelines` property. Its default value is `true`, to hide the indentation guidelines in EditControl turned off it value to `false`. Also, the indent guideline for the current region can be set by using the `ShowIndentGuideline` method.
+Indentation guidelines are vertical lines that is used to connect the matching brackets. This feature can be enabled or disabled  by setting the `ShowIndentationGuidelines` property. Its default value is `true`, to hide the indentation guidelines in EditControl turned off it value to `false`. Also, the indent guideline for the current region can be set by using the `ShowIndentGuideline` function.
 
 {% tabs %}
 
@@ -973,12 +986,12 @@ Me.editControl1.ShowIndentGuideline()
 
 **Positioning**
 
-It is also possible to position the caret to the beginning or end of the indentation block by using the `JumpToIndentBlockStart` and `JumpToIndentBlockEnd` methods respectively.
+Provides support to position the caret to the beginning or end of the indentation block by using the `JumpToIndentBlockStart` and `JumpToIndentBlockEnd` functions respectively.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1437,7 +1450,7 @@ End Sub
 
 ## Accept tab 
 
-Supports text operations with tabs Keys. Essential Edit controls the insertion of tabs using the `UseTabs` property, which lets you specify whether a tab (or an equivalent number of spaces) needs to be inserted, when the TAB key is pressed in the EditControl. Similarly, tab stops can also be inserted. 
+Provides support to insert the `TAB` character in EditControl instead of moving the focus to the next control in the tab order while pressing TAB key. This functionalities can be enabled only when `UseTabs` property is `true`.
 
 <table>
 <tr>
@@ -1483,14 +1496,14 @@ Me.EditControl1.TabStopsArray = New Integer() {8, 16, 24, 32, 40}
 
 {% endtabs %}
 
-## Insert space/ keep tabs
+## Insert space / keep tabs
 
-The following methods can be used convert the spaces in a selected region into tabs and vice versa. Tab symbols can also be added, inserted or removed from selected text.
+The following functions can be used convert the spaces in a selected region into tabs and vice versa. Tab symbols can also be added, inserted or removed from selected text.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1566,7 +1579,7 @@ this.editControl1.TransferFocusOnTab = True
 
 ### Change tab character size
 
-`TabSize` property helps to customize the size of the tab character in EditControl.
+`TabSize` property helps to insert the number of spaces when pressing the TAB key. This functionality is enabled only when `UseTabs` property in EditControl is `true`.
 
 <table>
 <tr>
@@ -1602,7 +1615,7 @@ Me.editControl1.TabSize = 8
 
 ## Context menu options
 
-Provides a built-in context menu that allows you to edit the contents, and open or create a new file. It includes some advanced features like indent selection, comment selection, adding bookmarks and much more. 
+Provides a built-in context menu with options to perform editing operations like Undo, Redo, Cut, Copy, Paste, Select All and so on. It includes some advanced features like indent selection,comment selection, adding bookmarks and much more. 
 
 ### Default context menu options 
 
@@ -1688,7 +1701,7 @@ cm.ClearMenu();
 
 ### Disable particular item from context menu
 
-Context menu item can be set as disabled using `SetContextMenuItemEnabled` method by setting the bool value to be false.
+Context menu item can be set as disabled using `SetContextMenuItemEnabled` function by setting the bool value to be false.
 
 {% tabs %}
 
@@ -1831,7 +1844,7 @@ End Sub
 
 ## Line modification marker
 
-EditControl tracks changed lines by displaying markers at the start of lines that have been modified or inserted after the last file save operation. Changed lines marking feature can be enabled by setting the `MarkChangedLines` property to `true`. To enable this functionality in the EditControl, the `SelectionMargin` property should also be enabled.
+EditControl tracks changed lines by displaying markers at the start of lines that have been modified or inserted after the last file save operation. Changed lines marking feature can be enabled by setting the `MarkChangedLines` property to `true`. To enable this functionality in EditControl, the `SelectionMargin` property should also be enabled.
 
 {% tabs %}
 
@@ -1858,7 +1871,7 @@ Me.editControl1.ShowSelectionMargin = true
 
 ### Modified line marker color
 
-`ChangedLinesMarkingLineColor` property helps to customize the color for the changing lines in EditControl.
+`ChangedLinesMarkingLineColor` property helps to customize the color for changed lines in EditControl.
 
 {% tabs %}
 
@@ -1881,7 +1894,7 @@ Me.editControl1.ChangedLinesMarkingLineColor = Color.Red
 
 ### Saved line marker color
 
-`SavedLinesMarkingLineColor` property helps to customize the color for the changing lines after performing save operation in EditControl.
+`SavedLinesMarkingLineColor` property helps to customize the color for saved lines in EditControl.
 
 {% tabs %}
 
@@ -1904,12 +1917,12 @@ Me.editControl1.SavedLinesMarkingLineColor = Color.Orange
 
 ## Comment out lines
 
-Provides support for commenting and uncommenting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given methods.
+Provides support for commenting and uncommenting the particular or group of lines. Comments can be set for a single line, selected text and for text within a specified range by using the below given functions.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1950,12 +1963,12 @@ Me.editControl1.CommentText(New Point(1, 1), New Point(7, 7))
 
 {% endtabs %}
 
-Comments can be removed by using the below given methods.
+Comments can be removed by using the below given functions.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1998,7 +2011,7 @@ Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
 
 ## New line styles
 
-EditControl allows you to specify a new line style, or get the currently used new line style in the text. `SetNewLineStyle` method sets the current new line style in the EditControl. SetNewLineStyle method accepts values from the NewLineStyle enumerator which has values like Windows, Mac, Unix and Control. Similarly, the `GetNewLineStyle` method returns a NewLineStyle enumerator value which indicates the currently used new line style in the EditControl.
+EditControl allows you to specify a new line style, or get the currently used new line style in the text. `SetNewLineStyle` function sets the current new line style in the EditControl. SetNewLineStyle function accepts values from the NewLineStyle enumerator which has values like Windows, Mac, Unix and Control. Similarly, the `GetNewLineStyle` function returns a NewLineStyle enumerator value which indicates the currently used new line style in the EditControl.
 
 The default new line style value is set to 'Control'. This value can be changed according to the needs of the user using the DefaultNewLineStyle property.
 
@@ -2060,11 +2073,11 @@ We can configure the whitespace indicators by setting the `ShowWhiteSpaces` prop
 </tr>
 </table>
 
-You can also toggle the visibility of the whitespace indicators by using the `ToggleShowingWhiteSpaces` method.
+You can also toggle the visibility of the whitespace indicators by using the `ToggleShowingWhiteSpaces` function.
 
 <table>
 <tr>
-<th>Method</th>
+<th>Function</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -2224,7 +2237,7 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
 ## Unicode
 
-`Unicode` is a standard used to encode all the languages of the world in computers. All Unicode text is saved in UTF-8 format, by default. Essential Edit also supports handling of all other text encoding formats specified in the System.Text.Encoding class like ASCII, UTF7, UTF8 and BigEndianUnicode.
+`Unicode` is a standard used to encode all the languages of the world in computers. All Unicode text is saved in UTF-8 format, by default. It also supports other text encoding formats specified in the System.Text.Encoding class like ASCII, UTF7, UTF8 and BigEndianUnicode.
 
 The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian and Greek text in the EditControl.
 

@@ -96,7 +96,7 @@ To add control manually in C#, follow the given steps:
    * Syncfusion.Tools.Windows.dll
    * Syncfusion.Edit.Windows.dll
 
-2. Create `EditControl` control instance and add it to the form.
+2. Create [EditControl](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ This option helps to load file into EditControl.
 
 {% highlight C# %}
 
-// Loading the files into edit control by passing the file name as parameter to the LoadFile method.
+// Loading the files into edit control by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs");
 
@@ -176,7 +176,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 {% highlight VB %}
 
-` Loading the files into edit control by passing the file name as parameter to the LoadFile method.
+` Loading the files into edit control by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs")
 
@@ -211,7 +211,7 @@ The following code example illustrates the C# configuration settings in EditCont
 
 {% highlight C# %}
 
-// Considering configuration settings for C# as an example. Using the `KnownLanguages` enumerator.
+// Considering configuration settings for C# as an example. Using the [KnownLanguages](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator.
 
 this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
@@ -220,7 +220,7 @@ this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
 {% highlight VB %}
 
-' Considering configuration settings for C# as an example. Using the `KnownLanguages` enumerator.
+' Considering configuration settings for C# as an example. Using the [KnownLanguages](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator.
 
 Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
@@ -232,9 +232,7 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 **Custom language configuration**
 
-EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the `Configurator.Open` and `ApplyConfiguration` methods, as shown in the below code snippet.
-
-The following example illustrates the same as follows:
+EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function, as shown in the below code snippet.
 
 **Step 1** : Creating a Configuration file
 
@@ -290,7 +288,7 @@ The following code snippet illustrates a sample configuration file that can be u
 
 {% endhighlight %}
 
-**Step 2** : How to Configure the created configuration file in EditControl
+**Step 2** : How to configure the created configuration file in EditControl
 
 {% tabs %}
 

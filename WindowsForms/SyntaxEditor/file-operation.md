@@ -13,12 +13,12 @@ Supports all file operations like create new, open or save files.
 
 ## Load file
 
-`LoadFile` method loads the content of any desired file into the EditControl.
+`LoadFile` function loads the content of any desired file into the EditControl.
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -109,7 +109,7 @@ Me.editControl1.FileName = "Temp.txt"
 
 ## Load from stream
 
-The contents of the EditControl can also be loaded to a particular stream using specified encoding and line end style using `LoadStream` methods.
+The contents of the EditControl can also be loaded to a particular stream using specified encoding and line end style using `LoadStream` functions.
 
 {% tabs %}
 
@@ -269,12 +269,12 @@ Console.WriteLine(Me.editControl1.IsModified)
 
 ## Create file
 
-`New` and `NewFile` methods are used to create a new stream or file and optionally allows you to set the language to be used by specifying the appropriate configuration settings.
+`New` and `NewFile` functions helps to create a new stream or file and optionally allows you to set the language to be used by specifying the appropriate configuration settings.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -332,7 +332,7 @@ Me.editControl1.[New](config)
 
 ## Discard changes
 
-The changes made to the contents of the EditControl can be discarded by using the `DiscardChanges` method.
+The changes made to the contents of the EditControl can be discarded by using the `DiscardChanges` function.
 
 {% tabs %}
 
@@ -353,12 +353,12 @@ Me.editControl1.DiscardChanges()
 
 ## Save file
 
-The following methods are used to save a file in the EditControl.
+The following functions helps to save a file in EditControl.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -425,7 +425,7 @@ Me.editControl1.SaveModified()
 
 ### Save as stream
 
-The contents of the EditControl can also be saved to a particular stream using specified encoding and line end style using  `SaveStream` methods.
+The contents of the EditControl can also be saved to a particular stream using specified encoding and line end style using  `SaveStream` function.
 
 {% tabs %}
 
@@ -603,12 +603,12 @@ N> The default value of e.Action is SaveChangesAction.ShowDialog.
 
 ## Insert file
 
-The following methods are used to insert a file in the EditControl.
+The following functions helps to insert a file in EditControl.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Parameters</th><th>
 Description</th></tr>
 <tr>
@@ -654,12 +654,12 @@ Me.editControl1.InsertFile(@"..\\..\\Form2.cs")
 
 ## Close file
 
-`Close` method helps to closes the currently open file or stream and displays the EditControl in the read-only mode, until a new file or stream is opened.
+`Close` function helps to closes the currently open file or stream and displays the EditControl in the read-only mode, until a new file or stream is opened.
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>

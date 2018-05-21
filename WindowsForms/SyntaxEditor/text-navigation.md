@@ -15,12 +15,12 @@ EditControl offers extensive support for text navigation. You can perform naviga
 
 ## Character based navigation
 
-The following methods enable text navigation in the EditControl, in terms of characters or columns.
+The following functions enable text navigation in EditControl, in terms of characters or columns.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -71,12 +71,12 @@ Me.editControl1.MoveRight()
 
 ## Word based navigation
 
-The following methods enable text navigation in the EditControl, in terms of words.
+The following functions enable text navigation in EditControl, in terms of words.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -111,12 +111,12 @@ Me.editControl1.MoveRightWord()
 
 ## Line based navigation
 
-The following methods enable text navigation in the EditControl, in terms of lines.
+The following functions enable text navigation in EditControl, in terms of lines.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -151,12 +151,12 @@ Me.editControl1.MoveToLineEnd()
 
 ## Page based navigation
 
-The following methods enable text navigation in the EditControl, in terms of pages.
+The following functions enable text navigation in EditControl, in terms of pages.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -191,7 +191,7 @@ Me.editControl1.MovePageDown()
 
 ## Block based navigation
 
-We can position the keyboard cursor at the beginning or end of the indentation block using the `JumpToIndentBlockStart` and `JumpToIndentBlockEnd` methods respectively.
+We can position the keyboard cursor at the beginning or end of the indentation block using the `JumpToIndentBlockStart` and `JumpToIndentBlockEnd` functions respectively.
 
 {% tabs %}
 
@@ -216,12 +216,12 @@ Me.editControl1.JumpToIndentBlockEnd()
 
 ## Document based navigation
 
-The following methods enable text navigation in the EditControl, in terms of documents.
+The following functions enable text navigation in the EditControl, in terms of documents.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -256,7 +256,7 @@ Me.editControl1.MoveToEnd()
 
 ### Retrieve current word
 
-We can retrieve the current word in EditControl by using the `GetCurrentWord` method.
+We can retrieve the current word in EditControl by using the `GetCurrentWord` function.
 
 {% tabs %}
 
@@ -277,7 +277,7 @@ Me.WriteLine(this.editControl1.GetCurrentWord().ToString())
 
 ### Retrieve current column index in line
 
-We can retrieve the current word column index in EditControl by using the `GetCurrentWordColumn` method and `CurrentColumn` property.
+We can retrieve the current word column index in EditControl by using the `GetCurrentWordColumn` function and `CurrentColumn` property.
 
 {% tabs %}
 
