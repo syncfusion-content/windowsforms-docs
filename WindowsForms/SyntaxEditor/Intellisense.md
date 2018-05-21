@@ -13,7 +13,7 @@ EditControl provides Intellisense pop-up capabilities to add content easily, as 
 
 ## Configure intellisense popup
 
-`ContextChoiceController` helps to display intellisense popup in EditControl. You can also autocomplete the word by using the UP/DOWN ARROW keys to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
+`ContextChoiceController` helps to display intellisense popup in EditControl. You can also autocomplete the word by using the UP/DOWN arrow keys to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
 
 ![](Intellisense-images/Intellisense_img1.png)
 
@@ -155,7 +155,7 @@ ToolTip text is specified for each Context Choice list item while adding the ite
 
 // Specify tooltip text for each Context Choice list item.
 
-controller.Items.Add("LoadFile", "Use this method to open a file in EditControl.", this.editControl1.ContextChoiceController.Images["Image3"]);
+controller.Items.Add("LoadFile", "Use this function to open a file in EditControl.", this.editControl1.ContextChoiceController.Images["Image3"]);
 
 {% endhighlight %}
 
@@ -164,7 +164,7 @@ controller.Items.Add("LoadFile", "Use this method to open a file in EditControl.
 
 ' Specify tooltip text for each Context Choice list item.
 
-controller.Items.Add("LoadFile", "Use this method to open a file in EditControl.", Me.editControl1.ContextChoiceController.Images["Image3"])
+controller.Items.Add("LoadFile", "Use this function to open a file in EditControl.", Me.editControl1.ContextChoiceController.Images["Image3"])
 
 {% endhighlight %}
 
@@ -393,7 +393,7 @@ FilterAutoCompleteItems property when set to `true`, filters the item in the Aut
 
 **Showing or hiding ContextChoice pop-up**
 
-You can also programmatically show / hide the Context Choice pop-up by calling the `ShowContextChoice` and `CloseContextChoice` methods.
+You can also programmatically show / hide the Context Choice pop-up by calling the `ShowContextChoice` and `CloseContextChoice` functions.
 
 {% tabs %}
 
@@ -612,7 +612,7 @@ The preceding code has to be placed within the <lexems> section of the configura
 
 ### Populate context prompt 
 
-Context Prompt is populated by handling the `ContextPromptOpen` event of EditControl, and adding new prompts using the AddPrompt method.
+Context Prompt is populated by handling the `ContextPromptOpen` event of EditControl, and adding new prompts using the AddPrompt function.
 
 <table>
 <tr>
@@ -878,7 +878,7 @@ End Sub
 
 **Showing or hiding ContextPrompt pop-up**
 
-You can also programmatically show / hide the Context Prompt pop-up using the `ShowContextPrompt` and `CloseContextPrompt` methods.
+You can also programmatically show / hide the Context Prompt pop-up using the `ShowContextPrompt` and `CloseContextPrompt` functions.
 
 {% tabs %}
 
@@ -1340,7 +1340,7 @@ Me.edtiControl1.ToolTipDelay = 1000
 
 {% endtabs %}
 
-The Context ToolTip window is also closed by using the `CloseContextTooltip` method.
+The Context ToolTip window is also closed by using the `CloseContextTooltip` function.
 
 {% tabs %}
 
