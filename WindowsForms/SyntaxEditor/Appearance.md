@@ -1297,7 +1297,7 @@ There are various types of scrolling mode in EditControl as follows:
 * Deferred - Scrolls the control when thumb track is completed.
 * Pixel - Scrolls line by line.
 
-[VScrollMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~VScrollMode.html) property helps to set the various type of scrolling mode in EditContol by using [ScrollMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.ScrollMode.html) enumerator.
+[VScrollMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~VScrollMode.html) property helps to set the various type of scrolling mode in EditControl by using [ScrollMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.ScrollMode.html) enumerator.
 
 {% tabs %}
 

@@ -913,7 +913,7 @@ Me.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink
 
 ### Size
 
-[ContextPromptCustomSize](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptCustomSize.html) helps to customize the size of `ContextPrompt` popup window. This behaviour can be enabled or hidden by using [UseCustomSizeContextPrompt](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseCustomSizeContextPrompt.html) property in EditControl.
+[ContextPromptCustomSize](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptCustomSize.html) helps to customize the size of `ContextPrompt` popup window. This behavior can be enabled or hidden by using [UseCustomSizeContextPrompt](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseCustomSizeContextPrompt.html) property in EditControl.
 
 {% tabs %}
 
