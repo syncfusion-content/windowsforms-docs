@@ -36,7 +36,7 @@ The customization features of the `EditControl` are discussed under the followin
 
 Provides in-built support for horizontal and vertical splitters, which display a single document in several views with horizontal and vertical orientations, allowing users to work on different areas of a document at the same time. 
 
-A maximum of four split views are supported. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four. The `SplitFourQuadrants` method is used to split the EditControl into four equal parts.
+A maximum of four split views are supported. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four. `SplitFourQuadrants` function is used to split the EditControl into four equal parts.
 
 {% tabs %}
 
@@ -59,12 +59,12 @@ Me.editControl1.SplitFourQuadrants()
 
 ### Orientation
 
-Split view can be oriented in both horizontal and vertical direction by using the following methods `SplitHorizontally` and `SplitVertically` of  EditControl. The following methods can be used to split the EditControl into two equal horizontal and vertical halves.
+Split view can be oriented in both horizontal and vertical direction by using the following functions `SplitHorizontally` and `SplitVertically` of  EditControl. The following functions can be used to split the EditControl into two equal horizontal and vertical halves.
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -264,13 +264,11 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\W
 
 ## Single line mode
 
-Supports a single-line mode that renders just like a regular TextBox. EditControl can be operated in a simple text box with syntax highlighting, editing, and clipboard operations., by setting `Multiline` property to `false`. You can also turn on the single line mode of the EditControl by setting the `SingleLineMode` property to `true`. Its default value is `false`.
+Supports a single-line mode that renders just like a regular TextBox. EditControl can be operated in a simple text box with syntax highlighting, editing, and clipboard operations etc., by setting `SingleLineMode` property to `true`. Its default value is `false`.
 
 {% tabs %}
 
 {% highlight C# %}
-
-this.editControl1.Multiline = false;
 
 this.editControl1.SingleLineMode = true;
 
@@ -278,8 +276,6 @@ this.editControl1.SingleLineMode = true;
 
 
 {% highlight VB %}
-
-Me.editControl1.Multiline = False
 
 Me.editControl1.SingleLineMode = True
 
@@ -331,12 +327,12 @@ In EditControl, we are able to customize the text color and its border. The foll
 
 ### Text Color
 
-`SetTextColor` method helps to customize the appearance of the text color in a specific range of lines. 
+`SetTextColor` function helps to customize the appearance of the text color in a specific range of lines. 
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -369,12 +365,12 @@ Me.editControl1.SetTextColor(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 ### Text border color
 
-`SetTextBorder` method of EditControl helps to set the border and simultaneously we can remove the border of the text using the `RemoveTextBorder` method. The following table explain regarding this methods and also the parameter value used in these methods.
+`SetTextBorder` function of EditControl helps to set the border and simultaneously we can remove the border of the text using the `RemoveTextBorder` function. The following table explain regarding this functions and also the parameter value used in these functions.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -755,7 +751,7 @@ Me.editControl1.IndicatorMarginBackColor = Color.Red
 
 ## Selection color customization
 
-EditControl also provides an options to change the back color of selected range of text. `SetBackgroundColor` method of EditControl is used to set the background color for a specified range of text.
+EditControl also provides an options to change the back color of selected range of text. `SetBackgroundColor` function of EditControl is used to set the background color for a specified range of text.
 
 {% tabs %}
 
@@ -778,8 +774,8 @@ Me.editControl1.SetBackgroundColor(New Point(1, 1), New Point(9, 9), Color.Alice
 
 EditControl also allows setting custom background color for individual lines as well as for selected block of text. You can set any desired background to a particular line or block of selection,as explained below.
 
-* Register a back color format with the EditControl by using its `RegisterBackColorFormat` method, with appropriate values for BackgroundColor, ForegroundColor and HatchStyle parameters.
-* Set the background color to the entire line or just the selected text by using the `SetLineBackColor` and `SetSelectionBackColor` methods respectively.
+* Register a back color format with the EditControl by using its `RegisterBackColorFormat` function, with appropriate values for BackgroundColor, ForegroundColor and HatchStyle parameters.
+* Set the background color to the entire line or just the selected text by using the `SetLineBackColor` and `SetSelectionBackColor` functions respectively.
 
 {% tabs %}
 
@@ -822,12 +818,12 @@ Me.editControl1.SetSelectionBackColor(format)
 
 #### Remove applied background for individual line or selected block of text
 
-By using `RemoveLineBackColor` and `RemoveSelectionBackColor` method of EditControl we were able to remove the background color for individual lines or selected blocks of text. 
+By using `RemoveLineBackColor` and `RemoveSelectionBackColor` functions of EditControl we were able to remove the background color for individual lines or selected blocks of text. 
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -870,7 +866,7 @@ Me.editControl1.RemoveSelectionBackColor()
 
 ## StatusBar
 
-Provides support to display information about the current state of the control such as the current file name, line number, and column number. The built-in panels are as follows:
+Provides `StatusBar` support that helps to display information about the current state of the control such as the current file name, line number, and column number. The built-in panels are as follows:
 
 * TextPanel
 * StatusPanel
@@ -951,7 +947,7 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 #### Visibility settings
 
-StatusBar feature can be turned on by setting the `StatusBarSettings.Visible` property to `true`. Its default value is `false`. The individual StatusBar panels can be optionally shown or hidden by using the `Visible` property corresponding to the respective panel.
+StatusBar can be enabled or hidden by setting the `StatusBarSettings.Visible` property. Its default value is `false`. The individual StatusBar panels can also be optionally shown or hidden by using the `Visible` property corresponding to the respective panel.
 
 {% tabs %}
 
@@ -1442,7 +1438,7 @@ Supports an advanced feature of VS 2005 like Code Snippets. It is also used to l
 
 The code snippets allow you to input data to the highlighted fields.
 
-Code Snippets can also be inserted into the EditControl by using the static `Extract` method of the `CodeSnippetsExtractor` class. Extract method takes the following two parameters:
+Code Snippets can also be inserted into the EditControl by using the static `Extract` function of the `CodeSnippetsExtractor` class. Extract function takes the following two parameters:
 
 1. Path of the folder containing the code snippets.
 2. Instance of the EditControl into which the extracted code snippet should be inserted.
@@ -1465,12 +1461,12 @@ CodeSnippetsExtractor.Extract(Path, editControl1)
 
 {% endtabs %}
 
-Code Snippets are added to the current language of the EditControl by using the below given method.
+Code Snippets are added to the current language of the EditControl by using the below given function.
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -1496,7 +1492,7 @@ Me.editControl1.AddCodeSnippet(String title, ArrayList literals, String code)
 
 {% endtabs %}
 
-The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static `Extract` method of the `CodeSnippetsExtractor` class is used to extract and fill the container object. The container object can be added to the SnippetsContainer of the EditControl by using the `AddContainer` method. 
+The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static `Extract` function of the `CodeSnippetsExtractor` class is used to extract and fill the container object. The container object can be added to the SnippetsContainer of the EditControl by using the `AddContainer` function. 
 
 {% tabs %}
 
@@ -1583,7 +1579,7 @@ The Literal element is used to identify a replacement for a piece of code that i
 
 **Showing code snippets**
 
-You can also programmatically show the choice list of code snippets by calling `ShowCodeSnippets` method given below.
+You can also programmatically show the choice list of code snippets by calling `ShowCodeSnippets` function given below.
 
 {% tabs %}
 
@@ -1655,7 +1651,7 @@ Me.editControl1.Cursor = Me.currentCursor
 
 ## Suspend and resume painting
 
-Painting of the EditControl can be suspended using the `Suspend` method call. Painting can be resumed using `Resume` method call. Suspend and Resume methods internally call the interop method and LockWindowUpdate method to suspend and resume painting of the EditControl.
+Painting of the EditControl can be suspended using the `Suspend` function call. Painting can be resumed using `Resume` function call. Suspend and Resume functions internally call the `Interop` and `LockWindowUpdate` function to suspend and resume painting of the EditControl.
 
 {% tabs %}
 

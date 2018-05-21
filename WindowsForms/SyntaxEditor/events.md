@@ -371,7 +371,7 @@ End Sub
 
 ## ConfigurationChanged Event
 
-This event is fired on changing the configuration of the EditControl. Configuration can be set for the EditControl by using the `ApplyConfiguration` method.
+This event is fired on changing the configuration of the EditControl. Configuration can be set for the EditControl by using the `ApplyConfiguration` function.
 
 The event handler receives an argument of type EventArgs.
 
@@ -416,7 +416,7 @@ This section discusses the below given collapse events.
 
 ### CollapsedAll Event
 
-This event is raised when the CollapseAll method is called.
+This event is raised when the CollapseAll function is called.
 
 The event handler receives an argument of type EventArgs.
 
@@ -428,7 +428,7 @@ The event handler receives an argument of type EventArgs.
 
 this.editControl1.CollapsedAll+=new EventHandler(editControl1_CollapsedAll);
 
-// Call the CollapseAll method.
+// Call the CollapseAll function.
 
 this.editControl1.CollapseAll();
 
@@ -451,7 +451,7 @@ private void editControl1_CollapsedAll(object sender, EventArgs e)
 
 Me.editControl1.CollapsedAll+=New EventHandler(editControl1_CollapsedAll)
 
-' Call the CollapseAll method.
+' Call the CollapseAll function.
 
 Me.editControl1.CollapseAll()
 
@@ -467,7 +467,7 @@ End Sub
 
 ### CollapsingAll Event
 
-This event is raised when the CollapseAll method is called.
+This event is raised when the CollapseAll function is called.
 
 The event handler receives an argument of type CancelEventArgs. The following CancelableEventArgs member provides information, specific to this event.
 
@@ -490,7 +490,7 @@ Specifies a value indicating whether the event should be canceled</td></tr>
 
 this.editControl1.CollapsingAll+=new EventHandler(editControl1_CollapsingAll);
 
-// Call the CollapseAll method.
+// Call the CollapseAll function.
 
 this.editControl1.CollapseAll();
 
@@ -517,7 +517,7 @@ private void editControl1_CollapsingAll(object sender, CancelEventArgs e)
 
 Me.editControl1.CollapsingAll+=New EventHandler(editControl1_CollapsingAll)
 
-' Call the CollapseAll method.
+' Call the CollapseAll function.
 
 Me.editControl1.CollapseAll()
 
@@ -775,7 +775,7 @@ This section discusses the expand events given below.
 
 ### ExpandedAll Event
 
-This event is raised when the ExpandAll method is called.
+This event is raised when the ExpandAll function is called.
 
 The event handler receives an argument of type EventArgs.
 
@@ -787,7 +787,7 @@ The event handler receives an argument of type EventArgs.
 
 this.editControl1.ExpandedAll+=new EventHandler(editControl1_ExpandedAll);
 
-// Call the ExpandAll method.
+// Call the ExpandAll function.
 
 this.editControl1.ExpandAll();
 
@@ -810,7 +810,7 @@ private void editControl1_ExpandedAll(object sender, EventArgs e)
 
 Me.editControl1.ExpandedAll+=New EventHandler(editControl1_ExpandedAll)
 
-' Call the ExpandAll method.
+' Call the ExpandAll function.
 
 Me.editControl1.ExpandAll()
 
@@ -828,7 +828,7 @@ End Sub
 
 ### ExpandingAll Event
 
-This event is raised when the ExpandAll method is called.
+This event is raised when the ExpandAll function is called.
 
 The event handler receives an argument of type CancelEventArgs. The following CancelableEventArgs member provides information, specific to this event.
 
@@ -851,7 +851,7 @@ Specifies a value indicating whether the event should be canceled</td></tr>
 
 this.editControl1.ExpandingAll+=new EventHandler(editControl1_ExpandingAll);
 
-// Call the ExpandAll method.
+// Call the ExpandAll function.
 
 this.editControl1.ExpandAll();
 
@@ -878,7 +878,7 @@ private void editControl1_ExpandingAll(object sender, CancelEventArgs e)
 
 Me.editControl1.ExpandingAll+=New EventHandler(editControl1_ExpandingAll)
 
-' Call the ExpandAll method.
+' Call the ExpandAll function.
 
 Me.editControl1.ExpandAll()
 

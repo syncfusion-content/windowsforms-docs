@@ -39,13 +39,13 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 {% endtabs %}
 
 
-`LoadFile` method of EditControl helps to loads the content of any desired file into the EditControl, instead of typing the code in it.
+`LoadFile` function in EditControl helps to loads the content of any desired file into the EditControl, instead of typing the code in it.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs");
 
@@ -54,7 +54,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 {% highlight VB %}
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.cs")
 
@@ -74,7 +74,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Delphi);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\DelphiSource.pas");
 
@@ -87,7 +87,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Delphi)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\DelphiSource.pas")
 
@@ -107,7 +107,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.XML);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\XMLSource.xml");
 
@@ -120,7 +120,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.XML)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\XMLSource.xml")
 
@@ -140,7 +140,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.HTML);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\HTMLSource.html");
 
@@ -153,7 +153,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.HTML)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\HTMLSource.html")
 
@@ -173,7 +173,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.VBNET);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBSource.vb");
 
@@ -186,7 +186,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.VBNET)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBSource.vb")
 
@@ -206,7 +206,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.SQL);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\SQLSource.sql");
 
@@ -219,7 +219,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.SQL)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\SQLSource.sql")
 
@@ -239,7 +239,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Java);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JavaSource.Java");
 
@@ -252,7 +252,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.Java)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JavaSource.Java")
 
@@ -272,7 +272,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.VBScript);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vb");
 
@@ -285,7 +285,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.VBScript)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\VBScriptSource.vb")
 
@@ -305,7 +305,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.JScript);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JScriptSource.js");
 
@@ -318,7 +318,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.JScript)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\JScriptSource.js")
 
@@ -338,7 +338,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 this.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.PowerShell);
 
-// Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+// Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\PowerShell.ps1");
 
@@ -351,7 +351,7 @@ this.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.PowerShell)
 
-` Loading the files into EditControl by passing the file name as parameter to the LoadFile method.
+` Loading the files into EditControl by passing the file name as parameter to the LoadFile function.
 
 Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\PowerShell.ps1")
 
@@ -654,7 +654,7 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Window
 
 ## Custom language using XML
 
-EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the `Configurator.Open` and `ApplyConfiguration` methods of EditControl.
+EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the `Configurator.Open` and `ApplyConfiguration` functions in EditControl.
 
 ### Initialize the configuration language.
 
@@ -972,7 +972,7 @@ EditControl also offers extensive support to create configuration settings progr
 
 ### How to add new configuration language to EditControl
 
-A new configuration language can be added to the EditControl by using the `CreateLanguageConfiguration` method. Once the new configuration language is created, apply it to the contents of the EditControl by using the ApplyConfiguration method.
+A new configuration language can be added to the EditControl by using the `CreateLanguageConfiguration` function. Once the new configuration language is created, apply it to the contents of EditControl by using the `ApplyConfiguration` function.
 
 {% tabs %}
 
@@ -998,33 +998,6 @@ Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 {% endhighlight %}
 
 {% endtabs %}
-
-### Font configuration
-
-Font color of newly created format in the specified language can be customized using `FontColor` property of Format tag. 
-
-{% tabs %}
-
-{% highlight C# %}
-
- formatMethod.Font = new Font("Garamond", 17);
-
- formatMethod.FontColor = Color.Red;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-formatMethod.Font = new Font("Garamond", 17)
-
- formatMethod.FontColor = Color.Red
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
 
 ### Format configuration
 
@@ -1063,9 +1036,36 @@ formatMethod.BackColor = Color.Yellow
 
 {% endtabs %}
 
+### Font configuration
+
+Font color of newly created format in the specified language can be customized by using its `FontColor` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ formatMethod.Font = new Font("Garamond", 17);
+
+ formatMethod.FontColor = Color.Red;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+formatMethod.Font = new Font("Garamond", 17)
+
+ formatMethod.FontColor = Color.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
+
 ### Lexem configuration
 
-Lexems for the custom language can be added by creating a lexem object using `ConfigLexem` class and its attributes can be declared using built-in properties such as `IsBeginRegex`, `IsEndRegex`, `FormatName` etc.
+Lexems for the custom language can be created by using `ConfigLexem` class and its attributes can be declared using built-in properties such as `IsBeginRegex`, `IsEndRegex`, `FormatName` etc.
 
 {% tabs %}
 
@@ -1404,7 +1404,7 @@ Below code is an example for replace "the" if it is misspelled as "teh" in AutoR
 
 ### File extension
 
-File extension associated with the custom language can be added with the help of `Extensions.Add` method in the language as given below.
+File extension associated with the custom language can be added with the help of `Extensions.Add` function in the language as given below.
 
 {% tabs %}
 
@@ -1429,7 +1429,7 @@ Me.editControl1.Language.Extensions.Add("lisp")
 
 ### Invoking newly added configuration language
 
-Invoke the ResetCaches method to apply these newly added configuration settings.
+Invoke the `ResetCaches` function to apply these newly added configuration settings.
 
 {% tabs %}
 

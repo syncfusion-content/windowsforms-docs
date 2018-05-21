@@ -18,7 +18,7 @@ Supports to export the contents along with syntax highlighting appearance into `
 <table>
 <tr>
 <th>
-Methods</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -47,12 +47,12 @@ Me.editControl1.SaveAsXML("testXML.xml")
 
 {% endtabs %}
 
-EditControl is also capable of providing XML source code for generating documents in the corresponding formats by using the following methods.
+EditControl is also capable of providing XML source code for generating documents in the corresponding formats by using the following function.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -96,7 +96,7 @@ Supports to export the contents along with syntax highlighting appearance into `
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -125,12 +125,12 @@ Me.editControl1.SaveAsHTML("testHTML.html")
 
 {% endtabs %}
 
-EditControl is also capable of providing HTML source code for generating documents in the corresponding formats by using the following method.
+EditControl is also capable of providing HTML source code for generating documents in the corresponding formats by using the following function.
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -174,7 +174,7 @@ Supports to export the contents along with syntax highlighting appearance into R
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -203,12 +203,12 @@ Me.editControl1.SaveAsRTF("testRTF.rtf")
 
 {% endtabs %}
 
-EditControl is also capable of providing RTF source code for generating documents in the corresponding formats by using the following methods.
+EditControl is also capable of providing RTF source code for generating documents in the corresponding formats by using the following function.
 
 <table>
 <tr>
 <th>
-Method</th><th>
+Function</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -250,7 +250,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\W
 
 ## Bitmap Generation
 
-Support to save EditControl as image. This is achieved through the use of the `CreateBitmap` method.
+Support to save EditControl as image. This is achieved through the use of the `CreateBitmap` function.
 
 {% tabs %}
 

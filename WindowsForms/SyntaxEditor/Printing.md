@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing
 
-support to print the data displayed in the EditControl using `Print` method. It also provides support to display print preview window by calling `PrintPreview` method.
+Support to print the data displayed in the EditControl using `Print` function. It also provides support to display print preview window by calling `PrintPreview` function.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ In brief, the printing functionality of the EditControl supports the following f
 
 ## Print Preview
 
-Use the `PrintPreview` method to view the contents of the EditControl before they are printed.
+Use the `PrintPreview` function to view the contents of the EditControl before they are printed.
 
 {% tabs %}
 
@@ -78,12 +78,12 @@ Me.editControl1.PrintPreview()
 
 ## Specifying printing options
 
-EditControl provides various printing option as like Visual Studio Code Editor. By using the `PrintCurrentPage` method, we can print the current page in the EditControl.
+EditControl provides various printing option as like Visual Studio Code Editor. By using the `PrintCurrentPage` function, we can print the current page in the EditControl.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -226,12 +226,12 @@ The following image shows a typical page with a header and footer in Print Previ
 
 ### Show / Hide page border
 
-PageBorder can also be shown or removed while printing the document. `SetPageBorder` method is used to display page borders for the EditControl. And also we can remove the page borders by using `RemovePageBorder` of EditControl.
+PageBorder can also be shown or removed while printing the document. `SetPageBorder` function is used to display page borders for the EditControl. And also we can remove the page borders by using `RemovePageBorder` of EditControl.
 
 <table>
 <tr>
 <th>
-Methods</th><th>
+Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
