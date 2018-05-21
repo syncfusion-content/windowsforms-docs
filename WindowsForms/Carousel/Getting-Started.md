@@ -37,17 +37,77 @@ Syncfusion.Tools.Windows contains the class that handles all UI operations and c
 </tr>
 </table>
 
-## Install NuGet packages
+## Installing NuGet packages
 
-To create the Windows Forms application with Carousel, the following nuget packages should be installed.
+To use Carousel control in Windows Forms application via nuget, the following packages should be installed.
  
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Grid.Windows
-* Syncfusion.Grid.Base
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
- 
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Tools.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Tools.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Tools.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Tools.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td> Syncfusion.Tools.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td> Syncfusion.Tools.Windows46
+</td>
+</tr>
+<tr>
+<td> 7
+</td>
+<td> 4.6.1
+</td>
+<td> Syncfusion.Tools.Windows461
+</td>
+</tr>
+</table>
+
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
 
 https://help.syncfusion.com/windowsforms/nuget-packages
