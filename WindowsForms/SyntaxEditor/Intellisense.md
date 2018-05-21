@@ -13,7 +13,7 @@ EditControl provides Intellisense pop-up capabilities to add content easily, as 
 
 ## Configure intellisense popup
 
-`ContextChoiceController` helps to display intellisense popup in EditControl. You can also autocomplete the word by using the UP/DOWN arrow keys to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
+[ContextChoiceController](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) helps to display intellisense popup in EditControl. You can also autocomplete the word by using the UP/DOWN arrow keys to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
 
 ![](Intellisense-images/Intellisense_img1.png)
 
@@ -29,7 +29,7 @@ The ContextChoice displaying characters are specified in the configuration file 
 
 The preceding code has to be placed within the <lexems> section of the configuration file.
 
-`AutoCompleteSingleLexem` property indicates whether the ContextChoice list gets auto completed when a single lexem remains in the list.
+[AutoCompleteSingleLexem](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AutoCompleteSingleLexem.html) property indicates whether the ContextChoice list gets auto completed when a single lexem remains in the list.
 
 {% tabs %}
 
@@ -50,18 +50,7 @@ Me.editControl1.AutoCompleteSingleLexem = True
 
 ### Populate intellisense popup
 
-ContextChoice list is populated by handling the `ContextChoiceOpen` event of the EditControl, and adding items to the Items collection associated with the `IContextChoiceController` object.
-
-<table>
-<tr>
-<th>
-Event</th><th>
-Description</th></tr>
-<tr>
-<td>
-ContextChoiceOpen</td><td>
-This event occurs when the ContextChoice window has been opened</td></tr>
-</table>
+ContextChoice list is populated by handling the [ContextChoiceOpen](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceOpen_EV.html) event in EditControl, and adding items to the Items collection associated with the [IContextChoiceController](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) object.
 
 {% tabs %}
 
@@ -103,7 +92,7 @@ End Sub
 
 **Adding custom images to list items**
 
-Custom images can also be added to the ContextChoice list items by indexing them into the Images collection of the `IContextChoiceController` object associated with the EditControl. The Images collection of the IContextChoiceController can be populated by using the code given below.
+Custom images can also be added to the ContextChoice list items by indexing them into the Images collection of the [IContextChoiceController](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) object associated with the EditControl. The Images collection of the IContextChoiceController can be populated by using the code given below.
 
 {% tabs %}
 
@@ -147,7 +136,7 @@ Next img
 
 **List item tooltip**
 
-ToolTip text is specified for each Context Choice list item while adding the items to the `IContextChoiceController`, as shown in the following code snippet.
+ToolTip text is specified for each Context Choice list item while adding the items to the [IContextChoiceController](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html), as shown in the following code snippet.
 
 {% tabs %}
 
@@ -186,7 +175,7 @@ Event</th><th>
 Description</th></tr>
 <tr>
 <td>
-ContextChoiceBeforeOpen</td><td>
+{{ '[ContextChoiceBeforeOpen](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceBeforeOpen_EV.html)' | markdownify }}</td><td>
 Occurs when the Context Choice window is about to open</td></tr>
 </table>
 
@@ -253,7 +242,7 @@ Event</th><th>
 Description</th></tr>
 <tr>
 <td>
-ContextChoiceClose</td><td>
+{{ '[ContextChoiceClose](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceClose_EV.html)' | markdownify }}</td><td>
 Occurs when the ContextChoice window has been closed</td></tr>
 </table>
 
@@ -290,11 +279,11 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-ContextChoiceItemSelected</td><td>
+{{ '[ContextChoiceItemSelected](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceItemSelected_EV.html)' | markdownify }}</td><td>
 Occurs when a ContextChoice list item is selected</td></tr>
 <tr>
 <td>
-ContextChoiceSelectedTextInsert</td><td>
+{{ '[ContextChoiceSelectedTextInsert](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceSelectedTextInsert_EV.html)' | markdownify }}</td><td>
 Occurs when the editor is about to insert selected ContextChoice item to the text. Action can be canceled</td></tr>
 </table>
 
@@ -374,18 +363,7 @@ End Sub
 
 **Filtering AutoComplete items**
 
-EditControl provides options to filter items in AutoComplete. This can be done by using the `FilterAutoCompleteItems` property.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-FilterAutoCompleteItems</td><td>
-Gets / sets value indicating whether Context Choice items should be filtered while typing</td></tr>
-</table>
+EditControl provides options to filter context choice items while typing. This can be done by using the [FilterAutoCompleteItems](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FilterAutoCompleteItems.html) property.
 
 FilterAutoCompleteItems property when set to `true`, filters the item in the AutoComplete Context Choice, and the filtered item alone will be visible. When set to `false`, all the items will be visible, and the selection will be navigated to the item.
 
@@ -393,7 +371,7 @@ FilterAutoCompleteItems property when set to `true`, filters the item in the Aut
 
 **Showing or hiding ContextChoice pop-up**
 
-You can also programmatically show / hide the Context Choice pop-up by calling the `ShowContextChoice` and `CloseContextChoice` functions.
+You can also programmatically show / hide the Context Choice pop-up by calling the [ShowContextChoice](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowContextChoice.html) and [CloseContextChoice](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CloseContextChoice.html) functions.
 
 {% tabs %}
 
@@ -453,18 +431,7 @@ Support provided to customize the size, border, background, font and foreground 
 
 ### Border color
 
-`ContextChoiceBorderColor` property helps to customize the border color of intellisense popup.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ContextChoiceBorderColor</td><td>
-Specifies the color of the ContextChoice form border. Used when UseXPStyle property is set to `false`. Otherwise 3D border is drawn</td></tr>
-</table>
+[ContextChoiceBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceBorderColor.html) property helps to customize the border color of intellisense popup.
 
 {% tabs %}
 
@@ -487,7 +454,7 @@ Me.editControl1.ContextChoiceBorderColor = System.Drawing.Color.Red
 
 ### Size
 
-`ContextChoiceSize` property helps to customize the size of intellisense popup.
+[ContextChoiceSize](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceSize.html) property helps to customize the size of intellisense popup.
 
 {% tabs %}
 
@@ -510,7 +477,7 @@ Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 100)
 
 ### Background
 
-`ContextChoiceBackColor` property helps to customize the background color of intellisense popup.
+[ContextChoiceBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceBackColor.html) property helps to customize the background color of intellisense popup.
 
 {% tabs %}
 
@@ -537,7 +504,7 @@ Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 100)
 
 ### Foreground
 
-`ContextChoiceForeColor` property helps to customize the foreground color of intellisense popup.
+[ContextChoiceForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceForeColor.html) property helps to customize the foreground color of intellisense popup.
 
 {% tabs %}
 
@@ -564,7 +531,7 @@ Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 100)
 
 ### Font
 
-`ContextChoiceFont` property helps to customize the font in intellisense popup.
+[ContextChoiceFont](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextChoiceFont.html) property helps to customize the font in intellisense popup.
 
 {% tabs %}
 
@@ -594,7 +561,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\W
 
 ## Configure context prompt popup
 
-Support provided for displaying function overloading information as like in Microsoft Visual Studio text editor and also allows user to navigate between defined functions by using `UP` or `DOWN` arrow keys.
+Support provided for displaying function overloading information as like in Microsoft Visual Studio text editor and also allows user to navigate between defined functions by using <kbd>UP</kbd> or <kbd>DOWN</kbd> arrow keys.
 
 ![](Intellisense-images/Intellisense_img4.png)
 
@@ -612,18 +579,7 @@ The preceding code has to be placed within the <lexems> section of the configura
 
 ### Populate context prompt 
 
-Context Prompt is populated by handling the `ContextPromptOpen` event of EditControl, and adding new prompts using the AddPrompt function.
-
-<table>
-<tr>
-<th>
-Event</th><th>
-Description</th></tr>
-<tr>
-<td>
-ContextPromptOpen</td><td>
-This event occurs when the Context Prompt has been opened</td></tr>
-</table>
+Context Prompt is populated by handling the [ContextPromptOpen](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptOpen_EV.html) event in EditControl, and adding new prompts using the AddPrompt function.
 
 {% tabs %}
 
@@ -674,15 +630,15 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-ContextPromptBeforeOpen</td><td>
+{{ '[ContextPromptBeforeOpen](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptBeforeOpen_EV.html)' | markdownify }}</td><td>
 This event occurs when the Context Prompt window is about to open. User can cancel it</td></tr>
 <tr>
 <td>
-ContextPromptClose</td><td>
+{{ '[ContextPromptClose](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptClose_EV.html)' | markdownify }}</td><td>
 This event occurs when the Context Prompt window has been closed</td></tr>
 <tr>
 <td>
-ContextPromptSelectionChanged</td><td>
+{{ '[ContextPromptSelectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptSelectionChanged_EV.html)' | markdownify }}</td><td>
 This event occurs when a Context Prompt item has been selected</td></tr>
 </table>
 
@@ -878,7 +834,7 @@ End Sub
 
 **Showing or hiding ContextPrompt pop-up**
 
-You can also programmatically show / hide the Context Prompt pop-up using the `ShowContextPrompt` and `CloseContextPrompt` functions.
+You can also programmatically show / hide the Context Prompt pop-up using the [ShowContextPrompt](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowContextPrompt.html) and [CloseContextPrompt](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CloseContextPrompt.html) functions.
 
 {% tabs %}
 
@@ -911,7 +867,7 @@ Support provided to customize the size, background, font and border color of `Co
 
 ### Background
 
-`ContextPromptBackgroundBrush` property helps to customize the background color of `ContextPrompt` popup window.
+[ContextPromptBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptBackgroundBrush.html) property helps to customize the background color of `ContextPrompt` popup window.
 
 {% tabs %}
 
@@ -934,7 +890,7 @@ Me.editControl1.ContextPromptBackgroundBrush = New Syncfusion.Drawing.BrushInfo(
 
 ### Border
 
-`ContextPromptBorderColor` property helps to customize the border color of `ContextPrompt` popup window.
+[ContextPromptBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptBorderColor.html) property helps to customize the border color of `ContextPrompt` popup window.
 
 {% tabs %}
 
@@ -957,23 +913,7 @@ Me.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink
 
 ### Size
 
-`ContextPromptCustomSize` helps to customize the size of `ContextPrompt` popup window. 
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ContextPromptCustomSize</td><td>
-Specifies the size of the Context Prompt form</td></tr>
-<tr>
-<td>
-UseCustomSizeContextPrompt</td><td>
-Specifies a value indicating whether custom Context Prompt size should be used</td></tr>
-</table>
-
+[ContextPromptCustomSize](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptCustomSize.html) helps to customize the size of `ContextPrompt` popup window. This behaviour can be enabled or hidden by using [UseCustomSizeContextPrompt](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseCustomSizeContextPrompt.html) property in EditControl.
 
 {% tabs %}
 
@@ -1000,7 +940,7 @@ Me.editControl1.UseCustomSizeContextPrompt = True
 
 ### Advanced customizations
 
-If you wish to do some advanced customization in the Context Prompt feature, like highlighting the current parameter to be input in bold, you can use the ContextPromptOpen and ContextPromptUpdate events.
+If you wish to do some advanced customization in the Context Prompt feature, like highlighting the current parameter to be input in bold, you can use the [ContextPromptOpen](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptOpen_EV.html) and [ContextPromptUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextPromptUpdate_EV.html) events.
 
 For example, add the bold items in the ContextPromptOpen event handler. The indices for the exact position of the text that needs to be bold has to be manually calculated and specified along with some text information associated with that particular argument. The following code snippet illustrates this.
 
@@ -1211,7 +1151,7 @@ Supports built-in tooltip that appears, when the mouse pointer is placed over te
 
 ![](Intellisense-images/Intellisense_img5.png)
 
-Context ToolTip can be populated with additional information on the corresponding lexem by handling the `UpdateContextTooltip` event of EditControl.
+Context ToolTip can be populated with additional information on the corresponding lexem by handling the [UpdateContextTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UpdateContextToolTip_EV.html) event in EditControl.
 
 {% tabs %}
 
@@ -1289,7 +1229,7 @@ End Sub
 
 ### Customization
 
-The brush for the Context ToolTip background can be set by using the `ContextTooltipBackgroundBrush` property. And also the border color of the ContextToolTip form can be customized by using the `ContextTooltipBorderColor` property. `ContextToolTip` window can be shown or hidden by setting the `ShowContextTooltip` property to `true`.
+The brush for the Context ToolTip background can be set by using the [ContextTooltipBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextTooltipBackgroundBrush.html) property. And also the border color of the ContextToolTip form can be customized by using the [ContextTooltipBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextTooltipBorderColor.html) property. `ContextToolTip` window can be shown or hidden by setting the [ShowContextTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowContextTooltip.html) property to `true`.
 
 {% tabs %}
 
@@ -1317,7 +1257,7 @@ Me.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange
 {% endtabs %}
 
 
-It is also possible to specify the time delay after which the tooltip should be displayed by using the `ToolTipDelay` property.
+It is also possible to specify the time delay after which the tooltip should be displayed by using the [ToolTipDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ToolTipDelay.html) property.
 
 {% tabs %}
 
@@ -1340,7 +1280,7 @@ Me.edtiControl1.ToolTipDelay = 1000
 
 {% endtabs %}
 
-The Context ToolTip window is also closed by using the `CloseContextTooltip` function.
+The Context ToolTip window is also closed by using the [CloseContextTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CloseContextTooltip.html) function.
 
 {% tabs %}
 
@@ -1370,7 +1310,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\W
 
 Provides auto complete option to predict user input and appends with predefined data, when user is typing information matches it.
 
-Set the `UseAutocomplete` property associated with the IContextChoiceController to `true`, to enable this functionality while using Context Choice.
+Set the [UseAutocomplete](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~UseAutocomplete.html) property associated with the [IContextChoiceController](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) to `true`, to enable this functionality while using Context Choice.
 
 {% tabs %}
 
@@ -1401,7 +1341,7 @@ End Sub
 
 ## Auto correct
 
-Provides `AutoReplaceTriggers` option, which allows the control to automatically auto correct the predefined typo errors. Auto Replace Triggers can be enabled or disabled by using the `UseAutoreplaceTriggers` property.
+Provides `AutoReplaceTriggers` option, which allows the control to automatically auto correct the predefined typo errors. Auto Replace Triggers can be enabled or disabled by using the [UseAutoreplaceTriggers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseAutoreplaceTriggers.html) property.
 
 ![](Intellisense-images/Intellisense_img6.jpeg)
 

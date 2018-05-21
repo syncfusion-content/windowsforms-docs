@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-Provides exclusive support to customize the background color, text, margin, split views, ScrollBar etc., Users can change the background color of the control, and even supports gradient effects by using the `BackgroundColor` property.
+Provides exclusive support to customize the background color, text, margin, split views, ScrollBar etc., Users can change the background color of the control, and even supports gradient effects by using the [BackgroundColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BackgroundColor.html) property.
 
 {% tabs %}
 
@@ -30,13 +30,13 @@ Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Dr
 
 ![](Appearance_images/Appearance_img1.jpg)
 
-The customization features of the `EditControl` are discussed under the following topics:
+The customization features of the [EditControl](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) are discussed under the following topics:
 
 ## Split views
 
 Provides in-built support for horizontal and vertical splitters, which display a single document in several views with horizontal and vertical orientations, allowing users to work on different areas of a document at the same time. 
 
-A maximum of four split views are supported. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four. `SplitFourQuadrants` function is used to split the EditControl into four equal parts.
+A maximum of four split views are supported. However, you can also limit the user to perform either a horizontal or vertical split, only if you wish to support two views instead of four. [SplitFourQuadrants](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SplitFourQuadrants.html) function is used to split the EditControl into four equal parts.
 
 {% tabs %}
 
@@ -59,22 +59,7 @@ Me.editControl1.SplitFourQuadrants()
 
 ### Orientation
 
-Split view can be oriented in both horizontal and vertical direction by using the following functions `SplitHorizontally` and `SplitVertically` of  EditControl. The following functions can be used to split the EditControl into two equal horizontal and vertical halves.
-
-<table>
-<tr>
-<th>
-Functions</th><th>
-Description</th></tr>
-<tr>
-<td>
-SplitHorizontally</td><td>
-Splits the EditControl into two equal horizontal halves</td></tr>
-<tr>
-<td>
-SplitVertically</td><td>
-Splits the EditControl into two equal vertical halves</td></tr>
-</table>
+Split view can be oriented in both horizontal and vertical direction by using the following functions [SplitHorizontally](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SplitHorizontally.html) and [SplitVertically](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SplitVertically.html) of EditControl. These functions are used to split the EditControl into two equal horizontal and vertical halves.
 
 {% tabs %}
 
@@ -103,18 +88,7 @@ In EditControl, user can customize the splitter background color and also disabl
 
 ### Show horizontal splitter
 
-The horizontal splitters can be enabled or disabled by setting `ShowHorizontalSplitters` property of EditControl.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowHorizontalSplitters</td><td>
-Specifies a value that indicates whether horizontal splitters are visible</td></tr>
-</table>
+The horizontal splitters can be enabled or disabled by setting [ShowHorizontalSplitters](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowHorizontalSplitters.html) property in EditControl.
 
 {% tabs %}
 
@@ -139,18 +113,7 @@ Me.editControl1.ShowHorizontalSplitters = False
 
 ### Show vertical splitter
 
-The vertical splitters can be enabled or disabled by setting `ShowVerticalSplitters` property of EditControl.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowVerticalSplitters</td><td>
-Specifies a value that indicates whether vertical splitters are visible</td></tr>
-</table>
+The vertical splitters can be enabled or disabled by setting [ShowVerticalSplitters](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowVerticalSplitters.html) property in EditControl.
 
 {% tabs %}
 
@@ -175,18 +138,7 @@ Me.editControl1.ShowVerticalSplitters = False
 
 ### Splitter background color 
 
-`SplitterBackgroundBrush` property helps to customize the background color of splitter in EditControl.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-SplitterBackgroundBrush</td><td>
-Specifies the Background Brush of Horizontal / Vertical splitters</td></tr>
-</table>
+[SplitterBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SplitterBackgroundBrush.html) property helps to customize the background color of horizontal or vertical splitter in EditControl.
 
 {% tabs %}
 
@@ -222,15 +174,15 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-HorizontalSplitterPosition</td><td>
+{{ '[HorizontalSplitterPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~HorizontalSplitterPosition.html)' | markdownify }}</td><td>
 Specifies position of the horizontal splitter</td></tr>
 <tr>
 <td>
-TopVerticalSplitterPosition</td><td>
+{{ '[TopVerticalSplitterPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TopVerticalSplitterPosition.html)' | markdownify }}</td><td>
 Specifies position of the top vertical splitter</td></tr>
 <tr>
 <td>
-BottomVerticalSplitterPosition</td><td>
+{{ '[BottomVerticalSplitterPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BottomVerticalSplitterPosition.html)' | markdownify }}</td><td>
 Specifies position of the bottom vertical splitter</td></tr>
 </table>
 
@@ -264,7 +216,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\W
 
 ## Single line mode
 
-Supports a single-line mode that renders just like a regular TextBox. EditControl can be operated in a simple text box with syntax highlighting, editing, and clipboard operations etc., by setting `SingleLineMode` property to `true`. Its default value is `false`.
+Supports a single-line mode that renders just like a regular TextBox. EditControl can be operated in a simple text box with syntax highlighting, editing, and clipboard operations etc., by setting [SingleLineMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SingleLineMode.html) property to `true`. Its default value is `false`.
 
 {% tabs %}
 
@@ -292,7 +244,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\W
 
 ## Right-to-left (RTL) support 
 
-`EditControl` elements can be aligned in right-to-left layout. `EditControl` is laid out from the right to left when `RenderRightToLeft` property is set to `true`. Its default value is `false`.  
+`EditControl` elements can be aligned in right-to-left layout. It is laid out from the right to left when [RenderRightToLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RenderRightToLeft.html) property is set to `true`. Its default value is `false`.  
 
 {% tabs %}
 
@@ -327,18 +279,7 @@ In EditControl, we are able to customize the text color and its border. The foll
 
 ### Text Color
 
-`SetTextColor` function helps to customize the appearance of the text color in a specific range of lines. 
-
-<table>
-<tr>
-<th>
-Function</th><th>
-Description</th></tr>
-<tr>
-<td>
-SetTextColor</td><td>
-Sets the color of the text for the EditControl</td></tr>
-</table>
+[SetTextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetTextColor.html) function helps to customize the appearance of the text color in a specific range of lines. 
 
 {% tabs %}
 
@@ -365,23 +306,7 @@ Me.editControl1.SetTextColor(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 ### Text border color
 
-`SetTextBorder` function of EditControl helps to set the border and simultaneously we can remove the border of the text using the `RemoveTextBorder` function. The following table explain regarding this functions and also the parameter value used in these functions.
-
-<table>
-<tr>
-<th>
-Functions</th><th>
-Description</th></tr>
-<tr>
-<td>
-SetTextBorder</td><td>
-Sets border around text</td></tr>
-<tr>
-<td>
-RemoveTextBorder</td><td>
-Removes border around text with given coordinates</td></tr>
-</table>
-
+[SetTextBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetTextBorder.html) function in EditControl helps to set the border and simultaneously we can remove the border of the text using the [RemoveTextBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveTextBorder.html) function. The following table explains regarding the parameter value used in these functions.
 
 <table>
 <tr>
@@ -390,11 +315,11 @@ EditControl border enumerator</th><th>
 Description</th></tr>
 <tr>
 <td>
-FrameBorderStyle</td><td>
+{{ '[FrameBorderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.FrameBorderStyle.html)' | markdownify }}</td><td>
 Specifies the style of border line. The options provided are * Dash* DashDot* Dot* None* Solid* Wave</td></tr>
 <tr>
 <td>
-<br>BorderWeight</td><td>
+{{ '[BorderWeight](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.BorderWeight.html)' | markdownify }}</td><td>
 Specifies the weight of the border line. The options provided are * Bold* Double* Thin</td></tr>
 </table>
 
@@ -427,7 +352,7 @@ Displays additional information regarding the contents in the EditControl. Infor
 
 ### user margin visibility
 
-The User Margin feature can be turned on by setting the `ShowUserMargin` property to `true`. Its default value is `false`. 
+The User Margin feature can be turned on by setting the [ShowUserMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowUserMargin.html) property to `true`. Its default value is `false`. 
 
 {% tabs %}
 
@@ -457,11 +382,11 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-UserMarginWidth</td><td>
+{{ '[UserMarginWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UserMarginWidth.html)' | markdownify }}</td><td>
 Get / sets the width of the user margin</td></tr>
 <tr>
 <td>
-UserMarginPlacement</td><td>
+{{ '[UserMarginPlacement](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UserMarginPlacement.html)' | markdownify }}</td><td>
 Specifies placement of user margin</td></tr>
 </table>
 
@@ -499,15 +424,15 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-UserMarginBackgroundColor</td><td>
+{{ '[UserMarginBackgroundColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UserMarginBackgroundColor.html)' | markdownify }}</td><td>
 Specifies BrushInfo object that is used when the user margin is being drawn</td></tr>
 <tr>
 <td>
-UserMarginTextColor</td><td>
+{{ '[UserMarginTextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UserMarginTextColor.html)' | markdownify }}</td><td>
 Specifies default color of user margin text</td></tr>
 <tr>
 <td>
-UserMarginBorderColor</td><td>
+{{ '[UserMarginBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UserMarginBorderColor.html)' | markdownify }}</td><td>
 Specifies color of the user margin border</td></tr>
 </table>
 
@@ -538,7 +463,7 @@ Me.editControl1.UserMarginTextColor = Color.Green
 
 #### How to add custom text in user margin
 
-It is possible to set custom text in the user margin on a line-by-line basis by handling the `DrawUserMarginText` event of the EditControl. Moreover, it is also possible to customize the font settings for the text of the user margin.
+It is possible to set custom text in the user margin on a line-by-line basis by handling the [DrawUserMarginText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DrawUserMarginText_EV.html) event of the EditControl. Moreover, it is also possible to customize the font settings for the text of the user margin.
 
 {% tabs %}
 
@@ -602,7 +527,7 @@ Selection margin is a thin vertical strip along the left side of the EditControl
 
 ### Selection margin visibility
 
-`ShowSelectionMargin` property allows you to show or hide this selection margin. Its default value is `true`. 
+[ShowSelectionMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowSelectionMargin.html) property allows you to show or hide this selection margin. Its default value is `true`. 
 
 {% tabs %}
 
@@ -632,15 +557,16 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-SelectionMarginForegroundColor</td><td>
+{{ '[SelectionMarginForegroundColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SelectionMarginForegroundColor.html)' | markdownify }}</td><td>
 Specifies foreground color of the selection margin</td></tr>
 <tr>
 <td>
-SelectionMarginBackgroundColor</td><td>
+{{ '[SelectionMarginBackgroundColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SelectionMarginBackgroundColor.html)' | markdownify }}
+</td><td>
 Specifies background color of the selection margin</td></tr>
 <tr>
 <td>
-SelectionMarginWidth</td><td>
+{{ '[SelectionMarginWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SelectionMarginWidth.html)' | markdownify }}</td><td>
 Sets the width of the selection margin</td></tr>
 </table>
 
@@ -678,22 +604,7 @@ Provides an extensive support of indicator margin for the purpose of displaying 
 
 ### Indicator margin visibility
 
-Indicator margin can be enabled or disabled by using the `ShowIndicatorMargin` property. Its default value is `true`, to hide the indicator margin turn on its value to `false`. `MarkerAreaWidth` property of EditControl sets the width of marker area.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowIndicatorMargin</td><td>
-Specifies a value indicating whether bookmarks and indicator margins should be visible</td></tr>
-<tr>
-<td>
-MarkerAreaWidth</td><td>
-Specifies width of marker area</td></tr>
-</table>
+Indicator margin can be enabled or disabled by using the [ShowIndicatorMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndicatorMargin.html) property. Its default value is `true`, to hide the indicator margin turn on its value to `false`. [MarkerAreaWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MarkerAreaWidth.html) property in EditControl sets the width of marker area.
 
 {% tabs %}
 
@@ -728,7 +639,7 @@ Me.editControl1.MarkerAreaWidth = 50
 
 ### Customize the appearance of indicator margin
 
-`IndicatorMarginBackColor` property helps to customize the background color of indicator margin in EditControl.
+[IndicatorMarginBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndicatorMarginBackColor.html) property helps to customize the background color of indicator margin in EditControl.
 
 {% tabs %}
 
@@ -751,7 +662,7 @@ Me.editControl1.IndicatorMarginBackColor = Color.Red
 
 ## Selection color customization
 
-EditControl also provides an options to change the back color of selected range of text. `SetBackgroundColor` function of EditControl is used to set the background color for a specified range of text.
+EditControl also provides an options to change the back color of selected range of text. [SetBackgroundColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetBackgroundColor.html) function in EditControl is used to set the background color for a specified range of text.
 
 {% tabs %}
 
@@ -772,10 +683,10 @@ Me.editControl1.SetBackgroundColor(New Point(1, 1), New Point(9, 9), Color.Alice
 
 ### Set up background for individual line or selected block of text
 
-EditControl also allows setting custom background color for individual lines as well as for selected block of text. You can set any desired background to a particular line or block of selection,as explained below.
+EditControl also allows setting custom background color for individual lines as well as for selected block of text. You can set any desired background to a particular line or block of selection, as explained below.
 
-* Register a back color format with the EditControl by using its `RegisterBackColorFormat` function, with appropriate values for BackgroundColor, ForegroundColor and HatchStyle parameters.
-* Set the background color to the entire line or just the selected text by using the `SetLineBackColor` and `SetSelectionBackColor` functions respectively.
+* Register a back color format with the EditControl by using its [RegisterBackColorFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisterBackColorFormat.html) function, with appropriate values for BackgroundColor, ForegroundColor and HatchStyle parameters.
+* Set the background color to the entire line or just the selected text by using the [SetLineBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetLineBackColor.html) and [SetSelectionBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetSelectionBackColor.html) functions respectively.
 
 {% tabs %}
 
@@ -818,22 +729,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 #### Remove applied background for individual line or selected block of text
 
-By using `RemoveLineBackColor` and `RemoveSelectionBackColor` functions of EditControl we were able to remove the background color for individual lines or selected blocks of text. 
-
-<table>
-<tr>
-<th>
-Functions</th><th>
-Description</th></tr>
-<tr>
-<td>
-RemoveLineBackColor</td><td>
-Removes line back color</td></tr>
-<tr>
-<td>
-RemoveSelectionBackColor</td><td>
-Removes background coloring from the selected text</td></tr>
-</table>
+By using [RemoveLineBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveLineBackColor.html) and [RemoveSelectionBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveSelectionBackColor.html) functions in EditControl we were able to remove the background color for individual lines or selected blocks of text. 
 
 {% tabs %}
 
@@ -877,7 +773,7 @@ Provides `StatusBar` support that helps to display information about the current
 
 ### Status bar settings
 
-`StatusBarSettings` property contains many sub properties, which can be used to customize the appearance and visibility of the status bar and its panels. The following table represents some of sub properties in StatusBarSettings.
+[StatusBarSettings](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~StatusBarSettings.html) property contains many sub properties, which can be used to customize the appearance and visibility of the status bar and its panels. The following table represents some of sub properties in StatusBarSettings.
 
 <table>
 <tr>
@@ -886,39 +782,40 @@ StatusBarSettings property</th><th>
 Description</th></tr>
 <tr>
 <td>
-TextPanel</td><td>
+{{ '[TextPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~TextPanel.html)' | markdownify }}
+</td><td>
 Specifies StatusBarPanelSettings object for text panel</td></tr>
 <tr>
 <td>
-StatusPanel</td><td>
+{{ '[StatusPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~StatusPanel.html)' | markdownify }}</td><td>
 Specifies StatusBarPanelSettings object for status panel</td></tr>
 <tr>
 <td>
-EncodingPanel</td><td>
+{{ '[EncodingPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~EncodingPanel.html)' | markdownify }}</td><td>
 Specifies StatusBarPanelSettings object for encoding panel</td></tr>
 <tr>
 <td>
-FileNamePanel</td><td>
+{{ '[FileNamePanel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~FileNamePanel.html)' | markdownify }}</td><td>
 Specifies StatusBarPanelSettings object for fileName panel</td></tr>
 <tr>
 <td>
-CoordinatePanel</td><td>
+{{ '[CoordinatePanel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~CoordsPanel.html)' | markdownify }}</td><td>
 Specifies StatusBarPanelSettings object for coordinate panel</td></tr>
 <tr>
 <td>
-InsertPanel</td><td>
+{{ '[InsertPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~InsertPanel.html)' | markdownify }}</td><td>
 Specifies StatusBarPanelSettings object for insert panel</td></tr>
 <tr>
 <td>
-Panels</td><td>
+{{ '[Panels](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~Panels.html)' | markdownify }}</td><td>
 Gets the list of status bar panel settings</td></tr>
 <tr>
 <td>
-StatusBar</td><td>
+{{ '[StatusBar](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~StatusBar.html)' | markdownify }}</td><td>
 Gets underlying status bar</td></tr>
 <tr>
 <td>
-GripVisibility</td><td>
+{{ '[GripVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~GripVisibility.html)' | markdownify }}</td><td>
 Gets or sets the visibility of the status bar sizing grip. The options provided are as follows:* Visible* Hidden</td></tr>
 </table>
 
@@ -947,7 +844,7 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 #### Visibility settings
 
-StatusBar can be enabled or hidden by setting the `StatusBarSettings.Visible` property. Its default value is `false`. The individual StatusBar panels can also be optionally shown or hidden by using the `Visible` property corresponding to the respective panel.
+StatusBar can be enabled or hidden by setting the [StatusBarSettings.Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~Visible.html) property. Its default value is `false`. The individual StatusBar panels can also be optionally shown or hidden by using the `Visible` property corresponding to the respective panel.
 
 {% tabs %}
 
@@ -995,7 +892,7 @@ EditControl status bar supports different visual styles for its appearance. Some
 * Office2007
 * Office2010
 
-The visual style can be applied for the StatusBar using `VisualStyle` property. The following code example illustrates how to change the visual style for StatusBar in EditControl.
+The visual style can be applied for the StatusBar using [VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.StatusBarSettings~VisualStyle.html) property. The following code example illustrates how to change the visual style for StatusBar in EditControl.
 
 **Default**
 
@@ -1314,11 +1211,66 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\W
 
 ## ScrollBar 
 
-EditControl can display a data object, such as a document or a bitmap, that is larger than the window's client area. With the help of scroll bar, the user can scroll a data object in the client area to bring into view the portions of the object that extend beyond the borders of the window.
+`EditControl` can display a data object, such as a document or a bitmap, that is larger than the window's client area. With the help of scroll bar, the user can scroll a data object in the client area to bring into view the portions of the object that extend beyond the borders of the window.
+
+Buttons can be displayed at the top, bottom, left or right of the scroll bars by using the below given properties.
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Description</th></tr>
+<tr>
+<td>
+{{ '[ScrollbarBottomButtons](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollbarBottomButtons.html)' | markdownify }}</td><td>
+Gets buttons at the bottom of vertical scrollbar</td></tr>
+<tr>
+<td>
+{{ '[ScrollbarLeftButtons](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollbarLeftButtons.html)' | markdownify }}</td><td>
+Gets buttons on the left of vertical scrollbar</td></tr>
+<tr>
+<td>
+{{ '[ScrollbarRightButtons](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollbarRightButtons.html)' | markdownify }}</td><td>
+Gets buttons on the right of vertical scrollbar</td></tr>
+<tr>
+<td>
+{{ '[ScrollbarTopButtons](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollbarTopButtons.html)' | markdownify }}</td><td>
+Gets buttons at the top of vertical scrollbar</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.ScrollbarBottomButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton1 });
+
+this.editControl1.ScrollbarLeftButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton2 });
+
+this.editControl1.ScrollbarRightButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton3 });
+
+this.editControl1.ScrollbarTopButtons.AddRange(new System.Windows.Forms.Control[] { this.scrollbarButton4 });
+
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.ScrollbarBottomButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton1}) 
+
+Me.editControl1.ScrollbarLeftButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton2}) 
+
+Me.editControl1.ScrollbarRightButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton3}) 
+
+Me.editControl1.ScrollbarTopButtons.AddRange(New System.Windows.Forms.Control() {Me.scrollbarButton4}) 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Customize the scrollbar visibility
 
-By using the `AlwaysShowScrollers` property of EditControl, we can enable or disable the scroll bar.
+By using the [AlwaysShowScrollers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AlwaysShowScrollers.html) property in EditControl, we can enable or disable the scroll bar.
 
 {% tabs %}
 
@@ -1345,6 +1297,8 @@ There are various types of scrolling mode in EditControl as follows:
 * Deferred - Scrolls the control when thumb track is completed.
 * Pixel - Scrolls line by line.
 
+[VScrollMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~VScrollMode.html) property helps to set the various type of scrolling mode in EditContol by using [ScrollMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.ScrollMode.html) enumerator.
+
 {% tabs %}
 
 {% highlight C# %}
@@ -1368,27 +1322,7 @@ Me.editControl1.VScrollMode = Syncfusion.Windows.Forms.Edit.ScrollMode.Pixel
 
 ### Customize the appearance of scrollbar
 
-Provide Office 2007 appearance to scroll bars by setting the `ScrollVisualStyle` property to Office2007. It supports all the three Office 2007 Color Schemes (Black, Blue and Silver), which can be set by using the `ScrollColorScheme` property. Also, custom colors can be applied to the scroll bars of the EditControl. This can be done by setting the ScrollColorScheme property to Managed.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ScrollVisualStyle</td><td>
-Specifies the visual style of the scroll bar</td></tr>
-<tr>
-<td>
-ScrollColorScheme</td><td>
-Specifies the scroll bar color scheme when Office2007 or Office2007Generic Style is set. The options provided are
-<ul>
-<li> Black</li>
-<li> Blue</li>
-<li> Silver</li>
-<li> Managed</li></ul></td></tr>
-</table>
+Provide Office 2007 appearance to scroll bars by setting the [ScrollVisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollVisualStyle.html) property to Office2007. It supports all the three Office 2007 Color Schemes (Black, Blue and Silver), which can be set by using the [ScrollColorScheme](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollColorScheme.html) property. Also, custom colors can be applied to the scroll bars of the EditControl. This can be done by setting the ScrollColorScheme property to Managed.
 
 {% tabs %}
 
@@ -1410,6 +1344,7 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(this, Color.Green);
 {% highlight VB %}
 
 Me.editControl1.ScrollVisualStyle = ScrollBarCustomDrawStyles.Office2007
+
 Me.editControl1.ScrollColorScheme = Office2007ColorScheme.Blue
 
 ' Set custom color for the scroll bar.
@@ -1438,7 +1373,7 @@ Supports an advanced feature of VS 2005 like Code Snippets. It is also used to l
 
 The code snippets allow you to input data to the highlighted fields.
 
-Code Snippets can also be inserted into the EditControl by using the static `Extract` function of the `CodeSnippetsExtractor` class. Extract function takes the following two parameters:
+Code Snippets can also be inserted into the EditControl by using the static `Extract` function of the `CodeSnippetsExtractor` class which was implemented in the demo sample. Extract function takes the following two parameters:
 
 1. Path of the folder containing the code snippets.
 2. Instance of the EditControl into which the extracted code snippet should be inserted.
@@ -1470,7 +1405,7 @@ Function</th><th>
 Description</th></tr>
 <tr>
 <td>
-AddCodeSnippet</td><td>
+{{ '[AddCodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AddCodeSnippet.html)' | markdownify }}</td><td>
 Adds new code snippet to current language</td></tr>
 </table>
 
@@ -1492,7 +1427,7 @@ Me.editControl1.AddCodeSnippet(String title, ArrayList literals, String code)
 
 {% endtabs %}
 
-The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static `Extract` function of the `CodeSnippetsExtractor` class is used to extract and fill the container object. The container object can be added to the SnippetsContainer of the EditControl by using the `AddContainer` function. 
+The code snippets can also be contained in containers and displayed in the pop-up of the snippets. The static `Extract` function of the `CodeSnippetsExtractor` class is used to extract and fill the container object. The container object can be added to the [SnippetsContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~SnippetsContainer.html) of the EditControl by using the [AddContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.CodeSnippets.CodeSnippetsContainer~AddContainer.html) function. 
 
 {% tabs %}
 
@@ -1579,7 +1514,7 @@ The Literal element is used to identify a replacement for a piece of code that i
 
 **Showing code snippets**
 
-You can also programmatically show the choice list of code snippets by calling `ShowCodeSnippets` function given below.
+You can also programmatically show the choice list of code snippets by calling [ShowCodeSnippets](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowCodeSnippets.html) function given below.
 
 {% tabs %}
 
@@ -1602,7 +1537,7 @@ Me.editControl1.ShowCodeSnippets()
 
 **Border settings**
 
-Border can be set for the active code snippets by using the `DrawCodeSnippetBorder` property of the EditControl. And also we can set the size of CodeSnippet popup window by using the `CodeSnipptSize` property of EditControl.
+Border can be set for the active code snippets by using the [DrawCodeSnippetBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DrawCodeSnippetBorder.html) property in EditControl. And also we can set the size of CodeSnippet popup window by using the [CodeSnipptSize](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CodeSnipptSize.html) property in EditControl.
 
 {% tabs %}
 
@@ -1626,7 +1561,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\W
 
 ## Customize cursor appearance
 
-Cursor appearance can be customized by using the `Cursor` property. The cursor appearance can be modified to arrow, cross, hand etc.
+Cursor appearance can be customized by using the [Cursor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Cursor.html) property. The cursor appearance can be modified to arrow, cross, hand etc.
 
 {% tabs %}
 
@@ -1651,7 +1586,7 @@ Me.editControl1.Cursor = Me.currentCursor
 
 ## Suspend and resume painting
 
-Painting of the EditControl can be suspended using the `Suspend` function call. Painting can be resumed using `Resume` function call. Suspend and Resume functions internally call the `Interop` and `LockWindowUpdate` function to suspend and resume painting of the EditControl.
+Painting of the EditControl can be suspended using the [Suspend](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SuspendPainting.html) function call. Painting can be resumed using [Resume](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ResumePainting.html) function call. Suspend and Resume functions internally call the `Interop` and `LockWindowUpdate` function to suspend and resume painting of the EditControl.
 
 {% tabs %}
 
