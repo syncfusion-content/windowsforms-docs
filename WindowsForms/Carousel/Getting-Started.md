@@ -76,7 +76,6 @@ Carousel control can be added to the application by dragging it from the toolbox
 * Syncfusion.Grid.Windows.dll
 * Syncfusion.Shared.Base.dll
 * Syncfusion.Shared.Windows.dll
-* Syncfusion.SpellChecker.Base.dll
 * Syncfusion.Tools.Base.dll
 
 ![](Getting-Started_images/Carousel_Toolbox1.png) 
@@ -92,7 +91,6 @@ To add control manually in C#, follow the given steps:
  * Syncfusion.Shared.Windows.dll
  * Syncfusion.Grid.Base.dll
  * Syncfusion.Grid.Windows.dll
- * Syncfusion.SpellChecker.Base.dll
 
 2. Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
