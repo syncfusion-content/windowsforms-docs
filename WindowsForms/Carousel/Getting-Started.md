@@ -37,7 +37,7 @@ Syncfusion.Tools.Windows contains the class that handles all UI operations and c
 </tr>
 </table>
 
-## Install Nuget packages
+## Install NuGet packages
 
 To create the Windows Forms application with Carousel, the following nuget packages should be installed.
  

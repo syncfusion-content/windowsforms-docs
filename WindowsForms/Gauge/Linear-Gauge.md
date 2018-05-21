@@ -49,7 +49,7 @@ The Syncfusion.Gauge.Windows contains the class that handles all UI operations a
 </table>
 
 
-# Installing Nuget Packages
+# Installing NuGet Packages
 
 To create the Windows Forms application with LinearGauge, the following nuget packages should be installed.
  
