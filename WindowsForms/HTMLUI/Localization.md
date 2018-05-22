@@ -9,14 +9,14 @@ documentation: ug
 
 ## Localization
 
-Localization is the process of making application multilingual by formatting the content according to the cultures. HTMLUI control can be localized in any Languages, based on application requirement by following below steps.
+Localization is the process of making application multilingual by formatting the content according to the cultures. HTMLUIControl can be localized in any Languages, based on application requirement by following below steps.
 
 Step 1: Need to initialize the LocalizationProvider class, inherited from the ILocalizationProvider interface, before the initializeComponent call in the constructor of an application.
 
-Step 2: It will add the GetLocalizedString function in the LocalizationProvider class.It is needed to provide the Localization content, for the required components used in HTMLUI control.
+Step 2: It will add the GetLocalizedString function in the LocalizationProvider class.It is needed to provide the Localization content, for the required components used in HTMLUIControl.
 
 For example:
-Here, HTMLUI control is localized in German Language.
+Here, HTMLUIControl is localized in German Language.
 
 {% tabs %}
 

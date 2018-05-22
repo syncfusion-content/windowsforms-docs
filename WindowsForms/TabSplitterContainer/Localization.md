@@ -7,7 +7,7 @@ control: TabSplitterContainer
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. TabSplitterContainer control can be localized in any Languages, based on application requirement by following below steps.
 
@@ -127,8 +127,4 @@ End Class
 
 {% endtabs %}
 
-![](Localization_images/Localization1.png)
-![](Localization_images/Localization2.png)
-![](Localization_images/Localization3.png)
-![](Localization_images/Localization4.png)
-![](Localization_images/Localization5.png)
+![](Localization_images/Localization.png)
