@@ -549,12 +549,10 @@ Error lexems can be added to the language by declaring a format names Error and 
 
 <lexems>
 <lexem BeginBlock="pubblic" Type="Error" Priority="-10" />
-<lexem BeginBlock="#endif" Type="Error" Priority="-10" />
 <lexem BeginBlock="#else" Type="Error" Priority="-10" />
 </lexems>
 
  <splits>
-      <split>#endif</split>	 
       <split>#else</split>	 
   </splits> 
 
