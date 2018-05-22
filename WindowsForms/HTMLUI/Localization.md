@@ -7,7 +7,7 @@ control: HTMLUI
 documentation: ug
 ---
 
-## Localization
+# Localization
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. HTMLUIControl can be localized in any Languages, based on application requirement by following below steps.
 
