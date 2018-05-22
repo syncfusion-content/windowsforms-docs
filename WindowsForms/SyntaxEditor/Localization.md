@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-Localization is the process of translating the application resources into different language for the specific cultures. `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using `ILocalizationProvider`.
+Localization is the process of translating the application resources into different language for the specific cultures. `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html).
 
 The following steps helps to localize the dialog boxes in the EditControl:
 
@@ -33,11 +33,11 @@ Imports Syncfusion.Windows.Forms.Edit
 
 {% endtabs %}
 
-2) Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.Windows.Forms namespace.
+2) Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
 
 3) Return the localized versions of the strings corresponding to the string identifiers.
 
-4) String identifiers are defined in the `ResourceIdentifiers` and the `EditResourceIdentifiers` classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
+4) String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Localization.Localizer+EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ Imports Syncfusion.Windows.Forms.ResourceIdentifiers
 
 {% endtabs %}
 
-5) Assign this instance to the `Provider` property of the `LocalizationProvider` class before the InitializeComponent call in the constructor of the application. 
+5) Assign this instance to the [Provider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider~Provider.html) property of the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
 
 {% tabs %}
 
@@ -236,6 +236,154 @@ End Function
 {% endtabs %}
 
 ![](Localization-and-Globalization_images\Localization-and-Globalization_img5.png)
+
+**Replace Dialog Box**
+
+Provides Microsoft Visual Studio text editor like Find and Replace dialog window with similar options, for text search, highlighting and replace.
+
+For example: Here, `ReplaceDialog` is localized in Chinese Language.
+
+{% tabs %}
+
+{% highlight c# %}
+
+public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
+{
+
+switch (name)
+{
+
+case Localizer.EditResourceIdentifiers.FRTitle:
+return "更换";
+
+case Localizer.EditResourceIdentifiers.FRrdbSelection:
+return "全部替换";
+                
+case Localizer.EditResourceIdentifiers.FRbtnReplace:
+return "更换";
+                
+case Localizer.EditResourceIdentifiers.FRbtnReplaceAll:
+return "全部替换";
+
+case Localizer.EditResourceIdentifiers.FRGroupTitle:
+return "全部替换";
+
+case Localizer.EditResourceIdentifiers.FRbtnClose:
+return "全部替换";
+
+case Localizer.EditResourceIdentifiers.FRlblFind:
+return "全部替换";
+
+case Localizer.EditResourceIdentifiers.FRlblReplace:
+return "全部替换";
+
+}
+
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) AsString
+
+Select Case name
+
+Case Localizer.EditResourceIdentifiers.FRTitle
+Return "更换"
+
+Case Localizer.EditResourceIdentifiers.FRrdbSelection
+Return "全部替换"
+                
+Case Localizer.EditResourceIdentifiers.FRbtnReplace
+Return "更换"
+                
+Case Localizer.EditResourceIdentifiers.FRbtnReplaceAll
+Return "全部替换"
+
+Case Localizer.EditResourceIdentifiers.FRGroupTitle
+Return "全部替换"
+
+Case Localizer.EditResourceIdentifiers.FRbtnClose
+Return "全部替换
+
+Case Localizer.EditResourceIdentifiers.FRlblFind
+Return "全部替换"
+
+Case Localizer.EditResourceIdentifiers.FRlblReplace
+Return "全部替换"
+
+End Select
+
+End Function
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Localization-and-Globalization_images\Localization-and-Globalization_img1.png)
+
+**GoTo Dialog Box**
+
+Provides `GoToLine` dialog window that helps navigate to required line number.
+
+For example: Here, `GoToDialog` is localized in Chinese Language.
+
+{% tabs %}
+
+{% highlight c# %}
+
+public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
+{
+
+switch (name)
+{
+
+case Localizer.EditResourceIdentifiers.FGoTitle:
+return "去线";
+
+case Localizer.EditResourceIdentifiers.FGoNumber:
+return "电话号码{0}-{1}";
+
+case Localizer.EditResourceIdentifiers.FGobtnOK:
+return "好";
+
+case Localizer.EditResourceIdentifiers.FGobtnCancel:
+return "取消";
+
+}
+
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) AsString
+
+Select Case name
+
+Case Localizer.EditResourceIdentifiers.FGoTitle
+Return "去线"
+
+Case Localizer.EditResourceIdentifiers.FGoNumber
+Return "电话号码{0}-{1}"
+
+Case Localizer.EditResourceIdentifiers.FGobtnOK
+Return "好"
+
+Case Localizer.EditResourceIdentifiers.FGobtnCancel
+Return "取消"
+
+End Select
+
+End Function
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Localization-and-Globalization_images\Localization-and-Globalization_img2.png)
 
 **Context Menu**
 

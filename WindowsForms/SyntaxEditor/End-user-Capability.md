@@ -22,7 +22,7 @@ This can be done in the designer using the Keys Binding dialog as illustrated in
    3. Press the desired key or key combination.
    4. Now, click the Assign button, to assign this keystroke combination as the shortcut for that particular standard command. Click OK.
 
-`KeyBinder` property is used to get the key binder, and the `KeyBindingProcessor` property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked using the `ShowKeysBindingEditor` function of the EditControl.
+[KeyBinder](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~KeyBinder.html) property is used to get the key binder, and the [KeyBindingProcessor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~KeyBindingProcessor.html) property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked using the [ShowKeysBindingEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowKeysBindingEditor.html) function in EditControl.
 
 ![](End-user-Capability_images/End-user-Capability_img1.png)
 
@@ -63,7 +63,7 @@ EditControl Find Dialog is now enhanced with an alert message box. This displays
 
 **Creating a class for own find dialog**
 
-Create a class for own find dialog that inherits the frmFindDialog class.
+Create a class for own find dialog that inherits the [frmFindDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.FrmFindDialog.html) class.
 
 {% tabs %}
 
@@ -162,23 +162,24 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-FindText</td><td>
+{{ '[FindText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindText.html)' | markdownify }}
+</td><td>
 Finds the first occurrence of the specified text as per the conditions specified like match case, match whole word, search hidden text and search up</td></tr>
 <tr>
 <td>
-FindRange</td><td>
+{{ '[FindRange](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindRange.html)' | markdownify }}</td><td>
 Searches for given string in the text of control and returns text range of first found occurrence</td></tr>
 <tr>
 <td>
-FindRegex</td><td>
+{{ '[FindRegex](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindRegex(Int32,Int32,String,Boolean,Boolean).html)' | markdownify }}</td><td>
 Looks for specified expression in text</td></tr>
 <tr>
 <td>
-FindCurrentText</td><td>
+{{ '[FindCurrentText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindCurrentText.html)' | markdownify }}</td><td>
 Finds the next occurrence of the word on which the cursor is presently on</td></tr>
 <tr>
 <td>
-FindNext</td><td>
+{{ '[FindNext](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindNext.html)' | markdownify }}</td><td>
 Finds the next occurrence of the current search text</td></tr>
 </table>
 
@@ -239,18 +240,7 @@ Me.editControl1.FindNext()
 
 **History properties**
 
-`FindHistory` property is used to add or remove items from the find history in the `FindDialog` box. 
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-FindHistory</td><td>
-Specifies history of Find dialog</td></tr>
-</table>
+[FindHistory](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindHistory.html) property is used to add or remove items from the find history in the `FindDialog` box. 
 
 The functions associated with the FindHistory property are used to perform the following operations.
 
@@ -344,11 +334,11 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-ReplaceText</td><td>
+{{ '[ReplaceText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceText.html)' | markdownify }}</td><td>
 Replaces the first occurrence of the specified text with the replacement text as per the conditions specified like match case, match whole word, search hidden text and search up</td></tr>
 <tr>
 <td>
-ReplaceAll</td><td>
+{{ '[ReplaceAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceAll.html)' | markdownify }}</td><td>
 Replaces all occurrences of the search text with the replacement text as per the conditions specified like match case, match whole word, search hidden text and search up</td></tr>
 </table>
 
@@ -381,7 +371,7 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
 {% endtabs %}
 
-`ReplaceHistory` property is used to add or remove items from the replace history in the Replace dialog box. Similarly, the `ReplaceSearchHistory` property is used to add or remove items from the find history in the Replace dialog box.
+[ReplaceHistory](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceHistory.html) property is used to add or remove items from the replace history in the Replace dialog box. Similarly, the [ReplaceSearchHistory](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceSearchHistory.html) property is used to add or remove items from the find history in the Replace dialog box.
 
 N> Refer to the following sample link that demonstrates the Find and Replace functionalities of EditControl.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Find and Replace
@@ -415,7 +405,7 @@ Me.editControl1.ShowGoToDialog()
 
 ### Go to line by programmatic
 
-Offer function named `GoTo` to navigate to any line programmatically.
+Offer function named [GoTo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GoTo.html) to navigate to any line programmatically.
 
 `linesAbove` argument can be used to specify the number of lines to be displayed above the pointer.
 
@@ -444,8 +434,6 @@ Me.editControl1.GoTo(lineNumber, linesAbove);
 
 {% endtabs %}
 
-`CurrentLine` property explained in the Positions and Offsets section, also does the same task as the `GoTo` function. 
-
 ## Font configuration
 
 Supports customization of fonts through the configuration file and `FormatsCustomization` dialog. 
@@ -468,13 +456,11 @@ The following code example shows customization of fonts through the configuratio
 
 {% endhighlight %} 
 
-EditControl supports font customization at run time through the use of the `fromFormatsConfig` dialog box which consists of three smaller controls like the ControlFormatSettings, ControlFormatsList and the ControlLanguageSelector.
+EditControl supports font customization at run time through the use of the [frmFormatsConfig](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.frmFormatsConfig.html) dialog box which consists of three smaller controls like the ControlFormatSettings, ControlFormatsList and the ControlLanguageSelector.
 
 * `ControlFormatSettings` - This dialog box contains the actual controls to customize all the rendering settings of the selected Format, including font settings. 
 * `ControlFormatsList` - This dialog consists of the list of currently existing formats in the configuration file. Also, it provides support to create new formats or delete existing ones. 
 * `ControlLanguageSelector` - This dialog has a Combo Box containing the list of configuration languages supported by the EditControl. The list gets updated when a new configuration language is added or an existing one is removed. 
-
-![](End-user-Capability_images/End-user-Capability_img7.jpg)
 
 {% tabs %}
 
@@ -512,6 +498,8 @@ this.editControl1.ShowFormatsCustomizationDialog();
 {% endhighlight %}
 
 {% endtabs %}
+
+![](End-user-Capability_images/End-user-Capability_img7.jpg)
 
 N> Refer to the following sample link that demonstrates the customization of font in EditControl.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Font Customization

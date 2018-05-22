@@ -17,7 +17,7 @@ Sections of code which form the outlining blocks can be specified using the Conf
 
 ### Configure outline
 
-The outlining blocks can be specified for code as well as for plain text. By Setting the `ShowOutliningCollapsers` property to `true`, we can enable or disable automatic outlining in EditControl. 
+The outlining blocks can be specified for code as well as for plain text. By Setting the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property to `true`, we can enable or disable automatic outlining in EditControl. 
 
 {% tabs %}
 
@@ -51,15 +51,16 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-SwitchCollapsingOn</td><td>
+{{ '[SwitchCollapsingOn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SwitchCollapsingOn.html)' | markdownify }}
+</td><td>
 Turns on collapse and collapse all option</td></tr>
 <tr>
 <td>
-SwitchCollapsingOff</td><td>
+{{ '[SwitchCollapsingOff](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SwitchCollapsingOff.html)' | markdownify }}</td><td>
 Turns off collapse option</td></tr>
 <tr>
 <td>
-ToggleLineCollapsing</td><td>
+{{ '[ToggleLineCollapsing](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ToggleLineCollapsing.html)' | markdownify }}</td><td>
 Toggles collapse option for current line</td></tr>
 </table>
 
@@ -111,19 +112,19 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-Collapse</td><td>
+{{ '[Collapse](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Collapse.html)' | markdownify }}</td><td>
 Collapses all regions in currently selected area or in the current line</td></tr>
 <tr>
 <td>
-Expand</td><td>
+{{ '[Expand](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Expand.html)' | markdownify }}</td><td>
 Expands all collapsed regions in currently selected area or in the current line</td></tr>
 <tr>
 <td>
-CollapseAll</td><td>
+{{ '[CollapseAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CollapseAll.html)' | markdownify }}</td><td>
 Collapses all regions</td></tr>
 <tr>
 <td>
-ExpandAll</td><td>
+{{ '[ExpandAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ExpandAll.html)' | markdownify }}</td><td>
 Expands all collapsed regions</td></tr>
 </table>
 
@@ -181,35 +182,35 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-OutliningBeforeCollapse</td><td>
+{{ '[OutliningBeforeCollapse](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutliningBeforeCollapse_EV.html)' | markdownify }}</td><td>
 Occurs before the region is about to collapse</td></tr>
 <tr>
 <td>
-OutliningBeforeExpand</td><td>
+{{ '[OutliningBeforeExpand](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutliningBeforeExpand_EV.html)' | markdownify }}</td><td>
 Occurs before the region is about to expand</td></tr>
 <tr>
 <td>
-OutliningCollapse</td><td>
+{{ '[OutliningCollapse](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutliningCollapse_EV.html)' | markdownify }}</td><td>
 Occurs when the region collapses</td></tr>
 <tr>
 <td>
-OutliningExpand</td><td>
+{{ '[OutliningExpand](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutliningExpand_EV.html)' | markdownify }}</td><td>
 Occurs when the region expands</td></tr>
 <tr>
 <td>
-CollapsedAll</td><td>
+{{ '[CollapsedAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CollapsedAll_EV.html)' | markdownify }}</td><td>
 Occurs when CollapseAll function was called</td></tr>
 <tr>
 <td>
-ExpandedAll</td><td>
+{{ '[ExpandedAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ExpandedAll_EV.html)' | markdownify }}</td><td>
 Occurs when ExpandedAll function was called</td></tr>
 <tr>
 <td>
-CollapsingAll</td><td>
+{{ '[CollapsingAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CollapsingAll_EV.html)' | markdownify }}</td><td>
 Occurs when CollapseAll function is called</td></tr>
 <tr>
 <td>
-ExpandingAll</td><td>
+{{ '[ExpandingAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ExpandingAll_EV.html)' | markdownify }}</td><td>
 Occurs when ExpandAll function is called</td></tr>
 </table>
 
@@ -217,7 +218,7 @@ The above events can be canceled, and can be used to optionally cancel the Outli
 
 **Outlining tooltip**
 
-EditControl provides the `ToolTip` support for Outlining. Outlining Tooltip is displayed for each collapsed outlining block and it shows the contents of the collapsed block. The Outlining Tooltip can be optionally shown or hidden by using the `ShowOutliningTooltip` property in EditControl. Its default value is `true`.
+EditControl provides the `ToolTip` support for Outlining. Outlining Tooltip is displayed for each collapsed outlining block and it shows the contents of the collapsed block. The Outlining Tooltip can be optionally shown or hidden by using the [ShowOutliningTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningTooltip.html) property in EditControl. Its default value is `true`.
 
 {% tabs %}
 
@@ -251,19 +252,19 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-OutliningTooltipBeforePopup</td><td>
+{{ '[OutliningTooltipBeforePopup](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutliningTooltipBeforePopup_EV.html)' | markdownify }}</td><td>
 Occurs when outlining tooltip is about to be shown</td></tr>
 <tr>
 <td>
-OutliningTooltipPopup</td><td>
+{{ '[OutliningTooltipPopup](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutliningTooltipPopup_EV.html)' | markdownify }}</td><td>
 Occurs when outlining tooltip is shown</td></tr>
 <tr>
 <td>
-OutliningTooltipClose</td><td>
+{{ '[OutliningTooltipClose](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutliningTooltipClose_EV.html)' | markdownify }}</td><td>
 Occurs when outlining tooltip is closed</td></tr>
 </table>
 
-`OutliningTooltipBeforePopup` event is used to control the visibility of the outlining tooltip. The ShowMode property of the OutliningTooltipBeforePopupEventArgs is used for this purpose. By default, the ShowMode property is set to On.
+[OutliningTooltipBeforePopup](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutliningTooltipBeforePopup_EV.html) event is used to control the visibility of the outlining tooltip. The [ShowMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningTooltipBeforePopupEventArgs~ShowMode.html) property of the [OutliningTooltipBeforePopupEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningTooltipBeforePopupEventArgs.html) is used for this purpose. By default, the ShowMode property is set to On.
 
 {% tabs %}
 
@@ -307,7 +308,7 @@ End Sub
 
 ## Word wrap
 
-Supports text wrapping to next line, when it exceeds the control bounds. WordWrap functionality in EditControl can be enabled or disabled by using `WordWrap` property. Its default value is `false`, to enable the wrapping functionality in EditControl turn on its value to `true`.
+Supports text wrapping to next line, when it exceeds the control bounds. WordWrap functionality in EditControl can be enabled or disabled by using [WordWrap](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrap.html) property. Its default value is `false`, to enable the wrapping functionality in EditControl turn on its value to `true`.
 
 ### Word wrap by bounds
 
@@ -326,23 +327,23 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-WordWrapMode</td><td>
+{{ '[WordWrapMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapMode.html)' | markdownify }}</td><td>
 Specifies the state of the word wrapping mode</td></tr>
 <tr>
 <td>
-WordWrapColumnMeasuringFont</td><td>
+{{ '[WordWrapColumnMeasuringFont](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapColumnMeasuringFont.html)' | markdownify }}</td><td>
 Specifies the font used while calculating the position of WordWrapColumn</td></tr>
 <tr>
 <td>
-WordWrapColumn</td><td>
+{{ '[WordWrapColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapColumn.html)' | markdownify }}</td><td>
 Specifies column for wrapping text. Used when WordWrapMode is set to SpecifiedColumn. The default value is 100</td></tr>
 <tr>
 <td>
-TextAreaWidth</td><td>
+{{ '[TextAreaWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TextAreaWidth.html)' | markdownify }}</td><td>
 Specifies the width of the text area of the EditControl. The default value is 600</td></tr>
 <tr>
 <td>
-WrappedLinesOffset</td><td>
+{{ '[WrappedLinesOffset](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WrappedLinesOffset.html)' | markdownify }}</td><td>
 Specifies offset of wrapped lines.</td></tr>
 </table>
 
@@ -399,10 +400,6 @@ Me.editControl1.WrappedLinesOffset = 10
 
 {% endtabs %}
 
-The following illustration shows the EditControl with the WordWrappingMode and WordWrapType properties set.
-
-![](Text-Visualization_images/Text-Visualization_img2.png)
-
 ### Word wrap by content
 
 By using the `WordWrapType` property we can set different types for wrapping the word in the EditControl. There are two types of Word wrapping in EditControl. 
@@ -419,11 +416,11 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-WordWrap</td><td>
+{{ '[WordWrap](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrap.html)' | markdownify }}</td><td>
 Specifies the state of word wrapping mode</td></tr>
 <tr>
 <td>
-WordWrapType</td><td>
+{{ '[WordWrapType](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapType.html)' | markdownify }}</td><td>
 Specifies the type of word wrapping. The options provided are * {{ '_WrapByChar_' | markdownify }} - wraps the text by individual characters* {{ '_WrapByWord_' | markdownify }} - wraps the text by individual words<br>The default value is WrapByWord</td></tr>
 </table>
 
@@ -456,9 +453,15 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 
 {% endtabs %}
 
+The following screenshot illustrates word wrapping based on character and word in EditControl:
+
+![](Text-Visualization_images/Text-Visualization_img15.png)
+
+![](Text-Visualization_images/Text-Visualization_img16.png)
+
 **WordWrap margin customization**
 
-WordWrap margin can be enabled or disabled using the `WordWrapMarginVisible` property in EditControl. Its default value is `false`. WordWrap margin of the EditControl can be set and customized by using the below given properties.
+WordWrap margin can be enabled or disabled using the [WordWrapMarginVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapMarginVisible.html) property in EditControl. Its default value is `false`. WordWrap margin of the EditControl can be set and customized by using the below given properties.
 
 <table>
 <tr>
@@ -467,19 +470,15 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-WordWrapMarginVisible</td><td>
-Specifies a value indicating whether the word wrap margin should be visible</td></tr>
-<tr>
-<td>
-WordWrapMarginLineStyle</td><td>
+{{ '[WordWrapMarginLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapMarginLineStyle.html)' | markdownify }}</td><td>
 Specifies style of line that is drawn at the border of the word wrap margin. The options provided are* Solid* Dash* Dot* DashDot* DashDotDot* Custom<br>The default value is {{ '_Solid_' | markdownify }}</td></tr>
 <tr>
 <td>
-WordWrapMarginLineColor</td><td>
+{{ '[WordWrapMarginLineColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapMarginLineColor.html)' | markdownify }}</td><td>
 Sets custom color for the line that is drawn at the border of the word wrap margin</td></tr>
 <tr>
 <td>
-WordWrapMarginBrush</td><td>
+{{ '[WordWrapMarginBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapMarginBrush.html)' | markdownify }}</td><td>
 Specifies the BrushInfo object that is used when the area situated after the text area is drawn</td></tr>
 </table>
 
@@ -532,35 +531,12 @@ Me.editControl1.WordWrapMarginBrush = New Syncfusion.Drawing.BrushInfo(Syncfusio
 
 **Line wrapping images**
 
-In EditControl, it is possible to associate images to indicate line wrapping. This feature can be turned on by setting the `MarkLineWrapping` property to `true`. There are two types of image indicators:
+In EditControl, it is possible to associate images to indicate line wrapping. This feature can be turned on by setting the [MarkLineWrapping](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MarkLineWrapping.html) property to `true`. There are two types of image indicators:
 
-* Images that indicate the line that is being wrapped. These are displayed at the beginning of the line being wrapped. This can be set by using the `CustomWrappedLinesMarkingImage` property.
-* Images that indicate the point at which the line is being wrapped. This can be set by using the `CustomLineWrappingMarkingImage` property.
+* Images that indicate the line that is being wrapped. These are displayed at the beginning of the line being wrapped. This can be set by using the [CustomWrappedLinesMarkingImage](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CustomWrappedLinesMarkingImage.html) property.
+* Images that indicate the point at which the line is being wrapped. This can be set by using the [CustomLineWrappingMarkingImage](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CustomLineWrappingMarkingImage.html) property.
 
-`MarkWrappedLines` property in EditControl is used to indicate whether wrapped lines should be marked.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-MarkLineWrapping</td><td>
-Specifies whether line wrapping should be marked</td></tr>
-<tr>
-<td>
-MarkWrappedLines</td><td>
-Specifies whether wrapped lines should be marked</td></tr>
-<tr>
-<td>
-CustomWrappedLinesMarkingImage</td><td>
-Specifies custom image that marks wrapped lines</td></tr>
-<tr>
-<td>
-CustomLineWrappingMarkingImage</td><td>
-Specifies custom image that marks wrapping lines</td></tr>
-</table>
+[MarkWrappedLines](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MarkWrappedLines.html) property in EditControl is used to indicate whether wrapped lines should be marked.
 
 {% tabs %}
 
@@ -572,11 +548,11 @@ this.editControl1.MarkLineWrapping = true;
 
 // Images that indicate the line that is being wrapped.
 
-this.editControl1.CustomWrappedLinesMarkingImage = ((System.Drawing.Image)(resources.GetObject("$this.Sunset")));
+this.editControl1.CustomWrappedLinesMarkingImage = ((System.Drawing.Image)(resources.GetObject("$this.CustomWordWrap_image")));
 
 // Images that indicate the point at which the line is being wrapped.
 
-this.editControl1.CustomLineWrappingMarkingImage = ((System.Drawing.Image)(resources.GetObject("$this.Blue_hills")));
+this.editControl1.CustomLineWrappingMarkingImage = ((System.Drawing.Image)(resources.GetObject("$this.CustomWordWrap_image")));
 
 // Indicate wrapped lines.
 
@@ -593,11 +569,11 @@ Me.editControl1.MarkLineWrapping = True
 
 ' Images that indicate the line that is being wrapped.
 
-Me.editControl1.CustomWrappedLinesMarkingImage = (CType((resources.GetObject("$this.Sunset")), System.Drawing.Image))
+Me.editControl1.CustomWrappedLinesMarkingImage = (CType((resources.GetObject("$this.CustomWordWrap_image")), System.Drawing.Image))
 
 ' Images that indicate the point at which the line is being wrapped.
 
-Me.editControl1.CustomLineWrappingMarkingImage = (CType((resources.GetObject("$this.Blue_hills")), System.Drawing.Image))
+Me.editControl1.CustomLineWrappingMarkingImage = (CType((resources.GetObject("$this.CustomWordWrap_image")), System.Drawing.Image))
 
 ' Indicate wrapped lines.
 
@@ -614,22 +590,7 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows
 
 ## Line number
 
-Displays the line number at the start position of line. Line numbers can be automatically assigned to the contents of the EditControl by enabling the `ShowLineNumbers` property. Its default value is `true`. The number of lines in the EditControl can be obtained by using the `PhysicalLineCount` property.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowLineNumbers</td><td>
-Specifies a value indicating whether line numbers should be shown</td></tr>
-<tr>
-<td>
-PhysicalLineCount</td><td>
-Specifies the count of lines in the files</td></tr>
-</table>
+Displays the line number at the start position of line. Line numbers can be automatically assigned to the contents of the EditControl by enabling the [ShowLineNumbers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowLineNumbers.html) property. Its default value is `true`. The number of lines in the EditControl can be obtained by using the [PhysicalLineCount](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PhysicalLineCount.html) property.
 
 {% tabs %}
 
@@ -671,19 +632,19 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-LineNumbersAlignment</td><td>
+{{ '[LineNumbersAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineNumbersAlignment.html)' | markdownify }}</td><td>
 Specifies the alignment of line numbers</td></tr>
 <tr>
 <td>
-LineNumbersColor</td><td>
+{{ '[LineNumbersColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineNumbersColor.html)' | markdownify }}</td><td>
 Specifies the color of line numbers</td></tr>
 <tr>
 <td>
-LineNumbersFont</td><td>
+{{ '[LineNumbersFont](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineNumbersFont.html)' | markdownify }}</td><td>
 Specifies the font of line numbers</td></tr>
 <tr>
 <td>
-SelectOnLineNumberClick </td><td>
+{{ '[SelectOnLineNumberClick](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SelectOnLineNumberClick.html)' | markdownify }} </td><td>
 Specifies a value indicating whether click on line numbers performs selection</td></tr>
 </table>
 
@@ -736,7 +697,7 @@ Me.editControl1.SelectOnLineNumberClick = True
 
 ### Custom draw line number
 
-Line number can be drawn using `BeforeLineNumberPaint` event. This event comprises with built-in properties to customize bounds, foreground color, graphics, line number, line numbers alignment and font.
+Line number can be drawn using [BeforeLineNumberPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BeforeLineNumberPaint_EV.html) event. This event comprises with built-in properties to customize bounds, foreground color, graphics, line number, line numbers alignment and font.
 
 {% tabs %}
 
@@ -794,7 +755,7 @@ private Sub EditControl1_BeforeLineNumberPaint(ByVal sender As Object, ByVal e A
 
 #### Line backcolor
 
-Background format of a line can be customized using `SetLineBackColor` function, where line number, fill complete line or text area and format can be specified. Below code is an simple example for setting backcolor and border color for a line.
+Background format of a line can be customized using [SetLineBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetLineBackColor.html) function, where line number, fill complete line or text area and format can be specified. Below code is an simple example for setting backcolor and border color for a line.
 
 {% tabs %}
 
@@ -827,7 +788,7 @@ Me.editControl1.SetLineBackColor(5, True, format)
 
 #### Background fill formats
 
-Background formats for a line can be defined using `IBackgroundFormat` interface and RegisterBackColorFormat function where format attributes can be specified. 
+Background formats for a line can be defined using [IBackgroundFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IBackgroundFormat.html) interface and [RegisterBackColorFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisterBackColorFormat.html) function where format attributes can be specified. 
 
 {% tabs %}
 
@@ -852,7 +813,7 @@ Dim IBackgroundFormat As format = Me.editControl1.RegisterBackColorFormat(Color.
 
 #### Set line background for current line
 
-Background format can be customized for the current line using `SetSelectionBackColor` function, where format for the line can be specified.
+Background format can be customized for the current line using [SetSelectionBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetSelectionBackColor.html) function, where format for the line can be specified.
 
 {% tabs %}
 
@@ -895,7 +856,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 ## Remove applied line background color
 
-Background format for a line can be removed using `RemoveLineBackColor` function, where the line, whose format need to be removed will be specified. 
+Background format for a line can be removed using [RemoveLineBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveLineBackColor.html) function, where the line, whose format need to be removed will be specified. 
 
 {% tabs %}
 
@@ -916,22 +877,7 @@ Me.editControl1.RemoveLineBackColor(5)
 
 ## Highlighting current line 
 
-You can highlight the current line where the mouse pointer is present by setting the `HighlightCurrentLine` property to `true`. Its default value is `false`. By using the `CurrentLineHighlightColor` property, we can set the color for the highlighted line. 
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-HighlightCurrentLine</td><td>
-Specifies a value indicating whether current line should be highlighted</td></tr>
-<tr>
-<td>
-CurrentLineHighlightColor</td><td>
-Specifies color of current line highlight</td></tr>
-</table>
+You can highlight the current line where the mouse pointer is present by setting the [HighlightCurrentLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~HighlightCurrentLine.html) property to `true`. Its default value is `false`. By using the [CurrentLineHighlightColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CurrentLineHighlightColor.html) property, we can set the color for the highlighted line. 
 
 {% tabs %}
 
@@ -995,7 +941,7 @@ UnderlineWeight.Thick(default) and UnderlineWeight.Double</td></tr>
 
 // Registers the custom underline format.
 
-ISnippetFormat format = editControl1.RegisterUnderlineFormat (SelectedColor, SelectedStyle, SelectedWeight);
+ISnippetFormat format = editControl1.RegisterUnderlineFormat(Color.Red, UnderlineStyle.Wave, UnderlineWeight.Bold);
 
 {% endhighlight %}
 
@@ -1004,7 +950,7 @@ ISnippetFormat format = editControl1.RegisterUnderlineFormat (SelectedColor, Sel
 
 ' Registers the custom underline format.
 
-Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(SelectedColor, SelectedStyle, SelectedWeight)
+Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(Color.Red, UnderlineStyle.Wave, UnderlineWeight.Bold)
 
 {% endhighlight %}
 
@@ -1012,7 +958,7 @@ Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(SelectedColo
 
 ### Set up underline for current line
 
-`SetUnderline` function is used to set underlining of the selected text region. 
+[SetUnderline](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetUnderline.html) function is used to set underlining of the selected text region. 
 
 {% tabs %}
 
@@ -1020,7 +966,7 @@ Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(SelectedColo
 
 // Sets underlining of the specified text region
 
-this.editControl1.SetUnderline(this.editControl1.CurrentLine, this.editControl1.CurrentLine, format);
+this.editControl1.SetUnderline(new Point(1, 1), new Point(8, 8), format);
 
 {% endhighlight %}
 
@@ -1029,15 +975,17 @@ this.editControl1.SetUnderline(this.editControl1.CurrentLine, this.editControl1.
 
 ' Sets underlining of the specified text region
 
-Me.editControl1.SetUnderline(this.editControl1.CurrentLine, this.editControl1.CurrentLine, format)
+Me.editControl1.SetUnderline(New Point(1, 1), New Point(8, 8), format)
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![](Text-Visualization_images/Text-Visualization_img17.png)
+
 ### Remove applied underline
 
-We can remove the underlining which had been set by using the `RemoveUnderline` function in EditControl.
+We can remove the underlining which had been set by using the [RemoveUnderline](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveUnderline.html) function in EditControl.
 
 {% tabs %}
 
@@ -1045,7 +993,7 @@ We can remove the underlining which had been set by using the `RemoveUnderline` 
 
 // Removes underlining in the specified region
 
-this.editControl1.RemoveUnderline(this.editControl1.CurrentLine, this.editControl1.CurrentLine);
+this.editControl1.RemoveUnderline(new Point(1, 1), new Point(8, 8));
 
 {% endhighlight %}
 
@@ -1054,7 +1002,7 @@ this.editControl1.RemoveUnderline(this.editControl1.CurrentLine, this.editContro
 
 ' Removes underlining in the specified region
 
-Me.editControl1.RemoveUnderline(Me.editControl1.CurrentLine, Me.editControl1.CurrentLine)
+Me.editControl1.RemoveUnderline(New Point(1, 1), New Point(8, 8))
 
 {% endhighlight %}
 
@@ -1066,17 +1014,23 @@ You can also set the underlining from the configuration file, as shown in the be
 
 {% highlight xaml %}
 
-<format name="Comment" Font="Courier New, 10pt, style=Bold" FontColor="Green" LineColor="Red" Weight="Thick" Underline="DashDot" />
+<formats>
+  <format name="Error" Font="Courier New, 10pt" FontColor="Black" underline="Wave" LineColor="Red" />
+</formats>
+
+<lexems>
+<lexem BeginBlock="#endregion" Type="Error" Priority="-10" />
+<lexem BeginBlock="#endif" Type="Error" Priority="-10" />
+<lexem BeginBlock="#else" Type="Error" Priority="-10" />
+</lexems>
 
 {% endhighlight %}
 
-LineColor, Weight and Underline parameters are used to specify the type of underlining to be used.
-
-![](Text-Visualization_images/Text-Visualization_img7.jpeg)
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
 
 ### Strike out
 
-`StrikeThrough` function helps to draw horizontal line through the vertical center of text. This is a very useful feature in denoting text that was deleted from the original document or highlighting offending code. You can also specify any custom color for the strikethrough line.
+[StrikeThrough](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~StrikeThrough.html) function helps to draw horizontal line through the vertical center of text. This is a very useful feature in denoting text that was deleted from the original document or highlighting offending code. You can also specify any custom color for the strikethrough line.
 
 {% tabs %}
 
@@ -1086,13 +1040,9 @@ LineColor, Weight and Underline parameters are used to specify the type of under
 
 this.editControl1.StrikeThrough(this.editControl1.CurrentLine, Color.IndianRed);
 
-// Strikeout the selected text.
-
-this.editControl1.StrikeThrough(this.editControl1.Selection.Top, this.editControl1.Selection.Bottom, Color.Navy);
-
 // Strikeout the text in the specified text range.
 
-this.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.Aqua);
+this.editControl1.StrikeThrough(new Point(1, 1), new Point(8, 8), Color.Orange);
 
 {% endhighlight %}
 
@@ -1103,13 +1053,9 @@ this.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.
 
 Me.editControl1.StrikeThrough(Me.editControl1.CurrentLine, Color.IndianRed)
 
-' Strikeout the selected text.
-
-Me.editControl1.StrikeThrough(Me.editControl1.Selection.Top, Me.editControl1.Selection.Bottom, Color.Navy)
-
 ' Strikeout the text in the specified text range.
 
-Me.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.Aqua)
+Me.editControl1.StrikeThrough(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 {% endhighlight %}
 
@@ -1121,22 +1067,7 @@ To remove the strikethrough line, just call one of the above mentioned functions
 
 ## Bookmark indicators 
 
-EditControl enables users to locate a section or a line of a document for quick access to any part of the contents. This can be enabled or disabled by using the `ShowIndicatorMargin` property. Its default value is `true`, to hide the indicator margin turn on its value to `false`. `MarkerAreaWidth` property in EditControl sets the width of marker area.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowIndicatorMargin</td><td>
-Specifies a value indicating whether bookmarks and indicator margins should be visible</td></tr>
-<tr>
-<td>
-MarkerAreaWidth</td><td>
-Specifies width of marker area</td></tr>
-</table>
+EditControl enables users to locate a section or a line of a document for quick access to any part of the contents. This can be enabled or disabled by using the [ShowIndicatorMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndicatorMargin.html) property. Its default value is `true`, to hide the indicator margin turn on its value to `false`. [MarkerAreaWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MarkerAreaWidth.html) property in EditControl sets the width of marker area.
 
 {% tabs %}
 
@@ -1169,22 +1100,7 @@ Me.editControl1.MarkerAreaWidth = 20
 
 ### Custom bookmark indicator
 
-`SetCustomBookmark` function is used to set Bookmarks and also it can removed by `RemoveCustomBookmark` function of EditControl.
-
-<table>
-<tr>
-<th>
-Functions</th><th>
-Description</th></tr>
-<tr>
-<td>
-SetCustomBookmark</td><td>
-Sets custom bookmark for the desired line</td></tr>
-<tr>
-<td>
-RemoveCustomBookmark</td><td>
-Removes the custom bookmark from the desired line</td></tr>
-</table>
+[SetCustomBookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetCustomBookmark.html) function is used to set Bookmarks and also it can removed by [RemoveCustomBookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveCustomBookmark.html) function in EditControl.
 
 Bookmarks can be set by using the `SetCustomBookmark` function, do not respond to the `BookmarkNext` and `BookmarkPrevious` functions automatically. In order to enable this, you have to set the `UseInBookmarkSearch` property of the custom bookmark to `true`.
 
@@ -1240,7 +1156,7 @@ Dim customBookmark As ICustomBookmark = Me.editControl1.RemoveCustomBookmark(Me.
 
 {% endtabs %}
 
-Allows you to set a pause at some specified location in the EditControl by using the `BreakPoint` feature. This is done by combining the Line Background and Custom Indicator features. IndicatorMarginClick event can be handled to insert a break point.
+Allows you to set a pause at some specified location in the EditControl by using the `BreakPoint` feature. This is done by combining the Line Background and Custom Indicator features. [IndicatorMarginClick](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndicatorMarginClick_EV.html) event can be handled to insert a break point.
 
 {% tabs %}
 
@@ -1289,26 +1205,7 @@ End Sub
 
 **Setting tooltips for bookmarks**
 
-Tooltips can be set for bookmarks and customized by using the below given properties. Tooltips of bookmarks can be enabled or disabled by using `ShowBookmarkTooltip` property.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowBookmarkTooltip</td><td>
-Specifies whether the tooltip of the bookmark is shown</td></tr>
-<tr>
-<td>
-BookmarkTooltipBackgroundBrush</td><td>
-Specifies brush for bookmark tooltip background</td></tr>
-<tr>
-<td>
-BookmarkTooltipBorderColor</td><td>
-Specifies the color of the bookmark tooltip form border</td></tr>
-</table>
+Tooltips can be set for bookmarks and customized by using the below given properties. Tooltips of bookmarks can be enabled or disabled by using [ShowBookmarkTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowBookmarkTooltip.html) property. Tooltip background and border color can be customized by using [BookmarkTooltipBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkTooltipBackgroundBrush.html) and [BookmarkTooltipBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkTooltipBorderColor.html) property in EditControl.
 
 {% tabs %}
 
@@ -1360,31 +1257,31 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-BookmarkToggle</td><td>
+{{ '[BookmarkToggle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkToggle.html)' | markdownify }}</td><td>
 Sets bookmark to the current line</td></tr>
 <tr>
 <td>
-BookmarkAdd</td><td>
+{{ '[BookmarkAdd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkAdd.html)' | markdownify }}</td><td>
 Sets bookmark at the specified line</td></tr>
 <tr>
 <td>
-BookmarkRemove</td><td>
+{{ '[BookmarkRemove](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkRemove.html)' | markdownify }}</td><td>
 Removes bookmark at the specified line</td></tr>
 <tr>
 <td>
-BookmarkGet</td><td>
+{{ '[BookmarkGet](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkGet.html)' | markdownify }}</td><td>
 Specifies the bookmark at the specified line</td></tr>
 <tr>
 <td>
-BookmarkNext</td><td>
+{{ '[BookmarkNext](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkNext.html)' | markdownify }}</td><td>
 Goes to the next bookmark</td></tr>
 <tr>
 <td>
-BookmarkPrevious</td><td>
+{{ '[BookmarkPrevious](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkPrevious.html)' | markdownify }}</td><td>
 Goes to the previous bookmark</td></tr>
 <tr>
 <td>
-BookmarkClear</td><td>
+{{ '[BookmarkClear](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkClear.html)' | markdownify }}</td><td>
 Clears all the bookmarks</td></tr>
 </table>
 
@@ -1442,7 +1339,7 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows
 
 ## Content dividers
 
-Supports content dividers similar to Visual Studio code editor, that clearly distinguish content sections with line dividers, to improve code readability. Content Dividers can be enabled or disabled using `ShowContentDividers` property in EditControl. Its default value is `true`.
+Supports content dividers similar to Visual Studio code editor, that clearly distinguish content sections with line dividers, to improve code readability. Content Dividers can be enabled or disabled using [ShowContentDividers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowContentDividers.html) property in EditControl. Its default value is `true`.
 
 ![](Text-Visualization_images/Text-Visualization_img11.png)
 
@@ -1479,26 +1376,7 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows
 
 ## Column Guides
 
-Provides support to draw a vertical lines based on the specified column positions that helps to ensure whether the lines don't go beyond a certain length. This can be enabled or hidden by setting the `ShowColumnGuides` property. Its default value is `true`, to hide the column guides turn on its value to `false`. By using `ColumnGuideItem` Collection Editor, specifies the color and the location of the Column Guides. The font used to calculate the column location is customized by `usingColumnGuidesMeasuringFont` property.
-
-<table>
-<tr>
-<th>
-Functions</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowColumnGuides</td><td>
-Specifies a value that indicates whether column guides should be drawn</td></tr>
-<tr>
-<td>
-ColumnGuideItems</td><td>
-Specifies array of ColumnGuideItem objects</td></tr>
-<tr>
-<td>
-ColumnGuidesMeasuringFont</td><td>
-Specifies font that is used while measuring the position of the column guides</td></tr>
-</table>
+Provides support to draw a vertical lines based on the specified column positions that helps to ensure whether the lines don't go beyond a certain length. This can be enabled or hidden by setting the [ShowColumnGuides](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowColumnGuides.html) property. Its default value is `true`, to hide the column guides turn on its value to `false`. By using [ColumnGuideItem](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ColumnGuideItem.html) Collection Editor, specifies the color and the location of the Column Guides. The font used to calculate the column location is customized by [ColumnGuidesMeasuringFont](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ColumnGuidesMeasuringFont.html) property.
 
 {% tabs %}
 
@@ -1565,7 +1443,7 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 ## Bracket highlighting 
 
-EditControl has one of the most powerful and intelligent Bracket Highlighting features. If the cursor is positioned on the end curly brace, most editors will match to the open curly brace in the string. On the contrary, EditControl matches to the open curly brace for the function. The bracket highlighting feature can be turned on by enabling the `ShowIndentationGuidelines` or `OnlyHighlightMatchingBraces` properties. Setting the OnlyHighlightMatchingBraces property to `true`, enables bracket highlighting whereas the indentation guidelines are not displayed.
+EditControl has one of the most powerful and intelligent Bracket Highlighting features. If the cursor is positioned on the end curly brace, most editors will match to the open curly brace in the string. On the contrary, EditControl matches to the open curly brace for the function. The bracket highlighting feature can be turned on by enabling the [ShowIndentationGuidelines](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndentationGuidelines.html) or [OnlyHighlightMatchingBraces](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OnlyHighlightMatchingBraces.html) properties. Setting the OnlyHighlightMatchingBraces property to `true`, enables bracket highlighting whereas the indentation guidelines are not displayed.
 
 {% tabs %}
 

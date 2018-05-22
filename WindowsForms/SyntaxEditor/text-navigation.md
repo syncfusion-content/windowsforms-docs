@@ -24,19 +24,20 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-MoveUp</td><td>
+{{ '[MoveUp](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveUp.html)' | markdownify }}</td><td>
 Moves cursor up, if possible</td></tr>
 <tr>
 <td>
-MoveDown</td><td>
+{{ '[MoveDown](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveDown.html)' | markdownify }}</td><td>
 Moves cursor down, if possible</td></tr>
 <tr>
 <td>
-MoveLeft</td><td>
+{{ '[MoveLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveLeft.html)' | markdownify }}
+</td><td>
 Moves cursor left, if possible</td></tr>
 <tr>
 <td>
-MoveRight</td><td>
+{{ '[MoveRight](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveRight.html)' | markdownify }}</td><td>
 Moves cursor right, if possible</td></tr>
 </table>
 
@@ -80,11 +81,11 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-MoveLeftWord</td><td>
+{{ '[MoveLeftWord](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveLeftWord.html)' | markdownify }}</td><td>
 Moves caret to the left by one word</td></tr>
 <tr>
 <td>
-MoveRightWord</td><td>
+{{ '[MoveRightWord](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveRightWord.html)' | markdownify }}</td><td>
 Moves caret to the right by one word</td></tr>
 </table>
 
@@ -120,11 +121,11 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-MoveToLineStart</td><td>
+{{ '[MoveToLineStart](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveToLineStart.html)' | markdownify }}</td><td>
 Moves caret to the beginning of the line. First whitespace will be skipped</td></tr>
 <tr>
 <td>
-MoveToLineEnd</td><td>
+{{ '[MoveToLineEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveToLineEnd.html)' | markdownify }}</td><td>
 Moves caret to the end of the line</td></tr>
 </table>
 
@@ -160,11 +161,11 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-MovePageUp</td><td>
+{{ '[MovePageUp](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MovePageUp.html)' | markdownify }}</td><td>
 Moves caret one page up</td></tr>
 <tr>
 <td>
-MovePageDown</td><td>
+{{ '[MovePageDown](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MovePageDown.html)' | markdownify }}</td><td>
 Moves caret one page down</td></tr>
 </table>
 
@@ -191,7 +192,7 @@ Me.editControl1.MovePageDown()
 
 ## Block based navigation
 
-We can position the keyboard cursor at the beginning or end of the indentation block using the `JumpToIndentBlockStart` and `JumpToIndentBlockEnd` functions respectively.
+We can position the keyboard cursor at the beginning or end of the indentation block using the [JumpToIndentBlockStart](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockStart.html) and [JumpToIndentBlockEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockEnd.html) functions respectively.
 
 {% tabs %}
 
@@ -225,11 +226,11 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-MoveToBeginning</td><td>
+{{ '[MoveToBeginning](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveToBeginning.html)' | markdownify }}</td><td>
 Moves caret to the beginning of the file</td></tr>
 <tr>
 <td>
-MoveToEnd</td><td>
+{{ '[MoveToEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveToEnd.html)' | markdownify }}</td><td>
 Moves caret to the end of the file</td></tr>
 </table>
 
@@ -256,7 +257,7 @@ Me.editControl1.MoveToEnd()
 
 ### Retrieve current word
 
-We can retrieve the current word in EditControl by using the `GetCurrentWord` function.
+We can retrieve the current word in EditControl by using the [GetCurrentWord](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetCurrentWord.html) function.
 
 {% tabs %}
 
@@ -277,7 +278,7 @@ Me.WriteLine(this.editControl1.GetCurrentWord().ToString())
 
 ### Retrieve current column index in line
 
-We can retrieve the current word column index in EditControl by using the `GetCurrentWordColumn` function and `CurrentColumn` property.
+We can retrieve the current word column index in EditControl by using the [GetCurrentWordColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetCurrentWordColumn.html) function and [CurrentColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CurrentColumn.html) property.
 
 {% tabs %}
 
@@ -302,7 +303,7 @@ Me.WriteLine(this.editControl1.CurrentColumn)
 
 ### Retrieve current line index
 
-We can retrieve the current word column index in EditControl by using the `CurrentLine` property.
+We can retrieve the current word column index in EditControl by using the [CurrentLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CurrentLine.html) property.
 
 {% tabs %}
 
@@ -337,15 +338,15 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-ShowVerticalScroller</td><td>
+{{ '[ShowVerticalScroller](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowVerticalScroller.html)' | markdownify }}</td><td>
 Specifies a value indicating whether the vertical scroller can be shown</td></tr>
 <tr>
 <td>
-ShowHorizontalScroller</td><td>
+{{ '[ShowHorizontalScroller](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowHorizontalScroller.html)' | markdownify }}</td><td>
 Specifies a value indicating whether the horizontal scroller can be shown</td></tr>
 <tr>
 <td>
-AlwaysShowScrollers</td><td>
+{{ '[AlwaysShowScrollers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AlwaysShowScrollers.html)' | markdownify }}</td><td>
 Specifies a value indicating whether scrollers should be always visible</td></tr>
 </table>
 
@@ -397,23 +398,23 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-ScrollPosition</td><td>
+{{ '[ScrollPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollPosition.html)' | markdownify }}</td><td>
 Specifies scroll position of EditControl</td></tr>
 <tr>
 <td>
-ScrollOffsetBottom</td><td>
+{{ '[ScrollOffsetBottom](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollOffsetBottom.html)' | markdownify }}</td><td>
 Specifies the bottom scroll offset</td></tr>
 <tr>
 <td>
-ScrollOffsetLeft</td><td>
+{{ '[ScrollOffsetLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollOffsetLeft.html)' | markdownify }}</td><td>
 Specifies the left scroll offset</td></tr>
 <tr>
 <td>
-ScrollOffsetRight</td><td>
+{{ '[ScrollOffsetRight](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollOffsetRight.html)' | markdownify }}</td><td>
 Specifies the right scroll offset.</td></tr>
 <tr>
 <td>
-ScrollOffsetTop</td><td>
+{{ '[ScrollOffsetTop](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollOffsetTop.html)' | markdownify }}</td><td>
 Specifies the top scroll offset.</td></tr>
 </table>
 
