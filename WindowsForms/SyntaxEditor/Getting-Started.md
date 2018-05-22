@@ -111,14 +111,6 @@ To create the Windows Forms application with EditControl, the following nuget pa
 <td> Syncfusion.Edit.Windows46
 </td>
 </tr>
-<tr>
-<td> 7
-</td>
-<td> 4.6.1
-</td>
-<td> Syncfusion.Edit.Windows461
-</td>
-</tr>
 </table>
 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
