@@ -40,15 +40,15 @@ Shortcut</th></tr>
 <tr>
 <td>
 Copy</td><td>
-<kbd>CTRL+C</kbd>, <kbd>CTRL+INSERT</kbd></td></tr>
+CTRL+C, CTRL+INSERT</td></tr>
 <tr>
 <td>
 Paste</td><td>
-<kbd>CTRL+V</kbd>, <kbd>SHIFT+INSERT</kbd></td></tr>
+CTRL+V, SHIFT+INSERT</td></tr>
 <tr>
 <td>
 Cut</td><td>
-<kbd>CTRL+X</kbd>, <kbd>SHIFT+DEL</kbd></td></tr>
+CTRL+X, SHIFT+DEL</td></tr>
 </table>
 
 ### Programmatic clipboard options
@@ -215,11 +215,11 @@ Shortcut</th></tr>
 <tr>
 <td>
 Undo</td><td>
-Performs an undo (<kbd>CTRL+Z</kbd>) operation.</td></tr>
+Performs an undo (CTRL+Z) operation.</td></tr>
 <tr>
 <td>
 Redo</td><td>
-Performs a redo (<kbd>CTRL+Y</kbd>) operation.</td></tr>
+Performs a redo (CTRL+Y) operation.</td></tr>
 </table>
 
 {% tabs %}
@@ -386,7 +386,7 @@ Me.editControl1.ResetUndoInfo()
 
 ### Discard undo redo buffer
 
-We can discard an already open action group, by invoking [UndoGroupCancel]({{ '[UndoGroupCancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UndoGroupCancel.html)' | markdownify }}) function in EditControl.
+We can discard an already open action group, by invoking [UndoGroupCancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UndoGroupCancel.html) function in EditControl.
 
 {% tabs %}
    
@@ -410,7 +410,7 @@ Me.editControl1.UndoGroupCancel()
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the Clipboard operations functionalities of EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Text Operations\Clipboard Operations
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Text Operations\Clipboard Operations
 
 ## Selection modes 
 
@@ -445,7 +445,7 @@ Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Def
 
 ### Programmatic selection
 
-[SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SelectAll.html), [SetSelectionStart](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetSelectionStart.html) and [SetSelectionEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetSelectionEnd.html) function helps to select the text in EditControl programmatically.
+[SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SelectAll.html), [StartSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~StartSelection.html) and [StopSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~StopSelection.html) function helps to select the text in EditControl programmatically.
 
 The following code snippet demonstrates how to select all the text in EditControl.
 
@@ -470,7 +470,32 @@ Me.editControl1.SelectAll()
 
 {% endtabs %}
 
+{% tabs %}
+
 ![](Editing-Features_images/Editing-Features_img20.png)
+
+The following code snippet demonstrates how to select the text using `StartSelection` and `StopSelection` functions in EditControl.
+   
+{% highlight C# %}
+
+this.editControl1.StartSelection(1, 1);
+this.editControl1.StopSelection(20, 20);
+this.editControl1.SelectionMode = SelectionModes.Block;     
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.StartSelection(1, 1)
+Me.editControl1.StopSelection(20, 20)
+Me.editControl1.SelectionMode = SelectionModes.Block    
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img23.png)
      
 ### Block   
 
@@ -826,7 +851,7 @@ Me.editControl1.DeleteText(Me.editControl1.Selection.Top, Me.editControl1.Select
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the above `Text Handling` functionalities of EditControl. 
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\TextInteractions
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\TextInteractions
 
 ## Indent or outdent
 
@@ -2248,4 +2273,4 @@ The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian 
 ![](Editing-Features_images/Editing-Features_img14.jpeg)
 
 N> Refer to the following sample link that demonstrates the `Unicode` support in EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Unicode
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Unicode

@@ -67,8 +67,6 @@ Split view can be oriented in both horizontal and vertical direction by using th
 
 this.editControl1.SplitHorizontally();
 
-this.editControl1.SplitVertically();
-
 {% endhighlight %}
 
 
@@ -76,13 +74,28 @@ this.editControl1.SplitVertically();
 
 Me.editControl1.SplitHorizontally()
 
-Me.editControl1.SplitVertically()
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Appearance_images/Appearance_img27.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.SplitVertically();
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.SplitVertically()
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Appearance_images/Appearance_img26.png)
 
@@ -217,7 +230,7 @@ Me.editControl1.BottomVerticalSplitterPosition = 260
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the `SplitView` functionalities of EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Split Views
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Styles\Split Views
 
 ## Single line mode
 
@@ -245,7 +258,7 @@ N> The SingleLineMode is intended for use, only when the EditControl contains sm
 ![](Appearance_images/Appearance_img4.jpg)
 
 N> Refer to the following sample link that demonstrates the `SingleLineMode` behavior of EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Styles\Single Line Mode
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Styles\Single Line Mode
 
 ## Right-to-left (RTL) support 
 
@@ -355,7 +368,7 @@ Me.editControl1.SetTextBorder(New Point(1, 1), New Point(3, 3), Color.Red, Frame
 
 Displays additional information regarding the contents in the EditControl. Information can also be displayed on a line-by-line basis. 
 
-### user margin visibility
+### User margin visibility
 
 The User Margin feature can be turned on by setting the [ShowUserMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowUserMargin.html) property to `true`. Its default value is `false`. 
 
@@ -1212,7 +1225,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Manage
 ![](Appearance_images/Appearance_img22.png)
 
 N> Refer to the following sample link that demonstrates the `StatusBar` functionalities of EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\StatusBar
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\StatusBar
 
 ## ScrollBar 
 
@@ -1562,7 +1575,7 @@ Me.editControl1.DrawCodeSnippetBorder = True
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the `CodeSnippets` functionalities of EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Code Snippets
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Code Snippets
 
 ## Customize cursor appearance
 
