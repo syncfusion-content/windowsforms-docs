@@ -1462,7 +1462,7 @@ The following code example illustrates HTML with JScript language configuration.
 
 {% highlight C# %}
 
- IConfigLanguage currentConfigLanguage = this.editControl1.Configurator.CreateLanguageConfiguration("HTML_Jscript");
+ IConfigLanguage currentConfigLanguage = this.editControl1.Configurator.CreateLanguageConfiguration("HTML_JScript");
 
  this.editControl1.ApplyConfiguration(currentConfigLanguage);
 
@@ -1581,7 +1581,7 @@ The following code example illustrates HTML with JScript language configuration.
 
 {% highlight VB %}
 
- Dim currentConfigLanguage As IConfigLanguage = Me.editControl1.Configurator.CreateLanguageConfiguration("HTML_Jscript")
+ Dim currentConfigLanguage As IConfigLanguage = Me.editControl1.Configurator.CreateLanguageConfiguration("HTML_JScript")
 
  Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 
