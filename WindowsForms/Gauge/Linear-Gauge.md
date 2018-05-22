@@ -51,7 +51,7 @@ The Syncfusion.Gauge.Windows contains the class that handles all UI operations a
 
 # Installing NuGet Packages
 
-To use DigitalGauge control in Windows Forms application via nuget, the following packages should be installed.
+To use LinearGauge control in Windows Forms application via nuget, the following packages should be installed.
  
 <table>
 <tr>
