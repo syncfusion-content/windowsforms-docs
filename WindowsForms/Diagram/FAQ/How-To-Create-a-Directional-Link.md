@@ -19,15 +19,7 @@ Links can be provided with end point decorators to convey the direction. The fol
 
 Link link = new Link(pts);
 
-EndPointDecoratorModel decoratorMdl = Global.EndPointDecoratorPalette["Filled Arrow"];
-
-if (decoratorMdl != null)
-
-{
-
- link.EndPoints.LastEndPointDecorator = decoratorMdl.CreateInstance();
-
-}
+link.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow;
 
 {% endhighlight %}
 
@@ -35,15 +27,9 @@ if (decoratorMdl != null)
 
 ' Create a directional link.
 
-Dim link As New LinkLabel.Link(pts)
+Dim link As New Link(pts)
 
-Dim decoratorMdl As EndPointDecoratorModel = Global.EndPointDecoratorPalette("Filled Arrow")
-
-If Not (decoratorMdl Is Nothing) Then
-
- link.EndPoints.LastEndPointDecorator = decoratorMdl.CreateInstance()
-
-End If
+link.HeadDecorator.DecoratorShape = DecoratorShape.Filled45Arrow
 
 
 {% endhighlight %}
