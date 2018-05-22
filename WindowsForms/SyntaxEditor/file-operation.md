@@ -318,20 +318,24 @@ Me.editControl1.[New](config)
 
 ## Discard changes
 
-The changes made to the contents of the EditControl can be discarded by using the [DiscardChanges](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DiscardChanges.html) function.
+The changes made to the contents of the EditControl can be discarded by using the [FlushChanges](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FlushChanges.html) function.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.editControl1.DiscardChanges();
+// Saves changes made to the contents of the EditControl into the current stream.
+
+this.editControl1.FlushChanges();
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.DiscardChanges()
+' Saves changes made to the contents of the EditControl into the current stream.
+
+Me.editControl1.FlushChanges()
 
 {% endhighlight %}
 
@@ -418,10 +422,6 @@ The contents of the EditControl can also be saved to a particular stream using s
 
 {% highlight C# %}
 
-// Saves changes made to the contents of the EditControl into the current stream.
-
-this.editControl1.FlushChanges();
-
 // Saves content to the specified stream using specified encoding and line end style.
 
 this.editControl1.SaveStream(System.IO.Stream.Null , Encoding.BigEndianUnicode, Syncfusion.IO.NewLineStyle.Mac);
@@ -430,10 +430,6 @@ this.editControl1.SaveStream(System.IO.Stream.Null , Encoding.BigEndianUnicode, 
 
 
 {% highlight VB %}
-
-' Saves changes made to the contents of the EditControl into the current stream.
-
-Me.editControl1.FlushChanges()
 
 ' Saves content to the specified stream using specified encoding and line end style.
 

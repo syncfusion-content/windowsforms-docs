@@ -53,7 +53,7 @@ Cut</td><td>
 
 ### Programmatic clipboard options
 
-Provides extensive support to cut, copy or paste the text data programmatically. The following functions in EditControl facilitates these clipboard operations.
+Provides extensive support to cut, copy or paste the text data programmatically. The following functions and properties in EditControl facilitates these clipboard operations.
 
 <table>
 <tr>
@@ -74,6 +74,17 @@ Cuts the selected text contents from EditControl and maintains it in clipboard</
 Retrieves copied contents from the clipboard and pastes it into EditControl</td></tr>
 <tr>
 <td>
+{{ '[ClearClipboard](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ClearClipboard.html)' | markdownify }}</td><td>
+Clears all contents in the clipboard associated with EditControl. This is generally used immediately after the application loads, to clear any junk from previous clipboard operations</td></tr>
+</table>
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Description</th></tr>
+<tr>
+<td>
 {{ '[CanCopy](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanCopy.html)' | markdownify }}</td><td>
 Indicates whether it is possible to perform copy operations in EditControl</td></tr>
 <tr>
@@ -84,10 +95,6 @@ Indicates whether it is possible to perform cut operations in EditControl</td></
 <td>
 {{ '[CanPaste](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanCut.html)' | markdownify }}</td><td>
 Indicates whether it is possible to perform copy, cut, and paste operations in EditControl</td></tr>
-<tr>
-<td>
-{{ '[ClearClipboard](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ClearClipboard.html)' | markdownify }}</td><td>
-Clears all contents in the clipboard associated with EditControl. This is generally used immediately after the application loads, to clear any junk from previous clipboard operations</td></tr>
 </table>
 
 {% tabs %}
@@ -1171,8 +1178,8 @@ The keyboard shortcuts for the commands in the EditControl are listed below.
 Command</th><th>
 Shortcut</th></tr>
 <tr>
-<td colspan = "2">
-Clipboard</td></tr>
+<th colspan = "2">
+Clipboard</th></tr>
 <tr>
 <td>
 Copy</td><td>
@@ -1331,35 +1338,22 @@ CTRL+SPACEBAR</td></tr>
 
 The parent form of EditControl can be closed while pressing escape key when setting the [AcceptsEscape](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AcceptsEscape.html) property as `false`. Its default is `true`. This operation is performed only when parent form contains `Cancel` button.
 
-### Custom command binding
+### Performing user-defined action for default command
 
-By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringKeyCommands_EV.html) and [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringDefaultKeyBindings_EV.html) events we can add the user-defined commands and bind the desired custom keystroke combinations to them.
-
-This following code example registers the "File.Open" command and binds a <kbd>Ctrl+O</kbd> keystroke combination to it.
+By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringDefaultKeyBindings_EV.html) and [ProcessCommand](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Shared.Utils.KeyBinding.IKeyCommand~ProcessCommand_EV.html) events we can perform user-defined action for default command.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Invoke the Editor Keys Binding dialog.
+this.editControl1.RegisteringDefaultKeyBindings += new EventHandler(EditControl1_RegisteringDefaultKeyBindings);
 
-this.editControl1.ShowKeysBindingEditor();
+// Performing some actions using the ProcessCommandEventHandler events while opening a new file in EditControl.
 
-// Bind the action name to the action using the RegisteringKeyCommands and ProcessCommandEventHandler events.
-
-private void this.editControl1_RegisteringKeyCommands(object sender, EventArgs e)
+private void this.EditControl1_RegisteringDefaultKeyBindings(object sender, EventArgs e)
 {
 
      this.editControl1.Commands.Add( "File.Open" ).ProcessCommand += new ProcessCommandEventHandler( Command_Open );
-
-}
-
-// Bind key combinations to the action name using the RegisteringDefaultKeyBindings event.
-
-private void this.editControl1_RegisteringDefaultKeyBindings(object sender, EventArgs e)
-{
-
-      this.editControl1.KeyBinder.BindToCommand( Keys.Control | Keys.O, "File.Open" );
 
 }
 
@@ -1377,23 +1371,13 @@ private void Command_Open()
 
 {% highlight VB %}
 
-' Invoke the Editor Keys Binding dialog.
+AddHandler Me.editControl1.RegisteringDefaultKeyBindings, AddressOf EditControl1_RegisteringDefaultKeyBindings
 
-Me.editControl1.ShowKeysBindingEditor()
-
-' Bind the action name to the action using the RegisteringKeyCommands and ProcessCommandEventHandler events.
-
-Private  Sub Me.editControl1_RegisteringKeyCommands(ByVal sender As Object, ByVal e As EventArgs)
-
-     Me.editControl1.Commands.Add("File.Open").ProcessCommand += New ProcessCommandEventHandler(Command_Open)
-
-End Sub
-
-' Bind key combinations to the action name using the RegisteringDefaultKeyBindings event. 
+// Performing some actions using the ProcessCommandEventHandler events while opening a new file in EditControl.
 
 Private  Sub Me.editControl1_RegisteringDefaultKeyBindings(ByVal sender As Object, ByVal e As EventArgs)
 
-     Me.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.O, "File.Open")
+     Me.editControl1.Commands.Add("File.Open").ProcessCommand += New ProcessCommandEventHandler(Command_Open)
 
 End Sub
 
@@ -1402,6 +1386,46 @@ End Sub
 Private Sub Command_Open()
 
      ' Do the desired task.
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Custom command binding
+
+By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringKeyCommands_EV.html) event we can add bind the desired custom keystroke combinations to desired command.
+
+This following code example registers the "File.Open" command and binds a <kbd>Ctrl+Q</kbd> keystroke combination to it.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.RegisteringKeyCommands += new EventHandler(EditControl1_RegisteringKeyCommands);
+
+// Bind custom key combinations to the action name using the RegisteringKeyCommands event. 
+
+private void this.EditControl1_RegisteringKeyCommands(object sender, EventArgs e)
+{
+
+      this.editControl1.KeyBinder.BindToCommand( Keys.Control | Keys.Q, "File.Open" );
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+AddHandler Me.editControl1.RegisteringKeyCommands, AddressOf EditControl1_RegisteringKeyCommands
+
+' Bind custom key combinations to the action name using the RegisteringKeyCommands event.  
+
+Private  Sub Me.EditControl1_RegisteringKeyCommands(ByVal sender As Object, ByVal e As EventArgs)
+
+     Me.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.Q, "File.Open")
 
 End Sub
 
@@ -1459,7 +1483,7 @@ Me.EditControl1.TabStopsArray = New Integer() {8, 16, 24, 32, 40}
 
 ## Insert space / keep tabs
 
-The following functions can be used convert the spaces in a selected region into tabs and vice versa. Tab symbols can also be added, inserted or removed from selected text.
+The following functions can be used to convert the spaces in a selected region into tabs and vice versa. Tab symbols can also be added, inserted or removed from selected text.
 
 <table>
 <tr>
@@ -1682,6 +1706,46 @@ Context menu item can be set as disabled using `SetContextMenuItemEnabled` funct
 {% endtabs %}
 
 ![](Editing-Features_images/Editing-Features_img21.png)
+
+### Change shortcut key for context menu options
+
+By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringKeyCommands_EV.html) event, we can change the short key for context menu options.
+
+This following code example registers the "Clipboard.Cut" command and binds a <kbd>Ctrl+L</kbd> keystroke combination to it.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.RegisteringKeyCommands += new EventHandler(EditControl1_RegisteringKeyCommands);
+
+// Bind custom key combinations to the action name using the RegisteringKeyCommands event. 
+
+private void this.EditControl1_RegisteringKeyCommands(object sender, EventArgs e)
+{
+
+      this.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Clipboard.Cut");
+
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+AddHandler Me.editControl1.RegisteringKeyCommands, AddressOf EditControl1_RegisteringKeyCommands
+
+' Bind custom key combinations to the action name using the RegisteringKeyCommands event.  
+
+Private  Sub Me.EditControl1_RegisteringKeyCommands(ByVal sender As Object, ByVal e As EventArgs)
+
+     Me.editControl1.KeyBinder.BindToCommand(Keys.Control | Keys.L, "Clipboard.Cut")
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Add custom context menu item
 
@@ -2005,8 +2069,6 @@ EditControl has the ability to indicate whitespace in its contents with default 
 2. Tabs are indicated by using Right Arrows.
 3. Line Feeds are indicated by using a special Line Feed Symbol.
 
-![](Editing-Features_images/Editing-Features_img13.png)
-
 ### Configure the space indicator
 
 We can configure the whitespace indicators by setting the [ShowWhiteSpaces](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowWhitespaces.html) property to `true`. By default, this property is set to `false`.
@@ -2052,6 +2114,8 @@ Me.editControl1.ToggleShowingWhiteSpaces()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img13.png)
 
 **Showing or hiding indicators**
 
@@ -2172,6 +2236,8 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Editing-Features_images/Editing-Features_img22.png)
 
 ## Unicode
 

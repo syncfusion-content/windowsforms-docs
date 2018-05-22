@@ -26,7 +26,7 @@ Some of the key features are listed below.
 * [Indentation support](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#indent-or-outdent) - Supports Microsoft Visual Studio Text Editor like text indent and outdent options.
 * [Word Wrap](https://help.syncfusion.com/windowsforms/syntaxeditor/text-visualization#word-wrap) - Supports text wrapping to next line, when it exceeds the control bounds.  
 * [Autocomplete](https://help.syncfusion.com/windowsforms/syntaxeditor/intellisense#auto-complete) - Supports AutoComplete option that helps to predict and append predefined data, when user is typing.
-* [Auto correct](https://help.syncfusion.com/windowsforms/syntaxeditor/intellisense#auto-correct) - Supports AutoCorrect option that helps to automatically correct misspellings and common typos.
+* [Autocorrect](https://help.syncfusion.com/windowsforms/syntaxeditor/intellisense#auto-correct) - Supports AutoCorrect option that helps to automatically correct misspellings and common typos.
 * [Fully functional Context menu](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#context-menu-options) - Provides a built-in context menu with options to perform editing operations like Undo, Redo, Cut, Copy, Paste, Select All and so on. EditControl also have option enable or disable the built-in context menu.
 * [Content dividers](https://help.syncfusion.com/windowsforms/syntaxeditor/text-visualization#content-dividers) - Clearly distinguish content sections with line dividers, similar to Visual Basic, to improve code readability.
 * [Intellisense](https://help.syncfusion.com/windowsforms/syntaxeditor/intellisense) - Provides Intellisense pop-up capabilities to add content easily, as like in Microsoft Visual Studio code editor.

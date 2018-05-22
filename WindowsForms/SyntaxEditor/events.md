@@ -451,7 +451,7 @@ private void editControl1_CollapsedAll(object sender, EventArgs e)
 
 ' Handle the CollapsedAll event.
 
-Me.editControl1.CollapsedAll+=New EventHandler(editControl1_CollapsedAll)
+AddHandler Me.editControl1.CollapsedAll, AddressOf editControl1_CollapsedAll
 
 ' Call the CollapseAll function.
 
@@ -517,7 +517,7 @@ private void editControl1_CollapsingAll(object sender, CancelEventArgs e)
 
 ' Handle the CollapsingAll event.
 
-Me.editControl1.CollapsingAll+=New EventHandler(editControl1_CollapsingAll)
+AddHandler Me.editControl1.CollapsingAll, AddressOf editControl1_CollapsingAll
 
 ' Call the CollapseAll function.
 
@@ -810,7 +810,7 @@ private void editControl1_ExpandedAll(object sender, EventArgs e)
 
 ' Handle the ExpandedAll event.
 
-Me.editControl1.ExpandedAll+=New EventHandler(editControl1_ExpandedAll)
+AddHandler Me.editControl1.ExpandedAll, AddressOf editControl1_ExpandedAll
 
 ' Call the ExpandAll function.
 
@@ -878,7 +878,7 @@ private void editControl1_ExpandingAll(object sender, CancelEventArgs e)
 
 ' Handle the ExpandingAll event.
 
-Me.editControl1.ExpandingAll+=New EventHandler(editControl1_ExpandingAll)
+AddHandler Me.editControl1.ExpandingAll, AddressOf editControl1_ExpandingAll
 
 ' Call the ExpandAll function.
 
@@ -1694,7 +1694,7 @@ private void editControl1_ReadOnlyChanged(object sender, EventArgs e)
 
 ' Handle the ReadOnlyChanged event.
 
-Me.editControl1.ReadOnlyChanged+=New EventHandler(editControl1_ReadOnlyChanged)
+AddHandler Me.editControl1.ReadOnlyChanged, AddressOf editControl1_ReadOnlyChanged
 
 ' Set the ReadOnly property to True.
 

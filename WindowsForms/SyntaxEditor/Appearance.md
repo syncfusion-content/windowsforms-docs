@@ -82,6 +82,11 @@ Me.editControl1.SplitVertically()
 
 {% endtabs %}
 
+![](Appearance_images/Appearance_img27.png)
+
+![](Appearance_images/Appearance_img26.png)
+
+
 ## Customize split views
 
 In EditControl, user can customize the splitter background color and also disables the splitter. 

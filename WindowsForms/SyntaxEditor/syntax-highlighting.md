@@ -512,7 +512,7 @@ Custom operators can be added or existing operators can be customized in built-i
 
 A regular expression is a pattern that could be matched against any input text. 
 
-For example, if you like to customize the particular string that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as `true` based on the expression given in the lexem.
+For example, if you like to customize the strings that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as `true` based on the expression given in the lexem.
 
 {% highlight xaml %}
 
@@ -612,7 +612,7 @@ Extensions contain a list of extensions that are associated with that particular
 </extensions>
 {% endhighlight %}
 
-### How to Configure the created configuration file in EditControl
+### Apply custom configuration in EditControl
 
 The following code examples help you to configure the configuration file in the EditControl.
 
@@ -806,7 +806,9 @@ Custom operators can be added or existing operators can be customized in built-i
  
 ### Regex
 
-A regular expression is a pattern that could be matched against any input text. For example, if you like to customize the particular string that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as true based on the expression given in the lexem.
+A regular expression is a pattern that could be matched against any input text. 
+
+For example, if you like to customize the strings that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as true based on the expression given in the lexem.
 
 {% highlight xaml %}
 
@@ -892,30 +894,6 @@ The following code demonstrates auto corrects int and the, if they misspelled as
 
 N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute.
 
-### Multiple language configuration
-
-EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration.
-
-{% highlight xaml %}
-
- <ConfigLanguage name="HTML (Light)" CaseInsensitive="true" Known="HTML" StartComment="&lt;!--" EndComment="--&gt;">
-  <formats>
-   <format name="Text" Font="Courier New, 10pt" FontColor="Black" />
-   <format name="TagName" Font="Courier New, 10pt" FontColor="DarkRed" />
-   <format name="AttributeName" Font="Courier New, 10pt" FontColor="Red" />
-  </formats>
-	<!--JavaScript-->
-  <lexem BeginBlock="if" Type="KeyWord" />
-  <lexem BeginBlock="var" Type="KeyWord" />
-  <lexem BeginBlock="escape" Type="KeyWord" />
-  <lexem BeginBlock="script" EndBlock="(&gt;)|(/&gt;)" IsEndRegex="true" IsPseudoEnd="true" IsComplex="true" Type="Custom" FormatName="TagName">
-</ConfigLanguage>
-
-{% endhighlight %}
-
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
-
-
 ### File extension
 
 Extensions contain a list of extensions that are associated with that particular language.
@@ -928,7 +906,54 @@ Extensions contain a list of extensions that are associated with that particular
 
 {% endhighlight %}
 
-### How to Configure the created configuration file in EditControl
+### Multiple language configuration
+
+EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration.
+
+The following code example illustrates HTML with JScript language configuration.
+
+{% highlight xaml %}
+
+ <ConfigLanguage name="HTML (Light)" CaseInsensitive="true" Known="HTML" StartComment="&lt;!--" EndComment="--&gt;">
+  <formats>
+      <format name="Text" Font="Courier New, 10pt" FontColor="Black" />
+      <format name="TagName" Font="Courier New, 10pt" FontColor="Green" />
+      <format name="AttributeName" Font="Courier New, 10pt" FontColor="Red" />
+      <format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
+      <format name="Operator" Font="Courier New, 10pt" FontColor="Blue" />
+    </formats>
+
+    <extensions>
+      <extension>html</extension>
+      <extension>htm</extension>
+    </extensions>
+
+    <!--JavaScript and HTML-->
+    <lexems>
+      <lexem BeginBlock="&lt;" Type="Operator" />
+      <lexem BeginBlock="&gt;" Type="Operator" />
+      <lexem BeginBlock="if" Type="KeyWord" />
+      <lexem BeginBlock="var" Type="KeyWord" />
+      <lexem BeginBlock="escape" Type="KeyWord" />
+      <lexem BeginBlock="head" Type="AttributeName" />
+      <lexem BeginBlock="body" Type="AttributeName" />
+      <lexem BeginBlock="meta" Type="AttributeName" />
+      <lexem BeginBlock="title" Type="AttributeName" />
+      <lexem BeginBlock="HTML" Type="AttributeName" />
+      <lexem BeginBlock="PUBLIC" Type="AttributeName" />
+      <lexem BeginBlock="script" EndBlock="(&gt;)|(/&gt;)" IsEndRegex="true" IsPseudoEnd="true" IsComplex="true" Type="Custom" FormatName="TagName"/>
+    </lexems>
+
+</ConfigLanguage>
+
+{% endhighlight %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
+
+N> Refer to the following sample link that demonstrates the Custom language configuration in EditControl.
+C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
+
+### Apply custom configuration in EditControl
 
 {% tabs %}
 
@@ -970,7 +995,7 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Window
 
 EditControl also offers extensive support to create configuration settings programmatically. This provides greater flexibility so that users can dynamically modify configuration settings of the currently loaded configuration as per their requirements. The following procedure will walk you through the entire process of creating configuration settings programmatically.
 
-### How to add new configuration language to EditControl
+### Add new configuration language to EditControl
 
 A new configuration language can be added to the EditControl by using the [CreateLanguageConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.Config~CreateLanguageConfiguration.html) function of [Config](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.Config.html) class. Once the new configuration language is created, apply it to the contents of EditControl by using the [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function.
 
@@ -1314,7 +1339,7 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img18.png)
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img22.png)
 
 ### Splits configuration
 
@@ -1426,6 +1451,253 @@ Me.editControl1.Language.Extensions.Add("lisp")
 {% endhighlight %}
 
 {% endtabs %}
+
+### Multiple language configuration
+
+EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration.
+
+The following code example illustrates HTML with JScript language configuration.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ IConfigLanguage currentConfigLanguage = this.editControl1.Configurator.CreateLanguageConfiguration("HTML_Jscript");
+
+ this.editControl1.ApplyConfiguration(currentConfigLanguage);
+
+
+ ISnippetFormat keyword = this.editControl1.Language.Add("keyword");
+
+ keyword.FontColor = Color.Blue;
+
+ keyword.Font = new Font("Courier New", 10);
+
+ ISnippetFormat attributeName = this.editControl1.Language.Add("AttributeName");
+
+ attributeName.FontColor = Color.Red;
+
+ attributeName.Font = new Font("Courier New", 10);
+
+ ISnippetFormat operators = this.editControl1.Language.Add("Operators");
+
+ operators.FontColor = Color.Blue;
+
+ operators.Font = new Font("Courier New", 10);
+
+ ISnippetFormat tagName = this.editControl1.Language.Add("TagName");
+
+ tagName.FontColor = Color.Green;
+
+ tagName.Font = new Font("Courier New", 10);
+
+
+ ConfigLexem operator1 = new ConfigLexem("&lt", "", FormatType.Custom, false);
+
+ operator1.FormatName = "Operators";
+
+ this.editControl1.Language.Lexems.Add(operator1);
+
+ ConfigLexem operator2 = new ConfigLexem("", "&gt", FormatType.Custom, false);
+
+ operator2.FormatName = "Operators";
+
+ this.editControl1.Language.Lexems.Add(operator2);
+
+
+ ConfigLexem keyword1 = new ConfigLexem("if", "", FormatType.Custom, false);
+
+ keyword1.FormatName = "keyword";
+
+ this.editControl1.Language.Lexems.Add(keyword1);
+
+ ConfigLexem keyword2 = new ConfigLexem("var", "", FormatType.Custom, false);
+
+ keyword2.FormatName = "keyword";
+
+ this.editControl1.Language.Lexems.Add(keyword2);
+
+ ConfigLexem keyword3 = new ConfigLexem("escape", "", FormatType.Custom, false);
+
+ keyword3.FormatName = "keyword";
+
+ this.editControl1.Language.Lexems.Add(keyword3);
+
+
+ ConfigLexem html = new ConfigLexem("html", "", FormatType.Custom, false);
+
+ html.FormatName = "AttributeName";
+
+ this.editControl1.Language.Lexems.Add(html);
+
+ ConfigLexem head = new ConfigLexem("head", "", FormatType.Custom, false);
+
+ head.FormatName = "AttributeName";
+
+ this.editControl1.Language.Lexems.Add(head);
+
+ ConfigLexem body = new ConfigLexem("body", "", FormatType.Custom, false);
+
+ body.FormatName = "AttributeName";
+
+ this.editControl1.Language.Lexems.Add(body);
+
+ ConfigLexem meta = new ConfigLexem("meta", "", FormatType.Custom, false);
+
+ meta.FormatName = "AttributeName";
+
+ this.editControl1.Language.Lexems.Add(meta);
+
+ ConfigLexem title = new ConfigLexem("title", "", FormatType.Custom, false);
+
+ title.FormatName = "AttributeName";
+
+ this.editControl1.Language.Lexems.Add(title);
+
+ ConfigLexem pub = new ConfigLexem("public", "", FormatType.Custom, false);
+
+ pub.FormatName = "AttributeName";
+
+ this.editControl1.Language.Lexems.Add(pub);
+
+
+ ConfigLexem script = new ConfigLexem("script", "(&gt;)|(/&gt;)", FormatType.Custom, false);
+
+ script.IsBeginRegex = true;
+
+ script.IsPseudoEnd = true;
+
+ script.IsComplex = true;
+
+ script.FormatName = "TagName";
+
+ this.editControl1.Language.Lexems.Add(script);
+
+
+ this.editControl1.Language.Extensions.Add("htm");
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+ Dim currentConfigLanguage As IConfigLanguage = Me.editControl1.Configurator.CreateLanguageConfiguration("HTML_Jscript")
+
+ Me.editControl1.ApplyConfiguration(currentConfigLanguage)
+
+
+ Dim keyword As ISnippetFormat = Me.editControl1.Language.Add("keyword")
+
+ keyword.FontColor = Color.Blue
+
+ keyword.Font = New Font("Courier New", 10)
+
+ Dim attributeName As ISnippetFormat = Me.editControl1.Language.Add("AttributeName")
+
+ attributeName.FontColor = Color.Red
+
+ attributeName.Font = New Font("Courier New", 10)
+
+ Dim operators As ISnippetFormat = Me.editControl1.Language.Add("Operators")
+
+ operators.FontColor = Color.Blue
+
+ operators.Font = New Font("Courier New", 10)
+
+ Dim tagName As ISnippetFormat = Me.editControl1.Language.Add("TagName")
+
+ tagName.FontColor = Color.Green
+
+ tagName.Font = New Font("Courier New", 10)
+
+
+ Dim operator1 As New ConfigLexem("&lt", "", FormatType.Custom, False)
+
+ operator1.FormatName = "Operators"
+
+ Me.editControl1.Language.Lexems.Add(operator1)
+
+ Dim operator2 As New ConfigLexem("", "&gt", FormatType.Custom, False)
+
+ operator2.FormatName = "Operators"
+
+ Me.editControl1.Language.Lexems.Add(operator2)
+
+
+ Dim keyword1 As New ConfigLexem("if", "", FormatType.Custom, False)
+
+ keyword1.FormatName = "keyword"
+
+ Me.editControl1.Language.Lexems.Add(keyword1)
+
+ Dim keyword2 As New ConfigLexem("var", "", FormatType.Custom, False)
+
+ keyword2.FormatName = "keyword"
+
+ Me.editControl1.Language.Lexems.Add(keyword2)
+
+ Dim keyword3 As New ConfigLexem("escape", "", FormatType.Custom, False)
+
+ keyword3.FormatName = "keyword"
+
+ Me.editControl1.Language.Lexems.Add(keyword3)
+
+ Dim html As New ConfigLexem("html", "", FormatType.Custom, False)
+
+ html.FormatName = "AttributeName"
+
+ Me.editControl1.Language.Lexems.Add(html)
+
+ Dim head As New ConfigLexem("head", "", FormatType.Custom, False)
+
+ head.FormatName = "AttributeName"
+
+ Me.editControl1.Language.Lexems.Add(head)
+
+
+ Dim body As New ConfigLexem("body", "", FormatType.Custom, False)
+
+ body.FormatName = "AttributeName"
+
+ Me.editControl1.Language.Lexems.Add(body)
+
+ Dim meta As New ConfigLexem("meta", "", FormatType.Custom, False)
+
+ meta.FormatName = "AttributeName"
+
+ Me.editControl1.Language.Lexems.Add(meta)
+
+ Dim title As New ConfigLexem("title", "", FormatType.Custom, False)
+
+ title.FormatName = "AttributeName"
+
+ Me.editControl1.Language.Lexems.Add(title)
+
+ Dim pub As New ConfigLexem("public", "", FormatType.Custom, False)
+
+ pub.FormatName = "AttributeName"
+
+ Me.editControl1.Language.Lexems.Add(pub)
+
+ Dim script As New ConfigLexem("script", "(&gt;)|(/&gt;)", FormatType.Custom, False)
+
+ script.IsBeginRegex = True
+
+ script.IsPseudoEnd = True
+
+ script.IsComplex = True
+
+ script.FormatName = "TagName"
+
+ Me.editControl1.Language.Lexems.Add(script)
+
+ Me.editControl1.Language.Extensions.Add("htm")
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
 
 ### Invoking newly added configuration language
 

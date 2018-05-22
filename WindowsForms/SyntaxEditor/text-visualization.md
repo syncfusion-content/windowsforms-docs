@@ -400,10 +400,6 @@ Me.editControl1.WrappedLinesOffset = 10
 
 {% endtabs %}
 
-The following illustration shows the EditControl with the WordWrappingMode and WordWrapType properties set.
-
-![](Text-Visualization_images/Text-Visualization_img2.png)
-
 ### Word wrap by content
 
 By using the `WordWrapType` property we can set different types for wrapping the word in the EditControl. There are two types of Word wrapping in EditControl. 
@@ -456,6 +452,12 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 {% endhighlight %}
 
 {% endtabs %}
+
+The following screenshot illustrates word wrapping based on character and word in EditControl:
+
+![](Text-Visualization_images/Text-Visualization_img15.png)
+
+![](Text-Visualization_images/Text-Visualization_img16.png)
 
 **WordWrap margin customization**
 
@@ -546,11 +548,11 @@ this.editControl1.MarkLineWrapping = true;
 
 // Images that indicate the line that is being wrapped.
 
-this.editControl1.CustomWrappedLinesMarkingImage = ((System.Drawing.Image)(resources.GetObject("$this.Sunset")));
+this.editControl1.CustomWrappedLinesMarkingImage = ((System.Drawing.Image)(resources.GetObject("$this.CustomWordWrap_image")));
 
 // Images that indicate the point at which the line is being wrapped.
 
-this.editControl1.CustomLineWrappingMarkingImage = ((System.Drawing.Image)(resources.GetObject("$this.Blue_hills")));
+this.editControl1.CustomLineWrappingMarkingImage = ((System.Drawing.Image)(resources.GetObject("$this.CustomWordWrap_image")));
 
 // Indicate wrapped lines.
 
@@ -567,11 +569,11 @@ Me.editControl1.MarkLineWrapping = True
 
 ' Images that indicate the line that is being wrapped.
 
-Me.editControl1.CustomWrappedLinesMarkingImage = (CType((resources.GetObject("$this.Sunset")), System.Drawing.Image))
+Me.editControl1.CustomWrappedLinesMarkingImage = (CType((resources.GetObject("$this.CustomWordWrap_image")), System.Drawing.Image))
 
 ' Images that indicate the point at which the line is being wrapped.
 
-Me.editControl1.CustomLineWrappingMarkingImage = (CType((resources.GetObject("$this.Blue_hills")), System.Drawing.Image))
+Me.editControl1.CustomLineWrappingMarkingImage = (CType((resources.GetObject("$this.CustomWordWrap_image")), System.Drawing.Image))
 
 ' Indicate wrapped lines.
 
@@ -939,7 +941,7 @@ UnderlineWeight.Thick(default) and UnderlineWeight.Double</td></tr>
 
 // Registers the custom underline format.
 
-ISnippetFormat format = editControl1.RegisterUnderlineFormat (SelectedColor, SelectedStyle, SelectedWeight);
+ISnippetFormat format = editControl1.RegisterUnderlineFormat(Color.Red, UnderlineStyle.Wave, UnderlineWeight.Bold);
 
 {% endhighlight %}
 
@@ -948,7 +950,7 @@ ISnippetFormat format = editControl1.RegisterUnderlineFormat (SelectedColor, Sel
 
 ' Registers the custom underline format.
 
-Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(SelectedColor, SelectedStyle, SelectedWeight)
+Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(Color.Red, UnderlineStyle.Wave, UnderlineWeight.Bold)
 
 {% endhighlight %}
 
@@ -964,7 +966,7 @@ Dim format As ISnippetFormat = editControl1.RegisterUnderlineFormat(SelectedColo
 
 // Sets underlining of the specified text region
 
-this.editControl1.SetUnderline(this.editControl1.CurrentLine, this.editControl1.CurrentLine, format);
+this.editControl1.SetUnderline(new Point(1, 1), new Point(8, 8), format);
 
 {% endhighlight %}
 
@@ -973,11 +975,13 @@ this.editControl1.SetUnderline(this.editControl1.CurrentLine, this.editControl1.
 
 ' Sets underlining of the specified text region
 
-Me.editControl1.SetUnderline(this.editControl1.CurrentLine, this.editControl1.CurrentLine, format)
+Me.editControl1.SetUnderline(New Point(1, 1), New Point(8, 8), format)
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Text-Visualization_images/Text-Visualization_img17.png)
 
 ### Remove applied underline
 
@@ -989,7 +993,7 @@ We can remove the underlining which had been set by using the [RemoveUnderline](
 
 // Removes underlining in the specified region
 
-this.editControl1.RemoveUnderline(this.editControl1.CurrentLine, this.editControl1.CurrentLine);
+this.editControl1.RemoveUnderline(new Point(1, 1), new Point(8, 8));
 
 {% endhighlight %}
 
@@ -998,7 +1002,7 @@ this.editControl1.RemoveUnderline(this.editControl1.CurrentLine, this.editContro
 
 ' Removes underlining in the specified region
 
-Me.editControl1.RemoveUnderline(Me.editControl1.CurrentLine, Me.editControl1.CurrentLine)
+Me.editControl1.RemoveUnderline(New Point(1, 1), New Point(8, 8))
 
 {% endhighlight %}
 
@@ -1010,13 +1014,19 @@ You can also set the underlining from the configuration file, as shown in the be
 
 {% highlight xaml %}
 
-<format name="Comment" Font="Courier New, 10pt, style=Bold" FontColor="Green" LineColor="Red" Weight="Thick" Underline="DashDot" />
+<formats>
+  <format name="Error" Font="Courier New, 10pt" FontColor="Black" underline="Wave" LineColor="Red" />
+</formats>
+
+<lexems>
+<lexem BeginBlock="#endregion" Type="Error" Priority="-10" />
+<lexem BeginBlock="#endif" Type="Error" Priority="-10" />
+<lexem BeginBlock="#else" Type="Error" Priority="-10" />
+</lexems>
 
 {% endhighlight %}
 
-LineColor, Weight and Underline parameters are used to specify the type of underlining to be used.
-
-![](Text-Visualization_images/Text-Visualization_img7.jpeg)
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
 
 ### Strike out
 
@@ -1030,13 +1040,9 @@ LineColor, Weight and Underline parameters are used to specify the type of under
 
 this.editControl1.StrikeThrough(this.editControl1.CurrentLine, Color.IndianRed);
 
-// Strikeout the selected text.
-
-this.editControl1.StrikeThrough(this.editControl1.Selection.Top, this.editControl1.Selection.Bottom, Color.Navy);
-
 // Strikeout the text in the specified text range.
 
-this.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.Aqua);
+this.editControl1.StrikeThrough(new Point(1, 1), new Point(8, 8), Color.Orange);
 
 {% endhighlight %}
 
@@ -1047,13 +1053,9 @@ this.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.
 
 Me.editControl1.StrikeThrough(Me.editControl1.CurrentLine, Color.IndianRed)
 
-' Strikeout the selected text.
-
-Me.editControl1.StrikeThrough(Me.editControl1.Selection.Top, Me.editControl1.Selection.Bottom, Color.Navy)
-
 ' Strikeout the text in the specified text range.
 
-Me.editControl1.StrikeThrough(startCoordinatePoint, endCoordinatePoint, Color.Aqua)
+Me.editControl1.StrikeThrough(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 {% endhighlight %}
 

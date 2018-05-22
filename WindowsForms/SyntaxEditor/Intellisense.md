@@ -1237,7 +1237,7 @@ The brush for the Context ToolTip background can be set by using the [ContextToo
 
 this.editControl1.ShowContextTooltip = true;
 
-this.editControl1.ContextTooltipBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.LavenderBlush, System.Drawing.Color.Khaki);
+this.editControl1.ContextTooltipBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.Violet, System.Drawing.Color.Violet);
 
 this.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange;
 
@@ -1248,7 +1248,7 @@ this.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange;
 
 Me.editControl1.ShowContextTooltip = True
 
-Me.editControl1.ContextTooltipBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.LavenderBlush, System.Drawing.Color.Khaki)
+Me.editControl1.ContextTooltipBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.Color.Violet, System.Drawing.Color.Violet)
 
 Me.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange
 
@@ -1256,6 +1256,7 @@ Me.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange
 
 {% endtabs %}
 
+![](Intellisense-images/Intellisense_img14.png)
 
 It is also possible to specify the time delay after which the tooltip should be displayed by using the [ToolTipDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ToolTipDelay.html) property.
 
@@ -1338,6 +1339,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Intellisense-images/Intellisense_img2.png)
 
 ## Auto correct
 
