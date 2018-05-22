@@ -7,34 +7,209 @@ control: Gauge
 documentation: ug
 ---
 
-# Linear Gauge
+# LinearGauge
 
-Linear gauges are perfect for displaying values graphically along a linear scale. All the elements in a linear gauge, including scales, labels, ticks, and pointers, can be fully customized with data-binding support.
+LinearGauge are perfect for displaying values graphically along a linear scale. All the elements in a LinearGauge, including scales, labels, ticks, and pointers, can be fully customized with data-binding support.
 
 The LinearGauge control includes the following elements: scale label, needle, gauge value, and background frame. All the elements can be optionally displayed in the Gauge control.
 
-## Feature summary
+# Key features
 
-Here is a brief overview of various features of the LinearGauge control.
+* **Scales** - Provides support to customize appearance of the associated scales.
 
-* Scales - The scale value can be customized to be displayed within defined limits.
-* Frame Types - Allow you to specify the built-in frame style, such as full circle or half circle.
-* Pointers - Provide complete support for pointers to point to the value.
-* Range - Full-fledged range support.
+* **Frame types** - Provides options to specify the built-in frame style, such as horizontal or vertical.
+
+* **Range** - Provides options to display different ranges in different colors.
+
+# Getting started
+
+This section describes how to add `LinearGauge` control in a Windows Forms application and overview of its basic functionalities.
+
+## Assembly deployment
+
+The following list of assemblies should be added as reference to use the LinearGauge in any application:
+
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Gauge.Windows
+</td>
+<td>
+The Syncfusion.Gauge.Windows contains the class that handles all UI operations and contains helper class of LinearGauge control.
+</td>
+</tr>
+</table>
+
+
+# Installing NuGet Packages
+
+To use LinearGauge control in Windows Forms application via nuget, the following packages should be installed.
+ 
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Gauge.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Gauge.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Gauge.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Gauge.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td> Syncfusion.Gauge.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td> Syncfusion.Gauge.Windows46
+</td>
+</tr>
+<tr>
+<td> 7
+</td>
+<td> 4.6.1
+</td>
+<td> Syncfusion.Gauge.Windows461
+</td>
+</tr>
+</table>
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+https://help.syncfusion.com/windowsforms/nuget-packages
+
+
+# Creating simple application with LinearGauge
+
+You can create the Windows Forms application with LinearGauge control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the LinearGauge with basic functionalities.
+
+## Adding control via designer
+
+The LinearGauge control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Gauge.Windows.dll
+* Syncfusion.Shared.Base.dll
+
+![](Linear-Gauge_images/LinearGauge_img1.png)
+
+
+## Adding control manually in code
+
+To add control manually in C#, follow the given steps:
+
+1. Add the following required assembly references to the project:
+
+	* Syncfusion.Gauge.Windows.dll
+	* Syncfusion.Shared.Base.dll
+
+2. Include the namespaces **Syncfusion.Gauge.Windows**.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.Gauge.Windows;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Gauge.Windows
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+2. Create `LinearGauge` control instance and add it to the form.
+
+{% tabs %}
+
+{% highlight C# %}
+
+LinearGauge linearGauge1 = new LinearGauge();
+
+this.Controls.Add(linearGauge1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim linearGauge1 As LinearGauge = New LinearGauge
+
+Me.Controls.Add(linearGauge1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Linear-Gauge_images/LinearGauge_img2.png)
 
 ### Concepts and features
 
+This section illustrates the features of the LinearGauge with images and sample code. It contains the following topics:
 
-This section illustrates the features of the linear gauge with images and sample code. It contains the following topics:
-
-* Linear Gauge Frames
+* LinearGauge Frames
 * Scales
 * Ticks
 * Needles
 * Ranges
 * Scaling Divisions
 
-### Linear Gauge frame
+### LinearGauge frame
 
 
 The frame defines the frame types of linear gauges. Frames can be applied using the FrameType property. The LinearGauge control contains two frame types:
