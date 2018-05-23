@@ -470,17 +470,16 @@ Me.editControl1.SelectAll()
 
 {% endtabs %}
 
-{% tabs %}
-
 ![](Editing-Features_images/Editing-Features_img20.png)
 
 The following code snippet demonstrates how to select the text using `StartSelection` and `StopSelection` functions in EditControl.
-   
+
+{% tabs %}
+
 {% highlight C# %}
 
 this.editControl1.StartSelection(1, 1);
-this.editControl1.StopSelection(20, 20);
-this.editControl1.SelectionMode = SelectionModes.Block;     
+this.editControl1.StopSelection(20, 20);    
 
 {% endhighlight %}
 
@@ -488,8 +487,7 @@ this.editControl1.SelectionMode = SelectionModes.Block;
 {% highlight VB %}
 
 Me.editControl1.StartSelection(1, 1)
-Me.editControl1.StopSelection(20, 20)
-Me.editControl1.SelectionMode = SelectionModes.Block    
+Me.editControl1.StopSelection(20, 20)  
 
 {% endhighlight %}
 
@@ -1248,6 +1246,10 @@ Printing</th></tr>
 Print</td><td>
 CTRL+P</td></tr>
 <tr>
+<td>
+PrintPreview</td><td>
+Printing.PrintPreview</td></tr>
+<tr>
 <th colspan = "2">
 Positioning</th></tr>
 <tr>
@@ -1316,6 +1318,10 @@ CTRL+[index of bookmark]</td></tr>
 Go to named bookmark</td><td>
 CTRL+SHIFT+[index of bookmark]</td></tr>
 <tr>
+<td>
+Bookmark clear</td><td>
+Ctrl+Shift+F2</td></tr>
+<tr>
 <th colspan = "2">
 Tab</th></tr>
 <tr>
@@ -1365,7 +1371,168 @@ The parent form of EditControl can be closed while pressing escape key when sett
 
 ### Performing user-defined action for default command
 
-By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringDefaultKeyBindings_EV.html) and [ProcessCommand](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Shared.Utils.KeyBinding.IKeyCommand~ProcessCommand_EV.html) events we can perform user-defined action for default command.
+By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringDefaultKeyBindings_EV.html) and [ProcessCommand](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Shared.Utils.KeyBinding.IKeyCommand~ProcessCommand_EV.html) events we can perform user-defined action for default command. The following table contains the default command and respective string which need to used while adding to commands in EditControl.
+
+<table>
+<tr>
+<th>
+Command</th><th>
+String</th></tr>
+<tr>
+<th colspan = "2">
+Clipboard</th></tr>
+<tr>
+<td>
+Copy</td><td>
+Clipboard.Copy</td></tr>
+<tr>
+<td>
+Paste</td><td>
+Clipboard.Paste</td></tr>
+<tr>
+<td>
+Cut</td><td>
+Clipboard.Cut</td></tr>
+<tr>
+<td>
+SelectAll</td><td>
+Edit.SelectAll</td></tr>
+<tr>
+<th colspan = "2">
+File Operation</th></tr>
+<tr>
+<td>
+Save</td><td>
+File.Save</td></tr>
+<tr>
+<td>
+SaveAs</td><td>
+File.SaveAs</td></tr>
+<tr>
+<td>
+New</td><td>
+File.New</td></tr>
+<tr>
+<td>
+Open</td><td>
+File.Open</td></tr>
+<tr>
+<th colspan = "2">
+Printing</th></tr>
+<tr>
+<td>
+Print</td><td>
+Printing.Print</td></tr>
+<tr>
+<th colspan = "2">
+Positioning</th></tr>
+<tr>
+<td>
+Go to line</td><td>
+Edit.GoTo</td></tr>
+<tr>
+<td>
+Go to start</td><td>
+Navigation.DocumentStart</td></tr>
+<tr>
+<td>
+Go to end</td><td>
+Navigation.DocumentEnd</td></tr>
+<tr>
+<th colspan = "2">
+Search and Replace</th></tr>
+<tr>
+<td>
+Find</td><td>
+Edit.Find</td></tr>
+<tr>
+<td>
+FindNext</td><td>
+Edit.FindNext</td></tr>
+<tr>
+<td>
+Replace</td><td>
+Edit.Replace</td></tr>
+<tr>
+<th colspan = "2">
+Undo and Redo</th></tr>
+<tr>
+<td>
+Undo </td><td>
+Edit.Undo</td></tr>
+<tr>
+<td>
+Redo</td><td>
+Edit.Redo</td></tr>
+<tr>
+<th colspan = "2">
+Bookmark</th></tr>
+<tr>
+<td>
+Toggle unnamed bookmark</td><td>
+Edit.Bookmarks.Toggle</td></tr>
+<tr>
+<td>
+Go to next bookmark</td><td>
+Edit.Bookmarks.Next</td></tr>
+<tr>
+<td>
+Go to previous bookmark</td><td>
+Edit.Bookmarks.Previous</td></tr>
+<tr>
+<td>
+Toggle named bookmark</td><td>
+Edit.Bookmarks.Toggle[index of bookmark]</td></tr>
+<tr>
+<td>
+Go to named bookmark</td><td>
+Edit.Bookmarks.Switch[index of bookmark]</td></tr>
+<tr>
+<td>
+Bookmark clear</td><td>
+Edit.Bookmarks.Clear</td></tr>
+<tr>
+<th colspan = "2">
+Tab</th></tr>
+<tr>
+<td>
+Add leading tab</td><td>
+Edit.AddLeadingTab</td></tr>
+<tr>
+<td>
+Remove leading tab</td><td>
+Edit.RemoveLeadingTab</td></tr>
+<tr>
+<th colspan = "2">
+Outlining</th></tr>
+<tr>
+<td>
+Switch on outlining and collapse all</td><td>
+Edit.Collapsing.On</td></tr>
+<tr>
+<td>
+Switch off outlining</td><td>
+Edit.Collapsing.Off</td></tr>
+<tr>
+<td>
+Toggle outlining</td><td>
+Edit.Collapsing.Toggle</td></tr>
+<tr>
+<th colspan = "2">
+Intellisense</th></tr>
+<tr>
+<td>
+Show context prompt</td><td>
+Editor.ContextPrompt</td></tr>
+<tr>
+<td>
+Show code snippets</td><td>
+Editor.CodeSnippets</td></tr>
+<tr>
+<td>
+Show context choice</td><td>
+Editor.ContextChoice</td></tr>
+</table>
 
 {% tabs %}
 
@@ -1699,7 +1866,10 @@ cm.ClearMenu();
 
 ### Disable particular item from context menu
 
-Context menu item can be set as disabled using `SetContextMenuItemEnabled` function by setting the bool value to be false.
+Context menu item can be set as disabled using `SetContextMenuItemEnabled` function by passing the following parameter.
+
+* string - **ContextMenuItem** name by preceding **&**.
+* bool - Setting the bool value to be `true` or `false`.
 
 {% tabs %}
 
@@ -1719,12 +1889,12 @@ Context menu item can be set as disabled using `SetContextMenuItemEnabled` funct
 {% highlight VB %}
 
     Private Sub EditControl1_MenuFill(ByVal sender As Object, ByVal e As EventArgs)
-    {
+    
          Dim contextMenu As ContextMenuManager = CType(sender, ContextMenuManager)
             
          contextMenu.ContextMenuProvider.SetContextMenuItemEnabled("&Edit", False)
-        
-     }
+
+    End Sub     
 
 {% endhighlight %}
 
@@ -1771,6 +1941,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+N> Please find the respective command string in the [Commands](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#commands) section.
 
 ### Add custom context menu item
 

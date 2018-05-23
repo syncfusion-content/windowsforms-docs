@@ -7,7 +7,7 @@ control: SyntaxEditor
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 This section explains how to create an interactive code editor application like Microsoft Visual Studio Editor by using the EditControl.
 
@@ -247,18 +247,17 @@ EditControl offers mostly used languages like C#, VB, XML, HTML, JScript, PowerS
 
 EditControl has a built-in syntax highlighting support for the following languages.
 
-  * C
-  * C#
-  * Delphi
-  * XML
-  * HTML
-  * VB.NET
-  * SQL
-  * Java
-  * VBScript
-  * JScript
-  * PowerShell
-  * Text
+   * C#
+   * VB.NET
+   * XML
+   * HTML
+   * Java
+   * SQL
+   * PowerShell
+   * C
+   * JavaScript
+   * VBScript
+   * Delphi
 
 The following code example illustrates the C# configuration settings in EditControl.
 
