@@ -323,7 +323,7 @@ Me.WriteLine(this.editControl1.CurrentLine)
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the text navigation functionalities in EditControl.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Navigation\Text Navigation
+C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Navigation\Text Navigation
 
 ## Scrolling
 

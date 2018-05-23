@@ -246,7 +246,7 @@ Me.editControl1.GetTextAsRTF(coordinatePoint1, coordinatePoint2)
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the `Export` functionalities.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Export
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Export
 
 ## Bitmap Generation
 
