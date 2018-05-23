@@ -9,7 +9,7 @@ documentation: ug
 
 # Syntax Highlighting 
 
-Provides built-in syntax highlighting support for popular languages like SQL, Delphi or Pascal, HTML, VB.NET, XML, Java, VBScript, JScript, PowerShell and C#.
+Provides built-in syntax highlighting support for popular languages like C#, VB.NET, XML, HTML, Java, SQL, PowerShell, C, JavaScript, VBScript and Delphi.
 
 ## Configure built in language
 
@@ -39,7 +39,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 {% endtabs %}
 
 
-`LoadFile` function in EditControl helps to loads the content of any desired file into the EditControl, instead of typing the code in it.
+[LoadFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadFile.html) function in EditControl helps to loads the content of any desired file into the EditControl, instead of typing the code in it.
 
 {% tabs %}
 
@@ -605,9 +605,27 @@ The following code demonstrates auto corrects int and the, if they misspelled as
 
 {% endhighlight %}
 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.UseAutoreplaceTriggers = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.UseAutoreplaceTriggers = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img41.png)
 
-N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute.
+N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute and `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
 
 ### File extension
 
@@ -896,9 +914,27 @@ The following code demonstrates auto corrects int and the, if they misspelled as
 
 {% endhighlight %}
 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.UseAutoreplaceTriggers = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.editControl1.UseAutoreplaceTriggers = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img42.png)
 
-N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute.
+N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute and `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
 
 ### File extension
 
@@ -1416,6 +1452,12 @@ Below code is an example for replace "the" if it is misspelled as "teh" in AutoR
 
 {% highlight C# %}
 
+this.editControl1.UseAutoreplaceTriggers = true;
+
+ConfigLanguage language = currentConfigLanguage as ConfigLanguage;
+
+language.TriggersActivators = new char[] { '.' };
+
  AutoReplaceTrigger trigger1 = new AutoReplaceTrigger("teh","the");
 
  this.editControl1.Language.AutoReplaceTriggers.Add(trigger1);
@@ -1425,6 +1467,12 @@ Below code is an example for replace "the" if it is misspelled as "teh" in AutoR
 
 {% highlight VB %}
 
+Me.editControl1.UseAutoreplaceTriggers = True
+
+Dim language As ConfigLanguage = TryCast(currentConfigLanguage, ConfigLanguage)
+
+language.TriggersActivators = New Char() { "."c }
+
  Dim trigger1 As AutoReplaceTrigger = new AutoReplaceTrigger("teh","the")
 
  Me.editControl1.Language.AutoReplaceTriggers.Add(trigger1)
@@ -1432,6 +1480,10 @@ Below code is an example for replace "the" if it is misspelled as "teh" in AutoR
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img43.png)
+
+N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute and `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
 
 ### File extension
 
