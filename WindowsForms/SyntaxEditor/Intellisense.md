@@ -557,7 +557,7 @@ Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 100)
 ![](Intellisense-images/Intellisense_img10.png)
 
 N> Refer to the following sample link that demonstrates the `Intellisense` functionalities of EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Choices
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Choices
 
 ## Configure context prompt popup
 
@@ -1143,7 +1143,7 @@ End Sub
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the `ContextPrompt` functionalities of EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Advanced Intellisense
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Advanced Intellisense
 
 ## Configure context tooltip
 
@@ -1305,7 +1305,7 @@ Me.editControl1.CloseContextTooltip();
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the `ContextTooltip` behavior in EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Tooltip
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Tooltip
 
 ## Auto complete
 

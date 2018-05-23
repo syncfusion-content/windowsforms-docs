@@ -243,4 +243,4 @@ Me.editControl1.RemovePageBorder()
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the `Printing` functionalities in EditControl.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Printing
+C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Printing
