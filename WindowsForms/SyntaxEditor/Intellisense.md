@@ -1371,9 +1371,15 @@ Me.editControl1.UseAutoreplaceTriggers = True
 
 {% endtabs %}
 
-The keys used as AutoReplace Triggers are defined by using the TriggersActivators attribute of the language in the configuration file, as shown below.
+The keys used as AutoReplace Triggers are defined by using the `TriggersActivators` attribute of the language in the configuration file, as shown below.
+
+{% highlight xaml %}
 
 <ConfigLanguage name ="C#" Known ="Csharp" StartComment ="//" TriggersActivators =" ;.=()">
+
+</ConfigLanguage>
+
+{% endhighlight %}
 
 `Triggers` can be flagged as valid only within the specific lexical states. For example, you can set a trigger not to fire, if it is in a comment within a language, by using the `AllowTriggers` attribute, as shown below.
 
@@ -1385,7 +1391,7 @@ The keys used as AutoReplace Triggers are defined by using the TriggersActivator
 
 {% endhighlight %}
 
-The words to be replaced when the `AutoReplace` Triggers key is pressed can be defined by using the code given below.
+The words to be replaced when the `AutoReplace` Triggers key (`.`,`(`) is pressed can be defined by using the code given below.
 
 {% tabs %}
 
