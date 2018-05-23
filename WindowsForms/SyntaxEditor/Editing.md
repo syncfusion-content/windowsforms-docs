@@ -1470,7 +1470,7 @@ Bookmark</th></tr>
 <tr>
 <td>
 Toggle unnamed bookmark</td><td>
-Edit.Bookmarks.Toogle</td></tr>
+Edit.Bookmarks.Toggle</td></tr>
 <tr>
 <td>
 Go to next bookmark</td><td>
@@ -1482,7 +1482,7 @@ Edit.Bookmarks.Previous</td></tr>
 <tr>
 <td>
 Toggle named bookmark</td><td>
-Edit.Bookmarks.Toogle[index of bookmark]</td></tr>
+Edit.Bookmarks.Toggle[index of bookmark]</td></tr>
 <tr>
 <td>
 Go to named bookmark</td><td>
@@ -1516,7 +1516,7 @@ Edit.Collapsing.Off</td></tr>
 <tr>
 <td>
 Toggle outlining</td><td>
-Edit.Collapsing.Toogle</td></tr>
+Edit.Collapsing.Toggle</td></tr>
 <tr>
 <th colspan = "2">
 Intellisense</th></tr>
