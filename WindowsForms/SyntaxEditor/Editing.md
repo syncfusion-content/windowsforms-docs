@@ -470,12 +470,12 @@ Me.editControl1.SelectAll()
 
 {% endtabs %}
 
-{% tabs %}
-
 ![](Editing-Features_images/Editing-Features_img20.png)
 
 The following code snippet demonstrates how to select the text using `StartSelection` and `StopSelection` functions in EditControl.
-   
+
+{% tabs %}
+
 {% highlight C# %}
 
 this.editControl1.StartSelection(1, 1);
