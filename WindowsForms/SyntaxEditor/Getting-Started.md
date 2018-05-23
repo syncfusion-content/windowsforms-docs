@@ -56,7 +56,7 @@ To create the Windows Forms application with EditControl, the following nuget pa
 
 <table>
 <tr>
-<td>{{'**S.No**'| markdownify }}
+<td>{{'**S.no**'| markdownify }}
 </td>
 <td>{{'**Framework version**'| markdownify }}
 </td>

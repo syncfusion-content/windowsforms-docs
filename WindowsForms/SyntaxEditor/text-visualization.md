@@ -453,9 +453,36 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 
 {% endtabs %}
 
-The following screenshot illustrates word wrapping based on character and word in EditControl:
-
 ![](Text-Visualization_images/Text-Visualization_img15.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+// WordWrap property set.
+
+this.editControl1.WordWrap = true;
+
+// WordWrapType property set.
+
+this.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.WrapByWord;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' WordWrap property set.
+
+Me.editControl1.WordWrap = True
+
+' WordWrapType property set.
+
+Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.WrapByWord
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Text-Visualization_images/Text-Visualization_img16.png)
 
@@ -586,7 +613,7 @@ Me.editControl1.MarkWrappedLines = True
 ![](Text-Visualization_images/Text-Visualization_img4.jpeg)
 
 N> Refer to the following sample link that demonstrates the `WordWrap` functionalities in EditControl.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Word Wrap
+C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Word Wrap
 
 ## Line number
 
@@ -1244,8 +1271,6 @@ Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Crimson
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img10.jpeg)
-
 **Customizing bookmarks**
 
 You can either display the default bookmark image (like in Visual Studio.NET) or display custom images as indicators. This can be done by making use of the following functions of the EditControl.
@@ -1334,8 +1359,10 @@ Dim bookmark As IBookmark = Me.EditControl1.BookmarkGet(Me.EditControl1.CurrentL
 
 {% endtabs %}
 
+![](Text-Visualization_images/Text-Visualization_img10.jpeg)
+
 N> Refer to the following sample link that demonstrates the bookmark functionalities in EditControl.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
+C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
 
 ## Content dividers
 
@@ -1372,7 +1399,7 @@ This feature can be enabled for sections of the EditControl contents, by setting
 {% endhighlight %}
 
 N> Refer to the following sample link that demonstrates the Content dividers functionalities in EditControl.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Interactive operations
+C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Interactive operations
 
 ## Column Guides
 

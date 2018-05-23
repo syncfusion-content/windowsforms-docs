@@ -30,8 +30,6 @@ This can be done in the designer using the Keys Binding dialog as illustrated in
 
 Provides Microsoft Visual Studio text editor like `FindDialog` window with similar options, for text search and highlighting.  
 
-![](End-user-Capability_images/End-user-Capability_img2.png)
-
 {% tabs %}
 
 {% highlight C# %}
@@ -52,6 +50,8 @@ Me.editControl1.ShowFindDialog()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](End-user-Capability_images/End-user-Capability_img2.png)
 
 EditControl now enables you to create a new find dialog by inheriting find dialog. You can customize the Find Dialog by changing the properties and triggers the events of the buttons such as Find, Mark All and Close. You can also easily localize the captions of the controls in the Find dialog.
 
@@ -374,7 +374,7 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 [ReplaceHistory](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceHistory.html) property is used to add or remove items from the replace history in the Replace dialog box. Similarly, the [ReplaceSearchHistory](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceSearchHistory.html) property is used to add or remove items from the find history in the Replace dialog box.
 
 N> Refer to the following sample link that demonstrates the Find and Replace functionalities of EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Find and Replace
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Find and Replace
 
 ## GoTo line
 
@@ -502,4 +502,4 @@ this.editControl1.ShowFormatsCustomizationDialog();
 ![](End-user-Capability_images/End-user-Capability_img7.jpg)
 
 N> Refer to the following sample link that demonstrates the customization of font in EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Font Customization
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Font Customization

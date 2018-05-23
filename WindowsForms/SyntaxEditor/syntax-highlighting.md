@@ -362,7 +362,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img12.png)
 
 N> Refer to the following sample link that demonstrates the `SyntaxHighlighting` functionalities of EditControl.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
+C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
 
 ## Customize built in language settings
 
@@ -394,6 +394,20 @@ Name of the language must be set using the name attribute of the `ConfigLanguage
 
 {% endhighlight %}
 
+### Format 
+
+It contains a list of definitions of the formats that can be used later in lexem configuration. Every format contains the attributes such as name, font,foreground color, font color, background color, style, weight, underline and line color.
+
+{% highlight xaml %}
+
+  <formats>
+      <format name="Text" Font="Consolas, 12pt"/>
+  </formats>
+
+{% endhighlight %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img23.png)
+
 ### Font Color
 
 Font color of any format in the specified language can be customized using `FontColor` property of Format tag. 
@@ -410,20 +424,8 @@ Font color of any format in the specified language can be customized using `Font
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img15.png)
 
-### Format 
 
-It contains a list of definitions of the formats that can be used later in lexem configuration. Every format contains the attributes such as name, font,foreground color, font color, background color, style, weight, underline and line color.
-
-{% highlight xaml %}
-
-  <formats>
-      <format name="Comment" Font="Consolas, 20pt, style=Bold" FontColor="DeepPink" />
-  </formats>
-
-{% endhighlight %}
-
-
-### lexem
+### Lexem
 
 Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of lexems helps to specify the format of the lexem. 
 
@@ -463,7 +465,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
         <SubLexems>
           <lexem BeginBlock="\n" IsBeginRegex="true" />
         </SubLexems>
-      </lexem>
+     </lexem>
 
 </lexems>
 
@@ -478,6 +480,7 @@ The above code example works only when [ShowOutliningCollapsers](https://help.sy
 Custom keywords can be added or existing keywords can be customized in built-in languages. 
 
 {% highlight xaml %}
+
   <formats>
       <format name="KeyWord" Font="Consolas, 10pt" FontColor="Green" />
   </formats>
@@ -502,7 +505,7 @@ Custom operators can be added or existing operators can be customized in built-i
  <lexems>
    <lexem BeginBlock="++" Type="Operator" />
    <lexem BeginBlock="+" Type="Operator" />
- </lexem>
+ </lexems>
 
 {% endhighlight %}
 
@@ -517,17 +520,18 @@ For example, if you like to customize the strings that ends with !, this can be 
 {% highlight xaml %}
 
   <formats>
-     <format name="String" Font="Courier New, 13pt, style=Bold" FontColor="Brown" />
-  </formats>   
+    <format name="String" Font="Courier New, 13pt, style=Bold" FontColor="Brown" />
+  </formats>
 
   <lexems>
-     <lexem BeginBlock="[A-z\s]+\!" IsBeginRegex="true"  Type="String"/> 
-  </lexems>     
+    <lexem BeginBlock="[A-z\s]+\!" IsBeginRegex="true"  Type="String"/>
+  </lexems>
  
   // we have to mention the same Regex expression in the Split tag.  
-  <splits>
+
+	<splits>
       <split IsRegex="true">[A-z\s]+\!</split>	 
-  </splits> 
+	</splits>
 
 {% endhighlight %}
 
@@ -544,10 +548,13 @@ Error lexems can be added to the language by declaring a format names Error and 
 </formats>
 
 <lexems>
-<lexem BeginBlock="#endregion" Type="Error" Priority="-10" />
-<lexem BeginBlock="#endif" Type="Error" Priority="-10" />
+<lexem BeginBlock="pubblic" Type="Error" Priority="-10" />
 <lexem BeginBlock="#else" Type="Error" Priority="-10" />
 </lexems>
+
+ <splits>
+      <split>#else</split>	 
+  </splits> 
 
 {% endhighlight %}
 
@@ -649,9 +656,6 @@ Me.editControl1.ApplyConfiguration("C#")
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates how to customize the built-in language.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
-
 ## Custom language using XML
 
 EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) functions in EditControl.
@@ -684,20 +688,6 @@ The following code example demonstrates the same.
 
 {% endhighlight %}
 
-### Font Color
-
-Font color of any format in the specified language can be customized using `FontColor` property of Format tag. 
-
-{% highlight xaml %}
-
-<formats>
-  <format name="Text" Font="Courier New, 10pt style=Bold"   FontColor="Red" />
-</formats>
-
-{% endhighlight %}
-
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img33.png)
-
 ### Format 
 
 It contains a list of definitions of the formats that can be used later in lexem configuration. Every format is specified by a tag <format>.
@@ -705,12 +695,26 @@ It contains a list of definitions of the formats that can be used later in lexem
 {% highlight xaml %}
 
 <formats>
-  <format name="Text" Font="Courier New, 10pt style=Bold"   FontColor="Red" />
-  <format name="KeyWord" Font="Courier New, 10pt style=Bold" FontColor="#ffffff" />
-  <format name="Operator" Font="Courier New, 10pt style=Bold" FontColor="Yellow" />
+      <format name="Text" Font="Consolas, 12pt"/>
 </formats>
 
 {% endhighlight %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img24.png)
+
+### Font Color
+
+Font color of any format in the specified language can be customized using `FontColor` property of Format tag. 
+
+{% highlight xaml %}
+
+<formats>
+  <format name="Text" Font="Courier New, 10pt style=Bold"  FontColor="Red" />
+</formats>
+
+{% endhighlight %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img33.png)
 
 ### Lexem
 
@@ -774,6 +778,7 @@ The above code example works only when [ShowOutliningCollapsers](https://help.sy
 Custom keywords can be added or existing keywords can be customized in built-in languages by using `Lexem` configuration. 
 
 {% highlight xaml %}
+
   <formats>
       <format name="KeyWord" Font="Consolas, 10pt" FontColor="White" />
   </formats>
@@ -813,17 +818,18 @@ For example, if you like to customize the strings that ends with !, this can be 
 {% highlight xaml %}
 
   <formats>
-     <format name="String" Font="Courier New, 13pt, style=Bold" FontColor="Brown" />
-  </formats>   
+    <format name="String" Font="Courier New, 13pt, style=Bold" FontColor="Brown" />
+  </formats>
 
   <lexems>
-     <lexem BeginBlock="[A-z\s]+\!" IsBeginRegex="true"  Type="String"/> 
-  </lexems>     
+    <lexem BeginBlock="[A-z\s]+\!" IsBeginRegex="true"  Type="String"/>
+  </lexems>
  
   // we have to mention the same Regex expression in the Split tag.  
-  <splits>
+
+	<splits>
       <split IsRegex="true">[A-z\s]+\!</split>	 
-  </splits> 
+	</splits>
 
 {% endhighlight %}
 
@@ -951,7 +957,7 @@ The following code example illustrates HTML with JScript language configuration.
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
 
 N> Refer to the following sample link that demonstrates the Custom language configuration in EditControl.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
+C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
 
 ### Apply custom configuration in EditControl
 
@@ -989,7 +995,7 @@ Me.editControl1.ApplyConfiguration("C++")
 {% endtabs %}
 
 N> Refer to the following sample link that demonstrates the Custom language configuration in EditControl.
-C:\Users\&lt;User&gt;\AppData\Syncfusion\Essential Studio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Custom Config
+C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Custom Config
 
 ## Configure custom language using code
 

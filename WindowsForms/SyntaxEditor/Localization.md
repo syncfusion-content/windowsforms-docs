@@ -622,4 +622,4 @@ End Function
 ![](Localization-and-Globalization_images\Localization-and-Globalization_img3.png)
 
 N> Refer to the following sample link that demonstrates the localization support in EditControl.
-C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Edit.Windows\Samples\Localization
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Localization
