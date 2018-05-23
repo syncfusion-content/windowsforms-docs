@@ -124,19 +124,11 @@ To use RadialGauge control in Windows Forms application via nuget, the following
 <td> Syncfusion.Gauge.Windows46
 </td>
 </tr>
-<tr>
-<td> 7
-</td>
-<td> 4.6.1
-</td>
-<td> Syncfusion.Gauge.Windows461
-</td>
-</tr>
 </table>
  
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-https://help.syncfusion.com/windowsforms/nuget-packages
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
 # Creating simple application with RadialGauge

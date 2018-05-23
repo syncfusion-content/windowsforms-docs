@@ -6,30 +6,210 @@ platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
+
 # Getting started
 
-This section briefly describes how to design a HubTile control in a Windows Forms Application.
+This section describes how to add `HubTile` control in a Windows Forms application and overview of its basic functionalities.
 
-* Adding a HubTile Control.
-* Configuring the HubTile Control.
+## Assembly deployment
 
-## Adding HubTile control
+The following list of assemblies should be added as reference to use the HubTile in any application:
 
-* Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
-* Drop a HubTile control on the Form.
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows
+</td>
+<td>
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of HubTile control.
+</td>
+</tr>
+</table>
 
- ![](Adding-hubtile-control_images/Adding-hubtile-control_img1.png)
+
+# Installing NuGet Packages
+
+To use HubTile control in Windows Forms application via nuget, the following packages should be installed.
  
-
-
-## Configuring HubTile control
-
-The most commonly used settings of the HubTile control can be configured either by Designer, using the Smart tag or by the Properties window or by code.
-
-
-![](Configuring-hubtile-control_images/Configuring-hubtile-control_img1.png)
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Tools.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Tools.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Tools.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Tools.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td>Syncfusion.Tools.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td>Syncfusion.Tools.Windows46
+</td>
+</tr>
+</table>
  
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
+# Creating simple application with HubTile
 
- ![](Configuring-hubtile-control_images/Configuring-hubtile-control_img2.png) 
+You can create the Windows Forms application with HubTile control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+4. [Customize background image](#customize-background-image)
+
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the HubTile with  functionalities.
+
+## Adding control via designer
+
+The HubTile control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+
+![](Overview_images/GettingStarted-img1.png)
+
+## Adding control manually in code
+
+To add control manually in C#, follow the given steps:
+
+1. Add the following required assembly references to the project:
+
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+
+2. Include the namespaces **Syncfusion.Tools.Windows**.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.Tools.Windows;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Tools.Windows
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+2. Create `HubTile` control instance and add it to the form.
+
+{% tabs %}
+
+{% highlight C# %}
+
+HubTile HubTile1 = new HubTile();
+
+this.Controls.Add(HubTile1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim hubTile1 As HubTile = New HubTile()
+
+Me.Controls.Add(hubTile1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Customize background image
+
+Background image can be added to HubTile through designer as well as through code.
+
+**Adding background image through designer**
+
+Background image can be added to HubTile using `ImageSource` property in SmartTag.
+
+![](Overview_images/GettingStarted-img2.png)
+
+**Adding background image manually through code**
+
+Background image can be added to HubTile using `ImageSource` property in HubTile class.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.hubTile1.ImageSource = ((System.Drawing.Image)(resources.GetObject("hubTile1.ImageSource")));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.hubTile1.ImageSource = ((System.Drawing.Image)(resources.GetObject("hubTile1.ImageSource")))
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/GettingStarted-img3.png)
