@@ -122,7 +122,7 @@ The GroupView control can be added to the application by dragging it from the to
 
 ![](Overview_images/GroupView_img1.png)
 
-Items can be added to groupview container using `GroupViewItems` collection property.
+Items can be added to GroupView container using `GroupViewItems` collection property.
 
 ![](Overview_images/GroupView_img2.png)
 
@@ -174,7 +174,7 @@ Me.Controls.Add(groupView1)
 
 {% endtabs %}
 
-4. Items can be added to groupview container using `GroupViewItems` collection property.
+4. Items can be added to GroupView container using `GroupViewItems` collection property.
 
 {% tabs %}
 
