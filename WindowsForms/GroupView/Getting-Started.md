@@ -202,4 +202,6 @@ Me.groupView1.GroupViewItems.AddRange(new GroupViewItem[] {
 
 {% endhighlight %}
 
+{% endtabs %}
+
  ![](Overview_images/GroupView_img3.png)
