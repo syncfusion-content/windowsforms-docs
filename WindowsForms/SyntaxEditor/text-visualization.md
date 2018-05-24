@@ -1125,155 +1125,7 @@ Me.editControl1.MarkerAreaWidth = 20
 
 {% endtabs %}
 
-### Custom bookmark indicator
-
-[SetCustomBookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetCustomBookmark.html) function is used to set Bookmarks and also it can removed by [RemoveCustomBookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveCustomBookmark.html) function in EditControl.
-
-Bookmarks can be set by using the `SetCustomBookmark` function, do not respond to the `BookmarkNext` and `BookmarkPrevious` functions automatically. In order to enable this, you have to set the `UseInBookmarkSearch` property of the custom bookmark to `true`.
-
-{% tabs %}
-
-{% highlight C# %}
-
-Color borderColor;
-
- private void CustomBookmarkPainter(object sender, BookmarkPaintEventArgs e)
- {
-      borderColor = ColorTranslator.FromHtml("#f6f6f6");
-      SolidBrush brush = new SolidBrush(Color.Red); 
-      e.Graphics.FillEllipse(brush, e.ClipRectangle.X,e.ClipRectangle.Y,e.ClipRectangle.Width-2,e.ClipRectangle.Height-2);
-      e.Graphics.DrawEllipse(new Pen(borderColor,3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2);
-}
-
-// Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious functions.
-
-ICustomBookmark customBookmark = this.editControl1.SetCustomBookmark(this.editControl1.CurrentLine, new BookmarkPaintEventHandler(CustomBookmarkPainter));
-
-customBookmark.UseInBookmarkSearch = true;
-
-// Removes the bookmark of the current line.
-
-ICustomBookmark customBookmark = this.editControl1.RemoveCustomBookmark(this.editControl1.CurrentLine, BookmarkPaintEventHandler(CustomBookmarkPainter));
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Private Sub CustomBookmarkPainter(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.BookmarkPaintEventArgs)
-
-   borderColor = ColorTranslator.FromHtml("#f6f6f6")
-   SolidBrush brush = new SolidBrush(Color.Red) 
-   e.Graphics.FillEllipse(brush, e.ClipRectangle.X,e.ClipRectangle.Y,e.ClipRectangle.Width-2,e.ClipRectangle.Height-2)
-   e.Graphics.DrawEllipse(new Pen(borderColor, 3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2)
-
-End Sub
-
-' Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious functions.
-
-Dim customBookmark As ICustomBookmark = Me.editControl1.SetCustomBookmark(Me.editControl1.CurrentLine, New BookmarkPaintEventHandler(CustomBookmarkPainter))
-
-customBookmark.UseInBookmarkSearch = True
-
-' Removes the bookmark of the current line.
-
-Dim customBookmark As ICustomBookmark = Me.editControl1.RemoveCustomBookmark(Me.editControl1.CurrentLine, BookmarkPaintEventHandler(CustomBookmarkPainter))
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Allows you to set a pause at some specified location in the EditControl by using the `BreakPoint` feature. This is done by combining the Line Background and Custom Indicator features. [IndicatorMarginClick](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndicatorMarginClick_EV.html) event can be handled to insert a break point.
-
-{% tabs %}
-
-{% highlight C# %}
-
-private void editControl1_IndicatorMarginClick(object sender, Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs e)
-
-{
-
-// Set breakpoint indicator.
-
-this.editControl1.SetCustomBookmark(e.LineIndex, new BookmarkPaintEventHandler(CustomBookmarkPainter));
-
-// Highlight the relevant line.
-
-IBackgroundFormat format = this.editControl1.RegisterBackColorFormat(color, Color.Transparent);
-
-this.editControl1.SetLineBackColor(e.LineIndex, true, format);
-
-}
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Private Sub editControl1_IndicatorMarginClick(sender As Object, e As Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs) Handles editControl1.IndicatorMarginClick
-
-' Set breakpoint indicator.
-
-Me.editControl1.SetCustomBookmark(e.LineIndex, New BookmarkPaintEventHandler(AddressOf CustomBookmarkPainter))
-
-' Highlight the relevant line.
-
-Dim format As IBackgroundFormat = Me.editControl1.RegisterBackColorFormat(color, Color.Transparent)
-
-Me.editControl1.SetLineBackColor(e.LineIndex, True, format)
-
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Text-Visualization_images/Text-Visualization_img9.png)
-
-**Setting tooltips for bookmarks**
-
-Tooltips can be set for bookmarks and customized by using the below given properties. Tooltips of bookmarks can be enabled or disabled by using [ShowBookmarkTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowBookmarkTooltip.html) property. Tooltip background and border color can be customized by using [BookmarkTooltipBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkTooltipBackgroundBrush.html) and [BookmarkTooltipBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkTooltipBorderColor.html) property in EditControl.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Shows the tooltip of the bookmark.
-
-this.editControl1.ShowBookmarkTooltip = true;
-
-// Specifies brush for bookmark tooltip background.
-
-this.editControl1.BookmarkTooltipBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Gold);
-
-// Specify the color of the bookmark tooltip form border.
-
-this.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Crimson;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-' Shows the tooltip of the bookmark.
-
-Me.editControl1.ShowBookmarkTooltip = True
-
-' Specifies brush for bookmark tooltip background.
-
-Me.editControl1.BookmarkTooltipBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Gold)
-
-' Specify the color of the bookmark tooltip form border.
-
-Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Crimson
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**Customizing bookmarks**
-
-You can either display the default bookmark image (like in Visual Studio.NET) or display custom images as indicators. This can be done by making use of the following functions of the EditControl.
+You can either display the default bookmark image (like in Visual Studio.NET) or custom indicator. This can be done by making use of the following functions of the EditControl.
 
 <table>
 <tr>
@@ -1359,7 +1211,144 @@ Dim bookmark As IBookmark = Me.EditControl1.BookmarkGet(Me.EditControl1.CurrentL
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img10.jpeg)
+![](Text-Visualization_images/Text-Visualization_img18.png)
+
+### Custom bookmark indicator
+
+[SetCustomBookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetCustomBookmark.html) function is used to set Bookmarks and also it can removed by [RemoveCustomBookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveCustomBookmark.html) function in EditControl.
+
+Bookmarks can be set by using the `SetCustomBookmark` function, do not respond to the `BookmarkNext` and `BookmarkPrevious` functions automatically. In order to enable this, you have to set the `UseInBookmarkSearch` property of the custom bookmark to `true`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+Color borderColor;
+
+ private void CustomBookmarkPainter(object sender, BookmarkPaintEventArgs e)
+ {
+      borderColor = ColorTranslator.FromHtml("#f6f6f6");
+      SolidBrush brush = new SolidBrush(Color.Red); 
+      e.Graphics.FillEllipse(brush, e.ClipRectangle.X,e.ClipRectangle.Y,e.ClipRectangle.Width-2,e.ClipRectangle.Height-2);
+      e.Graphics.DrawEllipse(new Pen(borderColor,3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2);
+}
+
+// Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious functions.
+
+ICustomBookmark customBookmark = this.editControl1.SetCustomBookmark(this.editControl1.CurrentLine, new BookmarkPaintEventHandler(CustomBookmarkPainter));
+
+customBookmark.UseInBookmarkSearch = true;
+
+// Removes the bookmark of the current line.
+
+ICustomBookmark customBookmark = this.editControl1.RemoveCustomBookmark(this.editControl1.CurrentLine, BookmarkPaintEventHandler(CustomBookmarkPainter));
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub CustomBookmarkPainter(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Edit.BookmarkPaintEventArgs)
+
+   borderColor = ColorTranslator.FromHtml("#f6f6f6")
+   SolidBrush brush = new SolidBrush(Color.Red) 
+   e.Graphics.FillEllipse(brush, e.ClipRectangle.X,e.ClipRectangle.Y,e.ClipRectangle.Width-2,e.ClipRectangle.Height-2)
+   e.Graphics.DrawEllipse(new Pen(borderColor, 3), e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 2, e.ClipRectangle.Height - 2)
+
+End Sub
+
+' Sets custom bookmarks and enables it to respond to BookmarkNext and BookmarkPrevious functions.
+
+Dim customBookmark As ICustomBookmark = Me.editControl1.SetCustomBookmark(Me.editControl1.CurrentLine, New BookmarkPaintEventHandler(CustomBookmarkPainter))
+
+customBookmark.UseInBookmarkSearch = True
+
+' Removes the bookmark of the current line.
+
+Dim customBookmark As ICustomBookmark = Me.editControl1.RemoveCustomBookmark(Me.editControl1.CurrentLine, BookmarkPaintEventHandler(CustomBookmarkPainter))
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Text-Visualization_images/Text-Visualization_img9.png)
+
+**Setting tooltips for bookmarks**
+
+Tooltips can be set for bookmarks by using [UpdateBookmarkToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UpdateBookmarkToolTip_EV.html) event. Tooltips of bookmarks can be enabled or disabled by using [ShowBookmarkTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowBookmarkTooltip.html) property. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.editControl1.UpdateBookmarkToolTip += EditControl1_UpdateBookmarkToolTip;
+
+private void EditControl1_UpdateBookmarkToolTip(object sender, UpdateBookmarkTooltipEventArgs e)
+{
+   // Tooltip will not be shown, when this text is empty.  
+    e.Text = "Bookmark Tooltip";
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+AddHandler Me.editControl1.UpdateBookmarkToolTip, AddressOf EditControl1_UpdateBookmarkToolTip
+
+Private Sub editControl1_ConfigurationChanged(ByVal sender As Object, ByVal e As UpdateBookmarkTooltipEventArgs)
+
+   ' Tooltip will not be shown, when this text is empty.  
+    e.Text = "Bookmark Tooltip"
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Text-Visualization_images/Text-Visualization_img19.png)
+
+Tooltip background and border color can be customized by using [BookmarkTooltipBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkTooltipBackgroundBrush.html) and [BookmarkTooltipBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkTooltipBorderColor.html) property in EditControl.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Shows the tooltip of the bookmark.
+
+this.editControl1.ShowBookmarkTooltip = true;
+
+// Specifies brush for bookmark tooltip background.
+
+this.editControl1.BookmarkTooltipBackgroundBrush = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Violet);
+
+// Specify the color of the bookmark tooltip form border.
+
+this.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Red;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+' Shows the tooltip of the bookmark.
+
+Me.editControl1.ShowBookmarkTooltip = True
+
+' Specifies brush for bookmark tooltip background.
+
+Me.editControl1.BookmarkTooltipBackgroundBrush = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.PatternStyle.Percent05, System.Drawing.SystemColors.WindowText, System.Drawing.Color.Violet)
+
+' Specify the color of the bookmark tooltip form border.
+
+Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Text-Visualization_images/Text-Visualization_img20.png)
 
 N> Refer to the following sample link that demonstrates the bookmark functionalities in EditControl.
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
