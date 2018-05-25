@@ -286,179 +286,6 @@ BackColor, ForeColor, and BorderColor of each date cells in the calendar can be 
 * CellHoverBorderColor: Changes the border color of date cells in the calendar.
 * CellFont: Changes the font that is used to draw the date text of cell in the calendar.
 
-## Themes
-
-SfCalendar offers four built in themes for professional representation as follows.
-
-* Office2016Colorful
-* Office2016White
-* Office2016DarkGray
-* Office2016Black
-
-Theme can be applied to SfCalendar by following the below steps:
-
-1. [Load theme assembly](#load-theme-assembly)
-2. [Apply theme](#apply-theme)
-
-### Load theme assembly
-
-**Syncfusion.Office2016Theme.WinForms** assembly should be added as reference to set theme for SfCalendar in any application:
-
-Before apply theme to SfCalendar, required theme assembly should be loaded as follows. 
-
-{% tabs %}
-
-{% highlight C# %}
-
-  using Syncfusion.WinForms.Themes;
-
-     static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        
-        static void Main()
-        {
-            ThemeHelper.LoadAssembly(typeof(Office2016Theme).Assembly);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
-    }
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-Imports Syncfusion.WinForms.Themes
-
- Friend Module Program
-        ''' <summary>
-        ''' The main entry point for the application.
-        ''' </summary>
-        <STAThread>
-        Sub Main()
-            ThemeHelper.LoadAssembly(GetType(Office2016Theme).Assembly)
-            Application.EnableVisualStyles()
-            Application.SetCompatibleTextRenderingDefault(False)
-            Application.Run(New Form1())
-        End Sub
-    End Module
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-### Apply theme
-
-Appearance of SfCalendar can be changed by `ThemeName` of SfCalendar.
-
-#### Office2016Colorful
-
-This option helps to set the Office2016Colorful Theme.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Office2016Colorful
-
- this.sfCalendar.ThemeName = "Office2016Colorful";
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Office2016Colorful 
-
-Me.sfCalendar.ThemeName = "Office2016Colorful"
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](appearance-images/Office2016Colorful.png)
-
-#### Office2016White
-
-This option helps to set the Office2016White Theme.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Office2016White
-
- this.sfCalendar.ThemeName = "Office2016White";
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Office2016White 
-
-Me.sfCalendar.ThemeName = "Office2016White"
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](appearance-images/Office2016White.png)
-
-#### Office2016DarkGray
-
-This option helps to set the Office2016DarkGray Theme.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Office2016DarkGray
-
- this.sfCalendar.ThemeName = "Office2016DarkGray";
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Office2016DarkGray 
-
-Me.sfCalendar.ThemeName = "Office2016DarkGray"
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](appearance-images/Office2016DarkGray.png)
-
-#### Office2016Black
-
-This option helps to set the Office2016Black Theme.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Office2016Black
-
- this.sfCalendar.ThemeName = "Office2016Black";
-
-{% endhighlight  %}
-
-{% highlight VB %}
-
-' Office2016Black 
-
-Me.sfCalendar.ThemeName = "Office2016Black"
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](appearance-images/Office2016Black.png)
-
-
 ### Customize trailing date appearance
 
 Calendar control trailing (next or previous month) cells can be customized by the following properties:
@@ -588,6 +415,178 @@ Me.sfCalendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 1
 {% endtabs %} 
 
 ![](appearance-images/cellcustomization.png)
+
+## Themes
+
+SfCalendar offers four built in themes for professional representation as follows.
+
+* Office2016Colorful
+* Office2016White
+* Office2016DarkGray
+* Office2016Black
+
+Theme can be applied to SfCalendar by following the below steps:
+
+1. [Load theme assembly](#load-theme-assembly)
+2. [Apply theme](#apply-theme)
+
+### Load theme assembly
+
+**Syncfusion.Office2016Theme.WinForms** assembly should be added as reference to set theme for SfCalendar in any application:
+
+Before apply theme to SfCalendar, required theme assembly should be loaded as follows. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.WinForms.Core.Events;
+
+         static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        
+        static void Main()
+        {
+            SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+    }
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.WinForms.Core.Events
+
+ Friend Module Program
+        ''' <summary>
+        ''' The main entry point for the application.
+        ''' </summary>
+        <STAThread>
+        Sub Main()
+            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
+            Application.EnableVisualStyles()
+            Application.SetCompatibleTextRenderingDefault(False)
+            Application.Run(New Form1())
+        End Sub
+    End Module
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+### Apply theme
+
+Appearance of SfCalendar can be changed by `ThemeName` of SfCalendar.
+
+#### Office2016Colorful
+
+This option helps to set the Office2016Colorful Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+ this.sfCalendar.ThemeName = "Office2016Colorful";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016Colorful 
+
+Me.sfCalendar.ThemeName = "Office2016Colorful"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/Office2016Colorful.png)
+
+#### Office2016White
+
+This option helps to set the Office2016White Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016White
+
+ this.sfCalendar.ThemeName = "Office2016White";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016White 
+
+Me.sfCalendar.ThemeName = "Office2016White"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/Office2016White.png)
+
+#### Office2016DarkGray
+
+This option helps to set the Office2016DarkGray Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016DarkGray
+
+ this.sfCalendar.ThemeName = "Office2016DarkGray";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016DarkGray 
+
+Me.sfCalendar.ThemeName = "Office2016DarkGray"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/Office2016DarkGray.png)
+
+#### Office2016Black
+
+This option helps to set the Office2016Black Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Black
+
+ this.sfCalendar.ThemeName = "Office2016Black";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016Black 
+
+Me.sfCalendar.ThemeName = "Office2016Black"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/Office2016Black.png)
 
 ## Hide trailing dates   
 
