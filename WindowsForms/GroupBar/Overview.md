@@ -10,16 +10,22 @@ documentation: ug
 
 The GroupBar and GroupView controls abide by the container-client model and are designed to work in perfect synchronization with each other.
 
-The GroupBar class implements a tab-type container control similar to the Windows Forms TabControl that can serve as a host for other Windows Forms controls. Each control in the GroupBar is represented by a GroupBar Item and navigation between the different controls is accomplished by selecting the corresponding GroupBar Item. Only the selected control is displayed at any particular time.
+The GroupBar class implements a tab-type container control similar to the Windows Forms TabControl that can serve as a host for other Windows Forms controls. Each control in the GroupBar is represented by a GroupBarItem and navigation between the different controls is accomplished by selecting the corresponding GroupBarItem. Only the selected control is displayed at any particular time.
 
-The GroupBar may be used in combination with the GroupView control to implement clones of some of the popular UI components such as the Microsoft OutlookBar and the Visual Studio .NET toolbox window.
+## Key Features
 
-![](Overview_images/Overview_img2.jpeg)
+* **Text Settings**: Provides options to align the text of the GroupBarItems to the Left , Right, or Center. GroupBar control provides options for renaming the GroupBarItems at run-time. 
 
+* **Image settings**: Provides options to display Large images or Icons on the header of the GroupBar as well as Stacked GroupBar.
 
-The Essential ToolsGroupBar control displays multiple groups or tabs, each of which represents a client control that is hosted within the GroupBar.
+* **Header Customization**: Provides complete customization support to the header such as colors font and height of the header text of the GroupBarItems.
 
-The primary function of the GroupBar is to serve as a container for a group of functionally related controls while allowing only one selected control to be visible at any given time. Groups are implemented as instances of the GroupBarItem class and the collection can be accessed through the GroupBar.GroupBarItems property.
+* **Stacked GroupBar**: Provides options to display GroupBarItems in a Stack like fashion. Stacked GroupBar provides a Navigation Pane that can be viewed at the bottom of the Groupbar.
 
+* **Nested GroupBar**: A GroupBar Control can be added as a Child control to another GroupBar Control. In fact any .NET control can be hosted in a GroupBar for maximum flexibility. Thus the GroupBar control can be deployed as a Generic Control Container.
+
+* **Visual Styles** : Provides option to customize the appearance using rich set of available built-in visualstyles.
+
+* **Serialization Support**: Serialization allows the user to save and restore the State information of the GroupBarItems when a GroupBar is in the Stacked Mode.
 
 

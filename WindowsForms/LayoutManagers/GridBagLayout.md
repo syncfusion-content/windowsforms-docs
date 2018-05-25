@@ -13,19 +13,241 @@ GridBagLayout is a Layout Manager which allows us to arrange the Child controls 
 
 ![](Overview_images/Overview_img64.jpeg)
 
-
-
-The GridBagLayout is the most configurable of all the Layout Managers, providing users various options to layout Child controls within the notion of a virtual grid of rows and columns. Deriving from the Layout Manager base, the GridBagLayout inherits all the functionality that the Layout Manager type exposes.
-
 GridBagLayout is also used to layout the following controls:
 
 * Navigation Buttons of the Wizard control.
 * Buttons of the Calculator control.
 
-A Sample which demonstrates the GridBagLayout is available in the below sample installation path.
+# Key Features
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+**Anchor** - Provides option to set anchor direction for child controls.
+
+**Cell span** - Provides options to customize row and column span of the child controls
+
+**Fill type** - Provides option to set the position of child control such as horizontal, vertial, both or none.
+
+
+# Getting started
+
+This section describes how to add `GridBagLayout` control in a Windows Forms application and overview of its basic functionalities.
+
+## Assembly deployment
+
+The following list of assemblies should be added as reference to use the GridBagLayout in any application:
+
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+The Syncfusion.Shared.Base contains the class that handles all UI operations and contains helper class of GridBagLayout control.
+</td>
+</tr>
+</table>
+
+
+# Installing NuGet Packages
+
+To use GridBagLayout control in Windows Forms application via nuget, the following packages should be installed.
  
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Shared.Base20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Shared.Base35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Shared.Base40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Shared.Base45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td> Syncfusion.Shared.Base451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td>Syncfusion.Shared.Base46
+</td>
+</tr>
+</table>
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
+
+# Creating simple application with GridBagLayout
+
+You can create the Windows Forms application with GridBagLayout control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+4. [Adding layout components](#adding-layout-components)
+
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the GridBagLayout with basic functionalities.
+
+## Adding control via designer
+
+The GridBagLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Shared.Base.dll
+
+![](Overview_images/GridBagLayout_img1.png)
+
+To add the form as a Container control of the GridBagLayout, a popup will appear automatically before it gets added.
+
+![](Overview_images/GridBagLayout_img2.png)
+
+## Adding control manually in code
+
+To add control manually in C#, follow the given steps:
+
+1. Add the following required assembly references to the project:
+
+	* Syncfusion.Shared.Base.dll
+
+2. Include the namespaces **Syncfusion.Shared.Base**.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.Shared.Base;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Shared.Base
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+3. Create `GridBagLayout` control instance and set `ContainerControl` as form.
+
+{% tabs %}
+
+{% highlight C# %}
+
+GridBagLayout gridBagLayout1 = new GridBagLayout();
+
+this.gridBagLayout1.ContainerControl = this;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim gridBagLayout1 As GridBagLayout = New GridBagLayout()
+
+Me.gridBagLayout1.ContainerControl = Me
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Adding layout components
+ 
+The following steps helps to add layout components to GridBagLayout both through designer and through code.
+
+**Adding Layout components through designer**
+
+The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
+
+![](Overview_images/GridBagLayout_img3.png)
+
+**Adding Layout components through code**
+
+The child controls can be added to the layout by simply adding it to the form, since the form is its container control.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ButtonAdv buttonAdv1 = new ButtonAdv();
+ButtonAdv buttonAdv2 = new ButtonAdv();
+ButtonAdv buttonAdv3 = new ButtonAdv();
+
+this.buttonAdv1.Text = "buttonAdv1";
+this.buttonAdv2.Text = "buttonAdv2";
+this.buttonAdv3.Text = "buttonAdv3";
+
+this.Controls.Add(this.buttonAdv1);
+this.Controls.Add(this.buttonAdv2);
+this.Controls.Add(this.buttonAdv3);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim buttonAdv1 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+
+Me.buttonAdv1.Text = "buttonAdv1"
+Me.buttonAdv2.Text = "buttonAdv2"
+Me.buttonAdv3.Text = "buttonAdv3"
+
+Me.Controls.Add(this.buttonAdv1)
+Me.Controls.Add(this.buttonAdv2)
+Me.Controls.Add(this.buttonAdv3)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/GridBagLayout_img4.png)
+
 ## Configuring Child controls
 
 The GridBagLayout is completely configured through the GridBag Constraints set for each Child component. The number of rows and columns in the virtual grid is also derived from the specified constraints. The constraint for each Child component on the GridBagLayout can be specified through designer and programmatically.
