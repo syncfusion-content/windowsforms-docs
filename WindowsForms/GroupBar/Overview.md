@@ -24,7 +24,7 @@ The GroupBar class implements a tab-type container control similar to the Window
 
 * **Nested GroupBar**: A GroupBar Control can be added as a Child control to another GroupBar Control. In fact any .NET control can be hosted in a GroupBar for maximum flexibility. Thus the GroupBar control can be deployed as a Generic Control Container.
 
-* **Visual Styles** : Provides option to customize the appearance using rich set of available built-in visualstyles.
+* **Visual Styles** : Provides option to customize the appearance using rich set of available built-in visual styles.
 
 * **Serialization Support**: Serialization allows the user to save and restore the State information of the GroupBarItems when a GroupBar is in the Stacked Mode.
 

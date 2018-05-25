@@ -16,7 +16,7 @@ GridLayout is a Layout Manager that allows us to arrange the Child controls as i
 
 **Rows and Columns** - Provides options to customize row and column span of the child controls
 
-**HGap and VGap** - Provides option to set the gaps between child control such as horizontal and vertial direction
+**HGap and VGap** - Provides option to set the gaps between child control such as horizontal and vertical direction
 
 # Getting started
 

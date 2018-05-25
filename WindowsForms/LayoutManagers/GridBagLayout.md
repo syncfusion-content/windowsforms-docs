@@ -24,7 +24,7 @@ GridBagLayout is also used to layout the following controls:
 
 **Cell span** - Provides options to customize row and column span of the child controls
 
-**Fill type** - Provides option to set the position of child control such as horizontal, vertial, both or none.
+**Fill type** - Provides option to set the position of child control such as horizontal, vertical, both or none.
 
 
 # Getting started
