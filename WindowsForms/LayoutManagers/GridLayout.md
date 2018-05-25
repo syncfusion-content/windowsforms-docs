@@ -12,11 +12,248 @@ GridLayout is a Layout Manager that allows us to arrange the Child controls as i
 
 ![](Overview_images/Overview_img60.jpeg)
 
+# Key Features
+
+**Rows and Columns** - Provides options to customize row and column span of the child controls
+
+**HGap and VGap** - Provides option to set the gaps between child control such as horizontal and vertical direction
+
+# Getting started
+
+This section describes how to add `GridLayout` control in a Windows Forms application and overview of its basic functionalities.
+
+## Assembly deployment
+
+The following list of assemblies should be added as reference to use the GridLayout in any application:
+
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+The Syncfusion.Shared.Base contains the class that handles all UI operations and contains helper class of GridLayout control.
+</td>
+</tr>
+</table>
 
 
-A Sample which demonstrates the GridLayout is available in the below sample installation path.
+# Installing NuGet Packages
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+To use GridLayout control in Windows Forms application via nuget, the following packages should be installed.
+ 
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Shared.Base20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Shared.Base35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Shared.Base40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Shared.Base45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td> Syncfusion.Shared.Base451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td>Syncfusion.Shared.Base46
+</td>
+</tr>
+</table>
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
+
+# Creating simple application with GridLayout
+
+You can create the Windows Forms application with GridLayout control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+4. [Adding layout components](#adding-layout-components)
+
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the GridLayout with basic functionalities.
+
+## Adding control via designer
+
+The GridLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Shared.Base.dll
+
+![](Overview_images/GridLayout_img1.png)
+
+To add the form as a Container control of the GridLayout, a popup will appear automatically before it gets added.
+
+![](Overview_images/GridLayout_img2.png)
+
+## Adding control manually in code
+
+To add control manually in C#, follow the given steps:
+
+1. Add the following required assembly references to the project:
+
+	* Syncfusion.Shared.Base.dll
+
+2. Include the namespaces **Syncfusion.Shared.Base**.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.Shared.Base;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Shared.Base
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+3. Create `GridLayout` control instance and set `ContainerControl` as form.
+
+{% tabs %}
+
+{% highlight C# %}
+
+GridLayout gridLayout1 = new GridLayout();
+
+this.gridLayout1.ContainerControl = this;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim gridLayout1 As GridLayout = New GridLayout()
+
+Me.gridLayout1.ContainerControl = Me
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Adding layout components
+ 
+The following steps helps to add layout components to GridLayout both through designer and through code.
+
+**Adding Layout components through designer**
+
+The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
+
+![](Overview_images/GridLayout_img3.png)
+
+**Adding Layout components through code**
+
+The child controls can be added to the layout by adding it to the form and adding them as a layout member using `SetParticipateInLayout` method.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ButtonAdv buttonAdv1 = new ButtonAdv();
+ButtonAdv buttonAdv2 = new ButtonAdv();
+ButtonAdv buttonAdv3 = new ButtonAdv();
+ButtonAdv buttonAdv4 = new ButtonAdv();
+
+this.buttonAdv1.Text = "buttonAdv1";
+this.buttonAdv2.Text = "buttonAdv2";
+this.buttonAdv3.Text = "buttonAdv3";
+this.buttonAdv4.Text = "buttonAdv3";
+
+this.Controls.Add(this.buttonAdv1);
+this.Controls.Add(this.buttonAdv2);
+this.Controls.Add(this.buttonAdv3);
+this.Controls.Add(this.buttonAdv4);
+
+this.gridLayout1.SetParticipateInLayout(this.button1, true);
+this.gridLayout1.SetParticipateInLayout(this.button2, true);
+this.gridLayout1.SetParticipateInLayout(this.button3, true);
+this.gridLayout1.SetParticipateInLayout(this.button4, true);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim buttonAdv1 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+Dim buttonAdv4 As ButtonAdv = New ButtonAdv()
+
+Me.buttonAdv1.Text = "buttonAdv1"
+Me.buttonAdv2.Text = "buttonAdv2"
+Me.buttonAdv3.Text = "buttonAdv3"
+Me.buttonAdv4.Text = "buttonAdv4"
+
+Me.Controls.Add(this.buttonAdv1)
+Me.Controls.Add(this.buttonAdv2)
+Me.Controls.Add(this.buttonAdv3)
+Me.Controls.Add(this.buttonAdv4)
+
+Me.gridLayout1.SetParticipateInLayout(Me.button1, true);
+Me.gridLayout1.SetParticipateInLayout(Me.button2, true);
+Me.gridLayout1.SetParticipateInLayout(Me.button3, true);
+Me.gridLayout1.SetParticipateInLayout(Me.button4, true);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/GridLayout_img4.png)
 
 ## Configuring GridLayout
 
