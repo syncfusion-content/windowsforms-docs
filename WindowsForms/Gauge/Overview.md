@@ -39,7 +39,7 @@ Visualize a range of values in radial scale with circular, helical or half-circu
 {{ '[LinearGauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)' | markdownify }}
 </td>
 <td>
-Visualize a range of values in linear scale with horizontal or vertial representation
+Visualize a range of values in linear scale with horizontal or vertical representation
 </td>
 </tr>
 <tr>
@@ -50,6 +50,3 @@ Visualize alphanumeric values in appearance like LED digital display
 </td>
 </tr>
 </table>
-
-
-
