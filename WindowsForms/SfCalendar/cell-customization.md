@@ -294,19 +294,19 @@ This support is used to display additional information such as text or image abo
 
         private void SfCalendar_ToolTipOpening(SfCalendar sender, ToolTipOpeningEventArgs e)
         {
-            if(e.ViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Month && e.Value.Value.Date == new DateTime(2018,02,14))
+            if (e.ViewType == CalendarViewType.Month && e.Value.Value.Date == new DateTime(2018, 02, 14))
             {
-                e.ToolTipInfo.Items[0].Text = "Happy Valentine's Day";
+                e.ToolTipInfo.Items[0].Text = "Valentine's Day";
             }
-            if (e.ViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Year && e.Value.Value.Month == DateTime.Now.Date.Month)
+            if (e.ViewType == CalendarViewType.Year && e.Value.Value.Month == DateTime.Now.Month)
             {
                 e.ToolTipInfo.Items[0].Text = e.Value.Value.Date.ToString("MMM");
             }
-            if (e.ViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade && e.RowIndex == 0)
+            if (e.ViewType == CalendarViewType.Decade && e.RowIndex == 0)
             {
                 e.ToolTipInfo.Items[0].Text = "Decade";
             }
-            if (e.ViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Century && e.ColumnIndex == 0)
+            if (e.ViewType == CalendarViewType.Century && e.ColumnIndex == 1)
             {
                 e.ToolTipInfo.Items[0].Text = "Century";
             }
@@ -325,16 +325,16 @@ This support is used to display additional information such as text or image abo
 
        Private Sub SfCalendar_ToolTipOpening(ByVal sender As SfCalendar, ByVal e As ToolTipOpeningEventArgs)
 
-			If e.ViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Month AndAlso e.Value.Value.Date = New Date(2018,02,14) Then
-				e.ToolTipInfo.Items(0).Text = "Happy Valentine's Day"
+			If e.ViewType = CalendarViewType.Month AndAlso e.Value.Value.Date = New Date(2018,02,14) Then
+				e.ToolTipInfo.Items(0).Text = "Valentine's Day"
 			End If
-			If e.ViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year AndAlso e.Value.Value.Month = Date.Now.Date.Month Then
+			If e.ViewType = CalendarViewType.Year AndAlso e.Value.Value.Month = Date.Now.Date.Month Then
 				e.ToolTipInfo.Items(0).Text = e.Value.Value.Date.ToString("MMM")
 			End If
-			If e.ViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade AndAlso e.RowIndex = 0 Then
+			If e.ViewType = CalendarViewType.Decade AndAlso e.RowIndex = 0 Then
 				e.ToolTipInfo.Items(0).Text = "Decade"
 			End If
-			If e.ViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Century AndAlso e.ColumnIndex = 0 Then
+			If e.ViewType = CalendarViewType.Century AndAlso e.ColumnIndex = 0 Then
 				e.ToolTipInfo.Items(0).Text = "Century"
 			End If
 
@@ -403,55 +403,34 @@ The following code example illustrates how to customize the cell on-demand:
      private void SfCalendar1_DrawCell(SfCalendar sender, DrawCellEventArgs args)
 
         {
-           
+            //Image for year view cell
+            Image image = null;
             //Month View
-            if (e.ViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Month && e.Value.Value.Date == DateTime.Now.Date)
+            if (e.ViewType == CalendarViewType.Month && e.Value.Value.Date == DateTime.Now.Date)
             {
-             e.Handled = true;
-                TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("dd"), new Font("Segoe UI Bold", this.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Green, TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter);
-                e.Graphics.FillRectangle(new SolidBrush(Color.Purple), new Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width / 2)) -15, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12));
-                e.Graphics.FillRectangle(new SolidBrush(Color.Orange), new Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width / 2)) + 5, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12));
+                e.Handled = true;
+                TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("dd"), new Font("Segoe UI Bold",
+                                        this.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Green);
+
+                e.Graphics.FillRectangle(new SolidBrush(Color.Purple), new Rectangle((e.CellBounds.X + 
+                                        (e.CellBounds.Width - e.CellBounds.Width / 2)) - 15,
+                                        (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12));
+
+                e.Graphics.FillRectangle(new SolidBrush(Color.Orange), new Rectangle((e.CellBounds.X +
+                                        (e.CellBounds.Width - e.CellBounds.Width / 2)) + 5,
+                                        (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12));
             }
+
             //Year View
-            if (e.ViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Year && e.Value.Value.Date.Month == DateTime.Now.Date.Month && e.Value.Value.Date.Year == DateTime.Now.Date.Year)
+            if (e.ViewType == CalendarViewType.Year && e.Value.Value.Month == new DateTime(2018, 02, 14).Month 
+                                        && e.Value.Value.Year == new DateTime(2018, 02, 14).Year)
             {
                 e.Handled = true;
-                TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("MMM"), new Font("Segoe UI Bold", this.sfCalendar1.Style.Cell.CellFont.Size + 5), e.CellBounds, Color.Green, TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter);
-                e.Graphics.FillRectangle(new SolidBrush(Color.Purple), new Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width / 2)) - 17, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12));
-                e.Graphics.FillRectangle(new SolidBrush(Color.Orange), new Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width / 2)) + 2, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12));
-
+                image = Properties.Resources.Icon_Valentines_day;
+                e.Graphics.DrawImage(image, e.CellBounds);
             }
-            //Decade View
-            if (e.ViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade && e.Value.Value.Date.Year == DateTime.Now.Date.Year)
-            {
-                e.Handled = true;
-                TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("yyyy"), new Font("Segoe UI Bold", this.sfCalendar1.Style.Cell.CellFont.Size + 5), e.CellBounds, Color.Green, TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter);
-                e.Graphics.FillRectangle(new SolidBrush(Color.Orange), new Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width / 2)) - 17, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12));
-                e.Graphics.FillRectangle(new SolidBrush(Color.Yellow), new Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width / 2)) + 2, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12));
-
-            }
-            //Century View
-        
-            if (e.ViewType == Syncfusion.WinForms.Input.Enums.CalendarViewType.Century && e.Value.Value.AddYears(-10).Year == Form1.RoundDown(DateTime.Now.Year))
-            {
-                e.Handled = true;
-                TextRenderer.DrawText(e.Graphics, e.Text, new Font("Segoe UI Bold", this.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Red, TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter);
-                e.Graphics.FillRectangle(new SolidBrush(Color.Purple), new Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width / 2)) - 17, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12));
-                e.Graphics.FillRectangle(new SolidBrush(Color.Green), new Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width / 2)) + 2, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12));
-            }
+            
         }
-
-        /// <summary>
-        /// Round up the value to the multiple of 10.
-        /// </summary>
-        /// <param name="toRound">Value to be rounded off.</param>
-        /// <returns>The below nearest value of 100.</returns>
-        internal static int RoundDown(int toRound)
-        {
-            return toRound - (toRound % 100);
-        }
-        
-
 
 {% endhighlight  %}
 
@@ -467,52 +446,37 @@ Me.SfCalendar1.DrawCell = (Me.SfCalendar1.DrawCell + SfCalendar1_DrawCell)
     
  Private Sub SfCalendar1_DrawCell(ByVal sender As SfCalendar, ByVal args As DrawCellEventArgs)
 
+         'Image for year view cell
+           Dim image As Image = Nothing
 
-            'Month View
-			If e.ViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Month AndAlso e.Value.Value.Date= Date.Now.Date Then
+			'Month View
+			If e.ViewType = CalendarViewType.Month AndAlso e.Value.Value.Date = Date.Now.Date Then
+            
 				e.Handled = True
-				TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("dd"), New Font("Segoe UI Bold", Me.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Green, TextFormatFlags.VerticalCenter Or TextFormatFlags.HorizontalCenter)
-				e.Graphics.FillRectangle(New SolidBrush(Color.Purple), New Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width \ 2)) -15, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12))
-				e.Graphics.FillRectangle(New SolidBrush(Color.Orange), New Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width \ 2)) + 5, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12))
-			End If
+				TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("dd"), New Font("Segoe UI Bold",
+                                      Me.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Green)
 
-			'Year View
-			If e.ViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year AndAlso e.Value.Value.Date.Month = Date.Now.Date.Month AndAlso e.Value.Value.Date.Year = Date.Now.Date.Year Then
-				e.Handled = True
-				TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("MMM"), New Font("Segoe UI Bold", Me.sfCalendar1.Style.Cell.CellFont.Size + 5), e.CellBounds, Color.Green, TextFormatFlags.VerticalCenter Or TextFormatFlags.HorizontalCenter)
-				e.Graphics.FillRectangle(New SolidBrush(Color.Purple), New Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width \ 2)) - 17, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12))
-				e.Graphics.FillRectangle(New SolidBrush(Color.Orange), New Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width \ 2)) + 2, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12))
+				e.Graphics.FillRectangle(New SolidBrush(Color.Purple), New Rectangle((e.CellBounds.X + 
+                                      (e.CellBounds.Width - e.CellBounds.Width \ 2)) - 15,
+                                      (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12))
 
-			End If
-
-			'Decade View
-			If e.ViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade AndAlso e.Value.Value.Date.Year = Date.Now.Date.Year Then
-				e.Handled = True
-				TextRenderer.DrawText(e.Graphics, e.Value.Value.ToString("yyyy"), New Font("Segoe UI Bold", Me.sfCalendar1.Style.Cell.CellFont.Size + 5), e.CellBounds, Color.Green, TextFormatFlags.VerticalCenter Or TextFormatFlags.HorizontalCenter)
-				e.Graphics.FillRectangle(New SolidBrush(Color.Orange), New Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width \ 2)) - 17, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12))
-				e.Graphics.FillRectangle(New SolidBrush(Color.Yellow), New Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width \ 2)) + 2, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12))
+				e.Graphics.FillRectangle(New SolidBrush(Color.Orange), New Rectangle((e.CellBounds.X + 
+                                      (e.CellBounds.Width - e.CellBounds.Width \ 2)) + 5,
+                                      (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 2, 12, 12))
 
 			End If
 
-			'Century View
-			If e.ViewType = Syncfusion.WinForms.Input.Enums.CalendarViewType.Century AndAlso e.Value.Value.AddYears(-10).Year = Form1.RoundDown(Date.Now.Year) Then
+			If e.ViewType = CalendarViewType.Year AndAlso e.Value.Value.Month = (New Date(2018, 02, 14)).Month
+                                      AndAlso e.Value.Value.Year = (New Date(2018, 02, 14)).Year Then
+
 				e.Handled = True
-				TextRenderer.DrawText(e.Graphics, e.Text, New Font("Segoe UI Bold", Me.sfCalendar1.Style.Cell.CellFont.Size), e.CellBounds, Color.Red, TextFormatFlags.VerticalCenter Or TextFormatFlags.HorizontalCenter)
-				e.Graphics.FillRectangle(New SolidBrush(Color.Purple), New Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width \ 2)) - 17, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12))
-				e.Graphics.FillRectangle(New SolidBrush(Color.Green), New Rectangle((e.CellBounds.X + (e.CellBounds.Width - e.CellBounds.Width \ 2)) + 2, (e.CellBounds.Y + (e.CellBounds.Height - 20)) - 14, 12, 12))
+				image = My.Resources.Icon_Valentines_day
+				e.Graphics.DrawImage(image, e.CellBounds)
                 
+
 			End If
 
         End Sub
-
-       ''' <summary>
-		''' Round up the value to the multiple of 10.
-		''' </summary>
-		''' <param name="toRound">Value to be rounded off.</param>
-		''' <returns>The below nearest value of 100.</returns>
-		Friend Shared Function RoundDown(ByVal toRound As Integer) As Integer
-			Return toRound - (toRound Mod 100)
-		End Function
 
 {% endhighlight  %}
 

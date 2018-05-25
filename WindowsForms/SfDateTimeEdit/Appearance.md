@@ -295,7 +295,7 @@ Before apply theme to SfDateTimeEdit, required theme assembly should be loaded a
 
 {% highlight C# %}
 
-using Syncfusion.WinForms.Themes;
+using Syncfusion.WinForms.Controls;
 
          static class Program
     {
@@ -305,7 +305,7 @@ using Syncfusion.WinForms.Themes;
         
         static void Main()
         {
-            ThemeHelper.LoadAssembly(typeof(Office2016Theme).Assembly);
+            SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
@@ -316,14 +316,14 @@ using Syncfusion.WinForms.Themes;
 
 {% highlight VB %}
 
-Imports Syncfusion.WinForms.Themes
+Imports Syncfusion.WinForms.Controls
 
  Friend Module Program
         ''' <summary>
         ''' The main entry point for the application.
         ''' </summary>
         Sub Main()
-            ThemeHelper.LoadAssembly(GetType(Office2016Theme).Assembly)
+            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
             Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
             Application.Run(New Form1())
@@ -336,7 +336,7 @@ Imports Syncfusion.WinForms.Themes
 
 ### Apply theme
 
-Appearance of SfCalendar can be changed by `ThemeName` of SfCalendar.
+Appearance of SfDateTimeEdit can be changed by `ThemeName` of SfDateTimeEdit.
 
 #### Office2016Colorful
 
