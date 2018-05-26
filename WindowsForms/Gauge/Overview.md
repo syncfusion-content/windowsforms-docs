@@ -13,59 +13,40 @@ The Gauge control for Windows Forms is a data visualization tool that can be use
 
 The Gauge control is intended for developers who want to use gauges in their Windows Forms applications. It is a very useful control to indicate the current value in a range of values.
 
-## Prerequisites and compatibility
+# Gauges 
 
-This section covers the requirements for using Gauge control. It also lists operating systems and browsers compatible with the product.
-
-###  Prerequisites
-
-The prerequisites details are listed below:
-
+Windows Forms supports rich set of gauges to provide an intuitive and attractive way to display information graphically. 
 
 <table>
 <tr>
-<th>
-Development Environments</th><th>
-.NET Framework versions</th></tr>
+<td>
+{{'**Name**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
 <tr>
 <td>
-<ul>
-<li> Visual Studio 2013 </li>
-<li> Visual Studio 2012 </li>
-<li> Visual Studio 2010 (Ultimate and Express)</li>
-<li> Visual Studio 2008 (Team, Professional, Standard and Express)</li>
-<li> Visual Studio 2005 (Team, Professional, Standard and Express)</li>
-<li> Borland Delphi for .NET</li>
-<li> SharpCode</li></ul></td><td>
-<ul>
-<li> .NET 4.5.1</li>
-<li> .NET 4.5</li>
-<li> .NET 4.0</li>
-<li> .NET 3.5 </li>
-<li> .NET 2.0</li></ul></td></tr>
-</table>
-
-### Compatibility
-
-
-The compatibility details are as follows: 
-
-
-<table>
-<tr>
-<th>
-Operating Systems</th></tr>
+{{ '[RadialGauge](https://help.syncfusion.com/windowsforms/gauge/radial-gauge)' | markdownify }}
+</td>
+<td>
+Visualize a range of values in radial scale with circular, helical or half-circular representation.
+</td>
+</tr>
 <tr>
 <td>
-</ul>
-<li> Windows 8.1 (32 bit and 64 bit)</li>
-<li> Windows 8 (32 bit and 64 bit)</li>
-<li> Windows Server 2013 (32 bit and 64 bit)</li>
-<li> Windows Server 2012 (32 bit and 64 bit)</li>
-<li> Windows Server 2008 (32 bit and 64 bit)</li>
-<li> Windows 7 (32 bit and 64 bit)</li>
-<li> Windows Vista (32 bit and 64 bit)</li></ul></td></tr>
+{{ '[LinearGauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)' | markdownify }}
+</td>
+<td>
+Visualize a range of values in linear scale with horizontal or vertical representation
+</td>
+</tr>
+<tr>
+<td>
+{{ '[DigitalGauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)' | markdownify }}
+<td>
+Visualize alphanumeric values in appearance like LED digital display
+</td>
+</tr>
 </table>
-
-
-
