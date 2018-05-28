@@ -441,6 +441,13 @@ Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of
 
 {% endhighlight %}
 
+For non-complex lexems, you can specify `ContinueBlock` and `EndBlock` attributes.
+
+* If you specify ContinueBlock, the parser will read words (tokens) and set the specified formatting for them until it encounters a ContinueBlock.
+* If you specify EndBlock, specified formatting will be set only if first token matches ContinueBlock and is followed by EndBlock.
+
+All matched text will be treated later as one word, and won’t be broken into parts in WordWrap mode.
+
 #### SubLexems
 
 Sublexems that must be skipped if they are found after BeginBlock string before EndBlock string. 
@@ -539,7 +546,7 @@ For example, if you like to customize the strings that ends with !, this can be 
 
 #### Error words highlighting
 
-Error lexems can be added to the language by declaring a format names Error and it can be highlighted using underlines. Below code is an example of declaring "#endregion" as error if #region is not BeginBlock, priority values assigned to order the interrupt.
+Error lexems can be added to the language by declaring a format names Error and it can be highlighted using underlines. 
 
 {% highlight xaml %}
 
@@ -755,6 +762,13 @@ Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of
 {% endhighlight %}
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img34.png)
+
+For non-complex lexems, you can specify `ContinueBlock` and `EndBlock` attributes.
+
+* If you specify ContinueBlock, the parser will read words (tokens) and set the specified formatting for them until it encounters a ContinueBlock.
+* If you specify EndBlock, specified formatting will be set only if first token matches ContinueBlock and is followed by EndBlock.
+
+All matched text will be treated later as one word, and won’t be broken into parts in WordWrap mode.
 
 #### SubLexems
 
@@ -1391,6 +1405,14 @@ Splits helps to configure two different words as a single. For example, consider
 
 {% highlight C# %}
 
+// Adding the necessary split definitions to the current language's Splits collection. Split configuration should be initialized before applying new language configuration to EditControl.
+
+Split split = new Split();
+
+split.Text = "#region";
+
+currentConfigLanguage.Splits.Add(split);
+
 ISnippetFormat keyword = this.editControl1.Language.Add("keyword");
 
 keyword.FontColor = Color.Orange;
@@ -1404,18 +1426,18 @@ region.FormatName = "keyword";
 
 this.editControl1.Language.Lexems.Add(region);
 
-// Adding the necessary split definitions to the current language's Splits collection.
-
-Split split = new Split();
-
-split.Text = "#region";
-
-this.editControl1.Language.Splits.Add(split);
-
 {% endhighlight %}
 
 
 {% highlight VB %}
+
+' Adding the necessary split definitions to the current language's Splits collection. Split configuration should be initialized before applying new language configuration to EditControl.
+
+Dim split As  Split  = new Split()
+
+split.Text = "#region"
+
+currentConfigLanguage.Splits.Add(split)
 
 Dim keyword As ISnippetFormat = Me.editControl1.Language.Add("keyword")
 
@@ -1430,17 +1452,11 @@ region.FormatName = "keyword"
 
 Me.editControl1.Language.Lexems.Add(region)
 
-' Adding the necessary split definitions to the current language's Splits collection.
-
-Dim split As  Split  = new Split()
-
-split.Text = "#region"
-
-Me.editControl1.Language.Splits.Add(split)
-
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img44.png)
 
 ### Auto replace triggers
 
