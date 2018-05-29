@@ -9,18 +9,14 @@ documentation: ug
 
 # RadialGauge
 
-The RadialGauge control can be used for representing a range of values in circular form. It can be used to create sophisticated dashboards, clocks, industrial equipment, medical equipment, more.
-
-# Overview
-
-A RadialGauge evaluates the values of scales and presents them in a radial manner. RadialGauge enables you to quickly build high quality dashboard, process control, gadget and clocks. RadialGauge consist of important internal domains to present data in a more sophisticated way.
+The RadialGauge control can be used for representing a range of values in circular form. RadialGauge enables you to quickly build high quality dashboard, process control, gadget and clocks. RadialGauge consist of important internal domains to present data in a more sophisticated way.
 
 The best example of a RadialGauge is a speedometer. The speedometer can be designed to be placed in a racing game application, denoting the speed of a vehicle.
 
 
 ![](Radial-Gauge_images/Radial-Gauge_img1.png)
 
-# Key features
+## Key features
 
 
 * **Scales** - Provides support to customize orientation and appearance of the associated scales.
@@ -60,10 +56,18 @@ Syncfusion.Gauge.Windows
 The Syncfusion.Gauge.Windows contains the class that handles all UI operations and contains helper class of RadialGauge control.
 </td>
 </tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of RadialGauge and various editor controls.
+</td>
+</tr>
 </table>
 
 
-# Installing NuGet Packages
+## Installing NuGet Packages
 
 To use RadialGauge control in Windows Forms application via nuget, the following packages should be installed.
 
@@ -207,6 +211,7 @@ Me.Controls.Add(radialGauge1)
 {% endtabs %}
 
 ![](Radial-Gauge_images/RadialGauge_img2.png)
+
 
 ### Elaborate structure of the control
 
