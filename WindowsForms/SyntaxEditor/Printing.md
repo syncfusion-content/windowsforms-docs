@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing
 
-Support to print the data displayed in the EditControl using [Print](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Print.html) function. It also provides support to display print preview window by calling [PrintPreview](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintPreview.html) function.
+Support to print the data displayed in the EditControl by using the [Print](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Print.html) function. It also provides support to display print preview window by calling the [PrintPreview](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintPreview.html) function.
 
 {% tabs %}
 
@@ -34,24 +34,24 @@ Me.editControl1.Print()
 
 ![](Printing_images/Printing_img1.jpeg)
 
-In brief, the printing functionality of the EditControl supports the following features.
+In brief, the printing functionality of the EditControl supports the following features:
 
-* Print Preview
-* Custom Header and Footer Text
-* Document Name
-* Page Numbers
-* Color Printing to preserve Syntax Highlighting
-* Selected Text Printing
-* Line Numbers
-* Printing a Specific Page or Set of Pages
-* Printing Entire Document
-* Creating a Printer Document
-* Current Page Printing
-* Printer Dialog
+* Print preview
+* Custom header and footer text
+* Document name
+* Page numbers
+* Color printing to preserve syntax highlighting
+* Selected text printing
+* Line numbers
+* Printing a specific page or set of pages
+* Printing entire document
+* Creating a printer document
+* Current page printing
+* Printer dialog
 
-## Print Preview
+## Print preview
 
-Use the [PrintPreview](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintPreview.html) function to view the contents of the EditControl before they are printed.
+Use the [PrintPreview](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintPreview.html) function to view the content of the EditControl before printing it.
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ Me.editControl1.PrintPreview()
 
 ## Specifying printing options
 
-EditControl provides various printing option as like Visual Studio Code Editor. By using the `PrintCurrentPage` function, we can print the current page in the EditControl.
+The EditControl provides various printing option like Visual Studio Code Editor. By using the `PrintCurrentPage` function, you can print the current page in the EditControl.
 
 <table>
 <tr>
@@ -88,19 +88,19 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[PrintCurrentPage](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintCurrentPage.html)' | markdownify }}</td><td>
-Prints current page on default printer</td></tr>
+Prints the current page on the default printer.</td></tr>
 <tr>
 <td>
 {{ '[PrintNoDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintNoDialog.html)' | markdownify }}</td><td>
-Prints entire document on default printer</td></tr>
+Prints the entire document on the default printe.r</td></tr>
 <tr>
 <td>
 {{ '[PrintSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintSelection.html)' | markdownify }}</td><td>
-Prints selected area on default printer</td></tr>
+Prints the selected area on the default printer.</td></tr>
 <tr>
 <td>
 {{ '[PrintPages](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintPages.html)' | markdownify }}</td><td>
-Prints the pages in the specified range</td></tr>
+Prints the pages in the specified range.</td></tr>
 </table>
 
 {% tabs %}
@@ -148,13 +148,13 @@ Me.editControl1.PrintSelection()
 
 {% endtabs %}
 
-## Setting Header and Footer
+## Setting header and footer
 
- Provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This functionalities can be enabled or disabled by setting [PageHeaderAndFooterVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PageHeaderAndFooterVisible.html) property. 
+Provides a way to display additional content on the top (header) or bottom (footer) of the page while printing. These functionalities can be enabled or disabled by setting the [PageHeaderAndFooterVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PageHeaderAndFooterVisible.html) property. 
 
-### Printing Document name and Page number
+### Printing document name and page number
 
-EditControl allows you to specify the desired text in the header and footer by handling the [PrintHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintHeader_EV.html) and [PrintFooter](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintFooter_EV.html) events. The default text in the header and footer is the fully qualified path of the file including the file name and page number respectively. [PrintDocumentName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintDocumentName.html) and [PrintPageNumber](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintPageNumber.html) property is used to enable or disable the name of the document and page number while printing.
+The EditControl allows you to specify the desired text in the header and footer by handling the [PrintHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintHeader_EV.html) and [PrintFooter](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintFooter_EV.html) events. The default text in the header and footer is the fully qualified path of the file including the file name and page number respectively. The [PrintDocumentName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintDocumentName.html) and [PrintPageNumber](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintPageNumber.html) properties are used to enable or disable the name of the document and page number while printing.
 
 {% tabs %}
 
@@ -209,9 +209,9 @@ The following image shows a typical page with a header and footer in Print Previ
 
 ![](Printing_images/Printing_img3.jpeg)
 
-### Show / Hide page border
+### Show or hide page border
 
-PageBorder can also be shown or removed while printing the document. [SetPageBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetPageBorder.html) function is used to display page borders for the EditControl. And also we can remove the page borders by using [RemovePageBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemovePageBorder.html) of EditControl.
+The PageBorder can be shown or hidden while printing the document. The [SetPageBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetPageBorder.html) function is used to display page borders for the EditControl. You can also hide the page borders by using the [RemovePageBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemovePageBorder.html) of the EditControl.
 
 {% tabs %}
 
@@ -242,5 +242,5 @@ Me.editControl1.RemovePageBorder()
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the `Printing` functionalities in EditControl.
+N> Refer to the following sample link that demonstrates the `Printing` functionalities in the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Printing
