@@ -9,11 +9,11 @@ documentation: ug
 
 # Localization
 
-Localization is the process of translating the application resources into different language for the specific cultures. `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html).
+Localization is the process of translating the application resources into different languages for some specific cultures. The `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html).
 
-The following steps helps to localize the dialog boxes in the EditControl:
+Follow the steps to localize the dialog boxes in the EditControl:
 
-1) Include the required namespaces at the beginning of the file.
+1. Include the required namespaces at the beginning of the file.
 
 {% tabs %}
 
@@ -33,11 +33,11 @@ Imports Syncfusion.Windows.Forms.Edit
 
 {% endtabs %}
 
-2) Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
+2. Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
 
-3) Return the localized versions of the strings corresponding to the string identifiers.
+3. Return the localized versions of the string corresponding to the string identifiers.
 
-4) String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Localization.Localizer+EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
+4. String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Localization.Localizer+EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ Imports Syncfusion.Windows.Forms.ResourceIdentifiers
 
 {% endtabs %}
 
-5) Assign this instance to the [Provider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider~Provider.html) property of the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
+5. Assign this instance to the [Provider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider~Provider.html) property of the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
 
 {% tabs %}
 
@@ -75,13 +75,13 @@ LocalizationProvider.Provider = New Localizer()
 
 {% endtabs %}  
 
-6) The following code example demonstrates localizing various dialog boxes in EditControl.
+6. The following code example demonstrates localizing various dialog boxes in the EditControl.
 
 **Find Dialog Box**
 
-Provides Microsoft Visual Studio text editor like `FindDialog` window with similar options, for text search and highlighting. 
+Provides Microsoft Visual Studio text editor like `FindDialog` window with similar options for text searching and highlighting. 
 
-For example: Here, `FindDialog` is localized in German Language.
+For example: Here, `FindDialog` is localized in German language.
 
 {% tabs %}
 
@@ -239,9 +239,9 @@ End Function
 
 **Replace Dialog Box**
 
-Provides Microsoft Visual Studio text editor like Find and Replace dialog window with similar options, for text search, highlighting and replace.
+Provides Microsoft Visual Studio text editor like Find and Replace dialog window with similar options for text searching, highlighting, and replacing.
 
-For example: Here, `ReplaceDialog` is localized in Chinese Language.
+For example: Here, `ReplaceDialog` is localized in Chinese language.
 
 {% tabs %}
 
@@ -325,9 +325,9 @@ End Function
 
 **GoTo Dialog Box**
 
-Provides `GoToLine` dialog window that helps navigate to required line number.
+Provides `GoToLine` dialog window to navigate to the required line number.
 
-For example: Here, `GoToDialog` is localized in Chinese Language.
+For example: Here, `GoToDialog` is localized in Chinese language.
 
 {% tabs %}
 
@@ -387,9 +387,9 @@ End Function
 
 **Context Menu**
 
-Provides a built-in context menu with options to perform editing operations like Undo, Redo, Cut, Copy, Paste, Select All and so on.
+Provides a built-in context menu with options to perform editing operations like undo, redo, cut, copy, paste, select all, and so on.
 
-For example: Here, `ContextMenu` is localized in Chinese Language.
+For example: Here, `ContextMenu` is localized in Chinese language.
 
 {% tabs %}
 
@@ -621,5 +621,5 @@ End Function
 
 ![](Localization-and-Globalization_images\Localization-and-Globalization_img3.png)
 
-N> Refer to the following sample link that demonstrates the localization support in EditControl.
+N> Refer to the following sample link that demonstrates the localization support in EditControl:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Localization
