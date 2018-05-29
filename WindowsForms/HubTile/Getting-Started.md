@@ -26,7 +26,47 @@ The following list of assemblies should be added as reference to use the HubTile
 </tr>
 <tr>
 <td>
-Syncfusion.Tools.Windows
+Syncfusion.Grid.Base.dll
+</td>
+<td>
+Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Windows.dll
+</td>
+<td>
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the HubTile control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base.dll
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of HubTile and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Windows.dll
+</td>
+<td>
+Syncfusion.Shared.Windows contains style related properties of HubTile and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Base.dll
+</td>
+<td>
+Syncfusion.Tools.Base contains base class which used for HubTile control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows.dll
 </td>
 <td>
 Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of HubTile control.
@@ -35,7 +75,7 @@ Syncfusion.Tools.Windows contains the class that handles all UI operations and c
 </table>
 
 
-# Installing NuGet Packages
+## Installing NuGet Packages
 
 To use HubTile control in Windows Forms application via nuget, the following packages should be installed.
  
