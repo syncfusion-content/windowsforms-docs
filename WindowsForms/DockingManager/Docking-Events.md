@@ -33,7 +33,7 @@ This event occurs when the right mouse button is clicked over a AutoHideTabContr
 <tr>
 <td>
 {{ '[DockMenuClick](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockMenuClick_EV.html)' | markdownify }}</td><td>
-This event occurs when the redock context menu item has been clicked</td></tr>
+This event occurs when the redone context menu item has been clicked</td></tr>
 <tr>
 <td>
 {{ '[ControlMaximized](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximized_EV.html)' | markdownify }}
@@ -580,7 +580,7 @@ The [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/too
 
 #### Event data
 
-The event handler has an argument of type [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html). That arguement has 2 properties [ContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~ContextMenu.html) of type PopupMenu and [Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~Owner.html) of type control. ContextMenu gives access to the menu which is going to be displayed and owner identifies the docked control. So by checking this owner object, we can remove the contextmenu for a particular control.
+The event handler has an argument of type [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html). That argument has 2 properties [ContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~ContextMenu.html) of type PopupMenu and [Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~Owner.html) of type control. ContextMenu gives access to the menu which is going to be displayed and owner identifies the docked control. So by checking this owner object, we can remove the context menu for a particular control.
 
 The `DockContextMenuEventArgs` allows us to,
 
@@ -676,11 +676,11 @@ End Sub
 
 ### DockMenuClick event
 
-[DockMenuClick](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockMenuClick_EV.html) event gets fired, when the redock context menu item has been clicked. The menu button available for the docked controls, provides options for changing the docking position. Whenever the user tries to redock the control to some other position, DockMenuClick event will be triggered. The options provided are left, top, right and bottom. These redock context menu item option is available only in `VS2008` Docking Style. The redock style can be displayed using the below code.
+[DockMenuClick](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockMenuClick_EV.html) event gets fired, when the re-dock context menu item has been clicked. The menu button available for the docked controls, provides options for changing the docking position. Whenever the user tries to re-dock the control to some other position, DockMenuClick event will be triggered. The options provided are left, top, right and bottom. These re-dock context menu item option is available only in `VS2008` Docking Style. The re-dock style can be displayed using the below code.
 
 #### Event data
 
-The [DockMenuClickEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventHandler.html) receives an argument of type [DockMenuClickEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventArgs.html)containing data related to this event. The following DockMenuClickEventArgs members provide information specific to this event.
+The [DockMenuClickEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventHandler.html) receives an argument of type [DockMenuClickEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventArgs.html) containing data related to this event. The following DockMenuClickEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -1204,7 +1204,7 @@ End Sub
 
 ### NewDockStateBeginLoad event
 
-The [NewDockStateBeginLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateBeginLoad_EV.html)event occurs just before a new dock state of particular control is loaded. Whenever an application with one or more docked controls is going to be loaded, this event will be triggered.
+The [NewDockStateBeginLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateBeginLoad_EV.html) event occurs just before a new dock state of particular control is loaded. Whenever an application with one or more docked controls is going to be loaded, this event will be triggered.
 
 {% tabs %}
 
@@ -1372,7 +1372,7 @@ private void dockingManager1_DockVisibilityChanged(object sender, Syncfusion.Win
 
 ### DockVisibilityChanging event
 
-This event gets fired while changing the visibility of particular docked control. We can avoid changing the visibility of control by cancelling this event operation which gets executed. 
+This event gets fired while changing the visibility of particular docked control. We can avoid changing the visibility of control by canceling this event operation which gets executed. 
 
 {% tabs %}
 

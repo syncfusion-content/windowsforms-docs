@@ -475,7 +475,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 ![](Appearance_images/Appearance_img16.png)
 
- ### Custom Office 2010 color scheme
+### Custom Office 2010 color scheme
 
 Custom colors can also be applied for Office2010 by setting `Managed` style of [Office2010Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2010Theme.html).
 
@@ -867,7 +867,7 @@ Me.dockingManager1.ResetDockTabForeColor()
 
 In DockingManager, we can customize the AutoHidden window tabs foreground, font and tab panel background color.
 
-### customize autohide tab
+### customize auto hide tab
 
 The Font style for the auto hidden tabs can be customized by using [AutoHideTabFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabFont.html) property of DockingManager. The height of AutoHidden tab control can be customized by using the [AutoHideTabHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabHeight.html) property.
 
@@ -931,7 +931,7 @@ Me.dockingManager1.AutoHideTabForeColor = System.Drawing.Color.Red
 
 ![](Appearance_images/Appearance_img28.png)
 
-## customize autohide panel
+## customize auto hide panel
 
 The background color of the Auto Hide window can be customized using the property named [TabPanelBackcolor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPanelBackColor.html) in AHTabControl. All the auto hide TabControl can be get from the [GetAHTabControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MainFormController~GetAHTabControl.html) function of MainFormController by specifying side of auto hide TabControl. The following code used to customize the back color.
 

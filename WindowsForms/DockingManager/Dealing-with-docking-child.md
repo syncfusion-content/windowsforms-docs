@@ -13,7 +13,7 @@ DockingManager lets you dock the control on any of the four sides of the contain
 
 ### Get order of the docked child
 
-Arrangement of child elements in the `DockingManager` will be based on the order in which the child has been added.  We can get the order of the controls which is added as a child of the DockingManager using `DockAreaControllers` property of DockingManager. For instance, we have iterated the child elements from the collection of DockAreacontrollers and displayed the DockLabel of child element in output window. 
+Arrangement of child elements in the `DockingManager` will be based on the order in which the child has been added.  We can get the order of the controls which is added as a child of the DockingManager using `DockAreaControllers` property of DockingManager. For instance, we have iterated the child elements from the collection of DockAreaControllers and displayed the DockLabel of child element in output window. 
 
 {% tabs %}
 
@@ -209,13 +209,13 @@ DockingManager has following functions for retrieve and manipulation of the Tool
 
  * [GetCloseButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetCloseButtonToolTip.html): Get the tooltip for close button in the caption bar of the Docked window.
 
- * [SetAutoHideButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideButtonToolTip.html): Used to set tooltip for Autohide button in the caption bar of the Docked window.
+ * [SetAutoHideButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideButtonToolTip.html): Used to set tooltip for AutoHide button in the caption bar of the Docked window.
 
- * [GetAutoHideButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideButtonToolTip.html): Get the tooltip for Autohide button in the caption bar of the Docked window.
+ * [GetAutoHideButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideButtonToolTip.html): Get the tooltip for AutoHide button in the caption bar of the Docked window.
 
  * [SetMenuButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMenuButtonToolTip.html): Used to set tooltip for menu button in the caption bar of the Docked window.
 
- * [GetMenuButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetMenuButtonToolTip.html): Get the tooltip for Autohide button in the caption bar of the Docked window.
+ * [GetMenuButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetMenuButtonToolTip.html): Get the tooltip for AutoHide button in the caption bar of the Docked window.
 
 The following code demonstrate the usage of these functions:
 
@@ -331,7 +331,7 @@ Me.dockingManager1.UseBalloonStyleToolTip = True
 
 ### Show/ hide tooltip
 
-We can enable or disable showing the ToolTip in Docked, Tabbed and AutoHide windows. by using [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowToolTips.html) property of DockingManager. Its default value is `true`, to disable showing the tooltip turnon its value to `false`.
+We can enable or disable showing the ToolTip in Docked, Tabbed and AutoHide windows. by using [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowToolTips.html) property of DockingManager. Its default value is `true`, to disable showing the tooltip turn on its value to `false`.
 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img5.png)
 

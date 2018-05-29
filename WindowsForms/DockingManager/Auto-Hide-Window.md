@@ -48,7 +48,7 @@ The Pin button that performs auto hide functionality can be visible by default. 
 
 ## Auto hide programmatically
 
-DockingManager allows to auto hide the panel by mouse interaction and also provides the way to change the panel state by programmatically. [SetAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideMode.html) function of DockingManager helps to change the panel state to autohide state which was passed as its argument.
+DockingManager allows to auto hide the panel by mouse interaction and also provides the way to change the panel state by programmatically. [SetAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideMode.html) function of DockingManager helps to change the panel state to auto hide state which was passed as its argument.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ DockingManager allows to auto hide the panel by mouse interaction and also provi
 
 // Sets panel1 as AutoHidden window
 
-this.dockingManager1.SetAutoHideMode(panel1, true); //false to remove autohiding
+this.dockingManager1.SetAutoHideMode(panel1, true); //false to remove auto hide state.
 
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ this.dockingManager1.SetAutoHideMode(panel1, true); //false to remove autohiding
 
 'Sets panel1 as AutoHidden window
 
-Me.dockingManager1.SetAutoHideMode(panel1, True) 'false to remove autohiding.
+Me.dockingManager1.SetAutoHideMode(panel1, True) 'false to remove auto hide state.
 
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ Me.dockingManager1.SetAutoHideMode(panel1, True) 'false to remove autohiding.
 
 ![](AutoHidden-Window_images/AutoHidden-Window_img3.png)
 
-By using [GetAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideMode.html) function of DockingManager, we can get whether the control was in autohidden state or not.
+By using [GetAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideMode.html) function of DockingManager, we can get whether the control was in auto hidden state or not.
 
 {% tabs %}
 
@@ -116,7 +116,7 @@ Me.dockingManager1.DockControlInAutoHideMode(panel1, Syncfusion.Windows.Forms.To
 
 ## Auto hide all dock windows on loading
 
-The [SetAutoHideOnLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideOnLoad.html) function of DockingManager is used to autohide all the child windows while loading the control. 
+The [SetAutoHideOnLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideOnLoad.html) function of DockingManager is used to auto hide all the child windows while loading the control. 
 
 {% tabs %}
 
@@ -138,9 +138,9 @@ Me.dockingManager1.SetAutoHideOnLoad(this.panel3, True);
 
 {% endtabs %}
 
-### Scroll autohidden tabs
+### Scroll auto hidden tabs
 
-When the AutoHidden Tabs overflow onto the side panel, ScrollButton is added to the side panel. In otherwords, scroll bar will be visible in AutoHide tab panel, only when child bounds exceeded to auto hide tab panel bounds. By using the scrollbar, we can select the tabs in autohide panel by navigating the scroll buttons.
+When the AutoHidden Tabs overflow onto the side panel, ScrollButton is added to the side panel. In other words, scroll bar will be visible in AutoHide tab panel, only when child bounds exceeded to auto hide tab panel bounds. By using the scrollbar, we can select the tabs in auto hide panel by navigating the scroll buttons.
 
 ![](AutoHidden-Window_images/AutoHidden-Window_img5.png)
 
@@ -250,9 +250,9 @@ Me.dockingManager1.AutoHideSelectionStyle = Syncfusion.Windows.Forms.Tools.AutoH
 
 {% endtabs %}
 
-## Autohide group / active
+## AutoHide group / active
 
-In DockingManager, we can autohide the active control by using [AutoHideActiveControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideActiveControl.html).
+In DockingManager, we can auto hide the active control by using [AutoHideActiveControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideActiveControl.html).
 
 {% tabs %}
 
@@ -293,9 +293,9 @@ DockingManager.AnimationStep = arg.Bounds.Width
 
 {% endtabs %}
 
-## Autohide interval
+## AutoHide interval
 
-By using the [AutoHideInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideInterval.html) property of DockingManager, we can delay the display of showing or hiding the autohide window. It's default value is `400` millisecond.
+By using the [AutoHideInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideInterval.html) property of DockingManager, we can delay the display of showing or hiding the auto hide window. It's default value is `400` millisecond.
 
 {% tabs %}
 

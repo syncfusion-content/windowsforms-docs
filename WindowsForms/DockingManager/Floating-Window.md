@@ -13,7 +13,7 @@ DockPanels can be floated by click the panel header and drag it away by mouse in
 
 ## Enabling / disabling the float functionality
 
-By default, all the dock panels can be floated in DockingManager. `DockingManager` provide option for restrict user to create float windows. The [DisallowFloating](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DisallowFloating.html) property helps to enable or disable the floating functionality. By default, its value is `false`, to restrict the creation of float window, turn its value to `true`. DockPanel will be re-dock at existing position while dragging dock panel and drop at somewhere it to create floatwindow while `DisallowFloating`.
+By default, all the dock panels can be floated in DockingManager. `DockingManager` provide option for restrict user to create float windows. The [DisallowFloating](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DisallowFloating.html) property helps to enable or disable the floating functionality. By default, its value is `false`, to restrict the creation of float window, turn its value to `true`. DockPanel will be re-dock at existing position while dragging dock panel and drop at somewhere it to create float window while `DisallowFloating`.
 
 {% tabs %}
 
@@ -169,12 +169,12 @@ this.dockingManager1.OnCaptionDoubleClick += new Syncfusion.Windows.Forms.Tools.
       dockingManager1.EnableDoubleClickOnCaption = true;
   }
   
-  //Event triggeres on double click on the caption bar.
+  //Event triggers on double click on the caption bar.
   void dockingManager1_OnCaptionDoubleClick(object sender, Syncfusion.Windows.Forms.Tools.DockControlMouseSelection arg)
   {
     if (this.dockingManager1.IsFloating(arg.Control))
     {
-      Control argctrl = arg.Control;
+      Control ctrl = arg.Control;
       if ((arg.Control.TopLevelControl as FloatingForm).WindowState != FormWindowState.Maximized)
         (arg.Control.TopLevelControl as FloatingForm).WindowState = FormWindowState.Maximized;
       else
@@ -217,10 +217,10 @@ AddHandler dockingManager1.OnCaptionDoubleClick, AddressOf dockingManager1_OnCap
       End If
    End Sub
   
-   'Event triggeres on double click on the caption bar.
+   'Event triggers on double click on the caption bar.
    Private Sub dockingManager1_OnCaptionDoubleClick(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.DockControlMouseSelection)
       If Me.dockingManager1.IsFloating(arg.Control) Then
-        Dim argctrl As Control = arg.Control
+        Dim ctrl As Control = arg.Control
         If (TryCast(arg.Control.TopLevelControl, FloatingForm)).WindowState <> FormWindowState.Maximized Then
           TryCast(arg.Control.TopLevelControl, FloatingForm).WindowState = FormWindowState.Maximized
                    Else
@@ -310,7 +310,7 @@ FloatWindow location can be changed by drag and drop by mouse interaction.
 
 ### Change location programmatically
 
-DockingManager provides option to change the FloatWindow location by programatically. To position the FloatWindow at the desired location with the required rectangle Bounds, call [FloatControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~FloatControl.html) function of the DockingManager.
+DockingManager provides option to change the FloatWindow location by programmatically. To position the FloatWindow at the desired location with the required rectangle Bounds, call [FloatControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~FloatControl.html) function of the DockingManager.
 
 {% tabs %}
 
@@ -345,7 +345,7 @@ The DockingManager [ForwardMenuShortcuts](https://help.syncfusion.com/cr/cref_fi
 
 {% highlight C# %}
 
-// True, Enable the Hostform to Listen the keyboard event, when the docked window in Floating State.
+// True, Enable the HostForm to Listen the keyboard event, when the docked window in Floating State.
 
 this.dockingManager1.ForwardMenuShortcuts=true;
 
@@ -354,7 +354,7 @@ this.dockingManager1.ForwardMenuShortcuts=true;
 
 {% highlight VB %}
 
-'True, Enable the Hostform to Listen the keyboard event, when the docked window in Floating State.
+'True, Enable the HostForm to Listen the keyboard event, when the docked window in Floating State.
 
 Me.DockingManager1.ForwardMenuShortcuts=True
 

@@ -326,7 +326,7 @@ DockingManager has following functions for retrieve and manipulation of the butt
 
   * [GetCloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetCloseButtonVisibility.html): Returns a bool value according to the visibility of close button.
 
-  * [SetAutoHideButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideButtonVisibility.html): Used to show / hide the Autohide button in the caption bar of the particular window.
+  * [SetAutoHideButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideButtonVisibility.html): Used to show / hide the AutoHide button in the caption bar of the particular window.
 
   * [GetAutoHideButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideButtonVisibility.html): Returns a bool value according to the visibility of AutoHide button.
 
@@ -369,7 +369,7 @@ Me.dockingManager1.GetCloseButtonVisibility(this.panel1); 'true when button is v
 
 this.dockingManager1.SetDockVisibility(this.panel1, false);
 
-Console.Write("DockWindow Visibilty" + this.dockingManager1.GetDockVisibility(this.panel1));
+Console.Write("DockWindow Visibility" + this.dockingManager1.GetDockVisibility(this.panel1));
 
 {% endhighlight %}
 
@@ -377,7 +377,7 @@ Console.Write("DockWindow Visibilty" + this.dockingManager1.GetDockVisibility(th
 
 Me.dockingManager1.SetDockVisibility(Me.panel1, False)
 
-Console.Write("DockWindow Visibilty" + Me.dockingManager1.GetDockVisibility(Me.panel1))
+Console.Write("DockWindow Visibility" + Me.dockingManager1.GetDockVisibility(Me.panel1))
 
 {% endhighlight %}
 
