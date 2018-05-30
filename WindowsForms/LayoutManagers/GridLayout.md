@@ -12,7 +12,7 @@ GridLayout is a Layout Manager that allows us to arrange the Child controls as i
 
 ![](Overview_images/Overview_img60.jpeg)
 
-# Key Features
+## Key Features
 
 **Rows and Columns** - Provides options to customize row and column span of the child controls
 
@@ -46,7 +46,7 @@ The Syncfusion.Shared.Base contains the class that handles all UI operations and
 </table>
 
 
-# Installing NuGet Packages
+## Installing NuGet Packages
 
 To use GridLayout control in Windows Forms application via nuget, the following packages should be installed.
  
@@ -121,7 +121,6 @@ You can create the Windows Forms application with GridLayout control as follows:
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Adding layout components](#adding-layout-components)
 
 ### Creating the project
 
@@ -138,6 +137,12 @@ The GridLayout control can be added to the application by dragging it from the t
 To add the form as a Container control of the GridLayout, a popup will appear automatically before it gets added.
 
 ![](Overview_images/GridLayout_img2.png)
+
+**Adding Layout components through designer**
+
+The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
+
+![](Overview_images/GridLayout_img3.png)
 
 ## Adding control manually in code
 
@@ -186,16 +191,6 @@ Me.gridLayout1.ContainerControl = Me
 {% endhighlight %}
 
 {% endtabs %}
-
-## Adding layout components
- 
-The following steps helps to add layout components to GridLayout both through designer and through code.
-
-**Adding Layout components through designer**
-
-The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
-
-![](Overview_images/GridLayout_img3.png)
 
 **Adding Layout components through code**
 
@@ -254,6 +249,7 @@ Me.gridLayout1.SetParticipateInLayout(Me.button4, true);
 {% endtabs %}
 
 ![](Overview_images/GridLayout_img4.png)
+
 
 ## Configuring GridLayout
 

@@ -18,7 +18,7 @@ GridBagLayout is also used to layout the following controls:
 * Navigation Buttons of the Wizard control.
 * Buttons of the Calculator control.
 
-# Key Features
+## Key Features
 
 **Anchor** - Provides option to set anchor direction for child controls.
 
@@ -55,7 +55,7 @@ The Syncfusion.Shared.Base contains the class that handles all UI operations and
 </table>
 
 
-# Installing NuGet Packages
+## Installing NuGet Packages
 
 To use GridBagLayout control in Windows Forms application via nuget, the following packages should be installed.
  
@@ -130,7 +130,7 @@ You can create the Windows Forms application with GridBagLayout control as follo
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Adding layout components](#adding-layout-components)
+
 
 ### Creating the project
 
@@ -147,6 +147,12 @@ The GridBagLayout control can be added to the application by dragging it from th
 To add the form as a Container control of the GridBagLayout, a popup will appear automatically before it gets added.
 
 ![](Overview_images/GridBagLayout_img2.png)
+
+**Adding Layout components through designer**
+
+The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
+
+![](Overview_images/GridBagLayout_img3.png)
 
 ## Adding control manually in code
 
@@ -196,16 +202,6 @@ Me.gridBagLayout1.ContainerControl = Me
 
 {% endtabs %}
 
-## Adding layout components
- 
-The following steps helps to add layout components to GridBagLayout both through designer and through code.
-
-**Adding Layout components through designer**
-
-The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
-
-![](Overview_images/GridBagLayout_img3.png)
-
 **Adding Layout components through code**
 
 The child controls can be added to the layout by simply adding it to the form, since the form is its container control.
@@ -247,6 +243,8 @@ Me.Controls.Add(this.buttonAdv3)
 {% endtabs %}
 
 ![](Overview_images/GridBagLayout_img4.png)
+
+
 
 ## Configuring Child controls
 
