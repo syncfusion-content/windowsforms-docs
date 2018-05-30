@@ -13,7 +13,7 @@ LinearGauge are perfect for displaying values graphically along a linear scale. 
 
 The LinearGauge control includes the following elements: scale label, needle, gauge value, and background frame. All the elements can be optionally displayed in the Gauge control.
 
-# Key features
+## Key features
 
 * **Scales** - Provides support to customize appearance of the associated scales.
 
@@ -46,10 +46,18 @@ Syncfusion.Gauge.Windows
 The Syncfusion.Gauge.Windows contains the class that handles all UI operations and contains helper class of LinearGauge control.
 </td>
 </tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of LinearGauge and various editor controls.
+</td>
+</tr>
 </table>
 
 
-# Installing NuGet Packages
+## Installing NuGet Packages
 
 To use LinearGauge control in Windows Forms application via nuget, the following packages should be installed.
  

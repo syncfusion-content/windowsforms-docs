@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started with Syncfusion DockingManager control for Windows Forms
+description: Getting Started with Syncfusion DockingManager control for Windows Forms
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -29,7 +29,7 @@ The following list of assemblies should be added as reference to use the Docking
 Syncfusion.Grid.Base.dll
 </td>
 <td>
-Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl.
+Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl
 </td>
 </tr>
 <tr>
@@ -37,7 +37,7 @@ Syncfusion.Grid.Base contains classes that contains fundamentals and base classe
 Syncfusion.Grid.Windows.dll
 </td>
 <td>
-Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the DockingManager control.
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the DockingManager control
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Syncfusion.Grid.Windows contains classes that handles all UI operations, fundame
 Syncfusion.Shared.Base.dll
 </td>
 <td>
-Syncfusion.Shared.Base contains style related properties of DockingManager and various editor controls.
+Syncfusion.Shared.Base contains style related properties of DockingManager and various editor controls
 </td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@ Syncfusion.Shared.Base contains style related properties of DockingManager and v
 Syncfusion.Shared.Windows.dll
 </td>
 <td>
-Syncfusion.Shared.Windows contains style related properties of DockingManager and various editor controls.
+Syncfusion.Shared.Windows contains style related properties of DockingManager and various editor controls
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ Syncfusion.Shared.Windows contains style related properties of DockingManager an
 Syncfusion.Tools.Base.dll
 </td>
 <td>
-Syncfusion.Tools.Base contains base class which used for DockingManager control.
+Syncfusion.Tools.Base contains base class which used for DockingManager control
 </td>
 </tr>
 <tr>
@@ -69,29 +69,96 @@ Syncfusion.Tools.Base contains base class which used for DockingManager control.
 Syncfusion.Tools.Windows.dll
 </td>
 <td>
-Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of DockingManager control.
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of DockingManager control
 </td>
 </tr>
 </table>
 
-## Creating simple application with DockingManager
+## Installing NuGet Packages
+
+To create the Windows Forms application with DockingManager, the following nuget packages should be installed.
+
+<table>
+<tr>
+<td>{{'**S.no**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Tools.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Tools.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Tools.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Tools.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td> Syncfusion.Tools.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td> Syncfusion.Tools.Windows46
+</td>
+</tr>
+</table>
+
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
+# Creating simple application with DockingManager
 
 You can create the Windows Forms application with DockingManager control as follows:
 
-1. [Creating the project](#creating-the-project )
+1. [Creating the project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Add Dock child window ](#add-dock-child-window )
-5. [Add Label for Dock child window](#add-label-for-dock-child-window)
-6. [Apply DockStates for Dock child window](#apply-dockstates-for-dock-child-window)
-7. [Apply Docking style for Dock child window](#apply-docking-style-for-dock-child-window )
-8. [Apply serialization for Dock child window ](#apply-serialization-for-dock-child-window )
+4. [Add dock child window](#add-dock-child-window)
+5. [Change Dock State of child](#change-dock-state-of-child)
+6. [Change Dock Side](#change-dock-side)
+7. [Make MDI child](#make-mdi-child)
+8. [Serialize Dock windows](#serialize-dock-windows)
 
-### Creating simple project
+### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to dock panels as like Visual Studio using DockingManager.
 
-### Adding control via designer
+## Adding control via designer
 
 The DockingManager control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -104,7 +171,7 @@ The DockingManager control can be added to the application by dragging it from t
 
    ![](GettingStarted_images/gettingstarted.png)
 
-### Adding control manually in code
+## Adding control manually in code
 
 To add control manually in C#, follow the given steps:
 
@@ -116,7 +183,7 @@ To add control manually in C#, follow the given steps:
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
-2. Create `DockingManager` control instance and add it to the component list.
+2. Create [DockingManager](https://help.syncfusion.com/cr/cref_files/wpf/tools/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager.html) control instance and add it to the component list.
 
 {% tabs %}
 
@@ -124,13 +191,13 @@ To add control manually in C#, follow the given steps:
 
 // Create the DockingManager instance and add it the component list. 
 
-private Syncfusion.Windows.Forms.Tools.DockingManager dockingManager; 
+private Syncfusion.Windows.Forms.Tools.DockingManager dockingManager1; 
 
 this.components = new System.ComponentModel.Container();
 
-this.dockingManager = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components); 
+this.dockingManager1 = new Syncfusion.Windows.Forms.Tools.DockingManager(this.components); 
 
-this.dockingManager.HostControl = this;
+this.dockingManager1.HostControl = this;
 
 {% endhighlight %}
 
@@ -138,21 +205,21 @@ this.dockingManager.HostControl = this;
 
 'Create the DockingManager instance and add it the component list. 
 
-Private dockingManager As Syncfusion.Windows.Forms.Tools.DockingManager
+Private dockingManager1 As Syncfusion.Windows.Forms.Tools.DockingManager
 
 Me.components = New System.ComponentModel.Container()
 
-Me.dockingManager = New Syncfusion.Windows.Forms.Tools.DockingManager(Me.components) 
+Me.dockingManager1 = New Syncfusion.Windows.Forms.Tools.DockingManager(Me.components) 
 
-Me.dockingManager.HostControl = Me
+Me.dockingManager1.HostControl = Me
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Add Dock child window
+## Add dock child window
 
-Docking can be enabled to any controls by invoke `EnableDocking` with corresponding DockingManager. Here five Panels are added to the form and transformed into a docking window.
+Docking can be enabled to any controls by invoke [SetEnableDocking](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetEnableDocking.html) with corresponding DockingManager. Here four panels are added to the form and transformed into a docking window.
 
 {% tabs %}
 
@@ -166,8 +233,6 @@ private System.Windows.Forms.Panel panel3;
 		
 private System.Windows.Forms.Panel panel4;
 		
-private System.Windows.Forms.Panel panel5;
-		
 this.panel1 = new System.Windows.Forms.Panel();
 		
 this.panel2 = new System.Windows.Forms.Panel();
@@ -175,20 +240,16 @@ this.panel2 = new System.Windows.Forms.Panel();
 this.panel3 = new System.Windows.Forms.Panel();
 		
 this.panel4 = new System.Windows.Forms.Panel();
-		
-this.panel5 = new System.Windows.Forms.Panel();
 
 //Enables the docking for the panels
 
-this.dockingManager.SetEnableDocking(panel1, true);
+this.dockingManager1.SetEnableDocking(panel1, true);
 
-this.dockingManager.SetEnableDocking(panel2, true);
+this.dockingManager1.SetEnableDocking(panel2, true);
 
-this.dockingManager.SetEnableDocking(panel3, true);
+this.dockingManager1.SetEnableDocking(panel3, true);
 
-this.dockingManager.SetEnableDocking(panel4, true);
-
-this.dockingManager.SetEnableDocking(panel5, true);
+this.dockingManager1.SetEnableDocking(panel4, true);
 
 {% endhighlight %}
 
@@ -203,8 +264,6 @@ Private panel3 As System.Windows.Forms.Panel
 
 Private panel4 As System.Windows.Forms.Panel
 
-Private panel5 As System.Windows.Forms.Panel
-
 Me.panel1 = New System.Windows.Forms.Panel()
 
 Me.panel2 = New System.Windows.Forms.Panel()
@@ -213,19 +272,15 @@ Me.panel3 = New System.Windows.Forms.Panel()
 
 Me.panel4 = New System.Windows.Forms.Panel()
 
-Me.panel5 = New System.Windows.Forms.Panel()
-
 'Enables the docking for the panels
 
-Me.dockingManager.SetEnableDocking(panel1, True)
+Me.dockingManager1.SetEnableDocking(panel1, True)
 
-Me.dockingManager.SetEnableDocking(panel2, True)
+Me.dockingManager1.SetEnableDocking(panel2, True)
 
-Me.dockingManager.SetEnableDocking(panel3, True)
+Me.dockingManager1.SetEnableDocking(panel3, True)
 
-Me.dockingManager.SetEnableDocking(panel4, True)
-
-Me.dockingManager.SetEnableDocking(panel5, True)
+Me.dockingManager1.SetEnableDocking(panel4, True)
 
 {% endhighlight %}
 
@@ -233,29 +288,30 @@ Me.dockingManager.SetEnableDocking(panel5, True)
 
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
-**Identify whether the panel is docking or not**
+### Identify whether the panel is docking or not
 
-DockingManger provides with an attached method `GetEnableDocking` which helps to determine whether the child window is docking or not.
+DockingManger provides with an attached function [GetEnableDocking](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetEnableDocking.html) which helps to determine whether the child window is docking or not. 
 
 {% tabs %}
 
 {% highlight C# %}
 
-Console.Write("DockWindow Header:" + this.dockingManager.GetEnableDocking(panel1));
+Console.Write("DockWindow Header:" + this.dockingManager1.GetEnableDocking(panel1));
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Console.Write("DockWindow Header:" + Me.dockingManager.GetEnableDocking(panel1))
+Console.Write("DockWindow Header:" + Me.dockingManager1.GetEnableDocking(panel1))
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Add label for Dock child window  
+### Change header of child window
 
-DockingManger provides with an attached method `SetDockLabel` which helps to set the label for a child window.
+DockingManger provides with an attached function [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) which helps to set the label for a child window. 
+
 
 {% tabs %}
 
@@ -263,16 +319,13 @@ DockingManger provides with an attached method `SetDockLabel` which helps to set
 
 // To set the label for the docked controls
 
-this.dockingManager.SetDockLabel(panel1, "Solution Explorer");
+this.dockingManager1.SetDockLabel(panel1, "Solution Explorer");
 
-this.dockingManager.SetDockLabel(panel2, "Toolbox");
+this.dockingManager1.SetDockLabel(panel2, "Toolbox");
 
-this.dockingManager.SetDockLabel(panel3, "Properties");
+this.dockingManager1.SetDockLabel(panel3, "Properties");
 
-this.dockingManager.SetDockLabel(panel4, "Output");
-
-this.dockingManager.SetDockLabel(panel5, "Start Page");
-
+this.dockingManager1.SetDockLabel(panel4, "Output");
 
 {% endhighlight %}
 
@@ -281,25 +334,23 @@ this.dockingManager.SetDockLabel(panel5, "Start Page");
 
 ' To set the label for the docked controls
 
-Me.dockingManager.SetDockLabel(panel1, "Solution Explorer");
+Me.dockingManager1.SetDockLabel(panel1, "Solution Explorer");
 
-Me.dockingManager.SetDockLabel(panel2, "Toolbox");
+Me.dockingManager1.SetDockLabel(panel2, "Toolbox");
 
-Me.dockingManager.SetDockLabel(panel3, "Properties");
+Me.dockingManager1.SetDockLabel(panel3, "Properties");
 
-Me.dockingManager.SetDockLabel(panel4, "Output");
-
-Me.dockingManager.SetDockLabel(panel5, "Start Page");
+Me.dockingManager1.SetDockLabel(panel4, "Output");
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img2.jpeg)
+![](GettingStarted_images/DockLabel.png)
 
-**Get label of the dock panel**
+#### Get Label of the dock panel
 
- DockingManger provides with an attached method `GetDockLabel` which helps to get the label for a child window.
+ DockingManger provides with an attached function [GetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockLabel.html) which helps to get the label for a child window. 
 
 {% tabs %}
 
@@ -307,7 +358,7 @@ Me.dockingManager.SetDockLabel(panel5, "Start Page");
 
 // Get the label for the docked control
 
-Console.Write("DockWindow Header:" + this.dockingManager.GetDockLabel(panel1));
+Console.Write("DockWindow Header:" + this.dockingManager1.GetDockLabel(panel1));
 
 {% endhighlight %}
 
@@ -315,38 +366,42 @@ Console.Write("DockWindow Header:" + this.dockingManager.GetDockLabel(panel1));
 
 'Get the label for the docked control
 
-Console.Write("DockWindow Header:" + Me.dockingManager.GetDockLabel(panel1))
+Console.Write("DockWindow Header:" + Me.dockingManager1.GetDockLabel(panel1))
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Apply DockStates for Dock child window
+## Change Dock State of child
 
 DockingManager provides an option to dock or float the controls.
+
+To dock the child window use below code snippet.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//To dock the panel1 on left side of the form.
+//To dock the panel1 on top side of the form.
 
- this.dockingManager.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+this.dockingManager1.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Top, 100);
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-'To dock the panel1 on left side of the form.
+'To dock the panel1 on top side of the form.
 
-Me.dockingManager.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100)
+Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Top, 100)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-To Float the control, use below code snippet.
+![](GettingStarted_images/GettingStarted_img5.jpg)
+
+To Float the control use below code snippet.
 
 {% tabs %}
 
@@ -356,7 +411,7 @@ To Float the control, use below code snippet.
 
 Rectangle rectangle = this.Bounds;
 
-this.dockingManager.FloatControl(this.panel3, new Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200));
+this.dockingManager1.FloatControl(this.panel3, new Rectangle(rectangle.Right - 300, rectangle.Bottom - 300, 200, 200));
 
 {% endhighlight %}
 
@@ -367,7 +422,7 @@ this.dockingManager.FloatControl(this.panel3, new Rectangle(rectangle.Right+25,r
 
 Dim rectangle As Rectangle = Me.Bounds 
 
-Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200))
+Me.dockingManager1.FloatControl(Me.panel3, New Rectangle(rectangle.Right - 300, rectangle.Bottom - 300, 200, 200))
 
 {% endhighlight %}
 
@@ -375,12 +430,11 @@ Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rec
 
 ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
+## Change Dock Side
 
-### Apply docking style for Dock child window
+DockingManager provides an attached function [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) that helps to dock a panel at the required side using [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
 
-DockingManager provides an attached method `DockControl` that helps to dock a panel at the required side using `DockingStyle` argument.
-
-Set the DockingStyle value as Right for “Solution Explorer” panel to dock it on the right side.
+Set the `DockingStyle` value as Right for “Solution Explorer” panel to dock it on the right side.
 
 The DockingStyle’s Tabbed option is used to tab a panel with another panel. The tabbing windows need to be aware of the parent control’s name. Set “Output” window’s parent as “SolutionExplorer” to tab it on the “SolutionExplorer” window.
 
@@ -391,15 +445,13 @@ The DockingStyle’s Tabbed option is used to tab a panel with another panel. T
 
 // To set the DockingStyle for the docked controls
 
-this.dockingManager.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
+this.dockingManager1.DockControl(this.panel3, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Bottom, 100);
 
-this.dockingManager.DockControl(this.panel2, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+this.dockingManager1.DockControl(this.panel2, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 200);
 
-this.dockingManager.FloatControl(this.panel3, new Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200));
-
-this.dockingManager.DockControl(this.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 100);
-
-this.dockingManager.DockControl(this.panel5, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+this.dockingManager1.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 200);
+            
+this.dockingManager1.DockControl(this.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200);
 
 
 {% endhighlight %}
@@ -409,15 +461,13 @@ this.dockingManager.DockControl(this.panel5, this, Syncfusion.Windows.Forms.Tool
 
 'To set the DockingStyle for the docked controls
 
-Me.dockingManager.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
+Me.dockingManager1.DockControl(Me.panel3, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Bottom, 100)
 
-Me.dockingManager.DockControl(Me.panel2, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+Me.dockingManager1.DockControl(Me.panel2, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 200)
 
-Me.dockingManager.DockControl(Me.panel3, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
+Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 200)
 
-Me.dockingManager.DockControl(Me.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 100);
-
-Me.dockingManager.DockControl(Me.panel5, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 100);
+Me.dockingManager1.DockControl(Me.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200)
 
 {% endhighlight %}
 
@@ -425,10 +475,44 @@ Me.dockingManager.DockControl(Me.panel5, Me, Syncfusion.Windows.Forms.Tools.Dock
 
 ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
+## Make MDI child
 
-### Apply serialization for Dock child window 
+[SetAsMDIChild](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAsMDIChild.html) function helps to set the docking window to the MDIChild window in DockingManager. And also we can set the docked control as an MDI Child in an easy method, by using the `MDI Child` option in the context menu.
 
-The PersistState feature of the DockingManager helps to save the current layout of the DockingManager automatically to isolated storage while closing the form. The dock state can also be saved by calling the `SaveDockState` method.
+N> To enable MDI functionalities in DockingManager, `IsMdIContainer` property of its parent form should be `true`.
+
+![](GettingStarted_images/GettingStarted_img6.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+//To set as MDI Child window
+
+this.dockingManager1.SetAsMDIChild(panel1, true);
+
+this.dockingManager1.SetAsMDIChild(panel2, true);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+'To set as MDI Child window
+
+Me.dockingManager1.SetAsMDIChild(panel1, True)
+
+Me.dockingManager1.SetAsMDIChild(panel2, True)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](GettingStarted_images/GettingStarted_img7.png) 
+
+## Serialize Dock windows
+
+The PersistState feature of the DockingManager helps to save the current layout of the DockingManager automatically to isolated storage while closing the form. The dock state can also be saved by calling the [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) function.
 
 {% tabs %}
 
@@ -468,7 +552,7 @@ Me.dockingManager.SaveDockState(serializer, this.listBox1)
 {% endtabs %}
 
 
-The saved state can be reload by calling the `LoadDockState` method, whenever it is required to load the states.
+The saved state can be reloaded by calling the [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html) function, whenever it is required to load the states.
 
 {% tabs %}
 

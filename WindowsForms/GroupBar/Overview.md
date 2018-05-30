@@ -20,6 +20,8 @@ The GroupBar class implements a tab-type container control similar to the Window
 
 * **Header Customization**: Provides complete customization support to the header such as colors font and height of the header text of the GroupBarItems.
 
+* **Localization**: Provides localization support to customize GroupBar text into any desired language.
+
 * **Stacked GroupBar**: Provides options to display GroupBarItems in a Stack like fashion. Stacked GroupBar provides a Navigation Pane that can be viewed at the bottom of the Groupbar.
 
 * **Nested GroupBar**: A GroupBar Control can be added as a Child control to another GroupBar Control. In fact any .NET control can be hosted in a GroupBar for maximum flexibility. Thus the GroupBar control can be deployed as a Generic Control Container.
