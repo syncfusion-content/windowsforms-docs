@@ -88,6 +88,9 @@ SfDataGrid provides support for generating
 ### Automatically Generating Columns
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html). Default value is `true`. The columns will be automatically generated based on its column type from the underlying data source.
+
+It is also possible to generate columns for custom type properties in the data object by setting the [SfDataGrid.AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumnsForCustomType.html) property to `true`. The default value is `false`.
+
 <table>
 <tr>
 <td>
