@@ -15,8 +15,15 @@ Popularized in XP, this look-and-feel can be the exact theme look when this cont
 
 You can then add one or more XPTaskBar Items to the boxes using their Items property.
 
- ![](Overview_images/Overview_img90.jpeg)
+ ![](Overview_images/XPTaskBar_Img6.png)
 
 
+# Key Features
 
-   
+**Header Settings** - Provides options to customize the text, appearance, font and size of the XPTaskBarBox header.
+
+**VerticalLayout** - Provides options to customize the layout to be horizontal or vertical.
+
+**Padding** - Provides options to customize interior spacing, horizontal and vertical padding using integer values.
+
+**Visual Style** - Provides rich set of style to customize the look and feel of XPTaskBar.
