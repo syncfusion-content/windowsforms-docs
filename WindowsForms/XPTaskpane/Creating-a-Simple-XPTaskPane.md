@@ -152,7 +152,7 @@ You can create the Windows Forms application with XPTaskPane control as follows:
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the XPTaskPane with  functionalities.
+Create a new Windows Forms project in the Visual Studio to display the XPTaskPane with functionalities.
 
 ## Adding control via designer
 
