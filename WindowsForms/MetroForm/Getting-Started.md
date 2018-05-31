@@ -219,8 +219,8 @@ Me.CaptionLabels.Add(captionLabel1)
 
 ## Add Caption Images
 
-The `MetroForm` allows you to add caption images with design and appearance. Caption images can be added to the Metroform through the `CaptionImages`collection.
-Following code illustrates how to add the caption images to the Metroform:
+The `MetroForm` allows you to add caption images with design and appearance. Caption images can be added to the MetroForm through the `CaptionImages`collection.
+Following code illustrates how to add the caption images to the MetroForm:
 
 {% tabs %}
 
