@@ -15,10 +15,9 @@ The `Office2007Form` is an advanced standard Form that offers Microsoft Office20
 
 ## Key features
 
-* **Alignment** - Provides options to align the form's title to the left, right, or center by using the `CaptionAlign` property.
+* **Alignment** - Supports to specify Title text alignment.
 * **Color schemes** - Supports various office color schemes like blue, black, silver and much more.
-* **Button support** - Provides options to show / hide the Help button in Office2007Form through which the user can perform their required action.
-* **Customization** - Supports for customizing appearance of CaptionBar.
+* **Customization** - Supports for customizing appearance of Caption bar.
 * **Right-to-left** - Supports to align the control elements in right-to-left layout.
 
  

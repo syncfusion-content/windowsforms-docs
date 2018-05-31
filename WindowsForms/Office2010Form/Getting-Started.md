@@ -144,13 +144,29 @@ Imports Syncfusion.Windows.Forms
 
 {% highlight C# %}
 
-public partial class Office2010Form : Office2010Form 
+public partial class Form1 : Office2010Form 
+{
+	public Form1()
+    {
+
+		this.Text = "Office2010Form";
+		
+	}
+}
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Partial Public Class Office2010Form Inherits Office2010Form
+Partial Public Class Form1 Inherits Office2010Form
+
+Public Sub New()
+
+Me.Text = "Office2010Form"
+
+End Sub
+
+End Class
  
 {% endhighlight %}
 

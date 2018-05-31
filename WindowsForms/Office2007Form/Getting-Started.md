@@ -144,13 +144,29 @@ Imports Syncfusion.Windows.Forms
 
 {% highlight C# %}
 
-public partial class Office2007Form : Office2007Form 
+public partial class Form1 : Office2007Form 
+{
+	public Form1()
+    {
+
+		this.Text = "Office2007Form";
+		
+	}
+}
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Partial Public Class Office2007Form Inherits Office2007Form
+Partial Public Class Form1 Inherits Office2007Form
+
+Public Sub New()
+
+Me.Text = "Office2007Form"
+
+End Sub
+
+End Class
  
 {% endhighlight %}
 
