@@ -13,11 +13,11 @@ MetroForm is an advanced standard Form that helps to create fully customizable 
 
 ![](Overview_images/Overview.png)
 
-## Features
+## Key Features
 
-* Supports various color schemes customization.
+* Provides Support to various color schemes customization.
 * Help button support.
-* Complete support for Caption Bar and Caption Image customization.
-* Right to left support.
+* MetroForm provides complete support for Caption Bar and Caption Image customization.
+* MetroForm provides Right to left support.
 
  
