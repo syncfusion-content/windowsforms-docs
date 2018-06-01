@@ -168,7 +168,7 @@ RadialMenu control can be added to the application by dragging it from the toolb
 
 **Adding Menu Items**
 
-Menu items can be added into RadialMenu using `Items` collection in Samrt Tags of RadialMenu in design view.
+Menu items can be added into RadialMenu using `Items` collection in Smart Tags of RadialMenu in design view.
 
 ![](Getting-Started_images/RadialMenu-img3.png) 
 
