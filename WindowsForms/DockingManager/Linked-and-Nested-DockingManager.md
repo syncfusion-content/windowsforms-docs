@@ -133,6 +133,9 @@ Me.dockingManager1.RemoveFromTargetManagersList(ChildWindow.dockingManager1)
 
 ![](Images/LinkedManagerandNestedDocking_img1.jpeg)
 
+N> A sample that demonstrates LinkedManager behaviour is available in the following sample installation path:
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\LinkedManager
+
 ## Nested DockingManager
 
 DockingManager provides the NestedDockingManager support, which allows to add DockingManager as a child window to another DockingManager.
@@ -141,3 +144,5 @@ In Nested DockingManager, the whole DockingManager can be dragged and dropped in
 
 ![](Images/NestedDocking.png)
 
+N> A sample that demonstrates Nested Docking behaviour is available in the following sample installation path:
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\NestedDocking
