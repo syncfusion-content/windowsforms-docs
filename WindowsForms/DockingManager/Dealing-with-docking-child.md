@@ -139,7 +139,45 @@ Me.dockingManager1.SetControlMinimumSize(panel1,new Size(200, 400))
 
 ## Restrict to dock on specific sides
 
-User can restrict the specific [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it moved to the client area in DockingManager. It can be achieved by [SetOuterDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetOuterDockAbility.html) function. Here we have restricted the right, left, tabbed and fill dock ability.  
+User can restrict the specific [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it moved to the client area in DockingManager.
+
+### Inner dock ability
+
+[SetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockAbility.html) function of DockingManager helps to gets or sets the DockAbility of docked control. [GetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockAbility.html) of DockingManager provides the Dockability information of docked panel.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Getting the Dock Ability
+
+this.dockingManager1.GetDockAbility(this.panel1);
+
+//Setting the Dock Ability
+
+this.dockingManager1.SetDockAbility(this.panel1, "Top");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+//Getting the Dock Ability
+
+Me.dockingManager1.GetDockAbility(Me.panel1)
+
+//Setting the Dock Ability
+
+Me.dockingManager1.SetDockAbility(Me.panel1, "Top")
+
+{% endhighlight %}
+
+{% endtabs %}  
+
+![](Dock_Window_images/Dock_Window_img6.png)
+
+### Outer dock ability
+ 
+It can be achieved by [SetOuterDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetOuterDockAbility.html) function. Here we have restricted the right, left, tabbed and fill dock ability.  
 
 {% tabs %}
 

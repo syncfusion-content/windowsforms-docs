@@ -277,7 +277,7 @@ me.dockingManager1.ShowCustomButtonsInFloating = True
 
 {% endtabs %}
 
-![](Dealing-with-Windows_images/CaptionLabel9.png) 
+![](Float_Window_images/CustomCaptionButton.png) 
 
 N> This feature is not applicable for VS2005 (default) visual style.
 
