@@ -138,7 +138,7 @@ Me.dockingManager1.SetAutoHideOnLoad(this.panel3, True);
 
 {% endtabs %}
 
-### Scroll auto hidden tabs
+## Scroll auto hidden tabs
 
 When the AutoHidden Tabs overflow onto the side panel, ScrollButton is added to the side panel. In other words, scroll bar will be visible in AutoHide tab panel, only when child bounds exceeded to auto hide tab panel bounds. By using the scrollbar, we can select the tabs in auto hide panel by navigating the scroll buttons.
 

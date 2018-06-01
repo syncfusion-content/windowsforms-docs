@@ -1086,7 +1086,7 @@ Me.dockingManager1.ShowMetroCaptionDottedLines = False
 
 While dragging and dropping a docked control, DockingManager guides you through the process, using [DragProviderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragProviderStyle.html) property. On setting this property, you will be able to see arrows on four sides of the form, when a control is dragged. These arrows will guide you where to dock the window. Keeping the mouse point on a particular arrow will display a shadow like appearance based on the side of docking.
 
-There are six docking provider Styles. They are, 
+There are various docking provider styles. Some of the available docking provider styles are as follows:
 
 * Standard (Default value - no arrows appears for this option), 
 * VS2005
@@ -1094,6 +1094,9 @@ There are six docking provider Styles. They are,
 * VS2010 
 * VS2012
 * Whidbey 
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016Black
  
 {% tabs %}
 

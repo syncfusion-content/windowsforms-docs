@@ -9,7 +9,7 @@ documentation: ug
 
 ## Tabbed to another window programmatically
 
-DockingManager provides an attached function [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) that helps to dock a panel at the required side using [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
+DockingManager provides an function [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) that helps to dock a panel at the required side using [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
 
 DockingStyle’s Tabbed option is used to tab a panel with another panel. The tabbing windows need to be aware of the parent control’s name. Set `Output` window parent as `SolutionExplorer` to tab it on the `SolutionExplorer` window.
 
@@ -21,6 +21,10 @@ DockingStyle’s Tabbed option is used to tab a panel with another panel. The t
             
 this.dockingManager1.DockControl(this.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200);
 
+this.dockingManager1.DockControl(this.panel3, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200);
+
+this.dockingManager1.DockControl(this.panel2, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200);
+
 {% endhighlight %}
 
 
@@ -30,12 +34,15 @@ this.dockingManager1.DockControl(this.panel4, panel1, Syncfusion.Windows.Forms.T
 
 Me.dockingManager1.DockControl(Me.panel4, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200)
 
+Me.dockingManager1.DockControl(Me.panel3, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200)
+
+Me.dockingManager1.DockControl(Me.panel2, panel1, Syncfusion.Windows.Forms.Tools.DockingStyle.Tabbed, 200)
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Tabbed_Window_images/Tabbed_Window_img6.png)
-
 
 ## Tabbed to another window by user interaction
 
@@ -44,17 +51,17 @@ Child window can be arranged as Tabbed windows by using either of the following 
 * At Design Time
 * At Run Time
 
-## Tabbed at run time
+### Tabbed at run time
 
 DockingManager helps you in dragging and dropping the docked controls at run time, using different DragProviderStyle. This style displays a prediction Bands, which lets you decide whether you can drop the control in that location.
 
 ![](Tabbed_Window_images/Tabbed_Window_img1.png)
 
-## Tabbed at design time
+### Tabbed at design time
 
 The docked controls can be tabbed in the designer, by just dragging and dropping into one another. DockingManager helps you in doing this using different `DragProviderStyle`.
 
-![](Images/TabbedWindow_img1.jpeg)
+![](Tabbed_Window_images/Tabbed_Window_img8.png)
 
 ## Tab alignments
 

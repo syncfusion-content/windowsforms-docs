@@ -144,7 +144,7 @@ MessageBox.Show("Dock style :" + Me.dockingManager1.GetDockStyle(Me.panel1))
 
 ## Change dock window header
 
-DockingManger provides with an attached function [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) which helps to set the label for a child window. 
+The [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) function of DockingManager helps to set the label for a child window. 
 
 {% tabs %}
 
@@ -389,7 +389,7 @@ Console.Write("DockWindow Visibility" + Me.dockingManager1.GetDockVisibility(Me.
 
 The Custom Caption Collection Editor can be accessed by using the DockingManager. [CaptionButtons](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CaptionButtons.html) property allows you to customize the default buttons and to add new custom caption buttons. 
 
-![](Dealing-with-Windows_images/CaptionLabel7.png) 
+![](Dock_Window_images/CustomCaptionButton1.png)
 
 In the `CaptionButtons` Collection Editor, we can add the new caption button by clicking "Add" button. 
 
@@ -401,36 +401,58 @@ This can also be done programmatically by using the following code examples.
 
 {% highlight C# %}
 
+ this.dockingManager1.ImageList = imageList;
+
+
 Syncfusion.Windows.Forms.Tools.CaptionButton captionButton = new Syncfusion.Windows.Forms.Tools.CaptionButton();
 
-toolTipInfo = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
+Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
 
-captionButton.ImageIndex = 4;
+captionButton.ImageIndex = 3;
 
 captionButton.Name = "Custom Button";
 
 captionButton.Type = Syncfusion.Windows.Forms.Tools.CaptionButtonType.Custom;
 
-captionButton.SuperToolTipInfo = toolTipInfo
+captionButton.SuperToolTipInfo = toolTipInfo;
 
 captionButton.TransparentImageColor = System.Drawing.Color.Transparent;
 
 this.dockingManager1.CaptionButtons.Add(captionButton);
+
+
+Syncfusion.Windows.Forms.Tools.CaptionButton captionButton1 = new Syncfusion.Windows.Forms.Tools.CaptionButton();
+
+Syncfusion.Windows.Forms.Tools.ToolTipInfo toolTipInfo1 = new Syncfusion.Windows.Forms.Tools.ToolTipInfo();
+
+captionButton1.ImageIndex = 0;
+
+captionButton1.Name = "CloseButton";
+
+captionButton1.Type = Syncfusion.Windows.Forms.Tools.CaptionButtonType.Close;
+
+captionButton1.SuperToolTipInfo = toolTipInfo1;
+
+captionButton1.TransparentImageColor = System.Drawing.Color.Transparent;
+
+this.dockingManager1.CaptionButtons.Add(captionButton1);
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Dim captionButton5 As Syncfusion.Windows.Forms.Tools.CaptionButton = New Syncfusion.Windows.Forms.Tools.CaptionButton()
+Me.dockingManager1.ImageList = imageList
 
-toolTipInfo = new Syncfusion.Windows.Forms.Tools.ToolTipInfo()
+Dim captionButton As Syncfusion.Windows.Forms.Tools.CaptionButton = New Syncfusion.Windows.Forms.Tools.CaptionButton()
 
-captionButton.ImageIndex = 4 
+Dim toolTipInfo As Syncfusion.Windows.Forms.Tools.ToolTipInfo = new Syncfusion.Windows.Forms.Tools.ToolTipInfo()
+
+captionButton.ImageIndex = 3 
 
 captionButton.Name = "Custom Button" 
 
-captionButton.Type = Syncfusion.Windows.Forms.Tools.CaptionButtonType.Custom;
+captionButton.Type = Syncfusion.Windows.Forms.Tools.CaptionButtonType.Custom
 
 captionButton.SuperToolTipInfo = toolTipInfo
 
@@ -438,16 +460,35 @@ captionButton.TransparentImageColor = System.Drawing.Color.Transparent
 
 Me.dockingManager1.CaptionButtons.Add(captionButton)
 
+
+Dim captionButton1 As Syncfusion.Windows.Forms.Tools.CaptionButton = New Syncfusion.Windows.Forms.Tools.CaptionButton()
+
+Dim toolTipInfo1 As Syncfusion.Windows.Forms.Tools.ToolTipInfo = new Syncfusion.Windows.Forms.Tools.ToolTipInfo()
+
+captionButton1.ImageIndex = 0
+
+captionButton1.Name = "CloseButton" 
+
+captionButton1.Type = Syncfusion.Windows.Forms.Tools.CaptionButtonType.Close
+
+captionButton1.SuperToolTipInfo = toolTipInfo1
+
+captionButton1.TransparentImageColor = System.Drawing.Color.Transparent 
+
+Me.dockingManager1.CaptionButtons.Add(captionButton1)
+
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Dock_Window_images/CustomCaptionButton.png)
 
 N> Refer to the following sample link that demonstrates how to add the Custom Caption Buttons:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\Custom Captions\CS
 
 ### Customize caption buttons
 
-The DockingManager allows to customize the above default buttons. Active and Inactive window caption button `ForeColor` can be customized by using the [ActiveCaptionButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveCaptionButtonForeColor.html) and [InActiveCaptionButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InActiveCaptionButtonForeColor.html) properties of DockingManager.
+The DockingManager allows to customize the default caption buttons. Active and Inactive window caption button `ForeColor` can be customized by using the [ActiveCaptionButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveCaptionButtonForeColor.html) and [InActiveCaptionButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InActiveCaptionButtonForeColor.html) properties of DockingManager.
 
 {% tabs %}
 
@@ -474,7 +515,7 @@ Me.dockingManager1.InActiveCaptionButtonForeColor = System.Drawing.Color.Green
 
 ## Change header visibility of dock window
 
-DockingManager allows to change the Visibility of Caption for Dock panels. [ShowCaption](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowCaption.html) is an attached property which is used to show or hide the caption of the DockPanel. Its default value is `true`, to hide the caption turn its value to `false`.
+DockingManager allows to change the Visibility of Caption for Dock panels. [ShowCaption](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowCaption.html) property of DockingManager helps to show or hide the caption of the DockPanel. Its default value is `true`, to hide the caption turn its value to `false`.
 
 {% tabs %}
 
@@ -498,6 +539,31 @@ Me.dockingManager1.ShowCaption = False
 {% endtabs %}
 
 ![](Dock_Window_images/Dock_Window_img9.png)
+
+## Maximize and restore
+
+DockingManager provides support to maximize and restore the dock windows by using the Maximize button, so that a clear view of the contents can be made visible. It can be enabled by setting the `MaximizeButtonEnabled` property to `true`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ this.dockingManager1.MaximizeButtonEnabled = true;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.dockingManager1.MaximizeButtonEnabled = True
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dock_Window_images/RestoreButtonImage.png)
+
+N> The Maximize button will be visible only if any other control is docked to the bottom of the former control.
 
 ## Occupy whole window
 
