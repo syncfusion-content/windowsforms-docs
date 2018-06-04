@@ -278,33 +278,33 @@ RaisePropertyChanged("OrderDate");
 
 /// </summary>
 
-/// <param name="ord">The ord.</param>
+/// <param name="orderID">The orderID.</param>
 
 /// <param name="prod">The prod.</param>
 
 /// <param name="unit">The unit.</param>
 
-/// <param name="quan">The quan.</param>
+/// <param name="quantity">The quantity.</param>
 
 /// <param name="disc">The disc.</param>
 
-public OrderDetails(int ord, int prod, decimal unit, Int16 quan, double disc, string cusid, DateTime ordDt)
+public OrderDetails(int orderID, int prod, decimal unit, Int16 quantity, double disc, string cusId, DateTime orderDt)
 
 {
 
 this._Discount = disc;
 
-this._OrderID = ord;
+this._OrderID = orderID;
 
 this._ProductID = prod;
 
-this._Quantity = quan;
+this._Quantity = quantity;
 
 this._UnitPrice = unit;
 
-this._customerID = cusid;
+this._customerID = cusId;
 
-this._orderDate = ordDt;
+this._orderDate = orderDt;
 
 }
 
@@ -881,31 +881,31 @@ End Property
 
 ''' </summary>
 
-''' <param name="ord">The ord.</param>
+''' <param name="orderID">The orderID.</param>
 
-''' <param name="prod">The prod.</param>
+''' <param name="product">The product.</param>
 
 ''' <param name="unit">The unit.</param>
 
-''' <param name="quan">The quan.</param>
+''' <param name="quantity">The quantity.</param>
 
 ''' <param name="disc">The disc.</param>
 
-Public Sub New(ByVal ord As Integer, ByVal prod As Integer, ByVal unit As Decimal, ByVal quan As Int16, ByVal disc As Double, ByVal cusid As String, ByVal ordDt As DateTime)
+Public Sub New(ByVal orderID As Integer, ByVal product As Integer, ByVal unit As Decimal, ByVal quantity As Int16, ByVal disc As Double, ByVal cusId As String, ByVal orderDt As DateTime)
 
 Me._Discount = disc
 
-Me._OrderID = ord
+Me._OrderID = orderID
 
 Me._ProductID = prod
 
-Me._Quantity = quan
+Me._Quantity = quantity
 
 Me._UnitPrice = unit
 
-Me._customerID = cusid
+Me._customerID = cusId
 
-Me._orderDate = ordDt
+Me._orderDate = orderDt
 
 End Sub
 
@@ -1312,7 +1312,7 @@ return this.ShipCountry.ToList();
 
 /// <summary>
 
-/// Orderses the add.
+/// Orders the add.
 
 /// </summary>
 
@@ -1320,105 +1320,105 @@ private void OrdersAdd(int count)
 
 {
 
-ord.Add(new OrderDetails(10000, 12, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10000, 12, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10000, 14, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10000, 14, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10000, 18, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10000, 18, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10000, 34, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10000, 34, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10000, 14, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10000, 14, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10000, 18, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10000, 18, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10000, 34, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10000, 34, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10001, 23, 45, 76, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10001, 23, 45, 76, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10001, 45, 67, 23, 5, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10001, 45, 67, 23, 5, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10001, 45, 42, 16, 3, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10001, 45, 42, 16, 3, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10001, 23, 95, 15, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10001, 23, 95, 15, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10002, 7, 70, 6, 4, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10002, 7, 70, 6, 4, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10002, 2, 30, 5, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10002, 2, 30, 5, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10003, 23, 73, 9, 3, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10003, 23, 73, 9, 3, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10003, 8, 11, 8, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10003, 8, 11, 8, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10003, 1, 150, 1, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10003, 1, 150, 1, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10009, 4, 35, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10009, 4, 35, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10009, 2, 31, 7, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10009, 2, 31, 7, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10010, 7, 23, 3, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10010, 7, 23, 3, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10010, 5, 65, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10010, 5, 65, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10010, 3, 15, 5, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10010, 3, 15, 5, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10010, 2, 31, 1, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10010, 2, 31, 1, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10011, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10011, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10011, 3, 45, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10011, 3, 45, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10011, 2, 41, 7, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10011, 2, 41, 7, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10013, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10013, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10013, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10013, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10021, 54, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10021, 54, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10021, 63, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10021, 63, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10021, 27, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10021, 27, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10022, 59, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10022, 59, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10022, 60, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10022, 60, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10022, 47, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10022, 47, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10032, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10032, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10032, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10032, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10034, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10034, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10034, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10034, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10034, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10034, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10042, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10042, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10042, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10042, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10045, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10045, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10045, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10045, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10045, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10045, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10045, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10045, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10056, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10056, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10056, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10056, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10056, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10056, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10067, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10067, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10067, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10067, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
-ord.Add(new OrderDetails(10067, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+orders.Add(new OrderDetails(10067, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
 
 }
 
@@ -1426,7 +1426,7 @@ private List<DateTime> OrderedDates;
 
 Random r = new Random();
 
-List<OrderDetails> ord = new List<OrderDetails>();
+List<OrderDetails> orders = new List<OrderDetails>();
 
 /// <summary>
 
@@ -1442,9 +1442,9 @@ private OrderInfo GetOrder(int i)
 
 {
 
-var shipcountry = ShipCountry[r.Next(5)];
+var shipCountry = ShipCountry[r.Next(5)];
 
-var shipcitycoll = ShipCity[shipcountry];
+var shipCityColl = ShipCity[shipCountry];
 
 return new OrderInfo()
 
@@ -1458,15 +1458,15 @@ EmployeeID = r.Next(1, 10),
 
 Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2),
 
-ShipCountry = shipcountry,
+ShipCountry = shipCountry,
 
 ShippingDate = this.OrderedDates[i - 10000],
 
 IsClosed = i % 2 == 0 ? true : false,
 
-ShipCity = shipcitycoll[r.Next(shipcitycoll.Length - 1)],
+ShipCity = shipCityColl[r.Next(shipCityColl.Length - 1)],
 
-OrderDetails = getorder(i)
+OrderDetails = getOrder(i)
 
 };
 
@@ -1474,7 +1474,7 @@ OrderDetails = getorder(i)
 
 /// <summary>
 
-/// Getors the specified i.
+/// Gets the specified i.
 
 /// </summary>
 
@@ -1482,13 +1482,13 @@ OrderDetails = getorder(i)
 
 /// <returns></returns>
 
-public List<OrderDetails> getorder(int i)
+public List<OrderDetails> getOrder(int i)
 
 {
 
 List<OrderDetails> order = new List<OrderDetails>();
 
-foreach (var or in ord)
+foreach (var or in orders)
 
 if (or.OrderID == i)
 
@@ -1809,111 +1809,111 @@ End Property
 
 ''' <summary>
 
-''' Orderses the add.
+''' Orders the add.
 
 ''' </summary>
 
 Private Sub OrdersAdd(ByVal count As Integer)
 
-ord.Add(New OrderDetails(10000, 12, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10000, 12, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10000, 14, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10000, 14, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10000, 18, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10000, 18, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10000, 34, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10000, 34, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10000, 14, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10000, 14, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10000, 18, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10000, 18, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10000, 34, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10000, 34, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10001, 23, 45, 76, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10001, 23, 45, 76, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10001, 45, 67, 23, 5, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10001, 45, 67, 23, 5, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10001, 45, 42, 16, 3, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10001, 45, 42, 16, 3, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10001, 23, 95, 15, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10001, 23, 95, 15, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10002, 7, 70, 6, 4, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10002, 7, 70, 6, 4, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10002, 2, 30, 5, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10002, 2, 30, 5, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10003, 23, 73, 9, 3, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10003, 23, 73, 9, 3, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10003, 8, 11, 8, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10003, 8, 11, 8, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10003, 1, 150, 1, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10003, 1, 150, 1, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10009, 4, 35, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10009, 4, 35, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10009, 2, 31, 7, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10009, 2, 31, 7, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10010, 7, 23, 3, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10010, 7, 23, 3, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10010, 5, 65, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10010, 5, 65, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10010, 3, 15, 5, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10010, 3, 15, 5, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10010, 2, 31, 1, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10010, 2, 31, 1, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10011, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10011, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10011, 3, 45, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10011, 3, 45, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10011, 2, 41, 7, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10011, 2, 41, 7, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10013, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10013, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10013, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10013, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10021, 54, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10021, 54, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10021, 63, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10021, 63, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10021, 27, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10021, 27, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10022, 59, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10022, 59, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10022, 60, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10022, 60, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10022, 47, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10022, 47, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10032, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10032, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10032, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10032, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10034, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10034, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10034, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10034, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10034, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10034, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10042, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10042, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10042, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10042, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10045, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10045, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10045, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10045, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10045, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10045, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10045, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10045, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10056, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10056, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10056, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10056, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10056, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10056, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10067, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10067, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10067, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10067, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
-ord.Add(New OrderDetails(10067, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+orders.Add(New OrderDetails(10067, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
 
 End Sub
 
@@ -1921,7 +1921,7 @@ Private OrderedDates As List(Of DateTime)
 
 Private r As New Random()
 
-Private ord As New List(Of OrderDetails)()
+Private orders As New List(Of OrderDetails)()
 
 ''' <summary>
 
@@ -1935,11 +1935,11 @@ Private ord As New List(Of OrderDetails)()
 
 Private Function GetOrder_Renamed(ByVal i As Integer) As OrderInfo
 
-Dim shipcountry = Me.ShipCountry(r.Next(5))
+Dim shipCountry = Me.ShipCountry(r.Next(5))
 
-Dim shipcitycoll = ShipCity(shipcountry)
+Dim shipCityColl = ShipCity(shipCountry)
 
-Return New OrderInfo() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(1, 10), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipcountry, .ShippingDate = Me.OrderedDates(i - 10000), .IsClosed = If(i Mod 2 = 0, True, False), .ShipCity = shipcitycoll(r.Next(shipcitycoll.Length - 1)), .OrderDetails = getorder(i)}
+Return New OrderInfo() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(1, 10), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipCountry, .ShippingDate = Me.OrderedDates(i - 10000), .IsClosed = If(i Mod 2 = 0, True, False), .ShipCity = shipCityColl(r.Next(shipCityColl.Length - 1)), .OrderDetails = getorder(i)}
 
 End Function
 
@@ -1953,7 +1953,7 @@ End Function
 
 ''' <returns></returns>
 
-Public Function getorder(ByVal i As Integer) As List(Of OrderDetails)
+Public Function getOrder(ByVal i As Integer) As List(Of OrderDetails)
 
 Dim order As New List(Of OrderDetails)()
 
