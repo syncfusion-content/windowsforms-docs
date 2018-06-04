@@ -9,11 +9,11 @@ documentation: ug
 
 # File Operation
 
-Supports all file operations like create new, open or save files.
+Supports all file operations like create new, open, or save.
 
 ## Load file
 
-[LoadFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadFile.html) function loads the content of any desired file into the EditControl.
+The [LoadFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadFile.html) function loads the content of any desired file into the EditControl. The function is explained as follows.
 
 <table>
 <tr>
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 LoadFile</td><td>
-Shows open file dialog to the user and opens the selected file</td></tr>
+Shows the Open File dialog to the user and opens the selected file.</td></tr>
 </table>
 
 N> The character encoding for the text can also be specified while loading the file.
@@ -59,7 +59,7 @@ Me.editControl1.LoadFile("Temp.txt", Encoding.ASCII)
 
 ### Retrieve loaded file path
 
-The name of the stream that is currently loaded in the Edit Control can be get or set by using the [FileOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FileOpened.html) property.
+The name of the currently loaded stream in the Edit Control can be get or set by using the [FileOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FileOpened.html) property.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ Me.editControl1.FileOpened = New FileStream("Temp.txt", FileMode.Create)
 
 ### Retrieve loaded file name
 
-By using the [FileName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FileName.html) property, we can get or set the name of the file that is currently loaded in EditControl.
+By using the [FileName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FileName.html) property, you can get or set the name of the currently loaded file in the EditControl.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ Me.editControl1.FileName = "Temp.txt"
 
 ## Load from stream
 
-The contents of the EditControl can also be loaded to a particular stream using specified encoding and line end style using [LoadStream](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadStream.html) function.
+Content of the EditControl can also be loaded to a particular stream by using the specified encoding and line end style by using the [LoadStream](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadStream.html) function.
 
 {% tabs %}
 
@@ -142,7 +142,7 @@ Me.editControl1.LoadStream(streamName, config)
 
 ## Drop file to load contents
 
-EditControl provides a complete support for dropping the dragged files into it by using the `DropAllFiles` properties.
+The EditControl provides a complete support for dropped the dragged files by using the `DropAllFiles` and `FileExtension` properties. The properties are explained as follows.
 
 <table>
 <tr>
@@ -153,11 +153,11 @@ Description</th></tr>
 <td>
 {{ '[DropAllFiles](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DropAllFiles.html)' | markdownify }}
 </td><td>
-Specifies whether all files can be dropped onto EditControl. If set to `false`, only files with extensions contained in FileExtensions can be dropped</td></tr>
+Specifies whether all files can be dropped onto EditControl or not. If set to `false`, files with extensions contained in FileExtensions can only be dropped.</td></tr>
 <tr>
 <td>
 {{ '[FileExtensions](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FileExtensions.html)' | markdownify }}</td><td>
-Specifies the extensions of files that can be dropped to EditControl</td></tr>
+Specifies the extensions of files that can be dropped to the EditControl.</td></tr>
 </table>
 
 {% tabs %}
@@ -189,7 +189,7 @@ Me.editControl1.FileExtensions = New String() {".cs", ".sql", ".vb", ".xml"}
 
 {% endtabs %}
 
-The following properties can be used to insert text based on conditions that are described as follows.
+The following properties can be used to insert the text based on conditions described as follows.
 
 <table>
 <tr>
@@ -199,15 +199,15 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[AllowDrop](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowDrop.html)' | markdownify }}</td><td>
-Specifies whether drag and drop operations are allowed for control</td></tr>
+Specifies whether the drag and drop operations are allowed for the control or not.</td></tr>
 <tr>
 <td>
 {{ '[InsertDroppedFileIntoText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertDroppedFileIntoText.html)' | markdownify }}</td><td>
-Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content. When this property is set to `false`, the current file is closed, and the dropped outer file is opened.</td></tr>
+Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content. When this property is set to `false`, the current file is closed and the dropped outer file is opened.</td></tr>
 <tr>
 <td>
 {{ '[ShowFileDropNotification](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowFileDropNotification.html)' | markdownify }}</td><td>
-Specifies whether the Notification message is to be displayed when the outer file is dragged and dropped onto the EditControl</td></tr>
+Specifies whether the notification message is to be displayed when the outer file is dragged and dropped onto the EditControl.</td></tr>
 </table>
 
 {% tabs %}
@@ -249,7 +249,7 @@ Me.editControl1.ShowFileDropNotification = False
 
 ## File modification
 
-By using [FileModified](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FileModified.html) and [IsModified](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IsModified.html) property of EditControl we can ensure whether the content of the file was modified or not.
+By using the [FileModified](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FileModified.html) and [IsModified](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IsModified.html) properties of the EditControl, you can ensure whether the content of the file was modified or not.
 
 {% tabs %}
 
@@ -270,7 +270,7 @@ Console.WriteLine(Me.editControl1.IsModified)
 
 ## Create file
 
-[New](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~New.html) and [NewFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~NewFile.html) functions helps to create a new stream or file and optionally allows you to set the language to be used by specifying the appropriate configuration settings.
+The [New](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~New.html) and [NewFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~NewFile.html) functions helps to create a new stream or file. It optionally allows you to set the language to be used by specifying the appropriate configuration settings.
 
 {% tabs %}
 
@@ -318,7 +318,7 @@ Me.editControl1.[New](config)
 
 ## Discard changes
 
-The changes made to the contents of the EditControl can be discarded by using the [FlushChanges](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FlushChanges.html) function.
+The changes made to the content of the EditControl can be discarded by using the [FlushChanges](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FlushChanges.html) function.
 
 {% tabs %}
 
@@ -343,7 +343,7 @@ Me.editControl1.FlushChanges()
 
 ## Save file
 
-The following functions helps to save a file in EditControl.
+The following functions helps to save a file in the EditControl.
 
 <table>
 <tr>
@@ -354,19 +354,19 @@ Description</th></tr>
 <td>
 {{ '[SaveFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveFile.html)' | markdownify }}
 </td><td>
-Saves the contents of the EditControl to a specified file</td></tr>
+Saves the content of the EditControl to a specified file.</td></tr>
 <tr>
 <td>
 {{ '[Save](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Save.html)' | markdownify }}</td><td>
-Invokes the save file dialog box and lets you save the contents of the EditControl to the specified file</td></tr>
+Invokes the Save File dialog box and lets you save the contents of the EditControl to the specified file.</td></tr>
 <tr>
 <td>
 {{ '[SaveAs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveAs.html)' | markdownify }}</td><td>
-Opens SaveAs dialog and prompts you to enter the name of the file</td></tr>
+Opens SaveAs dialog and prompts you to enter the name of the file.</td></tr>
 <tr>
 <td>
 {{ '[SaveModified](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveModified.html)' | markdownify }}</td><td>
-Saves the file only if it was modified and prompts for filename if needed. This is especially useful when the application is about to be closed or a new file is being loaded into the EditControl</td></tr>
+Saves the file only if it was modified and prompts for the filename if needed. This is especially useful when the application is about to be closed or a new file is being loaded into the EditControl.</td></tr>
 </table>
 
 {% tabs %}
@@ -416,7 +416,7 @@ Me.editControl1.SaveModified()
 
 ### Save as stream
 
-The contents of the EditControl can also be saved to a particular stream using specified encoding and line end style using  [SaveStream](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveStream.html) function.
+Content of the EditControl can also be saved to a particular stream by using the specified encoding and line end style by using the [SaveStream](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveStream.html) function.
 
 {% tabs %}
 
@@ -439,7 +439,7 @@ Me.editControl1.SaveStream(System.IO.Stream.Null , Encoding.BigEndianUnicode, Sy
 
 {% endtabs %}
 
-The changes made to the contents of the EditControl can be saved or discarded. [SaveOnClose](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveOnClose.html) property specifies whether the default Save Changes prompt should be displayed on closing the EditControl.
+The changes made to the content of the EditControl can be saved or discarded. The [SaveOnClose](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveOnClose.html) property specifies whether the default Save Changes prompt should be displayed on closing the EditControl or not.
 
 {% tabs %}
 
@@ -466,7 +466,7 @@ Me.editControl1.SaveOnClose = False
 
 ### Auto Save file on close
 
-When the `SaveOnClose` property is set to `false`, the default Save Changes prompt does not appear. The user should perform some custom Save routine in the Closing event handler of the host form, to save the unsaved contents in the EditControl. If not, they will be lost.
+When the `SaveOnClose` property is set to `false`, the default Save Changes prompt does not appear. The user should perform some custom Save routine in the Closing event handler of the host form to save the unsaved contents in the EditControl. If not, they will be lost.
 
 {% tabs %}
 
@@ -586,7 +586,7 @@ N> The default value of e.Action is SaveChangesAction.ShowDialog.
 
 ## Insert file
 
-The following functions helps to insert a file in EditControl.
+The following functions helps to insert a file in the EditControl.
 
 <table>
 <tr>
@@ -598,12 +598,12 @@ Description</th></tr>
 <td>
 {{ '[InsertFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertFile.html)' | markdownify }}</td><td>
 -</td><td>
-Shows Insert file dialog and inserts the selected file</td></tr>
+Shows Insert file dialog and inserts the selected file.</td></tr>
 <tr>
 <td>
 {{ '[InsertFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertFile.html)' | markdownify }}</td><td>
  public void InsertFile(string filePath)</td><td>
-Inserts a file by using file path</td></tr>
+Inserts a file by using file path.</td></tr>
 </table>
 
 {% tabs %}
@@ -637,7 +637,7 @@ Me.editControl1.InsertFile(@"..\\..\\Form2.cs")
 
 ## Close file
 
-[Close](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Close.html) function helps to closes the currently open file or stream and displays the EditControl in the read-only mode, until a new file or stream is opened.
+The [Close](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Close.html) function helps to close the currently opened file or stream and displays the EditControl in the read-only mode until a new file or stream is opened. The function is explained as follows.
 
 <table>
 <tr>
@@ -647,7 +647,7 @@ Description</th></tr>
 <tr>
 <td>
 Close</td><td>
-Closes stream, makes control readonly</td></tr>
+Closes the stream and makes the control readonly.</td></tr>
 </table>
 
 {% tabs %}
