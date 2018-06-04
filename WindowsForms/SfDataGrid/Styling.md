@@ -40,6 +40,21 @@ Me.sfDataGrid1.Columns("ProductName").CellStyle.TextColor = Color.DarkRed
 
 ![](Styling_images/Styling2.png)
 
+Font orientation of the record cells can be set by using the [CellStyle.Font.Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.RowHeight = 80;
+this.sfDataGrid1.Style.CellStyle.Font.Orientation = 45;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.RowHeight = 80
+Me.sfDataGrid1.Style.CellStyle.Font.Orientation = 45
+{% endhighlight %}
+{% endtabs %}
+
+![](Styling_images/Styling5.png)
+
 N>[GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) has higher priority than [SfDataGrid.Style.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html).
 
 ## Styling Column Header
@@ -207,3 +222,19 @@ Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(Color.DarkBlue, Gr
 
 ![](Styling_images/Styling4.png)
 
+## Showing busy indicator for the data operations
+
+Indication of the data operation performed on the SfDataGrid can be showed with the help of `BusyIndicator` by setting the `ShowBusyIndicator` property to `true`. This will display an animated busy indicator image while performing the data operations such as loading large data, sorting, grouping, and filtering.
+
+{% tabs %}
+{% highlight c# %}
+// To display the busy indicator in the SfDataGrid for the data operations.
+this.sfDataGrid1.ShowBusyIndicator = true;
+{% endhighlight %}
+{% highlight vb %}
+' To display the busy indicator in the SfDataGrid for the data operations.
+Me.sfDataGrid1.ShowBusyIndicator = True
+{% endhighlight %}
+{% endtabs %}
+
+![](Styling_images/BusyIndicator_Image1.png)

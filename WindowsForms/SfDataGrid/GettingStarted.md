@@ -61,6 +61,14 @@ Syncfusion.SfInput.WinForms
 Syncfusion.SfInput.WinForms contains various editor controls (such as SfNumericTextBox and SfDateTimeEdit) which are used in SfDataGrid.
 </td>
 </tr>
+<tr>
+<td>
+Syncfusion.SfListView.WinForms
+</td>
+<td>
+Syncfusion.SfListView.WinForms contains various editor controls (such as SfComboBox and SfListView) which are used in SfDataGrid.
+</td>
+</tr>
 </table>
 In order to use export to Excel and export to PDF functionalities of SfDataGrid control, add the reference to following assemblies,
 <table>

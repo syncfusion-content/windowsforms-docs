@@ -813,6 +813,204 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## GridComboBoxColumn
+`GridComboBoxColumn` is derived from the GridColumn which hosts SfComboBox as edit element. Data source to the combo box can be set by using the `GridComboBoxColumn.DataSource` property.
+
+By default, GridComboBoxColumn displays the value by using the `MappingName` property. You can set `DisplayMember` that denotes the string to be displayed in the cell (to serve as visual representation of object). You can set `ValueMember` that denotes string from the object data source that acts as a value for that cell or to get the SelectedValue from the SelectedItem.
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new CustomSelector()});
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New CustomSelector()})
+{% endhighlight %}
+{% endtabs %}
+
+The SfDataGrid triggers the `CellComboBoxSelectionChanged` event when the `SelectedValue` is changed. The CellComboBoxSelectionChangedEventArgs of CellComboBoxSelectionChanged event provides the information of the changed cell value. Properties to get the selected item and index are as follows:
+
+*	`SelectedIndex` : Returns the index of selected item.
+*	`SelectedItem`	: Returns the selected item from drop-down list.
+
+![](ColumnTypes_images/ComboBox_img1.png)
+
+### Opening drop-down popup on single-click
+Drop-down of the combo-box column can be shown on single click by using the custom combo-box renderer. 
+In the following code, the `GridComboBoxCellRendererExt` is created to call the `ShowDropDown` method to open the drop-down on the initialization. 
+Replace the default renderer with created renderer in the SfDataGrid.CellRenderers collection.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.CellRenderers.Remove("ComboBox");
+this.sfDataGrid.CellRenderers.Add("ComboBox", new GridComboBoxCellRendererExt());
+
+public class GridComboBoxCellRendererExt : GridComboBoxCellRenderer
+{
+    protected override void OnInitializeEditElement(DataColumnBase column, RowColumnIndex rowColumnIndex, SfComboBox uiElement)
+    {
+        base.OnInitializeEditElement(column, rowColumnIndex, uiElement);
+        uiElement.ShowDropDown();          
+    }     
+}
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.CellRenderers.Remove("ComboBox")
+Me.sfDataGrid.CellRenderers.Add("ComboBox", New GridComboBoxCellRendererExt())
+
+Public Class GridComboBoxCellRendererExt
+	Inherits GridComboBoxCellRenderer
+	Protected Overrides Sub OnInitializeEditElement(ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex, ByVal uiElement As SfComboBox)
+		MyBase.OnInitializeEditElement(column, rowColumnIndex, uiElement)
+		uiElement.ShowDropDown()
+	End Sub
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing GroupCaptionText based on DisplayMemberPath
+By default, the group caption text will be displayed based on the `MappingName` of combo-box column. This can be changed to display the `DisplayMember` by using the `GroupMode` property of the column.
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new CustomSelector(), GroupMode = Syncfusion.Data.DataReflectionMode.Display });
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New CustomSelector(), .GroupMode = Syncfusion.Data.DataReflectionMode.Display})
+{% endhighlight %}
+{% endtabs %}
+
+![](ColumnTypes_images/ComboBox_img2.png)
+
+### Loading different DataSources for each row of GridComboBoxColumn
+Different data sources can be loaded for each row of the `GridComboBoxColumn` by using the `SfDataGrid.DataSourceSelector` property.
+
+### Implementing IDataSourceSelector
+DataSourceSelector needs to implement IDataSourceSelector interface to implement the GetDataSource method that receives the following parameters,
+
+* record – data object associated with row.
+* dataSource – Data context of data grid.
+
+In the following code, DataSource of the `Ship City` column is returned based on `ShipCountry` column value by using the record and the data context of SfDataGrid passed to the `GetDataSource` method.
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new DataSourceSelector()});
+
+public class DataSourceSelector : IDataSourceSelector
+{
+    public IEnumerable GetDataSource(object record, object dataSource)
+    {
+        if (record == null)
+            return null;
+
+        var orderinfo = record as OrderDetails;
+        var countryName = orderinfo.ShipCountry;
+
+        var countryDetails = new CountryInfoRepository();
+
+        //Returns ShipCity collection based on ShipCountry.
+        if (countryDetails.ShipCities.ContainsKey(countryName))
+        {
+            ObservableCollection<ShipCityDetails> shipcities = null;
+            countryDetails.ShipCities.TryGetValue(countryName, out shipcities);
+            return shipcities.ToList();
+        }
+        return null;
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New DataSourceSelector()})
+
+Public Class DataSourceSelector
+	Implements IDataSourceSelector
+	Public Function GetDataSource(ByVal record As Object, ByVal dataSource As Object) As IEnumerable
+		If record Is Nothing Then
+			Return Nothing
+		End If
+
+		Dim orderinfo = TryCast(record, OrderDetails)
+		Dim countryName = orderinfo.ShipCountry
+
+		Dim countryDetails = New CountryInfoRepository()
+
+		'Returns ShipCity collection based on ShipCountry.
+		If countryDetails.ShipCities.ContainsKey(countryName) Then
+			Dim shipcities As ObservableCollection(Of ShipCityDetails) = Nothing
+			countryDetails.ShipCities.TryGetValue(countryName, shipcities)
+			Return shipcities.ToList()
+		End If
+		Return Nothing
+	End Function
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+Following screenshot illustrates the different `Ship City` DataSource bound to each row of the ComboBox column based on the `Ship Country` Name.
+
+![](ColumnTypes_images/ComboBox_img3.png)
+
+![](ColumnTypes_images/ComboBox_img4.png)
+
+### Editing the combo box
+By default, the combo-box column is not allowed to edit the values. This can be changed by setting the `GridComboBoxColumn.DropDownStyle` as `DropDown` to edit the values by using the text box.
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", DropDownStyle = DropDownStyle.DropDown, IDataSourceSelector = new DataSourceSelector()});
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .DropDownStyle = DropDownStyle.DropDown, .IDataSourceSelector = New DataSourceSelector()})
+{% endhighlight %}
+{% endtabs %}
+
+![](ColumnTypes_images/ComboBox_img5.png)
+
+### Auto completing on edit mode
+The auto completion on the edit mode can be enabled by using the `GridComboBoxColumn.AutoCompleteMode` property. Default value is `None`. Following types of auto complete modes are available,
+
+* None
+* Append
+* Suggest
+* SuggestAppend
+
+{% tabs %}
+{% highlight c# %}
+GridComboBoxColumn comboBoxColumn = sfDataGrid.Columns["ShipCityID"] as GridComboBoxColumn;
+comboBoxColumn.DropDownStyle = DropDownStyle.DropDown;
+comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest;
+{% endhighlight %}
+{% highlight vb %}
+Dim comboBoxColumn As GridComboBoxColumn = TryCast(sfDataGrid.Columns("ShipCityID"), GridComboBoxColumn)
+comboBoxColumn.DropDownStyle = DropDownStyle.DropDown
+comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest
+{% endhighlight %}
+{% endtabs %}
+
+![](ColumnTypes_images/ComboBox_img6.png)
+
+### Auto suggesting on edit mode
+By default, auto suggestion in the dropdown will display the value based on the `Starts with` filter condition. This can be changed to retrieve the matches with the Contains condition by using the `AutoSuggestionMode` property. You can also set delay for auto suggestion by using the `AutoSuggestDelay` property.
+
+{% tabs %}
+{% highlight c# %}
+GridComboBoxColumn comboBoxColumn = sfDataGrid.Columns["ShipCityID"] as GridComboBoxColumn;
+comboBoxColumn.DropDownStyle = DropDownStyle.DropDown;
+comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest;
+comboBoxColumn.AutoSuggestMode = AutoCompleteSuggestMode.Contains;
+comboBoxColumn.AutoSuggestDelay = 1000;
+{% endhighlight %}
+{% highlight vb %}
+Dim comboBoxColumn As GridComboBoxColumn = TryCast(sfDataGrid.Columns("ShipCityID"), GridComboBoxColumn)
+comboBoxColumn.DropDownStyle = DropDownStyle.DropDown
+comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest
+comboBoxColumn.AutoSuggestMode = AutoCompleteSuggestMode.Contains
+comboBoxColumn.AutoSuggestDelay = 1000
+{% endhighlight %}
+{% endtabs %}
+
+![](ColumnTypes_images/ComboBox_img7.png)
+
 ## GridButtonColumn
 
 [GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html) provides support to display columns data as buttons.
