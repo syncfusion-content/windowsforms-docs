@@ -9,13 +9,17 @@ documentation: ug
 
 # Overview
 
-The Radial Slider is an advanced control that is capable of calculating the sequence value with the sequence circle sector. It contains additional features like different visual styles, and support to modify minimum and maximum values.
-
-## Structure of the control
-
-The following image highlights the different sections of the Range Slider:
+The RadialSlider is an advanced control that is capable of calculating the sequence value with the sequence circle sector. It contains additional features like different visual styles, and support to modify minimum and maximum values.
 
 ![](Overview_images/Overview_img1.png)
 
+# Key Features
 
+* **SliderStyle** - Provides option to set Default or Frame slider styles.
+
+* **Color customization** - Provides options to customize circle, needle, text color and much more.
+
+* **Value Settings** - Provides options to set minimum and maximum range as well as slider division values.
+
+* **VisualStyle** - Provides rich set of style to customize the look and feel of RadialSlider.
 
