@@ -104,6 +104,9 @@ Me.dockingManager1.SetAsMDIChild(panel2, True)
 
 ![](MDI_Window_images/MDI_Window_img1.png) 
 
+N> A sample that demonstrates MDI child transition as tabbed is available in the following sample installation path:
+C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\SDI\CS
+
 ## Add icon in caption
 
 [SetMDIChildIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMDIChildIcon.html) function helps to set the custom icons in caption bar of MDIChild window in DockingManager.
