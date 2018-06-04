@@ -903,17 +903,17 @@ public class DataSourceSelector : IDataSourceSelector
         if (record == null)
             return null;
 
-        var orderinfo = record as OrderDetails;
-        var countryName = orderinfo.ShipCountry;
+        var orderInfo = record as OrderDetails;
+        var countryName = orderInfo.ShipCountry;
 
         var countryDetails = new CountryInfoRepository();
 
         //Returns ShipCity collection based on ShipCountry.
         if (countryDetails.ShipCities.ContainsKey(countryName))
         {
-            ObservableCollection<ShipCityDetails> shipcities = null;
-            countryDetails.ShipCities.TryGetValue(countryName, out shipcities);
-            return shipcities.ToList();
+            ObservableCollection<ShipCityDetails> shipCities = null;
+            countryDetails.ShipCities.TryGetValue(countryName, out shipCities);
+            return shipCities.ToList();
         }
         return null;
     }
@@ -929,16 +929,16 @@ Public Class DataSourceSelector
 			Return Nothing
 		End If
 
-		Dim orderinfo = TryCast(record, OrderDetails)
-		Dim countryName = orderinfo.ShipCountry
+		Dim orderInfo = TryCast(record, OrderDetails)
+		Dim countryName = orderInfo.ShipCountry
 
 		Dim countryDetails = New CountryInfoRepository()
 
 		'Returns ShipCity collection based on ShipCountry.
 		If countryDetails.ShipCities.ContainsKey(countryName) Then
-			Dim shipcities As ObservableCollection(Of ShipCityDetails) = Nothing
-			countryDetails.ShipCities.TryGetValue(countryName, shipcities)
-			Return shipcities.ToList()
+			Dim shipCities As ObservableCollection(Of ShipCityDetails) = Nothing
+			countryDetails.ShipCities.TryGetValue(countryName, shipCities)
+			Return shipCities.ToList()
 		End If
 		Return Nothing
 	End Function

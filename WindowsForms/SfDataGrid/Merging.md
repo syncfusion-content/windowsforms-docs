@@ -225,8 +225,8 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
         // set right index
         if (rightColumn != null)
         {
-            var rightColumIndex = this.sfDataGrid1.TableControl.ResolveToScrollColumnIndex(this.sfDataGrid1.Columns.IndexOf(rightColumn));
-            range = new CoveredCellInfo(range.Left, rightColumIndex, range.Top, range.Bottom);
+            var rightColumnIndex = this.sfDataGrid1.TableControl.ResolveToScrollColumnIndex(this.sfDataGrid1.Columns.IndexOf(rightColumn));
+            range = new CoveredCellInfo(range.Left, rightColumnIndex, range.Top, range.Bottom);
         }
         return range;
     }
@@ -358,8 +358,8 @@ Private Function GetRange(ByVal column As GridColumn, ByVal rowIndex As Integer,
 
 		' set right index
 		If rightColumn IsNot Nothing Then
-			Dim rightColumIndex = Me.sfDataGrid1.TableControl.ResolveToScrollColumnIndex(Me.sfDataGrid1.Columns.IndexOf(rightColumn))
-			range = New CoveredCellInfo(range.Left, rightColumIndex, range.Top, range.Bottom)
+			Dim rightColumnIndex = Me.sfDataGrid1.TableControl.ResolveToScrollColumnIndex(Me.sfDataGrid1.Columns.IndexOf(rightColumn))
+			range = New CoveredCellInfo(range.Left, rightColumnIndex, range.Top, range.Bottom)
 		End If
 		Return range
 	End If

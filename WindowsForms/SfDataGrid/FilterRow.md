@@ -55,11 +55,11 @@ By default, the filter row loads the editors based on underlying property type t
 {% tabs %}
 {% highlight c# %}
 //To load the text box filter for the particular column.
-this.sfDataGrid1.Columns[2].FilterRowEditorType = "MulitSelectComboBox";
+this.sfDataGrid1.Columns[2].FilterRowEditorType = "MultiSelectComboBox";
 {% endhighlight %}
 {% highlight vb %}
 'To load the text box filter for the particular column.
-Me.sfDataGrid1.Columns(2).FilterRowEditorType = "MulitSelectComboBox"
+Me.sfDataGrid1.Columns(2).FilterRowEditorType = "MultiSelectComboBox"
 {% endhighlight %}
 {% endtabs %}
 
