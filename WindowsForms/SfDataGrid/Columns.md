@@ -87,7 +87,7 @@ SfDataGrid provides support for generating
 
 ### Automatically Generating Columns
 
-Automatic column generation based on properties of data object can be enabled or disabled by setting the [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html). Default value is `true`. Columns will be automatically generated based on its column type from the underlying data source.
+The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html). Default value is `true`. The columns will be automatically generated based on its column type from the underlying data source.
 
 It is also possible to generate columns for custom type properties in the data object by setting the [SfDataGrid.AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumnsForCustomType.html) property to `true`. The default value is `false`.
 
@@ -1100,6 +1100,49 @@ End Sub
 {% endtabs %}
 
 ![](Columns_images/StackedHeader_img9.png)
+
+### Font orientation for stacked headers
+
+Font orientation of the stacked header cells can be set by using the [StackedHeaderStyle.Font.Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~StackedHeaderStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+//Creating object for a stacked header row.
+var stackedHeaderRow1 = new StackedHeaderRow();
+
+//Adding stacked column to stacked columns collection available in stacked header row object.
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order" });
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "CustomerID,ContactNumber,", HeaderText = "Customer" });
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "ProductName,Quantity,UnitPrice,ShipCountry", HeaderText = "Product" });
+
+//Adding stacked header row object to stacked header row collection available in SfDataGrid.
+sfDataGrid1.StackedHeaderRows.Add(stackedHeaderRow1);
+
+this.sfDataGrid1.HeaderRowHeight = 60;
+
+//Set the font orientation for the stacked headers
+this.sfDataGrid1.Style.StackedHeaderStyle.Font.Orientation = 45;
+{% endhighlight %}
+{% highlight vb %}
+'Creating object for a stacked header row.
+Dim stackedHeaderRow1 = New StackedHeaderRow()
+
+'Adding stacked column to stacked columns collection available in stacked header row object.
+stackedHeaderRow1.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "OrderID,OrderDate", .HeaderText = "Order"})
+stackedHeaderRow1.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "CustomerID,ContactNumber,", .HeaderText = "Customer"})
+stackedHeaderRow1.StackedColumns.Add(New StackedColumn() With {.ChildColumns = "ProductName,Quantity,UnitPrice,ShipCountry", .HeaderText = "Product"})
+
+'Adding stacked header row object to stacked header row collection available in SfDataGrid.
+sfDataGrid1.StackedHeaderRows.Add(stackedHeaderRow1)
+
+Me.sfDataGrid1.HeaderRowHeight = 60
+
+'Set the font orientation for the stacked headers
+Me.sfDataGrid1.Style.StackedHeaderStyle.Font.Orientation = 45
+{% endhighlight %}
+{% endtabs %}
+
+![](Columns_images/StackedHeader_img1.png)
 
 ## Column Sizing
 SfDataGrid allows to set the column widths based on certain logic using [SfDataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) or [GridColumnBase.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AutoSizeColumnsMode.html) property. Below is the list of predefined column sizing options available.
