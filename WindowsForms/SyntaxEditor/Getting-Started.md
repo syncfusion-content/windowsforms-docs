@@ -13,7 +13,7 @@ This section explains how to create an interactive code editor application like 
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the EditControl in any application:
+The following assemblies should be added as reference to use the EditControl in any application.
 
 <table>
 <tr>
@@ -29,7 +29,7 @@ The following list of assemblies should be added as reference to use the EditCon
 Syncfusion.Shared.Base.dll
 </td>
 <td>
-Syncfusion.Shared.Base contains style related properties of EditControl and various editor controls
+Syncfusion.Shared.Base contains style related properties of the EditControl and various editor controls.
 </td>
 </tr>
 <tr>
@@ -37,7 +37,7 @@ Syncfusion.Shared.Base contains style related properties of EditControl and vari
 Syncfusion.Tools.Windows.dll
 </td>
 <td>
-Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals and base classes of Tools control which are used in the EditControl
+Syncfusion.Tools.Windows contains classes that handles all UI operations, fundamentals, and base classes of the Tools control used in the EditControl.
 </td>
 </tr>
 <tr>
@@ -45,14 +45,14 @@ Syncfusion.Tools.Windows contains classes that handles all UI operations, fundam
 Syncfusion.Edit.Windows.dll
 </td>
 <td>
-Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of EditControl
+Syncfusion.Edit.Windows contains the class that handles all UI operations and contains helper class of the EditControl.
 </td>
 </tr>
 </table>
 
-## Installing NuGet Packages
+## Installing NuGet packages
 
-To create the Windows Forms application with EditControl, the following nuget packages should be installed.
+To create Windows Forms application with EditControl, the following nuget packages should be installed.
 
 <table>
 <tr>
@@ -113,13 +113,11 @@ To create the Windows Forms application with EditControl, the following nuget pa
 </tr>
 </table>
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
-
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+Get more details regarding how to install the nuget packages in windows form application in the [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages) link.
 
 # Creating simple application with EditControl
 
-You can create the Windows Forms application with EditControl as follows:
+You can create Windows Forms application with EditControl as follows:
 
 1. [Creating the project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
@@ -129,11 +127,11 @@ You can create the Windows Forms application with EditControl as follows:
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the EditControl.
+Create a new Windows Forms project in Visual Studio to display the EditControl.
 
 ## Adding control via designer
 
-The EditControl can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The EditControl can be added to the application by dragging it from the toolbox and dropping it in the designer view. The following required assembly references will be added automatically:
 
    * Syncfusion.Shared.Base.dll
    * Syncfusion.Tools.Windows.dll
@@ -143,7 +141,7 @@ The EditControl can be added to the application by dragging it from the toolbox 
 
 ## Adding control manually in code
 
-To add control manually in C#, follow the given steps:
+To add the control manually in C#, follow the steps:
 
 1. Add the following required assembly references to the project:
 
@@ -151,7 +149,7 @@ To add control manually in C#, follow the given steps:
    * Syncfusion.Tools.Windows.dll
    * Syncfusion.Edit.Windows.dll
 
-2. Create [EditControl](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) control instance and add it to the form.
+2. Create the [EditControl](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) instance and add it to the form.
 
 {% tabs %}
 
@@ -216,7 +214,7 @@ The following illustration shows EditControl was created.
 
 ## Loading a file into document
 
-This option helps to load file into EditControl.
+This option helps to load a file into the EditControl.
 
 {% tabs %}
 
@@ -241,11 +239,9 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ## Syntax highlighting
 
-EditControl offers mostly used languages like C#, VB, XML, HTML, JScript, PowerShell, SQL as built-in and also provides support to configure new custom language based on requirement.
+The EditControl offers mostly used languages like C#, VB, XML, HTML, JScript, PowerShell, and SQL as built-in languages. It also provides support to configure new custom language.
 
-**Built-in syntax highlighting languages**
-
-EditControl has a built-in syntax highlighting support for the following languages.
+The EditControl has built-in syntax highlighting support for the following languages:
 
    * C#
    * VB.NET
@@ -258,8 +254,6 @@ EditControl has a built-in syntax highlighting support for the following languag
    * JavaScript
    * VBScript
    * Delphi
-
-The following code example illustrates the C# configuration settings in EditControl.
 
 {% tabs %}
 
@@ -286,11 +280,9 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 **Custom language configuration**
 
-EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function, as shown in the below code snippet.
+The EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) functions.
 
-**Step 1** : Creating a Configuration file
-
-The following code snippet illustrates a sample configuration file that can be used for syntax highlighting a LISP-like code.
+1. Creating a Configuration file.
 
 {% highlight xaml %}
 
@@ -342,7 +334,7 @@ The following code snippet illustrates a sample configuration file that can be u
 
 {% endhighlight %}
 
-**Step 2** : How to configure the created configuration file in EditControl
+2. How to configure the created configuration file in the EditControl.
 
 {% tabs %}
 
