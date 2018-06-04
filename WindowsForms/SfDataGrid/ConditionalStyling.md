@@ -568,7 +568,7 @@ End Sub
 
 ## Alignment Customization based on Column
 
-The alignment within the cell can be changed based on the columns using the [SfDataGrid.QueryCellStyle(https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
+The alignment within the cell can be changed based on the columns using the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
