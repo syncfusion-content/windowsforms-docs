@@ -176,23 +176,23 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ## Themes
 
-SfToolTip offers four built in themes for professional representation as follows.
+The SfToolTip offers four built-in themes for professional representation as follows:
 
 * Office2016Colorful
 * Office2016White
 * Office2016DarkGray
 * Office2016Black
 
-Theme can be applied to SfToolTip by following the below steps:
+Themes can be applied to the SfToolTip by using the following steps:
 
 1. [Load theme assembly](#load-theme-assembly)
 2. [Apply theme](#apply-theme)
 
 ### Load theme assembly
 
-**Syncfusion.Office2016Theme.WinForms** assembly should be added as reference to set theme for SfToolTip in any application:
+The Syncfusion.Office2016Theme.WinForms assembly should be added as reference to set theme for the SfToolTip in any application.
 
-Before apply theme to SfToolTip, required theme assembly should be loaded as follows. 
+Before applying theme to the SfToolTip, required theme assembly should be loaded. 
 
 {% tabs %}
 
@@ -239,7 +239,7 @@ Imports Syncfusion.WinForms.Controls
 
 ### Apply theme
 
-Appearance of SfToolTip can be changed by `ThemeName` of SfToolTip.
+Appearance of the SfToolTip can be changed by using the `ThemeName`.
 
 #### Office2016Colorful
 
