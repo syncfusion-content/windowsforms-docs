@@ -92,7 +92,7 @@ Prints the current page on the default printer.</td></tr>
 <tr>
 <td>
 {{ '[PrintNoDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintNoDialog.html)' | markdownify }}</td><td>
-Prints the entire document on the default printe.r</td></tr>
+Prints the entire document on the default printer.</td></tr>
 <tr>
 <td>
 {{ '[PrintSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PrintSelection.html)' | markdownify }}</td><td>
