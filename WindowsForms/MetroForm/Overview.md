@@ -15,9 +15,12 @@ MetroForm is an advanced standard Form that helps to create fully customizable 
 
 ## Key Features
 
-* Provides Support to various color schemes customization.
-* Help button support.
-* MetroForm provides complete support for Caption Bar and Caption Image customization.
-* MetroForm provides Right to left support.
+* **Color customization** - Supports to customize Caption Background, Foreground color, Control box buttons Background and Foreground color and Border color.
+
+* **Help Button** - Provides Help button support.
+
+* **Custom Image** - Support to display Image and Text information in Caption Bar.
+
+* **RightToLeft** - Supports RightToLeft layout.
 
  

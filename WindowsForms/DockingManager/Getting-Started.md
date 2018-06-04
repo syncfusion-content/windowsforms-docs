@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section explains how to implement a similar UI as Visual Studio using the DockingManager control in a Windows Forms application.
+This section explains how to design a `DockingManager` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -290,7 +290,7 @@ Me.dockingManager1.SetEnableDocking(panel4, True)
 
 ### Identify whether the panel is docking or not
 
-DockingManger provides with an attached function [GetEnableDocking](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetEnableDocking.html) which helps to determine whether the child window is docking or not. 
+The [GetEnableDocking](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetEnableDocking.html) function of DockingManager helps to determine whether the child window is docking or not. 
 
 {% tabs %}
 
@@ -310,7 +310,7 @@ Console.Write("DockWindow Header:" + Me.dockingManager1.GetEnableDocking(panel1)
 
 ### Change header of child window
 
-DockingManger provides with an attached function [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) which helps to set the label for a child window. 
+The [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) function of DockingManager helps to set the label for a child window. 
 
 
 {% tabs %}
@@ -350,7 +350,7 @@ Me.dockingManager1.SetDockLabel(panel4, "Output");
 
 #### Get Label of the dock panel
 
- DockingManger provides with an attached function [GetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockLabel.html) which helps to get the label for a child window. 
+The [GetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockLabel.html) function of DockingManager helps to get the label of the child window. 
 
 {% tabs %}
 
@@ -374,7 +374,7 @@ Console.Write("DockWindow Header:" + Me.dockingManager1.GetDockLabel(panel1))
 
 ## Change Dock State of child
 
-DockingManager provides an option to dock or float the controls.
+DockingManager provides an option to dock, float and auto hide the controls.
 
 To dock the child window use below code snippet.
 
@@ -430,9 +430,33 @@ Me.dockingManager1.FloatControl(Me.panel3, New Rectangle(rectangle.Right - 300, 
 
 ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
+To AutoHide the control use below code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Sets panel1 as AutoHidden window
+
+this.dockingManager1.SetAutoHideMode(panel1, true); //false to remove auto hide state.
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Sets panel1 as AutoHidden window
+
+Me.dockingManager1.SetAutoHideMode(panel1, True) 'false to remove auto hide state.
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](AutoHidden-Window_images/AutoHidden-Window_img3.png)
+
 ## Change Dock Side
 
-DockingManager provides an attached function [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) that helps to dock a panel at the required side using [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
+The [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function helps to dock a panel at the required side using [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
 
 Set the `DockingStyle` value as Right for “Solution Explorer” panel to dock it on the right side.
 
