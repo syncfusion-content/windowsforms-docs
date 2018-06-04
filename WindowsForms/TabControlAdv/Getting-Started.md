@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: How to add TabControlAdv and enable its basic features.
+title: Overview | WindowsForms | Syncfusion
+description: overview
 platform: WindowsForms
 control: TabControlAdv 
 documentation: ug
@@ -9,259 +9,167 @@ documentation: ug
 
 # Getting started
 
-This section explains how to design a `TabControlAdv` control in a Windows Forms application and overview of its basic functionalities.
+The TabControlAdv can be added to Windows Forms application by using either of the following ways:
 
-## Assembly deployment
+* Through designer
+* Through code-behind
 
-The following list of assemblies should be added as reference to use the TabControlAdv in any application:
+## Through designer
 
-<table>
-<tr>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Grid.Base.dll
-</td>
-<td>
-Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Grid.Windows.dll
-</td>
-<td>
-Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the TabControlAdv control
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Shared.Base.dll
-</td>
-<td>
-Syncfusion.Shared.Base contains style related properties of TabControlAdv and various editor controls
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Shared.Windows.dll
-</td>
-<td>
-Syncfusion.Shared.Windows contains style related properties of TabControlAdv and various editor controls
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Tools.Base.dll
-</td>
-<td>
-Syncfusion.Tools.Base contains base class which used for TabControlAdv control
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Tools.Windows.dll
-</td>
-<td>
-Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of TabControlAdv control
-</td>
-</tr>
-</table>
+Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add TabControlAdv through drag and drop from Toolbox.
 
-## Installing NuGet Packages
+1. Create a Windows Forms project in Visual Studio.
 
-To create the Windows Forms application with TabControlAdv, the following nuget packages should be installed.
+2. Find TabControlAdv by typing the name of the TabControlAdv in the search box.
 
-<table>
-<tr>
-<td>{{'**S.no**'| markdownify }}
-</td>
-<td>{{'**Framework version**'| markdownify }}
-</td>
-<td>{{'**NuGet Packages**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td> 1
-</td>
-<td> 2.0
-</td>
-<td> Syncfusion.Tools.Windows20
-</td>
-</tr>
-<tr>
-<td> 2
-</td>
-<td> 3.5
-</td>
-<td> Syncfusion.Tools.Windows35
-</td>
-</tr>
-<tr>
-<td> 3
-</td>
-<td> 4.0
-</td>
-<td> Syncfusion.Tools.Windows40
-</td>
-</tr>
-<tr>
-<td> 4
-</td>
-<td> 4.5
-</td>
-<td> Syncfusion.Tools.Windows45
-</td>
-</tr>
-<tr>
-<td> 5
-</td>
-<td> 4.5.1
-</td>
-<td> Syncfusion.Tools.Windows451
-</td>
-</tr>
-<tr>
-<td> 6
-</td>
-<td> 4.6
-</td>
-<td> Syncfusion.Tools.Windows46
-</td>
-</tr>
-</table>
+   ![](GettingStarted_images/Search.png)
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+3. Drag TabControlAdv and drop it in the designer.
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+   ![](GettingStarted_images/ControlAdded.png)
+   
+4. Add TabPages to the control in the designer in the following ways.
 
-# Creating simple application with TabControlAdv
+5. Right-click on the TabControlAdv and select the Add Tab option. This adds a TabPage to the TabControlAdv.
 
-You can create the Windows Forms application with TabControlAdv control as follows:
+   ![](GettingStarted_images/GettingStarted_img3.jpeg)
 
-1. [Creating the project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Add TabPages](#add-tabpages)
 
-### Creating the project
+6. In the properties window, select the TabPages property. The TabPageAdv Collection Editor will be opened. Click Add, a TabPage will be added to the TabControlAdv.
 
-Create a new Windows Forms project in the Visual Studio to display the TabControlAdv.
+  ![](GettingStarted_images/GettingStarted_img4.jpeg)
 
-## Adding control via designer
 
-The TabControlAdv control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
-   * Syncfusion.Grid.Base.dll
+  ![](GettingStarted_images/GettingStarted_img5.jpeg)
+
+
+
+  ![](GettingStarted_images/GettingStarted_img6.jpeg)
+
+
+
+## Through code
+
+The following steps help to add TabControlAdv through code. 
+
+1. Create a Windows Forms project in Visual Studio and include following assemblies.
+
    * Syncfusion.Grid.Windows.dll
+   * Syncfusion.Grid.Base.dll
    * Syncfusion.Shared.Base.dll
    * Syncfusion.Shared.Windows.dll
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
- ![](GettingStarted_images/Search.png)
-
- The following screenshot illustrates after drag and dropping the TabControlAdv from the ToolBox:
-
- ![](GettingStarted_images/ControlAdded.png)
-
-## Adding control manually in code
-
-To add control manually in C#, follow the given steps:
-
-**Step1:** Add the following required assembly references to the project:
-
-   * Syncfusion.Grid.Base.dll
-   * Syncfusion.Grid.Windows.dll
-   * Syncfusion.Shared.Base.dll
-   * Syncfusion.Shared.Windows.dll
-   * Syncfusion.Tools.Base.dll
-   * Syncfusion.Tools.Windows.dll
-
-**Step2:** Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+2. Create an instance of TabControlAdv and TabPageAdv using it namespace.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Windows.Forms.Tools;
+Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv1 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
 
-{% endhighlight  %}
+Syncfusion.Windows.Forms.Tools.TabPageAdv tabPageAdv1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+
+{% endhighlight %}
+
 
 {% highlight VB %}
 
-Imports Syncfusion.Windows.Forms.Tools
+Dim tabControlAdv1 As New Syncfusion.Windows.Forms.Tools.TabControlAdv()
 
-{% endhighlight  %}
+Dim tabPageAdv1 As New Syncfusion.Windows.Forms.Tools.TabPageAdv()
+
+
+{% endhighlight %}
 
 {% endtabs %}
 
-**Step3:** Create an instance of `TabControlAdv` and add it to the form.
+3. The following code creates a TabControlAdv with TabPageAdv.
 
 {% tabs %}
 
 {% highlight C# %}
 
-TabControlAdv tabControlAdv1 = new TabControlAdv();
+private void Form1_Load(object sender, System.EventArgs e)
+{
 
-this.Controls.Add(tabControlAdv1);
+//Initialize the tabControlAdv and tabPageAdv
 
-{% endhighlight  %}
+this.tabControlAdv1 = new TabControlAdv();
 
-{% highlight VB %}
+this.tabPageAdv1 = new TabPageAdv();
 
-Dim tabControlAdv1 As TabControlAdv  = New TabControlAdv()
 
-Me.Controls.Add(tabControlAdv1)
 
-{% endhighlight  %}
-
-{% endtabs %}
-
-## Add TabPages
-
-TabPages can be added to TabControlAdv through designer by right clicking on the `TabControlAdv` and select the Add Tab option.
-
-![](GettingStarted_images/AddingTabs.png)
- 
-We can also add tabs with the help of TabPageAdv Collection Editor. In the TabPageAdv Collection Editor, we can add the tabs by clicking `Add` button.
-
-![](GettingStarted_images/TabPageCollectionEditor.png)
-
-This can also be done programmatically by using the following code examples.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful);
-
-TabPageAdv tabPageAdv1 = new TabPageAdv();
-
-this.tabPageAdv1.Text = "tabPageAdv1";
+//Add the TabPageAdv to the TabControlAdv.
 
 this.tabControlAdv1.Controls.Add(this.tabPageAdv1);
 
-{% endhighlight  %}
+
+
+//Set the location of the TabControlAdv
+
+this.tabControlAdv1.Location = new Point(16, 24);
+
+
+
+//Set the text of the TabPageAdv
+
+this.tabPageAdv1.Text = "TabPage1";
+
+
+
+//Add the TabControlAdv to your form                
+
+this.Controls.AddRange(new Control[] { this.tabControlAdv1});
+
+}
+
+{% endhighlight %}
 
 {% highlight VB %}
 
-Me.tabControlAdv1.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-Dim tabPageAdv1 As TabPageAdv  = New TabPageAdv()
+
+
+'Initialize the tabControlAdv and tabPageAdv
+
+Me.tabControlAdv1 = New TabControlAdv()
+
+Me.tabPageAdv1 = New TabPageAdv()
+
+
+
+'Add the TabPageAdv to the TabControlAdv.
 
 Me.tabControlAdv1.Controls.Add(Me.tabPageAdv1)
 
-Me.tabPageAdv1.Text = "tabPageAdv1"
 
-{% endhighlight  %}
+
+'Set the location of the TabControlAdv
+
+Me.tabControlAdv1.Location = New Point(16, 24)
+
+
+
+'Set the text of the TabPageAdv
+
+Me.tabPageAdv1.Text = "TabPage1"
+
+
+'Add the TabControlAdv to your form                
+
+Me.Controls.AddRange(New Control() {Me.tabControlAdv1})
+
+End Sub
+		
+{% endhighlight %}
 
 {% endtabs %}
 
- ![](GettingStarted_images/TabControlAdv.png)
+	
+![](GettingStarted_images/GettingStarted_img6.jpeg)
+
