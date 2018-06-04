@@ -288,7 +288,7 @@ RaisePropertyChanged("OrderDate");
 
 /// <param name="disc">The disc.</param>
 
-public OrderDetails(int orderID, int prod, decimal unit, Int16 quantity, double disc, string cusId, DateTime orderDt)
+public OrderDetails(int orderID, int prod, decimal unit, Int16 quantity, double disc, string customerId, DateTime orderDt)
 
 {
 
@@ -302,7 +302,7 @@ this._Quantity = quantity;
 
 this._UnitPrice = unit;
 
-this._customerID = cusId;
+this._customerID = customerId;
 
 this._orderDate = orderDt;
 
@@ -891,7 +891,7 @@ End Property
 
 ''' <param name="disc">The disc.</param>
 
-Public Sub New(ByVal orderID As Integer, ByVal product As Integer, ByVal unit As Decimal, ByVal quantity As Int16, ByVal disc As Double, ByVal cusId As String, ByVal orderDt As DateTime)
+Public Sub New(ByVal orderID As Integer, ByVal product As Integer, ByVal unit As Decimal, ByVal quantity As Int16, ByVal disc As Double, ByVal customerId As String, ByVal orderDt As DateTime)
 
 Me._Discount = disc
 
@@ -903,7 +903,7 @@ Me._Quantity = quantity
 
 Me._UnitPrice = unit
 
-Me._customerID = cusId
+Me._customerID = customerId
 
 Me._orderDate = orderDt
 
@@ -1600,47 +1600,47 @@ string[] usa = new string[] { "Albuquerque", "Anchorage", "Boise", "Butte", "Elg
 
 string[] venezuela = new string[] { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" };
 
-ShipCity.Add("Argentina", argentina);
+ShipCity.Add("Argentina", Argentina);
 
-ShipCity.Add("Austria", austria);
+ShipCity.Add("Austria", Austria);
 
-ShipCity.Add("Belgium", belgium);
+ShipCity.Add("Belgium", Belgium);
 
-ShipCity.Add("Brazil", brazil);
+ShipCity.Add("Brazil", Brazil);
 
-ShipCity.Add("Canada", canada);
+ShipCity.Add("Canada", Canada);
 
-ShipCity.Add("Denmark", denmark);
+ShipCity.Add("Denmark", Denmark);
 
-ShipCity.Add("Finland", finland);
+ShipCity.Add("Finland", Finland);
 
-ShipCity.Add("France", france);
+ShipCity.Add("France", France);
 
-ShipCity.Add("Germany", germany);
+ShipCity.Add("Germany", Fermany);
 
-ShipCity.Add("Ireland", ireland);
+ShipCity.Add("Ireland", Ireland);
 
-ShipCity.Add("Italy", italy);
+ShipCity.Add("Italy", Italy);
 
-ShipCity.Add("Mexico", mexico);
+ShipCity.Add("Mexico", Mexico);
 
-ShipCity.Add("Norway", norway);
+ShipCity.Add("Norway", Norway);
 
-ShipCity.Add("Poland", poland);
+ShipCity.Add("Poland", Poland);
 
-ShipCity.Add("Portugal", portugal);
+ShipCity.Add("Portugal", Portugal);
 
-ShipCity.Add("Spain", spain);
+ShipCity.Add("Spain", Spain);
 
-ShipCity.Add("Sweden", sweden);
+ShipCity.Add("Sweden", Sweden);
 
-ShipCity.Add("Switzerland", switzerland);
+ShipCity.Add("Switzerland", Switzerland);
 
-ShipCity.Add("UK", uk);
+ShipCity.Add("UK", Uk);
 
 ShipCity.Add("USA", usa);
 
-ShipCity.Add("Venezuela", venezuela);
+ShipCity.Add("Venezuela", Venezuela);
 
 }
 
@@ -1945,7 +1945,7 @@ End Function
 
 ''' <summary>
 
-''' Getors the specified i.
+''' Gets the specified i.
 
 ''' </summary>
 
@@ -1957,7 +1957,7 @@ Public Function getOrder(ByVal i As Integer) As List(Of OrderDetails)
 
 Dim order As New List(Of OrderDetails)()
 
-For Each [or] In ord
+For Each [or] In orders
 
 If [or].OrderID = i Then
 
@@ -2025,47 +2025,47 @@ Dim usa() As String = { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "
 
 Dim venezuela() As String = { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" }
 
-ShipCity.Add("Argentina", argentina)
+ShipCity.Add("Argentina", Argentina)
 
-ShipCity.Add("Austria", austria)
+ShipCity.Add("Austria", Austria)
 
-ShipCity.Add("Belgium", belgium)
+ShipCity.Add("Belgium", Belgium)
 
-ShipCity.Add("Brazil", brazil)
+ShipCity.Add("Brazil", Brazil)
 
-ShipCity.Add("Canada", canada)
+ShipCity.Add("Canada", Canada)
 
-ShipCity.Add("Denmark", denmark)
+ShipCity.Add("Denmark", Denmark)
 
-ShipCity.Add("Finland", finland)
+ShipCity.Add("Finland", Finland)
 
-ShipCity.Add("France", france)
+ShipCity.Add("France", France)
 
-ShipCity.Add("Germany", germany)
+ShipCity.Add("Germany", Germany)
 
-ShipCity.Add("Ireland", ireland)
+ShipCity.Add("Ireland", Ireland)
 
-ShipCity.Add("Italy", italy)
+ShipCity.Add("Italy", Italy)
 
-ShipCity.Add("Mexico", mexico)
+ShipCity.Add("Mexico", Mexico)
 
-ShipCity.Add("Norway", norway)
+ShipCity.Add("Norway", Norway)
 
-ShipCity.Add("Poland", poland)
+ShipCity.Add("Poland", Poland)
 
-ShipCity.Add("Portugal", portugal)
+ShipCity.Add("Portugal", Portugal)
 
-ShipCity.Add("Spain", spain)
+ShipCity.Add("Spain", Spain)
 
-ShipCity.Add("Sweden", sweden)
+ShipCity.Add("Sweden", Sweden)
 
-ShipCity.Add("Switzerland", switzerland)
+ShipCity.Add("Switzerland", Switzerland)
 
-ShipCity.Add("UK", uk)
+ShipCity.Add("UK", Uk)
 
 ShipCity.Add("USA", usa)
 
-ShipCity.Add("Venezuela", venezuela)
+ShipCity.Add("Venezuela", Venezuela)
 
 End Sub
 
@@ -2217,9 +2217,9 @@ using (SqlCeConnection con = new SqlCeConnection(connectionString))
 
 con.Open();
 
-SqlCeDataAdapter sda = new SqlCeDataAdapter("SELECT * FROM Suppliers", con);
+SqlCeDataAdapter sqlDataAdapter = new SqlCeDataAdapter("SELECT * FROM Suppliers", con);
 
-sda.Fill(ds, "Suppliers");
+sqlDataAdapter.Fill(ds, "Suppliers");
 
 }
 
@@ -2266,9 +2266,9 @@ Using con As New SqlCeConnection(connectionString)
 
 con.Open()
 
-Dim sda As New SqlCeDataAdapter("SELECT * FROM Suppliers", con)
+Dim sqlDataAdapter As New SqlCeDataAdapter("SELECT * FROM Suppliers", con)
 
-sda.Fill(ds, "Suppliers")
+sqlDataAdapter.Fill(ds, "Suppliers")
 
 End Using
 
@@ -2876,7 +2876,7 @@ End Sub
 
 You can handle the `DetailsViewDataGrid` events by wiring the events to `GridViewDefinition.DataGrid` where the sender is `GridViewDefinition.DataGrid`. In another way, you can also handle `DetailsViewDataGrid` event through parent DataGrid event by setting the NotifyEventsToParentDataGrid property of `GridViewDefinition.DataGrid`.
 
-### When manually definiting relations
+### When manually defining relations
 
 For manually defined relation, the events can be wired from the `GridViewDefinition.DataGrid` directly.
 
@@ -3336,7 +3336,7 @@ private void SfDataGrid_ColumnResizing(object sender, ColumnResizingEventArgs e)
 
 var grid = sender as SfDataGrid;
 
-// For detailsview grid, sender will be RootDataGrid. So need to get OriginalSender
+// For details view grid, sender will be RootDataGrid. So need to get OriginalSender
 
 if (e.OriginalSender is DetailsViewDataGrid)
 
@@ -3418,9 +3418,9 @@ if (columnIndex < 0)
 
 return;
 
-var parentstartcolumnnIndex = grid.TableControl.ResolveToStartColumnIndex();
+var parentStartColumnIndex = grid.TableControl.ResolveToStartColumnIndex();
 
-var indentcolumnsWidth = 0;
+var indentColumnsWidth = 0;
 
 foreach (var definition in grid.DetailsViewDefinitions)
 
@@ -3428,13 +3428,13 @@ foreach (var definition in grid.DetailsViewDefinitions)
 
 var detailsViewDataGrid = (definition as GridViewDefinition).DataGrid;
 
-var startcolumnnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex();
+var startColumnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex();
 
-indentcolumnsWidth = startcolumnnIndex * 24;
+indentColumnsWidth = startColumnIndex * 24;
 
-var tempWidth = width - indentcolumnsWidth < 0 ? 0 : width - indentcolumnsWidth;
+var tempWidth = width - indentColumnsWidth < 0 ? 0 : width - indentColumnsWidth;
 
-detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentstartcolumnnIndex ? tempWidth : width;
+detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentStartColumnIndex ? tempWidth : width;
 
 // If DetailsViewDataGrid has DetailsViewDefinition, recursively set width upto all levels
 
@@ -3455,7 +3455,7 @@ Private Sub SfDataGrid_ColumnResizing(ByVal sender As Object, ByVal e As ColumnR
 
 Dim grid = TryCast(sender, SfDataGrid)
 
-' For detailsview grid, sender will be RootDataGrid. So need to get OriginalSender
+' For details view grid, sender will be RootDataGrid. So need to get OriginalSender
 
 If TypeOf e.OriginalSender Is DetailsViewDataGrid Then
 
@@ -3547,21 +3547,21 @@ Return
 
 End If
 
-Dim parentstartcolumnnIndex = grid.TableControl.ResolveToStartColumnIndex()
+Dim parentStartColumnIndex = grid.TableControl.ResolveToStartColumnIndex()
 
-Dim indentcolumnsWidth = 0
+Dim indentColumnsWidth = 0
 
 For Each definition In grid.DetailsViewDefinitions
 
 Dim detailsViewDataGrid = (TryCast(definition, GridViewDefinition)).DataGrid
 
-Dim startcolumnnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex()
+Dim startColumnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex()
 
-indentcolumnsWidth = startcolumnnIndex * 24
+indentColumnsWidth = startColumnIndex * 24
 
-Dim tempWidth = If(width - indentcolumnsWidth < 0, 0, width - indentcolumnsWidth)
+Dim tempWidth = If(width - indentColumnsWidth < 0, 0, width - indentColumnsWidth)
 
-detailsViewDataGrid.Columns(columnIndex).Width = If(scrollColumnIndex Is parentstartcolumnnIndex, tempWidth, width)
+detailsViewDataGrid.Columns(columnIndex).Width = If(scrollColumnIndex Is parentStartColumnIndex, tempWidth, width)
 
 ' If DetailsViewDataGrid has DetailsViewDefinition, recursively set width upto all levels
 
