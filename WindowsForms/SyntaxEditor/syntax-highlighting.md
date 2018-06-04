@@ -9,11 +9,11 @@ documentation: ug
 
 # Syntax Highlighting 
 
-Provides built-in syntax highlighting support for popular languages like C#, VB.NET, XML, HTML, Java, SQL, PowerShell, C, JavaScript, VBScript and Delphi.
+Provides built-in syntax highlighting support for popular languages like C#, VB.NET, XML, HTML, Java, SQL, PowerShell, C, JavaScript, VBScript, and Delphi.
 
-## Configure built in language
+## Configure built-in language
 
-Syntax highlighting of built-in languages can be applied using enumerator named [KnownLanguages](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) and function named [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html).   
+Syntax highlighting built-in languages can be applied by using [KnownLanguages](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function. 
 
 **CSharp** 
 
@@ -39,7 +39,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 {% endtabs %}
 
 
-[LoadFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadFile.html) function in EditControl helps to loads the content of any desired file into the EditControl, instead of typing the code in it.
+The [LoadFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadFile.html) function in the EditControl helps to load the content of any desired file into the EditControl instead of typing the code in it.
 
 {% tabs %}
 
@@ -361,18 +361,18 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img12.png)
 
-N> Refer to the following sample link that demonstrates the `SyntaxHighlighting` functionalities of EditControl.
+N> Refer to the following sample link that demonstrates the `SyntaxHighlighting` functionalities of the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
 
-## Customize built in language settings
+## Customize built-in language settings
 
-EditControl provides support to customize the built in language configuration settings. The following code example demonstrates C# language customization:
+The EditControl provides support to customize the built-in language configuration settings.
 
-### Initialize the configuration language.
+### Initialize the configuration language
 
-In EditControl, languages need to be configured in XML file named Config.xml. 
+In the EditControl, languages should be configured in XML file named Config.xml. 
 
-Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
+Name of the language must be set by using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
 
 {% highlight xaml %}
 
@@ -396,7 +396,7 @@ Name of the language must be set using the name attribute of the `ConfigLanguage
 
 ### Format 
 
-It contains a list of definitions of the formats that can be used later in lexem configuration. Every format contains the attributes such as name, font,foreground color, font color, background color, style, weight, underline and line color.
+It contains a list of definitions of the formats that can be used later in lexem configuration. Every format contains the attributes such as name, font,foreground color, font color, background color, style, weight, underline, and line color.
 
 {% highlight xaml %}
 
@@ -408,9 +408,9 @@ It contains a list of definitions of the formats that can be used later in lexem
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img23.png)
 
-### Font Color
+### Font color
 
-Font color of any format in the specified language can be customized using `FontColor` property of Format tag. 
+Font color of any format in the specified language can be customized by using the `FontColor` property of Format tag. 
 
 {% highlight xaml %}
 
@@ -429,8 +429,8 @@ Font color of any format in the specified language can be customized using `Font
 
 Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of lexems helps to specify the format of the lexem. 
 
-* **Type** - Used for Standard predefined types of the lexems. 
-* **FormatName** - It is used only when the type is Custom.
+* Type: Used for standard predefined types of the lexems. 
+* FormatName: Used when the type is Custom.
 
 {% highlight xaml %}
 
@@ -443,7 +443,7 @@ Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of
 
 #### SubLexems
 
-Sublexems that must be skipped if they are found after BeginBlock string before EndBlock string. 
+Sublexems must be skipped if they are found after BeginBlock string and before EndBlock string. 
 
 {% highlight xaml %}
 
@@ -455,7 +455,7 @@ Sublexems that must be skipped if they are found after BeginBlock string before 
 
 #### Collapsible region
 
-Collapsible region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`, as given below. 
+Collapsible region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`. 
 
 {% highlight xaml %}
 
@@ -471,7 +471,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-The above code example works only when [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in EditControl is `true`.
+This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in EditControl is `true`.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img30.png)
 
@@ -515,7 +515,7 @@ Custom operators can be added or existing operators can be customized in built-i
 
 A regular expression is a pattern that could be matched against any input text. 
 
-For example, if you like to customize the strings that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as `true` based on the expression given in the lexem.
+For example, to customize the strings ends with !, set the regex property of `IsBeginRegex` and `IsEndRegex` to `true` based on the expression given in the lexem.
 
 {% highlight xaml %}
 
@@ -539,7 +539,7 @@ For example, if you like to customize the strings that ends with !, this can be 
 
 #### Error words highlighting
 
-Error lexems can be added to the language by declaring a format names Error and it can be highlighted using underlines. Below code is an example of declaring "#endregion" as error if #region is not BeginBlock, priority values assigned to order the interrupt.
+Error lexems can be added to the language by declaring a format names Error. It can be highlighted using underlines. Following code is an example of declaring "#endregion" as error. If #region is not BeginBlock, priority values will be assigned to order the interrupt.
 
 {% highlight xaml %}
 
@@ -562,7 +562,7 @@ Error lexems can be added to the language by declaring a format names Error and 
 
 ### Splits
 
-Splits helps to configure two different words as a single. For example, consider # and region that can be treated as single word by using `Split` configuration.
+Splits helps to configure two different words as single. For example, consider # and region that can be treated as single word by using `Split` configuration.
 
 {% highlight xaml %}
 
@@ -587,8 +587,6 @@ Splits helps to configure two different words as a single. For example, consider
 ### Auto replace triggers
 
 `AutoReplaceTriggers` attribute helps to auto corrects the incorrect spelling of lexems.
-
-The following code demonstrates auto corrects int and the, if they misspelled as itn and teh respectively.
 
 {% highlight xaml %}
 
@@ -625,11 +623,11 @@ Me.editControl1.UseAutoreplaceTriggers = True
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img41.png)
 
-N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute and `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
+N> To enable this feature, set the `TriggersActivators` property of ConfigLanguage tag attribute and the `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
 
 ### File extension
 
-Extensions contain a list of extensions that are associated with that particular language.
+Extensions contain a list of extensions associated with that particular language.
 
 {% highlight xaml %}
 <extensions>
@@ -639,7 +637,7 @@ Extensions contain a list of extensions that are associated with that particular
 
 ### Apply custom configuration in EditControl
 
-The following code examples help you to configure the configuration file in the EditControl.
+The following code examples helps you to configure the configuration file in the EditControl.
 
 {% tabs %}
 
@@ -676,15 +674,13 @@ Me.editControl1.ApplyConfiguration("C#")
 
 ## Custom language using XML
 
-EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) functions in EditControl.
+The EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) functions.
 
 ### Initialize the configuration language.
 
-In EditControl, languages need to be configured in XML file named Config.xml. 
+In the EditControl, languages should be configured in XML file named Config.xml. 
 
-Name of the language must be set using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
-
-The following code example demonstrates the same.
+Name of the language must be set by using the name attribute of the `ConfigLanguage` tag attribute. When the language is case insensitive, you should set the `CaseInsensitive` attribute to `true`.
 
 {% highlight xaml %}
 
@@ -720,9 +716,9 @@ It contains a list of definitions of the formats that can be used later in lexem
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img24.png)
 
-### Font Color
+### Font color
 
-Font color of any format in the specified language can be customized using `FontColor` property of Format tag. 
+Font color of any format in the specified language can be customized by using the `FontColor` property of Format tag. 
 
 {% highlight xaml %}
 
@@ -738,8 +734,8 @@ Font color of any format in the specified language can be customized using `Font
 
 Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of lexems helps to specify the format of the lexem. 
 
-* **Type** - Used for Standard predefined types of the lexems. 
-* **FormatName** - It is used only when the type is Custom.
+* Type: Used for standard predefined types of the lexems. 
+* FormatName: Used when the type is Custom.
 
 {% highlight xaml %}
 
@@ -758,7 +754,7 @@ Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of
 
 #### SubLexems
 
-Sublexems that must be skipped if they are found after BeginBlock string before EndBlock string. 
+Sublexems must be skipped if they are found after BeginBlock string and before EndBlock string. 
 
 {% highlight xaml %}
 
@@ -770,7 +766,7 @@ Sublexems that must be skipped if they are found after BeginBlock string before 
 
 #### Collapsible region
 
-Collapsible region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`, as given below.
+Collapsible region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`.
 
 {% highlight xaml %}
 
@@ -786,7 +782,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-The above code example works only when [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in EditControl is `true`.
+This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in the EditControl is `true`.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img39.png)
 
@@ -831,7 +827,7 @@ Custom operators can be added or existing operators can be customized in built-i
 
 A regular expression is a pattern that could be matched against any input text. 
 
-For example, if you like to customize the strings that ends with !, this can be achieved by using the regex property of `IsBeginRegex` and `IsEndRegex` as true based on the expression given in the lexem.
+For example, to customize the strings that ends with !, set the regex property of `IsBeginRegex` and `IsEndRegex` to true based on the expression given in the lexem.
 
 {% highlight xaml %}
 
@@ -899,8 +895,6 @@ Splits helps to configure two different words as a single. For example, consider
 
 `AutoReplaceTriggers` attribute helps to auto corrects the incorrect spelling of lexems.
 
-The following code demonstrates auto corrects int and the, if they misspelled as itn and teh respectively.
-
 {% highlight xaml %}
 
 <ConfigLanguage name="C#" TriggersActivators=".">
@@ -934,11 +928,11 @@ Me.editControl1.UseAutoreplaceTriggers = True
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img42.png)
 
-N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute and `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
+N> To enable this feature, set the `TriggersActivators` property of ConfigLanguage tag attribute and the `UseAutoreplaceTriggers` property of the EditControl should be set to `true`.
 
 ### File extension
 
-Extensions contain a list of extensions that are associated with that particular language.
+Extensions contain a list of extensions associated with that particular language.
 
 {% highlight xaml %}
 
@@ -950,9 +944,7 @@ Extensions contain a list of extensions that are associated with that particular
 
 ### Multiple language configuration
 
-EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration.
-
-The following code example illustrates HTML with JScript language configuration.
+The EditControl supports multiple language configuration helps to configure one or more languages in single language configuration.
 
 {% highlight xaml %}
 
@@ -992,7 +984,7 @@ The following code example illustrates HTML with JScript language configuration.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
 
-N> Refer to the following sample link that demonstrates the Custom language configuration in EditControl.
+N> Refer to the following sample link that demonstrates the Custom language configuration in the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
 
 ### Apply custom configuration in EditControl
@@ -1030,12 +1022,12 @@ Me.editControl1.ApplyConfiguration("C++")
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the Custom language configuration in EditControl.
+N> Refer to the following sample link that demonstrates the Custom language configuration in the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Custom Config
 
 ## Configure custom language using code
 
-EditControl also offers extensive support to create configuration settings programmatically. This provides greater flexibility so that users can dynamically modify configuration settings of the currently loaded configuration as per their requirements. The following procedure will walk you through the entire process of creating configuration settings programmatically.
+The EditControl also offers extensive support to create configuration settings programmatically. This provides greater flexibility so that users can dynamically modify configuration settings of the currently loaded configuration. The following procedure will walks through the entire process of creating configuration settings programmatically.
 
 ### Add new configuration language to EditControl
 
@@ -1068,7 +1060,7 @@ Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 
 ### Format configuration
 
-Create a custom format object by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in EditControl and define its attributes.
+Create a custom format object by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl and defines its attributes.
 
 {% tabs %}
 
@@ -1132,7 +1124,7 @@ formatMethod.Font = new Font("Garamond", 17)
 
 ### Lexem configuration
 
-Create a [ConfigLexem](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.ConfigLexem.html) object that belongs to the above defined format and define its attributes. Add the ConfigLexem object to the Lexems collection of the current language.
+Create a [ConfigLexem](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.ConfigLexem.html) object belongs to the above defined format and define its attributes. Add the ConfigLexem object to the Lexems collection of the current language.
 
 {% tabs %}
 
@@ -1161,7 +1153,7 @@ Me.editControl1.Language.Lexems.Add(stuff)
 
 ### Keywords configuration
 
-Create a custom format object named `keyword` by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in EditControl.
+Create a custom format object named `keyword` by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl.
 
 {% tabs %}
 
@@ -1228,7 +1220,7 @@ Me.editControl1.Language.Lexems.Add(cons)
 
 ### Operators configuration
 
-Create a custom format object named `Operators` by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in EditControl.
+Create a custom format object named `Operators` by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl.
 
 {% tabs %}
 
@@ -1295,7 +1287,7 @@ A regular expression is a pattern that could be matched against any input text.
 
 #### Color configuration
 
-Color configuration for custom formats can be defined using its built-in color properties such as FontColor, BackColor, ForeColor, LineColor and BorderColor properties.
+Color configuration for custom formats can be defined by using its built-in color properties such as FontColor, BackColor, ForeColor, LineColor, and BorderColor properties.
 
 {% tabs %}
 
@@ -1334,7 +1326,7 @@ formatMethod.BorderColor = Color.Green
 
 #### Error words highlighting
 
-Error lexems can be added to the language by declaring a format names `Error` and it can be highlighted using underlines. Below code is an simple example for declaring a misspelled lexem as error and highlight them.
+Error lexems can be added to the language by declaring a format names `Error`. It can be highlighted by using underlines.
 
 {% tabs %}
 
@@ -1385,7 +1377,7 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
 ### Splits configuration
 
-Splits helps to configure two different words as a single. For example, consider # and region that can be treated as single word by using `Split` configuration. This can be done by adding the appropriate splits to the [Language.Splits](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~Splits.html) collections.
+Splits helps to configure two different words as single. For example, consider # and region that can be treated as single word by using `Split` configuration. This can be done by adding the appropriate splits to the [Language.Splits](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~Splits.html) collections.
 
 {% tabs %}
 
@@ -1444,9 +1436,7 @@ Me.editControl1.Language.Splits.Add(split)
 
 ### Auto replace triggers
 
-Create a AutoReplaceTrigger object using `AutoReplaceTrigger` class, where those "from" and "to" can be passed while initializing. And add it to the [Language.AutoReplaceTriggers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~AutoReplaceTriggers.html) collections.
-
-Below code is an example for replace "the" if it is misspelled as "teh" in AutoReplaceTrigger.  
+Create a AutoReplaceTrigger object using `AutoReplaceTrigger` class where those "from" and "to" can be passed while initializing. Add it to the [Language.AutoReplaceTriggers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~AutoReplaceTriggers.html) collections.
 
 {% tabs %}
 
@@ -1487,7 +1477,7 @@ N> To enable this feature, we must set the `TriggersActivators` property of Conf
 
 ### File extension
 
-Add the appropriate extensions to the [Language.Extensions](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~Extensions.html) collections.
+Add appropriate extensions to the [Language.Extensions](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~Extensions.html) collections.
 
 {% tabs %}
 
@@ -1512,9 +1502,7 @@ Me.editControl1.Language.Extensions.Add("lisp")
 
 ### Multiple language configuration
 
-EditControl supports multiple language configuration, which helps to configure one or more language in single language configuration.
-
-The following code example illustrates HTML with JScript language configuration.
+The EditControl supports multiple language configuration helps to configure one or more languages in single language configuration.
 
 {% tabs %}
 
@@ -1759,7 +1747,7 @@ The following code example illustrates HTML with JScript language configuration.
 
 ### Invoking newly added configuration language
 
-Invoke the [ResetCaches](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~ResetCaches.html) function to apply these newly added configuration settings.
+Invoke the [ResetCaches](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~ResetCaches.html) function to apply the newly added configuration settings.
 
 {% tabs %}
 
@@ -1784,11 +1772,9 @@ Me.editControl1.Language.ResetCaches()
 
 ## Configure syntax highlighting through dialog box
 
-Syntax Highlighting and Code Coloring can also be implemented at run time by using the `Language Coloring Configuration Editor` and can be customized by using class named [ConfigurationDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.ConfigurationDialog.html) and Interface named [IConfig](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfig.html).
+Syntax highlighting and code coloring can be implemented at runtime by using the `Language Coloring Configuration Editor`. It can be customized by using [ConfigurationDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.ConfigurationDialog.html) class and [IConfig](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfig.html) interface.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img14.png)
-
-The Language Coloring Configuration Editor can be invoked programmatically as follows.
 
 {% tabs %}
 
