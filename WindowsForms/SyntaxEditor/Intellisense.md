@@ -251,7 +251,7 @@ End Sub
 
 {% endtabs %}
 
-**ContxtChoiceClose event**
+**ContextChoiceClose event**
 
 {% tabs %}
 
