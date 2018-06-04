@@ -213,23 +213,23 @@ Refer to the following sample shows how to implement the rounded rectangle in th
 
 ## Themes
 
-SfButton offers four built in themes for professional representation as follows.
+The SfButton offers four built-in themes for professional representation as follows:
 
 * Office2016Colorful
 * Office2016White
 * Office2016DarkGray
 * Office2016Black
 
-Theme can be applied to SfButton by following the below steps:
+Themes can be applied to the SfButton by using the following steps:
 
 1. [Load theme assembly](#load-theme-assembly)
 2. [Apply theme](#apply-theme)
 
 ### Load theme assembly
 
-**Syncfusion.Office2016Theme.WinForms** assembly should be added as reference to set theme for SfButton in any application:
+The Syncfusion.Office2016Theme.WinForms assembly should be added as reference to set theme for the SfButton in any application.
 
-Before apply theme to SfButton, required theme assembly should be loaded as follows. 
+Before applying theme to the SfButton, required theme assembly should be loaded. 
 
 {% tabs %}
 
@@ -276,7 +276,7 @@ Imports Syncfusion.WinForms.Controls
 
 ### Apply theme
 
-Appearance of SfButton can be changed by `ThemeName` of SfButton.
+Appearance of the SfButton can be changed by using the `ThemeName`.
 
 #### Office2016Colorful
 
