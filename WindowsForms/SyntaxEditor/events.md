@@ -329,7 +329,7 @@ Indicates whether the action has to be canceled or not.</td></tr>
 <tr>
 <td>
 {{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs~CodeSnippet.html)' | markdownify }}</td><td>
-Indicates the currecntly activated code snippet.</td></tr>
+Indicates the currently activated code snippet.</td></tr>
 <tr>
 <td>
 {{ '[NewSnippetMember](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.NewSnippetMemberHighlightingEventArgs~NewSnippetMember.html)' | markdownify }}</td><td>
