@@ -1558,47 +1558,47 @@ private void SetShipCity()
 
 {
 
-string[] argentina = new string[] { "Buenos Aires" };
+string[] Argentina = new string[] { "Buenos Aires" };
 
-string[] austria = new string[] { "Graz", "Salzburg" };
+string[] Austria = new string[] { "Graz", "Salzburg" };
 
-string[] belgium = new string[] { "Bruxelles", "Charleroi" };
+string[] Belgium = new string[] { "Bruxelles", "Charleroi" };
 
-string[] brazil = new string[] { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" };
+string[] Brazil = new string[] { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" };
 
-string[] canada = new string[] { "Montréal", "Tsawassen", "Vancouver" };
+string[] Canada = new string[] { "Montréal", "Tsawassen", "Vancouver" };
 
-string[] denmark = new string[] { "Århus", "København" };
+string[] Denmark = new string[] { "Århus", "København" };
 
-string[] finland = new string[] { "Helsinki", "Oulu" };
+string[] Finland = new string[] { "Helsinki", "Oulu" };
 
-string[] france = new string[] { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" };
+string[] France = new string[] { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" };
 
-string[] germany = new string[] { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" };
+string[] Germany = new string[] { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" };
 
-string[] ireland = new string[] { "Cork" };
+string[] Ireland = new string[] { "Cork" };
 
-string[] italy = new string[] { "Bergamo", "Reggio Emilia", "Torino" };
+string[] Italy = new string[] { "Bergamo", "Reggio Emilia", "Torino" };
 
-string[] mexico = new string[] { "México D.F." };
+string[] Mexico = new string[] { "México D.F." };
 
-string[] norway = new string[] { "Stavern" };
+string[] Norway = new string[] { "Stavern" };
 
-string[] poland = new string[] { "Warszawa" };
+string[] Poland = new string[] { "Warszawa" };
 
-string[] portugal = new string[] { "Lisboa" };
+string[] Portugal = new string[] { "Lisboa" };
 
-string[] spain = new string[] { "Barcelona", "Madrid", "Sevilla" };
+string[] Spain = new string[] { "Barcelona", "Madrid", "Sevilla" };
 
-string[] sweden = new string[] { "Bräcke", "Luleå" };
+string[] Sweden = new string[] { "Bräcke", "Luleå" };
 
-string[] switzerland = new string[] { "Bern", "Genève" };
+string[] Switzerland = new string[] { "Bern", "Genève" };
 
-string[] uk = new string[] { "Colchester", "Hedge End", "London" };
+string[] UK = new string[] { "Colchester", "Hedge End", "London" };
 
 string[] usa = new string[] { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" };
 
-string[] venezuela = new string[] { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" };
+string[] Venezuela = new string[] { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" };
 
 ShipCity.Add("Argentina", Argentina);
 
@@ -1636,7 +1636,7 @@ ShipCity.Add("Sweden", Sweden);
 
 ShipCity.Add("Switzerland", Switzerland);
 
-ShipCity.Add("UK", Uk);
+ShipCity.Add("UK", UK);
 
 ShipCity.Add("USA", usa);
 
@@ -1939,7 +1939,7 @@ Dim shipCountry = Me.ShipCountry(r.Next(5))
 
 Dim shipCityColl = ShipCity(shipCountry)
 
-Return New OrderInfo() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(1, 10), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipCountry, .ShippingDate = Me.OrderedDates(i - 10000), .IsClosed = If(i Mod 2 = 0, True, False), .ShipCity = shipCityColl(r.Next(shipCityColl.Length - 1)), .OrderDetails = getorder(i)}
+Return New OrderInfo() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(1, 10), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipCountry, .ShippingDate = Me.OrderedDates(i - 10000), .IsClosed = If(i Mod 2 = 0, True, False), .ShipCity = shipCityColl(r.Next(shipCityColl.Length - 1)), .OrderDetails = getOrder(i)}
 
 End Function
 
@@ -1983,47 +1983,47 @@ Private ShipCity As New Dictionary(Of String, String())()
 
 Private Sub SetShipCity()
 
-Dim argentina() As String = { "Buenos Aires" }
+Dim Argentina() As String = { "Buenos Aires" }
 
-Dim austria() As String = { "Graz", "Salzburg" }
+Dim Austria() As String = { "Graz", "Salzburg" }
 
-Dim belgium() As String = { "Bruxelles", "Charleroi" }
+Dim Belgium() As String = { "Bruxelles", "Charleroi" }
 
-Dim brazil() As String = { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" }
+Dim Brazil() As String = { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" }
 
-Dim canada() As String = { "Montréal", "Tsawassen", "Vancouver" }
+Dim Canada() As String = { "Montréal", "Tsawassen", "Vancouver" }
 
-Dim denmark() As String = { "Århus", "København" }
+Dim Denmark() As String = { "Århus", "København" }
 
-Dim finland() As String = { "Helsinki", "Oulu" }
+Dim Finland() As String = { "Helsinki", "Oulu" }
 
-Dim france() As String = { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" }
+Dim France() As String = { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" }
 
-Dim germany() As String = { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" }
+Dim Germany() As String = { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" }
 
-Dim ireland() As String = { "Cork" }
+Dim Ireland() As String = { "Cork" }
 
-Dim italy() As String = { "Bergamo", "Reggio Emilia", "Torino" }
+Dim Italy() As String = { "Bergamo", "Reggio Emilia", "Torino" }
 
-Dim mexico() As String = { "México D.F." }
+Dim Mexico() As String = { "México D.F." }
 
-Dim norway() As String = { "Stavern" }
+Dim Norway() As String = { "Stavern" }
 
-Dim poland() As String = { "Warszawa" }
+Dim Poland() As String = { "Warszawa" }
 
-Dim portugal() As String = { "Lisboa" }
+Dim Portugal() As String = { "Lisboa" }
 
-Dim spain() As String = { "Barcelona", "Madrid", "Sevilla" }
+Dim Spain() As String = { "Barcelona", "Madrid", "Sevilla" }
 
-Dim sweden() As String = { "Bräcke", "Luleå" }
+Dim Sweden() As String = { "Bräcke", "Luleå" }
 
-Dim switzerland() As String = { "Bern", "Genève" }
+Dim Switzerland() As String = { "Bern", "Genève" }
 
-Dim uk() As String = { "Colchester", "Hedge End", "London" }
+Dim UK() As String = { "Colchester", "Hedge End", "London" }
 
 Dim usa() As String = { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" }
 
-Dim venezuela() As String = { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" }
+Dim Venezuela() As String = { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" }
 
 ShipCity.Add("Argentina", Argentina)
 
@@ -2061,7 +2061,7 @@ ShipCity.Add("Sweden", Sweden)
 
 ShipCity.Add("Switzerland", Switzerland)
 
-ShipCity.Add("UK", Uk)
+ShipCity.Add("UK", UK)
 
 ShipCity.Add("USA", usa)
 
