@@ -23,5 +23,5 @@ MetroForm is an advanced standard Form that helps to create fully customizable 
 
 * **RightToLeft** - Supports RightToLeft layout.
 
-* **Caption Labels** - Provides options to add caption labels with design and appearance customization.
+* **Caption Labels** - Provides support to add Label in desired location.
  
