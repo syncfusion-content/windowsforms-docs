@@ -150,7 +150,7 @@ this.sfDataGrid1.Columns["OrderID"].HeaderStyle.Font.Bold = true;
 
 ### Font orientation for Header Row
 
-Font orientation of the header row can be set by using the [HeaderStyle.Font.Oreintation](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HeaderStyle.html) property.
+Font orientation of the header row can be set by using the [HeaderStyle.Font.Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HeaderStyle.html) property.
 
 {% tabs %}
 {% highlight c# %}
