@@ -6,292 +6,296 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Creating an XPTaskBar
-
-This tutorial will show you how a XPTaskBar is created through the following ways.
-
-## Through designer
-
-In this tutorial, we will create a simple XPTaskBar.
-
-1. Add an XPTaskBar control from the toolbox onto your form and a new instance will be placed on your form. Dock the control to the left of the form. Set the DockPadding.All property to '5' on the XPTaskBar so that there will be some space between the XPTaskBar Box children and the XPTaskBar.
-
-   ![](Overview_images/Overview_img93.jpeg)
-
-
-
-
-   ![](Overview_images/Overview_img94.jpeg)
-
-2. To add an XPTaskBar Box, right click on the XPTaskBar control and select the Add Task Box verb. This will add an empty XPTaskBar Box instance. You can change it's Header Text property to change the text of the header.
-
-3. You can also add an XPTaskBar Box using the Add Task Box command in the Property Grid.
-
-   ![](Overview_images/Overview_img95.jpeg)
-
-   ![](Overview_images/Overview_img96.jpeg)
-  
-
-4. Select the newly added XPTaskBar Box and open it's XPTaskBarItem Collection Editor. There you can add one or more XPTaskBar Items specifying the text, image (using the ImageIndex property), etc. for each item. To distinguish one item from the other, you can specify a unique Tag property for each item.
-
-   ![](Overview_images/Overview_img97.jpeg)
-   
-
-   ![](Overview_images/Overview_img98.jpeg)
-   
-   ![](Overview_images/Overview_img99.jpeg)
-
-   ![](Overview_images/Overview_img100.jpeg)
-
-
-N> The XPTaskBar Boxes can also host a Panel control within it. During design time, users can simply drag and drop the panel on the box. In code, users can do this  by adding the panel to the Controls collection of XPTaskBarBox. The panel's width will be resized to fit, whereas it's height will be based on the PreferredChildPanelHeight property setting.
-
-
-## Through code
-
-The following step by step procedure helps you to create XPTaskBar programmatically.
-
-1. Add the namespace Syncfusion.Windows.Forms.Tools.
-
-   {% tabs %}
-
-   {% highlight C# %}
-
-		using Syncfusion.Windows.Forms.Tools;
-
-   {% endhighlight %}
-
-   {% highlight VB %}
-
-
-		Imports Syncfusion.Windows.Forms.Tools
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-
-
-2. Drag and drop an ImageList control onto the form and add images into it through the Images Collection Editor.
-
-3. Create instances for XPTaskBar control, XPTaskBar Box1, XPTaskBar Box2 and ImageList control.
-
-   {% tabs %}
-
-   {% highlight C# %}
-
-		private Syncfusion.Windows.Forms.Tools.XPTaskBar xpTaskBar1;
-
-		private System.Windows.Forms.ImageList imageList1;
-
-		private Syncfusion.Windows.Forms.Tools.XPTaskBarBox xpTaskBarBox1;
-
-		private Syncfusion.Windows.Forms.Tools.XPTaskBarBox xpTaskBarBox2;
-
-
-
-		this.xpTaskBar1 = new Syncfusion.Windows.Forms.Tools.XPTaskBar();
-
-		this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-
-		this.xpTaskBarBox1 = new Syncfusion.Windows.Forms.Tools.XPTaskBarBox();
-
-		this.xpTaskBarBox2 = new Syncfusion.Windows.Forms.Tools.XPTaskBarBox();
-
-   {% endhighlight %}
-
-   {% highlight VB %}
-
-		Private xpTaskBar1 As Syncfusion.Windows.Forms.Tools.XPTaskBar = New XPTaskBar()
-
-		Private imageList1 As System.Windows.Forms.ImageList 
-
-		Private xpTaskBarBox1 As Syncfusion.Windows.Forms.Tools.XPTaskBarBox
-
-		Private xpTaskBarBox2 As Syncfusion.Windows.Forms.Tools.XPTaskBarBox
-
-
-
-		Me.xpTaskBar1 = New Syncfusion.Windows.Forms.Tools.XPTaskBar() 
-
-		Me.imageList1 = New System.Windows.Forms.ImageList(Me.components) 
-
-		Me.xpTaskBarBox1 = New Syncfusion.Windows.Forms.Tools.XPTaskBarBox() 
-
-		Me.xpTaskBarBox2 = New Syncfusion.Windows.Forms.Tools.XPTaskBarBox()
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-4. Add XPTaskBar to the control collection.
-
-   {% tabs %}
-
-   {% highlight C# %}
-
-		this.Controls.Add(this.xpTaskBar1);
-
-   {% endhighlight %}
-
-   {% highlight VB %}
-
-		Me.Controls.Add(Me.xpTaskBar1)
-   
-   {% endhighlight %}
-
-   {% endtabs %}
-
-5. Set the ImageList to XPTaskBar Box1 and XPTaskBar Box2.
-
+# Getting started
+
+This section describes how to add `XPTaskBar` control in a Windows Forms application and overview of its basic functionalities.
+
+## Assembly deployment
+
+The following list of assemblies should be added as reference to use the XPTaskBar in any application:
+
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base.dll
+</td>
+<td>
+Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Windows.dll
+</td>
+<td>
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the XPTaskBar control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base.dll
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of XPTaskBar and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Windows.dll
+</td>
+<td>
+Syncfusion.Shared.Windows contains style related properties of XPTaskBar and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Base.dll
+</td>
+<td>
+Syncfusion.Tools.Base contains base class which used for XPTaskBar control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows.dll
+</td>
+<td>
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of XPTaskBar control.
+</td>
+</tr>
+</table>
+
+
+## Installing NuGet Packages
+
+To use XPTaskBar control in Windows Forms application via nuget, the following packages should be installed.
  
-  {% tabs %}
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Tools.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Tools.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Tools.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Tools.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td>Syncfusion.Tools.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td>Syncfusion.Tools.Windows46
+</td>
+</tr>
+</table>
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
+
+# Creating simple application with XPTaskBar
+
+You can create the Windows Forms application with XPTaskBar control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Adding control via Form Designer](#adding-control-via-form-designer)
+3. [Adding control manually using code](#adding-control-manually-using-code)
+
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the XPTaskBar with  functionalities.
+
+## Adding control via Form designer
+
+The XPTaskBar control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+
+![](Overview_images/XPTaskBar_Img1.png)
+
+**Adding XPTaskBarBox**
+
+To add XPTaskBarBox, click on `Add TaskBarBox` in Smart Tag of XPTaskBar in design view.
+
+![](Overview_images/XPTaskBar_Img2.png)
+
+**Adding XPTaskBarItems**
+
+XPTaskBarItems can be added to XPTaskBarBox using `Items` collection, in Smart Tag of XPTaskBarBox in design view.
+
+![](Overview_images/XPTaskBar_Img4.png)
+
+## Adding control manually using code
 
-  {% highlight C# %}
+To add control manually in C#, follow the given steps:
 
-		this.xpTaskBarBox1.ImageList = this.imageList1;
+**Step 1** - Add the following required assembly references to the project:
 
-		this.xpTaskBarBox2.ImageList = this.imageList1;
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
 
-   {% endhighlight %}
-
-   {% highlight VB %}
-
-
-
-		Me.xpTaskBarBox1.ImageList = Me.imageList1 
-
-		Me.xpTaskBarBox2.ImageList = Me.imageList1
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-6. Set Header BackColor, Text and Item BackColor for XPTaskBar Box1 and XPTaskBar Box2.
-
-   {% tabs %}
-
-  {% highlight C# %}
-
-		this.xpTaskBarBox1.HeaderBackColor = Color.Yellow;
-
-		this.xpTaskBarBox1.Text = "Header Text";
-
-		this.xpTaskBarBox1.ItemBackColor = Color.WhiteSmoke;
-
-
-
-		this.xpTaskBarBox2.HeaderBackColor = Color.Pink;
-
-		this.xpTaskBarBox2.Text = "Another Header Text";
-
-		this.xpTaskBarBox2.ItemBackColor = Color.WhiteSmoke;
-
-   {% endhighlight %}
-
-   {% highlight VB %}
-
-		Me.xpTaskBarBox1.HeaderBackColor = Color.Yellow 
-
-		Me.xpTaskBarBox1.Text = "Header Text" 
-
-		Me.xpTaskBarBox1.ItemBackColor = Color.WhiteSmoke 
-
-
-
-		Me.xpTaskBarBox2.HeaderBackColor = Color.Pink 
-
-		Me.xpTaskBarBox2.Text = "Another Header Text" 
-
-		Me.xpTaskBarBox2.ItemBackColor = Color.WhiteSmoke
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-7. Add XPTaskBar Items to the XPTaskBar Box1 and XPTaskBar Box2.
-
-   {% tabs %}
-
-   {% highlight C# %}  
-
-		this.xpTaskBarBox1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, null, "", true, true, "XPTaskBarItem0", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, null, "", true, true, "XPTaskBarItem1", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, null, "", true, true, "XPTaskBarItem2", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, null, "", true, true, "XPTaskBarItem3", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)});
-
-
-
-		this.xpTaskBarBox2.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, null, "", true, true, "XPTaskBarItem4", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, null, "", true, true, "XPTaskBarItem5", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, null, "", true, true, "XPTaskBarItem6", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0),
-
-            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, null, "", true, true, "XPTaskBarItem7", new System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)});
-
-   {% endhighlight %}
-
-   {% highlight VB %} 
-
-		Me.xpTaskBarBox1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem() {New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, Nothing, "", True, _ 
-
-		True, "XPTaskBarItem0", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, Nothing, "", True, _ 
-
-		True, "XPTaskBarItem1", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, Nothing, "", True, _ 
-
-		True, "XPTaskBarItem2", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, Nothing, "", True, _ 
-
-		True, "XPTaskBarItem3", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)}) 
-
-
-
-		Me.xpTaskBarBox2.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem() {New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item1", System.Drawing.Color.Empty, 0, Nothing, "", True, _ 
-
-		True, "XPTaskBarItem4", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item2", System.Drawing.Color.Empty, 1, Nothing, "", True, _ 
-
-		True, "XPTaskBarItem5", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item3", System.Drawing.Color.Empty, 2, Nothing, "", True, _ 
-
-		True, "XPTaskBarItem6", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0), New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("Item4", System.Drawing.Color.Empty, 3, Nothing, "", True, _ 
-
-		True, "XPTaskBarItem7", New System.Drawing.Font("Microsoft Sans Serif", 8.25F), 0)}) 
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-8.Finally add the created XPTaskBar Boxes to the XPTaskBar control.
+**Step 2** -Include the namespaces **Syncfusion.Tools.Windows**.
 
 {% tabs %}
 
-{% highlight C# %}  
+{% highlight C# %}
 
-this.xpTaskBar1.Controls.Add(this.xpTaskBarBox1);
+using Syncfusion.Tools.Windows;
 
-this.xpTaskBar1.Controls.Add(this.xpTaskBarBox2);
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Tools.Windows
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+**Step 3** - Create `XPTaskBar` control instance and add it to the form.
+
+{% tabs %}
+
+{% highlight C# %}
+
+XPTaskBar xpTaskBar1 = new XPTaskBar();
+
+this.Controls.Add(xpTaskBar1);
 
 {% endhighlight %}
 
+{% highlight VB %}
 
+Dim xpTaskBar1 As XPTaskBar = New XPTaskBar()
 
-{% highlight VB %} 
-
-Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox1)
-
-Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox2)
+Me.Controls.Add(xpTaskBar1)
 
 {% endhighlight %}
-
 
 {% endtabs %}
 
+**Adding XPTaskBarBox**
 
- ![](Overview_images/Overview_img102.jpeg) 
+Create an instance for `XPTaskBarBox` class and add it to XPTaskBar's controls collection.
 
+{% tabs %}
+
+{% highlight C# %}
+
+XPTaskBarBox xpTaskBarBox1 = new XPTaskBarBox();
+XPTaskBarBox xpTaskBarBox2 = new XPTaskBarBox();
+XPTaskBarBox xpTaskBarBox3 = new XPTaskBarBox();
+
+this.xpTaskBarBox1.Text = "xpTaskBarBox1";
+this.xpTaskBarBox2.Text = "xpTaskBarBox2";
+this.xpTaskBarBox3.Text = "xpTaskBarBox3";
+
+this.xpTaskBar1.Controls.Add(this.xpTaskBarBox1);
+this.xpTaskBar2.Controls.Add(this.xpTaskBarBox2);
+this.xpTaskBar3.Controls.Add(this.xpTaskBarBox3);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim xpTaskBarBox1 As XPTaskBarBox = New XPTaskBarBox()
+Dim xpTaskBarBox2 As XPTaskBarBox = New XPTaskBarBox()
+Dim xpTaskBarBox3 As XPTaskBarBox = New XPTaskBarBox()
+
+Me.xpTaskBarBox1.Text = "xpTaskBarBox1"
+Me.xpTaskBarBox2.Text = "xpTaskBarBox2"
+Me.xpTaskBarBox3.Text = "xpTaskBarBox3"
+
+Me.xpTaskBar1.Controls.Add(Me.xpTaskBarBox1)
+Me.xpTaskBar2.Controls.Add(Me.xpTaskBarBox2)
+Me.xpTaskBar3.Controls.Add(Me.xpTaskBarBox3)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/XPTaskBar_Img3.png)
+
+**Adding XPTaskBarItems**
+
+XPTaskBarItems can be added to XPTaskBarBox using `Items` collection in XPTaskBarBox class.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.xpTaskBarBox1.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
+            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("XPTaskBarItem5", System.Drawing.Color.Empty, -1, "XPTaskBarItem5"),
+            new Syncfusion.Windows.Forms.Tools.XPTaskBarItem("XPTaskBarItem6", System.Drawing.Color.Empty, -1, "XPTaskBarItem6")});
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.xpTaskBarBox1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem[] {
+            New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("XPTaskBarItem5", System.Drawing.Color.Empty, -1, "XPTaskBarItem5"),
+            New Syncfusion.Windows.Forms.Tools.XPTaskBarItem("XPTaskBarItem6", System.Drawing.Color.Empty, -1, "XPTaskBarItem6")})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/XPTaskBar_Img5.png)
