@@ -131,6 +131,8 @@ In order to add control manually, do the below steps,
 
 * 	Syncfusion.SfInput.WinForms
 
+* 	Syncfusion.SfListView.WinForms
+
 2)	Create the SfDataGrid control instance and add it to the Form
 
 {% tabs %}

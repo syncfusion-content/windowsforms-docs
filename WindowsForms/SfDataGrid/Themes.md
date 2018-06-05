@@ -6,7 +6,6 @@ platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
-
 ## Themes
 SfDataGrid offers four built in themes for professional representation as follows.
 
