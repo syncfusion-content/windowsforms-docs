@@ -9,98 +9,237 @@ documentation: ug
 
 # Getting started
 
-The SpellCheckerAdv can be added to Windows Forms application by using either of the following ways:
+This section describes how to add a `SpellCheckerAdv` control in a Windows Forms application and overview of its basic functionalities.
 
-* Through Designer
+## Assembly deployment
 
-* Through Code-Behind
+The following list of assemblies should be added as reference to use the SpellCheckerAdv in any application:
 
-## Through designer
-
-Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add SpellCheckerAdv through drag and drop from Toolbox.
-
-1) Create a Windows Forms project in Visual Studio.
-
-Find SpellCheckerAdv by typing the name of the SpellCheckerAdv in the search box.
-
- ![](Getting-Started_images/ToolBox.png)
-
-2) Drag SpellCheckerAdv and drop it in the designer.
-
- ![](Getting-Started_images/GettingStarted1.png)
- 
-
-## Through code
-
-The following steps helps to add SpellCheckerAdv through code.
-
-1) Create a Windows Forms project in Visual Studio and include following assemblies.
-
-Syncfusion.Grid.Windows.dll
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
 Syncfusion.Grid.Base.dll
+</td>
+<td>
+Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Windows.dll
+</td>
+<td>
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the SpellCheckerAdv control.
+</td>
+</tr>
+<tr>
+<td>
 Syncfusion.Shared.Base.dll
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of SpellCheckerAdv and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
 Syncfusion.Shared.Windows.dll
+</td>
+<td>
+Syncfusion.Shared.Windows contains style related properties of SpellCheckerAdv and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
 Syncfusion.SpellChecker.Base.dll
+</td>
+<td>
+Syncfusion.SpellChecker.Base contains Dictionary related properties of SpellCheckerAdv.
+</td>
+</tr>
+<tr>
+<td>
 Syncfusion.Tools.Base.dll
+</td>
+<td>
+Syncfusion.Tools.Base contains base class which used for SpellCheckerAdv control.
+</td>
+</tr>
+<tr>
+<td>
 Syncfusion.Tools.Windows.dll
+</td>
+<td>
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of SpellCheckerAdv control.
+</td>
+</tr>
+</table>
 
-2) Create an instance of SpellCheckerAdv using it namespace.
+## Installing NuGet Packages
+
+To use SpellCheckerAdv control in Windows Forms application via nuget, the following packages should be installed.
+ 
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Tools.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Tools.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Tools.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Tools.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td>Syncfusion.Tools.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td>Syncfusion.Tools.Windows46
+</td>
+</tr>
+</table>
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
+# Creating simple application with SpellCheckerAdv
+
+You can create the Windows Forms application with SpellCheckerAdv control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Add control via Form Designer](#add-control-via-form-designer)
+3. [Add control manually using Code](#add-control-manually-using-code)
+4. [Configuring SpellCheckerAdv into RichTextBox control](#configuring-spellCheckerAdv-into-RichTextBox-control)
+5. [Applying Dictionary](#applying-dictionary)
+6. [Applying Custom Dictionary](#applying-custom-dictionary)
+7. [Configuring VisualStyle](#configuring-VisualStyle)
+
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the SpellCheckerAdv with basic information.
+
+## Add control via Form Designer
+
+SpellCheckerAdv control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.SpellChecker.Base.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+
+![](Getting-Started_images/ToolBox.png)
+
+![](Getting-Started_images/SpellCheckerAdv-img2.png)
+
+## Add control manually using Code
+
+To add control manually in C#, follow the given steps:
+
+**Step 1** : Add the following required assembly references to the project:
+
+ * Syncfusion.Tools.Base.dll
+ * Syncfusion.Tools.Windows.dll
+ * Syncfusion.Shared.Base.dll
+ * Syncfusion.Shared.Windows.dll
+ * Syncfusion.SpellChecker.Base.dll
+ * Syncfusion.Grid.Base.dll
+ * Syncfusion.Grid.Windows.dll
+
+**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-Syncfusion.Windows.Forms.Tools.SpellCheckerAdv spellCheckerAdv1 = new Syncfusion.Windows.Forms.Tools.SpellCheckerAdv();
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-Dim spellCheckerAdv1 As New Syncfusion.Windows.Forms.Tools.SpellCheckerAdv()
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
 {% endtabs %}
 
-3) Create instance of Button and RichTextBox in Form.
+**Step 3** :  Create `SpellCheckerAdv` control instance.
 
 {% tabs %}
 
 {% highlight C# %}
 
-private System.Windows.Forms.Button button1;
-
-private System.Windows.Forms.RichTextBox richTextBox1;
-
-this.button1 = new System.Windows.Forms.Button();
-
-this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+SpellCheckerAdv spellCheckerAdv1 = new SpellCheckerAdv();
 
 {% endhighlight %}
 
-
 {% highlight VB %}
 
-Private button1 As System.Windows.Forms.Button
-
-Private richTextBox1 As System.Windows.Forms.RichTextBox
-
-Me.button1 = New System.Windows.Forms.Button()
-
-Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
+Dim spellCheckerAdv1 As SpellCheckerAdv = New SpellCheckerAdv
 
 {% endhighlight %}
 
 {% endtabs %}
 
-5) Inherit  ISpellCheckerAdvEditorTools interface of SpellCheckerAdv and Initialize all the methods and properties in interface.
+## Configuring SpellCheckerAdv into RichTextBox control
+
+**Step 1** : Create a class implementing `ISpellCheckerAdvEditorTools` interface as shown below.
 
 {% tabs %}
 
 {% highlight C# %}
 
-class TextBoxSpellEditor : ISpellCheckerAdvEditorTools
+  class TextBoxSpellEditor : ISpellCheckerAdvEditorTools
     {
         /// <summary>
         /// Initializes the TextBoxBase control.
@@ -113,7 +252,7 @@ class TextBoxSpellEditor : ISpellCheckerAdvEditorTools
         public TextBoxSpellEditor(Control control)
         {
             Control = control;
-        }       
+        }
         /// <summary>
         /// Gets or sets the Control whose Text is to be spell checked.
         /// </summary>
@@ -127,7 +266,7 @@ class TextBoxSpellEditor : ISpellCheckerAdvEditorTools
             {
                 textBox = value as TextBoxBase;
             }
-        }      
+        }
         /// <summary>
         /// Gets or sets the current misspelled word.
         /// </summary>
@@ -157,6 +296,20 @@ class TextBoxSpellEditor : ISpellCheckerAdvEditorTools
             }
         }
         /// <summary>
+        /// Gets or sets the Control whose Text is to be spell checked.
+        /// </summary>
+        public Control ControlToCheck
+        {
+            get
+            {
+                return textBox;
+            }
+            set
+            {
+                textBox = value as TextBoxBase;
+            }
+        }
+        /// <summary>
         ///  Selects the word specified by the index.
         /// </summary>
         /// <param name="selectionStart">Zero based index of the word on the Text.</param>
@@ -164,27 +317,27 @@ class TextBoxSpellEditor : ISpellCheckerAdvEditorTools
         public void SelectText(int selectionStart, int selectionLength)
         {
             textBox.Select(selectionStart, selectionLength);
-        }       
+        }
     }
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Class TextBoxSpellEditor
-	Implements ISpellCheckerAdvEditorTools
-	''' <summary>
-	''' Initializes the TextBoxBase control.
-	''' </summary>
-	Private textBox As TextBoxBase
-	''' <summary>
-	''' Initializes the new instance of the TextBoxSpellEditor class.
-	''' </summary>
-	''' <param name="control"></param>
-	Public Sub New(control__1 As Control)
+class TextBoxSpellEditor
+           Implements ISpellCheckerAdvEditorTools
+        ''' <summary>
+        ''' Initializes the TextBoxBase control.
+        ''' </summary>
+        Private textBox As TextBoxBase;
+        ''' <summary>
+        ''' Initializes the new instance of the TextBoxSpellEditor class.
+        ''' </summary>
+        ''' <param name="control"></param>
+       Public Sub New(control__1 As Control)
 		Control = control__1
 	End Sub
-	''' <summary>
+    ''' <summary>
 	''' Gets or sets the Control whose Text is to be spell checked.
 	''' </summary>
 	Public Property Control() As Control
@@ -204,6 +357,17 @@ Class TextBoxSpellEditor
 		End Get
 		Set
 			textBox.Text = value
+		End Set
+	End Property
+        ''' <summary>
+	''' Gets or sets the Control whose Text is to be spell checked.
+	''' </summary>
+	Public Property ControlToCheck() As Control
+		Get
+			Return textBox
+		End Get
+		Set
+			textBox = value as TextBoxBase
 		End Set
 	End Property
 	''' <summary>
@@ -227,12 +391,45 @@ Class TextBoxSpellEditor
 	End Sub
 End Class
 
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 2** - Create instances `RichTextBox` (Editor Control to be spell checked) and `Button` and add it to the form.
+
+{% tabs %}
+
+{% highlight C# %}
+
+RichTextBox richTextBox1 = new RichTextBox();
+Button button1 = new Button();
+
+this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+this.button1.Text="Spell Check";
+
+this.Controls.Add(this.button1);
+this.Controls.Add(this.richTextBox1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim richTextBox1 As RichTextBox = New RichTextBox
+Dim button1 As Button = New Button
+
+Me.richTextBox1.Text = resources.GetString("richTextBox1.Text")
+Me.button1.Text="Spell Check"
+
+Me.Controls.Add(Me.button1)
+Me.Controls.Add(Me.richTextBox1)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-4) Initiate PerformSpellCheckForControl method by passing ISpellCheckerAdvEditorTools interface argument. 
+![](Getting-Started_images/SpellCheckerAdv-img1.png)
+
+**Step 3** - Create an instance of the `TextBoxSpellEditor` class by having `RichTextBox` as its Control and it to `SpellCheckerAdv` using `PerformSpellCheckForControl` method.
 
 {% tabs %}
 
@@ -240,26 +437,21 @@ End Class
 
 TextBoxSpellEditor TextEditor = new TextBoxSpellEditor(this.richTextBox1);
 
-SpellEditor = TextEditor;
- 
-this.spellCheckerAdv1.PerformSpellCheckForControl(SpellEditor);
+this.spellCheckerAdv1.PerformSpellCheckForControl(TextEditor);
 
 {% endhighlight %}
-
 
 {% highlight VB %}
 
 Dim TextEditor As New TextBoxSpellEditor(Me.richTextBox1)
 
-SpellEditor = TextEditor
-
-Me.spellCheckerAdv1.PerformSpellCheckForControl(SpellEditor)
+Me.spellCheckerAdv1.PerformSpellCheckForControl(TextEditor)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-5) In the Click event of the button call SpellCheck method with RichTextBox.
+**Step 4** - Finally trigger `SpellCheckerAdv` through an event such as `Click` of the button as given below.
 
 {% tabs %}
 
@@ -267,7 +459,7 @@ Me.spellCheckerAdv1.PerformSpellCheckForControl(SpellEditor)
 
 private void buttonAdv1_Click(object sender, EventArgs e)
 {
-     this.spellCheckerAdv1.SpellCheck(new SpellCheckerAdvEditorWrapper(this.richTextBox1));
+  this.spellCheckerAdv1.SpellCheck(new SpellCheckerAdvEditorWrapper(this.richTextBox1));
 }
 
 {% endhighlight %}
@@ -282,8 +474,71 @@ End Sub
 
 {% endtabs %}
 
- ![](Getting-Started_images/GettingStarted2.png)
+![](Getting-Started_images/GettingStarted2.png)
 
-6) Suggested word can be replaced by double-clicking on the word from the ListBox.
+## Applying Dictionary
+
+SpellCheckerAdv provide built-in dictionary whose Path can be set using `DictionaryPath` property in SpellCheckerAdv.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.spellCheckerAdv1.DictionaryPath = "Syncfusion_en_us.dic";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.spellCheckerAdv1.DictionaryPath = "Syncfusion_en_us.dic"
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
+## Applying Custom Dictionary
+
+SpellcheckerAdv provides built-in dictionary for English Language and also helps to configure based on your own language, using its Custom Dictionary option. Custom Dictionary can be added using `CustomDictionaryPath` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private static String DEF_CUSTOM_DIC_PATH = Application.CommonAppDataPath + Path.DirectorySeparatorChar + "Custom_Dictionay.dic";
+
+this.spellCheckerAdv1.CustomDictionaryPath = DEF_CUSTOM_DIC_PATH;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private static DEF_CUSTOM_DIC_PATH As String = Application.CommonAppDataPath + Path.DirectorySeparatorChar & "Custom_Dictionay.dic"
+
+Me.spellCheckerAdv1.CustomDictionaryPath = DEF_CUSTOM_DIC_PATH
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Configuring VisualStyle
+
+Look and feel of the SpellCheckerAdv can be customize using `VisualStyle` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.spellCheckerAdv1.VisualStyle = SpellCheckerAdvStyle.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.spellCheckerAdv1.VisualStyle = SpellCheckerAdvStyle.Office2016Colorful
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/GettingStarted2.png)

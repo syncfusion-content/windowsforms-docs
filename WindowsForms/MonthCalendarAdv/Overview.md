@@ -10,22 +10,20 @@ documentation: ug
 
 The Essential Tools MonthCalendarAdv control is an advanced calendar control that can display all the month of the year with the appropriate culture information for the months and days of the week. A wide variety of visual styles can be applied to the MonthCalendarAdv, to enhance the appearance of the control. This also includes the new Microsoft Office 2007 Style for all the child controls of the MonthCalendarAdv, such as the UpDown Spin Button, DropDown button of DateTimePickerAdv, ScrollButton, TodayButton and None button.
 
-![](CalendarDateTime_images/Overview_img131.jpeg)
+![](CalendarDateTime_images/MonthCalenderAdv-img1.png)
 
-## Sections of MonthCalendarAdv control
+# Key Features
 
-The following figure displays the sections of MonthCalendarAdv control.
+* **Date-range support** : Provides maximum and minimum date support to prevent users from selecting dates within a specified range.
 
-![](CalendarDateTime_images/Overview_img132.jpeg)
+* **Globalization** : Supports for globalize first day of the week and day names based on the culture.
 
+* **ContextMenu** - Supports ContextMenu for month and date for quick navigation. 
 
+* **Multiple Selection** - Provides options to select multiple dates by dragging the mouse and also using the key modifiers.
 
-* Calendar Header - Header for the MonthCalendarAdv. See [Header Settings](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#header-settings-1).
-* Scroll Buttons - Allows the end user to scroll through the months. See Button Settings.
-* Week Number - Specifies a unique number for each week.
-* Day Names - Day names of each day in a week is displayed in DayNames section.
-* Days - Days of the month.
-* Highlighted Today's date - Today's date selected/highlighted at runtime.
-* Grid Line - Grid Line which separates the dates.
-* None Button - Lets you to withdraw focus from a day in the MonthCalendarAdv.
-* Today Button - Focus will be moved to today's date.
+* **Customization** - Provides options to customize font and color of Dates, Day Names, Week number and  calendar Header
+
+* **VisualStyle** - Provides rich set of VisualStyle to customize the look and feel of MonthCalendarAdv.
+
+* **Accessibility** - Touch, keyboard, and mouse support to make applications available to a wide variety of users.
