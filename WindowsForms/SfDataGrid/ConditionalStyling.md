@@ -102,27 +102,25 @@ this.sfDataGrid.QueryRowStyle += SfDataGrid_QueryRowStyle;
 
 private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {
-    if (e.RowData == null)
-        return;
-
-    if ((e.RowData as OrderInfo).CustomerID == "FRANS")
-        e.Style.BackColor = Color.Bisque;
-    else if ((e.RowData as OrderInfo).CustomerID == "MEREP")
-        e.Style.BackColor = Color.LightBlue;
+    if (e.RowType == RowType.DefaultRow)
+    {
+        if ((e.RowData as OrderInfo).CustomerID == "FRANS")
+            e.Style.BackColor = Color.Bisque;
+        else if ((e.RowData as OrderInfo).CustomerID == "MEREP")
+            e.Style.BackColor = Color.LightBlue;
+    }
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid.QueryRowStyle, AddressOf SfDataGrid_QueryRowStyle
 
 Private Sub SfDataGrid_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
-    If e.RowData Is Nothing Then
-        Return
-    End If
-
-    If (TryCast(e.RowData, OrderInfo)).CustomerID = "FRANS" Then
-        e.Style.BackColor = Color.Bisque
-    ElseIf (TryCast(e.RowData, OrderInfo)).CustomerID = "MEREP" Then
-        e.Style.BackColor = Color.LightBlue
+    If e.RowType = RowType.DefaultRow Then
+        If (TryCast(e.RowData, OrderInfo)).CustomerID = "FRANS" Then
+            e.Style.BackColor = Color.Bisque
+        ElseIf (TryCast(e.RowData, OrderInfo)).CustomerID = "MEREP" Then
+            e.Style.BackColor = Color.LightBlue
+        End If
     End If
 End Sub
 {% endhighlight %}
@@ -140,27 +138,25 @@ this.sfDataGrid.QueryRowStyle += SfDataGrid_QueryRowStyle;
 
 private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {
-    if (e.RowData == null)
-        return;
-
-    if (e.RowIndex % 2 == 0)
-        e.Style.BackColor = Color.Lavender;
-    else
-        e.Style.BackColor = Color.AliceBlue;
+    if (e.RowType == RowType.DefaultRow)
+    {
+        if (e.RowIndex % 2 == 0)
+            e.Style.BackColor = Color.Lavender;
+        else
+            e.Style.BackColor = Color.AliceBlue;
+    }
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid.QueryRowStyle, AddressOf SfDataGrid_QueryRowStyle
 
 Private Sub SfDataGrid_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
-    If e.RowData Is Nothing Then
-        Return
-    End If
-
-    If e.RowIndex Mod 2 = 0 Then
-        e.Style.BackColor = Color.Lavender
-    Else
-        e.Style.BackColor = Color.AliceBlue
+    If e.RowType = RowType.DefaultRow Then
+        If e.RowIndex Mod 2 = 0 Then
+            e.Style.BackColor = Color.Lavender
+        Else
+            e.Style.BackColor = Color.AliceBlue
+        End If
     End If
 End Sub
 {% endhighlight %}
@@ -221,7 +217,6 @@ this.sfDataGrid1.DrawCell += SfDataGrid1_DrawCell;
 
 private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
 {
-
     if (e.DataRow.RowType == RowType.CaptionCoveredRow)
     {
         int result;
@@ -231,21 +226,22 @@ private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
             e.Style.Font.Bold = true;
             e.Style.TextColor = Color.Red;
         }
+	}	
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid1.DrawCell, AddressOf SfDataGrid1_DrawCell
 
 Private Sub SfDataGrid1_DrawCell(ByVal sender As Object, ByVal e As DrawCellEventArgs)
-
-	If e.DataRow.RowType = RowType.CaptionCoveredRow Then
-		Dim result As Integer
-		Integer.TryParse((TryCast(e.DataRow.RowData, Group)).SummaryDetails.SummaryValues(0).AggregateValues.ElementAt(0).Value.ToString(), result)
-		If result < 50 Then
-			e.Style.Font.Bold = True
-			e.Style.TextColor = Color.Red
-		End If
-	End If
+    If e.DataRow.RowType = RowType.CaptionCoveredRow Then
+        Dim result As Integer
+        Integer.TryParse((TryCast(e.DataRow.RowData, Group)).SummaryDetails.SummaryValues(0).AggregateValues.ElementAt(0).Value.ToString(), result)
+        If result < 50 Then
+            e.Style.Font.Bold = True
+            e.Style.TextColor = Color.Red
+        End If
+    End If
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
@@ -576,10 +572,7 @@ this.sfDataGrid.QueryCellStyle += SfDataGrid_QueryCellStyle;
 
 private void SfDataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 {
-    if (e.DataRow == null || e.DataRow.RowData == null)
-        return;
-
-    if (e.Column.MappingName == "ProductName")
+    if (e.DataRow.RowType == RowType.DefaultRow && e.Column.MappingName == "ProductName")
     {
         e.Style.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
         e.Style.HorizontalAlignment = HorizontalAlignment.Center;
@@ -590,11 +583,7 @@ private void SfDataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 AddHandler sfDataGrid1.QueryCellStyle, AddressOf SfDataGrid_QueryCellStyle
 
 Private Sub SfDataGrid_QueryCellStyle(ByVal sender As Object, ByVal e As QueryCellStyleEventArgs)
-    If e.DataRow Is Nothing OrElse e.DataRow.RowData Is Nothing Then
-        Return
-    End If
-
-    If e.Column.MappingName = "ProductName" Then
+    If e.DataRow.RowType = RowType.DefaultRow AndAlso e.Column.MappingName = "ProductName" Then
         e.Style.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
         e.Style.HorizontalAlignment = HorizontalAlignment.Center
     End If
