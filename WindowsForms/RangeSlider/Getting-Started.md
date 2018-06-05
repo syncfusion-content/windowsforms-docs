@@ -9,83 +9,247 @@ documentation: ug
 
 # Getting started
 
-This section guides you on getting started with Range Slider.
+This section describes how to add a `RangeSlider` control in a Windows Forms application and overview of its basic functionalities.
 
-## Elaborate structure of the control
+## Assembly deployment
 
-The following image highlights the different sections of the Range Slider.
+The following list of assemblies should be added as reference to use the RangeSlider in any application:
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base.dll
+</td>
+<td>
+Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Windows.dll
+</td>
+<td>
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the RangeSlider control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base.dll
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of RangeSlider and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Windows.dll
+</td>
+<td>
+Syncfusion.Shared.Windows contains style related properties of RangeSlider and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Base.dll
+</td>
+<td>
+Syncfusion.Tools.Base contains base class which used for RangeSlider control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows.dll
+</td>
+<td>
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of RangeSlider control.
+</td>
+</tr>
+</table>
 
+## Installing NuGet Packages
 
+To use RangeSlider control in Windows Forms application via nuget, the following packages should be installed.
+ 
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Tools.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Tools.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Tools.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Tools.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td>Syncfusion.Tools.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td>Syncfusion.Tools.Windows46
+</td>
+</tr>
+</table>
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-## Creating Range Slider
+# Creating simple application with RangeSlider
 
-Range Slider can be created in two ways:
+You can create the Windows Forms application with RangeSlider control as follows:
 
-## Through code
+1. [Creating project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+4. [Configuring slider range](#configure-slider-range)
 
-The following code illustrates the creation of RangeSlider.
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the RangeSlider with basic information.
+
+## Adding control via designer
+
+RangeSlider control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+
+![](Getting-Started_images/RangeSlider-img1.png) 
+
+![](Getting-Started_images/RangeSlider-img5.png) 
+
+## Adding control manually in code
+
+To add control manually in C#, follow the given steps:
+
+**Step 1** : Add the following required assembly references to the project:
+
+ * Syncfusion.Tools.Base.dll
+ * Syncfusion.Tools.Windows.dll
+ * Syncfusion.Shared.Base.dll
+ * Syncfusion.Shared.Windows.dll
+ * Syncfusion.Grid.Base.dll
+ * Syncfusion.Grid.Windows.dll
+
+**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
+using Syncfusion.Windows.Forms.Tools;
 
+{% endhighlight %}
 
-RangeSlider rangeSlider = new RangeSlider();
+{% highlight VB %}
 
-rangeSlider.Maximum = 20;
-
-rangeSlider.Minimum = 0;
-
-rangeSlider.SliderMax = 15;
-
-rangeSlider.SliderMin = 5;
-
-rangeSlider.RangeColor = Color.Brown;
-
-rangeSlider.ChannelColor = Color.DarkGray;
-
-rangeSlider.ChannelHeight = 5;
-
-rangeSlider.HighlightedThumbColor = Color.DarkBlue;
-
-rangeSlider.PushedThumbColor = Color.Crimson;
-
-rangeSlider.ThumbColor = Color.Aqua;
-
-rangeSlider.Location = new Point(80, 30);
-
-this.Controls.Add(rangeSlider);
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Run the code.
+**Step 3** : Create `RangeSlider` control instance and add it to the form.
 
-Output
+{% tabs %}
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+{% highlight C# %}
 
+RangeSlider rangeSlider1 = new RangeSlider();
 
+this.rangeSlider1.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Colorful;
 
-## Through designer
+this.Controls.Add(rangeSlider1);
 
-The following steps illustrate the creation of RangeSlider.
+{% endhighlight %}
 
-1. Select RangeSlider from the toolbox.
+{% highlight VB %}
 
-   ![](Getting-Started_images/Getting-Started_img3.jpeg)
+Dim rangeSlider1 As RangeSlider = New RangeSlider
 
+Me.rangeSlider1.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Colorful
 
+Me.Controls.Add(rangeSlider1)
 
-2. Drag the RangeSlider from the toolbox to the form.
+{% endhighlight %}
 
-   ![](Getting-Started_images/Getting-Started_img4.jpeg)
+{% endtabs %}
 
+![](Getting-Started_images/RangeSlider-img2.png) 
 
+## Configuring slider range
 
-The RangeSlider is created.
+Minimum and Maximum value can be set to the RangeSlider programmatically using `SliderMin` and `SliderMax` properties.
 
+{% tabs %}
+
+{% highlight C# %}
+
+this.rangeSlider1.SliderMin = 4;
+
+this.rangeSlider1.SliderMax = 7;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.rangeSlider1.SliderMin = 4
+
+Me.rangeSlider1.SliderMax = 7
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/RangeSlider-img4.png) 

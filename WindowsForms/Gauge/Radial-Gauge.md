@@ -140,33 +140,35 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with RadialGauge control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
+2. [Add control via Form Designer](#adding-control-via-form-designer)
+3. [Add control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the RadialGauge with range information.
 
-## Adding control via designer
+## Add control via Form Designer
 
 The RadialGauge control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Gauge.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-![](Radial-Gauge_images/RadialGauge_img1.png) 
+![](Radial-Gauge_images/RadialGauge_img1.png)
+
+![](Radial-Gauge_images/RadialGauge_img3.png) 
 
 
-## Adding control manually in code
+## Add control manually using code
 
 To add control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
 	* Syncfusion.Gauge.Windows.dll
 	* Syncfusion.Shared.Base.dll
 
-2. Include the namespaces **Syncfusion.Gauge.Windows**.
+**Step 2** - Include the namespaces **Syncfusion.Gauge.Windows**.
 
 {% tabs %}
 
@@ -184,7 +186,7 @@ Imports Syncfusion.Gauge.Windows
 
 {% endtabs %} 
 
-2. Create `RadialGauge` control instance and add it to the form.
+**Step 3** - Create `RadialGauge` control instance and add it to the form.
 
 {% tabs %}
 
