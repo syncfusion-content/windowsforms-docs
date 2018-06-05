@@ -234,7 +234,7 @@ Me.SfScrollFrame.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![](appearance-images/SfScrollFrame_colorful16.jpg)
+![](SfScrollFrame_images/SfScrollFrame_colorful16.jpg)
 
 #### Office2016White
 
@@ -260,7 +260,7 @@ Me.SfScrollFrame.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![](appearance-images/SfScrollFrame_white16.jpg)
+![](SfScrollFrame_images/SfScrollFrame_white16.jpg)
 
 #### Office2016DarkGray
 
@@ -286,7 +286,7 @@ Me.SfScrollFrame.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![](appearance-images/SfScrollFrame_darkGray16.jpg)
+![](SfScrollFrame_images/SfScrollFrame_darkGray16.jpg)
 
 #### Office2016Black
 
@@ -312,4 +312,4 @@ Me.SfScrollFrame.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![](appearance-images/SfScrollFrame_black16.jpg)
+![](SfScrollFrame_images/SfScrollFrame_black16.jpg)

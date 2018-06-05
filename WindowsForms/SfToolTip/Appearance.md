@@ -265,7 +265,7 @@ Me.SfToolTip.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![](appearance-images/SfToolTip_colorful16.jpg)
+![](SfToolTip_images/SfToolTip_colorful16.jpg)
 
 #### Office2016White
 
@@ -291,7 +291,7 @@ Me.SfToolTip.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![](appearance-images/SfToolTip_white16.jpg)
+![](SfToolTip_images/SfToolTip_white16.jpg)
 
 #### Office2016DarkGray
 
@@ -317,7 +317,7 @@ Me.SfToolTip.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![](appearance-images/SfToolTip_darkgray16.jpg)
+![](SfToolTip_images/SfToolTip_darkgray16.jpg)
 
 #### Office2016Black
 
@@ -343,5 +343,5 @@ Me.SfToolTip.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![](appearance-images/SfToolTip_black16.jpg)
+![](SfToolTip_images/SfToolTip_black16.jpeg)
 
