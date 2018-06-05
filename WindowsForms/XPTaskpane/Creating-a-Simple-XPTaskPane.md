@@ -147,14 +147,14 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with XPTaskPane control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
+2. [Adding control via Form Designer](#adding-control-via-form-designer)
+3. [Adding control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the XPTaskPane with functionalities.
 
-## Adding control via designer
+## Adding control via Form designer
 
 The XPTaskPane control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -173,11 +173,11 @@ To add pages into XPTaskPane, Click on `Add Page` in Smart Tags of XPTaskPane in
 
 ![](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img2.png)
 
-## Adding control manually in code
+## Adding control manually using code
 
 To add control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -186,7 +186,7 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-2. Include the namespaces **Syncfusion.Tools.Windows**.
+**Step 2** - Include the namespaces **Syncfusion.Tools.Windows**.
 
 {% tabs %}
 
@@ -204,7 +204,7 @@ Imports Syncfusion.Tools.Windows
 
 {% endtabs %} 
 
-2. Create `XPTaskPane` control instance and add it to the form.
+**Step 3** - Create `XPTaskPane` control instance and add it to the form.
 
 {% tabs %}
 

@@ -130,8 +130,8 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with FlowLayout control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
+2. [Adding control via Form Designer](#adding-control-via-form-designer)
+3. [Adding control manually using code](#adding-control-manually-using-code)
 
 
 
@@ -140,7 +140,7 @@ You can create the Windows Forms application with FlowLayout control as follows:
 Create a new Windows Forms project in the Visual Studio to display the FlowLayout with basic functionalities.
 
 
-## Adding control via designer
+## Adding control via Form designer
 
 The FlowLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -163,15 +163,15 @@ The child controls can be added to the layout by dragging it from the toolbox an
 
 
 
-## Adding control manually in code
+## Adding control manually using code
 
 To add control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
 	* Syncfusion.Shared.Base.dll
 
-2. Include the namespaces **Syncfusion.Shared.Base**.
+**Step 2**  Include the namespaces **Syncfusion.Shared.Base**.
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ Imports Syncfusion.Shared.Base
 
 {% endtabs %} 
 
-3. Create `FlowLayout` control instance and set `ContainerControl` as form.
+**Step 3**  Create `FlowLayout` control instance and set `ContainerControl` as form.
 
 {% tabs %}
 
