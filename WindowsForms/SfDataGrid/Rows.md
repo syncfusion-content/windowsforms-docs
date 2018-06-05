@@ -148,6 +148,23 @@ this.sfDataGrid1.Columns["OrderID"].HeaderStyle.Font.Bold = true;
 
 ![](Rows_images/img6.png)
 
+### Font orientation for Header Row
+
+Font orientation of the header row can be set by using the [HeaderStyle.Font.Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HeaderStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.HeaderRowHeight = 80;
+this.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45;
+{% endhighlight %}
+{% highlight vb %}
+this.sfDataGrid1.HeaderRowHeight = 80;
+this.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45;
+{% endhighlight %}
+{% endtabs %}
+
+![](Rows_images/img8.png)
+
 ### Hiding Header Row
 
 The header row can be hide by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HeaderRowHeight.html) property as `0` (zero).
