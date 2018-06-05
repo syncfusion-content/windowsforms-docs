@@ -499,13 +499,13 @@ Me.spellCheckerAdv1.DictionaryPath = "Syncfusion_en_us.dic"
 
 ## Applying Custom Dictionary
 
-SpellcheckerAdv provides built-in dictionary for English Language and also helps to configure based on your own language, using its Custom Dictionary option. Custom Dictionary can be added using `CustomDictionaryPath` property.
+SpellCheckerAdv provides built-in dictionary for English Language and also helps to configure based on your own language, using its Custom Dictionary option. Custom Dictionary can be added using `CustomDictionaryPath` property.
 
 {% tabs %}
 
 {% highlight C# %}
 
-private static String DEF_CUSTOM_DIC_PATH = Application.CommonAppDataPath + Path.DirectorySeparatorChar + "Custom_Dictionay.dic";
+private static String DEF_CUSTOM_DIC_PATH = Application.CommonAppDataPath + Path.DirectorySeparatorChar + "Custom_Dictionary.dic";
 
 this.spellCheckerAdv1.CustomDictionaryPath = DEF_CUSTOM_DIC_PATH;
 
@@ -513,7 +513,7 @@ this.spellCheckerAdv1.CustomDictionaryPath = DEF_CUSTOM_DIC_PATH;
 
 {% highlight VB %}
 
-Private static DEF_CUSTOM_DIC_PATH As String = Application.CommonAppDataPath + Path.DirectorySeparatorChar & "Custom_Dictionay.dic"
+Private static DEF_CUSTOM_DIC_PATH As String = Application.CommonAppDataPath + Path.DirectorySeparatorChar & "Custom_Dictionary.dic"
 
 Me.spellCheckerAdv1.CustomDictionaryPath = DEF_CUSTOM_DIC_PATH
 
