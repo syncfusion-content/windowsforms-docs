@@ -1616,7 +1616,7 @@ ShipCity.Add("Finland", Finland);
 
 ShipCity.Add("France", France);
 
-ShipCity.Add("Germany", Fermany);
+ShipCity.Add("Germany", Germany);
 
 ShipCity.Add("Ireland", Ireland);
 
