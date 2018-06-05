@@ -169,7 +169,7 @@ The NavigationView control can be added to the application by dragging it from t
 
 **Adding Bars into NavigationView**
 
-Add Bars into NavigationView using `Bars` collection property in PropertyGrid window of NaviagtionView.
+Add Bars into NavigationView using `Bars` collection property in PropertyGrid window of NavigationView.
 
 ![](Getting-Started_images/NavigationView-img2.png)
 
@@ -204,23 +204,23 @@ Imports Syncfusion.Tools.Windows
 
 {% endtabs %} 
 
-**Step 3** - Create `NaviagtionView` control instance and add it to the form.
+**Step 3** - Create `NavigationView` control instance and add it to the form.
 
 {% tabs %}
 
 {% highlight C# %}
 
-NaviagtionView navigationView1 = new NaviagtionView();
+NavigationView navigationView1 = new NavigationView();
 
 this.navigationView1.VisualStyle = Syncfusion.Windows.Forms.Tools.Navigation.VisualStyles.Metro;
 
-this.Controls.Add(naviagtionView1);
+this.Controls.Add(navigationView1);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim navigationView1 As NaviagtionView = New NaviagtionView()
+Dim navigationView1 As NavigationView = New NavigationView()
 
 Me.navigationView1.VisualStyle = Syncfusion.Windows.Forms.Tools.Navigation.VisualStyles.Metro
 
