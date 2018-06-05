@@ -180,7 +180,7 @@ Carousel control can be added to the application by dragging it from the toolbox
 
 To add control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
  * Syncfusion.Tools.Base.dll
  * Syncfusion.Tools.Windows.dll
@@ -189,7 +189,7 @@ To add control manually in C#, follow the given steps:
  * Syncfusion.Grid.Base.dll
  * Syncfusion.Grid.Windows.dll
 
-2. Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
@@ -207,7 +207,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-2. Create `Carousel` control instance and add it to the form.
+**Step 3** - Create `Carousel` control instance and add it to the form.
 
 {% tabs %}
 

@@ -34,7 +34,7 @@ The Syncfusion.Shared.Base contains the class that handles all UI operations and
 </table>
 
 
-# Installing NuGet Packages
+## Installing NuGet Packages
 
 To use GroupView control in Windows Forms application via nuget, the following packages should be installed.
  
@@ -107,14 +107,14 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with GroupView control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
+2. [Adding control via Form Designer](#adding-control-via-form-designer)
+3. [Adding control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the GroupView with basic functionalities.
 
-## Adding control via designer
+## Adding control via Form designer
 
 The GroupView control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -126,15 +126,15 @@ Items can be added to GroupView container using `GroupViewItems` collection prop
 
 ![](Overview_images/GroupView_img2.png)
 
-## Adding control manually in code
+## Adding control manually using code
 
 To add control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
 	* Syncfusion.Shared.Base.dll
 
-2. Include the namespaces **Syncfusion.Shared.Base**.
+**Step 2** - Include the namespaces **Syncfusion.Shared.Base**.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ Imports Syncfusion.Shared.Base
 
 {% endtabs %} 
 
-3. Create `GroupView` control instance and add it to the form.
+**Step 3** - Create `GroupView` control instance and add it to the form.
 
 {% tabs %}
 
@@ -174,7 +174,7 @@ Me.Controls.Add(groupView1)
 
 {% endtabs %}
 
-4. Items can be added to GroupView container using `GroupViewItems` collection property.
+**Step 4** - Items can be added to GroupView container using `GroupViewItems` collection property.
 
 {% tabs %}
 
