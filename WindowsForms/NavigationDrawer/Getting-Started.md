@@ -6,220 +6,384 @@ platform: WindowsForms
 control: NavigationDrawer
 documentation: ug
 ---
-
 # Getting started
 
-## Through designer
+This section describes how to design a `NavigationDrawer` control in a Windows Forms application and overview of its basic functionalities.
 
-Syncfusion UI for Windows Forms are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential Windows Forms control through drag and drop from Toolbox.
+* Adding NavigationDrawer control 
+* Configuring NavigationDrawer
 
-* Create a Windows Forms project in Visual Studio.
+## Assembly deployment
 
-* Find NavigationDrawer by typing the name of the NavigationDrawer in search box..
+The following list of assemblies should be added as reference to use the NavigationDrawer in any application:
 
-![](Getting-Started_images/icon.png)
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base.dll
+</td>
+<td>
+Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Windows.dll
+</td>
+<td>
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the NavigationDrawer control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base.dll
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of NavigationDrawer and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Windows.dll
+</td>
+<td>
+Syncfusion.Shared.Windows contains style related properties of NavigationDrawer and various editor controls.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Base.dll
+</td>
+<td>
+Syncfusion.Tools.Base contains base class which used for NavigationDrawer control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows.dll
+</td>
+<td>
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of NavigationDrawer control.
+</td>
+</tr>
+</table>
 
-* Drag-and-drop a `NavigationDrawer` control from the VS.NET toolbox onto the form. This will create an instance of the NavigationDrawer control on the form.
+## Installing NuGet Packages
 
-![](Getting-Started_images/start.png)
+To use NavigationDrawer control in Windows Forms application via nuget, the following packages should be installed.
+ 
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Tools.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Tools.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Tools.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Tools.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td>Syncfusion.Tools.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td>Syncfusion.Tools.Windows46
+</td>
+</tr>
+</table>
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-* The NavigationDrawer is populated with the collection of DrawMenuItems using the `Items` property in the property window.
+# Creating simple application with NavigationDrawer
 
-![](Getting-Started_images/designer.png)
+You can create the Windows Forms application with NavigationDrawer control as follows:
 
-![](Getting-Started_images/items.png)
+1. [Creating project](#creating-the-project)
+2. [Adding control via Form Designer](#adding-control-via-form-designer)
+3. [Adding control manually using code](#adding-control-manually-using-code)
+4. [Configuration of Drawer Items](#Configuration-of-drawer-items)
 
+### Creating the project
 
-## Through code-behind
+Create a new Windows Forms project in the Visual Studio to display the NavigationDrawer with basic information.
 
-Syncfusion UI for Windows Forms can added at runtime using C#/VB. The following steps helps to add required Essential Windows Forms control through code.
+## Adding control via Form designer
 
-* Create a Windows Forms project in Visual Studio and refer to the following assemblies.
-	* Syncfusion.Tools.Base.dll
-	* Syncfusion.Tools.Windows.dll
-	* Syncfusion.Shared.Base.dll
-	* Syncfusion.Shared.Windows.dll
-	* Syncfusion.Grid.Base
-	* Syncfusion.Grid.Windows.dll
+NavigationDrawer control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
-* Create an instance of the NavigationDrawer control and add it to the Form.
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+
+![](Getting-Started_images/NavigationDrawer-img1.png) 
+
+**Adding Items to NavigationDrawer**
+
+Header and menu items can be added to the Drawer using `Items` collection in Smart Tags of NavigationDrawer.
+
+![](Getting-Started_images/NavigationDrawer-img2.png)
+
+## Adding control manually using code
+
+To add control manually in C#, follow the given steps:
+
+**Step 1** - Add the following required assembly references to the project:
+
+ * Syncfusion.Tools.Base.dll
+ * Syncfusion.Tools.Windows.dll
+ * Syncfusion.Shared.Base.dll
+ * Syncfusion.Shared.Windows.dll
+ * Syncfusion.Grid.Base.dll
+ * Syncfusion.Grid.Windows.dll
+
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Creates NavigationDrawer instance.
+using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 3** - Create `NavigationDrawer` control instance and add it to the form.
+
+{% tabs %}
+
+{% highlight C# %}
 
 NavigationDrawer navigationDrawer1 = new NavigationDrawer();
 
+this.Controls.Add(navigationDrawer1);
+
 {% endhighlight %}
 
 {% highlight VB %}
 
-'Creates NavigationDrawer instance. 
+Dim navigationDrawer1 As NavigationDrawer = New NavigationDrawer
 
-Dim navigationDrawer1 As New NavigationDrawer()
+Me.Controls.Add(navigationDrawer1)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-3. Add DrawMenuItem to the NavigationDrawer control using the following code example.
+**Adding Header to NavigationDrawer**
+
+Create `DrawerHeader` instance and add it to the `Items` collection in NavigationDrawer class
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Adds items to the TreeNavigator.
+DrawerHeader drawerHeader1 = new DrawerHeader();
 
-private DrawerMenuItem drawerMenuItem1= new DrawerMenuItem();
-
-this.navigationDrawer1.Items.Add(this.drawerMenuItem1);
-
-this.navigationDrawer1.Items.Add(this.drawerMenuItem2);
-
-
-this.drawerMenuItem1.BackColor = System.Drawing.Color.White;
-
-this.drawerMenuItem1.DefaultColor = System.Drawing.Color.White;
-
-this.drawerMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-this.drawerMenuItem1.HoverColor = System.Drawing.Color.LightGray;
-
-this.drawerMenuItem1.ItemText = "drawerMenuItem1";
-
-this.drawerMenuItem1.Location = new System.Drawing.Point(2, 125);
-
-this.drawerMenuItem1.Margin = new System.Windows.Forms.Padding(0);
-
-this.drawerMenuItem1.MinimumSize = new System.Drawing.Size(200, 50);
-
-this.drawerMenuItem1.Name = "drawerMenuItem1";
-
-this.drawerMenuItem1.Selected = false;
-
-this.drawerMenuItem1.SelectionColor = System.Drawing.Color.LightGray;
-
-this.drawerMenuItem1.Size = new System.Drawing.Size(200, 50);
-
-this.drawerMenuItem1.TabIndex = 0;
-
-this.drawerMenuItem1.Text = "Home";
-
-this.drawerMenuItem1.TextColor = System.Drawing.Color.Black;
-
-
-this.drawerMenuItem2.BackColor = System.Drawing.Color.White;
-
-this.drawerMenuItem2.DefaultColor = System.Drawing.Color.White;
-
-this.drawerMenuItem2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-this.drawerMenuItem2.HoverColor = System.Drawing.Color.LightGray;
-
-this.drawerMenuItem2.ItemText = "drawerMenuItem2";
-
-this.drawerMenuItem2.Location = new System.Drawing.Point(2, 175);
-
-this.drawerMenuItem2.Margin = new System.Windows.Forms.Padding(0);
-
-this.drawerMenuItem2.MinimumSize = new System.Drawing.Size(200, 50);
-
-this.drawerMenuItem2.Name = "drawerMenuItem2";
-
-this.drawerMenuItem2.Selected = false;
-
-this.drawerMenuItem2.SelectionColor = System.Drawing.Color.LightGray;
-
-this.drawerMenuItem2.Size = new System.Drawing.Size(200, 50);
-
-this.drawerMenuItem2.TabIndex = 1;
-
-this.drawerMenuItem2.Text = "People";
-
-this.drawerMenuItem2.TextColor = System.Drawing.Color.Black;
+this.navigationDrawer1.Items.Add(this.drawerHeader1);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-'Adds items to the TreeNavigator.
+Dim drawerHeader1 As DrawerHeader = New DrawerHeader
 
-Private drawerMenuItem1 As New DrawerMenuItem()
-
-Me.navigationDrawer1.Items.Add(Me.drawerMenuItem1)
-
-Me.navigationDrawer1.Items.Add(Me.drawerMenuItem2)
-
-
-Me.drawerMenuItem1.BackColor = System.Drawing.Color.White
-
-Me.drawerMenuItem1.DefaultColor = System.Drawing.Color.White
-
-Me.drawerMenuItem1.Font = New System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte(0)))
-
-Me.drawerMenuItem1.HoverColor = System.Drawing.Color.LightGray
-
-Me.drawerMenuItem1.ItemText = "drawerMenuItem1"
-
-Me.drawerMenuItem1.Location = New System.Drawing.Point(2, 125)
-
-Me.drawerMenuItem1.Margin = New System.Windows.Forms.Padding(0)
-
-Me.drawerMenuItem1.MinimumSize = New System.Drawing.Size(200, 50)
-
-Me.drawerMenuItem1.Name = "drawerMenuItem1"
-
-Me.drawerMenuItem1.Selected = False
-
-Me.drawerMenuItem1.SelectionColor = System.Drawing.Color.LightGray
-
-Me.drawerMenuItem1.Size = New System.Drawing.Size(200, 50)
-
-Me.drawerMenuItem1.TabIndex = 0
-
-Me.drawerMenuItem1.Text = "Home"
-
-Me.drawerMenuItem1.TextColor = System.Drawing.Color.Black
-
-
-Me.drawerMenuItem2.BackColor = System.Drawing.Color.White
-
-Me.drawerMenuItem2.DefaultColor = System.Drawing.Color.White
-
-Me.drawerMenuItem2.Font = New System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte(0)))
-
-Me.drawerMenuItem2.HoverColor = System.Drawing.Color.LightGray
-
-Me.drawerMenuItem2.ItemText = "drawerMenuItem2"
-
-Me.drawerMenuItem2.Location = New System.Drawing.Point(2, 175)
-
-Me.drawerMenuItem2.Margin = New System.Windows.Forms.Padding(0)
-
-Me.drawerMenuItem2.MinimumSize = New System.Drawing.Size(200, 50)
-
-Me.drawerMenuItem2.Name = "drawerMenuItem2"
-
-Me.drawerMenuItem2.Selected = False
-
-Me.drawerMenuItem2.SelectionColor = System.Drawing.Color.LightGray
-
-Me.drawerMenuItem2.Size = New System.Drawing.Size(200, 50)
-
-Me.drawerMenuItem2.TabIndex = 1
-
-Me.drawerMenuItem2.Text = "People"
-
-Me.drawerMenuItem2.TextColor = System.Drawing.Color.Black
+Me.navigationDrawer1.Items.Add(Me.drawerHeader1)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Getting-Started_images/items.png)
+![](Getting-Started_images/NavigationDrawer-img4.png)
 
+**Adding MenuItems to NavigationDrawer**
 
+Create `DrawerHeader` instance and add it to the `Items` collection in NavigationDrawer class.
 
+{% tabs %}
 
+{% highlight C# %}
+
+DrawerMenuItem drawerMenuItem1 = new DrawerMenuItem();
+DrawerMenuItem drawerMenuItem2 = new DrawerMenuItem();
+DrawerMenuItem drawerMenuItem3 = new DrawerMenuItem();
+DrawerMenuItem drawerMenuItem4 = new DrawerMenuItem();
+
+this.navigationDrawer1.Items.Add(this.drawerMenuItem1);
+this.navigationDrawer1.Items.Add(this.drawerMenuItem2);
+this.navigationDrawer1.Items.Add(this.drawerMenuItem3);
+this.navigationDrawer1.Items.Add(this.drawerMenuItem4);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim drawerMenuItem1 As DrawerMenuItem = New DrawerMenuItem
+Dim drawerMenuItem2 As DrawerMenuItem = New DrawerMenuItem
+Dim drawerMenuItem3 As DrawerMenuItem = New DrawerMenuItem
+Dim drawerMenuItem4 As DrawerMenuItem = New DrawerMenuItem
+
+Me.navigationDrawer1.Items.Add(Me.drawerMenuItem1)
+Me.navigationDrawer1.Items.Add(Me.drawerMenuItem2)
+Me.navigationDrawer1.Items.Add(Me.drawerMenuItem3)
+Me.navigationDrawer1.Items.Add(Me.drawerMenuItem4)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/NavigationDrawer-img3.png)
+
+## Configuration of Drawer Items
+
+NavigationDrawer provides full-fledged color and size customization supports of Drawer items.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Size of the DrawerPanel
+
+this.navigationDrawer1.DrawerHeight = 500;
+this.navigationDrawer1.DrawerWidth = 200;
+
+// Header Settings
+
+this.drawerHeader1.HeaderText = "Header";
+this.drawerHeader1.BackColor = ColorTranslator.FromHtml("#364e6f");
+this.drawerHeader1.TextColor = System.Drawing.Color.White;
+this.drawerHeader1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center;
+this.drawerHeader1.Size = new System.Drawing.Size(200, 75);
+
+// Menu Items settings
+
+this.drawerMenuItem1.DefaultColor = SystemColors.Control;
+this.drawerMenuItem1.SelectionColor = ColorTranslator.FromHtml("#d5dce8");
+this.drawerMenuItem1.Text = "Menu";
+this.drawerMenuItem1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center;
+this.drawerMenuItem1.Size = new System.Drawing.Size(200, 50);
+
+this.drawerMenuItem2.DefaultColor = SystemColors.Control;
+this.drawerMenuItem2.SelectionColor = ColorTranslator.FromHtml("#d5dce8");
+this.drawerMenuItem2.Text = "Options";
+this.drawerMenuItem2.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center;
+this.drawerMenuItem2.Size = new System.Drawing.Size(200, 50);
+
+this.drawerMenuItem3.DefaultColor = SystemColors.Control;
+this.drawerMenuItem3.SelectionColor = ColorTranslator.FromHtml("#d5dce8");
+this.drawerMenuItem3.Text = "Settings";
+this.drawerMenuItem3.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center;
+this.drawerMenuItem3.Size = new System.Drawing.Size(200, 50);
+
+this.drawerMenuItem4.DefaultColor = SystemColors.Control;
+this.drawerMenuItem4.SelectionColor = ColorTranslator.FromHtml("#d5dce8");
+this.drawerMenuItem4.Text = "About";
+this.drawerMenuItem4.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center;
+this.drawerMenuItem4.Size = new System.Drawing.Size(200, 50);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'' Size of the DrawerPanel
+
+Me.navigationDrawer1.DrawerHeight = 709
+Me.navigationDrawer1.DrawerWidth = 200
+
+'' Header Settings
+
+Me.drawerHeader1.HeaderText = "Header"
+Me.drawerHeader1.BackColor = ColorTranslator.FromHtml("#364e6f")
+Me.drawerHeader1.TextColor = System.Drawing.Color.White
+Me.drawerHeader1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center
+Me.drawerHeader1.Size = New System.Drawing.Size(200, 75)
+
+'' Menu Items settings
+
+Me.drawerMenuItem1.DefaultColor = SystemColors.Control
+Me.drawerMenuItem1.SelectionColor = ColorTranslator.FromHtml("#d5dce8")
+Me.drawerMenuItem1.Text = "Menu"
+Me.drawerMenuItem1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center
+Me.drawerMenuItem1.Size = New System.Drawing.Size(200, 50)
+
+Me.drawerMenuItem2.DefaultColor = SystemColors.Control
+Me.drawerMenuItem2.SelectionColor = ColorTranslator.FromHtml("#d5dce8")
+Me.drawerMenuItem2.Text = "Options"
+Me.drawerMenuItem2.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center
+Me.drawerMenuItem2.Size = New System.Drawing.Size(200, 50)
+
+Me.drawerMenuItem3.DefaultColor = SystemColors.Control
+Me.drawerMenuItem3.SelectionColor = ColorTranslator.FromHtml("#d5dce8")
+Me.drawerMenuItem3.Text = "Settings"
+Me.drawerMenuItem3.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center
+Me.drawerMenuItem3.Size = New System.Drawing.Size(200, 50)
+
+Me.drawerMenuItem4.DefaultColor = SystemColors.Control
+Me.drawerMenuItem4.SelectionColor = ColorTranslator.FromHtml("#d5dce8")
+Me.drawerMenuItem4.Text = "About"
+Me.drawerMenuItem4.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center
+Me.drawerMenuItem4.Size = New System.Drawing.Size(200, 50)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/NavigationDrawer-img5.png)
