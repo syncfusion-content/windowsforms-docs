@@ -7,15 +7,15 @@ control: SyntaxEditor
 documentation: ug
 ---
 
-# Text navigation
+# Text Navigation
 
-EditControl offers extensive support for text navigation. You can perform navigation at character, word, line, page or entire document levels. This section briefly explains the navigation of text in EditControl.
+The EditControl offers extensive support for text navigation. You can perform navigation at the character, word, line, page, or entire document levels. This section briefly explains navigation of text in the EditControl.
 
 ![](Text-Navigation_images/Text-Navigation_img1.png)
 
 ## Character based navigation
 
-The following functions enable text navigation in EditControl, in terms of characters or columns.
+The following functions enables text navigation in the EditControl in terms of characters or columns.
 
 <table>
 <tr>
@@ -25,20 +25,20 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[MoveUp](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveUp.html)' | markdownify }}</td><td>
-Moves cursor up, if possible</td></tr>
+Moves cursor up, if possible.</td></tr>
 <tr>
 <td>
 {{ '[MoveDown](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveDown.html)' | markdownify }}</td><td>
-Moves cursor down, if possible</td></tr>
+Moves cursor down, if possible.</td></tr>
 <tr>
 <td>
 {{ '[MoveLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveLeft.html)' | markdownify }}
 </td><td>
-Moves cursor left, if possible</td></tr>
+Moves cursor left, if possible.</td></tr>
 <tr>
 <td>
 {{ '[MoveRight](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveRight.html)' | markdownify }}</td><td>
-Moves cursor right, if possible</td></tr>
+Moves cursor right, if possible.</td></tr>
 </table>
 
 {% tabs %}
@@ -72,7 +72,7 @@ Me.editControl1.MoveRight()
 
 ## Word based navigation
 
-The following functions enable text navigation in EditControl, in terms of words.
+The following functions enables text navigation in the EditControl in terms of words.
 
 <table>
 <tr>
@@ -82,11 +82,11 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[MoveLeftWord](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveLeftWord.html)' | markdownify }}</td><td>
-Moves caret to the left by one word</td></tr>
+Moves caret to the left by one word.</td></tr>
 <tr>
 <td>
 {{ '[MoveRightWord](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveRightWord.html)' | markdownify }}</td><td>
-Moves caret to the right by one word</td></tr>
+Moves caret to the right by one word.</td></tr>
 </table>
 
 {% tabs %}
@@ -112,7 +112,7 @@ Me.editControl1.MoveRightWord()
 
 ## Line based navigation
 
-The following functions enable text navigation in EditControl, in terms of lines.
+The following functions enables text navigation in the EditControl in terms of lines.
 
 <table>
 <tr>
@@ -122,11 +122,11 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[MoveToLineStart](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveToLineStart.html)' | markdownify }}</td><td>
-Moves caret to the beginning of the line. First whitespace will be skipped</td></tr>
+Moves caret to the beginning of the line. First whitespace will be skipped.</td></tr>
 <tr>
 <td>
 {{ '[MoveToLineEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveToLineEnd.html)' | markdownify }}</td><td>
-Moves caret to the end of the line</td></tr>
+Moves caret to the end of the line.</td></tr>
 </table>
 
 {% tabs %}
@@ -152,7 +152,7 @@ Me.editControl1.MoveToLineEnd()
 
 ## Page based navigation
 
-The following functions enable text navigation in EditControl, in terms of pages.
+The following functions enables text navigation in the EditControl in terms of pages.
 
 <table>
 <tr>
@@ -162,11 +162,11 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[MovePageUp](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MovePageUp.html)' | markdownify }}</td><td>
-Moves caret one page up</td></tr>
+Moves caret one page up.</td></tr>
 <tr>
 <td>
 {{ '[MovePageDown](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MovePageDown.html)' | markdownify }}</td><td>
-Moves caret one page down</td></tr>
+Moves caret one page down.</td></tr>
 </table>
 
 {% tabs %}
@@ -192,7 +192,7 @@ Me.editControl1.MovePageDown()
 
 ## Block based navigation
 
-We can position the keyboard cursor at the beginning or end of the indentation block using the [JumpToIndentBlockStart](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockStart.html) and [JumpToIndentBlockEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockEnd.html) functions respectively.
+Position the keyboard cursor at the beginning and end of the indentation block by using the [JumpToIndentBlockStart](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockStart.html) and [JumpToIndentBlockEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockEnd.html) functions respectively.
 
 {% tabs %}
 
@@ -217,7 +217,7 @@ Me.editControl1.JumpToIndentBlockEnd()
 
 ## Document based navigation
 
-The following functions enable text navigation in the EditControl, in terms of documents.
+The following functions enables text navigation in the EditControl in terms of documents.
 
 <table>
 <tr>
@@ -227,11 +227,11 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[MoveToBeginning](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveToBeginning.html)' | markdownify }}</td><td>
-Moves caret to the beginning of the file</td></tr>
+Moves caret to the beginning of the file.</td></tr>
 <tr>
 <td>
 {{ '[MoveToEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MoveToEnd.html)' | markdownify }}</td><td>
-Moves caret to the end of the file</td></tr>
+Moves caret to the end of the file.</td></tr>
 </table>
 
 {% tabs %}
@@ -257,7 +257,7 @@ Me.editControl1.MoveToEnd()
 
 ### Retrieve current word
 
-We can retrieve the current word in EditControl by using the [GetCurrentWord](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetCurrentWord.html) function.
+Retrieves the current word in the EditControl by using the [GetCurrentWord](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetCurrentWord.html) function.
 
 {% tabs %}
 
@@ -278,7 +278,7 @@ Me.WriteLine(this.editControl1.GetCurrentWord().ToString())
 
 ### Retrieve current column index in line
 
-We can retrieve the current word column index in EditControl by using the [GetCurrentWordColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetCurrentWordColumn.html) function and [CurrentColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CurrentColumn.html) property.
+Retrieves the current word column index in the EditControl by using the [GetCurrentWordColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetCurrentWordColumn.html) function and [CurrentColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CurrentColumn.html) property.
 
 {% tabs %}
 
@@ -303,7 +303,7 @@ Me.WriteLine(this.editControl1.CurrentColumn)
 
 ### Retrieve current line index
 
-We can retrieve the current word column index in EditControl by using the [CurrentLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CurrentLine.html) property.
+Retrieves the current word column index in the EditControl by using the [CurrentLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CurrentLine.html) property.
 
 {% tabs %}
 
@@ -322,14 +322,14 @@ Me.WriteLine(this.editControl1.CurrentLine)
 
 {% endtabs %}
 
-N> Refer to the following sample link that demonstrates the text navigation functionalities in EditControl.
+N> Refer to the following sample link that demonstrates the text navigation functionalities in the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Navigation\Text Navigation
 
 ## Scrolling
 
-EditControl offers extremely smooth scrolling behavior using idle-time processing and dynamic scroll area expansion techniques. The scrolling behavior is smooth even when large files are loaded,though the EditControl scrolls by several hundred lines for a small movement of the scroller.
+The EditControl offers extremely smooth scrolling behavior by using the idle-time processing and dynamic scroll area expansion techniques. The scrolling behavior is smooth even when loading large files though the EditControl scrolls by several hundred lines for a small movement of the scroller.
 
-The scrollers in the EditControl can be optionally shown / hidden by using the below given properties.
+The scrollers in the EditControl can be optionally shown or hidden by using the following properties.
 
 <table>
 <tr>
@@ -339,15 +339,15 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[ShowVerticalScroller](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowVerticalScroller.html)' | markdownify }}</td><td>
-Specifies a value indicating whether the vertical scroller can be shown</td></tr>
+Specifies a value indicating whether the vertical scroller can be shown or not.</td></tr>
 <tr>
 <td>
 {{ '[ShowHorizontalScroller](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowHorizontalScroller.html)' | markdownify }}</td><td>
-Specifies a value indicating whether the horizontal scroller can be shown</td></tr>
+Specifies a value indicating whether the horizontal scroller can be shown or not.</td></tr>
 <tr>
 <td>
 {{ '[AlwaysShowScrollers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AlwaysShowScrollers.html)' | markdownify }}</td><td>
-Specifies a value indicating whether scrollers should be always visible</td></tr>
+Specifies a value indicating whether scrollers should always be visible or not.</td></tr>
 </table>
 
 {% tabs %}
@@ -389,7 +389,7 @@ Supports scroller events that are raised when the scroll arrows are clicked. The
 
 ### Scroll position and offsets
 
-The scroll position and offsets of the EditControl are set by using the below given properties.
+The scroll position and offsets of the EditControl are set by using the following properties.
 
 <table>
 <tr>
@@ -399,15 +399,15 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[ScrollPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollPosition.html)' | markdownify }}</td><td>
-Specifies scroll position of EditControl</td></tr>
+Specifies scroll position of the EditControl.</td></tr>
 <tr>
 <td>
 {{ '[ScrollOffsetBottom](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollOffsetBottom.html)' | markdownify }}</td><td>
-Specifies the bottom scroll offset</td></tr>
+Specifies the bottom scroll offset.</td></tr>
 <tr>
 <td>
 {{ '[ScrollOffsetLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollOffsetLeft.html)' | markdownify }}</td><td>
-Specifies the left scroll offset</td></tr>
+Specifies the left scroll offset.</td></tr>
 <tr>
 <td>
 {{ '[ScrollOffsetRight](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ScrollOffsetRight.html)' | markdownify }}</td><td>
