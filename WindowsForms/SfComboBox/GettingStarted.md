@@ -169,7 +169,7 @@ They are,
 
 * Append: Appends first suggestion to the text.
 
-* SuggesAppend: Both of these.
+* SuggestAppend: Both of these.
 
 Auto complete can be set by using the `AutoCompleteMode` property.
 
