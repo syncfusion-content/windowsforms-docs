@@ -302,7 +302,7 @@ Me.sfButton.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![](appearance-images/SfButton_o16_colorful.jpeg)
+![](SfButton_images/SfButton_o16_colorful.jpg)
 
 #### Office2016White
 
@@ -328,7 +328,7 @@ Me.sfButton.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![](appearance-images/SfButton_o16_white.jpeg)
+![](SfButton_images/SfButton_o16_white.jpg)
 
 #### Office2016DarkGray
 
@@ -354,7 +354,7 @@ Me.sfButton.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![](appearance-images/SfButton_o16_darkGray.jpeg)
+![](SfButton_images/SfButton_o16_darkGray.jpg)
 
 #### Office2016Black
 
@@ -380,4 +380,4 @@ Me.sfButton.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![](appearance-images/SfButton_o16_black.jpeg)
+![](SfButton_images/SfButton_o16_black.jpg)
