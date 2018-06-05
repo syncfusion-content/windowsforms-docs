@@ -109,7 +109,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with MetroForm control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control manually in code](#adding-control-manually-in-code)
+2. [Configure MetroForm](#configure-metroForm)
 3. [Add Caption Labels](#add-caption-labels)
 3. [Add Caption Images](#add-caption-images)
 
@@ -117,17 +117,17 @@ You can create the Windows Forms application with MetroForm control as follows:
 
 Create a new Windows Forms project in the Visual Studio to change the default form into MetroForm.
 
-## Adding control manually in code
+## Configure MetroForm
 
 The default Form can be changed into the MetroForm by following the given steps.
 
 To add control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
 	* Syncfusion.Shared.Base.dll	
 
-2. Include the namespaces **Syncfusion.Windows.Forms**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms**.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
    
-3. Change the class to inherit the MetroForm instead of the default Form as follows.
+**Step 3** - Change the class to inherit the MetroForm instead of the default Form as follows.
 
 {% tabs %}
 

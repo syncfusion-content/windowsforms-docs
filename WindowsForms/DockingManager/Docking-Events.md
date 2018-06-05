@@ -1916,8 +1916,7 @@ Description</th></tr>
 Gets or sets the brush to be used for drawing the caption background</td></tr>
 <tr>
 <td>
-{{ '[CaptionBounds]
-(https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionBounds.html)' | markdownify }}</td><td>
+{{ '[CaptionBounds](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionBounds.html)' | markdownify }}</td><td>
 Gets the bounds of the caption</td></tr>
 <tr>
 <td>

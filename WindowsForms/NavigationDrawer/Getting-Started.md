@@ -148,15 +148,15 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with NavigationDrawer control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
+2. [Adding control via Form Designer](#adding-control-via-form-designer)
+3. [Adding control manually using code](#adding-control-manually-using-code)
 4. [Configuration of Drawer Items](#Configuration-of-drawer-items)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the NavigationDrawer with basic information.
 
-## Adding control via designer
+## Adding control via Form designer
 
 NavigationDrawer control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -175,11 +175,11 @@ Header and menu items can be added to the Drawer using `Items` collection in Sma
 
 ![](Getting-Started_images/NavigationDrawer-img2.png)
 
-## Adding control manually in code
+## Adding control manually using code
 
 To add control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
  * Syncfusion.Tools.Base.dll
  * Syncfusion.Tools.Windows.dll
@@ -188,7 +188,7 @@ To add control manually in C#, follow the given steps:
  * Syncfusion.Grid.Base.dll
  * Syncfusion.Grid.Windows.dll
 
-2. Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-2. Create `NavigationDrawer` control instance and add it to the form.
+**Step 3** - Create `NavigationDrawer` control instance and add it to the form.
 
 {% tabs %}
 
@@ -343,12 +343,12 @@ this.drawerMenuItem4.Size = new System.Drawing.Size(200, 50);
 
 {% highlight VB %}
 
-// Size of the DrawerPanel
+'' Size of the DrawerPanel
 
 Me.navigationDrawer1.DrawerHeight = 709
 Me.navigationDrawer1.DrawerWidth = 200
 
-// Header Settings
+'' Header Settings
 
 Me.drawerHeader1.HeaderText = "Header"
 Me.drawerHeader1.BackColor = ColorTranslator.FromHtml("#364e6f")
@@ -356,7 +356,7 @@ Me.drawerHeader1.TextColor = System.Drawing.Color.White
 Me.drawerHeader1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Center
 Me.drawerHeader1.Size = New System.Drawing.Size(200, 75)
 
-// Menu Items settings
+'' Menu Items settings
 
 Me.drawerMenuItem1.DefaultColor = SystemColors.Control
 Me.drawerMenuItem1.SelectionColor = ColorTranslator.FromHtml("#d5dce8")
