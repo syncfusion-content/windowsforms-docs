@@ -100,24 +100,21 @@ namespace WindowsFormsApplication1
         }
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
 Imports Syncfusion.WinForms.ListView
 
 Namespace WindowsFormsApplication1
-    Public Partial Class Form1
-        Inherits Form
-
-        Public Sub New()
-            InitializeComponent()
-            Dim sfComboBox1 As SfComboBox = New SfComboBox()
-            sfComboBox1.Location = New Point(100, 100)
-            Me.Controls.Add(sfComboBox1)
-        End Sub
-    End Class
+	Partial Public Class Form1
+		Inherits Form
+		Public Sub New()
+			InitializeComponent()
+			Dim sfComboBox1 As New SfComboBox()
+			sfComboBox1.Location = New Point(100, 100)
+			Me.Controls.Add(sfComboBox1)
+		End Sub
+	End Class
 End Namespace
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -140,23 +137,19 @@ usStates.Add("Georgia");
 sfComboBox1.DataSource = usStates;
 {% endhighlight %}
 {% highlight vb %}
-Private Sub SurroundingSub()
-    Dim usStates As List(Of String) = New List(Of String)()
-    usStates.Add("Alaska")
-    usStates.Add("Arizona")
-    usStates.Add("Arkansas")
-    usStates.Add("California")
-    usStates.Add("Colorado")
-    usStates.Add("Connecticut")
-    usStates.Add("Delaware")
-    usStates.Add("Florida")
-    usStates.Add("Georgia")
-    sfComboBox1.DataSource = usStates
-End Sub
+Dim usStates As New List(Of String)()
+usStates.Add("Alaska")
+usStates.Add("Arizona")
+usStates.Add("Arkansas")
+usStates.Add("California")
+usStates.Add("Colorado")
+usStates.Add("Connecticut")
+usStates.Add("Delaware")
+usStates.Add("Florida")
+usStates.Add("Georgia")
+sfComboBox1.DataSource = usStates
 {% endhighlight %}
 {% endtabs %}
-
-Run the application.
 
 ![](GettingStarted_images/GettingStarted_img2.png)
 
@@ -178,7 +171,7 @@ Auto complete can be set by using the `AutoCompleteMode` property.
 sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append;
 {% endhighlight %}
 {% highlight vb %}
-sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append;
+sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 {% endhighlight %}
 {% endtabs %}
 
@@ -192,7 +185,7 @@ This allows you to select multiple values from the drop-down list. The multi sel
 sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection;
 {% endhighlight %}
 {% highlight vb %}
-sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection;
+sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection
 {% endhighlight %}
 {% endtabs %}
 
@@ -205,7 +198,7 @@ This enables you to choose all items in the drop-down list for multi select comb
 sfComboBox1.AllowSelectAll = true;
 {% endhighlight %}
 {% highlight vb %}
-sfComboBox1.AllowSelectAll = true;
+sfComboBox1.AllowSelectAll = True
 {% endhighlight %}
 {% endtabs %}
 
