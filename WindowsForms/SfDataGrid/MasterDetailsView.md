@@ -31,1184 +31,663 @@ Create a `OrderInfo` class with `OrderDetails` property of type [ObservableColle
 {% tabs %}
 {% highlight c# %}
 public class OrderDetails : INotifyPropertyChanged
-
 {
+    private System.Nullable<int> _OrderID;
 
-private System.Nullable<int> _OrderID;
+    /// <summary>
+    /// Gets or sets the order ID.
+    /// </summary>
+    /// <value>The order ID.</value>
+    public System.Nullable<int> OrderID
+    {
+        get
+        {
+            return this._OrderID;
+        }
+        set
+        {
+            this._OrderID = value;
+            RaisePropertyChanged("OrderID");
+        }
+    }
 
-/// <summary>
+    private int _ProductID;
 
-/// Gets or sets the order ID.
+    /// <summary>
+    /// Gets or sets the product ID.
+    /// </summary>
+    /// <value>The product ID.</value>
+    public int ProductID
+    {
+        get
+        {
+            return this._ProductID;
+        }
+        set
+        {
+            this._ProductID = value;
+            RaisePropertyChanged("ProductID");
+        }
+    }
 
-/// </summary>
+    private decimal _UnitPrice;
 
-/// <value>The order ID.</value>
+    /// <summary>
+    /// Gets or sets the unit price.
+    /// </summary>
+    /// <value>The unit price.</value>
+    public decimal UnitPrice
+    {
+        get
+        {
+            return this._UnitPrice;
+        }
+        set
+        {
+            this._UnitPrice = value;
+            RaisePropertyChanged("UnitPrice");
+        }
+    }
+    private Int16 _Quantity;
 
-public System.Nullable<int> OrderID
+    /// <summary>
+    /// Gets or sets the quantity.
+    /// </summary>
+    /// <value>The quantity.</value>
+    public Int16 Quantity
+    {
+        get
+        {
+            return this._Quantity;
+        }
+        set
+        {
+            this._Quantity = value;
+            RaisePropertyChanged("Quantity");
+        }
+    }
+    private double _Discount;
 
-{
+    /// <summary>
+    /// Gets or sets the discount.
+    /// </summary>
+    /// <value>The discount.</value>
+    public double Discount
+    {
+        get
+        {
+            return this._Discount;
+        }
+        set
+        {
+            this._Discount = value;
+            RaisePropertyChanged("Discount");
+        }
+    }
 
-get
+    private string _customerID;
 
-{
+    /// <summary>
+    /// Gets or sets the customer ID.
+    /// </summary>
+    /// <value>The customer ID.</value>
+    public string CustomerID
+    {
+        get
+        {
+            return _customerID;
+        }
+        set
+        {
+            _customerID = value;
+            RaisePropertyChanged("CustomerID");
+        }
+    }
 
-return this._OrderID;
+    private DateTime _orderDate;
 
+    /// <summary>
+    /// Gets or sets the order date.
+    /// </summary>
+    /// <value>The order date.</value>
+    public DateTime OrderDate
+    {
+        get
+        {
+            return _orderDate;
+        }
+        set
+        {
+            _orderDate = value;
+            RaisePropertyChanged("OrderDate");
+        }
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="OrderDetails"/> class.
+    /// </summary>
+    /// <param name="ord">The ord.</param>
+    /// <param name="prod">The prod.</param>
+    /// <param name="unit">The unit.</param>
+    /// <param name="quan">The quan.</param>
+    /// <param name="disc">The disc.</param>
+    public OrderDetails(int ord, int prod, decimal unit, Int16 quan, double disc, string cusid, DateTime ordDt)
+    {
+        this._Discount = disc;
+        this._OrderID = ord;
+        this._ProductID = prod;
+        this._Quantity = quan;
+        this._UnitPrice = unit;
+        this._customerID = cusid;
+        this._orderDate = ordDt;
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void RaisePropertyChanged(string name)
+    {
+        if (PropertyChanged != null)
+            PropertyChanged(this, new PropertyChangedEventArgs(name));
+    }
 }
 
-set
 
-{
-
-this._OrderID = value;
-
-RaisePropertyChanged("OrderID");
-
-}
-
-}
-
-private int _ProductID;
-
-/// <summary>
-
-/// Gets or sets the product ID.
-
-/// </summary>
-
-/// <value>The product ID.</value>
-
-public int ProductID
-
-{
-
-get
-
-{
-
-return this._ProductID;
-
-}
-
-set
-
-{
-
-this._ProductID = value;
-
-RaisePropertyChanged("ProductID");
-
-}
-
-}
-
-private decimal _UnitPrice;
-
-/// <summary>
-
-/// Gets or sets the unit price.
-
-/// </summary>
-
-/// <value>The unit price.</value>
-
-public decimal UnitPrice
-
-{
-
-get
-
-{
-
-return this._UnitPrice;
-
-}
-
-set
-
-{
-
-this._UnitPrice = value;
-
-RaisePropertyChanged("UnitPrice");
-
-}
-
-}
-
-private Int16 _Quantity;
-
-/// <summary>
-
-/// Gets or sets the quantity.
-
-/// </summary>
-
-/// <value>The quantity.</value>
-
-public Int16 Quantity
-
-{
-
-get
-
-{
-
-return this._Quantity;
-
-}
-
-set
-
-{
-
-this._Quantity = value;
-
-RaisePropertyChanged("Quantity");
-
-}
-
-}
-
-private double _Discount;
-
-/// <summary>
-
-/// Gets or sets the discount.
-
-/// </summary>
-
-/// <value>The discount.</value>
-
-public double Discount
-
-{
-
-get
-
-{
-
-return this._Discount;
-
-}
-
-set
-
-{
-
-this._Discount = value;
-
-RaisePropertyChanged("Discount");
-
-}
-
-}
-
-private string _customerID;
-
-/// <summary>
-
-/// Gets or sets the customer ID.
-
-/// </summary>
-
-/// <value>The customer ID.</value>
-
-public string CustomerID
-
-{
-
-get
-
-{
-
-return _customerID;
-
-}
-
-set
-
-{
-
-_customerID = value;
-
-RaisePropertyChanged("CustomerID");
-
-}
-
-}
-
-private DateTime _orderDate;
-
-/// <summary>
-
-/// Gets or sets the order date.
-
-/// </summary>
-
-/// <value>The order date.</value>
-
-public DateTime OrderDate
-
-{
-
-get
-
-{
-
-return _orderDate;
-
-}
-
-set
-
-{
-
-_orderDate = value;
-
-RaisePropertyChanged("OrderDate");
-
-}
-
-}
-
-/// <summary>
-
-/// Initializes a new instance of the <see cref="OrderDetails"/> class.
-
-/// </summary>
-
-/// <param name="orderID">The orderID.</param>
-
-/// <param name="prod">The prod.</param>
-
-/// <param name="unit">The unit.</param>
-
-/// <param name="quantity">The quantity.</param>
-
-/// <param name="disc">The disc.</param>
-
-public OrderDetails(int orderID, int prod, decimal unit, Int16 quantity, double disc, string customerId, DateTime orderDt)
-
-{
-
-this._Discount = disc;
-
-this._OrderID = orderID;
-
-this._ProductID = prod;
-
-this._Quantity = quantity;
-
-this._UnitPrice = unit;
-
-this._customerID = customerId;
-
-this._orderDate = orderDt;
-
-}
-
-public event PropertyChangedEventHandler PropertyChanged;
-
-private void RaisePropertyChanged(string name)
-
-{
-
-if (PropertyChanged != null)
-
-PropertyChanged(this, new PropertyChangedEventArgs(name));
-
-}
-
-}
 
 public class OrderInfo : INotifyPropertyChanged
-
 {
-
-private int _OrderID;
-
-private string _CustomerID;
-
-private System.Nullable<int> _EmployeeID;
-
-private string _ShipCity;
-
-private string _ShipCountry;
-
-private double _Freight;
-
-private bool _isClosed;
-
-private DateTime _shippingDate;
-
-private List<OrderDetails> orderDetails;
-
-/// <summary>
-
-/// Initializes a new instance of the <see cref="OrderInfo"/> class.
-
-/// </summary>
-
-public OrderInfo()
-
-{
-
-}
-
-/// <summary>
-
-/// Gets or sets the order details.
-
-/// </summary>
-
-/// <value>The order details.</value>
-
-public List<OrderDetails> OrderDetails
-
-{
-
-get
-
-{
-
-return this.orderDetails;
-
-}
-
-set
-
-{
-
-this.orderDetails = value;
-
-RaisePropertyChanged("OrderDetails");
-
-}
-
-}
-
-/// <summary>
-
-/// Gets or sets the order ID.
-
-/// </summary>
-
-/// <value>The order ID.</value>
-
-[Display(Name = "Order ID")]
-
-public int OrderID
-
-{
-
-get
-
-{
-
-return this._OrderID;
-
-}
-
-set
-
-{
-
-this._OrderID = value;
-
-RaisePropertyChanged("OrderID");
-
-}
-
-}
-
-/// <summary>
-
-/// Gets or sets the customer ID.
-
-/// </summary>
-
-/// <value>The customer ID.</value>
-
-[Display(Name = "Customer ID")]
-
-public string CustomerID
-
-{
-
-get
-
-{
-
-return this._CustomerID;
-
-}
-
-set
-
-{
-
-this._CustomerID = value;
-
-RaisePropertyChanged("CustomerID");
-
-}
-
-}
-
-/// <summary>
-
-/// Gets or sets the shipping date.
-
-/// </summary>
-
-/// <value>The shipping date.</value>
-
-[Display(Name = "Shipping Date")]
-
-public DateTime ShippingDate
-
-{
-
-get
-
-{
-
-return _shippingDate;
-
-}
-
-set
-
-{
-
-_shippingDate = value;
-
-RaisePropertyChanged("ShippingDate");
-
-}
-
-}
-
-/// <summary>
-
-/// Gets or sets the employee ID.
-
-/// </summary>
-
-/// <value>The employee ID.</value>
-
-[Display(Name = "Employee ID")]
-
-public System.Nullable<int> EmployeeID
-
-{
-
-get
-
-{
-
-return this._EmployeeID;
-
-}
-
-set
-
-{
-
-this._EmployeeID = value;
-
-RaisePropertyChanged("EmployeeID");
-
-}
-
-}
-
-/// <summary>
-
-/// Gets or sets the ship city.
-
-/// </summary>
-
-/// <value>The ship city.</value>
-
-[Display(Name = "Ship City")]
-
-public string ShipCity
-
-{
-
-get
-
-{
-
-return this._ShipCity;
-
-}
-
-set
-
-{
-
-this._ShipCity = value;
-
-RaisePropertyChanged("ShipCity");
-
-}
-
-}
-
-/// <summary>
-
-/// Gets or sets the ship country.
-
-/// </summary>
-
-/// <value>The ship country.</value>
-
-[Display(Name = "Ship Country")]
-
-public string ShipCountry
-
-{
-
-get
-
-{
-
-return this._ShipCountry;
-
-}
-
-set
-
-{
-
-this._ShipCountry = value;
-
-RaisePropertyChanged("ShipCountry");
-
-}
-
-}
-
-/// <summary>
-
-/// Gets or sets the freight.
-
-/// </summary>
-
-/// <value>The freight.</value>
-
-public double Freight
-
-{
-
-get
-
-{
-
-return this._Freight;
-
-}
-
-set
-
-{
-
-this._Freight = value;
-
-RaisePropertyChanged("Freight");
-
-}
-
-}
-
-/// <summary>
-
-/// Gets or sets a value indicating whether this instance is closed.
-
-/// </summary>
-
-/// <value><c>true</c> if this instance is closed; otherwise, <c>false</c>.</value>
-
-[Display(Name = "Closed")]
-
-public bool IsClosed
-
-{
-
-get
-
-{
-
-return this._isClosed;
-
-}
-
-set
-
-{
-
-this._isClosed = value;
-
-this.RaisePropertyChanged("IsClosed");
-
-}
-
-}
-
-public event PropertyChangedEventHandler PropertyChanged;
-
-private void RaisePropertyChanged(string name)
-
-{
-
-if (PropertyChanged != null)
-
-PropertyChanged(this, new PropertyChangedEventArgs(name));
-
-}
-
+    private int _OrderID;
+    private string _CustomerID;
+    private System.Nullable<int> _EmployeeID;
+    private string _ShipCity;
+    private string _ShipCountry;
+    private double _Freight;
+    private bool _isClosed;
+    private DateTime _shippingDate;
+    private List<OrderDetails> orderDetails;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="OrderInfo"/> class.
+    /// </summary>
+    public OrderInfo()
+    {
+
+    }
+
+    /// <summary>
+    /// Gets or sets the order details.
+    /// </summary>
+    /// <value>The order details.</value>
+    public List<OrderDetails> OrderDetails
+    {
+        get
+        {
+            return this.orderDetails;
+        }
+        set
+        {
+            this.orderDetails = value;
+            RaisePropertyChanged("OrderDetails");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the order ID.
+    /// </summary>
+    /// <value>The order ID.</value>
+    [Display(Name = "Order ID")]
+    public int OrderID
+    {
+        get
+        {
+            return this._OrderID;
+        }
+        set
+        {
+            this._OrderID = value;
+            RaisePropertyChanged("OrderID");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the customer ID.
+    /// </summary>
+    /// <value>The customer ID.</value>
+    [Display(Name = "Customer ID")]
+    public string CustomerID
+    {
+        get
+        {
+            return this._CustomerID;
+        }
+        set
+        {
+            this._CustomerID = value;
+            RaisePropertyChanged("CustomerID");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the shipping date.
+    /// </summary>
+    /// <value>The shipping date.</value>
+    [Display(Name = "Shipping Date")]
+    public DateTime ShippingDate
+    {
+        get
+        {
+            return _shippingDate;
+        }
+        set
+        {
+            _shippingDate = value;
+            RaisePropertyChanged("ShippingDate");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the employee ID.
+    /// </summary>
+    /// <value>The employee ID.</value>
+    [Display(Name = "Employee ID")]
+    public System.Nullable<int> EmployeeID
+    {
+        get
+        {
+            return this._EmployeeID;
+        }
+        set
+        {
+            this._EmployeeID = value;
+            RaisePropertyChanged("EmployeeID");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the ship city.
+    /// </summary>
+    /// <value>The ship city.</value>
+
+    [Display(Name = "Ship City")]
+    public string ShipCity
+    {
+        get
+        {
+            return this._ShipCity;
+        }
+        set
+        {
+            this._ShipCity = value;
+            RaisePropertyChanged("ShipCity");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the ship country.
+    /// </summary>
+    /// <value>The ship country.</value>
+
+    [Display(Name = "Ship Country")]
+    public string ShipCountry
+    {
+        get
+        {
+            return this._ShipCountry;
+        }
+        set
+        {
+            this._ShipCountry = value;
+            RaisePropertyChanged("ShipCountry");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the freight.
+    /// </summary>
+    /// <value>The freight.</value>
+    public double Freight
+    {
+        get
+        {
+            return this._Freight;
+        }
+        set
+        {
+            this._Freight = value;
+            RaisePropertyChanged("Freight");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets a value indicating whether this instance is closed.
+    /// </summary>
+    /// <value><c>true</c> if this instance is closed; otherwise, <c>false</c>.</value>
+    [Display(Name = "Closed")]
+    public bool IsClosed
+    {
+        get
+        {
+            return this._isClosed;
+        }
+
+        set
+        {
+            this._isClosed = value;
+            this.RaisePropertyChanged("IsClosed");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void RaisePropertyChanged(string name)
+    {
+        if (PropertyChanged != null)
+            PropertyChanged(this, new PropertyChangedEventArgs(name));
+    }
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
 Public Class OrderDetails
-
-Implements INotifyPropertyChanged
-
-Private _OrderID? As Integer
-
-''' <summary>
-
-''' Gets or sets the order ID.
-
-''' </summary>
-
-''' <value>The order ID.</value>
-
-Public Property OrderID() As Integer?
-
-Get
-
-Return Me._OrderID
-
-End Get
-
-Set(ByVal value? As Integer)
-
-Me._OrderID = value
-
-RaisePropertyChanged("OrderID")
-
-End Set
-
-End Property
-
-Private _ProductID As Integer
-
-''' <summary>
-
-''' Gets or sets the product ID.
-
-''' </summary>
-
-''' <value>The product ID.</value>
-
-Public Property ProductID() As Integer
-
-Get
-
-Return Me._ProductID
-
-End Get
-
-Set(ByVal value As Integer)
-
-Me._ProductID = value
-
-RaisePropertyChanged("ProductID")
-
-End Set
-
-End Property
-
-Private _UnitPrice As Decimal
-
-''' <summary>
-
-''' Gets or sets the unit price.
-
-''' </summary>
-
-''' <value>The unit price.</value>
-
-Public Property UnitPrice() As Decimal
-
-Get
-
-Return Me._UnitPrice
-
-End Get
-
-Set(ByVal value As Decimal)
-
-Me._UnitPrice = value
-
-RaisePropertyChanged("UnitPrice")
-
-End Set
-
-End Property
-
-Private _Quantity As Int16
-
-''' <summary>
-
-''' Gets or sets the quantity.
-
-''' </summary>
-
-''' <value>The quantity.</value>
-
-Public Property Quantity() As Int16
-
-Get
-
-Return Me._Quantity
-
-End Get
-
-Set(ByVal value As Int16)
-
-Me._Quantity = value
-
-RaisePropertyChanged("Quantity")
-
-End Set
-
-End Property
-
-Private _Discount As Double
-
-''' <summary>
-
-''' Gets or sets the discount.
-
-''' </summary>
-
-''' <value>The discount.</value>
-
-Public Property Discount() As Double
-
-Get
-
-Return Me._Discount
-
-End Get
-
-Set(ByVal value As Double)
-
-Me._Discount = value
-
-RaisePropertyChanged("Discount")
-
-End Set
-
-End Property
-
-Private _customerID As String
-
-''' <summary>
-
-''' Gets or sets the customer ID.
-
-''' </summary>
-
-''' <value>The customer ID.</value>
-
-Public Property CustomerID() As String
-
-Get
-
-Return _customerID
-
-End Get
-
-Set(ByVal value As String)
-
-_customerID = value
-
-RaisePropertyChanged("CustomerID")
-
-End Set
-
-End Property
-
-Private _orderDate As DateTime
-
-''' <summary>
-
-''' Gets or sets the order date.
-
-''' </summary>
-
-''' <value>The order date.</value>
-
-Public Property OrderDate() As DateTime
-
-Get
-
-Return _orderDate
-
-End Get
-
-Set(ByVal value As DateTime)
-
-_orderDate = value
-
-RaisePropertyChanged("OrderDate")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Initializes a new instance of the <see cref="OrderDetails"/> class.
-
-''' </summary>
-
-''' <param name="orderID">The orderID.</param>
-
-''' <param name="product">The product.</param>
-
-''' <param name="unit">The unit.</param>
-
-''' <param name="quantity">The quantity.</param>
-
-''' <param name="disc">The disc.</param>
-
-Public Sub New(ByVal orderID As Integer, ByVal product As Integer, ByVal unit As Decimal, ByVal quantity As Int16, ByVal disc As Double, ByVal customerId As String, ByVal orderDt As DateTime)
-
-Me._Discount = disc
-
-Me._OrderID = orderID
-
-Me._ProductID = prod
-
-Me._Quantity = quantity
-
-Me._UnitPrice = unit
-
-Me._customerID = customerId
-
-Me._orderDate = orderDt
-
-End Sub
-
-Public Event PropertyChanged As PropertyChangedEventHandler
-
-Private Sub RaisePropertyChanged(ByVal name As String)
-
-RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
-
-End Sub
-
+    Implements INotifyPropertyChanged
+    Private _OrderID? As Integer
+
+    ''' <summary>
+    ''' Gets or sets the order ID.
+    ''' </summary>
+    ''' <value>The order ID.</value>
+    Public Property OrderID() As Integer?
+        Get
+            Return Me._OrderID
+        End Get
+        Set(ByVal value? As Integer)
+            Me._OrderID = value
+            RaisePropertyChanged("OrderID")
+        End Set
+    End Property
+
+    Private _ProductID As Integer
+
+    ''' <summary>
+    ''' Gets or sets the product ID.
+    ''' </summary>
+    ''' <value>The product ID.</value>
+    Public Property ProductID() As Integer
+        Get
+            Return Me._ProductID
+        End Get
+        Set(ByVal value As Integer)
+            Me._ProductID = value
+            RaisePropertyChanged("ProductID")
+        End Set
+    End Property
+
+    Private _UnitPrice As Decimal
+
+    ''' <summary>
+    ''' Gets or sets the unit price.
+    ''' </summary>
+    ''' <value>The unit price.</value>
+    Public Property UnitPrice() As Decimal
+        Get
+            Return Me._UnitPrice
+        End Get
+        Set(ByVal value As Decimal)
+            Me._UnitPrice = value
+            RaisePropertyChanged("UnitPrice")
+        End Set
+    End Property
+    Private _Quantity As Int16
+
+    ''' <summary>
+    ''' Gets or sets the quantity.
+    ''' </summary>
+    ''' <value>The quantity.</value>
+    Public Property Quantity() As Int16
+        Get
+            Return Me._Quantity
+        End Get
+        Set(ByVal value As Int16)
+            Me._Quantity = value
+            RaisePropertyChanged("Quantity")
+        End Set
+    End Property
+    Private _Discount As Double
+
+    ''' <summary>
+    ''' Gets or sets the discount.
+    ''' </summary>
+    ''' <value>The discount.</value>
+    Public Property Discount() As Double
+        Get
+            Return Me._Discount
+        End Get
+        Set(ByVal value As Double)
+            Me._Discount = value
+            RaisePropertyChanged("Discount")
+        End Set
+    End Property
+
+    Private _customerID As String
+
+    ''' <summary>
+    ''' Gets or sets the customer ID.
+    ''' </summary>
+    ''' <value>The customer ID.</value>
+    Public Property CustomerID() As String
+        Get
+            Return _customerID
+        End Get
+        Set(ByVal value As String)
+            _customerID = value
+            RaisePropertyChanged("CustomerID")
+        End Set
+    End Property
+
+    Private _orderDate As DateTime
+
+    ''' <summary>
+    ''' Gets or sets the order date.
+    ''' </summary>
+    ''' <value>The order date.</value>
+    Public Property OrderDate() As DateTime
+        Get
+            Return _orderDate
+        End Get
+        Set(ByVal value As DateTime)
+            _orderDate = value
+            RaisePropertyChanged("OrderDate")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Initializes a new instance of the <see cref="OrderDetails"/> class.
+    ''' </summary>
+    ''' <param name="ord">The ord.</param>
+    ''' <param name="prod">The prod.</param>
+    ''' <param name="unit">The unit.</param>
+    ''' <param name="quan">The quan.</param>
+    ''' <param name="disc">The disc.</param>
+    Public Sub New(ByVal ord As Integer, ByVal prod As Integer, ByVal unit As Decimal, ByVal quan As Int16, ByVal disc As Double, ByVal cusid As String, ByVal ordDt As DateTime)
+        Me._Discount = disc
+        Me._OrderID = ord
+        Me._ProductID = prod
+        Me._Quantity = quan
+        Me._UnitPrice = unit
+        Me._customerID = cusid
+        Me._orderDate = ordDt
+    End Sub
+
+    Public Event PropertyChanged As PropertyChangedEventHandler
+
+    Private Sub RaisePropertyChanged(ByVal name As String)
+        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
+    End Sub
 End Class
+
 
 Public Class OrderInfo
-
-Implements INotifyPropertyChanged
-
-Private _OrderID As Integer
-
-Private _CustomerID As String
-
-Private _EmployeeID? As Integer
-
-Private _ShipCity As String
-
-Private _ShipCountry As String
-
-Private _Freight As Double
-
-Private _isClosed As Boolean
-
-Private _shippingDate As DateTime
-
-Private orderDetails_Renamed As List(Of OrderDetails)
-
-''' <summary>
-
-''' Initializes a new instance of the <see cref="OrderInfo"/> class.
-
-''' </summary>
-
-Public Sub New()
-
-End Sub
-
-''' <summary>
-
-''' Gets or sets the order details.
-
-''' </summary>
-
-''' <value>The order details.</value>
-
-Public Property OrderDetails() As List(Of OrderDetails)
-
-Get
-
-Return Me.orderDetails_Renamed
-
-End Get
-
-Set(ByVal value As List(Of OrderDetails))
-
-Me.orderDetails_Renamed = value
-
-RaisePropertyChanged("OrderDetails")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Gets or sets the order ID.
-
-''' </summary>
-
-''' <value>The order ID.</value>
-
-<Display(Name := "Order ID")>
-
-Public Property OrderID() As Integer
-
-Get
-
-Return Me._OrderID
-
-End Get
-
-Set(ByVal value As Integer)
-
-Me._OrderID = value
-
-RaisePropertyChanged("OrderID")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Gets or sets the customer ID.
-
-''' </summary>
-
-''' <value>The customer ID.</value>
-
-<Display(Name := "Customer ID")>
-
-Public Property CustomerID() As String
-
-Get
-
-Return Me._CustomerID
-
-End Get
-
-Set(ByVal value As String)
-
-Me._CustomerID = value
-
-RaisePropertyChanged("CustomerID")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Gets or sets the shipping date.
-
-''' </summary>
-
-''' <value>The shipping date.</value>
-
-<Display(Name := "Shipping Date")>
-
-Public Property ShippingDate() As DateTime
-
-Get
-
-Return _shippingDate
-
-End Get
-
-Set(ByVal value As DateTime)
-
-_shippingDate = value
-
-RaisePropertyChanged("ShippingDate")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Gets or sets the employee ID.
-
-''' </summary>
-
-''' <value>The employee ID.</value>
-
-<Display(Name := "Employee ID")>
-
-Public Property EmployeeID() As Integer?
-
-Get
-
-Return Me._EmployeeID
-
-End Get
-
-Set(ByVal value? As Integer)
-
-Me._EmployeeID = value
-
-RaisePropertyChanged("EmployeeID")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Gets or sets the ship city.
-
-''' </summary>
-
-''' <value>The ship city.</value>
-
-<Display(Name := "Ship City")>
-
-Public Property ShipCity() As String
-
-Get
-
-Return Me._ShipCity
-
-End Get
-
-Set(ByVal value As String)
-
-Me._ShipCity = value
-
-RaisePropertyChanged("ShipCity")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Gets or sets the ship country.
-
-''' </summary>
-
-''' <value>The ship country.</value>
-
-<Display(Name := "Ship Country")>
-
-Public Property ShipCountry() As String
-
-Get
-
-Return Me._ShipCountry
-
-End Get
-
-Set(ByVal value As String)
-
-Me._ShipCountry = value
-
-RaisePropertyChanged("ShipCountry")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Gets or sets the freight.
-
-''' </summary>
-
-''' <value>The freight.</value>
-
-Public Property Freight() As Double
-
-Get
-
-Return Me._Freight
-
-End Get
-
-Set(ByVal value As Double)
-
-Me._Freight = value
-
-RaisePropertyChanged("Freight")
-
-End Set
-
-End Property
-
-''' <summary>
-
-''' Gets or sets a value indicating whether this instance is closed.
-
-''' </summary>
-
-''' <value><c>true</c> if this instance is closed; otherwise, <c>false</c>.</value>
-
-<Display(Name := "Closed")>
-
-Public Property IsClosed() As Boolean
-
-Get
-
-Return Me._isClosed
-
-End Get
-
-Set(ByVal value As Boolean)
-
-Me._isClosed = value
-
-Me.RaisePropertyChanged("IsClosed")
-
-End Set
-
-End Property
-
-Public Event PropertyChanged As PropertyChangedEventHandler
-
-Private Sub RaisePropertyChanged(ByVal name As String)
-
-RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
-
-End Sub
-
+    Implements INotifyPropertyChanged
+    Private _OrderID As Integer
+    Private _CustomerID As String
+    Private _EmployeeID? As Integer
+    Private _ShipCity As String
+    Private _ShipCountry As String
+    Private _Freight As Double
+    Private _isClosed As Boolean
+    Private _shippingDate As DateTime
+'INSTANT VB NOTE: The variable orderDetails was renamed since Visual Basic does not allow class members with the same name:
+    Private orderDetails_Renamed As List(Of OrderDetails)
+
+    ''' <summary>
+    ''' Initializes a new instance of the <see cref="OrderInfo"/> class.
+    ''' </summary>
+    Public Sub New()
+
+    End Sub
+
+    ''' <summary>
+    ''' Gets or sets the order details.
+    ''' </summary>
+    ''' <value>The order details.</value>
+    Public Property OrderDetails() As List(Of OrderDetails)
+        Get
+            Return Me.orderDetails_Renamed
+        End Get
+        Set(ByVal value As List(Of OrderDetails))
+            Me.orderDetails_Renamed = value
+            RaisePropertyChanged("OrderDetails")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Gets or sets the order ID.
+    ''' </summary>
+    ''' <value>The order ID.</value>
+    <Display(Name := "Order ID")>
+    Public Property OrderID() As Integer
+        Get
+            Return Me._OrderID
+        End Get
+        Set(ByVal value As Integer)
+            Me._OrderID = value
+            RaisePropertyChanged("OrderID")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Gets or sets the customer ID.
+    ''' </summary>
+    ''' <value>The customer ID.</value>
+    <Display(Name := "Customer ID")>
+    Public Property CustomerID() As String
+        Get
+            Return Me._CustomerID
+        End Get
+        Set(ByVal value As String)
+            Me._CustomerID = value
+            RaisePropertyChanged("CustomerID")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Gets or sets the shipping date.
+    ''' </summary>
+    ''' <value>The shipping date.</value>
+    <Display(Name := "Shipping Date")>
+    Public Property ShippingDate() As DateTime
+        Get
+            Return _shippingDate
+        End Get
+        Set(ByVal value As DateTime)
+            _shippingDate = value
+            RaisePropertyChanged("ShippingDate")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Gets or sets the employee ID.
+    ''' </summary>
+    ''' <value>The employee ID.</value>
+    <Display(Name := "Employee ID")>
+    Public Property EmployeeID() As Integer?
+        Get
+            Return Me._EmployeeID
+        End Get
+        Set(ByVal value? As Integer)
+            Me._EmployeeID = value
+            RaisePropertyChanged("EmployeeID")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Gets or sets the ship city.
+    ''' </summary>
+    ''' <value>The ship city.</value>
+
+    <Display(Name := "Ship City")>
+    Public Property ShipCity() As String
+        Get
+            Return Me._ShipCity
+        End Get
+        Set(ByVal value As String)
+            Me._ShipCity = value
+            RaisePropertyChanged("ShipCity")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Gets or sets the ship country.
+    ''' </summary>
+    ''' <value>The ship country.</value>
+
+    <Display(Name := "Ship Country")>
+    Public Property ShipCountry() As String
+        Get
+            Return Me._ShipCountry
+        End Get
+        Set(ByVal value As String)
+            Me._ShipCountry = value
+            RaisePropertyChanged("ShipCountry")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Gets or sets the freight.
+    ''' </summary>
+    ''' <value>The freight.</value>
+    Public Property Freight() As Double
+        Get
+            Return Me._Freight
+        End Get
+        Set(ByVal value As Double)
+            Me._Freight = value
+            RaisePropertyChanged("Freight")
+        End Set
+    End Property
+
+    ''' <summary>
+    ''' Gets or sets a value indicating whether this instance is closed.
+    ''' </summary>
+    ''' <value><c>true</c> if this instance is closed; otherwise, <c>false</c>.</value>
+    <Display(Name := "Closed")>
+    Public Property IsClosed() As Boolean
+        Get
+            Return Me._isClosed
+        End Get
+
+        Set(ByVal value As Boolean)
+            Me._isClosed = value
+            Me.RaisePropertyChanged("IsClosed")
+        End Set
+    End Property
+
+    Public Event PropertyChanged As PropertyChangedEventHandler
+
+    Private Sub RaisePropertyChanged(ByVal name As String)
+        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
+    End Sub
 End Class
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1217,900 +696,527 @@ Create a `OrderInfoRepository` class with `GetOrdersDetails` method which return
 {% tabs %}
 {% highlight c# %}
 public class OrderInfoRepository
-
 {
-
-/// <summary>
-
-/// Initializes a new instance of the <see cref="OrderInfoRepository"/> class.
-
-/// </summary>
-
-public OrderInfoRepository()
-
-{
-
-}
-
-/// <summary>
-
-/// Gets the orders details.
-
-/// </summary>
-
-/// <param name="count">The count.</param>
-
-/// <returns></returns>
-
-public List<OrderInfo> GetOrdersDetails(int count)
-
-{
-
-List<OrderInfo> ordersDetails = new List<OrderInfo>();
-
-this.OrderedDates = GetDateBetween(2008, 2012, count);
-
-OrdersAdd(count);
-
-SetShipCity();
-
-for (int i = 10000; i < count + 10000; i++)
-
-{
-
-ordersDetails.Add(GetOrder(i));
-
-}
-
-return ordersDetails;
-
-}
-
-/// <summary>
-
-/// Gets the customers.
-
-/// </summary>
-
-/// <value>The customers.</value>
-
-public List<string> Customers
-
-{
-
-get
-
-{
-
-return this.CustomerID.ToList();
-
-}
-
-}
-
-/// <summary>
-
-/// Gets the ship countries.
-
-/// </summary>
-
-/// <value>The ship countries.</value>
-
-public List<string> ShipCountries
-
-{
-
-get
-
-{
-
-return this.ShipCountry.ToList();
-
-}
-
-}
-
-/// <summary>
-
-/// Orders the add.
-
-/// </summary>
-
-private void OrdersAdd(int count)
-
-{
-
-orders.Add(new OrderDetails(10000, 12, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10000, 14, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10000, 18, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10000, 34, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10000, 14, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10000, 18, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10000, 34, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10001, 23, 45, 76, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10001, 45, 67, 23, 5, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10001, 45, 42, 16, 3, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10001, 23, 95, 15, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10002, 7, 70, 6, 4, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10002, 2, 30, 5, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10003, 23, 73, 9, 3, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10003, 8, 11, 8, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10003, 1, 150, 1, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10009, 4, 35, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10009, 2, 31, 7, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10010, 7, 23, 3, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10010, 5, 65, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10010, 3, 15, 5, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10010, 2, 31, 1, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10011, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10011, 3, 45, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10011, 2, 41, 7, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10013, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10013, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10021, 54, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10021, 63, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10021, 27, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10022, 59, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10022, 60, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10022, 47, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10032, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10032, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10034, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10034, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10034, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10042, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10042, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10045, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10045, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10045, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10045, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10056, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10056, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10056, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10067, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10067, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-orders.Add(new OrderDetails(10067, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
-
-}
-
-private List<DateTime> OrderedDates;
-
-Random r = new Random();
-
-List<OrderDetails> orders = new List<OrderDetails>();
-
-/// <summary>
-
-/// Gets the order.
-
-/// </summary>
-
-/// <param name="i">The i.</param>
-
-/// <returns></returns>
-
-private OrderInfo GetOrder(int i)
-
-{
-
-var shipCountry = ShipCountry[r.Next(5)];
-
-var shipCityColl = ShipCity[shipCountry];
-
-return new OrderInfo()
-
-{
-
-OrderID = i,
-
-CustomerID = CustomerID[r.Next(15)],
-
-EmployeeID = r.Next(1, 10),
-
-Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2),
-
-ShipCountry = shipCountry,
-
-ShippingDate = this.OrderedDates[i - 10000],
-
-IsClosed = i % 2 == 0 ? true : false,
-
-ShipCity = shipCityColl[r.Next(shipCityColl.Length - 1)],
-
-OrderDetails = getOrder(i)
-
-};
-
-}
-
-/// <summary>
-
-/// Gets the specified i.
-
-/// </summary>
-
-/// <param name="i">The i.</param>
-
-/// <returns></returns>
-
-public List<OrderDetails> getOrder(int i)
-
-{
-
-List<OrderDetails> order = new List<OrderDetails>();
-
-foreach (var or in orders)
-
-if (or.OrderID == i)
-
-order.Add(or);
-
-return order;
-
-}
-
-string[] ShipCountry = new string[]
-
-{
-
-"Argentina",
-
-"Austria",
-
-"Belgium",
-
-"Brazil",
-
-"Canada",
-
-"Denmark",
-
-"Finland",
-
-"France",
-
-"Germany",
-
-"Ireland",
-
-"Italy",
-
-"Mexico",
-
-"Norway",
-
-"Poland",
-
-"Portugal",
-
-"Spain",
-
-"Sweden",
-
-"Switzerland",
-
-"UK",
-
-"USA",
-
-"Venezuela"
-
-};
-
-Dictionary<string, string[]> ShipCity = new Dictionary<string, string[]>();
-
-/// <summary>
-
-/// Sets the ship city.
-
-/// </summary>
-
-private void SetShipCity()
-
-{
-
-string[] Argentina = new string[] { "Buenos Aires" };
-
-string[] Austria = new string[] { "Graz", "Salzburg" };
-
-string[] Belgium = new string[] { "Bruxelles", "Charleroi" };
-
-string[] Brazil = new string[] { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" };
-
-string[] Canada = new string[] { "Montréal", "Tsawassen", "Vancouver" };
-
-string[] Denmark = new string[] { "Århus", "København" };
-
-string[] Finland = new string[] { "Helsinki", "Oulu" };
-
-string[] France = new string[] { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" };
-
-string[] Germany = new string[] { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" };
-
-string[] Ireland = new string[] { "Cork" };
-
-string[] Italy = new string[] { "Bergamo", "Reggio Emilia", "Torino" };
-
-string[] Mexico = new string[] { "México D.F." };
-
-string[] Norway = new string[] { "Stavern" };
-
-string[] Poland = new string[] { "Warszawa" };
-
-string[] Portugal = new string[] { "Lisboa" };
-
-string[] Spain = new string[] { "Barcelona", "Madrid", "Sevilla" };
-
-string[] Sweden = new string[] { "Bräcke", "Luleå" };
-
-string[] Switzerland = new string[] { "Bern", "Genève" };
-
-string[] UK = new string[] { "Colchester", "Hedge End", "London" };
-
-string[] usa = new string[] { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" };
-
-string[] Venezuela = new string[] { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" };
-
-ShipCity.Add("Argentina", Argentina);
-
-ShipCity.Add("Austria", Austria);
-
-ShipCity.Add("Belgium", Belgium);
-
-ShipCity.Add("Brazil", Brazil);
-
-ShipCity.Add("Canada", Canada);
-
-ShipCity.Add("Denmark", Denmark);
-
-ShipCity.Add("Finland", Finland);
-
-ShipCity.Add("France", France);
-
-ShipCity.Add("Germany", Germany);
-
-ShipCity.Add("Ireland", Ireland);
-
-ShipCity.Add("Italy", Italy);
-
-ShipCity.Add("Mexico", Mexico);
-
-ShipCity.Add("Norway", Norway);
-
-ShipCity.Add("Poland", Poland);
-
-ShipCity.Add("Portugal", Portugal);
-
-ShipCity.Add("Spain", Spain);
-
-ShipCity.Add("Sweden", Sweden);
-
-ShipCity.Add("Switzerland", Switzerland);
-
-ShipCity.Add("UK", UK);
-
-ShipCity.Add("USA", usa);
-
-ShipCity.Add("Venezuela", Venezuela);
-
-}
-
-string[] CustomerID = new string[]
-
-{
-
-"ALFKI",
-
-"FRANS",
-
-"MEREP",
-
-"FOLKO",
-
-"SIMOB",
-
-"WARTH",
-
-"VAFFE",
-
-"FURIB",
-
-"SEVES",
-
-"LINOD",
-
-"RISCU",
-
-"PICCO",
-
-"BLONP",
-
-"WELLI",
-
-"FOLIG"
-
-};
-
-/// <summary>
-
-/// Gets the date between.
-
-/// </summary>
-
-/// <param name="startYear">The start year.</param>
-
-/// <param name="EndYear">The end year.</param>
-
-/// <param name="Count">The count.</param>
-
-/// <returns></returns>
-
-private List<DateTime> GetDateBetween(int startYear, int EndYear, int Count)
-
-{
-
-List<DateTime> date = new List<DateTime>();
-
-Random d = new Random(1);
-
-Random m = new Random(2);
-
-Random y = new Random(startYear);
-
-for (int i = 0; i < Count; i++)
-
-{
-
-int year = y.Next(startYear, EndYear);
-
-int month = m.Next(3, 13);
-
-int day = d.Next(1, 31);
-
-date.Add(new DateTime(year, month, day));
-
-}
-
-return date;
-
-}
-
+    /// <summary>
+    /// Initializes a new instance of the <see cref="OrderInfoRepository"/> class.
+    /// </summary>
+    public OrderInfoRepository()
+    {
+
+    }
+
+    /// <summary>
+    /// Gets the orders details.
+    /// </summary>
+    /// <param name="count">The count.</param>
+    /// <returns></returns>
+    public List<OrderInfo> GetOrdersDetails(int count)
+    {
+        List<OrderInfo> ordersDetails = new List<OrderInfo>();
+        this.OrderedDates = GetDateBetween(2008, 2012, count);
+        OrdersAdd(count);
+        SetShipCity();
+        for (int i = 10000; i < count + 10000; i++)
+        {
+            ordersDetails.Add(GetOrder(i));
+        }
+        return ordersDetails;
+    }
+
+    /// <summary>
+    /// Gets the customers.
+    /// </summary>
+    /// <value>The customers.</value>
+    public List<string> Customers
+    {
+        get
+        {
+            return this.CustomerID.ToList();
+        }
+    }
+
+    /// <summary>
+    /// Gets the ship countries.
+    /// </summary>
+    /// <value>The ship countries.</value>
+    public List<string> ShipCountries
+    {
+        get
+        {
+            return this.ShipCountry.ToList();
+        }
+    }
+
+    /// <summary>
+    /// Orderses the add.
+    /// </summary>
+    private void OrdersAdd(int count)
+    {
+        ord.Add(new OrderDetails(10000, 12, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10000, 14, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10000, 18, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10000, 34, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10000, 14, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10000, 18, 23, 5, 10, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10000, 34, 59, 10, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10001, 23, 45, 76, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10001, 45, 67, 23, 5, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10001, 45, 42, 16, 3, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10001, 23, 95, 15, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10002, 7, 70, 6, 4, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10002, 2, 30, 5, 2, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10003, 23, 73, 9, 3, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10003, 8, 11, 8, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10003, 1, 150, 1, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10009, 4, 35, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10009, 2, 31, 7, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10010, 7, 23, 3, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10010, 5, 65, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10010, 3, 15, 5, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10010, 2, 31, 1, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10011, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10011, 3, 45, 4, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10011, 2, 41, 7, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10013, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10013, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10021, 54, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10021, 63, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10021, 27, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10022, 59, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10022, 60, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10022, 47, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10032, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10032, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10034, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10034, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10034, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10042, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10042, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10045, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10045, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10045, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10045, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10056, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10056, 4, 35, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10056, 6, 46, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10067, 17, 99, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10067, 19, 80, 2, 0, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+        ord.Add(new OrderDetails(10067, 20, 111, 2, 7, CustomerID[r.Next(15)], this.OrderedDates[r.Next(count - 1)]));
+    }
+
+    private List<DateTime> OrderedDates;
+    Random r = new Random();
+    List<OrderDetails> ord = new List<OrderDetails>();
+
+    /// <summary>
+    /// Gets the order.
+    /// </summary>
+    /// <param name="i">The i.</param>
+    /// <returns></returns>
+    private OrderInfo GetOrder(int i)
+    {
+        var shipcountry = ShipCountry[r.Next(5)];
+        var shipcitycoll = ShipCity[shipcountry];
+        return new OrderInfo()
+        {
+            OrderID = i,
+            CustomerID = CustomerID[r.Next(15)],
+            EmployeeID = r.Next(1, 10),
+            Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2),
+            ShipCountry = shipcountry,
+            ShippingDate = this.OrderedDates[i - 10000],
+            IsClosed = i % 2 == 0 ? true : false,
+            ShipCity = shipcitycoll[r.Next(shipcitycoll.Length - 1)],
+            OrderDetails = getorder(i)
+        };
+    }
+
+    /// <summary>
+    /// Getors the specified i.
+    /// </summary>
+    /// <param name="i">The i.</param>
+    /// <returns></returns>
+    public List<OrderDetails> getorder(int i)
+    {
+        List<OrderDetails> order = new List<OrderDetails>();
+        foreach (var or in ord)
+            if (or.OrderID == i)
+                order.Add(or);
+        return order;
+    }
+
+    string[] ShipCountry = new string[]
+    {
+        "Argentina",
+        "Austria",
+        "Belgium",
+        "Brazil",
+        "Canada",
+        "Denmark",
+        "Finland",
+        "France",
+        "Germany",
+        "Ireland",
+        "Italy",
+        "Mexico",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Spain",
+        "Sweden",
+        "Switzerland",
+        "UK",
+        "USA",
+        "Venezuela"
+    };
+
+    Dictionary<string, string[]> ShipCity = new Dictionary<string, string[]>();
+
+    /// <summary>
+    /// Sets the ship city.
+    /// </summary>
+    private void SetShipCity()
+    {
+        string[] argentina = new string[] { "Buenos Aires" };
+
+        string[] austria = new string[] { "Graz", "Salzburg" };
+
+        string[] belgium = new string[] { "Bruxelles", "Charleroi" };
+
+        string[] brazil = new string[] { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" };
+
+        string[] canada = new string[] { "Montréal", "Tsawassen", "Vancouver" };
+
+        string[] denmark = new string[] { "Århus", "København" };
+
+        string[] finland = new string[] { "Helsinki", "Oulu" };
+
+        string[] france = new string[] { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" };
+
+        string[] germany = new string[] { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" };
+
+        string[] ireland = new string[] { "Cork" };
+
+        string[] italy = new string[] { "Bergamo", "Reggio Emilia", "Torino" };
+
+        string[] mexico = new string[] { "México D.F." };
+
+        string[] norway = new string[] { "Stavern" };
+
+        string[] poland = new string[] { "Warszawa" };
+
+        string[] portugal = new string[] { "Lisboa" };
+
+        string[] spain = new string[] { "Barcelona", "Madrid", "Sevilla" };
+
+        string[] sweden = new string[] { "Bräcke", "Luleå" };
+
+        string[] switzerland = new string[] { "Bern", "Genève" };
+
+        string[] uk = new string[] { "Colchester", "Hedge End", "London" };
+
+        string[] usa = new string[] { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" };
+
+        string[] venezuela = new string[] { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" };
+
+        ShipCity.Add("Argentina", argentina);
+        ShipCity.Add("Austria", austria);
+        ShipCity.Add("Belgium", belgium);
+        ShipCity.Add("Brazil", brazil);
+        ShipCity.Add("Canada", canada);
+        ShipCity.Add("Denmark", denmark);
+        ShipCity.Add("Finland", finland);
+        ShipCity.Add("France", france);
+        ShipCity.Add("Germany", germany);
+        ShipCity.Add("Ireland", ireland);
+        ShipCity.Add("Italy", italy);
+        ShipCity.Add("Mexico", mexico);
+        ShipCity.Add("Norway", norway);
+        ShipCity.Add("Poland", poland);
+        ShipCity.Add("Portugal", portugal);
+        ShipCity.Add("Spain", spain);
+        ShipCity.Add("Sweden", sweden);
+        ShipCity.Add("Switzerland", switzerland);
+        ShipCity.Add("UK", uk);
+        ShipCity.Add("USA", usa);
+        ShipCity.Add("Venezuela", venezuela);
+
+    }
+
+    string[] CustomerID = new string[]
+    {
+        "ALFKI",
+        "FRANS",
+        "MEREP",
+        "FOLKO",
+        "SIMOB",
+        "WARTH",
+        "VAFFE",
+        "FURIB",
+        "SEVES",
+        "LINOD",
+        "RISCU",
+        "PICCO",
+        "BLONP",
+        "WELLI",
+        "FOLIG"
+    };
+
+    /// <summary>
+    /// Gets the date between.
+    /// </summary>
+    /// <param name="startYear">The start year.</param>
+    /// <param name="EndYear">The end year.</param>
+    /// <param name="Count">The count.</param>
+    /// <returns></returns>
+    private List<DateTime> GetDateBetween(int startYear, int EndYear, int Count)
+    {
+        List<DateTime> date = new List<DateTime>();
+        Random d = new Random(1);
+        Random m = new Random(2);
+        Random y = new Random(startYear);
+        for (int i = 0; i < Count; i++)
+        {
+            int year = y.Next(startYear, EndYear);
+            int month = m.Next(3, 13);
+            int day = d.Next(1, 31);
+
+            date.Add(new DateTime(year, month, day));
+        }
+        return date;
+    }	
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
 Public Class OrderInfoRepository
+    ''' <summary>
+    ''' Initializes a new instance of the <see cref="OrderInfoRepository"/> class.
+    ''' </summary>
+    Public Sub New()
+
+    End Sub
+
+    ''' <summary>
+    ''' Gets the orders details.
+    ''' </summary>
+    ''' <param name="count">The count.</param>
+    ''' <returns></returns>
+    Public Function GetOrdersDetails(ByVal count As Integer) As List(Of OrderInfo)
+        Dim ordersDetails As New List(Of OrderInfo)()
+        Me.OrderedDates = GetDateBetween(2008, 2012, count)
+        OrdersAdd(count)
+        SetShipCity()
+        For i As Integer = 10000 To count + 10000 - 1
+            ordersDetails.Add(GetOrder_Renamed(i))
+        Next i
+        Return ordersDetails
+    End Function
+
+    ''' <summary>
+    ''' Gets the customers.
+    ''' </summary>
+    ''' <value>The customers.</value>
+    Public ReadOnly Property Customers() As List(Of String)
+        Get
+            Return Me.CustomerID.ToList()
+        End Get
+    End Property
+
+    ''' <summary>
+    ''' Gets the ship countries.
+    ''' </summary>
+    ''' <value>The ship countries.</value>
+    Public ReadOnly Property ShipCountries() As List(Of String)
+        Get
+            Return Me.ShipCountry.ToList()
+        End Get
+    End Property
+
+    ''' <summary>
+    ''' Orderses the add.
+    ''' </summary>
+    Private Sub OrdersAdd(ByVal count As Integer)
+        ord.Add(New OrderDetails(10000, 12, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10000, 14, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10000, 18, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10000, 34, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10000, 14, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10000, 18, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10000, 34, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10001, 23, 45, 76, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10001, 45, 67, 23, 5, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10001, 45, 42, 16, 3, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10001, 23, 95, 15, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10002, 7, 70, 6, 4, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10002, 2, 30, 5, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10003, 23, 73, 9, 3, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10003, 8, 11, 8, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10003, 1, 150, 1, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10009, 4, 35, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10009, 2, 31, 7, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10010, 7, 23, 3, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10010, 5, 65, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10010, 3, 15, 5, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10010, 2, 31, 1, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10011, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10011, 3, 45, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10011, 2, 41, 7, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10013, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10013, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10021, 54, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10021, 63, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10021, 27, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10022, 59, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10022, 60, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10022, 47, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10032, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10032, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10034, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10034, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10034, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10042, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10042, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10045, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10045, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10045, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10045, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10056, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10056, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10056, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10067, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10067, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+        ord.Add(New OrderDetails(10067, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
+    End Sub
+
+    Private OrderedDates As List(Of DateTime)
+    Private r As New Random()
+    Private ord As New List(Of OrderDetails)()
 
-''' <summary>
+    ''' <summary>
+    ''' Gets the order.
+    ''' </summary>
+    ''' <param name="i">The i.</param>
+    ''' <returns></returns>
+    Private Function GetOrder_Renamed(ByVal i As Integer) As OrderInfo
+        Dim shipcountry = Me.ShipCountry(r.Next(5))
+        Dim shipcitycoll = ShipCity(shipcountry)
+        Return New OrderInfo() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(1, 10), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipcountry, .ShippingDate = Me.OrderedDates(i - 10000), .IsClosed = If(i Mod 2 = 0, True, False), .ShipCity = shipcitycoll(r.Next(shipcitycoll.Length - 1)), .OrderDetails = getorder(i)}
+    End Function
 
-''' Initializes a new instance of the <see cref="OrderInfoRepository"/> class.
-
-''' </summary>
-
-Public Sub New()
-
-End Sub
-
-''' <summary>
-
-''' Gets the orders details.
-
-''' </summary>
-
-''' <param name="count">The count.</param>
-
-''' <returns></returns>
-
-Public Function GetOrdersDetails(ByVal count As Integer) As List(Of OrderInfo)
-
-Dim ordersDetails As New List(Of OrderInfo)()
-
-Me.OrderedDates = GetDateBetween(2008, 2012, count)
-
-OrdersAdd(count)
-
-SetShipCity()
-
-For i As Integer = 10000 To count + 10000 - 1
-
-ordersDetails.Add(GetOrder_Renamed(i))
-
-Next i
-
-Return ordersDetails
-
-End Function
-
-''' <summary>
-
-''' Gets the customers.
-
-''' </summary>
-
-''' <value>The customers.</value>
-
-Public ReadOnly Property Customers() As List(Of String)
-
-Get
-
-Return Me.CustomerID.ToList()
-
-End Get
-
-End Property
-
-''' <summary>
-
-''' Gets the ship countries.
-
-''' </summary>
-
-''' <value>The ship countries.</value>
-
-Public ReadOnly Property ShipCountries() As List(Of String)
-
-Get
-
-Return Me.ShipCountry.ToList()
-
-End Get
-
-End Property
-
-''' <summary>
-
-''' Orders the add.
-
-''' </summary>
-
-Private Sub OrdersAdd(ByVal count As Integer)
-
-orders.Add(New OrderDetails(10000, 12, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10000, 14, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10000, 18, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10000, 34, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10000, 14, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10000, 18, 23, 5, 10, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10000, 34, 59, 10, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10001, 23, 45, 76, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10001, 45, 67, 23, 5, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10001, 45, 42, 16, 3, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10001, 23, 95, 15, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10002, 7, 70, 6, 4, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10002, 2, 30, 5, 2, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10003, 23, 73, 9, 3, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10003, 8, 11, 8, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10003, 1, 150, 1, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10009, 4, 35, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10009, 2, 31, 7, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10010, 7, 23, 3, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10010, 5, 65, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10010, 3, 15, 5, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10010, 2, 31, 1, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10011, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10011, 3, 45, 4, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10011, 2, 41, 7, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10013, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10013, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10021, 54, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10021, 63, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10021, 27, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10022, 59, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10022, 60, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10022, 47, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10032, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10032, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10034, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10034, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10034, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10042, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10042, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10045, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10045, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10045, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10045, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10056, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10056, 4, 35, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10056, 6, 46, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10067, 17, 99, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10067, 19, 80, 2, 0, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-orders.Add(New OrderDetails(10067, 20, 111, 2, 7, CustomerID(r.Next(15)), Me.OrderedDates(r.Next(count - 1))))
-
-End Sub
-
-Private OrderedDates As List(Of DateTime)
-
-Private r As New Random()
-
-Private orders As New List(Of OrderDetails)()
-
-''' <summary>
-
-''' Gets the order.
-
-''' </summary>
-
-''' <param name="i">The i.</param>
-
-''' <returns></returns>
-
-Private Function GetOrder_Renamed(ByVal i As Integer) As OrderInfo
-
-Dim shipCountry = Me.ShipCountry(r.Next(5))
-
-Dim shipCityColl = ShipCity(shipCountry)
-
-Return New OrderInfo() With {.OrderID = i, .CustomerID = CustomerID(r.Next(15)), .EmployeeID = r.Next(1, 10), .Freight = Math.Round(r.Next(1000) + r.NextDouble(), 2), .ShipCountry = shipCountry, .ShippingDate = Me.OrderedDates(i - 10000), .IsClosed = If(i Mod 2 = 0, True, False), .ShipCity = shipCityColl(r.Next(shipCityColl.Length - 1)), .OrderDetails = getOrder(i)}
-
-End Function
-
-''' <summary>
-
-''' Gets the specified i.
-
-''' </summary>
-
-''' <param name="i">The i.</param>
-
-''' <returns></returns>
-
-Public Function getOrder(ByVal i As Integer) As List(Of OrderDetails)
-
-Dim order As New List(Of OrderDetails)()
-
-For Each [or] In orders
-
-If [or].OrderID = i Then
-
-order.Add([or])
-
-End If
-
-Next [or]
-
-Return order
-
-End Function
-
-Private ShipCountry() As String = { "Argentina", "Austria", "Belgium", "Brazil", "Canada", "Denmark", "Finland", "France", "Germany", "Ireland", "Italy", "Mexico", "Norway", "Poland", "Portugal", "Spain", "Sweden", "Switzerland", "UK", "USA", "Venezuela" }
-
-Private ShipCity As New Dictionary(Of String, String())()
-
-''' <summary>
-
-''' Sets the ship city.
-
-''' </summary>
-
-Private Sub SetShipCity()
-
-Dim Argentina() As String = { "Buenos Aires" }
-
-Dim Austria() As String = { "Graz", "Salzburg" }
-
-Dim Belgium() As String = { "Bruxelles", "Charleroi" }
-
-Dim Brazil() As String = { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" }
-
-Dim Canada() As String = { "Montréal", "Tsawassen", "Vancouver" }
-
-Dim Denmark() As String = { "Århus", "København" }
-
-Dim Finland() As String = { "Helsinki", "Oulu" }
-
-Dim France() As String = { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" }
-
-Dim Germany() As String = { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" }
-
-Dim Ireland() As String = { "Cork" }
-
-Dim Italy() As String = { "Bergamo", "Reggio Emilia", "Torino" }
-
-Dim Mexico() As String = { "México D.F." }
-
-Dim Norway() As String = { "Stavern" }
-
-Dim Poland() As String = { "Warszawa" }
-
-Dim Portugal() As String = { "Lisboa" }
-
-Dim Spain() As String = { "Barcelona", "Madrid", "Sevilla" }
-
-Dim Sweden() As String = { "Bräcke", "Luleå" }
-
-Dim Switzerland() As String = { "Bern", "Genève" }
-
-Dim UK() As String = { "Colchester", "Hedge End", "London" }
-
-Dim usa() As String = { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" }
-
-Dim Venezuela() As String = { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" }
-
-ShipCity.Add("Argentina", Argentina)
-
-ShipCity.Add("Austria", Austria)
-
-ShipCity.Add("Belgium", Belgium)
-
-ShipCity.Add("Brazil", Brazil)
-
-ShipCity.Add("Canada", Canada)
-
-ShipCity.Add("Denmark", Denmark)
-
-ShipCity.Add("Finland", Finland)
-
-ShipCity.Add("France", France)
-
-ShipCity.Add("Germany", Germany)
-
-ShipCity.Add("Ireland", Ireland)
-
-ShipCity.Add("Italy", Italy)
-
-ShipCity.Add("Mexico", Mexico)
-
-ShipCity.Add("Norway", Norway)
-
-ShipCity.Add("Poland", Poland)
-
-ShipCity.Add("Portugal", Portugal)
-
-ShipCity.Add("Spain", Spain)
-
-ShipCity.Add("Sweden", Sweden)
-
-ShipCity.Add("Switzerland", Switzerland)
-
-ShipCity.Add("UK", UK)
-
-ShipCity.Add("USA", usa)
-
-ShipCity.Add("Venezuela", Venezuela)
-
-End Sub
-
-Private CustomerID() As String = { "ALFKI", "FRANS", "MEREP", "FOLKO", "SIMOB", "WARTH", "VAFFE", "FURIB", "SEVES", "LINOD", "RISCU", "PICCO", "BLONP", "WELLI", "FOLIG" }
-
-''' <summary>
-
-''' Gets the date between.
-
-''' </summary>
-
-''' <param name="startYear">The start year.</param>
-
-''' <param name="EndYear">The end year.</param>
-
-''' <param name="Count">The count.</param>
-
-''' <returns></returns>
-
-Private Function GetDateBetween(ByVal startYear As Integer, ByVal EndYear As Integer, ByVal Count As Integer) As List(Of DateTime)
-
-Dim [date] As New List(Of DateTime)()
-
-Dim d As New Random(1)
-
-Dim m As New Random(2)
-
-Dim y As New Random(startYear)
-
-For i As Integer = 0 To Count - 1
-
-Dim year As Integer = y.Next(startYear, EndYear)
-
-Dim month As Integer = m.Next(3, 13)
-
-Dim day As Integer = d.Next(1, 31)
-
-[date].Add(New DateTime(year, month, day))
-
-Next i
-
-Return [date]
-
-End Function
-
+    ''' <summary>
+    ''' Getors the specified i.
+    ''' </summary>
+    ''' <param name="i">The i.</param>
+    ''' <returns></returns>
+    Public Function getorder(ByVal i As Integer) As List(Of OrderDetails)
+        Dim order As New List(Of OrderDetails)()
+        For Each [or] In ord
+            If [or].OrderID = i Then
+                order.Add([or])
+            End If
+        Next [or]
+        Return order
+    End Function
+
+    Private ShipCountry() As String = { "Argentina", "Austria", "Belgium", "Brazil", "Canada", "Denmark", "Finland", "France", "Germany", "Ireland", "Italy", "Mexico", "Norway", "Poland", "Portugal", "Spain", "Sweden", "Switzerland", "UK", "USA", "Venezuela" }
+
+    Private ShipCity As New Dictionary(Of String, String())()
+
+    ''' <summary>
+    ''' Sets the ship city.
+    ''' </summary>
+    Private Sub SetShipCity()
+        Dim argentina() As String = { "Buenos Aires" }
+
+        Dim austria() As String = { "Graz", "Salzburg" }
+
+        Dim belgium() As String = { "Bruxelles", "Charleroi" }
+
+        Dim brazil() As String = { "Campinas", "Resende", "Rio de Janeiro", "São Paulo" }
+
+        Dim canada() As String = { "Montréal", "Tsawassen", "Vancouver" }
+
+        Dim denmark() As String = { "Århus", "København" }
+
+        Dim finland() As String = { "Helsinki", "Oulu" }
+
+        Dim france() As String = { "Lille", "Lyon", "Marseille", "Nantes", "Paris", "Reims", "Strasbourg", "Toulouse", "Versailles" }
+
+        Dim germany() As String = { "Aachen", "Berlin", "Brandenburg", "Cunewalde", "Frankfurt a.M.", "Köln", "Leipzig", "Mannheim", "München", "Münster", "Stuttgart" }
+
+        Dim ireland() As String = { "Cork" }
+
+        Dim italy() As String = { "Bergamo", "Reggio Emilia", "Torino" }
+
+        Dim mexico() As String = { "México D.F." }
+
+        Dim norway() As String = { "Stavern" }
+
+        Dim poland() As String = { "Warszawa" }
+
+        Dim portugal() As String = { "Lisboa" }
+
+        Dim spain() As String = { "Barcelona", "Madrid", "Sevilla" }
+
+        Dim sweden() As String = { "Bräcke", "Luleå" }
+
+        Dim switzerland() As String = { "Bern", "Genève" }
+
+        Dim uk() As String = { "Colchester", "Hedge End", "London" }
+
+        Dim usa() As String = { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" }
+
+        Dim venezuela() As String = { "Barquisimeto", "Caracas", "I. de Margarita", "San Cristóbal" }
+
+        ShipCity.Add("Argentina", argentina)
+        ShipCity.Add("Austria", austria)
+        ShipCity.Add("Belgium", belgium)
+        ShipCity.Add("Brazil", brazil)
+        ShipCity.Add("Canada", canada)
+        ShipCity.Add("Denmark", denmark)
+        ShipCity.Add("Finland", finland)
+        ShipCity.Add("France", france)
+        ShipCity.Add("Germany", germany)
+        ShipCity.Add("Ireland", ireland)
+        ShipCity.Add("Italy", italy)
+        ShipCity.Add("Mexico", mexico)
+        ShipCity.Add("Norway", norway)
+        ShipCity.Add("Poland", poland)
+        ShipCity.Add("Portugal", portugal)
+        ShipCity.Add("Spain", spain)
+        ShipCity.Add("Sweden", sweden)
+        ShipCity.Add("Switzerland", switzerland)
+        ShipCity.Add("UK", uk)
+        ShipCity.Add("USA", usa)
+        ShipCity.Add("Venezuela", venezuela)
+
+    End Sub
+
+    Private CustomerID() As String = { "ALFKI", "FRANS", "MEREP", "FOLKO", "SIMOB", "WARTH", "VAFFE", "FURIB", "SEVES", "LINOD", "RISCU", "PICCO", "BLONP", "WELLI", "FOLIG" }
+
+    ''' <summary>
+    ''' Gets the date between.
+    ''' </summary>
+    ''' <param name="startYear">The start year.</param>
+    ''' <param name="EndYear">The end year.</param>
+    ''' <param name="Count">The count.</param>
+    ''' <returns></returns>
+    Private Function GetDateBetween(ByVal startYear As Integer, ByVal EndYear As Integer, ByVal Count As Integer) As List(Of DateTime)
+        Dim [date] As New List(Of DateTime)()
+        Dim d As New Random(1)
+        Dim m As New Random(2)
+        Dim y As New Random(startYear)
+        For i As Integer = 0 To Count - 1
+            Dim year As Integer = y.Next(startYear, EndYear)
+            Dim month As Integer = m.Next(3, 13)
+            Dim day As Integer = d.Next(1, 31)
+
+            [date].Add(New DateTime(year, month, day))
+        Next i
+        Return [date]
+    End Function
 End Class
 
 {% endhighlight %}
@@ -2127,12 +1233,9 @@ Bind the created collection in the previous step to the `SfDataGrid.DataSource` 
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.AutoGenerateRelations = true;
-
 {% endhighlight %}
 {% highlight vb %}
-
 sfDataGrid.AutoGenerateRelations = True
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -2154,26 +1257,20 @@ To define the Master-Details view relations, create GridViewDefinition and set t
 sfDataGrid.AutoGenerateRelations = false;
 
 var gridViewDefinition = new GridViewDefinition();
-
 gridViewDefinition.RelationalColumn = "OrderDetails";
-
 gridViewDefinition.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid", AutoGenerateColumns = true };
 
 sfDataGrid.DetailsViewDefinitions.Add(gridViewDefinition);
-
 {% endhighlight %}
 {% highlight vb %}
 
 sfDataGrid.AutoGenerateRelations = False
 
 Dim gridViewDefinition = New GridViewDefinition()
-
 gridViewDefinition.RelationalColumn = "OrderDetails"
-
 gridViewDefinition.DataGrid = New SfDataGrid() With {.Name = "FirstLevelNestedGrid", .AutoGenerateColumns = True}
 
 sfDataGrid.DetailsViewDefinitions.Add(gridViewDefinition)
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -2190,110 +1287,72 @@ Follow the steps to generate the Master-Details view relation for `DataTable`,
 * Defining relations
 * Auto generating relations
 * Manually defining relations
-### Create the DataTable with relations
 
+### Create the DataTable with relations
 
 Create a method `GetDataTable` type of `DataTable` which returns the `DataTable` with relations between `Suppliers` and `Products` tables in the `DataSet` based on `SupplierID` column.
 
 {% tabs %}
 {% highlight c# %}
 /// <summary>
-
 /// Gets the data table.
-
 /// </summary>
-
 public DataTable GetDataTable()
-
 {
+    DataSet ds = new DataSet();
 
-DataSet ds = new DataSet();
+    string connectionString = @"Data Source=" + FindFile("Northwind.sdf");
+    using (SqlCeConnection con = new SqlCeConnection(connectionString))
+    {
+        con.Open();
+        SqlCeDataAdapter sda = new SqlCeDataAdapter("SELECT * FROM Suppliers", con);
+        sda.Fill(ds, "Suppliers");
+    }
 
-string connectionString = @"Data Source=" + FindFile("Northwind.sdf");
+    using (SqlCeConnection con1 = new SqlCeConnection(connectionString))
+    {
+        con1.Open();
+        SqlCeDataAdapter sda1 = new SqlCeDataAdapter("SELECT * FROM Products", con1);
+        sda1.Fill(ds, "Products");
+    }
 
-using (SqlCeConnection con = new SqlCeConnection(connectionString))
+    ds.Relations.Add(new DataRelation("Supplier_Product", ds.Tables[0].Columns["Supplier ID"], ds.Tables[1].Columns["Supplier ID"]));
 
-{
-
-con.Open();
-
-SqlCeDataAdapter sqlDataAdapter = new SqlCeDataAdapter("SELECT * FROM Suppliers", con);
-
-sqlDataAdapter.Fill(ds, "Suppliers");
-
-}
-
-using (SqlCeConnection con1 = new SqlCeConnection(connectionString))
-
-{
-
-con1.Open();
-
-SqlCeDataAdapter sda1 = new SqlCeDataAdapter("SELECT * FROM Products", con1);
-
-sda1.Fill(ds, "Products");
-
-}
-
-ds.Relations.Add(new DataRelation("Supplier_Product", ds.Tables[0].Columns["Supplier ID"], ds.Tables[1].Columns["Supplier ID"]));
-
-if (ds.Tables.Count > 0)
-
-return ds.Tables[0];
-
-else
-
-return null;
-
+    if (ds.Tables.Count > 0)
+        return ds.Tables[0];
+    else
+        return null;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
 ''' <summary>
-
 ''' Gets the data table.
-
 ''' </summary>
-
 Public Function GetDataTable() As DataTable
+    Dim ds As New DataSet()
 
-Dim ds As New DataSet()
+    Dim connectionString As String = "Data Source=" & FindFile("Northwind.sdf")
+    Using con As New SqlCeConnection(connectionString)
+        con.Open()
+        Dim sda As New SqlCeDataAdapter("SELECT * FROM Suppliers", con)
+        sda.Fill(ds, "Suppliers")
+    End Using
 
-Dim connectionString As String = "Data Source=" & FindFile("Northwind.sdf")
+    Using con1 As New SqlCeConnection(connectionString)
+        con1.Open()
+        Dim sda1 As New SqlCeDataAdapter("SELECT * FROM Products", con1)
+        sda1.Fill(ds, "Products")
+    End Using
 
-Using con As New SqlCeConnection(connectionString)
+    ds.Relations.Add(New DataRelation("Supplier_Product", ds.Tables(0).Columns("Supplier ID"), ds.Tables(1).Columns("Supplier ID")))
 
-con.Open()
-
-Dim sqlDataAdapter As New SqlCeDataAdapter("SELECT * FROM Suppliers", con)
-
-sqlDataAdapter.Fill(ds, "Suppliers")
-
-End Using
-
-Using con1 As New SqlCeConnection(connectionString)
-
-con1.Open()
-
-Dim sda1 As New SqlCeDataAdapter("SELECT * FROM Products", con1)
-
-sda1.Fill(ds, "Products")
-
-End Using
-
-ds.Relations.Add(New DataRelation("Supplier_Product", ds.Tables(0).Columns("Supplier ID"), ds.Tables(1).Columns("Supplier ID")))
-
-If ds.Tables.Count > 0 Then
-
-Return ds.Tables(0)
-
-Else
-
-Return Nothing
-
-End If
-
+    If ds.Tables.Count > 0 Then
+        Return ds.Tables(0)
+    Else
+        Return Nothing
+    End If
 End Function
 
 {% endhighlight %}
@@ -2337,13 +1396,9 @@ To define the Master-Details View relations, create GridViewDefinition and set t
 sfDataGrid.AutoGenerateRelations = false;
 
 // GridViewDefinition for DataGrid
-
 var gridViewDefinition = new GridViewDefinition();
-
 gridViewDefinition.RelationalColumn = "Supplier_Product";
-
 gridViewDefinition.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid", AutoGenerateColumns = true };
-
 sfDataGrid.DetailsViewDefinition.Add(gridViewDefinition);
 
 {% endhighlight %}
@@ -2352,13 +1407,9 @@ sfDataGrid.DetailsViewDefinition.Add(gridViewDefinition);
 sfDataGrid.AutoGenerateRelations = False
 
 ' GridViewDefinition for DataGrid
-
 Dim gridViewDefinition = New GridViewDefinition()
-
 gridViewDefinition.RelationalColumn = "Supplier_Product"
-
 gridViewDefinition.DataGrid = New SfDataGrid() With {.Name = "FirstLevelNestedGrid", .AutoGenerateColumns = True}
-
 sfDataGrid.DetailsViewDefinition.Add(gridViewDefinition)
 
 {% endhighlight %}
@@ -2376,58 +1427,36 @@ You can load the `DataSource` for `DetailsViewDataGrid` asynchronously by handli
 this.sfDataGrid.DetailsViewExpanding += SfDataGrid_DetailsViewExpanding;
 
 private void SfDataGrid_DetailsViewExpanding(object sender, DetailsViewExpandingEventArgs e)
-
 {
-
-OrderInfo orderInfo = e.Record as OrderInfo;
-
-if (orderInfo.OrderID == 10000)
-
-e.DetailsViewDataSource.Add("OrderDetails", GetDetailsViewDataSource());
-
+    OrderInfo orderInfo = e.Record as OrderInfo;
+    if (orderInfo.OrderID == 10000)
+        e.DetailsViewDataSource.Add("OrderDetails", GetDetailsViewDataSource());
 }
 
 private ObservableCollection<OrderDetails> GetDetailsViewDataSource()
-
 {
-
-ObservableCollection<OrderDetails> orderDetails = new ObservableCollection<OrderDetails>();
-
-orderDetails.Add(new OrderDetails(1000, 2, 11, 2, 3, "Alan", DateTime.Today.AddDays(1), "Orlando"));
-
-orderDetails.Add(new OrderDetails(1001, 2, 11, 2, 3, "Michael", DateTime.Today, "Chennai"));
-
-return orderDetails;
-
+    ObservableCollection<OrderDetails> orderDetails = new ObservableCollection<OrderDetails>();
+    orderDetails.Add(new OrderDetails(1000, 2, 11, 2, 3, "Alan", DateTime.Today.AddDays(1), "Orlando"));
+    orderDetails.Add(new OrderDetails(1001, 2, 11, 2, 3, "Michael", DateTime.Today, "Chennai"));
+    return orderDetails;
 }
 
 {% endhighlight %}
 {% highlight vb %}
-
-Private Me.sfDataGrid.DetailsViewExpanding += AddressOf SfDataGrid_DetailsViewExpanding
+AddHandler sfDataGrid1.DetailsViewExpanding, AddressOf SfDataGrid_DetailsViewExpanding 
 
 Private Sub SfDataGrid_DetailsViewExpanding(ByVal sender As Object, ByVal e As DetailsViewExpandingEventArgs)
-
-Dim orderInfo As OrderInfo = TryCast(e.Record, OrderInfo)
-
-If orderInfo.OrderID = 10000 Then
-
-e.DetailsViewDataSource.Add("OrderDetails", GetDetailsViewDataSource())
-
-End If
-
+    Dim orderInfo As OrderInfo = TryCast(e.Record, OrderInfo)
+    If orderInfo.OrderID = 10000 Then
+        e.DetailsViewDataSource.Add("OrderDetails", GetDetailsViewDataSource())
+    End If
 End Sub
 
 Private Function GetDetailsViewDataSource() As ObservableCollection(Of OrderDetails)
-
-Dim orderDetails As New ObservableCollection(Of OrderDetails)()
-
-orderDetails.Add(New OrderDetails(1000, 2, 11, 2, 3, "Alan", DateTime.Today.AddDays(1), "Orlando"))
-
-orderDetails.Add(New OrderDetails(1001, 2, 11, 2, 3, "Michael", DateTime.Today, "Chennai"))
-
-Return orderDetails
-
+    Dim orderDetails As New ObservableCollection(Of OrderDetails)()
+    orderDetails.Add(New OrderDetails(1000, 2, 11, 2, 3, "Alan", DateTime.Today.AddDays(1), "Orlando"))
+    orderDetails.Add(New OrderDetails(1001, 2, 11, 2, 3, "Michael", DateTime.Today, "Chennai"))
+    Return orderDetails
 End Function
 
 {% endhighlight %}
@@ -2446,38 +1475,28 @@ For manually defined relations, the properties can be directly set to the GridVi
 {% tabs %}
 {% highlight c# %}
 GridViewDefinition firstLevelGridViewDefinition = new GridViewDefinition();
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails";
 
 SfDataGrid firstLevelNestedGrid = new SfDataGrid();
-
 firstLevelNestedGrid.AllowSorting = true;
-
 firstLevelNestedGrid.AllowFiltering = true;
-
 firstLevelNestedGrid.AllowResizingColumns = true;
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid;
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim firstLevelGridViewDefinition As New GridViewDefinition()
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails"
 
 Dim firstLevelNestedGrid As New SfDataGrid()
-
 firstLevelNestedGrid.AllowSorting = True
-
 firstLevelNestedGrid.AllowFiltering = True
-
 firstLevelNestedGrid.AllowResizingColumns = True
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 
 {% endhighlight %}
@@ -2488,94 +1507,62 @@ For two levels of nesting,
 {% tabs %}
 {% highlight c# %}
 // Creating First level GridViewDefinition.
-
 GridViewDefinition firstLevelGridViewDefinition = new GridViewDefinition();
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails";
 
 // Creating First level DetailsView Grid.
-
 SfDataGrid firstLevelNestedGrid = new SfDataGrid();
-
 firstLevelNestedGrid.AllowSorting = true;
-
 firstLevelNestedGrid.AllowFiltering = true;
-
 firstLevelNestedGrid.AllowResizingColumns = true;
-
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid;
 
 // Creating Second level GridViewDefinition.
-
 GridViewDefinition secondLevelGridViewDefinition = new GridViewDefinition();
-
 secondLevelGridViewDefinition.RelationalColumn = "ProductDetails";
 
 // Creating Second level DetailsView Grid.
-
 SfDataGrid secondLevelDataGrid = new SfDataGrid();
-
 secondLevelDataGrid.AllowSorting = true;
-
 secondLevelDataGrid.AllowFiltering = true;
-
 secondLevelDataGrid.AllowResizingColumns = true;
-
 secondLevelGridViewDefinition.DataGrid = secondLevelDataGrid;
 
 // Adding second level GridViewDefinition to the first level DetailsView Grid.
-
 firstLevelNestedGrid.DetailsViewDefinitions.Add(secondLevelGridViewDefinition);
 
 // Adding first level GridViewDefinition to the parent DataGrid.
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 
 {% endhighlight %}
 {% highlight vb %}
 
 ' Creating First level GridViewDefinition.
-
 Dim firstLevelGridViewDefinition As New GridViewDefinition()
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails"
 
 ' Creating First level DetailsView Grid.
-
 Dim firstLevelNestedGrid As New SfDataGrid()
-
 firstLevelNestedGrid.AllowSorting = True
-
 firstLevelNestedGrid.AllowFiltering = True
-
 firstLevelNestedGrid.AllowResizingColumns = True
-
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid
 
 ' Creating Second level GridViewDefinition.
-
 Dim secondLevelGridViewDefinition As New GridViewDefinition()
-
 secondLevelGridViewDefinition.RelationalColumn = "ProductDetails"
 
 ' Creating Second level DetailsView Grid.
-
 Dim secondLevelDataGrid As New SfDataGrid()
-
 secondLevelDataGrid.AllowSorting = True
-
 secondLevelDataGrid.AllowFiltering = True
-
 secondLevelDataGrid.AllowResizingColumns = True
-
 secondLevelGridViewDefinition.DataGrid = secondLevelDataGrid
 
 ' Adding second level GridViewDefinition to the first level DetailsView Grid.
-
 firstLevelNestedGrid.DetailsViewDefinitions.Add(secondLevelGridViewDefinition)
 
 ' Adding first level GridViewDefinition to the parent DataGrid.
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 
 {% endhighlight %}
@@ -2590,30 +1577,21 @@ When the relation is auto-generated, you can get the GridViewDefinition.DataGrid
 sfDataGrid.AutoGeneratingRelations += SfDataGrid_AutoGeneratingRelations;
 
 private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
-
-e.GridViewDefinition.DataGrid.AllowSorting = true;
-
-e.GridViewDefinition.DataGrid.AllowFiltering = true;
-
-e.GridViewDefinition.DataGrid.AllowResizingColumns = true;
-
+    e.GridViewDefinition.DataGrid.AllowSorting = true;
+    e.GridViewDefinition.DataGrid.AllowFiltering = true;
+    e.GridViewDefinition.DataGrid.AllowResizingColumns = true;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.AutoGeneratingRelations += AddressOf SfDataGrid_AutoGeneratingRelations
+AddHandler sfDataGrid1. AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations
 
 Private Sub SfDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
-
-e.GridViewDefinition.DataGrid.AllowSorting = True
-
-e.GridViewDefinition.DataGrid.AllowFiltering = True
-
-e.GridViewDefinition.DataGrid.AllowResizingColumns = True
-
+    e.GridViewDefinition.DataGrid.AllowSorting = True
+    e.GridViewDefinition.DataGrid.AllowFiltering = True
+    e.GridViewDefinition.DataGrid.AllowResizingColumns = True
 End Sub
 
 {% endhighlight %}
@@ -2626,64 +1604,42 @@ For two levels of nesting,
 sfDataGrid.AutoGeneratingRelations += SfDataGrid_AutoGeneratingRelations;
 
 private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
+    e.GridViewDefinition.DataGrid.AllowSorting = true;
+    e.GridViewDefinition.DataGrid.AllowFiltering = true;
+    e.GridViewDefinition.DataGrid.AllowResizingColumns = true;
 
-e.GridViewDefinition.DataGrid.AllowSorting = true;
-
-e.GridViewDefinition.DataGrid.AllowFiltering = true;
-
-e.GridViewDefinition.DataGrid.AllowResizingColumns = true;
-
-// Wiring events to FirstLevel DataGrid.
-
-e.GridViewDefinition.DataGrid.AutoGenerateRelations = true;
-
-e.GridViewDefinition.DataGrid.AutoGeneratingRelations += FirstLevelDataGrid_AutoGeneratingRelations;
-
+    // Wiring events to FirstLevel DataGrid.
+    e.GridViewDefinition.DataGrid.AutoGenerateRelations = true;
+    e.GridViewDefinition.DataGrid.AutoGeneratingRelations += FirstLevelDataGrid_AutoGeneratingRelations;
 }
 
 private void FirstLevelDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
-
-e.GridViewDefinition.DataGrid.AllowSorting = true;
-
-e.GridViewDefinition.DataGrid.AllowFiltering = true;
-
-e.GridViewDefinition.DataGrid.AllowResizingColumns = true;
-
+    e.GridViewDefinition.DataGrid.AllowSorting = true;
+    e.GridViewDefinition.DataGrid.AllowFiltering = true;
+    e.GridViewDefinition.DataGrid.AllowResizingColumns = true;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.AutoGeneratingRelations += AddressOf SfDataGrid_AutoGeneratingRelations
+AddHandler sfDataGrid1. AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations
 
 Private Sub SfDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
+    e.GridViewDefinition.DataGrid.AllowSorting = True
+    e.GridViewDefinition.DataGrid.AllowFiltering = True
+    e.GridViewDefinition.DataGrid.AllowResizingColumns = True
 
-e.GridViewDefinition.DataGrid.AllowSorting = True
-
-e.GridViewDefinition.DataGrid.AllowFiltering = True
-
-e.GridViewDefinition.DataGrid.AllowResizingColumns = True
-
-' Wiring events to FirstLevel DataGrid.
-
-e.GridViewDefinition.DataGrid.AutoGenerateRelations = True
-
-AddHandler e.GridViewDefinition.DataGrid.AutoGeneratingRelations, AddressOf FirstLevelDataGrid_AutoGeneratingRelations
-
+    ' Wiring events to FirstLevel DataGrid.
+    e.GridViewDefinition.DataGrid.AutoGenerateRelations = True
+    AddHandler e.GridViewDefinition.DataGrid.AutoGeneratingRelations, AddressOf FirstLevelDataGrid_AutoGeneratingRelations
 End Sub
 
 Private Sub FirstLevelDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
-
-e.GridViewDefinition.DataGrid.AllowSorting = True
-
-e.GridViewDefinition.DataGrid.AllowFiltering = True
-
-e.GridViewDefinition.DataGrid.AllowResizingColumns = True
-
+    e.GridViewDefinition.DataGrid.AllowSorting = True
+    e.GridViewDefinition.DataGrid.AllowFiltering = True
+    e.GridViewDefinition.DataGrid.AllowResizingColumns = True
 End Sub
 
 {% endhighlight %}
@@ -2709,38 +1665,28 @@ Auto generate the GridViewDefinition.DataGrid columns by setting the [GridViewDe
 {% tabs %}
 {% highlight c# %}
 GridViewDefinition firstLevelGridViewDefinition = new GridViewDefinition();
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails";
-
 SfDataGrid firstLevelNestedGrid = new SfDataGrid();
 
 // Enabling AutoGenerateColumns and Wiring AutoGeneratingColumn event for first level DataGrid.
-
 firstLevelNestedGrid.AutoGenerateColumns = true;
-
 firstLevelNestedGrid.AutoGeneratingColumn += FirstLevelNestedGrid_AutoGeneratingColumn;
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid;
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim firstLevelGridViewDefinition As New GridViewDefinition()
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails"
-
 Dim firstLevelNestedGrid As New SfDataGrid()
 
 ' Enabling AutoGenerateColumns and Wiring AutoGeneratingColumn event for first level DataGrid.
-
 firstLevelNestedGrid.AutoGenerateColumns = True
-
-firstLevelNestedGrid.AutoGeneratingColumn += FirstLevelNestedGrid_AutoGeneratingColumn
+AddHandler firstLevelNestedGrid.AutoGeneratingColumn, AddressOf FirstLevelNestedGrid_AutoGeneratingColumn
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 
 {% endhighlight %}
@@ -2753,36 +1699,26 @@ When the relation is auto generated, you can set the properties and wire the Gri
 sfDataGrid.AutoGeneratingRelations += SfDataGrid_AutoGeneratingRelations;
 
 private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
-
-e.GridViewDefinition.DataGrid.AutoGenerateColumns = true;
-
-e.GridViewDefinition.DataGrid.AutoGeneratingColumn += FirstLevelDataGrid_AutoGeneratingColumn;
-
+    e.GridViewDefinition.DataGrid.AutoGenerateColumns = true;
+    e.GridViewDefinition.DataGrid.AutoGeneratingColumn += FirstLevelDataGrid_AutoGeneratingColumn;
 }
 
 private void FirstLevelDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
-
 {
-
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.AutoGeneratingRelations += AddressOf SfDataGrid_AutoGeneratingRelations
+AddHandler sfDataGrid.AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations
 
 Private Sub SfDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
-
-e.GridViewDefinition.DataGrid.AutoGenerateColumns = True
-
-AddHandler e.GridViewDefinition.DataGrid.AutoGeneratingColumn, AddressOf FirstLevelDataGrid_AutoGeneratingColumn
-
+    e.GridViewDefinition.DataGrid.AutoGenerateColumns = True
+    AddHandler e.GridViewDefinition.DataGrid.AutoGeneratingColumn, AddressOf FirstLevelDataGrid_AutoGeneratingColumn
 End Sub
 
 Private Sub FirstLevelDataGrid_AutoGeneratingColumn(ByVal sender As Object, ByVal e As AutoGeneratingColumnArgs)
-
 End Sub
 
 {% endhighlight %}
@@ -2795,42 +1731,30 @@ You can directly define the columns to GridViewDefinition.DataGrid when`AutoGene
 {% tabs %}
 {% highlight c# %}
 GridViewDefinition firstLevelGridViewDefinition = new GridViewDefinition();
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails";
-
 SfDataGrid firstLevelNestedGrid = new SfDataGrid();
 
 // Disabling AutoGenerateColumns and manually defining columns for first level DataGrid.
-
 firstLevelNestedGrid.AutoGenerateColumns = false;
-
 firstLevelNestedGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", HeaderText = "Order ID" });
-
 firstLevelNestedGrid.Columns.Add(new GridTextColumn() { MappingName = "ProductID", HeaderText = "Product ID" });
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid;
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim firstLevelGridViewDefinition As New GridViewDefinition()
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails"
-
 Dim firstLevelNestedGrid As New SfDataGrid()
 
 ' Disabling AutoGenerateColumns and manually defining columns for first level DataGrid.
-
 firstLevelNestedGrid.AutoGenerateColumns = False
-
 firstLevelNestedGrid.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID", .HeaderText = "Order ID"})
-
 firstLevelNestedGrid.Columns.Add(New GridTextColumn() With {.MappingName = "ProductID", .HeaderText = "Product ID"})
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 
 {% endhighlight %}
@@ -2843,30 +1767,21 @@ When the relation is auto generated, you can define the GridViewDefinition.DataG
 sfDataGrid.AutoGeneratingRelations += SfDataGrid_AutoGeneratingRelations;
 
 private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
-
-e.GridViewDefinition.DataGrid.AutoGenerateColumns = false;
-
-e.GridViewDefinition.DataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", HeaderText = "Order ID" });
-
-e.GridViewDefinition.DataGrid.Columns.Add(new GridTextColumn() { MappingName = "ProductID", HeaderText = "Product ID" });
-
+    e.GridViewDefinition.DataGrid.AutoGenerateColumns = false;
+    e.GridViewDefinition.DataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", HeaderText = "Order ID" });
+    e.GridViewDefinition.DataGrid.Columns.Add(new GridTextColumn() { MappingName = "ProductID", HeaderText = "Product ID" });
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.AutoGeneratingRelations += AddressOf SfDataGrid_AutoGeneratingRelations
+AddHandler sfDataGrid.AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations
 
 Private Sub SfDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
-
-e.GridViewDefinition.DataGrid.AutoGenerateColumns = False
-
-e.GridViewDefinition.DataGrid.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID", .HeaderText = "Order ID"})
-
-e.GridViewDefinition.DataGrid.Columns.Add(New GridTextColumn() With {.MappingName = "ProductID", .HeaderText = "Product ID"})
-
+    e.GridViewDefinition.DataGrid.AutoGenerateColumns = False
+    e.GridViewDefinition.DataGrid.Columns.Add(New GridTextColumn() With {.MappingName = "OrderID", .HeaderText = "Order ID"})
+    e.GridViewDefinition.DataGrid.Columns.Add(New GridTextColumn() With {.MappingName = "ProductID", .HeaderText = "Product ID"})
 End Sub
 
 {% endhighlight %}
@@ -2883,42 +1798,30 @@ For manually defined relation, the events can be wired from the `GridViewDefinit
 {% tabs %}
 {% highlight c# %}
 GridViewDefinition firstLevelGridViewDefinition = new GridViewDefinition();
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails";
-
 SfDataGrid firstLevelNestedGrid = new SfDataGrid();
 
 // Wiring events for first level DataGrid.
-
 firstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
-
 firstLevelNestedGrid.SortColumnsChanging += FirstLevelNestedGrid_SortColumnsChanging;
-
 firstLevelNestedGrid.FilterChanging += FirstLevelNestedGrid_FilterChanging;
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid;
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim firstLevelGridViewDefinition As New GridViewDefinition()
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails"
-
 Dim firstLevelNestedGrid As New SfDataGrid()
 
 ' Wiring events for first level DataGrid.
-
-firstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit
-
-firstLevelNestedGrid.SortColumnsChanging += FirstLevelNestedGrid_SortColumnsChanging
-
-firstLevelNestedGrid.FilterChanging += FirstLevelNestedGrid_FilterChanging
+AddHandler firstLevelNestedGrid.CurrentCellBeginEdit, AddressOf FirstLevelNestedGrid_CurrentCellBeginEdit
+AddHandler firstLevelNestedGrid.SortColumnsChanging, AddressOf FirstLevelNestedGrid_SortColumnsChanging
+AddHandler firstLevelNestedGrid.FilterChanging, AddressOf FirstLevelNestedGrid_FilterChanging
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 
 {% endhighlight %}
@@ -2929,78 +1832,54 @@ For second level nested grid,
 {% tabs %}
 {% highlight c# %}
 GridViewDefinition firstLevelGridViewDefinition = new GridViewDefinition();
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails";
-
 SfDataGrid firstLevelNestedGrid = new SfDataGrid();
 
 // Wiring events for first level DataGrid.
-
 firstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
-
 firstLevelNestedGrid.SortColumnsChanging += FirstLevelNestedGrid_SortColumnsChanging;
-
 firstLevelNestedGrid.FilterChanging += FirstLevelNestedGrid_FilterChanging;
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid;
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 
 GridViewDefinition secondLevelGridViewDefinition = new GridViewDefinition();
-
 secondLevelGridViewDefinition.RelationalColumn = "ProductDetails";
-
 SfDataGrid secondLevelDataGrid = new SfDataGrid();
 
 // Wiring events for second level DataGrid.
-
 secondLevelDataGrid.CurrentCellBeginEdit += SecondLevelDataGrid_CurrentCellBeginEdit;
-
 secondLevelDataGrid.SortColumnsChanging += SecondLevelDataGrid_SortColumnsChanging;
-
 secondLevelDataGrid.FilterChanging += SecondLevelDataGrid_FilterChanging;
 
 secondLevelGridViewDefinition.DataGrid = secondLevelDataGrid;
-
 firstLevelNestedGrid.DetailsViewDefinitions.Add(secondLevelGridViewDefinition);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim firstLevelGridViewDefinition As New GridViewDefinition()
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails"
-
 Dim firstLevelNestedGrid As New SfDataGrid()
 
 ' Wiring events for first level DataGrid.
-
-firstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit
-
-firstLevelNestedGrid.SortColumnsChanging += FirstLevelNestedGrid_SortColumnsChanging
-
-firstLevelNestedGrid.FilterChanging += FirstLevelNestedGrid_FilterChanging
+AddHandler firstLevelNestedGrid.CurrentCellBeginEdit, AddressOf FirstLevelNestedGrid_CurrentCellBeginEdit
+AddHandler firstLevelNestedGrid.SortColumnsChanging, AddressOf FirstLevelNestedGrid_SortColumnsChanging
+AddHandler firstLevelNestedGrid.FilterChanging, AddressOf FirstLevelNestedGrid_FilterChanging
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 
 Dim secondLevelGridViewDefinition As New GridViewDefinition()
-
 secondLevelGridViewDefinition.RelationalColumn = "ProductDetails"
-
 Dim secondLevelDataGrid As New SfDataGrid()
 
 ' Wiring events for second level DataGrid.
-
-secondLevelDataGrid.CurrentCellBeginEdit += SecondLevelDataGrid_CurrentCellBeginEdit
-
-secondLevelDataGrid.SortColumnsChanging += SecondLevelDataGrid_SortColumnsChanging
-
-secondLevelDataGrid.FilterChanging += SecondLevelDataGrid_FilterChanging
+AddHandler secondLevelDataGrid.CurrentCellBeginEdit, AddressOf secondLevelDataGrid_CurrentCellBeginEdit
+AddHandler secondLevelDataGrid.SortColumnsChanging, AddressOf secondLevelDataGrid_SortColumnsChanging
+AddHandler secondLevelDataGrid.FilterChanging, AddressOf secondLevelDataGrid_FilterChanging
 
 secondLevelGridViewDefinition.DataGrid = secondLevelDataGrid
-
 firstLevelNestedGrid.DetailsViewDefinitions.Add(secondLevelGridViewDefinition)
 
 {% endhighlight %}
@@ -3015,30 +1894,21 @@ When the relation is auto-generated, you can get the GridViewDefinition.DataGrid
 this.sfDataGrid.AutoGeneratingRelations += SfDataGrid_AutoGeneratingRelations;
 
 private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
-
-e.GridViewDefinition.DataGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
-
-e.GridViewDefinition.DataGrid.SortColumnsChanging += FirstLevelNestedGrid_SortColumnsChanging;
-
-e.GridViewDefinition.DataGrid.FilterChanging += FirstLevelNestedGrid_FilterChanging;
-
+    e.GridViewDefinition.DataGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
+    e.GridViewDefinition.DataGrid.SortColumnsChanging += FirstLevelNestedGrid_SortColumnsChanging;
+    e.GridViewDefinition.DataGrid.FilterChanging += FirstLevelNestedGrid_FilterChanging;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Me.sfDataGrid.AutoGeneratingRelations += AddressOf SfDataGrid_AutoGeneratingRelations
+AddHandler sfDataGrid.AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations
 
 Private Sub SfDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
-
-e.GridViewDefinition.DataGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit
-
-e.GridViewDefinition.DataGrid.SortColumnsChanging += FirstLevelNestedGrid_SortColumnsChanging
-
-e.GridViewDefinition.DataGrid.FilterChanging += FirstLevelNestedGrid_FilterChanging
-
+    AddHandler e.GridViewDefinition.DataGrid.CurrentCellBeginEdit, AddressOf FirstLevelNestedGrid_CurrentCellBeginEdit
+   AddHandler e.GridViewDefinition.DataGrid.SortColumnsChanging, AddressOf FirstLevelNestedGrid_SortColumnsChanging
+   AddHandler e.GridViewDefinition.DataGrid.FilterChanging, AddressOf FirstLevelNestedGrid_FilterChanging
 End Sub
 
 {% endhighlight %}
@@ -3051,48 +1921,32 @@ For second level nested grid,
 this.sfDataGrid.AutoGeneratingRelations += SfDataGrid_AutoGeneratingRelations;
 
 private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
-
-e.GridViewDefinition.DataGrid.AutoGenerateRelations = true;
-
-e.GridViewDefinition.DataGrid.AutoGeneratingRelations += FirstLevelDataGrid_AutoGeneratingRelations;
-
+    e.GridViewDefinition.DataGrid.AutoGenerateRelations = true;
+    e.GridViewDefinition.DataGrid.AutoGeneratingRelations += FirstLevelDataGrid_AutoGeneratingRelations;
 }
 
 private void FirstLevelDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
-
-e.GridViewDefinition.DataGrid.CurrentCellBeginEdit += SecondLevelDataGrid_CurrentCellBeginEdit;
-
-e.GridViewDefinition.DataGrid.SortColumnsChanging += SecondLevelDataGrid_SortColumnsChanging;
-
-e.GridViewDefinition.DataGrid.FilterChanging += SecondLevelDataGrid_FilterChanging;
-
+    e.GridViewDefinition.DataGrid.CurrentCellBeginEdit += SecondLevelDataGrid_CurrentCellBeginEdit;
+    e.GridViewDefinition.DataGrid.SortColumnsChanging += SecondLevelDataGrid_SortColumnsChanging;
+    e.GridViewDefinition.DataGrid.FilterChanging += SecondLevelDataGrid_FilterChanging;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Me.sfDataGrid.AutoGeneratingRelations += AddressOf SfDataGrid_AutoGeneratingRelations
+AddHandler sfDataGrid.AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations
 
 Private Sub SfDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
-
-e.GridViewDefinition.DataGrid.AutoGenerateRelations = True
-
-AddHandler e.GridViewDefinition.DataGrid.AutoGeneratingRelations, AddressOf FirstLevelDataGrid_AutoGeneratingRelations
-
+    e.GridViewDefinition.DataGrid.AutoGenerateRelations = True
+    AddHandler e.GridViewDefinition.DataGrid.AutoGeneratingRelations, AddressOf FirstLevelDataGrid_AutoGeneratingRelations
 End Sub
 
 Private Sub FirstLevelDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
-
-e.GridViewDefinition.DataGrid.CurrentCellBeginEdit += SecondLevelDataGrid_CurrentCellBeginEdit
-
-e.GridViewDefinition.DataGrid.SortColumnsChanging += SecondLevelDataGrid_SortColumnsChanging
-
-e.GridViewDefinition.DataGrid.FilterChanging += SecondLevelDataGrid_FilterChanging
-
+    AddHandler e.GridViewDefinition.DataGrid.CurrentCellBeginEdit, AddressOf SecondLevelDataGrid_CurrentCellBeginEdit
+    AddHandler e.GridViewDefinition.DataGrid.SortColumnsChanging, AddressOf SecondLevelDataGrid_SortColumnsChanging
+    AddHandler e.GridViewDefinition.DataGrid.FilterChanging, AddressOf SecondLevelDataGrid_FilterChanging
 End Sub
 
 {% endhighlight %}
@@ -3105,34 +1959,26 @@ You can listen to the `DetailsViewDataGrid` event in the parent DataGrid event h
 {% tabs %}
 {% highlight c# %}
 GridViewDefinition firstLevelGridViewDefinition = new GridViewDefinition();
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails";
-
 SfDataGrid firstLevelNestedGrid = new SfDataGrid();
 
 // To notify the DetailsView events to parent DataGrid events.
-
 firstLevelNestedGrid.NotifyEventsToParentDataGrid = true;
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid;
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim firstLevelGridViewDefinition As New GridViewDefinition()
-
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails"
-
 Dim firstLevelNestedGrid As New SfDataGrid()
 
 ' To notify the DetailsView events to parent DataGrid events.
-
 firstLevelNestedGrid.NotifyEventsToParentDataGrid = True
 
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid
-
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 
 {% endhighlight %}
@@ -3145,22 +1991,17 @@ You can wire the events in the parent DataGrid and get the corresponding `Detail
 this.sfDataGrid.RowValidating += SfDataGrid_RowValidating;
 
 private void SfDataGrid_RowValidating(object sender, RowValidatingEventArgs e)
-
 {
-
-var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
-
+    var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Me.sfDataGrid.RowValidating += AddressOf SfDataGrid_RowValidating
+AddHandler Me.sfDataGrid.RowValidating, AddressOf SfDataGrid_RowValidating
 
 Private Sub SfDataGrid_RowValidating(ByVal sender As Object, ByVal e As RowValidatingEventArgs)
-
-Dim detailsViewDataGrid = TryCast(e.OriginalSender, DetailsViewDataGrid)
-
+    Dim detailsViewDataGrid = TryCast(e.OriginalSender, DetailsViewDataGrid)
 End Sub
 
 {% endhighlight %}
@@ -3173,26 +2014,19 @@ You can get the source DataGrid in the parent DataGrid events by using the Sourc
 this.sfDataGrid.RowValidating += SfDataGrid_RowValidating;
 
 private void SfDataGrid_RowValidating(object sender, RowValidatingEventArgs e)
-
 {
-
-var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
-
-var sourceDataGrid = detailsViewDataGrid.NotifyListener.SourceDataGrid;
-
+    var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
+    var sourceDataGrid = detailsViewDataGrid.NotifyListener.SourceDataGrid;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Me.sfDataGrid.RowValidating += AddressOf SfDataGrid_RowValidating
+AddHandler Me.sfDataGrid.RowValidating, AddressOf SfDataGrid_RowValidating
 
 Private Sub SfDataGrid_RowValidating(ByVal sender As Object, ByVal e As RowValidatingEventArgs)
-
-Dim detailsViewDataGrid = TryCast(e.OriginalSender, DetailsViewDataGrid)
-
-Dim sourceDataGrid = detailsViewDataGrid.NotifyListener.SourceDataGrid
-
+    Dim detailsViewDataGrid = TryCast(e.OriginalSender, DetailsViewDataGrid)
+    Dim sourceDataGrid = detailsViewDataGrid.NotifyListener.SourceDataGrid
 End Sub
 
 {% endhighlight %}
@@ -3207,26 +2041,19 @@ You can get the corresponding parent DataGrid while editing the `DetailsViewData
 firstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
 
 private void FirstLevelNestedGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs e)
-
 {
-
-var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
-
-var parentDataGrid = detailsViewDataGrid.NotifyListener.GetParentDataGrid();
-
+    var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
+    var parentDataGrid = detailsViewDataGrid.NotifyListener.GetParentDataGrid();
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private firstLevelNestedGrid.CurrentCellBeginEdit += AddressOf FirstLevelNestedGrid_CurrentCellBeginEdit
+AddHandler firstLevelNestedGrid.CurrentCellBeginEdit, AddressOf FirstLevelNestedGrid_CurrentCellBeginEdit
 
 Private Sub FirstLevelNestedGrid_CurrentCellBeginEdit(ByVal sender As Object, ByVal e As CurrentCellBeginEditEventArgs)
-
-Dim detailsViewDataGrid = TryCast(e.OriginalSender, DetailsViewDataGrid)
-
-Dim parentDataGrid = detailsViewDataGrid.NotifyListener.GetParentDataGrid()
-
+    Dim detailsViewDataGrid = TryCast(e.OriginalSender, DetailsViewDataGrid)
+    Dim parentDataGrid = detailsViewDataGrid.NotifyListener.GetParentDataGrid()
 End Sub
 
 {% endhighlight %}
@@ -3251,74 +2078,51 @@ Setting the column width of the `DetailsViewDataGrid` is based on the parent Dat
 this.sfDataGrid.DetailsViewLoading += SfDataGrid_DetailsViewLoading;
 
 private void SfDataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
-
 {
+    var parentGrid = e.OriginalSender is DetailsViewDataGrid ? (e.OriginalSender as SfDataGrid) : sender as SfDataGrid;
 
-var parentGrid = e.OriginalSender is DetailsViewDataGrid ? (e.OriginalSender as SfDataGrid) : sender as SfDataGrid;
+    if (!CanResize(parentGrid))
+        return;
 
-if (!CanResize(parentGrid))
+    if (parentGrid.Columns.Count != e.DetailsViewDataGrid.Columns.Count)
+        return;
+    double width = 0;
+    var detailsViewStartColumnIndex = e.DetailsViewDataGrid.TableControl.ResolveToStartColumnIndex();
 
-return;
+    for (int i = 0; i < parentGrid.Columns.Count; i++)
+    {
+        width = i == 0 ? parentGrid.Columns[i].ActualWidth - detailsViewStartColumnIndex * 24 : parentGrid.Columns[i].Width;
 
-if (parentGrid.Columns.Count != e.DetailsViewDataGrid.Columns.Count)
-
-return;
-
-double width = 0;
-
-var detailsViewStartColumnIndex = e.DetailsViewDataGrid.TableControl.ResolveToStartColumnIndex();
-
-for (int i = 0; i < parentGrid.Columns.Count; i++)
-
-{
-
-width = i == 0 ? parentGrid.Columns[i].ActualWidth - detailsViewStartColumnIndex * 24 : parentGrid.Columns[i].Width;
-
-if (e.DetailsViewDataGrid.Columns[i].Width != parentGrid.Columns[i].Width)
-
-e.DetailsViewDataGrid.Columns[i].Width = width;
-
-}
-
+        if (e.DetailsViewDataGrid.Columns[i].Width != parentGrid.Columns[i].Width)
+            e.DetailsViewDataGrid.Columns[i].Width = width;
+    }
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Me.sfDataGrid.DetailsViewLoading += AddressOf SfDataGrid_DetailsViewLoading
+AddHandler sfDataGrid.DetailsViewLoading, AddressOf SfDataGrid_DetailsViewLoading
 
 Private Sub SfDataGrid_DetailsViewLoading(ByVal sender As Object, ByVal e As DetailsViewLoadingAndUnloadingEventArgs)
+    Dim parentGrid = If(TypeOf e.OriginalSender Is DetailsViewDataGrid, (TryCast(e.OriginalSender, SfDataGrid)), TryCast(sender, SfDataGrid))
 
-Dim parentGrid = If(TypeOf e.OriginalSender Is DetailsViewDataGrid, (TryCast(e.OriginalSender, SfDataGrid)), TryCast(sender, SfDataGrid))
+    If Not CanResize(parentGrid) Then
+        Return
+    End If
 
-If Not CanResize(parentGrid) Then
+    If parentGrid.Columns.Count <> e.DetailsViewDataGrid.Columns.Count Then
+        Return
+    End If
+    Dim width As Double = 0
+    Dim detailsViewStartColumnIndex = e.DetailsViewDataGrid.TableControl.ResolveToStartColumnIndex()
 
-Return
+    For i As Integer = 0 To parentGrid.Columns.Count - 1
+        width = If(i = 0, parentGrid.Columns(i).ActualWidth - detailsViewStartColumnIndex * 24, parentGrid.Columns(i).Width)
 
-End If
-
-If parentGrid.Columns.Count <> e.DetailsViewDataGrid.Columns.Count Then
-
-Return
-
-End If
-
-Dim width As Double = 0
-
-Dim detailsViewStartColumnIndex = e.DetailsViewDataGrid.TableControl.ResolveToStartColumnIndex()
-
-For i As Integer = 0 To parentGrid.Columns.Count - 1
-
-width = If(i = 0, parentGrid.Columns(i).ActualWidth - detailsViewStartColumnIndex * 24, parentGrid.Columns(i).Width)
-
-If e.DetailsViewDataGrid.Columns(i).Width <> parentGrid.Columns(i).Width Then
-
-e.DetailsViewDataGrid.Columns(i).Width = width
-
-End If
-
-Next i
-
+        If e.DetailsViewDataGrid.Columns(i).Width <> parentGrid.Columns(i).Width Then
+            e.DetailsViewDataGrid.Columns(i).Width = width
+        End If
+    Next i
 End Sub
 
 {% endhighlight %}
@@ -3331,248 +2135,134 @@ When the column is resized in the parent DataGrid column, the new width will be 
 this.sfDataGrid.ColumnResizing += SfDataGrid_ColumnResizing;
 
 private void SfDataGrid_ColumnResizing(object sender, ColumnResizingEventArgs e)
-
 {
-
-var grid = sender as SfDataGrid;
-
-// For details view grid, sender will be RootDataGrid. So need to get OriginalSender
-
-if (e.OriginalSender is DetailsViewDataGrid)
-
-grid = e.OriginalSender as SfDataGrid;
-
-if (grid.View == null)
-
-return;
-
-SetWidth(grid, this.sfDataGrid.TableControl.ResolveToScrollColumnIndex(e.ColumnIndex), e.Width);
-
+    var grid = sender as SfDataGrid;
+    // For detailsview grid, sender will be RootDataGrid. So need to get OriginalSender
+    if (e.OriginalSender is DetailsViewDataGrid)
+        grid = e.OriginalSender as SfDataGrid;
+    if (grid.View == null)
+        return;
+    SetWidth(grid, this.sfDataGrid.TableControl.ResolveToScrollColumnIndex(e.ColumnIndex), e.Width);
 }
 
 /// <summary>
-
 /// Decides whether need to resize the child grid columns based on parent grid
-
 /// </summary>
-
 /// <param name="dataGrid">parent DataGrid</param>
-
 /// <returns>bool</returns>
-
 private bool CanResize(SfDataGrid dataGrid)
-
 {
-
-if (dataGrid.DetailsViewDefinitions == null && !dataGrid.DetailsViewDefinitions.Any())
-
-return true;
-
-foreach (var definition in dataGrid.DetailsViewDefinitions)
-
-{
-
-var detailsViewGrid = (definition as GridViewDefinition).DataGrid;
-
-if (detailsViewGrid.DetailsViewDefinitions == null && !detailsViewGrid.DetailsViewDefinitions.Any())
-
-return CanResize(detailsViewGrid);
-
-if (detailsViewGrid.Columns.Count != dataGrid.Columns.Count)
-
-return false;
-
-}
-
-return true;
-
+    if (dataGrid.DetailsViewDefinitions == null && !dataGrid.DetailsViewDefinitions.Any())
+        return true;
+    foreach (var definition in dataGrid.DetailsViewDefinitions)
+    {
+        var detailsViewGrid = (definition as GridViewDefinition).DataGrid;
+        if (detailsViewGrid.DetailsViewDefinitions == null && !detailsViewGrid.DetailsViewDefinitions.Any())
+            return CanResize(detailsViewGrid);
+        if (detailsViewGrid.Columns.Count != dataGrid.Columns.Count)
+            return false;
+    }
+    return true;
 }
 
 /// <summary>
-
 /// Recursively set width in all levels
-
 /// </summary>
-
 /// <param name="grid">SfDataGrid</param>
-
 /// <param name="scrollColumnIndex">scrollColumnIndex</param>
-
 /// <param name="width">width</param>
-
 private void SetWidth(SfDataGrid grid, int scrollColumnIndex, double width)
-
 {
-
-if (grid.DetailsViewDefinitions == null || !grid.DetailsViewDefinitions.Any())
-
-return;
-
-if (!CanResize(grid))
-
-return;
-
-var columnIndex = grid.TableControl.ResolveToGridVisibleColumnIndex(scrollColumnIndex);
-
-if (columnIndex < 0)
-
-return;
-
-var parentStartColumnIndex = grid.TableControl.ResolveToStartColumnIndex();
-
-var indentColumnsWidth = 0;
-
-foreach (var definition in grid.DetailsViewDefinitions)
-
-{
-
-var detailsViewDataGrid = (definition as GridViewDefinition).DataGrid;
-
-var startColumnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex();
-
-indentColumnsWidth = startColumnIndex * 24;
-
-var tempWidth = width - indentColumnsWidth < 0 ? 0 : width - indentColumnsWidth;
-
-detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentStartColumnIndex ? tempWidth : width;
-
-// If DetailsViewDataGrid has DetailsViewDefinition, recursively set width upto all levels
-
-if (detailsViewDataGrid.DetailsViewDefinitions != null && detailsViewDataGrid.DetailsViewDefinitions.Any())
-
-SetWidth(detailsViewDataGrid, detailsViewDataGrid.TableControl.ResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns[columnIndex].Width);
-
-}
-
+    if (grid.DetailsViewDefinitions == null || !grid.DetailsViewDefinitions.Any())
+        return;
+    if (!CanResize(grid))
+        return;
+    var columnIndex = grid.TableControl.ResolveToGridVisibleColumnIndex(scrollColumnIndex);
+    if (columnIndex < 0)
+        return;
+    var parentstartcolumnnIndex = grid.TableControl.ResolveToStartColumnIndex();
+    var indentcolumnsWidth = 0;
+    foreach (var definition in grid.DetailsViewDefinitions)
+    {
+        var detailsViewDataGrid = (definition as GridViewDefinition).DataGrid;
+        var startcolumnnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex();
+        indentcolumnsWidth = startcolumnnIndex * 24;
+        var tempWidth = width - indentcolumnsWidth < 0 ? 0 : width - indentcolumnsWidth;
+        detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentstartcolumnnIndex ? tempWidth : width;
+        // If DetailsViewDataGrid has DetailsViewDefinition, recursively set width upto all levels
+        if (detailsViewDataGrid.DetailsViewDefinitions != null && detailsViewDataGrid.DetailsViewDefinitions.Any())
+            SetWidth(detailsViewDataGrid, detailsViewDataGrid.TableControl.ResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns[columnIndex].Width);
+    }
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Me.sfDataGrid.ColumnResizing += AddressOf SfDataGrid_ColumnResizing
+AddHandler sfDataGrid.ColumnResizing, AddressOf SfDataGrid_ColumnResizing
 
 Private Sub SfDataGrid_ColumnResizing(ByVal sender As Object, ByVal e As ColumnResizingEventArgs)
-
-Dim grid = TryCast(sender, SfDataGrid)
-
-' For details view grid, sender will be RootDataGrid. So need to get OriginalSender
-
-If TypeOf e.OriginalSender Is DetailsViewDataGrid Then
-
-grid = TryCast(e.OriginalSender, SfDataGrid)
-
-End If
-
-If grid.View Is Nothing Then
-
-Return
-
-End If
-
-SetWidth(grid, Me.sfDataGrid.TableControl.ResolveToScrollColumnIndex(e.ColumnIndex), e.Width)
-
+    Dim grid = TryCast(sender, SfDataGrid)
+    ' For detailsview grid, sender will be RootDataGrid. So need to get OriginalSender
+    If TypeOf e.OriginalSender Is DetailsViewDataGrid Then
+        grid = TryCast(e.OriginalSender, SfDataGrid)
+    End If
+    If grid.View Is Nothing Then
+        Return
+    End If
+    SetWidth(grid, Me.sfDataGrid.TableControl.ResolveToScrollColumnIndex(e.ColumnIndex), e.Width)
 End Sub
 
 ''' <summary>
-
 ''' Decides whether need to resize the child grid columns based on parent grid
-
 ''' </summary>
-
 ''' <param name="dataGrid">parent DataGrid</param>
-
 ''' <returns>bool</returns>
-
 Private Function CanResize(ByVal dataGrid As SfDataGrid) As Boolean
-
-If dataGrid.DetailsViewDefinitions Is Nothing AndAlso (Not dataGrid.DetailsViewDefinitions.Any()) Then
-
-Return True
-
-End If
-
-For Each definition In dataGrid.DetailsViewDefinitions
-
-Dim detailsViewGrid = (TryCast(definition, GridViewDefinition)).DataGrid
-
-If detailsViewGrid.DetailsViewDefinitions Is Nothing AndAlso (Not detailsViewGrid.DetailsViewDefinitions.Any()) Then
-
-Return CanResize(detailsViewGrid)
-
-End If
-
-If detailsViewGrid.Columns.Count <> dataGrid.Columns.Count Then
-
-Return False
-
-End If
-
-Next definition
-
-Return True
-
+    If dataGrid.DetailsViewDefinitions Is Nothing AndAlso (Not dataGrid.DetailsViewDefinitions.Any()) Then
+        Return True
+    End If
+    For Each definition In dataGrid.DetailsViewDefinitions
+        Dim detailsViewGrid = (TryCast(definition, GridViewDefinition)).DataGrid
+        If detailsViewGrid.DetailsViewDefinitions Is Nothing AndAlso (Not detailsViewGrid.DetailsViewDefinitions.Any()) Then
+            Return CanResize(detailsViewGrid)
+        End If
+        If detailsViewGrid.Columns.Count <> dataGrid.Columns.Count Then
+            Return False
+        End If
+    Next definition
+    Return True
 End Function
 
 ''' <summary>
-
 ''' Recursively set width in all levels
-
 ''' </summary>
-
 ''' <param name="grid">SfDataGrid</param>
-
 ''' <param name="scrollColumnIndex">scrollColumnIndex</param>
-
 ''' <param name="width">width</param>
-
 Private Sub SetWidth(ByVal grid As SfDataGrid, ByVal scrollColumnIndex As Integer, ByVal width As Double)
-
-If grid.DetailsViewDefinitions Is Nothing OrElse (Not grid.DetailsViewDefinitions.Any()) Then
-
-Return
-
-End If
-
-If Not CanResize(grid) Then
-
-Return
-
-End If
-
-Dim columnIndex = grid.TableControl.ResolveToGridVisibleColumnIndex(scrollColumnIndex)
-
-If columnIndex < 0 Then
-
-Return
-
-End If
-
-Dim parentStartColumnIndex = grid.TableControl.ResolveToStartColumnIndex()
-
-Dim indentColumnsWidth = 0
-
-For Each definition In grid.DetailsViewDefinitions
-
-Dim detailsViewDataGrid = (TryCast(definition, GridViewDefinition)).DataGrid
-
-Dim startColumnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex()
-
-indentColumnsWidth = startColumnIndex * 24
-
-Dim tempWidth = If(width - indentColumnsWidth < 0, 0, width - indentColumnsWidth)
-
-detailsViewDataGrid.Columns(columnIndex).Width = If(scrollColumnIndex Is parentStartColumnIndex, tempWidth, width)
-
-' If DetailsViewDataGrid has DetailsViewDefinition, recursively set width upto all levels
-
-If detailsViewDataGrid.DetailsViewDefinitions IsNot Nothing AndAlso detailsViewDataGrid.DetailsViewDefinitions.Any() Then
-
-SetWidth(detailsViewDataGrid, detailsViewDataGrid.TableControl.ResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns(columnIndex).Width)
-
-End If
-
-Next definition
-
+    If grid.DetailsViewDefinitions Is Nothing OrElse (Not grid.DetailsViewDefinitions.Any()) Then
+        Return
+    End If
+    If Not CanResize(grid) Then
+        Return
+    End If
+    Dim columnIndex = grid.TableControl.ResolveToGridVisibleColumnIndex(scrollColumnIndex)
+    If columnIndex < 0 Then
+        Return
+    End If
+    Dim parentstartcolumnnIndex = grid.TableControl.ResolveToStartColumnIndex()
+    Dim indentcolumnsWidth = 0
+    For Each definition In grid.DetailsViewDefinitions
+        Dim detailsViewDataGrid = (TryCast(definition, GridViewDefinition)).DataGrid
+        Dim startcolumnnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex()
+        indentcolumnsWidth = startcolumnnIndex * 24
+        Dim tempWidth = If(width - indentcolumnsWidth < 0, 0, width - indentcolumnsWidth)
+        detailsViewDataGrid.Columns(columnIndex).Width = If(scrollColumnIndex Is parentstartcolumnnIndex, tempWidth, width)
+        ' If DetailsViewDataGrid has DetailsViewDefinition, recursively set width upto all levels
+        If detailsViewDataGrid.DetailsViewDefinitions IsNot Nothing AndAlso detailsViewDataGrid.DetailsViewDefinitions.Any() Then
+            SetWidth(detailsViewDataGrid, detailsViewDataGrid.TableControl.ResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns(columnIndex).Width)
+        End If
+    Next definition
 End Sub
 
 {% endhighlight %}
@@ -3619,22 +2309,16 @@ You can access the selected record or records and selected record index of the `
 {% tabs %}
 {% highlight c# %}
 var detailsViewDataGrid = this.sfDataGrid.GetDetailsViewGrid(2);
-
 int selectedIndex = detailsViewDataGrid.SelectedIndex;
-
 var selectedItem = detailsViewDataGrid.SelectedItem;
-
 var selectedItems = detailsViewDataGrid.SelectedItems;
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim detailsViewDataGrid = Me.sfDataGrid.GetDetailsViewGrid(2)
-
 Dim selectedIndex As Integer = detailsViewDataGrid.SelectedIndex
-
 Dim selectedItem = detailsViewDataGrid.SelectedItem
-
 Dim selectedItems = detailsViewDataGrid.SelectedItems
 
 {% endhighlight %}
@@ -3645,18 +2329,14 @@ You can access the SelectedItem, SelectedItems, and SelectedIndex properties of 
 {% tabs %}
 {% highlight c# %}
 int selectedIndex = this.sfDataGrid.SelectedDetailsViewGrid.SelectedIndex;
-
 var selectedItem = this.sfDataGrid.SelectedDetailsViewGrid.SelectedItem;
-
 var selectedItems = this.sfDataGrid.SelectedDetailsViewGrid.SelectedItems;
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim selectedIndex As Integer = Me.sfDataGrid.SelectedDetailsViewGrid.SelectedIndex
-
 Dim selectedItem = Me.sfDataGrid.SelectedDetailsViewGrid.SelectedItem
-
 Dim selectedItems = Me.sfDataGrid.SelectedDetailsViewGrid.SelectedItems
 
 {% endhighlight %}
@@ -3668,41 +2348,30 @@ You can get the [CurrentCell](https://help.syncfusion.com/cr/cref_files/windowsf
 
 {% tabs %}
 {% highlight c# %}
-// Retrieving current cell from SelectedDetailsViewGrid.
-
+// Retreiving currentcell from SelectedDetailsViewGrid.
 var currentCell = this.sfDataGrid.SelectedDetailsViewGrid.CurrentCell;
 
 firstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
 
 private void FirstLevelNestedGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs e)
-
 {
-
-// Retrieving current cell when editing the DetailsView.
-
-var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
-
-var currentCell = detailsViewDataGrid.CurrentCell;
-
+    // Retreiving currentcell when editing the DetailsView.
+    var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
+    var currentCell = detailsViewDataGrid.CurrentCell;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-' Retrieving current cell from SelectedDetailsViewGrid.
-
+' Retreiving currentcell from SelectedDetailsViewGrid.
 Private currentCell = Me.sfDataGrid.SelectedDetailsViewGrid.CurrentCell
 
-Private firstLevelNestedGrid.CurrentCellBeginEdit += AddressOf FirstLevelNestedGrid_CurrentCellBeginEdit
+AddHandler firstLevelNestedGrid.CurrentCellBeginEdit, AddressOf FirstLevelNestedGrid_CurrentCellBeginEdit
 
 Private Sub FirstLevelNestedGrid_CurrentCellBeginEdit(ByVal sender As Object, ByVal e As CurrentCellBeginEditEventArgs)
-
-' Retrieving current cell when editing the DetailsView.
-
-Dim detailsViewDataGrid = TryCast(e.OriginalSender, DetailsViewDataGrid)
-
-Dim currentCell = detailsViewDataGrid.CurrentCell
-
+    ' Retreiving currentcell when editing the DetailsView.
+    Dim detailsViewDataGrid = TryCast(e.OriginalSender, DetailsViewDataGrid)
+    Dim currentCell = detailsViewDataGrid.CurrentCell
 End Sub
 
 {% endhighlight %}
@@ -3755,13 +2424,9 @@ You can select a particular record by using the [SelectedItem](https://help.sync
 this.sfDataGrid.DetailsViewLoading += SfDataGrid_DetailsViewLoading;
 
 private void SfDataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
-
 {
-
-var record = e.DetailsViewDataGrid.GetRecordAtRowIndex(1);
-
-e.DetailsViewDataGrid.SelectedItem = record;
-
+    var record = e.DetailsViewDataGrid.GetRecordAtRowIndex(1);
+    e.DetailsViewDataGrid.SelectedItem = record;
 }
 
 {% endhighlight %}
@@ -3770,11 +2435,8 @@ e.DetailsViewDataGrid.SelectedItem = record;
 Private Me.sfDataGrid.DetailsViewLoading += AddressOf SfDataGrid_DetailsViewLoading
 
 Private Sub SfDataGrid_DetailsViewLoading(ByVal sender As Object, ByVal e As DetailsViewLoadingAndUnloadingEventArgs)
-
-Dim record = e.DetailsViewDataGrid.GetRecordAtRowIndex(1)
-
-e.DetailsViewDataGrid.SelectedItem = record
-
+    Dim record = e.DetailsViewDataGrid.GetRecordAtRowIndex(1)
+    e.DetailsViewDataGrid.SelectedItem = record
 End Sub
 
 {% endhighlight %}
@@ -3787,22 +2449,17 @@ You can also select a particular record by using the [SelectedIndex](https://hel
 this.sfDataGrid.DetailsViewLoading += SfDataGrid_DetailsViewLoading;
 
 private void SfDataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
-
 {
-
-e.DetailsViewDataGrid.SelectedIndex = 1;
-
+    e.DetailsViewDataGrid.SelectedIndex = 1;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Me.sfDataGrid.DetailsViewLoading += AddressOf SfDataGrid_DetailsViewLoading
+AddHandler sfDataGrid.DetailsViewLoading, AddressOf SfDataGrid_DetailsViewLoading
 
 Private Sub SfDataGrid_DetailsViewLoading(ByVal sender As Object, ByVal e As DetailsViewLoadingAndUnloadingEventArgs)
-
-e.DetailsViewDataGrid.SelectedIndex = 1
-
+    e.DetailsViewDataGrid.SelectedIndex = 1
 End Sub
 
 {% endhighlight %}
@@ -3815,14 +2472,12 @@ You can select multiple rows by using the SelectRows method.
 {% tabs %}
 {% highlight c# %}
 var detailsViewDataGrid = this.sfDataGrid.GetDetailsViewGrid(2);
-
 detailsViewDataGrid.SelectRows(1, 2);
 
 {% endhighlight %}
 {% highlight vb %}
 
 Dim detailsViewDataGrid = Me.sfDataGrid.GetDetailsViewGrid(2)
-
 detailsViewDataGrid.SelectRows(1, 2)
 
 {% endhighlight %}
@@ -3841,12 +2496,9 @@ You can customize the header appearance of the DetailsViewDataGrid through the [
 sfDataGrid.AutoGenerateRelations = false;
 
 var gridViewDefinition = new GridViewDefinition();
-
 gridViewDefinition.RelationalColumn = "OrderDetails";
-
 gridViewDefinition.DataGrid = new SfDataGrid() { Name = "FirstLevelNestedGrid", AutoGenerateColumns = true };
-
-gridViewDefinition.DataGrid.Style.HeaderStyle.BackColor = Color.red;
+gridViewDefinition.DataGrid.Style.HeaderStyle.BackColor = ColorTranslator.FromHtml("#CAECCF");
 
 sfDataGrid.DetailsViewDefinitions.Add(gridViewDefinition);
 
@@ -3856,12 +2508,9 @@ sfDataGrid.DetailsViewDefinitions.Add(gridViewDefinition);
 sfDataGrid.AutoGenerateRelations = False
 
 Dim gridViewDefinition = New GridViewDefinition()
-
 gridViewDefinition.RelationalColumn = "OrderDetails"
-
 gridViewDefinition.DataGrid = New SfDataGrid() With {.Name = "FirstLevelNestedGrid", .AutoGenerateColumns = True}
-
-gridViewDefinition.DataGrid.Style.HeaderStyle.BackColor = Color.red
+gridViewDefinition.DataGrid.Style.HeaderStyle.BackColor = ColorTranslator.FromHtml("#CAECCF")
 
 sfDataGrid.DetailsViewDefinitions.Add(gridViewDefinition)
 
@@ -3875,22 +2524,17 @@ When the relation is auto-generated, you can customize the header style to GridV
 sfDataGrid.AutoGeneratingRelations += SfDataGrid_AutoGeneratingRelations;
 
 private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsEventArgs e)
-
 {
-
-e.GridViewDefinition.DataGrid.Style.HeaderStyle.BackColor = Color.Red;
-
+    e.GridViewDefinition.DataGrid.Style.HeaderStyle.BackColor = ColorTranslator.FromHtml("#CAECCF");
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.AutoGeneratingRelations += AddressOf SfDataGrid_AutoGeneratingRelations
+AddHandler sfDataGrid.AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations
 
 Private Sub SfDataGrid_AutoGeneratingRelations(ByVal sender As Object, ByVal e As AutoGeneratingRelationsEventArgs)
-
-e.GridViewDefinition.DataGrid.Style.HeaderStyle.BackColor = Color.Red
-
+    e.GridViewDefinition.DataGrid.Style.HeaderStyle.BackColor = ColorTranslator.FromHtml("#CAECCF")
 End Sub
 
 {% endhighlight %}
@@ -3905,12 +2549,12 @@ You can hide the header row of the `DetailsViewDataGrid` by setting the [HeaderR
 
 {% tabs %}
 {% highlight c# %}
-FirstLevelNestedGrid.HeaderRowHeight = 0;
+sfDataGrid.DetailsViewDefinitions[0].DataGrid.HeaderRowHeight = 0;
 
 {% endhighlight %}
 {% highlight vb %}
 
-FirstLevelNestedGrid.HeaderRowHeight = 0
+sfDataGrid.DetailsViewDefinitions[0].DataGrid.HeaderRowHeight = 0
 
 {% endhighlight %}
 {% endtabs %}
@@ -3967,14 +2611,12 @@ You can expand or collapse all the `DetailsViewDataGrid` programmatically by usi
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.ExpandAllDetailsView();
-
 this.sfDataGrid.CollapseAllDetailsView();
 
 {% endhighlight %}
 {% highlight vb %}
 
 Me.sfDataGrid.ExpandAllDetailsView()
-
 Me.sfDataGrid.CollapseAllDetailsView()
 
 {% endhighlight %}
@@ -4030,28 +2672,20 @@ This event receives two arguments where, the sender as SfDataGrid and DetailsVie
 sfDataGrid.DetailsViewLoading += SfDataGrid_DetailsViewLoading;
 
 private void SfDataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
-
 {
-
-if (!(e.DetailsViewDataGrid.SelectionController is CustomSelectionController))
-
-e.DetailsViewDataGrid.SelectionController = new CustomSelectionController(sfDataGrid);
-
+    if (!(e.DetailsViewDataGrid.SelectionController is CustomSelectionController))
+        e.DetailsViewDataGrid.SelectionController = new CustomSelectionController(sfDataGrid);
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.DetailsViewLoading += AddressOf SfDataGrid_DetailsViewLoading
+AddHandler sfDataGrid.DetailsViewLoading, AddressOf SfDataGrid_DetailsViewLoading
 
 Private Sub SfDataGrid_DetailsViewLoading(ByVal sender As Object, ByVal e As DetailsViewLoadingAndUnloadingEventArgs)
-
-If Not(TypeOf e.DetailsViewDataGrid.SelectionController Is CustomSelectionController) Then
-
-e.DetailsViewDataGrid.SelectionController = New CustomSelectionController(sfDataGrid)
-
-End If
-
+    If Not(TypeOf e.DetailsViewDataGrid.SelectionController Is CustomSelectionController) Then
+        e.DetailsViewDataGrid.SelectionController = New CustomSelectionController(sfDataGrid)
+    End If
 End Sub
 
 {% endhighlight %}
@@ -4070,18 +2704,15 @@ This event receives two arguments where, the sender as SfDataGrid and DetailsVie
 sfDataGrid.DetailsViewUnloading += SfDataGrid_DetailsViewUnloading;
 
 private void SfDataGrid_DetailsViewUnloading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
-
 {
-
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.DetailsViewUnloading += AddressOf SfDataGrid_DetailsViewUnloading
+AddHandler sfDataGrid. DetailsViewUnloading, AddressOf SfDataGrid_DetailsViewUnLoading
 
 Private Sub SfDataGrid_DetailsViewUnloading(ByVal sender As Object, ByVal e As DetailsViewLoadingAndUnloadingEventArgs)
-
 End Sub
 
 {% endhighlight %}
@@ -4096,18 +2727,15 @@ The DetailsViewExpanding event is raised when the DetailsViewDataGrid is being e
 sfDataGrid.DetailsViewExpanding += SfDataGrid_DetailsViewExpanding;
 
 private void SfDataGrid_DetailsViewExpanding(object sender, DetailsViewExpandingEventArgs e)
-
 {
-
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.DetailsViewExpanding += AddressOf SfDataGrid_DetailsViewExpanding
+AddHandler sfDataGrid.DetailsViewExpanding, AddressOf SfDataGrid_DetailsViewExpanding
 
 Private Sub SfDataGrid_DetailsViewExpanding(ByVal sender As Object, ByVal e As DetailsViewExpandingEventArgs)
-
 End Sub
 
 {% endhighlight %}
@@ -4122,18 +2750,15 @@ The DetailsViewExpanded event is raised after the DetailsViewDataGrid is expande
 sfDataGrid.DetailsViewExpanded += SfDataGrid_DetailsViewExpanded;
 
 private void SfDataGrid_DetailsViewExpanded(object sender, DetailsViewExpandedEventArgs e)
-
 {
-
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.DetailsViewExpanded += AddressOf SfDataGrid_DetailsViewExpanded
+AddHandler sfDataGrid.DetailsViewExpanded, AddressOf SfDataGrid_DetailsViewExpanded
 
 Private Sub SfDataGrid_DetailsViewExpanded(ByVal sender As Object, ByVal e As DetailsViewExpandedEventArgs)
-
 End Sub
 
 {% endhighlight %}
@@ -4148,18 +2773,15 @@ The DetailsViewCollapsing event is raised when the DetailsViewDataGrid is being 
 sfDataGrid.DetailsViewCollapsing += SfDataGrid_DetailsViewCollapsing;
 
 private void SfDataGrid_DetailsViewCollapsing(object sender, DetailsViewCollapsingEventArgs e)
-
 {
-
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.DetailsViewCollapsing += AddressOf SfDataGrid_DetailsViewCollapsing
+AddHandler sfDataGrid.DetailsViewCollapsing, AddressOf SfDataGrid_DetailsViewCollapsing
 
 Private Sub SfDataGrid_DetailsViewCollapsing(ByVal sender As Object, ByVal e As DetailsViewCollapsingEventArgs)
-
 End Sub
 
 {% endhighlight %}
@@ -4174,18 +2796,15 @@ The DetailsViewCollapsed event is raised after the DetailsViewDataGrid is collap
 sfDataGrid.DetailsViewCollapsed += SfDataGrid_DetailsViewCollapsed;
 
 private void SfDataGrid_DetailsViewCollapsed(object sender, DetailsViewCollapsedEventArgs e)
-
 {
-
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.DetailsViewCollapsed += AddressOf SfDataGrid_DetailsViewCollapsed
+AddHandler sfDataGrid.DetailsViewCollapsed, AddressOf SfDataGrid_DetailsViewCollapsed
 
 Private Sub SfDataGrid_DetailsViewCollapsed(ByVal sender As Object, ByVal e As DetailsViewCollapsedEventArgs)
-
 End Sub
 
 {% endhighlight %}
@@ -4200,28 +2819,20 @@ You can cancel the expanding operation while expanding the DetailsViewDataGrid b
 sfDataGrid.DetailsViewExpanding += SfDataGrid_DetailsViewExpanding;
 
 private void SfDataGrid_DetailsViewExpanding(object sender, DetailsViewExpandingEventArgs e)
-
 {
-
-if ((e.Record as OrderInfo).OrderID == 1002)
-
-e.Cancel = true;
-
+    if ((e.Record as OrderInfo).OrderID == 1002)
+        e.Cancel = true;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.DetailsViewExpanding += AddressOf SfDataGrid_DetailsViewExpanding
+AddHandler sfDataGrid.DetailsViewExpanding, AddressOf SfDataGrid_DetailsViewExpanding
 
 Private Sub SfDataGrid_DetailsViewExpanding(ByVal sender As Object, ByVal e As DetailsViewExpandingEventArgs)
-
-If (TryCast(e.Record, OrderInfo)).OrderID = 1002 Then
-
-e.Cancel = True
-
-End If
-
+    If (TryCast(e.Record, OrderInfo)).OrderID = 1002 Then
+        e.Cancel = True
+    End If
 End Sub
 
 {% endhighlight %}
@@ -4234,28 +2845,20 @@ Similarly, the collapsing operation can be canceled through the DetailsViewColla
 sfDataGrid.DetailsViewCollapsing += SfDataGrid_DetailsViewCollapsing;
 
 private void SfDataGrid_DetailsViewCollapsing(object sender, DetailsViewCollapsingEventArgs e)
-
 {
-
-if ((e.Record as OrderInfo).OrderID == 1002)
-
-e.Cancel = true;
-
+    if ((e.Record as OrderInfo).OrderID == 1002)
+        e.Cancel = true;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private sfDataGrid.DetailsViewCollapsing += AddressOf SfDataGrid_DetailsViewCollapsing
+AddHandler sfDataGrid.DetailsViewCollapsing, AddressOf SfDataGrid_DetailsViewCollapsing
 
 Private Sub SfDataGrid_DetailsViewCollapsing(ByVal sender As Object, ByVal e As DetailsViewCollapsingEventArgs)
-
-If (TryCast(e.Record, OrderInfo)).OrderID = 1002 Then
-
-e.Cancel = True
-
-End If
-
+    If (TryCast(e.Record, OrderInfo)).OrderID = 1002 Then
+        e.Cancel = True
+    End If
 End Sub
 
 {% endhighlight %}
