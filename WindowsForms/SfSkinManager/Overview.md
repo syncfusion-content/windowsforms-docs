@@ -9,12 +9,11 @@ documentation: ug
 
 # Overview
 
-`SfSkinManager` is a component that applies and manages the themes for the controls or components derived from the `IThemeProvider` interface. It provides support to apply uniform theme for all the child controls derived from IThemeProvider in the application.
+The `SfSkinManager` is a component used to apply and manage themes for the controls or components derived from the `IThemeProvider` interface. It provides support to apply uniform theme for all the child controls derived from IThemeProvider in the application.
 
-# Key Features
+## Key features
 
-The following are the key features of the SfSkinManager.
+Key features are:
 
 * Provides support to apply same theme for all the child controls in the application.
-
 * Provides support to apply theme only for a specific child control in the application. 
