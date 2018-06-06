@@ -114,7 +114,7 @@ Create a new Windows Forms project in the Visual Studio to change the standard f
 
 ## Configure Office2010Form
 
-The standard form can be changed into the `Office2010Form` by following the given steps.
+`Office2010Form` is an advanced standard Form, we can configure it by following the given steps:
 
 **Step 1:** Add the following required assembly references to the project:
 

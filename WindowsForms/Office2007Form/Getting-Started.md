@@ -114,7 +114,7 @@ Create a new Windows Forms project in the Visual Studio to change the standard f
 
 ## Configure Office2007Form
 
-The standard form can be changed into the `Office2007Form` by following the given steps.
+`Office2007Form` is an advanced standard Form, we can configure it by following the given steps:
 
 **Step 1:** Add the following required assembly references to the project:
 
