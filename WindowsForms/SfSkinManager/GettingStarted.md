@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Assembly Deployment
+## Assembly deployment
 
 The following assembly should be added as reference to use SfSkinManager in any application.
 
@@ -27,27 +27,26 @@ The following assembly should be added as reference to use SfSkinManager in any 
 Syncfusion.Core.WinForms
 </td>
 <td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like {{'SfScrollFrame'| markdownify }}, {{'SfButton'| markdownify }}, {{'SfToolTip '| markdownify }}, and {{'SfForm '| markdownify }}.
+Syncfusion.Core.WinForms assembly contains theme related classes for the Syncfusion controls and basic components like {{'SfScrollFrame'| markdownify }}, {{'SfButton'| markdownify }}, {{'SfToolTip '| markdownify }}, and {{'SfForm '| markdownify }}.
 </td>
 </tr>
 </table>
 
 ## Creating application with SfSkinManger
 
-The steps given below shows how to create an application with SfSkinManager.
+Follow the steps to create an application with SfSkinManager:
 
-1. Drag and drop the SfSkinManager component from the toolbox to the form.
+1. Drag the SfSkinManager component from the toolbox to the form.
 
 	![](GettingStarted_images/GettingStarted_Image1.png)
 
-
-2. Open the properties window and select value for the `Component` property of SfSkinManager. Select the control or component from the dropdown for which the theme should be applied. The theme will be applied for the selected control and its child controls.
+2. Open the properties window and select value for the `Component` property of SfSkinManager. Select a control or component from the drop-down for which the theme should be applied. The theme will be applied for the selected control and its child controls.
 
 	![](GettingStarted_images/GettingStarted_Image2.png)
 
-## Applying Theme
+## Applying theme
 
-The steps given below should be followed to apply theme for the controls in an application using SfSkinManager.
+Given steps should be followed to apply theme for the controls in an application using SfSkinManager:
 
 1. Load theme assembly 
 
@@ -55,11 +54,9 @@ The steps given below should be followed to apply theme for the controls in an a
 
 ### Load theme assembly
 
-The assembly for the corresponding theme should be added as reference to set the theme for the child controls in the application.
+Assembly for the corresponding theme should be added as reference to set the theme for the child controls in the application.
 
-Before applying theme for the SfSkinManager, required theme assembly should be loaded to application.
-
-In the below example, reference for `Syncfusion.Office2016Theme.WinForms` assembly has been added and loaded to apply Office2016Theme for the SfSkinManager.
+Before applying theme for the SfSkinManager, required theme assembly should be loaded to the application.
 
 {% tabs %}
 {% highlight c# %}
@@ -102,7 +99,7 @@ End Class
 
 ### Apply theme
 
-The theme for the controls in an application can be set by using the `ThemeName` property.
+Theme for the controls in an application can be set by using the `ThemeName` property.
 
 {% tabs %}
 {% highlight c# %}
