@@ -914,7 +914,7 @@ public class OrderInfoRepository
 
         string[] _Switzerland = new string[] { "Bern", "Genève" };
 
-        string[] _Uk = new string[] { "Colchester", "Hedge End", "London" };
+        string[] _UK = new string[] { "Colchester", "Hedge End", "London" };
 
         string[] _USA = new string[] { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" };
 
@@ -938,7 +938,7 @@ public class OrderInfoRepository
         ShipCity.Add("Spain", _Spain);
         ShipCity.Add("Sweden", _Sweden);
         ShipCity.Add("Switzerland", _Switzerland);
-        ShipCity.Add("UK", _Uk);
+        ShipCity.Add("UK", _UK);
         ShipCity.Add("USA", _USA);
         ShipCity.Add("Venezuela", _Venezuela);
 
@@ -1165,7 +1165,7 @@ Public Class OrderInfoRepository
 
         Dim _Switzerland() As String = { "Bern", "Genève" }
 
-        Dim _Uk() As String = { "Colchester", "Hedge End", "London" }
+        Dim _UK() As String = { "Colchester", "Hedge End", "London" }
 
         Dim _USA() As String = { "Albuquerque", "Anchorage", "Boise", "Butte", "Elgin", "Eugene", "Kirkland", "Lander", "Portland", "San Francisco", "Seattle", "Walla Walla" }
 
@@ -1189,7 +1189,7 @@ Public Class OrderInfoRepository
         ShipCity.Add("Spain", _Spain)
         ShipCity.Add("Sweden", _Sweden)
         ShipCity.Add("Switzerland", _Switzerland)
-        ShipCity.Add("UK", _Uk)
+        ShipCity.Add("UK", _UK)
         ShipCity.Add("USA", _USA)
         ShipCity.Add("Venezuela", _Venezuela)
 
@@ -2181,15 +2181,15 @@ private void SetWidth(SfDataGrid grid, int scrollColumnIndex, double width)
     var columnIndex = grid.TableControl.ResolveToGridVisibleColumnIndex(scrollColumnIndex);
     if (columnIndex < 0)
         return;
-    var parentStartColumnnIndex = grid.TableControl.ResolveToStartColumnIndex();
+    var parentStartColumnIndex = grid.TableControl.ResolveToStartColumnIndex();
     var indentColumnsWidth = 0;
     foreach (var definition in grid.DetailsViewDefinitions)
     {
         var detailsViewDataGrid = (definition as GridViewDefinition).DataGrid;
-        var startColumnnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex();
-        indentColumnsWidth = startColumnnIndex * 24;
+        var startColumnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex();
+        indentColumnsWidth = startColumnIndex * 24;
         var tempWidth = width - indentColumnsWidth < 0 ? 0 : width - indentColumnsWidth;
-        detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentStartColumnnIndex ? tempWidth : width;
+        detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentStartColumnIndex ? tempWidth : width;
         // If DetailsViewDataGrid has DetailsViewDefinition, recursively set width upto all levels
         if (detailsViewDataGrid.DetailsViewDefinitions != null && detailsViewDataGrid.DetailsViewDefinitions.Any())
             SetWidth(detailsViewDataGrid, detailsViewDataGrid.TableControl.ResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns[columnIndex].Width);
@@ -2251,14 +2251,14 @@ Private Sub SetWidth(ByVal grid As SfDataGrid, ByVal scrollColumnIndex As Intege
     If columnIndex < 0 Then
         Return
     End If
-    Dim parentStartColumnnIndex = grid.TableControl.ResolveToStartColumnIndex()
+    Dim parentStartColumnIndex = grid.TableControl.ResolveToStartColumnIndex()
     Dim indentColumnsWidth = 0
     For Each definition In grid.DetailsViewDefinitions
         Dim detailsViewDataGrid = (TryCast(definition, GridViewDefinition)).DataGrid
-        Dim startColumnnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex()
-        indentColumnsWidth = startColumnnIndex * 24
+        Dim startColumnIndex = detailsViewDataGrid.TableControl.ResolveToStartColumnIndex()
+        indentColumnsWidth = startColumnIndex * 24
         Dim tempWidth = If(width - indentColumnsWidth < 0, 0, width - indentColumnsWidth)
-        detailsViewDataGrid.Columns(columnIndex).Width = If(scrollColumnIndex Is parentStartColumnnIndex, tempWidth, width)
+        detailsViewDataGrid.Columns(columnIndex).Width = If(scrollColumnIndex Is parentStartColumnIndex, tempWidth, width)
         ' If DetailsViewDataGrid has DetailsViewDefinition, recursively set width upto all levels
         If detailsViewDataGrid.DetailsViewDefinitions IsNot Nothing AndAlso detailsViewDataGrid.DetailsViewDefinitions.Any() Then
             SetWidth(detailsViewDataGrid, detailsViewDataGrid.TableControl.ResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns(columnIndex).Width)
