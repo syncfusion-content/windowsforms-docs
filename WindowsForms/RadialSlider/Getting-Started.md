@@ -146,15 +146,15 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with RadialSlider control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
+2. [Adding control via Form Designer](#adding-control-via-form-designer)
+3. [Adding control manually using code](#adding-control-manually-using-code)
 4. [Configure SliderStyle](#configure-sliderstyle)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the RadialSlider with basic information.
 
-## Adding control via designer
+## Adding control via Form designer
 
 RadialSlider control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -167,7 +167,9 @@ RadialSlider control can be added to the application by dragging it from the too
 
 ![](Getting-Started_images/RadialSlider-img1.png) 
 
-## Adding control manually in code
+![](Getting-Started_images/RadialSlider-img4.png) 
+
+## Adding control manually using code
 
 To add control manually in C#, follow the given steps:
 
@@ -206,6 +208,8 @@ Imports Syncfusion.Windows.Forms.Tools
 
 RadialSlider radialSlider1 = new RadialSlider();
 
+this.radialSlider1.Size = new System.Drawing.Size(282, 282);
+
 this.Controls.Add(radialSlider1);
 
 {% endhighlight %}
@@ -213,6 +217,8 @@ this.Controls.Add(radialSlider1);
 {% highlight VB %}
 
 Dim radialSlider1 As RadialSlider = New RadialSlider
+
+Me.radialSlider1.Size = New System.Drawing.Size(282, 282)
 
 Me.Controls.Add(radialSlider1)
 

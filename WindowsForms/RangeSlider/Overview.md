@@ -9,22 +9,16 @@ documentation: ug
 
 # Overview
 
-RangeSlider is a dual-thumb slider control highlighting the selected range between the thumbs. It lets you input two values, typically an upper and a lower bound (for two thumbs) thus providing an enhanced feature-support to standard slider control.
+RangeSlider is a flexible UI component that allows value-range selection. It lets the user select from a range of values by moving  thumb controls along a Track.
 
-### Real world scenarios
+![](Getting-Started_images/RangeSlider-img3.png) 
 
-* RangeSlider can be used in a movie clipping to set the range. Consider the following example:
-* If the duration of a movie is 60 minutes, then the Maximum property can be set to 60 and Minimum property to 1. If you need the clip from 5th min to 10th minute, then set the SliderMin property to 5 and SliderMax to 10.
-* It can also be used to filter the records with a price range with limited data.
+## Key features
 
-### Key features
+* **Color customization** - Provides options to customize Channel, Thumb and selected range colors.
 
-Following are the some of the highlighting features of RangeSlider:
+* **Orientation** - Provides option to set vertical and horizontal orientation.
 
-* It helps handle buttons support.
-* Provides custom label support.
-* Supports both vertical and horizontal orientation.
-* Customizable thumbs and handle buttons.
-* Reversed slider position support.
-* Support for change in color of the selected range.
-* Support for change in color of Channel and Thumb.
+* **Value Settings** - Provides options to set minimum and maximum value of RangeSlider.
+
+* **VisualStyle** - Provides rich set of VisualStyle to customize the look and feel of RangeSlider.
