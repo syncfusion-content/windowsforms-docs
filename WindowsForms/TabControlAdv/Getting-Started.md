@@ -148,7 +148,6 @@ You can create the Windows Forms application with TabControlAdv control as follo
 1. [Creating the project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Add TabPages](#add-tabpages)
 
 ### Creating the project
 
@@ -156,7 +155,9 @@ Create a new Windows Forms project in the Visual Studio to display the TabContro
 
 ## Adding control via designer
 
-The TabControlAdv control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+To add control through designer, follow the given steps:
+
+**Step 1:** The TabControlAdv control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
    * Syncfusion.Grid.Base.dll
    * Syncfusion.Grid.Windows.dll
@@ -170,6 +171,16 @@ The TabControlAdv control can be added to the application by dragging it from th
  The following screenshot illustrates after drag and dropping the TabControlAdv from the ToolBox:
 
  ![](GettingStarted_images/ControlAdded.png)
+
+**Step 2:** TabPages can be added to TabControlAdv through designer by right clicking on the `TabControlAdv` and select the Add Tab option.
+
+![](GettingStarted_images/AddingTabs.png)
+ 
+We can also add tabs with the help of TabPageAdv Collection Editor. In the TabPageAdv Collection Editor, we can add the tabs by clicking `Add` button.
+
+![](GettingStarted_images/TabPageCollectionEditor.png)
+
+![](GettingStarted_images/TabControlAdv.png)
 
 ## Adding control manually in code
 
@@ -224,17 +235,7 @@ Me.Controls.Add(tabControlAdv1)
 
 {% endtabs %}
 
-## Add TabPages
-
-TabPages can be added to TabControlAdv through designer by right clicking on the `TabControlAdv` and select the Add Tab option.
-
-![](GettingStarted_images/AddingTabs.png)
- 
-We can also add tabs with the help of TabPageAdv Collection Editor. In the TabPageAdv Collection Editor, we can add the tabs by clicking `Add` button.
-
-![](GettingStarted_images/TabPageCollectionEditor.png)
-
-This can also be done programmatically by using the following code examples.
+**Step4:** Create an instance of `TabPageAdv` and add it to the TabControlAdv.
 
 {% tabs %}
 
@@ -264,4 +265,5 @@ Me.tabPageAdv1.Text = "tabPageAdv1"
 
 {% endtabs %}
 
- ![](GettingStarted_images/TabControlAdv.png)
+![](GettingStarted_images/TabControlAdv.png)
+

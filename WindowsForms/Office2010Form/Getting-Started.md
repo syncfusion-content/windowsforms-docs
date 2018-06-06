@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to inherit a `Office2010Form` control in a Windows Forms application.
+This section describes how to inherit `Office2010Form` control in a Windows Forms application.
 
 ## Assembly deployment
 
@@ -138,7 +138,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
    
-**Step 3:** Change the class to inherit the `Office2010Form` instead of the standard form.
+**Step 3:** Change the class to inherit `Office2010Form` instead of the standard form.
 
 {% tabs %}
 
