@@ -98,7 +98,7 @@ Docked window can be moved to float state by drag and drop the window. And also 
 
 ### Drag float window
 
-Docked window can be moved to `Float` state by drag and drop using mouse interaction. 
+Docked window can be moved to `Float` state by clicking its caption and dragging using mouse interaction. 
 
 ### Double click on caption
 
@@ -258,7 +258,7 @@ Me.dockingManager1.SetOuterDockAbility(panel1, Syncfusion.Windows.Forms.Tools.Do
 
 ## Show custom buttons in float window
 
-The DockingManager provides the support to add custom buttons to the caption bar when an item is in floating state. It is not required to dock the item to use the custom buttons. To enable custom button for caption bar while floating, set the [ShowCustomButtonsInFloating](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowCustomButtonsInFloating.html) property to `true`.
+The DockingManager provides the support to add custom buttons to the caption bar when an item is in floating state. To enable custom button for caption bar while floating, set the [ShowCustomButtonsInFloating](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowCustomButtonsInFloating.html) property to `true`.
 
 {% tabs %}
 
@@ -316,26 +316,28 @@ DockingManager provides option to change the FloatWindow location by programmati
 
 {% highlight C# %}
 
-//To display the ListBox control at the desired location.
+//To set properties window state as floating at the desired location.
 
 Rectangle rectangle = this.Bounds;
- 
-this.dockingManager.FloatControl(this.listBox1, new Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200));
+
+this.dockingManager1.FloatControl(this.panel3, new Rectangle(rectangle.Right - 300, rectangle.Bottom - 300, 200, 200));
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-'To display the ListBox control at the desired location.
- 
+'To set properties window state as floating at the desired location.
+
 Dim rectangle As Rectangle = Me.Bounds 
 
-Me.dockingManager.FloatControl(Me.listBox1, New Rectangle(rectangle.Right+25,rectangle.Bottom-150,175,200))
+Me.dockingManager1.FloatControl(Me.panel3, New Rectangle(rectangle.Right - 300, rectangle.Bottom - 300, 200, 200))
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](GettingStarted_images/GettingStarted_img3.jpeg)
 
 ## Listen to keyboard events
 

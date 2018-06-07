@@ -50,11 +50,11 @@ SaveDockState<br/><br/></td><td>
 Saves the current dock state to Isolated Storage<br/><br/></td></tr>
 <tr>
 <td>
-SaveDockState (Overloaded)<br/><br/></td><td>
+SaveDockState(AppStateSerializer serializer)<br/><br/></td><td>
 Saves the current dock state information to the specified AppStateSerializer. Parameter is,Serializer - An instance of AppStateSerializer class<br/><br/></td></tr>
 <tr>
 <td>
-SaveDockState (Overloaded)<br/><br/></td><td>
+SaveDockState(AppStateSerializer serializer, Control ctrl)<br/><br/></td><td>
 Saves the dock state information for the specified dockable control. The parameters are, Serializer - An instance of AppStateSerializer class.Control - Indicates the docked control<br/><br/></td></tr>
 </table>
 
@@ -100,11 +100,11 @@ LoadDockState<br/><br/></td><td>
 Reads the persisted dock state from the Isolated Storage<br/><br/></td></tr>
 <tr>
 <td>
-LoadDockState (Overloaded)<br/><br/></td><td>
+LoadDockState(AppStateSerializer serializer)<br/><br/></td><td>
 Reads a previously serialized dock state using the AppStateSerializer object. Parameter is, Serializer - An instance of AppStateSerializer class<br/><br/></td></tr>
 <tr>
 <td>
-LoadDockState (Overloaded)<br/><br/></td><td>
+LoadDockState(AppStateSerializer serializer, Control ctrl)<br/><br/></td><td>
 Reads a previously serialized dock state for the specified dockable control and applies the new state. The parameters are, Serializer - An instance of AppStateSerializer class.Ctrl - Indicates the docked control<br/><br/></td></tr>
 </table>
 

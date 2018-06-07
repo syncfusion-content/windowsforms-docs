@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to inherit `Office2010Form` control in a Windows Forms application.
+This section describes how to configure `Office2010Form` control in a Windows Forms application.
 
 ## Assembly deployment
 

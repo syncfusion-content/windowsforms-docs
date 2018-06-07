@@ -13,7 +13,7 @@ Localization is the process of translating the application resources into differ
 
 The following steps helps to localize the header and context menus of docking child windows in DockingManager:
 
-1) Include the required namespaces at the beginning of the file.
+**Step 1:** Include the required namespaces at the beginning of the file.
 
 {% tabs %}
 
@@ -33,31 +33,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-2) Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
-
-3) Return the localized versions of the strings corresponding to the string identifiers.
-
-4) String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [ToolsResourceIdentifiers](http://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolsResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies respectively.
-
-{% tabs %}
-
-{% highlight c# %}
-
-using Syncfusion.Windows.Forms.Tools.ToolsResourceIdentifiers;
-using Syncfusion.Windows.Forms.ResourceIdentifiers;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Imports Syncfusion.Windows.Forms.Tools.ToolsResourceIdentifiers
-Imports Syncfusion.Windows.Forms.ResourceIdentifiers
-
-{% endhighlight %}
-
-{% endtabs %}
-
-5) Assign this instance to the [Provider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider~Provider.html) property of the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
+**Step 2:** Need to initialize the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class, inherited from the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface, before the InitializeComponent call in the constructor of an application.
 
 {% tabs %}
 
@@ -75,7 +51,10 @@ LocalizationProvider.Provider = New Localizer()
 
 {% endtabs %}  
 
-6) The following code example demonstrates header and context menus of docking child windows in `DockingManager`.
+**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class in which provide the Localization content, for the required components used in DockingManager.
+
+For example:
+Here, Header and ContextMenu of docking child windows is localized in Chinese Language.
 
 **Localize header of child window**
 

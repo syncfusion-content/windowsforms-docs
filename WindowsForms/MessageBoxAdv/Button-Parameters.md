@@ -9,7 +9,7 @@ documentation: ug
 
 # Parameters
 
-This section explains regarding the parameters used in [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function of MessageBoxAdv.
+[Show](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function helps to display a MessageBoxAdv. This section explains regarding the parameters available in [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
 
 ## Text
 
@@ -188,7 +188,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.Abort
 
 ## Icon 
 
-Supports to display wide variety of built-in icons and also empowered with loading custom icons. The default icons can be added to MessageBoxAdv by using [MessageBoxIcon](https://msdn.microsoft.com/en-us/library/system.windows.forms.messageboxicon(v=vs.110).aspx) enumerator. Some of the default icons are listed below:
+Supports to display wide variety of built-in icons and also empowered with loading custom icons. The default icons can be displayed in MessageBoxAdv by using [MessageBoxIcon](https://msdn.microsoft.com/en-us/library/system.windows.forms.messageboxicon(v=vs.110).aspx) Enum and it is listed as follows:
 
 * Asterisk
 * Error
