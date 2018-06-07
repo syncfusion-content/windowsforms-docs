@@ -7,27 +7,209 @@ control: Gauge
 documentation: ug
 ---
 
-# Digital Gauge
+# DigitalGauge
 
-Digital gauges are perfect for displaying alphanumeric values. All the elements in a digital gauge, including the CharacterCount, CharacterType, RoundCornerRadius, and ShowInvisibleSegments, can be fully customized with data-binding support.
+[DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED Display) mode. Digital gauge is used to display a range of values that uses character in combination with numbers.
 
-The digital gauge control includes the following elements: SegmentSpacing, ShowInvisibleSegments, Value, and VisualStyle. All the elements are optional for displaying the value.
+# Key features
 
-### Feature summary
+* **SegmentSpacing** - Provides option to set user defined spacing between segments through a float value.
 
-Here is a brief overview of various features of the DigitalGauge control:
+* **CharacterType** - Provides option to display characters in different segment styles.
 
-* SegmentSpacing - Specifies the space between the gauge segments.
-* VisualStyle - Allows you to specify the visual style for the digital gauge.
-* CharacterType - Provides different segment styles for the digital gauge.
-* CharacterCount - Provides the number of characters that can be displayed.
+* **CharacterCount** - Provides option to customize the number of characters to be displayed.
+
+* **Customization Option** - Supports color and visibility customization of all elements.
+
+* **VisualStyle** - Supports rich set of VisualStyle to customize the look and feel.
+
+
+
+# Getting started
+
+This section describes how to add [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control in a Windows Forms application and overview of its basic functionalities.
+
+## Assembly deployment
+
+The following list of assemblies should be added as reference to use the [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) in any application:
+
+<table>
+<tr>
+<td>
+{{'**Required assemblies**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Gauge.Windows
+</td>
+<td>
+The Syncfusion.Gauge.Windows contains the class that handles all UI operations and contains helper class of DigitalGauge control.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of DigitalGauge and various editor controls.
+</td>
+</tr>
+</table>
+
+
+## Installing NuGet Packages
+
+To use [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control in Windows Forms application via nuget, the following packages should be installed.
+
+<table>
+<tr>
+<td>{{'**S.No**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.Gauge.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.Gauge.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.Gauge.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.Gauge.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td> Syncfusion.Gauge.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td> Syncfusion.Gauge.Windows46
+</td>
+</tr>
+</table>
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
+
+# Creating simple application with DigitalGauge
+
+You can create the Windows Forms application with [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Add control via Form Designer](#adding-control-via-form-designer)
+3. [Add control manually using code](#adding-control-manually-using-code)
+
+### Creating the project
+
+Create a new Windows Forms project in the Visual Studio to display the DigitalGauge with basic functionalities.
+
+## Add control via Form Designer
+
+The [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Gauge.Windows.dll
+* Syncfusion.Shared.Base.dll
+
+![](Digital-Gauge_images/DigitalGauge_img2.png)
+
+![](Digital-Gauge_images/DigitalGauge_img3.png)
+
+
+## Add control manually using code
+
+To add control manually in C#, follow the given steps:
+
+**Step 1** : Add the following required assembly references to the project:
+
+* Syncfusion.Gauge.Windows.dll
+* Syncfusion.Shared.Base.dll
+
+**Step 2** : Include the namespaces **Syncfusion.Gauge.Windows**.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.Gauge.Windows;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Gauge.Windows
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+**Step 3** : Create `DigitalGauge` control instance and add it to the form.
+
+{% tabs %}
+
+{% highlight C# %}
+
+DigitalGauge digitalGauge1 = new DigitalGauge();
+
+this.Controls.Add(digitalGauge1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim digitalGauge1 As DigitalGauge = New DigitalGauge
+
+Me.Controls.Add(digitalGauge1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Digital-Gauge_images/DigitalGauge_img1.png)
 
 ##  Concepts and features
 
 
 This section illustrates the features of the digital gauge with different visual styles and sample code. It contains the following topics:
 
-* Digital Gauge Visual Style
+* DigitalGauge Visual Style
 * Character Type
 * Character Count
 * Segment Spacing

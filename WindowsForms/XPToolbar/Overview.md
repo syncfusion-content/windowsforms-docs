@@ -9,7 +9,7 @@ documentation: ug
 
 # XPToolbar
 
-An XP Toolbar is a toolbar-like control with look-and-feel of the XP Menus toolbar. It supports a list of BarItems which can be added to it. It is a stand-alone control that can also be used in the absence of a BarManager also.
+XPToolbar control is a container for a group of commands or control, which have relative functions. Supports build-in BarItems similar to the functionality of Menu, ComboBox, TextBox, Label and much more.
 
 ![](Overview_images/Overview_img2.png)
 

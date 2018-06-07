@@ -11,7 +11,7 @@ documentation: ug
 
 The XPTaskPane is a container control that can host a number of XPTaskPage, which the user can browse using a dropdown menu and the arrow buttons in task pane's header portion. This resembles the task pane in Office XP 2002.
 
-The XPTaskPane control was inspired by the Office XPTaskPane feature. The control internally uses a CardLayout to show one page at a time. The header panel allows the user to select one page at a time. The control comes with complete design-time support.
+The XPTaskPane control was inspired by the Office XP TaskPane feature. The control internally uses a CardLayout to show one page at a time. The header panel allows the user to select one page at a time. The control comes with complete design-time support.
 
 ![](Overview_images/XPtaskPane_img1.png)
 

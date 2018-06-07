@@ -9,9 +9,7 @@ documentation: ug
 
 # RadialGauge
 
-The RadialGauge control can be used for representing a range of values in circular form. RadialGauge enables you to quickly build high quality dashboard, process control, gadget and clocks. RadialGauge consist of important internal domains to present data in a more sophisticated way.
-
-The best example of a RadialGauge is a speedometer. The speedometer can be designed to be placed in a racing game application, denoting the speed of a vehicle.
+[RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
 
 
 ![](Radial-Gauge_images/Radial-Gauge_img1.png)
@@ -29,6 +27,9 @@ The best example of a RadialGauge is a speedometer. The speedometer can be desig
 
 * **Labels** - Provides support to customize the appearance of gauge values with user-specified colors and alignment.
 
+* **VisualStyle** - Supports rich set of VisualStyle to modify look and feel of the RadialGauge
+
+* **Customization Options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
 
 
 # Getting started

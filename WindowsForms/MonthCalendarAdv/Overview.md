@@ -8,7 +8,8 @@ documentation: ug
 ---
 # Overview
 
-The Essential Tools MonthCalendarAdv control is an advanced calendar control that can display all the month of the year with the appropriate culture information for the months and days of the week. A wide variety of visual styles can be applied to the MonthCalendarAdv, to enhance the appearance of the control. This also includes the new Microsoft Office 2007 Style for all the child controls of the MonthCalendarAdv, such as the UpDown Spin Button, DropDown button of DateTimePickerAdv, ScrollButton, TodayButton and None button.
+ [MonthCalendar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html)
+ is a control that allows you to select a date from the calendar and various customization options for the calendar. Supports rich user interface options such as multiple selection, ContextMenu, Globalization and much more.
 
 ![](CalendarDateTime_images/MonthCalenderAdv-img1.png)
 
