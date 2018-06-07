@@ -17,10 +17,10 @@ The `TabControlAdv` is an advanced form of standard TabControl that enables an e
 
 * **Tab Alignment** - Supports to specify tabs alignment in left, right, top, and bottom directions.
 * **Navigation support** - Supports to navigate through the tabs of the TabControlAdv.
-* **Editing support** - Provides options to edit the TabHeader text at run-time.
+* **Editing support** - Provides options to edit the tab header text at run-time.
 * **Icons support** - Supports to add images in the tab header.
 * **Drag and drop** - Supports to rearrange tabs through Drag and Drop functionality. 
-* **Button support** - Provides options to display close button individually for each tab in TabControlAdv.
+* **Button support** - Provides options to display close button individually for each tab.
 * **ToolTip** - Provides options to show / hide ToolTip when the mouse pointer is placed over the tabs.
 * **Styling** - Supports for wide variety of built-in themes like 2D, 3D, Metro, Office themes, OneNoteStyle, InternetExplorer7 and much more.
 * **Serialization** - Provides serialization support to save and load the tab states. 

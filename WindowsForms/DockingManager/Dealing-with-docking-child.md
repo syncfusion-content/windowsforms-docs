@@ -143,7 +143,7 @@ User can restrict the specific [DockAbility](https://help.syncfusion.com/cr/cref
 
 ### Inner dock ability
 
-[SetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockAbility.html) function of DockingManager helps to gets or sets the DockAbility of docked control. [GetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockAbility.html) of DockingManager provides the Dockability information of docked panel.
+[SetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockAbility.html) function of DockingManager helps to gets or sets the DockAbility of docked control through which we can dock another child window inside it. [GetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockAbility.html) of DockingManager provides the Dockability information of docked panel.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ Me.dockingManager1.SetDockAbility(Me.panel1, "Top")
 
 ### Outer dock ability
  
-It can be achieved by [SetOuterDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetOuterDockAbility.html) function. Here we have restricted the right, left, tabbed and fill dock ability.  
+[SetOuterDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetOuterDockAbility.html) function helps to restrict the DockAbility of child window to any particular side when it moved to the client area in DockingManager. Here we have restricted the right, left, tabbed and fill dock ability.  
 
 {% tabs %}
 
@@ -197,43 +197,6 @@ Me.dockingManager1.SetOuterDockAbility(panel1, Syncfusion.Windows.Forms.Tools.Do
 {% endtabs %}
 
 ![](Float_Window_images/Float_Window_img2.png)
-
-## Notify MDI child creation
-
-In DockingManager, we can set the docked control as an MDI Child in an easy method, by using the `MDI Child` option in the context menu. To enable MDI functionalities in DockingManager, `IsMdIContainer` property of its parent form should be `true`.
-
-![](GettingStarted_images/GettingStarted_img6.png)
-
-### Activate window programmatically
-
-[SetAsMDIChild](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAsMDIChild.html) function helps to set the docking window to the MDIChild window in DockingManager.
-
-{% tabs %}
-
-{% highlight C# %}
-
-//To set as MDI Child window
-
-this.dockingManager1.SetAsMDIChild(panel1, true);
-
-this.dockingManager1.SetAsMDIChild(panel2, true);
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-'To set as MDI Child window
-
-Me.dockingManager1.SetAsMDIChild(panel1, True)
-
-Me.dockingManager1.SetAsMDIChild(panel2, True)
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](GettingStarted_images/GettingStarted_img7.png) 
 
 ## Tooltip for caption buttons
 
@@ -377,7 +340,44 @@ N> [EnableSuperTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/t
 
 ## Remove particular caption button
 
-In DockingManager, you can remove the particular caption button by using [CaptionButton](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CaptionButtons.html) collection. The following code example illustrates how to remove close button in DockingManager.
+In DockingManager, you can remove the particular caption button by using [CaptionButton](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CaptionButtons.html) collection. The following code example illustrates how to remove close button in DockingManager. Please make use of the below CaptionButton text for removing particular caption button in docking child window.  
+
+<table>
+<tr>
+<th>
+CaptionButton</th><th>
+Corresponding text</th></tr>
+<tr>
+<td>
+Close</td>
+<td> 
+CloseButton </td></tr>
+<tr>
+<td>
+Pin
+</td><td>
+PinButton
+</td></tr>
+<tr>
+<td>
+Menu
+</td><td>
+MenuButton
+</td></tr>
+<tr>
+<td>
+Maximize
+</td><td>
+MaximizeButton
+</td></tr>
+<tr>
+<td>
+Restore
+</td><td>
+RestoreButton
+</td></tr>
+</table>
+
 
 {% tabs %}
 
@@ -422,105 +422,37 @@ End Sub
 
 ## Remove context menu for particular control
 
-The Context Menu can be disabled for docked and auto hidden controls by disabling the properties [EnableContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableContextMenu.html) and [EnableAutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableAutoHideTabContextMenu.html) in DockingManager.
+[SetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMenuButtonVisibility.html)function helps to show / hide the menu button in the caption bar of the particular window. [GetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetMenuButtonVisibility.html) function returns a bool value according to the visibility of menu button.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//To disable the context menu
+this.dockingManager1.SetMenuButtonVisibility(this.panel1, false); //true to show again
 
-this.dockingManager1.EnableContextMenu = false;
-
-//To hide the menu button on docking manager
-
-this.dockingManager1.MenuButtonEnabled = false;
-
-//To disable the context menu on auto hide tab
-
-this.dockingManager1.EnableAutoHideTabContextMenu = false;
+this.dockingManager1.GetMenuButtonVisibility(this.panel1); //true when button is visible, false otherwise.
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-'To disable the context menu
+Me.dockingManager1.SetMenuButtonVisibility(Me.panel1, False) 'true to show again
 
-Me.dockingManager1.EnableContextMenu = False
-
-'To hide the menu button on docking manager
-
-Me.dockingManager1.MenuButtonEnabled = False
-
-'To disable the context menu on auto hide tab
-
-Me.dockingManager1.EnableAutoHideTabContextMenu = False
+Me.dockingManager1.GetMenuButtonVisibility(Me.panel1) 'true when button is visible, false otherwise.
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Dealing-with-Windows_images/RemoveMenuButton.png)
 
 ## Remove particular menu item from context menu
 
-Context menu items in dock window caption can be customized using [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event of DockingManager. The [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) allows to remove the menu items using its ContextMenu option.  So, we can add / remove the ContextMenuItem by passing the corresponding BarItem add / remove function.
+Context menu items in dock window caption can be customized using [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event of DockingManager. The [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) allows to remove the menu items using its ContextMenu option.  
 
-The following code example demonstrates removing the default menu items “Hide” and “Dock to”.  
+{% seealso %}
+ 
+[Remove particular menu item from context menu](https://help.syncfusion.com/windowsforms/dockingmanager/dock-window#remove-specific-default-menu-item-from-context-menu)
 
-{% tabs %}
-
-{% highlight C# %}
-
-// Remove ContextMenuItem
-
-this.dockingManager1.DockContextMenu += DockingManager1_DockContextMenu;
-  
-private void DockingManager1_DockContextMenu(object sender, DockContextMenuEventArgs arg)
-{
-
-BarItem item = arg.ContextMenu.ParentBarItem.Items[4] as BarItem;
-
-BarItem item1 = arg.ContextMenu.ParentBarItem.Items[5] as BarItem;
-
-if (item != null && item.Text == "&Hide")
-{
-    arg.ContextMenu.ParentBarItem.Items.Remove(item);
-}
-
-if (item1 != null && item1.Text == "Dock to")
-{
-    arg.ContextMenu.ParentBarItem.Items.Remove(item1);
-}
-
-}
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-AddHandler Me.dockingManager1.DockContextMenu, AddressOf DockingManager1_DockContextMenu
-  
-'Remove ContextMenuItem
-
-Dim item As BarItem = TryCast(arg.ContextMenu.ParentBarItem.Items(4), BarItem)
-
-Dim item1 As BarItem = TryCast(arg.ContextMenu.ParentBarItem.Items(5), BarItem)
-
-If item IsNot Nothing AndAlso item.Text = "&Hide" Then
-
-arg.ContextMenu.ParentBarItem.Items.Remove(item)
-
-End If
-
-If item1 IsNot Nothing AndAlso item1.Text = "Dock to" Then
-
-arg.ContextMenu.ParentBarItem.Items.Remove(item1)
-
-End If
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Dock_Window_images/Dock_Window_img13.png) 
+{% endseealso %}

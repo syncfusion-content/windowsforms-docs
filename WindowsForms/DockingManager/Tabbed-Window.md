@@ -53,7 +53,7 @@ Child window can be arranged as Tabbed windows by using either of the following 
 
 ### Tabbed at run time
 
-DockingManager helps you in dragging and dropping the docked controls at run time, using different DragProviderStyle. This style displays a prediction Bands, which lets you decide whether you can drop the control in that location.
+DockingManager helps you in dragging and dropping the docked controls at run time, using different DragProviderStyle. This style displays a dock hint, which lets you decide whether you can drop the control in that location.
 
 ![](Tabbed_Window_images/Tabbed_Window_img1.png)
 
