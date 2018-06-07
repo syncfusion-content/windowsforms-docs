@@ -51,7 +51,7 @@ Syncfusion.SfListView.WinForms assembly contains classes that handles all UI ope
 Syncfusion.GridCommon.WinForms
 </td>
 <td>
-Syncfusion.GridCommon.WinForms assembly contains base classes for scrolling, filter control, and utilities.
+Syncfusion.GridCommon.WinForms assembly contains base classes for scrolling and utilities.
 </td>
 </tr>
 </table>
