@@ -15,7 +15,7 @@ The `TabControlAdv` is an advanced form of standard TabControl that enables an e
 
 ## Key features
 
-* **Tab Alignment** - Aligns the tabs to the left, right, top, or bottom of the TabControlAdv by using the `Alignment` property.
+* **Tab Alignment** - Supports to specify tabs alignment in left, right, top, and bottom directions.
 * **Navigation support** - Supports to navigate through the tabs of the TabControlAdv.
 * **Editing support** - Provides options to edit the TabHeader text at run-time.
 * **Icons support** - Supports to add images in the tab header.

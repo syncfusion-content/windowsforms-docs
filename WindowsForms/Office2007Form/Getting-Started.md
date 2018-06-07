@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to inherit a `Office2007Form` control in a Windows Forms application.
+This section describes how to inherit `Office2007Form` control in a Windows Forms application.
 
 ## Assembly deployment
 
@@ -114,7 +114,7 @@ Create a new Windows Forms project in the Visual Studio to change the standard f
 
 ## Configure Office2007Form
 
-The standard form can be changed into the `Office2007Form` by following the given steps.
+`Office2007Form` is an advanced standard Form, we can configure it by following the given steps:
 
 **Step 1:** Add the following required assembly references to the project:
 
@@ -138,7 +138,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
    
-**Step 3:** Change the class to inherit the `Office2007Form` instead of the standard form.
+**Step 3:** Change the class to inherit `Office2007Form` instead of the standard form.
 
 {% tabs %}
 
