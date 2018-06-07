@@ -16,9 +16,9 @@ documentation: ug
 
 ## Key features
 
-* **DockStates** - Supports DockStates such as Top, Bottom, Left, Right and Float, also provides options to disable Dock and Float states.
+* **DockStates** - Supports Dock states in Top, Bottom, Left, Right directions and also empowered to be displayed in Floating state.
 
-* **Button settings** - Provides close button and drop-down button with customization properties.
+* **Button settings** - Provides close and drop-down buttons.
 
 * **Chevron** - Supports chevron which displays toolbar icons that do not fit in the space available in the toolbar.
 
@@ -26,6 +26,7 @@ documentation: ug
 
 * **VisualStyle** - Provides rich set of VisualStyle to customize the look and feel of command bar
 
-* **Serialization** - Provides options to save and load the state of the CommandBar objects using different storage techniques.
+* **Serialization** - Provides options to save and load the state of the CommandBar.
+
 
 N> The CommandBar Framework should be used directly in an application only when there is no requirement for XP style menus and toolbars. Refer to the Essential Tools Menus Package for implementing XP style menus and toolbars.

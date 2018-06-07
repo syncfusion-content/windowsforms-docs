@@ -204,7 +204,8 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Value
 
 ![](GettingStarted-images/GettingStarted-img3.png)
 
-**Percentage** represents the precentage format.
+**Percentage** represents the percentage format.
+
 
 {% tabs %}
 
@@ -224,7 +225,8 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Percentage
 
 ![](GettingStarted-images/GettingStarted-img5.png)
 
-**Percentage** represents the precentage format.
+**Custom** represents the other custom format.
+
 
 {% tabs %}
 
