@@ -9,7 +9,7 @@ documentation: ug
 
 # XPToolbar
 
-XPToolbar control is a container for a group of commands or control, which have relative functions. Supports build-in BarItems similar to the functionality of Menu, ComboBox, TextBox, Label and much more.
+XPToolbar control is a container for a group of commands or control, which have relative functions. Supports built-in BarItems similar to the functionality of Menu, ComboBox, TextBox, Label and much more.
 
 ![](Overview_images/Overview_img2.png)
 
