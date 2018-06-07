@@ -283,7 +283,7 @@ ParentBarItems represents the submenu that can be dropped down. BarItems can be 
 
 * **DropDownBarItem**
 
-DropDownBarItem represents a submenu that will drop down a Syncfusion.Windows.Forms.PopupControlContainer when clicked on it.
+DropDownBarItem represents SubMenu that will drop down a popup when clicked on it
 
 ![](Adding-and-Filling-the-XPToolbar_images/XPToolbar-img7.png)
 

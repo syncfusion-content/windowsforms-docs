@@ -15,12 +15,10 @@ The `TabbedMDIManager` provides a new TabbedMDI layout mode as an alternative to
 
 ## Key features 
 
-Some of the key features are listed below.
-
 * **Tab Groups** - Supports multiple TabGroups that can be resized with the help of splitters. It allows users to programmatically control and restrict the number and layout of the tab groups.
 * **Styling** - Supports for wide variety of built-in themes like 2D, 3D, Metro, Office themes, OneNoteStyle, InternetExplorer7 and much more.
 * **Positioning** - Tabbed windows can be arranged in different orientation such as horizontal, vertical, cascade, and inside the client area of the parent form. 
-* **Tab Alignment** - Supports to specify tabs alignment.
+* **Tab Alignment** - Supports to specify tabs alignment in left, right, top and bottom directions.
 * **Context menu** -  Provides a built-in context menu with options to perform operations like closing the tabs, moving tabs to new tab group and much more. We can also add custom menu items to the default context menu.
 * **MDI List** - Provides options to retrieve the list of MDIChild forms in the application. And also the MenuItem or ToolStrip MenuItem to which the list should be added can be specified.
 * **Button support** - Provides options to display close button individually for each tab. It also provides options to enable or disable [DropDown](/windowsforms/tabbedmdi/button-settings#dropdown-button) and [Close buttons](/windowsforms/tabbedmdi/button-settings#close-button) in TabbedMDIManager. 

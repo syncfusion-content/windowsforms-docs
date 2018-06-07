@@ -15,7 +15,7 @@ The `Office2010Form` is an advanced standard Form that offers Microsoft Office20
 
 ## Key features
 
-* **Alignment** - Supports to specify Title text alignment.
+* **Caption Alignment** - Supports to specify caption text alignment.
 * **Color schemes** - Supports various office color schemes like blue, black, silver and much more.
 * **Customization** - Supports for customizing appearance of Caption bar.
 * **Right-to-left** - Supports to align the control elements in right-to-left layout.
