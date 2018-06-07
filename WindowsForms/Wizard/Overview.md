@@ -16,7 +16,7 @@ The [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools
 
 ## Key Features
 
-**Extensive design-time support** - Provides rich Design-Time features to codelessly configure it.
+**Extensive design-time support** - Provides rich Design-Time features for codeless configuration.
 
 **RightToLeft** - Supports RightToLeft alignment of its elements.
 

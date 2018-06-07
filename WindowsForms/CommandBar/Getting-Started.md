@@ -274,11 +274,11 @@ To add XPToolbar into CommandBar, Create an instance of [XPToolbar](https://help
 {% tabs %}
 
 {% highlight C# %}
-// Create an instance of XPtoolbar
+// Create an instance of XPToolbar
 
 XPToolBar xpToolBar1 = new XPToolBar();
 
-// Create instance of XPtoolbar items
+// Create instance of XPToolbar items
 ParentBarItem parentBarItem1 = new ParentBarItem();
 StaticBarItem staticBarItem1 = new StaticBarItem();
 TextBoxBarItem textBoxBarItem1 = new TextBoxBarItem();
@@ -303,11 +303,11 @@ this.commandBar1.Controls.Add(this.xpToolBar1);
 
 {% highlight VB %}
 
-' Create an instance of XPtoolbar
+' Create an instance of XPToolbar
 
 Dim xpToolBar1 As New XPToolBar()
 
-' Create instance of XPtoolbar items
+' Create instance of XPToolbar items
 Dim parentBarItem1 As New ParentBarItem()
 Dim staticBarItem1 As New StaticBarItem()
 Dim textBoxBarItem1 As New TextBoxBarItem()

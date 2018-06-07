@@ -16,7 +16,7 @@ documentation: ug
 
 ## Key features
 
-* **DockStates** - Supports dockstates such as Top, Bottom, Left, Right and Float, also provides options to disable Dock and Float states.
+* **DockStates** - Supports DockStates such as Top, Bottom, Left, Right and Float, also provides options to disable Dock and Float states.
 
 * **Button settings** - Provides close button and drop-down button with customization properties.
 
