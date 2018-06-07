@@ -9,26 +9,16 @@ documentation: ug
 
 # Overview
 
-ProgressBars are used in applications to provide a visual cue during lengthy operations such as installation, copying, and printing. It also lets users know the time remaining to complete a lengthy operation. When an application is performing a lengthy task in the background, users may not be sure if the application is still working. A ProgressBar can be used to provide a visual cue that the application is indeed working and the task is being completed.
+[ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control helps to provide progress information during lengthy operations such as installation, copying, and printing. It also lets users know the time remaining to complete a lengthy operation. It is an advanced progressbar with a wide variety of following features.
 
-![](Overview_images/Overview_img1.jpeg)
+## Key Features
 
+* **Text Formats** - Provides options set the progress format as Percentage, Value or other custom format.
 
-The ProgressBarAdv is an advanced progressbar with a wide array of properties that can be set using the properties window. It comes with many styles which can be set through the BackgroundStyle and ProgressStyle properties. The orientation of a ProgressBarAdv can be set to vertical or horizontal using the ProgressOrientation property.
+* **Progress Image** - Provides options to set image for progress indication.
 
-The various sections of ProgressBarAdv and their descriptions are given below.
+* **Customization options** - Supports color customization like foreground, background colors, appearance can also be customized in any form and much more.
 
-![](Overview_images/Overview_img5.jpeg)
+* **Orientation** - Supports both horizontal and vertical orientation.
 
-
-### ProgressBarAdv
-
-The ProgressBarAdv is an extension to the standard progressbar which will help you to display task completion status with lots of background, border, and foreground styles.
-
-#### Foreground of ProgressBarAdv
-
-This is the area which indicates task completion in the ProgressBarAdv control.
-
-#### Background of ProgressBarAdv
-
-This is the area over which the foreground is displayed.
+* **VisualStyle** - Provides rich set of VisualStyle to customize the look and feel of ProgressBarAdv.
