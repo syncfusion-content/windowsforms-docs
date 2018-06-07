@@ -184,6 +184,8 @@ Me.Controls.Add(progressBarAdv1)
 
 Text format of the ProgressBarAdv can be customized using [TextStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv~TextStyle.html) property.
 
+**Value** represents the current value out of maximum value format.
+
 {% tabs %}
 
 {% highlight C# %}
@@ -202,9 +204,74 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Value
 
 ![](GettingStarted-images/GettingStarted-img3.png)
 
+**Percentage** represents the precentage format.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.TextStyle = ProgressBarTextStyles.Percentage;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Percentage
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](GettingStarted-images/GettingStarted-img5.png)
+
+**Percentage** represents the precentage format.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.CustomText = "Loading";
+this.progressBarAdv1.TextStyle = ProgressBarTextStyles.Custom;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.CustomText = "Loading"
+Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Custom
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](GettingStarted-images/GettingStarted-img6.png)
+
+
 ## Configure TextAlignment
 
 Alignment of the foreground text can be modified using [TextAlignment](#https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv~TextAlignment.html) property.
+
+**Center** represents text aligned to the Center.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.TextAlignment = TextAlignment.Center;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.TextAlignment = TextAlignment.Center
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](GettingStarted-images/GettingStarted-img8.png)
+
+**Left** represents text aligned to the left.
 
 {% tabs %}
 
@@ -223,6 +290,26 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Left
 {% endtabs %}
 
 ![](GettingStarted-images/GettingStarted-img4.png)
+
+**Right** represents text aligned to the right.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.TextAlignment = TextAlignment.Right;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.TextAlignment = TextAlignment.Right
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](GettingStarted-images/GettingStarted-img7.png)
 
 
 

@@ -157,7 +157,7 @@ Create a new Windows Forms project in the Visual Studio to display the CommandBa
 
 ## Adding control via Form designer
 
-The [CommandBarsController](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -168,9 +168,9 @@ The [CommandBarsController](https://help.syncfusion.com/cr/cref_files/windowsfor
 
 ![](Getting-Started_images/GettingStarted-img1.png)
 
-**Adding CommandBars into CommandBarsController**
+**Adding CommandBars into CommandBarController**
 
-[CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) can be added to [CommandBarsController](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) by clicking on `Add CommandBars` from Smart Tags.
+[CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) can be added to [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) by clicking on `Add CommandBars` from Smart Tags.
 
 ![](Getting-Started_images/GettingStarted-img3.png)
 
@@ -237,7 +237,7 @@ Me.commandBarController1.HostForm = Me;
 
 {% endtabs %}
 
-**Adding CommandBar into CommandBarsController**
+**Adding CommandBar into CommandBarController**
 
 Create an instance of [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) .
 
