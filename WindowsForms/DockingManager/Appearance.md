@@ -16,7 +16,6 @@ The UI for Dock, Float and AutoHide windows of DockingManager can be changed usi
 VisualStyles provides rich and professional look and feel UI for the Dock windows. Some of the available VisualStyles are as follows:
 
 * Default
-* Metro
 * Office2003
 * Office2007
 * Office2007Outlook
@@ -24,8 +23,7 @@ VisualStyles provides rich and professional look and feel UI for the Dock window
 * OfficeXP
 * VS2003
 * VS2005
-* Office2007
-* Office2010
+* Metro
 * Office2016Colorful
 * Office2016White
 * Office2016DarkGray
@@ -36,8 +34,6 @@ The visual style can be applied for the DockingManager using [VisualStyle](https
 **Default**
 
 This option helps to set the Default style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -61,39 +57,9 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Default
 
 ![](Appearance_images/Appearance_img2.png)
 
-**Metro**
-
-This option helps to set the Metro style.
-
-#####  Code Sample
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Metro
-
-this.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-'Metro
-
-Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
-
-{%endhighlight %}
-
-{% endtabs %}
-
-![](Appearance_images/Appearance_img1.png)
-
 **Office2003**
 
 This option helps to set the Office2003 style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -121,8 +87,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
 This option helps to set the Office2007 style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -148,8 +112,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 **Office2007Outlook**
 
 This option helps to set the Office2007Outlook style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -177,8 +139,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 This option helps to set the Office2010 style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -204,8 +164,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
 **OfficeXP**
 
 This option helps to set the OfficeXP style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -233,8 +191,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
 
 This option helps to set the VS2005 style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -261,8 +217,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.VS2005
 
 This option helps to set the VS2010 style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -285,11 +239,35 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.VS2010
 
 ![](Appearance_images/Appearance_img9.png)
 
+**Metro**
+
+This option helps to set the Metro style.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Metro
+
+this.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Metro
+
+Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
+
+{%endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img1.png)
+
 **Office2016Colorful**
 
 This option helps to set the Office2016Colorful style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -317,8 +295,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 This option helps to set the Office2016White style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -345,8 +321,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 This option helps to set the Office2016DarkGray style.
 
-#####  Code Sample
-
 {% tabs %}
 
 {% highlight C# %}
@@ -372,8 +346,6 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016
 **Office2016Black**
 
 This option helps to set the Office2016Black style.
-
-#####  Code Sample
 
 {% tabs %}
 
@@ -867,7 +839,7 @@ Me.dockingManager1.ResetDockTabForeColor()
 
 In DockingManager, we can customize the AutoHidden window tabs foreground, font and tab panel background color.
 
-### customize auto hide tab
+### Customize auto hide tab
 
 The Font style for the auto hidden tabs can be customized by using [AutoHideTabFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabFont.html) property of DockingManager. The height of AutoHidden tab control can be customized by using the [AutoHideTabHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabHeight.html) property.
 
@@ -931,7 +903,7 @@ Me.dockingManager1.AutoHideTabForeColor = System.Drawing.Color.Red
 
 ![](Appearance_images/Appearance_img28.png)
 
-## customize auto hide panel
+### Customize auto hide panel
 
 The background color of the Auto Hide window can be customized using the property named [TabPanelBackcolor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPanelBackColor.html) in AHTabControl. All the auto hide TabControl can be get from the [GetAHTabControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MainFormController~GetAHTabControl.html) function of MainFormController by specifying side of auto hide TabControl. The following code used to customize the back color.
 

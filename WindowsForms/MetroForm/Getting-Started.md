@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to inherit `MetroForm` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to configure `MetroForm` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
