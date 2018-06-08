@@ -10,7 +10,19 @@ documentation: ug
 
 # Overview
 
-The SplitContainerAdv is a container that consists of two panels with a splitter between them. It allows the user to simply put other controls on these panels and drag the splitter vertically or horizontally to resize these panels. The user can add more SplitContainerAdv controls into any one of the panels in another SplitContainerAdv control and can change the orientation to have a customized look.
+[SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) is a container control which allows you to add controls into panels ([Panel1](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1.html) and [Panel2](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2.html)) to a form, separated by splitters. 
 
- ![](SplitContainerAdv-Images/Overview_img391.jpeg)
+ ![](GettingStarted-images/Overview-img1.png)
 
+## Key Features
+
+
+* **Orientation** - Supports both horizontal and vertical orientations.
+
+* **States** - Provides option to collapse and expand the child panels.
+
+* **Nested Layout**: Provides option to add SplitContainerAdv control into another SplitContainerAdv Control. It can be deployed as a Generic Control Container with maximum flexibility.
+
+* **Visual Style** - Provides rich set of visual styles to customize the look and feel.
+
+* **Splitter Distance** - Provides option to specify the Splitter Distance.
