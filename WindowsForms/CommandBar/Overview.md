@@ -18,7 +18,7 @@ documentation: ug
 
 * **DockStates** - Supports Dock states in Top, Bottom, Left, Right directions and also empowered to be displayed in Floating state.
 
-* **Button settings** - Provides close and drop-down buttons.
+* **Button Options** - Provides close and drop-down buttons.
 
 * **Chevron** - Supports chevron which displays toolbar icons that do not fit in the space available in the toolbar.
 
