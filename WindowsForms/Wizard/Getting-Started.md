@@ -385,7 +385,7 @@ Me.wizardControlPage1.BackVisible = False
 Me.wizardControlPage2.Title = "Processing"
 Me.wizardControlPage2.Description = "Second page of the WizardControl"
 
-Me.wizardControlPage3.Title = "Finished"
+Me.wizardControlPage3.Title = "Finish"
 Me.wizardControlPage3.Description = "Final page of the WizardControl"
 Me.wizardControlPage3.NextVisible = False
 Me.wizardControlPage3.CancelVisible = False
