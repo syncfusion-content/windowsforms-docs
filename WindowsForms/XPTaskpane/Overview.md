@@ -9,9 +9,7 @@ documentation: ug
 
 # Overview
 
-The XPTaskPane is a container control that can host a number of XPTaskPage, which the user can browse using a dropdown menu and the arrow buttons in task pane's header portion. This resembles the task pane in Office XP 2002.
-
-The XPTaskPane control was inspired by the Office XPTaskPane feature. The control internally uses a CardLayout to show one page at a time. The header panel allows the user to select one page at a time. The control comes with complete design-time support.
+[XPTaskPane](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html) is an Microsoft Office XP TaskPane inspired container control helps to host a number of [XPTaskPage](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPage.html), which the user can browse using a dropdown menu and the arrow buttons in task pane's header portion. 
 
 ![](Overview_images/XPtaskPane_img1.png)
 
@@ -31,7 +29,7 @@ This section covers the features of XPTaskPane control.
 
 * **Page Sequencing** - Provides options to reorder the pages through 'Bring to front' and 'Send to back' verbs or by using XPTaskPage Collection Editor.
 
-* **VisualStyle** - Support rich set of built-in themes like Office, Metro and much more.
+* **Visual Style** - Support rich set of built-in themes like Office, Metro and much more.
 
 
 
