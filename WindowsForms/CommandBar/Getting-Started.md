@@ -3,17 +3,17 @@ layout: post
 title: Getting-Started | WindowsForms | Syncfusion
 description: getting started
 platform: WindowsForms
-control: CommandBars
+control: CommandBar
 documentation: ug
 ---
 
 # Getting started
 
-This section describes how to add [CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the [CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) in any application:
+The following list of assemblies should be added as reference to use the [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) in any application:
 
 <table>
 <tr>
@@ -37,7 +37,7 @@ Syncfusion.Grid.Base contains classes that contains fundamentals and base classe
 Syncfusion.Grid.Windows.dll
 </td>
 <td>
-Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the CommandBars control.
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the CommandBar control.
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Syncfusion.Grid.Windows contains classes that handles all UI operations, fundame
 Syncfusion.Shared.Base.dll
 </td>
 <td>
-Syncfusion.Shared.Base contains style related properties of CommandBars and various editor controls.
+Syncfusion.Shared.Base contains style related properties of CommandBar and various editor controls.
 </td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@ Syncfusion.Shared.Base contains style related properties of CommandBars and vari
 Syncfusion.Shared.Windows.dll
 </td>
 <td>
-Syncfusion.Shared.Windows contains style related properties of CommandBars and various editor controls.
+Syncfusion.Shared.Windows contains style related properties of CommandBar and various editor controls.
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ Syncfusion.Shared.Windows contains style related properties of CommandBars and v
 Syncfusion.Tools.Base.dll
 </td>
 <td>
-Syncfusion.Tools.Base contains base class which used for CommandBars control.
+Syncfusion.Tools.Base contains base class which used for CommandBar control.
 </td>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ Syncfusion.Tools.Base contains base class which used for CommandBars control.
 Syncfusion.Tools.Windows.dll
 </td>
 <td>
-Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of CommandBars control.
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of CommandBar control.
 </td>
 </tr>
 </table>
@@ -77,7 +77,7 @@ Syncfusion.Tools.Windows contains the class that handles all UI operations and c
 
 ## Installing NuGet Packages
 
-To use [CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control in Windows Forms application via nuget, the following packages should be installed.
+To use [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control in Windows Forms application via nuget, the following packages should be installed.
  
 <table>
 <tr>
@@ -143,9 +143,9 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with CommandBars
+# Creating simple application with CommandBar
 
-You can create the Windows Forms application with [CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control as follows:
+You can create the Windows Forms application with [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Form Designer](#adding-control-via-Form-designer)
@@ -153,7 +153,7 @@ You can create the Windows Forms application with [CommandBars](https://help.syn
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the CommandBars with functionalities.
+Create a new Windows Forms project in the Visual Studio to display the CommandBar with functionalities.
 
 ## Adding control via Form designer
 
@@ -168,9 +168,9 @@ The [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsform
 
 ![](Getting-Started_images/GettingStarted-img1.png)
 
-**Adding CommandBars into CommandBarController**
+**Adding CommandBar into CommandBarController**
 
-[CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) can be added to [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) by clicking on `Add CommandBars` from Smart Tags.
+[CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) can be added to [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) by clicking on `Add CommandBar` from Smart Tags.
 
 ![](Getting-Started_images/GettingStarted-img3.png)
 
