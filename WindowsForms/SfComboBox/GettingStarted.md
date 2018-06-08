@@ -120,7 +120,7 @@ End Namespace
 
 ### Binding to data
 
-To bind the SfComboBox to data, set the `SfComboBox.DataSource` property to `IEnumerable` implementation.
+You can bind a property of the underlying data source to display for SfComboBox by using the `DisplayMember` property and you can bind a property to use as the actual value for the items by using the `ValueMember` property.
 
 {% tabs %}
 {% highlight c# %}
