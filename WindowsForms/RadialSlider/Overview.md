@@ -21,5 +21,5 @@ The RadialSlider is an advanced control that is capable of calculating the sequ
 
 * **Value Settings** - Provides options to set minimum and maximum range as well as slider division values.
 
-* **VisualStyle** - Provides rich set of style to customize the look and feel of RadialSlider.
+* **Visual Style** - Provides rich set of style to customize the look and feel of RadialSlider.
 
