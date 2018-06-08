@@ -162,7 +162,7 @@ ProgressBarAdv progressBarAdv1 = new ProgressBarAdv();
 
 this.progressBarAdv1.ProgressStyle = ProgressBarStyles.Office2016Colorful;
 
- this.progressBarAdv1.Value = 60;
+this.progressBarAdv1.Value = 60;
 
 this.Controls.Add(progressBarAdv1);
 
@@ -174,7 +174,7 @@ Dim progressBarAdv1 As ProgressBarAdv = New ProgressBarAdv()
 
 Me.progressBarAdv1.ProgressStyle = ProgressBarStyles.Office2016Colorful
 
- this.progressBarAdv1.Value = 60
+Me.progressBarAdv1.Value = 60
 
 Me.Controls.Add(progressBarAdv1)
 
