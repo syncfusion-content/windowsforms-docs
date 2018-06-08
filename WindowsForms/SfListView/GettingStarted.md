@@ -113,7 +113,7 @@ Namespace WindowsFormsApplication1
 			Dim listView As New SfListView()
             listView.Location = New Point(100,100)
             listView.Size = New Size(300,320)
-            Me.Controls.Add(listview)   
+            Me.Controls.Add(listView)   
 		End Sub
 	End Class
 End Namespace
@@ -265,7 +265,7 @@ listView.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = â
 ![](GettingStarted_images/GettingStarted_img3.png)
 
 ## Sorting
-The SfListView allows sorting on its data by using the `SfListView.View.SortDescriptorsproperty`. Create `SortDescriptor` for the property to be sorted and add it into the View.SortDescriptors collection.
+The SfListView allows sorting on its data by using the `SfListView.View.SortDescriptors` property. Create `SortDescriptor` for the property to be sorted and add it into the View.SortDescriptors collection.
 
 SortDescriptor object holds the following three properties:
 
