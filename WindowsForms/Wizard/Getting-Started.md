@@ -348,11 +348,14 @@ this.wizardControlPage1.Title = "Welcome";
 this.wizardControlPage1.Description = "First page of the WizardControl";
 this.wizardControlPage1.BackVisible = false;
 
-this.wizardControlPage1.Title = "Processing";
-this.wizardControlPage1.Description = "Second page of the WizardControl";
+this.wizardControlPage2.Title = "Processing";
+this.wizardControlPage2.Description = "Second page of the WizardControl";
 
-this.wizardControlPage1.Title = "Finished";
-this.wizardControlPage1.Description = "Final page of the WizardControl";
+this.wizardControlPage3.Title = "Finished";
+this.wizardControlPage3.Description = "Final page of the WizardControl";
+this.wizardControlPage3.NextVisible = false;
+this.wizardControlPage3.CancelVisible = false;
+this.wizardControlPage3.FinishVisible = true;
 
 this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
 this.wizardControl1.Banner = this.pictureBox1;
@@ -379,11 +382,14 @@ Me.wizardControlPage1.Title = "Welcome"
 Me.wizardControlPage1.Description = "First page of the WizardControl"
 Me.wizardControlPage1.BackVisible = False
 
-Me.wizardControlPage1.Title = "Processing"
-Me.wizardControlPage1.Description = "Second page of the WizardControl"
+Me.wizardControlPage2.Title = "Processing"
+Me.wizardControlPage2.Description = "Second page of the WizardControl"
 
-Me.wizardControlPage1.Title = "Finished"
-Me.wizardControlPage1.Description = "Final page of the WizardControl"
+Me.wizardControlPage3.Title = "Finished"
+Me.wizardControlPage3.Description = "Final page of the WizardControl"
+Me.wizardControlPage3.NextVisible = False
+Me.wizardControlPage3.CancelVisible = False
+Me.wizardControlPage3.FinishVisible = True
 
 Me.pictureBox1.Image = (CType(resources.GetObject("pictureBox1.Image"), System.Drawing.Image))
 Me.wizardControl1.Banner = Me.pictureBox1

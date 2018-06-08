@@ -21,5 +21,5 @@ NavigationDrawer is a sliding panel menu that comes out from the edge of the wi
 
 * **Toggle Drawer** : This support helps to toggle between Sliding Panel visibility.
 
-* **AnimationDuration** : Specifies the Timespan by which the DrawerContent opens up to the view. AnimationDuration is applied only when ToggleDrawer function is used.
+* **Animation Duration** : Specifies the Timespan by which the DrawerContent opens up to the view. Animation Duration is applied only when ToggleDrawer function is used.
 

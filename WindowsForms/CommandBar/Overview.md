@@ -24,7 +24,7 @@ documentation: ug
 
 * **Gripper** - Provides options to show and hide Gripper.
 
-* **VisualStyle** - Provides rich set of VisualStyle to customize the look and feel of command bar
+* **Visual Style** - Provides rich set of Visual Style to customize the look and feel of CommandBar
 
 * **Serialization** - Provides options to save and load the state of the CommandBar.
 

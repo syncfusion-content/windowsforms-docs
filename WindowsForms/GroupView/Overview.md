@@ -21,4 +21,4 @@ documentation: ug
 
 **Spacing**: Provides support to set the user-defined image spacing, text spacing, X and Y spacing in between items using int values.
 
-**VisualStyle** - Supports rich set of VisualStyle to customize the look and feel of GroupView.
+**Visual Style** - Supports rich set of Visual Style to customize the look and feel of GroupView.

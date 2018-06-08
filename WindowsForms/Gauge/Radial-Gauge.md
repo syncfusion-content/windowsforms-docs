@@ -27,11 +27,11 @@ documentation: ug
 
 * **Labels** - Provides support to customize the appearance of gauge values with user-specified colors and alignment.
 
-* **VisualStyle** - Supports rich set of VisualStyle to modify look and feel of the RadialGauge
+* **Visual Style** - Supports rich set of Visual Style to modify look and feel of the RadialGauge
 
 * **Customization Options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
 
-* **DataBinding** - Support provided to update value using DataBinding concept. 
+* **Data Binding** - Support provided to update value using DataBinding concept. 
 
 
 # Getting started

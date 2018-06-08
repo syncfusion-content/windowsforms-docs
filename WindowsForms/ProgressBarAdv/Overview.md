@@ -21,4 +21,4 @@ documentation: ug
 
 * **Orientation** - Supports both horizontal and vertical orientation.
 
-* **VisualStyle** - Provides rich set of VisualStyle to customize the look and feel of ProgressBarAdv.
+* **Visual Style** - Provides rich set of Visual Style to customize the look and feel of ProgressBarAdv.
