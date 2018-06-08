@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The `MetroForm` is an advanced standard Form that helps to create fully customizable Form. With this user can present an appealing User Interface to the end users. It also supports various built in customizations and let the user to control its behavior and appearance.
+[MetroForm](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MetroForm.html) is used to create customizable window for the end user’s applications. The features offered includes resizing, dragging and moving the window. It also supports various built in skins and let the user to control its behavior and appearance .
 
 ![](Overview_images/Overview.png)
 

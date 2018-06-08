@@ -21,4 +21,4 @@ RangeSlider is a flexible UI component that allows value-range selection. It let
 
 * **Value Settings** - Provides options to set minimum and maximum value of RangeSlider.
 
-* **VisualStyle** - Provides rich set of VisualStyle to customize the look and feel of RangeSlider.
+* **Visual Style** - Provides rich set of visual styles to customize the look and feel of RangeSlider.
