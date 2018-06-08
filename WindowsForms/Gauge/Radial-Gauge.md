@@ -31,6 +31,8 @@ documentation: ug
 
 * **Customization Options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
 
+* **DataBinding** - Support provided to update value using DataBinding concept. 
+
 
 # Getting started
 

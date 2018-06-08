@@ -23,6 +23,8 @@ documentation: ug
 
 * **VisualStyle** - Supports rich set of VisualStyle to modify look and feel of the LinearGauge
 
+* **DataBinding** - Support provided to update value using DataBinding concept. 
+
 # Getting started
 
 This section describes how to add `LinearGauge` control in a Windows Forms application and overview of its basic functionalities.
