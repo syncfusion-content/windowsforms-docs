@@ -183,7 +183,7 @@ To add control manually in C#, follow the given steps:
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
-2. Create [DockingManager](https://help.syncfusion.com/cr/cref_files/wpf/tools/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager.html) control instance and add it to the component list.
+2. Create [DockingManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager.html) control instance and add it to the component list.
 
 {% tabs %}
 
@@ -311,7 +311,6 @@ Console.Write("DockWindow Header:" + Me.dockingManager1.GetEnableDocking(panel1)
 ### Change header of child window
 
 The [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) function of DockingManager helps to set the label for a child window. 
-
 
 {% tabs %}
 

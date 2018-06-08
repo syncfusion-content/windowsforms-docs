@@ -56,17 +56,21 @@ Indicates the border Style of the Control</td></tr>
 
 private Syncfusion.Windows.Forms.Tools.DockingClientPanel dockingClientPanel1;
 
+private System.Windows.Forms.Label label1;
+
 this.dockingClientPanel1 = new Syncfusion.Windows.Forms.Tools.DockingClientPanel();
+
+this.label1 = new System.Windows.Forms.Label();
 
 this.dockingClientPanel1.SuspendLayout();
 
-
+this.label1.Text = "DockingClientPanel";
 
 //Add a control to DockingClientPanel
 
-this.dockingClientPanel1.Controls.Add(this.tabControlAdv1);
+this.dockingClientPanel1.Controls.Add(this.label1);
 
-
+this.dockingManager1.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 200);
 
 //set the properties
 
@@ -80,10 +84,7 @@ this.dockingClientPanel1.SizeToFit = true;
 
 this.dockingClientPanel1.TabIndex = 0;
 
-this.dockingClientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.dockingClientPanel1_Paint);
-
-this.DockingClientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-
+this.dockingClientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 
 
 //Add the control to the form
@@ -103,17 +104,21 @@ this.dockingClientPanel1.ResumeLayout(false);
 
 Private dockingClientPanel1 As Syncfusion.Windows.Forms.Tools.DockingClientPanel
 
+Private  label1 As System.Windows.Forms.Label
+
 Me.dockingClientPanel1 = New Syncfusion.Windows.Forms.Tools.DockingClientPanel()
+
+Me.label1 = New System.Windows.Forms.Label()
 
 Me.dockingClientPanel1.SuspendLayout()
 
-
+Me.label1.Text = "DockingClientPanel"
 
 ' Add a control to DockingClientPanel 
 
-Me.dockingClientPanel1.Controls.AddRange(New System.Windows.Forms.Control() {Me.tabControlAdv1})
+Me.dockingClientPanel1.Controls.AddRange(New System.Windows.Forms.Control() {Me.label1})
 
-
+Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Left, 200)
 
 'set the properties
 
@@ -139,8 +144,7 @@ Me.dockingClientPanel1.ResumeLayout(False)
 
 {% endtabs %}
 
-
- ![](DockingClientPanel_images/DockingClientPanel1.png) 
+![](DockingClientPanel_images/DockingClientPanel1.png) 
 
 ## Customize client panel
 
@@ -216,7 +220,6 @@ The foreground color of this component, which is used to display the text</td></
 
 {% highlight C# %}
 
-
 this.dockingClientPanel1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
 this.dockingClientPanel1.ForeColor = System.Drawing.Color.RoyalBlue;
@@ -225,7 +228,6 @@ this.dockingClientPanel1.ForeColor = System.Drawing.Color.RoyalBlue;
 
 
 {% highlight VB %}
-
 
 Me.dockingClientPanel1.Font = New System.Drawing.Font("Arial", 9.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType((0), Byte))
 
@@ -237,7 +239,7 @@ Me.dockingClientPanel1.ForeColor = System.Drawing.Color.RoyalBlue
 
 Below image illustrates a DockingClientPanel with the foreground and background properties set.
 
-![](DockingClientPanel_images/DockingClientPanel2.jpeg) 
+![](DockingClientPanel_images/DockingClientPanelCustomization.png) 
 
 ## Auto sizing
 
@@ -328,5 +330,3 @@ Me.dockingClientPanel1.AutoScrollMinSize = New System.Drawing.Size(1, 1)
 {% endhighlight %}
 
 {% endtabs %}
-
- ![](DockingClientPanel_images/DockingClientPanel3.jpeg) 

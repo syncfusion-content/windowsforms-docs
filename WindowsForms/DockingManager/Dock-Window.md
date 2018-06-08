@@ -203,7 +203,7 @@ Me.dockingManager1.SetControlSize(this.panel1, new Size(200, 200))
 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %} 
 
 ![](Dock_Window_images/Dock_Window_img4.png)
 
@@ -218,11 +218,11 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-SetDockIcon</td><td>
+SetDockIcon(Control, Icon)</td><td>
 Sets the Icon or the image for the docking window by passing the image icon as a parameter for this function. Ctrl - Represents the dock enabled control. image - Icon representing the docking window</td></tr>
 <tr>
 <td>
-SetDockIcon(Overloaded)</td><td>
+SetDockIcon(Control, Int32)</td><td>
 This overloaded function returns the index of the image associated with the docking window. Ctrl - Indicates the docking window. int - A zero-based index into the ImageList property value</td></tr>
 </table>
 
@@ -284,39 +284,27 @@ Me.DockingManager1.SetDockIcon(Me.panel1, icon)
 
 ![](Dock_Window_images/Dock_Window_img5.png)
 
-## Change caption alignment
+## Change caption label alignment
 
-By default, DockingManager provides options to dock panel between each other at any sides such as Left, Right, Top, Bottom. DockingManager also provides option to restrict user to dock panel at specific side. [SetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockAbility.html) function of DockingManager helps to get or sets the DockAbility of docked control. [GetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockAbility.html) of DockingManager provides the Dockability information of docked panel.
+[DockLabelAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockLabelAlignment.html) property helps to align the caption label to left, right and center position in DockingManager.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Getting the Dock Ability
-
-this.dockingManager1.GetDockAbility(this.panel1);
-
-//Setting the Dock Ability
-
-this.dockingManager1.SetDockAbility(this.panel1, "Top");
+this.dockingManager1.DockLabelAlignment = DockLabelAlignmentStyle.Right;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-//Getting the Dock Ability
-
-Me.dockingManager1.GetDockAbility(Me.panel1)
-
-//Setting the Dock Ability
-
-Me.dockingManager1.SetDockAbility(Me.panel1, "Top")
+Me.dockingManager1.DockLabelAlignment = DockLabelAlignmentStyle.Right
 
 {% endhighlight %}
 
 {% endtabs %}  
 
-![](Dock_Window_images/Dock_Window_img6.png)
+![](Dock_Window_images/DockLabelAlignment.png)
 
 ## Change visibility of caption buttons
 
@@ -349,9 +337,9 @@ this.dockingManager1.GetCloseButtonVisibility(this.panel1); //true when button i
 
 {% highlight VB %}
 
-Me.dockingManager1.SetCloseButtonVisibility(this.panel1, False); 'true to show again
+Me.dockingManager1.SetCloseButtonVisibility(Me.panel1, False) 'true to show again
 
-Me.dockingManager1.GetCloseButtonVisibility(this.panel1); 'true when button is visible, false otherwise.
+Me.dockingManager1.GetCloseButtonVisibility(Me.panel1) 'true when button is visible, false otherwise.
 
 {% endhighlight %}
 
@@ -618,7 +606,49 @@ N> If `MDIContainer` property of the form is set to `true`, then the context men
 
 Context menu items in dock window caption can be customized using [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event of DockingManager. The [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) allows to remove the menu items using its ContextMenu option.  So, we can add / remove the ContextMenuItem by passing the corresponding BarItem to add / remove function.
 
-The following code example demonstrates removing the default menu items “Hide” and “Dock to”.  
+The following code example demonstrates removing the default menu items “Hide” and “Dock to”. Please make use of the below ContextMenuItemText for remove the default menu items from context menu.  
+
+<table>
+<tr>
+<th>
+ContextMenuItem</th><th>
+Corresponding BarItem text</th></tr>
+<tr>
+<td>
+Floating</td>
+<td> 
+&Floating </td></tr>
+<tr>
+<td>
+Dockable
+</td><td>
+Doc&kable
+</td></tr>
+<tr>
+<td>
+MDI Child
+</td><td>
+&MDI Child
+</td></tr>
+<tr>
+<td>
+Auto-Hide
+</td><td>
+&Auto-Hide
+</td></tr>
+<tr>
+<td>
+Hide
+</td><td>
+&Hide
+</td></tr>
+<tr>
+<td>
+Dock to
+</td><td>
+Dock to
+</td></tr>
+</table>
 
 {% tabs %}
 
@@ -704,19 +734,19 @@ Me.dockingManager1.SetControlMinimumSize(panel1,new Size(200, 400))
 
 ### Restrict to resize specific window
 
-The desired width can be set for the Dock windows through the [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function as in the below code snippets.
+[FreezeResizing](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~FreezeResizing.html) helps to restrict sizing the docking child windows in DockingManager.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.dockingManager1.DockControl(this.panel1, this, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100);
+this.dockingManager1.FreezeResizing = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.DockingStyle.Right, 100)
+Me.dockingManager1.FreezeResizing = True
 
 {% endhighlight %}
 
@@ -748,3 +778,6 @@ The Splitter of the dock window can be customized using the [SplitterWidth](http
 {% endtabs %}
 
 ![](Dock_Window_images/Dock_Window_img14.png) 
+
+N > MetroSplitterBackColor property will effect only with [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property set as Metro.
+
