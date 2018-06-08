@@ -21,7 +21,7 @@ documentation: ug
 
 * **States** - Provides option to collapse and expand the child panels.
 
-* **Nested Layout** - Supports to add another SplitterContainerAdv as child control and also any child controls.
+* **Nested Layout**: Provides option to add SplitContainerAdv control into another SplitContainerAdv Control. It can be deployed as a Generic Control Container with maximum flexibility.
 
 * **Visual Style** - Provides rich set of visual styles to customize the look and feel.
 
