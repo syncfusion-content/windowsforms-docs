@@ -171,7 +171,7 @@ Me.dockingManager1.FullCaptionsInAutoHideMode = True
 
 ![](AutoHidden-Window_images/AutoHidden-Window_img7.png)
 
-## Re-order auto hidden tabs
+## Drag auto hidden tabs
 
 The docked controls that are auto hidden can be dragged with their tabs, and can be docked or set to floating by setting [EnableDragAutoHiddenTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableDragAutoHiddenTabs.html) property to `true`.
 
@@ -245,27 +245,6 @@ this.dockingManager1.AutoHideSelectionStyle = Syncfusion.Windows.Forms.Tools.Aut
 'To set AutoHide selection style as Click.
 
 Me.dockingManager1.AutoHideSelectionStyle = Syncfusion.Windows.Forms.Tools.AutoHideSelectionStyle.Click
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## AutoHide group / active
-
-In DockingManager, we can auto hide the active control by using [AutoHideActiveControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideActiveControl.html).
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.dockingManager1.AutoHideActiveControl = false;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-Me.dockingManager1.AutoHideActiveControl = False
 
 {% endhighlight %}
 

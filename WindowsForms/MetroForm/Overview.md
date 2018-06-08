@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-MetroForm is an advanced standard Form that helps to create fully customizable Form. With this user can present an appealing User Interface to the end users. It also supports various built in customizations and let the user to control its behavior and appearance.
+The `MetroForm` is an advanced standard Form that helps to create fully customizable Form. With this user can present an appealing User Interface to the end users. It also supports various built in customizations and let the user to control its behavior and appearance.
 
 ![](Overview_images/Overview.png)
 
@@ -20,5 +20,5 @@ MetroForm is an advanced standard Form that helps to create fully customizable 
 * Complete support for Caption Bar and Caption Image customization.
 * Right to left support.
 
-* **Caption Labels** - Provides support to add Label in desired location.
+* **Caption Labels** - Provides support to add Label in desired location on Caption Bar.
  

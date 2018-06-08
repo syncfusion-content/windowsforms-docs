@@ -9,26 +9,17 @@ documentation: ug
 
 # Overview
 
-Syncfusion MessageBoxAdv supports an application-defined message and title, plus any combination of predefined icons and buttons. MessageBoxAdv provides some of the features such as:
+The [MessageBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv_members.html) is an advanced MessageBox control that can be used to display a message to the end-user. It provides icons, buttons support and complete customization option for the control.
 
-**Feature**
+![](MessageBoxAdv_images/MessageBoxAdv_img32.png)
 
-•	Themes
+## Key features 
 
-•	Details View
-
-•	Icon Customization
-
-•	Font Customization
-
-•	Button Combination
-
-•	MultiLine Text
-
-•	Right To Left
-
-•	Dialog Result
-
-•	Localization
+* **Button Parameters support** - Provides various button combination like OkCancel, YesNo, YesNoCancel, RetryCancel and much more.
+* **Details view** - Helps to view the detailed message about the text shown in the MessageBoxAdv.
+* **Localization** - Supports complete localization to any desired language of all the elements.
+* **Font customization** - Provides option to change the font of all the elements. 
+* **Visual Styles** - Provides rich set of VisualStyle to customize the look and feel of MessageBoxAdv.
+* **Icons** - Supports to display wide variety of built-in icons and also empowered with loading custom icons.
+* **Right-to-left support** - Supports to align all the control elements in right-to-left layout.
  
-![](MessageBoxAdv_images/MessageBoxAdv_img1.jpg)

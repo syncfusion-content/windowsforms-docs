@@ -9,9 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to inherit a `MetroForm` control in a Windows Forms application and overview of its basic functionalities.
-
-* Adding MetroForm control
+This section describes how to configure `MetroForm` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -119,9 +117,7 @@ Create a new Windows Forms project in the Visual Studio to change the default fo
 
 ## Configure MetroForm
 
-The default Form can be changed into the MetroForm by following the given steps.
-
-To add control manually in C#, follow the given steps:
+`MetroForm` is an advanced standard Form, we can configure it by following the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
@@ -145,7 +141,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
    
-**Step 3** - Change the class to inherit the MetroForm instead of the default Form as follows.
+**Step 3** - Change the class to inherit MetroForm instead of the default Form as follows.
 
 {% tabs %}
 
