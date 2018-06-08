@@ -23,7 +23,7 @@ documentation: ug
 
 * **Visual Style** - Supports rich set of Visual Style to modify look and feel of the LinearGauge
 
-* **DataBinding** - Support provided to update value using DataBinding concept. 
+* **Data Binding** - Support provided to update value using Data Binding concept. 
 
 # Getting started
 
