@@ -21,7 +21,7 @@ documentation: ug
 
 * **Customization Options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
 
-* **Visual Style** - Supports rich set of Visual Style to modify look and feel of the LinearGauge
+* **Visual Style** - Supports rich set of visual styles to modify look and feel of the LinearGauge
 
 * **Data Binding** - Support provided to update value using Data Binding concept. 
 

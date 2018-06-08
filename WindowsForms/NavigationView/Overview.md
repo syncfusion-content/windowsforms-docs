@@ -17,7 +17,7 @@ documentation: ug
 
 * **History Settings** -  Provides options to drop-down the History of the previously visited locations and provides options to show/hide the History Button.
 
-* **Visual Style** - Provides options to customize the look and feel using Visual Style such as Metro, Office2007 and Vista.
+* **Visual Style** - Provides options to customize the look and feel using visual styles such as Metro, Office2007 and Vista.
 
 * **RightToLeft** - Provides options to set RightToLeft alignment.
 

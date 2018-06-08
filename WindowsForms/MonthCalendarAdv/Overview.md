@@ -25,6 +25,6 @@ documentation: ug
 
 * **Customization** - Provides options to customize font and color of Dates, Day Names, Week number and  calendar Header
 
-* **Visual Style** - Provides rich set of Visual Style to customize the look and feel of MonthCalendarAdv.
+* **Visual Style** - Provides rich set of visual styles to customize the look and feel of MonthCalendarAdv.
 
 * **Accessibility** - Touch, keyboard, and mouse support to make applications available to a wide variety of users.

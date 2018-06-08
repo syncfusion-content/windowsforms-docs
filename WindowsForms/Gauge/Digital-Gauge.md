@@ -21,7 +21,7 @@ documentation: ug
 
 * **Customization Option** - Supports color and visibility customization of all elements.
 
-* **Visual Style** - Supports rich set of VisualStyle to customize the look and feel.
+* **Visual Style** - Supports rich set of visual styles to customize the look and feel.
 
 
 
