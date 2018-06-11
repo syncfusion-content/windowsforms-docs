@@ -9,9 +9,7 @@ documentation: ug
 
 # LinearGauge
 
-LinearGauge are perfect for displaying values graphically along a linear scale. All the elements in a LinearGauge, including scales, labels, ticks, and pointers, can be fully customized with data-binding support.
-
-The LinearGauge control includes the following elements: scale label, needle, gauge value, and background frame. All the elements can be optionally displayed in the Gauge control.
+[LinearGauge](#https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge.html) displays a range of values graphically along the linear scale. It measures the values of the scales and can be presented in the horizontal or vertical sliding or meter.
 
 ## Key features
 
@@ -20,6 +18,12 @@ The LinearGauge control includes the following elements: scale label, needle, ga
 * **Frame types** - Provides options to specify the built-in frame style, such as horizontal or vertical.
 
 * **Range** - Provides options to display different ranges in different colors.
+
+* **Customization Options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
+
+* **Visual Style** - Supports rich set of visual styles to modify look and feel of the LinearGauge
+
+* **Data Binding** - Support provided to update value using Data Binding concept. 
 
 # Getting started
 
