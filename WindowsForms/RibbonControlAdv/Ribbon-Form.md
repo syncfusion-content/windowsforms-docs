@@ -67,7 +67,7 @@ Me.EnableAeroTheme = True
 
 {% endtabs %}
 
-`IsFormManager` property can be used to remove the form title bar and replace it with the RibbonControlAdv build-in system buttons.
+`IsFormManager` property can be used to remove the form title bar and replace it with the RibbonControlAdv built-in system buttons.
 
 *	Default Theme
 

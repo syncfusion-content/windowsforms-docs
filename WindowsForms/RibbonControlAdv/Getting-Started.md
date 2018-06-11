@@ -331,10 +331,10 @@ this.JunkDropDownButton.Text = "Junk";
 this.followUpDropDownButton.Text = "Follow Up";
 this.categorizeDropDownButton.Text = "Categorize";
 
-this.newItemsDropDownButton.Image = Image.FromFile(@"Pictures\newitems.png");
-this.CleanUpDropDownButton.Image = Image.FromFile(@"Pictures\cleanup.png");
+this.newItemsDropDownButton.Image = Image.FromFile(@"Pictures\NewItems.png");
+this.CleanUpDropDownButton.Image = Image.FromFile(@"Pictures\CleanUp.png");
 this.JunkDropDownButton.Image = Image.FromFile(@"Pictures\junk.png");
-this.followUpDropDownButton.Image = Image.FromFile(@"Pictures\followup.png");
+this.followUpDropDownButton.Image = Image.FromFile(@"Pictures\FollowUp.png");
 this.categorizeDropDownButton.Image = Image.FromFile(@"Pictures\categorize.png");
 
 this.newToolStripEx.Items.Add(newItemsDropDownButton);
@@ -368,10 +368,10 @@ this.tagsToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
     Me.followUpDropDownButton.Text = "Follow Up"
     Me.categorizeDropDownButton.Text = "Categorize"
 
-    Me.newItemsDropDownButton.Image = Image.FromFile("Pictures\newitems.png")
-    Me.CleanUpDropDownButton.Image = Image.FromFile("Pictures\cleanup.png")
+    Me.newItemsDropDownButton.Image = Image.FromFile("Pictures\NewItems.png")
+    Me.CleanUpDropDownButton.Image = Image.FromFile("Pictures\CleanUp.png")
     Me.JunkDropDownButton.Image = Image.FromFile("Pictures\junk.png")
-    Me.followUpDropDownButton.Image = Image.FromFile("Pictures\followup.png")
+    Me.followUpDropDownButton.Image = Image.FromFile("Pictures\FollowUp.png")
     Me.categorizeDropDownButton.Image = Image.FromFile("Pictures\categorize.png")
 
     Me.newToolStripEx.Items.Add(newItemsDropDownButton)
@@ -623,7 +623,7 @@ this.replyAllButton = new System.Windows.Forms.ToolStripButton();
 this.forwardButton = new System.Windows.Forms.ToolStripButton();
 
 this.newMailButton.Text = "New \r\nMail";
-this.newMailButton.Image = Image.FromFile(@"Pictures\newmail.png");
+this.newMailButton.Image = Image.FromFile(@"Pictures\NewMail.png");
 
 this.IgnoreButton.Text = "Ignore";
 this.IgnoreButton.Image = Image.FromFile(@"Pictures\ignore.png");
@@ -633,7 +633,7 @@ this.replyButton.Image = Image.FromFile(@"Pictures\reply.png");
 
 
 this.replyAllButton.Text = "Reply All";
-this.replyAllButton.Image = Image.FromFile(@"Pictures\replyall.png");
+this.replyAllButton.Image = Image.FromFile(@"Pictures\ReplyAll.png");
 
 this.forwardButton.Text = "Forward";
 this.forwardButton.Image = Image.FromFile(@"Pictures\forward.png");
@@ -664,13 +664,13 @@ this.forwardButton});
     Me.forwardButton = New System.Windows.Forms.ToolStripButton()
 
     Me.newMailButton.Text = "New " & vbCrLf & "Mail"
-    Me.newMailButton.Image = Image.FromFile("Pictures\newmail.png")
+    Me.newMailButton.Image = Image.FromFile("Pictures\NewMail.png")
     Me.IgnoreButton.Text = "Ignore"
     Me.IgnoreButton.Image = Image.FromFile("Pictures\ignore.png")
     Me.replyButton.Text = "Reply"
     Me.replyButton.Image = Image.FromFile("Pictures\reply.png")
     Me.replyAllButton.Text = "Reply All"
-    Me.replyAllButton.Image = Image.FromFile("Pictures\replyall.png")
+    Me.replyAllButton.Image = Image.FromFile("Pictures\ReplyAll.png")
     Me.forwardButton.Text = "Forward"
     Me.forwardButton.Image = Image.FromFile("Pictures\forward.png")
 
@@ -924,15 +924,15 @@ Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem createNewGalleryItem = new S
 
 movetoGalleryItem.Image = Image.FromFile(@"Pictures\moveto.png");
 movetoGalleryItem.Text = " Move to : ?";
-toManagerGalleryItem.Image = Image.FromFile(@"Pictures\tomanager.png");
+toManagerGalleryItem.Image = Image.FromFile(@"Pictures\ToManager.png");
 toManagerGalleryItem.Text = "To Manager";
-teamEmailGalleryItem.Image = Image.FromFile(@"Pictures\teamemail.png");
+teamEmailGalleryItem.Image = Image.FromFile(@"Pictures\TeamEmail.png");
 teamEmailGalleryItem.Text = "Team Email";
-replyAndDeleteGalleryItem.Image = Image.FromFile(@"Pictures\replyanddelete.png");
+replyAndDeleteGalleryItem.Image = Image.FromFile(@"Pictures\ReplyAndDelete.png");
 replyAndDeleteGalleryItem.Text = "Reply and Delete";
 doneGalleryItem.Image = Image.FromFile(@"Pictures\done.png");
 doneGalleryItem.Text = "Done";
-createNewGalleryItem.Image = Image.FromFile(@"Pictures\createnew.png");
+createNewGalleryItem.Image = Image.FromFile(@"Pictures\CreateNew.png");
 createNewGalleryItem.Text = " Create New";
 
 
@@ -965,15 +965,15 @@ this.quickGallery});
 
     movetoGalleryItem.Image = Image.FromFile("Pictures\moveto.png")
     movetoGalleryItem.Text = " Move to : ?"
-    toManagerGalleryItem.Image = Image.FromFile("Pictures\tomanager.png")
+    toManagerGalleryItem.Image = Image.FromFile("Pictures\ToManager.png")
     toManagerGalleryItem.Text = "To Manager"
-    teamEmailGalleryItem.Image = Image.FromFile("Pictures\teamemail.png")
+    teamEmailGalleryItem.Image = Image.FromFile("Pictures\TeamEmail.png")
     teamEmailGalleryItem.Text = "Team Email"
-    replyAndDeleteGalleryItem.Image = Image.FromFile("Pictures\replyanddelete.png")
+    replyAndDeleteGalleryItem.Image = Image.FromFile("Pictures\ReplyAndDelete.png")
     replyAndDeleteGalleryItem.Text = "Reply and Delete"
     doneGalleryItem.Image = Image.FromFile("Pictures\done.png")
     doneGalleryItem.Text = "Done"
-    createNewGalleryItem.Image = Image.FromFile("Pictures\createnew.png")
+    createNewGalleryItem.Image = Image.FromFile("Pictures\CreateNew.png")
     createNewGalleryItem.Text = " Create New"
 
     Me.quickGallery.Items.Add(movetoGalleryItem)
@@ -1354,8 +1354,8 @@ this.officeAccountsBackStageTab.Text = "Office Accounts";
 this.printBackStageTab.Text = "Print";
 
 //Adding them to backstage controls
-this.backStage1.Controls.Add(infoBackStageTab);
-this.backStage1.Controls.Add(saveasBackStageTab);
+this.backStage1.Controls.Add(openExportBackStageTab);
+this.backStage1.Controls.Add(saveAttachmentsBackStageTab);
 this.backStage1.Controls.Add(openBackStageTab);
 this.backStage1.Controls.Add(officeAccountsBackStageTab);
 this.backStage1.Controls.Add(printBackStageTab);
@@ -1382,8 +1382,8 @@ this.backStage1.Controls.Add(printBackStageTab);
     Me.officeAccountsBackStageTab.Text = "Office Accounts"
     Me.printBackStageTab.Text = "Print"
 
-    Me.backStage1.Controls.Add(infoBackStageTab)
-    Me.backStage1.Controls.Add(saveasBackStageTab)
+    Me.backStage1.Controls.Add(openExportBackStageTab)
+    Me.backStage1.Controls.Add(saveAttachmentsBackStageTab)
     Me.backStage1.Controls.Add(openBackStageTab)
     Me.backStage1.Controls.Add(officeAccountsBackStageTab)
     Me.backStage1.Controls.Add(printBackStageTab)
@@ -1394,7 +1394,7 @@ this.backStage1.Controls.Add(printBackStageTab);
 
 ### Add BackStage Button
 
-BackStage Button can be added through Smart tag of backstageview.
+BackStage Button can be added through Smart tag of backstage view.
 
 ![](Getting_Started_Images/Getting-Started_img33.jpg)
 

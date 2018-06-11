@@ -25,7 +25,7 @@ RibbonControlAdv Tab and TabItems can customized in run time using Ribbon Custom
 
 ### Create New Tab
 
-Add New `ToolStripTabitem`
+Add New `ToolStripTabItem`
 
 ![](Customization_Support_iImages/Customization-Support_img2.jpg)
 
