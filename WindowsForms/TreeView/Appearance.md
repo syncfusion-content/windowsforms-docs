@@ -6,7 +6,7 @@ platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-# Appearence
+# Appearance
 
 This section deals with the appearance of TreeViewAdv control
 

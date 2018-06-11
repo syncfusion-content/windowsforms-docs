@@ -281,7 +281,7 @@ treeNode.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.TreeNodePrimitiv
 {% endhighlight %}
 {% endtabs %}
 
-<b>Step 3</b>:. Add the custom control to the node using TreeNodeAdv.CustomContol property
+<b>Step 3</b>:. Add the custom control to the node using TreeNodeAdv.CustomControl property
 
 {% tabs %}
 {% highlight c# %}
@@ -467,14 +467,14 @@ In Office2016 and Metro style instead of plus/minus sign arrow has been shown. U
 {% highlight c# %}
 
 this.treeViewAdv1.Style = TreeStyle.Office2016Colorful;
-this.treeViewAdv1.ExapnderType = ExpanderType.Classic;
+this.treeViewAdv1.ExpanderType = ExpanderType.Classic;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Me.treeViewAdv1.Style = TreeStyle.Metro
-Me.treeViewAdv1.ExapnderType = ExpanderType.Classic
+Me.treeViewAdv1.ExpanderType = ExpanderType.Classic
 
 {% endhighlight %}		
 {% endtabs %}
@@ -600,7 +600,7 @@ End Sub
 
 ### Left Image
 
-The tree nodes can be set with left images using LeftImageList property in the property window. Left images for the individual nodes can be specified in `LeftImageIndice`s property of individual nodes, using the TreeViewAdv Nodes Collection Editor.
+The tree nodes can be set with left images using LeftImageList property in the property window. Left images for the individual nodes can be specified in `LeftImageIndices` property of individual nodes, using the TreeViewAdv Nodes Collection Editor.
 
 The nodes with the images can be given an enhanced appearance using `LeftImagePadding`.
 
@@ -645,12 +645,12 @@ To set the left images for all the nodes in treeview follow the below steps
 {% tabs %}
 {% highlight c# %}
 
-this. treeViewAdv1.LeftImageList = this.leftimagelist;
+this. treeViewAdv1.LeftImageList = this.leftImageList;
 
 {% endhighlight %}
 {% highlight vb %}
 
-Me.treeViewAdv1.LefttImageList = Me.leftimagelist
+Me.treeViewAdv1.LeftImageList = Me.leftImageList
 
 {% endhighlight %}
 {% endtabs %}
@@ -713,12 +713,12 @@ To set the Right images for all the nodes in treeview follow the below steps
 {% tabs %}
 {% highlight c# %}
 
-this. treeViewAdv1.RightImageList = this.rightimagelist;
+this. treeViewAdv1.RightImageList = this.rightImageList;
 
 {% endhighlight %}
 {% highlight vb %}
 
-Me.treeViewAdv1.RighttImageList = Me.Rightimagelist
+Me.treeViewAdv1.RightImageList = Me.rightImageList
 
 {% endhighlight %}
 {% endtabs %}
@@ -1270,7 +1270,7 @@ Methods to make a node completely un editable even when the,
 1. Node is visible.
 2. Node is clickable.
 
-BeforeEdit event can be used for this purpose. In this example, the Parent Nodes are made uneditable. TreeNodeAdvBeforeEditEventArgs.Node indicates the target node for editing.
+BeforeEdit event can be used for this purpose. In this example, the Parent Nodes are made without editable option. TreeNodeAdvBeforeEditEventArgs.Node indicates the target node for editing.
 
 The desired condition is checked on that node and based on the result, the TreeNodeAdvBeforeEditEventArgs.Cancel property is set appropriately.
 

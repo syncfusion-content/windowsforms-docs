@@ -12,7 +12,7 @@ documentation: ug
 
 ## HScroll
 
-`HScroll` property is used to Show/hide the horizontal scrollbar. By default, `HScroll` will be set as true, when `HScroll` value is false then visibility of horizonal scroll bar will be collapsed.
+`HScroll` property is used to Show/hide the horizontal scrollbar. By default, `HScroll` will be set as true, when `HScroll` value is false then visibility of horizontal scroll bar will be collapsed.
 
 ## VScroll
 
@@ -22,13 +22,13 @@ documentation: ug
 {% highlight c# %}
 
 this.treeViewAdv1.HScroll = false;
-this.treeViewAdv1.Vscroll = false;
+this.treeViewAdv1.VScroll = false;
 
 {% endhighlight %}
 {% highlight vb %}
 
 Me.treeViewAdv1.HScroll = False
-Me.treeViewAdv1.Vscroll = False
+Me.treeViewAdv1.VScroll = False
 
 {% endhighlight %}
 {% endtabs %}
@@ -121,7 +121,7 @@ End Sub
 			
 ### HScrollIncrement
 
-`HScrollIncremen`t property used to set the multiplier of mouse wheel scrolling while doing horizontal scroll. User can customize the increment value per mouse wheel using this property
+`HScrollIncrement` property used to set the multiplier of mouse wheel scrolling while doing horizontal scroll. User can customize the increment value per mouse wheel using this property
 
 ### VScrollIncrement
 
@@ -134,14 +134,14 @@ End Sub
 {% tabs %}
 {% highlight c# %}
 			
-this.treeViewAdv1.HscrollIncrement = 5;
-this.treeViewAdv1.VscrollIncrement = 5;
+this.treeViewAdv1.HScrollIncrement = 5;
+this.treeViewAdv1.VScrollIncrement = 5;
 
 {% endhighlight %}
 {% highlight vb %}
 
-Me.treeViewAdv1.HscrollIncrement = 5
-Me.treeViewAdv1.VscrollIncrement = 5
+Me.treeViewAdv1.HScrollIncrement = 5
+Me.treeViewAdv1.VScrollIncrement = 5
 
 {% endhighlight %}
 {% endtabs %}
