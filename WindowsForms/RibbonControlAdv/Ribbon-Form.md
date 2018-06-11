@@ -9,9 +9,9 @@ documentation: ug
 
 # Ribbon Form
 
-## Appearance Settings
+`RibbonForm` is an extension that replaces the default form to enable different Visual styles to the ribbon. This RibbonForm now gives similar look and feel of Microsoft office, to its controls.
 
-EssentialStudio now gives a similar look and feel of Microsoft Office, to its Office controls, using RibbonControlAdv. This section discusses various appearance and behavior settings of the Ribbon form.
+## Appearance Settings
 
 <table>
 <tr>
@@ -44,62 +44,38 @@ Gets or sets the RibbonControlAdv Font.</td></tr>
 
 {% highlight c# %}
 
-//Specifies the appearance of the form.
-
+//Specifies the appearance of the form
 this.Appearance = AppearanceType.Office2007;
 
-
-
-//Specifies the office color scheme of the Ribbon Form.
-
+//Specifies the color scheme for the form
 this.ColorScheme = ColorSchemeType.Blue;
 
-
-
-//To disable the Aero theme
-
-this.EnableAeroTheme = false;
-
-
-
-//To enable the default High Contrast theme color
-
-this.ribbonControlAdv1.EnableHighContrastTheme = true;
+//Specifies the Aero theme
+this.EnableAeroTheme = true;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-'Specifies the appearance of the form.
-Me.Appearance = AppearanceType.Office2007
+Me.Appearance = AppearanceType.Office2007
 
+Me.ColorScheme = ColorSchemeType.Blue
 
-'Specifies the office color scheme of the Ribbon Form.
-Me.ColorScheme = ColorSchemeType.Blue
-
-
-'To disable the Aero theme
-Me.EnableAeroTheme = false
-
-
-'To enable the default High Contrast theme color
-
-Me.ribbonControlAdv1.EnableHighContrastTheme = true
+Me.EnableAeroTheme = True
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Ribbon-Form_images/Ribbon-Form_img3.png)
+`IsFormManager` property can be used to remove the form title bar and replace it with the RibbonControlAdv build in system buttons.
 
-![](Ribbon-Form_images/Ribbon-Form_img4.png)
+*	Default Theme
 
+![](Ribbon_Form_Images/Ribbon-Form_img1.jpg)
 
-### Vista Aero Theme
+*	Aero Theme
 
-Vista Aero theme support is available for Ribbon Form when used in Vista machine.
-
-![](Ribbon-Form_images/Ribbon-Form_img5.jpeg)
+![](Ribbon_Form_Images/Ribbon-Form_img2.jpg)
 
 
 ## Customization
@@ -117,7 +93,6 @@ Borders</td><td>
 Gets/sets the border values of an Office 2007 style form. Sets borders for Left, Top, Right and Bottom sides of the form.</td></tr>
 </table>
 
-{% tabs %}
 
 {% highlight c# %}
 
@@ -131,13 +106,10 @@ Me.Borders = New System.Windows.Forms.Padding(10)
 
 {% endhighlight %}
 
-{% endtabs %}
 
 ### Customizing the Top Left Edge
 
 This TopLeftRadius property gets/sets the curved radius of the top left edge of the form. Default is 8.
-
-{% tabs %}
 
 {% highlight c# %}
 
@@ -150,5 +122,3 @@ this.TopLeftRadius = 20;
 Me.TopLeftRadius = 20
 
 {% endhighlight %}
-
-{% endtabs %}
