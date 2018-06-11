@@ -510,7 +510,7 @@ RibbonControlAdv can now be fully customized in Office 2013 style. This can be a
 
 {% highlight c# %}
 
-//Creates an instance for the Office 2013 colortable
+//Creates an instance for the Office 2013 color table
 
 Office2013ColorTable color = new Office2013ColorTable();
 
@@ -607,7 +607,7 @@ color.ToolStripBorderColor = Color.Black;
 //To set toolstrip item text color
 color.ToolStripItemForeColor = Color.White;
 
-//To set toolstripspliter color
+//To set toolstrip splitter color
 color.ToolStripSpliterColor = Color.White;
 
 //To set updown button back color

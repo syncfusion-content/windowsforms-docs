@@ -82,34 +82,34 @@ Imports Syncfusion.Windows.Forms.Tools
 
 //Create all the controls required for mini toolbar
 private MiniToolBar miniToolBar1;
-private ToolStripPanelItem minitoolbarPanelItem;
-private ToolStripPanelItem minitoolbarPanelItem1;
-private ToolStripButton increasefontButton;
-private ToolStripButton decreasefontButton;
-private ToolStripPanelItem minitoolbarPanelItem2;
+private ToolStripPanelItem miniToolBarPanelItem;
+private ToolStripPanelItem miniToolBarPanelItem1;
+private ToolStripButton increaseFontButton;
+private ToolStripButton decreaseFontButton;
+private ToolStripPanelItem miniToolBarPanelItem2;
 private ToolStripButton boldButton;
 private ToolStripButton italicButton;
 private ToolStripButton underlineButton;
 private ToolStripSplitButton highlightSplitButton;
-private ToolStripSplitButton fontcolorSplitButton;
+private ToolStripSplitButton fontColorSplitButton;
 private ToolStripSplitButton bulletsSplitButton;
 private ToolStripSplitButton numbersSplitButton;
-private ToolStripComboBoxEx fontstyleComboBox;
-private ToolStripComboBoxEx fontsizeComboBox;
+private ToolStripComboBoxEx fontStyleComboBox;
+private ToolStripComboBoxEx fontSizeComboBox;
 
 this.miniToolBar1 = new Syncfusion.Windows.Forms.Tools.MiniToolBar();
-this.minitoolbarPanelItem = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-this.minitoolbarPanelItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-this.fontstyleComboBox = new Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx();
-this.fontsizeComboBox = new Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx();
-this.increasefontButton = new System.Windows.Forms.ToolStripButton();
-this.decreasefontButton = new System.Windows.Forms.ToolStripButton();
-this.minitoolbarPanelItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
+this.miniToolBarPanelItem = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
+this.miniToolBarPanelItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
+this.fontStyleComboBox = new Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx();
+this.fontSizeComboBox = new Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx();
+this.increaseFontButton = new System.Windows.Forms.ToolStripButton();
+this.decreaseFontButton = new System.Windows.Forms.ToolStripButton();
+this.miniToolBarPanelItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
 this.boldButton = new System.Windows.Forms.ToolStripButton();
 this.italicButton = new System.Windows.Forms.ToolStripButton();
 this.underlineButton = new System.Windows.Forms.ToolStripButton();
 this.highlightSplitButton = new System.Windows.Forms.ToolStripSplitButton();
-this.fontcolorSplitButton = new System.Windows.Forms.ToolStripSplitButton();
+this.fontColorSplitButton = new System.Windows.Forms.ToolStripSplitButton();
 this.bulletsSplitButton = new System.Windows.Forms.ToolStripSplitButton();
 this.numbersSplitButton = new System.Windows.Forms.ToolStripSplitButton();
 
@@ -118,34 +118,34 @@ this.numbersSplitButton = new System.Windows.Forms.ToolStripSplitButton();
 {% highlight vb %}
 
     Private miniToolBar1 As MiniToolBar
-    Private minitoolbarPanelItem As ToolStripPanelItem
-    Private minitoolbarPanelItem1 As ToolStripPanelItem
-    Private increasefontButton As ToolStripButton
-    Private decreasefontButton As ToolStripButton
-    Private minitoolbarPanelItem2 As ToolStripPanelItem
+    Private miniToolBarPanelItem As ToolStripPanelItem
+    Private miniToolBarPanelItem1 As ToolStripPanelItem
+    Private increaseFontButton As ToolStripButton
+    Private decreaseFontButton As ToolStripButton
+    Private miniToolBarPanelItem2 As ToolStripPanelItem
     Private boldButton As ToolStripButton
     Private italicButton As ToolStripButton
     Private underlineButton As ToolStripButton
     Private highlightSplitButton As ToolStripSplitButton
-    Private fontcolorSplitButton As ToolStripSplitButton
+    Private fontColorSplitButton As ToolStripSplitButton
     Private bulletsSplitButton As ToolStripSplitButton
     Private numbersSplitButton As ToolStripSplitButton
-    Private fontstyleComboBox As ToolStripComboBoxEx
-    Private fontsizeComboBox As ToolStripComboBoxEx
+    Private fontStyleComboBox As ToolStripComboBoxEx
+    Private fontSizeComboBox As ToolStripComboBoxEx
 
     Me.miniToolBar1 = New Syncfusion.Windows.Forms.Tools.MiniToolBar()
-    Me.minitoolbarPanelItem = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
-    Me.minitoolbarPanelItem1 = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
-    Me.fontstyleComboBox = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
-    Me.fontsizeComboBox = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
-    Me.increasefontButton = New System.Windows.Forms.ToolStripButton()
-    Me.decreasefontButton = New System.Windows.Forms.ToolStripButton()
-    Me.minitoolbarPanelItem2 = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
+    Me.miniToolBarPanelItem = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
+    Me.miniToolBarPanelItem1 = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
+    Me.fontStyleComboBox = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
+    Me.fontSizeComboBox = New Syncfusion.Windows.Forms.Tools.ToolStripComboBoxEx()
+    Me.increaseFontButton = New System.Windows.Forms.ToolStripButton()
+    Me.decreaseFontButton = New System.Windows.Forms.ToolStripButton()
+    Me.miniToolBarPanelItem2 = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
     Me.boldButton = New System.Windows.Forms.ToolStripButton()
     Me.italicButton = New System.Windows.Forms.ToolStripButton()
     Me.underlineButton = New System.Windows.Forms.ToolStripButton()
     Me.highlightSplitButton = New System.Windows.Forms.ToolStripSplitButton()
-    Me.fontcolorSplitButton = New System.Windows.Forms.ToolStripSplitButton()
+    Me.fontColorSplitButton = New System.Windows.Forms.ToolStripSplitButton()
     Me.bulletsSplitButton = New System.Windows.Forms.ToolStripSplitButton()
     Me.numbersSplitButton = New System.Windows.Forms.ToolStripSplitButton()
 
@@ -159,36 +159,36 @@ this.numbersSplitButton = new System.Windows.Forms.ToolStripSplitButton();
 
 {% highlight c# %}
 
-this.minitoolbarPanelItem2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.miniToolBarPanelItem2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 this.boldButton,
 this.italicButton,
 this.underlineButton,
 this.highlightSplitButton,
-this.fontcolorSplitButton,
+this.fontColorSplitButton,
 this.bulletsSplitButton,
 this.numbersSplitButton});
 
-this.minitoolbarPanelItem1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.fontstyleComboBox,
-this.fontsizeComboBox,
-this.increasefontButton,
-this.decreasefontButton});
+this.miniToolBarPanelItem1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.fontStyleComboBox,
+this.fontSizeComboBox,
+this.increaseFontButton,
+this.decreaseFontButton});
 
-this.minitoolbarPanelItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.minitoolbarPanelItem1,
-this.minitoolbarPanelItem2});
+this.miniToolBarPanelItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.miniToolBarPanelItem1,
+this.miniToolBarPanelItem2});
 
 this.miniToolBar1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.minitoolbarPanelItem});
+this.miniToolBarPanelItem});
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.minitoolbarPanelItem2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.boldButton, Me.italicButton, Me.underlineButton, Me.highlightSplitButton, Me.fontcolorSplitButton, Me.bulletsSplitButton, Me.numbersSplitButton})
-Me.minitoolbarPanelItem1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.fontstyleComboBox, Me.fontsizeComboBox, Me.increasefontButton, Me.decreasefontButton})
-Me.minitoolbarPanelItem.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.minitoolbarPanelItem1, Me.minitoolbarPanelItem2})
-Me.miniToolBar1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.minitoolbarPanelItem})
+Me.miniToolBarPanelItem2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.boldButton, Me.italicButton, Me.underlineButton, Me.highlightSplitButton, Me.fontColorSplitButton, Me.bulletsSplitButton, Me.numbersSplitButton})
+Me.miniToolBarPanelItem1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.fontStyleComboBox, Me.fontSizeComboBox, Me.increaseFontButton, Me.decreaseFontButton})
+Me.miniToolBarPanelItem.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.miniToolBarPanelItem1, Me.miniToolBarPanelItem2})
+Me.miniToolBar1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.miniToolBarPanelItem})
 
 {% endhighlight %}
 

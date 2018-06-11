@@ -35,7 +35,7 @@ In run time BackStage can be opened by right clicking on the `MenuButton`.
 
 ## Create BackStage Button
 
-BackStage Button can be added through Smart tag of backstageview and it can be customized using property grid of that button.
+BackStage Button can be added through Smart tag of backstage view and it can be customized using property grid of that button.
 
 ![](BackStage_Images/Backstage_img4.jpg)
 
@@ -46,21 +46,21 @@ Through coding
 {% highlight c# %}
 
 //Creating new backstage buttons
-private Syncfusion.Windows.Forms.BackStageButton saveasBackStageButton;
+private Syncfusion.Windows.Forms.BackStageButton saveAsBackStageButton;
 private Syncfusion.Windows.Forms.BackStageButton optionsBackStageButton;
 private Syncfusion.Windows.Forms.BackStageButton exitBackStageButton;
 
 //Creating new instance and customizing
 this.optionsBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
-this.saveasBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
+this.saveAsBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
 this.exitBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
 this.optionsBackStageButton.Text = "Options";
-this.saveasBackStageButton.Text = "Save As";
+this.saveAsBackStageButton.Text = "Save As";
 this.exitBackStageButton.Text = "Exit";
 
 //Adding them to backstage controls
 this.backStage1.Controls.Add(optionsBackStageButton);
-this.backStage1.Controls.Add(saveasBackStageButton);
+this.backStage1.Controls.Add(saveAsBackStageButton);
 this.backStage1.Controls.Add(exitBackStageButton);
 
 
@@ -68,19 +68,19 @@ this.backStage1.Controls.Add(exitBackStageButton);
 
 {% highlight vb %}
 
-Private saveasBackStageButton As Syncfusion.Windows.Forms.BackStageButton
+Private saveAsBackStageButton As Syncfusion.Windows.Forms.BackStageButton
 Private optionsBackStageButton As Syncfusion.Windows.Forms.BackStageButton
 Private exitBackStageButton As Syncfusion.Windows.Forms.BackStageButton)
 
 Me.optionsBackStageButton = New Syncfusion.Windows.Forms.BackStageButton()
-Me.saveasBackStageButton = New Syncfusion.Windows.Forms.BackStageButton()
+Me.saveAsBackStageButton = New Syncfusion.Windows.Forms.BackStageButton()
 Me.exitBackStageButton = New Syncfusion.Windows.Forms.BackStageButton()
 Me.optionsBackStageButton.Text = "Options"
-Me.saveasBackStageButton.Text = "Save As"
+Me.saveAsBackStageButton.Text = "Save As"
 Me.exitBackStageButton.Text = "Exit"
 
 Me.backStage1.Controls.Add(optionsBackStageButton)
-Me.backStage1.Controls.Add(saveasBackStageButton)
+Me.backStage1.Controls.Add(saveAsBackStageButton)
 Me.backStage1.Controls.Add(exitBackStageButton)
 
 {% endhighlight %}
@@ -89,7 +89,7 @@ Me.backStage1.Controls.Add(exitBackStageButton)
 
 ## Create BackStage Tab
 
-BackStage Tab can be added through smart tag of backstageview and it can be customized using the property grid.
+BackStage Tab can be added through smart tag of backstage view and it can be customized using the property grid.
 
 ![](BackStage_Images/Backstage_img5.jpg)
 
@@ -100,53 +100,53 @@ Through coding
 {% highlight c# %}
 
 //Creating new backstage tabs
-private Syncfusion.Windows.Forms.BackStageTab openexportBackStageTab;
-private Syncfusion.Windows.Forms.BackStageTab saveattachmentsBackStageTab;
+private Syncfusion.Windows.Forms.BackStageTab openExportBackStageTab;
+private Syncfusion.Windows.Forms.BackStageTab saveAttachmentsBackStageTab;
 private Syncfusion.Windows.Forms.BackStageTab openBackStageTab;
-private Syncfusion.Windows.Forms.BackStageTab officeaccountsBackStageTab;
+private Syncfusion.Windows.Forms.BackStageTab officeAccountsBackStageTab;
 private Syncfusion.Windows.Forms.BackStageTab printBackStageTab;
 
 //Creating new instance and customizing
-this.openexportBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
-this.saveattachmentsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+this.openExportBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+this.saveAttachmentsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
 this.openBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
-this.officeaccountsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+this.officeAccountsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
 this.printBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
 
-this.openexportBackStageTab.Text = "Open/Export";
-this.saveattachmentsBackStageTab.Text = "Save Attachments";
+this.openExportBackStageTab.Text = "Open/Export";
+this.saveAttachmentsBackStageTab.Text = "Save Attachments";
 this.openBackStageTab.Text = "Open";
-this.officeaccountsBackStageTab.Text = "Office Accounts";
+this.officeAccountsBackStageTab.Text = "Office Accounts";
 this.printBackStageTab.Text = "Print";
 
 
 //Adding them to backstage controls
-this.backStage1.Controls.Add(infoBackStageTab);
-this.backStage1.Controls.Add(saveasBackStageTab);
+this.backStage1.Controls.Add(openExportBackStageTab);
+this.backStage1.Controls.Add(saveAttachmentsBackStageTab);
 this.backStage1.Controls.Add(openBackStageTab);
-this.backStage1.Controls.Add(officeaccountsBackStageTab);
+this.backStage1.Controls.Add(officeAccountsBackStageTab);
 this.backStage1.Controls.Add(printBackStageTab);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private openexportBackStageTab As Syncfusion.Windows.Forms.BackStageTab
-Private saveattachmentsBackStageTab As Syncfusion.Windows.Forms.BackStageTab
+Private openExportBackStageTab As Syncfusion.Windows.Forms.BackStageTab
+Private saveAttachmentsBackStageTab As Syncfusion.Windows.Forms.BackStageTab
 Private openBackStageTab As Syncfusion.Windows.Forms.BackStageTab
-Private officeaccountsBackStageTab As Syncfusion.Windows.Forms.BackStageTab
+Private officeAccountsBackStageTab As Syncfusion.Windows.Forms.BackStageTab
 Private printBackStageTab As Syncfusion.Windows.Forms.BackStageTab
 
-Me.openexportBackStageTab.Text = "Open/Export"
-Me.saveattachmentsBackStageTab.Text = "Save Attachments"
+Me.openExportBackStageTab.Text = "Open/Export"
+Me.saveAttachmentsBackStageTab.Text = "Save Attachments"
 Me.openBackStageTab.Text = "Open"
-Me.officeaccountsBackStageTab.Text = "Office Accounts"
+Me.officeAccountsBackStageTab.Text = "Office Accounts"
 Me.printBackStageTab.Text = "Print"
 
-Me.backStage1.Controls.Add(infoBackStageTab)
-Me.backStage1.Controls.Add(saveasBackStageTab)
+Me.backStage1.Controls.Add(openExportBackStageTab)
+Me.backStage1.Controls.Add(saveAttachmentsBackStageTab)
 Me.backStage1.Controls.Add(openBackStageTab)
-Me.backStage1.Controls.Add(officeaccountsBackStageTab)
+Me.backStage1.Controls.Add(officeAccountsBackStageTab)
 Me.backStage1.Controls.Add(printBackStageTab)
 
 {% endhighlight %}
@@ -198,17 +198,17 @@ To set custom image to the Ribbon header, set an image to the property `CustomRi
 {% highlight c# %}
 
 //Image for RibbonHeader
-Image headerimg = Image.FromFile(@"Pictures\HeaderImage.png");
+Image headerImg = Image.FromFile(@"Pictures\HeaderImage.png");
 
-this.ribbonControlAdv1.CustomRibbonHeaderImage = headerimg;
+this.ribbonControlAdv1.CustomRibbonHeaderImage = headerImg;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim headerimg As Image = Image.FromFile("Pictures\HeaderImage.png")
+Dim headerImg As Image = Image.FromFile("Pictures\HeaderImage.png")
 
-Me.ribbonControlAdv1.CustomRibbonHeaderImage = headerimg
+Me.ribbonControlAdv1.CustomRibbonHeaderImage = headerImg
 
 {% endhighlight %}
 

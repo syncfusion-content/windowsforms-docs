@@ -40,7 +40,7 @@ Me.sendTabItem.Checked = True
 
 ## Tab Appearance
 
-Appearance of a tab can be customized using color table in office 2016 theme.
+Appearance of a tab can be customized using color table in Office 2016 theme.
 Follow the steps below to customize the tab using color table.
 
 

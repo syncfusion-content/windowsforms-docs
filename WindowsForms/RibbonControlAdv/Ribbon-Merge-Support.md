@@ -64,7 +64,7 @@ frm.Show()
 
 ## Merge ToolStrip with existing Tab
 
-While merging the RibbonPanel in the ChildForm to the Parentform, if the RibbonPanelMergeContainer has the same text (i.e. Text for ToolstripTabItem), then the ToolstripEx inside the ChildForm’s RibbonPanel will be merged with the Parent form ToolstripTabItem.
+While merging the RibbonPanel in the ChildForm to the Parent form, if the RibbonPanelMergeContainer has the same text (i.e. Text for ToolstripTabItem), then the ToolstripEx inside the ChildForm’s RibbonPanel will be merged with the Parent form ToolstripTabItem.
 
 {% tabs %}
 
@@ -119,7 +119,7 @@ Me.toolStripEx1.Text = "Cells"
 
 ## Tab Positioning
 
-While merging the RibbonPanel in the ChildForm with the RibbonPanel in the parent form, position can be set for the newly added ToolstripTabitem using the `RibbonMergeManager`.
+While merging the RibbonPanel in the ChildForm with the RibbonPanel in the parent form, position can be set for the newly added `ToolstripTabItem` using the `RibbonMergeManager`.
 
 Now the Edit and Field ToolStripTabItem will be placed as given in the above code example.
 

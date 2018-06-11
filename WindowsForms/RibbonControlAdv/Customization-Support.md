@@ -25,7 +25,7 @@ RibbonControlAdv Tab and TabItems can customized in run time using Ribbon Custom
 
 ### Create New Tab
 
-Add New ToolStripTabitem
+Add New `ToolStripTabitem`
 
 ![](Customization_Support_iImages/Customization-Support_img2.jpg)
 
@@ -77,7 +77,7 @@ Me.ribbonControlAdv1.EnableRibbonCustomization = False
 ## Customize System Button
 
 Customizations can be done to Close, minimize, restore and maximize button through coding.
-The customizations include changing of hover color, image and tooltiptext.
+The customizations include changing of hover color, image and `ToolTipText`.
 
 Refer the code below for customizing
 
@@ -93,7 +93,7 @@ button1.Image = Image.FromFile("..//..//Resources/Minus.png");
 button1.ToolTipText = "Minimize form";
 // Sets the Hover backcolor for the custom button
 button1.HoverBackColor = Color.Green;
-// Assigns the button to the Ribboncontroladv.
+// Assigns the button to the RibbonControlAdv.
 this.ribbonControlAdv1.MinimizeButton = button1;
 
 //Instance to create custom button
@@ -104,7 +104,7 @@ button2.Image = Image.FromFile("..//..//Resources/Maximize1.png");
 button2.ToolTipText = "Max form";
 // Sets the Hover backcolor for the custom button
 button2.HoverBackColor = Color.Blue;
-// Assigns the button to the Ribboncontroladv.
+// Assigns the button to the RibbonControlAdv.
 this.ribbonControlAdv1.MaximizeButton = button2;
 
 //Instance to create custom button
@@ -115,7 +115,7 @@ button3.Image = Image.FromFile("..//..//Resources/Restore-02.png");
 button3.ToolTipText = "Restore form";
 // Sets the Hover backcolor for the custom button
 button3.HoverBackColor = Color.Blue;
-// Assigns the button to the Ribboncontroladv.
+// Assigns the button to the RibbonControlAdv.
 this.ribbonControlAdv1.RestoreButton = button3;
 
 //Instance to create custom button
@@ -126,7 +126,7 @@ button4.Image = Image.FromFile("..//..//Resources/CrossClose.png");
 button4.ToolTipText = "Close form";
 // Sets the Hover backcolor for the custom button
 button4.HoverBackColor = Color.Red;
-// Assigns the button to the Ribboncontroladv.
+// Assigns the button to the RibbonControlAdv.
 this.ribbonControlAdv1.CloseButton = button4;
 
 {% endhighlight %}

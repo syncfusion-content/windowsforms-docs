@@ -177,13 +177,13 @@ Follow the below steps to provide separate QAT image for the ToolstripItems.
 {% highlight c# %}
 
 // Instance for the QATImageProvider
-QATImageProvider qatimageProvider = new QATImageProvider(this.ribbonControlAdv1);
+QATImageProvider qatImageProvider = new QATImageProvider(this.ribbonControlAdv1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim qatimageProvider As QATImageProvider = New QATImageProvider(Me.ribbonControlAdv1)
+Dim qatImageProvider As QATImageProvider = New QATImageProvider(Me.ribbonControlAdv1)
 
 {% endhighlight %}
 
@@ -199,7 +199,7 @@ Dim qatimageProvider As QATImageProvider = New QATImageProvider(Me.ribbonControl
 Image img = Image.FromFile("..//..//Resources/new.png");
 
 // Sets the QAT image to the ToolstripItem
-qatimageProvider.SetQATImage(this.newToolStripButton, img); 
+qatImageProvider.SetQATImage(this.newToolStripButton, img); 
 
 {% endhighlight %}
 
@@ -207,7 +207,7 @@ qatimageProvider.SetQATImage(this.newToolStripButton, img);
 
 Dim img As Image = Image.FromFile("..//..//Resources/new.png")
 
-qatimageProvider.SetQATImage(Me.newToolStripButton, img)
+qatImageProvider.SetQATImage(Me.newToolStripButton, img)
 
 {% endhighlight %}
 

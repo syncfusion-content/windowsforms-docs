@@ -24,7 +24,7 @@ documentation: ug
 
 •	RibbonForm - An extension that replaces the default form to enable different Visual styles to ribbon. 
 •	QuickAccessToolbar - Provides placing of frequently used items.
-•	ToolStripTabItem - Support to add different Tabs to show the features of apllication like in Microsoft Outlook.
+•	ToolStripTabItem - Support to add different Tabs to show the features of application like in Microsoft Outlook.
 •	RibbonPanel – Allows to structure the layouts.
 •	DropDownButton – Collapses the Ribbon, which provides more space and tab names will appear.
 •	KeyTips – Interactive support through keyboard navigation.

@@ -71,7 +71,7 @@ toolTipInfo1.Body.Text = "Create a new mail";
 toolTipInfo1.Footer.Text = "Ctrl + N";
 
 //Associating SuperToolTip for ToolStripButton
-this.superToolTip1.SetToolTip(this.newmailButton, toolTipInfo1);
+this.superToolTip1.SetToolTip(this.newMailButton, toolTipInfo1);
 
 {% endhighlight %}
 
@@ -87,7 +87,7 @@ toolTipInfo1.Header.Text = "New Mail"
 toolTipInfo1.Body.Text = "Create a new mail"
 toolTipInfo1.Footer.Text = "Ctrl + N"
 
-Me.superToolTip1.SetToolTip(Me.newmailButton, toolTipInfo1)
+Me.superToolTip1.SetToolTip(Me.newMailButton, toolTipInfo1)
 
 {% endhighlight %}
 

@@ -76,14 +76,14 @@ Me.ribbonControlAdv1.ShowMinimizeButton = True
 ### State change through ContextMenu
 
 Ribbon state can also be changed through an option in context menu.
-Open the context menu with right click on toolstripitem or toolstriptabitem and select the option `Collapse the Ribbon` which minimizes the ribbon.
+Open the context menu with right click on `ToolStripItem` or `ToolStripTabItem` and select the option `Collapse the Ribbon` which minimizes the ribbon.
 
 
 ## Options Available in Ribbon ContextMenu
 
-ContextMenu can be opened with right click on the toolstripitem or toolstriptabitem.
+ContextMenu can be opened with right click on the `ToolStripItem` or `ToolStripTabItem`.
 
-1.	**Add to Quick Access Toolbar** (This option will be available only with right click on toolstripitem) – Adds that respective item to the Quick Access Toolbar.
+1.	**Add to Quick Access Toolbar** (This option will be available only with right click on `ToolStripItem`) – Adds that respective item to the Quick Access Toolbar.
 
 2.	**Customize Quick Access ToolBar** – Clicking the option will open the Customize Quick Access Toolbar Editor dialog which lets you do the following.
 
@@ -113,13 +113,13 @@ Clicking the option will open the Customize Ribbon Editor dialog which lets you 
 
 ## Ribbon Resize behavior
 
-By default, the ribbon control dynamically resizes as width of the window decreases, when the windows border touches the last placed ToolStripEx, the total ToolStripEx will be converted into a dropdownbutton and the items can be accessed by clicking on that dropdown arrow.
+By default, the ribbon control dynamically resizes as width of the window decreases, when the windows border touches the last placed ToolStripEx, the total ToolStripEx will be converted into a dropdown button and the items can be accessed by clicking on that dropdown arrow.
 Same behavior will be continued to every ToolStripEx while minimized continuously. 
 Again, the ToolStripEx will be visible if the spacing between window border and ToolStripEx has enough space to allocate all the items in that ToolStripEx.
 
 ![](Working_with_Ribbon_Images/Working-with-Ribbon_img5.jpg)
 
-This behavior can be changed with the ribbon property `CollapseBehavior` change the property to 2010, while minimizing, the items in the toolstrip will be converted into small buttons and will be converted to extra small buttons and then finally the toolstrip will be converted to dropdownbutton.
+This behavior can be changed with the ribbon property `CollapseBehavior` change the property to 2010, while minimizing, the items in the toolstrip will be converted into small buttons and will be converted to extra small buttons and then finally the toolstrip will be converted to dropdown button.
 
 {% tabs %}
 

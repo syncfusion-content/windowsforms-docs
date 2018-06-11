@@ -201,9 +201,9 @@ private Syncfusion.Windows.Forms.Tools.ToolStripEx deleteToolStripEx;
 private Syncfusion.Windows.Forms.Tools.ToolStripEx respondToolStripEx;
 private Syncfusion.Windows.Forms.Tools.ToolStripEx moveToolStripEx;
 private Syncfusion.Windows.Forms.Tools.ToolStripEx tagsToolStripEx;
-private Syncfusion.Windows.Forms.Tools.ToolStripEx colorschemeToolStripEx;
+private Syncfusion.Windows.Forms.Tools.ToolStripEx colorSchemeToolStripEx;
 private Syncfusion.Windows.Forms.Tools.ToolStripEx quickstepsToolStripEx;
-private Syncfusion.Windows.Forms.Tools.ToolStripEx currentviewToolStripEx;
+private Syncfusion.Windows.Forms.Tools.ToolStripEx currentViewToolStripEx;
 private Syncfusion.Windows.Forms.Tools.ToolStripEx messagesToolStripEx;
 private Syncfusion.Windows.Forms.Tools.ToolStripEx layoutToolStripEx;
 private Syncfusion.Windows.Forms.Tools.ToolStripEx peopleToolStripEx;
@@ -214,9 +214,9 @@ this.deleteToolStripEx = new ToolStripEx();
 this.respondToolStripEx = new ToolStripEx();
 this.moveToolStripEx = new ToolStripEx();
 this.tagsToolStripEx = new ToolStripEx();
-this.colorschemeToolStripEx = new ToolStripEx();
+this.colorSchemeToolStripEx = new ToolStripEx();
 this.quickstepsToolStripEx = new ToolStripEx();
-this.currentviewToolStripEx = new ToolStripEx();
+this.currentViewToolStripEx = new ToolStripEx();
 this.messagesToolStripEx = new ToolStripEx();
 this.layoutToolStripEx = new ToolStripEx();
 this.peopleToolStripEx = new ToolStripEx();
@@ -227,17 +227,17 @@ this.deleteToolStripEx.Text = "Delete";
 this.respondToolStripEx.Text = "Respond";
 this.moveToolStripEx.Text = "Move";
 this.tagsToolStripEx.Text = "Tags";
-this.colorschemeToolStripEx.Text = "Color Scheme";
+this.colorSchemeToolStripEx.Text = "Color Scheme";
 this.quickstepsToolStripEx.Text = "Quick Steps";
-this.currentviewToolStripEx.Text = "Current View";
+this.currentViewToolStripEx.Text = "Current View";
 this.messagesToolStripEx.Text = "Messages";
 this.layoutToolStripEx.Text = "Layout";
 this.peopleToolStripEx.Text = "People";
 this.windowToolStripEx.Text = "Window";
 
-this.homeTabItem.Panel.Controls.AddRange(new Control[] { newToolStripEx, deleteToolStripEx, respondToolStripEx, moveToolStripEx, tagsToolStripEx, colorschemeToolStripEx, quickstepsToolStripEx});
+this.homeTabItem.Panel.Controls.AddRange(new Control[] { newToolStripEx, deleteToolStripEx, respondToolStripEx, moveToolStripEx, tagsToolStripEx, colorSchemeToolStripEx, quickstepsToolStripEx});
 
-this.viewTabItem.Panel.Controls.AddRange(new Control[] { currentviewToolStripEx, messagesToolStripEx, layoutToolStripEx, peopleToolStripEx, windowToolStripEx });
+this.viewTabItem.Panel.Controls.AddRange(new Control[] { currentViewToolStripEx, messagesToolStripEx, layoutToolStripEx, peopleToolStripEx, windowToolStripEx });
 
 {% endhighlight %}
 
@@ -248,9 +248,9 @@ this.viewTabItem.Panel.Controls.AddRange(new Control[] { currentviewToolStripEx,
     Private respondToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Private moveToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Private tagsToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Private colorschemeToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Private colorSchemeToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Private quickstepsToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Private currentviewToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Private currentViewToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Private messagesToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Private layoutToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Private peopleToolStripEx As Syncfusion.Windows.Forms.Tools.ToolStripEx
@@ -261,9 +261,9 @@ this.viewTabItem.Panel.Controls.AddRange(new Control[] { currentviewToolStripEx,
     Me.respondToolStripEx = New ToolStripEx()
     Me.moveToolStripEx = New ToolStripEx()
     Me.tagsToolStripEx = New ToolStripEx()
-    Me.colorschemeToolStripEx = New ToolStripEx()
+    Me.colorSchemeToolStripEx = New ToolStripEx()
     Me.quickstepsToolStripEx = New ToolStripEx()
-    Me.currentviewToolStripEx = New ToolStripEx()
+    Me.currentViewToolStripEx = New ToolStripEx()
     Me.messagesToolStripEx = New ToolStripEx()
     Me.layoutToolStripEx = New ToolStripEx()
     Me.peopleToolStripEx = New ToolStripEx()
@@ -274,17 +274,17 @@ this.viewTabItem.Panel.Controls.AddRange(new Control[] { currentviewToolStripEx,
     Me.respondToolStripEx.Text = "Respond"
     Me.moveToolStripEx.Text = "Move"
     Me.tagsToolStripEx.Text = "Tags"
-    Me.colorschemeToolStripEx.Text = "Color Scheme"
+    Me.colorSchemeToolStripEx.Text = "Color Scheme"
     Me.quickstepsToolStripEx.Text = "Quick Steps"
-    Me.currentviewToolStripEx.Text = "Current View"
+    Me.currentViewToolStripEx.Text = "Current View"
     Me.messagesToolStripEx.Text = "Messages"
     Me.layoutToolStripEx.Text = "Layout"
     Me.peopleToolStripEx.Text = "People"
     Me.windowToolStripEx.Text = "Window"
 
-    Me.homeTabItem.Panel.Controls.AddRange(New Control() {newToolStripEx, deleteToolStripEx, respondToolStripEx, moveToolStripEx, tagsToolStripEx, colorschemeToolStripEx, quickstepsToolStripEx})
+    Me.homeTabItem.Panel.Controls.AddRange(New Control() {newToolStripEx, deleteToolStripEx, respondToolStripEx, moveToolStripEx, tagsToolStripEx, colorSchemeToolStripEx, quickstepsToolStripEx})
 
-    Me.viewTabItem.Panel.Controls.AddRange(New Control() {currentviewToolStripEx, messagesToolStripEx, layoutToolStripEx, peopleToolStripEx, windowToolStripEx})
+    Me.viewTabItem.Panel.Controls.AddRange(New Control() {currentViewToolStripEx, messagesToolStripEx, layoutToolStripEx, peopleToolStripEx, windowToolStripEx})
 
 
 {% endhighlight %}
@@ -313,70 +313,70 @@ Through code
 
 {% highlight c# %}
 
-private System.Windows.Forms.ToolStripDropDownButton newitemsDropDownButton;
+private System.Windows.Forms.ToolStripDropDownButton newItemsDropDownButton;
 private System.Windows.Forms.ToolStripDropDownButton CleanUpDropDownButton;
 private System.Windows.Forms.ToolStripDropDownButton JunkDropDownButton;
-private System.Windows.Forms.ToolStripDropDownButton followupDropDownButton;
+private System.Windows.Forms.ToolStripDropDownButton followUpDropDownButton;
 private System.Windows.Forms.ToolStripDropDownButton categorizeDropDownButton;
 
-this.newitemsDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
+this.newItemsDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
 this.CleanUpDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
 this.JunkDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
-this.followupDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
+this.followUpDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
 this.categorizeDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
 
-this.newitemsDropDownButton.Text = "New Items";
+this.newItemsDropDownButton.Text = "New Items";
 this.CleanUpDropDownButton.Text = "Clean Up";
 this.JunkDropDownButton.Text = "Junk";
-this.followupDropDownButton.Text = "Follow Up";
+this.followUpDropDownButton.Text = "Follow Up";
 this.categorizeDropDownButton.Text = "Categorize";
 
-this.newitemsDropDownButton.Image = Image.FromFile(@"Pictures\newitems.png");
+this.newItemsDropDownButton.Image = Image.FromFile(@"Pictures\newitems.png");
 this.CleanUpDropDownButton.Image = Image.FromFile(@"Pictures\cleanup.png");
 this.JunkDropDownButton.Image = Image.FromFile(@"Pictures\junk.png");
-this.followupDropDownButton.Image = Image.FromFile(@"Pictures\followup.png");
+this.followUpDropDownButton.Image = Image.FromFile(@"Pictures\followup.png");
 this.categorizeDropDownButton.Image = Image.FromFile(@"Pictures\categorize.png");
 
-this.newToolStripEx.Items.Add(newitemsDropDownButton);
+this.newToolStripEx.Items.Add(newItemsDropDownButton);
 
 this.deleteToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CleanUpDropDownButton, this.JunkDropDownButton});
             
 this.tagsToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.followupDropDownButton, this.categorizeDropDownButton
+            this.followUpDropDownButton, this.categorizeDropDownButton
 
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-    Private newitemsDropDownButton As System.Windows.Forms.ToolStripDropDownButton
+    Private newItemsDropDownButton As System.Windows.Forms.ToolStripDropDownButton
     Private CleanUpDropDownButton As System.Windows.Forms.ToolStripDropDownButton
     Private JunkDropDownButton As System.Windows.Forms.ToolStripDropDownButton
-    Private followupDropDownButton As System.Windows.Forms.ToolStripDropDownButton
+    Private followUpDropDownButton As System.Windows.Forms.ToolStripDropDownButton
     Private categorizeDropDownButton As System.Windows.Forms.ToolStripDropDownButton
 
-    Me.newitemsDropDownButton = New System.Windows.Forms.ToolStripDropDownButton()
+    Me.newItemsDropDownButton = New System.Windows.Forms.ToolStripDropDownButton()
     Me.CleanUpDropDownButton = New System.Windows.Forms.ToolStripDropDownButton()
     Me.JunkDropDownButton = New System.Windows.Forms.ToolStripDropDownButton()
-    Me.followupDropDownButton = New System.Windows.Forms.ToolStripDropDownButton()
+    Me.followUpDropDownButton = New System.Windows.Forms.ToolStripDropDownButton()
     Me.categorizeDropDownButton = New System.Windows.Forms.ToolStripDropDownButton()
 
-    Me.newitemsDropDownButton.Text = "New Items"
+    Me.newItemsDropDownButton.Text = "New Items"
     Me.CleanUpDropDownButton.Text = "Clean Up"
     Me.JunkDropDownButton.Text = "Junk"
-    Me.followupDropDownButton.Text = "Follow Up"
+    Me.followUpDropDownButton.Text = "Follow Up"
     Me.categorizeDropDownButton.Text = "Categorize"
 
-    Me.newitemsDropDownButton.Image = Image.FromFile("Pictures\newitems.png")
+    Me.newItemsDropDownButton.Image = Image.FromFile("Pictures\newitems.png")
     Me.CleanUpDropDownButton.Image = Image.FromFile("Pictures\cleanup.png")
     Me.JunkDropDownButton.Image = Image.FromFile("Pictures\junk.png")
-    Me.followupDropDownButton.Image = Image.FromFile("Pictures\followup.png")
+    Me.followUpDropDownButton.Image = Image.FromFile("Pictures\followup.png")
     Me.categorizeDropDownButton.Image = Image.FromFile("Pictures\categorize.png")
 
-    Me.newToolStripEx.Items.Add(newitemsDropDownButton)
+    Me.newToolStripEx.Items.Add(newItemsDropDownButton)
     Me.deleteToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CleanUpDropDownButton, Me.JunkDropDownButton})
-    Me.tagsToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.followupDropDownButton, Me.categorizeDropDownButton})
+    Me.tagsToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.followUpDropDownButton, Me.categorizeDropDownButton})
 
 {% endhighlight %}
 
@@ -417,7 +417,7 @@ this.appointmentToolStripMenuItem.Text = "Appointment";
 this.meetingToolStripMenuItem.Text = "Meeting";
 this.contactToolStripMenuItem.Text = "Contact";
 
-this.newitemsDropDownButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.newItemsDropDownButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
 this.emailMessageToolStripMenuItem,
 this.appointmentToolStripMenuItem,
 this.meetingToolStripMenuItem,
@@ -610,20 +610,20 @@ For Adding `ToolStripButton` please refer `Adding ToolStripDropDownButton` and s
 
 {% highlight c# %}
 
-private System.Windows.Forms.ToolStripButton newmailButton;
+private System.Windows.Forms.ToolStripButton newMailButton;
 private System.Windows.Forms.ToolStripButton IgnoreButton;
 private System.Windows.Forms.ToolStripButton replyButton;
-private System.Windows.Forms.ToolStripButton replyallButton;
+private System.Windows.Forms.ToolStripButton replyAllButton;
 private System.Windows.Forms.ToolStripButton forwardButton;
 
-this.newmailButton = new System.Windows.Forms.ToolStripButton();
+this.newMailButton = new System.Windows.Forms.ToolStripButton();
 this.IgnoreButton = new System.Windows.Forms.ToolStripButton();
 this.replyButton = new System.Windows.Forms.ToolStripButton();
-this.replyallButton = new System.Windows.Forms.ToolStripButton();
+this.replyAllButton = new System.Windows.Forms.ToolStripButton();
 this.forwardButton = new System.Windows.Forms.ToolStripButton();
 
-this.newmailButton.Text = "New \r\nMail";
-this.newmailButton.Image = Image.FromFile(@"Pictures\newmail.png");
+this.newMailButton.Text = "New \r\nMail";
+this.newMailButton.Image = Image.FromFile(@"Pictures\newmail.png");
 
 this.IgnoreButton.Text = "Ignore";
 this.IgnoreButton.Image = Image.FromFile(@"Pictures\ignore.png");
@@ -632,51 +632,51 @@ this.replyButton.Text = "Reply";
 this.replyButton.Image = Image.FromFile(@"Pictures\reply.png");
 
 
-this.replyallButton.Text = "Reply All";
-this.replyallButton.Image = Image.FromFile(@"Pictures\replyall.png");
+this.replyAllButton.Text = "Reply All";
+this.replyAllButton.Image = Image.FromFile(@"Pictures\replyall.png");
 
 this.forwardButton.Text = "Forward";
 this.forwardButton.Image = Image.FromFile(@"Pictures\forward.png");
 
 this.newToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.newmailButton });
+this.newMailButton });
 this.deleteToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 this.IgnoreButton });
 this.respondToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 this.replyButton,
-this.replyallButton,
+this.replyAllButton,
 this.forwardButton});
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-    Private newmailButton As System.Windows.Forms.ToolStripButton
+    Private newMailButton As System.Windows.Forms.ToolStripButton
     Private IgnoreButton As System.Windows.Forms.ToolStripButton
     Private replyButton As System.Windows.Forms.ToolStripButton
-    Private replyallButton As System.Windows.Forms.ToolStripButton
+    Private replyAllButton As System.Windows.Forms.ToolStripButton
     Private forwardButton As System.Windows.Forms.ToolStripButton
 
-    Me.newmailButton = New System.Windows.Forms.ToolStripButton()
+    Me.newMailButton = New System.Windows.Forms.ToolStripButton()
     Me.IgnoreButton = New System.Windows.Forms.ToolStripButton()
     Me.replyButton = New System.Windows.Forms.ToolStripButton()
-    Me.replyallButton = New System.Windows.Forms.ToolStripButton()
+    Me.replyAllButton = New System.Windows.Forms.ToolStripButton()
     Me.forwardButton = New System.Windows.Forms.ToolStripButton()
 
-    Me.newmailButton.Text = "New " & vbCrLf & "Mail"
-    Me.newmailButton.Image = Image.FromFile("Pictures\newmail.png")
+    Me.newMailButton.Text = "New " & vbCrLf & "Mail"
+    Me.newMailButton.Image = Image.FromFile("Pictures\newmail.png")
     Me.IgnoreButton.Text = "Ignore"
     Me.IgnoreButton.Image = Image.FromFile("Pictures\ignore.png")
     Me.replyButton.Text = "Reply"
     Me.replyButton.Image = Image.FromFile("Pictures\reply.png")
-    Me.replyallButton.Text = "Reply All"
-    Me.replyallButton.Image = Image.FromFile("Pictures\replyall.png")
+    Me.replyAllButton.Text = "Reply All"
+    Me.replyAllButton.Image = Image.FromFile("Pictures\replyall.png")
     Me.forwardButton.Text = "Forward"
     Me.forwardButton.Image = Image.FromFile("Pictures\forward.png")
 
-    Me.newToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.newmailButton})
+    Me.newToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.newMailButton})
     Me.deleteToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IgnoreButton})
-    Me.respondToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.replyButton, Me.replyallButton, Me.forwardButton})
+    Me.respondToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.replyButton, Me.replyAllButton, Me.forwardButton})
     
 {% endhighlight %}
 
@@ -686,20 +686,20 @@ this.forwardButton});
 
 #### Holding the Selection of ToolStripButton
 
-For holding the selection of ToolstripButton after lost focus, use the property `CheckOnClick`, if true, the ToolStripButton will stay selected even after click and will go unselected after next click on that buton, it simply acts as a toggling functionality to that button.
+For holding the selection of ToolstripButton after lost focus, use the property `CheckOnClick`, if true, the ToolStripButton will stay selected even after click and will go unselected after next click on that button, it simply acts as a toggling functionality to that button.
 The default value is false.
 
 {% tabs %}
 
 {% highlight c# %}
 
-this.newmailButton.CheckOnClick = true;
+this.newMailButton.CheckOnClick = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.newmailButton.CheckOnClick = True
+Me.newMailButton.CheckOnClick = True
 
 {% endhighlight %}
 
@@ -798,17 +798,17 @@ For Adding `ToolStripRadioButton` please refer `Adding ToolStripDropDownButton` 
 
 Syncfusion.Windows.Forms.Tools.ToolStripRadioButton readRadioButton;
 Syncfusion.Windows.Forms.Tools.ToolStripRadioButton unreadRadioButton;
-Syncfusion.Windows.Forms.Tools.ToolStripPanelItem readunreadPanel;
+Syncfusion.Windows.Forms.Tools.ToolStripPanelItem readUnreadPanel;
 
 this.readRadioButton = new ToolStripRadioButton();
 this.unreadRadioButton = new ToolStripRadioButton();
-this.readunreadPanel = new ToolStripPanelItem();
+this.readUnreadPanel = new ToolStripPanelItem();
 
 this.readRadioButton.Text = "Read";
 this.unreadRadioButton.Text = "Unread";
 
-this.readunreadPanel.Items.AddRange(new ToolStripItem[] { readRadioButton, unreadRadioButton });
-this.tagsToolStripEx.Items.AddRange(new ToolStripItem[] { readunreadPanel });
+this.readUnreadPanel.Items.AddRange(new ToolStripItem[] { readRadioButton, unreadRadioButton });
+this.tagsToolStripEx.Items.AddRange(new ToolStripItem[] { readUnreadPanel });
 
 {% endhighlight %}
 
@@ -816,17 +816,17 @@ this.tagsToolStripEx.Items.AddRange(new ToolStripItem[] { readunreadPanel });
 
     Dim readRadioButton As Syncfusion.Windows.Forms.Tools.ToolStripRadioButton
     Dim unreadRadioButton As Syncfusion.Windows.Forms.Tools.ToolStripRadioButton
-    Dim readunreadPanel As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
+    Dim readUnreadPanel As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
 
     Me.readRadioButton = New ToolStripRadioButton()
     Me.unreadRadioButton = New ToolStripRadioButton()
-    Me.readunreadPanel = New ToolStripPanelItem()
+    Me.readUnreadPanel = New ToolStripPanelItem()
 
     Me.readRadioButton.Text = "Read"
     Me.unreadRadioButton.Text = "Unread"
 
-    Me.readunreadPanel.Items.AddRange(New ToolStripItem() {readRadioButton, unreadRadioButton})
-    Me.tagsToolStripEx.Items.AddRange(New ToolStripItem() {readunreadPanel})
+    Me.readUnreadPanel.Items.AddRange(New ToolStripItem() {readRadioButton, unreadRadioButton})
+    Me.tagsToolStripEx.Items.AddRange(New ToolStripItem() {readUnreadPanel})
 
 {% endhighlight %}
 
@@ -857,7 +857,7 @@ this.visualstyleComboBox.Items.AddRange(new object[] {
 "Office 2010 Style",
 "Office 2007 Style"});
 
-this.colorschemeToolStripEx.Items.AddRange(new ToolStripItem[] { visualstyleComboBox, schemeComboBox });
+this.colorSchemeToolStripEx.Items.AddRange(new ToolStripItem[] { visualstyleComboBox, schemeComboBox });
 
 {% endhighlight %}
 
@@ -871,7 +871,7 @@ this.colorschemeToolStripEx.Items.AddRange(new ToolStripItem[] { visualstyleComb
 
     Me.visualstyleComboBox.Items.AddRange(New Object() {"Office 2016 Style", "Office 2013 Style", "Touch Style", "Office 2010 Style", "Office 2007 Style"})
 
-    Me.colorschemeToolStripEx.Items.AddRange(New ToolStripItem() {visualstyleComboBox, schemeComboBox})
+    Me.colorSchemeToolStripEx.Items.AddRange(New ToolStripItem() {visualstyleComboBox, schemeComboBox})
 
 {% endhighlight %}
 
@@ -916,35 +916,35 @@ this.quickGallery = new Syncfusion.Windows.Forms.Tools.ToolStripGallery();
 
 //gallery items
 Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem movetoGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem tomanagerGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem teamemailGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem replyandeleteGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
+Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toManagerGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
+Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem teamEmailGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
+Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem replyAndDeleteGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
 Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem doneGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
-Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem createnewGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
+Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem createNewGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
 
 movetoGalleryItem.Image = Image.FromFile(@"Pictures\moveto.png");
 movetoGalleryItem.Text = " Move to : ?";
-tomanagerGalleryItem.Image = Image.FromFile(@"Pictures\tomanager.png");
-tomanagerGalleryItem.Text = "To Manager";
-teamemailGalleryItem.Image = Image.FromFile(@"Pictures\teamemail.png");
-teamemailGalleryItem.Text = "Team Email";
-replyandeleteGalleryItem.Image = Image.FromFile(@"Pictures\replyanddelete.png");
-replyandeleteGalleryItem.Text = "Reply and Delete";
+toManagerGalleryItem.Image = Image.FromFile(@"Pictures\tomanager.png");
+toManagerGalleryItem.Text = "To Manager";
+teamEmailGalleryItem.Image = Image.FromFile(@"Pictures\teamemail.png");
+teamEmailGalleryItem.Text = "Team Email";
+replyAndDeleteGalleryItem.Image = Image.FromFile(@"Pictures\replyanddelete.png");
+replyAndDeleteGalleryItem.Text = "Reply and Delete";
 doneGalleryItem.Image = Image.FromFile(@"Pictures\done.png");
 doneGalleryItem.Text = "Done";
-createnewGalleryItem.Image = Image.FromFile(@"Pictures\createnew.png");
-createnewGalleryItem.Text = " Create New";
+createNewGalleryItem.Image = Image.FromFile(@"Pictures\createnew.png");
+createNewGalleryItem.Text = " Create New";
 
 
 //Adding items to the gallery
 this.quickGallery.Items.Add(movetoGalleryItem);
-this.quickGallery.Items.Add(tomanagerGalleryItem);
-this.quickGallery.Items.Add(teamemailGalleryItem);
-this.quickGallery.Items.Add(replyandeleteGalleryItem);
+this.quickGallery.Items.Add(toManagerGalleryItem);
+this.quickGallery.Items.Add(teamEmailGalleryItem);
+this.quickGallery.Items.Add(replyAndDeleteGalleryItem);
 this.quickGallery.Items.Add(doneGalleryItem);
-this.quickGallery.Items.Add(createnewGalleryItem);
+this.quickGallery.Items.Add(createNewGalleryItem);
 
-//Adding Gallery to toolstripex
+//Adding Gallery to ToolStripEx
 this.quickstepsToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 this.quickGallery});
 
@@ -957,31 +957,31 @@ this.quickGallery});
     Me.quickGallery = New Syncfusion.Windows.Forms.Tools.ToolStripGallery()
 
     Dim movetoGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
-    Dim tomanagerGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
-    Dim teamemailGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
-    Dim replyandeleteGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
+    Dim toManagerGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
+    Dim teamEmailGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
+    Dim replyAndDeleteGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
     Dim doneGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
-    Dim createnewGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
+    Dim createNewGalleryItem As Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem = New Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem()
 
     movetoGalleryItem.Image = Image.FromFile("Pictures\moveto.png")
     movetoGalleryItem.Text = " Move to : ?"
-    tomanagerGalleryItem.Image = Image.FromFile("Pictures\tomanager.png")
-    tomanagerGalleryItem.Text = "To Manager"
-    teamemailGalleryItem.Image = Image.FromFile("Pictures\teamemail.png")
-    teamemailGalleryItem.Text = "Team Email"
-    replyandeleteGalleryItem.Image = Image.FromFile("Pictures\replyanddelete.png")
-    replyandeleteGalleryItem.Text = "Reply and Delete"
+    toManagerGalleryItem.Image = Image.FromFile("Pictures\tomanager.png")
+    toManagerGalleryItem.Text = "To Manager"
+    teamEmailGalleryItem.Image = Image.FromFile("Pictures\teamemail.png")
+    teamEmailGalleryItem.Text = "Team Email"
+    replyAndDeleteGalleryItem.Image = Image.FromFile("Pictures\replyanddelete.png")
+    replyAndDeleteGalleryItem.Text = "Reply and Delete"
     doneGalleryItem.Image = Image.FromFile("Pictures\done.png")
     doneGalleryItem.Text = "Done"
-    createnewGalleryItem.Image = Image.FromFile("Pictures\createnew.png")
-    createnewGalleryItem.Text = " Create New"
+    createNewGalleryItem.Image = Image.FromFile("Pictures\createnew.png")
+    createNewGalleryItem.Text = " Create New"
 
     Me.quickGallery.Items.Add(movetoGalleryItem)
-    Me.quickGallery.Items.Add(tomanagerGalleryItem)
-    Me.quickGallery.Items.Add(teamemailGalleryItem)
-    Me.quickGallery.Items.Add(replyandeleteGalleryItem)
+    Me.quickGallery.Items.Add(toManagerGalleryItem)
+    Me.quickGallery.Items.Add(teamEmailGalleryItem)
+    Me.quickGallery.Items.Add(replyAndDeleteGalleryItem)
     Me.quickGallery.Items.Add(doneGalleryItem)
-    Me.quickGallery.Items.Add(createnewGalleryItem)
+    Me.quickGallery.Items.Add(createNewGalleryItem)
 
     Me.quickstepsToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.quickGallery})
 
@@ -1001,26 +1001,26 @@ this.quickGallery});
 {% highlight c# %}
 
 //Adding new ToolStripCheckBox
-private Syncfusion.Windows.Forms.Tools.ToolStripCheckBox showasconversationCheckBox;
+private Syncfusion.Windows.Forms.Tools.ToolStripCheckBox showAsConversationCheckBox;
 
 //Creating an instance of the control
-this.showasconversationCheckBox = new Syncfusion.Windows.Forms.Tools.ToolStripCheckBox();
+this.showAsConversationCheckBox = new Syncfusion.Windows.Forms.Tools.ToolStripCheckBox();
 
-this.showasconversationCheckBox.Text = "Show As Conversation";
+this.showAsConversationCheckBox.Text = "Show As Conversation";
 
 //Adding control to the ToolStripEx
-this.messagesToolStripEx.Items.Add(showasconversationCheckBox);
+this.messagesToolStripEx.Items.Add(showAsConversationCheckBox);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private showasconversationCheckBox As Syncfusion.Windows.Forms.Tools.ToolStripCheckBox
+Private showAsConversationCheckBox As Syncfusion.Windows.Forms.Tools.ToolStripCheckBox
 
-Me.showasconversationCheckBox = New Syncfusion.Windows.Forms.Tools.ToolStripCheckBox()
-Me.showasconversationCheckBox.Text = "Show As Conversation"
+Me.showAsConversationCheckBox = New Syncfusion.Windows.Forms.Tools.ToolStripCheckBox()
+Me.showAsConversationCheckBox.Text = "Show As Conversation"
 
-Me.messagesToolStripEx.Items.Add(showasconversationCheckBox)
+Me.messagesToolStripEx.Items.Add(showAsConversationCheckBox)
 
 {% endhighlight %}
 
@@ -1037,17 +1037,17 @@ Ribbon TextBox control provide similar set of functionalities like normal TextBo
 {% highlight c# %}
 
 //Adding new ToolStripTextBox
-private System.Windows.Forms.ToolStripTextBox applicationnameTextBox;
+private System.Windows.Forms.ToolStripTextBox applicationNameTextBox;
 private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem applicationPanelItem;
 
-this.applicationnameTextBox = new System.Windows.Forms.ToolStripTextBox();
+this.applicationNameTextBox = new System.Windows.Forms.ToolStripTextBox();
 this.applicationPanelItem = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
 
-this.applicationnameTextBox.Text = "Outlook";
-this.applicationnameTextBox.ForeColor = System.Drawing.SystemColors.HotTrack;
+this.applicationNameTextBox.Text = "Outlook";
+this.applicationNameTextBox.ForeColor = System.Drawing.SystemColors.HotTrack;
 
 this.applicationPanelItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.applicationnameTextBox});
+this.applicationNameTextBox});
 
 this.peopleToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 this.applicationPanelItem});
@@ -1056,15 +1056,15 @@ this.applicationPanelItem});
 
 {% highlight vb %}
 
-Private applicationnameTextBox As System.Windows.Forms.ToolStripTextBox
+Private applicationNameTextBox As System.Windows.Forms.ToolStripTextBox
 Private applicationPanelItem As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
 
-Me.applicationnameTextBox = New System.Windows.Forms.ToolStripTextBox()
+Me.applicationNameTextBox = New System.Windows.Forms.ToolStripTextBox()
 Me.applicationPanelItem = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
-Me.applicationnameTextBox.Text = "Outlook"
-Me.applicationnameTextBox.ForeColor = System.Drawing.SystemColors.HotTrack
+Me.applicationNameTextBox.Text = "Outlook"
+Me.applicationNameTextBox.ForeColor = System.Drawing.SystemColors.HotTrack
 
-Me.applicationPanelItem.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.applicationnameTextBox})
+Me.applicationPanelItem.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.applicationNameTextBox})
 Me.peopleToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.applicationPanelItem})
 
 {% endhighlight %}
@@ -1131,32 +1131,32 @@ ToolStripLabel can be added to a ToolStripEx directly or through a panel.
 {% highlight c# %}
 
 //Adding new ToolStripLabel
-private System.Windows.Forms.ToolStripLabel applicationnameLabel;
-private System.Windows.Forms.ToolStripLabel loadingtoolStripLabel;
+private System.Windows.Forms.ToolStripLabel applicationNameLabel;
+private System.Windows.Forms.ToolStripLabel loadingToolStripLabel;
 
-this.applicationnameLabel = new System.Windows.Forms.ToolStripLabel();
-this.applicationnameLabel.Text = "Application Name";
+this.applicationNameLabel = new System.Windows.Forms.ToolStripLabel();
+this.applicationNameLabel.Text = "Application Name";
 
-this.loadingtoolStripLabel = new System.Windows.Forms.ToolStripLabel();
-this.loadingtoolStripLabel.Text = "Loading Attachments";
+this.loadingToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+this.loadingToolStripLabel.Text = "Loading Attachments";
 
-this.applicationPanelItem.Items.Add(applicationnameLabel);
-this.progressbarPanelItem.Items.Add(this.loadingtoolStripLabel);
+this.applicationPanelItem.Items.Add(applicationNameLabel);
+this.progressbarPanelItem.Items.Add(this.loadingToolStripLabel);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private applicationnameLabel As System.Windows.Forms.ToolStripLabel
-Private loadingtoolStripLabel As System.Windows.Forms.ToolStripLabel
+Private applicationNameLabel As System.Windows.Forms.ToolStripLabel
+Private loadingToolStripLabel As System.Windows.Forms.ToolStripLabel
 
-Me.applicationnameLabel = New System.Windows.Forms.ToolStripLabel()
-Me.applicationnameLabel.Text = "Application Name"
-Me.loadingtoolStripLabel = New System.Windows.Forms.ToolStripLabel()
-Me.loadingtoolStripLabel.Text = "Loading Attachments"
+Me.applicationNameLabel = New System.Windows.Forms.ToolStripLabel()
+Me.applicationNameLabel.Text = "Application Name"
+Me.loadingToolStripLabel = New System.Windows.Forms.ToolStripLabel()
+Me.loadingToolStripLabel.Text = "Loading Attachments"
 
-Me.applicationPanelItem.Items.Add(applicationnameLabel)
-Me.progressbarPanelItem.Items.Add(Me.loadingtoolStripLabel)
+Me.applicationPanelItem.Items.Add(applicationNameLabel)
+Me.progressbarPanelItem.Items.Add(Me.loadingToolStripLabel)
 
 {% endhighlight %}
 
@@ -1172,24 +1172,24 @@ Ribbon Separator is used to separate the similar set of Ribbon elements in Ribbo
 
 {% highlight c# %}
 
-//Adding new ToolStripSeparator
-private System.Windows.Forms.ToolStripSeparator toolstripseparator;
+//Adding new toolStripSeparator
+private System.Windows.Forms.toolStripSeparator toolStripSeparator;
 
 //Creating new instance of the control
-this.toolstripseparator = new ToolStripSeparator();
+this.toolStripSeparator = new toolStripSeparator();
 
 //Adding the control to the ToolStripEx
-this.tagsToolStripEx.Items.Add(toolstripseparator);
+this.tagsToolStripEx.Items.Add(toolStripSeparator);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private toolstripseparator As System.Windows.Forms.ToolStripSeparator
+Private toolStripSeparator As System.Windows.Forms.toolStripSeparator
 
-Me.toolstripseparator = New ToolStripSeparator()
+Me.toolStripSeparator = New toolStripSeparator()
 
-Me.tagsToolStripEx.Items.Add(toolstripseparator)
+Me.tagsToolStripEx.Items.Add(toolStripSeparator)
 
 {% endhighlight %}
 
@@ -1213,54 +1213,54 @@ Accessing ToolStripPanelItem.Items property, Items Collection Editor dialog pops
 
 {% highlight c# %}
 
-private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem currentviewPanelItem;
-private System.Windows.Forms.ToolStripDropDownButton changeviewDropDownButton;
-private System.Windows.Forms.ToolStripDropDownButton viewsettingsButton;
-private System.Windows.Forms.ToolStripDropDownButton resetviewButton;
+private Syncfusion.Windows.Forms.Tools.ToolStripPanelItem currentViewPanelItem;
+private System.Windows.Forms.ToolStripDropDownButton changeViewDropDownButton;
+private System.Windows.Forms.ToolStripDropDownButton viewSettingsButton;
+private System.Windows.Forms.ToolStripDropDownButton resetViewButton;
 
-this.currentviewPanelItem = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
-this.changeviewDropDownButton = new ToolStripDropDownButton();
-this.viewsettingsButton = new ToolStripDropDownButton();
-this.resetviewButton = new ToolStripDropDownButton();
+this.currentViewPanelItem = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
+this.changeViewDropDownButton = new ToolStripDropDownButton();
+this.viewSettingsButton = new ToolStripDropDownButton();
+this.resetViewButton = new ToolStripDropDownButton();
 
 //Specifies the number of rows in the panel
-this.currentviewPanelItem.RowCount = 1;
+this.currentViewPanelItem.RowCount = 1;
 
-this.changeviewDropDownButton.Text = "Change\r\nView";
-this.viewsettingsButton.Text = "View\r\nSettings";
-this.resetviewButton.Text = "Reset\r\nView";
+this.changeViewDropDownButton.Text = "Change\r\nView";
+this.viewSettingsButton.Text = "View\r\nSettings";
+this.resetViewButton.Text = "Reset\r\nView";
 
 
-this.currentviewPanelItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.changeviewDropDownButton,
-this.viewsettingsButton,
-this.resetviewButton});
+this.currentViewPanelItem.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.changeViewDropDownButton,
+this.viewSettingsButton,
+this.resetViewButton});
 
-this.currentviewToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.currentviewPanelItem});
+this.currentViewToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.currentViewPanelItem});
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private currentviewPanelItem As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
-Private changeviewDropDownButton As System.Windows.Forms.ToolStripDropDownButton
-Private viewsettingsButton As System.Windows.Forms.ToolStripDropDownButton
-Private resetviewButton As System.Windows.Forms.ToolStripDropDownButton
+Private currentViewPanelItem As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
+Private changeViewDropDownButton As System.Windows.Forms.ToolStripDropDownButton
+Private viewSettingsButton As System.Windows.Forms.ToolStripDropDownButton
+Private resetViewButton As System.Windows.Forms.ToolStripDropDownButton
 
-Me.currentviewPanelItem = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
-Me.changeviewDropDownButton = New ToolStripDropDownButton()
-Me.viewsettingsButton = New ToolStripDropDownButton()
-Me.resetviewButton = New ToolStripDropDownButton()
+Me.currentViewPanelItem = New Syncfusion.Windows.Forms.Tools.ToolStripPanelItem()
+Me.changeViewDropDownButton = New ToolStripDropDownButton()
+Me.viewSettingsButton = New ToolStripDropDownButton()
+Me.resetViewButton = New ToolStripDropDownButton()
 
-Me.currentviewPanelItem.RowCount = 1
+Me.currentViewPanelItem.RowCount = 1
     
-Me.changeviewDropDownButton.Text = "Change" & vbCrLf & "View"
-Me.viewsettingsButton.Text = "View" & vbCrLf & "Settings"
-Me.resetviewButton.Text = "Reset" & vbCrLf & "View"
+Me.changeViewDropDownButton.Text = "Change" & vbCrLf & "View"
+Me.viewSettingsButton.Text = "View" & vbCrLf & "Settings"
+Me.resetViewButton.Text = "Reset" & vbCrLf & "View"
 
-Me.currentviewPanelItem.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.changeviewDropDownButton, Me.viewsettingsButton, Me.resetviewButton})
-Me.currentviewToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.currentviewPanelItem})
+Me.currentViewPanelItem.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.changeViewDropDownButton, Me.viewSettingsButton, Me.resetViewButton})
+Me.currentViewToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.currentViewPanelItem})
 
 {% endhighlight %}
 
@@ -1323,7 +1323,7 @@ Me.ribbonControlAdv1.MenuButtonText = "File"
 
 ### Add BackStage Tab
 
-BackStage Tab can be added through Smart tag of backstageview.
+BackStage Tab can be added through Smart tag of backstage view.
 
 ![](Getting_Started_Images/Getting-Started_img32.jpg)
 
@@ -1334,58 +1334,58 @@ BackStage Tab can be added through Smart tag of backstageview.
 {% highlight c# %}
 
 //Creating new backstage tabs
-private Syncfusion.Windows.Forms.BackStageTab openexportBackStageTab;
-private Syncfusion.Windows.Forms.BackStageTab saveattachmentsBackStageTab;
+private Syncfusion.Windows.Forms.BackStageTab openExportBackStageTab;
+private Syncfusion.Windows.Forms.BackStageTab saveAttachmentsBackStageTab;
 private Syncfusion.Windows.Forms.BackStageTab openBackStageTab;
-private Syncfusion.Windows.Forms.BackStageTab officeaccountsBackStageTab;
+private Syncfusion.Windows.Forms.BackStageTab officeAccountsBackStageTab;
 private Syncfusion.Windows.Forms.BackStageTab printBackStageTab;
 
 //Creating new instance and customizing
-this.openexportBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
-this.saveattachmentsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+this.openExportBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+this.saveAttachmentsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
 this.openBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
-this.officeaccountsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+this.officeAccountsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
 this.printBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
 
-this.openexportBackStageTab.Text = "Open/Export";
-this.saveattachmentsBackStageTab.Text = "Save Attachments";
+this.openExportBackStageTab.Text = "Open/Export";
+this.saveAttachmentsBackStageTab.Text = "Save Attachments";
 this.openBackStageTab.Text = "Open";
-this.officeaccountsBackStageTab.Text = "Office Accounts";
+this.officeAccountsBackStageTab.Text = "Office Accounts";
 this.printBackStageTab.Text = "Print";
 
 //Adding them to backstage controls
 this.backStage1.Controls.Add(infoBackStageTab);
 this.backStage1.Controls.Add(saveasBackStageTab);
 this.backStage1.Controls.Add(openBackStageTab);
-this.backStage1.Controls.Add(officeaccountsBackStageTab);
+this.backStage1.Controls.Add(officeAccountsBackStageTab);
 this.backStage1.Controls.Add(printBackStageTab);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-    Private openexportBackStageTab As Syncfusion.Windows.Forms.BackStageTab
-    Private saveattachmentsBackStageTab As Syncfusion.Windows.Forms.BackStageTab
+    Private openExportBackStageTab As Syncfusion.Windows.Forms.BackStageTab
+    Private saveAttachmentsBackStageTab As Syncfusion.Windows.Forms.BackStageTab
     Private openBackStageTab As Syncfusion.Windows.Forms.BackStageTab
-    Private officeaccountsBackStageTab As Syncfusion.Windows.Forms.BackStageTab
+    Private officeAccountsBackStageTab As Syncfusion.Windows.Forms.BackStageTab
     Private printBackStageTab As Syncfusion.Windows.Forms.BackStageTab
 
-    Me.openexportBackStageTab = New Syncfusion.Windows.Forms.BackStageTab()
-    Me.saveattachmentsBackStageTab = New Syncfusion.Windows.Forms.BackStageTab()
+    Me.openExportBackStageTab = New Syncfusion.Windows.Forms.BackStageTab()
+    Me.saveAttachmentsBackStageTab = New Syncfusion.Windows.Forms.BackStageTab()
     Me.openBackStageTab = New Syncfusion.Windows.Forms.BackStageTab()
-    Me.officeaccountsBackStageTab = New Syncfusion.Windows.Forms.BackStageTab()
+    Me.officeAccountsBackStageTab = New Syncfusion.Windows.Forms.BackStageTab()
     Me.printBackStageTab = New Syncfusion.Windows.Forms.BackStageTab()
 
-    Me.openexportBackStageTab.Text = "Open/Export"
-    Me.saveattachmentsBackStageTab.Text = "Save Attachments"
+    Me.openExportBackStageTab.Text = "Open/Export"
+    Me.saveAttachmentsBackStageTab.Text = "Save Attachments"
     Me.openBackStageTab.Text = "Open"
-    Me.officeaccountsBackStageTab.Text = "Office Accounts"
+    Me.officeAccountsBackStageTab.Text = "Office Accounts"
     Me.printBackStageTab.Text = "Print"
 
     Me.backStage1.Controls.Add(infoBackStageTab)
     Me.backStage1.Controls.Add(saveasBackStageTab)
     Me.backStage1.Controls.Add(openBackStageTab)
-    Me.backStage1.Controls.Add(officeaccountsBackStageTab)
+    Me.backStage1.Controls.Add(officeAccountsBackStageTab)
     Me.backStage1.Controls.Add(printBackStageTab)
 
 {% endhighlight %}
@@ -1405,40 +1405,40 @@ BackStage Button can be added through Smart tag of backstageview.
 {% highlight c# %}
 
 //Creating new backstage buttons
-private Syncfusion.Windows.Forms.BackStageButton saveasBackStageButton;
+private Syncfusion.Windows.Forms.BackStageButton saveAsBackStageButton;
 private Syncfusion.Windows.Forms.BackStageButton optionsBackStageButton;
 private Syncfusion.Windows.Forms.BackStageButton exitBackStageButton;
 
 //Creating new instance and customizing
 this.optionsBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
-this.saveasBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
+this.saveAsBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
 this.exitBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
 this.optionsBackStageButton.Text = "Options";
-this.saveasBackStageButton.Text = "Save As";
+this.saveAsBackStageButton.Text = "Save As";
 this.exitBackStageButton.Text = "Exit";
 
 //Adding them to backstage controls
 this.backStage1.Controls.Add(optionsBackStageButton);
-this.backStage1.Controls.Add(saveasBackStageButton);
+this.backStage1.Controls.Add(saveAsBackStageButton);
 this.backStage1.Controls.Add(exitBackStageButton);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-    Private saveasBackStageButton As Syncfusion.Windows.Forms.BackStageButton
+    Private saveAsBackStageButton As Syncfusion.Windows.Forms.BackStageButton
     Private optionsBackStageButton As Syncfusion.Windows.Forms.BackStageButton
     Private exitBackStageButton As Syncfusion.Windows.Forms.BackStageButton
 
     Me.optionsBackStageButton = New Syncfusion.Windows.Forms.BackStageButton()
-    Me.saveasBackStageButton = New Syncfusion.Windows.Forms.BackStageButton()
+    Me.saveAsBackStageButton = New Syncfusion.Windows.Forms.BackStageButton()
     Me.exitBackStageButton = New Syncfusion.Windows.Forms.BackStageButton()
     Me.optionsBackStageButton.Text = "Options"
-    Me.saveasBackStageButton.Text = "Save As"
+    Me.saveAsBackStageButton.Text = "Save As"
     Me.exitBackStageButton.Text = "Exit"
 
     Me.backStage1.Controls.Add(optionsBackStageButton)
-    Me.backStage1.Controls.Add(saveasBackStageButton)
+    Me.backStage1.Controls.Add(saveAsBackStageButton)
     Me.backStage1.Controls.Add(exitBackStageButton)
 
 {% endhighlight %}

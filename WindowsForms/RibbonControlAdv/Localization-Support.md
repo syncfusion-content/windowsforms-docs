@@ -397,7 +397,7 @@ Customize caption in customizing QAT.<br/><br/></td></tr>
 <tr>
 <td>
 QuickAccessDialogCommands<br/><br/></td><td>
-SeCommands dialog in quick accessts<br/><br/></td></tr>
+Commands dialog in quick access<br/><br/></td></tr>
 <tr>
 <td>
 CustomizeRibbonDialogColumnHeader<br/><br/></td><td>

@@ -43,13 +43,13 @@ Follow the steps below to add Super accelerator
 
 {% highlight c# %}
 
-this.SuperAccelerator1.SetAccelerator(this.newmail, "N");
+this.SuperAccelerator1.SetAccelerator(this.newMail, "N");
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.SuperAccelerator1.SetAccelerator(Me.newmail, "N")
+Me.SuperAccelerator1.SetAccelerator(Me.newMail, "N")
 
 {% endhighlight %}
 
