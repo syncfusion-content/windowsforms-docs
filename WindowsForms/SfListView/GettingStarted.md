@@ -267,7 +267,7 @@ listView.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = â
 ![](GettingStarted_images/GettingStarted_img3.png)
 
 ## Sorting
-The SfListView allows sorting on its data by using the `SfListView.View.SortDescriptorsproperty`. Create a `SortDescriptor` for the property to be sorted and add it into the View.SortDescriptors collection.
+The SfListView allows sorting on its data by using the `SfListView.View.SortDescriptors property`. Create a `SortDescriptor` for the property to be sorted and add it into the View.SortDescriptors collection.
 
 SortDescriptor object holds the following three properties:
 
