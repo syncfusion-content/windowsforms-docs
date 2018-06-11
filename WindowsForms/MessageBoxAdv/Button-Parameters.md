@@ -11,11 +11,11 @@ documentation: ug
 
 [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function helps to display a MessageBoxAdv. This section explains regarding the parameters available in [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
 
-## Text
+## Text 
 
 Represents the text which need to be displayed in the MessageBoxAdv.
 
-## Caption
+## Caption 
 
 The text to display in the caption bar of the MessageBoxAdv.
 
@@ -294,7 +294,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "Warning", MessageBoxButtons.OKCancel, i
 
 {% endtabs %}
 
-Ex: Detail view 
+Eg: Detail view 
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img18.jpg)
 

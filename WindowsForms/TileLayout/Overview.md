@@ -9,16 +9,14 @@ documentation: ug
 
 # Overview
 
-The Syncfusion TileLayout control acts as a container that holds a set of LayoutGroups, in which you can host rich information.
-You can drag the items of the TileLayout in a matrix position to achieve the best layout.
+[TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) control is Windows 8 Start screen inspired control . It acts as a container that holds a set of tile view items that can be maximized, minimized, dragged to reorder and arranged in matrix position to achieve best layout. 
 
-![](Overview_images/Overviewimg1.png)
+![](Overview_images/Overviewimg2.png)
 
-* This feature can be used in any kind of application that is used to showcase items.
-* Drag-drop facilities to rearrange the Tile Items.
-* Image transition support.
-* Complete customization support for Layout Groups position.
+# Key Features
 
+* **Grouping** - Provides option to divide Tile elements into logical groups
 
+* **Drag and Drop** - Supports Drag and drop to reorder items.
 
-
+* **Live Tiles** - Supports live tiles which can rotate images and texts.
