@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-TreeViewAdv does not have direct option to load/save from XML file. This below section will help to load/save TreeViewAdv from XML.
+`TreeViewAdv` does not have direct option to load/save from XML file. This below section will help to load/save TreeViewAdv from XML.
 
 
 {% tabs %}
@@ -178,5 +178,3 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
-
-![](Concepts-and--Features_images/Concepts-and--Features_img60.jpeg)
