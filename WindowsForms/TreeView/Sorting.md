@@ -11,9 +11,9 @@ documentation: ug
 
 Sorting can be performed on the tree nodes using the Sort function and specifying the function to be performed on either the checkbox or tag or text values in ascending or descending order.
 
-The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the `SortWithChildNod`e property should be set to true. The sort function can be done based on the value type which can be specified using SortType to either the option of Checkbox or Tag or Text. The order in which the sort function must be performed can be specified using the `SortOrder` that holds the values of Ascending or Descending.
+The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the SortWithChildNode property should be set to true. The sort function can be done based on the value type which can be specified using SortType to either the option of Checkbox or Tag or Text. The order in which the sort function has to be performed can be specified using the SortOrder that holds the values of Ascending or Descending.
 
-<b>Property Table</b>
+Property Table
 
 <table>
 <tr>
@@ -33,41 +33,25 @@ The SortType property indicates the field. Nodes will be sorted based on the typ
 {% tabs %}
 {% highlight c# %}
 
-treeNode.SortOrder = System.Windows.Forms.SortOrder.Ascending;
-treeNode.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox;
+treeNodeAdv9.SortOrder = System.Windows.Forms.SortOrder.Ascending;
+treeNodeAdv9.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-treeNode.SortOrder = System.Windows.Forms.SortOrder.Ascending
-treeNode.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox
-
+TreeNodeAdv9.SortOrder = System.Windows.Forms.SortOrder.Ascending
+TreeNodeAdv9.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox
 
 {% endhighlight %}
 {% endtabs %}
 
-<b>Comparing Options for Sorting</b>
+Comparing Options for Sorting
 
-* The `CompareOptions` property gives additional options of comparing the texts of the nodes.TreeViewAdv provides the following CompareOptions
+* The CompareOptions property gives additional options of comparing the texts of the nodes.
+* The Comparer property is an object that implements the IComparer interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object in comparing the sub nodes. 
 
-    1. IgnoreCase
-
-    2. IgnoreNonSpace
-
-    3. IgnoreSymbols
-
-    4. IgnoreType
-
-    5. IgnoreWidth
-
-    6. OrdinalIgnoreCase
-
-    7. StringSort and Ordinal.
-
-* The `Comparer property` is an object that implements the IComparer interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object in comparing the sub nodes. 
-
-<b>Property Table</b>
+Property Table
 
 <table>
 <tr>
@@ -77,8 +61,7 @@ Description</th></tr>
 <tr>
 <td>
 CompareOptions</td><td>
-Indicates the compare options used in the sorting of the nodes. 
-</td></tr>
+Indicates the compare options used in the sorting of the nodes. The below are the options.IgnoreCase,IgnoreNonSpace,IgnoreSymbols,IgnoreType,IgnoreWidth,OrdinalIgnoreCase,StringSort andOrdinal.</td></tr>
 <tr>
 <td>
 Comparer</td><td>
@@ -101,5 +84,9 @@ TreeNodeAdv9.Comparer = Null
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_Images/Sorting_Img1.jpg)
+![](Concepts-and--Features_images/Concepts-and--Features_img61.png)
+
+{% seealso %}
+How to Sort all the nodes in the TreeViewAdv control?
+{% endseealso %}
 
