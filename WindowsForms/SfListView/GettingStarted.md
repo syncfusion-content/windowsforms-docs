@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Getting Started 
-This section provides a quick overview for getting started with the SfListView for WinForms. Walk through the entire process of creating the real world SfListView. 
+This section provides a quick overview for getting started with SfListView for WinForms. Walk through the entire process of creating the real world SfListView. 
 
 ## Assembly Deployment
 The following list of assemblies should be added as reference from the Assemblies folder to use the SfListView in the application:
@@ -27,7 +27,7 @@ The following list of assemblies should be added as reference from the Assemblie
 Syncfusion.Core.WinForms
 </td>
 <td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm and SfToolTip.
+Contains theme related classes for Syncfusion controls and basic components such as SfButton, SfForm, and SfToolTip.
 </td>
 </tr>
 <tr>
@@ -35,7 +35,7 @@ Syncfusion.Core.WinForms assembly contains the theme related classes for the Syn
 Syncfusion.DataSource.WinForms
 </td>
 <td>
-Syncfusion.DataSource.WinForms assembly contains fundamental and base classes for view responsible for data processing operations handled in SfListView.
+Contains fundamental and base classes for view, responsible for data processing operations handled in SfListView.
 </td>
 </tr>
 <tr>
@@ -43,7 +43,7 @@ Syncfusion.DataSource.WinForms assembly contains fundamental and base classes fo
 Syncfusion.SfListView.WinForms
 </td>
 <td>
-Syncfusion.SfListView.WinForms assembly contains classes that handles all UI operations of SfListView and SfListView. The SfListView control is present in Syncfusion.WinForms.ListView namespace.
+Contains classes that handles all UI operations of SfListView. The SfListView control is present in Syncfusion.WinForms.ListView namespace.
 </td>
 </tr>
 <tr>
@@ -51,26 +51,26 @@ Syncfusion.SfListView.WinForms assembly contains classes that handles all UI ope
 Syncfusion.GridCommon.WinForms
 </td>
 <td>
-Syncfusion.GridCommon.WinForms assembly contains base classes for scrolling and utilities.
+Contains base classes for scrolling and utilities.
 </td>
 </tr>
 </table>
 
 ## Creating Application with SfListView control
-In this walk through, users will create WinForms application that contains SfListView control.
+In this walk through, user will create WinForms application that contains SfListView control.
 
 ### Creating the Project
-Create new Windows Forms Project in Visual Studio to display SfListView with data objects.
+Create a new Windows Forms project in Visual Studio to display the SfListView with data objects.
 
 ### Adding Control via Designer
-SfListView control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+The SfListView control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
 
 ![](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding Control in Code
 To add control manually, follow the steps:
 
-1.Add the below required assembly references to the project,
+1. Add the following required assembly references to the project:
 
 * 	Syncfusion.Core.WinForms
 
@@ -81,7 +81,7 @@ To add control manually, follow the steps:
 *   Syncfusion.SfListView.WinForms
 
 
-2.Create the SfListView control instance and add it to the control collection of Form.
+2. Create the SfListView control instance and add it to the form.   
 
 {% tabs %}
 {% highlight c# %}
@@ -120,10 +120,11 @@ End Namespace
 {% endhighlight %}
 {% endtabs %}
 
-### Creating Data for Sample Application
+### Creating data for sample application
 
+To create the data for sample application, follow the steps:
 
-1) Create data object class named “CountryInfo” and declare properties as shown below,
+1. Create a data object class, name it as “CountryInfo” and declare the properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -144,7 +145,7 @@ Public Class CountryInfo
  {% endtabs %}
  
  
-2) Create a List<CountryInfo> collection is initialized in GetDataSource method to add several data objects.
+2. Create a List<CountryInfo> collection initialized in GetDataSource method to add several data objects.
      
 {% tabs %}
 {% highlight c# %}
@@ -221,7 +222,8 @@ End Function
 ### Binding to data
 
 To bind the SfListView to data, set the `SfListView.DataSource` property to an `IEnumerable` implementation.
-You can bind a property of the underlying datasource to display for SfListView by using the `DisplayMember` property. 
+You can bind a property of the underlying data source to display the SfListView by using the `DisplayMember` property. 
+ 
 
 {% tabs %}
 {% highlight c# %}
@@ -239,7 +241,7 @@ sfListView1.DisplayMember = “CountryName”
 ![](GettingStarted_images/GettingStarted_img2.png)
 
 ## Grouping
-The SfListView allows displaying the items in a group using the `SfListView.View.GroupDescriptors` property. Create `GroupDescriptor` for the property to be grouped and add it in the View.GroupDescriptors collection.
+The SfListView allows displaying the items in a group by using the `SfListView.View.GroupDescriptors` property. Create a `GroupDescriptor` for the property to be grouped and add it in the View.GroupDescriptors collection.
 
 GroupDescriptor object holds the following properties:
 
@@ -265,7 +267,7 @@ listView.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = �
 ![](GettingStarted_images/GettingStarted_img3.png)
 
 ## Sorting
-The SfListView allows sorting on its data by using the `SfListView.View.SortDescriptors` property. Create `SortDescriptor` for the property to be sorted and add it into the View.SortDescriptors collection.
+The SfListView allows sorting on its data by using the `SfListView.View.SortDescriptorsproperty`. Create a `SortDescriptor` for the property to be sorted and add it into the View.SortDescriptors collection.
 
 SortDescriptor object holds the following three properties:
 
@@ -291,8 +293,8 @@ listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = “
 ![](GettingStarted_images/GettingStarted_img4.png)
 
 ## Filtering
-The SfListView supports to filter the records in view by setting predicate to the `SfListView.View.Filter` property. Call the `View.RefreshFilter` method after assigning the Filter property for refreshing the view.
-To filter the items based on the Continent property of the underlying data, follow the code example:
+The SfListView support to filter the records in view by setting predicate to the `SfListView.View.Filter` property. Call the `View.RefreshFilter` method after assigning the Filter property for refreshing the view.
+To filter the items based on the Continent property of the underlying data, follow the code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -319,7 +321,7 @@ public Boolean CustomFilter(Object obj)
 ![](GettingStarted_images/GettingStarted_img5.png)
 
 ## Selection
-The SfListView allows selecting the item by setting the` SfListView.SelectionMode` property. Set the SfListView.SelectionMode property to One, MultiSimple, MultiExtended and None based on the requirements. Information about the selected item can be tracked using the `SfListView.SelectedItem`, `SfListView.SelectedIndex` and `SfListView.SelectedItems` properties. 
+SfListView selects an item by setting the` SfListView.SelectionMode` property to single, multiple, extended, and none based on the requirements. Selected item information can be tracked by using the `SfListView.SelectedItem`, `SfListView.SelectedIndex`, and `SfListView.SelectedItems` properties.  `SfListView.SelectedIndex` and `SfListView.SelectedItems` properties. 
 
 The selection operations can be handled with the help of `SelectionChanging` and `SelectionChanged` events of the SfListView.
 

@@ -9,24 +9,24 @@ documentation: ug
 
 # Overview
 
-The list view control allows users to select an item or multiple items from a list-like interface. The data can be sorted, grouped, and filtered with ease.
+The list view control allows user to select an item or multiple items from a list-like interface. The data can be sorted, grouped, and filtered with ease.
 
 Key Features are:
 
-*	Data binding - Supports to bind IEnumerable type data sources
-*	Performance - Optimized view reusing strategy for enhanced performance.
+*	Data binding: Supports to bind IEnumerable type data sources.
+*	Performance: Optimized view reusing strategy for enhanced performance.
 *	Data operations such as sorting, grouping, and filtering.
-*	Selection – Support to select an item with different selection modes.
-*	CheckBox with selection – Support to choose the multiple items from the list with the different check box selection modes.
-*	Select all items – Support to choose all the items in the list.
-*	Recursive checking – Supports selecting all the list view items based on groups.
-*	Auto fitting - It supports to fit all items based on content.
-*	Item height – Height for the group header and Item can be customizable.
-*	Styling – Supports for customizing styles and appearance of the items in list.
-*	Theme - Supports several built-in Office 2016 themes
-*	Accessibility -  Supports various accessibility features to make applications available to a wide variety of users.
+*	Selection: Support to select an item with different selection modes.
+*	Check box with selection: Support to choose the multiple items from the list with the different check box selection modes.
+*	Select all items: Support to choose all the items from the list.
+*	Recursive checking: Supports selecting all the list view items based on groups.
+*	Auto fitting: Support to fit all the items based on the content.
+*	Item height: Support to customize height of the group header and item.
+*	Styling: Supports customizing styles and appearance of the items in a list.
+*	Theme: Supports several built-in Office 2016 themes.
+*	Accessibility: Supports various accessibility features to make applications available to wide variety of users.
 
 Limitation
 
-*	Data Table support is not available in SfListView
+*	Data table support is not available in SfListView
 
