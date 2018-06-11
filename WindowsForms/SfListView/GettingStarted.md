@@ -321,7 +321,7 @@ public Boolean CustomFilter(Object obj)
 ![](GettingStarted_images/GettingStarted_img5.png)
 
 ## Selection
-SfListView selects an item by setting the` SfListView.SelectionMode` property to One, MultiSimple, MultiExtended, and None based on the requirements. Selected item information can be tracked by using the `SfListView.SelectedItem`, `SfListView.SelectedIndex`, and `SfListView.SelectedItems` properties.  `SfListView.SelectedIndex` and `SfListView.SelectedItems` properties. 
+SfListView selects an item by setting the` SfListView.SelectionMode` property to One, MultiSimple, MultiExtended, and None based on the requirements. Selected item information can be tracked by using the `SfListView.SelectedItem`, `SfListView.SelectedIndex`, and `SfListView.SelectedItems` properties. 
 
 The selection operations can be handled with the help of `SelectionChanging` and `SelectionChanged` events of the SfListView.
 
