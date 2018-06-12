@@ -70,7 +70,7 @@ The SfListView control can be added to the application by dragging it from the t
 ### Adding Control in Code
 To add control manually, follow the steps:
 
-1. Add the following required assembly references to the project:
+1.Add the following required assembly references to the project:
 
 * 	Syncfusion.Core.WinForms
 
@@ -81,7 +81,7 @@ To add control manually, follow the steps:
 *   Syncfusion.SfListView.WinForms
 
 
-2. Create the SfListView control instance and add it to the form.   
+2.Create the SfListView control instance and add it to the form.   
 
 {% tabs %}
 {% highlight c# %}
@@ -124,97 +124,97 @@ End Namespace
 
 To create the data for sample application, follow the steps:
 
-1. Create a data object class, name it as “CountryInfo” and declare the properties.
+1.Create a data object class, name it as “CountryInfo” and declare the properties.
 
 {% tabs %}
 {% highlight c# %}
 
 public class CountryInfo
-    {
-        public string CountryName { get; set; }
-        public string Continent { get; set; }
-    }
+{
+   public string CountryName { get; set; }
+   public string Continent { get; set; }
+ }
 {% endhighlight %}
 {% highlight vb %}
 
 Public Class CountryInfo
-		Public Property CountryName() As String
-		Public Property Continent() As String
+   Public Property CountryName() As String
+   Public Property Continent() As String
  End Class
  {% endhighlight %}
  {% endtabs %}
  
  
-2. Create a List<CountryInfo> collection initialized in GetDataSource method to add several data objects.
+2.Create a List<CountryInfo> collection initialized in GetDataSource method to add several data objects.
      
 {% tabs %}
 {% highlight c# %}
 
 public List<CountryInfo> GetDataSource()
-        {
-            List<CountryInfo> countryInfoCollection = new List<CountryInfo>();
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "China", Continent = "Asia" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "India", Continent = "Asia" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Japan", Continent = "Asia" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Malaysia", Continent = "Asia" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Singapore", Continent = "Asia" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Kenya", Continent = "Africa" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Nigeria", Continent = "Africa" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "South Africa", Continent = "Africa" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Uganda", Continent = "Africa" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Zimbabwe", Continent = "Africa" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "France", Continent = "Europe" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Germany", Continent = "Europe" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Italy", Continent = "Europe" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Spain", Continent = "Europe" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "United Kingdom", Continent = "Europe" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Canada", Continent = "North America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Cuba", Continent = "North America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Jamaica", Continent = "North America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Mexico", Continent = "North America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "United States of America", Continent = "North America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Australia", Continent = "Oceania" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "New Zealand", Continent = "Oceania" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Argentina", Continent = "South America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Brazil", Continent = "South America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Chile", Continent = "South America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Colombia", Continent = "South America" });
-            countryInfoCollection.Add(new CountryInfo() { CountryName = "Uruguay", Continent = "South America" });
-            return countryInfoCollection;
-        }
+{
+    List<CountryInfo> countryInfoCollection = new List<CountryInfo>();
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "China", Continent = "Asia" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "India", Continent = "Asia" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Japan", Continent = "Asia" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Malaysia", Continent = "Asia" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Singapore", Continent = "Asia" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Kenya", Continent = "Africa" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Nigeria", Continent = "Africa" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "South Africa", Continent = "Africa" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Uganda", Continent = "Africa" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Zimbabwe", Continent = "Africa" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "France", Continent = "Europe" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Germany", Continent = "Europe" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Italy", Continent = "Europe" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Spain", Continent = "Europe" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "United Kingdom", Continent = "Europe" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Canada", Continent = "North America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Cuba", Continent = "North America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Jamaica", Continent = "North America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Mexico", Continent = "North America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "United States of America", Continent = "North America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Australia", Continent = "Oceania" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "New Zealand", Continent = "Oceania" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Argentina", Continent = "South America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Brazil", Continent = "South America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Chile", Continent = "South America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Colombia", Continent = "South America" });
+    countryInfoCollection.Add(new CountryInfo() { CountryName = "Uruguay", Continent = "South America" });
+    return countryInfoCollection;
+  }
 {% endhighlight %}
 {% highlight vb %}
 
 Public Function GetDataSource() As List(Of CountryInfo)
-			Dim countryInfoCollection As New List(Of CountryInfo)()
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "China", .Continent = "Asia"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "India", .Continent = "Asia"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Japan", .Continent = "Asia"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Malaysia", .Continent = "Asia"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Singapore", .Continent = "Asia"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Kenya", .Continent = "Africa"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Nigeria", .Continent = "Africa"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "South Africa", .Continent = "Africa"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Uganda", .Continent = "Africa"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Zimbabwe", .Continent = "Africa"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "France", .Continent = "Europe"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Germany", .Continent = "Europe"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Italy", .Continent = "Europe"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Spain", .Continent = "Europe"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "United Kingdom", .Continent = "Europe"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Canada", .Continent = "North America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Cuba", .Continent = "North America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Jamaica", .Continent = "North America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Mexico", .Continent = "North America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "United States of America", .Continent = "North America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Australia", .Continent = "Oceania"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "New Zealand", .Continent = "Oceania"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Argentina", .Continent = "South America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Brazil", .Continent = "South America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Chile", .Continent = "South America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Colombia", .Continent = "South America"})
-			countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Uruguay", .Continent = "South America"})
-			Return countryInfoCollection
+	Dim countryInfoCollection As New List(Of CountryInfo)()
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "China", .Continent = "Asia"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "India", .Continent = "Asia"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Japan", .Continent = "Asia"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Malaysia", .Continent = "Asia"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Singapore", .Continent = "Asia"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Kenya", .Continent = "Africa"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Nigeria", .Continent = "Africa"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "South Africa", .Continent = "Africa"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Uganda", .Continent = "Africa"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Zimbabwe", .Continent = "Africa"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "France", .Continent = "Europe"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Germany", .Continent = "Europe"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Italy", .Continent = "Europe"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Spain", .Continent = "Europe"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "United Kingdom", .Continent = "Europe"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Canada", .Continent = "North America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Cuba", .Continent = "North America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Jamaica", .Continent = "North America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Mexico", .Continent = "North America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "United States of America", .Continent = "North America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Australia", .Continent = "Oceania"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "New Zealand", .Continent = "Oceania"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Argentina", .Continent = "South America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Brazil", .Continent = "South America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Chile", .Continent = "South America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Colombia", .Continent = "South America"})
+	countryInfoCollection.Add(New CountryInfo() With {.CountryName = "Uruguay", .Continent = "South America"})
+	Return countryInfoCollection
 End Function
 {% endhighlight %}
 {% endtabs %}
@@ -228,12 +228,12 @@ You can bind a property of the underlying data source to display the SfListView 
 {% tabs %}
 {% highlight c# %}
 sfListView1.DataSource = GetDataSource();
-sfListView1.DisplayMember = “CountryName”;  
+sfListView1.DisplayMember = "CountryName";  
 
 {% endhighlight %}
 {% highlight vb %}
 sfListView1.DataSource = GetDataSource()
-sfListView1.DisplayMember = “CountryName”  
+sfListView1.DisplayMember = "CountryName"  
 
 {% endhighlight %}
 {% endtabs %}
@@ -255,7 +255,7 @@ GroupDescriptor object holds the following properties:
 {% highlight c# %}
 listView.View.GroupDescriptors.Add(new GroupDescriptor()
 {
-PropertyName = “Continent”,                     
+   PropertyName = "Continent",                     
 });
 
 {% endhighlight %}
@@ -281,8 +281,8 @@ SortDescriptor object holds the following three properties:
 {% highlight c# %}
 listView.View.SortDescriptors.Add(new SortDescriptor()
 {
-PropertyName = “Continent”,
-Direction = ListSortDirection.Descending,
+   PropertyName = "Continent",
+   Direction = ListSortDirection.Descending,
 });
 {% endhighlight %}
 {% highlight vb %}
