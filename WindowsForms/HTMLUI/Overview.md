@@ -14,7 +14,7 @@ HTMLUIControl helps to render Hypertext Markup Language (HTML). Its functionalit
 
 ## Key Features
 
-* **Loading Document** - Provides options to load documents from Files, Resource, URI and string.
+* **Loading Document** - Provides options to load contents from Files, Resource, URI and string.
 
 * **Custom Controls** - Provide option to load custom controls.
 
