@@ -1,0 +1,222 @@
+---
+layout: post
+title: Title Bar| WindowsForms | Syncfusion
+description: Title Bar
+platform: WindowsForms
+control: SfForm
+documentation: ug
+---
+
+# Title Bar
+
+## Title bar height
+
+Height of the title bar can be changed by using the [Style.TitleBar.Height](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~Height.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.Style.TitleBar.Height = 45;
+{% endhighlight %}
+{% highlight vb %}
+Me.Style.TitleBar.Height = 45
+{% endhighlight %}
+{% endtabs %}
+![](TitleBar_images/TitleBar_Image1.png)
+
+## Text alignment
+
+Text on the title bar can be aligned horizontally and vertically by using the [Style.TitleBar.TextHorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~TextHorizontalAlignment.html) and [Style.TitleBar.TextVerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~TextVerticalAlignment.html) properties respectively.
+
+{% tabs %}
+{% highlight c# %}
+this.Style.TitleBar.TextHorizontalAlignment = HorizontalAlignment.Center;
+this.Style.TitleBar.TextVerticalAlignment = VerticalAlignment.Top;
+{% endhighlight %}
+{% highlight vb %}
+Me.Style.TitleBar.TextHorizontalAlignment = HorizontalAlignment.Center
+Me.Style.TitleBar.TextVerticalAlignment = VerticalAlignment.Top
+{% endhighlight %}
+{% endtabs %}
+![](TitleBar_images/TitleBar_Image2.png)
+
+## Customization of title bar buttons
+
+Icons on the title bar buttons can be changed by loading any custom icon by using the button image properties in the [Style.TitleBar](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~TitleBar.html) such as [CloseButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CloseButtonImage.html), [MaximizeButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MaximizeButtonImage.html), and [MinimizeButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MinimizeButtonImage.html).
+
+By default, the title bar buttons have the following states:
+
+* Normal state
+* Hover state
+* Pressed state
+
+Icons for the title bar buttons can be changed to normal, hovered, and pressed states by using the image properties of the corresponding state such as [CloseButtonHoverImage](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CloseButtonHoverImage.html) and [MaximizeButtonPressedImage](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MaximizeButtonPressedImage.html).
+
+{% tabs %}
+{% highlight c# %}
+//Title bar button icons on normal state
+this.Style.TitleBar.CloseButtonImage = Image.FromFile("close.ico");
+this.Style.TitleBar.MaximizeButtonImage = Image.FromFile("max.ico");
+this.Style.TitleBar.MinimizeButtonImage = Image.FromFile("min.ico");
+
+//Title bar button icons on hover state
+this.Style.TitleBar.CloseButtonHoverImage = Image.FromFile("hoverClose.ico");
+this.Style.TitleBar.MaximizeButtonHoverImage = Image.FromFile("hoverMax.ico");
+this.Style.TitleBar.MinimizeButtonHoverImage = Image.FromFile("hoverMin.ico");
+
+//Title bar button icons on pressed state
+this.Style.TitleBar.CloseButtonPressedImage = Image.FromFile("pressedClose.ico");
+this.Style.TitleBar.MaximizeButtonPressedImage = Image.FromFile("pressedMax.ico");
+this.Style.TitleBar.MinimizeButtonPressedImage = Image.FromFile("pressedMin.ico");
+{% endhighlight %}
+{% highlight vb %}
+'Title bar button icons on normal state
+Me.Style.TitleBar.CloseButtonImage = Image.FromFile("close.ico")
+Me.Style.TitleBar.MaximizeButtonImage = Image.FromFile("max.ico")
+Me.Style.TitleBar.MinimizeButtonImage = Image.FromFile("min.ico")
+
+'Title bar button icons on hover state
+Me.Style.TitleBar.CloseButtonHoverImage = Image.FromFile("hoverClose.ico")
+Me.Style.TitleBar.MaximizeButtonHoverImage = Image.FromFile("hoverMax.ico")
+Me.Style.TitleBar.MinimizeButtonHoverImage = Image.FromFile("hoverMin.ico")
+
+'Title bar button icons on pressed state
+Me.Style.TitleBar.CloseButtonPressedImage = Image.FromFile("pressedClose.ico")
+Me.Style.TitleBar.MaximizeButtonPressedImage = Image.FromFile("pressedMax.ico")
+Me.Style.TitleBar.MinimizeButtonPressedImage = Image.FromFile("pressedMin.ico")
+{% endhighlight %}
+{% endtabs %}
+
+### Hiding the title bar buttons
+
+Buttons in the title bar can be hide by disabling the [MinimizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MinimizeBox)&rd=true), [MaximizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MaximizeBox)&rd=true), and [CloseButtonVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfForm~CloseButtonVisible.html) properties.
+
+{% tabs %}
+{% highlight c# %}
+this.MinimizeBox = false;
+this.MaximizeBox = false;
+{% endhighlight %}
+{% highlight vb %}
+Me.MinimizeBox = False
+Me.MaximizeBox = False
+{% endhighlight %}
+{% endtabs %}
+
+![](TitleBar_images/TitleBar_Image3.png)
+
+## Rich text formatting
+
+Rich text can be displayed inside the title bar by enabling the [Style.TitleBar.AllowRichText](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~AllowRichText.html) property and adding the proper rich text to the [Text](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.Text)&rd=true) property of the form.
+
+{% tabs %}
+{% highlight c# %}
+//Enabling the rich text support
+this.Style.TitleBar.AllowRichText = true;
+//Adding rich text
+this.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red150\\green0\\blue20;\\red100\\green0\\blue150;}" + "{\\fonttbl{\\f0 Segoe UI;\r\n}}\\qc\\f0\\fs23 {\\cf1 Untitled* \\cf2 - \\b Custom Text Editor}}";
+{% endhighlight %}
+{% highlight vb %}
+'Enabling the rich text support
+Me.Style.TitleBar.AllowRichText = True
+
+'Adding rich text 
+Me.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red150\\green0\\blue20;\\red100\\green0\\blue150;}" + "{\\fonttbl{\\f0 Segoe UI;\r\n}}\\qc\\f0\\fs23 {\\cf1 Untitled* \\cf2 - \\b Custom Text Editor}}"
+{% endhighlight %}
+{% endtabs %}
+![](TitleBar_images/TitleBar_Image4.png)
+
+N> Adding rich text to the Text property will have no effect, if the `AllowRichText` property is false.
+
+## Loading user control to the title bar
+
+The SfForm allows you to load any user control into the title bar instead of title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfForm~TitleBarTextControl.html) property. Size of the user control should be set properly to fit the control within the title bar.
+
+{% tabs %}
+{% highlight c# %}
+FlowLayoutPanel searchPanel = new FlowLayoutPanel();
+searchPanel.Size = new Size(190, 25);
+Label searchingLabel = new Label();
+searchingLabel.Size = new Size(70, 80);
+searchingLabel.Text = "Searching";
+TextBox searchBox = new TextBox();
+searchPanel.Controls.Add(searchingLabel);
+searchPanel.Controls.Add(searchBox);
+
+//Loads the searchPanel to the title bar.
+this.TitleBarTextControl = searchPanel;
+{% endhighlight %}
+{% highlight vb %}
+Dim searchPanel As New FlowLayoutPanel()
+searchPanel.Size = New Size(190, 25)
+Dim searchingLabel As New Label()
+searchingLabel.Size = New Size(70, 80)
+searchingLabel.Text = "Searching"
+Dim searchBox As New TextBox()
+searchPanel.Controls.Add(searchingLabel)
+searchPanel.Controls.Add(searchBox)
+
+'Loads the searchPanel to the title bar.
+Me.TitleBarTextControl = searchPanel
+{% endhighlight %}
+{% endtabs %}
+
+![](TitleBar_images/TitleBar_Image5.png)
+
+The following sample shows how to load user control to the title bar:
+
+&lt;Installation Location&gt;\Syncfusion\EssentialStudio[Version_ Number]\ Windows\Core.WinForms\Samples\SfForm\TitleBarControl 
+
+
+## Appearance
+
+Appearance of the title bar can be customized by using the [Style.TitleBar](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~TitleBar.html) property that contains all the settings for customizing the title bar appearance.
+
+{% tabs %}
+{% highlight c# %}
+//Sets the back color and fore color of the title bar.
+this.Style.TitleBar.BackColor = Color.Black;
+this.Style.TitleBar.ForeColor = Color.White;
+
+//Sets the fore color of the title bar buttons
+this.Style.TitleBar.CloseButtonForeColor = Color.White;
+this.Style.TitleBar.MinimizeButtonForeColor = Color.White;
+this.Style.TitleBar.MaximizeButtonForeColor = Color.White;
+
+//Sets the hover state back color of the title bar buttons
+this.Style.TitleBar.CloseButtonHoverBackColor = Color.DarkGray;
+this.Style.TitleBar.MinimizeButtonHoverBackColor = Color.DarkGray;
+this.Style.TitleBar.MaximizeButtonHoverBackColor = Color.DarkGray;
+
+//Sets the pressed state back color of the title bar buttons
+this.Style.TitleBar.CloseButtonPressedBackColor = Color.Gray;
+this.Style.TitleBar.MaximizeButtonPressedBackColor = Color.Gray;
+this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
+
+//Sets the back color of the client area.
+this.Style.BackColor = Color.DarkGray;
+{% endhighlight %}
+{% highlight vb %}
+'Sets the back color and fore color of the title bar.
+Me.Style.TitleBar.BackColor = Color.Black
+Me.Style.TitleBar.ForeColor = Color.White
+
+'Sets the fore color of the title bar buttons
+Me.Style.TitleBar.CloseButtonForeColor = Color.White
+Me.Style.TitleBar.MinimizeButtonForeColor = Color.White
+Me.Style.TitleBar.MaximizeButtonForeColor = Color.White
+
+'Sets the hover state back color of the title bar buttons
+Me.Style.TitleBar.CloseButtonHoverBackColor = Color.DarkGray
+Me.Style.TitleBar.MinimizeButtonHoverBackColor = Color.DarkGray
+Me.Style.TitleBar.MaximizeButtonHoverBackColor = Color.DarkGray
+
+'Sets the pressed state back color of the title bar buttons
+Me.Style.TitleBar.CloseButtonPressedBackColor = Color.Gray
+Me.Style.TitleBar.MaximizeButtonPressedBackColor = Color.Gray
+Me.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray
+
+'Sets the back color of the client area.
+Me.Style.BackColor = Color.DarkGray
+{% endhighlight %}
+{% endtabs %}
+
+![](TitleBar_images/TitleBar_Image6.png)
