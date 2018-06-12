@@ -151,7 +151,7 @@ The HTMLUIControl can be added to the application by dragging it from the toolbo
 
 **Configure Title**
 
-Title text can be set using `Title` property. The visiblity of the title can be customized using `ShowTitle` property.
+Title text can be set using `Title` property. The visibility of the title can be customized using `ShowTitle` property.
 
 ![](Getting-Started_images/GettingStarted-img4.png)
 
@@ -221,7 +221,7 @@ The following illustration shows EditControl was created.
 
 **Configure Title**
 
-Title text can be set using `Title` property. The visiblity of the title can be customized using `ShowTitle` property.
+Title text can be set using `Title` property. The visibility of the title can be customized using `ShowTitle` property.
 
 {% tabs %}
 
