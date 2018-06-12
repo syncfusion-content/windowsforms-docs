@@ -175,7 +175,7 @@ Me.Controls.Add(groupBar1)
 
 {% endtabs %}
 
-**Step 4** - GroupBarItems can be added into the Groupbar container and can be customized using `GroupBarItems` collections property.
+**Step 4** - GroupBarItems can be added into the Groupbar container using `GroupBarItems` collections property.
 
 {% tabs %}
 
