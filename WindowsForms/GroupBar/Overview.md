@@ -16,7 +16,7 @@ GroupBar control provides a navigation UI similar to Microsoft Outlook. It has a
 
 * **Image settings**: Provides options to display Large images or Icons on the header of the GroupBar as well as Stacked GroupBar.
 
-* **Localization**: Provides localization support to customize GroupBar text into any desired language.
+* **Localization**: Provides localization support for all elements in GroupBar into any desired language.
 
 * **Stacked GroupBar**: Provides options to display GroupBarItems in a Stack like fashion. Stacked GroupBar provides a Navigation Pane that can be viewed at the bottom of the Groupbar.
 
