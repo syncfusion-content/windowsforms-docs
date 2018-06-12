@@ -9,528 +9,261 @@ documentation: ug
 
 # Getting started
 
-This tutorial will show you how easy it is to get started using Essential HTMLUI. It will give you a basic introduction to the concepts you need to know before getting started with the product and some tips and ideas on how to implement HTMLUI into your projects to improve customization and increase efficiency. The lessons in this tutorial are meant to introduce you to HTMLUI with simple step-by-step procedures.
+This section describes how to configure a `HTMLUIControl` in a Windows Forms application and overview of its basic functionalities.
+
+## Assembly deployment
+
+The following assemblies should be added as reference to use the HTMLUIControl in any application.
+
+<table>
+<tr>
+<th>
+{{'**Required assemblies**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+<tr>
+<td>
+Syncfusion.HTMLUI.Base.dll
+</td>
+<td>
+Syncfusion.HTMLUI.Base contains base classes of the controls used in the HTMLUIControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.HTMLUI.Windows.dll
+</td>
+<td>
+Syncfusion.HTMLUI.Windows contains classes that handles all UI operations and fundamentals used in the HTMLUIControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Scripting.Base.dll
+</td>
+<td>
+Syncfusion.Scripting.Base contains the class handles Scripting related properties used in HTMLUIControl.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base.dll
+</td>
+<td>
+Syncfusion.Shared.Base contains style related properties of the HTMLUIControl and various editor controls.
+</td>
+</tr>
+</table>
+
+## Installing NuGet packages
+
+To create Windows Forms application with HTMLUIControl, the following nuget packages should be installed.
+
+<table>
+<tr>
+<td>{{'**S.no**'| markdownify }}
+</td>
+<td>{{'**Framework version**'| markdownify }}
+</td>
+<td>{{'**NuGet Packages**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td> 1
+</td>
+<td> 2.0
+</td>
+<td> Syncfusion.HTMLUI.Windows20
+</td>
+</tr>
+<tr>
+<td> 2
+</td>
+<td> 3.5
+</td>
+<td> Syncfusion.HTMLUI.Windows35
+</td>
+</tr>
+<tr>
+<td> 3
+</td>
+<td> 4.0
+</td>
+<td> Syncfusion.HTMLUI.Windows40
+</td>
+</tr>
+<tr>
+<td> 4
+</td>
+<td> 4.5
+</td>
+<td> Syncfusion.HTMLUI.Windows45
+</td>
+</tr>
+<tr>
+<td> 5
+</td>
+<td> 4.5.1
+</td>
+<td> Syncfusion.HTMLUI.Windows451
+</td>
+</tr>
+<tr>
+<td> 6
+</td>
+<td> 4.6
+</td>
+<td> Syncfusion.HTMLUI.Windows46
+</td>
+</tr>
+</table>
 
+Get more details regarding how to install the nuget packages in windows form application in the [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages) link.
 
+# Creating simple application with HTMLUIControl
 
-## Creating an HTML display application
+You can create Windows Forms application with HTMLUIControl as follows:
 
-Lesson 1 will show you how to load HTML from any source and display it as an HTML display application (like a web browser or an HTML enabled email application).
+1. [Creating the project](#creating-the-project)
+2. [Adding control via Form Designer](#adding-control-via-form-designer)
+3. [Adding control manually using code](#adding-control-manually-using-code)
+4. [Loading a file into document](#Loading-a-file-into-document)
 
+### Creating the project
 
+Create a new Windows Forms project in Visual Studio to display the HTMLUIControl.
 
-## Creating an HTML layout
+## Adding control via Form designer
 
-In Lesson 2 you will learn how to lay out your user interfaces using HTMLUI. You can also learn how to let users interact with the various HTML elements from your application code.
+The HTMLUIControl can be added to the application by dragging it from the toolbox and dropping it in the designer view. The following required assembly references will be added automatically:
 
+   * Syncfusion.HTMLUI.Base.dll
+   * Syncfusion.HTMLUI.Windows.dll
+   * Syncfusion.Scripting.Base.dll
+   * Syncfusion.Shared.Base
 
+![](Getting-Started_images/GettingStarted-img1.png)
 
-## Lesson 1: Creating an HTML display application
+![](Getting-Started_images/GettingStarted-img5.png)
 
-The HTMLUI control can be used for displaying HTML documents with standard HTML/CSS formatting.
+**Configure Title**
 
-### Displaying HTML By using the HTMLUI control
+Title text can be set using `Title` property. The visiblity of the title can be customized using `ShowTitle` property.
 
-1. Create a new Windows Forms application and open the main form for the application in the designer. Add the Syncfusion controls to your VS.NET toolbox if you haven't done so already. Drag an HTMLUI control onto the form.
-2. HTML can be loaded into the HTMLUI control from the following sources:
+![](Getting-Started_images/GettingStarted-img4.png)
 
-   * From a HTML file.
-   * From a URI (Uniform resource Identifier).
-   * From a Stream.
+## Adding control manually using code
 
-3. Add a MainMenu component from the toolbox onto the form. Also add a OpenFileDialog component to the form and name it as "openDialog".
+To add the control manually in C#, follow the steps:
 
-   ![](Getting-Started_images/Getting-Started_img1.jpeg)
+**Step 1** : Add the following required assembly references to the project:
 
+   * Syncfusion.HTMLUI.Base.dll
+   * Syncfusion.HTMLUI.Windows.dll
+   * Syncfusion.Scripting.Base.dll
+   * Syncfusion.Shared.Base
 
-4. Add a handler for the Open menu item by double-clicking on the menu.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.HTMLUI**.
 
-   {% tabs %}
+{% tabs %}
 
-   {% highlight C# %}
+{% highlight C# %}
 
-		this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click);
+using Syncfusion.Windows.Forms.HTMLUI;
 
+{% endhighlight %}
 
+{% highlight VB %}
 
-		private void menuItem2_Click(object sender, System.EventArgs e)
+Imports Syncfusion.Windows.Forms.HTMLUI
 
-		{
+{% endhighlight %}
 
-			// Gets or Sets the initial directory displayed by file dialog box
+{% endtabs %}
 
-		openDlg.InitialDirectory = GetFilesLocation();
+**Step 3** : Create the HTMLUIControl instance and add it to the form.
 
+{% tabs %}
 
+{% highlight C# %}
 
-			 // Gets or Sets the current file name filter string, which determines the choices that appear in the 
+HTMLUIControl htmluiControl1 = new HTMLUIControl();
 
-			// "Save as File Type" or "File of type" box in the dialog box.
+this.htmluiControl1.Dock = System.Windows.Forms.DockStyle.Fill;
 
-		openDlg.Filter = "HTML files (*.htm)|*.htm|HTML Files (*.html)|*.html";
+this.htmluiControl1.Text = "htmluiControl1";
 
-		if( DialogResult.OK == openDlg.ShowDialog() )
+this.Controls.Add(this.htmluiControl1);
 
-		{
+{% endhighlight %}
 
-		string filePath = openDlg.FileName;
 
-		this.htmluiControl1.LoadHTML(filePath);
+{% highlight VB %}
 
-		}
+Dim htmluiControl1 As New HTMLUIControl()
 
-		}
+Me.htmluiControl1.Dock = System.Windows.Forms.DockStyle.Fill
 
+Me.htmluiControl1.Text = "htmluiControl1"
 
-   {% endhighlight %}
+Me.Controls.Add(Me.htmluiControl1)
 
-   {% highlight VB %}
+{% endhighlight %}
 
+{% endtabs %}
 
+The following illustration shows EditControl was created.
 
-		Me.menuItem2.Click += New System.EventHandler(Me.menuItem2_Click)
+![](Getting-Started_images/GettingStarted-img2.png)
 
+**Configure Title**
 
+Title text can be set using `Title` property. The visiblity of the title can be customized using `ShowTitle` property.
 
-		Private Sub menuItem2_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+{% tabs %}
 
+{% highlight C# %}
 
+this.htmluiControl1.ShowTitle = true;
+this.htmluiControl1.Title = "StartUp Document";
 
-		'  Gets or Sets the initial directory displayed by file dialog box
+{% endhighlight %}
 
-		openDlg.InitialDirectory = GetFilesLocation()
 
+{% highlight VB %}
 
+Me.htmluiControl1.ShowTitle = True
+Me.htmluiControl1.Title = "StartUp Document"
 
-		' Gets or Sets the current file name filter string, which determines the choices that appear in the 
+{% endhighlight %}
 
-		'  "Save as File Type" or "File of type" box in the dialog box.
+{% endtabs %}
 
-		openDlg.Filter = "HTML files (*.htm)|*.htm|HTML Files (*.html)|*.html"
+![](Getting-Started_images/GettingStarted-img6.png)
 
-		If DialogResult.OK = openDlg.ShowDialog() Then
 
-		Dim filePath As String = openDlg.FileName
+## Loading a file into document
 
-		Me.htmluiControl1.LoadHTML(filePath)
+File can be added to HTMLUIControl using `LoadHTML` method where the file path given as parameter.
 
-		End If
+{% tabs %}
 
-		End Sub
+{% highlight C# %}
 
-   {% endhighlight %}
+this.htmluiControl1.LoadHTML(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.htm");
 
-   {% endtabs %}
+{% endhighlight %}
 
-5. Now, run the sample and try loading a HTML document into the HTMLUI control.
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+{% highlight VB %}
 
-Any HTML document can be loaded from a file by using the method shown in this sample.
+Me.htmluiControl1.LoadHTML(Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\FileName.htm")
 
+{% endhighlight %}
 
+{% endtabs %}
 
-## Lesson 2: Creating an HTML layout
-
-The HTMLUI control can be used for displaying sophisticated user interfaces. HTML provides extensive means to layout and customize display elements. The HTMLUI control adds the ability to create user interfaces using HTML from within Windows Forms applications using managed code.
-
-### Creating the user interface
-
-1. Create a new Windows Forms application and open the main form for the application in the designer. Add Syncfusion controls to your VS .NET toolbox if you haven't done so already. Drag an HTMLUI control onto the form.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img3.jpeg)
-
-
-
-
-
-2. Some of the appearance and behavior-related aspects of the HTMLUI control can be controlled by setting the appropriate properties through the Properties Grid. The HTMLUI control displays a title bar at the top of the control. Set the title for this HTMLUI control to be "HTMLUI Tutorial".
-
-
-
-   ![](Getting-Started_images/Getting-Started_img4.jpeg)
-
-
-
-
-
-3. Add a new HTML document to the Windows Forms project. Edit the HTML document to define the user interface. In this case, you will have an HTML table with 3 rows and 1 column.
-
-   {% tabs %}
-
-   {% highlight HTML %}
-
-		<HTML>
-
-		<HEAD>
-
-		<TITLE> Creating User Interface </TITLE>
-
-		</HEAD>
-
-		<BODY bgcolor="#ffffff">
-
-
-
-		<TABLE id="Table1" height="360" cellSpacing="1" cellPadding="1" width="392" border="1">
-
-
-
-		<TR>
-
-		<TD align="center" height="72" valign="middle">
-
-		<INPUT id="txt" type="text" size="40" name="Text1"></INPUT>
-
-		</TD>
-
-		</TR>
-
-
-
-		<TR>
-
-		<TD align="center" height="209" valign="middle">
-
-		<TEXTAREA id="txtArea" name="Textarea1" rows="9" cols="35"></TEXTAREA>
-
-		</TD>
-
-		</TR>
-
-
-
-		<TR>
-
-		<TD align="center" valign="middle">
-
-		<INPUT id="btn" type="button" size="" value="Button" name="Button1"></INPUT>
-
-		</TD>
-
-		</TR>
-
-
-
-		</TABLE>
-
-
-
-		</BODY>
-
-		</HTML>
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-4. As shown in the HTML document above, a textbox, a text area and a button control has been added in the HTML document. The objective is to create an user interface by adding a Click event to the button element and on clicking the button, the text controls are made to display some text.
-
-
-
-5. The LoadFinished event is executed when the HTML document is loaded in the HTMLUI control. Add a handler for the LoadFinished event of the HTMLUI control. Access the HTML elements inside the managed code with objects created for each element as defined in the HTMLUI namespace.
-
-   {% tabs %}
-
-   {% highlight C# %}
-
-		//Objects declaration made global
-
-		INPUTElementImpl text;
-
-		INPUTElementImpl button;
-
-		TEXTAREAElementImpl textArea;
-
-
-
-		//HTMLUI control LoadFinishedEvent handler declaration
-
-		this.htmluiControl1.LoadFinished += new System.EventHandler(this.htmluiControl1_LoadFinished);
-
-
-
-		//HTMLUI control LoadFinishedEvent definition
-
-		private void htmluiControl1_LoadFinished(object sender, System.EventArgs e)
-
-		{
-
-		Hashtable html = this.htmluiControl1.Document.GetElementsByUserIdHash();
-
-
-
-		this.text = html["txt"] as INPUTElementImpl;
-
-		this.button = html["btn"] as INPUTElementImpl;
-
-		this.textArea = html["txtArea"] as TEXTAREAElementImpl;
-
-
-
-		//Click Event declaration for HTML button element
-
-		this.button.Click += new EventHandler(button_Click);
-
-		}
-
-
-
-		private void button_Click(object sender, EventArgs e)
-
-		{
-
-
-
-		//Click Event definition and Text control UserInterface
-
-		this.text.UserControl.CustomControl.Text = "HTML provides extensive means to layout and customize display elements.";
-
-		this.textArea.UserControl.CustomControl.Text = "The HTMLUI control adds the ability to create user interfaces using HTML from within Windows Forms applications using managed code.";
-
-		}
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-
-
-6. Now, run the sample which displays the text on clicking the button as shown below.
-
-
-
-![](Getting-Started_images/Getting-Started_img5.jpeg)
-
-
-
-### Creating and displaying custom controls
-
-To create and display custom controls:
-
-1. Add the Custom tags in the HTML document to display custom Windows Forms controls. In this case, a MaskedEditBox, MonthCalendar, and DataGrid will be displayed in each of the cells in the HTML Table.
-
-   {% tabs %}
-
-   {% highlight HTML %}
-
-		<HTML>
-
-		<HEAD>
-
-		<TITLE>HTMLUI CUSTOM CONTROLS</TITLE>
-
-		<style> 
-
-		.tttDisplay { text-decoration: none; color: #ffffff; font-family: Tahoma; font-size: 34pt; font-weight: bold; line-height: 30px; padding-left: 2px; }
-
-		</style>
-
-		</HEAD>
-
-		<BODY>
-
-
-
-		<TABLE id="CustomControls" cellSpacing="0" cellPadding="0" width="100%" bgColor="silver" border="1" height="100%" align="center">
-
-
-
-		<TR>
-
-		<TD class="tttDisplay" height="33%" width="100%" id="cctd1" vAlign="center">
-
-		<maskededittextbox id="maskedEditTextBox1" height="20" width="136">
-
-		</maskededittextbox>
-
-		</TD>
-
-		</TR>
-
-
-
-		<TR>
-
-		<TD class="tttDisplay" height="33%" width="100%" id="cctd2" vAlign="center">
-
-		<monthcalendar id="monthCalendar1" width="199" height="155"></monthcalendar>
-
-		</TD>
-
-		</TR>
-
-
-
-		<TR>
-
-		<TD class="tttDisplay" height="33%" width="100%" id="cctd3" vAlign="center">
-
-		<datagrid id="dataGrid1" width="304" height="144"></datagrid>
-
-		</TD>
-
-		</TR>
-
-
-
-		</TABLE>
-
-
-
-		</BODY>
-
-		</HTML>
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-   Note the custom tags masked edit box, month calendar, and datagrid. These tags do not have any relation to the name of the control type they represent. Set the desired size of the custom control by setting the width and height attributes.
-
-   In the previous step, three custom controls were defined as part of the HTMLUI interface. The actual Windows Forms controls that represent these definitions have to be added to the form.
-
-
-
-2. Drag a MonthCalendar control from the toolbox and drop it on the form. The MonthCalendar will be named monthCalendar1 by default. Use this name in the next step to associate it with the appropriate HTML-defined control.
-3. Drag a MaskedEditBox control and a DataGrid control onto the form.
-
-   ![](Getting-Started_images/Getting-Started_img6.jpeg)
-
-
-
-
-
-4. Add a handler for the PreRenderDocument event of the HTMLUI control.
-
-
-
-   This step associates the Windows Forms controls on the form with controls defined in the HTML. This is done in the PreRenderDocument event handler of the HTMLUI control. This event is raised before the control renders the HTML elements (after it has parsed the HTML document into HTML elements).
-
-   {% tabs %}
-
-   {% highlight C# %}
-
-
-
-		this.htmluiControl1.PreRenderDocument += new Syncfusion.Windows.Forms.HTMLUI.PreRenderDocumentEventHandler(this.htmluiControl1_PreRenderDocument);
-
-
-
-		// Event that is to be raised when a tree of element has been created and their size and location have 
-
-		// not been calculated yet.
-
-		private void htmluiControl1_PreRenderDocument(object sender, Syncfusion.Windows.Forms.HTMLUI.PreRenderDocumentArgs e)
-
-		{
-
-		Hashtable tab = new Hashtable();
-
-		tab = e.Document.ElementsByUserID;
-
-
-
-		BaseElement maskedEditTextBoxElement1 = tab["maskedEditTextBox1"] as BaseElement;
-
-
-
-		   // Create a new Wrapper object
-
-		new CustomControlBase( maskedEditTextBoxElement1, this.maskedEditBox1  ); 
-
-
-
-		BaseElement monthCalendarElement1 = tab["monthCalendar1"] as BaseElement;
-
-		new CustomControlBase( monthCalendarElement1, this.monthCalendar1  ); 
-
-
-
-		BaseElement dataGridElement1 = tab["dataGrid1"] as BaseElement;
-
-		new CustomControlBase( dataGridElement1, this.dataGrid1  ); 
-
-		}
-
-   {% endhighlight %}
-
-   {% endtabs %}
-
-5. Add a handler for the Load event and load the HTML document resource into the HTMLUI control.
-
-   {% tabs %}
-
-   {% highlight C# %}
-
-		this.Load += new System.EventHandler(this.Form1_Load);
-
-
-
-		private void Form1_Load(object sender, System.EventArgs e)
-
-		{
-
-		LoadHTMLResource();                        
-
-		}
-
-
-
-		private bool LoadHTMLResource()
-
-		{
-
-		bool success = false;
-
-		try
-
-		{
-
-
-
-			 // Gets the Assembly that contains the code that is currently executing
-
-		_assembly = Assembly.GetExecutingAssembly();
-
-
-
-				// Loads the specified manifest resource from the Assembly
-
-		_htmlStream = (Stream)_assembly.GetManifestResourceStream("HTMLUICustomControls.custom.htm");
-
-		if(_htmlStream != null)
-
-		{
-
-		this.htmluiControl1.LoadHTML(_htmlStream);
-
-		success = true;
-
-		}
-
-		}
-
-		catch(Exception ex)
-
-		{
-
-		MessageBox.Show(ex.ToString());
-
-		}
-
-		return success;
-
-		}
-
-   {% endhighlight %}
-
-   {% endtabs %}
-		
-		
-![](Getting-Started_images/Getting-Started_img7.jpeg)
-
-
-
+![](Getting-Started_images/GettingStarted-img3.png)
