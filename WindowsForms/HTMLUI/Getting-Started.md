@@ -215,7 +215,6 @@ Me.Controls.Add(Me.htmluiControl1)
 
 {% endtabs %}
 
-The following illustration shows EditControl was created.
 
 ![](Getting-Started_images/GettingStarted-img2.png)
 

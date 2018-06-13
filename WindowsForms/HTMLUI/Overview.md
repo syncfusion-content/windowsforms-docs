@@ -9,14 +9,14 @@ documentation: ug
 
 # Overview
 
-HTMLUIControl helps to render Hypertext Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, HTMLUI comes with advanced options to work with web-related issues like navigating through a history of documents, etc.
+HTMLUIControl helps to render the Hyper Text Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, HTMLUI comes with advanced options to work with web-related functionalities like navigating through a history of documents, selection and much more.
 
 
 ## Key Features
 
-* **Loading Document** - Provides options to load contents from Files, Resource, URI and string.
+* **Loading Document** - Provides option to load HTML content from file, resource, URL, string and much more. 
 
-* **Custom Controls** - Provide option to load custom controls.
+* **Custom Controls** - Provides option to load custom controls.
 
 * **Element Binding** -  Supports numerous elements in an HTML document for rendering and presenting them.
 
@@ -32,4 +32,4 @@ HTMLUIControl helps to render Hypertext Markup Language (HTML). Its functionalit
 
 * **Localization** - Provides localization support for all elements into any desired language.
 
-* **Searching** - Provides built-in Find dialog windows to search the desired text.
+* **Searching** - Provides built-in Find dialog window to search and highlight the required text. 
