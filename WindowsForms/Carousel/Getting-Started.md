@@ -175,6 +175,8 @@ Carousel control can be added to the application by dragging it from the toolbox
 
 ![](Getting-Started_images/Carousel_Toolbox1.png) 
 
+![](Getting-Started_images/Carousel_img6.png) 
+
 
 ## Adding control manually in code
 
