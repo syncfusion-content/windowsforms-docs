@@ -118,9 +118,27 @@ When this property is set to true, the form will receive KeyPress, KeyDown, and
 
 {% tabs %}
 {% highlight c# %}
+this.IsMdiContainer = true;
+
+//Creating MDI child
+SfForm child1 = new SfForm();
+Child1.Text = "Child1;
+Child1.MdiParent = this;
+Child1.Show();
+
+//Enabling KeyPreview for the child.
 child1.KeyPreview = true;
 {% endhighlight %}
 {% highlight vb %}
+Me.IsMdiContainer = True
+
+'Creating MDI child
+Dim child1 As New SfForm()
+child1.Text = "Child1"
+child1.MdiParent = Me
+child1.Show()
+
+'Enabling KeyPreview for the child.
 child1.KeyPreview = True
 {% endhighlight %}
 {% endtabs %}
