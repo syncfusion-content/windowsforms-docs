@@ -23,7 +23,7 @@ The Radial Menu comprises a hierarchical menu in a circular layout. It is used a
 
 * **RadialFontListBox** - Provides option to get font style from the numerous built-in font list.
 
-* **Display Style** - Provides options to set DisplayStyle such as Text, Image, TextAboveImage or ImageAboveText.
+* **Display style** - Provides options to set DisplayStyle such as Text, Image, TextAboveImage or ImageAboveText.
 
-* **Image Settings** - Provides options to set menu centre icon as well as images for menu items.
+* **Image settings** - Provides options to set menu centre icon as well as images for menu items.
 

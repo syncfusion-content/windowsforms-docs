@@ -16,12 +16,12 @@ SpellCheckerAdv control offers Microsoft Office style spell checking capabilitie
 
 ## Features
 
-* **Ignore and Replace** - Provides options to Ignore and replace words one by one as well as all words at once.
+* **Ignore and replace** - Provides options to Ignore and replace words one by one as well as all words at once.
 
-* **Dictionary Settings** - Provides built-in dictionary for English Language and also helps to configure based on your own language, using its Custom Dictionary option. 
+* **Dictionary settings** - Provides built-in dictionary for English Language and also helps to configure based on your own language, using its Custom Dictionary option. 
 
-* **Ignores Special expressions** - Provides options to Ignore Email, URL, numbers, Mixed case words and much more.
+* **Ignores special expressions** - Provides options to Ignore Email, URL, numbers, Mixed case words and much more.
 
-* **Visual Style** - Provide rich set of Visual Style to customize the look and feel of SpellCheckerAdv.
+* **Visual style** - Provide rich set of Visual Style to customize the look and feel of SpellCheckerAdv.
  
 

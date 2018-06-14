@@ -13,12 +13,12 @@ documentation: ug
 
 ## Key Features
 
-* **Text Formats** - Provides options set the progress format as Percentage, Value or other custom format.
+* **Text formats** - Provides options set the progress format as Percentage, Value or other custom format.
 
-* **Progress Image** - Provides options to set image for progress indication.
+* **Progress image** - Provides options to set image for progress indication.
 
 * **Customization options** - Supports color customization like foreground, background colors, appearance can also be customized in any form and much more.
 
 * **Orientation** - Supports both horizontal and vertical orientation.
 
-* **Visual Style** - Provides rich set of visual styles to customize the look and feel of ProgressBarAdv.
+* **Visual style** - Provides rich set of visual styles to customize the look and feel of ProgressBarAdv.
