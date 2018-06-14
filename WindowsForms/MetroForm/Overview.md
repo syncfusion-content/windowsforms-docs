@@ -13,12 +13,15 @@ documentation: ug
 
 ![](Overview_images/Overview.png)
 
-## Features
+## Key Features
 
-* Supports various color schemes customization.
-* Help button support.
-* Complete support for Caption Bar and Caption Image customization.
-* Right to left support.
+* **Color customization** - Supports to customize Caption Background, Foreground color, Control box buttons Background and Foreground color and Border color.
 
-* **Caption Labels** - Provides support to add Label in desired location on Caption Bar.
+* **Help button** - Provides Help button support.
+
+* **Custom image** - Support to display Image and Text information in Caption Bar.
+
+* **Right to left** - Supports RightToLeft layout.
+
+* **Caption labels** - Provides support to add Label in desired location on Caption Bar.
  
