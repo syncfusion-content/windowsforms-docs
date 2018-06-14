@@ -240,7 +240,7 @@ CommandBar can be added to [MainFrameBarManager](https://help.syncfusion.com/cr/
 
 BarItem can be added to CommandBar by dragging [XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) from the toolbox and dropping it into CommandBar and Add BarItem to XPToolBar.
 
-![](GettingStarted-images/GettingStarted-img7.png)
+![](GettingStarted-images/GettingStarted-img8.png)
 
 ## Adding control manually using code
 
