@@ -13,15 +13,15 @@ documentation: ug
 
 # Key features
 
-* **Segment Spacing** - Provides option to set user defined spacing between segments through a float value.
+* **Segment spacing** - Provides option to set user defined spacing between segments through a float value.
 
-* **Character Type** - Provides option to display characters in different segment styles.
+* **Character type** - Provides option to display characters in different segment styles.
 
-* **Character Count** - Provides option to customize the number of characters to be displayed.
+* **Character count** - Provides option to customize the number of characters to be displayed.
 
-* **Customization Option** - Supports color and visibility customization of all elements.
+* **Customization option** - Supports color and visibility customization of all elements.
 
-* **Visual Style** - Supports rich set of visual styles to customize the look and feel.
+* **Visual style** - Supports rich set of visual styles to customize the look and feel.
 
 
 

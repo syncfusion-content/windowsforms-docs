@@ -14,17 +14,17 @@ HTMLUIControl helps to render the Hyper Text Markup Language (HTML). Its functio
 
 ## Key Features
 
-* **Loading Document** - Provides option to load HTML content from file, resource, URL, string and much more. 
+* **Loading document** - Provides option to load HTML content from file, resource, URL, string and much more. 
 
-* **Custom Controls** - Provides option to load custom controls.
+* **Custom controls** - Provides option to load custom controls.
 
-* **Element Binding** -  Supports numerous elements in an HTML document for rendering and presenting them.
+* **Element binding** -  Supports numerous elements in an HTML document for rendering and presenting them.
 
 * **Bookmarks** - Supports Bookmarks which helps to switch particular references in the page when the link is clicked
 
-* **Style Sheets** - Supports style sheets such as External, Internal and Inline to customize the appearance.
+* **Style sheets** - Supports style sheets such as External, Internal and Inline to customize the appearance.
 
-* **HTML Table** - Provides options to load Table in required dimensions.
+* **HTML table** - Provides options to load Table in required dimensions.
 
 * **Exporting** - Provides option to export contents in required formats.
 
