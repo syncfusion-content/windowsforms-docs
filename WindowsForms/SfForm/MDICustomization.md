@@ -124,10 +124,11 @@ this.IsMdiContainer = true;
 SfForm child1 = new SfForm();
 Child1.Text = "Child1;
 Child1.MdiParent = this;
-Child1.Show();
 
 //Enabling KeyPreview for the child.
 child1.KeyPreview = true;
+
+Child1.Show();
 {% endhighlight %}
 {% highlight vb %}
 Me.IsMdiContainer = True
@@ -136,9 +137,10 @@ Me.IsMdiContainer = True
 Dim child1 As New SfForm()
 child1.Text = "Child1"
 child1.MdiParent = Me
-child1.Show()
 
 'Enabling KeyPreview for the child.
 child1.KeyPreview = True
+
+child1.Show()
 {% endhighlight %}
 {% endtabs %}
