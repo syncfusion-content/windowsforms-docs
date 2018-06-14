@@ -11,60 +11,173 @@ documentation: ug
 
 This section briefly describes how to design a TreeNavigator Control in a Windows Forms Application.
 
-* Adding a TreeNavigator Control 
-* Configuring the TreeNavigator Control
+## Assembly Deployment
+The following list of assemblies needs to be added as reference to use TreeNavigator in any application,
 
-## Add a TreeNavigator control
+NameSpace: Syncfusion.Windows.Forms.Tools
 
-* Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
-* Drag and Drop TreeNavigator control in the Form from Toolbox.
+Assembly: Syncfusion.Tools.Windows
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+Dependent Assembly : Syncfusion.Shared.Base
 
-## Configure the TreeNavigator control
+<table>
+<tr>
+<th>
+Required assemblies<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+{{'[Syncfusion.Tools.Windows]<br/><br/></td><td>
+Syncfusion.Tools.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of TreeNavigator Control.<br/><br/></td></tr>
+<tr>
+<td>
+{{'[Syncfusion.Shared.Base]<br/><br/></td><td>
+Syncfusion.Shared.Base contains style related properties and various other controls which are used in TreeNavigator Control.<br/><br/></td></tr>
+</table>
 
-The most commonly used settings of the TreeNavigator control are configured either through Designer using the Smart tag or through the Properties window or through code.
+We can Implement Tree navigator in Two ways they are,
+*	Adding Control Via Designer
+*	Adding Control Manually in C#
 
-![](Getting-Started_images/Getting-Started_img2.png)
 
-To add TreeNavigator Control to a Windows Forms Application through code behind.
+## Adding Control Via Designer
 
-1. Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools.
+1.	Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
+2.	Then Drag and Drop the TreeNavigator control from the toolbox into the designer page.
 
-{% tabs %}
-{% highlight c# %}
 
-//Namespaces.
-using Syncfusion.Windows.Forms.Tools;
-using Syncfusion.Windows.Forms;
+![](Getting-Started_images/DragDrop.png)
 
-{% endhighlight %}
 
-{% highlight vb %}
+3.	Once you drag drop the TreeNavigator into the designer page, the TreeNavigator will be added successfully into the application with the required libraries.
 
-'Namespaces.
-Imports Syncfusion.Windows.Forms
-Imports Syncfusion.Windows.Forms.Tools
 
-{% endhighlight %}
-{% endtabs %}
+![](Getting-Started_images/AfterDragDrop.png)
 
-2. Create an instance of the TreeNavigator control and add it to the Form.
 
-{% tabs %}
-{% highlight c# %}
 
-//Creates the TreeNavigator instance.
-TreeNavigator treeNavigator = new TreeNavigator();
-this.Controls.Add(treeNavigator);
+## Adding control manually in C#
+TreeNavigator can be added through code-behind by following the below steps.
 
-{% endhighlight %}
+1.	Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools which are needed for the Control.
 
-{% highlight vb %}
 
-'Creates the TreeNavigator instance.
-Dim treeNavigator As New TreeNavigator()
-Me.Controls.Add(treeNavigator)
 
-{% endhighlight %}
-{% endtabs %}
+   ~~~ cs
+
+
+
+		//Namespaces.
+
+		using Syncfusion.Windows.Forms.Tools;
+
+		using Syncfusion.Windows.Forms;
+
+   ~~~
+   {:.prettyprint}
+
+   ~~~ vbnet
+
+
+
+		‘Namespaces.
+
+		Imports Syncfusion.Windows.Forms
+
+		Imports Syncfusion.Windows.Forms.Tools
+
+   ~~~
+   {:.prettyprint}
+
+2.	To add TreeNavigator Control to a Windows Forms Application through code, Create an instance of the TreeNavigator control and add it to the Form.
+
+   ~~~ cs
+
+
+		//Creates the TreeNavigator instance.
+
+		TreeNavigator treeNavigator = new TreeNavigator();
+
+
+		this.Controls.Add(treeNavigator);
+
+   ~~~
+   {:.prettyprint}
+
+   ~~~ vbnet
+
+
+
+		‘Creates the TreeNavigator instance.
+
+		Dim treeNavigator As TreeNavigator = New TreeNavigator()
+
+
+		Me.Controls.Add(treeNavigator)
+
+   ~~~
+   {:.prettyprint}
+
+## Adding TreeMenuItem to the control
+     The TreeNavigator is populated with the collection of TreeMenuItem using the items property. we can add TreeMenuItem in two Ways,
+     
+     * Adding items manually in C#
+	 * Adding items through Designer 
+
+The following code example allows you to add TreeMenuItem to the TreeNavigator.
+
+
+
+ ~~~ cs
+
+
+		//Adds items to the TreeNavigator.
+this.treeNavigator.Header.HeaderText = "This PC";
+TreeMenuItem treemenuitem1 = new TreeMenuItem();
+this.treeNavigator.Items.Add(treemenuitem1);
+treemenuitem1.Text = "Desktop";
+TreeMenuItem treemenuitem2 = new TreeMenuItem();
+this.treeNavigator.Items.Add(treemenuitem2);
+treemenuitem2.Text = "Document";
+TreeMenuItem treemenuitem3 = new TreeMenuItem();
+this.treeNavigator.Items.Add(treemenuitem3);
+treemenuitem3.Text = "Downloads";
+
+   ~~~
+   {:.prettyprint}
+
+   ~~~ vbnet
+
+
+
+		'Adds items to the TreeNavigator.
+Me.treeNavigator1.Header.HeaderText = "This PC"
+Dim treemenuitem1 As TreeMenuItem = New TreeMenuItem()
+Me.treeNavigator1.Items.Add(treemenuitem1)
+treemenuitem1.Text = "Desktop"
+Dim treemenuitem2 As TreeMenuItem = New TreeMenuItem()
+Me.treeNavigator1.Items.Add(treemenuitem2)
+treemenuitem2.Text = "Document"
+Dim treemenuitem3 As TreeMenuItem = New TreeMenuItem()
+Me.treeNavigator1.Items.Add(treemenuitem3)
+treemenuitem3.Text = "Downloads"
+
+
+
+   ~~~
+   {:.prettyprint}
+
+
+
+The following steps allows you to add TreeMenuItem to the TreeNavigator through Designer,
+1.	Once you drag drop the TreeNavigator into the designer page, the TreeNavigator will be added successfully into the application, you can see the Smart Tag on the top right corner.
+
+2.	Click the Smart Tag button and select the items property from the listed properties.
+
+![](Getting-Started_images/ThroughDesigner.png)
+
+3.	Then add  items as shown below.
+   
+![](Getting-Started_images/ThroughDesigner2.png)
+
+![](Getting-Started_images/Adding_TreeMenuitems.png)
