@@ -12,7 +12,7 @@ GroupBar control provides a navigation UI similar to Microsoft Outlook. It has a
 
 ## Key Features
 
-* **Text Settings**: Provides options to align the text to the Left, Right, or Center and also supports renaming the GroupBarItems at run-time. 
+* **Text settings**: Provides options to align the text to the Left, Right, or Center and also supports renaming the GroupBarItems at run-time. 
 
 * **Image settings**: Provides options to display Large images or Icons on the header of the GroupBar as well as Stacked GroupBar.
 
@@ -22,7 +22,7 @@ GroupBar control provides a navigation UI similar to Microsoft Outlook. It has a
 
 * **Nested GroupBar**: Provides option to add GroupBar control into another GroupBar Control. It can be deployed as a Generic Control Container with maximum flexibility.
 
-* **Visual Styles** : Provides option to customize the appearance using rich set of available built-in visual styles.
+* **Visual style** : Provides option to customize the appearance using rich set of available built-in visual styles.
 
 * **Serialization** - Provides options to save and load the state of the GroupBarItems.
 

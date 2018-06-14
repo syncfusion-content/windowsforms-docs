@@ -27,9 +27,9 @@ This section covers the features of XPTaskPane control.
 
 * **Navigation** - Provides options to navigate through pages at design-time by selecting Previous page and Next page verbs or using arrow keys in the XPTaskPage Collection Editor.
 
-* **Page Sequencing** - Provides options to reorder the pages through 'Bring to front' and 'Send to back' verbs or by using XPTaskPage Collection Editor.
+* **Page sequencing** - Provides options to reorder the pages through 'Bring to front' and 'Send to back' verbs or by using XPTaskPage Collection Editor.
 
-* **Visual Style** - Support rich set of built-in themes like Office, Metro and much more.
+* **Visual style** - Support rich set of built-in themes like Office, Metro and much more.
 
 
 

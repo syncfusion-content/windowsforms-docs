@@ -15,9 +15,9 @@ The TabSplitterContainer control provides a VS 2008-style, tabbed, split view of
 
 ## Key Features
 
-* **Splitter Components** - Provides rich set of built-in components such as primary and secondary pages, swap button, collapse and expand buttons.
+* **Splitter components** - Provides rich set of built-in components such as primary and secondary pages, swap button, collapse and expand buttons.
 
-* **Swap Pages** - Provides option to swap between pages at design time as well as runtime.
+* **Swap pages** - Provides option to swap between pages at design time as well as runtime.
 
 * **Orientation** - Provides support for horizontal and vertical orientations.
 

@@ -13,10 +13,10 @@ The Carousel control is a circular conveyor on which objects are displayed and r
 
 ## Key Features
 
-* **Carousel Path** - Provides wide varieties of built-in path to arrange carousel items when animated.
+* **Carousel path** - Provides wide varieties of built-in path to arrange carousel items when animated.
 
 * **Perspective** - Provides option to enlarge and shrink the size of the elliptical view using float values.
 
 * **Transition speed** - Provides option for setting an user defined speed for the controls to be rotated.
 
-* **ImageSlides** - Provides options for adding and displaying images in carousel path
+* **Image slides** - Provides options for adding and displaying images in carousel path
