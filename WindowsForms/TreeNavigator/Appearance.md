@@ -168,7 +168,7 @@ In Tree Navigator you can customize the tree menu items with the help of propert
 
 *	ItemBackColor – This property is used to set the back color for the tree menu item when it is in normal state. 
 
-Note: This property also available in treenavigator in which it is used to set the backcolor for all the treemenuitems present in the treenavigator. However, First priority is given to the TreeMenuItem ItemBackColor. For example: If the TreeMenuItem is set to some backcolor then that color is set to that item irrespective of TreeNavigator ItemBackColor.
+Note: This property also available in treenavigator in which it is used to set the backcolor for all the tree menu items present in the treenavigator. However, First priority is given to the TreeMenuItem ItemBackColor. For example: If the TreeMenuItem is set to some backcolor then that color is set to that item irrespective of TreeNavigator ItemBackColor.
 
 *	ItemHoverColor – This property is used to set the hover color for the tree menu item when it is in hover state.
 *	SelectedColor - This property is used to set the back color for the selected tree menu item.
@@ -179,7 +179,7 @@ The following code example allows you to customize the TreeMenuItem
 
 {% highlight c# %}
 
-//To customize backcolor for all the treemenuitems in the treenavigator
+//To customize backcolor for all the tree menu items in the treenavigator
 this.treeNavigator1.ItemBackColor = Color.LightYellow;
 
 //To customize the tree menu item backcolor
@@ -191,7 +191,7 @@ this.treeMenuItem3.ItemHoverColor = Color.LightPink;
 //To customize the selected item color
 this.treeMenuItem4.SelectedColor = Color.Gainsboro;
 
-//To customize the selected item forecolor
+//To customize the selected item fore color
 this.treeMenuItem4.SelectedItemForeColor = Color.Blue;
 
 
@@ -199,7 +199,7 @@ this.treeMenuItem4.SelectedItemForeColor = Color.Blue;
 
 {% highlight vbnet %}
 
-‘To customize backcolor for all the treemenuitems in the treenavigator
+‘To customize backcolor for all the tree menu items in the treenavigator
 Me.treeNavigator1.ItemBackColor = Color.LightYellow
 
 ‘To customize the tree menu item backcolor
@@ -211,7 +211,7 @@ Me.treeMenuItem3.ItemHoverColor = Color.LightPink
 ‘To customize the selected item color
 Me.treeMenuItem4.SelectedColor = Color.Gainsboro
 
-‘To customize the selected item forecolor
+‘To customize the selected item fore color
 Me.treeMenuItem4.SelectedItemForeColor = Color.Blue
 
 {% endhighlight %}
