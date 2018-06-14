@@ -18,11 +18,11 @@ The [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools
 
 **Extensive design-time support** - Provides rich Design-Time features for code less configuration.
 
-**RightToLeft** - Supports RightToLeft alignment of its elements.
+**Right to left** - Supports RightToLeft alignment of its elements.
 
 **Validation** - Provides option to set page processing validation for Wizard Pages.
 
-**Search Engine Friendly** - Provides a consistent look and feel across all major browsers.
+**Search engine friendly** - Provides a consistent look and feel across all major browsers.
 
 **Events** - Provides handful events help you to follow the state of the control at run time and implement custom pages sequence.
 

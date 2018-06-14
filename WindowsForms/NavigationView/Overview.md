@@ -15,12 +15,12 @@ documentation: ug
 
 * **Image** - Provides options to set images for each Parent Bar as well as Child Bar.
 
-* **History Settings** -  Provides options to drop-down the History of the previously visited locations and provides options to show/hide the History Button.
+* **History settings** -  Provides options to drop-down the History of the previously visited locations and provides options to show/hide the History Button.
 
-* **Visual Style** - Provides options to customize the look and feel using visual styles such as Metro, Office2007 and Vista.
+* **Visual style** - Provides options to customize the look and feel using visual styles such as Metro, Office2007 and Vista.
 
-* **RightToLeft** - Provides options to set RightToLeft alignment.
+* **Right to left** - Provides options to set RightToLeft alignment.
 
-* **Custom Buttons** - Provides options to add Custom buttons into NavigationView.
+* **Custom buttons** - Provides options to add Custom buttons into NavigationView.
 
-* **Edit Mode** - Supports Edit Mode for quick navigation.
+* **Edit mode** - Supports Edit Mode for quick navigation.

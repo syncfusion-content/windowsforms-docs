@@ -15,9 +15,9 @@ documentation: ug
 
 # Key features
 
-**BarItem Types** - Provides rich set of built-in controls to be added as a BarItem of the XPToolbar
+**BarItem types** - Provides rich set of built-in controls to be added as a BarItem of the XPToolbar
 
-**Visual Style** - Provides options to customize the look and feel of XPToolBar using various built-in styles.
+**Visual style** - Provides options to customize the look and feel of XPToolBar using various built-in styles.
 
 **Image settings** - Provides option to set large Icons and also to set BackgroundImage
 
