@@ -8,23 +8,19 @@ documentation: ug
 ---
 # BorderLayout
 
-BorderLayout is a Layout Manager which allows the user to arrange and layout the Child controls along the borders and at the center, just like the .NET framework's built-in docking support.
+`BorderLayout` is a Layout Manager which allows the user to arrange and layout the Child controls along the borders and at the center, just like the .NET framework's built-in docking support.
 
 ![](Overview_images/Overview_img15.jpeg)
 
-
 N> BorderLayout does not arrange the Child components automatically like the other Layout Managers.
 
-
-# Key Features
+# Key features
 
 **Spacing** - Provides option to customize horizontal and vertical gaps between child controls
 
 **Position** - Provides options to set the direction of child controls such as north, south, east, west or center.
 
 **Size** - Provides option to  customize the size of the child controls in BorderLayout.
-
-
 
 # Getting started
 
@@ -52,8 +48,6 @@ The Syncfusion.Shared.Base contains the class that handles all UI operations and
 </td>
 </tr>
 </table>
-
-
 
 # Installing NuGet Packages
 
@@ -118,29 +112,23 @@ To use BorderLayout control in Windows Forms application via nuget, the followin
 </tr>
 </table>
 
- 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
-
-
 
 # Creating simple application with BorderLayout
 
 You can create the Windows Forms application with BorderLayout control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
-
-
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the BorderLayout with basic functionalities.
 
-
-## Adding control via Form designer
+## Adding control via designer
 
 The BorderLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -161,8 +149,6 @@ The child controls can be added to the layout by dragging it from the toolbox an
 
 ![](BorderLayout_images/BorderLayout_img5.png)
 
-
-
 ## Adding control manually using code
 
 To add control manually in C#, follow the given steps:
@@ -171,19 +157,19 @@ To add control manually in C#, follow the given steps:
 
 	* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Shared.Base**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Shared.Base;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Shared.Base
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 
@@ -211,7 +197,7 @@ Me.borderLayout1.ContainerControl = Me
 
 {% endtabs %}
 
-**Adding Layout components**
+**Adding layout components**
 
 The child controls can be added to the layout by simply adding it to the form, since the form is its container control.
 

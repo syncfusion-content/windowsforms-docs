@@ -9,11 +9,11 @@ documentation: ug
 
 # Overview
 
-The TabSplitterContainer control provides a VS 2008-style, tabbed, split view of tab groups to help easily render different views of the same document. The splitter comes with advanced options like swapping of splitter pages, adjustable splitter position, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter. This user guide will easily guide you with the features of TabSplitterContainer control.
+The `TabSplitterContainer` control provides a VS 2008-style, tabbed, split view of tab groups to help easily render different views of the same document. The splitter comes with advanced options like swapping of splitter pages, adjustable splitter position, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter. This user guide will easily guide you with the features of TabSplitterContainer control.
 
 ![](Overview_images/Overview_img5.jpeg)
 
-## Key Features
+## Key features
 
 * **Splitter components** - Provides rich set of built-in components such as primary and secondary pages, swap button, collapse and expand buttons.
 

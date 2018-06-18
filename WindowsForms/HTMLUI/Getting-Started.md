@@ -128,7 +128,7 @@ Get more details regarding how to install the nuget packages in windows form app
 You can create Windows Forms application with HTMLUIControl as follows:
 
 1. [Creating the project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 4. [Loading a file into document](#Loading-a-file-into-document)
 
@@ -136,7 +136,7 @@ You can create Windows Forms application with HTMLUIControl as follows:
 
 Create a new Windows Forms project in Visual Studio to display the HTMLUIControl.
 
-## Adding control via Form designer
+## Adding control via designer
 
 The HTMLUIControl can be added to the application by dragging it from the toolbox and dropping it in the designer view. The following required assembly references will be added automatically:
 
