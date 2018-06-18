@@ -15,7 +15,7 @@ The virtual method for providing data to a GridControl will be discussed in [Vir
 
 ## Indexer Technique
 
-To place the data into a grid using the indexer technique, it is necessary to loop through all the rows and column and set the [CellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValue.html#) property for each cell. This technique is mainly used for small grids.
+To place the data into a grid using the indexer technique, it is necessary to loop through all the rows and column and set the [CellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValue.html#) property for each cell. This technique is mainly used for small grids.
 
 
 {% tabs %}
@@ -56,7 +56,7 @@ N> The Undo/Redo support of the grid needs to be turned off so that initial popu
 
 ## PopulateValues Method
 
-GridControl has [PopulateValues](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~PopulateValues.html#) method to overcome the looping of data through cell by cell. This method is used to pass a range of cells of type [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html#) and data source of type `object`. 
+GridControl has [PopulateValues](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~PopulateValues.html#) method to overcome the looping of data through cell by cell. This method is used to pass a range of cells of type [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html#) and data source of type `object`. 
 
 On using the `PopulateValues` method, data values are just been copied from your data source and placed into the GridControl. Hence it is an entirely different concept of binding a grid to a data source which can be achieved only in [GridGroupingControl](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started). 
 
@@ -100,7 +100,7 @@ Me.gridControl1.PopulateValues(GridRangeInfo.Cells(1, 1, Me.gridControl1.RowCoun
 
 ## Using Cell Style
 
-The appearance of a cell can be changed and displayed using the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) class. It contains all the style properties that are needed for a cell.
+The appearance of a cell can be changed and displayed using the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) class. It contains all the style properties that are needed for a cell.
 
 `GridRangeInfo` class specifies a range of cells in grid. This section will explain about how to create `GridStyleInfo` object and how to access its properties.
 
@@ -126,21 +126,21 @@ For changing the appearance of the cells, the property grid in the right side ca
 
 `Grid Properties` tab consists of all the properties related to the whole grid. The appearance and style related settings can be changed for the whole grid.
 
-All the style related properties for the whole grid will be displayed in this tab. If back color of the whole grid needs to be changed, then the [BackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BackColor.html#) property listed below the heading `Appearance` can be used and required color can be chosen.
+All the style related properties for the whole grid will be displayed in this tab. If back color of the whole grid needs to be changed, then the [BackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BackColor.html#) property listed below the heading `Appearance` can be used and required color can be chosen.
 
 ![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img6.jpeg)
 
 
 `Selected Range` tab consists of all the properties related to a particular cell or selected range of cells. The style and format related properties can be changed for the desired range of cells.
 
-All the style related changes will be displayed under the `StyleCategoryAppearance`. If font style of a particular range needs to be changed, the [Font](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Font.html#) property listed under the `StyleCategoryAppearance` can be used and required color can be chosen.
+All the style related changes will be displayed under the `StyleCategoryAppearance`. If font style of a particular range needs to be changed, the [Font](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Font.html#) property listed under the `StyleCategoryAppearance` can be used and required color can be chosen.
 
 ![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img7.jpeg)
 
 
 ### Modifying Cell Styles through Code
 
-Values can be entered through code by using the `GridRangeInfo` class and properties of `GridStyleInfo` class. The appearance of the cell can be customized by using the properties of `GridStyleInfo` class and the range of cells to be modified will be specified through `GridRangeInfo`. The [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ChangeCells.html#) method is used to assign the customized styles to the mentioned range of cells.
+Values can be entered through code by using the `GridRangeInfo` class and properties of `GridStyleInfo` class. The appearance of the cell can be customized by using the properties of `GridStyleInfo` class and the range of cells to be modified will be specified through `GridRangeInfo`. The [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ChangeCells.html#) method is used to assign the customized styles to the mentioned range of cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -189,7 +189,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style)
 ![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img8.jpeg)
 
 
-The styles of the whole grid, for a particular column and for a particular row can be changed by using the [TableStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridData~TableStyle.html#), [RowStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridData~RowStyles.html#) and [ColStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridData~ColStyles.html#) properties respectively. 
+The styles of the whole grid, for a particular column and for a particular row can be changed by using the [TableStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridData~TableStyle.html#), [RowStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridData~RowStyles.html#) and [ColStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridData~ColStyles.html#) properties respectively. 
 
 {% tabs %}
 {% highlight c# %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section explains how to configure [MessageBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv_members.html) control in a Windows Forms application.
+This section explains how to configure [MessageBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv_members.html) control in a Windows Forms application.
 
 ## Assembly deployment
 
@@ -139,13 +139,13 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
 
-**Step3:** Displays the `MessageBoxAdv` by using [MessageBoxAdv.Show](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
+**Step3:** Displays the `MessageBoxAdv` by using [MessageBoxAdv.Show](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
 
 {% tabs %}
 
 {% highlight C# %}
 
-// Display the MessageBox using [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
+// Display the MessageBox using [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
 
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
 
@@ -155,7 +155,7 @@ MessageBoxAdv.Show(this,"Save changes?", "File Modified", MessageBoxButtons.YesN
 
 {% highlight VB %}
 
-' Display the MessageBox using [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
+' Display the MessageBox using [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
 
 MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro
 

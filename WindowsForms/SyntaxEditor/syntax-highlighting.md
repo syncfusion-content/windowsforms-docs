@@ -13,7 +13,7 @@ Provides built-in syntax highlighting support for popular languages like C#, VB.
 
 ## Configure built-in language
 
-Syntax highlighting built-in languages can be applied by using [KnownLanguages](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function. 
+Syntax highlighting built-in languages can be applied by using [KnownLanguages](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function. 
 
 **CSharp** 
 
@@ -39,7 +39,7 @@ Me.editControl1.ApplyConfiguration(Syncfusion.Windows.Forms.Edit.Enums.KnownLang
 {% endtabs %}
 
 
-The [LoadFile](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadFile.html) function in the EditControl helps to load the content of any desired file into the EditControl instead of typing the code in it.
+The [LoadFile](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LoadFile.html) function in the EditControl helps to load the content of any desired file into the EditControl instead of typing the code in it.
 
 {% tabs %}
 
@@ -478,7 +478,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in EditControl is `true`.
+This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in EditControl is `true`.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img30.png)
 
@@ -681,7 +681,7 @@ Me.editControl1.ApplyConfiguration("C#")
 
 ## Custom language using XML
 
-The EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) functions.
+The EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) functions.
 
 ### Initialize the configuration language.
 
@@ -796,7 +796,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 {% endhighlight %}
 
-This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in the EditControl is `true`.
+This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in the EditControl is `true`.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img39.png)
 
@@ -1045,7 +1045,7 @@ The EditControl also offers extensive support to create configuration settings p
 
 ### Add new configuration language to EditControl
 
-A new configuration language can be added to the EditControl by using the [CreateLanguageConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.Config~CreateLanguageConfiguration.html) function of [Config](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.Config.html) class. Once the new configuration language is created, apply it to the contents of EditControl by using the [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function.
+A new configuration language can be added to the EditControl by using the [CreateLanguageConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.Config~CreateLanguageConfiguration.html) function of [Config](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.Config.html) class. Once the new configuration language is created, apply it to the contents of EditControl by using the [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function.
 
 {% tabs %}
 
@@ -1074,7 +1074,7 @@ Me.editControl1.ApplyConfiguration(currentConfigLanguage)
 
 ### Format configuration
 
-Create a custom format object by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl and defines its attributes.
+Create a custom format object by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl and defines its attributes.
 
 {% tabs %}
 
@@ -1111,7 +1111,7 @@ formatMethod.BackColor = Color.Yellow
 
 ### Font configuration
 
-Font color of newly created format in the specified language can be customized by using its [FontColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ISnippetFormat~FontColor.html) property of [ISnippetFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ISnippetFormat.html) interface.
+Font color of newly created format in the specified language can be customized by using its [FontColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ISnippetFormat~FontColor.html) property of [ISnippetFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ISnippetFormat.html) interface.
 
 {% tabs %}
 
@@ -1138,7 +1138,7 @@ formatMethod.Font = new Font("Garamond", 17)
 
 ### Lexem configuration
 
-Create a [ConfigLexem](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.ConfigLexem.html) object belongs to the above defined format and define its attributes. Add the ConfigLexem object to the Lexems collection of the current language.
+Create a [ConfigLexem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.Config.ConfigLexem.html) object belongs to the above defined format and define its attributes. Add the ConfigLexem object to the Lexems collection of the current language.
 
 {% tabs %}
 
@@ -1167,7 +1167,7 @@ Me.editControl1.Language.Lexems.Add(stuff)
 
 ### Keywords configuration
 
-Create a custom format object named `keyword` by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl.
+Create a custom format object named `keyword` by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl.
 
 {% tabs %}
 
@@ -1234,7 +1234,7 @@ Me.editControl1.Language.Lexems.Add(cons)
 
 ### Operators configuration
 
-Create a custom format object named `Operators` by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl.
+Create a custom format object named `Operators` by using the [Language.Add](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IFormatManager~Add.html) function in the EditControl.
 
 {% tabs %}
 
@@ -1391,7 +1391,7 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
 ### Splits configuration
 
-Splits helps to configure two different words as single. For example, consider # and region that can be treated as single word by using `Split` configuration. This can be done by adding the appropriate splits to the [Language.Splits](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~Splits.html) collections.
+Splits helps to configure two different words as single. For example, consider # and region that can be treated as single word by using `Split` configuration. This can be done by adding the appropriate splits to the [Language.Splits](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~Splits.html) collections.
 
 {% tabs %}
 
@@ -1452,7 +1452,7 @@ Me.editControl1.Language.Lexems.Add(region)
 
 ### Auto replace triggers
 
-Create a AutoReplaceTrigger object using `AutoReplaceTrigger` class where those "from" and "to" can be passed while initializing. Add it to the [Language.AutoReplaceTriggers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~AutoReplaceTriggers.html) collections.
+Create a AutoReplaceTrigger object using `AutoReplaceTrigger` class where those "from" and "to" can be passed while initializing. Add it to the [Language.AutoReplaceTriggers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~AutoReplaceTriggers.html) collections.
 
 {% tabs %}
 
@@ -1493,7 +1493,7 @@ N> To enable this feature, we must set the `TriggersActivators` property of Conf
 
 ### File extension
 
-Add appropriate extensions to the [Language.Extensions](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~Extensions.html) collections.
+Add appropriate extensions to the [Language.Extensions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~Extensions.html) collections.
 
 {% tabs %}
 
@@ -1763,7 +1763,7 @@ The EditControl supports multiple language configuration helps to configure one 
 
 ### Invoking newly added configuration language
 
-Invoke the [ResetCaches](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~ResetCaches.html) function to apply the newly added configuration settings.
+Invoke the [ResetCaches](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfigLanguage~ResetCaches.html) function to apply the newly added configuration settings.
 
 {% tabs %}
 
@@ -1788,7 +1788,7 @@ Me.editControl1.Language.ResetCaches()
 
 ## Configure syntax highlighting through dialog box
 
-Syntax highlighting and code coloring can be implemented at runtime by using the `Language Coloring Configuration Editor`. It can be customized by using [ConfigurationDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.ConfigurationDialog.html) class and [IConfig](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfig.html) interface.
+Syntax highlighting and code coloring can be implemented at runtime by using the `Language Coloring Configuration Editor`. It can be customized by using [ConfigurationDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.ConfigurationDialog.html) class and [IConfig](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfig.html) interface.
 
 ![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img14.png)
 

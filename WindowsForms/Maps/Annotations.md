@@ -11,11 +11,11 @@ documentation: ug
 
 Annotations are used to add some message on map. In Maps control, annotations are denoted using the following major properties:
 
-1. [`AnnotationLabel`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~AnnotationLabel.html): Shows some information in text format.
+1. [`AnnotationLabel`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~AnnotationLabel.html): Shows some information in text format.
 
-2. [`AnnotationStroke`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~AnnotationStroke.html): Applies specific color to annotations.
+2. [`AnnotationStroke`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~AnnotationStroke.html): Applies specific color to annotations.
 
-3. [`Latitude`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~Latitude.html) and [`Longitude`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~Longitude.html): Position the annotations anywhere on the map based on latitude and longitude, which are string types, used to set coordinates of the MapAnnotation in the form of latitude and longitude.
+3. [`Latitude`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~Latitude.html) and [`Longitude`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Annotation~Longitude.html): Position the annotations anywhere on the map based on latitude and longitude, which are string types, used to set coordinates of the MapAnnotation in the form of latitude and longitude.
 
 
 ### Code sample:

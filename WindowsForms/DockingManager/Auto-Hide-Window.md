@@ -15,13 +15,13 @@ When mouse is moved over it, the auto hidden control will be displayed. When the
 
 ## Configuring window in different sides
 
-The side to which the Docked controls will collapse based on the [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) of the particular control. If the control is docked to the left, while clicking the auto hide button it will be hidden to the left side.
+The side to which the Docked controls will collapse based on the [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) of the particular control. If the control is docked to the left, while clicking the auto hide button it will be hidden to the left side.
 
 ![](AutoHidden-Window_images/AutoHidden-Window_img1.png)
 
 ## Enabling / disabling the auto hide functionality
 
-The Pin button that performs auto hide functionality can be visible by default. It can be invisible to disable the Auto Hide functionality through [AutoHideEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideEnabled.html) property.
+The Pin button that performs auto hide functionality can be visible by default. It can be invisible to disable the Auto Hide functionality through [AutoHideEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideEnabled.html) property.
 
 {% tabs %}
 
@@ -48,7 +48,7 @@ The Pin button that performs auto hide functionality can be visible by default. 
 
 ## Auto hide programmatically
 
-DockingManager allows to auto hide the panel by mouse interaction and also provides the way to change the panel state by programmatically. [SetAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideMode.html) function of DockingManager helps to change the panel state to auto hide state which was passed as its argument.
+DockingManager allows to auto hide the panel by mouse interaction and also provides the way to change the panel state by programmatically. [SetAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideMode.html) function of DockingManager helps to change the panel state to auto hide state which was passed as its argument.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ Me.dockingManager1.SetAutoHideMode(panel1, True) 'false to remove auto hide stat
 
 ![](AutoHidden-Window_images/AutoHidden-Window_img3.png)
 
-By using [GetAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideMode.html) function of DockingManager, we can get whether the control was in auto hidden state or not.
+By using [GetAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideMode.html) function of DockingManager, we can get whether the control was in auto hidden state or not.
 
 {% tabs %}
 
@@ -92,7 +92,7 @@ MessageBox.Show("Panel1 is in AutoHide State:" & Me.dockingManager1.GetAutoHideM
 
 ## Change auto hide side 
 
-By default, panels will be auto hidden to side where the container resides. DockingManager also provides options to create auto hide tab control independent to container side. [DockControlInAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlInAutoHideMode.html) function of DockingManager which enables docking for a control and hides that in specified edge of the HostControl.
+By default, panels will be auto hidden to side where the container resides. DockingManager also provides options to create auto hide tab control independent to container side. [DockControlInAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlInAutoHideMode.html) function of DockingManager which enables docking for a control and hides that in specified edge of the HostControl.
 
 {% tabs %}
 
@@ -116,7 +116,7 @@ Me.dockingManager1.DockControlInAutoHideMode(panel1, Syncfusion.Windows.Forms.To
 
 ## Auto hide all dock windows on loading
 
-The [SetAutoHideOnLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideOnLoad.html) function of DockingManager is used to auto hide all the child windows while loading the control. 
+The [SetAutoHideOnLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideOnLoad.html) function of DockingManager is used to auto hide all the child windows while loading the control. 
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ When the AutoHidden Tabs overflow onto the side panel, ScrollButton is added to 
 
 ## Display full caption in auto hidden tab
 
-Create a docked window with two ListBoxes. Dock the controls. Tab the controls and set the [FullCaptionsInAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~FullCaptionsInAutoHideMode.html) property. Setting this property to `true`, will display the full caption text in the auto hidden tab's page. It displays full caption within the application if necessary with a scrollbar, so that end user can scroll and view the hidden tab’s full caption.
+Create a docked window with two ListBoxes. Dock the controls. Tab the controls and set the [FullCaptionsInAutoHideMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~FullCaptionsInAutoHideMode.html) property. Setting this property to `true`, will display the full caption text in the auto hidden tab's page. It displays full caption within the application if necessary with a scrollbar, so that end user can scroll and view the hidden tab’s full caption.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ Me.dockingManager1.FullCaptionsInAutoHideMode = True
 
 ## Drag auto hidden tabs
 
-The docked controls that are auto hidden can be dragged with their tabs, and can be docked or set to floating by setting [EnableDragAutoHiddenTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableDragAutoHiddenTabs.html) property to `true`.
+The docked controls that are auto hidden can be dragged with their tabs, and can be docked or set to floating by setting [EnableDragAutoHiddenTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableDragAutoHiddenTabs.html) property to `true`.
 
 {% tabs %}
 
@@ -197,11 +197,11 @@ Me.dockingManager1.EnableDragAutoHiddenTabs = True
 
 ## Auto Hide Selection Style
 
-DockingManager popup the content of auto hidden window on mouse hover the corresponding tab page. Auto hide animation can be initiated in two ways either by mouse hovering or clicking on the auto hidden tab. This behavior of DockingManager can be enabled by setting the [AutoHideSelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideSelectionStyle.html) property.
+DockingManager popup the content of auto hidden window on mouse hover the corresponding tab page. Auto hide animation can be initiated in two ways either by mouse hovering or clicking on the auto hidden tab. This behavior of DockingManager can be enabled by setting the [AutoHideSelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideSelectionStyle.html) property.
 
 ### Popup auto hidden window by mouse hover
 
-This behavior of DockingManager can be enabled by setting the [AutoHideSelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideSelectionStyle.html) property to `MouseHover`.
+This behavior of DockingManager can be enabled by setting the [AutoHideSelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideSelectionStyle.html) property to `MouseHover`.
 
 {% tabs %}
 
@@ -227,7 +227,7 @@ Me.dockingManager1.AutoHideSelectionStyle = Syncfusion.Windows.Forms.Tools.AutoH
 
 ### Popup auto hidden window by mouse click
 
-This behavior of DockingManager can be enabled by setting the [AutoHideSelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideSelectionStyle.html) property to `Click`.
+This behavior of DockingManager can be enabled by setting the [AutoHideSelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideSelectionStyle.html) property to `Click`.
 
 {% tabs %}
 
@@ -252,7 +252,7 @@ Me.dockingManager1.AutoHideSelectionStyle = Syncfusion.Windows.Forms.Tools.AutoH
 
 ## Animation speed
 
-The [AnimationStep](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AnimationStep.html) property in DockingManager helps to control the animation speed of the AutoHidden controls.
+The [AnimationStep](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AnimationStep.html) property in DockingManager helps to control the animation speed of the AutoHidden controls.
 
 {% tabs %}
 
@@ -274,7 +274,7 @@ DockingManager.AnimationStep = arg.Bounds.Width
 
 ## AutoHide interval
 
-By using the [AutoHideInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideInterval.html) property of DockingManager, we can delay the display of showing or hiding the auto hide window. It's default value is `400` millisecond.
+By using the [AutoHideInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideInterval.html) property of DockingManager, we can delay the display of showing or hiding the auto hide window. It's default value is `400` millisecond.
 
 {% tabs %}
 
@@ -296,7 +296,7 @@ Me.dockingManager1.AutoHideInterval=3000
 
 ## Enable / disable animation
 
-Animation functionality in auto hidden windows can be enabled or disabled by using the [AnimateAutoHiddenWindow](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AnimateAutoHiddenWindow.html) property of DockingManager.
+Animation functionality in auto hidden windows can be enabled or disabled by using the [AnimateAutoHiddenWindow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AnimateAutoHiddenWindow.html) property of DockingManager.
 
 {% tabs %}
 
@@ -316,7 +316,7 @@ this.dockingManager1.AnimateAutoHiddenWindow = False
 
 ## Enable / disable the context menu 
 
-When the docked control is in auto hide mode, an unique context menu will be displayed while right clicking the auto hide tabs, similar to Visual Studio. [EnableAutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableAutoHideTabContextMenu.html) property should be `true`. 
+When the docked control is in auto hide mode, an unique context menu will be displayed while right clicking the auto hide tabs, similar to Visual Studio. [EnableAutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableAutoHideTabContextMenu.html) property should be `true`. 
 
 {% tabs %}
 

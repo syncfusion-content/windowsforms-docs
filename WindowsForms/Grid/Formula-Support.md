@@ -191,11 +191,11 @@ E1+E2, Cos(2)<A4, or Abs(A1-A5).
 </table>
 
 ## Architecture
-Formula Cell control is implemented with four classes. [GridFormulaCellModel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaCellModel.html), [GridFormulaCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaCellRenderer.html), [GridFormulaEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) and [GridFormulaTag](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaTag.html).
-`GridFormulaCellModel` class does some significant work in its[GetFormattedText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaCellModel~GetFormattedText.html) method override where calculations and formula parsing are initiated dynamically.
+Formula Cell control is implemented with four classes. [GridFormulaCellModel](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaCellModel.html), [GridFormulaCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaCellRenderer.html), [GridFormulaEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) and [GridFormulaTag](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaTag.html).
+`GridFormulaCellModel` class does some significant work in its[GetFormattedText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaCellModel~GetFormattedText.html) method override where calculations and formula parsing are initiated dynamically.
 `GridFormulaCellRenderer` class handles a couple of activation methods that are specific for displaying formulas when a formula cell is activated.
 `GridFormulaEngine` class does the actual parsing and calculation that is required to evaluate a formula in a cell. This class also maintains Formula Library.
-`GridFormulaTag` class is used in conjunction with[GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) class that has a property of this type. `GridFormulaTag` tracks computed value of the cell in its Text property.
+`GridFormulaTag` class is used in conjunction with[GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) class that has a property of this type. `GridFormulaTag` tracks computed value of the cell in its Text property.
 
 ## Supported Functions
 This section explains the list of library functions that are shipped in the `GridFormulaEngine`.
@@ -4763,7 +4763,7 @@ ZTEST(array, u0, sigma)
 GridControl also supports adding custom functions in the function library. This section will explain how to add and remove functions in function library.
 
 ### Add Function
-A custom function can be added into the function library by using the [AddFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~AddFunction.html) method but before adding the function it is necessary to create a new formula. The below steps needs to be followed to create and add a custom formula into the function library.
+A custom function can be added into the function library by using the [AddFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~AddFunction.html) method but before adding the function it is necessary to create a new formula. The below steps needs to be followed to create and add a custom formula into the function library.
 
 1.Define a method that has the below signature.
 
@@ -4782,9 +4782,9 @@ End Function
 {% endtabs %}
 Here `MyLibraryFormulaName` must be a name that has not already been used in Function Library and must include only letters and digits. Write the required implementation in this method.
 
-The below code is used to implement a function that will sum only positive numbers that are passed in as either a range like `A1:A5` or a list such as `A1`, `A4`, `A10`. The code uses the [FormulaEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) helper method to extract these values from the cells. 
+The below code is used to implement a function that will sum only positive numbers that are passed in as either a range like `A1:A5` or a list such as `A1`, `A4`, `A10`. The code uses the [FormulaEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) helper method to extract these values from the cells. 
 
-The [GetCellsFromArgs](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~GetCellsFromArgs.html) method will return an array of cells from a range such as `A1:A5`, and [GetValueFromArg](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~GetValueFromArg.html) method will take cells such as `A3` and return a value.
+The [GetCellsFromArgs](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~GetCellsFromArgs.html) method will return an array of cells from a range such as `A1:A5`, and [GetValueFromArg](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~GetValueFromArg.html) method will take cells such as `A3` and return a value.
 
 {% tabs %}
 {% highlight c# %}
@@ -4924,7 +4924,7 @@ cellModel.Engine.AddFunction("SumPosNumber", New GridFormulaEngine.LibraryFuncti
 {% endtabs %}
 
 ### Remove Function
-To remove a single function from the Function Library, use the [RemoveFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~RemoveFunction.html) method. Pass the function name as string in this method to remove it from the library.
+To remove a single function from the Function Library, use the [RemoveFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~RemoveFunction.html) method. Pass the function name as string in this method to remove it from the library.
 {% tabs %}
 {% highlight c# %}
 // Remove formula name MyMin from the Library.
@@ -4975,7 +4975,7 @@ New functions can be added after clearing all the functions from the function li
 ## Cross Sheet Reference
 A formula cell can be defined with values from another grid by using cross sheet references. In this case, multiple grids can either be in worksheet format or multiple grids can be laid out in a form. This section explains on how to apply cross reference support between two grids.
 
-Initially, register both the grids by using the static[RegisterGridAsSheet](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~RegisterGridAsSheet.html) method. This method can be seen in the[GridFormulaEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) class. Registering both the grids can be referenced in a formula from each other.
+Initially, register both the grids by using the static[RegisterGridAsSheet](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~RegisterGridAsSheet.html) method. This method can be seen in the[GridFormulaEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) class. Registering both the grids can be referenced in a formula from each other.
 
 {% tabs %}
 {% highlight c# %}
@@ -5073,7 +5073,7 @@ Me.gridControl2(5, 3).Text = "=" & Me.gridControl1.Text & "!C3 + C4"
 ## Named Ranges
 GridControl supports named ranges along with Grid Formula Engine. Named ranges let the users to set up names for expressions or ranges, and then use these names in formulas. For example, if the name of the range, `B4:B12` is `Expenses`, then the formula `=Sum(Expenses)` can be used instead of `=Sum(B4:B12)`.
 
-For adding the custom name for a particular range, [AddNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~AddNamedRange.html) property under the [GridFormulaEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) has to be used. 
+For adding the custom name for a particular range, [AddNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine~AddNamedRange.html) property under the [GridFormulaEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) has to be used. 
 
 {% tabs %}
 {% highlight c# %}
@@ -5119,7 +5119,7 @@ In the dialog box all the named range members will be displayed in the left pane
 
 ![](Formula-Support_images/Formula-Support_img77.jpg)
 
-It is possible to edit the title of this editor by handling [ShowingNamedRangesDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaNamedRangesEditHelper~ShowingNamedRangesDialog_EV.html) event.
+It is possible to edit the title of this editor by handling [ShowingNamedRangesDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFormulaNamedRangesEditHelper~ShowingNamedRangesDialog_EV.html) event.
 {% tabs %}
 {% highlight c# %}
 

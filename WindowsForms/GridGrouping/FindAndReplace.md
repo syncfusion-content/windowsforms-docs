@@ -10,8 +10,8 @@ documentation: ug
 # Find and Replace
 The searching and replacing of text and numbers can be done as like the Find and Replace functionality in the Excel. This can be done by using dialog or programmatically. This feature can be added to the GridGroupingControl by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the Find and Replace technique in GridGroupingControl.
 
-* [GridFindReplaceDialogSink](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html#)
-* [GridFindReplaceDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceDialog.html#)
+* [GridFindReplaceDialogSink](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html#)
+* [GridFindReplaceDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceDialog.html#)
 
 The `GridFindReplaceDialogSink` class is used to perform the Find and Replace of text in GridGroupingControl. The `GridFindReplaceDialog` is the built-in dialog which shows the options for finding and replacing of the text. If this dialog is used for finding and replacing, there is no need to implement the methods for finding and replacing the text programmatically.
 
@@ -44,7 +44,7 @@ findReplaceDialog.ShowDialog()
 ![](FindAndReplace_images/FindAndReplace_img1.png)
 
 ## Finding options
-The finding options are used to set certain conditions for search the text and number using the [GridFindTextOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindTextOptions.html#) enumeration property. It has the following finding options,
+The finding options are used to set certain conditions for search the text and number using the [GridFindTextOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindTextOptions.html#) enumeration property. It has the following finding options,
 
 **MatchCase** -Matches case while performing search.
 **MatchWholeCell** -Matches the search text with the entire text in a grid cell.
@@ -82,7 +82,7 @@ Dim frEvents As New GridFindReplaceEventArgs(txtSearchText.Text, "", options, lo
 {% endtabs %}
 
 ### Find and replace using keyboard shortcut
-The Find and Replace dialog can be shown in GridGroupingControl as like Excel while pressing the &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;F&lt;/kbd&gt; keys by using the [TableControlCurrentCellKeyDown](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellKeyDown_EV.html#) event as like below example,
+The Find and Replace dialog can be shown in GridGroupingControl as like Excel while pressing the &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;F&lt;/kbd&gt; keys by using the [TableControlCurrentCellKeyDown](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellKeyDown_EV.html#) event as like below example,
 {% tabs %}
 {% highlight c# %}
 //Triggering the TableControlCurrentCellKeyDown event
@@ -118,10 +118,10 @@ Private Sub gridGroupingControl1_ TableControlCurrentCellKeyDown
 ![](FindAndReplace_images/FindAndReplace_img1.png)
 
 ## Programmatic searching 
-The Find and Replace of the text in GridGroupingControl can be customized or can be used other than the `GridFindReplaceDialog`. The [GridFindReplaceEventArgs](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceEventArgs.html#) class provides the options to the `GridFindReplaceDialogSink` to perform the Find and Replace programmatically without having dialog.
+The Find and Replace of the text in GridGroupingControl can be customized or can be used other than the `GridFindReplaceDialog`. The [GridFindReplaceEventArgs](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFindReplaceEventArgs.html#) class provides the options to the `GridFindReplaceDialogSink` to perform the Find and Replace programmatically without having dialog.
 
 ### Find and find all
-To find first possible match at the earliest based on the search options, use the [Find](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupTypedListRecordsCollection~Find.html#) method. The below code is used to find the text in GridGroupingControl
+To find first possible match at the earliest based on the search options, use the [Find](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupTypedListRecordsCollection~Find.html#) method. The below code is used to find the text in GridGroupingControl
 {% tabs %}
 {% highlight c# %}
 //Create object for Find and Replace dialog
@@ -235,7 +235,7 @@ The following sample shows how to include the find and replace functionality in 
 &lt;Installation_Location&gt;\Syncfusion\EssentialStudio\&lt;version&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Find-Replace Demo
 
 ## Highlight the search text
-The search text can be highlighted by using the [GridHighlightSearchText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridHighlightSearchText.html#) class. It will highlight the search text with the default color (yellow). The highlighting color can be changed by using[HighlightColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridHighlightSearchText~HighlightColor.html#) property.
+The search text can be highlighted by using the [GridHighlightSearchText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridHighlightSearchText.html#) class. It will highlight the search text with the default color (yellow). The highlighting color can be changed by using[HighlightColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridHighlightSearchText~HighlightColor.html#) property.
 {% tabs %}
 {% highlight c# %}
 //Creates an instance for the class “GridHighlightSearchText”.
@@ -267,4 +267,4 @@ highlightText.HighlightColor = Color.Yellow
 
 ![](FindAndReplace_images/FindAndReplace_img2.png)
 
-N> The highlighting of the search text will work only when the [WrapText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~WrapText.html#) of the cell is set to `false`.
+N> The highlighting of the search text will work only when the [WrapText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~WrapText.html#) of the cell is set to `false`.

@@ -17,31 +17,31 @@ The following topics under this section elaborates on the runtime features of Ch
 
 EssentialChart supports interactive zooming features along the x and y axis. During runtime, the user can simply select the range he wants to zoom with the mouse and the chart will accordingly zoom-in. Scrollbars will be activated to browse the areas that become hidden on zooming in.
 
-Enable Zooming via the [EnableXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableXZooming.html) and [EnableYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableYZooming.html) properties.
+Enable Zooming via the [EnableXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableXZooming.html) and [EnableYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableYZooming.html) properties.
 
 ![](Runtime-Features_images/Runtime-Features_img1.jpeg)
 
 ![](Runtime-Features_images/Runtime-Features_img2.jpeg)
 
-The scrollbar will shift by the amount specified in the [ScrollPrecision](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ScrollPrecision.html) property which is set to 20 by default.
+The scrollbar will shift by the amount specified in the [ScrollPrecision](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ScrollPrecision.html) property which is set to 20 by default.
 
 User can zoom out by clicking the "Zoom Out" button in the scrollbar.
 
 ![](Runtime-Features_images/Runtime-Features_img3.jpeg)
 
-[ZoomOutIncrement](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomOutIncrement.html) property specifies the increment by which to zoom out. The default value is 0.2.
+[ZoomOutIncrement](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomOutIncrement.html) property specifies the increment by which to zoom out. The default value is 0.2.
 
 ### Programmatic Zooming
 
-Programmatically the chart can be zoomed using [ZoomFactorX](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomFactorX.html) and [ZoomFactorY](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomFactorY.html) properties.The Zoom factor is usually between 0 and 1. When set to 1, the chart isn't zoomed. When set to 0.5, the chart is double its usual size. Scrollbars will automatically appear to allow any section of the hidden range to be viewed. The default value is 1.
+Programmatically the chart can be zoomed using [ZoomFactorX](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomFactorX.html) and [ZoomFactorY](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomFactorY.html) properties.The Zoom factor is usually between 0 and 1. When set to 1, the chart isn't zoomed. When set to 0.5, the chart is double its usual size. Scrollbars will automatically appear to allow any section of the hidden range to be viewed. The default value is 1.
 
-You can also programmatically specify the scrollbar position of the zoomed in axes using the [ZoomPositionX](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomPositionX.html) and [ZoomPositionY](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomPositionY.html) properties.
+You can also programmatically specify the scrollbar position of the zoomed in axes using the [ZoomPositionX](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomPositionX.html) and [ZoomPositionY](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomPositionY.html) properties.
 
-To restrict the zoom-in factor to a certain level on the x and y axis use the [MinZoomFactorX](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~MinZoomFactorX.html) and [MinZoomFactorY](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~MinZoomFactorY.html) properties. The value can be in between 0 and 1. If the value is 1 means, not zoomed.
+To restrict the zoom-in factor to a certain level on the x and y axis use the [MinZoomFactorX](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~MinZoomFactorX.html) and [MinZoomFactorY](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~MinZoomFactorY.html) properties. The value can be in between 0 and 1. If the value is 1 means, not zoomed.
 
 ### Zooming via Keyboard
 
-EssentialChart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the [KeyZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~KeyZoom.html) property.
+EssentialChart also enables users to use keyboard shortcuts to enable zooming. Enable this feature through the [KeyZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~KeyZoom.html) property.
 
 Using the following properties the zooming action can be mapped to specific keys.
 
@@ -53,44 +53,44 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ZoomCancel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomCancel.html)'| markdownify }}
+{{'[ZoomCancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomCancel.html)'| markdownify }}
 </td><td>
 Specifies the keyboard shortcut to control Zoom cancel. The default value is ESCAPE.</td></tr>
 <tr>
 <td>
-{{'[ZoomDown](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomDown.html)'| markdownify }}
+{{'[ZoomDown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomDown.html)'| markdownify }}
 </td><td>
 Specifies the keyboard shortcut to control Zoom Down. The default value is DOWN arrow.</td></tr>
 <tr>
 <td>
-{{'[ZoomIn](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomIn.html)'| markdownify }}
+{{'[ZoomIn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomIn.html)'| markdownify }}
 </td><td>
 Specifies the keyboard shortcut to control Zoom In. The default value is ADD key. </td></tr>
 <tr>
 <td>
-{{'[ZoomLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomLeft.html)'| markdownify }}
+{{'[ZoomLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomLeft.html)'| markdownify }}
 </td><td>
 Specifies the keyboard shortcut to control Zoom Left. The default value is LEFT arrow.</td></tr>
 <tr>
 <td>
-{{'[ZoomOut](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomOut.html)'| markdownify }}
+{{'[ZoomOut](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomOut.html)'| markdownify }}
 </td><td>
 Specifies the keyboard shortcut to control Zoom Out. The default value is SUBTRACT.</td></tr>
 <tr>
 <td>
-{{'[ZoomRight](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomRight.html)'| markdownify }}
+{{'[ZoomRight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomRight.html)'| markdownify }}
 </td><td>
 Specifies the keyboard shortcut to control Zoom Right. The default value is RIGHT arrow.</td></tr>
 <tr>
 <td>
-{{'[ZoomUp](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomUp.html)'| markdownify }}
+{{'[ZoomUp](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomUp.html)'| markdownify }}
 </td><td>
 Specifies the keyboard short cut to control Zoom Up. The default value is UP arrow.</td></tr>
 </table>
 
 ### Panning Support for Zoomed Chart
 
-Now, you will be able to pan a chart when it is zoomed. Set the [ChartControl.MouseAction](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~MouseAction.html) to **Panning** to enable this feature. Set the MouseAction to **None** to disable this feature. The panning action can be controlled using the [ZoomActions](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~ZoomActions.html) property that is available for individual axis. 
+Now, you will be able to pan a chart when it is zoomed. Set the [ChartControl.MouseAction](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~MouseAction.html) to **Panning** to enable this feature. Set the MouseAction to **None** to disable this feature. The panning action can be controlled using the [ZoomActions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~ZoomActions.html) property that is available for individual axis. 
 
 <table>
 <tr>
@@ -100,7 +100,7 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ZoomActions](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~ZoomActions.html)'| markdownify }}
+{{'[ZoomActions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~ZoomActions.html)'| markdownify }}
 </td><td>
 Specifies the zoom action on the corresponding axis. The options are, <ul><li>Panning - Enables panning in the zoomed chart.</li><li>None - Disables panning in the zoomed chart.</li></ul></td></tr>
 </table>
@@ -128,11 +128,11 @@ Me.chartControl1.PrimaryYAxis.ZoomActions = ChartZoomingAction.Panning
 {% endhighlight %}
 {% endtabs %}
 
-N> Remember to enable zooming on both the axis using [EnableXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableXZooming.html) and [EnableYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableYZooming.html) properties, before trying out the above panning feature. You cannot pan a chart without zooming it.
+N> Remember to enable zooming on both the axis using [EnableXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableXZooming.html) and [EnableYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableYZooming.html) properties, before trying out the above panning feature. You cannot pan a chart without zooming it.
 
 ### Zoom Types
 
-Essential Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The [ZoomType](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomType.html) property is used for specifying the way in which the chart should be zoomed. The [ZoomType](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomType.html) property is a **flagged enum** and it can accept all 3 types of zooming.
+Essential Chart provides support to Zoom the chart in three different ways .The default zooming type is **Selection**. The [ZoomType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomType.html) property is used for specifying the way in which the chart should be zoomed. The [ZoomType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomType.html) property is a **flagged enum** and it can accept all 3 types of zooming.
 
 <table>
 <tr>
@@ -230,7 +230,7 @@ Me.chartControl1.ZoomType= ZoomType.PinchZooming
 
 ### ResetOnDoubleClick
 
-When the [ResetOnDoubleClick](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ResetOnDoubleClick.html) option is enabled, the chart is reset to its original position on **Double click or Double Tap**. The default value of this property is **False**.
+When the [ResetOnDoubleClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ResetOnDoubleClick.html) option is enabled, the chart is reset to its original position on **Double click or Double Tap**. The default value of this property is **False**.
 
 {% tabs %}
 
@@ -250,7 +250,7 @@ Me.chartControl1.ResetOnDoubleClick= true
 
 ### Formatted Axes Labels
 
-It is possible to show formatted axes labels for a zoomed chart. EssentialChart's [SmartDateZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~SmartDateZoom.html) property when set to true enables this feature. You can set any one of the following custom label formats to the chart axis. 
+It is possible to show formatted axes labels for a zoomed chart. EssentialChart's [SmartDateZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~SmartDateZoom.html) property when set to true enables this feature. You can set any one of the following custom label formats to the chart axis. 
 
 * SmartDateZoomDayLevelLabelFormat 
 * SmartDateZoomYearLevelLabelFormat
@@ -307,7 +307,7 @@ EssentialCharts comes with a built-in Toolbar that can be made visible to enable
 * Toggle 3D style of the Chart.
 * Toggle Legend Appearance.
 
-The toolbar can be made visible through the ChartControl's [ShowToolbar](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolbar.html) property.
+The toolbar can be made visible through the ChartControl's [ShowToolbar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolbar.html) property.
 
 The toolbar looks like the below image.
 
@@ -324,78 +324,78 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[Save](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~Save.html)'| markdownify }}
+{{'[Save](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~Save.html)'| markdownify }}
 </td><td>
 
-{{'[ChartToolBarSaveItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarSaveItem_members.html)'| markdownify }}
+{{'[ChartToolBarSaveItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarSaveItem_members.html)'| markdownify }}
 </td><td>
 Using this command, user can save the chart to a specific location.</td></tr>
 <tr>
 <td>
-{{'[Copy](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~Copy.html)'| markdownify }}
+{{'[Copy](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~Copy.html)'| markdownify }}
 </td><td>
-{{'[ChartToolBarCopyItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarCopyItem_members.html)'| markdownify }}
+{{'[ChartToolBarCopyItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarCopyItem_members.html)'| markdownify }}
 </td><td>
 Clicking this toolbar command will copy the chart to the clipboard.</td></tr>
 <tr>
 <td>
-{{'[Styles](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Styles.html)'| markdownify }}
+{{'[Styles](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Styles.html)'| markdownify }}
 </td><td>
-{{'[ChartToolBarStyleItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarStyleItem_members.html)'| markdownify }}
+{{'[ChartToolBarStyleItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarStyleItem_members.html)'| markdownify }}
 </td><td>
 This pops up a Chart Series Style dialog window, using which various properties and chart styles can be set. </td></tr>
 <tr>
 <td>
-{{'[Print](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~Print.html)'| markdownify }}
+{{'[Print](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~Print.html)'| markdownify }}
 </td><td>
-{{'[ChartToolBarPrintItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarPrintItem_members.html)'| markdownify }}
+{{'[ChartToolBarPrintItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarPrintItem_members.html)'| markdownify }}
 </td><td>
 This toolbar command is used to print the Chart.</td></tr>
 <tr>
 <td>
-{{'[Palette](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Palette.html)'| markdownify }}
+{{'[Palette](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Palette.html)'| markdownify }}
 </td><td>
-{{'[ChartToolBarPaletteItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarPaletteItem_members.html)'| markdownify }}
+{{'[ChartToolBarPaletteItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarPaletteItem_members.html)'| markdownify }}
 </td><td>
 Palette for the series can be chosen at run time using this command. All palette colors available in the designer will be available in this Palette option also.</td></tr>
 <tr>
 <td>
 {{'[Chart Types](https://help.syncfusion.com/windowsforms/chart/chart-types)'| markdownify }}
 </td><td>
-{{'[ChartToolBarTypeItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarTypeItem_members.html)'| markdownify }}
+{{'[ChartToolBarTypeItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarTypeItem_members.html)'| markdownify }}
 </td><td>
 Any chart type can be set for the chart at run time using this command.</td></tr>
 <tr>
 <td>
-{{'[PrintPreview](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~PrintPriview.html)'| markdownify }}
+{{'[PrintPreview](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~PrintPriview.html)'| markdownify }}
 </td><td>
-{{'[ChartToolBarPrintPreviewItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarPrintPreviewItem_members.html)'| markdownify }}
+{{'[ChartToolBarPrintPreviewItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarPrintPreviewItem_members.html)'| markdownify }}
 </td><td>
 This toolbar command is used to see a print preview of the Chart.</td></tr>
 <tr>
 <td>
-{{'[Toggle3D](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~Toggle3D.html)'| markdownify }}
+{{'[Toggle3D](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~Toggle3D.html)'| markdownify }}
 </td><td>
-{{'[ChartToolBarSeries3DItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarSeries3DItem_members.html)'| markdownify }}
+{{'[ChartToolBarSeries3DItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarSeries3DItem_members.html)'| markdownify }}
 </td><td>
 This command is used to toggle the 3D mode of the chart.</td></tr>
 <tr>
 <td>
 Toggle Legend Appearance</td><td>
-{{'[ChartToolBarShowLegendItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarShowLegendItem_members.html)'| markdownify }}
+{{'[ChartToolBarShowLegendItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarShowLegendItem_members.html)'| markdownify }}
 </td><td>
 This command is used to toggle the legend appearance.</td></tr>
 <tr>
 <td>
 Splitter</td><td>
-{{'[ChartToolBarSplitter](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarSplitter_members.html)'| markdownify }}
+{{'[ChartToolBarSplitter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarSplitter_members.html)'| markdownify }}
 </td><td>
 This item provides a logical split between the collection of commands.</td></tr>
 </table>
 
 ### Custom Toolbar Commands
 
-You can also add custom toolbar items using [ChartToolBarCommandItem](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarCommandItem_members.html) class. The [ChartCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands_members.html) enum lists the commands that can be added. The following table describes those commands.
+You can also add custom toolbar items using [ChartToolBarCommandItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarCommandItem_members.html) class. The [ChartCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands_members.html) enum lists the commands that can be added. The following table describes those commands.
 
 <table>
 <tr>
@@ -405,37 +405,37 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ZoomIn](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomIn.html)'| markdownify }}
+{{'[ZoomIn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomIn.html)'| markdownify }}
 </td><td>
 Using this command, user can zoom the chart.</td></tr>
 <tr>
 <td>
-{{'[ZoomOut](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomOut.html)'| markdownify }}
+{{'[ZoomOut](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomOut.html)'| markdownify }}
 </td><td>
 This command zooms out the chart.</td></tr>
 <tr>
 <td>
-{{'[ResetZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~ResetZooming.html)'| markdownify }}
+{{'[ResetZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~ResetZooming.html)'| markdownify }}
 </td><td>
 The zooming is reset using this command.</td></tr>
 <tr>
 <td>
-{{'[AutoHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~AutoHighlight.html)'| markdownify }}
+{{'[AutoHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~AutoHighlight.html)'| markdownify }}
 </td><td>
 This command is used to enable the auto highlight feature in the chart series.</td></tr>
 <tr>
 <td>
-{{'[ToggleXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~ToggleXZooming.html)'| markdownify }}
+{{'[ToggleXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~ToggleXZooming.html)'| markdownify }}
 </td><td>
 This toolbar command enables zooming in x-axis.</td></tr>
 <tr>
 <td>
-{{'[ToggleYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~ToggleYZooming.html)'| markdownify }}
+{{'[ToggleYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~ToggleYZooming.html)'| markdownify }}
 </td><td>
 This toolbar command enables zooming in y-axis.</td></tr>
 <tr>
 <td>
-{{'[TogglePanning](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~TogglePanning.html)'| markdownify }}
+{{'[TogglePanning](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands~TogglePanning.html)'| markdownify }}
 </td><td>
 This command enables panning of the zoomed chart.</td></tr>
 </table>
@@ -493,7 +493,7 @@ Me.chartControl1.ToolBar.Items.Add(x1)
 
 ### Toolbar Properties
 
-The chart control provides complete support for customizing the toolbar appearance. Use the [ChartControl.ToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ToolBar.html) property to access the toolbar. At runtime, double-click the toolbar to show the ToolBar Properties dialog box as in the below image, which lists all the properties. For this, you need to set the [ToolBar.ShowDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ShowDialog.html) property to True. If you do not want to display this dialog box, set this property to False.
+The chart control provides complete support for customizing the toolbar appearance. Use the [ChartControl.ToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ToolBar.html) property to access the toolbar. At runtime, double-click the toolbar to show the ToolBar Properties dialog box as in the below image, which lists all the properties. For this, you need to set the [ToolBar.ShowDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ShowDialog.html) property to True. If you do not want to display this dialog box, set this property to False.
 
 ![](Runtime-Features_images/Runtime-Features_img10.jpeg)
 
@@ -507,22 +507,22 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[Alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Alignment.html)'| markdownify }}
+{{'[Alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Alignment.html)'| markdownify }}
 </td><td>
 Indicates the alignment of the toolbar. Default value is Center.</td></tr>
 <tr>
 <td>
-{{'[AutoSize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~AutoSize.html)'| markdownify }}
+{{'[AutoSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~AutoSize.html)'| markdownify }}
 </td><td>
 Indicates if the toolbar can be resized automatically. Default value is true.</td></tr>
 <tr>
 <td>
-{{'[BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~BackColor.html)'| markdownify }}
+{{'[BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~BackColor.html)'| markdownify }}
 </td><td>
 Indicates back color of the toolbar.</td></tr>
 <tr>
 <td>
-{{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Border.html)'| markdownify }}
+{{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Border.html)'| markdownify }}
 </td><td>
 Specifies the border style.</td></tr>
 <tr>
@@ -532,62 +532,62 @@ Buttons
 List of buttons to which you can add new Buttons or delete existing ones.</td></tr>
 <tr>
 <td>
-{{'[ButtonBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ButtonBackColor.html)'| markdownify }}
+{{'[ButtonBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ButtonBackColor.html)'| markdownify }}
 </td><td>
 Gets / sets the back color of the toolbar button.</td></tr>
 <tr>
 <td>
-{{'[ButtonFlatStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ButtonFlatStyle.html)'| markdownify }}
+{{'[ButtonFlatStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ButtonFlatStyle.html)'| markdownify }}
 </td><td>
 Gets / sets the flat style appearance for the toolbar button control. Default value is **FlatStyle.Flat**.</td></tr>
 <tr>
 <td>
-{{'[ButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ButtonForeColor.html)'| markdownify }}
+{{'[ButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ButtonForeColor.html)'| markdownify }}
 </td><td>
 Gets / sets the fore color of the toolbar button.</td></tr>
 <tr>
 <td>
-{{'[ButtonSize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ButtonSize.html)'| markdownify }}
+{{'[ButtonSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ButtonSize.html)'| markdownify }}
 </td><td>
 Indicates the button size of the toolbar buttons.</td></tr>
 <tr>
 <td>
-{{'[DockingFree](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~DockingFree.html)'| markdownify }}
+{{'[DockingFree](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~DockingFree.html)'| markdownify }}
 </td><td>
 Indicates if the toolbar is to be held docked. Default value is false.</td></tr>
 <tr>
 <td>
-{{'[Header](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Header.html)'| markdownify }}
+{{'[Header](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Header.html)'| markdownify }}
 </td><td>
 Gets / sets the height of the header. Default value is 0.</td></tr>
 <tr>
 <td>
-{{'[Location](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Location.html)'| markdownify }}
+{{'[Location](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Location.html)'| markdownify }}
 </td><td>
 Gets / sets the location of the toolbar.</td></tr>
 <tr>
 <td>
-{{'[Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Orientation.html)'| markdownify }}
+{{'[Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Orientation.html)'| markdownify }}
 </td><td>
 Gets / sets the orientation of the toolbar. Default value is Horizontal.</td></tr>
 <tr>
 <td>
-{{'[Position](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Position.html)'| markdownify }}
+{{'[Position](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Position.html)'| markdownify }}
 </td><td>
 Gets / sets the docking position of the toolbar. Default value is ChartDock.Top.</td></tr>
 <tr>
 <td>
-{{'[ShowBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ShowBorder.html)'| markdownify }}
+{{'[ShowBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ShowBorder.html)'| markdownify }}
 </td><td>
 Indicates if the border of the toolbar should be shown. Default value is true.</td></tr>
 <tr>
 <td>
-{{'[Size](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Size.html)'| markdownify }}
+{{'[Size](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Size.html)'| markdownify }}
 </td><td>
 Gets / sets the size of the toolbar button. Will be used only when Autosize property is set to false.</td></tr>
 <tr>
 <td>
-{{'[Spacing](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Spacing.html)'| markdownify }}
+{{'[Spacing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Spacing.html)'| markdownify }}
 </td><td>
 Gets or sets the spacing. Default value is 4.</td></tr>
 </table>
@@ -605,7 +605,7 @@ Click the Styles icon in the toolbar to open the Chart Series Style dialog box. 
 * **Series** can hold customized symbols using the Symbol tab.
 * **FancyToolTip** can be enabled using the options available in the Fancy ToolTip tab.
 
-The below image shows how to set the interior properties through **Interior** tab in the Chart Series Style Window. This can be invoked by clicking [Styles](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Styles.html) command.
+The below image shows how to set the interior properties through **Interior** tab in the Chart Series Style Window. This can be invoked by clicking [Styles](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Styles.html) command.
 
 ![](Runtime-Features_images/Runtime-Features_img11.jpeg)
 
@@ -615,13 +615,13 @@ The below image shows how to set the interior properties through **Interior** ta
 
 Toolbar provides an option to set different back color, border style, button back color and button fore color. 
 
-User can enable or disable the Border line of Toolbar by using [ShowBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ShowBorder.html) property in the Toolbar instance.
+User can enable or disable the Border line of Toolbar by using [ShowBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ShowBorder.html) property in the Toolbar instance.
 
 ![](Runtime-Features_images/Runtime-Features_img13.jpeg)
 
 ### Toolbar Behavior
 
-The docking behavior of the Toolbar can be controlled using [Toolbar.Behavior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Behavior.html) property. 
+The docking behavior of the Toolbar can be controlled using [Toolbar.Behavior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Behavior.html) property. 
 
 <table>
 <tr>
@@ -631,7 +631,7 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[Behavior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Behavior.html)'| markdownify }}
+{{'[Behavior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~Behavior.html)'| markdownify }}
 </td><td>
 Specifies the docking behavior of the toolbar. <ul><li>Docking - It is dockable on all four sides.</li><li>Movable - It is movable.</li><li>All - It is movable and dockable.</li><li>None - It is neither movable nor dockable.</li></ul></td></tr>
 </table>
@@ -657,7 +657,7 @@ N> You can display or hide a toolbar while printing a Chart. See Printing And Pr
 
 Chart Area and Series Context menu
 
-The chart has a built-in context menu, which can be enabled by setting the [ShowContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenu.html) property to true. This context menu will let the user change the chart type on a series, enable zooming, switch between 2D and 3D modes and so on.
+The chart has a built-in context menu, which can be enabled by setting the [ShowContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenu.html) property to true. This context menu will let the user change the chart type on a series, enable zooming, switch between 2D and 3D modes and so on.
 
 There are two types of context menus, both of which get shown by default when the above property is set to true.
 
@@ -665,17 +665,17 @@ There are two types of context menus, both of which get shown by default when th
  
 ![](Runtime-Features_images/Runtime-Features_img15.jpeg)
 
-This context menu can be disabled by setting the [DisplayChartContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~DisplayChartContextMenu.html) property to false.
+This context menu can be disabled by setting the [DisplayChartContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~DisplayChartContextMenu.html) property to false.
 
 2.Chart Series context menu - This will be displayed when the mouse is over a series.
 
 ![](Runtime-Features_images/Runtime-Features_img16.jpeg)
 
-This context menu can be disabled by setting the [DisplaySeriesContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~DisplaySeriesContextMenu.html) property to false.
+This context menu can be disabled by setting the [DisplaySeriesContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~DisplaySeriesContextMenu.html) property to false.
 
 ### Legend Context Menu
 
-This context menu can be enabled by setting the [ShowContextMenuInLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenuInLegend.html) property to true.
+This context menu can be enabled by setting the [ShowContextMenuInLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenuInLegend.html) property to true.
 
 ![](Runtime-Features_images/Runtime-Features_img17.jpeg)
 
@@ -685,7 +685,7 @@ This context menu can be enabled by setting the [ShowContextMenuInLegend](https:
 
 This feature lets you position the mouse pointer at a specific data point in a series and hint you on it's x and y values via a horizontal and vertical line passing through the data point and intersecting the x and y axis. These lines can be dragged around in order to position them at specific data points.
 
-Interactive Cursor can be implemented by creating an instance of [ChartInteractiveCursor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) with the [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) as its input. Then add the instance to the [InteractiveCursors](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~InteractiveCursors.html) collection as shown below. 
+Interactive Cursor can be implemented by creating an instance of [ChartInteractiveCursor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html) with the [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) as its input. Then add the instance to the [InteractiveCursors](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~InteractiveCursors.html) collection as shown below. 
 
 {% tabs %}  
 
@@ -726,13 +726,13 @@ cursor1.Color = Color.Red
 
 ### Chart AutoHighlight 
 
-The points or the series of the chart can be highlighted when the mouse hovers over them. Use the [AutoHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~AutoHighlight.html) property to enable this feature.
+The points or the series of the chart can be highlighted when the mouse hovers over them. Use the [AutoHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~AutoHighlight.html) property to enable this feature.
 
 ![](Runtime-Features_images/Runtime-Features_img19.jpeg)
 
 ### Chart Series Highlighting
 
-You can also highlight a particular chart series alone while mouse hovering, and make the other series transparent. For this, you need to set [SeriesHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~SeriesHighlight.html) property to true. The series can also be highlighted by hovering the mouse over a legend item corresponding to a particular series.
+You can also highlight a particular chart series alone while mouse hovering, and make the other series transparent. For this, you need to set [SeriesHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~SeriesHighlight.html) property to true. The series can also be highlighted by hovering the mouse over a legend item corresponding to a particular series.
 
 The following table describes properties related to this feature.
 
@@ -744,7 +744,7 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[HighlightInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStyleInfo~HighlightInterior.html)'| markdownify }}
+{{'[HighlightInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStyleInfo~HighlightInterior.html)'| markdownify }}
 </td><td>
 Sets the highlight color for the series.</td></tr>
 <tr>
@@ -754,12 +754,12 @@ HiddenInterior
 Controls the transparency of the non-highlighted series. While mouse hovering on a particular series, all other series will be set with the color, specified in this property.</td></tr>
 <tr>
 <td>
-{{'[SeriesHighlightIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~SeriesHighlightIndex.html)'| markdownify }}
+{{'[SeriesHighlightIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~SeriesHighlightIndex.html)'| markdownify }}
 </td><td>
 If you want to highlight only a particular series alone, you need to set the index value for this property. The default value is -1.</td></tr>
 </table>
 
-N> The [AutoHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~AutoHighlight.html) property should be disabled to enable this chart series highlighting feature.
+N> The [AutoHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~AutoHighlight.html) property should be disabled to enable this chart series highlighting feature.
 
 {% tabs %}  
 
@@ -813,25 +813,25 @@ Data Type </th></tr>
 <tr>
 <td>
 
-{{'[CursorOrientation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~CursorOrientation.html)'| markdownify }}
+{{'[CursorOrientation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~CursorOrientation.html)'| markdownify }}
 </td><td>
 Indicates the orientation in which the Interactive Cursor is to be drawn. The options are : <ul><li>Horizontal</li><li>Vertical</li><li>Both</li></ul></td><td>
 <br>Enum </td></tr>
 <tr>
 <td>
-{{'[HorizontalCursorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~HorizontalCursorColor.html)'| markdownify }}
+{{'[HorizontalCursorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~HorizontalCursorColor.html)'| markdownify }}
 </td><td>
 Specifies the color, which is to be used when Horizontal Interactive Cursor is drawn.</td><td>
 Color</td></tr>
 <tr>
 <td>
-{{'[VerticalCursorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~VerticalCursorColor.html)'| markdownify }}
+{{'[VerticalCursorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~VerticalCursorColor.html)'| markdownify }}
 </td><td>
 Specifies the color, which is to be used when Vertical  Interactive Cursor is drawn.</td><td>
 Color</td></tr>
 <tr>
 <td>
-{{'[Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~Color.html)'| markdownify }}
+{{'[Color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~Color.html)'| markdownify }}
 </td><td>
 Specifies the base color, which is to be used other than the default color. This acts as a parent color.</td><td>
 Color</td></tr>
@@ -895,7 +895,7 @@ cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal
 
 The same step is repeated for **vertical** and **both** cursor orientations except for the naming **Vertical** and **Both** respectively.
 
-You can also add color(s) to individual interactive cursor. The default color (base color) is **Red**. You can change the default color by using [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~Color.html), [HorizontalCursorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~HorizontalCursorColor.html), and [VerticalCursorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~VerticalCursorColor.html) properties. When you use the [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~Color.html) property, the interactive cursor will be drawn based on the color specified by the Color property (assuming this as base/parent color) regardless of the colors specified for Horizontal and Vertical cursor orientations. This is shown in the following code snippets.
+You can also add color(s) to individual interactive cursor. The default color (base color) is **Red**. You can change the default color by using [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~Color.html), [HorizontalCursorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~HorizontalCursorColor.html), and [VerticalCursorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~VerticalCursorColor.html) properties. When you use the [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~Color.html) property, the interactive cursor will be drawn based on the color specified by the Color property (assuming this as base/parent color) regardless of the colors specified for Horizontal and Vertical cursor orientations. This is shown in the following code snippets.
 
 {% tabs %}  {% highlight c# %}
 
@@ -979,21 +979,21 @@ Data Type </th></tr>
 <tr>
 <td>
 
-{{'[MoveToChartArea](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~MoveToChartArea.html)'| markdownify }}
+{{'[MoveToChartArea](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~MoveToChartArea.html)'| markdownify }}
 </td><td>
 Specifies whether the  interactive cursor is enabled for chart series or series points</td><td>
 Server Side </td><td>
 Boolean</td></tr>
 <tr>
 <td>
-{{'[XInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~XInterval.html)'| markdownify }}
+{{'[XInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~XInterval.html)'| markdownify }}
 </td><td>
 Specifies the cursor movement on the x-axis (left to right or right to left)</td><td>
 Server Side</td><td>
 Double</td></tr>
 <tr>
 <td>
-{{'[YInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~YInterval.html)'| markdownify }}
+{{'[YInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~YInterval.html)'| markdownify }}
 </td><td>
 Specifies the cursor movement on the y-axis (top to bottom or bottom to top)</td><td>
 Server Side</td><td>
@@ -1025,7 +1025,7 @@ We can move the interactive cursor for series points only (i.e., the interactive
 
 ### MoveToChartArea
 
-We can enable this feature by setting the [MoveToChartArea](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~MoveToChartArea.html) property of the interactive cursor to true. The default value is false.
+We can enable this feature by setting the [MoveToChartArea](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor~MoveToChartArea.html) property of the interactive cursor to true. The default value is false.
 
 {% tabs %}  
 
@@ -1079,13 +1079,13 @@ Me.chartControl1.ChartArea.InteractiveCursors(0).YInterval = 50
 
 Essential Chart supports ToolTips in different areas of the chart which comes with multiple customization options.
 
-The different tooltips in the chart can be turned off using the control's [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolTips.html) property.
+The different tooltips in the chart can be turned off using the control's [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolTips.html) property.
 
-N> The [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolTips.html) property in the chart is false by default, so remember to turn this on, before setting tooltips in the different chart areas.
+N> The [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolTips.html) property in the chart is false by default, so remember to turn this on, before setting tooltips in the different chart areas.
 
 ### DataPoint Tooltips
 
-Tooltips can be shown on each data point when the mouse hovers on them. The format of the tooltip is specified by the following property in [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html).
+Tooltips can be shown on each data point when the mouse hovers on them. The format of the tooltip is specified by the following property in [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html).
 
 <table>
 <tr>
@@ -1095,7 +1095,7 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[PointsToolTipFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PointsToolTipFormat.html)'| markdownify }}
+{{'[PointsToolTipFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PointsToolTipFormat.html)'| markdownify }}
 </td><td>
 Specifies the format for the datapoint tooltips. The following place-holders can be used in the value.<ul><li>{0} - Will be replaced by the corresponding ChartSeries.Name.</li><li>{1} - Will be replaced by the corresponding ChartSeries.Style.ToolTip.</li><li>{2} - Will be replaced by the corresponding data point's tooltip, for example to set the first point's tooltip, use "series1.Styles[0].ToolTip".</li><li>{3} - Will be replaced by the corresponding X value of the point.</li><li>{4} - Will be replaced by the corresponding Y value of the point. Default setting.</li><li>{5} - Will be replaced by the 2nd Y value, if any.</li><li>{6} - and so on.</li></ul></td></tr>
 </table>
@@ -1118,7 +1118,7 @@ series1.PointsToolTipFormat = "Sales:{4}K"
 
 ![](Runtime-Features_images/Runtime-Features_img27.jpeg)
 
-You can also customize the tooltip for individual data points by setting the ToolTip style for each data point. This is best accomplished by listening to the [ChartSeries.PrepareStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PrepareStyle_EV.html) event as shown below.
+You can also customize the tooltip for individual data points by setting the ToolTip style for each data point. This is best accomplished by listening to the [ChartSeries.PrepareStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PrepareStyle_EV.html) event as shown below.
 
 {% tabs %}  
 
@@ -1191,7 +1191,7 @@ The chart also lets you show a tooltip when the mouse hovers over empty areas in
 
 ### DataPoint FancyToolTip
 
-Chart Windows includes a **fancy tooltip** feature. As the name implies, this tooltip, which occurs when hovering over a data point looks like a balloon and includes information regarding the series name and the X, Y points. This feature can be turned on by setting the [ChartSeries.FancyToolTip.Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Visible.html) property to true.
+Chart Windows includes a **fancy tooltip** feature. As the name implies, this tooltip, which occurs when hovering over a data point looks like a balloon and includes information regarding the series name and the X, Y points. This feature can be turned on by setting the [ChartSeries.FancyToolTip.Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Visible.html) property to true.
 
 The FancyToolTip can also be customized with more of the following properties.
 
@@ -1203,52 +1203,52 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[Alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Alignment.html)'| markdownify }}
+{{'[Alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Alignment.html)'| markdownify }}
 </td><td>
 Indicates the alignment of the marker to that of the tooltip balloon.</td></tr>
 <tr>
 <td>
-{{'[Angle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Angle.html)'| markdownify }}
+{{'[Angle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Angle.html)'| markdownify }}
 </td><td>
 Specifies the angle at which to render the balloon in the alignment specified.</td></tr>
 <tr>
 <td>
-{{'[BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~BackColor.html)'| markdownify }}
+{{'[BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~BackColor.html)'| markdownify }}
 </td><td>
 Specifies the back color</td></tr>
 <tr>
 <td>
-{{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Border.html)'| markdownify }}
+{{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Border.html)'| markdownify }}
 </td><td>
 Let you customize the border look of the tooltip.</td></tr>
 <tr>
 <td>
-{{'[CheckLocation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~CheckLocation.html)'| markdownify }}
+{{'[CheckLocation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~CheckLocation.html)'| markdownify }}
 </td><td>
 Specifies whether the tooltip should auto align when shown for data points close to the chart border.</td></tr>
 <tr>
 <td>
-{{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Font.html)'| markdownify }}
+{{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Font.html)'| markdownify }}
 </td><td>
 Specifies the font for the tooltip text.</td></tr>
 <tr>
 <td>
-{{'[ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~ForeColor.html)'| markdownify }}
+{{'[ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~ForeColor.html)'| markdownify }}
 </td><td>
 Specifies the color for the tooltip text.</td></tr>
 <tr>
 <td>
-{{'[Spacing](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Spacing.html)'| markdownify }}
+{{'[Spacing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Spacing.html)'| markdownify }}
 </td><td>
 The space between the tooltip text and the border.</td></tr>
 <tr>
 <td>
-{{'[Style](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Style.html)'| markdownify }}
+{{'[Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Style.html)'| markdownify }}
 </td><td>
 Specifies the tooltip style. Possible values:EllipseRectangleSmoothRectangle - Default value</td></tr>
 <tr>
 <td>
-{{'[Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Symbol.html)'| markdownify }}
+{{'[Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Symbol.html)'| markdownify }}
 </td><td>
 Specifies the symbol shape to use.</td></tr>
 <tr>
@@ -1258,17 +1258,17 @@ SymbolColor
 Specifies the inner color of the symbol.</td></tr>
 <tr>
 <td>
-{{'[SymbolSize](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~SymbolSize.html)'| markdownify }}
+{{'[SymbolSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~SymbolSize.html)'| markdownify }}
 </td><td>
 Specifies the size of the symbol.</td></tr>
 <tr>
 <td>
-{{'[ToTarget](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~ToTarget.html)'| markdownify }}
+{{'[ToTarget](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~ToTarget.html)'| markdownify }}
 </td><td>
 Specifies the distance between the balloon and the target.</td></tr>
 <tr>
 <td>
-{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Visible.html)'| markdownify }}
+{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo~Visible.html)'| markdownify }}
 </td><td>
 Turns on/off fancy tooltips.</td></tr>
 </table>
@@ -1302,11 +1302,11 @@ series1.FancyToolTip.Alignment = TabAlignment.Top
 
 ## Trackball
 
-The [ChartTrackball](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball.html)  displays information about the data point close to the current mouse position. The closest point can also be highlighted with a symbol or marker. The x values of an axis are determined from the position of the vertical line of the axis, and y values are determined from the points touching the vertical line in the series.
+The [ChartTrackball](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball.html)  displays information about the data point close to the current mouse position. The closest point can also be highlighted with a symbol or marker. The x values of an axis are determined from the position of the vertical line of the axis, and y values are determined from the points touching the vertical line in the series.
 
 ### Properties
 
-The following properties are used to customize the appearance of [Trackball](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Trackball.html).
+The following properties are used to customize the appearance of [Trackball](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Trackball.html).
 
 <table>
 <tr>
@@ -1323,10 +1323,10 @@ Type
 <tr>
 <td>
 
-{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html)'| markdownify }}
+{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html)'| markdownify }}
 </td>
 <td>
-Specifies whether the {{'[trackball](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Trackball.html)'| markdownify }} should be visible or not.
+Specifies whether the {{'[trackball](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Trackball.html)'| markdownify }} should be visible or not.
 </td> 
 <td>
 bool
@@ -1334,74 +1334,74 @@ bool
 </tr>
 <tr>
 <td>
-{{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}
+{{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}
 </td>
 <td>
-You can customize the border, text color, text format, corner radius, font, etc. of a tooltip using the {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties. 
+You can customize the border, text color, text format, corner radius, font, etc. of a tooltip using the {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties. 
 
-This customization will be applied to all the horizontal {{'[ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html)'| markdownify }}.
+This customization will be applied to all the horizontal {{'[ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html)'| markdownify }}.
 </td>
 <td>
-{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
+{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[DisplayMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~DisplayMode.html)'| markdownify }}
+{{'[DisplayMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~DisplayMode.html)'| markdownify }}
 </td>
 <td>
-Specifies whether single trackball tooltip should be displayed for all {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} or each series should have its own trackball tooltip.
+Specifies whether single trackball tooltip should be displayed for all {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} or each series should have its own trackball tooltip.
 
 The following two options can be set to this property,
 
 <ul><li>Float</li><li>Group</li></ul>
 </td>
 <td>
-{{'[TrackballTooltipDisplayMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltipDisplayMode.html)'| markdownify }}
+{{'[TrackballTooltipDisplayMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltipDisplayMode.html)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }}
+{{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }}
 </td>
 <td>
-The {{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }} property is used to hold the pen information to draw tracker line. 
+The {{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }} property is used to hold the pen information to draw tracker line. 
 </td>
 <td>
-{{'[ChartLineInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo.html)'| markdownify }}
+{{'[ChartLineInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo.html)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Symbol.html)'| markdownify }}
+{{'[Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Symbol.html)'| markdownify }}
 </td>
 <td>
 Provides options to customize the trackball symbols, which are used to highlight the data points. 
 
-You can customize the {{'[Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Shape.html)'| markdownify }}, {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html)'| markdownify }}, and  {{'[Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Color.html)'| markdownify }} of a symbol to be highlighted using this instance.
+You can customize the {{'[Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Shape.html)'| markdownify }}, {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html)'| markdownify }}, and  {{'[Color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Color.html)'| markdownify }} of a symbol to be highlighted using this instance.
 </td>
 <td>
-{{'[ChartSymbolInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo.html)'| markdownify }}
+{{'[ChartSymbolInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo.html)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[ToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Tooltip.html)'| markdownify }}
+{{'[ToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Tooltip.html)'| markdownify }}
 </td>
 <td>
-You can customize the border, text color, text format, font, corner radius, etc. of a trackball tooltip using the  {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties. 
+You can customize the border, text color, text format, font, corner radius, etc. of a trackball tooltip using the  {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties. 
 
-This customization will be applied to all the {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} added in {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} 
+This customization will be applied to all the {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} added in {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} 
 </td>
 <td>
-{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
+{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
 </td>
 </tr>
 </table>
 
 ### Events
 
-The following events are used to customize the appearance of [AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html) and [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) tooltip individually before rendering them.
+The following events are used to customize the appearance of [AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html) and [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) tooltip individually before rendering them.
 
 <table>
 <tr>
@@ -1418,24 +1418,24 @@ Type
 <tr>
 <td>
 
-{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~AxisTooltipRendering_EV.html)'| markdownify }}
+{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~AxisTooltipRendering_EV.html)'| markdownify }}
 </td>
 <td>
-This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }}  can be customized using this event.
+This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }}  can be customized using this event.
 </td> 
 <td>
-{{'[AxisTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.AxisTooltipRenderingEventHandler.html)'| markdownify }}
+{{'[AxisTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.AxisTooltipRenderingEventHandler.html)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[TrackballTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~TrackballTooltipRendering_EV.html)'| markdownify }}
+{{'[TrackballTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~TrackballTooltipRendering_EV.html)'| markdownify }}
 </td>
 <td>
-This event is triggered once for each series. The appearance of individual {{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }} of {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} can be customized using this event.
+This event is triggered once for each series. The appearance of individual {{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }} of {{'[ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} can be customized using this event.
 </td> 
 <td>
-{{'[TrackballTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltipRenderingEventHandler.html)'| markdownify }}
+{{'[TrackballTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltipRenderingEventHandler.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -1460,7 +1460,7 @@ Me.chartControl1.Trackball.Visible = True
 
 ### Customize trackball marker and trackball line
  
-Visibility, shape, size, and border of a trackball marker can be customized by using the  [Visibility](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html), [Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Symbol.html), [Size](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Size.html), [Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html) of the trackball marker. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a trackball line can be customized by using the [Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html) option in the crosshair.
+Visibility, shape, size, and border of a trackball marker can be customized by using the  [Visibility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html), [Shape](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~Symbol.html), [Size](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Size.html), [Border](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSymbolInfo~Border.html) of the trackball marker. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a trackball line can be customized by using the [Line](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html) option in the crosshair.
 
 {% tabs %}  
 
@@ -1506,11 +1506,11 @@ chartControl1.Trackball.Symbol.Size = New Size(20, 20)
 
 ## Crosshair
 
-The [ChartCrossHair](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair.html) behavior is used to view the values at mouse point or touch contact point. By hovering the mouse over the chart or taping the chart area, the corresponding value will be displayed as tooltip in the axis.
+The [ChartCrossHair](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair.html) behavior is used to view the values at mouse point or touch contact point. By hovering the mouse over the chart or taping the chart area, the corresponding value will be displayed as tooltip in the axis.
 
 ### Properties
 
-The following properties are used to customize the appearance of [crosshair](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Crosshair.html).
+The following properties are used to customize the appearance of [crosshair](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Crosshair.html).
 
 <table>
 <tr>
@@ -1527,10 +1527,10 @@ Type
 <tr>
 <td>
 
-{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html)'| markdownify }}
+{{'[Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Visible.html)'| markdownify }}
 </td>
 <td>
-Specifies whether the {{'[crosshair](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Crosshair.html)'| markdownify }} should be visible or not.
+Specifies whether the {{'[crosshair](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Crosshair.html)'| markdownify }} should be visible or not.
 </td> 
 <td>
 bool
@@ -1538,33 +1538,33 @@ bool
 </tr>
 <tr>
 <td>
-{{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}
+{{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }}
 </td>
 <td>
-Provides options to customize the border, text color, text format, corner radius, font, etc. of an axis tooltip using the {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties.
+Provides options to customize the border, text color, text format, corner radius, font, etc. of an axis tooltip using the {{'[Border](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Border.html)'| markdownify }}, {{'[TextColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextColor.html)'| markdownify }}, {{'[TextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~TextFormat.html)'| markdownify }}, {{'[CornerRadius](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~CornerRadius.html)'| markdownify }}, {{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip~Font.html)'| markdownify }}, etc properties.
 
-This customization will be applied to all the {{'[ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html)'| markdownify }}.
+This customization will be applied to all the {{'[ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html)'| markdownify }}.
 </td>
 <td>
-{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
+{{'[TrackballTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }}
+{{'[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html)'| markdownify }}
 </td>
 <td>
 This property holds the pen information to draw tracker line. 
 </td>
 <td>
-{{'[ChartLineInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo.html)'| markdownify }}
+{{'[ChartLineInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo.html)'| markdownify }}
 </td>
 </tr>
 </table>
 
 ### Events
 
-The following event is used to customize the appearance of [AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html).
+The following event is used to customize the appearance of [AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html).
 
 <table>
 <tr>
@@ -1581,13 +1581,13 @@ Type
 <tr>
 <td>
 
-{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~AxisTooltipRendering_EV.html)'| markdownify }} 
+{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTrackball~AxisTooltipRendering_EV.html)'| markdownify }} 
 </td>
 <td>
-This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} can be customized using this event.
+This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~AxisTooltip.html)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} can be customized using this event.
 </td> 
 <td>
-{{'[AxisTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.AxisTooltipRenderingEventHandler.html)'| markdownify }}
+{{'[AxisTooltipRenderingEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.AxisTooltipRenderingEventHandler.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -1612,7 +1612,7 @@ Me.chartControl1.Crosshair.Visible = True
 
 ### Customize the crosshair line and crosshair label
 
-The fill and border options of the crosshairLabel are used to customize the background color and border of the crosshair label, respectively. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a crosshair line can be customized by using the [Line](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html) option of the crosshair.
+The fill and border options of the crosshairLabel are used to customize the background color and border of the crosshair label, respectively. The [Color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Color.html) and [Width](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLineInfo~Width.html) of a crosshair line can be customized by using the [Line](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCrosshair~Line.html) option of the crosshair.
 
 {% tabs %}  
 

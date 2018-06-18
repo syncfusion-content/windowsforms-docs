@@ -22,19 +22,19 @@ Required assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.PivotAnalysis.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis_namespace.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.PivotAnalysis.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis_namespace.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.PivotAnalysis.Windows assembly contains classes that handles UI operations and other fundamentals of PivotGrid control.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridControl.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.PivotAnalysis.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Base.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.PivotAnalysis.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.PivotAnalysis.Base allows you to easily access, manipulate, and display your data in a variety of configurations.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
 </table>
 
@@ -47,19 +47,19 @@ Optional assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.PivotConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotConverter.Windows.html)'| markdownify }} <br/><br/></td><td>
+{{'[Syncfusion.PivotConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotConverter.Windows.html)'| markdownify }} <br/><br/></td><td>
 Syncfusion.PivotConverter.Windows contains classes that provides the functionality of exporting the PivotGrid Control to an Excel sheet, a PDF or to a Word document. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.XlsIO.Base. contains fundamental and base classes for creating and manipulating excel files.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Pdf.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pdf/Syncfusion.Pdf.Base.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Pdf.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.Pdf.Base. contains fundamental and base classes for creating and manipulating Pdf files.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.DocIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/docio/Syncfusion.DocIO.Base.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.DocIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.DocIO.Base.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.DocIO.Base. contains fundamental and base classes for creating and manipulating Word files.<br/><br/></td></tr>
 </table>
 
@@ -374,10 +374,10 @@ N>
 
 The PivotGrid control requires the following information in order to populate the data from the data source.
 
-* [ItemSource](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ItemSource.html) - The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
-* [PivotRows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotRows.html) - Elements that need to be added in rows of PivotGrid control.
-* [PivotColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotColumns.html) - Elements that need to be added in columns of PivotGrid control.
-* [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotCalculations.html) - Calculation values that need to be added as value cells in PivotGrid control.
+* [ItemSource](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ItemSource.html) - The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
+* [PivotRows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotRows.html) - Elements that need to be added in rows of PivotGrid control.
+* [PivotColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotColumns.html) - Elements that need to be added in columns of PivotGrid control.
+* [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotCalculations.html) - Calculation values that need to be added as value cells in PivotGrid control.
 
 The below code snippet illustrates how to add the required information to the PivotGrid control.
 
@@ -423,7 +423,7 @@ Finally, run the application to obtain the following output.
 
 ## Pivot schema designer
 
-Pivot schema designer is a layout which is designed to perform like as Microsoft Excel's pivot table field list. It allows you to drag-and-drop fields between different areas, including column, row, value and filter. This pivot schema designer can be enabled in PivotGrid control by setting the [ShowPivotTableFieldList](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html) property to `true`.
+Pivot schema designer is a layout which is designed to perform like as Microsoft Excel's pivot table field list. It allows you to drag-and-drop fields between different areas, including column, row, value and filter. This pivot schema designer can be enabled in PivotGrid control by setting the [ShowPivotTableFieldList](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html) property to `true`.
 
 {% tabs %}
 
@@ -449,7 +449,7 @@ For more information, refer the [pivot schema designer](http://help.syncfusion.c
 
 ## Grouping bar
 
-Grouping bar which allows you  to drag and drop fields between different areas such as column, row, value and filter. For enabling the grouping bar, you have to make use of the [ShowGroupBar](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowGroupBar.html) property.
+Grouping bar which allows you  to drag and drop fields between different areas such as column, row, value and filter. For enabling the grouping bar, you have to make use of the [ShowGroupBar](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowGroupBar.html) property.
 
 {% tabs %}
 
@@ -475,7 +475,7 @@ For more information, refer the [grouping bar](http://help.syncfusion.com/window
 
 ## Filtering
 
-Filtering can be enabled or disabled in PivotGrid control by using the [AllowFiltering](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowFiltering.html) property. You can apply filters to one or more columns.
+Filtering can be enabled or disabled in PivotGrid control by using the [AllowFiltering](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowFiltering.html) property. You can apply filters to one or more columns.
 
 {% tabs %}
 
@@ -499,7 +499,7 @@ Me.pivotGridControl1.AllowFiltering = True
 
 ## Sorting
 
-Sorting can be enabled or disabled by using the [AllowSorting](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowSorting.html) property. By default, the PivotGrid control populates the data in ascending order.
+Sorting can be enabled or disabled by using the [AllowSorting](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowSorting.html) property. By default, the PivotGrid control populates the data in ascending order.
 
 {% tabs %}
 

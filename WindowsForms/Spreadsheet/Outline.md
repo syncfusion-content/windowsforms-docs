@@ -15,7 +15,7 @@ Spreadsheet provides support for outlines like in excel which makes your data ea
 
 Spreadsheet provides support to group the specified range in a worksheet.
 
-To [Group](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Group.html) the rows/columns
+To [Group](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Group.html) the rows/columns
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ spreadsheet.Group(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 Spreadsheet provides support to ungroup the specified range in a worksheet.
 
-To [Ungroup](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~UnGroup.html) the rows/columns
+To [Ungroup](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~UnGroup.html) the rows/columns
 
 {% tabs %}
 {% highlight c# %}
@@ -52,7 +52,7 @@ spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 ## Collapsing or expanding group
 
-Groups can be Expanded by [ExpandGroup](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~ExpandGroup.html) method  and Collapsed  by [CollapseGroup](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~CollapseGroup.html) method of `XlsIO`.
+Groups can be Expanded by [ExpandGroup](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~ExpandGroup.html) method  and Collapsed  by [CollapseGroup](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~CollapseGroup.html) method of `XlsIO`.
 
 {% tabs %}
 {% highlight c# %}
@@ -80,7 +80,7 @@ spreadsheet.RefreshOutlines(false,true);
 {% endhighlight %}
 {% endtabs %}
 
-N> [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RefreshOutlines.html) method is invoked to refresh/update the Outlines of the Group in Spreadsheet.
+N> [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RefreshOutlines.html) method is invoked to refresh/update the Outlines of the Group in Spreadsheet.
 
 ## Changing Outline settings
 

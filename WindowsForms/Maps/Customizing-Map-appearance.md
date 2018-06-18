@@ -9,7 +9,7 @@ documentation: ug
 
 # Color Mapping
 
-The range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The [`From`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.RangeColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.RangeColorMapping~To.html) properties define the value ranges, and the [`Color`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ColorMapping~Color.html) property defines the equivalent color.
+The range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The [`From`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.RangeColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.RangeColorMapping~To.html) properties define the value ranges, and the [`Color`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ColorMapping~Color.html) property defines the equivalent color.
 
 {% tabs %}
 
