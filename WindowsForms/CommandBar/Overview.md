@@ -9,8 +9,7 @@ documentation: ug
 
 # Overview
 
-[CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) implements a Framework for creating and hosting ToolBars, ReBars, and StatusBars similar to those that are found in the Visual Studio .NET and Office XP user interfaces.
-
+[CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) implements a framework for creating and hosting ToolBars, ReBars, and StatusBars similar to those that are found in the Visual Studio .NET and Office XP user interfaces.
 
 ![](Overview_images/Overview_img2.png)
 

@@ -146,14 +146,14 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with RadialMenu control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the RadialMenu with basic information.
 
-## Adding control via Form designer
+## Adding control via designer
 
 RadialMenu control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -235,7 +235,7 @@ Me.Controls.Add(radialMenu1)
 
 ![](Getting-Started_images/RadialMenu-img2.png) 
 
-**Adding Menu Items**
+**Adding menu items**
 
 To add menu items, create an instance for the required menu item and add it to `Items` collection property in RadialMenu.
 

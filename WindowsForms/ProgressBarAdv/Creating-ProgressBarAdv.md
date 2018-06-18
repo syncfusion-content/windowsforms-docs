@@ -107,7 +107,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with ProgressBarAdv control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 4. [Configure text format](#configure-text-format)
 5. [Configure TextAlignment](#configure-textAlignment)
@@ -116,7 +116,7 @@ You can create the Windows Forms application with ProgressBarAdv control as foll
 
 Create a new Windows Forms project in the Visual Studio to display the [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) with basic functionalities.
 
-## Adding control via Form designer
+## Adding control via designer
 
 The [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -134,19 +134,19 @@ To add control manually in C#, follow the given steps:
 
 	* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Shared.Base**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Shared.Base;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Shared.Base
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 
@@ -188,7 +188,7 @@ Me.Controls.Add(progressBarAdv1)
 
 Text format of the ProgressBarAdv can be customized using [TextStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv~TextStyle.html) property.
 
-**Value** represents the current value out of maximum value format.
+**Value** - It represents the current value out of maximum value format.
 
 {% tabs %}
 
@@ -208,7 +208,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Value
 
 ![](GettingStarted-images/GettingStarted-img3.png)
 
-**Percentage** represents the percentage format.
+**Percentage** - It represents the percentage format.
 
 
 {% tabs %}
@@ -229,7 +229,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Percentage
 
 ![](GettingStarted-images/GettingStarted-img5.png)
 
-**Custom** represents the other custom format.
+**Custom** - It represents the other custom format.
 
 
 {% tabs %}
@@ -253,11 +253,11 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Custom
 ![](GettingStarted-images/GettingStarted-img6.png)
 
 
-## Configure TextAlignment
+## Configure text alignment
 
 Alignment of the foreground text can be modified using [TextAlignment](#https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv~TextAlignment.html) property.
 
-**Center** represents text aligned to the Center.
+**Center** - It represents text aligned to the center.
 
 {% tabs %}
 
@@ -277,7 +277,7 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Center
 
 ![](GettingStarted-images/GettingStarted-img8.png)
 
-**Left** represents text aligned to the left.
+**Left** - It represents text aligned to the left.
 
 {% tabs %}
 
@@ -297,7 +297,7 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Left
 
 ![](GettingStarted-images/GettingStarted-img4.png)
 
-**Right** represents text aligned to the right.
+**Right** - It represents text aligned to the right.
 
 {% tabs %}
 

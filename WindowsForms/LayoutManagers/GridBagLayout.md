@@ -9,7 +9,7 @@ documentation: ug
 
 # GridBagLayout
 
-GridBagLayout is a Layout Manager which allows us to arrange the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns/rows can vary and the Child controls may span more than one cell.
+`GridBagLayout` is a Layout Manager which allows us to arrange the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns/rows can vary and the Child controls may span more than one cell.
 
 ![](Overview_images/Overview_img64.jpeg)
 
@@ -18,14 +18,13 @@ GridBagLayout is also used to layout the following controls:
 * Navigation Buttons of the Wizard control.
 * Buttons of the Calculator control.
 
-## Key Features
+## Key features
 
 **Anchor** - Provides option to set anchor direction for child controls.
 
 **Cell span** - Provides options to customize row and column span of the child controls
 
 **Fill type** - Provides option to set the position of child control such as horizontal, vertical, both or none.
-
 
 # Getting started
 
@@ -128,7 +127,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with GridBagLayout control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
 
@@ -136,7 +135,7 @@ You can create the Windows Forms application with GridBagLayout control as follo
 
 Create a new Windows Forms project in the Visual Studio to display the GridBagLayout with basic functionalities.
 
-## Adding control via Form designer
+## Adding control via designer
 
 The GridBagLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -162,19 +161,19 @@ To add control manually in C#, follow the given steps:
 
 	* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Shared.Base**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Shared.Base;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Shared.Base
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 

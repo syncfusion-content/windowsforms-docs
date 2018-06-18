@@ -13,7 +13,7 @@ documentation: ug
  ![](Overview_images/XPTaskBar_Img6.png)
 
 
-# Key Features
+# Key features
 
 **Header settings** - Provides options to customize the text, appearance, font and size of the XPTaskBarBox header.
 
