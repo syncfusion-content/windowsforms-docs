@@ -13,6 +13,7 @@ The selected item of the current hierarchy level is get/set through SelectedItem
 
 The following code examples allow you to set the SelectedItem.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -20,15 +21,17 @@ The following code examples allow you to set the SelectedItem.
 
 this.treeNavigator1.SelectedItem = treeMenuItem3;
 
-
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
+
 ‘To set the selected item in the Tree navigator.
 
 Me.treeNavigator1.SelectedItem = treeMenuItem3
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ![](Concept-and-Features_images/SelectedItem.png)
@@ -63,7 +66,7 @@ Cancel<br/><br/></td><td>
 This property enables you to avoid particular item from Selection.<br/><br/></td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -77,6 +80,8 @@ void treeNavigator1_SelectionChanging(TreeNavigator sender, SelectionStateChangi
 
 {% endhighlight %}
 
+{% highlight vb %}
+
 Private Sub treeNavigator1_SelectionChanging(sender As TreeNavigator, args As SelectionStateChangingEventArgs)
         args.Cancel = True
         Dim item As TreeMenuItem = args.NewValue
@@ -85,6 +90,9 @@ Private Sub treeNavigator1_SelectionChanging(sender As TreeNavigator, args As Se
 End Sub
 
 {% endhighlight %}
+
+
+{% endtabs %}
 
 ## SelectionChanged Event
 This event is triggered after the selection of the tree menu item changes.
@@ -109,6 +117,7 @@ This property returns true when the selected item is expanded.<br/><br/></td></t
 <td>
 </table>
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -121,6 +130,8 @@ void treeNavigator1_SelectionChanged(TreeNavigator sender, SelectionStateChanged
 
 {% endhighlight %}
 
+{% highlight vb %}
+
 Private Sub treeNavigator1_SelectionChanged(sender As TreeNavigator, e As SelectionStateChangedEventArgs)
    Dim menu As TreeMenuItem = e.SelectedItem
    Dim temp As Boolean = e.Expanded
@@ -128,10 +139,14 @@ End Sub
 
 {% endhighlight %}
 
+{% endtabs %}
+
 # Touch Scrolling
 Scrolling can be customized by using Touch scroll. When you mouse over or touch near scroll bar area, the scroll bar will be visible and by default, the scroll will not be visible. This can be enabled by setting UseTouchScrollBehavior property to true.
 
 The following code examples allow you to enable touch scroll.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -139,9 +154,13 @@ this.treeNavigator1.UseTouchScrollBehavior = true;
 
 {% endhighlight %}
 
+{% highlight vb %}
+
 Me.treeNavigator1.UseTouchScrollBehavior = True
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 ![](Concept-and-Features_images/UseScroll1.png)

@@ -61,24 +61,18 @@ TreeNavigator can be added through code-behind by following the below steps.
 
 1.	Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools which are needed for the Control.
 
+{% tabs %}
 
-
-   ~~~ cs
-
-
-
+{% highlight c# %}
 		//Namespaces.
 
 		using Syncfusion.Windows.Forms.Tools;
 
 		using Syncfusion.Windows.Forms;
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
-
-
+{% highlight vb %}
 
 		‘Namespaces.
 
@@ -86,14 +80,15 @@ TreeNavigator can be added through code-behind by following the below steps.
 
 		Imports Syncfusion.Windows.Forms.Tools
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+
+{% endtabs %}
 
 2.	To add TreeNavigator Control to a Windows Forms Application through code, Create an instance of the TreeNavigator control and add it to the Form.
 
-   ~~~ cs
+{% tabs %}
 
-
+{% highlight c# %}
 		//Creates the TreeNavigator instance.
 
 		TreeNavigator treeNavigator = new TreeNavigator();
@@ -101,11 +96,9 @@ TreeNavigator can be added through code-behind by following the below steps.
 
 		this.Controls.Add(treeNavigator);
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
-
+{% highlight vb %}
 
 
 		‘Creates the TreeNavigator instance.
@@ -115,8 +108,9 @@ TreeNavigator can be added through code-behind by following the below steps.
 
 		Me.Controls.Add(treeNavigator)
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Adding TreeMenuItem to the control
      The TreeNavigator is populated with the collection of TreeMenuItem using the items property. we can add TreeMenuItem in two Ways,
@@ -127,11 +121,11 @@ TreeNavigator can be added through code-behind by following the below steps.
 The following code example allows you to add TreeMenuItem to the TreeNavigator.
 
 
+{% tabs %}
 
- ~~~ cs
+{% highlight c# %}
 
-
-		//Adds items to the TreeNavigator.
+//Adds items to the TreeNavigator.
 this.treeNavigator.Header.HeaderText = "This PC";
 TreeMenuItem treemenuitem1 = new TreeMenuItem();
 this.treeNavigator.Items.Add(treemenuitem1);
@@ -143,14 +137,12 @@ TreeMenuItem treemenuitem3 = new TreeMenuItem();
 this.treeNavigator.Items.Add(treemenuitem3);
 treemenuitem3.Text = "Downloads";
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
-   ~~~ vbnet
-
+{% highlight vb %}
 
 
-		'Adds items to the TreeNavigator.
+'Adds items to the TreeNavigator.
 Me.treeNavigator1.Header.HeaderText = "This PC"
 Dim treemenuitem1 As TreeMenuItem = New TreeMenuItem()
 Me.treeNavigator1.Items.Add(treemenuitem1)
@@ -163,9 +155,9 @@ Me.treeNavigator1.Items.Add(treemenuitem3)
 treemenuitem3.Text = "Downloads"
 
 
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint}
+{% endtabs %}
 
 
 
