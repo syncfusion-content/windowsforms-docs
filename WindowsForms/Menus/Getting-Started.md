@@ -591,7 +591,9 @@ this.bar1.Items.Add(textBoxBarItem1);
 
 {% highlight VB %}
 
-Dim textBoxBarItem1 As New TextBoxBarItem()
+Dim textBoxBarItem1 As New Tex
+
+tBoxBarItem()
 
 Me.mainFrameBarManager1.Items.Add(Me.textBoxBarItem1)
 

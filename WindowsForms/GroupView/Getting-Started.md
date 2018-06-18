@@ -40,7 +40,7 @@ To use [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/
  
 <table>
 <tr>
-<td>{{'**S.No**'| markdownify }}
+<td>{{'**S.no**'| markdownify }}
 </td>
 <td>{{'**Framework version**'| markdownify }}
 </td>
