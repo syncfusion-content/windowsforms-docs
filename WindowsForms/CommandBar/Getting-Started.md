@@ -148,14 +148,14 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-Form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the CommandBar with functionalities.
 
-## Adding control via Form designer
+## Adding control via designer
 
 The [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -193,19 +193,19 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Tools.Windows**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Tools.Windows;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Tools.Windows
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 
@@ -267,14 +267,14 @@ this.commandBarController1.CommandBars.Add(this.commandBar1);
 
 ![](Getting-Started_images/GettingStarted-img4.png)
 
-**Adding XPToolbar into CommandBar** 
+**Adding XPToolBar into CommandBar** 
 
-To add XPToolbar into CommandBar, Create an instance of [XPToolbar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) and add it CommandBar.
+To add XPToolBar into CommandBar, Create an instance of [XPToolbar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) and add it CommandBar.
 
 {% tabs %}
 
 {% highlight C# %}
-// Create an instance of XPToolbar
+// Create an instance of XPToolBar
 
 XPToolBar xpToolBar1 = new XPToolBar();
 
@@ -289,7 +289,7 @@ this.parentBarItem1.Text = "File";
 
 this.staticBarItem1.Text = "Search";
 
-// Add items to XPToolbar
+// Add items to XPToolBar
 
  this.xpToolBar1.Bar.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {
             this.parentBarItem1,
@@ -303,7 +303,7 @@ this.commandBar1.Controls.Add(this.xpToolBar1);
 
 {% highlight VB %}
 
-' Create an instance of XPToolbar
+' Create an instance of XPToolBar
 
 Dim xpToolBar1 As New XPToolBar()
 
@@ -318,7 +318,7 @@ Me.parentBarItem1.Text = "File"
 
 Me.staticBarItem1.Text = "Search"
 
-' Add items to XPToolbar
+' Add items to XPToolBar
 
  Me.xpToolBar1.Bar.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.parentBarItem1, Me.staticBarItem1, Me.textBoxBarItem1})
 

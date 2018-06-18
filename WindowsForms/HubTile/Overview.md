@@ -13,9 +13,6 @@ HubTile is a content control that functions as live tiles in an application for 
 
  ![loadimage](Overview_images/Overview_img1.png)
  
-
-
-
 ## Key features
 
 * **Default tile** –  This tile provides notifications through various transition effects.

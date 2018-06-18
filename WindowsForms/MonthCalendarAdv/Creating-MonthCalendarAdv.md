@@ -145,7 +145,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with MonthCalendarAdv control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code) 
 4. [Configure to allow multiple selection](configurate-to-allow-multiple-selection)
 5. [Selection Date Range](#selection-date-range)
@@ -154,7 +154,7 @@ You can create the Windows Forms application with MonthCalendarAdv control as fo
 
 Create a new Windows Forms project in the Visual Studio to display the MonthCalendarAdv with basic information.
 
-## Adding control via Form designer
+## Adding control via designer
 
 MonthCalendarAdv control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -250,7 +250,7 @@ Me.monthCalendarAdv1.AllowMultipleSelection = True
 
 ![](CalendarDateTime_images/MonthCalenderAdv-img4.png) 
 
-## Selection Date Range
+## Selection date range
 
  MonthCalenderAdv prevents users from selecting dates within a specified minimum and maximum range. To specify the range, set the start date and end date to `MinValue` and `MaxValue` properties respectively.
 

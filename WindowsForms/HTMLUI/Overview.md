@@ -12,7 +12,7 @@ documentation: ug
 HTMLUIControl helps to render the Hyper Text Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, HTMLUI comes with advanced options to work with web-related functionalities like navigating through a history of documents, selection and much more.
 
 
-## Key Features
+## Key features
 
 * **Loading document** - Provides option to load HTML content from file, resource, URL, string and much more. 
 

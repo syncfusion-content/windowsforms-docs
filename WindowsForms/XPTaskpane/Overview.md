@@ -13,17 +13,13 @@ documentation: ug
 
 ![](Overview_images/XPtaskPane_img1.png)
 
+## Key features
 
-
-## Key Features
-
-This section covers the features of XPTaskPane control.
-
-* **Complete design time support** - Provides support to easily design the XPTaskPages and browse using a drop-down menu and the arrow button in task pane's header portion.
+* **Complete design-time support** - Provides support to easily design the XPTaskPages and browse using a drop-down menu and the arrow button in task pane's header portion.
 
 * **User interface properties** - Provides options to create child controls representing the different segments of the XPTaskPane and also exposes them in the designer to let users customize it.
 
-* **Add/Remove pages** - Provides options to add or remove pages either through verbs or through TaskPages property settings.
+* **Add / Remove pages** - Provides options to add or remove pages either through verbs or through TaskPages property settings.
 
 * **Navigation** - Provides options to navigate through pages at design-time by selecting Previous page and Next page verbs or using arrow keys in the XPTaskPage Collection Editor.
 

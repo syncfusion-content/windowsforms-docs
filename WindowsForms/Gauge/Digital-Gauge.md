@@ -9,7 +9,7 @@ documentation: ug
 
 # DigitalGauge
 
-[DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED Display) mode. Digital gauge is used to display a range of values that uses character in combination with numbers.
+[DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED Display) mode. It is used to display a range of values that uses character in combination with numbers.
 
 # Key features
 
@@ -22,8 +22,6 @@ documentation: ug
 * **Customization option** - Supports color and visibility customization of all elements.
 
 * **Visual style** - Supports rich set of visual styles to customize the look and feel.
-
-
 
 # Getting started
 
@@ -134,14 +132,14 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Add control via Form Designer](#adding-control-via-form-designer)
+2. [Add control via designer](#adding-control-via-designer)
 3. [Add control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the DigitalGauge with basic functionalities.
 
-## Add control via Form Designer
+## Add control via designer
 
 The [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -162,19 +160,19 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Gauge.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-**Step 2** : Include the namespaces **Syncfusion.Gauge.Windows**.
+**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Gauge.Windows;
+using Syncfusion.Windows.Forms.Gauge;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Gauge.Windows
+Imports Syncfusion.Windows.Forms.Gauge
 
 {% endhighlight  %}
 
@@ -206,10 +204,9 @@ Me.Controls.Add(digitalGauge1)
 
 ##  Concepts and features
 
-
 This section illustrates the features of the digital gauge with different visual styles and sample code. It contains the following topics:
 
-* DigitalGauge Visual Style
+* Visual styles
 * Character Type
 * Character Count
 * Segment Spacing
@@ -217,7 +214,6 @@ This section illustrates the features of the digital gauge with different visual
 * Round Corner Radius
 
 ### Visual styles
-
 
 The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
 
