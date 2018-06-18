@@ -24,7 +24,7 @@ The following topics explain the customization of horizontal axis.
 
 ### Visibility
 
-Major gridlines visibility can be customized using the [`MajorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MajorGridlinesVisible.html) property.
+Major gridlines visibility can be customized using the [`MajorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MajorGridlinesVisible.html) property.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ sfSmithChart1.HorizontalAxis.MajorGridlinesVisible = False
 
 ### Style
 
-Major gridlines style can be customized using the properties [`MajorGridlinesDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesDashStyle.html), [`MajorGridlinesColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesColor.html), [`MajorGridlinesWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesWidth.html) as you see in the below code snippet.
+Major gridlines style can be customized using the properties [`MajorGridlinesDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesDashStyle.html), [`MajorGridlinesColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesColor.html), [`MajorGridlinesWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesWidth.html) as you see in the below code snippet.
 
 {% tabs %}
 
@@ -80,7 +80,7 @@ sfSmithChart1.HorizontalAxis.Style.MajorGridlinesWidth = 1
 
 ### Visibility
 
-By default, the minor gridlines are not added to axis. The visibility of the minor gridlines can be controlled by using the [`MinorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesVisible.html) property.
+By default, the minor gridlines are not added to axis. The visibility of the minor gridlines can be controlled by using the [`MinorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesVisible.html) property.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = True
 
 ### Style
 
-Minor gridlines style can be customized by using the [`MinorGridlinesDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesDashStyle.html),  [`MinorGridlinesColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesColor.html), [`MinorGridlinesWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesWidth.html) and [`MinorGridlinesCount`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesCount.html) properties as shown in the following code snippet.
+Minor gridlines style can be customized by using the [`MinorGridlinesDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesDashStyle.html),  [`MinorGridlinesColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesColor.html), [`MinorGridlinesWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesWidth.html) and [`MinorGridlinesCount`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesCount.html) properties as shown in the following code snippet.
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ sfSmithChart1.HorizontalAxis.MinorGridlinesCount = 10
 
 ## Axis line 
 
-To customize the visibility and appearance of an axis line, use the [`AxisLineVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~AxisLineVisible.html), [`AxisLineDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~AxisLineDashStyle.html) and [`AxisLineColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~AxisLineColor.html) properties.
+To customize the visibility and appearance of an axis line, use the [`AxisLineVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~AxisLineVisible.html), [`AxisLineDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~AxisLineDashStyle.html) and [`AxisLineColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~AxisLineColor.html) properties.
 
 The following code snippet represents the axis line color customization.
 
@@ -166,7 +166,7 @@ sfSmithChart1.HorizontalAxis.Style.AxisLineColor = Color.Red
 
 ## Label Placement
 
-The [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelPlacement.html) property is used to position the axis label either inside or outside of the chart plotting area. By default, the labels are placed outside.
+The [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelPlacement.html) property is used to position the axis label either inside or outside of the chart plotting area. By default, the labels are placed outside.
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ sfSmithChart1.HorizontalAxis.LabelPlacement = LabelPlacement.Inside
 
 ## Label intersect action
 
-When the axis labels overlap with each other based on the chart dimensions and label size, you can avoid the overlapping by using the [`LabelIntersectAction`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelIntersectAction.html) property. The default value of the [`LabelIntersectAction`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelIntersectAction.html) property is Hide.
+When the axis labels overlap with each other based on the chart dimensions and label size, you can avoid the overlapping by using the [`LabelIntersectAction`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelIntersectAction.html) property. The default value of the [`LabelIntersectAction`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelIntersectAction.html) property is Hide.
 
 {% tabs %}
 
@@ -218,7 +218,7 @@ Radial axis scale is used to plot the normalized reactance values in impedance S
 
 ### Visibility
 
-Major gridlines visibility can be customized using the [`MajorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MajorGridlinesVisible.html) property.
+Major gridlines visibility can be customized using the [`MajorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MajorGridlinesVisible.html) property.
 
 {% tabs %}
 
@@ -241,7 +241,7 @@ sfSmithChart1.RadialAxis.MajorGridlinesVisible = False
 
 ### Style
 
-Major gridlines style can be customized using the [`MajorGridlinesDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesDashStyle.html), [`MajorGridlinesColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesColor.html), [`MajorGridlinesWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesWidth.html) properties as shown in the following code snippet.
+Major gridlines style can be customized using the [`MajorGridlinesDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesDashStyle.html), [`MajorGridlinesColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesColor.html), [`MajorGridlinesWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MajorGridlinesWidth.html) properties as shown in the following code snippet.
 
 {% tabs %}
 
@@ -274,7 +274,7 @@ sfSmithChart1.RadialAxis.Style.MajorGridlinesWidth = 1
 
 ### Visibility
 
-Minor grid lines visibility can be customized using the [`MinorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesVisible.html) property .
+Minor grid lines visibility can be customized using the [`MinorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesVisible.html) property .
 
 {% tabs %}
 
@@ -297,7 +297,7 @@ sfSmithChart1.RadialAxis.MinorGridlinesVisible = True
 
 ### Style
 
-Minor gridlines style can be customized using the [`MinorGridlinesDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesDashStyle.html),  [`MinorGridlinesColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesColor.html), [`MinorGridlinesWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesWidth.html) and [`MinorGridlinesCount`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesCount.html) properties as shown in the following code snippet.
+Minor gridlines style can be customized using the [`MinorGridlinesDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesDashStyle.html),  [`MinorGridlinesColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesColor.html), [`MinorGridlinesWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~MinorGridlinesWidth.html) and [`MinorGridlinesCount`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesCount.html) properties as shown in the following code snippet.
 
 {% tabs %}
 
@@ -335,7 +335,7 @@ sfSmithChart1.RadialAxis.MinorGridlinesCount = 10
 
 ## Axis line 
 
-To customize the visibility and appearance of an axis line, use the [`AxisLineVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~AxisLineVisible.html), [`AxisLineDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~AxisLineDashStyle.html), [`AxisLineColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~AxisLineColor.html) properties.
+To customize the visibility and appearance of an axis line, use the [`AxisLineVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~AxisLineVisible.html), [`AxisLineDashStyle`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~AxisLineDashStyle.html), [`AxisLineColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.AxisStyle~AxisLineColor.html) properties.
 
 The following code snippet represents the axis line color customization.
 
@@ -360,7 +360,7 @@ sfSmithChart1.RadialAxis.Style.AxisLineColor = Color.Red
 
 ## Label Placement
 
-The [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelPlacement.html) property is used to position the axis label either inside or outside of the chart plotting area. By default, the labels are placed outside.
+The [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelPlacement.html) property is used to position the axis label either inside or outside of the chart plotting area. By default, the labels are placed outside.
 
 {% tabs %}
 
@@ -383,7 +383,7 @@ sfSmithChart1.RadialAxis.LabelPlacement = LabelPlacement.Inside
 
 ## Label intersect action
 
-When the axis labels overlap with each other based on the chart dimensions and label size, you can avoid overlapping by using the [`LabelIntersectAction`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelIntersectAction.html) property. The default value of the [`LabelIntersectAction`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelIntersectAction.html) property is Hide.
+When the axis labels overlap with each other based on the chart dimensions and label size, you can avoid overlapping by using the [`LabelIntersectAction`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelIntersectAction.html) property. The default value of the [`LabelIntersectAction`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelIntersectAction.html) property is Hide.
 
 {% tabs %}
 
@@ -406,7 +406,7 @@ sfSmithChart1.RadialAxis.LabelIntersectAction = LabelIntersectActions.Hide
 
 ## Events
 
-[`LabelCreated`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelCreated_EV.html) : Occurs when the axis labels are created.
+[`LabelCreated`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~LabelCreated_EV.html) : Occurs when the axis labels are created.
 
 Supports for both the axes.
 

@@ -30,7 +30,7 @@ Me.Icon = New Icon("sfIcon.ico")
 
 ### Form icon alignment
 
-The form icon can be aligned vertically and horizontally by using the [Style.TitleBar.IconVerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~IconVerticalAlignment.html) and [Style.TitleBar.IconHorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~IconHorizontalAlignment.html) properties.
+The form icon can be aligned vertically and horizontally by using the [Style.TitleBar.IconVerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~IconVerticalAlignment.html) and [Style.TitleBar.IconHorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~IconHorizontalAlignment.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -47,7 +47,7 @@ Me.Style.TitleBar.IconHorizontalAlignment = HorizontalAlignment.Right
 
 ## Form border
 
-Appearance of the border can be customized by using the [Style.Border](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~Border.html) and [Style.InactiveBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~InactiveBorder.html) properties.
+Appearance of the border can be customized by using the [Style.Border](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~Border.html) and [Style.InactiveBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~InactiveBorder.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -70,7 +70,7 @@ Me.Style.InactiveBorder = New Pen(Color.LightGray, 2)
 
 ## Shadow effect
 
-Shadow effect of the form can be customized by using the [Style.ShadowOpacity](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~ShadowOpacity.html) and [Style.InactiveShadowOpacity](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~InactiveShadowOpacity.html) properties.
+Shadow effect of the form can be customized by using the [Style.ShadowOpacity](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~ShadowOpacity.html) and [Style.InactiveShadowOpacity](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~InactiveShadowOpacity.html) properties.
 
 {% tabs %}
 {% highlight c# %}

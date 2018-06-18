@@ -10,7 +10,7 @@ documentation: ug
 # Cell Style Architecture
 
 GridControl can be thought of as a rectangular table of grid cells. Each cell contains distinct information and can be displayed independently of other cells. 
-GridControl uses [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) objects to store state information about the appearance of a grid cell. So attributes like Font, BackColor, CellValue and CellType are all reflected in a single GridStyleInfo object. This section explains how to access and use the GridStyleInfo objects.
+GridControl uses [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) objects to store state information about the appearance of a grid cell. So attributes like Font, BackColor, CellValue and CellType are all reflected in a single GridStyleInfo object. This section explains how to access and use the GridStyleInfo objects.
 
 ## GridStyleInfo Properties
 
@@ -18,7 +18,7 @@ GridControl uses [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/window
 
 ### BackColor
 
-[BackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BackColor.html) property specifies the background color for the cell.
+[BackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BackColor.html) property specifies the background color for the cell.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1[2, 2].BackColor = Color.LightSkyBlue;
@@ -36,7 +36,7 @@ Me.gridControl1(4, 4).BackColor = Color.LightPink
 
 ### Font
 
-[Font](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Font.html) property of the `GridStyleInfo` class specifies the font for the text displayed in the cell. In GridControl [GridFontInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFontInfo.html) class acts as a wrapper class for the standard [System.Drawing.Font](https://msdn.microsoft.com/en-us/library/system.drawing.font.aspx) class. The `GridFontInfo` class has special static members that easily modify font property members.
+[Font](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Font.html) property of the `GridStyleInfo` class specifies the font for the text displayed in the cell. In GridControl [GridFontInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFontInfo.html) class acts as a wrapper class for the standard [System.Drawing.Font](https://msdn.microsoft.com/en-us/library/system.drawing.font.aspx) class. The `GridFontInfo` class has special static members that easily modify font property members.
 {% tabs %}
 {% highlight c# %}
 GridFontInfo fontSize = new GridFontInfo();
@@ -64,7 +64,7 @@ Me.gridControl1(3, 3).Font.Strikeout = True
 
 ### Text and CellValue
 
-Value for the cells can be changed by using either [Text](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Text.html) or [CellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValue.html) property. Both the properties are closely related. The major difference is that, `Text` property is a string and `CellValue` property is an object.
+Value for the cells can be changed by using either [Text](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Text.html) or [CellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValue.html) property. Both the properties are closely related. The major difference is that, `Text` property is a string and `CellValue` property is an object.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ Me.gridControl1(3,2).CellValue = obj
 
 ### ImageList
 
-[ImageList](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ImageList.html) property holds [Systems.Windows.Forms.ImageList](https://msdn.microsoft.com/en-us/library/system.windows.forms.imagelist.aspx). Generally the whole grid will store the ImageList in the parent `GridStyleInfo`. The images can be retrieved by using [ImageIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ImageIndex.html) property and can set on cell-by-cell basis.
+[ImageList](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ImageList.html) property holds [Systems.Windows.Forms.ImageList](https://msdn.microsoft.com/en-us/library/system.windows.forms.imagelist.aspx). Generally the whole grid will store the ImageList in the parent `GridStyleInfo`. The images can be retrieved by using [ImageIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ImageIndex.html) property and can set on cell-by-cell basis.
 
 {% tabs %}
 {% highlight c# %}
@@ -120,7 +120,7 @@ Me.gridControl1(3, 2).ImageIndex = 1
 
 ### Interior
 
-[Interior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Interior.html) property specifies solid, gradient, or pattern style for cell’s background. Grid cells can be painted by using Interior property under Syncfusion.Drawing.BrushInfo class. [BrushInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Drawing.BrushInfo.html) holds information on filling the background of a grid cell. [PatternStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Drawing.PatternStyle.html) specifies which the pattern style to be used and [GradientStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Drawing.GradientStyle.html) specifies the gradient style that has to be used.
+[Interior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Interior.html) property specifies solid, gradient, or pattern style for cell’s background. Grid cells can be painted by using Interior property under Syncfusion.Drawing.BrushInfo class. [BrushInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.BrushInfo.html) holds information on filling the background of a grid cell. [PatternStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.PatternStyle.html) specifies which the pattern style to be used and [GradientStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.GradientStyle.html) specifies the gradient style that has to be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +139,7 @@ gridControl1(3, 2).Interior = New BrushInfo(PatternStyle.DashedHorizontal, Color
 
 ### TextColor
 
-[TextColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~TextColor.html) property is used to change the color of the cell text in GridControl.
+[TextColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~TextColor.html) property is used to change the color of the cell text in GridControl.
 
 {% tabs %}
 {% highlight c# %}
@@ -158,7 +158,7 @@ gridControl1(2, 2).TextColor = Color.Red
 
 ### Borders
 
-Borders can be set on all sides of a cell by setting [Borders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Borders.html) property to an instance of [GridBorder](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBorder.html). GridBorder class holds the formatting information for the borders of the cell.
+Borders can be set on all sides of a cell by setting [Borders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Borders.html) property to an instance of [GridBorder](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBorder.html). GridBorder class holds the formatting information for the borders of the cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +176,7 @@ gridControl1(2, 2).Borders.All = New GridBorder(GridBorderStyle.Solid, Color.Red
 
 ### Orientation
 
-[Orientation](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFontInfo~Orientation.html) property specifies the orientation of the grid cell text. The orientation will change accordingly to the angle specified.
+[Orientation](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridFontInfo~Orientation.html) property specifies the orientation of the grid cell text. The orientation will change accordingly to the angle specified.
 {% tabs %}
 {% highlight c# %}
 gridControl1[2, 2].Text = "Essential Grid";
@@ -194,7 +194,7 @@ gridControl1(2, 2).Font.Orientation = 180
 
 ### Format
 
-The formats of a cell value can be changed by using [Format](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Format.html) property. For more details on the different types of formatting types, please check the MSDN link over [here.](https://msdn.microsoft.com/en-us/library/26etazsy.aspx)
+The formats of a cell value can be changed by using [Format](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Format.html) property. For more details on the different types of formatting types, please check the MSDN link over [here.](https://msdn.microsoft.com/en-us/library/26etazsy.aspx)
 {% tabs %}
 {% highlight c# %}
 gridControl1[2, 2].CellValue = 31456;
@@ -212,7 +212,7 @@ Me.gridControl1(2, 2).Format = "C"
 
 ### CellTipText
 
-[CellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellTipText.html) object specifies the ToolTip Text that needs to be displayed when the mouse pointer is moved over a cell. Cell tip text can be set for rows, columns, tables and individual cells. 
+[CellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellTipText.html) object specifies the ToolTip Text that needs to be displayed when the mouse pointer is moved over a cell. Cell tip text can be set for rows, columns, tables and individual cells. 
 
 {% tabs %}
 {% highlight c# %}
@@ -235,7 +235,7 @@ Me.gridControl1(2, 2).CellTipText = "TipText for cell 2,2"
 
 ## BaseStyles
 
-[BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BaseStyle.html) is one of the parent-type style which is used to customize the cell’s appearance. BaseStyles are `GridStyleInfo` objects which can be associated with an arbitrary collection of cells. 
+[BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BaseStyle.html) is one of the parent-type style which is used to customize the cell’s appearance. BaseStyles are `GridStyleInfo` objects which can be associated with an arbitrary collection of cells. 
 Base styles that used in GridControl are,
 
 1. [Standard](#standard)
@@ -326,7 +326,7 @@ gridControl1.BaseStylesMap("Row Header").StyleInfo.TextColor = Color.Orange
 
 ### Custom BaseStyles
 
-Custom BaseStyles can be defined in GridControl by using the [GridBaseStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBaseStyle.html). After defining a BaseStyle, it has to be added to the [BaseStylesMap](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html) so that it can be accessed in `GridStyleInfo` objects. Assign the defined base style to the desired cells by using the [BaseStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BaseStyle.html) property in the `GridStyleInfo`.
+Custom BaseStyles can be defined in GridControl by using the [GridBaseStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBaseStyle.html). After defining a BaseStyle, it has to be added to the [BaseStylesMap](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html) so that it can be accessed in `GridStyleInfo` objects. Assign the defined base style to the desired cells by using the [BaseStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BaseStyle.html) property in the `GridStyleInfo`.
 
 {% tabs %} {% highlight c# %}
 //Adds a new base style.
@@ -362,8 +362,8 @@ In this section let’s discuss on some of the ways that can be used to assign t
 
 ### ChangeCells method
 
-For assigning the `GridStyleInfo` objects for a range of cells, make use of the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ChangeCells.html)()method. This overloaded method accepts `GridRangeInfo` and `GridStyleInfo` objects. [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class specifies a range of cells in GridControl.
-The ChangeCells method depends on the [StyleModifyType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Styles.StyleModifyType.html) parameter. This modify type defines the style operations. Default modify type is `StyleModifyType.Override`.
+For assigning the `GridStyleInfo` objects for a range of cells, make use of the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ChangeCells.html)()method. This overloaded method accepts `GridRangeInfo` and `GridStyleInfo` objects. [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) class specifies a range of cells in GridControl.
+The ChangeCells method depends on the [StyleModifyType](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Styles.StyleModifyType.html) parameter. This modify type defines the style operations. Default modify type is `StyleModifyType.Override`.
 
 {% tabs %}
 {% highlight c# %}
@@ -408,7 +408,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style, StyleModifyT
 
 ### Table Styles
 
-Changes can be done for the whole grid by using the [TableStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~TableStyle.html) property. TableStyle is a single `GridStyleInfo` object that is associated with the entire grid. 
+Changes can be done for the whole grid by using the [TableStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~TableStyle.html) property. TableStyle is a single `GridStyleInfo` object that is associated with the entire grid. 
 
 {% tabs %}{% highlight c# %}
 //Creates a GridStyleInfo object
@@ -452,7 +452,7 @@ Me.gridControl1.TableStyle = style
 
 ### Row Styles
 
-Changes can be done for a particular or range of rows by using the [RowStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~RowStyles.html) property. This property is a `GridStyleInfo` object which is associated with each row.
+Changes can be done for a particular or range of rows by using the [RowStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~RowStyles.html) property. This property is a `GridStyleInfo` object which is associated with each row.
 
 {% tabs %}
 {% highlight c# %}
@@ -501,7 +501,7 @@ Me.gridControl1.RowStyles(4) = style
 
 ### Column Styles
 
-Changes can be done for a particular or range of columns by using the [ColStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColStyles.html) property. This property is a `GridStyleInfo` object which is associated with each column.
+Changes can be done for a particular or range of columns by using the [ColStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColStyles.html) property. This property is a `GridStyleInfo` object which is associated with each column.
 
 {% tabs %} {% highlight c# %}
 //Creates a GridStyleInfo object.
@@ -547,7 +547,7 @@ Me.gridControl1.ColStyles(4) = style
 
 ## Removing styles
 
-For removing the `GridStyleInfo` object from the grid cells, make use of the [ModifyStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ModifyStyle.html) method. This method can remove the styles for whole grid or a particular range of cells.
+For removing the `GridStyleInfo` object from the grid cells, make use of the [ModifyStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ModifyStyle.html) method. This method can remove the styles for whole grid or a particular range of cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -582,7 +582,7 @@ N> Null denotes to add an empty style after removing the existing styles.
 
 ### Clearing Styles Along with Data
 
-It is possible to clear styles along with data in a cell by using the [Model.ClearCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClearCells.html) method. In this method mention the range of cells to be cleared and also a boolean value whether to clear the style along with it. If `true`, the styles will be cleared, otherwise only the data will be cleared.
+It is possible to clear styles along with data in a cell by using the [Model.ClearCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClearCells.html) method. In this method mention the range of cells to be cleared and also a boolean value whether to clear the style along with it. If `true`, the styles will be cleared, otherwise only the data will be cleared.
 
 {% tabs %} 
 {% highlight c# %}
@@ -612,7 +612,7 @@ N> <kbd>Ctrl</kbd>+<kbd>Delete</kbd> key combination can be used to clear the se
 
 ### Clearing Only the Data
 
-For clearing only the selected range of cells, make use of the [Model.Clear](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~Clear.html) method. This method clears only the cells that are selected. 
+For clearing only the selected range of cells, make use of the [Model.Clear](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~Clear.html) method. This method clears only the cells that are selected. 
 
 {% tabs %}{% highlight c# %}
 // Will clear the selected contents.

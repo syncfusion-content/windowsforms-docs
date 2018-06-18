@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Record Navigation Control
-The [GridRecordNavigationControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html) is used to navigate between records using a navigation bar at the bottom of the grid. 
+The [GridRecordNavigationControl](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html) is used to navigate between records using a navigation bar at the bottom of the grid. 
 ## Adding Record Navigation
 The record navigation control can be added throw the designer as well as the code. 
 
@@ -94,7 +94,7 @@ Me.Controls.Add(Me.recordNavigationControl1)
 The GridRecordNavigationControl provides the following list of properties for customization,
 
 ### Changing the Text of the Navigation
-By default the Record navigation bar will display the ‘Record’ at the prefix of the navigation bar text. This can be changed by setting the [Label](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~Label.html) property as of follows,
+By default the Record navigation bar will display the ‘Record’ at the prefix of the navigation bar text. This can be changed by setting the [Label](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~Label.html) property as of follows,
 
 {% tabs %}
 {% highlight c# %}
@@ -108,7 +108,7 @@ Me.recordNavigationControl.Label = "Row"
 {% endtabs %}
 
 ### Appending the Text to the Navigation Bar
-The Record navigation bar text can be append with the desired text by setting the [MaxLabel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~MaxLabel.html) property.
+The Record navigation bar text can be append with the desired text by setting the [MaxLabel](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~MaxLabel.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,7 +123,7 @@ Me.recordNavigationControl.MaxLabel = "of 1000"
 ![](Record-Navigation-Control_images/Record-Navigation-Control_img6.jpeg)
 
 ### Setting the Maximum Record Count
-The maximum number of record position can be set by using [MaxRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~MaxRecord.html) property.
+The maximum number of record position can be set by using [MaxRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~MaxRecord.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -135,7 +135,7 @@ this.recordNavigationControl.MaxRecord = 1000;
 Me.recordNavigationControl.MaxRecord = 1000
 {% endhighlight %}
 {% endtabs %}
-The maximum record count can be reset to default by using the [ResetMaxRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetMaxRecord.html) method.
+The maximum record count can be reset to default by using the [ResetMaxRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetMaxRecord.html) method.
 {% tabs %}
 {% highlight c# %}
 //Reset the maximum record 
@@ -148,7 +148,7 @@ Me.gridRecordNavigationControl1.ResetMaxRecord()
 {% endtabs %}
 
 ### Setting the Minimum Record Position 
-The minimum number of record position can be set by using [MinRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~MinRecord.html) property.
+The minimum number of record position can be set by using [MinRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~MinRecord.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -160,7 +160,7 @@ this.recordNavigationControl.MinRecord = 1;
 Me.recordNavigationControl.MinRecord = 1
 {% endhighlight %}
 {% endtabs %}
-The minimum record position can be reset to default by using the [ResetMinRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetMinRecord.html) method.
+The minimum record position can be reset to default by using the [ResetMinRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetMinRecord.html) method.
 {% tabs %}
 {% highlight c# %}
 //Reset the minimum record count
@@ -173,7 +173,7 @@ Me.gridRecordNavigationControl1.ResetMinRecord()
 {% endtabs %}
 
 ### Setting the width of the Navigation Bar
-The width of the navigation bar can be changed by setting the [NavigationBarWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarWidth.html) property.
+The width of the navigation bar can be changed by setting the [NavigationBarWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarWidth.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -189,7 +189,7 @@ Me.recordNavigationControl.NavigationBarWidth = 600
 ![](Record-Navigation-Control_images/Record-Navigation-Control_img7.jpeg)
 
 ### Changing the Back Color for the Navigation Bar
-To set back color for the record navigation bar, use the [NavigationBarBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarBackColor.html) property as of follows.
+To set back color for the record navigation bar, use the [NavigationBarBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarBackColor.html) property as of follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -205,7 +205,7 @@ Me.recordNavigationControl.NavigationBarBackColor = Color.LightGreen
 ![](Record-Navigation-Control_images/Record-Navigation-Control_img8.jpeg)
 
 ### Resetting the Arrow Color
-The disable arrow back color can be reset to default by using the [ResetDisabledArrowColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetDisabledArrowColor.html) method.
+The disable arrow back color can be reset to default by using the [ResetDisabledArrowColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetDisabledArrowColor.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -217,7 +217,7 @@ this.gridRecordNavigationControl1.ResetDisabledArrowColor();
 Me.gridRecordNavigationControl1.ResetDisabledArrowColor()
 {% endhighlight %}
 {% endtabs %}
-The enabled arrow back color can be reset to default by using the [ResetEnabledArrowColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetEnabledArrowColor.html) method.
+The enabled arrow back color can be reset to default by using the [ResetEnabledArrowColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetEnabledArrowColor.html) method.
 {% tabs %}
 {% highlight c# %}
 //Reset the back color of the enable arrow 
@@ -228,7 +228,7 @@ this.gridRecordNavigationControl1.ResetEnabledArrowColor();
 Me.gridRecordNavigationControl1.ResetEnabledArrowColor()
 {% endhighlight %}
 {% endtabs %}
-The record navigation bar back color can be reset to default by using the [ResetNavigationBarBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetNavigationBarBackColor.html) method.
+The record navigation bar back color can be reset to default by using the [ResetNavigationBarBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ResetNavigationBarBackColor.html) method.
 {% tabs %}
 {% highlight c# %}
 //Reset the back color of the Navigation Bar
@@ -241,7 +241,7 @@ Me.gridRecordNavigationControl1.ResetNavigationBarBackColor()
 {% endtabs %}
 
 ### Navigating the Records through Code
-The grid records can be programmatically navigate by using the [NavigationBar](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~NavigationBar.html) method. The followings are the methods used for navigation,
+The grid records can be programmatically navigate by using the [NavigationBar](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~NavigationBar.html) method. The followings are the methods used for navigation,
 
 {% tabs %}
 {% highlight c# %}
@@ -273,7 +273,7 @@ Me.gridRecordNavigationControl1.NavigationBar.MovePrevious()
 {% endtabs %}
 
 ### Changing the Visibility of the Arrow Buttons
-The visibility of the arrow buttons can be changed by setting the [NavigationButtons](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationButtons.html) property appropriate value from the [DisplayArrowButtons](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.DisplayArrowButtons.html) enumeration such as,
+The visibility of the arrow buttons can be changed by setting the [NavigationButtons](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationButtons.html) property appropriate value from the [DisplayArrowButtons](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.DisplayArrowButtons.html) enumeration such as,
 
 **Single** – Used to show only the next and previous buttons in the navigation bar.<br/>
 **All** – Used to show all the buttons from the navigation bar. This is the default option.<br/>

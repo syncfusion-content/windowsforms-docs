@@ -17,7 +17,7 @@ EssentialChart lets you customize the background colors of different portions of
 
 ### Outside the Chart Area
 
-Use the [BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BackInterior.html) property of the chart to customize the background of the chart that is outside the chart area. This is usually where the legend and the chart title get rendered. By default, it is set to White color.
+Use the [BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BackInterior.html) property of the chart to customize the background of the chart that is outside the chart area. This is usually where the legend and the chart title get rendered. By default, it is set to White color.
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ Me.chartControl1.BackInterior = New Syncfusion.Drawing.BrushInfo(System.Drawing.
 
 ### Inside the Plot Area
 
-Use the [ChartArea.BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BackInterior.html) to customize the background of the rectangular region where the points are plotted.
+Use the [ChartArea.BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BackInterior.html) to customize the background of the rectangular region where the points are plotted.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ Me.chartControl1.ChartArea.BackInterior = New Syncfusion.Drawing.BrushInfo(Syste
 
 ### Inside the Chart Area
 
-Use the [ChartInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInterior.html) property of the chart to customize the background of the chart area. By default, it is set to White color.
+Use the [ChartInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInterior.html) property of the chart to customize the background of the chart area. By default, it is set to White color.
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ this.chartControl1.ChartInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.D
 
 ### Chart Settings
 
-In Windows Forms, use the [BackgroundImage](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BackgroundImage.html) property to specify a custom image as the background of the chart. The image layout can also be specified using the property below.
+In Windows Forms, use the [BackgroundImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BackgroundImage.html) property to specify a custom image as the background of the chart. The image layout can also be specified using the property below.
 
 <table>
 <tr>
@@ -122,7 +122,7 @@ Me.ChartControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretc
 
 ### ChartArea Background Image
 
-The chart area can also be rendered with a custom background image and this can be set using the [ChartAreaBackImage](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaBackImage.html) property. 
+The chart area can also be rendered with a custom background image and this can be set using the [ChartAreaBackImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaBackImage.html) property. 
 
 <table>
 <tr>
@@ -153,7 +153,7 @@ Me.ChartControl1.ChartAreaBackImage = myCustomImage
 
 ### Chart Interior Background Image
 
-Chart Interior can be rendered with a custom background image using the [ChartInteriorBackImage](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInteriorBackImage.html) property.
+Chart Interior can be rendered with a custom background image using the [ChartInteriorBackImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInteriorBackImage.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -187,17 +187,17 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BorderColor.html)'| markdownify }}
+{{'[BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BorderColor.html)'| markdownify }}
 </td><td>
 Indicates the border color of the chart area.</td></tr>
 <tr>
 <td>
-{{'[BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BorderStyle.html)'| markdownify }}
+{{'[BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BorderStyle.html)'| markdownify }}
 </td><td>
 Indicates the border style.</td></tr>
 <tr>
 <td>
-{{'[BorderWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BorderWidth.html)'| markdownify }}
+{{'[BorderWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BorderWidth.html)'| markdownify }}
 </td><td>
 Specifies the width of the border.</td></tr>
 </table>
@@ -212,22 +212,22 @@ Description </th></tr>
 <tr>
 <td>
 
-{{'[BaseColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartBorderInfo~BaseColor.html)'| markdownify }}
+{{'[BaseColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartBorderInfo~BaseColor.html)'| markdownify }}
 </td><td>
 Gets or sets the color of the base.</td></tr>
 <tr>
 <td>
-{{'[FrameThickness](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartBorderInfo~FrameThickness.html)'| markdownify }}
+{{'[FrameThickness](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartBorderInfo~FrameThickness.html)'| markdownify }}
 </td><td>
 Gets or sets the frame thickness. This property setting will be effective, when SkinStyle is Frame.</td></tr>
 <tr>
 <td>
-{{'[Interior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartBorderInfo~Interior.html)'| markdownify }}
+{{'[Interior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartBorderInfo~Interior.html)'| markdownify }}
 </td><td>
 Sets the interior color of the border. This property settings will be effective when SkinStyle is Sunken, Etched and Raised.</td></tr>
 <tr>
 <td>
-{{'[SkinStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartBorderInfo~SkinStyle.html)'| markdownify }}
+{{'[SkinStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartBorderInfo~SkinStyle.html)'| markdownify }}
 </td><td>
 Specifies the border skin style.</td></tr>
 </table>
@@ -280,7 +280,7 @@ Me.chartControl1.BorderAppearance.SkinStyle = Syncfusion.Windows.Forms.Chart.Cha
 
 ### Chart Area Shadow
 
-The chart area can also be rendered with a shadow. To turn this feature on, enable [ChartAreaShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaShadow.html) property. 
+The chart area can also be rendered with a shadow. To turn this feature on, enable [ChartAreaShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaShadow.html) property. 
 
 **Properties**
 
@@ -292,17 +292,17 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ChartAreaShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaShadow.html)'| markdownify }}
+{{'[ChartAreaShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaShadow.html)'| markdownify }}
 </td><td>
 Indicates whether chart area has a shadow.</td></tr>
 <tr>
 <td>
-{{'[ShadowColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShadowColor.html)'| markdownify }}
+{{'[ShadowColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShadowColor.html)'| markdownify }}
 </td><td>
 Specifies the color of the shadow.</td></tr>
 <tr>
 <td>
-{{'[ShadowWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShadowWidth.html)'| markdownify }}
+{{'[ShadowWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShadowWidth.html)'| markdownify }}
 </td><td>
 Specifies the width of the shadow.</td></tr>
 </table>
@@ -333,7 +333,7 @@ Me.chartControl1.ShadowWidth = 7
 
 ### Chart Area Margins
 
-Margin for the chart area can be controlled using [ChartAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaMargins.html) property. It indicates the margin that will be deduced from Chart Area's representation rectangle.
+Margin for the chart area can be controlled using [ChartAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaMargins.html) property. It indicates the margin that will be deduced from Chart Area's representation rectangle.
 
 <table>
 <tr>
@@ -343,7 +343,7 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ChartAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaMargins.html)'| markdownify }}
+{{'[ChartAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaMargins.html)'| markdownify }}
 </td><td>
 Specifies the amount of pixels between the chart area border and the chart plot area. Default is {10, 10, 10, 10}.</td></tr>
 </table>
@@ -364,7 +364,7 @@ Me.ChartControl1.ChartAreaMargins = New Syncfusion.Windows.Forms.Chart.ChartMarg
 
 ### ChartPlot Area Margins
 
-The margins for ChartPlotArea is specified in [ChartPlotAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~ChartPlotAreaMargins.html) property. 
+The margins for ChartPlotArea is specified in [ChartPlotAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~ChartPlotAreaMargins.html) property. 
 
 <table>
 <tr>
@@ -374,17 +374,17 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ChartPlotAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~ChartPlotAreaMargins.html)'| markdownify }}
+{{'[ChartPlotAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~ChartPlotAreaMargins.html)'| markdownify }}
 </td><td>
 Indicates the margin of the axis labels. This  margin is supported for left, Top, Right and Bottom side of the chart. This property works only if EdgeLabelsDrawingMode property is set to Shift.Default is {10, 10, 10, 10}.</td></tr>
 <tr>
 <td>
-{{'[AdjustPlotAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~AdjustPlotAreaMargins.html)'| markdownify }}
+{{'[AdjustPlotAreaMargins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~AdjustPlotAreaMargins.html)'| markdownify }}
 </td><td>
 Gets / sets the mode of drawing the edge labels. Default is AutoSet.</td></tr>
 <tr>
 <td>
-{{'[EdgeLabelsDrawingMode ](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~EdgeLabelsDrawingMode.html)'| markdownify }}
+{{'[EdgeLabelsDrawingMode ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~EdgeLabelsDrawingMode.html)'| markdownify }}
 </td><td>
 Gets or sets the edge labels drawing mode.</td></tr>
 </table>
@@ -413,7 +413,7 @@ Me.chartControl1.ChartArea.ChartPlotAreaMargins.Left = 200
 
 ### Spacing between elements
 
-The spacing between elements in the chart is specified using the [ElementsSpacing](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ElementsSpacing.html) property. For example, the space between the chart right border and legend right border if [LegendPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Position.html) is set to Right.
+The spacing between elements in the chart is specified using the [ElementsSpacing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ElementsSpacing.html) property. For example, the space between the chart right border and legend right border if [LegendPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartLegend~Position.html) is set to Right.
 
  **Properties**
 
@@ -425,7 +425,7 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ElementsSpacing](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ElementsSpacing.html)'| markdownify }}
+{{'[ElementsSpacing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ElementsSpacing.html)'| markdownify }}
 </td><td>
 Specifies the spacing between the elements in the chart. Default is 20.</td></tr>
 </table>
@@ -434,9 +434,9 @@ Specifies the spacing between the elements in the chart. Default is 20.</td></tr
 
 ### Chart Title
 
-The [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) provides properties to customize and align the text within the control. Below are the text properties.
+The [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) provides properties to customize and align the text within the control. Below are the text properties.
 
-Using the [ChartControl.Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Text.html) property, users can provide the title that appears at the top of the chart. [TextPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextPosition.html) and [TextAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextAlignment.html) further lets you control the relative positioning of this title.
+Using the [ChartControl.Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Text.html) property, users can provide the title that appears at the top of the chart. [TextPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextPosition.html) and [TextAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextAlignment.html) further lets you control the relative positioning of this title.
 
 Here are some properties that affect the title text in the chart.
 
@@ -448,29 +448,29 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Text.html)'| markdownify }}
+{{'[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Text.html)'| markdownify }}
 </td><td>
 Specifies the title for the chart.</td></tr>
 <tr>
 <td>
-{{'[TextPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextPosition.html)'| markdownify }}
+{{'[TextPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextPosition.html)'| markdownify }}
 </td><td>
 Specifies the position of the chart. Possible values are,<ul><li>Top</li><li>Bottom</li><li>Left</li><li>Right</li></ul></td></tr>
 <tr>
 <td>
 <br>
-{{'[TextAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextAlignment.html)'| markdownify }}
+{{'[TextAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextAlignment.html)'| markdownify }}
 </td><td>
 Specifies the alignment of the title with respect to the chart borders. Possible values:<ul><li>Near</li><li>Center</li><li>Far</li></ul></td></tr>
 <tr>
 <td>
 <br>
-{{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl_members.html#)'| markdownify }}
+{{'[Font](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl_members.html#)'| markdownify }}
 </td><td>
 Indicates the font style of the title.</td></tr>
 <tr>
 <td>
-{{'[ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ForeColor.html)'| markdownify }}
+{{'[ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ForeColor.html)'| markdownify }}
 </td><td>
 Indicates the foreground color of the title.</td></tr>
 </table>
@@ -517,13 +517,13 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[TextRenderingHint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextRenderingHint.html)'| markdownify }}
+{{'[TextRenderingHint](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~TextRenderingHint.html)'| markdownify }}
 </td><td>
 Specifies the way the text is drawn. Possible values:<ul><li>AntiAlias - each character is drawn using its anti-aliased glyph bitmap without hinting.</li><li>AntiAliasGridFit - each character is drawn using its anti-aliased glyph bitmap with hinting.</li><li>ClearTypeGridFit - each character is drawn using its glyph clear type bitmap with hinting.</li><li>SingleBitPerPixel - each character is drawn using its glyph bitmap.</li><li>SingleBitPerPixelGridFit - each character is drawn using its glyph bitmap.</li><li>SystemDefault - each character is drawn using its glyph bitmap with the system default rendering hint. The text will be drawn using whatever the font-smoothing settings the user had selected for the system.</li></ul></td></tr>
 <tr>
 <td>
 <br>
-{{'[SmoothingMode](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~SmoothingMode.html)'| markdownify }}
+{{'[SmoothingMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~SmoothingMode.html)'| markdownify }}
 </td><td>
 Specifies how chart elements should be rendered. Possible values:<ul><li>AntiAlias</li><li>HighQuality</li><li>HighSpeed</li><li>Invalid</li><li>None</li><li>Default</li></ul></td></tr>
 </table>
@@ -544,7 +544,7 @@ Specifies how chart elements should be rendered. Possible values:<ul><li>AntiAli
 
 Essential Chart lets you render any data on the chart area. If the built-in features and functionality are not sufficient you can simply draw whatever you want on the chart surface.
 
-You can do so by listening to the [ChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaPaint_EV.html) event. This event is raised both when a chart is painted as well as when the chart is exported to other image formats, SVG, etc. Remember to do your custom drawing in this event instead of in the Paint event (which will not be called during chart export).
+You can do so by listening to the [ChartAreaPaint](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartAreaPaint_EV.html) event. This event is raised both when a chart is painted as well as when the chart is exported to other image formats, SVG, etc. Remember to do your custom drawing in this event instead of in the Paint event (which will not be called during chart export).
 
 {% tabs %}
 {% highlight c# %}
@@ -666,27 +666,27 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~Text.html)'| markdownify }}
+{{'[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~Text.html)'| markdownify }}
 </td><td>
 Sets the watermark text.</td></tr>
 <tr>
 <td>
-{{'[Image](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~Image.html)'| markdownify }}
+{{'[Image](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~Image.html)'| markdownify }}
 </td><td>
 Used to display image as the watermark.</td></tr>
 <tr>
 <td>
-{{'[Opacity](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~Opacity.html)'| markdownify }}
+{{'[Opacity](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~Opacity.html)'| markdownify }}
 </td><td>
 Sets the opacity of the watermark.</td></tr>
 <tr>
 <td>
-{{'[HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~HorizontalAlignment.html)'| markdownify }}
+{{'[HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~HorizontalAlignment.html)'| markdownify }}
 </td><td>
 Sets watermark horizontally in the chart area.</td></tr>
 <tr>
 <td>
-{{'[VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~VerticalAlignment.html)'| markdownify }}
+{{'[VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartWatermark~VerticalAlignment.html)'| markdownify }}
 </td><td>
 Sets watermark vertically in the chart area.</td></tr>
 <tr>
@@ -839,59 +839,59 @@ Me.chartControl1.Skins = Skins.Office2007Blue
 {% endhighlight %}
 {% endtabs %}
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Black.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Black.
 
 ![](Chart-Appearance_images/Chart-Appearance_img18.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Blue.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Blue.
 
 ![](Chart-Appearance_images/Chart-Appearance_img19.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Silver.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Silver.
 
 ![](Chart-Appearance_images/Chart-Appearance_img20.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Almond.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Almond.
 
 ![](Chart-Appearance_images/Chart-Appearance_img21.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Blend.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Blend.
 
 ![](Chart-Appearance_images/Chart-Appearance_img22.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Blueberry.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Blueberry.
 
 ![](Chart-Appearance_images/Chart-Appearance_img23.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Marble.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Marble.
 
 ![](Chart-Appearance_images/Chart-Appearance_img24.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Midnight.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Midnight.
 
 ![](Chart-Appearance_images/Chart-Appearance_img25.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Monochrome.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Monochrome.
 
 ![](Chart-Appearance_images/Chart-Appearance_img26.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Olive.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Olive.
 
 ![](Chart-Appearance_images/Chart-Appearance_img27.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Sandune.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Sandune.
 
 ![](Chart-Appearance_images/Chart-Appearance_img28.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Turquoise.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Turquoise.
 
 ![](Chart-Appearance_images/Chart-Appearance_img29.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Vista.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Vista.
 
 ![](Chart-Appearance_images/Chart-Appearance_img30.png)
 
-The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to VS2010.
+The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to VS2010.
 
 ![](Chart-Appearance_images/Chart-Appearance_img31.png)
 

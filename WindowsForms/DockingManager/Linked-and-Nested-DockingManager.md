@@ -14,7 +14,7 @@ The dock panels from one DockingManager cannot be dragged and dropped to another
 
 ## Enable linked manager
 
-To add TargetManager list in the DockingManager, call [AddToTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AddToTargetManagersList.html) function of the DockingManager with the valid DockingManager instance as argument. When only one DockingManager has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. 
+To add TargetManager list in the DockingManager, call [AddToTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AddToTargetManagersList.html) function of the DockingManager with the valid DockingManager instance as argument. When only one DockingManager has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. 
 
 For example: `DockingManager1` and `DockingManager2` are the DockingManager instance and the DockingManager2 is added to TargetManagerList of DockingManager1, but the DockingManager2 is not aware of its TargetManager.
 
@@ -53,7 +53,7 @@ Me.dockingManager1.AddToTargetManagersList(ChildWindow.dockingManager1)
 
 ## Remove linked manager
 
-To remove DockingManager from the TargetManagerList, call [RemoveFromTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RemoveFromTargetManagersList.html) of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
+To remove DockingManager from the TargetManagerList, call [RemoveFromTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RemoveFromTargetManagersList.html) of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ Me.dockingManager1.RemoveFromTargetManagersList(ChildWindow.dockingManager2);
 
 ## Dock child control between two DockingManager
 
-Docking Manager supports to dock its child control into another Docking Manager. It can be achieved by using [AddToTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AddToTargetManagersList.html) and [RemoveFromTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RemoveFromTargetManagersList.html) functions.
+Docking Manager supports to dock its child control into another Docking Manager. It can be achieved by using [AddToTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AddToTargetManagersList.html) and [RemoveFromTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RemoveFromTargetManagersList.html) functions.
 
 **AddToTargetManagerList**
 

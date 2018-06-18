@@ -48,7 +48,7 @@ child2.Show()
 
 ## Appearance
 
-Appearance of the MDI child forms can be customized by using the [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfForm~Style.html) property of the child form. It contains all the settings for customizing the child form appearance.
+Appearance of the MDI child forms can be customized by using the [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfForm~Style.html) property of the child form. It contains all the settings for customizing the child form appearance.
 
 {% tabs %}
 {% highlight c# %}

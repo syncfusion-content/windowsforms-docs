@@ -44,7 +44,7 @@ Next i
 
 ## Activate window
  
-[ActivateControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActivateControl.html) function of DockingManager helps to activate particular docked control.
+[ActivateControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActivateControl.html) function of DockingManager helps to activate particular docked control.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ Me.DockingManager1.ActivateControl(Me.panel1)
 
 ## Identify whether the window is docking or not
 
-The DockingManager [IsFloating](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsFloating.html) function which returns `false` if the control is in docked state and `true` if the control is in floating state.
+The DockingManager [IsFloating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsFloating.html) function which returns `false` if the control is in docked state and `true` if the control is in floating state.
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ In DockingManager, we can set the size for particular docked controls.
 
 ### Desire Width
 
-The desired width can be set for the Dock windows through the [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function as in the below code snippets.
+The desired width can be set for the Dock windows through the [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function as in the below code snippets.
 
 {% tabs %}
 
@@ -115,7 +115,7 @@ Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 ## Size constraint for dock children
 
-DockingManager provides option to restrict user to resize the dock panel to specified minimum size. [SetControlMinimumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetControlMinimumSize.html) function of DockingManager helps to sets the minimum size of docked control.
+DockingManager provides option to restrict user to resize the dock panel to specified minimum size. [SetControlMinimumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetControlMinimumSize.html) function of DockingManager helps to sets the minimum size of docked control.
 
 {% tabs %}
 
@@ -139,11 +139,11 @@ Me.dockingManager1.SetControlMinimumSize(panel1,new Size(200, 400))
 
 ## Restrict to dock on specific sides
 
-User can restrict the specific [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it moved to the client area in DockingManager.
+User can restrict the specific [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it moved to the client area in DockingManager.
 
 ### Inner dock ability
 
-[SetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockAbility.html) function of DockingManager helps to gets or sets the DockAbility of docked control through which we can dock another child window inside it. [GetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockAbility.html) of DockingManager provides the Dockability information of docked panel.
+[SetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockAbility.html) function of DockingManager helps to gets or sets the DockAbility of docked control through which we can dock another child window inside it. [GetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockAbility.html) of DockingManager provides the Dockability information of docked panel.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ Me.dockingManager1.SetDockAbility(Me.panel1, "Top")
 
 ### Outer dock ability
  
-[SetOuterDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetOuterDockAbility.html) function helps to restrict the DockAbility of child window to any particular side when it moved to the client area in DockingManager. Here we have restricted the right, left, tabbed and fill dock ability.  
+[SetOuterDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetOuterDockAbility.html) function helps to restrict the DockAbility of child window to any particular side when it moved to the client area in DockingManager. Here we have restricted the right, left, tabbed and fill dock ability.  
 
 {% tabs %}
 
@@ -206,17 +206,17 @@ By default, ToolTip will be displayed for the caption buttons in a docked contro
 
 DockingManager has following functions for retrieve and manipulation of the ToolTip displayed in Caption buttons.
 
- * [SetCloseButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetCloseButtonToolTip.html): Used to set tooltip for close button in the caption bar of the Docked window.
+ * [SetCloseButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetCloseButtonToolTip.html): Used to set tooltip for close button in the caption bar of the Docked window.
 
- * [GetCloseButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetCloseButtonToolTip.html): Get the tooltip for close button in the caption bar of the Docked window.
+ * [GetCloseButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetCloseButtonToolTip.html): Get the tooltip for close button in the caption bar of the Docked window.
 
- * [SetAutoHideButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideButtonToolTip.html): Used to set tooltip for AutoHide button in the caption bar of the Docked window.
+ * [SetAutoHideButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideButtonToolTip.html): Used to set tooltip for AutoHide button in the caption bar of the Docked window.
 
- * [GetAutoHideButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideButtonToolTip.html): Get the tooltip for AutoHide button in the caption bar of the Docked window.
+ * [GetAutoHideButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideButtonToolTip.html): Get the tooltip for AutoHide button in the caption bar of the Docked window.
 
- * [SetMenuButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMenuButtonToolTip.html): Used to set tooltip for menu button in the caption bar of the Docked window.
+ * [SetMenuButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMenuButtonToolTip.html): Used to set tooltip for menu button in the caption bar of the Docked window.
 
- * [GetMenuButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetMenuButtonToolTip.html): Get the tooltip for AutoHide button in the caption bar of the Docked window.
+ * [GetMenuButtonToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetMenuButtonToolTip.html): Get the tooltip for AutoHide button in the caption bar of the Docked window.
 
 The following code demonstrate the usage of these functions:
 
@@ -245,7 +245,7 @@ Me.dockingManager1.GetCloseButtonToolTip()
 
 ### Super tooltip
 
-Docking manager can display a SuperToolTip for dock caption buttons by enabling the [EnableSuperTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableSuperToolTip.html) property of DockingManager. For this a SuperTooltip control should be dragged and dropped on to the form and it should be selected in the [DockingManager.SuperTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SuperToolTip.html) property.
+Docking manager can display a SuperToolTip for dock caption buttons by enabling the [EnableSuperTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableSuperToolTip.html) property of DockingManager. For this a SuperTooltip control should be dragged and dropped on to the form and it should be selected in the [DockingManager.SuperTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SuperToolTip.html) property.
 
 A SuperToolTip can be added to the DockingManager programmatically using the below code snippet.
 
@@ -288,7 +288,7 @@ Text for the SuperToolTip and other customizing options can be specified for a p
 
 ### Change Tooltip interval
 
-[ToolTipInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ToolTipInterval.html) property of DockingManager is used to get or set the interval of showing the ToolTip in Docked, Tabbed and AutoHide windows. Its default value is `5000`.
+[ToolTipInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ToolTipInterval.html) property of DockingManager is used to get or set the interval of showing the ToolTip in Docked, Tabbed and AutoHide windows. Its default value is `5000`.
 
 {% tabs %}
 
@@ -309,7 +309,7 @@ Me.dockingManager1.ToolTipInterval = 1000
 
 ### Balloon style tooltip
 
-[UseBalloonStyleToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~UseBalloonStyleToolTip.html) property of DockingManager helps to set the BalloonStyleToolTip for Docked, Tabbed and AutoHide windows.
+[UseBalloonStyleToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~UseBalloonStyleToolTip.html) property of DockingManager helps to set the BalloonStyleToolTip for Docked, Tabbed and AutoHide windows.
 
 {% tabs %}
 
@@ -332,15 +332,15 @@ Me.dockingManager1.UseBalloonStyleToolTip = True
 
 ### Show/ hide tooltip
 
-We can enable or disable showing the ToolTip in Docked, Tabbed and AutoHide windows. by using [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowToolTips.html) property of DockingManager. Its default value is `true`, to disable showing the tooltip turn on its value to `false`.
+We can enable or disable showing the ToolTip in Docked, Tabbed and AutoHide windows. by using [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowToolTips.html) property of DockingManager. Its default value is `true`, to disable showing the tooltip turn on its value to `false`.
 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img5.png)
 
-N> [EnableSuperTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableSuperToolTip.html) property which is discussed above, should be set to `false` to effect the above default ToolTip.
+N> [EnableSuperTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableSuperToolTip.html) property which is discussed above, should be set to `false` to effect the above default ToolTip.
 
 ## Remove particular caption button
 
-In DockingManager, you can remove the particular caption button by using [CaptionButton](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CaptionButtons.html) collection. The following code example illustrates how to remove close button in DockingManager. Please make use of the below CaptionButton text for removing particular caption button in docking child window.  
+In DockingManager, you can remove the particular caption button by using [CaptionButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CaptionButtons.html) collection. The following code example illustrates how to remove close button in DockingManager. Please make use of the below CaptionButton text for removing particular caption button in docking child window.  
 
 <table>
 <tr>
@@ -422,7 +422,7 @@ End Sub
 
 ## Remove context menu for particular control
 
-[SetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMenuButtonVisibility.html) function helps to show / hide the menu button in the caption bar of the particular window. [GetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetMenuButtonVisibility.html) function returns a bool value according to the visibility of menu button.
+[SetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMenuButtonVisibility.html) function helps to show / hide the menu button in the caption bar of the particular window. [GetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetMenuButtonVisibility.html) function returns a bool value according to the visibility of menu button.
 
 {% tabs %}
 
@@ -449,7 +449,7 @@ Me.dockingManager1.GetMenuButtonVisibility(Me.panel1) 'true when button is visib
 
 ## Remove particular menu item from context menu
 
-Context menu items in dock window caption can be customized using [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event of DockingManager. The [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) allows to remove the menu items using its ContextMenu option.  
+Context menu items in dock window caption can be customized using [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event of DockingManager. The [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) allows to remove the menu items using its ContextMenu option.  
 
 {% seealso %}
  

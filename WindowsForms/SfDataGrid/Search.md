@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Search
-SfDataGrid provides the support for search the specific string in the SfDataGrid. This can be achieved by using the [SearchController.Search](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~Search.html) method. The founded matches will be highlighted in the SfDataGrid.
+SfDataGrid provides the support for search the specific string in the SfDataGrid. This can be achieved by using the [SearchController.Search](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~Search.html) method. The founded matches will be highlighted in the SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -24,7 +24,7 @@ Me.sfDataGrid.SearchController.Search("a")
 ![](Search_images/Search_img1.png)
 
 ### Filtering
-The filtering based on the search text can be enabled by setting the [AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~AllowFiltering.html) property to `true`.
+The filtering based on the search text can be enabled by setting the [AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~AllowFiltering.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -46,13 +46,13 @@ Me.sfDataGrid.SearchController.Search("Alice")
 ![](Search_images/Search_img2.png)
 
 ### Case Sensitive Search
-The data can be searched with the case-sensitivity by setting the [SearchController.AllowCaseSensitiveSearch](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~AllowCaseSensitiveSearch.html) property to `true`.
+The data can be searched with the case-sensitivity by setting the [SearchController.AllowCaseSensitiveSearch](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~AllowCaseSensitiveSearch.html) property to `true`.
 
 ![](Search_images/Search_img3.png)
 
 ### Searching wrap text
 
-The wrap text can be searched by using the [SearchController.Search](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~Search.html) method.
+The wrap text can be searched by using the [SearchController.Search](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~Search.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,7 +74,7 @@ Me.sfDataGrid1.SearchController.Search("cr")
 ![](Search_images/Search_img12.png)
 
 ### Changing Search Highlight Color
-The highlighting color of the search text can be changed by using the [SearchColor](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColor.html) property.
+The highlighting color of the search text can be changed by using the [SearchColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColor.html) property.
 {% tabs %}
 {% highlight c# %}
 //Set the color for highlighting the search text
@@ -89,7 +89,7 @@ Me.sfDataGrid.SearchController.SearchColor = Color.LightGreen
 ![](Search_images/Search_img4.png)
 
 ### Disable Highlighting Search Text
-The highlighting of the search text can be disabled by setting the [AllowHighlightSearchText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~AllowHighlightSearchText.html) property to `false`.
+The highlighting of the search text can be disabled by setting the [AllowHighlightSearchText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~AllowHighlightSearchText.html) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -113,7 +113,7 @@ Me.sfDataGrid.SearchController.Search("SEVES")
 ![](Search_images/Search_img5.png)
 
 ## Search only in Selected Columns
-By default the searching is applied for all the columns in the SfDataGrid. This can be changed to search only in the specified columns by using the [SearchColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColumns.html) collection. The column names added to the SearchColumns list is only consider for the search operations.
+By default the searching is applied for all the columns in the SfDataGrid. This can be changed to search only in the specified columns by using the [SearchColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColumns.html) collection. The column names added to the SearchColumns list is only consider for the search operations.
 
 {% tabs %}
 {% highlight c# %}
@@ -131,7 +131,7 @@ Me.sfDataGrid.SearchController.Search("2")
 ![](Search_images/Search_img6.png)
 
 ## Search Condition
-By default the searching will be performed based on the `Contains` condition. This can be changed by using the [SearchType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchType.html) property. The `SearchType` enumeration has the following conditions,
+By default the searching will be performed based on the `Contains` condition. This can be changed by using the [SearchType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchType.html) property. The `SearchType` enumeration has the following conditions,
 
 * StartsWith – Used to find the text which starts with the SearchText.
 * EndsWith – Used to find the text which ends with the SearchText.
@@ -140,7 +140,7 @@ By default the searching will be performed based on the `Contains` condition. Th
 ![](Search_images/Search_img7.png)
 
 ## Navigating based on Search Text
-The cells which contains the SearchText can be navigated by using the [SearchController.FindNext](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~FindNext.html) and [SearchController.FindPrevious](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~FindPrevious.html) methods.
+The cells which contains the SearchText can be navigated by using the [SearchController.FindNext](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~FindNext.html) and [SearchController.FindPrevious](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~FindPrevious.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -161,7 +161,7 @@ Me.sfDataGrid.SearchController.FindPrevious("Alice")
 
 ![](Search_images/Search_img8.png)
 
-By default the currently navigated search text will be highlighted with the default color. This can be changed by using the [SearchHighlightColor](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchHighlightColor.html) property.
+By default the currently navigated search text will be highlighted with the default color. This can be changed by using the [SearchHighlightColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchHighlightColor.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ Me.sfDataGrid.SearchController.FindNext("MEREP")
 ![](Search_images/Search_img9.png)
 
 ### Move Current Cell to the Next Match
-The current cell can be moved to the next possible match by using the [SearchController.CurrentRowColumnIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~CurrentRowColumnIndex.html) property.
+The current cell can be moved to the next possible match by using the [SearchController.CurrentRowColumnIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~CurrentRowColumnIndex.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -201,7 +201,7 @@ Me.sfDataGrid.MoveToCurrentCell(Me.sfDataGrid.SearchController.CurrentRowColumnI
 ![](Search_images/Search_img10.png)
 
 ## Clear Search
-The search can be cleared by using the [ClearSearch](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~ClearSearch.html) method.
+The search can be cleared by using the [ClearSearch](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~ClearSearch.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -215,7 +215,7 @@ Me.sfDataGrid.SearchController.ClearSearch()
 {% endtabs %}
 
 ## Search Customization 
-SfDataGrid process the search operations in [SearchController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController.html) class. The default search behaviors can be customized by overriding the `SearchController` class and set to `SfDataGrid.SearchController` property.
+SfDataGrid process the search operations in [SearchController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController.html) class. The default search behaviors can be customized by overriding the `SearchController` class and set to `SfDataGrid.SearchController` property.
 
 {% tabs %}
 {% highlight c# %}

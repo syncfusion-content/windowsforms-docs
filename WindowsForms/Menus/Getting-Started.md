@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Getting started
 
-This section describes how to configure a [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to configure a [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) in any application:
+The following list of assemblies should be added as reference to use the [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) in any application:
 
 <table>
 <tr>
@@ -75,7 +75,7 @@ Syncfusion.Tools.Windows contains the class that handles all UI operations and c
 
 ## Installing NuGet Packages
 
-To use [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control in Windows Forms application via nuget, the following packages should be installed.
+To use [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control in Windows Forms application via nuget, the following packages should be installed.
  
 <table>
 <tr>
@@ -142,7 +142,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 # Creating simple application with MainFrameBarManager
 
-You can create the Windows Forms application with [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control as follows:
+You can create the Windows Forms application with [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -150,11 +150,11 @@ You can create the Windows Forms application with [MainFrameBarManager](https://
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) with basic information.
+Create a new Windows Forms project in the Visual Studio to display the [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) with basic information.
 
 ## Adding control via designer
 
-[MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+[MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -169,13 +169,13 @@ Create a new Windows Forms project in the Visual Studio to display the [MainFram
 
 **Adding Bar to MainFrameBarManager**
 
-[Bar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) can be added to [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) through `Customize...` option from Smart Tags, where Bar can be added to `Toolbars` in the DialogBox.
+[Bar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) can be added to [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) through `Customize...` option from Smart Tags, where Bar can be added to `Toolbars` in the DialogBox.
 
 ![](GettingStarted-images/GettingStarted-img3.png) 
 
 **Adding ParentBarItem to Bar** 
 
-[ParentBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html) is a type of BarItem, under which child BarItems can be added.
+[ParentBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html) is a type of BarItem, under which child BarItems can be added.
 
 ![](GettingStarted-images/GettingStarted-img11.png)
 
@@ -185,7 +185,7 @@ Create a new Windows Forms project in the Visual Studio to display the [MainFram
 
 **Adding BarItem to Bar**
 
-{BarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) represents an individual item that can be displayed in a menu structure.
+{BarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) represents an individual item that can be displayed in a menu structure.
 
 ![](GettingStarted-images/GettingStarted-img23.png)
 
@@ -193,7 +193,7 @@ Create a new Windows Forms project in the Visual Studio to display the [MainFram
 
 **Adding ComboBoxBarItem to Bar** 
 
-[ComboBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem.html) is a type of BarItem, which behaves like ComboBox and its Items collection can be added using property named [ChoiceList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem~ChoiceList.html). 
+[ComboBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem.html) is a type of BarItem, which behaves like ComboBox and its Items collection can be added using property named [ChoiceList](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem~ChoiceList.html). 
 
 ![](GettingStarted-images/GettingStarted-img25.png)
 
@@ -206,7 +206,7 @@ Create a new Windows Forms project in the Visual Studio to display the [MainFram
 
 **Adding DropDownBarItem to Bar** 
 
-[DropDownBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) is a type of BarItem, which will display popup menu when clicked. It is also possible to load custom control in it. 
+[DropDownBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) is a type of BarItem, which will display popup menu when clicked. It is also possible to load custom control in it. 
 
 ![](GettingStarted-images/GettingStarted-img24.png)
 
@@ -216,7 +216,7 @@ Create a new Windows Forms project in the Visual Studio to display the [MainFram
 
 **Adding TextBoxBarItem to Bar**
 
-[TextBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html) is a type of BarItem, which behaves like TextBox control.
+[TextBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html) is a type of BarItem, which behaves like TextBox control.
 
 ![](GettingStarted-images/GettingStarted-img27.png)
 
@@ -226,7 +226,7 @@ Create a new Windows Forms project in the Visual Studio to display the [MainFram
 **Adding StaticBarItem to Bar** 
 
 
-[StaticBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.StaticBarItem.html) is a type of BarItem, which behaves like Label control.
+[StaticBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.StaticBarItem.html) is a type of BarItem, which behaves like Label control.
 
 ![](GettingStarted-images/GettingStarted-img26.png)
 
@@ -234,11 +234,11 @@ Create a new Windows Forms project in the Visual Studio to display the [MainFram
 
 **Adding CommandBar to MainFrameBarManager**
 
-CommandBar can be added to [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) using `Add Detached CommandBar` from Smart Tags.
+CommandBar can be added to [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) using `Add Detached CommandBar` from Smart Tags.
 
 ![](GettingStarted-images/GettingStarted-img7.png)
 
-BarItem can be added to CommandBar by dragging [XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) from the toolbox and dropping it into CommandBar and Add BarItem to XPToolBar.
+BarItem can be added to CommandBar by dragging [XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) from the toolbox and dropping it into CommandBar and Add BarItem to XPToolBar.
 
 ![](GettingStarted-images/GettingStarted-img8.png)
 
@@ -273,7 +273,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3** : Create [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control instance and add it to the form.
+**Step 3** : Create [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -301,7 +301,7 @@ Me.mainFrameBarManager1.Form = Me;
 
 **Adding Bar to MainFrameBarManager**
 
-Create an instance of [Bar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) and add it to `Bars` collection property of MainFrameBarManager.
+Create an instance of [Bar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) and add it to `Bars` collection property of MainFrameBarManager.
 
 {% tabs %}
 
@@ -343,7 +343,7 @@ Me.mainFrameBarManager1.Categories.Add("Menu")
 
 **Adding ParentBarItem to Bar**
 
-To add [ParentBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html) can be added it by creating an instance and add it to [Items](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~Items.html) collection property. BarItem can be added to ParentBarItem using [Items](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~Items.html) property.
+To add [ParentBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html) can be added it by creating an instance and add it to [Items](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~Items.html) collection property. BarItem can be added to ParentBarItem using [Items](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~Items.html) property.
 
 {% tabs %}
 
@@ -419,7 +419,7 @@ Me.bar1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { pa
 
 **Adding BarItem to Bar**
 
-To add [BarItem]((https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html)) into Bar, Create instance of required BarItem and add it to `Item` collection of MainFrameBarManager and `Item` collection of the respective Bar.
+To add [BarItem]((https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html)) into Bar, Create instance of required BarItem and add it to `Item` collection of MainFrameBarManager and `Item` collection of the respective Bar.
 
 {% tabs %}
 
@@ -479,7 +479,7 @@ Me.bar1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me
 
 **Adding ComboBoxBarItem to Bar** 
 
-Create an instance of [ComboBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem.html) and add it to Bar. Items can be added through [ChoiceList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem~ChoiceList.html) property.
+Create an instance of [ComboBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem.html) and add it to Bar. Items can be added through [ChoiceList](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem~ChoiceList.html) property.
 
 {% tabs %}
 
@@ -516,7 +516,7 @@ Me.bar1.Items.Add(Me.comboBoxBarItem1)
 
 **Adding DropDownBarItem to Bar**
 
-Create an instance [DropDownBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) and add it to Bar. Add any control to a PopupControlContainer and add it to DropDownBarItem.
+Create an instance [DropDownBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) and add it to Bar. Add any control to a PopupControlContainer and add it to DropDownBarItem.
 
 
 {% tabs %}
@@ -575,7 +575,7 @@ Me.bar1.Items.Add(dropDownBarItem1)
 
 **Adding TextBoxBarItem to Bar**
 
-Create an instance of [TextBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html) and add it to `Items` collection of Bar.
+Create an instance of [TextBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html) and add it to `Items` collection of Bar.
 
 {% tabs %}
 
@@ -608,7 +608,7 @@ Me.bar1.Items.Add(textBoxBarItem1)
 
 **Adding StaticBarItem to Bar** 
 
-Create an instance of [StaticBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.StaticBarItem.html) and add it `Items` collection of Bar.
+Create an instance of [StaticBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.StaticBarItem.html) and add it `Items` collection of Bar.
 
 {% tabs %}
 
@@ -643,7 +643,7 @@ Me.bar1.Items.Add(staticBarItem1)
 
 **Adding CommandBar to MainFrameBarManager**
 
-Create an instance of `CommandBar` and add it to [DetachedCommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager~DetachedCommandBars.html) collections of MainFrameBarManager.
+Create an instance of `CommandBar` and add it to [DetachedCommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager~DetachedCommandBars.html) collections of MainFrameBarManager.
 
 {% tabs %}
 
@@ -671,7 +671,7 @@ Me.mainFrameBarManager1.DetachedCommandBars.Add(Me.commandBar1)
 
 ![](GettingStarted-images/GettingStarted-img9.png)
 
-[BarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) can be added to CommandBar by added [XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) to it and adding `BarItem` to it.
+[BarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) can be added to CommandBar by added [XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) to it and adding `BarItem` to it.
 
 {% tabs %}
 

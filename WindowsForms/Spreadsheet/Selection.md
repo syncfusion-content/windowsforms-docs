@@ -13,7 +13,7 @@ This section explains about the Selection behavior in Spreadsheet.
 
 The Spreadsheet control provides support for selection in grid by using mouse, keyboard and touch interactions.
 
-By default, Selection behavior will be enabled in `Spreadsheet`,but if you want to disable the selection in Spreadsheet, then set the [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~AllowSelection.html) Property to be false.
+By default, Selection behavior will be enabled in `Spreadsheet`,but if you want to disable the selection in Spreadsheet, then set the [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~AllowSelection.html) Property to be false.
 
 {% tabs %}
 {% highlight c# %}
@@ -28,7 +28,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 ## Accessing the current cell
 
-Spreadsheet allows the user to access the active cell by using the `CurrentCell` property of [SelectionController](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController.html) Class.
+Spreadsheet allows the user to access the active cell by using the `CurrentCell` property of [SelectionController](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController.html) Class.
 
 {% tabs %}
 {% highlight c# %}
@@ -40,7 +40,7 @@ var cell= spreadsheet.ActiveGrid.SelectionController.CurrentCell;
 
 ## Accessing the selected ranges
 
-Spreadsheet allows the user to access the selected ranges of the `SpreadsheetGrid` using [SelectedRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectedRanges.html) property of `SpreadsheetGrid`.
+Spreadsheet allows the user to access the selected ranges of the `SpreadsheetGrid` using [SelectedRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectedRanges.html) property of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +50,7 @@ var rangeList = spreadsheet.ActiveGrid.SelectedRanges;
 {% endhighlight %}
 {% endtabs %}
 
-N> To get the active range in the selected ranges list, use [ActiveRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridRangeInfoList~ActiveRange.html) property of [GridRangeInfoList](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridRangeInfoList.html) class.
+N> To get the active range in the selected ranges list, use [ActiveRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridRangeInfoList~ActiveRange.html) property of [GridRangeInfoList](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridRangeInfoList.html) class.
 
 ## Adding or clearing the selection
 
@@ -99,7 +99,7 @@ spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(6, 5);
 
 ## Converting GridRangeInfo into IRange
 
-Spreadsheet allows the user to convert the `GridRangeInfo` into the equivalent `IRange` by using [ConvertGridRangeToExcelRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper~ConvertGridRangeToExcelRange.html) method of [GridExcelHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper.html) class.
+Spreadsheet allows the user to convert the `GridRangeInfo` into the equivalent `IRange` by using [ConvertGridRangeToExcelRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper~ConvertGridRangeToExcelRange.html) method of [GridExcelHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -109,7 +109,7 @@ var excelRange = GridExcelHelper.ConvertGridRangeToExcelRange(GridRangeInfo.Cell
 {% endhighlight %}
 {% endtabs %}
 
-T> Users can also convert the `IRange` into equivalent `GridRangeInfo` by using [ConvertExcelRangeToGridRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper~ConvertExcelRangeToGridRange.html) method of  [GridExcelHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper.html) class.
+T> Users can also convert the `IRange` into equivalent `GridRangeInfo` by using [ConvertExcelRangeToGridRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper~ConvertExcelRangeToGridRange.html) method of  [GridExcelHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Helpers.GridExcelHelper.html) class.
 
 ## Properties, Methods, and Events
 
@@ -122,23 +122,23 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CellClick](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellClick_EV.html) ' | markdownify }}</td><td>
+{{ '[CellClick](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellClick_EV.html) ' | markdownify }}</td><td>
  Occurs when you click on the cell.</td></tr>
 <tr>
 <td>
-{{ '[CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CurrentCellActivating_EV.html)' | markdownify }}</td><td>
+{{ '[CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CurrentCellActivating_EV.html)' | markdownify }}</td><td>
 Occurs when the current cell is going to be activated. This event allow to cancel the current cell activation.</td></tr>
 <tr>
 <td>
-{{ '[CurrentCellActivated](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CurrentCellActivated_EV.html)' | markdownify }}</td><td>
+{{ '[CurrentCellActivated](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CurrentCellActivated_EV.html)' | markdownify }}</td><td>
 Occurs after the current cell is activated.</td></tr>
 <tr>
 <td>
-{{ '[SelectionChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionChanging_EV.html)' | markdownify }}</td><td>
+{{ '[SelectionChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionChanging_EV.html)' | markdownify }}</td><td>
 Occurs when the selection is going to be changed. This event allows to cancel the selection change.</td></tr>
 <tr>
 <td>
-{{ '[SelectionChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionChanged_EV.html)' | markdownify }}</td><td>
+{{ '[SelectionChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionChanged_EV.html)' | markdownify }}</td><td>
 Occurs after the selection is changed.</td></tr>
 </table>
 
@@ -151,39 +151,39 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[SelectedRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectedRanges.html)' | markdownify }}</td><td>
+{{ '[SelectedRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectedRanges.html)' | markdownify }}</td><td>
 Gets or sets the collection of selected ranges from grid.</td></tr>
 <tr>
 <td>
-{{ '[SelectionBrush](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionBrush.html)' | markdownify }}</td><td>
+{{ '[SelectionBrush](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionBrush.html)' | markdownify }}</td><td>
 Gets or sets the selected area brush.</td></tr>
 <tr>
 <td>
-{{ '[SelectionBorderBrush](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionBorderBrush.html)' | markdownify }}</td><td>
+{{ '[SelectionBorderBrush](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionBorderBrush.html)' | markdownify }}</td><td>
 Gets or sets the selection border brush.</td></tr>
 <tr>
 <td>
-{{ '[SelectionBorderThickness](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionBorderThickness.html)' | markdownify }}</td><td>
+{{ '[SelectionBorderThickness](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionBorderThickness.html)' | markdownify }}</td><td>
 Gets or sets the thickness of selection border.</td></tr>
 <tr>
 <td>
-{{ '[SelectionController](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionController.html) ' | markdownify }}</td><td>
+{{ '[SelectionController](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~SelectionController.html) ' | markdownify }}</td><td>
 Gets the Selection Controller which provides the selection of content when the user drags the pressed mouse to an edge of the control.</td></tr>
 <tr>
 <td>
-{{ '[AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~AllowSelection.html) ' | markdownify }}</td><td>
+{{ '[AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~AllowSelection.html) ' | markdownify }}</td><td>
 Gets or Sets the value whether to allow the selection in the ActiveGrid or not.</td></tr>
 <tr>
 <td>
-{{ '[ShowTouchIndicator](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~ShowTouchIndicator.html) ' | markdownify }}</td><td>
+{{ '[ShowTouchIndicator](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~ShowTouchIndicator.html) ' | markdownify }}</td><td>
 Determines whether the touch indicator will be shown or not.</td></tr>
 <tr>
 <td>
-{{ '[TouchHitTestPrecision](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~TouchHitTestPrecision.html) ' | markdownify }}</td><td>
+{{ '[TouchHitTestPrecision](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~TouchHitTestPrecision.html) ' | markdownify }}</td><td>
 Gets or sets the distance of touch precision point from touch indicator.</td></tr>
 </table>
  
-Below table lists the properties associated with [CurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~CurrentCell.html) of `SpreadsheetGrid`,
+Below table lists the properties associated with [CurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~CurrentCell.html) of `SpreadsheetGrid`,
 
 <table>
 <tr>
@@ -192,27 +192,27 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CellRowColumnIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~CellRowColumnIndex.html) ' | markdownify }}</td><td>
+{{ '[CellRowColumnIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~CellRowColumnIndex.html) ' | markdownify }}</td><td>
 Gets the row and column index of the CurrentCell.</td></tr
 <tr>
 <td>
-{{ '[RowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~RowIndex.html) ' | markdownify }}</td><td>
+{{ '[RowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~RowIndex.html) ' | markdownify }}</td><td>
 Gets the row index of the CurrentCell.</td></tr>
 <tr>
 <td>
-{{ '[ColumnIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~ColumnIndex.html) ' | markdownify }}</td><td>
+{{ '[ColumnIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~ColumnIndex.html) ' | markdownify }}</td><td>
 Gets the column index of the CurrentCell.</td></tr>
 <tr>
 <td>
-{{ '[Range](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~Range.html) ' | markdownify }}</td><td>
+{{ '[Range](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~Range.html) ' | markdownify }}</td><td>
 Gets the range of the CurrentCell.</td></tr>
 <tr>
 <td>
-{{ '[HasCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~HasCurrentCell.html) ' | markdownify }}</td><td>
+{{ '[HasCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~HasCurrentCell.html) ' | markdownify }}</td><td>
 Gets the value indicating whether the Grid has CurrentCell or not.</td></tr>
 <tr>
 <td>
-{{ '[PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~PreviousRowColumnIndex.html) ' | markdownify }}</td><td>
+{{ '[PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~PreviousRowColumnIndex.html) ' | markdownify }}</td><td>
 Gets or sets the row and column index of old CurrentCell.</td></tr>
 </table>
 
@@ -225,15 +225,15 @@ Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[AddSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~AddSelection.html)' | markdownify }}</td><td>
+{{ '[AddSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~AddSelection.html)' | markdownify }}</td><td>
 Adds/Extends the Selection to the mentioned range .</td></tr>
 <tr>
 <td>
-{{ '[ClearSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~ClearSelection.html)' | markdownify }}</td><td>
+{{ '[ClearSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SelectionController~ClearSelection.html)' | markdownify }}</td><td>
 Clears the Selection.</td></tr>
 <tr>
 <td>
-{{ '[MoveCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~MoveCurrentCell.html)' | markdownify }}</td><td>
+{{ '[MoveCurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.GridCurrentCell~MoveCurrentCell.html)' | markdownify }}</td><td>
 Move the Current cell to mentioned row and column index.</td></tr>
 </table>
 
