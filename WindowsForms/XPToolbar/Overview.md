@@ -7,9 +7,9 @@ control: XPToolbar
 documentation: ug
 ---
 
-# XPToolbar
+# XPToolBar
 
-[XPToolbar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) is an [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) inspired toolbar-like control that supports all required BarItems as loaded in it and it can be used as an individual control.
+[XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) is an [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) inspired toolbar-like control that supports all required BarItems as loaded in it and it can be used as an individual control.
 
 ![](Overview_images/Overview_img2.png)
 

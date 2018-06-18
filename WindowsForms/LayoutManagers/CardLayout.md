@@ -8,7 +8,7 @@ documentation: ug
 ---
 # CardLayout
 
-A CardLayout is a Layout Manager that is applied to a Container, and components are added to the layout in a particular form and not between different forms. It treats each component in the Container as a card. Only one card is visible at a time, and the Container acts as a stack of cards. The first component added to a CardLayout object is the visible component when the Container is first displayed.
+`CardLayout` is a Layout Manager that is applied to a Container, and components are added to the layout in a particular form and not between different forms. It treats each component in the Container as a card. Only one card is visible at a time, and the Container acts as a stack of cards. The first component added to a CardLayout object is the visible component when the Container is first displayed.
 
 The Child component/card can either be made to fill or simply centered within the Container. Some common uses of a CardLayout are to create WizardControls and property pages.
 
@@ -20,7 +20,6 @@ In it's simplest form, this Layout Manager can be used to automatically arrange 
 
 N> CardLayout does not arrange the Child components automatically like the other Layout Managers.
 
-
 # Key Features
 
 **Card name** - Provides option to set a unique card name for child controls.
@@ -30,7 +29,6 @@ N> CardLayout does not arrange the Child components automatically like the other
 **Image** - Provides option to set images for the child controls.
 
 **Layout mode** - Provides options to set layout modes such as default or fill.
-
 
 # Getting started
 
@@ -58,8 +56,6 @@ The Syncfusion.Shared.Base contains the class that handles all UI operations and
 </td>
 </tr>
 </table>
-
-
 
 ## Installing NuGet Packages
 
@@ -124,29 +120,23 @@ To use CardLayout control in Windows Forms application via nuget, the following 
 </tr>
 </table>
 
- 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
-
-
 
 # Creating simple application with CardLayout
 
 You can create the Windows Forms application with CardLayout control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
-
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the CardLayout with basic functionalities.
 
-
-
-## Adding control via Form designer
+## Adding control via designer
 
 The CardLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -173,19 +163,19 @@ To add control manually in C#, follow the given steps:
 
 	* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Shared.Base**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Shared.Base;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Shared.Base
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 

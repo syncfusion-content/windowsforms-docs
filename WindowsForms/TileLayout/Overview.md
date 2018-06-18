@@ -13,9 +13,9 @@ documentation: ug
 
 ![](Overview_images/Overviewimg2.png)
 
-# Key Features
+# Key features
 
-* **Grouping** - Provides option to divide Tile elements into logical groups
+* **Grouping** - Provides option to divide tile elements into logical groups.
 
 * **Drag and drop** - Supports Drag and drop to reorder items.
 

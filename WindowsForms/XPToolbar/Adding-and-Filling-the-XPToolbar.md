@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add `XPToolbar` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add `XPToolBar` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the XPToolbar in any application:
+The following list of assemblies should be added as reference to use the XPToolBar in any application:
 
 <table>
 <tr>
@@ -37,7 +37,7 @@ Syncfusion.Grid.Base contains classes that contains fundamentals and base classe
 Syncfusion.Grid.Windows.dll
 </td>
 <td>
-Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the XPToolbar control.
+Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the XPToolBar control.
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Syncfusion.Grid.Windows contains classes that handles all UI operations, fundame
 Syncfusion.Shared.Base.dll
 </td>
 <td>
-Syncfusion.Shared.Base contains style related properties of XPToolbar and various editor controls.
+Syncfusion.Shared.Base contains style related properties of XPToolBar and various editor controls.
 </td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@ Syncfusion.Shared.Base contains style related properties of XPToolbar and variou
 Syncfusion.Shared.Windows.dll
 </td>
 <td>
-Syncfusion.Shared.Windows contains style related properties of XPToolbar and various editor controls.
+Syncfusion.Shared.Windows contains style related properties of XPToolBar and various editor controls.
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ Syncfusion.Shared.Windows contains style related properties of XPToolbar and var
 Syncfusion.Tools.Base.dll
 </td>
 <td>
-Syncfusion.Tools.Base contains base class which used for XPToolbar control.
+Syncfusion.Tools.Base contains base class which used for XPToolBar control.
 </td>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ Syncfusion.Tools.Base contains base class which used for XPToolbar control.
 Syncfusion.Tools.Windows.dll
 </td>
 <td>
-Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of XPToolbar control.
+Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of XPToolBar control.
 </td>
 </tr>
 </table>
@@ -77,7 +77,7 @@ Syncfusion.Tools.Windows contains the class that handles all UI operations and c
 
 ## Installing NuGet Packages
 
-To use XPToolbar control in Windows Forms application via nuget, the following packages should be installed.
+To use XPToolBar control in Windows Forms application via nuget, the following packages should be installed.
  
 <table>
 <tr>
@@ -143,23 +143,23 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with XPToolbar
+# Creating simple application with XPToolBar
 
-You can create the Windows Forms application with XPToolbar control as follows:
+You can create the Windows Forms application with XPToolBar control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 4. [Supported BarItem types](#Supported-BarItem-types)
 5. [Adding separators](#Adding-separators)
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the XPToolbar with  functionalities.
+Create a new Windows Forms project in the Visual Studio to display the XPToolBar with  functionalities.
 
 ## Adding control via Form designer
 
-The XPToolbar control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The XPToolBar control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -172,7 +172,7 @@ The XPToolbar control can be added to the application by dragging it from the to
 
 **Adding BarItems**
 
-BarItems can be added to XPToolbar using `Items` collection in Smart Tags of XPToolbar control.
+BarItems can be added to XPToolBar using `Items` collection in Smart Tags of XPToolBar control.
 
 ![](Adding-and-Filling-the-XPToolbar_images/XPToolbar-img3.png)
 
@@ -189,41 +189,41 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Tools.Windows**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools.XPMenus**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Tools.Windows;
+using Syncfusion.Windows.Forms.Tools.XPMenus;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Tools.Windows
+Imports Syncfusion.Windows.Forms.Tools.XPMenus
 
 {% endhighlight  %}
 
 {% endtabs %} 
 
-**Step 3** - Create `XPToolbar` control instance and add it to the form.
+**Step 3** - Create `XPToolBar` control instance and add it to the form.
 
 {% tabs %}
 
 {% highlight C# %}
 
-XPToolbar xpToolbar1 = new XPToolbar();
+ XPToolBar xpToolBar1 = new XPToolBar();
 
-this.Controls.Add(xpToolbar1);
+this.Controls.Add(xpToolBar1);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim xpToolbar1 As XPToolbar = New XPToolbar()
+Dim xpToolBar1 As XPToolBar = New XPToolBar()
 
-Me.Controls.Add(xpToolbar1)
+Me.Controls.Add(xpToolBar1)
 
 {% endhighlight %}
 
@@ -242,7 +242,7 @@ ParentBarItem parentBarItem1 = new ParentBarItem();
 
 parentBarItem1.Text="parentBarItem1";
 
-this.xpToolBar2.Bar.Items.AddRange(new BarItem[] {
+this.xpToolBar1.Bar.Items.AddRange(new BarItem[] {
             this.comboBoxBarItem1,
             this.parentBarItem1});
 
@@ -255,7 +255,7 @@ Dim parentBarItem1 As ParentBarItem = New ParentBarItem()
 
 Me.parentBarItem1.Text="parentBarItem1"
 
-Me.xpToolBar2.Bar.Items.AddRange(New BarItem[] {
+Me.xpToolBar1.Bar.Items.AddRange(New BarItem[] {
             Me.comboBoxBarItem1,
             Me.parentBarItem1})
 
