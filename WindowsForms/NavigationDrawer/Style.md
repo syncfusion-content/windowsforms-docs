@@ -9,7 +9,7 @@ documentation: ug
 
 # Style
 
-Navigation Drawer control has rich set of themes for professional representation. You can easily modify the look and feel of the Navigation Drawer using the built-in themes.
+NavigationDrawer control has rich set of themes for professional representation. You can easily modify the look and feel of the NavigationDrawer using the built-in themes.
 
 It has the below themes.
 
