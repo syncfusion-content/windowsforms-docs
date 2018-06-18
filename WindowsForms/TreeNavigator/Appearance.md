@@ -21,6 +21,8 @@ documentation: ug
 
 The visual style can be applied for the TreeNavigator using Style property.
 
+{% tabs %}
+
 {% highlight c# %}
 
 //Set the visual style of the TreeNavigator control.
@@ -29,13 +31,14 @@ this.treeNavigator1. Style = Syncfusion.Windows.Forms.Tools.TreeNavigatorStyle.O
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'Set the visual style of the TreeNavigator control.
 Me.treeNavigator1.Style = Syncfusion.Windows.Forms.Tools.TreeNavigatorStyle.Office2016Colorful
 
 {% endhighlight %}
 
+{% endtabs %}
 ![](Concept-and-Features_images/Colorful.png)
 
 
@@ -50,6 +53,8 @@ In Tree Navigator, you can customize height of the header, header back color, he
 
 
 The following code examples allow you to Customize the Header.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -71,7 +76,7 @@ this.treeNavigator1.Header.TextBounds = new Rectangle(40, 0, 30, 20);
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 'To set the height for the header
 Me.treeNavigator1.Header.Height = 50
@@ -91,10 +96,13 @@ Me.treeNavigator1.Header.TextBounds = new Rectangle(40, 0, 30, 20)
 
 {% endhighlight %}
 
+{% endtabs %}
 ![](Concept-and-Features_images/Header.png)
 
 
 The Visibility of the tree navigator header can be hidden by setting ShowHeader property to false.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -105,12 +113,14 @@ this.treeNavigator1.ShowHeader = false;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
  ‘ To hide the header area
  Me.treeNavigator1.ShowHeader = False
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Concept-and-Features_images/Noheader1.png)
 
@@ -120,6 +130,8 @@ this.treeNavigator1.ShowHeader = false;
 Border color and Thickness of the TreeNavigator can be customized using properties BorderColor and BorderThickness.
 
 The following code example allows you to customize the border color and border thickness.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -133,7 +145,7 @@ this.treeNavigator1.BorderThickness = 5;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ‘To set the border color for the control.
 Me.treeNavigator1.BorderColor = Color.Black
@@ -143,10 +155,14 @@ Me.treeNavigator1.BorderColor = Color.Black
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Concept-and-Features_images/Border.png)
 
 ## Margin between TreeMenuItems
 In Tree Navigator you can set the gap between items with the help of PadY property. This property can be set using following code
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -155,11 +171,13 @@ this.treeNavigator1.PadY = 10;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ME.treeNavigator1.PadY = 10
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Concept-and-Features_images/Pady.png)
 
@@ -176,6 +194,8 @@ Note: This property also available in treenavigator in which it is used to set t
 
 
 The following code example allows you to customize the TreeMenuItem
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -197,7 +217,7 @@ this.treeMenuItem4.SelectedItemForeColor = Color.Blue;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 ‘To customize backcolor for all the tree menu items in the treenavigator
 Me.treeNavigator1.ItemBackColor = Color.LightYellow
@@ -216,6 +236,8 @@ Me.treeMenuItem4.SelectedItemForeColor = Color.Blue
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Concept-and-Features_images/TreemenuitemCustomize.png)
 
 
@@ -228,6 +250,7 @@ In Tree Navigator, TextAlign property is used to set the the Text alignment of t
 
 The following code example allows you to set the alignment of the Text.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -235,10 +258,11 @@ treeNavigator1.TextAlign = TextAlignment.Center;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 treeNavigator1.TextAlign = TextAlignment.Center
 
 {% endhighlight %}
 
+{% endtabs %}
 ![](Concept-and-Features_images/TextAlign.png)

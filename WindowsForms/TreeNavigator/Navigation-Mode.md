@@ -27,20 +27,22 @@ In this Default mode, the Selected item is displayed at the top of the TreeNavig
 
 The following code examples allow you to choose the navigation mode.
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.treeNavigator.NavigationMode = NavigationMode.Default;
 
-
 {% endhighlight %}
 
 
+{% highlight vb %}
 
-
-{% highlight vbnet %}
 Me.treeNavigator1.NavigationMode = NavigationMode.Default
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Extended Mode
 
@@ -52,6 +54,8 @@ In the Extended mode, header of each level from the root to current level stacke
 
 The following code examples allow you to choose the Navigation mode.
 
+{% tabs %}
+
 {% highlight c# %}
 
 this.treeNavigator.NavigationMode = NavigationMode.Extended;
@@ -60,8 +64,10 @@ this.treeNavigator.NavigationMode = NavigationMode.Extended;
 
 
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Me.TreeNavigator1.NavigationMode = NavigationMode.Extended
 
 {% endhighlight %}
+
+{% endtabs %}
