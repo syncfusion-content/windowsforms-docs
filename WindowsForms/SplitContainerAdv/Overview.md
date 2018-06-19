@@ -21,8 +21,8 @@ documentation: ug
 
 * **States** - Provides option to collapse and expand the child panels.
 
-* **Nested Layout**: Provides option to add SplitContainerAdv control into another SplitContainerAdv Control. It can be deployed as a Generic Control Container with maximum flexibility.
+* **Nested layout**: Provides option to add SplitContainerAdv control into another SplitContainerAdv Control. It can be deployed as a Generic Control Container with maximum flexibility.
 
-* **Visual Style** - Provides rich set of visual styles to customize the look and feel.
+* **Visual style** - Provides rich set of visual styles to customize the look and feel.
 
-* **Splitter Distance** - Provides option to specify the Splitter Distance.
+* **Splitter distance** - Provides option to specify the Splitter Distance.

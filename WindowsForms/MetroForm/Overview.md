@@ -17,11 +17,11 @@ documentation: ug
 
 * **Color customization** - Supports to customize Caption Background, Foreground color, Control box buttons Background and Foreground color and Border color.
 
-* **Help Button** - Provides Help button support.
+* **Help button** - Provides Help button support.
 
-* **Custom Image** - Support to display Image and Text information in Caption Bar.
+* **Custom image** - Support to display Image and Text information in Caption Bar.
 
-* **RightToLeft** - Supports RightToLeft layout.
+* **Right to left** - Supports RightToLeft layout.
 
-* **Caption Labels** - Provides support to add Label in desired location on Caption Bar.
+* **Caption labels** - Provides support to add Label in desired location on Caption Bar.
  
