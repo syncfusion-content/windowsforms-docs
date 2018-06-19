@@ -15,7 +15,7 @@ The `DockingManager` control implements an architecture that allows panels to be
 
 ## Key features
 
-* [DockState](https://help.syncfusion.com/windowsforms/dockingmanager/getting-started#change-dock-state-of-child): Supports different dock states such as docking, floating, autohide, and tabbed.
+* [DockState](https://help.syncfusion.com/windowsforms/dockingmanager/getting-started#change-dock-state-of-child): Supports different dock states such as docking, floating, auto hide, and tabbed.
 * [Dock ability](https://help.syncfusion.com/windowsforms/dockingmanager/dealing-with-docking-child#restrict-to-dock-on-specific-sides): Provides extensive support to dock the elements at any side relative to form or other dock panels and allows users to restrict only dock at specific side.
 * [MDI](https://help.syncfusion.com/windowsforms/dockingmanager/mdi-window): Allows multiple windows to reside under a single parent window in the docking manager.
 * [Serialization](https://help.syncfusion.com/windowsforms/dockingmanager/serialization): Allows to save and restore dock panels states in different formats such as binary and XML.

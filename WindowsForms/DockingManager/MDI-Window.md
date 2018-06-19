@@ -262,7 +262,7 @@ Me.dockingManager1.Office2007MdiColorScheme = Office2007Theme.Silver
 
 ## Identify control is in MDI mode or not
 
-The docking manager [IsMDIMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsMDIMode.html) function is used to determine the MDI state of a docked window. This function takes the control as its argument and returns `true` when the specified control is in MDI child mode. Otherwise, it retunrs `false`.
+The docking manager [IsMDIMode](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsMDIMode.html) function is used to determine the MDI state of a docked window. This function takes the control as its argument and returns `true` when the specified control is in MDI child mode. Otherwise, it returns `false`.
 
 {% tabs %}
 

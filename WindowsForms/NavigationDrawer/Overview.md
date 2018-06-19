@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-NavigationDrawer is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any of the four screen edges or by demand.
+`NavigationDrawer` is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any of the four screen edges or by demand.
 
 ![](Concepts-And-Features_images/navigationdrawer_img2.png)
 
@@ -19,7 +19,7 @@ NavigationDrawer is a sliding panel menu that comes out from the edge of the wi
 
 * **Transition** : Provides options to set the transition type of the Drawer while opening.
 
-* **Toggle Drawer** : This support helps to toggle between Sliding Panel visibility.
+* **Toggle drawer** : This support helps to toggle between Sliding Panel visibility.
 
-* **Animation Duration** : Specifies the Timespan by which the DrawerContent opens up to the view. Animation Duration is applied only when ToggleDrawer function is used.
+* **Animation duration** : Specifies the Timespan by which the DrawerContent opens up to the view. Animation Duration is applied only when ToggleDrawer function is used.
 

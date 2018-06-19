@@ -12,7 +12,7 @@ documentation: ug
 
 ![](CalendarDateTime_images/MonthCalenderAdv-img1.png)
 
-# Key Features
+# Key features
 
 * **Date-range support** : Provides maximum and minimum date support to prevent users from selecting dates within a specified range.
 
@@ -20,10 +20,10 @@ documentation: ug
 
 * **ContextMenu** - Supports ContextMenu for month and date for quick navigation. 
 
-* **Multiple Selection** - Provides options to select multiple dates by dragging the mouse and also using the key modifiers.
+* **Multiple selection** - Provides options to select multiple dates by dragging the mouse and also using the key modifiers.
 
 * **Customization** - Provides options to customize font and color of Dates, Day Names, Week number and  calendar Header
 
-* **Visual Style** - Provides rich set of visual styles to customize the look and feel of MonthCalendarAdv.
+* **Visual style** - Provides rich set of visual styles to customize the look and feel of MonthCalendarAdv.
 
 * **Accessibility** - Touch, keyboard, and mouse support to make applications available to a wide variety of users.

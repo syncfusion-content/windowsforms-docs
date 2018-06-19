@@ -288,7 +288,7 @@ Text for the SuperToolTip and other customizing options can be specified for a p
 
 ### Change tooltip interval
 
-The [ToolTipInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ToolTipInterval.html) property is used to get or set the interval of showing the tooltip in docked, tabbed, and autohide windows. Its default value is `5000`.
+The [ToolTipInterval](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ToolTipInterval.html) property is used to get or set the interval of showing the tooltip in docked, tabbed, and auto hide windows. Its default value is `5000`.
 
 {% tabs %}
 
@@ -309,7 +309,7 @@ Me.dockingManager1.ToolTipInterval = 1000
 
 ### Balloon style tooltip
 
-The [UseBalloonStyleToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~UseBalloonStyleToolTip.html) property helps to set the BalloonStyleToolTip for docked, tabbed, and autohide windows.
+The [UseBalloonStyleToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~UseBalloonStyleToolTip.html) property helps to set the BalloonStyleToolTip for docked, tabbed, and auto hide windows.
 
 {% tabs %}
 
@@ -332,7 +332,7 @@ Me.dockingManager1.UseBalloonStyleToolTip = True
 
 ### Show/hide tooltip
 
-You can show or hide the tooltip in docked, tabbed, and autohide windows using the [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowToolTips.html) property. The default value of this property is `true`. To hide the tooltip, set the ShowToolTips property to `false`.
+You can show or hide the tooltip in docked, tabbed, and auto hide windows using the [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowToolTips.html) property. The default value of this property is `true`. To hide the tooltip, set the ShowToolTips property to `false`.
 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img5.png)
 

@@ -151,7 +151,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with Carousel control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
 4. [Configuration of Carousel](#Configuration-of-carousel)
 5. [Adding controls into Carousel](#adding-controls-into-carousel)
@@ -174,6 +174,8 @@ Carousel control can be added to the application by dragging it from the toolbox
 * Syncfusion.Tools.Base.dll
 
 ![](Getting-Started_images/Carousel_Toolbox1.png) 
+
+![](Getting-Started_images/Carousel_img6.png) 
 
 
 ## Adding control manually in code
@@ -232,14 +234,13 @@ Me.Controls.Add(carousel)
 
 ## Configuration of Carousel
  
- Carousel control is a circular conveyor used for displaying and rotating the custom controls or images objects
-
+Carousel control is a circular conveyor used for displaying and rotating the custom controls or images objects
 
 ## Adding controls into Carousel
 
  Custom controls can be added to carousel via both designer and code.
 
-### Adding controls through Designer
+### Adding controls through designer
 
  To load custom controls in Carousel, it needs to added into `Items` collection property in designer view.
 
@@ -282,7 +283,6 @@ Me.carousel1.Items.Add(this.buttonAdv2)
 {% endtabs %}
 
 ![](Getting-Started_images/Carousel_img4.png) 
-
 
 ## Adding images into Carousel
 

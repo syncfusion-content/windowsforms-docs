@@ -13,15 +13,12 @@ HubTile is a content control that functions as live tiles in an application for 
 
  ![loadimage](Overview_images/Overview_img1.png)
  
-
-
-
 ## Key features
 
-* **Default Tile** –  This tile provides notifications through various transition effects.
+* **Default tile** –  This tile provides notifications through various transition effects.
 
-* **Rotate Tile** –  This tile rotates itself in transition and direction.
+* **Rotate tile** –  This tile rotates itself in transition and direction.
 
-* **Pulsing Tile** – This tile zooms in and out and translates its image.
+* **Pulsing tile** – This tile zooms in and out and translates its image.
 
 * **Freezing** – Provides option to freeze notification functionality through a bool property.
