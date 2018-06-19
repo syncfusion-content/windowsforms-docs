@@ -12,7 +12,7 @@ documentation: ug
 
 ![](CalendarDateTime_images/MonthCalenderAdv-img1.png)
 
-# Key Features
+# Key features
 
 * **Date-range support** : Provides maximum and minimum date support to prevent users from selecting dates within a specified range.
 

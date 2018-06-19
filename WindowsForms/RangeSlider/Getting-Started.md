@@ -146,7 +146,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with RangeSlider control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
 4. [Configuring slider range](#configure-slider-range)
 

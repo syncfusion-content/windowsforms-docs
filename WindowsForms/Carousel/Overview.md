@@ -9,9 +9,9 @@ documentation: ug
 
 # Overview
 
-The Carousel control is a circular conveyor on which objects are displayed and rotated. The Carousel control provides a 3D interface for displaying objects with interactive navigation.
+The `Carousel` control is a circular conveyor on which objects are displayed and rotated. It provides a 3D interface for displaying objects with interactive navigation.
 
-## Key Features
+## Key features
 
 * **Carousel path** - Provides wide varieties of built-in path to arrange carousel items when animated.
 
