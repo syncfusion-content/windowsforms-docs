@@ -96,28 +96,26 @@ The PivotChart control can be added through code-behind by following the below s
 * Syncfusion.PivotChart.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-3.Then initialize the PivotChart control by creating an instance and add it to the Form using the code specified below.
+3.Then initialize the PivotChart control by creating an instance and add it to the form using the code specified below.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Initialize a new PivotChart.
-private Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
-// Add required size for the PivotChart control
-this.pivotChart1.Size = new System.Drawing.Size(750, 434);
-// Add the PivotChart control to the parent control.
+//Initialize a new PivotChart. 
+Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
+
+// Add the PivotChart control to the parent control. 
 this.Controls.Add(pivotChart1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Initialize a new PivotChart.
-Private pivotChart1 As Syncfusion.Windows.Forms.PivotChart.PivotChart = New Syncfusion.Windows.Forms.PivotChart.PivotChart()
-' Add required size for the PivotChart control
-Me.pivotChart1.Size = New System.Drawing.Size(750, 434);
-' Add the PivotChart control to the parent control.
+'Initialize a new PivotChart. 
+Dim pivotChart1 As New Syncfusion.Windows.Forms.PivotChart.PivotChart()
+
+' Add the PivotChart control to the parent control. 
 Me.Controls.Add(pivotChart1)
 
 {% endhighlight %}
@@ -152,22 +150,20 @@ Me.Controls.Add(pivotChart1)
 
 {% highlight c# %}
 
-//Initialize a new PivotChart.
-private Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
-// Add required size for the PivotChart control
-this.pivotChart1.Size = new System.Drawing.Size(750, 434);
-// Add the PivotChart control to the parent control.
+//Initialize a new PivotChart. 
+Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
+
+// Add the PivotChart control to the parent control. 
 this.Controls.Add(pivotChart1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Initialize a new PivotChart.
-Private pivotChart1 As Syncfusion.Windows.Forms.PivotChart.PivotChart = New Syncfusion.Windows.Forms.PivotChart.PivotChart()
-' Add required size for the PivotChart control
-Me.pivotChart1.Size = New System.Drawing.Size(750, 434);
-' Add the PivotChart control to the parent control.
+'Initialize a new PivotChart. 
+Dim pivotChart1 As New Syncfusion.Windows.Forms.PivotChart.PivotChart()
+
+' Add the PivotChart control to the parent control. 
 Me.Controls.Add(pivotChart1)
 
 {% endhighlight %}

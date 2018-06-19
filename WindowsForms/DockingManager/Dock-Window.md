@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docking-Window | WindowsForms | Syncfusion
+title: Docking Window | WindowsForms | Syncfusion
 description: This section explains the DockWindow functionality in DockingManager
 platform: WindowsForms
 control: DockingManager 
@@ -10,13 +10,13 @@ documentation: ug
 
 # Docking Window
 
-DockingManager lets you dock the control on any of the four sides of the container control. DockingManager provides docking hints while dragging the panel over the DockingManager. This preview will provide information about how the layout will look once drop the panel to dock.
+The docking manager allows you to dock the control on any of the four sides of the container control, and provides docking hints while dragging the panel over it. This preview will provide information about how the layout will look after dropping the panel to dock.
 
 ![](Dock_Window_images/Dock_Window_img1.png)
 
-## Enable / disable dock functionality
+## Enable/disable dock functionality
 
-Docking functionality can be enabled or disabled by setting the boolean value as `true` or `false` in the [SetEnableDocking](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetEnableDocking.html) function.
+The docking functionality can be enabled or disabled by setting the Boolean value as `true` or `false` in the [SetEnableDocking](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetEnableDocking.html) function.
 
 {% tabs %}
 
@@ -55,9 +55,9 @@ Me.dockingManager1.SetEnableDocking(Me.panel4, True)
 
 ## Change dock side of children
 
-DockingManager lets you specify the type of docking and the bounds of the docked control using the [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function.
+The docking manager allows you to specify the docking type and bounds of the docked control using the [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function.
 
-The five sides that can be docked are
+The following are the five sides that can be docked by the control:
 
 * Left
 * Right
@@ -99,7 +99,7 @@ Me.dockingManager1.DockControl(Me.panel4, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 ## Dock window to another window
 
-Provides support to dock a window inside another window with the help of drag providers. This can also be done programmatically by using [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function.
+Provides support to dock a window inside another window with the help of drag providers. This can be done programmatically by using the [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function.
 
 ![](Dock_Window_images/Dock_Window_img18.png)
 
@@ -124,7 +124,7 @@ Me.dockingManager1.DockControl(Me.panel4, Me.panel1, Syncfusion.Windows.Forms.To
 
 ## Detect dock style
 
-Docking style which is assigned to the control can be detect at run time using [GetDockStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockStyle.html) function of DockingManager.
+Docking style that is assigned to the control can be detect at run time using the [GetDockStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockStyle.html) function.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ MessageBox.Show("Dock style :" + Me.dockingManager1.GetDockStyle(Me.panel1))
 
 ## Change dock window header
 
-The [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) function of DockingManager helps to set the label for a child window. 
+The [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) function helps to set the label for a child window.
 
 {% tabs %}
 
@@ -171,7 +171,7 @@ Me.dockingManager1.SetDockLabel(panel1, "New");
 
 ## Change dock window size
 
-Dock panel size can be changed at run time by resize using splitters between dock panel. DockingManager also provides way to change the size of dock panels by programmatically. [SetControlSize](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetControlSize.html) function of DockingManager helps to sets the size of docked control. [GetControlSize](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetControlSize.html) function of DockingManager helps to get the size of dock panel. 
+Dock panel size can be resized at run time using the splitters between the dock panels. The docking manager provides a way to change the size of dock panels by programmatically. The [SetControlSize](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetControlSize.html) function of docking manager helps to set the size of docked control. The [GetControlSize](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetControlSize.html) function of docking manager helps to get the size of dock panel.
 
 {% tabs %}
 
@@ -209,7 +209,7 @@ Me.dockingManager1.SetControlSize(this.panel1, new Size(200, 200))
 
 ## Add icon in header of dock window
 
-The caption icons / the images can also be set by using [SetDockIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockIcon.html) function of the docked control. This behavior can be enabled or disabled by using [ShowCaptionImages](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowCaptionImages.html) property. Its default value is `true`, to hide the caption image turn on its value to `false`. 
+The caption icons/images can be set by using the [SetDockIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockIcon.html) function of the docked control. This behavior can be enabled or disabled by using the [ShowCaptionImages](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowCaptionImages.html) property. Its default value is `true`. To hide the caption image, set the ShowCaptionImages property to `false`.
 
 <table>
 <tr>
@@ -219,11 +219,11 @@ Description</th></tr>
 <tr>
 <td>
 SetDockIcon(Control, Icon)</td><td>
-Sets the Icon or the image for the docking window by passing the image icon as a parameter for this function. Ctrl - Represents the dock enabled control. image - Icon representing the docking window</td></tr>
+Sets the icon or image for the docking window by passing the image icon as a parameter for this function. Control represents the dock enabled control, and the image icon represents the docking window.</td></tr>
 <tr>
 <td>
 SetDockIcon(Control, Int32)</td><td>
-This overloaded function returns the index of the image associated with the docking window. Ctrl - Indicates the docking window. int - A zero-based index into the ImageList property value</td></tr>
+This overloaded function returns the index of image associated with the docking window. Control indicates the docking window, and the Int32 represents a zero-based index to the ImageList property value.</td></tr>
 </table>
 
 {% tabs %}
@@ -286,7 +286,7 @@ Me.DockingManager1.SetDockIcon(Me.panel1, icon)
 
 ## Change caption label alignment
 
-[DockLabelAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockLabelAlignment.html) property helps to align the caption label to left, right and center position in DockingManager.
+The [DockLabelAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockLabelAlignment.html) property helps to align the caption label to left, right, and center position in the docking manager.
 
 {% tabs %}
 
@@ -308,21 +308,21 @@ Me.dockingManager1.DockLabelAlignment = DockLabelAlignmentStyle.Right
 
 ## Change visibility of caption buttons
 
-DockingManager has following functions for retrieve and manipulation of the buttons visibility displayed in CaptionBar.
+The docking manager has following functions to retrieve and manipulate the buttons visibility in the CaptionBar.
 
-  * [SetCloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetCloseButtonVisibility.html): Used to show / hide the close button in the caption bar of the particular window.
+  * [SetCloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetCloseButtonVisibility.html): Shows/hides the close button in the caption bar of the particular window.
 
-  * [GetCloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetCloseButtonVisibility.html): Returns a bool value according to the visibility of close button.
+  * [GetCloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetCloseButtonVisibility.html): Returns a bool value according to visibility of the close button.
 
-  * [SetAutoHideButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideButtonVisibility.html): Used to show / hide the AutoHide button in the caption bar of the particular window.
+  * [SetAutoHideButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAutoHideButtonVisibility.html): Shows/hides the AutoHide button in the caption bar of the particular window.
 
-  * [GetAutoHideButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideButtonVisibility.html): Returns a bool value according to the visibility of AutoHide button.
+  * [GetAutoHideButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetAutoHideButtonVisibility.html): Returns a bool value according to visibility of the AutoHide button.
 
-  * [SetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMenuButtonVisibility.html): Used to show / hide the menu button in the caption bar of the particular window.
+  * [SetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetMenuButtonVisibility.html): Shows/hides the menu button in the caption bar of the particular window.
 
   * [GetMenuButtonVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetMenuButtonVisibility.html): Returns a bool value according to the visibility of menu button.
 
-The following code demonstrate the usage of these functions:
+The following code demonstrates the usage of these functions:
 
 {% tabs %}
 
@@ -347,9 +347,9 @@ Me.dockingManager1.GetCloseButtonVisibility(Me.panel1) 'true when button is visi
 
 ![](Dock_Window_images/Dock_Window_img7.png)
 
-## Show / hide dock windows
+## Show/hide dock windows
 
-[SetDockVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockVisibility.html) function of DockingManager helps to sets the visibility of docked control. [GetDockVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockVisibility.html) of DockingManger helps to identify the visibility of docked control. 
+The [SetDockVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockVisibility.html) function helps to set the visibility of docked control, and the [GetDockVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockVisibility.html) helps to identify the visibility of docked control.
 
 {% tabs %}
 
@@ -379,7 +379,7 @@ The Custom Caption Collection Editor can be accessed by using the DockingManager
 
 ![](Dock_Window_images/CustomCaptionButton1.png)
 
-In the `CaptionButtons` Collection Editor, we can add the new caption button by clicking "Add" button. 
+In the `CaptionButtons` Collection Editor, you can add the new caption button by clicking Add.
 
 ![](Dock_Window_images/Dock_Window_img15.png)
 
@@ -476,7 +476,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 ### Customize caption buttons
 
-The DockingManager allows to customize the default caption buttons. Active and Inactive window caption button `ForeColor` can be customized by using the [ActiveCaptionButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveCaptionButtonForeColor.html) and [InActiveCaptionButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InActiveCaptionButtonForeColor.html) properties of DockingManager.
+The docking manager allows to customize the default caption buttons. The `ForeColor` of Active and Inactive window caption button can be customized by using the [ActiveCaptionButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveCaptionButtonForeColor.html) and [InActiveCaptionButtonForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InActiveCaptionButtonForeColor.html) properties.
 
 {% tabs %}
 
@@ -503,7 +503,7 @@ Me.dockingManager1.InActiveCaptionButtonForeColor = System.Drawing.Color.Green
 
 ## Change header visibility of dock window
 
-DockingManager allows to change the Visibility of Caption for Dock panels. [ShowCaption](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowCaption.html) property of DockingManager helps to show or hide the caption of the DockPanel. Its default value is `true`, to hide the caption turn its value to `false`.
+The docking manager allows to change the visibility of caption for dock panels. The [ShowCaption](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowCaption.html) property helps to show or hide the caption of the DockPanel. Its default value is `true`. You can hide the caption, by setting the ShowCaption property to `false`.
 
 {% tabs %}
 
@@ -530,7 +530,7 @@ Me.dockingManager1.ShowCaption = False
 
 ## Maximize and restore
 
-DockingManager provides support to maximize and restore the dock windows by using the Maximize button, so that a clear view of the contents can be made visible. It can be enabled by setting the `MaximizeButtonEnabled` property to `true`.
+The docking manager supports to maximize and restore the dock windows by using the maximize button, so that a clear view of contents can be obtained. This can be enabled by setting the `MaximizeButtonEnabled` property to `true`.
 
 {% tabs %}
 
@@ -551,11 +551,11 @@ Me.dockingManager1.MaximizeButtonEnabled = True
 
 ![](Dock_Window_images/RestoreButtonImage.png)
 
-N> The Maximize button will be visible only if any other control is docked to the bottom of the former control.
+N> The maximize button will be visible only if any other control is docked to the bottom of the former control.
 
 ## Occupy whole window
 
-The [DockToFill](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockToFill.html) property allows users to implement a unique docking layout where a non-MDIContainer form or ContainerControl's entire client region is occupied by the dockable controls.
+The [DockToFill](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockToFill.html) property allows users to implement a unique docking layout where a non-MDIContainer form or ContainerControl's entire client region is occupied by dockable controls.
 
 {% tabs %}
 
@@ -575,9 +575,9 @@ Me.dockingManager1.DockToFill = True;
 
 ![](Dock_Window_images/Dock_Window_img10.png)
 
-## Enable / disable the context menu 
+## Enable/disable the context menu
 
-A context menu will be displayed whenever the user right clicks the caption bar or clicks the menu button in the caption bar. We can enable or disable showing the context menu of docked window by using [EnableContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableContextMenu.html) property of DockingManager. Its default is `true`, to hide the context menu in docked windows turn on its value to `false`.
+A context menu will be displayed whenever users right-click the caption bar or click the menu button in the caption bar. You can show or hide the context menu of the docked window by using the [EnableContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableContextMenu.html) property of docking manager. The default value of this property is `true`. To hide the context menu in docked windows, set the EnableContextMenu property to `false`.
 
 {% tabs %}
 
@@ -598,15 +598,15 @@ Me.dockingManager1.EnableContextMenu = True
 
 ![](Dock_Window_images/Dock_Window_img11.png) 
 
-N> If `MDIContainer` property of the form is set to `true`, then the context menu will include MDI child option. 
+N> If the `MDIContainer` property of the form is set to `true`, then the context menu will include MDI child option.
 
 ![](Dock_Window_images/Dock_Window_img12.png) 
 
 ## Remove specific default menu item from context menu
 
-Context menu items in dock window caption can be customized using [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event of DockingManager. The [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) allows to remove the menu items using its ContextMenu option.  So, we can add / remove the ContextMenuItem by passing the corresponding BarItem to add / remove function.
+Context menu items in the dock window caption can be customized using the [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event of the docking manager. The [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) allows to remove the menu items using its ContextMenu option. So, you can add/remove the ContextMenuItem by passing the corresponding BarItem to add/remove function.
 
-The following code example demonstrates removing the default menu items “Hide” and “Dock to”. Please make use of the below ContextMenuItemText for remove the default menu items from context menu.  
+The following code example demonstrates removing the default menu items such as “Hide” and “Dock to”. The ContextMenuItemText is used to remove the default menu items from the context menu.
 
 <table>
 <tr>
@@ -710,7 +710,7 @@ End If
 
 ## Restrict resize
 
-DockingManager provides option to restrict user to resize the dock panel to specified minimum size. [SetControlMinimumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetControlMinimumSize.html) function of DockingManager helps to sets the minimum size of docked control.
+The docking manager provides option to restrict user for resizing the dock panel to specified minimum size. The [SetControlMinimumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetControlMinimumSize.html) function helps to set the minimum size of docked control.
 
 {% tabs %}
 
@@ -734,7 +734,7 @@ Me.dockingManager1.SetControlMinimumSize(panel1,new Size(200, 400))
 
 ### Restrict to resize specific window
 
-[FreezeResizing](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~FreezeResizing.html) helps to restrict sizing the docking child windows in DockingManager.
+[FreezeResizing](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~FreezeResizing.html) function helps to restrict the sizing of docking child windows.
 
 {% tabs %}
 
@@ -754,7 +754,7 @@ Me.dockingManager1.FreezeResizing = True
 
 ## Customize resize splitter
 
-The Splitter of the dock window can be customized using the [SplitterWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SplitterWidth.html) and [MetroSplitterBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroSplitterBackColor.html) properties depends upon its values respectively.
+The splitter of the dock window can be customized using the [SplitterWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SplitterWidth.html) and [MetroSplitterBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroSplitterBackColor.html) properties depends upon its values respectively.
 
 {% tabs %}
 
@@ -779,5 +779,5 @@ The Splitter of the dock window can be customized using the [SplitterWidth](http
 
 ![](Dock_Window_images/Dock_Window_img14.png) 
 
-N > MetroSplitterBackColor property will effect only with [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property set as Metro.
+N > The MetroSplitterBackColor property effects only when the [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property is set to Metro.
 
