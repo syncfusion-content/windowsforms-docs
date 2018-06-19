@@ -94,16 +94,18 @@ The PivotGrid control can be added through code-behind by following the below st
 * Syncfusion.PivotAnalysis.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-3.Then initialize the PivotGrid control by creating an instance and add it to the Form using the code specified below.
+3.Then initialize the PivotGrid control by creating an instance and add it to the form using the code specified below.
 
 {% tabs %}
 
 {% highlight c# %}
 
 //Initialize a new PivotGrid.
-private Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl pivotGridControl1 = new Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl();
+Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl pivotGridControl1 = new Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl();
+
 // Add required size for the PivotGrid control
 pivotGridControl1.Size = new System.Drawing.Size(344, 250);
+
 // Add the PivotGrid control to the parent control.
 this.Controls.Add(pivotGridControl1);
 
@@ -112,9 +114,11 @@ this.Controls.Add(pivotGridControl1);
 {% highlight vb %}
 
 'Initialize a new PivotGrid.
-Private pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
+Dim pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
+
 ' Add required size for the PivotGrid control
 pivotGridControl1.Size = New System.Drawing.Size(344, 250)
+
 ' Add the PivotGrid control to the parent control.
 Me.Controls.Add(pivotGridControl1)
 
@@ -151,9 +155,11 @@ Me.Controls.Add(pivotGridControl1)
 {% highlight c# %}
 
 //Initialize a new PivotGrid.
-private Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl pivotGridControl1 = new Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl();
+Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl pivotGridControl1 = new Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl();
+
 // Add required size for the PivotGrid control
 pivotGridControl1.Size = new System.Drawing.Size(344, 250);
+
 // Add the PivotGrid control to the parent control.
 this.Controls.Add(pivotGridControl1);
 
@@ -162,9 +168,11 @@ this.Controls.Add(pivotGridControl1);
 {% highlight vb %}
 
 'Initialize a new PivotGrid.
-Private pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
+Dim pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
+
 ' Add required size for the PivotGrid control
 pivotGridControl1.Size = New System.Drawing.Size(344, 250)
+
 ' Add the PivotGrid control to the parent control.
 Me.Controls.Add(pivotGridControl1)
 
