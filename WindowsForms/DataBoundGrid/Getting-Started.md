@@ -22,11 +22,11 @@ Required assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridDataBoundGrid.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridDataBoundGrid.<br/><br/></td></tr>
 </table>
 
@@ -287,7 +287,7 @@ Me.gridDataBoundGrid1.Model.ColWidths(2) = 50
 
 ## Editing
 
-By default, the GridDataBoundGrid is in editable state. Editing can be enabled or disabled by using the [ReadOnly] (http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ReadOnly.html) property. It can be used for entire grid or particular cells. Moreover, editing can be customized by using the [CurrentCellStartEditing] (http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html#) and [CurrentCellEditingComplete] (http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellEditingComplete_EV.html#) events.
+By default, the GridDataBoundGrid is in editable state. Editing can be enabled or disabled by using the [ReadOnly] (http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ReadOnly.html) property. It can be used for entire grid or particular cells. Moreover, editing can be customized by using the [CurrentCellStartEditing] (http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html#) and [CurrentCellEditingComplete] (http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellEditingComplete_EV.html#) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -313,11 +313,11 @@ style.ReadOnly = False
 
 ## Selection
 
-The GridDataBoundGrid supports two types of selections. They are [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSelection.html#) and [ListBoxSelectionMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ListBoxSelectionMode.html#). 
+The GridDataBoundGrid supports two types of selections. They are [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSelection.html#) and [ListBoxSelectionMode](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ListBoxSelectionMode.html#). 
 
 ### AllowSelection
 
-A particular range of cells, rows, columns, or table in the grid can be selected by setting the `AllowSelection` property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration.
+A particular range of cells, rows, columns, or table in the grid can be selected by setting the `AllowSelection` property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration.
 
 {% tabs %}
 {% highlight c# %}

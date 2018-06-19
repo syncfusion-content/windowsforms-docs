@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizing Leaf Nodes
 
-Leaf nodes can be customized by raising the [`LeafItemDrawing`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~LeafItemDrawing_EV.html) event of the tree map control. 
+Leaf nodes can be customized by raising the [`LeafItemDrawing`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~LeafItemDrawing_EV.html) event of the tree map control. 
 
 #### Code sample
 

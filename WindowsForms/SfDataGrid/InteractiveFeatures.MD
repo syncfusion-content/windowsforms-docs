@@ -14,7 +14,7 @@ SfDataGrid provides an entirely customizable menu to expose the functionality on
 
 ### ContextMenu for Records
 
-The context menu for the data rows can be set by using [SfDataGrid.RecordContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RecordContextMenu.html) property.
+The context menu for the data rows can be set by using [SfDataGrid.RecordContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RecordContextMenu.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ Me.sfDataGrid1.RecordContextMenu.Items.Add("Paste", Nothing, OnPasteClicked)
 
 ### ContextMenu for Column Header
 
-The context menu for the column header row can be set by using [SfDataGrid.ColumnHeaderContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ColumnHeaderContextMenu.html) property.
+The context menu for the column header row can be set by using [SfDataGrid.ColumnHeaderContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ColumnHeaderContextMenu.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ Me.sfDataGrid1.ColumnHeaderContextMenu.Items.Add("Show GroupDropArea", Nothing, 
 ![](InteractiveFeatures_Images/ContextMenu2.png)
 
 ### ContextMenu for RowHeader
-The context menu for the row headers can be set by using [SfDataGrid.RowHeaderContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RowHeaderContextMenu.html) property.
+The context menu for the row headers can be set by using [SfDataGrid.RowHeaderContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RowHeaderContextMenu.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,7 @@ Me.sfDataGrid1.RowHeaderContextMenu.Items.Add("Delete", Nothing, OnDeleteClicked
 
 ### ContextMenu for GroupDropArea
 
-The context menu for the group drop area can be set by using [SfDataGrid.GroupDropAreaContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupDropAreaContextMenu.html) property.
+The context menu for the group drop area can be set by using [SfDataGrid.GroupDropAreaContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupDropAreaContextMenu.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -96,7 +96,7 @@ Me.sfDataGrid1.GroupDropAreaContextMenu.Items.Add("Clear Groups", Nothing, OnCle
 
 ### ContextMenu for GroupDropAreaItem
 
-The context menu for the group drop area items can be set by using [SfDataGrid.GroupDropAreaItemContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupDropAreaItemContextMenu.html) property.
+The context menu for the group drop area items can be set by using [SfDataGrid.GroupDropAreaItemContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupDropAreaItemContextMenu.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -117,7 +117,7 @@ Me.sfDataGrid1.GroupDropAreaItemContextMenu.Items.Add("Clear Group", Nothing, On
 
 ### ContextMenu for GroupCaptionSummaryRow
 
-The context menu for the group caption can be set by using [SfDataGrid.GroupCaptionContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupCaptionContextMenu.html) property.
+The context menu for the group caption can be set by using [SfDataGrid.GroupCaptionContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupCaptionContextMenu.html) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.GroupCaptionContextMenu = new ContextMenuStrip();
@@ -135,7 +135,7 @@ Me.sfDataGrid1.GroupCaptionContextMenu.Items.Add("Collapse", Nothing, OnCollapse
 
 ### ContextMenu for GroupSummaryRow
 
-The context menu for the group summary can be set by using [SfDataGrid.GroupSummaryContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupSummaryContextMenu.html) property.
+The context menu for the group summary can be set by using [SfDataGrid.GroupSummaryContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupSummaryContextMenu.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -154,7 +154,7 @@ Me.sfDataGrid1.GroupSummaryContextMenu.Items.Add("Count", Nothing, OnCountClicke
 
 ### ContextMenu for TableSummaryRow
 
-The context menu for the table summary can be set by using [SfDataGrid.TableSummaryContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~TableSummaryContextMenu.html) property.
+The context menu for the table summary can be set by using [SfDataGrid.TableSummaryContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~TableSummaryContextMenu.html) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.TableSummaryContextMenu = new ContextMenuStrip();
@@ -189,7 +189,7 @@ Me.sfDataGrid1.RecordContextMenu.ForeColor = Color.DarkBlue
 
 ### Cancel ContextMenu Opening
 
-The context menu opening can be canceled for any particular cell/row or column through [ContextMenuOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpening_EV.html) event.
+The context menu opening can be canceled for any particular cell/row or column through [ContextMenuOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpening_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -212,13 +212,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-[ContextMenuOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpened_EV.html) event occurs when any context menu is opened in SfDataGrid. This will not occur if `ContextMenuOpening` event is canceled.
+[ContextMenuOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpened_EV.html) event occurs when any context menu is opened in SfDataGrid. This will not occur if `ContextMenuOpening` event is canceled.
 
 ### Customization of Context Menu
 
 #### Change the Menu Items when Opening the Context Menu.
 
-The menu items for  the context menu can be change when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpening_EV.html) event.
+The menu items for  the context menu can be change when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ContextMenuOpening_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -418,7 +418,7 @@ void OnClearFilteringClicked(Object sender, EventArgs e)
 
 ## ToolTip
 
-SfDataGrid provides the support to show the pop-up window that displays the information when the mouse hover on the cells by using [SfToolTip](https://help.syncfusion.com/windowsforms/sftooltip/overview). The ToolTip for the SfDataGrid can be enabled by setting the[SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowToolTip.html) property to true.
+SfDataGrid provides the support to show the pop-up window that displays the information when the mouse hover on the cells by using [SfToolTip](https://help.syncfusion.com/windowsforms/sftooltip/overview). The ToolTip for the SfDataGrid can be enabled by setting the[SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowToolTip.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -429,7 +429,7 @@ Me.sfDataGrid1.ShowToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-The ToolTip for any particular column can be enabled by setting [GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowToolTip.html) property to true.
+The ToolTip for any particular column can be enabled by setting [GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowToolTip.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -440,14 +440,14 @@ Me.sfDataGrid1.Columns("OrderID").ShowToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-N>[GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowToolTip.html) takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowToolTip.html).
+N>[GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowToolTip.html) takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowToolTip.html).
 
 
 ![](InteractiveFeatures_Images/ToolTip1.png)
 
 ### Displaying ToolTip on Header
 
-The ToolTip can be displayed for the header cells by setting the [SfDataGrid.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowHeaderToolTip.html) property to true.
+The ToolTip can be displayed for the header cells by setting the [SfDataGrid.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowHeaderToolTip.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -458,7 +458,7 @@ Me.sfDataGrid1.ShowHeaderToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-The header ToolTip for any particular column can be enabled by setting [GridColumnBase.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowHeaderToolTip.html) property to true.
+The header ToolTip for any particular column can be enabled by setting [GridColumnBase.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowHeaderToolTip.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -469,13 +469,13 @@ Me.sfDataGrid1.Columns("OrderID").ShowHeaderToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-N>[GridColumnBase.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowHeaderToolTip.html) takes higher priority than [SfDataGrid.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowHeaderToolTip.html).
+N>[GridColumnBase.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowHeaderToolTip.html) takes higher priority than [SfDataGrid.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowHeaderToolTip.html).
 
 ![](InteractiveFeatures_Images/ToolTip2.png)
 
 ### Displaying ToolTip Only for the Trimmed Cells
 
-By default, ToolTip will be displayed for all the cells. SfDataGrid provides support to display ToolTip only for the cells that contains trimmed text by setting value for [SfDataGrid.ToolTipOption.ToolTipMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~ToolTipMode.html) property as `TrimmedCells`.
+By default, ToolTip will be displayed for all the cells. SfDataGrid provides support to display ToolTip only for the cells that contains trimmed text by setting value for [SfDataGrid.ToolTipOption.ToolTipMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~ToolTipMode.html) property as `TrimmedCells`.
 
 {% tabs %}
 {% highlight c# %}
@@ -492,7 +492,7 @@ Me.sfDataGrid1.ToolTipOption.ToolTipMode = ToolTipMode.TrimmedCells
 
 #### Initial Delay
 
-The [SfDataGrid.ToolTipOption.InitialDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~InitialDelay.html) property provides supports to shorten or lengthen the time before displaying a ToolTip.
+The [SfDataGrid.ToolTipOption.InitialDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~InitialDelay.html) property provides supports to shorten or lengthen the time before displaying a ToolTip.
 
 {% tabs %}
 {% highlight c# %}
@@ -505,7 +505,7 @@ Me.sfDataGrid1.ToolTipOption.InitialDelay = 1000
 
 #### Auto Pop Delay
 
-The [SfDataGrid.ToolTipOption.AutoPopDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~ToolTipMode.html) property provides support to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a cell.
+The [SfDataGrid.ToolTipOption.AutoPopDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ToolTipOptions~ToolTipMode.html) property provides support to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -520,7 +520,7 @@ Me.sfDataGrid1.ToolTipOption.AutoPopDelay = 3000
 
 #### Styling
 
-SfDataGrid allows to customize the appearance of the ToolTip through [SfDataGrid.Style.ToolTipStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~ToolTipStyle.html) property.
+SfDataGrid allows to customize the appearance of the ToolTip through [SfDataGrid.Style.ToolTipStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~ToolTipStyle.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -541,7 +541,7 @@ Me.sfDataGrid1.Style.ToolTipStyle.BorderColor = Color.DarkBlue
 
 #### Conditional Styling
 
-SfDataGrid allows to customize the appearance of the ToolTip based on conditions through [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
+SfDataGrid allows to customize the appearance of the ToolTip based on conditions through [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -572,7 +572,7 @@ End Sub
 
 ### Cancel ToolTip Opening
 
-SfDataGrid allows to cancel displaying the ToolTip for any particular cell/row or column by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
+SfDataGrid allows to cancel displaying the ToolTip for any particular cell/row or column by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -596,13 +596,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-[ToolTipOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpened_EV.html) event occurs when ToolTip for any cell is displayed. This will not occur if the `ToolTipOpening` event is canceled.
+[ToolTipOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpened_EV.html) event occurs when ToolTip for any cell is displayed. This will not occur if the `ToolTipOpening` event is canceled.
 
 ### Customization of ToolTip
 
 #### Change the Display Text for a Cell
 
-By default, SfDataGrid displays the ToolTip with the cell content as the ToolTip text. The ToolTip text for any particular cell can be changed by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
+By default, SfDataGrid displays the ToolTip with the cell content as the ToolTip text. The ToolTip text for any particular cell can be changed by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -658,7 +658,7 @@ End Sub
 
 #### Display ToolTip with Beak
 
-ToolTip can be displayed with beak by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
+ToolTip can be displayed with beak by handling the [ToolTipOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ToolTipOpening_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}

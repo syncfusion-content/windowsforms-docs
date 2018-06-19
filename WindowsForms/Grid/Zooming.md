@@ -9,11 +9,11 @@ documentation: ug
 ---
 # Zooming 
 
-The GridControl allows the user to zoom in or out to the entire grid as well as the individual cells. To have this zooming support in grid, the [Syncfusion.GridHelperClasses.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/webtoc.html) assembly needs to be added into the assembly reference.
+The GridControl allows the user to zoom in or out to the entire grid as well as the individual cells. To have this zooming support in grid, the [Syncfusion.GridHelperClasses.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html) assembly needs to be added into the assembly reference.
 
 ## Grid Level Zooming
 
-The grid can be zoomed to the specific percentage by using the [ZoomGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ZoomGrid~zoomGrid.html#) method. To get the actual zooming percentage after the grid gets zoomed, use the [GetCurrentZoomSize](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ZoomGrid~GetCurrentZoomSize.html#) method.  It will return the current zooming percentage of the grid.
+The grid can be zoomed to the specific percentage by using the [ZoomGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ZoomGrid~zoomGrid.html#) method. To get the actual zooming percentage after the grid gets zoomed, use the [GetCurrentZoomSize](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ZoomGrid~GetCurrentZoomSize.html#) method.  It will return the current zooming percentage of the grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -44,7 +44,7 @@ Dim size As Integer = zoom.GetCurrentZoomSize(Me.gridControl1)
 
 ## Cell Level Zooming
 
-This facilitates to display the clicked cell content in a maximized form. This support can be enabled by setting [ZoomGrid.ZoomGridControlCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ZoomGrid~ZoomGridControlCell.html#) property to `true`.
+This facilitates to display the clicked cell content in a maximized form. This support can be enabled by setting [ZoomGrid.ZoomGridControlCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.ZoomGrid~ZoomGridControlCell.html#) property to `true`.
 
 {% tabs %}
 {% highlight c# %}

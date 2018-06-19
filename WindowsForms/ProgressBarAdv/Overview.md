@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-[ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control helps to provide progress information during lengthy operations such as installation, copying, and printing. It also lets users know the time remaining to complete a lengthy operation. It is an advanced progressbar with a wide variety of following features.
+[ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control helps to provide progress information during lengthy operations such as installation, copying, and printing. It also lets users know the time remaining to complete a lengthy operation. It is an advanced progressbar with a wide variety of following features.
 
 ## Key features
 

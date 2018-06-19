@@ -210,3 +210,174 @@ Refer to the following sample shows how to implement the rounded rectangle in th
 [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/SFBUTT~1449710690.ZIP#)
 
 **Note**: When using the previous implementation to draw the rounded rectangle, the border customization properties like Border, HoverBorder, PressedBorder, FocusedBorder, and DisabledBorder does not work.
+
+## Themes
+
+The SfButton offers four built-in themes for professional representation as follows:
+
+* Office2016Colorful
+* Office2016White
+* Office2016DarkGray
+* Office2016Black
+
+Themes can be applied to the SfButton by using the following steps:
+
+1. [Load theme assembly](#load-theme-assembly)
+2. [Apply theme](#apply-theme)
+
+### Load theme assembly
+
+The Syncfusion.Office2016Theme.WinForms assembly should be added as reference to set theme for the SfButton in any application.
+
+Before applying theme to the SfButton, required theme assembly should be loaded. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.WinForms.Controls;
+
+         static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        
+        static void Main()
+        {
+            SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+    }
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.WinForms.Controls
+
+ Friend Module Program
+        ''' <summary>
+        ''' The main entry point for the application.
+        ''' </summary>
+        Sub Main()
+            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
+            Application.EnableVisualStyles()
+            Application.SetCompatibleTextRenderingDefault(False)
+            Application.Run(New Form1())
+        End Sub
+    End Module
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+### Apply theme
+
+Appearance of the SfButton can be changed by using the `ThemeName`.
+
+#### Office2016Colorful
+
+This option helps to set the Office2016Colorful Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+ this.sfButton.ThemeName = "Office2016Colorful";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016Colorful 
+
+Me.sfButton.ThemeName = "Office2016Colorful"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](SfButton_images/SfButton_o16_colorful.jpg)
+
+#### Office2016White
+
+This option helps to set the Office2016White Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016White
+
+ this.sfButton.ThemeName = "Office2016White";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016White 
+
+Me.sfButton.ThemeName = "Office2016White"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](SfButton_images/SfButton_o16_white.jpg)
+
+#### Office2016DarkGray
+
+This option helps to set the Office2016DarkGray Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016DarkGray
+
+ this.sfButton.ThemeName = "Office2016DarkGray";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016DarkGray 
+
+Me.sfButton.ThemeName = "Office2016DarkGray"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](SfButton_images/SfButton_o16_darkGray.jpg)
+
+#### Office2016Black
+
+This option helps to set the Office2016Black Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Black
+
+ this.sfButton.ThemeName = "Office2016Black";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016Black 
+
+Me.sfButton.ThemeName = "Office2016Black"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](SfButton_images/SfButton_o16_black.jpg)

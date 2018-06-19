@@ -331,7 +331,7 @@ Description</th></tr>
 <tr>
 <td>
 ProgressStyle</td><td>
-Determines the foreground drawing style. It includes the options given below.Constant, Gradient, MultipleGradient, Tube, Image and System.</td></tr>
+Determines the foreground drawing style. It includes the options given below.Constant, Gradient, MultipleGradient, Tube, Image, System, Metro, Office2016Colorful, Office2016White, Office2016darkGray and Office2016Black.</td></tr>
 <tr>
 <td>
 ProgressFallBackStyle</td><td>
@@ -422,6 +422,117 @@ Me.progressBarAdv1.ForeColor = System.Drawing.Color.Crimson
 
 ![](Overview_images/Overview_img20.jpeg)
 
+**Metro**
 
+This option helps to set the metro theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Metro;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Metro;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img121.png)
+
+
+**Office2016Colorful**
+
+This option helps to set the Office2016Colorful appearance.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Office2016Colorful;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img117.png)
+
+**Office2016White**
+
+This option helps to set the Office2016White appearance.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Office2016White;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img118.png)
+
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray appearance.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img119.png)
+
+
+**Office2016Black**
+
+This option helps to set the Office2016Black appearance.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Office2016Black;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img120.png)
 
 

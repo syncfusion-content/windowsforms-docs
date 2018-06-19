@@ -61,6 +61,14 @@ Syncfusion.SfInput.WinForms
 Syncfusion.SfInput.WinForms contains various editor controls (such as SfNumericTextBox and SfDateTimeEdit) which are used in SfDataGrid.
 </td>
 </tr>
+<tr>
+<td>
+Syncfusion.SfListView.WinForms
+</td>
+<td>
+Syncfusion.SfListView.WinForms contains various editor controls (such as SfComboBox and SfListView) which are used in SfDataGrid.
+</td>
+</tr>
 </table>
 In order to use export to Excel and export to PDF functionalities of SfDataGrid control, add the reference to following assemblies,
 <table>
@@ -122,6 +130,8 @@ In order to add control manually, do the below steps,
 * 	Syncfusion.SfDataGrid.WinForms
 
 * 	Syncfusion.SfInput.WinForms
+
+* 	Syncfusion.SfListView.WinForms
 
 2)	Create the SfDataGrid control instance and add it to the Form
 
@@ -343,7 +353,7 @@ End Class
 {% endtabs %}
 
 ### Binding to Data
-To bind the SfDataGrid to data, set the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object.
+To bind the SfDataGrid to data, set the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object.
 {% tabs %}
 {% highlight c# %}
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
@@ -360,7 +370,7 @@ Now, run the application, the below output will occur.
 ![](GettingStarted_images/GettingStarted_img2.png)
 
 ## Defining Columns
-By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
+By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
 The following table lists the column types and its constraints for auto column generation.
 <table>
 <tr>
@@ -420,8 +430,8 @@ Property of type Bool.
 </td>
 </tr>
 </table>
-When columns are auto-generated, the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event can be handled to customize or cancel the columns before they are added to the SfDataGrid.
-The automatic column generation can be prevented by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html) property is false, The columns to be displayed should be defined as below,
+When columns are auto-generated, the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event can be handled to customize or cancel the columns before they are added to the SfDataGrid.
+The automatic column generation can be prevented by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html) property is false, The columns to be displayed should be defined as below,
 {% tabs %}
 {% highlight c# %}
 sfDataGrid1.AutoGenerateColumns = false;
@@ -511,7 +521,7 @@ Represents SfDataGrid column that hosts textual content which are not actually b
 </table>
 
 ## Selection
-By default, the entire row is selected when a user clicks a cell in a SfDataGrid. The [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) property can be set to specify whether a user can select single row, or multiple rows. The information about the rows that are selected can be retrieved using [SfDataGrid.SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) and [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html) properties.
+By default, the entire row is selected when a user clicks a cell in a SfDataGrid. The [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) property can be set to specify whether a user can select single row, or multiple rows. The information about the rows that are selected can be retrieved using [SfDataGrid.SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) and [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html) properties.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Extended;
@@ -522,12 +532,12 @@ sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode
 {% endtabs %}
 ![](GettingStarted_images/GettingStarted_img3.png)
 
-The selection operations can be handled with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionChanging_EV.html) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionChanged_EV.html) events of SfDataGrid.
+The selection operations can be handled with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionChanging_EV.html) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionChanged_EV.html) events of SfDataGrid.
 
 ## Sorting, Grouping, and Filtering
 
 ### Sorting
-By default, columns in a SfDataGrid can be sorted by clicking the column header. The sorting can be configured by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnDescriptions.html) property as below,
+By default, columns in a SfDataGrid can be sorted by clicking the column header. The sorting can be configured by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnDescriptions.html) property as below,
 {% tabs %}
 {% highlight c# %}
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
@@ -542,7 +552,7 @@ sfDataGrid1.SortColumnDescriptions.Add(New SortColumnDescription() With {.Column
 {% endtabs %}
 ![](GettingStarted_images/GettingStarted_img4.png)
 
-The sorting can be customized by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanged_EV.html) events. To cancel the default sort, set the Cancel property to true in `SfDataGrid.SortColumnsChanging` event.
+The sorting can be customized by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanged_EV.html) events. To cancel the default sort, set the Cancel property to true in `SfDataGrid.SortColumnsChanging` event.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid1.SortColumnsChanging += sfDataGrid1_SortColumnsChanging;
@@ -565,7 +575,7 @@ End Sub
 {% endtabs %}
 
 ### Grouping
-Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowGroupDropArea.html) property, where group can be dragged by dragging the column header and dropping it in theGroupDropArea over the column headers. The grouping can be configured by setting [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupColumnDescriptions.html) property as below,
+Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowGroupDropArea.html) property, where group can be dragged by dragging the column header and dropping it in theGroupDropArea over the column headers. The grouping can be configured by setting [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupColumnDescriptions.html) property as below,
 {% tabs %}
 {% highlight c# %}
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
@@ -581,7 +591,7 @@ sfDataGrid1.GroupColumnDescriptions.Add(New GroupColumnDescription() With {.Colu
 ![](GettingStarted_images/GettingStarted_img5.png)
 
 ### Filtering
-Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowFiltering.html) property to true, where advanced filter UI can be  opened by clicking the Filter icon in column header and filter the SfDataGrid. The filtering operations ca be customized by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanged_EV.html) events.
+Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowFiltering.html) property to true, where advanced filter UI can be  opened by clicking the Filter icon in column header and filter the SfDataGrid. The filtering operations ca be customized by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanged_EV.html) events.
 {% tabs %}
 {% highlight c# %}
 OrderInfoCollection orderInfoCollection = new OrderInfoCollection();
@@ -597,6 +607,6 @@ sfDataGrid1.AllowFiltering = True
 ![](GettingStarted_images/GettingStarted_img6.png)
 
 ## Editing
-Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowEditing.html) property to true. Set [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDeleting.html) property to specify whether user can delete rows by pressing <kbd>Delete</kbd> key.
-Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowPosition.html) property to enable additional row either Top or Bottom of SfDataGrid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html).
-The editing operations can be customized by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) events.
+Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowEditing.html) property to true. Set [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDeleting.html) property to specify whether user can delete rows by pressing <kbd>Delete</kbd> key.
+Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowPosition.html) property to enable additional row either Top or Bottom of SfDataGrid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html).
+The editing operations can be customized by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) events.

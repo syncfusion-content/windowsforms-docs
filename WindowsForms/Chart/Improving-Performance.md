@@ -19,42 +19,42 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ChartControl.ImprovePerformance](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ImprovePerformance.html)'| markdownify }}
+{{'[ChartControl.ImprovePerformance](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ImprovePerformance.html)'| markdownify }}
 
 </td>
 <td>
 Instructs the chart to calculate the axes ranges only before painting and not at every series adding or moving. Performance of a Chart with large number of series will be improved significantly, if this property is enabled. By default this property is false.</td></tr>
 <tr>
 <td>
-{{'[CalcRegions](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~CalcRegions.html)'| markdownify }}</td><td>
+{{'[CalcRegions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~CalcRegions.html)'| markdownify }}</td><td>
 This property controls the Tooltips, AutoHighlighting properties and RegionHit events. If these properties and events are not used, this property can be set to false for better performance. Default value of this property is true.</td></tr>
 <tr>
 <td>
-{{'[ChartSeries.EnableStyles](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~EnableStyles.html)'| markdownify }}
+{{'[ChartSeries.EnableStyles](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~EnableStyles.html)'| markdownify }}
 </td><td>
 Disabling this property will disable the point symbols and point text which speeds up the chart.</td></tr>
 <tr>
 <td>
-{{'[ChartSeries.Style.DisplayShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStyleInfo~DisplayShadow.html)'| markdownify }}</td><td>
+{{'[ChartSeries.Style.DisplayShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStyleInfo~DisplayShadow.html)'| markdownify }}</td><td>
 Setting this property to false will not render the series with shadow, which will increase the speed of the chart. By default this property is set to false.</td></tr>
 <tr>
 <td>
-{{'[Indexed](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Indexed.html)'| markdownify }}
+{{'[Indexed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Indexed.html)'| markdownify }}
 </td><td>
 The chart renders faster if the series is not indexed. This of course, may or may not be possible in all cases. By default this property is false.</td></tr>
 <tr>
 <td>
-{{'[BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BackInterior.html)'| markdownify }}
+{{'[BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BackInterior.html)'| markdownify }}
 </td><td>
 The background style for the Chart control is specified using this property and if this property is not set with gradient or pattern style, will help improve the performance of the chart.</td></tr>
 <tr>
 <td>
-{{'[ChartArea.BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BackInterior.html)'| markdownify }}
+{{'[ChartArea.BackInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartArea~BackInterior.html)'| markdownify }}
 </td><td>
 This property sets the back color for the chart area. If not set with gradient or pattern style, will help improve the performance of the chart.</td></tr>
 <tr>
 <td>
-{{'[ChartInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInterior.html)'| markdownify }}
+{{'[ChartInterior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ChartInterior.html)'| markdownify }}
 </td><td>
 This property fills the chart interior. If this property is not set with gradient or pattern style, will improve the performance of the chart.</td></tr>
 </tr>
@@ -68,7 +68,7 @@ This property fills the chart interior. If this property is not set with gradien
 BeginUpdate and EndUpdate
 </td>
 <td>
-Encapsulate your "data points adding code" within {{'[BeginUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BeginUpdate.html)'| markdownify }} and {{'[EndUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EndUpdate.html)'| markdownify }} to improve Chart initialization speed. 
+Encapsulate your "data points adding code" within {{'[BeginUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~BeginUpdate.html)'| markdownify }} and {{'[EndUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EndUpdate.html)'| markdownify }} to improve Chart initialization speed. 
 </td>
 </tr>
 </table>

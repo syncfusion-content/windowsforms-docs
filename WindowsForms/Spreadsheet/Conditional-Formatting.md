@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains about how to apply conditional formatting rules programmatically at run time in Spreadsheet.
 
-In Spreadsheet, to apply conditional format for a cell or range of cells, add [IConditionalFormat](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IConditionalFormat.html) to that range by using [AddCondition](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IConditionalFormats~AddCondition.html) method.
+In Spreadsheet, to apply conditional format for a cell or range of cells, add [IConditionalFormat](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IConditionalFormat.html) to that range by using [AddCondition](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IConditionalFormats~AddCondition.html) method.
 
 {% tabs %}
 {% highlight c# %}
