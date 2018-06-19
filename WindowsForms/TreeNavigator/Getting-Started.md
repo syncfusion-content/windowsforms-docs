@@ -27,11 +27,11 @@ Required assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.Tools.Windows]<br/><br/></td><td>
+Syncfusion.Tools.Windows<br/><br/></td><td>
 Syncfusion.Tools.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of TreeNavigator Control.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Shared.Base]<br/><br/></td><td>
+Syncfusion.Shared.Base<br/><br/></td><td>
 Syncfusion.Shared.Base contains style related properties and various other controls which are used in TreeNavigator Control.<br/><br/></td></tr>
 </table>
 
@@ -62,8 +62,8 @@ TreeNavigator can be added through code-behind by following the below steps.
 1.	Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools which are needed for the Control.
 
 {% tabs %}
-
 {% highlight c# %}
+
 		//Namespaces.
 
 		using Syncfusion.Windows.Forms.Tools;
@@ -81,18 +81,16 @@ TreeNavigator can be added through code-behind by following the below steps.
 		Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
-
 {% endtabs %}
 
 2.	To add TreeNavigator Control to a Windows Forms Application through code, Create an instance of the TreeNavigator control and add it to the Form.
 
 {% tabs %}
-
 {% highlight c# %}
+
 		//Creates the TreeNavigator instance.
 
 		TreeNavigator treeNavigator = new TreeNavigator();
-
 
 		this.Controls.Add(treeNavigator);
 
@@ -100,16 +98,13 @@ TreeNavigator can be added through code-behind by following the below steps.
 
 {% highlight vb %}
 
-
 		‘Creates the TreeNavigator instance.
 
 		Dim treeNavigator As TreeNavigator = New TreeNavigator()
 
-
 		Me.Controls.Add(treeNavigator)
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Adding TreeMenuItem to the control
@@ -122,7 +117,6 @@ The following code example allows you to add TreeMenuItem to the TreeNavigator.
 
 
 {% tabs %}
-
 {% highlight c# %}
 
 //Adds items to the TreeNavigator.
@@ -156,7 +150,6 @@ treemenuitem3.Text = "Downloads"
 
 
 {% endhighlight %}
-
 {% endtabs %}
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header-Customization | WindowsForms | Syncfusion
-description: header customization
+title: Appearance | WindowsForms | Syncfusion
+description: Appearance
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
