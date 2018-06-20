@@ -22,7 +22,7 @@ Function</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[SaveAsXML](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveAsXML.html)' | markdownify }}</td><td>
+{{ '[SaveAsXML](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveAsXML.html)' | markdownify }}</td><td>
 Export the EditControl content into XML format and save it in any desired XML file.</td></tr>
 </table>
 
@@ -56,7 +56,7 @@ Function</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[GetTextAsXML](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetTextAsXML.html)' | markdownify }}</td><td>
+{{ '[GetTextAsXML](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetTextAsXML.html)' | markdownify }}</td><td>
 Gets the source code to generate XML document for the text in the EditControl.</td></tr>
 </table>
 
@@ -100,7 +100,7 @@ Function</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[SaveAsHTML](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveAsHTML.html)' | markdownify }}</td><td>
+{{ '[SaveAsHTML](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveAsHTML.html)' | markdownify }}</td><td>
 Export the EditControl content into HTML format and save it in any desired HTML file.</td></tr>
 </table>
 
@@ -134,7 +134,7 @@ Function</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[GetTextAsHTML](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetTextAsHTML.html)' | markdownify }}</td><td>
+{{ '[GetTextAsHTML](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetTextAsHTML.html)' | markdownify }}</td><td>
 Gets the source code to generate HTML document for the text in the EditControl.</td></tr>
 </table>
 
@@ -178,7 +178,7 @@ Function</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[SaveAsRTF](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveAsRTF.html)' | markdownify }}</td><td>
+{{ '[SaveAsRTF](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SaveAsRTF.html)' | markdownify }}</td><td>
 Export the EditControl content into RTF format and save it in any desired RTF file.</td></tr>
 </table>
 
@@ -212,7 +212,7 @@ Function</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[GetTextAsRTF](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetTextAsRTF.html)' | markdownify }}</td><td>
+{{ '[GetTextAsRTF](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetTextAsRTF.html)' | markdownify }}</td><td>
 Gets the source code to generate RTF document for the text in the EditControl.</td></tr>
 </table>
 
@@ -250,7 +250,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 ## Bitmap generation
 
-Support to save the EditControl as image by using the [CreateBitmap](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CreateBitmap.html) function.
+Support to save the EditControl as image by using the [CreateBitmap](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CreateBitmap.html) function.
 
 {% tabs %}
 

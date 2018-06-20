@@ -16,11 +16,11 @@ GridGroupingControl offers different layouts to organize the display of data. Th
 4. [Freezing Column](#freezing-columns)
 
 ## Stacked Headers
-GridGroupingControl offers in-built support for Stacked Multi-Headers. This feature allows user to create additional unbound header rows called [StackedHeaderRows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~StackedHeaderRows.html) that span across visible grid columns. User can group some columns under each header row. It also supports Drag/Drop of these header rows. Grouped columns will also  be rearranged along with the header.
+GridGroupingControl offers in-built support for Stacked Multi-Headers. This feature allows user to create additional unbound header rows called [StackedHeaderRows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~StackedHeaderRows.html) that span across visible grid columns. User can group some columns under each header row. It also supports Drag/Drop of these header rows. Grouped columns will also  be rearranged along with the header.
 
-Stacked Header rows for a given grid are gathered under [TableDescriptor.StackedHeaderRows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~StackedHeaderRows.html) collection. This contains property definitions that control the behavior and appearance of stacked headers.
+Stacked Header rows for a given grid are gathered under [TableDescriptor.StackedHeaderRows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~StackedHeaderRows.html) collection. This contains property definitions that control the behavior and appearance of stacked headers.
 
-Every header in a Stacked Header Row is defined by [GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html). All the headers for a given stacked header row is managed by `GridStackedHeaderRowDescriptor`. [GridStackedHeaderRowDescriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection.html), which is returned by `TableDescriptor.StackedHeaderRows` property manages the collection of `GridStackedHeaderRowDescriptor` for a given table.
+Every header in a Stacked Header Row is defined by [GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html). All the headers for a given stacked header row is managed by `GridStackedHeaderRowDescriptor`. [GridStackedHeaderRowDescriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection.html), which is returned by `TableDescriptor.StackedHeaderRows` property manages the collection of `GridStackedHeaderRowDescriptor` for a given table.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
    
    ![](Grid-Layout_images/Grid-Layout_img1.png)
 
-2. Enable the [ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property to display the stacked headers for the table and groups.
+2. Enable the [ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property to display the stacked headers for the table and groups.
    
    ![](Grid-Layout_images/Grid-Layout_img2.png)
 
@@ -83,16 +83,16 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
    
    ![](Grid-Layout_images/Grid-Layout_img4.png)
 
- N> The stacked headers will be generated if the added columns in the stacked headers are presented in the [Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Columns.html) collection. So the stacked headers are depending upon the `Column` collection. Before adding stacked headers, make sure that those columns are available in `Columns` collection or underlying datasource of the grid.
+ N> The stacked headers will be generated if the added columns in the stacked headers are presented in the [Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Columns.html) collection. So the stacked headers are depending upon the `Column` collection. Before adding stacked headers, make sure that those columns are available in `Columns` collection or underlying datasource of the grid.
  
 ### Adding Stacked Headers through Code
 The stacked headers can be added through code by using the below method,
 
-1. Need to create an object of[GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html) for adding the stacked column header.
+1. Need to create an object of[GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html) for adding the stacked column header.
 2. Add the visible columns that needs to be under the `GridStackedHeaderDescriptor` object.
-3. Add the `GridStackedHeaderDescriptor` collection to the[GridStackedHeaderRowDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptor.html) collection.
+3. Add the `GridStackedHeaderDescriptor` collection to the[GridStackedHeaderRowDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptor.html) collection.
 4. Add the `GridStackedHeaderRowDescriptor` collection to the `StackedHeaderRows` collection of the grid.
-5. Finally, display the stacked headers in grid by using the[TopLevelGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property.
+5. Finally, display the stacked headers in grid by using the[TopLevelGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -158,7 +158,7 @@ Me.gridGroupingControl1.TopLevelGroupOptions.ShowStackedHeaders = True
 ![](Grid-Layout_images/Grid-Layout_img5.png)
 
 ### Stacked Headers in Nested Table
-Users can also display the stacked headers for the child groups as well as the nested child groups. For enabling the stacked headers in child and nested child table, you have to use the [ChildGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) and [NestedTableGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) properties respectively. 
+Users can also display the stacked headers for the child groups as well as the nested child groups. For enabling the stacked headers in child and nested child table, you have to use the [ChildGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) and [NestedTableGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) properties respectively. 
 
 {% tabs %}
 {% highlight c# %}
@@ -380,7 +380,7 @@ N> For more information, refer the dashboard sample which is located in this pat
 ![](Grid-Layout_images/Grid-Layout_img14.png)
 
 #### Displaying only Stacked Header Columns 
-By default, `FieldChooser Dialog` will be loaded with the inner columns along with the stacked headers. To display only the stacked headers make us of the [EnableColumnsInView](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.FieldChooser~EnableColumnsInView.html) property.
+By default, `FieldChooser Dialog` will be loaded with the inner columns along with the stacked headers. To display only the stacked headers make us of the [EnableColumnsInView](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.FieldChooser~EnableColumnsInView.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -397,7 +397,7 @@ fieldChooser.EnableColumnsInView = False
 ![](Grid-Layout_images/Grid-Layout_img15.png)
 
 ### Hiding Stacked Headers
-The display of stacked headers can be hidden by setting the [ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property to `false`. This can be achieved for parent table, child table and nested child table by using the properties [TopLevelGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html), [ChildGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) and [NestedTableGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) respectively.
+The display of stacked headers can be hidden by setting the [ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) property to `false`. This can be achieved for parent table, child table and nested child table by using the properties [TopLevelGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html), [ChildGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) and [NestedTableGroupOptions.ShowStackedHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowStackedHeaders.html) respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -423,7 +423,7 @@ Me.gridGroupingControl1.NestedTableGroupOptions.ShowStackedHeaders = False
 {% endtabs %}
 
 ### Clearing Stacked Headers
-All the stacked headers can be removed by using the [StackedHeaders.Clear](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection~Clear.html) method.
+All the stacked headers can be removed by using the [StackedHeaders.Clear](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection~Clear.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -437,7 +437,7 @@ Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Clear()
 {% endtabs %}
 
 ### Removing Stacked Headers
-In multiple stacked headers, there will be more than one stacked row headers. So for removing a particular stacked row header, make use of the [StackedHeaders.Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection~Remove.html) and [StackedHeaders.RemoveAt](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection~RemoveAt.html) methods. These methods will remove the mentioned stacked row header by its name or index.
+In multiple stacked headers, there will be more than one stacked row headers. So for removing a particular stacked row header, make use of the [StackedHeaders.Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection~Remove.html) and [StackedHeaders.RemoveAt](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection~RemoveAt.html) methods. These methods will remove the mentioned stacked row header by its name or index.
 {% tabs %}
 {% highlight c# %}
 // Removes the stacked header with name "Row1"
@@ -456,19 +456,19 @@ Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.RemoveAt(0)
 {% endtabs %}
 
 ## Multi-Row Record
-GridGroupingControl offers built-in support for Multi-Row Records. Using this support user can modify the default alignment of visible columns. It allows the records to span across multiple rows and columns. This can be achieved by using [TableDescriptor.ColumnSets](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ColumnSets.html). 
+GridGroupingControl offers built-in support for Multi-Row Records. Using this support user can modify the default alignment of visible columns. It allows the records to span across multiple rows and columns. This can be achieved by using [TableDescriptor.ColumnSets](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ColumnSets.html). 
 
-`ColumnSets` act as superset of [TableDescriptor.Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowGroupByColumnEventArgs~Column.html) collection. Once `ColumnSets` are defined, the grid will loop through the collection and organize data display accordingly.
+`ColumnSets` act as superset of [TableDescriptor.Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowGroupByColumnEventArgs~Column.html) collection. Once `ColumnSets` are defined, the grid will loop through the collection and organize data display accordingly.
 
 ### Adding Column Spans through Designer
-To create `ColumnSets` that defines [ColumnSpans](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor~ColumnSpans.html) for a grid, select `TableDescriptor.ColumnSets` property in the property window. This will open [GridColumnSetDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) collection editor that will let you specify the columns to span and the range for each of the columns.
+To create `ColumnSets` that defines [ColumnSpans](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor~ColumnSpans.html) for a grid, select `TableDescriptor.ColumnSets` property in the property window. This will open [GridColumnSetDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) collection editor that will let you specify the columns to span and the range for each of the columns.
 
 ![](Grid-Layout_images/Grid-Layout_img16.png)
 
 ### Adding Column Spans through Code
 The below steps needs to be followed for spanning the records across multiple rows.
 
-1.Define [GridColumnSpanDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSpanDescriptor.html) for each column to be spanned across grid rows or columns. Specify the range that the column spans. Rows and Columns are zero-based.
+1.Define [GridColumnSpanDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSpanDescriptor.html) for each column to be spanned across grid rows or columns. Specify the range that the column spans. Rows and Columns are zero-based.
 
 {% tabs %}
 {% highlight c# %}
@@ -499,7 +499,7 @@ columnSpanDescriptor3.Range = GridRangeInfo.Cells(1, 2, 1, 2)
 {% endhighlight %}
 {% endtabs %}
 
-2.Create a [GridColumnSetDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) whose [ColumnSpans](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor~ColumnSpans.html) property stores information about columns that needs to be spanned. Hence, it is necessary to initialize `ColumnSpans` property with columns that needs to be spread.
+2.Create a [GridColumnSetDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) whose [ColumnSpans](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor~ColumnSpans.html) property stores information about columns that needs to be spanned. Hence, it is necessary to initialize `ColumnSpans` property with columns that needs to be spread.
 
 {% tabs %}
 {% highlight c# %}
@@ -547,7 +547,7 @@ N> For more information regarding the Multi-Row record, refer our dashboard samp
 
 
 ### Clearing ColumnSpans
-The column spans can be removed from the GridGroupingControl by using the [ColumnSets.Reset](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptorCollection~Reset.html) method. This method will clear all the collection of column sets available.
+The column spans can be removed from the GridGroupingControl by using the [ColumnSets.Reset](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptorCollection~Reset.html) method. This method will clear all the collection of column sets available.
 
 {% tabs %}
 {% highlight c# %}
@@ -561,7 +561,7 @@ Me.gridGroupingControl1.TableDescriptor.ColumnSets.Reset()
 {% endtabs %}
 
 ### Removing ColumnSpans
-Particular ColumnSpans can be removed from the GridGroupingControl by using the [ColumnSets.Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptorCollection~Remove.html) and [ColumnSets.RemoveAt](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptorCollection~RemoveAt.html) method. These methods will remove the mentioned column name or index of column sets.
+Particular ColumnSpans can be removed from the GridGroupingControl by using the [ColumnSets.Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptorCollection~Remove.html) and [ColumnSets.RemoveAt](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptorCollection~RemoveAt.html) method. These methods will remove the mentioned column name or index of column sets.
 
 {% tabs %}
 {% highlight c# %}
@@ -575,7 +575,7 @@ Me.gridGroupingControl1.TableDescriptor.ColumnSets.RemoveAt(1)
 {% endtabs %}
 
 ## Field Chooser
-User can handle the visibility of columns through `FieldChooser dialog`. It can be done by initializing [FieldChooser](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.FieldChooser_members.html) class where the constructor takes a parameter as a GridGroupingControl object. The [GridHelperClasses.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses_namespace.html) assembly provide this support.
+User can handle the visibility of columns through `FieldChooser dialog`. It can be done by initializing [FieldChooser](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.FieldChooser_members.html) class where the constructor takes a parameter as a GridGroupingControl object. The [GridHelperClasses.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses_namespace.html) assembly provide this support.
 
 On enabling the FieldChooser, a dialog box will be opened when right clicked on column headers. This dialog box will list all the column names with check boxes beside them. The required columns can be made visible in the grid by selecting the check box adjacent to the required column.
 
@@ -593,7 +593,7 @@ Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 ![](Grid-Layout_images/Grid-Layout_img19.png)
 
 ### Changing caption text for FieldChooser dialog
-FieldChooser events are used to customize FieldChooser dialog box. For changing the caption text of the `FieldChooser dialog box`, make use of the [FieldChooserShowing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html) event. In this event, you can make use of the[e.Caption](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.FieldChooserShowingEventArgs~Caption.html) property to change the text.
+FieldChooser events are used to customize FieldChooser dialog box. For changing the caption text of the `FieldChooser dialog box`, make use of the [FieldChooserShowing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html) event. In this event, you can make use of the[e.Caption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.FieldChooserShowingEventArgs~Caption.html) property to change the text.
 
 {% tabs %}
 {% highlight c# %}
@@ -620,10 +620,10 @@ End Sub
 {% endtabs %}
 ![](Grid-Layout_images/Grid-Layout_img20.png)
 
-FieldChooser events are used to customize FieldChooser dialog box. It allows the user to modify control of the FieldChooser dialog and change its caption name. It has events to perform operations in FieldChooser dialog box such as [FieldChooserShowing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html), [FieldChooserShown](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShown_EV.html), [FieldChooserClosing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserClosing_EV.html) and [FieldChooserClosed](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserClosed_EV.html) events.
+FieldChooser events are used to customize FieldChooser dialog box. It allows the user to modify control of the FieldChooser dialog and change its caption name. It has events to perform operations in FieldChooser dialog box such as [FieldChooserShowing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html), [FieldChooserShown](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShown_EV.html), [FieldChooserClosing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserClosing_EV.html) and [FieldChooserClosed](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserClosed_EV.html) events.
 
 ### Updating Layout on Closing
-By default, the GridGroupingControl will update the changes in the visibility of the columns while check/ unchecking the checkbox in the **FieldChooser dialog box**. To update the visibility or invisibility of columns after closing the FieldChooser Dialog box, set the [DeferLayoutUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridDataBoundFieldChooser~DeferLayoutUpdate.html) property to ‘True’.
+By default, the GridGroupingControl will update the changes in the visibility of the columns while check/ unchecking the checkbox in the **FieldChooser dialog box**. To update the visibility or invisibility of columns after closing the FieldChooser Dialog box, set the [DeferLayoutUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridDataBoundFieldChooser~DeferLayoutUpdate.html) property to ‘True’.
 
 {% tabs %}
 {% highlight c# %}
@@ -643,7 +643,7 @@ fieldChooser.DeferLayoutUpdate = True
 {% endtabs %}
 
 ### Restricting the display of FieldChooser Dialog 
-The user can restrict the FieldChooser dialog box before displaying it by using the FieldChooserShowing event. In this event, set the [e.Cancel](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html) property as `true`.
+The user can restrict the FieldChooser dialog box before displaying it by using the FieldChooserShowing event. In this event, set the [e.Cancel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -669,7 +669,7 @@ End Sub
 {% endtabs %}
 
 ### Restricting the closing of FieldChooser Dialog
-Users can restrict the closing of FieldChooser dialog by using the FieldChooserClosing event. Check the required condition and set the [e.Cancel](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html) property as `true` to restrict the closing of the FieldChooser dialog.
+Users can restrict the closing of FieldChooser dialog by using the FieldChooserClosing event. Check the required condition and set the [e.Cancel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FieldChooserShowing_EV.html) property as `true` to restrict the closing of the FieldChooser dialog.
 
 {% tabs %}
 {% highlight c# %}
@@ -706,10 +706,10 @@ End Sub
 N> FieldChooser support can also be added in [StackedHeaders](#stacked-headers). 
 
 ### Remove Hidden Columns from FieldChooser Dialog
-To remove the hidden columns from the FieldChooser dialog, it is necessary to bypass the original column collection in the FieldChooser with a cloned [GridColumnDescriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptorCollection.html). The following steps illustrates how to do this:
+To remove the hidden columns from the FieldChooser dialog, it is necessary to bypass the original column collection in the FieldChooser with a cloned [GridColumnDescriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptorCollection.html). The following steps illustrates how to do this:
 
 1. Get the collection of the visible columns that are removed from the column collection.
-2. Create a cloned column collection `GridColumnDescriptorCollection` from the[TableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~TableDescriptor.html).
+2. Create a cloned column collection `GridColumnDescriptorCollection` from the[TableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~TableDescriptor.html).
 
 Pass the cloned collection object as an argument to the FieldChooser to ensure that changes are made correctly. 
 
@@ -745,7 +745,7 @@ Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1, collection)
 {% endtabs %}
 
 ### UnWiring FieldChooser
-To unwire FieldChooser from the GridGroupingControl, make use of the [UnWireGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.FieldChooser~UnWireGrid.html) method. This method will disable the FieldChooser.
+To unwire FieldChooser from the GridGroupingControl, make use of the [UnWireGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.FieldChooser~UnWireGrid.html) method. This method will disable the FieldChooser.
 
 {% tabs %}
 {% highlight c# %}
@@ -765,7 +765,7 @@ fieldChooser.UnWireGrid()
 {% endtabs %}
 
 ## Freezing Columns
-It is possible to freeze columns like in Excel by using the [TableDescriptor.FrozenColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~FrozenColumn.html). This property will prevent the mentioned column from scrolling.
+It is possible to freeze columns like in Excel by using the [TableDescriptor.FrozenColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~FrozenColumn.html). This property will prevent the mentioned column from scrolling.
 
 {% tabs %}
 {% highlight c# %}
@@ -781,9 +781,9 @@ gridGroupingControl1.TableDescriptor.FrozenColumn = "ParentName"
 ![](Grid-Layout_images/Grid-Layout_img22.png)
 
 ### Freezing Columns in Nested Table
-It is also possible to freeze columns of nested table in a GridGroupingControl by using the [TableDescriptor.FrozenColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~FrozenColumn.html). First you have to get the `TableDescriptor` of the required child table and then have to access the `FrozenColumn` property.
+It is also possible to freeze columns of nested table in a GridGroupingControl by using the [TableDescriptor.FrozenColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~FrozenColumn.html). First you have to get the `TableDescriptor` of the required child table and then have to access the `FrozenColumn` property.
 
-N> In a nested grid with frozen columns, to make sure that columns in nested records are properly aligned, [TrackWidthOfParentColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~TrackWidthOfParentColumn.html) property can be used.
+N> In a nested grid with frozen columns, to make sure that columns in nested records are properly aligned, [TrackWidthOfParentColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~TrackWidthOfParentColumn.html) property can be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -807,7 +807,7 @@ Me.gridGroupingControl1.GetTableDescriptor("MyGrandChildTable").FrozenColumn = "
 N> For more information on Freezing columns, refer the dashboard sample located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Frozen Column Demo\
 
 ### Freezing Specified Columns
-It is possible to freeze specified columns in GridGroupingControl by using the [Cols.FreezeRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FreezeRange.html) method. Set the column range in this method by mentioning the index values.
+It is possible to freeze specified columns in GridGroupingControl by using the [Cols.FreezeRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FreezeRange.html) method. Set the column range in this method by mentioning the index values.
 {% tabs %}
 {% highlight c# %}
 // Freezes the columns of range from one to three.
@@ -820,7 +820,7 @@ Me.gridGroupingControl1.TableModel.Cols.FreezeRange(1, 3)
 {% endtabs %}
 
 ### Freezing the Caption Row
-GridGroupingControl provides support to freeze caption row to make sure it stays visible while scrolling content to the left or right. With [FreezeCaption](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FreezeCaption.html) property, you can freeze or unfreeze the caption row in the Grid Grouping control.
+GridGroupingControl provides support to freeze caption row to make sure it stays visible while scrolling content to the left or right. With [FreezeCaption](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~FreezeCaption.html) property, you can freeze or unfreeze the caption row in the Grid Grouping control.
 
 {% tabs %}
 {% highlight c# %}
@@ -838,7 +838,7 @@ N> To view a sample on Freezing the Caption Row, refer the dashboard sample whic
 ![](Grid-Layout_images/Grid-Layout_img24.png)
 
 ### Enabling ScrollBar when the Freeze Columns exceeds the Client Area
-In GridGroupingControl, if freeze columns exceed client area then the horizontal scroll bar will become invisible. To overcome this some of the customizations has to be done. You have to make use of the [ResizeEnd](https://msdn.microsoft.com/en-us/library/system.windows.forms.form.resizeend(v=vs.110).aspx) and [HScrollPixelPosChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollPixelPosChanging_EV.html) events and need to check certain conditions in it.
+In GridGroupingControl, if freeze columns exceed client area then the horizontal scroll bar will become invisible. To overcome this some of the customizations has to be done. You have to make use of the [ResizeEnd](https://msdn.microsoft.com/en-us/library/system.windows.forms.form.resizeend(v=vs.110).aspx) and [HScrollPixelPosChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollPixelPosChanging_EV.html) events and need to check certain conditions in it.
 
 {% tabs %}
 {% highlight c# %}

@@ -13,11 +13,11 @@ A legend is a key used on a map that contains swatches of symbols with descripti
 
 ## Visibility 
 
-Legends are visible only by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~ShowLegend.html) property to true in the ShapeFileLayer.
+Legends are visible only by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~ShowLegend.html) property to true in the ShapeFileLayer.
 
 ## Legend position
 
-Map legends can be positioned by setting the `LegendPosition` property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x and y axes with the help of the [`PositionX`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionX.html) and [`PositionY`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionY.html) properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set to “Default”.
+Map legends can be positioned by setting the `LegendPosition` property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x and y axes with the help of the [`PositionX`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionX.html) and [`PositionY`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.LegendSettings~PositionY.html) properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set to “Default”.
 
 <table>
 <tr>

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Editing
-SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowEditing.html) property.
+SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -21,7 +21,7 @@ Me.sfDataGrid.AllowEditing = True
 {% endhighlight %}
 {% endtabs %}
 
-The editing can be enabled only for the particular columns by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowEditing.html) property to `true`. 
+The editing can be enabled only for the particular columns by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowEditing.html) property to `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -38,7 +38,7 @@ Me.sfDataGrid.Columns(0).AllowEditing = True
 ![](Editing_images/Editing_Image1.png)
 
 ### Entering into Edit Mode
-The current cell can be enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. The edit mode of the cell can be changed to the single click or double click by setting the [EditMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~EditMode.html) property.
+The current cell can be enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. The edit mode of the cell can be changed to the single click or double click by setting the [EditMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~EditMode.html) property.
 
 {%tabs%}
 {% highlight c# %}
@@ -52,8 +52,8 @@ Me.sfDataGrid.EditMode = EditMode.DoubleClick
 {%endtabs%}
 
 ### Cursor Placement
-When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~EditorSelectionBehavior.html) property.
-The following types of [EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.html) is available,
+When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~EditorSelectionBehavior.html) property.
+The following types of [EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.html) is available,
 
 * `Default` – Moves the cursor to the clicked position on the text.
 * `SelectAll`– selects the text of edit element loaded inside cell.
@@ -75,7 +75,7 @@ Me.sfDataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll
 ## Customization Using Events
 
 ### Cancel the Editing of the Current Cell
-The current cell editing can be canceled by using the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event. This event will be raised when the current cell enters to the edit mode.
+The current cell editing can be canceled by using the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event. This event will be raised when the current cell enters to the edit mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -101,7 +101,7 @@ End Sub
 {% endtabs %}
 
 ### Display Message Box on Current Cell Editing Complete
-The editing completion of the current cell can be notified by using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) event.
+The editing completion of the current cell can be notified by using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -124,10 +124,10 @@ End Sub
 ![](Editing_images/Editing_Image3.png)
 
 ## Programmatic Editing 
-The editing can be handled programmatically by using the [CurrentCellManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager.html) which has the helper methods for handling the editing.
+The editing can be handled programmatically by using the [CurrentCellManager](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager.html) which has the helper methods for handling the editing.
 
 ### Begin Editing 
-The editing of the cell can be achieved by using the [CurrentCellManager.BeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager~BeginEdit.html) method. Initially the `CurrentCell` need to set before calling the `BeginEdit` method
+The editing of the cell can be achieved by using the [CurrentCellManager.BeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager~BeginEdit.html) method. Initially the `CurrentCell` need to set before calling the `BeginEdit` method
 
 {% tabs %}
 {% highlight c# %}
@@ -148,7 +148,7 @@ End Sub
 {% endtabs %}
 
 ### End Editing
-The editing can be end programmatically by using the [EndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager~EndEdit.html) method.
+The editing can be end programmatically by using the [EndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager~EndEdit.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -162,7 +162,7 @@ Me.sfDataGrid.CurrentCell.EndEdit()
 {% endtabs %}
 
 ### Cancel Editing
-The editing can be canceled by calling the [CancelEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager~CancelEdit.html) method. This will end the editing of the current cell by replacing the old value before entering to the edit mode.
+The editing can be canceled by calling the [CancelEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager~CancelEdit.html) method. This will end the editing of the current cell by replacing the old value before entering to the edit mode.
 
 {% tabs %}
 {% highlight c# %}

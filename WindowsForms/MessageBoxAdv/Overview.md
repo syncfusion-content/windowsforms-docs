@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The [MessageBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv_members.html) is an advanced MessageBox control that can be used to display a message to the end-user. It provides icons, buttons support and complete customization option for the control.
+The [MessageBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv_members.html) is an advanced MessageBox control that can be used to display a message to the end-user. It provides icons, buttons support and complete customization option for the control.
 
 ![](MessageBoxAdv_images/MessageBoxAdv_img32.png)
 

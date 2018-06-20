@@ -11,7 +11,7 @@ documentation: ug
 GridGroupingControl comes with an in-built navigation control that allows the user to browse through the records with ease. The navigation bar consists of buttons that facilitate navigation to first, next, previous, last records and also to add new records in the grid. It also contains a label that displays the current record number together with the total record count.
 
 ### Adding Navigation Bar Through Code
-Navigation Bar can added through code by setting the [ShowNavigationBar](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowNavigationBar.html) property to `true`. Tooltips can be enabled for the navigation bar by setting the property, [ShowNavigationBarToolTips](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowNavigationBarToolTips.html) to `true`. 
+Navigation Bar can added through code by setting the [ShowNavigationBar](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowNavigationBar.html) property to `true`. Tooltips can be enabled for the navigation bar by setting the property, [ShowNavigationBarToolTips](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowNavigationBarToolTips.html) to `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ Me.gridGroupingControl1.ShowNavigationBarToolTips = True
 {% endtabs %}
 
 ### Adding Navigation Bar Through Designer
-In the property window, make use of the [ShowNavigationBar](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowNavigationBar.html) property to enable the Navigation Bar in design mode.
+In the property window, make use of the [ShowNavigationBar](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowNavigationBar.html) property to enable the Navigation Bar in design mode.
 
 ![](Navigation-Bar_images/Navigation-Bar_img1.png)
 
@@ -39,7 +39,7 @@ The Grid with the Navigation bar will be look like the following screenshot,
 
 ![](Navigation-Bar_images/Navigation-Bar_img2.png)
 
-The user can set the current record of NavigationBar programmatically by using the [SetCurrentRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationBar~SetCurrentRecord.html) method.
+The user can set the current record of NavigationBar programmatically by using the [SetCurrentRecord](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationBar~SetCurrentRecord.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,7 +88,7 @@ Me.gridGroupingControl1.RecordNavigationBar.DisplayArrowButtons = DisplayArrowBu
 
 ![](Navigation-Bar_images/Navigation-Bar_img4.png)
 
-User can change the arrow type of the navigation bar while clicking the arrow buttons. It can be achieved by using the [ArrowButtonClicked](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ArrowButtonClicked_EV.html) event.
+User can change the arrow type of the navigation bar while clicking the arrow buttons. It can be achieved by using the [ArrowButtonClicked](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~ArrowButtonClicked_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -129,7 +129,7 @@ Me.gridGroupingControl1.RecordNavigationBar.RightToLeft = System.Windows.Forms.R
 ![](Navigation-Bar_images/Navigation-Bar_img5.png)
 
 ### Changing the Text of the Navigation
-By default, GridGroupingControl navigation bar will display the `Record` at the prefix of the navigation bar text. This can be changed by setting the [Label](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~Label.html) property as of follows,
+By default, GridGroupingControl navigation bar will display the `Record` at the prefix of the navigation bar text. This can be changed by setting the [Label](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~Label.html) property as of follows,
 
 {% tabs %}
 {% highlight c# %}
@@ -145,7 +145,7 @@ this.gridGroupingControl1.RecordNavigationBar.Label = "Row";
 ![](Navigation-Bar_images/Navigation-Bar_img6.png)
 
 ### Setting the Width of the Navigation Bar
-The width of the navigation bar can be changed by using the [RecordNavigationControl.NavigationBarWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarWidth.html) property.
+The width of the navigation bar can be changed by using the [RecordNavigationControl.NavigationBarWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarWidth.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -161,7 +161,7 @@ Me.recordNavigationControl.NavigationBarWidth = 400
 ![](Navigation-Bar_images/Navigation-Bar_img7.png)
 
 ### Changing the back color for the Navigation Bar
-To set back color for the record navigation bar, use the [NavigationBarBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarBackColor.html) property as of follows.
+To set back color for the record navigation bar, use the [NavigationBarBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationBarBackColor.html) property as of follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,7 +183,7 @@ Me.gridGroupingControl1.RecordNavigationControl.ForeColor = Color.White
 ![](Navigation-Bar_images/Navigation-Bar_img8.png)
 
 ## VisualStyles
-The style of the `NavigationBar` can be changed by using the [GridOfficeScrollBar](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GridOfficeScrollBars.html) property which automatically changes the visual style. Check [Scrolling](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started) topic for more information on this.
+The style of the `NavigationBar` can be changed by using the [GridOfficeScrollBar](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GridOfficeScrollBars.html) property which automatically changes the visual style. Check [Scrolling](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started) topic for more information on this.
 
 {% tabs %}
 {% highlight c# %}
@@ -205,7 +205,7 @@ Me.gridGroupingControl1.GridOfficeScrollBars = OfficeScrollBars.Office2010
 ![](Navigation-Bar_images/Navigation-Bar_img9.png)
 
 ## Navigating Records
-The grid records can be programmatically navigate by using some of the methods in the [NavigationBar](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~NavigationBar.html). The followings are the methods used for navigation,
+The grid records can be programmatically navigate by using some of the methods in the [NavigationBar](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.RecordNavigationControl~NavigationBar.html). The followings are the methods used for navigation,
 
 {% tabs %}
 {% highlight c# %}
@@ -239,7 +239,7 @@ Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
 For more information, refer our dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Installed_Version&gt;\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo\
 
 ## Visibility of Arrow Buttons
-The visibility of the arrow buttons can be changed by setting the [NavigationButtons](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationButtons.html) property appropriate value from the [DisplayArrowButtons](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.DisplayArrowButtons.html) enumeration.
+The visibility of the arrow buttons can be changed by setting the [NavigationButtons](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl~NavigationButtons.html) property appropriate value from the [DisplayArrowButtons](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.DisplayArrowButtons.html) enumeration.
 
 {% tabs %}
 {% highlight c# %}

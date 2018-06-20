@@ -11,11 +11,11 @@ documentation: ug
 
 Essential Chart comes with support for several Statistical formulas that will let you apply formulas on data points in one or more series and will help you analyze and arrive at meaningful information from those data points.
 
-These formulas are mainly exposed via static methods from the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) and UtilityFunctions types.
+These formulas are mainly exposed via static methods from the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) and UtilityFunctions types.
 
 ## Basic Statistical Formulas
 
-Some commonly used statistical formulas that you can apply on the series points are exposed via static methods in the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) type.
+Some commonly used statistical formulas that you can apply on the series points are exposed via static methods in the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) type.
 
 **BasicStatisticalFormula**
 
@@ -27,62 +27,62 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ANOVA](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Anova.html)'| markdownify }}
+{{'[ANOVA](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Anova.html)'| markdownify }}
 </td><td>
 An ANOVA test is used to test the differences between the means of two or more groups of data.</td></tr>
 <tr>
 <td>
-{{'[Correlation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Correlation.html)'| markdownify }}
+{{'[Correlation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Correlation.html)'| markdownify }}
 </td><td> 
 The Correlation formula shows how strong the relation is between two random variables.</td></tr>
 <tr>
 <td>
-{{'[Covariance](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Covariance.html)'| markdownify }}
+{{'[Covariance](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Covariance.html)'| markdownify }}
 </td><td>
 The Covariance formula measures the degree of dependence between two random variables.</td></tr>
 <tr>
 <td>
-{{'[F-Test](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~FTest.html)'| markdownify }}
+{{'[F-Test](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~FTest.html)'| markdownify }}
 </td><td>
 An F-test is any statistical test in which, the test statistic has an F-distribution if the null hypothesis is true. </td></tr>
 <tr>
 <td>
-{{'[Mean](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Mean.html)'| markdownify }}
+{{'[Mean](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Mean.html)'| markdownify }}
 </td><td>
 This formula returns the average, or mean, of data stored in a data series.</td></tr>
 <tr>
 <td>
-{{'[Median](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Median.html)'| markdownify }}
+{{'[Median](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Median.html)'| markdownify }}
 </td><td>
 This formula returns the median for data stored in a data series.</td></tr>
 <tr>
 <td>
-{{'[StandardDeviation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~StandardDeviation.html)'| markdownify }}
+{{'[StandardDeviation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~StandardDeviation.html)'| markdownify }}
 </td><td>
 This formula returns the Standard Deviation within a group of data.</td></tr>
 <tr>
 <td>
-{{'[T Test with Equal Variances](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestEqualVariances.html)'| markdownify }}
+{{'[T Test with Equal Variances](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestEqualVariances.html)'| markdownify }}
 </td><td>
 Perform a T Test using Student's distribution (T distribution) with equal variances.</td></tr>
 <tr>
 <td>
-{{'[T Test Paired](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestPaired.html)'| markdownify }}
+{{'[T Test Paired](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestPaired.html)'| markdownify }}
 </td><td>
 Performs a T Test using Student's distribution (T distribution) with paired samples. This is useful when there is a natural pairing of observations in samples. (i.e. when a sample group is tested twice.)</td></tr>
 <tr>
 <td>
-{{'[T Test with unequal variances](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestUnEqualVariances.html)'| markdownify }}
+{{'[T Test with unequal variances](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestUnEqualVariances.html)'| markdownify }}
 </td><td>
 Perform a T Test using Student's distribution (T distribution) with unequal variances.</td></tr>
 <tr>
 <td>
-{{'[Variance](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Variance.html)'| markdownify }}
+{{'[Variance](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Variance.html)'| markdownify }}
 </td><td>
 This formula returns the variance within a group of data. </td></tr>
 <tr>
 <td>
-{{'[ZTest](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~ZTest.html)'| markdownify }}
+{{'[ZTest](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~ZTest.html)'| markdownify }}
 </td><td>
 This formula performs a Z Test using Normal distribution.</td></tr>
 </table>
@@ -165,7 +165,7 @@ The following assumptions must be satisfied before performing the test.
 
 #### APIs Used
 
-EssentialChart provides support to perform **ANOVA Test** by implementing a method named Anova in the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. This method does the above described calculations and returns the test results as an instance of AnovaResult class. The [AnovaResult](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult.html) is a class implemented to store the ANOVA test results such as sum of squares, degrees of freedom and mean squares for different variations and also stores the [FRatio](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult~FRatio.html) and [FCriticalValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult~FCriticalValue.html) of the test. Below is a detailed table for the ANOVA method.
+EssentialChart provides support to perform **ANOVA Test** by implementing a method named Anova in the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. This method does the above described calculations and returns the test results as an instance of AnovaResult class. The [AnovaResult](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult.html) is a class implemented to store the ANOVA test results such as sum of squares, degrees of freedom and mean squares for different variations and also stores the [FRatio](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult~FRatio.html) and [FCriticalValue](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult~FCriticalValue.html) of the test. Below is a detailed table for the ANOVA method.
 
 **Methods**
 
@@ -223,7 +223,7 @@ y is the y value of second series.
 
 #### Using the Formula
 
-The **Correlation Coefficient** can easily be calculated by using the Correlation method available with the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table describes the details of this method. This method returns the covariance of the datasets divided by the product of their standard deviations.
+The **Correlation Coefficient** can easily be calculated by using the Correlation method available with the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table describes the details of this method. This method returns the covariance of the datasets divided by the product of their standard deviations.
 
 **Methods**
 
@@ -236,7 +236,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[Correlation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Correlation.html)'| markdownify }}
+{{'[Correlation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Correlation.html)'| markdownify }}
 </td><td>
 <ul><li>FirstInputSeries: A ChartSeries object that stores the first group's data.</li><li>SecondInputSeries: A ChartSeries object that stores the second group's data. An exception will be raised if the input series does not have the same number of data points.</li></ul></td><td>
 A double that represents the correlation value between the two groups of data. The value always ranges from -1 to 1.</td></tr>
@@ -287,7 +287,7 @@ _Cov(x,y) = {xy} - {x}{y}_
 
 #### Using the Formula
 
-The [Covariance](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Covariance.html) can easily be calculated by using the Covariance method available with the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table describes the details of this method.
+The [Covariance](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Covariance.html) can easily be calculated by using the Covariance method available with the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table describes the details of this method.
 
 **Methods**
 
@@ -300,7 +300,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[Covariance](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Covariance.html)'| markdownify }}
+{{'[Covariance](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Covariance.html)'| markdownify }}
 </td><td>
 <ul><li>FirstInputSeriesName: A ChartSeries object that stores the first group's data.</li><li>SecondInputSeriesName: A ChartSeries object that stores the second group's data. An exception will be raised if the input series do not have the same number of data points.</li></ul></td><td>
 A double value that represents the covariance value between the two groups of data.</td></tr>
@@ -341,7 +341,7 @@ N> For further details, refer to this Browser Sample:
 
 ### F-Test
 
-The [F-Test](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~FTest.html) is a statistical test, which is carried out to find out whether two series have the same standard deviation with the specified confidence level. It is achieved by comparing the variances of the series values and thereby comparing their standard deviations. Here, the null hypothesis is that the two variances are equal. All hypothesis testing is done under the assumption that the null hypothesis is true.
+The [F-Test](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~FTest.html) is a statistical test, which is carried out to find out whether two series have the same standard deviation with the specified confidence level. It is achieved by comparing the variances of the series values and thereby comparing their standard deviations. Here, the null hypothesis is that the two variances are equal. All hypothesis testing is done under the assumption that the null hypothesis is true.
 
 #### Steps to perform F-Test
 
@@ -350,7 +350,7 @@ The [F-Test](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.C
 
 **F Value_ _= firstSeriesVariance / secondSeriesVariance.**
 
-F-Test can be easily performed by using the FTest method of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class that returns the results as a type of FTestResult. The [FTestResult](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) is a class implemented to save the F test result as FValue and other computation results such as series means, series variances, [FRatio](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult~FRatio.html) and [FCriticalValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult~FCriticalValue.html) of the test. Below is a detailed table for the FTest method.  
+F-Test can be easily performed by using the FTest method of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class that returns the results as a type of FTestResult. The [FTestResult](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) is a class implemented to save the F test result as FValue and other computation results such as series means, series variances, [FRatio](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult~FRatio.html) and [FCriticalValue](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.AnovaResult~FCriticalValue.html) of the test. Below is a detailed table for the FTest method.  
 
 **Methods**
 
@@ -393,7 +393,7 @@ N> For further details, refer to this Browser Sample:
 
 ### Mean
 
-Mean is statistical formula that returns the arithmetic average of series y values where the arithmetic average is the sum of all y values of a series divided by the total number of y values present in that series. The arithmetic mean can be calculated for any chart series by using Mean method of the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. Below table shows the method details.
+Mean is statistical formula that returns the arithmetic average of series y values where the arithmetic average is the sum of all y values of a series divided by the total number of y values present in that series. The arithmetic mean can be calculated for any chart series by using Mean method of the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. Below table shows the method details.
 
 **Methods**
 
@@ -406,7 +406,7 @@ Return value</th></tr>
 <tr>
 <td>
 
-{{'[Mean](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Mean.html)'| markdownify }}
+{{'[Mean](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Mean.html)'| markdownify }}
 </td><td>
 InputSeries: A ChartSeries type object for whose y values an average is required. </td><td>
 A double that represents the average of all the  y values in the given series.</td></tr>
@@ -449,7 +449,7 @@ N> For further details, refer to this Browser Sample:
 
 Median is a statistical formula that is used to find the median of y values of a series. Median can be calculated by arranging the values from the lowest to the highest and picking up the middle one. If the total number of values is even, then pick up the two middle values after sorting the values in ascending order. The mean of these two middle values will give you the median. Hence half of the series points have values less than the median and the values of the other half will be greater than the median.
 
-Median can be found out for any series by using the Median method of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The below table shows the details of this method.
+Median can be found out for any series by using the Median method of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The below table shows the details of this method.
 
 **Methods**
 
@@ -462,7 +462,7 @@ Return value</th></tr>
 <tr>
 <td>
 
-{{'[Median](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Median.html)'| markdownify }}
+{{'[Median](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Median.html)'| markdownify }}
 </td><td>
 InputSeries: A ChartSeries type object for whose X values an average is required.</td><td>
 A double that represents the Median value of all the X values in the given series.</td></tr>
@@ -503,11 +503,11 @@ N> For further details, refer to this Browser Sample:
 
 ### Standard Deviation
 
-[StandardDeviation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~StandardDeviation.html) is the statistical formula that is basically used to measure the variability. That is, it can be used to measure how to spread out your data are. It can be defined as the square root of the variance where a variance is the average of the squared differences between the data points and the mean. In other words, it is named as the **root-mean-square** of the data values. 
+[StandardDeviation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~StandardDeviation.html) is the statistical formula that is basically used to measure the variability. That is, it can be used to measure how to spread out your data are. It can be defined as the square root of the variance where a variance is the average of the squared differences between the data points and the mean. In other words, it is named as the **root-mean-square** of the data values. 
 
 It can be used to check how tightly the data values are clustered around the mean. If the data points are close to the mean, then the standard deviation will be small or if the points are far from the mean, then the standard deviation is large or if all the data values are equal, then the standard deviation is zero.
 
-The Standard Deviation can be calculated for any series by using the [StandardDeviation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~StandardDeviation.html) method of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. Below is the detailed description of this method.
+The Standard Deviation can be calculated for any series by using the [StandardDeviation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~StandardDeviation.html) method of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. Below is the detailed description of this method.
 
 **Methods**
 
@@ -520,7 +520,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[StandardDeviation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~StandardDeviation.html)'| markdownify }}
+{{'[StandardDeviation](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~StandardDeviation.html)'| markdownify }}
 </td><td>
 <ul><li>InputSeries: A ChartSeries type object for on whose Y values this formula should be applied.</li><li>SampleVariance: true if the data is a sample of a population, false if it is the entire population.</li></ul></td><td>
 A double that represents the standard deviation within the group of data.</td></tr>
@@ -638,7 +638,7 @@ This type of TTest can be performed on two random series that have no relationsh
 
 #### Using the Formula 
 
-The TTest formula for equal variances can be calculated by using the [TTestEqualVariances](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestEqualVariances.html) method of the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table presents the details of this method. This method returns an instance of [TTestResult](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.TTestResult.html) class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, number of points in every series, T critical value and confidence level(probability).
+The TTest formula for equal variances can be calculated by using the [TTestEqualVariances](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestEqualVariances.html) method of the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table presents the details of this method. This method returns an instance of [TTestResult](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.TTestResult.html) class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, number of points in every series, T critical value and confidence level(probability).
 
 **Methods**
 
@@ -651,7 +651,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[TTestEqualVariances](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestEqualVariances.html)'| markdownify }}
+{{'[TTestEqualVariances](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestEqualVariances.html)'| markdownify }}
 </td><td>
 <ul><li>HypothesizedMeanDifference: A double value specifying the difference between two population means.</li><li>Probability: A double value that gives the confidence level.</li><li>FirstInputSeries: A ChartSeries object that stores the first group of data.</li><li>SecondInputSeries: A ChartSeries object that stores the second group of data.</li></ul></td><td>
 A TTestResult object that has the following members:<ul><li>FirstSeriesMean</li><li>SecondSeriesMean</li><li>FirstSeriesVariance</li><li>SecondSeriesVariance</li><li>Tvalue</li><li>DegreeOfFreedom</li><li>ProbabilityTOneTail</li><li>TCriticalValueOneTail</li><li>ProbabilityTTwoTail</li> <li>TCriticalValueTwoTail</li></ul></td></tr>
@@ -713,7 +713,7 @@ If the assumption of 'equal variances' is violated, then we have to compute the 
 
 #### Using the Formula 
 
-The TTest formula for unequal variances can be calculated by using the [TTestUnEqualVariances](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestUnEqualVariances.html) method of the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table presents the details of this method. This method returns an instance of [TTestResult](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.TTestResult.html) class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, number of points in every series, T critical value and confidence level (probability).
+The TTest formula for unequal variances can be calculated by using the [TTestUnEqualVariances](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestUnEqualVariances.html) method of the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table presents the details of this method. This method returns an instance of [TTestResult](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.TTestResult.html) class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, number of points in every series, T critical value and confidence level (probability).
 
 **Methods**
 
@@ -726,7 +726,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[TTestUnEqualVariances](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestUnEqualVariances.html)'| markdownify }}
+{{'[TTestUnEqualVariances](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestUnEqualVariances.html)'| markdownify }}
 </td><td>
 <ul><li>HypothesizedMeanDifference: A double value  that gives the difference between the means of the two input series.</li><li>Probability: A double value  that denotes the probability that gives the confidence level.</li><li>FirstSeries: A ChartSeries object that stores the first group of data.</li><li>SecondSeries: A ChartSeries object that stores the second group of data.</li></ul></td><td>
 A TTestResult object that has the following members:<ul><li>FirstSeriesMean</li><li>SecondSeriesMean</li><li>FirstSeriesVariance</li><li>SecondSeriesVariance</li><li>Tvalue</li><li>DegreeOfFreedom</li><li>ProbabilityTOneTail</li><li>TCriticalValueOneTail</li><li>ProbabilityTTwoTail</li> <li>TCriticalValueTwoTail</li></ul></td></tr>
@@ -780,7 +780,7 @@ This formula is used when there is a dependency between the samples. The two pos
 
 #### Using the Formula
 
-The TTest formula for dependent samples can be calculated by using the TTestPaired method of the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table presents the details of this method. This method returns an instance of TTestResult class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, and number of points in every series, T critical value and confidence level (probability).
+The TTest formula for dependent samples can be calculated by using the TTestPaired method of the [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. The following table presents the details of this method. This method returns an instance of TTestResult class that stores the resultant values of this test such as means of the two series, T value, degrees of freedom, and number of points in every series, T critical value and confidence level (probability).
 
 **Methods**
 
@@ -793,7 +793,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[TTestPaired](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestPaired.html)'| markdownify }}
+{{'[TTestPaired](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~TTestPaired.html)'| markdownify }}
 </td><td>
 <ul><li>HypothesizedMeanDifference: A double value specifying the difference between two population means.</li><li>Probability: A double value  that denotes the probability that gives the confidence level.</li><li>FirstSeries: A ChartSeries object that stores the first group of data.</li><li>SecondSeries: A ChartSeries object that stores the second group of data.</li></ul></td><td>
 A TTestResult object that has the following members:<ul><li>FirstSeriesMean</li><li>SecondSeriesMean</li><li>FirstSeriesVariance</li><li>SecondSeriesVariance</li><li>Tvalue</li><li>DegreeOfFreedom</li><li>ProbabilityTOneTail</li><li>TCriticalValueOneTail</li><li>ProbabilityTTwoTail</li> <li>TCriticalValueTwoTail</li></ul></td></tr>
@@ -828,7 +828,7 @@ Variance is a statistical formula that calculates the variance of series y value
 
 #### Using the Formula
 
-The variance can be computed for any series by using the method Variance of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. Below table shows the details of this method.
+The variance can be computed for any series by using the method Variance of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. Below table shows the details of this method.
 
 **Methods**
 
@@ -841,7 +841,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[Variance](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Variance.html)'| markdownify }}
+{{'[Variance](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~Variance.html)'| markdownify }}
 </td><td>
 <ul><li>InputSeries: A ChartSeries object that represents the input series.</li><li>SampleVariance: A boolean value; true if the data is a sample of a population, false if it is the entire population.</li></ul></td><td>
 A double that represents the variance within the group of data.</td></tr>
@@ -877,7 +877,7 @@ Variance1=BasicStatisticalFormulas.Variance (series1,false)
 
 ### Z-Test
 
-[Z-test](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~ZTest.html) is a statistical formula that is used to determine if the difference between a sample mean and the population mean is large enough to be statistically significant. This test is primarily used to determine if the test scores of the samples are either within or outside the standard scores. 
+[Z-test](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~ZTest.html) is a statistical formula that is used to determine if the difference between a sample mean and the population mean is large enough to be statistically significant. This test is primarily used to determine if the test scores of the samples are either within or outside the standard scores. 
 
 **Steps to perform ZTest**
 
@@ -900,7 +900,7 @@ This test requires the sample to be random and is taken from a population that i
 
 #### Using the Formula
 
-The Z-test can be carried out on any two series values by using the ZTest method of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. Below table gives the detailed description of this method. The method returns an instance of [ZTestResult](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.ZTestResult.html) object that saves the intermediate results and also the final z score of the test.
+The Z-test can be carried out on any two series values by using the ZTest method of [BasicStatisticalFormulas](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas.html) class. Below table gives the detailed description of this method. The method returns an instance of [ZTestResult](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.ZTestResult.html) object that saves the intermediate results and also the final z score of the test.
 
 **Methods**
 
@@ -913,7 +913,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[ZTest](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~ZTest.html)'| markdownify }}
+{{'[ZTest](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.BasicStatisticalFormulas~ZTest.html)'| markdownify }}
 </td><td>
 <ul><li>HypothesizedMeanDifference: the difference between the population means.</li><li>VarianceOfFirstSeries: the variance within the first series population.</li><li>VarianceOfSecondSeries: the variance within the second series population.</li><li>Probability: the probability that gives the confidence level.</li><li>FirstSeries: A ChartSeries object that stores the first group of data.</li><li>SecondSeries: A ChartSeries object that stores the second group of data.</li></ul></td><td>
 An ZTestResult object that has the following members:<ul><li>FirstSeriesMean</li><li>SecondSeriesMean</li><li>FirstSeriesVariance</li><li>SecondSeriesVariance</li><li>ZValue</li><li>ProbabilityZOneTail</li><li>ZCriticalValueOneTail</li><li>ProbabilityZTwoTail</li><li>ZCriticalValueTwoTail</li></ul>  </td></tr>
@@ -960,83 +960,83 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[Beta Function](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Beta.html)'| markdownify }}
+{{'[Beta Function](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Beta.html)'| markdownify }}
 </td><td>
 The BetaFunction method returns the beta function for a given value.</td></tr>
 <tr>
 <td>
 
-{{'[Beta Cumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~BetaCumulativeDistribution.html)'| markdownify }}
+{{'[Beta Cumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~BetaCumulativeDistribution.html)'| markdownify }}
 </td><td>
 The Beta Cumulative Distribution method returns the Beta cumulative distribution for a given value.</td></tr>
 <tr>
 <td>
-{{'[Inverse Beta Cumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseBetaCumulativeDistribution.html)'| markdownify }}
+{{'[Inverse Beta Cumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseBetaCumulativeDistribution.html)'| markdownify }}
 </td><td>
 The Inverse Beta Cumulative Distribution method returns the Inverse Beta cumulative distribution for a given value.</td></tr>
 <tr>
 <td>
-{{'[Gamma Function](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Gamma.html)'| markdownify }}
+{{'[Gamma Function](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Gamma.html)'| markdownify }}
 </td><td>
 The GammaFunction method returns the gamma function for a given value.</td></tr>
 <tr>
 <td>
-{{'[Gamma Cumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~GammaCumulativeDistribution.html)'| markdownify }}
+{{'[Gamma Cumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~GammaCumulativeDistribution.html)'| markdownify }}
 </td><td>
 The Gamma Cumulative Distribution method returns the Gamma cumulative distribution for a given value.</td></tr>
 <tr>
 <td>
-{{'[FCumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~FCumulativeDistribution.html)'| markdownify }}
+{{'[FCumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~FCumulativeDistribution.html)'| markdownify }}
 </td><td>
 The F Cumulative Distribution method returns the FCumulative distribution for a given value.</td></tr>
 <tr>
 <td>
-{{'[Inverse FCumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseFCumulativeDistribution.html)'| markdownify }}
+{{'[Inverse FCumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseFCumulativeDistribution.html)'| markdownify }}
 </td><td>
 The Inverse F Cumulative Distribution method returns the Inverse F Cumulative distribution for a given value.</td></tr>
 <tr>
 <td>
-{{'[TCumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~TCumulativeDistribution.html)'| markdownify }}
+{{'[TCumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~TCumulativeDistribution.html)'| markdownify }}
 </td><td>
 The T Cumulative Distribution method returns the T Cumulative distribution for a given value.</td></tr>
 <tr>
 <td>
-{{'[Inverse TCumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseTCumulativeDistribution.html)'| markdownify }}
+{{'[Inverse TCumulative Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseTCumulativeDistribution.html)'| markdownify }}
 </td><td>
 The Inverse T Cumulative Distribution method returns the Inverse T Cumulative distribution for a given value.</td></tr>
 <tr>
 <td>
-{{'[Normal Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~NormalDistribution.html)'| markdownify }}
+{{'[Normal Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~NormalDistribution.html)'| markdownify }}
 </td><td>
 The Normal Distribution method returns the Normal distribution for a given value.</td></tr>
 <tr>
 <td>
-{{'[Inverse Normal Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseNormalDistribution.html)'| markdownify }}
+{{'[Inverse Normal Distribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseNormalDistribution.html)'| markdownify }}
 </td><td>
 Returns the inverse of the standard normal cumulative distribution. The distribution has a mean of 0 (zero) and a standard deviation of one.</td></tr>
 <tr>
 <td>
-{{'[Normal Distribution Density](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~NormalDistributionDensity.html)'| markdownify }}
+{{'[Normal Distribution Density](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~NormalDistributionDensity.html)'| markdownify }}
 </td><td>
 The Normal Distribution Density method returns the Normal distribution density for a given value.</td></tr>
 <tr>
 <td>
-{{'[Binomial](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Binomial.html)'| markdownify }}
+{{'[Binomial](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Binomial.html)'| markdownify }}
 </td><td>
 The Binomial method returns the Binomial coefficient for a given Value.</td></tr>
 <tr>
 <td>
-{{'[Factorial](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Factorial.html)'| markdownify }}
+{{'[Factorial](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Factorial.html)'| markdownify }}
 </td><td>
 The Factorial method returns the Factorial for a given Value.(eg 2!=2).</td></tr>
 <tr>
 <td>
-{{'[Error Function](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Erf.html)'| markdownify }}
+{{'[Error Function](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Erf.html)'| markdownify }}
 </td><td>
 The Erf method returns the Error Function for a given Value.</td></tr>
 <tr>
 <td>
-{{'[Inverse Error Function](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseErf.html)'| markdownify }}
+{{'[Inverse Error Function](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseErf.html)'| markdownify }}
 </td><td>
 The Inverse Erf method returns the Inverse Error Function for a given Value.</td></tr>
 </table>
@@ -1051,7 +1051,7 @@ where G(x) is the gamma function.
 
 #### Using the Formula
 
-The Beta method of the [UtilityFunctions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions.html) class calculates the beta function for given two values. 
+The Beta method of the [UtilityFunctions](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions.html) class calculates the beta function for given two values. 
 
 **Methods**
 
@@ -1064,7 +1064,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[Beta](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Beta.html)'| markdownify }}
+{{'[Beta](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Beta.html)'| markdownify }}
 </td><td>
 <ul><li>a: The first value.</li><li>b: The second value.</li></ul></td><td>
 A double that represents the beta function value.</td></tr>
@@ -1103,7 +1103,7 @@ where Bx(α, ß) is the incomplete beta function and Ix(α, ß) is the regulariz
 
 #### Using the Formula
 
-The [BetaCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~BetaCumulativeDistribution.html) method of the UtilityFunctions class returns the cumulative beta distribution for x>=0, a >0, b>0.
+The [BetaCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~BetaCumulativeDistribution.html) method of the UtilityFunctions class returns the cumulative beta distribution for x>=0, a >0, b>0.
 
 **Methods**
 
@@ -1116,7 +1116,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[BetaCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~BetaCumulativeDistribution.html)'| markdownify }}
+{{'[BetaCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~BetaCumulativeDistribution.html)'| markdownify }}
 </td><td>
 <ul><li>a: The lower limit.</li><li>b: The upper limit.</li><li>x: the value for which the distribution has to be calculated.</li></ul></td><td>
 A double that represents the cumulative beta distribution.</td></tr>
@@ -1229,7 +1229,7 @@ This formula returns the inverse of Beta Cumulative Distribution.
 
 #### Using the formula
 
-The [InverseBetaCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseBetaCumulativeDistribution.html) method of the UtilityFunctions class returns the inverse of beta cumulative distribution ( for 1 >= p >= 0 , a > 0, b > 0 ).
+The [InverseBetaCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseBetaCumulativeDistribution.html) method of the UtilityFunctions class returns the inverse of beta cumulative distribution ( for 1 >= p >= 0 , a > 0, b > 0 ).
 
 **Methods**
 
@@ -1242,7 +1242,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[InverseBetaCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseBetaCumulativeDistribution.html)'| markdownify }}
+{{'[InverseBetaCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseBetaCumulativeDistribution.html)'| markdownify }}
 </td><td>
 <ul><li>a: First Parameter of Beta function.</li><li>b: Second Parameter of Beta function.</li><li>p: The probability.</li></ul></td><td>
 A double that inverses the beta cumulative distribution value.</td></tr>
@@ -1338,7 +1338,7 @@ The above definition incorporates the convention that the product of no numbers 
 
 #### Using the formula
 
-The [Factorial](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Factorial.html) method of the UtilityFunctions class returns the factorial value for any positive integer.
+The [Factorial](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Factorial.html) method of the UtilityFunctions class returns the factorial value for any positive integer.
 
 **Methods**
 
@@ -1351,7 +1351,7 @@ Example</th></tr>
 <tr>
 <td>
 
-{{'[Factorial](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Factorial.html)'| markdownify }}
+{{'[Factorial](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Factorial.html)'| markdownify }}
 </td><td>
 n: The number whose factorial should be found out.</td><td>
 An integer that returns the factorial of n.</td></tr>
@@ -1395,7 +1395,7 @@ U2 is the second chi square distribution with d2 degrees of freedom.
 
 #### Using the Formula 
 
-[FCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~FCumulativeDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes the F Cumulative distribution method.
+[FCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~FCumulativeDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes the F Cumulative distribution method.
 
 **Methods**
 
@@ -1408,7 +1408,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[FCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~FCumulativeDistribution.html)'| markdownify }}
+{{'[FCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~FCumulativeDistribution.html)'| markdownify }}
 </td><td>
 <ul><li>fValue: The F value for which you want the distribution.</li><li>firstDegreeOfFreedom: an integer value that represents the first degree of freedom.</li><li>secondDegreeOfFreedom: an integer value that represents the second degree of freedom.</li></ul></td><td>
 A double that represents T cumulative distribution.</td></tr>
@@ -1468,7 +1468,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[Gamma](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Gamma.html)'| markdownify }}
+{{'[Gamma](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~Gamma.html)'| markdownify }}
 </td><td>
 p: a value for which the gamma value is required.</td><td>
 A double that represents the gamma function value.</td></tr>
@@ -1575,7 +1575,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[InverseErrorFunction](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseErf.html)'| markdownify }}
+{{'[InverseErrorFunction](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseErf.html)'| markdownify }}
 </td><td>
 x must be less than 1.15-10.9 </td><td>
 A double that gives the inverse of error function.</td></tr>
@@ -1610,7 +1610,7 @@ This formula returns the inverse of the F cumulative distribution.
 
 #### Using the Formula 
 
-[InverseFCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseFCumulativeDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes its parameters and its values.
+[InverseFCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseFCumulativeDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes its parameters and its values.
 
 **Methods**
 
@@ -1623,7 +1623,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[InverseFCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseFCumulativeDistribution.html)'| markdownify }}
+{{'[InverseFCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseFCumulativeDistribution.html)'| markdownify }}
 </td><td>
 <ul><li>fValue: The F value for which you need the distribution.</li><li>firstDegreeOfFreedom: an integer value that represents the first degree of freedom.</li><li>secondDegreeOfFreedom: an integer value that represents the second degree of freedom.</li></ul></td><td>
 A double that represents the inverse F cumulative distribution.</td></tr>
@@ -1659,7 +1659,7 @@ This formula returns an approximation of the inverse of the standard normal cumu
 
 #### Using the Formula
 
-[InverseNormalDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseNormalDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes its parameters and its values.
+[InverseNormalDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseNormalDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes its parameters and its values.
 
 **Methods**
 
@@ -1672,7 +1672,7 @@ Example</th></tr>
 <tr>
 <td>
 
-{{'[InverseNormalDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseNormalDistribution.html)'| markdownify }}
+{{'[InverseNormalDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseNormalDistribution.html)'| markdownify }}
 </td><td>
 p: the probability at which the function value is evaluated. p must be in (0,1) range.</td><td>
 A double that represents the inverse of the normal distribution function.</td></tr>
@@ -1737,7 +1737,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[NormalDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~NormalDistribution.html)'| markdownify }}
+{{'[NormalDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~NormalDistribution.html)'| markdownify }}
 </td><td>
 zValue: The value for which the distribution is required. </td><td>
 A double that represents the standard normal cumulative distribution value.</td></tr>
@@ -1802,7 +1802,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[NormalDistributionDensity](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~NormalDistributionDensity.html)'| markdownify }}
+{{'[NormalDistributionDensity](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~NormalDistributionDensity.html)'| markdownify }}
 </td><td>
 <ul><li>x: the value at which the distribution density is evaluated.</li><li>m: the expected value of distribution.</li><li>sigma: the variance of distribution.</li></ul></td><td>
 A double that represents the Normal Distribution Density  function value.</td></tr>
@@ -1837,7 +1837,7 @@ This formula computes the inverse of the cumulative distribution for T-statistic
 
 #### Using the Formula 
 
-[InverseTCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseTCumulativeDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes this function's parameters and its values.
+[InverseTCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseTCumulativeDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes this function's parameters and its values.
 
 **Methods**
 
@@ -1850,7 +1850,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[InverseTCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseTCumulativeDistribution.html)'| markdownify }}
+{{'[InverseTCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~InverseTCumulativeDistribution.html)'| markdownify }}
 </td><td>
 <ul><li>p: the alpha value (probability).</li><li>degreeOfFreedom: an integer value that represents the degree of freedom.</li><li>oneTail: If true, one-tailed distribution is used; otherwise two-tailed distribution is used.</li></ul></td><td>
 A double that represents the Inverse of T cumulative distribution function probability.</td></tr>
@@ -1893,7 +1893,7 @@ gives the t-distribution for n-1 degrees of freedom.
 
 #### Using the Formula
 
-[TCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~TCumulativeDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes this function's parameters and its values.
+[TCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~TCumulativeDistribution.html) is calculated using the Statistics.UtilityFunctions class. The following table describes this function's parameters and its values.
 
 **Methods**
 
@@ -1906,7 +1906,7 @@ Return Value</th></tr>
 <tr>
 <td>
 
-{{'[TCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~TCumulativeDistribution.html)'| markdownify }}
+{{'[TCumulativeDistribution](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Statistics.UtilityFunctions~TCumulativeDistribution.html)'| markdownify }}
 </td><td>
 <ul><li>t Value: the T value for which you want the distribution.</li><li>degreeOfFreedom: an integer value that represents the degree of freedom.</li><li>oneTail: If true, one-tailed distribution is used; otherwise two-tailed distribution is used.</li></ul></td><td>
 A double that represents the T cumulative distribution function probability.</td></tr>

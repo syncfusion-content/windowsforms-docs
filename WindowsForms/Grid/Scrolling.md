@@ -11,7 +11,7 @@ documentation: ug
 GridControl has provide the built in support for scrolling. This section will explain about types of scrolling and different types of scrollbars available for GridControl.
 
 ## Enable Auto Scrolling 
-The auto scrolling can be enabled or disabled for both horizontal and vertical scrollbars by setting the [AutoScrolling](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~AutoScrolling.html) property to `ScrollBars.Both`. This can also enabled separately for horizontal and vertical scrollbars.
+The auto scrolling can be enabled or disabled for both horizontal and vertical scrollbars by setting the [AutoScrolling](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~AutoScrolling.html) property to `ScrollBars.Both`. This can also enabled separately for horizontal and vertical scrollbars.
 {% tabs %}
 {% highlight c# %}
 //Enables AutoScrolling.
@@ -45,9 +45,9 @@ The pixel scrolling is not optimized for large row scenarios. To optimize the pi
 
 The following methods are need to be override in the derived GridControl for Optimized Vertical scrolling,
 
-* [RowIndexToVScrollPixelPos](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~RowIndexToVScrollPixelPos.html)(int rowIndex)
-* [VScrollPixelPosToRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~VScrollPixelPosToRowIndex.html)(int pixelPos, out int rowIndex, out int pixelDelta)
-* [GetVScrollPixelHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~GetVScrollPixelHeight.html)()
+* [RowIndexToVScrollPixelPos](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~RowIndexToVScrollPixelPos.html)(int rowIndex)
+* [VScrollPixelPosToRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~VScrollPixelPosToRowIndex.html)(int pixelPos, out int rowIndex, out int pixelDelta)
+* [GetVScrollPixelHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~GetVScrollPixelHeight.html)()
 
 {% tabs %}
 {% highlight c# %}
@@ -158,7 +158,7 @@ Me.gridControl1.VScrollPixel = True
 This topic will discuss about the properties and methods available for scrolling in GridControl. 
 
 ### Setting the Visibility of Scrollbars
-The visibility of the vertical and horizontal scrollbars of the grid can be get/set by using the [VScroll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScroll.html) and [HScroll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScroll.html) properties. It will return `true` while displaying the scrollbars otherwise return false.
+The visibility of the vertical and horizontal scrollbars of the grid can be get/set by using the [VScroll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScroll.html) and [HScroll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScroll.html) properties. It will return `true` while displaying the scrollbars otherwise return false.
 {% tabs %}
 {% highlight c# %}
 //Get the visibility of the Horizontal and vertical scrollbars
@@ -173,7 +173,7 @@ Dim hasHScroll As Boolean = Me.gridControl1.HScroll
 {% endtabs %}
 
 ### Enable Real Time Scrolling
-The grid can be scroll to the horizontal and vertical direction by tracking the thumbs of the scrollbar. The grid will scroll the grid contents when leaving the thumb track. To update the contents of the grid when tracking the thumbs, set the [VerticalThumbTrack](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~VerticalThumbTrack.html) and [HorizontalThumbTrack](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~HorizontalThumbTrack.html) value as `true`.
+The grid can be scroll to the horizontal and vertical direction by tracking the thumbs of the scrollbar. The grid will scroll the grid contents when leaving the thumb track. To update the contents of the grid when tracking the thumbs, set the [VerticalThumbTrack](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~VerticalThumbTrack.html) and [HorizontalThumbTrack](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~HorizontalThumbTrack.html) value as `true`.
 {% tabs %}
 {% highlight c# %}
 //Used to repaint the grid while scrolling the thumb track
@@ -190,7 +190,7 @@ Me.gridControl1.HorizontalThumbTrack = True
 N> The Metro scrollbars have the real time scrolling as default behavior.
 
 ### Scroll and View a Specific Cell 
-To scroll the contents of the grid to the particular cell, use the [ScrollCellInView](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ScrollCellInView.html) method. This method is used to get the given cell or range of cells into the view.
+To scroll the contents of the grid to the particular cell, use the [ScrollCellInView](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ScrollCellInView.html) method. This method is used to get the given cell or range of cells into the view.
 {% tabs %}
 {% highlight c# %}
 int rowIndex = 15;
@@ -228,7 +228,7 @@ Me.gridControl1.ScrollCellInView(range)
 {% endtabs %}
 
 ## Displaying Scroll Tips
-The scroll tips can be displayed while dragging a horizontal/vertical scroll bar thumb by setting the [HorizontalScrollTips](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~HorizontalScrollTips.html)/[VerticalScrollTips](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~VerticalScrollTips.html) property to `true`. The default value is set to *false*.
+The scroll tips can be displayed while dragging a horizontal/vertical scroll bar thumb by setting the [HorizontalScrollTips](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~HorizontalScrollTips.html)/[VerticalScrollTips](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~VerticalScrollTips.html) property to `true`. The default value is set to *false*.
 {% tabs %}
 {% highlight c# %}
 // Display the horizontal and Vertical Scroll tips
@@ -244,7 +244,7 @@ Me.gridControl1.VerticalScrollTips = True
 
 ![](Scrolling_images/Scrolling_img1.jpeg)
 
-The scroll tips text can be changed by setting the [ScrollTipFormat](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ScrollTipFormat.html) property value as of follows,
+The scroll tips text can be changed by setting the [ScrollTipFormat](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ScrollTipFormat.html) property value as of follows,
 {% tabs %}
 {% highlight c# %}
 //Sets the text to be displayed in the ScrollTip window with a place holder for scroll position.
@@ -259,7 +259,7 @@ Me.gridControl1.ScrollTipFormat = "Cell {0}"
 ![](Scrolling_images/Scrolling_img2.jpeg)
 
 ### Setting Scroll Behavior for Frozen Cells
-The scrolling behavior of the current cell moves within the frozen range using the arrow keys can be set by enabling the [ScrollFrozen](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ScrollFrozen.html) property. The default value is set to `true`.
+The scrolling behavior of the current cell moves within the frozen range using the arrow keys can be set by enabling the [ScrollFrozen](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ScrollFrozen.html) property. The default value is set to `true`.
 {% tabs %}
 {% highlight c# %}
 //Defines scroll behavior in frozen cells.
@@ -272,7 +272,7 @@ Me.gridControl1.ScrollFrozen = True
 {% endtabs %}
 
 ### Scroll Current Cell into View when its Activated
-The current cell can be scrolled to the view when it is activated by setting the [AllowScrollCurrentCellInView](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AllowScrollCurrentCellInView.html) property to desired [GridScrollCurrentCellReason](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridScrollCurrentCellReason.html) enumeration.
+The current cell can be scrolled to the view when it is activated by setting the [AllowScrollCurrentCellInView](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AllowScrollCurrentCellInView.html) property to desired [GridScrollCurrentCellReason](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridScrollCurrentCellReason.html) enumeration.
 {% tabs %}
 {% highlight c# %}
 //Get the current cell scroll into the view when its activated
@@ -285,7 +285,7 @@ Me.gridControl1.AllowScrollCurrentCellInView = GridScrollCurrentCellReason.Activ
 {% endtabs %}
 
 ### Getting the First Row Index of the View Layout
-The first row index of the view layout can be get by using the [TopRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~TopRowIndex.html) property. It will be varied while scrolling the grid. At any time this will return the first row index of the view layout. Similarly, the top row index can be changed or scrolled into view by setting `TopRowIndex` property.
+The first row index of the view layout can be get by using the [TopRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~TopRowIndex.html) property. It will be varied while scrolling the grid. At any time this will return the first row index of the view layout. Similarly, the top row index can be changed or scrolled into view by setting `TopRowIndex` property.
 {% tabs %}
 {% highlight c# %}
 //Used to scroll the given row index to the top of the Grid
@@ -298,7 +298,7 @@ Me.gridControl1.TopRowIndex = 3
 {% endtabs %}
 
 ## Intelligence Mouse Scrolling 
-The contents of the grid can be automatically scrolled by setting the [EnableIntelliMouse](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ISupportIntelliMouse~EnableIntelliMouse.html) property to `true`. 
+The contents of the grid can be automatically scrolled by setting the [EnableIntelliMouse](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ISupportIntelliMouse~EnableIntelliMouse.html) property to `true`. 
 {% tabs %}
 {% highlight c# %}
 //Enable intelligent Mouse scroll
@@ -313,9 +313,9 @@ Me.gridControl1.EnableIntelliMouse = True
 ![](Scrolling_images/Scrolling_img3.jpeg)
 
 ## Hidden Row or Column Scrolling
-The scrolling logic for hidden rows and columns can be applied to the GridControl by enabling [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) property.This is a static property, it must be assigned before the ` `InitializeComponent` method.
+The scrolling logic for hidden rows and columns can be applied to the GridControl by enabling [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) property.This is a static property, it must be assigned before the ` `InitializeComponent` method.
 
-By default the thumbs are used the visible row and column index to update the positions on the Scrollbars. The [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) property is used to avoid the unwanted space leave for the Hidden Row/Column headers.
+By default the thumbs are used the visible row and column index to update the positions on the Scrollbars. The [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) property is used to avoid the unwanted space leave for the Hidden Row/Column headers.
 {% tabs %}
 {% highlight c# %}
 //Enable Hidden scroll logic
@@ -329,7 +329,7 @@ InitializeComponent()
 {% endhighlight %}
 {% endtabs %}
 
-N> Consider the case “The grid have 1000 number of rows and the rows in between 5 and 990 are gets hidden”. In this case the thumb size of the vertical scrollbar is set based on the overall row count of the grid. By enabling the [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) static property, the hidden columns is not taken to the account for scrolling. Therefore the scrollbar thumb will draw based only on the visible rows.
+N> Consider the case “The grid have 1000 number of rows and the rows in between 5 and 990 are gets hidden”. In this case the thumb size of the vertical scrollbar is set based on the overall row count of the grid. By enabling the [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) static property, the hidden columns is not taken to the account for scrolling. Therefore the scrollbar thumb will draw based only on the visible rows.
 
 The following screenshot shows the grid with applied hidden scroll logic,
 
@@ -365,8 +365,8 @@ Me.gridControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars
 ### Setting the Color Scheme for Office Scrollbars 
 The themes can be applied for the office scrollbars by setting the appropriate color scheme. Following are the color schemes available for the GridControl.
 
-[Office2007ScrollBarsColorScheme](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~Office2007ScrollBarsColorScheme.html) – Used to apply the color scheme for Office 2007 Scrollbars
-[Office2010ScrollBarsColorScheme](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~Office2010ScrollBarsColorScheme.html) – Used to apply color scheme for Office 2010 scrollbars
+[Office2007ScrollBarsColorScheme](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~Office2007ScrollBarsColorScheme.html) – Used to apply the color scheme for Office 2007 Scrollbars
+[Office2010ScrollBarsColorScheme](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~Office2010ScrollBarsColorScheme.html) – Used to apply color scheme for Office 2010 scrollbars
 
 {% tabs %}
 {% highlight c# %}
@@ -387,7 +387,7 @@ Scrollbars have the default context menu strip for setting the scrolling options
 ![](Scrolling_images/Scrolling_img8.jpeg)
 
 ### Disabling the Scrollbar Context Menu
-The scrollbar context menu can be disabled by handling the [ShowContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ShowContextMenu_EV.html) event of the GridControl as follows,
+The scrollbar context menu can be disabled by handling the [ShowContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ShowContextMenu_EV.html) event of the GridControl as follows,
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.ShowContextMenu += new Syncfusion.Windows.Forms.ShowContextMenuEventHandler(gridControl1_ShowContextMenu);
@@ -419,10 +419,10 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N>The context menu of the overall grid can be disabled by setting the e.Cancel as `true` in the [ShowContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ShowContextMenu_EV.html) event.
+N>The context menu of the overall grid can be disabled by setting the e.Cancel as `true` in the [ShowContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ShowContextMenu_EV.html) event.
 
 ## Shared Scrollbars 
-The GridControl can share the scroll bars with other controls by setting the [HScrollBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollBehavior.html) and [VScrollBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollBehavior.html)  property value as `GridScrollbarMode.Shared`. This can be used to synchronize the scrolling of multiple grids. 
+The GridControl can share the scroll bars with other controls by setting the [HScrollBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollBehavior.html) and [VScrollBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollBehavior.html)  property value as `GridScrollbarMode.Shared`. This can be used to synchronize the scrolling of multiple grids. 
 {% tabs %}
 {% highlight c# %}
 //Set the shared scrollbar mode 
@@ -452,7 +452,7 @@ Me.gridControl1.VScrollBar.InnerScrollBar = vScrollBar1
 ![](Scrolling_images/Scrolling_img9.jpeg)
 
 ### Indicating the Last Row/Column while Scrolling
-To notify the last row/column reached while scrolling the grid, invoke the [Scroll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollBarWrapper~Scroll_EV.html) event of the scroll bars as of follows, 
+To notify the last row/column reached while scrolling the grid, invoke the [Scroll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollBarWrapper~Scroll_EV.html) event of the scroll bars as of follows, 
 {% tabs %}
 {% highlight c# %}
 //Used to get the scroll index
@@ -486,7 +486,7 @@ End Sub
 This section will explain about the events used for the scrolling in GridControl.
 
 ### Disable the Pixel Scrolling using Events
-The pixel scrolling of the GridControl can be restricted by handling the [HScrollPixelPosChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollPixelPosChanging_EV.html) and [VScrollPixelPosChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixelPosChanging_EV.html) events. This events will be raised while scrolling the grid through the scrollbar when[pixel scrolling](#_Pixel_scrolling "") is enabled. 
+The pixel scrolling of the GridControl can be restricted by handling the [HScrollPixelPosChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollPixelPosChanging_EV.html) and [VScrollPixelPosChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixelPosChanging_EV.html) events. This events will be raised while scrolling the grid through the scrollbar when[pixel scrolling](#_Pixel_scrolling "") is enabled. 
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.HScrollPixelPosChanging += new GridScrollPositionChangingEventHandler(gridControl1_HScrollPixelPosChanging);
@@ -523,7 +523,7 @@ Private Sub gridControl1_VScrollPixelPosChanging(ByVal sender As Object, ByVal e
 End Sub
 {% endhighlight %}
 {% endtabs %}
-Once the pixel scrolling is done on the grid, it can be notified by invoking the [HScrollPixelPosChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollPixelPosChanged_EV.html) and [VScrollPixelPosChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixelPosChanged_EV.html) events.
+Once the pixel scrolling is done on the grid, it can be notified by invoking the [HScrollPixelPosChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~HScrollPixelPosChanged_EV.html) and [VScrollPixelPosChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixelPosChanged_EV.html) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -553,7 +553,7 @@ End Sub
 {% endtabs %}
 
 ### Setting the Maximum Scrolling Position through Events 
-The [HorizontalScroll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~HorizontalScroll_EV.html) and [VerticalScroll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~VerticalScroll_EV.html) events will be raised when the scrollbar position is changed. By using this event, user can restrict the maximum scrolling position of the scrollbar.
+The [HorizontalScroll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~HorizontalScroll_EV.html) and [VerticalScroll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~VerticalScroll_EV.html) events will be raised when the scrollbar position is changed. By using this event, user can restrict the maximum scrolling position of the scrollbar.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.HorizontalScroll += new ScrollEventHandler(gridControl1_HorizontalScroll);
@@ -580,7 +580,7 @@ End Sub
 {% endtabs %}
 
 ## Custom Scrollbar
-For customizing the appearance of the Scrollbars, need to add the [ScrollersFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame.html) control into the grid. It can be drag and drop to the application from the Toolbox window.
+For customizing the appearance of the Scrollbars, need to add the [ScrollersFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame.html) control into the grid. It can be drag and drop to the application from the Toolbox window.
 {% tabs %}
 {% highlight c# %}
 //Attach the scroll Frame to the Grid control
@@ -593,7 +593,7 @@ Me.scrollersFrame1.AttachedTo = Me.gridControl1
 {% endtabs %}
 ![](Scrolling_images/Scrolling_img10.jpeg)
 
-The [ScrollersFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame.html) can be applied with the different visual styles as of follows,
+The [ScrollersFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame.html) can be applied with the different visual styles as of follows,
 
 * Office2007
 * Office2010
@@ -615,7 +615,7 @@ Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawSty
 ![](Scrolling_images/Scrolling_img11.jpeg)
 
 ### Changing the Back Color for the Metro Scrollbars 
-The back color of the metro scrollbars can be customized to the desired color by using [ScrollerBackground](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MetroColorTable~ScrollerBackground.html) property of the `MetroColorTable`.
+The back color of the metro scrollbars can be customized to the desired color by using [ScrollerBackground](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MetroColorTable~ScrollerBackground.html) property of the `MetroColorTable`.
 {% tabs %}
 {% highlight c# %}
 //Set the color for scroll bar for metro visual style

@@ -12,7 +12,7 @@ GridControl provides support to validate the cell while editing. When an incorre
 
 ## Built-in validation
 
-The GridControl has the built-in data validation. It will shows the error icon on the current cell to notify the error is occurred. The visibility of the error icon can be changed by setting the setting [ShowErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorIcon.html#) and [ShowRowHeaderErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowRowHeaderErroricon.html#) property.  
+The GridControl has the built-in data validation. It will shows the error icon on the current cell to notify the error is occurred. The visibility of the error icon can be changed by setting the setting [ShowErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorIcon.html#) and [ShowRowHeaderErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowRowHeaderErroricon.html#) property.  
 
 {% tabs %}
 {% highlight c# %}
@@ -32,14 +32,14 @@ Me.gridControl1.ShowRowHeaderErroricon = True
 {% endhighlight %}
 {% endtabs %}
 
-N> The default value for the [ShowErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorIcon.html#) property value is `true` and the [ShowRowHeaderErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowRowHeaderErroricon.html#)` property value is false`.
+N> The default value for the [ShowErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorIcon.html#) property value is `true` and the [ShowRowHeaderErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowRowHeaderErroricon.html#)` property value is false`.
 
 ![](DataValidation_images/DataValidation_img1.jpeg)
 
 
-GridControl validates the cell based on the [CellValueType](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValueType.html#) property and shows the error message. If `CellValueType` is `int` type and user enters `string` value, then the grid will automatically throw the error message like “Value(x) is not a valid value for Int32” in a message box. Whereas, `x` denotes the entered cell value.
+GridControl validates the cell based on the [CellValueType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValueType.html#) property and shows the error message. If `CellValueType` is `int` type and user enters `string` value, then the grid will automatically throw the error message like “Value(x) is not a valid value for Int32” in a message box. Whereas, `x` denotes the entered cell value.
 
-By default the error provider will show a popup while the exception is occurred. When you want to disable this popup, set the [ShowErrorMessageBox](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorMessageBox.html#) property to `false`.
+By default the error provider will show a popup while the exception is occurred. When you want to disable this popup, set the [ShowErrorMessageBox](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorMessageBox.html#) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -67,7 +67,7 @@ N> While the error is occurred, the current cell will not leave from the edit mo
 
 ## Programmatic validation
 
-While setting the cell value through the code, it will not trigger the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html#) and [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html#) events. Therefore the validation will not work at this type of editing. To validate this type of editing, call [CurrentCell.Validate](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~Validate.html#) method after editing the value of the current cell. It will raise the `CurrentCellValidating` event to manually validate the cell value.
+While setting the cell value through the code, it will not trigger the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html#) and [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html#) events. Therefore the validation will not work at this type of editing. To validate this type of editing, call [CurrentCell.Validate](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~Validate.html#) method after editing the value of the current cell. It will raise the `CurrentCellValidating` event to manually validate the cell value.
 
 {% tabs %}
 {% highlight c# %}
@@ -136,7 +136,7 @@ End Sub
 
 ## Customizing error text 
 
-If you want to change the text displayed in the Error message box, it can be done by setting the [ValidationErrorText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ValidationErrorText.html#) property. 
+If you want to change the text displayed in the Error message box, it can be done by setting the [ValidationErrorText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ValidationErrorText.html#) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -159,7 +159,7 @@ The user can validate the data based on their required conditions using some cus
 
 ### Validating the current cell data using event
 
-The error provider can be customized by calling the [SetError](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~SetError.html# "") method of the current cell in the [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html# "") event. 
+The error provider can be customized by calling the [SetError](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~SetError.html# "") method of the current cell in the [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html# "") event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -210,7 +210,7 @@ When the validation is failed at the `CurrentCellValidating` event, the custom e
 
 ### Handling error message using events
 
-The [CurrentCellErrorMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellErrorMessage_EV.html#) event will triggered while the error is occurred. It can be used to get the error message by using the `e.Text` and also used to restrict display of error message box by handling this event like `e.Cancel` value as `true`. 
+The [CurrentCellErrorMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellErrorMessage_EV.html#) event will triggered while the error is occurred. It can be used to get the error message by using the `e.Text` and also used to restrict display of error message box by handling this event like `e.Cancel` value as `true`. 
 
 {% tabs %}
 {% highlight c# %}

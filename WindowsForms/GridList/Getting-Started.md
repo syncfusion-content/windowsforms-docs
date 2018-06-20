@@ -22,11 +22,11 @@ Required assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridListControl.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridListControl.<br/><br/></td></tr>
 </table>
 

@@ -13,7 +13,7 @@ SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using
 
 ## Serialization
 
-The SfDataGrid can be serialized by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).html) method which exports the current SfDataGrid control properties to an XML file.
+The SfDataGrid can be serialized by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).html) method which exports the current SfDataGrid control properties to an XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ End Using
 
 ### Serialize as Stream
 
-The SfDataGrid settings can be stored as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).html) method by passing the stream.
+The SfDataGrid settings can be stored as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream).html) method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}
@@ -46,11 +46,11 @@ Me.sfDataGrid1.Serialize(stream)
 
 ## Serialization Options
 
-SfDataGrid serialization operation can be customized by passing [SerializationOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream,SerializationOptions).html) method.
+SfDataGrid serialization operation can be customized by passing [SerializationOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Serialize(Stream,SerializationOptions).html) method.
 
 ### Serialize Sorting
 
-By default, SfDataGrid allows to serialize the sorting operation. The sorting serialization can be disabled  by setting the [SerializationOptions.SerializeSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeSorting.html) to false.
+By default, SfDataGrid allows to serialize the sorting operation. The sorting serialization can be disabled  by setting the [SerializationOptions.SerializeSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeSorting.html) to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -72,7 +72,7 @@ End Using
 
 ### Serialize Grouping
 
-By default, SfDataGrid allows to serialize the grouping operation. The grouping serialization can be disabled by setting the [SerializationOptions.SerializeGrouping ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeGrouping.html)to false.
+By default, SfDataGrid allows to serialize the grouping operation. The grouping serialization can be disabled by setting the [SerializationOptions.SerializeGrouping ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeGrouping.html)to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -94,7 +94,7 @@ End Using
 
 ### Serialize Filtering
 
-By default, SfDataGrid allows to serialize the filtering operation. The filtering serialization can be disabled by setting the [SerializationOptions.SerializeFiltering ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeFiltering.html)to false.
+By default, SfDataGrid allows to serialize the filtering operation. The filtering serialization can be disabled by setting the [SerializationOptions.SerializeFiltering ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeFiltering.html)to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -116,7 +116,7 @@ End Using
 
 ### Serialize Columns
 
-By default, SfDataGrid allows to serialize the column manipulation operation. The column manipulation serialization can be disabled by setting the [SerializationOptions.SerializeColumn ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeColumns.html)to false.
+By default, SfDataGrid allows to serialize the column manipulation operation. The column manipulation serialization can be disabled by setting the [SerializationOptions.SerializeColumn ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeColumns.html)to false.
 {% tabs %}
 {% highlight c# %}
 using (var file = File.Create("DataGrid.xml"))
@@ -137,7 +137,7 @@ End Using
 
 ### Serialize Summaries
 
-By default, SfDataGrid allows to serialize the caption summary, group summary and table summary settings in SfDataGrid. The caption summary, group summary and table summary settings serialization can be disabled by setting the [SerializationOptions.SerializeCaptionSummaries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeCaptionSummaries.html), [SerializationOptions.SerializeTableSummaries ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeTableSummaries.html) and  [SerializationOptions.SerializeGroupSummaries ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeGroupSummaries.html)to false.
+By default, SfDataGrid allows to serialize the caption summary, group summary and table summary settings in SfDataGrid. The caption summary, group summary and table summary settings serialization can be disabled by setting the [SerializationOptions.SerializeCaptionSummaries](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeCaptionSummaries.html), [SerializationOptions.SerializeTableSummaries ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeTableSummaries.html) and  [SerializationOptions.SerializeGroupSummaries ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeGroupSummaries.html)to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -163,7 +163,7 @@ End Using
 
 ### Serialize Stacked Headers
 
-By default, SfDataGrid allows to serialize the stacked headers operation. The stacked headers serialization can be disabled by setting the [SerializationOptions.SerializeStackedHeaders ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeStackedHeaders.html)to false.
+By default, SfDataGrid allows to serialize the stacked headers operation. The stacked headers serialization can be disabled by setting the [SerializationOptions.SerializeStackedHeaders ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeStackedHeaders.html)to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -185,7 +185,7 @@ End Using
 
 ### Serialize Unbound Row
 
-By default, SfDataGrid allows to serialize the unbound rows settings. The unbound rows serialization can be disabled by setting the [SerializationOptions.SerializeUnboundRows ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeUnboundRows.html)to false.
+By default, SfDataGrid allows to serialize the unbound rows settings. The unbound rows serialization can be disabled by setting the [SerializationOptions.SerializeUnboundRows ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeUnboundRows.html)to false.
 {% tabs %}
 {% highlight c# %}
 using (var file = File.Create("DataGrid.xml"))
@@ -206,7 +206,7 @@ End Using
 
 ### Serialize Style
 
-By default, SfDataGrid allows to serialize the style settings. The style serialization can be disabled by setting the [SerializationOptions.SerializeStyle ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeStyle.html)to false.
+By default, SfDataGrid allows to serialize the style settings. The style serialization can be disabled by setting the [SerializationOptions.SerializeStyle ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.SerializationOptions~SerializeStyle.html)to false.
 {% tabs %}
 {% highlight c# %}
 using (var file = File.Create("DataGrid.xml"))
@@ -227,7 +227,7 @@ End Using
 
 ## Deserialization
 
-The SfDataGrid can be deserialized by using [SfDataGrid.Deserialize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Deserialize(Stream).html) method which reconstructs the SfDataGrid based on the setting in the stored XML file.
+The SfDataGrid can be deserialized by using [SfDataGrid.Deserialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Deserialize(Stream).html) method which reconstructs the SfDataGrid based on the setting in the stored XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -245,7 +245,7 @@ End Using
 
 ### Deserialize from Stream
 
-The SfDataGrid settings can be deserialized from [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Deserialize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Deserialize(Stream).html) method.
+The SfDataGrid settings can be deserialized from [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Deserialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Deserialize(Stream).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -260,7 +260,7 @@ Me.sfDataGrid1.Deserialize(fileStream)
 
 ## Deserialization Options
 
-Deserialization operation can be customized by passing [DeserializationOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions.html) instance as an argument to [Deserialize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Deserialize(Stream,DeserializationOptions).html) method.
+Deserialization operation can be customized by passing [DeserializationOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions.html) instance as an argument to [Deserialize](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Deserialize(Stream,DeserializationOptions).html) method.
 
 ### Deserialize Sorting
 
@@ -286,7 +286,7 @@ End Using
 
 ### Deserialize Grouping
 
-By default, SfDataGrid allows to deserialize the grouping operation. The grouping deserialization can be disabled by setting the [DeserializationOptions.DeserializeGrouping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeGrouping.html) to false.
+By default, SfDataGrid allows to deserialize the grouping operation. The grouping deserialization can be disabled by setting the [DeserializationOptions.DeserializeGrouping](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeGrouping.html) to false.
 {% tabs %}
 {% highlight c# %}
 using (var file = File.Open("DataGrid.xml", FileMode.Open))
@@ -307,7 +307,7 @@ End Using
 
 ### Deserialize Filtering
 
-By default, SfDataGrid allows to deserialize the filtering operation. The filtering deserialization can be disabled by setting the [DeserializationOptions.DeserializeFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeFiltering.html) to false.
+By default, SfDataGrid allows to deserialize the filtering operation. The filtering deserialization can be disabled by setting the [DeserializationOptions.DeserializeFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeFiltering.html) to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,7 +329,7 @@ End Using
 
 ### Deserialize Columns
 
-By default, SfDataGrid allows to deserialize the columns manipulation operation. The columns manipulation deserialization can be disabled by setting the [DeserializationOptions.DeserializeColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeColumns.html) to false.
+By default, SfDataGrid allows to deserialize the columns manipulation operation. The columns manipulation deserialization can be disabled by setting the [DeserializationOptions.DeserializeColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeColumns.html) to false.
 {% tabs %}
 {% highlight c# %}
 using (var file = File.Open("DataGrid.xml", FileMode.Open))
@@ -349,7 +349,7 @@ End Using
 {% endtabs %}
 ### Deserialize Summaries
 
-By default, SfDataGrid allows to deserialize the caption summary, group summary and table summary settings in SfDataGrid. The caption summary, group summary and table summary settings deserialization can be disabled by setting the [DeserializationOptions.DeserializeCaptionSummary](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeCaptionSummary.html), [DeserializationOptions.DeserializeTableSummaries ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeTableSummaries.html) and  [DeserializationOptions.DeserializeGroupSummaries ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeGroupSummaries.html)to false.
+By default, SfDataGrid allows to deserialize the caption summary, group summary and table summary settings in SfDataGrid. The caption summary, group summary and table summary settings deserialization can be disabled by setting the [DeserializationOptions.DeserializeCaptionSummary](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeCaptionSummary.html), [DeserializationOptions.DeserializeTableSummaries ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeTableSummaries.html) and  [DeserializationOptions.DeserializeGroupSummaries ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeGroupSummaries.html)to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -375,7 +375,7 @@ End Using
 
 ### Deserialize Stacked Headers
 
-By default, SfDataGrid allows to deserialize the stacked headers operation. The stacked headers deserialization can be disabled by setting the [DeserializationOptions.DeserializeStackedHeaders ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeStackedHeaders.html)to false.
+By default, SfDataGrid allows to deserialize the stacked headers operation. The stacked headers deserialization can be disabled by setting the [DeserializationOptions.DeserializeStackedHeaders ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeStackedHeaders.html)to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -397,7 +397,7 @@ End Using
 
 ### Deserialize Unbound Row
 
-By default, SfDataGrid allows to deserialize the unbound rows settings. The unbound rows deserialization can be disabled by setting the [DeserializationOptions.DeserializeUnboundRows ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeUnboundRows.html)to false.
+By default, SfDataGrid allows to deserialize the unbound rows settings. The unbound rows deserialization can be disabled by setting the [DeserializationOptions.DeserializeUnboundRows ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeUnboundRows.html)to false.
 {% tabs %}
 {% highlight c# %}
 using (var file = File.Open("DataGrid.xml", FileMode.Open))
@@ -418,7 +418,7 @@ End Using
 
 ### Deserialize Style
 
-By default, SfDataGrid allows to deserialize the style settings. The style deserialization can be disabled by setting the [DeserializationOptions.DeserializeStyle ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeStyle.html)to false.
+By default, SfDataGrid allows to deserialize the style settings. The style deserialization can be disabled by setting the [DeserializationOptions.DeserializeStyle ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Serialization.DeserializationOptions~DeserializeStyle.html)to false.
 {% tabs %}
 {% highlight c# %}
 using (var file = File.Open("DataGrid.xml", FileMode.Open))

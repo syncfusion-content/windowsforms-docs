@@ -13,7 +13,7 @@ documentation: ug
 
 ### Styling based on Content
 
-The appearance of the record cells in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
+The appearance of the record cells in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ End Sub
 
 ### Styling Alternate Cells
 
-The appearance of the alternating cells in a column can be customized conditionally by using the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
+The appearance of the alternating cells in a column can be customized conditionally by using the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -94,34 +94,29 @@ End Sub
 
 ### Styling based on Content
 
-The appearance of the record rows in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.
+The appearance of the record rows in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.QueryRowStyle += SfDataGrid_QueryRowStyle;
+this.sfDataGrid1.QueryRowStyle += SfDataGrid1_QueryRowStyle;
 
-private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
+private void SfDataGrid1_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {
-    if (e.RowType == RowType.DefaultRow)
-    {
-        if ((e.RowData as OrderInfo).CustomerID == "FRANS")
-            e.Style.BackColor = Color.Bisque;
-        else if ((e.RowData as OrderInfo).CustomerID == "MEREP")
-            e.Style.BackColor = Color.LightBlue;
-    }
+    if ((e.RowData as OrderInfo).CustomerID == "FRANS")
+        e.Style.BackColor = Color.Bisque;
+    else if ((e.RowData as OrderInfo).CustomerID == "MEREP")
+        e.Style.BackColor = Color.LightBlue;
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid.QueryRowStyle, AddressOf SfDataGrid_QueryRowStyle
+AddHandler sfDataGrid1.QueryRowStyle, AddressOf SfDataGrid1_QueryRowStyle 
 
-Private Sub SfDataGrid_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
-    If e.RowType = RowType.DefaultRow Then
-        If (TryCast(e.RowData, OrderInfo)).CustomerID = "FRANS" Then
-            e.Style.BackColor = Color.Bisque
-        ElseIf (TryCast(e.RowData, OrderInfo)).CustomerID = "MEREP" Then
-            e.Style.BackColor = Color.LightBlue
-        End If
-    End If
+Private Sub SfDataGrid1_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
+	If (TryCast(e.RowData, OrderInfo)).CustomerID = "FRANS" Then
+		e.Style.BackColor = Color.Bisque
+	ElseIf (TryCast(e.RowData, OrderInfo)).CustomerID = "MEREP" Then
+		e.Style.BackColor = Color.LightBlue
+	End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -130,34 +125,29 @@ End Sub
 
 ### Styling Alternate Rows
 
-The appearance of the alternating rows in  SfDataGrid can be customized by using the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.
+The appearance of the alternating rows in  SfDataGrid can be customized by using the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.QueryRowStyle += SfDataGrid_QueryRowStyle;
+this.sfDataGrid1.QueryRowStyle += SfDataGrid1_QueryRowStyle;
 
-private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
+private void SfDataGrid1_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {
-    if (e.RowType == RowType.DefaultRow)
-    {
-        if (e.RowIndex % 2 == 0)
-            e.Style.BackColor = Color.Lavender;
-        else
-            e.Style.BackColor = Color.AliceBlue;
-    }
+    if (e.RowIndex % 2 == 0)
+        e.Style.BackColor = Color.Lavender;
+    else
+        e.Style.BackColor = Color.AliceBlue;
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid.QueryRowStyle, AddressOf SfDataGrid_QueryRowStyle
+AddHandler sfDataGrid1.QueryRowStyle, AddressOf SfDataGrid1_QueryRowStyle 
 
-Private Sub SfDataGrid_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
-    If e.RowType = RowType.DefaultRow Then
-        If e.RowIndex Mod 2 = 0 Then
-            e.Style.BackColor = Color.Lavender
-        Else
-            e.Style.BackColor = Color.AliceBlue
-        End If
-    End If
+Private Sub SfDataGrid1_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
+	If e.RowIndex Mod 2 = 0 Then
+		e.Style.BackColor = Color.Lavender
+	Else
+		e.Style.BackColor = Color.AliceBlue
+	End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -168,7 +158,7 @@ End Sub
 
 ### Cell
 
-The appearance of the caption summary cells in SfDataGrid can be customized conditionally based on the summary values by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
+The appearance of the caption summary cells in SfDataGrid can be customized conditionally based on the summary values by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -209,7 +199,7 @@ End Sub
 ### Row
 
 The appearance of the caption summary row in SfDataGrid can be customized conditionally based on the summary values by handling the 
-[SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
+[SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -217,6 +207,7 @@ this.sfDataGrid1.DrawCell += SfDataGrid1_DrawCell;
 
 private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
 {
+
     if (e.DataRow.RowType == RowType.CaptionCoveredRow)
     {
         int result;
@@ -226,22 +217,21 @@ private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
             e.Style.Font.Bold = true;
             e.Style.TextColor = Color.Red;
         }
-	}	
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid1.DrawCell, AddressOf SfDataGrid1_DrawCell
 
 Private Sub SfDataGrid1_DrawCell(ByVal sender As Object, ByVal e As DrawCellEventArgs)
-    If e.DataRow.RowType = RowType.CaptionCoveredRow Then
-        Dim result As Integer
-        Integer.TryParse((TryCast(e.DataRow.RowData, Group)).SummaryDetails.SummaryValues(0).AggregateValues.ElementAt(0).Value.ToString(), result)
-        If result < 50 Then
-            e.Style.Font.Bold = True
-            e.Style.TextColor = Color.Red
-        End If
-    End If
-End Sub
+
+	If e.DataRow.RowType = RowType.CaptionCoveredRow Then
+		Dim result As Integer
+		Integer.TryParse((TryCast(e.DataRow.RowData, Group)).SummaryDetails.SummaryValues(0).AggregateValues.ElementAt(0).Value.ToString(), result)
+		If result < 50 Then
+			e.Style.Font.Bold = True
+			e.Style.TextColor = Color.Red
+		End If
+	End If
 {% endhighlight %}
 {% endtabs %}
 
@@ -251,7 +241,7 @@ End Sub
 
 ### Cell
 
-The appearance of the group summary cells in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
+The appearance of the group summary cells in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -282,7 +272,7 @@ End Sub
 
 ### Row
 
-The appearance of the group summary row in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
+The appearance of the group summary row in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -322,7 +312,7 @@ End Sub
 
 ### Cell
 
-The appearance of the table summary cells in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
+The appearance of the table summary cells in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -354,7 +344,7 @@ End Sub
 
 ### Row
 
-The appearance of the table summary row in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
+The appearance of the table summary row in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -392,7 +382,7 @@ End Sub
 
 ## Stacked Header
 
-The appearance of the stacked headers in SfDataGrid can be customized conditionally by overriding the [GridStackedHeaderCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridStackedHeaderCellRenderer.html) class.
+The appearance of the stacked headers in SfDataGrid can be customized conditionally by overriding the [GridStackedHeaderCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridStackedHeaderCellRenderer.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -438,7 +428,7 @@ End Class
 
 ## Row Header
 
-The appearance of the row headers in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
+The appearance of the row headers in SfDataGrid can be customized conditionally by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -476,7 +466,7 @@ End Sub
 
 ## Adding an Image for a Cell
 
-SfDataGrid allows to add image within a cell by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
+SfDataGrid allows to add image within a cell by handling the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -512,7 +502,7 @@ End Sub
 ## Highlighting the Newly Added Row 
 
 The newly added records in SfDataGrid can be highlighted by changing its Background or Foreground color. 
-For that add a new Boolean property in underling data source and set it as true for newly added records in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowInitiating_EV.html) event.
+For that add a new Boolean property in underling data source and set it as true for newly added records in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowInitiating_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -530,32 +520,25 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-Now change the appearance of the row in [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event based on this property value.
+Now change the appearance of the row in [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event based on this property value.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.QueryCellStyle += SfDataGrid_QueryCellStyle;
+this.sfDataGrid1.DrawCell += SfDataGrid1_DrawCell;
 
-private void SfDataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
+private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
 {
-    if (e.DataRow == null || e.DataRow.RowData == null)
-        return;
-
     if (e.DataRow.RowData != null && (e.DataRow.RowData as OrderInfo).isNewlyAdded)
         e.Style.BackColor = Color.LightBlue;
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid1.QueryCellStyle, AddressOf SfDataGrid_QueryCellStyle
+AddHandler sfDataGrid1.DrawCell, AddressOf SfDataGrid1_DrawCell
 
-Private Sub SfDataGrid_QueryCellStyle(ByVal sender As Object, ByVal e As QueryCellStyleEventArgs)
-    If e.DataRow Is Nothing OrElse e.DataRow.RowData Is Nothing Then
-        Return
-    End If
-
-    If e.DataRow.RowData IsNot Nothing AndAlso (TryCast(e.DataRow.RowData, OrderInfo)).isNewlyAdded Then
-        e.Style.BackColor = Color.LightBlue
-    End If
+Private Sub SfDataGrid1_DrawCell(ByVal sender As Object, ByVal e As DrawCellEventArgs)
+	If e.DataRow.RowData IsNot Nothing AndAlso (TryCast(e.DataRow.RowData, OrderInfo)).isNewlyAdded Then
+		e.Style.BackColor = Color.LightBlue
+	End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -564,15 +547,15 @@ End Sub
 
 ## Alignment Customization based on Column
 
-The alignment within the cell can be changed based on the columns using the [SfDataGrid.QueryCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCellStyle_EV.html) event.
+The alignment within the cell can be changed based on the columns using the [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.QueryCellStyle += SfDataGrid_QueryCellStyle;
+this.sfDataGrid1.DrawCell += SfDataGrid1_DrawCell;
 
-private void SfDataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
+private void SfDataGrid1_DrawCell(object sender, DrawCellEventArgs e)
 {
-    if (e.DataRow.RowType == RowType.DefaultRow && e.Column.MappingName == "ProductName")
+    if (e.Column.MappingName == "ProductName")
     {
         e.Style.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
         e.Style.HorizontalAlignment = HorizontalAlignment.Center;
@@ -580,13 +563,12 @@ private void SfDataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid1.QueryCellStyle, AddressOf SfDataGrid_QueryCellStyle
-
-Private Sub SfDataGrid_QueryCellStyle(ByVal sender As Object, ByVal e As QueryCellStyleEventArgs)
-    If e.DataRow.RowType = RowType.DefaultRow AndAlso e.Column.MappingName = "ProductName" Then
-        e.Style.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
-        e.Style.HorizontalAlignment = HorizontalAlignment.Center
-    End If
+AddHandler sfDataGrid1.DrawCell, AddressOf SfDataGrid1_DrawCell
+Private Sub SfDataGrid1_DrawCell(ByVal sender As Object, ByVal e As DrawCellEventArgs)
+If e.Column.MappingName = "ProductName" Then
+e.Style.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
+e.Style.HorizontalAlignment = HorizontalAlignment.Center
+End If
 End Sub
 {% endhighlight %}
 {% endtabs %}

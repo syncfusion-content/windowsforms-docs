@@ -15,7 +15,7 @@ Options such as zooming, selection, and tooltip enable effective interaction on 
 
 Tooltip is a hanging window, Which will be shown when the shape is tapped. This is used to show additional information from the object bound with the shape. By default, it takes the property of the bound object, which is referred in the ShapeValuePath and displays its content when the corresponding shape is tapped.
 
-Tooltip is shown only when the [`ShowToolTip`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~ShowToolTip.html) is set to true in the shape file layer.
+Tooltip is shown only when the [`ShowToolTip`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~ShowToolTip.html) is set to true in the shape file layer.
 
 
 ### Code sample
@@ -124,17 +124,17 @@ Each shape in a map can be either selected or unselected when interacted with sh
 1. Single selection
 2. Multiple selection
 
-The selected map shapes are differentiated by their fill. The [`SelectedShapeColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~SelectedShapeColor.html) of ShapeSetting is used to fill the selected shape.
+The selected map shapes are differentiated by their fill. The [`SelectedShapeColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.UI.Xaml.Maps.ShapeSetting~SelectedShapeColor.html) of ShapeSetting is used to fill the selected shape.
 
-All selected shapes are available in the [`SelectedMapShapes`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Maps~SelectedMapShapes.html) of ShapeFileLayer.
+All selected shapes are available in the [`SelectedMapShapes`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Maps~SelectedMapShapes.html) of ShapeFileLayer.
 
 ### Single selection
 
-Single selection allows only one map shape to be selected at a time. The user can select the shape by tapping the shape. Single selection is enabled by setting the [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~EnableSelection.html) property of ShapeFileLayer. If the EnableSelection property is set to true, the shapes can be selected. If it is set to false, the shapes cannot be selected. When any other shape or the map area is selected, the shape that has been already selected will be unselected.
+Single selection allows only one map shape to be selected at a time. The user can select the shape by tapping the shape. Single selection is enabled by setting the [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~EnableSelection.html) property of ShapeFileLayer. If the EnableSelection property is set to true, the shapes can be selected. If it is set to false, the shapes cannot be selected. When any other shape or the map area is selected, the shape that has been already selected will be unselected.
 
 ### Multi selection
 
-Multiple shapes in the map can be selected when the [`SelectionMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~SelectionMode.html) of ShapeFileLayer is set to multiple. Multiple selection can be done when selecting the shapes parallel by pressing Ctrl key. If the Ctrl key is released, single selection will be performed.
+Multiple shapes in the map can be selected when the [`SelectionMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~SelectionMode.html) of ShapeFileLayer is set to multiple. Multiple selection can be done when selecting the shapes parallel by pressing Ctrl key. If the Ctrl key is released, single selection will be performed.
 
 {% tabs %}
 
@@ -231,7 +231,7 @@ Zooming can be done in maps in the following two ways:
 
 ### Zoom using ZoomFactor 
 
-By changing the [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.MapsActionList~ZoomFactor.html) value, maps can be zoomed. If the ZoomFactor value is increased, map will be ZoomIn based on the ZoomFactor value.
+By changing the [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.MapsActionList~ZoomFactor.html) value, maps can be zoomed. If the ZoomFactor value is increased, map will be ZoomIn based on the ZoomFactor value.
 
 {% tabs %}
 
@@ -312,7 +312,7 @@ Screenshot:
 
 ### Zoom using ZoomLevel 
 
-When changing the [`ZoomLevel`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Maps~ZoomLevel.html), the [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Maps~ZoomFactor.html) value will also be changed. So, map will be zoomed based on the ZoomFactor value. The ZoomFactor value is determined when the ZoomLevel is changed. Initial ZoomFactor value is multiplied by the ZoomLevel value, then new value will be set to ZoomFactor.
+When changing the [`ZoomLevel`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Maps~ZoomLevel.html), the [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/windowsforms/maps/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.Maps~ZoomFactor.html) value will also be changed. So, map will be zoomed based on the ZoomFactor value. The ZoomFactor value is determined when the ZoomLevel is changed. Initial ZoomFactor value is multiplied by the ZoomLevel value, then new value will be set to ZoomFactor.
 
 {% tabs %}
 

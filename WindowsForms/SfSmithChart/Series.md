@@ -12,9 +12,9 @@ Chart series is the visual representation of given data. The following APIs are 
 
 `DataSource` : Data collection that is to be given to plot the data.
 
-[`ResistanceMember`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ResistanceMember.html) : A string property that represents the resistance values in impedance Smith chart and conductance values in admittance Smith chart.
+[`ResistanceMember`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ResistanceMember.html) : A string property that represents the resistance values in impedance Smith chart and conductance values in admittance Smith chart.
 
-[`ReactanceMember`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ReactanceMember.html) : A string property that represents the reactance values in impedance Smith chart and susceptance values in admittance Smith chart.
+[`ReactanceMember`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ReactanceMember.html) : A string property that represents the reactance values in impedance Smith chart and susceptance values in admittance Smith chart.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ sfSmithChart1.Series.Add(series)
 
 ## Customizing the line series
 
-The line stroke and width can be customized by using the [`Interior`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~Interior.html) and [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.LineSeries~StrokeWidth.html) properties of line series.
+The line stroke and width can be customized by using the [`Interior`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~Interior.html) and [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.LineSeries~StrokeWidth.html) properties of line series.
 
 {% tabs %}
 
@@ -80,7 +80,7 @@ series.StrokeWidth = 3
 
 ## Series visibility
 
-To hide the series programmatically, set the [`Visible`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~Visible.html) property to false for the specific series.
+To hide the series programmatically, set the [`Visible`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~Visible.html) property to false for the specific series.
 
 {% tabs %}
 

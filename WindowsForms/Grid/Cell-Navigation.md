@@ -21,7 +21,7 @@ The <kbd>Ctrl</kbd>+ Arrow keys combination is used to navigate the current cell
 The <kbd>Ctrl</kbd>+<kbd>Home</kbd> and <kbd>Ctrl</kbd>+<kbd>End</kbd> key combinations are used to move the current cell selection to the TopLeft and BottomRight cells of the GridControl.
 
 ## Navigation of Cells using Mouse
-The GridControl provides the support for navigating the cells using the mouse click. The CurrentCell selection can be navigated to the desired cell by clicking on it. This default option of the grid can be restricted by using the [ControllerOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ControllerOptions.html) property.
+The GridControl provides the support for navigating the cells using the mouse click. The CurrentCell selection can be navigated to the desired cell by clicking on it. This default option of the grid can be restricted by using the [ControllerOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ControllerOptions.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ Me.gridControl1.ControllerOptions = Me.gridControl1.ControllerOptions And (Not S
 {% endtabs %}
 
 ### Prevent removing of selection using mouse right click
-The selection will be cleared when perform the right click on the selected range of cells. It can be restricted from clearing the selection using the [SelectCellsMouseButtonsMask](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectCellsMouseButtonsMask.html) property. This will be used to display the context menu for performing the actions on the selected range of cells.
+The selection will be cleared when perform the right click on the selected range of cells. It can be restricted from clearing the selection using the [SelectCellsMouseButtonsMask](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectCellsMouseButtonsMask.html) property. This will be used to display the context menu for performing the actions on the selected range of cells.
 {% tabs %}
 {% highlight c# %}
 //Restrict the clearing of selection using the mouse right click.
@@ -48,7 +48,7 @@ Me.gridControl1.SelectCellsMouseButtonsMask = System.Windows.Forms.MouseButtons.
 {% endtabs %}
 
 ### Restrict cell navigation using event
-The current cell navigation can be restricted by canceling the [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellActivating_EV.html) event.
+The current cell navigation can be restricted by canceling the [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellActivating_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ End Sub
 {% endtabs %}
 
 ## Setting TAB key behavior 
-The cell navigation using <kbd>TAB</kbd> key can be enabled in GridControl by setting the [WantTabKey](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~WantTabKey.html) property to `true`.
+The cell navigation using <kbd>TAB</kbd> key can be enabled in GridControl by setting the [WantTabKey](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~WantTabKey.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,7 +91,7 @@ Me.gridControl.WantTabKey = False
 {% endtabs %}
 
 ### Handling the TAB key to navigate within grid 
-The [WantTabKeyInPreProcessMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~WantTabKeyInPreProcessMessage.html) property is used to indicate whether the GridControl should handle <kbd>TAB</kbd> keys to move the focus either cells or controls. If it is `true` then it will make sure that no other control on a form can override the <kbd>TAB</kbd> key behavior of this control. 
+The [WantTabKeyInPreProcessMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~WantTabKeyInPreProcessMessage.html) property is used to indicate whether the GridControl should handle <kbd>TAB</kbd> keys to move the focus either cells or controls. If it is `true` then it will make sure that no other control on a form can override the <kbd>TAB</kbd> key behavior of this control. 
 
 {% tabs %}
 {% highlight c# %}
@@ -105,7 +105,7 @@ Me.gridControl.WantTabKeyInPreProcessMessage = True
 {% endtabs %}
 
 ## Setting the TAB index 
-The [TabIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~TabIndex.html) property is used to set the tab order of the GridControl while using the <kbd>TAB</kbd> key navigations. 
+The [TabIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~TabIndex.html) property is used to set the tab order of the GridControl while using the <kbd>TAB</kbd> key navigations. 
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,7 @@ Me.gridControl.TabIndex = 4
 {% endhighlight %}
 {% endtabs %}
 
-N> The Changing of `TabIndex` in GridControl can be notified by using the [TabIndexChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~TabIndex.html) event.
+N> The Changing of `TabIndex` in GridControl can be notified by using the [TabIndexChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~TabIndex.html) event.
 
 ### Avoid setting focus using TAB key for a particular control
 The focus for particular control using <kbd>TAB</kbd> key can be restricted by using [TabStop](https://msdn.microsoft.com/en-in/library/system.windows.forms.control.tabstop%28v=vs.110%29.aspx) property.
@@ -151,7 +151,7 @@ Me.gridControl1.WantTabKey = False
 {% endtabs %}
 
 ## Disabling Escape key 
-The grid can reset the cell contents or the cell selection using the <kbd>Escape</kbd> key. This can be disabled by setting the [WantEscapeKey](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~WantEscapeKey.html) property to `false`.
+The grid can reset the cell contents or the cell selection using the <kbd>Escape</kbd> key. This can be disabled by setting the [WantEscapeKey](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~WantEscapeKey.html) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -165,7 +165,7 @@ Me.gridControl.WantEscapeKey = False
 {% endtabs %}
 
 ## Disabling Enter key 
-The <kbd>Enter</kbd> Key can be used to navigate the cells in GridControl when it’s not in editing mode. This can be disabled by setting the [WantEnterKey](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~WantEnterKey.html) property to `false`.
+The <kbd>Enter</kbd> Key can be used to navigate the cells in GridControl when it’s not in editing mode. This can be disabled by setting the [WantEnterKey](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~WantEnterKey.html) property to `false`.
 {% tabs %}
 {% highlight c# %}
 //To avoid the Enter key.
@@ -178,7 +178,7 @@ Me.gridControl.WantEnterKey = False
 {% endtabs %}
 
 ## Setting Enter key behavior
-The navigation of cells using the <kbd>Enter</kbd> key can be handled using [EnterKeyBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~EnterKeyBehavior.html) property. It provides the following navigation options to move the cell focus when <kbd>Enter</kbd> is pressed.
+The navigation of cells using the <kbd>Enter</kbd> key can be handled using [EnterKeyBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~EnterKeyBehavior.html) property. It provides the following navigation options to move the cell focus when <kbd>Enter</kbd> is pressed.
 
 * Bottom
 * BottomRight
@@ -206,9 +206,9 @@ Me.gridControl.EnterKeyBehavior = GridDirectionType.Down
 {% endtabs %}
 
 ## Setting cell navigation behavior 
-The `EnterKeyBehavior` is working based on [WrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~WrapCellBehavior.html) property**.** It is used to navigate to first column of the next row or last column of the previous row when at end or beginning of a row.  
+The `EnterKeyBehavior` is working based on [WrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~WrapCellBehavior.html) property**.** It is used to navigate to first column of the next row or last column of the previous row when at end or beginning of a row.  
 
-The [GridWrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.html) enumeration has the following list of options,
+The [GridWrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.html) enumeration has the following list of options,
 
 * **WrapGrid** - Move to first row and column, when focus at the last row and last column.
 * **WrapRow** - Move to first column in next row or last column in previous row.
@@ -259,7 +259,7 @@ Me.gridControl1.CurrentCell.MoveRight()
 {% endtabs %}
 
 ### Navigate to a particular cell
-The current cell can be moved to particular cell by using [MoveTo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDragWindow~MoveTo.html) method.
+The current cell can be moved to particular cell by using [MoveTo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDragWindow~MoveTo.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -275,7 +275,7 @@ Me.gridControl1.CurrentCell.MoveTo(GridRangeInfo.Cell(2, 2))
 N> The desired cell can be programmatically get into the view by using the [ScrollCellInView](http://help.syncfusion.com/windowsforms/grid/scrolling#scroll-and-view-a-specific-cell) method.
 
 ### Moving current cell without selecting any cells
-The current cell can be moved to the specific direction without selecting any cells by using the [InternalMove](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~InternalMove.html) method. It will skip the number of cells given in the argument from the current cell position.
+The current cell can be moved to the specific direction without selecting any cells by using the [InternalMove](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~InternalMove.html) method. It will skip the number of cells given in the argument from the current cell position.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # DigitalGauge
 
-[DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED Display) mode. It is used to display a range of values that uses character in combination with numbers.
+[DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED Display) mode. It is used to display a range of values that uses character in combination with numbers.
 
 # Key features
 
@@ -25,11 +25,11 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) in any application:
+The following list of assemblies should be added as reference to use the [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) in any application:
 
 <table>
 <tr>
@@ -61,7 +61,7 @@ Syncfusion.Shared.Base contains style related properties of DigitalGauge and var
 
 ## Installing NuGet Packages
 
-To use [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control in Windows Forms application via nuget, the following packages should be installed.
+To use [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control in Windows Forms application via nuget, the following packages should be installed.
 
 <table>
 <tr>
@@ -129,7 +129,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 # Creating simple application with DigitalGauge
 
-You can create the Windows Forms application with [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control as follows:
+You can create the Windows Forms application with [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Add control via designer](#adding-control-via-designer)
@@ -141,7 +141,7 @@ Create a new Windows Forms project in the Visual Studio to display the DigitalGa
 
 ## Add control via designer
 
-The [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Gauge.Windows.dll
 * Syncfusion.Shared.Base.dll

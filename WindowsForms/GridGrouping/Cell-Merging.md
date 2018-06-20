@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Cell Merging
-Merging is the process of combining two or more adjacent cells with the same data into a single cell. The merge cells can be enabled in the GridGroupingControl by setting the [MergeCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~MergeCell.html), [MergeCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~MergeCellsMode.html) and [MergeCellsLayout](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties.
+Merging is the process of combining two or more adjacent cells with the same data into a single cell. The merge cells can be enabled in the GridGroupingControl by setting the [MergeCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~MergeCell.html), [MergeCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~MergeCellsMode.html) and [MergeCellsLayout](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ Me.gridGroupingControl1.TableModel.Options.MergeCellsMode = GridMergeCellsMode.O
 ![](Cell-Merging_images/Cell-Merging_img1.png)
 
 ## Setting Merge Cells Behavior 
-The calculating behavior of the merge cells can be set by using the `MergeCellsMode` property. It is used to set whether the merge cells need to be calculated at the time of loading grid or calculate on demand basis. It can also be used to set the behavior of the merging such as rows in columns, columns in rows and hidden range of cells using the [GridMergeCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMergeCellsMode.html) enumeration.
+The calculating behavior of the merge cells can be set by using the `MergeCellsMode` property. It is used to set whether the merge cells need to be calculated at the time of loading grid or calculate on demand basis. It can also be used to set the behavior of the merging such as rows in columns, columns in rows and hidden range of cells using the [GridMergeCellsMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridMergeCellsMode.html) enumeration.
 
 ### Merging Rows in Columns
 The adjacent rows with the same data can be merged into the single column by using the `MergeRowsInColumns` option.
@@ -75,7 +75,7 @@ Me.gridGroupingControl1.TableModel.Options.MergeCellsLayout = GridMergeCellsLayo
 {% endtabs %}
 
 ## Delaying and Evaluating merge cells
-The merging can be delayed for specified range of cells by using [DelayMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~DelayMergeCells.html) methods. The delayed merged cells can be re-evaluated later by using[EvaluateMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~EvaluateMergeCells.html) methods. Therefore the merged cells which are delayed will not be re-evaluated until `EvaluateMergeCells` method is called for that specified range.
+The merging can be delayed for specified range of cells by using [DelayMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~DelayMergeCells.html) methods. The delayed merged cells can be re-evaluated later by using[EvaluateMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~EvaluateMergeCells.html) methods. Therefore the merged cells which are delayed will not be re-evaluated until `EvaluateMergeCells` method is called for that specified range.
 
 {% tabs %}
 {% highlight c# %}
@@ -97,7 +97,7 @@ Me.gridGroupingControl1.TableModel.MergeCells.EvaluateMergeCells(GridRangeInfo.R
 {% endtabs %}
 
 ## Finding the Merged Range
-The [MergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html) collection maintains all the merged ranges of a GridGroupingControl. To find a merged range of a cell, [FindRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~FindRange.html) method can be used. If the specified cell with row index and column index is inside a ` MergedRange `, a range will be returned. Otherwise it will return the empty range.
+The [MergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html) collection maintains all the merged ranges of a GridGroupingControl. To find a merged range of a cell, [FindRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells~FindRange.html) method can be used. If the specified cell with row index and column index is inside a ` MergedRange `, a range will be returned. Otherwise it will return the empty range.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,7 +122,7 @@ N> The merged range of a cell can also be get by using [GetSpannedRangeInfo](htt
 ![](Cell-Merging_images/Cell-Merging_img4.png)
 
 ## Custom Cell Merging
-The cell merging can be customized by handling the [QueryCanMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCanMergeCells_EV.html) event. This event will be raised when grid compares the content of the two cells to determine if they should be merged. It can merge the cells when the `e.Result` and `e.Handled` is set to `true`.
+The cell merging can be customized by handling the [QueryCanMergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCanMergeCells_EV.html) event. This event will be raised when grid compares the content of the two cells to determine if they should be merged. It can merge the cells when the `e.Result` and `e.Handled` is set to `true`.
 
 The below code snippet is used to merge the two columns with the different data,
 

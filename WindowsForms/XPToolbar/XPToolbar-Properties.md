@@ -98,3 +98,6 @@ Highlights the bar items on mouse hovering. By default it is set to `true`.</td>
 ShowChevron</td><td>
 Indicates whether to show chevron. (Default - `true`)</td></tr>
 </table>
+
+
+

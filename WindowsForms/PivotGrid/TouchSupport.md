@@ -8,7 +8,7 @@ documentation: ug
 --- 
 
 # Touch Support
-PivotGridControl provides the swipe scrolling, panning and touch selection (bubble selection) touch supports. The touch support for grid can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableTouchMode.html#) property to true. This will enable the grid to support the swiping, panning and touch selection (bubble selection). The default value of `EnableTouchMode` property is `false`.
+PivotGridControl provides the swipe scrolling, panning and touch selection (bubble selection) touch supports. The touch support for grid can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableTouchMode.html#) property to true. This will enable the grid to support the swiping, panning and touch selection (bubble selection). The default value of `EnableTouchMode` property is `false`.
 {% tabs %}
 {% highlight c# %}
 //Enable the touch mode
@@ -45,7 +45,7 @@ Me.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = True
 N> PivotGridControl does not allow to perform the touch selection operation in 2003 Excel like selection frame. 
 
 ### Disabling the Touch Selection
-The touch selection can be disabled by setting the [ShowTouchIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowTouchIndicator.html#) property to `false`. The default value of `ShowTouchIndicator` property is `true`.
+The touch selection can be disabled by setting the [ShowTouchIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowTouchIndicator.html#) property to `false`. The default value of `ShowTouchIndicator` property is `true`.
 {% tabs %}
 {% highlight c# %}
 //Disable the touch indicator

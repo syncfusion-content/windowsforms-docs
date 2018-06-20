@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 # Appearance and Formatting
-This section will explain how to control the appearance and formatting of GridGroupingControl at design time as well as at run time. The overall appearance and also the appearance of each element of the grid can be changed by using the [Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~Appearance.html) property.
+This section will explain how to control the appearance and formatting of GridGroupingControl at design time as well as at run time. The overall appearance and also the appearance of each element of the grid can be changed by using the [Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~Appearance.html) property.
 
-[Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~Appearance.html) contains a list of [GridTableCellAppearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance.html) properties. Each of `GridTableCellAppearance` contains the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) properties such as back color, Font and cell type, which defines the look and behavior of a grid cell. Each of these properties identifies a particular set of cells that make up GridGroupingControl. 
+[Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~Appearance.html) contains a list of [GridTableCellAppearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance.html) properties. Each of `GridTableCellAppearance` contains the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) properties such as back color, Font and cell type, which defines the look and behavior of a grid cell. Each of these properties identifies a particular set of cells that make up GridGroupingControl. 
 
-Let’s consider three of the `GridStyleInfo` properties for better explanation. [AnyCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~AnyCell.html), [AnyRecordFieldCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~AnyRecordFieldCell.html) and [AlternateRecordFieldCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~AlternateRecordFieldCell.html). 
+Let’s consider three of the `GridStyleInfo` properties for better explanation. [AnyCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~AnyCell.html), [AnyRecordFieldCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~AnyRecordFieldCell.html) and [AlternateRecordFieldCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~AlternateRecordFieldCell.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -25,7 +25,7 @@ Me.gridGroupingControl1.Appearance.AnyCell.BackColor = Color.LightGreen
 {% endhighlight %}
 {% endtabs %}
 
-N> For enabling the styles to be changes in the headers also, then you have to see the [ThemesEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ThemesEnabled.html) property as false.
+N> For enabling the styles to be changes in the headers also, then you have to see the [ThemesEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ThemesEnabled.html) property as false.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img1.jpeg)
 
@@ -58,10 +58,10 @@ Me.gridGroupingControl1.Appearance.AlternateRecordFieldCell.BackColor = Color.Li
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img3.jpeg)
 
 ## Table Level Appearance
-Appearance can be customized for parent table level and child table level by using the [TableDescriptor.Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) property. To set the appearance for the child table, get the table descriptor of the particular child table manually and then use that `Appearance` property for customizing it.
+Appearance can be customized for parent table level and child table level by using the [TableDescriptor.Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) property. To set the appearance for the child table, get the table descriptor of the particular child table manually and then use that `Appearance` property for customizing it.
 
 ### Parent Level changes
-For changing the appearance of the parent level table make use of the `Appearance` property which contains all the [GridTableCellAppearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance.html) class members. Use the members of this class to customize styles like in below code.
+For changing the appearance of the parent level table make use of the `Appearance` property which contains all the [GridTableCellAppearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance.html) class members. Use the members of this class to customize styles like in below code.
 
 {% tabs %}
 {% highlight c# %}
@@ -144,7 +144,7 @@ tableDescriptor.Appearance.GroupCaptionCell.Borders.Bottom = New GridBorder(Grid
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img4.jpeg)
 
 ## Group Level Appearance
-This section explains how to customize the appearances of different group elements. You can provide unique appearances to every element of a group such as [GroupCaptionCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupCaptionCell.html) and group header or footer cells. This can be done by using the some of the properties under the appearance section like [GroupCaptionCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupCaptionCell.html), [GroupCaptionPlusMinusCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupCaptionPlusMinusCell.html), [GroupHeaderSectionCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupHeaderSectionCell.html), [GroupIndentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupIndentCell.html), [GroupFooterSectionCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupFooterSectionCell.html), [GroupPreviewCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupPreviewCell.html). 
+This section explains how to customize the appearances of different group elements. You can provide unique appearances to every element of a group such as [GroupCaptionCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupCaptionCell.html) and group header or footer cells. This can be done by using the some of the properties under the appearance section like [GroupCaptionCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupCaptionCell.html), [GroupCaptionPlusMinusCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupCaptionPlusMinusCell.html), [GroupHeaderSectionCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupHeaderSectionCell.html), [GroupIndentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupIndentCell.html), [GroupFooterSectionCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupFooterSectionCell.html), [GroupPreviewCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance~GroupPreviewCell.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -162,7 +162,7 @@ Me.gridGroupingControl1.Appearance.GroupCaptionRowHeaderCell.Interior = New Brus
 {% endtabs %}
 
 ## Header Images
-Images can be added to the header of GridGroupingControl by using the [HeaderImage](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~HeaderImage.html) property. Also the alignment of the header image can be altered by using the[HeaderImageAlignment](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~HeaderImageAlignment.html) property.
+Images can be added to the header of GridGroupingControl by using the [HeaderImage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~HeaderImage.html) property. Also the alignment of the header image can be altered by using the[HeaderImageAlignment](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~HeaderImageAlignment.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,15 +179,15 @@ N> The images in header will also be shown in the grouped column headers which i
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img5.jpeg)
 
 ## Column-Based Formatting
-Unique appearance for different columns in GridGroupingControl can be achieved by using the [GridColumnDescriptor.Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) property. Column formatting can be done in two ways, through design time and programmatically.
+Unique appearance for different columns in GridGroupingControl can be achieved by using the [GridColumnDescriptor.Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) property. Column formatting can be done in two ways, through design time and programmatically.
 
 ### Formatting through Designer
-Once the data source is set, select [TableDescriptor.Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Columns.html) property in the property window of the GridGroupingControl. This will open the [GridColumnDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) collection editor that is populated with the columns in the data source. You can modify the appearance of the desired column by setting `Appearance` property of that column in this editor.
+Once the data source is set, select [TableDescriptor.Columns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Columns.html) property in the property window of the GridGroupingControl. This will open the [GridColumnDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) collection editor that is populated with the columns in the data source. You can modify the appearance of the desired column by setting `Appearance` property of that column in this editor.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img6.jpeg)
 
 ### Formatting through Code
-[GridColumnDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) provides the mapping information for each columns of the underlying data source. Then using the [Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) property of this column you can customize the appearance in code behind.
+[GridColumnDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) provides the mapping information for each columns of the underlying data source. Then using the [Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) property of this column you can customize the appearance in code behind.
 
 {% tabs %}
 {% highlight c# %}
@@ -231,21 +231,21 @@ desc4.Appearance.AnyRecordFieldCell.Interior = New BrushInfo(Color.FromArgb(252,
 N> For more details, refer the following browser sample: &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Column Styles
 
 ## BaseStyles
-[BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingLookAndFeel~BaseStyles.html) is one of the parent-type style which is used to customize the cell’s appearance. `BaseStyles` are `GridStyleInfo` objects which can be associated with an arbitrary collection of cells. `BaseStyles` can be applied to GridGroupingControl through designer as well as code wise.
+[BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingLookAndFeel~BaseStyles.html) is one of the parent-type style which is used to customize the cell’s appearance. `BaseStyles` are `GridStyleInfo` objects which can be associated with an arbitrary collection of cells. `BaseStyles` can be applied to GridGroupingControl through designer as well as code wise.
 
 ### Applying BaseStyles through Designer
-To add style templates at design time, `BaseStyles` property has to accessed in the property editor. This will open `GridTableStyle Collection Editor` that lists [StyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableBaseStyle~StyleInfo.html) properties that can be associated to a grid cell. In here make the changes for the required cells.
+To add style templates at design time, `BaseStyles` property has to accessed in the property editor. This will open `GridTableStyle Collection Editor` that lists [StyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableBaseStyle~StyleInfo.html) properties that can be associated to a grid cell. In here make the changes for the required cells.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img8.jpeg)
 
-After creating the base styles, assign it to the required grid cells by using the [BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingLookAndFeel~BaseStyles.html) property. For example, if this base style is needed to be added for the alternative record fields then use the created base styles in `Appearance.AlternateRecordFieldCell.BaseStyle` property.
+After creating the base styles, assign it to the required grid cells by using the [BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingLookAndFeel~BaseStyles.html) property. For example, if this base style is needed to be added for the alternative record fields then use the created base styles in `Appearance.AlternateRecordFieldCell.BaseStyle` property.
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img9.jpeg)
 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img10.jpeg)
 
 ### Applying BaseStyles through Code
-Base styles can be added through code by using the [BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingLookAndFeel~BaseStyles.html) property. The following code example illustrates how to create and apply the styles to grid.
+Base styles can be added through code by using the [BaseStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingLookAndFeel~BaseStyles.html) property. The following code example illustrates how to create and apply the styles to grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -270,7 +270,7 @@ gridGroupingControl1.Appearance.AlternateRecordFieldCell.BaseStyle = "BaseStyle 
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img11.jpeg)
 
 ## Table Options
-[TableOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.IGridTableOptionsSource~TableOptions.html) lets you set various properties that will affect the look and behavior of a GridGroupingControl across all groups and child groups. Properties such as default height of a Caption Row, group header and Footer, PreviewRow, or whether TreeLines are visible between PlusMinus cells are controlled by this property. All the properties are stored in the [GridTableOptionsStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo_properties.html) class.
+[TableOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.IGridTableOptionsSource~TableOptions.html) lets you set various properties that will affect the look and behavior of a GridGroupingControl across all groups and child groups. Properties such as default height of a Caption Row, group header and Footer, PreviewRow, or whether TreeLines are visible between PlusMinus cells are controlled by this property. All the properties are stored in the [GridTableOptionsStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo_properties.html) class.
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.TopLevelGroupOptions.ShowCaption = true;
@@ -300,7 +300,7 @@ Me.gridGroupingControl1.TableOptions.CaptionRowHeight = 22
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Grouping Grid Options\Table Options Demo
 
 ## FormatCell Dialog box
-GridGroupingControl has an option to show FormatCell dialog which imitates Excel behavior. Using this dialog box, appearance of the grid can be customized. Using this dialog box, you can make changes in Font, Number, Background and Alignment options. To avail this option make use of the [GroupingGridFormatCellDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridFormatCellDialog~_ctor.html)  class. and pass GridGroupingControl as a parameter.
+GridGroupingControl has an option to show FormatCell dialog which imitates Excel behavior. Using this dialog box, appearance of the grid can be customized. Using this dialog box, you can make changes in Font, Number, Background and Alignment options. To avail this option make use of the [GroupingGridFormatCellDialog](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridFormatCellDialog~_ctor.html)  class. and pass GridGroupingControl as a parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -320,7 +320,7 @@ dialog.ShowDialog()
 ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img13.jpeg)
 
 ## Conditional Formatting
-Conditional Formatting can be specified by accessing the [TableDescriptor.ConditionalFormats](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ConditionalFormats.html) property. You need to add the filter criteria either by adding [RecordFilters](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor~RecordFilters.html) or by an expression in the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html) class. Using this descriptor, you can specify the filter criteria for the cells and the style to be applied for filtered cells. Check the topic [Conditional Formatting](http://help.syncfusion.com/windowsforms/gridgrouping/conditional-formatting) for detailed explanation. 
+Conditional Formatting can be specified by accessing the [TableDescriptor.ConditionalFormats](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ConditionalFormats.html) property. You need to add the filter criteria either by adding [RecordFilters](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor~RecordFilters.html) or by an expression in the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html) class. Using this descriptor, you can specify the filter criteria for the cells and the style to be applied for filtered cells. Check the topic [Conditional Formatting](http://help.syncfusion.com/windowsforms/gridgrouping/conditional-formatting) for detailed explanation. 
 
 {% tabs %}
 {% highlight c# %}
@@ -376,9 +376,9 @@ Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(format2)
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Conditional Formatting
 
 ## Dynamic Formatting
-Style settings can be applied to different grid elements dynamically at run time. This can be achieved by proper handling of the [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryCellStyleInfo_EV.html) event. It provides `GridStyleInfo` object for a cell on demand.
+Style settings can be applied to different grid elements dynamically at run time. This can be achieved by proper handling of the [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryCellStyleInfo_EV.html) event. It provides `GridStyleInfo` object for a cell on demand.
 
-[QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryCellStyleInfo_EV.html) is raised randomly for each cell and any type of formatting can be done in this event. For instance, you can apply style settings for a given [CellType](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfo~CellType.html) by using [TableCellIdentity.TableCellType](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoIdentity~TableCellType.html) property for a given cell.
+[QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryCellStyleInfo_EV.html) is raised randomly for each cell and any type of formatting can be done in this event. For instance, you can apply style settings for a given [CellType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfo~CellType.html) by using [TableCellIdentity.TableCellType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoIdentity~TableCellType.html) property for a given cell.
 
 {% tabs %}
 {% highlight c# %}

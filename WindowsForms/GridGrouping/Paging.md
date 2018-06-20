@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Paging
-Paging is the process of splitting up of large records into a separate segments to view and manipulate the data. It is used to improve the performance of the grid. The paging support can be enabled to the GridGroupingControl by using the [Pager.Wire](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Pager~Wire.html) method.
+Paging is the process of splitting up of large records into a separate segments to view and manipulate the data. It is used to improve the performance of the grid. The paging support can be enabled to the GridGroupingControl by using the [Pager.Wire](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Pager~Wire.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -32,7 +32,7 @@ pager.Wire(Me.gridGroupingControl1, dataTable) ' dataTable is the DataTable obje
 N> The paging is not supported for the nested grids.
 
 ## Page Size 
-The size of the page that is number of records needs to be visible in each page can be set by using the [PageSize](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Pager~PageSize.html) property.
+The size of the page that is number of records needs to be visible in each page can be set by using the [PageSize](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Pager~PageSize.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -145,7 +145,7 @@ Next column
 ![](Paging_images/Paging_img6.png)
 
 ## Unwire Paging
-The paging can be removed from the grid by using the [Pager.Unwire](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Pager~Unwire.html) method. It will remove the pager from the grid and display as all the records.
+The paging can be removed from the grid by using the [Pager.Unwire](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.Pager~Unwire.html) method. It will remove the pager from the grid and display as all the records.
 
 {% tabs %}
 {% highlight c# %}

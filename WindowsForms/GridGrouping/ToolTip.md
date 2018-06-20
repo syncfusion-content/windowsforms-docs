@@ -16,7 +16,7 @@ The ToolTip can be added to the individual cells. This allows a user to show mor
 
 ## Adding ToolTip
 
-The ToolTip can be added to the particular cell by setting [CellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellTipText.html) property in the [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryCellStyleInfo_EV.html) event. 
+The ToolTip can be added to the particular cell by setting [CellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellTipText.html) property in the [QueryCellStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryCellStyleInfo_EV.html) event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -70,7 +70,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("City").Appearance.AnyRecordFiel
 
 ### Adding ToolTip to Nested table
 
-The ToolTip can be added for the nested tables by getting the child table descriptor using the  [GetTableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GetTableDescriptor.html) method and setting the `CellTipText` to the column which you want.
+The ToolTip can be added for the nested tables by getting the child table descriptor using the  [GetTableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GetTableDescriptor.html) method and setting the `CellTipText` to the column which you want.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,7 +90,7 @@ N> The ToolTip will not be enabled for a cell if the `CellTipText` property of t
 
 ## Removing ToolTip
 
-The ToolTip for the cell can be removed by using the [ResetCellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ResetCellTipText.html) method. It will reset the `CellTipText` property to the default values.
+The ToolTip for the cell can be removed by using the [ResetCellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ResetCellTipText.html) method. It will reset the `CellTipText` property to the default values.
 
 {% tabs %}
 {% highlight c# %}
@@ -210,13 +210,13 @@ Me.gridGroupingControl1.TableControl.CellToolTip.AutomaticDelay = 1000
 {% endhighlight %}
 {% endtabs %}
 
-N> The [CellToolTip  ](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~CellToolTip.html#) property can be accessed through [TableControl](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#) . The ToolTip delay time can be assigned to Nested tables by using the [GetTableControl](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GetTableControl.html) method.
+N> The [CellToolTip  ](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~CellToolTip.html#) property can be accessed through [TableControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#) . The ToolTip delay time can be assigned to Nested tables by using the [GetTableControl](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GetTableControl.html) method.
 
 ## Event
 
 ### ActivateToolTip event
 
-[ActivateToolTip]( http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~ActivateToolTip_EV.html ) event will be triggered when the mouse hovers on a cell which has the valid [CellTipText]( https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellTipText.html ) (`CellTipText` should not be empty).
+[ActivateToolTip]( http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~ActivateToolTip_EV.html ) event will be triggered when the mouse hovers on a cell which has the valid [CellTipText]( https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellTipText.html ) (`CellTipText` should not be empty).
 
 {% tabs %}
 {% highlight c# %}
@@ -274,7 +274,7 @@ End Sub
 
 ## Identify whether cell has ToolTip
 
-To identify whether the cell has ToolTip or not, [HasCellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~HasCellTipText.html) property can be used in the `QueryCellStyleInfo` event. 
+To identify whether the cell has ToolTip or not, [HasCellTipText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~HasCellTipText.html) property can be used in the `QueryCellStyleInfo` event. 
 
 The below code illustrates that back color and text color are changed for the cells which has ToolTip.
 
