@@ -9,7 +9,7 @@ documentation: ug
 
 # Color value path
 
-The [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ColorValuePath.html) of the tree map control is a path to a field on the source object that serves as the "color" of the object. 
+The [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ColorValuePath.html) of the tree map control is a path to a field on the source object that serves as the "color" of the object. 
 
 Refer to the following code for specifying the color value path.
 

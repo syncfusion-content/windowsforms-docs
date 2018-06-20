@@ -11,9 +11,9 @@ documentation: ug
 
 The tree map legend is used to demonstrate the color value of the leaf nodes. This legend may be appropriate only for tree maps whose leaf nodes are colored by using the RangeBrushColorMapping. 
 
-The icon shapes of the legend items can be set using the [`LegendType`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendType.html) property of the tree map control. The gap between each legend icon can be specified using the [`LegendGap`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendGap.html) property.
+The icon shapes of the legend items can be set using the [`LegendType`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendType.html) property of the tree map control. The gap between each legend icon can be specified using the [`LegendGap`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendGap.html) property.
 
-Legend can be positioned at the left, right, top, or bottom of the tree map control using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendPosition.html) property.
+Legend can be positioned at the left, right, top, or bottom of the tree map control using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.LegendSettings~LegendPosition.html) property.
 
 #### Code sample
 

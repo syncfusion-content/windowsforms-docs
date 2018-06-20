@@ -15,17 +15,17 @@ A GridGroupingControl can automatically detect [DataRelations](https://msdn.micr
 With nested tables, each record in the parent table will have an associated set of records in the child table. Every record in the relation is provided with a `+/-` button called `RecordPlusMinus` that can be expanded (as well as collapsed) to bring the underlying records in the child table into view. The number of tables that can be nested with relations using a grid is `unlimited`.
 
 ## Adding Relations
-The relations of the table can be defined by adding it to the [TableDescriptor.Relations](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Relations.html) collection. By default the GridGroupingControl will create a relation (RelatedMasterDetails) for each `DataRelation` found in a `DataSet`. Relations can either be related foreign key tables or nested child tables that can be expanded and collapsed. Each entry in this collection is owned by[RelationDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) that stores details of a relation. All the `RelationDescriptors` for a given table is managed by RelationDescriptor Collection which is returned by `TableDescriptor.Relations` property.
+The relations of the table can be defined by adding it to the [TableDescriptor.Relations](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Relations.html) collection. By default the GridGroupingControl will create a relation (RelatedMasterDetails) for each `DataRelation` found in a `DataSet`. Relations can either be related foreign key tables or nested child tables that can be expanded and collapsed. Each entry in this collection is owned by[RelationDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) that stores details of a relation. All the `RelationDescriptors` for a given table is managed by RelationDescriptor Collection which is returned by `TableDescriptor.Relations` property.
 
-[TableDescriptor.RelationChildColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~RelationChildColumns.html) collection is internally initialized and contains child key fields of the [RelationDescriptor.RelationKeys](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor~RelationKeys.html) collection of a [RelationKind.RelatedMasterDetails](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor~RelationKind.html) relation. You should not modify this collection.
-[TableDescriptor.PrimaryKeyColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~PrimaryKeyColumns.html) collection defines fields that form a unique primary key for the table. By default, `PrimaryKeyColumns` collection is initialized from the child key fields of the `RelationDescriptor.RelationKeys` collection of a `RelationKind.ForeignKeyReference` relation. If the table is not a foreign table and `UniqueConstraint` for a data table is present, the collection is initialized with fields from that `UniqueConstraint`. Users can also manually modify the collection. If the table is the foreign table of a `RelationKind.ForeignKeyReference` relation, the parent table uses the fields that are defined in the `PrimaryKeyColumns` collection to look-up and identify records in the foreign table.
+[TableDescriptor.RelationChildColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~RelationChildColumns.html) collection is internally initialized and contains child key fields of the [RelationDescriptor.RelationKeys](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor~RelationKeys.html) collection of a [RelationKind.RelatedMasterDetails](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor~RelationKind.html) relation. You should not modify this collection.
+[TableDescriptor.PrimaryKeyColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~PrimaryKeyColumns.html) collection defines fields that form a unique primary key for the table. By default, `PrimaryKeyColumns` collection is initialized from the child key fields of the `RelationDescriptor.RelationKeys` collection of a `RelationKind.ForeignKeyReference` relation. If the table is not a foreign table and `UniqueConstraint` for a data table is present, the collection is initialized with fields from that `UniqueConstraint`. Users can also manually modify the collection. If the table is the foreign table of a `RelationKind.ForeignKeyReference` relation, the parent table uses the fields that are defined in the `PrimaryKeyColumns` collection to look-up and identify records in the foreign table.
 
 ### Adding Relations through Designer
-After binding the hierarchical dataset to the grid, user could find that [TableDescriptor.Relations](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Relations.html) collection is populated with values. These values represent the relationship between the parent and child tables.
+After binding the hierarchical dataset to the grid, user could find that [TableDescriptor.Relations](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Relations.html) collection is populated with values. These values represent the relationship between the parent and child tables.
 
 ![](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img1.png)
 
-The following [GridRelationDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) properties are used to set up the relations in GridGroupingControl.
+The following [GridRelationDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) properties are used to set up the relations in GridGroupingControl.
 
 **Name**                 - Specifies the relation name.<br/>
 **ChildTableName**       - Specifies the name of the ChildTable.<br/>
@@ -232,7 +232,7 @@ parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandC
 {% endhighlight %}
 {% endtabs %}
 
-3.Register the data tables with[Engine.SourceListSet](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~SourceListSet.html) so that [RelationDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) can resolve the name. 
+3.Register the data tables with[Engine.SourceListSet](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~SourceListSet.html) so that [RelationDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) can resolve the name. 
 
 {% tabs %}
 {% highlight c# %}
@@ -269,7 +269,7 @@ While running the sample the tables are connected with Master-Details relation a
 Relation And Hierarchy\Related Master Details Demo
 
 ### Foreign Key Reference Relation
-It is a foreign-key relation for looking up values where an id column in the main table can be used to look up a record in a related table. This is an `n:1` relation where multiple records in the parent table can reference the same record in the related table. Fields in the related table can be referenced using a `.` dot in the [FieldDescriptor.MappingName](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~MappingName.html) of the main table.
+It is a foreign-key relation for looking up values where an id column in the main table can be used to look up a record in a related table. This is an `n:1` relation where multiple records in the parent table can reference the same record in the related table. Fields in the related table can be referenced using a `.` dot in the [FieldDescriptor.MappingName](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~MappingName.html) of the main table.
 
 #### Creating Foreign Key Reference 
 This section sets up a foreign key reference relation between data table and the collection `USStates`. Data table represents parent table of the relation and `USStates` collection serves as the related child list wherein the values can be looked up using a key. The collection derives from `ArrayList` in which every item is an `USState `object having two properties named `Key` and `Name`. It also defines a method named `CreateDefaultCollection` that returns an instance of itself populated with a set of values.
@@ -476,7 +476,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-2.Create an object of `USStates` and add this object into the[SourceListSet](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~SourceListSet.html) with a lookup name.
+2.Create an object of `USStates` and add this object into the[SourceListSet](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~SourceListSet.html) with a lookup name.
 
 {% tabs %}
 {% highlight c# %}
@@ -585,9 +585,9 @@ mainTd.Name = "ForeignKeyReference"
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo
 
 #### ForeignKey Helper 
-The foreign key relations can be easily added to the grid by using the [GridForeignKeyHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridForeignKeyHelper.html). It is used to create the foreign key look up with a single method call instead of going through all the steps described above.
+The foreign key relations can be easily added to the grid by using the [GridForeignKeyHelper](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridForeignKeyHelper.html). It is used to create the foreign key look up with a single method call instead of going through all the steps described above.
 
-The GridForeignKeyHelper class exposes a static method called [SetupForeignTableLookUp](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridForeignKeyHelper~SetupForeignTableLookUp.html) that accepts GridGroupingControl, main table, foreign table, main table column, foreign table value column and foreign table display column and sets up the Foreign Key relation using these parameter values.
+The GridForeignKeyHelper class exposes a static method called [SetupForeignTableLookUp](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridForeignKeyHelper~SetupForeignTableLookUp.html) that accepts GridGroupingControl, main table, foreign table, main table column, foreign table value column and foreign table display column and sets up the Foreign Key relation using these parameter values.
 
 {% tabs %}
 {% highlight c# %}
@@ -601,7 +601,7 @@ GridForeignKeyHelper.SetupForeignTableLookUp(gridGroupingControl1, valueColInMai
 {% endtabs %}
 
 ### ForeignKey KeyWords Relation
-It is a unique relation kind offered by the grouping engine. It is a foreign key relation where matching keys in the columns of the parent and child table define a relationship between two tables. This is an `m:n` relation. Field summaries of the related child table can be referenced using a `.` dot in the [FieldDescriptor.MappingName](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor~MappingName.html) of the main table. This relation kind allows the user to have multi-valued columns in the grid.
+It is a unique relation kind offered by the grouping engine. It is a foreign key relation where matching keys in the columns of the parent and child table define a relationship between two tables. This is an `m:n` relation. Field summaries of the related child table can be referenced using a `.` dot in the [FieldDescriptor.MappingName](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor~MappingName.html) of the main table. This relation kind allows the user to have multi-valued columns in the grid.
 
 The following steps illustrates the creation of `ForeignKeyKeyWords` relation.
 
@@ -1333,7 +1333,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-3.Generate the collection using `BindingList` class, which implements [ListChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Collections.DataTableWrapperList~ListChanged_EV.html) events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
+3.Generate the collection using `BindingList` class, which implements [ListChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base~Syncfusion.Collections.DataTableWrapperList~ListChanged_EV.html) events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -1417,7 +1417,7 @@ The following screenshot will be the outcome of the above steps,
 ![](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img6.png)
 
 ## Generate Auto Relations 
-The [AutoPopulateRelations](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~AutoPopulateRelations.html) property is used to specify, whether the relations should be automatically generated when the DataSource assigned to a `DataTable` with constraints or a `DataSet` with relations defined. This will be enabled by default.
+The [AutoPopulateRelations](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~AutoPopulateRelations.html) property is used to specify, whether the relations should be automatically generated when the DataSource assigned to a `DataTable` with constraints or a `DataSet` with relations defined. This will be enabled by default.
 
 {% tabs %}
 {% highlight c# %}
@@ -1429,7 +1429,7 @@ Me.gridGroupingControl1.AutoPopulateRelations = False
 {% endtabs %}
 
 ## Display Dependent Fields
-When a foreign key relation (or related collection) is used, [ShowRelationFields](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowRelationFields.html) property controls the display of dependent fields from a related table in the main table.
+When a foreign key relation (or related collection) is used, [ShowRelationFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowRelationFields.html) property controls the display of dependent fields from a related table in the main table.
 
 **Hide** - Hides all the fields.<br/>
 **ShowAllRelatedFields** - Shows all related fields including Primary and Foreign Keys.**ShowDisplayFieldsOnly**- Shows only dependent fields; Hides Primary and Foreign Keys.
@@ -1446,7 +1446,7 @@ Me.gridGroupingControl1.ShowRelationFields = ShowRelationFields.ShowAllRelatedFi
 {% endtabs %}
 
 ## Self-Relation Recurrence 
-When nested collection is used, [MaxNestedCollectionRecursionLevel](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~MaxNestedCollectionRecurseLevel.html) property specifies the number of levels of recursion allowed when self-relations are detected. The settings below lets the grid to loop through up to four recursion levels.
+When nested collection is used, [MaxNestedCollectionRecursionLevel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~MaxNestedCollectionRecurseLevel.html) property specifies the number of levels of recursion allowed when self-relations are detected. The settings below lets the grid to loop through up to four recursion levels.
 
 {% tabs %}
 {% highlight c# %}
@@ -1458,7 +1458,7 @@ Me.gridGroupingControl1.Engine.MaxNestedCollectionRecurseLevel = 4
 {% endtabs %}
 
 ## Display Relation Fields
-The [QueryShowRelationDisplayFields](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryShowRelationDisplayFields_EV.html) is raised for every foreign-key relation. At runtime, it allows the user to control related fields of the child table to be added to the `FieldDescriptorCollection`. Inside this event, can get the specific fields and set `e.Cancel` to `true` to avoid adding those fields.
+The [QueryShowRelationDisplayFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryShowRelationDisplayFields_EV.html) is raised for every foreign-key relation. At runtime, it allows the user to control related fields of the child table to be added to the `FieldDescriptorCollection`. Inside this event, can get the specific fields and set `e.Cancel` to `true` to avoid adding those fields.
 
 {% tabs %}
 {% highlight c# %}
@@ -1486,7 +1486,7 @@ End Sub
 {% endtabs %}
 
 ### Removing unwanted fields through Event 
-The [QueryShowField](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryShowField_EV.html) gets fired for every field in the `FieldDescriptorCollection` of individual tables in the dataset. It lets you control the population of field descriptors. Using this event, user can check for specific fields and cancel the population of desired fields at runtime.
+The [QueryShowField](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryShowField_EV.html) gets fired for every field in the `FieldDescriptorCollection` of individual tables in the dataset. It lets you control the population of field descriptors. Using this event, user can check for specific fields and cancel the population of desired fields at runtime.
 
 {% tabs %}
 {% highlight c# %}
@@ -1512,7 +1512,7 @@ End Sub
 {% endtabs %}
 
 ## Notify Adding Relation 
-The [QueryAddRelation](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryAddRelation_EV.html) event is invoked for every relation that is being added to the [RelationDescriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptorCollection_members.html). By setting `e.Cancel` to `true`, user can avoid specific relations being added.
+The [QueryAddRelation](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryAddRelation_EV.html) event is invoked for every relation that is being added to the [RelationDescriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptorCollection_members.html). By setting `e.Cancel` to `true`, user can avoid specific relations being added.
 
 {% tabs %}
 {% highlight c# %}
@@ -1533,7 +1533,7 @@ End Sub
 {% endtabs %}
 
 ## Display Individual Fields
-The [QueryShowNestedPropertiesFields](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryShowNestedPropertiesFields_EV.html) event is called when there exists nested properties in the bound data source. With the help of this event, user can determine if the individual fields in the nested property should be displayed.
+The [QueryShowNestedPropertiesFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridEngine~QueryShowNestedPropertiesFields_EV.html) event is called when there exists nested properties in the bound data source. With the help of this event, user can determine if the individual fields in the nested property should be displayed.
 
 {% tabs %}
 {% highlight c# %}

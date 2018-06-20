@@ -23,7 +23,7 @@ To add sparkline to your form, follow the given steps:
 
 ## Customizing sparkline appearance
 
-The appearance of the sparkline can be customized by using the [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.SparkLine~LineStyle.html) property.
+The appearance of the sparkline can be customized by using the [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.SparkLine~LineStyle.html) property.
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ Me.sparkLine1.Markers.ShowMarker = true
 
 ## Highlighting high/low values
 
-The marker feature supports [HighPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowHighPoint.html), [LowPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowLowPoint.html), [StartPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowStartPoint.html), [EndPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowEndPoint.html) and [NegativePoint](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowNegativePoint.html) of Sparkline.
+The marker feature supports [HighPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowHighPoint.html), [LowPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowLowPoint.html), [StartPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowStartPoint.html), [EndPoint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowEndPoint.html) and [NegativePoint](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.Markers~ShowNegativePoint.html) of Sparkline.
 
 {% tabs %}
 

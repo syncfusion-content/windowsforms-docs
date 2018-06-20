@@ -11,7 +11,7 @@ documentation: ug
 
 ## Default Title
 
-EssentialChart's [Title](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Title.html) property lets you edit the default title for a chart. We can set font style for the title using [Title.Font](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Font.html) property. The default value is **Verdana, 14, Regular**.
+EssentialChart's [Title](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Title.html) property lets you edit the default title for a chart. We can set font style for the title using [Title.Font](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Font.html) property. The default value is **Verdana, 14, Regular**.
 
 {% tabs %}
 
@@ -43,13 +43,13 @@ The above default chart title is simply the first in the list of titles that can
 
 ## Multiple Titles
 
-* Multiple custom Chart Titles can be added to [Chart.Titles](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Titles.html) Collection.
+* Multiple custom Chart Titles can be added to [Chart.Titles](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Titles.html) Collection.
 * Supports numerous docking styles **(Floating, Left, Right, Bottom or Top)** for each title.
 * Each of the custom Titles can be aligned to any position as required.
 
 ## Titles Positioning
 
-Below listed properties will help you to modify the positioning of the [Chart Title](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html).
+Below listed properties will help you to modify the positioning of the [Chart Title](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html).
 
 <table>
 <tr>
@@ -59,22 +59,22 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[Position](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Position.html)'| markdownify }}
+{{'[Position](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Position.html)'| markdownify }}
 </td><td>
 Specifies the position relative to the chart at which to render the chart title panel.<ul><li> Top - above the chart(Default setting)</li><li> Left - left of the chart</li><li> Right - right of the chart</li><li>Bottom - below the chart</li><li>Floating - will not be docked to any specific location. Can be docked manually by dragging the title panel.</li></ul></td></tr>
 <tr>
 <td>
-<br>{{'[Alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDockControl~Alignment.html)'| markdownify }}</td><td>
+<br>{{'[Alignment](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDockControl~Alignment.html)'| markdownify }}</td><td>
 When docked to a side, this property specifies how the title panel should be aligned with respect to the chart boundaries.<ul><li> Center - will be aligned to center(default setting).</li><li> Far - will be aligned Far.</li><li> Near - will be aligned Near.</li></ul></td></tr>
 <tr>
 <td>
-<br>{{'[Behavior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDockControl~Behavior.html)'| markdownify }}</td><td>
+<br>{{'[Behavior](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDockControl~Behavior.html)'| markdownify }}</td><td>
 Specifies the docking behavior of the title.<ul><li> Docking - It is dockable on all four sides.</li><li> Movable - It is movable.</li><li> All - It is movable and dockable.</li><li>None - It is neither movable nor dockable.</li></ul></td></tr>
 </table>
 
 ## Title Look and Feel
 
-There are several appearance options that can be applied on the [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html) instance as illustrated in this [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html) Collection Editor.
+There are several appearance options that can be applied on the [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html) instance as illustrated in this [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html) Collection Editor.
 
 ![](Chart-Appearance_images/Chart-Appearance_img10.jpeg)
 
@@ -118,6 +118,6 @@ Me.ChartControl1.Titles.Add(title)
 
 ## Multiline Chart Title
 
-You can now wrap the Chart titles and display them as multiline text. Set multiline title text in [ChartTitle.Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Text.html) property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
+You can now wrap the Chart titles and display them as multiline text. Set multiline title text in [ChartTitle.Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Text.html) property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
 
 ![](Chart-Appearance_images/Chart-Appearance_img12.jpeg)

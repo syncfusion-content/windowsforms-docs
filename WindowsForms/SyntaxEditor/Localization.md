@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-Localization is the process of translating the application resources into different languages for some specific cultures. The `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html).
+Localization is the process of translating the application resources into different languages for some specific cultures. The `EditControl` supports complete localization to any desired language of all the dialogs boxes and strings associated with it. It can be localized by using the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html).
 
 Follow the steps to localize the dialog boxes in the EditControl:
 
@@ -33,11 +33,11 @@ Imports Syncfusion.Windows.Forms.Edit
 
 {% endtabs %}
 
-2. Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
+2. Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
 
 3. Return the localized versions of the string corresponding to the string identifiers.
 
-4. String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Localization.Localizer+EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
+4. String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Localization.Localizer+EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ Imports Syncfusion.Windows.Forms.ResourceIdentifiers
 
 {% endtabs %}
 
-5. Assign this instance to the [Provider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider~Provider.html) property of the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
+5. Assign this instance to the [Provider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider~Provider.html) property of the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
 
 {% tabs %}
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Data Binding
-SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property.
+SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -44,10 +44,10 @@ Me.sfDataGrid1.DataSource = dataTable
 Below are the limitations when binding DataTable as `DataSource` to SfDataGrid.
 
 * Custom sorting is not supported.
-* [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.DataTableCollectionViewWrapper~Filter.html) is not supported.
+* [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.DataTableCollectionViewWrapper~Filter.html) is not supported.
 * Advanced Filtering does not support Case Sensitive filtering.
-* [AddNewRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowPosition.html) is not support when filtering is enabled.
-* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridUnboundColumn~Expression.html) is not supported. This can be achieved by using the [DataColumn](https://msdn.microsoft.com/en-us/library/System.Data.DataColumn) of DataTable by setting [DataColumn.Expression](https://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression) property.
+* [AddNewRow](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowPosition.html) is not support when filtering is enabled.
+* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridUnboundColumn~Expression.html) is not supported. This can be achieved by using the [DataColumn](https://msdn.microsoft.com/en-us/library/System.Data.DataColumn) of DataTable by setting [DataColumn.Expression](https://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression) property.
 
 ![](DataBinding_images/DataBinding_img1.jpeg)
 
@@ -69,7 +69,7 @@ Me.sfDataGrid1.DataSource = dataSet.Tables(0)
 ![](DataBinding_images/DataBinding_img2.jpeg)
 
 ## Binding Complex Properties
-SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html).
+SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html).
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "EmployeeComplexModel.EmployeeName", HeaderText = "Employee Name" });
@@ -82,7 +82,7 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeCo
 All the data operations (sorting, grouping, filtering and etc.) are supported when binding complex property.
 
 ### Limitations when Binding Complex Property
-* SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) – [AllowDataShaping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html).
+* SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) – [AllowDataShaping](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html).
 
 ## Binding Indexer Properties
 SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to `GridColumn`, set the indexer property path to `MappingName`.
@@ -98,22 +98,22 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "EmployeeDe
 All the data operations (sorting, grouping, filtering and etc.) are supported when binding indexer property. 
 
 ### Limitations when Binding Indexer Property
-* SfDataGrid doesn’t support [LiveDataUpdateMode ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html)– [AllowDataShaping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html).
+* SfDataGrid doesn’t support [LiveDataUpdateMode ](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html)– [AllowDataShaping](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) and [AllowSummaryUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html).
 
 ## Events
 
 ### DataSourceChanged
-[SfDataGrid.DataSourceChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSourceChanged_EV.html) event occurs when the data source is changed by using `DataSource` property.
-This event receives two arguments namely sender that handles SfDataGrid and [DataSourceChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html) as objects.
+[SfDataGrid.DataSourceChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSourceChanged_EV.html) event occurs when the data source is changed by using `DataSource` property.
+This event receives two arguments namely sender that handles SfDataGrid and [DataSourceChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html) as objects.
 The `DataSourceChangedEventArgs` object contains the following properties:
 
-* [OldValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs~OldValue.html) - Gets the value of old data source
-* [NewValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs~NewValue.html)  - Get the value of new data source
-* [OldView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs~OldView.html) – Gets the old view of the data grid.
-* [NewView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs~NewView.html) – Gets the new view of the data grid.
+* [OldValue](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs~OldValue.html) - Gets the value of old data source
+* [NewValue](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs~NewValue.html)  - Get the value of new data source
+* [OldView](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs~OldView.html) – Gets the old view of the data grid.
+* [NewView](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs~NewView.html) – Gets the new view of the data grid.
 
 ## View
-SfDataGrid has the [View](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv.html) interface that implements [IEditableCollectionView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.IEditableCollectionView.html) interface. `View` is responsible for maintaining and manipulating the data and other advanced operations like Sorting, Grouping, Filtering etc.
+SfDataGrid has the [View](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv.html) interface that implements [IEditableCollectionView](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.IEditableCollectionView.html) interface. `View` is responsible for maintaining and manipulating the data and other advanced operations like Sorting, Grouping, Filtering etc.
 When binding Collection to `DataSource` property of SfDataGrid, then `View` will be created and maintains the operations on data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification.
 Following are some important properties that can be used for various purposes.
 
@@ -261,12 +261,12 @@ The following events are associated with `View`.
 * SourceCollectionChanged
 
 #### RecordPropertyChanged
-[RecordPropertyChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged(v=vs.100).aspx) interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://msdn.microsoft.com/en-us/library/system.componentmodel.propertychangedeventargs(v=vs.110).aspx) as object.
+[RecordPropertyChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged(v=vs.100).aspx) interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://msdn.microsoft.com/en-us/library/system.componentmodel.propertychangedeventargs(v=vs.110).aspx) as object.
 `PropertyChangedEventArgs` has below property,
 [PropertyName](https://msdn.microsoft.com/en-us/library/system.componentmodel.propertychangedeventargs.propertyname) – It denotes the PropertyName of the changed value.
 
 #### SourceCollectionChanged
-[SourceCollectionChanged ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html)event is raised when source collection is changed for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://msdn.microsoft.com/en-us/library/system.collections.specialized.notifycollectionchangedeventargs(v=vs.110).aspx) as object.
+[SourceCollectionChanged ](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html)event is raised when source collection is changed for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://msdn.microsoft.com/en-us/library/system.collections.specialized.notifycollectionchangedeventargs(v=vs.110).aspx) as object.
 `NotifyCollectionChangedEventArgs` has below properties,
 
 [Action](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)&rd=true) - It contains the current action. (i.e.) Add, Remove, Move, Replace and Reset.

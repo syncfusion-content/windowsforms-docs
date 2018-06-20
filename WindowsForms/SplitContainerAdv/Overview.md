@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-[SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) is a container control which allows you to add controls into panels ([Panel1](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1.html) and [Panel2](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2.html)) to a form, separated by splitters. 
+[SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) is a container control which allows you to add controls into panels ([Panel1](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1.html) and [Panel2](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2.html)) to a form, separated by splitters. 
 
  ![](GettingStarted-images/Overview-img1.png)
 

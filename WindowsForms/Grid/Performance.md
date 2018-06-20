@@ -62,9 +62,9 @@ N> To know more about PopulateValues method, refer the link over [here](http://h
 ### Implementing Virtual Mode
 Three events need to be handled in order to implement a virtual mode in GridControl. They perform the following actions:
 
-[QueryRowCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryRowCount_EV.html) - Determine number of rows<br/>
-[QueryColCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryColCount_EV.html) - Determine number of columns<br/>
-[QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCellInfo_EV.html) - Pass value to a cell from a data source.
+[QueryRowCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryRowCount_EV.html) - Determine number of rows<br/>
+[QueryColCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryColCount_EV.html) - Determine number of columns<br/>
+[QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCellInfo_EV.html) - Pass value to a cell from a data source.
 
 {% tabs %}
 {% highlight c# %}
@@ -137,9 +137,9 @@ GridControl provides smooth scrolling support for large number of data. If GridC
 
 Create a custom derived GridControl and override the following methods for optimizing the vertical scrolling.
 
-* [RowIndexToVScrollPixelPos](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RowIndexToVScrollPixelPos.html)<br/>
-* [VScrollPixelPosToRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixelPosToRowIndex.html)<br/>
-* [GetVScrollPixelHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~GetVScrollPixelHeight.html)<br/>
+* [RowIndexToVScrollPixelPos](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RowIndexToVScrollPixelPos.html)<br/>
+* [VScrollPixelPosToRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixelPosToRowIndex.html)<br/>
+* [GetVScrollPixelHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~GetVScrollPixelHeight.html)<br/>
 
 Refer the below code on how to increase the vertical pixel scrolling of GridControl for large number of rows.
 
@@ -229,7 +229,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-After creating the custom grid, make sure to use this customized grid in the application to increase the performance. Also it is necessary to set the [VScrollPixel](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixel.html) property to `true`.
+After creating the custom grid, make sure to use this customized grid in the application to increase the performance. Also it is necessary to set the [VScrollPixel](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~VScrollPixel.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -244,7 +244,7 @@ Me.gridControl1.VScrollPixel = True
 
 For sample and other information, refer the KB article over [here](https://www.syncfusion.com/kb/663/how-can-i-optimize-pixel-scrolling-in-the-gridcontrol).
 
-GridControl provides a property named [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) which increases the performance while scrolling when huge number of rows are hidden. If this property is set to true then it will switch back to the old logic for scrolling while rows or columns are hidden.
+GridControl provides a property named [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) which increases the performance while scrolling when huge number of rows are hidden. If this property is set to true then it will switch back to the old logic for scrolling while rows or columns are hidden.
 
 {% tabs %}
 {% highlight c# %}
@@ -260,7 +260,7 @@ GridControlBase.UseOldHiddenScrollLogic = True
 N> There is a separate topic named Scrolling which explains all the properties and methods about scrolling. Refer that topic for more information on scrolling.
 
 ## Exporting
-GridControl provides a rich set of options for exporting data to Microsoft Excel file formats, word, PDF, CSV with proficient performance. Exporting performance can be improved, if styles for the grid is not been exported. This can be achieved by setting the [ExportStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterBase~ExportStyle.html) property as `false`.
+GridControl provides a rich set of options for exporting data to Microsoft Excel file formats, word, PDF, CSV with proficient performance. Exporting performance can be improved, if styles for the grid is not been exported. This can be achieved by setting the [ExportStyle](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows~Syncfusion.GridExcelConverter.GridExcelConverterBase~ExportStyle.html) property as `false`.
 
 {% tabs %}
 {% highlight c# %}

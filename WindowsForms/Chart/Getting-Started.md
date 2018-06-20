@@ -19,7 +19,7 @@ To add chart to your form, follow the given steps:
 
 ![](Getting-Started_images/Toolbox.jpg)
 
-2.Drag the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and drop into the form.
+2.Drag the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and drop into the form.
 
 ![](Getting-Started_images/Form.jpg)
 
@@ -169,7 +169,7 @@ dataSource.Add(New SalesData("2008", 75))
 
 {% endtabs %}	
    
-3.Create an instance of [CategoryAxisDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel.html) and bind the **XValues** and **YValues** to [CategoryName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel~CategoryName.html) and [YNames](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel~YNames.html) properties, respectively as follows.
+3.Create an instance of [CategoryAxisDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel.html) and bind the **XValues** and **YValues** to [CategoryName](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel~CategoryName.html) and [YNames](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.CategoryAxisDataBindModel~YNames.html) properties, respectively as follows.
 
 {% tabs %}
 
@@ -195,7 +195,7 @@ dataSeriesModel.YNames = New String() {"Sales"}
 
 {% endtabs %}	
 
-4.Create a [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) to bind the above data bind model to [CategoryModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~CategoryModel.html) and add it to the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html).
+4.Create a [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) to bind the above data bind model to [CategoryModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~CategoryModel.html) and add it to the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html).
 
 {% tabs %}
 
@@ -217,7 +217,7 @@ chartSeries.CategoryModel = dataSeriesModel
 
 {% endtabs %}
 
-5.To use categorical data, set the [ValueType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~ValueType.html) property of [PrimaryXAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrimaryXAxis.html) to Category.
+5.To use categorical data, set the [ValueType](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~ValueType.html) property of [PrimaryXAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~PrimaryXAxis.html) to Category.
 
 {% tabs %}
 
@@ -237,7 +237,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 
 ## Apply skins to ChartControl
 
-To improve the appearance of chart, apply **Metro skin** to [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl_members.html) as follows.
+To improve the appearance of chart, apply **Metro skin** to [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl_members.html) as follows.
 
 {% tabs %}
 
@@ -261,7 +261,7 @@ The following screenshot depicts the view when you run the project in your form.
 
 ## Add chart title
 
-Title is added to chart to provide quick information to users about the data being plotted in the chart. You can add title to chart by using the [Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Text.html) property of [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html).
+Title is added to chart to provide quick information to users about the data being plotted in the chart. You can add title to chart by using the [Text](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Text.html) property of [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html).
 
 {% tabs %}
 
@@ -283,7 +283,7 @@ Me.chartControl1.Title.Text = "Product Sales"
 
 ## Enable legend
 
-The [Legend](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Legend.html) is enabled or disabled by using the **Visible** property. The legend is enabled in chart, by default. 
+The [Legend](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Legend.html) is enabled or disabled by using the **Visible** property. The legend is enabled in chart, by default. 
 
 {% tabs %}
 
@@ -321,7 +321,7 @@ Me.chartControl1.LegendsPlacement = ChartPlacement.Outside
 
 ## Enable data labels
 
-You can add data labels to chart to improve readability by enabling the [DisplayText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStyleInfo~DisplayText.html) property of [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Style.html) in [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html).
+You can add data labels to chart to improve readability by enabling the [DisplayText](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStyleInfo~DisplayText.html) property of [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Style.html) in [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html).
 
 {% tabs %}
 
@@ -347,7 +347,7 @@ chartSeries1.Style.TextOrientation = ChartTextOrientation.Up
 
 ## Enable tooltip
 
-The Tooltip is used to show detailed information about a data point. Using data labels to show detailed information is not pleasant due to space constraints. You can enable tooltip by using the [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolTips.html) property.
+The Tooltip is used to show detailed information about a data point. Using data labels to show detailed information is not pleasant due to space constraints. You can enable tooltip by using the [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowToolTips.html) property.
 
 {% tabs %}
 

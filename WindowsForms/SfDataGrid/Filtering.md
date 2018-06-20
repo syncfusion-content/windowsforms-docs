@@ -17,7 +17,7 @@ The programmatic filtering can be applied to the SfDataGrid by using the followi
 * Column Filtering 
 
 ### View Filtering 
-The view filtering can be applied by setting the [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. Once the Filter delegate is set for the view, call the[RefreshFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv~RefreshFilter.html) method to refresh the view.
+The view filtering can be applied by setting the [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. Once the Filter delegate is set for the view, call the[RefreshFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.ICollectionViewAdv~RefreshFilter.html) method to refresh the view.
 Here, `FilterRecords` delegate is assigned to `SfDataGrid.View.Filter` predicate to filter `CustomerID` column. After that, `SfDataGrid.View.RefreshFilter` method is called to refresh the records. If the record satisfies the filter conditions, `true` will be returned. Else `false` is returned.
 
 {% tabs %}
@@ -62,7 +62,7 @@ End Sub
 N>View filters is not supported when the DataSource is DataTable.
 
 ### Column Filtering
-The column filtering can be achieved by adding the [FilterPredicate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.FilterPredicate.html) to the [GridColumn.FilterPredicates](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterPredicates.html) property.
+The column filtering can be achieved by adding the [FilterPredicate](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.FilterPredicate.html) to the [GridColumn.FilterPredicates](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterPredicates.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -76,19 +76,19 @@ sfDataGrid1.Columns("OrderID").FilterPredicates.Add(New FilterPredicate() With {
 {% endtabs %}
 
 ### Filter Behavior
-The [FilterBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.FilterBehavior.html) property is used to specify whether to consider the [FilterValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.FilterPredicate~FilterValue.html) as the string or specific data type.
+The [FilterBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.FilterBehavior.html) property is used to specify whether to consider the [FilterValue](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.FilterPredicate~FilterValue.html) as the string or specific data type.
 
 * **StringTyped** - Records are filtered without considering the type and it takes FilterValue type as string.
 * **StronglyTyped** - Records are filtered by considering the FilterValue underlying type.
 
-N>When the[DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) is used as a datasource, [IsCaseSensitive](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in FilterPredicate is not applicable, since `DataTable` does not support case sensitive filtering.
+N>When the[DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) is used as a datasource, [IsCaseSensitive](https://help.syncfusion.com/cr/cref_files/windowsforms/data/Syncfusion.Data.WinForms~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in FilterPredicate is not applicable, since `DataTable` does not support case sensitive filtering.
 
 ### Clear Filtering
 The Filters applied to the SfDataGrid can be removed by clearing the `FilterPredicates` added for the columns. This can be achieved by using the following methods, 
 
-* [SfDataGrid.ClearFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClearFilters.html) - Clears filters for all the columns programmatically.
-* [SfDataGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClearFilter(String).html) - Clears the filter for particular column that has the columnName as MappingName.
-* [SfDataGrid.ClearFilter(GridColumn column)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClearFilter(GridColumn).html) - Clears the filter for particular column alone.
+* [SfDataGrid.ClearFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClearFilters.html) - Clears filters for all the columns programmatically.
+* [SfDataGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClearFilter(String).html) - Clears the filter for particular column that has the columnName as MappingName.
+* [SfDataGrid.ClearFilter(GridColumn column)](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClearFilter(GridColumn).html) - Clears the filter for particular column alone.
 
 {% tabs %}
 {% highlight c# %}
@@ -104,8 +104,8 @@ sfDataGrid1.ClearFilter(sfDataGrid1.Columns(0))
 {% endtabs %}
 
 ## UI Filtering 
-SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowFiltering.html) property to `true`. This allows to open the filter UI by clicking on the filter icon in column header to filter the records.
-The filtering can be enabled or disabled for the particular column by setting [GridColumn.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFiltering.html) property.
+SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowFiltering.html) property to `true`. This allows to open the filter UI by clicking on the filter icon in column header to filter the records.
+The filtering can be enabled or disabled for the particular column by setting [GridColumn.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFiltering.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -143,7 +143,7 @@ By default, the filter popup mode of the column is set as `Both`. The checkbox a
 ![](Filtering_images/Filtering_img2.png)
 
 ### Changing Filter UI View for Grid
-The Filter popup mode for the SfDataGrid can be set by using the [SfDataGrid.FilterPopupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupMode.html) property.
+The Filter popup mode for the SfDataGrid can be set by using the [SfDataGrid.FilterPopupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupMode.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ Me.sfDataGrid1.FilterPopupMode = FilterPopupMode.Both
 {% endtabs %}
 
 ### Changing Filter UI View for Column
-The Filter popup mode for the column can be set by using the [GridColumn.FilterPopupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterPopupMode.html) property.
+The Filter popup mode for the column can be set by using the [GridColumn.FilterPopupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterPopupMode.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -195,7 +195,7 @@ sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.Both
 {% endtabs %}
 
 ### Changing Filter UI using Event
-The column `FilterPopupMode` can also be changed by using the [FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShowing_EV.html) event. This even will be raised on opening the filter popup.
+The column `FilterPopupMode` can also be changed by using the [FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShowing_EV.html) event. This even will be raised on opening the filter popup.
 
 {% tabs %}
 {% highlight c# %}
@@ -245,7 +245,7 @@ sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.CheckBoxFilter
 ![](Filtering_images/Filtering_img4.png)
 
 ### Instant Filtering
-By default, filters are applied to the columns when OK button is clicked in UI filtering. This can be change to update the filters immediately whenever update in filter popup by setting the [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) property as true for the corresponding column.
+By default, filters are applied to the columns when OK button is clicked in UI filtering. This can be change to update the filters immediately whenever update in filter popup by setting the [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) property as true for the corresponding column.
 This will loads the Checkbox filter popup with the `Done` button to close the filter popup.
 {% tabs %}
 {% highlight c# %}
@@ -261,7 +261,7 @@ Me.sfDataGrid1.Columns("CustomerID").ImmediateUpdateColumnFilter = True
 ![](Filtering_images/Filtering_img5.png)
 
 ### Filtering Null Values 
-The null values of the column can be filtered by using the ` (Blanks) ` option of the checked list box. This can be enabled for the column by setting the [AllowBlankFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowBlankFilters.html) property to `true`.
+The null values of the column can be filtered by using the ` (Blanks) ` option of the checked list box. This can be enabled for the column by setting the [AllowBlankFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowBlankFilters.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -279,7 +279,7 @@ Me.sfDataGrid1.Columns("CustomerID").AllowBlankFilters = True
 N>If there is no null values exist in the column, the `(Blanks)` option will not be listed in the CheckedListBox.
 
 ### Filtering Based on Display Text
-By default, the filtering is applied based on the actual value of the column. This can be changed to filter based on the display text by setting the [FilterMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterMode.html) value as `ColumnFilter.DisplayText`.
+By default, the filtering is applied based on the actual value of the column. This can be changed to filter based on the display text by setting the [FilterMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterMode.html) value as `ColumnFilter.DisplayText`.
 In the below screenshot, first and second records have same display value for OrderDate column but both have different actual value (E.g. 2232018 12:00:00 AM and 2232018 6:30:00 PM). 
 
 ![](Filtering_images/Filtering_img7.png)
@@ -388,7 +388,7 @@ N>
 2. If the column is `GridUnboundColumn`, then Text Filter will be loaded.
 
 ### Instant Filtering
-By default the advanced filtering will be applied while clicking the OK button after specifying the suitable filter value. This can be changed to update filtering immediately on updating the filter popup by setting the [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) property to `true` for the column.
+By default the advanced filtering will be applied while clicking the OK button after specifying the suitable filter value. This can be changed to update filtering immediately on updating the filter popup by setting the [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) property to `true` for the column.
 
 ![](Filtering_images/Filtering_img14.png)
 
@@ -419,7 +419,7 @@ sfDataGrid.Columns("OrderDate").FilterBehavior = FilterBehavior.StringTyped
 {% endtabs %}
 
 ### Customizing Filter Predicates
-The filter predicated can be customized by using the [FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) event. This event will be raised while applying the filter using the filter control.
+The filter predicated can be customized by using the [FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) event. This event will be raised while applying the filter using the filter control.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.FilterChanging +=sfDataGrid_FilterChanging;
@@ -447,7 +447,7 @@ End Sub
 {% endtabs %}
 
 ### Getting the Filtered Records
-The filtered records can be get by using the [FilterChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanged_EV.html) event. This event will be fired after performing the filtering in SfDataGrid.
+The filtered records can be get by using the [FilterChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanged_EV.html) event. This event will be fired after performing the filtering in SfDataGrid.
 {% tabs %}
 {% highlight c# %}
 sfDataGrid.FilterChanged +=sfDataGrid_FilterChanged;
@@ -479,7 +479,7 @@ End Sub
 {% endtabs %}
 
 ### Displaying Custom Filter Control for Filtering
-The custom filter control can be loaded instead of the default filter control by handling the [FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShowing_EV.html) event.
+The custom filter control can be loaded instead of the default filter control by handling the [FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShowing_EV.html) event.
 {% tabs %}
 {% highlight c# %}
 public class CustomFilterControl : FilterControlBase
@@ -586,7 +586,7 @@ End Sub
 ## Appearance
 
 ### Hiding Sort Options 
-The sort options of the filter control can be hidden by setting the [ShowSortPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridFiltering.DataGridFilterControl~ShowSortPanel.html) property to `false` in the [FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShowing_EV.html) event.
+The sort options of the filter control can be hidden by setting the [ShowSortPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridFiltering.DataGridFilterControl~ShowSortPanel.html) property to `false` in the [FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShowing_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -609,7 +609,7 @@ End Sub
 ![](Filtering_images/Filtering_img18.png)
 
 ### Setting Custom Filter/Filtered Icons in Column Header
-The custom filter icon or the filtered icons can be set to the column header by using the [HeaderStyle.FilterIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~FilterIcon.html) and [HeaderStyle.FilteredIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~FilteredIcon.html) property.
+The custom filter icon or the filtered icons can be set to the column header by using the [HeaderStyle.FilterIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~FilterIcon.html) and [HeaderStyle.FilteredIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~FilteredIcon.html) property.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,14 +9,14 @@ documentation: ug
 
 # Overview
 
-The Tree Navigator control provides a unique interface that can expand a tree structure in-place without taking up more space on the screen. Items in the control are expanded or collapsed, and you can drill down to sub-items by simply clicking on items in the TreeNavigator. 
+The TreeNavigator control provides an interface that allows you to navigate through hierarchical information without using excessive screen space. Items in the control are expanded or collapsed, and you can drill down to sub-items by simply clicking on items in the TreeNavigator. 
 
-![](Overview_images/overview.png)
+![](Overview_images/Overview_img1.png)
 
 
-## Key Features
+## Key features
 
-•	Navigation Mode – Two types of navigation mode (Default and Extended) support. It is used to navigate from parent to child items and child to parent item in different styles with the help of Back button.
+Navigation Modes - There are two modes of Navigation
 
-•	Customization – Every part in the tree navigator can be customized using respective properties. 
-
+* Default
+* Extended

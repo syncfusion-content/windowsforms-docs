@@ -18,7 +18,7 @@ For importing charts in Spreadsheet, add the following assembly as reference int
  
 Assembly: **Syncfusion.SpreadsheetHelper.Windows.dll** 
  
-Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[GraphicChartCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection by using the helper method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`. 
+Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[GraphicChartCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection by using the helper method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -37,7 +37,7 @@ public Form1()
 
 ### Adding charts at runtime
 
-For adding the Charts in Spreadsheet at runtime, use [AddChart](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddChart.html) method, also you can resize and reposition the chart.
+For adding the Charts in Spreadsheet at runtime, use [AddChart](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddChart.html) method, also you can resize and reposition the chart.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ For importing sparklines in Spreadsheet, add the following assembly as reference
  
 Assembly: **Syncfusion.SpreadsheetHelper.Windows.dll** 
 
-Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into Spreadsheet by using the helper method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`.
+Create an instance of Syncfusion.Windows.Forms.SpreadsheetHelper.[SparklineCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.SpreadsheetHelper.Windows~Syncfusion.Windows.Forms.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into Spreadsheet by using the helper method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) which is available under the namespace `Syncfusion.Windows.Forms.Spreadsheet.GraphicCells`.
 
 {% tabs %}
 {% highlight c# %}
@@ -89,7 +89,7 @@ public Form1()
 
 ## Pictures
 
-Spreadsheet provides support to import images in SpreadsheetGrid and to add an image at run time, use [AddImage](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddImage.html) method and also you can resize and reposition the image.
+Spreadsheet provides support to import images in SpreadsheetGrid and to add an image at run time, use [AddImage](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddImage.html) method and also you can resize and reposition the image.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,7 +111,7 @@ shape.Width = 200;
 
 ## TextBoxes
 
-Spreadsheet provides support to import RichText Box in `SpreadsheetGrid` and to add the rich text box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
+Spreadsheet provides support to import RichText Box in `SpreadsheetGrid` and to add the rich text box at run time, use [AddTextBox](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicCellHelper~AddTextBox.html) method
 
 {% tabs %}
 {% highlight c# %}
@@ -160,7 +160,7 @@ spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicVisual();
 
 ## Selecting a shape programmatically
 
-Users can select a shape programmatically by using [AddSelectedShapes](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~AddSelectedShapes.html) method of [GraphicModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel.html) class.
+Users can select a shape programmatically by using [AddSelectedShapes](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~AddSelectedShapes.html) method of [GraphicModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -173,7 +173,7 @@ spreadsheet.ActiveGrid.GraphicModel.AddSelectedShapes(shape);
 
 ## Clearing selection
 
-Users can clear the selection from the shapes and move the selection to the grid using [ClearSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~ClearSelection.html) method of `GraphicModel` class.
+Users can clear the selection from the shapes and move the selection to the grid using [ClearSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.GraphicCells.GraphicModel~ClearSelection.html) method of `GraphicModel` class.
 
 {% tabs %}
 {% highlight c# %}

@@ -23,10 +23,10 @@ SfDataGrid provides support for various built-in column types. Each column has i
 </tr>
 <tr>
 <td>
-{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn.html#"")'| markdownify }}        
+{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn.html#"")'| markdownify }}        
 </td>
 <td>
-{{'[GridTextBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridTextBoxCellRenderer.html#"")'| markdownify }}
+{{'[GridTextBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridTextBoxCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the string data
@@ -34,10 +34,10 @@ Use to display the string data
 </tr>
 <tr>
 <td>
-{{'[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html#"")'| markdownify }}
+{{'[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridNumericCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridNumericCellRenderer.html#"")'| markdownify }}
+{{'[GridNumericCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridNumericCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the numeric data
@@ -45,10 +45,10 @@ Use to display the numeric data
 </tr>
 <tr>
 <td>
-{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#"")'| markdownify }}
+{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridDateTimeCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridDateTimeCellRenderer.html#"")'| markdownify }}
+{{'[GridDateTimeCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridDateTimeCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the date time value
@@ -56,10 +56,10 @@ Use to display the date time value
 </tr>
 <tr>
 <td>
-{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html#"")'| markdownify }}        
+{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html#"")'| markdownify }}        
 </td>
 <td>
-{{'[GridCheckBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCheckBoxCellRenderer.html#"")'| markdownify }}
+{{'[GridCheckBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCheckBoxCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the Boolean type data
@@ -67,10 +67,10 @@ Use to display the Boolean type data
 </tr>
 <tr>
 <td>
-{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html#"")'| markdownify }}
+{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridImageCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridImageCellRenderer.html#"")'| markdownify }}
+{{'[GridImageCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridImageCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the image in each row
@@ -78,10 +78,10 @@ Use to display the image in each row
 </tr>
 <tr>
 <td>
-{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html#"")'| markdownify }}
+{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridHyperlinkCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridHyperlinkCellRenderer.html#"")'| markdownify }}
+{{'[GridHyperlinkCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridHyperlinkCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the Uri data
@@ -89,10 +89,10 @@ Use to display the Uri data
 </tr>
 <tr>
 <td>
-{{'[GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+{{'[GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridButtonCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+{{'[GridButtonCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display button in each row
@@ -102,15 +102,15 @@ Use to display button in each row
 
 ## GridColumn
 
-[GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) is a class that provides base functionalities for all the column types in SfDataGrid.
+[GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) is a class that provides base functionalities for all the column types in SfDataGrid.
 
 ### Mapping Column to a Property
 
-Column can be bound to a property in data object using [GridColumnBase.MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) property.
+Column can be bound to a property in data object using [GridColumnBase.MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) property.
 
 ### Formatting the Value
 
-[GridColumnBase.Format](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Format.html) property can be used to set format for the data in the column.
+[GridColumnBase.Format](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Format.html) property can be used to set format for the data in the column.
 
 {% tabs %}
 {% highlight c# %}
@@ -126,8 +126,8 @@ N> This property works only for `GridDateTimeColumn`, `GridNumericColumn` and `G
 
 ### Custom formatting
 
-The SfDataGrid allows creating and assigning custom format for the columns through the [IDataGridFormatProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.IDataGridFormatProvider.html) interface.
-The [GridColumnBase.FormatProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FormatProvider.html) property can be used to set custom format for the columns.
+The SfDataGrid allows creating and assigning custom format for the columns through the [IDataGridFormatProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.IDataGridFormatProvider.html) interface.
+The [GridColumnBase.FormatProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FormatProvider.html) property can be used to set custom format for the columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -217,12 +217,12 @@ End Class
 
 ![](ColumnTypes_images/ColumnTypes_img21.png)
 
-N> The custom format will be applied, only when the [GridColumnBase.Format](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Format.html) property is set for the corresponding column.
+N> The custom format will be applied, only when the [GridColumnBase.Format](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Format.html) property is set for the corresponding column.
 
 
 ### Styling GridColumn
 
-[GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) support to customize the style of particular column using [GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) and [GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderStyle.html) properties. For more information, refer Styling section.
+[GridColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) support to customize the style of particular column using [GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) and [GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderStyle.html) properties. For more information, refer Styling section.
 
 {% tabs %}
 {% highlight c# %}
@@ -256,7 +256,7 @@ Me.sfDataGrid.Columns("ProductName").HeaderStyle.TextColor = Color.White
 
 ## GridTextColumn
 
-[GridTextColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn.html) provides support to display column data as text, which hosts TextBox in edit mode.
+[GridTextColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn.html) provides support to display column data as text, which hosts TextBox in edit mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -273,7 +273,7 @@ Me.sfDataGrid1.Columns.Add(New GridTextColumn() With {.MappingName = "ProductNam
 
 ### Multiline Support
 
-SfDataGrid allows to edit multiline text in `GridTextColumn` by setting [GridTextColumn.AllowMultiline](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn~AllowMultiline.html) property to `true`.
+SfDataGrid allows to edit multiline text in `GridTextColumn` by setting [GridTextColumn.AllowMultiline](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn~AllowMultiline.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -285,7 +285,7 @@ TryCast(Me.sfDataGrid1.Columns("ProductName"), GridTextColumn).AllowMultiline= T
 {% endtabs %}
 
 ### Vertical Scroll Bar 
-Vertical scroll bar can be enabled for multiline textbox cell while editing by setting the [GridTextColumn.AllowVerticalScrollBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn~AllowVerticalScrollbar.html) to `true`.
+Vertical scroll bar can be enabled for multiline textbox cell while editing by setting the [GridTextColumn.AllowVerticalScrollBar](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn~AllowVerticalScrollbar.html) to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -298,7 +298,7 @@ TryCast(Me.sfDataGrid1.Columns("ProductName"), GridTextColumn).AllowVerticalScro
 
 ## GridNumericColumn
 
-[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html) provides support to display columns data as numeric values.
+[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html) provides support to display columns data as numeric values.
 
 {% tabs %}
 {% highlight c# %}
@@ -315,7 +315,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPri
 
 ### Format Mode
 
-SfDataGrid allows to set the below format modes for the numeric columns by using the [GridNumericColumn.FormatMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn~FormatMode.html) property.
+SfDataGrid allows to set the below format modes for the numeric columns by using the [GridNumericColumn.FormatMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn~FormatMode.html) property.
 
 #### Numeric
 `Numeric` format can be used to display numeric value.
@@ -363,7 +363,7 @@ N> By default, `GridNumericColumn` displays the record with `Numeric` format.
 
 ### Data Formatting
 
-[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html) allows to format the numeric data with culture-specific information by using the [GridNumericColumn.NumberFormatInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn~NumberFormatInfo.html) property.
+[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html) allows to format the numeric data with culture-specific information by using the [GridNumericColumn.NumberFormatInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn~NumberFormatInfo.html) property.
 
 #### NumberFormatInfo for Numeric Formatted Column
 
@@ -488,15 +488,15 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPri
 
 ### Displaying Null Value
 
-[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html) provides support to restrict or allow null value in columns based on [GridNumericColumn.AllowNull](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn~AllowNull.html) property.
+[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html) provides support to restrict or allow null value in columns based on [GridNumericColumn.AllowNull](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn~AllowNull.html) property.
 
 ### Auto Increment
 
-[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html) allows end-user to increment or decrement the value by pressing up and down arrow keys. This can be enabled by setting [GridNumericColumn.InterceptArrowKeys](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn~InterceptArrowKeys.html) property to `true`.
+[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html) allows end-user to increment or decrement the value by pressing up and down arrow keys. This can be enabled by setting [GridNumericColumn.InterceptArrowKeys](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn~InterceptArrowKeys.html) property to `true`.
 
 ## GridDateTimeColumn
 
-[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) provides support to display and edit the date time values on the cell.
+[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) provides support to display and edit the date time values on the cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -513,7 +513,7 @@ Me.sfDataGrid1.Columns.Add(New GridDateTimeColumn() With {.MappingName = "OrderD
 
 ### Change the Pattern of Date Time Value
 
-The date time value can be formatted by using [GridDateTimeColumn.Pattern](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~Pattern.html) property, which contains the set of predefined date time patterns.
+The date time value can be formatted by using [GridDateTimeColumn.Pattern](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~Pattern.html) property, which contains the set of predefined date time patterns.
 
 <table>
 <tr>
@@ -616,24 +616,24 @@ Sets the custom pattern for date and time value.
 
 ### Displaying Null Value
 
-[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~AllowNull.html) property. Instead of displaying null values, any default date time value can be displayed by using[NullValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~NullValue.html) property.
+[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~AllowNull.html) property. Instead of displaying null values, any default date time value can be displayed by using[NullValue](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~NullValue.html) property.
 The `NullValue` property won’t work, when the `AllowNull` property is false.
 
 ### Auto Increment
 
-[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) allows end-user to increment or decrement the value when `MouseWheel`  by setting the [AllowValueChangeOnMouseWheel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~AllowValueChangeOnMouseWheel.html) property to true. 
-The value can also be changed by pressing up and down arrow keys when the [InterceptArrowKeys](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~InterceptArrowKeys.html) property is true.
+[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html) allows end-user to increment or decrement the value when `MouseWheel`  by setting the [AllowValueChangeOnMouseWheel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~AllowValueChangeOnMouseWheel.html) property to true. 
+The value can also be changed by pressing up and down arrow keys when the [InterceptArrowKeys](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~InterceptArrowKeys.html) property is true.
 
 ### Setting Date Time Value Range
 
-Displaying the input value can be restricted within the range by using [MinDateTime](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~MinDateTime.html) and [MaxDateTime](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~MaxDateTime.html) properties.
+Displaying the input value can be restricted within the range by using [MinDateTime](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~MinDateTime.html) and [MaxDateTime](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn~MaxDateTime.html) properties.
 
 ## GridCheckBoxColumn
 
-[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) provides support to display and edit Boolean type data.
+[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) provides support to display and edit Boolean type data.
 
 ### Three State Check Box
-[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) provides support for the three check states rather than two. The states are `checked`, `unchecked` and an `intermediate` state. This can be enabled by setting [AllowThreeState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowThreeState.html) property to true.
+[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) provides support for the three check states rather than two. The states are `checked`, `unchecked` and an `intermediate` state. This can be enabled by setting [AllowThreeState](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowThreeState.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -653,7 +653,7 @@ Me.sfDataGrid1.Columns.Add(New GridCheckBoxColumn() With {.MappingName = "PaidSt
 
 ### Text on the Check Box Column
 
-[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) allows to display the text along with checkbox in the cell.  This can be enabled by setting the [AllowText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowText.html) property to true.
+[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) allows to display the text along with checkbox in the cell.  This can be enabled by setting the [AllowText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowText.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -668,7 +668,7 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowText = True
 
 ### Check Box on Header
 
-By default, CheckBox displays only in record cell. By enabling the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowCheckBoxOnHeader.html) property, CheckBox can be displayed in header cell of `GridCheckBoxColumn`.
+By default, CheckBox displays only in record cell. By enabling the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowCheckBoxOnHeader.html) property, CheckBox can be displayed in header cell of `GridCheckBoxColumn`.
 
 {% tabs %}
 {% highlight c# %}
@@ -687,14 +687,14 @@ All the checkboxes in a column will be checked/unchecked by clicking on the Chec
 
 ### Customizing the Check Box Value
 
-[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) allows to display check box for enumeration type columns also. The corresponding underlying value for the checked, unchecked and intermediate state can be specified by the below properties.
+[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) allows to display check box for enumeration type columns also. The corresponding underlying value for the checked, unchecked and intermediate state can be specified by the below properties.
 
-1. [TrueValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~TrueValue.html) – Specifies the underlying value corresponding 
+1. [TrueValue](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~TrueValue.html) – Specifies the underlying value corresponding 
 to a cell value of true, which appears as a checked box.
 
-2. [FalseValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~FalseValue.html) – Specifies the underlying value corresponding to a cell value of false, which appears as an unchecked box.
+2. [FalseValue](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~FalseValue.html) – Specifies the underlying value corresponding to a cell value of false, which appears as an unchecked box.
 
-3. [IntermediateValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~IndeterminateValue.html) – Specifies the underlying value corresponding to an indeterminate or null cell value, which appears as a disabled checkbox.
+3. [IntermediateValue](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~IndeterminateValue.html) – Specifies the underlying value corresponding to an indeterminate or null cell value, which appears as a disabled checkbox.
 
 {% tabs %}
 {% highlight c# %}
@@ -720,7 +720,7 @@ Me.sfDataGrid1.Columns.Add(New GridCheckBoxColumn() With {.MappingName = "PaidSt
 
 #### Styling
 
-SfDataGrid allows to customize the appearance of the check box column through [SfDataGrid.Style.CheckBoxStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CheckBoxStyle.html) property.
+SfDataGrid allows to customize the appearance of the check box column through [SfDataGrid.Style.CheckBoxStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CheckBoxStyle.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -757,7 +757,7 @@ Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.DarkSlateGray
 
 #### Conditional Styling
 
-SfDataGrid allows to customize the appearance of the check box column based on conditions through [QueryCheckBoxCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCheckBoxCellStyle_EV.html) event.
+SfDataGrid allows to customize the appearance of the check box column based on conditions through [QueryCheckBoxCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCheckBoxCellStyle_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -790,7 +790,7 @@ End Sub
 
 ### Canceling the check box state change
 
-Changing the check box state can be canceled by setting the [CellCheckBoxClickEventArgs.Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellCheckBoxClickEventArgs_members.html) to true in the [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellCheckBoxClick_EV.html) event.
+Changing the check box state can be canceled by setting the [CellCheckBoxClickEventArgs.Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellCheckBoxClickEventArgs_members.html) to true in the [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellCheckBoxClick_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -813,207 +813,9 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## GridComboBoxColumn
-`GridComboBoxColumn` is derived from the GridColumn which hosts SfComboBox as edit element. Data source to the combo box can be set by using the `GridComboBoxColumn.DataSource` property.
-
-By default, GridComboBoxColumn displays the value by using the `MappingName` property. You can set `DisplayMember` that denotes the string to be displayed in the cell (to serve as visual representation of object). You can set `ValueMember` that denotes string from the object data source that acts as a value for that cell or to get the SelectedValue from the SelectedItem.
-
-{% tabs %}
-{% highlight c# %}
-sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new CustomSelector()});
-{% endhighlight %}
-{% highlight vb %}
-sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New CustomSelector()})
-{% endhighlight %}
-{% endtabs %}
-
-The SfDataGrid triggers the `CellComboBoxSelectionChanged` event when the `SelectedValue` is changed. The CellComboBoxSelectionChangedEventArgs of CellComboBoxSelectionChanged event provides the information of the changed cell value. Properties to get the selected item and index are as follows:
-
-*	`SelectedIndex` : Returns the index of selected item.
-*	`SelectedItem`	: Returns the selected item from drop-down list.
-
-![](ColumnTypes_images/ComboBox_img1.png)
-
-### Opening drop-down popup on single-click
-Drop-down of the combo-box column can be shown on single click by using the custom combo-box renderer. 
-In the following code, the `GridComboBoxCellRendererExt` is created to call the `ShowDropDown` method to open the drop-down on the initialization. 
-Replace the default renderer with created renderer in the SfDataGrid.CellRenderers collection.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.CellRenderers.Remove("ComboBox");
-this.sfDataGrid.CellRenderers.Add("ComboBox", new GridComboBoxCellRendererExt());
-
-public class GridComboBoxCellRendererExt : GridComboBoxCellRenderer
-{
-    protected override void OnInitializeEditElement(DataColumnBase column, RowColumnIndex rowColumnIndex, SfComboBox uiElement)
-    {
-        base.OnInitializeEditElement(column, rowColumnIndex, uiElement);
-        uiElement.ShowDropDown();          
-    }     
-}
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid.CellRenderers.Remove("ComboBox")
-Me.sfDataGrid.CellRenderers.Add("ComboBox", New GridComboBoxCellRendererExt())
-
-Public Class GridComboBoxCellRendererExt
-	Inherits GridComboBoxCellRenderer
-	Protected Overrides Sub OnInitializeEditElement(ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex, ByVal uiElement As SfComboBox)
-		MyBase.OnInitializeEditElement(column, rowColumnIndex, uiElement)
-		uiElement.ShowDropDown()
-	End Sub
-End Class
-{% endhighlight %}
-{% endtabs %}
-
-### Customizing GroupCaptionText based on DisplayMemberPath
-By default, the group caption text will be displayed based on the `MappingName` of combo-box column. This can be changed to display the `DisplayMember` by using the `GroupMode` property of the column.
-
-{% tabs %}
-{% highlight c# %}
-sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new CustomSelector(), GroupMode = Syncfusion.Data.DataReflectionMode.Display });
-{% endhighlight %}
-{% highlight vb %}
-sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New CustomSelector(), .GroupMode = Syncfusion.Data.DataReflectionMode.Display})
-{% endhighlight %}
-{% endtabs %}
-
-![](ColumnTypes_images/ComboBox_img2.png)
-
-### Loading different DataSources for each row of GridComboBoxColumn
-Different data sources can be loaded for each row of the `GridComboBoxColumn` by using the `SfDataGrid.DataSourceSelector` property.
-
-### Implementing IDataSourceSelector
-DataSourceSelector needs to implement IDataSourceSelector interface to implement the GetDataSource method that receives the following parameters,
-
-* record – data object associated with row.
-* dataSource – Data context of data grid.
-
-In the following code, DataSource of the `Ship City` column is returned based on `ShipCountry` column value by using the record and the data context of SfDataGrid passed to the `GetDataSource` method.
-
-{% tabs %}
-{% highlight c# %}
-sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new DataSourceSelector()});
-
-public class DataSourceSelector : IDataSourceSelector
-{
-    public IEnumerable GetDataSource(object record, object dataSource)
-    {
-        if (record == null)
-            return null;
-
-        var orderInfo = record as OrderDetails;
-        var countryName = orderInfo.ShipCountry;
-
-        var countryDetails = new CountryInfoRepository();
-
-        //Returns ShipCity collection based on ShipCountry.
-        if (countryDetails.ShipCities.ContainsKey(countryName))
-        {
-            ObservableCollection<ShipCityDetails> shipCities = null;
-            countryDetails.ShipCities.TryGetValue(countryName, out shipCities);
-            return shipCities.ToList();
-        }
-        return null;
-    }
-}
-{% endhighlight %}
-{% highlight vb %}
-sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New DataSourceSelector()})
-
-Public Class DataSourceSelector
-	Implements IDataSourceSelector
-	Public Function GetDataSource(ByVal record As Object, ByVal dataSource As Object) As IEnumerable
-		If record Is Nothing Then
-			Return Nothing
-		End If
-
-		Dim orderInfo = TryCast(record, OrderDetails)
-		Dim countryName = orderInfo.ShipCountry
-
-		Dim countryDetails = New CountryInfoRepository()
-
-		'Returns ShipCity collection based on ShipCountry.
-		If countryDetails.ShipCities.ContainsKey(countryName) Then
-			Dim shipCities As ObservableCollection(Of ShipCityDetails) = Nothing
-			countryDetails.ShipCities.TryGetValue(countryName, shipCities)
-			Return shipCities.ToList()
-		End If
-		Return Nothing
-	End Function
-End Class
-{% endhighlight %}
-{% endtabs %}
-
-Following screenshot illustrates the different `Ship City` DataSource bound to each row of the ComboBox column based on the `Ship Country` Name.
-
-![](ColumnTypes_images/ComboBox_img3.png)
-
-![](ColumnTypes_images/ComboBox_img4.png)
-
-### Editing the combo box
-By default, the combo-box column is not allowed to edit the values. This can be changed by setting the `GridComboBoxColumn.DropDownStyle` as `DropDown` to edit the values by using the text box.
-
-{% tabs %}
-{% highlight c# %}
-sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", DropDownStyle = DropDownStyle.DropDown, IDataSourceSelector = new DataSourceSelector()});
-{% endhighlight %}
-{% highlight vb %}
-sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .DropDownStyle = DropDownStyle.DropDown, .IDataSourceSelector = New DataSourceSelector()})
-{% endhighlight %}
-{% endtabs %}
-
-![](ColumnTypes_images/ComboBox_img5.png)
-
-### Auto completing on edit mode
-The auto completion on the edit mode can be enabled by using the `GridComboBoxColumn.AutoCompleteMode` property. Default value is `None`. Following types of auto complete modes are available,
-
-* None
-* Append
-* Suggest
-* SuggestAppend
-
-{% tabs %}
-{% highlight c# %}
-GridComboBoxColumn comboBoxColumn = sfDataGrid.Columns["ShipCityID"] as GridComboBoxColumn;
-comboBoxColumn.DropDownStyle = DropDownStyle.DropDown;
-comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest;
-{% endhighlight %}
-{% highlight vb %}
-Dim comboBoxColumn As GridComboBoxColumn = TryCast(sfDataGrid.Columns("ShipCityID"), GridComboBoxColumn)
-comboBoxColumn.DropDownStyle = DropDownStyle.DropDown
-comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest
-{% endhighlight %}
-{% endtabs %}
-
-![](ColumnTypes_images/ComboBox_img6.png)
-
-### Auto suggesting on edit mode
-By default, auto suggestion in the dropdown will display the value based on the `Starts with` filter condition. This can be changed to retrieve the matches with the Contains condition by using the `AutoSuggestionMode` property. You can also set delay for auto suggestion by using the `AutoSuggestDelay` property.
-
-{% tabs %}
-{% highlight c# %}
-GridComboBoxColumn comboBoxColumn = sfDataGrid.Columns["ShipCityID"] as GridComboBoxColumn;
-comboBoxColumn.DropDownStyle = DropDownStyle.DropDown;
-comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest;
-comboBoxColumn.AutoSuggestMode = AutoCompleteSuggestMode.Contains;
-comboBoxColumn.AutoSuggestDelay = 1000;
-{% endhighlight %}
-{% highlight vb %}
-Dim comboBoxColumn As GridComboBoxColumn = TryCast(sfDataGrid.Columns("ShipCityID"), GridComboBoxColumn)
-comboBoxColumn.DropDownStyle = DropDownStyle.DropDown
-comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest
-comboBoxColumn.AutoSuggestMode = AutoCompleteSuggestMode.Contains
-comboBoxColumn.AutoSuggestDelay = 1000
-{% endhighlight %}
-{% endtabs %}
-
-![](ColumnTypes_images/ComboBox_img7.png)
-
 ## GridButtonColumn
 
-[GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html) provides support to display columns data as buttons.
+[GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html) provides support to display columns data as buttons.
 
 {% tabs %}
 {% highlight c# %}
@@ -1032,7 +834,7 @@ Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductN
 
 ### Default Text for the Buttons
 
-By default, [GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html) displays the button with underlying value as button text. The default text for the buttons can be changed by setting value for [DefaultButtonText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn~DefaultButtonText.html) property. The `DefaultButtonText` property will work only when the[AllowDefaultButtonText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn~AllowDefaultButtonText.html) property value is true.
+By default, [GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html) displays the button with underlying value as button text. The default text for the buttons can be changed by setting value for [DefaultButtonText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn~DefaultButtonText.html) property. The `DefaultButtonText` property will work only when the[AllowDefaultButtonText](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn~AllowDefaultButtonText.html) property value is true.
 
 {% tabs %}
 {% highlight c# %}
@@ -1049,7 +851,7 @@ TryCast(Me.sfDataGrid1.Columns("ProductName"), GridButtonColumn).DefaultButtonTe
 
 ### Adding Image for the Button Column
 
-SfDataGrid allows to display image within the button by using the [GridButtonColumn.Image](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn~Image.html) property.
+SfDataGrid allows to display image within the button by using the [GridButtonColumn.Image](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn~Image.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1067,7 +869,7 @@ SfDataGrid allows to display image within the button by using the [GridButtonCol
 
 #### Positioning the Text and Image 
 
-The text and image within the [GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html) can be positioned relative to each other by using the [TextImageRelation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn~TextImageRelation.html) property.
+The text and image within the [GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html) can be positioned relative to each other by using the [TextImageRelation](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn~TextImageRelation.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1088,7 +890,7 @@ The text and image within the [GridButtonColumn](https://help.syncfusion.com/cr/
 
 ### Appearance
 
-SfDataGrid allows to customize the appearance of the button column through [SfDataGrid.Style.ButtonStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~ButtonStyle.html) property.
+SfDataGrid allows to customize the appearance of the button column through [SfDataGrid.Style.ButtonStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~ButtonStyle.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1109,7 +911,7 @@ Me.sfDataGrid1.Style.ButtonStyle.BorderColor = Pens.DarkRed
 
 ### Deleting the selected records by button click
 
-The selected records can be deleted when clicking the cell button by using the [DeleteSelectedRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DeleteSelectedRecords.html) method in the [SfDataGrid.CellButtonClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellButtonClick_EV.html) event.
+The selected records can be deleted when clicking the cell button by using the [DeleteSelectedRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DeleteSelectedRecords.html) method in the [SfDataGrid.CellButtonClick](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellButtonClick_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1131,7 +933,7 @@ End Sub
 
 ## GridHyperlinkColumn
 
-[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html) provides support to display columns data as `HyperLink` and allows to open hyperlinks as well as to run executable files. 
+[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html) provides support to display columns data as `HyperLink` and allows to open hyperlinks as well as to run executable files. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1148,8 +950,8 @@ Me.sfDataGrid1.Columns.Add(New GridHyperlinkColumn() With {.MappingName = " Orde
 
 ### Behavior Customization
 
-SfDataGrid provide support to open the hyperlink either by single click or double click. This can be specified by the [HyperlinkOpenBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn~HyperlinkOpenBehavior.html) property.
-The [HyperlinkOpenArea](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn~HyperlinkOpenArea.html) property decides whether to open the hyperlink by clicking anywhere on the cell or by clicking only on the text inside the cell.
+SfDataGrid provide support to open the hyperlink either by single click or double click. This can be specified by the [HyperlinkOpenBehavior](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn~HyperlinkOpenBehavior.html) property.
+The [HyperlinkOpenArea](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn~HyperlinkOpenArea.html) property decides whether to open the hyperlink by clicking anywhere on the cell or by clicking only on the text inside the cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -1167,7 +969,7 @@ N> `GridHyperlinkColumn` allows to open hyperlink by pressing space key.
 
 ### Appearance
 
-SfDataGrid allows to customize the appearance of the hyperlink column through [SfDataGrid.Style.HyperlinkStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HyperlinkStyle.html#) property.
+SfDataGrid allows to customize the appearance of the hyperlink column through [SfDataGrid.Style.HyperlinkStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HyperlinkStyle.html#) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1186,7 +988,7 @@ Me.sfDataGrid1.Style.HyperlinkStyle.HoveredLinkColor = Color.Red
 
 ### Canceling the Navigation
 
-Navigation to the hyperlinks can be canceled within the [HyperlinkOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HyperlinkOpening_EV.html) event by setting the `CellHyperlinkOpeningEventArgs.Cancel` to true.
+Navigation to the hyperlinks can be canceled within the [HyperlinkOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HyperlinkOpening_EV.html) event by setting the `CellHyperlinkOpeningEventArgs.Cancel` to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -1209,11 +1011,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-[HyperlinkOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HyperlinkOpened_EV.html) event occurs after the hyperlink is opened. It does not occur if the `HyperlinkOpening` event is canceled.
+[HyperlinkOpened](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HyperlinkOpened_EV.html) event occurs after the hyperlink is opened. It does not occur if the `HyperlinkOpening` event is canceled.
 
 ### Changing the Browser to Open the Hyperlink
 
-By default, [GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html) opens the hyperlink in system default browser. This can be changed by handling the [HyperlinkOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HyperlinkOpening_EV.html) event.
+By default, [GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html) opens the hyperlink in system default browser. This can be changed by handling the [HyperlinkOpening](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HyperlinkOpening_EV.html) event.
 
 The below code shows how to open the hyperlink in Internet Explorer.
 
@@ -1245,7 +1047,7 @@ End Sub
 
 ## GridImageColumn
 
-[GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html) provides support to display columns data as Image.
+[GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html) provides support to display columns data as Image.
 `GridImageColumn` can be created and images can be added to it as given below.
 
 {% tabs %}
@@ -1339,12 +1141,12 @@ End Class
 
 ### Positioning Text and Image
 
-The text and image within the [GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html) can be positioned relative to each other by using the [TextImageRelation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn~TextImageRelation.html) property.
-The `TextImageRelation` property will not work if [ImageLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn~ImageLayout.html) property value is not equal to none.
+The text and image within the [GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html) can be positioned relative to each other by using the [TextImageRelation](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn~TextImageRelation.html) property.
+The `TextImageRelation` property will not work if [ImageLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn~ImageLayout.html) property value is not equal to none.
 
 ### Appearance
 
-SfDataGrid allows to customize the appearance of the image column based on conditions through [QueryImageCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryImageCellStyle_EV.html) event.
+SfDataGrid allows to customize the appearance of the image column based on conditions through [QueryImageCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryImageCellStyle_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1434,7 +1236,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-In the below code snippet, created `GridCurrencyColumn` added to [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Columns.html) collection to specify the value as currency without setting the format mode.
+In the below code snippet, created `GridCurrencyColumn` added to [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Columns.html) collection to specify the value as currency without setting the format mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -1468,10 +1270,10 @@ Below table lists the available cell types for columns and its renderers.
 </tr>
 <tr>
 <td>
-{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn.html#"")'| markdownify }}        
+{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn.html#"")'| markdownify }}        
 </td>
 <td>
-{{'[GridTextBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridTextBoxCellRenderer.html#"")'| markdownify }}
+{{'[GridTextBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridTextBoxCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 TextBox
@@ -1479,10 +1281,10 @@ TextBox
 </tr>
 <tr>
 <td>
-{{'[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html#"")'| markdownify }}
+{{'[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridNumericColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridNumericCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridNumericCellRenderer.html#"")'| markdownify }}
+{{'[GridNumericCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridNumericCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Numeric
@@ -1490,10 +1292,10 @@ Numeric
 </tr>
 <tr>
 <td>
-{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#"")'| markdownify }}
+{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridDateTimeColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridDateTimeCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridDateTimeCellRenderer.html#"")'| markdownify }}
+{{'[GridDateTimeCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridDateTimeCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 DataTime
@@ -1501,10 +1303,10 @@ DataTime
 </tr>
 <tr>
 <td>
-{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html#"")'| markdownify }}        
+{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html#"")'| markdownify }}        
 </td>
 <td>
-{{'[GridCheckBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCheckBoxCellRenderer.html#"")'| markdownify }}
+{{'[GridCheckBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCheckBoxCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 CheckBox
@@ -1512,10 +1314,10 @@ CheckBox
 </tr>
 <tr>
 <td>
-{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html#"")'| markdownify }}
+{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridImageCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridImageCellRenderer.html#"")'| markdownify }}
+{{'[GridImageCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridImageCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Image
@@ -1523,10 +1325,10 @@ Image
 </tr>
 <tr>
 <td>
-{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html#"")'| markdownify }}
+{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridHyperlinkCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridHyperlinkCellRenderer.html#"")'| markdownify }}
+{{'[GridHyperlinkCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridHyperlinkCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Hyperlink
@@ -1534,10 +1336,10 @@ Hyperlink
 </tr>
 <tr>
 <td>
-{{'[GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+{{'[GridButtonColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[GridButtonCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+{{'[GridButtonCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Button

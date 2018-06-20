@@ -15,9 +15,9 @@ This section discusses various events handled for the EditControl as follows.
 
 ## BeforeLineNumberPaint event
 
-This event will be triggered before the LineNumber gets painted. The LineNumber can be enabled or disabled by using the [ShowLineNumbers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowLineNumbers.html) property of the EditControl. Its default is `true`. To hide the LineNumber, turn on its value to `false`.
+This event will be triggered before the LineNumber gets painted. The LineNumber can be enabled or disabled by using the [ShowLineNumbers](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowLineNumbers.html) property of the EditControl. Its default is `true`. To hide the LineNumber, turn on its value to `false`.
 
-The event handler receives an argument of type [LineNumberPaintEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs.html). The following LineNumberPaintEventArgs member provides specific information of this event.
+The event handler receives an argument of type [LineNumberPaintEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs.html). The following LineNumberPaintEventArgs member provides specific information of this event.
 
 <table>
 <tr>
@@ -26,7 +26,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs~ForeColor.html)' | markdownify }}</td><td>
+{{ '[ForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.LineNumberPaintEventArgs~ForeColor.html)' | markdownify }}</td><td>
 Specifies a value for the fore color of LineNumber.</td></tr>
 </table>
 
@@ -64,7 +64,7 @@ End Sub
 
 ## CanUndoRedoChanged event
 
-This event occurs when the `CanUndoRedo` state is changed. The [CanUndo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanUndo.html) and [CanRedo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanRedo.html) properties indicates whether it is possible to undo and redo in the EditControl respectively.
+This event occurs when the `CanUndoRedo` state is changed. The [CanUndo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanUndo.html) and [CanRedo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanRedo.html) properties indicates whether it is possible to undo and redo in the EditControl respectively.
 
 The event handler receives an argument of type EventArgs.
 
@@ -137,7 +137,7 @@ This section discusses the following code snippet events.
 
 This event occurs when the code snippet is to be activated.
 
-The event handler receives an argument of type [CancellableCodeSnippetsEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs.html). The following CancellableCodeSnippetsEventArgs members provide specific information of this event.
+The event handler receives an argument of type [CancellableCodeSnippetsEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs.html). The following CancellableCodeSnippetsEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -146,11 +146,11 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs~Cancel.html)' | markdownify }}</td><td>
+{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs~Cancel.html)' | markdownify }}</td><td>
 Indicates whether the action has to be canceled or not.</td></tr>
 <tr>
 <td>
-{{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs~CodeSnippet.html)' | markdownify }}
+{{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs~CodeSnippet.html)' | markdownify }}
 </td><td>
 Indicates the currently activated code snippet.</td></tr>
 </table>
@@ -190,7 +190,7 @@ End Sub
 
 This event occurs when the code snippet is to be deactivated.
 
-The event handler receives an argument of type [CodeSnippetsEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs.html). The following CodeSnippetsEventArgs member provides specific information of this event.
+The event handler receives an argument of type [CodeSnippetsEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs.html). The following CodeSnippetsEventArgs member provides specific information of this event.
 
 <table>
 <tr>
@@ -199,7 +199,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs_members.html)' | markdownify }}</td><td>
+{{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs_members.html)' | markdownify }}</td><td>
 Code snippet that is currently activated</td></tr>
 </table>
 
@@ -238,7 +238,7 @@ End Sub
 
 This event is raised when the text of the code snippet template member is to be changed.
 
-The event handler receives an argument of type [CodeSnippetTemplateTextChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetTemplateTextChangingEventArgs.html). The following CodeSnippetTemplateTextChangingEventArgs members provide specific information of this event.
+The event handler receives an argument of type [CodeSnippetTemplateTextChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetTemplateTextChangingEventArgs.html). The following CodeSnippetTemplateTextChangingEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -247,20 +247,20 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs~Cancel.html)' | markdownify }}</td><td>
+{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs~Cancel.html)' | markdownify }}</td><td>
 Indicates whether the action has to be canceled or not.</td></tr>
 <tr>
 <td>
-{{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs~CodeSnippet.html)' | markdownify }}
+{{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs~CodeSnippet.html)' | markdownify }}
 </td><td>
 Indicates currently activated code snippet.</td></tr>
 <tr>
 <td>
-{{ '[NewText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetTemplateTextChangingEventArgs~NewText.html)' | markdownify }}</td><td>
+{{ '[NewText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetTemplateTextChangingEventArgs~NewText.html)' | markdownify }}</td><td>
 Indicates the new text.</td></tr>
 <tr>
 <td>
-{{ '[TemplateMemberName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetTemplateTextChangingEventArgs~TemlateMemberName.html)' | markdownify }}</td><td>
+{{ '[TemplateMemberName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetTemplateTextChangingEventArgs~TemlateMemberName.html)' | markdownify }}</td><td>
 Indicates the name of template member to be changed.</td></tr>
 </table>
 
@@ -315,7 +315,7 @@ End Sub
 
 This event is raised when a new code snippet member is highlighted.
 
-The event handler receives an argument of type [NewSnippetMemberHighlightingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.NewSnippetMemberHighlightingEventArgs.html). The following NewSnippetMemberHighlightingEventArgs members provide specific information of this event.
+The event handler receives an argument of type [NewSnippetMemberHighlightingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.NewSnippetMemberHighlightingEventArgs.html). The following NewSnippetMemberHighlightingEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -324,19 +324,19 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs~Cancel.html)' | markdownify }}</td><td>
+{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CancellableCodeSnippetsEventArgs~Cancel.html)' | markdownify }}</td><td>
 Indicates whether the action has to be canceled or not.</td></tr>
 <tr>
 <td>
-{{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs~CodeSnippet.html)' | markdownify }}</td><td>
+{{ '[CodeSnippet](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CodeSnippetsEventArgs~CodeSnippet.html)' | markdownify }}</td><td>
 Indicates the currently activated code snippet.</td></tr>
 <tr>
 <td>
-{{ '[NewSnippetMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.NewSnippetMemberHighlightingEventArgs~NewSnippetMember.html)' | markdownify }}</td><td>
+{{ '[NewSnippetMember](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.NewSnippetMemberHighlightingEventArgs~NewSnippetMember.html)' | markdownify }}</td><td>
 Indicates the snippet member that has to be highlighted.</td></tr>
 <tr>
 <td>
-{{ '[OldSnippetMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.NewSnippetMemberHighlightingEventArgs~OldSnippetMember.html)' | markdownify }}</td><td>
+{{ '[OldSnippetMember](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.NewSnippetMemberHighlightingEventArgs~OldSnippetMember.html)' | markdownify }}</td><td>
 Indicates the previously highlighted snippet member.</td></tr>
 </table>
 
@@ -373,7 +373,7 @@ End Sub
 
 ## ConfigurationChanged event
 
-This event is fired on changing the configuration of the EditControl. The configuration can be set by using the [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function.
+This event is fired on changing the configuration of the EditControl. The configuration can be set by using the [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) function.
 
 The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
 
@@ -418,7 +418,7 @@ This section explains the following collapse events.
 
 ### CollapsedAll event
 
-This event is raised when the [CollapseAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CollapseAll.html) function is called.
+This event is raised when the [CollapseAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CollapseAll.html) function is called.
 
 The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
 
@@ -469,7 +469,7 @@ End Sub
 
 ### CollapsingAll event
 
-This event is raised when the [CollapseAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CollapseAll.html) function is called.
+This event is raised when the [CollapseAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CollapseAll.html) function is called.
 
 The event handler receives an argument of type [CancelEventArgs](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs(v=vs.110).aspx). The following CancelEventArgs member provides specific information of this event.
 
@@ -553,7 +553,7 @@ The EditControl provides the following set of events for performing ContextChoic
 
 This event occurs when the context choice list is updated.
 
-The event handler receives an argument of type [IContextChoiceController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html). The following IContextChoiceController members provide specific information of this event.
+The event handler receives an argument of type [IContextChoiceController](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html). The following IContextChoiceController members provide specific information of this event.
 
 <table>
 <tr>
@@ -562,39 +562,39 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Dropper](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~Dropper.html)' | markdownify }}</td><td>
+{{ '[Dropper](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~Dropper.html)' | markdownify }}</td><td>
 Specifies the dropping lexem.</td></tr>
 <tr>
 <td>
-{{ '[ExtendItemsFilteringString](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~ExtendItemsFilteringString.html)' | markdownify }}</td><td>
+{{ '[ExtendItemsFilteringString](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~ExtendItemsFilteringString.html)' | markdownify }}</td><td>
 Specifies whether the autocomplete string should be extended or not.</td></tr>
 <tr>
 <td>
-{{ '[FormSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~FormSize.html)' | markdownify }}</td><td>
+{{ '[FormSize](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~FormSize.html)' | markdownify }}</td><td>
 Specifies size of the context choice form.</td></tr>
 <tr>
 <td>
-{{ '[Images](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~Images.html)' | markdownify }}</td><td>
+{{ '[Images](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~Images.html)' | markdownify }}</td><td>
 Gets the collection of INamedImage items.</td></tr>
 <tr>
 <td>
-{{ '[IsVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~IsVisible.html)' | markdownify }}</td><td>
+{{ '[IsVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~IsVisible.html)' | markdownify }}</td><td>
 Specifies whether the context choice window associated with current controller is visible or not.</td></tr>
 <tr>
 <td>
-{{ '[Items](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~Items.html)' | markdownify }}</td><td>
+{{ '[Items](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~Items.html)' | markdownify }}</td><td>
 Gets the collection of context choice items.</td></tr>
 <tr>
 <td>
-{{ '[LexemBeforeDropper](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~LexemBeforeDropper.html)' | markdownify }}</td><td>
+{{ '[LexemBeforeDropper](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~LexemBeforeDropper.html)' | markdownify }}</td><td>
 Specifies the lexem situated before dropper.</td></tr>
 <tr>
 <td>
-{{ '[SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~SelectedItem.html)' | markdownify }}</td><td>
+{{ '[SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~SelectedItem.html)' | markdownify }}</td><td>
 Specifies the currently selected item.</td></tr>
 <tr>
 <td>
-{{ '[UseAutocomplete](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~UseAutocomplete.html)' | markdownify }}</td><td>
+{{ '[UseAutocomplete](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController~UseAutocomplete.html)' | markdownify }}</td><td>
 Specifies whether the autocomplete technique should be used with current context choice or not.</td></tr>
 </table>
 
@@ -678,7 +678,7 @@ This event is discussed in the Context Choice topic.
 
 This event is raised when the context choice item is right-clicked.
 
-The event handler receives an argument of type [ContextChoiceItemEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.ContextChoiceItemEventArgs.html). The following CancelableCodeSnippetsEventArgs member provides specific information of this event.
+The event handler receives an argument of type [ContextChoiceItemEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.ContextChoiceItemEventArgs.html). The following CancelableCodeSnippetsEventArgs member provides specific information of this event.
 
 <table>
 <tr>
@@ -687,7 +687,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Item](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.ContextChoiceItemEventArgs~Item.html)' | markdownify }}</td><td>
+{{ '[Item](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.ContextChoiceItemEventArgs~Item.html)' | markdownify }}</td><td>
 Specifies the underlying ContextChoiceItem.</td></tr>
 </table>
 
@@ -777,7 +777,7 @@ This section discusses the expand events as follows.
 
 ### ExpandedAll event
 
-This event is raised when the [ExpandAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ExpandAll.html) function is called.
+This event is raised when the [ExpandAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ExpandAll.html) function is called.
 
 The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
 
@@ -830,7 +830,7 @@ End Sub
 
 ### ExpandingAll event
 
-This event is raised when the [ExpandAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ExpandAll.html) function is called.
+This event is raised when the [ExpandAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ExpandAll.html) function is called.
 
 The event handler receives an argument of type [CancelEventArgs](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs(v=vs.110).aspx). The following CancelableEventArgs member provides specific information of this event.
 
@@ -940,7 +940,7 @@ This section discusses the following indicator margin events.
 
 This event is raised when the user clicks the indicator margin area.
 
-The event handler receives an argument of type [IndicatorClickEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs.html). The following IndicatorClickEventArgs members provide specific information of this event.
+The event handler receives an argument of type [IndicatorClickEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs.html). The following IndicatorClickEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -949,12 +949,12 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Bookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs~Bookmark.html)' | markdownify }}
+{{ '[Bookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs~Bookmark.html)' | markdownify }}
 </td><td>
 Gets clicked custom bookmark if available.</td></tr>
 <tr>
 <td>
-{{ '[LineIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs~LineIndex.html)' | markdownify }}</td><td>
+{{ '[LineIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs~LineIndex.html)' | markdownify }}</td><td>
 Gets clicked line index.</td></tr>
 </table>
 
@@ -989,7 +989,7 @@ End Sub
 
 This event is raised when the user double-clicks the indicator margin area.
 
-The event handler receives an argument of type [IndicatorClickEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs.html). The following IndicatorClickEventArgs members provide specific information of this event.
+The event handler receives an argument of type [IndicatorClickEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs.html). The following IndicatorClickEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -998,11 +998,11 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Bookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs~Bookmark.html)' | markdownify }}</td><td>
+{{ '[Bookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs~Bookmark.html)' | markdownify }}</td><td>
 Gets clicked custom bookmark if available.</td></tr>
 <tr>
 <td>
-{{ '[LineIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs~LineIndex.html)' | markdownify }}</td><td>
+{{ '[LineIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.IndicatorClickEventArgs~LineIndex.html)' | markdownify }}</td><td>
 Gets clicked line index.</td></tr>
 </table>
 
@@ -1037,7 +1037,7 @@ End Sub
 
 This event occurs when a custom line mark should be drawn.
 
-The event handler receives an argument of type [DrawLineMarkEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs.html). The following DrawLineMarkEventArgs members provide specific information of this event.
+The event handler receives an argument of type [DrawLineMarkEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs.html). The following DrawLineMarkEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1046,23 +1046,23 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CustomDraw](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~CustomDraw.html)' | markdownify }}</td><td>
+{{ '[CustomDraw](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~CustomDraw.html)' | markdownify }}</td><td>
 If set to `true`, user handles drawing of the bookmark.</td></tr>
 <tr>
 <td>
-{{ '[Graphics](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~Graphics.html)' | markdownify }}</td><td>
+{{ '[Graphics](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~Graphics.html)' | markdownify }}</td><td>
 Draws a graphics object.</td></tr>
 <tr>
 <td>
-{{ '[MarkRect](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~MarkRect.html)' | markdownify }}</td><td>
+{{ '[MarkRect](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~MarkRect.html)' | markdownify }}</td><td>
 Draws a rectangle where line mark should be drawn.</td></tr>
 <tr>
 <td>
-{{ '[PhysicalLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~PhysicalLine.html)' | markdownify }}</td><td>
+{{ '[PhysicalLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~PhysicalLine.html)' | markdownify }}</td><td>
 Draws a virtual line number.</td></tr>
 <tr>
 <td>
-{{ '[VirtualLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~VirtualLine.html)' | markdownify }}</td><td>
+{{ '[VirtualLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.DrawLineMarkEventArgs~VirtualLine.html)' | markdownify }}</td><td>
 Draws a physical line number.</td></tr>
 </table>
 
@@ -1211,7 +1211,7 @@ This section discusses the following operation events.
 
 This event occurs when an operation starts while collapsing and expanding the block of code.
 
-The event handler receives an argument of type [ILongOperation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation.html). The following ILongOperation members provide specific information of this event.
+The event handler receives an argument of type [ILongOperation](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation.html). The following ILongOperation members provide specific information of this event.
 
 <table>
 <tr>
@@ -1220,20 +1220,20 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ID](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~ID.html)' | markdownify }}
+{{ '[ID](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~ID.html)' | markdownify }}
 </td><td>
 Specifies the ID of the operation.</td></tr>
 <tr>
 <td>
-{{ '[IsRunning](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~IsRunning.html)' | markdownify }}</td><td>
+{{ '[IsRunning](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~IsRunning.html)' | markdownify }}</td><td>
 Specifies a value indicating whether the operation is running now or not.</td></tr>
 <tr>
 <td>
-{{ '[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~Name.html)' | markdownify }}</td><td>
+{{ '[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~Name.html)' | markdownify }}</td><td>
 Specifies the name of the operation.</td></tr>
 <tr>
 <td>
-{{ '[RunningTime](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~RunningTime.html)' | markdownify }}</td><td>
+{{ '[RunningTime](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~RunningTime.html)' | markdownify }}</td><td>
 Specifies the time of the operation activity.</td></tr>
 </table>
 
@@ -1268,7 +1268,7 @@ End Sub
 
 This event occurs when an operation ends.
 
-The event handler receives an argument of type [ILongOperation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation.html). The following ILongOperation members provide specific information of this event.
+The event handler receives an argument of type [ILongOperation](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation.html). The following ILongOperation members provide specific information of this event.
 
 <table>
 <tr>
@@ -1277,20 +1277,20 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ID](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~ID.html)' | markdownify }}
+{{ '[ID](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~ID.html)' | markdownify }}
 </td><td>
 Specifies the ID of the operation.</td></tr>
 <tr>
 <td>
-{{ '[IsRunning](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~IsRunning.html)' | markdownify }}</td><td>
+{{ '[IsRunning](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~IsRunning.html)' | markdownify }}</td><td>
 Specifies a value indicating whether the operation is running now or not.</td></tr>
 <tr>
 <td>
-{{ '[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~Name.html)' | markdownify }}</td><td>
+{{ '[Name](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~Name.html)' | markdownify }}</td><td>
 Specifies the name of the operation.</td></tr>
 <tr>
 <td>
-{{ '[RunningTime](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~RunningTime.html)' | markdownify }}</td><td>
+{{ '[RunningTime](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.ILongOperation~RunningTime.html)' | markdownify }}</td><td>
 Specifies the time of the operation activity.</td></tr>
 </table>
 
@@ -1329,7 +1329,7 @@ This section discusses the following outlining events.
 
 This event is raised before a region is about to collapse.
 
-The event handler receives an argument of type [OutliningEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningEventArgs.html). The following OutliningEventArgs members provide specific information of this event.
+The event handler receives an argument of type [OutliningEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningEventArgs.html). The following OutliningEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1338,19 +1338,19 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningEventArgs~Cancel.html)' | markdownify }}</td><td>
+{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningEventArgs~Cancel.html)' | markdownify }}</td><td>
 Specifies a value indicating whether the user cancels the underlying event or not.</td></tr>
 <tr>
 <td>
-{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
+{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
 Specifies the CollapsedText.</td></tr>
 <tr>
 <td>
-{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
+{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
 Specifies the CollapseName.</td></tr>
 <tr>
 <td>
-{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
+{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
 Specifies the Collapser.</td></tr>
 </table>
 
@@ -1385,7 +1385,7 @@ End Sub
 
 This event is raised before a region is about to expand.
 
-The event handler receives an argument of type [OutliningEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningEventArgs.html). The following OutliningEventArgs members provide specific information of this event.
+The event handler receives an argument of type [OutliningEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningEventArgs.html). The following OutliningEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1394,19 +1394,19 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningEventArgs~Cancel.html)' | markdownify }}</td><td>
+{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.OutliningEventArgs~Cancel.html)' | markdownify }}</td><td>
 Specifies a value indicating whether the user cancels the underlying event or not.</td></tr>
 <tr>
 <td>
-{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
+{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
 Specifies the CollapsedText.</td></tr>
 <tr>
 <td>
-{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
+{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
 Specifies the CollapseName.</td></tr>
 <tr>
 <td>
-{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
+{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
 Specifies the Collapser.</td></tr>
 </table>
 
@@ -1441,7 +1441,7 @@ End Sub
 
 This event is raised when a region collapses.
 
-The event handler receives an argument of type [CollapseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs.html). The following CollapseEventArgs members provide specific information of this event.
+The event handler receives an argument of type [CollapseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs.html). The following CollapseEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1450,15 +1450,15 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
+{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
 Specifies the CollapsedText.</td></tr>
 <tr>
 <td>
-{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
+{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
 Specifies the CollapseName.</td></tr>
 <tr>
 <td>
-{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
+{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
 Specifies the Collapser.</td></tr>
 </table>
 
@@ -1493,7 +1493,7 @@ End Sub
 
 This event is raised when a region expands.
 
-The event handler receives an argument of type [CollapseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs.html). The following CollapseEventArgs members provide specific information of this event.
+The event handler receives an argument of type [CollapseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs.html). The following CollapseEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1502,15 +1502,15 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
+{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
 Specifies the CollapsedText.</td></tr>
 <tr>
 <td>
-{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
+{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
 Specifies the CollapseName.</td></tr>
 <tr>
 <td>
-{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
+{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
 Specifies the Collapser.</td></tr>
 </table>
 
@@ -1549,7 +1549,7 @@ This event is discussed in the Outlining ToolTip topic.
 
 This event is raised when the outlining tooltip is closed.
 
-The event handler receives an argument of type [CollapseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs.html). The following CollapseEventArgs members provide a specific information of this event.
+The event handler receives an argument of type [CollapseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs.html). The following CollapseEventArgs members provide a specific information of this event.
 
 <table>
 <tr>
@@ -1558,15 +1558,15 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
+{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
 Specifies the CollapsedText.</td></tr>
 <tr>
 <td>
-{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
+{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
 Specifies the CollapseName.</td></tr>
 <tr>
 <td>
-{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
+{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
 Specifies the Collapser.</td></tr>
 </table>
 
@@ -1601,7 +1601,7 @@ End Sub
 
 This event is raised when the outlining tooltip is shown.
 
-The event handler receives an argument of type [CollapseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs.html). The following CollapseEventArgs members provide specific information of this event.
+The event handler receives an argument of type [CollapseEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs.html). The following CollapseEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1610,15 +1610,15 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
+{{ '[CollapsedText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapsedText.html)' | markdownify }}</td><td>
 Specifies the CollapsedText.</td></tr>
 <tr>
 <td>
-{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
+{{ '[CollapseName](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~CollapseName.html)' | markdownify }}</td><td>
 Specifies the CollapseName.</td></tr>
 <tr>
 <td>
-{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
+{{ '[Collapser](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.CollapseEventArgs~Collapser.html)' | markdownify }}</td><td>
 Specifies the Collapser.</td></tr>
 </table>
 
@@ -1663,7 +1663,7 @@ This event is discussed in the Printing topic.
 
 ## ReadOnlyChanged event
 
-This event occurs when the [ReadOnly](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReadOnly.html) property is changed. The ReadOnly property specifies whether the EditControl is in the read-only mode or not.
+This event occurs when the [ReadOnly](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReadOnly.html) property is changed. The ReadOnly property specifies whether the EditControl is in the read-only mode or not.
 
 The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
 
@@ -1726,7 +1726,7 @@ This section discusses the following events that are generated when the user sav
 
 This event is raised when user tries to save the files with data loss.
 
-The event handler receives an argument of type [SaveWithDataLosingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs.html). The following SaveWithDataLosingEventArgs members provide specific information of this event.
+The event handler receives an argument of type [SaveWithDataLosingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs.html). The following SaveWithDataLosingEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1735,11 +1735,11 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[SaveWithLoss](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs~SaveWithLoss.html)' | markdownify }}</td><td>
+{{ '[SaveWithLoss](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs~SaveWithLoss.html)' | markdownify }}</td><td>
 Specifies a value that indicates whether data has to be saved with loss or not.</td></tr>
 <tr>
 <td>
-{{ '[UserHandling](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs~UserHandling.html)' | markdownify }}</td><td>
+{{ '[UserHandling](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs~UserHandling.html)' | markdownify }}</td><td>
 Specifies a value that indicates whether the user handled this event or not.</td></tr>
 </table>
 
@@ -1778,7 +1778,7 @@ End Sub
 
 This event is raised when the user tries to save the streams with data loss.
 
-The event handler receives an argument of type [SaveWithDataLosingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs.html). The following SaveWithDataLosingEventArgs members provide specific information of this event.
+The event handler receives an argument of type [SaveWithDataLosingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs.html). The following SaveWithDataLosingEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1787,11 +1787,11 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[SaveWithLoss](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs~SaveWithLoss.html)' | markdownify }}</td><td>
+{{ '[SaveWithLoss](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs~SaveWithLoss.html)' | markdownify }}</td><td>
 Specifies a value that indicates whether the data has to be saved with loss or not.</td></tr>
 <tr>
 <td>
-{{ '[UserHandling](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs~UserHandling.html)' | markdownify }}</td><td>
+{{ '[UserHandling](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.SaveWithDataLosingEventArgs~UserHandling.html)' | markdownify }}</td><td>
 Specifies a value that indicates whether the user handled this event or not.</td></tr>
 </table>
 
@@ -1977,7 +1977,7 @@ End Sub
 
 ## SingleLineChanged event
 
-This event is fired when the value of the [SingleLineMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SingleLineMode.html) property is changed. The `SingleLineMode` property specifies whether the single line mode is enabled or not.
+This event is fired when the value of the [SingleLineMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SingleLineMode.html) property is changed. The `SingleLineMode` property specifies whether the single line mode is enabled or not.
 
 The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
 
@@ -2092,7 +2092,7 @@ End Sub
 
 This event is raised when the text is to be changed.
 
-The event handler receives an argument of type [TextChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangingEventArgs.html). The following TextChangingEventArgs members provide specific information of this event.
+The event handler receives an argument of type [TextChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangingEventArgs.html). The following TextChangingEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -2101,23 +2101,23 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangingEventArgs~Cancel.html)' | markdownify }}</td><td>
+{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangingEventArgs~Cancel.html)' | markdownify }}</td><td>
 Specifies the value indicating whether the text change has been canceled.</td></tr>
 <tr>
 <td>
-{{ '[StartColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangedEventArgs~StartColumn.html)' | markdownify }}</td><td>
+{{ '[StartColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangedEventArgs~StartColumn.html)' | markdownify }}</td><td>
 Specifies the virtual start column of Insert or Delete.</td></tr>
 <tr>
 <td>
-{{ '[StartLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangedEventArgs~StartLine.html)' | markdownify }}</td><td>
+{{ '[StartLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangedEventArgs~StartLine.html)' | markdownify }}</td><td>
 Specifies the virtual start line of Insert or Delete.</td></tr>
 <tr>
 <td>
-{{ '[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangedEventArgs~Text.html)' | markdownify }}</td><td>
+{{ '[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangedEventArgs~Text.html)' | markdownify }}</td><td>
 Specifies the text of the event.</td></tr>
 <tr>
 <td>
-{{ '[Type](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangedEventArgs~Type.html)' | markdownify }}</td><td>
+{{ '[Type](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.TextChangedEventArgs~Type.html)' | markdownify }}</td><td>
 Specifies type of the event (Changed, Insert, or Delete).</td></tr>
 </table>
 
@@ -2164,7 +2164,7 @@ The following events are triggered from the control when the editor is modified.
 
 #### Line Changed
 
-The [LineChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineChanged_EV.html) event will be fired when any line is modified in the EditControl.
+The [LineChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineChanged_EV.html) event will be fired when any line is modified in the EditControl.
 
 {% tabs %}
 
@@ -2207,7 +2207,7 @@ End Sub
 
 #### Line Inserted
 
-The [LineInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineInserted_EV.html) event will be fired when a new line is inserted in the EditControl.
+The [LineInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineInserted_EV.html) event will be fired when a new line is inserted in the EditControl.
 
 {% tabs %}
 
@@ -2250,7 +2250,7 @@ End Sub
 
 #### Line Deleted
 
-The [LineDeleted](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineDeleted_EV.html) event will be fired when any line is removed from the EditControl.
+The [LineDeleted](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~LineDeleted_EV.html) event will be fired when any line is removed from the EditControl.
 
 {% tabs %}
 
@@ -2295,7 +2295,7 @@ End Sub
 
 This event occurs when the text in a hidden block is found. This block cannot be expanded if you cancel it.
 
-The event handler receives an argument of type [UnreachableTextFoundEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UnreachableTextFoundEventArgs.html). The following UnreachableTextFoundEventArgs members provide specific information of this event.
+The event handler receives an argument of type [UnreachableTextFoundEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UnreachableTextFoundEventArgs.html). The following UnreachableTextFoundEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -2304,15 +2304,15 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ContinueSearch](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UnreachableTextFoundEventArgs~ContinueSearch.html)' | markdownify }}</td><td>
+{{ '[ContinueSearch](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UnreachableTextFoundEventArgs~ContinueSearch.html)' | markdownify }}</td><td>
 Indicates whether search must be continued</td></tr>
 <tr>
 <td>
-{{ '[Point](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UnreachableTextFoundEventArgs~Point.html)' | markdownify }}</td><td>
+{{ '[Point](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UnreachableTextFoundEventArgs~Point.html)' | markdownify }}</td><td>
 Point of the location of unreachable text</td></tr>
 <tr>
 <td>
-{{ '[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UnreachableTextFoundEventArgs~Text.html)' | markdownify }}</td><td>
+{{ '[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UnreachableTextFoundEventArgs~Text.html)' | markdownify }}</td><td>
 Searched text</td></tr>
 </table>
 
@@ -2347,7 +2347,7 @@ End Sub
 
 This event is fired when the bookmark tooltip text is updated.
 
-The event handler receives an argument of type [UpdateBookmarkTooltipEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateBookmarkTooltipEventArgs.html). The following UpdateBookmarkTooltipEventArgs members provide specific information of this event.
+The event handler receives an argument of type [UpdateBookmarkTooltipEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateBookmarkTooltipEventArgs.html). The following UpdateBookmarkTooltipEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -2356,31 +2356,31 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Bookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateBookmarkTooltipEventArgs~Bookmark.html)' | markdownify }}</td><td>
+{{ '[Bookmark](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateBookmarkTooltipEventArgs~Bookmark.html)' | markdownify }}</td><td>
 Specifies bookmark.</td></tr>
 <tr>
 <td>
-{{ '[HintedArea](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~HintedArea.html)' | markdownify }}</td><td>
+{{ '[HintedArea](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~HintedArea.html)' | markdownify }}</td><td>
 Specifies a rectangle that represents an object which has this tooltip.</td></tr>
 <tr>
 <td>
-{{ '[Image](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~Image.html)' | markdownify }}</td><td>
+{{ '[Image](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~Image.html)' | markdownify }}</td><td>
 Specifies an image associated with the tooltip.</td></tr>
 <tr>
 <td>
-{{ '[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateBookmarkTooltipEventArgs~Line.html)' | markdownify }}</td><td>
+{{ '[Line](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateBookmarkTooltipEventArgs~Line.html)' | markdownify }}</td><td>
 Specifies an index of the bookmarked line.</td></tr>
 <tr>
 <td>
-{{ '[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~Text.html)' | markdownify }}</td><td>
+{{ '[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~Text.html)' | markdownify }}</td><td>
 Specifies text of the tooltip.</td></tr>
 <tr>
 <td>
-{{ '[X](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~X.html)' | markdownify }}</td><td>
+{{ '[X](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~X.html)' | markdownify }}</td><td>
 Specifies Mouse X coordinate in client coordinates.</td></tr>
 <tr>
 <td>
-{{ '[Y](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~Y.html)' | markdownify }}</td><td>
+{{ '[Y](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.UpdateTooltipEventArgs~Y.html)' | markdownify }}</td><td>
 Specifies Mouse Y coordinate in client coordinates.</td></tr>
 </table>
 
@@ -2455,7 +2455,7 @@ This event is discussed in the User Margin topic.
 
 ### PaintUserMargin event
 
-This event occurs when the user margin has to be painted. The user margin in EditControl can be enabled or disabled by using the [ShowUserMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowUserMargin.html) property. Its default value is `false`. To show the user margin, turn on its value to `true`.
+This event occurs when the user margin has to be painted. The user margin in EditControl can be enabled or disabled by using the [ShowUserMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowUserMargin.html) property. Its default value is `false`. To show the user margin, turn on its value to `true`.
 
 The event handler receives an argument of type [PaintEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.forms.painteventargs(v=vs.110).aspx). The following PaintEventArgs members provide specific information of this event.
 
@@ -2502,7 +2502,7 @@ End Sub
 
 ## WordWrapChanged event
 
-This event is fired when the value of the [WordWrapMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapMode.html) property is changed. The WordWrapMode property specifies the mode of word wrapping.
+This event is fired when the value of the [WordWrapMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WordWrapMode.html) property is changed. The WordWrapMode property specifies the mode of word wrapping.
 
 The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
 

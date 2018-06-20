@@ -10,7 +10,7 @@ documentation: ug
 # Expression Fields
 The GridGroupingControl lets column to display the calculation results based on other fields in the same record. The calculation result can be displayed in a separate column i.e. unbound column. These expression columns can be visible or invisible, used in grouping and sorting, and may be employed as summary fields for summary rows.
 
-The [ExpressionFields](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ExpressionFields.html) are maintained in the [ExpressionFieldsDescriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptorCollection.html) in which each entry termed as [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor.html) defines one expression field. 
+The [ExpressionFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ExpressionFields.html) are maintained in the [ExpressionFieldsDescriptorCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptorCollection.html) in which each entry termed as [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor.html) defines one expression field. 
 
 The below example shows the behavior of the ExpressionFields in the GridGroupingControl,
 
@@ -22,13 +22,13 @@ The ExpressionFields can be added to GridGroupingControl at design time by using
 
 ![](Expression-Fields_images/Expression-Fields_img3.png)
 
-The [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor.html) class has the following properties. 
+The [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor.html) class has the following properties. 
 
-* [Name](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~Name.html) – Specifies the name of the Expression field.
-* [Expression](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor~Expression.html) – Specifies the formula expression.
-* [ResultType](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor~ResultType.html)  - Specifies the result type to which the expression should be converted.
-* [ForceImmediateSaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~ForceImmediateSaveValue.html) - Indicates whether the changes to the field in a record should trigger [SaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~SaveValue_EV.html) event; Set it to False to avoid triggering [ListChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ListChanged_EV.html) events when the expression field is modified.
-* [ReferencedFields](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~ReferencedFields.html) - Saves a list of referenced field names used in the expression. Use semicolon as a delimiter to specify multiple fields. This list will be used by the engine to determine the cells to be updated when `ListChanged` event is triggered.
+* [Name](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~Name.html) – Specifies the name of the Expression field.
+* [Expression](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor~Expression.html) – Specifies the formula expression.
+* [ResultType](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor~ResultType.html)  - Specifies the result type to which the expression should be converted.
+* [ForceImmediateSaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~ForceImmediateSaveValue.html) - Indicates whether the changes to the field in a record should trigger [SaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~SaveValue_EV.html) event; Set it to False to avoid triggering [ListChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~ListChanged_EV.html) events when the expression field is modified.
+* [ReferencedFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.FieldDescriptor~ReferencedFields.html) - Saves a list of referenced field names used in the expression. Use semicolon as a delimiter to specify multiple fields. This list will be used by the engine to determine the cells to be updated when `ListChanged` event is triggered.
 
 The following code will be generated after expression field is added at design time,
 
@@ -66,7 +66,7 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Syncfusi
 {% endtabs %}
 
 ## Expression column Appearance
-The Appearance for the Expression column can be applied as like column styling by using the [Column.Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~Appearance.html) property. The style attributes like BackColor, TextColor, Alignment etc., can be customized for Expression columns.
+The Appearance for the Expression column can be applied as like column styling by using the [Column.Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~Appearance.html) property. The style attributes like BackColor, TextColor, Alignment etc., can be customized for Expression columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -384,7 +384,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("Losing %
 ![](Expression-Fields_images/Expression-Fields_img5.png)
 
 ## Adding Custom Function
-The custom functions which can be any mathematical formulas or calculation method can be used in the ExpressionFields. The can be done by using the [ExpressionFieldEvaluator](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor.html) class.
+The custom functions which can be any mathematical formulas or calculation method can be used in the ExpressionFields. The can be done by using the [ExpressionFieldEvaluator](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldDescriptor.html) class.
 
 The following steps are used to add the custom function in ExpressionFields,
 
@@ -449,7 +449,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-2.Add the custom function in the ` ExpressionFieldEvaluator ` using [AddFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldEvaluator~AddFunction.html) method and use that custom function in the Expressions
+2.Add the custom function in the ` ExpressionFieldEvaluator ` using [AddFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldEvaluator~AddFunction.html) method and use that custom function in the Expressions
 
 {% tabs %}
 {% highlight c# %}
@@ -484,7 +484,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Expression
 ## Adding Calculate Engine Formulas
 The [Essential Calculate formula](http://help.syncfusion.com/windowsforms/calculate/calculate-functions) functions can also be used as custom function for the calculation of Expression Fields. The **Syncfusion.Calculate.Base.dll**provides the accessible to use the calculate engine. 
 
-Please refer the below dashboard sample to create the [CalcEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) with the [ICalcData](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html),
+Please refer the below dashboard sample to create the [CalcEngine](http://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) with the [ICalcData](http://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.ICalcData.html),
 
 **&lt;Installation Location&gt;\Syncfusion\EssentialStudio\&lt;Product Version&gt;\Windows\Calculate.Windows\Samples\Array ICalcData Demo**
 
@@ -503,7 +503,7 @@ Dim engine As CalcEngine = New CalcEngine(data)
 {% endhighlight %}
 {% endtabs %}
 
-2.Add the calculate function to the ` ExpressionFieldEvaluator using [AddFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldEvaluator~AddFunction.html) method,
+2.Add the calculate function to the ` ExpressionFieldEvaluator using [AddFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldEvaluator~AddFunction.html) method,
 
 {% tabs %}
 {% highlight c# %}
@@ -559,7 +559,7 @@ Dim engine As New CalcEngine(data)
 {% endhighlight %}
 {% endtabs %}
 
-2.Add the calculate function to the ` ExpressionFieldEvaluator ` using [AddFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldEvaluator~AddFunction.html) method,
+2.Add the calculate function to the ` ExpressionFieldEvaluator ` using [AddFunction](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldEvaluator~AddFunction.html) method,
 
 {% tabs %}
 {% highlight c# %}
@@ -595,7 +595,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Expression
 ![](Expression-Fields_images/Expression-Fields_img8.png)
 
 ## Validating Expression
-The expressions can be validated using the [IsExpressionValid](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldEvaluator~IsExpressionValid.html) method. When an invalid expression is added to the ExpressionField, the error message will be displayed in `ExpressionFields` rows.
+The expressions can be validated using the [IsExpressionValid](http://help.syncfusion.com/cr/cref_files/windowsforms/grouping/Syncfusion.Grouping.Base~Syncfusion.Grouping.ExpressionFieldEvaluator~IsExpressionValid.html) method. When an invalid expression is added to the ExpressionField, the error message will be displayed in `ExpressionFields` rows.
 
 Passing only one record into `IsExpressionValid` method is enough for validating the expressions of the whole GridGroupingControl. It’s not mandatory to validate the expression for each and every records.  
 

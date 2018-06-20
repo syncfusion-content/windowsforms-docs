@@ -63,7 +63,7 @@ N> OLE Drag Drop operation is also possible between GridControl and any other te
 
 ## Column ordering
 
-In GridControl, the drag drop functionality is available in between the columns of the Grid. This can be achieved by setting the [ControllerOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControllerOptions.html#) property as `DragColumnHeader`.
+In GridControl, the drag drop functionality is available in between the columns of the Grid. This can be achieved by setting the [ControllerOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControllerOptions.html#) property as `DragColumnHeader`.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ Me.gridControl1.ControllerOptions ~= GridControllerOptions.DragColumnHeader
 
 ### Disabling Drag and Drop for a Particular Column Header
 
-There is an event named [QueryAllowDragColumnHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBaseImp~QueryAllowDragColumnHeader_EV.html#) which gets fired while dragging the header. This event can be used to prevent drag drop operation between particular headers by setting the [AllowDrag](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryDragColumnHeaderEventArgs~AllowDrag.html#) property to `false`.
+There is an event named [QueryAllowDragColumnHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBaseImp~QueryAllowDragColumnHeader_EV.html#) which gets fired while dragging the header. This event can be used to prevent drag drop operation between particular headers by setting the [AllowDrag](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryDragColumnHeaderEventArgs~AllowDrag.html#) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -121,7 +121,7 @@ End Sub
 
 ## Customizing drag and drop
 
-It is possible to control the clipboard format of the data that is being be dragged by using the [Model.Options.DragDropDropTargetFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~DragDropDropTargetFlags.html#). Check the enumeration [GridDragDropFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridDragDropFlags_members.html#) to see the full set of options that are supported.
+It is possible to control the clipboard format of the data that is being be dragged by using the [Model.Options.DragDropDropTargetFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~DragDropDropTargetFlags.html#). Check the enumeration [GridDragDropFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridDragDropFlags_members.html#) to see the full set of options that are supported.
 
 {% tabs %}
 {% highlight c# %}
@@ -218,7 +218,7 @@ End Sub
 
 ### Blocking the Data before Dragging
 
-[QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#) event can be used to identify in which range the contents are been moved. It is also possible to cancel the process of Drag and drop operations by using the `Cancel` property.
+[QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#) event can be used to identify in which range the contents are been moved. It is also possible to cancel the process of Drag and drop operations by using the `Cancel` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -244,7 +244,7 @@ End Sub
 
 ### Dragging and dropping for merged cells
 
-Drag Drop can also be done for merged cells but while dropping the contents to another location, the merging of cells operation will be canceled. To overcome this problem make use of the [QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#)  event and add the merged range in the selection property.
+Drag Drop can also be done for merged cells but while dropping the contents to another location, the merging of cells operation will be canceled. To overcome this problem make use of the [QueryCanOleDragRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~QueryCanOleDragRange_EV.html#)  event and add the merged range in the selection property.
 
 {% tabs %}
 {% highlight c# %}
@@ -277,7 +277,7 @@ For more info regarding the Drag Drop related queries please refer our KB articl
 
 ### Retaining the Dragged Contents
 
-By default while moving the contents from one grid to another using drag and drop operation, the contents of the first grid will be moved completely to the second grid. To overcome this make use of the [QueryDragDropMoveClearCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryDragDropMoveClearCells_EV.html#) event and set the `Cancel` property as `true`. 
+By default while moving the contents from one grid to another using drag and drop operation, the contents of the first grid will be moved completely to the second grid. To overcome this make use of the [QueryDragDropMoveClearCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryDragDropMoveClearCells_EV.html#) event and set the `Cancel` property as `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -302,7 +302,7 @@ End Sub
 
 ### Obtaining the Dragging Range
 
-[QueryOleDataSourceData](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryOleDataSourceData_EV.html#) is another event which is used to get the range of cells that is being copied by using OLE Drag Drop operations.
+[QueryOleDataSourceData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryOleDataSourceData_EV.html#) is another event which is used to get the range of cells that is being copied by using OLE Drag Drop operations.
 
 {% tabs %}
 {% highlight c# %}
@@ -331,7 +331,7 @@ End Sub
 
 ### Finding the Row Index and Column Index of the Dropped Grid
 
-It is possible to get the row index and column index while drag and drop the contents to the exact location by using the [Model.OleDropAtRowCol](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~OleDropAtRowCol_EV.html#) event.
+It is possible to get the row index and column index while drag and drop the contents to the exact location by using the [Model.OleDropAtRowCol](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~OleDropAtRowCol_EV.html#) event.
 
 {% tabs %}
 {% highlight c# %}

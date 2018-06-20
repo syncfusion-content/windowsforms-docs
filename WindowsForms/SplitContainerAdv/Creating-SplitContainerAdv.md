@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in a Windows Forms application.
+This section describes how to add [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in a Windows Forms application.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) in any application:
+The following list of assemblies should be added as reference to use the [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) in any application:
 
 <table>
 <tr>
@@ -77,7 +77,7 @@ Syncfusion.Tools.Windows contains the class that handles all UI operations and c
 
 ## Installing NuGet Packages
 
-To use [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in Windows Forms application via nuget, the following packages should be installed.
+To use [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in Windows Forms application via nuget, the following packages should be installed.
  
 <table>
 <tr>
@@ -145,7 +145,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 # Creating simple application with SplitContainerAdv
 
-You can create the Windows Forms application with [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control as follows:
+You can create the Windows Forms application with [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Form Designer](#adding-control-via-Form-designer)
@@ -153,7 +153,7 @@ You can create the Windows Forms application with [SplitContainerAdv](https://he
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) with functionalities.
+Create a new Windows Forms project in the Visual Studio to display the [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) with functionalities.
 
 ## Adding control via Form designer
 
@@ -237,7 +237,7 @@ Me.Controls.Add(SplitContainerAdv1)
 
 **Adding Controls to SplitContainerAdv**
 
-Create instance of the required Controls and add it to panels such as [Panel1](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1.html) or [Panel2](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2.html) of the SplitContainerAdv.
+Create instance of the required Controls and add it to panels such as [Panel1](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1.html) or [Panel2](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2.html) of the SplitContainerAdv.
 
 {% tabs %}
 

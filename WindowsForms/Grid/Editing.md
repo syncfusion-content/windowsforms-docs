@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Editing
 
-GridControl provides editing support for normal cells and also for all the cell types that are existing in it accordingly. For changing the editing behavior make use of the [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ActivateCurrentCellBehavior.html#) property. This property will decide whether to edit the cells using single click or double click or disable editing.
+GridControl provides editing support for normal cells and also for all the cell types that are existing in it accordingly. For changing the editing behavior make use of the [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ActivateCurrentCellBehavior.html#) property. This property will decide whether to edit the cells using single click or double click or disable editing.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,7 +56,7 @@ This section will explain on how to begin, commit and cancel the editing process
 
 ### Start Editing on current cell
 
-The [CurrentCell.BeginEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~BeginEdit.html#) method is used to start editing for a current cell and it also allows to set the focus for the cell editor.
+The [CurrentCell.BeginEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~BeginEdit.html#) method is used to start editing for a current cell and it also allows to set the focus for the cell editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,11 +69,11 @@ Me.gridControl1.CurrentCell.BeginEdit()
 {% endtabs %}
 
 
-N> To check whether the current cell is in editing mode, make use of the [CurrentCell.IsEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~IsEditing.html#) property.
+N> To check whether the current cell is in editing mode, make use of the [CurrentCell.IsEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~IsEditing.html#) property.
 
 ### Committing the changes
 
-The [CurrentCell.EndEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~EndEdit.html#) method is used to complete the editing process of the current cell. After completing the `EndEdit` method the cell style will be saved for the current cell.
+The [CurrentCell.EndEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~EndEdit.html#) method is used to complete the editing process of the current cell. After completing the `EndEdit` method the cell style will be saved for the current cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,13 +85,13 @@ Me.gridControl1.CurrentCell.EndEdit()
 {% endhighlight %}
 {% endtabs %}
 
-N> Likewise [ConfirmChanges](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ConfirmChanges.html#) method also saves or confirms the modified current cell and closes any open drop-down windows. 
+N> Likewise [ConfirmChanges](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ConfirmChanges.html#) method also saves or confirms the modified current cell and closes any open drop-down windows. 
 
 
 
 ### Canceling the Changes
 
-The [CancelEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~CancelEdit.html#)() method is used to cancel editing for the current cells and discard the changes related to it.
+The [CancelEdit](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~CancelEdit.html#)() method is used to cancel editing for the current cells and discard the changes related to it.
 
 {% tabs %}
 {% highlight c# %}
@@ -105,11 +105,11 @@ Me.gridControl1.CurrentCell.CancelEdit()
 
 ## Read Only
 
-Editing can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. Default value for this property is `false`. This section explains about the usage of `ReadOnly` property in GridControl.
+Editing can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. Default value for this property is `false`. This section explains about the usage of `ReadOnly` property in GridControl.
 
 ### Enabling Read Only for entire Grid
 
-To enable/disable the editing for the entire GridControl, make use of the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property.
+To enable/disable the editing for the entire GridControl, make use of the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -131,7 +131,7 @@ Me.gridControl1.ReadOnly = False
 
 ### Enabling Read Only for a Particular Cell
 
-For preventing the editing in cell by cell basis, make use of the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) object’s [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. `GridStyleInfo` object will be available for each cell in the GridControl.
+For preventing the editing in cell by cell basis, make use of the [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) object’s [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. `GridStyleInfo` object will be available for each cell in the GridControl.
 
 {% tabs %}
 {% highlight c# %}
@@ -153,7 +153,7 @@ Me.gridControl1(2, 2).ReadOnly = False
 
 ### Changing the content of a Read Only Cell
 
-If a cell is in ReadOnly mode then it is not possible to make any changes in that cell programmatically. So to make changes to Read-Only cells, make use of the [IgnoreReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~IgnoreReadOnly.html#) property, which allows to change the ReadOnly cell.
+If a cell is in ReadOnly mode then it is not possible to make any changes in that cell programmatically. So to make changes to Read-Only cells, make use of the [IgnoreReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~IgnoreReadOnly.html#) property, which allows to change the ReadOnly cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -191,7 +191,7 @@ Me.gridControl1.IgnoreReadOnly = False
 
 ## Browse Only
 
-[BrowseOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~BrowseOnly.html#) property can be used to disable the editing mode for the whole grid. It is not possible to disable particular cells using this property.
+[BrowseOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~BrowseOnly.html#) property can be used to disable the editing mode for the whole grid. It is not possible to disable particular cells using this property.
 
 {% tabs %}
 {% highlight c# %}
@@ -209,7 +209,7 @@ N> On using the `BrowseOnly` property, the edit cursor for that cell will not be
 
 ### Prevent Editing for Particular Range of Cells
 
-It is possible to prevent a particular cell or range of cells by using the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event. The `Cancel` property is used to restrict the editing.
+It is possible to prevent a particular cell or range of cells by using the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event. The `Cancel` property is used to restrict the editing.
 
 {% tabs %}
 {% highlight c# %}
@@ -242,7 +242,7 @@ End Sub
 
 ### CurrentCellActivating
 
-The [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellActivating_EV.html#) event will be fired each time, while navigating between cells. Also when the grid activates a specified cell as current cell then this event will be called.
+The [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellActivating_EV.html#) event will be fired each time, while navigating between cells. Also when the grid activates a specified cell as current cell then this event will be called.
 
 {% tabs %}
 {% highlight c# %}
@@ -267,7 +267,7 @@ End Sub
 
 ### CurrentCellActivated
 
-After activating the specified current cell, the [CurrentCellActivated](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellActivated_EV.html#) event will be fired.
+After activating the specified current cell, the [CurrentCellActivated](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellActivated_EV.html#) event will be fired.
 
 {% tabs %}
 {% highlight c# %}
@@ -295,7 +295,7 @@ End Sub
 
 ### Canceling Edit for the Whole Grid Cells
 
-The [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event will be fired when the current cell switches to edit mode. So on clicking an editing cell, this event will be called. There is `Cancel` property used in this event so that editing can be canceled whenever required.
+The [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellStartEditing_EV.html#) event will be fired when the current cell switches to edit mode. So on clicking an editing cell, this event will be called. There is `Cancel` property used in this event so that editing can be canceled whenever required.
 
 {% tabs %}
 {% highlight c# %}
@@ -325,7 +325,7 @@ End Sub
 
 ### CurrentCell Changing or Changed
 
-While changing contents in the current cell, [CurrentCellChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanging_EV.html#) and [CurrentCellChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanged_EV.html#) events will be triggered respectively for each cells.
+While changing contents in the current cell, [CurrentCellChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanging_EV.html#) and [CurrentCellChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellChanged_EV.html#) events will be triggered respectively for each cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -364,7 +364,7 @@ End Sub
 
 ### CurrentCellEditingComplete
 
-After all the changes done in the current cell and editing mode is completed for that cell, the [CurrentCellEditingComplete](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellEditingComplete_EV.html#) event will be fired finally.
+After all the changes done in the current cell and editing mode is completed for that cell, the [CurrentCellEditingComplete](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellEditingComplete_EV.html#) event will be fired finally.
 
 {% tabs %}
 {% highlight c# %}
@@ -435,7 +435,7 @@ End Sub
 
 ### Capturing Function keys on current cell Editing
 
-When the current cell is actively being edited, the grid does not automatically catch the Function keys in the current cell. In this case, make use of the [CurrentCellControlKeyMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellControlKeyMessage_EV.html#) to catch the function keys. 
+When the current cell is actively being edited, the grid does not automatically catch the Function keys in the current cell. In this case, make use of the [CurrentCellControlKeyMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellControlKeyMessage_EV.html#) to catch the function keys. 
 
 {% tabs %}
 {% highlight c# %}
@@ -499,7 +499,7 @@ Me.gridControl1.ColStyles[2].AutoFit = AutoFitOptions.None
 {% endhighlight %}
 {% endtabs %}
 
-The desired character can be changed by using the [AutoFitChar](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~AutoFitChar.html#) property.
+The desired character can be changed by using the [AutoFitChar](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~AutoFitChar.html#) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -518,7 +518,7 @@ Me.gridControl1.ColStyles[2].AutoFitChar = '#’
 
 ### Applying trimming when cell content exceed its size	
 
-While the content of the cell exceeds to the cells size then the text is automatically wrapped in to the next line. To show the Ellipsis word like the '…’ at the end of the text, set the [Trimming](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Trimming.html#) option for the cell as EllipsisWord.
+While the content of the cell exceeds to the cells size then the text is automatically wrapped in to the next line. To show the Ellipsis word like the '…’ at the end of the text, set the [Trimming](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Trimming.html#) option for the cell as EllipsisWord.
 
 {% tabs %}
 {% highlight c# %}
@@ -539,7 +539,7 @@ N> For applying the trimming functionality, make sure that the `WrapText` proper
 
 ### Enabling Insert mode on Editing
 
-To edit the contents of the cell in insert mode (Replace the existing character with the new one) while inserting the text on a cell, set the selection length of the current cell renderer as one in the [CurrentCellKeyPress](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellKeyPress_EV.html#) event. 
+To edit the contents of the cell in insert mode (Replace the existing character with the new one) while inserting the text on a cell, set the selection length of the current cell renderer as one in the [CurrentCellKeyPress](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellKeyPress_EV.html#) event. 
 
 {% tabs %}
 {% highlight c# %}

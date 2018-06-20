@@ -25,7 +25,7 @@ Binary Serialization is used to convert the grid schema information into Binary 
 
 ### Saving Binary
 
-During the binary serialization the schema of the grid will be saved into the file as the bit streams. The [SaveBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveBinary.html#) method is used to serialize the grid schema into the binary format.
+During the binary serialization the schema of the grid will be saved into the file as the bit streams. The [SaveBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveBinary.html#) method is used to serialize the grid schema into the binary format.
 
 {% tabs %} 
 {% highlight c# %}
@@ -42,7 +42,7 @@ Me.gridControl1.SaveBinary("GridSchema")
 
 ### Loading Binary
 
-To load the serialized contents of the encoded grid schema, decode it by using the [LoadBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadBinary.html#) method and assign it to the grid model.
+To load the serialized contents of the encoded grid schema, decode it by using the [LoadBinary](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadBinary.html#) method and assign it to the grid model.
 
 {% tabs %} 
 {% highlight c# %}
@@ -63,7 +63,7 @@ This serialization technique is used to store the data (schema) and Look and fee
 
 ### Serialization 
 
-The schema and look and feel of the GridControl can be serialized by using the [SaveXml](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveXml.html#) method. 
+The schema and look and feel of the GridControl can be serialized by using the [SaveXml](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveXml.html#) method. 
 
 {% tabs %} 
 {% highlight c# %}
@@ -79,7 +79,7 @@ Me.gridControl1.SaveXml("GridSchema")
 
 ### Deserialization 
 
-The [InitializeFromXml](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~InitializeFromXml.html#) method is used to deserialize the contents of the XML file to restore the schema and look and feel of the GridControl.
+The [InitializeFromXml](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~InitializeFromXml.html#) method is used to deserialize the contents of the XML file to restore the schema and look and feel of the GridControl.
 
 {% tabs %} 
 {% highlight c# %}
@@ -181,7 +181,7 @@ This serialization technique is used to store the schema of the grid in a memory
 
 ### Saving SOAP
 
-The GridModel.[SaveSoap](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SaveSoap.html#) method is used to save the schema of the grid to the memory stream / file.
+The GridModel.[SaveSoap](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SaveSoap.html#) method is used to save the schema of the grid to the memory stream / file.
 
 {% tabs %} 
 {% highlight c# %}
@@ -207,7 +207,7 @@ Me.gridControl1.SaveSoap(stream) 'this.gridControl1.SaveXml(stream);
 
 ### Loading SOAP
 
-The [GridModel.LoadSoap](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadSoap.html#) method is used to deserialize the contents of the file/memory stream to the grid model.
+The [GridModel.LoadSoap](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~LoadSoap.html#) method is used to deserialize the contents of the file/memory stream to the grid model.
 
 {% tabs %} 
 {% highlight c# %}

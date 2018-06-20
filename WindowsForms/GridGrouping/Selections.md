@@ -885,11 +885,11 @@ Next range
 
 
 ## Excel like Selection Frame
-Excel like selection frame can be enabled by setting the [ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ExcelLikeSelectionFrame.html#) and [ExcelLikeCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ExcelLikeCurrentCell.html#) properties to `true`. The [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionFrameOption.html#) property can be used to enable the 2016 Excel like selection frame or 2003 Excel like selection fame by using [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) enumeration. The default value of the `SelectionFrameOption` property is `SelectionFrameOption.Excel2016`.
+Excel like selection frame can be enabled by setting the [ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ExcelLikeSelectionFrame.html#) and [ExcelLikeCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ExcelLikeCurrentCell.html#) properties to `true`. The [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionFrameOption.html#) property can be used to enable the 2016 Excel like selection frame or 2003 Excel like selection fame by using [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) enumeration. The default value of the `SelectionFrameOption` property is `SelectionFrameOption.Excel2016`.
 The `SelectionFrameOption` enumeration has the following types of selection frame options, 
 
- [SelectionFrameOption.Excel2003](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) - It is used the enable the 2003 Excel like selection frame for the grid.
- [SelectionFrameOption.Excel2016](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) - It is used the enable the 2016 Excel like selection frame for the grid.
+ [SelectionFrameOption.Excel2003](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) - It is used the enable the 2003 Excel like selection frame for the grid.
+ [SelectionFrameOption.Excel2016](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) - It is used the enable the 2016 Excel like selection frame for the grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -924,7 +924,7 @@ Me.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFrame
 ![](Selections_images/DataGrid_img2.png)
 
 ### Changing the Selection Border Brush
-The selection border brush for 2016 Excel like selection frame can be changed by using the [SelectionBorderBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderBrush.html#) property.
+The selection border brush for 2016 Excel like selection frame can be changed by using the [SelectionBorderBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderBrush.html#) property.
 {% tabs %}
 {% highlight c# %}
 //Sets the selection border brush for 2016 Excel-like selection frame.
@@ -938,7 +938,7 @@ Me.gridGroupingControl1.TableModel.Options.SelectionBorderBrush = New SolidBrush
 ![](Selections_images/DataGrid_img3.png)
 
 ### Changing the Selection Border Thickness
-The selection border thickness for 2016 Excel like selection frame can be changed by using the [SelectionBorderThickness](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderThickness.html#) property.
+The selection border thickness for 2016 Excel like selection frame can be changed by using the [SelectionBorderThickness](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderThickness.html#) property.
 {% tabs %}
 {% highlight c# %}
 //Set the selection border thickness for 2016 Excel-like selection frame.

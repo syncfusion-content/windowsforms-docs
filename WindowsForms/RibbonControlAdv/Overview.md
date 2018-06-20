@@ -8,27 +8,27 @@ documentation: ug
 ---
 
 # Overview
-`RibbonControlAdv` illustrates the implementation of Ribbon like UI with Ribbon items and Backstage. Also, RibbonForm has been implemented for giving a themed Office UI look and feel for a complete window. The ribbon user interface (UI) increases discoverability of features, enables quicker learning of the application and makes user feel more in control of their experience with the application.
+
+Ribbon illustrates the implementation of Office UI with Ribbon items and Backstage. Also RibbonForm has been implemented for giving a themed Office UI look and feel for the traditional window. Functionality of keyboard navigation, Tooltips and Key tips are provided for access to items present in the ribbon.
 
 ## Components of RibbonControlAdv
 
-•	Ribbon Form
-•	Menu Button
-•	BackStageView
-•	RibbonPanel
-•	ToolStripTabItem
-•	ToolStripEx
-•	ToolStripItems
+* Ribbon Form
+* Menu Button
+* BackStageView 
+* RibbonPanel
+* ToolStripTabItem
+* ToolStripItems
+* ToolStripEx 
 
 ## Key Features
 
-•	RibbonForm - An extension that replaces the default form to enable different Visual styles to ribbon. 
-•	QuickAccessToolbar - Provides placing of frequently used items.
-•	ToolStripTabItem - Support to add different Tabs to show the features of application like in Microsoft Outlook.
-•	RibbonPanel – Allows to structure the layouts.
-•	DropDownButton – Collapses the Ribbon, which provides more space and tab names will appear.
-•	KeyTips – Interactive support through keyboard navigation.
-•	StatusStripEx -  Provides placing of StatusBar items at the bottom of the form.
-•	Persistence - Support to save and load the state of RibbonControlAdv.
+* Provides a RibbonForm that overrides the default form and can set visual styles of RibbonForm to different theme styles.
+* QuickAccessToolbar provides placing of frequently used items.
+* ToolStripTabItem is available to add different Tabs like in Microsoft Outlook.
+* RibbonPanel is available to structure the layouts.
+* Can minimize / maximize the ribbon.
+* Keyboard navigation made easy through KeyTips.
+* StatusBarEx provides placing of StatusBar items.
+* Restore the saved state of the RibbonControlAdv using Persistence support.
 
-![](OverView_Images/OverView_img1.jpg)

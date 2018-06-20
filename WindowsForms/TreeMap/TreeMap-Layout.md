@@ -9,7 +9,7 @@ documentation: ug
 
 # Tree Map Layout
 
-The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ItemsLayoutMode.html) of the tree map control specifies the mode in which the items should be laid out. This layout will be applied for all the tree map levels. It includes four different types of layout.
+The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ItemsLayoutMode.html) of the tree map control specifies the mode in which the items should be laid out. This layout will be applied for all the tree map levels. It includes four different types of layout.
 
 ## Squarified layout
 

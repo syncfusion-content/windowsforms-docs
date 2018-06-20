@@ -63,7 +63,7 @@ public partial class Form1 : SfForm
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Title Bar Customization
 
@@ -94,7 +94,7 @@ this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ## Border Customization
 
@@ -109,7 +109,7 @@ this.Style.InactiveBorder = new Pen(Color.Gray, 5);
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 ## Loading User Control to the Title Bar
 
@@ -131,5 +131,5 @@ this.TitleBarTextControl = searchPanel;
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.jpeg)
 

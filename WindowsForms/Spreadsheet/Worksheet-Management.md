@@ -47,7 +47,7 @@ spreadsheet.UnhideSheet("Sheet 2");
 
 ## Rename a sheet programmatically
 
-Spreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RenameSheet.html) method.
+Spreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RenameSheet.html) method.
 
 {% tabs %}
 	
@@ -63,7 +63,7 @@ spreadsheet.RenameSheet("ExistingSheetName", "NewSheetName");
 
 ### Protecting a worksheet
 
-Spreadsheet provides support to protect the worksheet with or without password. This helps to prevent a user from modifying the contents of the worksheet. The protection of worksheet can be done with [ExcelSheetProtection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelSheetProtection.html) options also.
+Spreadsheet provides support to protect the worksheet with or without password. This helps to prevent a user from modifying the contents of the worksheet. The protection of worksheet can be done with [ExcelSheetProtection](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelSheetProtection.html) options also.
 
 The Protect sheet options are
 
@@ -151,7 +151,7 @@ spreadsheet.SetRowColumnHeadersVisibility(false);
 
 ## Zooming
 
-Spreadsheet provides support to zoom in and zoom out of a worksheet view. The property [AllowZooming](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowZooming.html) determines whether to allow zooming or not.
+Spreadsheet provides support to zoom in and zoom out of a worksheet view. The property [AllowZooming](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowZooming.html) determines whether to allow zooming or not.
 
 {% tabs %}
 {% highlight c# %}
@@ -164,9 +164,9 @@ spreadsheet.SetZoomFactor("Sheet1", 200);
 
 The Events associated with the Zooming are 
 
-. [ZoomFactorChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ZoomFactorChanged_EV.html)
+. [ZoomFactorChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ZoomFactorChanged_EV.html)
 
-. [ZoomFactorChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ZoomFactorChanging_EV.html)
+. [ZoomFactorChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ZoomFactorChanging_EV.html)
 
 ## Events
 
@@ -177,66 +177,66 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[WorkbookCreating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookCreating_EV.html) ' | markdownify }}</td><td>
+{{ '[WorkbookCreating](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookCreating_EV.html) ' | markdownify }}</td><td>
 Occurs when the workbook is to be created in Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookLoaded_EV.html) ' | markdownify }}</td><td>
+{{ '[WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookLoaded_EV.html) ' | markdownify }}</td><td>
 Occur when the workbook is loaded in Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[WorksheetAdding](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetAdding_EV.html) ' | markdownify }}
+{{ '[WorksheetAdding](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetAdding_EV.html) ' | markdownify }}
 </td><td>
 Occurs when the worksheet is to be added in Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[WorksheetAdded](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetAdded_EV.html) ' | markdownify }}
+{{ '[WorksheetAdded](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetAdded_EV.html) ' | markdownify }}
 </td><td>
 Occurs when the worksheet is added in Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[WorksheetRemoving](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetRemoving_EV.html) ' | markdownify }}
+{{ '[WorksheetRemoving](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetRemoving_EV.html) ' | markdownify }}
 </td><td>
 Occurs when the worksheet is to be removed from Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[WorksheetRemoved](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetRemoved_EV.html) ' | markdownify }}
+{{ '[WorksheetRemoved](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetRemoved_EV.html) ' | markdownify }}
 </td><td>
 Occurs when the worksheet is removed from Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[WorkbookUnloaded](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookUnloaded_EV.html) ' | markdownify }}</td><td>
+{{ '[WorkbookUnloaded](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookUnloaded_EV.html) ' | markdownify }}</td><td>
 Occurs when the workbook is unloaded or removed from the Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[ZoomFactorChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ZoomFactorChanged_EV.html) ' | markdownify }}</td><td>
+{{ '[ZoomFactorChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ZoomFactorChanged_EV.html) ' | markdownify }}</td><td>
 Occurs when the zoom factor in Spreadsheet is changed.</td></tr>
 <tr>
 <td>
-{{ '[ZoomFactorChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ZoomFactorChanging_EV.html) ' | markdownify }}</td><td>
+{{ '[ZoomFactorChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ZoomFactorChanging_EV.html) ' | markdownify }}</td><td>
 Occurs when the zoom factor in Spreadsheet is to be changed.</td></tr>
 <tr>
 <td>
-{{ '[ResizingColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~ResizingColumns_EV.html) ' | markdownify }}</td><td>
+{{ '[ResizingColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~ResizingColumns_EV.html) ' | markdownify }}</td><td>
 Occurs when performing the resizing columns in Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[ResizingRows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~ResizingRows_EV.html) ' | markdownify }}</td><td>
+{{ '[ResizingRows](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~ResizingRows_EV.html) ' | markdownify }}</td><td>
 Occurs when performing the resizing rows in Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[CellCommentOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellCommentOpening_EV.html) ' | markdownify }}</td><td>
+{{ '[CellCommentOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellCommentOpening_EV.html) ' | markdownify }}</td><td>
 Occurs when opening the comments in the cells of Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[CellTooltipOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellTooltipOpening_EV.html) ' | markdownify }}</td><td>
+{{ '[CellTooltipOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellTooltipOpening_EV.html) ' | markdownify }}</td><td>
 Occurs when opening the tool tips of cells in Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) ' | markdownify }}</td><td>
+{{ '[CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) ' | markdownify }}</td><td>
 Occurs when opening the context menu of the cell in Spreadsheet.</td></tr>
 <tr>
 <td>
-{{ '[QueryRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~QueryRange_EV.html) ' | markdownify }}</td><td>
+{{ '[QueryRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~QueryRange_EV.html) ' | markdownify }}</td><td>
 Occurs when grid queries for <code>IRange</code> information about a specific cell while rendering.</td></tr>
 </table>

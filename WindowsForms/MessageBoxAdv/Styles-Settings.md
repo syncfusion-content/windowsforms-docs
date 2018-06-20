@@ -329,7 +329,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 #### Customization
 
-In MessageBoxAdv, [MetroColorTable](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~MetroColorTable.html) is implemented for color customization of buttons and caption while applying Metro style in MessageBoxAdv. MessageBoxAdv can be customized by using the following properties:
+In MessageBoxAdv, [MetroColorTable](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~MetroColorTable.html) is implemented for color customization of buttons and caption while applying Metro style in MessageBoxAdv. MessageBoxAdv can be customized by using the following properties:
 
 <table>
 <tr>

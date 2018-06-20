@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Virtual Grid
 
-Virtual Grid is designed to display very large amount of data extremely fast. In a virtual grid, no cell data is stored in [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) objects or any other internal grid storage. All information is provided on demand through handled events. This walkthrough will explain how to create a virtual grid and all the events that are required to accomplish it, in `GridControl`.
+Virtual Grid is designed to display very large amount of data extremely fast. In a virtual grid, no cell data is stored in [GridStyleInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) objects or any other internal grid storage. All information is provided on demand through handled events. This walkthrough will explain how to create a virtual grid and all the events that are required to accomplish it, in `GridControl`.
 
 ## Getting Started
 
@@ -162,9 +162,9 @@ gridControl1.ResetVolatileData()
 {% endhighlight %}
 {% endtabs %}
 
-N> The call to [ResetVolatileData](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResetVolatileData.html#) tells the grid that it needs to reset properties like `RowCount` and `ColCount` the next time when they are needed. This will allow the event handlers to set these values.
+N> The call to [ResetVolatileData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResetVolatileData.html#) tells the grid that it needs to reset properties like `RowCount` and `ColCount` the next time when they are needed. This will allow the event handlers to set these values.
 
-5.For setting the number of rows and columns in the Virtual Grid, [QueryRowCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryRowCount_EV.html#) and [QueryColCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryColCount_EV.html#) event has to be used respectively. 
+5.For setting the number of rows and columns in the Virtual Grid, [QueryRowCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryRowCount_EV.html#) and [QueryColCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryColCount_EV.html#) event has to be used respectively. 
 
 {% tabs %}
 {% highlight c# %}
@@ -209,8 +209,8 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-6.To add data in a Virtual Grid, [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryCellInfo_EV.html#) event has to be used. This event is used to provide `GridStyleInfo` object for a given cell. 
-  The [CellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValue.html#) property of the `GridStyleInfo` object holds the data. All the changes made in this event is done in on-demand basis and not stored in any internal storage.
+6.To add data in a Virtual Grid, [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryCellInfo_EV.html#) event has to be used. This event is used to provide `GridStyleInfo` object for a given cell. 
+  The [CellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValue.html#) property of the `GridStyleInfo` object holds the data. All the changes made in this event is done in on-demand basis and not stored in any internal storage.
 
 {% tabs %}
 {% highlight c# %}
@@ -243,7 +243,7 @@ End Sub
 
 ## Editing and Updating
 
-Since virtual grid does not store data internally, it is not possible to update the cell values while changing the data dynamically. To overcome this, [SaveCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveCellInfo_EV.html#) event has to be used. This event will update/save values in virtual grid whenever any changes done in cells.
+Since virtual grid does not store data internally, it is not possible to update the cell values while changing the data dynamically. To overcome this, [SaveCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SaveCellInfo_EV.html#) event has to be used. This event will update/save values in virtual grid whenever any changes done in cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -277,7 +277,7 @@ End Sub
 
 ## Row Height
 
-For changing the height of the row in the Virtual Grid, make use of the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryRowHeight_EV.html#) event. This event is used to return row heights that are in demand. The `e.Size` property handles the height of the row.
+For changing the height of the row in the Virtual Grid, make use of the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryRowHeight_EV.html#) event. This event is used to return row heights that are in demand. The `e.Size` property handles the height of the row.
 
 {% tabs %}
 {% highlight c# %}
@@ -316,7 +316,7 @@ End Sub
 
 ## Column Width
 
-For changing the width of the column in the Virtual Grid, make use of the [QueryColWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryColWidth_EV.html#) event. This event is used to return column widths that are in demand. The `e.Size` property handles the width.
+For changing the width of the column in the Virtual Grid, make use of the [QueryColWidth](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryColWidth_EV.html#) event. This event is used to return column widths that are in demand. The `e.Size` property handles the width.
 
 {% tabs %}
 {% highlight c# %}
@@ -357,7 +357,7 @@ End Sub
 
 ## Covered Ranges
 
-For merging range of cells in Virtual Grid use the [QueryCoveredRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryCoveredRange_EV.html#) event. This event is used to provide covered ranges on demand. The desired range of cells can be merged using the [e.Range](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryCoveredRangeEventArgs~Range.html#) property.
+For merging range of cells in Virtual Grid use the [QueryCoveredRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~QueryCoveredRange_EV.html#) event. This event is used to provide covered ranges on demand. The desired range of cells can be merged using the [e.Range](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridQueryCoveredRangeEventArgs~Range.html#) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -393,7 +393,7 @@ End Sub
 
 ## Refreshing the Grid
 
-For refreshing the grid and to force the grid cells that are visible to reload all their data from the data source, make use of the [Model.ResetVolatileData](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ResetVolatileData.html#) method.
+For refreshing the grid and to force the grid cells that are visible to reload all their data from the data source, make use of the [Model.ResetVolatileData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ResetVolatileData.html#) method.
 {% tabs %}
 {% highlight c# %}
 // Refreshes the visible cells in grid.
@@ -408,7 +408,7 @@ Me.gridControl1.Model.ResetVolatileData()
 
 ### Refreshing Grid for Particular Range
 
-It is possible to refresh grid for a particular range by using the [RefreshRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RefreshRange.html#) method. Required range can be passed through this method by using the `GridRangeInfo` class. 
+It is possible to refresh grid for a particular range by using the [RefreshRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RefreshRange.html#) method. Required range can be passed through this method by using the `GridRangeInfo` class. 
 {% tabs %}
 {% highlight c# %}
 // Will refresh the cells of range (2, 2, 20, 20). 

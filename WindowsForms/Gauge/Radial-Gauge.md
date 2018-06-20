@@ -9,7 +9,7 @@ documentation: ug
 
 # RadialGauge
 
-[RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
+[RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
 
 ![](Radial-Gauge_images/Radial-Gauge_img1.png)
 

@@ -11,10 +11,10 @@ documentation: ug
 SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to excel.
 
-* [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html)
-* [Syncfusion.XlsIO.Base](https://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html)
+* [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/webtoc.html)
+* [Syncfusion.XlsIO.Base](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/webtoc.html)
 
-The SfDataGrid can be exported to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridExcelExportExtension~ExportToExcel.html) extension method present in the `Syncfusion.WinForms.DataGridConverter` namespace.
+The SfDataGrid can be exported to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridExcelExportExtension~ExportToExcel.html) extension method present in the `Syncfusion.WinForms.DataGridConverter` namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -37,7 +37,7 @@ workBook.SaveAs("Sample.xlsx")
 N> SfDataGrid exports data to excel by using `XlsIO`. You can refer[XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating exported work sheets.
 
 ## Exporting Options
-By default, actual value only will be exported to excel. This can be changed to export the display text by setting the [ExportMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportMode.html) property as `Text`.
+By default, actual value only will be exported to excel. This can be changed to export the display text by setting the [ExportMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportMode.html) property as `Text`.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endtabs %}
 
 ### Export Groups with Outlines
-By default, all the groups in SfDataGrid will be exported in expanded state. The outlines can be enabled in excel based on groups by setting the [AllowOutlining](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~AllowOutlining.html) property as `true` in [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
+By default, all the groups in SfDataGrid will be exported in expanded state. The outlines can be enabled in excel based on groups by setting the [AllowOutlining](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~AllowOutlining.html) property as `true` in [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ workBook.SaveAs("Sample.xlsx")
 ![](ExportToExcel_images/ExportToExcel_img1.jpeg)
 
 ### Exclude Columns while Exporting
-By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. In order  to exclude some columns from exporting, use the [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExcludeColumns.html) field of the [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
+By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. In order  to exclude some columns from exporting, use the [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExcludeColumns.html) field of the [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -100,10 +100,10 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-Here, the columns having `CustomerID` and `ProductName` as[MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) are excluded while exporting.
+Here, the columns having `CustomerID` and `ProductName` as[MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) are excluded while exporting.
 
 ### Excel Version
-The excel version can be specified while exporting to Excel by using [ExcelVersion](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExcelVersion.html) property.
+The excel version can be specified while exporting to Excel by using [ExcelVersion](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExcelVersion.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,7 +123,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endtabs %}
 
 ### Exporting Stacked Headers
-The stacked headers can also be exported to excel by setting the [ExportStackedHeaders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportStackedHeaders.html) property to `true`.
+The stacked headers can also be exported to excel by setting the [ExportStackedHeaders](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportStackedHeaders.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -143,7 +143,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endtabs %}
 
 ### Exporting Unbound Rows 
-The unbound rows can be exported to excel by setting the [ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportUnboundRows.html) property as `true`.
+The unbound rows can be exported to excel by setting the [ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportUnboundRows.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -163,7 +163,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endtabs %}
 
 ### Changing Start Row and Column Index while Exporting
-The data can be exported to the specified row and column index in worksheet, by setting [StartRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~StartRowIndex.html) and [StartColumnIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~StartColumnIndex.html) properties.
+The data can be exported to the specified row and column index in worksheet, by setting [StartRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~StartRowIndex.html) and [StartColumnIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~StartColumnIndex.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -188,7 +188,7 @@ workBook.SaveAs("Sample.xlsx")
 
 ## Saving Options
 ### Save Directly to File
-After exporting to excel the exported workbook can be saved directly to the file system by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
+After exporting to excel the exported workbook can be saved directly to the file system by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -206,7 +206,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endtabs %}
 
 ### Save as Stream
-After exporting to excel the exported workbook can be saved to a stream by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
+After exporting to excel the exported workbook can be saved to a stream by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -304,7 +304,7 @@ End If
 {% endtabs %}
 
 ## Export Selected Items to Excel
-By default, entire grid will be exported to Excel. The selected items can only exported to excel by passing the [SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html) to the [ExportToExcel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridExcelExportExtension~ExportToExcel(SfDataGrid,ObservableCollection%7BObject%7D,ExcelExportingOptions).html) method.
+By default, entire grid will be exported to Excel. The selected items can only exported to excel by passing the [SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html) to the [ExportToExcel](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridExcelExportExtension~ExportToExcel(SfDataGrid,ObservableCollection%7BObject%7D,ExcelExportingOptions).html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -330,7 +330,7 @@ workBook.SaveAs("Sample.xlsx")
 ![](ExportToExcel_images/ExportToExcel_img3.jpeg)
 
 ## Export to HTML
-The exported workbook can be saved as HTML by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
+The exported workbook can be saved as HTML by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -349,7 +349,7 @@ workBook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default)
 {% endhighlight %}
 {% endtabs %}
 
-It is also possible to save worksheet as HTML by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method. Also refer the[XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
+It is also possible to save worksheet as HTML by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method. Also refer the[XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
 
 ## Export to Mail
 The SfDataGrid can be exported to mail by converting it into Excel and save exported worksheet as HTML. Then exported HTML contents is embedded in mail body.
@@ -445,7 +445,7 @@ Console.WriteLine("Mail has been sent...")
 {% endtabs %}
 
 ## Export to XML
-The exported workbook can also be saved as the `xml` file by using [SaveAsXml](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsXml.html) method.
+The exported workbook can also be saved as the `xml` file by using [SaveAsXml](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsXml.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -484,7 +484,7 @@ workBook.SaveAs("Sample.csv", ",")
 {% endtabs %}
 
 ## Export to Image
-It also possible to convert the exported excel file into Image without saving the excel file in system with the help of [ConvertToImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ConvertToImage.html) method.
+It also possible to convert the exported excel file into Image without saving the excel file in system with the help of [ConvertToImage](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ConvertToImage.html) method.
 {% tabs %}
 {% highlight c# %}
 var excelExportingOptions = new ExcelExportingOptions();
@@ -513,7 +513,7 @@ System.Diagnostics.Process.Start("Sample.png")
 {% endtabs %}
 
 ## Import form Excel to SfDataGrid
-The DataSource of the SfDataGrid can be imported from the excel sheet by using the [IWorkSheet.ExportDataTable](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ExportDataTable.html) method. This method will convert the excel data into the DataTable.
+The DataSource of the SfDataGrid can be imported from the excel sheet by using the [IWorkSheet.ExportDataTable](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ExportDataTable.html) method. This method will convert the excel data into the DataTable.
 {% tabs %}
 {% highlight c# %}
 ExcelEngine excelEngine = new ExcelEngine();
@@ -554,7 +554,7 @@ excelEngine.Dispose()
 {% endtabs %}
 
 ## Row Height and Column Width Customization
-After exporting data to excel, the row height and column width of the exported sheet can be set by using the [SetRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~SetColumnWidth.html) methods.
+After exporting data to excel, the row height and column width of the exported sheet can be set by using the [SetRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~SetColumnWidth.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -632,7 +632,7 @@ End Sub
 ![](ExportToExcel_images/ExportToExcel_img4.jpeg)
 
 ## Cell Customization in Excel while Exporting
-The cells can be customized on exporting by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the `ExcelExportingOptions`.
+The cells can be customized on exporting by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the `ExcelExportingOptions`.
 
 ### Customize Cell Value while Exporting
 The cell value can be customized while exporting to excel by using the `CellExporting` event of the `ExcelExportingOption`.
@@ -812,7 +812,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-Before saving workbook, set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~Version.html) property. Here, you can directly manipulate the data in the worksheet. Also, refer[here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information about the worksheet customization.
+Before saving workbook, set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~Version.html) property. Here, you can directly manipulate the data in the worksheet. Also, refer[here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information about the worksheet customization.
 
 #### Setting Borders
 The borders of the excel cells can be set by directly accessing worksheet after exporting data.
@@ -953,7 +953,7 @@ workBook1.SaveAs("sample.xlsx")
 {% endtabs %}
 
 ## Performance
-Using [ExcelExportingOptions.CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event and changing settings for each cell will consume more memory and time consumption. So, avoid using CellsExporting event and instead of that, do the required settings in the exported sheet.
+Using [ExcelExportingOptions.CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagridconverter/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event and changing settings for each cell will consume more memory and time consumption. So, avoid using CellsExporting event and instead of that, do the required settings in the exported sheet.
 
 ### Formatting Columns without using Event
 The cell level customization such as row-level styling, formatting particular column can be performed in the exported worksheet.

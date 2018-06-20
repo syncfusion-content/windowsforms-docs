@@ -30,10 +30,10 @@ spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
 
-* [RowsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
-* [ColumnsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsInserted_EV.html)
+* [RowsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
+* [ColumnsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsInserted_EV.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -75,10 +75,10 @@ spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
 
-* [RowsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~RowsRemoved_EV.html)
-* [ColumnsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsRemoved_EV.html)
+* [RowsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~RowsRemoved_EV.html)
+* [ColumnsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsRemoved_EV.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -103,7 +103,7 @@ void Model_ColumnsRemoved(object sender, GridRangeInsertedEventArgs e)
 
 ## Hiding rows and columns
 
-Spreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
+Spreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
 
 {% tabs %}
 {% highlight c# %}
@@ -121,7 +121,7 @@ spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, true);
 
 ## Unhiding rows and columns
 
-Unhide the rows/columns in Spreadsheet can be done by [ShowRow](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
+Unhide the rows/columns in Spreadsheet can be done by [ShowRow](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -156,7 +156,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(5), true);
 {% endhighlight %}
 {% endtabs %}
 
-N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
+N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
 
 ## Freezing rows and columns
 
@@ -196,7 +196,7 @@ spreadsheet.ActiveGrid.FrozenColumns = 1;
 
 Spreadsheet provides support to fit the rows or columns based on its content at run time.
 
-You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitRows.html) and  [AutoFitColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitColumns.html) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetColumnWidth.html) methods of `SpreadsheetGrid`.
+You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitRows.html) and  [AutoFitColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitColumns.html) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetColumnWidth.html) methods of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}

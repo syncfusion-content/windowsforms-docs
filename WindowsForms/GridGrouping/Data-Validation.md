@@ -15,7 +15,7 @@ The GridGroupingControl has the built-in support to throw the validation error m
 
 ![](Data-Validation_images/Data-Validation_img1.png)
 
-The visibility of the error icon can be changed by setting the setting [ShowErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorIcon.html) and [ShowRowHeaderErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowRowHeaderErroricon.html) property.
+The visibility of the error icon can be changed by setting the setting [ShowErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorIcon.html) and [ShowRowHeaderErrorIcon](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ShowRowHeaderErroricon.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -34,11 +34,11 @@ Me.gridGroupingControl1.TableControl.ShowRowHeaderErroricon = True
 {% endhighlight %}
 {% endtabs %}
 
-GridGroupingControl validates the cell based on the [CellValueType](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValueType.html) property and shows the error message. If `CellValueType` is `int` type and user enters `string` value, then the grid will automatically throw the error message like “Value(x) is not a valid value for Int32” in a message box. Whereas, `x` denotes the entered cell value.
+GridGroupingControl validates the cell based on the [CellValueType](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellValueType.html) property and shows the error message. If `CellValueType` is `int` type and user enters `string` value, then the grid will automatically throw the error message like “Value(x) is not a valid value for Int32” in a message box. Whereas, `x` denotes the entered cell value.
 
 ![](Data-Validation_images/Data-Validation_img2.png)
 
-By default, the error provider will show a popup while the exception is occurred. When you want to disable this popup, set the [ShowErrorMessageBox](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorMessageBox.html) property to `false`.
+By default, the error provider will show a popup while the exception is occurred. When you want to disable this popup, set the [ShowErrorMessageBox](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ShowErrorMessageBox.html) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,7 +59,7 @@ The Error provider will also show the error message in the comment tips while mo
 N> When the error is occurred, the current cell will not leave from the edit mode. So that the grid will not allow to perform other actions like moving the current cells, clicking, etc. The <kbd>Esc</kbd> key is used to get out from the exception with the old value of the cell
 
 ## Programmatic Validation
-While setting the cell value through the code, it will not trigger the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html) and [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html) events. Therefore, the validation will not work at this type of editing. To validate this type of editing, call [CurrentCell.Validate](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~Validate.html) method after editing the value of the current cell. It will raise the `CurrentCellValidating` event to manually validate the cell value.
+While setting the cell value through the code, it will not trigger the [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html) and [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellValidating_EV.html) events. Therefore, the validation will not work at this type of editing. To validate this type of editing, call [CurrentCell.Validate](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~Validate.html) method after editing the value of the current cell. It will raise the `CurrentCellValidating` event to manually validate the cell value.
 
 The below examples shows the `Phone` column is validated when string value is entered,
 
@@ -114,7 +114,7 @@ End Sub
 ![](Data-Validation_images/Data-Validation_img4.png)
 
 ## Customizing Error Text 
-The validation error message can be changed by using the [ValidationErrorText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ValidationErrorText.html) property.
+The validation error message can be changed by using the [ValidationErrorText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCurrentCell~ValidationErrorText.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,10 +132,10 @@ Me.gridGroupingControl1.TableControl.CurrentCell.ValidationErrorText = "The ente
 ## Events
 The GridGroupingControl has various events to customize the validation process for the cells. The validation can be handled by following events,
 
-* [TableControlCurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellValidating_EV.html)              -        This event will be raised before the current cell is validated.
-* [TableControlCurrentCellValidated](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellValidated_EV.html)               -        This event will be raised after the current cell was validated.
-* [TableControlCurrentCellErrorMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellErrorMessage_EV.html)       -        This event will be will be raised when the current cell throws the validation error.
-* [TableControlCurrentCellValidateString](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellValidateString_EV.html)       -        This event will be raised when the user presses the key in the current cell and before it is accepted. Allows users to limit the keys that are accepted for the current cell. 
+* [TableControlCurrentCellValidating](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellValidating_EV.html)              -        This event will be raised before the current cell is validated.
+* [TableControlCurrentCellValidated](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellValidated_EV.html)               -        This event will be raised after the current cell was validated.
+* [TableControlCurrentCellErrorMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellErrorMessage_EV.html)       -        This event will be will be raised when the current cell throws the validation error.
+* [TableControlCurrentCellValidateString](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellValidateString_EV.html)       -        This event will be raised when the user presses the key in the current cell and before it is accepted. Allows users to limit the keys that are accepted for the current cell. 
 
 {% tabs %}
 {% highlight c# %}
