@@ -161,7 +161,7 @@ sfListView1.CheckedItems.Clear()
 {% endtabs %}
 
 ## Select all the items
-SfListview allows all items to change checked state by checking `SelectAll` item. You can enable select all item by `SfListView.AllowSelectAll` and `SfListView.ShowCheckBoxes` property as true.
+SfListView allows all items to change checked state by checking `SelectAll` item. You can enable select all item by `SfListView.AllowSelectAll` and `SfListView.ShowCheckBoxes` property as true.
 
 {% tabs %}
 {% highlight c# %}

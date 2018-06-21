@@ -99,7 +99,7 @@ sfListView1.SelectedItems.Clear()
 {% endtabs %}
 
 ## Hot tracking
-SfListView supports hover selection on item, when mouse pointer moves over an item by setting `SfListview.HotTracking` as true.
+SfListView supports hover selection on item, when mouse pointer moves over an item by setting `SfListView.HotTracking` as true.
 
 {% tabs %}
 {% highlight c# %}
