@@ -60,7 +60,7 @@ DrawerView is a container, that will be displayed upon selection on top, along a
 
 ### Default color customization
 
-The default color of item can be customized by using **DefaultColor** property of **DrawerMenuItem**. The backcolor of the item will be updated based on the value of DefaultColor.
+The default color of item can be customized by using `DefaultColor` property of `DrawerMenuItem`. The backcolor of the item will be updated based on the value of DefaultColor.
 
 {% tabs %}
 
