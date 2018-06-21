@@ -18,13 +18,13 @@ The Item appearance can be customized by using the `SfListView.Style.ItemStyle` 
 sfListView1.Style.ItemStyle.BackColor = Color.AliceBlue;
 sfListView1.Style.ItemStyle.ForeColor = Color.DarkBlue;
 sfListView1.Style.ItemStyle.TextAlignment = ContentAlignment.BottomLeft;
-sfListView1.Style.ItemStyle.Font = new Font("Segeo UI", 10);
+sfListView1.Style.ItemStyle.Font = new Font("Segoe UI", 10);
 {% endhighlight %}
 {% highlight vb %}
 sfListView1.Style.ItemStyle.BackColor = Color.AliceBlue
 sfListView1.Style.ItemStyle.ForeColor = Color.DarkBlue
 sfListView1.Style.ItemStyle.TextAlignment = ContentAlignment.BottomLeft
-sfListView1.Style.ItemStyle.Font = New Font("Segeo UI", 10)
+sfListView1.Style.ItemStyle.Font = New Font("Segoe UI", 10)
 {% endhighlight %}
 {% endtabs %}
          
@@ -38,13 +38,13 @@ The Group items appearance can be customized by using the `SfListView.Style.Grou
 sfListView1.Style.GroupItemStyle.BackColor = Color.PaleTurquoise;
 sfListView1.Style.GroupItemStyle.ForeColor = Color.DarkRed;
 sfListView1.Style.GroupItemStyle.TextAlignment = ContentAlignment.BottomLeft;
-sfListView1.Style.GroupItemStyle.Font = new Font("Segeo UI", 12);
+sfListView1.Style.GroupItemStyle.Font = new Font("Segoe UI", 12);
 {% endhighlight %}
 {% highlight vb %}
 sfListView1.Style.GroupItemStyle.BackColor = Color.PaleTurquoise
 sfListView1.Style.GroupItemStyle.ForeColor = Color.DarkRed
 sfListView1.Style.GroupItemStyle.TextAlignment = ContentAlignment.BottomLeft
-sfListView1.Style.GroupItemStyle.Font = New Font("Segeo UI", 12)
+sfListView1.Style.GroupItemStyle.Font = New Font("Segoe UI", 12)
 {% endhighlight %}
 {% endtabs %}
 

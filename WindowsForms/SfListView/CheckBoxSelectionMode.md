@@ -61,7 +61,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img3.png)
 
 * CheckOnItemClick: If you want to change check/uncheck the item checkbox state by clicking item, you need to set `SfListView.CheckBoxSelectionMode` is CheckOnItemClick.
-`MultiSimple` and `MultiExtended` selectionmode was not supported in this mode.
+`MultiSimple` and `MultiExtended` selection mode was not supported in this mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -162,7 +162,7 @@ sfListView1.CheckedItems.Clear()
 
 ## Select all the items
 SfListview allows all items to change checked state by checking `SelectAll` item. You can enable select all item by `SfListView.AllowSelectAll` and `SfListView.ShowCheckBoxes` property as true.
- 
+
 {% tabs %}
 {% highlight c# %}
 sfListView1.ShowCheckBoxes = true;
@@ -251,10 +251,10 @@ End Sub
 
 The `ItemChecking` event is raised while checking an item at the execution time by using ItemChecking event:
 
-*	`ItemData`: Gets the checked itemdata object.
+*	`ItemData`: Gets the checked item data object.
 *	`ItemIndex`: Gets an index of checked item.
-*	`NewState`: Gets the new checkstate of checked item.
-*	`OldState`: Gets the old checkstate of checked item.
+*	`NewState`: Gets the new check state of checked item.
+*	`OldState`: Gets the old check state of checked item.
 
 You can cancel the checking process within this event by setting the `ItemCheckingEventArgs.Cancel` property to true.
 
@@ -285,10 +285,10 @@ The `ItemChecked` event will occur once checking process is completed for the ch
 
 The ItemChecked event used for the following use cases:
 
-*	`ItemData`: Gets the checked itemdata object.
+*	`ItemData`: Gets the checked item data object.
 *	`ItemIndex`: Gets an index of checked item.
-*	`NewState`: Gets the new checkstate of checked item.
-*	`OldState`: Gets the old checkstate of checked item.
+*	`NewState`: Gets the new check state of checked item.
+*	`OldState`: Gets the old check state of checked item.
 
 {% tabs %}
 {% highlight c# %}
