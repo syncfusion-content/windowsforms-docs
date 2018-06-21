@@ -118,7 +118,7 @@ Private Function Syncfusion.DataSource.GroupDescriptor() As sfListView1.View.Gro
     PropertyName = "Continent",
     KeySelector = (Object obj1) =>
     {
-        Dim item As var = (obj1 as CounTryInfo) 
+        Dim item As var = (obj1 as CountryInfo) 
         Return item.Continent(0).ToString()
     }
 ,
@@ -149,8 +149,8 @@ Private Function GroupDescriptor() As sfListView1.View.GroupDescriptors.Add(Shad
    PropertyName = "Continent",    
    KeySelector = (Object obj1) =>
    {
-      Dim item As var = (obj1 as CounTryInfo) 
-      Return item.CounTryName + ": " + item.Continent
+      Dim item As var = (obj1 as CountryInfo) 
+      Return item.CountryName + ": " + item.Continent
    }
 End Function
 )

@@ -83,7 +83,7 @@ Next item
 
 ### Get selected items
 
-The SfListView gets allthe selected items through the `SfListView.SelectedItems` property and gets the single item by using the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.                              
+The SfListView gets all the selected items through the `SfListView.SelectedItems` property and gets the single item by using the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.                              
 
 ### Clear Selected items
 

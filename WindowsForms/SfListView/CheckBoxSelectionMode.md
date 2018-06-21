@@ -47,7 +47,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck
 
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img2.png)
 
-* SynchronizeSelection: If you want to synchronize the selection with item CheckBox’s IsChecked state, you need to set `SfListView.CheckBoxSelectionMode` as SynchronizeSelection. In this mode, you can select by checking checkbox and selecting/deselecting the item will check/uncheck the corresponding item checkbox.
+* SynchronizeSelection: If you want to synchronize the selection with item CheckBox’s IsChecked state, you need to set `SfListView.CheckBoxSelectionMode` as SynchronizeSelection. In this mode, you can select by checking checkbox and select/deselect the item will check/uncheck the corresponding item checkbox.
 
 {% tabs %}
 {% highlight c# %}
