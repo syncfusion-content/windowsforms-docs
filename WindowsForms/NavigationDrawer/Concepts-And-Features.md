@@ -58,6 +58,41 @@ DrawerView is a container, that will be displayed upon selection on top, along a
 
 ![](Concepts-And-Features_images/navigationdrawer_img2.png)
 
+### Default color customization
+
+The default color of item can be customized by using **DefaultColor** property of **DrawerMenuItem**. The backcolor of the item will be updated based on the value of DefaultColor.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Back color
+this.drawerMenuItem1.BackColor = System.Drawing.Color.Silver; 
+
+// Hover color
+this.drawerMenuItem1.HoverColor = System.Drawing.Color.White;           
+
+// Default color
+this.drawerMenuItem1.DefaultColor = System.Drawing.Color.Silver; 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+' Back color
+Me.drawerMenuItem1.BackColor = System.Drawing.Color.Silver
+
+' Hover color
+Me.drawerMenuItem1.HoverColor = System.Drawing.Color.White
+
+' Default color
+Me.drawerMenuItem1.DefaultColor = System.Drawing.Color.Silver
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Concepts-And-Features_images/navigationdrawer_img9.png)
 
 ## Transition
 
